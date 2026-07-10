@@ -1,0 +1,5721 @@
+{
+  "metadata": {
+    "title": "DAG des compétences mathématiques — Primaire à Terminale Spé",
+    "version": "1.0",
+    "total_skills": 414,
+    "domains": [
+      {
+        "id": "A",
+        "name": "Numération",
+        "count": 25
+      },
+      {
+        "id": "B",
+        "name": "Calcul numérique",
+        "count": 35
+      },
+      {
+        "id": "C",
+        "name": "Fractions",
+        "count": 25
+      },
+      {
+        "id": "D",
+        "name": "Décimaux",
+        "count": 15
+      },
+      {
+        "id": "E",
+        "name": "Proportionnalité",
+        "count": 25
+      },
+      {
+        "id": "F",
+        "name": "Algèbre",
+        "count": 60
+      },
+      {
+        "id": "G",
+        "name": "Géométrie plane",
+        "count": 44
+      },
+      {
+        "id": "H",
+        "name": "Géométrie analytique",
+        "count": 20
+      },
+      {
+        "id": "I",
+        "name": "Trigonométrie",
+        "count": 20
+      },
+      {
+        "id": "J",
+        "name": "Fonctions",
+        "count": 35
+      },
+      {
+        "id": "K",
+        "name": "Statistiques",
+        "count": 15
+      },
+      {
+        "id": "L",
+        "name": "Probabilités",
+        "count": 25
+      },
+      {
+        "id": "M",
+        "name": "Suites",
+        "count": 15
+      },
+      {
+        "id": "N",
+        "name": "Analyse",
+        "count": 35
+      },
+      {
+        "id": "O",
+        "name": "Espace et vecteurs",
+        "count": 20
+      }
+    ]
+  },
+  "skills": [
+    {
+      "id": "A001",
+      "domain": "A",
+      "domain_name": "Numération",
+      "label": "Compter jusqu'à 10",
+      "description": "Dénombrer et écrire les entiers de 0 à 10",
+      "prerequisites": [],
+      "difficulty": 1,
+      "school_level": "CP",
+      "validation_test": "Compter une collection de 1 à 10 objets"
+    },
+    {
+      "id": "A002",
+      "domain": "A",
+      "domain_name": "Numération",
+      "label": "Compter jusqu'à 100",
+      "description": "Lire, écrire et comparer les entiers jusqu'à 100",
+      "prerequisites": [
+        "A001"
+      ],
+      "difficulty": 1,
+      "school_level": "CP",
+      "validation_test": "Écrire en chiffres un nombre dicté entre 0 et 100"
+    },
+    {
+      "id": "A003",
+      "domain": "A",
+      "domain_name": "Numération",
+      "label": "Compter jusqu'à 1000",
+      "description": "Lire, écrire et comparer les entiers jusqu'à 1000",
+      "prerequisites": [
+        "A002"
+      ],
+      "difficulty": 2,
+      "school_level": "CE1",
+      "validation_test": "Placer 754 sur une droite graduée"
+    },
+    {
+      "id": "A004",
+      "domain": "A",
+      "domain_name": "Numération",
+      "label": "Lire un entier",
+      "description": "Lire à voix haute tout entier écrit en chiffres",
+      "prerequisites": [
+        "A003"
+      ],
+      "difficulty": 2,
+      "school_level": "CE1",
+      "validation_test": "Lire correctement le nombre 2 047"
+    },
+    {
+      "id": "A005",
+      "domain": "A",
+      "domain_name": "Numération",
+      "label": "Écrire un entier",
+      "description": "Transcrire en chiffres un entier énoncé à l'oral",
+      "prerequisites": [
+        "A004"
+      ],
+      "difficulty": 2,
+      "school_level": "CE1",
+      "validation_test": "Écrire en chiffres 'trois mille deux cent cinq'"
+    },
+    {
+      "id": "A006",
+      "domain": "A",
+      "domain_name": "Numération",
+      "label": "Comparer deux entiers",
+      "description": "Utiliser < > = pour comparer deux entiers",
+      "prerequisites": [
+        "A004",
+        "A005"
+      ],
+      "difficulty": 2,
+      "school_level": "CE1",
+      "validation_test": "Comparer 4 302 et 4 320"
+    },
+    {
+      "id": "A007",
+      "domain": "A",
+      "domain_name": "Numération",
+      "label": "Ranger plusieurs entiers",
+      "description": "Ordonner une liste d'entiers en ordre croissant ou décroissant",
+      "prerequisites": [
+        "A006"
+      ],
+      "difficulty": 2,
+      "school_level": "CE2",
+      "validation_test": "Ranger 45, 12, 78, 3 par ordre croissant"
+    },
+    {
+      "id": "A008",
+      "domain": "A",
+      "domain_name": "Numération",
+      "label": "Identifier chiffre et nombre",
+      "description": "Distinguer chiffre (0-9) et nombre",
+      "prerequisites": [
+        "A004"
+      ],
+      "difficulty": 2,
+      "school_level": "CE1",
+      "validation_test": "Combien de chiffres dans 1 024 ?"
+    },
+    {
+      "id": "A009",
+      "domain": "A",
+      "domain_name": "Numération",
+      "label": "Comprendre la valeur positionnelle",
+      "description": "Identifier unités, dizaines, centaines, milliers",
+      "prerequisites": [
+        "A008"
+      ],
+      "difficulty": 2,
+      "school_level": "CE2",
+      "validation_test": "Quel est le chiffre des centaines dans 3 847 ?"
+    },
+    {
+      "id": "A010",
+      "domain": "A",
+      "domain_name": "Numération",
+      "label": "Décomposer un entier",
+      "description": "Écrire 5827=5000+800+20+7",
+      "prerequisites": [
+        "A009"
+      ],
+      "difficulty": 3,
+      "school_level": "CE2",
+      "validation_test": "Décomposer 6 304 en unités de numération"
+    },
+    {
+      "id": "A011",
+      "domain": "A",
+      "domain_name": "Numération",
+      "label": "Pair / impair",
+      "description": "Reconnaître si un entier est pair ou impair",
+      "prerequisites": [
+        "A004"
+      ],
+      "difficulty": 2,
+      "school_level": "CE2",
+      "validation_test": "Parmi 13,28,45,100 : lesquels sont pairs ?"
+    },
+    {
+      "id": "A012",
+      "domain": "A",
+      "domain_name": "Numération",
+      "label": "Multiple",
+      "description": "Comprendre et identifier les multiples d'un entier",
+      "prerequisites": [
+        "A011",
+        "B006"
+      ],
+      "difficulty": 3,
+      "school_level": "CM1",
+      "validation_test": "Lister les multiples de 6 inférieurs à 50"
+    },
+    {
+      "id": "A013",
+      "domain": "A",
+      "domain_name": "Numération",
+      "label": "Diviseur",
+      "description": "Comprendre et identifier les diviseurs d'un entier",
+      "prerequisites": [
+        "A012",
+        "B008"
+      ],
+      "difficulty": 3,
+      "school_level": "CM1",
+      "validation_test": "Donner tous les diviseurs de 24"
+    },
+    {
+      "id": "A014",
+      "domain": "A",
+      "domain_name": "Numération",
+      "label": "Critère de divisibilité par 2",
+      "description": "Un entier est divisible par 2 ssi son dernier chiffre est pair",
+      "prerequisites": [
+        "A013"
+      ],
+      "difficulty": 3,
+      "school_level": "CM1",
+      "validation_test": "Parmi 134,275,480 : lesquels sont divisibles par 2 ?"
+    },
+    {
+      "id": "A015",
+      "domain": "A",
+      "domain_name": "Numération",
+      "label": "Critère de divisibilité par 3",
+      "description": "Divisible par 3 ssi somme des chiffres divisible par 3",
+      "prerequisites": [
+        "A013"
+      ],
+      "difficulty": 3,
+      "school_level": "CM1",
+      "validation_test": "Tester la divisibilité par 3 de 327 et 412"
+    },
+    {
+      "id": "A016",
+      "domain": "A",
+      "domain_name": "Numération",
+      "label": "Critère de divisibilité par 5",
+      "description": "Divisible par 5 ssi se termine par 0 ou 5",
+      "prerequisites": [
+        "A013"
+      ],
+      "difficulty": 3,
+      "school_level": "CM1",
+      "validation_test": "Parmi 135,240,77 : lesquels sont divisibles par 5 ?"
+    },
+    {
+      "id": "A017",
+      "domain": "A",
+      "domain_name": "Numération",
+      "label": "Critère de divisibilité par 9",
+      "description": "Divisible par 9 ssi somme des chiffres divisible par 9",
+      "prerequisites": [
+        "A015"
+      ],
+      "difficulty": 3,
+      "school_level": "CM2",
+      "validation_test": "Tester la divisibilité par 9 de 432 et 513"
+    },
+    {
+      "id": "A018",
+      "domain": "A",
+      "domain_name": "Numération",
+      "label": "Critère de divisibilité par 10",
+      "description": "Divisible par 10 ssi se termine par 0",
+      "prerequisites": [
+        "A013"
+      ],
+      "difficulty": 2,
+      "school_level": "CM1",
+      "validation_test": "Lister les multiples de 10 entre 1 et 100"
+    },
+    {
+      "id": "A019",
+      "domain": "A",
+      "domain_name": "Numération",
+      "label": "Décomposition en facteurs premiers",
+      "description": "Écrire tout entier>1 comme produit de nombres premiers",
+      "prerequisites": [
+        "A013",
+        "A014",
+        "A015",
+        "A016",
+        "A017",
+        "A018"
+      ],
+      "difficulty": 4,
+      "school_level": "CM2",
+      "validation_test": "Décomposer 360 en facteurs premiers"
+    },
+    {
+      "id": "A020",
+      "domain": "A",
+      "domain_name": "Numération",
+      "label": "PGCD",
+      "description": "Calculer le plus grand commun diviseur de deux entiers",
+      "prerequisites": [
+        "A019"
+      ],
+      "difficulty": 4,
+      "school_level": "6e",
+      "validation_test": "Calculer PGCD(48,36)"
+    },
+    {
+      "id": "A021",
+      "domain": "A",
+      "domain_name": "Numération",
+      "label": "PPCM",
+      "description": "Calculer le plus petit commun multiple de deux entiers",
+      "prerequisites": [
+        "A019",
+        "A020"
+      ],
+      "difficulty": 4,
+      "school_level": "6e",
+      "validation_test": "Calculer PPCM(12,18)"
+    },
+    {
+      "id": "A022",
+      "domain": "A",
+      "domain_name": "Numération",
+      "label": "Nombre négatif",
+      "description": "Comprendre et placer les entiers relatifs sur une droite",
+      "prerequisites": [
+        "A006"
+      ],
+      "difficulty": 3,
+      "school_level": "6e",
+      "validation_test": "Placer -5,-1,3 sur une droite graduée"
+    },
+    {
+      "id": "A023",
+      "domain": "A",
+      "domain_name": "Numération",
+      "label": "Comparer des relatifs",
+      "description": "Ordonner des entiers relatifs",
+      "prerequisites": [
+        "A022",
+        "A006"
+      ],
+      "difficulty": 3,
+      "school_level": "6e",
+      "validation_test": "Ranger -7,-2,0,5 par ordre croissant"
+    },
+    {
+      "id": "A024",
+      "domain": "A",
+      "domain_name": "Numération",
+      "label": "Opposé d'un nombre",
+      "description": "Connaître et calculer l'opposé d'un entier relatif",
+      "prerequisites": [
+        "A022"
+      ],
+      "difficulty": 3,
+      "school_level": "6e",
+      "validation_test": "Quel est l'opposé de -8 ? De 3 ?"
+    },
+    {
+      "id": "A025",
+      "domain": "A",
+      "domain_name": "Numération",
+      "label": "Valeur absolue",
+      "description": "Comprendre et calculer la valeur absolue d'un nombre",
+      "prerequisites": [
+        "A024"
+      ],
+      "difficulty": 4,
+      "school_level": "5e",
+      "validation_test": "Calculer |-5| et |3|"
+    },
+    {
+      "id": "B001",
+      "domain": "B",
+      "domain_name": "Calcul numérique",
+      "label": "Addition simple",
+      "description": "Additionner deux entiers sans retenue",
+      "prerequisites": [
+        "A001"
+      ],
+      "difficulty": 1,
+      "school_level": "CP",
+      "validation_test": "Calculer 4+3"
+    },
+    {
+      "id": "B002",
+      "domain": "B",
+      "domain_name": "Calcul numérique",
+      "label": "Retenue dans une addition",
+      "description": "Additionner avec retenue",
+      "prerequisites": [
+        "B001",
+        "A009"
+      ],
+      "difficulty": 2,
+      "school_level": "CE1",
+      "validation_test": "Calculer 47+38"
+    },
+    {
+      "id": "B003",
+      "domain": "B",
+      "domain_name": "Calcul numérique",
+      "label": "Soustraction simple",
+      "description": "Soustraire deux entiers sans emprunt",
+      "prerequisites": [
+        "B001"
+      ],
+      "difficulty": 1,
+      "school_level": "CP",
+      "validation_test": "Calculer 9-4"
+    },
+    {
+      "id": "B004",
+      "domain": "B",
+      "domain_name": "Calcul numérique",
+      "label": "Emprunt dans une soustraction",
+      "description": "Soustraire avec emprunt",
+      "prerequisites": [
+        "B003",
+        "A009"
+      ],
+      "difficulty": 2,
+      "school_level": "CE1",
+      "validation_test": "Calculer 83-47"
+    },
+    {
+      "id": "B005",
+      "domain": "B",
+      "domain_name": "Calcul numérique",
+      "label": "Multiplication à un chiffre",
+      "description": "Multiplier par un chiffre (tables de 1 à 5)",
+      "prerequisites": [
+        "B001",
+        "A001"
+      ],
+      "difficulty": 2,
+      "school_level": "CE1",
+      "validation_test": "Calculer 6×4"
+    },
+    {
+      "id": "B006",
+      "domain": "B",
+      "domain_name": "Calcul numérique",
+      "label": "Tables de multiplication",
+      "description": "Connaître les tables de 1 à 9 par cœur",
+      "prerequisites": [
+        "B005"
+      ],
+      "difficulty": 2,
+      "school_level": "CE2",
+      "validation_test": "Réciter et utiliser la table de 7"
+    },
+    {
+      "id": "B007",
+      "domain": "B",
+      "domain_name": "Calcul numérique",
+      "label": "Multiplication à plusieurs chiffres",
+      "description": "Poser et calculer une multiplication multi-chiffres",
+      "prerequisites": [
+        "B006",
+        "B002"
+      ],
+      "difficulty": 3,
+      "school_level": "CM1",
+      "validation_test": "Calculer 34×27"
+    },
+    {
+      "id": "B008",
+      "domain": "B",
+      "domain_name": "Calcul numérique",
+      "label": "Division euclidienne",
+      "description": "Effectuer une division avec quotient et reste",
+      "prerequisites": [
+        "B006",
+        "B007"
+      ],
+      "difficulty": 3,
+      "school_level": "CM1",
+      "validation_test": "Calculer 157÷12"
+    },
+    {
+      "id": "B009",
+      "domain": "B",
+      "domain_name": "Calcul numérique",
+      "label": "Quotient",
+      "description": "Identifier et interpréter le quotient d'une division",
+      "prerequisites": [
+        "B008"
+      ],
+      "difficulty": 3,
+      "school_level": "CM1",
+      "validation_test": "Dans 157÷12, quel est le quotient ?"
+    },
+    {
+      "id": "B010",
+      "domain": "B",
+      "domain_name": "Calcul numérique",
+      "label": "Reste",
+      "description": "Identifier et interpréter le reste d'une division euclidienne",
+      "prerequisites": [
+        "B008"
+      ],
+      "difficulty": 3,
+      "school_level": "CM1",
+      "validation_test": "Dans 157÷12, quel est le reste ?"
+    },
+    {
+      "id": "B011",
+      "domain": "B",
+      "domain_name": "Calcul numérique",
+      "label": "Priorités opératoires",
+      "description": "Appliquer l'ordre des opérations sans parenthèses",
+      "prerequisites": [
+        "B001",
+        "B003",
+        "B007",
+        "B008"
+      ],
+      "difficulty": 3,
+      "school_level": "CM2",
+      "validation_test": "Calculer 3+4×2"
+    },
+    {
+      "id": "B012",
+      "domain": "B",
+      "domain_name": "Calcul numérique",
+      "label": "Parenthèses",
+      "description": "Utiliser les parenthèses pour modifier l'ordre de calcul",
+      "prerequisites": [
+        "B011"
+      ],
+      "difficulty": 3,
+      "school_level": "CM2",
+      "validation_test": "Calculer (3+4)×2"
+    },
+    {
+      "id": "B013",
+      "domain": "B",
+      "domain_name": "Calcul numérique",
+      "label": "Calcul mental additions",
+      "description": "Additionner mentalement des entiers",
+      "prerequisites": [
+        "B001",
+        "B002"
+      ],
+      "difficulty": 2,
+      "school_level": "CE2",
+      "validation_test": "Calculer mentalement 98+45"
+    },
+    {
+      "id": "B014",
+      "domain": "B",
+      "domain_name": "Calcul numérique",
+      "label": "Calcul mental soustractions",
+      "description": "Soustraire mentalement des entiers",
+      "prerequisites": [
+        "B003",
+        "B004"
+      ],
+      "difficulty": 2,
+      "school_level": "CE2",
+      "validation_test": "Calculer mentalement 203-97"
+    },
+    {
+      "id": "B015",
+      "domain": "B",
+      "domain_name": "Calcul numérique",
+      "label": "Calcul mental multiplications",
+      "description": "Multiplier mentalement par des multiples de 10",
+      "prerequisites": [
+        "B006"
+      ],
+      "difficulty": 3,
+      "school_level": "CM1",
+      "validation_test": "Calculer mentalement 30×40"
+    },
+    {
+      "id": "B016",
+      "domain": "B",
+      "domain_name": "Calcul numérique",
+      "label": "Calcul mental divisions",
+      "description": "Diviser mentalement par des entiers simples",
+      "prerequisites": [
+        "B008"
+      ],
+      "difficulty": 3,
+      "school_level": "CM1",
+      "validation_test": "Calculer mentalement 360÷9"
+    },
+    {
+      "id": "B017",
+      "domain": "B",
+      "domain_name": "Calcul numérique",
+      "label": "Estimation d'un résultat",
+      "description": "Estimer un résultat avant de calculer",
+      "prerequisites": [
+        "B013",
+        "B014",
+        "B015"
+      ],
+      "difficulty": 3,
+      "school_level": "CM2",
+      "validation_test": "Estimer 49×21 avant de calculer"
+    },
+    {
+      "id": "B018",
+      "domain": "B",
+      "domain_name": "Calcul numérique",
+      "label": "Vérification ordre de grandeur",
+      "description": "Vérifier la cohérence d'un résultat",
+      "prerequisites": [
+        "B017"
+      ],
+      "difficulty": 3,
+      "school_level": "CM2",
+      "validation_test": "2000 est-il raisonnable pour 49×21 ?"
+    },
+    {
+      "id": "B019",
+      "domain": "B",
+      "domain_name": "Calcul numérique",
+      "label": "Carré d'un nombre",
+      "description": "Calculer le carré d'un entier",
+      "prerequisites": [
+        "B006"
+      ],
+      "difficulty": 3,
+      "school_level": "6e",
+      "validation_test": "Calculer 7²"
+    },
+    {
+      "id": "B020",
+      "domain": "B",
+      "domain_name": "Calcul numérique",
+      "label": "Cube d'un nombre",
+      "description": "Calculer le cube d'un entier",
+      "prerequisites": [
+        "B019"
+      ],
+      "difficulty": 3,
+      "school_level": "6e",
+      "validation_test": "Calculer 4³"
+    },
+    {
+      "id": "B021",
+      "domain": "B",
+      "domain_name": "Calcul numérique",
+      "label": "Puissance entière positive",
+      "description": "Calculer aⁿ pour n entier positif",
+      "prerequisites": [
+        "B020"
+      ],
+      "difficulty": 4,
+      "school_level": "5e",
+      "validation_test": "Calculer 2⁵ et 3⁴"
+    },
+    {
+      "id": "B022",
+      "domain": "B",
+      "domain_name": "Calcul numérique",
+      "label": "Produit de puissances",
+      "description": "Appliquer aᵐ×aⁿ=aᵐ⁺ⁿ",
+      "prerequisites": [
+        "B021"
+      ],
+      "difficulty": 4,
+      "school_level": "4e",
+      "validation_test": "Simplifier 2³×2⁴"
+    },
+    {
+      "id": "B023",
+      "domain": "B",
+      "domain_name": "Calcul numérique",
+      "label": "Quotient de puissances",
+      "description": "Appliquer aᵐ÷aⁿ=aᵐ⁻ⁿ",
+      "prerequisites": [
+        "B021"
+      ],
+      "difficulty": 4,
+      "school_level": "4e",
+      "validation_test": "Simplifier 3⁵÷3²"
+    },
+    {
+      "id": "B024",
+      "domain": "B",
+      "domain_name": "Calcul numérique",
+      "label": "Puissance d'une puissance",
+      "description": "Appliquer (aᵐ)ⁿ=aᵐⁿ",
+      "prerequisites": [
+        "B022"
+      ],
+      "difficulty": 4,
+      "school_level": "4e",
+      "validation_test": "Simplifier (2³)⁴"
+    },
+    {
+      "id": "B025",
+      "domain": "B",
+      "domain_name": "Calcul numérique",
+      "label": "Exposant négatif",
+      "description": "Comprendre a⁻ⁿ=1/aⁿ",
+      "prerequisites": [
+        "B023",
+        "B024"
+      ],
+      "difficulty": 5,
+      "school_level": "3e",
+      "validation_test": "Écrire 10⁻³ sous forme décimale"
+    },
+    {
+      "id": "B026",
+      "domain": "B",
+      "domain_name": "Calcul numérique",
+      "label": "Notation scientifique",
+      "description": "Écrire un nombre en notation scientifique a×10ⁿ",
+      "prerequisites": [
+        "B021",
+        "B025"
+      ],
+      "difficulty": 5,
+      "school_level": "3e",
+      "validation_test": "Écrire 0,00045 en notation scientifique"
+    },
+    {
+      "id": "B027",
+      "domain": "B",
+      "domain_name": "Calcul numérique",
+      "label": "Comprendre √x",
+      "description": "Comprendre la racine carrée comme inverse du carré",
+      "prerequisites": [
+        "B019"
+      ],
+      "difficulty": 4,
+      "school_level": "5e",
+      "validation_test": "Calculer √49 et √144"
+    },
+    {
+      "id": "B028",
+      "domain": "B",
+      "domain_name": "Calcul numérique",
+      "label": "Carrés parfaits",
+      "description": "Reconnaître et mémoriser les carrés parfaits jusqu'à 20²",
+      "prerequisites": [
+        "B027"
+      ],
+      "difficulty": 4,
+      "school_level": "5e",
+      "validation_test": "Lister les carrés parfaits jusqu'à 400"
+    },
+    {
+      "id": "B029",
+      "domain": "B",
+      "domain_name": "Calcul numérique",
+      "label": "Simplifier √x",
+      "description": "Simplifier √(a²b)=a√b",
+      "prerequisites": [
+        "B028",
+        "A019"
+      ],
+      "difficulty": 5,
+      "school_level": "4e",
+      "validation_test": "Simplifier √72"
+    },
+    {
+      "id": "B030",
+      "domain": "B",
+      "domain_name": "Calcul numérique",
+      "label": "Produit de racines",
+      "description": "Appliquer √a×√b=√(ab)",
+      "prerequisites": [
+        "B029"
+      ],
+      "difficulty": 5,
+      "school_level": "3e",
+      "validation_test": "Calculer √3×√12"
+    },
+    {
+      "id": "B031",
+      "domain": "B",
+      "domain_name": "Calcul numérique",
+      "label": "Quotient de racines",
+      "description": "Appliquer √a÷√b=√(a/b)",
+      "prerequisites": [
+        "B029"
+      ],
+      "difficulty": 5,
+      "school_level": "3e",
+      "validation_test": "Simplifier √50/√2"
+    },
+    {
+      "id": "B032",
+      "domain": "B",
+      "domain_name": "Calcul numérique",
+      "label": "Rationaliser un dénominateur",
+      "description": "Éliminer une racine au dénominateur",
+      "prerequisites": [
+        "B031"
+      ],
+      "difficulty": 6,
+      "school_level": "2nde",
+      "validation_test": "Rationaliser 1/√3"
+    },
+    {
+      "id": "B033",
+      "domain": "B",
+      "domain_name": "Calcul numérique",
+      "label": "Valeur absolue dans un calcul",
+      "description": "Calculer des expressions avec valeur absolue",
+      "prerequisites": [
+        "A025",
+        "B011"
+      ],
+      "difficulty": 5,
+      "school_level": "4e",
+      "validation_test": "Calculer |3-7|+|-2|"
+    },
+    {
+      "id": "B034",
+      "domain": "B",
+      "domain_name": "Calcul numérique",
+      "label": "Encadrement",
+      "description": "Encadrer un nombre entre deux valeurs consécutives",
+      "prerequisites": [
+        "B017"
+      ],
+      "difficulty": 4,
+      "school_level": "CM2",
+      "validation_test": "Encadrer √30 entre deux entiers consécutifs"
+    },
+    {
+      "id": "B035",
+      "domain": "B",
+      "domain_name": "Calcul numérique",
+      "label": "Approximation décimale",
+      "description": "Donner une valeur approchée d'un résultat",
+      "prerequisites": [
+        "B034"
+      ],
+      "difficulty": 4,
+      "school_level": "CM2",
+      "validation_test": "Approximation à 0,01 près de √2"
+    },
+    {
+      "id": "C001",
+      "domain": "C",
+      "domain_name": "Fractions",
+      "label": "Fraction comme partage",
+      "description": "Comprendre une fraction comme partage d'un tout en parts égales",
+      "prerequisites": [
+        "A004",
+        "B008"
+      ],
+      "difficulty": 3,
+      "school_level": "CM2",
+      "validation_test": "Représenter 3/4 d'un rectangle"
+    },
+    {
+      "id": "C002",
+      "domain": "C",
+      "domain_name": "Fractions",
+      "label": "Numérateur",
+      "description": "Identifier et comprendre le rôle du numérateur",
+      "prerequisites": [
+        "C001"
+      ],
+      "difficulty": 3,
+      "school_level": "CM2",
+      "validation_test": "Dans 5/8, quel est le numérateur ?"
+    },
+    {
+      "id": "C003",
+      "domain": "C",
+      "domain_name": "Fractions",
+      "label": "Dénominateur",
+      "description": "Identifier et comprendre le rôle du dénominateur",
+      "prerequisites": [
+        "C001"
+      ],
+      "difficulty": 3,
+      "school_level": "CM2",
+      "validation_test": "Dans 5/8, quel est le dénominateur ?"
+    },
+    {
+      "id": "C004",
+      "domain": "C",
+      "domain_name": "Fractions",
+      "label": "Fraction d'une quantité",
+      "description": "Calculer la fraction d'une quantité",
+      "prerequisites": [
+        "C002",
+        "C003"
+      ],
+      "difficulty": 3,
+      "school_level": "CM2",
+      "validation_test": "Calculer 3/4 de 20"
+    },
+    {
+      "id": "C005",
+      "domain": "C",
+      "domain_name": "Fractions",
+      "label": "Fraction sur une droite graduée",
+      "description": "Placer une fraction sur une droite graduée",
+      "prerequisites": [
+        "C004"
+      ],
+      "difficulty": 3,
+      "school_level": "6e",
+      "validation_test": "Placer 3/4 et 5/3 sur une droite graduée"
+    },
+    {
+      "id": "C006",
+      "domain": "C",
+      "domain_name": "Fractions",
+      "label": "Fractions équivalentes",
+      "description": "Reconnaître et produire des fractions équivalentes",
+      "prerequisites": [
+        "C004",
+        "B006"
+      ],
+      "difficulty": 3,
+      "school_level": "6e",
+      "validation_test": "Trouver deux fractions équivalentes à 2/3"
+    },
+    {
+      "id": "C007",
+      "domain": "C",
+      "domain_name": "Fractions",
+      "label": "Simplification de fraction",
+      "description": "Simplifier une fraction en divisant par le PGCD",
+      "prerequisites": [
+        "C006",
+        "A020"
+      ],
+      "difficulty": 4,
+      "school_level": "6e",
+      "validation_test": "Simplifier 12/18"
+    },
+    {
+      "id": "C008",
+      "domain": "C",
+      "domain_name": "Fractions",
+      "label": "Fraction irréductible",
+      "description": "Réduire une fraction à sa forme irréductible",
+      "prerequisites": [
+        "C007",
+        "A020"
+      ],
+      "difficulty": 4,
+      "school_level": "6e",
+      "validation_test": "Rendre 36/48 irréductible"
+    },
+    {
+      "id": "C009",
+      "domain": "C",
+      "domain_name": "Fractions",
+      "label": "Comparer fractions même dénominateur",
+      "description": "Comparer deux fractions de même dénominateur",
+      "prerequisites": [
+        "C002",
+        "C003",
+        "A006"
+      ],
+      "difficulty": 3,
+      "school_level": "6e",
+      "validation_test": "Comparer 3/7 et 5/7"
+    },
+    {
+      "id": "C010",
+      "domain": "C",
+      "domain_name": "Fractions",
+      "label": "Comparer fractions dénominateurs différents",
+      "description": "Comparer deux fractions de dénominateurs différents",
+      "prerequisites": [
+        "C009",
+        "C011"
+      ],
+      "difficulty": 4,
+      "school_level": "6e",
+      "validation_test": "Comparer 2/3 et 3/5"
+    },
+    {
+      "id": "C011",
+      "domain": "C",
+      "domain_name": "Fractions",
+      "label": "Réduction au même dénominateur",
+      "description": "Trouver un dénominateur commun et réduire",
+      "prerequisites": [
+        "C006",
+        "A021"
+      ],
+      "difficulty": 4,
+      "school_level": "6e",
+      "validation_test": "Réduire 1/4 et 2/3 au même dénominateur"
+    },
+    {
+      "id": "C012",
+      "domain": "C",
+      "domain_name": "Fractions",
+      "label": "Addition de fractions simples",
+      "description": "Additionner deux fractions de même dénominateur",
+      "prerequisites": [
+        "C009",
+        "B001"
+      ],
+      "difficulty": 3,
+      "school_level": "6e",
+      "validation_test": "Calculer 2/7+3/7"
+    },
+    {
+      "id": "C013",
+      "domain": "C",
+      "domain_name": "Fractions",
+      "label": "Addition fractions dénominateurs différents",
+      "description": "Additionner deux fractions de dénominateurs différents",
+      "prerequisites": [
+        "C012",
+        "C011"
+      ],
+      "difficulty": 4,
+      "school_level": "5e",
+      "validation_test": "Calculer 1/3+1/4"
+    },
+    {
+      "id": "C014",
+      "domain": "C",
+      "domain_name": "Fractions",
+      "label": "Soustraction de fractions",
+      "description": "Soustraire deux fractions",
+      "prerequisites": [
+        "C013",
+        "B003"
+      ],
+      "difficulty": 4,
+      "school_level": "5e",
+      "validation_test": "Calculer 3/4-1/6"
+    },
+    {
+      "id": "C015",
+      "domain": "C",
+      "domain_name": "Fractions",
+      "label": "Produit de fractions",
+      "description": "Multiplier deux fractions : (a/b)×(c/d)=ac/bd",
+      "prerequisites": [
+        "C002",
+        "C003",
+        "B006"
+      ],
+      "difficulty": 4,
+      "school_level": "5e",
+      "validation_test": "Calculer 2/3×5/7"
+    },
+    {
+      "id": "C016",
+      "domain": "C",
+      "domain_name": "Fractions",
+      "label": "Simplification croisée",
+      "description": "Simplifier avant de multiplier",
+      "prerequisites": [
+        "C015",
+        "C007"
+      ],
+      "difficulty": 4,
+      "school_level": "5e",
+      "validation_test": "Calculer 4/9×3/8 en simplifiant d'abord"
+    },
+    {
+      "id": "C017",
+      "domain": "C",
+      "domain_name": "Fractions",
+      "label": "Division de fractions",
+      "description": "Diviser deux fractions : (a/b)÷(c/d)=(a/b)×(d/c)",
+      "prerequisites": [
+        "C015",
+        "C018"
+      ],
+      "difficulty": 4,
+      "school_level": "5e",
+      "validation_test": "Calculer 3/4÷2/5"
+    },
+    {
+      "id": "C018",
+      "domain": "C",
+      "domain_name": "Fractions",
+      "label": "Inverse d'une fraction",
+      "description": "Calculer l'inverse : 1/(a/b)=b/a",
+      "prerequisites": [
+        "C002",
+        "C003"
+      ],
+      "difficulty": 3,
+      "school_level": "5e",
+      "validation_test": "Quel est l'inverse de 3/7 ?"
+    },
+    {
+      "id": "C019",
+      "domain": "C",
+      "domain_name": "Fractions",
+      "label": "Fraction complexe",
+      "description": "Simplifier une fraction dont num/dén sont des fractions",
+      "prerequisites": [
+        "C017"
+      ],
+      "difficulty": 5,
+      "school_level": "4e",
+      "validation_test": "Simplifier (3/4)/(2/3)"
+    },
+    {
+      "id": "C020",
+      "domain": "C",
+      "domain_name": "Fractions",
+      "label": "Pourcentage vers fraction",
+      "description": "Convertir un pourcentage en fraction",
+      "prerequisites": [
+        "C004"
+      ],
+      "difficulty": 3,
+      "school_level": "CM2",
+      "validation_test": "Convertir 35% en fraction irréductible"
+    },
+    {
+      "id": "C021",
+      "domain": "C",
+      "domain_name": "Fractions",
+      "label": "Fraction vers pourcentage",
+      "description": "Convertir une fraction en pourcentage",
+      "prerequisites": [
+        "C020"
+      ],
+      "difficulty": 3,
+      "school_level": "CM2",
+      "validation_test": "Convertir 3/4 en pourcentage"
+    },
+    {
+      "id": "C022",
+      "domain": "C",
+      "domain_name": "Fractions",
+      "label": "Fraction vers décimal",
+      "description": "Convertir une fraction en décimal par division",
+      "prerequisites": [
+        "C017"
+      ],
+      "difficulty": 3,
+      "school_level": "6e",
+      "validation_test": "Convertir 5/8 en décimal"
+    },
+    {
+      "id": "C023",
+      "domain": "C",
+      "domain_name": "Fractions",
+      "label": "Décimal vers fraction",
+      "description": "Convertir un décimal en fraction",
+      "prerequisites": [
+        "C022"
+      ],
+      "difficulty": 3,
+      "school_level": "6e",
+      "validation_test": "Écrire 0,35 comme fraction irréductible"
+    },
+    {
+      "id": "C024",
+      "domain": "C",
+      "domain_name": "Fractions",
+      "label": "Fraction d'expression algébrique",
+      "description": "Manipuler des fractions avec expressions littérales",
+      "prerequisites": [
+        "C015",
+        "F003"
+      ],
+      "difficulty": 6,
+      "school_level": "4e",
+      "validation_test": "Simplifier (2x)/(4x²)"
+    },
+    {
+      "id": "C025",
+      "domain": "C",
+      "domain_name": "Fractions",
+      "label": "Simplification algébrique de fraction",
+      "description": "Factoriser et simplifier une fraction algébrique",
+      "prerequisites": [
+        "C024",
+        "F014"
+      ],
+      "difficulty": 6,
+      "school_level": "3e",
+      "validation_test": "Simplifier (x²-4)/(x-2)"
+    },
+    {
+      "id": "D001",
+      "domain": "D",
+      "domain_name": "Décimaux",
+      "label": "Lecture d'un décimal",
+      "description": "Lire et comprendre la représentation décimale",
+      "prerequisites": [
+        "A004",
+        "A009"
+      ],
+      "difficulty": 2,
+      "school_level": "CE2",
+      "validation_test": "Lire 3,07 et identifier parties entière et décimale"
+    },
+    {
+      "id": "D002",
+      "domain": "D",
+      "domain_name": "Décimaux",
+      "label": "Écriture décimale",
+      "description": "Écrire un décimal dicté à l'oral",
+      "prerequisites": [
+        "D001"
+      ],
+      "difficulty": 2,
+      "school_level": "CE2",
+      "validation_test": "Écrire 'quinze virgule soixante-deux'"
+    },
+    {
+      "id": "D003",
+      "domain": "D",
+      "domain_name": "Décimaux",
+      "label": "Comparaison de décimaux",
+      "description": "Comparer deux nombres décimaux",
+      "prerequisites": [
+        "D001",
+        "A006"
+      ],
+      "difficulty": 3,
+      "school_level": "CM1",
+      "validation_test": "Comparer 2,09 et 2,1"
+    },
+    {
+      "id": "D004",
+      "domain": "D",
+      "domain_name": "Décimaux",
+      "label": "Addition de décimaux",
+      "description": "Poser et calculer l'addition de deux décimaux",
+      "prerequisites": [
+        "D001",
+        "B002"
+      ],
+      "difficulty": 3,
+      "school_level": "CM1",
+      "validation_test": "Calculer 4,7+2,35"
+    },
+    {
+      "id": "D005",
+      "domain": "D",
+      "domain_name": "Décimaux",
+      "label": "Soustraction de décimaux",
+      "description": "Poser et calculer la soustraction de deux décimaux",
+      "prerequisites": [
+        "D001",
+        "B004"
+      ],
+      "difficulty": 3,
+      "school_level": "CM1",
+      "validation_test": "Calculer 8,3-2,47"
+    },
+    {
+      "id": "D006",
+      "domain": "D",
+      "domain_name": "Décimaux",
+      "label": "Multiplication de décimaux",
+      "description": "Multiplier deux décimaux",
+      "prerequisites": [
+        "D001",
+        "B007"
+      ],
+      "difficulty": 3,
+      "school_level": "CM2",
+      "validation_test": "Calculer 3,4×2,5"
+    },
+    {
+      "id": "D007",
+      "domain": "D",
+      "domain_name": "Décimaux",
+      "label": "Division de décimaux",
+      "description": "Diviser un décimal par un entier ou décimal",
+      "prerequisites": [
+        "D001",
+        "B008"
+      ],
+      "difficulty": 4,
+      "school_level": "CM2",
+      "validation_test": "Calculer 7,2÷1,5"
+    },
+    {
+      "id": "D008",
+      "domain": "D",
+      "domain_name": "Décimaux",
+      "label": "Arrondi à l'unité",
+      "description": "Arrondir un décimal à l'unité la plus proche",
+      "prerequisites": [
+        "D001"
+      ],
+      "difficulty": 2,
+      "school_level": "CM1",
+      "validation_test": "Arrondir 4,7 et 4,3 à l'unité"
+    },
+    {
+      "id": "D009",
+      "domain": "D",
+      "domain_name": "Décimaux",
+      "label": "Arrondi au dixième",
+      "description": "Arrondir un décimal au dixième",
+      "prerequisites": [
+        "D008"
+      ],
+      "difficulty": 3,
+      "school_level": "CM1",
+      "validation_test": "Arrondir 3,47 au dixième"
+    },
+    {
+      "id": "D010",
+      "domain": "D",
+      "domain_name": "Décimaux",
+      "label": "Arrondi au centième",
+      "description": "Arrondir un décimal au centième",
+      "prerequisites": [
+        "D009"
+      ],
+      "difficulty": 3,
+      "school_level": "CM2",
+      "validation_test": "Arrondir 5,1349 au centième"
+    },
+    {
+      "id": "D011",
+      "domain": "D",
+      "domain_name": "Décimaux",
+      "label": "Troncature",
+      "description": "Tronquer un nombre décimal à un rang donné",
+      "prerequisites": [
+        "D008"
+      ],
+      "difficulty": 3,
+      "school_level": "CM2",
+      "validation_test": "Tronquer 3,786 au centième"
+    },
+    {
+      "id": "D012",
+      "domain": "D",
+      "domain_name": "Décimaux",
+      "label": "Encadrement décimal",
+      "description": "Encadrer un décimal entre deux valeurs consécutives",
+      "prerequisites": [
+        "D003",
+        "D008"
+      ],
+      "difficulty": 3,
+      "school_level": "CM2",
+      "validation_test": "Encadrer 3,47 entre deux dixièmes consécutifs"
+    },
+    {
+      "id": "D013",
+      "domain": "D",
+      "domain_name": "Décimaux",
+      "label": "Valeur approchée",
+      "description": "Donner une valeur approchée à un rang de précision donné",
+      "prerequisites": [
+        "D012",
+        "D009"
+      ],
+      "difficulty": 3,
+      "school_level": "6e",
+      "validation_test": "Valeur approchée de 2/3 au millième"
+    },
+    {
+      "id": "D014",
+      "domain": "D",
+      "domain_name": "Décimaux",
+      "label": "Conversion d'unités",
+      "description": "Convertir des mesures (longueur, masse, contenance)",
+      "prerequisites": [
+        "D006",
+        "E001"
+      ],
+      "difficulty": 3,
+      "school_level": "CM2",
+      "validation_test": "Convertir 3,5 km en mètres"
+    },
+    {
+      "id": "D015",
+      "domain": "D",
+      "domain_name": "Décimaux",
+      "label": "Conversion scientifique",
+      "description": "Utiliser la notation scientifique pour les conversions",
+      "prerequisites": [
+        "D014",
+        "B026"
+      ],
+      "difficulty": 5,
+      "school_level": "3e",
+      "validation_test": "Convertir 2,4×10³ mm en km"
+    },
+    {
+      "id": "E001",
+      "domain": "E",
+      "domain_name": "Proportionnalité",
+      "label": "Rapport",
+      "description": "Comprendre et calculer un rapport entre deux grandeurs",
+      "prerequisites": [
+        "C015",
+        "D007"
+      ],
+      "difficulty": 3,
+      "school_level": "CM2",
+      "validation_test": "Calculer le rapport 15/20"
+    },
+    {
+      "id": "E002",
+      "domain": "E",
+      "domain_name": "Proportionnalité",
+      "label": "Ratio",
+      "description": "Exprimer une situation sous forme de ratio a:b",
+      "prerequisites": [
+        "E001"
+      ],
+      "difficulty": 3,
+      "school_level": "6e",
+      "validation_test": "Exprimer 3 rouges pour 5 bleues sous forme de ratio"
+    },
+    {
+      "id": "E003",
+      "domain": "E",
+      "domain_name": "Proportionnalité",
+      "label": "Tableau de proportionnalité",
+      "description": "Reconnaître et compléter un tableau de proportionnalité",
+      "prerequisites": [
+        "E002"
+      ],
+      "difficulty": 3,
+      "school_level": "6e",
+      "validation_test": "Compléter : si 3→12, alors 5→?"
+    },
+    {
+      "id": "E004",
+      "domain": "E",
+      "domain_name": "Proportionnalité",
+      "label": "Produit en croix",
+      "description": "Utiliser le produit en croix",
+      "prerequisites": [
+        "E003",
+        "C015"
+      ],
+      "difficulty": 3,
+      "school_level": "6e",
+      "validation_test": "Résoudre 3/4=x/12"
+    },
+    {
+      "id": "E005",
+      "domain": "E",
+      "domain_name": "Proportionnalité",
+      "label": "Quatrième proportionnelle",
+      "description": "Calculer le quatrième terme d'une proportion",
+      "prerequisites": [
+        "E004"
+      ],
+      "difficulty": 4,
+      "school_level": "6e",
+      "validation_test": "Si a/b=c/d, calculer d quand a=3,b=4,c=9"
+    },
+    {
+      "id": "E006",
+      "domain": "E",
+      "domain_name": "Proportionnalité",
+      "label": "Échelle",
+      "description": "Utiliser une échelle pour calculer des distances",
+      "prerequisites": [
+        "E005"
+      ],
+      "difficulty": 4,
+      "school_level": "CM2",
+      "validation_test": "Sur un plan au 1/50000, mesurer une distance"
+    },
+    {
+      "id": "E007",
+      "domain": "E",
+      "domain_name": "Proportionnalité",
+      "label": "Vitesse",
+      "description": "Calculer vitesse, distance ou durée",
+      "prerequisites": [
+        "E005",
+        "D014"
+      ],
+      "difficulty": 4,
+      "school_level": "6e",
+      "validation_test": "240 km en 2h : quelle est la vitesse ?"
+    },
+    {
+      "id": "E008",
+      "domain": "E",
+      "domain_name": "Proportionnalité",
+      "label": "Densité",
+      "description": "Calculer masse, volume ou densité",
+      "prerequisites": [
+        "E005",
+        "D014"
+      ],
+      "difficulty": 4,
+      "school_level": "5e",
+      "validation_test": "60 g pour 20 cm³ : quelle est la densité ?"
+    },
+    {
+      "id": "E009",
+      "domain": "E",
+      "domain_name": "Proportionnalité",
+      "label": "Débit",
+      "description": "Calculer un débit (volume/temps)",
+      "prerequisites": [
+        "E005"
+      ],
+      "difficulty": 4,
+      "school_level": "5e",
+      "validation_test": "3 L/min : combien en 7 min ?"
+    },
+    {
+      "id": "E010",
+      "domain": "E",
+      "domain_name": "Proportionnalité",
+      "label": "Pourcentage simple",
+      "description": "Calculer un pourcentage d'une quantité",
+      "prerequisites": [
+        "E001",
+        "C004"
+      ],
+      "difficulty": 3,
+      "school_level": "CM2",
+      "validation_test": "Calculer 20% de 350"
+    },
+    {
+      "id": "E011",
+      "domain": "E",
+      "domain_name": "Proportionnalité",
+      "label": "Augmentation en pourcentage",
+      "description": "Calculer un prix après augmentation",
+      "prerequisites": [
+        "E010",
+        "B001"
+      ],
+      "difficulty": 4,
+      "school_level": "5e",
+      "validation_test": "80€ augmente de 15%, quel est le nouveau prix ?"
+    },
+    {
+      "id": "E012",
+      "domain": "E",
+      "domain_name": "Proportionnalité",
+      "label": "Réduction en pourcentage",
+      "description": "Calculer un prix après réduction",
+      "prerequisites": [
+        "E010",
+        "B003"
+      ],
+      "difficulty": 4,
+      "school_level": "5e",
+      "validation_test": "120€ soldé à -30%, quel est le prix ?"
+    },
+    {
+      "id": "E013",
+      "domain": "E",
+      "domain_name": "Proportionnalité",
+      "label": "Taux d'évolution",
+      "description": "Calculer le taux d'évolution entre deux valeurs",
+      "prerequisites": [
+        "E011",
+        "E012"
+      ],
+      "difficulty": 5,
+      "school_level": "4e",
+      "validation_test": "200 à 250 : quel est le taux d'évolution ?"
+    },
+    {
+      "id": "E014",
+      "domain": "E",
+      "domain_name": "Proportionnalité",
+      "label": "Taux d'évolution global",
+      "description": "Calculer le taux résultant de plusieurs évolutions",
+      "prerequisites": [
+        "E013"
+      ],
+      "difficulty": 5,
+      "school_level": "3e",
+      "validation_test": "Deux hausses de 10% : quel est le taux global ?"
+    },
+    {
+      "id": "E015",
+      "domain": "E",
+      "domain_name": "Proportionnalité",
+      "label": "Taux d'évolution réciproque",
+      "description": "Calculer le taux inverse pour annuler une évolution",
+      "prerequisites": [
+        "E013"
+      ],
+      "difficulty": 5,
+      "school_level": "3e",
+      "validation_test": "Quelle baisse annule une hausse de 20% ?"
+    },
+    {
+      "id": "E016",
+      "domain": "E",
+      "domain_name": "Proportionnalité",
+      "label": "Coefficient multiplicateur",
+      "description": "Exprimer une évolution par un coefficient",
+      "prerequisites": [
+        "E013",
+        "C015"
+      ],
+      "difficulty": 5,
+      "school_level": "3e",
+      "validation_test": "Exprimer +25% et -25% en coefficients"
+    },
+    {
+      "id": "E017",
+      "domain": "E",
+      "domain_name": "Proportionnalité",
+      "label": "Coefficients multiplicateurs successifs",
+      "description": "Composer plusieurs coefficients",
+      "prerequisites": [
+        "E016",
+        "B022"
+      ],
+      "difficulty": 5,
+      "school_level": "3e",
+      "validation_test": "Composer ×1,2 puis ×0,8"
+    },
+    {
+      "id": "E018",
+      "domain": "E",
+      "domain_name": "Proportionnalité",
+      "label": "Intérêts simples",
+      "description": "Calculer I=C×t×n",
+      "prerequisites": [
+        "E010",
+        "F003"
+      ],
+      "difficulty": 5,
+      "school_level": "3e",
+      "validation_test": "Intérêts sur 2000€ à 3% pendant 4 ans"
+    },
+    {
+      "id": "E019",
+      "domain": "E",
+      "domain_name": "Proportionnalité",
+      "label": "Intérêts composés",
+      "description": "Calculer la valeur acquise avec intérêts composés",
+      "prerequisites": [
+        "E018",
+        "B021"
+      ],
+      "difficulty": 6,
+      "school_level": "2nde",
+      "validation_test": "1000€ à 2% composé après 5 ans"
+    },
+    {
+      "id": "E020",
+      "domain": "E",
+      "domain_name": "Proportionnalité",
+      "label": "Croissance exponentielle",
+      "description": "Modéliser une croissance exponentielle",
+      "prerequisites": [
+        "E019"
+      ],
+      "difficulty": 7,
+      "school_level": "1ere",
+      "validation_test": "Population qui double tous les 10 ans"
+    },
+    {
+      "id": "E021",
+      "domain": "E",
+      "domain_name": "Proportionnalité",
+      "label": "Décroissance exponentielle",
+      "description": "Modéliser une décroissance exponentielle",
+      "prerequisites": [
+        "E019"
+      ],
+      "difficulty": 7,
+      "school_level": "1ere",
+      "validation_test": "Modéliser la désintégration radioactive"
+    },
+    {
+      "id": "E022",
+      "domain": "E",
+      "domain_name": "Proportionnalité",
+      "label": "Interpolation linéaire",
+      "description": "Estimer une valeur intermédiaire",
+      "prerequisites": [
+        "E003"
+      ],
+      "difficulty": 6,
+      "school_level": "2nde",
+      "validation_test": "Interpoler une valeur entre deux points d'une courbe"
+    },
+    {
+      "id": "E023",
+      "domain": "E",
+      "domain_name": "Proportionnalité",
+      "label": "Proportionnalité graphique",
+      "description": "Reconnaître et tracer un graphique de proportionnalité",
+      "prerequisites": [
+        "E003"
+      ],
+      "difficulty": 4,
+      "school_level": "6e",
+      "validation_test": "Tracer le graphe km/euros"
+    },
+    {
+      "id": "E024",
+      "domain": "E",
+      "domain_name": "Proportionnalité",
+      "label": "Pourcentage pondéré",
+      "description": "Calculer une moyenne pondérée",
+      "prerequisites": [
+        "E010"
+      ],
+      "difficulty": 5,
+      "school_level": "2nde",
+      "validation_test": "Calculer la moyenne pondérée de deux notes"
+    },
+    {
+      "id": "E025",
+      "domain": "E",
+      "domain_name": "Proportionnalité",
+      "label": "Indices statistiques",
+      "description": "Comprendre et calculer des indices base 100",
+      "prerequisites": [
+        "E024"
+      ],
+      "difficulty": 6,
+      "school_level": "2nde",
+      "validation_test": "Calculer un indice de prix base 100"
+    },
+    {
+      "id": "F001",
+      "domain": "F",
+      "domain_name": "Algèbre",
+      "label": "Comprendre une variable",
+      "description": "Reconnaître une lettre comme représentant un nombre",
+      "prerequisites": [
+        "A004",
+        "B011"
+      ],
+      "difficulty": 3,
+      "school_level": "6e",
+      "validation_test": "Dans 3x+2, qu'est-ce que x représente ?"
+    },
+    {
+      "id": "F002",
+      "domain": "F",
+      "domain_name": "Algèbre",
+      "label": "Substitution",
+      "description": "Calculer la valeur d'une expression pour une valeur donnée",
+      "prerequisites": [
+        "F001"
+      ],
+      "difficulty": 3,
+      "school_level": "6e",
+      "validation_test": "Calculer 2x+3 pour x=5"
+    },
+    {
+      "id": "F003",
+      "domain": "F",
+      "domain_name": "Algèbre",
+      "label": "Expression algébrique",
+      "description": "Lire et écrire une expression algébrique",
+      "prerequisites": [
+        "F002"
+      ],
+      "difficulty": 4,
+      "school_level": "6e",
+      "validation_test": "Écrire algébriquement 'le triple du carré de x moins 2'"
+    },
+    {
+      "id": "F004",
+      "domain": "F",
+      "domain_name": "Algèbre",
+      "label": "Traduction texte vers formule",
+      "description": "Traduire un énoncé en expression algébrique",
+      "prerequisites": [
+        "F003"
+      ],
+      "difficulty": 4,
+      "school_level": "5e",
+      "validation_test": "Formaliser un rectangle de longueur l et largeur l-3"
+    },
+    {
+      "id": "F005",
+      "domain": "F",
+      "domain_name": "Algèbre",
+      "label": "Traduction formule vers texte",
+      "description": "Interpréter une expression algébrique en langage courant",
+      "prerequisites": [
+        "F003"
+      ],
+      "difficulty": 4,
+      "school_level": "5e",
+      "validation_test": "Que signifie v=d/t ?"
+    },
+    {
+      "id": "F006",
+      "domain": "F",
+      "domain_name": "Algèbre",
+      "label": "Monôme",
+      "description": "Identifier et manipuler un monôme",
+      "prerequisites": [
+        "F003"
+      ],
+      "difficulty": 4,
+      "school_level": "5e",
+      "validation_test": "Identifier les monômes dans 3x²,-5y,7"
+    },
+    {
+      "id": "F007",
+      "domain": "F",
+      "domain_name": "Algèbre",
+      "label": "Polynôme",
+      "description": "Identifier et manipuler un polynôme",
+      "prerequisites": [
+        "F006"
+      ],
+      "difficulty": 4,
+      "school_level": "5e",
+      "validation_test": "Identifier le degré de 2x³-5x+1"
+    },
+    {
+      "id": "F008",
+      "domain": "F",
+      "domain_name": "Algèbre",
+      "label": "Coefficient",
+      "description": "Identifier le coefficient d'un terme",
+      "prerequisites": [
+        "F006"
+      ],
+      "difficulty": 3,
+      "school_level": "5e",
+      "validation_test": "Dans -3x², quel est le coefficient ?"
+    },
+    {
+      "id": "F009",
+      "domain": "F",
+      "domain_name": "Algèbre",
+      "label": "Terme constant",
+      "description": "Identifier le terme constant d'un polynôme",
+      "prerequisites": [
+        "F007"
+      ],
+      "difficulty": 3,
+      "school_level": "5e",
+      "validation_test": "Dans 4x²-2x+7, quel est le terme constant ?"
+    },
+    {
+      "id": "F010",
+      "domain": "F",
+      "domain_name": "Algèbre",
+      "label": "Réduction d'expression",
+      "description": "Réduire en regroupant les termes semblables",
+      "prerequisites": [
+        "F007"
+      ],
+      "difficulty": 4,
+      "school_level": "5e",
+      "validation_test": "Réduire 3x+2y-x+5y"
+    },
+    {
+      "id": "F011",
+      "domain": "F",
+      "domain_name": "Algèbre",
+      "label": "Regroupement de termes",
+      "description": "Réordonner et regrouper les termes d'une expression",
+      "prerequisites": [
+        "F010"
+      ],
+      "difficulty": 4,
+      "school_level": "5e",
+      "validation_test": "Réordonner 5-3x+2x²-1+x"
+    },
+    {
+      "id": "F012",
+      "domain": "F",
+      "domain_name": "Algèbre",
+      "label": "Distributivité simple",
+      "description": "Développer k(a+b)=ka+kb",
+      "prerequisites": [
+        "F011",
+        "B007"
+      ],
+      "difficulty": 4,
+      "school_level": "5e",
+      "validation_test": "Développer 3(2x-5)"
+    },
+    {
+      "id": "F013",
+      "domain": "F",
+      "domain_name": "Algèbre",
+      "label": "Double distributivité",
+      "description": "Développer (a+b)(c+d)",
+      "prerequisites": [
+        "F012"
+      ],
+      "difficulty": 5,
+      "school_level": "4e",
+      "validation_test": "Développer (2x+1)(3x-4)"
+    },
+    {
+      "id": "F014",
+      "domain": "F",
+      "domain_name": "Algèbre",
+      "label": "Factorisation par facteur commun",
+      "description": "Factoriser en mettant en évidence le facteur commun",
+      "prerequisites": [
+        "F012"
+      ],
+      "difficulty": 5,
+      "school_level": "4e",
+      "validation_test": "Factoriser 6x²+4x"
+    },
+    {
+      "id": "F015",
+      "domain": "F",
+      "domain_name": "Algèbre",
+      "label": "Factorisation par regroupement",
+      "description": "Factoriser en regroupant par paires",
+      "prerequisites": [
+        "F014"
+      ],
+      "difficulty": 5,
+      "school_level": "4e",
+      "validation_test": "Factoriser ax+ay+bx+by"
+    },
+    {
+      "id": "F016",
+      "domain": "F",
+      "domain_name": "Algèbre",
+      "label": "Identité (a+b)²",
+      "description": "Développer (a+b)²=a²+2ab+b²",
+      "prerequisites": [
+        "F013"
+      ],
+      "difficulty": 5,
+      "school_level": "3e",
+      "validation_test": "Développer (3x+2)²"
+    },
+    {
+      "id": "F017",
+      "domain": "F",
+      "domain_name": "Algèbre",
+      "label": "Identité (a-b)²",
+      "description": "Développer (a-b)²=a²-2ab+b²",
+      "prerequisites": [
+        "F013"
+      ],
+      "difficulty": 5,
+      "school_level": "3e",
+      "validation_test": "Développer (x-5)²"
+    },
+    {
+      "id": "F018",
+      "domain": "F",
+      "domain_name": "Algèbre",
+      "label": "Identité (a+b)(a-b)",
+      "description": "Développer (a+b)(a-b)=a²-b²",
+      "prerequisites": [
+        "F013"
+      ],
+      "difficulty": 5,
+      "school_level": "3e",
+      "validation_test": "Développer (2x+3)(2x-3)"
+    },
+    {
+      "id": "F019",
+      "domain": "F",
+      "domain_name": "Algèbre",
+      "label": "Reconnaissance d'identité remarquable",
+      "description": "Identifier quelle identité s'applique",
+      "prerequisites": [
+        "F016",
+        "F017",
+        "F018"
+      ],
+      "difficulty": 5,
+      "school_level": "3e",
+      "validation_test": "Reconnaître que x²-9=(x+3)(x-3)"
+    },
+    {
+      "id": "F020",
+      "domain": "F",
+      "domain_name": "Algèbre",
+      "label": "Développement rapide",
+      "description": "Développer rapidement via identités remarquables",
+      "prerequisites": [
+        "F019"
+      ],
+      "difficulty": 5,
+      "school_level": "3e",
+      "validation_test": "Développer (x+4)²"
+    },
+    {
+      "id": "F021",
+      "domain": "F",
+      "domain_name": "Algèbre",
+      "label": "Factorisation rapide via identités",
+      "description": "Factoriser en reconnaissant une identité",
+      "prerequisites": [
+        "F019"
+      ],
+      "difficulty": 5,
+      "school_level": "3e",
+      "validation_test": "Factoriser 4x²-25"
+    },
+    {
+      "id": "F022",
+      "domain": "F",
+      "domain_name": "Algèbre",
+      "label": "Notion d'égalité",
+      "description": "Comprendre qu'une équation est une égalité conditionnelle",
+      "prerequisites": [
+        "B011",
+        "F003"
+      ],
+      "difficulty": 3,
+      "school_level": "6e",
+      "validation_test": "Vérifier si x=3 est solution de 2x+1=7"
+    },
+    {
+      "id": "F023",
+      "domain": "F",
+      "domain_name": "Algèbre",
+      "label": "Principe d'équivalence",
+      "description": "Appliquer les principes d'équivalence",
+      "prerequisites": [
+        "F022"
+      ],
+      "difficulty": 4,
+      "school_level": "6e",
+      "validation_test": "Résoudre x+4=10 par équivalence"
+    },
+    {
+      "id": "F024",
+      "domain": "F",
+      "domain_name": "Algèbre",
+      "label": "Équation du premier degré simple",
+      "description": "Résoudre ax+b=c",
+      "prerequisites": [
+        "F023"
+      ],
+      "difficulty": 4,
+      "school_level": "6e",
+      "validation_test": "Résoudre 3x-5=10"
+    },
+    {
+      "id": "F025",
+      "domain": "F",
+      "domain_name": "Algèbre",
+      "label": "Équation avec parenthèses",
+      "description": "Résoudre une équation nécessitant de développer",
+      "prerequisites": [
+        "F024",
+        "F012"
+      ],
+      "difficulty": 5,
+      "school_level": "5e",
+      "validation_test": "Résoudre 3(x-2)=15"
+    },
+    {
+      "id": "F026",
+      "domain": "F",
+      "domain_name": "Algèbre",
+      "label": "Équation avec fractions",
+      "description": "Résoudre une équation contenant des fractions",
+      "prerequisites": [
+        "F025",
+        "C017"
+      ],
+      "difficulty": 5,
+      "school_level": "4e",
+      "validation_test": "Résoudre x/3+1/2=5/6"
+    },
+    {
+      "id": "F027",
+      "domain": "F",
+      "domain_name": "Algèbre",
+      "label": "Équation produit nul",
+      "description": "Résoudre A×B=0",
+      "prerequisites": [
+        "F025",
+        "F014"
+      ],
+      "difficulty": 5,
+      "school_level": "4e",
+      "validation_test": "Résoudre (2x-3)(x+1)=0"
+    },
+    {
+      "id": "F028",
+      "domain": "F",
+      "domain_name": "Algèbre",
+      "label": "Équation quotient",
+      "description": "Résoudre une équation rationnelle",
+      "prerequisites": [
+        "F026"
+      ],
+      "difficulty": 5,
+      "school_level": "4e",
+      "validation_test": "Résoudre (x-2)/(x+3)=0"
+    },
+    {
+      "id": "F029",
+      "domain": "F",
+      "domain_name": "Algèbre",
+      "label": "Équation avec valeur absolue",
+      "description": "Résoudre |ax+b|=c",
+      "prerequisites": [
+        "F024",
+        "A025"
+      ],
+      "difficulty": 6,
+      "school_level": "2nde",
+      "validation_test": "Résoudre |2x-1|=5"
+    },
+    {
+      "id": "F030",
+      "domain": "F",
+      "domain_name": "Algèbre",
+      "label": "Équation irrationnelle",
+      "description": "Résoudre √(f(x))=g(x) avec vérification",
+      "prerequisites": [
+        "F024",
+        "B029"
+      ],
+      "difficulty": 6,
+      "school_level": "2nde",
+      "validation_test": "Résoudre √(x+3)=x-1"
+    },
+    {
+      "id": "F031",
+      "domain": "F",
+      "domain_name": "Algèbre",
+      "label": "Inéquation du premier degré",
+      "description": "Résoudre ax+b<c, représenter sur la droite réelle",
+      "prerequisites": [
+        "F024",
+        "A022"
+      ],
+      "difficulty": 4,
+      "school_level": "5e",
+      "validation_test": "Résoudre 2x-3<7 et représenter"
+    },
+    {
+      "id": "F032",
+      "domain": "F",
+      "domain_name": "Algèbre",
+      "label": "Inéquation produit",
+      "description": "Résoudre A×B>0 par tableau de signes",
+      "prerequisites": [
+        "F031",
+        "F027"
+      ],
+      "difficulty": 6,
+      "school_level": "2nde",
+      "validation_test": "Résoudre (2x-1)(x+3)>0"
+    },
+    {
+      "id": "F033",
+      "domain": "F",
+      "domain_name": "Algèbre",
+      "label": "Inéquation quotient",
+      "description": "Résoudre A/B>0 par tableau de signes",
+      "prerequisites": [
+        "F032",
+        "F028"
+      ],
+      "difficulty": 6,
+      "school_level": "2nde",
+      "validation_test": "Résoudre (x-2)/(x+1)≤0"
+    },
+    {
+      "id": "F034",
+      "domain": "F",
+      "domain_name": "Algèbre",
+      "label": "Notation intervalle",
+      "description": "Écrire une solution en notation d'intervalle",
+      "prerequisites": [
+        "F031"
+      ],
+      "difficulty": 4,
+      "school_level": "5e",
+      "validation_test": "Écrire {x|x>3} en notation d'intervalle"
+    },
+    {
+      "id": "F035",
+      "domain": "F",
+      "domain_name": "Algèbre",
+      "label": "Union d'intervalles",
+      "description": "Exprimer une union d'intervalles",
+      "prerequisites": [
+        "F034"
+      ],
+      "difficulty": 5,
+      "school_level": "2nde",
+      "validation_test": "Représenter ]-∞;2[∪]5;+∞["
+    },
+    {
+      "id": "F036",
+      "domain": "F",
+      "domain_name": "Algèbre",
+      "label": "Intersection d'intervalles",
+      "description": "Exprimer une intersection d'intervalles",
+      "prerequisites": [
+        "F035"
+      ],
+      "difficulty": 5,
+      "school_level": "2nde",
+      "validation_test": "Calculer [1;5]∩[3;8]"
+    },
+    {
+      "id": "F037",
+      "domain": "F",
+      "domain_name": "Algèbre",
+      "label": "Fonction carré",
+      "description": "Connaître f(x)=x² et sa courbe",
+      "prerequisites": [
+        "F003",
+        "B019"
+      ],
+      "difficulty": 5,
+      "school_level": "5e",
+      "validation_test": "Tracer y=x² et lire images/antécédents"
+    },
+    {
+      "id": "F038",
+      "domain": "F",
+      "domain_name": "Algèbre",
+      "label": "Trinôme : forme développée",
+      "description": "Reconnaître et manipuler ax²+bx+c",
+      "prerequisites": [
+        "F037",
+        "F013"
+      ],
+      "difficulty": 5,
+      "school_level": "2nde",
+      "validation_test": "Identifier a,b,c dans 2x²-5x+3"
+    },
+    {
+      "id": "F039",
+      "domain": "F",
+      "domain_name": "Algèbre",
+      "label": "Trinôme : forme factorisée",
+      "description": "Écrire a(x-x₁)(x-x₂)",
+      "prerequisites": [
+        "F038",
+        "F021"
+      ],
+      "difficulty": 6,
+      "school_level": "2nde",
+      "validation_test": "Factoriser x²-5x+6"
+    },
+    {
+      "id": "F040",
+      "domain": "F",
+      "domain_name": "Algèbre",
+      "label": "Trinôme : forme canonique",
+      "description": "Écrire a(x-α)²+β",
+      "prerequisites": [
+        "F038"
+      ],
+      "difficulty": 6,
+      "school_level": "2nde",
+      "validation_test": "Mettre x²-4x+1 sous forme canonique"
+    },
+    {
+      "id": "F041",
+      "domain": "F",
+      "domain_name": "Algèbre",
+      "label": "Discriminant",
+      "description": "Calculer Δ=b²-4ac et interpréter son signe",
+      "prerequisites": [
+        "F038",
+        "B019"
+      ],
+      "difficulty": 6,
+      "school_level": "2nde",
+      "validation_test": "Calculer le discriminant de 2x²-3x+1"
+    },
+    {
+      "id": "F042",
+      "domain": "F",
+      "domain_name": "Algèbre",
+      "label": "Racines d'un trinôme",
+      "description": "Calculer x₁,x₂=(-b±√Δ)/2a",
+      "prerequisites": [
+        "F041",
+        "B029"
+      ],
+      "difficulty": 6,
+      "school_level": "2nde",
+      "validation_test": "Résoudre x²-5x+6=0"
+    },
+    {
+      "id": "F043",
+      "domain": "F",
+      "domain_name": "Algèbre",
+      "label": "Signe d'un trinôme",
+      "description": "Dresser le tableau de signe de ax²+bx+c",
+      "prerequisites": [
+        "F042",
+        "F041"
+      ],
+      "difficulty": 6,
+      "school_level": "2nde",
+      "validation_test": "Étudier le signe de x²-x-2"
+    },
+    {
+      "id": "F044",
+      "domain": "F",
+      "domain_name": "Algèbre",
+      "label": "Somme des racines",
+      "description": "Utiliser x₁+x₂=-b/a",
+      "prerequisites": [
+        "F042"
+      ],
+      "difficulty": 6,
+      "school_level": "1ere",
+      "validation_test": "Vérifier la somme des racines de x²-5x+6"
+    },
+    {
+      "id": "F045",
+      "domain": "F",
+      "domain_name": "Algèbre",
+      "label": "Produit des racines",
+      "description": "Utiliser x₁×x₂=c/a",
+      "prerequisites": [
+        "F042"
+      ],
+      "difficulty": 6,
+      "school_level": "1ere",
+      "validation_test": "Vérifier le produit des racines de x²-5x+6"
+    },
+    {
+      "id": "F046",
+      "domain": "F",
+      "domain_name": "Algèbre",
+      "label": "Système de deux équations",
+      "description": "Résoudre un système 2×2",
+      "prerequisites": [
+        "F024"
+      ],
+      "difficulty": 5,
+      "school_level": "3e",
+      "validation_test": "Résoudre { 2x+y=5 ; x-y=1 }"
+    },
+    {
+      "id": "F047",
+      "domain": "F",
+      "domain_name": "Algèbre",
+      "label": "Méthode de substitution",
+      "description": "Résoudre un système par substitution",
+      "prerequisites": [
+        "F046"
+      ],
+      "difficulty": 5,
+      "school_level": "3e",
+      "validation_test": "Résoudre un système 2×2 par substitution"
+    },
+    {
+      "id": "F048",
+      "domain": "F",
+      "domain_name": "Algèbre",
+      "label": "Méthode par combinaison",
+      "description": "Résoudre un système par combinaison linéaire",
+      "prerequisites": [
+        "F046"
+      ],
+      "difficulty": 5,
+      "school_level": "3e",
+      "validation_test": "Résoudre un système 2×2 par combinaison"
+    },
+    {
+      "id": "F049",
+      "domain": "F",
+      "domain_name": "Algèbre",
+      "label": "Système incompatible ou indéterminé",
+      "description": "Reconnaître un système sans solution ou infini",
+      "prerequisites": [
+        "F046"
+      ],
+      "difficulty": 6,
+      "school_level": "2nde",
+      "validation_test": "Interpréter géométriquement un système sans solution"
+    },
+    {
+      "id": "F050",
+      "domain": "F",
+      "domain_name": "Algèbre",
+      "label": "Équation bicarrée",
+      "description": "Résoudre ax⁴+bx²+c=0 par substitution u=x²",
+      "prerequisites": [
+        "F042"
+      ],
+      "difficulty": 7,
+      "school_level": "Terminale",
+      "validation_test": "Résoudre x⁴-5x²+4=0"
+    },
+    {
+      "id": "F051",
+      "domain": "F",
+      "domain_name": "Algèbre",
+      "label": "Inéquation du second degré",
+      "description": "Résoudre ax²+bx+c>0 via le signe du trinôme",
+      "prerequisites": [
+        "F043",
+        "F031"
+      ],
+      "difficulty": 6,
+      "school_level": "2nde",
+      "validation_test": "Résoudre x²-3x+2≤0"
+    },
+    {
+      "id": "F052",
+      "domain": "F",
+      "domain_name": "Algèbre",
+      "label": "Tableau de signes combiné",
+      "description": "Dresser un tableau de signes multi-facteurs",
+      "prerequisites": [
+        "F051"
+      ],
+      "difficulty": 7,
+      "school_level": "1ere",
+      "validation_test": "Signe de (x-1)(x+2)(2x-3)"
+    },
+    {
+      "id": "F053",
+      "domain": "F",
+      "domain_name": "Algèbre",
+      "label": "Tableau de variations algébrique",
+      "description": "Dresser un tableau de variations d'un polynôme",
+      "prerequisites": [
+        "F052"
+      ],
+      "difficulty": 7,
+      "school_level": "1ere",
+      "validation_test": "Tableau de variations de x³-3x"
+    },
+    {
+      "id": "F054",
+      "domain": "F",
+      "domain_name": "Algèbre",
+      "label": "Fractions rationnelles",
+      "description": "Manipuler et simplifier des fractions de polynômes",
+      "prerequisites": [
+        "C025",
+        "F033"
+      ],
+      "difficulty": 7,
+      "school_level": "Terminale",
+      "validation_test": "Simplifier (x²-4)/(x²+x-6)"
+    },
+    {
+      "id": "F055",
+      "domain": "F",
+      "domain_name": "Algèbre",
+      "label": "Paramètre dans une équation",
+      "description": "Résoudre une équation selon les valeurs d'un paramètre",
+      "prerequisites": [
+        "F024",
+        "F003"
+      ],
+      "difficulty": 7,
+      "school_level": "Terminale",
+      "validation_test": "Résoudre mx+2=x+m selon m"
+    },
+    {
+      "id": "F056",
+      "domain": "F",
+      "domain_name": "Algèbre",
+      "label": "Équation avec paramètre (second degré)",
+      "description": "Discuter les solutions d'un trinôme selon un paramètre",
+      "prerequisites": [
+        "F042",
+        "F055"
+      ],
+      "difficulty": 8,
+      "school_level": "Terminale",
+      "validation_test": "Selon m, résoudre x²-mx+m-1=0"
+    },
+    {
+      "id": "F057",
+      "domain": "F",
+      "domain_name": "Algèbre",
+      "label": "Système avec paramètre",
+      "description": "Résoudre un système dont les coefficients dépendent d'un paramètre",
+      "prerequisites": [
+        "F046",
+        "F055"
+      ],
+      "difficulty": 8,
+      "school_level": "Terminale",
+      "validation_test": "Selon k, résoudre {kx+y=1 ; x+ky=1}"
+    },
+    {
+      "id": "F058",
+      "domain": "F",
+      "domain_name": "Algèbre",
+      "label": "Inéquation avec valeur absolue",
+      "description": "Résoudre |f(x)|<k ou |f(x)|>k",
+      "prerequisites": [
+        "F031",
+        "B033"
+      ],
+      "difficulty": 6,
+      "school_level": "2nde",
+      "validation_test": "Résoudre |2x-3|<5"
+    },
+    {
+      "id": "F059",
+      "domain": "F",
+      "domain_name": "Algèbre",
+      "label": "Union et intersection de solutions",
+      "description": "Combiner les solutions de plusieurs inéquations",
+      "prerequisites": [
+        "F051",
+        "F035",
+        "F036"
+      ],
+      "difficulty": 7,
+      "school_level": "1ere",
+      "validation_test": "Résoudre x²-1>0 ET 2x-1<3"
+    },
+    {
+      "id": "F060",
+      "domain": "F",
+      "domain_name": "Algèbre",
+      "label": "Raisonnement par équivalence",
+      "description": "Écrire une chaîne d'équivalences pour résoudre",
+      "prerequisites": [
+        "F023",
+        "F027"
+      ],
+      "difficulty": 6,
+      "school_level": "2nde",
+      "validation_test": "Justifier chaque étape de résolution avec ⟺"
+    },
+    {
+      "id": "G001",
+      "domain": "G",
+      "domain_name": "Géométrie plane",
+      "label": "Notion de point",
+      "description": "Reconnaître et nommer des points dans le plan",
+      "prerequisites": [],
+      "difficulty": 1,
+      "school_level": "CP",
+      "validation_test": "Placer et nommer 3 points A,B,C"
+    },
+    {
+      "id": "G002",
+      "domain": "G",
+      "domain_name": "Géométrie plane",
+      "label": "Segment",
+      "description": "Tracer et mesurer un segment",
+      "prerequisites": [
+        "G001"
+      ],
+      "difficulty": 1,
+      "school_level": "CP",
+      "validation_test": "Tracer [AB] et mesurer sa longueur"
+    },
+    {
+      "id": "G003",
+      "domain": "G",
+      "domain_name": "Géométrie plane",
+      "label": "Droite",
+      "description": "Reconnaître et tracer une droite infinie",
+      "prerequisites": [
+        "G001"
+      ],
+      "difficulty": 1,
+      "school_level": "CE1",
+      "validation_test": "Tracer la droite (AB)"
+    },
+    {
+      "id": "G004",
+      "domain": "G",
+      "domain_name": "Géométrie plane",
+      "label": "Longueur d'un segment",
+      "description": "Mesurer et calculer la longueur d'un segment",
+      "prerequisites": [
+        "G002"
+      ],
+      "difficulty": 1,
+      "school_level": "CE1",
+      "validation_test": "Mesurer AB au mm près"
+    },
+    {
+      "id": "G005",
+      "domain": "G",
+      "domain_name": "Géométrie plane",
+      "label": "Milieu d'un segment",
+      "description": "Construire et calculer le milieu d'un segment",
+      "prerequisites": [
+        "G002"
+      ],
+      "difficulty": 2,
+      "school_level": "CE2",
+      "validation_test": "Construire le milieu de [AB] avec AB=7 cm"
+    },
+    {
+      "id": "G006",
+      "domain": "G",
+      "domain_name": "Géométrie plane",
+      "label": "Angle",
+      "description": "Reconnaître un angle et identifier ses éléments",
+      "prerequisites": [
+        "G003"
+      ],
+      "difficulty": 2,
+      "school_level": "CE2",
+      "validation_test": "Identifier sommet et côtés d'un angle"
+    },
+    {
+      "id": "G007",
+      "domain": "G",
+      "domain_name": "Géométrie plane",
+      "label": "Mesure d'un angle",
+      "description": "Mesurer un angle au rapporteur",
+      "prerequisites": [
+        "G006"
+      ],
+      "difficulty": 2,
+      "school_level": "CE2",
+      "validation_test": "Mesurer l'angle ABC"
+    },
+    {
+      "id": "G008",
+      "domain": "G",
+      "domain_name": "Géométrie plane",
+      "label": "Types d'angles",
+      "description": "Distinguer angle aigu, droit, obtus, plat",
+      "prerequisites": [
+        "G007"
+      ],
+      "difficulty": 2,
+      "school_level": "CE2",
+      "validation_test": "Classer des angles selon leur mesure"
+    },
+    {
+      "id": "G009",
+      "domain": "G",
+      "domain_name": "Géométrie plane",
+      "label": "Angles complémentaires",
+      "description": "Reconnaître deux angles complémentaires (somme 90°)",
+      "prerequisites": [
+        "G008"
+      ],
+      "difficulty": 3,
+      "school_level": "CM1",
+      "validation_test": "Si ∠A=35°, trouver son complémentaire"
+    },
+    {
+      "id": "G010",
+      "domain": "G",
+      "domain_name": "Géométrie plane",
+      "label": "Angles supplémentaires",
+      "description": "Reconnaître deux angles supplémentaires (somme 180°)",
+      "prerequisites": [
+        "G008"
+      ],
+      "difficulty": 3,
+      "school_level": "CM1",
+      "validation_test": "Si ∠A=110°, trouver son supplément"
+    },
+    {
+      "id": "G011",
+      "domain": "G",
+      "domain_name": "Géométrie plane",
+      "label": "Angles opposés par le sommet",
+      "description": "Reconnaître des angles opposés par le sommet (égaux)",
+      "prerequisites": [
+        "G008"
+      ],
+      "difficulty": 3,
+      "school_level": "CM1",
+      "validation_test": "Calculer un angle via angles opposés par le sommet"
+    },
+    {
+      "id": "G012",
+      "domain": "G",
+      "domain_name": "Géométrie plane",
+      "label": "Droites parallèles",
+      "description": "Reconnaître, tracer et utiliser des droites parallèles",
+      "prerequisites": [
+        "G003"
+      ],
+      "difficulty": 2,
+      "school_level": "CE2",
+      "validation_test": "Tracer deux droites parallèles"
+    },
+    {
+      "id": "G013",
+      "domain": "G",
+      "domain_name": "Géométrie plane",
+      "label": "Droites perpendiculaires",
+      "description": "Reconnaître, tracer et utiliser des droites perpendiculaires",
+      "prerequisites": [
+        "G008",
+        "G003"
+      ],
+      "difficulty": 2,
+      "school_level": "CE2",
+      "validation_test": "Vérifier l'orthogonalité de deux droites"
+    },
+    {
+      "id": "G014",
+      "domain": "G",
+      "domain_name": "Géométrie plane",
+      "label": "Triangle",
+      "description": "Connaître les propriétés générales d'un triangle",
+      "prerequisites": [
+        "G002",
+        "G003"
+      ],
+      "difficulty": 2,
+      "school_level": "CE2",
+      "validation_test": "Construire un triangle quelconque"
+    },
+    {
+      "id": "G015",
+      "domain": "G",
+      "domain_name": "Géométrie plane",
+      "label": "Somme des angles d'un triangle",
+      "description": "Utiliser que la somme des angles est 180°",
+      "prerequisites": [
+        "G007",
+        "G014"
+      ],
+      "difficulty": 3,
+      "school_level": "CM2",
+      "validation_test": "Calculer l'angle manquant dans un triangle"
+    },
+    {
+      "id": "G016",
+      "domain": "G",
+      "domain_name": "Géométrie plane",
+      "label": "Triangle isocèle",
+      "description": "Identifier et utiliser les propriétés d'un triangle isocèle",
+      "prerequisites": [
+        "G014"
+      ],
+      "difficulty": 3,
+      "school_level": "CM2",
+      "validation_test": "Identifier les angles égaux dans un triangle isocèle"
+    },
+    {
+      "id": "G017",
+      "domain": "G",
+      "domain_name": "Géométrie plane",
+      "label": "Triangle équilatéral",
+      "description": "Identifier et construire un triangle équilatéral",
+      "prerequisites": [
+        "G016"
+      ],
+      "difficulty": 3,
+      "school_level": "CM2",
+      "validation_test": "Construire un triangle équilatéral de côté 5 cm"
+    },
+    {
+      "id": "G018",
+      "domain": "G",
+      "domain_name": "Géométrie plane",
+      "label": "Triangle rectangle",
+      "description": "Identifier et construire un triangle rectangle",
+      "prerequisites": [
+        "G014",
+        "G008"
+      ],
+      "difficulty": 3,
+      "school_level": "CM2",
+      "validation_test": "Identifier l'hypoténuse et les cathètes"
+    },
+    {
+      "id": "G019",
+      "domain": "G",
+      "domain_name": "Géométrie plane",
+      "label": "Quadrilatère",
+      "description": "Connaître les propriétés générales d'un quadrilatère",
+      "prerequisites": [
+        "G014"
+      ],
+      "difficulty": 2,
+      "school_level": "CE2",
+      "validation_test": "Compter et nommer côtés et angles d'un quadrilatère"
+    },
+    {
+      "id": "G020",
+      "domain": "G",
+      "domain_name": "Géométrie plane",
+      "label": "Rectangle",
+      "description": "Identifier et utiliser les propriétés du rectangle",
+      "prerequisites": [
+        "G019",
+        "G013"
+      ],
+      "difficulty": 3,
+      "school_level": "CM1",
+      "validation_test": "Calculer les diagonales d'un rectangle"
+    },
+    {
+      "id": "G021",
+      "domain": "G",
+      "domain_name": "Géométrie plane",
+      "label": "Carré",
+      "description": "Identifier et utiliser les propriétés du carré",
+      "prerequisites": [
+        "G020"
+      ],
+      "difficulty": 3,
+      "school_level": "CM1",
+      "validation_test": "Calculer le côté d'un carré connaissant sa diagonale"
+    },
+    {
+      "id": "G022",
+      "domain": "G",
+      "domain_name": "Géométrie plane",
+      "label": "Parallélogramme",
+      "description": "Identifier et utiliser les propriétés du parallélogramme",
+      "prerequisites": [
+        "G019",
+        "G012"
+      ],
+      "difficulty": 3,
+      "school_level": "CM2",
+      "validation_test": "Construire un parallélogramme"
+    },
+    {
+      "id": "G023",
+      "domain": "G",
+      "domain_name": "Géométrie plane",
+      "label": "Losange",
+      "description": "Identifier et utiliser les propriétés du losange",
+      "prerequisites": [
+        "G022"
+      ],
+      "difficulty": 3,
+      "school_level": "CM2",
+      "validation_test": "Calculer les diagonales d'un losange"
+    },
+    {
+      "id": "G024",
+      "domain": "G",
+      "domain_name": "Géométrie plane",
+      "label": "Trapèze",
+      "description": "Identifier et utiliser les propriétés du trapèze",
+      "prerequisites": [
+        "G019"
+      ],
+      "difficulty": 3,
+      "school_level": "6e",
+      "validation_test": "Distinguer trapèze et trapèze isocèle"
+    },
+    {
+      "id": "G025",
+      "domain": "G",
+      "domain_name": "Géométrie plane",
+      "label": "Cercle",
+      "description": "Définir le cercle comme ensemble équidistant d'un centre",
+      "prerequisites": [
+        "G001"
+      ],
+      "difficulty": 2,
+      "school_level": "CE2",
+      "validation_test": "Tracer un cercle de centre O et rayon 4 cm"
+    },
+    {
+      "id": "G026",
+      "domain": "G",
+      "domain_name": "Géométrie plane",
+      "label": "Rayon et diamètre",
+      "description": "Connaître et calculer rayon et diamètre",
+      "prerequisites": [
+        "G025",
+        "G004"
+      ],
+      "difficulty": 2,
+      "school_level": "CE2",
+      "validation_test": "Si d=10 cm, calculer le rayon"
+    },
+    {
+      "id": "G027",
+      "domain": "G",
+      "domain_name": "Géométrie plane",
+      "label": "Périmètre d'un rectangle",
+      "description": "Calculer P=2(L+l)",
+      "prerequisites": [
+        "G020",
+        "B007"
+      ],
+      "difficulty": 3,
+      "school_level": "CM1",
+      "validation_test": "Calculer P pour L=7, l=4"
+    },
+    {
+      "id": "G028",
+      "domain": "G",
+      "domain_name": "Géométrie plane",
+      "label": "Périmètre d'un triangle",
+      "description": "Calculer le périmètre d'un triangle",
+      "prerequisites": [
+        "G014",
+        "B001"
+      ],
+      "difficulty": 2,
+      "school_level": "CM1",
+      "validation_test": "Calculer le périmètre d'un triangle 3-4-5"
+    },
+    {
+      "id": "G029",
+      "domain": "G",
+      "domain_name": "Géométrie plane",
+      "label": "Circonférence d'un cercle",
+      "description": "Calculer C=2πr",
+      "prerequisites": [
+        "G026",
+        "E001"
+      ],
+      "difficulty": 3,
+      "school_level": "CM2",
+      "validation_test": "Calculer la circonférence pour r=7 cm"
+    },
+    {
+      "id": "G030",
+      "domain": "G",
+      "domain_name": "Géométrie plane",
+      "label": "Aire d'un rectangle",
+      "description": "Calculer A=L×l",
+      "prerequisites": [
+        "G020",
+        "B007"
+      ],
+      "difficulty": 3,
+      "school_level": "CM1",
+      "validation_test": "Calculer l'aire d'un rectangle 8×5"
+    },
+    {
+      "id": "G031",
+      "domain": "G",
+      "domain_name": "Géométrie plane",
+      "label": "Aire d'un triangle",
+      "description": "Calculer A=base×h/2",
+      "prerequisites": [
+        "G014",
+        "G030"
+      ],
+      "difficulty": 3,
+      "school_level": "CM2",
+      "validation_test": "Calculer l'aire : base=6, h=4"
+    },
+    {
+      "id": "G032",
+      "domain": "G",
+      "domain_name": "Géométrie plane",
+      "label": "Aire d'un disque",
+      "description": "Calculer A=πr²",
+      "prerequisites": [
+        "G025",
+        "B019"
+      ],
+      "difficulty": 4,
+      "school_level": "6e",
+      "validation_test": "Calculer l'aire d'un disque de rayon 5 cm"
+    },
+    {
+      "id": "G033",
+      "domain": "G",
+      "domain_name": "Géométrie plane",
+      "label": "Aire d'un trapèze",
+      "description": "Calculer A=(B+b)×h/2",
+      "prerequisites": [
+        "G024",
+        "G030"
+      ],
+      "difficulty": 4,
+      "school_level": "6e",
+      "validation_test": "Calculer l'aire : B=8,b=4,h=5"
+    },
+    {
+      "id": "G034",
+      "domain": "G",
+      "domain_name": "Géométrie plane",
+      "label": "Volume d'un parallélépipède",
+      "description": "Calculer V=L×l×h",
+      "prerequisites": [
+        "G030",
+        "B007"
+      ],
+      "difficulty": 4,
+      "school_level": "6e",
+      "validation_test": "Calculer le volume d'une boîte 4×3×2"
+    },
+    {
+      "id": "G035",
+      "domain": "G",
+      "domain_name": "Géométrie plane",
+      "label": "Volume d'un cylindre",
+      "description": "Calculer V=πr²h",
+      "prerequisites": [
+        "G032",
+        "B007"
+      ],
+      "difficulty": 4,
+      "school_level": "5e",
+      "validation_test": "Calculer le volume pour r=3,h=10"
+    },
+    {
+      "id": "G036",
+      "domain": "G",
+      "domain_name": "Géométrie plane",
+      "label": "Axe de symétrie",
+      "description": "Identifier et tracer un axe de symétrie",
+      "prerequisites": [
+        "G003"
+      ],
+      "difficulty": 3,
+      "school_level": "CM1",
+      "validation_test": "Trouver les axes de symétrie d'un rectangle"
+    },
+    {
+      "id": "G037",
+      "domain": "G",
+      "domain_name": "Géométrie plane",
+      "label": "Symétrie axiale",
+      "description": "Construire le symétrique par rapport à un axe",
+      "prerequisites": [
+        "G036"
+      ],
+      "difficulty": 3,
+      "school_level": "CM2",
+      "validation_test": "Construire le symétrique d'un triangle par rapport à une droite"
+    },
+    {
+      "id": "G038",
+      "domain": "G",
+      "domain_name": "Géométrie plane",
+      "label": "Symétrie centrale",
+      "description": "Construire le symétrique par rapport à un point",
+      "prerequisites": [
+        "G001",
+        "G005"
+      ],
+      "difficulty": 3,
+      "school_level": "5e",
+      "validation_test": "Construire le symétrique d'un triangle par rapport à un point"
+    },
+    {
+      "id": "G039",
+      "domain": "G",
+      "domain_name": "Géométrie plane",
+      "label": "Homothétie",
+      "description": "Construire et utiliser une homothétie",
+      "prerequisites": [
+        "G037"
+      ],
+      "difficulty": 5,
+      "school_level": "3e",
+      "validation_test": "Construire l'image d'une figure par homothétie de rapport 2"
+    },
+    {
+      "id": "G040",
+      "domain": "G",
+      "domain_name": "Géométrie plane",
+      "label": "Théorème de Pythagore",
+      "description": "Calculer un côté : a²+b²=c²",
+      "prerequisites": [
+        "G018",
+        "B019",
+        "B027"
+      ],
+      "difficulty": 4,
+      "school_level": "5e",
+      "validation_test": "Calculer l'hypoténuse d'un triangle 3-4-?"
+    },
+    {
+      "id": "G041",
+      "domain": "G",
+      "domain_name": "Géométrie plane",
+      "label": "Réciproque de Pythagore",
+      "description": "Démontrer qu'un triangle est rectangle via la réciproque",
+      "prerequisites": [
+        "G040"
+      ],
+      "difficulty": 4,
+      "school_level": "5e",
+      "validation_test": "Montrer que le triangle 5-12-13 est rectangle"
+    },
+    {
+      "id": "G042",
+      "domain": "G",
+      "domain_name": "Géométrie plane",
+      "label": "Théorème de Thalès",
+      "description": "Calculer des longueurs par Thalès",
+      "prerequisites": [
+        "G014",
+        "G012",
+        "E001"
+      ],
+      "difficulty": 5,
+      "school_level": "4e",
+      "validation_test": "Calculer une longueur par Thalès"
+    },
+    {
+      "id": "G043",
+      "domain": "G",
+      "domain_name": "Géométrie plane",
+      "label": "Réciproque de Thalès",
+      "description": "Démontrer le parallélisme de droites",
+      "prerequisites": [
+        "G042"
+      ],
+      "difficulty": 5,
+      "school_level": "4e",
+      "validation_test": "Montrer que deux droites sont parallèles"
+    },
+    {
+      "id": "G044",
+      "domain": "G",
+      "domain_name": "Géométrie plane",
+      "label": "Rotation",
+      "description": "Construire l'image d'une figure par rotation",
+      "prerequisites": [
+        "G007",
+        "G001"
+      ],
+      "difficulty": 4,
+      "school_level": "4e",
+      "validation_test": "Construire le rotaté d'un triangle, centre O, angle 90°"
+    },
+    {
+      "id": "H001",
+      "domain": "H",
+      "domain_name": "Géométrie analytique",
+      "label": "Repère cartésien",
+      "description": "Utiliser un repère orthonormé du plan",
+      "prerequisites": [
+        "G001",
+        "A022"
+      ],
+      "difficulty": 4,
+      "school_level": "5e",
+      "validation_test": "Placer les points (2,-3) et (-1,4) dans un repère"
+    },
+    {
+      "id": "H002",
+      "domain": "H",
+      "domain_name": "Géométrie analytique",
+      "label": "Coordonnées d'un point",
+      "description": "Lire et écrire les coordonnées d'un point",
+      "prerequisites": [
+        "H001"
+      ],
+      "difficulty": 4,
+      "school_level": "5e",
+      "validation_test": "Lire les coordonnées d'un point sur un graphique"
+    },
+    {
+      "id": "H003",
+      "domain": "H",
+      "domain_name": "Géométrie analytique",
+      "label": "Distance entre deux points",
+      "description": "Calculer d(A,B)=√[(xB-xA)²+(yB-yA)²]",
+      "prerequisites": [
+        "H002",
+        "G040",
+        "B027"
+      ],
+      "difficulty": 5,
+      "school_level": "4e",
+      "validation_test": "Distance entre A(1,2) et B(4,6)"
+    },
+    {
+      "id": "H004",
+      "domain": "H",
+      "domain_name": "Géométrie analytique",
+      "label": "Milieu d'un segment analytique",
+      "description": "Calculer le milieu M=((xA+xB)/2,(yA+yB)/2)",
+      "prerequisites": [
+        "H002",
+        "B001",
+        "C015"
+      ],
+      "difficulty": 4,
+      "school_level": "4e",
+      "validation_test": "Milieu de [AB] avec A(1,3) et B(5,7)"
+    },
+    {
+      "id": "H005",
+      "domain": "H",
+      "domain_name": "Géométrie analytique",
+      "label": "Vecteur",
+      "description": "Définir et manipuler un vecteur",
+      "prerequisites": [
+        "H002",
+        "A022"
+      ],
+      "difficulty": 5,
+      "school_level": "2nde",
+      "validation_test": "Calculer les coordonnées du vecteur AB"
+    },
+    {
+      "id": "H006",
+      "domain": "H",
+      "domain_name": "Géométrie analytique",
+      "label": "Norme d'un vecteur",
+      "description": "Calculer ‖v‖=√(x²+y²)",
+      "prerequisites": [
+        "H005",
+        "H003"
+      ],
+      "difficulty": 5,
+      "school_level": "2nde",
+      "validation_test": "Norme du vecteur (3,-4)"
+    },
+    {
+      "id": "H007",
+      "domain": "H",
+      "domain_name": "Géométrie analytique",
+      "label": "Colinéarité de vecteurs",
+      "description": "Tester la colinéarité de deux vecteurs",
+      "prerequisites": [
+        "H005"
+      ],
+      "difficulty": 5,
+      "school_level": "2nde",
+      "validation_test": "Montrer que AB et CD sont colinéaires"
+    },
+    {
+      "id": "H008",
+      "domain": "H",
+      "domain_name": "Géométrie analytique",
+      "label": "Équation de droite",
+      "description": "Écrire l'équation y=ax+b d'une droite",
+      "prerequisites": [
+        "H002",
+        "F005"
+      ],
+      "difficulty": 5,
+      "school_level": "3e",
+      "validation_test": "Équation de la droite passant par (1,2) et (3,6)"
+    },
+    {
+      "id": "H009",
+      "domain": "H",
+      "domain_name": "Géométrie analytique",
+      "label": "Coefficient directeur",
+      "description": "Calculer et interpréter le coefficient directeur",
+      "prerequisites": [
+        "H008",
+        "E001"
+      ],
+      "difficulty": 5,
+      "school_level": "3e",
+      "validation_test": "Coefficient directeur de la droite (AB)"
+    },
+    {
+      "id": "H010",
+      "domain": "H",
+      "domain_name": "Géométrie analytique",
+      "label": "Intersection de droites",
+      "description": "Coordonnées du point d'intersection de deux droites",
+      "prerequisites": [
+        "H008",
+        "F046"
+      ],
+      "difficulty": 5,
+      "school_level": "2nde",
+      "validation_test": "Intersection de y=2x+1 et y=-x+4"
+    },
+    {
+      "id": "H011",
+      "domain": "H",
+      "domain_name": "Géométrie analytique",
+      "label": "Droites parallèles analytique",
+      "description": "Reconnaître des droites parallèles via leurs pentes",
+      "prerequisites": [
+        "H009",
+        "H010"
+      ],
+      "difficulty": 5,
+      "school_level": "2nde",
+      "validation_test": "Montrer que y=3x+1 et y=3x-5 sont parallèles"
+    },
+    {
+      "id": "H012",
+      "domain": "H",
+      "domain_name": "Géométrie analytique",
+      "label": "Droites perpendiculaires analytique",
+      "description": "Reconnaître des droites perpendiculaires : a×a'=-1",
+      "prerequisites": [
+        "H009"
+      ],
+      "difficulty": 5,
+      "school_level": "2nde",
+      "validation_test": "Droite perpendiculaire à y=2x+1 passant par (0,3)"
+    },
+    {
+      "id": "H013",
+      "domain": "H",
+      "domain_name": "Géométrie analytique",
+      "label": "Produit scalaire 2D",
+      "description": "Calculer u⃗·v⃗",
+      "prerequisites": [
+        "H005",
+        "G007"
+      ],
+      "difficulty": 6,
+      "school_level": "2nde",
+      "validation_test": "Calculer (2,3)·(1,-1)"
+    },
+    {
+      "id": "H014",
+      "domain": "H",
+      "domain_name": "Géométrie analytique",
+      "label": "Angle entre deux vecteurs",
+      "description": "Calculer l'angle via le produit scalaire",
+      "prerequisites": [
+        "H013"
+      ],
+      "difficulty": 6,
+      "school_level": "2nde",
+      "validation_test": "Angle entre u⃗=(1,0) et v⃗=(1,1)"
+    },
+    {
+      "id": "H015",
+      "domain": "H",
+      "domain_name": "Géométrie analytique",
+      "label": "Projection orthogonale",
+      "description": "Calculer la projection d'un vecteur sur un autre",
+      "prerequisites": [
+        "H013"
+      ],
+      "difficulty": 6,
+      "school_level": "2nde",
+      "validation_test": "Projeter v⃗ sur u⃗"
+    },
+    {
+      "id": "H016",
+      "domain": "H",
+      "domain_name": "Géométrie analytique",
+      "label": "Équation d'un cercle",
+      "description": "Écrire (x-a)²+(y-b)²=r²",
+      "prerequisites": [
+        "H003",
+        "G025"
+      ],
+      "difficulty": 6,
+      "school_level": "2nde",
+      "validation_test": "Cercle de centre (2,-1) et rayon 3"
+    },
+    {
+      "id": "H017",
+      "domain": "H",
+      "domain_name": "Géométrie analytique",
+      "label": "Position relative droite/cercle",
+      "description": "Étudier la position d'une droite par rapport à un cercle",
+      "prerequisites": [
+        "H010",
+        "H016"
+      ],
+      "difficulty": 7,
+      "school_level": "1ere",
+      "validation_test": "Position de y=x+1 et (x-1)²+(y-2)²=4"
+    },
+    {
+      "id": "H018",
+      "domain": "H",
+      "domain_name": "Géométrie analytique",
+      "label": "Tangente à un cercle",
+      "description": "Équation de la tangente en un point",
+      "prerequisites": [
+        "H016",
+        "H012"
+      ],
+      "difficulty": 7,
+      "school_level": "1ere",
+      "validation_test": "Tangente à x²+y²=25 au point (3,4)"
+    },
+    {
+      "id": "H019",
+      "domain": "H",
+      "domain_name": "Géométrie analytique",
+      "label": "Vecteur directeur d'une droite",
+      "description": "Identifier un vecteur directeur",
+      "prerequisites": [
+        "H008"
+      ],
+      "difficulty": 5,
+      "school_level": "2nde",
+      "validation_test": "Vecteur directeur de 2x-3y+1=0"
+    },
+    {
+      "id": "H020",
+      "domain": "H",
+      "domain_name": "Géométrie analytique",
+      "label": "Vecteur normal à une droite",
+      "description": "Identifier le vecteur normal",
+      "prerequisites": [
+        "H019",
+        "H012"
+      ],
+      "difficulty": 5,
+      "school_level": "2nde",
+      "validation_test": "Vecteur normal de y=3x-2"
+    },
+    {
+      "id": "I001",
+      "domain": "I",
+      "domain_name": "Trigonométrie",
+      "label": "Angle orienté",
+      "description": "Comprendre et utiliser la notion d'angle orienté",
+      "prerequisites": [
+        "G006",
+        "A022"
+      ],
+      "difficulty": 5,
+      "school_level": "2nde",
+      "validation_test": "Distinguer l'angle orienté (AB,AC) de (AC,AB)"
+    },
+    {
+      "id": "I002",
+      "domain": "I",
+      "domain_name": "Trigonométrie",
+      "label": "Radians",
+      "description": "Convertir entre degrés et radians",
+      "prerequisites": [
+        "I001",
+        "E001"
+      ],
+      "difficulty": 5,
+      "school_level": "2nde",
+      "validation_test": "Convertir 180°,90°,60°,45° en radians"
+    },
+    {
+      "id": "I003",
+      "domain": "I",
+      "domain_name": "Trigonométrie",
+      "label": "Cercle trigonométrique",
+      "description": "Utiliser le cercle unité pour définir sin et cos",
+      "prerequisites": [
+        "I002",
+        "G025"
+      ],
+      "difficulty": 5,
+      "school_level": "2nde",
+      "validation_test": "Placer l'angle π/3 sur le cercle trigonométrique"
+    },
+    {
+      "id": "I004",
+      "domain": "I",
+      "domain_name": "Trigonométrie",
+      "label": "Cosinus",
+      "description": "Définir et calculer le cosinus d'un angle",
+      "prerequisites": [
+        "I003",
+        "G040"
+      ],
+      "difficulty": 5,
+      "school_level": "2nde",
+      "validation_test": "Calculer cos(π/4) et cos(2π/3)"
+    },
+    {
+      "id": "I005",
+      "domain": "I",
+      "domain_name": "Trigonométrie",
+      "label": "Sinus",
+      "description": "Définir et calculer le sinus d'un angle",
+      "prerequisites": [
+        "I003",
+        "G040"
+      ],
+      "difficulty": 5,
+      "school_level": "2nde",
+      "validation_test": "Calculer sin(π/6) et sin(π/2)"
+    },
+    {
+      "id": "I006",
+      "domain": "I",
+      "domain_name": "Trigonométrie",
+      "label": "Tangente trigonométrique",
+      "description": "Définir tan(x)=sin(x)/cos(x)",
+      "prerequisites": [
+        "I004",
+        "I005"
+      ],
+      "difficulty": 5,
+      "school_level": "2nde",
+      "validation_test": "Calculer tan(π/4) et tan(π/3)"
+    },
+    {
+      "id": "I007",
+      "domain": "I",
+      "domain_name": "Trigonométrie",
+      "label": "Valeurs remarquables",
+      "description": "Connaître cos/sin/tan pour 0,π/6,π/4,π/3,π/2",
+      "prerequisites": [
+        "I004",
+        "I005",
+        "I006"
+      ],
+      "difficulty": 6,
+      "school_level": "2nde",
+      "validation_test": "Réciter et utiliser les valeurs remarquables"
+    },
+    {
+      "id": "I008",
+      "domain": "I",
+      "domain_name": "Trigonométrie",
+      "label": "Identité trigonométrique fondamentale",
+      "description": "Utiliser cos²(x)+sin²(x)=1",
+      "prerequisites": [
+        "I004",
+        "I005",
+        "B019"
+      ],
+      "difficulty": 6,
+      "school_level": "2nde",
+      "validation_test": "Calculer cos(x) sachant sin(x)=3/5, x∈[0,π/2]"
+    },
+    {
+      "id": "I009",
+      "domain": "I",
+      "domain_name": "Trigonométrie",
+      "label": "Trigonométrie dans le triangle rectangle",
+      "description": "Utiliser sin,cos,tan pour calculer angles et côtés",
+      "prerequisites": [
+        "I004",
+        "I005",
+        "G018"
+      ],
+      "difficulty": 5,
+      "school_level": "4e",
+      "validation_test": "Calculer un côté manquant dans un triangle rectangle"
+    },
+    {
+      "id": "I010",
+      "domain": "I",
+      "domain_name": "Trigonométrie",
+      "label": "Résolution d'un triangle rectangle",
+      "description": "Trouver tous les éléments d'un triangle rectangle",
+      "prerequisites": [
+        "I009",
+        "G040"
+      ],
+      "difficulty": 5,
+      "school_level": "4e",
+      "validation_test": "Résoudre complètement un triangle rectangle"
+    },
+    {
+      "id": "I011",
+      "domain": "I",
+      "domain_name": "Trigonométrie",
+      "label": "Formule cos(a+b)",
+      "description": "Développer cos(a+b)=cos(a)cos(b)-sin(a)sin(b)",
+      "prerequisites": [
+        "I004",
+        "I005"
+      ],
+      "difficulty": 7,
+      "school_level": "1ere",
+      "validation_test": "Calculer cos(75°)=cos(45°+30°)"
+    },
+    {
+      "id": "I012",
+      "domain": "I",
+      "domain_name": "Trigonométrie",
+      "label": "Formule sin(a+b)",
+      "description": "Développer sin(a+b)=sin(a)cos(b)+cos(a)sin(b)",
+      "prerequisites": [
+        "I011"
+      ],
+      "difficulty": 7,
+      "school_level": "1ere",
+      "validation_test": "Calculer sin(75°)"
+    },
+    {
+      "id": "I013",
+      "domain": "I",
+      "domain_name": "Trigonométrie",
+      "label": "Formule cos(2a)",
+      "description": "Utiliser cos(2a)=2cos²(a)-1",
+      "prerequisites": [
+        "I011"
+      ],
+      "difficulty": 7,
+      "school_level": "1ere",
+      "validation_test": "Simplifier cos(2x)"
+    },
+    {
+      "id": "I014",
+      "domain": "I",
+      "domain_name": "Trigonométrie",
+      "label": "Formule sin(2a)",
+      "description": "Utiliser sin(2a)=2sin(a)cos(a)",
+      "prerequisites": [
+        "I012"
+      ],
+      "difficulty": 7,
+      "school_level": "1ere",
+      "validation_test": "Exprimer sin(2x)"
+    },
+    {
+      "id": "I015",
+      "domain": "I",
+      "domain_name": "Trigonométrie",
+      "label": "Équation cos(x)=k",
+      "description": "Résoudre cos(x)=k sur [0,2π] ou ℝ",
+      "prerequisites": [
+        "I003",
+        "I004"
+      ],
+      "difficulty": 6,
+      "school_level": "2nde",
+      "validation_test": "Résoudre cos(x)=1/2 sur [0,2π]"
+    },
+    {
+      "id": "I016",
+      "domain": "I",
+      "domain_name": "Trigonométrie",
+      "label": "Équation sin(x)=k",
+      "description": "Résoudre sin(x)=k sur [0,2π] ou ℝ",
+      "prerequisites": [
+        "I003",
+        "I005"
+      ],
+      "difficulty": 6,
+      "school_level": "2nde",
+      "validation_test": "Résoudre sin(x)=√2/2 sur [0,2π]"
+    },
+    {
+      "id": "I017",
+      "domain": "I",
+      "domain_name": "Trigonométrie",
+      "label": "Équation tan(x)=k",
+      "description": "Résoudre tan(x)=k",
+      "prerequisites": [
+        "I006",
+        "I016"
+      ],
+      "difficulty": 6,
+      "school_level": "1ere",
+      "validation_test": "Résoudre tan(x)=1"
+    },
+    {
+      "id": "I018",
+      "domain": "I",
+      "domain_name": "Trigonométrie",
+      "label": "Règle des sinus",
+      "description": "Utiliser a/sin(A)=b/sin(B)=c/sin(C)",
+      "prerequisites": [
+        "I005",
+        "G014"
+      ],
+      "difficulty": 7,
+      "school_level": "Terminale",
+      "validation_test": "Calculer un côté par la règle des sinus"
+    },
+    {
+      "id": "I019",
+      "domain": "I",
+      "domain_name": "Trigonométrie",
+      "label": "Règle des cosinus",
+      "description": "Utiliser a²=b²+c²-2bc×cos(A)",
+      "prerequisites": [
+        "I004",
+        "G014"
+      ],
+      "difficulty": 7,
+      "school_level": "Terminale",
+      "validation_test": "Calculer un angle par la règle des cosinus"
+    },
+    {
+      "id": "I020",
+      "domain": "I",
+      "domain_name": "Trigonométrie",
+      "label": "Forme trigonométrique R·cos(x+φ)",
+      "description": "Écrire a·cos(x)+b·sin(x) sous forme R·cos(x+φ)",
+      "prerequisites": [
+        "I004",
+        "I005",
+        "B027"
+      ],
+      "difficulty": 8,
+      "school_level": "Terminale",
+      "validation_test": "Transformer 3cos(x)+4sin(x) en R·cos(x+φ)"
+    },
+    {
+      "id": "J001",
+      "domain": "J",
+      "domain_name": "Fonctions",
+      "label": "Notion de fonction",
+      "description": "Comprendre qu'une fonction associe une image à chaque antécédent",
+      "prerequisites": [
+        "F001",
+        "H001"
+      ],
+      "difficulty": 4,
+      "school_level": "2nde",
+      "validation_test": "Donner la définition de f: x↦2x+1"
+    },
+    {
+      "id": "J002",
+      "domain": "J",
+      "domain_name": "Fonctions",
+      "label": "Image d'un réel",
+      "description": "Calculer f(a)",
+      "prerequisites": [
+        "J001",
+        "F002"
+      ],
+      "difficulty": 4,
+      "school_level": "2nde",
+      "validation_test": "Calculer f(3) pour f(x)=x²-2"
+    },
+    {
+      "id": "J003",
+      "domain": "J",
+      "domain_name": "Fonctions",
+      "label": "Antécédent d'un réel",
+      "description": "Résoudre f(x)=b",
+      "prerequisites": [
+        "J001"
+      ],
+      "difficulty": 5,
+      "school_level": "2nde",
+      "validation_test": "Trouver les antécédents de 5 pour f(x)=x+2"
+    },
+    {
+      "id": "J004",
+      "domain": "J",
+      "domain_name": "Fonctions",
+      "label": "Lecture graphique",
+      "description": "Lire image et antécédents sur une courbe",
+      "prerequisites": [
+        "J001",
+        "H001"
+      ],
+      "difficulty": 4,
+      "school_level": "2nde",
+      "validation_test": "Lire f(2) et les antécédents de 0"
+    },
+    {
+      "id": "J005",
+      "domain": "J",
+      "domain_name": "Fonctions",
+      "label": "Fonction affine",
+      "description": "Reconnaître, tracer et utiliser f(x)=ax+b",
+      "prerequisites": [
+        "H008",
+        "J001"
+      ],
+      "difficulty": 4,
+      "school_level": "3e",
+      "validation_test": "Tracer f(x)=2x-3"
+    },
+    {
+      "id": "J006",
+      "domain": "J",
+      "domain_name": "Fonctions",
+      "label": "Fonction linéaire",
+      "description": "Reconnaître et utiliser f(x)=ax",
+      "prerequisites": [
+        "J005"
+      ],
+      "difficulty": 3,
+      "school_level": "5e",
+      "validation_test": "Tracer f(x)=3x et interpréter"
+    },
+    {
+      "id": "J007",
+      "domain": "J",
+      "domain_name": "Fonctions",
+      "label": "Fonction constante",
+      "description": "Reconnaître et utiliser f(x)=k",
+      "prerequisites": [
+        "J005"
+      ],
+      "difficulty": 3,
+      "school_level": "5e",
+      "validation_test": "Tracer f(x)=4"
+    },
+    {
+      "id": "J008",
+      "domain": "J",
+      "domain_name": "Fonctions",
+      "label": "Fonction carré graphique",
+      "description": "Parabole y=x², propriétés graphiques",
+      "prerequisites": [
+        "F037",
+        "J001"
+      ],
+      "difficulty": 5,
+      "school_level": "2nde",
+      "validation_test": "Tracer y=x², identifier minimum et axe"
+    },
+    {
+      "id": "J009",
+      "domain": "J",
+      "domain_name": "Fonctions",
+      "label": "Fonction exponentielle",
+      "description": "Connaître exp et ses propriétés",
+      "prerequisites": [
+        "B021",
+        "J001"
+      ],
+      "difficulty": 7,
+      "school_level": "1ere",
+      "validation_test": "Tracer y=eˣ, identifier les propriétés"
+    },
+    {
+      "id": "J010",
+      "domain": "J",
+      "domain_name": "Fonctions",
+      "label": "Fonction logarithme",
+      "description": "Connaître ln et ses propriétés",
+      "prerequisites": [
+        "J009"
+      ],
+      "difficulty": 7,
+      "school_level": "1ere",
+      "validation_test": "Tracer y=ln(x), identifier domaine et propriétés"
+    },
+    {
+      "id": "J011",
+      "domain": "J",
+      "domain_name": "Fonctions",
+      "label": "Fonction racine carrée",
+      "description": "Connaître f(x)=√x, domaine, courbe",
+      "prerequisites": [
+        "B027",
+        "J001"
+      ],
+      "difficulty": 5,
+      "school_level": "2nde",
+      "validation_test": "Tracer y=√x pour x≥0"
+    },
+    {
+      "id": "J012",
+      "domain": "J",
+      "domain_name": "Fonctions",
+      "label": "Sens de variation",
+      "description": "Déterminer si f est croissante ou décroissante sur un intervalle",
+      "prerequisites": [
+        "J001",
+        "J004"
+      ],
+      "difficulty": 4,
+      "school_level": "2nde",
+      "validation_test": "Déterminer les variations de f(x)=x²"
+    },
+    {
+      "id": "J013",
+      "domain": "J",
+      "domain_name": "Fonctions",
+      "label": "Extremum d'une fonction",
+      "description": "Identifier un maximum ou minimum",
+      "prerequisites": [
+        "J012"
+      ],
+      "difficulty": 5,
+      "school_level": "2nde",
+      "validation_test": "Identifier le minimum de f(x)=x²"
+    },
+    {
+      "id": "J014",
+      "domain": "J",
+      "domain_name": "Fonctions",
+      "label": "Parité d'une fonction",
+      "description": "Reconnaître une fonction paire ou impaire",
+      "prerequisites": [
+        "J001",
+        "A022"
+      ],
+      "difficulty": 6,
+      "school_level": "2nde",
+      "validation_test": "Vérifier que f(x)=x² est paire"
+    },
+    {
+      "id": "J015",
+      "domain": "J",
+      "domain_name": "Fonctions",
+      "label": "Périodicité",
+      "description": "Reconnaître une fonction périodique",
+      "prerequisites": [
+        "J001",
+        "I003"
+      ],
+      "difficulty": 6,
+      "school_level": "1ere",
+      "validation_test": "Vérifier que sin est 2π-périodique"
+    },
+    {
+      "id": "J016",
+      "domain": "J",
+      "domain_name": "Fonctions",
+      "label": "Composition de fonctions",
+      "description": "Calculer (g∘f)(x)=g(f(x))",
+      "prerequisites": [
+        "J001",
+        "F002"
+      ],
+      "difficulty": 6,
+      "school_level": "Terminale",
+      "validation_test": "Calculer g∘f pour f(x)=2x et g(x)=x+1"
+    },
+    {
+      "id": "J017",
+      "domain": "J",
+      "domain_name": "Fonctions",
+      "label": "Fonction réciproque",
+      "description": "Comprendre et calculer f⁻¹",
+      "prerequisites": [
+        "J016",
+        "J003"
+      ],
+      "difficulty": 7,
+      "school_level": "Terminale",
+      "validation_test": "Vérifier que ln et exp sont réciproques"
+    },
+    {
+      "id": "J018",
+      "domain": "J",
+      "domain_name": "Fonctions",
+      "label": "Tableau de variations",
+      "description": "Dresser un tableau de variations complet",
+      "prerequisites": [
+        "J012"
+      ],
+      "difficulty": 5,
+      "school_level": "2nde",
+      "validation_test": "Tableau de variations de f(x)=x²-4x+1"
+    },
+    {
+      "id": "J019",
+      "domain": "J",
+      "domain_name": "Fonctions",
+      "label": "Maximum et minimum via tableau",
+      "description": "Lire les extrema dans un tableau de variations",
+      "prerequisites": [
+        "J013",
+        "J018"
+      ],
+      "difficulty": 5,
+      "school_level": "2nde",
+      "validation_test": "Lire le minimum de f dans son tableau"
+    },
+    {
+      "id": "J020",
+      "domain": "J",
+      "domain_name": "Fonctions",
+      "label": "Fonction polynôme de degré n",
+      "description": "Étudier un polynôme de degré n",
+      "prerequisites": [
+        "F007",
+        "J001"
+      ],
+      "difficulty": 7,
+      "school_level": "Terminale",
+      "validation_test": "Étudier les variations de x³-3x"
+    },
+    {
+      "id": "J021",
+      "domain": "J",
+      "domain_name": "Fonctions",
+      "label": "Fonction rationnelle",
+      "description": "Étudier f(x)=p(x)/q(x)",
+      "prerequisites": [
+        "C024",
+        "J001"
+      ],
+      "difficulty": 7,
+      "school_level": "Terminale",
+      "validation_test": "Étudier f(x)=(x+1)/(x-2)"
+    },
+    {
+      "id": "J022",
+      "domain": "J",
+      "domain_name": "Fonctions",
+      "label": "Propriétés de ln",
+      "description": "Utiliser ln(ab), ln(a/b), ln(aⁿ)",
+      "prerequisites": [
+        "J010"
+      ],
+      "difficulty": 7,
+      "school_level": "1ere",
+      "validation_test": "Simplifier ln(e²×e³)"
+    },
+    {
+      "id": "J023",
+      "domain": "J",
+      "domain_name": "Fonctions",
+      "label": "Propriétés de exp",
+      "description": "Utiliser eᵃ⁺ᵇ=eᵃ×eᵇ",
+      "prerequisites": [
+        "J009",
+        "B022"
+      ],
+      "difficulty": 7,
+      "school_level": "1ere",
+      "validation_test": "Simplifier e²×e⁻¹"
+    },
+    {
+      "id": "J024",
+      "domain": "J",
+      "domain_name": "Fonctions",
+      "label": "Équation exponentielle",
+      "description": "Résoudre eᶠ⁽ˣ⁾=k",
+      "prerequisites": [
+        "J023",
+        "F024"
+      ],
+      "difficulty": 7,
+      "school_level": "1ere",
+      "validation_test": "Résoudre e²ˣ⁻¹=e³"
+    },
+    {
+      "id": "J025",
+      "domain": "J",
+      "domain_name": "Fonctions",
+      "label": "Équation logarithmique",
+      "description": "Résoudre ln(f(x))=k",
+      "prerequisites": [
+        "J022",
+        "F024"
+      ],
+      "difficulty": 7,
+      "school_level": "1ere",
+      "validation_test": "Résoudre ln(2x-1)=0"
+    },
+    {
+      "id": "J026",
+      "domain": "J",
+      "domain_name": "Fonctions",
+      "label": "Inéquation exponentielle",
+      "description": "Résoudre des inéquations avec exp",
+      "prerequisites": [
+        "J024",
+        "F031"
+      ],
+      "difficulty": 7,
+      "school_level": "1ere",
+      "validation_test": "Résoudre eˣ>e²"
+    },
+    {
+      "id": "J027",
+      "domain": "J",
+      "domain_name": "Fonctions",
+      "label": "Inéquation logarithmique",
+      "description": "Résoudre des inéquations avec ln",
+      "prerequisites": [
+        "J025",
+        "F031"
+      ],
+      "difficulty": 7,
+      "school_level": "1ere",
+      "validation_test": "Résoudre ln(x)≥1"
+    },
+    {
+      "id": "J028",
+      "domain": "J",
+      "domain_name": "Fonctions",
+      "label": "Fonctions trigonométriques",
+      "description": "Étudier sin,cos comme fonctions de ℝ",
+      "prerequisites": [
+        "I004",
+        "I005",
+        "J001"
+      ],
+      "difficulty": 6,
+      "school_level": "2nde",
+      "validation_test": "Identifier domaine, image et période de sin"
+    },
+    {
+      "id": "J029",
+      "domain": "J",
+      "domain_name": "Fonctions",
+      "label": "Périodicité des fonctions trig",
+      "description": "Résoudre des équations trig sur ℝ",
+      "prerequisites": [
+        "J028",
+        "J015"
+      ],
+      "difficulty": 7,
+      "school_level": "1ere",
+      "validation_test": "Résoudre sin(x)=1/2 sur ℝ"
+    },
+    {
+      "id": "J030",
+      "domain": "J",
+      "domain_name": "Fonctions",
+      "label": "Comparaison de fonctions",
+      "description": "Comparer deux fonctions sur un intervalle",
+      "prerequisites": [
+        "J012",
+        "J004"
+      ],
+      "difficulty": 6,
+      "school_level": "2nde",
+      "validation_test": "Comparer x et x² sur [0,1]"
+    },
+    {
+      "id": "J031",
+      "domain": "J",
+      "domain_name": "Fonctions",
+      "label": "Fonction valeur absolue",
+      "description": "Étudier f(x)=|x| et ses variantes",
+      "prerequisites": [
+        "A025",
+        "J001"
+      ],
+      "difficulty": 5,
+      "school_level": "2nde",
+      "validation_test": "Tracer f(x)=|x-2| et ses variations"
+    },
+    {
+      "id": "J032",
+      "domain": "J",
+      "domain_name": "Fonctions",
+      "label": "Transformations graphiques",
+      "description": "Translater, dilater, réfléchir une courbe",
+      "prerequisites": [
+        "J001",
+        "H001"
+      ],
+      "difficulty": 6,
+      "school_level": "2nde",
+      "validation_test": "Déduire y=f(x+2) à partir de y=f(x)"
+    },
+    {
+      "id": "J033",
+      "domain": "J",
+      "domain_name": "Fonctions",
+      "label": "Translation de courbe",
+      "description": "Appliquer une translation verticale ou horizontale",
+      "prerequisites": [
+        "J032"
+      ],
+      "difficulty": 6,
+      "school_level": "2nde",
+      "validation_test": "Tracer y=f(x-1)+3"
+    },
+    {
+      "id": "J034",
+      "domain": "J",
+      "domain_name": "Fonctions",
+      "label": "Symétrie de courbe",
+      "description": "Utiliser la parité pour tracer une courbe symétrique",
+      "prerequisites": [
+        "J032",
+        "J014"
+      ],
+      "difficulty": 6,
+      "school_level": "2nde",
+      "validation_test": "Tracer y=f(-x) à partir de y=f(x)"
+    },
+    {
+      "id": "J035",
+      "domain": "J",
+      "domain_name": "Fonctions",
+      "label": "Homothétie de courbe",
+      "description": "Appliquer un changement d'échelle",
+      "prerequisites": [
+        "J032",
+        "G039"
+      ],
+      "difficulty": 6,
+      "school_level": "2nde",
+      "validation_test": "Tracer y=2f(x) et y=f(2x)"
+    },
+    {
+      "id": "K001",
+      "domain": "K",
+      "domain_name": "Statistiques",
+      "label": "Population et individu",
+      "description": "Distinguer population, individu, variable statistique",
+      "prerequisites": [],
+      "difficulty": 2,
+      "school_level": "6e",
+      "validation_test": "Identifier population et caractère dans une situation"
+    },
+    {
+      "id": "K002",
+      "domain": "K",
+      "domain_name": "Statistiques",
+      "label": "Échantillon",
+      "description": "Comprendre ce qu'est un échantillon représentatif",
+      "prerequisites": [
+        "K001"
+      ],
+      "difficulty": 3,
+      "school_level": "6e",
+      "validation_test": "Choisir un échantillon dans une population"
+    },
+    {
+      "id": "K003",
+      "domain": "K",
+      "domain_name": "Statistiques",
+      "label": "Effectif",
+      "description": "Calculer et interpréter un effectif",
+      "prerequisites": [
+        "K001",
+        "A004"
+      ],
+      "difficulty": 2,
+      "school_level": "6e",
+      "validation_test": "Lire un effectif dans un tableau"
+    },
+    {
+      "id": "K004",
+      "domain": "K",
+      "domain_name": "Statistiques",
+      "label": "Fréquence",
+      "description": "Calculer et interpréter une fréquence relative",
+      "prerequisites": [
+        "K003",
+        "C021"
+      ],
+      "difficulty": 3,
+      "school_level": "6e",
+      "validation_test": "Calculer la fréquence de chaque valeur"
+    },
+    {
+      "id": "K005",
+      "domain": "K",
+      "domain_name": "Statistiques",
+      "label": "Moyenne",
+      "description": "Calculer la moyenne d'une série statistique",
+      "prerequisites": [
+        "K003",
+        "B001",
+        "C015"
+      ],
+      "difficulty": 3,
+      "school_level": "6e",
+      "validation_test": "Calculer la moyenne des notes d'un élève"
+    },
+    {
+      "id": "K006",
+      "domain": "K",
+      "domain_name": "Statistiques",
+      "label": "Médiane",
+      "description": "Calculer la médiane d'une série ordonnée",
+      "prerequisites": [
+        "K003",
+        "A007"
+      ],
+      "difficulty": 4,
+      "school_level": "5e",
+      "validation_test": "Trouver la médiane de la série 2,5,7,8,10"
+    },
+    {
+      "id": "K007",
+      "domain": "K",
+      "domain_name": "Statistiques",
+      "label": "Mode",
+      "description": "Identifier le mode d'une série",
+      "prerequisites": [
+        "K003"
+      ],
+      "difficulty": 2,
+      "school_level": "6e",
+      "validation_test": "Identifier le mode dans une série de données"
+    },
+    {
+      "id": "K008",
+      "domain": "K",
+      "domain_name": "Statistiques",
+      "label": "Quartiles",
+      "description": "Calculer Q1,Q2,Q3",
+      "prerequisites": [
+        "K006"
+      ],
+      "difficulty": 5,
+      "school_level": "4e",
+      "validation_test": "Calculer les quartiles de la série 1,3,5,7,9,11"
+    },
+    {
+      "id": "K009",
+      "domain": "K",
+      "domain_name": "Statistiques",
+      "label": "Étendue",
+      "description": "Calculer l'étendue d'une série",
+      "prerequisites": [
+        "K003",
+        "A006"
+      ],
+      "difficulty": 3,
+      "school_level": "6e",
+      "validation_test": "Calculer l'étendue de la série"
+    },
+    {
+      "id": "K010",
+      "domain": "K",
+      "domain_name": "Statistiques",
+      "label": "Variance",
+      "description": "Calculer la variance d'une série",
+      "prerequisites": [
+        "K005",
+        "B019",
+        "B001"
+      ],
+      "difficulty": 6,
+      "school_level": "2nde",
+      "validation_test": "Calculer la variance de 2,4,4,4,5,5,7,9"
+    },
+    {
+      "id": "K011",
+      "domain": "K",
+      "domain_name": "Statistiques",
+      "label": "Écart-type",
+      "description": "Calculer σ=√V",
+      "prerequisites": [
+        "K010",
+        "B027"
+      ],
+      "difficulty": 6,
+      "school_level": "2nde",
+      "validation_test": "Calculer l'écart-type de la série"
+    },
+    {
+      "id": "K012",
+      "domain": "K",
+      "domain_name": "Statistiques",
+      "label": "Représentations graphiques",
+      "description": "Tracer histogramme, diagramme circulaire, courbe des fréquences",
+      "prerequisites": [
+        "K003",
+        "K004",
+        "H001"
+      ],
+      "difficulty": 4,
+      "school_level": "5e",
+      "validation_test": "Tracer un diagramme circulaire"
+    },
+    {
+      "id": "K013",
+      "domain": "K",
+      "domain_name": "Statistiques",
+      "label": "Boîte à moustaches",
+      "description": "Construire et interpréter une boîte à moustaches",
+      "prerequisites": [
+        "K008",
+        "K009"
+      ],
+      "difficulty": 5,
+      "school_level": "2nde",
+      "validation_test": "Construire une boîte à moustaches"
+    },
+    {
+      "id": "K014",
+      "domain": "K",
+      "domain_name": "Statistiques",
+      "label": "Série statistique double",
+      "description": "Analyser deux séries liées (tableau croisé)",
+      "prerequisites": [
+        "K005",
+        "H001"
+      ],
+      "difficulty": 6,
+      "school_level": "2nde",
+      "validation_test": "Calculer les moyennes marginales"
+    },
+    {
+      "id": "K015",
+      "domain": "K",
+      "domain_name": "Statistiques",
+      "label": "Corrélation linéaire",
+      "description": "Comprendre le coefficient de corrélation",
+      "prerequisites": [
+        "K014",
+        "H009"
+      ],
+      "difficulty": 7,
+      "school_level": "1ere",
+      "validation_test": "Calculer et interpréter le coefficient de corrélation"
+    },
+    {
+      "id": "L001",
+      "domain": "L",
+      "domain_name": "Probabilités",
+      "label": "Univers des possibles",
+      "description": "Décrire l'ensemble des issues d'une expérience aléatoire",
+      "prerequisites": [
+        "A004"
+      ],
+      "difficulty": 3,
+      "school_level": "5e",
+      "validation_test": "Lister Ω pour le lancer d'un dé à 6 faces"
+    },
+    {
+      "id": "L002",
+      "domain": "L",
+      "domain_name": "Probabilités",
+      "label": "Événement",
+      "description": "Définir un événement comme sous-ensemble de Ω",
+      "prerequisites": [
+        "L001"
+      ],
+      "difficulty": 3,
+      "school_level": "5e",
+      "validation_test": "Définir 'obtenir un nombre pair' comme événement"
+    },
+    {
+      "id": "L003",
+      "domain": "L",
+      "domain_name": "Probabilités",
+      "label": "Événement complémentaire",
+      "description": "Calculer P(Ā)=1-P(A)",
+      "prerequisites": [
+        "L002",
+        "C013"
+      ],
+      "difficulty": 3,
+      "school_level": "5e",
+      "validation_test": "Calculer la probabilité de ne pas obtenir de 6"
+    },
+    {
+      "id": "L004",
+      "domain": "L",
+      "domain_name": "Probabilités",
+      "label": "Union d'événements",
+      "description": "Définir et calculer P(A∪B)",
+      "prerequisites": [
+        "L002"
+      ],
+      "difficulty": 4,
+      "school_level": "4e",
+      "validation_test": "Calculer P(paire ou multiple de 3)"
+    },
+    {
+      "id": "L005",
+      "domain": "L",
+      "domain_name": "Probabilités",
+      "label": "Intersection d'événements",
+      "description": "Définir et calculer P(A∩B)",
+      "prerequisites": [
+        "L002"
+      ],
+      "difficulty": 4,
+      "school_level": "4e",
+      "validation_test": "Calculer P(paire et multiple de 3)"
+    },
+    {
+      "id": "L006",
+      "domain": "L",
+      "domain_name": "Probabilités",
+      "label": "Probabilité d'un événement",
+      "description": "Assigner une probabilité à un événement",
+      "prerequisites": [
+        "L002",
+        "C004"
+      ],
+      "difficulty": 3,
+      "school_level": "5e",
+      "validation_test": "Calculer P(obtenir 4) pour un dé équilibré"
+    },
+    {
+      "id": "L007",
+      "domain": "L",
+      "domain_name": "Probabilités",
+      "label": "Axiomes des probabilités",
+      "description": "Vérifier les propriétés fondamentales",
+      "prerequisites": [
+        "L006",
+        "L003"
+      ],
+      "difficulty": 4,
+      "school_level": "4e",
+      "validation_test": "Vérifier que la somme des probabilités vaut 1"
+    },
+    {
+      "id": "L008",
+      "domain": "L",
+      "domain_name": "Probabilités",
+      "label": "Formule des probabilités totales simple",
+      "description": "Utiliser P(A∪B)=P(A)+P(B)-P(A∩B)",
+      "prerequisites": [
+        "L007",
+        "L003"
+      ],
+      "difficulty": 5,
+      "school_level": "4e",
+      "validation_test": "Calculer P(A∪B)"
+    },
+    {
+      "id": "L009",
+      "domain": "L",
+      "domain_name": "Probabilités",
+      "label": "Équiprobabilité",
+      "description": "Calculer des probabilités dans un univers équiprobable",
+      "prerequisites": [
+        "L006"
+      ],
+      "difficulty": 3,
+      "school_level": "5e",
+      "validation_test": "Probabilité de tirer une boule rouge"
+    },
+    {
+      "id": "L010",
+      "domain": "L",
+      "domain_name": "Probabilités",
+      "label": "Dénombrement simple",
+      "description": "Appliquer les principes de dénombrement",
+      "prerequisites": [
+        "L009",
+        "A012"
+      ],
+      "difficulty": 4,
+      "school_level": "3e",
+      "validation_test": "Compter le nombre de résultats possibles"
+    },
+    {
+      "id": "L011",
+      "domain": "L",
+      "domain_name": "Probabilités",
+      "label": "Arrangements",
+      "description": "Calculer A(n,k)=n!/(n-k)!",
+      "prerequisites": [
+        "L010"
+      ],
+      "difficulty": 5,
+      "school_level": "Terminale",
+      "validation_test": "Calculer A(5,3)"
+    },
+    {
+      "id": "L012",
+      "domain": "L",
+      "domain_name": "Probabilités",
+      "label": "Permutations",
+      "description": "Calculer n!",
+      "prerequisites": [
+        "L011"
+      ],
+      "difficulty": 5,
+      "school_level": "Terminale",
+      "validation_test": "Calculer 5!"
+    },
+    {
+      "id": "L013",
+      "domain": "L",
+      "domain_name": "Probabilités",
+      "label": "Combinaisons",
+      "description": "Calculer C(n,k)=n!/(k!(n-k)!)",
+      "prerequisites": [
+        "L012"
+      ],
+      "difficulty": 6,
+      "school_level": "Terminale",
+      "validation_test": "Calculer C(5,2)=10"
+    },
+    {
+      "id": "L014",
+      "domain": "L",
+      "domain_name": "Probabilités",
+      "label": "Probabilité conditionnelle",
+      "description": "Calculer P(A|B)=P(A∩B)/P(B)",
+      "prerequisites": [
+        "L006",
+        "C015"
+      ],
+      "difficulty": 6,
+      "school_level": "1ere",
+      "validation_test": "Calculer P(A|B) avec P(A∩B)=0,1, P(B)=0,4"
+    },
+    {
+      "id": "L015",
+      "domain": "L",
+      "domain_name": "Probabilités",
+      "label": "Événements indépendants",
+      "description": "Définir l'indépendance : P(A∩B)=P(A)×P(B)",
+      "prerequisites": [
+        "L014"
+      ],
+      "difficulty": 6,
+      "school_level": "1ere",
+      "validation_test": "Vérifier si deux événements sont indépendants"
+    },
+    {
+      "id": "L016",
+      "domain": "L",
+      "domain_name": "Probabilités",
+      "label": "Arbres de probabilité",
+      "description": "Utiliser un arbre pondéré",
+      "prerequisites": [
+        "L014",
+        "L003"
+      ],
+      "difficulty": 5,
+      "school_level": "4e",
+      "validation_test": "Construire un arbre et calculer des probabilités"
+    },
+    {
+      "id": "L017",
+      "domain": "L",
+      "domain_name": "Probabilités",
+      "label": "Variable aléatoire discrète",
+      "description": "Définir et utiliser une variable aléatoire discrète",
+      "prerequisites": [
+        "L006",
+        "F001"
+      ],
+      "difficulty": 6,
+      "school_level": "1ere",
+      "validation_test": "Définir X='gain au jeu' et calculer P(X=k)"
+    },
+    {
+      "id": "L018",
+      "domain": "L",
+      "domain_name": "Probabilités",
+      "label": "Loi de probabilité",
+      "description": "Dresser la loi de distribution de X",
+      "prerequisites": [
+        "L017"
+      ],
+      "difficulty": 6,
+      "school_level": "1ere",
+      "validation_test": "Dresser le tableau de la loi de X"
+    },
+    {
+      "id": "L019",
+      "domain": "L",
+      "domain_name": "Probabilités",
+      "label": "Espérance",
+      "description": "Calculer E(X)=Σ xᵢ×P(X=xᵢ)",
+      "prerequisites": [
+        "L018",
+        "K005"
+      ],
+      "difficulty": 6,
+      "school_level": "1ere",
+      "validation_test": "Calculer l'espérance d'un jeu de dés"
+    },
+    {
+      "id": "L020",
+      "domain": "L",
+      "domain_name": "Probabilités",
+      "label": "Variance d'une v.a.",
+      "description": "Calculer V(X)=E(X²)-[E(X)]²",
+      "prerequisites": [
+        "L018",
+        "K010"
+      ],
+      "difficulty": 7,
+      "school_level": "1ere",
+      "validation_test": "Calculer la variance de X"
+    },
+    {
+      "id": "L021",
+      "domain": "L",
+      "domain_name": "Probabilités",
+      "label": "Écart-type d'une v.a.",
+      "description": "Calculer σ(X)=√V(X)",
+      "prerequisites": [
+        "L020",
+        "B027"
+      ],
+      "difficulty": 7,
+      "school_level": "1ere",
+      "validation_test": "Calculer l'écart-type de X"
+    },
+    {
+      "id": "L022",
+      "domain": "L",
+      "domain_name": "Probabilités",
+      "label": "Loi binomiale",
+      "description": "Utiliser X~B(n,p)",
+      "prerequisites": [
+        "L015",
+        "L013"
+      ],
+      "difficulty": 7,
+      "school_level": "Terminale",
+      "validation_test": "Calculer P(X=3) pour X~B(10,0,4)"
+    },
+    {
+      "id": "L023",
+      "domain": "L",
+      "domain_name": "Probabilités",
+      "label": "Espérance loi binomiale",
+      "description": "Utiliser E(X)=np",
+      "prerequisites": [
+        "L022",
+        "L019"
+      ],
+      "difficulty": 7,
+      "school_level": "Terminale",
+      "validation_test": "Calculer E(X) pour X~B(20,0,3)"
+    },
+    {
+      "id": "L024",
+      "domain": "L",
+      "domain_name": "Probabilités",
+      "label": "Loi des grands nombres",
+      "description": "Comprendre la stabilisation des fréquences",
+      "prerequisites": [
+        "L022",
+        "L019"
+      ],
+      "difficulty": 7,
+      "school_level": "Terminale",
+      "validation_test": "Simuler et observer la convergence"
+    },
+    {
+      "id": "L025",
+      "domain": "L",
+      "domain_name": "Probabilités",
+      "label": "Intervalle de fluctuation",
+      "description": "Calculer un intervalle de fluctuation",
+      "prerequisites": [
+        "L022",
+        "L024"
+      ],
+      "difficulty": 8,
+      "school_level": "Terminale",
+      "validation_test": "Intervalle de fluctuation au seuil 95%"
+    },
+    {
+      "id": "M001",
+      "domain": "M",
+      "domain_name": "Suites",
+      "label": "Notion de suite",
+      "description": "Comprendre une suite comme fonction de ℕ dans ℝ",
+      "prerequisites": [
+        "J001",
+        "A004"
+      ],
+      "difficulty": 6,
+      "school_level": "1ere",
+      "validation_test": "Calculer les 5 premiers termes de uₙ=2n+1"
+    },
+    {
+      "id": "M002",
+      "domain": "M",
+      "domain_name": "Suites",
+      "label": "Terme général",
+      "description": "Exprimer uₙ en fonction de n",
+      "prerequisites": [
+        "M001",
+        "F003"
+      ],
+      "difficulty": 6,
+      "school_level": "1ere",
+      "validation_test": "Trouver le terme général d'une suite"
+    },
+    {
+      "id": "M003",
+      "domain": "M",
+      "domain_name": "Suites",
+      "label": "Définition par récurrence",
+      "description": "Comprendre uₙ₊₁=f(uₙ) avec u₀ donné",
+      "prerequisites": [
+        "M001"
+      ],
+      "difficulty": 6,
+      "school_level": "1ere",
+      "validation_test": "Calculer les 4 premiers termes de u₀=1, uₙ₊₁=2uₙ+1"
+    },
+    {
+      "id": "M004",
+      "domain": "M",
+      "domain_name": "Suites",
+      "label": "Suite arithmétique",
+      "description": "Identifier et utiliser uₙ₊₁=uₙ+r",
+      "prerequisites": [
+        "M001",
+        "B001"
+      ],
+      "difficulty": 6,
+      "school_level": "1ere",
+      "validation_test": "Vérifier qu'une suite est arithmétique"
+    },
+    {
+      "id": "M005",
+      "domain": "M",
+      "domain_name": "Suites",
+      "label": "Raison d'une suite arithmétique",
+      "description": "Calculer la raison r",
+      "prerequisites": [
+        "M004"
+      ],
+      "difficulty": 6,
+      "school_level": "1ere",
+      "validation_test": "Raison de la suite 3,7,11,15,..."
+    },
+    {
+      "id": "M006",
+      "domain": "M",
+      "domain_name": "Suites",
+      "label": "Terme général d'une suite arithmétique",
+      "description": "Utiliser uₙ=u₀+nr",
+      "prerequisites": [
+        "M004",
+        "F003"
+      ],
+      "difficulty": 6,
+      "school_level": "1ere",
+      "validation_test": "Calculer u₁₀ pour la suite de raison 3"
+    },
+    {
+      "id": "M007",
+      "domain": "M",
+      "domain_name": "Suites",
+      "label": "Somme d'une suite arithmétique",
+      "description": "Calculer S=n×(u₀+uₙ₋₁)/2",
+      "prerequisites": [
+        "M006"
+      ],
+      "difficulty": 7,
+      "school_level": "1ere",
+      "validation_test": "Calculer la somme des 50 premiers entiers"
+    },
+    {
+      "id": "M008",
+      "domain": "M",
+      "domain_name": "Suites",
+      "label": "Suite géométrique",
+      "description": "Identifier et utiliser uₙ₊₁=q×uₙ",
+      "prerequisites": [
+        "M001",
+        "B021"
+      ],
+      "difficulty": 6,
+      "school_level": "1ere",
+      "validation_test": "Vérifier qu'une suite est géométrique"
+    },
+    {
+      "id": "M009",
+      "domain": "M",
+      "domain_name": "Suites",
+      "label": "Raison d'une suite géométrique",
+      "description": "Calculer la raison q",
+      "prerequisites": [
+        "M008"
+      ],
+      "difficulty": 6,
+      "school_level": "1ere",
+      "validation_test": "Raison de la suite 3,6,12,24,..."
+    },
+    {
+      "id": "M010",
+      "domain": "M",
+      "domain_name": "Suites",
+      "label": "Terme général d'une suite géométrique",
+      "description": "Utiliser uₙ=u₀×qⁿ",
+      "prerequisites": [
+        "M008",
+        "F003"
+      ],
+      "difficulty": 6,
+      "school_level": "1ere",
+      "validation_test": "Calculer u₅ pour une suite de raison 2"
+    },
+    {
+      "id": "M011",
+      "domain": "M",
+      "domain_name": "Suites",
+      "label": "Somme d'une suite géométrique",
+      "description": "Calculer S=u₀×(1-qⁿ)/(1-q)",
+      "prerequisites": [
+        "M010",
+        "F003"
+      ],
+      "difficulty": 7,
+      "school_level": "1ere",
+      "validation_test": "Somme des 10 premiers termes"
+    },
+    {
+      "id": "M012",
+      "domain": "M",
+      "domain_name": "Suites",
+      "label": "Monotonie d'une suite",
+      "description": "Déterminer si une suite est croissante ou décroissante",
+      "prerequisites": [
+        "M001",
+        "J012"
+      ],
+      "difficulty": 6,
+      "school_level": "Terminale",
+      "validation_test": "Étudier la monotonie de uₙ=1/n"
+    },
+    {
+      "id": "M013",
+      "domain": "M",
+      "domain_name": "Suites",
+      "label": "Suite bornée",
+      "description": "Déterminer si une suite est bornée",
+      "prerequisites": [
+        "M012"
+      ],
+      "difficulty": 7,
+      "school_level": "Terminale",
+      "validation_test": "Montrer que uₙ=(-1)ⁿ/n est bornée"
+    },
+    {
+      "id": "M014",
+      "domain": "M",
+      "domain_name": "Suites",
+      "label": "Limite d'une suite",
+      "description": "Calculer la limite d'une suite convergente",
+      "prerequisites": [
+        "M012",
+        "N001"
+      ],
+      "difficulty": 7,
+      "school_level": "Terminale",
+      "validation_test": "Calculer lim(1/n) quand n→+∞"
+    },
+    {
+      "id": "M015",
+      "domain": "M",
+      "domain_name": "Suites",
+      "label": "Suite convergente / divergente",
+      "description": "Distinguer et interpréter convergence et divergence",
+      "prerequisites": [
+        "M014"
+      ],
+      "difficulty": 8,
+      "school_level": "Terminale",
+      "validation_test": "Étudier la convergence de uₙ=(n+1)/n"
+    },
+    {
+      "id": "N001",
+      "domain": "N",
+      "domain_name": "Analyse",
+      "label": "Limite en ±∞",
+      "description": "Calculer lim f(x) quand x→±∞",
+      "prerequisites": [
+        "J001",
+        "J012"
+      ],
+      "difficulty": 7,
+      "school_level": "Terminale",
+      "validation_test": "Calculer lim(x→+∞) (2x+1)/(x-3)"
+    },
+    {
+      "id": "N002",
+      "domain": "N",
+      "domain_name": "Analyse",
+      "label": "Limite en un point",
+      "description": "Calculer lim f(x) quand x→a",
+      "prerequisites": [
+        "N001"
+      ],
+      "difficulty": 7,
+      "school_level": "Terminale",
+      "validation_test": "Calculer lim(x→2) (x²-4)/(x-2)"
+    },
+    {
+      "id": "N003",
+      "domain": "N",
+      "domain_name": "Analyse",
+      "label": "Forme indéterminée",
+      "description": "Lever une forme indéterminée",
+      "prerequisites": [
+        "N002"
+      ],
+      "difficulty": 8,
+      "school_level": "Terminale",
+      "validation_test": "Simplifier (x²-1)/(x-1) pour x→1"
+    },
+    {
+      "id": "N004",
+      "domain": "N",
+      "domain_name": "Analyse",
+      "label": "Continuité en un point",
+      "description": "Définir et vérifier la continuité",
+      "prerequisites": [
+        "N002",
+        "J001"
+      ],
+      "difficulty": 7,
+      "school_level": "Terminale",
+      "validation_test": "Vérifier la continuité de f(x)=|x| en 0"
+    },
+    {
+      "id": "N005",
+      "domain": "N",
+      "domain_name": "Analyse",
+      "label": "Théorème des valeurs intermédiaires",
+      "description": "Utiliser TVI pour montrer l'existence d'une solution",
+      "prerequisites": [
+        "N004"
+      ],
+      "difficulty": 8,
+      "school_level": "Terminale",
+      "validation_test": "Montrer que x³-x-1=0 a une solution sur [1,2]"
+    },
+    {
+      "id": "N006",
+      "domain": "N",
+      "domain_name": "Analyse",
+      "label": "Taux de variation",
+      "description": "Calculer (f(a+h)-f(a))/h",
+      "prerequisites": [
+        "J001",
+        "E013",
+        "C015"
+      ],
+      "difficulty": 6,
+      "school_level": "2nde",
+      "validation_test": "Taux de variation de x² entre 1 et 3"
+    },
+    {
+      "id": "N007",
+      "domain": "N",
+      "domain_name": "Analyse",
+      "label": "Nombre dérivé",
+      "description": "Comprendre f'(a)=lim(h→0)(f(a+h)-f(a))/h",
+      "prerequisites": [
+        "N006"
+      ],
+      "difficulty": 7,
+      "school_level": "1ere",
+      "validation_test": "Nombre dérivé de x² en x=2"
+    },
+    {
+      "id": "N008",
+      "domain": "N",
+      "domain_name": "Analyse",
+      "label": "Tangente à une courbe",
+      "description": "Écrire y=f'(a)(x-a)+f(a)",
+      "prerequisites": [
+        "N007",
+        "H008"
+      ],
+      "difficulty": 7,
+      "school_level": "1ere",
+      "validation_test": "Tangente à y=x² au point x=1"
+    },
+    {
+      "id": "N009",
+      "domain": "N",
+      "domain_name": "Analyse",
+      "label": "Dérivée d'une fonction",
+      "description": "Calculer f'(x)",
+      "prerequisites": [
+        "N007"
+      ],
+      "difficulty": 7,
+      "school_level": "1ere",
+      "validation_test": "Dériver f(x)=3x²-2x+1"
+    },
+    {
+      "id": "N010",
+      "domain": "N",
+      "domain_name": "Analyse",
+      "label": "Dérivée de xⁿ",
+      "description": "Utiliser (xⁿ)'=nxⁿ⁻¹",
+      "prerequisites": [
+        "N009",
+        "B021"
+      ],
+      "difficulty": 6,
+      "school_level": "1ere",
+      "validation_test": "Dériver f(x)=x⁴"
+    },
+    {
+      "id": "N011",
+      "domain": "N",
+      "domain_name": "Analyse",
+      "label": "Dérivée de eˣ",
+      "description": "Utiliser (eˣ)'=eˣ",
+      "prerequisites": [
+        "N009",
+        "J009"
+      ],
+      "difficulty": 7,
+      "school_level": "1ere",
+      "validation_test": "Dériver f(x)=3eˣ-2"
+    },
+    {
+      "id": "N012",
+      "domain": "N",
+      "domain_name": "Analyse",
+      "label": "Dérivée de ln(x)",
+      "description": "Utiliser (ln x)'=1/x",
+      "prerequisites": [
+        "N009",
+        "J010"
+      ],
+      "difficulty": 7,
+      "school_level": "1ere",
+      "validation_test": "Dériver f(x)=ln(x)+x"
+    },
+    {
+      "id": "N013",
+      "domain": "N",
+      "domain_name": "Analyse",
+      "label": "Dérivée de sin(x)",
+      "description": "Utiliser (sin x)'=cos(x)",
+      "prerequisites": [
+        "N009",
+        "I005"
+      ],
+      "difficulty": 7,
+      "school_level": "Terminale",
+      "validation_test": "Dériver f(x)=sin(x)+cos(x)"
+    },
+    {
+      "id": "N014",
+      "domain": "N",
+      "domain_name": "Analyse",
+      "label": "Dérivée de cos(x)",
+      "description": "Utiliser (cos x)'=-sin(x)",
+      "prerequisites": [
+        "N009",
+        "I004"
+      ],
+      "difficulty": 7,
+      "school_level": "Terminale",
+      "validation_test": "Dériver f(x)=2cos(x)"
+    },
+    {
+      "id": "N015",
+      "domain": "N",
+      "domain_name": "Analyse",
+      "label": "Dérivée d'une somme",
+      "description": "(f+g)'=f'+g'",
+      "prerequisites": [
+        "N009"
+      ],
+      "difficulty": 6,
+      "school_level": "1ere",
+      "validation_test": "Dériver f(x)=x³+2x²-5"
+    },
+    {
+      "id": "N016",
+      "domain": "N",
+      "domain_name": "Analyse",
+      "label": "Dérivée d'un produit",
+      "description": "(fg)'=f'g+fg'",
+      "prerequisites": [
+        "N009"
+      ],
+      "difficulty": 7,
+      "school_level": "1ere",
+      "validation_test": "Dériver f(x)=x²·eˣ"
+    },
+    {
+      "id": "N017",
+      "domain": "N",
+      "domain_name": "Analyse",
+      "label": "Dérivée d'un quotient",
+      "description": "(f/g)'=(f'g-fg')/g²",
+      "prerequisites": [
+        "N009",
+        "C015"
+      ],
+      "difficulty": 7,
+      "school_level": "1ere",
+      "validation_test": "Dériver f(x)=(x+1)/(x-2)"
+    },
+    {
+      "id": "N018",
+      "domain": "N",
+      "domain_name": "Analyse",
+      "label": "Dérivée d'une composée",
+      "description": "(g∘f)'=(g'∘f)·f'",
+      "prerequisites": [
+        "N009",
+        "J016"
+      ],
+      "difficulty": 7,
+      "school_level": "1ere",
+      "validation_test": "Dériver f(x)=e^(x²)"
+    },
+    {
+      "id": "N019",
+      "domain": "N",
+      "domain_name": "Analyse",
+      "label": "Variations via la dérivée",
+      "description": "Signe de f' donne les variations de f",
+      "prerequisites": [
+        "N009",
+        "J012"
+      ],
+      "difficulty": 7,
+      "school_level": "1ere",
+      "validation_test": "Étudier les variations de x³-3x"
+    },
+    {
+      "id": "N020",
+      "domain": "N",
+      "domain_name": "Analyse",
+      "label": "Extremums via la dérivée",
+      "description": "f'(a)=0 et changement de signe → extremum",
+      "prerequisites": [
+        "N019",
+        "J013"
+      ],
+      "difficulty": 7,
+      "school_level": "1ere",
+      "validation_test": "Trouver les extremums de x³-3x"
+    },
+    {
+      "id": "N021",
+      "domain": "N",
+      "domain_name": "Analyse",
+      "label": "Convexité",
+      "description": "Comprendre concavité/convexité",
+      "prerequisites": [
+        "N009"
+      ],
+      "difficulty": 7,
+      "school_level": "Terminale",
+      "validation_test": "Identifier zones concaves et convexes"
+    },
+    {
+      "id": "N022",
+      "domain": "N",
+      "domain_name": "Analyse",
+      "label": "Dérivée seconde",
+      "description": "Calculer f''(x)",
+      "prerequisites": [
+        "N009"
+      ],
+      "difficulty": 7,
+      "school_level": "Terminale",
+      "validation_test": "Calculer f''(x) pour f(x)=x⁴-2x²"
+    },
+    {
+      "id": "N023",
+      "domain": "N",
+      "domain_name": "Analyse",
+      "label": "Convexité via dérivée seconde",
+      "description": "f''>0 → convexe, f''<0 → concave",
+      "prerequisites": [
+        "N022",
+        "N021"
+      ],
+      "difficulty": 8,
+      "school_level": "Terminale",
+      "validation_test": "Étudier la convexité de eˣ"
+    },
+    {
+      "id": "N024",
+      "domain": "N",
+      "domain_name": "Analyse",
+      "label": "Point d'inflexion",
+      "description": "f''(a)=0 avec changement de signe → inflexion",
+      "prerequisites": [
+        "N023"
+      ],
+      "difficulty": 8,
+      "school_level": "Terminale",
+      "validation_test": "Point d'inflexion de x³"
+    },
+    {
+      "id": "N025",
+      "domain": "N",
+      "domain_name": "Analyse",
+      "label": "Primitive d'une fonction",
+      "description": "Trouver F tel que F'=f",
+      "prerequisites": [
+        "N009"
+      ],
+      "difficulty": 7,
+      "school_level": "Terminale",
+      "validation_test": "Trouver une primitive de 3x²"
+    },
+    {
+      "id": "N026",
+      "domain": "N",
+      "domain_name": "Analyse",
+      "label": "Primitives usuelles",
+      "description": "Primitives de xⁿ, eˣ, 1/x, sin, cos",
+      "prerequisites": [
+        "N025",
+        "N010",
+        "N011",
+        "N012"
+      ],
+      "difficulty": 7,
+      "school_level": "Terminale",
+      "validation_test": "Primitive de f(x)=2x+sin(x)"
+    },
+    {
+      "id": "N027",
+      "domain": "N",
+      "domain_name": "Analyse",
+      "label": "Intégrale définie",
+      "description": "Calculer ∫ᵃᵇ f(x)dx via une primitive",
+      "prerequisites": [
+        "N025"
+      ],
+      "difficulty": 8,
+      "school_level": "Terminale",
+      "validation_test": "Calculer ∫₀¹ x² dx"
+    },
+    {
+      "id": "N028",
+      "domain": "N",
+      "domain_name": "Analyse",
+      "label": "Interprétation géométrique",
+      "description": "Aire sous la courbe = intégrale",
+      "prerequisites": [
+        "N027",
+        "J001"
+      ],
+      "difficulty": 8,
+      "school_level": "Terminale",
+      "validation_test": "Calculer l'aire entre x² et l'axe des x"
+    },
+    {
+      "id": "N029",
+      "domain": "N",
+      "domain_name": "Analyse",
+      "label": "Propriétés de l'intégrale",
+      "description": "Linéarité, positivité, relation de Chasles",
+      "prerequisites": [
+        "N027"
+      ],
+      "difficulty": 7,
+      "school_level": "Terminale",
+      "validation_test": "Utiliser la relation de Chasles"
+    },
+    {
+      "id": "N030",
+      "domain": "N",
+      "domain_name": "Analyse",
+      "label": "Intégration par parties",
+      "description": "Utiliser ∫u·v'=uv-∫u'·v",
+      "prerequisites": [
+        "N027",
+        "N016"
+      ],
+      "difficulty": 9,
+      "school_level": "Terminale",
+      "validation_test": "Calculer ∫x·eˣdx"
+    },
+    {
+      "id": "N031",
+      "domain": "N",
+      "domain_name": "Analyse",
+      "label": "Intégration par substitution",
+      "description": "Changer de variable dans une intégrale",
+      "prerequisites": [
+        "N027",
+        "N018"
+      ],
+      "difficulty": 9,
+      "school_level": "Terminale",
+      "validation_test": "Calculer ∫2x·e^(x²)dx"
+    },
+    {
+      "id": "N032",
+      "domain": "N",
+      "domain_name": "Analyse",
+      "label": "Équation diff. y'=ay",
+      "description": "Résoudre y'=ay → y=Ce^(ax)",
+      "prerequisites": [
+        "N009",
+        "J009"
+      ],
+      "difficulty": 8,
+      "school_level": "Terminale",
+      "validation_test": "Résoudre y'=3y avec y(0)=2"
+    },
+    {
+      "id": "N033",
+      "domain": "N",
+      "domain_name": "Analyse",
+      "label": "Équation diff. y'=ay+b",
+      "description": "Résoudre par variation de la constante",
+      "prerequisites": [
+        "N032"
+      ],
+      "difficulty": 8,
+      "school_level": "Terminale",
+      "validation_test": "Résoudre y'=2y+1"
+    },
+    {
+      "id": "N034",
+      "domain": "N",
+      "domain_name": "Analyse",
+      "label": "Étude complète d'une fonction",
+      "description": "Mener une étude complète",
+      "prerequisites": [
+        "N019",
+        "N020",
+        "N021",
+        "N028"
+      ],
+      "difficulty": 9,
+      "school_level": "Terminale",
+      "validation_test": "Étude complète de f(x)=(x+1)/(x-2)"
+    },
+    {
+      "id": "N035",
+      "domain": "N",
+      "domain_name": "Analyse",
+      "label": "Algorithme de Newton",
+      "description": "Comprendre et appliquer la méthode de Newton",
+      "prerequisites": [
+        "N007",
+        "N008"
+      ],
+      "difficulty": 8,
+      "school_level": "Terminale",
+      "validation_test": "Approcher une racine par Newton"
+    },
+    {
+      "id": "O001",
+      "domain": "O",
+      "domain_name": "Espace et vecteurs",
+      "label": "Repère 3D",
+      "description": "Utiliser un repère orthonormé de l'espace",
+      "prerequisites": [
+        "H001"
+      ],
+      "difficulty": 6,
+      "school_level": "Terminale",
+      "validation_test": "Placer (1,2,3) dans un repère 3D"
+    },
+    {
+      "id": "O002",
+      "domain": "O",
+      "domain_name": "Espace et vecteurs",
+      "label": "Coordonnées 3D",
+      "description": "Lire et écrire les coordonnées 3D",
+      "prerequisites": [
+        "O001"
+      ],
+      "difficulty": 6,
+      "school_level": "Terminale",
+      "validation_test": "Lire les coordonnées des sommets d'un cube"
+    },
+    {
+      "id": "O003",
+      "domain": "O",
+      "domain_name": "Espace et vecteurs",
+      "label": "Vecteur dans l'espace",
+      "description": "Définir et manipuler un vecteur de ℝ³",
+      "prerequisites": [
+        "H005",
+        "O001"
+      ],
+      "difficulty": 7,
+      "school_level": "Terminale",
+      "validation_test": "Calculer les coordonnées du vecteur AB en 3D"
+    },
+    {
+      "id": "O004",
+      "domain": "O",
+      "domain_name": "Espace et vecteurs",
+      "label": "Norme d'un vecteur 3D",
+      "description": "Calculer ‖v‖=√(x²+y²+z²)",
+      "prerequisites": [
+        "O003",
+        "H006"
+      ],
+      "difficulty": 7,
+      "school_level": "Terminale",
+      "validation_test": "Norme de (1,2,2)"
+    },
+    {
+      "id": "O005",
+      "domain": "O",
+      "domain_name": "Espace et vecteurs",
+      "label": "Produit scalaire 3D",
+      "description": "Calculer u⃗·v⃗=x₁x₂+y₁y₂+z₁z₂",
+      "prerequisites": [
+        "O003",
+        "H013"
+      ],
+      "difficulty": 7,
+      "school_level": "Terminale",
+      "validation_test": "Calculer (1,2,0)·(3,-1,4)"
+    },
+    {
+      "id": "O006",
+      "domain": "O",
+      "domain_name": "Espace et vecteurs",
+      "label": "Angle dans l'espace",
+      "description": "Calculer l'angle entre deux vecteurs",
+      "prerequisites": [
+        "O005",
+        "G007"
+      ],
+      "difficulty": 7,
+      "school_level": "Terminale",
+      "validation_test": "Angle entre deux arêtes d'un cube"
+    },
+    {
+      "id": "O007",
+      "domain": "O",
+      "domain_name": "Espace et vecteurs",
+      "label": "Colinéarité en 3D",
+      "description": "Tester la colinéarité de deux vecteurs 3D",
+      "prerequisites": [
+        "O003",
+        "H007"
+      ],
+      "difficulty": 7,
+      "school_level": "Terminale",
+      "validation_test": "Vérifier si (1,2,3) et (2,4,6) sont colinéaires"
+    },
+    {
+      "id": "O008",
+      "domain": "O",
+      "domain_name": "Espace et vecteurs",
+      "label": "Plan dans l'espace",
+      "description": "Définir un plan par 3 points non alignés",
+      "prerequisites": [
+        "O003"
+      ],
+      "difficulty": 7,
+      "school_level": "Terminale",
+      "validation_test": "Définir le plan passant par A,B,C"
+    },
+    {
+      "id": "O009",
+      "domain": "O",
+      "domain_name": "Espace et vecteurs",
+      "label": "Équation cartésienne d'un plan",
+      "description": "Écrire ax+by+cz+d=0",
+      "prerequisites": [
+        "O008",
+        "H008"
+      ],
+      "difficulty": 8,
+      "school_level": "Terminale",
+      "validation_test": "Équation du plan z=2"
+    },
+    {
+      "id": "O010",
+      "domain": "O",
+      "domain_name": "Espace et vecteurs",
+      "label": "Droite dans l'espace",
+      "description": "Définir une droite par point + vecteur directeur",
+      "prerequisites": [
+        "O003"
+      ],
+      "difficulty": 7,
+      "school_level": "Terminale",
+      "validation_test": "Paramétrer la droite passant par A de direction u⃗"
+    },
+    {
+      "id": "O011",
+      "domain": "O",
+      "domain_name": "Espace et vecteurs",
+      "label": "Représentation paramétrique",
+      "description": "Écrire x=x₀+at, y=y₀+bt, z=z₀+ct",
+      "prerequisites": [
+        "O010",
+        "O009"
+      ],
+      "difficulty": 8,
+      "school_level": "Terminale",
+      "validation_test": "Représentation paramétrique d'une droite"
+    },
+    {
+      "id": "O012",
+      "domain": "O",
+      "domain_name": "Espace et vecteurs",
+      "label": "Orthogonalité droite/plan",
+      "description": "Vérifier qu'une droite est perpendiculaire à un plan",
+      "prerequisites": [
+        "O005",
+        "O008"
+      ],
+      "difficulty": 8,
+      "school_level": "Terminale",
+      "validation_test": "Montrer qu'une droite est ⊥ à un plan"
+    },
+    {
+      "id": "O013",
+      "domain": "O",
+      "domain_name": "Espace et vecteurs",
+      "label": "Vecteur normal à un plan",
+      "description": "Identifier et utiliser le vecteur normal",
+      "prerequisites": [
+        "O012"
+      ],
+      "difficulty": 8,
+      "school_level": "Terminale",
+      "validation_test": "Vecteur normal au plan 2x-y+3z=0"
+    },
+    {
+      "id": "O014",
+      "domain": "O",
+      "domain_name": "Espace et vecteurs",
+      "label": "Distance d'un point à un plan",
+      "description": "Calculer la distance point-plan",
+      "prerequisites": [
+        "O013"
+      ],
+      "difficulty": 8,
+      "school_level": "Terminale",
+      "validation_test": "Distance du point A au plan P"
+    },
+    {
+      "id": "O015",
+      "domain": "O",
+      "domain_name": "Espace et vecteurs",
+      "label": "Intersection plan et droite",
+      "description": "Point d'intersection d'un plan et d'une droite",
+      "prerequisites": [
+        "O009",
+        "O011"
+      ],
+      "difficulty": 8,
+      "school_level": "Terminale",
+      "validation_test": "Intersection de la droite D et du plan P"
+    },
+    {
+      "id": "O016",
+      "domain": "O",
+      "domain_name": "Espace et vecteurs",
+      "label": "Positions relatives",
+      "description": "Étudier les positions relatives de droites et plans",
+      "prerequisites": [
+        "O015"
+      ],
+      "difficulty": 8,
+      "school_level": "Terminale",
+      "validation_test": "Droites parallèles, sécantes ou gauches ?"
+    },
+    {
+      "id": "O017",
+      "domain": "O",
+      "domain_name": "Espace et vecteurs",
+      "label": "Projection orthogonale 3D",
+      "description": "Calculer la projection d'un point sur un plan",
+      "prerequisites": [
+        "O012",
+        "H015"
+      ],
+      "difficulty": 8,
+      "school_level": "Terminale",
+      "validation_test": "Projeter A sur le plan P"
+    },
+    {
+      "id": "O018",
+      "domain": "O",
+      "domain_name": "Espace et vecteurs",
+      "label": "Symétrie dans l'espace",
+      "description": "Symétrique d'un point par rapport à un plan",
+      "prerequisites": [
+        "O003",
+        "G037"
+      ],
+      "difficulty": 7,
+      "school_level": "Terminale",
+      "validation_test": "Symétrique de A par rapport au plan P"
+    },
+    {
+      "id": "O019",
+      "domain": "O",
+      "domain_name": "Espace et vecteurs",
+      "label": "Volume d'un tétraèdre",
+      "description": "Calculer V=|det(u,v,w)|/6",
+      "prerequisites": [
+        "O003",
+        "G034"
+      ],
+      "difficulty": 8,
+      "school_level": "Terminale",
+      "validation_test": "Volume du tétraèdre OABC"
+    },
+    {
+      "id": "O020",
+      "domain": "O",
+      "domain_name": "Espace et vecteurs",
+      "label": "Sphère dans l'espace",
+      "description": "Définir et utiliser l'équation d'une sphère",
+      "prerequisites": [
+        "O001",
+        "H016"
+      ],
+      "difficulty": 7,
+      "school_level": "Terminale",
+      "validation_test": "Équation de la sphère de centre O et rayon r"
+    }
+  ]
+}
