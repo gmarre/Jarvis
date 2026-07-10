@@ -92,6 +92,26 @@ MATH EDUCATION est une **application** (comptes, base de données, logique méti
 | Hébergement | GitHub → Netlify (ou Vercel), domaine OVH (~12€/an) | Gratuit, déploiement auto à chaque push. |
 | Rappels type Duolingo | n8n auto-hébergé + emails (**itération 2**) | Workflows autonomes 24/24. |
 
+**État actuel du code :** l'application vit dans `Math_Edu_Application/` (Vite + React + TypeScript + Tailwind + react-router, client Supabase déjà câblé). Lancer avec `npm install` puis `npm run dev` (port 5173) ; `npm run build` pour le build de prod. Voir `Math_Edu_Application/README.md`.
+
+---
+
+## 5bis. Variables d'environnement et déploiement
+
+**Piège n°1 du déploiement.** Les clés API et l'URL Supabase vivent dans un fichier `.env.local` **en local** (gitignoré, jamais sur Git) ET doivent être recopiées dans les **Variables d'environnement de Netlify / Vercel** au moment du déploiement. C'est la source n°1 de bugs : tout marche en local, plus rien en ligne, simplement parce que les variables n'ont pas été configurées sur le service de déploiement. Checklist déploiement : reporter chaque variable `VITE_*` dans l'interface du service avant le premier build en ligne.
+
+**Variables du projet :**
+
+| Variable | Description | Secret ? |
+|----------|-------------|----------|
+| `VITE_SUPABASE_URL` | URL du projet Supabase | Non (publique) |
+| `VITE_SUPABASE_ANON_KEY` | Clé anon publique, protégée par les politiques RLS | Non (publique) |
+| `service_role` (clé) | Accès admin total, **jamais** exposée | **Oui — jamais côté client** |
+
+Seules les variables préfixées `VITE_` sont exposées au frontend par Vite. La clé `service_role` ne doit jamais figurer dans le code client ni dans un `VITE_*` : elle reste côté serveur uniquement (scripts de seed, fonctions edge). Modèle de fichier : `.env.example` (versionné, valeurs vides) ; copie locale : `.env.local` (gitignoré).
+
+**⚠ Piège classique : les RLS Supabase.** Supabase active par défaut la Row Level Security (RLS) sur toutes les tables. Tant qu'aucune politique explicite n'est définie, l'accès est **bloqué** : l'app affiche « pas de données » alors que la base est bien remplie. La parade : demander à Claude Code de « configurer les politiques RLS appropriées pour mon application », copier les règles générées dans Supabase, et l'app fonctionne. Politiques cibles (cf. §6) : un élève ne lit/écrit que ses propres lignes ; un professeur lit la progression de ses élèves inscrits ; le contenu est en lecture seule pour tous les authentifiés.
+
 ---
 
 ## 6. Modèle de données
