@@ -94,6 +94,10 @@ MATH EDUCATION est une **application** (comptes, base de données, logique méti
 
 **État actuel du code :** l'application vit dans `Math_Edu_Application/` (Vite + React + TypeScript + Tailwind + react-router, client Supabase déjà câblé). Lancer avec `npm install` puis `npm run dev` (port 5173) ; `npm run build` pour le build de prod. Voir `Math_Edu_Application/README.md`.
 
+**État actuel du design :** direction artistique retenue = **Studio Clair** (edtech premium et épuré : fond blanc cassé, accent indigo/violet #6366F1, titres serif Fraunces + UI Inter). Maquette MVP en cours dans Claude Design, 7 écrans : connexion/rôle, onboarding + test de positionnement, profil, espace de travail, lecteur d'exercice, carte mentale, calendrier de cours. Prompt maître et brief : `Spécifications site web et BD/PROMPT_Claude_Design.md` et `Brief_Design_MVP.md`. Workflow : Claude Design → export → ré-import dans `Math_Edu_Application` (données factices) → session `/plan` pour brancher auth Google + tables + RLS.
+
+**App mobile (vision produit) :** le site web doit être accompagné d'une application mobile où l'élève révise ses cours, fait ses exos quotidiens, consulte son profil et réserve des cours. Recommandation pour un dev solo à 4h/semaine : viser d'abord une **PWA installable** (même base de code React), et n'envisager React Native / Expo qu'après le MVP web. Conséquence design : composants mobile-first et pouce-compatibles dès la maquette.
+
 ---
 
 ## 5bis. Variables d'environnement et déploiement
