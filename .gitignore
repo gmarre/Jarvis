@@ -1,0 +1,49 @@
+# ---------------------------------------------------------------------------
+# Dépôt Jarvis — fichiers à ne jamais versionner
+# ---------------------------------------------------------------------------
+
+# --- Toolchain portable (installée par Math Education/scripts/setup-toolchain.ps1) ---
+# Les binaires Node et Python ne sont PAS versionnés : ~200 Mo, spécifiques à
+# Windows x64. Sur une nouvelle machine, relancer le script d'installation.
+tools/
+**/tools/
+
+# --- Secrets ---
+# Aucune clé d'API ne doit partir sur GitHub (roadmap MATH EDUCATION §2.4).
+.env
+.env.local
+.env.*.local
+*.key
+*.pem
+
+# --- Dépendances et artefacts de build ---
+node_modules/
+dist/
+build/
+.vite/
+*.tsbuildinfo
+
+# --- Python ---
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.pytest_cache/
+.mypy_cache/
+
+# --- Fichiers de travail temporaires ---
+_travail/
+*.tmp
+*.bak
+
+# --- Fichiers bureautique temporaires (Word/Excel ouverts) ---
+~$*
+
+# --- Système ---
+Thumbs.db
+desktop.ini
+.DS_Store
+
+# --- Éditeurs ---
+.idea/
+*.swp

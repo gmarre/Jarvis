@@ -1,0 +1,16 @@
+# Dependances Python de MATH EDUCATION (toolchain portable).
+# Installees par scripts/setup-toolchain.ps1 dans tools/python.
+#
+# Les versions seront epinglees dans requirements.lock.txt apres la premiere
+# installation, pour garantir un environnement identique sur toutes les machines.
+
+# Validation du DAG : detection de cycles, noeuds orphelins, prerequis
+# inexistants, incoherences de niveau (roadmap Jalon 1, section 1.1).
+networkx
+
+# Validation des 3 schemas JSON du contrat d'interface (roadmap section 2.2).
+jsonschema
+
+# Lecture des programmes officiels Eduscol (PDF) pour croiser le DAG avec les
+# programmes de l'Education nationale (roadmap Jalon 1, section 1.1).
+pypdf
