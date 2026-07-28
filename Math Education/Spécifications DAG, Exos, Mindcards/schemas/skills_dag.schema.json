@@ -1,0 +1,167 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://math-education.fr/schemas/skills_dag.schema.json",
+  "title": "MATH EDUCATION - DAG des competences",
+  "description": "Contrat d'interface du graphe de competences (roadmap v2.0, section 2.2). Fige la structure attendue par l'application. Toute livraison de contenu doit valider ce schema avant fusion.",
+  "type": "object",
+  "required": ["metadata", "skills"],
+  "additionalProperties": false,
+
+  "properties": {
+    "metadata": {
+      "type": "object",
+      "required": ["title", "version", "total_skills", "domains"],
+      "additionalProperties": false,
+      "properties": {
+        "title": { "type": "string", "minLength": 1 },
+        "version": {
+          "type": "string",
+          "pattern": "^\\d+\\.\\d+(\\.\\d+)?$",
+          "description": "Version semantique du contenu, ex. 2.0"
+        },
+        "scope": {
+          "type": "string",
+          "description": "Perimetre couvert par le fichier. Permet de livrer une tranche pilote sans pretendre couvrir les 414 competences."
+        },
+        "updated_at": { "type": "string", "format": "date" },
+        "reference_programmes": {
+          "type": "array",
+          "description": "Programmes officiels ayant servi de reference, pour tracer sur quelle version du programme le contenu est aligne.",
+          "items": { "type": "string" }
+        },
+        "total_skills": { "type": "integer", "minimum": 1 },
+        "domains": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "object",
+            "required": ["id", "name", "count"],
+            "additionalProperties": false,
+            "properties": {
+              "id": { "$ref": "#/$defs/domainId" },
+              "name": { "type": "string", "minLength": 1 },
+              "count": { "type": "integer", "minimum": 0 }
+            }
+          }
+        }
+      }
+    },
+
+    "skills": {
+      "type": "array",
+      "minItems": 1,
+      "items": { "$ref": "#/$defs/skill" }
+    }
+  },
+
+  "$defs": {
+    "domainId": {
+      "type": "string",
+      "pattern": "^[A-O]$",
+      "description": "Une lettre de A a O, soit les 15 domaines du DAG."
+    },
+
+    "skillId": {
+      "type": "string",
+      "pattern": "^[A-O][0-9]{3}$",
+      "description": "Lettre de domaine + numero sur 3 chiffres, ex. A001, C012 (convention CLAUDE.md section 11)."
+    },
+
+    "schoolLevel": {
+      "type": "string",
+      "enum": ["CP", "CE1", "CE2", "CM1", "CM2", "6e", "5e", "4e", "3e", "2nde", "1ere", "Terminale"],
+      "description": "Vocabulaire repris tel quel du DAG v1.0, pour ne rien casser cote application."
+    },
+
+    "skill": {
+      "type": "object",
+      "required": [
+        "id",
+        "domain",
+        "domain_name",
+        "label",
+        "description",
+        "prerequisites",
+        "difficulty",
+        "school_level",
+        "validation_test",
+        "mastery_threshold",
+        "exercise_ids",
+        "mindmap_id"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "id": { "$ref": "#/$defs/skillId" },
+        "domain": { "$ref": "#/$defs/domainId" },
+        "domain_name": { "type": "string", "minLength": 1 },
+        "label": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 80,
+          "description": "Titre court affiche sur le noeud du graphe. Doit rester lisible dans un cercle de react-flow."
+        },
+        "description": { "type": "string", "minLength": 1 },
+
+        "prerequisites": {
+          "type": "array",
+          "description": "Competences a maitriser avant celle-ci. C'est ce qui rend le graphe oriente : l'application remonte ces aretes pour trouver la lacune racine.",
+          "items": { "$ref": "#/$defs/skillId" },
+          "uniqueItems": true
+        },
+
+        "difficulty": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 9,
+          "description": "Echelle 1 a 9 heritee du DAG v1.0."
+        },
+
+        "school_level": { "$ref": "#/$defs/schoolLevel" },
+
+        "validation_test": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Question type permettant de trancher si la competence est acquise. Sert au test de positionnement."
+        },
+
+        "mastery_threshold": {
+          "type": "object",
+          "description": "Seuil de validation du noeud (roadmap Jalon 1, section 1.1 : ex. 3 exercices reussis sur 4).",
+          "required": ["required", "out_of"],
+          "additionalProperties": false,
+          "properties": {
+            "required": { "type": "integer", "minimum": 1 },
+            "out_of": { "type": "integer", "minimum": 1 }
+          }
+        },
+
+        "exercise_ids": {
+          "type": "array",
+          "description": "Exercices rattaches a cette competence. Chaque identifiant doit exister dans exercises.json (verifie par scripts/validate_content.py, pas par ce schema).",
+          "items": { "type": "string", "pattern": "^EX-[A-O][0-9]{3}-[DEM]-[0-9]{2}$" },
+          "uniqueItems": true
+        },
+
+        "mindmap_id": {
+          "type": ["string", "null"],
+          "pattern": "^MM-[A-O]-[0-9]{2}$",
+          "description": "Carte mentale de rattachement, ou null si la competence n'en a pas encore. Plusieurs competences partagent la meme carte : une carte couvre un chapitre."
+        },
+
+        "programme_ref": {
+          "type": "array",
+          "description": "Tracabilite pedagogique : citation du programme officiel justifiant le niveau retenu. Non requis par le schema, mais attendu sur toute competence dont le niveau a ete corrige.",
+          "items": {
+            "type": "object",
+            "required": ["source", "quote"],
+            "additionalProperties": false,
+            "properties": {
+              "source": { "type": "string", "minLength": 1 },
+              "quote": { "type": "string", "minLength": 1 }
+            }
+          }
+        }
+      }
+    }
+  }
+}

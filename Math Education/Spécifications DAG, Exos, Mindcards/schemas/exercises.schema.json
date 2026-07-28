@@ -1,0 +1,174 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://math-education.fr/schemas/exercises.schema.json",
+  "title": "MATH EDUCATION - Banque d'exercices",
+  "description": "Contrat d'interface de la banque d'exercices (roadmap v2.0, sections 2.2 et 9). Un exercice appartient a une competence du DAG et a un niveau de difficulte parmi decouverte / entrainement / maitrise.",
+  "type": "object",
+  "required": ["metadata", "exercises"],
+  "additionalProperties": false,
+
+  "properties": {
+    "metadata": {
+      "type": "object",
+      "required": ["version", "total_exercises"],
+      "additionalProperties": false,
+      "properties": {
+        "version": { "type": "string", "pattern": "^\\d+\\.\\d+(\\.\\d+)?$" },
+        "scope": { "type": "string" },
+        "updated_at": { "type": "string", "format": "date" },
+        "total_exercises": { "type": "integer", "minimum": 0 },
+        "review_status": {
+          "type": "string",
+          "enum": ["brouillon", "relu_agent", "relu_humain", "valide"],
+          "description": "Regle d'or roadmap section 9 : aucun exercice ne part en production sans double validation (agent math-reviewer + relecture humaine de Marius). Seul l'etat 'valide' autorise la mise en production."
+        }
+      }
+    },
+
+    "exercises": {
+      "type": "array",
+      "items": { "$ref": "#/$defs/exercise" }
+    }
+  },
+
+  "$defs": {
+    "exercise": {
+      "type": "object",
+      "required": [
+        "id",
+        "skill_id",
+        "level",
+        "type",
+        "statement",
+        "answer",
+        "solution_steps",
+        "review_status"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "id": {
+          "type": "string",
+          "pattern": "^EX-[A-O][0-9]{3}-[DEM]-[0-9]{2}$",
+          "description": "EX - competence - niveau (D decouverte, E entrainement, M maitrise) - numero. Ex. EX-C012-D-01."
+        },
+
+        "skill_id": {
+          "type": "string",
+          "pattern": "^[A-O][0-9]{3}$",
+          "description": "Competence du DAG evaluee. Doit exister dans skills_dag.json."
+        },
+
+        "level": {
+          "type": "string",
+          "enum": ["decouverte", "entrainement", "maitrise"],
+          "description": "Les 3 niveaux imposes par la roadmap section 9."
+        },
+
+        "type": {
+          "type": "string",
+          "enum": ["numerique", "qcm", "texte", "vrai_faux"],
+          "description": "Determine le composant de saisie affiche par ExercisePlayer et la facon de corriger."
+        },
+
+        "statement": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Enonce. Markdown autorise. Formules en LaTeX entre $...$ (rendu KaTeX cote application)."
+        },
+
+        "image": {
+          "type": ["string", "null"],
+          "description": "Chemin relatif d'une illustration, ou null. Indispensable au primaire ou beaucoup d'enonces reposent sur une representation (part d'un tout, bande graduee)."
+        },
+
+        "choices": {
+          "type": "array",
+          "description": "Propositions pour un QCM. La roadmap section 9 demande la bonne reponse plus 2 distracteurs plausibles, soit 3 items minimum.",
+          "minItems": 3,
+          "items": {
+            "type": "object",
+            "required": ["key", "text"],
+            "additionalProperties": false,
+            "properties": {
+              "key": { "type": "string", "pattern": "^[a-d]$" },
+              "text": { "type": "string", "minLength": 1 },
+              "misconception": {
+                "type": ["string", "null"],
+                "description": "Erreur de raisonnement que ce distracteur revele. C'est ce qui permettra plus tard de diagnostiquer, pas seulement de sanctionner."
+              }
+            }
+          }
+        },
+
+        "answer": {
+          "type": "object",
+          "required": ["value"],
+          "additionalProperties": false,
+          "properties": {
+            "value": {
+              "type": ["string", "number", "boolean"],
+              "description": "Reponse attendue. Pour un QCM, la cle de la bonne proposition."
+            },
+            "accepted": {
+              "type": "array",
+              "description": "Autres ecritures acceptees, ex. '3/4' et '0,75'. Evite de compter faux une reponse juste ecrite autrement.",
+              "items": { "type": ["string", "number"] }
+            },
+            "tolerance": {
+              "type": "number",
+              "minimum": 0,
+              "description": "Ecart tolere pour une reponse numerique approchee."
+            },
+            "unit": { "type": ["string", "null"] }
+          }
+        },
+
+        "solution_steps": {
+          "type": "array",
+          "minItems": 1,
+          "description": "Corrige detaille etape par etape (roadmap section 9). Une entree par etape, affichee depliable apres validation.",
+          "items": { "type": "string", "minLength": 1 }
+        },
+
+        "hint": {
+          "type": ["string", "null"],
+          "description": "Coup de pouce affichable avant de repondre, sans devoiler la reponse."
+        },
+
+        "estimated_duration_s": {
+          "type": "integer",
+          "minimum": 10,
+          "maximum": 1800,
+          "description": "Duree estimee en secondes. Sert a calibrer une seance et a reperer les exercices hors format."
+        },
+
+        "review_status": {
+          "type": "string",
+          "enum": ["brouillon", "relu_agent", "relu_humain", "valide"],
+          "description": "Etat de relecture de CET exercice. Permet de livrer un lot partiellement relu sans bloquer le developpement."
+        },
+
+        "programme_ref": {
+          "type": ["string", "null"],
+          "description": "Attendu du programme officiel couvert par cet exercice."
+        }
+      },
+
+      "allOf": [
+        {
+          "if": { "properties": { "type": { "const": "qcm" } }, "required": ["type"] },
+          "then": {
+            "required": ["choices"],
+            "description": "Un QCM sans propositions n'est pas affichable."
+          }
+        },
+        {
+          "if": { "properties": { "type": { "const": "numerique" } }, "required": ["type"] },
+          "then": {
+            "properties": { "answer": { "properties": { "value": { "type": ["number", "string"] } } } }
+          }
+        }
+      ]
+    }
+  }
+}
