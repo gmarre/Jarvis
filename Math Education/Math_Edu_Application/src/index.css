@@ -1,9 +1,88 @@
+/* Rendu des formules mathematiques (enonces, corriges, cartes mentales).
+   Doit rester en tete de fichier : un @import ne peut pas suivre une regle. */
+@import 'katex/dist/katex.min.css';
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-html,
-body,
-#root {
-  height: 100%;
+@layer base {
+  html,
+  body,
+  #root {
+    height: 100%;
+  }
+
+  body {
+    @apply bg-canvas font-sans text-ink antialiased;
+  }
+
+  /* Cibles tactiles : le public va de 6 a 17 ans, on ne descend jamais
+     sous 44px sur les elements interactifs principaux (cf. brief design). */
+  button,
+  [role='button'] {
+    touch-action: manipulation;
+  }
+
+  /* Anneau de focus unique, visible au clavier uniquement. */
+  :focus-visible {
+    @apply outline-none ring-2 ring-accent ring-offset-2 ring-offset-canvas;
+  }
+}
+
+@layer components {
+  /* Exposant des niveaux scolaires : 4e, 1er, 2nde. */
+  .sup {
+    @apply align-super text-[0.6em] font-semibold;
+  }
+}
+
+/* KaTeX : on aligne la taille sur le texte courant plutot que sur le 1.21em
+   par defaut, sinon les formules ecrasent les enonces du primaire. */
+.katex {
+  font-size: 1.05em;
+}
+
+/* Carte mentale (markmap) : on force la palette Studio Clair, la librairie
+   applique sinon ses propres couleurs categorielles. */
+.markmap-root {
+  @apply h-full w-full;
+}
+
+.markmap-root text {
+  font-family: 'Inter', system-ui, sans-serif;
+  font-size: 13px;
+  fill: #0f172a;
+}
+
+.markmap-root .markmap-foreign {
+  font-family: 'Inter', system-ui, sans-serif;
+  color: #0f172a;
+}
+
+.markmap-root .markmap-foreign code {
+  @apply rounded bg-muted px-1 py-0.5 font-mono text-[0.85em] text-ink-muted;
+}
+
+.markmap-root .markmap-foreign strong {
+  @apply font-semibold text-accent-700;
+}
+
+/* Ascenseurs discrets, l'application est dense en listes. */
+.scroll-slim {
+  scrollbar-width: thin;
+  scrollbar-color: #e2e0d9 transparent;
+}
+
+.scroll-slim::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+.scroll-slim::-webkit-scrollbar-thumb {
+  @apply rounded-full bg-line;
+}
+
+.scroll-slim::-webkit-scrollbar-track {
+  background: transparent;
 }

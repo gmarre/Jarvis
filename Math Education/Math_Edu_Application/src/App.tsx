@@ -1,33 +1,127 @@
-import { isSupabaseConfigured } from '@/lib/supabase'
+import { Suspense, lazy, type ReactNode } from 'react'
+import { Navigate, Route, Routes, useLocation } from 'react-router-dom'
 
-function App() {
-  return (
-    <main className="flex min-h-full flex-col items-center justify-center gap-6 bg-brand-50 px-6 text-center">
-      <span className="rounded-full bg-brand-100 px-3 py-1 text-sm font-medium text-brand-700">
-        MVP en construction
-      </span>
+import { LoadingScreen } from '@/components/ui/Misc'
+import { useSession } from '@/state/session'
 
-      <h1 className="text-4xl font-bold text-brand-700 sm:text-5xl">
-        Hello World, MATH EDUCATION
-      </h1>
+import LoginPage from '@/pages/LoginPage'
+import WorkspacePage from '@/pages/WorkspacePage'
 
-      <p className="max-w-md text-lg text-slate-600">
-        On trouve exactement ou ca bloque, et on debloque. Base technique prete
-        pour la suite du projet.
-      </p>
+// Les ecrans qui embarquent une grosse dependance sont charges a la demande :
+// react-flow pour le graphe, markmap pour les cartes mentales. La majorite du
+// trafic sera mobile, le premier chargement doit rester leger.
+const PathPage = lazy(() => import('@/pages/PathPage'))
+const MindmapPage = lazy(() => import('@/pages/MindmapPage'))
+const MindmapListPage = lazy(() => import('@/pages/MindmapListPage'))
+const ExercisePage = lazy(() => import('@/pages/ExercisePage'))
+const PlacementTestPage = lazy(() => import('@/pages/PlacementTestPage'))
+const ProfilePage = lazy(() => import('@/pages/ProfilePage'))
+const SchedulePage = lazy(() => import('@/pages/SchedulePage'))
+const TeacherSchedulePage = lazy(() => import('@/pages/TeacherSchedulePage'))
 
-      <p className="text-sm text-slate-500">
-        Backend Supabase :{' '}
-        {isSupabaseConfigured ? (
-          <span className="font-medium text-green-600">configure</span>
-        ) : (
-          <span className="font-medium text-amber-600">
-            non configure (renseignez .env.local)
-          </span>
-        )}
-      </p>
-    </main>
-  )
+/** Ecran reserve aux comptes connectes. */
+function RequireAuth({ children }: { children: ReactNode }) {
+  const { status } = useSession()
+  const location = useLocation()
+
+  if (status === 'loading') return <LoadingScreen label="Ouverture de ton espace…" />
+  if (status === 'anonymous') {
+    return <Navigate to="/connexion" replace state={{ from: location.pathname }} />
+  }
+  return <>{children}</>
 }
 
-export default App
+/** Accueil : l'eleve va sur son espace de travail, le professeur sur ses creneaux. */
+function HomeRedirect() {
+  const { status, session } = useSession()
+
+  if (status === 'loading') return <LoadingScreen label="Ouverture de ton espace…" />
+  if (status === 'anonymous' || !session) return <Navigate to="/connexion" replace />
+  return <Navigate to={session.profile.role === 'prof' ? '/prof/cours' : '/travail'} replace />
+}
+
+export default function App() {
+  return (
+    <Suspense fallback={<LoadingScreen />}>
+      <Routes>
+        <Route path="/" element={<HomeRedirect />} />
+        <Route path="/connexion" element={<LoginPage />} />
+
+        <Route
+          path="/test"
+          element={
+            <RequireAuth>
+              <PlacementTestPage />
+            </RequireAuth>
+          }
+        />
+        <Route
+          path="/travail"
+          element={
+            <RequireAuth>
+              <WorkspacePage />
+            </RequireAuth>
+          }
+        />
+        <Route
+          path="/parcours"
+          element={
+            <RequireAuth>
+              <PathPage />
+            </RequireAuth>
+          }
+        />
+        <Route
+          path="/exercice/:skillId"
+          element={
+            <RequireAuth>
+              <ExercisePage />
+            </RequireAuth>
+          }
+        />
+        <Route
+          path="/cartes"
+          element={
+            <RequireAuth>
+              <MindmapListPage />
+            </RequireAuth>
+          }
+        />
+        <Route
+          path="/cartes/:mindmapId"
+          element={
+            <RequireAuth>
+              <MindmapPage />
+            </RequireAuth>
+          }
+        />
+        <Route
+          path="/cours"
+          element={
+            <RequireAuth>
+              <SchedulePage />
+            </RequireAuth>
+          }
+        />
+        <Route
+          path="/prof/cours"
+          element={
+            <RequireAuth>
+              <TeacherSchedulePage />
+            </RequireAuth>
+          }
+        />
+        <Route
+          path="/profil"
+          element={
+            <RequireAuth>
+              <ProfilePage />
+            </RequireAuth>
+          }
+        />
+
+        <Route path="*" element={<Navigate to="/" replace />} />
+      </Routes>
+    </Suspense>
+  )
+}
