@@ -15,26 +15,36 @@ Inspiration : Brilliant, Notion, Linear.
 - Pour qui : rassure les parents payeurs, tient du collège à la terminale, se recode facilement.
 - Pourquoi retenue : le pari le plus sûr pour un MVP, crédible et intemporel, base neutre qui ne condescend pas les grands et reste lisible pour les petits.
 
-### B. Cosmos Ludique — gamifié façon Duolingo
-Inspiration : Duolingo, Khan Kids, Mimo.
-- Palette vive : violet #7C5CFC, vert réussite #58CC02, corail #FF6B6B, jaune #FFC93C.
-- Typo arrondie (Fredoka/Nunito), mascotte, boutons 3D, badges.
-- DAG en parcours « carte de niveaux » (bulles + étoiles).
-- Fort engagement primaire/collège, mais moins crédible côté sérieux pour un terminale spé.
-- Réserve : garder de cette piste uniquement les micro-célébrations (réussite d'exercice, révision faite).
-
-### C. Néo-Académique / Blueprint — identité maths forte
-Inspiration : cahier de maths, papier millimétré, blueprint.
-- Papier crème + grille, encre bleu nuit #1E293B, accent indigo profond #4F46E5, motifs de graphe.
-- Titres Space Grotesk, IDs/formules JetBrains Mono.
-- Le DAG devient la signature de marque. Très différenciant, un peu moins chaleureux pour les tout-petits.
-- Réserve : source d'inspiration pour la mise en valeur visuelle du DAG plus tard.
-
 ---
 
 ## 2. Inventaire des 7 écrans + mapping base de données
 
-Tables Supabase cibles (cf. CLAUDE.md §6) : `profiles`, `skill_progress`, `exercise_attempts`, `content_skills` / `content_exercises` / `content_mindmaps`, `availability_slots`, `bookings`.
+Contexte : 
+But : Plateforme d'aide aux mathématiques pour les élèves de la primaire à la Terminale spé, basée sur un DAG (graphe orienté acyclique) de compétences mathématiques personnalisé par élève.
+L'objectif est de remonter précisément à la lacune racine de l'élève et de lui faire travailler uniquement ce qu'il doit, même si cela remonte 2 classes en arrière.
+
+Fonctionnement :
+
+Un DAG de compétences maths de la primaire à la Terminale spé. 3 fichiers json centraux dans l'application DAG, Exercices, Cartes mentales ces trois fichiers json étant liés entre eux. 
+Une compétence requiert des cartes mentales et des exercices  (v1 JSON disponible sur Drive : 414 compétences, 15 domaines)
+Chaque élève dispose d'un DAG personnalisé selon ses compétences évaluées
+3 outils pour l'élève : exercices adaptés, cartes mémoires (spaced repetition), cours particuliers avec profs
+Les professeurs voient le DAG de chaque élève et savent exactement quoi travailler
+Différenciateur :
+
+Diagnostic précis : remontée à la lacune racine dans le DAG, même si 2 classes en arrière
+Travail ciblé uniquement sur les lacunes (gain de temps, pas de redite inutile)
+Spaced repetition pour mémorisation à long terme efficace
+Personnalisation totale par élève
+Modèle économique :
+
+Abonnement élève : 9,99€/mois (engagement 6 mois) - accès plateforme sans cours
+Cours particuliers : ~20€/h avec commission pour l'application
+Abonnement professeur : à définir (ne pas cumuler avec la commission cours)
+
+Site web (fonctionnalités complètes) + app mobile (flashcards et exos rapides)
+
+Tables Supabase cibles  : `profiles`, `skill_progress`, `exercise_attempts`, `content_skills` / `content_exercises` / `content_mindmaps`, `availability_slots`, `bookings`.
 
 | # | Écran | Rôle | Lit | Écrit | États clés |
 |---|-------|------|-----|-------|-----------|
