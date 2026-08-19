@@ -45,20 +45,17 @@
       "id": "EX-A001-M-01",
       "skill_id": "A001",
       "level": "maitrise",
-      "type": "texte",
-      "statement": "Range ces nombres du plus petit au plus grand : 8, 3, 10, 5.\n\nÉcris ta réponse en séparant les nombres par des virgules.",
+      "type": "vrai_faux",
+      "statement": "Léa compte ses billes et en trouve 8.\n\nElle les compte à nouveau, mais en commençant par une autre bille. Elle trouvera encore 8 billes.",
       "image": null,
-      "answer": {
-        "value": "3, 5, 8, 10",
-        "accepted": ["3,5,8,10", "3 5 8 10", "3, 5, 8, 10"]
-      },
+      "answer": { "value": true },
       "solution_steps": [
-        "On cherche le plus petit : c'est **3**.",
-        "Puis le plus petit de ceux qui restent : **5**, puis **8**.",
-        "Il reste **10**, le plus grand.",
-        "Réponse : 3, 5, 8, 10."
+        "Compter, c'est associer un nombre à chaque objet, une seule fois, sans en oublier aucun.",
+        "Le dernier nombre prononcé donne la quantité totale.",
+        "Cette quantité **ne dépend pas** de l'ordre dans lequel on compte : Léa n'a ni ajouté ni enlevé de bille.",
+        "Elle retrouvera donc **8** billes. L'affirmation est **vraie**."
       ],
-      "hint": "Commence par chercher le plus petit nombre de la liste.",
+      "hint": "Est-ce que changer l'ordre du comptage ajoute ou enlève des billes ?",
       "estimated_duration_s": 60,
       "review_status": "brouillon",
       "programme_ref": "Cycle 2, CP : les nombres entiers jusqu'à cent."
@@ -186,24 +183,24 @@
       "skill_id": "A004",
       "level": "decouverte",
       "type": "qcm",
-      "statement": "Comment lit-on le nombre **2 047** ?",
+      "statement": "Comment lit-on le nombre **407** ?",
       "image": null,
       "choices": [
-        { "key": "a", "text": "deux mille quarante-sept", "misconception": null },
-        { "key": "b", "text": "deux cent quarante-sept", "misconception": "L'élève lit le 2 comme des centaines et ignore le rang des milliers." },
-        { "key": "c", "text": "deux mille quatre cent sept", "misconception": "L'élève ne voit pas que le 0 occupe le rang des centaines et décale les chiffres." }
+        { "key": "a", "text": "quatre cent sept", "misconception": null },
+        { "key": "b", "text": "quarante-sept", "misconception": "L'élève ignore le rang des centaines et ne lit que les deux derniers chiffres." },
+        { "key": "c", "text": "quatre cent soixante-dix", "misconception": "L'élève lit le 7 comme des dizaines et oublie que c'est le 0 qui occupe ce rang." }
       ],
       "answer": { "value": "a" },
       "solution_steps": [
-        "On sépare le nombre en deux parties : 2 | 047.",
-        "La partie de gauche donne les milliers : **deux mille**.",
-        "047 se lit **quarante-sept**, car il n'y a aucune centaine.",
-        "On lit donc « deux mille quarante-sept »."
+        "On repère les rangs : 4 centaines, 0 dizaine, 7 unités.",
+        "4 au rang des centaines se lit **quatre cent**.",
+        "Il n'y a aucune dizaine : le 0 ne se prononce pas, mais il maintient le 7 au rang des unités.",
+        "On lit donc « quatre cent sept »."
       ],
-      "hint": "Le 0 occupe le rang des centaines : il n'y a pas de centaine.",
+      "hint": "Le 0 occupe le rang des dizaines : il n'y a pas de dizaine.",
       "estimated_duration_s": 45,
       "review_status": "brouillon",
-      "programme_ref": "Cycle 2, CE1 : lire les nombres jusqu'à mille (extension au-delà en CE2)."
+      "programme_ref": "Cycle 2, CE1 : les connaissances et savoir-faire attendus concernent les nombres jusqu'à mille."
     },
     {
       "id": "EX-A004-E-01",
@@ -234,25 +231,26 @@
       "skill_id": "A004",
       "level": "maitrise",
       "type": "qcm",
-      "statement": "Comment lit-on le nombre **1 090** ?",
+      "statement": "Comment lit-on le nombre **190** ?",
       "image": null,
       "choices": [
-        { "key": "a", "text": "mille quatre-vingt-dix", "misconception": null },
-        { "key": "b", "text": "mille quatre-vingt-dix-neuf", "misconception": "L'élève ajoute des unités qui ne figurent pas dans le nombre." },
-        { "key": "c", "text": "cent quatre-vingt-dix", "misconception": "L'élève oublie le rang des milliers." },
-        { "key": "d", "text": "mille neuf cents", "misconception": "L'élève intervertit les rangs des centaines et des dizaines." }
+        { "key": "a", "text": "cent quatre-vingt-dix", "misconception": null },
+        { "key": "b", "text": "cent quatre-vingt-dix-neuf", "misconception": "L'élève ajoute des unités qui ne figurent pas dans le nombre." },
+        { "key": "c", "text": "cent neuf", "misconception": "L'élève lit le 9 comme des unités et ignore que c'est le 0 qui occupe ce rang." },
+        { "key": "d", "text": "cent dix-neuf", "misconception": "L'élève confond quatre-vingt-dix (90) et dix-neuf (19)." }
       ],
       "answer": { "value": "a" },
       "solution_steps": [
-        "Le nombre se décompose en 1 | 090.",
-        "1 millier : **mille**.",
-        "0 centaine, 9 dizaines, 0 unité : 90 se lit **quatre-vingt-dix**.",
-        "On lit « mille quatre-vingt-dix »."
+        "On repère les rangs : 1 centaine, 9 dizaines, 0 unité.",
+        "1 au rang des centaines : **cent**.",
+        "9 dizaines, soit 90, se lit **quatre-vingt-dix**.",
+        "Aucune unité : il n'y a rien à ajouter.",
+        "On lit « cent quatre-vingt-dix »."
       ],
-      "hint": "Repère bien le rang de chaque chiffre : milliers, centaines, dizaines, unités.",
+      "hint": "Repère bien le rang de chaque chiffre : centaines, dizaines, unités.",
       "estimated_duration_s": 60,
       "review_status": "brouillon",
-      "programme_ref": "Cycle 2, CE1-CE2 : lecture des entiers."
+      "programme_ref": "Cycle 2, CE1 : les nombres jusqu'à mille."
     },
 
     {
@@ -277,37 +275,36 @@
       "skill_id": "A005",
       "level": "entrainement",
       "type": "numerique",
-      "statement": "Écris en chiffres : **trois mille deux cent cinq**.",
+      "statement": "Écris en chiffres : **neuf cent quatre-vingt-dix-neuf**.",
       "image": null,
-      "answer": { "value": 3205 },
+      "answer": { "value": 999 },
       "solution_steps": [
-        "« Trois mille » : 3 au rang des milliers.",
-        "« Deux cent » : 2 au rang des centaines.",
-        "Aucune dizaine : 0 au rang des dizaines.",
-        "« Cinq » : 5 unités.",
-        "On obtient **3 205**."
+        "« Neuf cent » : 9 centaines.",
+        "« Quatre-vingt-dix » désigne 90, soit 9 dizaines.",
+        "« Neuf » : 9 unités.",
+        "On obtient **999**."
       ],
-      "hint": "Écris d'abord les quatre rangs vides, puis place chaque chiffre.",
+      "hint": "« Quatre-vingt-dix » est un seul nombre, 90.",
       "estimated_duration_s": 50,
       "review_status": "brouillon",
-      "programme_ref": "Cycle 2, CE2 : les nombres jusqu'à 10 000."
+      "programme_ref": "Cycle 2, CE1 : les nombres jusqu'à mille."
     },
     {
       "id": "EX-A005-M-01",
       "skill_id": "A005",
       "level": "maitrise",
       "type": "numerique",
-      "statement": "Écris en chiffres : **neuf cent quatre-vingt-dix-neuf**.",
+      "statement": "Écris en chiffres : **cinq cent quatre-vingt-dix**.",
       "image": null,
-      "answer": { "value": 999 },
+      "answer": { "value": 590 },
       "solution_steps": [
-        "« Neuf cent » : 9 centaines.",
-        "« Quatre-vingt-dix » : 9 dizaines.",
-        "« Neuf » : 9 unités.",
-        "On obtient **999**."
+        "« Cinq cent » : 5 au rang des centaines.",
+        "« Quatre-vingt-dix » désigne 90, soit 9 dizaines.",
+        "Aucune unité n'est énoncée : c'est le piège. Il faut écrire **0** au rang des unités, sinon on obtiendrait 59.",
+        "On obtient **590**."
       ],
-      "hint": "« Quatre-vingt-dix » désigne 90, donc 9 dizaines.",
-      "estimated_duration_s": 60,
+      "hint": "Compte les rangs : centaines, dizaines, unités. Entends-tu des unités ?",
+      "estimated_duration_s": 75,
       "review_status": "brouillon",
       "programme_ref": "Cycle 2, CE1 : les nombres jusqu'à mille."
     },
@@ -340,24 +337,24 @@
       "skill_id": "A006",
       "level": "entrainement",
       "type": "qcm",
-      "statement": "Quel symbole faut-il placer entre 4 302 et 4 320 ?\n\n$4\\,302 \\;\\ldots\\; 4\\,320$",
+      "statement": "Quel symbole faut-il placer entre 302 et 320 ?\n\n$302 \\;\\ldots\\; 320$",
       "image": null,
       "choices": [
         { "key": "a", "text": "$<$", "misconception": null },
         { "key": "b", "text": "$>$", "misconception": "L'élève s'arrête au chiffre des unités (2 contre 0) sans remonter aux dizaines." },
-        { "key": "c", "text": "$=$", "misconception": "L'élève voit les mêmes quatre chiffres et conclut à l'égalité." }
+        { "key": "c", "text": "$=$", "misconception": "L'élève voit les mêmes trois chiffres et conclut à l'égalité." }
       ],
       "answer": { "value": "a" },
       "solution_steps": [
-        "Les deux nombres ont 4 chiffres : on compare rang par rang, de gauche à droite.",
-        "Milliers : 4 et 4, égalité. Centaines : 3 et 3, égalité.",
+        "Les deux nombres ont 3 chiffres : on compare rang par rang, de gauche à droite.",
+        "Centaines : 3 et 3, égalité.",
         "Dizaines : 0 et 2. Comme $0 < 2$, on peut conclure.",
-        "$4\\,302 < 4\\,320$."
+        "$302 < 320$."
       ],
       "hint": "Compare les chiffres un à un depuis la gauche, et arrête-toi dès qu'ils diffèrent.",
       "estimated_duration_s": 50,
       "review_status": "brouillon",
-      "programme_ref": "Cycle 2, CE2 : comparer les nombres jusqu'à 10 000."
+      "programme_ref": "Cycle 2, CE1 : comparer les entiers jusqu'à mille."
     },
     {
       "id": "EX-A006-M-01",
@@ -380,7 +377,7 @@
       "hint": "Ne compare pas le premier chiffre avant d'avoir compté combien de chiffres a chaque nombre.",
       "estimated_duration_s": 45,
       "review_status": "brouillon",
-      "programme_ref": "Cycle 2, CE1-CE2 : comparer les entiers."
+      "programme_ref": "Cycle 2, CE1 : comparer les entiers jusqu'à mille."
     },
 
     {
@@ -452,13 +449,13 @@
       "skill_id": "A008",
       "level": "decouverte",
       "type": "numerique",
-      "statement": "Combien y a-t-il de **chiffres** dans le nombre 1 024 ?",
+      "statement": "Combien y a-t-il de **chiffres** dans le nombre 407 ?",
       "image": null,
-      "answer": { "value": 4 },
+      "answer": { "value": 3 },
       "solution_steps": [
-        "On compte les symboles écrits : 1, 0, 2, 4.",
-        "Il y a **4** chiffres.",
-        "Attention : 1 024 est **un seul** nombre, écrit avec 4 chiffres."
+        "On compte les symboles écrits : 4, 0, 7.",
+        "Il y a **3** chiffres.",
+        "Attention : 407 est **un seul** nombre, écrit avec 3 chiffres."
       ],
       "hint": "Un chiffre est un symbole entre 0 et 9. Compte-les un par un.",
       "estimated_duration_s": 30,
@@ -470,12 +467,12 @@
       "skill_id": "A008",
       "level": "entrainement",
       "type": "numerique",
-      "statement": "Dans le nombre 1 024, quel est le **chiffre** des dizaines ?",
+      "statement": "Dans le nombre 362, quel est le **chiffre** des dizaines ?",
       "image": null,
-      "answer": { "value": 2 },
+      "answer": { "value": 6 },
       "solution_steps": [
-        "On repère les rangs de droite à gauche : 4 unités, 2 dizaines, 0 centaine, 1 millier.",
-        "Le chiffre des dizaines est **2**."
+        "On repère les rangs de droite à gauche : 2 unités, 6 dizaines, 3 centaines.",
+        "Le chiffre des dizaines est **6**."
       ],
       "hint": "Le rang des dizaines est le deuxième en partant de la droite.",
       "estimated_duration_s": 35,
@@ -486,25 +483,20 @@
       "id": "EX-A008-M-01",
       "skill_id": "A008",
       "level": "maitrise",
-      "type": "qcm",
-      "statement": "Dans le nombre 1 024, quel est le **nombre** de dizaines ?",
+      "type": "vrai_faux",
+      "statement": "Le nombre 99 s'écrit avec **plus de chiffres** que le nombre 100.",
       "image": null,
-      "choices": [
-        { "key": "a", "text": "102", "misconception": null },
-        { "key": "b", "text": "2", "misconception": "L'élève donne le CHIFFRE des dizaines au lieu du NOMBRE de dizaines. C'est la confusion centrale de cette compétence." },
-        { "key": "c", "text": "24", "misconception": "L'élève lit les deux chiffres de droite comme un nombre de dizaines." }
-      ],
-      "answer": { "value": "a" },
+      "answer": { "value": false },
       "solution_steps": [
-        "Le **chiffre** des dizaines est 2, mais la question porte sur le **nombre** de dizaines.",
-        "Le nombre de dizaines compte toutes les dizaines contenues dans 1 024, y compris celles des centaines et des milliers.",
-        "$1\\,024 = 102 \\times 10 + 4$.",
-        "Il y a donc **102** dizaines (et il reste 4 unités)."
+        "On compte les chiffres de chacun : 99 s'écrit avec 2 chiffres, 100 s'écrit avec 3 chiffres.",
+        "Comme $2 < 3$, c'est 100 qui s'écrit avec le plus de chiffres.",
+        "L'affirmation est donc **fausse**.",
+        "Le piège : le chiffre 9 est plus grand que le chiffre 1, mais cela ne dit rien du nombre de chiffres utilisés pour écrire le nombre."
       ],
-      "hint": "Combien de paquets de 10 peut-on faire avec 1 024 ? Ce n'est pas la même question que « quel chiffre est à la place des dizaines ».",
-      "estimated_duration_s": 90,
+      "hint": "Compte les chiffres de chaque nombre, un par un, sans regarder lequel des deux nombres est le plus grand.",
+      "estimated_duration_s": 75,
       "review_status": "brouillon",
-      "programme_ref": "Cycle 2, CE2 : unités de numération."
+      "programme_ref": "Cycle 2, CE1 : distinguer chiffre et nombre."
     },
 
     {
@@ -547,19 +539,25 @@
       "id": "EX-A009-M-01",
       "skill_id": "A009",
       "level": "maitrise",
-      "type": "numerique",
-      "statement": "Dans le nombre 6 304, quel est le **chiffre** des dizaines ?",
+      "type": "qcm",
+      "statement": "Dans le nombre 6 304, quel est le **nombre** de dizaines ?",
       "image": null,
-      "answer": { "value": 0 },
-      "solution_steps": [
-        "De droite à gauche : 4 unités, 0 dizaine, 3 centaines, 6 milliers.",
-        "Le chiffre des dizaines est **0**.",
-        "Ce 0 n'est pas décoratif : il indique qu'il n'y a aucune dizaine, et il maintient les autres chiffres à leur rang."
+      "choices": [
+        { "key": "a", "text": "630", "misconception": null },
+        { "key": "b", "text": "0", "misconception": "L'élève donne le CHIFFRE des dizaines au lieu du NOMBRE de dizaines. C'est la confusion centrale de cette compétence." },
+        { "key": "c", "text": "63", "misconception": "L'élève compte les centaines au lieu des dizaines." }
       ],
-      "hint": "Un rang peut être vide. Quel chiffre l'indique ?",
-      "estimated_duration_s": 45,
+      "answer": { "value": "a" },
+      "solution_steps": [
+        "Le **chiffre** des dizaines est 0, mais la question porte sur le **nombre** de dizaines.",
+        "Le nombre de dizaines compte toutes les dizaines contenues dans 6 304, y compris celles cachées dans les centaines et les milliers.",
+        "$6\\,304 = 630 \\times 10 + 4$.",
+        "Il y a donc **630** dizaines, et il reste 4 unités."
+      ],
+      "hint": "Combien de paquets de 10 peut-on faire avec 6 304 ? Ce n'est pas la même question que « quel chiffre occupe le rang des dizaines ».",
+      "estimated_duration_s": 90,
       "review_status": "brouillon",
-      "programme_ref": "Cycle 2, CE2 : les nombres jusqu'à 10 000."
+      "programme_ref": "Cycle 2, CE2 : unités de numération."
     },
 
     {
@@ -800,16 +798,17 @@
       "skill_id": "C002",
       "level": "maitrise",
       "type": "numerique",
-      "statement": "Une tablette de chocolat est partagée en 6 carrés égaux. Tom en mange 4.\n\nOn écrit la fraction mangée sous la forme $\\frac{\\ldots}{6}$. Quel est le numérateur ?",
+      "statement": "Une figure est partagée en 8 parts égales. 3 parts sont coloriées en vert, toutes les autres en jaune.\n\nOn écrit la fraction **jaune** sous la forme $\\frac{\\ldots}{8}$. Quel est son numérateur ?",
       "image": null,
-      "answer": { "value": 4 },
+      "answer": { "value": 5 },
       "solution_steps": [
-        "Le dénominateur est déjà donné : 6, le nombre total de carrés.",
-        "Le numérateur compte les parts mangées : Tom en mange **4**.",
-        "La fraction mangée est $\\frac{4}{6}$."
+        "La figure compte 8 parts égales en tout : c'est le dénominateur.",
+        "3 parts sont vertes, donc les parts jaunes sont celles qui restent : $8 - 3 = 5$.",
+        "Le numérateur de la fraction jaune est **5**.",
+        "La figure est jaune pour $\\frac{5}{8}$ et verte pour $\\frac{3}{8}$."
       ],
-      "hint": "Combien de carrés Tom a-t-il mangés ?",
-      "estimated_duration_s": 50,
+      "hint": "Le numérateur compte les parts jaunes. Elles ne sont pas données directement : il faut les trouver.",
+      "estimated_duration_s": 75,
       "review_status": "brouillon",
       "programme_ref": "Cycle 2, CE1 : connaître et utiliser les mots « dénominateur » et « numérateur »."
     },
@@ -880,18 +879,18 @@
       "skill_id": "C009",
       "level": "decouverte",
       "type": "qcm",
-      "statement": "Compare $\\frac{3}{7}$ et $\\frac{5}{7}$.",
+      "statement": "Compare $\\frac{3}{8}$ et $\\frac{5}{8}$.",
       "image": null,
       "choices": [
-        { "key": "a", "text": "$\\frac{3}{7} < \\frac{5}{7}$", "misconception": null },
-        { "key": "b", "text": "$\\frac{3}{7} > \\frac{5}{7}$", "misconception": "L'élève inverse le sens de la comparaison." },
-        { "key": "c", "text": "$\\frac{3}{7} = \\frac{5}{7}$", "misconception": "L'élève considère que le même dénominateur suffit à rendre les fractions égales." }
+        { "key": "a", "text": "$\\frac{3}{8} < \\frac{5}{8}$", "misconception": null },
+        { "key": "b", "text": "$\\frac{3}{8} > \\frac{5}{8}$", "misconception": "L'élève inverse le sens de la comparaison." },
+        { "key": "c", "text": "$\\frac{3}{8} = \\frac{5}{8}$", "misconception": "L'élève considère que le même dénominateur suffit à rendre les fractions égales." }
       ],
       "answer": { "value": "a" },
       "solution_steps": [
-        "Les deux fractions ont le **même dénominateur** : les parts sont de même taille (des septièmes).",
+        "Les deux fractions ont le **même dénominateur** : les parts sont de même taille (des huitièmes).",
         "Il suffit donc de comparer les numérateurs : 3 parts contre 5 parts.",
-        "Comme $3 < 5$, on a $\\frac{3}{7} < \\frac{5}{7}$."
+        "Comme $3 < 5$, on a $\\frac{3}{8} < \\frac{5}{8}$."
       ],
       "hint": "Les parts sont identiques : il n'y a plus qu'à compter combien on en prend.",
       "estimated_duration_s": 40,
@@ -903,40 +902,40 @@
       "skill_id": "C009",
       "level": "entrainement",
       "type": "qcm",
-      "statement": "Compare $\\frac{1}{5}$ et $\\frac{1}{3}$.",
+      "statement": "Tom a mangé $\\frac{2}{6}$ d'une tarte. Lisa en a mangé $\\frac{5}{6}$.\n\nQui en a mangé le plus ?",
       "image": null,
       "choices": [
-        { "key": "a", "text": "$\\frac{1}{5} < \\frac{1}{3}$", "misconception": null },
-        { "key": "b", "text": "$\\frac{1}{5} > \\frac{1}{3}$", "misconception": "L'élève applique l'ordre des entiers aux dénominateurs : 5 > 3 donc la fraction serait plus grande. C'est l'erreur la plus fréquente." },
-        { "key": "c", "text": "$\\frac{1}{5} = \\frac{1}{3}$", "misconception": "L'élève ne compare que les numérateurs, égaux ici." }
+        { "key": "a", "text": "Lisa", "misconception": null },
+        { "key": "b", "text": "Tom", "misconception": "L'élève inverse la comparaison, ou compare les parts restantes au lieu des parts mangées." },
+        { "key": "c", "text": "Ils en ont mangé autant", "misconception": "L'élève voit le même dénominateur et en conclut que les deux fractions sont égales." }
       ],
       "answer": { "value": "a" },
       "solution_steps": [
-        "Les deux fractions ont le même numérateur : on prend **une** part dans chaque cas.",
-        "Mais les parts n'ont pas la même taille : partager en 5 donne des parts plus petites que partager en 3.",
-        "Donc $\\frac{1}{5} < \\frac{1}{3}$.",
-        "Retiens : à numérateur égal, **plus le dénominateur est grand, plus la fraction est petite**."
+        "Les deux fractions ont le même dénominateur 6 : la tarte est partagée en 6 parts égales dans les deux cas.",
+        "Les parts sont donc de même taille : il suffit de compter combien chacun en a prises.",
+        "Tom en a pris 2, Lisa en a pris 5. Comme $2 < 5$, c'est **Lisa** qui en a mangé le plus.",
+        "$\\frac{2}{6} < \\frac{5}{6}$."
       ],
-      "hint": "Préfères-tu partager un gâteau entre 3 personnes ou entre 5 ?",
+      "hint": "Les parts ont la même taille : regarde seulement combien chacun en a prises.",
       "estimated_duration_s": 60,
       "review_status": "brouillon",
-      "programme_ref": "Cycle 2, CE1 : l'élève sait dire et expliquer pourquoi 1/5 est plus petit que 1/3."
+      "programme_ref": "Cycle 2, CE1 : comparer des fractions ayant le même dénominateur."
     },
     {
       "id": "EX-C009-M-01",
       "skill_id": "C009",
       "level": "maitrise",
       "type": "texte",
-      "statement": "Range ces fractions de la plus petite à la plus grande : $\\frac{7}{9}$, $\\frac{2}{9}$, $\\frac{5}{9}$.\n\nÉcris-les séparées par des virgules, sous la forme 2/9.",
+      "statement": "Range ces fractions de la plus petite à la plus grande : $\\frac{7}{10}$, $\\frac{2}{10}$, $\\frac{5}{10}$.\n\nÉcris-les séparées par des virgules, sous la forme 2/10.",
       "image": null,
       "answer": {
-        "value": "2/9, 5/9, 7/9",
-        "accepted": ["2/9,5/9,7/9", "2/9 5/9 7/9"]
+        "value": "2/10, 5/10, 7/10",
+        "accepted": ["2/10,5/10,7/10", "2/10 5/10 7/10", "2 / 10, 5 / 10, 7 / 10"]
       },
       "solution_steps": [
-        "Les trois fractions ont le même dénominateur 9 : les parts sont toutes des neuvièmes.",
+        "Les trois fractions ont le même dénominateur 10 : les parts sont toutes des dixièmes.",
         "On range donc selon les numérateurs : $2 < 5 < 7$.",
-        "Réponse : $\\frac{2}{9}$, $\\frac{5}{9}$, $\\frac{7}{9}$."
+        "Réponse : $\\frac{2}{10}$, $\\frac{5}{10}$, $\\frac{7}{10}$."
       ],
       "hint": "Même dénominateur : range simplement les numérateurs.",
       "estimated_duration_s": 60,
@@ -949,19 +948,19 @@
       "skill_id": "C012",
       "level": "decouverte",
       "type": "texte",
-      "statement": "Calcule $\\frac{2}{7} + \\frac{3}{7}$.\n\nÉcris ta réponse sous la forme 5/7.",
+      "statement": "Calcule $\\frac{1}{5} + \\frac{2}{5}$.\n\nÉcris ta réponse sous la forme 3/5.",
       "image": null,
       "answer": {
-        "value": "5/7",
-        "accepted": ["5 / 7"]
+        "value": "3/5",
+        "accepted": ["3 / 5"]
       },
       "solution_steps": [
         "Les deux fractions ont le même dénominateur : les parts sont de même taille.",
-        "On additionne les numérateurs : $2 + 3 = 5$.",
-        "Le dénominateur **ne change pas** : il reste 7.",
-        "$\\frac{2}{7} + \\frac{3}{7} = \\frac{5}{7}$."
+        "On additionne les numérateurs : $1 + 2 = 3$.",
+        "Le dénominateur **ne change pas** : il reste 5.",
+        "$\\frac{1}{5} + \\frac{2}{5} = \\frac{3}{5}$."
       ],
-      "hint": "Deux septièmes plus trois septièmes, cela fait combien de septièmes ?",
+      "hint": "Un cinquième plus deux cinquièmes, cela fait combien de cinquièmes ?",
       "estimated_duration_s": 45,
       "review_status": "brouillon",
       "programme_ref": "Cycle 2, CE1 : additionner et soustraire des fractions de même dénominateur."
@@ -1039,18 +1038,18 @@
       "skill_id": "C006",
       "level": "entrainement",
       "type": "numerique",
-      "statement": "Complète pour obtenir deux fractions égales :\n\n$\\frac{2}{3} = \\frac{\\ldots}{15}$",
+      "statement": "Complète pour obtenir deux fractions égales :\n\n$\\frac{2}{3} = \\frac{\\ldots}{12}$",
       "image": null,
-      "answer": { "value": 10 },
+      "answer": { "value": 8 },
       "solution_steps": [
-        "On cherche par combien le dénominateur a été multiplié : $3 \\times 5 = 15$, donc par **5**.",
-        "On applique la même multiplication au numérateur : $2 \\times 5 = 10$.",
-        "$\\frac{2}{3} = \\frac{10}{15}$."
+        "On cherche par combien le dénominateur a été multiplié : $3 \\times 4 = 12$, donc par **4**.",
+        "On applique la même multiplication au numérateur : $2 \\times 4 = 8$.",
+        "$\\frac{2}{3} = \\frac{8}{12}$."
       ],
-      "hint": "Par combien passe-t-on de 3 à 15 ? Applique le même facteur en haut.",
+      "hint": "Par combien passe-t-on de 3 à 12 ? Applique le même facteur en haut.",
       "estimated_duration_s": 60,
       "review_status": "brouillon",
-      "programme_ref": "Cycle 4, 5e : reconnaître des fractions égales : 2/3 = …/15."
+      "programme_ref": "Cycle 2, CE2 : établir des égalités entre fractions."
     },
     {
       "id": "EX-C006-M-01",
@@ -1060,16 +1059,14 @@
       "statement": "Parmi ces fractions, laquelle n'est **pas** égale à $\\frac{3}{4}$ ?",
       "image": null,
       "choices": [
-        { "key": "a", "text": "$\\frac{5}{6}$", "misconception": null },
+        { "key": "a", "text": "$\\frac{5}{6}$", "misconception": "C'est l'intrus : on passe de 3 à 5 et de 4 à 6 en ajoutant 2, or ajouter ne conserve pas l'égalité entre fractions." },
         { "key": "b", "text": "$\\frac{6}{8}$", "misconception": "Cette fraction est bien égale à 3/4 : on a multiplié par 2 en haut et en bas." },
-        { "key": "c", "text": "$\\frac{9}{12}$", "misconception": "Cette fraction est bien égale à 3/4 : on a multiplié par 3 en haut et en bas." },
-        { "key": "d", "text": "$\\frac{15}{20}$", "misconception": "Cette fraction est bien égale à 3/4 : on a multiplié par 5 en haut et en bas." }
+        { "key": "c", "text": "$\\frac{9}{12}$", "misconception": "Cette fraction est bien égale à 3/4 : on a multiplié par 3 en haut et en bas." }
       ],
       "answer": { "value": "a" },
       "solution_steps": [
         "$\\frac{6}{8}$ : on a multiplié 3 et 4 par 2. Égale à $\\frac{3}{4}$.",
         "$\\frac{9}{12}$ : on a multiplié par 3. Égale à $\\frac{3}{4}$.",
-        "$\\frac{15}{20}$ : on a multiplié par 5. Égale à $\\frac{3}{4}$.",
         "$\\frac{5}{6}$ : on est passé de 3 à 5 en **ajoutant** 2, et de 4 à 6 en ajoutant 2. Ajouter ne conserve pas l'égalité, seule la multiplication le fait.",
         "La fraction qui n'est pas égale à $\\frac{3}{4}$ est donc $\\frac{5}{6}$."
       ],
@@ -1084,9 +1081,9 @@
       "skill_id": "C005",
       "level": "decouverte",
       "type": "numerique",
-      "statement": "Une bande-unité (de 0 à 1) est graduée en **quarts**.\n\nÀ quelle graduation, en partant de 0, se trouve $\\frac{3}{4}$ ?",
+      "statement": "Une bande-unité (de 0 à 1) est graduée en **quarts**.\n\nCombien d'intervalles faut-il parcourir depuis 0 pour atteindre $\\frac{3}{4}$ ?",
       "image": null,
-      "answer": { "value": 3 },
+      "answer": { "value": 3, "accepted": ["3"] },
       "solution_steps": [
         "Le dénominateur 4 indique que la bande de 0 à 1 est partagée en 4 intervalles égaux.",
         "Le numérateur 3 indique qu'on avance de 3 intervalles à partir de 0.",
@@ -1102,7 +1099,7 @@
       "skill_id": "C005",
       "level": "entrainement",
       "type": "texte",
-      "statement": "Une demi-droite est graduée en **cinquièmes** à partir de 0.\n\nQuelle fraction se trouve à la 4e graduation après 0 ? Écris ta réponse sous la forme 4/5.",
+      "statement": "Une bande-unité (de 0 à 1) est graduée en **cinquièmes**.\n\nQuelle fraction se trouve à la 4e graduation après 0 ? Écris ta réponse sous la forme 4/5.",
       "image": null,
       "answer": {
         "value": "4/5",
@@ -1116,7 +1113,7 @@
       "hint": "Chaque saut vaut un cinquième. Combien de sauts ?",
       "estimated_duration_s": 50,
       "review_status": "brouillon",
-      "programme_ref": "Cycle 3, CM1 : placer une fraction sur une demi-droite graduée."
+      "programme_ref": "Cycle 2, CE2 : positionner des fractions sur une bande-unité graduée."
     },
     {
       "id": "EX-C005-M-01",
@@ -1269,7 +1266,7 @@
       "choices": [
         { "key": "a", "text": "$\\frac{2}{3} > \\frac{3}{5}$", "misconception": null },
         { "key": "b", "text": "$\\frac{2}{3} < \\frac{3}{5}$", "misconception": "L'élève compare les numérateurs seuls (2 < 3) sans réduire au même dénominateur." },
-        { "key": "c", "text": "$\\frac{2}{3} = \\frac{3}{5}$", "misconception": "L'élève constate un écart de 1 entre numérateur et dénominateur dans les deux cas et conclut à l'égalité." }
+        { "key": "c", "text": "$\\frac{2}{3} = \\frac{3}{5}$", "misconception": "L'élève ne sait pas départager deux fractions de dénominateurs différents et coche l'égalité par défaut, faute d'avoir réduit au même dénominateur." }
       ],
       "answer": { "value": "a" },
       "solution_steps": [
@@ -1316,7 +1313,7 @@
       "choices": [
         { "key": "a", "text": "$\\frac{8}{3} > \\frac{6}{7}$", "misconception": null },
         { "key": "b", "text": "$\\frac{8}{3} < \\frac{6}{7}$", "misconception": "L'élève compare les dénominateurs (3 < 7) et en déduit à tort l'ordre des fractions." },
-        { "key": "c", "text": "Il faut réduire au même dénominateur pour pouvoir conclure", "misconception": "Méthode valable mais inutilement longue : la comparaison à 1 suffit ici." }
+        { "key": "c", "text": "$\\frac{8}{3} = \\frac{6}{7}$", "misconception": "L'élève ne parvient pas à départager deux fractions de dénominateurs différents et coche l'égalité par défaut, sans voir que l'une dépasse 1 et l'autre non." }
       ],
       "answer": { "value": "a" },
       "solution_steps": [
@@ -1324,7 +1321,8 @@
         "$\\frac{8}{3}$ : le numérateur est plus grand que le dénominateur, donc $\\frac{8}{3} > 1$.",
         "$\\frac{6}{7}$ : le numérateur est plus petit que le dénominateur, donc $\\frac{6}{7} < 1$.",
         "Une fraction supérieure à 1 est forcément plus grande qu'une fraction inférieure à 1.",
-        "Donc $\\frac{8}{3} > \\frac{6}{7}$."
+        "Donc $\\frac{8}{3} > \\frac{6}{7}$.",
+        "La réduction au même dénominateur donne le même résultat ($\\frac{56}{21} > \\frac{18}{21}$), mais elle est ici beaucoup plus longue."
       ],
       "hint": "Compare chacune des deux fractions au nombre 1.",
       "estimated_duration_s": 90,
