@@ -55,7 +55,7 @@
 |---|---|---|---|---|
 | **D** | numerique | Compte les jetons : ● ● ● ● ● ● ● Combien y a-t-il de jetons ? | 7 | 7 |
 | **E** | numerique | Quel nombre vient juste après 6 ? | 7 | 6–7 |
-| **M** | vrai_faux | Léa compte ses billes et en trouve 8. Elle les compte à nouveau, mais en commençant par une autre bille. Elle trouvera encore 8 billes. | vrai | 8 |
+| **M** | vrai_faux | Léa a 8 billes. Elle les recompte en commençant par une autre bille. Elle trouve encore 8 billes. | vrai | 8 |
 
 <details><summary>Corrigés, indices et distracteurs</summary>
 
@@ -88,7 +88,7 @@
 
 **`EX-A001-M-01`** — Maîtrise
 
-*Énoncé.* Léa compte ses billes et en trouve 8. Elle les compte à nouveau, mais en commençant par une autre bille. Elle trouvera encore 8 billes.
+*Énoncé.* Léa a 8 billes. Elle les recompte en commençant par une autre bille. Elle trouve encore 8 billes.
 
 *Corrigé.*
 1. Compter, c'est associer un nombre à chaque objet, une seule fois, sans en oublier aucun.
@@ -96,7 +96,7 @@
 3. Cette quantité ne dépend pas de l'ordre dans lequel on compte : Léa n'a ni ajouté ni enlevé de bille.
 4. Elle retrouvera donc 8 billes. L'affirmation est vraie.
 
-*Indice.* Est-ce que changer l'ordre du comptage ajoute ou enlève des billes ?
+*Indice.* Léa a-t-elle ajouté ou enlevé des billes ?
 
 *Programme.* Cycle 2, CP : les nombres entiers jusqu'à cent.
 
@@ -187,14 +187,14 @@
 **Niveau** CE1 · difficulté 2/9 · seuil 2 sur 3  
 **Prérequis** A002 (CP)  
 **Bornes du niveau** entiers ≤ 1 000 · dénominateurs 2, 3, 4, 5, 6, 8, 10 · fractions ≤ 1  
-**Test de positionnement** Placer 754 sur une droite graduée
+**Test de positionnement** Placer 754 sur une bande graduée de 0 à 1 000
 
 > « Les connaissances et savoir-faire attendus concernent les nombres jusqu'à mille. »  
 > — *Cycle 2, Cours élémentaire première année, Les nombres entiers*
 
 | | Type | Énoncé | Réponse | Nombres |
 |---|---|---|---|---|
-| **D** | numerique | Écris en chiffres le nombre trois cent cinq. | 305 | 305 |
+| **D** | numerique | Écris en chiffres le nombre trois-cent-cinq. | 305 | 305 |
 | **E** | numerique | Quel nombre vient juste avant 700 ? | 699 | 699–700 |
 | **M** | numerique | Complète : 754 = 700 + 50 + … | 4 | 4–754 |
 
@@ -202,10 +202,10 @@
 
 **`EX-A003-D-01`** — Découverte
 
-*Énoncé.* Écris en chiffres le nombre trois cent cinq.
+*Énoncé.* Écris en chiffres le nombre trois-cent-cinq.
 
 *Corrigé.*
-1. « Trois cent » vaut 300, soit 3 centaines.
+1. « Trois-cent » vaut 300, soit 3 centaines.
 2. Il n'y a aucune dizaine : on écrit 0 au rang des dizaines.
 3. « Cinq » vaut 5 unités.
 4. On obtient 305.
@@ -261,9 +261,9 @@
 
 | | Type | Énoncé | Réponse | Nombres |
 |---|---|---|---|---|
-| **D** | qcm | Comment lit-on le nombre 407 ? | a) quatre cent sept | 407 |
-| **E** | qcm | Comment lit-on le nombre 380 ? | a) trois cent quatre-vingts | 380 |
-| **M** | qcm | Comment lit-on le nombre 190 ? | a) cent quatre-vingt-dix | 190 |
+| **D** | qcm | Comment lit-on le nombre 407 ? | a) quatre-cent-sept | 407 |
+| **E** | qcm | Comment lit-on le nombre 380 ? | a) trois-cent-quatre-vingts | 380 |
+| **M** | qcm | Comment lit-on le nombre 190 ? | a) cent-quatre-vingt-dix | 190 |
 
 <details><summary>Corrigés, indices et distracteurs</summary>
 
@@ -271,17 +271,17 @@
 
 *Énoncé.* Comment lit-on le nombre 407 ?
 
-- **a.** quatre cent sept ✅
+- **a.** quatre-cent-sept ✅
 - **b.** quarante-sept
   <br>*Erreur visée :* L'élève ignore le rang des centaines et ne lit que les deux derniers chiffres.
-- **c.** quatre cent soixante-dix
+- **c.** quatre-cent-soixante-dix
   <br>*Erreur visée :* L'élève lit le 7 comme des dizaines et oublie que c'est le 0 qui occupe ce rang.
 
 *Corrigé.*
 1. On repère les rangs : 4 centaines, 0 dizaine, 7 unités.
-2. 4 au rang des centaines se lit quatre cent.
+2. 4 au rang des centaines se lit quatre-cent.
 3. Il n'y a aucune dizaine : le 0 ne se prononce pas, mais il maintient le 7 au rang des unités.
-4. On lit donc « quatre cent sept ».
+4. On lit donc « quatre-cent-sept ».
 
 *Indice.* Le 0 occupe le rang des dizaines : il n'y a pas de dizaine.
 
@@ -293,17 +293,17 @@
 
 *Énoncé.* Comment lit-on le nombre 380 ?
 
-- **a.** trois cent quatre-vingts ✅
-- **b.** trois cent huit
+- **a.** trois-cent-quatre-vingts ✅
+- **b.** trois-cent-huit
   <br>*Erreur visée :* L'élève lit le chiffre 8 comme des unités au lieu de dizaines.
-- **c.** trois mille quatre-vingts
+- **c.** trois-mille-quatre-vingts
   <br>*Erreur visée :* L'élève attribue au 3 le rang des milliers.
 
 *Corrigé.*
-1. 3 est au rang des centaines : trois cent.
+1. 3 est au rang des centaines : trois-cent.
 2. 8 est au rang des dizaines, soit 80 : quatre-vingts.
 3. 0 aux unités : il n'y a rien à ajouter.
-4. On lit « trois cent quatre-vingts ».
+4. On lit « trois-cent-quatre-vingts ».
 
 *Indice.* Le 8 est-il au rang des unités ou des dizaines ?
 
@@ -315,12 +315,12 @@
 
 *Énoncé.* Comment lit-on le nombre 190 ?
 
-- **a.** cent quatre-vingt-dix ✅
-- **b.** cent quatre-vingt-dix-neuf
+- **a.** cent-quatre-vingt-dix ✅
+- **b.** cent-quatre-vingt-dix-neuf
   <br>*Erreur visée :* L'élève ajoute des unités qui ne figurent pas dans le nombre.
-- **c.** cent neuf
+- **c.** cent-neuf
   <br>*Erreur visée :* L'élève lit le 9 comme des unités et ignore que c'est le 0 qui occupe ce rang.
-- **d.** cent dix-neuf
+- **d.** cent-dix-neuf
   <br>*Erreur visée :* L'élève confond quatre-vingt-dix (90) et dix-neuf (19).
 
 *Corrigé.*
@@ -328,7 +328,7 @@
 2. 1 au rang des centaines : cent.
 3. 9 dizaines, soit 90, se lit quatre-vingt-dix.
 4. Aucune unité : il n'y a rien à ajouter.
-5. On lit « cent quatre-vingt-dix ».
+5. On lit « cent-quatre-vingt-dix ».
 
 *Indice.* Repère bien le rang de chaque chiffre : centaines, dizaines, unités.
 
@@ -344,27 +344,27 @@
 **Niveau** CE1 · difficulté 2/9 · seuil 2 sur 3  
 **Prérequis** A004 (CE1)  
 **Bornes du niveau** entiers ≤ 1 000 · dénominateurs 2, 3, 4, 5, 6, 8, 10 · fractions ≤ 1  
-**Test de positionnement** Écrire en chiffres « trois mille deux cent cinq »
+**Test de positionnement** Écrire en chiffres « cinq-cent-quatre-vingt-dix »
 
 > ⚠ *Aucune citation de programme sur cette compétence : le niveau n'est pas sourcé.*
 
 | | Type | Énoncé | Réponse | Nombres |
 |---|---|---|---|---|
-| **D** | numerique | Écris en chiffres : deux cent six. | 206 | 206 |
-| **E** | numerique | Écris en chiffres : neuf cent quatre-vingt-dix-neuf. | 999 | 999 |
-| **M** | numerique | Écris en chiffres : cinq cent quatre-vingt-dix. | 590 | 590 |
+| **D** | numerique | Écris en chiffres : deux-cent-six. | 206 | 206 |
+| **E** | numerique | Écris en chiffres : neuf-cent-quatre-vingt-dix-neuf. | 999 | 999 |
+| **M** | numerique | Écris en chiffres : cinq-cent-quatre-vingt-dix. | 590 | 590 |
 
 <details><summary>Corrigés, indices et distracteurs</summary>
 
 **`EX-A005-D-01`** — Découverte
 
-*Énoncé.* Écris en chiffres : deux cent six.
+*Énoncé.* Écris en chiffres : deux-cent-six.
 
 *Corrigé.*
 1. 2 centaines, aucune dizaine, 6 unités.
 2. On écrit un 0 au rang des dizaines : 206.
 
-*Indice.* Combien de dizaines entends-tu dans « deux cent six » ?
+*Indice.* Combien de dizaines entends-tu dans « deux-cent-six » ?
 
 *Programme.* Cycle 2, CE1 : les nombres jusqu'à mille.
 
@@ -372,10 +372,10 @@
 
 **`EX-A005-E-01`** — Entraînement
 
-*Énoncé.* Écris en chiffres : neuf cent quatre-vingt-dix-neuf.
+*Énoncé.* Écris en chiffres : neuf-cent-quatre-vingt-dix-neuf.
 
 *Corrigé.*
-1. « Neuf cent » : 9 centaines.
+1. « Neuf-cent » : 9 centaines.
 2. « Quatre-vingt-dix » désigne 90, soit 9 dizaines.
 3. « Neuf » : 9 unités.
 4. On obtient 999.
@@ -388,10 +388,10 @@
 
 **`EX-A005-M-01`** — Maîtrise
 
-*Énoncé.* Écris en chiffres : cinq cent quatre-vingt-dix.
+*Énoncé.* Écris en chiffres : cinq-cent-quatre-vingt-dix.
 
 *Corrigé.*
-1. « Cinq cent » : 5 au rang des centaines.
+1. « Cinq-cent » : 5 au rang des centaines.
 2. « Quatre-vingt-dix » désigne 90, soit 9 dizaines.
 3. Aucune unité n'est énoncée : c'est le piège. Il faut écrire 0 au rang des unités, sinon on obtiendrait 59.
 4. On obtient 590.
@@ -410,7 +410,7 @@
 **Niveau** CE1 · difficulté 2/9 · seuil 2 sur 3  
 **Prérequis** A004 (CE1), A005 (CE1)  
 **Bornes du niveau** entiers ≤ 1 000 · dénominateurs 2, 3, 4, 5, 6, 8, 10 · fractions ≤ 1  
-**Test de positionnement** Comparer 4 302 et 4 320
+**Test de positionnement** Comparer 302 et 320
 
 > ⚠ *Aucune citation de programme sur cette compétence : le niveau n'est pas sourcé.*
 
@@ -473,7 +473,7 @@
 - **b.** 999
   <br>*Erreur visée :* L'élève compare le premier chiffre (9 contre 1) sans regarder le nombre de chiffres.
 - **c.** Ils sont égaux
-  <br>*Erreur visée :* L'élève considère que 999 et 1 000 se suivent donc se valent.
+  <br>*Erreur visée :* L'élève lit 1 000 comme « cent » et le croit proche de 999, par confusion entre le nom du nombre et son écriture.
 
 *Corrigé.*
 1. On compare d'abord le nombre de chiffres : 999 en a 3, 1 000 en a 4.
@@ -889,8 +889,8 @@
 | | Type | Énoncé | Réponse | Nombres |
 |---|---|---|---|---|
 | **D** | qcm | Compare 3/8 et 5/8. | a) 3/8 < 5/8 | dén. 8 |
-| **E** | qcm | Tom a mangé 2/6 d'une tarte. Lisa en a mangé 5/6. Qui en a mangé le plus ? | a) Lisa | dén. 6 |
-| **M** | texte | Range ces fractions de la plus petite à la plus grande : 7/10, 2/10, 5/10. Écris-les séparées par des virgules, sous la forme 2/10. | 2/10, 5/10, 7/10 | dén. 10 |
+| **E** | qcm | Tom et Lisa ont chacun leur propre tarte, partagée en 6 parts égales. Tom a mangé 2/6 de sa tarte. Lisa a mangé 5/6 de la sienne. Qui a mangé la plus… | a) Lisa | 6 · dén. 6 |
+| **M** | texte | Range ces fractions de la plus petite à la plus grande : 7/10, 2/10, 5/10. Écris-les séparées par des virgules, sous la forme numérateur/dénominateur. | 2/10, 5/10, 7/10 | dén. 10 |
 
 <details><summary>Corrigés, indices et distracteurs</summary>
 
@@ -917,7 +917,7 @@
 
 **`EX-C009-E-01`** — Entraînement
 
-*Énoncé.* Tom a mangé 2/6 d'une tarte. Lisa en a mangé 5/6. Qui en a mangé le plus ?
+*Énoncé.* Tom et Lisa ont chacun leur propre tarte, partagée en 6 parts égales. Tom a mangé 2/6 de sa tarte. Lisa a mangé 5/6 de la sienne. Qui a mangé la plus grande part de sa tarte ?
 
 - **a.** Lisa ✅
 - **b.** Tom
@@ -926,12 +926,13 @@
   <br>*Erreur visée :* L'élève voit le même dénominateur et en conclut que les deux fractions sont égales.
 
 *Corrigé.*
-1. Les deux fractions ont le même dénominateur 6 : la tarte est partagée en 6 parts égales dans les deux cas.
-2. Les parts sont donc de même taille : il suffit de compter combien chacun en a prises.
-3. Tom en a pris 2, Lisa en a pris 5. Comme 2 < 5, c'est Lisa qui en a mangé le plus.
+1. Les deux tartes sont partagées en 6 parts égales : les parts ont donc la même taille chez l'un comme chez l'autre.
+2. Les deux fractions ayant le même dénominateur, il suffit de compter combien de parts chacun a prises.
+3. Tom en a pris 2, Lisa en a pris 5. Comme 2 < 5, c'est Lisa qui a mangé la plus grande part.
 4. 2/6 < 5/6.
+5. Attention : chacun mange dans sa tarte. Si les deux mangeaient dans la même, 2/6 + 5/6 = 7/6 dépasserait la tarte entière, ce qui serait impossible.
 
-*Indice.* Les parts ont la même taille : regarde seulement combien chacun en a prises.
+*Indice.* Chaque tarte est coupée de la même façon : regarde seulement combien de parts chacun a prises.
 
 *Programme.* Cycle 2, CE1 : comparer des fractions ayant le même dénominateur.
 
@@ -939,7 +940,7 @@
 
 **`EX-C009-M-01`** — Maîtrise
 
-*Énoncé.* Range ces fractions de la plus petite à la plus grande : 7/10, 2/10, 5/10. Écris-les séparées par des virgules, sous la forme 2/10.
+*Énoncé.* Range ces fractions de la plus petite à la plus grande : 7/10, 2/10, 5/10. Écris-les séparées par des virgules, sous la forme numérateur/dénominateur.
 
 *Corrigé.*
 1. Les trois fractions ont le même dénominateur 10 : les parts sont toutes des dixièmes.
@@ -972,15 +973,15 @@
 
 | | Type | Énoncé | Réponse | Nombres |
 |---|---|---|---|---|
-| **D** | texte | Calcule 1/5 + 2/5. Écris ta réponse sous la forme 3/5. | 3/5 | dén. 5 |
-| **E** | texte | Calcule 2/3 - 1/3. Écris ta réponse sous la forme 1/3. | 1/3 | dén. 3 |
+| **D** | texte | Calcule 1/5 + 2/5. Écris ta réponse sous la forme numérateur/dénominateur. | 3/5 | dén. 5 |
+| **E** | texte | Calcule 2/3 - 1/3. Écris ta réponse sous la forme numérateur/dénominateur. | 1/3 | dén. 3 |
 | **M** | texte | Lucie a colorié les 3/10 d'une figure en bleu, et tout le reste en rouge. Quelle fraction de la figure est coloriée en rouge ? Écris ta réponse sous … | 7/10 | dén. 10 |
 
 <details><summary>Corrigés, indices et distracteurs</summary>
 
 **`EX-C012-D-01`** — Découverte
 
-*Énoncé.* Calcule 1/5 + 2/5. Écris ta réponse sous la forme 3/5.
+*Énoncé.* Calcule 1/5 + 2/5. Écris ta réponse sous la forme numérateur/dénominateur.
 
 *Corrigé.*
 1. Les deux fractions ont le même dénominateur : les parts sont de même taille.
@@ -998,7 +999,7 @@
 
 **`EX-C012-E-01`** — Entraînement
 
-*Énoncé.* Calcule 2/3 - 1/3. Écris ta réponse sous la forme 1/3.
+*Énoncé.* Calcule 2/3 - 1/3. Écris ta réponse sous la forme numérateur/dénominateur.
 
 *Corrigé.*
 1. Même dénominateur : on soustrait les numérateurs.
@@ -1016,7 +1017,7 @@
 
 **`EX-C012-M-01`** — Maîtrise
 
-*Énoncé.* Lucie a colorié les 3/10 d'une figure en bleu, et tout le reste en rouge. Quelle fraction de la figure est coloriée en rouge ? Écris ta réponse sous la forme 7/10.
+*Énoncé.* Lucie a colorié les 3/10 d'une figure en bleu, et tout le reste en rouge. Quelle fraction de la figure est coloriée en rouge ? Écris ta réponse sous la forme numérateur/dénominateur.
 
 *Corrigé.*
 1. La figure entière représente le tout, soit 10/10.
@@ -1266,15 +1267,15 @@
 
 | | Type | Énoncé | Réponse | Nombres |
 |---|---|---|---|---|
-| **D** | numerique | Une bande-unité (de 0 à 1) est graduée en quarts. Combien d'intervalles faut-il parcourir depuis 0 pour atteindre 3/4 ? | 3 | 0–3 · dén. 4 |
-| **E** | texte | Une bande-unité (de 0 à 1) est graduée en cinquièmes. Quelle fraction se trouve à la 4e graduation après 0 ? Écris ta réponse sous la forme 4/5. | 4/5 | 0–4 · dén. 5 |
-| **M** | vrai_faux | Sur une même demi-droite graduée, 1/2 et 3/6 se placent exactement au même endroit. | vrai | dén. 2, 6 |
+| **D** | numerique | Une bande-unité (de 0 à 1) est graduée en quarts : ``` 0 /----/----/----/----/ 1 ``` Combien d'intervalles faut-il parcourir depuis 0 pour atteindre … | 3 | 0–3 · dén. 4 |
+| **E** | texte | Une bande-unité (de 0 à 1) est graduée en cinquièmes : ``` 0 /----/----/----/----/----/ 1 ``` Quelle fraction se trouve à la 4e graduation après 0 ? … | 4/5 | 0–4 · dén. 5 |
+| **M** | vrai_faux | Sur une même bande-unité graduée, 1/2 et 3/6 se placent exactement au même endroit. | vrai | dén. 2, 6 |
 
 <details><summary>Corrigés, indices et distracteurs</summary>
 
 **`EX-C005-D-01`** — Découverte
 
-*Énoncé.* Une bande-unité (de 0 à 1) est graduée en quarts. Combien d'intervalles faut-il parcourir depuis 0 pour atteindre 3/4 ?
+*Énoncé.* Une bande-unité (de 0 à 1) est graduée en quarts : ``` 0 /----/----/----/----/ 1 ``` Combien d'intervalles faut-il parcourir depuis 0 pour atteindre 3/4 ?
 
 *Corrigé.*
 1. Le dénominateur 4 indique que la bande de 0 à 1 est partagée en 4 intervalles égaux.
@@ -1291,7 +1292,7 @@
 
 **`EX-C005-E-01`** — Entraînement
 
-*Énoncé.* Une bande-unité (de 0 à 1) est graduée en cinquièmes. Quelle fraction se trouve à la 4e graduation après 0 ? Écris ta réponse sous la forme 4/5.
+*Énoncé.* Une bande-unité (de 0 à 1) est graduée en cinquièmes : ``` 0 /----/----/----/----/----/ 1 ``` Quelle fraction se trouve à la 4e graduation après 0 ? Écris ta réponse sous la forme numérateur/dénominateur.
 
 *Corrigé.*
 1. Graduée en cinquièmes : chaque intervalle vaut 1/5.
@@ -1308,7 +1309,7 @@
 
 **`EX-C005-M-01`** — Maîtrise
 
-*Énoncé.* Sur une même demi-droite graduée, 1/2 et 3/6 se placent exactement au même endroit.
+*Énoncé.* Sur une même bande-unité graduée, 1/2 et 3/6 se placent exactement au même endroit.
 
 *Corrigé.*
 1. 3/6 s'obtient à partir de 1/2 en multipliant numérateur et dénominateur par 3.
@@ -1387,11 +1388,10 @@
 *Énoncé.* Parmi ces fractions, laquelle n'est pas égale à 3/4 ?
 
 - **a.** 5/6 ✅
-  <br>*Erreur visée :* C'est l'intrus : on passe de 3 à 5 et de 4 à 6 en ajoutant 2, or ajouter ne conserve pas l'égalité entre fractions.
 - **b.** 6/8
-  <br>*Erreur visée :* Cette fraction est bien égale à 3/4 : on a multiplié par 2 en haut et en bas.
+  <br>*Erreur visée :* L'élève cherche un écart constant entre numérateur et dénominateur au lieu d'un facteur multiplicatif, et croit donc que 6/8 est l'intrus.
 - **c.** 9/12
-  <br>*Erreur visée :* Cette fraction est bien égale à 3/4 : on a multiplié par 3 en haut et en bas.
+  <br>*Erreur visée :* L'élève se fie au fait que 9 et 12 sont les plus grands nombres proposés pour désigner l'intrus.
 
 *Corrigé.*
 1. 6/8 : on a multiplié 3 et 4 par 2. Égale à 3/4.
@@ -1411,11 +1411,11 @@
 
 ### `C004` · Fraction d'une quantité
 
-**Objectif** Calculer la fraction d'une quantité ou d'une grandeur  
+**Objectif** Calculer une fraction unitaire d'une quantité ou d'une grandeur  
 **Niveau** CM1 · difficulté 3/9 · seuil 2 sur 3  
 **Prérequis** C002 (CE1), C003 (CE1), B006 (CE2)  
 **Bornes du niveau** entiers ≤ 999 999 · dénominateurs ≤ 20  
-**Test de positionnement** Calculer 3/4 de 20
+**Test de positionnement** Calculer 1/3 de 12 billes
 
 > « au CM1, les fractions acquièrent également le statut d'opérateur multiplicatif pour le cas particulier des fractions unitaires ; les élèves apprennent à calculer des fractions de quantités ou de grandeurs comme un tiers de 12 billes. »  
 > — *Cycle 3, Cours moyen première année, Les fractions*
@@ -1426,8 +1426,8 @@
 | | Type | Énoncé | Réponse | Nombres |
 |---|---|---|---|---|
 | **D** | numerique | Calcule le tiers de 12 billes, c'est-à-dire 1/3 de 12. | 4 | 4–12 · dén. 3 |
-| **E** | numerique | Calcule 3/4 de 20. | 15 | 15–20 · dén. 4 |
-| **M** | numerique | Une classe compte 28 élèves. Les 3/7 d'entre eux sont demi-pensionnaires. Combien d'élèves sont demi-pensionnaires ? | 12 | 12–28 · dén. 7 |
+| **E** | numerique | Une piste mesure 100 mètres. Calcule 1/4 de cette longueur. | 25 | 25–100 · dén. 4 |
+| **M** | numerique | Léa a dépensé le tiers de son argent de poche, soit 7 €. Combien d'euros avait-elle au départ ? | 21 | 7–21 |
 
 <details><summary>Corrigés, indices et distracteurs</summary>
 
@@ -1448,32 +1448,33 @@
 
 **`EX-C004-E-01`** — Entraînement
 
-*Énoncé.* Calcule 3/4 de 20.
+*Énoncé.* Une piste mesure 100 mètres. Calcule 1/4 de cette longueur.
 
 *Corrigé.*
-1. On divise d'abord par le dénominateur : 20 ÷ 4 = 5. C'est la valeur d'un quart.
-2. On multiplie ensuite par le numérateur : 3 × 5 = 15.
-3. 3/4 de 20 vaut 15.
+1. Prendre le quart, c'est partager en 4 parts égales.
+2. 100 ÷ 4 = 25.
+3. 1/4 de 100 mètres vaut 25 mètres.
 
-*Indice.* D'abord la valeur d'un quart, ensuite trois fois cette valeur.
+*Indice.* Partage les 100 mètres en 4 parts égales.
 
-*Programme.* Cycle 3, CM1 : déterminer une fraction d'une quantité ou d'une grandeur.
+*Programme.* Cycle 3, CM1 : les fractions acquièrent le statut d'opérateur multiplicatif pour le cas particulier des fractions unitaires, comme un quart de 100 mètres.
 
 ---
 
 **`EX-C004-M-01`** — Maîtrise
 
-*Énoncé.* Une classe compte 28 élèves. Les 3/7 d'entre eux sont demi-pensionnaires. Combien d'élèves sont demi-pensionnaires ?
+*Énoncé.* Léa a dépensé le tiers de son argent de poche, soit 7 €. Combien d'euros avait-elle au départ ?
 
 *Corrigé.*
-1. On cherche 3/7 de 28.
-2. Valeur d'un septième : 28 ÷ 7 = 4 élèves.
-3. Trois septièmes : 3 × 4 = 12 élèves.
-4. Il y a 12 élèves demi-pensionnaires.
+1. Le tiers de sa somme vaut 7 €, donc sa somme est partagée en 3 parts de 7 € chacune.
+2. Ici on ne cherche pas la part, on cherche le tout : il faut donc multiplier au lieu de diviser.
+3. 3 × 7 = 21.
+4. Léa avait 21 €.
+5. Vérification : 1/3 de 21 vaut 21 ÷ 3 = 7. C'est bien cohérent.
 
-*Indice.* Combien d'élèves représente un septième de la classe ?
+*Indice.* Sa somme est faite de 3 parts identiques, et tu connais la valeur d'une part.
 
-*Programme.* Cycle 3, CM1 : déterminer une fraction d'une quantité ou d'une grandeur.
+*Programme.* Cycle 3, CM1 : déterminer une fraction d'une quantité ou d'une grandeur (fractions unitaires).
 
 ---
 
@@ -1499,7 +1500,7 @@
 |---|---|---|---|---|
 | **D** | qcm | Compare 2/3 et 3/5. | a) 2/3 > 3/5 | dén. 3, 5 |
 | **E** | qcm | Compare 8/12 et 8/21 sans calculer. | a) 8/12 > 8/21 | dén. 12, 21 |
-| **M** | qcm | Compare 8/3 et 6/7 le plus rapidement possible. | a) 8/3 > 6/7 | dén. 3, 7 |
+| **M** | texte | Range ces trois fractions de la plus petite à la plus grande : 3/4, 7/18, 5/6 Écris-les séparées par des virgules, sous la forme numérateur/dénominat… | 7/18, 3/4, 5/6 | dén. 4, 6, 18 |
 
 <details><summary>Corrigés, indices et distracteurs</summary>
 
@@ -1511,7 +1512,7 @@
 - **b.** 2/3 < 3/5
   <br>*Erreur visée :* L'élève compare les numérateurs seuls (2 < 3) sans réduire au même dénominateur.
 - **c.** 2/3 = 3/5
-  <br>*Erreur visée :* L'élève ne sait pas départager deux fractions de dénominateurs différents et coche l'égalité par défaut, faute d'avoir réduit au même dénominateur.
+  <br>*Erreur visée :* L'élève voit que le numérateur augmente de 1 en même temps que le dénominateur augmente de 2, et en conclut que les deux variations se compensent.
 
 *Corrigé.*
 1. Dénominateur commun : 3 × 5 = 15.
@@ -1548,25 +1549,20 @@
 
 **`EX-C010-M-01`** — Maîtrise
 
-*Énoncé.* Compare 8/3 et 6/7 le plus rapidement possible.
-
-- **a.** 8/3 > 6/7 ✅
-- **b.** 8/3 < 6/7
-  <br>*Erreur visée :* L'élève compare les dénominateurs (3 < 7) et en déduit à tort l'ordre des fractions.
-- **c.** 8/3 = 6/7
-  <br>*Erreur visée :* L'élève ne parvient pas à départager deux fractions de dénominateurs différents et coche l'égalité par défaut, sans voir que l'une dépasse 1 et l'autre non.
+*Énoncé.* Range ces trois fractions de la plus petite à la plus grande : 3/4, 7/18, 5/6 Écris-les séparées par des virgules, sous la forme numérateur/dénominateur.
 
 *Corrigé.*
-1. Astuce : on compare chaque fraction à 1.
-2. 8/3 : le numérateur est plus grand que le dénominateur, donc 8/3 > 1.
-3. 6/7 : le numérateur est plus petit que le dénominateur, donc 6/7 < 1.
-4. Une fraction supérieure à 1 est forcément plus grande qu'une fraction inférieure à 1.
-5. Donc 8/3 > 6/7.
-6. La réduction au même dénominateur donne le même résultat (56/21 > 18/21), mais elle est ici beaucoup plus longue.
+1. Aucune astuce ne fonctionne ici : les trois fractions sont inférieures à 1, et elles n'ont ni numérateur ni dénominateur commun.
+2. Il faut donc les réduire au même dénominateur. 4, 18 et 6 divisent tous 36.
+3. 3/4 = 27/36, 7/18 = 14/36, 5/6 = 30/36.
+4. On compare les numérateurs : 14 < 27 < 30.
+5. Donc 7/18 < 3/4 < 5/6.
 
-*Indice.* Compare chacune des deux fractions au nombre 1.
+*Indice.* Cherche un dénominateur commun aux trois fractions : un multiple de 4, de 18 et de 6.
 
-*Programme.* Cycle 4, 5e : comparer deux fractions : 8/3 et 6/7.
+*Aussi accepté.* 7/18,3/4,5/6, 7/18 3/4 5/6, 7 / 18, 3 / 4, 5 / 6
+
+*Programme.* Cycle 4, 5e : comparer des fractions (automatismes : 3/4 et 7/18).
 
 ---
 
@@ -1589,8 +1585,8 @@
 | | Type | Énoncé | Réponse | Nombres |
 |---|---|---|---|---|
 | **D** | numerique | Quel est le plus petit dénominateur commun à 1/4 et 2/3 ? | 12 | 12 · dén. 3, 4 |
-| **E** | texte | Réduis 1/4 et 2/3 au même dénominateur. Écris les deux fractions obtenues, séparées par une virgule, sous la forme 3/12, 8/12. | 3/12, 8/12 | dén. 3, 4, 12 |
-| **M** | texte | Calcule 2/5 + 1/4. Écris ta réponse sous la forme 13/20. | 13/20 | dén. 4, 5, 20 |
+| **E** | texte | Réduis 1/4 et 2/3 au même dénominateur. Écris les deux fractions obtenues, séparées par une virgule, sous la forme numérateur/dénominateur. | 3/12, 8/12 | dén. 3, 4, 12 |
+| **M** | texte | Calcule 2/5 + 1/4. Écris ta réponse sous la forme numérateur/dénominateur. | 13/20 | dén. 4, 5, 20 |
 
 <details><summary>Corrigés, indices et distracteurs</summary>
 
@@ -1612,7 +1608,7 @@
 
 **`EX-C011-E-01`** — Entraînement
 
-*Énoncé.* Réduis 1/4 et 2/3 au même dénominateur. Écris les deux fractions obtenues, séparées par une virgule, sous la forme 3/12, 8/12.
+*Énoncé.* Réduis 1/4 et 2/3 au même dénominateur. Écris les deux fractions obtenues, séparées par une virgule, sous la forme numérateur/dénominateur.
 
 *Corrigé.*
 1. Dénominateur commun : 12.
@@ -1630,7 +1626,7 @@
 
 **`EX-C011-M-01`** — Maîtrise
 
-*Énoncé.* Calcule 2/5 + 1/4. Écris ta réponse sous la forme 13/20.
+*Énoncé.* Calcule 2/5 + 1/4. Écris ta réponse sous la forme numérateur/dénominateur.
 
 *Corrigé.*
 1. Les dénominateurs sont différents : il faut d'abord les rendre identiques.
@@ -1667,15 +1663,15 @@
 
 | | Type | Énoncé | Réponse | Nombres |
 |---|---|---|---|---|
-| **D** | texte | Simplifie 12/18 au maximum. Écris ta réponse sous la forme 2/3. | 2/3 | dén. 3, 18 |
-| **E** | texte | Simplifie 25/40 au maximum. Écris ta réponse sous la forme 5/8. | 5/8 | dén. 8, 40 |
+| **D** | texte | Simplifie 12/18 au maximum. Écris ta réponse sous la forme numérateur/dénominateur. | 2/3 | dén. 3, 18 |
+| **E** | texte | Simplifie 25/40 au maximum. Écris ta réponse sous la forme numérateur/dénominateur. | 5/8 | dén. 8, 40 |
 | **M** | qcm | Peut-on simplifier l'écriture 4 + 2/4 en barrant les deux 4 ? | a) Non, car le 4 du haut est dan… | 2–4 |
 
 <details><summary>Corrigés, indices et distracteurs</summary>
 
 **`EX-C007-D-01`** — Découverte
 
-*Énoncé.* Simplifie 12/18 au maximum. Écris ta réponse sous la forme 2/3.
+*Énoncé.* Simplifie 12/18 au maximum. Écris ta réponse sous la forme numérateur/dénominateur.
 
 *Corrigé.*
 1. 12 et 18 sont tous les deux dans la table de 6.
@@ -1693,7 +1689,7 @@
 
 **`EX-C007-E-01`** — Entraînement
 
-*Énoncé.* Simplifie 25/40 au maximum. Écris ta réponse sous la forme 5/8.
+*Énoncé.* Simplifie 25/40 au maximum. Écris ta réponse sous la forme numérateur/dénominateur.
 
 *Corrigé.*
 1. 25 et 40 se terminent par 5 ou 0 : ils sont tous deux divisibles par 5.
@@ -1751,15 +1747,15 @@
 
 | | Type | Énoncé | Réponse | Nombres |
 |---|---|---|---|---|
-| **D** | texte | Rends 36/48 irréductible. Écris ta réponse sous la forme 3/4. | 3/4 | dén. 4, 48 |
-| **E** | texte | Rends 84/126 irréductible. Écris ta réponse sous la forme 2/3. | 2/3 | dén. 3, 126 |
+| **D** | texte | Rends 36/48 irréductible. Écris ta réponse sous la forme numérateur/dénominateur. | 3/4 | dén. 4, 48 |
+| **E** | texte | Rends 84/126 irréductible. Écris ta réponse sous la forme numérateur/dénominateur. | 2/3 | dén. 3, 126 |
 | **M** | qcm | Parmi ces fractions, laquelle est irréductible ? | a) 7/9 |  |
 
 <details><summary>Corrigés, indices et distracteurs</summary>
 
 **`EX-C008-D-01`** — Découverte
 
-*Énoncé.* Rends 36/48 irréductible. Écris ta réponse sous la forme 3/4.
+*Énoncé.* Rends 36/48 irréductible. Écris ta réponse sous la forme numérateur/dénominateur.
 
 *Corrigé.*
 1. 36 et 48 sont tous deux divisibles par 12.
@@ -1777,7 +1773,7 @@
 
 **`EX-C008-E-01`** — Entraînement
 
-*Énoncé.* Rends 84/126 irréductible. Écris ta réponse sous la forme 2/3.
+*Énoncé.* Rends 84/126 irréductible. Écris ta réponse sous la forme numérateur/dénominateur.
 
 *Corrigé.*
 1. Les deux nombres sont pairs : on divise par 2. 84/126 = 42/63.

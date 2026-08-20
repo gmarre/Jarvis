@@ -307,6 +307,46 @@ def _textes_exercice(ex: dict) -> list[tuple[str, str, bool]]:
     return zones
 
 
+def check_validation_tests(dag: dict) -> None:
+    """Le validation_test doit lui aussi respecter le champ numerique du niveau.
+
+    C'est la cause racine des exercices hors niveau : le generateur suit
+    fidelement une consigne fausse. Cinq occurrences du meme mecanisme ont ete
+    constatees sur trois relectures successives (A004, A008, C009, C012, C004),
+    a chaque fois corrigees une par une. Ce controle traite la classe.
+    """
+    for s in dag["skills"]:
+        niveau = s["school_level"]
+        texte = s["validation_test"]
+        plafond = MAX_ENTIER.get(niveau)
+        autorises = DENOMINATEURS_AUTORISES.get(niveau)
+        max_den = MAX_DENOMINATEUR.get(niveau)
+
+        if plafond is not None:
+            hors = sorted({n for n in _entiers(texte) if n > plafond})
+            if hors:
+                err(
+                    f"Test de positionnement : {s['id']} ({niveau}, plafond {plafond}) "
+                    f"utilise {', '.join(str(n) for n in hors)} - « {texte} »"
+                )
+        for num, den in _fractions(texte):
+            if autorises is not None and den not in autorises:
+                err(
+                    f"Test de positionnement : {s['id']} ({niveau}) utilise le denominateur "
+                    f"{den}, hors de {sorted(autorises)} - « {texte} »"
+                )
+            elif max_den is not None and den > max_den:
+                err(
+                    f"Test de positionnement : {s['id']} ({niveau}) utilise le denominateur "
+                    f"{den} > {max_den} - « {texte} »"
+                )
+            if niveau in FRACTIONS_INFERIEURES_A_UN and num > den:
+                err(
+                    f"Test de positionnement : {s['id']} ({niveau}) utilise la fraction "
+                    f"{num}/{den}, superieure a 1 - « {texte} »"
+                )
+
+
 def check_champ_numerique(dag: dict, exercises: dict) -> None:
     niveaux = {s["id"]: s["school_level"] for s in dag["skills"]}
 
@@ -346,6 +386,50 @@ def check_champ_numerique(dag: dict, exercises: dict) -> None:
                         f"Champ numerique : {ex['id']} ({niveau}) utilise la fraction {num}/{den}, "
                         f"superieure a 1, dans {libelle}"
                     )
+
+
+# ---------------------------------------------------------------------------
+#  L'exemple de format ne doit jamais donner la reponse
+# ---------------------------------------------------------------------------
+# Defaut systematique releve a la seconde relecture : le generateur illustre le
+# format attendu ("Ecris ta reponse sous la forme X") en choisissant pour X la
+# reponse elle-meme. L'exercice devient vide : l'eleve recopie au lieu de
+# chercher, et il ne distingue plus celui qui sait de celui qui ne sait pas.
+# 11 exercices sur les 12 concernes etaient touches. Voir QUALITY.md.
+
+_EXEMPLE_FORMAT = re.compile(
+    r"sous la forme\s+(?:d'une\s+|d'un\s+)?([^\s.]+(?:\s*[<+]\s*[^\s.]+)*)",
+    re.IGNORECASE,
+)
+
+
+def _norm_reponse(t: str) -> str:
+    return re.sub(r"\s+", "", str(t)).replace("\\", "").lower()
+
+
+def check_exemple_format(exercises: dict) -> None:
+    for ex in exercises["exercises"]:
+        valeur = _norm_reponse(ex["answer"].get("value", ""))
+        if not valeur:
+            continue
+        elements = [_norm_reponse(p) for p in str(ex["answer"]["value"]).split(",")]
+
+        # Un enonce peut contenir plusieurs "sous la forme" : les examiner TOUS.
+        # Ne regarder que le premier laissait passer les enonces du type
+        # "... sous la forme d'une seule fraction. Ecris ta reponse sous la forme 7/3."
+        for m in _EXEMPLE_FORMAT.finditer(ex["statement"]):
+            exemple = _norm_reponse(m.group(1).strip(".,;"))
+            if not exemple or not any(c.isdigit() for c in exemple):
+                continue  # "sous la forme numerateur/denominateur" : pas de fuite
+            if exemple == valeur:
+                err(f"Exemple de format : {ex['id']} donne la reponse ('{m.group(1)}')")
+            elif exemple in elements and len(elements) > 1:
+                err(
+                    f"Exemple de format : {ex['id']} donne un element de la reponse "
+                    f"('{m.group(1)}'), en l'occurrence le plus difficile a trouver"
+                )
+            elif valeur.startswith(exemple) and len(exemple) >= 3:
+                err(f"Exemple de format : {ex['id']} donne le debut de la reponse ('{m.group(1)}')")
 
 
 # ---------------------------------------------------------------------------
@@ -421,8 +505,12 @@ def main() -> int:
     print("\nGraphe")
     check_dag(dag, exercises, mindmaps)
 
+    print("\nConformite au programme")
+    err_avant = len(errors)
+    check_validation_tests(dag)
+    print(f"  tests de positionnement {'OK' if len(errors) == err_avant else 'ANOMALIES'}")
+
     if exercises is not None:
-        print("\nConformite au programme")
         # Chaque compteur est releve juste avant SON controle : sinon le second
         # herite des avertissements produits par le premier et parait toujours
         # en anomalie.
@@ -433,6 +521,10 @@ def main() -> int:
         warn_avant = len(warnings)
         check_programme_ref(dag, exercises)
         print(f"  niveau des references {'OK' if len(warnings) == warn_avant else 'A VERIFIER'}")
+
+        err_avant = len(errors)
+        check_exemple_format(exercises)
+        print(f"  exemple de format     {'OK' if len(errors) == err_avant else 'ANOMALIES'}")
 
     print()
     if warnings:

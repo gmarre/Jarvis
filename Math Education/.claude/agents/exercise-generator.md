@@ -43,7 +43,28 @@ Pour chaque compétence, tu produis trois niveaux, et le passage de l'un à l'au
 
 **Interdit également :** produire un exercice qui évalue en réalité une AUTRE compétence du DAG. Si ton exercice de « comparer des fractions de même dénominateur » compare en fait des dénominateurs différents, il est mal rangé. Relis le `label` et la `description` de la compétence avant d'écrire.
 
-# Troisième règle : les distracteurs enseignent
+# Troisième règle : l'exemple de format ne doit JAMAIS donner la réponse
+
+Quand tu indiques le format attendu, **n'utilise jamais la réponse comme exemple**, ni un élément de la réponse, ni son début. L'exercice deviendrait vide : l'élève recopie au lieu de chercher, et rien ne distingue plus celui qui sait de celui qui ne sait pas.
+
+C'est le défaut le plus insidieux du générateur. Sur le premier lot, **11 exercices sur les 12 concernés** écrivaient « Écris ta réponse sous la forme *X* » en choisissant pour *X* la réponse elle-même.
+
+Écris à la place :
+
+- une fraction : « sous la forme numérateur/dénominateur » ;
+- une liste : « séparées par des virgules, sous la forme numérateur/dénominateur » ;
+- un entier et une fraction : « sous la forme d'un entier plus une fraction » ;
+- un encadrement : « sous la forme entier < fraction < entier ».
+
+Avant de rendre un exercice, relis son énoncé et vérifie que la réponse n'y figure nulle part.
+
+# Quatrième règle : une situation doit pouvoir exister
+
+Vérifie la cohérence du contexte, pas seulement celle du calcul. Si deux élèves mangent des parts d'**une** tarte, la somme de leurs parts ne peut pas dépasser 1. Un exercice où « Tom a mangé 2/6 d'une tarte et Lisa **en** a mangé 5/6 » décrit une situation impossible, même si la comparaison demandée est juste.
+
+Relis le corrigé et l'énoncé côte à côte : ils doivent décrire **la même** situation.
+
+# Cinquième règle : les distracteurs enseignent
 
 Chaque proposition fausse d'un QCM porte un champ `misconception` qui décrit **l'erreur de raisonnement réelle** qu'un élève de ce niveau commettrait pour arriver là.
 

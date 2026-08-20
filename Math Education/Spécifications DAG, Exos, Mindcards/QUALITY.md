@@ -1,5 +1,109 @@
 # Suivi qualité du contenu
 
+---
+
+## Lot 001 ter — Relecture finale des 69 (20 août 2026)
+
+| | |
+|---|---|
+| Taux d'erreur | **2 / 69 = 2,9 %** (17,4 % → 4,5 % → 2,9 %) |
+| Recalculs | 69 valeurs, 52 égalités de corrigé, 34 comparaisons, 21 QCM avec réfutation de chaque distracteur : **0 désaccord** |
+| Verdict de l'agent | 67 des 69 pouvaient passer en `relu_agent` |
+| **État après correction** | **les 69 sont en `relu_agent`**, prêts pour la relecture humaine |
+
+### Les 2 bloquants : une distinction CM1 / CM2 que j'avais manquée
+
+`EX-C004-E-01` (3/4 de 20) et `EX-C004-M-01` (3/7 de 28) étaient au CM1 avec des fractions **non unitaires**. Le programme est explicite et le contraste est délibéré :
+
+> « au CM1, les fractions acquièrent le statut d'opérateur multiplicatif **pour le cas particulier des fractions unitaires** ; comme **un tiers** de 12 billes ou **un quart** de 100 mètres. »
+> « au CM2, les élèves apprennent à calculer des fractions de quantités comme **deux tiers** de 12 € ou **trois quarts** de 100 mètres. »
+
+« Trois quarts de 20 » est un attendu de **CM2**, pas de CM1.
+
+Corrigés : E-01 devient « un quart de 100 mètres », l'exemple littéral du CM1 ; M-01 devient un problème inverse, « le tiers de son argent vaut 7 €, combien avait-elle ? », qui reste unitaire tout en exigeant de raisonner à l'envers.
+
+**Le contrôle automatique ne pouvait pas les voir** : la borne violée n'est pas le dénominateur mais le **numérateur**, qui doit valoir 1 à ce niveau.
+
+### Cause racine, cinquième occurrence du même mécanisme
+
+`C004.validation_test` valait « Calculer 3/4 de 20 », c'est-à-dire l'énoncé fautif lui-même. Le générateur suivait fidèlement une consigne fausse. C'était déjà le cas de A004, A008, C009 et C012, corrigés un par un aux passes précédentes.
+
+**Sixième contrôle ajouté** à `validate_content.py` : `check_validation_tests` applique le champ numérique du niveau aux 38 tests de positionnement du DAG. Il a immédiatement trouvé `A006` (« Comparer 4 302 et 4 320 » au CE1, plafonné à mille), que j'avais laissé passer en corrigeant seulement les compétences signalées.
+
+Trois tests corrigés : `A003`, `A005`, `A006`.
+
+**Limite connue du contrôle** : il ne détecte pas les nombres écrits **en lettres**. `A005` demandait d'écrire « trois mille deux cent cinq » au CE1 ; seule une lecture humaine l'a vu.
+
+### Défaut systématique n°3 : toujours pas éteint
+
+L'agent relève trois nouvelles occurrences de « corriger l'instance et non la classe », toutes commises le 20 août, c'est-à-dire **le jour même où la règle de processus a été adoptée** : le mot « demi-droite » laissé sur `C005-M-01` alors que `C005-E-01` avait été corrigé pour ce motif, l'orthographe rectifiée appliquée aux énoncés mais pas aux corrigés, et des inversions de progression laissées sur `A007` et `A003`.
+
+C'est le défaut le plus tenace du projet. Il ne se corrige pas par une consigne mais par un contrôle automatique : à ce jour, six contrôles ont été ajoutés, chacun après avoir découvert que le défaut qu'il détecte existait en plusieurs exemplaires.
+
+### Reste à traiter, non bloquant
+
+`EX-C003-M-01` évalue en réalité C026, compétence désormais créée mais toujours sans exercice ; `EX-A007-M-01` et `EX-A003-M-01` ont une progression inversée ; 14 défauts mineurs de formulation.
+
+---
+
+---
+
+## Lot 001 bis — Seconde relecture, 22 exercices modifiés (19-20 août 2026)
+
+| | |
+|---|---|
+| Périmètre | les 22 exercices retouchés après la première relecture, dont 5 entièrement réécrits |
+| Taux d'erreur | **1 / 22 = 4,5 %** (contre 17,4 % au premier passage) |
+| Recalculs | 40 vérifications indépendantes, **0 désaccord** |
+| Champ numérique | conforme sur les 22 |
+| Substitutions | diff champ par champ contre la version d'origine : **aucun résidu** des anciennes valeurs |
+
+Les 12 bloquants du premier lot sont bien corrigés, aucun n'est réapparu, et aucune erreur de calcul n'a été introduite.
+
+### Le bloquant
+
+`EX-C009-E-01` décrivait une situation **impossible** : « Tom a mangé 2/6 d'une tarte. Lisa **en** a mangé 5/6 », le pronom renvoyant à la même tarte, soit 7/6 d'un tout. Le corrigé, lui, parlait de « deux cas », donc de deux tartes. Énoncé et corrigé ne décrivaient pas la même situation.
+
+**Corrigé le 20/08** : les deux touts sont désormais explicitement dissociés, et le corrigé retourne le piège en montrant que 2/6 + 5/6 dépasserait la tarte entière.
+
+### Défaut systématique n°2 : l'exemple de format donne la réponse
+
+Le générateur écrivait « Écris ta réponse sous la forme *X* » en choisissant systématiquement pour *X* **la réponse elle-même**. L'exercice devient vide : l'élève recopie, et rien ne distingue plus celui qui sait de celui qui ne sait pas.
+
+**11 exercices sur les 12** où le gabarit s'appliquait étaient touchés. Le seul épargné était celui que la première relecture avait fait réécrire pour ce motif.
+
+Pire : pendant la rédaction du rapport, **12 nouveaux exercices ont été produits avec le même défaut**. Le gabarit fautif s'est même propagé lors des substitutions de valeurs (« sous la forme 5/7 » est devenu « sous la forme 3/5 »).
+
+**Corrigé le 20/08 sur les 23 exercices concernés**, banque et lots en attente confondus, par un script traitant la classe entière et non les instances signalées. Les exemples sont remplacés par des formes génériques : « numérateur/dénominateur », « d'un entier plus une fraction », « entier < fraction < entier ».
+
+**Contrôle automatique ajouté** à `validate_content.py` : `check_exemple_format` compare l'exemple de format à la réponse, à ses éléments et à son début. Il aurait attrapé les 23 sans intervention humaine.
+
+**Consignes ajoutées** à l'agent `exercise-generator` : règle 3 (l'exemple ne donne jamais la réponse) et règle 4 (une situation doit pouvoir exister, énoncé et corrigé doivent décrire la même chose).
+
+### Défaut systématique n°3 : corriger l'instance et non la classe
+
+C'est le mécanisme le plus coûteux, et il relève du processus, pas du prompt. Trois occurrences constatées sur cette seule passe :
+
+- le défaut « la réponse figure dans l'énoncé » a été corrigé sur l'exercice signalé, et les 11 autres exercices atteints n'ont pas été relus ;
+- une misconception fausse a été remplacée par un texte faible, aussitôt recopié sur un second exercice, créant un défaut là où il n'y en avait pas ;
+- la suppression d'une proposition hors champ a rempli au passage un champ `misconception` qui valait `null`, produisant une régression collatérale.
+
+**Règle de processus adoptée :** tout défaut relevé sur un exercice doit d'abord être requalifié en question, « ce défaut existe-t-il ailleurs ? », et balayé sur tout le fichier **par script** avant qu'une seule correction ne soit écrite.
+
+### Reste à traiter
+
+Défauts importants et mineurs identifiés mais **non corrigés** à ce stade :
+
+| Exercice | Défaut | Gravité |
+|---|---|---|
+| EX-C005-D-01, EX-C005-E-01 | compétence intrinsèquement graphique, sans illustration (`image: null`) | important |
+| EX-C010-D/E/M | progression non croissante : la maîtrise est la plus rapide des trois | important |
+| EX-A004, EX-A005 (4 exercices) | orthographe non rectifiée : « quatre cent sept » au lieu de « quatre-cent-sept », alors qu'Eduscol relie tous les éléments | mineur |
+| EX-C006-M-01 | `misconception` non nulle sur la bonne réponse, seul cas du fichier ; l'app l'affiche à un élève qui a juste | mineur |
+| EX-A006-M-01, EX-C010-D-01, EX-C010-M-01, EX-A001-M-01 | misconceptions peu plausibles ou charge de lecture excessive | mineur |
+
+---
+
 > Journal des relectures, du taux d'erreur par lot et des ajustements de prompt.
 > Exigé par la roadmap §1.4 : « Si le taux d'erreur d'un lot dépasse ~5 %, revoir le prompt de génération avant de continuer. »
 
