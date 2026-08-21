@@ -1,0 +1,32 @@
+{
+  "name": "sopra-webapp",
+  "version": "1.0.0",
+  "private": true,
+  "description": "PI Planning Assistant — SAFe backlog preparation, from URD import to Jira export.",
+  "license": "UNLICENSED",
+  "type": "commonjs",
+  "engines": {
+    "node": ">=18.17"
+  },
+  "scripts": {
+    "start": "node server/index.js",
+    "dev": "node --watch server/index.js",
+    "seed": "node server/seed.js --reset",
+    "build:design": "node build/build.mjs",
+    "test": "node test/pipeline.mjs",
+    "test:e2e": "node test/e2e.mjs"
+  },
+  "dependencies": {
+    "@anthropic-ai/sdk": "^0.120.0",
+    "better-sqlite3": "^11.7.0",
+    "cookie-parser": "^1.4.7",
+    "exceljs": "^4.4.0",
+    "express": "^5.1.0",
+    "mammoth": "^1.9.0",
+    "multer": "^2.0.0",
+    "pdf-parse": "^1.1.1"
+  },
+  "devDependencies": {
+    "puppeteer-core": "^25.8.0"
+  }
+}

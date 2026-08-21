@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>09 · Story Clusters — PI Planning Assistant</title>
+<meta name="description" content="Embedding-based grouping · duplicates flagged">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/css/design.css">
+</head>
+<body class="screen-page">
+<div class="stage">
+  <div class="frame">
+
+<div style="display:flex;height:900px;background:#FAFAF8;color:#0F172A">
+<div style="width:264px;flex:none;background:#F2F0EA;border-right:1px solid #E7E5E4;display:flex;flex-direction:column;font-family:Inter,system-ui,sans-serif;height:100%;box-sizing:border-box">
+<a href="../index.html" style="padding:20px 18px 14px;display:flex;align-items:center;gap:10px;text-decoration:none" title="All screens">
+<div style="width:28px;height:28px;flex:none;border-radius:9px;background:#6366F1;display:flex;align-items:center;justify-content:center"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round"><path d="M12 3v18M4 8h16M7 14h10"></path></svg></div>
+<div style="font-family:Fraunces,serif;font-size:15.5px;font-weight:500;line-height:1.2;letter-spacing:-.2px;color:#0F172A">PI Planning<br>Assistant</div>
+</a>
+
+<div style="padding:0 12px 14px">
+<a href="14-trains.html" style="display:flex;align-items:center;gap:10px;padding:9px 10px;background:#FFFFFF;border:1px solid #E7E5E4;border-radius:12px;box-shadow:0 1px 2px rgba(15,23,42,.05);text-decoration:none">
+<span style="width:3px;height:26px;flex:none;border-radius:2px;background:#475569"></span>
+<div style="min-width:0;flex:1">
+<div style="font-size:10.5px;font-weight:600;letter-spacing:.07em;text-transform:uppercase;color:#94A3B8">Train</div>
+<div style="font-size:13px;font-weight:600;color:#0F172A;line-height:1.3;margin-top:1px">Customer Commerce ART</div>
+</div>
+<svg style="flex:none" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#94A3B8" stroke-width="2"><path d="M6 9l6 6 6-6"></path></svg>
+</a>
+</div>
+
+<div style="padding:0 12px;display:flex;flex-direction:column;gap:1px">
+<div style="font-size:10.5px;font-weight:600;letter-spacing:.07em;text-transform:uppercase;color:#94A3B8;padding:6px 8px 6px">Train level</div>
+<a href="02-train-overview.html" style="display:flex;align-items:center;gap:10px;padding:7px 10px;border-radius:10px;font-size:13.5px;font-weight:500;color:#334155;border:1px solid transparent;text-decoration:none"><span style="width:7px;height:7px;border-radius:99px;flex:none;margin:0 4px;background:#CBD5E1"></span>Overview<span style="margin-left:auto;font-size:11px;font-weight:600;color:#94A3B8"></span></a>
+<a href="03-projects.html" style="display:flex;align-items:center;gap:10px;padding:7px 10px;border-radius:10px;font-size:13.5px;font-weight:500;color:#334155;border:1px solid transparent;text-decoration:none"><span style="width:7px;height:7px;border-radius:99px;flex:none;margin:0 4px;background:#CBD5E1"></span>Projects<span style="margin-left:auto;font-size:11px;font-weight:600;color:#94A3B8">3</span></a>
+<a href="17-roadmap.html" style="display:flex;align-items:center;gap:10px;padding:7px 10px;border-radius:10px;font-size:13.5px;font-weight:500;color:#334155;border:1px solid transparent;text-decoration:none"><span style="width:11px;height:9px;flex:none;margin:0 2px;border-radius:1px;background:linear-gradient(#CBD5E1 0 2px,transparent 2px 3.5px,#CBD5E1 3.5px 5.5px,transparent 5.5px 7px,#CBD5E1 7px 9px)"></span>Roadmap<span style="margin-left:auto;font-size:11px;font-weight:600;color:#94A3B8"></span></a>
+<a href="02-train-overview.html" style="display:flex;align-items:center;gap:10px;padding:7px 10px;border-radius:10px;font-size:13.5px;font-weight:500;color:#334155;border:1px solid transparent;text-decoration:none"><span style="width:7px;height:7px;border-radius:99px;flex:none;margin:0 4px;background:#CBD5E1"></span>Shared Requirements<span style="margin-left:auto;font-size:11px;font-weight:600;color:#94A3B8">12</span></a>
+<a href="10-dependencies.html" style="display:flex;align-items:center;gap:10px;padding:7px 10px;border-radius:10px;font-size:13.5px;font-weight:500;color:#334155;border:1px solid transparent;text-decoration:none"><span style="width:7px;height:7px;border-radius:99px;flex:none;margin:0 4px;background:#CBD5E1"></span>Cross-project Deps<span style="margin-left:auto;font-size:11px;font-weight:600;color:#B91C1C;background:rgba(239,68,68,.1);padding:2px 7px;border-radius:99px">5</span></a>
+</div>
+
+<div style="padding:0 12px;display:flex;flex-direction:column;gap:1px">
+<div style="display:flex;align-items:baseline;gap:6px;padding:14px 8px 6px"><span style="font-size:10.5px;font-weight:600;letter-spacing:.07em;text-transform:uppercase;color:#94A3B8">Project</span><span style="font-size:11.5px;font-weight:600;color:#334155;line-height:1.3">Web Storefront</span></div>
+<a href="04-urd-import.html" style="display:flex;align-items:center;gap:10px;padding:7px 10px;border-radius:10px;font-size:13.5px;font-weight:500;color:#334155;border:1px solid transparent;text-decoration:none"><span style="width:7px;height:7px;border-radius:99px;flex:none;margin:0 4px;background:#10B981"></span>URD Import<span style="margin-left:auto;font-size:11px;font-weight:600;color:#94A3B8"></span></a>
+<a href="05-requirements.html" style="display:flex;align-items:center;gap:10px;padding:7px 10px;border-radius:10px;font-size:13.5px;font-weight:500;color:#334155;border:1px solid transparent;text-decoration:none"><span style="width:7px;height:7px;border-radius:99px;flex:none;margin:0 4px;background:#10B981"></span>Requirements<span style="margin-left:auto;font-size:11px;font-weight:600;color:#94A3B8">47</span></a>
+<a href="06-epics.html" style="display:flex;align-items:center;gap:10px;padding:7px 10px;border-radius:10px;font-size:13.5px;font-weight:500;color:#334155;border:1px solid transparent;text-decoration:none"><span style="width:7px;height:7px;border-radius:99px;flex:none;margin:0 4px;background:#10B981"></span>Epics<span style="margin-left:auto;font-size:11px;font-weight:600;color:#94A3B8">4</span></a>
+<a href="16-features.html" style="display:flex;align-items:center;gap:10px;padding:7px 10px;border-radius:10px;font-size:13.5px;font-weight:500;color:#334155;border:1px solid transparent;text-decoration:none"><span style="width:7px;height:7px;border-radius:99px;flex:none;margin:0 4px;background:#10B981"></span>Features<span style="margin-left:auto;font-size:11px;font-weight:600;color:#94A3B8">9</span></a>
+<a href="07-user-stories.html" style="display:flex;align-items:center;gap:10px;padding:7px 10px;border-radius:10px;font-size:13.5px;font-weight:500;color:#334155;border:1px solid transparent;text-decoration:none"><span style="width:7px;height:7px;border-radius:99px;flex:none;margin:0 4px;background:#10B981"></span>User Stories<span style="margin-left:auto;font-size:11px;font-weight:600;color:#94A3B8">23</span></a>
+<a href="08-tasks.html" style="display:flex;align-items:center;gap:10px;padding:7px 10px;border-radius:10px;font-size:13.5px;font-weight:500;color:#334155;border:1px solid transparent;text-decoration:none"><span style="width:7px;height:7px;border-radius:99px;flex:none;margin:0 4px;background:#10B981"></span>Tasks<span style="margin-left:auto;font-size:11px;font-weight:600;color:#94A3B8">58</span></a>
+<a href="09-clusters.html" style="display:flex;align-items:center;gap:10px;padding:7px 10px;border-radius:10px;font-size:13.5px;font-weight:600;color:#0F172A;background:#FFFFFF;border:1px solid #E7E5E4;box-shadow:0 1px 2px rgba(15,23,42,.05);text-decoration:none"><span style="width:7px;height:7px;border-radius:99px;flex:none;margin:0 4px;background:#6366F1"></span>Clusters<span style="margin-left:auto;font-size:11px;font-weight:600;color:#4F46E5">6</span></a>
+<a href="10-dependencies.html" style="display:flex;align-items:center;gap:10px;padding:7px 10px;border-radius:10px;font-size:13.5px;font-weight:500;color:#334155;border:1px solid transparent;text-decoration:none"><span style="width:7px;height:7px;border-radius:99px;flex:none;margin:0 4px;background:#CBD5E1"></span>Dependencies<span style="margin-left:auto;font-size:11px;font-weight:600;color:#B91C1C;background:rgba(239,68,68,.1);padding:2px 7px;border-radius:99px">3</span></a>
+<a href="11-prioritization.html" style="display:flex;align-items:center;gap:10px;padding:7px 10px;border-radius:10px;font-size:13.5px;font-weight:500;color:#334155;border:1px solid transparent;text-decoration:none"><span style="width:7px;height:7px;border-radius:99px;flex:none;margin:0 4px;background:#CBD5E1"></span>Prioritization<span style="margin-left:auto;font-size:11px;font-weight:600;color:#94A3B8"></span></a>
+<a href="12-export.html" style="display:flex;align-items:center;gap:10px;padding:7px 10px;border-radius:10px;font-size:13.5px;font-weight:500;color:#94A3B8;border:1px solid transparent;text-decoration:none"><span style="width:7px;height:7px;border-radius:99px;flex:none;margin:0 4px;background:#E2E8F0"></span>Export<span style="margin-left:auto;font-size:11px;font-weight:600;color:#94A3B8"></span></a>
+</div>
+
+<div style="margin-top:auto;padding:12px 16px 16px;border-top:1px solid #E7E5E4;display:flex;align-items:center;gap:10px">
+<div style="width:32px;height:32px;flex:none;border-radius:99px;display:flex;align-items:center;justify-content:center;font-size:12.5px;font-weight:600;background:#DDD6FE;color:#4F46E5">LM</div>
+<div style="min-width:0">
+<div style="font-size:13px;font-weight:600;line-height:1.3;color:#0F172A">Lea Moore</div>
+<div style="display:inline-flex;align-items:center;gap:5px;margin-top:3px;font-size:11px;font-weight:600;padding:2px 7px;border-radius:99px;background:rgba(99,102,241,.1);color:#4F46E5">Product Owner</div>
+</div>
+<svg style="margin-left:auto;flex:none" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#94A3B8" stroke-width="2"><path d="M6 9l6 6 6-6"></path></svg>
+</div>
+</div>
+<div style="flex:1;min-width:0;display:flex;flex-direction:column">
+<header style="height:60px;flex:none;border-bottom:1px solid #E7E5E4;background:#FAFAF8;display:flex;align-items:center;gap:20px;padding:0 24px;font-family:Inter,system-ui,sans-serif;box-sizing:border-box">
+<div style="display:flex;align-items:center;gap:8px;font-size:13.5px;color:#64748B">
+<a href="14-trains.html" style="display:inline-flex;align-items:center;gap:8px;padding:5px 10px;border:1px solid #E7E5E4;background:#FFFFFF;border-radius:10px;font-size:13px;font-weight:600;color:#0F172A;text-decoration:none"><span style="width:3px;height:14px;border-radius:2px;background:#475569"></span>Customer Commerce ART<svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="#94A3B8" stroke-width="2"><path d="M6 9l6 6 6-6"></path></svg></a>
+<span style="color:#CBD5E1">▸</span><a href="03-projects.html" style="display:inline-flex;align-items:center;gap:7px;padding:5px 10px;border:1px solid #E7E5E4;background:#FFFFFF;border-radius:10px;font-size:13px;font-weight:600;color:#0F172A;text-decoration:none">Web Storefront<svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="#94A3B8" stroke-width="2"><path d="M6 9l6 6 6-6"></path></svg></a>
+<span style="color:#CBD5E1">▸</span><span style="color:#0F172A;font-weight:500">Clusters</span>
+</div>
+<div style="flex:1;max-width:380px;margin:0 auto;display:flex;align-items:center;gap:9px;height:36px;padding:0 12px;background:#FFFFFF;border:1px solid #E7E5E4;border-radius:12px;box-sizing:border-box">
+<svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#94A3B8" stroke-width="2"><circle cx="11" cy="11" r="7"></circle><path d="M20 20l-3.5-3.5"></path></svg>
+<span style="font-size:13.5px;color:#94A3B8;white-space:nowrap;overflow:hidden">Search epics, features, stories…</span>
+<span style="margin-left:auto;font-size:11.5px;color:#CBD5E1;border:1px solid #E7E5E4;border-radius:5px;padding:1px 5px">⌘K</span>
+</div>
+<div style="display:flex;align-items:center;gap:12px;margin-left:auto">
+<svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="#64748B" stroke-width="1.8"><path d="M18 8a6 6 0 1 0-12 0c0 7-3 8-3 8h18s-3-1-3-8"></path><path d="M13.7 21a2 2 0 0 1-3.4 0"></path></svg>
+<div style="width:30px;height:30px;border-radius:99px;display:flex;align-items:center;justify-content:center;font-size:12px;font-weight:600;background:#DDD6FE;color:#4F46E5">LM</div>
+</div>
+</header>
+<div style="flex:none;padding:16px 24px 14px;background:#FAFAF8;border-bottom:1px solid #E7E5E4;font-family:Inter,system-ui,sans-serif;box-sizing:border-box">
+<div style="display:flex;align-items:flex-start">
+<a href="04-urd-import.html" style="flex:1;display:flex;flex-direction:column;align-items:center;gap:7px;text-decoration:none">
+<div style="display:flex;align-items:center;width:100%">
+<div style="flex:1;height:2px;background:transparent"></div>
+<div style="width:22px;height:22px;flex:none;border-radius:99px;background:#10B981;display:flex;align-items:center;justify-content:center"><span style="width:9px;height:5px;border-left:2px solid #fff;border-bottom:2px solid #fff;transform:rotate(-45deg);margin-top:-3px"></span></div>
+<div style="flex:1;height:2px;background:#10B981"></div>
+</div>
+<div style="font-size:12px;font-weight:600;color:#0F172A">Import</div>
+</a>
+<a href="05-requirements.html" style="flex:1;display:flex;flex-direction:column;align-items:center;gap:7px;text-decoration:none">
+<div style="display:flex;align-items:center;width:100%">
+<div style="flex:1;height:2px;background:#10B981"></div>
+<div style="width:22px;height:22px;flex:none;border-radius:99px;background:#10B981;display:flex;align-items:center;justify-content:center"><span style="width:9px;height:5px;border-left:2px solid #fff;border-bottom:2px solid #fff;transform:rotate(-45deg);margin-top:-3px"></span></div>
+<div style="flex:1;height:2px;background:#10B981"></div>
+</div>
+<div style="font-size:12px;font-weight:600;color:#0F172A">Extraction</div>
+</a>
+<a href="06-epics.html" style="flex:1;display:flex;flex-direction:column;align-items:center;gap:7px;text-decoration:none">
+<div style="display:flex;align-items:center;width:100%">
+<div style="flex:1;height:2px;background:#10B981"></div>
+<div style="width:22px;height:22px;flex:none;border-radius:99px;background:#10B981;display:flex;align-items:center;justify-content:center"><span style="width:9px;height:5px;border-left:2px solid #fff;border-bottom:2px solid #fff;transform:rotate(-45deg);margin-top:-3px"></span></div>
+<div style="flex:1;height:2px;background:#10B981"></div>
+</div>
+<div style="font-size:12px;font-weight:600;color:#0F172A">Epics</div>
+</a>
+<a href="16-features.html" style="flex:1;display:flex;flex-direction:column;align-items:center;gap:7px;text-decoration:none">
+<div style="display:flex;align-items:center;width:100%">
+<div style="flex:1;height:2px;background:#10B981"></div>
+<div style="width:22px;height:22px;flex:none;border-radius:99px;background:#10B981;display:flex;align-items:center;justify-content:center"><span style="width:9px;height:5px;border-left:2px solid #fff;border-bottom:2px solid #fff;transform:rotate(-45deg);margin-top:-3px"></span></div>
+<div style="flex:1;height:2px;background:#10B981"></div>
+</div>
+<div style="font-size:12px;font-weight:600;color:#0F172A">Features</div>
+</a>
+<a href="07-user-stories.html" style="flex:1;display:flex;flex-direction:column;align-items:center;gap:7px;text-decoration:none">
+<div style="display:flex;align-items:center;width:100%">
+<div style="flex:1;height:2px;background:#10B981"></div>
+<div style="width:22px;height:22px;flex:none;border-radius:99px;background:#10B981;display:flex;align-items:center;justify-content:center"><span style="width:9px;height:5px;border-left:2px solid #fff;border-bottom:2px solid #fff;transform:rotate(-45deg);margin-top:-3px"></span></div>
+<div style="flex:1;height:2px;background:#10B981"></div>
+</div>
+<div style="font-size:12px;font-weight:600;color:#0F172A">Stories</div>
+</a>
+<a href="08-tasks.html" style="flex:1;display:flex;flex-direction:column;align-items:center;gap:7px;text-decoration:none">
+<div style="display:flex;align-items:center;width:100%">
+<div style="flex:1;height:2px;background:#10B981"></div>
+<div style="width:22px;height:22px;flex:none;border-radius:99px;background:#10B981;display:flex;align-items:center;justify-content:center"><span style="width:9px;height:5px;border-left:2px solid #fff;border-bottom:2px solid #fff;transform:rotate(-45deg);margin-top:-3px"></span></div>
+<div style="flex:1;height:2px;background:#10B981"></div>
+</div>
+<div style="font-size:12px;font-weight:600;color:#0F172A">Tasks</div>
+</a>
+<a href="09-clusters.html" style="flex:1;display:flex;flex-direction:column;align-items:center;gap:7px;text-decoration:none">
+<div style="display:flex;align-items:center;width:100%">
+<div style="flex:1;height:2px;background:#10B981"></div>
+<div style="width:22px;height:22px;flex:none;border-radius:99px;background:#6366F1;box-shadow:0 0 0 4px rgba(99,102,241,.16);display:flex;align-items:center;justify-content:center"><span style="width:7px;height:7px;border-radius:99px;background:#fff"></span></div>
+<div style="flex:1;height:2px;background:#E2E8F0"></div>
+</div>
+<div style="font-size:12px;font-weight:600;color:#4F46E5">Clusters</div>
+</a>
+<a href="10-dependencies.html" style="flex:1;display:flex;flex-direction:column;align-items:center;gap:7px;text-decoration:none">
+<div style="display:flex;align-items:center;width:100%">
+<div style="flex:1;height:2px;background:#E2E8F0"></div>
+<div style="width:22px;height:22px;flex:none;border-radius:99px;background:#FAFAF8;border:2px solid #E2E8F0;box-sizing:border-box"><span style="display:none"></span></div>
+<div style="flex:1;height:2px;background:#E2E8F0"></div>
+</div>
+<div style="font-size:12px;font-weight:500;color:#94A3B8">Dependencies</div>
+</a>
+<a href="11-prioritization.html" style="flex:1;display:flex;flex-direction:column;align-items:center;gap:7px;text-decoration:none">
+<div style="display:flex;align-items:center;width:100%">
+<div style="flex:1;height:2px;background:#E2E8F0"></div>
+<div style="width:22px;height:22px;flex:none;border-radius:99px;background:#FAFAF8;border:2px solid #E2E8F0;box-sizing:border-box"><span style="display:none"></span></div>
+<div style="flex:1;height:2px;background:#E2E8F0"></div>
+</div>
+<div style="font-size:12px;font-weight:500;color:#94A3B8">Prioritization</div>
+</a>
+<a href="17-roadmap.html" style="flex:1;display:flex;flex-direction:column;align-items:center;gap:7px;text-decoration:none">
+<div style="display:flex;align-items:center;width:100%">
+<div style="flex:1;height:2px;background:#E2E8F0"></div>
+<div style="width:22px;height:22px;flex:none;border-radius:99px;background:#FAFAF8;border:2px solid #E2E8F0;box-sizing:border-box"><span style="display:none"></span></div>
+<div style="flex:1;height:2px;background:#E2E8F0"></div>
+</div>
+<div style="font-size:12px;font-weight:500;color:#94A3B8">Roadmap</div>
+</a>
+<a href="12-export.html" style="flex:1;display:flex;flex-direction:column;align-items:center;gap:7px;text-decoration:none">
+<div style="display:flex;align-items:center;width:100%">
+<div style="flex:1;height:2px;background:#E2E8F0"></div>
+<div style="width:22px;height:22px;flex:none;border-radius:99px;background:#FAFAF8;border:2px solid #E2E8F0;box-sizing:border-box"><span style="display:none"></span></div>
+<div style="flex:1;height:2px;background:transparent"></div>
+</div>
+<div style="font-size:12px;font-weight:500;color:#94A3B8">Review</div>
+</a>
+</div>
+</div>
+<main style="flex:1;overflow:hidden;padding:26px 24px">
+<div style="display:flex;align-items:flex-end;margin-bottom:16px">
+<div><h1 style="margin:0;font-family:Fraunces,serif;font-size:34px;font-weight:500;letter-spacing:-.4px">Story Clusters</h1><p style="margin:7px 0 0;font-size:13.5px;color:#64748B">6 clusters formed by semantic similarity · drag a story from one cluster to another</p></div>
+<div style="margin-left:auto;display:flex;gap:10px">
+<span style="display:inline-flex;align-items:center;gap:6px;height:38px;padding:0 13px;border-radius:12px;font-size:12.5px;font-weight:600;color:#B45309;background:rgba(245,158,11,.1)"><span style="width:6px;height:6px;border-radius:99px;background:#F59E0B"></span>2 potential duplicates</span>
+<button class="hv-4" style="height:38px;padding:0 18px;border-radius:12px;border:1px solid #6366F1;background:#6366F1;color:#fff;font-family:Inter;font-size:14px;font-weight:600;cursor:pointer">Validate clusters</button>
+</div>
+</div>
+<div style="display:flex;align-items:center;gap:8px;font-size:11.5px;color:#64748B;margin-bottom:16px"><span style="display:inline-flex;align-items:center;gap:5px;font-weight:600;color:#4F46E5;background:rgba(99,102,241,.1);padding:3px 8px;border-radius:99px"><svg width="11" height="11" viewBox="0 0 24 24" fill="#6366F1"><path d="M12 2l1.9 5.6L19.5 9l-5.6 1.9L12 16.5l-1.9-5.6L4.5 9l5.6-1.4z"></path></svg>Agent Clustering</span>Grouping computed on the embeddings of titles and acceptance criteria — similarity threshold 0.78.</div>
+
+<div style="display:grid;grid-template-columns:repeat(4,1fr);gap:14px;align-items:start">
+
+<div style="background:#FFFFFF;border:1px solid #E7E5E4;border-radius:16px;padding:16px">
+<div style="display:flex;align-items:center;gap:8px;margin-bottom:12px"><h3 style="margin:0;font-family:Fraunces,serif;font-size:19px;font-weight:500">Authentication</h3><span style="margin-left:auto;font-size:11.5px;font-weight:600;color:#64748B;background:#F1F5F9;padding:2px 8px;border-radius:99px">5</span></div>
+<div style="font-size:11.5px;color:#64748B;margin-bottom:12px">Average similarity <span style="color:#0F172A;font-weight:600">0.91</span></div>
+<div style="display:flex;flex-direction:column;gap:9px">
+<div style="border:1px solid #E7E5E4;border-radius:12px;padding:11px 12px"><div style="display:flex;align-items:center;gap:7px;margin-bottom:5px"><span style="width:6px;height:6px;border-radius:99px;background:#10B981"></span><span style="font-size:11px;color:#94A3B8;font-variant-numeric:tabular-nums">US-01</span><span style="margin-left:auto;font-size:11px;font-weight:600;color:#4F46E5">0.94</span></div><div style="font-size:13px;color:#334155;line-height:1.4">Create an account</div></div>
+<div style="border:1px solid #E7E5E4;border-radius:12px;padding:11px 12px"><div style="display:flex;align-items:center;gap:7px;margin-bottom:5px"><span style="width:6px;height:6px;border-radius:99px;background:#F59E0B"></span><span style="font-size:11px;color:#94A3B8;font-variant-numeric:tabular-nums">US-02</span><span style="margin-left:auto;font-size:11px;font-weight:600;color:#4F46E5">0.93</span></div><div style="font-size:13px;color:#334155;line-height:1.4">Sign in with my email</div></div>
+<div style="border:1px solid #F59E0B;background:#FFFCF5;border-radius:12px;padding:11px 12px"><div style="display:flex;align-items:center;gap:7px;margin-bottom:5px"><span style="width:6px;height:6px;border-radius:99px;background:#F59E0B"></span><span style="font-size:11px;color:#94A3B8;font-variant-numeric:tabular-nums">US-03</span><span style="margin-left:auto;font-size:11px;font-weight:600;color:#B45309">duplicate 0.96</span></div><div style="font-size:13px;color:#334155;line-height:1.4">Reset my password</div><div style="font-size:11px;color:#B45309;margin-top:7px">Close to US-04 — merge?</div></div>
+<div style="border:1px solid #F59E0B;background:#FFFCF5;border-radius:12px;padding:11px 12px"><div style="display:flex;align-items:center;gap:7px;margin-bottom:5px"><span style="width:6px;height:6px;border-radius:99px;background:#F59E0B"></span><span style="font-size:11px;color:#94A3B8;font-variant-numeric:tabular-nums">US-04</span><span style="margin-left:auto;font-size:11px;font-weight:600;color:#B45309">duplicate 0.96</span></div><div style="font-size:13px;color:#334155;line-height:1.4">Forgot password</div><div style="display:flex;gap:7px;margin-top:9px"><button style="height:26px;padding:0 10px;border-radius:8px;border:1px solid #E7E5E4;background:#FFFFFF;color:#64748B;font-family:Inter;font-size:12px;font-weight:600;cursor:pointer">Dismiss</button><button style="height:26px;padding:0 10px;border-radius:8px;border:1px solid #6366F1;background:#6366F1;color:#fff;font-family:Inter;font-size:12px;font-weight:600;cursor:pointer">Merge</button></div></div>
+<div style="border:1px solid #E7E5E4;border-radius:12px;padding:11px 12px;opacity:.62"><div style="display:flex;align-items:center;gap:7px;margin-bottom:5px"><span style="width:6px;height:6px;border-radius:99px;background:#94A3B8"></span><span style="font-size:11px;color:#94A3B8;font-variant-numeric:tabular-nums">US-05</span></div><div style="font-size:13px;color:#64748B;line-height:1.4">Sign in with an SMS code</div></div>
+</div>
+</div>
+
+<div style="background:#FFFFFF;border:1px solid #E7E5E4;border-radius:16px;padding:16px">
+<div style="display:flex;align-items:center;gap:8px;margin-bottom:12px"><h3 style="margin:0;font-family:Fraunces,serif;font-size:19px;font-weight:500">Orders</h3><span style="margin-left:auto;font-size:11.5px;font-weight:600;color:#64748B;background:#F1F5F9;padding:2px 8px;border-radius:99px">6</span></div>
+<div style="font-size:11.5px;color:#64748B;margin-bottom:12px">Average similarity <span style="color:#0F172A;font-weight:600">0.86</span></div>
+<div style="display:flex;flex-direction:column;gap:9px">
+<div style="border:1px solid #E7E5E4;border-radius:12px;padding:11px 12px"><div style="display:flex;align-items:center;gap:7px;margin-bottom:5px"><span style="width:6px;height:6px;border-radius:99px;background:#F59E0B"></span><span style="font-size:11px;color:#94A3B8;font-variant-numeric:tabular-nums">US-07</span><span style="margin-left:auto;font-size:11px;font-weight:600;color:#4F46E5">0.89</span></div><div style="font-size:13px;color:#334155;line-height:1.4">Place an order</div></div>
+<div style="border:1px solid #E7E5E4;border-radius:12px;padding:11px 12px"><div style="display:flex;align-items:center;gap:7px;margin-bottom:5px"><span style="width:6px;height:6px;border-radius:99px;background:#10B981"></span><span style="font-size:11px;color:#94A3B8;font-variant-numeric:tabular-nums">US-08</span><span style="margin-left:auto;font-size:11px;font-weight:600;color:#4F46E5">0.87</span></div><div style="font-size:13px;color:#334155;line-height:1.4">Cancel an order</div></div>
+<div style="border:1px solid #E7E5E4;border-radius:12px;padding:11px 12px"><div style="display:flex;align-items:center;gap:7px;margin-bottom:5px"><span style="width:6px;height:6px;border-radius:99px;background:#10B981"></span><span style="font-size:11px;color:#94A3B8;font-variant-numeric:tabular-nums">US-09</span><span style="margin-left:auto;font-size:11px;font-weight:600;color:#4F46E5">0.84</span></div><div style="font-size:13px;color:#334155;line-height:1.4">Track my delivery</div></div>
+<div style="border:1px dashed #C7D2FE;background:#EEF2FF;border-radius:12px;padding:11px 12px;font-size:12px;color:#4F46E5;text-align:center">Drop a story here</div>
+</div>
+</div>
+
+<div style="background:#FFFFFF;border:1px solid #E7E5E4;border-radius:16px;padding:16px">
+<div style="display:flex;align-items:center;gap:8px;margin-bottom:12px"><h3 style="margin:0;font-family:Fraunces,serif;font-size:19px;font-weight:500">Customer profile</h3><span style="margin-left:auto;font-size:11.5px;font-weight:600;color:#64748B;background:#F1F5F9;padding:2px 8px;border-radius:99px">4</span></div>
+<div style="font-size:11.5px;color:#64748B;margin-bottom:12px">Average similarity <span style="color:#0F172A;font-weight:600">0.82</span></div>
+<div style="display:flex;flex-direction:column;gap:9px">
+<div style="border:1px solid #E7E5E4;border-radius:12px;padding:11px 12px"><div style="display:flex;align-items:center;gap:7px;margin-bottom:5px"><span style="width:6px;height:6px;border-radius:99px;background:#10B981"></span><span style="font-size:11px;color:#94A3B8;font-variant-numeric:tabular-nums">US-13</span><span style="margin-left:auto;font-size:11px;font-weight:600;color:#4F46E5">0.85</span></div><div style="font-size:13px;color:#334155;line-height:1.4">Edit my personal information</div></div>
+<div style="border:1px solid #E7E5E4;border-radius:12px;padding:11px 12px"><div style="display:flex;align-items:center;gap:7px;margin-bottom:5px"><span style="width:6px;height:6px;border-radius:99px;background:#F59E0B"></span><span style="font-size:11px;color:#94A3B8;font-variant-numeric:tabular-nums">US-14</span><span style="margin-left:auto;font-size:11px;font-weight:600;color:#4F46E5">0.81</span></div><div style="font-size:13px;color:#334155;line-height:1.4">Add a delivery address</div></div>
+<div style="border:1px solid #E7E5E4;border-radius:12px;padding:11px 12px"><div style="display:flex;align-items:center;gap:7px;margin-bottom:5px"><span style="width:6px;height:6px;border-radius:99px;background:#10B981"></span><span style="font-size:11px;color:#94A3B8;font-variant-numeric:tabular-nums">US-15</span><span style="margin-left:auto;font-size:11px;font-weight:600;color:#4F46E5">0.80</span></div><div style="font-size:13px;color:#334155;line-height:1.4">Manage my GDPR consents</div></div>
+</div>
+</div>
+
+<div style="background:#FFFFFF;border:1px solid #E7E5E4;border-radius:16px;padding:16px">
+<div style="display:flex;align-items:center;gap:8px;margin-bottom:12px"><h3 style="margin:0;font-family:Fraunces,serif;font-size:19px;font-weight:500">Unclustered</h3><span style="margin-left:auto;font-size:11.5px;font-weight:600;color:#64748B;background:#F1F5F9;padding:2px 8px;border-radius:99px">3</span></div>
+<div style="font-size:11.5px;color:#64748B;margin-bottom:12px">Below the similarity threshold</div>
+<div style="display:flex;flex-direction:column;gap:9px">
+<div style="border:1px solid #E7E5E4;border-radius:12px;padding:11px 12px"><div style="display:flex;align-items:center;gap:7px;margin-bottom:5px"><span style="width:6px;height:6px;border-radius:99px;background:#F59E0B"></span><span style="font-size:11px;color:#94A3B8;font-variant-numeric:tabular-nums">US-19</span><span style="margin-left:auto;font-size:11px;font-weight:600;color:#94A3B8">0.61</span></div><div style="font-size:13px;color:#334155;line-height:1.4">Read the FAQ from my account</div></div>
+<div style="border:1px solid #E7E5E4;border-radius:12px;padding:11px 12px"><div style="display:flex;align-items:center;gap:7px;margin-bottom:5px"><span style="width:6px;height:6px;border-radius:99px;background:#F59E0B"></span><span style="font-size:11px;color:#94A3B8;font-variant-numeric:tabular-nums">US-21</span><span style="margin-left:auto;font-size:11px;font-weight:600;color:#94A3B8">0.58</span></div><div style="font-size:13px;color:#334155;line-height:1.4">Export my personal data</div></div>
+<div style="border:1px solid #E7E5E4;border-radius:12px;padding:11px 12px"><div style="display:flex;align-items:center;gap:7px;margin-bottom:5px"><span style="width:6px;height:6px;border-radius:99px;background:#F59E0B"></span><span style="font-size:11px;color:#94A3B8;font-variant-numeric:tabular-nums">US-23</span><span style="margin-left:auto;font-size:11px;font-weight:600;color:#94A3B8">0.55</span></div><div style="font-size:13px;color:#334155;line-height:1.4">Get a delay notification</div></div>
+</div>
+</div>
+
+</div>
+</main>
+</div>
+</div>
+
+  </div>
+</div>
+<nav class="chrome" aria-label="Screen navigation">
+  <a class="chrome-btn" href="../index.html" title="All screens (G)">All screens</a>
+  <span class="chrome-sep"></span>
+  <a class="chrome-btn" href="08-tasks.html" title="Tasks Review">←</a>
+  <span class="chrome-label">09 · Story Clusters</span>
+  <a class="chrome-btn" href="10-dependencies.html" title="Dependencies">→</a>
+  <span class="chrome-sep"></span>
+  <button class="chrome-btn" type="button" data-zoom-toggle>Fit</button>
+</nav>
+<script src="../assets/js/app.js"></script>
+</body>
+</html>
