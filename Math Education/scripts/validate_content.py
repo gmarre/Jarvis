@@ -22,6 +22,7 @@ faire (competence sans exercice, sans carte mentale, contenu non relu).
 from __future__ import annotations
 
 import json
+import re
 import sys
 from pathlib import Path
 
@@ -229,6 +230,249 @@ def check_dag(dag: dict, exercises: dict | None, mindmaps: dict | None) -> None:
             )
 
 
+# ---------------------------------------------------------------------------
+#  Controle du champ numerique par niveau
+# ---------------------------------------------------------------------------
+# Le programme officiel borne explicitement les nombres manipulables a chaque
+# niveau. Un exercice mathematiquement juste mais hors de ces bornes est
+# inutilisable pour l'eleve auquel il est destine. Ce controle a ete ajoute
+# apres la relecture du lot 001, ou 12 exercices sur 69 (17,4 %) etaient hors
+# champ sans qu'aucun outil ne le detecte. Voir QUALITY.md.
+
+# Plus grand entier manipulable. None = pas de borne a ce niveau.
+#   "Les connaissances et les savoir-faire attendus concernent les nombres
+#    entiers jusqu'a cent."            (cycle 2, CP)
+#   "... les nombres jusqu'a mille."   (cycle 2, CE1)
+#   "... les nombres jusqu'a 10 000."  (cycle 2, CE2)
+MAX_ENTIER = {
+    "CP": 100,
+    "CE1": 1000,
+    "CE2": 10000,
+    "CM1": 1000000,
+    "CM2": 1000000000,
+}
+
+# Denominateurs autorises.
+#   "Les fractions rencontrees au CE1 ont un denominateur egal a 2, 3, 4, 5, 6,
+#    8 ou 10."                                                  (cycle 2, CE1)
+#   "Les fractions rencontrees au CE2 ont un denominateur inferieur ou egal a
+#    douze et sont toutes inferieures ou egales a un."           (cycle 2, CE2)
+#   "Les fractions rencontrees au CM1 ont toutes un denominateur inferieur ou
+#    egal a 20."                                                 (cycle 3, CM1)
+#   "... inferieur ou egal a 60."                                (cycle 3, CM2)
+DENOMINATEURS_AUTORISES = {"CE1": {2, 3, 4, 5, 6, 8, 10}}
+MAX_DENOMINATEUR = {"CE2": 12, "CM1": 20, "CM2": 60}
+# Niveaux ou toute fraction doit rester inferieure ou egale a 1.
+FRACTIONS_INFERIEURES_A_UN = {"CE1", "CE2"}
+
+_ESPACES_MILLIERS = re.compile(r"(?<=\d)(?:\\,|[\s\u00a0\u202f])(?=\d)")
+_ENTIER = re.compile(r"\d+")
+_FRAC_LATEX = re.compile(r"\\frac\{(\d+)\}\{(\d+)\}")
+_FRAC_PLATE = re.compile(r"(?<![\d/])(\d+)\s*/\s*(\d+)(?![\d/])")
+
+
+def _normalise(texte: str) -> str:
+    """Recolle les separateurs de milliers : '4 302' et '4\\,302' -> '4302'."""
+    return _ESPACES_MILLIERS.sub("", texte)
+
+
+def _entiers(texte: str) -> list[int]:
+    """Entiers d'un texte, hors ceux deja consommes par une fraction."""
+    t = _normalise(texte)
+    t = _FRAC_LATEX.sub(" ", t)
+    t = _FRAC_PLATE.sub(" ", t)
+    return [int(m) for m in _ENTIER.findall(t)]
+
+
+def _fractions(texte: str) -> list[tuple[int, int]]:
+    t = _normalise(texte)
+    return [(int(a), int(b)) for a, b in _FRAC_LATEX.findall(t) + _FRAC_PLATE.findall(t)]
+
+
+def _textes_exercice(ex: dict) -> list[tuple[str, str, bool]]:
+    """(libelle, texte, bloquant) pour chaque zone de texte d'un exercice.
+
+    Enonce et reponse sont bloquants : c'est ce que l'eleve doit traiter.
+    Propositions et corrige ne sont qu'avertissements : un distracteur peut
+    legitimement sortir du champ pour materialiser une erreur.
+    """
+    zones = [("enonce", ex["statement"], True)]
+    val = ex["answer"].get("value")
+    if isinstance(val, (int, str)):
+        zones.append(("reponse", str(val), True))
+    for c in ex.get("choices", []):
+        zones.append((f"proposition {c['key']}", c["text"], False))
+    for i, s in enumerate(ex["solution_steps"], 1):
+        zones.append((f"corrige etape {i}", s, False))
+    return zones
+
+
+def check_validation_tests(dag: dict) -> None:
+    """Le validation_test doit lui aussi respecter le champ numerique du niveau.
+
+    C'est la cause racine des exercices hors niveau : le generateur suit
+    fidelement une consigne fausse. Cinq occurrences du meme mecanisme ont ete
+    constatees sur trois relectures successives (A004, A008, C009, C012, C004),
+    a chaque fois corrigees une par une. Ce controle traite la classe.
+    """
+    for s in dag["skills"]:
+        niveau = s["school_level"]
+        texte = s["validation_test"]
+        plafond = MAX_ENTIER.get(niveau)
+        autorises = DENOMINATEURS_AUTORISES.get(niveau)
+        max_den = MAX_DENOMINATEUR.get(niveau)
+
+        if plafond is not None:
+            hors = sorted({n for n in _entiers(texte) if n > plafond})
+            if hors:
+                err(
+                    f"Test de positionnement : {s['id']} ({niveau}, plafond {plafond}) "
+                    f"utilise {', '.join(str(n) for n in hors)} - « {texte} »"
+                )
+        for num, den in _fractions(texte):
+            if autorises is not None and den not in autorises:
+                err(
+                    f"Test de positionnement : {s['id']} ({niveau}) utilise le denominateur "
+                    f"{den}, hors de {sorted(autorises)} - « {texte} »"
+                )
+            elif max_den is not None and den > max_den:
+                err(
+                    f"Test de positionnement : {s['id']} ({niveau}) utilise le denominateur "
+                    f"{den} > {max_den} - « {texte} »"
+                )
+            if niveau in FRACTIONS_INFERIEURES_A_UN and num > den:
+                err(
+                    f"Test de positionnement : {s['id']} ({niveau}) utilise la fraction "
+                    f"{num}/{den}, superieure a 1 - « {texte} »"
+                )
+
+
+def check_champ_numerique(dag: dict, exercises: dict) -> None:
+    niveaux = {s["id"]: s["school_level"] for s in dag["skills"]}
+
+    for ex in exercises["exercises"]:
+        niveau = niveaux.get(ex["skill_id"])
+        if niveau is None:
+            continue
+
+        plafond = MAX_ENTIER.get(niveau)
+        autorises = DENOMINATEURS_AUTORISES.get(niveau)
+        max_den = MAX_DENOMINATEUR.get(niveau)
+
+        for libelle, texte, bloquant in _textes_exercice(ex):
+            signaler = err if bloquant else warn
+
+            if plafond is not None:
+                hors = sorted({n for n in _entiers(texte) if n > plafond})
+                if hors:
+                    signaler(
+                        f"Champ numerique : {ex['id']} ({niveau}, plafond {plafond}) "
+                        f"utilise {', '.join(str(n) for n in hors)} dans {libelle}"
+                    )
+
+            for num, den in _fractions(texte):
+                if autorises is not None and den not in autorises:
+                    signaler(
+                        f"Champ numerique : {ex['id']} ({niveau}) utilise le denominateur {den} "
+                        f"dans {libelle} ; autorises : {sorted(autorises)}"
+                    )
+                elif max_den is not None and den > max_den:
+                    signaler(
+                        f"Champ numerique : {ex['id']} ({niveau}) utilise le denominateur {den} "
+                        f"dans {libelle} ; maximum {max_den}"
+                    )
+                if niveau in FRACTIONS_INFERIEURES_A_UN and num > den:
+                    signaler(
+                        f"Champ numerique : {ex['id']} ({niveau}) utilise la fraction {num}/{den}, "
+                        f"superieure a 1, dans {libelle}"
+                    )
+
+
+# ---------------------------------------------------------------------------
+#  L'exemple de format ne doit jamais donner la reponse
+# ---------------------------------------------------------------------------
+# Defaut systematique releve a la seconde relecture : le generateur illustre le
+# format attendu ("Ecris ta reponse sous la forme X") en choisissant pour X la
+# reponse elle-meme. L'exercice devient vide : l'eleve recopie au lieu de
+# chercher, et il ne distingue plus celui qui sait de celui qui ne sait pas.
+# 11 exercices sur les 12 concernes etaient touches. Voir QUALITY.md.
+
+_EXEMPLE_FORMAT = re.compile(
+    r"sous la forme\s+(?:d'une\s+|d'un\s+)?([^\s.]+(?:\s*[<+]\s*[^\s.]+)*)",
+    re.IGNORECASE,
+)
+
+
+def _norm_reponse(t: str) -> str:
+    return re.sub(r"\s+", "", str(t)).replace("\\", "").lower()
+
+
+def check_exemple_format(exercises: dict) -> None:
+    for ex in exercises["exercises"]:
+        valeur = _norm_reponse(ex["answer"].get("value", ""))
+        if not valeur:
+            continue
+        elements = [_norm_reponse(p) for p in str(ex["answer"]["value"]).split(",")]
+
+        # Un enonce peut contenir plusieurs "sous la forme" : les examiner TOUS.
+        # Ne regarder que le premier laissait passer les enonces du type
+        # "... sous la forme d'une seule fraction. Ecris ta reponse sous la forme 7/3."
+        for m in _EXEMPLE_FORMAT.finditer(ex["statement"]):
+            exemple = _norm_reponse(m.group(1).strip(".,;"))
+            if not exemple or not any(c.isdigit() for c in exemple):
+                continue  # "sous la forme numerateur/denominateur" : pas de fuite
+            if exemple == valeur:
+                err(f"Exemple de format : {ex['id']} donne la reponse ('{m.group(1)}')")
+            elif exemple in elements and len(elements) > 1:
+                err(
+                    f"Exemple de format : {ex['id']} donne un element de la reponse "
+                    f"('{m.group(1)}'), en l'occurrence le plus difficile a trouver"
+                )
+            elif valeur.startswith(exemple) and len(exemple) >= 3:
+                err(f"Exemple de format : {ex['id']} donne le debut de la reponse ('{m.group(1)}')")
+
+
+# ---------------------------------------------------------------------------
+#  Coherence entre le niveau cite en reference et le niveau de la competence
+# ---------------------------------------------------------------------------
+# Signal de detection quasi gratuit : lors de la relecture du lot 001, cinq
+# exercices citaient dans leur programme_ref un niveau SUPERIEUR a celui de
+# leur competence, dont un exercice de CE2 justifie par un attendu de 5e.
+# Le generateur s'auto-denoncait. Avertissement et non erreur : citer un
+# programme de niveau superieur qui decrit un niveau inferieur est legitime.
+
+_NIVEAU_CITE = re.compile(
+    r"\b(CP|CE1|CE2|CM1|CM2|6e|5e|4e|3e|2nde|1ere|Terminale"
+    r"|Cinquieme|Cinquième|Quatrieme|Quatrième|Troisieme|Troisième)\b"
+)
+_ALIAS = {"Cinquieme": "5e", "Cinquième": "5e", "Quatrieme": "4e",
+          "Quatrième": "4e", "Troisieme": "3e", "Troisième": "3e"}
+
+
+def check_programme_ref(dag: dict, exercises: dict) -> None:
+    niveaux = {s["id"]: s["school_level"] for s in dag["skills"]}
+
+    for ex in exercises["exercises"]:
+        ref = ex.get("programme_ref")
+        niveau = niveaux.get(ex["skill_id"])
+        if not ref or niveau is None:
+            continue
+        rang = LEVEL_RANK.get(niveau)
+        if rang is None:
+            continue
+
+        cites = {_ALIAS.get(m, m) for m in _NIVEAU_CITE.findall(ref)}
+        trop_hauts = sorted(
+            (c for c in cites if LEVEL_RANK.get(c, -1) > rang),
+            key=lambda c: LEVEL_RANK[c],
+        )
+        if trop_hauts:
+            warn(
+                f"Reference : {ex['id']} porte sur une competence de {niveau} mais cite "
+                f"{', '.join(trop_hauts)} dans programme_ref"
+            )
+
+
 def main() -> int:
     print("Validation du contenu MATH EDUCATION\n")
 
@@ -260,6 +504,27 @@ def main() -> int:
 
     print("\nGraphe")
     check_dag(dag, exercises, mindmaps)
+
+    print("\nConformite au programme")
+    err_avant = len(errors)
+    check_validation_tests(dag)
+    print(f"  tests de positionnement {'OK' if len(errors) == err_avant else 'ANOMALIES'}")
+
+    if exercises is not None:
+        # Chaque compteur est releve juste avant SON controle : sinon le second
+        # herite des avertissements produits par le premier et parait toujours
+        # en anomalie.
+        err_avant = len(errors)
+        check_champ_numerique(dag, exercises)
+        print(f"  champ numerique       {'OK' if len(errors) == err_avant else 'ANOMALIES'}")
+
+        warn_avant = len(warnings)
+        check_programme_ref(dag, exercises)
+        print(f"  niveau des references {'OK' if len(warnings) == warn_avant else 'A VERIFIER'}")
+
+        err_avant = len(errors)
+        check_exemple_format(exercises)
+        print(f"  exemple de format     {'OK' if len(errors) == err_avant else 'ANOMALIES'}")
 
     print()
     if warnings:
