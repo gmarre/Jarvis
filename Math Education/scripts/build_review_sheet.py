@@ -1,309 +1,254 @@
 r"""
-Construit la fiche de relecture humaine du contenu MATH EDUCATION.
+Construit la fiche de relecture du contenu MATH EDUCATION.
 
-Objectif : permettre à Marius de juger VITE si les exercices sont au bon
-niveau. Pour chaque compétence, la fiche donne d'abord l'objectif et les
-bornes officielles du niveau, puis les exercices sous forme compacte, avec
-les nombres et dénominateurs réellement employés mis en évidence.
-
-Le LaTeX est converti en notation lisible ($\frac{3}{4}$ devient 3/4), parce
-qu'une fiche de relecture pleine de commandes LaTeX ne se lit pas vite.
+Deux sorties :
+  RELECTURE.md         synthese, lecture en une dizaine de minutes. Objectif :
+                       juger le FOND et la COORDINATION, pas relire chaque
+                       exercice. Parcours ordonne, chapitres, une ligne par
+                       exercice.
+  RELECTURE_DETAIL.md  tout le contenu, enonces complets, corriges, distracteurs.
+                       Pour creuser une competence precise.
 
 Usage :
-    . .\tools\activate.ps1
-    python .\scripts\build_review_sheet.py
+    python .\scripts\build_review_sheet.py            (les deux fichiers)
 """
 
 from __future__ import annotations
 
 import json
 import re
+import statistics as st
 from pathlib import Path
 
-PROJECT_ROOT = Path(__file__).resolve().parent.parent
-SPEC_DIR = PROJECT_ROOT / "Spécifications DAG, Exos, Mindcards"
-CONTENT_DIR = SPEC_DIR / "content"
-OUT = SPEC_DIR / "RELECTURE.md"
+import networkx as nx
+
+ROOT = Path(__file__).resolve().parent.parent
+SPEC = ROOT / "Spécifications DAG, Exos, Mindcards"
+CONTENT = SPEC / "content"
 
 NIVEAUX = ["CP", "CE1", "CE2", "CM1", "CM2", "6e", "5e", "4e", "3e", "2nde", "1ere", "Terminale"]
+RANG = {n: i for i, n in enumerate(NIVEAUX)}
+ORDRE = {"decouverte": 0, "entrainement": 1, "maitrise": 2}
+CODE = {"decouverte": "D", "entrainement": "E", "maitrise": "M"}
 
-# Bornes officielles, reprises de validate_content.py (mêmes citations).
-MAX_ENTIER = {"CP": 100, "CE1": 1000, "CE2": 10000, "CM1": 999999, "CM2": 999999999}
-DEN_AUTORISES = {"CE1": {2, 3, 4, 5, 6, 8, 10}}
-MAX_DEN = {"CE2": 12, "CM1": 20, "CM2": 60}
-FRAC_MAX_UN = {"CE1", "CE2"}
-
-LIBELLE_NIVEAU = {"decouverte": "Découverte", "entrainement": "Entraînement", "maitrise": "Maîtrise"}
-CODE_NIVEAU = {"decouverte": "D", "entrainement": "E", "maitrise": "M"}
-ORDRE_NIVEAU = {"decouverte": 0, "entrainement": 1, "maitrise": 2}
+# Charge de lecture jugee raisonnable, par niveau (mots dans l'enonce).
+PLAFOND_MOTS = {"CP": 15, "CE1": 20, "CE2": 25, "CM1": 30, "CM2": 30}
 
 
-# --------------------------------------------------------------------------
-#  Rendre le LaTeX lisible
 # --------------------------------------------------------------------------
 def lisible(t: str) -> str:
+    """LaTeX vers notation lisible : une fiche pleine de \\frac ne se lit pas."""
     if not t:
         return ""
     t = t.replace("\\,", " ")
     t = re.sub(r"\\frac\{([^{}]*)\}\{([^{}]*)\}", r"\1/\2", t)
-    t = re.sub(r"\\d?frac\{([^{}]*)\}\{([^{}]*)\}", r"\1/\2", t)
-    remplacements = {
-        "\\times": "×", "\\div": "÷", "\\ldots": "…", "\\dots": "…",
-        "\\leq": "≤", "\\geq": "≥", "\\neq": "≠", "\\approx": "≈",
-        "\\;": " ", "\\ ": " ", "\\%": "%",
-    }
-    for a, b in remplacements.items():
+    for a, b in {"\\times": "×", "\\div": "÷", "\\ldots": "…", "\\dots": "…",
+                 "\\leq": "≤", "\\geq": "≥", "\\neq": "≠", "\\;": " ", "\\%": "%"}.items():
         t = t.replace(a, b)
-    t = t.replace("$", "")
-    t = t.replace("**", "")           # le gras alourdit la lecture en tableau
-    t = re.sub(r"\s*\n\s*", " ", t)   # tout sur une ligne pour tenir dans une cellule
-    t = re.sub(r"\s{2,}", " ", t)
-    return t.strip()
+    t = t.replace("$", "").replace("**", "").replace("`", "")
+    t = re.sub(r"\s*\n\s*", " ", t)
+    return re.sub(r"\s{2,}", " ", t).strip()
 
 
-def cellule(t: str, largeur: int = 0) -> str:
+def court(t: str, n: int) -> str:
     t = lisible(t).replace("|", "/")
-    if largeur and len(t) > largeur:
-        t = t[: largeur - 1] + "…"
-    return t
+    return t if len(t) <= n else t[: n - 1] + "…"
 
 
-# --------------------------------------------------------------------------
-#  Extraction des nombres réellement employés
-# --------------------------------------------------------------------------
-_ESPACES = re.compile(r"(?<=\d)(?:\\,|[\s\u00a0\u202f])(?=\d)")
-_FRAC_TEX = re.compile(r"\\frac\{(\d+)\}\{(\d+)\}")
-_FRAC_PLATE = re.compile(r"(?<![\d/])(\d+)\s*/\s*(\d+)(?![\d/])")
-_ENTIER = re.compile(r"\d+")
+def mots(t: str) -> int:
+    return len(re.findall(r"\S+", re.sub(r"\$[^$]*\$", " X ", t)))
 
 
-def nombres_de(ex: dict) -> tuple[set[int], set[int], bool]:
-    """(entiers, dénominateurs, une fraction dépasse-t-elle 1) pour l'énoncé et la réponse."""
-    textes = [ex["statement"], str(ex["answer"].get("value", ""))]
-    entiers: set[int] = set()
-    dens: set[int] = set()
-    sup_un = False
-    for t in textes:
-        t = _ESPACES.sub("", t)
-        for a, b in _FRAC_TEX.findall(t) + _FRAC_PLATE.findall(t):
-            dens.add(int(b))
-            if int(a) > int(b):
-                sup_un = True
-        sans_frac = _FRAC_PLATE.sub(" ", _FRAC_TEX.sub(" ", t))
-        entiers.update(int(m) for m in _ENTIER.findall(sans_frac))
-    return entiers, dens, sup_un
-
-
-def bornes_texte(niveau: str) -> str:
-    parts = []
-    if niveau in MAX_ENTIER:
-        parts.append(f"entiers ≤ {MAX_ENTIER[niveau]:,}".replace(",", " "))
-    if niveau in DEN_AUTORISES:
-        parts.append("dénominateurs " + ", ".join(str(d) for d in sorted(DEN_AUTORISES[niveau])))
-    elif niveau in MAX_DEN:
-        parts.append(f"dénominateurs ≤ {MAX_DEN[niveau]}")
-    if niveau in FRAC_MAX_UN:
-        parts.append("fractions ≤ 1")
-    return " · ".join(parts) if parts else "pas de borne particulière"
-
-
-def alertes(ex: dict, niveau: str) -> list[str]:
-    """Signaux à vérifier en priorité, calculés sur l'énoncé et la réponse."""
-    entiers, dens, sup_un = nombres_de(ex)
-    out = []
-    plafond = MAX_ENTIER.get(niveau)
-    if plafond:
-        hors = sorted(n for n in entiers if n > plafond)
-        if hors:
-            out.append(f"entier hors niveau : {', '.join(str(n) for n in hors)}")
-    if niveau in DEN_AUTORISES:
-        hors = sorted(d for d in dens if d not in DEN_AUTORISES[niveau])
-        if hors:
-            out.append(f"dénominateur hors liste : {', '.join(str(d) for d in hors)}")
-    elif niveau in MAX_DEN:
-        hors = sorted(d for d in dens if d > MAX_DEN[niveau])
-        if hors:
-            out.append(f"dénominateur trop grand : {', '.join(str(d) for d in hors)}")
-    if sup_un and niveau in FRAC_MAX_UN:
-        out.append("fraction supérieure à 1")
-    return out
+def reponse(e: dict) -> str:
+    v = e["answer"].get("value")
+    if isinstance(v, bool):
+        return "vrai" if v else "faux"
+    if e["type"] == "qcm":
+        txt = {c["key"]: c["text"] for c in e.get("choices", [])}.get(str(v), "")
+        return court(f"{v}) {txt}", 34)
+    return court(str(v), 24)
 
 
 # --------------------------------------------------------------------------
 def main() -> int:
-    dag = json.loads((CONTENT_DIR / "skills_dag_v2.json").read_text(encoding="utf-8"))
-    exos = json.loads((CONTENT_DIR / "exercises.json").read_text(encoding="utf-8"))
+    dag = json.loads((CONTENT / "skills_dag_v2.json").read_text(encoding="utf-8"))
+    exos = json.loads((CONTENT / "exercises.json").read_text(encoding="utf-8"))
+    cartes = json.loads((CONTENT / "mindmaps.json").read_text(encoding="utf-8"))
 
-    skills = {s["id"]: s for s in dag["skills"]}
-    par_comp: dict[str, list[dict]] = {}
+    S = {s["id"]: s for s in dag["skills"]}
+    par: dict[str, list[dict]] = {}
     for e in exos["exercises"]:
-        par_comp.setdefault(e["skill_id"], []).append(e)
-    for lst in par_comp.values():
-        lst.sort(key=lambda e: (ORDRE_NIVEAU[e["level"]], e["id"]))
+        par.setdefault(e["skill_id"], []).append(e)
+    for v in par.values():
+        v.sort(key=lambda e: (ORDRE[e["level"]], e["id"]))
 
-    # Ordre de lecture : par niveau scolaire croissant, puis par domaine, puis par id.
-    avec_contenu = [s for s in dag["skills"] if par_comp.get(s["id"])]
-    avec_contenu.sort(key=lambda s: (NIVEAUX.index(s["school_level"]), s["domain"], s["id"]))
+    # Ordre reel de progression : tri topologique, departage par niveau puis difficulte.
+    G = nx.DiGraph()
+    for s in dag["skills"]:
+        G.add_node(s["id"])
+        for p in s["prerequisites"]:
+            if p in S:
+                G.add_edge(p, s["id"])
+    parcours = list(nx.lexicographical_topological_sort(
+        G, key=lambda i: (RANG[S[i]["school_level"]], S[i]["difficulty"], i)))
+    avec = [i for i in parcours if par.get(i)]
 
-    L: list[str] = []
-    A = L.append
+    # ---------------- anomalies de coordination ----------------
+    anomalies: dict[str, list[str]] = {}
 
-    total_ex = sum(len(par_comp[s["id"]]) for s in avec_contenu)
-    total_alertes = sum(
-        1 for s in avec_contenu for e in par_comp[s["id"]] if alertes(e, s["school_level"])
-    )
+    def note(sid, txt):
+        anomalies.setdefault(sid, []).append(txt)
 
-    A("# Fiche de relecture du contenu")
-    A("")
-    A(f"> {len(avec_contenu)} compétences, {total_ex} exercices. "
-      f"Généré depuis `content/`, à ne pas éditer à la main.")
-    A("")
-    A("**Comment lire cette fiche.** Chaque compétence commence par son objectif et par les "
-      "**bornes officielles de son niveau** : c'est la première chose à vérifier. Sous chaque "
-      "exercice, la colonne *Nombres* montre ce qui est réellement employé dans l'énoncé et la "
-      "réponse, pour juger d'un coup d'œil si c'est au niveau. Les corrigés sont repliés.")
-    A("")
-    if total_alertes:
-        A(f"⚠ **{total_alertes} exercice(s) portent un signal automatique.** Ils sont marqués "
-          "et regroupés dans la section « À vérifier en priorité ».")
-    else:
-        A("✅ Aucun exercice ne dépasse les bornes de son niveau.")
-    A("")
-
-    # ---- sommaire ----
-    A("## Vue d'ensemble")
-    A("")
-    A("| Compétence | Niveau | Exos | D/E/M | Signal |")
-    A("|---|---|---:|---|---|")
-    for s in avec_contenu:
-        lst = par_comp[s["id"]]
-        d = sum(1 for e in lst if e["level"] == "decouverte")
-        en = sum(1 for e in lst if e["level"] == "entrainement")
-        m = sum(1 for e in lst if e["level"] == "maitrise")
-        nb_al = sum(1 for e in lst if alertes(e, s["school_level"]))
-        signal = f"⚠ {nb_al}" if nb_al else ""
-        A(f"| `{s['id']}` {cellule(s['label'], 44)} | {s['school_level']} | {len(lst)} "
-          f"| {d}/{en}/{m} | {signal} |")
-    A("")
-
-    # ---- priorités ----
-    prioritaires = [
-        (s, e) for s in avec_contenu for e in par_comp[s["id"]] if alertes(e, s["school_level"])
-    ]
-    if prioritaires:
-        A("## À vérifier en priorité")
-        A("")
-        A("Signalés automatiquement parce qu'ils sortent des bornes du programme pour leur niveau. "
-          "Un distracteur peut légitimement sortir du champ ; un énoncé ou une réponse, non.")
-        A("")
-        for s, e in prioritaires:
-            A(f"- **`{e['id']}`** ({s['school_level']}, {cellule(s['label'], 40)}) — "
-              f"{' ; '.join(alertes(e, s['school_level']))}")
-            A(f"  <br>{cellule(e['statement'], 160)}")
-        A("")
-
-    # ---- détail ----
-    A("---")
-    A("")
-    A("## Détail par compétence")
-    A("")
-
-    niveau_courant = None
-    for s in avec_contenu:
-        if s["school_level"] != niveau_courant:
-            niveau_courant = s["school_level"]
-            A(f"# ── {niveau_courant} ──")
-            A("")
-
-        lst = par_comp[s["id"]]
-        A(f"### `{s['id']}` · {s['label']}")
-        A("")
-        A(f"**Objectif** {s['description']}  ")
-        prereq = ", ".join(
-            f"{p} ({skills[p]['school_level']})" for p in s["prerequisites"] if p in skills
-        ) or "aucun"
-        A(f"**Niveau** {s['school_level']} · difficulté {s['difficulty']}/9 · "
-          f"seuil {s['mastery_threshold']['required']} sur {s['mastery_threshold']['out_of']}  ")
-        A(f"**Prérequis** {prereq}  ")
-        A(f"**Bornes du niveau** {bornes_texte(s['school_level'])}  ")
-        A(f"**Test de positionnement** {cellule(s['validation_test'])}")
-        A("")
-        for ref in s.get("programme_ref", []):
-            A(f"> « {ref['quote']} »  ")
-            A(f"> — *{ref['source']}*")
-            A("")
+    for s in dag["skills"]:
+        for p in s["prerequisites"]:
+            if p in S and S[p]["difficulty"] > s["difficulty"]:
+                note(s["id"], f"difficulté en baisse depuis {p}")
+    for sid in avec:
+        s, lst = S[sid], par[sid]
+        m = st.mean(mots(e["statement"]) for e in lst)
+        plaf = PLAFOND_MOTS.get(s["school_level"])
+        if plaf and m > plaf:
+            note(sid, f"énoncés trop longs pour le niveau ({m:.0f} mots, plafond {plaf})")
+        d = [e for e in lst if e["level"] == "decouverte"]
+        mm = [e for e in lst if e["level"] == "maitrise"]
+        if d and mm:
+            md = st.mean(x["estimated_duration_s"] for x in d)
+            mmm = st.mean(x["estimated_duration_s"] for x in mm)
+            if mmm <= md:
+                note(sid, "maîtrise pas plus exigeante que découverte")
         if not s.get("programme_ref"):
-            A("> ⚠ *Aucune citation de programme sur cette compétence : le niveau n'est pas sourcé.*")
-            A("")
+            note(sid, "niveau non sourcé (aucune citation de programme)")
 
-        A("| | Type | Énoncé | Réponse | Nombres |")
-        A("|---|---|---|---|---|")
-        for e in lst:
-            ent, dens, _ = nombres_de(e)
-            desc = []
-            if ent:
-                bornes = sorted(ent)
-                desc.append(f"{bornes[0]}–{bornes[-1]}" if len(bornes) > 1 else str(bornes[0]))
-            if dens:
-                desc.append("dén. " + ", ".join(str(d) for d in sorted(dens)))
-            marque = " ⚠" if alertes(e, s["school_level"]) else ""
-            rep = e["answer"].get("value")
-            if e["type"] == "qcm":
-                choix = {c["key"]: c["text"] for c in e.get("choices", [])}
-                rep = f"{rep}) {cellule(choix.get(str(rep), ''), 30)}"
-            elif isinstance(rep, bool):
-                rep = "vrai" if rep else "faux"
-            A(f"| **{CODE_NIVEAU[e['level']]}**{marque} | {e['type']} "
-              f"| {cellule(e['statement'], 150)} | {cellule(str(rep), 40)} | {' · '.join(desc)} |")
+    # ================= FICHE SYNTHESE =================
+    L = []
+    A = L.append
+    total = sum(len(par[i]) for i in avec)
+    A("# Fiche de relecture — synthèse")
+    A("")
+    A(f"> {len(avec)} compétences, {total} exercices. Généré depuis `content/`, ne pas éditer à la main.  ")
+    A("> Objectif : juger le **fond** et la **coordination**. Le détail complet, énoncés et corrigés, "
+      "est dans `RELECTURE_DETAIL.md`.")
+    A("")
+    if anomalies:
+        A(f"⚠ **{len(anomalies)} compétence(s) à regarder**, signalées dans la colonne *Signal* et détaillées en §3.")
+    else:
+        A("✅ Aucune anomalie de coordination détectée.")
+    A("")
+
+    # --- 1. parcours ---
+    A("## 1. Le parcours, dans l'ordre où l'élève le suit")
+    A("")
+    A("C'est la lecture qui compte pour juger la coordination : la difficulté doit monter, jamais redescendre.")
+    A("")
+    A("| # | Compétence | Niv. | Diff. | Exos | Mots/énoncé | Signal |")
+    A("|--:|---|---|--:|--:|--:|---|")
+    for n, sid in enumerate(avec, 1):
+        s, lst = S[sid], par[sid]
+        m = st.mean(mots(e["statement"]) for e in lst)
+        A(f"| {n} | `{sid}` {court(s['label'], 40)} | {s['school_level']} | {s['difficulty']} "
+          f"| {len(lst)} | {m:.0f} | {'⚠' if sid in anomalies else ''} |")
+    sans = [s["id"] for s in dag["skills"] if not par.get(s["id"])]
+    if sans:
+        A("")
+        A(f"**Sans exercice ({len(sans)})** : {', '.join(f'`{i}` {S[i][chr(108)+chr(97)+chr(98)+chr(101)+chr(108)]}' for i in sans)}")
+    A("")
+
+    # --- 2. chapitres ---
+    A("## 2. Par chapitre")
+    A("")
+    A("Le chapitre est l'unité qu'un exercice bilan validerait.")
+    A("")
+    for c in sorted(cartes["mindmaps"], key=lambda c: min(RANG[n] for n in c["school_levels"])):
+        sk = [i for i in avec if i in c["skill_ids"]]
+        if not sk:
+            continue
+        nb = sum(len(par[i]) for i in sk)
+        A(f"### `{c['id']}` · {c['title']}")
+        A("")
+        A(f"{len(sk)} compétences, {nb} exercices, niveaux {', '.join(c['school_levels'])}.")
+        A("")
+        A("| Compétence | Ce que l'élève doit savoir faire | Exos |")
+        A("|---|---|--:|")
+        for i in sk:
+            A(f"| `{i}` {court(S[i]['label'], 34)} | {court(S[i]['description'], 74)} | {len(par[i])} |")
         A("")
 
-        A("<details><summary>Corrigés, indices et distracteurs</summary>")
+    # --- 3. anomalies ---
+    if anomalies:
+        A("## 3. Ce qui mérite ton oeil")
         A("")
+        for sid, lst in sorted(anomalies.items(), key=lambda kv: parcours.index(kv[0])):
+            A(f"- **`{sid}` {S[sid]['label']}** ({S[sid]['school_level']}) — {' ; '.join(lst)}")
+        A("")
+
+    # --- 4. detail resserre ---
+    A("## 4. Les exercices, une ligne chacun")
+    A("")
+    niveau = None
+    for sid in avec:
+        s, lst = S[sid], par[sid]
+        if s["school_level"] != niveau:
+            niveau = s["school_level"]
+            A(f"### ── {niveau} ──")
+            A("")
+        sig = "  ⚠" if sid in anomalies else ""
+        A(f"**`{sid}` · {s['label']}** — diff. {s['difficulty']}, seuil "
+          f"{s['mastery_threshold']['required']}/{s['mastery_threshold']['out_of']}{sig}  ")
+        A(f"*{s['description']}*")
+        if s.get("programme_ref"):
+            A(f"> « {court(s['programme_ref'][0]['quote'], 150)} »")
+        A("")
+        A("| | Type | Demandé | Réponse |")
+        A("|---|---|---|---|")
         for e in lst:
-            A(f"**`{e['id']}`** — {LIBELLE_NIVEAU[e['level']]}")
-            A("")
-            A(f"*Énoncé.* {cellule(e['statement'])}")
-            A("")
+            A(f"| {CODE[e['level']]} | {e['type'][:4]} | {court(e['statement'], 92)} | {reponse(e)} |")
+        A("")
+
+    (SPEC / "RELECTURE.md").write_text("\n".join(L), encoding="utf-8")
+
+    # ================= FICHE DETAIL =================
+    D = []
+    B = D.append
+    B("# Fiche de relecture — détail complet")
+    B("")
+    B("> Énoncés, corrigés, indices et distracteurs. Pour creuser une compétence précise. "
+      "La vue d'ensemble est dans `RELECTURE.md`.")
+    B("")
+    for sid in avec:
+        s, lst = S[sid], par[sid]
+        B(f"## `{sid}` · {s['label']} — {s['school_level']}, difficulté {s['difficulty']}")
+        B("")
+        B(f"*{s['description']}*")
+        B("")
+        for ref in s.get("programme_ref", []):
+            B(f"> « {ref['quote']} » — *{ref['source']}*")
+        B("")
+        for e in lst:
+            B(f"**{e['id']}** — {e['level']}, {e['type']}, {e['estimated_duration_s']} s")
+            B("")
+            B(f"{lisible(e['statement'])}")
+            B("")
             if e["type"] == "qcm":
                 for c in e.get("choices", []):
-                    bonne = " ✅" if str(e["answer"]["value"]) == c["key"] else ""
-                    A(f"- **{c['key']}.** {cellule(c['text'])}{bonne}")
+                    ok = " ✅" if str(e["answer"]["value"]) == c["key"] else ""
+                    B(f"- **{c['key']}.** {lisible(c['text'])}{ok}")
                     if c.get("misconception"):
-                        A(f"  <br>*Erreur visée :* {cellule(c['misconception'])}")
-                A("")
-            A("*Corrigé.*")
-            for i, step in enumerate(e["solution_steps"], 1):
-                A(f"{i}. {cellule(step)}")
-            A("")
+                        B(f"  <br>*Erreur visée :* {lisible(c['misconception'])}")
+            else:
+                B(f"**Réponse :** {lisible(str(e['answer'].get('value')))}")
+            B("")
+            B("*Corrigé.* " + " ".join(f"({i}) {lisible(x)}" for i, x in enumerate(e["solution_steps"], 1)))
+            B("")
             if e.get("hint"):
-                A(f"*Indice.* {cellule(e['hint'])}")
-                A("")
-            if e["answer"].get("accepted"):
-                A(f"*Aussi accepté.* {', '.join(str(a) for a in e['answer']['accepted'])}")
-                A("")
-            if e.get("programme_ref"):
-                A(f"*Programme.* {e['programme_ref']}")
-                A("")
-            A("---")
-            A("")
-        A("</details>")
-        A("")
+                B(f"*Indice.* {lisible(e['hint'])}")
+                B("")
+        B("---")
+        B("")
+    (SPEC / "RELECTURE_DETAIL.md").write_text("\n".join(D), encoding="utf-8")
 
-    # ---- compétences sans contenu ----
-    sans = [s for s in dag["skills"] if not par_comp.get(s["id"])]
-    if sans:
-        A("---")
-        A("")
-        A("## Compétences sans exercice")
-        A("")
-        for s in sans:
-            A(f"- `{s['id']}` {s['label']} ({s['school_level']})")
-        A("")
-
-    OUT.write_text("\n".join(L), encoding="utf-8")
-    print(f"{OUT.name} : {len(avec_contenu)} compétences, {total_ex} exercices, "
-          f"{total_alertes} signal(aux).")
-    print(f"-> {OUT}")
+    print(f"RELECTURE.md        {len(avec)} compétences, {total} exercices, "
+          f"{len(anomalies)} anomalie(s) de coordination")
+    print(f"RELECTURE_DETAIL.md {len('\n'.join(D)) // 1000} ko")
     return 0
 
 

@@ -3,7 +3,7 @@
     "version": "1.0",
     "scope": "Tranche pilote CP a 4e : 69 exercices, 3 par competence (1 decouverte, 1 entrainement, 1 maitrise) sur les 23 competences des domaines A et C. La cible finale de la roadmap est de 5 exercices par niveau, soit 15 par competence.",
     "updated_at": "2026-07-28",
-    "total_exercises": 69,
+    "total_exercises": 111,
     "review_status": "relu_agent"
   },
   "exercises": [
@@ -1109,177 +1109,135 @@
       "programme_ref": "Cycle 2, CE1 : comparer des fractions dont le numérateur est 1."
     },
     {
-      "id": "EX-C009-D-01",
-      "skill_id": "C009",
+      "id": "EX-C004-D-01",
+      "skill_id": "C004",
       "level": "decouverte",
-      "type": "qcm",
-      "statement": "Compare $\\frac{3}{8}$ et $\\frac{5}{8}$.",
+      "type": "numerique",
+      "statement": "Calcule le tiers de 12 billes, c'est-à-dire $\\frac{1}{3}$ de 12.",
       "image": null,
-      "choices": [
-        {
-          "key": "a",
-          "text": "$\\frac{3}{8} < \\frac{5}{8}$",
-          "misconception": null
-        },
-        {
-          "key": "b",
-          "text": "$\\frac{3}{8} > \\frac{5}{8}$",
-          "misconception": "L'élève inverse le sens de la comparaison."
-        },
-        {
-          "key": "c",
-          "text": "$\\frac{3}{8} = \\frac{5}{8}$",
-          "misconception": "L'élève considère que le même dénominateur suffit à rendre les fractions égales."
-        }
-      ],
       "answer": {
-        "value": "a"
+        "value": 4
       },
       "solution_steps": [
-        "Les deux fractions ont le **même dénominateur** : les parts sont de même taille (des huitièmes).",
-        "Il suffit donc de comparer les numérateurs : 3 parts contre 5 parts.",
-        "Comme $3 < 5$, on a $\\frac{3}{8} < \\frac{5}{8}$."
+        "Prendre le tiers, c'est partager en 3 parts égales.",
+        "$12 \\div 3 = 4$.",
+        "$\\frac{1}{3}$ de 12 vaut **4** billes."
       ],
-      "hint": "Les parts sont identiques : il n'y a plus qu'à compter combien on en prend.",
+      "hint": "Partage les 12 billes en 3 tas égaux.",
       "estimated_duration_s": 40,
       "review_status": "relu_agent",
-      "programme_ref": "Cycle 2, CE1 : comparer des fractions ayant le même dénominateur."
+      "programme_ref": "Cycle 3, CM1 : les élèves apprennent à calculer des fractions de quantités comme un tiers de 12 billes."
     },
     {
-      "id": "EX-C009-E-01",
-      "skill_id": "C009",
+      "id": "EX-C004-E-01",
+      "skill_id": "C004",
       "level": "entrainement",
-      "type": "qcm",
-      "statement": "Tom et Lisa ont chacun **leur propre tarte**, partagée en 6 parts égales.\n\nTom a mangé $\\frac{2}{6}$ de sa tarte. Lisa a mangé $\\frac{5}{6}$ de la sienne.\n\nQui a mangé la plus grande part de sa tarte ?",
+      "type": "numerique",
+      "statement": "Une piste mesure 100 mètres.\n\nCalcule $\\frac{1}{4}$ de cette longueur.",
       "image": null,
-      "choices": [
-        {
-          "key": "a",
-          "text": "Lisa",
-          "misconception": null
-        },
-        {
-          "key": "b",
-          "text": "Tom",
-          "misconception": "L'élève inverse la comparaison, ou compare les parts restantes au lieu des parts mangées."
-        },
-        {
-          "key": "c",
-          "text": "Ils en ont mangé autant",
-          "misconception": "L'élève voit le même dénominateur et en conclut que les deux fractions sont égales."
-        }
-      ],
       "answer": {
-        "value": "a"
+        "value": 25,
+        "unit": "mètres"
       },
       "solution_steps": [
-        "Les deux tartes sont partagées en 6 parts égales : les parts ont donc la même taille chez l'un comme chez l'autre.",
-        "Les deux fractions ayant le même dénominateur, il suffit de compter combien de parts chacun a prises.",
-        "Tom en a pris 2, Lisa en a pris 5. Comme $2 < 5$, c'est **Lisa** qui a mangé la plus grande part.",
-        "$\\frac{2}{6} < \\frac{5}{6}$.",
-        "Attention : chacun mange dans **sa** tarte. Si les deux mangeaient dans la même, $\\frac{2}{6} + \\frac{5}{6} = \\frac{7}{6}$ dépasserait la tarte entière, ce qui serait impossible."
+        "Prendre le quart, c'est partager en 4 parts égales.",
+        "$100 \\div 4 = 25$.",
+        "$\\frac{1}{4}$ de 100 mètres vaut **25 mètres**."
       ],
-      "hint": "Chaque tarte est coupée de la même façon : regarde seulement combien de parts chacun a prises.",
+      "hint": "Partage les 100 mètres en 4 parts égales.",
       "estimated_duration_s": 60,
       "review_status": "relu_agent",
-      "programme_ref": "Cycle 2, CE1 : comparer des fractions ayant le même dénominateur."
+      "programme_ref": "Cycle 3, CM1 : les fractions acquièrent le statut d'opérateur multiplicatif pour le cas particulier des fractions unitaires, comme un quart de 100 mètres."
     },
     {
-      "id": "EX-C009-M-01",
-      "skill_id": "C009",
+      "id": "EX-C004-M-01",
+      "skill_id": "C004",
       "level": "maitrise",
-      "type": "texte",
-      "statement": "Range ces fractions de la plus petite à la plus grande : $\\frac{7}{10}$, $\\frac{2}{10}$, $\\frac{5}{10}$.\n\nÉcris-les séparées par des virgules, sous la forme numérateur/dénominateur.",
+      "type": "numerique",
+      "statement": "Léa a dépensé le **tiers** de son argent de poche, soit 7 €.\n\nCombien d'euros avait-elle au départ ?",
       "image": null,
       "answer": {
-        "value": "2/10, 5/10, 7/10",
-        "accepted": [
-          "2/10,5/10,7/10",
-          "2/10 5/10 7/10",
-          "2 / 10, 5 / 10, 7 / 10"
-        ]
+        "value": 21,
+        "unit": "euros"
       },
       "solution_steps": [
-        "Les trois fractions ont le même dénominateur 10 : les parts sont toutes des dixièmes.",
-        "On range donc selon les numérateurs : $2 < 5 < 7$.",
-        "Réponse : $\\frac{2}{10}$, $\\frac{5}{10}$, $\\frac{7}{10}$."
+        "Le tiers de sa somme vaut 7 €, donc sa somme est partagée en 3 parts de 7 € chacune.",
+        "Ici on ne cherche pas la part, on cherche le **tout** : il faut donc multiplier au lieu de diviser.",
+        "$3 \\times 7 = 21$.",
+        "Léa avait **21 €**.",
+        "Vérification : $\\frac{1}{3}$ de 21 vaut $21 \\div 3 = 7$. C'est bien cohérent."
       ],
-      "hint": "Même dénominateur : range simplement les numérateurs.",
-      "estimated_duration_s": 60,
+      "hint": "Sa somme est faite de 3 parts identiques, et tu connais la valeur d'une part.",
+      "estimated_duration_s": 150,
       "review_status": "relu_agent",
-      "programme_ref": "Cycle 2, CE1 : comparer des fractions ayant le même dénominateur."
+      "programme_ref": "Cycle 3, CM1 : déterminer une fraction d'une quantité ou d'une grandeur (fractions unitaires)."
     },
     {
-      "id": "EX-C012-D-01",
-      "skill_id": "C012",
+      "id": "EX-C005-D-01",
+      "skill_id": "C005",
       "level": "decouverte",
-      "type": "texte",
-      "statement": "Calcule $\\frac{1}{5} + \\frac{2}{5}$.\n\nÉcris ta réponse sous la forme numérateur/dénominateur.",
+      "type": "numerique",
+      "statement": "Une bande-unité (de 0 à 1) est graduée en **quarts** :\n\n```\n0 |----|----|----|----| 1\n```\n\nCombien d'intervalles faut-il parcourir depuis 0 pour atteindre $\\frac{3}{4}$ ?",
       "image": null,
       "answer": {
-        "value": "3/5",
+        "value": 3,
         "accepted": [
-          "3 / 5"
+          "3"
         ]
       },
       "solution_steps": [
-        "Les deux fractions ont le même dénominateur : les parts sont de même taille.",
-        "On additionne les numérateurs : $1 + 2 = 3$.",
-        "Le dénominateur **ne change pas** : il reste 5.",
-        "$\\frac{1}{5} + \\frac{2}{5} = \\frac{3}{5}$."
+        "Le dénominateur 4 indique que la bande de 0 à 1 est partagée en 4 intervalles égaux.",
+        "Le numérateur 3 indique qu'on avance de 3 intervalles à partir de 0.",
+        "$\\frac{3}{4}$ se trouve à la **3e** graduation."
       ],
-      "hint": "Un cinquième plus deux cinquièmes, cela fait combien de cinquièmes ?",
+      "hint": "Le numérateur compte le nombre d'intervalles parcourus depuis 0.",
       "estimated_duration_s": 45,
       "review_status": "relu_agent",
-      "programme_ref": "Cycle 2, CE1 : additionner et soustraire des fractions de même dénominateur."
+      "programme_ref": "Cycle 2, CE2 : positionner des fractions sur une bande-unité graduée."
     },
     {
-      "id": "EX-C012-E-01",
-      "skill_id": "C012",
+      "id": "EX-C005-E-01",
+      "skill_id": "C005",
       "level": "entrainement",
       "type": "texte",
-      "statement": "Calcule $\\frac{2}{3} - \\frac{1}{3}$.\n\nÉcris ta réponse sous la forme numérateur/dénominateur.",
+      "statement": "Une bande-unité (de 0 à 1) est graduée en **cinquièmes** :\n\n```\n0 |----|----|----|----|----| 1\n```\n\nQuelle fraction se trouve à la 4e graduation après 0 ? Écris ta réponse sous la forme numérateur/dénominateur.",
       "image": null,
       "answer": {
-        "value": "1/3",
+        "value": "4/5",
         "accepted": [
-          "1 / 3"
+          "4 / 5"
         ]
       },
       "solution_steps": [
-        "Même dénominateur : on soustrait les numérateurs.",
-        "$2 - 1 = 1$, et le dénominateur reste 3.",
-        "$\\frac{2}{3} - \\frac{1}{3} = \\frac{1}{3}$.",
-        "On peut le dire ainsi : deux tiers du tout moins un tiers du tout, cela fait un tiers du tout."
+        "Graduée en cinquièmes : chaque intervalle vaut $\\frac{1}{5}$.",
+        "À la 4e graduation, on a parcouru 4 intervalles d'un cinquième.",
+        "La fraction cherchée est $\\frac{4}{5}$."
       ],
-      "hint": "Le dénominateur ne change jamais quand on additionne ou soustrait des fractions de même dénominateur.",
-      "estimated_duration_s": 45,
+      "hint": "Chaque saut vaut un cinquième. Combien de sauts ?",
+      "estimated_duration_s": 50,
       "review_status": "relu_agent",
-      "programme_ref": "Cycle 2, CE1 : l'élève sait calculer 2/3 - 1/3 ou 1/5 + 2/5."
+      "programme_ref": "Cycle 2, CE2 : positionner des fractions sur une bande-unité graduée."
     },
     {
-      "id": "EX-C012-M-01",
-      "skill_id": "C012",
+      "id": "EX-C005-M-01",
+      "skill_id": "C005",
       "level": "maitrise",
-      "type": "texte",
-      "statement": "Lucie a colorié les $\\frac{3}{10}$ d'une figure en bleu, et tout le reste en rouge.\n\nQuelle fraction de la figure est coloriée en rouge ? Écris ta réponse sous la forme numérateur/dénominateur.",
+      "type": "vrai_faux",
+      "statement": "Sur une même bande-unité graduée, $\\frac{1}{2}$ et $\\frac{3}{6}$ se placent exactement au même endroit.",
       "image": null,
       "answer": {
-        "value": "7/10",
-        "accepted": [
-          "7 / 10"
-        ]
+        "value": true
       },
       "solution_steps": [
-        "La figure entière représente le tout, soit $\\frac{10}{10}$.",
-        "La partie bleue est $\\frac{3}{10}$.",
-        "Le rouge est le complément : $\\frac{10}{10} - \\frac{3}{10} = \\frac{7}{10}$.",
-        "La figure est coloriée en rouge pour $\\frac{7}{10}$."
+        "$\\frac{3}{6}$ s'obtient à partir de $\\frac{1}{2}$ en multipliant numérateur et dénominateur par 3.",
+        "Ces deux écritures désignent donc le **même nombre**.",
+        "Un nombre n'occupe qu'une seule place sur la demi-droite graduée.",
+        "L'affirmation est **vraie** : des fractions égales tombent au même point."
       ],
-      "hint": "Le tout vaut 10 dixièmes. Combien en reste-t-il après en avoir pris 3 ?",
-      "estimated_duration_s": 90,
+      "hint": "Ces deux fractions sont-elles égales ?",
+      "estimated_duration_s": 75,
       "review_status": "relu_agent",
-      "programme_ref": "Cycle 2, CE1 : l'élève sait trouver le complément d'une fraction d'un tout par rapport à ce tout."
+      "programme_ref": "Cycle 2, CE2 : positionnement de fractions égales au niveau de la même graduation."
     },
     {
       "id": "EX-C006-D-01",
@@ -1375,310 +1333,6 @@
       "estimated_duration_s": 120,
       "review_status": "relu_agent",
       "programme_ref": "Cycle 2, CE2 : établir des égalités entre fractions."
-    },
-    {
-      "id": "EX-C005-D-01",
-      "skill_id": "C005",
-      "level": "decouverte",
-      "type": "numerique",
-      "statement": "Une bande-unité (de 0 à 1) est graduée en **quarts** :\n\n```\n0 |----|----|----|----| 1\n```\n\nCombien d'intervalles faut-il parcourir depuis 0 pour atteindre $\\frac{3}{4}$ ?",
-      "image": null,
-      "answer": {
-        "value": 3,
-        "accepted": [
-          "3"
-        ]
-      },
-      "solution_steps": [
-        "Le dénominateur 4 indique que la bande de 0 à 1 est partagée en 4 intervalles égaux.",
-        "Le numérateur 3 indique qu'on avance de 3 intervalles à partir de 0.",
-        "$\\frac{3}{4}$ se trouve à la **3e** graduation."
-      ],
-      "hint": "Le numérateur compte le nombre d'intervalles parcourus depuis 0.",
-      "estimated_duration_s": 45,
-      "review_status": "relu_agent",
-      "programme_ref": "Cycle 2, CE2 : positionner des fractions sur une bande-unité graduée."
-    },
-    {
-      "id": "EX-C005-E-01",
-      "skill_id": "C005",
-      "level": "entrainement",
-      "type": "texte",
-      "statement": "Une bande-unité (de 0 à 1) est graduée en **cinquièmes** :\n\n```\n0 |----|----|----|----|----| 1\n```\n\nQuelle fraction se trouve à la 4e graduation après 0 ? Écris ta réponse sous la forme numérateur/dénominateur.",
-      "image": null,
-      "answer": {
-        "value": "4/5",
-        "accepted": [
-          "4 / 5"
-        ]
-      },
-      "solution_steps": [
-        "Graduée en cinquièmes : chaque intervalle vaut $\\frac{1}{5}$.",
-        "À la 4e graduation, on a parcouru 4 intervalles d'un cinquième.",
-        "La fraction cherchée est $\\frac{4}{5}$."
-      ],
-      "hint": "Chaque saut vaut un cinquième. Combien de sauts ?",
-      "estimated_duration_s": 50,
-      "review_status": "relu_agent",
-      "programme_ref": "Cycle 2, CE2 : positionner des fractions sur une bande-unité graduée."
-    },
-    {
-      "id": "EX-C005-M-01",
-      "skill_id": "C005",
-      "level": "maitrise",
-      "type": "vrai_faux",
-      "statement": "Sur une même bande-unité graduée, $\\frac{1}{2}$ et $\\frac{3}{6}$ se placent exactement au même endroit.",
-      "image": null,
-      "answer": {
-        "value": true
-      },
-      "solution_steps": [
-        "$\\frac{3}{6}$ s'obtient à partir de $\\frac{1}{2}$ en multipliant numérateur et dénominateur par 3.",
-        "Ces deux écritures désignent donc le **même nombre**.",
-        "Un nombre n'occupe qu'une seule place sur la demi-droite graduée.",
-        "L'affirmation est **vraie** : des fractions égales tombent au même point."
-      ],
-      "hint": "Ces deux fractions sont-elles égales ?",
-      "estimated_duration_s": 75,
-      "review_status": "relu_agent",
-      "programme_ref": "Cycle 2, CE2 : positionnement de fractions égales au niveau de la même graduation."
-    },
-    {
-      "id": "EX-C004-D-01",
-      "skill_id": "C004",
-      "level": "decouverte",
-      "type": "numerique",
-      "statement": "Calcule le tiers de 12 billes, c'est-à-dire $\\frac{1}{3}$ de 12.",
-      "image": null,
-      "answer": {
-        "value": 4
-      },
-      "solution_steps": [
-        "Prendre le tiers, c'est partager en 3 parts égales.",
-        "$12 \\div 3 = 4$.",
-        "$\\frac{1}{3}$ de 12 vaut **4** billes."
-      ],
-      "hint": "Partage les 12 billes en 3 tas égaux.",
-      "estimated_duration_s": 40,
-      "review_status": "relu_agent",
-      "programme_ref": "Cycle 3, CM1 : les élèves apprennent à calculer des fractions de quantités comme un tiers de 12 billes."
-    },
-    {
-      "id": "EX-C004-E-01",
-      "skill_id": "C004",
-      "level": "entrainement",
-      "type": "numerique",
-      "statement": "Une piste mesure 100 mètres.\n\nCalcule $\\frac{1}{4}$ de cette longueur.",
-      "image": null,
-      "answer": {
-        "value": 25,
-        "unit": "mètres"
-      },
-      "solution_steps": [
-        "Prendre le quart, c'est partager en 4 parts égales.",
-        "$100 \\div 4 = 25$.",
-        "$\\frac{1}{4}$ de 100 mètres vaut **25 mètres**."
-      ],
-      "hint": "Partage les 100 mètres en 4 parts égales.",
-      "estimated_duration_s": 60,
-      "review_status": "relu_agent",
-      "programme_ref": "Cycle 3, CM1 : les fractions acquièrent le statut d'opérateur multiplicatif pour le cas particulier des fractions unitaires, comme un quart de 100 mètres."
-    },
-    {
-      "id": "EX-C004-M-01",
-      "skill_id": "C004",
-      "level": "maitrise",
-      "type": "numerique",
-      "statement": "Léa a dépensé le **tiers** de son argent de poche, soit 7 €.\n\nCombien d'euros avait-elle au départ ?",
-      "image": null,
-      "answer": {
-        "value": 21,
-        "unit": "euros"
-      },
-      "solution_steps": [
-        "Le tiers de sa somme vaut 7 €, donc sa somme est partagée en 3 parts de 7 € chacune.",
-        "Ici on ne cherche pas la part, on cherche le **tout** : il faut donc multiplier au lieu de diviser.",
-        "$3 \\times 7 = 21$.",
-        "Léa avait **21 €**.",
-        "Vérification : $\\frac{1}{3}$ de 21 vaut $21 \\div 3 = 7$. C'est bien cohérent."
-      ],
-      "hint": "Sa somme est faite de 3 parts identiques, et tu connais la valeur d'une part.",
-      "estimated_duration_s": 150,
-      "review_status": "relu_agent",
-      "programme_ref": "Cycle 3, CM1 : déterminer une fraction d'une quantité ou d'une grandeur (fractions unitaires)."
-    },
-    {
-      "id": "EX-C011-D-01",
-      "skill_id": "C011",
-      "level": "decouverte",
-      "type": "numerique",
-      "statement": "Quel est le plus petit dénominateur commun à $\\frac{1}{4}$ et $\\frac{2}{3}$ ?",
-      "image": null,
-      "answer": {
-        "value": 12
-      },
-      "solution_steps": [
-        "On cherche un nombre qui figure à la fois dans la table de 4 et dans la table de 3.",
-        "Table de 4 : 4, 8, **12**, 16, 20, 24…",
-        "Table de 3 : 3, 6, 9, **12**, 15, 18…",
-        "Le plus petit commun est **12**."
-      ],
-      "hint": "Écris les premiers multiples de 4 et de 3, puis cherche le premier qui apparaît dans les deux listes.",
-      "estimated_duration_s": 60,
-      "review_status": "relu_agent",
-      "programme_ref": "Cycle 4 : trouver un dénominateur commun à deux fractions pour les additionner, les soustraire ou les comparer."
-    },
-    {
-      "id": "EX-C011-E-01",
-      "skill_id": "C011",
-      "level": "entrainement",
-      "type": "texte",
-      "statement": "Réduis $\\frac{1}{4}$ et $\\frac{2}{3}$ au même dénominateur.\n\nÉcris les deux fractions obtenues, séparées par une virgule, sous la forme numérateur/dénominateur.",
-      "image": null,
-      "answer": {
-        "value": "3/12, 8/12",
-        "accepted": [
-          "3/12,8/12",
-          "3/12 8/12"
-        ]
-      },
-      "solution_steps": [
-        "Dénominateur commun : 12.",
-        "$\\frac{1}{4} = \\frac{1 \\times 3}{4 \\times 3} = \\frac{3}{12}$.",
-        "$\\frac{2}{3} = \\frac{2 \\times 4}{3 \\times 4} = \\frac{8}{12}$.",
-        "Les deux fractions réduites sont $\\frac{3}{12}$ et $\\frac{8}{12}$."
-      ],
-      "hint": "Par combien faut-il multiplier 4 pour obtenir 12 ? Et 3 ?",
-      "estimated_duration_s": 90,
-      "review_status": "relu_agent",
-      "programme_ref": "Cycle 4, 5e : additionner et soustraire des fractions de dénominateurs quelconques."
-    },
-    {
-      "id": "EX-C011-M-01",
-      "skill_id": "C011",
-      "level": "maitrise",
-      "type": "texte",
-      "statement": "Calcule $\\frac{2}{5} + \\frac{1}{4}$.\n\nÉcris ta réponse sous la forme numérateur/dénominateur.",
-      "image": null,
-      "answer": {
-        "value": "13/20",
-        "accepted": [
-          "13 / 20"
-        ]
-      },
-      "solution_steps": [
-        "Les dénominateurs sont différents : il faut d'abord les rendre identiques.",
-        "Dénominateur commun : $5 \\times 4 = 20$.",
-        "$\\frac{2}{5} = \\frac{8}{20}$ et $\\frac{1}{4} = \\frac{5}{20}$.",
-        "On additionne les numérateurs : $\\frac{8}{20} + \\frac{5}{20} = \\frac{13}{20}$.",
-        "$\\frac{13}{20}$ ne se simplifie pas : c'est la réponse."
-      ],
-      "hint": "On ne peut pas additionner des cinquièmes et des quarts : il faut d'abord les convertir en une même sorte de parts.",
-      "estimated_duration_s": 120,
-      "review_status": "relu_agent",
-      "programme_ref": "Cycle 4, 5e : addition et soustraction de fractions simples, dont 2/5 + 1/4."
-    },
-    {
-      "id": "EX-C010-D-01",
-      "skill_id": "C010",
-      "level": "decouverte",
-      "type": "qcm",
-      "statement": "Compare $\\frac{2}{3}$ et $\\frac{3}{5}$.",
-      "image": null,
-      "choices": [
-        {
-          "key": "a",
-          "text": "$\\frac{2}{3} > \\frac{3}{5}$",
-          "misconception": null
-        },
-        {
-          "key": "b",
-          "text": "$\\frac{2}{3} < \\frac{3}{5}$",
-          "misconception": "L'élève compare les numérateurs seuls (2 < 3) sans réduire au même dénominateur."
-        },
-        {
-          "key": "c",
-          "text": "$\\frac{2}{3} = \\frac{3}{5}$",
-          "misconception": "L'élève voit que le numérateur augmente de 1 en même temps que le dénominateur augmente de 2, et en conclut que les deux variations se compensent."
-        }
-      ],
-      "answer": {
-        "value": "a"
-      },
-      "solution_steps": [
-        "Dénominateur commun : $3 \\times 5 = 15$.",
-        "$\\frac{2}{3} = \\frac{10}{15}$ et $\\frac{3}{5} = \\frac{9}{15}$.",
-        "Comme $10 > 9$, on a $\\frac{2}{3} > \\frac{3}{5}$."
-      ],
-      "hint": "Réduis les deux fractions au même dénominateur avant de comparer.",
-      "estimated_duration_s": 90,
-      "review_status": "relu_agent",
-      "programme_ref": "Cycle 4, 5e : comparer des fractions."
-    },
-    {
-      "id": "EX-C010-E-01",
-      "skill_id": "C010",
-      "level": "entrainement",
-      "type": "qcm",
-      "statement": "Compare $\\frac{8}{12}$ et $\\frac{8}{21}$ sans calculer.",
-      "image": null,
-      "choices": [
-        {
-          "key": "a",
-          "text": "$\\frac{8}{12} > \\frac{8}{21}$",
-          "misconception": null
-        },
-        {
-          "key": "b",
-          "text": "$\\frac{8}{12} < \\frac{8}{21}$",
-          "misconception": "L'élève applique l'ordre des entiers aux dénominateurs : 12 < 21 donc la fraction serait plus petite."
-        },
-        {
-          "key": "c",
-          "text": "$\\frac{8}{12} = \\frac{8}{21}$",
-          "misconception": "L'élève ne retient que l'égalité des numérateurs."
-        }
-      ],
-      "answer": {
-        "value": "a"
-      },
-      "solution_steps": [
-        "Les deux fractions ont le **même numérateur** : on prend 8 parts dans chaque cas.",
-        "Mais partager en 12 donne des parts plus grandes que partager en 21.",
-        "8 grandes parts valent donc plus que 8 petites parts.",
-        "$\\frac{8}{12} > \\frac{8}{21}$."
-      ],
-      "hint": "À numérateur égal, quel dénominateur donne les parts les plus grandes ?",
-      "estimated_duration_s": 75,
-      "review_status": "relu_agent",
-      "programme_ref": "Cycle 4, 5e : comparer deux fractions : 8/12 et 8/21."
-    },
-    {
-      "id": "EX-C010-M-01",
-      "skill_id": "C010",
-      "level": "maitrise",
-      "type": "texte",
-      "statement": "Range ces trois fractions de la plus petite à la plus grande :\n\n$\\frac{3}{4}$, $\\frac{7}{18}$, $\\frac{5}{6}$\n\nÉcris-les séparées par des virgules, sous la forme numérateur/dénominateur.",
-      "image": null,
-      "answer": {
-        "value": "7/18, 3/4, 5/6",
-        "accepted": [
-          "7/18,3/4,5/6",
-          "7/18 3/4 5/6",
-          "7 / 18, 3 / 4, 5 / 6"
-        ]
-      },
-      "solution_steps": [
-        "Aucune astuce ne fonctionne ici : les trois fractions sont inférieures à 1, et elles n'ont ni numérateur ni dénominateur commun.",
-        "Il faut donc les réduire au même dénominateur. 4, 18 et 6 divisent tous 36.",
-        "$\\frac{3}{4} = \\frac{27}{36}$, $\\frac{7}{18} = \\frac{14}{36}$, $\\frac{5}{6} = \\frac{30}{36}$.",
-        "On compare les numérateurs : $14 < 27 < 30$.",
-        "Donc $\\frac{7}{18} < \\frac{3}{4} < \\frac{5}{6}$."
-      ],
-      "hint": "Cherche un dénominateur commun aux trois fractions : un multiple de 4, de 18 et de 6.",
-      "estimated_duration_s": 180,
-      "review_status": "relu_agent",
-      "programme_ref": "Cycle 4, 5e : comparer des fractions (automatismes : 3/4 et 7/18)."
     },
     {
       "id": "EX-C007-D-01",
@@ -1858,6 +1512,1498 @@
       "estimated_duration_s": 150,
       "review_status": "relu_agent",
       "programme_ref": "Cycle 4, 3e : mettre une fraction sous forme irréductible."
+    },
+    {
+      "id": "EX-C009-D-01",
+      "skill_id": "C009",
+      "level": "decouverte",
+      "type": "qcm",
+      "statement": "Compare $\\frac{3}{8}$ et $\\frac{5}{8}$.",
+      "image": null,
+      "choices": [
+        {
+          "key": "a",
+          "text": "$\\frac{3}{8} < \\frac{5}{8}$",
+          "misconception": null
+        },
+        {
+          "key": "b",
+          "text": "$\\frac{3}{8} > \\frac{5}{8}$",
+          "misconception": "L'élève inverse le sens de la comparaison."
+        },
+        {
+          "key": "c",
+          "text": "$\\frac{3}{8} = \\frac{5}{8}$",
+          "misconception": "L'élève considère que le même dénominateur suffit à rendre les fractions égales."
+        }
+      ],
+      "answer": {
+        "value": "a"
+      },
+      "solution_steps": [
+        "Les deux fractions ont le **même dénominateur** : les parts sont de même taille (des huitièmes).",
+        "Il suffit donc de comparer les numérateurs : 3 parts contre 5 parts.",
+        "Comme $3 < 5$, on a $\\frac{3}{8} < \\frac{5}{8}$."
+      ],
+      "hint": "Les parts sont identiques : il n'y a plus qu'à compter combien on en prend.",
+      "estimated_duration_s": 40,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 2, CE1 : comparer des fractions ayant le même dénominateur."
+    },
+    {
+      "id": "EX-C009-E-01",
+      "skill_id": "C009",
+      "level": "entrainement",
+      "type": "qcm",
+      "statement": "Tom et Lisa ont chacun **leur propre tarte**, partagée en 6 parts égales.\n\nTom a mangé $\\frac{2}{6}$ de sa tarte. Lisa a mangé $\\frac{5}{6}$ de la sienne.\n\nQui a mangé la plus grande part de sa tarte ?",
+      "image": null,
+      "choices": [
+        {
+          "key": "a",
+          "text": "Lisa",
+          "misconception": null
+        },
+        {
+          "key": "b",
+          "text": "Tom",
+          "misconception": "L'élève inverse la comparaison, ou compare les parts restantes au lieu des parts mangées."
+        },
+        {
+          "key": "c",
+          "text": "Ils en ont mangé autant",
+          "misconception": "L'élève voit le même dénominateur et en conclut que les deux fractions sont égales."
+        }
+      ],
+      "answer": {
+        "value": "a"
+      },
+      "solution_steps": [
+        "Les deux tartes sont partagées en 6 parts égales : les parts ont donc la même taille chez l'un comme chez l'autre.",
+        "Les deux fractions ayant le même dénominateur, il suffit de compter combien de parts chacun a prises.",
+        "Tom en a pris 2, Lisa en a pris 5. Comme $2 < 5$, c'est **Lisa** qui a mangé la plus grande part.",
+        "$\\frac{2}{6} < \\frac{5}{6}$.",
+        "Attention : chacun mange dans **sa** tarte. Si les deux mangeaient dans la même, $\\frac{2}{6} + \\frac{5}{6} = \\frac{7}{6}$ dépasserait la tarte entière, ce qui serait impossible."
+      ],
+      "hint": "Chaque tarte est coupée de la même façon : regarde seulement combien de parts chacun a prises.",
+      "estimated_duration_s": 60,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 2, CE1 : comparer des fractions ayant le même dénominateur."
+    },
+    {
+      "id": "EX-C009-M-01",
+      "skill_id": "C009",
+      "level": "maitrise",
+      "type": "texte",
+      "statement": "Range ces fractions de la plus petite à la plus grande : $\\frac{7}{10}$, $\\frac{2}{10}$, $\\frac{5}{10}$.\n\nÉcris-les séparées par des virgules, sous la forme numérateur/dénominateur.",
+      "image": null,
+      "answer": {
+        "value": "2/10, 5/10, 7/10",
+        "accepted": [
+          "2/10,5/10,7/10",
+          "2/10 5/10 7/10",
+          "2 / 10, 5 / 10, 7 / 10"
+        ]
+      },
+      "solution_steps": [
+        "Les trois fractions ont le même dénominateur 10 : les parts sont toutes des dixièmes.",
+        "On range donc selon les numérateurs : $2 < 5 < 7$.",
+        "Réponse : $\\frac{2}{10}$, $\\frac{5}{10}$, $\\frac{7}{10}$."
+      ],
+      "hint": "Même dénominateur : range simplement les numérateurs.",
+      "estimated_duration_s": 60,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 2, CE1 : comparer des fractions ayant le même dénominateur."
+    },
+    {
+      "id": "EX-C010-D-01",
+      "skill_id": "C010",
+      "level": "decouverte",
+      "type": "qcm",
+      "statement": "Compare $\\frac{2}{3}$ et $\\frac{3}{5}$.",
+      "image": null,
+      "choices": [
+        {
+          "key": "a",
+          "text": "$\\frac{2}{3} > \\frac{3}{5}$",
+          "misconception": null
+        },
+        {
+          "key": "b",
+          "text": "$\\frac{2}{3} < \\frac{3}{5}$",
+          "misconception": "L'élève compare les numérateurs seuls (2 < 3) sans réduire au même dénominateur."
+        },
+        {
+          "key": "c",
+          "text": "$\\frac{2}{3} = \\frac{3}{5}$",
+          "misconception": "L'élève voit que le numérateur augmente de 1 en même temps que le dénominateur augmente de 2, et en conclut que les deux variations se compensent."
+        }
+      ],
+      "answer": {
+        "value": "a"
+      },
+      "solution_steps": [
+        "Dénominateur commun : $3 \\times 5 = 15$.",
+        "$\\frac{2}{3} = \\frac{10}{15}$ et $\\frac{3}{5} = \\frac{9}{15}$.",
+        "Comme $10 > 9$, on a $\\frac{2}{3} > \\frac{3}{5}$."
+      ],
+      "hint": "Réduis les deux fractions au même dénominateur avant de comparer.",
+      "estimated_duration_s": 90,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 4, 5e : comparer des fractions."
+    },
+    {
+      "id": "EX-C010-E-01",
+      "skill_id": "C010",
+      "level": "entrainement",
+      "type": "qcm",
+      "statement": "Compare $\\frac{8}{12}$ et $\\frac{8}{21}$ sans calculer.",
+      "image": null,
+      "choices": [
+        {
+          "key": "a",
+          "text": "$\\frac{8}{12} > \\frac{8}{21}$",
+          "misconception": null
+        },
+        {
+          "key": "b",
+          "text": "$\\frac{8}{12} < \\frac{8}{21}$",
+          "misconception": "L'élève applique l'ordre des entiers aux dénominateurs : 12 < 21 donc la fraction serait plus petite."
+        },
+        {
+          "key": "c",
+          "text": "$\\frac{8}{12} = \\frac{8}{21}$",
+          "misconception": "L'élève ne retient que l'égalité des numérateurs."
+        }
+      ],
+      "answer": {
+        "value": "a"
+      },
+      "solution_steps": [
+        "Les deux fractions ont le **même numérateur** : on prend 8 parts dans chaque cas.",
+        "Mais partager en 12 donne des parts plus grandes que partager en 21.",
+        "8 grandes parts valent donc plus que 8 petites parts.",
+        "$\\frac{8}{12} > \\frac{8}{21}$."
+      ],
+      "hint": "À numérateur égal, quel dénominateur donne les parts les plus grandes ?",
+      "estimated_duration_s": 75,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 4, 5e : comparer deux fractions : 8/12 et 8/21."
+    },
+    {
+      "id": "EX-C010-M-01",
+      "skill_id": "C010",
+      "level": "maitrise",
+      "type": "texte",
+      "statement": "Range ces trois fractions de la plus petite à la plus grande :\n\n$\\frac{3}{4}$, $\\frac{7}{18}$, $\\frac{5}{6}$\n\nÉcris-les séparées par des virgules, sous la forme numérateur/dénominateur.",
+      "image": null,
+      "answer": {
+        "value": "7/18, 3/4, 5/6",
+        "accepted": [
+          "7/18,3/4,5/6",
+          "7/18 3/4 5/6",
+          "7 / 18, 3 / 4, 5 / 6"
+        ]
+      },
+      "solution_steps": [
+        "Aucune astuce ne fonctionne ici : les trois fractions sont inférieures à 1, et elles n'ont ni numérateur ni dénominateur commun.",
+        "Il faut donc les réduire au même dénominateur. 4, 18 et 6 divisent tous 36.",
+        "$\\frac{3}{4} = \\frac{27}{36}$, $\\frac{7}{18} = \\frac{14}{36}$, $\\frac{5}{6} = \\frac{30}{36}$.",
+        "On compare les numérateurs : $14 < 27 < 30$.",
+        "Donc $\\frac{7}{18} < \\frac{3}{4} < \\frac{5}{6}$."
+      ],
+      "hint": "Cherche un dénominateur commun aux trois fractions : un multiple de 4, de 18 et de 6.",
+      "estimated_duration_s": 180,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 4, 5e : comparer des fractions (automatismes : 3/4 et 7/18)."
+    },
+    {
+      "id": "EX-C011-D-01",
+      "skill_id": "C011",
+      "level": "decouverte",
+      "type": "numerique",
+      "statement": "Quel est le plus petit dénominateur commun à $\\frac{1}{4}$ et $\\frac{2}{3}$ ?",
+      "image": null,
+      "answer": {
+        "value": 12
+      },
+      "solution_steps": [
+        "On cherche un nombre qui figure à la fois dans la table de 4 et dans la table de 3.",
+        "Table de 4 : 4, 8, **12**, 16, 20, 24…",
+        "Table de 3 : 3, 6, 9, **12**, 15, 18…",
+        "Le plus petit commun est **12**."
+      ],
+      "hint": "Écris les premiers multiples de 4 et de 3, puis cherche le premier qui apparaît dans les deux listes.",
+      "estimated_duration_s": 60,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 4 : trouver un dénominateur commun à deux fractions pour les additionner, les soustraire ou les comparer."
+    },
+    {
+      "id": "EX-C011-E-01",
+      "skill_id": "C011",
+      "level": "entrainement",
+      "type": "texte",
+      "statement": "Réduis $\\frac{1}{4}$ et $\\frac{2}{3}$ au même dénominateur.\n\nÉcris les deux fractions obtenues, séparées par une virgule, sous la forme numérateur/dénominateur.",
+      "image": null,
+      "answer": {
+        "value": "3/12, 8/12",
+        "accepted": [
+          "3/12,8/12",
+          "3/12 8/12"
+        ]
+      },
+      "solution_steps": [
+        "Dénominateur commun : 12.",
+        "$\\frac{1}{4} = \\frac{1 \\times 3}{4 \\times 3} = \\frac{3}{12}$.",
+        "$\\frac{2}{3} = \\frac{2 \\times 4}{3 \\times 4} = \\frac{8}{12}$.",
+        "Les deux fractions réduites sont $\\frac{3}{12}$ et $\\frac{8}{12}$."
+      ],
+      "hint": "Par combien faut-il multiplier 4 pour obtenir 12 ? Et 3 ?",
+      "estimated_duration_s": 90,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 4, 5e : additionner et soustraire des fractions de dénominateurs quelconques."
+    },
+    {
+      "id": "EX-C011-M-01",
+      "skill_id": "C011",
+      "level": "maitrise",
+      "type": "texte",
+      "statement": "Calcule $\\frac{2}{5} + \\frac{1}{4}$.\n\nÉcris ta réponse sous la forme numérateur/dénominateur.",
+      "image": null,
+      "answer": {
+        "value": "13/20",
+        "accepted": [
+          "13 / 20"
+        ]
+      },
+      "solution_steps": [
+        "Les dénominateurs sont différents : il faut d'abord les rendre identiques.",
+        "Dénominateur commun : $5 \\times 4 = 20$.",
+        "$\\frac{2}{5} = \\frac{8}{20}$ et $\\frac{1}{4} = \\frac{5}{20}$.",
+        "On additionne les numérateurs : $\\frac{8}{20} + \\frac{5}{20} = \\frac{13}{20}$.",
+        "$\\frac{13}{20}$ ne se simplifie pas : c'est la réponse."
+      ],
+      "hint": "On ne peut pas additionner des cinquièmes et des quarts : il faut d'abord les convertir en une même sorte de parts.",
+      "estimated_duration_s": 120,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 4, 5e : addition et soustraction de fractions simples, dont 2/5 + 1/4."
+    },
+    {
+      "id": "EX-C012-D-01",
+      "skill_id": "C012",
+      "level": "decouverte",
+      "type": "texte",
+      "statement": "Calcule $\\frac{1}{5} + \\frac{2}{5}$.\n\nÉcris ta réponse sous la forme numérateur/dénominateur.",
+      "image": null,
+      "answer": {
+        "value": "3/5",
+        "accepted": [
+          "3 / 5"
+        ]
+      },
+      "solution_steps": [
+        "Les deux fractions ont le même dénominateur : les parts sont de même taille.",
+        "On additionne les numérateurs : $1 + 2 = 3$.",
+        "Le dénominateur **ne change pas** : il reste 5.",
+        "$\\frac{1}{5} + \\frac{2}{5} = \\frac{3}{5}$."
+      ],
+      "hint": "Un cinquième plus deux cinquièmes, cela fait combien de cinquièmes ?",
+      "estimated_duration_s": 45,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 2, CE1 : additionner et soustraire des fractions de même dénominateur."
+    },
+    {
+      "id": "EX-C012-E-01",
+      "skill_id": "C012",
+      "level": "entrainement",
+      "type": "texte",
+      "statement": "Calcule $\\frac{2}{3} - \\frac{1}{3}$.\n\nÉcris ta réponse sous la forme numérateur/dénominateur.",
+      "image": null,
+      "answer": {
+        "value": "1/3",
+        "accepted": [
+          "1 / 3"
+        ]
+      },
+      "solution_steps": [
+        "Même dénominateur : on soustrait les numérateurs.",
+        "$2 - 1 = 1$, et le dénominateur reste 3.",
+        "$\\frac{2}{3} - \\frac{1}{3} = \\frac{1}{3}$.",
+        "On peut le dire ainsi : deux tiers du tout moins un tiers du tout, cela fait un tiers du tout."
+      ],
+      "hint": "Le dénominateur ne change jamais quand on additionne ou soustrait des fractions de même dénominateur.",
+      "estimated_duration_s": 45,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 2, CE1 : l'élève sait calculer 2/3 - 1/3 ou 1/5 + 2/5."
+    },
+    {
+      "id": "EX-C012-M-01",
+      "skill_id": "C012",
+      "level": "maitrise",
+      "type": "texte",
+      "statement": "Lucie a colorié les $\\frac{3}{10}$ d'une figure en bleu, et tout le reste en rouge.\n\nQuelle fraction de la figure est coloriée en rouge ? Écris ta réponse sous la forme numérateur/dénominateur.",
+      "image": null,
+      "answer": {
+        "value": "7/10",
+        "accepted": [
+          "7 / 10"
+        ]
+      },
+      "solution_steps": [
+        "La figure entière représente le tout, soit $\\frac{10}{10}$.",
+        "La partie bleue est $\\frac{3}{10}$.",
+        "Le rouge est le complément : $\\frac{10}{10} - \\frac{3}{10} = \\frac{7}{10}$.",
+        "La figure est coloriée en rouge pour $\\frac{7}{10}$."
+      ],
+      "hint": "Le tout vaut 10 dixièmes. Combien en reste-t-il après en avoir pris 3 ?",
+      "estimated_duration_s": 90,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 2, CE1 : l'élève sait trouver le complément d'une fraction d'un tout par rapport à ce tout."
+    },
+    {
+      "id": "EX-C026-D-01",
+      "skill_id": "C026",
+      "level": "decouverte",
+      "type": "qcm",
+      "statement": "Compare $\\frac{1}{5}$ et $\\frac{1}{3}$.",
+      "image": null,
+      "choices": [
+        {
+          "key": "a",
+          "text": "$\\frac{1}{5} < \\frac{1}{3}$",
+          "misconception": null
+        },
+        {
+          "key": "b",
+          "text": "$\\frac{1}{5} > \\frac{1}{3}$",
+          "misconception": "L'élève applique aux dénominateurs l'ordre des entiers : 5 est plus grand que 3, donc la fraction serait plus grande. C'est l'erreur la plus fréquente sur cette notion."
+        },
+        {
+          "key": "c",
+          "text": "$\\frac{1}{5} = \\frac{1}{3}$",
+          "misconception": "L'élève ne compare que les numérateurs, qui sont égaux, et conclut à l'égalité."
+        }
+      ],
+      "answer": {
+        "value": "a"
+      },
+      "solution_steps": [
+        "Les deux fractions ont le même numérateur : on prend **une** part dans chaque cas.",
+        "Mais les parts n'ont pas la même taille. Partager un tout en 5 donne des parts plus petites que le partager en 3.",
+        "Une part sur 5 est donc plus petite qu'une part sur 3 : $\\frac{1}{5} < \\frac{1}{3}$.",
+        "Retiens : quand le numérateur est 1, **plus le dénominateur est grand, plus la fraction est petite**."
+      ],
+      "hint": "Préfères-tu partager un gâteau entre 3 personnes ou entre 5 ?",
+      "estimated_duration_s": 45,
+      "review_status": "brouillon",
+      "programme_ref": "Cycle 2, CE1 : comparer des fractions dont le numérateur est 1."
+    },
+    {
+      "id": "EX-C026-D-02",
+      "skill_id": "C026",
+      "level": "decouverte",
+      "type": "qcm",
+      "statement": "Une même tablette de chocolat est partagée en parts égales.\n\nDans quel cas une part est-elle la **plus grande** ?",
+      "image": null,
+      "choices": [
+        {
+          "key": "a",
+          "text": "Quand on partage en 2",
+          "misconception": null
+        },
+        {
+          "key": "b",
+          "text": "Quand on partage en 4",
+          "misconception": "L'élève associe un plus grand nombre de parts à des parts plus grandes."
+        },
+        {
+          "key": "c",
+          "text": "Quand on partage en 8",
+          "misconception": "Même erreur, poussée plus loin : l'élève choisit le plus grand dénominateur."
+        }
+      ],
+      "answer": {
+        "value": "a"
+      },
+      "solution_steps": [
+        "La tablette est la même dans les trois cas : c'est le **tout**.",
+        "Plus on la partage en un grand nombre de parts, plus chaque part est petite.",
+        "En partageant en 2, on obtient les parts les plus grandes : $\\frac{1}{2}$.",
+        "On a donc $\\frac{1}{8} < \\frac{1}{4} < \\frac{1}{2}$."
+      ],
+      "hint": "Le nombre de parts augmente, mais la tablette, elle, ne grandit pas.",
+      "estimated_duration_s": 45,
+      "review_status": "brouillon",
+      "programme_ref": "Cycle 2, CE1 : comparer des fractions dont le numérateur est 1."
+    },
+    {
+      "id": "EX-C026-E-01",
+      "skill_id": "C026",
+      "level": "entrainement",
+      "type": "qcm",
+      "statement": "Léa partage sa tarte entre 4 amis. Tom partage une tarte identique entre 6 amis.\n\nQui reçoit la plus grosse part ?",
+      "image": null,
+      "choices": [
+        {
+          "key": "a",
+          "text": "Un ami de Léa",
+          "misconception": null
+        },
+        {
+          "key": "b",
+          "text": "Un ami de Tom",
+          "misconception": "L'élève retient qu'il y a plus d'amis chez Tom et en déduit à tort des parts plus grandes."
+        },
+        {
+          "key": "c",
+          "text": "Ils reçoivent la même part",
+          "misconception": "L'élève ne relie pas le nombre de convives à la taille des parts."
+        }
+      ],
+      "answer": {
+        "value": "a"
+      },
+      "solution_steps": [
+        "Chez Léa, chaque ami reçoit $\\frac{1}{4}$ de tarte. Chez Tom, chaque ami reçoit $\\frac{1}{6}$.",
+        "Les deux tartes sont identiques : c'est le même tout.",
+        "Partager en 4 donne des parts plus grandes que partager en 6.",
+        "Donc $\\frac{1}{6} < \\frac{1}{4}$ : c'est un ami de **Léa** qui reçoit la plus grosse part."
+      ],
+      "hint": "Plus il y a de convives autour d'une même tarte, plus les parts rétrécissent.",
+      "estimated_duration_s": 60,
+      "review_status": "brouillon",
+      "programme_ref": "Cycle 2, CE1 : comparer des fractions dont le numérateur est 1."
+    },
+    {
+      "id": "EX-C026-E-02",
+      "skill_id": "C026",
+      "level": "entrainement",
+      "type": "texte",
+      "statement": "Range ces fractions de la plus petite à la plus grande : $\\frac{1}{2}$, $\\frac{1}{8}$, $\\frac{1}{4}$.\n\nÉcris-les séparées par des virgules, sous la forme numérateur/dénominateur.",
+      "image": null,
+      "answer": {
+        "value": "1/8, 1/4, 1/2",
+        "accepted": [
+          "1/8,1/4,1/2",
+          "1/8 1/4 1/2",
+          "1 / 8, 1 / 4, 1 / 2"
+        ]
+      },
+      "solution_steps": [
+        "Les trois fractions ont le même numérateur 1 : on compare donc les dénominateurs.",
+        "Plus le dénominateur est grand, plus la part est petite.",
+        "Le plus grand dénominateur est 8, donc $\\frac{1}{8}$ est la plus petite.",
+        "Puis vient $\\frac{1}{4}$, et enfin $\\frac{1}{2}$, la plus grande.",
+        "Réponse : $\\frac{1}{8}$, $\\frac{1}{4}$, $\\frac{1}{2}$."
+      ],
+      "hint": "Range les dénominateurs du plus grand au plus petit : les fractions suivront dans l'ordre croissant.",
+      "estimated_duration_s": 75,
+      "review_status": "brouillon",
+      "programme_ref": "Cycle 2, CE1 : comparer des fractions dont le numérateur est 1."
+    },
+    {
+      "id": "EX-C026-E-03",
+      "skill_id": "C026",
+      "level": "entrainement",
+      "type": "vrai_faux",
+      "statement": "$\\frac{1}{10}$ est plus grand que $\\frac{1}{6}$, parce que 10 est plus grand que 6.",
+      "image": null,
+      "answer": {
+        "value": false
+      },
+      "solution_steps": [
+        "Le raisonnement proposé applique aux fractions l'ordre des entiers : c'est justement le piège.",
+        "Partager un tout en 10 donne des parts **plus petites** que le partager en 6.",
+        "Donc $\\frac{1}{10} < \\frac{1}{6}$ : l'affirmation est **fausse**.",
+        "Le dénominateur compte les parts, il ne mesure pas leur taille : quand il augmente, la part diminue."
+      ],
+      "hint": "Regarde la taille d'une part, pas la taille du nombre écrit en bas.",
+      "estimated_duration_s": 60,
+      "review_status": "brouillon",
+      "programme_ref": "Cycle 2, CE1 : comparer des fractions dont le numérateur est 1."
+    },
+    {
+      "id": "EX-C026-M-01",
+      "skill_id": "C026",
+      "level": "maitrise",
+      "type": "qcm",
+      "statement": "Trois enfants mangent chacun une part d'une même tarte.\n\nLéa mange $\\frac{1}{4}$ de la tarte, Tom $\\frac{1}{8}$, et Zoé $\\frac{1}{3}$.\n\nQui a mangé le **moins** ?",
+      "image": null,
+      "choices": [
+        {
+          "key": "a",
+          "text": "Tom",
+          "misconception": null
+        },
+        {
+          "key": "b",
+          "text": "Zoé",
+          "misconception": "L'élève choisit le plus petit dénominateur en croyant qu'il donne la plus petite part."
+        },
+        {
+          "key": "c",
+          "text": "Léa",
+          "misconception": "L'élève repère le dénominateur du milieu et l'associe à la plus petite part."
+        }
+      ],
+      "answer": {
+        "value": "a"
+      },
+      "solution_steps": [
+        "Les trois fractions ont le même numérateur 1 : chacun prend une seule part.",
+        "La plus petite part correspond au **plus grand** dénominateur.",
+        "Les dénominateurs sont 4, 8 et 3. Le plus grand est 8.",
+        "C'est donc **Tom**, avec $\\frac{1}{8}$, qui a mangé le moins.",
+        "Dans l'ordre : $\\frac{1}{8} < \\frac{1}{4} < \\frac{1}{3}$."
+      ],
+      "hint": "Cherche celui dont la tarte a été partagée en le plus grand nombre de parts.",
+      "estimated_duration_s": 90,
+      "review_status": "brouillon",
+      "programme_ref": "Cycle 2, CE1 : comparer des fractions dont le numérateur est 1."
+    },
+    {
+      "id": "EX-C026-M-02",
+      "skill_id": "C026",
+      "level": "maitrise",
+      "type": "texte",
+      "statement": "Trouve une fraction de numérateur 1 qui soit **plus grande que** $\\frac{1}{8}$ et **plus petite que** $\\frac{1}{4}$.\n\nÉcris ta réponse sous la forme numérateur/dénominateur.",
+      "image": null,
+      "answer": {
+        "value": "1/6",
+        "accepted": [
+          "1 / 6",
+          "1/5",
+          "1 / 5"
+        ]
+      },
+      "solution_steps": [
+        "On cherche une fraction $\\frac{1}{?}$ comprise entre $\\frac{1}{8}$ et $\\frac{1}{4}$.",
+        "Comme le numérateur est 1, la fraction est d'autant plus petite que le dénominateur est grand.",
+        "Il faut donc un dénominateur **compris entre 4 et 8**.",
+        "Avec 6 : $\\frac{1}{8} < \\frac{1}{6} < \\frac{1}{4}$, car $4 < 6 < 8$.",
+        "$\\frac{1}{5}$ convient aussi, pour la même raison."
+      ],
+      "hint": "Le dénominateur cherché doit se placer entre 4 et 8. Lesquels sont autorisés au CE1 ?",
+      "estimated_duration_s": 120,
+      "review_status": "brouillon",
+      "programme_ref": "Cycle 2, CE1 : comparer des fractions dont le numérateur est 1."
+    },
+    {
+      "id": "EX-C027-D-01",
+      "skill_id": "C027",
+      "level": "decouverte",
+      "type": "numerique",
+      "statement": "Complète : $\\frac{7}{4} = 1 + \\frac{\\ldots}{4}$",
+      "image": null,
+      "answer": {
+        "value": 3
+      },
+      "solution_steps": [
+        "Un tout entier vaut 4 quarts : $1 = \\frac{4}{4}$.",
+        "Dans $\\frac{7}{4}$, on prélève ces 4 quarts : il en reste $7 - 4 = 3$.",
+        "Donc $\\frac{7}{4} = \\frac{4}{4} + \\frac{3}{4} = 1 + \\frac{3}{4}$.",
+        "La réponse est **3**."
+      ],
+      "hint": "Combien de quarts faut-il pour faire un tout entier ? Retire-les des 7 quarts.",
+      "estimated_duration_s": 60,
+      "review_status": "brouillon",
+      "programme_ref": "Cycle 3, CM1 : savoir écrire une fraction supérieure à 1 comme la somme d'un entier et d'une fraction inférieure à 1."
+    },
+    {
+      "id": "EX-C027-D-02",
+      "skill_id": "C027",
+      "level": "decouverte",
+      "type": "texte",
+      "statement": "Écris $\\frac{5}{3}$ comme la somme d'un entier et d'une fraction inférieure à 1.\n\nÉcris ta réponse sous la forme d'un entier plus une fraction.",
+      "image": null,
+      "answer": {
+        "value": "1 + 2/3",
+        "accepted": [
+          "1+2/3",
+          "1 + 2 / 3"
+        ]
+      },
+      "solution_steps": [
+        "Un tout entier vaut 3 tiers : $1 = \\frac{3}{3}$.",
+        "Dans $\\frac{5}{3}$, on peut prélever un tout, il reste $5 - 3 = 2$ tiers.",
+        "Donc $\\frac{5}{3} = 1 + \\frac{2}{3}$.",
+        "On vérifie que la fraction restante, $\\frac{2}{3}$, est bien inférieure à 1."
+      ],
+      "hint": "Combien de tiers dans un tout entier ? Combien en reste-t-il ensuite ?",
+      "estimated_duration_s": 75,
+      "review_status": "brouillon",
+      "programme_ref": "Cycle 3, CM1 : savoir écrire une fraction supérieure à 1 comme la somme d'un entier et d'une fraction inférieure à 1."
+    },
+    {
+      "id": "EX-C027-E-01",
+      "skill_id": "C027",
+      "level": "entrainement",
+      "type": "texte",
+      "statement": "Écris $\\frac{11}{4}$ comme la somme d'un entier et d'une fraction inférieure à 1.\n\nÉcris ta réponse sous la forme d'un entier plus une fraction.",
+      "image": null,
+      "answer": {
+        "value": "2 + 3/4",
+        "accepted": [
+          "2+3/4",
+          "2 + 3 / 4"
+        ]
+      },
+      "solution_steps": [
+        "Un tout vaut 4 quarts. On cherche combien de touts entiers tiennent dans 11 quarts.",
+        "$11 = 4 + 4 + 3$, donc **deux** touts entiers, et il reste 3 quarts.",
+        "Autrement dit : $11 \\div 4 = 2$ reste 3.",
+        "Donc $\\frac{11}{4} = 2 + \\frac{3}{4}$."
+      ],
+      "hint": "Combien de fois 4 tient-il dans 11 ? Et que reste-t-il ?",
+      "estimated_duration_s": 90,
+      "review_status": "brouillon",
+      "programme_ref": "Cycle 3, CM1 : savoir écrire une fraction supérieure à 1 comme la somme d'un entier et d'une fraction inférieure à 1."
+    },
+    {
+      "id": "EX-C027-E-02",
+      "skill_id": "C027",
+      "level": "entrainement",
+      "type": "texte",
+      "statement": "Écris $2 + \\frac{1}{3}$ sous la forme d'une **seule** fraction.\n\nÉcris ta réponse sous la forme numérateur/dénominateur.",
+      "image": null,
+      "answer": {
+        "value": "7/3",
+        "accepted": [
+          "7 / 3"
+        ]
+      },
+      "solution_steps": [
+        "C'est l'opération inverse de la décomposition : il faut convertir l'entier en tiers.",
+        "$2 = \\frac{6}{3}$, car deux touts valent $2 \\times 3 = 6$ tiers.",
+        "On additionne : $\\frac{6}{3} + \\frac{1}{3} = \\frac{7}{3}$.",
+        "Le dénominateur ne change pas, seuls les numérateurs s'ajoutent."
+      ],
+      "hint": "Commence par écrire l'entier 2 sous forme de tiers.",
+      "estimated_duration_s": 90,
+      "review_status": "brouillon",
+      "programme_ref": "Cycle 3, CM1 : savoir écrire la somme d'un entier et d'une fraction inférieure à 1 comme une unique fraction."
+    },
+    {
+      "id": "EX-C027-E-03",
+      "skill_id": "C027",
+      "level": "entrainement",
+      "type": "numerique",
+      "statement": "Complète : $3 + \\frac{2}{5} = \\frac{\\ldots}{5}$",
+      "image": null,
+      "answer": {
+        "value": 17
+      },
+      "solution_steps": [
+        "On convertit l'entier 3 en cinquièmes : $3 = \\frac{15}{5}$, car $3 \\times 5 = 15$.",
+        "On ajoute la fraction : $\\frac{15}{5} + \\frac{2}{5} = \\frac{17}{5}$.",
+        "Le numérateur cherché est **17**."
+      ],
+      "hint": "Combien de cinquièmes dans 3 touts entiers ?",
+      "estimated_duration_s": 90,
+      "review_status": "brouillon",
+      "programme_ref": "Cycle 3, CM1 : savoir écrire la somme d'un entier et d'une fraction inférieure à 1 comme une unique fraction."
+    },
+    {
+      "id": "EX-C027-M-01",
+      "skill_id": "C027",
+      "level": "maitrise",
+      "type": "qcm",
+      "statement": "Un élève écrit : $\\frac{9}{4} = 1 + \\frac{9}{4}$.\n\nQue penses-tu de son écriture ?",
+      "image": null,
+      "choices": [
+        {
+          "key": "a",
+          "text": "Elle est fausse : il a ajouté un tout sans le retirer de la fraction",
+          "misconception": null
+        },
+        {
+          "key": "b",
+          "text": "Elle est juste",
+          "misconception": "L'élève ne vérifie pas que les deux membres de l'égalité représentent la même quantité."
+        },
+        {
+          "key": "c",
+          "text": "Elle est fausse, il fallait écrire $1 + \\frac{5}{4}$",
+          "misconception": "L'élève retire bien un tout mais se trompe : il retire 4 du dénominateur au lieu du numérateur, ou compte un seul tout au lieu de deux."
+        }
+      ],
+      "answer": {
+        "value": "a"
+      },
+      "solution_steps": [
+        "À droite, $1 + \\frac{9}{4}$ vaut davantage que $\\frac{9}{4}$ tout seul : l'égalité est donc forcément fausse.",
+        "L'erreur : il a bien vu qu'il y avait au moins un tout, mais il ne l'a pas **retiré** de la fraction.",
+        "La bonne décomposition : un tout vaut 4 quarts, et $9 = 4 + 4 + 1$, soit **deux** touts et un quart.",
+        "Donc $\\frac{9}{4} = 2 + \\frac{1}{4}$.",
+        "La proposition c est fausse elle aussi : $1 + \\frac{5}{4}$ vaut bien $\\frac{9}{4}$, mais $\\frac{5}{4}$ n'est pas inférieure à 1, donc la décomposition demandée n'est pas terminée."
+      ],
+      "hint": "Compare les deux côtés de l'égalité : représentent-ils vraiment la même quantité ?",
+      "estimated_duration_s": 150,
+      "review_status": "brouillon",
+      "programme_ref": "Cycle 3, CM1 : savoir écrire une fraction supérieure à 1 comme la somme d'un entier et d'une fraction inférieure à 1."
+    },
+    {
+      "id": "EX-C027-M-02",
+      "skill_id": "C027",
+      "level": "maitrise",
+      "type": "texte",
+      "statement": "Une recette demande $\\frac{9}{4}$ de litre de lait.\n\nCombien de litres entiers faut-il verser, et quelle fraction de litre en plus ? Écris ta réponse sous la forme d'un entier plus une fraction.",
+      "image": null,
+      "answer": {
+        "value": "2 + 1/4",
+        "accepted": [
+          "2+1/4",
+          "2 + 1 / 4"
+        ]
+      },
+      "solution_steps": [
+        "Un litre vaut 4 quarts de litre.",
+        "On cherche combien de litres entiers tiennent dans 9 quarts : $9 \\div 4 = 2$ reste 1.",
+        "Il faut donc verser **2 litres entiers**, plus $\\frac{1}{4}$ de litre.",
+        "$\\frac{9}{4} = 2 + \\frac{1}{4}$."
+      ],
+      "hint": "Combien de quarts de litre dans un litre entier ? Combien de litres entiers peux-tu remplir avec 9 quarts ?",
+      "estimated_duration_s": 120,
+      "review_status": "brouillon",
+      "programme_ref": "Cycle 3, CM1 : savoir écrire une fraction supérieure à 1 comme la somme d'un entier et d'une fraction inférieure à 1."
+    },
+    {
+      "id": "EX-C029-D-01",
+      "skill_id": "C029",
+      "level": "decouverte",
+      "type": "qcm",
+      "statement": "Entre quels **entiers consécutifs** se trouve $\\frac{7}{4}$ ?",
+      "image": null,
+      "choices": [
+        {
+          "key": "a",
+          "text": "entre 1 et 2",
+          "misconception": null
+        },
+        {
+          "key": "b",
+          "text": "entre 7 et 8",
+          "misconception": "L'élève lit le numérateur comme s'il s'agissait du nombre lui-même."
+        },
+        {
+          "key": "c",
+          "text": "entre 4 et 5",
+          "misconception": "L'élève lit le dénominateur comme s'il s'agissait du nombre lui-même."
+        }
+      ],
+      "answer": {
+        "value": "a"
+      },
+      "solution_steps": [
+        "Un tout entier vaut 4 quarts, deux touts valent 8 quarts.",
+        "$\\frac{7}{4}$ contient plus de 4 quarts, donc plus de 1, mais moins de 8 quarts, donc moins de 2.",
+        "Autrement dit $\\frac{7}{4} = 1 + \\frac{3}{4}$.",
+        "Donc $1 < \\frac{7}{4} < 2$."
+      ],
+      "hint": "Combien de quarts font un tout entier ? Et deux touts entiers ?",
+      "estimated_duration_s": 60,
+      "review_status": "brouillon",
+      "programme_ref": "Cycle 3, CM1 : savoir encadrer une fraction par deux nombres entiers consécutifs."
+    },
+    {
+      "id": "EX-C029-D-02",
+      "skill_id": "C029",
+      "level": "decouverte",
+      "type": "numerique",
+      "statement": "Complète l'encadrement : $1 < \\frac{5}{3} < \\ldots$",
+      "image": null,
+      "answer": {
+        "value": 2
+      },
+      "solution_steps": [
+        "Un tout vaut 3 tiers, deux touts valent 6 tiers.",
+        "$\\frac{5}{3}$ contient 5 tiers : c'est plus que 3 tiers, donc plus que 1, et moins que 6 tiers, donc moins que 2.",
+        "L'entier cherché est **2**.",
+        "On écrit $1 < \\frac{5}{3} < 2$."
+      ],
+      "hint": "Combien de tiers dans 2 touts entiers ?",
+      "estimated_duration_s": 60,
+      "review_status": "brouillon",
+      "programme_ref": "Cycle 3, CM1 : savoir encadrer une fraction par deux nombres entiers consécutifs."
+    },
+    {
+      "id": "EX-C029-E-01",
+      "skill_id": "C029",
+      "level": "entrainement",
+      "type": "texte",
+      "statement": "Encadre $\\frac{11}{4}$ par deux entiers consécutifs.\n\nÉcris ta réponse sous la forme entier < fraction < entier.",
+      "image": null,
+      "answer": {
+        "value": "2 < 11/4 < 3",
+        "accepted": [
+          "2<11/4<3",
+          "2 < 11 / 4 < 3"
+        ]
+      },
+      "solution_steps": [
+        "On cherche combien de touts entiers tiennent dans 11 quarts : $11 \\div 4 = 2$ reste 3.",
+        "Donc $\\frac{11}{4} = 2 + \\frac{3}{4}$.",
+        "La fraction restante $\\frac{3}{4}$ est inférieure à 1, donc le nombre est compris entre 2 et 3.",
+        "$2 < \\frac{11}{4} < 3$."
+      ],
+      "hint": "Décompose d'abord la fraction en un entier plus une fraction inférieure à 1.",
+      "estimated_duration_s": 90,
+      "review_status": "brouillon",
+      "programme_ref": "Cycle 3, CM1 : savoir encadrer une fraction par deux nombres entiers consécutifs."
+    },
+    {
+      "id": "EX-C029-E-02",
+      "skill_id": "C029",
+      "level": "entrainement",
+      "type": "qcm",
+      "statement": "Entre quels entiers consécutifs se trouve $\\frac{17}{5}$ ?",
+      "image": null,
+      "choices": [
+        {
+          "key": "a",
+          "text": "entre 3 et 4",
+          "misconception": null
+        },
+        {
+          "key": "b",
+          "text": "entre 2 et 3",
+          "misconception": "L'élève se trompe d'un rang, souvent en comptant 5 × 2 = 10 puis en s'arrêtant trop tôt."
+        },
+        {
+          "key": "c",
+          "text": "entre 4 et 5",
+          "misconception": "L'élève dépasse d'un rang, en comptant 5 × 4 = 20 comme s'il tenait dans 17."
+        }
+      ],
+      "answer": {
+        "value": "a"
+      },
+      "solution_steps": [
+        "On cherche combien de fois 5 tient dans 17 : $5 \\times 3 = 15$, et $5 \\times 4 = 20$.",
+        "Comme $15 < 17 < 20$, il y a 3 touts entiers et il reste 2 cinquièmes.",
+        "Donc $\\frac{17}{5} = 3 + \\frac{2}{5}$.",
+        "$3 < \\frac{17}{5} < 4$."
+      ],
+      "hint": "Multiplie le dénominateur par 1, 2, 3, 4… jusqu'à encadrer le numérateur.",
+      "estimated_duration_s": 90,
+      "review_status": "brouillon",
+      "programme_ref": "Cycle 3, CM1 : savoir encadrer une fraction par deux nombres entiers consécutifs."
+    },
+    {
+      "id": "EX-C029-E-03",
+      "skill_id": "C029",
+      "level": "entrainement",
+      "type": "numerique",
+      "statement": "Complète l'encadrement : $2 < \\frac{13}{6} < \\ldots$",
+      "image": null,
+      "answer": {
+        "value": 3
+      },
+      "solution_steps": [
+        "Deux touts valent $2 \\times 6 = 12$ sixièmes, trois touts valent 18 sixièmes.",
+        "$13$ est compris entre 12 et 18, donc la fraction est comprise entre 2 et 3.",
+        "$\\frac{13}{6} = 2 + \\frac{1}{6}$.",
+        "L'entier cherché est **3**."
+      ],
+      "hint": "Combien de sixièmes dans 2 touts ? Et dans 3 touts ?",
+      "estimated_duration_s": 90,
+      "review_status": "brouillon",
+      "programme_ref": "Cycle 3, CM1 : savoir encadrer une fraction par deux nombres entiers consécutifs."
+    },
+    {
+      "id": "EX-C029-M-01",
+      "skill_id": "C029",
+      "level": "maitrise",
+      "type": "qcm",
+      "statement": "Peut-on encadrer $\\frac{8}{4}$ par deux entiers consécutifs, comme on l'a fait pour $\\frac{7}{4}$ ?",
+      "image": null,
+      "choices": [
+        {
+          "key": "a",
+          "text": "Non, car $\\frac{8}{4}$ est exactement égal à 2",
+          "misconception": null
+        },
+        {
+          "key": "b",
+          "text": "Oui, entre 1 et 2",
+          "misconception": "L'élève applique la méthode sans remarquer que la division tombe juste."
+        },
+        {
+          "key": "c",
+          "text": "Oui, entre 2 et 3",
+          "misconception": "L'élève applique la méthode mécaniquement et place le nombre au-dessus de sa valeur réelle."
+        }
+      ],
+      "answer": {
+        "value": "a"
+      },
+      "solution_steps": [
+        "On calcule : $8 \\div 4 = 2$, sans reste.",
+        "$\\frac{8}{4} = 2$ exactement : c'est un nombre entier, pas un nombre situé entre deux entiers.",
+        "Il n'y a donc pas d'encadrement **strict** possible.",
+        "Le repère : l'encadrement strict n'existe que si la division du numérateur par le dénominateur laisse un **reste**."
+      ],
+      "hint": "Effectue la division du numérateur par le dénominateur. Reste-t-il quelque chose ?",
+      "estimated_duration_s": 120,
+      "review_status": "brouillon",
+      "programme_ref": "Cycle 3, CM1 : savoir encadrer une fraction par deux nombres entiers consécutifs."
+    },
+    {
+      "id": "EX-C029-M-02",
+      "skill_id": "C029",
+      "level": "maitrise",
+      "type": "texte",
+      "statement": "Trouve une fraction de **dénominateur 5** comprise entre 3 et 4.\n\nÉcris ta réponse sous la forme numérateur/dénominateur.",
+      "image": null,
+      "answer": {
+        "value": "17/5",
+        "accepted": [
+          "17 / 5",
+          "16/5",
+          "16 / 5",
+          "18/5",
+          "18 / 5",
+          "19/5",
+          "19 / 5"
+        ]
+      },
+      "solution_steps": [
+        "On raisonne à l'envers : on cherche le numérateur.",
+        "$3 = \\frac{15}{5}$ et $4 = \\frac{20}{5}$.",
+        "Il faut donc un numérateur strictement compris entre 15 et 20.",
+        "Par exemple 17 : $\\frac{17}{5} = 3 + \\frac{2}{5}$, bien situé entre 3 et 4.",
+        "16, 18 et 19 conviennent également."
+      ],
+      "hint": "Convertis d'abord 3 et 4 en cinquièmes. Quel numérateur peut se glisser entre les deux ?",
+      "estimated_duration_s": 150,
+      "review_status": "brouillon",
+      "programme_ref": "Cycle 3, CM1 : savoir encadrer une fraction par deux nombres entiers consécutifs."
+    },
+    {
+      "id": "EX-C030-D-01",
+      "skill_id": "C030",
+      "level": "decouverte",
+      "type": "numerique",
+      "statement": "Une demi-droite est graduée en **quarts** à partir de 0.\n\nCombien d'intervalles faut-il parcourir depuis 0 pour atteindre $\\frac{7}{4}$ ?",
+      "image": null,
+      "answer": {
+        "value": 7
+      },
+      "solution_steps": [
+        "Chaque intervalle vaut $\\frac{1}{4}$.",
+        "Le numérateur indique combien de ces intervalles il faut parcourir.",
+        "Pour $\\frac{7}{4}$, il en faut **7**.",
+        "On dépasse alors 1, puisqu'un tout n'en contient que 4."
+      ],
+      "hint": "Le numérateur compte les crans, le dénominateur donne la taille du cran.",
+      "estimated_duration_s": 60,
+      "review_status": "brouillon",
+      "programme_ref": "Cycle 3, CM1 : savoir repérer un point d'une demi-droite graduée par une fraction."
+    },
+    {
+      "id": "EX-C030-D-02",
+      "skill_id": "C030",
+      "level": "decouverte",
+      "type": "texte",
+      "statement": "Une demi-droite est graduée en **tiers** à partir de 0.\n\nQuelle fraction se trouve au 5e cran après 0 ? Écris ta réponse sous la forme numérateur/dénominateur.",
+      "image": null,
+      "answer": {
+        "value": "5/3",
+        "accepted": [
+          "5 / 3"
+        ]
+      },
+      "solution_steps": [
+        "Graduée en tiers : chaque cran vaut $\\frac{1}{3}$.",
+        "Au 5e cran, on a parcouru 5 tiers.",
+        "L'abscisse du point est donc $\\frac{5}{3}$.",
+        "Ce point se situe entre 1 et 2, car $\\frac{5}{3} = 1 + \\frac{2}{3}$."
+      ],
+      "hint": "Cinq fois un tiers, cela fait combien de tiers ?",
+      "estimated_duration_s": 60,
+      "review_status": "brouillon",
+      "programme_ref": "Cycle 3, CM1 : savoir repérer un point d'une demi-droite graduée par une fraction."
+    },
+    {
+      "id": "EX-C030-E-01",
+      "skill_id": "C030",
+      "level": "entrainement",
+      "type": "qcm",
+      "statement": "Sur une demi-droite graduée, où se situe le point d'abscisse $\\frac{9}{4}$ ?",
+      "image": null,
+      "choices": [
+        {
+          "key": "a",
+          "text": "entre 2 et 3",
+          "misconception": null
+        },
+        {
+          "key": "b",
+          "text": "entre 0 et 1",
+          "misconception": "L'élève croit qu'une fraction est toujours inférieure à 1."
+        },
+        {
+          "key": "c",
+          "text": "entre 9 et 10",
+          "misconception": "L'élève lit le numérateur comme s'il donnait la position."
+        }
+      ],
+      "answer": {
+        "value": "a"
+      },
+      "solution_steps": [
+        "Un tout vaut 4 quarts, deux touts valent 8 quarts, trois touts valent 12 quarts.",
+        "$\\frac{9}{4}$ contient 9 quarts : c'est plus que 8, donc plus que 2, et moins que 12, donc moins que 3.",
+        "$\\frac{9}{4} = 2 + \\frac{1}{4}$.",
+        "Le point se situe donc **entre 2 et 3**, juste après 2."
+      ],
+      "hint": "Combien de quarts pour atteindre 2 ? Et pour atteindre 3 ?",
+      "estimated_duration_s": 90,
+      "review_status": "brouillon",
+      "programme_ref": "Cycle 3, CM1 : savoir placer une fraction sur une demi-droite graduée."
+    },
+    {
+      "id": "EX-C030-E-02",
+      "skill_id": "C030",
+      "level": "entrainement",
+      "type": "texte",
+      "statement": "Une demi-droite est graduée en **cinquièmes**. Un point se trouve au 12e cran après 0.\n\nQuelle est son abscisse ? Écris ta réponse sous la forme numérateur/dénominateur.",
+      "image": null,
+      "answer": {
+        "value": "12/5",
+        "accepted": [
+          "12 / 5"
+        ]
+      },
+      "solution_steps": [
+        "Chaque cran vaut $\\frac{1}{5}$.",
+        "Au 12e cran, on a parcouru 12 cinquièmes : l'abscisse est $\\frac{12}{5}$.",
+        "On peut vérifier sa position : $\\frac{12}{5} = 2 + \\frac{2}{5}$, donc le point est entre 2 et 3."
+      ],
+      "hint": "Le nombre de crans donne directement le numérateur.",
+      "estimated_duration_s": 75,
+      "review_status": "brouillon",
+      "programme_ref": "Cycle 3, CM1 : savoir repérer un point d'une demi-droite graduée par une fraction."
+    },
+    {
+      "id": "EX-C030-E-03",
+      "skill_id": "C030",
+      "level": "entrainement",
+      "type": "numerique",
+      "statement": "Une demi-droite est graduée en **demis**.\n\nÀ quel cran après 0 se trouve le nombre entier 3 ?",
+      "image": null,
+      "answer": {
+        "value": 6
+      },
+      "solution_steps": [
+        "Chaque cran vaut $\\frac{1}{2}$.",
+        "Un tout entier vaut 2 demis, donc 3 touts valent $3 \\times 2 = 6$ demis.",
+        "$3 = \\frac{6}{2}$ : le nombre 3 se trouve au **6e** cran.",
+        "Les nombres entiers tombent bien sur des graduations, tous les 2 crans ici."
+      ],
+      "hint": "Combien de demis dans un tout entier ? Et dans trois ?",
+      "estimated_duration_s": 90,
+      "review_status": "brouillon",
+      "programme_ref": "Cycle 3, CM1 : savoir placer une fraction sur une demi-droite graduée."
+    },
+    {
+      "id": "EX-C030-M-01",
+      "skill_id": "C030",
+      "level": "maitrise",
+      "type": "texte",
+      "statement": "Une demi-droite est graduée en **quarts**. Un point se trouve 3 crans **après le nombre 2**.\n\nQuelle est son abscisse ? Écris ta réponse sous la forme numérateur/dénominateur.",
+      "image": null,
+      "answer": {
+        "value": "11/4",
+        "accepted": [
+          "11 / 4"
+        ]
+      },
+      "solution_steps": [
+        "On commence par exprimer 2 en quarts : $2 = \\frac{8}{4}$.",
+        "On avance ensuite de 3 crans, soit 3 quarts de plus : $8 + 3 = 11$ quarts.",
+        "L'abscisse du point est $\\frac{11}{4}$.",
+        "Vérification : $\\frac{11}{4} = 2 + \\frac{3}{4}$, ce qui correspond bien à 3 crans après 2."
+      ],
+      "hint": "Convertis d'abord le nombre 2 en quarts, puis ajoute les crans.",
+      "estimated_duration_s": 120,
+      "review_status": "brouillon",
+      "programme_ref": "Cycle 3, CM1 : savoir repérer un point d'une demi-droite graduée par une fraction ou par la somme d'un nombre entier et d'une fraction."
+    },
+    {
+      "id": "EX-C030-M-02",
+      "skill_id": "C030",
+      "level": "maitrise",
+      "type": "texte",
+      "statement": "Sur une demi-droite graduée en **tiers**, quelle fraction se trouve au cran situé **juste avant** le nombre 2 ?\n\nÉcris ta réponse sous la forme numérateur/dénominateur.",
+      "image": null,
+      "answer": {
+        "value": "5/3",
+        "accepted": [
+          "5 / 3"
+        ]
+      },
+      "solution_steps": [
+        "On exprime 2 en tiers : $2 = \\frac{6}{3}$, donc le nombre 2 est au 6e cran.",
+        "Le cran juste avant est le 5e.",
+        "L'abscisse cherchée est donc $\\frac{5}{3}$.",
+        "Vérification : $\\frac{5}{3} = 1 + \\frac{2}{3}$, un tiers de moins que 2."
+      ],
+      "hint": "À quel cran se trouve le nombre 2 ? Recule ensuite d'un seul cran.",
+      "estimated_duration_s": 120,
+      "review_status": "brouillon",
+      "programme_ref": "Cycle 3, CM1 : savoir repérer un point d'une demi-droite graduée par une fraction."
+    },
+    {
+      "id": "EX-C031-D-01",
+      "skill_id": "C031",
+      "level": "decouverte",
+      "type": "texte",
+      "statement": "Calcule $7 \\times \\frac{1}{4}$.\n\nÉcris ta réponse sous la forme numérateur/dénominateur.",
+      "image": null,
+      "answer": {
+        "value": "7/4",
+        "accepted": [
+          "7 / 4"
+        ]
+      },
+      "solution_steps": [
+        "Prendre 7 fois un quart, c'est prendre 7 quarts.",
+        "$7 \\times \\frac{1}{4} = \\frac{7}{4}$.",
+        "Le dénominateur ne change pas : la taille des parts est la même, on en prend simplement davantage."
+      ],
+      "hint": "Sept fois un quart, cela fait combien de quarts ?",
+      "estimated_duration_s": 60,
+      "review_status": "brouillon",
+      "programme_ref": "Cycle 3, CM2 : calculer le produit d'un entier et d'une fraction."
+    },
+    {
+      "id": "EX-C031-D-02",
+      "skill_id": "C031",
+      "level": "decouverte",
+      "type": "numerique",
+      "statement": "Complète : $3 \\times \\frac{2}{5} = \\frac{\\ldots}{5}$",
+      "image": null,
+      "answer": {
+        "value": 6
+      },
+      "solution_steps": [
+        "On multiplie seulement le **numérateur** : $3 \\times 2 = 6$.",
+        "Le dénominateur reste 5.",
+        "$3 \\times \\frac{2}{5} = \\frac{6}{5}$."
+      ],
+      "hint": "Trois fois deux cinquièmes, cela fait combien de cinquièmes ?",
+      "estimated_duration_s": 60,
+      "review_status": "brouillon",
+      "programme_ref": "Cycle 3, CM2 : calculer le produit d'un entier et d'une fraction."
+    },
+    {
+      "id": "EX-C031-E-01",
+      "skill_id": "C031",
+      "level": "entrainement",
+      "type": "texte",
+      "statement": "Calcule $5 \\times \\frac{3}{8}$.\n\nÉcris ta réponse sous la forme numérateur/dénominateur.",
+      "image": null,
+      "answer": {
+        "value": "15/8",
+        "accepted": [
+          "15 / 8"
+        ]
+      },
+      "solution_steps": [
+        "On multiplie le numérateur par l'entier : $5 \\times 3 = 15$.",
+        "Le dénominateur reste 8.",
+        "$5 \\times \\frac{3}{8} = \\frac{15}{8}$.",
+        "Le résultat dépasse 1, puisque $15 > 8$."
+      ],
+      "hint": "Cinq fois trois huitièmes, cela fait combien de huitièmes ?",
+      "estimated_duration_s": 75,
+      "review_status": "brouillon",
+      "programme_ref": "Cycle 3, CM2 : calculer le produit d'un entier et d'une fraction."
+    },
+    {
+      "id": "EX-C031-E-02",
+      "skill_id": "C031",
+      "level": "entrainement",
+      "type": "qcm",
+      "statement": "Que vaut $4 \\times \\frac{2}{3}$ ?",
+      "image": null,
+      "choices": [
+        {
+          "key": "a",
+          "text": "$\\frac{8}{3}$",
+          "misconception": null
+        },
+        {
+          "key": "b",
+          "text": "$\\frac{8}{12}$",
+          "misconception": "L'élève multiplie aussi le dénominateur par 4, alors que la taille des parts ne change pas."
+        },
+        {
+          "key": "c",
+          "text": "$\\frac{2}{12}$",
+          "misconception": "L'élève multiplie le dénominateur au lieu du numérateur."
+        }
+      ],
+      "answer": {
+        "value": "a"
+      },
+      "solution_steps": [
+        "Multiplier par un entier, c'est prendre plusieurs fois la même quantité de parts.",
+        "$4 \\times \\frac{2}{3}$, c'est 4 fois 2 tiers, donc 8 tiers.",
+        "$4 \\times \\frac{2}{3} = \\frac{8}{3}$.",
+        "Le dénominateur ne bouge pas : les parts restent des tiers."
+      ],
+      "hint": "Le nombre de parts augmente, mais leur taille reste la même.",
+      "estimated_duration_s": 75,
+      "review_status": "brouillon",
+      "programme_ref": "Cycle 3, CM2 : calculer le produit d'un entier et d'une fraction."
+    },
+    {
+      "id": "EX-C031-E-03",
+      "skill_id": "C031",
+      "level": "entrainement",
+      "type": "numerique",
+      "statement": "Un verre contient $\\frac{1}{5}$ de litre. Combien de litres contiennent 10 verres ?",
+      "image": null,
+      "answer": {
+        "value": 2,
+        "unit": "litres"
+      },
+      "solution_steps": [
+        "$10 \\times \\frac{1}{5} = \\frac{10}{5}$.",
+        "$\\frac{10}{5} = 2$, car 5 cinquièmes font 1 litre, et il y en a deux fois 5.",
+        "Les 10 verres contiennent **2 litres**."
+      ],
+      "hint": "Combien de verres faut-il pour remplir un litre entier ?",
+      "estimated_duration_s": 90,
+      "review_status": "brouillon",
+      "programme_ref": "Cycle 3, CM2 : calculer le produit d'un entier et d'une fraction."
+    },
+    {
+      "id": "EX-C031-M-01",
+      "skill_id": "C031",
+      "level": "maitrise",
+      "type": "numerique",
+      "statement": "Combien de fois faut-il prendre $\\frac{3}{4}$ pour obtenir exactement 3 ?",
+      "image": null,
+      "answer": {
+        "value": 4
+      },
+      "solution_steps": [
+        "On cherche l'entier $n$ tel que $n \\times \\frac{3}{4} = 3$.",
+        "3 vaut $\\frac{12}{4}$, soit 12 quarts.",
+        "Chaque prise apporte 3 quarts : il en faut $12 \\div 3 = 4$.",
+        "Vérification : $4 \\times \\frac{3}{4} = \\frac{12}{4} = 3$."
+      ],
+      "hint": "Écris d'abord 3 sous forme de quarts.",
+      "estimated_duration_s": 150,
+      "review_status": "brouillon",
+      "programme_ref": "Cycle 3, CM2 : calculer le produit d'un entier et d'une fraction."
+    },
+    {
+      "id": "EX-C031-M-02",
+      "skill_id": "C031",
+      "level": "maitrise",
+      "type": "qcm",
+      "statement": "Une recette demande $\\frac{2}{3}$ de litre de lait. On la fait 3 fois.\n\nCombien de lait faut-il ?",
+      "image": null,
+      "choices": [
+        {
+          "key": "a",
+          "text": "2 litres",
+          "misconception": null
+        },
+        {
+          "key": "b",
+          "text": "$\\frac{2}{9}$ de litre",
+          "misconception": "L'élève multiplie le dénominateur au lieu du numérateur, et obtient moins que pour une seule recette."
+        },
+        {
+          "key": "c",
+          "text": "$\\frac{6}{9}$ de litre",
+          "misconception": "L'élève multiplie numérateur et dénominateur, ce qui redonne la quantité d'une seule recette."
+        }
+      ],
+      "answer": {
+        "value": "a"
+      },
+      "solution_steps": [
+        "$3 \\times \\frac{2}{3} = \\frac{6}{3}$.",
+        "$\\frac{6}{3} = 2$, car 3 tiers font 1 litre et il y a deux fois 3 tiers.",
+        "Il faut **2 litres**.",
+        "Contrôle de bon sens : une recette demande un peu moins d'un litre, donc trois recettes doivent demander un peu moins de 3 litres. Les réponses b et c donnent moins d'un litre, ce qui est impossible."
+      ],
+      "hint": "Est-ce que trois recettes peuvent demander moins de lait qu'une seule ?",
+      "estimated_duration_s": 150,
+      "review_status": "brouillon",
+      "programme_ref": "Cycle 3, CM2 : calculer le produit d'un entier et d'une fraction."
+    },
+    {
+      "id": "EX-C032-D-01",
+      "skill_id": "C032",
+      "level": "decouverte",
+      "type": "texte",
+      "statement": "On partage 3 gâteaux identiques entre 4 enfants.\n\nQuelle part reçoit chaque enfant ? Écris ta réponse sous la forme numérateur/dénominateur.",
+      "image": null,
+      "answer": {
+        "value": "3/4",
+        "accepted": [
+          "3 / 4"
+        ]
+      },
+      "solution_steps": [
+        "On partage 3 objets en 4 parts égales : c'est une division, $3 \\div 4$.",
+        "Le résultat s'écrit $\\frac{3}{4}$.",
+        "C'est le nouveau sens de la fraction : $\\frac{3}{4}$ est aussi **le quart de 3**, et pas seulement 3 quarts d'un gâteau."
+      ],
+      "hint": "Partager 3 en 4 parts égales, c'est une division. Écris-la sous forme de fraction.",
+      "estimated_duration_s": 90,
+      "review_status": "brouillon",
+      "programme_ref": "Cycle 3, 6e : en classe de 6e, la fraction acquiert un nouveau sens, celui de quotient."
+    },
+    {
+      "id": "EX-C032-D-02",
+      "skill_id": "C032",
+      "level": "decouverte",
+      "type": "numerique",
+      "statement": "Complète : $5 \\times \\frac{3}{5} = \\ldots$",
+      "image": null,
+      "answer": {
+        "value": 3
+      },
+      "solution_steps": [
+        "$\\frac{3}{5}$ est le nombre qui, multiplié par 5, donne 3. C'est la définition du quotient.",
+        "Donc $5 \\times \\frac{3}{5} = 3$.",
+        "On peut le vérifier : $5 \\times \\frac{3}{5} = \\frac{15}{5} = 3$."
+      ],
+      "hint": "Que signifie l'écriture 3 sur 5, en termes de division ?",
+      "estimated_duration_s": 90,
+      "review_status": "brouillon",
+      "programme_ref": "Cycle 3, 6e : comprendre la définition du quotient d'un entier a par un entier b non nul."
+    },
+    {
+      "id": "EX-C032-E-01",
+      "skill_id": "C032",
+      "level": "entrainement",
+      "type": "texte",
+      "statement": "Écris le résultat de $7 \\div 3$ sous forme de fraction.\n\nÉcris ta réponse sous la forme numérateur/dénominateur.",
+      "image": null,
+      "answer": {
+        "value": "7/3",
+        "accepted": [
+          "7 / 3"
+        ]
+      },
+      "solution_steps": [
+        "Le quotient de 7 par 3 s'écrit directement $\\frac{7}{3}$.",
+        "La division ne tombe pas juste, mais la fraction en donne le résultat exact.",
+        "$\\frac{7}{3} = 2 + \\frac{1}{3}$ : chaque part vaut un peu plus de 2."
+      ],
+      "hint": "Le dividende devient le numérateur, le diviseur le dénominateur.",
+      "estimated_duration_s": 75,
+      "review_status": "brouillon",
+      "programme_ref": "Cycle 3, 6e : la fraction acquiert le sens de quotient."
+    },
+    {
+      "id": "EX-C032-E-02",
+      "skill_id": "C032",
+      "level": "entrainement",
+      "type": "qcm",
+      "statement": "Que vaut le tiers de 2 ?",
+      "image": null,
+      "choices": [
+        {
+          "key": "a",
+          "text": "$\\frac{2}{3}$",
+          "misconception": null
+        },
+        {
+          "key": "b",
+          "text": "$\\frac{3}{2}$",
+          "misconception": "L'élève intervertit dividende et diviseur : il calcule le demi de 3 au lieu du tiers de 2."
+        },
+        {
+          "key": "c",
+          "text": "$\\frac{1}{6}$",
+          "misconception": "L'élève multiplie les deux nombres au dénominateur, comme s'il partageait un tiers en deux."
+        }
+      ],
+      "answer": {
+        "value": "a"
+      },
+      "solution_steps": [
+        "Le tiers de 2, c'est 2 partagé en 3 parts égales, donc $2 \\div 3$.",
+        "Ce quotient s'écrit $\\frac{2}{3}$.",
+        "Vérification : $3 \\times \\frac{2}{3} = \\frac{6}{3} = 2$. On retrouve bien 2."
+      ],
+      "hint": "« Le tiers de 2 » se traduit par une division. Laquelle, dans quel ordre ?",
+      "estimated_duration_s": 90,
+      "review_status": "brouillon",
+      "programme_ref": "Cycle 3, 6e : la fraction opère sur un nombre, sens de quotient."
+    },
+    {
+      "id": "EX-C032-E-03",
+      "skill_id": "C032",
+      "level": "entrainement",
+      "type": "numerique",
+      "statement": "Un ruban de 5 mètres est coupé en 4 morceaux égaux.\n\nOn cherche la longueur d'un morceau, écrite $\\frac{\\ldots}{4}$ de mètre. Quel est le numérateur ?",
+      "image": null,
+      "answer": {
+        "value": 5
+      },
+      "solution_steps": [
+        "Couper 5 mètres en 4 morceaux égaux, c'est calculer $5 \\div 4$.",
+        "Ce quotient s'écrit $\\frac{5}{4}$.",
+        "Le numérateur est **5** : c'est la longueur totale à partager.",
+        "Chaque morceau mesure un peu plus d'un mètre, puisque $\\frac{5}{4} = 1 + \\frac{1}{4}$."
+      ],
+      "hint": "Ce qu'on partage devient le numérateur, le nombre de parts devient le dénominateur.",
+      "estimated_duration_s": 105,
+      "review_status": "brouillon",
+      "programme_ref": "Cycle 3, 6e : la fraction acquiert le sens de quotient."
+    },
+    {
+      "id": "EX-C032-M-01",
+      "skill_id": "C032",
+      "level": "maitrise",
+      "type": "vrai_faux",
+      "statement": "Prendre les $\\frac{3}{4}$ d'un gâteau et partager 3 gâteaux entre 4 personnes donnent la même quantité.",
+      "image": null,
+      "answer": {
+        "value": true
+      },
+      "solution_steps": [
+        "Premier cas : $\\frac{3}{4}$ d'un gâteau, c'est 3 parts sur les 4 d'un seul gâteau.",
+        "Second cas : 3 gâteaux partagés entre 4 personnes, c'est $3 \\div 4$, ce qui s'écrit aussi $\\frac{3}{4}$.",
+        "Les deux situations donnent donc la **même** quantité, même si elles ne se ressemblent pas.",
+        "L'affirmation est **vraie**. C'est exactement ce que signifie le sens de quotient : $\\frac{3}{4}$ est à la fois 3 quarts d'un tout et le quart de 3."
+      ],
+      "hint": "Écris chaque situation sous forme de fraction, puis compare les deux écritures.",
+      "estimated_duration_s": 180,
+      "review_status": "brouillon",
+      "programme_ref": "Cycle 3, 6e : la fraction ne représente pas seulement 3 quarts d'une unité de référence, mais aussi le quart de 3."
+    },
+    {
+      "id": "EX-C032-M-02",
+      "skill_id": "C032",
+      "level": "maitrise",
+      "type": "numerique",
+      "statement": "Trouve le nombre qui, multiplié par 8, donne 5.\n\nIl s'écrit $\\frac{\\ldots}{8}$. Quel est son numérateur ?",
+      "image": null,
+      "answer": {
+        "value": 5
+      },
+      "solution_steps": [
+        "On cherche le nombre $x$ tel que $8 \\times x = 5$.",
+        "Par définition du quotient, ce nombre est $\\frac{5}{8}$.",
+        "Le numérateur est **5**.",
+        "Vérification : $8 \\times \\frac{5}{8} = \\frac{40}{8} = 5$.",
+        "Ce type d'égalité à trou prépare la résolution d'équations."
+      ],
+      "hint": "Une égalité à trou du type 8 × … = 5 se résout par une division. Écris-la en fraction.",
+      "estimated_duration_s": 180,
+      "review_status": "brouillon",
+      "programme_ref": "Cycle 3, 6e : cette définition est mobilisée dans la résolution d'égalités à trous, qui préfigurent celle de l'équation a × x = b."
     }
   ]
 }
