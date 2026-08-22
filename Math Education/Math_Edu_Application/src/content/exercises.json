@@ -3,7 +3,7 @@
     "version": "1.0",
     "scope": "Tranche pilote CP a 4e : 69 exercices, 3 par competence (1 decouverte, 1 entrainement, 1 maitrise) sur les 23 competences des domaines A et C. La cible finale de la roadmap est de 5 exercices par niveau, soit 15 par competence.",
     "updated_at": "2026-07-28",
-    "total_exercises": 111,
+    "total_exercises": 153,
     "review_status": "relu_agent"
   },
   "exercises": [
@@ -857,6 +857,1194 @@
       "programme_ref": "Cycle 2, CE1 : l'élève sait donner tous les nombres pairs compris en 767 et 778."
     },
     {
+      "id": "EX-A012-D-01",
+      "skill_id": "A012",
+      "level": "decouverte",
+      "type": "vrai_faux",
+      "statement": "Léa compte de 7 en 7 à partir de 0 : 7, 14, 21, 28, 35, 42, 49.\n\nLe nombre 42 est un multiple de 7.",
+      "image": null,
+      "answer": {
+        "value": true
+      },
+      "solution_steps": [
+        "Compter de 7 en 7 à partir de 0, c'est écrire la table de 7.",
+        "Dans la liste de Léa, 42 apparaît : il vient juste après 35.",
+        "On peut aussi l'écrire comme une multiplication : $42 = 7 \\times 6$.",
+        "42 est donc bien un multiple de 7. L'affirmation est **vraie**."
+      ],
+      "hint": "Cherche 42 dans la liste que Léa a écrite.",
+      "estimated_duration_s": 40,
+      "review_status": "brouillon",
+      "programme_ref": "Cycle 3, CM1, les nombres entiers : savoir determiner si un nombre entier donne est un multiple d'un nombre entier inferieur ou egal a 10."
+    },
+    {
+      "id": "EX-A012-D-02",
+      "skill_id": "A012",
+      "level": "decouverte",
+      "type": "qcm",
+      "statement": "Léa compte de 7 en 7 à partir de 0 : 7, 14, 21, 28, 35, 42, 49.\n\nElle continue longtemps. Lequel de ces nombres dira-t-elle ?",
+      "image": null,
+      "choices": [
+        {
+          "key": "a",
+          "text": "63",
+          "misconception": null
+        },
+        {
+          "key": "b",
+          "text": "59",
+          "misconception": "L'élève avance de 10 au lieu de 7 : il ajoute 10 à 49 et obtient 59, qui n'est dans aucune multiplication par 7."
+        },
+        {
+          "key": "c",
+          "text": "64",
+          "misconception": "L'élève glisse vers la table de 8 : $64 = 8 \\times 8$, mais 64 n'est pas un multiple de 7."
+        }
+      ],
+      "answer": {
+        "value": "a"
+      },
+      "solution_steps": [
+        "Les nombres que dit Léa sont les multiples de 7 : $7 \\times 1$, $7 \\times 2$, $7 \\times 3$, et ainsi de suite.",
+        "Après 49 vient 56, puis 63.",
+        "$63 = 7 \\times 9$ : Léa dira bien 63.",
+        "59 et 64 n'apparaissent dans aucune multiplication par 7, puisque $7 \\times 8 = 56$ et $7 \\times 9 = 63$."
+      ],
+      "hint": "Continue la liste de Léa : quel nombre vient juste après 49 ?",
+      "estimated_duration_s": 60,
+      "review_status": "brouillon",
+      "programme_ref": "Cycle 3, CM1, les nombres entiers : savoir determiner si un nombre entier donne est un multiple d'un nombre entier inferieur ou egal a 10."
+    },
+    {
+      "id": "EX-A012-E-01",
+      "skill_id": "A012",
+      "level": "entrainement",
+      "type": "vrai_faux",
+      "statement": "Un fleuriste range 96 tulipes en bouquets de 6 tulipes. Il n'en reste aucune.\n\nDonc 96 est un multiple de 6.",
+      "image": null,
+      "answer": {
+        "value": true
+      },
+      "solution_steps": [
+        "On cherche si le fleuriste peut faire un nombre entier de bouquets.",
+        "$96 \\div 6 = 16$ : il fait 16 bouquets, et il ne reste rien.",
+        "Autrement dit $96 = 6 \\times 16$.",
+        "Un nombre qui s'écrit 6 multiplié par un entier est un multiple de 6. L'affirmation est **vraie**."
+      ],
+      "hint": "Cherche par combien il faut multiplier 6 pour obtenir 96.",
+      "estimated_duration_s": 60,
+      "review_status": "brouillon",
+      "programme_ref": "Cycle 3, CM1, les nombres entiers : savoir determiner si un nombre entier donne est un multiple d'un nombre entier inferieur ou egal a 10."
+    },
+    {
+      "id": "EX-A012-E-02",
+      "skill_id": "A012",
+      "level": "entrainement",
+      "type": "texte",
+      "statement": "Parmi 128, 150, 216 et 305, quels nombres sont des multiples de 4 ?\n\nSépare-les par des virgules.",
+      "image": null,
+      "answer": {
+        "value": "128, 216",
+        "accepted": [
+          "128,216",
+          "128 et 216",
+          "216, 128"
+        ]
+      },
+      "solution_steps": [
+        "Un nombre est un multiple de 4 s'il s'écrit 4 multiplié par un nombre entier.",
+        "$128 = 4 \\times 32$ : c'est un multiple de 4.",
+        "$150 = 4 \\times 37 + 2$ : il reste 2, ce n'est pas un multiple de 4.",
+        "$216 = 4 \\times 54$ : c'est un multiple de 4.",
+        "$305 = 4 \\times 76 + 1$ : il reste 1, ce n'est pas un multiple de 4.",
+        "Réponse : 128, 216."
+      ],
+      "hint": "Divise chaque nombre par 4 et regarde s'il reste quelque chose.",
+      "estimated_duration_s": 120,
+      "review_status": "brouillon",
+      "programme_ref": "Cycle 3, CM1, les nombres entiers : savoir determiner si un nombre entier donne est un multiple d'un nombre entier inferieur ou egal a 10."
+    },
+    {
+      "id": "EX-A012-E-03",
+      "skill_id": "A012",
+      "level": "entrainement",
+      "type": "qcm",
+      "statement": "Théo pose 23 rangées de 7 images et trouve $7 \\times 23 = 161$.\n\nQue peut-il en déduire ?",
+      "image": null,
+      "choices": [
+        {
+          "key": "a",
+          "text": "161 est un multiple de 7",
+          "misconception": null
+        },
+        {
+          "key": "b",
+          "text": "7 est un multiple de 161",
+          "misconception": "L'élève inverse les rôles : c'est le résultat de la multiplication qui est le multiple, pas le facteur. 7 est plus petit que 161."
+        },
+        {
+          "key": "c",
+          "text": "161 est un multiple de 30",
+          "misconception": "L'élève additionne les deux facteurs, $7 + 23 = 30$, au lieu de garder la multiplication ; or 161 n'est pas dans la table de 30."
+        }
+      ],
+      "answer": {
+        "value": "a"
+      },
+      "solution_steps": [
+        "Un multiple de 7 est un nombre qui s'écrit 7 multiplié par un nombre entier.",
+        "Ici $161 = 7 \\times 23$ : 161 est donc un multiple de 7.",
+        "Une même multiplication le dit aussi de 23 : 161 est également un multiple de 23.",
+        "En revanche 7 n'est pas un multiple de 161 : 7 est plus petit que 161, et aucune multiplication $161 \\times \\ldots$ ne donne 7.",
+        "Réponse : 161 est un multiple de 7."
+      ],
+      "hint": "Dans $7 \\times 23 = 161$, quel nombre est le résultat de la multiplication ?",
+      "estimated_duration_s": 75,
+      "review_status": "brouillon",
+      "programme_ref": "Cycle 3, CM1, les nombres entiers : savoir determiner si un nombre entier donne est un multiple d'un nombre entier inferieur ou egal a 10."
+    },
+    {
+      "id": "EX-A012-M-01",
+      "skill_id": "A012",
+      "level": "maitrise",
+      "type": "numerique",
+      "statement": "Un nombre est un multiple de 8. Il est compris entre 300 et 310.\n\nQuel est ce nombre ?",
+      "image": null,
+      "answer": {
+        "value": 304
+      },
+      "solution_steps": [
+        "Cette fois on ne demande pas de vérifier un nombre, mais de le retrouver : il faut parcourir la table de 8.",
+        "$8 \\times 37 = 296$ : trop petit, on n'a pas encore atteint 300.",
+        "$8 \\times 38 = 304$ : 304 est bien compris entre 300 et 310.",
+        "$8 \\times 39 = 312$ : trop grand.",
+        "Le nombre cherché est **304**, et c'est le seul possible."
+      ],
+      "hint": "Cherche par quel nombre multiplier 8 pour arriver juste au-dessus de 300.",
+      "estimated_duration_s": 120,
+      "review_status": "brouillon",
+      "programme_ref": "Cycle 3, CM1, les nombres entiers : savoir determiner si un nombre entier donne est un multiple d'un nombre entier inferieur ou egal a 10."
+    },
+    {
+      "id": "EX-A012-M-02",
+      "skill_id": "A012",
+      "level": "maitrise",
+      "type": "vrai_faux",
+      "statement": "Nina remarque que 4 514 est un nombre pair.\n\nElle en conclut que 4 514 est un multiple de 4. Nina a raison.",
+      "image": null,
+      "answer": {
+        "value": false
+      },
+      "solution_steps": [
+        "Le début est juste : 4 514 se termine par 4, il est donc pair, c'est-à-dire multiple de 2.",
+        "Mais être un multiple de 2 ne suffit pas pour être un multiple de 4.",
+        "$4\\,514 \\div 4$ donne 1 128 et il reste 2 : $4\\,514 = 4 \\times 1\\,128 + 2$.",
+        "4 514 n'est donc pas un multiple de 4 : Nina a **tort**.",
+        "Un nombre pair peut l'être, comme $4\\,512 = 4 \\times 1\\,128$, mais ce n'est pas automatique. Contre-exemples simples : 6 et 10 sont pairs sans être dans la table de 4."
+      ],
+      "hint": "Tous les nombres pairs sont-ils dans la table de 4 ? Regarde 6, puis 10.",
+      "estimated_duration_s": 120,
+      "review_status": "brouillon",
+      "programme_ref": "Cycle 3, CM1, les nombres entiers : savoir determiner si un nombre entier donne est un multiple d'un nombre entier inferieur ou egal a 10."
+    },
+    {
+      "id": "EX-A013-D-01",
+      "skill_id": "A013",
+      "level": "decouverte",
+      "type": "vrai_faux",
+      "statement": "36 cartes sont partagées entre 4 joueurs. Chacun en reçoit autant et il n'en reste aucune.\n\nDonc 4 est un diviseur de 36.",
+      "image": null,
+      "answer": {
+        "value": true
+      },
+      "solution_steps": [
+        "Partager 36 cartes en 4 parts égales, c'est calculer $36 \\div 4$.",
+        "$36 \\div 4 = 9$ : chaque joueur reçoit 9 cartes et il ne reste rien.",
+        "La division tombe juste, donc 4 est bien un diviseur de 36.",
+        "On peut le dire dans l'autre sens : 36 est un multiple de 4, car $36 = 4 \\times 9$.",
+        "L'affirmation est **vraie**."
+      ],
+      "hint": "Partage 36 en 4 parts égales : la division tombe-t-elle juste ?",
+      "estimated_duration_s": 45,
+      "review_status": "brouillon",
+      "programme_ref": "Cycle 3, CM1, les nombres entiers : savoir determiner si un nombre entier inferieur ou egal a 10 est un diviseur d'un nombre entier donne."
+    },
+    {
+      "id": "EX-A013-D-02",
+      "skill_id": "A013",
+      "level": "decouverte",
+      "type": "qcm",
+      "statement": "On veut partager les mêmes 36 cartes entre un autre nombre de joueurs, sans qu'il en reste.\n\nQuel nombre de joueurs convient ?",
+      "image": null,
+      "choices": [
+        {
+          "key": "a",
+          "text": "6 joueurs",
+          "misconception": null
+        },
+        {
+          "key": "b",
+          "text": "7 joueurs",
+          "misconception": "L'élève confond 36 et 35 : c'est 35 qui est dans la table de 7, car $7 \\times 5 = 35$. Avec 36 cartes, il resterait 1 carte."
+        },
+        {
+          "key": "c",
+          "text": "8 joueurs",
+          "misconception": "L'élève double le 4 du départ, en croyant qu'un partage par 8 marche dès qu'un partage par 4 marche ; or $8 \\times 4 = 32$ et il resterait 4 cartes."
+        }
+      ],
+      "answer": {
+        "value": "a"
+      },
+      "solution_steps": [
+        "On cherche un nombre par lequel 36 se partage sans reste, c'est-à-dire un diviseur de 36.",
+        "$36 \\div 6 = 6$ : 6 joueurs reçoivent 6 cartes chacun, il ne reste rien.",
+        "$36 \\div 7$ ne tombe pas juste : $7 \\times 5 = 35$, il resterait 1 carte.",
+        "$36 \\div 8$ ne tombe pas juste non plus : $8 \\times 4 = 32$, il resterait 4 cartes.",
+        "Réponse : 6 joueurs."
+      ],
+      "hint": "Essaie chaque nombre proposé : la division tombe-t-elle juste ?",
+      "estimated_duration_s": 75,
+      "review_status": "brouillon",
+      "programme_ref": "Cycle 3, CM1, les nombres entiers : savoir determiner si un nombre entier inferieur ou egal a 10 est un diviseur d'un nombre entier donne."
+    },
+    {
+      "id": "EX-A013-E-01",
+      "skill_id": "A013",
+      "level": "entrainement",
+      "type": "texte",
+      "statement": "Parmi 3, 5, 6 et 8, lesquels sont des diviseurs de 84 ?\n\nSépare-les par des virgules.",
+      "image": null,
+      "answer": {
+        "value": "3, 6",
+        "accepted": [
+          "3,6",
+          "3 et 6",
+          "6, 3"
+        ]
+      },
+      "solution_steps": [
+        "Un nombre est un diviseur de 84 si la division de 84 par ce nombre tombe juste.",
+        "$84 \\div 3 = 28$ : 3 est un diviseur de 84.",
+        "$84 \\div 5$ : $5 \\times 16 = 80$, il reste 4. 5 n'est pas un diviseur de 84.",
+        "$84 \\div 6 = 14$ : 6 est un diviseur de 84.",
+        "$84 \\div 8$ : $8 \\times 10 = 80$, il reste 4 également. 8 n'est pas un diviseur de 84.",
+        "Réponse : 3, 6."
+      ],
+      "hint": "Pose chaque division et regarde le reste.",
+      "estimated_duration_s": 120,
+      "review_status": "brouillon",
+      "programme_ref": "Cycle 3, CM1, les nombres entiers : savoir determiner si un nombre entier inferieur ou egal a 10 est un diviseur d'un nombre entier donne."
+    },
+    {
+      "id": "EX-A013-E-02",
+      "skill_id": "A013",
+      "level": "entrainement",
+      "type": "qcm",
+      "statement": "Un libraire range 630 livres en piles égales.\n\nParmi 4, 7 et 8, quel nombre de piles est possible ?",
+      "image": null,
+      "choices": [
+        {
+          "key": "a",
+          "text": "7 piles",
+          "misconception": null
+        },
+        {
+          "key": "b",
+          "text": "4 piles",
+          "misconception": "L'élève pense que tout nombre pair se partage en 4 ; or $630 = 4 \\times 157 + 2$, il resterait 2 livres."
+        },
+        {
+          "key": "c",
+          "text": "8 piles",
+          "misconception": "L'élève croit qu'un nombre terminé par 0 se partage en 8 ; or $630 = 8 \\times 78 + 6$, il resterait 6 livres."
+        }
+      ],
+      "answer": {
+        "value": "a"
+      },
+      "solution_steps": [
+        "Pour que les piles soient égales et qu'il ne reste rien, le nombre de piles doit être un diviseur de 630.",
+        "$630 \\div 7 = 90$ : 7 piles de 90 livres, rien ne reste.",
+        "$630 \\div 4$ : $4 \\times 157 = 628$, il resterait 2 livres.",
+        "$630 \\div 8$ : $8 \\times 78 = 624$, il resterait 6 livres.",
+        "Réponse : 7 piles."
+      ],
+      "hint": "Cherche la division qui tombe juste, sans aucun reste.",
+      "estimated_duration_s": 90,
+      "review_status": "brouillon",
+      "programme_ref": "Cycle 3, CM1, les nombres entiers : savoir determiner si un nombre entier inferieur ou egal a 10 est un diviseur d'un nombre entier donne."
+    },
+    {
+      "id": "EX-A013-E-03",
+      "skill_id": "A013",
+      "level": "entrainement",
+      "type": "numerique",
+      "statement": "Un maraîcher a 258 pommes et fait des sacs de 6 pommes.\n\nComplète : $258 = 6 \\times \\ldots$",
+      "image": null,
+      "answer": {
+        "value": 43
+      },
+      "solution_steps": [
+        "On cherche par quel nombre multiplier 6 pour obtenir 258.",
+        "$258 \\div 6 = 43$.",
+        "Vérification : $6 \\times 43 = 258$, il ne reste rien.",
+        "Le maraîcher remplit 43 sacs, et 6 est bien un diviseur de 258."
+      ],
+      "hint": "Pose la division de 258 par 6.",
+      "estimated_duration_s": 90,
+      "review_status": "brouillon",
+      "programme_ref": "Cycle 3, CM1, les nombres entiers : savoir determiner si un nombre entier inferieur ou egal a 10 est un diviseur d'un nombre entier donne."
+    },
+    {
+      "id": "EX-A013-M-01",
+      "skill_id": "A013",
+      "level": "maitrise",
+      "type": "vrai_faux",
+      "statement": "Karim écrit : « 5 est un diviseur de 45. Donc 45 est un diviseur de 5. »\n\nKarim a raison.",
+      "image": null,
+      "answer": {
+        "value": false
+      },
+      "solution_steps": [
+        "La première phrase est juste : $45 \\div 5 = 9$, donc 5 est un diviseur de 45.",
+        "Mais on ne peut pas échanger les deux nombres : un diviseur est toujours plus petit que le nombre qu'il divise, ou égal à lui.",
+        "$5 \\div 45$ ne tombe pas juste, donc 45 n'est pas un diviseur de 5.",
+        "Le bon renversement utilise l'autre mot : 45 est un **multiple** de 5, car $45 = 5 \\times 9$.",
+        "Karim a donc **tort**."
+      ],
+      "hint": "Un diviseur est-il plus petit ou plus grand que le nombre qu'il divise ?",
+      "estimated_duration_s": 105,
+      "review_status": "brouillon",
+      "programme_ref": "Cycle 3, CM1, les nombres entiers : savoir determiner si un nombre entier inferieur ou egal a 10 est un diviseur d'un nombre entier donne."
+    },
+    {
+      "id": "EX-A013-M-02",
+      "skill_id": "A013",
+      "level": "maitrise",
+      "type": "numerique",
+      "statement": "Une école range 96 cahiers en paquets égaux. Un paquet contient moins de 10 cahiers.\n\nQuel est le plus grand nombre de cahiers par paquet ?",
+      "image": null,
+      "answer": {
+        "value": 8,
+        "unit": "cahiers"
+      },
+      "solution_steps": [
+        "Le nombre de cahiers par paquet doit être un diviseur de 96, sinon un paquet serait incomplet.",
+        "On part du plus grand candidat : $96 \\div 9$ ne tombe pas juste, car $9 \\times 10 = 90$ et il resterait 6 cahiers.",
+        "$96 \\div 8 = 12$ : cette division tombe juste.",
+        "Les diviseurs de 96 inférieurs à 10 sont 1, 2, 3, 4, 6 et 8 : le plus grand est 8.",
+        "Réponse : **8** cahiers par paquet, soit 12 paquets."
+      ],
+      "hint": "Teste 9, puis 8 : quelle est la première division qui tombe juste ?",
+      "estimated_duration_s": 150,
+      "review_status": "brouillon",
+      "programme_ref": "Cycle 3, CM1, les nombres entiers : savoir determiner si un nombre entier inferieur ou egal a 10 est un diviseur d'un nombre entier donne."
+    },
+    {
+      "id": "EX-A014-D-01",
+      "skill_id": "A014",
+      "level": "decouverte",
+      "type": "qcm",
+      "statement": "Voici quatre nombres : 34, 45, 60 et 87.\n\nLesquels sont des multiples de 2 ?",
+      "image": null,
+      "choices": [
+        {
+          "key": "a",
+          "text": "34 et 60",
+          "misconception": null
+        },
+        {
+          "key": "b",
+          "text": "45 et 87",
+          "misconception": "L'élève retient les nombres impairs : il confond « se termine par un chiffre impair » et « multiple de 2 »."
+        },
+        {
+          "key": "c",
+          "text": "34, 45 et 60",
+          "misconception": "L'élève ajoute 45, en croyant qu'un nombre terminé par 5 est aussi un multiple de 2."
+        }
+      ],
+      "answer": {
+        "value": "a"
+      },
+      "solution_steps": [
+        "Un nombre est un multiple de 2 lorsque son chiffre des unités est 0, 2, 4, 6 ou 8.",
+        "34 se termine par 4 : c'est un multiple de 2.",
+        "45 se termine par 5 et 87 se termine par 7 : ce ne sont pas des multiples de 2.",
+        "60 se termine par 0 : c'est un multiple de 2.",
+        "Réponse : 34 et 60."
+      ],
+      "hint": "Regarde seulement le dernier chiffre de chaque nombre.",
+      "estimated_duration_s": 45,
+      "review_status": "brouillon",
+      "programme_ref": "Cycle 3, CM1, les nombres entiers : savoir reconnaitre les multiples de 2, de 5 et de 10 a partir de leur ecriture chiffree."
+    },
+    {
+      "id": "EX-A014-D-02",
+      "skill_id": "A014",
+      "level": "decouverte",
+      "type": "qcm",
+      "statement": "Toujours avec les nombres 34, 45, 60 et 87.\n\nLesquels sont des multiples de 5 ?",
+      "image": null,
+      "choices": [
+        {
+          "key": "a",
+          "text": "45 et 60",
+          "misconception": null
+        },
+        {
+          "key": "b",
+          "text": "60 seulement",
+          "misconception": "L'élève ne retient que le chiffre 0 et oublie que les nombres terminés par 5 sont aussi des multiples de 5."
+        },
+        {
+          "key": "c",
+          "text": "34 et 60",
+          "misconception": "L'élève recopie la réponse trouvée pour les multiples de 2 sans changer de critère."
+        }
+      ],
+      "answer": {
+        "value": "a"
+      },
+      "solution_steps": [
+        "Un nombre est un multiple de 5 lorsque son chiffre des unités est 0 ou 5. Deux chiffres sont donc possibles, contre cinq pour les multiples de 2.",
+        "34 se termine par 4 : non. 87 se termine par 7 : non.",
+        "45 se termine par 5 : oui, $45 = 5 \\times 9$.",
+        "60 se termine par 0 : oui, $60 = 5 \\times 12$.",
+        "Réponse : 45 et 60. Remarque : 60 est à la fois multiple de 2 et multiple de 5."
+      ],
+      "hint": "Pour les multiples de 5, deux chiffres des unités sont possibles.",
+      "estimated_duration_s": 45,
+      "review_status": "brouillon",
+      "programme_ref": "Cycle 3, CM1, les nombres entiers : savoir reconnaitre les multiples de 2, de 5 et de 10 a partir de leur ecriture chiffree."
+    },
+    {
+      "id": "EX-A014-E-01",
+      "skill_id": "A014",
+      "level": "entrainement",
+      "type": "texte",
+      "statement": "Parmi 1 250, 3 004, 4 815 et 6 730, quels sont les multiples de 10 ?\n\nSépare-les par des virgules.",
+      "image": null,
+      "answer": {
+        "value": "1250, 6730",
+        "accepted": [
+          "1 250, 6 730",
+          "1250,6730",
+          "6730, 1250"
+        ]
+      },
+      "solution_steps": [
+        "Un nombre est un multiple de 10 lorsque son chiffre des unités est 0.",
+        "1 250 se termine par 0 : c'est un multiple de 10.",
+        "3 004 se termine par 4 : c'est un multiple de 2, mais pas de 10.",
+        "4 815 se termine par 5 : c'est un multiple de 5, mais pas de 10.",
+        "6 730 se termine par 0 : c'est un multiple de 10.",
+        "Réponse : 1 250 et 6 730."
+      ],
+      "hint": "Un seul chiffre compte, celui des unités.",
+      "estimated_duration_s": 90,
+      "review_status": "brouillon",
+      "programme_ref": "Cycle 3, CM1, les nombres entiers : savoir reconnaitre les multiples de 2, de 5 et de 10 a partir de leur ecriture chiffree."
+    },
+    {
+      "id": "EX-A014-E-02",
+      "skill_id": "A014",
+      "level": "entrainement",
+      "type": "vrai_faux",
+      "statement": "Le nombre 27 985 est un multiple de 5, mais ce n'est pas un multiple de 10.",
+      "image": null,
+      "answer": {
+        "value": true
+      },
+      "solution_steps": [
+        "Le chiffre des unités de 27 985 est 5.",
+        "Un nombre terminé par 0 ou par 5 est un multiple de 5 : ici $27\\,985 = 5 \\times 5\\,597$.",
+        "Un multiple de 10 doit se terminer par 0, ce qui n'est pas le cas.",
+        "Les deux parties de la phrase sont donc justes : l'affirmation est **vraie**."
+      ],
+      "hint": "Les multiples de 10 se terminent tous par le même chiffre. Lequel ?",
+      "estimated_duration_s": 60,
+      "review_status": "brouillon",
+      "programme_ref": "Cycle 3, CM1, les nombres entiers : savoir reconnaitre les multiples de 2, de 5 et de 10 a partir de leur ecriture chiffree."
+    },
+    {
+      "id": "EX-A014-E-03",
+      "skill_id": "A014",
+      "level": "entrainement",
+      "type": "numerique",
+      "statement": "Un livreur compte ses colis de 5 en 5.\n\nÉcris le plus grand multiple de 5 plus petit que 8 000.",
+      "image": null,
+      "answer": {
+        "value": 7995,
+        "accepted": [
+          "7 995",
+          "7995"
+        ]
+      },
+      "solution_steps": [
+        "Les multiples de 5 se terminent par 0 ou par 5.",
+        "8 000 est bien un multiple de 5, mais il n'est pas plus petit que 8 000 : il est écarté.",
+        "On recule : 7 999, 7 998, 7 997, 7 996, puis 7 995.",
+        "7 995 se termine par 5 : c'est un multiple de 5, et $7\\,995 = 5 \\times 1\\,599$.",
+        "Réponse : **7 995**."
+      ],
+      "hint": "Recule à partir de 8 000 jusqu'au premier nombre terminé par 0 ou par 5.",
+      "estimated_duration_s": 90,
+      "review_status": "brouillon",
+      "programme_ref": "Cycle 3, CM1, les nombres entiers : savoir reconnaitre les multiples de 2, de 5 et de 10 a partir de leur ecriture chiffree."
+    },
+    {
+      "id": "EX-A014-M-01",
+      "skill_id": "A014",
+      "level": "maitrise",
+      "type": "qcm",
+      "statement": "Un nombre est un multiple de 10.\n\nQue peut-on affirmer à coup sûr sur ce nombre ?",
+      "image": null,
+      "choices": [
+        {
+          "key": "a",
+          "text": "Il est aussi un multiple de 2 et un multiple de 5",
+          "misconception": null
+        },
+        {
+          "key": "b",
+          "text": "Il est un multiple de 2, mais pas un multiple de 5",
+          "misconception": "L'élève retient seulement que les multiples de 10 sont pairs et oublie que $10 = 2 \\times 5$."
+        },
+        {
+          "key": "c",
+          "text": "Il se termine par 5",
+          "misconception": "L'élève mélange les deux critères : les multiples de 5 se terminent par 0 ou 5, les multiples de 10 seulement par 0."
+        }
+      ],
+      "answer": {
+        "value": "a"
+      },
+      "solution_steps": [
+        "Un multiple de 10 se termine toujours par 0 : 30, 70, 250, 4 000…",
+        "Un nombre terminé par 0 fait partie des nombres pairs : c'est donc un multiple de 2.",
+        "Un nombre terminé par 0 est aussi un multiple de 5, puisque le critère des multiples de 5 accepte le chiffre 0.",
+        "Cela vient de $10 = 2 \\times 5$ : un paquet de 10 se recoupe en 5 paquets de 2 ou en 2 paquets de 5.",
+        "Enfin, aucun multiple de 10 ne se termine par 5.",
+        "Réponse : il est à la fois multiple de 2 et multiple de 5."
+      ],
+      "hint": "Écris quelques multiples de 10, puis vérifie s'ils sont dans la table de 2, puis dans celle de 5.",
+      "estimated_duration_s": 120,
+      "review_status": "brouillon",
+      "programme_ref": "Cycle 3, CM1, les nombres entiers : savoir reconnaitre les multiples de 2, de 5 et de 10 a partir de leur ecriture chiffree."
+    },
+    {
+      "id": "EX-A014-M-02",
+      "skill_id": "A014",
+      "level": "maitrise",
+      "type": "vrai_faux",
+      "statement": "Un magasin range tous ses crayons dans des boîtes de 10, sans qu'il en reste.\n\nIl annonce 4 386 crayons en stock. C'est possible.",
+      "image": null,
+      "answer": {
+        "value": false
+      },
+      "solution_steps": [
+        "Si tous les crayons sont dans des boîtes de 10 pleines, le stock est forcément un multiple de 10.",
+        "Or un multiple de 10 se termine par 0.",
+        "4 386 se termine par 6 : ce n'est pas un multiple de 10, même si le nombre est pair.",
+        "En détail : $4\\,386 = 10 \\times 438 + 6$, il resterait 6 crayons hors boîte.",
+        "L'affirmation est donc **fausse**."
+      ],
+      "hint": "Par quel chiffre se termine un nombre d'objets rangés par paquets de 10 ?",
+      "estimated_duration_s": 105,
+      "review_status": "brouillon",
+      "programme_ref": "Cycle 3, CM1, les nombres entiers : savoir reconnaitre les multiples de 2, de 5 et de 10 a partir de leur ecriture chiffree."
+    },
+    {
+      "id": "EX-A026-D-01",
+      "skill_id": "A026",
+      "level": "decouverte",
+      "type": "qcm",
+      "statement": "Marc écrit $3 \\times 4 = 12$.\n\nQue peut-il en déduire sur les diviseurs de 12 ?",
+      "image": null,
+      "choices": [
+        {
+          "key": "a",
+          "text": "3 et 4 sont des diviseurs de 12",
+          "misconception": null
+        },
+        {
+          "key": "b",
+          "text": "12 est un diviseur de 3 et de 4",
+          "misconception": "L'élève inverse les rôles : un diviseur est plus petit que le nombre qu'il divise, ou égal à lui, or 12 est plus grand que 3 et que 4."
+        },
+        {
+          "key": "c",
+          "text": "3 et 4 sont les seuls diviseurs de 12",
+          "misconception": "L'élève croit qu'une seule multiplication donne tous les diviseurs et oublie $1 \\times 12$ et $2 \\times 6$."
+        }
+      ],
+      "answer": {
+        "value": "a"
+      },
+      "solution_steps": [
+        "$3 \\times 4 = 12$ signifie que 12 se partage en 3 parts de 4, ou en 4 parts de 3.",
+        "Ces deux partages tombent juste : 3 et 4 sont donc des diviseurs de 12.",
+        "Une multiplication fournit toujours deux diviseurs d'un coup.",
+        "12 n'est pas un diviseur de 3, car 12 est plus grand que 3.",
+        "Enfin 12 possède d'autres diviseurs, que d'autres multiplications feront apparaître."
+      ],
+      "hint": "Dans $3 \\times 4 = 12$, combien de nombres partagent 12 sans reste ?",
+      "estimated_duration_s": 60,
+      "review_status": "brouillon",
+      "programme_ref": "Cycle 3, CM2, les nombres entiers : determiner tous les diviseurs d'un nombre entier inferieur ou egal a 30."
+    },
+    {
+      "id": "EX-A026-D-02",
+      "skill_id": "A026",
+      "level": "decouverte",
+      "type": "texte",
+      "statement": "Marc cherche maintenant **tous** les diviseurs de 12.\n\nÉcris-les du plus petit au plus grand, séparés par des virgules.",
+      "image": null,
+      "answer": {
+        "value": "1, 2, 3, 4, 6, 12",
+        "accepted": [
+          "1,2,3,4,6,12",
+          "1 ; 2 ; 3 ; 4 ; 6 ; 12"
+        ]
+      },
+      "solution_steps": [
+        "On cherche toutes les multiplications de deux entiers qui donnent 12.",
+        "$1 \\times 12 = 12$, $2 \\times 6 = 12$, $3 \\times 4 = 12$.",
+        "5 ne convient pas : $12 \\div 5$ ne tombe pas juste.",
+        "Chaque multiplication donne deux diviseurs : 1 et 12, puis 2 et 6, puis 3 et 4.",
+        "Rangés du plus petit au plus grand : 1, 2, 3, 4, 6, 12. Il y en a six."
+      ],
+      "hint": "Essaie 1, puis 2, puis 3… jusqu'à retomber sur un diviseur déjà écrit.",
+      "estimated_duration_s": 120,
+      "review_status": "brouillon",
+      "programme_ref": "Cycle 3, CM2, les nombres entiers : determiner tous les diviseurs d'un nombre entier inferieur ou egal a 30."
+    },
+    {
+      "id": "EX-A026-E-01",
+      "skill_id": "A026",
+      "level": "entrainement",
+      "type": "texte",
+      "statement": "Écris tous les diviseurs de 28, du plus petit au plus grand.\n\nSépare-les par des virgules.",
+      "image": null,
+      "answer": {
+        "value": "1, 2, 4, 7, 14, 28",
+        "accepted": [
+          "1,2,4,7,14,28",
+          "1 ; 2 ; 4 ; 7 ; 14 ; 28"
+        ]
+      },
+      "solution_steps": [
+        "On teste les nombres dans l'ordre.",
+        "$1 \\times 28 = 28$ : 1 et 28 sont des diviseurs.",
+        "$2 \\times 14 = 28$ : 2 et 14 sont des diviseurs.",
+        "3 ne convient pas, car $28 \\div 3$ ne tombe pas juste.",
+        "$4 \\times 7 = 28$ : 4 et 7 sont des diviseurs.",
+        "5 et 6 ne conviennent pas. À partir de 7, on retrouve des diviseurs déjà écrits : on peut s'arrêter.",
+        "Réponse : 1, 2, 4, 7, 14, 28."
+      ],
+      "hint": "Chaque fois que tu trouves un diviseur, son partenaire de multiplication en est un aussi.",
+      "estimated_duration_s": 150,
+      "review_status": "brouillon",
+      "programme_ref": "Cycle 3, CM2, les nombres entiers : determiner tous les diviseurs d'un nombre entier inferieur ou egal a 30."
+    },
+    {
+      "id": "EX-A026-E-02",
+      "skill_id": "A026",
+      "level": "entrainement",
+      "type": "qcm",
+      "statement": "Zoé cherche tous les diviseurs de 18.\n\nQuelle liste est la bonne ?",
+      "image": null,
+      "choices": [
+        {
+          "key": "a",
+          "text": "1, 2, 3, 6, 9, 18",
+          "misconception": null
+        },
+        {
+          "key": "b",
+          "text": "2, 3, 6, 9",
+          "misconception": "L'élève oublie les deux diviseurs extrêmes : 1 et le nombre lui-même divisent toujours le nombre."
+        },
+        {
+          "key": "c",
+          "text": "1, 2, 3, 4, 6, 9, 18",
+          "misconception": "L'élève ajoute 4 en croyant que tout nombre pair a 4 pour diviseur ; or $18 = 4 \\times 4 + 2$."
+        }
+      ],
+      "answer": {
+        "value": "a"
+      },
+      "solution_steps": [
+        "$1 \\times 18 = 18$, $2 \\times 9 = 18$, $3 \\times 6 = 18$.",
+        "4 ne convient pas : $4 \\times 4 = 16$ et il resterait 2.",
+        "5 ne convient pas non plus, car 18 ne se termine ni par 0 ni par 5.",
+        "Après 6, on retombe sur les diviseurs déjà trouvés : on s'arrête.",
+        "Les diviseurs de 18 sont 1, 2, 3, 6, 9 et 18."
+      ],
+      "hint": "N'oublie ni 1 ni le nombre lui-même.",
+      "estimated_duration_s": 90,
+      "review_status": "brouillon",
+      "programme_ref": "Cycle 3, CM2, les nombres entiers : determiner tous les diviseurs d'un nombre entier inferieur ou egal a 30."
+    },
+    {
+      "id": "EX-A026-E-03",
+      "skill_id": "A026",
+      "level": "entrainement",
+      "type": "numerique",
+      "statement": "Léo range 100 jetons en boîtes égales et veut au moins deux boîtes.\n\nQuel est le plus grand nombre de jetons par boîte ?",
+      "image": null,
+      "answer": {
+        "value": 50,
+        "unit": "jetons"
+      },
+      "solution_steps": [
+        "Le nombre de jetons par boîte doit être un diviseur de 100.",
+        "Les diviseurs de 100 sont 1, 2, 4, 5, 10, 20, 25, 50 et 100.",
+        "100 est écarté : il ne donnerait qu'une seule boîte, or Léo en veut au moins deux.",
+        "Le plus grand diviseur restant est 50.",
+        "$100 = 2 \\times 50$ : Léo fait 2 boîtes de 50 jetons. Réponse : **50**."
+      ],
+      "hint": "Quel est le plus petit nombre de boîtes acceptable ? Pars de là.",
+      "estimated_duration_s": 120,
+      "review_status": "brouillon",
+      "programme_ref": "Cycle 3, CM2, les nombres entiers : determiner des diviseurs d'un nombre entier inferieur ou egal a 100."
+    },
+    {
+      "id": "EX-A026-M-01",
+      "skill_id": "A026",
+      "level": "maitrise",
+      "type": "texte",
+      "statement": "Léa cherche tous les diviseurs de 23.\n\nÉcris-les, séparés par des virgules.",
+      "image": null,
+      "answer": {
+        "value": "1, 23",
+        "accepted": [
+          "1,23",
+          "1 et 23",
+          "23, 1"
+        ]
+      },
+      "solution_steps": [
+        "On teste les nombres un par un, comme d'habitude.",
+        "2 : 23 est impair, la division ne tombe pas juste.",
+        "3 : $3 \\times 7 = 21$, il resterait 2. 4 : $4 \\times 5 = 20$, il resterait 3.",
+        "5 : 23 ne se termine ni par 0 ni par 5, donc non.",
+        "Inutile d'aller plus loin : $5 \\times 5 = 25$ dépasse déjà 23, les diviseurs suivants auraient tous été trouvés en partenaire.",
+        "Il ne reste que la multiplication $1 \\times 23 = 23$.",
+        "23 n'a donc que **deux** diviseurs, 1 et 23. Certains nombres en ont très peu : ce n'est pas une erreur."
+      ],
+      "hint": "Teste 2, 3, 4 puis 5. Combien de divisions tombent juste ?",
+      "estimated_duration_s": 150,
+      "review_status": "brouillon",
+      "programme_ref": "Cycle 3, CM2, les nombres entiers : determiner tous les diviseurs d'un nombre entier inferieur ou egal a 30."
+    },
+    {
+      "id": "EX-A026-M-02",
+      "skill_id": "A026",
+      "level": "maitrise",
+      "type": "numerique",
+      "statement": "Un jardinier plante 24 fleurs en rangées égales. Il veut plus de 4 rangées et moins de 8.\n\nCombien de rangées fait-il ?",
+      "image": null,
+      "answer": {
+        "value": 6,
+        "unit": "rangées"
+      },
+      "solution_steps": [
+        "Le nombre de rangées doit être un diviseur de 24, sinon une rangée serait incomplète.",
+        "Les diviseurs de 24 sont 1, 2, 3, 4, 6, 8, 12 et 24.",
+        "On ne garde que ceux qui sont strictement compris entre 4 et 8 : seul 6 convient.",
+        "5 et 7 ne sont pas des diviseurs de 24.",
+        "Le jardinier fait **6** rangées, avec 4 fleurs par rangée."
+      ],
+      "hint": "Écris d'abord tous les diviseurs de 24, puis regarde lesquels respectent la condition.",
+      "estimated_duration_s": 150,
+      "review_status": "brouillon",
+      "programme_ref": "Cycle 3, CM2, les nombres entiers : determiner tous les diviseurs d'un nombre entier inferieur ou egal a 30."
+    },
+    {
+      "id": "EX-A027-D-01",
+      "skill_id": "A027",
+      "level": "decouverte",
+      "type": "texte",
+      "statement": "Les diviseurs de 12 sont 1, 2, 3, 4, 6 et 12.\n\nParmi eux, écris ceux qui sont aussi des diviseurs de 18.",
+      "image": null,
+      "answer": {
+        "value": "1, 2, 3, 6",
+        "accepted": [
+          "1,2,3,6",
+          "1 ; 2 ; 3 ; 6"
+        ]
+      },
+      "solution_steps": [
+        "On reprend la liste un nombre à la fois et on teste chacun sur 18.",
+        "$18 \\div 1 = 18$, $18 \\div 2 = 9$, $18 \\div 3 = 6$ et $18 \\div 6 = 3$ : ces quatre divisions tombent juste.",
+        "$18 \\div 4$ ne tombe pas juste : $4 \\times 4 = 16$, il resterait 2.",
+        "$18 \\div 12$ non plus : $12 \\times 1 = 12$, il resterait 6.",
+        "Les diviseurs communs à 12 et à 18 sont donc 1, 2, 3 et 6."
+      ],
+      "hint": "Prends les nombres de la liste un par un et divise 18 par chacun.",
+      "estimated_duration_s": 120,
+      "review_status": "brouillon",
+      "programme_ref": "Cycle 3, CM2, les nombres entiers : determiner les diviseurs communs a deux nombres entiers inferieurs ou egaux a 30."
+    },
+    {
+      "id": "EX-A027-D-02",
+      "skill_id": "A027",
+      "level": "decouverte",
+      "type": "qcm",
+      "statement": "Les nombres 12 et 18 ont plusieurs diviseurs communs.\n\nQuel est le plus grand d'entre eux ?",
+      "image": null,
+      "choices": [
+        {
+          "key": "a",
+          "text": "6",
+          "misconception": null
+        },
+        {
+          "key": "b",
+          "text": "9",
+          "misconception": "L'élève prend le plus grand diviseur de 18 avant 18, sans vérifier qu'il divise aussi 12 ; or $12 \\div 9$ laisse un reste de 3."
+        },
+        {
+          "key": "c",
+          "text": "4",
+          "misconception": "L'élève prend un diviseur de 12 sans vérifier qu'il divise aussi 18 ; or $18 \\div 4$ laisse un reste de 2."
+        }
+      ],
+      "answer": {
+        "value": "a"
+      },
+      "solution_steps": [
+        "Diviseurs de 12 : 1, 2, 3, 4, 6, 12. Diviseurs de 18 : 1, 2, 3, 6, 9, 18.",
+        "On écrit les deux listes l'une sous l'autre et on garde ce qui figure dans les deux : 1, 2, 3 et 6.",
+        "Parmi ces diviseurs communs, le plus grand est 6.",
+        "9 n'apparaît que dans la liste de 18, et 4 n'apparaît que dans celle de 12 : ni l'un ni l'autre n'est commun."
+      ],
+      "hint": "Écris les deux listes de diviseurs l'une sous l'autre, puis compare-les.",
+      "estimated_duration_s": 90,
+      "review_status": "brouillon",
+      "programme_ref": "Cycle 3, CM2, les nombres entiers : determiner les diviseurs communs a deux nombres entiers inferieurs ou egaux a 30."
+    },
+    {
+      "id": "EX-A027-E-01",
+      "skill_id": "A027",
+      "level": "entrainement",
+      "type": "texte",
+      "statement": "Écris tous les diviseurs communs à 24 et à 30.\n\nSépare-les par des virgules.",
+      "image": null,
+      "answer": {
+        "value": "1, 2, 3, 6",
+        "accepted": [
+          "1,2,3,6",
+          "1 ; 2 ; 3 ; 6"
+        ]
+      },
+      "solution_steps": [
+        "Diviseurs de 24 : 1, 2, 3, 4, 6, 8, 12, 24.",
+        "Diviseurs de 30 : 1, 2, 3, 5, 6, 10, 15, 30.",
+        "On compare les deux listes.",
+        "Les nombres présents dans les deux sont 1, 2, 3 et 6.",
+        "Réponse : 1, 2, 3, 6."
+      ],
+      "hint": "Écris d'abord les deux listes complètes, puis entoure ce qu'elles ont en commun.",
+      "estimated_duration_s": 150,
+      "review_status": "brouillon",
+      "programme_ref": "Cycle 3, CM2, les nombres entiers : determiner les diviseurs communs a deux nombres entiers inferieurs ou egaux a 30."
+    },
+    {
+      "id": "EX-A027-E-02",
+      "skill_id": "A027",
+      "level": "entrainement",
+      "type": "texte",
+      "statement": "Écris les trois plus petits multiples communs à 4 et à 6, sans compter 0.\n\nSépare-les par des virgules.",
+      "image": null,
+      "answer": {
+        "value": "12, 24, 36",
+        "accepted": [
+          "12,24,36",
+          "12 ; 24 ; 36"
+        ]
+      },
+      "solution_steps": [
+        "Multiples de 4 : 4, 8, 12, 16, 20, 24, 28, 32, 36…",
+        "Multiples de 6 : 6, 12, 18, 24, 30, 36…",
+        "Un multiple commun doit figurer dans les deux listes.",
+        "On repère 12, puis 24, puis 36.",
+        "Réponse : 12, 24, 36."
+      ],
+      "hint": "Écris la table de 4 et la table de 6 l'une sous l'autre, puis compare.",
+      "estimated_duration_s": 150,
+      "review_status": "brouillon",
+      "programme_ref": "Cycle 3, CM2, les nombres entiers : determiner des multiples communs a deux nombres entiers inferieurs a 15."
+    },
+    {
+      "id": "EX-A027-E-03",
+      "skill_id": "A027",
+      "level": "entrainement",
+      "type": "vrai_faux",
+      "statement": "Marie affirme que 30 est un multiple commun à 6 et à 8.\n\nMarie a raison.",
+      "image": null,
+      "answer": {
+        "value": false
+      },
+      "solution_steps": [
+        "30 est bien un multiple de 6 : $30 = 6 \\times 5$.",
+        "Mais dans la table de 8 on trouve $8 \\times 3 = 24$, puis $8 \\times 4 = 32$ : 30 n'y figure pas.",
+        "Pour être un multiple commun, un nombre doit appartenir aux deux tables, pas à une seule.",
+        "Marie a donc **tort**. Le plus petit multiple commun à 6 et à 8 est 24."
+      ],
+      "hint": "Vérifie les deux tables, pas seulement l'une des deux.",
+      "estimated_duration_s": 75,
+      "review_status": "brouillon",
+      "programme_ref": "Cycle 3, CM2, les nombres entiers : determiner des multiples communs a deux nombres entiers inferieurs a 15."
+    },
+    {
+      "id": "EX-A027-M-01",
+      "skill_id": "A027",
+      "level": "maitrise",
+      "type": "numerique",
+      "statement": "Un bus part toutes les 12 minutes, un autre toutes les 8 minutes. Ils partent ensemble à 9 h.\n\nDans combien de minutes repartiront-ils ensemble ?",
+      "image": null,
+      "answer": {
+        "value": 24,
+        "unit": "minutes"
+      },
+      "solution_steps": [
+        "Le premier bus repart au bout de 12, 24, 36, 48 minutes…",
+        "Le second repart au bout de 8, 16, 24, 32 minutes…",
+        "Ils repartent ensemble à un instant présent dans les deux listes : c'est un multiple commun à 12 et à 8.",
+        "Le premier de ces instants est 24, car $24 = 12 \\times 2$ et $24 = 8 \\times 3$.",
+        "Réponse : **24** minutes, c'est-à-dire à 9 h 24."
+      ],
+      "hint": "Écris les horaires de départ de chaque bus, puis cherche le premier qui se retrouve dans les deux listes.",
+      "estimated_duration_s": 180,
+      "review_status": "brouillon",
+      "programme_ref": "Cycle 3, CM2, les nombres entiers : determiner des multiples communs a deux nombres entiers inferieurs a 15."
+    },
+    {
+      "id": "EX-A027-M-02",
+      "skill_id": "A027",
+      "level": "maitrise",
+      "type": "numerique",
+      "statement": "Un pâtissier a 20 éclairs et 30 tartelettes. Il prépare des paquets identiques et utilise tout.\n\nQuel est le plus grand nombre de paquets ?",
+      "image": null,
+      "answer": {
+        "value": 10,
+        "unit": "paquets"
+      },
+      "solution_steps": [
+        "Les paquets étant identiques, le nombre de paquets doit diviser 20 pour les éclairs et diviser 30 pour les tartelettes.",
+        "Diviseurs de 20 : 1, 2, 4, 5, 10, 20. Diviseurs de 30 : 1, 2, 3, 5, 6, 10, 15, 30.",
+        "Les diviseurs communs sont 1, 2, 5 et 10.",
+        "On les compare : le plus grand est 10.",
+        "Le pâtissier fait **10** paquets, chacun avec 2 éclairs et 3 tartelettes."
+      ],
+      "hint": "Le nombre de paquets doit se retrouver dans les deux listes de diviseurs.",
+      "estimated_duration_s": 180,
+      "review_status": "brouillon",
+      "programme_ref": "Cycle 3, CM2, les nombres entiers : determiner les diviseurs communs a deux nombres entiers inferieurs ou egaux a 30."
+    },
+    {
+      "id": "EX-A028-D-01",
+      "skill_id": "A028",
+      "level": "decouverte",
+      "type": "numerique",
+      "statement": "Une demi-droite est graduée de 1 000 en 1 000 à partir de 0.\n\nQuel nombre est écrit à la quatrième graduation après 0 ?",
+      "image": null,
+      "answer": {
+        "value": 4000,
+        "accepted": [
+          "4 000",
+          "4000"
+        ]
+      },
+      "solution_steps": [
+        "Sur une demi-droite graduée, l'écart entre deux graduations voisines est toujours le même. Ici il vaut 1 000.",
+        "Première graduation : 1 000. Deuxième : 2 000. Troisième : 3 000.",
+        "Quatrième : $4 \\times 1\\,000 = 4\\,000$.",
+        "Réponse : **4 000**."
+      ],
+      "hint": "Compte de 1 000 en 1 000 en partant de 0.",
+      "estimated_duration_s": 60,
+      "review_status": "brouillon",
+      "programme_ref": "Cycle 3, CM1, les nombres entiers : savoir placer des nombres et reperer des points sur une demi-droite graduee."
+    },
+    {
+      "id": "EX-A028-D-02",
+      "skill_id": "A028",
+      "level": "decouverte",
+      "type": "qcm",
+      "statement": "Sur la même demi-droite graduée de 1 000 en 1 000 à partir de 0, où faut-il placer le nombre 3 500 ?",
+      "image": null,
+      "choices": [
+        {
+          "key": "a",
+          "text": "Juste au milieu entre les graduations 3 000 et 4 000",
+          "misconception": null
+        },
+        {
+          "key": "b",
+          "text": "Sur la graduation 3 000",
+          "misconception": "L'élève ne lit que le chiffre des milliers et pose le point sur la graduation précédente, comme si 3 500 valait 3 000."
+        },
+        {
+          "key": "c",
+          "text": "Juste après la graduation 4 000",
+          "misconception": "L'élève arrondit 3 500 à 4 000, puis place le point au-delà de cette graduation alors que 3 500 est plus petit que 4 000."
+        }
+      ],
+      "answer": {
+        "value": "a"
+      },
+      "solution_steps": [
+        "3 500 est plus grand que 3 000 et plus petit que 4 000 : il se trouve entre ces deux graduations.",
+        "L'écart entre deux graduations vaut 1 000, et 500 en est exactement la moitié.",
+        "$3\\,000 + 500 = 3\\,500$ : le point tombe donc au milieu de cet intervalle.",
+        "Réponse : juste au milieu entre 3 000 et 4 000."
+      ],
+      "hint": "Entre quelles deux graduations 3 500 se trouve-t-il ? Regarde ensuite s'il est plus près de l'une des deux.",
+      "estimated_duration_s": 75,
+      "review_status": "brouillon",
+      "programme_ref": "Cycle 3, CM1, les nombres entiers : savoir placer des nombres et reperer des points sur une demi-droite graduee."
+    },
+    {
+      "id": "EX-A028-E-01",
+      "skill_id": "A028",
+      "level": "entrainement",
+      "type": "numerique",
+      "statement": "Sur une demi-droite graduée de 100 en 100, un point se situe 7 graduations après 2 000.\n\nQuelle est son abscisse ?",
+      "image": null,
+      "answer": {
+        "value": 2700,
+        "accepted": [
+          "2 700",
+          "2700"
+        ]
+      },
+      "solution_steps": [
+        "L'abscisse d'un point, c'est le nombre qui lui correspond sur la demi-droite.",
+        "Chaque graduation avance de 100, donc sept graduations valent $7 \\times 100 = 700$.",
+        "On part de 2 000 : $2\\,000 + 700 = 2\\,700$.",
+        "L'abscisse du point est **2 700**."
+      ],
+      "hint": "Combien vaut un déplacement de 7 graduations, si chaque graduation vaut 100 ?",
+      "estimated_duration_s": 90,
+      "review_status": "brouillon",
+      "programme_ref": "Cycle 3, CM1, les nombres entiers : savoir placer des nombres et reperer des points sur une demi-droite graduee."
+    },
+    {
+      "id": "EX-A028-E-02",
+      "skill_id": "A028",
+      "level": "entrainement",
+      "type": "texte",
+      "statement": "Une demi-droite est graduée de 20 en 20 à partir de 0.\n\nEntre quelles deux graduations se place 130 ? Sépare-les par une virgule.",
+      "image": null,
+      "answer": {
+        "value": "120, 140",
+        "accepted": [
+          "120,140",
+          "120 et 140"
+        ]
+      },
+      "solution_steps": [
+        "Les graduations sont 0, 20, 40, 60, 80, 100, 120, 140, et ainsi de suite.",
+        "On avance jusqu'à dépasser 130 : après 120 vient 140.",
+        "130 est plus grand que 120 et plus petit que 140, et aucune graduation ne se trouve entre les deux.",
+        "Réponse : 120, 140."
+      ],
+      "hint": "Compte de 20 en 20 jusqu'à dépasser 130.",
+      "estimated_duration_s": 105,
+      "review_status": "brouillon",
+      "programme_ref": "Cycle 3, CM1, les nombres entiers : savoir placer des nombres et reperer des points sur une demi-droite graduee."
+    },
+    {
+      "id": "EX-A028-E-03",
+      "skill_id": "A028",
+      "level": "entrainement",
+      "type": "vrai_faux",
+      "statement": "Sur une demi-droite graduée de 500 en 500, trois graduations séparent le point d'abscisse 2 500 du point d'abscisse 4 000.",
+      "image": null,
+      "answer": {
+        "value": true
+      },
+      "solution_steps": [
+        "On avance de 500 en 500 à partir de 2 500 : 3 000, puis 3 500, puis 4 000.",
+        "Il faut donc trois déplacements pour aller de 2 500 à 4 000.",
+        "On peut aussi le calculer : $4\\,000 - 2\\,500 = 1\\,500$, puis $1\\,500 \\div 500 = 3$.",
+        "L'affirmation est **vraie**."
+      ],
+      "hint": "Calcule l'écart entre les deux abscisses, puis divise-le par la valeur d'une graduation.",
+      "estimated_duration_s": 90,
+      "review_status": "brouillon",
+      "programme_ref": "Cycle 3, CM1, les nombres entiers : savoir placer des nombres et reperer des points sur une demi-droite graduee."
+    },
+    {
+      "id": "EX-A028-M-01",
+      "skill_id": "A028",
+      "level": "maitrise",
+      "type": "numerique",
+      "statement": "Une demi-droite est graduée régulièrement à partir de 0. La troisième graduation porte le nombre 1 200.\n\nQuel nombre porte la cinquième ?",
+      "image": null,
+      "answer": {
+        "value": 2000,
+        "accepted": [
+          "2 000",
+          "2000"
+        ]
+      },
+      "solution_steps": [
+        "Ici la valeur d'une graduation n'est pas donnée : il faut la retrouver d'abord.",
+        "Trois graduations valent 1 200, donc une seule vaut $1\\,200 \\div 3 = 400$.",
+        "La cinquième graduation vaut alors $5 \\times 400 = 2\\,000$.",
+        "Vérification en comptant : 400, 800, 1 200, 1 600, 2 000.",
+        "Réponse : **2 000**."
+      ],
+      "hint": "Cherche d'abord de combien on avance en passant d'une graduation à la suivante.",
+      "estimated_duration_s": 180,
+      "review_status": "brouillon",
+      "programme_ref": "Cycle 3, CM1, les nombres entiers : savoir placer des nombres et reperer des points sur une demi-droite graduee."
+    },
+    {
+      "id": "EX-A028-M-02",
+      "skill_id": "A028",
+      "level": "maitrise",
+      "type": "qcm",
+      "statement": "Une demi-droite va de 0 à 100 000 et elle est graduée de 10 000 en 10 000.\n\nOù placer 9 500 ?",
+      "image": null,
+      "choices": [
+        {
+          "key": "a",
+          "text": "Entre 0 et 10 000, tout près de la graduation 10 000",
+          "misconception": null
+        },
+        {
+          "key": "b",
+          "text": "Entre 9 000 et 10 000",
+          "misconception": "L'élève cherche une graduation 9 000, qui n'existe pas ici : la première graduation après 0 est 10 000."
+        },
+        {
+          "key": "c",
+          "text": "Entre 10 000 et 20 000",
+          "misconception": "L'élève arrondit 9 500 à 10 000 puis place le point après cette graduation, alors que 9 500 est plus petit que 10 000."
+        }
+      ],
+      "answer": {
+        "value": "a"
+      },
+      "solution_steps": [
+        "Les graduations sont 0, 10 000, 20 000, et ainsi de suite jusqu'à 100 000.",
+        "9 500 est plus petit que 10 000 : il se trouve donc dans le tout premier intervalle, celui qui part de 0.",
+        "Il en est très proche : il manque seulement 500 pour atteindre 10 000, soit un vingtième de l'intervalle.",
+        "Le point se place entre 0 et 10 000, juste avant la graduation 10 000."
+      ],
+      "hint": "9 500 est-il plus grand ou plus petit que la première graduation après 0 ?",
+      "estimated_duration_s": 150,
+      "review_status": "brouillon",
+      "programme_ref": "Cycle 3, CM1, les nombres entiers : savoir placer des nombres et reperer des points sur une demi-droite graduee."
+    },
+    {
       "id": "EX-C001-D-01",
       "skill_id": "C001",
       "level": "decouverte",
@@ -1518,34 +2706,35 @@
       "skill_id": "C009",
       "level": "decouverte",
       "type": "qcm",
-      "statement": "Compare $\\frac{3}{8}$ et $\\frac{5}{8}$.",
+      "statement": "Lequel est le plus grand : $\frac{3}{8}$ ou $\frac{5}{8}$ ?",
       "image": null,
       "choices": [
         {
           "key": "a",
-          "text": "$\\frac{3}{8} < \\frac{5}{8}$",
+          "text": "$\frac{5}{8}$",
           "misconception": null
         },
         {
           "key": "b",
-          "text": "$\\frac{3}{8} > \\frac{5}{8}$",
-          "misconception": "L'élève inverse le sens de la comparaison."
+          "text": "$\frac{3}{8}$",
+          "misconception": "L'élève inverse la comparaison, ou compte les parts qui restent au lieu des parts prises."
         },
         {
           "key": "c",
-          "text": "$\\frac{3}{8} = \\frac{5}{8}$",
-          "misconception": "L'élève considère que le même dénominateur suffit à rendre les fractions égales."
+          "text": "Ils sont égaux",
+          "misconception": "L'élève voit le même dénominateur et en conclut que les deux fractions sont égales."
         }
       ],
       "answer": {
         "value": "a"
       },
       "solution_steps": [
-        "Les deux fractions ont le **même dénominateur** : les parts sont de même taille (des huitièmes).",
-        "Il suffit donc de comparer les numérateurs : 3 parts contre 5 parts.",
-        "Comme $3 < 5$, on a $\\frac{3}{8} < \\frac{5}{8}$."
+        "Les deux fractions ont le même dénominateur 8 : les parts sont toutes des huitièmes, donc de même taille.",
+        "Il suffit de compter combien de parts on prend : 3 d'un côté, 5 de l'autre.",
+        "5 parts, c'est plus que 3 parts de la même taille.",
+        "C'est donc $\frac{5}{8}$ le plus grand."
       ],
-      "hint": "Les parts sont identiques : il n'y a plus qu'à compter combien on en prend.",
+      "hint": "Les parts ont la même taille. Regarde seulement combien on en prend.",
       "estimated_duration_s": 40,
       "review_status": "relu_agent",
       "programme_ref": "Cycle 2, CE1 : comparer des fractions ayant le même dénominateur."
@@ -1864,22 +3053,22 @@
       "skill_id": "C026",
       "level": "decouverte",
       "type": "qcm",
-      "statement": "Compare $\\frac{1}{5}$ et $\\frac{1}{3}$.",
+      "statement": "Lequel est le plus grand : $\frac{1}{5}$ ou $\frac{1}{3}$ ?",
       "image": null,
       "choices": [
         {
           "key": "a",
-          "text": "$\\frac{1}{5} < \\frac{1}{3}$",
+          "text": "$\frac{1}{3}$",
           "misconception": null
         },
         {
           "key": "b",
-          "text": "$\\frac{1}{5} > \\frac{1}{3}$",
+          "text": "$\frac{1}{5}$",
           "misconception": "L'élève applique aux dénominateurs l'ordre des entiers : 5 est plus grand que 3, donc la fraction serait plus grande. C'est l'erreur la plus fréquente sur cette notion."
         },
         {
           "key": "c",
-          "text": "$\\frac{1}{5} = \\frac{1}{3}$",
+          "text": "Ils sont égaux",
           "misconception": "L'élève ne compare que les numérateurs, qui sont égaux, et conclut à l'égalité."
         }
       ],
@@ -1889,8 +3078,8 @@
       "solution_steps": [
         "Les deux fractions ont le même numérateur : on prend **une** part dans chaque cas.",
         "Mais les parts n'ont pas la même taille. Partager un tout en 5 donne des parts plus petites que le partager en 3.",
-        "Une part sur 5 est donc plus petite qu'une part sur 3 : $\\frac{1}{5} < \\frac{1}{3}$.",
-        "Retiens : quand le numérateur est 1, **plus le dénominateur est grand, plus la fraction est petite**."
+        "Une part sur 3 est donc plus grande qu'une part sur 5.",
+        "C'est $\frac{1}{3}$ le plus grand. Retiens : quand le numérateur est 1, plus le dénominateur est grand, plus la fraction est petite."
       ],
       "hint": "Préfères-tu partager un gâteau entre 3 personnes ou entre 5 ?",
       "estimated_duration_s": 45,
@@ -2309,7 +3498,7 @@
       "skill_id": "C029",
       "level": "decouverte",
       "type": "numerique",
-      "statement": "Complète l'encadrement : $1 < \\frac{5}{3} < \\ldots$",
+      "statement": "Complète l'encadrement avec un **nombre entier** :\n\n$1 < \frac{5}{3} < \\ldots$",
       "image": null,
       "answer": {
         "value": 2
@@ -2393,7 +3582,7 @@
       "skill_id": "C029",
       "level": "entrainement",
       "type": "numerique",
-      "statement": "Complète l'encadrement : $2 < \\frac{13}{6} < \\ldots$",
+      "statement": "Complète l'encadrement avec un **nombre entier** :\n\n$2 < \frac{13}{6} < \\ldots$",
       "image": null,
       "answer": {
         "value": 3

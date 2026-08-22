@@ -481,17 +481,17 @@ On partage un même tout de deux façons : une fois en 3 parts égales, une fois
 
 **EX-C009-D-01** — decouverte, qcm, 40 s
 
-Compare 3/8 et 5/8.
+Lequel est le plus grand : rac{3}{8} ou rac{5}{8} ?
 
-- **a.** 3/8 < 5/8 ✅
-- **b.** 3/8 > 5/8
-  <br>*Erreur visée :* L'élève inverse le sens de la comparaison.
-- **c.** 3/8 = 5/8
-  <br>*Erreur visée :* L'élève considère que le même dénominateur suffit à rendre les fractions égales.
+- **a.** rac{5}{8} ✅
+- **b.** rac{3}{8}
+  <br>*Erreur visée :* L'élève inverse la comparaison, ou compte les parts qui restent au lieu des parts prises.
+- **c.** Ils sont égaux
+  <br>*Erreur visée :* L'élève voit le même dénominateur et en conclut que les deux fractions sont égales.
 
-*Corrigé.* (1) Les deux fractions ont le même dénominateur : les parts sont de même taille (des huitièmes). (2) Il suffit donc de comparer les numérateurs : 3 parts contre 5 parts. (3) Comme 3 < 5, on a 3/8 < 5/8.
+*Corrigé.* (1) Les deux fractions ont le même dénominateur 8 : les parts sont toutes des huitièmes, donc de même taille. (2) Il suffit de compter combien de parts on prend : 3 d'un côté, 5 de l'autre. (3) 5 parts, c'est plus que 3 parts de la même taille. (4) C'est donc rac{5}{8} le plus grand.
 
-*Indice.* Les parts sont identiques : il n'y a plus qu'à compter combien on en prend.
+*Indice.* Les parts ont la même taille. Regarde seulement combien on en prend.
 
 **EX-C009-E-01** — entrainement, qcm, 60 s
 
@@ -567,15 +567,15 @@ Lucie a colorié les 3/10 d'une figure en bleu, et tout le reste en rouge. Quell
 
 **EX-C026-D-01** — decouverte, qcm, 45 s
 
-Compare 1/5 et 1/3.
+Lequel est le plus grand : rac{1}{5} ou rac{1}{3} ?
 
-- **a.** 1/5 < 1/3 ✅
-- **b.** 1/5 > 1/3
+- **a.** rac{1}{3} ✅
+- **b.** rac{1}{5}
   <br>*Erreur visée :* L'élève applique aux dénominateurs l'ordre des entiers : 5 est plus grand que 3, donc la fraction serait plus grande. C'est l'erreur la plus fréquente sur cette notion.
-- **c.** 1/5 = 1/3
+- **c.** Ils sont égaux
   <br>*Erreur visée :* L'élève ne compare que les numérateurs, qui sont égaux, et conclut à l'égalité.
 
-*Corrigé.* (1) Les deux fractions ont le même numérateur : on prend une part dans chaque cas. (2) Mais les parts n'ont pas la même taille. Partager un tout en 5 donne des parts plus petites que le partager en 3. (3) Une part sur 5 est donc plus petite qu'une part sur 3 : 1/5 < 1/3. (4) Retiens : quand le numérateur est 1, plus le dénominateur est grand, plus la fraction est petite.
+*Corrigé.* (1) Les deux fractions ont le même numérateur : on prend une part dans chaque cas. (2) Mais les parts n'ont pas la même taille. Partager un tout en 5 donne des parts plus petites que le partager en 3. (3) Une part sur 3 est donc plus grande qu'une part sur 5. (4) C'est rac{1}{3} le plus grand. Retiens : quand le numérateur est 1, plus le dénominateur est grand, plus la fraction est petite.
 
 *Indice.* Préfères-tu partager un gâteau entre 3 personnes ou entre 5 ?
 
@@ -857,6 +857,355 @@ Quel nombre s'écrit (2 × 1 000) + (7 × 10) + (9 × 1) ?
 
 ---
 
+## `A012` · Multiple — CM1, difficulté 3
+
+*Déterminer si un entier est un multiple d'un entier inférieur ou égal à 10*
+
+> « Savoir déterminer si un nombre entier donné est un multiple d'un nombre entier inférieur ou égal à 10 » — *Cycle 3, Cours moyen première année, Les nombres entiers*
+
+**EX-A012-D-01** — decouverte, vrai_faux, 40 s
+
+Léa compte de 7 en 7 à partir de 0 : 7, 14, 21, 28, 35, 42, 49. Le nombre 42 est un multiple de 7.
+
+**Réponse :** True
+
+*Corrigé.* (1) Compter de 7 en 7 à partir de 0, c'est écrire la table de 7. (2) Dans la liste de Léa, 42 apparaît : il vient juste après 35. (3) On peut aussi l'écrire comme une multiplication : 42 = 7 × 6. (4) 42 est donc bien un multiple de 7. L'affirmation est vraie.
+
+*Indice.* Cherche 42 dans la liste que Léa a écrite.
+
+**EX-A012-D-02** — decouverte, qcm, 60 s
+
+Léa compte de 7 en 7 à partir de 0 : 7, 14, 21, 28, 35, 42, 49. Elle continue longtemps. Lequel de ces nombres dira-t-elle ?
+
+- **a.** 63 ✅
+- **b.** 59
+  <br>*Erreur visée :* L'élève avance de 10 au lieu de 7 : il ajoute 10 à 49 et obtient 59, qui n'est dans aucune multiplication par 7.
+- **c.** 64
+  <br>*Erreur visée :* L'élève glisse vers la table de 8 : 64 = 8 × 8, mais 64 n'est pas un multiple de 7.
+
+*Corrigé.* (1) Les nombres que dit Léa sont les multiples de 7 : 7 × 1, 7 × 2, 7 × 3, et ainsi de suite. (2) Après 49 vient 56, puis 63. (3) 63 = 7 × 9 : Léa dira bien 63. (4) 59 et 64 n'apparaissent dans aucune multiplication par 7, puisque 7 × 8 = 56 et 7 × 9 = 63.
+
+*Indice.* Continue la liste de Léa : quel nombre vient juste après 49 ?
+
+**EX-A012-E-01** — entrainement, vrai_faux, 60 s
+
+Un fleuriste range 96 tulipes en bouquets de 6 tulipes. Il n'en reste aucune. Donc 96 est un multiple de 6.
+
+**Réponse :** True
+
+*Corrigé.* (1) On cherche si le fleuriste peut faire un nombre entier de bouquets. (2) 96 ÷ 6 = 16 : il fait 16 bouquets, et il ne reste rien. (3) Autrement dit 96 = 6 × 16. (4) Un nombre qui s'écrit 6 multiplié par un entier est un multiple de 6. L'affirmation est vraie.
+
+*Indice.* Cherche par combien il faut multiplier 6 pour obtenir 96.
+
+**EX-A012-E-02** — entrainement, texte, 120 s
+
+Parmi 128, 150, 216 et 305, quels nombres sont des multiples de 4 ? Sépare-les par des virgules.
+
+**Réponse :** 128, 216
+
+*Corrigé.* (1) Un nombre est un multiple de 4 s'il s'écrit 4 multiplié par un nombre entier. (2) 128 = 4 × 32 : c'est un multiple de 4. (3) 150 = 4 × 37 + 2 : il reste 2, ce n'est pas un multiple de 4. (4) 216 = 4 × 54 : c'est un multiple de 4. (5) 305 = 4 × 76 + 1 : il reste 1, ce n'est pas un multiple de 4. (6) Réponse : 128, 216.
+
+*Indice.* Divise chaque nombre par 4 et regarde s'il reste quelque chose.
+
+**EX-A012-E-03** — entrainement, qcm, 75 s
+
+Théo pose 23 rangées de 7 images et trouve 7 × 23 = 161. Que peut-il en déduire ?
+
+- **a.** 161 est un multiple de 7 ✅
+- **b.** 7 est un multiple de 161
+  <br>*Erreur visée :* L'élève inverse les rôles : c'est le résultat de la multiplication qui est le multiple, pas le facteur. 7 est plus petit que 161.
+- **c.** 161 est un multiple de 30
+  <br>*Erreur visée :* L'élève additionne les deux facteurs, 7 + 23 = 30, au lieu de garder la multiplication ; or 161 n'est pas dans la table de 30.
+
+*Corrigé.* (1) Un multiple de 7 est un nombre qui s'écrit 7 multiplié par un nombre entier. (2) Ici 161 = 7 × 23 : 161 est donc un multiple de 7. (3) Une même multiplication le dit aussi de 23 : 161 est également un multiple de 23. (4) En revanche 7 n'est pas un multiple de 161 : 7 est plus petit que 161, et aucune multiplication 161 × … ne donne 7. (5) Réponse : 161 est un multiple de 7.
+
+*Indice.* Dans 7 × 23 = 161, quel nombre est le résultat de la multiplication ?
+
+**EX-A012-M-01** — maitrise, numerique, 120 s
+
+Un nombre est un multiple de 8. Il est compris entre 300 et 310. Quel est ce nombre ?
+
+**Réponse :** 304
+
+*Corrigé.* (1) Cette fois on ne demande pas de vérifier un nombre, mais de le retrouver : il faut parcourir la table de 8. (2) 8 × 37 = 296 : trop petit, on n'a pas encore atteint 300. (3) 8 × 38 = 304 : 304 est bien compris entre 300 et 310. (4) 8 × 39 = 312 : trop grand. (5) Le nombre cherché est 304, et c'est le seul possible.
+
+*Indice.* Cherche par quel nombre multiplier 8 pour arriver juste au-dessus de 300.
+
+**EX-A012-M-02** — maitrise, vrai_faux, 120 s
+
+Nina remarque que 4 514 est un nombre pair. Elle en conclut que 4 514 est un multiple de 4. Nina a raison.
+
+**Réponse :** False
+
+*Corrigé.* (1) Le début est juste : 4 514 se termine par 4, il est donc pair, c'est-à-dire multiple de 2. (2) Mais être un multiple de 2 ne suffit pas pour être un multiple de 4. (3) 4 514 ÷ 4 donne 1 128 et il reste 2 : 4 514 = 4 × 1 128 + 2. (4) 4 514 n'est donc pas un multiple de 4 : Nina a tort. (5) Un nombre pair peut l'être, comme 4 512 = 4 × 1 128, mais ce n'est pas automatique. Contre-exemples simples : 6 et 10 sont pairs sans être dans la table de 4.
+
+*Indice.* Tous les nombres pairs sont-ils dans la table de 4 ? Regarde 6, puis 10.
+
+---
+
+## `A013` · Diviseur — CM1, difficulté 3
+
+*Déterminer si un entier inférieur ou égal à 10 est un diviseur d'un entier donné*
+
+> « Savoir déterminer si un nombre entier inférieur ou égal à 10 est un diviseur d'un nombre entier donné » — *Cycle 3, Cours moyen première année, Les nombres entiers*
+
+**EX-A013-D-01** — decouverte, vrai_faux, 45 s
+
+36 cartes sont partagées entre 4 joueurs. Chacun en reçoit autant et il n'en reste aucune. Donc 4 est un diviseur de 36.
+
+**Réponse :** True
+
+*Corrigé.* (1) Partager 36 cartes en 4 parts égales, c'est calculer 36 ÷ 4. (2) 36 ÷ 4 = 9 : chaque joueur reçoit 9 cartes et il ne reste rien. (3) La division tombe juste, donc 4 est bien un diviseur de 36. (4) On peut le dire dans l'autre sens : 36 est un multiple de 4, car 36 = 4 × 9. (5) L'affirmation est vraie.
+
+*Indice.* Partage 36 en 4 parts égales : la division tombe-t-elle juste ?
+
+**EX-A013-D-02** — decouverte, qcm, 75 s
+
+On veut partager les mêmes 36 cartes entre un autre nombre de joueurs, sans qu'il en reste. Quel nombre de joueurs convient ?
+
+- **a.** 6 joueurs ✅
+- **b.** 7 joueurs
+  <br>*Erreur visée :* L'élève confond 36 et 35 : c'est 35 qui est dans la table de 7, car 7 × 5 = 35. Avec 36 cartes, il resterait 1 carte.
+- **c.** 8 joueurs
+  <br>*Erreur visée :* L'élève double le 4 du départ, en croyant qu'un partage par 8 marche dès qu'un partage par 4 marche ; or 8 × 4 = 32 et il resterait 4 cartes.
+
+*Corrigé.* (1) On cherche un nombre par lequel 36 se partage sans reste, c'est-à-dire un diviseur de 36. (2) 36 ÷ 6 = 6 : 6 joueurs reçoivent 6 cartes chacun, il ne reste rien. (3) 36 ÷ 7 ne tombe pas juste : 7 × 5 = 35, il resterait 1 carte. (4) 36 ÷ 8 ne tombe pas juste non plus : 8 × 4 = 32, il resterait 4 cartes. (5) Réponse : 6 joueurs.
+
+*Indice.* Essaie chaque nombre proposé : la division tombe-t-elle juste ?
+
+**EX-A013-E-01** — entrainement, texte, 120 s
+
+Parmi 3, 5, 6 et 8, lesquels sont des diviseurs de 84 ? Sépare-les par des virgules.
+
+**Réponse :** 3, 6
+
+*Corrigé.* (1) Un nombre est un diviseur de 84 si la division de 84 par ce nombre tombe juste. (2) 84 ÷ 3 = 28 : 3 est un diviseur de 84. (3) 84 ÷ 5 : 5 × 16 = 80, il reste 4. 5 n'est pas un diviseur de 84. (4) 84 ÷ 6 = 14 : 6 est un diviseur de 84. (5) 84 ÷ 8 : 8 × 10 = 80, il reste 4 également. 8 n'est pas un diviseur de 84. (6) Réponse : 3, 6.
+
+*Indice.* Pose chaque division et regarde le reste.
+
+**EX-A013-E-02** — entrainement, qcm, 90 s
+
+Un libraire range 630 livres en piles égales. Parmi 4, 7 et 8, quel nombre de piles est possible ?
+
+- **a.** 7 piles ✅
+- **b.** 4 piles
+  <br>*Erreur visée :* L'élève pense que tout nombre pair se partage en 4 ; or 630 = 4 × 157 + 2, il resterait 2 livres.
+- **c.** 8 piles
+  <br>*Erreur visée :* L'élève croit qu'un nombre terminé par 0 se partage en 8 ; or 630 = 8 × 78 + 6, il resterait 6 livres.
+
+*Corrigé.* (1) Pour que les piles soient égales et qu'il ne reste rien, le nombre de piles doit être un diviseur de 630. (2) 630 ÷ 7 = 90 : 7 piles de 90 livres, rien ne reste. (3) 630 ÷ 4 : 4 × 157 = 628, il resterait 2 livres. (4) 630 ÷ 8 : 8 × 78 = 624, il resterait 6 livres. (5) Réponse : 7 piles.
+
+*Indice.* Cherche la division qui tombe juste, sans aucun reste.
+
+**EX-A013-E-03** — entrainement, numerique, 90 s
+
+Un maraîcher a 258 pommes et fait des sacs de 6 pommes. Complète : 258 = 6 × …
+
+**Réponse :** 43
+
+*Corrigé.* (1) On cherche par quel nombre multiplier 6 pour obtenir 258. (2) 258 ÷ 6 = 43. (3) Vérification : 6 × 43 = 258, il ne reste rien. (4) Le maraîcher remplit 43 sacs, et 6 est bien un diviseur de 258.
+
+*Indice.* Pose la division de 258 par 6.
+
+**EX-A013-M-01** — maitrise, vrai_faux, 105 s
+
+Karim écrit : « 5 est un diviseur de 45. Donc 45 est un diviseur de 5. » Karim a raison.
+
+**Réponse :** False
+
+*Corrigé.* (1) La première phrase est juste : 45 ÷ 5 = 9, donc 5 est un diviseur de 45. (2) Mais on ne peut pas échanger les deux nombres : un diviseur est toujours plus petit que le nombre qu'il divise, ou égal à lui. (3) 5 ÷ 45 ne tombe pas juste, donc 45 n'est pas un diviseur de 5. (4) Le bon renversement utilise l'autre mot : 45 est un multiple de 5, car 45 = 5 × 9. (5) Karim a donc tort.
+
+*Indice.* Un diviseur est-il plus petit ou plus grand que le nombre qu'il divise ?
+
+**EX-A013-M-02** — maitrise, numerique, 150 s
+
+Une école range 96 cahiers en paquets égaux. Un paquet contient moins de 10 cahiers. Quel est le plus grand nombre de cahiers par paquet ?
+
+**Réponse :** 8
+
+*Corrigé.* (1) Le nombre de cahiers par paquet doit être un diviseur de 96, sinon un paquet serait incomplet. (2) On part du plus grand candidat : 96 ÷ 9 ne tombe pas juste, car 9 × 10 = 90 et il resterait 6 cahiers. (3) 96 ÷ 8 = 12 : cette division tombe juste. (4) Les diviseurs de 96 inférieurs à 10 sont 1, 2, 3, 4, 6 et 8 : le plus grand est 8. (5) Réponse : 8 cahiers par paquet, soit 12 paquets.
+
+*Indice.* Teste 9, puis 8 : quelle est la première division qui tombe juste ?
+
+---
+
+## `A014` · Multiples de 2, de 5 et de 10 — CM1, difficulté 3
+
+*Reconnaître les multiples de 2, de 5 et de 10 à partir de leur écriture chiffrée*
+
+> « Savoir reconnaître les multiples de 2, de 5 et de 10 à partir de leur écriture chiffrée » — *Cycle 3, Cours moyen première année, Les nombres entiers*
+> « Seuls les critères de divisibilité par 2, 5 et 10 figurent au programme. » — *Cycle 3, Cours moyen deuxième année, Les nombres entiers*
+
+**EX-A014-D-01** — decouverte, qcm, 45 s
+
+Voici quatre nombres : 34, 45, 60 et 87. Lesquels sont des multiples de 2 ?
+
+- **a.** 34 et 60 ✅
+- **b.** 45 et 87
+  <br>*Erreur visée :* L'élève retient les nombres impairs : il confond « se termine par un chiffre impair » et « multiple de 2 ».
+- **c.** 34, 45 et 60
+  <br>*Erreur visée :* L'élève ajoute 45, en croyant qu'un nombre terminé par 5 est aussi un multiple de 2.
+
+*Corrigé.* (1) Un nombre est un multiple de 2 lorsque son chiffre des unités est 0, 2, 4, 6 ou 8. (2) 34 se termine par 4 : c'est un multiple de 2. (3) 45 se termine par 5 et 87 se termine par 7 : ce ne sont pas des multiples de 2. (4) 60 se termine par 0 : c'est un multiple de 2. (5) Réponse : 34 et 60.
+
+*Indice.* Regarde seulement le dernier chiffre de chaque nombre.
+
+**EX-A014-D-02** — decouverte, qcm, 45 s
+
+Toujours avec les nombres 34, 45, 60 et 87. Lesquels sont des multiples de 5 ?
+
+- **a.** 45 et 60 ✅
+- **b.** 60 seulement
+  <br>*Erreur visée :* L'élève ne retient que le chiffre 0 et oublie que les nombres terminés par 5 sont aussi des multiples de 5.
+- **c.** 34 et 60
+  <br>*Erreur visée :* L'élève recopie la réponse trouvée pour les multiples de 2 sans changer de critère.
+
+*Corrigé.* (1) Un nombre est un multiple de 5 lorsque son chiffre des unités est 0 ou 5. Deux chiffres sont donc possibles, contre cinq pour les multiples de 2. (2) 34 se termine par 4 : non. 87 se termine par 7 : non. (3) 45 se termine par 5 : oui, 45 = 5 × 9. (4) 60 se termine par 0 : oui, 60 = 5 × 12. (5) Réponse : 45 et 60. Remarque : 60 est à la fois multiple de 2 et multiple de 5.
+
+*Indice.* Pour les multiples de 5, deux chiffres des unités sont possibles.
+
+**EX-A014-E-01** — entrainement, texte, 90 s
+
+Parmi 1 250, 3 004, 4 815 et 6 730, quels sont les multiples de 10 ? Sépare-les par des virgules.
+
+**Réponse :** 1250, 6730
+
+*Corrigé.* (1) Un nombre est un multiple de 10 lorsque son chiffre des unités est 0. (2) 1 250 se termine par 0 : c'est un multiple de 10. (3) 3 004 se termine par 4 : c'est un multiple de 2, mais pas de 10. (4) 4 815 se termine par 5 : c'est un multiple de 5, mais pas de 10. (5) 6 730 se termine par 0 : c'est un multiple de 10. (6) Réponse : 1 250 et 6 730.
+
+*Indice.* Un seul chiffre compte, celui des unités.
+
+**EX-A014-E-02** — entrainement, vrai_faux, 60 s
+
+Le nombre 27 985 est un multiple de 5, mais ce n'est pas un multiple de 10.
+
+**Réponse :** True
+
+*Corrigé.* (1) Le chiffre des unités de 27 985 est 5. (2) Un nombre terminé par 0 ou par 5 est un multiple de 5 : ici 27 985 = 5 × 5 597. (3) Un multiple de 10 doit se terminer par 0, ce qui n'est pas le cas. (4) Les deux parties de la phrase sont donc justes : l'affirmation est vraie.
+
+*Indice.* Les multiples de 10 se terminent tous par le même chiffre. Lequel ?
+
+**EX-A014-E-03** — entrainement, numerique, 90 s
+
+Un livreur compte ses colis de 5 en 5. Écris le plus grand multiple de 5 plus petit que 8 000.
+
+**Réponse :** 7995
+
+*Corrigé.* (1) Les multiples de 5 se terminent par 0 ou par 5. (2) 8 000 est bien un multiple de 5, mais il n'est pas plus petit que 8 000 : il est écarté. (3) On recule : 7 999, 7 998, 7 997, 7 996, puis 7 995. (4) 7 995 se termine par 5 : c'est un multiple de 5, et 7 995 = 5 × 1 599. (5) Réponse : 7 995.
+
+*Indice.* Recule à partir de 8 000 jusqu'au premier nombre terminé par 0 ou par 5.
+
+**EX-A014-M-01** — maitrise, qcm, 120 s
+
+Un nombre est un multiple de 10. Que peut-on affirmer à coup sûr sur ce nombre ?
+
+- **a.** Il est aussi un multiple de 2 et un multiple de 5 ✅
+- **b.** Il est un multiple de 2, mais pas un multiple de 5
+  <br>*Erreur visée :* L'élève retient seulement que les multiples de 10 sont pairs et oublie que 10 = 2 × 5.
+- **c.** Il se termine par 5
+  <br>*Erreur visée :* L'élève mélange les deux critères : les multiples de 5 se terminent par 0 ou 5, les multiples de 10 seulement par 0.
+
+*Corrigé.* (1) Un multiple de 10 se termine toujours par 0 : 30, 70, 250, 4 000… (2) Un nombre terminé par 0 fait partie des nombres pairs : c'est donc un multiple de 2. (3) Un nombre terminé par 0 est aussi un multiple de 5, puisque le critère des multiples de 5 accepte le chiffre 0. (4) Cela vient de 10 = 2 × 5 : un paquet de 10 se recoupe en 5 paquets de 2 ou en 2 paquets de 5. (5) Enfin, aucun multiple de 10 ne se termine par 5. (6) Réponse : il est à la fois multiple de 2 et multiple de 5.
+
+*Indice.* Écris quelques multiples de 10, puis vérifie s'ils sont dans la table de 2, puis dans celle de 5.
+
+**EX-A014-M-02** — maitrise, vrai_faux, 105 s
+
+Un magasin range tous ses crayons dans des boîtes de 10, sans qu'il en reste. Il annonce 4 386 crayons en stock. C'est possible.
+
+**Réponse :** False
+
+*Corrigé.* (1) Si tous les crayons sont dans des boîtes de 10 pleines, le stock est forcément un multiple de 10. (2) Or un multiple de 10 se termine par 0. (3) 4 386 se termine par 6 : ce n'est pas un multiple de 10, même si le nombre est pair. (4) En détail : 4 386 = 10 × 438 + 6, il resterait 6 crayons hors boîte. (5) L'affirmation est donc fausse.
+
+*Indice.* Par quel chiffre se termine un nombre d'objets rangés par paquets de 10 ?
+
+---
+
+## `A028` · Entier sur une demi-droite graduée — CM1, difficulté 3
+
+*Placer un entier sur une demi-droite graduée et repérer un point par son abscisse*
+
+> « Savoir placer des nombres et repérer des points sur une demi-droite graduée » — *Cycle 3, Cours moyen première année, Les nombres entiers*
+
+**EX-A028-D-01** — decouverte, numerique, 60 s
+
+Une demi-droite est graduée de 1 000 en 1 000 à partir de 0. Quel nombre est écrit à la quatrième graduation après 0 ?
+
+**Réponse :** 4000
+
+*Corrigé.* (1) Sur une demi-droite graduée, l'écart entre deux graduations voisines est toujours le même. Ici il vaut 1 000. (2) Première graduation : 1 000. Deuxième : 2 000. Troisième : 3 000. (3) Quatrième : 4 × 1 000 = 4 000. (4) Réponse : 4 000.
+
+*Indice.* Compte de 1 000 en 1 000 en partant de 0.
+
+**EX-A028-D-02** — decouverte, qcm, 75 s
+
+Sur la même demi-droite graduée de 1 000 en 1 000 à partir de 0, où faut-il placer le nombre 3 500 ?
+
+- **a.** Juste au milieu entre les graduations 3 000 et 4 000 ✅
+- **b.** Sur la graduation 3 000
+  <br>*Erreur visée :* L'élève ne lit que le chiffre des milliers et pose le point sur la graduation précédente, comme si 3 500 valait 3 000.
+- **c.** Juste après la graduation 4 000
+  <br>*Erreur visée :* L'élève arrondit 3 500 à 4 000, puis place le point au-delà de cette graduation alors que 3 500 est plus petit que 4 000.
+
+*Corrigé.* (1) 3 500 est plus grand que 3 000 et plus petit que 4 000 : il se trouve entre ces deux graduations. (2) L'écart entre deux graduations vaut 1 000, et 500 en est exactement la moitié. (3) 3 000 + 500 = 3 500 : le point tombe donc au milieu de cet intervalle. (4) Réponse : juste au milieu entre 3 000 et 4 000.
+
+*Indice.* Entre quelles deux graduations 3 500 se trouve-t-il ? Regarde ensuite s'il est plus près de l'une des deux.
+
+**EX-A028-E-01** — entrainement, numerique, 90 s
+
+Sur une demi-droite graduée de 100 en 100, un point se situe 7 graduations après 2 000. Quelle est son abscisse ?
+
+**Réponse :** 2700
+
+*Corrigé.* (1) L'abscisse d'un point, c'est le nombre qui lui correspond sur la demi-droite. (2) Chaque graduation avance de 100, donc sept graduations valent 7 × 100 = 700. (3) On part de 2 000 : 2 000 + 700 = 2 700. (4) L'abscisse du point est 2 700.
+
+*Indice.* Combien vaut un déplacement de 7 graduations, si chaque graduation vaut 100 ?
+
+**EX-A028-E-02** — entrainement, texte, 105 s
+
+Une demi-droite est graduée de 20 en 20 à partir de 0. Entre quelles deux graduations se place 130 ? Sépare-les par une virgule.
+
+**Réponse :** 120, 140
+
+*Corrigé.* (1) Les graduations sont 0, 20, 40, 60, 80, 100, 120, 140, et ainsi de suite. (2) On avance jusqu'à dépasser 130 : après 120 vient 140. (3) 130 est plus grand que 120 et plus petit que 140, et aucune graduation ne se trouve entre les deux. (4) Réponse : 120, 140.
+
+*Indice.* Compte de 20 en 20 jusqu'à dépasser 130.
+
+**EX-A028-E-03** — entrainement, vrai_faux, 90 s
+
+Sur une demi-droite graduée de 500 en 500, trois graduations séparent le point d'abscisse 2 500 du point d'abscisse 4 000.
+
+**Réponse :** True
+
+*Corrigé.* (1) On avance de 500 en 500 à partir de 2 500 : 3 000, puis 3 500, puis 4 000. (2) Il faut donc trois déplacements pour aller de 2 500 à 4 000. (3) On peut aussi le calculer : 4 000 - 2 500 = 1 500, puis 1 500 ÷ 500 = 3. (4) L'affirmation est vraie.
+
+*Indice.* Calcule l'écart entre les deux abscisses, puis divise-le par la valeur d'une graduation.
+
+**EX-A028-M-01** — maitrise, numerique, 180 s
+
+Une demi-droite est graduée régulièrement à partir de 0. La troisième graduation porte le nombre 1 200. Quel nombre porte la cinquième ?
+
+**Réponse :** 2000
+
+*Corrigé.* (1) Ici la valeur d'une graduation n'est pas donnée : il faut la retrouver d'abord. (2) Trois graduations valent 1 200, donc une seule vaut 1 200 ÷ 3 = 400. (3) La cinquième graduation vaut alors 5 × 400 = 2 000. (4) Vérification en comptant : 400, 800, 1 200, 1 600, 2 000. (5) Réponse : 2 000.
+
+*Indice.* Cherche d'abord de combien on avance en passant d'une graduation à la suivante.
+
+**EX-A028-M-02** — maitrise, qcm, 150 s
+
+Une demi-droite va de 0 à 100 000 et elle est graduée de 10 000 en 10 000. Où placer 9 500 ?
+
+- **a.** Entre 0 et 10 000, tout près de la graduation 10 000 ✅
+- **b.** Entre 9 000 et 10 000
+  <br>*Erreur visée :* L'élève cherche une graduation 9 000, qui n'existe pas ici : la première graduation après 0 est 10 000.
+- **c.** Entre 10 000 et 20 000
+  <br>*Erreur visée :* L'élève arrondit 9 500 à 10 000 puis place le point après cette graduation, alors que 9 500 est plus petit que 10 000.
+
+*Corrigé.* (1) Les graduations sont 0, 10 000, 20 000, et ainsi de suite jusqu'à 100 000. (2) 9 500 est plus petit que 10 000 : il se trouve donc dans le tout premier intervalle, celui qui part de 0. (3) Il en est très proche : il manque seulement 500 pour atteindre 10 000, soit un vingtième de l'intervalle. (4) Le point se place entre 0 et 10 000, juste avant la graduation 10 000.
+
+*Indice.* 9 500 est-il plus grand ou plus petit que la première graduation après 0 ?
+
+---
+
 ## `C004` · Fraction d'une quantité — CM1, difficulté 3
 
 *Calculer une fraction unitaire d'une quantité ou d'une grandeur*
@@ -1001,7 +1350,7 @@ Entre quels entiers consécutifs se trouve 7/4 ?
 
 **EX-C029-D-02** — decouverte, numerique, 60 s
 
-Complète l'encadrement : 1 < 5/3 < …
+Complète l'encadrement avec un nombre entier : 1 < rac{5}{3} < …
 
 **Réponse :** 2
 
@@ -1035,7 +1384,7 @@ Entre quels entiers consécutifs se trouve 17/5 ?
 
 **EX-C029-E-03** — entrainement, numerique, 90 s
 
-Complète l'encadrement : 2 < 13/6 < …
+Complète l'encadrement avec un nombre entier : 2 < rac{13}{6} < …
 
 **Réponse :** 3
 
@@ -1148,6 +1497,176 @@ Sur une demi-droite graduée en tiers, quelle fraction se trouve au cran situé 
 *Corrigé.* (1) On exprime 2 en tiers : 2 = 6/3, donc le nombre 2 est au 6e cran. (2) Le cran juste avant est le 5e. (3) L'abscisse cherchée est donc 5/3. (4) Vérification : 5/3 = 1 + 2/3, un tiers de moins que 2.
 
 *Indice.* À quel cran se trouve le nombre 2 ? Recule ensuite d'un seul cran.
+
+---
+
+## `A026` · Tous les diviseurs d'un entier — CM2, difficulté 3
+
+*Déterminer tous les diviseurs d'un entier inférieur ou égal à 30*
+
+> « Déterminer tous les diviseurs d'un nombre entier inférieur ou égal à 30 » — *Cycle 3, Cours moyen deuxième année, Les nombres entiers*
+> « Déterminer des diviseurs d'un nombre entier inférieur ou égal à 100 » — *Cycle 3, Cours moyen deuxième année, Les nombres entiers*
+
+**EX-A026-D-01** — decouverte, qcm, 60 s
+
+Marc écrit 3 × 4 = 12. Que peut-il en déduire sur les diviseurs de 12 ?
+
+- **a.** 3 et 4 sont des diviseurs de 12 ✅
+- **b.** 12 est un diviseur de 3 et de 4
+  <br>*Erreur visée :* L'élève inverse les rôles : un diviseur est plus petit que le nombre qu'il divise, ou égal à lui, or 12 est plus grand que 3 et que 4.
+- **c.** 3 et 4 sont les seuls diviseurs de 12
+  <br>*Erreur visée :* L'élève croit qu'une seule multiplication donne tous les diviseurs et oublie 1 × 12 et 2 × 6.
+
+*Corrigé.* (1) 3 × 4 = 12 signifie que 12 se partage en 3 parts de 4, ou en 4 parts de 3. (2) Ces deux partages tombent juste : 3 et 4 sont donc des diviseurs de 12. (3) Une multiplication fournit toujours deux diviseurs d'un coup. (4) 12 n'est pas un diviseur de 3, car 12 est plus grand que 3. (5) Enfin 12 possède d'autres diviseurs, que d'autres multiplications feront apparaître.
+
+*Indice.* Dans 3 × 4 = 12, combien de nombres partagent 12 sans reste ?
+
+**EX-A026-D-02** — decouverte, texte, 120 s
+
+Marc cherche maintenant tous les diviseurs de 12. Écris-les du plus petit au plus grand, séparés par des virgules.
+
+**Réponse :** 1, 2, 3, 4, 6, 12
+
+*Corrigé.* (1) On cherche toutes les multiplications de deux entiers qui donnent 12. (2) 1 × 12 = 12, 2 × 6 = 12, 3 × 4 = 12. (3) 5 ne convient pas : 12 ÷ 5 ne tombe pas juste. (4) Chaque multiplication donne deux diviseurs : 1 et 12, puis 2 et 6, puis 3 et 4. (5) Rangés du plus petit au plus grand : 1, 2, 3, 4, 6, 12. Il y en a six.
+
+*Indice.* Essaie 1, puis 2, puis 3… jusqu'à retomber sur un diviseur déjà écrit.
+
+**EX-A026-E-01** — entrainement, texte, 150 s
+
+Écris tous les diviseurs de 28, du plus petit au plus grand. Sépare-les par des virgules.
+
+**Réponse :** 1, 2, 4, 7, 14, 28
+
+*Corrigé.* (1) On teste les nombres dans l'ordre. (2) 1 × 28 = 28 : 1 et 28 sont des diviseurs. (3) 2 × 14 = 28 : 2 et 14 sont des diviseurs. (4) 3 ne convient pas, car 28 ÷ 3 ne tombe pas juste. (5) 4 × 7 = 28 : 4 et 7 sont des diviseurs. (6) 5 et 6 ne conviennent pas. À partir de 7, on retrouve des diviseurs déjà écrits : on peut s'arrêter. (7) Réponse : 1, 2, 4, 7, 14, 28.
+
+*Indice.* Chaque fois que tu trouves un diviseur, son partenaire de multiplication en est un aussi.
+
+**EX-A026-E-02** — entrainement, qcm, 90 s
+
+Zoé cherche tous les diviseurs de 18. Quelle liste est la bonne ?
+
+- **a.** 1, 2, 3, 6, 9, 18 ✅
+- **b.** 2, 3, 6, 9
+  <br>*Erreur visée :* L'élève oublie les deux diviseurs extrêmes : 1 et le nombre lui-même divisent toujours le nombre.
+- **c.** 1, 2, 3, 4, 6, 9, 18
+  <br>*Erreur visée :* L'élève ajoute 4 en croyant que tout nombre pair a 4 pour diviseur ; or 18 = 4 × 4 + 2.
+
+*Corrigé.* (1) 1 × 18 = 18, 2 × 9 = 18, 3 × 6 = 18. (2) 4 ne convient pas : 4 × 4 = 16 et il resterait 2. (3) 5 ne convient pas non plus, car 18 ne se termine ni par 0 ni par 5. (4) Après 6, on retombe sur les diviseurs déjà trouvés : on s'arrête. (5) Les diviseurs de 18 sont 1, 2, 3, 6, 9 et 18.
+
+*Indice.* N'oublie ni 1 ni le nombre lui-même.
+
+**EX-A026-E-03** — entrainement, numerique, 120 s
+
+Léo range 100 jetons en boîtes égales et veut au moins deux boîtes. Quel est le plus grand nombre de jetons par boîte ?
+
+**Réponse :** 50
+
+*Corrigé.* (1) Le nombre de jetons par boîte doit être un diviseur de 100. (2) Les diviseurs de 100 sont 1, 2, 4, 5, 10, 20, 25, 50 et 100. (3) 100 est écarté : il ne donnerait qu'une seule boîte, or Léo en veut au moins deux. (4) Le plus grand diviseur restant est 50. (5) 100 = 2 × 50 : Léo fait 2 boîtes de 50 jetons. Réponse : 50.
+
+*Indice.* Quel est le plus petit nombre de boîtes acceptable ? Pars de là.
+
+**EX-A026-M-01** — maitrise, texte, 150 s
+
+Léa cherche tous les diviseurs de 23. Écris-les, séparés par des virgules.
+
+**Réponse :** 1, 23
+
+*Corrigé.* (1) On teste les nombres un par un, comme d'habitude. (2) 2 : 23 est impair, la division ne tombe pas juste. (3) 3 : 3 × 7 = 21, il resterait 2. 4 : 4 × 5 = 20, il resterait 3. (4) 5 : 23 ne se termine ni par 0 ni par 5, donc non. (5) Inutile d'aller plus loin : 5 × 5 = 25 dépasse déjà 23, les diviseurs suivants auraient tous été trouvés en partenaire. (6) Il ne reste que la multiplication 1 × 23 = 23. (7) 23 n'a donc que deux diviseurs, 1 et 23. Certains nombres en ont très peu : ce n'est pas une erreur.
+
+*Indice.* Teste 2, 3, 4 puis 5. Combien de divisions tombent juste ?
+
+**EX-A026-M-02** — maitrise, numerique, 150 s
+
+Un jardinier plante 24 fleurs en rangées égales. Il veut plus de 4 rangées et moins de 8. Combien de rangées fait-il ?
+
+**Réponse :** 6
+
+*Corrigé.* (1) Le nombre de rangées doit être un diviseur de 24, sinon une rangée serait incomplète. (2) Les diviseurs de 24 sont 1, 2, 3, 4, 6, 8, 12 et 24. (3) On ne garde que ceux qui sont strictement compris entre 4 et 8 : seul 6 convient. (4) 5 et 7 ne sont pas des diviseurs de 24. (5) Le jardinier fait 6 rangées, avec 4 fleurs par rangée.
+
+*Indice.* Écris d'abord tous les diviseurs de 24, puis regarde lesquels respectent la condition.
+
+---
+
+## `A027` · Diviseurs et multiples communs — CM2, difficulté 4
+
+*Déterminer les diviseurs communs à deux entiers, et des multiples communs à deux entiers*
+
+> « Déterminer les diviseurs communs à deux nombres entiers inférieurs ou égaux à 30 » — *Cycle 3, Cours moyen deuxième année, Les nombres entiers*
+> « Déterminer des multiples communs à deux nombres entiers inférieurs à 15 » — *Cycle 3, Cours moyen deuxième année, Les nombres entiers*
+
+**EX-A027-D-01** — decouverte, texte, 120 s
+
+Les diviseurs de 12 sont 1, 2, 3, 4, 6 et 12. Parmi eux, écris ceux qui sont aussi des diviseurs de 18.
+
+**Réponse :** 1, 2, 3, 6
+
+*Corrigé.* (1) On reprend la liste un nombre à la fois et on teste chacun sur 18. (2) 18 ÷ 1 = 18, 18 ÷ 2 = 9, 18 ÷ 3 = 6 et 18 ÷ 6 = 3 : ces quatre divisions tombent juste. (3) 18 ÷ 4 ne tombe pas juste : 4 × 4 = 16, il resterait 2. (4) 18 ÷ 12 non plus : 12 × 1 = 12, il resterait 6. (5) Les diviseurs communs à 12 et à 18 sont donc 1, 2, 3 et 6.
+
+*Indice.* Prends les nombres de la liste un par un et divise 18 par chacun.
+
+**EX-A027-D-02** — decouverte, qcm, 90 s
+
+Les nombres 12 et 18 ont plusieurs diviseurs communs. Quel est le plus grand d'entre eux ?
+
+- **a.** 6 ✅
+- **b.** 9
+  <br>*Erreur visée :* L'élève prend le plus grand diviseur de 18 avant 18, sans vérifier qu'il divise aussi 12 ; or 12 ÷ 9 laisse un reste de 3.
+- **c.** 4
+  <br>*Erreur visée :* L'élève prend un diviseur de 12 sans vérifier qu'il divise aussi 18 ; or 18 ÷ 4 laisse un reste de 2.
+
+*Corrigé.* (1) Diviseurs de 12 : 1, 2, 3, 4, 6, 12. Diviseurs de 18 : 1, 2, 3, 6, 9, 18. (2) On écrit les deux listes l'une sous l'autre et on garde ce qui figure dans les deux : 1, 2, 3 et 6. (3) Parmi ces diviseurs communs, le plus grand est 6. (4) 9 n'apparaît que dans la liste de 18, et 4 n'apparaît que dans celle de 12 : ni l'un ni l'autre n'est commun.
+
+*Indice.* Écris les deux listes de diviseurs l'une sous l'autre, puis compare-les.
+
+**EX-A027-E-01** — entrainement, texte, 150 s
+
+Écris tous les diviseurs communs à 24 et à 30. Sépare-les par des virgules.
+
+**Réponse :** 1, 2, 3, 6
+
+*Corrigé.* (1) Diviseurs de 24 : 1, 2, 3, 4, 6, 8, 12, 24. (2) Diviseurs de 30 : 1, 2, 3, 5, 6, 10, 15, 30. (3) On compare les deux listes. (4) Les nombres présents dans les deux sont 1, 2, 3 et 6. (5) Réponse : 1, 2, 3, 6.
+
+*Indice.* Écris d'abord les deux listes complètes, puis entoure ce qu'elles ont en commun.
+
+**EX-A027-E-02** — entrainement, texte, 150 s
+
+Écris les trois plus petits multiples communs à 4 et à 6, sans compter 0. Sépare-les par des virgules.
+
+**Réponse :** 12, 24, 36
+
+*Corrigé.* (1) Multiples de 4 : 4, 8, 12, 16, 20, 24, 28, 32, 36… (2) Multiples de 6 : 6, 12, 18, 24, 30, 36… (3) Un multiple commun doit figurer dans les deux listes. (4) On repère 12, puis 24, puis 36. (5) Réponse : 12, 24, 36.
+
+*Indice.* Écris la table de 4 et la table de 6 l'une sous l'autre, puis compare.
+
+**EX-A027-E-03** — entrainement, vrai_faux, 75 s
+
+Marie affirme que 30 est un multiple commun à 6 et à 8. Marie a raison.
+
+**Réponse :** False
+
+*Corrigé.* (1) 30 est bien un multiple de 6 : 30 = 6 × 5. (2) Mais dans la table de 8 on trouve 8 × 3 = 24, puis 8 × 4 = 32 : 30 n'y figure pas. (3) Pour être un multiple commun, un nombre doit appartenir aux deux tables, pas à une seule. (4) Marie a donc tort. Le plus petit multiple commun à 6 et à 8 est 24.
+
+*Indice.* Vérifie les deux tables, pas seulement l'une des deux.
+
+**EX-A027-M-01** — maitrise, numerique, 180 s
+
+Un bus part toutes les 12 minutes, un autre toutes les 8 minutes. Ils partent ensemble à 9 h. Dans combien de minutes repartiront-ils ensemble ?
+
+**Réponse :** 24
+
+*Corrigé.* (1) Le premier bus repart au bout de 12, 24, 36, 48 minutes… (2) Le second repart au bout de 8, 16, 24, 32 minutes… (3) Ils repartent ensemble à un instant présent dans les deux listes : c'est un multiple commun à 12 et à 8. (4) Le premier de ces instants est 24, car 24 = 12 × 2 et 24 = 8 × 3. (5) Réponse : 24 minutes, c'est-à-dire à 9 h 24.
+
+*Indice.* Écris les horaires de départ de chaque bus, puis cherche le premier qui se retrouve dans les deux listes.
+
+**EX-A027-M-02** — maitrise, numerique, 180 s
+
+Un pâtissier a 20 éclairs et 30 tartelettes. Il prépare des paquets identiques et utilise tout. Quel est le plus grand nombre de paquets ?
+
+**Réponse :** 10
+
+*Corrigé.* (1) Les paquets étant identiques, le nombre de paquets doit diviser 20 pour les éclairs et diviser 30 pour les tartelettes. (2) Diviseurs de 20 : 1, 2, 4, 5, 10, 20. Diviseurs de 30 : 1, 2, 3, 5, 6, 10, 15, 30. (3) Les diviseurs communs sont 1, 2, 5 et 10. (4) On les compare : le plus grand est 10. (5) Le pâtissier fait 10 paquets, chacun avec 2 éclairs et 3 tartelettes.
+
+*Indice.* Le nombre de paquets doit se retrouver dans les deux listes de diviseurs.
 
 ---
 

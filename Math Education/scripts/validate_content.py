@@ -389,6 +389,45 @@ def check_champ_numerique(dag: dict, exercises: dict) -> None:
 
 
 # ---------------------------------------------------------------------------
+#  Une notation ne s'emploie qu'une fois enseignee
+# ---------------------------------------------------------------------------
+# L'eleve parcourt le DAG lineairement. Un exercice ne peut donc pas employer
+# une notation dont la competence introductrice n'est pas un ancetre de la
+# sienne : il la decouvrirait dans l'enonce.
+# Constat du 22 aout 2026 : 7 exercices employaient < et > alors que A006,
+# qui les introduit, n'etait ancetre d'aucune de leurs competences.
+
+NOTATIONS = {
+    "A006": (re.compile(r"[<>]"), "les symboles < et >"),
+}
+
+
+def check_notations(dag: dict, exercises: dict) -> None:
+    graph = nx.DiGraph()
+    ids = {s["id"] for s in dag["skills"]}
+    for s in dag["skills"]:
+        graph.add_node(s["id"])
+        for p in s["prerequisites"]:
+            if p in ids:
+                graph.add_edge(p, s["id"])
+
+    for source, (motif, libelle) in NOTATIONS.items():
+        if source not in graph:
+            continue
+        autorisees = nx.descendants(graph, source) | {source}
+        for ex in exercises["exercises"]:
+            zones = [ex["statement"], str(ex["answer"].get("value", ""))]
+            zones += [c["text"] for c in ex.get("choices", [])]
+            if not any(motif.search(z) for z in zones):
+                continue
+            if ex["skill_id"] not in autorisees:
+                err(
+                    f"Notation : {ex['id']} ({ex['skill_id']}) emploie {libelle}, "
+                    f"introduits par {source}, qui n'est pas un prerequis de {ex['skill_id']}"
+                )
+
+
+# ---------------------------------------------------------------------------
 #  L'exemple de format ne doit jamais donner la reponse
 # ---------------------------------------------------------------------------
 # Defaut systematique releve a la seconde relecture : le generateur illustre le
@@ -525,6 +564,10 @@ def main() -> int:
         err_avant = len(errors)
         check_exemple_format(exercises)
         print(f"  exemple de format     {'OK' if len(errors) == err_avant else 'ANOMALIES'}")
+
+        err_avant = len(errors)
+        check_notations(dag, exercises)
+        print(f"  notations enseignees  {'OK' if len(errors) == err_avant else 'ANOMALIES'}")
 
     print()
     if warnings:
