@@ -3,7 +3,7 @@
     "version": "1.0",
     "scope": "Tranche pilote CP a 4e : 69 exercices, 3 par competence (1 decouverte, 1 entrainement, 1 maitrise) sur les 23 competences des domaines A et C. La cible finale de la roadmap est de 5 exercices par niveau, soit 15 par competence.",
     "updated_at": "2026-07-28",
-    "total_exercises": 153,
+    "total_exercises": 155,
     "review_status": "relu_agent"
   },
   "exercises": [
@@ -31,15 +31,15 @@
       "skill_id": "A001",
       "level": "entrainement",
       "type": "numerique",
-      "statement": "Quel nombre vient juste **après** 6 ?",
+      "statement": "Quel nombre vient juste **après** 8 ?",
       "image": null,
       "answer": {
-        "value": 7
+        "value": 9
       },
       "solution_steps": [
-        "Dans la suite des nombres, on avance d'un cran : 6, puis **7**."
+        "Dans la suite des nombres, on avance d'un cran : 8, puis **9**."
       ],
-      "hint": "Récite la suite des nombres à partir de 1 et arrête-toi juste après 6.",
+      "hint": "Récite la suite des nombres à partir de 1 et arrête-toi juste après 8.",
       "estimated_duration_s": 20,
       "review_status": "relu_agent",
       "programme_ref": "Cycle 2, CP : les nombres entiers jusqu'à cent."
@@ -619,7 +619,7 @@
       },
       "solution_steps": [
         "On compte les chiffres de chacun : 99 s'écrit avec 2 chiffres, 100 s'écrit avec 3 chiffres.",
-        "Comme $2 < 3$, c'est 100 qui s'écrit avec le plus de chiffres.",
+        "Comme 2 chiffres, c'est moins que 3 chiffres, c'est 100 qui s'écrit avec le plus de chiffres.",
         "L'affirmation est donc **fausse**.",
         "Le piège : le chiffre 9 est plus grand que le chiffre 1, mais cela ne dit rien du nombre de chiffres utilisés pour écrire le nombre."
       ],
@@ -874,7 +874,7 @@
       ],
       "hint": "Cherche 42 dans la liste que Léa a écrite.",
       "estimated_duration_s": 40,
-      "review_status": "brouillon",
+      "review_status": "relu_agent",
       "programme_ref": "Cycle 3, CM1, les nombres entiers : savoir determiner si un nombre entier donne est un multiple d'un nombre entier inferieur ou egal a 10."
     },
     {
@@ -912,7 +912,7 @@
       ],
       "hint": "Continue la liste de Léa : quel nombre vient juste après 49 ?",
       "estimated_duration_s": 60,
-      "review_status": "brouillon",
+      "review_status": "relu_agent",
       "programme_ref": "Cycle 3, CM1, les nombres entiers : savoir determiner si un nombre entier donne est un multiple d'un nombre entier inferieur ou egal a 10."
     },
     {
@@ -920,20 +920,20 @@
       "skill_id": "A012",
       "level": "entrainement",
       "type": "vrai_faux",
-      "statement": "Un fleuriste range 96 tulipes en bouquets de 6 tulipes. Il n'en reste aucune.\n\nDonc 96 est un multiple de 6.",
+      "statement": "Un fleuriste veut ranger 96 tulipes en bouquets de 7 tulipes, sans qu'il en reste aucune.\n\nIl y arrive, donc 96 est un multiple de 7.",
       "image": null,
       "answer": {
-        "value": true
+        "value": false
       },
       "solution_steps": [
-        "On cherche si le fleuriste peut faire un nombre entier de bouquets.",
-        "$96 \\div 6 = 16$ : il fait 16 bouquets, et il ne reste rien.",
-        "Autrement dit $96 = 6 \\times 16$.",
-        "Un nombre qui s'écrit 6 multiplié par un entier est un multiple de 6. L'affirmation est **vraie**."
+        "On cherche si 96 s'écrit 7 multiplié par un nombre entier.",
+        "$7 \\times 13 = 91$, et $7 \\times 14 = 98$ : on saute 96.",
+        "$96 = 7 \\times 13 + 5$ : il resterait 5 tulipes.",
+        "Le fleuriste n'y arrive donc pas, et 96 n'est **pas** un multiple de 7. L'affirmation est **fausse**."
       ],
-      "hint": "Cherche par combien il faut multiplier 6 pour obtenir 96.",
+      "hint": "Cherche dans la table de 7 : y trouve-t-on 96 ?",
       "estimated_duration_s": 60,
-      "review_status": "brouillon",
+      "review_status": "relu_agent",
       "programme_ref": "Cycle 3, CM1, les nombres entiers : savoir determiner si un nombre entier donne est un multiple d'un nombre entier inferieur ou egal a 10."
     },
     {
@@ -941,27 +941,24 @@
       "skill_id": "A012",
       "level": "entrainement",
       "type": "texte",
-      "statement": "Parmi 128, 150, 216 et 305, quels nombres sont des multiples de 4 ?\n\nSépare-les par des virgules.",
+      "statement": "Parmi 128, 150 et 305, quels nombres sont des multiples de 4 ?\n\nSépare-les par des virgules.",
       "image": null,
       "answer": {
-        "value": "128, 216",
+        "value": "128",
         "accepted": [
-          "128,216",
-          "128 et 216",
-          "216, 128"
+          "128."
         ]
       },
       "solution_steps": [
         "Un nombre est un multiple de 4 s'il s'écrit 4 multiplié par un nombre entier.",
         "$128 = 4 \\times 32$ : c'est un multiple de 4.",
         "$150 = 4 \\times 37 + 2$ : il reste 2, ce n'est pas un multiple de 4.",
-        "$216 = 4 \\times 54$ : c'est un multiple de 4.",
         "$305 = 4 \\times 76 + 1$ : il reste 1, ce n'est pas un multiple de 4.",
-        "Réponse : 128, 216."
+        "Réponse : 128."
       ],
       "hint": "Divise chaque nombre par 4 et regarde s'il reste quelque chose.",
-      "estimated_duration_s": 120,
-      "review_status": "brouillon",
+      "estimated_duration_s": 90,
+      "review_status": "relu_agent",
       "programme_ref": "Cycle 3, CM1, les nombres entiers : savoir determiner si un nombre entier donne est un multiple d'un nombre entier inferieur ou egal a 10."
     },
     {
@@ -994,13 +991,13 @@
       "solution_steps": [
         "Un multiple de 7 est un nombre qui s'écrit 7 multiplié par un nombre entier.",
         "Ici $161 = 7 \\times 23$ : 161 est donc un multiple de 7.",
-        "Une même multiplication le dit aussi de 23 : 161 est également un multiple de 23.",
+        "Le résultat d'une multiplication est un multiple de chacun des deux nombres multipliés : ici c'est 161 qui est le multiple, pas 7.",
         "En revanche 7 n'est pas un multiple de 161 : 7 est plus petit que 161, et aucune multiplication $161 \\times \\ldots$ ne donne 7.",
         "Réponse : 161 est un multiple de 7."
       ],
       "hint": "Dans $7 \\times 23 = 161$, quel nombre est le résultat de la multiplication ?",
       "estimated_duration_s": 75,
-      "review_status": "brouillon",
+      "review_status": "relu_agent",
       "programme_ref": "Cycle 3, CM1, les nombres entiers : savoir determiner si un nombre entier donne est un multiple d'un nombre entier inferieur ou egal a 10."
     },
     {
@@ -1022,7 +1019,7 @@
       ],
       "hint": "Cherche par quel nombre multiplier 8 pour arriver juste au-dessus de 300.",
       "estimated_duration_s": 120,
-      "review_status": "brouillon",
+      "review_status": "relu_agent",
       "programme_ref": "Cycle 3, CM1, les nombres entiers : savoir determiner si un nombre entier donne est un multiple d'un nombre entier inferieur ou egal a 10."
     },
     {
@@ -1030,21 +1027,21 @@
       "skill_id": "A012",
       "level": "maitrise",
       "type": "vrai_faux",
-      "statement": "Nina remarque que 4 514 est un nombre pair.\n\nElle en conclut que 4 514 est un multiple de 4. Nina a raison.",
+      "statement": "Nina remarque que 26 est un nombre pair.\n\nElle en conclut que 26 est un multiple de 4. Nina a raison.",
       "image": null,
       "answer": {
         "value": false
       },
       "solution_steps": [
-        "Le début est juste : 4 514 se termine par 4, il est donc pair, c'est-à-dire multiple de 2.",
+        "Le début est juste : 26 se termine par 6, il est donc pair, c'est-à-dire multiple de 2.",
         "Mais être un multiple de 2 ne suffit pas pour être un multiple de 4.",
-        "$4\\,514 \\div 4$ donne 1 128 et il reste 2 : $4\\,514 = 4 \\times 1\\,128 + 2$.",
-        "4 514 n'est donc pas un multiple de 4 : Nina a **tort**.",
-        "Un nombre pair peut l'être, comme $4\\,512 = 4 \\times 1\\,128$, mais ce n'est pas automatique. Contre-exemples simples : 6 et 10 sont pairs sans être dans la table de 4."
+        "Dans la table de 4 on trouve $4 \\times 6 = 24$, puis $4 \\times 7 = 28$ : 26 n'y figure pas.",
+        "$26 = 4 \\times 6 + 2$ : il reste 2. Nina a donc **tort**.",
+        "Un nombre pair est parfois multiple de 4, comme 24 ou 28, mais pas toujours : 6, 10, 26 sont pairs sans être dans la table de 4."
       ],
-      "hint": "Tous les nombres pairs sont-ils dans la table de 4 ? Regarde 6, puis 10.",
+      "hint": "Écris la table de 4 : 4, 8, 12, 16… 26 y apparaît-il ?",
       "estimated_duration_s": 120,
-      "review_status": "brouillon",
+      "review_status": "relu_agent",
       "programme_ref": "Cycle 3, CM1, les nombres entiers : savoir determiner si un nombre entier donne est un multiple d'un nombre entier inferieur ou egal a 10."
     },
     {
@@ -1066,7 +1063,7 @@
       ],
       "hint": "Partage 36 en 4 parts égales : la division tombe-t-elle juste ?",
       "estimated_duration_s": 45,
-      "review_status": "brouillon",
+      "review_status": "relu_agent",
       "programme_ref": "Cycle 3, CM1, les nombres entiers : savoir determiner si un nombre entier inferieur ou egal a 10 est un diviseur d'un nombre entier donne."
     },
     {
@@ -1074,7 +1071,7 @@
       "skill_id": "A013",
       "level": "decouverte",
       "type": "qcm",
-      "statement": "On veut partager les mêmes 36 cartes entre un autre nombre de joueurs, sans qu'il en reste.\n\nQuel nombre de joueurs convient ?",
+      "statement": "On partage 36 cartes entre plusieurs joueurs, sans qu'il en reste aucune.\n\nQuel nombre de joueurs convient ?",
       "image": null,
       "choices": [
         {
@@ -1105,7 +1102,7 @@
       ],
       "hint": "Essaie chaque nombre proposé : la division tombe-t-elle juste ?",
       "estimated_duration_s": 75,
-      "review_status": "brouillon",
+      "review_status": "relu_agent",
       "programme_ref": "Cycle 3, CM1, les nombres entiers : savoir determiner si un nombre entier inferieur ou egal a 10 est un diviseur d'un nombre entier donne."
     },
     {
@@ -1120,7 +1117,11 @@
         "accepted": [
           "3,6",
           "3 et 6",
-          "6, 3"
+          "6, 3",
+          "6,3",
+          "3 6",
+          "3;6",
+          "6 et 3"
         ]
       },
       "solution_steps": [
@@ -1133,7 +1134,7 @@
       ],
       "hint": "Pose chaque division et regarde le reste.",
       "estimated_duration_s": 120,
-      "review_status": "brouillon",
+      "review_status": "relu_agent",
       "programme_ref": "Cycle 3, CM1, les nombres entiers : savoir determiner si un nombre entier inferieur ou egal a 10 est un diviseur d'un nombre entier donne."
     },
     {
@@ -1157,7 +1158,7 @@
         {
           "key": "c",
           "text": "8 piles",
-          "misconception": "L'élève croit qu'un nombre terminé par 0 se partage en 8 ; or $630 = 8 \\times 78 + 6$, il resterait 6 livres."
+          "misconception": "L'élève applique deux fois la règle du double : 630 est pair, donc il le croit divisible par 4 puis par 8 ; or $630 = 8 \\times 78 + 6$, il resterait 6 livres."
         }
       ],
       "answer": {
@@ -1172,7 +1173,7 @@
       ],
       "hint": "Cherche la division qui tombe juste, sans aucun reste.",
       "estimated_duration_s": 90,
-      "review_status": "brouillon",
+      "review_status": "relu_agent",
       "programme_ref": "Cycle 3, CM1, les nombres entiers : savoir determiner si un nombre entier inferieur ou egal a 10 est un diviseur d'un nombre entier donne."
     },
     {
@@ -1180,20 +1181,20 @@
       "skill_id": "A013",
       "level": "entrainement",
       "type": "numerique",
-      "statement": "Un maraîcher a 258 pommes et fait des sacs de 6 pommes.\n\nComplète : $258 = 6 \\times \\ldots$",
+      "statement": "Un maraîcher a 258 pommes. Il veut faire des sacs de 6 pommes, tous pleins.\n\nPeut-il utiliser toutes ses pommes ? Complète : $258 = 6 \\times \\ldots$",
       "image": null,
       "answer": {
         "value": 43
       },
       "solution_steps": [
+        "Si la multiplication tombe juste, 6 est un diviseur de 258 : aucune pomme ne reste.",
         "On cherche par quel nombre multiplier 6 pour obtenir 258.",
-        "$258 \\div 6 = 43$.",
-        "Vérification : $6 \\times 43 = 258$, il ne reste rien.",
-        "Le maraîcher remplit 43 sacs, et 6 est bien un diviseur de 258."
+        "$6 \\times 40 = 240$, puis il manque 18, et $6 \\times 3 = 18$ : au total $6 \\times 43 = 258$.",
+        "Il ne reste rien : le maraîcher remplit 43 sacs pleins, et 6 est bien un diviseur de 258."
       ],
-      "hint": "Pose la division de 258 par 6.",
+      "hint": "Cherche par combien multiplier 6 pour approcher 258, en commençant par les dizaines.",
       "estimated_duration_s": 90,
-      "review_status": "brouillon",
+      "review_status": "relu_agent",
       "programme_ref": "Cycle 3, CM1, les nombres entiers : savoir determiner si un nombre entier inferieur ou egal a 10 est un diviseur d'un nombre entier donne."
     },
     {
@@ -1208,14 +1209,14 @@
       },
       "solution_steps": [
         "La première phrase est juste : $45 \\div 5 = 9$, donc 5 est un diviseur de 45.",
-        "Mais on ne peut pas échanger les deux nombres : un diviseur est toujours plus petit que le nombre qu'il divise, ou égal à lui.",
+        "Pour savoir si 45 est un diviseur de 5, il faudrait partager 5 en 45 parts entières : c'est impossible. Le sens de « diviseur de » n'est donc pas réversible.",
         "$5 \\div 45$ ne tombe pas juste, donc 45 n'est pas un diviseur de 5.",
         "Le bon renversement utilise l'autre mot : 45 est un **multiple** de 5, car $45 = 5 \\times 9$.",
         "Karim a donc **tort**."
       ],
       "hint": "Un diviseur est-il plus petit ou plus grand que le nombre qu'il divise ?",
       "estimated_duration_s": 105,
-      "review_status": "brouillon",
+      "review_status": "relu_agent",
       "programme_ref": "Cycle 3, CM1, les nombres entiers : savoir determiner si un nombre entier inferieur ou egal a 10 est un diviseur d'un nombre entier donne."
     },
     {
@@ -1238,7 +1239,7 @@
       ],
       "hint": "Teste 9, puis 8 : quelle est la première division qui tombe juste ?",
       "estimated_duration_s": 150,
-      "review_status": "brouillon",
+      "review_status": "relu_agent",
       "programme_ref": "Cycle 3, CM1, les nombres entiers : savoir determiner si un nombre entier inferieur ou egal a 10 est un diviseur d'un nombre entier donne."
     },
     {
@@ -1277,7 +1278,7 @@
       ],
       "hint": "Regarde seulement le dernier chiffre de chaque nombre.",
       "estimated_duration_s": 45,
-      "review_status": "brouillon",
+      "review_status": "relu_agent",
       "programme_ref": "Cycle 3, CM1, les nombres entiers : savoir reconnaitre les multiples de 2, de 5 et de 10 a partir de leur ecriture chiffree."
     },
     {
@@ -1285,7 +1286,7 @@
       "skill_id": "A014",
       "level": "decouverte",
       "type": "qcm",
-      "statement": "Toujours avec les nombres 34, 45, 60 et 87.\n\nLesquels sont des multiples de 5 ?",
+      "statement": "Voici quatre nombres : 34, 45, 60 et 87.\n\nLesquels sont des multiples de 5 ?",
       "image": null,
       "choices": [
         {
@@ -1301,7 +1302,7 @@
         {
           "key": "c",
           "text": "34 et 60",
-          "misconception": "L'élève recopie la réponse trouvée pour les multiples de 2 sans changer de critère."
+          "misconception": "L'élève applique le critère des multiples de 2, le chiffre des unités pair, au lieu de celui des multiples de 5."
         }
       ],
       "answer": {
@@ -1316,7 +1317,7 @@
       ],
       "hint": "Pour les multiples de 5, deux chiffres des unités sont possibles.",
       "estimated_duration_s": 45,
-      "review_status": "brouillon",
+      "review_status": "relu_agent",
       "programme_ref": "Cycle 3, CM1, les nombres entiers : savoir reconnaitre les multiples de 2, de 5 et de 10 a partir de leur ecriture chiffree."
     },
     {
@@ -1331,7 +1332,11 @@
         "accepted": [
           "1 250, 6 730",
           "1250,6730",
-          "6730, 1250"
+          "6730, 1250",
+          "6 730, 1 250",
+          "6730,1250",
+          "1250 6730",
+          "1 250 et 6 730"
         ]
       },
       "solution_steps": [
@@ -1344,7 +1349,7 @@
       ],
       "hint": "Un seul chiffre compte, celui des unités.",
       "estimated_duration_s": 90,
-      "review_status": "brouillon",
+      "review_status": "relu_agent",
       "programme_ref": "Cycle 3, CM1, les nombres entiers : savoir reconnaitre les multiples de 2, de 5 et de 10 a partir de leur ecriture chiffree."
     },
     {
@@ -1365,7 +1370,7 @@
       ],
       "hint": "Les multiples de 10 se terminent tous par le même chiffre. Lequel ?",
       "estimated_duration_s": 60,
-      "review_status": "brouillon",
+      "review_status": "relu_agent",
       "programme_ref": "Cycle 3, CM1, les nombres entiers : savoir reconnaitre les multiples de 2, de 5 et de 10 a partir de leur ecriture chiffree."
     },
     {
@@ -1373,7 +1378,7 @@
       "skill_id": "A014",
       "level": "entrainement",
       "type": "numerique",
-      "statement": "Un livreur compte ses colis de 5 en 5.\n\nÉcris le plus grand multiple de 5 plus petit que 8 000.",
+      "statement": "Écris le plus grand multiple de 5 qui soit plus petit que 8 000.",
       "image": null,
       "answer": {
         "value": 7995,
@@ -1385,13 +1390,13 @@
       "solution_steps": [
         "Les multiples de 5 se terminent par 0 ou par 5.",
         "8 000 est bien un multiple de 5, mais il n'est pas plus petit que 8 000 : il est écarté.",
-        "On recule : 7 999, 7 998, 7 997, 7 996, puis 7 995.",
+        "Juste avant 8 000, les chiffres des unités sont 9, 8, 7, 6, puis 5 : le premier qui convient est 5.",
         "7 995 se termine par 5 : c'est un multiple de 5, et $7\\,995 = 5 \\times 1\\,599$.",
         "Réponse : **7 995**."
       ],
       "hint": "Recule à partir de 8 000 jusqu'au premier nombre terminé par 0 ou par 5.",
       "estimated_duration_s": 90,
-      "review_status": "brouillon",
+      "review_status": "relu_agent",
       "programme_ref": "Cycle 3, CM1, les nombres entiers : savoir reconnaitre les multiples de 2, de 5 et de 10 a partir de leur ecriture chiffree."
     },
     {
@@ -1431,7 +1436,7 @@
       ],
       "hint": "Écris quelques multiples de 10, puis vérifie s'ils sont dans la table de 2, puis dans celle de 5.",
       "estimated_duration_s": 120,
-      "review_status": "brouillon",
+      "review_status": "relu_agent",
       "programme_ref": "Cycle 3, CM1, les nombres entiers : savoir reconnaitre les multiples de 2, de 5 et de 10 a partir de leur ecriture chiffree."
     },
     {
@@ -1453,7 +1458,7 @@
       ],
       "hint": "Par quel chiffre se termine un nombre d'objets rangés par paquets de 10 ?",
       "estimated_duration_s": 105,
-      "review_status": "brouillon",
+      "review_status": "relu_agent",
       "programme_ref": "Cycle 3, CM1, les nombres entiers : savoir reconnaitre les multiples de 2, de 5 et de 10 a partir de leur ecriture chiffree."
     },
     {
@@ -1492,7 +1497,7 @@
       ],
       "hint": "Dans $3 \\times 4 = 12$, combien de nombres partagent 12 sans reste ?",
       "estimated_duration_s": 60,
-      "review_status": "brouillon",
+      "review_status": "relu_agent",
       "programme_ref": "Cycle 3, CM2, les nombres entiers : determiner tous les diviseurs d'un nombre entier inferieur ou egal a 30."
     },
     {
@@ -1500,7 +1505,7 @@
       "skill_id": "A026",
       "level": "decouverte",
       "type": "texte",
-      "statement": "Marc cherche maintenant **tous** les diviseurs de 12.\n\nÉcris-les du plus petit au plus grand, séparés par des virgules.",
+      "statement": "Écris tous les diviseurs de 12, du plus petit au plus grand.\n\nSépare-les par des virgules.",
       "image": null,
       "answer": {
         "value": "1, 2, 3, 4, 6, 12",
@@ -1512,13 +1517,13 @@
       "solution_steps": [
         "On cherche toutes les multiplications de deux entiers qui donnent 12.",
         "$1 \\times 12 = 12$, $2 \\times 6 = 12$, $3 \\times 4 = 12$.",
-        "5 ne convient pas : $12 \\div 5$ ne tombe pas juste.",
+        "5 ne convient pas : aucun entier multiplié par 5 ne donne 12 ($5 \\times 2 = 10$ et $5 \\times 3 = 15$).",
         "Chaque multiplication donne deux diviseurs : 1 et 12, puis 2 et 6, puis 3 et 4.",
         "Rangés du plus petit au plus grand : 1, 2, 3, 4, 6, 12. Il y en a six."
       ],
       "hint": "Essaie 1, puis 2, puis 3… jusqu'à retomber sur un diviseur déjà écrit.",
       "estimated_duration_s": 120,
-      "review_status": "brouillon",
+      "review_status": "relu_agent",
       "programme_ref": "Cycle 3, CM2, les nombres entiers : determiner tous les diviseurs d'un nombre entier inferieur ou egal a 30."
     },
     {
@@ -1538,15 +1543,15 @@
       "solution_steps": [
         "On teste les nombres dans l'ordre.",
         "$1 \\times 28 = 28$ : 1 et 28 sont des diviseurs.",
-        "$2 \\times 14 = 28$ : 2 et 14 sont des diviseurs.",
-        "3 ne convient pas, car $28 \\div 3$ ne tombe pas juste.",
+        "3 ne convient pas : $3 \\times 9 = 27$ et $3 \\times 10 = 30$, on saute 28.",
+        "5 et 6 ne conviennent pas non plus. Au-delà de 7, on ne trouverait que des diviseurs déjà écrits, puisqu'ils sont les partenaires de 1, 2 et 4 : on peut s'arrêter.",
         "$4 \\times 7 = 28$ : 4 et 7 sont des diviseurs.",
         "5 et 6 ne conviennent pas. À partir de 7, on retrouve des diviseurs déjà écrits : on peut s'arrêter.",
         "Réponse : 1, 2, 4, 7, 14, 28."
       ],
       "hint": "Chaque fois que tu trouves un diviseur, son partenaire de multiplication en est un aussi.",
       "estimated_duration_s": 150,
-      "review_status": "brouillon",
+      "review_status": "relu_agent",
       "programme_ref": "Cycle 3, CM2, les nombres entiers : determiner tous les diviseurs d'un nombre entier inferieur ou egal a 30."
     },
     {
@@ -1585,13 +1590,42 @@
       ],
       "hint": "N'oublie ni 1 ni le nombre lui-même.",
       "estimated_duration_s": 90,
-      "review_status": "brouillon",
+      "review_status": "relu_agent",
       "programme_ref": "Cycle 3, CM2, les nombres entiers : determiner tous les diviseurs d'un nombre entier inferieur ou egal a 30."
     },
     {
       "id": "EX-A026-E-03",
       "skill_id": "A026",
       "level": "entrainement",
+      "type": "texte",
+      "statement": "Léa cherche tous les diviseurs de 23.\n\nÉcris-les, séparés par des virgules.",
+      "image": null,
+      "answer": {
+        "value": "1, 23",
+        "accepted": [
+          "1,23",
+          "1 et 23",
+          "23, 1"
+        ]
+      },
+      "solution_steps": [
+        "On teste les nombres un par un, comme d'habitude.",
+        "2 : 23 est impair, le partage ne tombe pas juste.",
+        "3 : $3 \\times 7 = 21$, il resterait 2. 4 : $4 \\times 5 = 20$, il resterait 3.",
+        "5 : 23 ne se termine ni par 0 ni par 5, donc non.",
+        "Inutile d'aller plus loin : $5 \\times 5 = 25$ dépasse déjà 23, les diviseurs suivants auraient tous été trouvés en partenaire.",
+        "Il ne reste que la multiplication $1 \\times 23 = 23$.",
+        "23 n'a donc que **deux** diviseurs, 1 et 23. Certains nombres en ont très peu : ce n'est pas une erreur."
+      ],
+      "hint": "Teste 2, 3, 4 puis 5. Combien de partages tombent juste ?",
+      "estimated_duration_s": 120,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 3, CM2, les nombres entiers : determiner des diviseurs d'un nombre entier inferieur ou egal a 100."
+    },
+    {
+      "id": "EX-A026-M-01",
+      "skill_id": "A026",
+      "level": "maitrise",
       "type": "numerique",
       "statement": "Léo range 100 jetons en boîtes égales et veut au moins deux boîtes.\n\nQuel est le plus grand nombre de jetons par boîte ?",
       "image": null,
@@ -1606,38 +1640,9 @@
         "Le plus grand diviseur restant est 50.",
         "$100 = 2 \\times 50$ : Léo fait 2 boîtes de 50 jetons. Réponse : **50**."
       ],
-      "hint": "Quel est le plus petit nombre de boîtes acceptable ? Pars de là.",
-      "estimated_duration_s": 120,
-      "review_status": "brouillon",
-      "programme_ref": "Cycle 3, CM2, les nombres entiers : determiner des diviseurs d'un nombre entier inferieur ou egal a 100."
-    },
-    {
-      "id": "EX-A026-M-01",
-      "skill_id": "A026",
-      "level": "maitrise",
-      "type": "texte",
-      "statement": "Léa cherche tous les diviseurs de 23.\n\nÉcris-les, séparés par des virgules.",
-      "image": null,
-      "answer": {
-        "value": "1, 23",
-        "accepted": [
-          "1,23",
-          "1 et 23",
-          "23, 1"
-        ]
-      },
-      "solution_steps": [
-        "On teste les nombres un par un, comme d'habitude.",
-        "2 : 23 est impair, la division ne tombe pas juste.",
-        "3 : $3 \\times 7 = 21$, il resterait 2. 4 : $4 \\times 5 = 20$, il resterait 3.",
-        "5 : 23 ne se termine ni par 0 ni par 5, donc non.",
-        "Inutile d'aller plus loin : $5 \\times 5 = 25$ dépasse déjà 23, les diviseurs suivants auraient tous été trouvés en partenaire.",
-        "Il ne reste que la multiplication $1 \\times 23 = 23$.",
-        "23 n'a donc que **deux** diviseurs, 1 et 23. Certains nombres en ont très peu : ce n'est pas une erreur."
-      ],
-      "hint": "Teste 2, 3, 4 puis 5. Combien de divisions tombent juste ?",
+      "hint": "Le nombre de jetons par boîte doit être un diviseur de 100. Lesquels sont possibles ?",
       "estimated_duration_s": 150,
-      "review_status": "brouillon",
+      "review_status": "relu_agent",
       "programme_ref": "Cycle 3, CM2, les nombres entiers : determiner tous les diviseurs d'un nombre entier inferieur ou egal a 30."
     },
     {
@@ -1660,7 +1665,7 @@
       ],
       "hint": "Écris d'abord tous les diviseurs de 24, puis regarde lesquels respectent la condition.",
       "estimated_duration_s": 150,
-      "review_status": "brouillon",
+      "review_status": "relu_agent",
       "programme_ref": "Cycle 3, CM2, les nombres entiers : determiner tous les diviseurs d'un nombre entier inferieur ou egal a 30."
     },
     {
@@ -1668,25 +1673,26 @@
       "skill_id": "A027",
       "level": "decouverte",
       "type": "texte",
-      "statement": "Les diviseurs de 12 sont 1, 2, 3, 4, 6 et 12.\n\nParmi eux, écris ceux qui sont aussi des diviseurs de 18.",
+      "statement": "Les diviseurs de 12 sont 1, 2, 3, 4, 6 et 12.\n\nParmi eux, écris ceux qui sont aussi des diviseurs de 20.",
       "image": null,
       "answer": {
-        "value": "1, 2, 3, 6",
+        "value": "1, 2, 4",
         "accepted": [
-          "1,2,3,6",
-          "1 ; 2 ; 3 ; 6"
+          "1,2,4",
+          "1 ; 2 ; 4",
+          "1 2 4"
         ]
       },
       "solution_steps": [
-        "On reprend la liste un nombre à la fois et on teste chacun sur 18.",
-        "$18 \\div 1 = 18$, $18 \\div 2 = 9$, $18 \\div 3 = 6$ et $18 \\div 6 = 3$ : ces quatre divisions tombent juste.",
-        "$18 \\div 4$ ne tombe pas juste : $4 \\times 4 = 16$, il resterait 2.",
-        "$18 \\div 12$ non plus : $12 \\times 1 = 12$, il resterait 6.",
-        "Les diviseurs communs à 12 et à 18 sont donc 1, 2, 3 et 6."
+        "On reprend la liste un nombre à la fois et on teste chacun sur 20.",
+        "$20 = 1 \\times 20$, $20 = 2 \\times 10$ et $20 = 4 \\times 5$ : ces trois multiplications tombent juste.",
+        "3 ne convient pas : $3 \\times 6 = 18$ et $3 \\times 7 = 21$, on saute 20.",
+        "6 non plus : $6 \\times 3 = 18$ et $6 \\times 4 = 24$. Quant à 12, il est plus grand que la moitié de 20.",
+        "Les diviseurs communs à 12 et à 20 sont donc 1, 2 et 4."
       ],
       "hint": "Prends les nombres de la liste un par un et divise 18 par chacun.",
       "estimated_duration_s": 120,
-      "review_status": "brouillon",
+      "review_status": "relu_agent",
       "programme_ref": "Cycle 3, CM2, les nombres entiers : determiner les diviseurs communs a deux nombres entiers inferieurs ou egaux a 30."
     },
     {
@@ -1694,63 +1700,91 @@
       "skill_id": "A027",
       "level": "decouverte",
       "type": "qcm",
-      "statement": "Les nombres 12 et 18 ont plusieurs diviseurs communs.\n\nQuel est le plus grand d'entre eux ?",
+      "statement": "Les nombres 12 et 20 ont plusieurs diviseurs communs.\n\nQuel est le plus grand d'entre eux ?",
       "image": null,
       "choices": [
         {
           "key": "a",
-          "text": "6",
+          "text": "4",
           "misconception": null
         },
         {
           "key": "b",
-          "text": "9",
-          "misconception": "L'élève prend le plus grand diviseur de 18 avant 18, sans vérifier qu'il divise aussi 12 ; or $12 \\div 9$ laisse un reste de 3."
+          "text": "10",
+          "misconception": "L'élève prend un diviseur de 20 sans vérifier qu'il divise aussi 12 : or aucun entier multiplié par 10 ne donne 12."
         },
         {
           "key": "c",
-          "text": "4",
-          "misconception": "L'élève prend un diviseur de 12 sans vérifier qu'il divise aussi 18 ; or $18 \\div 4$ laisse un reste de 2."
+          "text": "6",
+          "misconception": "L'élève prend un diviseur de 12 sans vérifier qu'il divise aussi 20 : or $6 \\times 3 = 18$ et $6 \\times 4 = 24$, on saute 20."
         }
       ],
       "answer": {
         "value": "a"
       },
       "solution_steps": [
-        "Diviseurs de 12 : 1, 2, 3, 4, 6, 12. Diviseurs de 18 : 1, 2, 3, 6, 9, 18.",
-        "On écrit les deux listes l'une sous l'autre et on garde ce qui figure dans les deux : 1, 2, 3 et 6.",
-        "Parmi ces diviseurs communs, le plus grand est 6.",
-        "9 n'apparaît que dans la liste de 18, et 4 n'apparaît que dans celle de 12 : ni l'un ni l'autre n'est commun."
+        "Diviseurs de 12 : 1, 2, 3, 4, 6, 12. Diviseurs de 20 : 1, 2, 4, 5, 10, 20.",
+        "On écrit les deux listes l'une sous l'autre et on garde ce qui figure dans les deux : 1, 2 et 4.",
+        "Parmi ces diviseurs communs, le plus grand est 4.",
+        "10 n'apparaît que dans la liste de 20, et 6 n'apparaît que dans celle de 12 : ni l'un ni l'autre n'est commun."
       ],
       "hint": "Écris les deux listes de diviseurs l'une sous l'autre, puis compare-les.",
       "estimated_duration_s": 90,
-      "review_status": "brouillon",
+      "review_status": "relu_agent",
       "programme_ref": "Cycle 3, CM2, les nombres entiers : determiner les diviseurs communs a deux nombres entiers inferieurs ou egaux a 30."
+    },
+    {
+      "id": "EX-A027-D-03",
+      "skill_id": "A027",
+      "level": "decouverte",
+      "type": "texte",
+      "statement": "Les premiers multiples de 3 sont 3, 6, 9, 12, 15, 18.\n\nParmi eux, écris ceux qui sont aussi des multiples de 6.",
+      "image": null,
+      "answer": {
+        "value": "6, 12, 18",
+        "accepted": [
+          "6,12,18",
+          "6 ; 12 ; 18",
+          "6 12 18"
+        ]
+      },
+      "solution_steps": [
+        "Un multiple commun à 3 et à 6 doit se trouver à la fois dans la table de 3 et dans la table de 6.",
+        "Table de 6 : 6, 12, 18, 24…",
+        "Dans la liste donnée, 6, 12 et 18 sont dans la table de 6.",
+        "3, 9 et 15 ne le sont pas : ils sont impairs, et tous les multiples de 6 sont pairs.",
+        "Les multiples communs cherchés sont 6, 12 et 18."
+      ],
+      "hint": "Prends les nombres de la liste un par un : lesquels sont dans la table de 6 ?",
+      "estimated_duration_s": 90,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 3, CM2, les nombres entiers : determiner les multiples communs a deux nombres entiers."
     },
     {
       "id": "EX-A027-E-01",
       "skill_id": "A027",
       "level": "entrainement",
       "type": "texte",
-      "statement": "Écris tous les diviseurs communs à 24 et à 30.\n\nSépare-les par des virgules.",
+      "statement": "Écris tous les diviseurs communs à 18 et à 24.\n\nSépare-les par des virgules.",
       "image": null,
       "answer": {
         "value": "1, 2, 3, 6",
         "accepted": [
           "1,2,3,6",
-          "1 ; 2 ; 3 ; 6"
+          "1 ; 2 ; 3 ; 6",
+          "1 2 3 6"
         ]
       },
       "solution_steps": [
+        "Diviseurs de 18 : 1, 2, 3, 6, 9, 18.",
         "Diviseurs de 24 : 1, 2, 3, 4, 6, 8, 12, 24.",
-        "Diviseurs de 30 : 1, 2, 3, 5, 6, 10, 15, 30.",
         "On compare les deux listes.",
         "Les nombres présents dans les deux sont 1, 2, 3 et 6.",
         "Réponse : 1, 2, 3, 6."
       ],
       "hint": "Écris d'abord les deux listes complètes, puis entoure ce qu'elles ont en commun.",
       "estimated_duration_s": 150,
-      "review_status": "brouillon",
+      "review_status": "relu_agent",
       "programme_ref": "Cycle 3, CM2, les nombres entiers : determiner les diviseurs communs a deux nombres entiers inferieurs ou egaux a 30."
     },
     {
@@ -1776,7 +1810,7 @@
       ],
       "hint": "Écris la table de 4 et la table de 6 l'une sous l'autre, puis compare.",
       "estimated_duration_s": 150,
-      "review_status": "brouillon",
+      "review_status": "relu_agent",
       "programme_ref": "Cycle 3, CM2, les nombres entiers : determiner des multiples communs a deux nombres entiers inferieurs a 15."
     },
     {
@@ -1797,7 +1831,7 @@
       ],
       "hint": "Vérifie les deux tables, pas seulement l'une des deux.",
       "estimated_duration_s": 75,
-      "review_status": "brouillon",
+      "review_status": "relu_agent",
       "programme_ref": "Cycle 3, CM2, les nombres entiers : determiner des multiples communs a deux nombres entiers inferieurs a 15."
     },
     {
@@ -1820,7 +1854,7 @@
       ],
       "hint": "Écris les horaires de départ de chaque bus, puis cherche le premier qui se retrouve dans les deux listes.",
       "estimated_duration_s": 180,
-      "review_status": "brouillon",
+      "review_status": "relu_agent",
       "programme_ref": "Cycle 3, CM2, les nombres entiers : determiner des multiples communs a deux nombres entiers inferieurs a 15."
     },
     {
@@ -1828,7 +1862,7 @@
       "skill_id": "A027",
       "level": "maitrise",
       "type": "numerique",
-      "statement": "Un pâtissier a 20 éclairs et 30 tartelettes. Il prépare des paquets identiques et utilise tout.\n\nQuel est le plus grand nombre de paquets ?",
+      "statement": "Un pâtissier a 20 éclairs et 30 tartelettes. Il prépare des paquets contenant tous le même nombre d'éclairs et le même nombre de tartelettes, et il utilise tout.\n\nQuel est le plus grand nombre de paquets qu'il peut faire ?",
       "image": null,
       "answer": {
         "value": 10,
@@ -1843,7 +1877,7 @@
       ],
       "hint": "Le nombre de paquets doit se retrouver dans les deux listes de diviseurs.",
       "estimated_duration_s": 180,
-      "review_status": "brouillon",
+      "review_status": "relu_agent",
       "programme_ref": "Cycle 3, CM2, les nombres entiers : determiner les diviseurs communs a deux nombres entiers inferieurs ou egaux a 30."
     },
     {
@@ -1868,7 +1902,7 @@
       ],
       "hint": "Compte de 1 000 en 1 000 en partant de 0.",
       "estimated_duration_s": 60,
-      "review_status": "brouillon",
+      "review_status": "relu_agent",
       "programme_ref": "Cycle 3, CM1, les nombres entiers : savoir placer des nombres et reperer des points sur une demi-droite graduee."
     },
     {
@@ -1876,7 +1910,7 @@
       "skill_id": "A028",
       "level": "decouverte",
       "type": "qcm",
-      "statement": "Sur la même demi-droite graduée de 1 000 en 1 000 à partir de 0, où faut-il placer le nombre 3 500 ?",
+      "statement": "Une demi-droite est graduée de 1 000 en 1 000 à partir de 0.\n\nOù faut-il placer le nombre 3 500 ?",
       "image": null,
       "choices": [
         {
@@ -1906,7 +1940,7 @@
       ],
       "hint": "Entre quelles deux graduations 3 500 se trouve-t-il ? Regarde ensuite s'il est plus près de l'une des deux.",
       "estimated_duration_s": 75,
-      "review_status": "brouillon",
+      "review_status": "relu_agent",
       "programme_ref": "Cycle 3, CM1, les nombres entiers : savoir placer des nombres et reperer des points sur une demi-droite graduee."
     },
     {
@@ -1931,7 +1965,7 @@
       ],
       "hint": "Combien vaut un déplacement de 7 graduations, si chaque graduation vaut 100 ?",
       "estimated_duration_s": 90,
-      "review_status": "brouillon",
+      "review_status": "relu_agent",
       "programme_ref": "Cycle 3, CM1, les nombres entiers : savoir placer des nombres et reperer des points sur une demi-droite graduee."
     },
     {
@@ -1956,7 +1990,7 @@
       ],
       "hint": "Compte de 20 en 20 jusqu'à dépasser 130.",
       "estimated_duration_s": 105,
-      "review_status": "brouillon",
+      "review_status": "relu_agent",
       "programme_ref": "Cycle 3, CM1, les nombres entiers : savoir placer des nombres et reperer des points sur une demi-droite graduee."
     },
     {
@@ -1964,7 +1998,7 @@
       "skill_id": "A028",
       "level": "entrainement",
       "type": "vrai_faux",
-      "statement": "Sur une demi-droite graduée de 500 en 500, trois graduations séparent le point d'abscisse 2 500 du point d'abscisse 4 000.",
+      "statement": "Sur une demi-droite graduée de 500 en 500, il faut avancer de trois intervalles pour aller du point d'abscisse 2 500 au point d'abscisse 4 000.",
       "image": null,
       "answer": {
         "value": true
@@ -1977,7 +2011,7 @@
       ],
       "hint": "Calcule l'écart entre les deux abscisses, puis divise-le par la valeur d'une graduation.",
       "estimated_duration_s": 90,
-      "review_status": "brouillon",
+      "review_status": "relu_agent",
       "programme_ref": "Cycle 3, CM1, les nombres entiers : savoir placer des nombres et reperer des points sur une demi-droite graduee."
     },
     {
@@ -1985,7 +2019,7 @@
       "skill_id": "A028",
       "level": "maitrise",
       "type": "numerique",
-      "statement": "Une demi-droite est graduée régulièrement à partir de 0. La troisième graduation porte le nombre 1 200.\n\nQuel nombre porte la cinquième ?",
+      "statement": "Une demi-droite est graduée régulièrement à partir de 0. La troisième graduation après 0 porte le nombre 1 200.\n\nQuel nombre porte la cinquième graduation après 0 ?",
       "image": null,
       "answer": {
         "value": 2000,
@@ -2003,45 +2037,28 @@
       ],
       "hint": "Cherche d'abord de combien on avance en passant d'une graduation à la suivante.",
       "estimated_duration_s": 180,
-      "review_status": "brouillon",
+      "review_status": "relu_agent",
       "programme_ref": "Cycle 3, CM1, les nombres entiers : savoir placer des nombres et reperer des points sur une demi-droite graduee."
     },
     {
       "id": "EX-A028-M-02",
       "skill_id": "A028",
       "level": "maitrise",
-      "type": "qcm",
-      "statement": "Une demi-droite va de 0 à 100 000 et elle est graduée de 10 000 en 10 000.\n\nOù placer 9 500 ?",
+      "type": "vrai_faux",
+      "statement": "Une demi-droite va de 0 à 100 000 et elle est graduée de 10 000 en 10 000. Sarah place le nombre 9 500 juste après la graduation 10 000.",
       "image": null,
-      "choices": [
-        {
-          "key": "a",
-          "text": "Entre 0 et 10 000, tout près de la graduation 10 000",
-          "misconception": null
-        },
-        {
-          "key": "b",
-          "text": "Entre 9 000 et 10 000",
-          "misconception": "L'élève cherche une graduation 9 000, qui n'existe pas ici : la première graduation après 0 est 10 000."
-        },
-        {
-          "key": "c",
-          "text": "Entre 10 000 et 20 000",
-          "misconception": "L'élève arrondit 9 500 à 10 000 puis place le point après cette graduation, alors que 9 500 est plus petit que 10 000."
-        }
-      ],
       "answer": {
-        "value": "a"
+        "value": false
       },
       "solution_steps": [
         "Les graduations sont 0, 10 000, 20 000, et ainsi de suite jusqu'à 100 000.",
-        "9 500 est plus petit que 10 000 : il se trouve donc dans le tout premier intervalle, celui qui part de 0.",
-        "Il en est très proche : il manque seulement 500 pour atteindre 10 000, soit un vingtième de l'intervalle.",
-        "Le point se place entre 0 et 10 000, juste avant la graduation 10 000."
+        "9 500 est plus petit que 10 000 : il ne peut pas se trouver après cette graduation.",
+        "Il manque 500 pour atteindre 10 000, soit un vingtième de l'intervalle : le point est donc très près de la graduation, mais avant elle.",
+        "Sarah a **tort** : 9 500 se place entre 0 et 10 000, juste avant la graduation 10 000."
       ],
-      "hint": "9 500 est-il plus grand ou plus petit que la première graduation après 0 ?",
+      "hint": "9 500 est-il plus grand ou plus petit que 10 000 ?",
       "estimated_duration_s": 150,
-      "review_status": "brouillon",
+      "review_status": "relu_agent",
       "programme_ref": "Cycle 3, CM1, les nombres entiers : savoir placer des nombres et reperer des points sur une demi-droite graduee."
     },
     {
@@ -2202,16 +2219,16 @@
       "skill_id": "C002",
       "level": "maitrise",
       "type": "numerique",
-      "statement": "Une figure est partagée en 8 parts égales. 3 parts sont coloriées en vert, toutes les autres en jaune.\n\nOn écrit la fraction **jaune** sous la forme $\\frac{\\ldots}{8}$. Quel est son numérateur ?",
+      "statement": "Une figure est partagée en 8 parts égales. 2 parts sont coloriées en vert, toutes les autres en jaune.\n\nOn écrit la fraction **jaune** sous la forme $\\frac{\\ldots}{8}$. Quel est son numérateur ?",
       "image": null,
       "answer": {
-        "value": 5
+        "value": 6
       },
       "solution_steps": [
         "La figure compte 8 parts égales en tout : c'est le dénominateur.",
-        "3 parts sont vertes, donc les parts jaunes sont celles qui restent : $8 - 3 = 5$.",
-        "Le numérateur de la fraction jaune est **5**.",
-        "La figure est jaune pour $\\frac{5}{8}$ et verte pour $\\frac{3}{8}$."
+        "2 parts sont vertes, donc les parts jaunes sont celles qui restent : $8 - 2 = 6$.",
+        "Le numérateur de la fraction jaune est **6**.",
+        "La figure est jaune pour $\\frac{6}{8}$ et verte pour $\\frac{2}{8}$."
       ],
       "hint": "Le numérateur compte les parts jaunes. Elles ne sont pas données directement : il faut les trouver.",
       "estimated_duration_s": 75,
@@ -2289,7 +2306,7 @@
         "Le tout est le même dans les deux cas.",
         "Plus on partage en un grand nombre de parts, plus chaque part est **petite**.",
         "En partageant en 8, chaque part vaut $\\frac{1}{8}$ ; en partageant en 3, chaque part vaut $\\frac{1}{3}$.",
-        "Donc $\\frac{1}{8} < \\frac{1}{3}$ : la part la plus petite s'obtient en partageant en 8."
+        "Donc un huitième est plus petit qu'un tiers : la part la plus petite s'obtient en partageant en 8."
       ],
       "hint": "Imagine un gâteau partagé entre 3 personnes, puis entre 8 personnes.",
       "estimated_duration_s": 75,
@@ -2365,7 +2382,7 @@
       "skill_id": "C005",
       "level": "decouverte",
       "type": "numerique",
-      "statement": "Une bande-unité (de 0 à 1) est graduée en **quarts** :\n\n```\n0 |----|----|----|----| 1\n```\n\nCombien d'intervalles faut-il parcourir depuis 0 pour atteindre $\\frac{3}{4}$ ?",
+      "statement": "Une bande-unité va de 0 à 1. Elle est partagée en **quarts**, c'est-à-dire en 4 intervalles égaux.\n\nCombien d'intervalles faut-il parcourir depuis 0 pour atteindre $\\frac{3}{4}$ ?",
       "image": null,
       "answer": {
         "value": 3,
@@ -2388,7 +2405,7 @@
       "skill_id": "C005",
       "level": "entrainement",
       "type": "texte",
-      "statement": "Une bande-unité (de 0 à 1) est graduée en **cinquièmes** :\n\n```\n0 |----|----|----|----|----| 1\n```\n\nQuelle fraction se trouve à la 4e graduation après 0 ? Écris ta réponse sous la forme numérateur/dénominateur.",
+      "statement": "Une bande-unité va de 0 à 1. Elle est partagée en **cinquièmes**, c'est-à-dire en 5 intervalles égaux.\n\nQuelle fraction se trouve à la 4e graduation après 0 ? Écris ta réponse avec une barre.",
       "image": null,
       "answer": {
         "value": "4/5",
@@ -2706,17 +2723,17 @@
       "skill_id": "C009",
       "level": "decouverte",
       "type": "qcm",
-      "statement": "Lequel est le plus grand : $\frac{3}{8}$ ou $\frac{5}{8}$ ?",
+      "statement": "Lequel est le plus grand : $\\frac{3}{8}$ ou $\\frac{5}{8}$ ?",
       "image": null,
       "choices": [
         {
           "key": "a",
-          "text": "$\frac{5}{8}$",
+          "text": "$\\frac{5}{8}$",
           "misconception": null
         },
         {
           "key": "b",
-          "text": "$\frac{3}{8}$",
+          "text": "$\\frac{3}{8}$",
           "misconception": "L'élève inverse la comparaison, ou compte les parts qui restent au lieu des parts prises."
         },
         {
@@ -2732,7 +2749,7 @@
         "Les deux fractions ont le même dénominateur 8 : les parts sont toutes des huitièmes, donc de même taille.",
         "Il suffit de compter combien de parts on prend : 3 d'un côté, 5 de l'autre.",
         "5 parts, c'est plus que 3 parts de la même taille.",
-        "C'est donc $\frac{5}{8}$ le plus grand."
+        "C'est donc $\\frac{5}{8}$ le plus grand."
       ],
       "hint": "Les parts ont la même taille. Regarde seulement combien on en prend.",
       "estimated_duration_s": 40,
@@ -3053,17 +3070,17 @@
       "skill_id": "C026",
       "level": "decouverte",
       "type": "qcm",
-      "statement": "Lequel est le plus grand : $\frac{1}{5}$ ou $\frac{1}{3}$ ?",
+      "statement": "Lequel est le plus grand : $\\frac{1}{5}$ ou $\\frac{1}{3}$ ?",
       "image": null,
       "choices": [
         {
           "key": "a",
-          "text": "$\frac{1}{3}$",
+          "text": "$\\frac{1}{3}$",
           "misconception": null
         },
         {
           "key": "b",
-          "text": "$\frac{1}{5}$",
+          "text": "$\\frac{1}{5}$",
           "misconception": "L'élève applique aux dénominateurs l'ordre des entiers : 5 est plus grand que 3, donc la fraction serait plus grande. C'est l'erreur la plus fréquente sur cette notion."
         },
         {
@@ -3079,11 +3096,11 @@
         "Les deux fractions ont le même numérateur : on prend **une** part dans chaque cas.",
         "Mais les parts n'ont pas la même taille. Partager un tout en 5 donne des parts plus petites que le partager en 3.",
         "Une part sur 3 est donc plus grande qu'une part sur 5.",
-        "C'est $\frac{1}{3}$ le plus grand. Retiens : quand le numérateur est 1, plus le dénominateur est grand, plus la fraction est petite."
+        "C'est $\\frac{1}{3}$ le plus grand. Retiens : quand le numérateur est 1, plus le dénominateur est grand, plus la fraction est petite."
       ],
       "hint": "Préfères-tu partager un gâteau entre 3 personnes ou entre 5 ?",
       "estimated_duration_s": 45,
-      "review_status": "brouillon",
+      "review_status": "relu_agent",
       "programme_ref": "Cycle 2, CE1 : comparer des fractions dont le numérateur est 1."
     },
     {
@@ -3117,11 +3134,11 @@
         "La tablette est la même dans les trois cas : c'est le **tout**.",
         "Plus on la partage en un grand nombre de parts, plus chaque part est petite.",
         "En partageant en 2, on obtient les parts les plus grandes : $\\frac{1}{2}$.",
-        "On a donc $\\frac{1}{8} < \\frac{1}{4} < \\frac{1}{2}$."
+        "Du plus petit au plus grand : un huitième, puis un quart, puis un demi."
       ],
       "hint": "Le nombre de parts augmente, mais la tablette, elle, ne grandit pas.",
       "estimated_duration_s": 45,
-      "review_status": "brouillon",
+      "review_status": "relu_agent",
       "programme_ref": "Cycle 2, CE1 : comparer des fractions dont le numérateur est 1."
     },
     {
@@ -3129,7 +3146,7 @@
       "skill_id": "C026",
       "level": "entrainement",
       "type": "qcm",
-      "statement": "Léa partage sa tarte entre 4 amis. Tom partage une tarte identique entre 6 amis.\n\nQui reçoit la plus grosse part ?",
+      "statement": "Léa partage une tarte entre 4 amis. Tom partage une tarte pareille entre 6.\n\nQui a la plus grosse part ?",
       "image": null,
       "choices": [
         {
@@ -3155,11 +3172,11 @@
         "Chez Léa, chaque ami reçoit $\\frac{1}{4}$ de tarte. Chez Tom, chaque ami reçoit $\\frac{1}{6}$.",
         "Les deux tartes sont identiques : c'est le même tout.",
         "Partager en 4 donne des parts plus grandes que partager en 6.",
-        "Donc $\\frac{1}{6} < \\frac{1}{4}$ : c'est un ami de **Léa** qui reçoit la plus grosse part."
+        "Une part sur 6 est plus petite qu'une part sur 4 : c'est un ami de **Léa** qui reçoit la plus grosse part."
       ],
       "hint": "Plus il y a de convives autour d'une même tarte, plus les parts rétrécissent.",
       "estimated_duration_s": 60,
-      "review_status": "brouillon",
+      "review_status": "relu_agent",
       "programme_ref": "Cycle 2, CE1 : comparer des fractions dont le numérateur est 1."
     },
     {
@@ -3167,7 +3184,7 @@
       "skill_id": "C026",
       "level": "entrainement",
       "type": "texte",
-      "statement": "Range ces fractions de la plus petite à la plus grande : $\\frac{1}{2}$, $\\frac{1}{8}$, $\\frac{1}{4}$.\n\nÉcris-les séparées par des virgules, sous la forme numérateur/dénominateur.",
+      "statement": "Range de la plus petite à la plus grande : $\\frac{1}{2}$, $\\frac{1}{8}$, $\\frac{1}{4}$.\n\nSépare-les par des virgules.",
       "image": null,
       "answer": {
         "value": "1/8, 1/4, 1/2",
@@ -3186,7 +3203,7 @@
       ],
       "hint": "Range les dénominateurs du plus grand au plus petit : les fractions suivront dans l'ordre croissant.",
       "estimated_duration_s": 75,
-      "review_status": "brouillon",
+      "review_status": "relu_agent",
       "programme_ref": "Cycle 2, CE1 : comparer des fractions dont le numérateur est 1."
     },
     {
@@ -3202,12 +3219,12 @@
       "solution_steps": [
         "Le raisonnement proposé applique aux fractions l'ordre des entiers : c'est justement le piège.",
         "Partager un tout en 10 donne des parts **plus petites** que le partager en 6.",
-        "Donc $\\frac{1}{10} < \\frac{1}{6}$ : l'affirmation est **fausse**.",
+        "Un dixième est plus petit qu'un sixième : l'affirmation est **fausse**.",
         "Le dénominateur compte les parts, il ne mesure pas leur taille : quand il augmente, la part diminue."
       ],
       "hint": "Regarde la taille d'une part, pas la taille du nombre écrit en bas.",
       "estimated_duration_s": 60,
-      "review_status": "brouillon",
+      "review_status": "relu_agent",
       "programme_ref": "Cycle 2, CE1 : comparer des fractions dont le numérateur est 1."
     },
     {
@@ -3215,7 +3232,7 @@
       "skill_id": "C026",
       "level": "maitrise",
       "type": "qcm",
-      "statement": "Trois enfants mangent chacun une part d'une même tarte.\n\nLéa mange $\\frac{1}{4}$ de la tarte, Tom $\\frac{1}{8}$, et Zoé $\\frac{1}{3}$.\n\nQui a mangé le **moins** ?",
+      "statement": "Léa mange $\\frac{1}{4}$ d'une tarte. Tom en mange $\\frac{1}{8}$, et Zoé $\\frac{1}{3}$.\n\nQui a mangé le **moins** ?",
       "image": null,
       "choices": [
         {
@@ -3242,11 +3259,11 @@
         "La plus petite part correspond au **plus grand** dénominateur.",
         "Les dénominateurs sont 4, 8 et 3. Le plus grand est 8.",
         "C'est donc **Tom**, avec $\\frac{1}{8}$, qui a mangé le moins.",
-        "Dans l'ordre : $\\frac{1}{8} < \\frac{1}{4} < \\frac{1}{3}$."
+        "Dans l'ordre, du plus petit au plus grand : $\\frac{1}{8}$, puis $\\frac{1}{4}$, puis $\\frac{1}{3}$."
       ],
       "hint": "Cherche celui dont la tarte a été partagée en le plus grand nombre de parts.",
       "estimated_duration_s": 90,
-      "review_status": "brouillon",
+      "review_status": "relu_agent",
       "programme_ref": "Cycle 2, CE1 : comparer des fractions dont le numérateur est 1."
     },
     {
@@ -3254,26 +3271,28 @@
       "skill_id": "C026",
       "level": "maitrise",
       "type": "texte",
-      "statement": "Trouve une fraction de numérateur 1 qui soit **plus grande que** $\\frac{1}{8}$ et **plus petite que** $\\frac{1}{4}$.\n\nÉcris ta réponse sous la forme numérateur/dénominateur.",
+      "statement": "Trouve une fraction de numérateur 1 plus grande que $\\frac{1}{8}$ et plus petite que $\\frac{1}{4}$.\n\nÉcris-la avec une barre : 1/…",
       "image": null,
       "answer": {
         "value": "1/6",
         "accepted": [
           "1 / 6",
           "1/5",
-          "1 / 5"
+          "1 / 5",
+          "1/7",
+          "1 / 7"
         ]
       },
       "solution_steps": [
         "On cherche une fraction $\\frac{1}{?}$ comprise entre $\\frac{1}{8}$ et $\\frac{1}{4}$.",
         "Comme le numérateur est 1, la fraction est d'autant plus petite que le dénominateur est grand.",
         "Il faut donc un dénominateur **compris entre 4 et 8**.",
-        "Avec 6 : $\\frac{1}{8} < \\frac{1}{6} < \\frac{1}{4}$, car $4 < 6 < 8$.",
+        "Avec 6 : une part sur 6 est plus petite qu'une part sur 4, et plus grande qu'une part sur 8, car 6 se place entre 4 et 8.",
         "$\\frac{1}{5}$ convient aussi, pour la même raison."
       ],
-      "hint": "Le dénominateur cherché doit se placer entre 4 et 8. Lesquels sont autorisés au CE1 ?",
+      "hint": "Le dénominateur cherché doit se placer entre 4 et 8.",
       "estimated_duration_s": 120,
-      "review_status": "brouillon",
+      "review_status": "relu_agent",
       "programme_ref": "Cycle 2, CE1 : comparer des fractions dont le numérateur est 1."
     },
     {
@@ -3281,20 +3300,20 @@
       "skill_id": "C027",
       "level": "decouverte",
       "type": "numerique",
-      "statement": "Complète : $\\frac{7}{4} = 1 + \\frac{\\ldots}{4}$",
+      "statement": "Complète : $\\frac{6}{4} = 1 + \\frac{\\ldots}{4}$",
       "image": null,
       "answer": {
-        "value": 3
+        "value": 2
       },
       "solution_steps": [
-        "Un tout entier vaut 4 quarts : $1 = \\frac{4}{4}$.",
-        "Dans $\\frac{7}{4}$, on prélève ces 4 quarts : il en reste $7 - 4 = 3$.",
-        "Donc $\\frac{7}{4} = \\frac{4}{4} + \\frac{3}{4} = 1 + \\frac{3}{4}$.",
-        "La réponse est **3**."
+        "Un tout entier vaut 4 quarts.",
+        "$\\frac{6}{4}$ contient 6 quarts : on en prélève 4 pour faire un tout entier.",
+        "Il reste $6 - 4 = 2$ quarts.",
+        "Donc $\\frac{6}{4} = 1 + \\frac{2}{4}$ : le nombre cherché est **2**."
       ],
-      "hint": "Combien de quarts faut-il pour faire un tout entier ? Retire-les des 7 quarts.",
+      "hint": "Combien de quarts font un tout entier ? Combien en reste-t-il ensuite ?",
       "estimated_duration_s": 60,
-      "review_status": "brouillon",
+      "review_status": "relu_agent",
       "programme_ref": "Cycle 3, CM1 : savoir écrire une fraction supérieure à 1 comme la somme d'un entier et d'une fraction inférieure à 1."
     },
     {
@@ -3319,8 +3338,28 @@
       ],
       "hint": "Combien de tiers dans un tout entier ? Combien en reste-t-il ensuite ?",
       "estimated_duration_s": 75,
-      "review_status": "brouillon",
+      "review_status": "relu_agent",
       "programme_ref": "Cycle 3, CM1 : savoir écrire une fraction supérieure à 1 comme la somme d'un entier et d'une fraction inférieure à 1."
+    },
+    {
+      "id": "EX-C027-D-03",
+      "skill_id": "C027",
+      "level": "decouverte",
+      "type": "numerique",
+      "statement": "Complète : $1 + \\frac{1}{3} = \\frac{\\ldots}{3}$",
+      "image": null,
+      "answer": {
+        "value": 4
+      },
+      "solution_steps": [
+        "Un tout entier vaut 3 tiers.",
+        "On ajoute le tiers supplémentaire : $3 + 1 = 4$ tiers.",
+        "Donc $1 + \\frac{1}{3} = \\frac{4}{3}$ : le numérateur cherché est **4**."
+      ],
+      "hint": "Commence par écrire le tout entier en tiers.",
+      "estimated_duration_s": 75,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 3, CM1 : savoir ecrire une fraction superieure a 1 comme somme d'un entier et d'une fraction inferieure a 1, et reciproquement."
     },
     {
       "id": "EX-C027-E-01",
@@ -3339,12 +3378,12 @@
       "solution_steps": [
         "Un tout vaut 4 quarts. On cherche combien de touts entiers tiennent dans 11 quarts.",
         "$11 = 4 + 4 + 3$, donc **deux** touts entiers, et il reste 3 quarts.",
-        "Autrement dit : $11 \\div 4 = 2$ reste 3.",
+        "Autrement dit : deux touts, c'est $2 \\times 4 = 8$ quarts, et il en reste $11 - 8 = 3$.",
         "Donc $\\frac{11}{4} = 2 + \\frac{3}{4}$."
       ],
       "hint": "Combien de fois 4 tient-il dans 11 ? Et que reste-t-il ?",
       "estimated_duration_s": 90,
-      "review_status": "brouillon",
+      "review_status": "relu_agent",
       "programme_ref": "Cycle 3, CM1 : savoir écrire une fraction supérieure à 1 comme la somme d'un entier et d'une fraction inférieure à 1."
     },
     {
@@ -3368,7 +3407,7 @@
       ],
       "hint": "Commence par écrire l'entier 2 sous forme de tiers.",
       "estimated_duration_s": 90,
-      "review_status": "brouillon",
+      "review_status": "relu_agent",
       "programme_ref": "Cycle 3, CM1 : savoir écrire la somme d'un entier et d'une fraction inférieure à 1 comme une unique fraction."
     },
     {
@@ -3388,7 +3427,7 @@
       ],
       "hint": "Combien de cinquièmes dans 3 touts entiers ?",
       "estimated_duration_s": 90,
-      "review_status": "brouillon",
+      "review_status": "relu_agent",
       "programme_ref": "Cycle 3, CM1 : savoir écrire la somme d'un entier et d'une fraction inférieure à 1 comme une unique fraction."
     },
     {
@@ -3411,8 +3450,8 @@
         },
         {
           "key": "c",
-          "text": "Elle est fausse, il fallait écrire $1 + \\frac{5}{4}$",
-          "misconception": "L'élève retire bien un tout mais se trompe : il retire 4 du dénominateur au lieu du numérateur, ou compte un seul tout au lieu de deux."
+          "text": "Elle est fausse, il fallait écrire $2 + \\frac{5}{4}$",
+          "misconception": "L'élève compte correctement les deux touts entiers mais oublie de les retirer du numérateur : il conserve cinq quarts après n'avoir prélevé qu'un seul tout."
         }
       ],
       "answer": {
@@ -3423,11 +3462,11 @@
         "L'erreur : il a bien vu qu'il y avait au moins un tout, mais il ne l'a pas **retiré** de la fraction.",
         "La bonne décomposition : un tout vaut 4 quarts, et $9 = 4 + 4 + 1$, soit **deux** touts et un quart.",
         "Donc $\\frac{9}{4} = 2 + \\frac{1}{4}$.",
-        "La proposition c est fausse elle aussi : $1 + \\frac{5}{4}$ vaut bien $\\frac{9}{4}$, mais $\\frac{5}{4}$ n'est pas inférieure à 1, donc la décomposition demandée n'est pas terminée."
+        "La proposition c est fausse aussi : $2 + \\frac{5}{4}$ vaut $\\frac{13}{4}$, ce qui est plus grand que $\\frac{9}{4}$."
       ],
       "hint": "Compare les deux côtés de l'égalité : représentent-ils vraiment la même quantité ?",
       "estimated_duration_s": 150,
-      "review_status": "brouillon",
+      "review_status": "relu_agent",
       "programme_ref": "Cycle 3, CM1 : savoir écrire une fraction supérieure à 1 comme la somme d'un entier et d'une fraction inférieure à 1."
     },
     {
@@ -3435,24 +3474,25 @@
       "skill_id": "C027",
       "level": "maitrise",
       "type": "texte",
-      "statement": "Une recette demande $\\frac{9}{4}$ de litre de lait.\n\nCombien de litres entiers faut-il verser, et quelle fraction de litre en plus ? Écris ta réponse sous la forme d'un entier plus une fraction.",
+      "statement": "Une recette demande $\\frac{11}{3}$ de litre de lait.\n\nCombien de litres entiers faut-il verser, et quelle fraction de litre en plus ? Écris ta réponse sous la forme d'un entier plus une fraction.",
       "image": null,
       "answer": {
-        "value": "2 + 1/4",
+        "value": "3 + 2/3",
         "accepted": [
-          "2+1/4",
-          "2 + 1 / 4"
+          "3+2/3",
+          "3 + 2 / 3",
+          "3+2 / 3"
         ]
       },
       "solution_steps": [
-        "Un litre vaut 4 quarts de litre.",
-        "On cherche combien de litres entiers tiennent dans 9 quarts : $9 \\div 4 = 2$ reste 1.",
-        "Il faut donc verser **2 litres entiers**, plus $\\frac{1}{4}$ de litre.",
-        "$\\frac{9}{4} = 2 + \\frac{1}{4}$."
+        "Un litre vaut 3 tiers de litre.",
+        "Trois litres entiers, c'est $3 \\times 3 = 9$ tiers ; il reste $11 - 9 = 2$ tiers.",
+        "Il faut donc verser **3 litres entiers**, plus $\\frac{2}{3}$ de litre.",
+        "$\\frac{11}{3} = 3 + \\frac{2}{3}$."
       ],
-      "hint": "Combien de quarts de litre dans un litre entier ? Combien de litres entiers peux-tu remplir avec 9 quarts ?",
+      "hint": "Combien de tiers de litre font un litre entier ? Et deux, et trois ?",
       "estimated_duration_s": 120,
-      "review_status": "brouillon",
+      "review_status": "relu_agent",
       "programme_ref": "Cycle 3, CM1 : savoir écrire une fraction supérieure à 1 comme la somme d'un entier et d'une fraction inférieure à 1."
     },
     {
@@ -3460,17 +3500,17 @@
       "skill_id": "C029",
       "level": "decouverte",
       "type": "qcm",
-      "statement": "Entre quels **entiers consécutifs** se trouve $\\frac{7}{4}$ ?",
+      "statement": "Entre quels **entiers consécutifs** se trouve $\\frac{9}{4}$ ?",
       "image": null,
       "choices": [
         {
           "key": "a",
-          "text": "entre 1 et 2",
+          "text": "entre 2 et 3",
           "misconception": null
         },
         {
           "key": "b",
-          "text": "entre 7 et 8",
+          "text": "entre 9 et 10",
           "misconception": "L'élève lit le numérateur comme s'il s'agissait du nombre lui-même."
         },
         {
@@ -3483,14 +3523,14 @@
         "value": "a"
       },
       "solution_steps": [
-        "Un tout entier vaut 4 quarts, deux touts valent 8 quarts.",
-        "$\\frac{7}{4}$ contient plus de 4 quarts, donc plus de 1, mais moins de 8 quarts, donc moins de 2.",
-        "Autrement dit $\\frac{7}{4} = 1 + \\frac{3}{4}$.",
-        "Donc $1 < \\frac{7}{4} < 2$."
+        "Un tout entier vaut 4 quarts, deux touts valent 8 quarts, trois touts valent 12 quarts.",
+        "$\\frac{9}{4}$ contient plus de 8 quarts, donc plus de 2, mais moins de 12 quarts, donc moins de 3.",
+        "Autrement dit $\\frac{9}{4} = 2 + \\frac{1}{4}$.",
+        "Donc $2 < \\frac{9}{4} < 3$."
       ],
-      "hint": "Combien de quarts font un tout entier ? Et deux touts entiers ?",
+      "hint": "Combien de quarts font deux touts entiers ? Et trois touts entiers ?",
       "estimated_duration_s": 60,
-      "review_status": "brouillon",
+      "review_status": "relu_agent",
       "programme_ref": "Cycle 3, CM1 : savoir encadrer une fraction par deux nombres entiers consécutifs."
     },
     {
@@ -3498,7 +3538,7 @@
       "skill_id": "C029",
       "level": "decouverte",
       "type": "numerique",
-      "statement": "Complète l'encadrement avec un **nombre entier** :\n\n$1 < \frac{5}{3} < \\ldots$",
+      "statement": "Complète l'encadrement avec un **nombre entier** :\n\n$1 < \\frac{5}{3} < \\ldots$",
       "image": null,
       "answer": {
         "value": 2
@@ -3511,7 +3551,7 @@
       ],
       "hint": "Combien de tiers dans 2 touts entiers ?",
       "estimated_duration_s": 60,
-      "review_status": "brouillon",
+      "review_status": "relu_agent",
       "programme_ref": "Cycle 3, CM1 : savoir encadrer une fraction par deux nombres entiers consécutifs."
     },
     {
@@ -3525,7 +3565,10 @@
         "value": "2 < 11/4 < 3",
         "accepted": [
           "2<11/4<3",
-          "2 < 11 / 4 < 3"
+          "2 < 11 / 4 < 3",
+          "2< 11/4 <3",
+          "2 <11/4< 3",
+          "2 < \\frac{11}{4} < 3"
         ]
       },
       "solution_steps": [
@@ -3536,7 +3579,7 @@
       ],
       "hint": "Décompose d'abord la fraction en un entier plus une fraction inférieure à 1.",
       "estimated_duration_s": 90,
-      "review_status": "brouillon",
+      "review_status": "relu_agent",
       "programme_ref": "Cycle 3, CM1 : savoir encadrer une fraction par deux nombres entiers consécutifs."
     },
     {
@@ -3574,7 +3617,7 @@
       ],
       "hint": "Multiplie le dénominateur par 1, 2, 3, 4… jusqu'à encadrer le numérateur.",
       "estimated_duration_s": 90,
-      "review_status": "brouillon",
+      "review_status": "relu_agent",
       "programme_ref": "Cycle 3, CM1 : savoir encadrer une fraction par deux nombres entiers consécutifs."
     },
     {
@@ -3582,20 +3625,20 @@
       "skill_id": "C029",
       "level": "entrainement",
       "type": "numerique",
-      "statement": "Complète l'encadrement avec un **nombre entier** :\n\n$2 < \frac{13}{6} < \\ldots$",
+      "statement": "Complète l'encadrement avec un **nombre entier** :\n\n$\\ldots < \\frac{17}{5} < 4$",
       "image": null,
       "answer": {
         "value": 3
       },
       "solution_steps": [
-        "Deux touts valent $2 \\times 6 = 12$ sixièmes, trois touts valent 18 sixièmes.",
-        "$13$ est compris entre 12 et 18, donc la fraction est comprise entre 2 et 3.",
-        "$\\frac{13}{6} = 2 + \\frac{1}{6}$.",
-        "L'entier cherché est **3**."
+        "Un tout vaut 5 cinquièmes, trois touts valent 15 cinquièmes, quatre touts valent 20 cinquièmes.",
+        "17 cinquièmes, c'est plus que 15 cinquièmes : la fraction est plus grande que 3.",
+        "$\\frac{17}{5} = 3 + \\frac{2}{5}$.",
+        "L'entier cherché est **3**, et l'encadrement s'écrit $3 < \\frac{17}{5} < 4$."
       ],
-      "hint": "Combien de sixièmes dans 2 touts ? Et dans 3 touts ?",
+      "hint": "Cherche combien de touts entiers tiennent dans 17 cinquièmes.",
       "estimated_duration_s": 90,
-      "review_status": "brouillon",
+      "review_status": "relu_agent",
       "programme_ref": "Cycle 3, CM1 : savoir encadrer une fraction par deux nombres entiers consécutifs."
     },
     {
@@ -3603,7 +3646,7 @@
       "skill_id": "C029",
       "level": "maitrise",
       "type": "qcm",
-      "statement": "Peut-on encadrer $\\frac{8}{4}$ par deux entiers consécutifs, comme on l'a fait pour $\\frac{7}{4}$ ?",
+      "statement": "Léo calcule $8 \\div 4 = 2$, sans reste.\n\nPeut-on trouver deux entiers consécutifs entre lesquels $\\frac{8}{4}$ se trouve, l'un strictement plus petit et l'autre strictement plus grand ?",
       "image": null,
       "choices": [
         {
@@ -3614,26 +3657,26 @@
         {
           "key": "b",
           "text": "Oui, entre 1 et 2",
-          "misconception": "L'élève applique la méthode sans remarquer que la division tombe juste."
+          "misconception": "L'élève applique la méthode d'encadrement sans regarder que la division tombe juste, et place la fraction juste en dessous de sa valeur."
         },
         {
           "key": "c",
           "text": "Oui, entre 2 et 3",
-          "misconception": "L'élève applique la méthode mécaniquement et place le nombre au-dessus de sa valeur réelle."
+          "misconception": "L'élève applique la méthode d'encadrement sans regarder que la division tombe juste, et place la fraction juste au-dessus de sa valeur."
         }
       ],
       "answer": {
         "value": "a"
       },
       "solution_steps": [
-        "On calcule : $8 \\div 4 = 2$, sans reste.",
-        "$\\frac{8}{4} = 2$ exactement : c'est un nombre entier, pas un nombre situé entre deux entiers.",
-        "Il n'y a donc pas d'encadrement **strict** possible.",
-        "Le repère : l'encadrement strict n'existe que si la division du numérateur par le dénominateur laisse un **reste**."
+        "$8 \\div 4 = 2$, sans reste.",
+        "$\\frac{8}{4} = 2$ exactement : c'est un nombre entier, il tombe pile sur une graduation.",
+        "2 n'est ni plus grand que 2, ni plus petit que 2 : aucun couple d'entiers consécutifs ne peut l'entourer strictement.",
+        "Le repère à retenir : on ne peut encadrer strictement une fraction que si la division du numérateur par le dénominateur laisse un reste."
       ],
       "hint": "Effectue la division du numérateur par le dénominateur. Reste-t-il quelque chose ?",
       "estimated_duration_s": 120,
-      "review_status": "brouillon",
+      "review_status": "relu_agent",
       "programme_ref": "Cycle 3, CM1 : savoir encadrer une fraction par deux nombres entiers consécutifs."
     },
     {
@@ -3641,30 +3684,30 @@
       "skill_id": "C029",
       "level": "maitrise",
       "type": "texte",
-      "statement": "Trouve une fraction de **dénominateur 5** comprise entre 3 et 4.\n\nÉcris ta réponse sous la forme numérateur/dénominateur.",
+      "statement": "Trouve une fraction de **dénominateur 5** comprise entre 2 et 3.\n\nÉcris ta réponse avec une barre, par exemple 7/5.",
       "image": null,
       "answer": {
-        "value": "17/5",
+        "value": "12/5",
         "accepted": [
-          "17 / 5",
-          "16/5",
-          "16 / 5",
-          "18/5",
-          "18 / 5",
-          "19/5",
-          "19 / 5"
+          "12 / 5",
+          "11/5",
+          "11 / 5",
+          "13/5",
+          "13 / 5",
+          "14/5",
+          "14 / 5"
         ]
       },
       "solution_steps": [
         "On raisonne à l'envers : on cherche le numérateur.",
-        "$3 = \\frac{15}{5}$ et $4 = \\frac{20}{5}$.",
-        "Il faut donc un numérateur strictement compris entre 15 et 20.",
-        "Par exemple 17 : $\\frac{17}{5} = 3 + \\frac{2}{5}$, bien situé entre 3 et 4.",
-        "16, 18 et 19 conviennent également."
+        "$2 = \\frac{10}{5}$ et $3 = \\frac{15}{5}$.",
+        "Il faut donc un numérateur strictement compris entre 10 et 15.",
+        "Par exemple 12 : $\\frac{12}{5} = 2 + \\frac{2}{5}$, bien situé entre 2 et 3.",
+        "11, 13 et 14 conviennent également."
       ],
-      "hint": "Convertis d'abord 3 et 4 en cinquièmes. Quel numérateur peut se glisser entre les deux ?",
+      "hint": "Convertis d'abord 2 et 3 en cinquièmes. Quel numérateur peut se glisser entre les deux ?",
       "estimated_duration_s": 150,
-      "review_status": "brouillon",
+      "review_status": "relu_agent",
       "programme_ref": "Cycle 3, CM1 : savoir encadrer une fraction par deux nombres entiers consécutifs."
     },
     {
@@ -3672,7 +3715,7 @@
       "skill_id": "C030",
       "level": "decouverte",
       "type": "numerique",
-      "statement": "Une demi-droite est graduée en **quarts** à partir de 0.\n\nCombien d'intervalles faut-il parcourir depuis 0 pour atteindre $\\frac{7}{4}$ ?",
+      "statement": "Une demi-droite est graduée en **quarts** à partir de 0.\n\nCombien de graduations faut-il parcourir depuis 0 pour atteindre $\\frac{7}{4}$ ?",
       "image": null,
       "answer": {
         "value": 7
@@ -3683,9 +3726,9 @@
         "Pour $\\frac{7}{4}$, il en faut **7**.",
         "On dépasse alors 1, puisqu'un tout n'en contient que 4."
       ],
-      "hint": "Le numérateur compte les crans, le dénominateur donne la taille du cran.",
+      "hint": "Le numérateur compte les graduations, le dénominateur donne la taille du graduation.",
       "estimated_duration_s": 60,
-      "review_status": "brouillon",
+      "review_status": "relu_agent",
       "programme_ref": "Cycle 3, CM1 : savoir repérer un point d'une demi-droite graduée par une fraction."
     },
     {
@@ -3693,7 +3736,7 @@
       "skill_id": "C030",
       "level": "decouverte",
       "type": "texte",
-      "statement": "Une demi-droite est graduée en **tiers** à partir de 0.\n\nQuelle fraction se trouve au 5e cran après 0 ? Écris ta réponse sous la forme numérateur/dénominateur.",
+      "statement": "Une demi-droite est graduée en **tiers** à partir de 0.\n\nQuelle fraction se trouve au 5e graduation après 0 ? Écris ta réponse sous la forme numérateur/dénominateur.",
       "image": null,
       "answer": {
         "value": "5/3",
@@ -3702,14 +3745,14 @@
         ]
       },
       "solution_steps": [
-        "Graduée en tiers : chaque cran vaut $\\frac{1}{3}$.",
-        "Au 5e cran, on a parcouru 5 tiers.",
+        "Graduée en tiers : chaque graduation vaut $\\frac{1}{3}$.",
+        "Au 5e graduation, on a parcouru 5 tiers.",
         "L'abscisse du point est donc $\\frac{5}{3}$.",
         "Ce point se situe entre 1 et 2, car $\\frac{5}{3} = 1 + \\frac{2}{3}$."
       ],
       "hint": "Cinq fois un tiers, cela fait combien de tiers ?",
       "estimated_duration_s": 60,
-      "review_status": "brouillon",
+      "review_status": "relu_agent",
       "programme_ref": "Cycle 3, CM1 : savoir repérer un point d'une demi-droite graduée par une fraction."
     },
     {
@@ -3717,37 +3760,37 @@
       "skill_id": "C030",
       "level": "entrainement",
       "type": "qcm",
-      "statement": "Sur une demi-droite graduée, où se situe le point d'abscisse $\\frac{9}{4}$ ?",
+      "statement": "Une demi-droite est graduée en **cinquièmes** à partir de 0.\n\nEntre quels deux nombres entiers se situe le point d'abscisse $\\frac{7}{5}$ ?",
       "image": null,
       "choices": [
         {
           "key": "a",
-          "text": "entre 2 et 3",
+          "text": "entre 1 et 2",
           "misconception": null
         },
         {
           "key": "b",
           "text": "entre 0 et 1",
-          "misconception": "L'élève croit qu'une fraction est toujours inférieure à 1."
+          "misconception": "L'élève applique la règle apprise au CE2, où toutes les fractions étaient inférieures à 1, et place donc tout point d'abscisse fractionnaire dans le premier intervalle."
         },
         {
           "key": "c",
-          "text": "entre 9 et 10",
-          "misconception": "L'élève lit le numérateur comme s'il donnait la position."
+          "text": "entre 7 et 8",
+          "misconception": "L'élève lit le numérateur comme un entier et ignore le dénominateur : il place le point comme s'il s'agissait du nombre 7."
         }
       ],
       "answer": {
         "value": "a"
       },
       "solution_steps": [
-        "Un tout vaut 4 quarts, deux touts valent 8 quarts, trois touts valent 12 quarts.",
-        "$\\frac{9}{4}$ contient 9 quarts : c'est plus que 8, donc plus que 2, et moins que 12, donc moins que 3.",
-        "$\\frac{9}{4} = 2 + \\frac{1}{4}$.",
-        "Le point se situe donc **entre 2 et 3**, juste après 2."
+        "Un tout vaut 5 cinquièmes, deux touts valent 10 cinquièmes.",
+        "$\\frac{7}{5}$ contient 7 cinquièmes : c'est plus que 5, donc plus que 1, et moins que 10, donc moins que 2.",
+        "$\\frac{7}{5} = 1 + \\frac{2}{5}$.",
+        "Le point se situe donc **entre 1 et 2**, juste après 1."
       ],
-      "hint": "Combien de quarts pour atteindre 2 ? Et pour atteindre 3 ?",
+      "hint": "Combien de cinquièmes pour atteindre 1 ? Et pour atteindre 2 ?",
       "estimated_duration_s": 90,
-      "review_status": "brouillon",
+      "review_status": "relu_agent",
       "programme_ref": "Cycle 3, CM1 : savoir placer une fraction sur une demi-droite graduée."
     },
     {
@@ -3755,7 +3798,7 @@
       "skill_id": "C030",
       "level": "entrainement",
       "type": "texte",
-      "statement": "Une demi-droite est graduée en **cinquièmes**. Un point se trouve au 12e cran après 0.\n\nQuelle est son abscisse ? Écris ta réponse sous la forme numérateur/dénominateur.",
+      "statement": "Une demi-droite est graduée en **cinquièmes**. Un point se trouve au 12e graduation après 0.\n\nQuelle est son abscisse ? Écris ta réponse sous la forme numérateur/dénominateur.",
       "image": null,
       "answer": {
         "value": "12/5",
@@ -3764,13 +3807,13 @@
         ]
       },
       "solution_steps": [
-        "Chaque cran vaut $\\frac{1}{5}$.",
-        "Au 12e cran, on a parcouru 12 cinquièmes : l'abscisse est $\\frac{12}{5}$.",
+        "Chaque graduation vaut $\\frac{1}{5}$.",
+        "Au 12e graduation, on a parcouru 12 cinquièmes : l'abscisse est $\\frac{12}{5}$.",
         "On peut vérifier sa position : $\\frac{12}{5} = 2 + \\frac{2}{5}$, donc le point est entre 2 et 3."
       ],
-      "hint": "Le nombre de crans donne directement le numérateur.",
+      "hint": "Le nombre de graduations donne directement le numérateur.",
       "estimated_duration_s": 75,
-      "review_status": "brouillon",
+      "review_status": "relu_agent",
       "programme_ref": "Cycle 3, CM1 : savoir repérer un point d'une demi-droite graduée par une fraction."
     },
     {
@@ -3778,20 +3821,20 @@
       "skill_id": "C030",
       "level": "entrainement",
       "type": "numerique",
-      "statement": "Une demi-droite est graduée en **demis**.\n\nÀ quel cran après 0 se trouve le nombre entier 3 ?",
+      "statement": "Une demi-droite est graduée en **demis**.\n\nÀ quel graduation après 0 se trouve le nombre entier 3 ?",
       "image": null,
       "answer": {
         "value": 6
       },
       "solution_steps": [
-        "Chaque cran vaut $\\frac{1}{2}$.",
+        "Chaque graduation vaut $\\frac{1}{2}$.",
         "Un tout entier vaut 2 demis, donc 3 touts valent $3 \\times 2 = 6$ demis.",
-        "$3 = \\frac{6}{2}$ : le nombre 3 se trouve au **6e** cran.",
-        "Les nombres entiers tombent bien sur des graduations, tous les 2 crans ici."
+        "$3 = \\frac{6}{2}$ : le nombre 3 se trouve au **6e** graduation.",
+        "Les nombres entiers tombent bien sur des graduations, tous les 2 graduations ici."
       ],
       "hint": "Combien de demis dans un tout entier ? Et dans trois ?",
       "estimated_duration_s": 90,
-      "review_status": "brouillon",
+      "review_status": "relu_agent",
       "programme_ref": "Cycle 3, CM1 : savoir placer une fraction sur une demi-droite graduée."
     },
     {
@@ -3799,7 +3842,7 @@
       "skill_id": "C030",
       "level": "maitrise",
       "type": "texte",
-      "statement": "Une demi-droite est graduée en **quarts**. Un point se trouve 3 crans **après le nombre 2**.\n\nQuelle est son abscisse ? Écris ta réponse sous la forme numérateur/dénominateur.",
+      "statement": "Une demi-droite est graduée en **quarts**. Un point se trouve 3 graduations **après le nombre 2**.\n\nQuelle est son abscisse ? Écris ta réponse sous la forme numérateur/dénominateur.",
       "image": null,
       "answer": {
         "value": "11/4",
@@ -3809,13 +3852,13 @@
       },
       "solution_steps": [
         "On commence par exprimer 2 en quarts : $2 = \\frac{8}{4}$.",
-        "On avance ensuite de 3 crans, soit 3 quarts de plus : $8 + 3 = 11$ quarts.",
+        "On avance ensuite de 3 graduations, soit 3 quarts de plus : $8 + 3 = 11$ quarts.",
         "L'abscisse du point est $\\frac{11}{4}$.",
-        "Vérification : $\\frac{11}{4} = 2 + \\frac{3}{4}$, ce qui correspond bien à 3 crans après 2."
+        "Vérification : $\\frac{11}{4} = 2 + \\frac{3}{4}$, ce qui correspond bien à 3 graduations après 2."
       ],
-      "hint": "Convertis d'abord le nombre 2 en quarts, puis ajoute les crans.",
+      "hint": "Convertis d'abord le nombre 2 en quarts, puis ajoute les graduations.",
       "estimated_duration_s": 120,
-      "review_status": "brouillon",
+      "review_status": "relu_agent",
       "programme_ref": "Cycle 3, CM1 : savoir repérer un point d'une demi-droite graduée par une fraction ou par la somme d'un nombre entier et d'une fraction."
     },
     {
@@ -3823,23 +3866,23 @@
       "skill_id": "C030",
       "level": "maitrise",
       "type": "texte",
-      "statement": "Sur une demi-droite graduée en **tiers**, quelle fraction se trouve au cran situé **juste avant** le nombre 2 ?\n\nÉcris ta réponse sous la forme numérateur/dénominateur.",
+      "statement": "Sur une demi-droite graduée en **sixièmes**, quelle fraction se trouve à la graduation située **juste avant** le nombre 2 ?\n\nÉcris ta réponse avec une barre, par exemple 7/6.",
       "image": null,
       "answer": {
-        "value": "5/3",
+        "value": "11/6",
         "accepted": [
-          "5 / 3"
+          "11 / 6"
         ]
       },
       "solution_steps": [
-        "On exprime 2 en tiers : $2 = \\frac{6}{3}$, donc le nombre 2 est au 6e cran.",
-        "Le cran juste avant est le 5e.",
-        "L'abscisse cherchée est donc $\\frac{5}{3}$.",
-        "Vérification : $\\frac{5}{3} = 1 + \\frac{2}{3}$, un tiers de moins que 2."
+        "Un tout vaut 6 sixièmes.",
+        "Deux touts valent donc $2 \\times 6 = 12$ sixièmes : $2 = \\frac{12}{6}$.",
+        "La graduation juste avant est la onzième.",
+        "C'est $\\frac{11}{6}$, c'est-à-dire $1 + \\frac{5}{6}$."
       ],
-      "hint": "À quel cran se trouve le nombre 2 ? Recule ensuite d'un seul cran.",
+      "hint": "Combien de sixièmes faut-il pour atteindre 2 ? Recule ensuite d'une graduation.",
       "estimated_duration_s": 120,
-      "review_status": "brouillon",
+      "review_status": "relu_agent",
       "programme_ref": "Cycle 3, CM1 : savoir repérer un point d'une demi-droite graduée par une fraction."
     },
     {
@@ -3862,7 +3905,7 @@
       ],
       "hint": "Sept fois un quart, cela fait combien de quarts ?",
       "estimated_duration_s": 60,
-      "review_status": "brouillon",
+      "review_status": "relu_agent",
       "programme_ref": "Cycle 3, CM2 : calculer le produit d'un entier et d'une fraction."
     },
     {
@@ -3882,31 +3925,28 @@
       ],
       "hint": "Trois fois deux cinquièmes, cela fait combien de cinquièmes ?",
       "estimated_duration_s": 60,
-      "review_status": "brouillon",
+      "review_status": "relu_agent",
       "programme_ref": "Cycle 3, CM2 : calculer le produit d'un entier et d'une fraction."
     },
     {
       "id": "EX-C031-E-01",
       "skill_id": "C031",
       "level": "entrainement",
-      "type": "texte",
-      "statement": "Calcule $5 \\times \\frac{3}{8}$.\n\nÉcris ta réponse sous la forme numérateur/dénominateur.",
+      "type": "vrai_faux",
+      "statement": "Le résultat de $5 \\times \\frac{3}{8}$ est plus petit que 1.",
       "image": null,
       "answer": {
-        "value": "15/8",
-        "accepted": [
-          "15 / 8"
-        ]
+        "value": false
       },
       "solution_steps": [
-        "On multiplie le numérateur par l'entier : $5 \\times 3 = 15$.",
-        "Le dénominateur reste 8.",
-        "$5 \\times \\frac{3}{8} = \\frac{15}{8}$.",
-        "Le résultat dépasse 1, puisque $15 > 8$."
+        "Multiplier par 5, c'est prendre 5 fois $\\frac{3}{8}$.",
+        "$5 \\times \\frac{3}{8} = \\frac{5 \\times 3}{8} = \\frac{15}{8}$.",
+        "Un tout vaut 8 huitièmes. Or 15 huitièmes, c'est plus que 8 huitièmes.",
+        "Donc $\\frac{15}{8}$ est **plus grand que 1** : c'est un tout entier, plus 7 huitièmes."
       ],
-      "hint": "Cinq fois trois huitièmes, cela fait combien de huitièmes ?",
+      "hint": "Combien de huitièmes font un tout entier ? Compare avec le numérateur trouvé.",
       "estimated_duration_s": 75,
-      "review_status": "brouillon",
+      "review_status": "relu_agent",
       "programme_ref": "Cycle 3, CM2 : calculer le produit d'un entier et d'une fraction."
     },
     {
@@ -3944,7 +3984,7 @@
       ],
       "hint": "Le nombre de parts augmente, mais leur taille reste la même.",
       "estimated_duration_s": 75,
-      "review_status": "brouillon",
+      "review_status": "relu_agent",
       "programme_ref": "Cycle 3, CM2 : calculer le produit d'un entier et d'une fraction."
     },
     {
@@ -3965,7 +4005,7 @@
       ],
       "hint": "Combien de verres faut-il pour remplir un litre entier ?",
       "estimated_duration_s": 90,
-      "review_status": "brouillon",
+      "review_status": "relu_agent",
       "programme_ref": "Cycle 3, CM2 : calculer le produit d'un entier et d'une fraction."
     },
     {
@@ -3986,7 +4026,7 @@
       ],
       "hint": "Écris d'abord 3 sous forme de quarts.",
       "estimated_duration_s": 150,
-      "review_status": "brouillon",
+      "review_status": "relu_agent",
       "programme_ref": "Cycle 3, CM2 : calculer le produit d'un entier et d'une fraction."
     },
     {
@@ -4020,11 +4060,11 @@
         "$3 \\times \\frac{2}{3} = \\frac{6}{3}$.",
         "$\\frac{6}{3} = 2$, car 3 tiers font 1 litre et il y a deux fois 3 tiers.",
         "Il faut **2 litres**.",
-        "Contrôle de bon sens : une recette demande un peu moins d'un litre, donc trois recettes doivent demander un peu moins de 3 litres. Les réponses b et c donnent moins d'un litre, ce qui est impossible."
+        "Contrôle de bon sens : une recette demande un peu plus d'un demi-litre, donc trois recettes en demandent un peu plus d'un litre et demi. 2 litres est plausible. Les réponses b et c donnent moins d'un litre, soit moins que pour une seule recette : c'est impossible."
       ],
       "hint": "Est-ce que trois recettes peuvent demander moins de lait qu'une seule ?",
       "estimated_duration_s": 150,
-      "review_status": "brouillon",
+      "review_status": "relu_agent",
       "programme_ref": "Cycle 3, CM2 : calculer le produit d'un entier et d'une fraction."
     },
     {
@@ -4047,7 +4087,7 @@
       ],
       "hint": "Partager 3 en 4 parts égales, c'est une division. Écris-la sous forme de fraction.",
       "estimated_duration_s": 90,
-      "review_status": "brouillon",
+      "review_status": "relu_agent",
       "programme_ref": "Cycle 3, 6e : en classe de 6e, la fraction acquiert un nouveau sens, celui de quotient."
     },
     {
@@ -4067,7 +4107,7 @@
       ],
       "hint": "Que signifie l'écriture 3 sur 5, en termes de division ?",
       "estimated_duration_s": 90,
-      "review_status": "brouillon",
+      "review_status": "relu_agent",
       "programme_ref": "Cycle 3, 6e : comprendre la définition du quotient d'un entier a par un entier b non nul."
     },
     {
@@ -4090,7 +4130,7 @@
       ],
       "hint": "Le dividende devient le numérateur, le diviseur le dénominateur.",
       "estimated_duration_s": 75,
-      "review_status": "brouillon",
+      "review_status": "relu_agent",
       "programme_ref": "Cycle 3, 6e : la fraction acquiert le sens de quotient."
     },
     {
@@ -4127,28 +4167,31 @@
       ],
       "hint": "« Le tiers de 2 » se traduit par une division. Laquelle, dans quel ordre ?",
       "estimated_duration_s": 90,
-      "review_status": "brouillon",
+      "review_status": "relu_agent",
       "programme_ref": "Cycle 3, 6e : la fraction opère sur un nombre, sens de quotient."
     },
     {
       "id": "EX-C032-E-03",
       "skill_id": "C032",
       "level": "entrainement",
-      "type": "numerique",
-      "statement": "Un ruban de 5 mètres est coupé en 4 morceaux égaux.\n\nOn cherche la longueur d'un morceau, écrite $\\frac{\\ldots}{4}$ de mètre. Quel est le numérateur ?",
+      "type": "texte",
+      "statement": "Un ruban de 5 mètres est coupé en 4 morceaux égaux.\n\nQuelle est la longueur d'un morceau, en mètres ? Écris ta réponse avec une barre.",
       "image": null,
       "answer": {
-        "value": 5
+        "value": "5/4",
+        "accepted": [
+          "5 / 4"
+        ]
       },
       "solution_steps": [
         "Couper 5 mètres en 4 morceaux égaux, c'est calculer $5 \\div 4$.",
         "Ce quotient s'écrit $\\frac{5}{4}$.",
-        "Le numérateur est **5** : c'est la longueur totale à partager.",
+        "Ce qu'on partage donne le numérateur, le nombre de parts donne le dénominateur.",
         "Chaque morceau mesure un peu plus d'un mètre, puisque $\\frac{5}{4} = 1 + \\frac{1}{4}$."
       ],
       "hint": "Ce qu'on partage devient le numérateur, le nombre de parts devient le dénominateur.",
       "estimated_duration_s": 105,
-      "review_status": "brouillon",
+      "review_status": "relu_agent",
       "programme_ref": "Cycle 3, 6e : la fraction acquiert le sens de quotient."
     },
     {
@@ -4156,7 +4199,7 @@
       "skill_id": "C032",
       "level": "maitrise",
       "type": "vrai_faux",
-      "statement": "Prendre les $\\frac{3}{4}$ d'un gâteau et partager 3 gâteaux entre 4 personnes donnent la même quantité.",
+      "statement": "On a des gâteaux tous identiques.\n\nPrendre les $\\frac{3}{4}$ d'un gâteau et partager 3 de ces gâteaux entre 4 personnes donnent la même quantité.",
       "image": null,
       "answer": {
         "value": true
@@ -4169,29 +4212,32 @@
       ],
       "hint": "Écris chaque situation sous forme de fraction, puis compare les deux écritures.",
       "estimated_duration_s": 180,
-      "review_status": "brouillon",
+      "review_status": "relu_agent",
       "programme_ref": "Cycle 3, 6e : la fraction ne représente pas seulement 3 quarts d'une unité de référence, mais aussi le quart de 3."
     },
     {
       "id": "EX-C032-M-02",
       "skill_id": "C032",
       "level": "maitrise",
-      "type": "numerique",
-      "statement": "Trouve le nombre qui, multiplié par 8, donne 5.\n\nIl s'écrit $\\frac{\\ldots}{8}$. Quel est son numérateur ?",
+      "type": "texte",
+      "statement": "Trouve le nombre qui, multiplié par 8, donne 5.\n\nÉcris ta réponse avec une barre.",
       "image": null,
       "answer": {
-        "value": 5
+        "value": "5/8",
+        "accepted": [
+          "5 / 8"
+        ]
       },
       "solution_steps": [
         "On cherche le nombre $x$ tel que $8 \\times x = 5$.",
         "Par définition du quotient, ce nombre est $\\frac{5}{8}$.",
-        "Le numérateur est **5**.",
+        "Ce nombre s'écrit donc $\\frac{5}{8}$.",
         "Vérification : $8 \\times \\frac{5}{8} = \\frac{40}{8} = 5$.",
         "Ce type d'égalité à trou prépare la résolution d'équations."
       ],
       "hint": "Une égalité à trou du type 8 × … = 5 se résout par une division. Écris-la en fraction.",
       "estimated_duration_s": 180,
-      "review_status": "brouillon",
+      "review_status": "relu_agent",
       "programme_ref": "Cycle 3, 6e : cette définition est mobilisée dans la résolution d'égalités à trous, qui préfigurent celle de l'équation a × x = b."
     }
   ]

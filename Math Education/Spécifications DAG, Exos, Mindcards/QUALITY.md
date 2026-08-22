@@ -280,3 +280,104 @@ La question de fond est la même dans les trois cas : **accepte-t-on qu'un distr
 L'agent a produit une affirmation fausse dans son rapport : il signalait comme inexistante la citation « L'élève sait dire et expliquer pourquoi 1/5 est plus petit que 1/3 ». Elle figure bien au programme du CE1. L'agent ne l'a pas trouvée parce que l'extraction PDF sépare le numérateur et le dénominateur sur deux lignes, ce qui casse la recherche textuelle sur « 1/5 ».
 
 **Conséquence pour les relectures suivantes :** le rapport de l'agent doit être vérifié, en particulier toute affirmation du type « cette citation n'existe pas ». La limite est dans l'extraction des PDF, pas dans le programme.
+
+---
+
+## Relecture du 22/08/2026 — les 84 exercices des domaines A et C
+
+Quatre agents `math-reviewer` en parallèle, 21 exercices chacun, sur A012, A013,
+A014, A026, A027, A028, C026, C027, C029, C030, C031, C032.
+
+### Exactitude mathématique : zéro erreur sur 84
+
+Les quatre agents ont recalculé par machine toutes les réponses, toutes les
+étapes de corrigé, toutes les listes de diviseurs et toutes les conversions de
+fractions. **Aucune réponse fausse, aucun distracteur mathématiquement juste
+présenté comme faux** en dehors des deux QCM signalés ci-dessous.
+
+C'est un changement de nature des défauts : le générateur ne se trompe plus sur
+les nombres, il se trompe sur la valeur pédagogique de la question posée.
+
+### Défauts bloquants (7)
+
+| Exercice | Défaut |
+|---|---|
+| EX-C009-D-01, EX-C026-D-01, EX-C029-D-02, EX-C029-E-03 | `\frac` écrit avec un seul antislash : le parseur JSON produit un U+000C, l'élève lit `$␌rac{3}{8}$`. Quatre exercices infaisables, 12 zones de texte touchées. |
+| EX-A028-M-02 | QCM à deux réponses défendables : le distracteur « Entre 9 000 et 10 000 » est vrai. |
+| EX-C027-M-01 | QCM à deux réponses défendables : le distracteur propose $1 + \frac{5}{4}$, qui vaut effectivement $\frac{9}{4}$. Sa `misconception` était en outre factuellement fausse. |
+| EX-A028-E-03 | Le corrigé comptait des intervalles là où l'énoncé parlait de graduations. |
+
+Les quatre antislashs ont été introduits par une correction manuelle, en réponse
+au retour V1.2 de Marius. **Une correction faite à la main sans repasser la
+validation est elle-même une source de défauts bloquants.**
+
+### Le défaut structurel : la compétence contournée faute d'image
+
+A028 (« placer un entier sur une demi-droite graduée ») et C030 (« placer une
+fraction ») n'ont aucune illustration. Le générateur a compensé en décrivant la
+demi-droite entièrement par le texte : pas, origine, position. Résultat, les 14
+exercices se résolvent par le calcul et **un élève incapable de lire une
+graduation les réussit tous les quatorze**. La même mécanique joue sur C026,
+compétence de partage visuel au CE1 dont aucun des 7 exercices ne porte d'image.
+
+Ce n'est pas un défaut de rédaction, et il n'a pas de correction textuelle :
+c'est la validité de trois compétences qui dépend de la production des figures.
+Les schémas ASCII ayant été rejetés, aucun repli n'existe.
+
+### Corrections appliquées
+
+**43 exercices modifiés, 2 créés** (EX-A027-D-03 sur les multiples communs et
+EX-C027-D-03 sur le sens réciproque, deux notions qui démarraient directement au
+niveau entraînement). Les corrections sont tracées dans `_travail/rapport_lot*.md`.
+
+Corrections notables au-delà des bloquants :
+
+- EX-A013-E-03 évaluait A012 et non A013 ;
+- EX-A026-E-03 était plus difficile que les deux exercices de maîtrise de sa
+  compétence : son contenu et celui de EX-A026-M-01 ont été échangés ;
+- EX-C032-E-03 et EX-C032-M-02 étaient réussissables par recopie, la réponse
+  figurant en toutes lettres dans l'énoncé ;
+- les cinq énoncés de C026 qui dépassaient le plafond de 20 mots du CE1 sont
+  repassés dessous ;
+- « cran » remplacé par « graduation » dans tout C030, pour s'aligner sur A028
+  qui porte la même notion au même niveau.
+
+### Ce que l'audit a révélé au-delà des quatre lots
+
+Deux défauts que les agents ont vus sur leur périmètre se sont avérés systémiques
+une fois mesurés sur la banque entière :
+
+1. **Le `validation_test` recopié dans l'exercice de découverte** : 19 compétences
+   sur 35. L'élève envoyé travailler une compétence parce qu'il a raté le test de
+   positionnement y retrouvait exactement le même item. Les 19 tests ont été
+   réécrits avec d'autres nombres, les exercices n'ont pas bougé.
+2. **Le schéma ASCII rejeté par Marius était toujours présent** dans EX-C005-D-01
+   et EX-C005-E-01. Il avait été retiré d'un exercice, pas de la classe.
+
+### Sept contrôles ajoutés, dix au total
+
+| Contrôle | Ce qu'il attrape | Gravité |
+|---|---|---|
+| `check_notations` étendu aux corrigés et indices | Une notation employée avant la compétence qui l'introduit. L'élève lit le corrigé autant que l'énoncé : 7 exercices employaient `<` et `>` au CE1 dans leurs corrigés, dont 2 hors des lots relus. | erreur |
+| `check_caracteres_controle` | Antislash non doublé dans le JSON, et tout caractère U+0000–U+001F. | erreur |
+| `check_schema_ascii` | Figure dessinée en caractères. | erreur |
+| `check_test_recopie` | Découverte reprenant les nombres du test de positionnement. | avertissement |
+| `check_reponses_dupliquees` | Deux exercices d'une compétence attendant la même réponse. | avertissement |
+| `check_enonce_orphelin` | Énoncé supposant que le précédent vient d'être servi, tant que le champ `serie` n'existe pas. | avertissement |
+
+**Principe confirmé une fois de plus :** chaque défaut trouvé par un humain ou un
+agent doit devenir un contrôle, sinon il revient. Les trois quarts des défauts de
+cette passe étaient des réapparitions de classes déjà rencontrées.
+
+### Ce qui reste ouvert
+
+- **Les figures de A028, C030 et C026.** Producteur, format et rendu dans
+  l'application ne sont toujours pas décidés. C'est le premier point bloquant.
+- **Le champ `serie`**, toujours absent du schéma : cinq énoncés ont dû être
+  rendus autonomes alors qu'ils gagneraient à être enchaînés.
+- **Aucune compétence du DAG n'introduit la division.** Le domaine B s'arrête aux
+  tables de multiplication du CE2, alors que `÷` et la division euclidienne sont
+  employés dans A026, C027 et C032. `check_notations` est prêt à l'attraper, il
+  manque la compétence.
+- Les niveaux de A004, A005, A006 et A008 restent non sourcés.
+- Les énoncés de C001, C003 et C009 restent au-dessus du plafond du CE1.

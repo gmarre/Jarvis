@@ -20,13 +20,13 @@ Compte les jetons : ● ● ● ● ● ● ● Combien y a-t-il de jetons ?
 
 **EX-A001-E-01** — entrainement, numerique, 20 s
 
-Quel nombre vient juste après 6 ?
+Quel nombre vient juste après 8 ?
 
-**Réponse :** 7
+**Réponse :** 9
 
-*Corrigé.* (1) Dans la suite des nombres, on avance d'un cran : 6, puis 7.
+*Corrigé.* (1) Dans la suite des nombres, on avance d'un cran : 8, puis 9.
 
-*Indice.* Récite la suite des nombres à partir de 1 et arrête-toi juste après 6.
+*Indice.* Récite la suite des nombres à partir de 1 et arrête-toi juste après 8.
 
 **EX-A001-M-01** — maitrise, vrai_faux, 60 s
 
@@ -289,7 +289,7 @@ Le nombre 99 s'écrit avec plus de chiffres que le nombre 100.
 
 **Réponse :** False
 
-*Corrigé.* (1) On compte les chiffres de chacun : 99 s'écrit avec 2 chiffres, 100 s'écrit avec 3 chiffres. (2) Comme 2 < 3, c'est 100 qui s'écrit avec le plus de chiffres. (3) L'affirmation est donc fausse. (4) Le piège : le chiffre 9 est plus grand que le chiffre 1, mais cela ne dit rien du nombre de chiffres utilisés pour écrire le nombre.
+*Corrigé.* (1) On compte les chiffres de chacun : 99 s'écrit avec 2 chiffres, 100 s'écrit avec 3 chiffres. (2) Comme 2 chiffres, c'est moins que 3 chiffres, c'est 100 qui s'écrit avec le plus de chiffres. (3) L'affirmation est donc fausse. (4) Le piège : le chiffre 9 est plus grand que le chiffre 1, mais cela ne dit rien du nombre de chiffres utilisés pour écrire le nombre.
 
 *Indice.* Compte les chiffres de chaque nombre, un par un, sans regarder lequel des deux nombres est le plus grand.
 
@@ -419,11 +419,11 @@ Que représente le numérateur d'une fraction ?
 
 **EX-C002-M-01** — maitrise, numerique, 75 s
 
-Une figure est partagée en 8 parts égales. 3 parts sont coloriées en vert, toutes les autres en jaune. On écrit la fraction jaune sous la forme …/8. Quel est son numérateur ?
+Une figure est partagée en 8 parts égales. 2 parts sont coloriées en vert, toutes les autres en jaune. On écrit la fraction jaune sous la forme …/8. Quel est son numérateur ?
 
-**Réponse :** 5
+**Réponse :** 6
 
-*Corrigé.* (1) La figure compte 8 parts égales en tout : c'est le dénominateur. (2) 3 parts sont vertes, donc les parts jaunes sont celles qui restent : 8 - 3 = 5. (3) Le numérateur de la fraction jaune est 5. (4) La figure est jaune pour 5/8 et verte pour 3/8.
+*Corrigé.* (1) La figure compte 8 parts égales en tout : c'est le dénominateur. (2) 2 parts sont vertes, donc les parts jaunes sont celles qui restent : 8 - 2 = 6. (3) Le numérateur de la fraction jaune est 6. (4) La figure est jaune pour 6/8 et verte pour 2/8.
 
 *Indice.* Le numérateur compte les parts jaunes. Elles ne sont pas données directement : il faut les trouver.
 
@@ -466,7 +466,7 @@ On partage un même tout de deux façons : une fois en 3 parts égales, une fois
 - **c.** Les parts ont la même taille
   <br>*Erreur visée :* L'élève ne relie pas le dénominateur à la taille des parts.
 
-*Corrigé.* (1) Le tout est le même dans les deux cas. (2) Plus on partage en un grand nombre de parts, plus chaque part est petite. (3) En partageant en 8, chaque part vaut 1/8 ; en partageant en 3, chaque part vaut 1/3. (4) Donc 1/8 < 1/3 : la part la plus petite s'obtient en partageant en 8.
+*Corrigé.* (1) Le tout est le même dans les deux cas. (2) Plus on partage en un grand nombre de parts, plus chaque part est petite. (3) En partageant en 8, chaque part vaut 1/8 ; en partageant en 3, chaque part vaut 1/3. (4) Donc un huitième est plus petit qu'un tiers : la part la plus petite s'obtient en partageant en 8.
 
 *Indice.* Imagine un gâteau partagé entre 3 personnes, puis entre 8 personnes.
 
@@ -481,15 +481,15 @@ On partage un même tout de deux façons : une fois en 3 parts égales, une fois
 
 **EX-C009-D-01** — decouverte, qcm, 40 s
 
-Lequel est le plus grand : rac{3}{8} ou rac{5}{8} ?
+Lequel est le plus grand : 3/8 ou 5/8 ?
 
-- **a.** rac{5}{8} ✅
-- **b.** rac{3}{8}
+- **a.** 5/8 ✅
+- **b.** 3/8
   <br>*Erreur visée :* L'élève inverse la comparaison, ou compte les parts qui restent au lieu des parts prises.
 - **c.** Ils sont égaux
   <br>*Erreur visée :* L'élève voit le même dénominateur et en conclut que les deux fractions sont égales.
 
-*Corrigé.* (1) Les deux fractions ont le même dénominateur 8 : les parts sont toutes des huitièmes, donc de même taille. (2) Il suffit de compter combien de parts on prend : 3 d'un côté, 5 de l'autre. (3) 5 parts, c'est plus que 3 parts de la même taille. (4) C'est donc rac{5}{8} le plus grand.
+*Corrigé.* (1) Les deux fractions ont le même dénominateur 8 : les parts sont toutes des huitièmes, donc de même taille. (2) Il suffit de compter combien de parts on prend : 3 d'un côté, 5 de l'autre. (3) 5 parts, c'est plus que 3 parts de la même taille. (4) C'est donc 5/8 le plus grand.
 
 *Indice.* Les parts ont la même taille. Regarde seulement combien on en prend.
 
@@ -567,15 +567,15 @@ Lucie a colorié les 3/10 d'une figure en bleu, et tout le reste en rouge. Quell
 
 **EX-C026-D-01** — decouverte, qcm, 45 s
 
-Lequel est le plus grand : rac{1}{5} ou rac{1}{3} ?
+Lequel est le plus grand : 1/5 ou 1/3 ?
 
-- **a.** rac{1}{3} ✅
-- **b.** rac{1}{5}
+- **a.** 1/3 ✅
+- **b.** 1/5
   <br>*Erreur visée :* L'élève applique aux dénominateurs l'ordre des entiers : 5 est plus grand que 3, donc la fraction serait plus grande. C'est l'erreur la plus fréquente sur cette notion.
 - **c.** Ils sont égaux
   <br>*Erreur visée :* L'élève ne compare que les numérateurs, qui sont égaux, et conclut à l'égalité.
 
-*Corrigé.* (1) Les deux fractions ont le même numérateur : on prend une part dans chaque cas. (2) Mais les parts n'ont pas la même taille. Partager un tout en 5 donne des parts plus petites que le partager en 3. (3) Une part sur 3 est donc plus grande qu'une part sur 5. (4) C'est rac{1}{3} le plus grand. Retiens : quand le numérateur est 1, plus le dénominateur est grand, plus la fraction est petite.
+*Corrigé.* (1) Les deux fractions ont le même numérateur : on prend une part dans chaque cas. (2) Mais les parts n'ont pas la même taille. Partager un tout en 5 donne des parts plus petites que le partager en 3. (3) Une part sur 3 est donc plus grande qu'une part sur 5. (4) C'est 1/3 le plus grand. Retiens : quand le numérateur est 1, plus le dénominateur est grand, plus la fraction est petite.
 
 *Indice.* Préfères-tu partager un gâteau entre 3 personnes ou entre 5 ?
 
@@ -589,13 +589,13 @@ Une même tablette de chocolat est partagée en parts égales. Dans quel cas une
 - **c.** Quand on partage en 8
   <br>*Erreur visée :* Même erreur, poussée plus loin : l'élève choisit le plus grand dénominateur.
 
-*Corrigé.* (1) La tablette est la même dans les trois cas : c'est le tout. (2) Plus on la partage en un grand nombre de parts, plus chaque part est petite. (3) En partageant en 2, on obtient les parts les plus grandes : 1/2. (4) On a donc 1/8 < 1/4 < 1/2.
+*Corrigé.* (1) La tablette est la même dans les trois cas : c'est le tout. (2) Plus on la partage en un grand nombre de parts, plus chaque part est petite. (3) En partageant en 2, on obtient les parts les plus grandes : 1/2. (4) Du plus petit au plus grand : un huitième, puis un quart, puis un demi.
 
 *Indice.* Le nombre de parts augmente, mais la tablette, elle, ne grandit pas.
 
 **EX-C026-E-01** — entrainement, qcm, 60 s
 
-Léa partage sa tarte entre 4 amis. Tom partage une tarte identique entre 6 amis. Qui reçoit la plus grosse part ?
+Léa partage une tarte entre 4 amis. Tom partage une tarte pareille entre 6. Qui a la plus grosse part ?
 
 - **a.** Un ami de Léa ✅
 - **b.** Un ami de Tom
@@ -603,13 +603,13 @@ Léa partage sa tarte entre 4 amis. Tom partage une tarte identique entre 6 amis
 - **c.** Ils reçoivent la même part
   <br>*Erreur visée :* L'élève ne relie pas le nombre de convives à la taille des parts.
 
-*Corrigé.* (1) Chez Léa, chaque ami reçoit 1/4 de tarte. Chez Tom, chaque ami reçoit 1/6. (2) Les deux tartes sont identiques : c'est le même tout. (3) Partager en 4 donne des parts plus grandes que partager en 6. (4) Donc 1/6 < 1/4 : c'est un ami de Léa qui reçoit la plus grosse part.
+*Corrigé.* (1) Chez Léa, chaque ami reçoit 1/4 de tarte. Chez Tom, chaque ami reçoit 1/6. (2) Les deux tartes sont identiques : c'est le même tout. (3) Partager en 4 donne des parts plus grandes que partager en 6. (4) Une part sur 6 est plus petite qu'une part sur 4 : c'est un ami de Léa qui reçoit la plus grosse part.
 
 *Indice.* Plus il y a de convives autour d'une même tarte, plus les parts rétrécissent.
 
 **EX-C026-E-02** — entrainement, texte, 75 s
 
-Range ces fractions de la plus petite à la plus grande : 1/2, 1/8, 1/4. Écris-les séparées par des virgules, sous la forme numérateur/dénominateur.
+Range de la plus petite à la plus grande : 1/2, 1/8, 1/4. Sépare-les par des virgules.
 
 **Réponse :** 1/8, 1/4, 1/2
 
@@ -623,13 +623,13 @@ Range ces fractions de la plus petite à la plus grande : 1/2, 1/8, 1/4. Écris-
 
 **Réponse :** False
 
-*Corrigé.* (1) Le raisonnement proposé applique aux fractions l'ordre des entiers : c'est justement le piège. (2) Partager un tout en 10 donne des parts plus petites que le partager en 6. (3) Donc 1/10 < 1/6 : l'affirmation est fausse. (4) Le dénominateur compte les parts, il ne mesure pas leur taille : quand il augmente, la part diminue.
+*Corrigé.* (1) Le raisonnement proposé applique aux fractions l'ordre des entiers : c'est justement le piège. (2) Partager un tout en 10 donne des parts plus petites que le partager en 6. (3) Un dixième est plus petit qu'un sixième : l'affirmation est fausse. (4) Le dénominateur compte les parts, il ne mesure pas leur taille : quand il augmente, la part diminue.
 
 *Indice.* Regarde la taille d'une part, pas la taille du nombre écrit en bas.
 
 **EX-C026-M-01** — maitrise, qcm, 90 s
 
-Trois enfants mangent chacun une part d'une même tarte. Léa mange 1/4 de la tarte, Tom 1/8, et Zoé 1/3. Qui a mangé le moins ?
+Léa mange 1/4 d'une tarte. Tom en mange 1/8, et Zoé 1/3. Qui a mangé le moins ?
 
 - **a.** Tom ✅
 - **b.** Zoé
@@ -637,19 +637,19 @@ Trois enfants mangent chacun une part d'une même tarte. Léa mange 1/4 de la ta
 - **c.** Léa
   <br>*Erreur visée :* L'élève repère le dénominateur du milieu et l'associe à la plus petite part.
 
-*Corrigé.* (1) Les trois fractions ont le même numérateur 1 : chacun prend une seule part. (2) La plus petite part correspond au plus grand dénominateur. (3) Les dénominateurs sont 4, 8 et 3. Le plus grand est 8. (4) C'est donc Tom, avec 1/8, qui a mangé le moins. (5) Dans l'ordre : 1/8 < 1/4 < 1/3.
+*Corrigé.* (1) Les trois fractions ont le même numérateur 1 : chacun prend une seule part. (2) La plus petite part correspond au plus grand dénominateur. (3) Les dénominateurs sont 4, 8 et 3. Le plus grand est 8. (4) C'est donc Tom, avec 1/8, qui a mangé le moins. (5) Dans l'ordre, du plus petit au plus grand : 1/8, puis 1/4, puis 1/3.
 
 *Indice.* Cherche celui dont la tarte a été partagée en le plus grand nombre de parts.
 
 **EX-C026-M-02** — maitrise, texte, 120 s
 
-Trouve une fraction de numérateur 1 qui soit plus grande que 1/8 et plus petite que 1/4. Écris ta réponse sous la forme numérateur/dénominateur.
+Trouve une fraction de numérateur 1 plus grande que 1/8 et plus petite que 1/4. Écris-la avec une barre : 1/…
 
 **Réponse :** 1/6
 
-*Corrigé.* (1) On cherche une fraction 1/? comprise entre 1/8 et 1/4. (2) Comme le numérateur est 1, la fraction est d'autant plus petite que le dénominateur est grand. (3) Il faut donc un dénominateur compris entre 4 et 8. (4) Avec 6 : 1/8 < 1/6 < 1/4, car 4 < 6 < 8. (5) 1/5 convient aussi, pour la même raison.
+*Corrigé.* (1) On cherche une fraction 1/? comprise entre 1/8 et 1/4. (2) Comme le numérateur est 1, la fraction est d'autant plus petite que le dénominateur est grand. (3) Il faut donc un dénominateur compris entre 4 et 8. (4) Avec 6 : une part sur 6 est plus petite qu'une part sur 4, et plus grande qu'une part sur 8, car 6 se place entre 4 et 8. (5) 1/5 convient aussi, pour la même raison.
 
-*Indice.* Le dénominateur cherché doit se placer entre 4 et 8. Lesquels sont autorisés au CE1 ?
+*Indice.* Le dénominateur cherché doit se placer entre 4 et 8.
 
 ---
 
@@ -789,7 +789,7 @@ Parmi ces fractions, laquelle n'est pas égale à 3/4 ?
 
 **EX-C005-D-01** — decouverte, numerique, 45 s
 
-Une bande-unité (de 0 à 1) est graduée en quarts : 0 |----|----|----|----| 1 Combien d'intervalles faut-il parcourir depuis 0 pour atteindre 3/4 ?
+Une bande-unité va de 0 à 1. Elle est partagée en quarts, c'est-à-dire en 4 intervalles égaux. Combien d'intervalles faut-il parcourir depuis 0 pour atteindre 3/4 ?
 
 **Réponse :** 3
 
@@ -799,7 +799,7 @@ Une bande-unité (de 0 à 1) est graduée en quarts : 0 |----|----|----|----| 1 
 
 **EX-C005-E-01** — entrainement, texte, 50 s
 
-Une bande-unité (de 0 à 1) est graduée en cinquièmes : 0 |----|----|----|----|----| 1 Quelle fraction se trouve à la 4e graduation après 0 ? Écris ta réponse sous la forme numérateur/dénominateur.
+Une bande-unité va de 0 à 1. Elle est partagée en cinquièmes, c'est-à-dire en 5 intervalles égaux. Quelle fraction se trouve à la 4e graduation après 0 ? Écris ta réponse avec une barre.
 
 **Réponse :** 4/5
 
@@ -889,21 +889,21 @@ Léa compte de 7 en 7 à partir de 0 : 7, 14, 21, 28, 35, 42, 49. Elle continue 
 
 **EX-A012-E-01** — entrainement, vrai_faux, 60 s
 
-Un fleuriste range 96 tulipes en bouquets de 6 tulipes. Il n'en reste aucune. Donc 96 est un multiple de 6.
+Un fleuriste veut ranger 96 tulipes en bouquets de 7 tulipes, sans qu'il en reste aucune. Il y arrive, donc 96 est un multiple de 7.
 
-**Réponse :** True
+**Réponse :** False
 
-*Corrigé.* (1) On cherche si le fleuriste peut faire un nombre entier de bouquets. (2) 96 ÷ 6 = 16 : il fait 16 bouquets, et il ne reste rien. (3) Autrement dit 96 = 6 × 16. (4) Un nombre qui s'écrit 6 multiplié par un entier est un multiple de 6. L'affirmation est vraie.
+*Corrigé.* (1) On cherche si 96 s'écrit 7 multiplié par un nombre entier. (2) 7 × 13 = 91, et 7 × 14 = 98 : on saute 96. (3) 96 = 7 × 13 + 5 : il resterait 5 tulipes. (4) Le fleuriste n'y arrive donc pas, et 96 n'est pas un multiple de 7. L'affirmation est fausse.
 
-*Indice.* Cherche par combien il faut multiplier 6 pour obtenir 96.
+*Indice.* Cherche dans la table de 7 : y trouve-t-on 96 ?
 
-**EX-A012-E-02** — entrainement, texte, 120 s
+**EX-A012-E-02** — entrainement, texte, 90 s
 
-Parmi 128, 150, 216 et 305, quels nombres sont des multiples de 4 ? Sépare-les par des virgules.
+Parmi 128, 150 et 305, quels nombres sont des multiples de 4 ? Sépare-les par des virgules.
 
-**Réponse :** 128, 216
+**Réponse :** 128
 
-*Corrigé.* (1) Un nombre est un multiple de 4 s'il s'écrit 4 multiplié par un nombre entier. (2) 128 = 4 × 32 : c'est un multiple de 4. (3) 150 = 4 × 37 + 2 : il reste 2, ce n'est pas un multiple de 4. (4) 216 = 4 × 54 : c'est un multiple de 4. (5) 305 = 4 × 76 + 1 : il reste 1, ce n'est pas un multiple de 4. (6) Réponse : 128, 216.
+*Corrigé.* (1) Un nombre est un multiple de 4 s'il s'écrit 4 multiplié par un nombre entier. (2) 128 = 4 × 32 : c'est un multiple de 4. (3) 150 = 4 × 37 + 2 : il reste 2, ce n'est pas un multiple de 4. (4) 305 = 4 × 76 + 1 : il reste 1, ce n'est pas un multiple de 4. (5) Réponse : 128.
 
 *Indice.* Divise chaque nombre par 4 et regarde s'il reste quelque chose.
 
@@ -917,7 +917,7 @@ Théo pose 23 rangées de 7 images et trouve 7 × 23 = 161. Que peut-il en dédu
 - **c.** 161 est un multiple de 30
   <br>*Erreur visée :* L'élève additionne les deux facteurs, 7 + 23 = 30, au lieu de garder la multiplication ; or 161 n'est pas dans la table de 30.
 
-*Corrigé.* (1) Un multiple de 7 est un nombre qui s'écrit 7 multiplié par un nombre entier. (2) Ici 161 = 7 × 23 : 161 est donc un multiple de 7. (3) Une même multiplication le dit aussi de 23 : 161 est également un multiple de 23. (4) En revanche 7 n'est pas un multiple de 161 : 7 est plus petit que 161, et aucune multiplication 161 × … ne donne 7. (5) Réponse : 161 est un multiple de 7.
+*Corrigé.* (1) Un multiple de 7 est un nombre qui s'écrit 7 multiplié par un nombre entier. (2) Ici 161 = 7 × 23 : 161 est donc un multiple de 7. (3) Le résultat d'une multiplication est un multiple de chacun des deux nombres multipliés : ici c'est 161 qui est le multiple, pas 7. (4) En revanche 7 n'est pas un multiple de 161 : 7 est plus petit que 161, et aucune multiplication 161 × … ne donne 7. (5) Réponse : 161 est un multiple de 7.
 
 *Indice.* Dans 7 × 23 = 161, quel nombre est le résultat de la multiplication ?
 
@@ -933,13 +933,13 @@ Un nombre est un multiple de 8. Il est compris entre 300 et 310. Quel est ce nom
 
 **EX-A012-M-02** — maitrise, vrai_faux, 120 s
 
-Nina remarque que 4 514 est un nombre pair. Elle en conclut que 4 514 est un multiple de 4. Nina a raison.
+Nina remarque que 26 est un nombre pair. Elle en conclut que 26 est un multiple de 4. Nina a raison.
 
 **Réponse :** False
 
-*Corrigé.* (1) Le début est juste : 4 514 se termine par 4, il est donc pair, c'est-à-dire multiple de 2. (2) Mais être un multiple de 2 ne suffit pas pour être un multiple de 4. (3) 4 514 ÷ 4 donne 1 128 et il reste 2 : 4 514 = 4 × 1 128 + 2. (4) 4 514 n'est donc pas un multiple de 4 : Nina a tort. (5) Un nombre pair peut l'être, comme 4 512 = 4 × 1 128, mais ce n'est pas automatique. Contre-exemples simples : 6 et 10 sont pairs sans être dans la table de 4.
+*Corrigé.* (1) Le début est juste : 26 se termine par 6, il est donc pair, c'est-à-dire multiple de 2. (2) Mais être un multiple de 2 ne suffit pas pour être un multiple de 4. (3) Dans la table de 4 on trouve 4 × 6 = 24, puis 4 × 7 = 28 : 26 n'y figure pas. (4) 26 = 4 × 6 + 2 : il reste 2. Nina a donc tort. (5) Un nombre pair est parfois multiple de 4, comme 24 ou 28, mais pas toujours : 6, 10, 26 sont pairs sans être dans la table de 4.
 
-*Indice.* Tous les nombres pairs sont-ils dans la table de 4 ? Regarde 6, puis 10.
+*Indice.* Écris la table de 4 : 4, 8, 12, 16… 26 y apparaît-il ?
 
 ---
 
@@ -961,7 +961,7 @@ Nina remarque que 4 514 est un nombre pair. Elle en conclut que 4 514 est un mul
 
 **EX-A013-D-02** — decouverte, qcm, 75 s
 
-On veut partager les mêmes 36 cartes entre un autre nombre de joueurs, sans qu'il en reste. Quel nombre de joueurs convient ?
+On partage 36 cartes entre plusieurs joueurs, sans qu'il en reste aucune. Quel nombre de joueurs convient ?
 
 - **a.** 6 joueurs ✅
 - **b.** 7 joueurs
@@ -991,7 +991,7 @@ Un libraire range 630 livres en piles égales. Parmi 4, 7 et 8, quel nombre de p
 - **b.** 4 piles
   <br>*Erreur visée :* L'élève pense que tout nombre pair se partage en 4 ; or 630 = 4 × 157 + 2, il resterait 2 livres.
 - **c.** 8 piles
-  <br>*Erreur visée :* L'élève croit qu'un nombre terminé par 0 se partage en 8 ; or 630 = 8 × 78 + 6, il resterait 6 livres.
+  <br>*Erreur visée :* L'élève applique deux fois la règle du double : 630 est pair, donc il le croit divisible par 4 puis par 8 ; or 630 = 8 × 78 + 6, il resterait 6 livres.
 
 *Corrigé.* (1) Pour que les piles soient égales et qu'il ne reste rien, le nombre de piles doit être un diviseur de 630. (2) 630 ÷ 7 = 90 : 7 piles de 90 livres, rien ne reste. (3) 630 ÷ 4 : 4 × 157 = 628, il resterait 2 livres. (4) 630 ÷ 8 : 8 × 78 = 624, il resterait 6 livres. (5) Réponse : 7 piles.
 
@@ -999,13 +999,13 @@ Un libraire range 630 livres en piles égales. Parmi 4, 7 et 8, quel nombre de p
 
 **EX-A013-E-03** — entrainement, numerique, 90 s
 
-Un maraîcher a 258 pommes et fait des sacs de 6 pommes. Complète : 258 = 6 × …
+Un maraîcher a 258 pommes. Il veut faire des sacs de 6 pommes, tous pleins. Peut-il utiliser toutes ses pommes ? Complète : 258 = 6 × …
 
 **Réponse :** 43
 
-*Corrigé.* (1) On cherche par quel nombre multiplier 6 pour obtenir 258. (2) 258 ÷ 6 = 43. (3) Vérification : 6 × 43 = 258, il ne reste rien. (4) Le maraîcher remplit 43 sacs, et 6 est bien un diviseur de 258.
+*Corrigé.* (1) Si la multiplication tombe juste, 6 est un diviseur de 258 : aucune pomme ne reste. (2) On cherche par quel nombre multiplier 6 pour obtenir 258. (3) 6 × 40 = 240, puis il manque 18, et 6 × 3 = 18 : au total 6 × 43 = 258. (4) Il ne reste rien : le maraîcher remplit 43 sacs pleins, et 6 est bien un diviseur de 258.
 
-*Indice.* Pose la division de 258 par 6.
+*Indice.* Cherche par combien multiplier 6 pour approcher 258, en commençant par les dizaines.
 
 **EX-A013-M-01** — maitrise, vrai_faux, 105 s
 
@@ -1013,7 +1013,7 @@ Karim écrit : « 5 est un diviseur de 45. Donc 45 est un diviseur de 5. » Kari
 
 **Réponse :** False
 
-*Corrigé.* (1) La première phrase est juste : 45 ÷ 5 = 9, donc 5 est un diviseur de 45. (2) Mais on ne peut pas échanger les deux nombres : un diviseur est toujours plus petit que le nombre qu'il divise, ou égal à lui. (3) 5 ÷ 45 ne tombe pas juste, donc 45 n'est pas un diviseur de 5. (4) Le bon renversement utilise l'autre mot : 45 est un multiple de 5, car 45 = 5 × 9. (5) Karim a donc tort.
+*Corrigé.* (1) La première phrase est juste : 45 ÷ 5 = 9, donc 5 est un diviseur de 45. (2) Pour savoir si 45 est un diviseur de 5, il faudrait partager 5 en 45 parts entières : c'est impossible. Le sens de « diviseur de » n'est donc pas réversible. (3) 5 ÷ 45 ne tombe pas juste, donc 45 n'est pas un diviseur de 5. (4) Le bon renversement utilise l'autre mot : 45 est un multiple de 5, car 45 = 5 × 9. (5) Karim a donc tort.
 
 *Indice.* Un diviseur est-il plus petit ou plus grand que le nombre qu'il divise ?
 
@@ -1052,13 +1052,13 @@ Voici quatre nombres : 34, 45, 60 et 87. Lesquels sont des multiples de 2 ?
 
 **EX-A014-D-02** — decouverte, qcm, 45 s
 
-Toujours avec les nombres 34, 45, 60 et 87. Lesquels sont des multiples de 5 ?
+Voici quatre nombres : 34, 45, 60 et 87. Lesquels sont des multiples de 5 ?
 
 - **a.** 45 et 60 ✅
 - **b.** 60 seulement
   <br>*Erreur visée :* L'élève ne retient que le chiffre 0 et oublie que les nombres terminés par 5 sont aussi des multiples de 5.
 - **c.** 34 et 60
-  <br>*Erreur visée :* L'élève recopie la réponse trouvée pour les multiples de 2 sans changer de critère.
+  <br>*Erreur visée :* L'élève applique le critère des multiples de 2, le chiffre des unités pair, au lieu de celui des multiples de 5.
 
 *Corrigé.* (1) Un nombre est un multiple de 5 lorsque son chiffre des unités est 0 ou 5. Deux chiffres sont donc possibles, contre cinq pour les multiples de 2. (2) 34 se termine par 4 : non. 87 se termine par 7 : non. (3) 45 se termine par 5 : oui, 45 = 5 × 9. (4) 60 se termine par 0 : oui, 60 = 5 × 12. (5) Réponse : 45 et 60. Remarque : 60 est à la fois multiple de 2 et multiple de 5.
 
@@ -1086,11 +1086,11 @@ Le nombre 27 985 est un multiple de 5, mais ce n'est pas un multiple de 10.
 
 **EX-A014-E-03** — entrainement, numerique, 90 s
 
-Un livreur compte ses colis de 5 en 5. Écris le plus grand multiple de 5 plus petit que 8 000.
+Écris le plus grand multiple de 5 qui soit plus petit que 8 000.
 
 **Réponse :** 7995
 
-*Corrigé.* (1) Les multiples de 5 se terminent par 0 ou par 5. (2) 8 000 est bien un multiple de 5, mais il n'est pas plus petit que 8 000 : il est écarté. (3) On recule : 7 999, 7 998, 7 997, 7 996, puis 7 995. (4) 7 995 se termine par 5 : c'est un multiple de 5, et 7 995 = 5 × 1 599. (5) Réponse : 7 995.
+*Corrigé.* (1) Les multiples de 5 se terminent par 0 ou par 5. (2) 8 000 est bien un multiple de 5, mais il n'est pas plus petit que 8 000 : il est écarté. (3) Juste avant 8 000, les chiffres des unités sont 9, 8, 7, 6, puis 5 : le premier qui convient est 5. (4) 7 995 se termine par 5 : c'est un multiple de 5, et 7 995 = 5 × 1 599. (5) Réponse : 7 995.
 
 *Indice.* Recule à partir de 8 000 jusqu'au premier nombre terminé par 0 ou par 5.
 
@@ -1138,7 +1138,7 @@ Une demi-droite est graduée de 1 000 en 1 000 à partir de 0. Quel nombre est �
 
 **EX-A028-D-02** — decouverte, qcm, 75 s
 
-Sur la même demi-droite graduée de 1 000 en 1 000 à partir de 0, où faut-il placer le nombre 3 500 ?
+Une demi-droite est graduée de 1 000 en 1 000 à partir de 0. Où faut-il placer le nombre 3 500 ?
 
 - **a.** Juste au milieu entre les graduations 3 000 et 4 000 ✅
 - **b.** Sur la graduation 3 000
@@ -1172,7 +1172,7 @@ Une demi-droite est graduée de 20 en 20 à partir de 0. Entre quelles deux grad
 
 **EX-A028-E-03** — entrainement, vrai_faux, 90 s
 
-Sur une demi-droite graduée de 500 en 500, trois graduations séparent le point d'abscisse 2 500 du point d'abscisse 4 000.
+Sur une demi-droite graduée de 500 en 500, il faut avancer de trois intervalles pour aller du point d'abscisse 2 500 au point d'abscisse 4 000.
 
 **Réponse :** True
 
@@ -1182,7 +1182,7 @@ Sur une demi-droite graduée de 500 en 500, trois graduations séparent le point
 
 **EX-A028-M-01** — maitrise, numerique, 180 s
 
-Une demi-droite est graduée régulièrement à partir de 0. La troisième graduation porte le nombre 1 200. Quel nombre porte la cinquième ?
+Une demi-droite est graduée régulièrement à partir de 0. La troisième graduation après 0 porte le nombre 1 200. Quel nombre porte la cinquième graduation après 0 ?
 
 **Réponse :** 2000
 
@@ -1190,19 +1190,15 @@ Une demi-droite est graduée régulièrement à partir de 0. La troisième gradu
 
 *Indice.* Cherche d'abord de combien on avance en passant d'une graduation à la suivante.
 
-**EX-A028-M-02** — maitrise, qcm, 150 s
+**EX-A028-M-02** — maitrise, vrai_faux, 150 s
 
-Une demi-droite va de 0 à 100 000 et elle est graduée de 10 000 en 10 000. Où placer 9 500 ?
+Une demi-droite va de 0 à 100 000 et elle est graduée de 10 000 en 10 000. Sarah place le nombre 9 500 juste après la graduation 10 000.
 
-- **a.** Entre 0 et 10 000, tout près de la graduation 10 000 ✅
-- **b.** Entre 9 000 et 10 000
-  <br>*Erreur visée :* L'élève cherche une graduation 9 000, qui n'existe pas ici : la première graduation après 0 est 10 000.
-- **c.** Entre 10 000 et 20 000
-  <br>*Erreur visée :* L'élève arrondit 9 500 à 10 000 puis place le point après cette graduation, alors que 9 500 est plus petit que 10 000.
+**Réponse :** False
 
-*Corrigé.* (1) Les graduations sont 0, 10 000, 20 000, et ainsi de suite jusqu'à 100 000. (2) 9 500 est plus petit que 10 000 : il se trouve donc dans le tout premier intervalle, celui qui part de 0. (3) Il en est très proche : il manque seulement 500 pour atteindre 10 000, soit un vingtième de l'intervalle. (4) Le point se place entre 0 et 10 000, juste avant la graduation 10 000.
+*Corrigé.* (1) Les graduations sont 0, 10 000, 20 000, et ainsi de suite jusqu'à 100 000. (2) 9 500 est plus petit que 10 000 : il ne peut pas se trouver après cette graduation. (3) Il manque 500 pour atteindre 10 000, soit un vingtième de l'intervalle : le point est donc très près de la graduation, mais avant elle. (4) Sarah a tort : 9 500 se place entre 0 et 10 000, juste avant la graduation 10 000.
 
-*Indice.* 9 500 est-il plus grand ou plus petit que la première graduation après 0 ?
+*Indice.* 9 500 est-il plus grand ou plus petit que 10 000 ?
 
 ---
 
@@ -1254,13 +1250,13 @@ Léa a dépensé le tiers de son argent de poche, soit 7 €. Combien d'euros av
 
 **EX-C027-D-01** — decouverte, numerique, 60 s
 
-Complète : 7/4 = 1 + …/4
+Complète : 6/4 = 1 + …/4
 
-**Réponse :** 3
+**Réponse :** 2
 
-*Corrigé.* (1) Un tout entier vaut 4 quarts : 1 = 4/4. (2) Dans 7/4, on prélève ces 4 quarts : il en reste 7 - 4 = 3. (3) Donc 7/4 = 4/4 + 3/4 = 1 + 3/4. (4) La réponse est 3.
+*Corrigé.* (1) Un tout entier vaut 4 quarts. (2) 6/4 contient 6 quarts : on en prélève 4 pour faire un tout entier. (3) Il reste 6 - 4 = 2 quarts. (4) Donc 6/4 = 1 + 2/4 : le nombre cherché est 2.
 
-*Indice.* Combien de quarts faut-il pour faire un tout entier ? Retire-les des 7 quarts.
+*Indice.* Combien de quarts font un tout entier ? Combien en reste-t-il ensuite ?
 
 **EX-C027-D-02** — decouverte, texte, 75 s
 
@@ -1272,13 +1268,23 @@ Complète : 7/4 = 1 + …/4
 
 *Indice.* Combien de tiers dans un tout entier ? Combien en reste-t-il ensuite ?
 
+**EX-C027-D-03** — decouverte, numerique, 75 s
+
+Complète : 1 + 1/3 = …/3
+
+**Réponse :** 4
+
+*Corrigé.* (1) Un tout entier vaut 3 tiers. (2) On ajoute le tiers supplémentaire : 3 + 1 = 4 tiers. (3) Donc 1 + 1/3 = 4/3 : le numérateur cherché est 4.
+
+*Indice.* Commence par écrire le tout entier en tiers.
+
 **EX-C027-E-01** — entrainement, texte, 90 s
 
 Écris 11/4 comme la somme d'un entier et d'une fraction inférieure à 1. Écris ta réponse sous la forme d'un entier plus une fraction.
 
 **Réponse :** 2 + 3/4
 
-*Corrigé.* (1) Un tout vaut 4 quarts. On cherche combien de touts entiers tiennent dans 11 quarts. (2) 11 = 4 + 4 + 3, donc deux touts entiers, et il reste 3 quarts. (3) Autrement dit : 11 ÷ 4 = 2 reste 3. (4) Donc 11/4 = 2 + 3/4.
+*Corrigé.* (1) Un tout vaut 4 quarts. On cherche combien de touts entiers tiennent dans 11 quarts. (2) 11 = 4 + 4 + 3, donc deux touts entiers, et il reste 3 quarts. (3) Autrement dit : deux touts, c'est 2 × 4 = 8 quarts, et il en reste 11 - 8 = 3. (4) Donc 11/4 = 2 + 3/4.
 
 *Indice.* Combien de fois 4 tient-il dans 11 ? Et que reste-t-il ?
 
@@ -1309,22 +1315,22 @@ Un élève écrit : 9/4 = 1 + 9/4. Que penses-tu de son écriture ?
 - **a.** Elle est fausse : il a ajouté un tout sans le retirer de la fraction ✅
 - **b.** Elle est juste
   <br>*Erreur visée :* L'élève ne vérifie pas que les deux membres de l'égalité représentent la même quantité.
-- **c.** Elle est fausse, il fallait écrire 1 + 5/4
-  <br>*Erreur visée :* L'élève retire bien un tout mais se trompe : il retire 4 du dénominateur au lieu du numérateur, ou compte un seul tout au lieu de deux.
+- **c.** Elle est fausse, il fallait écrire 2 + 5/4
+  <br>*Erreur visée :* L'élève compte correctement les deux touts entiers mais oublie de les retirer du numérateur : il conserve cinq quarts après n'avoir prélevé qu'un seul tout.
 
-*Corrigé.* (1) À droite, 1 + 9/4 vaut davantage que 9/4 tout seul : l'égalité est donc forcément fausse. (2) L'erreur : il a bien vu qu'il y avait au moins un tout, mais il ne l'a pas retiré de la fraction. (3) La bonne décomposition : un tout vaut 4 quarts, et 9 = 4 + 4 + 1, soit deux touts et un quart. (4) Donc 9/4 = 2 + 1/4. (5) La proposition c est fausse elle aussi : 1 + 5/4 vaut bien 9/4, mais 5/4 n'est pas inférieure à 1, donc la décomposition demandée n'est pas terminée.
+*Corrigé.* (1) À droite, 1 + 9/4 vaut davantage que 9/4 tout seul : l'égalité est donc forcément fausse. (2) L'erreur : il a bien vu qu'il y avait au moins un tout, mais il ne l'a pas retiré de la fraction. (3) La bonne décomposition : un tout vaut 4 quarts, et 9 = 4 + 4 + 1, soit deux touts et un quart. (4) Donc 9/4 = 2 + 1/4. (5) La proposition c est fausse aussi : 2 + 5/4 vaut 13/4, ce qui est plus grand que 9/4.
 
 *Indice.* Compare les deux côtés de l'égalité : représentent-ils vraiment la même quantité ?
 
 **EX-C027-M-02** — maitrise, texte, 120 s
 
-Une recette demande 9/4 de litre de lait. Combien de litres entiers faut-il verser, et quelle fraction de litre en plus ? Écris ta réponse sous la forme d'un entier plus une fraction.
+Une recette demande 11/3 de litre de lait. Combien de litres entiers faut-il verser, et quelle fraction de litre en plus ? Écris ta réponse sous la forme d'un entier plus une fraction.
 
-**Réponse :** 2 + 1/4
+**Réponse :** 3 + 2/3
 
-*Corrigé.* (1) Un litre vaut 4 quarts de litre. (2) On cherche combien de litres entiers tiennent dans 9 quarts : 9 ÷ 4 = 2 reste 1. (3) Il faut donc verser 2 litres entiers, plus 1/4 de litre. (4) 9/4 = 2 + 1/4.
+*Corrigé.* (1) Un litre vaut 3 tiers de litre. (2) Trois litres entiers, c'est 3 × 3 = 9 tiers ; il reste 11 - 9 = 2 tiers. (3) Il faut donc verser 3 litres entiers, plus 2/3 de litre. (4) 11/3 = 3 + 2/3.
 
-*Indice.* Combien de quarts de litre dans un litre entier ? Combien de litres entiers peux-tu remplir avec 9 quarts ?
+*Indice.* Combien de tiers de litre font un litre entier ? Et deux, et trois ?
 
 ---
 
@@ -1336,21 +1342,21 @@ Une recette demande 9/4 de litre de lait. Combien de litres entiers faut-il vers
 
 **EX-C029-D-01** — decouverte, qcm, 60 s
 
-Entre quels entiers consécutifs se trouve 7/4 ?
+Entre quels entiers consécutifs se trouve 9/4 ?
 
-- **a.** entre 1 et 2 ✅
-- **b.** entre 7 et 8
+- **a.** entre 2 et 3 ✅
+- **b.** entre 9 et 10
   <br>*Erreur visée :* L'élève lit le numérateur comme s'il s'agissait du nombre lui-même.
 - **c.** entre 4 et 5
   <br>*Erreur visée :* L'élève lit le dénominateur comme s'il s'agissait du nombre lui-même.
 
-*Corrigé.* (1) Un tout entier vaut 4 quarts, deux touts valent 8 quarts. (2) 7/4 contient plus de 4 quarts, donc plus de 1, mais moins de 8 quarts, donc moins de 2. (3) Autrement dit 7/4 = 1 + 3/4. (4) Donc 1 < 7/4 < 2.
+*Corrigé.* (1) Un tout entier vaut 4 quarts, deux touts valent 8 quarts, trois touts valent 12 quarts. (2) 9/4 contient plus de 8 quarts, donc plus de 2, mais moins de 12 quarts, donc moins de 3. (3) Autrement dit 9/4 = 2 + 1/4. (4) Donc 2 < 9/4 < 3.
 
-*Indice.* Combien de quarts font un tout entier ? Et deux touts entiers ?
+*Indice.* Combien de quarts font deux touts entiers ? Et trois touts entiers ?
 
 **EX-C029-D-02** — decouverte, numerique, 60 s
 
-Complète l'encadrement avec un nombre entier : 1 < rac{5}{3} < …
+Complète l'encadrement avec un nombre entier : 1 < 5/3 < …
 
 **Réponse :** 2
 
@@ -1384,37 +1390,37 @@ Entre quels entiers consécutifs se trouve 17/5 ?
 
 **EX-C029-E-03** — entrainement, numerique, 90 s
 
-Complète l'encadrement avec un nombre entier : 2 < rac{13}{6} < …
+Complète l'encadrement avec un nombre entier : … < 17/5 < 4
 
 **Réponse :** 3
 
-*Corrigé.* (1) Deux touts valent 2 × 6 = 12 sixièmes, trois touts valent 18 sixièmes. (2) 13 est compris entre 12 et 18, donc la fraction est comprise entre 2 et 3. (3) 13/6 = 2 + 1/6. (4) L'entier cherché est 3.
+*Corrigé.* (1) Un tout vaut 5 cinquièmes, trois touts valent 15 cinquièmes, quatre touts valent 20 cinquièmes. (2) 17 cinquièmes, c'est plus que 15 cinquièmes : la fraction est plus grande que 3. (3) 17/5 = 3 + 2/5. (4) L'entier cherché est 3, et l'encadrement s'écrit 3 < 17/5 < 4.
 
-*Indice.* Combien de sixièmes dans 2 touts ? Et dans 3 touts ?
+*Indice.* Cherche combien de touts entiers tiennent dans 17 cinquièmes.
 
 **EX-C029-M-01** — maitrise, qcm, 120 s
 
-Peut-on encadrer 8/4 par deux entiers consécutifs, comme on l'a fait pour 7/4 ?
+Léo calcule 8 ÷ 4 = 2, sans reste. Peut-on trouver deux entiers consécutifs entre lesquels 8/4 se trouve, l'un strictement plus petit et l'autre strictement plus grand ?
 
 - **a.** Non, car 8/4 est exactement égal à 2 ✅
 - **b.** Oui, entre 1 et 2
-  <br>*Erreur visée :* L'élève applique la méthode sans remarquer que la division tombe juste.
+  <br>*Erreur visée :* L'élève applique la méthode d'encadrement sans regarder que la division tombe juste, et place la fraction juste en dessous de sa valeur.
 - **c.** Oui, entre 2 et 3
-  <br>*Erreur visée :* L'élève applique la méthode mécaniquement et place le nombre au-dessus de sa valeur réelle.
+  <br>*Erreur visée :* L'élève applique la méthode d'encadrement sans regarder que la division tombe juste, et place la fraction juste au-dessus de sa valeur.
 
-*Corrigé.* (1) On calcule : 8 ÷ 4 = 2, sans reste. (2) 8/4 = 2 exactement : c'est un nombre entier, pas un nombre situé entre deux entiers. (3) Il n'y a donc pas d'encadrement strict possible. (4) Le repère : l'encadrement strict n'existe que si la division du numérateur par le dénominateur laisse un reste.
+*Corrigé.* (1) 8 ÷ 4 = 2, sans reste. (2) 8/4 = 2 exactement : c'est un nombre entier, il tombe pile sur une graduation. (3) 2 n'est ni plus grand que 2, ni plus petit que 2 : aucun couple d'entiers consécutifs ne peut l'entourer strictement. (4) Le repère à retenir : on ne peut encadrer strictement une fraction que si la division du numérateur par le dénominateur laisse un reste.
 
 *Indice.* Effectue la division du numérateur par le dénominateur. Reste-t-il quelque chose ?
 
 **EX-C029-M-02** — maitrise, texte, 150 s
 
-Trouve une fraction de dénominateur 5 comprise entre 3 et 4. Écris ta réponse sous la forme numérateur/dénominateur.
+Trouve une fraction de dénominateur 5 comprise entre 2 et 3. Écris ta réponse avec une barre, par exemple 7/5.
 
-**Réponse :** 17/5
+**Réponse :** 12/5
 
-*Corrigé.* (1) On raisonne à l'envers : on cherche le numérateur. (2) 3 = 15/5 et 4 = 20/5. (3) Il faut donc un numérateur strictement compris entre 15 et 20. (4) Par exemple 17 : 17/5 = 3 + 2/5, bien situé entre 3 et 4. (5) 16, 18 et 19 conviennent également.
+*Corrigé.* (1) On raisonne à l'envers : on cherche le numérateur. (2) 2 = 10/5 et 3 = 15/5. (3) Il faut donc un numérateur strictement compris entre 10 et 15. (4) Par exemple 12 : 12/5 = 2 + 2/5, bien situé entre 2 et 3. (5) 11, 13 et 14 conviennent également.
 
-*Indice.* Convertis d'abord 3 et 4 en cinquièmes. Quel numérateur peut se glisser entre les deux ?
+*Indice.* Convertis d'abord 2 et 3 en cinquièmes. Quel numérateur peut se glisser entre les deux ?
 
 ---
 
@@ -1426,77 +1432,77 @@ Trouve une fraction de dénominateur 5 comprise entre 3 et 4. Écris ta réponse
 
 **EX-C030-D-01** — decouverte, numerique, 60 s
 
-Une demi-droite est graduée en quarts à partir de 0. Combien d'intervalles faut-il parcourir depuis 0 pour atteindre 7/4 ?
+Une demi-droite est graduée en quarts à partir de 0. Combien de graduations faut-il parcourir depuis 0 pour atteindre 7/4 ?
 
 **Réponse :** 7
 
 *Corrigé.* (1) Chaque intervalle vaut 1/4. (2) Le numérateur indique combien de ces intervalles il faut parcourir. (3) Pour 7/4, il en faut 7. (4) On dépasse alors 1, puisqu'un tout n'en contient que 4.
 
-*Indice.* Le numérateur compte les crans, le dénominateur donne la taille du cran.
+*Indice.* Le numérateur compte les graduations, le dénominateur donne la taille du graduation.
 
 **EX-C030-D-02** — decouverte, texte, 60 s
 
-Une demi-droite est graduée en tiers à partir de 0. Quelle fraction se trouve au 5e cran après 0 ? Écris ta réponse sous la forme numérateur/dénominateur.
+Une demi-droite est graduée en tiers à partir de 0. Quelle fraction se trouve au 5e graduation après 0 ? Écris ta réponse sous la forme numérateur/dénominateur.
 
 **Réponse :** 5/3
 
-*Corrigé.* (1) Graduée en tiers : chaque cran vaut 1/3. (2) Au 5e cran, on a parcouru 5 tiers. (3) L'abscisse du point est donc 5/3. (4) Ce point se situe entre 1 et 2, car 5/3 = 1 + 2/3.
+*Corrigé.* (1) Graduée en tiers : chaque graduation vaut 1/3. (2) Au 5e graduation, on a parcouru 5 tiers. (3) L'abscisse du point est donc 5/3. (4) Ce point se situe entre 1 et 2, car 5/3 = 1 + 2/3.
 
 *Indice.* Cinq fois un tiers, cela fait combien de tiers ?
 
 **EX-C030-E-01** — entrainement, qcm, 90 s
 
-Sur une demi-droite graduée, où se situe le point d'abscisse 9/4 ?
+Une demi-droite est graduée en cinquièmes à partir de 0. Entre quels deux nombres entiers se situe le point d'abscisse 7/5 ?
 
-- **a.** entre 2 et 3 ✅
+- **a.** entre 1 et 2 ✅
 - **b.** entre 0 et 1
-  <br>*Erreur visée :* L'élève croit qu'une fraction est toujours inférieure à 1.
-- **c.** entre 9 et 10
-  <br>*Erreur visée :* L'élève lit le numérateur comme s'il donnait la position.
+  <br>*Erreur visée :* L'élève applique la règle apprise au CE2, où toutes les fractions étaient inférieures à 1, et place donc tout point d'abscisse fractionnaire dans le premier intervalle.
+- **c.** entre 7 et 8
+  <br>*Erreur visée :* L'élève lit le numérateur comme un entier et ignore le dénominateur : il place le point comme s'il s'agissait du nombre 7.
 
-*Corrigé.* (1) Un tout vaut 4 quarts, deux touts valent 8 quarts, trois touts valent 12 quarts. (2) 9/4 contient 9 quarts : c'est plus que 8, donc plus que 2, et moins que 12, donc moins que 3. (3) 9/4 = 2 + 1/4. (4) Le point se situe donc entre 2 et 3, juste après 2.
+*Corrigé.* (1) Un tout vaut 5 cinquièmes, deux touts valent 10 cinquièmes. (2) 7/5 contient 7 cinquièmes : c'est plus que 5, donc plus que 1, et moins que 10, donc moins que 2. (3) 7/5 = 1 + 2/5. (4) Le point se situe donc entre 1 et 2, juste après 1.
 
-*Indice.* Combien de quarts pour atteindre 2 ? Et pour atteindre 3 ?
+*Indice.* Combien de cinquièmes pour atteindre 1 ? Et pour atteindre 2 ?
 
 **EX-C030-E-02** — entrainement, texte, 75 s
 
-Une demi-droite est graduée en cinquièmes. Un point se trouve au 12e cran après 0. Quelle est son abscisse ? Écris ta réponse sous la forme numérateur/dénominateur.
+Une demi-droite est graduée en cinquièmes. Un point se trouve au 12e graduation après 0. Quelle est son abscisse ? Écris ta réponse sous la forme numérateur/dénominateur.
 
 **Réponse :** 12/5
 
-*Corrigé.* (1) Chaque cran vaut 1/5. (2) Au 12e cran, on a parcouru 12 cinquièmes : l'abscisse est 12/5. (3) On peut vérifier sa position : 12/5 = 2 + 2/5, donc le point est entre 2 et 3.
+*Corrigé.* (1) Chaque graduation vaut 1/5. (2) Au 12e graduation, on a parcouru 12 cinquièmes : l'abscisse est 12/5. (3) On peut vérifier sa position : 12/5 = 2 + 2/5, donc le point est entre 2 et 3.
 
-*Indice.* Le nombre de crans donne directement le numérateur.
+*Indice.* Le nombre de graduations donne directement le numérateur.
 
 **EX-C030-E-03** — entrainement, numerique, 90 s
 
-Une demi-droite est graduée en demis. À quel cran après 0 se trouve le nombre entier 3 ?
+Une demi-droite est graduée en demis. À quel graduation après 0 se trouve le nombre entier 3 ?
 
 **Réponse :** 6
 
-*Corrigé.* (1) Chaque cran vaut 1/2. (2) Un tout entier vaut 2 demis, donc 3 touts valent 3 × 2 = 6 demis. (3) 3 = 6/2 : le nombre 3 se trouve au 6e cran. (4) Les nombres entiers tombent bien sur des graduations, tous les 2 crans ici.
+*Corrigé.* (1) Chaque graduation vaut 1/2. (2) Un tout entier vaut 2 demis, donc 3 touts valent 3 × 2 = 6 demis. (3) 3 = 6/2 : le nombre 3 se trouve au 6e graduation. (4) Les nombres entiers tombent bien sur des graduations, tous les 2 graduations ici.
 
 *Indice.* Combien de demis dans un tout entier ? Et dans trois ?
 
 **EX-C030-M-01** — maitrise, texte, 120 s
 
-Une demi-droite est graduée en quarts. Un point se trouve 3 crans après le nombre 2. Quelle est son abscisse ? Écris ta réponse sous la forme numérateur/dénominateur.
+Une demi-droite est graduée en quarts. Un point se trouve 3 graduations après le nombre 2. Quelle est son abscisse ? Écris ta réponse sous la forme numérateur/dénominateur.
 
 **Réponse :** 11/4
 
-*Corrigé.* (1) On commence par exprimer 2 en quarts : 2 = 8/4. (2) On avance ensuite de 3 crans, soit 3 quarts de plus : 8 + 3 = 11 quarts. (3) L'abscisse du point est 11/4. (4) Vérification : 11/4 = 2 + 3/4, ce qui correspond bien à 3 crans après 2.
+*Corrigé.* (1) On commence par exprimer 2 en quarts : 2 = 8/4. (2) On avance ensuite de 3 graduations, soit 3 quarts de plus : 8 + 3 = 11 quarts. (3) L'abscisse du point est 11/4. (4) Vérification : 11/4 = 2 + 3/4, ce qui correspond bien à 3 graduations après 2.
 
-*Indice.* Convertis d'abord le nombre 2 en quarts, puis ajoute les crans.
+*Indice.* Convertis d'abord le nombre 2 en quarts, puis ajoute les graduations.
 
 **EX-C030-M-02** — maitrise, texte, 120 s
 
-Sur une demi-droite graduée en tiers, quelle fraction se trouve au cran situé juste avant le nombre 2 ? Écris ta réponse sous la forme numérateur/dénominateur.
+Sur une demi-droite graduée en sixièmes, quelle fraction se trouve à la graduation située juste avant le nombre 2 ? Écris ta réponse avec une barre, par exemple 7/6.
 
-**Réponse :** 5/3
+**Réponse :** 11/6
 
-*Corrigé.* (1) On exprime 2 en tiers : 2 = 6/3, donc le nombre 2 est au 6e cran. (2) Le cran juste avant est le 5e. (3) L'abscisse cherchée est donc 5/3. (4) Vérification : 5/3 = 1 + 2/3, un tiers de moins que 2.
+*Corrigé.* (1) Un tout vaut 6 sixièmes. (2) Deux touts valent donc 2 × 6 = 12 sixièmes : 2 = 12/6. (3) La graduation juste avant est la onzième. (4) C'est 11/6, c'est-à-dire 1 + 5/6.
 
-*Indice.* À quel cran se trouve le nombre 2 ? Recule ensuite d'un seul cran.
+*Indice.* Combien de sixièmes faut-il pour atteindre 2 ? Recule ensuite d'une graduation.
 
 ---
 
@@ -1523,11 +1529,11 @@ Marc écrit 3 × 4 = 12. Que peut-il en déduire sur les diviseurs de 12 ?
 
 **EX-A026-D-02** — decouverte, texte, 120 s
 
-Marc cherche maintenant tous les diviseurs de 12. Écris-les du plus petit au plus grand, séparés par des virgules.
+Écris tous les diviseurs de 12, du plus petit au plus grand. Sépare-les par des virgules.
 
 **Réponse :** 1, 2, 3, 4, 6, 12
 
-*Corrigé.* (1) On cherche toutes les multiplications de deux entiers qui donnent 12. (2) 1 × 12 = 12, 2 × 6 = 12, 3 × 4 = 12. (3) 5 ne convient pas : 12 ÷ 5 ne tombe pas juste. (4) Chaque multiplication donne deux diviseurs : 1 et 12, puis 2 et 6, puis 3 et 4. (5) Rangés du plus petit au plus grand : 1, 2, 3, 4, 6, 12. Il y en a six.
+*Corrigé.* (1) On cherche toutes les multiplications de deux entiers qui donnent 12. (2) 1 × 12 = 12, 2 × 6 = 12, 3 × 4 = 12. (3) 5 ne convient pas : aucun entier multiplié par 5 ne donne 12 (5 × 2 = 10 et 5 × 3 = 15). (4) Chaque multiplication donne deux diviseurs : 1 et 12, puis 2 et 6, puis 3 et 4. (5) Rangés du plus petit au plus grand : 1, 2, 3, 4, 6, 12. Il y en a six.
 
 *Indice.* Essaie 1, puis 2, puis 3… jusqu'à retomber sur un diviseur déjà écrit.
 
@@ -1537,7 +1543,7 @@ Marc cherche maintenant tous les diviseurs de 12. Écris-les du plus petit au pl
 
 **Réponse :** 1, 2, 4, 7, 14, 28
 
-*Corrigé.* (1) On teste les nombres dans l'ordre. (2) 1 × 28 = 28 : 1 et 28 sont des diviseurs. (3) 2 × 14 = 28 : 2 et 14 sont des diviseurs. (4) 3 ne convient pas, car 28 ÷ 3 ne tombe pas juste. (5) 4 × 7 = 28 : 4 et 7 sont des diviseurs. (6) 5 et 6 ne conviennent pas. À partir de 7, on retrouve des diviseurs déjà écrits : on peut s'arrêter. (7) Réponse : 1, 2, 4, 7, 14, 28.
+*Corrigé.* (1) On teste les nombres dans l'ordre. (2) 1 × 28 = 28 : 1 et 28 sont des diviseurs. (3) 3 ne convient pas : 3 × 9 = 27 et 3 × 10 = 30, on saute 28. (4) 5 et 6 ne conviennent pas non plus. Au-delà de 7, on ne trouverait que des diviseurs déjà écrits, puisqu'ils sont les partenaires de 1, 2 et 4 : on peut s'arrêter. (5) 4 × 7 = 28 : 4 et 7 sont des diviseurs. (6) 5 et 6 ne conviennent pas. À partir de 7, on retrouve des diviseurs déjà écrits : on peut s'arrêter. (7) Réponse : 1, 2, 4, 7, 14, 28.
 
 *Indice.* Chaque fois que tu trouves un diviseur, son partenaire de multiplication en est un aussi.
 
@@ -1555,7 +1561,17 @@ Zoé cherche tous les diviseurs de 18. Quelle liste est la bonne ?
 
 *Indice.* N'oublie ni 1 ni le nombre lui-même.
 
-**EX-A026-E-03** — entrainement, numerique, 120 s
+**EX-A026-E-03** — entrainement, texte, 120 s
+
+Léa cherche tous les diviseurs de 23. Écris-les, séparés par des virgules.
+
+**Réponse :** 1, 23
+
+*Corrigé.* (1) On teste les nombres un par un, comme d'habitude. (2) 2 : 23 est impair, le partage ne tombe pas juste. (3) 3 : 3 × 7 = 21, il resterait 2. 4 : 4 × 5 = 20, il resterait 3. (4) 5 : 23 ne se termine ni par 0 ni par 5, donc non. (5) Inutile d'aller plus loin : 5 × 5 = 25 dépasse déjà 23, les diviseurs suivants auraient tous été trouvés en partenaire. (6) Il ne reste que la multiplication 1 × 23 = 23. (7) 23 n'a donc que deux diviseurs, 1 et 23. Certains nombres en ont très peu : ce n'est pas une erreur.
+
+*Indice.* Teste 2, 3, 4 puis 5. Combien de partages tombent juste ?
+
+**EX-A026-M-01** — maitrise, numerique, 150 s
 
 Léo range 100 jetons en boîtes égales et veut au moins deux boîtes. Quel est le plus grand nombre de jetons par boîte ?
 
@@ -1563,17 +1579,7 @@ Léo range 100 jetons en boîtes égales et veut au moins deux boîtes. Quel est
 
 *Corrigé.* (1) Le nombre de jetons par boîte doit être un diviseur de 100. (2) Les diviseurs de 100 sont 1, 2, 4, 5, 10, 20, 25, 50 et 100. (3) 100 est écarté : il ne donnerait qu'une seule boîte, or Léo en veut au moins deux. (4) Le plus grand diviseur restant est 50. (5) 100 = 2 × 50 : Léo fait 2 boîtes de 50 jetons. Réponse : 50.
 
-*Indice.* Quel est le plus petit nombre de boîtes acceptable ? Pars de là.
-
-**EX-A026-M-01** — maitrise, texte, 150 s
-
-Léa cherche tous les diviseurs de 23. Écris-les, séparés par des virgules.
-
-**Réponse :** 1, 23
-
-*Corrigé.* (1) On teste les nombres un par un, comme d'habitude. (2) 2 : 23 est impair, la division ne tombe pas juste. (3) 3 : 3 × 7 = 21, il resterait 2. 4 : 4 × 5 = 20, il resterait 3. (4) 5 : 23 ne se termine ni par 0 ni par 5, donc non. (5) Inutile d'aller plus loin : 5 × 5 = 25 dépasse déjà 23, les diviseurs suivants auraient tous été trouvés en partenaire. (6) Il ne reste que la multiplication 1 × 23 = 23. (7) 23 n'a donc que deux diviseurs, 1 et 23. Certains nombres en ont très peu : ce n'est pas une erreur.
-
-*Indice.* Teste 2, 3, 4 puis 5. Combien de divisions tombent juste ?
+*Indice.* Le nombre de jetons par boîte doit être un diviseur de 100. Lesquels sont possibles ?
 
 **EX-A026-M-02** — maitrise, numerique, 150 s
 
@@ -1596,35 +1602,45 @@ Un jardinier plante 24 fleurs en rangées égales. Il veut plus de 4 rangées et
 
 **EX-A027-D-01** — decouverte, texte, 120 s
 
-Les diviseurs de 12 sont 1, 2, 3, 4, 6 et 12. Parmi eux, écris ceux qui sont aussi des diviseurs de 18.
+Les diviseurs de 12 sont 1, 2, 3, 4, 6 et 12. Parmi eux, écris ceux qui sont aussi des diviseurs de 20.
 
-**Réponse :** 1, 2, 3, 6
+**Réponse :** 1, 2, 4
 
-*Corrigé.* (1) On reprend la liste un nombre à la fois et on teste chacun sur 18. (2) 18 ÷ 1 = 18, 18 ÷ 2 = 9, 18 ÷ 3 = 6 et 18 ÷ 6 = 3 : ces quatre divisions tombent juste. (3) 18 ÷ 4 ne tombe pas juste : 4 × 4 = 16, il resterait 2. (4) 18 ÷ 12 non plus : 12 × 1 = 12, il resterait 6. (5) Les diviseurs communs à 12 et à 18 sont donc 1, 2, 3 et 6.
+*Corrigé.* (1) On reprend la liste un nombre à la fois et on teste chacun sur 20. (2) 20 = 1 × 20, 20 = 2 × 10 et 20 = 4 × 5 : ces trois multiplications tombent juste. (3) 3 ne convient pas : 3 × 6 = 18 et 3 × 7 = 21, on saute 20. (4) 6 non plus : 6 × 3 = 18 et 6 × 4 = 24. Quant à 12, il est plus grand que la moitié de 20. (5) Les diviseurs communs à 12 et à 20 sont donc 1, 2 et 4.
 
 *Indice.* Prends les nombres de la liste un par un et divise 18 par chacun.
 
 **EX-A027-D-02** — decouverte, qcm, 90 s
 
-Les nombres 12 et 18 ont plusieurs diviseurs communs. Quel est le plus grand d'entre eux ?
+Les nombres 12 et 20 ont plusieurs diviseurs communs. Quel est le plus grand d'entre eux ?
 
-- **a.** 6 ✅
-- **b.** 9
-  <br>*Erreur visée :* L'élève prend le plus grand diviseur de 18 avant 18, sans vérifier qu'il divise aussi 12 ; or 12 ÷ 9 laisse un reste de 3.
-- **c.** 4
-  <br>*Erreur visée :* L'élève prend un diviseur de 12 sans vérifier qu'il divise aussi 18 ; or 18 ÷ 4 laisse un reste de 2.
+- **a.** 4 ✅
+- **b.** 10
+  <br>*Erreur visée :* L'élève prend un diviseur de 20 sans vérifier qu'il divise aussi 12 : or aucun entier multiplié par 10 ne donne 12.
+- **c.** 6
+  <br>*Erreur visée :* L'élève prend un diviseur de 12 sans vérifier qu'il divise aussi 20 : or 6 × 3 = 18 et 6 × 4 = 24, on saute 20.
 
-*Corrigé.* (1) Diviseurs de 12 : 1, 2, 3, 4, 6, 12. Diviseurs de 18 : 1, 2, 3, 6, 9, 18. (2) On écrit les deux listes l'une sous l'autre et on garde ce qui figure dans les deux : 1, 2, 3 et 6. (3) Parmi ces diviseurs communs, le plus grand est 6. (4) 9 n'apparaît que dans la liste de 18, et 4 n'apparaît que dans celle de 12 : ni l'un ni l'autre n'est commun.
+*Corrigé.* (1) Diviseurs de 12 : 1, 2, 3, 4, 6, 12. Diviseurs de 20 : 1, 2, 4, 5, 10, 20. (2) On écrit les deux listes l'une sous l'autre et on garde ce qui figure dans les deux : 1, 2 et 4. (3) Parmi ces diviseurs communs, le plus grand est 4. (4) 10 n'apparaît que dans la liste de 20, et 6 n'apparaît que dans celle de 12 : ni l'un ni l'autre n'est commun.
 
 *Indice.* Écris les deux listes de diviseurs l'une sous l'autre, puis compare-les.
 
+**EX-A027-D-03** — decouverte, texte, 90 s
+
+Les premiers multiples de 3 sont 3, 6, 9, 12, 15, 18. Parmi eux, écris ceux qui sont aussi des multiples de 6.
+
+**Réponse :** 6, 12, 18
+
+*Corrigé.* (1) Un multiple commun à 3 et à 6 doit se trouver à la fois dans la table de 3 et dans la table de 6. (2) Table de 6 : 6, 12, 18, 24… (3) Dans la liste donnée, 6, 12 et 18 sont dans la table de 6. (4) 3, 9 et 15 ne le sont pas : ils sont impairs, et tous les multiples de 6 sont pairs. (5) Les multiples communs cherchés sont 6, 12 et 18.
+
+*Indice.* Prends les nombres de la liste un par un : lesquels sont dans la table de 6 ?
+
 **EX-A027-E-01** — entrainement, texte, 150 s
 
-Écris tous les diviseurs communs à 24 et à 30. Sépare-les par des virgules.
+Écris tous les diviseurs communs à 18 et à 24. Sépare-les par des virgules.
 
 **Réponse :** 1, 2, 3, 6
 
-*Corrigé.* (1) Diviseurs de 24 : 1, 2, 3, 4, 6, 8, 12, 24. (2) Diviseurs de 30 : 1, 2, 3, 5, 6, 10, 15, 30. (3) On compare les deux listes. (4) Les nombres présents dans les deux sont 1, 2, 3 et 6. (5) Réponse : 1, 2, 3, 6.
+*Corrigé.* (1) Diviseurs de 18 : 1, 2, 3, 6, 9, 18. (2) Diviseurs de 24 : 1, 2, 3, 4, 6, 8, 12, 24. (3) On compare les deux listes. (4) Les nombres présents dans les deux sont 1, 2, 3 et 6. (5) Réponse : 1, 2, 3, 6.
 
 *Indice.* Écris d'abord les deux listes complètes, puis entoure ce qu'elles ont en commun.
 
@@ -1660,7 +1676,7 @@ Un bus part toutes les 12 minutes, un autre toutes les 8 minutes. Ils partent en
 
 **EX-A027-M-02** — maitrise, numerique, 180 s
 
-Un pâtissier a 20 éclairs et 30 tartelettes. Il prépare des paquets identiques et utilise tout. Quel est le plus grand nombre de paquets ?
+Un pâtissier a 20 éclairs et 30 tartelettes. Il prépare des paquets contenant tous le même nombre d'éclairs et le même nombre de tartelettes, et il utilise tout. Quel est le plus grand nombre de paquets qu'il peut faire ?
 
 **Réponse :** 10
 
@@ -1696,15 +1712,15 @@ Complète : 3 × 2/5 = …/5
 
 *Indice.* Trois fois deux cinquièmes, cela fait combien de cinquièmes ?
 
-**EX-C031-E-01** — entrainement, texte, 75 s
+**EX-C031-E-01** — entrainement, vrai_faux, 75 s
 
-Calcule 5 × 3/8. Écris ta réponse sous la forme numérateur/dénominateur.
+Le résultat de 5 × 3/8 est plus petit que 1.
 
-**Réponse :** 15/8
+**Réponse :** False
 
-*Corrigé.* (1) On multiplie le numérateur par l'entier : 5 × 3 = 15. (2) Le dénominateur reste 8. (3) 5 × 3/8 = 15/8. (4) Le résultat dépasse 1, puisque 15 > 8.
+*Corrigé.* (1) Multiplier par 5, c'est prendre 5 fois 3/8. (2) 5 × 3/8 = 5 × 3/8 = 15/8. (3) Un tout vaut 8 huitièmes. Or 15 huitièmes, c'est plus que 8 huitièmes. (4) Donc 15/8 est plus grand que 1 : c'est un tout entier, plus 7 huitièmes.
 
-*Indice.* Cinq fois trois huitièmes, cela fait combien de huitièmes ?
+*Indice.* Combien de huitièmes font un tout entier ? Compare avec le numérateur trouvé.
 
 **EX-C031-E-02** — entrainement, qcm, 75 s
 
@@ -1750,7 +1766,7 @@ Une recette demande 2/3 de litre de lait. On la fait 3 fois. Combien de lait fau
 - **c.** 6/9 de litre
   <br>*Erreur visée :* L'élève multiplie numérateur et dénominateur, ce qui redonne la quantité d'une seule recette.
 
-*Corrigé.* (1) 3 × 2/3 = 6/3. (2) 6/3 = 2, car 3 tiers font 1 litre et il y a deux fois 3 tiers. (3) Il faut 2 litres. (4) Contrôle de bon sens : une recette demande un peu moins d'un litre, donc trois recettes doivent demander un peu moins de 3 litres. Les réponses b et c donnent moins d'un litre, ce qui est impossible.
+*Corrigé.* (1) 3 × 2/3 = 6/3. (2) 6/3 = 2, car 3 tiers font 1 litre et il y a deux fois 3 tiers. (3) Il faut 2 litres. (4) Contrôle de bon sens : une recette demande un peu plus d'un demi-litre, donc trois recettes en demandent un peu plus d'un litre et demi. 2 litres est plausible. Les réponses b et c donnent moins d'un litre, soit moins que pour une seule recette : c'est impossible.
 
 *Indice.* Est-ce que trois recettes peuvent demander moins de lait qu'une seule ?
 
@@ -1807,19 +1823,19 @@ Que vaut le tiers de 2 ?
 
 *Indice.* « Le tiers de 2 » se traduit par une division. Laquelle, dans quel ordre ?
 
-**EX-C032-E-03** — entrainement, numerique, 105 s
+**EX-C032-E-03** — entrainement, texte, 105 s
 
-Un ruban de 5 mètres est coupé en 4 morceaux égaux. On cherche la longueur d'un morceau, écrite …/4 de mètre. Quel est le numérateur ?
+Un ruban de 5 mètres est coupé en 4 morceaux égaux. Quelle est la longueur d'un morceau, en mètres ? Écris ta réponse avec une barre.
 
-**Réponse :** 5
+**Réponse :** 5/4
 
-*Corrigé.* (1) Couper 5 mètres en 4 morceaux égaux, c'est calculer 5 ÷ 4. (2) Ce quotient s'écrit 5/4. (3) Le numérateur est 5 : c'est la longueur totale à partager. (4) Chaque morceau mesure un peu plus d'un mètre, puisque 5/4 = 1 + 1/4.
+*Corrigé.* (1) Couper 5 mètres en 4 morceaux égaux, c'est calculer 5 ÷ 4. (2) Ce quotient s'écrit 5/4. (3) Ce qu'on partage donne le numérateur, le nombre de parts donne le dénominateur. (4) Chaque morceau mesure un peu plus d'un mètre, puisque 5/4 = 1 + 1/4.
 
 *Indice.* Ce qu'on partage devient le numérateur, le nombre de parts devient le dénominateur.
 
 **EX-C032-M-01** — maitrise, vrai_faux, 180 s
 
-Prendre les 3/4 d'un gâteau et partager 3 gâteaux entre 4 personnes donnent la même quantité.
+On a des gâteaux tous identiques. Prendre les 3/4 d'un gâteau et partager 3 de ces gâteaux entre 4 personnes donnent la même quantité.
 
 **Réponse :** True
 
@@ -1827,13 +1843,13 @@ Prendre les 3/4 d'un gâteau et partager 3 gâteaux entre 4 personnes donnent la
 
 *Indice.* Écris chaque situation sous forme de fraction, puis compare les deux écritures.
 
-**EX-C032-M-02** — maitrise, numerique, 180 s
+**EX-C032-M-02** — maitrise, texte, 180 s
 
-Trouve le nombre qui, multiplié par 8, donne 5. Il s'écrit …/8. Quel est son numérateur ?
+Trouve le nombre qui, multiplié par 8, donne 5. Écris ta réponse avec une barre.
 
-**Réponse :** 5
+**Réponse :** 5/8
 
-*Corrigé.* (1) On cherche le nombre x tel que 8 × x = 5. (2) Par définition du quotient, ce nombre est 5/8. (3) Le numérateur est 5. (4) Vérification : 8 × 5/8 = 40/8 = 5. (5) Ce type d'égalité à trou prépare la résolution d'équations.
+*Corrigé.* (1) On cherche le nombre x tel que 8 × x = 5. (2) Par définition du quotient, ce nombre est 5/8. (3) Ce nombre s'écrit donc 5/8. (4) Vérification : 8 × 5/8 = 40/8 = 5. (5) Ce type d'égalité à trou prépare la résolution d'équations.
 
 *Indice.* Une égalité à trou du type 8 × … = 5 se résout par une division. Écris-la en fraction.
 

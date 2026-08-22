@@ -1,9 +1,9 @@
 # Fiche de relecture — synthèse
 
-> 35 compétences, 153 exercices. Généré depuis `content/`, ne pas éditer à la main.  
+> 35 compétences, 155 exercices. Généré depuis `content/`, ne pas éditer à la main.  
 > Objectif : juger le **fond** et la **coordination**. Le détail complet, énoncés et corrigés, est dans `RELECTURE_DETAIL.md`.
 
-⚠ **8 compétence(s) à regarder**, signalées dans la colonne *Signal* et détaillées en §3.
+⚠ **7 compétence(s) à regarder**, signalées dans la colonne *Signal* et détaillées en §3.
 
 ## 1. Le parcours, dans l'ordre où l'élève le suit
 
@@ -24,24 +24,24 @@ C'est la lecture qui compte pour juger la coordination : la difficulté doit mon
 | 11 | `C003` Dénominateur | CE1 | 2 | 3 | 21 | ⚠ |
 | 12 | `C009` Comparer fractions de même dénominateur | CE1 | 2 | 3 | 25 | ⚠ |
 | 13 | `C012` Additionner des fractions de même dénom… | CE1 | 2 | 3 | 17 |  |
-| 14 | `C026` Comparer des fractions de numérateur 1 | CE1 | 2 | 7 | 21 | ⚠ |
+| 14 | `C026` Comparer des fractions de numérateur 1 | CE1 | 2 | 7 | 18 |  |
 | 15 | `A007` Ranger plusieurs entiers | CE2 | 2 | 3 | 17 |  |
 | 16 | `A009` Comprendre la valeur positionnelle | CE2 | 2 | 3 | 12 |  |
 | 17 | `C006` Fractions équivalentes | CE2 | 2 | 3 | 8 |  |
 | 18 | `C005` Fraction sur une droite graduée | CE2 | 2 | 3 | 25 |  |
 | 19 | `A010` Décomposer un entier | CE2 | 3 | 3 | 7 |  |
-| 20 | `A012` Multiple | CM1 | 3 | 7 | 21 |  |
+| 20 | `A012` Multiple | CM1 | 3 | 7 | 22 |  |
 | 21 | `A013` Diviseur | CM1 | 3 | 7 | 21 |  |
-| 22 | `A014` Multiples de 2, de 5 et de 10 | CM1 | 3 | 7 | 19 |  |
-| 23 | `A028` Entier sur une demi-droite graduée | CM1 | 3 | 7 | 23 |  |
+| 22 | `A014` Multiples de 2, de 5 et de 10 | CM1 | 3 | 7 | 18 |  |
+| 23 | `A028` Entier sur une demi-droite graduée | CM1 | 3 | 7 | 25 |  |
 | 24 | `C004` Fraction d'une quantité | CM1 | 3 | 3 | 13 |  |
-| 25 | `C027` Fraction supérieure à 1 | CM1 | 3 | 7 | 16 |  |
-| 26 | `C029` Encadrer une fraction | CM1 | 3 | 7 | 12 |  |
-| 27 | `C030` Fraction sur une demi-droite graduée | CM1 | 3 | 7 | 23 |  |
+| 25 | `C027` Fraction supérieure à 1 | CM1 | 3 | 8 | 15 |  |
+| 26 | `C029` Encadrer une fraction | CM1 | 3 | 7 | 14 |  |
+| 27 | `C030` Fraction sur une demi-droite graduée | CM1 | 3 | 7 | 25 |  |
 | 28 | `A026` Tous les diviseurs d'un entier | CM2 | 3 | 7 | 17 |  |
-| 29 | `A027` Diviseurs et multiples communs | CM2 | 4 | 7 | 20 |  |
+| 29 | `A027` Diviseurs et multiples communs | CM2 | 4 | 8 | 22 |  |
 | 30 | `C031` Produit d'un entier par une fraction | CM2 | 4 | 7 | 10 |  |
-| 31 | `C032` Fraction comme quotient | 6e | 4 | 7 | 15 |  |
+| 31 | `C032` Fraction comme quotient | 6e | 4 | 7 | 16 |  |
 | 32 | `C011` Réduction au même dénominateur | 5e | 4 | 3 | 14 |  |
 | 33 | `C010` Comparer fractions de dénominateurs dif… | 5e | 4 | 3 | 13 |  |
 | 34 | `C007` Simplification de fraction | 4e | 5 | 3 | 11 |  |
@@ -97,7 +97,7 @@ Le chapitre est l'unité qu'un exercice bilan validerait.
 
 ### `MM-A-02` · Multiples et diviseurs (CM1-CM2)
 
-5 compétences, 35 exercices, niveaux CM1, CM2.
+5 compétences, 36 exercices, niveaux CM1, CM2.
 
 | Compétence | Ce que l'élève doit savoir faire | Exos |
 |---|---|--:|
@@ -105,15 +105,15 @@ Le chapitre est l'unité qu'un exercice bilan validerait.
 | `A013` Diviseur | Déterminer si un entier inférieur ou égal à 10 est un diviseur d'un entie… | 7 |
 | `A014` Multiples de 2, de 5 et de 10 | Reconnaître les multiples de 2, de 5 et de 10 à partir de leur écriture c… | 7 |
 | `A026` Tous les diviseurs d'un entier | Déterminer tous les diviseurs d'un entier inférieur ou égal à 30 | 7 |
-| `A027` Diviseurs et multiples communs | Déterminer les diviseurs communs à deux entiers, et des multiples communs… | 7 |
+| `A027` Diviseurs et multiples communs | Déterminer les diviseurs communs à deux entiers, et des multiples communs… | 8 |
 
 ### `MM-C-04` · Fractions supérieures à 1 et produit (CM1-6e)
 
-5 compétences, 35 exercices, niveaux CM1, CM2, 6e.
+5 compétences, 36 exercices, niveaux CM1, CM2, 6e.
 
 | Compétence | Ce que l'élève doit savoir faire | Exos |
 |---|---|--:|
-| `C027` Fraction supérieure à 1 | Écrire une fraction supérieure à 1 comme la somme d'un entier et d'une fr… | 7 |
+| `C027` Fraction supérieure à 1 | Écrire une fraction supérieure à 1 comme la somme d'un entier et d'une fr… | 8 |
 | `C029` Encadrer une fraction | Encadrer une fraction par deux nombres entiers consécutifs | 7 |
 | `C030` Fraction sur une demi-droite grad… | Placer une fraction sur une demi-droite graduée et repérer un point par u… | 7 |
 | `C031` Produit d'un entier par une fract… | Calculer le produit d'un entier et d'une fraction | 7 |
@@ -139,7 +139,6 @@ Le chapitre est l'unité qu'un exercice bilan validerait.
 - **`C001` Fraction comme partage** (CE1) — énoncés trop longs pour le niveau (23 mots, plafond 20)
 - **`C003` Dénominateur** (CE1) — énoncés trop longs pour le niveau (21 mots, plafond 20)
 - **`C009` Comparer fractions de même dénominateur** (CE1) — énoncés trop longs pour le niveau (25 mots, plafond 20)
-- **`C026` Comparer des fractions de numérateur 1** (CE1) — énoncés trop longs pour le niveau (21 mots, plafond 20)
 
 ## 4. Les exercices, une ligne chacun
 
@@ -152,7 +151,7 @@ Le chapitre est l'unité qu'un exercice bilan validerait.
 | | Type | Demandé | Réponse |
 |---|---|---|---|
 | D | nume | Compte les jetons : ● ● ● ● ● ● ● Combien y a-t-il de jetons ? | 7 |
-| E | nume | Quel nombre vient juste après 6 ? | 7 |
+| E | nume | Quel nombre vient juste après 8 ? | 9 |
 | M | vrai | Léa a 8 billes. Elle les recompte en commençant par une autre bille. Elle trouve encore 8 b… | vrai |
 
 **`A002` · Compter jusqu'à 100** — diff. 1, seuil 2/3  
@@ -241,7 +240,7 @@ Le chapitre est l'unité qu'un exercice bilan validerait.
 |---|---|---|---|
 | D | nume | Dans la fraction 5/8, quel est le numérateur ? | 5 |
 | E | qcm | Que représente le numérateur d'une fraction ? | a) Le nombre de parts que l'on pr… |
-| M | nume | Une figure est partagée en 8 parts égales. 3 parts sont coloriées en vert, toutes les autre… | 5 |
+| M | nume | Une figure est partagée en 8 parts égales. 2 parts sont coloriées en vert, toutes les autre… | 6 |
 
 **`C003` · Dénominateur** — diff. 2, seuil 2/3  ⚠  
 *Identifier et comprendre le rôle du dénominateur*
@@ -259,7 +258,7 @@ Le chapitre est l'unité qu'un exercice bilan validerait.
 
 | | Type | Demandé | Réponse |
 |---|---|---|---|
-| D | qcm | Lequel est le plus grand : rac{3}{8} ou rac{5}{8} ? | a) rac{5}{8} |
+| D | qcm | Lequel est le plus grand : 3/8 ou 5/8 ? | a) 5/8 |
 | E | qcm | Tom et Lisa ont chacun leur propre tarte, partagée en 6 parts égales. Tom a mangé 2/6 de sa… | a) Lisa |
 | M | text | Range ces fractions de la plus petite à la plus grande : 7/10, 2/10, 5/10. Écris-les séparé… | 2/10, 5/10, 7/10 |
 
@@ -273,19 +272,19 @@ Le chapitre est l'unité qu'un exercice bilan validerait.
 | E | text | Calcule 2/3 - 1/3. Écris ta réponse sous la forme numérateur/dénominateur. | 1/3 |
 | M | text | Lucie a colorié les 3/10 d'une figure en bleu, et tout le reste en rouge. Quelle fraction d… | 7/10 |
 
-**`C026` · Comparer des fractions de numérateur 1** — diff. 2, seuil 3/4  ⚠  
+**`C026` · Comparer des fractions de numérateur 1** — diff. 2, seuil 3/4  
 *Comparer deux fractions dont le numérateur est 1*
 > « Comparer des fractions dont le numérateur est 1. »
 
 | | Type | Demandé | Réponse |
 |---|---|---|---|
-| D | qcm | Lequel est le plus grand : rac{1}{5} ou rac{1}{3} ? | a) rac{1}{3} |
+| D | qcm | Lequel est le plus grand : 1/5 ou 1/3 ? | a) 1/3 |
 | D | qcm | Une même tablette de chocolat est partagée en parts égales. Dans quel cas une part est-elle… | a) Quand on partage en 2 |
-| E | qcm | Léa partage sa tarte entre 4 amis. Tom partage une tarte identique entre 6 amis. Qui reçoit… | a) Un ami de Léa |
-| E | text | Range ces fractions de la plus petite à la plus grande : 1/2, 1/8, 1/4. Écris-les séparées … | 1/8, 1/4, 1/2 |
+| E | qcm | Léa partage une tarte entre 4 amis. Tom partage une tarte pareille entre 6. Qui a la plus g… | a) Un ami de Léa |
+| E | text | Range de la plus petite à la plus grande : 1/2, 1/8, 1/4. Sépare-les par des virgules. | 1/8, 1/4, 1/2 |
 | E | vrai | 1/10 est plus grand que 1/6, parce que 10 est plus grand que 6. | faux |
-| M | qcm | Trois enfants mangent chacun une part d'une même tarte. Léa mange 1/4 de la tarte, Tom 1/8,… | a) Tom |
-| M | text | Trouve une fraction de numérateur 1 qui soit plus grande que 1/8 et plus petite que 1/4. Éc… | 1/6 |
+| M | qcm | Léa mange 1/4 d'une tarte. Tom en mange 1/8, et Zoé 1/3. Qui a mangé le moins ? | a) Tom |
+| M | text | Trouve une fraction de numérateur 1 plus grande que 1/8 et plus petite que 1/4. Écris-la av… | 1/6 |
 
 ### ── CE2 ──
 
@@ -325,8 +324,8 @@ Le chapitre est l'unité qu'un exercice bilan validerait.
 
 | | Type | Demandé | Réponse |
 |---|---|---|---|
-| D | nume | Une bande-unité (de 0 à 1) est graduée en quarts : 0 /----/----/----/----/ 1 Combien d'inte… | 3 |
-| E | text | Une bande-unité (de 0 à 1) est graduée en cinquièmes : 0 /----/----/----/----/----/ 1 Quell… | 4/5 |
+| D | nume | Une bande-unité va de 0 à 1. Elle est partagée en quarts, c'est-à-dire en 4 intervalles éga… | 3 |
+| E | text | Une bande-unité va de 0 à 1. Elle est partagée en cinquièmes, c'est-à-dire en 5 intervalles… | 4/5 |
 | M | vrai | Sur une même bande-unité graduée, 1/2 et 3/6 se placent exactement au même endroit. | vrai |
 
 **`A010` · Décomposer un entier** — diff. 3, seuil 2/3  
@@ -349,11 +348,11 @@ Le chapitre est l'unité qu'un exercice bilan validerait.
 |---|---|---|---|
 | D | vrai | Léa compte de 7 en 7 à partir de 0 : 7, 14, 21, 28, 35, 42, 49. Le nombre 42 est un multipl… | vrai |
 | D | qcm | Léa compte de 7 en 7 à partir de 0 : 7, 14, 21, 28, 35, 42, 49. Elle continue longtemps. Le… | a) 63 |
-| E | vrai | Un fleuriste range 96 tulipes en bouquets de 6 tulipes. Il n'en reste aucune. Donc 96 est u… | vrai |
-| E | text | Parmi 128, 150, 216 et 305, quels nombres sont des multiples de 4 ? Sépare-les par des virg… | 128, 216 |
+| E | vrai | Un fleuriste veut ranger 96 tulipes en bouquets de 7 tulipes, sans qu'il en reste aucune. I… | faux |
+| E | text | Parmi 128, 150 et 305, quels nombres sont des multiples de 4 ? Sépare-les par des virgules. | 128 |
 | E | qcm | Théo pose 23 rangées de 7 images et trouve 7 × 23 = 161. Que peut-il en déduire ? | a) 161 est un multiple de 7 |
 | M | nume | Un nombre est un multiple de 8. Il est compris entre 300 et 310. Quel est ce nombre ? | 304 |
-| M | vrai | Nina remarque que 4 514 est un nombre pair. Elle en conclut que 4 514 est un multiple de 4.… | faux |
+| M | vrai | Nina remarque que 26 est un nombre pair. Elle en conclut que 26 est un multiple de 4. Nina … | faux |
 
 **`A013` · Diviseur** — diff. 3, seuil 3/4  
 *Déterminer si un entier inférieur ou égal à 10 est un diviseur d'un entier donné*
@@ -362,10 +361,10 @@ Le chapitre est l'unité qu'un exercice bilan validerait.
 | | Type | Demandé | Réponse |
 |---|---|---|---|
 | D | vrai | 36 cartes sont partagées entre 4 joueurs. Chacun en reçoit autant et il n'en reste aucune. … | vrai |
-| D | qcm | On veut partager les mêmes 36 cartes entre un autre nombre de joueurs, sans qu'il en reste.… | a) 6 joueurs |
+| D | qcm | On partage 36 cartes entre plusieurs joueurs, sans qu'il en reste aucune. Quel nombre de jo… | a) 6 joueurs |
 | E | text | Parmi 3, 5, 6 et 8, lesquels sont des diviseurs de 84 ? Sépare-les par des virgules. | 3, 6 |
 | E | qcm | Un libraire range 630 livres en piles égales. Parmi 4, 7 et 8, quel nombre de piles est pos… | a) 7 piles |
-| E | nume | Un maraîcher a 258 pommes et fait des sacs de 6 pommes. Complète : 258 = 6 × … | 43 |
+| E | nume | Un maraîcher a 258 pommes. Il veut faire des sacs de 6 pommes, tous pleins. Peut-il utilise… | 43 |
 | M | vrai | Karim écrit : « 5 est un diviseur de 45. Donc 45 est un diviseur de 5. » Karim a raison. | faux |
 | M | nume | Une école range 96 cahiers en paquets égaux. Un paquet contient moins de 10 cahiers. Quel e… | 8 |
 
@@ -376,10 +375,10 @@ Le chapitre est l'unité qu'un exercice bilan validerait.
 | | Type | Demandé | Réponse |
 |---|---|---|---|
 | D | qcm | Voici quatre nombres : 34, 45, 60 et 87. Lesquels sont des multiples de 2 ? | a) 34 et 60 |
-| D | qcm | Toujours avec les nombres 34, 45, 60 et 87. Lesquels sont des multiples de 5 ? | a) 45 et 60 |
+| D | qcm | Voici quatre nombres : 34, 45, 60 et 87. Lesquels sont des multiples de 5 ? | a) 45 et 60 |
 | E | text | Parmi 1 250, 3 004, 4 815 et 6 730, quels sont les multiples de 10 ? Sépare-les par des vir… | 1250, 6730 |
 | E | vrai | Le nombre 27 985 est un multiple de 5, mais ce n'est pas un multiple de 10. | vrai |
-| E | nume | Un livreur compte ses colis de 5 en 5. Écris le plus grand multiple de 5 plus petit que 8 0… | 7995 |
+| E | nume | Écris le plus grand multiple de 5 qui soit plus petit que 8 000. | 7995 |
 | M | qcm | Un nombre est un multiple de 10. Que peut-on affirmer à coup sûr sur ce nombre ? | a) Il est aussi un multiple de 2 … |
 | M | vrai | Un magasin range tous ses crayons dans des boîtes de 10, sans qu'il en reste. Il annonce 4 … | faux |
 
@@ -390,12 +389,12 @@ Le chapitre est l'unité qu'un exercice bilan validerait.
 | | Type | Demandé | Réponse |
 |---|---|---|---|
 | D | nume | Une demi-droite est graduée de 1 000 en 1 000 à partir de 0. Quel nombre est écrit à la qua… | 4000 |
-| D | qcm | Sur la même demi-droite graduée de 1 000 en 1 000 à partir de 0, où faut-il placer le nombr… | a) Juste au milieu entre les grad… |
+| D | qcm | Une demi-droite est graduée de 1 000 en 1 000 à partir de 0. Où faut-il placer le nombre 3 … | a) Juste au milieu entre les grad… |
 | E | nume | Sur une demi-droite graduée de 100 en 100, un point se situe 7 graduations après 2 000. Que… | 2700 |
 | E | text | Une demi-droite est graduée de 20 en 20 à partir de 0. Entre quelles deux graduations se pl… | 120, 140 |
-| E | vrai | Sur une demi-droite graduée de 500 en 500, trois graduations séparent le point d'abscisse 2… | vrai |
-| M | nume | Une demi-droite est graduée régulièrement à partir de 0. La troisième graduation porte le n… | 2000 |
-| M | qcm | Une demi-droite va de 0 à 100 000 et elle est graduée de 10 000 en 10 000. Où placer 9 500 ? | a) Entre 0 et 10 000, tout près d… |
+| E | vrai | Sur une demi-droite graduée de 500 en 500, il faut avancer de trois intervalles pour aller … | vrai |
+| M | nume | Une demi-droite est graduée régulièrement à partir de 0. La troisième graduation après 0 po… | 2000 |
+| M | vrai | Une demi-droite va de 0 à 100 000 et elle est graduée de 10 000 en 10 000. Sarah place le n… | faux |
 
 **`C004` · Fraction d'une quantité** — diff. 3, seuil 2/3  
 *Calculer une fraction unitaire d'une quantité ou d'une grandeur*
@@ -413,13 +412,14 @@ Le chapitre est l'unité qu'un exercice bilan validerait.
 
 | | Type | Demandé | Réponse |
 |---|---|---|---|
-| D | nume | Complète : 7/4 = 1 + …/4 | 3 |
+| D | nume | Complète : 6/4 = 1 + …/4 | 2 |
 | D | text | Écris 5/3 comme la somme d'un entier et d'une fraction inférieure à 1. Écris ta réponse sou… | 1 + 2/3 |
+| D | nume | Complète : 1 + 1/3 = …/3 | 4 |
 | E | text | Écris 11/4 comme la somme d'un entier et d'une fraction inférieure à 1. Écris ta réponse so… | 2 + 3/4 |
 | E | text | Écris 2 + 1/3 sous la forme d'une seule fraction. Écris ta réponse sous la forme numérateur… | 7/3 |
 | E | nume | Complète : 3 + 2/5 = …/5 | 17 |
 | M | qcm | Un élève écrit : 9/4 = 1 + 9/4. Que penses-tu de son écriture ? | a) Elle est fausse : il a ajouté … |
-| M | text | Une recette demande 9/4 de litre de lait. Combien de litres entiers faut-il verser, et quel… | 2 + 1/4 |
+| M | text | Une recette demande 11/3 de litre de lait. Combien de litres entiers faut-il verser, et que… | 3 + 2/3 |
 
 **`C029` · Encadrer une fraction** — diff. 3, seuil 3/4  
 *Encadrer une fraction par deux nombres entiers consécutifs*
@@ -427,13 +427,13 @@ Le chapitre est l'unité qu'un exercice bilan validerait.
 
 | | Type | Demandé | Réponse |
 |---|---|---|---|
-| D | qcm | Entre quels entiers consécutifs se trouve 7/4 ? | a) entre 1 et 2 |
-| D | nume | Complète l'encadrement avec un nombre entier : 1 < rac{5}{3} < … | 2 |
+| D | qcm | Entre quels entiers consécutifs se trouve 9/4 ? | a) entre 2 et 3 |
+| D | nume | Complète l'encadrement avec un nombre entier : 1 < 5/3 < … | 2 |
 | E | text | Encadre 11/4 par deux entiers consécutifs. Écris ta réponse sous la forme entier < fraction… | 2 < 11/4 < 3 |
 | E | qcm | Entre quels entiers consécutifs se trouve 17/5 ? | a) entre 3 et 4 |
-| E | nume | Complète l'encadrement avec un nombre entier : 2 < rac{13}{6} < … | 3 |
-| M | qcm | Peut-on encadrer 8/4 par deux entiers consécutifs, comme on l'a fait pour 7/4 ? | a) Non, car 8/4 est exactement ég… |
-| M | text | Trouve une fraction de dénominateur 5 comprise entre 3 et 4. Écris ta réponse sous la forme… | 17/5 |
+| E | nume | Complète l'encadrement avec un nombre entier : … < 17/5 < 4 | 3 |
+| M | qcm | Léo calcule 8 ÷ 4 = 2, sans reste. Peut-on trouver deux entiers consécutifs entre lesquels … | a) Non, car 8/4 est exactement ég… |
+| M | text | Trouve une fraction de dénominateur 5 comprise entre 2 et 3. Écris ta réponse avec une barr… | 12/5 |
 
 **`C030` · Fraction sur une demi-droite graduée** — diff. 3, seuil 3/4  
 *Placer une fraction sur une demi-droite graduée et repérer un point par une fraction*
@@ -441,13 +441,13 @@ Le chapitre est l'unité qu'un exercice bilan validerait.
 
 | | Type | Demandé | Réponse |
 |---|---|---|---|
-| D | nume | Une demi-droite est graduée en quarts à partir de 0. Combien d'intervalles faut-il parcouri… | 7 |
-| D | text | Une demi-droite est graduée en tiers à partir de 0. Quelle fraction se trouve au 5e cran ap… | 5/3 |
-| E | qcm | Sur une demi-droite graduée, où se situe le point d'abscisse 9/4 ? | a) entre 2 et 3 |
-| E | text | Une demi-droite est graduée en cinquièmes. Un point se trouve au 12e cran après 0. Quelle e… | 12/5 |
-| E | nume | Une demi-droite est graduée en demis. À quel cran après 0 se trouve le nombre entier 3 ? | 6 |
-| M | text | Une demi-droite est graduée en quarts. Un point se trouve 3 crans après le nombre 2. Quelle… | 11/4 |
-| M | text | Sur une demi-droite graduée en tiers, quelle fraction se trouve au cran situé juste avant l… | 5/3 |
+| D | nume | Une demi-droite est graduée en quarts à partir de 0. Combien de graduations faut-il parcour… | 7 |
+| D | text | Une demi-droite est graduée en tiers à partir de 0. Quelle fraction se trouve au 5e graduat… | 5/3 |
+| E | qcm | Une demi-droite est graduée en cinquièmes à partir de 0. Entre quels deux nombres entiers s… | a) entre 1 et 2 |
+| E | text | Une demi-droite est graduée en cinquièmes. Un point se trouve au 12e graduation après 0. Qu… | 12/5 |
+| E | nume | Une demi-droite est graduée en demis. À quel graduation après 0 se trouve le nombre entier … | 6 |
+| M | text | Une demi-droite est graduée en quarts. Un point se trouve 3 graduations après le nombre 2. … | 11/4 |
+| M | text | Sur une demi-droite graduée en sixièmes, quelle fraction se trouve à la graduation située j… | 11/6 |
 
 ### ── CM2 ──
 
@@ -458,11 +458,11 @@ Le chapitre est l'unité qu'un exercice bilan validerait.
 | | Type | Demandé | Réponse |
 |---|---|---|---|
 | D | qcm | Marc écrit 3 × 4 = 12. Que peut-il en déduire sur les diviseurs de 12 ? | a) 3 et 4 sont des diviseurs de 12 |
-| D | text | Marc cherche maintenant tous les diviseurs de 12. Écris-les du plus petit au plus grand, sé… | 1, 2, 3, 4, 6, 12 |
+| D | text | Écris tous les diviseurs de 12, du plus petit au plus grand. Sépare-les par des virgules. | 1, 2, 3, 4, 6, 12 |
 | E | text | Écris tous les diviseurs de 28, du plus petit au plus grand. Sépare-les par des virgules. | 1, 2, 4, 7, 14, 28 |
 | E | qcm | Zoé cherche tous les diviseurs de 18. Quelle liste est la bonne ? | a) 1, 2, 3, 6, 9, 18 |
-| E | nume | Léo range 100 jetons en boîtes égales et veut au moins deux boîtes. Quel est le plus grand … | 50 |
-| M | text | Léa cherche tous les diviseurs de 23. Écris-les, séparés par des virgules. | 1, 23 |
+| E | text | Léa cherche tous les diviseurs de 23. Écris-les, séparés par des virgules. | 1, 23 |
+| M | nume | Léo range 100 jetons en boîtes égales et veut au moins deux boîtes. Quel est le plus grand … | 50 |
 | M | nume | Un jardinier plante 24 fleurs en rangées égales. Il veut plus de 4 rangées et moins de 8. C… | 6 |
 
 **`A027` · Diviseurs et multiples communs** — diff. 4, seuil 3/4  
@@ -471,13 +471,14 @@ Le chapitre est l'unité qu'un exercice bilan validerait.
 
 | | Type | Demandé | Réponse |
 |---|---|---|---|
-| D | text | Les diviseurs de 12 sont 1, 2, 3, 4, 6 et 12. Parmi eux, écris ceux qui sont aussi des divi… | 1, 2, 3, 6 |
-| D | qcm | Les nombres 12 et 18 ont plusieurs diviseurs communs. Quel est le plus grand d'entre eux ? | a) 6 |
-| E | text | Écris tous les diviseurs communs à 24 et à 30. Sépare-les par des virgules. | 1, 2, 3, 6 |
+| D | text | Les diviseurs de 12 sont 1, 2, 3, 4, 6 et 12. Parmi eux, écris ceux qui sont aussi des divi… | 1, 2, 4 |
+| D | qcm | Les nombres 12 et 20 ont plusieurs diviseurs communs. Quel est le plus grand d'entre eux ? | a) 4 |
+| D | text | Les premiers multiples de 3 sont 3, 6, 9, 12, 15, 18. Parmi eux, écris ceux qui sont aussi … | 6, 12, 18 |
+| E | text | Écris tous les diviseurs communs à 18 et à 24. Sépare-les par des virgules. | 1, 2, 3, 6 |
 | E | text | Écris les trois plus petits multiples communs à 4 et à 6, sans compter 0. Sépare-les par de… | 12, 24, 36 |
 | E | vrai | Marie affirme que 30 est un multiple commun à 6 et à 8. Marie a raison. | faux |
 | M | nume | Un bus part toutes les 12 minutes, un autre toutes les 8 minutes. Ils partent ensemble à 9 … | 24 |
-| M | nume | Un pâtissier a 20 éclairs et 30 tartelettes. Il prépare des paquets identiques et utilise t… | 10 |
+| M | nume | Un pâtissier a 20 éclairs et 30 tartelettes. Il prépare des paquets contenant tous le même … | 10 |
 
 **`C031` · Produit d'un entier par une fraction** — diff. 4, seuil 3/4  
 *Calculer le produit d'un entier et d'une fraction*
@@ -487,7 +488,7 @@ Le chapitre est l'unité qu'un exercice bilan validerait.
 |---|---|---|---|
 | D | text | Calcule 7 × 1/4. Écris ta réponse sous la forme numérateur/dénominateur. | 7/4 |
 | D | nume | Complète : 3 × 2/5 = …/5 | 6 |
-| E | text | Calcule 5 × 3/8. Écris ta réponse sous la forme numérateur/dénominateur. | 15/8 |
+| E | vrai | Le résultat de 5 × 3/8 est plus petit que 1. | faux |
 | E | qcm | Que vaut 4 × 2/3 ? | a) 8/3 |
 | E | nume | Un verre contient 1/5 de litre. Combien de litres contiennent 10 verres ? | 2 |
 | M | nume | Combien de fois faut-il prendre 3/4 pour obtenir exactement 3 ? | 4 |
@@ -505,9 +506,9 @@ Le chapitre est l'unité qu'un exercice bilan validerait.
 | D | nume | Complète : 5 × 3/5 = … | 3 |
 | E | text | Écris le résultat de 7 ÷ 3 sous forme de fraction. Écris ta réponse sous la forme numérateu… | 7/3 |
 | E | qcm | Que vaut le tiers de 2 ? | a) 2/3 |
-| E | nume | Un ruban de 5 mètres est coupé en 4 morceaux égaux. On cherche la longueur d'un morceau, éc… | 5 |
-| M | vrai | Prendre les 3/4 d'un gâteau et partager 3 gâteaux entre 4 personnes donnent la même quantit… | vrai |
-| M | nume | Trouve le nombre qui, multiplié par 8, donne 5. Il s'écrit …/8. Quel est son numérateur ? | 5 |
+| E | text | Un ruban de 5 mètres est coupé en 4 morceaux égaux. Quelle est la longueur d'un morceau, en… | 5/4 |
+| M | vrai | On a des gâteaux tous identiques. Prendre les 3/4 d'un gâteau et partager 3 de ces gâteaux … | vrai |
+| M | text | Trouve le nombre qui, multiplié par 8, donne 5. Écris ta réponse avec une barre. | 5/8 |
 
 ### ── 5e ──
 
