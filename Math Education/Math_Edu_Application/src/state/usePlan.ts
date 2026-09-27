@@ -43,6 +43,12 @@ export interface DailyPlan {
   perDomain: ReturnType<typeof domainProgress>[]
   /** Vrai quand il n'y a ni exercice ni carte a faire aujourd'hui. */
   isDayDone: boolean
+  /**
+   * Vrai quand l'eleve a bien des lacunes a reparer, mais qu'aucune n'a encore
+   * d'exercice dans le contenu. On ne lui dit alors pas que tout est a jour :
+   * c'est le contenu qui manque, pas son travail.
+   */
+  blockedOnMissingContent: boolean
   /** Vrai tant que le test de positionnement n'a pas ete passe. */
   needsPlacement: boolean
   totalMinutes: number
@@ -93,6 +99,7 @@ export function useDailyPlan(): DailyPlan {
       overall: overallProgress({}, []),
       perDomain: [],
       isDayDone: false,
+      blockedOnMissingContent: false,
       needsPlacement: true,
       totalMinutes: 0,
     }
@@ -117,6 +124,7 @@ export function useDailyPlan(): DailyPlan {
     const objectifId = objectifSkillId as string
     const priorityId = findPrimaryRootGap(progress, objectifId)
     const priority = priorityId ? requireSkill(priorityId) : null
+    const allRootGaps = findRootGaps(progress, objectifId)
     const priorityExercises = priorityId ? getExercisesForSkill(priorityId) : []
     const priorityDurationS = priorityExercises.reduce(
       (sum, exercise) => sum + exercise.estimated_duration_s,
@@ -135,12 +143,11 @@ export function useDailyPlan(): DailyPlan {
       reviews,
       objectif: getSkill(objectifId) ?? null,
       path: buildPathToTarget(progress, objectifId),
-      rootGaps: findRootGaps(progress, objectifId)
-        .map((id) => getSkill(id))
-        .filter((s): s is Skill => Boolean(s)),
+      rootGaps: allRootGaps.map((id) => getSkill(id)).filter((s): s is Skill => Boolean(s)),
       overall,
       perDomain,
       isDayDone: reviews.length === 0 && priority === null,
+      blockedOnMissingContent: priority === null && allRootGaps.length > 0,
       needsPlacement: false,
       totalMinutes: Math.max(1, Math.round((priorityDurationS + reviewSeconds) / 60)),
     }

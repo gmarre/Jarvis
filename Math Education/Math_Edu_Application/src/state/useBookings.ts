@@ -2,6 +2,7 @@ import { useMemo } from 'react'
 
 import { getSkill } from '@/content'
 import { useSession } from './session'
+import type { Catalog } from '@/data'
 import type { Skill } from '@/types/content'
 import type { AvailabilitySlot, Booking, Teacher } from '@/types/domain'
 
@@ -12,6 +13,31 @@ export interface EnrichedBooking {
   /** Competence sur laquelle la seance est preparee. */
   skill: Skill | null
   isPast: boolean
+}
+
+/**
+ * Professeur d'un creneau, avec repli.
+ *
+ * La ligne `teachers` est creee automatiquement par la base (migration 0002),
+ * mais elle peut manquer : compte cree avant cette migration, ou profil dont le
+ * role vient de changer. Auparavant on ecartait le creneau, ce qui faisait
+ * disparaitre de l'ecran une reservation deja prise et payante. On prefere
+ * afficher un professeur au libelle neutre : l'eleve voit sa seance, et c'est ce
+ * qui compte.
+ */
+function teacherFor(catalog: Catalog, profId: string): Teacher {
+  const trouve = catalog.teachers.find((t) => t.id === profId)
+  if (trouve) return trouve
+
+  return {
+    id: profId,
+    prenom: 'Professeur',
+    nom_court: 'Professeur',
+    titre: '',
+    note: 0,
+    nb_cours: 0,
+    domaines: [],
+  }
 }
 
 /**
@@ -28,12 +54,13 @@ export function useBookings(): { upcoming: EnrichedBooking[]; next: EnrichedBook
     const enriched = session.bookings
       .map((booking) => {
         const slot = catalog.slots.find((s) => s.id === booking.slot_id)
-        const teacher = slot ? catalog.teachers.find((t) => t.id === slot.prof_id) : undefined
-        if (!slot || !teacher) return null
+        // Sans creneau il n'y a rien a afficher, la reservation est orpheline.
+        // Sans professeur, en revanche, on garde la seance.
+        if (!slot) return null
         return {
           booking,
           slot,
-          teacher,
+          teacher: teacherFor(catalog, slot.prof_id),
           skill: booking.skill_id ? (getSkill(booking.skill_id) ?? null) : null,
           isPast: new Date(slot.start_at).getTime() < now,
         }
@@ -62,19 +89,16 @@ export function useSlots(gapDomains: string[]): EnrichedSlot[] {
   return useMemo(() => {
     const bookedSlotIds = new Set(session?.bookings.map((b) => b.slot_id) ?? [])
 
+    // Aucun creneau n'est ecarte : le repli sur un professeur neutre garantit
+    // qu'un creneau ouvert reste visible et reservable.
     return catalog.slots
-      .map((slot) => {
-        const teacher = catalog.teachers.find((t) => t.id === slot.prof_id)
-        if (!teacher) return null
-        return {
-          slot,
-          teacher,
-          isFull: slot.places_prises >= slot.capacite,
-          isBooked: bookedSlotIds.has(slot.id),
-          matchesGaps: slot.domaines.some((domain) => gapDomains.includes(domain)),
-        }
-      })
-      .filter((item): item is EnrichedSlot => item !== null)
+      .map<EnrichedSlot>((slot) => ({
+        slot,
+        teacher: teacherFor(catalog, slot.prof_id),
+        isFull: slot.places_prises >= slot.capacite,
+        isBooked: bookedSlotIds.has(slot.id),
+        matchesGaps: slot.domaines.some((domain) => gapDomains.includes(domain)),
+      }))
       .sort((a, b) => new Date(a.slot.start_at).getTime() - new Date(b.slot.start_at).getTime())
   }, [catalog, session, gapDomains])
 }

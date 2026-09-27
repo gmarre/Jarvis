@@ -2,7 +2,10 @@ import { Suspense, lazy, type ReactNode } from 'react'
 import { Navigate, Route, Routes, useLocation } from 'react-router-dom'
 
 import { LoadingScreen } from '@/components/ui/Misc'
+import { SyncErrorBanner } from '@/components/layout/SyncErrorBanner'
+import { isProfileComplete } from '@/data'
 import { useSession } from '@/state/session'
+import type { UserRole } from '@/types/domain'
 
 import LoginPage from '@/pages/LoginPage'
 import WorkspacePage from '@/pages/WorkspacePage'
@@ -18,39 +21,72 @@ const PlacementTestPage = lazy(() => import('@/pages/PlacementTestPage'))
 const ProfilePage = lazy(() => import('@/pages/ProfilePage'))
 const SchedulePage = lazy(() => import('@/pages/SchedulePage'))
 const TeacherSchedulePage = lazy(() => import('@/pages/TeacherSchedulePage'))
+const ParentPage = lazy(() => import('@/pages/ParentPage'))
+const SubscriptionPage = lazy(() => import('@/pages/SubscriptionPage'))
+const WelcomePage = lazy(() => import('@/pages/WelcomePage'))
 
-/** Ecran reserve aux comptes connectes. */
-function RequireAuth({ children }: { children: ReactNode }) {
-  const { status } = useSession()
+/** Accueil propre a chaque role. */
+function homeFor(role: UserRole): string {
+  if (role === 'prof') return '/prof/cours'
+  if (role === 'parent') return '/parent'
+  return '/travail'
+}
+
+/**
+ * Ecran reserve aux comptes connectes, et optionnellement a certains roles.
+ *
+ * Etre connecte ne suffit pas : sans le controle de role, un eleve pouvait
+ * ouvrir /prof/cours en tapant l'URL. Un role qui n'a rien a faire sur un ecran
+ * est renvoye vers son propre accueil, pas vers une page d'erreur.
+ */
+function RequireAuth({ roles, children }: { roles?: UserRole[]; children: ReactNode }) {
+  const { status, session } = useSession()
   const location = useLocation()
 
   if (status === 'loading') return <LoadingScreen label="Ouverture de ton espace…" />
-  if (status === 'anonymous') {
+  if (status === 'anonymous' || !session) {
     return <Navigate to="/connexion" replace state={{ from: location.pathname }} />
+  }
+  // Un compte cree par Google arrive sans niveau scolaire ni date de naissance :
+  // on ne peut ni construire son parcours, ni appliquer la regle des 15 ans.
+  // Tout le reste attend.
+  if (!isProfileComplete(session.profile)) {
+    return <Navigate to="/bienvenue" replace />
+  }
+  if (roles && !roles.includes(session.profile.role)) {
+    return <Navigate to={homeFor(session.profile.role)} replace />
   }
   return <>{children}</>
 }
 
-/** Accueil : l'eleve va sur son espace de travail, le professeur sur ses creneaux. */
+/** Accueil : chaque role atterrit dans son espace, jamais dans celui d'un autre. */
 function HomeRedirect() {
   const { status, session } = useSession()
 
   if (status === 'loading') return <LoadingScreen label="Ouverture de ton espace…" />
   if (status === 'anonymous' || !session) return <Navigate to="/connexion" replace />
-  return <Navigate to={session.profile.role === 'prof' ? '/prof/cours' : '/travail'} replace />
+  if (!isProfileComplete(session.profile)) return <Navigate to="/bienvenue" replace />
+  return <Navigate to={homeFor(session.profile.role)} replace />
 }
+
+const ELEVE: UserRole[] = ['eleve']
+const PROF: UserRole[] = ['prof']
+const PARENT: UserRole[] = ['parent']
 
 export default function App() {
   return (
     <Suspense fallback={<LoadingScreen />}>
+      <SyncErrorBanner />
       <Routes>
         <Route path="/" element={<HomeRedirect />} />
         <Route path="/connexion" element={<LoginPage />} />
+        <Route path="/bienvenue" element={<WelcomePage />} />
 
+        {/* Espace eleve */}
         <Route
           path="/test"
           element={
-            <RequireAuth>
+            <RequireAuth roles={ELEVE}>
               <PlacementTestPage />
             </RequireAuth>
           }
@@ -58,7 +94,7 @@ export default function App() {
         <Route
           path="/travail"
           element={
-            <RequireAuth>
+            <RequireAuth roles={ELEVE}>
               <WorkspacePage />
             </RequireAuth>
           }
@@ -66,7 +102,7 @@ export default function App() {
         <Route
           path="/parcours"
           element={
-            <RequireAuth>
+            <RequireAuth roles={ELEVE}>
               <PathPage />
             </RequireAuth>
           }
@@ -74,7 +110,7 @@ export default function App() {
         <Route
           path="/exercice/:skillId"
           element={
-            <RequireAuth>
+            <RequireAuth roles={ELEVE}>
               <ExercisePage />
             </RequireAuth>
           }
@@ -82,7 +118,7 @@ export default function App() {
         <Route
           path="/cartes"
           element={
-            <RequireAuth>
+            <RequireAuth roles={ELEVE}>
               <MindmapListPage />
             </RequireAuth>
           }
@@ -90,7 +126,7 @@ export default function App() {
         <Route
           path="/cartes/:mindmapId"
           element={
-            <RequireAuth>
+            <RequireAuth roles={ELEVE}>
               <MindmapPage />
             </RequireAuth>
           }
@@ -98,16 +134,38 @@ export default function App() {
         <Route
           path="/cours"
           element={
-            <RequireAuth>
+            <RequireAuth roles={ELEVE}>
               <SchedulePage />
             </RequireAuth>
           }
         />
+
+        {/* Espace professeur */}
         <Route
           path="/prof/cours"
           element={
-            <RequireAuth>
+            <RequireAuth roles={PROF}>
               <TeacherSchedulePage />
+            </RequireAuth>
+          }
+        />
+
+        {/* Espace parent */}
+        <Route
+          path="/parent"
+          element={
+            <RequireAuth roles={PARENT}>
+              <ParentPage />
+            </RequireAuth>
+          }
+        />
+
+        {/* Commun */}
+        <Route
+          path="/abonnement"
+          element={
+            <RequireAuth>
+              <SubscriptionPage />
             </RequireAuth>
           }
         />

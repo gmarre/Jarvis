@@ -3,6 +3,7 @@ import type { ComponentType, ReactNode, SVGProps } from 'react'
 
 import { cn } from '@/lib/cn'
 import { initials } from '@/lib/format'
+import type { UserRole } from '@/types/domain'
 import { useSession } from '@/state/session'
 import { Avatar, Level } from '@/components/ui/Misc'
 import {
@@ -38,6 +39,17 @@ const TEACHER_NAV: NavItem[] = [
   { to: '/profil', label: 'Mon profil', shortLabel: 'Profil', icon: IconUser },
 ]
 
+const PARENT_NAV: NavItem[] = [
+  { to: '/parent', label: 'Espace parent', shortLabel: 'Parent', icon: IconUser },
+]
+
+/** La navigation depend du role : personne ne voit l'espace d'un autre. */
+function navFor(role: UserRole | undefined): NavItem[] {
+  if (role === 'prof') return TEACHER_NAV
+  if (role === 'parent') return PARENT_NAV
+  return STUDENT_NAV
+}
+
 export function Wordmark({ className }: { className?: string }) {
   return (
     <span className={cn('font-display text-lg font-semibold leading-none text-ink', className)}>
@@ -58,7 +70,7 @@ export function AppShell({ children, railTop, railBottom }: AppShellProps) {
   const { session } = useSession()
   const location = useLocation()
   const profile = session?.profile
-  const nav = profile?.role === 'prof' ? TEACHER_NAV : STUDENT_NAV
+  const nav = navFor(profile?.role)
   const current = nav.find((item) => location.pathname.startsWith(item.to))
 
   return (

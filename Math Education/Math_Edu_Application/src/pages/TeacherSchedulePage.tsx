@@ -163,12 +163,9 @@ export default function TeacherSchedulePage() {
                   {PRIX_EUR} € pour 1h30
                 </p>
                 <p className="text-[11px] leading-relaxed text-ink-faint">
-                  Commission plateforme incluse
+                  Tarif fixé par la plateforme, commission incluse
                 </p>
               </div>
-              <button type="button" className="text-[12.5px] font-semibold text-accent">
-                Modifier
-              </button>
             </div>
 
             <Button
@@ -248,16 +245,14 @@ export default function TeacherSchedulePage() {
                           )}
                         </p>
                       </div>
-                      <button type="button" className="shrink-0 text-xs font-semibold text-accent">
-                        Graphe
-                      </button>
                     </li>
                   )
                 })}
               </ul>
               <p className="mt-4 border-t border-divider pt-3.5 text-[11px] leading-relaxed text-ink-faint">
                 Tu vois la progression d'un élève uniquement s'il a autorisé le partage dans son
-                profil.
+                profil. La fiche détaillée avec son graphe de compétences arrive avec l'espace
+                professeur complet.
               </p>
             </Card>
           </div>

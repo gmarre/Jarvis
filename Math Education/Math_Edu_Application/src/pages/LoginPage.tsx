@@ -3,8 +3,11 @@ import { Navigate, useLocation } from 'react-router-dom'
 
 import { Button } from '@/components/ui/Button'
 import { Checkbox, Field, Segmented, Select, TextInput } from '@/components/ui/Field'
-import { LoadingScreen } from '@/components/ui/Misc'
+import { LoadingScreen, Notice } from '@/components/ui/Misc'
+import { ageFrom, needsParentalConsent as consentementRequis } from '@/lib/age'
+import { safeRedirect } from '@/lib/redirect'
 import { Wordmark } from '@/components/layout/AppShell'
+import { GoogleMark } from '@/components/ui/icons'
 import { useSession } from '@/state/session'
 import { SCHOOL_LEVELS, type SchoolLevel } from '@/types/content'
 import type { UserRole } from '@/types/domain'
@@ -15,8 +18,6 @@ import type { UserRole } from '@/types/domain'
 // en dessous de 15 ans, le traitement des donnees exige l'accord d'un titulaire
 // de l'autorite parentale. Le bloc de consentement n'est donc pas un detail de
 // conformite range dans les CGU : il est visible, explique, et bloquant.
-
-const MINIMUM_AGE_WITHOUT_CONSENT = 15
 
 type Mode = 'inscription' | 'connexion'
 
@@ -44,32 +45,21 @@ const INITIAL: FormState = {
   consentement: false,
 }
 
-/** Age revolu a la date du jour. */
-function ageFrom(birthDate: string): number | null {
-  if (!birthDate) return null
-  const birth = new Date(birthDate)
-  if (Number.isNaN(birth.getTime())) return null
-
-  const now = new Date()
-  let age = now.getFullYear() - birth.getFullYear()
-  const monthDiff = now.getMonth() - birth.getMonth()
-  if (monthDiff < 0 || (monthDiff === 0 && now.getDate() < birth.getDate())) age -= 1
-  return age
-}
-
 export default function LoginPage() {
-  const { status, signUp, signInDemo, signInTeacher } = useSession()
+  const { status, signUp, signInWithGoogle, signInWithPassword, isDemo } = useSession()
   const location = useLocation()
   const [mode, setMode] = useState<Mode>('inscription')
   const [form, setForm] = useState<FormState>(INITIAL)
   const [errors, setErrors] = useState<Partial<Record<keyof FormState, string>>>({})
+  /** Erreur renvoyee par le serveur (mot de passe faux, email deja pris...). */
+  const [authError, setAuthError] = useState<string | null>(null)
+  const [pending, setPending] = useState(false)
 
   const age = ageFrom(form.naissance)
   const isStudent = form.role === 'eleve'
   // Tant que la date de naissance n'est pas saisie, on affiche le bloc parental
   // par defaut pour un eleve : mieux vaut le montrer a tort que l'oublier.
-  const needsParentalConsent =
-    isStudent && (age === null || age < MINIMUM_AGE_WITHOUT_CONSENT)
+  const needsParentalConsent = consentementRequis(form.role, form.naissance)
 
   const set = <K extends keyof FormState>(key: K, value: FormState[K]) => {
     setForm((current) => ({ ...current, [key]: value }))
@@ -83,8 +73,8 @@ export default function LoginPage() {
 
   if (status === 'loading') return <LoadingScreen label="Ouverture de ton espace…" />
   if (status === 'authenticated') {
-    const from = (location.state as { from?: string } | null)?.from
-    return <Navigate to={from && from !== '/connexion' ? from : '/'} replace />
+    const from = safeRedirect((location.state as { from?: string } | null)?.from)
+    return <Navigate to={from} replace />
   }
 
   const validate = (): boolean => {
@@ -107,27 +97,46 @@ export default function LoginPage() {
     return Object.keys(next).length === 0
   }
 
+  /** Enveloppe commune : etat d'attente, et remontee de l'erreur serveur. */
+  const tenter = async (action: () => Promise<void>) => {
+    setAuthError(null)
+    setPending(true)
+    try {
+      await action()
+    } catch (cause: unknown) {
+      setAuthError(cause instanceof Error ? cause.message : 'La connexion a échoué.')
+    } finally {
+      setPending(false)
+    }
+  }
+
   const handleSubmit = (event: FormEvent) => {
     event.preventDefault()
+
     if (mode === 'connexion') {
-      // L'authentification reelle arrive avec Supabase (Jalon 2). En attendant,
-      // se connecter ouvre le compte de demonstration.
-      void signInDemo()
+      if (!form.email.trim() || !form.motDePasse) {
+        setAuthError('Renseigne ton adresse et ton mot de passe.')
+        return
+      }
+      void tenter(() => signInWithPassword(form.email, form.motDePasse))
       return
     }
+
     if (!validate()) return
 
-    void signUp({
-      role: form.role,
-      prenom: form.prenom,
-      nom: form.nom || form.prenom,
-      email: form.email,
-      motDePasse: form.motDePasse,
-      niveau_scolaire: form.niveau || null,
-      date_naissance: form.naissance || null,
-      email_parent: needsParentalConsent ? form.emailParent : null,
-      consentement_parental: form.consentement,
-    })
+    void tenter(() =>
+      signUp({
+        role: form.role,
+        prenom: form.prenom,
+        nom: form.nom || form.prenom,
+        email: form.email,
+        motDePasse: form.motDePasse,
+        niveau_scolaire: form.niveau || null,
+        date_naissance: form.naissance || null,
+        email_parent: needsParentalConsent ? form.emailParent : null,
+        consentement_parental: form.consentement,
+      }),
+    )
   }
 
   return (
@@ -158,6 +167,30 @@ export default function LoginPage() {
               {mode === 'inscription' ? 'Se connecter' : 'Créer un compte'}
             </button>
           </p>
+
+          <Button
+            variant="secondary"
+            size="lg"
+            fullWidth
+            disabled={pending}
+            onClick={() => void tenter(signInWithGoogle)}
+            className="mb-5"
+          >
+            <GoogleMark size={17} />
+            Continuer avec Google
+          </Button>
+
+          <div className="mb-5 flex items-center gap-3">
+            <span className="h-px flex-1 bg-line" />
+            <span className="text-[11.5px] text-ink-faint">ou par email</span>
+            <span className="h-px flex-1 bg-line" />
+          </div>
+
+          {authError && (
+            <Notice tone="progress" icon="!" className="mb-4">
+              {authError}
+            </Notice>
+          )}
 
           <form onSubmit={handleSubmit} noValidate>
             {mode === 'inscription' && (
@@ -303,28 +336,48 @@ export default function LoginPage() {
               </div>
             )}
 
-            <Button type="submit" size="lg" fullWidth className="mt-5">
-              {mode === 'inscription' ? 'Créer mon compte' : 'Me connecter'}
+            <Button type="submit" size="lg" fullWidth className="mt-5" disabled={pending}>
+              {pending
+                ? 'Un instant…'
+                : mode === 'inscription'
+                  ? 'Créer mon compte'
+                  : 'Me connecter'}
             </Button>
           </form>
 
-          <div className="my-5 flex items-center gap-3">
-            <span className="h-px flex-1 bg-line" />
-            <span className="text-[11.5px] text-ink-faint">ou</span>
-            <span className="h-px flex-1 bg-line" />
-          </div>
-
-          <Button variant="secondary" size="lg" fullWidth onClick={() => void signInDemo()}>
-            Continuer avec le compte de démonstration
-          </Button>
-
-          <button
-            type="button"
-            onClick={() => void signInTeacher()}
-            className="mt-4 w-full text-center text-[12.5px] font-semibold text-accent hover:text-accent-600"
-          >
-            Voir l'espace professeur
-          </button>
+          {/* Entrees de demonstration : uniquement quand l'app tourne sur
+              donnees factices. En production elles n'ont rien a faire la, et
+              surtout elles ne doivent pas occuper la place de Google. */}
+          {isDemo && (
+            <div className="mt-6 rounded-card border border-dashed border-locked-200 p-4">
+              <p className="mb-3 text-[11px] font-semibold uppercase leading-none tracking-[0.06em] text-ink-faint">
+                Mode démonstration
+              </p>
+              <p className="mb-3 text-[11.5px] leading-relaxed text-ink-subtle">
+                Le backend n'est pas configuré. Ces deux comptes ouvrent des données factices.
+              </p>
+              <div className="flex flex-col gap-2">
+                <Button
+                  variant="secondary"
+                  size="sm"
+                  fullWidth
+                  disabled={pending}
+                  onClick={() => void tenter(() => signInWithPassword('lea.d@email.fr', 'demo'))}
+                >
+                  Élève de démonstration (Léa, 4e)
+                </Button>
+                <Button
+                  variant="ghost"
+                  size="sm"
+                  fullWidth
+                  disabled={pending}
+                  onClick={() => void tenter(() => signInWithPassword('marc.b@email.fr', 'demo'))}
+                >
+                  Espace professeur
+                </Button>
+              </div>
+            </div>
+          )}
 
           <p className="mt-6 text-center text-[11px] leading-relaxed text-ink-faint">
             Données hébergées dans l'Union européenne. Un parent peut retirer son accord et

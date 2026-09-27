@@ -12,6 +12,7 @@ import { IconArrowRight, IconChevronRight, IconMindmap, IconVideo } from '@/comp
 import { useAuthenticatedSession } from '@/state/session'
 import { useBookings } from '@/state/useBookings'
 import { useDailyPlan, type ReviewItem } from '@/state/usePlan'
+import type { Skill } from '@/types/content'
 
 // Ecran 4, variante A "plan du jour" (maquettes 1f desktop, 1h mobile + etat
 // vide). La journee est deja decidee pour l'eleve : priorite, puis revisions,
@@ -33,9 +34,11 @@ export default function WorkspacePage() {
           subtitle={
             plan.needsPlacement
               ? 'Fais le test de positionnement pour que ton parcours se construise.'
-              : plan.isDayDone
-                ? "Tout est à jour. Repasse demain, ou prends de l'avance."
-                : `${plan.totalMinutes} minutes aujourd'hui : ${describePlan(plan.priorityExerciseCount, plan.reviews.length)}.`
+              : plan.blockedOnMissingContent
+                ? 'Tes révisions sont à jour. Les exercices de ta prochaine compétence arrivent très bientôt.'
+                : plan.isDayDone
+                  ? "Tout est à jour. Repasse demain, ou prends de l'avance."
+                  : `${plan.totalMinutes} minutes aujourd'hui : ${describePlan(plan.priorityExerciseCount, plan.reviews.length)}.`
           }
           actions={
             <div className="hidden items-center gap-3 lg:flex">
@@ -52,15 +55,15 @@ export default function WorkspacePage() {
 
         {profile.role === 'eleve' && !profile.consentement_parental_at && profile.email_parent && (
           <Notice tone="progress" icon="!" className="mb-5">
-            En attente de l'accord de ton parent. Un email a été envoyé à {profile.email_parent}.{' '}
-            <button type="button" className="font-semibold underline underline-offset-2">
-              Renvoyer
-            </button>
+            En attente de l'accord de {profile.email_parent}. Tu peux travailler normalement en
+            attendant.
           </Notice>
         )}
 
         {plan.needsPlacement ? (
           <PlacementInvite />
+        ) : plan.blockedOnMissingContent ? (
+          <ContentComingSoon nextSkill={plan.rootGaps[0] ?? null} />
         ) : plan.isDayDone ? (
           <DayDone />
         ) : (
@@ -152,6 +155,36 @@ function PlacementInvite() {
           <ButtonLink to="/test" size="lg">
             Faire le test
           </ButtonLink>
+        }
+      />
+    </Card>
+  )
+}
+
+/**
+ * La prochaine lacune de l'eleve existe, mais sa banque d'exercices n'est pas
+ * encore ecrite. On le dit tel quel plutot que de pretendre que tout est fait,
+ * et on le renvoie vers ce qu'il peut reellement faire.
+ */
+function ContentComingSoon({ nextSkill }: { nextSkill: Skill | null }) {
+  return (
+    <Card tone="dashed" className="py-10">
+      <EmptyState
+        title="Les exercices arrivent"
+        description={
+          nextSkill
+            ? `Ta prochaine compétence est « ${nextSkill.label} ». Ses exercices sont en cours d'écriture. En attendant, revois tes cartes mémoire ou explore ton parcours.`
+            : "Les exercices de ta prochaine compétence sont en cours d'écriture. En attendant, revois tes cartes mémoire ou explore ton parcours."
+        }
+        action={
+          <ButtonLink to="/cartes" size="lg">
+            Revoir mes cartes
+          </ButtonLink>
+        }
+        secondaryAction={
+          <Link to="/parcours" className="text-[13px] font-semibold text-accent">
+            Voir mon parcours
+          </Link>
         }
       />
     </Card>

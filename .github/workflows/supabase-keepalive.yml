@@ -1,0 +1,93 @@
+# Maintient le projet Supabase de MATH EDUCATION en eveil.
+#
+# Pourquoi : le tier gratuit met un projet en pause apres une semaine sans
+# activite, puis finit par le supprimer. Le premier projet (cree le 10 juillet
+# 2026) a ete perdu comme ca. Sur un projet developpe 4h par semaine, avec des
+# vacances et des semaines creuses, ca se reproduira sans garde-fou.
+#
+# Ce workflow fait une vraie requete API par semaine, ce qui suffit a compter
+# comme activite. Et s'il echoue, GitHub envoie un email : on apprend que le
+# projet est tombe tout de suite, pas trois mois plus tard.
+#
+# MISE EN PLACE (une fois) :
+#   Settings -> Secrets and variables -> Actions -> New repository secret
+#     SUPABASE_URL       = https://<ref>.supabase.co
+#     SUPABASE_ANON_KEY  = la cle anon publique
+#   Ces deux valeurs sont publiques (la cle anon est protegee par les politiques
+#   RLS), mais les passer en secrets evite de committer une URL de projet et
+#   permet de la changer sans toucher au fichier.
+#
+# LIMITE A CONNAITRE : GitHub desactive les workflows planifies apres 60 jours
+# sans aucun commit sur le depot. Si tu laisses le projet dormir plus longtemps
+# que ca, il faudra reactiver le workflow a la main dans l'onglet Actions.
+
+name: Supabase keepalive
+
+on:
+  schedule:
+    # Tous les lundis a 6h TU. Un cron hebdomadaire suffit : la mise en pause
+    # intervient au bout de 7 jours.
+    - cron: '0 6 * * 1'
+  # Bouton "Run workflow" dans l'onglet Actions, pour verifier tout de suite.
+  workflow_dispatch:
+
+# Deux executions simultanees ne servent a rien.
+concurrency:
+  group: supabase-keepalive
+  cancel-in-progress: true
+
+jobs:
+  ping:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    steps:
+      - name: Interroger l'API du projet
+        env:
+          URL: ${{ secrets.SUPABASE_URL }}
+          KEY: ${{ secrets.SUPABASE_ANON_KEY }}
+        run: |
+          set -euo pipefail
+
+          if [ -z "${URL:-}" ] || [ -z "${KEY:-}" ]; then
+            echo "::error::Les secrets SUPABASE_URL et SUPABASE_ANON_KEY ne sont pas configures."
+            exit 1
+          fi
+
+          echec=0
+
+          # 1. Service d'authentification. C'est le controle fiable : il repond
+          #    200 avec une simple cle publishable.
+          code=$(curl -s -o /dev/null -w '%{http_code}' --max-time 30 \
+                   -H "apikey: $KEY" "${URL}/auth/v1/health" || echo 000)
+          echo "/auth/v1/health -> HTTP ${code}"
+          case "$code" in
+            2*) ;;
+            *) echec=1 ;;
+          esac
+
+          # 2. Base de donnees, via une vraie requete PostgREST.
+          #
+          #    Attention au piege : la racine /rest/v1/ renvoie 401 avec une cle
+          #    publishable, car l'OpenAPI n'est servi qu'a la service_role. Ce
+          #    401 ne signale donc AUCUNE panne. On interroge une table, et on
+          #    accepte tout ce qui prouve que PostgREST a repondu :
+          #      200 lecture autorisee
+          #      401 / 403 refus RLS, ce qui est normal sans session
+          #      404 table absente, la migration n'a pas tourne, mais le service
+          #          est bien debout
+          #    Seuls 000 (injoignable) et 5xx sont des pannes.
+          code=$(curl -s -o /dev/null -w '%{http_code}' --max-time 30 \
+                   -H "apikey: $KEY" "${URL}/rest/v1/profiles?select=id&limit=1" || echo 000)
+          echo "/rest/v1/profiles -> HTTP ${code}"
+          case "$code" in
+            200|401|403|404) ;;
+            *) echec=1 ;;
+          esac
+
+          if [ "$echec" -ne 0 ]; then
+            echo "::error::Le projet Supabase ne repond pas. Il est probablement en pause : verifier sur supabase.com."
+            exit 1
+          fi
+
+          echo "Projet joignable, mis en eveil pour la semaine."

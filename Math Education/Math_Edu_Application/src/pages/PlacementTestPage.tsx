@@ -1,5 +1,5 @@
-import { useState } from 'react'
-import { Link, useNavigate } from 'react-router-dom'
+import { useCallback, useEffect, useState } from 'react'
+import { Link } from 'react-router-dom'
 
 import { getSkill, requireSkill, skills as allSkills } from '@/content'
 import { buildPathToTarget, emptyProgress, findRootGaps, type ProgressMap } from '@/lib/dag'
@@ -18,7 +18,7 @@ import { Wordmark } from '@/components/layout/AppShell'
 import { Badge } from '@/components/ui/Badge'
 import { Button, ButtonLink } from '@/components/ui/Button'
 import { Card, SectionLabel } from '@/components/ui/Card'
-import { Level } from '@/components/ui/Misc'
+import { Level, LoadingScreen } from '@/components/ui/Misc'
 import { StepProgress } from '@/components/ui/Progress'
 import { RichText } from '@/components/ui/RichText'
 import { useAuthenticatedSession } from '@/state/session'
@@ -35,7 +35,6 @@ type Phase = 'test' | 'resultat'
 
 export default function PlacementTestPage() {
   const { session, completePlacement } = useAuthenticatedSession()
-  const navigate = useNavigate()
 
   const [state, setState] = useState<PlacementState>(() =>
     startPlacement(session.profile.niveau_scolaire),
@@ -51,7 +50,7 @@ export default function PlacementTestPage() {
   const exercise = state.current ? placementExercise(state.current) : null
   const currentSkill = state.current ? getSkill(state.current) : null
 
-  const finish = (finalState: PlacementState) => {
+  const finish = useCallback((finalState: PlacementState) => {
     const progress: ProgressMap = {}
     for (const skill of allSkills) {
       const isMastered = finalState.mastered.includes(skill.id)
@@ -83,7 +82,16 @@ export default function PlacementTestPage() {
     setResult(placement)
     completePlacement(placement, progress)
     setPhase('resultat')
-  }
+  }, [session.profile.niveau_scolaire, completePlacement])
+
+  // Filet de securite : si la competence courante n'a aucune question a poser
+  // (contenu incomplet, ou test deja termine), on cloture le positionnement avec
+  // ce qui a deja ete mesure. L'eleve ne doit jamais se retrouver sur un ecran
+  // sans issue : c'est le premier ecran apres son inscription.
+  useEffect(() => {
+    if (phase !== 'test' || exercise) return
+    finish(state)
+  }, [phase, exercise, state, finish])
 
   const validate = () => {
     if (!exercise || !state.current || answer === '') return
@@ -110,20 +118,10 @@ export default function PlacementTestPage() {
     return <PlacementResultView result={result} prenom={session.profile.prenom} />
   }
 
+  // L'effet ci-dessus cloture le test dans la foulee : on n'affiche jamais
+  // d'impasse, seulement le temps d'un rendu.
   if (!exercise || !currentSkill) {
-    return (
-      <div className="flex min-h-full items-center justify-center p-8 text-center">
-        <div>
-          <p className="font-display text-xl text-ink">Aucune question disponible</p>
-          <p className="mt-2 text-[13px] text-ink-subtle">
-            Le contenu pilote ne couvre pas encore ce niveau.
-          </p>
-          <Button className="mt-5" onClick={() => navigate('/travail')}>
-            Aller à mon espace
-          </Button>
-        </div>
-      </div>
-    )
+    return <LoadingScreen label="Analyse de tes réponses…" />
   }
 
   return (

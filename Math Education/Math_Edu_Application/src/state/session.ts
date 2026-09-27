@@ -1,6 +1,6 @@
 import { createContext, useContext } from 'react'
 
-import type { Catalog, Session, SignUpInput } from '@/data'
+import type { Catalog, ProfileCompletion, Session, SignUpInput } from '@/data'
 import type { ProgressMap } from '@/lib/dag'
 import type { Correction } from '@/lib/exercise'
 import type { Exercise } from '@/types/content'
@@ -23,10 +23,29 @@ export interface SessionValue {
   status: SessionStatus
   session: Session | null
   catalog: Catalog
-  signInDemo: () => Promise<void>
-  signInTeacher: () => Promise<void>
+  /**
+   * Derniere ecriture echouee, ou null.
+   *
+   * L'etat local avance avant la confirmation du serveur. Si une ecriture
+   * echoue, l'eleve doit l'apprendre : il a peut-etre travaille pour rien. On
+   * ne corrige jamais silencieusement.
+   */
+  syncError: string | null
+  dismissSyncError: () => void
+
+  // --- Authentification ---------------------------------------------------
+
+  signInWithGoogle: () => Promise<void>
+  signInWithPassword: (email: string, motDePasse: string) => Promise<void>
   signUp: (input: SignUpInput) => Promise<void>
   signOut: () => Promise<void>
+  /** Complete un profil cree par OAuth (ecran /bienvenue). */
+  completeProfile: (completion: ProfileCompletion) => Promise<void>
+  /** Vrai quand l'application tourne sur donnees factices. */
+  isDemo: boolean
+
+  // --- Mutations ----------------------------------------------------------
+
   /** Enregistre une tentative d'exercice et fait progresser le DAG. */
   answerExercise: (exercise: Exercise, raw: string, durationS: number) => AnswerResult
   /** Marque une carte mentale comme revue : passe a l'echeance Leitner suivante. */

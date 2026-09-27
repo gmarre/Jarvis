@@ -10,6 +10,7 @@
 
 import {
   countUnlockedBy,
+  getExercisesForSkill,
   getSkill,
   levelRank,
   requireSkill,
@@ -121,14 +122,26 @@ export function findRootGaps(progress: ProgressMap, targetSkillId: string): stri
 }
 
 /**
+ * Une competence n'est travaillable que si sa banque d'exercices existe. Le
+ * contenu pilote ne couvre pas encore tout le DAG.
+ */
+export function isExercisable(skillId: string): boolean {
+  return getExercisesForSkill(skillId).length > 0
+}
+
+/**
  * Lacune racine unique servant de "priorite du jour". On prend la plus
  * ancienne dans le cursus : c'est elle qui bloque tout le reste.
+ *
+ * On saute les lacunes sans exercice : annoncer "0 exercices" puis ouvrir un
+ * ecran vide est pire que proposer la lacune suivante. Rend null quand aucune
+ * lacune n'est exercable, a l'appelant d'en tirer un message honnete.
  */
 export function findPrimaryRootGap(
   progress: ProgressMap,
   targetSkillId: string,
 ): string | null {
-  return findRootGaps(progress, targetSkillId)[0] ?? null
+  return findRootGaps(progress, targetSkillId).find(isExercisable) ?? null
 }
 
 export interface PathStep {

@@ -37,11 +37,61 @@ function byCursusAsc(a: Skill, b: Skill): number {
 }
 
 /**
+ * Une competence n'est interrogeable que si elle possede au moins un exercice.
+ *
+ * Le contenu pilote ne couvre pas encore tout le DAG. Sans ce garde-fou, le test
+ * tombait sur une competence sans exercice et s'arretait sur un ecran sans issue,
+ * pour la plupart des niveaux des la premiere bonne reponse.
+ */
+export function isTestable(skillId: string): boolean {
+  return getExercisesForSkill(skillId).length > 0
+}
+
+/** Voisins d'une competence : vers le haut ce qu'elle debloque, vers le bas ses prerequis. */
+function neighbours(skillId: string, direction: 'up' | 'down'): string[] {
+  return direction === 'up' ? getDependents(skillId) : (getSkill(skillId)?.prerequisites ?? [])
+}
+
+/**
+ * Competences interrogeables les plus proches d'une competence donnee, dans un
+ * sens ou dans l'autre, en ignorant celles deja evaluees.
+ *
+ * On traverse les competences sans exercice au lieu de s'y arreter : le
+ * diagnostic continue sa descente ou sa montee, il saute juste les trous du
+ * contenu. Rendues triees dans l'ordre du cursus.
+ */
+function nearestTestable(
+  from: string,
+  direction: 'up' | 'down',
+  isTested: (id: string) => boolean,
+): Skill[] {
+  const seen = new Set<string>([from])
+  const found: Skill[] = []
+  const queue = [...neighbours(from, direction)]
+
+  while (queue.length > 0) {
+    const id = queue.shift() as string
+    if (seen.has(id)) continue
+    seen.add(id)
+
+    const skill = getSkill(id)
+    if (skill && !isTested(id) && isTestable(id)) {
+      // Frontiere atteinte de ce cote : on n'explore pas au-dela.
+      found.push(skill)
+      continue
+    }
+    queue.push(...neighbours(id, direction))
+  }
+
+  return found.sort(byCursusAsc)
+}
+
+/**
  * Premiere question : une competence du niveau de l'eleve, ou la plus proche
  * en dessous. On commence par ce qu'il est cense savoir faire, pas par le CP.
  */
 export function startPlacement(level: SchoolLevel | null): PlacementState {
-  const sorted = [...skills].sort(byCursusAsc)
+  const sorted = [...skills].filter((s) => isTestable(s.id)).sort(byCursusAsc)
   const target = level ? levelRank(level) : Math.floor(sorted.length / 2)
 
   const atOrBelow = sorted.filter((s) => levelRank(s.school_level) <= target)
@@ -104,27 +154,18 @@ export function answerPlacement(state: PlacementState, isCorrect: boolean): Plac
 
   if (isCorrect) {
     // On monte : la competence debloquee la plus proche, non encore evaluee.
-    const dependents = getDependents(state.current)
-      .filter((id) => !isTested(id))
-      .map((id) => getSkill(id))
-      .filter((s): s is Skill => Boolean(s))
-      .sort(byCursusAsc)
-    next = dependents[0]?.id ?? null
+    next = nearestTestable(state.current, 'up', isTested)[0]?.id ?? null
   } else {
     // On descend : un prerequis non encore evalue, le plus avance d'abord.
-    const prerequisites = (getSkill(state.current)?.prerequisites ?? [])
-      .filter((id) => !isTested(id))
-      .map((id) => getSkill(id))
-      .filter((s): s is Skill => Boolean(s))
-      .sort(byCursusAsc)
-    next = prerequisites[prerequisites.length - 1]?.id ?? null
+    const below = nearestTestable(state.current, 'down', isTested)
+    next = below[below.length - 1]?.id ?? null
   }
 
   // Branche close : on repart sur la frontiere, c'est-a-dire une competence
   // encore inconnue dont tous les prerequis sont deja acquis.
   if (!next) {
     const frontier = skills
-      .filter((s) => !isTested(s.id) && prerequisitesReady(s.id))
+      .filter((s) => !isTested(s.id) && isTestable(s.id) && prerequisitesReady(s.id))
       .sort(byCursusAsc)
     next = frontier[0]?.id ?? null
   }
@@ -157,7 +198,12 @@ export function placementExercise(skillId: string): Exercise | null {
  */
 export function pickObjectif(mastered: string[], level: SchoolLevel | null): string | null {
   const masteredSet = new Set(mastered)
-  const candidates = skills.filter((s) => !masteredSet.has(s.id)).sort(byCursusAsc)
+  const remaining = skills.filter((s) => !masteredSet.has(s.id))
+  // On vise en priorite une competence exercable : c'est sur l'objectif que
+  // l'eleve va reellement travailler. On ne retombe sur les autres que si le
+  // contenu ne couvre encore rien a son niveau.
+  const exercisable = remaining.filter((s) => isTestable(s.id))
+  const candidates = (exercisable.length > 0 ? exercisable : remaining).sort(byCursusAsc)
   if (candidates.length === 0) return null
 
   if (level) {

@@ -18,7 +18,7 @@ import { SCHOOL_LEVELS, type SchoolLevel } from '@/types/content'
 // c'est la donnee qui decide, pas une page separee.
 
 export default function ProfilePage() {
-  const { session, updateProfile, signOut } = useAuthenticatedSession()
+  const { session, updateProfile, signOut, isDemo } = useAuthenticatedSession()
   const plan = useDailyPlan()
   const navigate = useNavigate()
   const { profile } = session
@@ -32,6 +32,10 @@ export default function ProfilePage() {
   })
 
   const isTeacher = profile.role === 'prof'
+  // Les blocs scolaires (niveau, consentement parental, progression, abonnement)
+  // ne concernent que l'eleve. Un parent qui ouvre cet ecran ne doit pas se voir
+  // proposer un test de positionnement de mathematiques.
+  const isStudent = profile.role === 'eleve'
   const hasProgress = !plan.needsPlacement
 
   const save = () => {
@@ -92,7 +96,7 @@ export default function ProfilePage() {
                       onChange={(e) => setDraft({ ...draft, prenom: e.target.value })}
                     />
                   </Field>
-                  {!isTeacher && (
+                  {isStudent && (
                     <Field label="Niveau scolaire" htmlFor="p-niveau">
                       <Select
                         id="p-niveau"
@@ -116,7 +120,7 @@ export default function ProfilePage() {
                       onChange={(e) => setDraft({ ...draft, email: e.target.value })}
                     />
                   </Field>
-                  {!isTeacher && (
+                  {isStudent && (
                     <Field
                       label="Email du parent"
                       htmlFor="p-parent"
@@ -140,7 +144,7 @@ export default function ProfilePage() {
               ) : (
                 <dl className="grid gap-4 sm:grid-cols-2">
                   <ReadOnlyField label="Prénom" value={profile.prenom} />
-                  {!isTeacher && (
+                  {isStudent && (
                     <ReadOnlyField
                       label="Niveau scolaire"
                       value={profile.niveau_scolaire ?? 'À renseigner'}
@@ -148,7 +152,7 @@ export default function ProfilePage() {
                     />
                   )}
                   <ReadOnlyField label="Email" value={profile.email} />
-                  {!isTeacher && (
+                  {isStudent && (
                     <ReadOnlyField
                       label="Email du parent"
                       value={profile.email_parent ?? 'À renseigner'}
@@ -158,7 +162,7 @@ export default function ProfilePage() {
                 </dl>
               )}
 
-              {!isTeacher && (
+              {isStudent && (
                 <div className="mt-5">
                   {profile.consentement_parental_at ? (
                     <Notice tone="mastered">
@@ -168,12 +172,28 @@ export default function ProfilePage() {
                     </Notice>
                   ) : profile.email_parent ? (
                     <Notice tone="progress" icon="!">
-                      En attente de l'accord de ton parent. Un email a été envoyé à{' '}
-                      {profile.email_parent} —{' '}
-                      <button type="button" className="font-semibold underline underline-offset-2">
-                        renvoyer
-                      </button>
-                      .
+                      En attente de l'accord de {profile.email_parent}. L'envoi automatique de
+                      l'email de confirmation arrive au prochain jalon.
+                      {/* Raccourci de recette, mode demonstration uniquement. Contre
+                          la vraie base, un trigger refuse cette ecriture : un mineur
+                          ne doit pas pouvoir se confirmer a lui-meme l'accord de son
+                          parent. La confirmation passera par le lien envoye au parent. */}
+                      {isDemo && (
+                        <>
+                          {' '}
+                          <button
+                            type="button"
+                            onClick={() =>
+                              updateProfile({
+                                consentement_parental_at: new Date().toISOString(),
+                              })
+                            }
+                            className="font-semibold underline underline-offset-2"
+                          >
+                            Simuler la confirmation (démo)
+                          </button>
+                        </>
+                      )}
                     </Notice>
                   ) : (
                     <Notice tone="progress" icon="!">
@@ -186,7 +206,7 @@ export default function ProfilePage() {
             </Card>
 
             {/* Progression */}
-            {!isTeacher && (
+            {isStudent && (
               <Card>
                 <CardTitle
                   action={
@@ -234,7 +254,7 @@ export default function ProfilePage() {
           </div>
 
           <div className="flex flex-col gap-5">
-            {!isTeacher && <SubscriptionCard abonnement={profile.abonnement} />}
+            {isStudent && <SubscriptionCard abonnement={profile.abonnement} />}
 
             <Card>
               <CardTitle>Données &amp; confidentialité</CardTitle>
@@ -261,12 +281,7 @@ export default function ProfilePage() {
                 suivi pédagogique sont conservées.
               </p>
 
-              <button
-                type="button"
-                className="mt-4 text-[12.5px] font-semibold text-wrong-600 hover:underline"
-              >
-                Exporter ou supprimer mes données
-              </button>
+              <DataRights />
             </Card>
 
             <Card tone="flat">
@@ -362,9 +377,83 @@ function SubscriptionCard({
         </li>
       </ul>
 
-      <Button variant="secondary" fullWidth>
+      <ButtonLink to="/abonnement" variant="secondary" fullWidth>
         {abonnement ? "Gérer l'abonnement" : "Découvrir l'abonnement"}
-      </Button>
+      </ButtonLink>
     </Card>
+  )
+}
+
+/**
+ * Export et suppression des donnees : deux droits RGPD que l'ecran annoncait
+ * sans les rendre. L'export se fait cote client depuis la session courante, la
+ * suppression efface le compte local puis deconnecte.
+ *
+ * Au branchement de Supabase, l'export passera par le repository et la
+ * suppression par une fonction serveur, mais le contrat de cet ecran ne change
+ * pas : un bouton qui exporte, un bouton qui supprime apres confirmation.
+ */
+function DataRights() {
+  const { session, signOut } = useAuthenticatedSession()
+  const navigate = useNavigate()
+  const [confirming, setConfirming] = useState(false)
+  const [exported, setExported] = useState(false)
+
+  const exportData = () => {
+    const payload = {
+      exporte_le: new Date().toISOString(),
+      profil: session.profile,
+      progression: session.progress,
+      positionnement: session.placement,
+      tentatives: session.attempts,
+      reservations: session.bookings,
+    }
+
+    const url = URL.createObjectURL(
+      new Blob([JSON.stringify(payload, null, 2)], { type: 'application/json' }),
+    )
+    const link = document.createElement('a')
+    link.href = url
+    link.download = `racine-mes-donnees-${new Date().toISOString().slice(0, 10)}.json`
+    link.click()
+    URL.revokeObjectURL(url)
+
+    setExported(true)
+    window.setTimeout(() => setExported(false), 4000)
+  }
+
+  const deleteAccount = () => {
+    void signOut()
+    navigate('/connexion')
+  }
+
+  return (
+    <div className="mt-4 border-t border-divider pt-4">
+      <div className="flex flex-wrap gap-2.5">
+        <Button variant="secondary" size="sm" onClick={exportData}>
+          {exported ? 'Fichier téléchargé' : 'Exporter mes données'}
+        </Button>
+        {confirming ? (
+          <>
+            <Button size="sm" onClick={deleteAccount} className="bg-wrong-600 hover:bg-wrong-600">
+              Confirmer la suppression
+            </Button>
+            <Button variant="ghost" size="sm" onClick={() => setConfirming(false)}>
+              Annuler
+            </Button>
+          </>
+        ) : (
+          <Button variant="ghost" size="sm" onClick={() => setConfirming(true)}>
+            Supprimer mon compte
+          </Button>
+        )}
+      </div>
+      {confirming && (
+        <p role="alert" className="mt-2.5 text-[11.5px] leading-relaxed text-wrong-600">
+          Cette action efface définitivement ta progression, tes tentatives et tes réservations.
+          Elle est irréversible. Pense à exporter tes données avant.
+        </p>
+      )}
+    </div>
   )
 }

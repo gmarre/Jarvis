@@ -1,16 +1,31 @@
 // Selection du repository actif.
 //
-// Aujourd'hui : donnees factices. Au branchement de Supabase (Jalon 2), on
-// remplace la ligne ci-dessous par le repository Supabase, apres avoir cree les
-// tables et les politiques RLS. Les ecrans, eux, ne changent pas.
+// Supabase des que les cles sont presentes, sinon le mock. Ce basculement
+// automatique a deux vertus : l'application tourne sans backend (demonstration,
+// premiere prise en main, tests), et un oubli de variables d'environnement au
+// deploiement se voit immediatement puisque l'app repart en mode demonstration
+// au lieu de planter.
 //
-//   export const repository: DataRepository = isSupabaseConfigured
-//     ? supabaseRepository
-//     : mockRepository
+// Forcer le mock malgre des cles presentes : VITE_USE_MOCK=true dans .env.local.
+// Utile pour faire une demonstration sans toucher aux vraies donnees.
 
+import { isSupabaseConfigured } from '@/lib/supabase'
 import { mockRepository } from './mockRepository'
+import { supabaseRepository } from './supabaseRepository'
 import type { DataRepository } from './repository'
 
-export const repository: DataRepository = mockRepository
+const forcerMock = import.meta.env.VITE_USE_MOCK === 'true'
 
-export type { Catalog, Session, SignUpInput, DataRepository } from './repository'
+export const useMockData = forcerMock || !isSupabaseConfigured
+
+export const repository: DataRepository = useMockData ? mockRepository : supabaseRepository
+
+export type {
+  Catalog,
+  DataRepository,
+  NewSlot,
+  ProfileCompletion,
+  Session,
+  SignUpInput,
+} from './repository'
+export { RepositoryError, isProfileComplete } from './repository'

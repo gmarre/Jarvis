@@ -79,7 +79,7 @@ export function checkAnswer(exercise: Exercise, raw: string): Correction {
       if (given === null || target === null) {
         return { isCorrect: matchesAccepted(exercise, raw), expected, misconception: null }
       }
-      const tolerance = exercise.answer.tolerance ?? 0
+      const tolerance = exercise.answer.tolerance ?? floatNoise(target)
       const isCorrect =
         Math.abs(given - target) <= tolerance || matchesAccepted(exercise, raw)
       return { isCorrect, expected, misconception: null }
@@ -93,6 +93,20 @@ export function checkAnswer(exercise: Exercise, raw: string): Correction {
       return { isCorrect, expected, misconception: null }
     }
   }
+}
+
+/**
+ * Marge minimale absorbant le bruit des flottants, et rien de plus.
+ *
+ * Une comparaison stricte comptait faux une reponse juste a cause de la
+ * representation binaire : 3/4 saisi comme fraction donne 0.75 exactement, mais
+ * une somme comme 0.1 + 0.2 ne vaut pas 0.3 en JavaScript. Cette marge est
+ * volontairement minuscule : elle ne valide jamais une reponse arrondie. Une
+ * tolerance pedagogique (accepter 0,33 pour un tiers) est une decision de
+ * contenu et doit etre posee explicitement dans `answer.tolerance`.
+ */
+function floatNoise(target: number): number {
+  return Math.max(Number.EPSILON, Math.abs(target) * 1e-9)
 }
 
 function matchesAccepted(exercise: Exercise, raw: string): boolean {
