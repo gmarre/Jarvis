@@ -389,6 +389,82 @@ def check_champ_numerique(dag: dict, exercises: dict) -> None:
 
 
 # ---------------------------------------------------------------------------
+#  Une notation ne s'emploie qu'une fois enseignee
+# ---------------------------------------------------------------------------
+# L'eleve parcourt le DAG lineairement. Un exercice ne peut donc pas employer
+# une notation dont la competence introductrice n'est pas un ancetre de la
+# sienne : il la decouvrirait dans l'enonce.
+# Constat du 22 aout 2026 : 7 exercices employaient < et > alors que A006,
+# qui les introduit, n'etait ancetre d'aucune de leurs competences.
+
+NOTATIONS = {
+    "A006": (re.compile(r"[<>]"), "les symboles < et >"),
+}
+
+
+def check_notations(dag: dict, exercises: dict) -> None:
+    graph = nx.DiGraph()
+    ids = {s["id"] for s in dag["skills"]}
+    for s in dag["skills"]:
+        graph.add_node(s["id"])
+        for p in s["prerequisites"]:
+            if p in ids:
+                graph.add_edge(p, s["id"])
+
+    for source, (motif, libelle) in NOTATIONS.items():
+        if source not in graph:
+            continue
+        autorisees = nx.descendants(graph, source) | {source}
+        for ex in exercises["exercises"]:
+            if ex["skill_id"] in autorisees:
+                continue
+            # L'eleve lit le corrige et l'indice autant que l'enonce : une
+            # notation non enseignee y est aussi bloquante qu'ailleurs. Trois
+            # relectures ont laisse passer cinq exercices de C026 parce que
+            # seules les zones "enonce / reponse / propositions" etaient vues.
+            zones = [("enonce", ex["statement"]), ("reponse", str(ex["answer"].get("value", "")))]
+            zones += [(f"proposition {c['key']}", c["text"]) for c in ex.get("choices", [])]
+            zones += [(f"corrige etape {i}", s) for i, s in enumerate(ex["solution_steps"], 1)]
+            if ex.get("hint"):
+                zones.append(("indice", ex["hint"]))
+            touchees = [nom for nom, z in zones if motif.search(z)]
+            if touchees:
+                err(
+                    f"Notation : {ex['id']} ({ex['skill_id']}) emploie {libelle} "
+                    f"dans {', '.join(touchees)} ; introduits par {source}, "
+                    f"qui n'est pas un prerequis de {ex['skill_id']}"
+                )
+
+
+# ---------------------------------------------------------------------------
+#  Aucun caractere de controle dans les champs lus par l'eleve
+# ---------------------------------------------------------------------------
+# Un antislash simple dans le JSON ("$rac{3}{8}$" au lieu de "$\frac{3}{8}$")
+# reste du JSON valide et passe le schema, mais le parseur produit un caractere
+# de controle : l'eleve lit "$rac{3}{8}$". Douze zones de texte etaient
+# touchees sur quatre exercices, tous introduits par une correction manuelle.
+
+_CTRL = re.compile("[" + chr(0) + "-" + chr(8) + chr(11) + "-" + chr(31) + chr(127) + "]")
+
+
+def check_caracteres_controle(exercises: dict) -> None:
+    for ex in exercises["exercises"]:
+        zones = [("enonce", ex["statement"])]
+        zones += [(f"proposition {c['key']}", c["text"]) for c in ex.get("choices", [])]
+        zones += [(f"corrige etape {i}", s) for i, s in enumerate(ex["solution_steps"], 1)]
+        if ex.get("hint"):
+            zones.append(("indice", ex["hint"]))
+        for nom, z in zones:
+            trouves = _CTRL.findall(z)
+            if trouves:
+                err(
+                    f"Caractere de controle : {ex['id']} ({nom}) contient "
+                    f"{', '.join(sorted({hex(ord(c)) for c in trouves}))} "
+                    f"— probable antislash non double dans le JSON"
+                )
+
+
+# ---------------------------------------------------------------------------
 #  L'exemple de format ne doit jamais donner la reponse
 # ---------------------------------------------------------------------------
 # Defaut systematique releve a la seconde relecture : le generateur illustre le
@@ -473,6 +549,108 @@ def check_programme_ref(dag: dict, exercises: dict) -> None:
             )
 
 
+# ---------------------------------------------------------------------------
+#  Schemas ASCII : format rejete par le lead contenu
+# ---------------------------------------------------------------------------
+# Une figure dessinee en caracteres ("0 |----|----| 1") a ete essayee comme
+# substitut a l'illustration manquante d'une bande-unite graduee. Marius ne
+# l'a pas comprise a la relecture. Quand une figure est necessaire, c'est une
+# image qu'il faut produire, pas un dessin en texte.
+
+_ASCII = re.compile(r"-{3,}\|| \|-{2,}|\|-{2,}\|")
+
+
+def check_schema_ascii(exercises: dict) -> None:
+    for ex in exercises["exercises"]:
+        for nom, texte, _ in _textes_exercice(ex):
+            if _ASCII.search(texte):
+                err(
+                    f"Schema ASCII : {ex['id']} ({nom}) dessine une figure en caracteres. "
+                    f"Produire une image, ou reformuler en toutes lettres"
+                )
+
+
+# ---------------------------------------------------------------------------
+#  Le test de positionnement ne doit pas etre rejoue par la competence
+# ---------------------------------------------------------------------------
+# Le validation_test sert a decider si l'eleve doit travailler la competence.
+# Quand l'exercice de decouverte reprend les memes nombres, l'eleve envoye la
+# parce qu'il a rate le test y retrouve le meme item : le test cesse de
+# mesurer quoi que ce soit de distinct. Constate sur 19 competences sur 35.
+
+
+def _nombres(texte: str) -> set[str]:
+    return set(re.findall(r"\d+", _normalise(texte)))
+
+
+def check_test_recopie(dag: dict, exercises: dict) -> None:
+    par_comp: dict[str, list[dict]] = {}
+    for ex in exercises["exercises"]:
+        par_comp.setdefault(ex["skill_id"], []).append(ex)
+    for skill in dag["skills"]:
+        attendus = _nombres(skill.get("validation_test") or "")
+        if not attendus:
+            continue
+        for ex in par_comp.get(skill["id"], []):
+            if ex["level"] != "decouverte":
+                continue
+            if attendus <= _nombres(ex["statement"]):
+                warn(
+                    f"Test de positionnement : {ex['id']} reprend les nombres de "
+                    f"« {skill['validation_test']} », le test de {skill['id']}"
+                )
+
+
+# ---------------------------------------------------------------------------
+#  Deux exercices d'une competence ne doivent pas attendre la meme reponse
+# ---------------------------------------------------------------------------
+# Sinon l'eleve qui se souvient de la premiere reussit la seconde sans refaire
+# le travail, et l'exercice ne discrimine plus. Les QCM sont exclus : la cle de
+# la bonne proposition se repete legitimement.
+
+
+def check_reponses_dupliquees(exercises: dict) -> None:
+    par_comp: dict[str, dict[str, list[str]]] = {}
+    for ex in exercises["exercises"]:
+        # QCM et vrai/faux exclus : la cle de la bonne proposition et les deux
+        # valeurs booleennes se repetent legitimement.
+        if ex["type"] in ("qcm", "vrai_faux"):
+            continue
+        valeur = str(ex["answer"].get("value"))
+        par_comp.setdefault(ex["skill_id"], {}).setdefault(valeur, []).append(ex["id"])
+    for skill, valeurs in sorted(par_comp.items()):
+        for valeur, ids in valeurs.items():
+            if len(ids) > 1:
+                warn(
+                    f"Reponses : {skill} attend {valeur!r} dans {len(ids)} exercices "
+                    f"({', '.join(ids)})"
+                )
+
+
+# ---------------------------------------------------------------------------
+#  Un enonce doit se suffire a lui-meme
+# ---------------------------------------------------------------------------
+# « les memes 36 cartes », « sur la meme demi-droite », « Marc cherche
+# maintenant » : l'exercice suppose que le precedent vient d'etre servi. Rien
+# ne le garantit tant que le champ 'serie' n'existe pas dans le schema.
+
+_ANAPHORE = re.compile(
+    r"\b(toujours avec|les m[eê]mes|sur la m[eê]me|maintenant|[aà] nouveau|"
+    r"pr[eé]c[eé]dent|comme ci-dessus|reprends)\b",
+    re.IGNORECASE,
+)
+
+
+def check_enonce_orphelin(exercises: dict) -> None:
+    for ex in exercises["exercises"]:
+        trouve = _ANAPHORE.search(ex["statement"])
+        if trouve:
+            warn(
+                f"Enonce : {ex['id']} renvoie a un exercice precedent "
+                f"(« {trouve.group(0)} ») alors que le champ 'serie' n'existe pas"
+            )
+
+
 def main() -> int:
     print("Validation du contenu MATH EDUCATION\n")
 
@@ -525,6 +703,31 @@ def main() -> int:
         err_avant = len(errors)
         check_exemple_format(exercises)
         print(f"  exemple de format     {'OK' if len(errors) == err_avant else 'ANOMALIES'}")
+
+        err_avant = len(errors)
+        check_notations(dag, exercises)
+        print(f"  notations enseignees  {'OK' if len(errors) == err_avant else 'ANOMALIES'}")
+
+        err_avant = len(errors)
+        check_caracteres_controle(exercises)
+        print(f"  caracteres de controle {'OK' if len(errors) == err_avant else 'ANOMALIES'}")
+
+        err_avant = len(errors)
+        check_schema_ascii(exercises)
+        print(f"  schemas ASCII         {'OK' if len(errors) == err_avant else 'ANOMALIES'}")
+
+        print("\nDiagnostic et progression")
+        warn_avant = len(warnings)
+        check_test_recopie(dag, exercises)
+        print(f"  test de positionnement {'OK' if len(warnings) == warn_avant else 'A VERIFIER'}")
+
+        warn_avant = len(warnings)
+        check_reponses_dupliquees(exercises)
+        print(f"  reponses distinctes   {'OK' if len(warnings) == warn_avant else 'A VERIFIER'}")
+
+        warn_avant = len(warnings)
+        check_enonce_orphelin(exercises)
+        print(f"  enonces autonomes     {'OK' if len(warnings) == warn_avant else 'A VERIFIER'}")
 
     print()
     if warnings:
