@@ -1,7 +1,9 @@
 # Contenu pédagogique MATH EDUCATION
 
 > Livraison de Marius (lead contenu) pour Gauthier (lead développement).
-> Tranche pilote : 26 compétences, 69 exercices, 4 cartes mentales.
+> Tranche pilote, état au 30 septembre 2026 : **38 compétences (v2.1), 69 exercices
+> en `relu_agent`, 6 cartes mentales.** Ces fichiers sont copiés et consommés par
+> l'application.
 
 ---
 
@@ -16,16 +18,16 @@ Spécifications DAG, Exos, Mindcards/
 │   └── mindmaps.schema.json
 │
 ├── content/                      ← LE CONTENU, conforme aux schémas
-│   ├── skills_dag_v2.json        26 compétences (A, B partiel, C)
+│   ├── skills_dag_v2.json        v2.1 : 38 compétences (A, B partiel, C)
 │   ├── exercises.json            69 exercices
-│   └── mindmaps.json             4 cartes mentales
+│   └── mindmaps.json             6 cartes mentales
 │
 ├── skills_dag.json               ← v1.0 d'origine, 414 compétences. CONSERVÉ tel quel.
 ├── CORRECTIONS_DAG_v2.md         ← ce qui a changé entre v1 et v2, et pourquoi
 └── README.md                     ← ce fichier
 ```
 
-Le fichier `skills_dag.json` v1.0 n'est pas modifié. La v2 est une **tranche**, pas un remplacement : elle ne couvre que 26 des 414 compétences.
+Le fichier `skills_dag.json` v1.0 n'est pas modifié. La v2 est une **tranche**, pas un remplacement : elle ne couvre que 38 des 414 compétences.
 
 ---
 
@@ -63,7 +65,8 @@ npx json-schema-to-typescript "Spécifications DAG, Exos, Mindcards/schemas/skil
 - **`choices[].misconception`** décrit l'erreur de raisonnement que révèle chaque distracteur. Inutile au MVP, mais c'est la matière première du diagnostic fin plus tard : ne pas la jeter.
 - **`mastery_threshold`** vaut `{required: 2, out_of: 3}` dans cette tranche, parce qu'il n'y a que 3 exercices par compétence. La cible de la roadmap une fois la banque complète (5 × 3) est `{3, 4}`. **Lis toujours la valeur du fichier, ne la code pas en dur.**
 - **`mindmap_id` peut être `null`**, et `exercise_ids` peut être vide (c'est le cas des 3 compétences du domaine B). Prévoir l'état vide.
-- **Les exercices sont tous en `review_status: "brouillon"`.** Aucun n'a encore passé la double validation exigée par la roadmap §9. Utilisables pour développer, **pas** pour être montrés à un élève.
+- **Les exercices sont tous en `review_status: "relu_agent"`.** L'agent `math-reviewer` est passé (taux d'erreur final 2,9 %, voir `QUALITY.md`), mais **la relecture humaine de Marius reste à faire.** La règle d'or du projet exige les deux : utilisables pour développer, **pas encore** pour être montrés à un élève.
+- **15 des 38 compétences n'ont aucun exercice** : `exercise_ids` y est vide. L'application les contourne (le test de positionnement les saute plutôt que de s'y bloquer), mais prévoir l'état vide reste nécessaire.
 
 ---
 
@@ -102,15 +105,19 @@ powershell -ExecutionPolicy Bypass -File .\scripts\setup-toolchain.ps1
 
 | Point | État |
 |---|---|
-| Contrat d'interface (3 schémas) | Posé, à valider par Gauthier |
-| Compétences | 26 sur 414 |
-| Exercices | 69, soit 3 par compétence (cible roadmap : 15) |
-| Cartes mentales | 4, couvrant les 23 compétences des domaines A et C |
-| Relecture mathématique | **Aucune.** Tout est en `brouillon`. |
+| Contrat d'interface (3 schémas) | Posé, validé, et consommé par l'application |
+| Compétences | **38 sur 414** (v2.1) |
+| Exercices | 69, répartis sur 23 compétences seulement. **15 des 38 compétences n'ont aucun exercice** (cible roadmap : 15 par compétence) |
+| Cartes mentales | **6**, reliées à 35 des 38 compétences |
+| Relecture mathématique | **Agent passé, les 69 sont en `relu_agent`.** Taux d'erreur final 2,9 %, détail dans `QUALITY.md`. **La relecture humaine de Marius reste à faire**, c'est la prochaine étape. |
 | Illustrations | Aucune. `image` vaut `null` partout, les énoncés sont formulés pour s'en passer, mais le primaire en aura besoin. |
 | Domaine B | 3 compétences sans contenu, présentes uniquement comme prérequis |
 
-**Ce qui manque avant de montrer quoi que ce soit à un élève :** le passage de l'agent `math-reviewer` puis la relecture humaine, sur 100 % des exercices de la tranche pilote (roadmap §1.4). C'est la prochaine étape côté contenu.
+**Ce qui manque avant de montrer quoi que ce soit à un élève :** la relecture humaine de Marius sur les 69 exercices. L'agent `math-reviewer` est passé (trois tours, 17,4 % puis 4,5 % puis 2,9 % d'erreur), mais la règle d'or du projet exige la double validation, et l'humain n'a pas encore tranché.
+
+**Les 15 compétences sans exercice :** B001, B005, B006, C026, C027, C029, C030, C031, C032, A012, A013, A014, A026, A027, A028. L'application sait les contourner sans casser depuis septembre 2026, mais elles dégradent la précision du diagnostic : le test de positionnement les saute, donc il mesure moins finement.
+
+**Ces 3 fichiers sont déjà copiés et consommés par l'application** (`Math_Edu_Application/src/content/`). Toute livraison doit y être recopiée, et validée par `../scripts/validate_content.py`. À terme (sprint 3), un script de seed les chargera en base, mais Git restera la source de vérité.
 
 ---
 

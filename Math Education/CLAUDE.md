@@ -1,6 +1,8 @@
 # CLAUDE.md — MATH EDUCATION
 
-> Fichier de contexte unique du projet MATH EDUCATION. Chargé automatiquement au début de chaque session Claude Code travaillant dans ce dossier (et à terme dans le repo GitHub `math-education`). C'est la source de vérité du projet : le tenir à jour rend chaque session immédiatement productive.
+> Fichier de contexte du projet MATH EDUCATION, chargé automatiquement au début de chaque session Claude Code travaillant dans ce dossier. Il porte le **savoir durable** : vision, DAG, modèle économique, architecture, contrats, procédures manuelles, pièges connus et décisions déjà tranchées.
+>
+> **L'avancement sprint par sprint vit dans `Math_Edu_Application/ROADMAP.md`**, pour qu'un seul fichier ait à être mis à jour à chaque livraison. En cas de divergence sur « où on en est », c'est `ROADMAP.md` qui fait foi.
 >
 > Ce fichier ne concerne QUE MATH EDUCATION. Les projets TRADING et CHARTER sont étanches, aucune information de ces projets n'a sa place ici.
 >
@@ -10,12 +12,12 @@
 
 ## 1. Le projet en bref
 
-MATH EDUCATION est une application web d'apprentissage adaptatif des mathématiques pour les élèves du **CP à la Terminale spécialité**. Sa différenciation repose sur un DAG (graphe orienté acyclique) de **414 compétences réparties en 15 domaines** : le système localise précisément le point de blocage d'un élève (même 2 classes en arrière), puis lui fait travailler uniquement ce qu'il doit.
+MATH EDUCATION est une application web d'apprentissage adaptatif des mathématiques pour les élèves du **CP à la Terminale spécialité**. Nom de produit : **Racine**. Sa différenciation repose sur un DAG (graphe orienté acyclique) de **414 compétences réparties en 15 domaines** : le système localise précisément le point de blocage d'un élève (même 2 classes en arrière), puis lui fait travailler uniquement ce qu'il doit.
 
 - **Équipe :** Gauthier (lead développement & produit) et Marius (lead contenu mathématique), co-fondateurs 50/50.
-- **Objectif :** MVP en ligne avant **septembre 2026** (rentrée scolaire), puis 1 mois de test utilisateur et recrutement des premiers élèves.
-- **Contraintes :** budget max **500€**, disponibilité max **4h/semaine par personne**.
-- **Référence maîtresse :** `Management de Projet/MATH_EDUCATION_Roadmap.docx` (v2.0, 7 juillet 2026). En cas de divergence, la Roadmap fait foi. Ce CLAUDE.md en est la synthèse opérationnelle.
+- **Contraintes :** budget max **500€**, disponibilité max **4h/semaine par personne**. Ces deux chiffres commandent toutes les décisions techniques du projet. Quand une option est « plus propre mais plus longue », c'est presque toujours la plus courte qui gagne.
+- **Objectif révisé :** bêta fermée de 5 à 10 élèves **fin novembre 2026**, ouverture aux premiers élèves en **janvier 2027** (retour des vacances de Noël, second créneau naturel de l'année scolaire). La cible d'origine, un MVP avant la rentrée de septembre 2026, n'a pas été tenue.
+- **Le planning du `.docx` est dépassé.** `Management de Projet/MATH_EDUCATION_Roadmap.docx` (v2.0, 7 juillet 2026) découpait le travail en jalons 1 à 6 sur 9 semaines de juillet à septembre 2026. Sa vision produit reste valable, son planning non.
 
 ---
 
@@ -34,11 +36,13 @@ MATH EDUCATION est une application web d'apprentissage adaptatif des mathématiq
 - **Cours particuliers : 20€ / 1h30**, réservables via un calendrier de disponibilités professeurs, max **3 élèves par cours**. Pendant le cours, le professeur voit le DAG de chaque élève et reçoit des suggestions d'exercices et de cartes mentales.
 - Abonnement professeur : à définir (ne pas cumuler avec la commission cours).
 
+**Où en est la monétisation :** nulle part, et c'est voulu. La plateforme est gratuite pendant la bêta. L'écran `/abonnement` informe du tarif à venir sans rien encaisser. Stripe est en itération 2. **Ne pas activer de paiement avant que la correction des réponses soit passée côté serveur** (sprint 3) : aujourd'hui un élève peut lire toutes les réponses dans le bundle, donc falsifier sa progression, ce qui est acceptable pendant une bêta gratuite et pas pour un service payant.
+
 ---
 
 ## 3. Le DAG et les 4 briques de données
 
-Le DAG v1.0 (`Spécifications DAG, Exos, Mindcards/skills_dag.json`) contient 414 compétences. Chaque compétence a : `id` (ex. `A001`), `domain`, `label`, `description`, `prerequisites`, `difficulty`, `school_level`, `validation_test`.
+Le DAG v1.0 (`Spécifications DAG, Exos, Mindcards/skills_dag.json`) contient 414 compétences. Chaque compétence a : `id` (ex. `A001`), `domain`, `label`, `description`, `prerequisites`, `difficulty`, `school_level`, `validation_test`, et depuis la v2 `exercise_ids`, `mindmap_id`, `mastery_threshold`.
 
 **Les 15 domaines :**
 
@@ -53,16 +57,20 @@ Le DAG v1.0 (`Spécifications DAG, Exos, Mindcards/skills_dag.json`) contient 41
 | G | Géométrie plane | 44 | O | Espace et vecteurs | 20 |
 | H | Géométrie analytique | 20 | | | |
 
-**Les 4 briques de données du backend :**
+**Les 4 briques, état au 30 septembre 2026 :**
 
-| Brique | Contenu | Responsable / statut |
-|--------|---------|----------------------|
-| `skills_dag.json` | Graphe des 414 compétences. À enrichir : ajouter `exercise_ids`, `mindmap_id`, `mastery_threshold` (ex. 3 réussis sur 4) à chaque compétence. | **Marius** — v1 livrée, à enrichir |
-| `exercises.json` | Banque d'exercices par compétence, 3 niveaux de difficulté min., avec corrigés. | **Marius** — à créer |
-| `mindmaps.json` | Cartes mentales par compétence / chapitre (structure texte, rendu par l'app). | **Marius** — à créer |
-| Progression élève | État d'avancement de chaque élève sur le DAG (maîtrisée / en cours / bloquée). | **Gauthier** — base de données (§6) |
+| Brique | Contenu | État |
+|--------|---------|------|
+| `skills_dag.json` | Graphe enrichi (`exercise_ids`, `mindmap_id`, `mastery_threshold`) | **v2.1 : 38 compétences** sur 414 (domaines A et C, plus 3 de B en prérequis). Intégrité vérifiée : aucun cycle, aucun prérequis fantôme, aucun identifiant d'exercice ou de carte orphelin. |
+| `exercises.json` | Banque d'exercices, 3 niveaux, avec corrigés | **69 exercices**, tous en `relu_agent` (taux d'erreur final 2,9 %, suivi dans `QUALITY.md`). **15 des 38 compétences n'ont aucun exercice.** |
+| `mindmaps.json` | Cartes mentales en Markdown hiérarchique | **6 cartes**, reliées à 35 des 38 compétences. |
+| Progression élève | État d'avancement sur le DAG | **En base Supabase**, tables et politiques RLS actives. |
 
-Le contenu reste en **JSON versionné dans Git** (relecture par PR, diff, rollback). L'état des élèves vit en **base de données** (Supabase). Ne pas conserver le format « un fichier JSON par élève » au-delà des tout premiers tests locaux : il ne tient pas avec authentification, accès concurrent et déploiement.
+**Les 15 compétences sans exercice :** B001, B005, B006, C026, C027, C029, C030, C031, C032, A012, A013, A014, A026, A027, A028. Le code les contourne (le test de positionnement les saute au lieu de s'y bloquer), mais **elles dégradent la précision du diagnostic** : moins de points de mesure, donc une frontière de maîtrise plus floue.
+
+**Prochaine étape côté contenu :** la relecture humaine de Marius sur les 69 exercices, puis les exercices des 15 compétences vides.
+
+Le contenu reste en **JSON versionné dans Git** (relecture par PR, diff, rollback). Il sera chargé en base par un script de seed au sprint 3, mais Git demeure la source de vérité. Les 3 fichiers sont copiés à l'identique dans `Math_Edu_Application/src/content/` : toute livraison doit y être recopiée et validée par `scripts/validate_content.py`.
 
 ---
 
@@ -71,181 +79,415 @@ Le contenu reste en **JSON versionné dans Git** (relecture par PR, diff, rollba
 | Rôle | Périmètre | Outils Claude principaux |
 |------|-----------|--------------------------|
 | **Gauthier** — lead dev & produit | Architecture, frontend, base de données, auth, déploiement, moteur de recommandation, sécurité, paiement (itération 2), pilotage. | Claude Code (VS Code), `/plan`, `/security-review`, Claude Design, MCP GitHub & Supabase, Claude in Chrome. |
-| **Marius** — lead contenu math | Enrichissement du DAG, exercices + corrigés, cartes mentales, cohérence avec les programmes officiels, recette du contenu. | Claude.ai (Projet dédié), Claude Code (Desktop pour démarrer), agents `exercise-generator` et `math-reviewer`. |
+| **Marius** — lead contenu math | Enrichissement du DAG, exercices + corrigés, cartes mentales, cohérence avec les programmes officiels, recette du contenu. | Claude.ai (Projet dédié), Claude Code (Desktop), agents `exercise-generator` et `math-reviewer`. |
 
-**Contrat d'interface (clé du parallélisme) :** dès la S1, Gauthier et Marius figent les **3 schémas JSON** (`skills_dag` enrichi, `exercises.json`, `mindmaps.json`). Une fois figés, Marius produit le contenu et Gauthier développe l'app sur **données factices** respectant les mêmes schémas. Le merge de la S6 devient une simple substitution de fichiers. Générer des JSON Schemas de validation + un script `npm run validate` que Marius lance sur chaque livraison.
-
----
-
-## 5. Architecture technique cible (MVP)
-
-MATH EDUCATION est une **application** (comptes, base de données, logique métier), pas un site vitrine. Workflow de référence : Claude Design → `/plan` → Claude Code → Supabase → `/security-review` → déploiement.
-
-| Couche | Choix | Pourquoi |
-|--------|-------|----------|
-| Frontend | React (Vite) + Tailwind | Rapide à générer, écosystème riche pour visualiser le DAG. |
-| Visualisation DAG | react-flow, rendu **par domaine** (pas les 414 nœuds d'un coup) | Lisible, interactif, nœuds colorés selon la maîtrise. |
-| Base + Auth | Supabase (tier gratuit) : Postgres + auth email + RLS | Comptes élèves/profs, progression, réservations. RLS = données isolées par élève. |
-| Contenu pédagogique | JSON versionnés dans Git, chargés en base par script de seed | Relecture par PR, diff, rollback. |
-| Rendu math | KaTeX (LaTeX dans exercices et cartes) | Léger, standard. |
-| Cartes mentales | Markmap ou Mermaid mindmap (texte → rendu HTML) | Marius écrit du texte structuré, rendu automatique homogène. |
-| Hébergement | GitHub → Netlify (ou Vercel), domaine OVH (~12€/an) | Gratuit, déploiement auto à chaque push. |
-| Rappels type Duolingo | n8n auto-hébergé + emails (**itération 2**) | Workflows autonomes 24/24. |
-
-**État actuel du code :** l'application vit dans `Math_Edu_Application/` (Vite + React + TypeScript + Tailwind + react-router, client Supabase déjà câblé). Lancer avec `npm install` puis `npm run dev` (port 5173) ; `npm run build` pour le build de prod. Voir `Math_Edu_Application/README.md`.
-
-**État actuel du design :** direction artistique retenue = **Studio Clair** (edtech premium et épuré : fond blanc cassé, accent indigo/violet #6366F1, titres serif Fraunces + UI Inter). Maquette MVP en cours dans Claude Design, 7 écrans : connexion/rôle, onboarding + test de positionnement, profil, espace de travail, lecteur d'exercice, carte mentale, calendrier de cours. Prompt maître et brief : `Spécifications site web et BD/PROMPT_Claude_Design.md` et `Brief_Design_MVP.md`. Workflow : Claude Design → export → ré-import dans `Math_Edu_Application` (données factices) → session `/plan` pour brancher auth Google + tables + RLS.
-
-**App mobile (vision produit) :** le site web doit être accompagné d'une application mobile où l'élève révise ses cours, fait ses exos quotidiens, consulte son profil et réserve des cours. Recommandation pour un dev solo à 4h/semaine : viser d'abord une **PWA installable** (même base de code React), et n'envisager React Native / Expo qu'après le MVP web. Conséquence design : composants mobile-first et pouce-compatibles dès la maquette.
+**Contrat d'interface (clé du parallélisme) :** les **3 schémas JSON** sont figés (`Spécifications DAG, Exos, Mindcards/schemas/`). Marius produit le contenu, Gauthier développe contre ces schémas. Validation par `scripts/validate_content.py` sur chaque livraison.
 
 ---
 
-## 5bis. Variables d'environnement et déploiement
+## 5. Architecture technique
 
-**Piège n°1 du déploiement.** Les clés API et l'URL Supabase vivent dans un fichier `.env.local` **en local** (gitignoré, jamais sur Git) ET doivent être recopiées dans les **Variables d'environnement de Netlify / Vercel** au moment du déploiement. C'est la source n°1 de bugs : tout marche en local, plus rien en ligne, simplement parce que les variables n'ont pas été configurées sur le service de déploiement. Checklist déploiement : reporter chaque variable `VITE_*` dans l'interface du service avant le premier build en ligne.
+MATH EDUCATION est une **application** (comptes, base de données, logique métier), pas un site vitrine.
 
-**Variables du projet :**
+### 5.1 La stack et son état
 
-| Variable | Description | Secret ? |
-|----------|-------------|----------|
-| `VITE_SUPABASE_URL` | URL du projet Supabase | Non (publique) |
-| `VITE_SUPABASE_ANON_KEY` | Clé anon publique, protégée par les politiques RLS | Non (publique) |
-| `service_role` (clé) | Accès admin total, **jamais** exposée | **Oui — jamais côté client** |
+| Couche | Choix | État |
+|--------|-------|------|
+| Frontend | React 18 + Vite 5 + TypeScript + Tailwind 3 | En place |
+| Routage | react-router 6, 13 routes avec gardes de rôle | En place |
+| Visualisation DAG | react-flow, rendu **par domaine** (jamais les 414 nœuds d'un coup) | En place |
+| Rendu math | KaTeX | En place |
+| Cartes mentales | Markmap (Markdown hiérarchique vers rendu) | En place |
+| Base + Auth | Supabase : Postgres, **auth Google + email**, RLS | **Branché et validé** |
+| Tests | Vitest (moteur, repository), Docker + Postgres jetable (migrations et RLS) | En place |
+| Contenu pédagogique | JSON versionnés dans Git, chargés en base par script de seed | JSON en place, **seed au sprint 3** |
+| Logique serveur | Supabase Edge Functions (Deno) : correction des réponses, emails, cron | **Sprints 2b et 3** |
+| Emails transactionnels | **Resend**, gratuit jusqu'à 3 000 emails/mois | **Sprint 2b** |
+| État serveur | **TanStack Query** | **Sprint 3**, pas avant |
+| Hébergement | GitHub → Netlify, domaine OVH (~12€/an) | **Sprint 4** |
+| Supervision | **Sentry** (erreurs) et **PostHog** (analytics + session replay), tiers gratuits | **Sprint 4** |
+| Tests end-to-end | **Playwright** | **Sprint 6** |
+| Paiement | **Stripe** Checkout + webhooks (1,5 % + 0,25€) | **Itération 2** |
 
-Seules les variables préfixées `VITE_` sont exposées au frontend par Vite. La clé `service_role` ne doit jamais figurer dans le code client ni dans un `VITE_*` : elle reste côté serveur uniquement (scripts de seed, fonctions edge). Modèle de fichier : `.env.example` (versionné, valeurs vides) ; copie locale : `.env.local` (gitignoré).
+Toutes ces briques restent en TypeScript, y compris les Edge Functions (Deno). **Le manque n'a jamais été la stack, c'était l'absence totale de backend.**
 
-**⚠ Piège classique : les RLS Supabase.** Supabase active par défaut la Row Level Security (RLS) sur toutes les tables. Tant qu'aucune politique explicite n'est définie, l'accès est **bloqué** : l'app affiche « pas de données » alors que la base est bien remplie. La parade : demander à Claude Code de « configurer les politiques RLS appropriées pour mon application », copier les règles générées dans Supabase, et l'app fonctionne. Politiques cibles (cf. §6) : un élève ne lit/écrit que ses propres lignes ; un professeur lit la progression de ses élèves inscrits ; le contenu est en lecture seule pour tous les authentifiés.
+### 5.2 Les trois principes d'architecture
+
+1. **Le moteur vit dans `src/lib/`, il est pur et testé.** Aucun composant React, aucune dépendance au navigateur. C'est ce qui permettra de déplacer la correction côté serveur au sprint 3 sans réécrire une ligne du moteur.
+2. **Aucun composant ne contient de donnée en dur.** Tout passe par `src/data/` (accès aux données) ou `src/content/` (contenu pédagogique). Reste une exception à résorber : `mocks/mockData.ts` alimente encore la liste d'élèves de l'espace professeur.
+3. **`src/data/repository.ts` est la seule couture avec la base.** Il expose une mutation par intention, jamais une sauvegarde en bloc.
+
+### 5.3 Le contrat du repository
+
+L'ancienne interface exposait `save(session)` : le provider réécrivait la session entière à chaque changement d'état. Acceptable contre `localStorage`, **intenable contre Postgres**, où une seule réponse d'exercice aurait réécrit les 38 lignes de progression et tout l'historique des tentatives.
+
+L'interface actuelle :
+
+```
+Authentification
+  getSession()                      -> Session | null
+  onAuthChange(cb)                  -> unsubscribe
+  signInWithGoogle()
+  signInWithPassword(email, mdp)
+  signUp(input)
+  signOut()
+  completeProfile(patch)            -> Profile   (retour OAuth, écran /bienvenue)
+
+Mutations, une par intention
+  updateProfile(patch)              -> Profile
+  saveAttempt(attempt, progress)    -> 1 upsert progression + 1 insert tentative
+  saveProgress(progress)            -> révision espacée
+  savePlacement(result, progress[])  -> insert résultat + upsert en lot
+  createBooking(slotId, skillId)    -> Booking
+  deleteBooking(bookingId)
+  createSlots(slots)                -> AvailabilitySlot[]
+
+Lecture
+  getCatalog()                      -> Catalog
+```
+
+Deux implémentations respectent ce contrat : `supabaseRepository` (la vraie) et `mockRepository` (démonstration hors ligne et tests). Le choix se fait dans `data/index.ts` : Supabase dès que les clés sont là, le mock sinon. `VITE_USE_MOCK=true` force le mock malgré des clés valides.
+
+`mockRepository.test.ts` sert de **spécification exécutable** du contrat : c'est la référence quand un comportement diverge entre le mode démonstration et la production.
+
+**Gestion des erreurs.** L'état local avance avant la confirmation du serveur, c'est ce qui rend l'interface vive. Le revers est qu'une écriture qui échoue laisserait l'élève croire que son travail est enregistré. Chaque mutation lève, le provider attrape, et `SyncErrorBanner` le dit à l'élève. On ne restaure pas l'état précédent : lui retirer son avancement sous les yeux serait pire que de l'avertir.
+
+### 5.4 Design
+
+Direction artistique **Studio Clair** (fond blanc cassé, accent indigo #6366F1, titres serif Fraunces, UI Inter), implémentée depuis les maquettes Claude Design. Le design system vit dans `src/components/ui/` (Button, Card, Badge, Field, Notice, EmptyState, Progress, Avatar, Toggle, Segmented). Les couleurs sont des jetons de `tailwind.config.js` : **ne jamais écrire une couleur en dur.**
+
+Contraintes non négociables du brief : **cibles tactiles jamais sous 44px** (le public commence à 6 ans), mobile-first, anneau de focus visible au clavier. Un seul `AppShell` sert desktop et mobile, la navigation ne doit pas diverger entre les deux surfaces.
+
+### 5.5 App mobile
+
+Viser d'abord une **PWA installable** (même base de code React). iOS 16.4 et au-delà supporte les notifications push pour une PWA installée, donc les rappels façon Duolingo sont faisables sans passer par les stores. React Native ou Expo seulement si la présence sur l'App Store devient un argument commercial.
+
+**Sur le SEO :** le jour où la landing doit ranker, **ne pas migrer l'application**. Ajouter une landing statique séparée (Astro, ou du HTML) sur la racine du domaine, et garder la SPA sur `/app`.
 
 ---
 
-## 6. Modèle de données
+## 6. Variables d'environnement et clés
 
-Contenu en JSON versionné, état élève en base :
+Dans `.env.local`, ignoré par Git. Modèle : `.env.example`.
 
-| Table | Colonnes clés |
-|-------|---------------|
-| `profiles` | `id` (auth), `role` (eleve/prof/admin), `prenom`, `niveau_scolaire`, `email_parent`, `consentement_parental_at` |
-| `skill_progress` | `user_id`, `skill_id`, `status` (locked/available/in_progress/mastered), `score`, `attempts`, `next_review_at`, `updated_at` |
-| `exercise_attempts` | `user_id`, `exercise_id`, `skill_id`, `answer`, `is_correct`, `duration_s`, `created_at` |
-| `content_skills` / `content_exercises` / `content_mindmaps` | Miroir en base des JSON `/content`, rechargé par script de seed à chaque release |
-| `availability_slots`, `bookings` (**itération 2**) | `prof_id`, `start_at`, `end_at`, `capacity` (=3), `status` ; booking : `slot_id`, `eleve_id`, `paid_at` |
+| Variable | Rôle | Envoyée au navigateur |
+|----------|------|------------------------|
+| `VITE_SUPABASE_URL` | URL du projet | oui, publique |
+| `VITE_SUPABASE_ANON_KEY` | Clé publishable (ex « anon »), protégée par les RLS | oui, publique |
+| `VITE_USE_MOCK` | `true` force les données factices malgré des clés valides | oui |
+| `SUPABASE_SERVICE_ROLE_KEY` | Clé secrète. Scripts locaux uniquement (`check:db`, seed du sprint 3) | **non, jamais** |
 
-**Piège RLS à demander explicitement à Claude Code :** un élève ne lit/écrit que ses propres lignes ; un professeur lit la progression des élèves inscrits à ses cours ; le contenu est en lecture seule pour tous les authentifiés. Clés Supabase dans `.env`, `.gitignore` dès le premier commit, variables aussi configurées côté Netlify.
+**Le préfixe `VITE_` n'est pas cosmétique :** tout ce qui le porte est embarqué dans le JavaScript envoyé au navigateur. La clé `service_role` contourne **toutes** les politiques RLS : dans le bundle, elle donnerait à n'importe quel visiteur un accès total en lecture et en écriture.
 
-Générer le SQL de création + politiques RLS + script de seed en une session `/plan` dédiée, puis committer dans `/app/supabase/migrations`.
+Où les trouver : **Project Settings → API**. La publishable key va dans `VITE_SUPABASE_ANON_KEY`, la `service_role` (appelée « secret key » dans la nouvelle interface, préfixe `sb_secret_`) dans `SUPABASE_SERVICE_ROLE_KEY`.
 
----
+Sans clés, l'application bascule automatiquement en **mode démonstration** plutôt que de planter. C'est voulu : un oubli de variables au déploiement se voit immédiatement au lieu d'afficher une page blanche.
 
-## 7. Roadmap MVP (juillet → septembre 2026, 9 semaines)
-
-Deux pistes en parallèle (contenu = Marius, application = Gauthier), deux synchronisations majeures : schémas en S1, merge en S6.
-
-| Semaine | Jalon | Gauthier | Marius |
-|---------|-------|----------|--------|
-| S1 (7-13/07) | Semaine 0 + schémas JSON figés | Outillage, schémas, maquettes Claude Design | Outillage, agents, revue DAG v1 |
-| S2-S3 | J1 contenu pilote / J2 squelette app | Frontend + auth + tables Supabase (données factices) | DAG v2 enrichi + exos & cartes sur 2 domaines pilotes |
-| S4 | J3 premier déploiement | Pipeline GitHub → Netlify, domaine, app en ligne (dummy) | Production de contenu en série |
-| S5-S6 | J4 merge site + DAG | Moteur de progression & recommandation, import vrai contenu | Fin domaines prioritaires + recette croisée |
-| S7-S8 | J5 phase de test | `/security-review`, corrections, analytics | Recette pédagogique, ajustement difficulté |
-| S9 (fin août-sept.) | J6 premiers élèves (gratuit) | Onboarding, suivi bugs | Suivi qualité, feedback élèves |
-
-**Semaine 0 (outillage, une demi-journée chacun) :** abonnement Claude Pro min. chacun ; repo GitHub privé `math-education` (`/app`, `/content`, `/docs`, `/scripts`) ; ce CLAUDE.md à la racine du repo ; Projet Claude partagé « MATH EDUCATION » (DAG, schémas, programmes Eduscol). Gauthier : VS Code + Claude Code, comptes Netlify + Supabase (`math-education-dev`, région eu-west), MCP GitHub & Supabase. Marius : Claude Desktop + accès repo, programmes Eduscol CP → Terminale, agents `exercise-generator` et `math-reviewer`.
-
-**Jalon 1 — Contenu (Marius, S1-S6).** Enrichir le DAG (champs `exercise_ids`, `mindmap_id`, `mastery_threshold`) ; script Python (networkx) qui vérifie acyclicité, nœuds orphelins, prérequis inexistants, incohérences de niveau, à chaque modif ; croiser chaque domaine avec les programmes Eduscol. Générer la banque d'exercices (cible : **5 exercices × 3 niveaux** par compétence sur les domaines prioritaires) via l'agent `exercise-generator`, relue par `math-reviewer` + Marius. Cartes mentales en Markdown hiérarchique → `mindmaps.json`. **Domaines pilotes : A (Numération) et C (Fractions)** pour roder le format avant d'industrialiser.
-
-**Jalon 2 — App données factices (Gauthier, S1-S4).** Maquettes Claude Design (landing, inscription, dashboard élève avec DAG coloré, écran exercice, carte mentale, profil). Session `/plan` pour l'architecture avant le code. `dummy_content/` conforme aux schémas. Composants clés : `DagView` (react-flow, vert maîtrisé / orange en cours / gris verrouillé), `ExercisePlayer` (KaTeX + feedback), `MindmapView` (Markmap), `Dashboard`. Supabase : auth avec rôles, tables, RLS.
-
-**Jalon 3 — Déploiement (Gauthier, S4).** Git → GitHub → Netlify → domaine. Déploiement auto sur `main`, previews Netlify sur chaque PR. Checklist : test mobile réel (majorité du trafic sera mobile), images WebP, Lighthouse > 85.
-
-**Jalon 4 — Moteur adaptatif (Gauthier + Marius, S5-S6).** Script de seed (JSON validés → tables `content_*`). Positionnement initial : test adaptatif ~10 questions descendant le DAG par dichotomie. **Règle de déblocage :** une compétence est proposable si tous ses prérequis sont maîtrisés ; maîtrisée si `mastery_threshold` atteint ; en cas d'échec répété, l'app redescend sur les prérequis (c'est LA disruption, à soigner). **Révision espacée (Leitner au MVP) :** `next_review_at` à J+1, J+3, J+7, J+21 ; au MVP, un encart « à réviser aujourd'hui » sur le dashboard (emails en itération 2). Cette brique mérite sa propre session `/plan` + tests unitaires. Recette croisée par Marius via 3 personas (CE2 tables, 4e fractions, Terminale bac).
-
-**Jalon 5 — Phase de test (S7-S8).** `/security-review` complet avant le moindre élève réel (injection, clés, RLS, permissions). Tests end-to-end Playwright sur les parcours critiques. Bêta fermée famille & amis : **5 à 10 élèves** de niveaux variés, 1 semaine, formulaire de feedback. Observer un élève en direct au moins deux fois. Analytics minimales (Plausible ou PostHog).
-
-**Jalon 6 — Premiers élèves, phase gratuite (S9 → rentrée).** Ouverture première semaine de septembre. Cible : **20-30 élèves gratuits** pendant 4-6 semaines contre feedback. Canaux : entourage, groupes Facebook/WhatsApp de parents, professeurs du réseau, post LinkedIn. Landing page dédiée. Critères de passage au payant : ≥ 40% d'inscrits actifs en semaine 3, ≥ 5 compétences validées par élève actif, retours qualitatifs positifs.
+**Piège n°1 du déploiement :** recopier chaque variable `VITE_*` dans les Variables d'environnement de Netlify **avant** le premier build en ligne. C'est la source n°1 de bugs, tout marche en local et rien en ligne.
 
 ---
 
-## 8. Itération 2 (octobre → décembre 2026)
+## 7. Modèle de données
 
-À ne **PAS** démarrer avant la fin du Jalon 6. Ordre de valeur (chaque bloc livrable indépendamment) :
+Le schéma complet et commenté vit dans **`Math_Edu_Application/supabase/migrations/`**. Chaque fichier explique ce qu'il fait, pourquoi, et quel bug il corrige.
+
+### 7.1 Les tables
+
+| Table | Rôle |
+|-------|------|
+| `profiles` | 1-1 avec `auth.users`. Rôle (eleve/prof/parent), prénom, niveau, email parent, consentement, préférences de confidentialité, abonnement (jsonb). Créée par un trigger à l'inscription. |
+| `skill_progress` | Progression sur le DAG, clé `(user_id, skill_id)`. `recent boolean[]` porte la fenêtre glissante des dernières tentatives. |
+| `exercise_attempts` | Historique des tentatives. **En écriture seule** : une tentative est un fait, elle ne se réécrit ni ne s'efface. |
+| `placement_results` | Résultat du test de positionnement, **historisé** (un passage = une ligne). Comparer deux positionnements à six mois d'écart est exactement ce qu'un parent voudra voir. |
+| `teachers` | Profil public d'un professeur. Créée automatiquement quand un profil devient `prof`. |
+| `availability_slots` | Créneaux ouverts. **Pas de colonne `places_prises`** : c'est un compte dérivé, le stocker garantirait une dérive. |
+| `bookings` | Réservations, `unique (slot_id, eleve_id)`. La capacité est garantie par un trigger avec verrou de ligne. |
+| `parent_links` | Rattachement parent/enfant et jeton de consentement. **`token_hash` seulement**, jamais le jeton en clair : un accès en lecture suffirait sinon à confirmer le consentement à la place du parent. |
+| `slots_disponibles` (vue) | Créneaux avec `places_prises` calculé. **C'est cette vue que lit l'app**, pas la table. |
+| `content_skills` / `content_exercises` / `content_mindmaps` | Miroir des JSON, **à créer au sprint 3**. |
+
+### 7.2 Les fonctions d'autorisation
+
+Toutes en `security definer` avec `set search_path = public`, pour éviter la récursion RLS (voir §11).
+
+| Fonction | Rôle |
+|----------|------|
+| `est_prof_de(eleve)` | Vrai si l'élève est inscrit à un créneau de ce professeur **et** a autorisé le partage. Les deux conditions. |
+| `est_parent_de(eleve)` | Vrai si le rattachement parent/enfant est **confirmé**. |
+| `role_actuel()` | Rôle du compte courant, sans lire `profiles` depuis une politique. |
+| `peut_lire_eleve(eleve)` | Soi-même, son professeur sous conditions, son parent rattaché. |
+| `nb_places_prises(slot)` | Compte réel des réservations, indépendamment du RLS du lecteur. |
+| `refuse_surbooking()` | Trigger, refuse une place au-delà de la capacité, avec verrou de ligne. |
+| `proteger_colonnes_profil()` | Trigger, interdit au client de modifier les colonnes sensibles. |
+| `creer_profil_pour_nouvel_utilisateur()` | Trigger sur `auth.users`, crée la ligne `profiles`. |
+| `creer_ligne_teacher_si_prof()` | Trigger, crée la ligne `teachers` au passage à `prof`. |
+
+### 7.3 Les colonnes que le client ne peut pas modifier
+
+Le RLS autorise un utilisateur à mettre à jour **sa** ligne de `profiles`, donc toutes ses colonnes. Un trigger en protège cinq, et ne s'applique qu'aux requêtes portant un JWT utilisateur (`auth.role() = 'authenticated'`), les appels `service_role` passant outre :
+
+| Colonne | Pourquoi |
+|---------|----------|
+| `role` | Un élève se déclarerait `prof`, puis ouvrirait des créneaux payants. Escalade de privilège. |
+| `consentement_parental_at` | **Un mineur se confirmerait à lui-même l'accord de son parent.** C'est la protection légale des moins de 15 ans qui tomberait. |
+| `email`, `cree_le` | L'identité vient de `auth.users`, pas du client. |
+| `abonnement` | Sera posé par le webhook Stripe, côté serveur. |
+
+### 7.4 Règle sur les migrations
+
+**Ne jamais modifier une migration déjà appliquée.** On en crée une nouvelle, numérotée. Sinon la base et le dépôt divergent et plus personne ne sait ce qui tourne. Chaque fichier doit être **rejouable** (`if not exists`, `create or replace`, `drop policy if exists` avant chaque `create policy`), parce qu'il s'applique par copier-coller dans le SQL Editor, sans outil qui garde la trace de ce qui a déjà tourné.
+
+---
+
+## 8. Où on en est
+
+Le travail se fait par **sprints courts et livrables seuls**. Le détail de chacun, ses prérequis et son état exact sont dans **`Math_Edu_Application/ROADMAP.md`**, qui fait foi.
+
+| Sprint | Objet | État |
+|--------|-------|------|
+| **1** | Audit et déblocage : test de positionnement en cul-de-sac, gardes de rôle, boutons morts, mise en place de Vitest | **Livré** |
+| **2a** | Auth Google et email, schéma Postgres, RLS, réécriture du repository en mutations | **Livré** |
+| **2b** | Node 24, domaine, Resend, consentement parental enfin obtenable | À faire |
+| **3** | Contenu en base, correction des réponses côté serveur, TanStack Query | À faire |
+| **4** | Dépôt dédié, Netlify, domaine, PWA, landing et politique de confidentialité | À faire |
+| **5** | Espace parent (consentement, export et suppression RGPD, suivi) | À faire |
+| **6** | Playwright, `/security-review`, avant le premier élève réel | À faire |
+
+**Ce qui n'est pas encore vérifié :** le parcours utilisateur n'a jamais été déroulé dans un navigateur. Les quatre niveaux de vérification automatique passent, mais aucun ne teste l'interface. Les six vérifications manuelles sont listées dans `ROADMAP.md` §1, à faire avant le sprint 2b.
+
+---
+
+## 9. Itération 2, après la bêta
+
+À ne **PAS** démarrer avant que de vrais élèves utilisent l'application. Ordre de valeur, chaque bloc livrable indépendamment :
 
 1. **Retravail DAG & contenu** à partir des données de la bêta (taux d'échec anormaux, granularité). — Marius
-2. **Paiement** abonnement 9,99€/mois via Stripe (Checkout + webhooks). Review humaine par un dev expérimenté avant prod, non négociable. — Gauthier
-3. **Rappels type Duolingo** : emails de révision + résumé hebdo aux parents, via n8n auto-hébergé. — Gauthier
-4. **Espace professeur v1** : agenda de dispos, réservation 20€/1h30 (max 3 élèves), vue DAG des élèves + suggestions. Visio via lien externe (Meet/Zoom), ne pas développer sa propre visio. — Gauthier + Marius
+2. **Paiement** abonnement 9,99€/mois via Stripe (Checkout + webhooks). Review humaine par un dev expérimenté avant prod, non négociable. **Prérequis : correction des réponses côté serveur.** — Gauthier
+3. **Rappels type Duolingo** : emails de révision, résumé hebdo aux parents. — Gauthier
+4. **Espace professeur v1** : fiche élève avec son DAG et suggestions de séance, gestion réelle des créneaux (modifier, supprimer, récurrence, fuseau), compte-rendu de séance envoyé au parent, revenus via Stripe Connect, vérification des professeurs, lien visio par séance. **Ne pas développer sa propre visio**, un champ URL Meet ou Zoom suffit. — Gauthier + Marius
 5. **Gamification** : streaks, badges par domaine, objectifs hebdo. — Gauthier
-6. **Cartes mentales premium** imprimables / partageables (MCP Canva ou Claude Design). — Marius
+6. **Cartes mentales premium** imprimables et partageables. — Marius
+
+Les composants de la fiche élève existent déjà et sont réutilisables : `DagGraph`, `DagPath`, `SkillDetailPanel`. Il manque la route et la lecture de la progression d'un autre utilisateur, que les politiques RLS autorisent déjà sous condition de partage.
 
 ---
 
-## 9. Agents Claude Code à créer
+## 10. Procédures manuelles
 
-- **`exercise-generator`** (déclencheur `/exos [id_compétence]`) : à partir d'une compétence du DAG, génère N exercices au format `exercises.schema.json`, énoncé (LaTeX autorisé), 3 niveaux (découverte / entraînement / maîtrise), réponse attendue, corrigé détaillé, 2 distracteurs pour les QCM. Ton adapté au niveau scolaire.
+Ce qui ne s'automatise pas depuis le code, et qu'il faut refaire à l'identique le jour où on recommence.
+
+### 10.1 Créer ou reconfigurer le projet Supabase (30 min)
+
+1. **supabase.com** → New project. Région **Europe** (eu-west-1 Irlande ou eu-west-3 Paris) : l'hébergement UE est une promesse affichée sur l'écran de connexion, pas un détail.
+2. **Noter le mot de passe de la base dans un gestionnaire de mots de passe.** Il n'est plus affiché ensuite, et il servira au script de seed.
+3. Project Settings → API → copier `Project URL` et la publishable key dans `.env.local`.
+4. Authentication → Providers → activer **Email**. Décocher « Confirm email » en développement, le rallumer avant la bêta.
+5. Authentication → URL Configuration → noter la **Callback URL** (`https://<ref>.supabase.co/auth/v1/callback`).
+6. SQL Editor → New query → coller **chaque migration dans l'ordre** → Run.
+7. Vérifier : `npm run check:supabase` puis `npm run check:db`.
+
+### 10.2 Créer les identifiants Google OAuth (30 min)
+
+1. **console.cloud.google.com** → nouveau projet, nom `Racine`.
+2. APIs & Services → **OAuth consent screen** → type **External**, laissé en mode **Testing**. En Testing on a droit à 100 utilisateurs de test sans validation Google, largement assez pour la bêta. **Passer en Production exigera une politique de confidentialité en ligne**, prévue au sprint 4.
+3. Nom de l'app (`Racine`), email de support, et s'ajouter comme **Test user** avec les testeurs.
+4. Scopes : **uniquement** `email`, `profile`, `openid`. Rien de plus, ce sont des mineurs.
+5. Credentials → OAuth client ID → **Web application**. Authorized redirect URI = la Callback URL de l'étape 10.1.5.
+6. Coller `Client ID` et `Client Secret` dans Supabase → Authentication → Providers → **Google**.
+
+**Garder email et mot de passe comme chemin de plein droit :** les comptes Google supervisés par Family Link, donc ceux des moins de 13 ans, peuvent être empêchés de se connecter à un service tiers. Google ne doit jamais être le seul accès.
+
+### 10.3 Monter la version de Node
+
+`supabase-js` initialise son client realtime dès `createClient()` et exige un **WebSocket natif**, absent avant Node 22. L'application n'est pas touchée (le navigateur en a un), mais **tout script Node l'est**.
+
+Cible : **Node 24 LTS**, pas 22. Node 22 finit en avril 2027, Node 24 tient jusqu'en 2028, et `supabase-js` demande 22 minimum : 24 satisfait la contrainte avec un horizon plus long.
+
+1. Fermer VS Code et tous les terminaux, sinon l'installateur bute sur des fichiers verrouillés.
+2. `winget install --id OpenJS.NodeJS.LTS --source winget`. L'installateur MSI remplace la version en place. Le `--source winget` évite l'invite d'acceptation du Microsoft Store.
+3. Vérifier `node -v` et `npm -v`.
+4. `Remove-Item -Recurse -Force node_modules` puis `npm install`. Le `package-lock.json` est en `lockfileVersion: 3`, npm 11 ne le réécrira pas.
+5. Mettre `.nvmrc` à la version installée, et `engines` à `>=22` (le plancher réel imposé par `supabase-js`, pas la version exacte).
+6. Relancer les quatre vérifications, et aligner `NODE_VERSION` sur Netlify au sprint 4.
+
+**Si Node 18 doit être conservé** pour un autre projet : `winget install CoreyButler.NVMforWindows`. À savoir, contrairement à `nvm` sous Linux et macOS, **`nvm-windows` ne lit pas `.nvmrc`**, il faut taper `nvm use 24`.
+
+### 10.4 Les quatre niveaux de vérification
+
+Du plus isolé au plus réel. Comprendre ce que chacun prouve évite de croire qu'on a testé ce qu'on n'a pas testé.
+
+| Commande | Ce qu'elle prouve | Ce qu'elle ne prouve pas |
+|----------|-------------------|--------------------------|
+| `npm test` | Le moteur et le repository sont corrects | Rien sur Supabase, elle n'y touche pas |
+| `npm run test:sql` | Le SQL et les politiques sont corrects (Docker) | Pas qu'ils sont appliqués sur le vrai projet |
+| `npm run check:supabase` | Le projet réel répond, les tables sont là, l'anonyme est bloqué | Rien sur les triggers |
+| `npm run check:db` | Triggers, RLS, escalade de privilège, capacité, sur le vrai projet | **Rien sur l'interface** |
+
+Aucun des quatre ne teste le navigateur. Avant tout commit : `npm test && npm run lint && npm run build`.
+
+---
+
+## 11. Pièges connus et leçons apprises
+
+**Tester le SQL en propriétaire de table ne teste rien.** Deux bugs de production sont venus de là, et tous deux de la même famille : une règle qui doit valoir pour tout le monde s'exécutait dans le contexte de sécurité du lecteur. Un trigger non `security definer` faisait `select ... for update` sur une table dont la politique UPDATE excluait l'élève, donc il ne voyait pas le créneau et **aucune réservation n'était possible**. Une vue `security_invoker` comptait des réservations filtrées par le RLS du lecteur, donc **un créneau complet s'affichait comme disponible**. Le harnais local n'avait rien vu parce qu'il tournait en propriétaire de table, ce qui contourne entièrement le RLS. **Toute assertion SQL doit tourner sous `set role authenticated` avec un JWT.**
+
+**Une règle qui doit être vraie pour tous est `security definer`.** C'est le corollaire du point précédent.
+
+**Les politiques RLS qui se lisent entre elles partent en récursion infinie**, avec une erreur illisible. C'est la première cause de perte de temps sur Supabase. Toutes les jointures d'autorisation sont donc isolées dans les fonctions du §7.2.
+
+**Un fichier SQL interrompu peut passer pour vert.** `ON_ERROR_STOP` arrête le fichier en cours de route, et un harnais naïf déclare le test réussi alors que des assertions n'ont jamais tourné. Chaque fichier de test finit par une sentinelle `TEST FIN` dont l'absence fait échouer le harnais.
+
+**La racine `/rest/v1/` renvoie 401 avec une clé publishable**, car l'OpenAPI n'est servi qu'à la `service_role`. Ce 401 ne signale **aucune panne**. Le workflow de maintien en éveil interrogeait cette route et aurait envoyé une fausse alerte chaque semaine.
+
+**Le tier gratuit Supabase met un projet en pause après une semaine d'inactivité**, puis finit par le supprimer. Un projet a été perdu comme ça en septembre 2026 : son nom de domaine ne résolvait plus en DNS. `.github/workflows/supabase-keepalive.yml` fait une requête hebdomadaire et alerte par email. À savoir : GitHub désactive les workflows planifiés après 60 jours sans commit sur le dépôt.
+
+**`crypto.randomUUID()` n'existe qu'en contexte sécurisé.** Servir l'application sur une IP de réseau local en http, ce qui est exactement la façon de tester sur un téléphone, le rend indéfini, et l'app planterait à la première réponse d'exercice, **uniquement sur mobile**. D'où `lib/id.ts` et son repli.
+
+**React ne garantit pas qu'un updater de `setState` tourne avant le retour de la fonction appelante.** Sortir un résultat d'un updater par mutation d'une variable externe marche par accident, grâce à l'optimisation « eager state », et casse dès qu'une autre mise à jour est en file. Calculer **avant** `setState`.
+
+**Des clés mortes sont pires que pas de clés.** Avec des clés invalides, l'application tente de se connecter et échoue à chaque écriture, sans repli sur les données factices. Vider les variables vaut mieux que laisser des valeurs périmées.
+
+**Ne jamais mettre en avant un raccourci de démonstration.** L'écran de connexion plaçait « compte de démonstration » exactement là où l'utilisateur cherche Google. Les entrées de démonstration sont désormais en bas et invisibles dès que les clés sont présentes.
+
+---
+
+## 12. Décisions tranchées, à ne pas rejouer
+
+| Décision | Raison |
+|----------|--------|
+| **On ne change pas de langage ni de framework** | React, TypeScript, Tailwind et Supabase sont le bon choix à 4h/semaine avec 500€. Migrer vers Next.js, Remix, Rails ou Django coûterait des semaines et ne résoudrait aucun des manques, qui sont tous des fonctionnalités absentes. |
+| **Supabase en tier gratuit, plus un ping hebdomadaire** | Le Pro à 25 $/mois est reporté au moment où de vrais élèves seront dessus. Sur 500€ de budget total, c'est 300€/an. |
+| **Sprint 2 scindé en 2a et 2b** | Auth, schéma, RLS, repository et emails dans un seul chantier ne tient pas en 4h/semaine. |
+| **Pas de TanStack Query avant le sprint 3** | Apprendre Supabase Auth, les RLS et TanStack Query en même temps est le meilleur moyen de ne rien finir. Le cache devient réellement nécessaire quand le contenu vient de la base. |
+| **Page `/abonnement` informative, Stripe en itération 2** | Le modèle est arrêté, mais la plateforme est gratuite pendant la bêta. On informe, on n'encaisse pas, et on le dit. |
+| **Espace parent au minimum légal d'abord** | Consentement, export et suppression sont des obligations RGPD non tenues. Le reste est du confort. |
+| **Écran Google en mode Testing** | 100 utilisateurs de test sans validation Google. La Production attend la politique de confidentialité du sprint 4. |
+| **PWA avant React Native** | Même base de code, et le push fonctionne sur iOS 16.4+. |
+| **Le SEO n'imposera pas de migrer l'app** | Landing statique séparée sur la racine, SPA sur `/app`. |
+| **Node 24 plutôt que 22** | 22 finit en avril 2027, 24 tient jusqu'en 2028. Éviter de refaire l'opération dans un an. |
+| **`places_prises` calculé, jamais stocké** | Un compteur incrémenté à la main dérive immanquablement. |
+| **La capacité est une règle de la base, pas de l'interface** | Deux élèves réservant la dernière place au même instant passeraient tous les deux. |
+
+---
+
+## 13. Dette technique connue
+
+**react-router, 2 vulnérabilités modérées.** Open redirect via un antislash dans `<Link>` et `useNavigate`, et injection de constructeur dans l'hydratation SSR. La branche 6.x **n'a aucun correctif** : seule la 7.18.4 corrige, et c'est une montée majeure. Le cas qui concernait l'application, la redirection après connexion, est couvert par `lib/redirect.ts` et ses tests. Migration à décider au sprint 4.
+
+**Réponses des exercices dans le bundle.** Vérifiable : `grep -o '"value":[0-9]*' dist/assets/index-*.js`. Corrigé au sprint 3 par la correction côté serveur.
+
+**Mur de taille du contenu.** Les 3 JSON sont importés statiquement, donc dans le chunk principal. À la cible de 414 compétences et 5 exercices par niveau, cela ferait de l'ordre de **8 Mo de JSON dans le bundle**. Cassé au sprint 3 par le passage en base.
+
+**Poids du bundle.** `supabase-js` a fait passer le premier chargement de 92 à **148 ko gzippés**, dont un client realtime inutilisé. Les chunks vendor sont séparés pour rester en cache entre deux déploiements, ce qui aide les visites suivantes mais pas la première. Le réduire demanderait d'importer `@supabase/auth-js` et `@supabase/postgrest-js` séparément, au prix d'une API moins standard. À trancher au sprint 4 avec la cible Lighthouse.
+
+**Polices Google chargées depuis le CDN**, alors que l'écran de connexion affiche « Données hébergées dans l'Union européenne ». À auto-héberger au sprint 4, ce qui supprime aussi deux requêtes bloquantes.
+
+**Aucune vérification des professeurs.** N'importe qui s'inscrit comme `prof` et publie des créneaux payants. Bloquant avant d'ouvrir l'offre de cours à des inconnus.
+
+**Détails :** `suiviEleves` en dur dans `mocks/mockData.ts` alimente encore l'espace professeur, `streakDays` est en dur dans `WorkspacePage`, et les exercices d'une compétence sont toujours servis dans le même ordre (ni mélange ni tirage).
+
+---
+
+## 14. Agents Claude Code
+
+- **`exercise-generator`** (déclencheur `/exos [id_compétence]`) : génère N exercices au format `exercises.schema.json`, énoncé (LaTeX autorisé), 3 niveaux (découverte / entraînement / maîtrise), réponse attendue, corrigé détaillé, 2 distracteurs pour les QCM. Ton adapté au niveau scolaire.
 - **`math-reviewer`** : relit chaque lot, vérifie l'exactitude mathématique, la conformité au niveau et au schéma, signale tout exercice douteux.
 
-**Règle d'or :** aucun exercice ne part en production sans **double validation (agent `math-reviewer` + relecture humaine de Marius)**. Les LLM font des erreurs de calcul, la relecture humaine n'est pas optionnelle. Travailler par lots (`/exos A001..A010`), une PR par domaine, Gauthier fait tourner le script de validation de schéma sur chaque PR.
+**Règle d'or :** aucun exercice ne part en production sans **double validation (agent `math-reviewer` + relecture humaine de Marius)**. Les LLM font des erreurs de calcul. Travailler par lots, une PR par domaine, `validate_content.py` sur chaque PR. Taux d'erreur suivi dans `QUALITY.md` (17,4 % puis 4,5 % puis 2,9 % sur trois tours). Si un lot dépasse ~5 %, revoir le prompt de génération avant de continuer.
+
+Deux points appris de la relecture : le champ `choices[].misconception` décrit l'erreur de raisonnement que révèle chaque distracteur, **ne pas la jeter**, c'est la matière première du diagnostic fin. Et `mastery_threshold` vaut `{required: 2, out_of: 3}` dans la tranche pilote faute d'exercices, la cible étant `{3, 4}` : **toujours lire la valeur du fichier, ne jamais la coder en dur.**
 
 ---
 
-## 10. Boîte à outils Claude : quel outil pour quelle tâche
+## 15. Boîte à outils Claude
 
 | Tâche | Outil | Mode d'emploi |
 |-------|-------|---------------|
-| Analyse pédagogique, comparaison programmes, gabarits | Claude.ai + Projet partagé | Verser DAG, schémas, programmes Eduscol dans le Projet. |
-| Génération d'exercices en série | Claude Code + agent `exercise-generator` | `/exos [ids]` par lots de 10, PR par domaine. |
-| Contrôle qualité math | Agent `math-reviewer` + relecture humaine | Passe sur chaque lot, taux d'erreur suivi dans `/content/QUALITY.md`. |
+| Analyse pédagogique, comparaison programmes | Claude.ai + Projet partagé | Verser DAG, schémas, programmes Eduscol dans le Projet. |
+| Génération d'exercices en série | Claude Code + `exercise-generator` | `/exos [ids]` par lots de 10, PR par domaine. |
+| Contrôle qualité math | `math-reviewer` + relecture humaine | Passe sur chaque lot, taux suivi dans `QUALITY.md`. |
 | Maquettes UI, landing page | Claude Design | Brief précis (cible, ton, références), itérer avant de coder. |
 | Architecture, base, moteur adaptatif | Claude Code `/plan` | Une session `/plan` par brique majeure, valider avant de coder. |
 | Développement quotidien | Claude Code (VS Code) | Une fonctionnalité = une session = un commit. |
 | Audit sécurité | `/security-review` | Avant chaque mise en ligne, avant la bêta, après toute feature touchant les données. |
 | GitHub / Supabase | MCP GitHub & Supabase | Issues, PR, inspection de tables en conversation. |
-| Tests exploratoires en ligne | Claude in Chrome | Dérouler les parcours élève/prof. |
-| Automatisations (itération 2) | n8n + skill n8n-as-code | Décrire le workflow, importer le JSON généré. |
+| Tests exploratoires en ligne | Claude in Chrome | Dérouler les parcours élève / prof / parent. |
+| Automatisations (itération 2) | n8n | Décrire le workflow, importer le JSON généré. |
 
 ---
 
-## 11. Conventions et Definition of Done
+## 16. Conventions et Definition of Done
 
-- **Langue :** français partout (code, contenu, commits, doc).
-- **IDs de compétences :** format lettre de domaine + numéro sur 3 chiffres (`A001`, `F042`…).
-- **3 schémas JSON figés** en S1, validés par `npm run validate` sur chaque livraison de contenu.
-- **Une fonctionnalité = une session Claude Code = un commit.** Messages de commit clairs (Gauthier est seul à coder, tout doit être reprenable).
-- **Une PR par domaine** de contenu ; Gauthier valide le schéma, Marius valide le fond.
-- **Definition of Done d'une compétence :** nœud DAG à jour + ≥ 5 exercices validés + carte mentale liée + testée dans l'app.
-- Si le taux d'erreur d'un lot d'exercices dépasse ~5%, revoir le prompt de génération avant de continuer.
+**Langue et nommage**
+- Français partout : code, contenu, commits, documentation.
+- IDs de compétences : lettre de domaine + numéro sur 3 chiffres (`A001`, `F042`).
+- Les commentaires de code expliquent **pourquoi**, pas quoi. Un commentaire qui paraphrase la ligne suivante est du bruit.
+
+**Avant chaque commit**
+```bash
+cd "Math Education/Math_Edu_Application"
+npm test && npm run lint && npm run build
+```
+Le lint est réglé sur **zéro warning toléré**, c'est volontaire. Après toute modification de `supabase/migrations/`, ajouter `npm run test:sql`.
+
+**Trois règles de conception non négociables**
+- **Jamais de bouton inerte.** Un bouton non branché ne s'affiche pas : mieux vaut absent que mort.
+- **Jamais de texte mensonger.** L'écran n'annonce pas ce que le code ne fait pas (« un email a été envoyé » alors que rien n'en envoie).
+- **Jamais de correction silencieuse.** Une écriture qui échoue est dite à l'utilisateur : un élève qui a travaillé pour rien doit l'apprendre.
+
+**Tests**
+- Toute modification de `lib/dag.ts`, `placement.ts` ou `exercise.ts` s'accompagne d'un test. Ces trois fichiers décident de ce qu'un élève voit et de ce qui est compté juste.
+- Toute assertion SQL tourne sous `set role authenticated` avec un JWT, jamais en propriétaire de table.
+- Un test qui ne tombe pas sur le code buggé ne prouve rien : le vérifier en retirant temporairement le correctif.
+
+**Definition of Done**
+- D'une compétence : nœud DAG à jour + ≥ 5 exercices doublement validés + carte mentale liée + testée dans l'app.
+- D'une fonctionnalité : une session = un commit, message clair, vérifications au vert, et `ROADMAP.md` à jour si le sprint avance.
 
 ---
 
-## 12. Risques et points de vigilance
+## 17. Risques et points de vigilance
 
 | Risque | Parade |
 |--------|--------|
-| **Erreurs mathématiques** dans le contenu généré (détruisent la confiance des parents) | Double validation systématique (`math-reviewer` + humain), 100% sur les domaines pilotes, suivi du taux d'erreur, réponses numériques vérifiées par script quand possible. |
-| **RGPD & mineurs** (quasi tous les utilisateurs) | Consentement parental requis (<15 ans en France), champ email parent, minimisation des données, hébergement UE (Supabase eu-west), page de confidentialité, à valider avant le passage payant. |
-| **Paiement & données sensibles** | Review par un développeur expérimenté avant activation Stripe (itération 2), non négociable. Budgéter quelques centaines d'euros. |
-| **Effet tunnel** (414 compétences × exos × cartes = jamais fini) | MVP sur domaines prioritaires seulement (A, C en pilote, puis B, E, F) ; les autres affichent « bientôt disponible ». Mieux vaut 5 domaines excellents que 15 médiocres. |
-| **Dérive du périmètre MVP** | Rien de l'itération 2 ne démarre avant la fin du Jalon 6. Ce fichier fait foi. |
-| **Dépendance à un seul dev** (Gauthier) | Tout passe par GitHub, commits clairs, ce CLAUDE.md à jour pour reprise immédiate. |
+| **Erreurs mathématiques** dans le contenu généré (détruisent la confiance des parents) | Double validation systématique, 100 % sur les domaines pilotes, suivi du taux d'erreur, réponses numériques vérifiées par script. |
+| **RGPD & mineurs** (quasi tous les utilisateurs) | Consentement parental requis avant 15 ans, hébergement UE, minimisation, export et suppression, politique de confidentialité. **Aujourd'hui le consentement est impossible à obtenir faute d'emails : blocage réglementaire n°1, sprint 2b.** |
+| **Réponses des exercices dans le bundle** | Lisibles en 30 secondes. Correction côté serveur au sprint 3, indispensable **avant** tout abonnement payant. |
+| **Paiement & données sensibles** | Review par un développeur expérimenté avant activation Stripe, non négociable. |
+| **Effet tunnel** (414 compétences × exos × cartes = jamais fini) | Domaines prioritaires seulement (A, C en pilote, puis B, E, F) ; les autres affichent « bientôt disponible ». Mieux vaut 5 domaines excellents que 15 médiocres. |
+| **Dérive du périmètre** | Rien de l'itération 2 ne démarre avant que de vrais élèves utilisent l'app. |
+| **Perte du projet Supabase** (déjà arrivé) | Ping hebdomadaire par GitHub Actions, avec alerte email. |
+| **Interface jamais testée** | Les quatre vérifications automatiques ne touchent pas au navigateur. Playwright au sprint 6, et les six parcours manuels avant le 2b. |
+| **Dépendance à un seul dev** | Tout passe par GitHub, commits clairs, et `ROADMAP.md` tenu à jour pour reprise immédiate. |
 
 ---
 
-## 13. Rituels et organisation
+## 18. Rituels et organisation
 
-- **Point hebdo (30 min)** : démo de ce qui marche, blocages, engagement de la semaine suivante. Compte-rendu de 5 lignes dans `/docs/weekly/`.
-- **Une PR = une revue croisée** (au minimum : Gauthier valide le schéma, Marius valide le fond).
-- **`/update` en fin de session** Claude Code pour tenir le contexte et l'historique du projet à jour.
-- **Structure repo cible :** `/app` (code), `/content` (DAG, exercices, cartes + `QUALITY.md`), `/docs` (`/weekly`), `/scripts` (validation, seed), `/app/supabase/migrations`.
-- **Prochain pas concret :** Gauthier lance la session `/plan` des schémas JSON et les partage à Marius ; Marius crée l'agent `exercise-generator` et produit le premier lot A001-A010. Rendez-vous au point hebdo.
+- **Point hebdo (30 min)** : démo de ce qui marche, blocages, engagement de la semaine suivante.
+- **Une PR = une revue croisée** : Gauthier valide le schéma, Marius valide le fond.
+- **Fin de chaque sprint : mettre à jour `Math_Edu_Application/ROADMAP.md`.** C'est ce qui permet de reprendre après une interruption, et le projet en connaîtra (4h/semaine, vacances scolaires).
+- **Structure actuelle du dépôt :** l'application vit dans `Math Education/Math_Edu_Application/`, à l'intérieur du dépôt personnel `Jarvis`. **Cible au sprint 4 :** un dépôt privé dédié `math-education`, pour que Marius y ait accès et que les previews Netlify fonctionnent. Le workflow `.github/workflows/` déménagera avec.
 
 ---
 
-## 14. Ressources
+## 19. Ressources
 
-**Fichiers locaux (dossier `Math Education/`) :**
-- `Spécifications DAG, Exos, Mindcards/skills_dag.json` — DAG v1.0 (414 compétences, 15 domaines).
-- `Programme mathématiques/` — programmes officiels Eduscol (Maternelle → Lycée voie GT), référence pour valider la couverture du DAG.
-- `Spécifications site web et BD/WebsiteDesign_For_Claude.pptx` — brief design du site.
-- `Management de Projet/MATH_EDUCATION_Roadmap.docx` — roadmap complète v2.0 (source maîtresse).
+**Documents de l'application (`Math_Edu_Application/`) :**
+- **`ROADMAP.md`** — où on en est, ce qui reste, les six vérifications manuelles. **Fait foi sur l'avancement.**
+- `GUIDE.md` — comment travailler sur le code : commandes, structure, recettes.
+- `README.md` — résumé technique court.
+- `supabase/migrations/` — le schéma, chaque fichier expliquant son objet et le bug qu'il corrige.
+- `supabase/tests/` — harnais SQL rejouable en une commande, plus le script d'intégration contre le vrai projet.
+
+**Contenu et spécifications (`Math Education/`) :**
+- `Spécifications DAG, Exos, Mindcards/` — DAG, schémas JSON figés, `QUALITY.md` (suivi du taux d'erreur), `RELECTURE.md`, `CORRECTIONS_DAG_v2.md` (à lire avant de toucher au DAG : les niveaux du domaine C ont été corrigés de plusieurs années d'après les programmes officiels).
+- `Programme mathématiques/` — programmes officiels Eduscol, référence pour valider la couverture du DAG.
+- `scripts/validate_content.py` — validation des livraisons de contenu.
+
+**Documents historiques, à ne pas prendre pour l'état actuel :**
+- `Management de Projet/MATH_EDUCATION_Roadmap.docx` — roadmap v2.0 de juillet 2026. Vision produit valable, planning dépassé.
+- `Spécifications site web et BD/Brief_Design_MVP.md` et `PROMPT_Claude_Design.md` — briefs de design d'origine.
 
 **Drive MATH EDUCATION :**
 - Dossier principal : https://drive.google.com/drive/folders/1DxYYFS_vUnBxq6DvOQacioksAp2Gnh7g
@@ -253,4 +495,3 @@ Deux pistes en parallèle (contenu = Marius, application = Gauthier), deux synch
   - `skills_dag.json` v1 : https://drive.google.com/file/d/178wH1na-FKRE6BFFzio95Vaz77wW6Dbc
   - Graphe Mermaid du DAG : https://docs.google.com/document/d/1gOsOq8hoGoM1wOrPoeZie2w-55UK3xvsj094N6T6NoU
   - Visualisation DAG (PNG) : https://drive.google.com/file/d/1Bnx9n89LTsVi_FXqp7bvmqZPlnIzD14M
-- Claude Cowork Use/ (ID 1DFcKBIs1FXRbZDZriKEIKZmZ3f6UUhwj) — ressources de référence Claude Code.
