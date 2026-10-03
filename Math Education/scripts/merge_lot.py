@@ -24,7 +24,11 @@ ROOT = Path(__file__).resolve().parent.parent
 SPEC = ROOT / "Spécifications DAG, Exos, Mindcards"
 EXOS = SPEC / "content" / "exercises.json"
 DAG = SPEC / "content" / "skills_dag_v2.json"
-PY = ROOT / "tools" / "python" / "python.exe"
+# Toolchain portable si elle est installee, sinon l'interpreteur qui execute ce
+# script. Sans ce repli, l'absence de tools/python faisait planter la
+# validation APRES l'ecriture des fichiers, sans les restaurer.
+_PORTABLE = ROOT / "tools" / "python" / "python.exe"
+PY = _PORTABLE if _PORTABLE.is_file() else Path(sys.executable)
 
 ORDRE = {"decouverte": 0, "entrainement": 1, "maitrise": 2}
 
@@ -98,8 +102,15 @@ def main() -> int:
     EXOS.write_text(json.dumps(exos, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
     DAG.write_text(json.dumps(dag, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
 
-    r = subprocess.run([str(PY), str(ROOT / "scripts" / "validate_content.py")],
-                       capture_output=True, text=True, encoding="utf-8", errors="replace")
+    try:
+        r = subprocess.run([str(PY), str(ROOT / "scripts" / "validate_content.py")],
+                           capture_output=True, text=True, encoding="utf-8", errors="replace")
+    except OSError as cause:
+        # Validation impossible a lancer : on ne garde pas une fusion non validee.
+        EXOS.write_text(sauv_e, encoding="utf-8")
+        DAG.write_text(sauv_d, encoding="utf-8")
+        print(f"\nVALIDATION IMPOSSIBLE ({cause}), fusion annulee et fichiers restaures.")
+        return 1
     if r.returncode != 0:
         EXOS.write_text(sauv_e, encoding="utf-8")
         DAG.write_text(sauv_d, encoding="utf-8")

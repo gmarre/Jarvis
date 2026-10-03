@@ -1,6 +1,6 @@
 # Fiche de relecture — synthèse
 
-> 35 compétences, 155 exercices. Généré depuis `content/`, ne pas éditer à la main.  
+> 38 compétences, 174 exercices. Généré depuis `content/`, ne pas éditer à la main.  
 > Objectif : juger le **fond** et la **coordination**. Le détail complet, énoncés et corrigés, est dans `RELECTURE_DETAIL.md`.
 
 ⚠ **7 compétence(s) à regarder**, signalées dans la colonne *Signal* et détaillées en §3.
@@ -11,43 +11,44 @@ C'est la lecture qui compte pour juger la coordination : la difficulté doit mon
 
 | # | Compétence | Niv. | Diff. | Exos | Mots/énoncé | Signal |
 |--:|---|---|--:|--:|--:|---|
-| 1 | `A001` Compter jusqu'à 10 | CP | 1 | 3 | 14 |  |
+| 1 | `A001` Compter jusqu'à 10 | CP | 1 | 3 | 12 |  |
 | 2 | `A002` Compter jusqu'à 100 | CP | 1 | 3 | 6 |  |
-| 3 | `A003` Compter jusqu'à 1000 | CE1 | 2 | 3 | 5 |  |
-| 4 | `A004` Lire un entier | CE1 | 2 | 3 | 6 | ⚠ |
-| 5 | `A005` Écrire un entier | CE1 | 2 | 3 | 5 | ⚠ |
-| 6 | `A006` Comparer deux entiers | CE1 | 2 | 3 | 13 | ⚠ |
-| 7 | `A008` Identifier chiffre et nombre | CE1 | 2 | 3 | 11 | ⚠ |
-| 8 | `A011` Pair / impair | CE1 | 2 | 3 | 11 |  |
-| 9 | `C001` Fraction comme partage | CE1 | 2 | 3 | 23 | ⚠ |
-| 10 | `C002` Numérateur | CE1 | 2 | 3 | 17 |  |
-| 11 | `C003` Dénominateur | CE1 | 2 | 3 | 21 | ⚠ |
-| 12 | `C009` Comparer fractions de même dénominateur | CE1 | 2 | 3 | 25 | ⚠ |
-| 13 | `C012` Additionner des fractions de même dénom… | CE1 | 2 | 3 | 17 |  |
-| 14 | `C026` Comparer des fractions de numérateur 1 | CE1 | 2 | 7 | 18 |  |
-| 15 | `A007` Ranger plusieurs entiers | CE2 | 2 | 3 | 17 |  |
-| 16 | `A009` Comprendre la valeur positionnelle | CE2 | 2 | 3 | 12 |  |
-| 17 | `C006` Fractions équivalentes | CE2 | 2 | 3 | 8 |  |
-| 18 | `C005` Fraction sur une droite graduée | CE2 | 2 | 3 | 25 |  |
-| 19 | `A010` Décomposer un entier | CE2 | 3 | 3 | 7 |  |
-| 20 | `A012` Multiple | CM1 | 3 | 7 | 22 |  |
-| 21 | `A013` Diviseur | CM1 | 3 | 7 | 21 |  |
-| 22 | `A014` Multiples de 2, de 5 et de 10 | CM1 | 3 | 7 | 18 |  |
-| 23 | `A028` Entier sur une demi-droite graduée | CM1 | 3 | 7 | 25 |  |
-| 24 | `C004` Fraction d'une quantité | CM1 | 3 | 3 | 13 |  |
-| 25 | `C027` Fraction supérieure à 1 | CM1 | 3 | 8 | 15 |  |
-| 26 | `C029` Encadrer une fraction | CM1 | 3 | 7 | 14 |  |
-| 27 | `C030` Fraction sur une demi-droite graduée | CM1 | 3 | 7 | 25 |  |
-| 28 | `A026` Tous les diviseurs d'un entier | CM2 | 3 | 7 | 17 |  |
-| 29 | `A027` Diviseurs et multiples communs | CM2 | 4 | 8 | 22 |  |
-| 30 | `C031` Produit d'un entier par une fraction | CM2 | 4 | 7 | 10 |  |
-| 31 | `C032` Fraction comme quotient | 6e | 4 | 7 | 16 |  |
-| 32 | `C011` Réduction au même dénominateur | 5e | 4 | 3 | 14 |  |
-| 33 | `C010` Comparer fractions de dénominateurs dif… | 5e | 4 | 3 | 13 |  |
-| 34 | `C007` Simplification de fraction | 4e | 5 | 3 | 11 |  |
-| 35 | `C008` Fraction irréductible | 3e | 6 | 3 | 9 |  |
-
-**Sans exercice (3)** : `B001` Addition simple, `B005` Multiplication à un chiffre, `B006` Tables de multiplication
+| 3 | `B001` Addition simple | CP | 1 | 6 | 14 |  |
+| 4 | `A003` Compter jusqu'à 1000 | CE1 | 2 | 3 | 5 |  |
+| 5 | `A004` Lire un entier | CE1 | 2 | 3 | 6 | ⚠ |
+| 6 | `A005` Écrire un entier | CE1 | 2 | 3 | 5 | ⚠ |
+| 7 | `A006` Comparer deux entiers | CE1 | 2 | 3 | 13 | ⚠ |
+| 8 | `A008` Identifier chiffre et nombre | CE1 | 2 | 3 | 11 | ⚠ |
+| 9 | `A011` Pair / impair | CE1 | 2 | 3 | 11 |  |
+| 10 | `B005` Multiplication à un chiffre | CE1 | 2 | 7 | 17 |  |
+| 11 | `C001` Fraction comme partage | CE1 | 2 | 3 | 23 | ⚠ |
+| 12 | `C002` Numérateur | CE1 | 2 | 3 | 17 |  |
+| 13 | `C003` Dénominateur | CE1 | 2 | 3 | 21 | ⚠ |
+| 14 | `C009` Comparer fractions de même dénominateur | CE1 | 2 | 3 | 25 | ⚠ |
+| 15 | `C012` Additionner des fractions de même dénom… | CE1 | 2 | 3 | 17 |  |
+| 16 | `C026` Comparer des fractions de numérateur 1 | CE1 | 2 | 7 | 18 |  |
+| 17 | `A007` Ranger plusieurs entiers | CE2 | 2 | 3 | 17 |  |
+| 18 | `A009` Comprendre la valeur positionnelle | CE2 | 2 | 3 | 12 |  |
+| 19 | `B006` Tables de multiplication | CE2 | 2 | 6 | 14 |  |
+| 20 | `C006` Fractions équivalentes | CE2 | 2 | 3 | 8 |  |
+| 21 | `C005` Fraction sur une droite graduée | CE2 | 2 | 3 | 25 |  |
+| 22 | `A010` Décomposer un entier | CE2 | 3 | 3 | 7 |  |
+| 23 | `A012` Multiple | CM1 | 3 | 7 | 22 |  |
+| 24 | `A013` Diviseur | CM1 | 3 | 7 | 21 |  |
+| 25 | `A014` Multiples de 2, de 5 et de 10 | CM1 | 3 | 7 | 18 |  |
+| 26 | `A028` Entier sur une demi-droite graduée | CM1 | 3 | 7 | 25 |  |
+| 27 | `C004` Fraction d'une quantité | CM1 | 3 | 3 | 13 |  |
+| 28 | `C027` Fraction supérieure à 1 | CM1 | 3 | 8 | 15 |  |
+| 29 | `C029` Encadrer une fraction | CM1 | 3 | 7 | 14 |  |
+| 30 | `C030` Fraction sur une demi-droite graduée | CM1 | 3 | 7 | 25 |  |
+| 31 | `A026` Tous les diviseurs d'un entier | CM2 | 3 | 7 | 17 |  |
+| 32 | `A027` Diviseurs et multiples communs | CM2 | 4 | 8 | 22 |  |
+| 33 | `C031` Produit d'un entier par une fraction | CM2 | 4 | 7 | 10 |  |
+| 34 | `C032` Fraction comme quotient | 6e | 4 | 7 | 16 |  |
+| 35 | `C011` Réduction au même dénominateur | 5e | 4 | 3 | 14 |  |
+| 36 | `C010` Comparer fractions de dénominateurs dif… | 5e | 4 | 3 | 13 |  |
+| 37 | `C007` Simplification de fraction | 4e | 5 | 3 | 11 |  |
+| 38 | `C008` Fraction irréductible | 3e | 6 | 3 | 9 |  |
 
 ## 2. Par chapitre
 
@@ -164,6 +165,19 @@ Le chapitre est l'unité qu'un exercice bilan validerait.
 | E | nume | Quel nombre vient juste après 69 ? | 70 |
 | M | qcm | Quel nombre s'écrit quatre-vingt-treize ? | a) 93 |
 
+**`B001` · Addition simple** — diff. 1, seuil 3/4  
+*Additionner deux entiers sans retenue*
+> « L'élève montre sa compréhension du sens de l'addition et de la soustraction lors de la résolution de problèmes. »
+
+| | Type | Demandé | Réponse |
+|---|---|---|---|
+| D | nume | Léo a 5 billes. Il en gagne 3. ● ● ● ● ● ● ● ● Combien en a-t-il après ? | 8 |
+| D | qcm | 5 enfants sont dans le bus. 2 enfants montent. Combien sont-ils alors ? | b) 7 |
+| E | nume | Nina lit 23 pages, puis 4 pages. Combien de pages a-t-elle lues ? | 27 |
+| E | vrai | Tom dit : « 4 + 32 et 32 + 4 donnent le même résultat. » A-t-il raison ? | vrai |
+| M | nume | Lina reçoit 4 perles. Elle a alors 9 perles. Combien de perles avait-elle avant ? | 5 |
+| M | nume | Sami a 12 images. Il en reçoit 5, puis 11. Combien en a-t-il à la fin ? | 28 |
+
 ### ── CE1 ──
 
 **`A003` · Compter jusqu'à 1000** — diff. 2, seuil 2/3  
@@ -221,6 +235,20 @@ Le chapitre est l'unité qu'un exercice bilan validerait.
 | D | qcm | Parmi ces nombres, lesquels sont pairs ? 13, 28, 45, 100 | a) 28 et 100 |
 | E | vrai | Le nombre 764 est un nombre pair. | vrai |
 | M | text | Donne tous les nombres pairs strictement compris entre 767 et 778. Sépare-les par des virgu… | 768, 770, 772, 774, 776 |
+
+**`B005` · Multiplication à un chiffre** — diff. 2, seuil 3/4  
+*Multiplier par un chiffre (tables de 1 à 5)*
+> « Le symbole « × » est lu « fois » par l'élève. »
+
+| | Type | Demandé | Réponse |
+|---|---|---|---|
+| D | nume | Dans une caisse, les pommes sont rangées en 3 rangées de 4. ● ● ● ● ● ● ● ● ● ● ● ● Combien… | 12 |
+| D | qcm | Jan a 4 paquets. Dans chaque paquet, il y a 5 biscuits. Quel calcul donne le nombre de bisc… | c) 4 × 5 |
+| E | nume | Un garage a 7 voitures. Chaque voiture a 4 roues. Combien de roues y a-t-il en tout ? | 28 |
+| E | nume | Complète l'égalité : 3 × … = 15 | 5 |
+| E | vrai | A : 3 rangées de 5 salades. ● ● ● ● ● ● ● ● ● ● ● ● ● ● ● B : 5 rangées de 3 salades. ● ● ●… | vrai |
+| M | nume | Le jardinier plante 18 salades, en colonnes de 3 salades. Combien de colonnes fait-il ? | 6 |
+| M | nume | Au cinéma : 5 rangées de 9 sièges, et 3 strapontins en plus. Combien de places en tout ? | 48 |
 
 **`C001` · Fraction comme partage** — diff. 2, seuil 2/3  ⚠  
 *Comprendre une fraction comme le partage d'un tout en parts égales*
@@ -307,6 +335,19 @@ Le chapitre est l'unité qu'un exercice bilan validerait.
 | D | nume | Dans le nombre 3 847, quel est le chiffre des centaines ? | 8 |
 | E | nume | Dans le nombre 3 847, quel est le nombre de centaines ? | 38 |
 | M | qcm | Dans le nombre 6 304, quel est le nombre de dizaines ? | a) 630 |
+
+**`B006` · Tables de multiplication** — diff. 2, seuil 3/4  
+*Connaître les tables de 1 à 9 par cœur*
+> « L'élève sait compléter des « égalités à trou » du type : 7 × … = 42 ; 9 × 6 = … ; 70 = 7 × … »
+
+| | Type | Demandé | Réponse |
+|---|---|---|---|
+| D | nume | Un paquet contient 9 biscuits. Combien de biscuits y a-t-il dans 8 paquets ? | 72 |
+| D | qcm | Quel est le résultat de 6 × 9 ? | b) 54 |
+| E | nume | Complète l'égalité : 9 × … = 63 | 7 |
+| E | vrai | Léna dit : « 36 est un résultat de la table de 7. » Léna a-t-elle raison ? | faux |
+| M | nume | Max colle 56 photos dans son album, en lignes de 7 photos. Combien de lignes remplit-il ? | 8 |
+| M | nume | Pour une fête, on installe 6 tables de 8 chaises et 7 tables de 3 chaises. Combien de chais… | 69 |
 
 **`C006` · Fractions équivalentes** — diff. 2, seuil 2/3  
 *Reconnaître et produire des fractions égales*

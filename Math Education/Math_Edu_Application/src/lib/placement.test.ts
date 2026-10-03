@@ -13,12 +13,15 @@ import { SCHOOL_LEVELS, type SchoolLevel } from '@/types/content'
 
 // Ces tests couvrent la regression qui rendait le produit inutilisable : le test
 // de positionnement choisissait la competence suivante sans verifier qu'elle
-// possede un exercice. Sur les 38 competences du contenu pilote, 15 n'en ont
-// aucune. Resultat : cul-de-sac des la premiere bonne reponse, et donc aucun
-// eleve ne pouvait creer son parcours.
+// possede un exercice. Resultat : cul-de-sac des la premiere bonne reponse, et
+// donc aucun eleve ne pouvait creer son parcours.
 //
 // La regle a tenir : tant que le test n'est pas termine, la competence courante
 // a toujours une question a poser.
+//
+// Ce fichier tourne sur le contenu reel. Depuis le 3 octobre 2026, toutes ses
+// competences ont des exercices : le contournement des competences vides est
+// donc teste a part, sur un contenu troue expres (placement.trous.test.ts).
 
 type Strategy = 'toujours juste' | 'toujours faux' | 'alterne'
 
@@ -54,15 +57,6 @@ function runPlacement(level: SchoolLevel | null, strategy: Strategy): RunResult 
 }
 
 const STRATEGIES: Strategy[] = ['toujours juste', 'toujours faux', 'alterne']
-
-describe('isTestable', () => {
-  it('distingue les competences qui ont des exercices de celles qui n en ont pas', () => {
-    const testable = skills.filter((skill) => isTestable(skill.id))
-    expect(testable.length).toBeGreaterThan(0)
-    // Le contenu pilote est incomplet : c'est justement le cas a couvrir.
-    expect(testable.length).toBeLessThan(skills.length)
-  })
-})
 
 describe('startPlacement', () => {
   it.each(SCHOOL_LEVELS)('pose une premiere question interrogeable en %s', (level) => {

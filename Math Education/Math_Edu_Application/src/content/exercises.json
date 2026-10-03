@@ -3,7 +3,7 @@
     "version": "1.0",
     "scope": "Tranche pilote CP a 4e : 69 exercices, 3 par competence (1 decouverte, 1 entrainement, 1 maitrise) sur les 23 competences des domaines A et C. La cible finale de la roadmap est de 5 exercices par niveau, soit 15 par competence.",
     "updated_at": "2026-07-28",
-    "total_exercises": 155,
+    "total_exercises": 174,
     "review_status": "relu_agent"
   },
   "exercises": [
@@ -2060,6 +2060,438 @@
       "estimated_duration_s": 150,
       "review_status": "relu_agent",
       "programme_ref": "Cycle 3, CM1, les nombres entiers : savoir placer des nombres et reperer des points sur une demi-droite graduee."
+    },
+    {
+      "id": "EX-B001-D-01",
+      "skill_id": "B001",
+      "level": "decouverte",
+      "type": "numerique",
+      "statement": "Léo a 5 billes. Il en gagne 3.\n\n● ● ● ● ●\n● ● ●\n\nCombien en a-t-il après ?",
+      "image": null,
+      "answer": {
+        "value": 8
+      },
+      "solution_steps": [
+        "Léo **gagne** des billes : il en aura plus qu'avant. On ajoute, c'est une addition.",
+        "On part de 5 et on avance de 3 : 6, 7, 8.",
+        "$5 + 3 = 8$. Léo a **8** billes après avoir gagné."
+      ],
+      "hint": "Pars du nombre de billes que Léo avait, puis avance d'une bille à chaque bille gagnée.",
+      "estimated_duration_s": 30,
+      "review_status": "brouillon",
+      "programme_ref": "Cycle 2, CP : comprendre le sens de l'addition ; l'élève montre sa compréhension du sens de l'addition lors de la résolution de problèmes."
+    },
+    {
+      "id": "EX-B001-D-02",
+      "skill_id": "B001",
+      "level": "decouverte",
+      "type": "qcm",
+      "statement": "5 enfants sont dans le bus. 2 enfants montent.\n\nCombien sont-ils alors ?",
+      "image": null,
+      "choices": [
+        {
+          "key": "a",
+          "text": "3",
+          "misconception": "L'élève soustrait au lieu d'ajouter : il calcule l'écart entre 5 et 2 sans lire que des enfants montent."
+        },
+        {
+          "key": "b",
+          "text": "7",
+          "misconception": null
+        },
+        {
+          "key": "c",
+          "text": "6",
+          "misconception": "L'élève compte le nombre de départ comme premier pas (« 5, 6 ») au lieu d'avancer de 2 à partir de 5."
+        }
+      ],
+      "answer": {
+        "value": "b"
+      },
+      "solution_steps": [
+        "Des enfants **montent** : il y en a plus dans le bus qu'au départ. On ajoute.",
+        "On part de 5 et on ajoute 2 : 6, 7.",
+        "$5 + 2 = 7$. Il y a **7** enfants dans le bus."
+      ],
+      "hint": "Quand des enfants montent, y en a-t-il plus ou moins dans le bus ?",
+      "estimated_duration_s": 30,
+      "review_status": "brouillon",
+      "programme_ref": "Cycle 2, CP : l'élève montre sa compréhension du sens de l'addition et de la soustraction lors de la résolution de problèmes."
+    },
+    {
+      "id": "EX-B001-E-01",
+      "skill_id": "B001",
+      "level": "entrainement",
+      "type": "numerique",
+      "statement": "Nina lit 23 pages, puis 4 pages.\n\nCombien de pages a-t-elle lues ?",
+      "image": null,
+      "answer": {
+        "value": 27
+      },
+      "solution_steps": [
+        "On ajoute les pages lues aujourd'hui à celles déjà lues : on calcule $23 + 4$.",
+        "23, c'est 2 dizaines et 3 unités. On ajoute les 4 unités aux 3 unités : $3 + 4 = 7$.",
+        "Les 2 dizaines ne changent pas : $23 + 4 = 27$. Nina a lu **27** pages."
+      ],
+      "hint": "Garde les dizaines de côté, et ajoute d'abord les unités entre elles.",
+      "estimated_duration_s": 45,
+      "review_status": "brouillon",
+      "programme_ref": "Cycle 2, CP : poser et effectuer des additions de deux nombres à un ou deux chiffres, en positionnant les unités sous les unités."
+    },
+    {
+      "id": "EX-B001-E-02",
+      "skill_id": "B001",
+      "level": "entrainement",
+      "type": "vrai_faux",
+      "statement": "Tom dit : « $4 + 32$ et $32 + 4$ donnent le même résultat. »\n\nA-t-il raison ?",
+      "image": null,
+      "answer": {
+        "value": true
+      },
+      "solution_steps": [
+        "On calcule les deux : $4 + 32 = 36$ et $32 + 4 = 36$.",
+        "Les deux additions donnent bien **36** : Tom a **raison**.",
+        "Dans une addition, on peut changer l'ordre des nombres sans changer le résultat. C'est pratique : $32 + 4$ est plus facile, on part du plus grand nombre."
+      ],
+      "hint": "Calcule les deux additions et compare.",
+      "estimated_duration_s": 40,
+      "review_status": "brouillon",
+      "programme_ref": "Cycle 2, CP : l'élève comprend que l'ordre des termes n'a pas d'importance pour l'addition."
+    },
+    {
+      "id": "EX-B001-M-01",
+      "skill_id": "B001",
+      "level": "maitrise",
+      "type": "numerique",
+      "statement": "Lina reçoit 4 perles. Elle a alors 9 perles.\n\nCombien de perles avait-elle avant ?",
+      "image": null,
+      "answer": {
+        "value": 5
+      },
+      "solution_steps": [
+        "On ne connait pas le nombre de départ. On cherche le nombre qui complète l'égalité $\\dots + 4 = 9$.",
+        "On peut compter de 4 jusqu'à 9 : 5, 6, 7, 8, 9. Cela fait 5 pas.",
+        "$5 + 4 = 9$. Lina avait **5** perles au début."
+      ],
+      "hint": "Quel nombre faut-il ajouter à 4 pour arriver à 9 ?",
+      "estimated_duration_s": 60,
+      "review_status": "brouillon",
+      "programme_ref": "Cycle 2, CP : connaitre dans les deux sens les tables d'addition ; l'élève sait donner l'un des trois nombres d'une égalité du type A + B = C."
+    },
+    {
+      "id": "EX-B001-M-02",
+      "skill_id": "B001",
+      "level": "maitrise",
+      "type": "numerique",
+      "statement": "Sami a 12 images. Il en reçoit 5, puis 11.\n\nCombien en a-t-il à la fin ?",
+      "image": null,
+      "answer": {
+        "value": 28
+      },
+      "solution_steps": [
+        "Il y a deux étapes : Sami reçoit des images deux fois.",
+        "Après le premier cadeau : $12 + 5 = 17$ images.",
+        "Après le second : $17 + 11 = 28$. On ajoute 1 dizaine et 1 unité à 17.",
+        "Sami a **28** images à la fin."
+      ],
+      "hint": "Fais le calcul en deux fois : d'abord avec les 5 images, puis avec les 11.",
+      "estimated_duration_s": 75,
+      "review_status": "brouillon",
+      "programme_ref": "Cycle 2, CP : résoudre des problèmes additifs en deux étapes (champ numérique inférieur ou égal à 30)."
+    },
+    {
+      "id": "EX-B005-D-01",
+      "skill_id": "B005",
+      "level": "decouverte",
+      "type": "numerique",
+      "statement": "Dans une caisse, les pommes sont rangées en 3 rangées de 4.\n\n● ● ● ●\n● ● ● ●\n● ● ● ●\n\nCombien y a-t-il de pommes ?",
+      "image": null,
+      "answer": {
+        "value": 12
+      },
+      "solution_steps": [
+        "Chaque rangée contient 4 pommes, et il y a 3 rangées.",
+        "On ajoute 4 trois fois : $4 + 4 + 4 = 12$.",
+        "On peut l'écrire plus court : 3 fois 4, c'est $3 \\times 4 = 12$. Il y a **12** pommes."
+      ],
+      "hint": "Compte les pommes d'une rangée, puis compte combien il y a de rangées.",
+      "estimated_duration_s": 45,
+      "review_status": "brouillon",
+      "programme_ref": "Cycle 2, CP : comprendre le sens de la multiplication ; l'élève comprend et utilise le mot « fois » dans le cadre d'additions itérées."
+    },
+    {
+      "id": "EX-B005-D-02",
+      "skill_id": "B005",
+      "level": "decouverte",
+      "type": "qcm",
+      "statement": "Jan a 4 paquets. Dans chaque paquet, il y a 5 biscuits.\n\nQuel calcul donne le nombre de biscuits ?",
+      "image": null,
+      "choices": [
+        {
+          "key": "a",
+          "text": "$4 + 5$",
+          "misconception": "L'élève additionne le nombre de paquets et le nombre de biscuits par paquet, sans voir que les 5 biscuits se répètent dans chaque paquet."
+        },
+        {
+          "key": "b",
+          "text": "$5 + 5 + 5$",
+          "misconception": "L'élève a bien l'idée d'ajouter 5 plusieurs fois, mais ne l'ajoute que 3 fois au lieu d'une fois par paquet."
+        },
+        {
+          "key": "c",
+          "text": "$4 \\times 5$",
+          "misconception": null
+        }
+      ],
+      "answer": {
+        "value": "c"
+      },
+      "solution_steps": [
+        "Chaque paquet contient 5 biscuits, et il y a 4 paquets : on ajoute 5 **quatre fois**.",
+        "$5 + 5 + 5 + 5$, c'est 4 fois 5, qui s'écrit $4 \\times 5$.",
+        "La bonne réponse est $4 \\times 5$, qui fait 20 biscuits."
+      ],
+      "hint": "Combien de fois faut-il compter les 5 biscuits ?",
+      "estimated_duration_s": 45,
+      "review_status": "brouillon",
+      "programme_ref": "Cycle 2, CE1 : comprendre et utiliser le symbole « × » ; le symbole « × » est lu « fois » par l'élève."
+    },
+    {
+      "id": "EX-B005-E-01",
+      "skill_id": "B005",
+      "level": "entrainement",
+      "type": "numerique",
+      "statement": "Un garage a 7 voitures. Chaque voiture a 4 roues.\n\nCombien de roues y a-t-il en tout ?",
+      "image": null,
+      "answer": {
+        "value": 28
+      },
+      "solution_steps": [
+        "Chaque voiture a 4 roues, et il y a 7 voitures : on compte 7 fois 4 roues.",
+        "7 fois 4 s'écrit $7 \\times 4$. On peut avancer de 4 en 4 : 4, 8, 12, 16, 20, 24, 28.",
+        "$7 \\times 4 = 28$. Il y a **28** roues."
+      ],
+      "hint": "Compte de 4 en 4, une fois pour chaque voiture.",
+      "estimated_duration_s": 60,
+      "review_status": "brouillon",
+      "programme_ref": "Cycle 2, CE1 : connaitre dans les deux sens les tables de multiplication."
+    },
+    {
+      "id": "EX-B005-E-02",
+      "skill_id": "B005",
+      "level": "entrainement",
+      "type": "numerique",
+      "statement": "Complète l'égalité :\n\n$3 \\times \\dots = 15$",
+      "image": null,
+      "answer": {
+        "value": 5
+      },
+      "solution_steps": [
+        "On cherche combien de fois il faut prendre 3 pour arriver à 15.",
+        "On compte de 3 en 3 : 3, 6, 9, 12, 15. On a avancé 5 fois.",
+        "$3 \\times 5 = 15$. Le nombre qui manque est **5**."
+      ],
+      "hint": "Compte de 3 en 3 jusqu'à 15, et compte tes pas.",
+      "estimated_duration_s": 45,
+      "review_status": "brouillon",
+      "programme_ref": "Cycle 2, CE1 : connaitre dans les deux sens les tables de multiplication ; l'élève peut compléter des égalités à trou du type 4 × … = 12."
+    },
+    {
+      "id": "EX-B005-E-03",
+      "skill_id": "B005",
+      "level": "entrainement",
+      "type": "vrai_faux",
+      "statement": "A : 3 rangées de 5 salades.\n● ● ● ● ●\n● ● ● ● ●\n● ● ● ● ●\n\nB : 5 rangées de 3 salades.\n● ● ●\n● ● ●\n● ● ●\n● ● ●\n● ● ●\n\nVrai ou faux : A et B ont autant de salades.",
+      "image": null,
+      "answer": {
+        "value": true
+      },
+      "solution_steps": [
+        "Rangement A : 3 rangées de 5 salades, soit $3 \\times 5 = 15$ salades.",
+        "Rangement B : 5 rangées de 3 salades, soit $5 \\times 3 = 15$ salades.",
+        "Si on tourne A d'un quart de tour, on obtient B : ce sont les mêmes salades. C'est **vrai** : dans une multiplication, l'ordre des nombres ne change pas le résultat."
+      ],
+      "hint": "Calcule le nombre de salades de A, puis celui de B.",
+      "estimated_duration_s": 60,
+      "review_status": "brouillon",
+      "programme_ref": "Cycle 2, CE1 : comprendre et savoir que la multiplication est commutative."
+    },
+    {
+      "id": "EX-B005-M-01",
+      "skill_id": "B005",
+      "level": "maitrise",
+      "type": "numerique",
+      "statement": "Le jardinier plante 18 salades, en colonnes de 3 salades.\n\nCombien de colonnes fait-il ?",
+      "image": null,
+      "answer": {
+        "value": 6
+      },
+      "solution_steps": [
+        "Chaque colonne a 3 salades. On cherche combien de fois 3 il faut pour faire 18 : $3 \\times \\dots = 18$.",
+        "On compte de 3 en 3 : 3, 6, 9, 12, 15, 18. On a compté 6 fois.",
+        "$3 \\times 6 = 18$. Le jardinier fait **6** colonnes."
+      ],
+      "hint": "Compte de 3 en 3 jusqu'à 18, et compte tes pas.",
+      "estimated_duration_s": 75,
+      "review_status": "brouillon",
+      "programme_ref": "Cycle 2, CE1 : l'élève sait résoudre des problèmes consistant, dans un partage équitable, à chercher le nombre de parts à partir de la quantité totale d'objets et de la quantité contenue dans chaque part."
+    },
+    {
+      "id": "EX-B005-M-02",
+      "skill_id": "B005",
+      "level": "maitrise",
+      "type": "numerique",
+      "statement": "Au cinéma : 5 rangées de 9 sièges, et 3 strapontins en plus.\n\nCombien de places en tout ?",
+      "image": null,
+      "answer": {
+        "value": 48
+      },
+      "solution_steps": [
+        "D'abord, les sièges : 5 rangées de 9 sièges, soit $5 \\times 9 = 45$ sièges.",
+        "Ensuite, on ajoute les 3 strapontins : $45 + 3 = 48$.",
+        "Il y a **48** places en tout."
+      ],
+      "hint": "Commence par trouver le nombre de sièges dans les rangées.",
+      "estimated_duration_s": 90,
+      "review_status": "brouillon",
+      "programme_ref": "Cycle 2, CE1 : résoudre des problèmes mixtes en deux étapes (une étape additive et une étape multiplicative)."
+    },
+    {
+      "id": "EX-B006-D-01",
+      "skill_id": "B006",
+      "level": "decouverte",
+      "type": "numerique",
+      "statement": "Un paquet contient 9 biscuits.\n\nCombien de biscuits y a-t-il dans 8 paquets ?",
+      "image": null,
+      "answer": {
+        "value": 72
+      },
+      "solution_steps": [
+        "8 paquets de 9 biscuits : on calcule 8 fois 9, soit $8 \\times 9$.",
+        "Dans la table de 9 : $9 \\times 8 = 72$.",
+        "Il y a **72** biscuits dans 8 paquets."
+      ],
+      "hint": "Récite la table de 9.",
+      "estimated_duration_s": 40,
+      "review_status": "brouillon",
+      "programme_ref": "Cycle 2, CE2 : connaitre dans les deux sens les tables de multiplication."
+    },
+    {
+      "id": "EX-B006-D-02",
+      "skill_id": "B006",
+      "level": "decouverte",
+      "type": "qcm",
+      "statement": "Quel est le résultat de $6 \\times 9$ ?",
+      "image": null,
+      "choices": [
+        {
+          "key": "a",
+          "text": "56",
+          "misconception": "L'élève confond deux résultats voisins des tables : 56 est le résultat de 7 × 8, pas de 6 × 9."
+        },
+        {
+          "key": "b",
+          "text": "54",
+          "misconception": null
+        },
+        {
+          "key": "c",
+          "text": "15",
+          "misconception": "L'élève additionne les deux nombres au lieu de les multiplier : 6 + 9 = 15."
+        }
+      ],
+      "answer": {
+        "value": "b"
+      },
+      "solution_steps": [
+        "$6 \\times 9$, c'est 6 fois 9, ou 9 fois 6 : l'ordre ne change pas le résultat.",
+        "Dans la table de 9 : $9 \\times 6 = 54$.",
+        "Pour vérifier, on peut partir de $6 \\times 10 = 60$ et enlever un 6 : $60 - 6 = 54$."
+      ],
+      "hint": "Si tu connais 6 × 10, il suffit d'enlever un 6.",
+      "estimated_duration_s": 30,
+      "review_status": "brouillon",
+      "programme_ref": "Cycle 2, CE2 : connaitre dans les deux sens les tables de multiplication ; l'élève sait compléter des égalités du type 9 × 6 = …"
+    },
+    {
+      "id": "EX-B006-E-01",
+      "skill_id": "B006",
+      "level": "entrainement",
+      "type": "numerique",
+      "statement": "Complète l'égalité :\n\n$9 \\times \\dots = 63$",
+      "image": null,
+      "answer": {
+        "value": 7
+      },
+      "solution_steps": [
+        "On cherche dans la table de 9 le résultat 63.",
+        "$9 \\times 6 = 54$, $9 \\times 7 = 63$.",
+        "Le nombre qui manque est **7**."
+      ],
+      "hint": "Récite la table de 9 jusqu'à tomber sur 63.",
+      "estimated_duration_s": 40,
+      "review_status": "brouillon",
+      "programme_ref": "Cycle 2, CE2 : connaitre dans les deux sens les tables de multiplication ; l'élève sait compléter des égalités à trou du type 7 × … = 42."
+    },
+    {
+      "id": "EX-B006-E-02",
+      "skill_id": "B006",
+      "level": "entrainement",
+      "type": "vrai_faux",
+      "statement": "Léna dit : « 36 est un résultat de la table de 7. »\n\nLéna a-t-elle raison ?",
+      "image": null,
+      "answer": {
+        "value": false
+      },
+      "solution_steps": [
+        "La table de 7 donne : 7, 14, 21, 28, 35, 42, 49, 56, 63.",
+        "$7 \\times 5 = 35$ et $7 \\times 6 = 42$ : on passe de 35 à 42 sans tomber sur 36.",
+        "36 n'est **pas** dans la table de 7 : Léna a **tort**. On trouve 36 dans d'autres tables, par exemple $6 \\times 6 = 36$ ou $4 \\times 9 = 36$."
+      ],
+      "hint": "Récite la table de 7 et regarde si 36 y apparaît.",
+      "estimated_duration_s": 45,
+      "review_status": "brouillon",
+      "programme_ref": "Cycle 2, CE2 : connaitre dans les deux sens les tables de multiplication."
+    },
+    {
+      "id": "EX-B006-M-01",
+      "skill_id": "B006",
+      "level": "maitrise",
+      "type": "numerique",
+      "statement": "Max colle 56 photos dans son album, en lignes de 7 photos.\n\nCombien de lignes remplit-il ?",
+      "image": null,
+      "answer": {
+        "value": 8
+      },
+      "solution_steps": [
+        "Chaque ligne contient 7 photos. On cherche combien de fois 7 il faut pour faire 56 : $7 \\times \\dots = 56$.",
+        "Dans la table de 7 : $7 \\times 8 = 56$.",
+        "Max remplit **8** lignes."
+      ],
+      "hint": "Cherche dans la table de 7 la multiplication qui donne 56.",
+      "estimated_duration_s": 60,
+      "review_status": "brouillon",
+      "programme_ref": "Cycle 2, CE2 : connaitre dans les deux sens les tables de multiplication ; l'élève sait compléter des égalités à trou du type 7 × … = 42."
+    },
+    {
+      "id": "EX-B006-M-02",
+      "skill_id": "B006",
+      "level": "maitrise",
+      "type": "numerique",
+      "statement": "Pour une fête, on installe 6 tables de 8 chaises et 7 tables de 3 chaises.\n\nCombien de chaises y a-t-il en tout ?",
+      "image": null,
+      "answer": {
+        "value": 69
+      },
+      "solution_steps": [
+        "Premières tables : 6 tables de 8 chaises, soit $6 \\times 8 = 48$ chaises.",
+        "Autres tables : 7 tables de 3 chaises, soit $7 \\times 3 = 21$ chaises.",
+        "On ajoute les deux : $48 + 21 = 69$. Il y a **69** chaises en tout."
+      ],
+      "hint": "Calcule séparément les chaises de chaque sorte de table, puis ajoute.",
+      "estimated_duration_s": 120,
+      "review_status": "brouillon",
+      "programme_ref": "Cycle 2, CE2 : résoudre des problèmes mixtes en deux ou trois étapes, engageant des additions, des soustractions et des multiplications."
     },
     {
       "id": "EX-C001-D-01",

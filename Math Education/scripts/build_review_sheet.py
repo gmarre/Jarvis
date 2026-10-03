@@ -56,7 +56,10 @@ def court(t: str, n: int) -> str:
 
 
 def mots(t: str) -> int:
-    return len(re.findall(r"\S+", re.sub(r"\$[^$]*\$", " X ", t)))
+    # Les rangees de ● ou ○ sont une figure (collection a denombrer), pas du texte
+    # a lire : chaque point comptait pour un mot et gonflait la charge de lecture.
+    t = re.sub(r"[●○]", " ", re.sub(r"\$[^$]*\$", " X ", t))
+    return len(re.findall(r"\S+", t))
 
 
 def reponse(e: dict) -> str:

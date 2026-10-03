@@ -83,6 +83,78 @@ Quel nombre s'écrit quatre-vingt-treize ?
 
 ---
 
+## `B001` · Addition simple — CP, difficulté 1
+
+*Additionner deux entiers sans retenue*
+
+> « L'élève montre sa compréhension du sens de l'addition et de la soustraction lors de la résolution de problèmes. » — *Cycle 2, Cours préparatoire, Les quatre opérations*
+
+**EX-B001-D-01** — decouverte, numerique, 30 s
+
+Léo a 5 billes. Il en gagne 3. ● ● ● ● ● ● ● ● Combien en a-t-il après ?
+
+**Réponse :** 8
+
+*Corrigé.* (1) Léo gagne des billes : il en aura plus qu'avant. On ajoute, c'est une addition. (2) On part de 5 et on avance de 3 : 6, 7, 8. (3) 5 + 3 = 8. Léo a 8 billes après avoir gagné.
+
+*Indice.* Pars du nombre de billes que Léo avait, puis avance d'une bille à chaque bille gagnée.
+
+**EX-B001-D-02** — decouverte, qcm, 30 s
+
+5 enfants sont dans le bus. 2 enfants montent. Combien sont-ils alors ?
+
+- **a.** 3
+  <br>*Erreur visée :* L'élève soustrait au lieu d'ajouter : il calcule l'écart entre 5 et 2 sans lire que des enfants montent.
+- **b.** 7 ✅
+- **c.** 6
+  <br>*Erreur visée :* L'élève compte le nombre de départ comme premier pas (« 5, 6 ») au lieu d'avancer de 2 à partir de 5.
+
+*Corrigé.* (1) Des enfants montent : il y en a plus dans le bus qu'au départ. On ajoute. (2) On part de 5 et on ajoute 2 : 6, 7. (3) 5 + 2 = 7. Il y a 7 enfants dans le bus.
+
+*Indice.* Quand des enfants montent, y en a-t-il plus ou moins dans le bus ?
+
+**EX-B001-E-01** — entrainement, numerique, 45 s
+
+Nina lit 23 pages, puis 4 pages. Combien de pages a-t-elle lues ?
+
+**Réponse :** 27
+
+*Corrigé.* (1) On ajoute les pages lues aujourd'hui à celles déjà lues : on calcule 23 + 4. (2) 23, c'est 2 dizaines et 3 unités. On ajoute les 4 unités aux 3 unités : 3 + 4 = 7. (3) Les 2 dizaines ne changent pas : 23 + 4 = 27. Nina a lu 27 pages.
+
+*Indice.* Garde les dizaines de côté, et ajoute d'abord les unités entre elles.
+
+**EX-B001-E-02** — entrainement, vrai_faux, 40 s
+
+Tom dit : « 4 + 32 et 32 + 4 donnent le même résultat. » A-t-il raison ?
+
+**Réponse :** True
+
+*Corrigé.* (1) On calcule les deux : 4 + 32 = 36 et 32 + 4 = 36. (2) Les deux additions donnent bien 36 : Tom a raison. (3) Dans une addition, on peut changer l'ordre des nombres sans changer le résultat. C'est pratique : 32 + 4 est plus facile, on part du plus grand nombre.
+
+*Indice.* Calcule les deux additions et compare.
+
+**EX-B001-M-01** — maitrise, numerique, 60 s
+
+Lina reçoit 4 perles. Elle a alors 9 perles. Combien de perles avait-elle avant ?
+
+**Réponse :** 5
+
+*Corrigé.* (1) On ne connait pas le nombre de départ. On cherche le nombre qui complète l'égalité … + 4 = 9. (2) On peut compter de 4 jusqu'à 9 : 5, 6, 7, 8, 9. Cela fait 5 pas. (3) 5 + 4 = 9. Lina avait 5 perles au début.
+
+*Indice.* Quel nombre faut-il ajouter à 4 pour arriver à 9 ?
+
+**EX-B001-M-02** — maitrise, numerique, 75 s
+
+Sami a 12 images. Il en reçoit 5, puis 11. Combien en a-t-il à la fin ?
+
+**Réponse :** 28
+
+*Corrigé.* (1) Il y a deux étapes : Sami reçoit des images deux fois. (2) Après le premier cadeau : 12 + 5 = 17 images. (3) Après le second : 17 + 11 = 28. On ajoute 1 dizaine et 1 unité à 17. (4) Sami a 28 images à la fin.
+
+*Indice.* Fais le calcul en deux fois : d'abord avec les 5 images, puis avec les 11.
+
+---
+
 ## `A003` · Compter jusqu'à 1000 — CE1, difficulté 2
 
 *Lire, écrire et comparer les entiers jusqu'à 1000*
@@ -335,6 +407,88 @@ Donne tous les nombres pairs strictement compris entre 767 et 778. Sépare-les p
 *Corrigé.* (1) « Strictement compris entre 767 et 778 » signifie de 768 à 777. (2) Le premier nombre pair est 768. (3) On avance ensuite de 2 en 2 : 768, 770, 772, 774, 776. (4) 778 est exclu car la borne est stricte. (5) Réponse : 768, 770, 772, 774, 776.
 
 *Indice.* Trouve le premier nombre pair après 767, puis avance de 2 en 2.
+
+---
+
+## `B005` · Multiplication à un chiffre — CE1, difficulté 2
+
+*Multiplier par un chiffre (tables de 1 à 5)*
+
+> « Le symbole « × » est lu « fois » par l'élève. » — *Cycle 2, Cours élémentaire première année, Les quatre opérations*
+
+**EX-B005-D-01** — decouverte, numerique, 45 s
+
+Dans une caisse, les pommes sont rangées en 3 rangées de 4. ● ● ● ● ● ● ● ● ● ● ● ● Combien y a-t-il de pommes ?
+
+**Réponse :** 12
+
+*Corrigé.* (1) Chaque rangée contient 4 pommes, et il y a 3 rangées. (2) On ajoute 4 trois fois : 4 + 4 + 4 = 12. (3) On peut l'écrire plus court : 3 fois 4, c'est 3 × 4 = 12. Il y a 12 pommes.
+
+*Indice.* Compte les pommes d'une rangée, puis compte combien il y a de rangées.
+
+**EX-B005-D-02** — decouverte, qcm, 45 s
+
+Jan a 4 paquets. Dans chaque paquet, il y a 5 biscuits. Quel calcul donne le nombre de biscuits ?
+
+- **a.** 4 + 5
+  <br>*Erreur visée :* L'élève additionne le nombre de paquets et le nombre de biscuits par paquet, sans voir que les 5 biscuits se répètent dans chaque paquet.
+- **b.** 5 + 5 + 5
+  <br>*Erreur visée :* L'élève a bien l'idée d'ajouter 5 plusieurs fois, mais ne l'ajoute que 3 fois au lieu d'une fois par paquet.
+- **c.** 4 × 5 ✅
+
+*Corrigé.* (1) Chaque paquet contient 5 biscuits, et il y a 4 paquets : on ajoute 5 quatre fois. (2) 5 + 5 + 5 + 5, c'est 4 fois 5, qui s'écrit 4 × 5. (3) La bonne réponse est 4 × 5, qui fait 20 biscuits.
+
+*Indice.* Combien de fois faut-il compter les 5 biscuits ?
+
+**EX-B005-E-01** — entrainement, numerique, 60 s
+
+Un garage a 7 voitures. Chaque voiture a 4 roues. Combien de roues y a-t-il en tout ?
+
+**Réponse :** 28
+
+*Corrigé.* (1) Chaque voiture a 4 roues, et il y a 7 voitures : on compte 7 fois 4 roues. (2) 7 fois 4 s'écrit 7 × 4. On peut avancer de 4 en 4 : 4, 8, 12, 16, 20, 24, 28. (3) 7 × 4 = 28. Il y a 28 roues.
+
+*Indice.* Compte de 4 en 4, une fois pour chaque voiture.
+
+**EX-B005-E-02** — entrainement, numerique, 45 s
+
+Complète l'égalité : 3 × … = 15
+
+**Réponse :** 5
+
+*Corrigé.* (1) On cherche combien de fois il faut prendre 3 pour arriver à 15. (2) On compte de 3 en 3 : 3, 6, 9, 12, 15. On a avancé 5 fois. (3) 3 × 5 = 15. Le nombre qui manque est 5.
+
+*Indice.* Compte de 3 en 3 jusqu'à 15, et compte tes pas.
+
+**EX-B005-E-03** — entrainement, vrai_faux, 60 s
+
+A : 3 rangées de 5 salades. ● ● ● ● ● ● ● ● ● ● ● ● ● ● ● B : 5 rangées de 3 salades. ● ● ● ● ● ● ● ● ● ● ● ● ● ● ● Vrai ou faux : A et B ont autant de salades.
+
+**Réponse :** True
+
+*Corrigé.* (1) Rangement A : 3 rangées de 5 salades, soit 3 × 5 = 15 salades. (2) Rangement B : 5 rangées de 3 salades, soit 5 × 3 = 15 salades. (3) Si on tourne A d'un quart de tour, on obtient B : ce sont les mêmes salades. C'est vrai : dans une multiplication, l'ordre des nombres ne change pas le résultat.
+
+*Indice.* Calcule le nombre de salades de A, puis celui de B.
+
+**EX-B005-M-01** — maitrise, numerique, 75 s
+
+Le jardinier plante 18 salades, en colonnes de 3 salades. Combien de colonnes fait-il ?
+
+**Réponse :** 6
+
+*Corrigé.* (1) Chaque colonne a 3 salades. On cherche combien de fois 3 il faut pour faire 18 : 3 × … = 18. (2) On compte de 3 en 3 : 3, 6, 9, 12, 15, 18. On a compté 6 fois. (3) 3 × 6 = 18. Le jardinier fait 6 colonnes.
+
+*Indice.* Compte de 3 en 3 jusqu'à 18, et compte tes pas.
+
+**EX-B005-M-02** — maitrise, numerique, 90 s
+
+Au cinéma : 5 rangées de 9 sièges, et 3 strapontins en plus. Combien de places en tout ?
+
+**Réponse :** 48
+
+*Corrigé.* (1) D'abord, les sièges : 5 rangées de 9 sièges, soit 5 × 9 = 45 sièges. (2) Ensuite, on ajoute les 3 strapontins : 45 + 3 = 48. (3) Il y a 48 places en tout.
+
+*Indice.* Commence par trouver le nombre de sièges dans les rangées.
 
 ---
 
@@ -730,6 +884,78 @@ Dans le nombre 6 304, quel est le nombre de dizaines ?
 *Corrigé.* (1) Le chiffre des dizaines est 0, mais la question porte sur le nombre de dizaines. (2) Le nombre de dizaines compte toutes les dizaines contenues dans 6 304, y compris celles cachées dans les centaines et les milliers. (3) 6 304 = 630 × 10 + 4. (4) Il y a donc 630 dizaines, et il reste 4 unités.
 
 *Indice.* Combien de paquets de 10 peut-on faire avec 6 304 ? Ce n'est pas la même question que « quel chiffre occupe le rang des dizaines ».
+
+---
+
+## `B006` · Tables de multiplication — CE2, difficulté 2
+
+*Connaître les tables de 1 à 9 par cœur*
+
+> « L'élève sait compléter des « égalités à trou » du type : 7 × … = 42 ; 9 × 6 = … ; 70 = 7 × … » — *Cycle 2, Cours élémentaire deuxième année, Mémoriser des faits numériques*
+
+**EX-B006-D-01** — decouverte, numerique, 40 s
+
+Un paquet contient 9 biscuits. Combien de biscuits y a-t-il dans 8 paquets ?
+
+**Réponse :** 72
+
+*Corrigé.* (1) 8 paquets de 9 biscuits : on calcule 8 fois 9, soit 8 × 9. (2) Dans la table de 9 : 9 × 8 = 72. (3) Il y a 72 biscuits dans 8 paquets.
+
+*Indice.* Récite la table de 9.
+
+**EX-B006-D-02** — decouverte, qcm, 30 s
+
+Quel est le résultat de 6 × 9 ?
+
+- **a.** 56
+  <br>*Erreur visée :* L'élève confond deux résultats voisins des tables : 56 est le résultat de 7 × 8, pas de 6 × 9.
+- **b.** 54 ✅
+- **c.** 15
+  <br>*Erreur visée :* L'élève additionne les deux nombres au lieu de les multiplier : 6 + 9 = 15.
+
+*Corrigé.* (1) 6 × 9, c'est 6 fois 9, ou 9 fois 6 : l'ordre ne change pas le résultat. (2) Dans la table de 9 : 9 × 6 = 54. (3) Pour vérifier, on peut partir de 6 × 10 = 60 et enlever un 6 : 60 - 6 = 54.
+
+*Indice.* Si tu connais 6 × 10, il suffit d'enlever un 6.
+
+**EX-B006-E-01** — entrainement, numerique, 40 s
+
+Complète l'égalité : 9 × … = 63
+
+**Réponse :** 7
+
+*Corrigé.* (1) On cherche dans la table de 9 le résultat 63. (2) 9 × 6 = 54, 9 × 7 = 63. (3) Le nombre qui manque est 7.
+
+*Indice.* Récite la table de 9 jusqu'à tomber sur 63.
+
+**EX-B006-E-02** — entrainement, vrai_faux, 45 s
+
+Léna dit : « 36 est un résultat de la table de 7. » Léna a-t-elle raison ?
+
+**Réponse :** False
+
+*Corrigé.* (1) La table de 7 donne : 7, 14, 21, 28, 35, 42, 49, 56, 63. (2) 7 × 5 = 35 et 7 × 6 = 42 : on passe de 35 à 42 sans tomber sur 36. (3) 36 n'est pas dans la table de 7 : Léna a tort. On trouve 36 dans d'autres tables, par exemple 6 × 6 = 36 ou 4 × 9 = 36.
+
+*Indice.* Récite la table de 7 et regarde si 36 y apparaît.
+
+**EX-B006-M-01** — maitrise, numerique, 60 s
+
+Max colle 56 photos dans son album, en lignes de 7 photos. Combien de lignes remplit-il ?
+
+**Réponse :** 8
+
+*Corrigé.* (1) Chaque ligne contient 7 photos. On cherche combien de fois 7 il faut pour faire 56 : 7 × … = 56. (2) Dans la table de 7 : 7 × 8 = 56. (3) Max remplit 8 lignes.
+
+*Indice.* Cherche dans la table de 7 la multiplication qui donne 56.
+
+**EX-B006-M-02** — maitrise, numerique, 120 s
+
+Pour une fête, on installe 6 tables de 8 chaises et 7 tables de 3 chaises. Combien de chaises y a-t-il en tout ?
+
+**Réponse :** 69
+
+*Corrigé.* (1) Premières tables : 6 tables de 8 chaises, soit 6 × 8 = 48 chaises. (2) Autres tables : 7 tables de 3 chaises, soit 7 × 3 = 21 chaises. (3) On ajoute les deux : 48 + 21 = 69. Il y a 69 chaises en tout.
+
+*Indice.* Calcule séparément les chaises de chaque sorte de table, puis ajoute.
 
 ---
 

@@ -62,13 +62,15 @@ Le DAG v1.0 (`Spécifications DAG, Exos, Mindcards/skills_dag.json`) contient 41
 | Brique | Contenu | État |
 |--------|---------|------|
 | `skills_dag.json` | Graphe enrichi (`exercise_ids`, `mindmap_id`, `mastery_threshold`) | **v2.1 : 38 compétences** sur 414 (domaines A et C, plus 3 de B en prérequis). Intégrité vérifiée : aucun cycle, aucun prérequis fantôme, aucun identifiant d'exercice ou de carte orphelin. |
-| `exercises.json` | Banque d'exercices, 3 niveaux, avec corrigés | **69 exercices**, tous en `relu_agent` (taux d'erreur final 2,9 %, suivi dans `QUALITY.md`). **15 des 38 compétences n'ont aucun exercice.** |
+| `exercises.json` | Banque d'exercices, 3 niveaux, avec corrigés | **174 exercices** au 3 octobre 2026 : 155 en `relu_agent`, 19 en `brouillon` (lot B, relu par agent, voir `QUALITY.md`). **Les 38 compétences ont désormais des exercices.** Aucun n'a encore passé la relecture humaine de Marius. |
 | `mindmaps.json` | Cartes mentales en Markdown hiérarchique | **6 cartes**, reliées à 35 des 38 compétences. |
 | Progression élève | État d'avancement sur le DAG | **En base Supabase**, tables et politiques RLS actives. |
 
-**Les 15 compétences sans exercice :** B001, B005, B006, C026, C027, C029, C030, C031, C032, A012, A013, A014, A026, A027, A028. Le code les contourne (le test de positionnement les saute au lieu de s'y bloquer), mais **elles dégradent la précision du diagnostic** : moins de points de mesure, donc une frontière de maîtrise plus floue.
+**Plus aucune compétence sans exercice.** Les 12 compétences A et C de l'ancienne liste avaient été remplies par Marius (7 ou 8 exercices chacune). Les trois dernières, B001, B005 et B006, l'ont été le 3 octobre 2026 : B005 était la lacune racine d'un élève CM1 typique, dont le plan du jour restait vide. Le code continue de contourner une compétence vide, ce qui redeviendra utile quand le DAG grandira : `placement.trous.test.ts` le vérifie sur un contenu troué exprès.
 
-**Prochaine étape côté contenu :** **B005 en premier**, c'est la lacune racine d'un élève CM1 typique et sans elle son plan du jour est vide (recette du 3 octobre, §8.1). Ensuite la relecture humaine de Marius sur les 69 exercices, puis les autres compétences vides.
+**Prochaine étape côté contenu (Marius) :** la relecture humaine, en commençant par les 19 exercices du lot B (`RELECTURE.md` à jour), puis les 155 autres. Ensuite, arbitrer l'ajout au DAG de la **soustraction** et de l'**addition avec retenue** (aucune compétence ne les couvre, voir `QUALITY.md`), et les cartes mentales de B001, B005 et B006.
+
+**Défaut systémique côté application :** dans les 44 QCM existants, la bonne réponse est toujours la proposition « a », et `AnswerInput` affiche les choix dans l'ordre du fichier. Un élève peut répondre juste sans lire. Correctif : mélanger les propositions à l'affichage.
 
 Le contenu reste en **JSON versionné dans Git** (relecture par PR, diff, rollback). Il sera chargé en base par un script de seed au sprint 3, mais Git demeure la source de vérité. Les 3 fichiers sont copiés à l'identique dans `Math_Edu_Application/src/content/` : toute livraison doit y être recopiée et validée par `scripts/validate_content.py`.
 
@@ -263,7 +265,7 @@ Elles ont fait sortir ce que les tests automatiques ne voyaient pas :
 |---|---------|---------|------|
 | 1 | Le fournisseur Google n'était **pas activé** sur le projet Supabase. `check:db` crée ses comptes par email et ne pouvait pas le voir. | Bloquant | Réglé (configuration) |
 | 2 | **L'inscription par email casse dès que « Confirm email » est activé** : `signUp` ne renvoie pas de session, l'écriture du profil part sans JWT, le RLS filtre tout, `.single()` lève « Cannot coerce the result to a single JSON object ». Compte créé à moitié, message incompréhensible. | **Bloquant avant la bêta** | Corrigé : l'inscription email ne demande plus que l'identité, puis passe par `/bienvenue` comme Google. `signUp` rend `null` quand le compte attend sa confirmation. |
-| 3 | La lacune racine d'un élève CM1 typique est **B005, qui n'a aucun exercice** : son plan du jour est vide dès la première session. | **Bloquant produit** | Contenu (Marius) |
+| 3 | La lacune racine d'un élève CM1 typique est **B005, qui n'a aucun exercice** : son plan du jour est vide dès la première session. | **Bloquant produit** | Corrigé : 19 exercices pour B001, B005 et B006, relus par agent, en attente de Marius |
 | 4 | Le dimanche était invisible côté élève (`DAYS_SHOWN = 6`), alors que le prof peut y publier un créneau. | Bloquant | Corrigé |
 | 5 | Un jour sans aucun créneau affiche « complet » dans l'en-tête de la grille élève. | Texte mensonger | Corrigé (`lib/schedule.ts`, « aucun créneau ») |
 | 6 | Un refus de capacité affiche « Vérifie ta connexion », alors que c'est une règle métier. Le message est aussi sans accent (« creneau »). | Texte mensonger | Corrigé : `RepositoryError.refus` distingue refus de règle et panne, le bandeau adapte son conseil, le catalogue est relu |
@@ -283,7 +285,7 @@ Elles ont fait sortir ce que les tests automatiques ne voyaient pas :
 Dans l'ordre :
 
 1. **Correctifs de recette : codés le 3 octobre 2026** (constats 2, 5, 6, 7, 8, 188 tests au vert). Reste : un passage navigateur sur l'inscription email, la réactivation de « Confirm email » pour tester le chemin avec confirmation, puis `ROADMAP.md` mis à jour. Constat n°10 à trancher.
-2. **B005 en priorité absolue (Marius)**, puis les autres compétences vides du parcours CM1 à 6e (A012 à A014, C026 à C032). Sans B005, le cœur de cible n'a rien à faire dans l'app.
+2. **Contenu : fait le 3 octobre 2026** pour B001, B005 et B006 (19 exercices). Reste la relecture humaine de Marius, et le mélange des propositions de QCM côté application (défaut systémique, §3).
 3. **Node 24** (procédure §10.3), à faire VS Code fermé.
 4. **Domaine** (OVH), choix et achat par Gauthier, en parallèle.
 5. **Sprint 2b** : migration 0005 (jeton de consentement haché, expiration 7 jours), Edge Function `send-parent-consent` avec Resend en mode test, page `/consentement/:token`, boutons « Renvoyer » avec limitation de débit.

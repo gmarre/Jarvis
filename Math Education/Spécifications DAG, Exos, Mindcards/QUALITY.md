@@ -381,3 +381,61 @@ cette passe étaient des réapparitions de classes déjà rencontrées.
   manque la compétence.
 - Les niveaux de A004, A005, A006 et A008 restent non sourcés.
 - Les énoncés de C001, C003 et C009 restent au-dessus du plafond du CE1.
+
+---
+
+## Lot B, calcul de base (3 octobre 2026)
+
+Les trois dernières compétences vides du DAG v2.1 : **B001** (addition sans
+retenue, CP), **B005** (multiplication par un chiffre, CE1) et **B006** (tables,
+CE2). Elles bloquaient respectivement 18, 13 et 12 compétences en aval, et la
+recette du 3 octobre a montré qu'un élève de CM1 typique tombait sur B005 dès sa
+première session, avec un plan du jour vide.
+
+**19 exercices** (6 pour B001, 7 pour B005, 6 pour B006), rédigés par Claude selon
+les règles de `exercise-generator`, chaque réponse recalculée par script, puis
+relus par un agent `math-reviewer` indépendant de l'auteur.
+
+| Passe | Exercices | Bloquants | Importants | Mineurs | Taux d'erreur |
+|---|---|---|---|---|---|
+| Relecture agent | 18 | 0 | 8 | 7 | **0 %** |
+
+Défauts importants relevés, tous corrigés :
+
+1. **Bonne réponse toujours en « a »** dans les QCM. Systémique : les 44 QCM de la
+   banque l'ont en « a », et `AnswerInput` affiche les choix dans l'ordre du
+   fichier. Corrigé dans le lot. Le vrai correctif est côté application :
+   mélanger les choix à l'affichage.
+2. **Énoncés de CP plus longs que ceux de CE1** (19,7 mots contre 17,8). Ramenés
+   à 17 en moyenne.
+3. **Maîtrise qui n'en était pas une** : B001-M-02 (addition plus grande, sans
+   transfert) devient un problème en deux étapes. La commutativité de B005 passe
+   en entraînement, remplacée en maîtrise par un problème de partage.
+4. **Opération hors de la chaîne de prérequis** : B005-M-02 demandait une
+   soustraction avec passage de dizaine, alors qu'aucune compétence de
+   soustraction n'existe dans le DAG. Un élève qui sait multiplier mais rate la
+   soustraction aurait été diagnostiqué faux sur la multiplication.
+5. Un distracteur quasi absurde (« 52 » pour 5 + 2), remplacé par l'erreur de
+   surcomptage typique du CP.
+
+La validation a ensuite levé deux avertissements légitimes (table de 7 reprise
+du test de positionnement de B006, « maintenant » lu comme un renvoi), corrigés.
+
+La fiche de relecture a enfin relevé des énoncés au-dessus du plafond de mots,
+et un niveau non sourcé. Les énoncés ont été raccourcis (CP 14 mots, CE1 17,
+CE2 14 en moyenne), et les trois compétences citent désormais le programme dans
+le DAG. **Changement d'outil à connaître :** `build_review_sheet.py` comptait
+chaque `●` d'une collection dessinée comme un mot, ce qui gonflait la charge de
+lecture (24 « mots » de points sur un seul énoncé). Les symboles `●` et `○` ne
+sont plus comptés.
+
+### Ce qui reste ouvert
+
+- **Le DAG n'a ni soustraction, ni addition avec retenue** (pas de B002 à B004).
+  Le relecteur a dû écarter tout problème qui en avait besoin, alors que le
+  programme du CE2 en contient. À arbitrer par Marius : ajouter ces compétences.
+- **Contrôles à ajouter**, pour que ces défauts ne reviennent pas : position de
+  la bonne réponse des QCM, plafond de mots par énoncé au CP et au CE1, et
+  opérations d'un problème couvertes par les prérequis de la compétence.
+- B001, B005 et B006 n'ont pas de carte mentale.
+- Les 19 exercices sont en `brouillon` : **relecture humaine de Marius à faire.**
