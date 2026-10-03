@@ -22,6 +22,7 @@ faire (competence sans exercice, sans carte mentale, contenu non relu).
 from __future__ import annotations
 
 import json
+import os
 import re
 import sys
 from pathlib import Path
@@ -32,7 +33,9 @@ from jsonschema import Draft202012Validator
 PROJECT_ROOT = Path(__file__).resolve().parent.parent
 SPEC_DIR = PROJECT_ROOT / "Spécifications DAG, Exos, Mindcards"
 SCHEMA_DIR = SPEC_DIR / "schemas"
-CONTENT_DIR = SPEC_DIR / "content"
+# Surchargeable : check_lot.py valide un lot dans une copie temporaire du
+# contenu, sans toucher a la banque.
+CONTENT_DIR = Path(os.environ.get("MATH_EDU_CONTENT_DIR", SPEC_DIR / "content"))
 
 # Ordre scolaire : sert a detecter qu'une competence depend d'une competence
 # enseignee plus tard, ce qui rendrait le noeud inatteignable pour l'eleve.
@@ -399,6 +402,12 @@ def check_champ_numerique(dag: dict, exercises: dict) -> None:
 
 NOTATIONS = {
     "A006": (re.compile(r"[<>]"), "les symboles < et >"),
+    # Introduit au CE2 avec le sens de la division (etape 1, domaine B). Sans
+    # cette entree, rien n'empechait un exercice de CP d'ecrire 12 ÷ 3.
+    "B039": (re.compile(r"÷|\\div"), "le symbole ÷"),
+    # Le signe × est introduit au CE1 avec la multiplication (B005). Sans cette
+    # entree, un exercice de CP pouvait l'ecrire sans alerte (releve sur le lot G4).
+    "B005": (re.compile(r"×|\\times"), "le signe ×"),
 }
 
 
@@ -651,6 +660,90 @@ def check_enonce_orphelin(exercises: dict) -> None:
             )
 
 
+_NIVEAU_SOURCE = [
+    ("Cours préparatoire", "CP"),
+    ("Cours élémentaire première année", "CE1"),
+    ("Cours élémentaire deuxième année", "CE2"),
+    ("Cours moyen première année", "CM1"),
+    ("Cours moyen deuxième année", "CM2"),
+    ("classe de 6e", "6e"),
+    ("classe de 5e", "5e"),
+    ("classe de 4e", "4e"),
+    ("classe de 3e", "3e"),
+]
+
+
+def check_niveau_citations_dag(dag: dict) -> None:
+    """Une competence doit etre justifiee par un attendu de SON niveau ou d'avant.
+
+    Releve a l'etape 1 (domaine B) : B015 etait au CE1 en ne justifiant sa partie
+    « dizaines » que par un attendu du CE2, et B012 au CM1 avec un attendu du CM2.
+    Les exercices ecrits contre ces noeuds sortaient du niveau.
+
+    Une citation d'une classe posterieure n'est pas fausse en soi : le programme
+    de 6e decrit retrospectivement ce qui a ete fait des le CE1 (C001). D'ou deux
+    seuils : erreur si AUCUNE citation n'est au niveau ou avant, avertissement
+    pour chaque citation posterieure, a relire.
+    """
+    for s in dag["skills"]:
+        rang = LEVEL_RANK.get(s["school_level"])
+        if rang is None:
+            continue
+        niveaux = []
+        for ref in s.get("programme_ref") or []:
+            source = ref.get("source", "")
+            niveau = next((n for motif, n in _NIVEAU_SOURCE if motif in source), None)
+            niveaux.append(niveau)
+            if niveau and LEVEL_RANK[niveau] > rang:
+                warn(f"DAG : {s['id']} ({s['school_level']}) cite aussi un attendu de {niveau} : « {source} »")
+        # Une citation sans classe (« Cycle 2, Principes ») peut justifier le
+        # niveau : seule une competence dont TOUTES les citations sont datees et
+        # posterieures est en erreur.
+        connus = [n for n in niveaux if n]
+        if connus and len(connus) == len(niveaux) and all(LEVEL_RANK[n] > rang for n in connus):
+            err(f"DAG : {s['id']} ({s['school_level']}) n'est justifie que par des attendus posterieurs ({', '.join(connus)})")
+
+
+def check_position_qcm(exercises: dict) -> None:
+    """La bonne reponse d'un QCM ne doit pas etre toujours a la meme place.
+
+    Releve sur le lot B (3 octobre 2026) : les 44 QCM de la banque avaient tous
+    leur bonne reponse en « a », et l'application affiche les propositions dans
+    l'ordre du fichier. Un eleve pouvait repondre juste sans lire.
+    """
+    par_comp: dict[str, list[str]] = {}
+    for ex in exercises["exercises"]:
+        if ex["type"] == "qcm":
+            par_comp.setdefault(ex["skill_id"], []).append(str(ex["answer"]["value"]))
+    for sid, cles in sorted(par_comp.items()):
+        if len(cles) >= 2 and len(set(cles)) == 1:
+            warn(f"QCM : les {len(cles)} QCM de {sid} ont tous leur bonne reponse en « {cles[0]} »")
+
+
+# Plafond de mots par enonce, en moyenne par competence. Un enonce de CP ou de
+# CE1 tient en une ou deux phrases courtes (PRINCIPES_PEDAGOGIQUES.md, section 5).
+# Meme mesure que build_review_sheet.py : les formules comptent pour un mot, les
+# collections dessinees (● ○) ne comptent pas.
+PLAFOND_MOTS = {"CP": 15, "CE1": 20, "CE2": 25, "CM1": 30, "CM2": 30}
+
+
+def _mots(texte: str) -> int:
+    t = re.sub(r"[●○]", " ", re.sub(r"\$[^$]*\$", " X ", texte))
+    return len(re.findall(r"\S+", t))
+
+
+def check_longueur_enonces(dag: dict, exercises: dict) -> None:
+    niveau = {s["id"]: s["school_level"] for s in dag["skills"]}
+    par_comp: dict[str, list[int]] = {}
+    for ex in exercises["exercises"]:
+        par_comp.setdefault(ex["skill_id"], []).append(_mots(ex["statement"]))
+    for sid, longueurs in sorted(par_comp.items()):
+        plafond = PLAFOND_MOTS.get(niveau.get(sid, ""))
+        moyenne = sum(longueurs) / len(longueurs)
+        if plafond and moyenne > plafond:
+            warn(f"Enonce : {sid} ({niveau[sid]}) fait {moyenne:.0f} mots en moyenne, plafond {plafond}")
+
+
 def main() -> int:
     print("Validation du contenu MATH EDUCATION\n")
 
@@ -687,6 +780,10 @@ def main() -> int:
     err_avant = len(errors)
     check_validation_tests(dag)
     print(f"  tests de positionnement {'OK' if len(errors) == err_avant else 'ANOMALIES'}")
+
+    err_avant = len(errors)
+    check_niveau_citations_dag(dag)
+    print(f"  niveau des citations du DAG {'OK' if len(errors) == err_avant else 'ANOMALIES'}")
 
     if exercises is not None:
         # Chaque compteur est releve juste avant SON controle : sinon le second
@@ -728,6 +825,14 @@ def main() -> int:
         warn_avant = len(warnings)
         check_enonce_orphelin(exercises)
         print(f"  enonces autonomes     {'OK' if len(warnings) == warn_avant else 'A VERIFIER'}")
+
+        warn_avant = len(warnings)
+        check_position_qcm(exercises)
+        print(f"  position bonne reponse {'OK' if len(warnings) == warn_avant else 'A VERIFIER'}")
+
+        warn_avant = len(warnings)
+        check_longueur_enonces(dag, exercises)
+        print(f"  longueur des enonces  {'OK' if len(warnings) == warn_avant else 'A VERIFIER'}")
 
     print()
     if warnings:

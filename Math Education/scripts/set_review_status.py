@@ -185,7 +185,10 @@ def main() -> int:
     # L'etat global du fichier ne peut pas etre plus avance que son element le moins avance.
     if not args.dry_run:
         global_status = ORDER[min(RANK[it["review_status"]] for it in items)]
-        data["metadata"]["review_status"] = global_status
+        # Seul le schema des exercices prevoit metadata.review_status : l'ecrire
+        # dans mindmaps.json rendait le fichier invalide (etape 1, domaine B).
+        if not args.cartes:
+            data["metadata"]["review_status"] = global_status
         save(source, data)
         print(f"\n{len(modifies)} element(s) modifie(s).")
         print(f"Etat global du fichier : {global_status}")

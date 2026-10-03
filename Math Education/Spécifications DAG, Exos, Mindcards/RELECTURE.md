@@ -1,6 +1,6 @@
 # Fiche de relecture — synthèse
 
-> 38 compétences, 174 exercices. Généré depuis `content/`, ne pas éditer à la main.  
+> 56 compétences, 282 exercices. Généré depuis `content/`, ne pas éditer à la main.  
 > Objectif : juger le **fond** et la **coordination**. Le détail complet, énoncés et corrigés, est dans `RELECTURE_DETAIL.md`.
 
 ⚠ **7 compétence(s) à regarder**, signalées dans la colonne *Signal* et détaillées en §3.
@@ -14,41 +14,59 @@ C'est la lecture qui compte pour juger la coordination : la difficulté doit mon
 | 1 | `A001` Compter jusqu'à 10 | CP | 1 | 3 | 12 |  |
 | 2 | `A002` Compter jusqu'à 100 | CP | 1 | 3 | 6 |  |
 | 3 | `B001` Addition simple | CP | 1 | 6 | 14 |  |
-| 4 | `A003` Compter jusqu'à 1000 | CE1 | 2 | 3 | 5 |  |
-| 5 | `A004` Lire un entier | CE1 | 2 | 3 | 6 | ⚠ |
-| 6 | `A005` Écrire un entier | CE1 | 2 | 3 | 5 | ⚠ |
-| 7 | `A006` Comparer deux entiers | CE1 | 2 | 3 | 13 | ⚠ |
-| 8 | `A008` Identifier chiffre et nombre | CE1 | 2 | 3 | 11 | ⚠ |
-| 9 | `A011` Pair / impair | CE1 | 2 | 3 | 11 |  |
-| 10 | `B005` Multiplication à un chiffre | CE1 | 2 | 7 | 17 |  |
-| 11 | `C001` Fraction comme partage | CE1 | 2 | 3 | 23 | ⚠ |
-| 12 | `C002` Numérateur | CE1 | 2 | 3 | 17 |  |
-| 13 | `C003` Dénominateur | CE1 | 2 | 3 | 21 | ⚠ |
-| 14 | `C009` Comparer fractions de même dénominateur | CE1 | 2 | 3 | 25 | ⚠ |
-| 15 | `C012` Additionner des fractions de même dénom… | CE1 | 2 | 3 | 17 |  |
-| 16 | `C026` Comparer des fractions de numérateur 1 | CE1 | 2 | 7 | 18 |  |
-| 17 | `A007` Ranger plusieurs entiers | CE2 | 2 | 3 | 17 |  |
-| 18 | `A009` Comprendre la valeur positionnelle | CE2 | 2 | 3 | 12 |  |
-| 19 | `B006` Tables de multiplication | CE2 | 2 | 6 | 14 |  |
-| 20 | `C006` Fractions équivalentes | CE2 | 2 | 3 | 8 |  |
-| 21 | `C005` Fraction sur une droite graduée | CE2 | 2 | 3 | 25 |  |
-| 22 | `A010` Décomposer un entier | CE2 | 3 | 3 | 7 |  |
-| 23 | `A012` Multiple | CM1 | 3 | 7 | 22 |  |
-| 24 | `A013` Diviseur | CM1 | 3 | 7 | 21 |  |
-| 25 | `A014` Multiples de 2, de 5 et de 10 | CM1 | 3 | 7 | 18 |  |
-| 26 | `A028` Entier sur une demi-droite graduée | CM1 | 3 | 7 | 25 |  |
-| 27 | `C004` Fraction d'une quantité | CM1 | 3 | 3 | 13 |  |
-| 28 | `C027` Fraction supérieure à 1 | CM1 | 3 | 8 | 15 |  |
-| 29 | `C029` Encadrer une fraction | CM1 | 3 | 7 | 14 |  |
-| 30 | `C030` Fraction sur une demi-droite graduée | CM1 | 3 | 7 | 25 |  |
-| 31 | `A026` Tous les diviseurs d'un entier | CM2 | 3 | 7 | 17 |  |
-| 32 | `A027` Diviseurs et multiples communs | CM2 | 4 | 8 | 22 |  |
-| 33 | `C031` Produit d'un entier par une fraction | CM2 | 4 | 7 | 10 |  |
-| 34 | `C032` Fraction comme quotient | 6e | 4 | 7 | 16 |  |
-| 35 | `C011` Réduction au même dénominateur | 5e | 4 | 3 | 14 |  |
-| 36 | `C010` Comparer fractions de dénominateurs dif… | 5e | 4 | 3 | 13 |  |
-| 37 | `C007` Simplification de fraction | 4e | 5 | 3 | 11 |  |
-| 38 | `C008` Fraction irréductible | 3e | 6 | 3 | 9 |  |
+| 4 | `B003` Soustraction simple | CP | 1 | 6 | 12 |  |
+| 5 | `B002` Addition posée avec retenue | CP | 2 | 6 | 11 |  |
+| 6 | `B013` Calcul mental : additions | CP | 2 | 6 | 11 |  |
+| 7 | `B014` Calcul mental : soustractions | CP | 2 | 6 | 9 |  |
+| 8 | `B036` Problèmes de partage équitable | CP | 2 | 6 | 15 |  |
+| 9 | `B037` Problèmes additifs en deux étapes | CP | 2 | 6 | 15 |  |
+| 10 | `A003` Compter jusqu'à 1000 | CE1 | 2 | 3 | 5 |  |
+| 11 | `A004` Lire un entier | CE1 | 2 | 3 | 6 | ⚠ |
+| 12 | `A005` Écrire un entier | CE1 | 2 | 3 | 5 | ⚠ |
+| 13 | `A006` Comparer deux entiers | CE1 | 2 | 3 | 13 | ⚠ |
+| 14 | `A008` Identifier chiffre et nombre | CE1 | 2 | 3 | 11 | ⚠ |
+| 15 | `A011` Pair / impair | CE1 | 2 | 3 | 11 |  |
+| 16 | `B005` Multiplication à un chiffre | CE1 | 2 | 7 | 17 |  |
+| 17 | `B015` Calcul mental : multiplier par 10 | CE1 | 2 | 6 | 16 |  |
+| 18 | `B042` Addition posée de nombres à trois chiff… | CE1 | 2 | 6 | 11 |  |
+| 19 | `B004` Soustraction posée avec retenue | CE1 | 2 | 6 | 12 |  |
+| 20 | `C001` Fraction comme partage | CE1 | 2 | 3 | 23 | ⚠ |
+| 21 | `C002` Numérateur | CE1 | 2 | 3 | 17 |  |
+| 22 | `C003` Dénominateur | CE1 | 2 | 3 | 21 | ⚠ |
+| 23 | `C009` Comparer fractions de même dénominateur | CE1 | 2 | 3 | 25 | ⚠ |
+| 24 | `C012` Additionner des fractions de même dénom… | CE1 | 2 | 3 | 17 |  |
+| 25 | `C026` Comparer des fractions de numérateur 1 | CE1 | 2 | 7 | 18 |  |
+| 26 | `B038` Problèmes mixtes en deux étapes | CE1 | 3 | 6 | 19 |  |
+| 27 | `A007` Ranger plusieurs entiers | CE2 | 2 | 3 | 17 |  |
+| 28 | `A009` Comprendre la valeur positionnelle | CE2 | 2 | 3 | 12 |  |
+| 29 | `B006` Tables de multiplication | CE2 | 2 | 6 | 14 |  |
+| 30 | `C006` Fractions équivalentes | CE2 | 2 | 3 | 8 |  |
+| 31 | `C005` Fraction sur une droite graduée | CE2 | 2 | 3 | 25 |  |
+| 32 | `A010` Décomposer un entier | CE2 | 3 | 3 | 7 |  |
+| 33 | `B039` Sens de la division et symbole ÷ | CE2 | 3 | 6 | 14 |  |
+| 34 | `B041` Calcul mental : multiplier par 100 et p… | CE2 | 3 | 6 | 14 |  |
+| 35 | `B007` Multiplication posée | CE2 | 3 | 6 | 18 |  |
+| 36 | `A012` Multiple | CM1 | 3 | 7 | 22 |  |
+| 37 | `A013` Diviseur | CM1 | 3 | 7 | 21 |  |
+| 38 | `A014` Multiples de 2, de 5 et de 10 | CM1 | 3 | 7 | 18 |  |
+| 39 | `A028` Entier sur une demi-droite graduée | CM1 | 3 | 7 | 25 |  |
+| 40 | `B008` Division euclidienne posée (diviseur à … | CM1 | 3 | 6 | 20 |  |
+| 41 | `B012` Calcul avec parenthèses | CM1 | 3 | 6 | 15 |  |
+| 42 | `B017` Estimer le résultat d'une opération | CM1 | 3 | 6 | 20 |  |
+| 43 | `C004` Fraction d'une quantité | CM1 | 3 | 3 | 13 |  |
+| 44 | `C027` Fraction supérieure à 1 | CM1 | 3 | 8 | 15 |  |
+| 45 | `C029` Encadrer une fraction | CM1 | 3 | 7 | 14 |  |
+| 46 | `C030` Fraction sur une demi-droite graduée | CM1 | 3 | 7 | 25 |  |
+| 47 | `A026` Tous les diviseurs d'un entier | CM2 | 3 | 7 | 17 |  |
+| 48 | `B016` Calcul mental : diviser par 2, 4 ou 8 | CM2 | 3 | 6 | 16 |  |
+| 49 | `A027` Diviseurs et multiples communs | CM2 | 4 | 8 | 22 |  |
+| 50 | `C031` Produit d'un entier par une fraction | CM2 | 4 | 7 | 10 |  |
+| 51 | `B040` Division euclidienne par un nombre à de… | 6e | 4 | 6 | 18 |  |
+| 52 | `C032` Fraction comme quotient | 6e | 4 | 7 | 16 |  |
+| 53 | `C011` Réduction au même dénominateur | 5e | 4 | 3 | 14 |  |
+| 54 | `C010` Comparer fractions de dénominateurs dif… | 5e | 4 | 3 | 13 |  |
+| 55 | `C007` Simplification de fraction | 4e | 5 | 3 | 11 |  |
+| 56 | `C008` Fraction irréductible | 3e | 6 | 3 | 9 |  |
 
 ## 2. Par chapitre
 
@@ -73,6 +91,43 @@ Le chapitre est l'unité qu'un exercice bilan validerait.
 | `A010` Décomposer un entier | Écrire 5 827 = 5 000 + 800 + 20 + 7 | 3 |
 | `A028` Entier sur une demi-droite graduée | Placer un entier sur une demi-droite graduée et repérer un point par son … | 7 |
 
+### `MM-B-01` · Addition et soustraction (CP-CE1)
+
+7 compétences, 42 exercices, niveaux CP, CE1.
+
+| Compétence | Ce que l'élève doit savoir faire | Exos |
+|---|---|--:|
+| `B001` Addition simple | Additionner deux entiers sans retenue | 6 |
+| `B003` Soustraction simple | Comprendre la soustraction comme l'opération inverse de l'addition et cal… | 6 |
+| `B002` Addition posée avec retenue | Poser en colonnes et calculer l'addition de deux ou trois nombres à un ou… | 6 |
+| `B013` Calcul mental : additions | Ajouter mentalement un nombre à un chiffre avec passage de la dizaine (en… | 6 |
+| `B014` Calcul mental : soustractions | Soustraire mentalement des dizaines entières, et soustraire un nombre à u… | 6 |
+| `B042` Addition posée de nombres à trois… | Poser et calculer l'addition de deux ou trois nombres à un, deux ou trois… | 6 |
+| `B004` Soustraction posée avec retenue | Poser en colonnes et calculer une soustraction de nombres jusqu'à 1 000, … | 6 |
+
+### `MM-B-03` · La division (CP-6e)
+
+5 compétences, 30 exercices, niveaux CP, CE2, CM1, CM2, 6e.
+
+| Compétence | Ce que l'élève doit savoir faire | Exos |
+|---|---|--:|
+| `B036` Problèmes de partage équitable | Résoudre un problème de partage équitable, en cherchant la valeur d'une p… | 6 |
+| `B039` Sens de la division et symbole ÷ | Comprendre la division comme l'opération inverse de la multiplication, l'… | 6 |
+| `B008` Division euclidienne posée (divis… | Poser une division euclidienne par un nombre à un chiffre, donner le quot… | 6 |
+| `B016` Calcul mental : diviser par 2, 4 … | Diviser mentalement un nombre entier par 4 ou par 8 en prenant successive… | 6 |
+| `B040` Division euclidienne par un nombr… | Effectuer la division euclidienne d'un entier par un entier inférieur à 1… | 6 |
+
+### `MM-B-04` · Problèmes à étapes et contrôle du calcul (CP-CM1)
+
+4 compétences, 24 exercices, niveaux CP, CE1, CM1.
+
+| Compétence | Ce que l'élève doit savoir faire | Exos |
+|---|---|--:|
+| `B037` Problèmes additifs en deux étapes | Résoudre un problème qui enchaîne deux étapes additives ou soustractives,… | 6 |
+| `B038` Problèmes mixtes en deux étapes | Résoudre un problème en deux étapes qui combine une étape multiplicative … | 6 |
+| `B012` Calcul avec parenthèses | Effectuer un calcul contenant une paire de parenthèses, en commençant par… | 6 |
+| `B017` Estimer le résultat d'une opérati… | Donner un ordre de grandeur du résultat d'une addition, d'une soustractio… | 6 |
+
 ### `MM-C-01` · Decouvrir les fractions (CE1)
 
 6 compétences, 22 exercices, niveaux CE1.
@@ -85,6 +140,18 @@ Le chapitre est l'unité qu'un exercice bilan validerait.
 | `C009` Comparer fractions de même dénomi… | Comparer deux fractions ayant le même dénominateur | 3 |
 | `C012` Additionner des fractions de même… | Additionner et soustraire deux fractions de même dénominateur | 3 |
 | `C026` Comparer des fractions de numérat… | Comparer deux fractions dont le numérateur est 1 | 7 |
+
+### `MM-B-02` · La multiplication (CE1-CE2)
+
+5 compétences, 31 exercices, niveaux CE1, CE2.
+
+| Compétence | Ce que l'élève doit savoir faire | Exos |
+|---|---|--:|
+| `B005` Multiplication à un chiffre | Multiplier par un chiffre (tables de 1 à 5) | 7 |
+| `B015` Calcul mental : multiplier par 10 | Multiplier mentalement par 10 un nombre inférieur à 100, en raisonnant su… | 6 |
+| `B006` Tables de multiplication | Connaître les tables de 1 à 9 par cœur | 6 |
+| `B041` Calcul mental : multiplier par 10… | Multiplier mentalement un nombre entier par 10 ou par 100, et un nombre i… | 6 |
+| `B007` Multiplication posée | Poser et calculer la multiplication d'un nombre à deux ou trois chiffres … | 6 |
 
 ### `MM-C-02` · Fractions egales, droite graduee, fraction d'une quantite (CE2-CM1)
 
@@ -178,6 +245,84 @@ Le chapitre est l'unité qu'un exercice bilan validerait.
 | M | nume | Lina reçoit 4 perles. Elle a alors 9 perles. Combien de perles avait-elle avant ? | 5 |
 | M | nume | Sami a 12 images. Il en reçoit 5, puis 11. Combien en a-t-il à la fin ? | 28 |
 
+**`B003` · Soustraction simple** — diff. 1, seuil 3/4  
+*Comprendre la soustraction comme l'opération inverse de l'addition et calculer une différence sans retenue entre deux nombres inférieurs à 100*
+> « Comprendre le sens de l'addition et de la soustraction. »
+
+| | Type | Demandé | Réponse |
+|---|---|---|---|
+| D | nume | 9 canards nagent. 4 sortent de l'eau. ● ● ● ● ● ● ● ● ● Combien restent dans l'eau ? | 5 |
+| D | qcm | On sait que 47 + 21 = 68. Quel calcul a pour résultat 21 ? | b) 68 - 47 |
+| E | nume | Un fleuriste a 87 roses. Il en vend 54. Combien lui en reste-t-il ? | 33 |
+| E | vrai | Yanis dit : « 65 - 23 et 23 - 65 donnent le même résultat. » A-t-il raison ? | faux |
+| M | nume | Au marché, Paul avait 67 œufs. Il lui en reste 41. Combien d'œufs a-t-il vendus ? | 26 |
+| M | nume | Complète l'égalité : … - 32 = 45 | 77 |
+
+**`B002` · Addition posée avec retenue** — diff. 2, seuil 3/4  
+*Poser en colonnes et calculer l'addition de deux ou trois nombres à un ou deux chiffres, avec passage de la retenue des unités aux dizaines*
+> « Au CP, l'addition posée n'est introduite qu'en période 4 ou 5 »
+
+| | Type | Demandé | Réponse |
+|---|---|---|---|
+| D | nume | Pose l'addition 34 + 18 en colonnes, unités sous les unités, puis calcule-la. | 52 |
+| D | qcm | Ana pose l'addition 19 + 6. Quel résultat doit-elle trouver ? | b) 25 |
+| E | nume | La classe a 48 crayons rouges et 35 bleus. Combien de crayons en tout ? | 83 |
+| E | vrai | Hugo pose 56 + 29 et trouve 75. A-t-il raison ? | faux |
+| M | nume | Emma a donné 17 cartes. Il lui en reste 46. Combien de cartes avait-elle avant ? | 63 |
+| M | qcm | Pose et calcule 8 + 57 + 29. | c) 94 |
+
+**`B013` · Calcul mental : additions** — diff. 2, seuil 3/4  
+*Ajouter mentalement un nombre à un chiffre avec passage de la dizaine (en passant par la dizaine supérieure), ajouter 9, ajouter des dizaines entières, ajouter deux nombres inférieurs à 100*
+> « Ajouter un nombre inférieur à 9 à un nombre. »
+
+| | Type | Demandé | Réponse |
+|---|---|---|---|
+| D | nume | Calcule dans ta tête : 48 + 5. Passe par 50. | 53 |
+| D | qcm | Combien font 43 + 30 ? | a) 73 |
+| E | nume | Calcule dans ta tête : 57 + 9. | 66 |
+| E | vrai | Zoé dit : « 26 + 8 = 34 ». A-t-elle raison ? | vrai |
+| M | nume | Une tour a 64 cubes. Mia ajoute 28 cubes. Combien de cubes en tout ? Calcule de tête. | 92 |
+| M | qcm | Lou calcule 58 + 26 de tête : 50 + 20 = 70, puis 8 + 6 = 14. Quel est le résultat ? | b) 84 |
+
+**`B014` · Calcul mental : soustractions** — diff. 2, seuil 3/4  
+*Soustraire mentalement des dizaines entières, et soustraire un nombre à un chiffre à un nombre entier de dizaines en « cassant » une dizaine*
+> « Soustraire un nombre inférieur à 10 à un nombre entier de dizaines. »
+
+| | Type | Demandé | Réponse |
+|---|---|---|---|
+| D | nume | Calcule dans ta tête : 85 - 40. | 45 |
+| D | qcm | Combien font 60 - 3 ? | b) 57 |
+| E | nume | Noé a 40 euros. Il achète un ballon à 8 euros. Combien lui reste-t-il ? | 32 |
+| E | vrai | Inès dit : « 52 - 20 = 50 ». A-t-elle raison ? | faux |
+| M | nume | 34 poules sont dans la cour. 6 rentrent au poulailler. Combien restent dans la cour ? | 28 |
+| M | qcm | Quel nombre manque ? 80 - … = 74 | c) 6 |
+
+**`B036` · Problèmes de partage équitable** — diff. 2, seuil 3/4  
+*Résoudre un problème de partage équitable, en cherchant la valeur d'une part ou le nombre de parts, par distribution, groupement ou schéma, avant tout symbole de division*
+> « L'élève sait résoudre des problèmes consistant, dans un partage équitable, à chercher le nombre de parts à partir de la quantité totale d'objets et d… »
+
+| | Type | Demandé | Réponse |
+|---|---|---|---|
+| D | nume | Mia met 8 fraises dans 2 bols, autant dans chaque. ● ● ● ● ● ● ● ● Combien par bol ? | 4 |
+| D | qcm | On range ces 12 crayons par pots de 4. ● ● ● ● ● ● ● ● ● ● ● ● Combien de pots faut-il ? | b) 3 |
+| E | nume | 4 enfants se partagent 24 cerises, autant chacun. Combien de cerises chaque enfant a-t-il ? | 6 |
+| E | vrai | Zoé range 18 chaussettes par paires. Vrai ou faux : elle obtient 9 paires. | vrai |
+| M | nume | Dans le jardin, on compte 20 pattes de chats. Combien y a-t-il de chats ? | 5 |
+| M | qcm | Léa partage 16 crêpes avec ses 3 amis, à parts égales. Combien de crêpes chacun a-t-il ? | c) 4 |
+
+**`B037` · Problèmes additifs en deux étapes** — diff. 2, seuil 3/4  
+*Résoudre un problème qui enchaîne deux étapes additives ou soustractives, en calculant d'abord un résultat intermédiaire*
+> « Résoudre des problèmes additifs en deux étapes (champ numérique inférieur ou égal à 30). »
+
+| | Type | Demandé | Réponse |
+|---|---|---|---|
+| D | nume | Tim a 13 autocollants, en donne 2, puis en gagne 4. Combien en a-t-il ? | 15 |
+| D | qcm | 9 oiseaux sur un arbre. 3 s'envolent, puis 2 arrivent. Combien sont-ils alors ? | a) 8 |
+| E | nume | 27 poissons : 13 rouges, 4 jaunes, les autres gris. Combien de gris ? | 10 |
+| E | vrai | 19 cahiers. Le maître en distribue 5, puis 3. Il en reste 11. | vrai |
+| M | nume | Sur l'étang, 3 canards s'envolent, 4 arrivent : ils sont 18. Combien étaient-ils avant ? | 17 |
+| M | qcm | Max a 14 euros, en gagne 5, en dépense et finit avec 12. Combien a-t-il dépensé ? | b) 7 |
+
 ### ── CE1 ──
 
 **`A003` · Compter jusqu'à 1000** — diff. 2, seuil 2/3  
@@ -250,6 +395,45 @@ Le chapitre est l'unité qu'un exercice bilan validerait.
 | M | nume | Le jardinier plante 18 salades, en colonnes de 3 salades. Combien de colonnes fait-il ? | 6 |
 | M | nume | Au cinéma : 5 rangées de 9 sièges, et 3 strapontins en plus. Combien de places en tout ? | 48 |
 
+**`B015` · Calcul mental : multiplier par 10** — diff. 2, seuil 3/4  
+*Multiplier mentalement par 10 un nombre inférieur à 100, en raisonnant sur les unités de numération : chaque unité devient une dizaine, chaque dizaine une centaine*
+> « Multiplier par 10 un nombre inférieur à 100. »
+
+| | Type | Demandé | Réponse |
+|---|---|---|---|
+| D | nume | Une boîte contient 10 crayons. Lou achète 34 boîtes. Combien de crayons a-t-elle ? | 340 |
+| D | qcm | 47, c'est 4 dizaines et 7 unités. Quand on multiplie par 10, chaque unité devient une dizai… | c) 470 |
+| E | nume | Calcule 10 × 96. | 960 |
+| E | vrai | Sam dit : « Dans 29 × 10, le chiffre 2 devient le chiffre des centaines. » Sam a-t-il raiso… | vrai |
+| M | nume | Un paquet contient 10 cartes. Inès a 580 cartes, toutes rangées en paquets. Combien de paqu… | 58 |
+| M | qcm | Un minibus a 10 places. 143 enfants partent en sortie. Combien de minibus faut-il, au minim… | a) 15 minibus |
+
+**`B042` · Addition posée de nombres à trois chiffres** — diff. 2, seuil 3/4  
+*Poser et calculer l'addition de deux ou trois nombres à un, deux ou trois chiffres, avec retenues, en alignant unités, dizaines et centaines*
+> « L'élève sait poser une addition de deux ou de trois nombres à un, deux ou trois chiffres (en positionnant les unités sous les unités, les dizaines so… »
+
+| | Type | Demandé | Réponse |
+|---|---|---|---|
+| D | nume | Pose l'addition 326 + 147 en colonnes : unités sous les unités, dizaines sous les dizaines,… | 473 |
+| D | qcm | Pose et calcule 273 + 9. | c) 282 |
+| E | nume | Pose et calcule 485 + 236. | 721 |
+| E | vrai | Sacha pose 154 + 5 + 62 et trouve 221. A-t-il raison ? | vrai |
+| M | nume | Un parc reçoit 296 visiteurs lundi, 187 mardi et 45 mercredi. Combien de visiteurs en tout ? | 528 |
+| M | qcm | Malo pose 604 + 39 et trouve 994. Quelle est son erreur ? | b) Il a écrit 39 sous 60 : le 9 n… |
+
+**`B004` · Soustraction posée avec retenue** — diff. 2, seuil 3/4  
+*Poser en colonnes et calculer une soustraction de nombres jusqu'à 1 000, avec retenue, selon un algorithme (par cassage ou par compensation)*
+> « Un algorithme de la soustraction posée est introduit en période 3 au plus tard. »
+
+| | Type | Demandé | Réponse |
+|---|---|---|---|
+| D | nume | Pose et calcule 63 - 27. | 36 |
+| D | qcm | Pose et calcule 71 - 38. | b) 33 |
+| E | nume | Un puzzle a 254 pièces. Clara en a posé 126. Combien de pièces reste-t-il à poser ? | 128 |
+| E | vrai | Léon pose 405 - 173 et trouve 332. A-t-il raison ? | faux |
+| M | nume | Un camion transporte 503 caisses. Il en livre 268. Combien de caisses reste-t-il dans le ca… | 235 |
+| M | qcm | Le glacier a vendu 423 glaces en juillet et 186 en juin. Combien de glaces de plus en juill… | c) 237 |
+
 **`C001` · Fraction comme partage** — diff. 2, seuil 2/3  ⚠  
 *Comprendre une fraction comme le partage d'un tout en parts égales*
 > « L'étude des fractions à l'école élémentaire, débutant dès le CE1, s'est appuyée sur des manipulations et des représentations variées. »
@@ -313,6 +497,19 @@ Le chapitre est l'unité qu'un exercice bilan validerait.
 | E | vrai | 1/10 est plus grand que 1/6, parce que 10 est plus grand que 6. | faux |
 | M | qcm | Léa mange 1/4 d'une tarte. Tom en mange 1/8, et Zoé 1/3. Qui a mangé le moins ? | a) Tom |
 | M | text | Trouve une fraction de numérateur 1 plus grande que 1/8 et plus petite que 1/4. Écris-la av… | 1/6 |
+
+**`B038` · Problèmes mixtes en deux étapes** — diff. 3, seuil 3/4  
+*Résoudre un problème en deux étapes qui combine une étape multiplicative et une étape additive ou soustractive*
+> « Résoudre des problèmes mixtes en deux étapes (une étape additive et une étape multiplicative). »
+
+| | Type | Demandé | Réponse |
+|---|---|---|---|
+| D | nume | Ali a 2 sachets de 5 billes, et 4 billes à part. ● ● ● ● ● ● ● ● ● ● ● ● ● ● Combien de bil… | 14 |
+| D | qcm | Ema a 17 euros. Elle achète 3 stylos à 2 euros chacun. Combien d'argent lui reste-t-il ? | b) 11 |
+| E | nume | Un fermier remplit 4 boîtes de 8 œufs, puis casse 2 œufs en chemin. Combien d'œufs intacts … | 30 |
+| E | vrai | Chaque trousse contient 2 crayons et 1 gomme. Vrai ou faux : 4 trousses contiennent 8 objet… | faux |
+| M | nume | Paul achète 2 paquets de 7 cartes. Il a alors 39 cartes. Combien de cartes avait-il avant ? | 25 |
+| M | qcm | Marc a 19 livres. Il en met 4 sur chacune de ses 4 étagères. Combien de livres ne sont pas … | c) 3 |
 
 ### ── CE2 ──
 
@@ -379,6 +576,45 @@ Le chapitre est l'unité qu'un exercice bilan validerait.
 | E | nume | Complète : 4 635 = (4 × 1 000) + (… × 100) + (3 × 10) + (5 × 1) | 6 |
 | M | nume | Quel nombre s'écrit (2 × 1 000) + (7 × 10) + (9 × 1) ? | 2079 |
 
+**`B039` · Sens de la division et symbole ÷** — diff. 3, seuil 3/4  
+*Comprendre la division comme l'opération inverse de la multiplication, l'écrire avec le symbole ÷ et calculer un quotient exact à l'aide des tables*
+> « Comprendre le sens de la division et utiliser le symbole « ÷ ». »
+
+| | Type | Demandé | Réponse |
+|---|---|---|---|
+| D | nume | Inès partage 27 fraises entre 3 amies. Chacune reçoit le même nombre de fraises. ● ● ● ● ● … | 9 |
+| D | qcm | On sait que 5 × 8 = 40. Quelle égalité est juste ? | b) 40 ÷ 5 = 8 |
+| E | nume | Un boulanger a 35 croissants. Il les met dans des sachets de 5. Combien de sachets peut-il … | 7 |
+| E | vrai | Zoé dit : « Comme 4 × 9 = 36, alors 36 ÷ 9 = 4. » A-t-elle raison ? | vrai |
+| M | nume | Complète l'égalité : … ÷ 7 = 6 | 42 |
+| M | qcm | Quel problème se résout par le calcul 32 ÷ 4 ? | c) Léa range 32 crayons dans des … |
+
+**`B041` · Calcul mental : multiplier par 100 et par des dizaines** — diff. 3, seuil 3/4  
+*Multiplier mentalement un nombre entier par 10 ou par 100, et un nombre inférieur à 10 par un nombre entier de dizaines*
+> « Multiplier un nombre entier par 10 ou 100. »
+
+| | Type | Demandé | Réponse |
+|---|---|---|---|
+| D | nume | Un carton contient 100 feuilles. L'école reçoit 7 cartons. Combien de feuilles reçoit-elle ? | 700 |
+| D | vrai | Sam dit : « 3 × 50 fait 15, car 3 × 5 = 15. » Sam a-t-il raison ? | faux |
+| E | nume | Un rouleau contient 80 tickets. Combien de tickets y a-t-il dans 7 rouleaux ? | 560 |
+| E | qcm | Combien fait 45 × 100 ? | c) 4 500 |
+| M | qcm | Un bus a 40 places. Il faut transporter 190 enfants. Combien de bus faut-il, au minimum ? | b) 5 bus |
+| M | nume | Un sachet contient 90 perles. Léa a 720 perles, toutes rangées en sachets. Combien de sache… | 8 |
+
+**`B007` · Multiplication posée** — diff. 3, seuil 3/4  
+*Poser et calculer la multiplication d'un nombre à deux ou trois chiffres par un nombre à un ou deux chiffres*
+> « L'algorithme de la multiplication posée est introduit en période 4 au plus tard. »
+
+| | Type | Demandé | Réponse |
+|---|---|---|---|
+| D | nume | Une bande dessinée a 58 pages. Combien de pages ont 3 bandes dessinées identiques ? Pose la… | 174 |
+| D | qcm | Un camion transporte 4 caisses de 127 bouteilles. Pose et calcule 127 × 4. Combien y a-t-il… | b) 508 |
+| E | nume | Un verger compte 26 rangées de 47 arbres. Combien d'arbres y a-t-il ? Pose la multiplicatio… | 1222 |
+| E | vrai | Pour calculer 53 × 32, Léo pose l'opération et trouve 265. Léo a-t-il raison ? | faux |
+| M | qcm | Un avion transporte 168 passagers par vol. Ce mois-ci, il fait 37 vols complets. Combien de… | c) 6 216 |
+| M | nume | Une boulangère cuit 45 plaques de 12 croissants et 23 plaques de 9 brioches. Combien de cro… | 747 |
+
 ### ── CM1 ──
 
 **`A012` · Multiple** — diff. 3, seuil 3/4  
@@ -436,6 +672,45 @@ Le chapitre est l'unité qu'un exercice bilan validerait.
 | E | vrai | Sur une demi-droite graduée de 500 en 500, il faut avancer de trois intervalles pour aller … | vrai |
 | M | nume | Une demi-droite est graduée régulièrement à partir de 0. La troisième graduation après 0 po… | 2000 |
 | M | vrai | Une demi-droite va de 0 à 100 000 et elle est graduée de 10 000 en 10 000. Sarah place le n… | faux |
+
+**`B008` · Division euclidienne posée (diviseur à un chiffre)** — diff. 3, seuil 3/4  
+*Poser une division euclidienne par un nombre à un chiffre, donner le quotient et le reste, et interpréter le reste dans un problème*
+> « Poser et effectuer des divisions euclidiennes avec un diviseur à un chiffre »
+
+| | Type | Demandé | Réponse |
+|---|---|---|---|
+| D | nume | Une maraîchère a 93 radis. Elle fait des bottes de 4 radis. Pose la division euclidienne de… | 23 |
+| D | qcm | Dans la division euclidienne de 58 par 6, quel est le reste ? | c) 4 |
+| E | nume | Pose la division euclidienne de 625 par 3. Quel est le quotient ? | 208 |
+| E | vrai | Pour la division euclidienne de 50 par 7, Adam écrit : 50 = 7 × 6 + 8 Vrai ou faux : le quo… | faux |
+| M | nume | Une fleuriste a 254 tulipes. Elle fait des bouquets de 6 tulipes. Combien de tulipes ne ser… | 2 |
+| M | qcm | 135 enfants partent en sortie. Chaque minibus transporte 8 enfants. Combien de minibus faut… | a) 17 |
+
+**`B012` · Calcul avec parenthèses** — diff. 3, seuil 3/4  
+*Effectuer un calcul contenant une paire de parenthèses, en commençant par le calcul entre parenthèses*
+> « Savoir effectuer un calcul contenant des parenthèses »
+
+| | Type | Demandé | Réponse |
+|---|---|---|---|
+| D | nume | Un car a 75 places. 18 adultes et 29 enfants montent. Calcule 75 - (18 + 29) pour trouver l… | 28 |
+| D | qcm | Un panier contient 4 poires et 5 prunes. Le calcul (4 + 5) × 6 donne le nombre de fruits da… | c) 54 |
+| E | nume | Calcule 8 × (35 - 28). | 56 |
+| E | vrai | Vrai ou faux : (100 - 40) - 25 et 100 - (40 - 25) donnent le même résultat. | faux |
+| M | nume | Trouve le nombre qui manque : 50 - (… + 14) = 21. | 15 |
+| M | qcm | Théo a 200 €. Il achète un vélo à 145 € et un casque à 28 €. Quel calcul donne l'argent qui… | b) 200 - (145 + 28) |
+
+**`B017` · Estimer le résultat d'une opération** — diff. 3, seuil 3/4  
+*Donner un ordre de grandeur du résultat d'une addition, d'une soustraction ou d'une multiplication en arrondissant les nombres, avant ou sans calcul exact*
+> « Estimer le résultat d'une opération »
+
+| | Type | Demandé | Réponse |
+|---|---|---|---|
+| D | qcm | Sans poser l'opération, quel est le résultat le plus proche de 298 + 403 ? | b) 700 |
+| D | vrai | Mia achète une tablette à 198 € et une housse à 41 €. Vrai ou faux : elle dépense environ 2… | vrai |
+| E | qcm | Un stade a 9 870 places. 3 120 spectateurs sont venus. Environ combien de places sont resté… | c) 7 000 |
+| E | qcm | Sans calculer exactement, quel est le résultat le plus proche de 48 × 31 ? | a) 1 500 |
+| M | vrai | Noé a posé 412 × 19 et a trouvé 4 120. Vrai ou faux : sans refaire le calcul, on peut affir… | vrai |
+| M | qcm | Pour la classe verte, le car coûte 2 950 € et l'hébergement 3 980 €. Le budget est de 9 000… | b) Il reste environ 2 000 €. |
 
 **`C004` · Fraction d'une quantité** — diff. 3, seuil 2/3  
 *Calculer une fraction unitaire d'une quantité ou d'une grandeur*
@@ -506,6 +781,19 @@ Le chapitre est l'unité qu'un exercice bilan validerait.
 | M | nume | Léo range 100 jetons en boîtes égales et veut au moins deux boîtes. Quel est le plus grand … | 50 |
 | M | nume | Un jardinier plante 24 fleurs en rangées égales. Il veut plus de 4 rangées et moins de 8. C… | 6 |
 
+**`B016` · Calcul mental : diviser par 2, 4 ou 8** — diff. 3, seuil 3/4  
+*Diviser mentalement un nombre entier par 4 ou par 8 en prenant successivement la moitié, et retrouver un quotient exact à l'aide des tables*
+> « Diviser un nombre entier par 4 ou par 8 »
+
+| | Type | Demandé | Réponse |
+|---|---|---|---|
+| D | nume | Pour calculer 68 ÷ 4, Léon prend la moitié de 68, puis la moitié du résultat. Quel nombre t… | 17 |
+| D | qcm | Quelle méthode permet de calculer 120 ÷ 8 de tête ? | b) Prendre la moitié de 120 trois… |
+| E | nume | Calcule de tête 184 ÷ 4. | 46 |
+| E | vrai | Pour calculer 248 ÷ 8, Sam prend des moitiés : 248, puis 124, puis 62. Il répond 62. Sam a-… | faux |
+| M | nume | Un ruban de 360 cm est coupé en 8 morceaux de même longueur. Quelle est la longueur d'un mo… | 45 |
+| M | qcm | Nour divise un nombre par 4 et trouve 38. Que trouverait-elle en divisant ce nombre par 8 ? | c) 19 |
+
 **`A027` · Diviseurs et multiples communs** — diff. 4, seuil 3/4  
 *Déterminer les diviseurs communs à deux entiers, et des multiples communs à deux entiers*
 > « Déterminer les diviseurs communs à deux nombres entiers inférieurs ou égaux à 30 »
@@ -536,6 +824,19 @@ Le chapitre est l'unité qu'un exercice bilan validerait.
 | M | qcm | Une recette demande 2/3 de litre de lait. On la fait 3 fois. Combien de lait faut-il ? | a) 2 litres |
 
 ### ── 6e ──
+
+**`B040` · Division euclidienne par un nombre à deux chiffres** — diff. 4, seuil 3/4  
+*Effectuer la division euclidienne d'un entier par un entier inférieur à 100 et l'utiliser pour résoudre un problème (partage ou groupement, interprétation du reste)*
+> « Effectuer la division euclidienne d'un nombre entier par un nombre entier inférieur à 100 »
+
+| | Type | Demandé | Réponse |
+|---|---|---|---|
+| D | nume | Pose la division euclidienne de 538 par 24. Quel est le quotient ? | 22 |
+| D | qcm | Dans la division euclidienne de 300 par 45, quel est le reste ? | a) 30 |
+| E | nume | Pose la division euclidienne de 4 917 par 48. Quel est le quotient ? | 102 |
+| E | vrai | Inès affirme : dans la division euclidienne de 1 000 par 37, le quotient est 27 et le reste… | vrai |
+| M | nume | Un collège emmène 487 élèves au théâtre, en autocars de 52 places. Combien d'autocars faut-… | 10 |
+| M | qcm | Un chocolatier a 800 chocolats. Il les range dans des boîtes de 36. Combien de chocolats lu… | b) 28 |
 
 **`C032` · Fraction comme quotient** — diff. 4, seuil 3/4  
 *Comprendre une fraction comme le quotient de deux entiers, en lien avec la division*

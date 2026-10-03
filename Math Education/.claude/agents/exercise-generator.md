@@ -89,6 +89,23 @@ Chaque proposition fausse d'un QCM porte un champ `misconception` qui décrit **
 - Un distracteur absurde ne sert à rien : il rend le QCM binaire.
 - Un distracteur ne doit jamais être **aussi défendable** que la bonne réponse.
 
+# Sixième règle : ce que la relecture du lot B a appris (3 octobre 2026)
+
+- **Varie la place de la bonne réponse** dans les QCM d'une même compétence. L'application affiche les propositions dans l'ordre du fichier : si la bonne réponse est toujours en « a », l'élève répond juste sans lire. `validate_content.py` le signale.
+- **Plafond de mots par énoncé**, en moyenne sur la compétence : CP 15, CE1 20, CE2 25, CM1 et CM2 30. Les formules comptent pour un mot, les collections dessinées (`● ○`) ne comptent pas. Un énoncé de CP tient en une ou deux phrases courtes.
+- **Un problème à étapes n'emploie que des opérations couvertes par les prérequis de la compétence dans le DAG.** Sinon, un élève qui maîtrise la notion évaluée mais rate l'étape annexe est diagnostiqué faux sur la mauvaise compétence. Exemple vécu : une soustraction avec retenue dans un exercice de multiplication du CE1, alors qu'aucune compétence de soustraction n'était en amont.
+- **Ne reprends pas les nombres du `validation_test`** de la compétence : l'élève envoyé travailler une compétence parce qu'il a raté le test retrouverait le même item.
+- **Évite les mots qui supposent un exercice précédent** (« maintenant », « encore », « aussi ») tant que le champ `serie` n'existe pas.
+
+# Septième règle : ce que l'étape 1 (domaine B) a appris
+
+- **Les procédures du corrigé sont celles du niveau, pas seulement les nombres.** Au CP, on compte de 1 en 1, de 2 en 2, de 5 en 5, de 10 en 10 : compter « de 4 en 4 jusqu'à 28 » n'est pas au programme. Un partage au CP se fait en distribuant un par un ou en entourant des groupes. Passer par la dizaine inférieure (34 − 6 → 30 → 28) est une procédure de CE1 ; au CP, on casse une dizaine.
+- **« fois » n'est employé qu'au sens de « × ».** « Prendre la moitié trois fois de suite » se lit « 3 × la moitié » : écris « la moitié, puis encore la moitié, puis encore la moitié ».
+- **Une technique posée s'explique avec le geste écrit**, pas seulement avec le calcul : ce que l'élève barre, écrit au-dessus, retient en petit.
+- **Une réponse avec unité** (« 45 cm ») doit être acceptée : renseigne `answer.unit`, et `answer.accepted` si l'élève peut taper l'unité.
+- **Notations contrôlées** par `validate_content.py` : `<` `>` (après A006), `×` (après B005), `÷` (après B039). Un exercice qui les emploie doit descendre de la compétence qui les introduit.
+- **Contrôle avant de rendre** : `python scripts\check_lot.py --skills <compétences proposées> --links <liens> --exercises <lot>`, sans erreur ni avertissement sur tes identifiants (`--tout` affiche la sortie complète). Quand tu écris du JSON contenant `\times` ou `\frac`, vérifie qu'aucun antislash n'est devenu une tabulation ou un saut de page.
+
 # Format de sortie
 
 JSON strictement conforme à `Spécifications DAG, Exos, Mindcards/schemas/exercises.schema.json`.

@@ -155,6 +155,462 @@ Sami a 12 images. Il en reçoit 5, puis 11. Combien en a-t-il à la fin ?
 
 ---
 
+## `B003` · Soustraction simple — CP, difficulté 1
+
+*Comprendre la soustraction comme l'opération inverse de l'addition et calculer une différence sans retenue entre deux nombres inférieurs à 100*
+
+> « Comprendre le sens de l'addition et de la soustraction. » — *Cycle 2, Cours préparatoire, Les quatre opérations*
+> « La soustraction est comprise par l'élève comme l'opération inverse de l'addition. » — *Cycle 2, Cours préparatoire, Les quatre opérations*
+
+**EX-B003-D-01** — decouverte, numerique, 30 s
+
+9 canards nagent. 4 sortent de l'eau. ● ● ● ● ● ● ● ● ● Combien restent dans l'eau ?
+
+**Réponse :** 5
+
+*Corrigé.* (1) Des canards sortent de l'eau : il en reste moins qu'avant. On enlève, c'est une soustraction : 9 - 4. (2) On barre 4 canards sur les 9, puis on compte ceux qui restent : 1, 2, 3, 4, 5. (3) 9 - 4 = 5. Il reste 5 canards dans l'eau. On vérifie avec une addition : 5 + 4 = 9, on retrouve bien tous les canards du début.
+
+*Indice.* Barre les canards qui sortent, puis compte les autres.
+
+**EX-B003-D-02** — decouverte, qcm, 45 s
+
+On sait que 47 + 21 = 68. Quel calcul a pour résultat 21 ?
+
+- **a.** 68 + 47
+  <br>*Erreur visée :* L'élève réutilise les nombres de l'égalité en gardant le signe + : il ne voit pas que retrouver un des nombres ajoutés, c'est enlever l'autre.
+- **b.** 68 - 47 ✅
+- **c.** 47 - 21
+  <br>*Erreur visée :* L'élève reprend les deux premiers nombres dans l'ordre et remplace seulement + par - : il ne part pas du total 68.
+
+*Corrigé.* (1) 47 + 21 = 68 : si on réunit 47 et 21, on obtient 68. (2) Si on part de 68 et qu'on enlève les 47, il reste les 21. Donc 68 - 47 = 21. (3) La soustraction défait ce que l'addition a fait : c'est l'opération inverse. La bonne réponse est 68 - 47.
+
+*Indice.* Pars du total, 68. Que faut-il enlever pour qu'il reste 21 ?
+
+**EX-B003-E-01** — entrainement, numerique, 45 s
+
+Un fleuriste a 87 roses. Il en vend 54. Combien lui en reste-t-il ?
+
+**Réponse :** 33
+
+*Corrigé.* (1) Le fleuriste vend des roses : il lui en reste moins. On calcule 87 - 54. (2) On enlève les unités aux unités : 7 - 4 = 3. On enlève les dizaines aux dizaines : 8 - 5 = 3. (3) 87 - 54 = 33. Il reste 33 roses. (4) On vérifie avec l'addition : 33 + 54 = 87. On retrouve bien les 87 roses du début.
+
+*Indice.* Enlève d'abord les unités aux unités, puis les dizaines aux dizaines.
+
+**EX-B003-E-02** — entrainement, vrai_faux, 45 s
+
+Yanis dit : « 65 - 23 et 23 - 65 donnent le même résultat. » A-t-il raison ?
+
+**Réponse :** False
+
+*Corrigé.* (1) 65 - 23, c'est enlever 23 à 65 : 5 - 3 = 2 et 6 - 2 = 4, donc 65 - 23 = 42. (2) 23 - 65, c'est enlever 65 à 23. Si on a 23 jetons, on ne peut pas en enlever 65 : avec les nombres que tu connais, ce calcul n'a pas de résultat. (3) Yanis a tort. Pour l'addition, l'ordre ne compte pas : 23 + 65 et 65 + 23 font tous les deux 88. Pour la soustraction, l'ordre compte : on part toujours du nombre dont on enlève.
+
+*Indice.* Imagine 23 jetons. Peux-tu en enlever 65 ?
+
+**EX-B003-M-01** — maitrise, numerique, 75 s
+
+Au marché, Paul avait 67 œufs. Il lui en reste 41. Combien d'œufs a-t-il vendus ?
+
+**Réponse :** 26
+
+*Corrigé.* (1) On connait le nombre d'œufs du début (67) et celui de la fin (41). On cherche ce qui est parti : la différence entre les deux. (2) On peut chercher le nombre qui complète 41 + … = 67, ou calculer 67 - 41 : c'est le même nombre, car la soustraction est l'inverse de l'addition. (3) 67 - 41 : unités 7 - 1 = 6, dizaines 6 - 4 = 2. Donc 67 - 41 = 26. (4) Paul a vendu 26 œufs. On vérifie : 41 + 26 = 67.
+
+*Indice.* Combien faut-il ajouter à 41 pour revenir à 67 ?
+
+**EX-B003-M-02** — maitrise, numerique, 75 s
+
+Complète l'égalité : … - 32 = 45
+
+**Réponse :** 77
+
+*Corrigé.* (1) On cherche le nombre de départ : on lui a enlevé 32, et il est resté 45. (2) Pour retrouver le départ, on remet ce qu'on a enlevé : on fait l'opération inverse, l'addition 45 + 32. (3) 45 + 32 : unités 5 + 2 = 7, dizaines 4 + 3 = 7. Donc 45 + 32 = 77. (4) Le nombre qui manque est 77. On vérifie : 77 - 32 = 45.
+
+*Indice.* Si on enlève 32 et qu'il reste 45, combien y avait-il au début ?
+
+---
+
+## `B002` · Addition posée avec retenue — CP, difficulté 2
+
+*Poser en colonnes et calculer l'addition de deux ou trois nombres à un ou deux chiffres, avec passage de la retenue des unités aux dizaines*
+
+> « Au CP, l'addition posée n'est introduite qu'en période 4 ou 5 » — *Cycle 2, Cours préparatoire, Les quatre opérations*
+> « L'élève sait poser une addition de deux ou trois nombres à un ou deux chiffres, en positionnant les unités sous les unités, les dizaines sous les dizaines, et en calculer le résultat. Par exemple, 45 + 37 ou 28 + 8 + 56. » — *Cycle 2, Cours préparatoire, Les quatre opérations*
+
+**EX-B002-D-01** — decouverte, numerique, 60 s
+
+Pose l'addition 34 + 18 en colonnes, unités sous les unités, puis calcule-la.
+
+**Réponse :** 52
+
+*Corrigé.* (1) On écrit 18 sous 34 : le 8 sous le 4 (colonne des unités), le 1 sous le 3 (colonne des dizaines). (2) On commence toujours par les unités : 4 + 8 = 12. 12 unités, c'est 1 dizaine et 2 unités. On écrit 2 en bas de la colonne des unités, et on garde la dizaine : c'est la retenue, on l'écrit en haut de la colonne des dizaines. (3) Colonne des dizaines : la retenue plus les deux chiffres, 1 + 3 + 1 = 5. On écrit 5. (4) 34 + 18 = 52.
+
+*Indice.* Commence par la colonne des unités. Si tu trouves 10 ou plus, une dizaine part dans la colonne des dizaines.
+
+**EX-B002-D-02** — decouverte, qcm, 45 s
+
+Ana pose l'addition 19 + 6. Quel résultat doit-elle trouver ?
+
+- **a.** 15
+  <br>*Erreur visée :* L'élève oublie la retenue : il calcule 9 + 6 = 15, écrit 5 aux unités, puis recopie le 1 des dizaines sans y ajouter la dizaine formée par les unités.
+- **b.** 25 ✅
+- **c.** 79
+  <br>*Erreur visée :* L'élève place le 6 sous le 1, dans la colonne des dizaines : il calcule 1 + 6 = 7 dizaines et garde 9 unités. Il n'a pas aligné les unités sous les unités.
+
+*Corrigé.* (1) 6 n'a qu'un chiffre : c'est un nombre d'unités. On l'écrit sous le 9, dans la colonne des unités. (2) Unités : 9 + 6 = 15. 15 unités, c'est 1 dizaine et 5 unités. On écrit 5 et on retient 1 dizaine. (3) Dizaines : la retenue plus le 1 de 19, 1 + 1 = 2. On écrit 2. (4) 19 + 6 = 25 : la bonne réponse est 25.
+
+*Indice.* Où places-tu le 6 : sous le 1 ou sous le 9 ?
+
+**EX-B002-E-01** — entrainement, numerique, 60 s
+
+La classe a 48 crayons rouges et 35 bleus. Combien de crayons en tout ?
+
+**Réponse :** 83
+
+*Corrigé.* (1) On réunit les crayons rouges et les crayons bleus : c'est une addition, 48 + 35. (2) On pose 35 sous 48. Unités : 8 + 5 = 13, soit 1 dizaine et 3 unités. On écrit 3 et on retient 1. (3) Dizaines : 1 + 4 + 3 = 8. On écrit 8. (4) 48 + 35 = 83. La classe a 83 crayons.
+
+*Indice.* Pose l'addition, et n'oublie pas la dizaine formée par les unités.
+
+**EX-B002-E-02** — entrainement, vrai_faux, 60 s
+
+Hugo pose 56 + 29 et trouve 75. A-t-il raison ?
+
+**Réponse :** False
+
+*Corrigé.* (1) On refait le calcul. Unités : 6 + 9 = 15, soit 1 dizaine et 5 unités. On écrit 5 et on retient 1. (2) Dizaines : 1 + 5 + 2 = 8. On écrit 8. Donc 56 + 29 = 85. (3) Hugo a tort. Il a bien écrit le 5 des unités, mais il a oublié la retenue : il a calculé 5 + 2 = 7 dizaines au lieu de 8.
+
+*Indice.* Refais le calcul colonne par colonne, en commençant par les unités.
+
+**EX-B002-M-01** — maitrise, numerique, 90 s
+
+Emma a donné 17 cartes. Il lui en reste 46. Combien de cartes avait-elle avant ?
+
+**Réponse :** 63
+
+*Corrigé.* (1) Avant de donner, Emma avait les cartes qu'elle a gardées et celles qu'elle a données. On les réunit : c'est une addition, 46 + 17, même si l'histoire parle de donner. (2) On pose 17 sous 46. Unités : 6 + 7 = 13, soit 1 dizaine et 3 unités. On écrit 3 et on retient 1. (3) Dizaines : 1 + 4 + 1 = 6. On écrit 6. Donc 46 + 17 = 63. (4) Emma avait 63 cartes. On vérifie : 63 est plus grand que 46, c'est normal puisqu'elle en a donné.
+
+*Indice.* Avant, Emma avait toutes ses cartes : celles qui restent et celles qu'elle a données.
+
+**EX-B002-M-02** — maitrise, qcm, 90 s
+
+Pose et calcule 8 + 57 + 29.
+
+- **a.** 74
+  <br>*Erreur visée :* L'élève oublie la retenue : il trouve 24 unités, écrit 4, puis additionne seulement 5 + 2 = 7 dizaines.
+- **b.** 84
+  <br>*Erreur visée :* L'élève retient toujours 1, par habitude : or 24 unités font 2 dizaines et 4 unités, la retenue est 2.
+- **c.** 94 ✅
+
+*Corrigé.* (1) On pose les trois nombres les uns sous les autres. Le 8 n'a qu'un chiffre : il va dans la colonne des unités, sous le 7 et le 9. (2) Unités : 8 + 7 + 9 = 24. 24 unités, c'est 2 dizaines et 4 unités. On écrit 4 et on retient 2 dizaines. (3) Dizaines : 2 + 5 + 2 = 9. On écrit 9. (4) 8 + 57 + 29 = 94 : la bonne réponse est 94.
+
+*Indice.* Combien de dizaines y a-t-il dans le total des unités ? C'est ta retenue.
+
+---
+
+## `B013` · Calcul mental : additions — CP, difficulté 2
+
+*Ajouter mentalement un nombre à un chiffre avec passage de la dizaine (en passant par la dizaine supérieure), ajouter 9, ajouter des dizaines entières, ajouter deux nombres inférieurs à 100*
+
+> « Ajouter un nombre inférieur à 9 à un nombre. » — *Cycle 2, Cours préparatoire, Le calcul mental*
+> « Ajouter deux nombres inférieurs à 100. » — *Cycle 2, Cours préparatoire, Le calcul mental*
+
+**EX-B013-D-01** — decouverte, numerique, 30 s
+
+Calcule dans ta tête : 48 + 5. Passe par 50.
+
+**Réponse :** 53
+
+*Corrigé.* (1) 48, c'est 4 dizaines et 8 unités. Pour aller à 50, il manque 2 unités, car 8 + 2 = 10. (2) On veut ajouter 5. On en a déjà ajouté 2, il reste à ajouter 3, car 5 = 2 + 3. (3) 48 + 2 = 50, puis 50 + 3 = 53. Donc 48 + 5 = 53.
+
+*Indice.* Combien faut-il ajouter à 48 pour arriver à 50 ?
+
+**EX-B013-D-02** — decouverte, qcm, 30 s
+
+Combien font 43 + 30 ?
+
+- **a.** 73 ✅
+- **b.** 46
+  <br>*Erreur visée :* L'élève ajoute 3 unités au lieu de 3 dizaines : il ne voit pas que 30, c'est 3 dizaines.
+- **c.** 63
+  <br>*Erreur visée :* L'élève compte de 10 en 10 en disant 43 comme premier pas (« 43, 53, 63 ») : il n'avance que de 2 dizaines.
+
+*Corrigé.* (1) 30, c'est 3 dizaines. Ajouter 30, c'est ajouter 3 dizaines. (2) 43, c'est 4 dizaines et 3 unités. 4 dizaines et 3 dizaines font 7 dizaines. Les 3 unités ne changent pas. (3) 43 + 30 = 73 : la bonne réponse est 73.
+
+*Indice.* Combien de dizaines y a-t-il dans 30 ?
+
+**EX-B013-E-01** — entrainement, numerique, 40 s
+
+Calcule dans ta tête : 57 + 9.
+
+**Réponse :** 66
+
+*Corrigé.* (1) 9, c'est 10 moins 1. Ajouter 10, c'est facile : on ajoute une dizaine. (2) 57 + 10 = 67. Mais on a ajouté 1 de trop, puisqu'on voulait ajouter 9. (3) On enlève ce 1 : le nombre juste avant 67 est 66. Donc 57 + 9 = 66.
+
+*Indice.* Ajoute 10, c'est plus facile. Puis corrige : as-tu ajouté trop ou pas assez ?
+
+**EX-B013-E-02** — entrainement, vrai_faux, 40 s
+
+Zoé dit : « 26 + 8 = 34 ». A-t-elle raison ?
+
+**Réponse :** True
+
+*Corrigé.* (1) On passe par la dizaine : pour aller de 26 à 30, il faut ajouter 4, car 6 + 4 = 10. (2) On voulait ajouter 8. On a ajouté 4, il reste 4 à ajouter, car 8 = 4 + 4. (3) 30 + 4 = 34. Donc 26 + 8 = 34 : Zoé a raison.
+
+*Indice.* Passe par 30 : combien faut-il ajouter à 26 pour y arriver ?
+
+**EX-B013-M-01** — maitrise, numerique, 60 s
+
+Une tour a 64 cubes. Mia ajoute 28 cubes. Combien de cubes en tout ? Calcule de tête.
+
+**Réponse :** 92
+
+*Corrigé.* (1) Mia ajoute des cubes : on calcule 64 + 28. (2) On sépare les dizaines et les unités. Dizaines : 60 + 20 = 80. Unités : 4 + 8 = 12. (3) On réunit les deux : 80 + 12. 12, c'est 1 dizaine et 2 unités, donc 80 + 12 = 92. (4) La tour a 92 cubes.
+
+*Indice.* Ajoute d'abord les dizaines entre elles, puis les unités entre elles.
+
+**EX-B013-M-02** — maitrise, qcm, 60 s
+
+Lou calcule 58 + 26 de tête : 50 + 20 = 70, puis 8 + 6 = 14. Quel est le résultat ?
+
+- **a.** 74
+  <br>*Erreur visée :* L'élève ne garde que le chiffre 4 de 14 : il oublie que 14 contient une dizaine, comme on oublie une retenue.
+- **b.** 84 ✅
+- **c.** 80
+  <br>*Erreur visée :* L'élève ajoute bien la dizaine de 14 aux 7 dizaines, mais oublie les 4 unités en route.
+
+*Corrigé.* (1) Lou a séparé dizaines et unités : 70 pour les dizaines, 14 pour les unités. Il reste à réunir les deux : 70 + 14. (2) 14, c'est 1 dizaine et 4 unités. 7 dizaines et 1 dizaine font 8 dizaines, et on garde les 4 unités. (3) 70 + 14 = 84, donc 58 + 26 = 84 : la bonne réponse est 84.
+
+*Indice.* Combien de dizaines et d'unités y a-t-il dans 14 ?
+
+---
+
+## `B014` · Calcul mental : soustractions — CP, difficulté 2
+
+*Soustraire mentalement des dizaines entières, et soustraire un nombre à un chiffre à un nombre entier de dizaines en « cassant » une dizaine*
+
+> « Soustraire un nombre inférieur à 10 à un nombre entier de dizaines. » — *Cycle 2, Cours préparatoire, Le calcul mental*
+
+**EX-B014-D-01** — decouverte, numerique, 30 s
+
+Calcule dans ta tête : 85 - 40.
+
+**Réponse :** 45
+
+*Corrigé.* (1) 40, c'est 4 dizaines. Enlever 40, c'est enlever 4 dizaines. (2) 85, c'est 8 dizaines et 5 unités. 8 dizaines moins 4 dizaines, il reste 4 dizaines. Les 5 unités ne bougent pas. (3) 85 - 40 = 45.
+
+*Indice.* Combien de dizaines y a-t-il dans 40 ?
+
+**EX-B014-D-02** — decouverte, qcm, 40 s
+
+Combien font 60 - 3 ?
+
+- **a.** 63
+  <br>*Erreur visée :* L'élève ne peut pas enlever 3 à 0 unité, alors il calcule 3 - 0 = 3 : il enlève le petit chiffre du grand au lieu de casser une dizaine.
+- **b.** 57 ✅
+- **c.** 58
+  <br>*Erreur visée :* L'élève compte à rebours en disant 60 comme premier pas (« 60, 59, 58 ») : il n'a reculé que de 2.
+
+*Corrigé.* (1) 60, c'est 6 dizaines et 0 unité. On ne peut pas enlever 3 unités à 0 unité. (2) On casse une dizaine : il reste 5 dizaines, et on a 10 unités. (3) On enlève 3 unités aux 10 unités : il en reste 7. On a 5 dizaines et 7 unités. (4) 60 - 3 = 57 : la bonne réponse est 57.
+
+*Indice.* Casse une des dizaines de 60 en 10 unités.
+
+**EX-B014-E-01** — entrainement, numerique, 45 s
+
+Noé a 40 euros. Il achète un ballon à 8 euros. Combien lui reste-t-il ?
+
+**Réponse :** 32
+
+*Corrigé.* (1) Noé dépense de l'argent : il lui en reste moins. On calcule 40 - 8. (2) 40, c'est 4 dizaines. On casse une dizaine : 3 dizaines et 10 unités. (3) On enlève 8 unités aux 10 unités : il en reste 2, car 8 + 2 = 10. On a 3 dizaines et 2 unités. (4) 40 - 8 = 32. Il reste 32 euros à Noé.
+
+*Indice.* Casse une dizaine de 40. Combien d'unités restent quand on en enlève 8 à 10 ?
+
+**EX-B014-E-02** — entrainement, vrai_faux, 40 s
+
+Inès dit : « 52 - 20 = 50 ». A-t-elle raison ?
+
+**Réponse :** False
+
+*Corrigé.* (1) 20, c'est 2 dizaines. Il faut enlever 2 dizaines, pas 2 unités. (2) 52, c'est 5 dizaines et 2 unités. 5 dizaines moins 2 dizaines, il reste 3 dizaines. Les 2 unités ne bougent pas : 52 - 20 = 32. (3) Inès a tort : elle a enlevé 2 unités, ce qui fait 52 - 2 = 50.
+
+*Indice.* Dans 20, le 2 compte des unités ou des dizaines ?
+
+**EX-B014-M-01** — maitrise, numerique, 60 s
+
+34 poules sont dans la cour. 6 rentrent au poulailler. Combien restent dans la cour ?
+
+**Réponse :** 28
+
+*Corrigé.* (1) Des poules quittent la cour : il en reste moins. On calcule 34 - 6. (2) 34, c'est 3 dizaines et 4 unités. On ne peut pas enlever 6 unités à 4 unités. (3) On casse une dizaine en 10 unités : il reste 2 dizaines, et on a 10 + 4 = 14 unités. (4) On enlève 6 unités aux 14 unités : 14 - 6 = 8, car 8 + 6 = 14. On a 2 dizaines et 8 unités. (5) 34 - 6 = 28. Il reste 28 poules dans la cour. On vérifie : 28 + 6 = 34.
+
+*Indice.* 34, c'est 3 dizaines et 4 unités. Il n'y a pas assez d'unités pour en enlever 6 : que peux-tu casser ?
+
+**EX-B014-M-02** — maitrise, qcm, 60 s
+
+Quel nombre manque ? 80 - … = 74
+
+- **a.** 4
+  <br>*Erreur visée :* L'élève recopie le chiffre des unités de 74 sans se demander ce qu'on a enlevé à 80.
+- **b.** 14
+  <br>*Erreur visée :* L'élève calcule chiffre par chiffre : 8 - 7 = 1, puis, ne pouvant pas faire 0 - 4, il fait 4 - 0 = 4. Il enlève le petit chiffre du grand.
+- **c.** 6 ✅
+
+*Corrigé.* (1) On a enlevé un nombre à 80 et il reste 74. On cherche ce qu'il faut ajouter à 74 pour revenir à 80. (2) 74, c'est 7 dizaines et 4 unités. Pour faire une dizaine de plus, il manque 6 unités, car 4 + 6 = 10. Donc 74 + 6 = 80. (3) On vérifie en cassant une dizaine de 80 : 7 dizaines et 10 unités, moins 6 unités, il reste 7 dizaines et 4 unités. 80 - 6 = 74 : la bonne réponse est 6.
+
+*Indice.* Combien faut-il ajouter à 74 pour arriver à 80 ?
+
+---
+
+## `B036` · Problèmes de partage équitable — CP, difficulté 2
+
+*Résoudre un problème de partage équitable, en cherchant la valeur d'une part ou le nombre de parts, par distribution, groupement ou schéma, avant tout symbole de division*
+
+> « L'élève sait résoudre des problèmes consistant, dans un partage équitable, à chercher le nombre de parts à partir de la quantité totale d'objets et de la quantité de chaque part » — *Cycle 2, Cours préparatoire, La résolution de problèmes*
+> « L'élève sait résoudre des problèmes consistant à rechercher la valeur d'une part dans un partage équitable » — *Cycle 2, Cours préparatoire, La résolution de problèmes*
+
+**EX-B036-D-01** — decouverte, numerique, 40 s
+
+Mia met 8 fraises dans 2 bols, autant dans chaque. ● ● ● ● ● ● ● ● Combien par bol ?
+
+**Réponse :** 4
+
+*Corrigé.* (1) Les 2 bols doivent avoir autant de fraises : c'est un partage équitable. (2) On distribue les fraises une par une, un bol après l'autre. À chaque tour, 2 fraises partent. On compte de 2 en 2 : 2, 4, 6, 8. Cela fait 4 tours. (3) Chaque bol reçoit une fraise par tour : il y a 4 fraises par bol. Vérification : 4 + 4 = 8.
+
+*Indice.* Donne une fraise au premier bol, une au second, et recommence jusqu'à ce qu'il n'en reste plus.
+
+**EX-B036-D-02** — decouverte, qcm, 45 s
+
+On range ces 12 crayons par pots de 4. ● ● ● ● ● ● ● ● ● ● ● ● Combien de pots faut-il ?
+
+- **a.** 4
+  <br>*Erreur visée :* L'élève confond la quantité dans chaque pot et le nombre de pots cherché : il recopie le 4 de l'énoncé.
+- **b.** 3 ✅
+- **c.** 8
+  <br>*Erreur visée :* L'élève remplit un seul pot et compte les crayons qui restent (12 - 4 = 8), au lieu de continuer à remplir des pots.
+
+*Corrigé.* (1) Chaque pot reçoit 4 crayons. On entoure des paquets de 4 ronds parmi les 12. (2) On compte les paquets entourés : 1, 2, 3. On a formé 3 paquets, et il ne reste aucun crayon seul. (3) Il faut 3 pots. Ce n'est pas 4 : 4, c'est le nombre de crayons dans un pot, pas le nombre de pots.
+
+*Indice.* Entoure les ronds 4 par 4, puis compte les paquets.
+
+**EX-B036-E-01** — entrainement, numerique, 60 s
+
+4 enfants se partagent 24 cerises, autant chacun. Combien de cerises chaque enfant a-t-il ?
+
+**Réponse :** 6
+
+*Corrigé.* (1) Les 4 enfants reçoivent autant de cerises : on les distribue une par une, à chacun son tour, comme aux cartes. (2) On dessine 24 ronds pour les cerises, et 4 cases, une par enfant. On met un rond dans chaque case, tour après tour, jusqu'à ce qu'il ne reste plus de rond. (3) On compte les ronds d'une case : 1, 2, 3, 4, 5, 6. Chaque enfant a 6 cerises.
+
+*Indice.* Dessine 24 ronds, puis distribue-les un par un entre 4 enfants.
+
+**EX-B036-E-02** — entrainement, vrai_faux, 50 s
+
+Zoé range 18 chaussettes par paires. Vrai ou faux : elle obtient 9 paires.
+
+**Réponse :** True
+
+*Corrigé.* (1) Une paire, c'est 2 chaussettes. On cherche combien de paquets de 2 on peut faire avec 18 chaussettes. (2) On compte de 2 en 2 jusqu'à 18 : 2, 4, 6, 8, 10, 12, 14, 16, 18. On a compté 9 paquets. (3) Zoé obtient bien 9 paires, sans chaussette seule : c'est vrai.
+
+*Indice.* Combien de chaussettes y a-t-il dans une paire ? Compte de 2 en 2.
+
+**EX-B036-M-01** — maitrise, numerique, 75 s
+
+Dans le jardin, on compte 20 pattes de chats. Combien y a-t-il de chats ?
+
+**Réponse :** 5
+
+*Corrigé.* (1) L'énoncé ne dit pas combien de pattes a chaque chat : il faut le savoir. Un chat a 4 pattes. (2) On dessine 20 croix, une par patte. Puis on entoure des paquets de 4 croix : un paquet, c'est un chat. (3) On compte les paquets entourés : 1, 2, 3, 4, 5. Il ne reste aucune croix seule. (4) Il y a 5 chats dans le jardin.
+
+*Indice.* Combien de pattes a un chat ? Fais des paquets de cette taille.
+
+**EX-B036-M-02** — maitrise, qcm, 75 s
+
+Léa partage 16 crêpes avec ses 3 amis, à parts égales. Combien de crêpes chacun a-t-il ?
+
+- **a.** 5
+  <br>*Erreur visée :* L'élève partage entre les 3 amis en oubliant Léa : en distribuant 16 crêpes à 3 personnes, chacune en reçoit 5 et il en reste 1.
+- **b.** 13
+  <br>*Erreur visée :* L'élève enlève le nombre d'amis au nombre de crêpes (16 - 3 = 13) au lieu de faire un partage.
+- **c.** 4 ✅
+
+*Corrigé.* (1) Qui mange ? Léa partage avec ses 3 amis : Léa compte aussi. 3 + 1 = 4 personnes, pas 3. (2) On dessine 16 ronds pour les crêpes et 4 assiettes. On distribue les ronds un par un, une assiette après l'autre, jusqu'à ce qu'il n'en reste plus. (3) On compte les ronds d'une assiette : 1, 2, 3, 4. Chacun a 4 crêpes, et il n'en reste aucune.
+
+*Indice.* Compte d'abord combien de personnes se partagent les crêpes.
+
+---
+
+## `B037` · Problèmes additifs en deux étapes — CP, difficulté 2
+
+*Résoudre un problème qui enchaîne deux étapes additives ou soustractives, en calculant d'abord un résultat intermédiaire*
+
+> « Résoudre des problèmes additifs en deux étapes (champ numérique inférieur ou égal à 30). » — *Cycle 2, Cours préparatoire, La résolution de problèmes*
+
+**EX-B037-D-01** — decouverte, numerique, 60 s
+
+Tim a 13 autocollants, en donne 2, puis en gagne 4. Combien en a-t-il ?
+
+**Réponse :** 15
+
+*Corrigé.* (1) Il y a deux étapes : Tim donne, puis il gagne. On les fait dans l'ordre. (2) Il donne 2 autocollants : il en a moins. 13 - 2 = 11. (3) Il gagne 4 autocollants : il en a plus. 11 + 4 = 15. (4) Tim a 15 autocollants à la fin.
+
+*Indice.* Calcule d'abord combien il lui en reste après avoir donné.
+
+**EX-B037-D-02** — decouverte, qcm, 50 s
+
+9 oiseaux sur un arbre. 3 s'envolent, puis 2 arrivent. Combien sont-ils alors ?
+
+- **a.** 8 ✅
+- **b.** 14
+  <br>*Erreur visée :* L'élève ajoute tous les nombres de l'énoncé (9 + 3 + 2 = 14), sans voir que les oiseaux qui s'envolent quittent l'arbre.
+- **c.** 4
+  <br>*Erreur visée :* L'élève enlève les deux nombres (9 - 3 - 2 = 4), comme si les 2 oiseaux qui arrivent partaient eux aussi.
+
+*Corrigé.* (1) 3 oiseaux s'envolent : il y en a moins. 9 - 3 = 6. (2) 2 oiseaux arrivent : il y en a plus. 6 + 2 = 8. (3) Il y a 8 oiseaux sur l'arbre.
+
+*Indice.* Combien d'oiseaux reste-t-il juste après l'envol ?
+
+**EX-B037-E-01** — entrainement, numerique, 75 s
+
+27 poissons : 13 rouges, 4 jaunes, les autres gris. Combien de gris ?
+
+**Réponse :** 10
+
+*Corrigé.* (1) Les poissons rouges, jaunes et gris forment ensemble les 27 poissons. (2) D'abord, on compte ensemble les poissons rouges et jaunes : 13 + 4 = 17. (3) Les gris sont ceux qui restent : 27 - 17 = 10. Pour les unités, 7 moins 7 donne 0 ; pour les dizaines, 2 moins 1 donne 1. (4) Il y a 10 poissons gris.
+
+*Indice.* Combien y a-t-il de poissons qui ne sont pas gris ?
+
+**EX-B037-E-02** — entrainement, vrai_faux, 60 s
+
+19 cahiers. Le maître en distribue 5, puis 3. Il en reste 11.
+
+**Réponse :** True
+
+*Corrigé.* (1) Première distribution : 19 - 5 = 14 cahiers. (2) Seconde distribution : 14 - 3 = 11 cahiers. (3) Il reste bien 11 cahiers : c'est vrai. Autre chemin : il a distribué 5 + 3 = 8 cahiers en tout, et 19 - 8 = 11.
+
+*Indice.* Enlève les cahiers distribués, en deux fois.
+
+**EX-B037-M-01** — maitrise, numerique, 90 s
+
+Sur l'étang, 3 canards s'envolent, 4 arrivent : ils sont 18. Combien étaient-ils avant ?
+
+**Réponse :** 17
+
+*Corrigé.* (1) On connait la fin, pas le début : on remonte l'histoire à l'envers, en partant des 18 canards. (2) Avant que 4 canards arrivent, il y en avait 4 de moins : 18 - 4 = 14. (3) Avant que 3 canards s'envolent, il y en avait 3 de plus : 14 + 3 = 17. (4) On vérifie dans l'ordre de l'histoire : 17 - 3 = 14, puis 14 + 4 = 18. Il y avait 17 canards avant.
+
+*Indice.* Pars de la fin et défais chaque étape : les canards arrivés repartent, ceux envolés reviennent.
+
+**EX-B037-M-02** — maitrise, qcm, 75 s
+
+Max a 14 euros, en gagne 5, en dépense et finit avec 12. Combien a-t-il dépensé ?
+
+- **a.** 2
+  <br>*Erreur visée :* L'élève compare le début et la fin (14 - 12 = 2) en oubliant les 5 euros gagnés.
+- **b.** 7 ✅
+- **c.** 19
+  <br>*Erreur visée :* L'élève s'arrête après la première étape : 19 euros, c'est l'argent de Max juste avant la dépense, pas la dépense.
+
+*Corrigé.* (1) Première étape : Max gagne 5 euros, il en a plus. 14 + 5 = 19. (2) Deuxième étape : il dépense, et il passe de 19 euros à 12 euros. Ce qu'il a dépensé, c'est ce qui manque à 12 pour faire 19 : 19 - 12 = 7. (3) On vérifie dans l'ordre de l'histoire : 14 + 5 = 19, puis 19 - 7 = 12. Max a dépensé 7 euros.
+
+*Indice.* Combien Max a-t-il d'argent juste avant de dépenser ?
+
+---
+
 ## `A003` · Compter jusqu'à 1000 — CE1, difficulté 2
 
 *Lire, écrire et comparer les entiers jusqu'à 1000*
@@ -492,6 +948,235 @@ Au cinéma : 5 rangées de 9 sièges, et 3 strapontins en plus. Combien de place
 
 ---
 
+## `B015` · Calcul mental : multiplier par 10 — CE1, difficulté 2
+
+*Multiplier mentalement par 10 un nombre inférieur à 100, en raisonnant sur les unités de numération : chaque unité devient une dizaine, chaque dizaine une centaine*
+
+> « Multiplier par 10 un nombre inférieur à 100. » — *Cycle 2, Cours élémentaire première année, Le calcul mental*
+
+**EX-B015-D-01** — decouverte, numerique, 60 s
+
+Une boîte contient 10 crayons. Lou achète 34 boîtes. Combien de crayons a-t-elle ?
+
+**Réponse :** 340
+
+*Corrigé.* (1) 34 boîtes de 10 crayons : on calcule 34 fois 10, soit 34 × 10. (2) 34, c'est 3 dizaines et 4 unités. Quand on multiplie par 10, chaque unité devient une dizaine et chaque dizaine devient une centaine. (3) Les 4 unités deviennent 4 dizaines, les 3 dizaines deviennent 3 centaines : on obtient 3 centaines et 4 dizaines, c'est-à-dire 340. (4) 34 × 10 = 340. Lou a 340 crayons.
+
+*Indice.* Écris 34 en dizaines et en unités. Que devient chaque unité quand on multiplie par 10 ?
+
+**EX-B015-D-02** — decouverte, qcm, 45 s
+
+47, c'est 4 dizaines et 7 unités. Quand on multiplie par 10, chaque unité devient une dizaine. Combien fait 47 × 10 ?
+
+- **a.** 57
+  <br>*Erreur visée :* L'élève ajoute 10 au lieu de multiplier par 10 : 47 + 10 = 57.
+- **b.** 110
+  <br>*Erreur visée :* L'élève transforme les 7 unités en 7 dizaines, mais laisse les 4 dizaines telles quelles : 4 dizaines et 7 dizaines font 11 dizaines, soit 110. Il oublie que les dizaines deviennent des centaines.
+- **c.** 470 ✅
+
+*Corrigé.* (1) Les 7 unités deviennent 7 dizaines. (2) Les 4 dizaines deviennent 4 centaines : une dizaine multipliée par 10, c'est une centaine. (3) On obtient 4 centaines et 7 dizaines, c'est-à-dire 470. Le chiffre des unités est 0, car il ne reste aucune unité seule. (4) 47 × 10 = 470 : la bonne réponse est c.
+
+*Indice.* Que devient une dizaine quand on la multiplie par 10 ?
+
+**EX-B015-E-01** — entrainement, numerique, 45 s
+
+Calcule 10 × 96.
+
+**Réponse :** 960
+
+*Corrigé.* (1) 10 × 96, c'est 10 fois 96 : on multiplie 96 par 10. L'ordre des deux nombres ne change pas le résultat. (2) 96, c'est 9 dizaines et 6 unités. Quand on multiplie par 10, chaque unité devient une dizaine et chaque dizaine devient une centaine. (3) Les 6 unités deviennent 6 dizaines, les 9 dizaines deviennent 9 centaines : on obtient 9 centaines et 6 dizaines, c'est-à-dire 960. (4) 10 × 96 = 960.
+
+*Indice.* Que deviennent les 9 dizaines de 96 quand on multiplie par 10 ?
+
+**EX-B015-E-02** — entrainement, vrai_faux, 45 s
+
+Sam dit : « Dans 29 × 10, le chiffre 2 devient le chiffre des centaines. » Sam a-t-il raison ?
+
+**Réponse :** True
+
+*Corrigé.* (1) 29, c'est 2 dizaines et 9 unités. (2) Quand on multiplie par 10, chaque dizaine devient une centaine : les 2 dizaines deviennent 2 centaines. Les 9 unités deviennent 9 dizaines. (3) 29 × 10 = 290 : le chiffre 2 est bien le chiffre des centaines, le 9 est passé aux dizaines, et le chiffre des unités est 0. (4) Sam a raison.
+
+*Indice.* Calcule 29 × 10, puis regarde la place du chiffre 2.
+
+**EX-B015-M-01** — maitrise, numerique, 75 s
+
+Un paquet contient 10 cartes. Inès a 580 cartes, toutes rangées en paquets. Combien de paquets a-t-elle ?
+
+**Réponse :** 58
+
+*Corrigé.* (1) Chaque paquet contient 10 cartes : on cherche le nombre qui, multiplié par 10, donne 580, soit 10 × … = 580. (2) Un paquet de 10 cartes, c'est une dizaine de cartes. On cherche donc combien il y a de dizaines dans 580. (3) 580, c'est 5 centaines et 8 dizaines. Une centaine, c'est 10 dizaines : 5 centaines font 50 dizaines, plus 8 dizaines, cela fait 58 dizaines. (4) Vérification : 58 × 10 = 580, car les 8 unités deviennent 8 dizaines et les 5 dizaines deviennent 5 centaines. Inès a 58 paquets.
+
+*Indice.* Un paquet de 10 cartes, c'est une dizaine. Combien de dizaines y a-t-il dans 580 ?
+
+**EX-B015-M-02** — maitrise, qcm, 90 s
+
+Un minibus a 10 places. 143 enfants partent en sortie. Combien de minibus faut-il, au minimum ?
+
+- **a.** 15 minibus ✅
+- **b.** 14 minibus
+  <br>*Erreur visée :* L'élève voit que 143, c'est 14 dizaines et 3 unités, et ne compte que les dizaines complètes : il oublie les 3 enfants qui restent sans place.
+- **c.** 4 minibus
+  <br>*Erreur visée :* L'élève confond le chiffre des dizaines de 143, qui est 4, avec le nombre de dizaines, qui est 14 : il oublie les 10 dizaines contenues dans la centaine.
+
+*Corrigé.* (1) Chaque minibus transporte 10 enfants, c'est-à-dire une dizaine d'enfants. On cherche combien de dizaines il faut pour asseoir 143 enfants. (2) 143, c'est 1 centaine, 4 dizaines et 3 unités. Une centaine, c'est 10 dizaines : 143, c'est donc 14 dizaines et 3 unités. (3) 14 minibus, c'est 14 dizaines de places, soit 140 places. C'est moins que 143 : 3 enfants n'auraient pas de place. (4) 15 minibus, c'est 15 dizaines de places, soit 150 places. Tous les enfants sont assis, et il reste 7 places libres. (5) Il faut au minimum 15 minibus : la bonne réponse est a.
+
+*Indice.* Combien de dizaines d'enfants y a-t-il dans 143 ? Et que fait-on des enfants qui restent ?
+
+---
+
+## `B042` · Addition posée de nombres à trois chiffres — CE1, difficulté 2
+
+*Poser et calculer l'addition de deux ou trois nombres à un, deux ou trois chiffres, avec retenues, en alignant unités, dizaines et centaines*
+
+> « L'élève sait poser une addition de deux ou de trois nombres à un, deux ou trois chiffres (en positionnant les unités sous les unités, les dizaines sous les dizaines, les centaines sous les centaines) et en calculer le résultat. » — *Cycle 2, Cours élémentaire première année, Les quatre opérations*
+
+**EX-B042-D-01** — decouverte, numerique, 60 s
+
+Pose l'addition 326 + 147 en colonnes : unités sous les unités, dizaines sous les dizaines, centaines sous les centaines. Puis calcule-la.
+
+**Réponse :** 473
+
+*Corrigé.* (1) On écrit 147 sous 326 : le 7 sous le 6 (unités), le 4 sous le 2 (dizaines), le 1 sous le 3 (centaines). (2) On commence par les unités : 6 + 7 = 13. 13 unités, c'est 1 dizaine et 3 unités. On écrit 3 et on retient 1 dizaine, qu'on note en petit au-dessus des dizaines. (3) Dizaines : la retenue plus les deux chiffres, 1 + 2 + 4 = 7. On écrit 7. (4) Centaines : 3 + 1 = 4. On écrit 4. (5) 326 + 147 = 473.
+
+*Indice.* Commence par les unités. Si tu trouves 10 ou plus, une dizaine part dans la colonne des dizaines.
+
+**EX-B042-D-02** — decouverte, qcm, 45 s
+
+Pose et calcule 273 + 9.
+
+- **a.** 363
+  <br>*Erreur visée :* L'élève place le 9 sous le 7, dans la colonne des dizaines : il ajoute 9 dizaines au lieu de 9 unités. Il n'a pas aligné les unités sous les unités.
+- **b.** 272
+  <br>*Erreur visée :* L'élève oublie la retenue : il calcule 3 + 9 = 12, écrit 2, puis recopie le 7 des dizaines sans y ajouter la dizaine formée par les unités.
+- **c.** 282 ✅
+
+*Corrigé.* (1) 9 n'a qu'un chiffre : c'est un nombre d'unités. On l'écrit sous le 3, dans la colonne des unités, tout à droite. (2) Unités : 3 + 9 = 12. 12 unités, c'est 1 dizaine et 2 unités. On écrit 2 et on retient 1 dizaine, qu'on note en petit au-dessus des dizaines. (3) Dizaines : 1 + 7 = 8. On écrit 8. Centaines : rien à ajouter au 2, on écrit 2. (4) 273 + 9 = 282 : la bonne réponse est 282.
+
+*Indice.* Sous quel chiffre de 273 places-tu le 9 ?
+
+**EX-B042-E-01** — entrainement, numerique, 75 s
+
+Pose et calcule 485 + 236.
+
+**Réponse :** 721
+
+*Corrigé.* (1) On pose 236 sous 485, unités sous les unités, dizaines sous les dizaines, centaines sous les centaines. (2) Unités : 5 + 6 = 11, soit 1 dizaine et 1 unité. On écrit 1 et on retient 1 dizaine, qu'on note en petit au-dessus des dizaines. (3) Dizaines : 1 + 8 + 3 = 12. 12 dizaines, c'est 1 centaine et 2 dizaines. On écrit 2 et on retient 1 centaine, qu'on note en petit au-dessus des centaines. (4) Centaines : 1 + 4 + 2 = 7. On écrit 7. (5) 485 + 236 = 721. Il y avait deux retenues : une aux unités, une aux dizaines.
+
+*Indice.* Il peut y avoir une retenue aux unités, puis une autre aux dizaines.
+
+**EX-B042-E-02** — entrainement, vrai_faux, 75 s
+
+Sacha pose 154 + 5 + 62 et trouve 221. A-t-il raison ?
+
+**Réponse :** True
+
+*Corrigé.* (1) On pose les trois nombres en alignant les unités à droite : le 5, et le 2 de 62, vont sous le 4 de 154 (unités) ; le 6 de 62 va sous le 5 de 154 (dizaines). (2) Unités : 4 + 5 + 2 = 11, soit 1 dizaine et 1 unité. On écrit 1 et on retient 1 dizaine, notée en petit au-dessus des dizaines. (3) Dizaines : 1 + 5 + 6 = 12, soit 1 centaine et 2 dizaines. On écrit 2 et on retient 1 centaine, notée au-dessus des centaines. (4) Centaines : 1 + 1 = 2. On écrit 2. Donc 154 + 5 + 62 = 221 : Sacha a raison.
+
+*Indice.* Refais le calcul colonne par colonne. Où places-tu le 5 ?
+
+**EX-B042-M-01** — maitrise, numerique, 120 s
+
+Un parc reçoit 296 visiteurs lundi, 187 mardi et 45 mercredi. Combien de visiteurs en tout ?
+
+**Réponse :** 528
+
+*Corrigé.* (1) On réunit les visiteurs des trois jours : c'est une addition de trois nombres, 296 + 187 + 45. (2) On les pose les uns sous les autres, unités sous les unités. 45 n'a que deux chiffres : son 5 va sous le 7 et le 6, son 4 dans la colonne des dizaines. (3) Unités : 6 + 7 + 5 = 18, soit 1 dizaine et 8 unités. On écrit 8 et on retient 1 dizaine, notée en petit au-dessus des dizaines. (4) Dizaines : 1 + 9 + 8 + 4 = 22. 22 dizaines, c'est 2 centaines et 2 dizaines, car 10 dizaines font 1 centaine. On écrit 2 aux dizaines et on retient 2 centaines : on note un petit 2 au-dessus des centaines. (5) Centaines : 2 + 2 + 1 = 5. On écrit 5. Le parc a reçu 528 visiteurs.
+
+*Indice.* Pose les trois nombres en colonnes. Combien de centaines forment les dizaines ?
+
+**EX-B042-M-02** — maitrise, qcm, 90 s
+
+Malo pose 604 + 39 et trouve 994. Quelle est son erreur ?
+
+- **a.** Il a oublié une retenue.
+  <br>*Erreur visée :* L'élève pense d'abord à l'erreur la plus fréquente sans vérifier : un oubli de retenue donnerait 633, pas 994.
+- **b.** Il a écrit 39 sous 60 : le 9 n'est pas sous les unités. ✅
+- **c.** Il a soustrait au lieu d'ajouter.
+  <br>*Erreur visée :* L'élève ne regarde pas l'ordre de grandeur : 994 est plus grand que 604, donc Malo a bien ajouté quelque chose.
+
+*Corrigé.* (1) On fait le bon calcul. 39 a deux chiffres : le 9 va sous le 4 (unités), le 3 sous le 0 (dizaines). (2) Unités : 4 + 9 = 13. On écrit 3 et on retient 1 dizaine, notée en petit au-dessus des dizaines. Dizaines : 1 + 0 + 3 = 4. Centaines : 6. Donc 604 + 39 = 643. (3) Malo a trouvé 994 : il a placé le 9 sous le 0 et le 3 sous le 6. Il a calculé 604 + 390 au lieu de 604 + 39. (4) Son erreur vient de l'alignement : il faut toujours mettre les unités sous les unités, en commençant par la droite. La bonne réponse est b.
+
+*Indice.* Fais le calcul juste, puis cherche comment Malo a pu obtenir 994.
+
+---
+
+## `B004` · Soustraction posée avec retenue — CE1, difficulté 2
+
+*Poser en colonnes et calculer une soustraction de nombres jusqu'à 1 000, avec retenue, selon un algorithme (par cassage ou par compensation)*
+
+> « Un algorithme de la soustraction posée est introduit en période 3 au plus tard. » — *Cycle 2, Cours élémentaire première année, Les quatre opérations*
+> « L'élève connait un algorithme de soustraction posée (« par cassage » ou « par compensation »). » — *Cycle 2, Cours élémentaire première année, Les quatre opérations*
+
+**EX-B004-D-01** — decouverte, numerique, 60 s
+
+Pose et calcule 63 - 27.
+
+**Réponse :** 36
+
+*Corrigé.* (1) On écrit 27 sous 63 : unités sous les unités, dizaines sous les dizaines. (2) Unités : on ne peut pas enlever 7 à 3. On casse une des 6 dizaines : une dizaine, c'est 10 unités. Il reste 5 dizaines, et on a 10 + 3 = 13 unités. Sur ta feuille, barre le 6 et écris 5 au-dessus, puis écris un petit 1 devant le 3. (3) 13 - 7 = 6. On écrit 6 aux unités. (4) Dizaines : il en reste 5, on en enlève 2 : 5 - 2 = 3. On écrit 3. (5) 63 - 27 = 36. On vérifie avec l'addition : 36 + 27 = 63. (6) Si ta classe utilise une autre méthode de soustraction, tu dois trouver le même résultat.
+
+*Indice.* Aux unités, 3 est trop petit pour enlever 7 : casse une dizaine.
+
+**EX-B004-D-02** — decouverte, qcm, 60 s
+
+Pose et calcule 71 - 38.
+
+- **a.** 47
+  <br>*Erreur visée :* L'élève ne peut pas faire 1 - 8, alors il fait 8 - 1 = 7 : il enlève le petit chiffre du grand dans chaque colonne, sans casser de dizaine.
+- **b.** 33 ✅
+- **c.** 43
+  <br>*Erreur visée :* L'élève casse bien une dizaine pour faire 11 - 8 = 3, mais oublie de retirer cette dizaine aux 7 dizaines : il calcule 7 - 3 = 4.
+
+*Corrigé.* (1) Unités : on ne peut pas enlever 8 à 1. On casse une des 7 dizaines : il reste 6 dizaines, et on a 11 unités. (2) 11 - 8 = 3. On écrit 3. (3) Dizaines : 6 - 3 = 3. On écrit 3. (4) 71 - 38 = 33 : la bonne réponse est 33. On vérifie : 33 + 38 = 71.
+
+*Indice.* Quand tu casses une dizaine, il en reste une de moins dans la colonne des dizaines.
+
+**EX-B004-E-01** — entrainement, numerique, 75 s
+
+Un puzzle a 254 pièces. Clara en a posé 126. Combien de pièces reste-t-il à poser ?
+
+**Réponse :** 128
+
+*Corrigé.* (1) On enlève les pièces déjà posées au total : on calcule 254 - 126. (2) Unités : on ne peut pas enlever 6 à 4. On casse une des 5 dizaines : il reste 4 dizaines, et on a 14 unités. 14 - 6 = 8. (3) Dizaines : 4 - 2 = 2. Centaines : 2 - 1 = 1. (4) 254 - 126 = 128. Il reste 128 pièces à poser. On vérifie : 128 + 126 = 254.
+
+*Indice.* Pose la soustraction et commence par les unités.
+
+**EX-B004-E-02** — entrainement, vrai_faux, 75 s
+
+Léon pose 405 - 173 et trouve 332. A-t-il raison ?
+
+**Réponse :** False
+
+*Corrigé.* (1) Unités : 5 - 3 = 2. (2) Dizaines : on ne peut pas enlever 7 à 0. On casse une des 4 centaines : il reste 3 centaines, et on a 10 dizaines. 10 - 7 = 3. (3) Centaines : il en reste 3, on en enlève 1 : 3 - 1 = 2. Donc 405 - 173 = 232. (4) Léon a tort. Il a cassé une centaine, mais ne l'a pas retirée aux 4 centaines : il a calculé 4 - 1 = 3 au lieu de 3 - 1 = 2.
+
+*Indice.* Refais le calcul. Quand tu casses une centaine, combien en reste-t-il ?
+
+**EX-B004-M-01** — maitrise, numerique, 120 s
+
+Un camion transporte 503 caisses. Il en livre 268. Combien de caisses reste-t-il dans le camion ?
+
+**Réponse :** 235
+
+*Corrigé.* (1) On enlève les caisses livrées : on calcule 503 - 268. (2) Unités : on ne peut pas enlever 8 à 3, et il n'y a aucune dizaine à casser. On casse d'abord une des 5 centaines : une centaine, c'est 10 dizaines. Il reste 4 centaines et on a 10 dizaines. Sur ta feuille, barre le 5 et écris 4 au-dessus, barre le 0 et écris 10 au-dessus. (3) On casse une de ces 10 dizaines : il reste 9 dizaines, et on a 10 + 3 = 13 unités. Barre le 10, écris 9 au-dessus, et écris un petit 1 devant le 3. 13 - 8 = 5. (4) Dizaines : 9 - 6 = 3. Centaines : 4 - 2 = 2. (5) 503 - 268 = 235. Il reste 235 caisses. On vérifie : 235 + 268 = 503.
+
+*Indice.* Le chiffre des dizaines de 503 est 0 : pour avoir des unités, il faut d'abord casser une centaine.
+
+**EX-B004-M-02** — maitrise, qcm, 120 s
+
+Le glacier a vendu 423 glaces en juillet et 186 en juin. Combien de glaces de plus en juillet ?
+
+- **a.** 609
+  <br>*Erreur visée :* L'élève voit les mots « de plus » et additionne : 423 + 186 = 609. Or on cherche l'écart entre les deux mois, c'est une soustraction.
+- **b.** 363
+  <br>*Erreur visée :* L'élève soustrait le petit chiffre du grand dans chaque colonne (6 - 3, 8 - 2, 4 - 1) au lieu de casser une dizaine puis une centaine.
+- **c.** 237 ✅
+
+*Corrigé.* (1) On compare deux nombres : l'écart entre juillet et juin se trouve par une soustraction, 423 - 186, même si l'énoncé dit « de plus ». (2) Unités : on ne peut pas enlever 6 à 3. On casse une des 2 dizaines : il reste 1 dizaine, et on a 13 unités. 13 - 6 = 7. (3) Dizaines : on ne peut pas enlever 8 à 1. On casse une des 4 centaines : il reste 3 centaines, et on a 11 dizaines. 11 - 8 = 3. (4) Centaines : 3 - 1 = 2. Donc 423 - 186 = 237 : la bonne réponse est 237. On vérifie : 237 + 186 = 423.
+
+*Indice.* Cherche l'écart entre 423 et 186. Quelle opération donne un écart ?
+
+---
+
 ## `C001` · Fraction comme partage — CE1, difficulté 2
 
 *Comprendre une fraction comme le partage d'un tout en parts égales*
@@ -807,6 +1492,82 @@ Trouve une fraction de numérateur 1 plus grande que 1/8 et plus petite que 1/4.
 
 ---
 
+## `B038` · Problèmes mixtes en deux étapes — CE1, difficulté 3
+
+*Résoudre un problème en deux étapes qui combine une étape multiplicative et une étape additive ou soustractive*
+
+> « Résoudre des problèmes mixtes en deux étapes (une étape additive et une étape multiplicative). » — *Cycle 2, Cours élémentaire première année, La résolution de problèmes*
+
+**EX-B038-D-01** — decouverte, numerique, 50 s
+
+Ali a 2 sachets de 5 billes, et 4 billes à part. ● ● ● ● ● ● ● ● ● ● ● ● ● ● Combien de billes en tout ?
+
+**Réponse :** 14
+
+*Corrigé.* (1) D'abord les sachets : 2 sachets de 5 billes, c'est 2 fois 5, soit 2 imes 5 = 10 billes. (2) Ensuite, on ajoute les 4 billes à part : 10 + 4 = 14. (3) Ali a 14 billes en tout.
+
+*Indice.* Compte d'abord les billes des sachets, puis ajoute les autres.
+
+**EX-B038-D-02** — decouverte, qcm, 60 s
+
+Ema a 17 euros. Elle achète 3 stylos à 2 euros chacun. Combien d'argent lui reste-t-il ?
+
+- **a.** 6
+  <br>*Erreur visée :* L'élève s'arrête après la première étape : 6 euros, c'est le prix des 3 stylos, pas ce qui reste à Ema.
+- **b.** 11 ✅
+- **c.** 12
+  <br>*Erreur visée :* L'élève enlève 3 puis 2 (17 - 3 - 2 = 12), comme si Ema payait 3 euros et 2 euros, au lieu de 3 fois 2 euros.
+
+*Corrigé.* (1) Première étape, le prix des 3 stylos : 3 fois 2 euros, c'est 3 × 2 = 6 euros. (2) Deuxième étape, Ema paie ces 6 euros avec ses 17 euros : 17 - 6 = 11. (3) Il reste 11 euros à Ema.
+
+*Indice.* Commence par trouver combien coûtent les 3 stylos ensemble.
+
+**EX-B038-E-01** — entrainement, numerique, 75 s
+
+Un fermier remplit 4 boîtes de 8 œufs, puis casse 2 œufs en chemin. Combien d'œufs intacts lui reste-t-il ?
+
+**Réponse :** 30
+
+*Corrigé.* (1) D'abord, les œufs dans les boîtes : 4 boîtes de 8 œufs, c'est 4 fois 8, soit 4 imes 8 = 32 œufs. C'est un résultat de la table de 4 : 4 fois 8, c'est autant que 8 fois 4. (2) Ensuite, 2 œufs sont cassés : 32 - 2 = 30. (3) Il reste 30 œufs intacts.
+
+*Indice.* Combien d'œufs le fermier avait-il avant d'en casser ?
+
+**EX-B038-E-02** — entrainement, vrai_faux, 60 s
+
+Chaque trousse contient 2 crayons et 1 gomme. Vrai ou faux : 4 trousses contiennent 8 objets.
+
+**Réponse :** False
+
+*Corrigé.* (1) Dans une trousse, il y a 2 + 1 = 3 objets. (2) Dans 4 trousses, il y a 4 fois 3 objets : 4 × 3 = 12 objets. (3) 12 objets, pas 8 : c'est faux. Le nombre 8 ne compte que les crayons (4 × 2 = 8) et oublie les gommes.
+
+*Indice.* Compte d'abord les objets d'une seule trousse.
+
+**EX-B038-M-01** — maitrise, numerique, 90 s
+
+Paul achète 2 paquets de 7 cartes. Il a alors 39 cartes. Combien de cartes avait-il avant ?
+
+**Réponse :** 25
+
+*Corrigé.* (1) On cherche le nombre de départ : il faut remonter l'histoire. (2) Les cartes achetées : 2 paquets de 7 cartes, c'est 2 × 7 = 14 cartes. (3) Avant l'achat, Paul avait 14 cartes de moins : 39 - 14 = 25. (4) Vérification : 25 + 14 = 39. Paul avait 25 cartes avant.
+
+*Indice.* Calcule d'abord combien de cartes Paul a achetées, puis remonte au départ.
+
+**EX-B038-M-02** — maitrise, qcm, 90 s
+
+Marc a 19 livres. Il en met 4 sur chacune de ses 4 étagères. Combien de livres ne sont pas rangés ?
+
+- **a.** 15
+  <br>*Erreur visée :* L'élève remplit une seule étagère (19 - 4 = 15) et oublie qu'il y a 4 étagères.
+- **b.** 11
+  <br>*Erreur visée :* L'élève enlève 4 deux fois (19 - 4 - 4 = 11), comme si les deux nombres 4 de l'énoncé étaient deux retraits, au lieu de 4 fois 4 livres.
+- **c.** 3 ✅
+
+*Corrigé.* (1) Les livres rangés : 4 étagères de 4 livres, c'est 4 × 4 = 16 livres. (2) Les livres pas rangés sont ceux qui restent : 19 - 16 = 3. (3) 3 livres ne sont pas rangés.
+
+*Indice.* Combien de livres sont rangés sur les étagères ?
+
+---
+
 ## `A007` · Ranger plusieurs entiers — CE2, difficulté 2
 
 *Ordonner une liste d'entiers en ordre croissant ou décroissant*
@@ -1080,6 +1841,237 @@ Quel nombre s'écrit (2 × 1 000) + (7 × 10) + (9 × 1) ?
 *Corrigé.* (1) 2 × 1 000 = 2 000, 7 × 10 = 70, 9 × 1 = 9. (2) Aucune centaine n'apparaît : le rang des centaines est vide, on y écrit 0. (3) 2 000 + 70 + 9 = 2 079.
 
 *Indice.* Il manque un rang dans la décomposition. Lequel, et quel chiffre faut-il y mettre ?
+
+---
+
+## `B039` · Sens de la division et symbole ÷ — CE2, difficulté 3
+
+*Comprendre la division comme l'opération inverse de la multiplication, l'écrire avec le symbole ÷ et calculer un quotient exact à l'aide des tables*
+
+> « Comprendre le sens de la division et utiliser le symbole « ÷ ». » — *Cycle 2, Cours élémentaire deuxième année, Les quatre opérations*
+> « L'élève comprend que la division est l'opération inverse de la multiplication. » — *Cycle 2, Cours élémentaire deuxième année, Les quatre opérations*
+
+**EX-B039-D-01** — decouverte, numerique, 45 s
+
+Inès partage 27 fraises entre 3 amies. Chacune reçoit le même nombre de fraises. ● ● ● ● ● ● ● ● ● ● ● ● ● ● ● ● ● ● ● ● ● ● ● ● ● ● ● Ce partage s'écrit 27 ÷ 3. Combien de fraises reçoit chaque amie ?
+
+**Réponse :** 9
+
+*Corrigé.* (1) On partage 27 fraises en 3 parts égales. C'est ce qu'écrit 27 ÷ 3, qu'on lit « 27 divisé par 3 ». (2) Plutôt que de distribuer les fraises une à une, on utilise la table de 3 : combien de fois 3 dans 27 ? 3 × 9 = 27. (3) Donc 27 ÷ 3 = 9 : chaque amie reçoit 9 fraises. On vérifie : 3 amies qui ont 9 fraises chacune, 3 × 9 = 27 fraises en tout.
+
+*Indice.* Cherche dans la table de 3 le nombre qui donne 27.
+
+**EX-B039-D-02** — decouverte, qcm, 40 s
+
+On sait que 5 × 8 = 40. Quelle égalité est juste ?
+
+- **a.** 5 ÷ 8 = 40
+  <br>*Erreur visée :* L'élève garde les nombres dans l'ordre de la multiplication et remplace seulement × par ÷. Or une division part du résultat de la multiplication : c'est 40 qu'on divise.
+- **b.** 40 ÷ 5 = 8 ✅
+- **c.** 40 ÷ 5 = 35
+  <br>*Erreur visée :* L'élève confond la division avec la soustraction : il enlève 5 une seule fois à 40, au lieu de chercher combien de fois 5 est contenu dans 40.
+
+*Corrigé.* (1) 5 × 8 = 40 veut dire : 8 paquets de 5 font 40. (2) La division fait le chemin inverse : on part de 40 et on cherche combien de fois 5 il y a dans 40. Il y a 8 fois 5 dans 40. (3) Donc 40 ÷ 5 = 8, et de la même façon 40 ÷ 8 = 5. La bonne réponse est b.
+
+*Indice.* Une division commence par le nombre qu'on partage : ici, le résultat de la multiplication.
+
+**EX-B039-E-01** — entrainement, numerique, 50 s
+
+Un boulanger a 35 croissants. Il les met dans des sachets de 5. Combien de sachets peut-il remplir ?
+
+**Réponse :** 7
+
+*Corrigé.* (1) Ici, on connaît le contenu d'un sachet, 5 croissants, et on cherche le nombre de sachets : combien de fois 5 croissants dans 35 croissants ? (2) On cherche le nombre qui complète 5 × … = 35. Dans la table de 5 : 5 × 7 = 35. (3) Cela s'écrit 35 ÷ 5 = 7. Le boulanger remplit 7 sachets. (4) La division sert à faire des parts égales, et aussi des groupes de même taille, comme ici.
+
+*Indice.* Combien de fois faut-il prendre 5 croissants pour arriver à 35 croissants ?
+
+**EX-B039-E-02** — entrainement, vrai_faux, 45 s
+
+Zoé dit : « Comme 4 × 9 = 36, alors 36 ÷ 9 = 4. » A-t-elle raison ?
+
+**Réponse :** True
+
+*Corrigé.* (1) 4 × 9 = 36 veut dire : 4 groupes de 9 font 36. (2) Diviser 36 par 9, c'est chercher combien de groupes de 9 on peut faire avec 36. D'après la multiplication, on en fait 4. (3) Donc 36 ÷ 9 = 4 : Zoé a raison. La même multiplication donne une deuxième division : 36 ÷ 4 = 9.
+
+*Indice.* Combien de fois 9 est-il contenu dans 36 ?
+
+**EX-B039-M-01** — maitrise, numerique, 60 s
+
+Complète l'égalité : … ÷ 7 = 6
+
+**Réponse :** 42
+
+*Corrigé.* (1) On cherche le nombre qui, partagé en 7 parts égales, donne des parts de 6. (2) 7 parts de 6, cela fait 7 × 6 = 42 : la multiplication défait la division. (3) On vérifie : 42 ÷ 7 = 6, car 7 × 6 = 42. Le nombre qui manque est 42.
+
+*Indice.* Un nombre partagé en 7 parts donne des parts de 6 : combien y avait-il au départ ?
+
+**EX-B039-M-02** — maitrise, qcm, 90 s
+
+Quel problème se résout par le calcul 32 ÷ 4 ?
+
+- **a.** Léa a 4 boîtes de 32 crayons. Combien de crayons a-t-elle ?
+  <br>*Erreur visée :* L'élève repère les nombres 32 et 4 sans lire la question : ici, on connaît le nombre de boîtes et ce que contient chacune, on cherche le total. C'est une multiplication.
+- **b.** Léa a 32 crayons. Elle en donne 4. Combien lui en reste-t-il ?
+  <br>*Erreur visée :* L'élève associe la division à « enlever » : ici, on retire 4 crayons une seule fois, c'est une soustraction.
+- **c.** Léa range 32 crayons dans des boîtes de 4. Combien de boîtes remplit-elle ? ✅
+
+*Corrigé.* (1) 32 ÷ 4, c'est chercher combien de fois 4 est contenu dans 32, ou combien vaut chaque part quand on partage 32 en 4. (2) Problème a : on a 4 boîtes de 32 crayons et on cherche le total. C'est une multiplication, pas une division. (3) Problème b : on enlève 4 crayons une seule fois. C'est une soustraction. (4) Problème c : on fait des groupes de 4 crayons avec 32 crayons, et on cherche le nombre de groupes. 32 ÷ 4 = 8, car 4 × 8 = 32. La bonne réponse est c.
+
+*Indice.* Pour chaque problème, demande-toi : fait-on des groupes égaux, ou cherche-t-on un total ?
+
+---
+
+## `B041` · Calcul mental : multiplier par 100 et par des dizaines — CE2, difficulté 3
+
+*Multiplier mentalement un nombre entier par 10 ou par 100, et un nombre inférieur à 10 par un nombre entier de dizaines*
+
+> « Multiplier un nombre entier par 10 ou 100. » — *Cycle 2, Cours élémentaire deuxième année, Le calcul mental*
+> « Multiplier un nombre inférieur à 10 par un nombre entier de dizaines. » — *Cycle 2, Cours élémentaire deuxième année, Le calcul mental*
+
+**EX-B041-D-01** — decouverte, numerique, 45 s
+
+Un carton contient 100 feuilles. L'école reçoit 7 cartons. Combien de feuilles reçoit-elle ?
+
+**Réponse :** 700
+
+*Corrigé.* (1) 7 cartons de 100 feuilles : on calcule 7 fois 100, soit 7 × 100. (2) 100, c'est une centaine. 7 fois une centaine, c'est 7 centaines. (3) Multiplier par 100, c'est multiplier par 10 deux fois : les 7 unités deviennent 7 dizaines, puis 7 centaines. 7 centaines s'écrivent 700. (4) 7 × 100 = 700. L'école reçoit 700 feuilles.
+
+*Indice.* Combien de centaines y a-t-il dans 7 cartons de 100 ?
+
+**EX-B041-D-02** — decouverte, vrai_faux, 45 s
+
+Sam dit : « 3 × 50 fait 15, car 3 × 5 = 15. » Sam a-t-il raison ?
+
+**Réponse :** False
+
+*Corrigé.* (1) 50, ce n'est pas 5 unités : c'est 5 dizaines. (2) 3 fois 5 dizaines, c'est 15 dizaines, car 3 × 5 = 15. (3) 15 dizaines, c'est 1 centaine et 5 dizaines, c'est-à-dire 150. Donc 3 × 50 = 150. (4) Sam a bien calculé 3 × 5, mais il a oublié que ce sont des dizaines : il a tort.
+
+*Indice.* Dans 50, combien y a-t-il de dizaines ?
+
+**EX-B041-E-01** — entrainement, numerique, 60 s
+
+Un rouleau contient 80 tickets. Combien de tickets y a-t-il dans 7 rouleaux ?
+
+**Réponse :** 560
+
+*Corrigé.* (1) 7 rouleaux de 80 tickets : on calcule 7 × 80. (2) 80, c'est 8 dizaines. 7 fois 8 dizaines, c'est 56 dizaines, car 7 × 8 = 56. (3) 56 dizaines, c'est 56 × 10 : les 6 unités deviennent 6 dizaines, les 5 dizaines deviennent 5 centaines. On obtient 560. (4) 7 × 80 = 560. Il y a 560 tickets.
+
+*Indice.* Combien de dizaines y a-t-il dans 80 ? Multiplie ce nombre de dizaines par 7.
+
+**EX-B041-E-02** — entrainement, qcm, 45 s
+
+Combien fait 45 × 100 ?
+
+- **a.** 145
+  <br>*Erreur visée :* L'élève ajoute 100 au lieu de multiplier par 100 : 45 + 100 = 145.
+- **b.** 450
+  <br>*Erreur visée :* L'élève multiplie par 10 au lieu de 100 : chaque unité devient une dizaine, mais pas une centaine. 450, c'est 45 × 10.
+- **c.** 4 500 ✅
+
+*Corrigé.* (1) 45, c'est 4 dizaines et 5 unités. (2) Multiplier par 100, c'est multiplier par 10 deux fois. Chaque unité devient une centaine, et chaque dizaine devient un millier. (3) Les 5 unités deviennent 5 centaines, les 4 dizaines deviennent 4 milliers : on obtient 4 milliers et 5 centaines, c'est-à-dire 4 500. (4) 45 × 100 = 4 500 : la bonne réponse est c.
+
+*Indice.* Une dizaine multipliée par 100, que devient-elle ?
+
+**EX-B041-M-01** — maitrise, qcm, 90 s
+
+Un bus a 40 places. Il faut transporter 190 enfants. Combien de bus faut-il, au minimum ?
+
+- **a.** 4 bus
+  <br>*Erreur visée :* L'élève calcule 4 × 40 = 160 et s'arrête au produit le plus proche, sans voir que 160 places ne suffisent pas pour 190 enfants : 30 enfants resteraient à pied.
+- **b.** 5 bus ✅
+- **c.** 19 bus
+  <br>*Erreur visée :* L'élève voit que 190, c'est 19 dizaines, et confond les dizaines d'enfants avec les bus : il fait comme si chaque bus avait 10 places au lieu de 40.
+
+*Corrigé.* (1) 40 places, c'est 4 dizaines de places. On cherche combien de bus donnent au moins 190 places. (2) 4 bus : 4 fois 4 dizaines, c'est 16 dizaines, soit 4 × 40 = 160 places. C'est moins que 190 : 30 enfants n'auraient pas de place. (3) 5 bus : 5 fois 4 dizaines, c'est 20 dizaines, soit 5 × 40 = 200 places. C'est assez pour 190 enfants, et il reste 10 places libres. (4) Il faut au minimum 5 bus : la bonne réponse est b.
+
+*Indice.* Calcule le nombre de places pour plusieurs bus, et arrête-toi dès que tous les enfants peuvent s'asseoir.
+
+**EX-B041-M-02** — maitrise, numerique, 75 s
+
+Un sachet contient 90 perles. Léa a 720 perles, toutes rangées en sachets. Combien de sachets a-t-elle ?
+
+**Réponse :** 8
+
+*Corrigé.* (1) On cherche combien de sachets de 90 perles font 720 perles : … × 90 = 720. (2) 90, c'est 9 dizaines, et 720, c'est 72 dizaines. (3) On cherche donc combien de fois 9 dizaines font 72 dizaines : dans la table de 9, 9 × 8 = 72. (4) Vérification : 8 × 90 = 720, car 8 fois 9 dizaines font 72 dizaines. Léa a 8 sachets.
+
+*Indice.* Compte en dizaines : combien de dizaines dans 90, combien dans 720 ?
+
+---
+
+## `B007` · Multiplication posée — CE2, difficulté 3
+
+*Poser et calculer la multiplication d'un nombre à deux ou trois chiffres par un nombre à un ou deux chiffres*
+
+> « L'algorithme de la multiplication posée est introduit en période 4 au plus tard. » — *Cycle 2, Cours élémentaire deuxième année, Les quatre opérations*
+> « Poser et effectuer des multiplications d'un nombre à deux ou trois chiffres par un nombre à un ou deux chiffres. » — *Cycle 2, Cours élémentaire deuxième année, Les quatre opérations*
+
+**EX-B007-D-01** — decouverte, numerique, 75 s
+
+Une bande dessinée a 58 pages. Combien de pages ont 3 bandes dessinées identiques ? Pose la multiplication.
+
+**Réponse :** 174
+
+*Corrigé.* (1) 3 bandes dessinées de 58 pages : on calcule 58 × 3. On pose 58 en haut et 3 en dessous, sous le chiffre des unités. (2) Colonne des unités : 3 × 8 = 24. On écrit 4 aux unités et on retient 2 dizaines. (3) Colonne des dizaines : 3 × 5 = 15 dizaines, plus les 2 dizaines de retenue, cela fait 17 dizaines. On écrit 17 : 7 aux dizaines et 1 aux centaines. (4) 58 × 3 = 174. Les 3 bandes dessinées ont 174 pages.
+
+*Indice.* Commence par les unités : 3 fois 8. N'oublie pas la retenue.
+
+**EX-B007-D-02** — decouverte, qcm, 75 s
+
+Un camion transporte 4 caisses de 127 bouteilles. Pose et calcule 127 × 4. Combien y a-t-il de bouteilles ?
+
+- **a.** 488
+  <br>*Erreur visée :* L'élève multiplie chaque chiffre mais oublie les retenues : 4 × 7 = 28, il écrit 8 ; 4 × 2 = 8 ; 4 × 1 = 4. Il obtient 488.
+- **b.** 508 ✅
+- **c.** 4 828
+  <br>*Erreur visée :* L'élève écrit chaque produit en entier côte à côte au lieu de ne garder qu'un chiffre par colonne : 4 × 1 = 4, 4 × 2 = 8 et 4 × 7 = 28 donnent 4 828.
+
+*Corrigé.* (1) On pose 127 en haut et 4 en dessous, sous le chiffre des unités. (2) Unités : 4 × 7 = 28. On écrit 8 et on retient 2 dizaines. (3) Dizaines : 4 × 2 = 8 dizaines, plus 2 de retenue, cela fait 10 dizaines. On écrit 0 aux dizaines et on retient 1 centaine. (4) Centaines : 4 × 1 = 4 centaines, plus 1 de retenue, cela fait 5 centaines. On écrit 5. (5) 127 × 4 = 508. Il y a 508 bouteilles : la bonne réponse est b.
+
+*Indice.* Dans chaque colonne, on n'écrit qu'un seul chiffre : le reste part en retenue dans la colonne suivante.
+
+**EX-B007-E-01** — entrainement, numerique, 150 s
+
+Un verger compte 26 rangées de 47 arbres. Combien d'arbres y a-t-il ? Pose la multiplication.
+
+**Réponse :** 1222
+
+*Corrigé.* (1) 26 rangées de 47 arbres : on calcule 47 × 26. On pose 47 en haut et 26 en dessous. Comme 26 = 6 + 20, on calcule deux lignes : 47 fois 6, puis 47 fois 20. (2) Première ligne, 47 × 6 : 6 × 7 = 42, on écrit 2 et on retient 4 ; 6 × 4 = 24, plus 4, cela fait 28. La première ligne est 282. (3) Deuxième ligne, 47 × 20 : le 2 de 26 vaut 2 dizaines. On écrit d'abord un 0 aux unités, car on multiplie par des dizaines. Puis 2 × 7 = 14, on écrit 4 et on retient 1 ; 2 × 4 = 8, plus 1, cela fait 9. La deuxième ligne est 940. (4) On additionne les deux lignes : 282 + 940 = 1 222. Il y a 1 222 arbres.
+
+*Indice.* Fais deux lignes : 47 fois 6, puis 47 fois 20. Pour la seconde, pense au 0 des dizaines.
+
+**EX-B007-E-02** — entrainement, vrai_faux, 120 s
+
+Pour calculer 53 × 32, Léo pose l'opération et trouve 265. Léo a-t-il raison ?
+
+**Réponse :** False
+
+*Corrigé.* (1) 32 = 2 + 30 : on calcule deux lignes, 53 fois 2, puis 53 fois 30. (2) Première ligne : 53 × 2 = 106. (3) Deuxième ligne : le 3 de 32 vaut 3 dizaines. On écrit un 0 aux unités, puis 3 × 53 = 159 : la ligne est 1 590. (4) On additionne : 106 + 1 590 = 1 696. Donc 53 × 32 = 1 696. (5) Léo a tort. Il a écrit 159 sans le 0 de la deuxième ligne, comme si le 3 valait 3 unités : 106 + 159 = 265.
+
+*Indice.* Dans 32, le chiffre 3 vaut 3 dizaines. Que faut-il écrire au début de la deuxième ligne ?
+
+**EX-B007-M-01** — maitrise, qcm, 180 s
+
+Un avion transporte 168 passagers par vol. Ce mois-ci, il fait 37 vols complets. Combien de passagers a-t-il transportés ?
+
+- **a.** 1 680
+  <br>*Erreur visée :* L'élève oublie le 0 de la deuxième ligne : il calcule 168 × 7 = 1 176 et 168 × 3 = 504, puis additionne 1 176 + 504 = 1 680, comme si le 3 de 37 valait 3 unités.
+- **b.** 5 040
+  <br>*Erreur visée :* L'élève ne calcule que la ligne des dizaines, 168 × 30 = 5 040, et oublie d'ajouter la ligne des unités, 168 × 7.
+- **c.** 6 216 ✅
+
+*Corrigé.* (1) 37 vols de 168 passagers : on calcule 168 × 37. On pose 168 en haut et 37 en dessous. Comme 37 = 7 + 30, on calcule deux lignes. (2) Première ligne, 168 × 7 : 7 × 8 = 56, on écrit 6 et on retient 5 ; 7 × 6 = 42, plus 5, cela fait 47, on écrit 7 et on retient 4 ; 7 × 1 = 7, plus 4, cela fait 11. La ligne est 1 176. (3) Deuxième ligne, 168 × 30 : on écrit un 0 aux unités, puis 3 × 8 = 24, on écrit 4 et on retient 2 ; 3 × 6 = 18, plus 2, cela fait 20, on écrit 0 et on retient 2 ; 3 × 1 = 3, plus 2, cela fait 5. La ligne est 5 040. (4) On additionne les deux lignes : 1 176 + 5 040 = 6 216. L'avion a transporté 6 216 passagers : la bonne réponse est c.
+
+*Indice.* Il faut deux lignes : une pour les 7 unités de 37, une pour ses 3 dizaines. Puis on les additionne.
+
+**EX-B007-M-02** — maitrise, numerique, 180 s
+
+Une boulangère cuit 45 plaques de 12 croissants et 23 plaques de 9 brioches. Combien de croissants et de brioches cuit-elle en tout ?
+
+**Réponse :** 747
+
+*Corrigé.* (1) Les croissants : 45 plaques de 12 croissants, soit 45 × 12. Première ligne, 45 × 2 = 90. Deuxième ligne, 45 × 10 : on écrit un 0 aux unités, puis 45, ce qui donne 450. Total : 90 + 450 = 540 croissants. (2) Les brioches : 23 plaques de 9 brioches, soit 23 × 9. Unités : 9 × 3 = 27, on écrit 7 et on retient 2. Dizaines : 9 × 2 = 18, plus 2, cela fait 20. Résultat : 207 brioches. (3) On additionne les croissants et les brioches : 540 + 207 = 747. (4) La boulangère cuit 747 croissants et brioches.
+
+*Indice.* Calcule d'abord le nombre de croissants, puis le nombre de brioches, et additionne.
 
 ---
 
@@ -1425,6 +2417,244 @@ Une demi-droite va de 0 à 100 000 et elle est graduée de 10 000 en 10 000. Sar
 *Corrigé.* (1) Les graduations sont 0, 10 000, 20 000, et ainsi de suite jusqu'à 100 000. (2) 9 500 est plus petit que 10 000 : il ne peut pas se trouver après cette graduation. (3) Il manque 500 pour atteindre 10 000, soit un vingtième de l'intervalle : le point est donc très près de la graduation, mais avant elle. (4) Sarah a tort : 9 500 se place entre 0 et 10 000, juste avant la graduation 10 000.
 
 *Indice.* 9 500 est-il plus grand ou plus petit que 10 000 ?
+
+---
+
+## `B008` · Division euclidienne posée (diviseur à un chiffre) — CM1, difficulté 3
+
+*Poser une division euclidienne par un nombre à un chiffre, donner le quotient et le reste, et interpréter le reste dans un problème*
+
+> « Poser et effectuer des divisions euclidiennes avec un diviseur à un chiffre » — *Cycle 3, Cours moyen première année, Les quatre opérations*
+
+**EX-B008-D-01** — decouverte, numerique, 75 s
+
+Une maraîchère a 93 radis. Elle fait des bottes de 4 radis. Pose la division euclidienne de 93 par 4. Combien de bottes complètes fait-elle ?
+
+**Réponse :** 23
+
+*Corrigé.* (1) On cherche combien de fois 4 radis dans 93 radis : on divise 93 par 4. (2) On commence par les dizaines : 9 dizaines divisées par 4. Dans la table de 4, 4 × 2 = 8 : on écrit 2 au quotient, au rang des dizaines. Il reste 9 - 8 = 1 dizaine. (3) On abaisse le 3 des unités : 1 dizaine et 3 unités font 13. 4 × 3 = 12 : on écrit 3 au quotient, au rang des unités. Il reste 13 - 12 = 1. (4) Le quotient est 23 et le reste est 1. Le reste 1 est plus petit que le diviseur 4 : la division est terminée. On peut écrire 93 = 4 × 23 + 1. (5) La maraîchère fait 23 bottes complètes, et il lui reste 1 radis.
+
+*Indice.* Commence par les dizaines : combien de fois 4 dans 9 ?
+
+**EX-B008-D-02** — decouverte, qcm, 50 s
+
+Dans la division euclidienne de 58 par 6, quel est le reste ?
+
+- **a.** 9
+  <br>*Erreur visée :* L'élève confond le quotient et le reste : 9 est le nombre de fois que 6 est contenu dans 58, pas ce qui reste.
+- **b.** 10
+  <br>*Erreur visée :* L'élève s'arrête à 6 × 8 = 48 et trouve un reste de 10. Mais 10 est plus grand que le diviseur 6 : on peut encore faire un groupe de 6, le quotient 8 est trop petit.
+- **c.** 4 ✅
+- **d.** 2
+  <br>*Erreur visée :* L'élève se trompe dans la table de 6 : il pense 6 × 9 = 56 et trouve 58 − 56 = 2. Or 6 × 9 = 54.
+
+*Corrigé.* (1) On cherche dans la table de 6 le plus grand résultat qui ne dépasse pas 58 : 6 × 9 = 54, et 6 × 10 = 60 dépasse 58. (2) Le quotient est donc 9. Il reste 58 - 54 = 4. (3) Le reste 4 est plus petit que le diviseur 6 : la division est terminée. Un reste de 6 ou plus voudrait dire qu'on peut encore faire un groupe de 6. (4) 58 = 6 × 9 + 4. Le reste est 4.
+
+*Indice.* Cherche dans la table de 6 le plus grand résultat qui ne dépasse pas 58.
+
+**EX-B008-E-01** — entrainement, numerique, 90 s
+
+Pose la division euclidienne de 625 par 3. Quel est le quotient ?
+
+**Réponse :** 208
+
+*Corrigé.* (1) On commence par les centaines : 6 centaines divisées par 3. 3 × 2 = 6 : on écrit 2 au quotient, au rang des centaines. Il reste 0. (2) On abaisse le 2 des dizaines : 2 dizaines. On ne peut pas faire de groupe de 3 avec 2 : on écrit 0 au quotient, au rang des dizaines. Il reste 2 dizaines. (3) On abaisse le 5 des unités : 2 dizaines et 5 unités font 25. 3 × 8 = 24 : on écrit 8 au quotient, au rang des unités. Il reste 25 - 24 = 1. (4) Le quotient est 208 et le reste est 1, plus petit que le diviseur 3. Sans le 0 des dizaines, on écrirait 28 au lieu de 208 : le quotient serait faux.
+
+*Indice.* Quand le diviseur ne « rentre » pas dans le nombre obtenu en abaissant un chiffre, que faut-il écrire au quotient ?
+
+**EX-B008-E-02** — entrainement, vrai_faux, 60 s
+
+Pour la division euclidienne de 50 par 7, Adam écrit : 50 = 7 × 6 + 8 Vrai ou faux : le quotient est 6 et le reste est 8.
+
+**Réponse :** False
+
+*Corrigé.* (1) L'égalité est juste : 7 × 6 = 42 et 42 + 8 = 50. (2) Mais le reste 8 est plus grand que le diviseur 7 : avec 8, on peut encore faire un groupe de 7. Ce n'est pas la division euclidienne. (3) On fait un groupe de plus : 7 × 7 = 49 et 50 - 49 = 1. Donc 50 = 7 × 7 + 1. (4) Le quotient est 7 et le reste est 1. C'est faux : dans une division euclidienne, le reste est toujours plus petit que le diviseur.
+
+*Indice.* Compare le reste d'Adam au nombre par lequel il divise.
+
+**EX-B008-M-01** — maitrise, numerique, 100 s
+
+Une fleuriste a 254 tulipes. Elle fait des bouquets de 6 tulipes. Combien de tulipes ne seront dans aucun bouquet ?
+
+**Réponse :** 2
+
+*Corrigé.* (1) On fait des groupes de 6 tulipes avec 254 tulipes : on pose la division euclidienne de 254 par 6. La question porte sur les tulipes qui restent, donc sur le reste. (2) Il n'y a que 2 centaines, pas assez pour un groupe de 6 : on commence par 25 dizaines. 6 × 4 = 24 : on écrit 4 au quotient, au rang des dizaines. Il reste 25 - 24 = 1 dizaine. (3) On abaisse le 4 : 1 dizaine et 4 unités font 14. 6 × 2 = 12 : on écrit 2 au quotient, au rang des unités. Il reste 14 - 12 = 2. (4) 254 = 6 × 42 + 2 : la fleuriste fait 42 bouquets, et 2 tulipes ne sont dans aucun bouquet. Le reste 2 est plus petit que 6 : impossible de faire un bouquet de plus.
+
+*Indice.* Pose la division, puis demande-toi si on cherche le quotient ou le reste.
+
+**EX-B008-M-02** — maitrise, qcm, 100 s
+
+135 enfants partent en sortie. Chaque minibus transporte 8 enfants. Combien de minibus faut-il pour emmener tous les enfants ?
+
+- **a.** 17 ✅
+- **b.** 16
+  <br>*Erreur visée :* L'élève donne le quotient sans interpréter le reste : avec 16 minibus, 7 enfants resteraient sans place.
+- **c.** 7
+  <br>*Erreur visée :* L'élève donne le reste : 7 est le nombre d'enfants qui n'ont pas de place dans les minibus pleins, pas un nombre de minibus.
+
+*Corrigé.* (1) On fait des groupes de 8 enfants avec 135 enfants : on pose la division euclidienne de 135 par 8. (2) 13 dizaines divisées par 8 : 8 × 1 = 8, on écrit 1 au quotient, il reste 13 - 8 = 5 dizaines. On abaisse le 5 : 55. 8 × 6 = 48, on écrit 6, il reste 55 - 48 = 7. (3) 135 = 8 × 16 + 7 : 16 minibus sont pleins, et 7 enfants n'ont pas de place. Le reste 7 est bien plus petit que 8. (4) Il faut un minibus de plus pour ces 7 enfants : 16 + 1 = 17. Il faut 17 minibus, même si le dernier n'est pas plein.
+
+*Indice.* Après la division, vérifie que tous les enfants ont une place.
+
+---
+
+## `B012` · Calcul avec parenthèses — CM1, difficulté 3
+
+*Effectuer un calcul contenant une paire de parenthèses, en commençant par le calcul entre parenthèses*
+
+> « Savoir effectuer un calcul contenant des parenthèses » — *Cycle 3, Cours moyen première année, Les quatre opérations*
+
+**EX-B012-D-01** — decouverte, numerique, 60 s
+
+Un car a 75 places. 18 adultes et 29 enfants montent. Calcule 75 - (18 + 29) pour trouver le nombre de places libres.
+
+**Réponse :** 28
+
+*Corrigé.* (1) On commence toujours par le calcul entre parenthèses. Ici, 18 + 29 donne le nombre de voyageurs. (2) 18 + 29 = 47 : 47 personnes sont montées. (3) On retire ensuite les voyageurs des places du car : 75 - 47 = 28. (4) 75 - (18 + 29) = 28. Il reste 28 places libres.
+
+*Indice.* Commence par le calcul entre parenthèses : combien de personnes sont montées en tout ?
+
+**EX-B012-D-02** — decouverte, qcm, 45 s
+
+Un panier contient 4 poires et 5 prunes. Le calcul (4 + 5) × 6 donne le nombre de fruits dans 6 paniers. Combien vaut ce calcul ?
+
+- **a.** 34
+  <br>*Erreur visée :* L'élève ne multiplie par 6 que le nombre écrit juste à côté du signe × : 5 × 6 = 30, puis il ajoute les 4 poires d'un seul panier. Il oublie que la parenthèse regroupe poires et prunes.
+- **b.** 15
+  <br>*Erreur visée :* L'élève additionne les trois nombres, 4 + 5 + 6 = 15, sans voir que 6 est le nombre de paniers par lequel il faut multiplier.
+- **c.** 54 ✅
+
+*Corrigé.* (1) On commence par le calcul entre parenthèses : 4 + 5 = 9. Il y a 9 fruits dans un panier. (2) On multiplie ensuite par le nombre de paniers : 9 × 6 = 54. (3) (4 + 5) × 6 = 54 : la bonne réponse est c. Les parenthèses disent que ce sont les 9 fruits du panier, poires et prunes ensemble, qu'on prend 6 fois.
+
+*Indice.* Combien de fruits y a-t-il dans un seul panier ?
+
+**EX-B012-E-01** — entrainement, numerique, 45 s
+
+Calcule 8 × (35 - 28).
+
+**Réponse :** 56
+
+*Corrigé.* (1) On commence par le calcul entre parenthèses : 35 - 28 = 7. (2) On remplace la parenthèse par son résultat : il reste à calculer 8 × 7. (3) 8 × 7 = 56. Donc 8 × (35 - 28) = 56.
+
+*Indice.* Calcule d'abord ce qui est entre parenthèses.
+
+**EX-B012-E-02** — entrainement, vrai_faux, 75 s
+
+Vrai ou faux : (100 - 40) - 25 et 100 - (40 - 25) donnent le même résultat.
+
+**Réponse :** False
+
+*Corrigé.* (1) Premier calcul, parenthèse d'abord : 100 - 40 = 60, puis 60 - 25 = 35. (2) Second calcul, parenthèse d'abord : 40 - 25 = 15, puis 100 - 15 = 85. (3) On trouve 35 d'un côté et 85 de l'autre : c'est faux. Les nombres et les signes sont les mêmes, mais les parenthèses changent l'ordre des calculs, donc le résultat.
+
+*Indice.* Calcule les deux, en commençant chaque fois par la parenthèse.
+
+**EX-B012-M-01** — maitrise, numerique, 90 s
+
+Trouve le nombre qui manque : 50 - (… + 14) = 21.
+
+**Réponse :** 15
+
+*Corrigé.* (1) La parenthèse forme un seul bloc : on retire de 50 le résultat de (… + 14), et il reste 21. (2) Ce qu'on a retiré de 50 pour obtenir 21, c'est 50 - 21 = 29. La parenthèse vaut donc 29 : … + 14 = 29. (3) Le nombre qui, ajouté à 14, donne 29, c'est 29 - 14 = 15. (4) Vérification, parenthèse d'abord : 15 + 14 = 29, puis 50 - 29 = 21. Le nombre qui manque est 15.
+
+*Indice.* Si 50 moins toute la parenthèse fait 21, combien vaut la parenthèse ?
+
+**EX-B012-M-02** — maitrise, qcm, 75 s
+
+Théo a 200 €. Il achète un vélo à 145 € et un casque à 28 €. Quel calcul donne l'argent qui lui reste ?
+
+- **a.** (200 - 145) + 28
+  <br>*Erreur visée :* L'élève retire bien le prix du vélo, mais ajoute le prix du casque au lieu de le retirer : le mot « et » de l'énoncé lui fait écrire une addition.
+- **b.** 200 - (145 + 28) ✅
+- **c.** 200 - (145 - 28)
+  <br>*Erreur visée :* L'élève a l'idée de retirer les deux achats d'un coup, mais écrit une soustraction entre leurs prix : 145 − 28 n'est pas ce que Théo dépense, c'est l'écart entre les deux prix.
+
+*Corrigé.* (1) Théo paie le vélo et le casque : il dépense 145 + 28. On met cette somme entre parenthèses, car c'est la dépense totale qu'on retire des 200 €. (2) Le calcul est 200 - (145 + 28) : la bonne réponse est b. (3) Vérification : 145 + 28 = 173, puis 200 - 173 = 27. Il reste 27 € à Théo.
+
+*Indice.* Que dépense Théo en tout ? C'est cette dépense qu'on retire de ses 200 €.
+
+---
+
+## `B017` · Estimer le résultat d'une opération — CM1, difficulté 3
+
+*Donner un ordre de grandeur du résultat d'une addition, d'une soustraction ou d'une multiplication en arrondissant les nombres, avant ou sans calcul exact*
+
+> « Estimer le résultat d'une opération » — *Cycle 3, Cours moyen première année, Les quatre opérations*
+
+**EX-B017-D-01** — decouverte, qcm, 40 s
+
+Sans poser l'opération, quel est le résultat le plus proche de 298 + 403 ?
+
+- **a.** 600
+  <br>*Erreur visée :* L'élève ne garde que le chiffre des centaines de chaque nombre, 200 et 400, au lieu de prendre la centaine la plus proche : 298 est bien plus proche de 300 que de 200.
+- **b.** 700 ✅
+- **c.** 7 000
+  <br>*Erreur visée :* L'élève trouve bien 3 + 4 = 7, mais se trompe d'unité : il compte des milliers au lieu de centaines.
+
+*Corrigé.* (1) 298 est tout près de 300 : il ne manque que 2. (2) 403 est tout près de 400 : il y a seulement 3 de plus. (3) On calcule avec ces nombres ronds : 3 centaines et 4 centaines font 7 centaines, 300 + 400 = 700. (4) Le résultat est proche de 700 : la bonne réponse est b. Le calcul exact donne 701.
+
+*Indice.* Remplace chaque nombre par la centaine la plus proche.
+
+**EX-B017-D-02** — decouverte, vrai_faux, 40 s
+
+Mia achète une tablette à 198 € et une housse à 41 €. Vrai ou faux : elle dépense environ 240 €.
+
+**Réponse :** True
+
+*Corrigé.* (1) 198 € est tout près de 200 €. (2) 41 € est tout près de 40 €. (3) 200 + 40 = 240 : Mia dépense environ 240 €. (4) C'est vrai. Le calcul exact donne 239 €, très proche de 240 €.
+
+*Indice.* Arrondis chaque prix à la dizaine la plus proche, puis additionne.
+
+**EX-B017-E-01** — entrainement, qcm, 60 s
+
+Un stade a 9 870 places. 3 120 spectateurs sont venus. Environ combien de places sont restées vides ?
+
+- **a.** 6 000
+  <br>*Erreur visée :* L'élève remplace 9 870 par 9 000 en ne gardant que le chiffre des milliers, alors que 9 870 est bien plus proche de 10 000.
+- **b.** 13 000
+  <br>*Erreur visée :* L'élève additionne au lieu de soustraire : il réunit les places et les spectateurs, alors qu'on cherche les places sans spectateur.
+- **c.** 7 000 ✅
+
+*Corrigé.* (1) Les places vides, ce sont les places du stade moins les places occupées : c'est une soustraction. (2) 9 870 est proche de 10 000 (il manque 130). 3 120 est proche de 3 000. (3) On calcule avec les nombres ronds : 10 milliers moins 3 milliers, il reste 7 milliers, 10 000 - 3 000 = 7 000. (4) Il reste environ 7 000 places vides : la bonne réponse est c. Le calcul exact donne 6 750.
+
+*Indice.* Arrondis chaque nombre au millier le plus proche. Faut-il ajouter ou retirer ?
+
+**EX-B017-E-02** — entrainement, qcm, 60 s
+
+Sans calculer exactement, quel est le résultat le plus proche de 48 × 31 ?
+
+- **a.** 1 500 ✅
+- **b.** 15 000
+  <br>*Erreur visée :* L'élève calcule 5 × 3 = 15, puis ajoute trop de zéros : il en met trois, alors que 50 × 30 n'en a que deux, un par dizaine.
+- **c.** 150
+  <br>*Erreur visée :* L'élève calcule 5 × 3 = 15 et n'ajoute qu'un seul zéro : il oublie que les deux facteurs sont des dizaines.
+
+*Corrigé.* (1) 48 est proche de 50, et 31 est proche de 30. (2) On calcule 50 × 30. 50, c'est 5 fois 10 : 50 × 30 = 5 × 30 × 10. (3) 5 × 30 = 150, car 5 fois 3 dizaines font 15 dizaines. Puis 150 × 10 = 1 500. Donc 50 × 30 = 1 500. (4) Le résultat le plus proche est 1 500 : la bonne réponse est a. Le calcul exact donne 1 488.
+
+*Indice.* Remplace 48 et 31 par des nombres entiers de dizaines.
+
+**EX-B017-M-01** — maitrise, vrai_faux, 90 s
+
+Noé a posé 412 × 19 et a trouvé 4 120. Vrai ou faux : sans refaire le calcul, on peut affirmer que Noé s'est trompé.
+
+**Réponse :** True
+
+*Corrigé.* (1) On estime le résultat : 412 est proche de 400, et 19 est proche de 20. (2) On calcule 400 × 20. 400, c'est 4 fois 100 : 400 × 20 = 4 × 20 × 100. 4 × 20 = 80, car 4 fois 2 dizaines font 8 dizaines, puis 80 × 100 = 8 000. (3) Le vrai résultat est donc proche de 8 000. Or Noé trouve 4 120, à peu près la moitié : son résultat est beaucoup trop petit pour être juste. (4) C'est vrai : Noé s'est trompé. Il a sans doute oublié le 0 de la deuxième ligne : 412 × 9 = 3 708 et 3 708 + 412 = 4 120. Le calcul exact donne 7 828.
+
+*Indice.* Calcule un ordre de grandeur de 412 × 19 avec des nombres ronds, et compare avec 4 120.
+
+**EX-B017-M-02** — maitrise, qcm, 90 s
+
+Pour la classe verte, le car coûte 2 950 € et l'hébergement 3 980 €. Le budget est de 9 000 €. Sans calcul exact, quelle phrase est juste ?
+
+- **a.** Il reste environ 16 000 €.
+  <br>*Erreur visée :* L'élève additionne les trois nombres, 9 000 + 3 000 + 4 000, au lieu de retirer les dépenses du budget.
+- **b.** Il reste environ 2 000 €. ✅
+- **c.** Il reste environ 6 000 €.
+  <br>*Erreur visée :* L'élève ne retire qu'une seule dépense, le car : 9 000 − 3 000 = 6 000. Il oublie l'hébergement.
+
+*Corrigé.* (1) On arrondit chaque dépense au millier le plus proche : 2 950 € est proche de 3 000 €, et 3 980 € est proche de 4 000 €. (2) Dépense totale estimée : 3 000 + 4 000 = 7 000 €. (3) On retire cette dépense du budget : 9 000 - 7 000 = 2 000 €. (4) Il reste environ 2 000 € : la bonne réponse est b. Le calcul exact donne 2 070 €.
+
+*Indice.* Estime d'abord la dépense totale, puis retire-la du budget.
 
 ---
 
@@ -1819,6 +3049,82 @@ Un jardinier plante 24 fleurs en rangées égales. Il veut plus de 4 rangées et
 
 ---
 
+## `B016` · Calcul mental : diviser par 2, 4 ou 8 — CM2, difficulté 3
+
+*Diviser mentalement un nombre entier par 4 ou par 8 en prenant successivement la moitié, et retrouver un quotient exact à l'aide des tables*
+
+> « Diviser un nombre entier par 4 ou par 8 » — *Cycle 3, Cours moyen deuxième année, Le calcul mental*
+
+**EX-B016-D-01** — decouverte, numerique, 45 s
+
+Pour calculer 68 ÷ 4, Léon prend la moitié de 68, puis la moitié du résultat. Quel nombre trouve-t-il ?
+
+**Réponse :** 17
+
+*Corrigé.* (1) Diviser par 4, c'est partager en 4 parts égales : on coupe en deux, puis on coupe chaque moitié en deux. (2) Moitié de 68 : la moitié de 60 est 30, la moitié de 8 est 4. Donc 34. (3) Moitié de 34 : la moitié de 30 est 15, la moitié de 4 est 2. Donc 17. (4) 68 ÷ 4 = 17. On vérifie en doublant deux fois : le double de 17 est 34, le double de 34 est 68.
+
+*Indice.* Pour prendre la moitié de 68, coupe-le en 60 et 8.
+
+**EX-B016-D-02** — decouverte, qcm, 45 s
+
+Quelle méthode permet de calculer 120 ÷ 8 de tête ?
+
+- **a.** Prendre la moitié de 120 deux fois de suite
+  <br>*Erreur visée :* L'élève confond diviser par 8 et diviser par 4 : deux moitiés successives divisent seulement par 4, et donnent 30.
+- **b.** Prendre la moitié de 120 trois fois de suite ✅
+- **c.** Prendre la moitié de 120 huit fois de suite
+  <br>*Erreur visée :* L'élève croit qu'il faut autant de moitiés que le diviseur. Or chaque moitié divise par 2 : huit moitiés diviseraient par bien plus que 8.
+
+*Corrigé.* (1) Une moitié divise par 2. Deux moitiés divisent par 4, car 2 × 2 = 4. Trois moitiés divisent par 8, car 2 × 2 × 2 = 8. (2) On l'applique : moitié de 120, 60 ; moitié de 60, 30 ; moitié de 30, 15. (3) 120 ÷ 8 = 15. La bonne méthode est de prendre la moitié trois fois de suite.
+
+*Indice.* Par combien divise-t-on quand on prend la moitié deux fois de suite ?
+
+**EX-B016-E-01** — entrainement, numerique, 60 s
+
+Calcule de tête 184 ÷ 4.
+
+**Réponse :** 46
+
+*Corrigé.* (1) Diviser par 4, c'est prendre la moitié, puis la moitié du résultat. (2) Moitié de 184 : la moitié de 180 est 90, la moitié de 4 est 2. Donc 92. (3) Moitié de 92 : la moitié de 90 est 45, la moitié de 2 est 1. Donc 46. (4) 184 ÷ 4 = 46. On vérifie : le double de 46 est 92, le double de 92 est 184.
+
+*Indice.* Décompose 184 en 180 et 4 pour en prendre facilement la moitié.
+
+**EX-B016-E-02** — entrainement, vrai_faux, 60 s
+
+Pour calculer 248 ÷ 8, Sam prend des moitiés : 248, puis 124, puis 62. Il répond 62. Sam a-t-il raison ?
+
+**Réponse :** False
+
+*Corrigé.* (1) Sam a pris deux moitiés : 248 donne 124, puis 124 donne 62. Deux moitiés divisent par 4 : il a calculé 248 ÷ 4 = 62. (2) Pour diviser par 8, il faut une troisième moitié : la moitié de 62 est 31. (3) 248 ÷ 8 = 31. Sam a tort : il s'est arrêté une moitié trop tôt.
+
+*Indice.* Combien de moitiés faut-il prendre pour diviser par 8 ?
+
+**EX-B016-M-01** — maitrise, numerique, 75 s
+
+Un ruban de 360 cm est coupé en 8 morceaux de même longueur. Quelle est la longueur d'un morceau, en cm ?
+
+**Réponse :** 45
+
+*Corrigé.* (1) On partage 360 cm en 8 parts égales : on calcule 360 ÷ 8. (2) On prend trois moitiés : la moitié de 360 est 180, la moitié de 180 est 90, la moitié de 90 est 45. (3) Chaque morceau mesure 45 cm. On vérifie en doublant trois fois : 45, 90, 180, 360.
+
+*Indice.* Couper en 8 parts égales, c'est couper en deux trois fois de suite.
+
+**EX-B016-M-02** — maitrise, qcm, 90 s
+
+Nour divise un nombre par 4 et trouve 38. Que trouverait-elle en divisant ce nombre par 8 ?
+
+- **a.** 76
+  <br>*Erreur visée :* L'élève double le résultat, comme si diviser par un nombre plus grand donnait un résultat plus grand. Diviser par 8 donne des parts plus petites que diviser par 4.
+- **b.** 152
+  <br>*Erreur visée :* L'élève remonte jusqu'au nombre de départ, 152, mais oublie de le diviser par 8 : il répond à une autre question.
+- **c.** 19 ✅
+
+*Corrigé.* (1) Diviser par 8, c'est prendre trois moitiés ; diviser par 4, c'est en prendre deux. (2) En trouvant 38, Nour a déjà pris les deux premières moitiés. Il manque une seule moitié. (3) La moitié de 38 : la moitié de 30 est 15, la moitié de 8 est 4. Donc 19. (4) En divisant par 8, Nour trouverait 19. C'est logique : on partage en deux fois plus de parts, donc chaque part est deux fois plus petite.
+
+*Indice.* Diviser par 8, c'est diviser par 4 et faire une étape de plus.
+
+---
+
 ## `A027` · Diviseurs et multiples communs — CM2, difficulté 4
 
 *Déterminer les diviseurs communs à deux entiers, et des multiples communs à deux entiers*
@@ -1995,6 +3301,85 @@ Une recette demande 2/3 de litre de lait. On la fait 3 fois. Combien de lait fau
 *Corrigé.* (1) 3 × 2/3 = 6/3. (2) 6/3 = 2, car 3 tiers font 1 litre et il y a deux fois 3 tiers. (3) Il faut 2 litres. (4) Contrôle de bon sens : une recette demande un peu plus d'un demi-litre, donc trois recettes en demandent un peu plus d'un litre et demi. 2 litres est plausible. Les réponses b et c donnent moins d'un litre, soit moins que pour une seule recette : c'est impossible.
 
 *Indice.* Est-ce que trois recettes peuvent demander moins de lait qu'une seule ?
+
+---
+
+## `B040` · Division euclidienne par un nombre à deux chiffres — 6e, difficulté 4
+
+*Effectuer la division euclidienne d'un entier par un entier inférieur à 100 et l'utiliser pour résoudre un problème (partage ou groupement, interprétation du reste)*
+
+> « Effectuer la division euclidienne d'un nombre entier par un nombre entier inférieur à 100 » — *Cycle 3, classe de 6e, Les nombres entiers et décimaux*
+> « Résoudre des problèmes mettant en jeu des divisions euclidiennes » — *Cycle 3, classe de 6e, Les nombres entiers et décimaux*
+
+**EX-B040-D-01** — decouverte, numerique, 90 s
+
+Pose la division euclidienne de 538 par 24. Quel est le quotient ?
+
+**Réponse :** 22
+
+*Corrigé.* (1) 5 centaines ne suffisent pas pour un groupe de 24 : on commence par 53 dizaines. Le quotient aura donc deux chiffres, les dizaines et les unités. (2) Combien de fois 24 dans 53 ? 24 × 2 = 48 et 24 × 3 = 72 dépasse 53. On écrit 2 au quotient, au rang des dizaines. Il reste 53 - 48 = 5 dizaines. (3) On abaisse le 8 : 5 dizaines et 8 unités font 58. 24 × 2 = 48 et 24 × 3 = 72 dépasse 58. On écrit 2 au rang des unités. Il reste 58 - 48 = 10. (4) Le quotient est 22 et le reste est 10, plus petit que le diviseur 24. Vérification : 24 × 22 + 10 = 528 + 10 = 538.
+
+*Indice.* Pour estimer combien de fois 24 dans 53, arrondis 24 à 25 et pense à 25, 50, 75.
+
+**EX-B040-D-02** — decouverte, qcm, 75 s
+
+Dans la division euclidienne de 300 par 45, quel est le reste ?
+
+- **a.** 30 ✅
+- **b.** 75
+  <br>*Erreur visée :* L'élève prend un quotient trop petit, 5 : 45 × 5 = 225 et 300 - 225 = 75. Mais 75 est plus grand que le diviseur 45 : on peut encore faire un groupe de 45.
+- **c.** 6
+  <br>*Erreur visée :* L'élève confond le reste et le quotient : 6 est le nombre de fois que 45 est contenu dans 300, pas ce qui reste.
+
+*Corrigé.* (1) On cherche le plus grand multiple de 45 qui ne dépasse pas 300. On essaie : 45 × 6 = 270, et 45 × 7 = 315 dépasse 300. (2) Le quotient est 6. Le reste est 300 - 270 = 30. (3) Contrôle : 30 est plus petit que le diviseur 45, la division est bien terminée. 300 = 45 × 6 + 30. Le reste est 30.
+
+*Indice.* Estime d'abord le quotient : combien de fois 45 dans 300, à peu près ?
+
+**EX-B040-E-01** — entrainement, numerique, 120 s
+
+Pose la division euclidienne de 4 917 par 48. Quel est le quotient ?
+
+**Réponse :** 102
+
+*Corrigé.* (1) 4 milliers ne suffisent pas pour un groupe de 48 : on commence par 49 centaines. 48 × 1 = 48 : on écrit 1 au quotient, au rang des centaines. Il reste 49 - 48 = 1 centaine. (2) On abaisse le 1 des dizaines : 1 centaine et 1 dizaine font 11 dizaines. On ne peut pas faire de groupe de 48 avec 11 : on écrit 0 au quotient, au rang des dizaines. (3) On abaisse le 7 des unités : 11 dizaines et 7 unités font 117. 48 × 2 = 96 et 48 × 3 = 144 dépasse 117. On écrit 2 au rang des unités. Il reste 117 - 96 = 21. (4) Le quotient est 102 et le reste est 21, plus petit que 48. Ordre de grandeur : 48 × 100 = 4 800, proche de 4 917. Un quotient proche de 100 est cohérent ; 12, en oubliant le 0, serait bien trop petit.
+
+*Indice.* Le quotient a un chiffre des centaines, un chiffre des dizaines et un chiffre des unités.
+
+**EX-B040-E-02** — entrainement, vrai_faux, 90 s
+
+Inès affirme : dans la division euclidienne de 1 000 par 37, le quotient est 27 et le reste est 1. A-t-elle raison ?
+
+**Réponse :** True
+
+*Corrigé.* (1) On calcule 37 × 27 : 37 × 20 = 740 et 37 × 7 = 259, donc 37 × 27 = 740 + 259 = 999. (2) On ajoute le reste : 999 + 1 = 1 000. L'égalité 1 000 = 37 × 27 + 1 est juste. (3) Le reste 1 est plus petit que le diviseur 37 : c'est bien la division euclidienne. Inès a raison.
+
+*Indice.* Vérifie deux choses : que diviseur × quotient + reste redonne 1 000, et que le reste est plus petit que le diviseur.
+
+**EX-B040-M-01** — maitrise, numerique, 120 s
+
+Un collège emmène 487 élèves au théâtre, en autocars de 52 places. Combien d'autocars faut-il réserver ?
+
+**Réponse :** 10
+
+*Corrigé.* (1) On fait des groupes de 52 élèves avec 487 élèves : on pose la division euclidienne de 487 par 52. (2) 52 × 9 = 468 et 52 × 10 = 520 dépasse 487. Le quotient est 9 ; le reste est 487 - 468 = 19. (3) 487 = 52 × 9 + 19 : 9 autocars pleins emmènent 468 élèves, et 19 élèves n'ont pas de place. (4) Il faut un autocar de plus pour ces 19 élèves : 9 + 1 = 10. Il faut réserver 10 autocars. Le quotient seul ne répond pas à la question : il faut interpréter le reste.
+
+*Indice.* Après la division, vérifie que tous les élèves ont une place.
+
+**EX-B040-M-02** — maitrise, qcm, 150 s
+
+Un chocolatier a 800 chocolats. Il les range dans des boîtes de 36. Combien de chocolats lui manque-t-il pour remplir une boîte de plus ?
+
+- **a.** 8
+  <br>*Erreur visée :* L'élève donne le reste : 8 chocolats sont déjà dans la boîte entamée. La question demande ce qui manque pour la compléter.
+- **b.** 28 ✅
+- **c.** 22
+  <br>*Erreur visée :* L'élève donne le quotient : 22 est le nombre de boîtes pleines, pas un nombre de chocolats.
+- **d.** 23
+  <br>*Erreur visée :* L'élève compte les boîtes nécessaires pour tout ranger, 22 pleines et une entamée : c'est un nombre de boîtes, pas de chocolats.
+
+*Corrigé.* (1) On fait des boîtes de 36 avec 800 chocolats : on pose la division euclidienne de 800 par 36. (2) 8 centaines ne suffisent pas pour un groupe de 36 : on commence par 80 dizaines. 36 × 2 = 72 et 36 × 3 = 108 dépasse 80. On écrit 2 au rang des dizaines, il reste 80 - 72 = 8 dizaines. (3) On abaisse le 0 : 80 unités. 36 × 2 = 72 : on écrit 2 au rang des unités, il reste 80 - 72 = 8. (4) 800 = 36 × 22 + 8 : 22 boîtes sont pleines, et une boîte de plus ne contient que 8 chocolats. (5) Pour la remplir, il manque 36 - 8 = 28 chocolats. La réponse n'est ni le quotient ni le reste : c'est ce qui manque au reste pour atteindre le diviseur.
+
+*Indice.* Pose la division, puis imagine la dernière boîte : combien de chocolats contient-elle, et combien peut-elle en contenir ?
 
 ---
 
