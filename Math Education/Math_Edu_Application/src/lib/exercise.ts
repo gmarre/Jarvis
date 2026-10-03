@@ -126,7 +126,11 @@ export function formatExpected(exercise: Exercise): string {
   }
 
   const unit = exercise.answer.unit
-  return unit ? `${value} ${unit}` : String(value)
+  // Un nombre s'affiche a la francaise : 3.5 ecrit dans le contenu devient 3,5.
+  // Sans cela, le corrige montrait « 3.5 » a un eleve a qui l'on apprend la
+  // virgule (domaine D, nombres decimaux).
+  const shown = typeof value === 'number' ? String(value).replace('.', ',') : String(value)
+  return unit ? `${shown} ${unit}` : shown
 }
 
 const LEVEL_LABELS: Record<Exercise['level'], string> = {

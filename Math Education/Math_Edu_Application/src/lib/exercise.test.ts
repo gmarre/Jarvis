@@ -118,4 +118,23 @@ describe('formatExpected', () => {
       expect(rendu).not.toContain('undefined')
     }
   })
+
+  it('affiche un nombre decimal avec une virgule, unite comprise', () => {
+    const base = byType('numerique')
+    const decimal: Exercise = { ...base, answer: { value: 3.5 } }
+    const avecUnite: Exercise = { ...base, answer: { value: 12.75, unit: '€' } }
+
+    expect(formatExpected(decimal)).toBe('3,5')
+    expect(formatExpected(avecUnite)).toBe('12,75 €')
+  })
+
+  it('accepte la virgule a la saisie d une reponse decimale', () => {
+    const base = byType('numerique')
+    const decimal: Exercise = { ...base, answer: { value: 3.5 } }
+
+    expect(checkAnswer(decimal, '3,5').isCorrect).toBe(true)
+    expect(checkAnswer(decimal, '3.5').isCorrect).toBe(true)
+    expect(checkAnswer(decimal, '3,50').isCorrect).toBe(true)
+    expect(checkAnswer(decimal, '35').isCorrect).toBe(false)
+  })
 })

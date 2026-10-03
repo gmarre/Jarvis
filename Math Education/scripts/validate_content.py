@@ -271,6 +271,19 @@ MAX_DENOMINATEUR = {"CE2": 12, "CM1": 20, "CM2": 60}
 # Niveaux ou toute fraction doit rester inferieure ou egale a 1.
 FRACTIONS_INFERIEURES_A_UN = {"CE1", "CE2"}
 
+# Les fractions decimales echappent au plafond de denominateur : le cycle 3 les
+# etudie pour elles-memes (« Interpreter, representer, ecrire et lire des
+# fractions decimales », CM1 ; « L'etude des nombres decimaux s'etend aux
+# milliemes », CM2). Sans cette exception, aucun exercice de 37/100 au CM1 ne
+# passait (etape 2, domaine D).
+FRACTIONS_DECIMALES = {"CM1": {10, 100}, "CM2": {10, 100, 1000}}
+
+
+def _denominateur_hors_plafond(niveau: str, den: int, max_den: int | None) -> bool:
+    if max_den is None or den <= max_den:
+        return False
+    return den not in FRACTIONS_DECIMALES.get(niveau, set())
+
 _ESPACES_MILLIERS = re.compile(r"(?<=\d)(?:\\,|[\s\u00a0\u202f])(?=\d)")
 _ENTIER = re.compile(r"\d+")
 _FRAC_LATEX = re.compile(r"\\frac\{(\d+)\}\{(\d+)\}")
@@ -341,7 +354,7 @@ def check_validation_tests(dag: dict) -> None:
                     f"Test de positionnement : {s['id']} ({niveau}) utilise le denominateur "
                     f"{den}, hors de {sorted(autorises)} - « {texte} »"
                 )
-            elif max_den is not None and den > max_den:
+            elif _denominateur_hors_plafond(niveau, den, max_den):
                 err(
                     f"Test de positionnement : {s['id']} ({niveau}) utilise le denominateur "
                     f"{den} > {max_den} - « {texte} »"
@@ -382,7 +395,7 @@ def check_champ_numerique(dag: dict, exercises: dict) -> None:
                         f"Champ numerique : {ex['id']} ({niveau}) utilise le denominateur {den} "
                         f"dans {libelle} ; autorises : {sorted(autorises)}"
                     )
-                elif max_den is not None and den > max_den:
+                elif _denominateur_hors_plafond(niveau, den, max_den):
                     signaler(
                         f"Champ numerique : {ex['id']} ({niveau}) utilise le denominateur {den} "
                         f"dans {libelle} ; maximum {max_den}"
@@ -411,6 +424,12 @@ NOTATIONS = {
     # Le signe × est introduit au CE1 avec la multiplication (B005). Sans cette
     # entree, un exercice de CP pouvait l'ecrire sans alerte (releve sur le lot G4).
     "B005": (re.compile(r"×|\\times"), "le signe ×"),
+    # La virgule decimale arrive au CE1, pour les sommes d'argent (D016). Le
+    # motif exige un chiffre de chaque cote : « 3, 5 et 7 » (liste) ne compte pas,
+    # d'ou la consigne de separer les listes de nombres par « ; ».
+    # Dans une formule KaTeX, la virgule s'ecrit {,} (sinon « 3, 5 ») : les deux
+    # ecritures sont reconnues.
+    "D016": (re.compile(r"\d(?:,|\{,\})\d"), "la virgule decimale"),
 }
 
 
