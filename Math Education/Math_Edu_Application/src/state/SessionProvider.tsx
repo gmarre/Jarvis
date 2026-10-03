@@ -1,9 +1,10 @@
 import { useCallback, useEffect, useMemo, useState, type ReactNode } from 'react'
 
-import { repository, useMockData, type Catalog, type Session } from '@/data'
+import { RepositoryError, repository, useMockData, type Catalog, type Session } from '@/data'
 import { applyAttempt, nextReviewDate } from '@/lib/dag'
 import { checkAnswer } from '@/lib/exercise'
 import { newId } from '@/lib/id'
+import { atMinutes } from '@/lib/schedule'
 import type { Exercise } from '@/types/content'
 import type { SkillProgress } from '@/types/domain'
 import {
@@ -11,6 +12,7 @@ import {
   type AnswerResult,
   type SessionStatus,
   type SessionValue,
+  type SyncError,
 } from './session'
 
 // Etat applicatif de la session : profil, progression sur le DAG, tentatives et
@@ -26,11 +28,20 @@ import {
 
 const EMPTY_CATALOG: Catalog = { teachers: [], slots: [] }
 
+/** Met en forme un echec d'ecriture, en distinguant refus de regle et panne. */
+function echec(prefixe: string, cause: unknown): SyncError {
+  const detail = cause instanceof Error ? cause.message : String(cause)
+  return {
+    message: `${prefixe} ${detail}`,
+    refus: cause instanceof RepositoryError && cause.refus,
+  }
+}
+
 export function SessionProvider({ children }: { children: ReactNode }) {
   const [status, setStatus] = useState<SessionStatus>('loading')
   const [session, setSession] = useState<Session | null>(null)
   const [catalog, setCatalog] = useState<Catalog>(EMPTY_CATALOG)
-  const [syncError, setSyncError] = useState<string | null>(null)
+  const [syncError, setSyncError] = useState<SyncError | null>(null)
 
   const dismissSyncError = useCallback(() => setSyncError(null), [])
 
@@ -43,8 +54,7 @@ export function SessionProvider({ children }: { children: ReactNode }) {
    */
   const ecrire = useCallback((operation: () => Promise<unknown>, quoi: string) => {
     void operation().catch((cause: unknown) => {
-      const detail = cause instanceof Error ? cause.message : String(cause)
-      setSyncError(`${quoi} n'a pas pu être enregistré. ${detail}`)
+      setSyncError(echec(`${quoi} n'a pas pu être enregistré.`, cause))
     })
   }, [])
 
@@ -64,8 +74,7 @@ export function SessionProvider({ children }: { children: ReactNode }) {
         setStatus(restauree ? 'authenticated' : 'anonymous')
       } catch (cause: unknown) {
         if (annule) return
-        const detail = cause instanceof Error ? cause.message : String(cause)
-        setSyncError(`Connexion au serveur impossible. ${detail}`)
+        setSyncError(echec('Connexion au serveur impossible.', cause))
         setStatus('anonymous')
       }
     })()
@@ -107,8 +116,14 @@ export function SessionProvider({ children }: { children: ReactNode }) {
     setStatus('loading')
     try {
       const suivante = await repository.signUp(input)
+      if (!suivante) {
+        // Compte cree, adresse a confirmer : personne n'est connecte.
+        setStatus('anonymous')
+        return 'confirmation_requise'
+      }
       setSession(suivante)
       setStatus('authenticated')
+      return 'connecte'
     } catch (cause) {
       setStatus('anonymous')
       throw cause
@@ -226,9 +241,14 @@ export function SessionProvider({ children }: { children: ReactNode }) {
           )
           setCatalog(await repository.getCatalog())
         })
-        .catch((cause: unknown) => {
-          const detail = cause instanceof Error ? cause.message : String(cause)
-          setSyncError(`La réservation a échoué. ${detail}`)
+        .catch(async (cause: unknown) => {
+          setSyncError(echec('La réservation a échoué.', cause))
+          // L'ecran montrait une place libre qui n'existe plus : on relit les
+          // places reelles pour qu'il cesse de proposer ce creneau.
+          if (cause instanceof RepositoryError && cause.refus) {
+            const frais = await repository.getCatalog().catch(() => null)
+            if (frais) setCatalog(frais)
+          }
         })
     },
     [session],
@@ -245,8 +265,7 @@ export function SessionProvider({ children }: { children: ReactNode }) {
         .deleteBooking(bookingId)
         .then(async () => setCatalog(await repository.getCatalog()))
         .catch((cause: unknown) => {
-          const detail = cause instanceof Error ? cause.message : String(cause)
-          setSyncError(`L'annulation a échoué. ${detail}`)
+          setSyncError(echec("L'annulation a échoué.", cause))
         })
     },
     [session],
@@ -264,16 +283,14 @@ export function SessionProvider({ children }: { children: ReactNode }) {
   )
 
   const openSlots = useCallback<SessionValue['openSlots']>(
-    (dayIso, hours, domaines) => {
+    (dayIso, starts, domaines) => {
       const profId = session?.profile.id
       if (!profId) return
 
-      const nouveaux = hours.map((hour) => {
-        const start = new Date(dayIso)
-        start.setHours(hour, 0, 0, 0)
+      const nouveaux = starts.map((minutes) => {
         return {
           prof_id: profId,
-          start_at: start.toISOString(),
+          start_at: atMinutes(new Date(dayIso), minutes).toISOString(),
           duree_min: 90,
           capacite: 3,
           prix_eur: 20,
@@ -285,8 +302,7 @@ export function SessionProvider({ children }: { children: ReactNode }) {
         .createSlots(nouveaux)
         .then(async () => setCatalog(await repository.getCatalog()))
         .catch((cause: unknown) => {
-          const detail = cause instanceof Error ? cause.message : String(cause)
-          setSyncError(`L'ouverture des créneaux a échoué. ${detail}`)
+          setSyncError(echec("L'ouverture des créneaux a échoué.", cause))
         })
     },
     [session],

@@ -54,18 +54,17 @@ function profileFromSignUp(input: SignUpInput): Profile {
     id: `local-${newId()}`,
     role: input.role,
     prenom: input.prenom.trim(),
-    nom: input.nom.trim(),
+    nom: '',
     email: input.email.trim(),
-    niveau_scolaire: input.niveau_scolaire,
-    date_naissance: input.date_naissance,
-    email_parent: input.email_parent?.trim() || null,
-    // Le consentement n'est pas acquis a la case cochee : le parent doit
-    // confirmer par email. Tant qu'il ne l'a pas fait, la date reste nulle et
-    // l'application affiche le bandeau "en attente".
+    // Comme en production : l'inscription ne porte que l'identite, le reste se
+    // complete sur /bienvenue.
+    niveau_scolaire: null,
+    date_naissance: null,
+    email_parent: null,
     consentement_parental_at: null,
     cree_le: now,
     partage_progression_prof: true,
-    resume_hebdo_parent: Boolean(input.email_parent),
+    resume_hebdo_parent: false,
     rappels_revision: true,
     abonnement: null,
   }
@@ -240,7 +239,7 @@ export const mockRepository: DataRepository = {
   async createBooking(slotId, skillId) {
     const session = exigerSession()
     if (session.bookings.some((b) => b.slot_id === slotId)) {
-      throw new RepositoryError('Ce creneau est deja reserve.')
+      throw new RepositoryError('Tu as déjà réservé ce créneau.', undefined, true)
     }
 
     const cat = catalogueCourant()
@@ -248,7 +247,11 @@ export const mockRepository: DataRepository = {
     if (!slot) throw new RepositoryError('Creneau introuvable.')
     // Meme refus que le trigger SQL : la capacite est une regle, pas un affichage.
     if (slot.places_prises >= slot.capacite) {
-      throw new RepositoryError('Creneau complet.')
+      throw new RepositoryError(
+        'Ce créneau est complet : la dernière place vient d’être prise.',
+        undefined,
+        true,
+      )
     }
 
     const booking: Booking = {

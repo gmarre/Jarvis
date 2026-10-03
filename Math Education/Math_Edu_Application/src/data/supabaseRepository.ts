@@ -122,8 +122,19 @@ function erreur(operation: string, cause: PostgrestError | Error | null): Reposi
       cause,
     )
   }
-  if (code === '23505' || cause.message?.includes('Creneau complet')) {
-    return new RepositoryError('Ce creneau est complet.', cause)
+  // Refus de regle, pas des pannes : le message dit ce qui s'est passe, sans
+  // renvoyer l'eleve verifier une connexion qui fonctionne tres bien.
+  if (cause.message?.includes('Creneau complet')) {
+    return new RepositoryError(
+      'Ce créneau est complet : la dernière place vient d’être prise.',
+      cause,
+      true,
+    )
+  }
+  // Seule la reservation a une contrainte d'unicite qui parle a l'eleve
+  // (slot_id, eleve_id). Ailleurs, un doublon reste une erreur technique.
+  if (code === '23505' && operation === 'Reservation') {
+    return new RepositoryError('Tu as déjà réservé ce créneau.', cause, true)
   }
   if (code === '23503') {
     return new RepositoryError(`${operation} : reference introuvable.`, cause)
@@ -258,35 +269,26 @@ export const supabaseRepository: DataRepository = {
       email: input.email.trim(),
       password: input.motDePasse,
       options: {
-        // Lues par le trigger creer_profil_pour_nouvel_utilisateur.
-        data: { role: input.role, prenom: input.prenom.trim(), nom: input.nom.trim() },
+        // Lues par le trigger creer_profil_pour_nouvel_utilisateur. Rien d'autre :
+        // ces metadonnees finissent dans le JWT.
+        data: { role: input.role, prenom: input.prenom.trim() },
+        // Le lien de confirmation ramene a la racine, d'ou RequireAuth oriente
+        // vers /bienvenue tant que le profil est incomplet.
+        emailRedirectTo: `${window.location.origin}/`,
       },
     })
     if (error) throw erreur('Creation du compte', error)
-    if (!data.user) throw new RepositoryError('Compte cree sans utilisateur.')
 
-    // Le trigger a pose le profil avec role et prenom. Le reste (niveau, date de
-    // naissance, email parent) n'est pas dans les metadonnees d'authentification
-    // et ne doit pas y etre : on le met dans la table applicative.
-    const { data: profil, error: erreurProfil } = await db
-      .from('profiles')
-      .update({
-        niveau_scolaire: input.niveau_scolaire,
-        date_naissance: input.date_naissance,
-        email_parent: input.email_parent?.trim() || null,
-        resume_hebdo_parent: Boolean(input.email_parent),
-        // Le consentement n'est PAS acquis parce que la case est cochee. Le
-        // parent doit confirmer par email (sprint 2b). La date reste nulle.
-      })
-      .eq('id', data.user.id)
-      .select('*')
-      .single()
-
-    if (erreurProfil) throw erreur('Enregistrement du profil', erreurProfil)
+    // Pas de session : la confirmation d'email est active, le compte attend le
+    // clic sur le lien. Aucune ecriture n'est possible d'ici, le RLS la
+    // filtrerait. C'est ce cas qui faisait echouer l'inscription en recette.
+    // Supabase repond de la meme facon quand l'adresse existe deja, pour ne pas
+    // reveler quels comptes existent : l'ecran ne doit donc rien affirmer de plus.
+    if (!data.session || !data.user) return null
 
     const session = await chargerSession(data.user.id)
     if (!session) throw new RepositoryError('Profil introuvable apres inscription.')
-    return { ...session, profile: versProfil(profil as LigneProfil) }
+    return session
   },
 
   async signOut() {

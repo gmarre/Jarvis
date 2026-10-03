@@ -47,7 +47,8 @@ function RequireAuth({ roles, children }: { roles?: UserRole[]; children: ReactN
   if (status === 'anonymous' || !session) {
     return <Navigate to="/connexion" replace state={{ from: location.pathname }} />
   }
-  // Un compte cree par Google arrive sans niveau scolaire ni date de naissance :
+  // Un compte eleve arrive sans niveau scolaire ni date de naissance, qu'il
+  // vienne de Google ou de l'inscription par email :
   // on ne peut ni construire son parcours, ni appliquer la regle des 15 ans.
   // Tout le reste attend.
   if (!isProfileComplete(session.profile)) {

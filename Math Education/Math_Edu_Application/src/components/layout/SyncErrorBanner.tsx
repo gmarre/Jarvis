@@ -31,10 +31,15 @@ export function SyncErrorBanner() {
           !
         </span>
         <div className="min-w-0 flex-1">
-          <p className="text-[13px] font-semibold leading-snug text-wrong-600">{syncError}</p>
+          <p className="text-[13px] font-semibold leading-snug text-wrong-600">
+            {syncError.message}
+          </p>
           <p className="mt-1 text-[11.5px] leading-relaxed text-ink-muted">
-            Vérifie ta connexion, puis recharge la page pour repartir de ce qui est réellement
-            enregistré.
+            {/* Un refus de regle n'est pas une panne : envoyer l'eleve verifier
+                son wifi lui ferait chercher un probleme qui n'existe pas. */}
+            {syncError.refus
+              ? "Rien n'a été enregistré, et ta connexion n'est pas en cause."
+              : 'Vérifie ta connexion, puis recharge la page pour repartir de ce qui est réellement enregistré.'}
           </p>
         </div>
         <button

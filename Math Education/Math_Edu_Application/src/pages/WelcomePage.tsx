@@ -12,16 +12,17 @@ import { useSession } from '@/state/session'
 import { SCHOOL_LEVELS, type SchoolLevel } from '@/types/content'
 import type { Profile, UserRole } from '@/types/domain'
 
-// Ecran de complementation de profil, apres une premiere connexion Google.
+// Ecran de complementation de profil, a la premiere connexion d'un eleve.
 //
-// Pourquoi il existe : Google ne fournit que l'identite (email, prenom). Ni le
+// Pourquoi il existe : Google ne fournit que l'identite (email, prenom), et
+// l'inscription par email ne demande pas davantage (voir LoginPage). Ni le
 // niveau scolaire, ni la date de naissance, ni l'email d'un parent. Sans cet
 // ecran, impossible de construire un parcours, et surtout impossible d'appliquer
-// la regle des 15 ans a un compte cree par OAuth. Ce n'est donc pas un ecran de
-// confort, c'est la condition pour que la connexion Google soit legale.
+// la regle des 15 ans. Ce n'est donc pas un ecran de confort, c'est la condition
+// pour que l'inscription soit legale.
 //
-// La regle d'age est partagee avec l'inscription classique via lib/age.ts : deux
-// copies finiraient par diverger.
+// C'est le seul endroit ou la regle des 15 ans est appliquee a la creation d'un
+// compte : une seule implementation, qui ne peut pas diverger.
 
 export default function WelcomePage() {
   const { status, session } = useSession()
@@ -42,7 +43,7 @@ export default function WelcomePage() {
 function WelcomeForm({ profile }: { profile: Profile }) {
   const { completeProfile } = useSession()
 
-  const [role, setRole] = useState<UserRole>('eleve')
+  const [role, setRole] = useState<UserRole>(profile.role)
   const [prenom, setPrenom] = useState(profile.prenom)
   // Le nom de famille n'est pas demande ici : Google le fournit quand il le
   // connait, et il n'est pas necessaire au parcours. Minimisation des donnees.
@@ -92,7 +93,9 @@ function WelcomeForm({ profile }: { profile: Profile }) {
     void completeProfile({
       role,
       prenom,
-      nom: nom || prenom,
+      // Un nom inconnu reste vide. Le remplacer par le prenom affichait
+      // « Gauthier G. » (recette du 3 octobre 2026).
+      nom,
       niveau_scolaire: niveau || null,
       date_naissance: naissance || null,
       email_parent: needsConsent ? emailParent : null,

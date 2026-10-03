@@ -1,16 +1,24 @@
 import { useMemo, useState } from 'react'
 
-import { domains, getSkill } from '@/content'
+import { domains } from '@/content'
 import { cn } from '@/lib/cn'
-import { addDays, formatDateShort, formatWeekday, isSameDay, startOfWeek } from '@/lib/format'
+import { formatDateShort, formatWeekday, isSameDay } from '@/lib/format'
+import {
+  formatMinutes,
+  isPastStart,
+  minutesOf,
+  publishableDays,
+  startBlock,
+  startTimes,
+  type StartBlock,
+} from '@/lib/schedule'
 import { AppShell, PageBody, PageHeader } from '@/components/layout/AppShell'
 import { Badge } from '@/components/ui/Badge'
 import { Button } from '@/components/ui/Button'
 import { Card, CardTitle, SectionLabel } from '@/components/ui/Card'
 import { Field, Select } from '@/components/ui/Field'
-import { Avatar, Level, Notice } from '@/components/ui/Misc'
-import { IconCheck, IconPlus } from '@/components/ui/icons'
-import { suiviEleves } from '@/mocks/mockData'
+import { Notice } from '@/components/ui/Misc'
+import { IconCheck, IconClose, IconPlus } from '@/components/ui/icons'
 import { useSession } from '@/state/session'
 
 // Ecran 7, vue professeur (maquette 1n, panneau de droite).
@@ -19,24 +27,32 @@ import { useSession } from '@/state/session'
 // domaines qu'il couvre, et l'application les propose en priorite aux eleves
 // dont la lacune racine tombe dans ces domaines.
 
-const HOURS = [14, 15, 16, 17, 18]
+// Le professeur choisit son debut au quart d'heure, de 8h a 20h. La maquette
+// imposait des heures pleines de 14h a 18h : ni matin, ni 17h30.
+const STARTS = startTimes()
 const DAYS_AHEAD = 10
 const DUREE_MIN = 90
 const PRIX_EUR = 20
+
+const BLOCK_LABEL: Record<StartBlock, string> = {
+  passé: 'passé',
+  chevauche: 'chevauche un autre créneau',
+}
 
 export default function TeacherSchedulePage() {
   const { session, catalog, openSlots } = useSession()
   const profile = session?.profile
 
-  const [dayOffset, setDayOffset] = useState(3)
-  const [selectedHours, setSelectedHours] = useState<number[]>([14, 16])
+  // Demain par defaut : aujourd'hui, une partie de la journee est deja passee.
+  const [dayOffset, setDayOffset] = useState(1)
+  /** Debuts choisis, en minutes depuis minuit, pas encore publies. */
+  const [selectedStarts, setSelectedStarts] = useState<number[]>([])
+  const [draftStart, setDraftStart] = useState<number | null>(null)
   const [selectedDomains, setSelectedDomains] = useState<string[]>(['C', 'A'])
-  const [published, setPublished] = useState(false)
+  const [published, setPublished] = useState<number | null>(null)
 
-  const days = useMemo(() => {
-    const monday = startOfWeek(new Date())
-    return Array.from({ length: DAYS_AHEAD }, (_, index) => addDays(monday, index))
-  }, [])
+  // A partir d'aujourd'hui : un professeur ne publie pas sur un jour passe.
+  const days = useMemo(() => publishableDays(new Date(), DAYS_AHEAD), [])
 
   const day = days[dayOffset] ?? days[0]
 
@@ -49,10 +65,35 @@ export default function TeacherSchedulePage() {
 
   const daySlots = mySlots.filter((slot) => isSameDay(new Date(slot.start_at), day))
 
-  const toggleHour = (hour: number) =>
-    setSelectedHours((current) =>
-      current.includes(hour) ? current.filter((h) => h !== hour) : [...current, hour].sort(),
-    )
+  const openStarts = daySlots.map((slot) => minutesOf(new Date(slot.start_at)))
+
+  // Un debut est bloque s'il est passe, ou s'il chevauche un creneau deja ouvert
+  // ou deja choisi : un professeur ne donne pas deux cours a la fois.
+  const blockOf = (minutes: number) =>
+    startBlock(day, minutes, new Date(), [...openStarts, ...selectedStarts], DUREE_MIN)
+
+  const firstFree = STARTS.find((minutes) => blockOf(minutes) === null) ?? null
+  const draft = draftStart !== null && blockOf(draftStart) === null ? draftStart : firstFree
+
+  // Le temps passe pendant que le formulaire est ouvert : un debut choisi a 9h50
+  // pour 10h ne part plus a 10h05.
+  const startsToPublish = selectedStarts.filter((minutes) => !isPastStart(day, minutes, new Date()))
+
+  const changeDay = (offset: number) => {
+    setDayOffset(offset)
+    // Les debuts choisis valaient pour l'autre jour, ses creneaux et son heure.
+    setSelectedStarts([])
+    setDraftStart(null)
+  }
+
+  const addStart = () => {
+    if (draft === null) return
+    setSelectedStarts((current) => [...current, draft].sort((a, b) => a - b))
+    setDraftStart(null)
+  }
+
+  const removeStart = (minutes: number) =>
+    setSelectedStarts((current) => current.filter((m) => m !== minutes))
 
   const toggleDomain = (id: string) =>
     setSelectedDomains((current) =>
@@ -60,10 +101,11 @@ export default function TeacherSchedulePage() {
     )
 
   const publish = () => {
-    if (selectedHours.length === 0) return
-    openSlots(day.toISOString(), selectedHours, selectedDomains)
-    setPublished(true)
-    window.setTimeout(() => setPublished(false), 4000)
+    if (startsToPublish.length === 0) return
+    openSlots(day.toISOString(), startsToPublish, selectedDomains)
+    setPublished(startsToPublish.length)
+    setSelectedStarts([])
+    window.setTimeout(() => setPublished(null), 4000)
   }
 
   return (
@@ -74,10 +116,10 @@ export default function TeacherSchedulePage() {
           subtitle="Les élèves dont les lacunes correspondent à tes domaines les verront en priorité. 20 € pour 1h30, jusqu'à 3 élèves."
         />
 
-        {published && (
+        {published !== null && (
           <Notice tone="mastered" className="mb-5">
-            {selectedHours.length} créneau{selectedHours.length > 1 ? 'x' : ''} publié
-            {selectedHours.length > 1 ? 's' : ''} pour le {formatWeekday(day.toISOString())}{' '}
+            {published} créneau{published > 1 ? 'x' : ''} publié
+            {published > 1 ? 's' : ''} pour le {formatWeekday(day.toISOString())}{' '}
             {formatDateShort(day.toISOString())}.
           </Notice>
         )}
@@ -89,7 +131,7 @@ export default function TeacherSchedulePage() {
                 <Select
                   id="jour"
                   value={dayOffset}
-                  onChange={(event) => setDayOffset(Number(event.target.value))}
+                  onChange={(event) => changeDay(Number(event.target.value))}
                 >
                   {days.map((candidate, index) => (
                     <option key={candidate.toISOString()} value={index}>
@@ -106,32 +148,59 @@ export default function TeacherSchedulePage() {
               </Field>
             </div>
 
-            <SectionLabel className="mb-2.5">Heures</SectionLabel>
+            <div className="mb-3 flex items-end gap-2">
+              <Field label="Heure de début" htmlFor="debut" className="flex-1">
+                <Select
+                  id="debut"
+                  value={draft ?? ''}
+                  disabled={draft === null}
+                  onChange={(event) => setDraftStart(Number(event.target.value))}
+                >
+                  {draft === null && <option value="">Plus aucun horaire ce jour-là</option>}
+                  {STARTS.map((minutes) => {
+                    const block = blockOf(minutes)
+                    const reason = openStarts.includes(minutes)
+                      ? 'déjà ouvert'
+                      : selectedStarts.includes(minutes)
+                        ? 'déjà choisi'
+                        : block && BLOCK_LABEL[block]
+                    return (
+                      <option key={minutes} value={minutes} disabled={block !== null}>
+                        {formatMinutes(minutes)} – {formatMinutes(minutes + DUREE_MIN)}
+                        {reason && ` · ${reason}`}
+                      </option>
+                    )
+                  })}
+                </Select>
+              </Field>
+              {draft !== null && (
+                <Button variant="secondary" size="lg" onClick={addStart} className="shrink-0">
+                  <IconPlus size={15} />
+                  Ajouter
+                </Button>
+              )}
+            </div>
+
             <div className="mb-5 flex flex-wrap gap-2">
-              {HOURS.map((hour) => {
-                const alreadyOpen = daySlots.some(
-                  (slot) => new Date(slot.start_at).getHours() === hour,
-                )
-                const active = selectedHours.includes(hour)
-                return (
+              {selectedStarts.length === 0 ? (
+                <p className="text-[12px] leading-relaxed text-ink-faint">
+                  Ajoute un ou plusieurs horaires, au quart d'heure. Deux cours d'une même
+                  journée ne peuvent pas se chevaucher.
+                </p>
+              ) : (
+                selectedStarts.map((minutes) => (
                   <button
-                    key={hour}
+                    key={minutes}
                     type="button"
-                    onClick={() => toggleHour(hour)}
-                    disabled={alreadyOpen}
-                    className={cn(
-                      'min-h-[42px] rounded-[10px] border px-4 text-[12.5px] font-semibold transition',
-                      alreadyOpen
-                        ? 'cursor-not-allowed border-line bg-muted text-ink-faint'
-                        : active
-                          ? 'border-transparent bg-accent text-white'
-                          : 'border-line bg-surface text-ink-muted hover:bg-muted',
-                    )}
+                    onClick={() => removeStart(minutes)}
+                    aria-label={`Retirer ${formatMinutes(minutes)}`}
+                    className="inline-flex min-h-[44px] items-center gap-2 rounded-[10px] bg-accent px-4 text-[12.5px] font-semibold text-white transition hover:bg-accent-600"
                   >
-                    {hour}h{alreadyOpen && ' · ouvert'}
+                    {formatMinutes(minutes)} – {formatMinutes(minutes + DUREE_MIN)}
+                    <IconClose size={13} />
                   </button>
-                )
-              })}
+                ))
+              )}
             </div>
 
             <SectionLabel className="mb-2.5">Domaines couverts</SectionLabel>
@@ -173,11 +242,11 @@ export default function TeacherSchedulePage() {
               fullWidth
               size="lg"
               onClick={publish}
-              disabled={selectedHours.length === 0}
+              disabled={startsToPublish.length === 0}
             >
-              {selectedHours.length === 0
-                ? 'Choisis au moins une heure'
-                : `Publier ${selectedHours.length} créneau${selectedHours.length > 1 ? 'x' : ''}`}
+              {startsToPublish.length === 0
+                ? 'Ajoute au moins un horaire'
+                : `Publier ${startsToPublish.length} créneau${startsToPublish.length > 1 ? 'x' : ''}`}
             </Button>
           </Card>
 
@@ -201,7 +270,8 @@ export default function TeacherSchedulePage() {
                       >
                         <div>
                           <p className="text-[13px] font-semibold text-ink">
-                            {new Date(slot.start_at).getHours()}h · 1h30
+                            {formatMinutes(minutesOf(new Date(slot.start_at)))} –{' '}
+                            {formatMinutes(minutesOf(new Date(slot.start_at)) + slot.duree_min)}
                           </p>
                           <p className="text-[11.5px] text-ink-faint">
                             {slot.domaines
@@ -219,42 +289,9 @@ export default function TeacherSchedulePage() {
               )}
             </Card>
 
-            <Card>
-              <CardTitle>Élèves à suivre</CardTitle>
-              <ul className="flex flex-col gap-2.5">
-                {suiviEleves.map((eleve) => {
-                  const skill = getSkill(eleve.lacune_skill_id)
-                  return (
-                    <li
-                      key={eleve.prenom}
-                      className="flex items-center gap-3 rounded-xl border border-divider px-3.5 py-3"
-                    >
-                      <Avatar initials={eleve.prenom.slice(0, 1) + eleve.prenom.slice(-2, -1)} size="sm" />
-                      <div className="min-w-0 flex-1">
-                        <p className="truncate text-[13px] font-semibold text-ink">
-                          {eleve.prenom} · <Level value={eleve.niveau as never} />
-                        </p>
-                        <p className="truncate text-[11.5px] text-ink-faint">
-                          {skill ? (
-                            <>
-                              Lacune racine : {skill.label.toLowerCase()} (
-                              <Level value={skill.school_level} />)
-                            </>
-                          ) : (
-                            'Diagnostic en cours'
-                          )}
-                        </p>
-                      </div>
-                    </li>
-                  )
-                })}
-              </ul>
-              <p className="mt-4 border-t border-divider pt-3.5 text-[11px] leading-relaxed text-ink-faint">
-                Tu vois la progression d'un élève uniquement s'il a autorisé le partage dans son
-                profil. La fiche détaillée avec son graphe de compétences arrive avec l'espace
-                professeur complet.
-              </p>
-            </Card>
+            {/* La carte « Élèves à suivre » est retiree jusqu'a l'espace professeur
+                v1 : elle montrait des eleves factices (mocks/mockData) a un vrai
+                professeur. Mieux vaut absent que faux. */}
           </div>
         </div>
       </PageBody>

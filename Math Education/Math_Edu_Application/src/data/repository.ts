@@ -38,19 +38,25 @@ export interface Session {
   attempts: ExerciseAttempt[]
 }
 
+/**
+ * Inscription par email : l'identite seulement.
+ *
+ * Niveau scolaire, date de naissance et email parent ne sont PAS demandes ici.
+ * Quand la confirmation d'email est active, `auth.signUp` cree le compte sans
+ * ouvrir de session : toute ecriture dans `profiles` partirait alors sans JWT,
+ * filtree par le RLS. Ces champs sont donc completes sur /bienvenue, une fois
+ * connecte, exactement comme pour un compte Google. Une seule implementation de
+ * la regle des 15 ans, et aucune date de naissance de mineur dans les
+ * metadonnees d'authentification, que Supabase recopie dans le JWT.
+ */
 export interface SignUpInput {
   role: UserRole
   prenom: string
-  nom: string
   email: string
   motDePasse: string
-  niveau_scolaire: SchoolLevel | null
-  date_naissance: string | null
-  email_parent: string | null
-  consentement_parental: boolean
 }
 
-/** Champs que l'ecran /bienvenue complete apres une connexion Google. */
+/** Champs que l'ecran /bienvenue complete apres la premiere connexion. */
 export interface ProfileCompletion {
   role: UserRole
   prenom: string
@@ -94,9 +100,14 @@ export interface DataRepository {
   /** Redirige vers Google. Le retour repasse par `onAuthChange`. */
   signInWithGoogle(): Promise<void>
   signInWithPassword(email: string, motDePasse: string): Promise<Session>
-  signUp(input: SignUpInput): Promise<Session>
+  /**
+   * Cree le compte. Rend la session ouverte, ou `null` quand le compte attend la
+   * confirmation de son adresse : aucune session n'existe alors, et l'ecran doit
+   * le dire au lieu de faire comme si l'utilisateur etait connecte.
+   */
+  signUp(input: SignUpInput): Promise<Session | null>
   signOut(): Promise<void>
-  /** Complete un profil cree par OAuth (ecran /bienvenue). */
+  /** Complete un profil cree par OAuth ou par email (ecran /bienvenue). */
   completeProfile(completion: ProfileCompletion): Promise<Profile>
 
   // --- Mutations, une par intention --------------------------------------
@@ -128,6 +139,12 @@ export class RepositoryError extends Error {
   constructor(
     message: string,
     readonly cause?: unknown,
+    /**
+     * Vrai quand la base a refuse au nom d'une regle (creneau complet, deja
+     * reserve), et non a cause d'une panne. L'ecran ne doit pas alors renvoyer
+     * l'eleve verifier sa connexion : il n'y a rien a reparer de son cote.
+     */
+    readonly refus = false,
   ) {
     super(message)
     this.name = 'RepositoryError'

@@ -12,6 +12,7 @@ import {
   isSameDay,
   startOfWeek,
 } from '@/lib/format'
+import { dayLabel } from '@/lib/schedule'
 import { AppShell, PageBody, PageHeader } from '@/components/layout/AppShell'
 import { Badge } from '@/components/ui/Badge'
 import { Button } from '@/components/ui/Button'
@@ -203,12 +204,10 @@ export default function SchedulePage() {
               >
                 <div />
                 {days.map((day) => {
-                  const count = weekSlots.filter(
-                    (item) => isSameDay(new Date(item.slot.start_at), day) && !item.isFull,
-                  ).length
-                  const hasBooking = weekSlots.some(
-                    (item) => isSameDay(new Date(item.slot.start_at), day) && item.isBooked,
+                  const ofDay = weekSlots.filter((item) =>
+                    isSameDay(new Date(item.slot.start_at), day),
                   )
+                  const hasBooking = ofDay.some((item) => item.isBooked)
                   return (
                     <div
                       key={day.toISOString()}
@@ -231,7 +230,7 @@ export default function SchedulePage() {
                           hasBooking ? 'text-accent' : 'text-ink-faint',
                         )}
                       >
-                        {hasBooking ? 'ton cours' : count === 0 ? 'complet' : `${count} créneaux`}
+                        {hasBooking ? 'ton cours' : dayLabel(ofDay)}
                       </p>
                     </div>
                   )
@@ -242,7 +241,8 @@ export default function SchedulePage() {
                 className="grid"
                 style={{
                   gridTemplateColumns: `64px repeat(${DAYS_SHOWN}, 1fr)`,
-                  gridTemplateRows: `repeat(${hours.length}, 92px)`,
+                  // Une ligne grandit quand plusieurs creneaux tombent dans la meme heure.
+                  gridTemplateRows: `repeat(${hours.length}, minmax(92px, auto))`,
                 }}
               >
                 {hours.map((hour, rowIndex) => (
@@ -257,27 +257,33 @@ export default function SchedulePage() {
 
                 {hours.map((hour, rowIndex) =>
                   days.map((day, columnIndex) => {
-                    const item = weekSlots.find((candidate) => {
-                      const start = new Date(candidate.slot.start_at)
-                      return isSameDay(start, day) && start.getHours() === hour
-                    })
+                    // Tous les creneaux qui commencent dans cette heure, pas le
+                    // premier : avec des debuts au quart d'heure, deux profs a 9h
+                    // et 9h30 se masquaient l'un l'autre.
+                    const items = weekSlots
+                      .filter((candidate) => {
+                        const start = new Date(candidate.slot.start_at)
+                        return isSameDay(start, day) && start.getHours() === hour
+                      })
+                      .sort((a, b) => a.slot.start_at.localeCompare(b.slot.start_at))
 
                     return (
                       <div
                         key={`${hour}-${day.toISOString()}`}
                         className={cn(
-                          'border-l border-divider p-1.5',
+                          'flex flex-col gap-1.5 border-l border-divider p-1.5',
                           rowIndex < hours.length - 1 && 'border-b border-[#F5F3EE]',
                         )}
                         style={{ gridColumn: columnIndex + 2, gridRow: rowIndex + 1 }}
                       >
-                        {item && (
+                        {items.map((item) => (
                           <SlotCell
+                            key={item.slot.id}
                             item={item}
                             selected={selected?.slot.id === item.slot.id}
                             onSelect={() => setSelectedId(item.slot.id)}
                           />
-                        )}
+                        ))}
                       </div>
                     )
                   }),
@@ -488,7 +494,7 @@ function SlotCell({
 }) {
   if (item.isFull && !item.isBooked) {
     return (
-      <div className="flex h-full flex-col justify-center rounded-[10px] border border-dashed border-[#D7D3C8] bg-muted px-2.5 py-2">
+      <div className="flex min-h-[44px] flex-1 flex-col justify-center rounded-[10px] border border-dashed border-[#D7D3C8] bg-muted px-2.5 py-2">
         <p className="text-[12px] font-semibold leading-tight text-ink-faint">Complet</p>
         <p className="truncate text-[10.5px] text-ink-faint">{item.teacher.nom_court}</p>
       </div>
@@ -500,7 +506,7 @@ function SlotCell({
       type="button"
       onClick={onSelect}
       className={cn(
-        'flex h-full w-full flex-col justify-center rounded-[10px] border px-2.5 py-2 text-left transition',
+        'flex min-h-[44px] w-full flex-1 flex-col justify-center rounded-[10px] border px-2.5 py-2 text-left transition',
         item.isBooked
           ? 'border-transparent bg-accent'
           : selected

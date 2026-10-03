@@ -19,6 +19,18 @@ export interface AnswerResult extends Correction {
   descendTo: string[]
 }
 
+export interface SyncError {
+  message: string
+  /**
+   * La base a refuse au nom d'une regle, rien n'est en panne. Le bandeau ne
+   * conseille alors pas de verifier la connexion.
+   */
+  refus: boolean
+}
+
+/** Issue d'une inscription : connecte tout de suite, ou en attente du lien. */
+export type SignUpOutcome = 'connecte' | 'confirmation_requise'
+
 export interface SessionValue {
   status: SessionStatus
   session: Session | null
@@ -30,16 +42,16 @@ export interface SessionValue {
    * echoue, l'eleve doit l'apprendre : il a peut-etre travaille pour rien. On
    * ne corrige jamais silencieusement.
    */
-  syncError: string | null
+  syncError: SyncError | null
   dismissSyncError: () => void
 
   // --- Authentification ---------------------------------------------------
 
   signInWithGoogle: () => Promise<void>
   signInWithPassword: (email: string, motDePasse: string) => Promise<void>
-  signUp: (input: SignUpInput) => Promise<void>
+  signUp: (input: SignUpInput) => Promise<SignUpOutcome>
   signOut: () => Promise<void>
-  /** Complete un profil cree par OAuth (ecran /bienvenue). */
+  /** Complete un profil cree par OAuth ou par email (ecran /bienvenue). */
   completeProfile: (completion: ProfileCompletion) => Promise<void>
   /** Vrai quand l'application tourne sur donnees factices. */
   isDemo: boolean
@@ -55,8 +67,11 @@ export interface SessionValue {
   bookSlot: (slotId: string, skillId: string | null) => void
   cancelBooking: (bookingId: string) => void
   updateProfile: (patch: Partial<Profile>) => void
-  /** Ouverture de creneaux par un professeur (ecran 7, vue prof). */
-  openSlots: (dayIso: string, hours: number[], domaines: string[]) => void
+  /**
+   * Ouverture de creneaux par un professeur (ecran 7, vue prof). `starts` en
+   * minutes depuis minuit, au quart d'heure : 555 vaut 9h15.
+   */
+  openSlots: (dayIso: string, starts: number[], domaines: string[]) => void
 }
 
 export const SessionContext = createContext<SessionValue | null>(null)

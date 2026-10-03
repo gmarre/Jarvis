@@ -1,48 +1,40 @@
-import { useMemo, useState, type FormEvent } from 'react'
+import { useState, type FormEvent } from 'react'
 import { Navigate, useLocation } from 'react-router-dom'
 
 import { Button } from '@/components/ui/Button'
-import { Checkbox, Field, Segmented, Select, TextInput } from '@/components/ui/Field'
+import { Field, Segmented, TextInput } from '@/components/ui/Field'
 import { LoadingScreen, Notice } from '@/components/ui/Misc'
-import { ageFrom, needsParentalConsent as consentementRequis } from '@/lib/age'
 import { safeRedirect } from '@/lib/redirect'
 import { Wordmark } from '@/components/layout/AppShell'
 import { GoogleMark } from '@/components/ui/icons'
 import { useSession } from '@/state/session'
-import { SCHOOL_LEVELS, type SchoolLevel } from '@/types/content'
 import type { UserRole } from '@/types/domain'
 
 // Ecran 1 des maquettes (1b desktop, 1c mobile).
 //
-// Point sensible : la quasi-totalite des utilisateurs sont mineurs. En France,
-// en dessous de 15 ans, le traitement des donnees exige l'accord d'un titulaire
-// de l'autorite parentale. Le bloc de consentement n'est donc pas un detail de
-// conformite range dans les CGU : il est visible, explique, et bloquant.
+// L'inscription ne demande que l'identite. Niveau scolaire, date de naissance et
+// accord parental sont demandes sur /bienvenue, une fois le compte ouvert, pour
+// Google comme pour l'email. Raison : quand la confirmation d'email est active,
+// aucune session n'existe a la creation du compte, donc rien ne peut etre ecrit
+// dans le profil depuis cet ecran. La recette du 3 octobre 2026 l'a montre.
+//
+// Le bloc d'accord parental reste visible, explique et bloquant : il vit
+// simplement sur /bienvenue, ou il ne peut plus etre contourne.
 
 type Mode = 'inscription' | 'connexion'
 
 interface FormState {
   role: UserRole
   prenom: string
-  nom: string
   email: string
-  niveau: SchoolLevel | ''
-  naissance: string
   motDePasse: string
-  emailParent: string
-  consentement: boolean
 }
 
 const INITIAL: FormState = {
   role: 'eleve',
   prenom: '',
-  nom: '',
   email: '',
-  niveau: '',
-  naissance: '',
   motDePasse: '',
-  emailParent: '',
-  consentement: false,
 }
 
 export default function LoginPage() {
@@ -53,23 +45,14 @@ export default function LoginPage() {
   const [errors, setErrors] = useState<Partial<Record<keyof FormState, string>>>({})
   /** Erreur renvoyee par le serveur (mot de passe faux, email deja pris...). */
   const [authError, setAuthError] = useState<string | null>(null)
+  /** Adresse a laquelle Supabase vient d'envoyer le lien de confirmation. */
+  const [aConfirmer, setAConfirmer] = useState<string | null>(null)
   const [pending, setPending] = useState(false)
-
-  const age = ageFrom(form.naissance)
-  const isStudent = form.role === 'eleve'
-  // Tant que la date de naissance n'est pas saisie, on affiche le bloc parental
-  // par defaut pour un eleve : mieux vaut le montrer a tort que l'oublier.
-  const needsParentalConsent = consentementRequis(form.role, form.naissance)
 
   const set = <K extends keyof FormState>(key: K, value: FormState[K]) => {
     setForm((current) => ({ ...current, [key]: value }))
     setErrors((current) => ({ ...current, [key]: undefined }))
   }
-
-  const levelOptions = useMemo(
-    () => SCHOOL_LEVELS.map((level) => ({ value: level, label: level })),
-    [],
-  )
 
   if (status === 'loading') return <LoadingScreen label="Ouverture de ton espace…" />
   if (status === 'authenticated') {
@@ -84,14 +67,6 @@ export default function LoginPage() {
     if (!form.email.trim()) next.email = 'Indique une adresse email.'
     else if (!/^\S+@\S+\.\S+$/.test(form.email.trim())) next.email = 'Cette adresse semble incomplète.'
     if (form.motDePasse.length < 8) next.motDePasse = 'Au moins 8 caractères.'
-    if (isStudent && !form.niveau) next.niveau = 'Choisis ton niveau scolaire.'
-
-    if (needsParentalConsent) {
-      if (!form.emailParent.trim()) next.emailParent = "Email d'un parent obligatoire avant 15 ans."
-      else if (!/^\S+@\S+\.\S+$/.test(form.emailParent.trim()))
-        next.emailParent = 'Cette adresse semble incomplète.'
-      if (!form.consentement) next.consentement = "L'accord du parent est obligatoire."
-    }
 
     setErrors(next)
     return Object.keys(next).length === 0
@@ -124,19 +99,19 @@ export default function LoginPage() {
 
     if (!validate()) return
 
-    void tenter(() =>
-      signUp({
+    void tenter(async () => {
+      const issue = await signUp({
         role: form.role,
         prenom: form.prenom,
-        nom: form.nom || form.prenom,
         email: form.email,
         motDePasse: form.motDePasse,
-        niveau_scolaire: form.niveau || null,
-        date_naissance: form.naissance || null,
-        email_parent: needsParentalConsent ? form.emailParent : null,
-        consentement_parental: form.consentement,
-      }),
-    )
+      })
+      if (issue === 'confirmation_requise') {
+        setAConfirmer(form.email.trim())
+        setMode('connexion')
+        setForm((current) => ({ ...current, motDePasse: '' }))
+      }
+    })
   }
 
   return (
@@ -161,7 +136,10 @@ export default function LoginPage() {
             {mode === 'inscription' ? 'Déjà inscrit ? ' : 'Pas encore de compte ? '}
             <button
               type="button"
-              onClick={() => setMode(mode === 'inscription' ? 'connexion' : 'inscription')}
+              onClick={() => {
+                setMode(mode === 'inscription' ? 'connexion' : 'inscription')
+                setAConfirmer(null)
+              }}
               className="font-semibold text-accent hover:text-accent-600"
             >
               {mode === 'inscription' ? 'Se connecter' : 'Créer un compte'}
@@ -185,6 +163,16 @@ export default function LoginPage() {
             <span className="text-[11.5px] text-ink-faint">ou par email</span>
             <span className="h-px flex-1 bg-line" />
           </div>
+
+          {aConfirmer && (
+            // Formulation conditionnelle volontaire : Supabase repond pareil quand
+            // l'adresse a deja un compte, pour ne pas reveler qui est inscrit.
+            // Affirmer "un email a ete envoye" serait donc parfois faux.
+            <Notice tone="mastered" className="mb-4">
+              Si {aConfirmer} n'avait pas encore de compte, un lien de confirmation vient d'y
+              être envoyé. Clique dessus pour activer ton compte, puis connecte-toi ici.
+            </Notice>
+          )}
 
           {authError && (
             <Notice tone="progress" icon="!" className="mb-4">
@@ -221,34 +209,6 @@ export default function LoginPage() {
                     />
                   </Field>
 
-                  {isStudent && (
-                    <div className="grid gap-3 sm:grid-cols-2">
-                      <Field label="Niveau scolaire" htmlFor="niveau" error={errors.niveau}>
-                        <Select
-                          id="niveau"
-                          value={form.niveau}
-                          onChange={(e) => set('niveau', e.target.value as SchoolLevel)}
-                        >
-                          <option value="">Choisir…</option>
-                          {levelOptions.map((option) => (
-                            <option key={option.value} value={option.value}>
-                              {option.label}
-                            </option>
-                          ))}
-                        </Select>
-                      </Field>
-                      <Field label="Date de naissance" htmlFor="naissance">
-                        <TextInput
-                          id="naissance"
-                          type="date"
-                          autoComplete="bday"
-                          value={form.naissance}
-                          onChange={(e) => set('naissance', e.target.value)}
-                        />
-                      </Field>
-                    </div>
-                  )}
-
                   <Field label="Email" htmlFor="email" error={errors.email}>
                     <TextInput
                       id="email"
@@ -277,36 +237,11 @@ export default function LoginPage() {
                   </Field>
                 </div>
 
-                {needsParentalConsent && (
-                  <div className="mt-4 rounded-card border border-accent-100 bg-accent-50 p-4">
-                    <p className="mb-2.5 text-[12.5px] font-semibold leading-none text-accent-700">
-                      {age === null
-                        ? "Moins de 15 ans — accord d'un parent requis"
-                        : `${age} ans — accord d'un parent requis`}
-                    </p>
-                    <Field label="Email du parent" htmlFor="emailparent" error={errors.emailParent}>
-                      <TextInput
-                        id="emailparent"
-                        type="email"
-                        placeholder="parent@email.fr"
-                        value={form.emailParent}
-                        onChange={(e) => set('emailParent', e.target.value)}
-                      />
-                    </Field>
-                    <Checkbox
-                      className="mt-3"
-                      checked={form.consentement}
-                      onChange={(checked) => set('consentement', checked)}
-                    >
-                      Mon parent autorise la création de ce compte et le traitement de mes données
-                      scolaires. Il recevra un email de confirmation.
-                    </Checkbox>
-                    {errors.consentement && (
-                      <p role="alert" className="mt-2 text-[11.5px] font-medium text-wrong-600">
-                        {errors.consentement}
-                      </p>
-                    )}
-                  </div>
+                {form.role === 'eleve' && (
+                  <p className="mt-4 text-[11.5px] leading-relaxed text-ink-subtle">
+                    Tu indiqueras ensuite ton niveau et ta date de naissance. Avant 15 ans,
+                    l'accord d'un parent sera demandé.
+                  </p>
                 )}
               </>
             )}

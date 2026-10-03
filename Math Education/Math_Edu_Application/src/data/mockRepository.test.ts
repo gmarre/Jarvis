@@ -29,13 +29,24 @@ vi.stubGlobal('window', { localStorage: globalThis.localStorage })
 const INSCRIPTION: SignUpInput = {
   role: 'eleve',
   prenom: 'Nina',
-  nom: 'Perez',
   email: 'nina@test.fr',
   motDePasse: 'motdepasse123',
-  niveau_scolaire: 'CM1',
+}
+
+const COMPLETION = {
+  role: 'eleve' as const,
+  prenom: 'Nina',
+  nom: '',
+  niveau_scolaire: 'CM1' as const,
   date_naissance: '2015-04-02',
   email_parent: 'parent@test.fr',
-  consentement_parental: true,
+}
+
+/** Inscription qui ouvre une session, comme Supabase sans confirmation d'email. */
+async function inscrire() {
+  const session = await mockRepository.signUp(INSCRIPTION)
+  if (!session) throw new Error('Le mock doit ouvrir une session a l inscription')
+  return session
 }
 
 beforeEach(() => {
@@ -49,24 +60,36 @@ describe('authentification', () => {
   })
 
   it('ouvre une session a l inscription', async () => {
-    const session = await mockRepository.signUp(INSCRIPTION)
+    const session = await inscrire()
 
     expect(session.profile.prenom).toBe('Nina')
-    expect(session.profile.niveau_scolaire).toBe('CM1')
     expect(session.profile.role).toBe('eleve')
   })
 
-  it('ne considere JAMAIS le consentement parental comme acquis a l inscription', async () => {
-    // La case cochee vaut demande, pas accord. Seul le parent peut confirmer,
-    // par email. C'est une regle juridique, elle ne doit pas deriver.
-    const session = await mockRepository.signUp(INSCRIPTION)
+  it('cree un eleve incomplet, a completer sur /bienvenue comme un compte Google', async () => {
+    // L'inscription ne porte que l'identite. Avec la confirmation d'email
+    // active, aucune session n'existe a la creation du compte : rien d'autre ne
+    // pourrait etre ecrit. Le profil incomplet envoie l'eleve sur /bienvenue.
+    const session = await inscrire()
 
-    expect(session.profile.email_parent).toBe('parent@test.fr')
-    expect(session.profile.consentement_parental_at).toBeNull()
+    expect(session.profile.niveau_scolaire).toBeNull()
+    expect(session.profile.date_naissance).toBeNull()
+    expect(session.profile.email_parent).toBeNull()
+    expect(isProfileComplete(session.profile)).toBe(false)
+  })
+
+  it('ne considere JAMAIS le consentement parental comme acquis', async () => {
+    // Donner l'email d'un parent vaut demande, pas accord. Seul le parent peut
+    // confirmer, par email. C'est une regle juridique, elle ne doit pas deriver.
+    await inscrire()
+    const profile = await mockRepository.completeProfile(COMPLETION)
+
+    expect(profile.email_parent).toBe('parent@test.fr')
+    expect(profile.consentement_parental_at).toBeNull()
   })
 
   it('part d une progression vierge et sans positionnement', async () => {
-    const session = await mockRepository.signUp(INSCRIPTION)
+    const session = await inscrire()
 
     expect(session.placement).toBeNull()
     expect(session.objectifSkillId).toBeNull()
@@ -168,7 +191,7 @@ describe('isProfileComplete', () => {
 
 describe('mutations granulaires', () => {
   it('enregistre une tentative sans toucher aux autres competences', async () => {
-    const session = await mockRepository.signUp(INSCRIPTION)
+    const session = await inscrire()
     const avant = session.progress
 
     const progress: SkillProgress = {
@@ -240,7 +263,8 @@ describe('mutations granulaires', () => {
   })
 
   it('met a jour le profil sans effacer le reste', async () => {
-    await mockRepository.signUp(INSCRIPTION)
+    await inscrire()
+    await mockRepository.completeProfile(COMPLETION)
 
     const profile = await mockRepository.updateProfile({ rappels_revision: false })
 
@@ -249,20 +273,27 @@ describe('mutations granulaires', () => {
     expect(profile.niveau_scolaire).toBe('CM1')
   })
 
-  it('complete un profil issu de Google', async () => {
-    await mockRepository.signUp({ ...INSCRIPTION, niveau_scolaire: null, date_naissance: null })
+  it('complete un profil sur /bienvenue', async () => {
+    await inscrire()
 
     const profile = await mockRepository.completeProfile({
-      role: 'eleve',
-      prenom: 'Nina',
-      nom: 'Perez',
+      ...COMPLETION,
       niveau_scolaire: '6e',
       date_naissance: '2014-01-01',
-      email_parent: 'parent@test.fr',
     })
 
     expect(isProfileComplete(profile)).toBe(true)
     expect(profile.niveau_scolaire).toBe('6e')
+  })
+
+  it('ne fabrique pas de nom de famille a partir du prenom', async () => {
+    // Recette du 3 octobre 2026 : le nom recevait le prenom quand il etait
+    // inconnu, et l'ecran affichait "Gauthier G.". Un nom absent reste vide.
+    const session = await inscrire()
+    expect(session.profile.nom).toBe('')
+
+    const profile = await mockRepository.completeProfile(COMPLETION)
+    expect(profile.nom).toBe('')
   })
 })
 
@@ -290,7 +321,10 @@ describe('reservations', () => {
     if (!libre) throw new Error('Aucun creneau libre')
 
     await mockRepository.createBooking(libre.id, null)
-    await expect(mockRepository.createBooking(libre.id, null)).rejects.toThrow(RepositoryError)
+    await expect(mockRepository.createBooking(libre.id, null)).rejects.toMatchObject({
+      name: 'RepositoryError',
+      refus: true,
+    })
   })
 
   it('refuse un creneau complet, comme le fait la base', async () => {
@@ -299,9 +333,20 @@ describe('reservations', () => {
     const complet = slots.find((s) => s.places_prises >= s.capacite)
     if (!complet) return
 
-    await expect(mockRepository.createBooking(complet.id, null)).rejects.toThrow(
-      RepositoryError,
-    )
+    // Un refus de regle, pas une panne : l'ecran ne doit pas renvoyer l'eleve
+    // verifier sa connexion (recette du 3 octobre 2026).
+    await expect(mockRepository.createBooking(complet.id, null)).rejects.toMatchObject({
+      name: 'RepositoryError',
+      refus: true,
+    })
+  })
+
+  it('distingue une panne d un refus de regle', async () => {
+    // Sans session, l'echec n'est pas un refus metier.
+    await expect(mockRepository.createBooking('peu-importe', null)).rejects.toMatchObject({
+      name: 'RepositoryError',
+      refus: false,
+    })
   })
 
   it('libere la place a l annulation', async () => {

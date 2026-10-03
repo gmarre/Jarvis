@@ -114,7 +114,7 @@ Toutes ces briques restent en TypeScript, y compris les Edge Functions (Deno). *
 ### 5.2 Les trois principes d'architecture
 
 1. **Le moteur vit dans `src/lib/`, il est pur et testé.** Aucun composant React, aucune dépendance au navigateur. C'est ce qui permettra de déplacer la correction côté serveur au sprint 3 sans réécrire une ligne du moteur.
-2. **Aucun composant ne contient de donnée en dur.** Tout passe par `src/data/` (accès aux données) ou `src/content/` (contenu pédagogique). Reste une exception à résorber : `mocks/mockData.ts` alimente encore la liste d'élèves de l'espace professeur.
+2. **Aucun composant ne contient de donnée en dur.** Tout passe par `src/data/` (accès aux données) ou `src/content/` (contenu pédagogique). La carte « Élèves à suivre » de l'espace professeur, qui affichait des élèves factices, a été retirée le 3 octobre 2026. Elle reviendra avec l'espace professeur v1, sur de vraies données.
 3. **`src/data/repository.ts` est la seule couture avec la base.** Il expose une mutation par intention, jamais une sauvegarde en bloc.
 
 ### 5.3 Le contrat du repository
@@ -262,24 +262,27 @@ Elles ont fait sortir ce que les tests automatiques ne voyaient pas :
 | # | Constat | Gravité | État |
 |---|---------|---------|------|
 | 1 | Le fournisseur Google n'était **pas activé** sur le projet Supabase. `check:db` crée ses comptes par email et ne pouvait pas le voir. | Bloquant | Réglé (configuration) |
-| 2 | **L'inscription par email casse dès que « Confirm email » est activé** : `signUp` ne renvoie pas de session, l'écriture du profil part sans JWT, le RLS filtre tout, `.single()` lève « Cannot coerce the result to a single JSON object ». Compte créé à moitié, message incompréhensible. | **Bloquant avant la bêta** | À coder |
+| 2 | **L'inscription par email casse dès que « Confirm email » est activé** : `signUp` ne renvoie pas de session, l'écriture du profil part sans JWT, le RLS filtre tout, `.single()` lève « Cannot coerce the result to a single JSON object ». Compte créé à moitié, message incompréhensible. | **Bloquant avant la bêta** | Corrigé : l'inscription email ne demande plus que l'identité, puis passe par `/bienvenue` comme Google. `signUp` rend `null` quand le compte attend sa confirmation. |
 | 3 | La lacune racine d'un élève CM1 typique est **B005, qui n'a aucun exercice** : son plan du jour est vide dès la première session. | **Bloquant produit** | Contenu (Marius) |
 | 4 | Le dimanche était invisible côté élève (`DAYS_SHOWN = 6`), alors que le prof peut y publier un créneau. | Bloquant | Corrigé |
-| 5 | Un jour sans aucun créneau affiche « complet » dans l'en-tête de la grille élève. | Texte mensonger | À coder |
-| 6 | Un refus de capacité affiche « Vérifie ta connexion », alors que c'est une règle métier. Le message du trigger est aussi sans accent (« creneau »). | Texte mensonger | À coder |
-| 7 | Compte Google : la colonne `nom` reçoit le prénom. | Mineur | À coder |
-| 8 | La liste des jours côté prof part du lundi de la semaine en cours : publication probable sur un jour passé. | À vérifier | À coder |
+| 5 | Un jour sans aucun créneau affiche « complet » dans l'en-tête de la grille élève. | Texte mensonger | Corrigé (`lib/schedule.ts`, « aucun créneau ») |
+| 6 | Un refus de capacité affiche « Vérifie ta connexion », alors que c'est une règle métier. Le message est aussi sans accent (« creneau »). | Texte mensonger | Corrigé : `RepositoryError.refus` distingue refus de règle et panne, le bandeau adapte son conseil, le catalogue est relu |
+| 7 | La colonne `nom` reçoit le prénom quand le nom est inconnu (`nom \|\| prenom`). | Mineur | Corrigé (le nom reste vide). La ligne déjà en base n'est pas corrigée. |
+| 8 | La liste des jours côté prof part du lundi de la semaine en cours : publication possible sur un jour passé. | Confirmé | Corrigé : jours à partir d'aujourd'hui, heures passées désactivées |
 | 9 | Une réponse sur une compétence déjà maîtrisée renvoie un upsert de la ligne inchangée. | Mineur | Plus tard |
+| 10 | **Sur `/bienvenue`, choisir « Professeur » ou « Parent » échoue** : le trigger `proteger_colonnes_profil` refuse tout changement de `role` depuis le client. Un compte Google ne peut donc être qu'élève. Trouvé en relisant le code, pas en recette. | Bloquant pour les profs | À trancher : fonction serveur qui fixe le rôle une seule fois, tant que le profil est incomplet |
+
+**Ajouts de la même session, à la demande de Gauthier :** un professeur choisit ses débuts de cours **au quart d'heure, de 8h à 20h** (la maquette imposait 14h à 18h à l'heure pile). Deux cours d'un même professeur ne peuvent plus se chevaucher (règle dans `lib/schedule.ts`, contrôlée par l'interface seulement, pas par la base). La grille élève affiche tous les créneaux d'une même heure, et non plus le premier. La carte « Élèves à suivre » (élèves factices) est retirée.
 
 **Reste non testé en conditions réelles :** le passage d'une compétence de « en cours » à « maîtrisée ». Couvert par Playwright au sprint 6.
 
-**« Confirm email » est désactivé en développement** sur le projet Supabase. Ne pas le réactiver avant d'avoir corrigé le constat n°2, sinon plus aucune inscription par email ne passe.
+**« Confirm email » est désactivé en développement** sur le projet Supabase. Le constat n°2 est corrigé dans le code, mais le chemin avec confirmation n'a pas encore été déroulé dans un navigateur : le faire avant la bêta.
 
 ### 8.2 Prochaines étapes
 
 Dans l'ordre :
 
-1. **Session « correctifs de recette » (Gauthier, environ 1h30).** Constats 2, 5, 6, 7 et 8, avec des tests, puis `ROADMAP.md` mis à jour (recette, constats, correction de l'affirmation « Google validé »). Pour le n°2, solution retenue : l'inscription par email ne demande plus que prénom, rôle, email et mot de passe, puis renvoie vers `/bienvenue` comme Google. Une seule implémentation de la règle des 15 ans, et pas de date de naissance de mineur dans les métadonnées d'authentification, recopiées dans le JWT.
+1. **Correctifs de recette : codés le 3 octobre 2026** (constats 2, 5, 6, 7, 8, 188 tests au vert). Reste : un passage navigateur sur l'inscription email, la réactivation de « Confirm email » pour tester le chemin avec confirmation, puis `ROADMAP.md` mis à jour. Constat n°10 à trancher.
 2. **B005 en priorité absolue (Marius)**, puis les autres compétences vides du parcours CM1 à 6e (A012 à A014, C026 à C032). Sans B005, le cœur de cible n'a rien à faire dans l'app.
 3. **Node 24** (procédure §10.3), à faire VS Code fermé.
 4. **Domaine** (OVH), choix et achat par Gauthier, en parallèle.
@@ -417,7 +420,7 @@ Aucun des quatre ne teste le navigateur. Avant tout commit : `npm test && npm ru
 
 **Aucune vérification des professeurs.** N'importe qui s'inscrit comme `prof` et publie des créneaux payants. Bloquant avant d'ouvrir l'offre de cours à des inconnus.
 
-**Détails :** `suiviEleves` en dur dans `mocks/mockData.ts` alimente encore l'espace professeur, `streakDays` est en dur dans `WorkspacePage`, et les exercices d'une compétence sont toujours servis dans le même ordre (ni mélange ni tirage).
+**Détails :** `streakDays` est en dur dans `WorkspacePage`, et les exercices d'une compétence sont toujours servis dans le même ordre (ni mélange ni tirage).
 
 ---
 

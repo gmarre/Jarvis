@@ -245,12 +245,6 @@ export const profMarcProfile: Profile = {
   abonnement: null,
 }
 
-/** Eleves suivis par Marc, affiches dans son espace. */
-export const suiviEleves = [
-  { prenom: 'Léa D.', niveau: '4e', lacune_skill_id: 'C003' },
-  { prenom: 'Tom N.', niveau: '3e', lacune_skill_id: 'A010' },
-]
-
 export interface MockSnapshot {
   profile: Profile
   progress: ProgressMap
