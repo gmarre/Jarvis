@@ -13,6 +13,10 @@ dist-ssr
 .env.*
 !.env.example
 
+# Identifiants OAuth telecharges depuis Google Cloud : le secret client y est en
+# clair. Il vit dans le gestionnaire de mots de passe et dans Supabase, pas ici.
+client_secret*.json
+
 # Logs
 logs
 *.log

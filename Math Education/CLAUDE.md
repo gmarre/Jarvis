@@ -68,7 +68,7 @@ Le DAG v1.0 (`Spécifications DAG, Exos, Mindcards/skills_dag.json`) contient 41
 
 **Les 15 compétences sans exercice :** B001, B005, B006, C026, C027, C029, C030, C031, C032, A012, A013, A014, A026, A027, A028. Le code les contourne (le test de positionnement les saute au lieu de s'y bloquer), mais **elles dégradent la précision du diagnostic** : moins de points de mesure, donc une frontière de maîtrise plus floue.
 
-**Prochaine étape côté contenu :** la relecture humaine de Marius sur les 69 exercices, puis les exercices des 15 compétences vides.
+**Prochaine étape côté contenu :** **B005 en premier**, c'est la lacune racine d'un élève CM1 typique et sans elle son plan du jour est vide (recette du 3 octobre, §8.1). Ensuite la relecture humaine de Marius sur les 69 exercices, puis les autres compétences vides.
 
 Le contenu reste en **JSON versionné dans Git** (relecture par PR, diff, rollback). Il sera chargé en base par un script de seed au sprint 3, mais Git demeure la source de vérité. Les 3 fichiers sont copiés à l'identique dans `Math_Edu_Application/src/content/` : toute livraison doit y être recopiée et validée par `scripts/validate_content.py`.
 
@@ -98,7 +98,7 @@ MATH EDUCATION est une **application** (comptes, base de données, logique méti
 | Visualisation DAG | react-flow, rendu **par domaine** (jamais les 414 nœuds d'un coup) | En place |
 | Rendu math | KaTeX | En place |
 | Cartes mentales | Markmap (Markdown hiérarchique vers rendu) | En place |
-| Base + Auth | Supabase : Postgres, **auth Google + email**, RLS | **Branché et validé** |
+| Base + Auth | Supabase : Postgres, **auth Google + email**, RLS | **Branché et validé**, recette navigateur le 3 octobre 2026 (§8.1) |
 | Tests | Vitest (moteur, repository), Docker + Postgres jetable (migrations et RLS) | En place |
 | Contenu pédagogique | JSON versionnés dans Git, chargés en base par script de seed | JSON en place, **seed au sprint 3** |
 | Logique serveur | Supabase Edge Functions (Deno) : correction des réponses, emails, cron | **Sprints 2b et 3** |
@@ -253,7 +253,40 @@ Le travail se fait par **sprints courts et livrables seuls**. Le détail de chac
 | **5** | Espace parent (consentement, export et suppression RGPD, suivi) | À faire |
 | **6** | Playwright, `/security-review`, avant le premier élève réel | À faire |
 
-**Ce qui n'est pas encore vérifié :** le parcours utilisateur n'a jamais été déroulé dans un navigateur. Les quatre niveaux de vérification automatique passent, mais aucun ne teste l'interface. Les six vérifications manuelles sont listées dans `ROADMAP.md` §1, à faire avant le sprint 2b.
+### 8.1 Recette manuelle du 3 octobre 2026
+
+Les six vérifications manuelles de `ROADMAP.md` §1 ont été déroulées dans le navigateur, et **toutes passent** : inscription Google, persistance après vidage du stockage local, cloisonnement entre élèves, écritures granulaires (un upsert et un insert par réponse), refus du mauvais mot de passe, capacité refusée par la base sur une 4e réservation concurrente.
+
+Elles ont fait sortir ce que les tests automatiques ne voyaient pas :
+
+| # | Constat | Gravité | État |
+|---|---------|---------|------|
+| 1 | Le fournisseur Google n'était **pas activé** sur le projet Supabase. `check:db` crée ses comptes par email et ne pouvait pas le voir. | Bloquant | Réglé (configuration) |
+| 2 | **L'inscription par email casse dès que « Confirm email » est activé** : `signUp` ne renvoie pas de session, l'écriture du profil part sans JWT, le RLS filtre tout, `.single()` lève « Cannot coerce the result to a single JSON object ». Compte créé à moitié, message incompréhensible. | **Bloquant avant la bêta** | À coder |
+| 3 | La lacune racine d'un élève CM1 typique est **B005, qui n'a aucun exercice** : son plan du jour est vide dès la première session. | **Bloquant produit** | Contenu (Marius) |
+| 4 | Le dimanche était invisible côté élève (`DAYS_SHOWN = 6`), alors que le prof peut y publier un créneau. | Bloquant | Corrigé |
+| 5 | Un jour sans aucun créneau affiche « complet » dans l'en-tête de la grille élève. | Texte mensonger | À coder |
+| 6 | Un refus de capacité affiche « Vérifie ta connexion », alors que c'est une règle métier. Le message du trigger est aussi sans accent (« creneau »). | Texte mensonger | À coder |
+| 7 | Compte Google : la colonne `nom` reçoit le prénom. | Mineur | À coder |
+| 8 | La liste des jours côté prof part du lundi de la semaine en cours : publication probable sur un jour passé. | À vérifier | À coder |
+| 9 | Une réponse sur une compétence déjà maîtrisée renvoie un upsert de la ligne inchangée. | Mineur | Plus tard |
+
+**Reste non testé en conditions réelles :** le passage d'une compétence de « en cours » à « maîtrisée ». Couvert par Playwright au sprint 6.
+
+**« Confirm email » est désactivé en développement** sur le projet Supabase. Ne pas le réactiver avant d'avoir corrigé le constat n°2, sinon plus aucune inscription par email ne passe.
+
+### 8.2 Prochaines étapes
+
+Dans l'ordre :
+
+1. **Session « correctifs de recette » (Gauthier, environ 1h30).** Constats 2, 5, 6, 7 et 8, avec des tests, puis `ROADMAP.md` mis à jour (recette, constats, correction de l'affirmation « Google validé »). Pour le n°2, solution retenue : l'inscription par email ne demande plus que prénom, rôle, email et mot de passe, puis renvoie vers `/bienvenue` comme Google. Une seule implémentation de la règle des 15 ans, et pas de date de naissance de mineur dans les métadonnées d'authentification, recopiées dans le JWT.
+2. **B005 en priorité absolue (Marius)**, puis les autres compétences vides du parcours CM1 à 6e (A012 à A014, C026 à C032). Sans B005, le cœur de cible n'a rien à faire dans l'app.
+3. **Node 24** (procédure §10.3), à faire VS Code fermé.
+4. **Domaine** (OVH), choix et achat par Gauthier, en parallèle.
+5. **Sprint 2b** : migration 0005 (jeton de consentement haché, expiration 7 jours), Edge Function `send-parent-consent` avec Resend en mode test, page `/consentement/:token`, boutons « Renvoyer » avec limitation de débit.
+6. **Nettoyage** des comptes de test (prof, `+eleve1` à `+eleve3`, comptes des testeurs) et du créneau du 4 octobre, après re-test du constat n°2.
+
+**Proposition de recentrage, à valider :** environ 32h de dev d'ici fin novembre ne couvrent pas les sprints 2b à 6. Avant la bêta gratuite, ne garder que 2b (obligation légale), 4 (mise en ligne) et un 6 réduit (`/security-review` et un parcours Playwright). Le sprint 3 (réponses dans le bundle, acceptable tant que c'est gratuit) et le sprint 5 (export et suppression RGPD traitables à la main pendant la bêta) passent entre la bêta et janvier.
 
 ---
 
@@ -281,7 +314,7 @@ Ce qui ne s'automatise pas depuis le code, et qu'il faut refaire à l'identique 
 1. **supabase.com** → New project. Région **Europe** (eu-west-1 Irlande ou eu-west-3 Paris) : l'hébergement UE est une promesse affichée sur l'écran de connexion, pas un détail.
 2. **Noter le mot de passe de la base dans un gestionnaire de mots de passe.** Il n'est plus affiché ensuite, et il servira au script de seed.
 3. Project Settings → API → copier `Project URL` et la publishable key dans `.env.local`.
-4. Authentication → Providers → activer **Email**. Décocher « Confirm email » en développement, le rallumer avant la bêta.
+4. Authentication → Providers → activer **Email**. Décocher « Confirm email » en développement, le rallumer avant la bêta, **et seulement après la correction du constat n°2 du §8.1**.
 5. Authentication → URL Configuration → noter la **Callback URL** (`https://<ref>.supabase.co/auth/v1/callback`).
 6. SQL Editor → New query → coller **chaque migration dans l'ordre** → Run.
 7. Vérifier : `npm run check:supabase` puis `npm run check:db`.
@@ -290,7 +323,7 @@ Ce qui ne s'automatise pas depuis le code, et qu'il faut refaire à l'identique 
 
 1. **console.cloud.google.com** → nouveau projet, nom `Racine`.
 2. APIs & Services → **OAuth consent screen** → type **External**, laissé en mode **Testing**. En Testing on a droit à 100 utilisateurs de test sans validation Google, largement assez pour la bêta. **Passer en Production exigera une politique de confidentialité en ligne**, prévue au sprint 4.
-3. Nom de l'app (`Racine`), email de support, et s'ajouter comme **Test user** avec les testeurs.
+3. Nom de l'app (`Racine`), email de support, et s'ajouter comme **Test user** avec les testeurs. : master-dev-web@racine-510506.iam.gserviceaccount.com
 4. Scopes : **uniquement** `email`, `profile`, `openid`. Rien de plus, ce sont des mineurs.
 5. Credentials → OAuth client ID → **Web application**. Authorized redirect URI = la Callback URL de l'étape 10.1.5.
 6. Coller `Client ID` et `Client Secret` dans Supabase → Authentication → Providers → **Google**.

@@ -30,7 +30,9 @@ import { useDailyPlan } from '@/state/usePlan'
 // professeur recoit le graphe avant la seance. C'est ce qui justifie la
 // commission de la plateforme.
 
-const DAYS_SHOWN = 6
+// La semaine entiere, dimanche compris : le professeur peut publier un creneau
+// n'importe quel jour, et un jour masque ici rendrait ses creneaux introuvables.
+const DAYS_SHOWN = 7
 
 export default function SchedulePage() {
   const { session, bookSlot, cancelBooking } = useAuthenticatedSession()
