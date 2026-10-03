@@ -1,0 +1,170 @@
+[
+  {
+    "id": "EX-B008-D-01",
+    "skill_id": "B008",
+    "level": "decouverte",
+    "type": "numerique",
+    "statement": "Une maraîchère a 93 radis. Elle fait des bottes de 4 radis.\n\nPose la division euclidienne de 93 par 4. Combien de bottes complètes fait-elle ?",
+    "image": null,
+    "answer": {
+      "value": 23,
+      "unit": "bottes"
+    },
+    "solution_steps": [
+      "On cherche combien de fois 4 radis dans 93 radis : on divise 93 par 4.",
+      "On commence par les dizaines : 9 dizaines divisées par 4. Dans la table de 4, $4 \\times 2 = 8$ : on écrit 2 au quotient, au rang des dizaines. Il reste $9 - 8 = 1$ dizaine.",
+      "On abaisse le 3 des unités : 1 dizaine et 3 unités font 13. $4 \\times 3 = 12$ : on écrit 3 au quotient, au rang des unités. Il reste $13 - 12 = 1$.",
+      "Le quotient est 23 et le reste est 1. Le reste 1 est **plus petit que le diviseur** 4 : la division est terminée. On peut écrire $93 = 4 \\times 23 + 1$.",
+      "La maraîchère fait **23** bottes complètes, et il lui reste 1 radis."
+    ],
+    "hint": "Commence par les dizaines : combien de fois 4 dans 9 ?",
+    "estimated_duration_s": 75,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 3, CM1 : poser et effectuer des divisions euclidiennes avec un diviseur à un chiffre."
+  },
+  {
+    "id": "EX-B008-D-02",
+    "skill_id": "B008",
+    "level": "decouverte",
+    "type": "qcm",
+    "statement": "Dans la division euclidienne de 58 par 6, quel est le reste ?",
+    "image": null,
+    "choices": [
+      {
+        "key": "a",
+        "text": "9",
+        "misconception": "L'élève confond le quotient et le reste : 9 est le nombre de fois que 6 est contenu dans 58, pas ce qui reste."
+      },
+      {
+        "key": "b",
+        "text": "10",
+        "misconception": "L'élève s'arrête à $6 \\times 8 = 48$ et trouve un reste de 10. Mais 10 est plus grand que le diviseur 6 : on peut encore faire un groupe de 6, le quotient 8 est trop petit."
+      },
+      {
+        "key": "c",
+        "text": "4",
+        "misconception": null
+      },
+      {
+        "key": "d",
+        "text": "2",
+        "misconception": "L'élève se trompe dans la table de 6 : il pense 6 × 9 = 56 et trouve 58 − 56 = 2. Or 6 × 9 = 54."
+      }
+    ],
+    "answer": {
+      "value": "c"
+    },
+    "solution_steps": [
+      "On cherche dans la table de 6 le plus grand résultat qui ne dépasse pas 58 : $6 \\times 9 = 54$, et $6 \\times 10 = 60$ dépasse 58.",
+      "Le quotient est donc 9. Il reste $58 - 54 = 4$.",
+      "Le reste 4 est **plus petit que le diviseur** 6 : la division est terminée. Un reste de 6 ou plus voudrait dire qu'on peut encore faire un groupe de 6.",
+      "$58 = 6 \\times 9 + 4$. Le reste est **4**."
+    ],
+    "hint": "Cherche dans la table de 6 le plus grand résultat qui ne dépasse pas 58.",
+    "estimated_duration_s": 50,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 3, CM1 : poser et effectuer des divisions euclidiennes avec un diviseur à un chiffre."
+  },
+  {
+    "id": "EX-B008-E-01",
+    "skill_id": "B008",
+    "level": "entrainement",
+    "type": "numerique",
+    "statement": "Pose la division euclidienne de 625 par 3.\n\nQuel est le quotient ?",
+    "image": null,
+    "answer": {
+      "value": 208
+    },
+    "solution_steps": [
+      "On commence par les centaines : 6 centaines divisées par 3. $3 \\times 2 = 6$ : on écrit 2 au quotient, au rang des centaines. Il reste 0.",
+      "On abaisse le 2 des dizaines : 2 dizaines. On ne peut pas faire de groupe de 3 avec 2 : on écrit **0** au quotient, au rang des dizaines. Il reste 2 dizaines.",
+      "On abaisse le 5 des unités : 2 dizaines et 5 unités font 25. $3 \\times 8 = 24$ : on écrit 8 au quotient, au rang des unités. Il reste $25 - 24 = 1$.",
+      "Le quotient est **208** et le reste est 1, plus petit que le diviseur 3. Sans le 0 des dizaines, on écrirait 28 au lieu de 208 : le quotient serait faux."
+    ],
+    "hint": "Quand le diviseur ne « rentre » pas dans le nombre obtenu en abaissant un chiffre, que faut-il écrire au quotient ?",
+    "estimated_duration_s": 90,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 3, CM1 : poser et effectuer des divisions euclidiennes avec un diviseur à un chiffre."
+  },
+  {
+    "id": "EX-B008-E-02",
+    "skill_id": "B008",
+    "level": "entrainement",
+    "type": "vrai_faux",
+    "statement": "Pour la division euclidienne de 50 par 7, Adam écrit :\n\n$50 = 7 \\times 6 + 8$\n\nVrai ou faux : le quotient est 6 et le reste est 8.",
+    "image": null,
+    "answer": {
+      "value": false
+    },
+    "solution_steps": [
+      "L'égalité est juste : $7 \\times 6 = 42$ et $42 + 8 = 50$.",
+      "Mais le reste 8 est **plus grand que le diviseur** 7 : avec 8, on peut encore faire un groupe de 7. Ce n'est pas la division euclidienne.",
+      "On fait un groupe de plus : $7 \\times 7 = 49$ et $50 - 49 = 1$. Donc $50 = 7 \\times 7 + 1$.",
+      "Le quotient est 7 et le reste est 1. C'est **faux** : dans une division euclidienne, le reste est toujours plus petit que le diviseur."
+    ],
+    "hint": "Compare le reste d'Adam au nombre par lequel il divise.",
+    "estimated_duration_s": 60,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 3, CM1 : poser et effectuer des divisions euclidiennes avec un diviseur à un chiffre."
+  },
+  {
+    "id": "EX-B008-M-01",
+    "skill_id": "B008",
+    "level": "maitrise",
+    "type": "numerique",
+    "statement": "Une fleuriste a 254 tulipes. Elle fait des bouquets de 6 tulipes.\n\nCombien de tulipes ne seront dans aucun bouquet ?",
+    "image": null,
+    "answer": {
+      "value": 2,
+      "unit": "tulipes"
+    },
+    "solution_steps": [
+      "On fait des groupes de 6 tulipes avec 254 tulipes : on pose la division euclidienne de 254 par 6. La question porte sur les tulipes qui restent, donc sur le **reste**.",
+      "Il n'y a que 2 centaines, pas assez pour un groupe de 6 : on commence par 25 dizaines. $6 \\times 4 = 24$ : on écrit 4 au quotient, au rang des dizaines. Il reste $25 - 24 = 1$ dizaine.",
+      "On abaisse le 4 : 1 dizaine et 4 unités font 14. $6 \\times 2 = 12$ : on écrit 2 au quotient, au rang des unités. Il reste $14 - 12 = 2$.",
+      "$254 = 6 \\times 42 + 2$ : la fleuriste fait 42 bouquets, et **2** tulipes ne sont dans aucun bouquet. Le reste 2 est plus petit que 6 : impossible de faire un bouquet de plus."
+    ],
+    "hint": "Pose la division, puis demande-toi si on cherche le quotient ou le reste.",
+    "estimated_duration_s": 100,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 3, CM1 : poser et effectuer des divisions euclidiennes avec un diviseur à un chiffre."
+  },
+  {
+    "id": "EX-B008-M-02",
+    "skill_id": "B008",
+    "level": "maitrise",
+    "type": "qcm",
+    "statement": "135 enfants partent en sortie. Chaque minibus transporte 8 enfants.\n\nCombien de minibus faut-il pour emmener tous les enfants ?",
+    "image": null,
+    "choices": [
+      {
+        "key": "a",
+        "text": "17",
+        "misconception": null
+      },
+      {
+        "key": "b",
+        "text": "16",
+        "misconception": "L'élève donne le quotient sans interpréter le reste : avec 16 minibus, 7 enfants resteraient sans place."
+      },
+      {
+        "key": "c",
+        "text": "7",
+        "misconception": "L'élève donne le reste : 7 est le nombre d'enfants qui n'ont pas de place dans les minibus pleins, pas un nombre de minibus."
+      }
+    ],
+    "answer": {
+      "value": "a"
+    },
+    "solution_steps": [
+      "On fait des groupes de 8 enfants avec 135 enfants : on pose la division euclidienne de 135 par 8.",
+      "13 dizaines divisées par 8 : $8 \\times 1 = 8$, on écrit 1 au quotient, il reste $13 - 8 = 5$ dizaines. On abaisse le 5 : 55. $8 \\times 6 = 48$, on écrit 6, il reste $55 - 48 = 7$.",
+      "$135 = 8 \\times 16 + 7$ : 16 minibus sont pleins, et 7 enfants n'ont pas de place. Le reste 7 est bien plus petit que 8.",
+      "Il faut un minibus de plus pour ces 7 enfants : $16 + 1 = 17$. Il faut **17** minibus, même si le dernier n'est pas plein."
+    ],
+    "hint": "Après la division, vérifie que tous les enfants ont une place.",
+    "estimated_duration_s": 100,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 3, CM1 : poser et effectuer des divisions euclidiennes avec un diviseur à un chiffre."
+  }
+]

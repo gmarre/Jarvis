@@ -30,6 +30,9 @@ from pathlib import Path
 import networkx as nx
 from jsonschema import Draft202012Validator
 
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+import contenu  # noqa: E402
+
 PROJECT_ROOT = Path(__file__).resolve().parent.parent
 SPEC_DIR = PROJECT_ROOT / "Spécifications DAG, Exos, Mindcards"
 SCHEMA_DIR = SPEC_DIR / "schemas"
@@ -747,31 +750,21 @@ def check_longueur_enonces(dag: dict, exercises: dict) -> None:
 def main() -> int:
     print("Validation du contenu MATH EDUCATION\n")
 
-    dag_path = CONTENT_DIR / "skills_dag_v2.json"
-    ex_path = CONTENT_DIR / "exercises.json"
-    mm_path = CONTENT_DIR / "mindmaps.json"
-
-    dag = load_json(dag_path)
-    exercises = load_json(ex_path)
-    mindmaps = load_json(mm_path)
-
-    if dag is None:
-        print(f"Fichier DAG introuvable : {dag_path}", file=sys.stderr)
+    # Le contenu est decoupe en petits fichiers (scripts/contenu.py) ; il est
+    # reassemble ici dans la forme que les controles connaissent.
+    try:
+        dag, exercises, mindmaps = contenu.charger(CONTENT_DIR)
+    except contenu.ContenuInvalide as exc:
+        print(f"Contenu illisible : {exc}", file=sys.stderr)
         return 1
 
     print("Schemas JSON")
     validate_schema(dag, SCHEMA_DIR / "skills_dag.schema.json", "DAG")
     print("  skills_dag            controle")
-    if exercises is not None:
-        validate_schema(exercises, SCHEMA_DIR / "exercises.schema.json", "Exercices")
-        print("  exercises             controle")
-    else:
-        warn(f"exercises.json absent ({ex_path.name}) : controles d'exercices ignores")
-    if mindmaps is not None:
-        validate_schema(mindmaps, SCHEMA_DIR / "mindmaps.schema.json", "Cartes")
-        print("  mindmaps              controle")
-    else:
-        warn(f"mindmaps.json absent ({mm_path.name}) : controles de cartes ignores")
+    validate_schema(exercises, SCHEMA_DIR / "exercises.schema.json", "Exercices")
+    print("  exercises             controle")
+    validate_schema(mindmaps, SCHEMA_DIR / "mindmaps.schema.json", "Cartes")
+    print("  mindmaps              controle")
 
     print("\nGraphe")
     check_dag(dag, exercises, mindmaps)

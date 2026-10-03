@@ -35,50 +35,26 @@ Voir l'etat d'avancement de la relecture :
 from __future__ import annotations
 
 import argparse
-import json
-import shutil
 import sys
 from pathlib import Path
 
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+import contenu  # noqa: E402
+
 PROJECT_ROOT = Path(__file__).resolve().parent.parent
-SPEC_DIR = PROJECT_ROOT / "Spécifications DAG, Exos, Mindcards"
-CONTENT_DIR = SPEC_DIR / "content"
-APP_CONTENT_DIR = PROJECT_ROOT / "Math_Edu_Application" / "src" / "content"
 
 ORDER = ["brouillon", "relu_agent", "relu_humain", "valide"]
 RANK = {s: i for i, s in enumerate(ORDER)}
 
-TARGETS = {
-    "exercices": {
-        "source": CONTENT_DIR / "exercises.json",
-        "app": APP_CONTENT_DIR / "exercises.json",
-        "key": "exercises",
-    },
-    "cartes": {
-        "source": CONTENT_DIR / "mindmaps.json",
-        "app": APP_CONTENT_DIR / "mindmaps.json",
-        "key": "mindmaps",
-    },
-}
-
-
-def load(path: Path) -> dict:
-    return json.loads(path.read_text(encoding="utf-8"))
-
-
-def save(path: Path, data: dict) -> None:
-    path.write_text(
-        json.dumps(data, ensure_ascii=False, indent=2) + "\n",
-        encoding="utf-8",
-    )
+# Cle de la liste dans la structure rendue par contenu.charger().
+TARGETS = {"exercices": "exercises", "cartes": "mindmaps"}
 
 
 def show_stats() -> None:
-    for label, cfg in TARGETS.items():
-        if not cfg["source"].is_file():
-            continue
-        data = load(cfg["source"])
-        items = data[cfg["key"]]
+    dag, exos, cartes = contenu.charger()
+    for label, key in TARGETS.items():
+        data = exos if key == "exercises" else cartes
+        items = data[key]
         counts = {s: 0 for s in ORDER}
         for it in items:
             counts[it["review_status"]] = counts.get(it["review_status"], 0) + 1
@@ -125,13 +101,9 @@ def main() -> int:
     if not (args.ids or args.skill or args.all):
         p.error("preciser des identifiants, ou --skill, ou --all")
 
-    cfg = TARGETS["cartes" if args.cartes else "exercices"]
-    source, key = cfg["source"], cfg["key"]
-    if not source.is_file():
-        print(f"Fichier introuvable : {source}", file=sys.stderr)
-        return 1
-
-    data = load(source)
+    key = TARGETS["cartes" if args.cartes else "exercices"]
+    dag, exos, cartes = contenu.charger()
+    data = cartes if args.cartes else exos
     items = data[key]
     by_id = {it["id"]: it for it in items}
 
@@ -189,17 +161,13 @@ def main() -> int:
         # dans mindmaps.json rendait le fichier invalide (etape 1, domaine B).
         if not args.cartes:
             data["metadata"]["review_status"] = global_status
-        save(source, data)
+        contenu.ecrire(dag, exos, cartes)
         print(f"\n{len(modifies)} element(s) modifie(s).")
         print(f"Etat global du fichier : {global_status}")
 
         if args.sync_app:
-            app_path = cfg["app"]
-            if app_path.is_file():
-                shutil.copyfile(source, app_path)
-                print(f"Copie synchronisee : {app_path.relative_to(PROJECT_ROOT)}")
-            else:
-                print(f"Copie applicative introuvable, rien a synchroniser : {app_path}")
+            contenu.exporter_app(dag, exos, cartes)
+            print(f"Copie synchronisee : {contenu.APP_CONTENT.relative_to(PROJECT_ROOT)}")
         else:
             print(
                 "\nRappel : la copie utilisee par l'application n'a PAS ete mise a jour.\n"

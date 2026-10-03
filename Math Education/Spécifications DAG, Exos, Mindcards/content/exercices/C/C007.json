@@ -1,0 +1,88 @@
+[
+  {
+    "id": "EX-C007-D-01",
+    "skill_id": "C007",
+    "level": "decouverte",
+    "type": "texte",
+    "statement": "Simplifie $\\frac{12}{18}$ au maximum.\n\nÉcris ta réponse sous la forme numérateur/dénominateur.",
+    "image": null,
+    "answer": {
+      "value": "2/3",
+      "accepted": [
+        "2 / 3"
+      ]
+    },
+    "solution_steps": [
+      "12 et 18 sont tous les deux dans la table de 6.",
+      "On divise le numérateur et le dénominateur par 6 : $12 \\div 6 = 2$ et $18 \\div 6 = 3$.",
+      "$\\frac{12}{18} = \\frac{2}{3}$.",
+      "La valeur n'a pas changé, seule l'écriture est plus simple."
+    ],
+    "hint": "Cherche un nombre qui divise à la fois 12 et 18.",
+    "estimated_duration_s": 60,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, 4e : simplifier une fraction."
+  },
+  {
+    "id": "EX-C007-E-01",
+    "skill_id": "C007",
+    "level": "entrainement",
+    "type": "texte",
+    "statement": "Simplifie $\\frac{25}{40}$ au maximum.\n\nÉcris ta réponse sous la forme numérateur/dénominateur.",
+    "image": null,
+    "answer": {
+      "value": "5/8",
+      "accepted": [
+        "5 / 8"
+      ]
+    },
+    "solution_steps": [
+      "25 et 40 se terminent par 5 ou 0 : ils sont tous deux divisibles par 5.",
+      "$25 \\div 5 = 5$ et $40 \\div 5 = 8$.",
+      "$\\frac{25}{40} = \\frac{5}{8}$.",
+      "5 et 8 n'ont plus de diviseur commun : la simplification est terminée."
+    ],
+    "hint": "Les deux nombres se terminent par 5 ou 0.",
+    "estimated_duration_s": 60,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, 4e : simplifier une fraction."
+  },
+  {
+    "id": "EX-C007-M-01",
+    "skill_id": "C007",
+    "level": "maitrise",
+    "type": "qcm",
+    "statement": "Peut-on simplifier l'écriture $\\frac{4 + 2}{4}$ en barrant les deux 4 ?",
+    "image": null,
+    "choices": [
+      {
+        "key": "a",
+        "text": "Non, car le 4 du haut est dans une addition",
+        "misconception": null
+      },
+      {
+        "key": "b",
+        "text": "Oui, on obtient $\\frac{2}{1}$, soit 2",
+        "misconception": "Erreur classique : l'élève simplifie à travers une addition. Le calcul correct donne 6/4, soit 3/2."
+      },
+      {
+        "key": "c",
+        "text": "Oui, on obtient 2 car les 4 s'annulent",
+        "misconception": "Même erreur formulée autrement : la simplification ne s'applique qu'à des facteurs, pas à des termes d'une somme."
+      }
+    ],
+    "answer": {
+      "value": "a"
+    },
+    "solution_steps": [
+      "On ne peut simplifier que des **facteurs** (des nombres multipliés), jamais des termes d'une addition.",
+      "Ici le numérateur est une somme : $4 + 2 = 6$.",
+      "La fraction vaut donc $\\frac{6}{4}$, qui se simplifie par 2 : $\\frac{3}{2}$.",
+      "Ce n'est pas 2 : barrer les 4 donne un résultat faux."
+    ],
+    "hint": "Calcule d'abord le numérateur, puis compare avec ce que donnerait le fait de barrer les 4.",
+    "estimated_duration_s": 120,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, 4e : simplifier une fraction."
+  }
+]

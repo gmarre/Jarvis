@@ -1,0 +1,97 @@
+[
+  {
+    "id": "EX-C006-D-01",
+    "skill_id": "C006",
+    "level": "decouverte",
+    "type": "qcm",
+    "statement": "Quelle fraction est **égale** à $\\frac{1}{2}$ ?",
+    "image": null,
+    "choices": [
+      {
+        "key": "a",
+        "text": "$\\frac{2}{4}$",
+        "misconception": null
+      },
+      {
+        "key": "b",
+        "text": "$\\frac{1}{4}$",
+        "misconception": "L'élève double seulement le dénominateur, ce qui divise la fraction par deux."
+      },
+      {
+        "key": "c",
+        "text": "$\\frac{2}{2}$",
+        "misconception": "L'élève double seulement le numérateur, ce qui donne le tout."
+      }
+    ],
+    "answer": {
+      "value": "a"
+    },
+    "solution_steps": [
+      "Pour obtenir une fraction égale, on multiplie le numérateur **et** le dénominateur par le même nombre.",
+      "$\\frac{1}{2} = \\frac{1 \\times 2}{2 \\times 2} = \\frac{2}{4}$.",
+      "On peut le vérifier : la moitié d'une bande, c'est aussi deux quarts de cette bande."
+    ],
+    "hint": "Ce qu'on fait en haut, il faut le faire en bas.",
+    "estimated_duration_s": 50,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 2, CE2 : établir des égalités entre fractions."
+  },
+  {
+    "id": "EX-C006-E-01",
+    "skill_id": "C006",
+    "level": "entrainement",
+    "type": "numerique",
+    "statement": "Complète pour obtenir deux fractions égales :\n\n$\\frac{2}{3} = \\frac{\\ldots}{12}$",
+    "image": null,
+    "answer": {
+      "value": 8
+    },
+    "solution_steps": [
+      "On cherche par combien le dénominateur a été multiplié : $3 \\times 4 = 12$, donc par **4**.",
+      "On applique la même multiplication au numérateur : $2 \\times 4 = 8$.",
+      "$\\frac{2}{3} = \\frac{8}{12}$."
+    ],
+    "hint": "Par combien passe-t-on de 3 à 12 ? Applique le même facteur en haut.",
+    "estimated_duration_s": 60,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 2, CE2 : établir des égalités entre fractions."
+  },
+  {
+    "id": "EX-C006-M-01",
+    "skill_id": "C006",
+    "level": "maitrise",
+    "type": "qcm",
+    "statement": "Parmi ces fractions, laquelle n'est **pas** égale à $\\frac{3}{4}$ ?",
+    "image": null,
+    "choices": [
+      {
+        "key": "a",
+        "text": "$\\frac{5}{6}$",
+        "misconception": null
+      },
+      {
+        "key": "b",
+        "text": "$\\frac{6}{8}$",
+        "misconception": "L'élève cherche un écart constant entre numérateur et dénominateur au lieu d'un facteur multiplicatif, et croit donc que 6/8 est l'intrus."
+      },
+      {
+        "key": "c",
+        "text": "$\\frac{9}{12}$",
+        "misconception": "L'élève se fie au fait que 9 et 12 sont les plus grands nombres proposés pour désigner l'intrus."
+      }
+    ],
+    "answer": {
+      "value": "a"
+    },
+    "solution_steps": [
+      "$\\frac{6}{8}$ : on a multiplié 3 et 4 par 2. Égale à $\\frac{3}{4}$.",
+      "$\\frac{9}{12}$ : on a multiplié par 3. Égale à $\\frac{3}{4}$.",
+      "$\\frac{5}{6}$ : on est passé de 3 à 5 en **ajoutant** 2, et de 4 à 6 en ajoutant 2. Ajouter ne conserve pas l'égalité, seule la multiplication le fait.",
+      "La fraction qui n'est pas égale à $\\frac{3}{4}$ est donc $\\frac{5}{6}$."
+    ],
+    "hint": "Pour chaque proposition, cherche par quel nombre il faudrait multiplier 3 et 4.",
+    "estimated_duration_s": 120,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 2, CE2 : établir des égalités entre fractions."
+  }
+]

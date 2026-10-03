@@ -22,6 +22,11 @@ from pathlib import Path
 
 import networkx as nx
 
+import sys
+
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+import contenu  # noqa: E402
+
 ROOT = Path(__file__).resolve().parent.parent
 SPEC = ROOT / "Spécifications DAG, Exos, Mindcards"
 CONTENT = SPEC / "content"
@@ -74,9 +79,7 @@ def reponse(e: dict) -> str:
 
 # --------------------------------------------------------------------------
 def main() -> int:
-    dag = json.loads((CONTENT / "skills_dag_v2.json").read_text(encoding="utf-8"))
-    exos = json.loads((CONTENT / "exercises.json").read_text(encoding="utf-8"))
-    cartes = json.loads((CONTENT / "mindmaps.json").read_text(encoding="utf-8"))
+    dag, exos, cartes = contenu.charger(CONTENT)
 
     S = {s["id"]: s for s in dag["skills"]}
     par: dict[str, list[dict]] = {}

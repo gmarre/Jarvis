@@ -1,0 +1,159 @@
+[
+  {
+    "id": "EX-B037-D-01",
+    "skill_id": "B037",
+    "level": "decouverte",
+    "type": "numerique",
+    "statement": "Tim a 13 autocollants, en donne 2, puis en gagne 4.\n\nCombien en a-t-il ?",
+    "image": null,
+    "answer": {
+      "value": 15
+    },
+    "solution_steps": [
+      "Il y a deux étapes : Tim donne, puis il gagne. On les fait dans l'ordre.",
+      "Il **donne** 2 autocollants : il en a moins. $13 - 2 = 11$.",
+      "Il **gagne** 4 autocollants : il en a plus. $11 + 4 = 15$.",
+      "Tim a **15** autocollants à la fin."
+    ],
+    "hint": "Calcule d'abord combien il lui en reste après avoir donné.",
+    "estimated_duration_s": 60,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 2, CP : résoudre des problèmes additifs en deux étapes (champ numérique inférieur ou égal à 30)."
+  },
+  {
+    "id": "EX-B037-D-02",
+    "skill_id": "B037",
+    "level": "decouverte",
+    "type": "qcm",
+    "statement": "9 oiseaux sur un arbre. 3 s'envolent, puis 2 arrivent.\n\nCombien sont-ils alors ?",
+    "image": null,
+    "choices": [
+      {
+        "key": "a",
+        "text": "8",
+        "misconception": null
+      },
+      {
+        "key": "b",
+        "text": "14",
+        "misconception": "L'élève ajoute tous les nombres de l'énoncé ($9 + 3 + 2 = 14$), sans voir que les oiseaux qui s'envolent quittent l'arbre."
+      },
+      {
+        "key": "c",
+        "text": "4",
+        "misconception": "L'élève enlève les deux nombres ($9 - 3 - 2 = 4$), comme si les 2 oiseaux qui arrivent partaient eux aussi."
+      }
+    ],
+    "answer": {
+      "value": "a"
+    },
+    "solution_steps": [
+      "3 oiseaux **s'envolent** : il y en a moins. $9 - 3 = 6$.",
+      "2 oiseaux **arrivent** : il y en a plus. $6 + 2 = 8$.",
+      "Il y a **8** oiseaux sur l'arbre."
+    ],
+    "hint": "Combien d'oiseaux reste-t-il juste après l'envol ?",
+    "estimated_duration_s": 50,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 2, CP : résoudre des problèmes additifs en deux étapes (champ numérique inférieur ou égal à 30)."
+  },
+  {
+    "id": "EX-B037-E-01",
+    "skill_id": "B037",
+    "level": "entrainement",
+    "type": "numerique",
+    "statement": "27 poissons : 13 rouges, 4 jaunes, les autres gris.\n\nCombien de gris ?",
+    "image": null,
+    "answer": {
+      "value": 10
+    },
+    "solution_steps": [
+      "Les poissons rouges, jaunes et gris forment ensemble les 27 poissons.",
+      "D'abord, on compte ensemble les poissons rouges et jaunes : $13 + 4 = 17$.",
+      "Les gris sont ceux qui restent : $27 - 17 = 10$. Pour les unités, 7 moins 7 donne 0 ; pour les dizaines, 2 moins 1 donne 1.",
+      "Il y a **10** poissons gris."
+    ],
+    "hint": "Combien y a-t-il de poissons qui ne sont pas gris ?",
+    "estimated_duration_s": 75,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 2, CP : résoudre des problèmes additifs en deux étapes (champ numérique inférieur ou égal à 30)."
+  },
+  {
+    "id": "EX-B037-E-02",
+    "skill_id": "B037",
+    "level": "entrainement",
+    "type": "vrai_faux",
+    "statement": "19 cahiers. Le maître en distribue 5, puis 3.\n\nIl en reste 11.",
+    "image": null,
+    "answer": {
+      "value": true
+    },
+    "solution_steps": [
+      "Première distribution : $19 - 5 = 14$ cahiers.",
+      "Seconde distribution : $14 - 3 = 11$ cahiers.",
+      "Il reste bien **11** cahiers : c'est **vrai**. Autre chemin : il a distribué $5 + 3 = 8$ cahiers en tout, et $19 - 8 = 11$."
+    ],
+    "hint": "Enlève les cahiers distribués, en deux fois.",
+    "estimated_duration_s": 60,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 2, CP : résoudre des problèmes additifs en deux étapes (champ numérique inférieur ou égal à 30)."
+  },
+  {
+    "id": "EX-B037-M-01",
+    "skill_id": "B037",
+    "level": "maitrise",
+    "type": "numerique",
+    "statement": "Sur l'étang, 3 canards s'envolent, 4 arrivent : ils sont 18.\n\nCombien étaient-ils avant ?",
+    "image": null,
+    "answer": {
+      "value": 17
+    },
+    "solution_steps": [
+      "On connait la fin, pas le début : on remonte l'histoire à l'envers, en partant des 18 canards.",
+      "Avant que 4 canards arrivent, il y en avait 4 de moins : $18 - 4 = 14$.",
+      "Avant que 3 canards s'envolent, il y en avait 3 de plus : $14 + 3 = 17$.",
+      "On vérifie dans l'ordre de l'histoire : $17 - 3 = 14$, puis $14 + 4 = 18$. Il y avait **17** canards avant."
+    ],
+    "hint": "Pars de la fin et défais chaque étape : les canards arrivés repartent, ceux envolés reviennent.",
+    "estimated_duration_s": 90,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 2, CP : résoudre des problèmes additifs en deux étapes (champ numérique inférieur ou égal à 30)."
+  },
+  {
+    "id": "EX-B037-M-02",
+    "skill_id": "B037",
+    "level": "maitrise",
+    "type": "qcm",
+    "statement": "Max a 14 euros, en gagne 5, en dépense et finit avec 12.\n\nCombien a-t-il dépensé ?",
+    "image": null,
+    "choices": [
+      {
+        "key": "a",
+        "text": "2",
+        "misconception": "L'élève compare le début et la fin ($14 - 12 = 2$) en oubliant les 5 euros gagnés."
+      },
+      {
+        "key": "b",
+        "text": "7",
+        "misconception": null
+      },
+      {
+        "key": "c",
+        "text": "19",
+        "misconception": "L'élève s'arrête après la première étape : 19 euros, c'est l'argent de Max juste avant la dépense, pas la dépense."
+      }
+    ],
+    "answer": {
+      "value": "b"
+    },
+    "solution_steps": [
+      "Première étape : Max **gagne** 5 euros, il en a plus. $14 + 5 = 19$.",
+      "Deuxième étape : il dépense, et il passe de 19 euros à 12 euros. Ce qu'il a dépensé, c'est ce qui manque à 12 pour faire 19 : $19 - 12 = 7$.",
+      "On vérifie dans l'ordre de l'histoire : $14 + 5 = 19$, puis $19 - 7 = 12$. Max a dépensé **7** euros."
+    ],
+    "hint": "Combien Max a-t-il d'argent juste avant de dépenser ?",
+    "estimated_duration_s": 75,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 2, CP : résoudre des problèmes additifs en deux étapes (champ numérique inférieur ou égal à 30)."
+  }
+]

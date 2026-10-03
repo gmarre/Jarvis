@@ -1,0 +1,221 @@
+[
+  {
+    "id": "EX-A014-D-01",
+    "skill_id": "A014",
+    "level": "decouverte",
+    "type": "qcm",
+    "statement": "Voici quatre nombres : 34, 45, 60 et 87.\n\nLesquels sont des multiples de 2 ?",
+    "image": null,
+    "choices": [
+      {
+        "key": "a",
+        "text": "34 et 60",
+        "misconception": null
+      },
+      {
+        "key": "b",
+        "text": "45 et 87",
+        "misconception": "L'élève retient les nombres impairs : il confond « se termine par un chiffre impair » et « multiple de 2 »."
+      },
+      {
+        "key": "c",
+        "text": "34, 45 et 60",
+        "misconception": "L'élève ajoute 45, en croyant qu'un nombre terminé par 5 est aussi un multiple de 2."
+      }
+    ],
+    "answer": {
+      "value": "a"
+    },
+    "solution_steps": [
+      "Un nombre est un multiple de 2 lorsque son chiffre des unités est 0, 2, 4, 6 ou 8.",
+      "34 se termine par 4 : c'est un multiple de 2.",
+      "45 se termine par 5 et 87 se termine par 7 : ce ne sont pas des multiples de 2.",
+      "60 se termine par 0 : c'est un multiple de 2.",
+      "Réponse : 34 et 60."
+    ],
+    "hint": "Regarde seulement le dernier chiffre de chaque nombre.",
+    "estimated_duration_s": 45,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 3, CM1, les nombres entiers : savoir reconnaitre les multiples de 2, de 5 et de 10 a partir de leur ecriture chiffree."
+  },
+  {
+    "id": "EX-A014-D-02",
+    "skill_id": "A014",
+    "level": "decouverte",
+    "type": "qcm",
+    "statement": "Voici quatre nombres : 34, 45, 60 et 87.\n\nLesquels sont des multiples de 5 ?",
+    "image": null,
+    "choices": [
+      {
+        "key": "a",
+        "text": "45 et 60",
+        "misconception": null
+      },
+      {
+        "key": "b",
+        "text": "60 seulement",
+        "misconception": "L'élève ne retient que le chiffre 0 et oublie que les nombres terminés par 5 sont aussi des multiples de 5."
+      },
+      {
+        "key": "c",
+        "text": "34 et 60",
+        "misconception": "L'élève applique le critère des multiples de 2, le chiffre des unités pair, au lieu de celui des multiples de 5."
+      }
+    ],
+    "answer": {
+      "value": "a"
+    },
+    "solution_steps": [
+      "Un nombre est un multiple de 5 lorsque son chiffre des unités est 0 ou 5. Deux chiffres sont donc possibles, contre cinq pour les multiples de 2.",
+      "34 se termine par 4 : non. 87 se termine par 7 : non.",
+      "45 se termine par 5 : oui, $45 = 5 \\times 9$.",
+      "60 se termine par 0 : oui, $60 = 5 \\times 12$.",
+      "Réponse : 45 et 60. Remarque : 60 est à la fois multiple de 2 et multiple de 5."
+    ],
+    "hint": "Pour les multiples de 5, deux chiffres des unités sont possibles.",
+    "estimated_duration_s": 45,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 3, CM1, les nombres entiers : savoir reconnaitre les multiples de 2, de 5 et de 10 a partir de leur ecriture chiffree."
+  },
+  {
+    "id": "EX-A014-E-01",
+    "skill_id": "A014",
+    "level": "entrainement",
+    "type": "texte",
+    "statement": "Parmi 1 250, 3 004, 4 815 et 6 730, quels sont les multiples de 10 ?\n\nSépare-les par des virgules.",
+    "image": null,
+    "answer": {
+      "value": "1250, 6730",
+      "accepted": [
+        "1 250, 6 730",
+        "1250,6730",
+        "6730, 1250",
+        "6 730, 1 250",
+        "6730,1250",
+        "1250 6730",
+        "1 250 et 6 730"
+      ]
+    },
+    "solution_steps": [
+      "Un nombre est un multiple de 10 lorsque son chiffre des unités est 0.",
+      "1 250 se termine par 0 : c'est un multiple de 10.",
+      "3 004 se termine par 4 : c'est un multiple de 2, mais pas de 10.",
+      "4 815 se termine par 5 : c'est un multiple de 5, mais pas de 10.",
+      "6 730 se termine par 0 : c'est un multiple de 10.",
+      "Réponse : 1 250 et 6 730."
+    ],
+    "hint": "Un seul chiffre compte, celui des unités.",
+    "estimated_duration_s": 90,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 3, CM1, les nombres entiers : savoir reconnaitre les multiples de 2, de 5 et de 10 a partir de leur ecriture chiffree."
+  },
+  {
+    "id": "EX-A014-E-02",
+    "skill_id": "A014",
+    "level": "entrainement",
+    "type": "vrai_faux",
+    "statement": "Le nombre 27 985 est un multiple de 5, mais ce n'est pas un multiple de 10.",
+    "image": null,
+    "answer": {
+      "value": true
+    },
+    "solution_steps": [
+      "Le chiffre des unités de 27 985 est 5.",
+      "Un nombre terminé par 0 ou par 5 est un multiple de 5 : ici $27\\,985 = 5 \\times 5\\,597$.",
+      "Un multiple de 10 doit se terminer par 0, ce qui n'est pas le cas.",
+      "Les deux parties de la phrase sont donc justes : l'affirmation est **vraie**."
+    ],
+    "hint": "Les multiples de 10 se terminent tous par le même chiffre. Lequel ?",
+    "estimated_duration_s": 60,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 3, CM1, les nombres entiers : savoir reconnaitre les multiples de 2, de 5 et de 10 a partir de leur ecriture chiffree."
+  },
+  {
+    "id": "EX-A014-E-03",
+    "skill_id": "A014",
+    "level": "entrainement",
+    "type": "numerique",
+    "statement": "Écris le plus grand multiple de 5 qui soit plus petit que 8 000.",
+    "image": null,
+    "answer": {
+      "value": 7995,
+      "accepted": [
+        "7 995",
+        "7995"
+      ]
+    },
+    "solution_steps": [
+      "Les multiples de 5 se terminent par 0 ou par 5.",
+      "8 000 est bien un multiple de 5, mais il n'est pas plus petit que 8 000 : il est écarté.",
+      "Juste avant 8 000, les chiffres des unités sont 9, 8, 7, 6, puis 5 : le premier qui convient est 5.",
+      "7 995 se termine par 5 : c'est un multiple de 5, et $7\\,995 = 5 \\times 1\\,599$.",
+      "Réponse : **7 995**."
+    ],
+    "hint": "Recule à partir de 8 000 jusqu'au premier nombre terminé par 0 ou par 5.",
+    "estimated_duration_s": 90,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 3, CM1, les nombres entiers : savoir reconnaitre les multiples de 2, de 5 et de 10 a partir de leur ecriture chiffree."
+  },
+  {
+    "id": "EX-A014-M-01",
+    "skill_id": "A014",
+    "level": "maitrise",
+    "type": "qcm",
+    "statement": "Un nombre est un multiple de 10.\n\nQue peut-on affirmer à coup sûr sur ce nombre ?",
+    "image": null,
+    "choices": [
+      {
+        "key": "a",
+        "text": "Il est aussi un multiple de 2 et un multiple de 5",
+        "misconception": null
+      },
+      {
+        "key": "b",
+        "text": "Il est un multiple de 2, mais pas un multiple de 5",
+        "misconception": "L'élève retient seulement que les multiples de 10 sont pairs et oublie que $10 = 2 \\times 5$."
+      },
+      {
+        "key": "c",
+        "text": "Il se termine par 5",
+        "misconception": "L'élève mélange les deux critères : les multiples de 5 se terminent par 0 ou 5, les multiples de 10 seulement par 0."
+      }
+    ],
+    "answer": {
+      "value": "a"
+    },
+    "solution_steps": [
+      "Un multiple de 10 se termine toujours par 0 : 30, 70, 250, 4 000…",
+      "Un nombre terminé par 0 fait partie des nombres pairs : c'est donc un multiple de 2.",
+      "Un nombre terminé par 0 est aussi un multiple de 5, puisque le critère des multiples de 5 accepte le chiffre 0.",
+      "Cela vient de $10 = 2 \\times 5$ : un paquet de 10 se recoupe en 5 paquets de 2 ou en 2 paquets de 5.",
+      "Enfin, aucun multiple de 10 ne se termine par 5.",
+      "Réponse : il est à la fois multiple de 2 et multiple de 5."
+    ],
+    "hint": "Écris quelques multiples de 10, puis vérifie s'ils sont dans la table de 2, puis dans celle de 5.",
+    "estimated_duration_s": 120,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 3, CM1, les nombres entiers : savoir reconnaitre les multiples de 2, de 5 et de 10 a partir de leur ecriture chiffree."
+  },
+  {
+    "id": "EX-A014-M-02",
+    "skill_id": "A014",
+    "level": "maitrise",
+    "type": "vrai_faux",
+    "statement": "Un magasin range tous ses crayons dans des boîtes de 10, sans qu'il en reste.\n\nIl annonce 4 386 crayons en stock. C'est possible.",
+    "image": null,
+    "answer": {
+      "value": false
+    },
+    "solution_steps": [
+      "Si tous les crayons sont dans des boîtes de 10 pleines, le stock est forcément un multiple de 10.",
+      "Or un multiple de 10 se termine par 0.",
+      "4 386 se termine par 6 : ce n'est pas un multiple de 10, même si le nombre est pair.",
+      "En détail : $4\\,386 = 10 \\times 438 + 6$, il resterait 6 crayons hors boîte.",
+      "L'affirmation est donc **fausse**."
+    ],
+    "hint": "Par quel chiffre se termine un nombre d'objets rangés par paquets de 10 ?",
+    "estimated_duration_s": 105,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 3, CM1, les nombres entiers : savoir reconnaitre les multiples de 2, de 5 et de 10 a partir de leur ecriture chiffree."
+  }
+]

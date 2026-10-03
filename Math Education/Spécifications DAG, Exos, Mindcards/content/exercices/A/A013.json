@@ -1,0 +1,200 @@
+[
+  {
+    "id": "EX-A013-D-01",
+    "skill_id": "A013",
+    "level": "decouverte",
+    "type": "vrai_faux",
+    "statement": "36 cartes sont partagées entre 4 joueurs. Chacun en reçoit autant et il n'en reste aucune.\n\nDonc 4 est un diviseur de 36.",
+    "image": null,
+    "answer": {
+      "value": true
+    },
+    "solution_steps": [
+      "Partager 36 cartes en 4 parts égales, c'est calculer $36 \\div 4$.",
+      "$36 \\div 4 = 9$ : chaque joueur reçoit 9 cartes et il ne reste rien.",
+      "La division tombe juste, donc 4 est bien un diviseur de 36.",
+      "On peut le dire dans l'autre sens : 36 est un multiple de 4, car $36 = 4 \\times 9$.",
+      "L'affirmation est **vraie**."
+    ],
+    "hint": "Partage 36 en 4 parts égales : la division tombe-t-elle juste ?",
+    "estimated_duration_s": 45,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 3, CM1, les nombres entiers : savoir determiner si un nombre entier inferieur ou egal a 10 est un diviseur d'un nombre entier donne."
+  },
+  {
+    "id": "EX-A013-D-02",
+    "skill_id": "A013",
+    "level": "decouverte",
+    "type": "qcm",
+    "statement": "On partage 36 cartes entre plusieurs joueurs, sans qu'il en reste aucune.\n\nQuel nombre de joueurs convient ?",
+    "image": null,
+    "choices": [
+      {
+        "key": "a",
+        "text": "6 joueurs",
+        "misconception": null
+      },
+      {
+        "key": "b",
+        "text": "7 joueurs",
+        "misconception": "L'élève confond 36 et 35 : c'est 35 qui est dans la table de 7, car $7 \\times 5 = 35$. Avec 36 cartes, il resterait 1 carte."
+      },
+      {
+        "key": "c",
+        "text": "8 joueurs",
+        "misconception": "L'élève double le 4 du départ, en croyant qu'un partage par 8 marche dès qu'un partage par 4 marche ; or $8 \\times 4 = 32$ et il resterait 4 cartes."
+      }
+    ],
+    "answer": {
+      "value": "a"
+    },
+    "solution_steps": [
+      "On cherche un nombre par lequel 36 se partage sans reste, c'est-à-dire un diviseur de 36.",
+      "$36 \\div 6 = 6$ : 6 joueurs reçoivent 6 cartes chacun, il ne reste rien.",
+      "$36 \\div 7$ ne tombe pas juste : $7 \\times 5 = 35$, il resterait 1 carte.",
+      "$36 \\div 8$ ne tombe pas juste non plus : $8 \\times 4 = 32$, il resterait 4 cartes.",
+      "Réponse : 6 joueurs."
+    ],
+    "hint": "Essaie chaque nombre proposé : la division tombe-t-elle juste ?",
+    "estimated_duration_s": 75,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 3, CM1, les nombres entiers : savoir determiner si un nombre entier inferieur ou egal a 10 est un diviseur d'un nombre entier donne."
+  },
+  {
+    "id": "EX-A013-E-01",
+    "skill_id": "A013",
+    "level": "entrainement",
+    "type": "texte",
+    "statement": "Parmi 3, 5, 6 et 8, lesquels sont des diviseurs de 84 ?\n\nSépare-les par des virgules.",
+    "image": null,
+    "answer": {
+      "value": "3, 6",
+      "accepted": [
+        "3,6",
+        "3 et 6",
+        "6, 3",
+        "6,3",
+        "3 6",
+        "3;6",
+        "6 et 3"
+      ]
+    },
+    "solution_steps": [
+      "Un nombre est un diviseur de 84 si la division de 84 par ce nombre tombe juste.",
+      "$84 \\div 3 = 28$ : 3 est un diviseur de 84.",
+      "$84 \\div 5$ : $5 \\times 16 = 80$, il reste 4. 5 n'est pas un diviseur de 84.",
+      "$84 \\div 6 = 14$ : 6 est un diviseur de 84.",
+      "$84 \\div 8$ : $8 \\times 10 = 80$, il reste 4 également. 8 n'est pas un diviseur de 84.",
+      "Réponse : 3, 6."
+    ],
+    "hint": "Pose chaque division et regarde le reste.",
+    "estimated_duration_s": 120,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 3, CM1, les nombres entiers : savoir determiner si un nombre entier inferieur ou egal a 10 est un diviseur d'un nombre entier donne."
+  },
+  {
+    "id": "EX-A013-E-02",
+    "skill_id": "A013",
+    "level": "entrainement",
+    "type": "qcm",
+    "statement": "Un libraire range 630 livres en piles égales.\n\nParmi 4, 7 et 8, quel nombre de piles est possible ?",
+    "image": null,
+    "choices": [
+      {
+        "key": "a",
+        "text": "7 piles",
+        "misconception": null
+      },
+      {
+        "key": "b",
+        "text": "4 piles",
+        "misconception": "L'élève pense que tout nombre pair se partage en 4 ; or $630 = 4 \\times 157 + 2$, il resterait 2 livres."
+      },
+      {
+        "key": "c",
+        "text": "8 piles",
+        "misconception": "L'élève applique deux fois la règle du double : 630 est pair, donc il le croit divisible par 4 puis par 8 ; or $630 = 8 \\times 78 + 6$, il resterait 6 livres."
+      }
+    ],
+    "answer": {
+      "value": "a"
+    },
+    "solution_steps": [
+      "Pour que les piles soient égales et qu'il ne reste rien, le nombre de piles doit être un diviseur de 630.",
+      "$630 \\div 7 = 90$ : 7 piles de 90 livres, rien ne reste.",
+      "$630 \\div 4$ : $4 \\times 157 = 628$, il resterait 2 livres.",
+      "$630 \\div 8$ : $8 \\times 78 = 624$, il resterait 6 livres.",
+      "Réponse : 7 piles."
+    ],
+    "hint": "Cherche la division qui tombe juste, sans aucun reste.",
+    "estimated_duration_s": 90,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 3, CM1, les nombres entiers : savoir determiner si un nombre entier inferieur ou egal a 10 est un diviseur d'un nombre entier donne."
+  },
+  {
+    "id": "EX-A013-E-03",
+    "skill_id": "A013",
+    "level": "entrainement",
+    "type": "numerique",
+    "statement": "Un maraîcher a 258 pommes. Il veut faire des sacs de 6 pommes, tous pleins.\n\nPeut-il utiliser toutes ses pommes ? Complète : $258 = 6 \\times \\ldots$",
+    "image": null,
+    "answer": {
+      "value": 43
+    },
+    "solution_steps": [
+      "Si la multiplication tombe juste, 6 est un diviseur de 258 : aucune pomme ne reste.",
+      "On cherche par quel nombre multiplier 6 pour obtenir 258.",
+      "$6 \\times 40 = 240$, puis il manque 18, et $6 \\times 3 = 18$ : au total $6 \\times 43 = 258$.",
+      "Il ne reste rien : le maraîcher remplit 43 sacs pleins, et 6 est bien un diviseur de 258."
+    ],
+    "hint": "Cherche par combien multiplier 6 pour approcher 258, en commençant par les dizaines.",
+    "estimated_duration_s": 90,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 3, CM1, les nombres entiers : savoir determiner si un nombre entier inferieur ou egal a 10 est un diviseur d'un nombre entier donne."
+  },
+  {
+    "id": "EX-A013-M-01",
+    "skill_id": "A013",
+    "level": "maitrise",
+    "type": "vrai_faux",
+    "statement": "Karim écrit : « 5 est un diviseur de 45. Donc 45 est un diviseur de 5. »\n\nKarim a raison.",
+    "image": null,
+    "answer": {
+      "value": false
+    },
+    "solution_steps": [
+      "La première phrase est juste : $45 \\div 5 = 9$, donc 5 est un diviseur de 45.",
+      "Pour savoir si 45 est un diviseur de 5, il faudrait partager 5 en 45 parts entières : c'est impossible. Le sens de « diviseur de » n'est donc pas réversible.",
+      "$5 \\div 45$ ne tombe pas juste, donc 45 n'est pas un diviseur de 5.",
+      "Le bon renversement utilise l'autre mot : 45 est un **multiple** de 5, car $45 = 5 \\times 9$.",
+      "Karim a donc **tort**."
+    ],
+    "hint": "Un diviseur est-il plus petit ou plus grand que le nombre qu'il divise ?",
+    "estimated_duration_s": 105,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 3, CM1, les nombres entiers : savoir determiner si un nombre entier inferieur ou egal a 10 est un diviseur d'un nombre entier donne."
+  },
+  {
+    "id": "EX-A013-M-02",
+    "skill_id": "A013",
+    "level": "maitrise",
+    "type": "numerique",
+    "statement": "Une école range 96 cahiers en paquets égaux. Un paquet contient moins de 10 cahiers.\n\nQuel est le plus grand nombre de cahiers par paquet ?",
+    "image": null,
+    "answer": {
+      "value": 8,
+      "unit": "cahiers"
+    },
+    "solution_steps": [
+      "Le nombre de cahiers par paquet doit être un diviseur de 96, sinon un paquet serait incomplet.",
+      "On part du plus grand candidat : $96 \\div 9$ ne tombe pas juste, car $9 \\times 10 = 90$ et il resterait 6 cahiers.",
+      "$96 \\div 8 = 12$ : cette division tombe juste.",
+      "Les diviseurs de 96 inférieurs à 10 sont 1, 2, 3, 4, 6 et 8 : le plus grand est 8.",
+      "Réponse : **8** cahiers par paquet, soit 12 paquets."
+    ],
+    "hint": "Teste 9, puis 8 : quelle est la première division qui tombe juste ?",
+    "estimated_duration_s": 150,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 3, CM1, les nombres entiers : savoir determiner si un nombre entier inferieur ou egal a 10 est un diviseur d'un nombre entier donne."
+  }
+]

@@ -1,0 +1,80 @@
+[
+  {
+    "id": "EX-A009-D-01",
+    "skill_id": "A009",
+    "level": "decouverte",
+    "type": "numerique",
+    "statement": "Dans le nombre 3 847, quel est le **chiffre** des centaines ?",
+    "image": null,
+    "answer": {
+      "value": 8
+    },
+    "solution_steps": [
+      "De droite à gauche : 7 unités, 4 dizaines, 8 centaines, 3 milliers.",
+      "Le chiffre des centaines est **8**."
+    ],
+    "hint": "Compte les rangs en partant de la droite : unités, dizaines, centaines.",
+    "estimated_duration_s": 30,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 2, CE2 : décomposition du type (4 × 1 000) + (6 × 100) + (3 × 10) + (5 × 1)."
+  },
+  {
+    "id": "EX-A009-E-01",
+    "skill_id": "A009",
+    "level": "entrainement",
+    "type": "numerique",
+    "statement": "Dans le nombre 3 847, quel est le **nombre** de centaines ?",
+    "image": null,
+    "answer": {
+      "value": 38
+    },
+    "solution_steps": [
+      "Le nombre de centaines compte toutes les centaines, y compris celles contenues dans les milliers.",
+      "1 millier vaut 10 centaines, donc 3 milliers valent 30 centaines.",
+      "On ajoute les 8 centaines déjà présentes : $30 + 8 = 38$.",
+      "Il y a **38** centaines (et il reste 47 unités)."
+    ],
+    "hint": "Un millier, c'est dix centaines.",
+    "estimated_duration_s": 75,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 2, CE2 : unités de numération."
+  },
+  {
+    "id": "EX-A009-M-01",
+    "skill_id": "A009",
+    "level": "maitrise",
+    "type": "qcm",
+    "statement": "Dans le nombre 6 304, quel est le **nombre** de dizaines ?",
+    "image": null,
+    "choices": [
+      {
+        "key": "a",
+        "text": "630",
+        "misconception": null
+      },
+      {
+        "key": "b",
+        "text": "0",
+        "misconception": "L'élève donne le CHIFFRE des dizaines au lieu du NOMBRE de dizaines. C'est la confusion centrale de cette compétence."
+      },
+      {
+        "key": "c",
+        "text": "63",
+        "misconception": "L'élève compte les centaines au lieu des dizaines."
+      }
+    ],
+    "answer": {
+      "value": "a"
+    },
+    "solution_steps": [
+      "Le **chiffre** des dizaines est 0, mais la question porte sur le **nombre** de dizaines.",
+      "Le nombre de dizaines compte toutes les dizaines contenues dans 6 304, y compris celles cachées dans les centaines et les milliers.",
+      "$6\\,304 = 630 \\times 10 + 4$.",
+      "Il y a donc **630** dizaines, et il reste 4 unités."
+    ],
+    "hint": "Combien de paquets de 10 peut-on faire avec 6 304 ? Ce n'est pas la même question que « quel chiffre occupe le rang des dizaines ».",
+    "estimated_duration_s": 90,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 2, CE2 : unités de numération."
+  }
+]

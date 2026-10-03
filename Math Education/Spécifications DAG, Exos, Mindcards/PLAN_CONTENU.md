@@ -62,8 +62,15 @@ domaines à moitié faits.
    **Garder les mêmes agents** d'un bout à l'autre d'une étape : le rapport de
    relecture repart chez le rédacteur d'origine, et la contre-relecture chez le
    relecteur d'origine. Chacun garde ainsi le contexte de son lot.
-   puis recopie des trois fichiers dans `Math_Edu_Application/src/content/`, et
-   `npm test && npm run lint && npm run build` dans l'application.
+   puis `python scripts/contenu.py export-app` (l'application reçoit trois
+   fichiers assemblés), et `npm test && npm run lint && npm run build` dans
+   l'application.
+
+   Le contenu est découpé : `content/dag/<domaine>.json`,
+   `content/exercices/<domaine>/<compétence>.json`, `content/cartes/<carte>.json`.
+   Aucun script ne lit ces fichiers à la main : tous passent par
+   `scripts/contenu.py`. Les fusions acceptent un tableau JSON tel que les agents
+   le produisent.
 6. **Suivi** : bilan dans `QUALITY.md`, état dans ce fichier, commit.
 
 Tout reste en `review_status: "brouillon"` ou `"relu_agent"` : **seule la relecture

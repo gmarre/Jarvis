@@ -1,0 +1,73 @@
+[
+  {
+    "id": "EX-A007-D-01",
+    "skill_id": "A007",
+    "level": "decouverte",
+    "type": "texte",
+    "statement": "Range ces nombres par ordre **croissant** : 45, 12, 78, 3.\n\nSépare les nombres par des virgules.",
+    "image": null,
+    "answer": {
+      "value": "3, 12, 45, 78",
+      "accepted": [
+        "3,12,45,78",
+        "3 12 45 78"
+      ]
+    },
+    "solution_steps": [
+      "Ordre croissant signifie du plus petit au plus grand.",
+      "Le plus petit est 3, puis 12 (deux chiffres, 1 dizaine), puis 45, puis 78.",
+      "Réponse : 3, 12, 45, 78."
+    ],
+    "hint": "Croissant veut dire que les nombres augmentent.",
+    "estimated_duration_s": 50,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 2, CE2 : les nombres jusqu'à 10 000."
+  },
+  {
+    "id": "EX-A007-E-01",
+    "skill_id": "A007",
+    "level": "entrainement",
+    "type": "texte",
+    "statement": "Range ces nombres par ordre **décroissant** : 1 204, 1 240, 1 024, 1 402.\n\nSépare les nombres par des virgules.",
+    "image": null,
+    "answer": {
+      "value": "1402, 1240, 1204, 1024",
+      "accepted": [
+        "1 402, 1 240, 1 204, 1 024",
+        "1402,1240,1204,1024"
+      ]
+    },
+    "solution_steps": [
+      "Décroissant signifie du plus grand au plus petit.",
+      "Tous ont 4 chiffres et commencent par 1 : on compare le rang des centaines.",
+      "Centaines : 4 pour 1 402, 2 pour 1 240 et 1 204, 0 pour 1 024. Donc 1 402 est le plus grand.",
+      "Entre 1 240 et 1 204, on compare les dizaines : 4 contre 0, donc $1\\,240 > 1\\,204$.",
+      "Réponse : 1 402, 1 240, 1 204, 1 024."
+    ],
+    "hint": "Les quatre nombres commencent par 1 : passe au rang suivant.",
+    "estimated_duration_s": 90,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 2, CE2 : les nombres jusqu'à 10 000."
+  },
+  {
+    "id": "EX-A007-M-01",
+    "skill_id": "A007",
+    "level": "maitrise",
+    "type": "numerique",
+    "statement": "Trouve un nombre entier qui se place **entre** 2 899 et 2 901.",
+    "image": null,
+    "answer": {
+      "value": 2900
+    },
+    "solution_steps": [
+      "On cherche un entier strictement plus grand que 2 899 et strictement plus petit que 2 901.",
+      "Juste après 2 899 vient 2 900.",
+      "Et $2\\,900 < 2\\,901$ : c'est la seule réponse possible.",
+      "Réponse : **2 900**."
+    ],
+    "hint": "Quel nombre vient juste après 2 899 ?",
+    "estimated_duration_s": 60,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 2, CE2 : les nombres jusqu'à 10 000."
+  }
+]

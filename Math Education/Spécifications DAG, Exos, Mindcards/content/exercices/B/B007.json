@@ -1,0 +1,167 @@
+[
+  {
+    "id": "EX-B007-D-01",
+    "skill_id": "B007",
+    "level": "decouverte",
+    "type": "numerique",
+    "statement": "Une bande dessinée a 58 pages.\n\nCombien de pages ont 3 bandes dessinées identiques ? Pose la multiplication.",
+    "image": null,
+    "answer": {
+      "value": 174
+    },
+    "solution_steps": [
+      "3 bandes dessinées de 58 pages : on calcule $58 \\times 3$. On pose 58 en haut et 3 en dessous, sous le chiffre des unités.",
+      "Colonne des unités : $3 \\times 8 = 24$. On écrit 4 aux unités et on retient 2 dizaines.",
+      "Colonne des dizaines : $3 \\times 5 = 15$ dizaines, plus les 2 dizaines de retenue, cela fait 17 dizaines. On écrit 17 : 7 aux dizaines et 1 aux centaines.",
+      "$58 \\times 3 = 174$. Les 3 bandes dessinées ont **174** pages."
+    ],
+    "hint": "Commence par les unités : 3 fois 8. N'oublie pas la retenue.",
+    "estimated_duration_s": 75,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 2, CE2 : poser et effectuer des multiplications d'un nombre à deux ou trois chiffres par un nombre à un ou deux chiffres."
+  },
+  {
+    "id": "EX-B007-D-02",
+    "skill_id": "B007",
+    "level": "decouverte",
+    "type": "qcm",
+    "statement": "Un camion transporte 4 caisses de 127 bouteilles.\n\nPose et calcule $127 \\times 4$. Combien y a-t-il de bouteilles ?",
+    "image": null,
+    "choices": [
+      {
+        "key": "a",
+        "text": "488",
+        "misconception": "L'élève multiplie chaque chiffre mais oublie les retenues : 4 × 7 = 28, il écrit 8 ; 4 × 2 = 8 ; 4 × 1 = 4. Il obtient 488."
+      },
+      {
+        "key": "b",
+        "text": "508",
+        "misconception": null
+      },
+      {
+        "key": "c",
+        "text": "4 828",
+        "misconception": "L'élève écrit chaque produit en entier côte à côte au lieu de ne garder qu'un chiffre par colonne : 4 × 1 = 4, 4 × 2 = 8 et 4 × 7 = 28 donnent 4 828."
+      }
+    ],
+    "answer": {
+      "value": "b"
+    },
+    "solution_steps": [
+      "On pose 127 en haut et 4 en dessous, sous le chiffre des unités.",
+      "Unités : $4 \\times 7 = 28$. On écrit 8 et on retient 2 dizaines.",
+      "Dizaines : $4 \\times 2 = 8$ dizaines, plus 2 de retenue, cela fait 10 dizaines. On écrit 0 aux dizaines et on retient 1 centaine.",
+      "Centaines : $4 \\times 1 = 4$ centaines, plus 1 de retenue, cela fait 5 centaines. On écrit 5.",
+      "$127 \\times 4 = 508$. Il y a **508** bouteilles : la bonne réponse est b."
+    ],
+    "hint": "Dans chaque colonne, on n'écrit qu'un seul chiffre : le reste part en retenue dans la colonne suivante.",
+    "estimated_duration_s": 75,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 2, CE2 : poser et effectuer des multiplications d'un nombre à deux ou trois chiffres par un nombre à un ou deux chiffres."
+  },
+  {
+    "id": "EX-B007-E-01",
+    "skill_id": "B007",
+    "level": "entrainement",
+    "type": "numerique",
+    "statement": "Un verger compte 26 rangées de 47 arbres.\n\nCombien d'arbres y a-t-il ? Pose la multiplication.",
+    "image": null,
+    "answer": {
+      "value": 1222,
+      "accepted": [
+        "1 222"
+      ]
+    },
+    "solution_steps": [
+      "26 rangées de 47 arbres : on calcule $47 \\times 26$. On pose 47 en haut et 26 en dessous. Comme $26 = 6 + 20$, on calcule deux lignes : 47 fois 6, puis 47 fois 20.",
+      "Première ligne, $47 \\times 6$ : $6 \\times 7 = 42$, on écrit 2 et on retient 4 ; $6 \\times 4 = 24$, plus 4, cela fait 28. La première ligne est 282.",
+      "Deuxième ligne, $47 \\times 20$ : le 2 de 26 vaut 2 dizaines. On écrit d'abord un 0 aux unités, car on multiplie par des dizaines. Puis $2 \\times 7 = 14$, on écrit 4 et on retient 1 ; $2 \\times 4 = 8$, plus 1, cela fait 9. La deuxième ligne est 940.",
+      "On additionne les deux lignes : $282 + 940 = 1\\,222$. Il y a **1 222** arbres."
+    ],
+    "hint": "Fais deux lignes : 47 fois 6, puis 47 fois 20. Pour la seconde, pense au 0 des dizaines.",
+    "estimated_duration_s": 150,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 2, CE2 : poser et effectuer des multiplications d'un nombre à deux ou trois chiffres par un nombre à un ou deux chiffres."
+  },
+  {
+    "id": "EX-B007-E-02",
+    "skill_id": "B007",
+    "level": "entrainement",
+    "type": "vrai_faux",
+    "statement": "Pour calculer $53 \\times 32$, Léo pose l'opération et trouve 265.\n\nLéo a-t-il raison ?",
+    "image": null,
+    "answer": {
+      "value": false
+    },
+    "solution_steps": [
+      "$32 = 2 + 30$ : on calcule deux lignes, 53 fois 2, puis 53 fois 30.",
+      "Première ligne : $53 \\times 2 = 106$.",
+      "Deuxième ligne : le 3 de 32 vaut 3 dizaines. On écrit un 0 aux unités, puis $3 \\times 53 = 159$ : la ligne est 1 590.",
+      "On additionne : $106 + 1\\,590 = 1\\,696$. Donc $53 \\times 32 = 1\\,696$.",
+      "Léo a **tort**. Il a écrit 159 sans le 0 de la deuxième ligne, comme si le 3 valait 3 unités : $106 + 159 = 265$."
+    ],
+    "hint": "Dans 32, le chiffre 3 vaut 3 dizaines. Que faut-il écrire au début de la deuxième ligne ?",
+    "estimated_duration_s": 120,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 2, CE2 : poser et effectuer des multiplications d'un nombre à deux ou trois chiffres par un nombre à un ou deux chiffres."
+  },
+  {
+    "id": "EX-B007-M-01",
+    "skill_id": "B007",
+    "level": "maitrise",
+    "type": "qcm",
+    "statement": "Un avion transporte 168 passagers par vol. Ce mois-ci, il fait 37 vols complets.\n\nCombien de passagers a-t-il transportés ?",
+    "image": null,
+    "choices": [
+      {
+        "key": "a",
+        "text": "1 680",
+        "misconception": "L'élève oublie le 0 de la deuxième ligne : il calcule 168 × 7 = 1 176 et 168 × 3 = 504, puis additionne 1 176 + 504 = 1 680, comme si le 3 de 37 valait 3 unités."
+      },
+      {
+        "key": "b",
+        "text": "5 040",
+        "misconception": "L'élève ne calcule que la ligne des dizaines, 168 × 30 = 5 040, et oublie d'ajouter la ligne des unités, 168 × 7."
+      },
+      {
+        "key": "c",
+        "text": "6 216",
+        "misconception": null
+      }
+    ],
+    "answer": {
+      "value": "c"
+    },
+    "solution_steps": [
+      "37 vols de 168 passagers : on calcule $168 \\times 37$. On pose 168 en haut et 37 en dessous. Comme $37 = 7 + 30$, on calcule deux lignes.",
+      "Première ligne, $168 \\times 7$ : $7 \\times 8 = 56$, on écrit 6 et on retient 5 ; $7 \\times 6 = 42$, plus 5, cela fait 47, on écrit 7 et on retient 4 ; $7 \\times 1 = 7$, plus 4, cela fait 11. La ligne est 1 176.",
+      "Deuxième ligne, $168 \\times 30$ : on écrit un 0 aux unités, puis $3 \\times 8 = 24$, on écrit 4 et on retient 2 ; $3 \\times 6 = 18$, plus 2, cela fait 20, on écrit 0 et on retient 2 ; $3 \\times 1 = 3$, plus 2, cela fait 5. La ligne est 5 040.",
+      "On additionne les deux lignes : $1\\,176 + 5\\,040 = 6\\,216$. L'avion a transporté **6 216** passagers : la bonne réponse est c."
+    ],
+    "hint": "Il faut deux lignes : une pour les 7 unités de 37, une pour ses 3 dizaines. Puis on les additionne.",
+    "estimated_duration_s": 180,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 2, CE2 : poser et effectuer des multiplications d'un nombre à deux ou trois chiffres par un nombre à un ou deux chiffres."
+  },
+  {
+    "id": "EX-B007-M-02",
+    "skill_id": "B007",
+    "level": "maitrise",
+    "type": "numerique",
+    "statement": "Une boulangère cuit 45 plaques de 12 croissants et 23 plaques de 9 brioches.\n\nCombien de croissants et de brioches cuit-elle en tout ?",
+    "image": null,
+    "answer": {
+      "value": 747
+    },
+    "solution_steps": [
+      "Les croissants : 45 plaques de 12 croissants, soit $45 \\times 12$. Première ligne, $45 \\times 2 = 90$. Deuxième ligne, $45 \\times 10$ : on écrit un 0 aux unités, puis 45, ce qui donne 450. Total : $90 + 450 = 540$ croissants.",
+      "Les brioches : 23 plaques de 9 brioches, soit $23 \\times 9$. Unités : $9 \\times 3 = 27$, on écrit 7 et on retient 2. Dizaines : $9 \\times 2 = 18$, plus 2, cela fait 20. Résultat : 207 brioches.",
+      "On additionne les croissants et les brioches : $540 + 207 = 747$.",
+      "La boulangère cuit **747** croissants et brioches."
+    ],
+    "hint": "Calcule d'abord le nombre de croissants, puis le nombre de brioches, et additionne.",
+    "estimated_duration_s": 180,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 2, CE2 : poser et effectuer des multiplications d'un nombre à deux ou trois chiffres par un nombre à un ou deux chiffres ; résoudre des problèmes mixtes en deux ou trois étapes."
+  }
+]

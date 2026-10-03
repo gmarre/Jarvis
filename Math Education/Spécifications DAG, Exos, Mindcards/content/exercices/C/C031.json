@@ -1,0 +1,184 @@
+[
+  {
+    "id": "EX-C031-D-01",
+    "skill_id": "C031",
+    "level": "decouverte",
+    "type": "texte",
+    "statement": "Calcule $7 \\times \\frac{1}{4}$.\n\nÉcris ta réponse sous la forme numérateur/dénominateur.",
+    "image": null,
+    "answer": {
+      "value": "7/4",
+      "accepted": [
+        "7 / 4"
+      ]
+    },
+    "solution_steps": [
+      "Prendre 7 fois un quart, c'est prendre 7 quarts.",
+      "$7 \\times \\frac{1}{4} = \\frac{7}{4}$.",
+      "Le dénominateur ne change pas : la taille des parts est la même, on en prend simplement davantage."
+    ],
+    "hint": "Sept fois un quart, cela fait combien de quarts ?",
+    "estimated_duration_s": 60,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 3, CM2 : calculer le produit d'un entier et d'une fraction."
+  },
+  {
+    "id": "EX-C031-D-02",
+    "skill_id": "C031",
+    "level": "decouverte",
+    "type": "numerique",
+    "statement": "Complète : $3 \\times \\frac{2}{5} = \\frac{\\ldots}{5}$",
+    "image": null,
+    "answer": {
+      "value": 6
+    },
+    "solution_steps": [
+      "On multiplie seulement le **numérateur** : $3 \\times 2 = 6$.",
+      "Le dénominateur reste 5.",
+      "$3 \\times \\frac{2}{5} = \\frac{6}{5}$."
+    ],
+    "hint": "Trois fois deux cinquièmes, cela fait combien de cinquièmes ?",
+    "estimated_duration_s": 60,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 3, CM2 : calculer le produit d'un entier et d'une fraction."
+  },
+  {
+    "id": "EX-C031-E-01",
+    "skill_id": "C031",
+    "level": "entrainement",
+    "type": "vrai_faux",
+    "statement": "Le résultat de $5 \\times \\frac{3}{8}$ est plus petit que 1.",
+    "image": null,
+    "answer": {
+      "value": false
+    },
+    "solution_steps": [
+      "Multiplier par 5, c'est prendre 5 fois $\\frac{3}{8}$.",
+      "$5 \\times \\frac{3}{8} = \\frac{5 \\times 3}{8} = \\frac{15}{8}$.",
+      "Un tout vaut 8 huitièmes. Or 15 huitièmes, c'est plus que 8 huitièmes.",
+      "Donc $\\frac{15}{8}$ est **plus grand que 1** : c'est un tout entier, plus 7 huitièmes."
+    ],
+    "hint": "Combien de huitièmes font un tout entier ? Compare avec le numérateur trouvé.",
+    "estimated_duration_s": 75,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 3, CM2 : calculer le produit d'un entier et d'une fraction."
+  },
+  {
+    "id": "EX-C031-E-02",
+    "skill_id": "C031",
+    "level": "entrainement",
+    "type": "qcm",
+    "statement": "Que vaut $4 \\times \\frac{2}{3}$ ?",
+    "image": null,
+    "choices": [
+      {
+        "key": "a",
+        "text": "$\\frac{8}{3}$",
+        "misconception": null
+      },
+      {
+        "key": "b",
+        "text": "$\\frac{8}{12}$",
+        "misconception": "L'élève multiplie aussi le dénominateur par 4, alors que la taille des parts ne change pas."
+      },
+      {
+        "key": "c",
+        "text": "$\\frac{2}{12}$",
+        "misconception": "L'élève multiplie le dénominateur au lieu du numérateur."
+      }
+    ],
+    "answer": {
+      "value": "a"
+    },
+    "solution_steps": [
+      "Multiplier par un entier, c'est prendre plusieurs fois la même quantité de parts.",
+      "$4 \\times \\frac{2}{3}$, c'est 4 fois 2 tiers, donc 8 tiers.",
+      "$4 \\times \\frac{2}{3} = \\frac{8}{3}$.",
+      "Le dénominateur ne bouge pas : les parts restent des tiers."
+    ],
+    "hint": "Le nombre de parts augmente, mais leur taille reste la même.",
+    "estimated_duration_s": 75,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 3, CM2 : calculer le produit d'un entier et d'une fraction."
+  },
+  {
+    "id": "EX-C031-E-03",
+    "skill_id": "C031",
+    "level": "entrainement",
+    "type": "numerique",
+    "statement": "Un verre contient $\\frac{1}{5}$ de litre. Combien de litres contiennent 10 verres ?",
+    "image": null,
+    "answer": {
+      "value": 2,
+      "unit": "litres"
+    },
+    "solution_steps": [
+      "$10 \\times \\frac{1}{5} = \\frac{10}{5}$.",
+      "$\\frac{10}{5} = 2$, car 5 cinquièmes font 1 litre, et il y en a deux fois 5.",
+      "Les 10 verres contiennent **2 litres**."
+    ],
+    "hint": "Combien de verres faut-il pour remplir un litre entier ?",
+    "estimated_duration_s": 90,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 3, CM2 : calculer le produit d'un entier et d'une fraction."
+  },
+  {
+    "id": "EX-C031-M-01",
+    "skill_id": "C031",
+    "level": "maitrise",
+    "type": "numerique",
+    "statement": "Combien de fois faut-il prendre $\\frac{3}{4}$ pour obtenir exactement 3 ?",
+    "image": null,
+    "answer": {
+      "value": 4
+    },
+    "solution_steps": [
+      "On cherche l'entier $n$ tel que $n \\times \\frac{3}{4} = 3$.",
+      "3 vaut $\\frac{12}{4}$, soit 12 quarts.",
+      "Chaque prise apporte 3 quarts : il en faut $12 \\div 3 = 4$.",
+      "Vérification : $4 \\times \\frac{3}{4} = \\frac{12}{4} = 3$."
+    ],
+    "hint": "Écris d'abord 3 sous forme de quarts.",
+    "estimated_duration_s": 150,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 3, CM2 : calculer le produit d'un entier et d'une fraction."
+  },
+  {
+    "id": "EX-C031-M-02",
+    "skill_id": "C031",
+    "level": "maitrise",
+    "type": "qcm",
+    "statement": "Une recette demande $\\frac{2}{3}$ de litre de lait. On la fait 3 fois.\n\nCombien de lait faut-il ?",
+    "image": null,
+    "choices": [
+      {
+        "key": "a",
+        "text": "2 litres",
+        "misconception": null
+      },
+      {
+        "key": "b",
+        "text": "$\\frac{2}{9}$ de litre",
+        "misconception": "L'élève multiplie le dénominateur au lieu du numérateur, et obtient moins que pour une seule recette."
+      },
+      {
+        "key": "c",
+        "text": "$\\frac{6}{9}$ de litre",
+        "misconception": "L'élève multiplie numérateur et dénominateur, ce qui redonne la quantité d'une seule recette."
+      }
+    ],
+    "answer": {
+      "value": "a"
+    },
+    "solution_steps": [
+      "$3 \\times \\frac{2}{3} = \\frac{6}{3}$.",
+      "$\\frac{6}{3} = 2$, car 3 tiers font 1 litre et il y a deux fois 3 tiers.",
+      "Il faut **2 litres**.",
+      "Contrôle de bon sens : une recette demande un peu plus d'un demi-litre, donc trois recettes en demandent un peu plus d'un litre et demi. 2 litres est plausible. Les réponses b et c donnent moins d'un litre, soit moins que pour une seule recette : c'est impossible."
+    ],
+    "hint": "Est-ce que trois recettes peuvent demander moins de lait qu'une seule ?",
+    "estimated_duration_s": 150,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 3, CM2 : calculer le produit d'un entier et d'une fraction."
+  }
+]

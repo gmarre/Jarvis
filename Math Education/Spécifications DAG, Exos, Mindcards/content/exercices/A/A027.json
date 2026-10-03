@@ -1,0 +1,214 @@
+[
+  {
+    "id": "EX-A027-D-01",
+    "skill_id": "A027",
+    "level": "decouverte",
+    "type": "texte",
+    "statement": "Les diviseurs de 12 sont 1, 2, 3, 4, 6 et 12.\n\nParmi eux, écris ceux qui sont aussi des diviseurs de 20.",
+    "image": null,
+    "answer": {
+      "value": "1, 2, 4",
+      "accepted": [
+        "1,2,4",
+        "1 ; 2 ; 4",
+        "1 2 4"
+      ]
+    },
+    "solution_steps": [
+      "On reprend la liste un nombre à la fois et on teste chacun sur 20.",
+      "$20 = 1 \\times 20$, $20 = 2 \\times 10$ et $20 = 4 \\times 5$ : ces trois multiplications tombent juste.",
+      "3 ne convient pas : $3 \\times 6 = 18$ et $3 \\times 7 = 21$, on saute 20.",
+      "6 non plus : $6 \\times 3 = 18$ et $6 \\times 4 = 24$. Quant à 12, il est plus grand que la moitié de 20.",
+      "Les diviseurs communs à 12 et à 20 sont donc 1, 2 et 4."
+    ],
+    "hint": "Prends les nombres de la liste un par un et divise 18 par chacun.",
+    "estimated_duration_s": 120,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 3, CM2, les nombres entiers : determiner les diviseurs communs a deux nombres entiers inferieurs ou egaux a 30."
+  },
+  {
+    "id": "EX-A027-D-02",
+    "skill_id": "A027",
+    "level": "decouverte",
+    "type": "qcm",
+    "statement": "Les nombres 12 et 20 ont plusieurs diviseurs communs.\n\nQuel est le plus grand d'entre eux ?",
+    "image": null,
+    "choices": [
+      {
+        "key": "a",
+        "text": "4",
+        "misconception": null
+      },
+      {
+        "key": "b",
+        "text": "10",
+        "misconception": "L'élève prend un diviseur de 20 sans vérifier qu'il divise aussi 12 : or aucun entier multiplié par 10 ne donne 12."
+      },
+      {
+        "key": "c",
+        "text": "6",
+        "misconception": "L'élève prend un diviseur de 12 sans vérifier qu'il divise aussi 20 : or $6 \\times 3 = 18$ et $6 \\times 4 = 24$, on saute 20."
+      }
+    ],
+    "answer": {
+      "value": "a"
+    },
+    "solution_steps": [
+      "Diviseurs de 12 : 1, 2, 3, 4, 6, 12. Diviseurs de 20 : 1, 2, 4, 5, 10, 20.",
+      "On écrit les deux listes l'une sous l'autre et on garde ce qui figure dans les deux : 1, 2 et 4.",
+      "Parmi ces diviseurs communs, le plus grand est 4.",
+      "10 n'apparaît que dans la liste de 20, et 6 n'apparaît que dans celle de 12 : ni l'un ni l'autre n'est commun."
+    ],
+    "hint": "Écris les deux listes de diviseurs l'une sous l'autre, puis compare-les.",
+    "estimated_duration_s": 90,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 3, CM2, les nombres entiers : determiner les diviseurs communs a deux nombres entiers inferieurs ou egaux a 30."
+  },
+  {
+    "id": "EX-A027-D-03",
+    "skill_id": "A027",
+    "level": "decouverte",
+    "type": "texte",
+    "statement": "Les premiers multiples de 3 sont 3, 6, 9, 12, 15, 18.\n\nParmi eux, écris ceux qui sont aussi des multiples de 6.",
+    "image": null,
+    "answer": {
+      "value": "6, 12, 18",
+      "accepted": [
+        "6,12,18",
+        "6 ; 12 ; 18",
+        "6 12 18"
+      ]
+    },
+    "solution_steps": [
+      "Un multiple commun à 3 et à 6 doit se trouver à la fois dans la table de 3 et dans la table de 6.",
+      "Table de 6 : 6, 12, 18, 24…",
+      "Dans la liste donnée, 6, 12 et 18 sont dans la table de 6.",
+      "3, 9 et 15 ne le sont pas : ils sont impairs, et tous les multiples de 6 sont pairs.",
+      "Les multiples communs cherchés sont 6, 12 et 18."
+    ],
+    "hint": "Prends les nombres de la liste un par un : lesquels sont dans la table de 6 ?",
+    "estimated_duration_s": 90,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 3, CM2, les nombres entiers : determiner les multiples communs a deux nombres entiers."
+  },
+  {
+    "id": "EX-A027-E-01",
+    "skill_id": "A027",
+    "level": "entrainement",
+    "type": "texte",
+    "statement": "Écris tous les diviseurs communs à 18 et à 24.\n\nSépare-les par des virgules.",
+    "image": null,
+    "answer": {
+      "value": "1, 2, 3, 6",
+      "accepted": [
+        "1,2,3,6",
+        "1 ; 2 ; 3 ; 6",
+        "1 2 3 6"
+      ]
+    },
+    "solution_steps": [
+      "Diviseurs de 18 : 1, 2, 3, 6, 9, 18.",
+      "Diviseurs de 24 : 1, 2, 3, 4, 6, 8, 12, 24.",
+      "On compare les deux listes.",
+      "Les nombres présents dans les deux sont 1, 2, 3 et 6.",
+      "Réponse : 1, 2, 3, 6."
+    ],
+    "hint": "Écris d'abord les deux listes complètes, puis entoure ce qu'elles ont en commun.",
+    "estimated_duration_s": 150,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 3, CM2, les nombres entiers : determiner les diviseurs communs a deux nombres entiers inferieurs ou egaux a 30."
+  },
+  {
+    "id": "EX-A027-E-02",
+    "skill_id": "A027",
+    "level": "entrainement",
+    "type": "texte",
+    "statement": "Écris les trois plus petits multiples communs à 4 et à 6, sans compter 0.\n\nSépare-les par des virgules.",
+    "image": null,
+    "answer": {
+      "value": "12, 24, 36",
+      "accepted": [
+        "12,24,36",
+        "12 ; 24 ; 36"
+      ]
+    },
+    "solution_steps": [
+      "Multiples de 4 : 4, 8, 12, 16, 20, 24, 28, 32, 36…",
+      "Multiples de 6 : 6, 12, 18, 24, 30, 36…",
+      "Un multiple commun doit figurer dans les deux listes.",
+      "On repère 12, puis 24, puis 36.",
+      "Réponse : 12, 24, 36."
+    ],
+    "hint": "Écris la table de 4 et la table de 6 l'une sous l'autre, puis compare.",
+    "estimated_duration_s": 150,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 3, CM2, les nombres entiers : determiner des multiples communs a deux nombres entiers inferieurs a 15."
+  },
+  {
+    "id": "EX-A027-E-03",
+    "skill_id": "A027",
+    "level": "entrainement",
+    "type": "vrai_faux",
+    "statement": "Marie affirme que 30 est un multiple commun à 6 et à 8.\n\nMarie a raison.",
+    "image": null,
+    "answer": {
+      "value": false
+    },
+    "solution_steps": [
+      "30 est bien un multiple de 6 : $30 = 6 \\times 5$.",
+      "Mais dans la table de 8 on trouve $8 \\times 3 = 24$, puis $8 \\times 4 = 32$ : 30 n'y figure pas.",
+      "Pour être un multiple commun, un nombre doit appartenir aux deux tables, pas à une seule.",
+      "Marie a donc **tort**. Le plus petit multiple commun à 6 et à 8 est 24."
+    ],
+    "hint": "Vérifie les deux tables, pas seulement l'une des deux.",
+    "estimated_duration_s": 75,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 3, CM2, les nombres entiers : determiner des multiples communs a deux nombres entiers inferieurs a 15."
+  },
+  {
+    "id": "EX-A027-M-01",
+    "skill_id": "A027",
+    "level": "maitrise",
+    "type": "numerique",
+    "statement": "Un bus part toutes les 12 minutes, un autre toutes les 8 minutes. Ils partent ensemble à 9 h.\n\nDans combien de minutes repartiront-ils ensemble ?",
+    "image": null,
+    "answer": {
+      "value": 24,
+      "unit": "minutes"
+    },
+    "solution_steps": [
+      "Le premier bus repart au bout de 12, 24, 36, 48 minutes…",
+      "Le second repart au bout de 8, 16, 24, 32 minutes…",
+      "Ils repartent ensemble à un instant présent dans les deux listes : c'est un multiple commun à 12 et à 8.",
+      "Le premier de ces instants est 24, car $24 = 12 \\times 2$ et $24 = 8 \\times 3$.",
+      "Réponse : **24** minutes, c'est-à-dire à 9 h 24."
+    ],
+    "hint": "Écris les horaires de départ de chaque bus, puis cherche le premier qui se retrouve dans les deux listes.",
+    "estimated_duration_s": 180,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 3, CM2, les nombres entiers : determiner des multiples communs a deux nombres entiers inferieurs a 15."
+  },
+  {
+    "id": "EX-A027-M-02",
+    "skill_id": "A027",
+    "level": "maitrise",
+    "type": "numerique",
+    "statement": "Un pâtissier a 20 éclairs et 30 tartelettes. Il prépare des paquets contenant tous le même nombre d'éclairs et le même nombre de tartelettes, et il utilise tout.\n\nQuel est le plus grand nombre de paquets qu'il peut faire ?",
+    "image": null,
+    "answer": {
+      "value": 10,
+      "unit": "paquets"
+    },
+    "solution_steps": [
+      "Les paquets étant identiques, le nombre de paquets doit diviser 20 pour les éclairs et diviser 30 pour les tartelettes.",
+      "Diviseurs de 20 : 1, 2, 4, 5, 10, 20. Diviseurs de 30 : 1, 2, 3, 5, 6, 10, 15, 30.",
+      "Les diviseurs communs sont 1, 2, 5 et 10.",
+      "On les compare : le plus grand est 10.",
+      "Le pâtissier fait **10** paquets, chacun avec 2 éclairs et 3 tartelettes."
+    ],
+    "hint": "Le nombre de paquets doit se retrouver dans les deux listes de diviseurs.",
+    "estimated_duration_s": 180,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 3, CM2, les nombres entiers : determiner les diviseurs communs a deux nombres entiers inferieurs ou egaux a 30."
+  }
+]

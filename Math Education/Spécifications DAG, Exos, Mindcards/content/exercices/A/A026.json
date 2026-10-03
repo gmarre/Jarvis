@@ -1,0 +1,209 @@
+[
+  {
+    "id": "EX-A026-D-01",
+    "skill_id": "A026",
+    "level": "decouverte",
+    "type": "qcm",
+    "statement": "Marc écrit $3 \\times 4 = 12$.\n\nQue peut-il en déduire sur les diviseurs de 12 ?",
+    "image": null,
+    "choices": [
+      {
+        "key": "a",
+        "text": "3 et 4 sont des diviseurs de 12",
+        "misconception": null
+      },
+      {
+        "key": "b",
+        "text": "12 est un diviseur de 3 et de 4",
+        "misconception": "L'élève inverse les rôles : un diviseur est plus petit que le nombre qu'il divise, ou égal à lui, or 12 est plus grand que 3 et que 4."
+      },
+      {
+        "key": "c",
+        "text": "3 et 4 sont les seuls diviseurs de 12",
+        "misconception": "L'élève croit qu'une seule multiplication donne tous les diviseurs et oublie $1 \\times 12$ et $2 \\times 6$."
+      }
+    ],
+    "answer": {
+      "value": "a"
+    },
+    "solution_steps": [
+      "$3 \\times 4 = 12$ signifie que 12 se partage en 3 parts de 4, ou en 4 parts de 3.",
+      "Ces deux partages tombent juste : 3 et 4 sont donc des diviseurs de 12.",
+      "Une multiplication fournit toujours deux diviseurs d'un coup.",
+      "12 n'est pas un diviseur de 3, car 12 est plus grand que 3.",
+      "Enfin 12 possède d'autres diviseurs, que d'autres multiplications feront apparaître."
+    ],
+    "hint": "Dans $3 \\times 4 = 12$, combien de nombres partagent 12 sans reste ?",
+    "estimated_duration_s": 60,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 3, CM2, les nombres entiers : determiner tous les diviseurs d'un nombre entier inferieur ou egal a 30."
+  },
+  {
+    "id": "EX-A026-D-02",
+    "skill_id": "A026",
+    "level": "decouverte",
+    "type": "texte",
+    "statement": "Écris tous les diviseurs de 12, du plus petit au plus grand.\n\nSépare-les par des virgules.",
+    "image": null,
+    "answer": {
+      "value": "1, 2, 3, 4, 6, 12",
+      "accepted": [
+        "1,2,3,4,6,12",
+        "1 ; 2 ; 3 ; 4 ; 6 ; 12"
+      ]
+    },
+    "solution_steps": [
+      "On cherche toutes les multiplications de deux entiers qui donnent 12.",
+      "$1 \\times 12 = 12$, $2 \\times 6 = 12$, $3 \\times 4 = 12$.",
+      "5 ne convient pas : aucun entier multiplié par 5 ne donne 12 ($5 \\times 2 = 10$ et $5 \\times 3 = 15$).",
+      "Chaque multiplication donne deux diviseurs : 1 et 12, puis 2 et 6, puis 3 et 4.",
+      "Rangés du plus petit au plus grand : 1, 2, 3, 4, 6, 12. Il y en a six."
+    ],
+    "hint": "Essaie 1, puis 2, puis 3… jusqu'à retomber sur un diviseur déjà écrit.",
+    "estimated_duration_s": 120,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 3, CM2, les nombres entiers : determiner tous les diviseurs d'un nombre entier inferieur ou egal a 30."
+  },
+  {
+    "id": "EX-A026-E-01",
+    "skill_id": "A026",
+    "level": "entrainement",
+    "type": "texte",
+    "statement": "Écris tous les diviseurs de 28, du plus petit au plus grand.\n\nSépare-les par des virgules.",
+    "image": null,
+    "answer": {
+      "value": "1, 2, 4, 7, 14, 28",
+      "accepted": [
+        "1,2,4,7,14,28",
+        "1 ; 2 ; 4 ; 7 ; 14 ; 28"
+      ]
+    },
+    "solution_steps": [
+      "On teste les nombres dans l'ordre.",
+      "$1 \\times 28 = 28$ : 1 et 28 sont des diviseurs.",
+      "3 ne convient pas : $3 \\times 9 = 27$ et $3 \\times 10 = 30$, on saute 28.",
+      "5 et 6 ne conviennent pas non plus. Au-delà de 7, on ne trouverait que des diviseurs déjà écrits, puisqu'ils sont les partenaires de 1, 2 et 4 : on peut s'arrêter.",
+      "$4 \\times 7 = 28$ : 4 et 7 sont des diviseurs.",
+      "5 et 6 ne conviennent pas. À partir de 7, on retrouve des diviseurs déjà écrits : on peut s'arrêter.",
+      "Réponse : 1, 2, 4, 7, 14, 28."
+    ],
+    "hint": "Chaque fois que tu trouves un diviseur, son partenaire de multiplication en est un aussi.",
+    "estimated_duration_s": 150,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 3, CM2, les nombres entiers : determiner tous les diviseurs d'un nombre entier inferieur ou egal a 30."
+  },
+  {
+    "id": "EX-A026-E-02",
+    "skill_id": "A026",
+    "level": "entrainement",
+    "type": "qcm",
+    "statement": "Zoé cherche tous les diviseurs de 18.\n\nQuelle liste est la bonne ?",
+    "image": null,
+    "choices": [
+      {
+        "key": "a",
+        "text": "1, 2, 3, 6, 9, 18",
+        "misconception": null
+      },
+      {
+        "key": "b",
+        "text": "2, 3, 6, 9",
+        "misconception": "L'élève oublie les deux diviseurs extrêmes : 1 et le nombre lui-même divisent toujours le nombre."
+      },
+      {
+        "key": "c",
+        "text": "1, 2, 3, 4, 6, 9, 18",
+        "misconception": "L'élève ajoute 4 en croyant que tout nombre pair a 4 pour diviseur ; or $18 = 4 \\times 4 + 2$."
+      }
+    ],
+    "answer": {
+      "value": "a"
+    },
+    "solution_steps": [
+      "$1 \\times 18 = 18$, $2 \\times 9 = 18$, $3 \\times 6 = 18$.",
+      "4 ne convient pas : $4 \\times 4 = 16$ et il resterait 2.",
+      "5 ne convient pas non plus, car 18 ne se termine ni par 0 ni par 5.",
+      "Après 6, on retombe sur les diviseurs déjà trouvés : on s'arrête.",
+      "Les diviseurs de 18 sont 1, 2, 3, 6, 9 et 18."
+    ],
+    "hint": "N'oublie ni 1 ni le nombre lui-même.",
+    "estimated_duration_s": 90,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 3, CM2, les nombres entiers : determiner tous les diviseurs d'un nombre entier inferieur ou egal a 30."
+  },
+  {
+    "id": "EX-A026-E-03",
+    "skill_id": "A026",
+    "level": "entrainement",
+    "type": "texte",
+    "statement": "Léa cherche tous les diviseurs de 23.\n\nÉcris-les, séparés par des virgules.",
+    "image": null,
+    "answer": {
+      "value": "1, 23",
+      "accepted": [
+        "1,23",
+        "1 et 23",
+        "23, 1"
+      ]
+    },
+    "solution_steps": [
+      "On teste les nombres un par un, comme d'habitude.",
+      "2 : 23 est impair, le partage ne tombe pas juste.",
+      "3 : $3 \\times 7 = 21$, il resterait 2. 4 : $4 \\times 5 = 20$, il resterait 3.",
+      "5 : 23 ne se termine ni par 0 ni par 5, donc non.",
+      "Inutile d'aller plus loin : $5 \\times 5 = 25$ dépasse déjà 23, les diviseurs suivants auraient tous été trouvés en partenaire.",
+      "Il ne reste que la multiplication $1 \\times 23 = 23$.",
+      "23 n'a donc que **deux** diviseurs, 1 et 23. Certains nombres en ont très peu : ce n'est pas une erreur."
+    ],
+    "hint": "Teste 2, 3, 4 puis 5. Combien de partages tombent juste ?",
+    "estimated_duration_s": 120,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 3, CM2, les nombres entiers : determiner des diviseurs d'un nombre entier inferieur ou egal a 100."
+  },
+  {
+    "id": "EX-A026-M-01",
+    "skill_id": "A026",
+    "level": "maitrise",
+    "type": "numerique",
+    "statement": "Léo range 100 jetons en boîtes égales et veut au moins deux boîtes.\n\nQuel est le plus grand nombre de jetons par boîte ?",
+    "image": null,
+    "answer": {
+      "value": 50,
+      "unit": "jetons"
+    },
+    "solution_steps": [
+      "Le nombre de jetons par boîte doit être un diviseur de 100.",
+      "Les diviseurs de 100 sont 1, 2, 4, 5, 10, 20, 25, 50 et 100.",
+      "100 est écarté : il ne donnerait qu'une seule boîte, or Léo en veut au moins deux.",
+      "Le plus grand diviseur restant est 50.",
+      "$100 = 2 \\times 50$ : Léo fait 2 boîtes de 50 jetons. Réponse : **50**."
+    ],
+    "hint": "Le nombre de jetons par boîte doit être un diviseur de 100. Lesquels sont possibles ?",
+    "estimated_duration_s": 150,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 3, CM2, les nombres entiers : determiner tous les diviseurs d'un nombre entier inferieur ou egal a 30."
+  },
+  {
+    "id": "EX-A026-M-02",
+    "skill_id": "A026",
+    "level": "maitrise",
+    "type": "numerique",
+    "statement": "Un jardinier plante 24 fleurs en rangées égales. Il veut plus de 4 rangées et moins de 8.\n\nCombien de rangées fait-il ?",
+    "image": null,
+    "answer": {
+      "value": 6,
+      "unit": "rangées"
+    },
+    "solution_steps": [
+      "Le nombre de rangées doit être un diviseur de 24, sinon une rangée serait incomplète.",
+      "Les diviseurs de 24 sont 1, 2, 3, 4, 6, 8, 12 et 24.",
+      "On ne garde que ceux qui sont strictement compris entre 4 et 8 : seul 6 convient.",
+      "5 et 7 ne sont pas des diviseurs de 24.",
+      "Le jardinier fait **6** rangées, avec 4 fleurs par rangée."
+    ],
+    "hint": "Écris d'abord tous les diviseurs de 24, puis regarde lesquels respectent la condition.",
+    "estimated_duration_s": 150,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 3, CM2, les nombres entiers : determiner tous les diviseurs d'un nombre entier inferieur ou egal a 30."
+  }
+]

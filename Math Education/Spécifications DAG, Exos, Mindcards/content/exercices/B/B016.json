@@ -1,0 +1,164 @@
+[
+  {
+    "id": "EX-B016-D-01",
+    "skill_id": "B016",
+    "level": "decouverte",
+    "type": "numerique",
+    "statement": "Pour calculer $68 \\div 4$, Léon prend la moitié de 68, puis la moitié du résultat.\n\nQuel nombre trouve-t-il ?",
+    "image": null,
+    "answer": {
+      "value": 17
+    },
+    "solution_steps": [
+      "Diviser par 4, c'est partager en 4 parts égales : on coupe en deux, puis on coupe chaque moitié en deux.",
+      "Moitié de 68 : la moitié de 60 est 30, la moitié de 8 est 4. Donc 34.",
+      "Moitié de 34 : la moitié de 30 est 15, la moitié de 4 est 2. Donc 17.",
+      "$68 \\div 4 = 17$. On vérifie en doublant deux fois : le double de 17 est 34, le double de 34 est 68."
+    ],
+    "hint": "Pour prendre la moitié de 68, coupe-le en 60 et 8.",
+    "estimated_duration_s": 45,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 3, CM2 : diviser un nombre entier par 4 ou par 8."
+  },
+  {
+    "id": "EX-B016-D-02",
+    "skill_id": "B016",
+    "level": "decouverte",
+    "type": "qcm",
+    "statement": "Quelle méthode permet de calculer $120 \\div 8$ de tête ?",
+    "image": null,
+    "choices": [
+      {
+        "key": "a",
+        "text": "Prendre la moitié de 120 deux fois de suite",
+        "misconception": "L'élève confond diviser par 8 et diviser par 4 : deux moitiés successives divisent seulement par 4, et donnent 30."
+      },
+      {
+        "key": "b",
+        "text": "Prendre la moitié de 120 trois fois de suite",
+        "misconception": null
+      },
+      {
+        "key": "c",
+        "text": "Prendre la moitié de 120 huit fois de suite",
+        "misconception": "L'élève croit qu'il faut autant de moitiés que le diviseur. Or chaque moitié divise par 2 : huit moitiés diviseraient par bien plus que 8."
+      }
+    ],
+    "answer": {
+      "value": "b"
+    },
+    "solution_steps": [
+      "Une moitié divise par 2. Deux moitiés divisent par 4, car $2 \\times 2 = 4$. Trois moitiés divisent par 8, car $2 \\times 2 \\times 2 = 8$.",
+      "On l'applique : moitié de 120, 60 ; moitié de 60, 30 ; moitié de 30, 15.",
+      "$120 \\div 8 = 15$. La bonne méthode est de prendre la moitié **trois fois** de suite."
+    ],
+    "hint": "Par combien divise-t-on quand on prend la moitié deux fois de suite ?",
+    "estimated_duration_s": 45,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 3, CM2 : diviser un nombre entier par 4 ou par 8."
+  },
+  {
+    "id": "EX-B016-E-01",
+    "skill_id": "B016",
+    "level": "entrainement",
+    "type": "numerique",
+    "statement": "Calcule de tête $184 \\div 4$.",
+    "image": null,
+    "answer": {
+      "value": 46
+    },
+    "solution_steps": [
+      "Diviser par 4, c'est prendre la moitié, puis la moitié du résultat.",
+      "Moitié de 184 : la moitié de 180 est 90, la moitié de 4 est 2. Donc 92.",
+      "Moitié de 92 : la moitié de 90 est 45, la moitié de 2 est 1. Donc 46.",
+      "$184 \\div 4 = 46$. On vérifie : le double de 46 est 92, le double de 92 est 184."
+    ],
+    "hint": "Décompose 184 en 180 et 4 pour en prendre facilement la moitié.",
+    "estimated_duration_s": 60,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 3, CM2 : diviser un nombre entier par 4 ou par 8."
+  },
+  {
+    "id": "EX-B016-E-02",
+    "skill_id": "B016",
+    "level": "entrainement",
+    "type": "vrai_faux",
+    "statement": "Pour calculer $248 \\div 8$, Sam prend des moitiés : 248, puis 124, puis 62. Il répond 62.\n\nSam a-t-il raison ?",
+    "image": null,
+    "answer": {
+      "value": false
+    },
+    "solution_steps": [
+      "Sam a pris deux moitiés : 248 donne 124, puis 124 donne 62. Deux moitiés divisent par 4 : il a calculé $248 \\div 4 = 62$.",
+      "Pour diviser par 8, il faut une troisième moitié : la moitié de 62 est 31.",
+      "$248 \\div 8 = 31$. Sam a **tort** : il s'est arrêté une moitié trop tôt."
+    ],
+    "hint": "Combien de moitiés faut-il prendre pour diviser par 8 ?",
+    "estimated_duration_s": 60,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 3, CM2 : diviser un nombre entier par 4 ou par 8."
+  },
+  {
+    "id": "EX-B016-M-01",
+    "skill_id": "B016",
+    "level": "maitrise",
+    "type": "numerique",
+    "statement": "Un ruban de 360 cm est coupé en 8 morceaux de même longueur.\n\nQuelle est la longueur d'un morceau, en cm ?",
+    "image": null,
+    "answer": {
+      "value": 45,
+      "unit": "cm",
+      "accepted": [
+        "45 cm",
+        "45cm"
+      ]
+    },
+    "solution_steps": [
+      "On partage 360 cm en 8 parts égales : on calcule $360 \\div 8$.",
+      "On prend trois moitiés : la moitié de 360 est 180, la moitié de 180 est 90, la moitié de 90 est 45.",
+      "Chaque morceau mesure **45** cm. On vérifie en doublant trois fois : 45, 90, 180, 360."
+    ],
+    "hint": "Couper en 8 parts égales, c'est couper en deux trois fois de suite.",
+    "estimated_duration_s": 75,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 3, CM2 : diviser un nombre entier par 4 ou par 8."
+  },
+  {
+    "id": "EX-B016-M-02",
+    "skill_id": "B016",
+    "level": "maitrise",
+    "type": "qcm",
+    "statement": "Nour divise un nombre par 4 et trouve 38.\n\nQue trouverait-elle en divisant ce nombre par 8 ?",
+    "image": null,
+    "choices": [
+      {
+        "key": "a",
+        "text": "76",
+        "misconception": "L'élève double le résultat, comme si diviser par un nombre plus grand donnait un résultat plus grand. Diviser par 8 donne des parts plus petites que diviser par 4."
+      },
+      {
+        "key": "b",
+        "text": "152",
+        "misconception": "L'élève remonte jusqu'au nombre de départ, 152, mais oublie de le diviser par 8 : il répond à une autre question."
+      },
+      {
+        "key": "c",
+        "text": "19",
+        "misconception": null
+      }
+    ],
+    "answer": {
+      "value": "c"
+    },
+    "solution_steps": [
+      "Diviser par 8, c'est prendre trois moitiés ; diviser par 4, c'est en prendre deux.",
+      "En trouvant 38, Nour a déjà pris les deux premières moitiés. Il manque une seule moitié.",
+      "La moitié de 38 : la moitié de 30 est 15, la moitié de 8 est 4. Donc 19.",
+      "En divisant par 8, Nour trouverait **19**. C'est logique : on partage en deux fois plus de parts, donc chaque part est deux fois plus petite."
+    ],
+    "hint": "Diviser par 8, c'est diviser par 4 et faire une étape de plus.",
+    "estimated_duration_s": 90,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 3, CM2 : diviser un nombre entier par 4 ou par 8."
+  }
+]

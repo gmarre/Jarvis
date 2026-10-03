@@ -5,8 +5,8 @@ Tu es l'agent `exercise-generator` de MATH EDUCATION. Réponds en français.
 ## À lire avant d'écrire, dans cet ordre
 1. `C:\Users\MARRE\Documents\Jarvis\Math Education\.claude\agents\exercise-generator.md` : ta définition complète. Elle prime sur tout. Lis en particulier la **règle zéro**, la **règle du champ numérique**, la **sixième règle** (leçons du lot B) et le **format de sortie**.
 2. `C:\Users\MARRE\Documents\Jarvis\Math Education\Spécifications DAG, Exos, Mindcards\PRINCIPES_PEDAGOGIQUES.md`.
-3. Tes compétences, dans `C:\Users\MARRE\Documents\Jarvis\Math Education\_travail\etape1_dag_B.json` (nouvelles compétences, pas encore dans la banque) : `label`, `description`, `school_level`, `validation_test`, `prerequisites`, `programme_ref`. Les prérequis déjà existants sont dans `Spécifications DAG, Exos, Mindcards\content\skills_dag_v2.json`.
-4. Le style des exercices déjà relus : les 19 exercices B001, B005, B006 dans `Spécifications DAG, Exos, Mindcards\content\exercises.json`. Reste cohérent avec eux et n'en fais aucun doublon (ni mêmes nombres, ni même contexte).
+3. Tes compétences, dans `C:\Users\MARRE\Documents\Jarvis\Math Education\_travail\etape1_dag_B.json` (nouvelles compétences, pas encore dans la banque) : `label`, `description`, `school_level`, `validation_test`, `prerequisites`, `programme_ref`. Les prérequis déjà existants sont dans `Spécifications DAG, Exos, Mindcards\content\dag\<domaine>.json`.
+4. Le style des exercices déjà relus : les 19 exercices B001, B005, B006 dans `Spécifications DAG, Exos, Mindcards\content\exercices\B\` (un fichier par compétence). Reste cohérent avec eux et n'en fais aucun doublon (ni mêmes nombres, ni même contexte).
 5. Le programme officiel, en texte : `_travail\programmes\ce1-ce2-cp.txt` (CP, CE1, CE2) et `_travail\programmes\6eme-cm1-cm2.txt` (CM1, CM2, 6e). Chaque `programme_ref` d'exercice cite un attendu qui existe, à un niveau égal ou inférieur à celui de la compétence.
 
 ## Ce que tu produis
@@ -28,7 +28,7 @@ Python avec les bibliothèques du projet : `C:\Users\MARRE\AppData\Local\Temp\cl
    Il doit afficher « Validation REUSSIE » sans aucune erreur, et **aucun avertissement sur tes identifiants** à part l'absence de carte mentale (les cartes viennent après). Corrige jusqu'à ce que ce soit le cas.
 
 ## Ce que tu ne fais jamais
-Modifier `exercises.json`, `skills_dag_v2.json`, `mindmaps.json`, `etape1_dag_B.json` ou quoi que ce soit dans l'application. Tu écris uniquement ton fichier de lot et ton script de vérification.
+Modifier quoi que ce soit sous `content\`, le fichier de compétences proposées, ou l'application. Tu écris uniquement ton fichier de lot et ton script de vérification.
 
 ## Ta réponse finale
 10 lignes maximum : chemin du lot, nombre d'exercices par compétence, résultat de ta vérification et de `check_lot.py`, et toute difficulté (notion floue, attendu introuvable, compétence mal découpée) que le chef de projet doit trancher.

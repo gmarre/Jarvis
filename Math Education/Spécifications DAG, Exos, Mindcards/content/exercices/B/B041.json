@@ -1,0 +1,162 @@
+[
+  {
+    "id": "EX-B041-D-01",
+    "skill_id": "B041",
+    "level": "decouverte",
+    "type": "numerique",
+    "statement": "Un carton contient 100 feuilles. L'école reçoit 7 cartons.\n\nCombien de feuilles reçoit-elle ?",
+    "image": null,
+    "answer": {
+      "value": 700
+    },
+    "solution_steps": [
+      "7 cartons de 100 feuilles : on calcule 7 fois 100, soit $7 \\times 100$.",
+      "100, c'est une centaine. 7 fois une centaine, c'est 7 centaines.",
+      "Multiplier par 100, c'est multiplier par 10 deux fois : les 7 unités deviennent 7 dizaines, puis 7 centaines. 7 centaines s'écrivent 700.",
+      "$7 \\times 100 = 700$. L'école reçoit **700** feuilles."
+    ],
+    "hint": "Combien de centaines y a-t-il dans 7 cartons de 100 ?",
+    "estimated_duration_s": 45,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 2, CE2 : multiplier un nombre entier par 10 ou 100 ; lors d'une multiplication par 10, une unité devient une dizaine, une dizaine devient une centaine et une centaine devient un millier."
+  },
+  {
+    "id": "EX-B041-D-02",
+    "skill_id": "B041",
+    "level": "decouverte",
+    "type": "vrai_faux",
+    "statement": "Sam dit : « $3 \\times 50$ fait 15, car $3 \\times 5 = 15$. »\n\nSam a-t-il raison ?",
+    "image": null,
+    "answer": {
+      "value": false
+    },
+    "solution_steps": [
+      "50, ce n'est pas 5 unités : c'est 5 **dizaines**.",
+      "3 fois 5 dizaines, c'est 15 dizaines, car $3 \\times 5 = 15$.",
+      "15 dizaines, c'est 1 centaine et 5 dizaines, c'est-à-dire 150. Donc $3 \\times 50 = 150$.",
+      "Sam a bien calculé $3 \\times 5$, mais il a oublié que ce sont des dizaines : il a **tort**."
+    ],
+    "hint": "Dans 50, combien y a-t-il de dizaines ?",
+    "estimated_duration_s": 45,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 2, CE2 : multiplier un nombre inférieur à 10 par un nombre entier de dizaines, en décomposant le nombre de dizaines puis en appliquant la multiplication par 10."
+  },
+  {
+    "id": "EX-B041-E-01",
+    "skill_id": "B041",
+    "level": "entrainement",
+    "type": "numerique",
+    "statement": "Un rouleau contient 80 tickets.\n\nCombien de tickets y a-t-il dans 7 rouleaux ?",
+    "image": null,
+    "answer": {
+      "value": 560
+    },
+    "solution_steps": [
+      "7 rouleaux de 80 tickets : on calcule $7 \\times 80$.",
+      "80, c'est 8 dizaines. 7 fois 8 dizaines, c'est 56 dizaines, car $7 \\times 8 = 56$.",
+      "56 dizaines, c'est $56 \\times 10$ : les 6 unités deviennent 6 dizaines, les 5 dizaines deviennent 5 centaines. On obtient 560.",
+      "$7 \\times 80 = 560$. Il y a **560** tickets."
+    ],
+    "hint": "Combien de dizaines y a-t-il dans 80 ? Multiplie ce nombre de dizaines par 7.",
+    "estimated_duration_s": 60,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 2, CE2 : multiplier un nombre inférieur à 10 par un nombre entier de dizaines, en décomposant le nombre de dizaines puis en appliquant la multiplication par 10."
+  },
+  {
+    "id": "EX-B041-E-02",
+    "skill_id": "B041",
+    "level": "entrainement",
+    "type": "qcm",
+    "statement": "Combien fait $45 \\times 100$ ?",
+    "image": null,
+    "choices": [
+      {
+        "key": "a",
+        "text": "145",
+        "misconception": "L'élève ajoute 100 au lieu de multiplier par 100 : 45 + 100 = 145."
+      },
+      {
+        "key": "b",
+        "text": "450",
+        "misconception": "L'élève multiplie par 10 au lieu de 100 : chaque unité devient une dizaine, mais pas une centaine. 450, c'est 45 × 10."
+      },
+      {
+        "key": "c",
+        "text": "4 500",
+        "misconception": null
+      }
+    ],
+    "answer": {
+      "value": "c"
+    },
+    "solution_steps": [
+      "45, c'est 4 dizaines et 5 unités.",
+      "Multiplier par 100, c'est multiplier par 10 deux fois. Chaque unité devient une centaine, et chaque dizaine devient un millier.",
+      "Les 5 unités deviennent 5 centaines, les 4 dizaines deviennent 4 milliers : on obtient 4 milliers et 5 centaines, c'est-à-dire 4 500.",
+      "$45 \\times 100 = 4\\,500$ : la bonne réponse est c."
+    ],
+    "hint": "Une dizaine multipliée par 100, que devient-elle ?",
+    "estimated_duration_s": 45,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 2, CE2 : multiplier un nombre entier par 10 ou 100 ; lors d'une multiplication par 10, une unité devient une dizaine, une dizaine devient une centaine et une centaine devient un millier."
+  },
+  {
+    "id": "EX-B041-M-01",
+    "skill_id": "B041",
+    "level": "maitrise",
+    "type": "qcm",
+    "statement": "Un bus a 40 places. Il faut transporter 190 enfants.\n\nCombien de bus faut-il, au minimum ?",
+    "image": null,
+    "choices": [
+      {
+        "key": "a",
+        "text": "4 bus",
+        "misconception": "L'élève calcule 4 × 40 = 160 et s'arrête au produit le plus proche, sans voir que 160 places ne suffisent pas pour 190 enfants : 30 enfants resteraient à pied."
+      },
+      {
+        "key": "b",
+        "text": "5 bus",
+        "misconception": null
+      },
+      {
+        "key": "c",
+        "text": "19 bus",
+        "misconception": "L'élève voit que 190, c'est 19 dizaines, et confond les dizaines d'enfants avec les bus : il fait comme si chaque bus avait 10 places au lieu de 40."
+      }
+    ],
+    "answer": {
+      "value": "b"
+    },
+    "solution_steps": [
+      "40 places, c'est 4 dizaines de places. On cherche combien de bus donnent au moins 190 places.",
+      "4 bus : 4 fois 4 dizaines, c'est 16 dizaines, soit $4 \\times 40 = 160$ places. C'est moins que 190 : 30 enfants n'auraient pas de place.",
+      "5 bus : 5 fois 4 dizaines, c'est 20 dizaines, soit $5 \\times 40 = 200$ places. C'est assez pour 190 enfants, et il reste 10 places libres.",
+      "Il faut au minimum **5 bus** : la bonne réponse est b."
+    ],
+    "hint": "Calcule le nombre de places pour plusieurs bus, et arrête-toi dès que tous les enfants peuvent s'asseoir.",
+    "estimated_duration_s": 90,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 2, CE2 : multiplier un nombre inférieur à 10 par un nombre entier de dizaines, en décomposant le nombre de dizaines puis en appliquant la multiplication par 10."
+  },
+  {
+    "id": "EX-B041-M-02",
+    "skill_id": "B041",
+    "level": "maitrise",
+    "type": "numerique",
+    "statement": "Un sachet contient 90 perles. Léa a 720 perles, toutes rangées en sachets.\n\nCombien de sachets a-t-elle ?",
+    "image": null,
+    "answer": {
+      "value": 8
+    },
+    "solution_steps": [
+      "On cherche combien de sachets de 90 perles font 720 perles : $\\dots \\times 90 = 720$.",
+      "90, c'est 9 dizaines, et 720, c'est 72 dizaines.",
+      "On cherche donc combien de fois 9 dizaines font 72 dizaines : dans la table de 9, $9 \\times 8 = 72$.",
+      "Vérification : $8 \\times 90 = 720$, car 8 fois 9 dizaines font 72 dizaines. Léa a **8** sachets."
+    ],
+    "hint": "Compte en dizaines : combien de dizaines dans 90, combien dans 720 ?",
+    "estimated_duration_s": 75,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 2, CE2 : multiplier un nombre inférieur à 10 par un nombre entier de dizaines, en décomposant le nombre de dizaines puis en appliquant la multiplication par 10."
+  }
+]

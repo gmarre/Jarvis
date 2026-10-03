@@ -128,6 +128,18 @@ Le chapitre est l'unité qu'un exercice bilan validerait.
 | `B012` Calcul avec parenthèses | Effectuer un calcul contenant une paire de parenthèses, en commençant par… | 6 |
 | `B017` Estimer le résultat d'une opérati… | Donner un ordre de grandeur du résultat d'une addition, d'une soustractio… | 6 |
 
+### `MM-B-02` · La multiplication (CE1-CE2)
+
+5 compétences, 31 exercices, niveaux CE1, CE2.
+
+| Compétence | Ce que l'élève doit savoir faire | Exos |
+|---|---|--:|
+| `B005` Multiplication à un chiffre | Multiplier par un chiffre (tables de 1 à 5) | 7 |
+| `B015` Calcul mental : multiplier par 10 | Multiplier mentalement par 10 un nombre inférieur à 100, en raisonnant su… | 6 |
+| `B006` Tables de multiplication | Connaître les tables de 1 à 9 par cœur | 6 |
+| `B041` Calcul mental : multiplier par 10… | Multiplier mentalement un nombre entier par 10 ou par 100, et un nombre i… | 6 |
+| `B007` Multiplication posée | Poser et calculer la multiplication d'un nombre à deux ou trois chiffres … | 6 |
+
 ### `MM-C-01` · Decouvrir les fractions (CE1)
 
 6 compétences, 22 exercices, niveaux CE1.
@@ -140,18 +152,6 @@ Le chapitre est l'unité qu'un exercice bilan validerait.
 | `C009` Comparer fractions de même dénomi… | Comparer deux fractions ayant le même dénominateur | 3 |
 | `C012` Additionner des fractions de même… | Additionner et soustraire deux fractions de même dénominateur | 3 |
 | `C026` Comparer des fractions de numérat… | Comparer deux fractions dont le numérateur est 1 | 7 |
-
-### `MM-B-02` · La multiplication (CE1-CE2)
-
-5 compétences, 31 exercices, niveaux CE1, CE2.
-
-| Compétence | Ce que l'élève doit savoir faire | Exos |
-|---|---|--:|
-| `B005` Multiplication à un chiffre | Multiplier par un chiffre (tables de 1 à 5) | 7 |
-| `B015` Calcul mental : multiplier par 10 | Multiplier mentalement par 10 un nombre inférieur à 100, en raisonnant su… | 6 |
-| `B006` Tables de multiplication | Connaître les tables de 1 à 9 par cœur | 6 |
-| `B041` Calcul mental : multiplier par 10… | Multiplier mentalement un nombre entier par 10 ou par 100, et un nombre i… | 6 |
-| `B007` Multiplication posée | Poser et calculer la multiplication d'un nombre à deux ou trois chiffres … | 6 |
 
 ### `MM-C-02` · Fractions egales, droite graduee, fraction d'une quantite (CE2-CM1)
 

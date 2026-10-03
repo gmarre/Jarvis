@@ -1,0 +1,167 @@
+[
+  {
+    "id": "EX-B040-D-01",
+    "skill_id": "B040",
+    "level": "decouverte",
+    "type": "numerique",
+    "statement": "Pose la division euclidienne de 538 par 24.\n\nQuel est le quotient ?",
+    "image": null,
+    "answer": {
+      "value": 22
+    },
+    "solution_steps": [
+      "5 centaines ne suffisent pas pour un groupe de 24 : on commence par 53 dizaines. Le quotient aura donc deux chiffres, les dizaines et les unités.",
+      "Combien de fois 24 dans 53 ? $24 \\times 2 = 48$ et $24 \\times 3 = 72$ dépasse 53. On écrit 2 au quotient, au rang des dizaines. Il reste $53 - 48 = 5$ dizaines.",
+      "On abaisse le 8 : 5 dizaines et 8 unités font 58. $24 \\times 2 = 48$ et $24 \\times 3 = 72$ dépasse 58. On écrit 2 au rang des unités. Il reste $58 - 48 = 10$.",
+      "Le quotient est **22** et le reste est 10, plus petit que le diviseur 24. Vérification : $24 \\times 22 + 10 = 528 + 10 = 538$."
+    ],
+    "hint": "Pour estimer combien de fois 24 dans 53, arrondis 24 à 25 et pense à 25, 50, 75.",
+    "estimated_duration_s": 90,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 3, 6e : effectuer la division euclidienne d'un nombre entier par un nombre entier inférieur à 100."
+  },
+  {
+    "id": "EX-B040-D-02",
+    "skill_id": "B040",
+    "level": "decouverte",
+    "type": "qcm",
+    "statement": "Dans la division euclidienne de 300 par 45, quel est le reste ?",
+    "image": null,
+    "choices": [
+      {
+        "key": "a",
+        "text": "30",
+        "misconception": null
+      },
+      {
+        "key": "b",
+        "text": "75",
+        "misconception": "L'élève prend un quotient trop petit, 5 : $45 \\times 5 = 225$ et $300 - 225 = 75$. Mais 75 est plus grand que le diviseur 45 : on peut encore faire un groupe de 45."
+      },
+      {
+        "key": "c",
+        "text": "6",
+        "misconception": "L'élève confond le reste et le quotient : 6 est le nombre de fois que 45 est contenu dans 300, pas ce qui reste."
+      }
+    ],
+    "answer": {
+      "value": "a"
+    },
+    "solution_steps": [
+      "On cherche le plus grand multiple de 45 qui ne dépasse pas 300. On essaie : $45 \\times 6 = 270$, et $45 \\times 7 = 315$ dépasse 300.",
+      "Le quotient est 6. Le reste est $300 - 270 = 30$.",
+      "Contrôle : 30 est plus petit que le diviseur 45, la division est bien terminée. $300 = 45 \\times 6 + 30$. Le reste est **30**."
+    ],
+    "hint": "Estime d'abord le quotient : combien de fois 45 dans 300, à peu près ?",
+    "estimated_duration_s": 75,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 3, 6e : effectuer la division euclidienne d'un nombre entier par un nombre entier inférieur à 100."
+  },
+  {
+    "id": "EX-B040-E-01",
+    "skill_id": "B040",
+    "level": "entrainement",
+    "type": "numerique",
+    "statement": "Pose la division euclidienne de 4 917 par 48.\n\nQuel est le quotient ?",
+    "image": null,
+    "answer": {
+      "value": 102
+    },
+    "solution_steps": [
+      "4 milliers ne suffisent pas pour un groupe de 48 : on commence par 49 centaines. $48 \\times 1 = 48$ : on écrit 1 au quotient, au rang des centaines. Il reste $49 - 48 = 1$ centaine.",
+      "On abaisse le 1 des dizaines : 1 centaine et 1 dizaine font 11 dizaines. On ne peut pas faire de groupe de 48 avec 11 : on écrit **0** au quotient, au rang des dizaines.",
+      "On abaisse le 7 des unités : 11 dizaines et 7 unités font 117. $48 \\times 2 = 96$ et $48 \\times 3 = 144$ dépasse 117. On écrit 2 au rang des unités. Il reste $117 - 96 = 21$.",
+      "Le quotient est **102** et le reste est 21, plus petit que 48. Ordre de grandeur : $48 \\times 100 = 4\\,800$, proche de 4 917. Un quotient proche de 100 est cohérent ; 12, en oubliant le 0, serait bien trop petit."
+    ],
+    "hint": "Le quotient a un chiffre des centaines, un chiffre des dizaines et un chiffre des unités.",
+    "estimated_duration_s": 120,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 3, 6e : effectuer la division euclidienne d'un nombre entier par un nombre entier inférieur à 100."
+  },
+  {
+    "id": "EX-B040-E-02",
+    "skill_id": "B040",
+    "level": "entrainement",
+    "type": "vrai_faux",
+    "statement": "Inès affirme : dans la division euclidienne de 1 000 par 37, le quotient est 27 et le reste est 1.\n\nA-t-elle raison ?",
+    "image": null,
+    "answer": {
+      "value": true
+    },
+    "solution_steps": [
+      "On calcule $37 \\times 27$ : $37 \\times 20 = 740$ et $37 \\times 7 = 259$, donc $37 \\times 27 = 740 + 259 = 999$.",
+      "On ajoute le reste : $999 + 1 = 1\\,000$. L'égalité $1\\,000 = 37 \\times 27 + 1$ est juste.",
+      "Le reste 1 est plus petit que le diviseur 37 : c'est bien la division euclidienne. Inès a **raison**."
+    ],
+    "hint": "Vérifie deux choses : que diviseur × quotient + reste redonne 1 000, et que le reste est plus petit que le diviseur.",
+    "estimated_duration_s": 90,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 3, 6e : effectuer la division euclidienne d'un nombre entier par un nombre entier inférieur à 100."
+  },
+  {
+    "id": "EX-B040-M-01",
+    "skill_id": "B040",
+    "level": "maitrise",
+    "type": "numerique",
+    "statement": "Un collège emmène 487 élèves au théâtre, en autocars de 52 places.\n\nCombien d'autocars faut-il réserver ?",
+    "image": null,
+    "answer": {
+      "value": 10,
+      "unit": "autocars"
+    },
+    "solution_steps": [
+      "On fait des groupes de 52 élèves avec 487 élèves : on pose la division euclidienne de 487 par 52.",
+      "$52 \\times 9 = 468$ et $52 \\times 10 = 520$ dépasse 487. Le quotient est 9 ; le reste est $487 - 468 = 19$.",
+      "$487 = 52 \\times 9 + 19$ : 9 autocars pleins emmènent 468 élèves, et 19 élèves n'ont pas de place.",
+      "Il faut un autocar de plus pour ces 19 élèves : $9 + 1 = 10$. Il faut réserver **10** autocars. Le quotient seul ne répond pas à la question : il faut interpréter le reste."
+    ],
+    "hint": "Après la division, vérifie que tous les élèves ont une place.",
+    "estimated_duration_s": 120,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 3, 6e : résoudre des problèmes mettant en jeu des divisions euclidiennes."
+  },
+  {
+    "id": "EX-B040-M-02",
+    "skill_id": "B040",
+    "level": "maitrise",
+    "type": "qcm",
+    "statement": "Un chocolatier a 800 chocolats. Il les range dans des boîtes de 36.\n\nCombien de chocolats lui manque-t-il pour remplir une boîte de plus ?",
+    "image": null,
+    "choices": [
+      {
+        "key": "a",
+        "text": "8",
+        "misconception": "L'élève donne le reste : 8 chocolats sont déjà dans la boîte entamée. La question demande ce qui manque pour la compléter."
+      },
+      {
+        "key": "b",
+        "text": "28",
+        "misconception": null
+      },
+      {
+        "key": "c",
+        "text": "22",
+        "misconception": "L'élève donne le quotient : 22 est le nombre de boîtes pleines, pas un nombre de chocolats."
+      },
+      {
+        "key": "d",
+        "text": "23",
+        "misconception": "L'élève compte les boîtes nécessaires pour tout ranger, 22 pleines et une entamée : c'est un nombre de boîtes, pas de chocolats."
+      }
+    ],
+    "answer": {
+      "value": "b"
+    },
+    "solution_steps": [
+      "On fait des boîtes de 36 avec 800 chocolats : on pose la division euclidienne de 800 par 36.",
+      "8 centaines ne suffisent pas pour un groupe de 36 : on commence par 80 dizaines. $36 \\times 2 = 72$ et $36 \\times 3 = 108$ dépasse 80. On écrit 2 au rang des dizaines, il reste $80 - 72 = 8$ dizaines.",
+      "On abaisse le 0 : 80 unités. $36 \\times 2 = 72$ : on écrit 2 au rang des unités, il reste $80 - 72 = 8$.",
+      "$800 = 36 \\times 22 + 8$ : 22 boîtes sont pleines, et une boîte de plus ne contient que 8 chocolats.",
+      "Pour la remplir, il manque $36 - 8 = 28$ chocolats. La réponse n'est ni le quotient ni le reste : c'est ce qui manque au reste pour atteindre le diviseur."
+    ],
+    "hint": "Pose la division, puis imagine la dernière boîte : combien de chocolats contient-elle, et combien peut-elle en contenir ?",
+    "estimated_duration_s": 150,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 3, 6e : résoudre des problèmes mettant en jeu des divisions euclidiennes."
+  }
+]

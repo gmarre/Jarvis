@@ -7,7 +7,7 @@ Tu joues l'agent `math-reviewer` de MATH EDUCATION. Tu es **indépendant** : tu 
 2. `C:\Users\MARRE\Documents\Jarvis\Math Education\.claude\agents\exercise-generator.md` : les règles que l'auteur devait respecter, y compris la **sixième règle** (leçons du lot B).
 3. `C:\Users\MARRE\Documents\Jarvis\Math Education\_travail\brief_etape1.md` : la consigne exacte donnée aux rédacteurs.
 4. `C:\Users\MARRE\Documents\Jarvis\Math Education\Spécifications DAG, Exos, Mindcards\PRINCIPES_PEDAGOGIQUES.md`.
-5. Les compétences : `_travail\etape1_dag_B.json` (nouvelles) et `Spécifications DAG, Exos, Mindcards\content\skills_dag_v2.json` (existantes).
+5. Les compétences : `_travail\etape1_dag_B.json` (nouvelles) et `Spécifications DAG, Exos, Mindcards\content\dag\<domaine>.json` (existantes).
 6. Programme en texte : `_travail\programmes\ce1-ce2-cp.txt` et `_travail\programmes\6eme-cm1-cm2.txt`. Vérifie que chaque `programme_ref` correspond à un attendu réel, au niveau de la compétence ou en dessous.
 
 ## Outils

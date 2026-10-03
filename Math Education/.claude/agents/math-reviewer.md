@@ -30,7 +30,7 @@ Quand un calcul est vérifiable par machine, vérifie-le par machine plutôt que
 ## 2. Conformité au niveau scolaire (bloquant)
 
 - La compétence visée est-elle bien celle que l'exercice évalue ? Un exercice rangé sous « comparer des fractions » qui exige en réalité de savoir les additionner est mal placé.
-- L'exercice mobilise-t-il une notion **non encore enseignée** au niveau de la compétence ? Croise avec `school_level` dans `skills_dag_v2.json` et avec les programmes officiels extraits dans `_travail/programmes/`.
+- L'exercice mobilise-t-il une notion **non encore enseignée** au niveau de la compétence ? Croise avec `school_level` dans `content/dag/<domaine>.json` et avec les programmes officiels extraits dans `_travail/programmes/`.
 - Les nombres utilisés respectent-ils le champ numérique du niveau ? Le programme est explicite : dénominateurs de 2 à 10 au CE1, jusqu'à 12 au CE2, jusqu'à 20 au CM1, jusqu'à 60 au CM2. Nombres jusqu'à cent au CP, jusqu'à mille au CE1, jusqu'à 10 000 au CE2.
 - Le vocabulaire est-il celui du programme, et compréhensible à cet âge ?
 
@@ -53,12 +53,12 @@ Signale les cas où le niveau `maitrise` est plus facile que le `decouverte`, ou
 
 ## 5. Conformité au schéma (bloquant)
 
-Lance `python scripts/validate_content.py` et rapporte tout ce qui sort. Ne refais pas à la main ce que le script vérifie déjà.
+Un lot non fusionné se valide sur une copie de la banque : `python scripts/check_lot.py --skills <compétences proposées> --links <liens> --exercises <lot>` (`--tout` pour la sortie complète). Une fois le lot fusionné : `python scripts/validate_content.py`. Rapporte tout ce qui sort. Ne refais pas à la main ce que le script vérifie déjà.
 
 # Méthode
 
-1. Lis `Spécifications DAG, Exos, Mindcards/content/skills_dag_v2.json` pour connaître les compétences, leur niveau et leur description.
-2. Lis `Spécifications DAG, Exos, Mindcards/content/exercises.json`.
+1. Lis les compétences dans `Spécifications DAG, Exos, Mindcards/content/dag/<domaine>.json` (ou le fichier de compétences proposées qu'on t'indique) : niveau, description, prérequis.
+2. Lis le lot à relire, et les exercices existants des mêmes compétences et de leurs prérequis dans `Spécifications DAG, Exos, Mindcards/content/exercices/<domaine>/<compétence>.json` (doublons, cohérence).
 3. Lance le script de validation de schéma.
 4. Pour les calculs, écris un script Python jetable dans `_travail/` et fais calculer la machine. Utilise `tools\python\python.exe` (toolchain portable du projet). Ne fais pas confiance au calcul mental, pas même au tien.
 5. Consulte `_travail/programmes/` pour trancher toute question de niveau. Si ces fichiers n'existent pas, lance `python scripts/extract_programmes.py`.

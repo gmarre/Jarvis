@@ -25,14 +25,15 @@ from __future__ import annotations
 import json
 import os
 import re
-import shutil
 import subprocess
 import sys
 import tempfile
 from pathlib import Path
 
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+import contenu  # noqa: E402
+
 ROOT = Path(__file__).resolve().parent.parent
-CONTENT = ROOT / "Spécifications DAG, Exos, Mindcards" / "content"
 ORDRE = {"decouverte": 0, "entrainement": 1, "maitrise": 2}
 
 
@@ -63,12 +64,7 @@ def main() -> int:
 
     with tempfile.TemporaryDirectory() as tmp:
         tmp = Path(tmp)
-        for nom in ("skills_dag_v2.json", "exercises.json", "mindmaps.json"):
-            shutil.copy(CONTENT / nom, tmp / nom)
-
-        dag = json.loads((tmp / "skills_dag_v2.json").read_text(encoding="utf-8"))
-        exos = json.loads((tmp / "exercises.json").read_text(encoding="utf-8"))
-        mm = json.loads((tmp / "mindmaps.json").read_text(encoding="utf-8"))
+        dag, exos, mm = contenu.charger()
 
         dag["skills"].extend(skills_in)
         skills = {s["id"]: s for s in dag["skills"]}
@@ -78,7 +74,6 @@ def main() -> int:
                 cible["prerequisites"].append(lien["add_prerequisite"])
         exos["exercises"].extend(exos_in)
         exos["exercises"].sort(key=lambda e: (e["skill_id"], ORDRE.get(e["level"], 9), e["id"]))
-        exos["metadata"]["total_exercises"] = len(exos["exercises"])
         par_comp: dict[str, list[str]] = {}
         for e in exos["exercises"]:
             par_comp.setdefault(e["skill_id"], []).append(e["id"])
@@ -86,24 +81,13 @@ def main() -> int:
             if s["id"] in par_comp:
                 s["exercise_ids"] = par_comp[s["id"]]
         mm["mindmaps"].extend(mm_in)
-        mm["metadata"]["total_mindmaps"] = len(mm["mindmaps"])
         for carte in mm_in:
             for sid in carte["skill_ids"]:
                 if sid in skills:
                     skills[sid]["mindmap_id"] = carte["id"]
 
-        meta = dag["metadata"]
-        meta["total_skills"] = len(dag["skills"])
-        noms = {d["id"]: d["name"] for d in meta["domains"]}
-        for s in dag["skills"]:
-            noms.setdefault(s["domain"], s["domain_name"])
-        meta["domains"] = [
-            {"id": d, "name": noms[d], "count": sum(1 for s in dag["skills"] if s["domain"] == d)}
-            for d in sorted(noms) if any(s["domain"] == d for s in dag["skills"])
-        ]
-
-        for nom, data in (("skills_dag_v2.json", dag), ("exercises.json", exos), ("mindmaps.json", mm)):
-            (tmp / nom).write_text(json.dumps(data, ensure_ascii=False, indent=2), encoding="utf-8")
+        # Les compteurs des metadonnees sont recalcules par l'ecriture.
+        contenu.ecrire(dag, exos, mm, tmp)
 
         env = dict(os.environ, MATH_EDU_CONTENT_DIR=str(tmp), PYTHONIOENCODING="utf-8")
         r = subprocess.run([sys.executable, str(ROOT / "scripts" / "validate_content.py")],

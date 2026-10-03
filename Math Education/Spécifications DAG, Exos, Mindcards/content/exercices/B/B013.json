@@ -1,0 +1,157 @@
+[
+  {
+    "id": "EX-B013-D-01",
+    "skill_id": "B013",
+    "level": "decouverte",
+    "type": "numerique",
+    "statement": "Calcule dans ta tête : $48 + 5$.\n\nPasse par 50.",
+    "image": null,
+    "answer": {
+      "value": 53
+    },
+    "solution_steps": [
+      "48, c'est 4 dizaines et 8 unités. Pour aller à 50, il manque 2 unités, car $8 + 2 = 10$.",
+      "On veut ajouter 5. On en a déjà ajouté 2, il reste à ajouter 3, car $5 = 2 + 3$.",
+      "$48 + 2 = 50$, puis $50 + 3 = 53$. Donc $48 + 5 = 53$."
+    ],
+    "hint": "Combien faut-il ajouter à 48 pour arriver à 50 ?",
+    "estimated_duration_s": 30,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 2, CP : ajouter un nombre inférieur à 9 à un nombre ; si l'ajout conduit à changer le nombre de dizaines, l'élève cherche d'abord combien il faut ajouter pour aller à la dizaine supérieure."
+  },
+  {
+    "id": "EX-B013-D-02",
+    "skill_id": "B013",
+    "level": "decouverte",
+    "type": "qcm",
+    "statement": "Combien font $43 + 30$ ?",
+    "image": null,
+    "choices": [
+      {
+        "key": "a",
+        "text": "73",
+        "misconception": null
+      },
+      {
+        "key": "b",
+        "text": "46",
+        "misconception": "L'élève ajoute 3 unités au lieu de 3 dizaines : il ne voit pas que 30, c'est 3 dizaines."
+      },
+      {
+        "key": "c",
+        "text": "63",
+        "misconception": "L'élève compte de 10 en 10 en disant 43 comme premier pas (« 43, 53, 63 ») : il n'avance que de 2 dizaines."
+      }
+    ],
+    "answer": {
+      "value": "a"
+    },
+    "solution_steps": [
+      "30, c'est 3 dizaines. Ajouter 30, c'est ajouter 3 dizaines.",
+      "43, c'est 4 dizaines et 3 unités. 4 dizaines et 3 dizaines font 7 dizaines. Les 3 unités ne changent pas.",
+      "$43 + 30 = 73$ : la bonne réponse est **73**."
+    ],
+    "hint": "Combien de dizaines y a-t-il dans 30 ?",
+    "estimated_duration_s": 30,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 2, CP : ajouter ou soustraire 20, 30, 40, 50, 60, 70, 80 ou 90 à un nombre ; l'élève sait que c'est ajouter ou soustraire 2, 3, 4, 5, 6, 7, 8 ou 9 dizaines à ce nombre."
+  },
+  {
+    "id": "EX-B013-E-01",
+    "skill_id": "B013",
+    "level": "entrainement",
+    "type": "numerique",
+    "statement": "Calcule dans ta tête : $57 + 9$.",
+    "image": null,
+    "answer": {
+      "value": 66
+    },
+    "solution_steps": [
+      "9, c'est 10 moins 1. Ajouter 10, c'est facile : on ajoute une dizaine.",
+      "$57 + 10 = 67$. Mais on a ajouté 1 de trop, puisqu'on voulait ajouter 9.",
+      "On enlève ce 1 : le nombre juste avant 67 est 66. Donc $57 + 9 = 66$."
+    ],
+    "hint": "Ajoute 10, c'est plus facile. Puis corrige : as-tu ajouté trop ou pas assez ?",
+    "estimated_duration_s": 40,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 2, CP : ajouter 9 à un nombre ; l'élève sait que, pour ajouter 9 à un nombre, il peut ajouter 10 puis soustraire 1."
+  },
+  {
+    "id": "EX-B013-E-02",
+    "skill_id": "B013",
+    "level": "entrainement",
+    "type": "vrai_faux",
+    "statement": "Zoé dit : « $26 + 8 = 34$ ».\n\nA-t-elle raison ?",
+    "image": null,
+    "answer": {
+      "value": true
+    },
+    "solution_steps": [
+      "On passe par la dizaine : pour aller de 26 à 30, il faut ajouter 4, car $6 + 4 = 10$.",
+      "On voulait ajouter 8. On a ajouté 4, il reste 4 à ajouter, car $8 = 4 + 4$.",
+      "$30 + 4 = 34$. Donc $26 + 8 = 34$ : Zoé a **raison**."
+    ],
+    "hint": "Passe par 30 : combien faut-il ajouter à 26 pour y arriver ?",
+    "estimated_duration_s": 40,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 2, CP : ajouter un nombre inférieur à 9 à un nombre ; si l'ajout conduit à changer le nombre de dizaines, l'élève cherche d'abord combien il faut ajouter pour aller à la dizaine supérieure."
+  },
+  {
+    "id": "EX-B013-M-01",
+    "skill_id": "B013",
+    "level": "maitrise",
+    "type": "numerique",
+    "statement": "Une tour a 64 cubes. Mia ajoute 28 cubes.\n\nCombien de cubes en tout ? Calcule de tête.",
+    "image": null,
+    "answer": {
+      "value": 92
+    },
+    "solution_steps": [
+      "Mia ajoute des cubes : on calcule $64 + 28$.",
+      "On sépare les dizaines et les unités. Dizaines : $60 + 20 = 80$. Unités : $4 + 8 = 12$.",
+      "On réunit les deux : $80 + 12$. 12, c'est 1 dizaine et 2 unités, donc $80 + 12 = 92$.",
+      "La tour a **92** cubes."
+    ],
+    "hint": "Ajoute d'abord les dizaines entre elles, puis les unités entre elles.",
+    "estimated_duration_s": 60,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 2, CP : ajouter deux nombres inférieurs à 100 ; l'élève sait les décomposer pour ajouter les dizaines entre elles et les unités entre elles, puis additionner les deux nombres trouvés."
+  },
+  {
+    "id": "EX-B013-M-02",
+    "skill_id": "B013",
+    "level": "maitrise",
+    "type": "qcm",
+    "statement": "Lou calcule $58 + 26$ de tête : $50 + 20 = 70$, puis $8 + 6 = 14$.\n\nQuel est le résultat ?",
+    "image": null,
+    "choices": [
+      {
+        "key": "a",
+        "text": "74",
+        "misconception": "L'élève ne garde que le chiffre 4 de 14 : il oublie que 14 contient une dizaine, comme on oublie une retenue."
+      },
+      {
+        "key": "b",
+        "text": "84",
+        "misconception": null
+      },
+      {
+        "key": "c",
+        "text": "80",
+        "misconception": "L'élève ajoute bien la dizaine de 14 aux 7 dizaines, mais oublie les 4 unités en route."
+      }
+    ],
+    "answer": {
+      "value": "b"
+    },
+    "solution_steps": [
+      "Lou a séparé dizaines et unités : 70 pour les dizaines, 14 pour les unités. Il reste à réunir les deux : $70 + 14$.",
+      "14, c'est 1 dizaine et 4 unités. 7 dizaines et 1 dizaine font 8 dizaines, et on garde les 4 unités.",
+      "$70 + 14 = 84$, donc $58 + 26 = 84$ : la bonne réponse est **84**."
+    ],
+    "hint": "Combien de dizaines et d'unités y a-t-il dans 14 ?",
+    "estimated_duration_s": 60,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 2, CP : ajouter deux nombres inférieurs à 100 ; l'élève sait les décomposer pour ajouter les dizaines entre elles et les unités entre elles, puis additionner les deux nombres trouvés."
+  }
+]

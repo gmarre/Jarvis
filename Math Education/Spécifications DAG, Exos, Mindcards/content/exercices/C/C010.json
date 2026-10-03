@@ -1,0 +1,104 @@
+[
+  {
+    "id": "EX-C010-D-01",
+    "skill_id": "C010",
+    "level": "decouverte",
+    "type": "qcm",
+    "statement": "Compare $\\frac{2}{3}$ et $\\frac{3}{5}$.",
+    "image": null,
+    "choices": [
+      {
+        "key": "a",
+        "text": "$\\frac{2}{3} > \\frac{3}{5}$",
+        "misconception": null
+      },
+      {
+        "key": "b",
+        "text": "$\\frac{2}{3} < \\frac{3}{5}$",
+        "misconception": "L'élève compare les numérateurs seuls (2 < 3) sans réduire au même dénominateur."
+      },
+      {
+        "key": "c",
+        "text": "$\\frac{2}{3} = \\frac{3}{5}$",
+        "misconception": "L'élève voit que le numérateur augmente de 1 en même temps que le dénominateur augmente de 2, et en conclut que les deux variations se compensent."
+      }
+    ],
+    "answer": {
+      "value": "a"
+    },
+    "solution_steps": [
+      "Dénominateur commun : $3 \\times 5 = 15$.",
+      "$\\frac{2}{3} = \\frac{10}{15}$ et $\\frac{3}{5} = \\frac{9}{15}$.",
+      "Comme $10 > 9$, on a $\\frac{2}{3} > \\frac{3}{5}$."
+    ],
+    "hint": "Réduis les deux fractions au même dénominateur avant de comparer.",
+    "estimated_duration_s": 90,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, 5e : comparer des fractions."
+  },
+  {
+    "id": "EX-C010-E-01",
+    "skill_id": "C010",
+    "level": "entrainement",
+    "type": "qcm",
+    "statement": "Compare $\\frac{8}{12}$ et $\\frac{8}{21}$ sans calculer.",
+    "image": null,
+    "choices": [
+      {
+        "key": "a",
+        "text": "$\\frac{8}{12} > \\frac{8}{21}$",
+        "misconception": null
+      },
+      {
+        "key": "b",
+        "text": "$\\frac{8}{12} < \\frac{8}{21}$",
+        "misconception": "L'élève applique l'ordre des entiers aux dénominateurs : 12 < 21 donc la fraction serait plus petite."
+      },
+      {
+        "key": "c",
+        "text": "$\\frac{8}{12} = \\frac{8}{21}$",
+        "misconception": "L'élève ne retient que l'égalité des numérateurs."
+      }
+    ],
+    "answer": {
+      "value": "a"
+    },
+    "solution_steps": [
+      "Les deux fractions ont le **même numérateur** : on prend 8 parts dans chaque cas.",
+      "Mais partager en 12 donne des parts plus grandes que partager en 21.",
+      "8 grandes parts valent donc plus que 8 petites parts.",
+      "$\\frac{8}{12} > \\frac{8}{21}$."
+    ],
+    "hint": "À numérateur égal, quel dénominateur donne les parts les plus grandes ?",
+    "estimated_duration_s": 75,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, 5e : comparer deux fractions : 8/12 et 8/21."
+  },
+  {
+    "id": "EX-C010-M-01",
+    "skill_id": "C010",
+    "level": "maitrise",
+    "type": "texte",
+    "statement": "Range ces trois fractions de la plus petite à la plus grande :\n\n$\\frac{3}{4}$, $\\frac{7}{18}$, $\\frac{5}{6}$\n\nÉcris-les séparées par des virgules, sous la forme numérateur/dénominateur.",
+    "image": null,
+    "answer": {
+      "value": "7/18, 3/4, 5/6",
+      "accepted": [
+        "7/18,3/4,5/6",
+        "7/18 3/4 5/6",
+        "7 / 18, 3 / 4, 5 / 6"
+      ]
+    },
+    "solution_steps": [
+      "Aucune astuce ne fonctionne ici : les trois fractions sont inférieures à 1, et elles n'ont ni numérateur ni dénominateur commun.",
+      "Il faut donc les réduire au même dénominateur. 4, 18 et 6 divisent tous 36.",
+      "$\\frac{3}{4} = \\frac{27}{36}$, $\\frac{7}{18} = \\frac{14}{36}$, $\\frac{5}{6} = \\frac{30}{36}$.",
+      "On compare les numérateurs : $14 < 27 < 30$.",
+      "Donc $\\frac{7}{18} < \\frac{3}{4} < \\frac{5}{6}$."
+    ],
+    "hint": "Cherche un dénominateur commun aux trois fractions : un multiple de 4, de 18 et de 6.",
+    "estimated_duration_s": 180,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, 5e : comparer des fractions (automatismes : 3/4 et 7/18)."
+  }
+]

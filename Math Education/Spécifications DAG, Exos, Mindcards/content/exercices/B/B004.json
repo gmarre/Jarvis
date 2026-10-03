@@ -1,0 +1,165 @@
+[
+  {
+    "id": "EX-B004-D-01",
+    "skill_id": "B004",
+    "level": "decouverte",
+    "type": "numerique",
+    "statement": "Pose et calcule $63 - 27$.",
+    "image": null,
+    "answer": {
+      "value": 36
+    },
+    "solution_steps": [
+      "On écrit 27 sous 63 : unités sous les unités, dizaines sous les dizaines.",
+      "Unités : on ne peut pas enlever 7 à 3. On **casse** une des 6 dizaines : une dizaine, c'est 10 unités. Il reste 5 dizaines, et on a $10 + 3 = 13$ unités. Sur ta feuille, barre le 6 et écris 5 au-dessus, puis écris un petit 1 devant le 3.",
+      "$13 - 7 = 6$. On écrit 6 aux unités.",
+      "Dizaines : il en reste 5, on en enlève 2 : $5 - 2 = 3$. On écrit 3.",
+      "$63 - 27 = 36$. On vérifie avec l'addition : $36 + 27 = 63$.",
+      "Si ta classe utilise une autre méthode de soustraction, tu dois trouver le même résultat."
+    ],
+    "hint": "Aux unités, 3 est trop petit pour enlever 7 : casse une dizaine.",
+    "estimated_duration_s": 60,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 2, CE1 : poser et effectuer des additions et des soustractions en colonnes ; l'élève connait un algorithme de soustraction posée (« par cassage » ou « par compensation »)."
+  },
+  {
+    "id": "EX-B004-D-02",
+    "skill_id": "B004",
+    "level": "decouverte",
+    "type": "qcm",
+    "statement": "Pose et calcule $71 - 38$.",
+    "image": null,
+    "choices": [
+      {
+        "key": "a",
+        "text": "47",
+        "misconception": "L'élève ne peut pas faire $1 - 8$, alors il fait $8 - 1 = 7$ : il enlève le petit chiffre du grand dans chaque colonne, sans casser de dizaine."
+      },
+      {
+        "key": "b",
+        "text": "33",
+        "misconception": null
+      },
+      {
+        "key": "c",
+        "text": "43",
+        "misconception": "L'élève casse bien une dizaine pour faire $11 - 8 = 3$, mais oublie de retirer cette dizaine aux 7 dizaines : il calcule $7 - 3 = 4$."
+      }
+    ],
+    "answer": {
+      "value": "b"
+    },
+    "solution_steps": [
+      "Unités : on ne peut pas enlever 8 à 1. On casse une des 7 dizaines : il reste 6 dizaines, et on a 11 unités.",
+      "$11 - 8 = 3$. On écrit 3.",
+      "Dizaines : $6 - 3 = 3$. On écrit 3.",
+      "$71 - 38 = 33$ : la bonne réponse est **33**. On vérifie : $33 + 38 = 71$."
+    ],
+    "hint": "Quand tu casses une dizaine, il en reste une de moins dans la colonne des dizaines.",
+    "estimated_duration_s": 60,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 2, CE1 : poser et effectuer des additions et des soustractions en colonnes ; l'élève connait un algorithme de soustraction posée (« par cassage » ou « par compensation »)."
+  },
+  {
+    "id": "EX-B004-E-01",
+    "skill_id": "B004",
+    "level": "entrainement",
+    "type": "numerique",
+    "statement": "Un puzzle a 254 pièces. Clara en a posé 126.\n\nCombien de pièces reste-t-il à poser ?",
+    "image": null,
+    "answer": {
+      "value": 128
+    },
+    "solution_steps": [
+      "On enlève les pièces déjà posées au total : on calcule $254 - 126$.",
+      "Unités : on ne peut pas enlever 6 à 4. On casse une des 5 dizaines : il reste 4 dizaines, et on a 14 unités. $14 - 6 = 8$.",
+      "Dizaines : $4 - 2 = 2$. Centaines : $2 - 1 = 1$.",
+      "$254 - 126 = 128$. Il reste **128** pièces à poser. On vérifie : $128 + 126 = 254$."
+    ],
+    "hint": "Pose la soustraction et commence par les unités.",
+    "estimated_duration_s": 75,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 2, CE1 : résoudre des problèmes additifs en une étape de type parties-tout."
+  },
+  {
+    "id": "EX-B004-E-02",
+    "skill_id": "B004",
+    "level": "entrainement",
+    "type": "vrai_faux",
+    "statement": "Léon pose $405 - 173$ et trouve 332.\n\nA-t-il raison ?",
+    "image": null,
+    "answer": {
+      "value": false
+    },
+    "solution_steps": [
+      "Unités : $5 - 3 = 2$.",
+      "Dizaines : on ne peut pas enlever 7 à 0. On casse une des 4 centaines : il reste 3 centaines, et on a 10 dizaines. $10 - 7 = 3$.",
+      "Centaines : il en reste 3, on en enlève 1 : $3 - 1 = 2$. Donc $405 - 173 = 232$.",
+      "Léon a **tort**. Il a cassé une centaine, mais ne l'a pas retirée aux 4 centaines : il a calculé $4 - 1 = 3$ au lieu de $3 - 1 = 2$."
+    ],
+    "hint": "Refais le calcul. Quand tu casses une centaine, combien en reste-t-il ?",
+    "estimated_duration_s": 75,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 2, CE1 : poser et effectuer des additions et des soustractions en colonnes ; l'élève connait un algorithme de soustraction posée (« par cassage » ou « par compensation »)."
+  },
+  {
+    "id": "EX-B004-M-01",
+    "skill_id": "B004",
+    "level": "maitrise",
+    "type": "numerique",
+    "statement": "Un camion transporte 503 caisses. Il en livre 268.\n\nCombien de caisses reste-t-il dans le camion ?",
+    "image": null,
+    "answer": {
+      "value": 235
+    },
+    "solution_steps": [
+      "On enlève les caisses livrées : on calcule $503 - 268$.",
+      "Unités : on ne peut pas enlever 8 à 3, et il n'y a aucune dizaine à casser. On casse d'abord une des 5 centaines : une centaine, c'est 10 dizaines. Il reste 4 centaines et on a 10 dizaines. Sur ta feuille, barre le 5 et écris 4 au-dessus, barre le 0 et écris 10 au-dessus.",
+      "On casse une de ces 10 dizaines : il reste 9 dizaines, et on a $10 + 3 = 13$ unités. Barre le 10, écris 9 au-dessus, et écris un petit 1 devant le 3. $13 - 8 = 5$.",
+      "Dizaines : $9 - 6 = 3$. Centaines : $4 - 2 = 2$.",
+      "$503 - 268 = 235$. Il reste **235** caisses. On vérifie : $235 + 268 = 503$."
+    ],
+    "hint": "Le chiffre des dizaines de 503 est 0 : pour avoir des unités, il faut d'abord casser une centaine.",
+    "estimated_duration_s": 120,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 2, CE1 : poser et effectuer des additions et des soustractions en colonnes ; l'élève connait un algorithme de soustraction posée (« par cassage » ou « par compensation »)."
+  },
+  {
+    "id": "EX-B004-M-02",
+    "skill_id": "B004",
+    "level": "maitrise",
+    "type": "qcm",
+    "statement": "Le glacier a vendu 423 glaces en juillet et 186 en juin.\n\nCombien de glaces de plus en juillet ?",
+    "image": null,
+    "choices": [
+      {
+        "key": "a",
+        "text": "609",
+        "misconception": "L'élève voit les mots « de plus » et additionne : $423 + 186 = 609$. Or on cherche l'écart entre les deux mois, c'est une soustraction."
+      },
+      {
+        "key": "b",
+        "text": "363",
+        "misconception": "L'élève soustrait le petit chiffre du grand dans chaque colonne ($6 - 3$, $8 - 2$, $4 - 1$) au lieu de casser une dizaine puis une centaine."
+      },
+      {
+        "key": "c",
+        "text": "237",
+        "misconception": null
+      }
+    ],
+    "answer": {
+      "value": "c"
+    },
+    "solution_steps": [
+      "On compare deux nombres : l'écart entre juillet et juin se trouve par une soustraction, $423 - 186$, même si l'énoncé dit « de plus ».",
+      "Unités : on ne peut pas enlever 6 à 3. On casse une des 2 dizaines : il reste 1 dizaine, et on a 13 unités. $13 - 6 = 7$.",
+      "Dizaines : on ne peut pas enlever 8 à 1. On casse une des 4 centaines : il reste 3 centaines, et on a 11 dizaines. $11 - 8 = 3$.",
+      "Centaines : $3 - 1 = 2$. Donc $423 - 186 = 237$ : la bonne réponse est **237**. On vérifie : $237 + 186 = 423$."
+    ],
+    "hint": "Cherche l'écart entre 423 et 186. Quelle opération donne un écart ?",
+    "estimated_duration_s": 120,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 2, CE1 : résoudre des problèmes additifs de comparaison en une étape."
+  }
+]

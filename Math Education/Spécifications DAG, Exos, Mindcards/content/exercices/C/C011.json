@@ -1,0 +1,73 @@
+[
+  {
+    "id": "EX-C011-D-01",
+    "skill_id": "C011",
+    "level": "decouverte",
+    "type": "numerique",
+    "statement": "Quel est le plus petit dénominateur commun à $\\frac{1}{4}$ et $\\frac{2}{3}$ ?",
+    "image": null,
+    "answer": {
+      "value": 12
+    },
+    "solution_steps": [
+      "On cherche un nombre qui figure à la fois dans la table de 4 et dans la table de 3.",
+      "Table de 4 : 4, 8, **12**, 16, 20, 24…",
+      "Table de 3 : 3, 6, 9, **12**, 15, 18…",
+      "Le plus petit commun est **12**."
+    ],
+    "hint": "Écris les premiers multiples de 4 et de 3, puis cherche le premier qui apparaît dans les deux listes.",
+    "estimated_duration_s": 60,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4 : trouver un dénominateur commun à deux fractions pour les additionner, les soustraire ou les comparer."
+  },
+  {
+    "id": "EX-C011-E-01",
+    "skill_id": "C011",
+    "level": "entrainement",
+    "type": "texte",
+    "statement": "Réduis $\\frac{1}{4}$ et $\\frac{2}{3}$ au même dénominateur.\n\nÉcris les deux fractions obtenues, séparées par une virgule, sous la forme numérateur/dénominateur.",
+    "image": null,
+    "answer": {
+      "value": "3/12, 8/12",
+      "accepted": [
+        "3/12,8/12",
+        "3/12 8/12"
+      ]
+    },
+    "solution_steps": [
+      "Dénominateur commun : 12.",
+      "$\\frac{1}{4} = \\frac{1 \\times 3}{4 \\times 3} = \\frac{3}{12}$.",
+      "$\\frac{2}{3} = \\frac{2 \\times 4}{3 \\times 4} = \\frac{8}{12}$.",
+      "Les deux fractions réduites sont $\\frac{3}{12}$ et $\\frac{8}{12}$."
+    ],
+    "hint": "Par combien faut-il multiplier 4 pour obtenir 12 ? Et 3 ?",
+    "estimated_duration_s": 90,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, 5e : additionner et soustraire des fractions de dénominateurs quelconques."
+  },
+  {
+    "id": "EX-C011-M-01",
+    "skill_id": "C011",
+    "level": "maitrise",
+    "type": "texte",
+    "statement": "Calcule $\\frac{2}{5} + \\frac{1}{4}$.\n\nÉcris ta réponse sous la forme numérateur/dénominateur.",
+    "image": null,
+    "answer": {
+      "value": "13/20",
+      "accepted": [
+        "13 / 20"
+      ]
+    },
+    "solution_steps": [
+      "Les dénominateurs sont différents : il faut d'abord les rendre identiques.",
+      "Dénominateur commun : $5 \\times 4 = 20$.",
+      "$\\frac{2}{5} = \\frac{8}{20}$ et $\\frac{1}{4} = \\frac{5}{20}$.",
+      "On additionne les numérateurs : $\\frac{8}{20} + \\frac{5}{20} = \\frac{13}{20}$.",
+      "$\\frac{13}{20}$ ne se simplifie pas : c'est la réponse."
+    ],
+    "hint": "On ne peut pas additionner des cinquièmes et des quarts : il faut d'abord les convertir en une même sorte de parts.",
+    "estimated_duration_s": 120,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, 5e : addition et soustraction de fractions simples, dont 2/5 + 1/4."
+  }
+]

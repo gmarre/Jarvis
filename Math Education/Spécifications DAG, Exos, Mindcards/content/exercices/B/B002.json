@@ -1,0 +1,161 @@
+[
+  {
+    "id": "EX-B002-D-01",
+    "skill_id": "B002",
+    "level": "decouverte",
+    "type": "numerique",
+    "statement": "Pose l'addition $34 + 18$ en colonnes, unités sous les unités, puis calcule-la.",
+    "image": null,
+    "answer": {
+      "value": 52
+    },
+    "solution_steps": [
+      "On écrit 18 sous 34 : le 8 sous le 4 (colonne des unités), le 1 sous le 3 (colonne des dizaines).",
+      "On commence toujours par les unités : $4 + 8 = 12$. 12 unités, c'est 1 dizaine et 2 unités. On écrit 2 en bas de la colonne des unités, et on garde la dizaine : c'est la **retenue**, on l'écrit en haut de la colonne des dizaines.",
+      "Colonne des dizaines : la retenue plus les deux chiffres, $1 + 3 + 1 = 5$. On écrit 5.",
+      "$34 + 18 = 52$."
+    ],
+    "hint": "Commence par la colonne des unités. Si tu trouves 10 ou plus, une dizaine part dans la colonne des dizaines.",
+    "estimated_duration_s": 60,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 2, CP : poser et effectuer des additions en colonnes ; l'élève sait poser une addition de deux ou trois nombres à un ou deux chiffres, en positionnant les unités sous les unités, les dizaines sous les dizaines, et en calculer le résultat."
+  },
+  {
+    "id": "EX-B002-D-02",
+    "skill_id": "B002",
+    "level": "decouverte",
+    "type": "qcm",
+    "statement": "Ana pose l'addition $19 + 6$.\n\nQuel résultat doit-elle trouver ?",
+    "image": null,
+    "choices": [
+      {
+        "key": "a",
+        "text": "15",
+        "misconception": "L'élève oublie la retenue : il calcule $9 + 6 = 15$, écrit 5 aux unités, puis recopie le 1 des dizaines sans y ajouter la dizaine formée par les unités."
+      },
+      {
+        "key": "b",
+        "text": "25",
+        "misconception": null
+      },
+      {
+        "key": "c",
+        "text": "79",
+        "misconception": "L'élève place le 6 sous le 1, dans la colonne des dizaines : il calcule $1 + 6 = 7$ dizaines et garde 9 unités. Il n'a pas aligné les unités sous les unités."
+      }
+    ],
+    "answer": {
+      "value": "b"
+    },
+    "solution_steps": [
+      "6 n'a qu'un chiffre : c'est un nombre d'unités. On l'écrit sous le 9, dans la colonne des unités.",
+      "Unités : $9 + 6 = 15$. 15 unités, c'est 1 dizaine et 5 unités. On écrit 5 et on retient 1 dizaine.",
+      "Dizaines : la retenue plus le 1 de 19, $1 + 1 = 2$. On écrit 2.",
+      "$19 + 6 = 25$ : la bonne réponse est **25**."
+    ],
+    "hint": "Où places-tu le 6 : sous le 1 ou sous le 9 ?",
+    "estimated_duration_s": 45,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 2, CP : poser et effectuer des additions en colonnes ; l'élève sait poser une addition de deux ou trois nombres à un ou deux chiffres, en positionnant les unités sous les unités, les dizaines sous les dizaines, et en calculer le résultat."
+  },
+  {
+    "id": "EX-B002-E-01",
+    "skill_id": "B002",
+    "level": "entrainement",
+    "type": "numerique",
+    "statement": "La classe a 48 crayons rouges et 35 bleus.\n\nCombien de crayons en tout ?",
+    "image": null,
+    "answer": {
+      "value": 83
+    },
+    "solution_steps": [
+      "On réunit les crayons rouges et les crayons bleus : c'est une addition, $48 + 35$.",
+      "On pose 35 sous 48. Unités : $8 + 5 = 13$, soit 1 dizaine et 3 unités. On écrit 3 et on retient 1.",
+      "Dizaines : $1 + 4 + 3 = 8$. On écrit 8.",
+      "$48 + 35 = 83$. La classe a **83** crayons."
+    ],
+    "hint": "Pose l'addition, et n'oublie pas la dizaine formée par les unités.",
+    "estimated_duration_s": 60,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 2, CP : résoudre des problèmes additifs en une étape du type parties-tout."
+  },
+  {
+    "id": "EX-B002-E-02",
+    "skill_id": "B002",
+    "level": "entrainement",
+    "type": "vrai_faux",
+    "statement": "Hugo pose $56 + 29$ et trouve 75.\n\nA-t-il raison ?",
+    "image": null,
+    "answer": {
+      "value": false
+    },
+    "solution_steps": [
+      "On refait le calcul. Unités : $6 + 9 = 15$, soit 1 dizaine et 5 unités. On écrit 5 et on retient 1.",
+      "Dizaines : $1 + 5 + 2 = 8$. On écrit 8. Donc $56 + 29 = 85$.",
+      "Hugo a **tort**. Il a bien écrit le 5 des unités, mais il a oublié la retenue : il a calculé $5 + 2 = 7$ dizaines au lieu de 8."
+    ],
+    "hint": "Refais le calcul colonne par colonne, en commençant par les unités.",
+    "estimated_duration_s": 60,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 2, CP : poser et effectuer des additions en colonnes ; l'élève sait poser une addition de deux ou trois nombres à un ou deux chiffres et en calculer le résultat."
+  },
+  {
+    "id": "EX-B002-M-01",
+    "skill_id": "B002",
+    "level": "maitrise",
+    "type": "numerique",
+    "statement": "Emma a donné 17 cartes. Il lui en reste 46.\n\nCombien de cartes avait-elle avant ?",
+    "image": null,
+    "answer": {
+      "value": 63
+    },
+    "solution_steps": [
+      "Avant de donner, Emma avait les cartes qu'elle a gardées **et** celles qu'elle a données. On les réunit : c'est une addition, $46 + 17$, même si l'histoire parle de donner.",
+      "On pose 17 sous 46. Unités : $6 + 7 = 13$, soit 1 dizaine et 3 unités. On écrit 3 et on retient 1.",
+      "Dizaines : $1 + 4 + 1 = 6$. On écrit 6. Donc $46 + 17 = 63$.",
+      "Emma avait **63** cartes. On vérifie : 63 est plus grand que 46, c'est normal puisqu'elle en a donné."
+    ],
+    "hint": "Avant, Emma avait toutes ses cartes : celles qui restent et celles qu'elle a données.",
+    "estimated_duration_s": 90,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 2, CP : résoudre des problèmes additifs en une étape du type parties-tout ; par exemple « Dans la boite, il y avait des bonbons. J'en ai mangé 6 et il en reste encore 21. Combien y avait-il de bonbons dans la boite avant que j'en mange ? »"
+  },
+  {
+    "id": "EX-B002-M-02",
+    "skill_id": "B002",
+    "level": "maitrise",
+    "type": "qcm",
+    "statement": "Pose et calcule $8 + 57 + 29$.",
+    "image": null,
+    "choices": [
+      {
+        "key": "a",
+        "text": "74",
+        "misconception": "L'élève oublie la retenue : il trouve 24 unités, écrit 4, puis additionne seulement $5 + 2 = 7$ dizaines."
+      },
+      {
+        "key": "b",
+        "text": "84",
+        "misconception": "L'élève retient toujours 1, par habitude : or 24 unités font 2 dizaines et 4 unités, la retenue est 2."
+      },
+      {
+        "key": "c",
+        "text": "94",
+        "misconception": null
+      }
+    ],
+    "answer": {
+      "value": "c"
+    },
+    "solution_steps": [
+      "On pose les trois nombres les uns sous les autres. Le 8 n'a qu'un chiffre : il va dans la colonne des unités, sous le 7 et le 9.",
+      "Unités : $8 + 7 + 9 = 24$. 24 unités, c'est 2 dizaines et 4 unités. On écrit 4 et on retient **2** dizaines.",
+      "Dizaines : $2 + 5 + 2 = 9$. On écrit 9.",
+      "$8 + 57 + 29 = 94$ : la bonne réponse est **94**."
+    ],
+    "hint": "Combien de dizaines y a-t-il dans le total des unités ? C'est ta retenue.",
+    "estimated_duration_s": 90,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 2, CP : poser et effectuer des additions en colonnes ; l'élève sait poser une addition de deux ou trois nombres à un ou deux chiffres, en positionnant les unités sous les unités, les dizaines sous les dizaines, et en calculer le résultat."
+  }
+]

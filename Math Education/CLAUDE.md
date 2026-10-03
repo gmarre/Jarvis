@@ -62,7 +62,7 @@ Le DAG v1.0 (`Spécifications DAG, Exos, Mindcards/skills_dag.json`) contient 41
 | Brique | Contenu | État |
 |--------|---------|------|
 | `skills_dag.json` | Graphe enrichi (`exercise_ids`, `mindmap_id`, `mastery_threshold`) | **56 compétences** au 3 octobre 2026 : A Numération 17, B Calcul 21 (CP à 6e), C Fractions 18. Intégrité vérifiée : aucun cycle, aucun prérequis fantôme, niveaux et citations contrôlés. |
-| `exercises.json` | Banque d'exercices, 3 niveaux, avec corrigés | **282 exercices**, tous en `relu_agent` (voir `QUALITY.md`). Chaque compétence en a au moins 3. Aucun n'a encore passé la relecture humaine de Marius. |
+| `exercises.json` | Banque d'exercices, 3 niveaux, avec corrigés | **282 exercices**, tous en `relu_agent` (voir `QUALITY.md`). Chaque compétence en a au moins 3. |
 | `mindmaps.json` | Cartes mentales en Markdown hiérarchique | **10 cartes**, chaque compétence est couverte. |
 
 **L'extension du contenu suit `Spécifications DAG, Exos, Mindcards/PLAN_CONTENU.md`** : un domaine à la fois, d'après le programme officiel, DAG, exercices et cartes ensemble, produits et relus par agents. Étape 1 (domaine B) faite, étape 2 (décimaux) ensuite.
@@ -70,11 +70,13 @@ Le DAG v1.0 (`Spécifications DAG, Exos, Mindcards/skills_dag.json`) contient 41
 
 **Plus aucune compétence sans exercice.** Les 12 compétences A et C de l'ancienne liste avaient été remplies par Marius (7 ou 8 exercices chacune). Les trois dernières, B001, B005 et B006, l'ont été le 3 octobre 2026 : B005 était la lacune racine d'un élève CM1 typique, dont le plan du jour restait vide. Le code continue de contourner une compétence vide, ce qui redeviendra utile quand le DAG grandira : `placement.trous.test.ts` le vérifie sur un contenu troué exprès.
 
-**Prochaine étape côté contenu (Marius) :** la relecture humaine, en commençant par les 19 exercices du lot B (`RELECTURE.md` à jour), puis les 155 autres. Ensuite, arbitrer l'ajout au DAG de la **soustraction** et de l'**addition avec retenue** (aucune compétence ne les couvre, voir `QUALITY.md`), et les cartes mentales de B001, B005 et B006.
+**Relecture humaine : suspendue par décision de Gauthier (3 octobre 2026).** Le contenu relu par agent est considéré comme acceptable. Le tri humain se fera lors d'un **test complet de l'application**, où chaque exercice et chaque carte sera accepté ou invalidé. Prévu pour outiller ce test : un « mode recette » dans l'app, qui enregistre les verdicts en base, et un script qui les reporte dans le contenu.
 
 **Défaut systémique côté application :** dans les 44 QCM existants, la bonne réponse est toujours la proposition « a », et `AnswerInput` affiche les choix dans l'ordre du fichier. Un élève peut répondre juste sans lire. Correctif : mélanger les propositions à l'affichage.
 
-Le contenu reste en **JSON versionné dans Git** (relecture par PR, diff, rollback). Il sera chargé en base par un script de seed au sprint 3, mais Git demeure la source de vérité. Les 3 fichiers sont copiés à l'identique dans `Math_Edu_Application/src/content/` : toute livraison doit y être recopiée et validée par `scripts/validate_content.py`.
+Le contenu reste en **JSON versionné dans Git** (relecture par PR, diff, rollback) : **Git est la source, la base ne fait que le servir**. Décision du 3 octobre 2026 : Postgres (Supabase, déjà en place) pour la diffusion, ni base de graphe, ni base documents, ni CMS. Raisons : le DAG ne dépassera pas ~1 000 nœuds, `jsonb` absorbe la partie document, et tout le circuit de production par agents repose sur des fichiers.
+
+**Le contenu est découpé en petits fichiers** (`content/dag/<domaine>.json`, `content/exercices/<domaine>/<compétence>.json`, `content/cartes/<carte>.json`), parce qu'à terme 5 000 à 10 000 exercices ne tiennent pas dans un seul fichier, ni dans un diff, ni dans le contexte d'un agent. **Tous les scripts passent par `scripts/contenu.py`**, qui charge et écrit ce découpage et recalcule les compteurs. L'application reçoit encore trois fichiers assemblés : `python scripts/contenu.py export-app` après chaque livraison, puis `npm test`.
 
 ---
 
@@ -287,7 +289,7 @@ Elles ont fait sortir ce que les tests automatiques ne voyaient pas :
 Dans l'ordre :
 
 1. **Correctifs de recette : codés le 3 octobre 2026** (constats 2, 5, 6, 7, 8, 188 tests au vert). Reste : un passage navigateur sur l'inscription email, la réactivation de « Confirm email » pour tester le chemin avec confirmation, puis `ROADMAP.md` mis à jour. Constat n°10 à trancher.
-2. **Contenu : fait le 3 octobre 2026** pour B001, B005 et B006 (19 exercices). Reste la relecture humaine de Marius, et le mélange des propositions de QCM côté application (défaut systémique, §3).
+2. **Contenu : fait le 3 octobre 2026** pour B001, B005 et B006 (19 exercices), puis l'étape 1 du plan de contenu (domaine B complet). Reste le mélange des propositions de QCM côté application (défaut systémique, §3).
 3. **Node 24** (procédure §10.3), à faire VS Code fermé.
 4. **Domaine** (OVH), choix et achat par Gauthier, en parallèle.
 5. **Sprint 2b** : migration 0005 (jeton de consentement haché, expiration 7 jours), Edge Function `send-parent-consent` avec Resend en mode test, page `/consentement/:token`, boutons « Renvoyer » avec limitation de débit.
@@ -433,7 +435,7 @@ Aucun des quatre ne teste le navigateur. Avant tout commit : `npm test && npm ru
 - **`exercise-generator`** (déclencheur `/exos [id_compétence]`) : génère N exercices au format `exercises.schema.json`, énoncé (LaTeX autorisé), 3 niveaux (découverte / entraînement / maîtrise), réponse attendue, corrigé détaillé, 2 distracteurs pour les QCM. Ton adapté au niveau scolaire.
 - **`math-reviewer`** : relit chaque lot, vérifie l'exactitude mathématique, la conformité au niveau et au schéma, signale tout exercice douteux.
 
-**Règle d'or :** aucun exercice ne part en production sans **double validation (agent `math-reviewer` + relecture humaine de Marius)**. Les LLM font des erreurs de calcul. Travailler par lots, une PR par domaine, `validate_content.py` sur chaque PR. Taux d'erreur suivi dans `QUALITY.md` (17,4 % puis 4,5 % puis 2,9 % sur trois tours). Si un lot dépasse ~5 %, revoir le prompt de génération avant de continuer.
+**Règle d'or :** aucun exercice ne part en production sans **relecture `math-reviewer` indépendante de l'auteur**. La relecture humaine de Marius est remplacée, pour l'instant, par le test complet de l'application (décision du 3 octobre 2026, §3). Les LLM font des erreurs de calcul. Travailler par lots, une PR par domaine, `validate_content.py` sur chaque PR. Taux d'erreur suivi dans `QUALITY.md` (17,4 % puis 4,5 % puis 2,9 % sur trois tours). Si un lot dépasse ~5 %, revoir le prompt de génération avant de continuer.
 
 Deux points appris de la relecture : le champ `choices[].misconception` décrit l'erreur de raisonnement que révèle chaque distracteur, **ne pas la jeter**, c'est la matière première du diagnostic fin. Et `mastery_threshold` vaut `{required: 2, out_of: 3}` dans la tranche pilote faute d'exercices, la cible étant `{3, 4}` : **toujours lire la valeur du fichier, ne jamais la coder en dur.**
 
@@ -524,6 +526,8 @@ Le lint est réglé sur **zéro warning toléré**, c'est volontaire. Après tou
 - `Spécifications DAG, Exos, Mindcards/` — DAG, schémas JSON figés, `QUALITY.md` (suivi du taux d'erreur), `RELECTURE.md`, `CORRECTIONS_DAG_v2.md` (à lire avant de toucher au DAG : les niveaux du domaine C ont été corrigés de plusieurs années d'après les programmes officiels).
 - `Programme mathématiques/` — programmes officiels Eduscol, référence pour valider la couverture du DAG.
 - `scripts/validate_content.py` — validation des livraisons de contenu.
+- `scripts/contenu.py` — lecture et écriture du contenu découpé, export vers l'application.
+- `Spécifications DAG, Exos, Mindcards/PLAN_CONTENU.md` — plan d'extension par domaine et circuit des agents.
 
 **Documents historiques, à ne pas prendre pour l'état actuel :**
 - `Management de Projet/MATH_EDUCATION_Roadmap.docx` — roadmap v2.0 de juillet 2026. Vision produit valable, planning dépassé.

@@ -1,0 +1,142 @@
+[
+  {
+    "id": "EX-B003-D-01",
+    "skill_id": "B003",
+    "level": "decouverte",
+    "type": "numerique",
+    "statement": "9 canards nagent. 4 sortent de l'eau.\n\n● ● ● ● ● ● ● ● ●\n\nCombien restent dans l'eau ?",
+    "image": null,
+    "answer": {
+      "value": 5
+    },
+    "solution_steps": [
+      "Des canards **sortent** de l'eau : il en reste moins qu'avant. On enlève, c'est une soustraction : $9 - 4$.",
+      "On barre 4 canards sur les 9, puis on compte ceux qui restent : 1, 2, 3, 4, 5.",
+      "$9 - 4 = 5$. Il reste **5** canards dans l'eau. On vérifie avec une addition : $5 + 4 = 9$, on retrouve bien tous les canards du début."
+    ],
+    "hint": "Barre les canards qui sortent, puis compte les autres.",
+    "estimated_duration_s": 30,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 2, CP : comprendre le sens de l'addition et de la soustraction ; l'élève montre sa compréhension du sens de l'addition et de la soustraction lors de la résolution de problèmes."
+  },
+  {
+    "id": "EX-B003-D-02",
+    "skill_id": "B003",
+    "level": "decouverte",
+    "type": "qcm",
+    "statement": "On sait que $47 + 21 = 68$.\n\nQuel calcul a pour résultat 21 ?",
+    "image": null,
+    "choices": [
+      {
+        "key": "a",
+        "text": "$68 + 47$",
+        "misconception": "L'élève réutilise les nombres de l'égalité en gardant le signe + : il ne voit pas que retrouver un des nombres ajoutés, c'est enlever l'autre."
+      },
+      {
+        "key": "b",
+        "text": "$68 - 47$",
+        "misconception": null
+      },
+      {
+        "key": "c",
+        "text": "$47 - 21$",
+        "misconception": "L'élève reprend les deux premiers nombres dans l'ordre et remplace seulement + par - : il ne part pas du total 68."
+      }
+    ],
+    "answer": {
+      "value": "b"
+    },
+    "solution_steps": [
+      "$47 + 21 = 68$ : si on réunit 47 et 21, on obtient 68.",
+      "Si on part de 68 et qu'on enlève les 47, il reste les 21. Donc $68 - 47 = 21$.",
+      "La soustraction défait ce que l'addition a fait : c'est l'opération inverse. La bonne réponse est $68 - 47$."
+    ],
+    "hint": "Pars du total, 68. Que faut-il enlever pour qu'il reste 21 ?",
+    "estimated_duration_s": 45,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 2, CP : comprendre le sens de l'addition et de la soustraction ; la soustraction est comprise par l'élève comme l'opération inverse de l'addition."
+  },
+  {
+    "id": "EX-B003-E-01",
+    "skill_id": "B003",
+    "level": "entrainement",
+    "type": "numerique",
+    "statement": "Un fleuriste a 87 roses. Il en vend 54.\n\nCombien lui en reste-t-il ?",
+    "image": null,
+    "answer": {
+      "value": 33
+    },
+    "solution_steps": [
+      "Le fleuriste vend des roses : il lui en reste moins. On calcule $87 - 54$.",
+      "On enlève les unités aux unités : $7 - 4 = 3$. On enlève les dizaines aux dizaines : $8 - 5 = 3$.",
+      "$87 - 54 = 33$. Il reste **33** roses.",
+      "On vérifie avec l'addition : $33 + 54 = 87$. On retrouve bien les 87 roses du début."
+    ],
+    "hint": "Enlève d'abord les unités aux unités, puis les dizaines aux dizaines.",
+    "estimated_duration_s": 45,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 2, CP : comprendre le sens de l'addition et de la soustraction ; l'élève montre sa compréhension du sens de l'addition et de la soustraction lors de la résolution de problèmes."
+  },
+  {
+    "id": "EX-B003-E-02",
+    "skill_id": "B003",
+    "level": "entrainement",
+    "type": "vrai_faux",
+    "statement": "Yanis dit : « $65 - 23$ et $23 - 65$ donnent le même résultat. »\n\nA-t-il raison ?",
+    "image": null,
+    "answer": {
+      "value": false
+    },
+    "solution_steps": [
+      "$65 - 23$, c'est enlever 23 à 65 : $5 - 3 = 2$ et $6 - 2 = 4$, donc $65 - 23 = 42$.",
+      "$23 - 65$, c'est enlever 65 à 23. Si on a 23 jetons, on ne peut pas en enlever 65 : avec les nombres que tu connais, ce calcul n'a pas de résultat.",
+      "Yanis a **tort**. Pour l'addition, l'ordre ne compte pas : $23 + 65$ et $65 + 23$ font tous les deux 88. Pour la soustraction, l'ordre compte : on part toujours du nombre dont on enlève."
+    ],
+    "hint": "Imagine 23 jetons. Peux-tu en enlever 65 ?",
+    "estimated_duration_s": 45,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 2, CP : l'élève comprend que l'ordre des termes n'a pas d'importance pour l'addition, mais qu'il n'en est pas de même pour la soustraction."
+  },
+  {
+    "id": "EX-B003-M-01",
+    "skill_id": "B003",
+    "level": "maitrise",
+    "type": "numerique",
+    "statement": "Au marché, Paul avait 67 œufs. Il lui en reste 41.\n\nCombien d'œufs a-t-il vendus ?",
+    "image": null,
+    "answer": {
+      "value": 26
+    },
+    "solution_steps": [
+      "On connait le nombre d'œufs du début (67) et celui de la fin (41). On cherche ce qui est parti : la différence entre les deux.",
+      "On peut chercher le nombre qui complète $41 + \\dots = 67$, ou calculer $67 - 41$ : c'est le même nombre, car la soustraction est l'inverse de l'addition.",
+      "$67 - 41$ : unités $7 - 1 = 6$, dizaines $6 - 4 = 2$. Donc $67 - 41 = 26$.",
+      "Paul a vendu **26** œufs. On vérifie : $41 + 26 = 67$."
+    ],
+    "hint": "Combien faut-il ajouter à 41 pour revenir à 67 ?",
+    "estimated_duration_s": 75,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 2, CP : résoudre des problèmes additifs en une étape du type parties-tout ; par exemple « Il y avait 36 oiseaux dans l'arbre. Il n'en reste plus que 21. Combien d'oiseaux se sont envolés ? »"
+  },
+  {
+    "id": "EX-B003-M-02",
+    "skill_id": "B003",
+    "level": "maitrise",
+    "type": "numerique",
+    "statement": "Complète l'égalité :\n\n$\\dots - 32 = 45$",
+    "image": null,
+    "answer": {
+      "value": 77
+    },
+    "solution_steps": [
+      "On cherche le nombre de départ : on lui a enlevé 32, et il est resté 45.",
+      "Pour retrouver le départ, on remet ce qu'on a enlevé : on fait l'opération inverse, l'addition $45 + 32$.",
+      "$45 + 32$ : unités $5 + 2 = 7$, dizaines $4 + 3 = 7$. Donc $45 + 32 = 77$.",
+      "Le nombre qui manque est **77**. On vérifie : $77 - 32 = 45$."
+    ],
+    "hint": "Si on enlève 32 et qu'il reste 45, combien y avait-il au début ?",
+    "estimated_duration_s": 75,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 2, CP : comprendre le sens de l'addition et de la soustraction ; la soustraction est comprise par l'élève comme l'opération inverse de l'addition (on a 32 + 15 = 47, donc 47 - 32 = 15 et 47 - 15 = 32)."
+  }
+]

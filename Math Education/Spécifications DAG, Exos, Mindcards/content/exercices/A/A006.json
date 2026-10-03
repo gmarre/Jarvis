@@ -1,0 +1,114 @@
+[
+  {
+    "id": "EX-A006-D-01",
+    "skill_id": "A006",
+    "level": "decouverte",
+    "type": "qcm",
+    "statement": "Quel est le plus **grand** de ces deux nombres : 45 et 54 ?",
+    "image": null,
+    "choices": [
+      {
+        "key": "a",
+        "text": "54",
+        "misconception": null
+      },
+      {
+        "key": "b",
+        "text": "45",
+        "misconception": "L'élève compare les chiffres des unités au lieu de commencer par les dizaines."
+      },
+      {
+        "key": "c",
+        "text": "Ils sont égaux",
+        "misconception": "L'élève voit les mêmes chiffres et conclut à l'égalité sans tenir compte de la position."
+      }
+    ],
+    "answer": {
+      "value": "a"
+    },
+    "solution_steps": [
+      "Les deux nombres ont deux chiffres : on compare d'abord les **dizaines**.",
+      "45 a 4 dizaines, 54 en a 5.",
+      "Comme $5 > 4$, on a $54 > 45$."
+    ],
+    "hint": "Commence toujours par comparer les chiffres de gauche.",
+    "estimated_duration_s": 35,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 2, CE1 : comparer les entiers."
+  },
+  {
+    "id": "EX-A006-E-01",
+    "skill_id": "A006",
+    "level": "entrainement",
+    "type": "qcm",
+    "statement": "Quel symbole faut-il placer entre 302 et 320 ?\n\n$302 \\;\\ldots\\; 320$",
+    "image": null,
+    "choices": [
+      {
+        "key": "a",
+        "text": "$<$",
+        "misconception": null
+      },
+      {
+        "key": "b",
+        "text": "$>$",
+        "misconception": "L'élève s'arrête au chiffre des unités (2 contre 0) sans remonter aux dizaines."
+      },
+      {
+        "key": "c",
+        "text": "$=$",
+        "misconception": "L'élève voit les mêmes trois chiffres et conclut à l'égalité."
+      }
+    ],
+    "answer": {
+      "value": "a"
+    },
+    "solution_steps": [
+      "Les deux nombres ont 3 chiffres : on compare rang par rang, de gauche à droite.",
+      "Centaines : 3 et 3, égalité.",
+      "Dizaines : 0 et 2. Comme $0 < 2$, on peut conclure.",
+      "$302 < 320$."
+    ],
+    "hint": "Compare les chiffres un à un depuis la gauche, et arrête-toi dès qu'ils diffèrent.",
+    "estimated_duration_s": 50,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 2, CE1 : comparer les entiers jusqu'à mille."
+  },
+  {
+    "id": "EX-A006-M-01",
+    "skill_id": "A006",
+    "level": "maitrise",
+    "type": "qcm",
+    "statement": "Quel est le plus **grand** de ces deux nombres : 999 et 1 000 ?",
+    "image": null,
+    "choices": [
+      {
+        "key": "a",
+        "text": "1 000",
+        "misconception": null
+      },
+      {
+        "key": "b",
+        "text": "999",
+        "misconception": "L'élève compare le premier chiffre (9 contre 1) sans regarder le nombre de chiffres."
+      },
+      {
+        "key": "c",
+        "text": "Ils sont égaux",
+        "misconception": "L'élève lit 1 000 comme « cent » et le croit proche de 999, par confusion entre le nom du nombre et son écriture."
+      }
+    ],
+    "answer": {
+      "value": "a"
+    },
+    "solution_steps": [
+      "On compare d'abord le **nombre de chiffres** : 999 en a 3, 1 000 en a 4.",
+      "À nombre de chiffres différent, le nombre le plus long est le plus grand.",
+      "Donc $1\\,000 > 999$."
+    ],
+    "hint": "Ne compare pas le premier chiffre avant d'avoir compté combien de chiffres a chaque nombre.",
+    "estimated_duration_s": 45,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 2, CE1 : comparer les entiers jusqu'à mille."
+  }
+]

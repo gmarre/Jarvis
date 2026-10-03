@@ -1,0 +1,98 @@
+[
+  {
+    "id": "EX-C001-D-01",
+    "skill_id": "C001",
+    "level": "decouverte",
+    "type": "qcm",
+    "statement": "Un gâteau est partagé en **4 parts égales**. Léa en prend **3**.\n\nQuelle fraction du gâteau Léa a-t-elle prise ?",
+    "image": null,
+    "choices": [
+      {
+        "key": "a",
+        "text": "$\\frac{3}{4}$",
+        "misconception": null
+      },
+      {
+        "key": "b",
+        "text": "$\\frac{4}{3}$",
+        "misconception": "L'élève intervertit numérateur et dénominateur."
+      },
+      {
+        "key": "c",
+        "text": "$\\frac{3}{7}$",
+        "misconception": "L'élève additionne les parts prises et les parts restantes pour former le dénominateur."
+      }
+    ],
+    "answer": {
+      "value": "a"
+    },
+    "solution_steps": [
+      "Le gâteau est le **tout**, partagé en 4 parts égales : le dénominateur est **4**.",
+      "Léa prend 3 de ces parts : le numérateur est **3**.",
+      "Elle a pris $\\frac{3}{4}$ du gâteau."
+    ],
+    "hint": "En bas, le nombre total de parts. En haut, le nombre de parts prises.",
+    "estimated_duration_s": 45,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 2, CE1 : les fractions rencontrées au CE1 sont les fractions d'un tout."
+  },
+  {
+    "id": "EX-C001-E-01",
+    "skill_id": "C001",
+    "level": "entrainement",
+    "type": "qcm",
+    "statement": "Une bande de papier est partagée en **5 parts égales**. On en colorie **2**.\n\nQuelle fraction de la bande est coloriée ?",
+    "image": null,
+    "choices": [
+      {
+        "key": "a",
+        "text": "$\\frac{2}{5}$",
+        "misconception": null
+      },
+      {
+        "key": "b",
+        "text": "$\\frac{2}{3}$",
+        "misconception": "L'élève met au dénominateur le nombre de parts NON coloriées."
+      },
+      {
+        "key": "c",
+        "text": "$\\frac{5}{2}$",
+        "misconception": "L'élève intervertit numérateur et dénominateur."
+      }
+    ],
+    "answer": {
+      "value": "a"
+    },
+    "solution_steps": [
+      "La bande entière est partagée en 5 parts égales : dénominateur **5**.",
+      "2 parts sont coloriées : numérateur **2**.",
+      "La fraction coloriée est $\\frac{2}{5}$.",
+      "Attention : le dénominateur est le nombre **total** de parts, pas le nombre de parts restantes."
+    ],
+    "hint": "Combien de parts en tout ? Combien de parts coloriées ?",
+    "estimated_duration_s": 50,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 2, CE1 : l'élève sait qu'il peut représenter la fraction 2/5 par un tout partagé en 5 parts égales dont il colorie 2 parts."
+  },
+  {
+    "id": "EX-C001-M-01",
+    "skill_id": "C001",
+    "level": "maitrise",
+    "type": "vrai_faux",
+    "statement": "Un rectangle est découpé en 3 morceaux : un grand et deux petits. On prend le grand morceau.\n\nPeut-on dire qu'on a pris $\\frac{1}{3}$ du rectangle ?",
+    "image": null,
+    "answer": {
+      "value": false
+    },
+    "solution_steps": [
+      "Pour parler de fraction, le tout doit être partagé en parts **égales**.",
+      "Ici les morceaux ne sont pas de même taille : un grand et deux petits.",
+      "On ne peut donc pas dire qu'on a pris $\\frac{1}{3}$ du rectangle.",
+      "La réponse est **faux**."
+    ],
+    "hint": "Relis bien la condition indispensable pour parler de fraction.",
+    "estimated_duration_s": 75,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 2, CE1 : partage d'un tout en parts égales."
+  }
+]

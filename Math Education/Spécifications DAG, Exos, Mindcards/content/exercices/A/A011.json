@@ -1,0 +1,87 @@
+[
+  {
+    "id": "EX-A011-D-01",
+    "skill_id": "A011",
+    "level": "decouverte",
+    "type": "qcm",
+    "statement": "Parmi ces nombres, lesquels sont **pairs** ?\n\n13, 28, 45, 100",
+    "image": null,
+    "choices": [
+      {
+        "key": "a",
+        "text": "28 et 100",
+        "misconception": null
+      },
+      {
+        "key": "b",
+        "text": "13 et 45",
+        "misconception": "L'élève identifie les nombres impairs en croyant qu'ils sont pairs."
+      },
+      {
+        "key": "c",
+        "text": "28, 45 et 100",
+        "misconception": "L'élève pense qu'un nombre se terminant par 5 est pair."
+      }
+    ],
+    "answer": {
+      "value": "a"
+    },
+    "solution_steps": [
+      "Un nombre est pair s'il se termine par 0, 2, 4, 6 ou 8.",
+      "13 se termine par 3 : impair. 28 se termine par 8 : **pair**.",
+      "45 se termine par 5 : impair. 100 se termine par 0 : **pair**.",
+      "Les nombres pairs sont 28 et 100."
+    ],
+    "hint": "Regarde seulement le chiffre des unités.",
+    "estimated_duration_s": 45,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 2, CE1 : l'élève sait dire si un nombre est pair ou impair."
+  },
+  {
+    "id": "EX-A011-E-01",
+    "skill_id": "A011",
+    "level": "entrainement",
+    "type": "vrai_faux",
+    "statement": "Le nombre 764 est un nombre pair.",
+    "image": null,
+    "answer": {
+      "value": true
+    },
+    "solution_steps": [
+      "Le chiffre des unités est 4.",
+      "4 fait partie de 0, 2, 4, 6, 8 : le nombre est donc pair.",
+      "Autrement dit, 764 peut être partagé en deux parts égales : $764 = 382 + 382$.",
+      "L'affirmation est **vraie**."
+    ],
+    "hint": "Peu importe la taille du nombre : seul le chiffre des unités compte.",
+    "estimated_duration_s": 30,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 2, CE1 : l'élève sait dire si un nombre est pair ou impair."
+  },
+  {
+    "id": "EX-A011-M-01",
+    "skill_id": "A011",
+    "level": "maitrise",
+    "type": "texte",
+    "statement": "Donne tous les nombres **pairs** strictement compris entre 767 et 778.\n\nSépare-les par des virgules.",
+    "image": null,
+    "answer": {
+      "value": "768, 770, 772, 774, 776",
+      "accepted": [
+        "768,770,772,774,776",
+        "768 770 772 774 776"
+      ]
+    },
+    "solution_steps": [
+      "« Strictement compris entre 767 et 778 » signifie de 768 à 777.",
+      "Le premier nombre pair est 768.",
+      "On avance ensuite de 2 en 2 : 768, 770, 772, 774, 776.",
+      "778 est exclu car la borne est stricte.",
+      "Réponse : 768, 770, 772, 774, 776."
+    ],
+    "hint": "Trouve le premier nombre pair après 767, puis avance de 2 en 2.",
+    "estimated_duration_s": 90,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 2, CE1 : l'élève sait donner tous les nombres pairs compris en 767 et 778."
+  }
+]

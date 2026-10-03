@@ -1,0 +1,160 @@
+[
+  {
+    "id": "EX-B014-D-01",
+    "skill_id": "B014",
+    "level": "decouverte",
+    "type": "numerique",
+    "statement": "Calcule dans ta tête : $85 - 40$.",
+    "image": null,
+    "answer": {
+      "value": 45
+    },
+    "solution_steps": [
+      "40, c'est 4 dizaines. Enlever 40, c'est enlever 4 dizaines.",
+      "85, c'est 8 dizaines et 5 unités. 8 dizaines moins 4 dizaines, il reste 4 dizaines. Les 5 unités ne bougent pas.",
+      "$85 - 40 = 45$."
+    ],
+    "hint": "Combien de dizaines y a-t-il dans 40 ?",
+    "estimated_duration_s": 30,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 2, CP : ajouter ou soustraire 20, 30, 40, 50, 60, 70, 80 ou 90 à un nombre ; l'élève sait que c'est ajouter ou soustraire 2, 3, 4, 5, 6, 7, 8 ou 9 dizaines à ce nombre."
+  },
+  {
+    "id": "EX-B014-D-02",
+    "skill_id": "B014",
+    "level": "decouverte",
+    "type": "qcm",
+    "statement": "Combien font $60 - 3$ ?",
+    "image": null,
+    "choices": [
+      {
+        "key": "a",
+        "text": "63",
+        "misconception": "L'élève ne peut pas enlever 3 à 0 unité, alors il calcule $3 - 0 = 3$ : il enlève le petit chiffre du grand au lieu de casser une dizaine."
+      },
+      {
+        "key": "b",
+        "text": "57",
+        "misconception": null
+      },
+      {
+        "key": "c",
+        "text": "58",
+        "misconception": "L'élève compte à rebours en disant 60 comme premier pas (« 60, 59, 58 ») : il n'a reculé que de 2."
+      }
+    ],
+    "answer": {
+      "value": "b"
+    },
+    "solution_steps": [
+      "60, c'est 6 dizaines et 0 unité. On ne peut pas enlever 3 unités à 0 unité.",
+      "On **casse** une dizaine : il reste 5 dizaines, et on a 10 unités.",
+      "On enlève 3 unités aux 10 unités : il en reste 7. On a 5 dizaines et 7 unités.",
+      "$60 - 3 = 57$ : la bonne réponse est **57**."
+    ],
+    "hint": "Casse une des dizaines de 60 en 10 unités.",
+    "estimated_duration_s": 40,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 2, CP : soustraire un nombre inférieur à 10 à un nombre entier de dizaines ; l'élève sait qu'il peut « casser » une dizaine afin de lui retirer le nombre à soustraire."
+  },
+  {
+    "id": "EX-B014-E-01",
+    "skill_id": "B014",
+    "level": "entrainement",
+    "type": "numerique",
+    "statement": "Noé a 40 euros. Il achète un ballon à 8 euros.\n\nCombien lui reste-t-il ?",
+    "image": null,
+    "answer": {
+      "value": 32
+    },
+    "solution_steps": [
+      "Noé dépense de l'argent : il lui en reste moins. On calcule $40 - 8$.",
+      "40, c'est 4 dizaines. On casse une dizaine : 3 dizaines et 10 unités.",
+      "On enlève 8 unités aux 10 unités : il en reste 2, car $8 + 2 = 10$. On a 3 dizaines et 2 unités.",
+      "$40 - 8 = 32$. Il reste **32** euros à Noé."
+    ],
+    "hint": "Casse une dizaine de 40. Combien d'unités restent quand on en enlève 8 à 10 ?",
+    "estimated_duration_s": 45,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 2, CP : soustraire un nombre inférieur à 10 à un nombre entier de dizaines ; le nombre d'unités restantes est le complément à 10 du nombre d'unités que l'on soustrait."
+  },
+  {
+    "id": "EX-B014-E-02",
+    "skill_id": "B014",
+    "level": "entrainement",
+    "type": "vrai_faux",
+    "statement": "Inès dit : « $52 - 20 = 50$ ».\n\nA-t-elle raison ?",
+    "image": null,
+    "answer": {
+      "value": false
+    },
+    "solution_steps": [
+      "20, c'est 2 **dizaines**. Il faut enlever 2 dizaines, pas 2 unités.",
+      "52, c'est 5 dizaines et 2 unités. 5 dizaines moins 2 dizaines, il reste 3 dizaines. Les 2 unités ne bougent pas : $52 - 20 = 32$.",
+      "Inès a **tort** : elle a enlevé 2 unités, ce qui fait $52 - 2 = 50$."
+    ],
+    "hint": "Dans 20, le 2 compte des unités ou des dizaines ?",
+    "estimated_duration_s": 40,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 2, CP : ajouter ou soustraire 20, 30, 40, 50, 60, 70, 80 ou 90 à un nombre ; l'élève sait que c'est ajouter ou soustraire 2, 3, 4, 5, 6, 7, 8 ou 9 dizaines à ce nombre."
+  },
+  {
+    "id": "EX-B014-M-01",
+    "skill_id": "B014",
+    "level": "maitrise",
+    "type": "numerique",
+    "statement": "34 poules sont dans la cour. 6 rentrent au poulailler.\n\nCombien restent dans la cour ?",
+    "image": null,
+    "answer": {
+      "value": 28
+    },
+    "solution_steps": [
+      "Des poules quittent la cour : il en reste moins. On calcule $34 - 6$.",
+      "34, c'est 3 dizaines et 4 unités. On ne peut pas enlever 6 unités à 4 unités.",
+      "On **casse** une dizaine en 10 unités : il reste 2 dizaines, et on a $10 + 4 = 14$ unités.",
+      "On enlève 6 unités aux 14 unités : $14 - 6 = 8$, car $8 + 6 = 14$. On a 2 dizaines et 8 unités.",
+      "$34 - 6 = 28$. Il reste **28** poules dans la cour. On vérifie : $28 + 6 = 34$."
+    ],
+    "hint": "34, c'est 3 dizaines et 4 unités. Il n'y a pas assez d'unités pour en enlever 6 : que peux-tu casser ?",
+    "estimated_duration_s": 60,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 2, CP : résoudre des problèmes additifs en une étape du type parties-tout ; par exemple « Léa a 53 euros dans son portemonnaie. Elle achète un livre à 7 euros. Combien lui reste-t-il ? »"
+  },
+  {
+    "id": "EX-B014-M-02",
+    "skill_id": "B014",
+    "level": "maitrise",
+    "type": "qcm",
+    "statement": "Quel nombre manque ?\n\n$80 - \\dots = 74$",
+    "image": null,
+    "choices": [
+      {
+        "key": "a",
+        "text": "4",
+        "misconception": "L'élève recopie le chiffre des unités de 74 sans se demander ce qu'on a enlevé à 80."
+      },
+      {
+        "key": "b",
+        "text": "14",
+        "misconception": "L'élève calcule chiffre par chiffre : $8 - 7 = 1$, puis, ne pouvant pas faire $0 - 4$, il fait $4 - 0 = 4$. Il enlève le petit chiffre du grand."
+      },
+      {
+        "key": "c",
+        "text": "6",
+        "misconception": null
+      }
+    ],
+    "answer": {
+      "value": "c"
+    },
+    "solution_steps": [
+      "On a enlevé un nombre à 80 et il reste 74. On cherche ce qu'il faut ajouter à 74 pour revenir à 80.",
+      "74, c'est 7 dizaines et 4 unités. Pour faire une dizaine de plus, il manque 6 unités, car $4 + 6 = 10$. Donc $74 + 6 = 80$.",
+      "On vérifie en cassant une dizaine de 80 : 7 dizaines et 10 unités, moins 6 unités, il reste 7 dizaines et 4 unités. $80 - 6 = 74$ : la bonne réponse est **6**."
+    ],
+    "hint": "Combien faut-il ajouter à 74 pour arriver à 80 ?",
+    "estimated_duration_s": 60,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 2, CP : trouver le complément d'un nombre à la dizaine supérieure ; soustraire un nombre inférieur à 10 à un nombre entier de dizaines."
+  }
+]

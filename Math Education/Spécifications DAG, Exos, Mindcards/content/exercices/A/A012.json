@@ -1,0 +1,190 @@
+[
+  {
+    "id": "EX-A012-D-01",
+    "skill_id": "A012",
+    "level": "decouverte",
+    "type": "vrai_faux",
+    "statement": "Léa compte de 7 en 7 à partir de 0 : 7, 14, 21, 28, 35, 42, 49.\n\nLe nombre 42 est un multiple de 7.",
+    "image": null,
+    "answer": {
+      "value": true
+    },
+    "solution_steps": [
+      "Compter de 7 en 7 à partir de 0, c'est écrire la table de 7.",
+      "Dans la liste de Léa, 42 apparaît : il vient juste après 35.",
+      "On peut aussi l'écrire comme une multiplication : $42 = 7 \\times 6$.",
+      "42 est donc bien un multiple de 7. L'affirmation est **vraie**."
+    ],
+    "hint": "Cherche 42 dans la liste que Léa a écrite.",
+    "estimated_duration_s": 40,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 3, CM1, les nombres entiers : savoir determiner si un nombre entier donne est un multiple d'un nombre entier inferieur ou egal a 10."
+  },
+  {
+    "id": "EX-A012-D-02",
+    "skill_id": "A012",
+    "level": "decouverte",
+    "type": "qcm",
+    "statement": "Léa compte de 7 en 7 à partir de 0 : 7, 14, 21, 28, 35, 42, 49.\n\nElle continue longtemps. Lequel de ces nombres dira-t-elle ?",
+    "image": null,
+    "choices": [
+      {
+        "key": "a",
+        "text": "63",
+        "misconception": null
+      },
+      {
+        "key": "b",
+        "text": "59",
+        "misconception": "L'élève avance de 10 au lieu de 7 : il ajoute 10 à 49 et obtient 59, qui n'est dans aucune multiplication par 7."
+      },
+      {
+        "key": "c",
+        "text": "64",
+        "misconception": "L'élève glisse vers la table de 8 : $64 = 8 \\times 8$, mais 64 n'est pas un multiple de 7."
+      }
+    ],
+    "answer": {
+      "value": "a"
+    },
+    "solution_steps": [
+      "Les nombres que dit Léa sont les multiples de 7 : $7 \\times 1$, $7 \\times 2$, $7 \\times 3$, et ainsi de suite.",
+      "Après 49 vient 56, puis 63.",
+      "$63 = 7 \\times 9$ : Léa dira bien 63.",
+      "59 et 64 n'apparaissent dans aucune multiplication par 7, puisque $7 \\times 8 = 56$ et $7 \\times 9 = 63$."
+    ],
+    "hint": "Continue la liste de Léa : quel nombre vient juste après 49 ?",
+    "estimated_duration_s": 60,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 3, CM1, les nombres entiers : savoir determiner si un nombre entier donne est un multiple d'un nombre entier inferieur ou egal a 10."
+  },
+  {
+    "id": "EX-A012-E-01",
+    "skill_id": "A012",
+    "level": "entrainement",
+    "type": "vrai_faux",
+    "statement": "Un fleuriste veut ranger 96 tulipes en bouquets de 7 tulipes, sans qu'il en reste aucune.\n\nIl y arrive, donc 96 est un multiple de 7.",
+    "image": null,
+    "answer": {
+      "value": false
+    },
+    "solution_steps": [
+      "On cherche si 96 s'écrit 7 multiplié par un nombre entier.",
+      "$7 \\times 13 = 91$, et $7 \\times 14 = 98$ : on saute 96.",
+      "$96 = 7 \\times 13 + 5$ : il resterait 5 tulipes.",
+      "Le fleuriste n'y arrive donc pas, et 96 n'est **pas** un multiple de 7. L'affirmation est **fausse**."
+    ],
+    "hint": "Cherche dans la table de 7 : y trouve-t-on 96 ?",
+    "estimated_duration_s": 60,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 3, CM1, les nombres entiers : savoir determiner si un nombre entier donne est un multiple d'un nombre entier inferieur ou egal a 10."
+  },
+  {
+    "id": "EX-A012-E-02",
+    "skill_id": "A012",
+    "level": "entrainement",
+    "type": "texte",
+    "statement": "Parmi 128, 150 et 305, quels nombres sont des multiples de 4 ?\n\nSépare-les par des virgules.",
+    "image": null,
+    "answer": {
+      "value": "128",
+      "accepted": [
+        "128."
+      ]
+    },
+    "solution_steps": [
+      "Un nombre est un multiple de 4 s'il s'écrit 4 multiplié par un nombre entier.",
+      "$128 = 4 \\times 32$ : c'est un multiple de 4.",
+      "$150 = 4 \\times 37 + 2$ : il reste 2, ce n'est pas un multiple de 4.",
+      "$305 = 4 \\times 76 + 1$ : il reste 1, ce n'est pas un multiple de 4.",
+      "Réponse : 128."
+    ],
+    "hint": "Divise chaque nombre par 4 et regarde s'il reste quelque chose.",
+    "estimated_duration_s": 90,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 3, CM1, les nombres entiers : savoir determiner si un nombre entier donne est un multiple d'un nombre entier inferieur ou egal a 10."
+  },
+  {
+    "id": "EX-A012-E-03",
+    "skill_id": "A012",
+    "level": "entrainement",
+    "type": "qcm",
+    "statement": "Théo pose 23 rangées de 7 images et trouve $7 \\times 23 = 161$.\n\nQue peut-il en déduire ?",
+    "image": null,
+    "choices": [
+      {
+        "key": "a",
+        "text": "161 est un multiple de 7",
+        "misconception": null
+      },
+      {
+        "key": "b",
+        "text": "7 est un multiple de 161",
+        "misconception": "L'élève inverse les rôles : c'est le résultat de la multiplication qui est le multiple, pas le facteur. 7 est plus petit que 161."
+      },
+      {
+        "key": "c",
+        "text": "161 est un multiple de 30",
+        "misconception": "L'élève additionne les deux facteurs, $7 + 23 = 30$, au lieu de garder la multiplication ; or 161 n'est pas dans la table de 30."
+      }
+    ],
+    "answer": {
+      "value": "a"
+    },
+    "solution_steps": [
+      "Un multiple de 7 est un nombre qui s'écrit 7 multiplié par un nombre entier.",
+      "Ici $161 = 7 \\times 23$ : 161 est donc un multiple de 7.",
+      "Le résultat d'une multiplication est un multiple de chacun des deux nombres multipliés : ici c'est 161 qui est le multiple, pas 7.",
+      "En revanche 7 n'est pas un multiple de 161 : 7 est plus petit que 161, et aucune multiplication $161 \\times \\ldots$ ne donne 7.",
+      "Réponse : 161 est un multiple de 7."
+    ],
+    "hint": "Dans $7 \\times 23 = 161$, quel nombre est le résultat de la multiplication ?",
+    "estimated_duration_s": 75,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 3, CM1, les nombres entiers : savoir determiner si un nombre entier donne est un multiple d'un nombre entier inferieur ou egal a 10."
+  },
+  {
+    "id": "EX-A012-M-01",
+    "skill_id": "A012",
+    "level": "maitrise",
+    "type": "numerique",
+    "statement": "Un nombre est un multiple de 8. Il est compris entre 300 et 310.\n\nQuel est ce nombre ?",
+    "image": null,
+    "answer": {
+      "value": 304
+    },
+    "solution_steps": [
+      "Cette fois on ne demande pas de vérifier un nombre, mais de le retrouver : il faut parcourir la table de 8.",
+      "$8 \\times 37 = 296$ : trop petit, on n'a pas encore atteint 300.",
+      "$8 \\times 38 = 304$ : 304 est bien compris entre 300 et 310.",
+      "$8 \\times 39 = 312$ : trop grand.",
+      "Le nombre cherché est **304**, et c'est le seul possible."
+    ],
+    "hint": "Cherche par quel nombre multiplier 8 pour arriver juste au-dessus de 300.",
+    "estimated_duration_s": 120,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 3, CM1, les nombres entiers : savoir determiner si un nombre entier donne est un multiple d'un nombre entier inferieur ou egal a 10."
+  },
+  {
+    "id": "EX-A012-M-02",
+    "skill_id": "A012",
+    "level": "maitrise",
+    "type": "vrai_faux",
+    "statement": "Nina remarque que 26 est un nombre pair.\n\nElle en conclut que 26 est un multiple de 4. Nina a raison.",
+    "image": null,
+    "answer": {
+      "value": false
+    },
+    "solution_steps": [
+      "Le début est juste : 26 se termine par 6, il est donc pair, c'est-à-dire multiple de 2.",
+      "Mais être un multiple de 2 ne suffit pas pour être un multiple de 4.",
+      "Dans la table de 4 on trouve $4 \\times 6 = 24$, puis $4 \\times 7 = 28$ : 26 n'y figure pas.",
+      "$26 = 4 \\times 6 + 2$ : il reste 2. Nina a donc **tort**.",
+      "Un nombre pair est parfois multiple de 4, comme 24 ou 28, mais pas toujours : 6, 10, 26 sont pairs sans être dans la table de 4."
+    ],
+    "hint": "Écris la table de 4 : 4, 8, 12, 16… 26 y apparaît-il ?",
+    "estimated_duration_s": 120,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 3, CM1, les nombres entiers : savoir determiner si un nombre entier donne est un multiple d'un nombre entier inferieur ou egal a 10."
+  }
+]

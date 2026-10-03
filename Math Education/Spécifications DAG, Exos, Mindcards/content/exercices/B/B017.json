@@ -1,0 +1,196 @@
+[
+  {
+    "id": "EX-B017-D-01",
+    "skill_id": "B017",
+    "level": "decouverte",
+    "type": "qcm",
+    "statement": "Sans poser l'opération, quel est le résultat le plus proche de $298 + 403$ ?",
+    "image": null,
+    "choices": [
+      {
+        "key": "a",
+        "text": "600",
+        "misconception": "L'élève ne garde que le chiffre des centaines de chaque nombre, 200 et 400, au lieu de prendre la centaine la plus proche : 298 est bien plus proche de 300 que de 200."
+      },
+      {
+        "key": "b",
+        "text": "700",
+        "misconception": null
+      },
+      {
+        "key": "c",
+        "text": "7 000",
+        "misconception": "L'élève trouve bien 3 + 4 = 7, mais se trompe d'unité : il compte des milliers au lieu de centaines."
+      }
+    ],
+    "answer": {
+      "value": "b"
+    },
+    "solution_steps": [
+      "298 est tout près de 300 : il ne manque que 2.",
+      "403 est tout près de 400 : il y a seulement 3 de plus.",
+      "On calcule avec ces nombres ronds : 3 centaines et 4 centaines font 7 centaines, $300 + 400 = 700$.",
+      "Le résultat est proche de 700 : la bonne réponse est b. Le calcul exact donne 701."
+    ],
+    "hint": "Remplace chaque nombre par la centaine la plus proche.",
+    "estimated_duration_s": 40,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 3, CM1 : estimer le résultat d'une opération."
+  },
+  {
+    "id": "EX-B017-D-02",
+    "skill_id": "B017",
+    "level": "decouverte",
+    "type": "vrai_faux",
+    "statement": "Mia achète une tablette à 198 € et une housse à 41 €.\n\nVrai ou faux : elle dépense environ 240 €.",
+    "image": null,
+    "answer": {
+      "value": true
+    },
+    "solution_steps": [
+      "198 € est tout près de 200 €.",
+      "41 € est tout près de 40 €.",
+      "$200 + 40 = 240$ : Mia dépense environ 240 €.",
+      "C'est **vrai**. Le calcul exact donne 239 €, très proche de 240 €."
+    ],
+    "hint": "Arrondis chaque prix à la dizaine la plus proche, puis additionne.",
+    "estimated_duration_s": 40,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 3, CM1 : estimer le résultat d'une opération."
+  },
+  {
+    "id": "EX-B017-E-01",
+    "skill_id": "B017",
+    "level": "entrainement",
+    "type": "qcm",
+    "statement": "Un stade a 9 870 places. 3 120 spectateurs sont venus.\n\nEnviron combien de places sont restées vides ?",
+    "image": null,
+    "choices": [
+      {
+        "key": "a",
+        "text": "6 000",
+        "misconception": "L'élève remplace 9 870 par 9 000 en ne gardant que le chiffre des milliers, alors que 9 870 est bien plus proche de 10 000."
+      },
+      {
+        "key": "b",
+        "text": "13 000",
+        "misconception": "L'élève additionne au lieu de soustraire : il réunit les places et les spectateurs, alors qu'on cherche les places sans spectateur."
+      },
+      {
+        "key": "c",
+        "text": "7 000",
+        "misconception": null
+      }
+    ],
+    "answer": {
+      "value": "c"
+    },
+    "solution_steps": [
+      "Les places vides, ce sont les places du stade moins les places occupées : c'est une soustraction.",
+      "9 870 est proche de 10 000 (il manque 130). 3 120 est proche de 3 000.",
+      "On calcule avec les nombres ronds : 10 milliers moins 3 milliers, il reste 7 milliers, $10\\,000 - 3\\,000 = 7\\,000$.",
+      "Il reste environ 7 000 places vides : la bonne réponse est c. Le calcul exact donne 6 750."
+    ],
+    "hint": "Arrondis chaque nombre au millier le plus proche. Faut-il ajouter ou retirer ?",
+    "estimated_duration_s": 60,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 3, CM1 : estimer le résultat d'une opération."
+  },
+  {
+    "id": "EX-B017-E-02",
+    "skill_id": "B017",
+    "level": "entrainement",
+    "type": "qcm",
+    "statement": "Sans calculer exactement, quel est le résultat le plus proche de $48 \\times 31$ ?",
+    "image": null,
+    "choices": [
+      {
+        "key": "a",
+        "text": "1 500",
+        "misconception": null
+      },
+      {
+        "key": "b",
+        "text": "15 000",
+        "misconception": "L'élève calcule 5 × 3 = 15, puis ajoute trop de zéros : il en met trois, alors que 50 × 30 n'en a que deux, un par dizaine."
+      },
+      {
+        "key": "c",
+        "text": "150",
+        "misconception": "L'élève calcule 5 × 3 = 15 et n'ajoute qu'un seul zéro : il oublie que les deux facteurs sont des dizaines."
+      }
+    ],
+    "answer": {
+      "value": "a"
+    },
+    "solution_steps": [
+      "48 est proche de 50, et 31 est proche de 30.",
+      "On calcule $50 \\times 30$. 50, c'est 5 fois 10 : $50 \\times 30 = 5 \\times 30 \\times 10$.",
+      "$5 \\times 30 = 150$, car 5 fois 3 dizaines font 15 dizaines. Puis $150 \\times 10 = 1\\,500$. Donc $50 \\times 30 = 1\\,500$.",
+      "Le résultat le plus proche est 1 500 : la bonne réponse est a. Le calcul exact donne 1 488."
+    ],
+    "hint": "Remplace 48 et 31 par des nombres entiers de dizaines.",
+    "estimated_duration_s": 60,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 3, CM1 : estimer le résultat d'une opération."
+  },
+  {
+    "id": "EX-B017-M-01",
+    "skill_id": "B017",
+    "level": "maitrise",
+    "type": "vrai_faux",
+    "statement": "Noé a posé $412 \\times 19$ et a trouvé 4 120.\n\nVrai ou faux : sans refaire le calcul, on peut affirmer que Noé s'est trompé.",
+    "image": null,
+    "answer": {
+      "value": true
+    },
+    "solution_steps": [
+      "On estime le résultat : 412 est proche de 400, et 19 est proche de 20.",
+      "On calcule $400 \\times 20$. 400, c'est 4 fois 100 : $400 \\times 20 = 4 \\times 20 \\times 100$. $4 \\times 20 = 80$, car 4 fois 2 dizaines font 8 dizaines, puis $80 \\times 100 = 8\\,000$.",
+      "Le vrai résultat est donc proche de 8 000. Or Noé trouve 4 120, à peu près la moitié : son résultat est beaucoup trop petit pour être juste.",
+      "C'est **vrai** : Noé s'est trompé. Il a sans doute oublié le 0 de la deuxième ligne : $412 \\times 9 = 3\\,708$ et $3\\,708 + 412 = 4\\,120$. Le calcul exact donne 7 828."
+    ],
+    "hint": "Calcule un ordre de grandeur de $412 \\times 19$ avec des nombres ronds, et compare avec 4 120.",
+    "estimated_duration_s": 90,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 3, CM1 : estimer le résultat d'une opération."
+  },
+  {
+    "id": "EX-B017-M-02",
+    "skill_id": "B017",
+    "level": "maitrise",
+    "type": "qcm",
+    "statement": "Pour la classe verte, le car coûte 2 950 € et l'hébergement 3 980 €. Le budget est de 9 000 €.\n\nSans calcul exact, quelle phrase est juste ?",
+    "image": null,
+    "choices": [
+      {
+        "key": "a",
+        "text": "Il reste environ 16 000 €.",
+        "misconception": "L'élève additionne les trois nombres, 9 000 + 3 000 + 4 000, au lieu de retirer les dépenses du budget."
+      },
+      {
+        "key": "b",
+        "text": "Il reste environ 2 000 €.",
+        "misconception": null
+      },
+      {
+        "key": "c",
+        "text": "Il reste environ 6 000 €.",
+        "misconception": "L'élève ne retire qu'une seule dépense, le car : 9 000 − 3 000 = 6 000. Il oublie l'hébergement."
+      }
+    ],
+    "answer": {
+      "value": "b"
+    },
+    "solution_steps": [
+      "On arrondit chaque dépense au millier le plus proche : 2 950 € est proche de 3 000 €, et 3 980 € est proche de 4 000 €.",
+      "Dépense totale estimée : $3\\,000 + 4\\,000 = 7\\,000$ €.",
+      "On retire cette dépense du budget : $9\\,000 - 7\\,000 = 2\\,000$ €.",
+      "Il reste environ 2 000 € : la bonne réponse est b. Le calcul exact donne 2 070 €."
+    ],
+    "hint": "Estime d'abord la dépense totale, puis retire-la du budget.",
+    "estimated_duration_s": 90,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 3, CM1 : estimer le résultat d'une opération."
+  }
+]

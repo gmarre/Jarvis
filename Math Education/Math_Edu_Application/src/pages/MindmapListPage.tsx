@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom'
 
-import { mindmaps, getSkill } from '@/content'
+import { mindmaps, getSkill, levelRank } from '@/content'
 import { cn } from '@/lib/cn'
 import { statusOf } from '@/lib/dag'
 import { relativeDays } from '@/lib/format'
@@ -23,7 +23,16 @@ export default function MindmapListPage() {
 
   const dueSkillIds = new Set(plan.reviews.map((review) => review.skill.id))
 
-  const cards = mindmaps.map((mindmap) => {
+  // Dans l'ordre du programme, par la premiere classe que couvre la carte : le
+  // contenu est range par identifiant, ce qui mettrait une carte de CM1 avant
+  // une carte de CP.
+  const ordered = [...mindmaps].sort(
+    (a, b) =>
+      Math.min(...a.school_levels.map(levelRank)) - Math.min(...b.school_levels.map(levelRank)) ||
+      a.id.localeCompare(b.id),
+  )
+
+  const cards = ordered.map((mindmap) => {
     const skills = mindmap.skill_ids
       .map((id) => getSkill(id))
       .filter((skill): skill is NonNullable<typeof skill> => Boolean(skill))

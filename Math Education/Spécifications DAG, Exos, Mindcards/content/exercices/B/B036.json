@@ -1,0 +1,157 @@
+[
+  {
+    "id": "EX-B036-D-01",
+    "skill_id": "B036",
+    "level": "decouverte",
+    "type": "numerique",
+    "statement": "Mia met 8 fraises dans 2 bols, autant dans chaque.\n\n● ● ● ● ● ● ● ●\n\nCombien par bol ?",
+    "image": null,
+    "answer": {
+      "value": 4
+    },
+    "solution_steps": [
+      "Les 2 bols doivent avoir **autant** de fraises : c'est un partage équitable.",
+      "On distribue les fraises une par une, un bol après l'autre. À chaque tour, 2 fraises partent. On compte de 2 en 2 : 2, 4, 6, 8. Cela fait 4 tours.",
+      "Chaque bol reçoit une fraise par tour : il y a **4** fraises par bol. Vérification : $4 + 4 = 8$."
+    ],
+    "hint": "Donne une fraise au premier bol, une au second, et recommence jusqu'à ce qu'il n'en reste plus.",
+    "estimated_duration_s": 40,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 2, CP : l'élève sait résoudre des problèmes consistant à rechercher la valeur d'une part dans un partage équitable."
+  },
+  {
+    "id": "EX-B036-D-02",
+    "skill_id": "B036",
+    "level": "decouverte",
+    "type": "qcm",
+    "statement": "On range ces 12 crayons par pots de 4.\n\n● ● ● ● ● ●\n● ● ● ● ● ●\n\nCombien de pots faut-il ?",
+    "image": null,
+    "choices": [
+      {
+        "key": "a",
+        "text": "4",
+        "misconception": "L'élève confond la quantité dans chaque pot et le nombre de pots cherché : il recopie le 4 de l'énoncé."
+      },
+      {
+        "key": "b",
+        "text": "3",
+        "misconception": null
+      },
+      {
+        "key": "c",
+        "text": "8",
+        "misconception": "L'élève remplit un seul pot et compte les crayons qui restent ($12 - 4 = 8$), au lieu de continuer à remplir des pots."
+      }
+    ],
+    "answer": {
+      "value": "b"
+    },
+    "solution_steps": [
+      "Chaque pot reçoit 4 crayons. On entoure des paquets de 4 ronds parmi les 12.",
+      "On compte les paquets entourés : 1, 2, 3. On a formé 3 paquets, et il ne reste aucun crayon seul.",
+      "Il faut **3** pots. Ce n'est pas 4 : 4, c'est le nombre de crayons dans un pot, pas le nombre de pots."
+    ],
+    "hint": "Entoure les ronds 4 par 4, puis compte les paquets.",
+    "estimated_duration_s": 45,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 2, CP : l'élève sait résoudre des problèmes consistant, dans un partage équitable, à chercher le nombre de parts à partir de la quantité totale d'objets et de la quantité de chaque part."
+  },
+  {
+    "id": "EX-B036-E-01",
+    "skill_id": "B036",
+    "level": "entrainement",
+    "type": "numerique",
+    "statement": "4 enfants se partagent 24 cerises, autant chacun.\n\nCombien de cerises chaque enfant a-t-il ?",
+    "image": null,
+    "answer": {
+      "value": 6
+    },
+    "solution_steps": [
+      "Les 4 enfants reçoivent autant de cerises : on les distribue une par une, à chacun son tour, comme aux cartes.",
+      "On dessine 24 ronds pour les cerises, et 4 cases, une par enfant. On met un rond dans chaque case, tour après tour, jusqu'à ce qu'il ne reste plus de rond.",
+      "On compte les ronds d'une case : 1, 2, 3, 4, 5, 6. Chaque enfant a **6** cerises."
+    ],
+    "hint": "Dessine 24 ronds, puis distribue-les un par un entre 4 enfants.",
+    "estimated_duration_s": 60,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 2, CP : l'élève sait résoudre des problèmes consistant à rechercher la valeur d'une part dans un partage équitable."
+  },
+  {
+    "id": "EX-B036-E-02",
+    "skill_id": "B036",
+    "level": "entrainement",
+    "type": "vrai_faux",
+    "statement": "Zoé range 18 chaussettes par paires.\n\nVrai ou faux : elle obtient 9 paires.",
+    "image": null,
+    "answer": {
+      "value": true
+    },
+    "solution_steps": [
+      "Une paire, c'est 2 chaussettes. On cherche combien de paquets de 2 on peut faire avec 18 chaussettes.",
+      "On compte de 2 en 2 jusqu'à 18 : 2, 4, 6, 8, 10, 12, 14, 16, 18. On a compté 9 paquets.",
+      "Zoé obtient bien **9** paires, sans chaussette seule : c'est **vrai**."
+    ],
+    "hint": "Combien de chaussettes y a-t-il dans une paire ? Compte de 2 en 2.",
+    "estimated_duration_s": 50,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 2, CP : l'élève sait résoudre des problèmes consistant, dans un partage équitable, à chercher le nombre de parts à partir de la quantité totale d'objets et de la quantité de chaque part."
+  },
+  {
+    "id": "EX-B036-M-01",
+    "skill_id": "B036",
+    "level": "maitrise",
+    "type": "numerique",
+    "statement": "Dans le jardin, on compte 20 pattes de chats.\n\nCombien y a-t-il de chats ?",
+    "image": null,
+    "answer": {
+      "value": 5
+    },
+    "solution_steps": [
+      "L'énoncé ne dit pas combien de pattes a chaque chat : il faut le savoir. Un chat a **4** pattes.",
+      "On dessine 20 croix, une par patte. Puis on entoure des paquets de 4 croix : un paquet, c'est un chat.",
+      "On compte les paquets entourés : 1, 2, 3, 4, 5. Il ne reste aucune croix seule.",
+      "Il y a **5** chats dans le jardin."
+    ],
+    "hint": "Combien de pattes a un chat ? Fais des paquets de cette taille.",
+    "estimated_duration_s": 75,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 2, CP : l'élève sait résoudre des problèmes consistant, dans un partage équitable, à chercher le nombre de parts à partir de la quantité totale d'objets et de la quantité de chaque part."
+  },
+  {
+    "id": "EX-B036-M-02",
+    "skill_id": "B036",
+    "level": "maitrise",
+    "type": "qcm",
+    "statement": "Léa partage 16 crêpes avec ses 3 amis, à parts égales.\n\nCombien de crêpes chacun a-t-il ?",
+    "image": null,
+    "choices": [
+      {
+        "key": "a",
+        "text": "5",
+        "misconception": "L'élève partage entre les 3 amis en oubliant Léa : en distribuant 16 crêpes à 3 personnes, chacune en reçoit 5 et il en reste 1."
+      },
+      {
+        "key": "b",
+        "text": "13",
+        "misconception": "L'élève enlève le nombre d'amis au nombre de crêpes ($16 - 3 = 13$) au lieu de faire un partage."
+      },
+      {
+        "key": "c",
+        "text": "4",
+        "misconception": null
+      }
+    ],
+    "answer": {
+      "value": "c"
+    },
+    "solution_steps": [
+      "Qui mange ? Léa partage **avec** ses 3 amis : Léa compte aussi. $3 + 1 = 4$ personnes, pas 3.",
+      "On dessine 16 ronds pour les crêpes et 4 assiettes. On distribue les ronds un par un, une assiette après l'autre, jusqu'à ce qu'il n'en reste plus.",
+      "On compte les ronds d'une assiette : 1, 2, 3, 4. Chacun a **4** crêpes, et il n'en reste aucune."
+    ],
+    "hint": "Compte d'abord combien de personnes se partagent les crêpes.",
+    "estimated_duration_s": 75,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 2, CP : l'élève sait résoudre des problèmes consistant à rechercher la valeur d'une part dans un partage équitable."
+  }
+]

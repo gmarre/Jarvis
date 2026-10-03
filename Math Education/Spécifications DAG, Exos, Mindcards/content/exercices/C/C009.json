@@ -1,0 +1,104 @@
+[
+  {
+    "id": "EX-C009-D-01",
+    "skill_id": "C009",
+    "level": "decouverte",
+    "type": "qcm",
+    "statement": "Lequel est le plus grand : $\\frac{3}{8}$ ou $\\frac{5}{8}$ ?",
+    "image": null,
+    "choices": [
+      {
+        "key": "a",
+        "text": "$\\frac{5}{8}$",
+        "misconception": null
+      },
+      {
+        "key": "b",
+        "text": "$\\frac{3}{8}$",
+        "misconception": "L'élève inverse la comparaison, ou compte les parts qui restent au lieu des parts prises."
+      },
+      {
+        "key": "c",
+        "text": "Ils sont égaux",
+        "misconception": "L'élève voit le même dénominateur et en conclut que les deux fractions sont égales."
+      }
+    ],
+    "answer": {
+      "value": "a"
+    },
+    "solution_steps": [
+      "Les deux fractions ont le même dénominateur 8 : les parts sont toutes des huitièmes, donc de même taille.",
+      "Il suffit de compter combien de parts on prend : 3 d'un côté, 5 de l'autre.",
+      "5 parts, c'est plus que 3 parts de la même taille.",
+      "C'est donc $\\frac{5}{8}$ le plus grand."
+    ],
+    "hint": "Les parts ont la même taille. Regarde seulement combien on en prend.",
+    "estimated_duration_s": 40,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 2, CE1 : comparer des fractions ayant le même dénominateur."
+  },
+  {
+    "id": "EX-C009-E-01",
+    "skill_id": "C009",
+    "level": "entrainement",
+    "type": "qcm",
+    "statement": "Tom et Lisa ont chacun **leur propre tarte**, partagée en 6 parts égales.\n\nTom a mangé $\\frac{2}{6}$ de sa tarte. Lisa a mangé $\\frac{5}{6}$ de la sienne.\n\nQui a mangé la plus grande part de sa tarte ?",
+    "image": null,
+    "choices": [
+      {
+        "key": "a",
+        "text": "Lisa",
+        "misconception": null
+      },
+      {
+        "key": "b",
+        "text": "Tom",
+        "misconception": "L'élève inverse la comparaison, ou compare les parts restantes au lieu des parts mangées."
+      },
+      {
+        "key": "c",
+        "text": "Ils en ont mangé autant",
+        "misconception": "L'élève voit le même dénominateur et en conclut que les deux fractions sont égales."
+      }
+    ],
+    "answer": {
+      "value": "a"
+    },
+    "solution_steps": [
+      "Les deux tartes sont partagées en 6 parts égales : les parts ont donc la même taille chez l'un comme chez l'autre.",
+      "Les deux fractions ayant le même dénominateur, il suffit de compter combien de parts chacun a prises.",
+      "Tom en a pris 2, Lisa en a pris 5. Comme $2 < 5$, c'est **Lisa** qui a mangé la plus grande part.",
+      "$\\frac{2}{6} < \\frac{5}{6}$.",
+      "Attention : chacun mange dans **sa** tarte. Si les deux mangeaient dans la même, $\\frac{2}{6} + \\frac{5}{6} = \\frac{7}{6}$ dépasserait la tarte entière, ce qui serait impossible."
+    ],
+    "hint": "Chaque tarte est coupée de la même façon : regarde seulement combien de parts chacun a prises.",
+    "estimated_duration_s": 60,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 2, CE1 : comparer des fractions ayant le même dénominateur."
+  },
+  {
+    "id": "EX-C009-M-01",
+    "skill_id": "C009",
+    "level": "maitrise",
+    "type": "texte",
+    "statement": "Range ces fractions de la plus petite à la plus grande : $\\frac{7}{10}$, $\\frac{2}{10}$, $\\frac{5}{10}$.\n\nÉcris-les séparées par des virgules, sous la forme numérateur/dénominateur.",
+    "image": null,
+    "answer": {
+      "value": "2/10, 5/10, 7/10",
+      "accepted": [
+        "2/10,5/10,7/10",
+        "2/10 5/10 7/10",
+        "2 / 10, 5 / 10, 7 / 10"
+      ]
+    },
+    "solution_steps": [
+      "Les trois fractions ont le même dénominateur 10 : les parts sont toutes des dixièmes.",
+      "On range donc selon les numérateurs : $2 < 5 < 7$.",
+      "Réponse : $\\frac{2}{10}$, $\\frac{5}{10}$, $\\frac{7}{10}$."
+    ],
+    "hint": "Même dénominateur : range simplement les numérateurs.",
+    "estimated_duration_s": 60,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 2, CE1 : comparer des fractions ayant le même dénominateur."
+  }
+]

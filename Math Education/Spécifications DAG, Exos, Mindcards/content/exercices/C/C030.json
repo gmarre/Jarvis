@@ -1,0 +1,177 @@
+[
+  {
+    "id": "EX-C030-D-01",
+    "skill_id": "C030",
+    "level": "decouverte",
+    "type": "numerique",
+    "statement": "Une demi-droite est graduée en **quarts** à partir de 0.\n\nCombien de graduations faut-il parcourir depuis 0 pour atteindre $\\frac{7}{4}$ ?",
+    "image": null,
+    "answer": {
+      "value": 7
+    },
+    "solution_steps": [
+      "Chaque intervalle vaut $\\frac{1}{4}$.",
+      "Le numérateur indique combien de ces intervalles il faut parcourir.",
+      "Pour $\\frac{7}{4}$, il en faut **7**.",
+      "On dépasse alors 1, puisqu'un tout n'en contient que 4."
+    ],
+    "hint": "Le numérateur compte les graduations, le dénominateur donne la taille du graduation.",
+    "estimated_duration_s": 60,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 3, CM1 : savoir repérer un point d'une demi-droite graduée par une fraction."
+  },
+  {
+    "id": "EX-C030-D-02",
+    "skill_id": "C030",
+    "level": "decouverte",
+    "type": "texte",
+    "statement": "Une demi-droite est graduée en **tiers** à partir de 0.\n\nQuelle fraction se trouve au 5e graduation après 0 ? Écris ta réponse sous la forme numérateur/dénominateur.",
+    "image": null,
+    "answer": {
+      "value": "5/3",
+      "accepted": [
+        "5 / 3"
+      ]
+    },
+    "solution_steps": [
+      "Graduée en tiers : chaque graduation vaut $\\frac{1}{3}$.",
+      "Au 5e graduation, on a parcouru 5 tiers.",
+      "L'abscisse du point est donc $\\frac{5}{3}$.",
+      "Ce point se situe entre 1 et 2, car $\\frac{5}{3} = 1 + \\frac{2}{3}$."
+    ],
+    "hint": "Cinq fois un tiers, cela fait combien de tiers ?",
+    "estimated_duration_s": 60,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 3, CM1 : savoir repérer un point d'une demi-droite graduée par une fraction."
+  },
+  {
+    "id": "EX-C030-E-01",
+    "skill_id": "C030",
+    "level": "entrainement",
+    "type": "qcm",
+    "statement": "Une demi-droite est graduée en **cinquièmes** à partir de 0.\n\nEntre quels deux nombres entiers se situe le point d'abscisse $\\frac{7}{5}$ ?",
+    "image": null,
+    "choices": [
+      {
+        "key": "a",
+        "text": "entre 1 et 2",
+        "misconception": null
+      },
+      {
+        "key": "b",
+        "text": "entre 0 et 1",
+        "misconception": "L'élève applique la règle apprise au CE2, où toutes les fractions étaient inférieures à 1, et place donc tout point d'abscisse fractionnaire dans le premier intervalle."
+      },
+      {
+        "key": "c",
+        "text": "entre 7 et 8",
+        "misconception": "L'élève lit le numérateur comme un entier et ignore le dénominateur : il place le point comme s'il s'agissait du nombre 7."
+      }
+    ],
+    "answer": {
+      "value": "a"
+    },
+    "solution_steps": [
+      "Un tout vaut 5 cinquièmes, deux touts valent 10 cinquièmes.",
+      "$\\frac{7}{5}$ contient 7 cinquièmes : c'est plus que 5, donc plus que 1, et moins que 10, donc moins que 2.",
+      "$\\frac{7}{5} = 1 + \\frac{2}{5}$.",
+      "Le point se situe donc **entre 1 et 2**, juste après 1."
+    ],
+    "hint": "Combien de cinquièmes pour atteindre 1 ? Et pour atteindre 2 ?",
+    "estimated_duration_s": 90,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 3, CM1 : savoir placer une fraction sur une demi-droite graduée."
+  },
+  {
+    "id": "EX-C030-E-02",
+    "skill_id": "C030",
+    "level": "entrainement",
+    "type": "texte",
+    "statement": "Une demi-droite est graduée en **cinquièmes**. Un point se trouve au 12e graduation après 0.\n\nQuelle est son abscisse ? Écris ta réponse sous la forme numérateur/dénominateur.",
+    "image": null,
+    "answer": {
+      "value": "12/5",
+      "accepted": [
+        "12 / 5"
+      ]
+    },
+    "solution_steps": [
+      "Chaque graduation vaut $\\frac{1}{5}$.",
+      "Au 12e graduation, on a parcouru 12 cinquièmes : l'abscisse est $\\frac{12}{5}$.",
+      "On peut vérifier sa position : $\\frac{12}{5} = 2 + \\frac{2}{5}$, donc le point est entre 2 et 3."
+    ],
+    "hint": "Le nombre de graduations donne directement le numérateur.",
+    "estimated_duration_s": 75,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 3, CM1 : savoir repérer un point d'une demi-droite graduée par une fraction."
+  },
+  {
+    "id": "EX-C030-E-03",
+    "skill_id": "C030",
+    "level": "entrainement",
+    "type": "numerique",
+    "statement": "Une demi-droite est graduée en **demis**.\n\nÀ quel graduation après 0 se trouve le nombre entier 3 ?",
+    "image": null,
+    "answer": {
+      "value": 6
+    },
+    "solution_steps": [
+      "Chaque graduation vaut $\\frac{1}{2}$.",
+      "Un tout entier vaut 2 demis, donc 3 touts valent $3 \\times 2 = 6$ demis.",
+      "$3 = \\frac{6}{2}$ : le nombre 3 se trouve au **6e** graduation.",
+      "Les nombres entiers tombent bien sur des graduations, tous les 2 graduations ici."
+    ],
+    "hint": "Combien de demis dans un tout entier ? Et dans trois ?",
+    "estimated_duration_s": 90,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 3, CM1 : savoir placer une fraction sur une demi-droite graduée."
+  },
+  {
+    "id": "EX-C030-M-01",
+    "skill_id": "C030",
+    "level": "maitrise",
+    "type": "texte",
+    "statement": "Une demi-droite est graduée en **quarts**. Un point se trouve 3 graduations **après le nombre 2**.\n\nQuelle est son abscisse ? Écris ta réponse sous la forme numérateur/dénominateur.",
+    "image": null,
+    "answer": {
+      "value": "11/4",
+      "accepted": [
+        "11 / 4"
+      ]
+    },
+    "solution_steps": [
+      "On commence par exprimer 2 en quarts : $2 = \\frac{8}{4}$.",
+      "On avance ensuite de 3 graduations, soit 3 quarts de plus : $8 + 3 = 11$ quarts.",
+      "L'abscisse du point est $\\frac{11}{4}$.",
+      "Vérification : $\\frac{11}{4} = 2 + \\frac{3}{4}$, ce qui correspond bien à 3 graduations après 2."
+    ],
+    "hint": "Convertis d'abord le nombre 2 en quarts, puis ajoute les graduations.",
+    "estimated_duration_s": 120,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 3, CM1 : savoir repérer un point d'une demi-droite graduée par une fraction ou par la somme d'un nombre entier et d'une fraction."
+  },
+  {
+    "id": "EX-C030-M-02",
+    "skill_id": "C030",
+    "level": "maitrise",
+    "type": "texte",
+    "statement": "Sur une demi-droite graduée en **sixièmes**, quelle fraction se trouve à la graduation située **juste avant** le nombre 2 ?\n\nÉcris ta réponse avec une barre, par exemple 7/6.",
+    "image": null,
+    "answer": {
+      "value": "11/6",
+      "accepted": [
+        "11 / 6"
+      ]
+    },
+    "solution_steps": [
+      "Un tout vaut 6 sixièmes.",
+      "Deux touts valent donc $2 \\times 6 = 12$ sixièmes : $2 = \\frac{12}{6}$.",
+      "La graduation juste avant est la onzième.",
+      "C'est $\\frac{11}{6}$, c'est-à-dire $1 + \\frac{5}{6}$."
+    ],
+    "hint": "Combien de sixièmes faut-il pour atteindre 2 ? Recule ensuite d'une graduation.",
+    "estimated_duration_s": 120,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 3, CM1 : savoir repérer un point d'une demi-droite graduée par une fraction."
+  }
+]

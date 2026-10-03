@@ -2,12 +2,11 @@ r"""
 Fusionne de nouvelles competences et/ou de nouvelles cartes mentales dans le
 contenu. C'est le pendant de merge_lot.py, qui ne traite que les exercices.
 
-Met a jour, dans le meme mouvement :
-  - skills_dag_v2.json : ajout des competences, metadata.total_skills et
+Met a jour, dans le meme mouvement (contenu decoupe, voir contenu.py) :
+  - le DAG : ajout des competences et des prerequis, metadata.total_skills et
     metadata.domains (un domaine nouveau y est declare, sinon l'application ne
     l'afficherait pas) ;
-  - mindmaps.json : ajout des cartes, et mindmap_id de chaque competence
-    couverte dans le DAG.
+  - les cartes : ajout des cartes, et mindmap_id de chaque competence couverte.
 
 Refuse de fusionner si un identifiant existe deja, ou si la validation echoue
 apres fusion : dans ce cas rien n'est ecrit.
@@ -25,16 +24,11 @@ Usage :
 from __future__ import annotations
 
 import json
-import subprocess
 import sys
 from pathlib import Path
 
-ROOT = Path(__file__).resolve().parent.parent
-SPEC = ROOT / "Spécifications DAG, Exos, Mindcards"
-DAG = SPEC / "content" / "skills_dag_v2.json"
-MM = SPEC / "content" / "mindmaps.json"
-_PORTABLE = ROOT / "tools" / "python" / "python.exe"
-PY = _PORTABLE if _PORTABLE.is_file() else Path(sys.executable)
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+import contenu  # noqa: E402
 
 
 def lire(chemin: Path):
@@ -55,7 +49,7 @@ def main() -> int:
         print("Indiquer --skills, --links et/ou --mindmaps <fichier>.", file=sys.stderr)
         return 1
 
-    dag, mm = lire(DAG), lire(MM)
+    dag, exos, mm = contenu.charger()
     skills = {s["id"]: s for s in dag["skills"]}
 
     if f_skills:
@@ -98,45 +92,23 @@ def main() -> int:
                     return 1
                 skills[sid]["mindmap_id"] = carte["id"]
         mm["mindmaps"].extend(cartes)
-        mm["metadata"]["total_mindmaps"] = len(mm["mindmaps"])
         print(f"{len(cartes)} carte(s) ajoutee(s) : {', '.join(c['id'] for c in cartes)}")
 
-    # Compteurs : le validateur refuse un metadata qui ne correspond pas au contenu.
-    meta = dag["metadata"]
-    meta["total_skills"] = len(dag["skills"])
-    noms = {d["id"]: d["name"] for d in meta["domains"]}
-    for s in dag["skills"]:
-        noms.setdefault(s["domain"], s["domain_name"])
-    meta["domains"] = [
-        {"id": d, "name": noms[d], "count": sum(1 for s in dag["skills"] if s["domain"] == d)}
-        for d in sorted(noms)
-        if any(s["domain"] == d for s in dag["skills"])
-    ]
-    print("Domaines :", ", ".join(f"{d['id']}={d['count']}" for d in meta["domains"]))
+    # Compteurs (total_skills, domains, total_mindmaps) : recalcules ici pour
+    # l'affichage, et de nouveau a l'ecriture. Un domaine nouveau y est declare,
+    # sinon l'application ne l'afficherait pas.
+    contenu.recalculer_compteurs(dag, exos, mm)
+    print("Domaines :", ", ".join(f"{d['id']}={d['count']}" for d in dag["metadata"]["domains"]))
 
     if not appliquer:
         print("\nSimulation. Relancer avec --apply.")
         return 0
 
-    sauv_d, sauv_m = DAG.read_text(encoding="utf-8"), MM.read_text(encoding="utf-8")
-    DAG.write_text(json.dumps(dag, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
-    MM.write_text(json.dumps(mm, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
-
-    def restaurer(raison: str) -> int:
-        DAG.write_text(sauv_d, encoding="utf-8")
-        MM.write_text(sauv_m, encoding="utf-8")
-        print(f"\n{raison}, fusion annulee et fichiers restaures.")
+    reussi, sortie = contenu.ecrire_et_valider(dag, exos, mm)
+    if not reussi:
+        print(sortie[-3000:])
+        print("\nVALIDATION ECHOUEE, fusion annulee et fichiers restaures.")
         return 1
-
-    try:
-        r = subprocess.run([str(PY), str(ROOT / "scripts" / "validate_content.py")],
-                           capture_output=True, text=True, encoding="utf-8", errors="replace")
-    except OSError as cause:
-        return restaurer(f"VALIDATION IMPOSSIBLE ({cause})")
-    if r.returncode != 0:
-        print(r.stdout[-3000:])
-        return restaurer("VALIDATION ECHOUEE")
-
     print("\nFusion ecrite, validation reussie.")
     return 0
 

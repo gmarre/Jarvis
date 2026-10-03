@@ -1,0 +1,95 @@
+[
+  {
+    "id": "EX-C008-D-01",
+    "skill_id": "C008",
+    "level": "decouverte",
+    "type": "texte",
+    "statement": "Rends $\\frac{36}{48}$ irréductible.\n\nÉcris ta réponse sous la forme numérateur/dénominateur.",
+    "image": null,
+    "answer": {
+      "value": "3/4",
+      "accepted": [
+        "3 / 4"
+      ]
+    },
+    "solution_steps": [
+      "36 et 48 sont tous deux divisibles par 12.",
+      "$36 \\div 12 = 3$ et $48 \\div 12 = 4$.",
+      "$\\frac{36}{48} = \\frac{3}{4}$.",
+      "3 et 4 n'ont aucun diviseur commun autre que 1 : la fraction est **irréductible**."
+    ],
+    "hint": "Tu peux simplifier en plusieurs étapes : d'abord par 2, puis encore par 2, puis par 3.",
+    "estimated_duration_s": 75,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, 3e : mettre une fraction sous forme irréductible."
+  },
+  {
+    "id": "EX-C008-E-01",
+    "skill_id": "C008",
+    "level": "entrainement",
+    "type": "texte",
+    "statement": "Rends $\\frac{84}{126}$ irréductible.\n\nÉcris ta réponse sous la forme numérateur/dénominateur.",
+    "image": null,
+    "answer": {
+      "value": "2/3",
+      "accepted": [
+        "2 / 3"
+      ]
+    },
+    "solution_steps": [
+      "Les deux nombres sont pairs : on divise par 2. $\\frac{84}{126} = \\frac{42}{63}$.",
+      "42 et 63 sont dans la table de 3 : on divise par 3. $\\frac{42}{63} = \\frac{14}{21}$.",
+      "14 et 21 sont dans la table de 7 : on divise par 7. $\\frac{14}{21} = \\frac{2}{3}$.",
+      "2 et 3 n'ont plus de diviseur commun : la fraction est irréductible.",
+      "On pouvait aussi diviser directement par 42."
+    ],
+    "hint": "Procède par étapes successives : 2, puis 3, puis 7.",
+    "estimated_duration_s": 150,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, 3e : rendre irréductible une fraction."
+  },
+  {
+    "id": "EX-C008-M-01",
+    "skill_id": "C008",
+    "level": "maitrise",
+    "type": "qcm",
+    "statement": "Parmi ces fractions, laquelle est **irréductible** ?",
+    "image": null,
+    "choices": [
+      {
+        "key": "a",
+        "text": "$\\frac{7}{9}$",
+        "misconception": null
+      },
+      {
+        "key": "b",
+        "text": "$\\frac{9}{12}$",
+        "misconception": "Simplifiable par 3 : cette fraction vaut 3/4."
+      },
+      {
+        "key": "c",
+        "text": "$\\frac{14}{21}$",
+        "misconception": "Simplifiable par 7 : cette fraction vaut 2/3."
+      },
+      {
+        "key": "d",
+        "text": "$\\frac{15}{25}$",
+        "misconception": "Simplifiable par 5 : cette fraction vaut 3/5."
+      }
+    ],
+    "answer": {
+      "value": "a"
+    },
+    "solution_steps": [
+      "$\\frac{9}{12}$ : 9 et 12 sont divisibles par 3, donc simplifiable.",
+      "$\\frac{14}{21}$ : 14 et 21 sont divisibles par 7, donc simplifiable.",
+      "$\\frac{15}{25}$ : 15 et 25 sont divisibles par 5, donc simplifiable.",
+      "$\\frac{7}{9}$ : 7 n'est divisible que par 1 et 7, et 9 n'est pas divisible par 7. Aucun diviseur commun autre que 1.",
+      "La seule fraction irréductible est $\\frac{7}{9}$."
+    ],
+    "hint": "Pour chaque fraction, cherche un diviseur commun au numérateur et au dénominateur.",
+    "estimated_duration_s": 150,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, 3e : mettre une fraction sous forme irréductible."
+  }
+]

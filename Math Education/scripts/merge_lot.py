@@ -2,9 +2,11 @@ r"""
 Fusionne un ou plusieurs lots d'exercices dans la banque.
 
 Met a jour, dans le meme mouvement :
-  - exercises.json (ajout des exercices, tri, compteur de metadata) ;
-  - skills_dag_v2.json (champ exercise_ids de chaque competence concernee) ;
+  - les fichiers d'exercices de chaque competence concernee ;
+  - le DAG (champ exercise_ids de chaque competence) ;
   - le mastery_threshold, recalcule d'apres le nombre reel d'exercices.
+
+Un lot est un tableau d'exercices, ou un objet {"exercises": [...]}.
 
 Refuse de fusionner si un identifiant existe deja, ou si la validation echoue
 apres fusion : dans ce cas rien n'est ecrit.
@@ -16,19 +18,11 @@ Usage :
 from __future__ import annotations
 
 import json
-import subprocess
 import sys
 from pathlib import Path
 
-ROOT = Path(__file__).resolve().parent.parent
-SPEC = ROOT / "Spécifications DAG, Exos, Mindcards"
-EXOS = SPEC / "content" / "exercises.json"
-DAG = SPEC / "content" / "skills_dag_v2.json"
-# Toolchain portable si elle est installee, sinon l'interpreteur qui execute ce
-# script. Sans ce repli, l'absence de tools/python faisait planter la
-# validation APRES l'ecriture des fichiers, sans les restaurer.
-_PORTABLE = ROOT / "tools" / "python" / "python.exe"
-PY = _PORTABLE if _PORTABLE.is_file() else Path(sys.executable)
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+import contenu  # noqa: E402
 
 ORDRE = {"decouverte": 0, "entrainement": 1, "maitrise": 2}
 
@@ -40,11 +34,14 @@ def seuil(n: int) -> dict:
     En dessous, on garde la meme exigence relative sans rendre le seuil
     inatteignable.
     """
-    if n >= 8:
-        return {"required": 3, "out_of": 4}
     if n >= 4:
         return {"required": 3, "out_of": 4}
     return {"required": 2, "out_of": 3}
+
+
+def lire_lot(chemin: Path) -> list[dict]:
+    data = json.loads(chemin.read_text(encoding="utf-8"))
+    return data["exercises"] if isinstance(data, dict) else data
 
 
 def main() -> int:
@@ -54,8 +51,7 @@ def main() -> int:
         print("Indiquer au moins un fichier de lot.", file=sys.stderr)
         return 1
 
-    exos = json.loads(EXOS.read_text(encoding="utf-8"))
-    dag = json.loads(DAG.read_text(encoding="utf-8"))
+    dag, exos, cartes = contenu.charger()
     connus = {e["id"] for e in exos["exercises"]}
     skills = {s["id"]: s for s in dag["skills"]}
 
@@ -64,7 +60,8 @@ def main() -> int:
         if not lot.is_file():
             print(f"Introuvable : {lot}", file=sys.stderr)
             return 1
-        for e in json.loads(lot.read_text(encoding="utf-8"))["exercises"]:
+        contenu_lot = lire_lot(lot)
+        for e in contenu_lot:
             if e["id"] in connus:
                 print(f"Deja present, fusion annulee : {e['id']}", file=sys.stderr)
                 return 1
@@ -73,11 +70,10 @@ def main() -> int:
                 return 1
             connus.add(e["id"])
             ajoutes.append(e)
-        print(f"  {lot.name} : {len(json.loads(lot.read_text(encoding='utf-8'))['exercises'])} exercice(s)")
+        print(f"  {lot.name} : {len(contenu_lot)} exercice(s)")
 
     exos["exercises"].extend(ajoutes)
     exos["exercises"].sort(key=lambda e: (e["skill_id"], ORDRE[e["level"]], e["id"]))
-    exos["metadata"]["total_exercises"] = len(exos["exercises"])
 
     # exercise_ids et seuils, recalcules pour toutes les competences
     par_comp: dict[str, list[str]] = {}
@@ -98,26 +94,11 @@ def main() -> int:
         print("\nSimulation. Relancer avec --apply.")
         return 0
 
-    sauv_e, sauv_d = EXOS.read_text(encoding="utf-8"), DAG.read_text(encoding="utf-8")
-    EXOS.write_text(json.dumps(exos, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
-    DAG.write_text(json.dumps(dag, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
-
-    try:
-        r = subprocess.run([str(PY), str(ROOT / "scripts" / "validate_content.py")],
-                           capture_output=True, text=True, encoding="utf-8", errors="replace")
-    except OSError as cause:
-        # Validation impossible a lancer : on ne garde pas une fusion non validee.
-        EXOS.write_text(sauv_e, encoding="utf-8")
-        DAG.write_text(sauv_d, encoding="utf-8")
-        print(f"\nVALIDATION IMPOSSIBLE ({cause}), fusion annulee et fichiers restaures.")
-        return 1
-    if r.returncode != 0:
-        EXOS.write_text(sauv_e, encoding="utf-8")
-        DAG.write_text(sauv_d, encoding="utf-8")
+    reussi, sortie = contenu.ecrire_et_valider(dag, exos, cartes)
+    if not reussi:
         print("\nVALIDATION ECHOUEE, fusion annulee et fichiers restaures.\n")
-        print(r.stdout[-3000:])
+        print(sortie[-3000:])
         return 1
-
     print("\nFusion ecrite, validation reussie.")
     return 0
 

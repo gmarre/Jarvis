@@ -1,0 +1,67 @@
+[
+  {
+    "id": "EX-A010-D-01",
+    "skill_id": "A010",
+    "level": "decouverte",
+    "type": "texte",
+    "statement": "Décompose 6 304 sous la forme d'une somme.\n\nExemple attendu : $5\\,827 = 5\\,000 + 800 + 20 + 7$",
+    "image": null,
+    "answer": {
+      "value": "6000 + 300 + 4",
+      "accepted": [
+        "6000+300+4",
+        "6 000 + 300 + 4",
+        "6000 + 300 + 0 + 4"
+      ]
+    },
+    "solution_steps": [
+      "6 304 contient 6 milliers, 3 centaines, 0 dizaine et 4 unités.",
+      "$6\\,000$ pour les milliers, $300$ pour les centaines, rien pour les dizaines, $4$ pour les unités.",
+      "$6\\,304 = 6\\,000 + 300 + 4$."
+    ],
+    "hint": "Le rang des dizaines est vide : il n'apporte rien à la somme.",
+    "estimated_duration_s": 60,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 2, CE2 : décomposition additive sous la forme 4 000 + 600 + 30 + 5."
+  },
+  {
+    "id": "EX-A010-E-01",
+    "skill_id": "A010",
+    "level": "entrainement",
+    "type": "numerique",
+    "statement": "Complète : $4\\,635 = (4 \\times 1\\,000) + (\\ldots \\times 100) + (3 \\times 10) + (5 \\times 1)$",
+    "image": null,
+    "answer": {
+      "value": 6
+    },
+    "solution_steps": [
+      "On cherche le nombre de centaines écrit dans 4 635.",
+      "Le chiffre des centaines est **6**.",
+      "Vérification : $4\\,000 + 600 + 30 + 5 = 4\\,635$."
+    ],
+    "hint": "Quel est le troisième chiffre en partant de la droite ?",
+    "estimated_duration_s": 50,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 2, CE2 : décomposition du type (4 × 1 000) + (6 × 100) + (3 × 10) + (5 × 1)."
+  },
+  {
+    "id": "EX-A010-M-01",
+    "skill_id": "A010",
+    "level": "maitrise",
+    "type": "numerique",
+    "statement": "Quel nombre s'écrit $(2 \\times 1\\,000) + (7 \\times 10) + (9 \\times 1)$ ?",
+    "image": null,
+    "answer": {
+      "value": 2079
+    },
+    "solution_steps": [
+      "$2 \\times 1\\,000 = 2\\,000$, $7 \\times 10 = 70$, $9 \\times 1 = 9$.",
+      "Aucune centaine n'apparaît : le rang des centaines est vide, on y écrit 0.",
+      "$2\\,000 + 70 + 9 = 2\\,079$."
+    ],
+    "hint": "Il manque un rang dans la décomposition. Lequel, et quel chiffre faut-il y mettre ?",
+    "estimated_duration_s": 90,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 2, CE2 : décomposition en unités de numération."
+  }
+]

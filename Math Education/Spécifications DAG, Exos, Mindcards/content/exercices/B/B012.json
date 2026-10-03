@@ -1,0 +1,158 @@
+[
+  {
+    "id": "EX-B012-D-01",
+    "skill_id": "B012",
+    "level": "decouverte",
+    "type": "numerique",
+    "statement": "Un car a 75 places. 18 adultes et 29 enfants montent.\n\nCalcule $75 - (18 + 29)$ pour trouver le nombre de places libres.",
+    "image": null,
+    "answer": {
+      "value": 28
+    },
+    "solution_steps": [
+      "On commence toujours par le calcul entre parenthèses. Ici, $18 + 29$ donne le nombre de voyageurs.",
+      "$18 + 29 = 47$ : 47 personnes sont montées.",
+      "On retire ensuite les voyageurs des places du car : $75 - 47 = 28$.",
+      "$75 - (18 + 29) = 28$. Il reste **28** places libres."
+    ],
+    "hint": "Commence par le calcul entre parenthèses : combien de personnes sont montées en tout ?",
+    "estimated_duration_s": 60,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 3, CM1 : savoir effectuer un calcul contenant des parenthèses."
+  },
+  {
+    "id": "EX-B012-D-02",
+    "skill_id": "B012",
+    "level": "decouverte",
+    "type": "qcm",
+    "statement": "Un panier contient 4 poires et 5 prunes. Le calcul $(4 + 5) \\times 6$ donne le nombre de fruits dans 6 paniers.\n\nCombien vaut ce calcul ?",
+    "image": null,
+    "choices": [
+      {
+        "key": "a",
+        "text": "34",
+        "misconception": "L'élève ne multiplie par 6 que le nombre écrit juste à côté du signe × : 5 × 6 = 30, puis il ajoute les 4 poires d'un seul panier. Il oublie que la parenthèse regroupe poires et prunes."
+      },
+      {
+        "key": "b",
+        "text": "15",
+        "misconception": "L'élève additionne les trois nombres, 4 + 5 + 6 = 15, sans voir que 6 est le nombre de paniers par lequel il faut multiplier."
+      },
+      {
+        "key": "c",
+        "text": "54",
+        "misconception": null
+      }
+    ],
+    "answer": {
+      "value": "c"
+    },
+    "solution_steps": [
+      "On commence par le calcul entre parenthèses : $4 + 5 = 9$. Il y a 9 fruits dans un panier.",
+      "On multiplie ensuite par le nombre de paniers : $9 \\times 6 = 54$.",
+      "$(4 + 5) \\times 6 = 54$ : la bonne réponse est c. Les parenthèses disent que ce sont les 9 fruits du panier, poires et prunes ensemble, qu'on prend 6 fois."
+    ],
+    "hint": "Combien de fruits y a-t-il dans un seul panier ?",
+    "estimated_duration_s": 45,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 3, CM1 : savoir effectuer un calcul contenant des parenthèses."
+  },
+  {
+    "id": "EX-B012-E-01",
+    "skill_id": "B012",
+    "level": "entrainement",
+    "type": "numerique",
+    "statement": "Calcule $8 \\times (35 - 28)$.",
+    "image": null,
+    "answer": {
+      "value": 56
+    },
+    "solution_steps": [
+      "On commence par le calcul entre parenthèses : $35 - 28 = 7$.",
+      "On remplace la parenthèse par son résultat : il reste à calculer $8 \\times 7$.",
+      "$8 \\times 7 = 56$. Donc $8 \\times (35 - 28) = 56$."
+    ],
+    "hint": "Calcule d'abord ce qui est entre parenthèses.",
+    "estimated_duration_s": 45,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 3, CM1 : savoir effectuer un calcul contenant des parenthèses."
+  },
+  {
+    "id": "EX-B012-E-02",
+    "skill_id": "B012",
+    "level": "entrainement",
+    "type": "vrai_faux",
+    "statement": "Vrai ou faux : $(100 - 40) - 25$ et $100 - (40 - 25)$ donnent le même résultat.",
+    "image": null,
+    "answer": {
+      "value": false
+    },
+    "solution_steps": [
+      "Premier calcul, parenthèse d'abord : $100 - 40 = 60$, puis $60 - 25 = 35$.",
+      "Second calcul, parenthèse d'abord : $40 - 25 = 15$, puis $100 - 15 = 85$.",
+      "On trouve 35 d'un côté et 85 de l'autre : c'est **faux**. Les nombres et les signes sont les mêmes, mais les parenthèses changent l'ordre des calculs, donc le résultat."
+    ],
+    "hint": "Calcule les deux, en commençant chaque fois par la parenthèse.",
+    "estimated_duration_s": 75,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 3, CM1 : savoir effectuer un calcul contenant des parenthèses."
+  },
+  {
+    "id": "EX-B012-M-01",
+    "skill_id": "B012",
+    "level": "maitrise",
+    "type": "numerique",
+    "statement": "Trouve le nombre qui manque : $50 - (\\dots + 14) = 21$.",
+    "image": null,
+    "answer": {
+      "value": 15
+    },
+    "solution_steps": [
+      "La parenthèse forme un seul bloc : on retire de 50 le résultat de $(\\dots + 14)$, et il reste 21.",
+      "Ce qu'on a retiré de 50 pour obtenir 21, c'est $50 - 21 = 29$. La parenthèse vaut donc 29 : $\\dots + 14 = 29$.",
+      "Le nombre qui, ajouté à 14, donne 29, c'est $29 - 14 = 15$.",
+      "Vérification, parenthèse d'abord : $15 + 14 = 29$, puis $50 - 29 = 21$. Le nombre qui manque est **15**."
+    ],
+    "hint": "Si 50 moins toute la parenthèse fait 21, combien vaut la parenthèse ?",
+    "estimated_duration_s": 90,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 3, CM1 : savoir effectuer un calcul contenant des parenthèses."
+  },
+  {
+    "id": "EX-B012-M-02",
+    "skill_id": "B012",
+    "level": "maitrise",
+    "type": "qcm",
+    "statement": "Théo a 200 €. Il achète un vélo à 145 € et un casque à 28 €.\n\nQuel calcul donne l'argent qui lui reste ?",
+    "image": null,
+    "choices": [
+      {
+        "key": "a",
+        "text": "$(200 - 145) + 28$",
+        "misconception": "L'élève retire bien le prix du vélo, mais ajoute le prix du casque au lieu de le retirer : le mot « et » de l'énoncé lui fait écrire une addition."
+      },
+      {
+        "key": "b",
+        "text": "$200 - (145 + 28)$",
+        "misconception": null
+      },
+      {
+        "key": "c",
+        "text": "$200 - (145 - 28)$",
+        "misconception": "L'élève a l'idée de retirer les deux achats d'un coup, mais écrit une soustraction entre leurs prix : 145 − 28 n'est pas ce que Théo dépense, c'est l'écart entre les deux prix."
+      }
+    ],
+    "answer": {
+      "value": "b"
+    },
+    "solution_steps": [
+      "Théo paie le vélo et le casque : il dépense $145 + 28$. On met cette somme entre parenthèses, car c'est la dépense totale qu'on retire des 200 €.",
+      "Le calcul est $200 - (145 + 28)$ : la bonne réponse est b.",
+      "Vérification : $145 + 28 = 173$, puis $200 - 173 = 27$. Il reste 27 € à Théo."
+    ],
+    "hint": "Que dépense Théo en tout ? C'est cette dépense qu'on retire de ses 200 €.",
+    "estimated_duration_s": 75,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 3, CM1 : savoir effectuer un calcul contenant des parenthèses."
+  }
+]

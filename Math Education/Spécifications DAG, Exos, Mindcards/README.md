@@ -1,9 +1,9 @@
 # Contenu pédagogique MATH EDUCATION
 
-> Livraison de Marius (lead contenu) pour Gauthier (lead développement).
-> Tranche pilote, état au 30 septembre 2026 : **38 compétences (v2.1), 69 exercices
-> en `relu_agent`, 6 cartes mentales.** Ces fichiers sont copiés et consommés par
-> l'application.
+> État au 3 octobre 2026 : **56 compétences, 282 exercices en `relu_agent`,
+> 10 cartes mentales**, domaines A, B (CP à 6e) et C. L'extension suit
+> `PLAN_CONTENU.md`. L'application reçoit le contenu par
+> `python scripts/contenu.py export-app`.
 
 ---
 
@@ -17,17 +17,22 @@ Spécifications DAG, Exos, Mindcards/
 │   ├── exercises.schema.json
 │   └── mindmaps.schema.json
 │
-├── content/                      ← LE CONTENU, conforme aux schémas
-│   ├── skills_dag_v2.json        v2.1 : 38 compétences (A, B partiel, C)
-│   ├── exercises.json            69 exercices
-│   └── mindmaps.json             6 cartes mentales
+├── content/                      ← LE CONTENU, conforme aux schémas, découpé
+│   ├── dag/                      _metadata.json + une liste de compétences par domaine (A.json…)
+│   ├── exercices/                _metadata.json + un fichier par compétence (B/B002.json…)
+│   └── cartes/                   _metadata.json + un fichier par carte (MM-B-01.json…)
 │
+├── modeles_agents/               ← consignes types des rédacteurs et relecteurs
 ├── skills_dag.json               ← v1.0 d'origine, 414 compétences. CONSERVÉ tel quel.
 ├── CORRECTIONS_DAG_v2.md         ← ce qui a changé entre v1 et v2, et pourquoi
+├── PLAN_CONTENU.md               ← plan d'extension par domaine, circuit des agents
+├── QUALITY.md                    ← suivi de la qualité, lot par lot
 └── README.md                     ← ce fichier
 ```
 
-Le fichier `skills_dag.json` v1.0 n'est pas modifié. La v2 est une **tranche**, pas un remplacement : elle ne couvre que 38 des 414 compétences.
+Le découpage tient à la cible : le programme complet représente 5 000 à 10 000 exercices, qui ne tiennent ni dans un seul fichier, ni dans un diff, ni dans le contexte d'un agent. **Ne lisez ni n'écrivez ces fichiers à la main depuis un script** : `scripts/contenu.py` les assemble dans la forme décrite par les schémas (`{"metadata", "skills"}`, etc.) et recalcule les compteurs à l'écriture.
+
+Le fichier `skills_dag.json` v1.0 n'est pas modifié. La v2 est une **tranche**, pas un remplacement : elle couvre 56 des 414 compétences du v1, re-nivelées d'après les programmes.
 
 ---
 

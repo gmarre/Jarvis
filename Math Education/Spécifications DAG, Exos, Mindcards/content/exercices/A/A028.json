@@ -1,0 +1,183 @@
+[
+  {
+    "id": "EX-A028-D-01",
+    "skill_id": "A028",
+    "level": "decouverte",
+    "type": "numerique",
+    "statement": "Une demi-droite est graduée de 1 000 en 1 000 à partir de 0.\n\nQuel nombre est écrit à la quatrième graduation après 0 ?",
+    "image": null,
+    "answer": {
+      "value": 4000,
+      "accepted": [
+        "4 000",
+        "4000"
+      ]
+    },
+    "solution_steps": [
+      "Sur une demi-droite graduée, l'écart entre deux graduations voisines est toujours le même. Ici il vaut 1 000.",
+      "Première graduation : 1 000. Deuxième : 2 000. Troisième : 3 000.",
+      "Quatrième : $4 \\times 1\\,000 = 4\\,000$.",
+      "Réponse : **4 000**."
+    ],
+    "hint": "Compte de 1 000 en 1 000 en partant de 0.",
+    "estimated_duration_s": 60,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 3, CM1, les nombres entiers : savoir placer des nombres et reperer des points sur une demi-droite graduee."
+  },
+  {
+    "id": "EX-A028-D-02",
+    "skill_id": "A028",
+    "level": "decouverte",
+    "type": "qcm",
+    "statement": "Une demi-droite est graduée de 1 000 en 1 000 à partir de 0.\n\nOù faut-il placer le nombre 3 500 ?",
+    "image": null,
+    "choices": [
+      {
+        "key": "a",
+        "text": "Juste au milieu entre les graduations 3 000 et 4 000",
+        "misconception": null
+      },
+      {
+        "key": "b",
+        "text": "Sur la graduation 3 000",
+        "misconception": "L'élève ne lit que le chiffre des milliers et pose le point sur la graduation précédente, comme si 3 500 valait 3 000."
+      },
+      {
+        "key": "c",
+        "text": "Juste après la graduation 4 000",
+        "misconception": "L'élève arrondit 3 500 à 4 000, puis place le point au-delà de cette graduation alors que 3 500 est plus petit que 4 000."
+      }
+    ],
+    "answer": {
+      "value": "a"
+    },
+    "solution_steps": [
+      "3 500 est plus grand que 3 000 et plus petit que 4 000 : il se trouve entre ces deux graduations.",
+      "L'écart entre deux graduations vaut 1 000, et 500 en est exactement la moitié.",
+      "$3\\,000 + 500 = 3\\,500$ : le point tombe donc au milieu de cet intervalle.",
+      "Réponse : juste au milieu entre 3 000 et 4 000."
+    ],
+    "hint": "Entre quelles deux graduations 3 500 se trouve-t-il ? Regarde ensuite s'il est plus près de l'une des deux.",
+    "estimated_duration_s": 75,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 3, CM1, les nombres entiers : savoir placer des nombres et reperer des points sur une demi-droite graduee."
+  },
+  {
+    "id": "EX-A028-E-01",
+    "skill_id": "A028",
+    "level": "entrainement",
+    "type": "numerique",
+    "statement": "Sur une demi-droite graduée de 100 en 100, un point se situe 7 graduations après 2 000.\n\nQuelle est son abscisse ?",
+    "image": null,
+    "answer": {
+      "value": 2700,
+      "accepted": [
+        "2 700",
+        "2700"
+      ]
+    },
+    "solution_steps": [
+      "L'abscisse d'un point, c'est le nombre qui lui correspond sur la demi-droite.",
+      "Chaque graduation avance de 100, donc sept graduations valent $7 \\times 100 = 700$.",
+      "On part de 2 000 : $2\\,000 + 700 = 2\\,700$.",
+      "L'abscisse du point est **2 700**."
+    ],
+    "hint": "Combien vaut un déplacement de 7 graduations, si chaque graduation vaut 100 ?",
+    "estimated_duration_s": 90,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 3, CM1, les nombres entiers : savoir placer des nombres et reperer des points sur une demi-droite graduee."
+  },
+  {
+    "id": "EX-A028-E-02",
+    "skill_id": "A028",
+    "level": "entrainement",
+    "type": "texte",
+    "statement": "Une demi-droite est graduée de 20 en 20 à partir de 0.\n\nEntre quelles deux graduations se place 130 ? Sépare-les par une virgule.",
+    "image": null,
+    "answer": {
+      "value": "120, 140",
+      "accepted": [
+        "120,140",
+        "120 et 140"
+      ]
+    },
+    "solution_steps": [
+      "Les graduations sont 0, 20, 40, 60, 80, 100, 120, 140, et ainsi de suite.",
+      "On avance jusqu'à dépasser 130 : après 120 vient 140.",
+      "130 est plus grand que 120 et plus petit que 140, et aucune graduation ne se trouve entre les deux.",
+      "Réponse : 120, 140."
+    ],
+    "hint": "Compte de 20 en 20 jusqu'à dépasser 130.",
+    "estimated_duration_s": 105,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 3, CM1, les nombres entiers : savoir placer des nombres et reperer des points sur une demi-droite graduee."
+  },
+  {
+    "id": "EX-A028-E-03",
+    "skill_id": "A028",
+    "level": "entrainement",
+    "type": "vrai_faux",
+    "statement": "Sur une demi-droite graduée de 500 en 500, il faut avancer de trois intervalles pour aller du point d'abscisse 2 500 au point d'abscisse 4 000.",
+    "image": null,
+    "answer": {
+      "value": true
+    },
+    "solution_steps": [
+      "On avance de 500 en 500 à partir de 2 500 : 3 000, puis 3 500, puis 4 000.",
+      "Il faut donc trois déplacements pour aller de 2 500 à 4 000.",
+      "On peut aussi le calculer : $4\\,000 - 2\\,500 = 1\\,500$, puis $1\\,500 \\div 500 = 3$.",
+      "L'affirmation est **vraie**."
+    ],
+    "hint": "Calcule l'écart entre les deux abscisses, puis divise-le par la valeur d'une graduation.",
+    "estimated_duration_s": 90,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 3, CM1, les nombres entiers : savoir placer des nombres et reperer des points sur une demi-droite graduee."
+  },
+  {
+    "id": "EX-A028-M-01",
+    "skill_id": "A028",
+    "level": "maitrise",
+    "type": "numerique",
+    "statement": "Une demi-droite est graduée régulièrement à partir de 0. La troisième graduation après 0 porte le nombre 1 200.\n\nQuel nombre porte la cinquième graduation après 0 ?",
+    "image": null,
+    "answer": {
+      "value": 2000,
+      "accepted": [
+        "2 000",
+        "2000"
+      ]
+    },
+    "solution_steps": [
+      "Ici la valeur d'une graduation n'est pas donnée : il faut la retrouver d'abord.",
+      "Trois graduations valent 1 200, donc une seule vaut $1\\,200 \\div 3 = 400$.",
+      "La cinquième graduation vaut alors $5 \\times 400 = 2\\,000$.",
+      "Vérification en comptant : 400, 800, 1 200, 1 600, 2 000.",
+      "Réponse : **2 000**."
+    ],
+    "hint": "Cherche d'abord de combien on avance en passant d'une graduation à la suivante.",
+    "estimated_duration_s": 180,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 3, CM1, les nombres entiers : savoir placer des nombres et reperer des points sur une demi-droite graduee."
+  },
+  {
+    "id": "EX-A028-M-02",
+    "skill_id": "A028",
+    "level": "maitrise",
+    "type": "vrai_faux",
+    "statement": "Une demi-droite va de 0 à 100 000 et elle est graduée de 10 000 en 10 000. Sarah place le nombre 9 500 juste après la graduation 10 000.",
+    "image": null,
+    "answer": {
+      "value": false
+    },
+    "solution_steps": [
+      "Les graduations sont 0, 10 000, 20 000, et ainsi de suite jusqu'à 100 000.",
+      "9 500 est plus petit que 10 000 : il ne peut pas se trouver après cette graduation.",
+      "Il manque 500 pour atteindre 10 000, soit un vingtième de l'intervalle : le point est donc très près de la graduation, mais avant elle.",
+      "Sarah a **tort** : 9 500 se place entre 0 et 10 000, juste avant la graduation 10 000."
+    ],
+    "hint": "9 500 est-il plus grand ou plus petit que 10 000 ?",
+    "estimated_duration_s": 150,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 3, CM1, les nombres entiers : savoir placer des nombres et reperer des points sur une demi-droite graduee."
+  }
+]

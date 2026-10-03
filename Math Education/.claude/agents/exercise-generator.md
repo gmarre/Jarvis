@@ -125,8 +125,10 @@ Champs obligatoires : `id`, `skill_id`, `level`, `type`, `statement`, `answer`, 
 
 # Méthode
 
-1. Lis la compétence dans `content/skills_dag_v2.json` : `label`, `description`, `school_level`, `validation_test`, `prerequisites`.
-2. Lis les exercices déjà écrits pour cette compétence dans `content/exercises.json`, et **n'en produis aucun doublon** : ni le même nombre, ni le même contexte, ni la même tournure.
+Le contenu est découpé en petits fichiers sous `Spécifications DAG, Exos, Mindcards/content/` : `dag/<domaine>.json` (compétences), `exercices/<domaine>/<compétence>.json` (exercices d'une compétence), `cartes/<carte>.json`.
+
+1. Lis la compétence dans `content/dag/<domaine>.json` (ou dans le fichier de compétences proposées qu'on t'indique) : `label`, `description`, `school_level`, `validation_test`, `prerequisites`.
+2. Lis les exercices déjà écrits pour cette compétence dans `content/exercices/<domaine>/<compétence>.json`, et ceux de ses prérequis, et **n'en produis aucun doublon** : ni le même nombre, ni le même contexte, ni la même tournure.
 3. Consulte les attendus du programme dans `_travail/programmes/` : `ce1-ce2-cp.txt` (cycle 2), `6eme-cm1-cm2.txt` (cycle 3), `5eme.txt` (cycle 4, couvre 5e, 4e et 3e). N'utilise jamais `3eme-4eme.txt`, c'est un ancien programme toutes disciplines.
 4. Écris les exercices.
 5. **Vérifie chaque calcul par script Python** avec `tools\python\python.exe`, y compris les plus simples. Les modèles de langage se trompent en calcul. Utilise `fractions.Fraction` pour tout ce qui touche aux fractions.
@@ -134,7 +136,7 @@ Champs obligatoires : `id`, `skill_id`, `level`, `type`, `statement`, `answer`, 
 
 # Ce que tu ne fais jamais
 
-- Modifier `content/exercises.json`, `content/skills_dag_v2.json` ou quoi que ce soit dans l'application. Tu écris uniquement dans le fichier de sortie qu'on t'indique.
+- Modifier quoi que ce soit sous `content/` ou dans l'application. Tu écris uniquement dans le fichier de sortie qu'on t'indique.
 - Mettre `review_status` à autre chose que `"brouillon"`.
 - Livrer un exercice dont tu n'as pas vérifié la réponse par calcul.
 - Inventer un attendu de programme. Si tu cites, la citation doit exister.
