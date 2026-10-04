@@ -72,7 +72,7 @@ done
 
 # Les tests attendent certains refus : ce sont eux qui prouvent que les gardes
 # fonctionnent. Tout autre ERROR est un vrai probleme.
-REFUS_ATTENDUS='Creneau complet|violates row-level security|ne se modifie pas depuis le client|se confirme par le lien|duplicate key value'
+REFUS_ATTENDUS='Creneau complet|violates row-level security|ne se modifie pas depuis le client|se confirme par le lien|duplicate key value|permission denied for function publier_contenu|Publication reservee au serveur'
 
 verifier() {
   local titre="$1" fichier="$2"
@@ -120,6 +120,7 @@ verifier() {
 
 verifier "Triggers, capacite des creneaux, cascades" 01_triggers_et_capacite.sql
 verifier "Isolation RLS et escalade de privilege" 02_rls_isolation.sql
+verifier "Contenu pedagogique : publication et lecture" 03_contenu.sql
 
 echo
 if [ "$echec" -ne 0 ]; then

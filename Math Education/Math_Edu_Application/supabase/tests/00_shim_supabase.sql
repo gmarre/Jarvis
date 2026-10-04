@@ -21,3 +21,5 @@ $$;
 
 do $$ begin create role authenticated; exception when duplicate_object then null; end $$;
 do $$ begin create role anon; exception when duplicate_object then null; end $$;
+-- Role des appels serveur (cle service_role) : seul autorise a publier le contenu.
+do $$ begin create role service_role; exception when duplicate_object then null; end $$;
