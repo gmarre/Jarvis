@@ -369,8 +369,8 @@ Le détail, avec les prérequis dans le bon ordre et les pièges, est dans
 
 1. **Sprint 2b** : Node 24, domaine, Resend, consentement parental enfin
    obtenable. C'est le blocage réglementaire n°1.
-2. **Sprint 3** : contenu en base, correction des réponses côté serveur (elles
-   sont aujourd'hui dans le bundle), TanStack Query.
+2. **Sprint 3** : contenu en base et correction côté serveur (faits le 4 octobre
+   2026) ; restent la progression écrite côté serveur et TanStack Query.
 3. **Sprint 4** : dépôt dédié, Netlify, domaine, PWA, landing et politique de
    confidentialité.
 4. **Sprint 5** : espace parent réel.

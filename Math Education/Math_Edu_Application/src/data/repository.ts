@@ -15,6 +15,7 @@
 // le minimum et rend ce que le serveur a reellement enregistre.
 
 import type { ProgressMap } from '@/lib/dag'
+import type { Correction } from '@/lib/exercise'
 import type {
   AvailabilitySlot,
   Booking,
@@ -109,6 +110,15 @@ export interface DataRepository {
   signOut(): Promise<void>
   /** Complete un profil cree par OAuth ou par email (ecran /bienvenue). */
   completeProfile(completion: ProfileCompletion): Promise<Profile>
+
+  // --- Correction ---------------------------------------------------------
+
+  /**
+   * Corrige une reponse. En production c'est le serveur qui corrige (Edge
+   * Function `corriger`) : l'application n'a pas les reponses. Ne fait que
+   * corriger, sans rien enregistrer : la tentative suit par saveAttempt.
+   */
+  corriger(exerciseId: string, reponse: string): Promise<Correction>
 
   // --- Mutations, une par intention --------------------------------------
 

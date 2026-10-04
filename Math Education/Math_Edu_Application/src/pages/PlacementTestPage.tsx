@@ -3,7 +3,6 @@ import { Link } from 'react-router-dom'
 
 import { getSkill, requireSkill, skills as allSkills } from '@/content'
 import { buildPathToTarget, emptyProgress, findRootGaps, type ProgressMap } from '@/lib/dag'
-import { checkAnswer } from '@/lib/exercise'
 import {
   answerPlacement,
   estimateWeeks,
@@ -34,7 +33,7 @@ import type { PlacementResult } from '@/types/domain'
 type Phase = 'test' | 'resultat'
 
 export default function PlacementTestPage() {
-  const { session, completePlacement } = useAuthenticatedSession()
+  const { session, completePlacement, corriger } = useAuthenticatedSession()
 
   const [state, setState] = useState<PlacementState>(() =>
     startPlacement(session.profile.niveau_scolaire),
@@ -44,6 +43,9 @@ export default function PlacementTestPage() {
   const [result, setResult] = useState<PlacementResult | null>(null)
   /** Historique affiche dans le panneau lateral "ce que le test cherche". */
   const [trace, setTrace] = useState<{ skillId: string; correct: boolean }[]>([])
+  /** Correction en cours : le serveur n'a pas encore repondu. */
+  const [correcting, setCorrecting] = useState(false)
+  const [correctionError, setCorrectionError] = useState<string | null>(null)
 
   // Selection directe plutot que memoisee : une lecture de tableau indexe, la
   // memoisation couterait plus cher que le calcul.
@@ -93,9 +95,21 @@ export default function PlacementTestPage() {
     finish(state)
   }, [phase, exercise, state, finish])
 
-  const validate = () => {
-    if (!exercise || !state.current || answer === '') return
-    const { isCorrect } = checkAnswer(exercise, answer)
+  const validate = async () => {
+    if (!exercise || !state.current || answer === '' || correcting) return
+
+    setCorrecting(true)
+    setCorrectionError(null)
+    let isCorrect: boolean
+    try {
+      isCorrect = (await corriger(exercise.id, answer)).isCorrect
+    } catch (cause) {
+      // La reponse reste saisie : l'eleve n'a qu'a valider a nouveau.
+      setCorrectionError(cause instanceof Error ? cause.message : String(cause))
+      return
+    } finally {
+      setCorrecting(false)
+    }
 
     setTrace((current) => [...current, { skillId: state.current as string, correct: isCorrect }])
     const next = answerPlacement(state, isCorrect)
@@ -106,7 +120,8 @@ export default function PlacementTestPage() {
 
   /** "Je ne sais pas encore" compte comme un echec, sans le dire ainsi. */
   const skip = () => {
-    if (!state.current) return
+    if (!state.current || correcting) return
+    setCorrectionError(null)
     setTrace((current) => [...current, { skillId: state.current as string, correct: false }])
     const next = answerPlacement(state, false)
     setAnswer('')
@@ -158,8 +173,15 @@ export default function PlacementTestPage() {
               exercise={exercise}
               value={answer}
               onChange={setAnswer}
-              onSubmit={validate}
+              onSubmit={() => void validate()}
+              disabled={correcting}
             />
+
+            {correctionError && (
+              <p role="alert" className="mt-5 text-[13px] font-medium text-wrong">
+                {correctionError}
+              </p>
+            )}
 
             <div className="mt-6 flex flex-wrap items-center justify-between gap-4">
               <button
@@ -169,8 +191,12 @@ export default function PlacementTestPage() {
               >
                 Je ne sais pas encore
               </button>
-              <Button size="lg" onClick={validate} disabled={answer === ''}>
-                Valider
+              <Button
+                size="lg"
+                onClick={() => void validate()}
+                disabled={answer === '' || correcting}
+              >
+                {correcting ? 'Correction…' : 'Valider'}
               </Button>
             </div>
           </div>

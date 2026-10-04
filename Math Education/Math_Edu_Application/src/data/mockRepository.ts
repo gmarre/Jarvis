@@ -18,7 +18,9 @@ import {
 import { emptyProgress } from '@/lib/dag'
 import { newId } from '@/lib/id'
 import { skills } from '@/content'
-import { assurerContenu, chargerContenuLocal } from '@/content/chargement'
+import { assurerContenu, chargerContenuLocal, versContenuPublic } from '@/content/chargement'
+import { checkAnswer } from '@/lib/exercise'
+import type { Exercise } from '@/types/content'
 import {
   RepositoryError,
   type Catalog,
@@ -43,11 +45,24 @@ function wait<T>(value: T, ms = LATENCY_MS): Promise<T> {
 }
 
 /**
+ * Banque complete, reponses comprises : elle joue le role du serveur pour la
+ * correction. Les ecrans, eux, ne recoivent que la version publique, comme en
+ * production.
+ */
+const banqueComplete = new Map<string, Exercise>()
+
+async function chargerDemonstration() {
+  const local = await chargerContenuLocal()
+  for (const exercise of local.exercises) banqueComplete.set(exercise.id, exercise)
+  return versContenuPublic(local)
+}
+
+/**
  * Contenu de la demonstration : les JSON locaux, importes a la demande (chunk a
  * part). Comme en production, toute session rendue le trouve installe.
  */
 function contenu(): Promise<void> {
-  return assurerContenu(chargerContenuLocal)
+  return assurerContenu(chargerDemonstration)
 }
 
 /**
@@ -191,6 +206,15 @@ export const mockRepository: DataRepository = {
     persister()
     notifier()
     await wait(undefined)
+  },
+
+  async corriger(exerciseId, reponse) {
+    // Le contenu peut avoir ete installe par un autre chemin (tests) : la
+    // banque se charge alors ici, une fois.
+    if (banqueComplete.size === 0) await chargerDemonstration()
+    const exercise = banqueComplete.get(exerciseId)
+    if (!exercise) throw new RepositoryError(`Exercice inconnu : ${exerciseId}`)
+    return wait(checkAnswer(exercise, reponse))
   },
 
   async completeProfile(completion: ProfileCompletion) {

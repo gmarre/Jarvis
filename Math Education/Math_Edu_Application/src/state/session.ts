@@ -3,7 +3,7 @@ import { createContext, useContext } from 'react'
 import type { Catalog, ProfileCompletion, Session, SignUpInput } from '@/data'
 import type { ProgressMap } from '@/lib/dag'
 import type { Correction } from '@/lib/exercise'
-import type { Exercise } from '@/types/content'
+import type { PublicExercise } from '@/types/content'
 import type { PlacementResult, Profile } from '@/types/domain'
 
 // Contrat de la session et hooks d'acces. Separe du provider pour que ce
@@ -58,8 +58,18 @@ export interface SessionValue {
 
   // --- Mutations ----------------------------------------------------------
 
-  /** Enregistre une tentative d'exercice et fait progresser le DAG. */
-  answerExercise: (exercise: Exercise, raw: string, durationS: number) => AnswerResult
+  /**
+   * Fait corriger une reponse (par le serveur en production), puis enregistre
+   * la tentative et fait progresser le DAG. Rejette si la correction echoue :
+   * rien n'est alors enregistre, l'eleve peut valider a nouveau.
+   */
+  answerExercise: (
+    exercise: PublicExercise,
+    raw: string,
+    durationS: number,
+  ) => Promise<AnswerResult>
+  /** Correction seule, sans rien enregistrer : sert au test de positionnement. */
+  corriger: (exerciseId: string, raw: string) => Promise<Correction>
   /** Marque une carte mentale comme revue : passe a l'echeance Leitner suivante. */
   reviewSkill: (skillId: string) => void
   /** Cloture le test de positionnement. */

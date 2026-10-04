@@ -40,6 +40,9 @@ export default function ExercisePage() {
   const [phase, setPhase] = useState<Phase>('question')
   const [result, setResult] = useState<AnswerResult | null>(null)
   const [showHint, setShowHint] = useState(false)
+  /** Correction en cours : le serveur n'a pas encore repondu. */
+  const [correcting, setCorrecting] = useState(false)
+  const [correctionError, setCorrectionError] = useState<string | null>(null)
   const [score, setScore] = useState({ correct: 0, total: 0 })
   const [masteredDuringSession, setMasteredDuringSession] = useState(false)
   const [descendTo, setDescendTo] = useState<string[]>([])
@@ -71,10 +74,22 @@ export default function ExercisePage() {
     )
   }
 
-  const validate = () => {
-    if (!exercise || answer === '') return
+  const validate = async () => {
+    if (!exercise || answer === '' || correcting) return
     const durationS = Math.round((Date.now() - startedAt.current) / 1000)
-    const outcome = answerExercise(exercise, answer, durationS)
+
+    setCorrecting(true)
+    setCorrectionError(null)
+    let outcome: AnswerResult
+    try {
+      outcome = await answerExercise(exercise, answer, durationS)
+    } catch (cause) {
+      // La reponse reste saisie : l'eleve n'a qu'a valider a nouveau.
+      setCorrectionError(cause instanceof Error ? cause.message : String(cause))
+      return
+    } finally {
+      setCorrecting(false)
+    }
 
     setResult(outcome)
     setScore((current) => ({
@@ -137,11 +152,12 @@ export default function ExercisePage() {
           exercise={exercise}
           value={answer}
           onChange={setAnswer}
-          onSubmit={validate}
-          disabled={phase === 'correction'}
+          onSubmit={() => void validate()}
+          disabled={phase === 'correction' || correcting}
           feedback={
             phase === 'correction' ? (result?.isCorrect ? 'correct' : 'wrong') : 'none'
           }
+          expectedKey={result?.expectedKey ?? null}
         />
 
         {phase === 'question' && (
@@ -168,9 +184,19 @@ export default function ExercisePage() {
               </div>
             )}
 
+            {correctionError && (
+              <p role="alert" className="mt-5 text-[13px] font-medium text-wrong">
+                {correctionError}
+              </p>
+            )}
+
             <div className="mt-7 flex justify-end">
-              <Button size="lg" onClick={validate} disabled={answer === ''}>
-                Valider
+              <Button
+                size="lg"
+                onClick={() => void validate()}
+                disabled={answer === '' || correcting}
+              >
+                {correcting ? 'Correction…' : 'Valider'}
               </Button>
             </div>
           </>
@@ -179,7 +205,7 @@ export default function ExercisePage() {
         {phase === 'correction' && result && (
           <CorrectionPanel
             result={result}
-            solutionSteps={exercise.solution_steps}
+            solutionSteps={result.solutionSteps}
             onNext={next}
             isLast={index + 1 >= exercises.length}
           />

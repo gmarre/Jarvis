@@ -9,7 +9,7 @@
 // C'est ce qui permet de couvrir 26 competences en 10 questions au lieu de 26.
 
 import { getDependents, getExercisesForSkill, getSkill, levelRank, skills } from '@/content'
-import type { Exercise, SchoolLevel, Skill } from '@/types/content'
+import type { PublicExercise, SchoolLevel, Skill } from '@/types/content'
 
 export interface PlacementState {
   /** Competence en cours d'evaluation. */
@@ -187,7 +187,7 @@ export function answerPlacement(state: PlacementState, isCorrect: boolean): Plac
 }
 
 /** Exercice servant de question : niveau entrainement de preference. */
-export function placementExercise(skillId: string): Exercise | null {
+export function placementExercise(skillId: string): PublicExercise | null {
   const list = getExercisesForSkill(skillId)
   return list.find((e) => e.level === 'entrainement') ?? list[0] ?? null
 }

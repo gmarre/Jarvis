@@ -1,8 +1,13 @@
 import { describe, expect, it } from 'vitest'
 
-import { exercises } from '@/content'
+import { chargerContenuLocal } from '@/content/chargement'
 import { checkAnswer, formatExpected } from './exercise'
-import type { Exercise } from '@/types/content'
+import { versExerciceACorriger } from '../../supabase/functions/_shared/correction'
+import { toPublicExercise, type Exercise } from '@/types/content'
+
+// La banque complete, reponses comprises : celle que l'application installe
+// n'en a plus depuis la phase 3.
+const { exercises } = await chargerContenuLocal()
 
 // La regle produit posee en tete de lib/exercise.ts : compter faux une reponse
 // juste ecrite autrement casse la confiance de l'eleve plus surement qu'un bug.
@@ -136,5 +141,72 @@ describe('formatExpected', () => {
     expect(checkAnswer(decimal, '3.5').isCorrect).toBe(true)
     expect(checkAnswer(decimal, '3,50').isCorrect).toBe(true)
     expect(checkAnswer(decimal, '35').isCorrect).toBe(false)
+  })
+})
+
+describe('checkAnswer, ce que le serveur renvoie apres correction', () => {
+  it('donne la bonne proposition d un QCM et le corrige', () => {
+    const exercise = byType('qcm')
+    const correction = checkAnswer(exercise, 'z')
+    expect(correction.expectedKey).toBe(String(exercise.answer.value))
+    expect(correction.solutionSteps).toEqual(exercise.solution_steps)
+  })
+
+  it('donne true ou false pour un vrai/faux, rien pour une saisie libre', () => {
+    const vraiFaux = byType('vrai_faux')
+    expect(checkAnswer(vraiFaux, 'true').expectedKey).toBe(String(Boolean(vraiFaux.answer.value)))
+    expect(checkAnswer(byType('numerique'), '1').expectedKey).toBeNull()
+  })
+})
+
+describe('separation de la reponse', () => {
+  it('la version publique ne porte ni reponse, ni corrige, ni misconception', () => {
+    for (const exercise of exercises) {
+      const publique = toPublicExercise(exercise)
+      const texte = JSON.stringify(publique)
+      expect(publique).not.toHaveProperty('answer')
+      expect(publique).not.toHaveProperty('solution_steps')
+      expect(texte).not.toContain('misconception')
+      expect(publique.answer_unit).toBe(exercise.answer.unit ?? null)
+    }
+  })
+
+  it('le serveur recompose l exercice et corrige comme l application', () => {
+    // Meme decoupage que publier_contenu() (migration 0005), puis la
+    // recomposition de l'Edge Function : le verdict doit etre identique.
+    for (const exercise of exercises) {
+      const recompose = versExerciceACorriger({
+        type: exercise.type,
+        choices: exercise.choices?.map(({ key, text }) => ({ key, text })) ?? null,
+        content_exercise_keys: {
+          answer: exercise.answer,
+          solution_steps: exercise.solution_steps,
+          misconceptions: Object.fromEntries(
+            (exercise.choices ?? []).map((c) => [c.key, c.misconception]),
+          ),
+        },
+      })
+      expect(recompose).not.toBeNull()
+      const reponses = [String(exercise.answer.value), 'faux', ...(exercise.choices ?? []).map((c) => c.key)]
+      for (const reponse of reponses) {
+        expect(checkAnswer(recompose!, reponse)).toEqual(checkAnswer(exercise, reponse))
+      }
+    }
+  })
+
+  it('refuse de corriger un exercice sans cle', () => {
+    expect(versExerciceACorriger({ type: 'qcm', choices: null, content_exercise_keys: null })).toBeNull()
+  })
+})
+
+describe('checkAnswer, espaces des grands nombres', () => {
+  it('accepte 1 024 ecrit avec une espace insecable, fine ou ordinaire', () => {
+    const base = byType('numerique')
+    const grand: Exercise = { ...base, answer: { value: 1024 } }
+    // Construits par code : un caractere invisible colle dans la source se
+    // perd ou se remplace sans qu'on le voie.
+    for (const espace of [0x00a0, 0x202f, 0x2009, 0x20]) {
+      expect(checkAnswer(grand, `1${String.fromCharCode(espace)}024`).isCorrect).toBe(true)
+    }
   })
 })

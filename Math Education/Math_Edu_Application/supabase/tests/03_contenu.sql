@@ -1,5 +1,6 @@
 -- Contenu pedagogique : publication reservee au serveur, lecture pour les
--- comptes connectes, separation de ce qui trahit la reponse.
+-- comptes connectes, separation de ce qui trahit la reponse, et reponses
+-- illisibles pour les eleves (migration 0006).
 --
 -- Chaque assertion rend une ligne commencant par TEST et finissant par la
 -- colonne ok : run.sh echoue si l'une vaut f. Toute assertion de droits tourne
@@ -79,6 +80,14 @@ set request.jwt.claim.role = 'authenticated';
 select 'TEST 38 un eleve connecte lit les competences et les exercices' as test,
        (select count(*) from content_skills) as competences,
        ((select count(*) from content_skills) = 2 and (select count(*) from content_exercises) = 2) as ok;
+
+-- Migration 0006 : plus aucune politique de lecture sur les cles. Les fichiers
+-- de test precedents redonnent le droit SELECT a authenticated (comme le fait
+-- Supabase a la creation d'une table) : c'est donc bien le RLS seul qui doit
+-- ne rien rendre ici.
+select 'TEST 40 un eleve connecte ne lit plus aucune reponse' as test,
+       (select count(*) from content_exercise_keys) as cles_lues,
+       (select count(*) from content_exercise_keys) = 0 as ok;
 
 \set ON_ERROR_STOP off
 update content_exercises set statement = 'pirate' where id = 'EX-A001-D-02';

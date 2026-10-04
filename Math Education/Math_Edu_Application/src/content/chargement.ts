@@ -6,8 +6,12 @@
 //
 //  1. elle lit la derniere ligne de content_publications (une requete legere) ;
 //  2. si le cache de l'appareil porte le meme numero de publication, il sert ;
-//  3. sinon elle lit les quatre tables, par pages de 1 000 lignes (la limite
-//     de PostgREST chez Supabase), en parallele, puis met le cache a jour.
+//  3. sinon elle lit les trois tables lisibles, par pages de 1 000 lignes (la
+//     limite de PostgREST chez Supabase), en parallele, puis met le cache a jour.
+//
+// Elle ne lit jamais content_exercise_keys (reponses, corriges) : depuis la
+// phase 3, c'est l'Edge Function `corriger` qui s'en sert, et la migration 0006
+// en retire la lecture aux eleves.
 //
 // En mode demonstration, les JSON locaux sont importes a la demande : ils
 // forment un chunk a part, telecharge seulement si la demonstration tourne.
@@ -16,14 +20,14 @@ import type { SupabaseClient } from '@supabase/supabase-js'
 
 import type {
   Exercise,
-  ExerciseAnswer,
-  ExerciseChoice,
   ExercisesBank,
   Mindmap,
   MindmapsBank,
+  PublicExercise,
   Skill,
   SkillsDag,
 } from '@/types/content'
+import { toPublicExercise } from '@/types/content'
 import { contenuInstalle, installerContenu, type ContenuPedagogique } from './index'
 
 // =============================================================================
@@ -68,7 +72,17 @@ const DEMONSTRATION_POSSIBLE =
   !import.meta.env.VITE_SUPABASE_URL ||
   !import.meta.env.VITE_SUPABASE_ANON_KEY
 
-export async function chargerContenuLocal(): Promise<ContenuPedagogique> {
+/** Contenu local complet : les exercices y gardent reponse et corrige. */
+export interface ContenuLocal extends Omit<ContenuPedagogique, 'exercises'> {
+  exercises: Exercise[]
+}
+
+/** Ce qu'on installe a partir du contenu local : sans les reponses, comme en production. */
+export function versContenuPublic(local: ContenuLocal): ContenuPedagogique {
+  return { ...local, exercises: local.exercises.map(toPublicExercise) }
+}
+
+export async function chargerContenuLocal(): Promise<ContenuLocal> {
   if (!DEMONSTRATION_POSSIBLE) {
     throw new Error('Contenu local absent de cette construction : il se lit dans la base.')
   }
@@ -91,7 +105,12 @@ export async function chargerContenuLocal(): Promise<ContenuPedagogique> {
 const PAGE = 1000
 
 /** Change si la forme du cache change : l'ancien est alors ignore. */
-const CLE_CACHE = 'racine.contenu.v1'
+const CLE_CACHE = 'racine.contenu.v2'
+/**
+ * Caches des versions precedentes, a effacer. La v1 (phase 2) contenait les
+ * reponses : la laisser sur l'appareil annulerait la phase 3.
+ */
+const ANCIENS_CACHES = ['racine.contenu.v1']
 
 interface Publication {
   id: number
@@ -108,22 +127,26 @@ interface Cache {
 interface LigneExercice {
   id: string
   skill_id: string
-  level: Exercise['level']
-  type: Exercise['type']
+  level: PublicExercise['level']
+  type: PublicExercise['type']
   statement: string
   image: string | null
   choices: { key: string; text: string }[] | null
   hint: string | null
+  answer_unit: string | null
   estimated_duration_s: number | null
-  review_status: Exercise['review_status']
+  review_status: PublicExercise['review_status']
   programme_ref: string | null
 }
 
-interface LigneCle {
-  exercise_id: string
-  answer: ExerciseAnswer
-  solution_steps: string[]
-  misconceptions: Record<string, string | null>
+function effacerAnciensCaches() {
+  for (const cle of ANCIENS_CACHES) {
+    try {
+      window.localStorage.removeItem(cle)
+    } catch {
+      // sans importance
+    }
+  }
 }
 
 function lireCache(publication: number): ContenuPedagogique | null {
@@ -178,18 +201,7 @@ async function lireTable<T>(
   return lignes
 }
 
-/**
- * Recompose un exercice tel que le moteur l'attend. La base le range en deux
- * moities (ce qui s'affiche avant la reponse, et la cle), pour qu'en phase 3
- * l'eleve ne puisse plus lire la seconde.
- */
-function versExercice(ligne: LigneExercice, cle: LigneCle | undefined): Exercise {
-  if (!cle) throw new Error(`Contenu incomplet : pas de cle pour ${ligne.id}`)
-  const choices: ExerciseChoice[] | undefined = ligne.choices?.map((choix) => ({
-    key: choix.key,
-    text: choix.text,
-    misconception: cle.misconceptions[choix.key] ?? null,
-  }))
+function versExercice(ligne: LigneExercice): PublicExercise {
   return {
     id: ligne.id,
     skill_id: ligne.skill_id,
@@ -197,10 +209,9 @@ function versExercice(ligne: LigneExercice, cle: LigneCle | undefined): Exercise
     type: ligne.type,
     statement: ligne.statement,
     image: ligne.image,
-    ...(choices ? { choices } : {}),
-    answer: cle.answer,
-    solution_steps: cle.solution_steps,
+    ...(ligne.choices ? { choices: ligne.choices } : {}),
     hint: ligne.hint,
+    answer_unit: ligne.answer_unit,
     estimated_duration_s: ligne.estimated_duration_s ?? 0,
     review_status: ligne.review_status,
     programme_ref: ligne.programme_ref,
@@ -220,13 +231,13 @@ export async function chargerContenuSupabase(db: SupabaseClient): Promise<Conten
     throw new Error('Aucun contenu publié. Lancer scripts/publier.py --apply.')
   }
 
+  effacerAnciensCaches()
   const enCache = lireCache(publication.id)
   if (enCache) return enCache
 
-  const [skills, lignesExercices, cles, mindmaps] = await Promise.all([
+  const [skills, lignesExercices, mindmaps] = await Promise.all([
     lireTable<Skill>(db, 'content_skills', 'id', publication.nb_skills),
     lireTable<LigneExercice>(db, 'content_exercises', 'id', publication.nb_exercises),
-    lireTable<LigneCle>(db, 'content_exercise_keys', 'exercise_id', publication.nb_exercises),
     lireTable<Mindmap>(db, 'content_mindmaps', 'id', publication.nb_mindmaps),
   ])
 
@@ -235,16 +246,14 @@ export async function chargerContenuSupabase(db: SupabaseClient): Promise<Conten
   if (
     skills.length !== publication.nb_skills ||
     lignesExercices.length !== publication.nb_exercises ||
-    cles.length !== publication.nb_exercises ||
     mindmaps.length !== publication.nb_mindmaps
   ) {
     throw new Error('Contenu en cours de publication : recharge la page dans un instant.')
   }
 
-  const cleParExercice = new Map(cles.map((cle) => [cle.exercise_id, cle]))
   const contenu: ContenuPedagogique = {
     skills: skills.map((skill) => ({ ...skill, programme_ref: skill.programme_ref ?? [] })),
-    exercises: lignesExercices.map((ligne) => versExercice(ligne, cleParExercice.get(ligne.id))),
+    exercises: lignesExercices.map(versExercice),
     mindmaps,
   }
 

@@ -1,6 +1,6 @@
 import { cn } from '@/lib/cn'
 import { RichText } from '@/components/ui/RichText'
-import type { Exercise } from '@/types/content'
+import type { PublicExercise } from '@/types/content'
 
 // Saisie de la reponse, pour les 4 types du schema : QCM, vrai/faux, numerique
 // et texte libre. Le meme composant sert au test de positionnement et au
@@ -9,13 +9,18 @@ import type { Exercise } from '@/types/content'
 export type AnswerFeedback = 'none' | 'correct' | 'wrong'
 
 interface AnswerInputProps {
-  exercise: Exercise
+  exercise: PublicExercise
   value: string
   onChange: (value: string) => void
   /** Verrouille la saisie une fois la reponse validee. */
   disabled?: boolean
   /** Apres validation : met en evidence la bonne et la mauvaise reponse. */
   feedback?: AnswerFeedback
+  /**
+   * Bonne proposition (QCM, vrai/faux), connue seulement apres correction :
+   * l'exercice recu ne porte pas sa reponse.
+   */
+  expectedKey?: string | null
   /** Soumission au clavier depuis un champ de saisie. */
   onSubmit?: () => void
 }
@@ -26,9 +31,9 @@ export function AnswerInput({
   onChange,
   disabled = false,
   feedback = 'none',
+  expectedKey = null,
   onSubmit,
 }: AnswerInputProps) {
-  const expected = String(exercise.answer.value)
   const revealed = feedback !== 'none'
 
   if (exercise.type === 'qcm') {
@@ -36,7 +41,7 @@ export function AnswerInput({
       <div role="radiogroup" aria-label="Réponses possibles" className="grid gap-3 sm:grid-cols-2">
         {(exercise.choices ?? []).map((choice) => {
           const selected = value === choice.key
-          const isExpected = choice.key === expected
+          const isExpected = choice.key === expectedKey
           return (
             <button
               key={choice.key}
@@ -78,7 +83,7 @@ export function AnswerInput({
           { key: 'false', label: 'Faux' },
         ].map((option) => {
           const selected = value === option.key
-          const isExpected = option.key === String(Boolean(exercise.answer.value))
+          const isExpected = option.key === expectedKey
           return (
             <button
               key={option.key}
@@ -131,9 +136,9 @@ export function AnswerInput({
               : 'border-line focus:border-accent focus:shadow-focus',
           )}
         />
-        {exercise.answer.unit && (
+        {exercise.answer_unit && (
           <span className="shrink-0 text-[15px] font-medium text-ink-subtle">
-            {exercise.answer.unit}
+            {exercise.answer_unit}
           </span>
         )}
       </div>

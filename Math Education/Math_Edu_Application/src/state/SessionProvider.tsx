@@ -1,11 +1,10 @@
-import { useCallback, useEffect, useMemo, useState, type ReactNode } from 'react'
+import { useCallback, useEffect, useMemo, useRef, useState, type ReactNode } from 'react'
 
 import { RepositoryError, repository, useMockData, type Catalog, type Session } from '@/data'
 import { applyAttempt, nextReviewDate } from '@/lib/dag'
-import { checkAnswer } from '@/lib/exercise'
 import { newId } from '@/lib/id'
 import { atMinutes } from '@/lib/schedule'
-import type { Exercise } from '@/types/content'
+import type { PublicExercise } from '@/types/content'
 import type { SkillProgress } from '@/types/domain'
 import {
   SessionContext,
@@ -44,6 +43,13 @@ export function SessionProvider({ children }: { children: ReactNode }) {
   const [syncError, setSyncError] = useState<SyncError | null>(null)
 
   const dismissSyncError = useCallback(() => setSyncError(null), [])
+
+  // Derniere session connue, lue apres l'attente de la correction : la session
+  // capturee au moment du clic peut avoir change pendant l'aller-retour.
+  const sessionRef = useRef(session)
+  useEffect(() => {
+    sessionRef.current = session
+  }, [session])
 
   /**
    * Lance une ecriture sans bloquer l'interface, et signale son echec.
@@ -143,10 +149,17 @@ export function SessionProvider({ children }: { children: ReactNode }) {
 
   // --- Mutations ----------------------------------------------------------
 
+  const corriger = useCallback<SessionValue['corriger']>(
+    (exerciseId, raw) => repository.corriger(exerciseId, raw),
+    [],
+  )
+
   const answerExercise = useCallback(
-    (exercise: Exercise, raw: string, durationS: number): AnswerResult => {
-      const correction = checkAnswer(exercise, raw)
-      const current = session
+    async (exercise: PublicExercise, raw: string, durationS: number): Promise<AnswerResult> => {
+      // Le serveur corrige : l'application n'a pas la reponse. Un echec remonte
+      // a l'ecran, qui laisse l'eleve valider a nouveau ; rien n'est ecrit.
+      const correction = await repository.corriger(exercise.id, raw)
+      const current = sessionRef.current
       if (!current) {
         return { ...correction, justMastered: false, shouldDescend: false, descendTo: [] }
       }
@@ -166,11 +179,13 @@ export function SessionProvider({ children }: { children: ReactNode }) {
         created_at: new Date().toISOString(),
       }
 
-      setSession({
+      const suivante = {
         ...current,
         progress: { ...current.progress, [exercise.skill_id]: applied.progress },
         attempts: [attempt, ...current.attempts],
-      })
+      }
+      sessionRef.current = suivante
+      setSession(suivante)
 
       ecrire(() => repository.saveAttempt(attempt, applied.progress), 'Ta réponse')
 
@@ -181,7 +196,7 @@ export function SessionProvider({ children }: { children: ReactNode }) {
         descendTo: applied.descendTo,
       }
     },
-    [session, ecrire],
+    [ecrire],
   )
 
   const reviewSkill = useCallback(
@@ -322,6 +337,7 @@ export function SessionProvider({ children }: { children: ReactNode }) {
       signOut,
       completeProfile,
       answerExercise,
+      corriger,
       reviewSkill,
       completePlacement,
       bookSlot,
@@ -341,6 +357,7 @@ export function SessionProvider({ children }: { children: ReactNode }) {
       signOut,
       completeProfile,
       answerExercise,
+      corriger,
       reviewSkill,
       completePlacement,
       bookSlot,

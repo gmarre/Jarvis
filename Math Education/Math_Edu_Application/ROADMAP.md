@@ -34,7 +34,7 @@ Ce qui manque encore, par ordre de valeur :
 | Manque | Conséquence concrète | Sprint |
 |---|---|---|
 | Emails | Le consentement parental est impossible à obtenir, donc aucun élève de moins de 15 ans n'est en règle | 2b |
-| Contenu et correction côté serveur | Contenu en base et hors du bundle depuis le 4 octobre 2026 ; les réponses restent lisibles en base par tout compte connecté | 3 |
+| Contenu et correction côté serveur | Contenu en base, correction côté serveur, réponses illisibles pour l'élève depuis le 4 octobre 2026 ; reste la progression, encore écrite par le navigateur | 3 |
 | Déploiement | L'application n'est accessible que en local | 4 |
 | Espace parent | Le rôle existe mais son espace est une page d'attente | 5 |
 | Paiement | Rien n'est monétisé, la page `/abonnement` est informative | Itération 2 |
@@ -238,10 +238,12 @@ Le dernier manque fonctionnel visible pour un utilisateur.
    depuis la base (`src/content/chargement.ts`), à signature publique identique.
    Chunk principal de 133 à 24 ko gzippés ; les JSON ne sont plus déployés dans
    une construction qui a les clés Supabase.
-3. Edge Function `submit-answer` : correction et progression côté serveur.
-   `lib/exercise.ts` et `lib/dag.ts` sont du TypeScript pur et se déplacent tels
-   quels. Les réponses deviennent illisibles pour l'élève (retrait de la politique
-   transitoire sur `content_exercise_keys`), et la progression devient
+3. **Correction faite le 4 octobre 2026** : Edge Function `corriger` et
+   migration 0006 (les élèves ne lisent plus `content_exercise_keys`).
+   **Reste la progression** côté serveur : `applyAttempt` (`lib/dag.ts`, du
+   TypeScript pur) passe dans la fonction, le client perd l'écriture directe de
+   `skill_progress`, `exercise_attempts` et `placement_results`, et le
+   positionnement se rejoue côté serveur. La progression devient alors
    inviolable, ce qui est indispensable le jour où l'abonnement est payant.
 4. **Adopter TanStack Query** ici, pas avant. Le cache et l'invalidation
    deviennent réellement nécessaires quand le contenu vient de la base et que les

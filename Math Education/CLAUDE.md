@@ -36,7 +36,7 @@ MATH EDUCATION est une application web d'apprentissage adaptatif des mathématiq
 - **Cours particuliers : 20€ / 1h30**, réservables via un calendrier de disponibilités professeurs, max **3 élèves par cours**. Pendant le cours, le professeur voit le DAG de chaque élève et reçoit des suggestions d'exercices et de cartes mentales.
 - Abonnement professeur : à définir (ne pas cumuler avec la commission cours).
 
-**Où en est la monétisation :** nulle part, et c'est voulu. La plateforme est gratuite pendant la bêta. L'écran `/abonnement` informe du tarif à venir sans rien encaisser. Stripe est en itération 2. **Ne pas activer de paiement avant que la correction des réponses soit passée côté serveur** (sprint 3) : aujourd'hui un élève connecté peut lire toutes les réponses en base, donc falsifier sa progression, ce qui est acceptable pendant une bêta gratuite et pas pour un service payant.
+**Où en est la monétisation :** nulle part, et c'est voulu. La plateforme est gratuite pendant la bêta. L'écran `/abonnement` informe du tarif à venir sans rien encaisser. Stripe est en itération 2. **Ne pas activer de paiement avant que la progression soit écrite côté serveur.** Depuis le 4 octobre 2026, la correction est côté serveur et l'élève ne lit plus les réponses ; mais c'est encore le navigateur qui écrit la progression (`skill_progress`), donc un élève déterminé peut la falsifier. Acceptable pendant une bêta gratuite, pas pour un service payant (§13).
 
 ---
 
@@ -107,7 +107,7 @@ MATH EDUCATION est une **application** (comptes, base de données, logique méti
 | Base + Auth | Supabase : Postgres, **auth Google + email**, RLS | **Branché et validé**, recette navigateur le 3 octobre 2026 (§8.1) |
 | Tests | Vitest (moteur, repository), Docker + Postgres jetable (migrations et RLS) | En place |
 | Contenu pédagogique | JSON versionnés dans Git (la source), publiés en base par `scripts/publier.py`, lus par l'application depuis la base | **En place** depuis le 4 octobre 2026 : `src/content/chargement.ts`, cache local par publication ; les JSON locaux ne servent plus qu'au mode démonstration et aux tests |
-| Logique serveur | Supabase Edge Functions (Deno) : correction des réponses, emails, cron | **Sprints 2b et 3** |
+| Logique serveur | Supabase Edge Functions (Deno) : correction des réponses, emails, cron | **`corriger` en place** (4 octobre 2026, `supabase/functions/`) ; emails au sprint 2b |
 | Emails transactionnels | **Resend**, gratuit jusqu'à 3 000 emails/mois | **Sprint 2b** |
 | État serveur | **TanStack Query** | **Sprint 3**, pas avant |
 | Hébergement | GitHub → Netlify, domaine OVH (~12€/an) | **Sprint 4** |
@@ -211,7 +211,7 @@ Le schéma complet et commenté vit dans **`Math_Edu_Application/supabase/migrat
 | `parent_links` | Rattachement parent/enfant et jeton de consentement. **`token_hash` seulement**, jamais le jeton en clair : un accès en lecture suffirait sinon à confirmer le consentement à la place du parent. |
 | `slots_disponibles` (vue) | Créneaux avec `places_prises` calculé. **C'est cette vue que lit l'app**, pas la table. |
 | `content_skills` / `content_exercises` / `content_mindmaps` | Le contenu publié depuis Git (migration 0005, 4 octobre 2026). Lecture pour tout compte connecté, aucune écriture client. Les propositions de QCM y sont **sans misconception**. |
-| `content_exercise_keys` | Réponse, corrigé et misconceptions, séparés des énoncés. **Lecture transitoire** par les comptes connectés, tant que la correction se fait dans le navigateur ; à retirer avec la correction côté serveur. |
+| `content_exercise_keys` | Réponse, corrigé et misconceptions, séparés des énoncés. **Illisible pour les élèves** depuis la migration 0006 : seule l'Edge Function `corriger` la lit (clé `service_role`), et ne rend la clé d'un exercice qu'avec la correction d'une réponse. |
 | `content_publications` | Une ligne par publication : date, commit Git source, comptes. |
 | `publier_contenu(contenu, commit)` | Seule écriture du contenu : réservée à `service_role`, remplace tout en une transaction. Appelée par `scripts/publier.py`, qui valide d'abord et refuse les modifications non commitées. |
 
@@ -298,7 +298,7 @@ Dans l'ordre :
 5. **Sprint 2b** : migration 0005 (jeton de consentement haché, expiration 7 jours), Edge Function `send-parent-consent` avec Resend en mode test, page `/consentement/:token`, boutons « Renvoyer » avec limitation de débit.
 6. **Nettoyage** des comptes de test (prof, `+eleve1` à `+eleve3`, comptes des testeurs) et du créneau du 4 octobre, après re-test du constat n°2.
 
-**Proposition de recentrage, à valider :** environ 32h de dev d'ici fin novembre ne couvrent pas les sprints 2b à 6. Avant la bêta gratuite, ne garder que 2b (obligation légale), 4 (mise en ligne) et un 6 réduit (`/security-review` et un parcours Playwright). Le sprint 3 (réponses lisibles, acceptable tant que c'est gratuit) et le sprint 5 (export et suppression RGPD traitables à la main pendant la bêta) passent entre la bêta et janvier.
+**Proposition de recentrage, à valider :** environ 32h de dev d'ici fin novembre ne couvrent pas les sprints 2b à 6. Avant la bêta gratuite, ne garder que 2b (obligation légale), 4 (mise en ligne) et un 6 réduit (`/security-review` et un parcours Playwright). Le reste du sprint 3 (progression écrite par le navigateur, acceptable tant que c'est gratuit) et le sprint 5 (export et suppression RGPD traitables à la main pendant la bêta) passent entre la bêta et janvier.
 
 ---
 
@@ -357,7 +357,18 @@ Cible : **Node 24 LTS**, pas 22. Node 22 finit en avril 2027, Node 24 tient jusq
 
 **Si Node 18 doit être conservé** pour un autre projet : `winget install CoreyButler.NVMforWindows`. À savoir, contrairement à `nvm` sous Linux et macOS, **`nvm-windows` ne lit pas `.nvmrc`**, il faut taper `nvm use 24`.
 
-### 10.4 Les quatre niveaux de vérification
+### 10.4 Déployer une Edge Function
+
+Le code vit dans `supabase/functions/` : `corriger/index.ts` (point d'entrée) et `_shared/correction.ts`, **le même fichier que l'application importe** (`src/lib/exercise.ts` le réexpose). Une règle de correction modifiée doit donc être redéployée, sinon le serveur et le mode démonstration divergent.
+
+- Par Claude : outil MCP `deploy_edge_function`, nom `corriger`, point d'entrée `corriger/index.ts`, fichiers `corriger/index.ts` et `_shared/correction.ts`, `verify_jwt` à true.
+- À la main : `npx supabase login`, puis `npx supabase functions deploy corriger --project-ref crazwnfjyzaxirbmwnkn` depuis `Math_Edu_Application/`.
+
+Contrôle sans compte : un appel avec la clé anonyme doit répondre 401 « Connexion requise ». `SUPABASE_URL` et `SUPABASE_SERVICE_ROLE_KEY` sont fournies par Supabase à l'exécution, rien à configurer.
+
+**Ordre à respecter** quand une migration retire un droit dont l'ancienne version de l'application avait besoin (cas de la 0006) : fonction déployée d'abord, application ensuite, migration en dernier.
+
+### 10.5 Les quatre niveaux de vérification
 
 Du plus isolé au plus réel. Comprendre ce que chacun prouve évite de croire qu'on a testé ce qu'on n'a pas testé.
 
@@ -419,7 +430,7 @@ Aucun des quatre ne teste le navigateur. Avant tout commit : `npm test && npm ru
 
 **react-router, 2 vulnérabilités modérées.** Open redirect via un antislash dans `<Link>` et `useNavigate`, et injection de constructeur dans l'hydratation SSR. La branche 6.x **n'a aucun correctif** : seule la 7.18.4 corrige, et c'est une montée majeure. Le cas qui concernait l'application, la redirection après connexion, est couvert par `lib/redirect.ts` et ses tests. Migration à décider au sprint 4.
 
-**Réponses des exercices lisibles par un élève connecté.** Depuis la phase 2 (4 octobre 2026), elles ne sont plus dans le bundle d'une construction qui a les clés Supabase : `grep -l '"solution_steps"' dist/assets/*.js` ne doit rien trouver. Mais tout compte connecté peut encore lire `content_exercise_keys` (politique transitoire de la migration 0005), et l'application les garde dans son cache local. Corrigé en phase 3 par la correction côté serveur, puis le retrait de cette politique.
+**Progression écrite par le navigateur.** Depuis la phase 3 (4 octobre 2026), les réponses ne sont plus ni dans le bundle (`grep -l '"solution_steps"' dist/assets/*.js` ne doit rien trouver), ni lisibles en base (migration 0006), ni dans le cache local (`racine.contenu.v2`, la v1 est effacée). La correction est faite par l'Edge Function `corriger`. **Reste :** c'est le client qui écrit `skill_progress`, `exercise_attempts` et `placement_results`, donc un élève qui manipule les requêtes peut se déclarer une compétence maîtrisée. Le corriger demande de déplacer `applyAttempt` dans la fonction et de retirer l'écriture directe de ces tables, et pour le positionnement de rejouer le test côté serveur. Indispensable avant un abonnement payant, pas avant la bêta gratuite.
 
 **Taille du contenu : levé le 4 octobre 2026.** Le chunk principal était monté à 133 ko gzippés (75 compétences, 396 exercices). Depuis la phase 2, l'application lit le contenu dans la base (`src/content/chargement.ts`), une fois par appareil et par publication, et le chunk principal est à **24 ko gzippés**. Reste à surveiller : le cache est dans le `localStorage` (environ 5 Mo) ; au-delà de quelques milliers d'exercices, il faudra le passer sur IndexedDB. Sans cache, l'application relit simplement tout à chaque chargement. Une nouvelle publication n'est vue qu'au rechargement de la page.
 
@@ -499,7 +510,7 @@ Le lint est réglé sur **zéro warning toléré**, c'est volontaire. Après tou
 |--------|--------|
 | **Erreurs mathématiques** dans le contenu généré (détruisent la confiance des parents) | Double validation systématique, 100 % sur les domaines pilotes, suivi du taux d'erreur, réponses numériques vérifiées par script. |
 | **RGPD & mineurs** (quasi tous les utilisateurs) | Consentement parental requis avant 15 ans, hébergement UE, minimisation, export et suppression, politique de confidentialité. **Aujourd'hui le consentement est impossible à obtenir faute d'emails : blocage réglementaire n°1, sprint 2b.** |
-| **Réponses des exercices lisibles par un élève connecté** | Plus dans le bundle depuis le 4 octobre 2026, mais encore lisibles en base par tout compte connecté. Correction côté serveur (phase 3), indispensable **avant** tout abonnement payant. |
+| **Progression falsifiable par un élève** | Réponses protégées depuis le 4 octobre 2026 (correction côté serveur). La progression, elle, est encore écrite par le navigateur : à passer côté serveur **avant** tout abonnement payant. |
 | **Paiement & données sensibles** | Review par un développeur expérimenté avant activation Stripe, non négociable. |
 | **Effet tunnel** (414 compétences × exos × cartes = jamais fini) | Domaines prioritaires seulement (A, C en pilote, puis B, E, F) ; les autres affichent « bientôt disponible ». Mieux vaut 5 domaines excellents que 15 médiocres. |
 | **Dérive du périmètre** | Rien de l'itération 2 ne démarre avant que de vrais élèves utilisent l'app. |

@@ -4,6 +4,8 @@
 // une session.
 
 import { installerContenu } from '@/content'
-import { chargerContenuLocal } from '@/content/chargement'
+import { chargerContenuLocal, versContenuPublic } from '@/content/chargement'
 
-installerContenu(await chargerContenuLocal())
+// Version publique, comme en production : un test qui aurait besoin d'une
+// reponse doit la demander a la banque locale complete (chargerContenuLocal).
+installerContenu(versContenuPublic(await chargerContenuLocal()))

@@ -10,17 +10,20 @@
 // tableaux exportes sont des conteneurs remplis sur place, pour que les
 // modules qui les ont importes voient le contenu une fois installe.
 //
+// Depuis la phase 3, les exercices installes ici sont des `PublicExercise` :
+// sans reponse ni corrige. La correction passe par `repository.corriger`.
+//
 // Regle qui en decoule : aucun module ne doit lire le contenu au chargement
 // (au niveau du fichier). Seulement dans une fonction, appelee une fois la
 // session ouverte. Le repository garantit que le contenu est installe avant de
 // rendre une session.
 
-import type { Exercise, Mindmap, SchoolLevel, Skill } from '@/types/content'
+import type { Mindmap, PublicExercise, SchoolLevel, Skill } from '@/types/content'
 import { SCHOOL_LEVELS } from '@/types/content'
 
 export interface ContenuPedagogique {
   skills: Skill[]
-  exercises: Exercise[]
+  exercises: PublicExercise[]
   mindmaps: Mindmap[]
 }
 
@@ -31,13 +34,13 @@ export interface Domain {
 }
 
 export const skills: Skill[] = []
-export const exercises: Exercise[] = []
+export const exercises: PublicExercise[] = []
 export const mindmaps: Mindmap[] = []
 /** Domaines reellement presents dans le contenu, dans l'ordre alphabetique. */
 export const domains: Domain[] = []
 
 const skillById = new Map<string, Skill>()
-const exerciseById = new Map<string, Exercise>()
+const exerciseById = new Map<string, PublicExercise>()
 const mindmapById = new Map<string, Mindmap>()
 /** Competences qui dependent d'une competence donnee (arcs sortants du DAG). */
 const dependentsBySkill = new Map<string, string[]>()
@@ -108,7 +111,7 @@ export function requireSkill(id: string): Skill {
   return skill
 }
 
-export function getExercise(id: string): Exercise | undefined {
+export function getExercise(id: string): PublicExercise | undefined {
   return exerciseById.get(id)
 }
 
@@ -117,11 +120,11 @@ export function getMindmap(id: string | null | undefined): Mindmap | undefined {
 }
 
 /** Exercices d'une competence, du plus simple au plus exigeant. */
-export function getExercisesForSkill(skillId: string): Exercise[] {
+export function getExercisesForSkill(skillId: string): PublicExercise[] {
   const order = { decouverte: 0, entrainement: 1, maitrise: 2 }
   const skill = skillById.get(skillId)
   const ids = skill?.exercise_ids ?? []
-  const fromDag = ids.map((id) => exerciseById.get(id)).filter((e): e is Exercise => Boolean(e))
+  const fromDag = ids.map((id) => exerciseById.get(id)).filter((e): e is PublicExercise => Boolean(e))
   // Filet de securite : si le DAG ne reference pas encore ses exercices, on
   // retombe sur le lien inverse porte par l'exercice lui-meme.
   const list = fromDag.length > 0 ? fromDag : exercises.filter((e) => e.skill_id === skillId)

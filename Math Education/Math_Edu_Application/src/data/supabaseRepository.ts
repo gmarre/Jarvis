@@ -14,6 +14,7 @@ import type { PostgrestError } from '@supabase/supabase-js'
 
 import { requireSupabase } from '@/lib/supabase'
 import { emptyProgress, type ProgressMap } from '@/lib/dag'
+import type { Correction } from '@/lib/exercise'
 import { skills } from '@/content'
 import { assurerContenu, chargerContenuSupabase } from '@/content/chargement'
 import {
@@ -327,6 +328,20 @@ export const supabaseRepository: DataRepository = {
 
     if (error) throw erreur('Completion du profil', error)
     return versProfil(data as LigneProfil)
+  },
+
+  async corriger(exerciseId, reponse) {
+    const db = requireSupabase()
+    const { data, error } = await db.functions.invoke<Correction>('corriger', {
+      body: { exercise_id: exerciseId, reponse },
+    })
+    if (error || !data) {
+      throw new RepositoryError(
+        "La correction n'a pas pu se faire. Vérifie ta connexion et valide à nouveau.",
+        error ?? undefined,
+      )
+    }
+    return data
   },
 
   async updateProfile(patch) {

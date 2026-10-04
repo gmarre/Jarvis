@@ -102,6 +102,30 @@ export interface Exercise {
   programme_ref: string | null
 }
 
+/**
+ * Ce que l'application recoit d'un exercice : tout ce qui s'affiche AVANT la
+ * reponse. Ni reponse, ni corrige, ni misconception (elles trahiraient la bonne
+ * proposition d'un QCM) : depuis la phase 3, c'est le serveur qui corrige et
+ * renvoie ces elements apres coup. Miroir de la table content_exercises.
+ */
+export interface PublicExercise
+  extends Omit<Exercise, 'answer' | 'solution_steps' | 'choices'> {
+  choices?: { key: string; text: string }[]
+  /** L'unite s'affiche a cote du champ de saisie, avant la reponse. */
+  answer_unit: string | null
+}
+
+/** Retire d'un exercice complet tout ce que l'eleve ne doit pas voir avant de repondre. */
+export function toPublicExercise(exercise: Exercise): PublicExercise {
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
+  const { answer, solution_steps, choices, ...reste } = exercise
+  return {
+    ...reste,
+    ...(choices ? { choices: choices.map(({ key, text }) => ({ key, text })) } : {}),
+    answer_unit: answer.unit ?? null,
+  }
+}
+
 export interface ExercisesBank {
   metadata: {
     version: string
