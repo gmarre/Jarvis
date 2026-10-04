@@ -210,7 +210,10 @@ Le schéma complet et commenté vit dans **`Math_Edu_Application/supabase/migrat
 | `bookings` | Réservations, `unique (slot_id, eleve_id)`. La capacité est garantie par un trigger avec verrou de ligne. |
 | `parent_links` | Rattachement parent/enfant et jeton de consentement. **`token_hash` seulement**, jamais le jeton en clair : un accès en lecture suffirait sinon à confirmer le consentement à la place du parent. |
 | `slots_disponibles` (vue) | Créneaux avec `places_prises` calculé. **C'est cette vue que lit l'app**, pas la table. |
-| `content_skills` / `content_exercises` / `content_mindmaps` | Miroir des JSON, **à créer au sprint 3**. |
+| `content_skills` / `content_exercises` / `content_mindmaps` | Le contenu publié depuis Git (migration 0005, 4 octobre 2026). Lecture pour tout compte connecté, aucune écriture client. Les propositions de QCM y sont **sans misconception**. |
+| `content_exercise_keys` | Réponse, corrigé et misconceptions, séparés des énoncés. **Lecture transitoire** par les comptes connectés, tant que la correction se fait dans le navigateur ; à retirer avec la correction côté serveur. |
+| `content_publications` | Une ligne par publication : date, commit Git source, comptes. |
+| `publier_contenu(contenu, commit)` | Seule écriture du contenu : réservée à `service_role`, remplace tout en une transaction. Appelée par `scripts/publier.py`, qui valide d'abord et refuse les modifications non commitées. |
 
 ### 7.2 Les fonctions d'autorisation
 
@@ -361,7 +364,7 @@ Du plus isolé au plus réel. Comprendre ce que chacun prouve évite de croire q
 | Commande | Ce qu'elle prouve | Ce qu'elle ne prouve pas |
 |----------|-------------------|--------------------------|
 | `npm test` | Le moteur et le repository sont corrects | Rien sur Supabase, elle n'y touche pas |
-| `npm run test:sql` | Le SQL et les politiques sont corrects (Docker) | Pas qu'ils sont appliqués sur le vrai projet |
+| `npm run test:sql` | Le SQL et les politiques sont corrects (Docker). **Sous Windows, lancer `bash supabase/tests/run.sh` depuis Git Bash** : `npm` y appelle le bash de WSL, qui ne voit pas Docker Desktop. | Pas qu'ils sont appliqués sur le vrai projet |
 | `npm run check:supabase` | Le projet réel répond, les tables sont là, l'anonyme est bloqué | Rien sur les triggers |
 | `npm run check:db` | Triggers, RLS, escalade de privilège, capacité, sur le vrai projet | **Rien sur l'interface** |
 
@@ -418,7 +421,9 @@ Aucun des quatre ne teste le navigateur. Avant tout commit : `npm test && npm ru
 
 **Réponses des exercices dans le bundle.** Vérifiable : `grep -o '"value":[0-9]*' dist/assets/index-*.js`. Corrigé au sprint 3 par la correction côté serveur.
 
-**Mur de taille du contenu.** Les 3 JSON sont importés statiquement, donc dans le chunk principal. À la cible de 414 compétences et 5 exercices par niveau, cela ferait de l'ordre de **8 Mo de JSON dans le bundle**. Cassé au sprint 3 par le passage en base. **Déjà sensible :** le chunk principal est passé de 60 ko gzippés à 95 ko (56 compétences, 282 exercices, 3 octobre 2026), puis à **133 ko** (75 compétences, 396 exercices, 4 octobre 2026). Chaque étape du plan de contenu l'alourdit : la publication en base n'attend plus.
+**Mur de taille du contenu.** Les 3 JSON sont importés statiquement, donc dans le chunk principal. À la cible de 414 compétences et 5 exercices par niveau, cela ferait de l'ordre de **8 Mo de JSON dans le bundle**. Cassé au sprint 3 par le passage en base. **Déjà sensible :** le chunk principal est passé de 60 ko gzippés à 95 ko (56 compétences, 282 exercices, 3 octobre 2026), puis à **133 ko** (75 compétences, 396 exercices, 4 octobre 2026). Chaque étape du plan de contenu l'alourdit : la publication en base n'attend plus. **Phase 1 faite le 4 octobre 2026** (contenu publié en base, migration 0005) ; reste la phase 2, l'application qui le lit depuis la base au lieu du bundle.
+
+**Avertissements de sécurité Supabase préexistants** (advisor du 4 octobre 2026, migrations 0001 à 0004) : neuf fonctions `security definer` sont exécutables par `anon` (`est_prof_de`, `peut_lire_eleve`, `role_actuel`, `nb_places_prises`, `est_parent_de`, et des fonctions de trigger) ; `nom_court_par_defaut` n'a pas de `search_path` fixé ; la protection contre les mots de passe compromis est désactivée (réglage du tableau de bord). Les fonctions d'autorisation doivent rester exécutables par `authenticated`, puisque les politiques RLS les appellent sous le rôle du lecteur : seul `anon` est à retirer. Migration dédiée à faire avant le `/security-review` du sprint 6.
 
 **Poids du bundle.** `supabase-js` a fait passer le premier chargement de 92 à **148 ko gzippés**, dont un client realtime inutilisé. Les chunks vendor sont séparés pour rester en cache entre deux déploiements, ce qui aide les visites suivantes mais pas la première. Le réduire demanderait d'importer `@supabase/auth-js` et `@supabase/postgrest-js` séparément, au prix d'une API moins standard. À trancher au sprint 4 avec la cible Lighthouse.
 

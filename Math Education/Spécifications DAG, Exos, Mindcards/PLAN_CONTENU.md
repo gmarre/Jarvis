@@ -64,7 +64,9 @@ domaines à moitié faits.
    relecteur d'origine. Chacun garde ainsi le contexte de son lot.
    puis `python scripts/contenu.py export-app` (l'application reçoit trois
    fichiers assemblés), et `npm test && npm run lint && npm run build` dans
-   l'application.
+   l'application. Une fois l'étape **commitée**, `python scripts/publier.py
+   --apply` publie le contenu dans la base Supabase (il refuse un contenu
+   invalide ou non commité, et recompte ce que la base contient).
 
    Le contenu est découpé : `content/dag/<domaine>.json`,
    `content/exercices/<domaine>/<compétence>.json`, `content/cartes/<carte>.json`.

@@ -90,7 +90,8 @@ personne ne peut ouvrir l'espace d'un autre en tapant l'URL.
 | `npm run dev` | Serveur de développement (port 5173) | Au quotidien |
 | `npm test` | Tests unitaires du moteur et du repository | Avant de committer |
 | `npm run test:watch` | Relance les tests à chaque sauvegarde | Pendant qu'on code le moteur |
-| `npm run test:sql` | Rejoue **toutes** les migrations et les politiques RLS dans un Postgres jetable | Après toute modif de `supabase/migrations/` |
+| `npm run test:sql` | Rejoue **toutes** les migrations et les politiques RLS dans un Postgres jetable. Sous Windows : `bash supabase/tests/run.sh` depuis Git Bash (le bash de WSL ne voit pas Docker Desktop) | Après toute modif de `supabase/migrations/` |
+| `python ../scripts/publier.py --apply` | Publie le contenu (Git) dans la base Supabase, après validation, en une transaction | Après chaque étape de contenu commitée |
 | `npm run check:supabase` | Vérifie que le projet Supabase réel répond et que les tables sont là | En cas de doute sur la base |
 | `npm run check:db` | Triggers, RLS, escalade de privilège et capacité, contre le **vrai** projet | Après une migration appliquée |
 | `npm run build` | Vérifie les types puis fabrique `dist/` | Avant de déployer |
