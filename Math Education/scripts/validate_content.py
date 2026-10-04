@@ -430,7 +430,67 @@ NOTATIONS = {
     # Dans une formule KaTeX, la virgule s'ecrit {,} (sinon « 3, 5 ») : les deux
     # ecritures sont reconnues.
     "D016": (re.compile(r"\d(?:,|\{,\})\d"), "la virgule decimale"),
+    # Le symbole % est introduit en 6e avec la definition du pourcentage (E032,
+    # etape 3). Dans une formule KaTeX il s'ecrit \% (sinon il ouvre un
+    # commentaire) : le motif reconnait les deux ecritures.
+    "E032": (re.compile(r"%"), "le symbole %"),
 }
+
+
+# ---------------------------------------------------------------------------
+#  Vocabulaire de la proportionnalite, selon la classe
+# ---------------------------------------------------------------------------
+# Le programme est explicite (etape 3) : au cours moyen, « ni l'utilisation du
+# coefficient de proportionnalite, ni le recours au produit en croix ne sont
+# enseignes » et « les eleves n'utilisent pas de tableaux de proportionnalite » ;
+# en 6e, « la technique du produit en croix n'est pas enseignee ». Le
+# coefficient arrive en 5e. Un exercice ou une carte qui emploie ces mots trop
+# tot enseigne une procedure que l'eleve n'a pas.
+# (motif, libelle, premiere classe ou il est permis ; None = jamais au college)
+
+VOCABULAIRE_PROPORTIONNALITE = [
+    (re.compile(r"produits?\s+en\s+croix", re.I), "« produit en croix »", None),
+    (re.compile(r"coefficient", re.I), "« coefficient »", "5e"),
+    (re.compile(r"tableaux?\s+de\s+proportionnalit", re.I), "« tableau de proportionnalité »", "6e"),
+]
+
+CURSUS = ["CP", "CE1", "CE2", "CM1", "CM2", "6e", "5e", "4e", "3e", "2nde", "1ere", "Terminale"]
+
+
+def _avant(niveau: str, premier: str | None) -> bool:
+    """Vrai si `niveau` precede la classe ou le mot devient permis."""
+    if premier is None:
+        return niveau in CURSUS[: CURSUS.index("3e") + 1]
+    if niveau not in CURSUS:
+        return False
+    return CURSUS.index(niveau) < CURSUS.index(premier)
+
+
+def check_vocabulaire_proportionnalite(dag: dict, exercises: dict | None, mindmaps: dict | None) -> None:
+    niveau = {s["id"]: s["school_level"] for s in dag["skills"]}
+    for ex in (exercises or {}).get("exercises", []):
+        nv = niveau.get(ex["skill_id"], "")
+        zones = [("enonce", ex["statement"])]
+        zones += [(f"proposition {c['key']}", c["text"]) for c in ex.get("choices", [])]
+        zones += [(f"corrige etape {i}", t) for i, t in enumerate(ex["solution_steps"], 1)]
+        if ex.get("hint"):
+            zones.append(("indice", ex["hint"]))
+        for motif, libelle, premier in VOCABULAIRE_PROPORTIONNALITE:
+            if not _avant(nv, premier):
+                continue
+            touchees = [nom for nom, z in zones if motif.search(z)]
+            if touchees:
+                err(f"Vocabulaire : {ex['id']} ({nv}) emploie {libelle} dans {', '.join(touchees)} ; "
+                    f"{'jamais enseigne au college' if premier is None else 'permis a partir de la ' + premier}")
+    for mm in (mindmaps or {}).get("mindmaps", []):
+        # Une carte est lue par l'eleve de sa plus petite classe.
+        classes = [c for c in mm.get("school_levels", []) if c in CURSUS]
+        if not classes:
+            continue
+        nv = min(classes, key=CURSUS.index)
+        for motif, libelle, premier in VOCABULAIRE_PROPORTIONNALITE:
+            if _avant(nv, premier) and motif.search(mm.get("markdown", "")):
+                err(f"Vocabulaire : carte {mm['id']} (des la {nv}) emploie {libelle}")
 
 
 def check_notations(dag: dict, exercises: dict) -> None:
@@ -833,6 +893,7 @@ def main() -> int:
 
         err_avant = len(errors)
         check_notations(dag, exercises)
+        check_vocabulaire_proportionnalite(dag, exercises, mindmaps)
         print(f"  notations enseignees  {'OK' if len(errors) == err_avant else 'ANOMALIES'}")
 
         err_avant = len(errors)
