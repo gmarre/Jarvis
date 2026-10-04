@@ -393,8 +393,10 @@ La recette consiste à parcourir le contenu dans l'application, comme un élève
 2. **L'inscrire comme relecteur**, dans le SQL Editor :
    ```sql
    insert into content_reviewers (user_id)
-   select id from auth.users where email = 'adresse+recette@exemple.fr';
+   select id from auth.users where email = 'adresse+recette@exemple.fr'
+   on conflict (user_id) do nothing;
    ```
+   Rejouable : relancée sur un compte déjà inscrit, elle ne fait rien.
    Le retirer : `delete from content_reviewers where user_id = (select id from auth.users where email = '...');`
 3. **Dans l'application**, une entrée « Recette » apparaît dans la navigation : la page `/recette` liste, compétence par compétence, ce qui reste à juger. Chaque écran d'exercice et de carte porte un panneau « Accepter / Invalider… ». Un refus exige un commentaire : c'est la consigne que liront les agents. Un verdict peut être changé tant qu'on veut.
 4. **Reporter les verdicts dans le contenu** : `python scripts/recette.py` (simulation), puis `--apply`. Accepté devient `valide`, invalidé redevient `brouillon` et part dans `Spécifications DAG, Exos, Mindcards/RECETTE.md` avec le commentaire. Puis commit, et `python scripts/publier.py --apply`.
