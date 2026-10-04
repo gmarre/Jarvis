@@ -1,0 +1,182 @@
+[
+  {
+    "id": "EX-D017-D-01",
+    "skill_id": "D017",
+    "level": "decouverte",
+    "type": "numerique",
+    "statement": "Un stylo coûte 4,35 € et une gomme 2,52 €.\n\nPose l'addition, virgule sous virgule, et calcule le prix total.",
+    "image": null,
+    "answer": {
+      "value": 6.87,
+      "unit": "€",
+      "accepted": [
+        "6,87 €",
+        "6,87 euros"
+      ]
+    },
+    "solution_steps": [
+      "On écrit 2,52 sous 4,35 en alignant les virgules : centimes sous centimes, dizaines de centimes sous dizaines de centimes, euros sous euros.",
+      "Centimes : $5 + 2 = 7$. On écrit 7.",
+      "Dizaines de centimes : $3 + 5 = 8$. On écrit 8.",
+      "On écrit la virgule du résultat sous les autres virgules.",
+      "Euros : $4 + 2 = 6$. On écrit 6. Le prix total est **6,87 €**."
+    ],
+    "hint": "Commence par la colonne des centimes, tout à droite.",
+    "estimated_duration_s": 60,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 2, CE2 : poser et effectuer des additions de montants en euro."
+  },
+  {
+    "id": "EX-D017-D-02",
+    "skill_id": "D017",
+    "level": "decouverte",
+    "type": "qcm",
+    "statement": "Pose et calcule la somme de 12,75 € et de 3,40 €.",
+    "image": null,
+    "choices": [
+      {
+        "key": "a",
+        "text": "15,15 €",
+        "misconception": "L'élève oublie la retenue : $7 + 4 = 11$ dizaines de centimes, soit 1 € et 1 dizaine de centimes. Il écrit 1 mais n'ajoute pas l'euro retenu dans la colonne des euros."
+      },
+      {
+        "key": "b",
+        "text": "15,115 €",
+        "misconception": "L'élève additionne à part les euros ($12 + 3 = 15$) et les centimes ($75 + 40 = 115$), puis colle les deux. Or 115 centimes, c'est 1 € et 15 centimes : l'euro doit passer du côté des euros."
+      },
+      {
+        "key": "c",
+        "text": "16,15 €",
+        "misconception": null
+      }
+    ],
+    "answer": {
+      "value": "c"
+    },
+    "solution_steps": [
+      "On pose 3,40 sous 12,75, virgule sous virgule.",
+      "Centimes : $5 + 0 = 5$. On écrit 5.",
+      "Dizaines de centimes : $7 + 4 = 11$. 11 dizaines de centimes, c'est 110 centimes, soit 1 € et 1 dizaine de centimes. On écrit 1 et on retient 1 €, noté en petit en haut de la colonne des unités d'euros.",
+      "On écrit la virgule. Unités d'euros : $1 + 2 + 3 = 6$. Dizaines d'euros : on recopie 1.",
+      "$12{,}75 + 3{,}40 = 16{,}15$ : la bonne réponse est **16,15 €**."
+    ],
+    "hint": "Que fais-tu quand la colonne des dizaines de centimes dépasse 9 ?",
+    "estimated_duration_s": 60,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 2, CE2 : les techniques posées rencontrées au CE1 pour l'addition et la soustraction des nombres entiers sont étendues au CE2 aux montants en euro utilisant l'écriture à virgule."
+  },
+  {
+    "id": "EX-D017-E-01",
+    "skill_id": "D017",
+    "level": "entrainement",
+    "type": "numerique",
+    "statement": "Hugo a 25,30 €. Il achète une BD à 13,85 €.\n\nPose la soustraction : combien d'argent lui reste-t-il ?",
+    "image": null,
+    "answer": {
+      "value": 11.45,
+      "unit": "€",
+      "accepted": [
+        "11,45 €",
+        "11,45 euros"
+      ]
+    },
+    "solution_steps": [
+      "On enlève le prix de la BD à l'argent d'Hugo : on pose 13,85 sous 25,30, virgule sous virgule.",
+      "Centimes : on ne peut pas enlever 5 à 0. On casse une des 3 dizaines de centimes : barre le 3, écris 2 au-dessus, et écris un petit 1 devant le 0. $10 - 5 = 5$.",
+      "Dizaines de centimes : il en reste 2, on ne peut pas enlever 8. On casse un des 5 euros : 1 €, c'est 10 dizaines de centimes. Barre le 5, écris 4 au-dessus, et écris un petit 1 devant le 2. $12 - 8 = 4$.",
+      "On écrit la virgule. Unités d'euros : $4 - 3 = 1$. Dizaines d'euros : $2 - 1 = 1$.",
+      "Il reste **11,45 €** à Hugo. On vérifie : $11{,}45 + 13{,}85 = 25{,}30$. Si ta classe utilise une autre méthode de soustraction, tu dois trouver le même résultat."
+    ],
+    "hint": "Aux centimes, il faut casser une dizaine de centimes. Aux dizaines de centimes, il faut casser un euro.",
+    "estimated_duration_s": 90,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 2, CE2 : poser et effectuer des soustractions de montants en euro."
+  },
+  {
+    "id": "EX-D017-E-02",
+    "skill_id": "D017",
+    "level": "entrainement",
+    "type": "vrai_faux",
+    "statement": "Nina doit payer 24,60 €, puis 15 €. Elle pose l'addition et trouve 24,75 €.\n\nA-t-elle raison ?",
+    "image": null,
+    "answer": {
+      "value": false
+    },
+    "solution_steps": [
+      "15 € n'a pas de centimes : 15 € s'écrit aussi 15,00 €. Son 5 compte des euros, pas des centimes.",
+      "Nina a aligné 15 à droite, sous le 60 : elle a ajouté 15 centimes au lieu de 15 euros.",
+      "On aligne les virgules : 15,00 sous 24,60. Centimes : $0 + 0 = 0$. Dizaines de centimes : $6 + 0 = 6$. Unités d'euros : $4 + 5 = 9$. Dizaines d'euros : $2 + 1 = 3$.",
+      "$24{,}60 + 15{,}00 = 39{,}60$ : Nina a **tort**. Payer 15 € de plus ne peut pas ajouter seulement 15 centimes."
+    ],
+    "hint": "Le 5 de 15 € compte-t-il des euros ou des centimes ? Où le places-tu ?",
+    "estimated_duration_s": 60,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 2, CE2 : poser et effectuer des additions de montants en euro ; l'élève sait poser et effectuer des additions pour des calculs comme 43,45 € + 68 €."
+  },
+  {
+    "id": "EX-D017-M-01",
+    "skill_id": "D017",
+    "level": "maitrise",
+    "type": "numerique",
+    "statement": "Paul achète des fraises à 3,75 € et du pain à 1,40 €. Il paie avec un billet de 10 €.\n\nCombien la marchande lui rend-elle ?",
+    "image": null,
+    "answer": {
+      "value": 4.85,
+      "unit": "€",
+      "accepted": [
+        "4,85 €",
+        "4,85 euros"
+      ]
+    },
+    "solution_steps": [
+      "Première étape, le prix total : on pose 1,40 sous 3,75, virgule sous virgule.",
+      "Centimes : $5 + 0 = 5$. Dizaines de centimes : $7 + 4 = 11$, on écrit 1 et on retient 1 €. Euros : $1 + 3 + 1 = 5$. Paul doit payer 5,15 €.",
+      "Deuxième étape, la monnaie rendue : on enlève 5,15 € aux 10 €. On écrit 10 € sous la forme 10,00 € pour avoir des centimes, puis on pose 5,15 dessous, virgule sous virgule.",
+      "Centimes : on ne peut pas enlever 5 à 0, et il n'y a ni dizaine de centimes ni unité d'euro à casser. On casse d'abord la dizaine d'euros : barre le 1 et écris 0 au-dessus, barre le 0 des unités d'euros et écris 10 au-dessus. On casse un de ces 10 euros, car 1 € = 10 dizaines de centimes : barre le 10 et écris 9 au-dessus, barre le 0 des dizaines de centimes et écris 10 au-dessus. On casse enfin une de ces 10 dizaines de centimes : barre le 10, écris 9 au-dessus, et écris un petit 1 devant le 0 des centimes.",
+      "Centimes : $10 - 5 = 5$. Dizaines de centimes : $9 - 1 = 8$. Unités d'euros : $9 - 5 = 4$.",
+      "La marchande rend **4,85 €**. On vérifie : $4{,}85 + 5{,}15 = 10{,}00$. On peut aussi rendre la monnaie en complétant : de 5,15 € à 6 €, 85 centimes ; de 6 € à 10 €, 4 € ; en tout 4,85 €. Si ta classe utilise une autre méthode de soustraction, tu dois trouver le même résultat."
+    ],
+    "hint": "Calcule d'abord le prix total, puis ce qui reste du billet de 10 €.",
+    "estimated_duration_s": 150,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 2, CE2 : simuler des achats en manipulant des pièces et des billets fictifs. Rendre la monnaie."
+  },
+  {
+    "id": "EX-D017-M-02",
+    "skill_id": "D017",
+    "level": "maitrise",
+    "type": "qcm",
+    "statement": "Théo pose $32{,}40 - 8{,}75$ (en euros) et trouve 36,35 €.\n\nQuelle est son erreur ?",
+    "image": null,
+    "choices": [
+      {
+        "key": "a",
+        "text": "Il a additionné les deux montants au lieu de les soustraire.",
+        "misconception": "L'élève voit un résultat trop grand et pense à une addition, sans vérifier : $32{,}40 + 8{,}75 = 41{,}15$, pas 36,35."
+      },
+      {
+        "key": "b",
+        "text": "Dans chaque colonne, il a enlevé le petit chiffre du grand, même quand le chiffre du haut était le plus petit.",
+        "misconception": null
+      },
+      {
+        "key": "c",
+        "text": "Il n'a pas aligné les virgules.",
+        "misconception": "L'élève pense à l'erreur d'alignement, fréquente. Mais les deux montants ont deux chiffres de centimes : 8,75 tombe sous 32,40 chiffre sous chiffre, que l'on aligne les virgules ou les chiffres de droite."
+      }
+    ],
+    "answer": {
+      "value": "b"
+    },
+    "solution_steps": [
+      "Une soustraction ne peut pas donner plus que le nombre de départ : 36,35 € est plus que 32,40 €. Théo s'est trompé.",
+      "Ses colonnes. Centimes : 0 en haut, 5 en bas ; il a écrit 5, comme pour $5 - 0$. Dizaines de centimes : 4 en haut, 7 en bas ; il a écrit 3, soit $7 - 4$. Unités d'euros : 2 en haut, 8 en bas ; il a écrit 6, soit $8 - 2$.",
+      "Quand le chiffre du haut est le plus petit, il faut casser une unité de la colonne de gauche : une dizaine de centimes, puis un euro, puis une dizaine d'euros.",
+      "Le bon calcul : $32{,}40 - 8{,}75 = 23{,}65$. On vérifie : $23{,}65 + 8{,}75 = 32{,}40$. La bonne réponse est **b**. Si ta classe utilise une autre méthode de soustraction, tu dois trouver le même résultat."
+    ],
+    "hint": "Une soustraction peut-elle donner plus que le nombre de départ ? Regarde ensuite chaque colonne.",
+    "estimated_duration_s": 120,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 2, CE2 : poser et effectuer des soustractions de montants en euro."
+  }
+]

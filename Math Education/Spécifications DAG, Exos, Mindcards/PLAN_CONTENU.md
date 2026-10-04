@@ -28,8 +28,8 @@ domaines à moitié faits.
 | 0 | A Numération, C Fractions (tranche pilote) | CP → 3e | Fait (v2.1, 35 compétences) |
 | 0 bis | B001, B005, B006 (calcul de base) | CP → CE2 | Fait le 3 octobre 2026 |
 | 1 | B Calcul numérique : opérations, calcul mental, division | CP → 6e | Fait le 3 octobre 2026 : 18 compétences, 108 exercices, 4 cartes (bilan dans `QUALITY.md`) |
-| **2** | **D Nombres décimaux** | CE2 → 6e | Prochaine |
-| 3 | E Proportionnalité et pourcentages | CM1 → 5e | À faire |
+| 2 | D Nombres décimaux | CE1 → 6e | Fait le 4 octobre 2026 : 19 compétences, 114 exercices, 4 cartes |
+| **3** | **E Proportionnalité et pourcentages** | CM1 → 5e | Prochaine |
 | 4 | Grandeurs et mesures, géométrie plane | CP → 6e | À faire |
 | 5+ | Statistiques, probabilités, algèbre, puissances | Cycle 4 | À faire |
 

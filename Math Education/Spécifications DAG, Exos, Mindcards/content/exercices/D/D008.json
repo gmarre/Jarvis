@@ -1,0 +1,186 @@
+[
+  {
+    "id": "EX-D008-D-01",
+    "skill_id": "D008",
+    "level": "decouverte",
+    "type": "numerique",
+    "statement": "Une randonnée fait 12,7 km.\n\nCombien de kilomètres entiers compte-t-elle ? Ce nombre est la partie entière de 12,7.",
+    "image": null,
+    "answer": {
+      "value": 12,
+      "accepted": [
+        "12 km"
+      ],
+      "unit": "km"
+    },
+    "solution_steps": [
+      "12,7, c'est 12 unités et 7 dixièmes : 12 km et 7 dixièmes de kilomètre.",
+      "Les 7 dixièmes ne font pas un kilomètre entier : il en faudrait 10.",
+      "$12 < 12{,}7 < 13$ : la partie entière est le plus petit des deux entiers de l'encadrement, **12**.",
+      "Rappel : la partie entière s'écrit avant la virgule ; le 7 est le chiffre des dixièmes."
+    ],
+    "hint": "Combien de dixièmes faut-il pour faire un kilomètre entier ?",
+    "estimated_duration_s": 45,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 3, CM1 : savoir donner la partie entière et l'arrondi à l'entier d'un nombre décimal."
+  },
+  {
+    "id": "EX-D008-D-02",
+    "skill_id": "D008",
+    "level": "decouverte",
+    "type": "qcm",
+    "statement": "Un sac pèse 5,8 kg : entre 5 kg et 6 kg.\n\nQuel est son arrondi à l'unité, c'est-à-dire l'entier le plus proche ?",
+    "image": null,
+    "choices": [
+      {
+        "key": "a",
+        "text": "5",
+        "misconception": "L'élève confond arrondi et partie entière : il garde le nombre écrit avant la virgule sans regarder s'il est plus près de 5 ou de 6."
+      },
+      {
+        "key": "b",
+        "text": "6",
+        "misconception": null
+      },
+      {
+        "key": "c",
+        "text": "5,5",
+        "misconception": "L'élève confond l'arrondi et le milieu de l'encadrement : il donne 5,5, le nombre qui sert à décider, au lieu de l'entier le plus proche."
+      }
+    ],
+    "answer": {
+      "value": "b"
+    },
+    "solution_steps": [
+      "5,8 est entre 5 et 6. Le milieu entre 5 et 6 est 5,5.",
+      "5,8 a 8 dixièmes, 5,5 en a 5 : $5{,}8 > 5{,}5$, donc 5,8 est après le milieu.",
+      "De 5 à 5,8, il y a 8 dixièmes ; de 5,8 à 6, il n'y en a que 2. 5,8 est plus proche de 6.",
+      "L'arrondi à l'unité est **6** : la bonne réponse est b. La partie entière, elle, vaut 5 : les deux ne sont pas toujours égales."
+    ],
+    "hint": "Combien de dixièmes séparent 5,8 de 5 ? Et de 6 ?",
+    "estimated_duration_s": 45,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 3, CM1 : savoir donner la partie entière et l'arrondi à l'entier d'un nombre décimal."
+  },
+  {
+    "id": "EX-D008-E-01",
+    "skill_id": "D008",
+    "level": "entrainement",
+    "type": "vrai_faux",
+    "statement": "Zoé dit : « L'arrondi à l'unité de 31,49 est 32, car 49 est plus grand que 5. »\n\nZoé a-t-elle raison ?",
+    "image": null,
+    "answer": {
+      "value": false
+    },
+    "solution_steps": [
+      "31,49 est entre 31 et 32. Le milieu est 31,5.",
+      "On compare 31,49 et 31,5 = 31,50 : 49 centièmes, c'est moins que 50 centièmes. Donc $31{,}49 < 31{,}5$ : 31,49 est avant le milieu.",
+      "Il est donc plus proche de 31 : l'arrondi à l'unité est 31.",
+      "L'erreur de Zoé : elle lit 49 comme un nombre entier. Pour arrondir à l'unité, c'est le chiffre des dixièmes, 4, qui compte : 4 dixièmes, c'est moins que la moitié d'une unité. Zoé a **tort**."
+    ],
+    "hint": "Où se trouve le milieu entre 31 et 32 ? 31,49 est-il avant ou après ?",
+    "estimated_duration_s": 75,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 3, CM1 : savoir donner la partie entière et l'arrondi à l'entier d'un nombre décimal."
+  },
+  {
+    "id": "EX-D008-E-02",
+    "skill_id": "D008",
+    "level": "entrainement",
+    "type": "qcm",
+    "statement": "Quelles sont la partie entière et l'arrondi à l'unité de 7,09 ?",
+    "image": null,
+    "choices": [
+      {
+        "key": "a",
+        "text": "partie entière 7, arrondi 8",
+        "misconception": "L'élève lit 09 comme 9, plus grand que 5, et arrondit vers le haut. Or le chiffre des dixièmes de 7,09 est 0."
+      },
+      {
+        "key": "b",
+        "text": "partie entière 7, arrondi 7,1",
+        "misconception": "L'élève arrondit au dixième au lieu de l'unité : 7,1 n'est pas un nombre entier."
+      },
+      {
+        "key": "c",
+        "text": "partie entière 7, arrondi 7",
+        "misconception": null
+      }
+    ],
+    "answer": {
+      "value": "c"
+    },
+    "solution_steps": [
+      "7,09, c'est 7 unités, 0 dixième et 9 centièmes. La partie entière est 7.",
+      "7,09 est entre 7 et 8, et le milieu est 7,5. Avec 0 dixième, 7,09 est avant le milieu, tout près de 7.",
+      "L'arrondi à l'unité est donc 7, comme la partie entière. La bonne réponse est c."
+    ],
+    "hint": "Quel est le chiffre des dixièmes de 7,09 ?",
+    "estimated_duration_s": 60,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 3, CM1 : savoir donner la partie entière et l'arrondi à l'entier d'un nombre décimal."
+  },
+  {
+    "id": "EX-D008-M-01",
+    "skill_id": "D008",
+    "level": "maitrise",
+    "type": "numerique",
+    "statement": "Un vélo coûte 199,60 €.\n\nArrondis ce prix à l'euro près, c'est-à-dire à l'unité.",
+    "image": null,
+    "answer": {
+      "value": 200,
+      "accepted": [
+        "200 €"
+      ],
+      "unit": "€"
+    },
+    "solution_steps": [
+      "199,60 € est entre 199 € et 200 €, deux entiers qui se suivent.",
+      "Le milieu est 199,50 €. Avec 6 dixièmes, 199,60 est après le milieu : $199{,}60 > 199{,}50$.",
+      "Le prix est plus proche de 200 € : il ne manque que 40 centimes pour y arriver.",
+      "L'arrondi à l'unité est l'entier qui suit 199 : **200 €**. Le chiffre des centaines change, ce qui surprend, mais 199 + 1 = 200."
+    ],
+    "hint": "199,60 € est-il plus près de 199 € ou de l'entier suivant ?",
+    "estimated_duration_s": 90,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 3, CM1 : savoir donner la partie entière et l'arrondi à l'entier d'un nombre décimal."
+  },
+  {
+    "id": "EX-D008-M-02",
+    "skill_id": "D008",
+    "level": "maitrise",
+    "type": "qcm",
+    "statement": "Un nombre a pour partie entière 6 et pour arrondi à l'unité 7.\n\nLequel de ces nombres peut-il être ?",
+    "image": null,
+    "choices": [
+      {
+        "key": "a",
+        "text": "6,38",
+        "misconception": "L'élève vérifie seulement la partie entière, 6, et oublie de contrôler l'arrondi : 6,38 est avant le milieu 6,5, son arrondi est 6."
+      },
+      {
+        "key": "b",
+        "text": "6,72",
+        "misconception": null
+      },
+      {
+        "key": "c",
+        "text": "7,4",
+        "misconception": "L'élève vérifie seulement l'arrondi : 7,4 s'arrondit bien à 7, mais sa partie entière est 7, pas 6."
+      }
+    ],
+    "answer": {
+      "value": "b"
+    },
+    "solution_steps": [
+      "Partie entière 6 : le nombre est entre 6 et 7, sans atteindre 7.",
+      "Arrondi 7 : il est plus proche de 7 que de 6, donc après le milieu 6,5.",
+      "Seul 6,72 remplit les deux conditions : $6{,}5 < 6{,}72 < 7$.",
+      "6,38 a bien pour partie entière 6, mais son arrondi est 6. 7,4 a bien pour arrondi 7, mais sa partie entière est 7. La bonne réponse est b."
+    ],
+    "hint": "Vérifie les deux conditions pour chaque nombre, l'une après l'autre.",
+    "estimated_duration_s": 120,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 3, CM1 : savoir donner la partie entière et l'arrondi à l'entier d'un nombre décimal."
+  }
+]

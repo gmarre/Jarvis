@@ -1,0 +1,177 @@
+[
+  {
+    "id": "EX-D006-D-01",
+    "skill_id": "D006",
+    "level": "decouverte",
+    "type": "numerique",
+    "statement": "Le raisin coûte 3,8 € le kilo. Emma en achète 2,1 kg.\n\nDonne d'abord un ordre de grandeur du prix, puis calcule le prix exact.",
+    "image": null,
+    "answer": {
+      "value": 7.98,
+      "unit": "€",
+      "accepted": [
+        "7,98 €"
+      ]
+    },
+    "solution_steps": [
+      "Ordre de grandeur : on arrondit chaque nombre à l'unité. 3,8 est entre 3 et 4, plus proche de 4 ; 2,1 est entre 2 et 3, plus proche de 2. $4 \\times 2 = 8$ : Emma paiera environ 8 €.",
+      "Calcul : on pose $38 \\times 21$ sans les virgules. Première ligne, $38 \\times 1 = 38$. Deuxième ligne, $38 \\times 20$ : un 0 à droite, puis $38 \\times 2 = 76$, soit 760. On additionne : $38 + 760 = 798$.",
+      "Où placer la virgule : $3{,}8 = 38 \\times 0{,}1$ et $2{,}1 = 21 \\times 0{,}1$. Donc $3{,}8 \\times 2{,}1 = 38 \\times 21 \\times 0{,}1 \\times 0{,}1 = 798 \\times 0{,}1 \\times 0{,}1$. Multiplier par 0,1, c'est diviser par 10 : $798 \\times 0{,}1 = 79{,}8$, puis $79{,}8 \\times 0{,}1 = 7{,}98$. Un chiffre après la virgule dans 3,8, un dans 2,1 : deux dans le produit.",
+      "Contrôle : 7,98 est très proche de l'ordre de grandeur, 8. Emma paie **7,98 €**."
+    ],
+    "hint": "Calcule 38 × 21, puis compte les chiffres après la virgule dans les deux nombres.",
+    "estimated_duration_s": 120,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 3, 6e : calculer le produit de deux nombres décimaux ; contrôler les résultats à l'aide d'ordres de grandeur."
+  },
+  {
+    "id": "EX-D006-D-02",
+    "skill_id": "D006",
+    "level": "decouverte",
+    "type": "qcm",
+    "statement": "Un tuyau d'arrosage est vendu 4,5 € le mètre. Lou en achète 0,6 m.\n\nCombien paie-t-elle ?",
+    "image": null,
+    "choices": [
+      {
+        "key": "a",
+        "text": "27 €",
+        "misconception": "L'élève calcule 45 × 6 = 270 et ne compte que le chiffre après la virgule de 4,5, comme pour un décimal multiplié par un entier : il oublie celui de 0,6."
+      },
+      {
+        "key": "b",
+        "text": "2,7 €",
+        "misconception": null
+      },
+      {
+        "key": "c",
+        "text": "270 €",
+        "misconception": "L'élève calcule 45 × 6 = 270 et oublie les deux virgules."
+      }
+    ],
+    "answer": {
+      "value": "b"
+    },
+    "solution_steps": [
+      "Ordre de grandeur : Lou achète moins d'un mètre, elle paie donc moins que le prix d'un mètre, 4,5 €. Multiplier par 0,6, nombre plus petit que 1, donne un résultat plus petit.",
+      "On calcule sans les virgules : $45 \\times 6 = 270$.",
+      "4,5 a un chiffre après la virgule, 0,6 en a un : le produit en a deux. En effet, $4{,}5 = 45 \\times 0{,}1$ et $0{,}6 = 6 \\times 0{,}1$, donc $4{,}5 \\times 0{,}6 = 270 \\times 0{,}1 \\times 0{,}1$ : on divise 270 par 10, puis encore par 10, ce qui donne 2,70, soit 2,7.",
+      "Lou paie **2,7 €**, c'est-à-dire 2,70 € : c'est bien moins que 4,5 €. La bonne réponse est b."
+    ],
+    "hint": "Lou achète moins d'un mètre : peut-elle payer plus de 4,5 € ?",
+    "estimated_duration_s": 75,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 3, 6e : calculer le produit de deux nombres décimaux ; contrôler les résultats à l'aide d'ordres de grandeur."
+  },
+  {
+    "id": "EX-D006-E-01",
+    "skill_id": "D006",
+    "level": "entrainement",
+    "type": "vrai_faux",
+    "statement": "Nina calcule $18{,}5 \\times 0{,}42$ et trouve 77,7.\n\nVrai ou faux : grâce à un ordre de grandeur, on peut affirmer sans poser l'opération que Nina s'est trompée.",
+    "image": null,
+    "answer": {
+      "value": true
+    },
+    "solution_steps": [
+      "Ordre de grandeur : 18,5 est proche de 20. 0,42, c'est 4 dixièmes et 2 centièmes ; 2 centièmes, c'est très peu : 0,42 est proche de 0,4.",
+      "$20 \\times 0{,}4 = 20 \\times 4 \\times 0{,}1 = 80 \\times 0{,}1 = 8$. Le produit est donc proche de 8. D'ailleurs, 0,42 est plus petit que 1 : le produit est forcément plus petit que 18,5.",
+      "Nina trouve 77,7 : c'est plus grand que 18,5, et environ dix fois trop. C'est **vrai**, on peut affirmer sans calcul exact qu'elle s'est trompée.",
+      "Le calcul exact : $185 \\times 42 = 7\\,770$. Un chiffre après la virgule dans 18,5, deux dans 0,42 : trois dans le produit, donc 7,770, soit 7,77. Nina n'a placé que deux chiffres après la virgule : elle a oublié celui de 18,5."
+    ],
+    "hint": "Remplace 18,5 et 0,42 par des nombres proches et simples, puis compare avec 77,7.",
+    "estimated_duration_s": 90,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 3, 6e : calculer le produit de deux nombres décimaux ; contrôler les résultats à l'aide d'ordres de grandeur."
+  },
+  {
+    "id": "EX-D006-E-02",
+    "skill_id": "D006",
+    "level": "entrainement",
+    "type": "numerique",
+    "statement": "Un tissu coûte 7,25 € le mètre. Lina en achète 1,6 m.\n\nCombien paie-t-elle ? Contrôle ton résultat par un ordre de grandeur.",
+    "image": null,
+    "answer": {
+      "value": 11.6,
+      "unit": "€",
+      "accepted": [
+        "11,6 €",
+        "11,60 €",
+        "11,600 €"
+      ]
+    },
+    "solution_steps": [
+      "Ordre de grandeur : 7,25 est proche de 7, et 1,6 est proche de 2. $7 \\times 2 = 14$ : le prix est de l'ordre de la dizaine d'euros.",
+      "On pose $725 \\times 16$. Première ligne : $725 \\times 6 = 4\\,350$. Deuxième ligne, $725 \\times 10$ : un 0 à droite, puis 725, soit 7 250. On additionne : $4\\,350 + 7\\,250 = 11\\,600$.",
+      "Deux chiffres après la virgule dans 7,25, un dans 1,6 : trois dans le produit. On compte trois chiffres à partir de la droite de 11 600 : 11,600, soit 11,6. On place la virgule **avant** d'effacer les 0 de la fin.",
+      "Contrôle : 11,6 est bien de l'ordre de la dizaine, alors que 116 ou 1,16 ne le seraient pas. Lina paie **11,6 €**, c'est-à-dire 11,60 €."
+    ],
+    "hint": "Pose 725 × 16. Combien de chiffres après la virgule en tout dans 7,25 et 1,6 ?",
+    "estimated_duration_s": 150,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 3, 6e : calculer le produit de deux nombres décimaux ; contrôler les résultats à l'aide d'ordres de grandeur."
+  },
+  {
+    "id": "EX-D006-M-01",
+    "skill_id": "D006",
+    "level": "maitrise",
+    "type": "qcm",
+    "statement": "Léa a calculé $85 \\times 43 = 3\\,655$.\n\nQuel est le résultat de $0{,}85 \\times 4{,}3$ ? Utilise un ordre de grandeur pour choisir.",
+    "image": null,
+    "choices": [
+      {
+        "key": "a",
+        "text": "36,55",
+        "misconception": "L'élève ne compte que les deux chiffres après la virgule de 0,85 et oublie celui de 4,3. L'ordre de grandeur, environ 4, montre que 36,55 est dix fois trop grand."
+      },
+      {
+        "key": "b",
+        "text": "365,5",
+        "misconception": "L'élève ne compte que le chiffre après la virgule de 4,3, comme s'il multipliait 4,3 par le nombre entier 85."
+      },
+      {
+        "key": "c",
+        "text": "3,655",
+        "misconception": null
+      }
+    ],
+    "answer": {
+      "value": "c"
+    },
+    "solution_steps": [
+      "Ordre de grandeur : 0,85 est proche de 1, et 4,3 est proche de 4. $1 \\times 4 = 4$ : le produit est proche de 4.",
+      "Seul 3,655 est proche de 4 : 36,55 et 365,5 sont beaucoup trop grands.",
+      "On le confirme en plaçant la virgule : deux chiffres après la virgule dans 0,85, un dans 4,3, donc trois dans le produit. $0{,}85 \\times 4{,}3 = 3\\,655 \\times 0{,}001 = 3{,}655$.",
+      "Le produit est plus petit que 4,3, car on multiplie 4,3 par 0,85, nombre plus petit que 1. La bonne réponse est c."
+    ],
+    "hint": "Remplace 0,85 et 4,3 par des nombres entiers proches.",
+    "estimated_duration_s": 90,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 3, 6e : calculer le produit de deux nombres décimaux ; contrôler les résultats à l'aide d'ordres de grandeur."
+  },
+  {
+    "id": "EX-D006-M-02",
+    "skill_id": "D006",
+    "level": "maitrise",
+    "type": "numerique",
+    "statement": "Le gazole coûte 1,9 € le litre. Un automobiliste met 32,4 L dans son réservoir.\n\nCombien paie-t-il ? Contrôle avec un ordre de grandeur.",
+    "image": null,
+    "answer": {
+      "value": 61.56,
+      "unit": "€",
+      "accepted": [
+        "61,56 €",
+        "61,560 €"
+      ]
+    },
+    "solution_steps": [
+      "Ordre de grandeur : on arrondit d'abord à l'unité. 1,9 est entre 1 et 2, plus proche de 2 ; 32,4 est entre 32 et 33, plus proche de 32, lui-même proche de 30. $2 \\times 30 = 60$ : il paiera environ 60 €.",
+      "Sans les virgules, on calcule $19 \\times 324$. On peut échanger l'ordre des facteurs sans changer le produit : on pose $324 \\times 19$, en deux lignes car $19 = 9 + 10$. Première ligne, $324 \\times 9$ : $9 \\times 4 = 36$, on écrit 6 et on retient 3 ; $9 \\times 2 = 18$, plus 3, cela fait 21, on écrit 1 et on retient 2 ; $9 \\times 3 = 27$, plus 2, cela fait 29. La ligne est 2 916.",
+      "Deuxième ligne, $324 \\times 10$ : un 0 à droite, puis 324, soit 3 240. On additionne : $2\\,916 + 3\\,240 = 6\\,156$.",
+      "Un chiffre après la virgule dans 1,9, un dans 32,4 : deux dans le produit. $1{,}9 \\times 32{,}4 = 61{,}56$. Contrôle : 61,56 est très proche de 60, alors que 615,6 ou 6,156 ne le seraient pas. L'automobiliste paie **61,56 €**."
+    ],
+    "hint": "Pose 324 × 19, puis compte les chiffres après la virgule dans 1,9 et 32,4.",
+    "estimated_duration_s": 180,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 3, 6e : calculer le produit de deux nombres décimaux ; contrôler les résultats à l'aide d'ordres de grandeur."
+  }
+]

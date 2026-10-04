@@ -1,6 +1,6 @@
 # Fiche de relecture — synthèse
 
-> 56 compétences, 282 exercices. Généré depuis `content/`, ne pas éditer à la main.  
+> 75 compétences, 396 exercices. Généré depuis `content/`, ne pas éditer à la main.  
 > Objectif : juger le **fond** et la **coordination**. Le détail complet, énoncés et corrigés, est dans `RELECTURE_DETAIL.md`.
 
 ⚠ **7 compétence(s) à regarder**, signalées dans la colonne *Signal* et détaillées en §3.
@@ -36,37 +36,56 @@ C'est la lecture qui compte pour juger la coordination : la difficulté doit mon
 | 23 | `C009` Comparer fractions de même dénominateur | CE1 | 2 | 3 | 25 | ⚠ |
 | 24 | `C012` Additionner des fractions de même dénom… | CE1 | 2 | 3 | 17 |  |
 | 25 | `C026` Comparer des fractions de numérateur 1 | CE1 | 2 | 7 | 18 |  |
-| 26 | `B038` Problèmes mixtes en deux étapes | CE1 | 3 | 6 | 19 |  |
-| 27 | `A007` Ranger plusieurs entiers | CE2 | 2 | 3 | 17 |  |
-| 28 | `A009` Comprendre la valeur positionnelle | CE2 | 2 | 3 | 12 |  |
-| 29 | `B006` Tables de multiplication | CE2 | 2 | 6 | 14 |  |
-| 30 | `C006` Fractions équivalentes | CE2 | 2 | 3 | 8 |  |
-| 31 | `C005` Fraction sur une droite graduée | CE2 | 2 | 3 | 25 |  |
-| 32 | `A010` Décomposer un entier | CE2 | 3 | 3 | 7 |  |
-| 33 | `B039` Sens de la division et symbole ÷ | CE2 | 3 | 6 | 14 |  |
-| 34 | `B041` Calcul mental : multiplier par 100 et p… | CE2 | 3 | 6 | 14 |  |
-| 35 | `B007` Multiplication posée | CE2 | 3 | 6 | 18 |  |
-| 36 | `A012` Multiple | CM1 | 3 | 7 | 22 |  |
-| 37 | `A013` Diviseur | CM1 | 3 | 7 | 21 |  |
-| 38 | `A014` Multiples de 2, de 5 et de 10 | CM1 | 3 | 7 | 18 |  |
-| 39 | `A028` Entier sur une demi-droite graduée | CM1 | 3 | 7 | 25 |  |
-| 40 | `B008` Division euclidienne posée (diviseur à … | CM1 | 3 | 6 | 20 |  |
-| 41 | `B012` Calcul avec parenthèses | CM1 | 3 | 6 | 15 |  |
-| 42 | `B017` Estimer le résultat d'une opération | CM1 | 3 | 6 | 20 |  |
-| 43 | `C004` Fraction d'une quantité | CM1 | 3 | 3 | 13 |  |
-| 44 | `C027` Fraction supérieure à 1 | CM1 | 3 | 8 | 15 |  |
-| 45 | `C029` Encadrer une fraction | CM1 | 3 | 7 | 14 |  |
-| 46 | `C030` Fraction sur une demi-droite graduée | CM1 | 3 | 7 | 25 |  |
-| 47 | `A026` Tous les diviseurs d'un entier | CM2 | 3 | 7 | 17 |  |
-| 48 | `B016` Calcul mental : diviser par 2, 4 ou 8 | CM2 | 3 | 6 | 16 |  |
-| 49 | `A027` Diviseurs et multiples communs | CM2 | 4 | 8 | 22 |  |
-| 50 | `C031` Produit d'un entier par une fraction | CM2 | 4 | 7 | 10 |  |
-| 51 | `B040` Division euclidienne par un nombre à de… | 6e | 4 | 6 | 18 |  |
-| 52 | `C032` Fraction comme quotient | 6e | 4 | 7 | 16 |  |
-| 53 | `C011` Réduction au même dénominateur | 5e | 4 | 3 | 14 |  |
-| 54 | `C010` Comparer fractions de dénominateurs dif… | 5e | 4 | 3 | 13 |  |
-| 55 | `C007` Simplification de fraction | 4e | 5 | 3 | 11 |  |
-| 56 | `C008` Fraction irréductible | 3e | 6 | 3 | 9 |  |
+| 26 | `D016` Écrire une somme d'argent avec une virg… | CE1 | 2 | 6 | 19 |  |
+| 27 | `B038` Problèmes mixtes en deux étapes | CE1 | 3 | 6 | 19 |  |
+| 28 | `A007` Ranger plusieurs entiers | CE2 | 2 | 3 | 17 |  |
+| 29 | `A009` Comprendre la valeur positionnelle | CE2 | 2 | 3 | 12 |  |
+| 30 | `B006` Tables de multiplication | CE2 | 2 | 6 | 14 |  |
+| 31 | `C006` Fractions équivalentes | CE2 | 2 | 3 | 8 |  |
+| 32 | `C005` Fraction sur une droite graduée | CE2 | 2 | 3 | 25 |  |
+| 33 | `A010` Décomposer un entier | CE2 | 3 | 3 | 7 |  |
+| 34 | `B039` Sens de la division et symbole ÷ | CE2 | 3 | 6 | 14 |  |
+| 35 | `B041` Calcul mental : multiplier par 100 et p… | CE2 | 3 | 6 | 14 |  |
+| 36 | `B007` Multiplication posée | CE2 | 3 | 6 | 18 |  |
+| 37 | `D017` Additionner et soustraire des montants … | CE2 | 3 | 6 | 18 |  |
+| 38 | `A012` Multiple | CM1 | 3 | 7 | 22 |  |
+| 39 | `A013` Diviseur | CM1 | 3 | 7 | 21 |  |
+| 40 | `A014` Multiples de 2, de 5 et de 10 | CM1 | 3 | 7 | 18 |  |
+| 41 | `A028` Entier sur une demi-droite graduée | CM1 | 3 | 7 | 25 |  |
+| 42 | `B008` Division euclidienne posée (diviseur à … | CM1 | 3 | 6 | 20 |  |
+| 43 | `B012` Calcul avec parenthèses | CM1 | 3 | 6 | 15 |  |
+| 44 | `B017` Estimer le résultat d'une opération | CM1 | 3 | 6 | 20 |  |
+| 45 | `C004` Fraction d'une quantité | CM1 | 3 | 3 | 13 |  |
+| 46 | `C027` Fraction supérieure à 1 | CM1 | 3 | 8 | 15 |  |
+| 47 | `C029` Encadrer une fraction | CM1 | 3 | 7 | 14 |  |
+| 48 | `C030` Fraction sur une demi-droite graduée | CM1 | 3 | 7 | 25 |  |
+| 49 | `D018` Fractions décimales : dixièmes et centi… | CM1 | 3 | 6 | 24 |  |
+| 50 | `D001` Écriture à virgule d'un nombre décimal | CM1 | 3 | 6 | 16 |  |
+| 51 | `D003` Comparer et ranger des nombres décimaux | CM1 | 3 | 6 | 28 |  |
+| 52 | `D004` Additionner et soustraire des décimaux … | CM1 | 3 | 6 | 20 |  |
+| 53 | `D012` Encadrer et intercaler des nombres déci… | CM1 | 3 | 6 | 24 |  |
+| 54 | `D008` Partie entière et arrondi à l'unité | CM1 | 3 | 6 | 19 |  |
+| 55 | `D019` Décimal sur une demi-droite graduée | CM1 | 3 | 6 | 27 |  |
+| 56 | `D020` Calcul mental : multiplier et diviser u… | CM1 | 3 | 6 | 19 |  |
+| 57 | `D021` Multiplier un décimal par un entier inf… | CM1 | 3 | 6 | 17 |  |
+| 58 | `D014` Convertir des mesures écrites avec une … | CM1 | 4 | 6 | 20 |  |
+| 59 | `A026` Tous les diviseurs d'un entier | CM2 | 3 | 7 | 17 |  |
+| 60 | `B016` Calcul mental : diviser par 2, 4 ou 8 | CM2 | 3 | 6 | 16 |  |
+| 61 | `A027` Diviseurs et multiples communs | CM2 | 4 | 8 | 22 |  |
+| 62 | `C031` Produit d'un entier par une fraction | CM2 | 4 | 7 | 10 |  |
+| 63 | `D022` Décimaux jusqu'aux millièmes | CM2 | 4 | 6 | 14 |  |
+| 64 | `D007` Division décimale par un entier à un ch… | CM2 | 4 | 6 | 17 |  |
+| 65 | `D023` Calcul mental : multiplier et diviser u… | CM2 | 4 | 6 | 13 |  |
+| 66 | `D024` Multiplier un décimal par un entier (po… | CM2 | 4 | 6 | 20 |  |
+| 67 | `B040` Division euclidienne par un nombre à de… | 6e | 4 | 6 | 18 |  |
+| 68 | `C032` Fraction comme quotient | 6e | 4 | 7 | 16 |  |
+| 69 | `D009` Arrondir au dixième ou au centième | 6e | 4 | 6 | 17 |  |
+| 70 | `D025` Multiplier par 0,1 ; 0,01 ; 0,001 | 6e | 4 | 6 | 19 |  |
+| 71 | `D006` Multiplier deux nombres décimaux | 6e | 5 | 6 | 22 |  |
+| 72 | `C011` Réduction au même dénominateur | 5e | 4 | 3 | 14 |  |
+| 73 | `C010` Comparer fractions de dénominateurs dif… | 5e | 4 | 3 | 13 |  |
+| 74 | `C007` Simplification de fraction | 4e | 5 | 3 | 11 |  |
+| 75 | `C008` Fraction irréductible | 3e | 6 | 3 | 9 |  |
 
 ## 2. Par chapitre
 
@@ -153,6 +172,17 @@ Le chapitre est l'unité qu'un exercice bilan validerait.
 | `C012` Additionner des fractions de même… | Additionner et soustraire deux fractions de même dénominateur | 3 |
 | `C026` Comparer des fractions de numérat… | Comparer deux fractions dont le numérateur est 1 | 7 |
 
+### `MM-D-01` · De la monnaie à l'écriture à virgule (CE1-CM2)
+
+4 compétences, 24 exercices, niveaux CE1, CM1, CM2.
+
+| Compétence | Ce que l'élève doit savoir faire | Exos |
+|---|---|--:|
+| `D016` Écrire une somme d'argent avec un… | Passer d'une somme en euros et centimes à son écriture à virgule et récip… | 6 |
+| `D018` Fractions décimales : dixièmes et… | Lire, écrire et représenter des fractions de dénominateur 10 ou 100, util… | 6 |
+| `D001` Écriture à virgule d'un nombre dé… | Passer d'une fraction décimale ou d'une somme de fractions décimales à l'… | 6 |
+| `D022` Décimaux jusqu'aux millièmes | Étendre aux millièmes la lecture, l'écriture, la décomposition et la comp… | 6 |
+
 ### `MM-C-02` · Fractions egales, droite graduee, fraction d'une quantite (CE2-CM1)
 
 3 compétences, 9 exercices, niveaux CE2, CM1.
@@ -162,6 +192,18 @@ Le chapitre est l'unité qu'un exercice bilan validerait.
 | `C006` Fractions équivalentes | Reconnaître et produire des fractions égales | 3 |
 | `C005` Fraction sur une droite graduée | Placer une fraction sur une bande-unité ou une demi-droite graduée | 3 |
 | `C004` Fraction d'une quantité | Calculer une fraction unitaire d'une quantité ou d'une grandeur | 3 |
+
+### `MM-D-03` · Additionner, soustraire, convertir (CE2-CM2)
+
+5 compétences, 30 exercices, niveaux CE2, CM1, CM2.
+
+| Compétence | Ce que l'élève doit savoir faire | Exos |
+|---|---|--:|
+| `D017` Additionner et soustraire des mon… | Poser et effectuer des additions et des soustractions de montants en euro… | 6 |
+| `D004` Additionner et soustraire des déc… | Poser en colonnes une addition ou une soustraction de deux décimaux en al… | 6 |
+| `D020` Calcul mental : multiplier et div… | Multiplier ou diviser mentalement un décimal par 10 en raisonnant sur la … | 6 |
+| `D014` Convertir des mesures écrites ave… | Convertir une longueur, une masse ou une contenance écrite avec une virgu… | 6 |
+| `D023` Calcul mental : multiplier et div… | Multiplier ou diviser mentalement un décimal par 10, 100 ou 1 000 en rais… | 6 |
 
 ### `MM-A-02` · Multiples et diviseurs (CM1-CM2)
 
@@ -186,6 +228,30 @@ Le chapitre est l'unité qu'un exercice bilan validerait.
 | `C030` Fraction sur une demi-droite grad… | Placer une fraction sur une demi-droite graduée et repérer un point par u… | 7 |
 | `C031` Produit d'un entier par une fract… | Calculer le produit d'un entier et d'une fraction | 7 |
 | `C032` Fraction comme quotient | Comprendre une fraction comme le quotient de deux entiers, en lien avec l… | 7 |
+
+### `MM-D-02` · Comparer, placer, arrondir (CM1-6e)
+
+5 compétences, 30 exercices, niveaux CM1, 6e.
+
+| Compétence | Ce que l'élève doit savoir faire | Exos |
+|---|---|--:|
+| `D003` Comparer et ranger des nombres dé… | Comparer deux décimaux et ranger une liste dans l'ordre croissant ou décr… | 6 |
+| `D012` Encadrer et intercaler des nombre… | Encadrer un décimal entre deux entiers consécutifs ou entre deux nombres … | 6 |
+| `D008` Partie entière et arrondi à l'uni… | Donner la partie entière d'un décimal et son arrondi à l'entier le plus p… | 6 |
+| `D019` Décimal sur une demi-droite gradu… | Placer un décimal (écriture à virgule ou fraction décimale) sur une demi-… | 6 |
+| `D009` Arrondir au dixième ou au centième | Donner la valeur arrondie d'un décimal au dixième ou au centième, en l'en… | 6 |
+
+### `MM-D-04` · Multiplier et diviser des décimaux (CM1-6e)
+
+5 compétences, 30 exercices, niveaux CM1, CM2, 6e.
+
+| Compétence | Ce que l'élève doit savoir faire | Exos |
+|---|---|--:|
+| `D021` Multiplier un décimal par un enti… | Poser et effectuer la multiplication d'un décimal par un nombre entier à … | 6 |
+| `D007` Division décimale par un entier à… | Poser et effectuer une division décimale d'un entier ou d'un décimal par … | 6 |
+| `D024` Multiplier un décimal par un enti… | Poser et effectuer la multiplication d'un décimal par un entier à plusieu… | 6 |
+| `D025` Multiplier par 0,1 ; 0,01 ; 0,001 | Multiplier un entier ou un décimal par 0,1, 0,01 ou 0,001, et savoir que … | 6 |
+| `D006` Multiplier deux nombres décimaux | Calculer le produit de deux décimaux en se ramenant au produit de deux en… | 6 |
 
 ### `MM-C-03` · Operer sur les fractions (5e-3e)
 
@@ -498,6 +564,19 @@ Le chapitre est l'unité qu'un exercice bilan validerait.
 | M | qcm | Léa mange 1/4 d'une tarte. Tom en mange 1/8, et Zoé 1/3. Qui a mangé le moins ? | a) Tom |
 | M | text | Trouve une fraction de numérateur 1 plus grande que 1/8 et plus petite que 1/4. Écris-la av… | 1/6 |
 
+**`D016` · Écrire une somme d'argent avec une virgule** — diff. 2, seuil 3/4  
+*Passer d'une somme en euros et centimes à son écriture à virgule et réciproquement (100 centimes = 1 €), en distinguant 2,05 € de 2,50 €, et ranger des prix donnés sous des écritures différentes. Monnaie uniquement, sans les mots dixième ni centième.*
+> « Connaitre le sens de l'écriture à virgule d'une somme d'argent. »
+
+| | Type | Demandé | Réponse |
+|---|---|---|---|
+| D | nume | Lina a 8 € et 35 centimes dans sa tirelire. Écris cette somme en euros, avec une virgule. | 8.35 |
+| D | qcm | Tom paie 4 € et 8 centimes. Comment s'écrit ce prix avec une virgule ? | b) 4,08 € |
+| E | nume | Un cahier coûte 275 centimes. Rappel : 100 centimes font 1 €. Écris ce prix en euros, avec … | 2.75 |
+| E | vrai | Zoé a 7 pièces de 1 € et 6 pièces de 10 centimes. Elle écrit : 7,06 €. A-t-elle raison ? | faux |
+| M | qcm | Range ces prix du moins cher au plus cher : 2,50 € ; 195 centimes ; 2,05 € ; 2 € et 30 cent… | c) 195 centimes ; 2,05 € ; 2 € et… |
+| M | nume | Max a 2 € et 135 centimes. Écris sa somme en euros, avec une virgule. | 3.35 |
+
 **`B038` · Problèmes mixtes en deux étapes** — diff. 3, seuil 3/4  
 *Résoudre un problème en deux étapes qui combine une étape multiplicative et une étape additive ou soustractive*
 > « Résoudre des problèmes mixtes en deux étapes (une étape additive et une étape multiplicative). »
@@ -614,6 +693,19 @@ Le chapitre est l'unité qu'un exercice bilan validerait.
 | E | vrai | Pour calculer 53 × 32, Léo pose l'opération et trouve 265. Léo a-t-il raison ? | faux |
 | M | qcm | Un avion transporte 168 passagers par vol. Ce mois-ci, il fait 37 vols complets. Combien de… | c) 6 216 |
 | M | nume | Une boulangère cuit 45 plaques de 12 croissants et 23 plaques de 9 brioches. Combien de cro… | 747 |
+
+**`D017` · Additionner et soustraire des montants en euros (posé)** — diff. 3, seuil 3/4  
+*Poser et effectuer des additions et des soustractions de montants en euros écrits avec une virgule (toujours deux chiffres de centimes), et rendre la monnaie. Les montants restent inférieurs à 10 000 €.*
+> « Les techniques posées rencontrées au CE1 pour l'addition et la soustraction des nombres entiers sont étendues au CE2 aux montants en euro utilisant l… »
+
+| | Type | Demandé | Réponse |
+|---|---|---|---|
+| D | nume | Un stylo coûte 4,35 € et une gomme 2,52 €. Pose l'addition, virgule sous virgule, et calcul… | 6.87 |
+| D | qcm | Pose et calcule la somme de 12,75 € et de 3,40 €. | c) 16,15 € |
+| E | nume | Hugo a 25,30 €. Il achète une BD à 13,85 €. Pose la soustraction : combien d'argent lui res… | 11.45 |
+| E | vrai | Nina doit payer 24,60 €, puis 15 €. Elle pose l'addition et trouve 24,75 €. A-t-elle raison… | faux |
+| M | nume | Paul achète des fraises à 3,75 € et du pain à 1,40 €. Il paie avec un billet de 10 €. Combi… | 4.85 |
+| M | qcm | Théo pose 32{,}40 - 8{,}75 (en euros) et trouve 36,35 €. Quelle est son erreur ? | b) Dans chaque colonne, il a enle… |
 
 ### ── CM1 ──
 
@@ -765,6 +857,136 @@ Le chapitre est l'unité qu'un exercice bilan validerait.
 | M | text | Une demi-droite est graduée en quarts. Un point se trouve 3 graduations après le nombre 2. … | 11/4 |
 | M | text | Sur une demi-droite graduée en sixièmes, quelle fraction se trouve à la graduation située j… | 11/6 |
 
+**`D018` · Fractions décimales : dixièmes et centièmes** — diff. 3, seuil 3/4  
+*Lire, écrire et représenter des fractions de dénominateur 10 ou 100, utiliser les relations 1 = 10 dixièmes = 100 centièmes et 1 dixième = 10 centièmes, et décomposer une fraction décimale supérieure à 1 en un entier plus des dixièmes et des centièmes.*
+> « Interpréter, représenter, écrire et lire des fractions décimales »
+
+| | Type | Demandé | Réponse |
+|---|---|---|---|
+| D | text | Un carré est partagé en 100 petits carreaux égaux : chaque carreau est un centième du carré… | 37/100 |
+| D | qcm | Une unité est partagée en 10 dixièmes. Puis chaque dixième est partagé en 10 parts égales. … | d) un centième |
+| E | nume | Une unité vaut 100 centièmes, un dixième vaut 10 centièmes. Combien de centièmes y a-t-il e… | 260 |
+| E | text | Écris 358/100 comme la somme d'un entier et de fractions décimales de numérateur inférieur … | 3 + 5/10 + 8/100 |
+| M | nume | Complète : 2 + 13/10 + 5/100 = …/100 | 335 |
+| M | vrai | Léo remplit une carafe avec 7 verres de 1/10 de litre et 25 cuillères de 1/100 de litre. Il… | faux |
+
+**`D001` · Écriture à virgule d'un nombre décimal** — diff. 3, seuil 3/4  
+*Passer d'une fraction décimale ou d'une somme de fractions décimales à l'écriture à virgule et réciproquement, lire et écrire un décimal, et donner la valeur de chacun de ses chiffres (partie entière, dixièmes, centièmes). Au plus deux chiffres après la virgule.*
+> « L'écriture à virgule est réintroduite dans un second temps, comme un codage conventionnel de la décomposition canonique d'un nombre écrit sous la for… »
+
+| | Type | Demandé | Réponse |
+|---|---|---|---|
+| D | nume | L'écriture à virgule code une somme : la partie entière, puis les dixièmes juste après la v… | 3.52 |
+| D | qcm | Comment s'écrit 5 + 7/100 avec une virgule ? | c) 5,07 |
+| E | text | Écris 13,06 comme une fraction décimale de dénominateur 100. Écris ta réponse sous la forme… | 1306/100 |
+| E | qcm | Dans 472,85, le chiffre 7 est celui des dizaines. Que vaut le chiffre 8 ? | b) 8 dixièmes |
+| M | nume | Écris avec une virgule le nombre formé de 4 dizaines, 9 dixièmes et 3 centièmes. | 40.93 |
+| M | vrai | Lou affirme : « Dans 60,04 et dans 6,40, le chiffre 4 a la même valeur. » A-t-elle raison ? | faux |
+
+**`D003` · Comparer et ranger des nombres décimaux** — diff. 3, seuil 3/4  
+*Comparer deux décimaux et ranger une liste dans l'ordre croissant ou décroissant, avec les symboles =, < et >, y compris quand les parties décimales n'ont pas le même nombre de chiffres (3,4 et 3,17). Au plus deux chiffres après la virgule.*
+> « Comparer, encadrer, intercaler, ordonner, par ordre croissant ou décroissant, des nombres décimaux donnés par leur écriture à virgule en utilisant le… »
+
+| | Type | Demandé | Réponse |
+|---|---|---|---|
+| D | vrai | Deux escargots font la course. Le premier avance de 2,6 m, le second de 2,45 m. Léo dit : «… | faux |
+| D | qcm | Une bouteille contient 1,35 L de jus, une autre 1,3 L. Quel signe faut-il placer entre les … | a) > |
+| E | nume | Pour aller en finale du lancer de balle, il faut dépasser 6,5 m. Résultats : 6,7 m ; 6,17 m… | 3 |
+| E | qcm | Range ces nombres dans l'ordre croissant : 4,5 ; 4,38 ; 4,52 ; 4,1. Quel est le bon rangeme… | c) 4,1 ; 4,38 ; 4,5 ; 4,52 |
+| M | vrai | Dans le nombre 5,□4, le chiffre des dixièmes est caché. Vrai ou faux : quel que soit le chi… | faux |
+| M | qcm | Quatre enfants se mesurent : Malo 1,4 m ; Sacha 1,35 m ; Yanis 1,5 m ; Nora 1,45 m. Qui est… | a) Nora |
+
+**`D004` · Additionner et soustraire des décimaux (posé)** — diff. 3, seuil 3/4  
+*Poser en colonnes une addition ou une soustraction de deux décimaux en alignant les virgules, y compris quand les parties décimales n'ont pas le même nombre de chiffres (compléter par des zéros). Au plus deux chiffres après la virgule.*
+> « Poser en colonnes et effectuer des additions et des soustractions de nombres décimaux »
+
+| | Type | Demandé | Réponse |
+|---|---|---|---|
+| D | nume | Un cycliste parcourt 23,4 km le matin et 12,35 km l'après-midi. Pose l'addition en alignant… | 35.75 |
+| D | qcm | Pose et calcule 6{,}8 + 2{,}35, en alignant les virgules. | b) 9,15 |
+| E | nume | Un jardinier a un sac de 15 kg de terreau. Il en utilise 6,74 kg. Quelle masse de terreau r… | 8.26 |
+| E | vrai | Mila pose la soustraction 7{,}3 - 2{,}58. Elle écrit un 0 après le 3, calcule 7{,}30 - 2{,}… | vrai |
+| M | nume | Une planche mesure 2,5 m. Lucas en coupe un morceau de 0,75 m, puis un morceau de 1,2 m. Qu… | 0.55 |
+| M | qcm | Noé pose l'addition 5{,}4 + 3{,}27 et trouve 3,81. Quelle est son erreur ? | c) Il a aligné les derniers chiff… |
+
+**`D012` · Encadrer et intercaler des nombres décimaux** — diff. 3, seuil 3/4  
+*Encadrer un décimal entre deux entiers consécutifs ou entre deux nombres consécutifs à un chiffre après la virgule, et trouver un décimal compris entre deux décimaux donnés. Au plus deux chiffres après la virgule.*
+> « Comparer, encadrer, intercaler, ordonner, par ordre croissant ou décroissant, des nombres décimaux donnés par leur écriture à virgule en utilisant le… »
+
+| | Type | Demandé | Réponse |
+|---|---|---|---|
+| D | nume | Une ficelle mesure 8,3 m : un peu plus de 8 m. Complète l'encadrement par deux nombres enti… | 9 |
+| D | vrai | Quand on compte de dixième en dixième, 6,2 est suivi de 6,3. Sami dit : « Il n'existe aucun… | faux |
+| E | qcm | Encadre 9,63 par deux nombres à un chiffre après la virgule qui se suivent. | b) 9,6 et 9,7 |
+| E | nume | Un chat pèse 6,04 kg. Complète l'encadrement par deux nombres à un chiffre après la virgule… | 6 |
+| M | qcm | Combien y a-t-il de nombres à deux chiffres après la virgule compris entre 4,7 et 4,8, sans… | c) 9 |
+| M | nume | Devinette : je suis un nombre à deux chiffres après la virgule, compris entre 5,8 et 5,9. M… | 5.84 |
+
+**`D008` · Partie entière et arrondi à l'unité** — diff. 3, seuil 3/4  
+*Donner la partie entière d'un décimal et son arrondi à l'entier le plus proche, en s'appuyant sur l'encadrement entre deux entiers consécutifs. Au plus deux chiffres après la virgule.*
+> « Savoir donner la partie entière et l'arrondi à l'entier d'un nombre décimal »
+
+| | Type | Demandé | Réponse |
+|---|---|---|---|
+| D | nume | Une randonnée fait 12,7 km. Combien de kilomètres entiers compte-t-elle ? Ce nombre est la … | 12 |
+| D | qcm | Un sac pèse 5,8 kg : entre 5 kg et 6 kg. Quel est son arrondi à l'unité, c'est-à-dire l'ent… | b) 6 |
+| E | vrai | Zoé dit : « L'arrondi à l'unité de 31,49 est 32, car 49 est plus grand que 5. » Zoé a-t-ell… | faux |
+| E | qcm | Quelles sont la partie entière et l'arrondi à l'unité de 7,09 ? | c) partie entière 7, arrondi 7 |
+| M | nume | Un vélo coûte 199,60 €. Arrondis ce prix à l'euro près, c'est-à-dire à l'unité. | 200 |
+| M | qcm | Un nombre a pour partie entière 6 et pour arrondi à l'unité 7. Lequel de ces nombres peut-i… | b) 6,72 |
+
+**`D019` · Décimal sur une demi-droite graduée** — diff. 3, seuil 3/4  
+*Placer un décimal (écriture à virgule ou fraction décimale) sur une demi-droite graduée en dixièmes ou en centièmes, et lire l'abscisse d'un point repéré. Au plus deux chiffres après la virgule.*
+> « Placer une fraction décimale sur une demi-droite graduée et repérer un point d'une demi-droite graduée par une fraction décimale »
+
+| | Type | Demandé | Réponse |
+|---|---|---|---|
+| D | nume | Une demi-droite est graduée en dixièmes : entre 0 et 1, il y a 10 intervalles égaux. Quel n… | 0.7 |
+| D | qcm | Une demi-droite est graduée en dixièmes. On y lit la graduation 3 puis la graduation 4, ave… | b) à la 6e graduation après 3 |
+| E | nume | Une demi-droite est graduée en centièmes : entre 7 et 7,1, il y a 10 intervalles égaux. Que… | 7.04 |
+| E | text | Une demi-droite est graduée en dixièmes à partir de 0. Le point A est à la 13e graduation a… | 13/10 |
+| M | vrai | Une demi-droite est graduée en dixièmes : 10 intervalles égaux entre 5 et 6. Léo place 5,25… | faux |
+| M | nume | Une demi-droite est graduée en centièmes. Un point se trouve 6 graduations après 1,97. Quel… | 2.03 |
+
+**`D020` · Calcul mental : multiplier et diviser un décimal par 10** — diff. 3, seuil 3/4  
+*Multiplier ou diviser mentalement un décimal par 10 en raisonnant sur la valeur des chiffres (les dixièmes deviennent des unités, les unités des dixièmes). Au plus deux chiffres après la virgule.*
+> « Multiplier un nombre décimal par 10 »
+
+| | Type | Demandé | Réponse |
+|---|---|---|---|
+| D | nume | Un timbre mesure 2,4 cm de large. On colle 10 timbres côte à côte, sans espace. Calcule 2{,… | 24 |
+| D | qcm | On verse 8,5 L de jus dans 10 carafes, la même quantité dans chaque carafe. Combien de litr… | c) 0,85 L |
+| E | nume | Calcule mentalement 0{,}37 × 10. | 3.7 |
+| E | vrai | Tom dit : « 4{,}6 × 10 = 4{,}60, car multiplier par 10, c'est écrire un zéro à droite. » To… | faux |
+| M | nume | Une pile de 10 livres identiques mesure 31,5 cm de haut. Quelle est l'épaisseur d'un livre,… | 3.15 |
+| M | qcm | Lina pense à un nombre. Elle le multiplie par 10 et trouve 30,4. À quel nombre a-t-elle pen… | b) 3,04 |
+
+**`D021` · Multiplier un décimal par un entier inférieur à 10 (posé)** — diff. 3, seuil 3/4  
+*Poser et effectuer la multiplication d'un décimal par un nombre entier à un chiffre, et placer la virgule dans le résultat. Au plus deux chiffres après la virgule.*
+> « Poser et effectuer des multiplications d'un nombre décimal par un nombre entier inférieur à 10 »
+
+| | Type | Demandé | Réponse |
+|---|---|---|---|
+| D | nume | Un cahier coûte 2,47 €. Combien coûtent 3 cahiers ? Pose la multiplication 2{,}47 × 3. | 7.41 |
+| D | qcm | Lina pose bout à bout 4 planches de 1,8 m. Quelle longueur obtient-elle ? | c) 7,2 m |
+| E | nume | Une bouteille de jus contient 0,75 L. Combien de litres de jus y a-t-il dans un pack de 6 b… | 4.5 |
+| E | qcm | Un ticket de bus coûte 1,45 €. Combien coûtent 9 tickets ? | a) 13,05 € |
+| M | nume | Pour un bouquet, un fleuriste utilise 0,65 m de ruban. Il fait 5 bouquets le matin et 3 l'a… | 5.2 |
+| M | vrai | Une gourde contient 1,25 L. Vrai ou faux : 4 gourdes contiennent un nombre entier de litres. | vrai |
+
+**`D014` · Convertir des mesures écrites avec une virgule** — diff. 4, seuil 3/4  
+*Convertir une longueur, une masse ou une contenance écrite avec une virgule dans une unité plus petite, en s'appuyant sur les relations entre unités et sans tableau de conversion (3,5 m = 3 m + 50 cm = 350 cm).*
+> « Les longueurs, les masses et les contenances permettent de nourrir le travail mené sur les fractions et les nombres décimaux. »
+
+| | Type | Demandé | Réponse |
+|---|---|---|---|
+| D | nume | Une planche mesure 2,6 m. On sait que 1 m = 100 cm. Quelle est la longueur de la planche en… | 260 |
+| D | qcm | Une gourde contient 1,5 L d'eau. On sait que 1 L = 100 cL. Combien de centilitres contient … | b) 150 cL |
+| E | nume | Un melon pèse 1,25 kg. Quelle est sa masse en grammes ? | 1250 |
+| E | vrai | Un clou mesure 3,4 cm. Inès dit : « Il mesure 3,40 mm, car 1 cm = 10 mm. » A-t-elle raison ? | faux |
+| M | nume | Un ruban mesure 2,05 m. Sarah en coupe un morceau de 80 cm. Quelle longueur de ruban reste-… | 125 |
+| M | qcm | Trois bouteilles contiennent 0,75 L ; 85 cL et 0,9 L. Laquelle contient le plus de liquide ? | c) La bouteille de 0,9 L |
+
 ### ── CM2 ──
 
 **`A026` · Tous les diviseurs d'un entier** — diff. 3, seuil 3/4  
@@ -823,6 +1045,58 @@ Le chapitre est l'unité qu'un exercice bilan validerait.
 | M | nume | Combien de fois faut-il prendre 3/4 pour obtenir exactement 3 ? | 4 |
 | M | qcm | Une recette demande 2/3 de litre de lait. On la fait 3 fois. Combien de lait faut-il ? | a) 2 litres |
 
+**`D022` · Décimaux jusqu'aux millièmes** — diff. 4, seuil 3/4  
+*Étendre aux millièmes la lecture, l'écriture, la décomposition et la comparaison des décimaux, et utiliser les relations 1 centième = 10 millièmes, 1 = 1 000 millièmes. Au plus trois chiffres après la virgule.*
+> « L'étude des nombres décimaux s'étend aux millièmes. »
+
+| | Type | Demandé | Réponse |
+|---|---|---|---|
+| D | nume | Après la virgule viennent les dixièmes, les centièmes, puis les millièmes. Écris avec une v… | 2.406 |
+| D | qcm | Une unité est partagée en 1 000 millièmes. 1 centième, c'est combien de millièmes ? | a) 10 millièmes |
+| E | vrai | Jules écrit : 4053/1000 = 4{,}53. A-t-il raison ? | faux |
+| E | qcm | Range dans l'ordre croissant : 7,45 ; 7,4 ; 7,409 | b) 7,4 ; 7,409 ; 7,45 |
+| M | nume | Un nombre est formé de 1 unité, 5 dixièmes et 7 millièmes. Combien de millièmes contient-il… | 1507 |
+| M | qcm | Une seule de ces écritures n'est pas égale à 5,06. Laquelle ? | d) 5 + 6/10 |
+
+**`D007` · Division décimale par un entier à un chiffre** — diff. 4, seuil 3/4  
+*Poser et effectuer une division décimale d'un entier ou d'un décimal par un entier à un chiffre, en poursuivant le calcul après la virgule jusqu'à un reste nul ou au rang demandé.*
+> « Poser et effectuer des divisions décimales avec un dividende entier et un diviseur à un chiffre »
+
+| | Type | Demandé | Réponse |
+|---|---|---|---|
+| D | nume | Un ruban de 8,4 m est coupé en 3 morceaux de même longueur. Pose la division 8{,}4 ÷ 3. Com… | 2.8 |
+| D | qcm | Un pâtissier répartit 15 kg de farine dans 4 sacs, la même masse dans chaque sac. Combien d… | c) 3,75 kg |
+| E | nume | Pose et calcule 9{,}45 ÷ 5. | 1.89 |
+| E | vrai | Zoé pose la division 6{,}24 ÷ 6 et trouve 1,4. A-t-elle raison ? | faux |
+| M | nume | Huit coureurs se partagent un relais de 3 km : chacun court la même distance. Quelle distan… | 0.375 |
+| M | qcm | Six pommes identiques pèsent ensemble 1,05 kg. Combien pèse une pomme, en kilogrammes ? | d) 0,175 kg |
+
+**`D023` · Calcul mental : multiplier et diviser un décimal par 10, 100, 1 000** — diff. 4, seuil 3/4  
+*Multiplier ou diviser mentalement un décimal par 10, 100 ou 1 000 en raisonnant sur le rang des chiffres, y compris quand il faut ajouter des zéros (0,47 × 100 ; 5,2 ÷ 1 000).*
+> « Multiplier un nombre décimal par 10, 100 ou 1 000 »
+
+| | Type | Demandé | Réponse |
+|---|---|---|---|
+| D | nume | Une boîte contient 100 sachets de thé. Chaque sachet contient 2,5 g de thé. Calcule 2{,}5 ×… | 250 |
+| D | qcm | Calcule mentalement 13{,}6 ÷ 100. | d) 0,136 |
+| E | nume | Calcule mentalement 4{,}07 × 1 000. | 4070 |
+| E | vrai | Paul dit : « 7{,}5 ÷ 100 = 0{,}075, car le chiffre 7 des unités devient le chiffre des cent… | vrai |
+| M | nume | 1 000 grains de riz pèsent 23 g. Combien pèse un grain de riz, en grammes ? | 0.023 |
+| M | qcm | Complète : 2{,}75 × … = 2 750. | c) 1 000 |
+
+**`D024` · Multiplier un décimal par un entier (posé)** — diff. 4, seuil 3/4  
+*Poser et effectuer la multiplication d'un décimal par un entier à plusieurs chiffres, et placer la virgule dans le résultat.*
+> « Poser et effectuer la multiplication d'un nombre décimal par un nombre entier »
+
+| | Type | Demandé | Réponse |
+|---|---|---|---|
+| D | nume | Le billet de train coûte 4,65 € par élève. Combien paie une classe de 23 élèves ? Pose la m… | 106.95 |
+| D | qcm | Un fil électrique est vendu en bobines de 3,8 m. Quelle longueur de fil y a-t-il dans 12 bo… | b) 45,6 m |
+| E | vrai | Une boîte de conserve pèse 0,68 kg. Hugo calcule la masse de 35 boîtes et trouve 2,38 kg. H… | faux |
+| E | nume | Un sac de croquettes pèse 1,375 kg. Un refuge pour chats en reçoit 12. Quelle masse de croq… | 16.5 |
+| M | qcm | On sait que 254 × 37 = 9 398. Sans poser d'opération, quel est le résultat de 2{,}54 × 37 ? | c) 93,98 |
+| M | nume | Pour une course solidaire, 3 équipes de 12 coureurs courent chacun 4,15 km. Combien de kilo… | 149.4 |
+
 ### ── 6e ──
 
 **`B040` · Division euclidienne par un nombre à deux chiffres** — diff. 4, seuil 3/4  
@@ -851,6 +1125,45 @@ Le chapitre est l'unité qu'un exercice bilan validerait.
 | E | text | Un ruban de 5 mètres est coupé en 4 morceaux égaux. Quelle est la longueur d'un morceau, en… | 5/4 |
 | M | vrai | On a des gâteaux tous identiques. Prendre les 3/4 d'un gâteau et partager 3 de ces gâteaux … | vrai |
 | M | text | Trouve le nombre qui, multiplié par 8, donne 5. Écris ta réponse avec une barre. | 5/8 |
+
+**`D009` · Arrondir au dixième ou au centième** — diff. 4, seuil 3/4  
+*Donner la valeur arrondie d'un décimal au dixième ou au centième, en l'encadrant entre deux valeurs consécutives au rang demandé.*
+> « Donner la valeur arrondie à l'unité, au dixième ou au centième, d'un nombre décimal »
+
+| | Type | Demandé | Réponse |
+|---|---|---|---|
+| D | qcm | Au 100 m, le chronomètre affiche 13,74 s. Quel est ce temps arrondi au dixième de seconde ? | b) 13,7 s |
+| D | nume | Sur la balance, un sac de farine pèse 2,316 kg. Arrondis cette masse au centième de kilogra… | 2.32 |
+| E | vrai | Inès dit : « 4,65 est pile au milieu entre 4,6 et 4,7, donc on ne peut pas l'arrondir au di… | faux |
+| E | nume | Arrondis 15,083 au dixième. | 15.1 |
+| M | nume | Un trajet mesure 29,97 km. Le GPS affiche les distances arrondies au dixième. Quelle distan… | 30 |
+| M | qcm | Un nombre à deux chiffres après la virgule a pour arrondi au dixième 5,3. Lequel de ces nom… | c) 5,25 |
+
+**`D025` · Multiplier par 0,1 ; 0,01 ; 0,001** — diff. 4, seuil 3/4  
+*Multiplier un entier ou un décimal par 0,1, 0,01 ou 0,001, et savoir que cela revient à le diviser par 10, 100 ou 1 000.*
+> « Multiplier un nombre entier ou un nombre décimal par 0,1, par 0,01, et par 0,001 »
+
+| | Type | Demandé | Réponse |
+|---|---|---|---|
+| D | nume | Une feuille de papier a une épaisseur de 0,1 mm. Quelle est l'épaisseur d'une ramette de 50… | 50 |
+| D | qcm | Jules a 735 pièces de 1 centime. Un centime, c'est 0,01 €. Combien d'euros a-t-il ? Calcule… | c) 7,35 € |
+| E | vrai | Zoé affirme : « Une multiplication donne toujours un résultat plus grand que le nombre de d… | faux |
+| E | nume | Un flacon de parfum contient 85 mL. Un millilitre, c'est 0,001 L. Combien de litres contien… | 0.085 |
+| M | nume | Nora multiplie 72 par un nombre décimal et obtient 0,072. Par quel nombre a-t-elle multipli… | 0.001 |
+| M | qcm | Sans poser d'opération, quel calcul donne le plus grand résultat ? | a) 630 × 0{,}01 |
+
+**`D006` · Multiplier deux nombres décimaux** — diff. 5, seuil 3/4  
+*Calculer le produit de deux décimaux en se ramenant au produit de deux entiers puis en plaçant la virgule, et contrôler le résultat par un ordre de grandeur.*
+> « Le sens des opérations étudiées au cours moyen s'élargit avec l'introduction de la multiplication de deux nombres décimaux. »
+
+| | Type | Demandé | Réponse |
+|---|---|---|---|
+| D | nume | Le raisin coûte 3,8 € le kilo. Emma en achète 2,1 kg. Donne d'abord un ordre de grandeur du… | 7.98 |
+| D | qcm | Un tuyau d'arrosage est vendu 4,5 € le mètre. Lou en achète 0,6 m. Combien paie-t-elle ? | b) 2,7 € |
+| E | vrai | Nina calcule 18{,}5 × 0{,}42 et trouve 77,7. Vrai ou faux : grâce à un ordre de grandeur, o… | vrai |
+| E | nume | Un tissu coûte 7,25 € le mètre. Lina en achète 1,6 m. Combien paie-t-elle ? Contrôle ton ré… | 11.6 |
+| M | qcm | Léa a calculé 85 × 43 = 3 655. Quel est le résultat de 0{,}85 × 4{,}3 ? Utilise un ordre de… | c) 3,655 |
+| M | nume | Le gazole coûte 1,9 € le litre. Un automobiliste met 32,4 L dans son réservoir. Combien pai… | 61.56 |
 
 ### ── 5e ──
 

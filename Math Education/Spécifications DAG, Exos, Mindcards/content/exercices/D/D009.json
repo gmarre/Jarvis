@@ -1,0 +1,172 @@
+[
+  {
+    "id": "EX-D009-D-01",
+    "skill_id": "D009",
+    "level": "decouverte",
+    "type": "qcm",
+    "statement": "Au 100 m, le chronomètre affiche 13,74 s.\n\nQuel est ce temps arrondi au dixième de seconde ?",
+    "image": null,
+    "choices": [
+      {
+        "key": "a",
+        "text": "13,8 s",
+        "misconception": "L'élève arrondit toujours au dixième du dessus. Or 13,74 est avant le milieu 13,75 : il est plus proche de 13,7."
+      },
+      {
+        "key": "b",
+        "text": "13,7 s",
+        "misconception": null
+      },
+      {
+        "key": "c",
+        "text": "14 s",
+        "misconception": "L'élève arrondit à l'unité au lieu du dixième."
+      }
+    ],
+    "answer": {
+      "value": "b"
+    },
+    "solution_steps": [
+      "Au dixième, on encadre 13,74 entre deux nombres à un chiffre après la virgule qui se suivent : $13{,}7 < 13{,}74 < 13{,}8$.",
+      "Le milieu entre 13,7 et 13,8 est 13,75.",
+      "$13{,}74 < 13{,}75$ : le temps est plus proche de 13,7. Il suffit de regarder le chiffre des centièmes : 4, moins que 5.",
+      "Arrondi au dixième : **13,7 s**. La bonne réponse est b."
+    ],
+    "hint": "Entre quels nombres à un chiffre après la virgule se trouve 13,74 ?",
+    "estimated_duration_s": 60,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 3, 6e : donner la valeur arrondie à l'unité, au dixième ou au centième, d'un nombre décimal."
+  },
+  {
+    "id": "EX-D009-D-02",
+    "skill_id": "D009",
+    "level": "decouverte",
+    "type": "numerique",
+    "statement": "Sur la balance, un sac de farine pèse 2,316 kg.\n\nArrondis cette masse au centième de kilogramme.",
+    "image": null,
+    "answer": {
+      "value": 2.32,
+      "accepted": [
+        "2,32 kg"
+      ],
+      "unit": "kg"
+    },
+    "solution_steps": [
+      "Au centième, on encadre 2,316 entre deux nombres à deux chiffres après la virgule qui se suivent : $2{,}31 < 2{,}316 < 2{,}32$.",
+      "Le milieu est 2,315. On regarde le chiffre des millièmes, juste après celui des centièmes : 6, plus que 5. Règle : si ce chiffre vaut 0, 1, 2, 3 ou 4, on prend la valeur du dessous ; s'il vaut 5, 6, 7, 8 ou 9, on prend la valeur du dessus. Pile au milieu, on prend donc la valeur du dessus : c'est une convention.",
+      "$2{,}316 > 2{,}315$ : la masse est plus proche de 2,32.",
+      "Arrondi au centième : **2,32 kg**."
+    ],
+    "hint": "Quel chiffre faut-il regarder, juste après celui des centièmes ?",
+    "estimated_duration_s": 60,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 3, 6e : donner la valeur arrondie à l'unité, au dixième ou au centième, d'un nombre décimal."
+  },
+  {
+    "id": "EX-D009-E-01",
+    "skill_id": "D009",
+    "level": "entrainement",
+    "type": "vrai_faux",
+    "statement": "Inès dit : « 4,65 est pile au milieu entre 4,6 et 4,7, donc on ne peut pas l'arrondir au dixième. »\n\nInès a-t-elle raison ?",
+    "image": null,
+    "answer": {
+      "value": false
+    },
+    "solution_steps": [
+      "$4{,}6 < 4{,}65 < 4{,}7$, et 4,65 est bien exactement au milieu : il est à 5 centièmes de 4,60 comme de 4,70.",
+      "Pile au milieu, le nombre est aussi proche de l'une que de l'autre : on a donc fixé une convention. On regarde le chiffre juste après le rang demandé : s'il est 5, 6, 7, 8 ou 9, on arrondit à la valeur du dessus ; s'il est 0, 1, 2, 3 ou 4, à la valeur du dessous.",
+      "Ici, le chiffre des centièmes est 5 : l'arrondi au dixième de 4,65 est 4,7.",
+      "On peut donc toujours arrondir, même pile au milieu. Inès a **tort**."
+    ],
+    "hint": "Quel est le chiffre juste après celui des dixièmes ? Que dit la règle quand c'est un 5 ?",
+    "estimated_duration_s": 75,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 3, 6e : donner la valeur arrondie à l'unité, au dixième ou au centième, d'un nombre décimal."
+  },
+  {
+    "id": "EX-D009-E-02",
+    "skill_id": "D009",
+    "level": "entrainement",
+    "type": "numerique",
+    "statement": "Arrondis 15,083 au dixième.",
+    "image": null,
+    "answer": {
+      "value": 15.1
+    },
+    "solution_steps": [
+      "15,083 a 0 dixième, 8 centièmes et 3 millièmes. On l'encadre au dixième : $15{,}0 < 15{,}083 < 15{,}1$.",
+      "Le milieu est 15,05. On regarde le chiffre des centièmes : 8, plus que 5.",
+      "$15{,}083 > 15{,}05$ : le nombre est plus proche de 15,1. Arrondi au dixième : **15,1**.",
+      "Piège : répondre 15,0, c'est couper le nombre sans regarder les centièmes ; répondre 15,08, c'est arrondir au centième au lieu du dixième."
+    ],
+    "hint": "Quel est le chiffre des dixièmes de 15,083 ? Et celui qui le suit ?",
+    "estimated_duration_s": 60,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 3, 6e : donner la valeur arrondie à l'unité, au dixième ou au centième, d'un nombre décimal."
+  },
+  {
+    "id": "EX-D009-M-01",
+    "skill_id": "D009",
+    "level": "maitrise",
+    "type": "numerique",
+    "statement": "Un trajet mesure 29,97 km. Le GPS affiche les distances arrondies au dixième.\n\nQuelle distance affiche-t-il ?",
+    "image": null,
+    "answer": {
+      "value": 30,
+      "accepted": [
+        "30,0",
+        "30 km",
+        "30,0 km"
+      ],
+      "unit": "km"
+    },
+    "solution_steps": [
+      "On encadre 29,97 au dixième. Le nombre à un chiffre après la virgule qui suit 29,9 est 30,0 : 9 dixièmes et 1 dixième font 10 dixièmes, c'est-à-dire une unité de plus. Donc $29{,}9 < 29{,}97 < 30{,}0$.",
+      "Le milieu est 29,95. Le chiffre des centièmes est 7, plus que 5 : $29{,}97 > 29{,}95$.",
+      "L'arrondi au dixième est 30,0, qui s'écrit plus simplement 30. Le GPS affiche **30 km**.",
+      "Piège : écrire 29,10. Après 29,9 ne vient pas « 29,10 », qui est d'ailleurs plus petit que 29,9 : 29,10 = 29,1."
+    ],
+    "hint": "Quel nombre à un chiffre après la virgule vient juste après 29,9 ?",
+    "estimated_duration_s": 120,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 3, 6e : donner la valeur arrondie à l'unité, au dixième ou au centième, d'un nombre décimal."
+  },
+  {
+    "id": "EX-D009-M-02",
+    "skill_id": "D009",
+    "level": "maitrise",
+    "type": "qcm",
+    "statement": "Un nombre à deux chiffres après la virgule a pour arrondi au dixième 5,3.\n\nLequel de ces nombres peut-il être ?",
+    "image": null,
+    "choices": [
+      {
+        "key": "a",
+        "text": "5,36",
+        "misconception": "L'élève coupe le nombre après le chiffre des dixièmes : il croit que tout nombre qui commence par 5,3 s'arrondit à 5,3. Or 5,36 est après le milieu 5,35, son arrondi est 5,4."
+      },
+      {
+        "key": "b",
+        "text": "5,35",
+        "misconception": "L'élève pense qu'au milieu on arrondit vers le bas. La règle dit l'inverse : avec un 5 au rang des centièmes, 5,35 s'arrondit à 5,4."
+      },
+      {
+        "key": "c",
+        "text": "5,25",
+        "misconception": null
+      }
+    ],
+    "answer": {
+      "value": "c"
+    },
+    "solution_steps": [
+      "Un nombre a pour arrondi au dixième 5,3 s'il est plus proche de 5,3 que de 5,2 ou de 5,4, ou s'il est pile au milieu 5,25 : on arrondit alors à la valeur du dessus.",
+      "5,25 est au milieu entre 5,2 et 5,3. Son chiffre des centièmes est 5 : il s'arrondit à 5,3.",
+      "5,36 et 5,35 sont entre 5,3 et 5,4, avec 6 et 5 centièmes : ils s'arrondissent tous deux à 5,4.",
+      "La bonne réponse est c : 5,25. Un nombre dont l'arrondi est 5,3 ne commence pas forcément par 5,3."
+    ],
+    "hint": "Teste chaque proposition : encadre-la au dixième et regarde le chiffre des centièmes.",
+    "estimated_duration_s": 120,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 3, 6e : donner la valeur arrondie à l'unité, au dixième ou au centième, d'un nombre décimal."
+  }
+]

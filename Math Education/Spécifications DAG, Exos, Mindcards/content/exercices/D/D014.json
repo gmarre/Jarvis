@@ -1,0 +1,185 @@
+[
+  {
+    "id": "EX-D014-D-01",
+    "skill_id": "D014",
+    "level": "decouverte",
+    "type": "numerique",
+    "statement": "Une planche mesure 2,6 m. On sait que 1 m = 100 cm.\n\nQuelle est la longueur de la planche en centimètres ?",
+    "image": null,
+    "answer": {
+      "value": 260,
+      "unit": "cm",
+      "accepted": [
+        "260 cm"
+      ]
+    },
+    "solution_steps": [
+      "2,6 m, c'est 2 m et 6 dixièmes de mètre.",
+      "1 m = 100 cm, donc 2 m = 200 cm.",
+      "Un dixième de mètre, c'est 1 dm, soit 10 cm. Donc 6 dixièmes de mètre font 60 cm.",
+      "$200 + 60 = 260$ : la planche mesure **260 cm**.",
+      "26 cm serait faux : c'est moins qu'une règle de 30 cm, pas une planche de plus de 2 m."
+    ],
+    "hint": "Que vaut 1 dixième de mètre en centimètres ?",
+    "estimated_duration_s": 60,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 3, CM1, les longueurs : connaître les relations entre les unités de longueur."
+  },
+  {
+    "id": "EX-D014-D-02",
+    "skill_id": "D014",
+    "level": "decouverte",
+    "type": "qcm",
+    "statement": "Une gourde contient 1,5 L d'eau. On sait que 1 L = 100 cL.\n\nCombien de centilitres contient la gourde ?",
+    "image": null,
+    "choices": [
+      {
+        "key": "a",
+        "text": "15 cL",
+        "misconception": "L'élève pense que 1 L = 10 cL : il multiplie par 10 au lieu d'utiliser 1 L = 100 cL. 15 cL, c'est 15 centièmes de litre, moins d'un quart de litre."
+      },
+      {
+        "key": "b",
+        "text": "150 cL",
+        "misconception": null
+      },
+      {
+        "key": "c",
+        "text": "105 cL",
+        "misconception": "L'élève lit 1,5 L comme « 1 L et 5 cL » : il traite le 5 comme un nombre de centilitres alors que c'est un chiffre des dixièmes de litre."
+      },
+      {
+        "key": "d",
+        "text": "1,50 cL",
+        "misconception": "L'élève écrit un zéro à droite en croyant convertir : 1,50 est le même nombre que 1,5, et il a seulement changé l'unité. 1,50 cL tiendrait dans une cuillère."
+      }
+    ],
+    "answer": {
+      "value": "b"
+    },
+    "solution_steps": [
+      "1,5 L, c'est 1 L et 5 dixièmes de litre.",
+      "1 L = 100 cL. Un dixième de litre, c'est 1 dL, soit 10 cL : 5 dixièmes de litre font 50 cL.",
+      "$100 + 50 = 150$. La gourde contient **150 cL**.",
+      "Le 5 de 1,5 est un chiffre des dixièmes, pas des centièmes : il vaut 50 cL, pas 5 cL."
+    ],
+    "hint": "Le 5 de 1,5 L est un chiffre des dixièmes. Combien de centilitres dans un dixième de litre ?",
+    "estimated_duration_s": 60,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 3, CM1, les contenances : connaître les relations entre les unités de contenance."
+  },
+  {
+    "id": "EX-D014-E-01",
+    "skill_id": "D014",
+    "level": "entrainement",
+    "type": "numerique",
+    "statement": "Un melon pèse 1,25 kg.\n\nQuelle est sa masse en grammes ?",
+    "image": null,
+    "answer": {
+      "value": 1250,
+      "unit": "g",
+      "accepted": [
+        "1 250",
+        "1 250 g",
+        "1250 g"
+      ]
+    },
+    "solution_steps": [
+      "1,25 kg, c'est 1 kg, 2 dixièmes de kilogramme et 5 centièmes de kilogramme.",
+      "1 kg = 1 000 g.",
+      "Un dixième de kilogramme vaut 100 g, car $10 \\times 100 = 1\\,000$. Donc 2 dixièmes de kilogramme font 200 g.",
+      "Un centième de kilogramme vaut 10 g, car $100 \\times 10 = 1\\,000$. Donc 5 centièmes de kilogramme font 50 g.",
+      "$1\\,000 + 200 + 50 = 1\\,250$. Le melon pèse **1 250 g**."
+    ],
+    "hint": "Combien de grammes dans 1 kg ? Et dans un dixième de kilogramme ?",
+    "estimated_duration_s": 75,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 3, CM1, les masses : connaître les relations entre les unités de masse."
+  },
+  {
+    "id": "EX-D014-E-02",
+    "skill_id": "D014",
+    "level": "entrainement",
+    "type": "vrai_faux",
+    "statement": "Un clou mesure 3,4 cm. Inès dit : « Il mesure 3,40 mm, car 1 cm = 10 mm. »\n\nA-t-elle raison ?",
+    "image": null,
+    "answer": {
+      "value": false
+    },
+    "solution_steps": [
+      "3,4 cm, c'est 3 cm et 4 dixièmes de centimètre. Un dixième de centimètre, c'est 1 mm.",
+      "3 cm = 30 mm, donc 3,4 cm = 30 mm + 4 mm = 34 mm.",
+      "On peut aussi le voir comme $3{,}4 \\times 10 = 34$ : les 3 unités deviennent 3 dizaines, les 4 dixièmes deviennent 4 unités.",
+      "3,40 et 3,4 sont le même nombre : Inès a seulement écrit un zéro à droite, ce qui ne multiplie pas par 10. Un clou de 3,40 mm serait dix fois plus court.",
+      "C'est **faux** : le clou mesure 34 mm."
+    ],
+    "hint": "3,40 est-il vraiment 10 fois plus grand que 3,4 ?",
+    "estimated_duration_s": 60,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 3, CM1, les longueurs : connaître les relations entre les unités de longueur."
+  },
+  {
+    "id": "EX-D014-M-01",
+    "skill_id": "D014",
+    "level": "maitrise",
+    "type": "numerique",
+    "statement": "Un ruban mesure 2,05 m. Sarah en coupe un morceau de 80 cm.\n\nQuelle longueur de ruban reste-t-il, en centimètres ?",
+    "image": null,
+    "answer": {
+      "value": 125,
+      "unit": "cm",
+      "accepted": [
+        "125 cm"
+      ]
+    },
+    "solution_steps": [
+      "Les deux longueurs ne sont pas dans la même unité : on convertit d'abord 2,05 m en centimètres.",
+      "2,05 m, c'est 2 m, 0 dixième de mètre et 5 centièmes de mètre. Un centième de mètre, c'est 1 cm.",
+      "2 m = 200 cm, donc 2,05 m = 200 cm + 5 cm = 205 cm. Ce n'est pas 250 cm : le 5 est le chiffre des centièmes, pas celui des dixièmes.",
+      "On enlève le morceau coupé : $205 - 80 = 125$.",
+      "Il reste **125 cm** de ruban."
+    ],
+    "hint": "Écris d'abord 2,05 m en centimètres. Attention au 0 : quel est le rang du 5 ?",
+    "estimated_duration_s": 100,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 3, CM1, les longueurs : connaître les relations entre les unités de longueur."
+  },
+  {
+    "id": "EX-D014-M-02",
+    "skill_id": "D014",
+    "level": "maitrise",
+    "type": "qcm",
+    "statement": "Trois bouteilles contiennent 0,75 L ; 85 cL et 0,9 L.\n\nLaquelle contient le plus de liquide ?",
+    "image": null,
+    "choices": [
+      {
+        "key": "a",
+        "text": "La bouteille de 0,75 L",
+        "misconception": "L'élève pense que plus il y a de chiffres après la virgule, plus le nombre est grand : 75 lui paraît plus grand que 9. Or 0,75 L = 75 cL et 0,9 L = 90 cL."
+      },
+      {
+        "key": "b",
+        "text": "La bouteille de 85 cL",
+        "misconception": "L'élève compare les nombres sans convertir : 85 lui paraît plus grand que 0,75 et 0,9, sans tenir compte des unités. Or 85 cL est moins que 0,9 L, qui fait 90 cL."
+      },
+      {
+        "key": "c",
+        "text": "La bouteille de 0,9 L",
+        "misconception": null
+      }
+    ],
+    "answer": {
+      "value": "c"
+    },
+    "solution_steps": [
+      "Les contenances ne sont pas dans la même unité : pour comparer, on les écrit toutes en centilitres, avec 1 L = 100 cL.",
+      "0,75 L, c'est 75 centièmes de litre. Un centième de litre, c'est 1 cL : 0,75 L = 75 cL.",
+      "0,9 L, c'est 9 dixièmes de litre. Un dixième de litre vaut 10 cL : 0,9 L = 90 cL.",
+      "On compare : 75 cL < 85 cL < 90 cL. C'est la bouteille de **0,9 L** qui contient le plus."
+    ],
+    "hint": "Convertis les trois contenances dans la même unité avant de comparer.",
+    "estimated_duration_s": 90,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 3, CM1, les contenances : connaître les relations entre les unités de contenance."
+  }
+]

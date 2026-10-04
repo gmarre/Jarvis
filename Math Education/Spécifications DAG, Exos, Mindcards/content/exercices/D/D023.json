@@ -1,0 +1,180 @@
+[
+  {
+    "id": "EX-D023-D-01",
+    "skill_id": "D023",
+    "level": "decouverte",
+    "type": "numerique",
+    "statement": "Une boîte contient 100 sachets de thé. Chaque sachet contient 2,5 g de thé.\n\nCalcule $2{,}5 \\times 100$ : quelle masse de thé y a-t-il dans la boîte, en grammes ?",
+    "image": null,
+    "answer": {
+      "value": 250,
+      "unit": "g",
+      "accepted": [
+        "250 g"
+      ]
+    },
+    "solution_steps": [
+      "Multiplier par 100 rend chaque chiffre 100 fois plus grand : chaque chiffre avance de **deux rangs** vers la gauche.",
+      "2,5, c'est 2 unités et 5 dixièmes. Les 2 unités deviennent 2 centaines ; les 5 dixièmes deviennent 5 dizaines.",
+      "Il n'y a plus de chiffre au rang des unités : on y écrit un 0. 2 centaines, 5 dizaines et 0 unité : $2{,}5 \\times 100 = 250$.",
+      "Écrire 2,500 serait faux : un zéro écrit à droite après la virgule ne change pas le nombre.",
+      "La boîte contient **250 g** de thé."
+    ],
+    "hint": "Multiplier par 100, c'est multiplier par 10, puis multiplier le résultat par 10. Que deviennent les 5 dixièmes ?",
+    "estimated_duration_s": 60,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 3, CM2, calcul mental : multiplier un nombre décimal par 10, 100 ou 1 000."
+  },
+  {
+    "id": "EX-D023-D-02",
+    "skill_id": "D023",
+    "level": "decouverte",
+    "type": "qcm",
+    "statement": "Calcule mentalement $13{,}6 \\div 100$.",
+    "image": null,
+    "choices": [
+      {
+        "key": "a",
+        "text": "1,36",
+        "misconception": "L'élève divise par 10 au lieu de 100 : les chiffres n'ont reculé que d'un rang. $13{,}6 \\div 10 = 1{,}36$."
+      },
+      {
+        "key": "b",
+        "text": "1 360",
+        "misconception": "L'élève multiplie par 100 au lieu de diviser. Le résultat d'une division par 100 doit être plus petit que 13,6."
+      },
+      {
+        "key": "c",
+        "text": "13,600",
+        "misconception": "L'élève croit que diviser par 100, c'est écrire deux zéros. Mais 13,600 et 13,6 sont le même nombre : rien n'a été divisé."
+      },
+      {
+        "key": "d",
+        "text": "0,136",
+        "misconception": null
+      }
+    ],
+    "answer": {
+      "value": "d"
+    },
+    "solution_steps": [
+      "Diviser par 100 rend chaque chiffre 100 fois plus petit : chaque chiffre recule de **deux rangs** vers la droite.",
+      "13,6, c'est 1 dizaine, 3 unités et 6 dixièmes. La dizaine devient 1 dixième, les 3 unités deviennent 3 centièmes, les 6 dixièmes deviennent 6 millièmes.",
+      "Il n'y a plus de chiffre au rang des unités : on y écrit un 0. $13{,}6 \\div 100 = 0{,}136$.",
+      "Vérification : $0{,}136 \\times 100 = 13{,}6$. La bonne réponse est **0,136**."
+    ],
+    "hint": "Le résultat doit être plus petit que 13,6. De combien de rangs recule chaque chiffre ?",
+    "estimated_duration_s": 50,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 3, CM2, calcul mental : diviser un nombre décimal par 10, 100 ou 1 000."
+  },
+  {
+    "id": "EX-D023-E-01",
+    "skill_id": "D023",
+    "level": "entrainement",
+    "type": "numerique",
+    "statement": "Calcule mentalement $4{,}07 \\times 1\\,000$.",
+    "image": null,
+    "answer": {
+      "value": 4070,
+      "accepted": [
+        "4 070"
+      ]
+    },
+    "solution_steps": [
+      "Multiplier par 1 000 rend chaque chiffre 1 000 fois plus grand : chaque chiffre avance de **trois rangs** vers la gauche.",
+      "4,07, c'est 4 unités, 0 dixième et 7 centièmes. Les 4 unités deviennent 4 milliers, le 0 des dixièmes devient le 0 des centaines, les 7 centièmes deviennent 7 dizaines.",
+      "Le rang des unités est vide : on y écrit un 0. $4{,}07 \\times 1\\,000 = 4\\,070$.",
+      "Ce n'est pas 407 : ce serait multiplier par 100. Et le 0 des dixièmes ne disparaît pas : il devient le chiffre des centaines."
+    ],
+    "hint": "Chaque chiffre avance de trois rangs. Où va le 4 des unités ?",
+    "estimated_duration_s": 50,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 3, CM2, calcul mental : multiplier un nombre décimal par 10, 100 ou 1 000."
+  },
+  {
+    "id": "EX-D023-E-02",
+    "skill_id": "D023",
+    "level": "entrainement",
+    "type": "vrai_faux",
+    "statement": "Paul dit : « $7{,}5 \\div 100 = 0{,}075$, car le chiffre 7 des unités devient le chiffre des centièmes. »\n\nPaul a-t-il raison ?",
+    "image": null,
+    "answer": {
+      "value": true
+    },
+    "solution_steps": [
+      "Diviser par 100 rend chaque chiffre 100 fois plus petit : chaque chiffre recule de deux rangs vers la droite.",
+      "Le 7 des unités recule de deux rangs : unités, dixièmes, centièmes. Il devient bien le chiffre des centièmes. Le 5 des dixièmes devient le chiffre des millièmes.",
+      "Il reste 0 unité et 0 dixième : on écrit $0{,}075$. Vérification : $0{,}075 \\times 100 = 7{,}5$.",
+      "C'est **vrai** : Paul a raison. Les deux zéros sont indispensables, ils tiennent les rangs des unités et des dixièmes."
+    ],
+    "hint": "Le 7 recule de deux rangs : compte unités, dixièmes, centièmes.",
+    "estimated_duration_s": 50,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 3, CM2, calcul mental : diviser un nombre décimal par 10, 100 ou 1 000."
+  },
+  {
+    "id": "EX-D023-M-01",
+    "skill_id": "D023",
+    "level": "maitrise",
+    "type": "numerique",
+    "statement": "1 000 grains de riz pèsent 23 g.\n\nCombien pèse un grain de riz, en grammes ?",
+    "image": null,
+    "answer": {
+      "value": 0.023,
+      "unit": "g",
+      "accepted": [
+        "0,023 g"
+      ]
+    },
+    "solution_steps": [
+      "Les 1 000 grains pèsent 23 g : pour la masse d'un seul grain, on partage en 1 000, on calcule $23 \\div 1\\,000$.",
+      "Diviser par 1 000 rend chaque chiffre 1 000 fois plus petit : chaque chiffre recule de **trois rangs** vers la droite.",
+      "23, c'est 2 dizaines et 3 unités. Les 2 dizaines deviennent 2 centièmes, les 3 unités deviennent 3 millièmes.",
+      "Les rangs des unités et des dixièmes sont vides : on y écrit des 0. $23 \\div 1\\,000 = 0{,}023$.",
+      "Vérification : $0{,}023 \\times 1\\,000 = 23$. Un grain de riz pèse **0,023 g**, une masse très petite : c'est cohérent."
+    ],
+    "hint": "On connaît la masse de 1 000 grains et on cherche celle d'un seul : multiplier ou diviser par 1 000 ?",
+    "estimated_duration_s": 75,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 3, CM2, calcul mental : diviser un nombre décimal par 10, 100 ou 1 000."
+  },
+  {
+    "id": "EX-D023-M-02",
+    "skill_id": "D023",
+    "level": "maitrise",
+    "type": "qcm",
+    "statement": "Complète : $2{,}75 \\times \\dots = 2\\,750$.",
+    "image": null,
+    "choices": [
+      {
+        "key": "a",
+        "text": "10",
+        "misconception": "L'élève voit un zéro au bout de 2 750 et pense « un zéro ajouté, donc × 10 ». Mais $2{,}75 \\times 10 = 27{,}5$."
+      },
+      {
+        "key": "b",
+        "text": "100",
+        "misconception": "L'élève pense qu'il suffit d'effacer la virgule : deux chiffres après la virgule, donc × 100. Mais $2{,}75 \\times 100 = 275$, pas 2 750."
+      },
+      {
+        "key": "c",
+        "text": "1 000",
+        "misconception": null
+      }
+    ],
+    "answer": {
+      "value": "c"
+    },
+    "solution_steps": [
+      "On suit le chiffre 2. Dans 2,75, c'est le chiffre des unités ; dans 2 750, c'est le chiffre des milliers.",
+      "Des unités aux milliers, il avance de trois rangs : unités, dizaines, centaines, milliers. Avancer de trois rangs, c'est multiplier par 1 000.",
+      "Vérification : $2{,}75 \\times 10 = 27{,}5$ ; $2{,}75 \\times 100 = 275$ ; $2{,}75 \\times 1\\,000 = 2\\,750$.",
+      "La bonne réponse est **1 000**."
+    ],
+    "hint": "Suis le chiffre 2 : dans 2 750, à quel rang est-il ?",
+    "estimated_duration_s": 60,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 3, CM2, calcul mental : multiplier un nombre décimal par 10, 100 ou 1 000."
+  }
+]

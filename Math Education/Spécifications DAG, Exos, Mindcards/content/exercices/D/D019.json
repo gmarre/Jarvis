@@ -1,0 +1,153 @@
+[
+  {
+    "id": "EX-D019-D-01",
+    "skill_id": "D019",
+    "level": "decouverte",
+    "type": "numerique",
+    "statement": "Une demi-droite est graduée en dixièmes : entre 0 et 1, il y a 10 intervalles égaux.\n\nQuel nombre se trouve à la 7e graduation après 0 ?",
+    "image": null,
+    "answer": {
+      "value": 0.7,
+      "accepted": [
+        "7/10"
+      ]
+    },
+    "solution_steps": [
+      "L'unité, de 0 à 1, est partagée en 10 intervalles égaux : chaque intervalle vaut un dixième, $\\frac{1}{10}$.",
+      "À la 7e graduation après 0, on a avancé de 7 dixièmes : $\\frac{7}{10}$.",
+      "$\\frac{7}{10}$ s'écrit 0,7 : 0 unité et 7 dixièmes. Le nombre est **0,7**.",
+      "Rappel : le dénominateur 10 donne la taille d'un intervalle, le numérateur 7 dit combien on en parcourt."
+    ],
+    "hint": "Combien vaut un intervalle quand l'unité est partagée en 10 ?",
+    "estimated_duration_s": 45,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 3, CM1 : placer un nombre décimal en écriture à virgule sur une demi-droite graduée et repérer un point d'une demi-droite graduée par un nombre décimal."
+  },
+  {
+    "id": "EX-D019-D-02",
+    "skill_id": "D019",
+    "level": "decouverte",
+    "type": "qcm",
+    "statement": "Une demi-droite est graduée en dixièmes. On y lit la graduation 3 puis la graduation 4, avec 10 intervalles égaux entre elles.\n\nOù se place le nombre 3,6 ?",
+    "image": null,
+    "choices": [
+      {
+        "key": "a",
+        "text": "à la 7e graduation après 3",
+        "misconception": "L'élève compte les traits au lieu des intervalles : il compte la graduation 3 comme la première, 3,1 comme la deuxième, et arrive à 7 en atteignant 3,6."
+      },
+      {
+        "key": "b",
+        "text": "à la 6e graduation après 3",
+        "misconception": null
+      },
+      {
+        "key": "c",
+        "text": "à la 6e graduation après 0",
+        "misconception": "L'élève oublie la partie entière : il place 0,6 au lieu de 3,6."
+      }
+    ],
+    "answer": {
+      "value": "b"
+    },
+    "solution_steps": [
+      "3,6, c'est 3 unités et 6 dixièmes : on part de la graduation 3.",
+      "Entre 3 et 4, chaque intervalle vaut un dixième. On avance de 6 intervalles : 3,1 ; 3,2 ; 3,3 ; 3,4 ; 3,5 ; 3,6.",
+      "On ne compte pas la graduation 3 elle-même : la 1re graduation après 3 est 3,1.",
+      "3,6 est à la **6e graduation après 3**, juste après le milieu entre 3 et 4, qui est 3,5. La bonne réponse est b."
+    ],
+    "hint": "Pars de la graduation 3 et compte les intervalles, pas les traits.",
+    "estimated_duration_s": 60,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 3, CM1 : placer un nombre décimal en écriture à virgule sur une demi-droite graduée et repérer un point d'une demi-droite graduée par un nombre décimal."
+  },
+  {
+    "id": "EX-D019-E-01",
+    "skill_id": "D019",
+    "level": "entrainement",
+    "type": "numerique",
+    "statement": "Une demi-droite est graduée en centièmes : entre 7 et 7,1, il y a 10 intervalles égaux.\n\nQuel nombre se trouve à la 4e graduation après 7 ?",
+    "image": null,
+    "answer": {
+      "value": 7.04
+    },
+    "solution_steps": [
+      "De 7 à 7,1, on avance d'un dixième, c'est-à-dire de 10 centièmes : 7,1 = 7,10.",
+      "Ce dixième est partagé en 10 intervalles égaux : chaque intervalle vaut un centième.",
+      "À la 4e graduation après 7, on a avancé de 4 centièmes.",
+      "Piège : ce n'est pas 7,4. Le chiffre 4 doit être au rang des centièmes, d'où le 0 au rang des dixièmes. Le nombre est **7,04**."
+    ],
+    "hint": "Combien vaut un intervalle quand un dixième est partagé en 10 ?",
+    "estimated_duration_s": 75,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 3, CM1 : placer un nombre décimal en écriture à virgule sur une demi-droite graduée et repérer un point d'une demi-droite graduée par un nombre décimal."
+  },
+  {
+    "id": "EX-D019-E-02",
+    "skill_id": "D019",
+    "level": "entrainement",
+    "type": "texte",
+    "statement": "Une demi-droite est graduée en dixièmes à partir de 0. Le point A est à la 13e graduation après 0.\n\nRepère A par une fraction décimale, sous la forme numérateur/dénominateur.",
+    "image": null,
+    "answer": {
+      "value": "13/10",
+      "accepted": [
+        "13 / 10",
+        "130/100",
+        "130 / 100"
+      ]
+    },
+    "solution_steps": [
+      "Chaque intervalle vaut un dixième, $\\frac{1}{10}$.",
+      "À la 13e graduation, on a parcouru 13 dixièmes : l'abscisse de A est $\\frac{13}{10}$.",
+      "10 dixièmes font une unité : $\\frac{13}{10} = 1 + \\frac{3}{10}$, soit 1,3. A est entre 1 et 2, à la 3e graduation après 1.",
+      "On peut aussi écrire 1,3, l'écriture à virgule. La question demandait la fraction décimale : $\\frac{13}{10}$."
+    ],
+    "hint": "Chaque graduation ajoute un dixième. Combien de dixièmes en tout ?",
+    "estimated_duration_s": 75,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 3, CM1 : placer une fraction décimale sur une demi-droite graduée et repérer un point d'une demi-droite graduée par une fraction décimale."
+  },
+  {
+    "id": "EX-D019-M-01",
+    "skill_id": "D019",
+    "level": "maitrise",
+    "type": "vrai_faux",
+    "statement": "Une demi-droite est graduée en dixièmes : 10 intervalles égaux entre 5 et 6.\n\nLéo place 5,25 à la 25e graduation après 5. A-t-il raison ?",
+    "image": null,
+    "answer": {
+      "value": false
+    },
+    "solution_steps": [
+      "Chaque intervalle vaut un dixième. La 25e graduation après 5 est 25 dixièmes plus loin, soit 2 unités et 5 dixièmes : on arriverait à 7,5.",
+      "5,25, c'est 5 unités, 2 dixièmes et 5 centièmes. Il est entre 5,2 et 5,3 : $5{,}2 < 5{,}25 < 5{,}3$.",
+      "5,25 dépasse 5,20 de 5 centièmes, la moitié d'un dixième : le point est au milieu entre la 2e et la 3e graduation après 5.",
+      "Léo a lu 25 comme un nombre de dixièmes. Il a **tort**."
+    ],
+    "hint": "Dans 5,25, quel chiffre compte les dixièmes ?",
+    "estimated_duration_s": 120,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 3, CM1 : placer un nombre décimal en écriture à virgule sur une demi-droite graduée et repérer un point d'une demi-droite graduée par un nombre décimal."
+  },
+  {
+    "id": "EX-D019-M-02",
+    "skill_id": "D019",
+    "level": "maitrise",
+    "type": "numerique",
+    "statement": "Une demi-droite est graduée en centièmes. Un point se trouve 6 graduations après 1,97.\n\nQuelle est son abscisse ?",
+    "image": null,
+    "answer": {
+      "value": 2.03
+    },
+    "solution_steps": [
+      "Chaque graduation vaut un centième : on avance de 6 centièmes à partir de 1,97.",
+      "On compte : 1,98 ; 1,99 ; puis 2, car 100 centièmes font une unité ; 2,01 ; 2,02 ; 2,03.",
+      "Le point a pour abscisse **2,03**. En chemin, on a franchi la graduation 2.",
+      "Piège : ajouter 6 à 97 et écrire 1,103. Après 1,99, on ne passe pas à « 1,100 » : on arrive à 2."
+    ],
+    "hint": "Compte de centième en centième. Que vient-il après 1,99 ?",
+    "estimated_duration_s": 120,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 3, CM1 : placer un nombre décimal en écriture à virgule sur une demi-droite graduée et repérer un point d'une demi-droite graduée par un nombre décimal."
+  }
+]

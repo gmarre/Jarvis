@@ -1492,6 +1492,84 @@ Trouve une fraction de numérateur 1 plus grande que 1/8 et plus petite que 1/4.
 
 ---
 
+## `D016` · Écrire une somme d'argent avec une virgule — CE1, difficulté 2
+
+*Passer d'une somme en euros et centimes à son écriture à virgule et réciproquement (100 centimes = 1 €), en distinguant 2,05 € de 2,50 €, et ranger des prix donnés sous des écritures différentes. Monnaie uniquement, sans les mots dixième ni centième.*
+
+> « Connaitre le sens de l'écriture à virgule d'une somme d'argent. » — *Cycle 2, Cours élémentaire première année, La monnaie*
+> « L'élève exprime la valeur d'un ensemble constitué de pièces et de billets en euro et en centime d'euro, avec un nombre final de centimes strictement inférieur à 100 ou en utilisant l'écriture à virgule. » — *Cycle 2, Cours élémentaire première année, La monnaie*
+> « L'élève sait ordonner quatre prix dans l'ordre croissant ou décroissant, quelles que soient les écritures de ces prix. » — *Cycle 2, Cours élémentaire première année, La monnaie*
+
+**EX-D016-D-01** — decouverte, numerique, 30 s
+
+Lina a 8 € et 35 centimes dans sa tirelire. Écris cette somme en euros, avec une virgule.
+
+**Réponse :** 8.35
+
+*Corrigé.* (1) Dans l'écriture d'une somme d'argent, la virgule sépare les euros des centimes : les euros avant la virgule, les centimes après. (2) Avant la virgule, on écrit les 8 euros. (3) Après la virgule, on écrit les 35 centimes : 3 dizaines de centimes, puis 5 centimes. (4) 8 € et 35 centimes s'écrit 8,35 €.
+
+*Indice.* Avant la virgule, les euros. Après la virgule, les centimes.
+
+**EX-D016-D-02** — decouverte, qcm, 30 s
+
+Tom paie 4 € et 8 centimes. Comment s'écrit ce prix avec une virgule ?
+
+- **a.** 48 €
+  <br>*Erreur visée :* L'élève colle les euros et les centimes sans virgule. Mais 48 €, c'est quarante-huit euros, bien plus que le prix payé.
+- **b.** 4,08 € ✅
+- **c.** 4,80 €
+  <br>*Erreur visée :* L'élève écrit le 8 juste après la virgule. Or le premier chiffre après la virgule compte les dizaines de centimes : 4,80 €, c'est 4 € et 80 centimes, pas 8 centimes.
+
+*Corrigé.* (1) Avant la virgule, on écrit les euros : 4. (2) Après la virgule, il y a toujours deux chiffres : d'abord celui des dizaines de centimes, puis celui des centimes. (3) 8 centimes, c'est 0 dizaine de centimes et 8 centimes : on écrit 0, puis 8. (4) 4 € et 8 centimes s'écrit 4,08 €. Attention : 4,80 €, c'est 4 € et 80 centimes.
+
+*Indice.* 8 centimes : combien de dizaines de centimes ?
+
+**EX-D016-E-01** — entrainement, numerique, 45 s
+
+Un cahier coûte 275 centimes. Rappel : 100 centimes font 1 €. Écris ce prix en euros, avec une virgule.
+
+**Réponse :** 2.75
+
+*Corrigé.* (1) On décompose 275 centimes : 200 centimes et 75 centimes. (2) 100 centimes font 1 €. 200 centimes, c'est 100 centimes et 100 centimes : cela fait 2 €. (3) Donc 275 centimes = 2 € et 75 centimes. (4) Avant la virgule les euros, après la virgule les centimes : 2,75 €.
+
+*Indice.* Combien d'euros peux-tu faire avec 275 centimes, sachant qu'il en faut 100 pour 1 € ?
+
+**EX-D016-E-02** — entrainement, vrai_faux, 45 s
+
+Zoé a 7 pièces de 1 € et 6 pièces de 10 centimes. Elle écrit : 7,06 €. A-t-elle raison ?
+
+**Réponse :** False
+
+*Corrigé.* (1) 7 pièces de 1 € font 7 €. (2) 6 pièces de 10 centimes : on compte de 10 en 10, 10, 20, 30, 40, 50, 60. Cela fait 60 centimes, soit 6 dizaines de centimes. (3) 7 € et 60 centimes s'écrit 7,60 €. (4) 7,06 €, c'est 7 € et seulement 6 centimes : Zoé a confondu 6 pièces de 10 centimes avec 6 centimes. Elle a tort.
+
+*Indice.* Combien de centimes font 6 pièces de 10 centimes ?
+
+**EX-D016-M-01** — maitrise, qcm, 90 s
+
+Range ces prix du moins cher au plus cher : 2,50 € ; 195 centimes ; 2,05 € ; 2 € et 30 centimes
+
+- **a.** 2,05 € ; 2 € et 30 centimes ; 2,50 € ; 195 centimes
+  <br>*Erreur visée :* L'élève compare les nombres sans regarder l'unité : 195 lui paraît le plus grand. Or 195 centimes, c'est 1 € et 95 centimes, moins que 2 €.
+- **b.** 195 centimes ; 2,50 € ; 2 € et 30 centimes ; 2,05 €
+  <br>*Erreur visée :* L'élève lit 2,50 € comme 2 € et 5 centimes, et 2,05 € comme 2 € et 50 centimes : il ne voit pas que le chiffre juste après la virgule compte les dizaines de centimes.
+- **c.** 195 centimes ; 2,05 € ; 2 € et 30 centimes ; 2,50 € ✅
+
+*Corrigé.* (1) On écrit d'abord tous les prix de la même façon, en euros avec une virgule. (2) 195 centimes = 100 centimes et 95 centimes = 1 € et 95 centimes, soit 1,95 €. 2 € et 30 centimes s'écrit 2,30 €. (3) 1,95 € est le seul prix qui n'atteint pas 2 € : c'est le moins cher. (4) Les trois autres prix ont 2 euros : on compare les centimes. 2,05 €, c'est 5 centimes ; 2,30 €, 30 centimes ; 2,50 €, 50 centimes. Et 5 < 30 < 50. (5) Du moins cher au plus cher : 195 centimes ; 2,05 € ; 2 € et 30 centimes ; 2,50 €.
+
+*Indice.* Écris d'abord tous les prix en euros, avec une virgule.
+
+**EX-D016-M-02** — maitrise, numerique, 60 s
+
+Max a 2 € et 135 centimes. Écris sa somme en euros, avec une virgule.
+
+**Réponse :** 3.35
+
+*Corrigé.* (1) 135 centimes, c'est plus que 100 centimes : avec 100 centimes, on peut faire 1 € de plus. (2) 135 centimes = 100 centimes et 35 centimes = 1 € et 35 centimes. (3) Max a donc 2 €, plus 1 € : en comptant, 2, 3. Il a 3 € et 35 centimes. (4) Après la virgule, il reste moins de 100 centimes : on écrit 3,35 €.
+
+*Indice.* Avec 100 de ses centimes, Max peut faire 1 €.
+
+---
+
 ## `B038` · Problèmes mixtes en deux étapes — CE1, difficulté 3
 
 *Résoudre un problème en deux étapes qui combine une étape multiplicative et une étape additive ou soustractive*
@@ -1504,7 +1582,7 @@ Ali a 2 sachets de 5 billes, et 4 billes à part. ● ● ● ● ● ● ● �
 
 **Réponse :** 14
 
-*Corrigé.* (1) D'abord les sachets : 2 sachets de 5 billes, c'est 2 fois 5, soit 2 imes 5 = 10 billes. (2) Ensuite, on ajoute les 4 billes à part : 10 + 4 = 14. (3) Ali a 14 billes en tout.
+*Corrigé.* (1) D'abord les sachets : 2 sachets de 5 billes, c'est 2 fois 5, soit 2 × 5 = 10 billes. (2) Ensuite, on ajoute les 4 billes à part : 10 + 4 = 14. (3) Ali a 14 billes en tout.
 
 *Indice.* Compte d'abord les billes des sachets, puis ajoute les autres.
 
@@ -1528,7 +1606,7 @@ Un fermier remplit 4 boîtes de 8 œufs, puis casse 2 œufs en chemin. Combien d
 
 **Réponse :** 30
 
-*Corrigé.* (1) D'abord, les œufs dans les boîtes : 4 boîtes de 8 œufs, c'est 4 fois 8, soit 4 imes 8 = 32 œufs. C'est un résultat de la table de 4 : 4 fois 8, c'est autant que 8 fois 4. (2) Ensuite, 2 œufs sont cassés : 32 - 2 = 30. (3) Il reste 30 œufs intacts.
+*Corrigé.* (1) D'abord, les œufs dans les boîtes : 4 boîtes de 8 œufs, c'est 4 fois 8, soit 4 × 8 = 32 œufs. C'est un résultat de la table de 4 : 4 fois 8, c'est autant que 8 fois 4. (2) Ensuite, 2 œufs sont cassés : 32 - 2 = 30. (3) Il reste 30 œufs intacts.
 
 *Indice.* Combien d'œufs le fermier avait-il avant d'en casser ?
 
@@ -2072,6 +2150,84 @@ Une boulangère cuit 45 plaques de 12 croissants et 23 plaques de 9 brioches. Co
 *Corrigé.* (1) Les croissants : 45 plaques de 12 croissants, soit 45 × 12. Première ligne, 45 × 2 = 90. Deuxième ligne, 45 × 10 : on écrit un 0 aux unités, puis 45, ce qui donne 450. Total : 90 + 450 = 540 croissants. (2) Les brioches : 23 plaques de 9 brioches, soit 23 × 9. Unités : 9 × 3 = 27, on écrit 7 et on retient 2. Dizaines : 9 × 2 = 18, plus 2, cela fait 20. Résultat : 207 brioches. (3) On additionne les croissants et les brioches : 540 + 207 = 747. (4) La boulangère cuit 747 croissants et brioches.
 
 *Indice.* Calcule d'abord le nombre de croissants, puis le nombre de brioches, et additionne.
+
+---
+
+## `D017` · Additionner et soustraire des montants en euros (posé) — CE2, difficulté 3
+
+*Poser et effectuer des additions et des soustractions de montants en euros écrits avec une virgule (toujours deux chiffres de centimes), et rendre la monnaie. Les montants restent inférieurs à 10 000 €.*
+
+> « Les techniques posées rencontrées au CE1 pour l'addition et la soustraction des nombres entiers sont étendues au CE2 aux montants en euro utilisant l'écriture à virgule. » — *Cycle 2, Cours élémentaire deuxième année, La monnaie*
+> « Poser et effectuer des additions de montants en euro. » — *Cycle 2, Cours élémentaire deuxième année, La monnaie*
+> « Poser et effectuer des soustractions de montants en euro. » — *Cycle 2, Cours élémentaire deuxième année, La monnaie*
+
+**EX-D017-D-01** — decouverte, numerique, 60 s
+
+Un stylo coûte 4,35 € et une gomme 2,52 €. Pose l'addition, virgule sous virgule, et calcule le prix total.
+
+**Réponse :** 6.87
+
+*Corrigé.* (1) On écrit 2,52 sous 4,35 en alignant les virgules : centimes sous centimes, dizaines de centimes sous dizaines de centimes, euros sous euros. (2) Centimes : 5 + 2 = 7. On écrit 7. (3) Dizaines de centimes : 3 + 5 = 8. On écrit 8. (4) On écrit la virgule du résultat sous les autres virgules. (5) Euros : 4 + 2 = 6. On écrit 6. Le prix total est 6,87 €.
+
+*Indice.* Commence par la colonne des centimes, tout à droite.
+
+**EX-D017-D-02** — decouverte, qcm, 60 s
+
+Pose et calcule la somme de 12,75 € et de 3,40 €.
+
+- **a.** 15,15 €
+  <br>*Erreur visée :* L'élève oublie la retenue : 7 + 4 = 11 dizaines de centimes, soit 1 € et 1 dizaine de centimes. Il écrit 1 mais n'ajoute pas l'euro retenu dans la colonne des euros.
+- **b.** 15,115 €
+  <br>*Erreur visée :* L'élève additionne à part les euros (12 + 3 = 15) et les centimes (75 + 40 = 115), puis colle les deux. Or 115 centimes, c'est 1 € et 15 centimes : l'euro doit passer du côté des euros.
+- **c.** 16,15 € ✅
+
+*Corrigé.* (1) On pose 3,40 sous 12,75, virgule sous virgule. (2) Centimes : 5 + 0 = 5. On écrit 5. (3) Dizaines de centimes : 7 + 4 = 11. 11 dizaines de centimes, c'est 110 centimes, soit 1 € et 1 dizaine de centimes. On écrit 1 et on retient 1 €, noté en petit en haut de la colonne des unités d'euros. (4) On écrit la virgule. Unités d'euros : 1 + 2 + 3 = 6. Dizaines d'euros : on recopie 1. (5) 12{,}75 + 3{,}40 = 16{,}15 : la bonne réponse est 16,15 €.
+
+*Indice.* Que fais-tu quand la colonne des dizaines de centimes dépasse 9 ?
+
+**EX-D017-E-01** — entrainement, numerique, 90 s
+
+Hugo a 25,30 €. Il achète une BD à 13,85 €. Pose la soustraction : combien d'argent lui reste-t-il ?
+
+**Réponse :** 11.45
+
+*Corrigé.* (1) On enlève le prix de la BD à l'argent d'Hugo : on pose 13,85 sous 25,30, virgule sous virgule. (2) Centimes : on ne peut pas enlever 5 à 0. On casse une des 3 dizaines de centimes : barre le 3, écris 2 au-dessus, et écris un petit 1 devant le 0. 10 - 5 = 5. (3) Dizaines de centimes : il en reste 2, on ne peut pas enlever 8. On casse un des 5 euros : 1 €, c'est 10 dizaines de centimes. Barre le 5, écris 4 au-dessus, et écris un petit 1 devant le 2. 12 - 8 = 4. (4) On écrit la virgule. Unités d'euros : 4 - 3 = 1. Dizaines d'euros : 2 - 1 = 1. (5) Il reste 11,45 € à Hugo. On vérifie : 11{,}45 + 13{,}85 = 25{,}30. Si ta classe utilise une autre méthode de soustraction, tu dois trouver le même résultat.
+
+*Indice.* Aux centimes, il faut casser une dizaine de centimes. Aux dizaines de centimes, il faut casser un euro.
+
+**EX-D017-E-02** — entrainement, vrai_faux, 60 s
+
+Nina doit payer 24,60 €, puis 15 €. Elle pose l'addition et trouve 24,75 €. A-t-elle raison ?
+
+**Réponse :** False
+
+*Corrigé.* (1) 15 € n'a pas de centimes : 15 € s'écrit aussi 15,00 €. Son 5 compte des euros, pas des centimes. (2) Nina a aligné 15 à droite, sous le 60 : elle a ajouté 15 centimes au lieu de 15 euros. (3) On aligne les virgules : 15,00 sous 24,60. Centimes : 0 + 0 = 0. Dizaines de centimes : 6 + 0 = 6. Unités d'euros : 4 + 5 = 9. Dizaines d'euros : 2 + 1 = 3. (4) 24{,}60 + 15{,}00 = 39{,}60 : Nina a tort. Payer 15 € de plus ne peut pas ajouter seulement 15 centimes.
+
+*Indice.* Le 5 de 15 € compte-t-il des euros ou des centimes ? Où le places-tu ?
+
+**EX-D017-M-01** — maitrise, numerique, 150 s
+
+Paul achète des fraises à 3,75 € et du pain à 1,40 €. Il paie avec un billet de 10 €. Combien la marchande lui rend-elle ?
+
+**Réponse :** 4.85
+
+*Corrigé.* (1) Première étape, le prix total : on pose 1,40 sous 3,75, virgule sous virgule. (2) Centimes : 5 + 0 = 5. Dizaines de centimes : 7 + 4 = 11, on écrit 1 et on retient 1 €. Euros : 1 + 3 + 1 = 5. Paul doit payer 5,15 €. (3) Deuxième étape, la monnaie rendue : on enlève 5,15 € aux 10 €. On écrit 10 € sous la forme 10,00 € pour avoir des centimes, puis on pose 5,15 dessous, virgule sous virgule. (4) Centimes : on ne peut pas enlever 5 à 0, et il n'y a ni dizaine de centimes ni unité d'euro à casser. On casse d'abord la dizaine d'euros : barre le 1 et écris 0 au-dessus, barre le 0 des unités d'euros et écris 10 au-dessus. On casse un de ces 10 euros, car 1 € = 10 dizaines de centimes : barre le 10 et écris 9 au-dessus, barre le 0 des dizaines de centimes et écris 10 au-dessus. On casse enfin une de ces 10 dizaines de centimes : barre le 10, écris 9 au-dessus, et écris un petit 1 devant le 0 des centimes. (5) Centimes : 10 - 5 = 5. Dizaines de centimes : 9 - 1 = 8. Unités d'euros : 9 - 5 = 4. (6) La marchande rend 4,85 €. On vérifie : 4{,}85 + 5{,}15 = 10{,}00. On peut aussi rendre la monnaie en complétant : de 5,15 € à 6 €, 85 centimes ; de 6 € à 10 €, 4 € ; en tout 4,85 €. Si ta classe utilise une autre méthode de soustraction, tu dois trouver le même résultat.
+
+*Indice.* Calcule d'abord le prix total, puis ce qui reste du billet de 10 €.
+
+**EX-D017-M-02** — maitrise, qcm, 120 s
+
+Théo pose 32{,}40 - 8{,}75 (en euros) et trouve 36,35 €. Quelle est son erreur ?
+
+- **a.** Il a additionné les deux montants au lieu de les soustraire.
+  <br>*Erreur visée :* L'élève voit un résultat trop grand et pense à une addition, sans vérifier : 32{,}40 + 8{,}75 = 41{,}15, pas 36,35.
+- **b.** Dans chaque colonne, il a enlevé le petit chiffre du grand, même quand le chiffre du haut était le plus petit. ✅
+- **c.** Il n'a pas aligné les virgules.
+  <br>*Erreur visée :* L'élève pense à l'erreur d'alignement, fréquente. Mais les deux montants ont deux chiffres de centimes : 8,75 tombe sous 32,40 chiffre sous chiffre, que l'on aligne les virgules ou les chiffres de droite.
+
+*Corrigé.* (1) Une soustraction ne peut pas donner plus que le nombre de départ : 36,35 € est plus que 32,40 €. Théo s'est trompé. (2) Ses colonnes. Centimes : 0 en haut, 5 en bas ; il a écrit 5, comme pour 5 - 0. Dizaines de centimes : 4 en haut, 7 en bas ; il a écrit 3, soit 7 - 4. Unités d'euros : 2 en haut, 8 en bas ; il a écrit 6, soit 8 - 2. (3) Quand le chiffre du haut est le plus petit, il faut casser une unité de la colonne de gauche : une dizaine de centimes, puis un euro, puis une dizaine d'euros. (4) Le bon calcul : 32{,}40 - 8{,}75 = 23{,}65. On vérifie : 23{,}65 + 8{,}75 = 32{,}40. La bonne réponse est b. Si ta classe utilise une autre méthode de soustraction, tu dois trouver le même résultat.
+
+*Indice.* Une soustraction peut-elle donner plus que le nombre de départ ? Regarde ensuite chaque colonne.
 
 ---
 
@@ -2962,6 +3118,788 @@ Sur une demi-droite graduée en sixièmes, quelle fraction se trouve à la gradu
 
 ---
 
+## `D018` · Fractions décimales : dixièmes et centièmes — CM1, difficulté 3
+
+*Lire, écrire et représenter des fractions de dénominateur 10 ou 100, utiliser les relations 1 = 10 dixièmes = 100 centièmes et 1 dixième = 10 centièmes, et décomposer une fraction décimale supérieure à 1 en un entier plus des dixièmes et des centièmes.*
+
+> « Interpréter, représenter, écrire et lire des fractions décimales » — *Cycle 3, Cours moyen première année, Les nombres décimaux*
+> « Connaître et utiliser les relations entre unités simples, dixièmes et centièmes » — *Cycle 3, Cours moyen première année, Les nombres décimaux*
+> « Écrire une fraction décimale supérieure à 1 comme la somme d'un nombre entier et de fractions décimales ayant un numérateur inférieur à 10 » — *Cycle 3, Cours moyen première année, Les nombres décimaux*
+
+**EX-D018-D-01** — decouverte, texte, 45 s
+
+Un carré est partagé en 100 petits carreaux égaux : chaque carreau est un centième du carré. On colorie 37 carreaux. Quelle fraction du carré est coloriée ? Écris-la sous la forme numérateur/dénominateur.
+
+**Réponse :** 37/100
+
+*Corrigé.* (1) Le carré entier est partagé en 100 parts égales : le dénominateur est 100. (2) On a colorié 37 de ces parts : le numérateur est 37. (3) La partie coloriée est 37/100 du carré : trente-sept centièmes. (4) On peut ranger les 100 carreaux en 10 rangées de 10 : une rangée est alors un dixième du carré. 37 carreaux, c'est 3 rangées complètes et 7 carreaux : 3 dixièmes et 7 centièmes.
+
+*Indice.* En combien de parts égales le carré est-il partagé ? Combien en a-t-on colorié ?
+
+**EX-D018-D-02** — decouverte, qcm, 45 s
+
+Une unité est partagée en 10 dixièmes. Puis chaque dixième est partagé en 10 parts égales. Que vaut une de ces petites parts ?
+
+- **a.** une centaine
+  <br>*Erreur visée :* L'élève confond centième et centaine. Une centaine vaut 100 unités, alors qu'une petite part est bien plus petite qu'une unité.
+- **b.** un dixième
+  <br>*Erreur visée :* L'élève pense que partager un dixième donne encore des dixièmes. Or il faut 100 de ces petites parts pour faire l'unité, et seulement 10 dixièmes.
+- **c.** une dizaine
+  <br>*Erreur visée :* L'élève confond dixième et dizaine. Une dizaine vaut 10 unités : c'est plus grand que l'unité, pas une part de l'unité.
+- **d.** un centième ✅
+
+*Corrigé.* (1) Les 10 dixièmes sont chacun coupés en 10 : l'unité est coupée en 10 paquets de 10, soit 100 petites parts égales. (2) Une part sur 100 parts égales de l'unité, c'est 1/100 : un centième. (3) Il faut 10 centièmes pour faire 1 dixième, et 100 centièmes pour faire l'unité. (4) Attention aux mots : une dizaine (10) et une centaine (100) sont plus grandes que l'unité ; un dixième et un centième sont plus petits.
+
+*Indice.* En combien de petites parts égales l'unité est-elle partagée en tout ?
+
+**EX-D018-E-01** — entrainement, numerique, 60 s
+
+Une unité vaut 100 centièmes, un dixième vaut 10 centièmes. Combien de centièmes y a-t-il en tout dans 2 unités et 6 dixièmes ?
+
+**Réponse :** 260
+
+*Corrigé.* (1) 2 unités : 100 + 100 = 200 centièmes. (2) 6 dixièmes : 6 paquets de 10 centièmes, soit 60 centièmes. (3) En tout : 200 + 60 = 260 centièmes. On peut l'écrire 2 + 6/10 = 260/100. (4) Attention : 26, c'est le nombre de dixièmes (2 unités = 20 dixièmes, plus 6). En centièmes, il y en a 10 fois plus : 260.
+
+*Indice.* Compte d'abord les centièmes contenus dans 2 unités.
+
+**EX-D018-E-02** — entrainement, texte, 90 s
+
+Écris 358/100 comme la somme d'un entier et de fractions décimales de numérateur inférieur à 10. Écris ta réponse sous la forme d'un entier plus deux fractions numérateur/dénominateur.
+
+**Réponse :** 3 + 5/10 + 8/100
+
+*Corrigé.* (1) 358 centièmes = 300 centièmes + 50 centièmes + 8 centièmes. (2) 100 centièmes font 1 unité : 300 centièmes font 3 unités. (3) 10 centièmes font 1 dixième : 50 centièmes font 5 dixièmes, 5/10. (4) Il reste 8 centièmes, 8/100. Donc 358/100 = 3 + 5/10 + 8/100. (5) Chaque chiffre de 358 a son rôle : le 3 compte des unités (et non des centaines), le 5 des dixièmes (et non des dizaines), le 8 des centièmes.
+
+*Indice.* Combien d'unités entières font 300 centièmes ? Et combien de dixièmes font 50 centièmes ?
+
+**EX-D018-M-01** — maitrise, numerique, 90 s
+
+Complète : 2 + 13/10 + 5/100 = …/100
+
+**Réponse :** 335
+
+*Corrigé.* (1) On convertit tout en centièmes. (2) 2 unités = 200 centièmes, car 1 unité = 100 centièmes. (3) 13 dixièmes = 130 centièmes, car chaque dixième vaut 10 centièmes. (4) Les 5 centièmes restent 5 centièmes. En tout : 200 + 130 + 5 = 335, donc 2 + 13/10 + 5/100 = 335/100. (5) Piège : recopier les nombres à la suite donne 2135. Mais 13 dixièmes, c'est 1 unité et 3 dixièmes : le nombre vaut 3 unités et 35 centièmes, pas plus de 21 unités.
+
+*Indice.* 13 dixièmes, c'est plus qu'une unité. Combien de centièmes cela fait-il ?
+
+**EX-D018-M-02** — maitrise, vrai_faux, 90 s
+
+Léo remplit une carafe avec 7 verres de 1/10 de litre et 25 cuillères de 1/100 de litre. Il dit : « J'ai versé 32/100 de litre. » A-t-il raison ?
+
+**Réponse :** False
+
+*Corrigé.* (1) 7 verres de 1/10 de litre : 7 dixièmes de litre, 7/10 L. (2) Un dixième vaut 10 centièmes : 7/10 = 70/100. (3) 25 cuillères de 1/100 de litre : 25/100 L. (4) En tout : 70/100 + 25/100 = 95/100 de litre. (5) Léo a ajouté 7 et 25 comme si c'étaient tous des centièmes : il a tort. Ses 7 verres valent à eux seuls 70/100 L, déjà plus que 32/100.
+
+*Indice.* Un verre de 1/10 de litre, c'est combien de centièmes de litre ?
+
+---
+
+## `D001` · Écriture à virgule d'un nombre décimal — CM1, difficulté 3
+
+*Passer d'une fraction décimale ou d'une somme de fractions décimales à l'écriture à virgule et réciproquement, lire et écrire un décimal, et donner la valeur de chacun de ses chiffres (partie entière, dixièmes, centièmes). Au plus deux chiffres après la virgule.*
+
+> « L'écriture à virgule est réintroduite dans un second temps, comme un codage conventionnel de la décomposition canonique d'un nombre écrit sous la forme d'une somme de fractions décimales » — *Cycle 3, Cours moyen première année, Les nombres décimaux*
+> « Passer d'une écriture sous forme d'une fraction décimale ou d'une somme de fractions décimales à une écriture à virgule et réciproquement » — *Cycle 3, Cours moyen première année, Les nombres décimaux*
+> « Interpréter, représenter, écrire et lire des nombres décimaux (écriture à virgule) » — *Cycle 3, Cours moyen première année, Les nombres décimaux*
+
+**EX-D001-D-01** — decouverte, numerique, 45 s
+
+L'écriture à virgule code une somme : la partie entière, puis les dixièmes juste après la virgule, puis les centièmes. Écris avec une virgule : 3 + 5/10 + 2/100
+
+**Réponse :** 3.52
+
+*Corrigé.* (1) Partie entière : 3. On l'écrit avant la virgule. (2) 5 dixièmes : le chiffre 5 s'écrit juste après la virgule, au rang des dixièmes. (3) 2 centièmes : le chiffre 2 s'écrit au rang suivant, celui des centièmes. (4) 3 + 5/10 + 2/100 = 3{,}52.
+
+*Indice.* Quel chiffre vient juste après la virgule : celui des dixièmes ou celui des centièmes ?
+
+**EX-D001-D-02** — decouverte, qcm, 40 s
+
+Comment s'écrit 5 + 7/100 avec une virgule ?
+
+- **a.** 5,7
+  <br>*Erreur visée :* L'élève écrit le 7 juste après la virgule, au rang des dixièmes. Or il n'y a aucun dixième : 5,7, c'est 5 et 7 dixièmes, soit 70 centièmes.
+- **b.** 57
+  <br>*Erreur visée :* L'élève oublie la virgule : 57 est un nombre entier, cinquante-sept unités, bien plus que 5 et quelques centièmes.
+- **c.** 5,07 ✅
+
+*Corrigé.* (1) Partie entière : 5, avant la virgule. (2) Il n'y a pas de dixièmes : on écrit 0 au rang des dixièmes, juste après la virgule. (3) 7 centièmes : on écrit 7 au rang des centièmes. (4) 5 + 7/100 = 5{,}07. C'est comme 5 € et 7 centimes, qui s'écrit 5,07 €.
+
+*Indice.* Combien de dixièmes y a-t-il dans ce nombre ?
+
+**EX-D001-E-01** — entrainement, texte, 60 s
+
+Écris 13,06 comme une fraction décimale de dénominateur 100. Écris ta réponse sous la forme numérateur/dénominateur.
+
+**Réponse :** 1306/100
+
+*Corrigé.* (1) 13,06, c'est 13 unités, 0 dixième et 6 centièmes : 13 + 6/100. (2) 1 unité = 100 centièmes, donc 13 unités = 1300 centièmes. (3) En tout : 1300 + 6 = 1306 centièmes. (4) 13{,}06 = 1306/100. Piège : 136/100 oublie le 0 des dixièmes et ne vaut que 1,36.
+
+*Indice.* Combien de centièmes y a-t-il dans une unité ?
+
+**EX-D001-E-02** — entrainement, qcm, 45 s
+
+Dans 472,85, le chiffre 7 est celui des dizaines. Que vaut le chiffre 8 ?
+
+- **a.** 8 dizaines
+  <br>*Erreur visée :* L'élève confond dixièmes et dizaines. Les dizaines sont à gauche de la virgule (ici le 7), les dixièmes juste à droite.
+- **b.** 8 dixièmes ✅
+- **c.** 8 centièmes
+  <br>*Erreur visée :* L'élève lit « 85 centièmes » et attribue les centièmes au 8. Or 85 centièmes, c'est 8 dixièmes et 5 centièmes : seul le 5 compte des centièmes.
+
+*Corrigé.* (1) À gauche de la virgule, les rangs des entiers : 4 centaines, 7 dizaines, 2 unités. (2) À droite de la virgule : d'abord les dixièmes, puis les centièmes. (3) Le 8 est juste après la virgule : il vaut 8 dixièmes, 8/10. (4) Le 7 vaut 7 dizaines, soit 70 ; le 8 vaut 8 dixièmes, moins qu'une unité. Dizaine et dixième se ressemblent à l'oreille, pas en valeur.
+
+*Indice.* Le 8 est-il à gauche ou à droite de la virgule ? À quel rang ?
+
+**EX-D001-M-01** — maitrise, numerique, 60 s
+
+Écris avec une virgule le nombre formé de 4 dizaines, 9 dixièmes et 3 centièmes.
+
+**Réponse :** 40.93
+
+*Corrigé.* (1) On place chaque chiffre à son rang. Dizaines : 4. Unités : aucune, on écrit 0 pour garder la place. (2) Juste après la virgule, les dixièmes : 9. Puis les centièmes : 3. (3) Le nombre s'écrit 40,93. (4) Pièges : 4,93 met le 4 aux unités au lieu des dizaines ; 49,3 met le 9 aux unités au lieu des dixièmes. 4 dizaines (40) et 9 dixièmes (moins d'une unité) n'ont pas du tout la même valeur.
+
+*Indice.* Commence par la partie entière : combien vaut-elle ? Y a-t-il des unités ?
+
+**EX-D001-M-02** — maitrise, vrai_faux, 60 s
+
+Lou affirme : « Dans 60,04 et dans 6,40, le chiffre 4 a la même valeur. » A-t-elle raison ?
+
+**Réponse :** False
+
+*Corrigé.* (1) Dans 60,04, le 4 est au deuxième rang après la virgule : il vaut 4 centièmes, 4/100. (2) Dans 6,40, le 4 est juste après la virgule : il vaut 4 dixièmes, 4/10, soit 40 centièmes. (3) 40 centièmes, ce n'est pas 4 centièmes : Lou a tort. (4) C'est la place d'un chiffre qui donne sa valeur. Le 6 aussi change : 6 dizaines dans 60,04, 6 unités dans 6,40.
+
+*Indice.* Dans chaque nombre, à quel rang après la virgule se trouve le 4 ?
+
+---
+
+## `D003` · Comparer et ranger des nombres décimaux — CM1, difficulté 3
+
+*Comparer deux décimaux et ranger une liste dans l'ordre croissant ou décroissant, avec les symboles =, < et >, y compris quand les parties décimales n'ont pas le même nombre de chiffres (3,4 et 3,17). Au plus deux chiffres après la virgule.*
+
+> « Comparer, encadrer, intercaler, ordonner, par ordre croissant ou décroissant, des nombres décimaux donnés par leur écriture à virgule en utilisant les symboles =, < et > » — *Cycle 3, Cours moyen première année, Les nombres décimaux*
+> « Ordonner des fractions décimales dans l'ordre croissant ou décroissant » — *Cycle 3, Cours moyen première année, Les nombres décimaux*
+
+**EX-D003-D-01** — decouverte, vrai_faux, 60 s
+
+Deux escargots font la course. Le premier avance de 2,6 m, le second de 2,45 m. Léo dit : « Le second a gagné, car 45 est plus grand que 6. » Léo a-t-il raison ?
+
+**Réponse :** False
+
+*Corrigé.* (1) On compare d'abord les parties entières : 2 dans les deux nombres. Elles sont égales, on regarde donc les chiffres après la virgule, rang par rang. (2) Chiffre des dixièmes : 6 dans 2,6 et 4 dans 2,45. 6 dixièmes, c'est plus que 4 dixièmes : 2{,}6 > 2{,}45. (3) On peut le vérifier en écrivant 2,6 avec deux chiffres après la virgule : 2,6 = 2,60. 60 centièmes, c'est plus que 45 centièmes. (4) L'erreur de Léo : il compare 45 et 6 comme des nombres entiers. Mais dans 2,45, le 4 compte des dixièmes et le 5 des centièmes ; dans 2,6, le 6 compte des dixièmes. Le premier escargot a gagné : Léo a tort.
+
+*Indice.* Compare d'abord les chiffres des dixièmes. Que vaut le 6 de 2,6 ?
+
+**EX-D003-D-02** — decouverte, qcm, 45 s
+
+Une bouteille contient 1,35 L de jus, une autre 1,3 L. Quel signe faut-il placer entre les deux nombres : 1,35 … 1,3 ?
+
+- **a.** > ✅
+- **b.** <
+  <br>*Erreur visée :* L'élève pense que plus il y a de chiffres après la virgule, plus le nombre est petit : 1,35 a des centièmes, les centièmes sont plus petits que les dixièmes, donc il croit 1,35 plus petit que 1,3.
+- **c.** =
+  <br>*Erreur visée :* L'élève compare la partie entière et le chiffre des dixièmes, 1 et 3 dans les deux nombres, puis s'arrête : il oublie les 5 centièmes de 1,35.
+
+*Corrigé.* (1) Parties entières : 1 et 1, égales. Chiffres des dixièmes : 3 et 3, égaux eux aussi. (2) Chiffres des centièmes : 1,35 en a 5 ; 1,3 n'en a aucun, car 1,3 = 1,30. (3) 1,35 a 5 centièmes de plus : il est plus grand. 1{,}35 > 1{,}3, la bonne réponse est a. (4) Les centièmes sont plus petits que les dixièmes, mais ici les dixièmes sont égaux : les 5 centièmes s'ajoutent, ils ne retirent rien.
+
+*Indice.* Écris 1,3 avec deux chiffres après la virgule, puis compare chiffre par chiffre.
+
+**EX-D003-E-01** — entrainement, numerique, 90 s
+
+Pour aller en finale du lancer de balle, il faut dépasser 6,5 m. Résultats : 6,7 m ; 6,17 m ; 6,49 m ; 6,8 m ; 6,52 m. Combien d'élèves vont en finale ?
+
+**Réponse :** 3
+
+*Corrigé.* (1) On compare chaque résultat à 6,5. La partie entière vaut 6 partout : tout se joue après la virgule. (2) On écrit 6,5 = 6,50, et chaque résultat avec deux chiffres après la virgule : 6,70 ; 6,17 ; 6,49 ; 6,80 ; 6,52. (3) Plus de 50 centièmes : 6,70, 6,80 et 6,52. Moins de 50 centièmes : 6,17 et 6,49. (4) Attention : 6,17 et 6,49 ne dépassent pas 6,5, même si 17 et 49 sont plus grands que 5. Leur chiffre des dixièmes est 1 et 4 : moins que 5 dixièmes. (5) 3 élèves vont en finale.
+
+*Indice.* Écris tous les nombres avec deux chiffres après la virgule, 6,5 compris.
+
+**EX-D003-E-02** — entrainement, qcm, 90 s
+
+Range ces nombres dans l'ordre croissant : 4,5 ; 4,38 ; 4,52 ; 4,1. Quel est le bon rangement ?
+
+- **a.** 4,1 ; 4,5 ; 4,38 ; 4,52
+  <br>*Erreur visée :* L'élève lit les chiffres après la virgule comme des nombres entiers : 1, 5, 38, 52. Il pense que plus il y a de chiffres après la virgule, plus le nombre est grand.
+- **b.** 4,38 ; 4,52 ; 4,1 ; 4,5
+  <br>*Erreur visée :* L'élève pense que plus il y a de chiffres après la virgule, plus le nombre est petit, puisque les centièmes sont plus petits que les dixièmes : il place d'abord les deux nombres à deux chiffres après la virgule.
+- **c.** 4,1 ; 4,38 ; 4,5 ; 4,52 ✅
+- **d.** 4,52 ; 4,5 ; 4,38 ; 4,1
+  <br>*Erreur visée :* L'élève compare correctement, mais range du plus grand au plus petit : il confond croissant et décroissant.
+
+*Corrigé.* (1) Croissant : du plus petit au plus grand. La partie entière vaut 4 partout. (2) On écrit tous les nombres avec deux chiffres après la virgule : 4,50 ; 4,38 ; 4,52 ; 4,10. (3) On compare les centièmes : 10 < 38 < 50 < 52. (4) L'ordre croissant est donc 4,1 ; 4,38 ; 4,5 ; 4,52 : la bonne réponse est c.
+
+*Indice.* Écris chaque nombre avec deux chiffres après la virgule avant de comparer.
+
+**EX-D003-M-01** — maitrise, vrai_faux, 120 s
+
+Dans le nombre 5,□4, le chiffre des dixièmes est caché. Vrai ou faux : quel que soit le chiffre caché, 5,□4 est plus grand que 5,3.
+
+**Réponse :** False
+
+*Corrigé.* (1) Partie entière : 5 dans les deux nombres. Tout dépend du chiffre des dixièmes caché, comparé au 3 de 5,3. (2) Si le chiffre caché vaut 4 ou plus, par exemple 5,44, le nombre dépasse 5,3. (3) S'il vaut 3, on obtient 5,34 : 34 centièmes, c'est plus que 30 centièmes, donc 5{,}34 > 5{,}3. (4) S'il vaut 0, 1 ou 2, par exemple 5,24 : 2 dixièmes, c'est moins que 3 dixièmes, donc 5{,}24 < 5{,}3, même si 5,24 a plus de chiffres après la virgule. (5) Il existe des chiffres pour lesquels 5,□4 est plus petit que 5,3 : l'affirmation est fausse.
+
+*Indice.* Essaie plusieurs chiffres à la place du carré, des petits et des grands.
+
+**EX-D003-M-02** — maitrise, qcm, 120 s
+
+Quatre enfants se mesurent : Malo 1,4 m ; Sacha 1,35 m ; Yanis 1,5 m ; Nora 1,45 m. Qui est le deuxième plus grand ?
+
+- **a.** Nora ✅
+- **b.** Sacha
+  <br>*Erreur visée :* L'élève compare les chiffres après la virgule comme des nombres entiers : 45, 35, 5 et 4. Il croit Nora la plus grande, puis Sacha, car 35 est plus grand que 5.
+- **c.** Malo
+  <br>*Erreur visée :* L'élève pense que plus il y a de chiffres après la virgule, plus le nombre est petit : il place d'abord Yanis (1,5) et Malo (1,4), puis Nora et Sacha.
+
+*Corrigé.* (1) La partie entière vaut 1 pour tous. On écrit les tailles avec deux chiffres après la virgule : 1,40 ; 1,35 ; 1,50 ; 1,45. (2) Du plus grand au plus petit : 1,50 (Yanis), 1,45 (Nora), 1,40 (Malo), 1,35 (Sacha). (3) Le plus grand est Yanis ; la deuxième est Nora, avec 1,45 m. La bonne réponse est a. (4) Rappel : dans 1,45, le 4 compte des dixièmes et le 5 des centièmes. Nora a autant de dixièmes que Malo, et 5 centièmes de plus.
+
+*Indice.* Écris toutes les tailles avec deux chiffres après la virgule, puis range-les de la plus grande à la plus petite.
+
+---
+
+## `D004` · Additionner et soustraire des décimaux (posé) — CM1, difficulté 3
+
+*Poser en colonnes une addition ou une soustraction de deux décimaux en alignant les virgules, y compris quand les parties décimales n'ont pas le même nombre de chiffres (compléter par des zéros). Au plus deux chiffres après la virgule.*
+
+> « Poser en colonnes et effectuer des additions et des soustractions de nombres décimaux » — *Cycle 3, Cours moyen première année, Les quatre opérations*
+
+**EX-D004-D-01** — decouverte, numerique, 75 s
+
+Un cycliste parcourt 23,4 km le matin et 12,35 km l'après-midi. Pose l'addition en alignant les virgules. Quelle distance a-t-il parcourue en tout ?
+
+**Réponse :** 35.75
+
+*Corrigé.* (1) On cherche la distance totale : on additionne 23{,}4 + 12{,}35. (2) On pose l'addition en alignant les virgules : unités sous les unités, dixièmes sous les dixièmes. Le 4 de 23,4 est un chiffre des dixièmes : il se place sous le 3 de 12,35, pas sous le 5. (3) 23,4 n'a pas de chiffre des centièmes : on écrit un 0 à droite, 23{,}4 = 23{,}40. Cela ne change pas le nombre, car 4 dixièmes font 40 centièmes. (4) On calcule de droite à gauche. Centièmes : 0 + 5 = 5. Dixièmes : 4 + 3 = 7. On écrit la virgule du résultat sous les autres virgules. Unités : 3 + 2 = 5. Dizaines : 2 + 1 = 3. (5) 23{,}4 + 12{,}35 = 35{,}75. Le cycliste a parcouru 35,75 km en tout.
+
+*Indice.* Le 4 de 23,4 est un chiffre des dixièmes : sous quel chiffre de 12,35 doit-il se placer ?
+
+**EX-D004-D-02** — decouverte, qcm, 70 s
+
+Pose et calcule 6{,}8 + 2{,}35, en alignant les virgules.
+
+- **a.** 8,43
+  <br>*Erreur visée :* L'élève additionne séparément les parties entières (6 + 2 = 8) et les parties décimales comme des entiers (8 + 35 = 43). Il aligne les chiffres après la virgule à droite : il ajoute 8 dixièmes à 35 centièmes comme s'ils avaient le même rang.
+- **b.** 9,15 ✅
+- **c.** 8,15
+  <br>*Erreur visée :* L'élève aligne bien les virgules mais oublie la retenue : 8 dixièmes et 3 dixièmes font 11 dixièmes, soit 1 unité et 1 dixième. L'unité retenue n'est pas ajoutée aux unités.
+- **d.** 3,03
+  <br>*Erreur visée :* L'élève aligne les derniers chiffres à droite au lieu d'aligner les virgules : il calcule 68 + 235 = 303, puis place la virgule comme dans 2,35. Le résultat est même plus petit que 6,8, ce qui est impossible pour une addition.
+
+*Corrigé.* (1) On aligne les virgules : le 8 de 6,8 (dixièmes) se place sous le 3 de 2,35 (dixièmes). On complète 6,8 par un 0 : 6{,}8 = 6{,}80. (2) Centièmes : 0 + 5 = 5. Dixièmes : 8 + 3 = 11 dixièmes, c'est 1 unité et 1 dixième. On écrit 1 aux dixièmes et on retient 1 unité, notée en petit au-dessus de la colonne des unités. (3) On écrit la virgule du résultat sous les autres virgules. Unités : 6 + 2 + 1 = 9, sans oublier la retenue. (4) 6{,}8 + 2{,}35 = 9{,}15. Vérification : le résultat est proche de 7 + 2 = 9. La bonne réponse est 9,15.
+
+*Indice.* Écris 6,8 avec deux chiffres après la virgule, puis additionne les centièmes, les dixièmes et les unités.
+
+**EX-D004-E-01** — entrainement, numerique, 110 s
+
+Un jardinier a un sac de 15 kg de terreau. Il en utilise 6,74 kg. Quelle masse de terreau reste-t-il dans le sac ? Pose la soustraction.
+
+**Réponse :** 8.26
+
+*Corrigé.* (1) On cherche ce qui reste : on calcule 15 - 6{,}74. (2) 15 est un entier : sa virgule est cachée après le 5. On écrit 15 = 15{,}00 pour avoir deux chiffres après la virgule, comme 6,74, puis on aligne les virgules. (3) Centièmes : on ne peut pas enlever 4 à 0, et il n'y a aucun dixième à casser. On casse une des 5 unités : il reste 4 unités, et on a 10 dixièmes. On casse un de ces dixièmes : il reste 9 dixièmes, et on a 10 centièmes. Sur ta feuille, barre les chiffres cassés et écris au-dessus ce qu'il reste. (4) Centièmes : 10 - 4 = 6. Dixièmes : 9 - 7 = 2. On écrit la virgule du résultat sous les autres virgules. (5) Unités : on ne peut pas enlever 6 à 4. On casse la dizaine : on a 10 + 4 = 14 unités, et 14 - 6 = 8. Il ne reste plus de dizaine. (6) 15 - 6{,}74 = 8{,}26. On vérifie avec l'addition : 8{,}26 + 6{,}74 = 15. Il reste 8,26 kg de terreau. Si ta classe utilise une autre méthode de soustraction, tu dois trouver le même résultat.
+
+*Indice.* Écris 15 avec une virgule et deux zéros, pour avoir autant de chiffres après la virgule que 6,74.
+
+**EX-D004-E-02** — entrainement, vrai_faux, 90 s
+
+Mila pose la soustraction 7{,}3 - 2{,}58. Elle écrit un 0 après le 3, calcule 7{,}30 - 2{,}58 et trouve 4,72. A-t-elle raison ?
+
+**Réponse :** True
+
+*Corrigé.* (1) Écrire un 0 à droite de 7,3 est permis : 3 dixièmes font 30 centièmes, donc 7{,}3 = 7{,}30. Mila obtient ainsi autant de chiffres après la virgule que dans 2,58, et chaque chiffre de 2,58 a un chiffre en face. (2) Centièmes : on ne peut pas enlever 8 à 0. On casse un des 3 dixièmes : il reste 2 dixièmes, et on a 10 centièmes. 10 - 8 = 2. (3) Dixièmes : on ne peut pas enlever 5 à 2. On casse une des 7 unités : il reste 6 unités, et on a 10 + 2 = 12 dixièmes. 12 - 5 = 7. On écrit la virgule. (4) Unités : 6 - 2 = 4. Donc 7{,}30 - 2{,}58 = 4{,}72. Vérification : 4{,}72 + 2{,}58 = 7{,}30. (5) C'est vrai : Mila a raison. Sans ce 0, on risque de recopier le 8 en bas au lieu de le soustraire, et de trouver 4,88.
+
+*Indice.* Est-ce que 7,3 et 7,30 sont le même nombre ? Puis refais le calcul.
+
+**EX-D004-M-01** — maitrise, numerique, 140 s
+
+Une planche mesure 2,5 m. Lucas en coupe un morceau de 0,75 m, puis un morceau de 1,2 m. Quelle longueur de planche reste-t-il, en mètres ?
+
+**Réponse :** 0.55
+
+*Corrigé.* (1) On enlève les deux morceaux à la planche : on calcule d'abord 2{,}5 - 0{,}75, puis on enlève 1,2 au résultat. (2) 2{,}5 - 0{,}75 : on écrit 2{,}50 et on aligne les virgules. Centièmes : on casse un des 5 dixièmes, il en reste 4 et on a 10 centièmes ; 10 - 5 = 5. Dixièmes : on casse une des 2 unités, il en reste 1 et on a 10 + 4 = 14 dixièmes ; 14 - 7 = 7. Unités : 1 - 0 = 1. On trouve 1,75. (3) 1{,}75 - 1{,}2 : on écrit 1{,}20 et on aligne les virgules. Centièmes : 5 - 0 = 5. Dixièmes : 7 - 2 = 5. Unités : 1 - 1 = 0. On trouve 0,55. (4) Autre chemin : les deux morceaux mesurent 0{,}75 + 1{,}20 = 1{,}95 m, et 2{,}50 - 1{,}95 = 0{,}55. On trouve le même résultat. (5) Il reste 0,55 m de planche. C'est moins de 1 m : c'est cohérent, car on a coupé presque 2 m sur 2,5 m.
+
+*Indice.* Aligne les virgules à chaque calcul, et complète par des zéros pour avoir le même nombre de chiffres après la virgule.
+
+**EX-D004-M-02** — maitrise, qcm, 90 s
+
+Noé pose l'addition 5{,}4 + 3{,}27 et trouve 3,81. Quelle est son erreur ?
+
+- **a.** Il n'a pas fait d'erreur : 3,81 est juste.
+  <br>*Erreur visée :* L'élève ne contrôle pas l'ordre de grandeur : en ajoutant 3,27 à 5,4, on ne peut pas obtenir un nombre plus petit que 5,4.
+- **b.** Il a oublié une retenue.
+  <br>*Erreur visée :* L'élève attribue l'erreur à une retenue oubliée sans refaire le calcul : dans 5{,}40 + 3{,}27, aucune colonne ne dépasse 9, il n'y a donc aucune retenue à faire.
+- **c.** Il a aligné les derniers chiffres à droite au lieu d'aligner les virgules. ✅
+
+*Corrigé.* (1) Ordre de grandeur : 5{,}4 + 3{,}27, c'est plus que 5 + 3 = 8. Le résultat 3,81 est même plus petit que 5,4 : il est forcément faux. (2) Noé a placé le 4 de 5,4 sous le 7 de 3,27, comme pour additionner des entiers. Il a en fait calculé 54 + 327 = 381, puis placé la virgule comme dans 3,27. (3) Or le 4 est un chiffre des dixièmes et le 7 un chiffre des centièmes : on ne peut pas les additionner. Il faut aligner les virgules et compléter : 5{,}4 = 5{,}40. (4) Centièmes : 0 + 7 = 7. Dixièmes : 4 + 2 = 6. Unités : 5 + 3 = 8. Donc 5{,}4 + 3{,}27 = 8{,}67. (5) La bonne réponse est c : Noé a aligné les derniers chiffres au lieu des virgules.
+
+*Indice.* Sans calculer, le résultat de Noé est-il possible ? Compare-le à 5,4.
+
+---
+
+## `D012` · Encadrer et intercaler des nombres décimaux — CM1, difficulté 3
+
+*Encadrer un décimal entre deux entiers consécutifs ou entre deux nombres consécutifs à un chiffre après la virgule, et trouver un décimal compris entre deux décimaux donnés. Au plus deux chiffres après la virgule.*
+
+> « Comparer, encadrer, intercaler, ordonner, par ordre croissant ou décroissant, des nombres décimaux donnés par leur écriture à virgule en utilisant les symboles =, < et > » — *Cycle 3, Cours moyen première année, Les nombres décimaux*
+> « Comparer, encadrer, intercaler des fractions décimales en utilisant les symboles =, < et > » — *Cycle 3, Cours moyen première année, Les nombres décimaux*
+
+**EX-D012-D-01** — decouverte, numerique, 45 s
+
+Une ficelle mesure 8,3 m : un peu plus de 8 m. Complète l'encadrement par deux nombres entiers qui se suivent : 8 < 8{,}3 < …
+
+**Réponse :** 9
+
+*Corrigé.* (1) 8,3, c'est 8 unités et 3 dixièmes : le nombre est plus grand que 8. (2) 3 dixièmes, c'est moins qu'une unité entière, qui vaut 10 dixièmes : 8,3 n'atteint pas l'entier suivant. (3) L'entier qui suit 8 est 9 : 8 < 8{,}3 < 9. La ficelle mesure entre 8 m et 9 m. (4) Attention : 8,4 est bien plus grand que 8,3, mais ce n'est pas un nombre entier.
+
+*Indice.* Les deux entiers qui se suivent doivent entourer 8,3 : l'un plus petit, l'autre plus grand.
+
+**EX-D012-D-02** — decouverte, vrai_faux, 60 s
+
+Quand on compte de dixième en dixième, 6,2 est suivi de 6,3. Sami dit : « Il n'existe aucun nombre entre 6,2 et 6,3. » Sami a-t-il raison ?
+
+**Réponse :** False
+
+*Corrigé.* (1) On écrit les deux nombres avec deux chiffres après la virgule : 6,2 = 6,20 et 6,3 = 6,30. (2) Entre 20 centièmes et 30 centièmes, il y a 21, 22, … jusqu'à 29 centièmes : 6,21 ; 6,22 ; … ; 6,29 sont tous entre 6,2 et 6,3. (3) Par exemple, 6{,}2 < 6{,}25 < 6{,}3. (4) 6,2 et 6,3 se suivent quand on compte en dixièmes, mais pas quand on compte en centièmes. Sami a tort.
+
+*Indice.* Écris 6,2 et 6,3 avec deux chiffres après la virgule.
+
+**EX-D012-E-01** — entrainement, qcm, 75 s
+
+Encadre 9,63 par deux nombres à un chiffre après la virgule qui se suivent.
+
+- **a.** 9,5 et 9,6
+  <br>*Erreur visée :* L'élève voit le 6 des dixièmes et prend 9,6 comme borne supérieure : il oublie que 9,63 dépasse 9,60 de 3 centièmes.
+- **b.** 9,6 et 9,7 ✅
+- **c.** 9 et 10
+  <br>*Erreur visée :* L'élève encadre par deux entiers, comme pour la partie entière : 9 et 10 n'ont aucun chiffre après la virgule. Il confond l'encadrement à l'unité et l'encadrement au dixième.
+- **d.** 9,62 et 9,64
+  <br>*Erreur visée :* L'élève encadre au centième : ces deux nombres ont deux chiffres après la virgule, pas un seul.
+
+*Corrigé.* (1) 9,63, c'est 9 unités, 6 dixièmes et 3 centièmes. (2) En ne gardant que les dixièmes, on obtient 9,6. Comme 9,63 dépasse 9,60 de 3 centièmes, 9{,}6 < 9{,}63. (3) Le nombre à un chiffre après la virgule qui suit 9,6 est 9,7, c'est-à-dire 9,70 : 63 centièmes, c'est moins que 70 centièmes. (4) 9{,}6 < 9{,}63 < 9{,}7 : la bonne réponse est b.
+
+*Indice.* Garde seulement les dixièmes de 9,63 : tu obtiens la borne du dessous.
+
+**EX-D012-E-02** — entrainement, numerique, 75 s
+
+Un chat pèse 6,04 kg. Complète l'encadrement par deux nombres à un chiffre après la virgule qui se suivent : … < 6{,}04 < 6{,}1
+
+**Réponse :** 6
+
+*Corrigé.* (1) 6,04, c'est 6 unités, 0 dixième et 4 centièmes : son chiffre des dixièmes est 0. (2) En ne gardant que les dixièmes, on obtient 6,0, c'est-à-dire 6. Et 6,04 dépasse 6,00 de 4 centièmes. (3) Le nombre suivant, à un chiffre après la virgule, est 6,1 = 6,10 : 4 centièmes, c'est moins que 10 centièmes. (4) 6{,}0 < 6{,}04 < 6{,}1 : le nombre cherché est 6,0, qui est égal à 6. (5) Piège : lire 4 dixièmes dans 6,04, comme s'il s'agissait de 6,4. Mais 6,4 est plus grand que 6,1 : dans 6,04, le 4 est au rang des centièmes, et le chiffre des dixièmes est 0.
+
+*Indice.* Quel est le chiffre des dixièmes de 6,04 ?
+
+**EX-D012-M-01** — maitrise, qcm, 120 s
+
+Combien y a-t-il de nombres à deux chiffres après la virgule compris entre 4,7 et 4,8, sans compter 4,7 ni 4,8 ?
+
+- **a.** 0
+  <br>*Erreur visée :* L'élève pense que 4,7 et 4,8 se suivent, donc qu'il n'y a rien entre eux. C'est vrai pour les nombres à un chiffre après la virgule, pas avec les centièmes.
+- **b.** 10
+  <br>*Erreur visée :* L'élève compte de 4,70 à 4,79 : il inclut 4,70, qui est égal à 4,7.
+- **c.** 9 ✅
+
+*Corrigé.* (1) On écrit les bornes avec deux chiffres après la virgule : 4,7 = 4,70 et 4,8 = 4,80. (2) Les nombres cherchés vont de 71 à 79 centièmes : 4,71 ; 4,72 ; … ; 4,79. (3) 4,70 et 4,80 ne comptent pas : ce sont 4,7 et 4,8 eux-mêmes. (4) De 71 à 79, il y a 9 nombres. La bonne réponse est c. (5) En écrivant plus de chiffres après la virgule, on en trouverait d'autres encore : entre deux nombres décimaux différents, il y a toujours d'autres nombres décimaux.
+
+*Indice.* Écris 4,7 et 4,8 avec deux chiffres après la virgule, puis liste les nombres entre eux.
+
+**EX-D012-M-02** — maitrise, numerique, 120 s
+
+Devinette : je suis un nombre à deux chiffres après la virgule, compris entre 5,8 et 5,9. Mon chiffre des centièmes est la moitié de mon chiffre des dixièmes. Qui suis-je ?
+
+**Réponse :** 5.84
+
+*Corrigé.* (1) Entre 5,8 et 5,9, c'est-à-dire entre 5,80 et 5,90, les nombres à deux chiffres après la virgule sont 5,81 ; 5,82 ; … ; 5,89. (2) Tous ont 5 pour partie entière et 8 pour chiffre des dixièmes. (3) La moitié de 8 est 4 : le chiffre des centièmes est 4. (4) Le nombre est 5,84. Vérification : 5{,}8 < 5{,}84 < 5{,}9.
+
+*Indice.* Quel est le chiffre des dixièmes de tous les nombres compris entre 5,8 et 5,9 ?
+
+---
+
+## `D008` · Partie entière et arrondi à l'unité — CM1, difficulté 3
+
+*Donner la partie entière d'un décimal et son arrondi à l'entier le plus proche, en s'appuyant sur l'encadrement entre deux entiers consécutifs. Au plus deux chiffres après la virgule.*
+
+> « Savoir donner la partie entière et l'arrondi à l'entier d'un nombre décimal » — *Cycle 3, Cours moyen première année, Les nombres décimaux*
+
+**EX-D008-D-01** — decouverte, numerique, 45 s
+
+Une randonnée fait 12,7 km. Combien de kilomètres entiers compte-t-elle ? Ce nombre est la partie entière de 12,7.
+
+**Réponse :** 12
+
+*Corrigé.* (1) 12,7, c'est 12 unités et 7 dixièmes : 12 km et 7 dixièmes de kilomètre. (2) Les 7 dixièmes ne font pas un kilomètre entier : il en faudrait 10. (3) 12 < 12{,}7 < 13 : la partie entière est le plus petit des deux entiers de l'encadrement, 12. (4) Rappel : la partie entière s'écrit avant la virgule ; le 7 est le chiffre des dixièmes.
+
+*Indice.* Combien de dixièmes faut-il pour faire un kilomètre entier ?
+
+**EX-D008-D-02** — decouverte, qcm, 45 s
+
+Un sac pèse 5,8 kg : entre 5 kg et 6 kg. Quel est son arrondi à l'unité, c'est-à-dire l'entier le plus proche ?
+
+- **a.** 5
+  <br>*Erreur visée :* L'élève confond arrondi et partie entière : il garde le nombre écrit avant la virgule sans regarder s'il est plus près de 5 ou de 6.
+- **b.** 6 ✅
+- **c.** 5,5
+  <br>*Erreur visée :* L'élève confond l'arrondi et le milieu de l'encadrement : il donne 5,5, le nombre qui sert à décider, au lieu de l'entier le plus proche.
+
+*Corrigé.* (1) 5,8 est entre 5 et 6. Le milieu entre 5 et 6 est 5,5. (2) 5,8 a 8 dixièmes, 5,5 en a 5 : 5{,}8 > 5{,}5, donc 5,8 est après le milieu. (3) De 5 à 5,8, il y a 8 dixièmes ; de 5,8 à 6, il n'y en a que 2. 5,8 est plus proche de 6. (4) L'arrondi à l'unité est 6 : la bonne réponse est b. La partie entière, elle, vaut 5 : les deux ne sont pas toujours égales.
+
+*Indice.* Combien de dixièmes séparent 5,8 de 5 ? Et de 6 ?
+
+**EX-D008-E-01** — entrainement, vrai_faux, 75 s
+
+Zoé dit : « L'arrondi à l'unité de 31,49 est 32, car 49 est plus grand que 5. » Zoé a-t-elle raison ?
+
+**Réponse :** False
+
+*Corrigé.* (1) 31,49 est entre 31 et 32. Le milieu est 31,5. (2) On compare 31,49 et 31,5 = 31,50 : 49 centièmes, c'est moins que 50 centièmes. Donc 31{,}49 < 31{,}5 : 31,49 est avant le milieu. (3) Il est donc plus proche de 31 : l'arrondi à l'unité est 31. (4) L'erreur de Zoé : elle lit 49 comme un nombre entier. Pour arrondir à l'unité, c'est le chiffre des dixièmes, 4, qui compte : 4 dixièmes, c'est moins que la moitié d'une unité. Zoé a tort.
+
+*Indice.* Où se trouve le milieu entre 31 et 32 ? 31,49 est-il avant ou après ?
+
+**EX-D008-E-02** — entrainement, qcm, 60 s
+
+Quelles sont la partie entière et l'arrondi à l'unité de 7,09 ?
+
+- **a.** partie entière 7, arrondi 8
+  <br>*Erreur visée :* L'élève lit 09 comme 9, plus grand que 5, et arrondit vers le haut. Or le chiffre des dixièmes de 7,09 est 0.
+- **b.** partie entière 7, arrondi 7,1
+  <br>*Erreur visée :* L'élève arrondit au dixième au lieu de l'unité : 7,1 n'est pas un nombre entier.
+- **c.** partie entière 7, arrondi 7 ✅
+
+*Corrigé.* (1) 7,09, c'est 7 unités, 0 dixième et 9 centièmes. La partie entière est 7. (2) 7,09 est entre 7 et 8, et le milieu est 7,5. Avec 0 dixième, 7,09 est avant le milieu, tout près de 7. (3) L'arrondi à l'unité est donc 7, comme la partie entière. La bonne réponse est c.
+
+*Indice.* Quel est le chiffre des dixièmes de 7,09 ?
+
+**EX-D008-M-01** — maitrise, numerique, 90 s
+
+Un vélo coûte 199,60 €. Arrondis ce prix à l'euro près, c'est-à-dire à l'unité.
+
+**Réponse :** 200
+
+*Corrigé.* (1) 199,60 € est entre 199 € et 200 €, deux entiers qui se suivent. (2) Le milieu est 199,50 €. Avec 6 dixièmes, 199,60 est après le milieu : 199{,}60 > 199{,}50. (3) Le prix est plus proche de 200 € : il ne manque que 40 centimes pour y arriver. (4) L'arrondi à l'unité est l'entier qui suit 199 : 200 €. Le chiffre des centaines change, ce qui surprend, mais 199 + 1 = 200.
+
+*Indice.* 199,60 € est-il plus près de 199 € ou de l'entier suivant ?
+
+**EX-D008-M-02** — maitrise, qcm, 120 s
+
+Un nombre a pour partie entière 6 et pour arrondi à l'unité 7. Lequel de ces nombres peut-il être ?
+
+- **a.** 6,38
+  <br>*Erreur visée :* L'élève vérifie seulement la partie entière, 6, et oublie de contrôler l'arrondi : 6,38 est avant le milieu 6,5, son arrondi est 6.
+- **b.** 6,72 ✅
+- **c.** 7,4
+  <br>*Erreur visée :* L'élève vérifie seulement l'arrondi : 7,4 s'arrondit bien à 7, mais sa partie entière est 7, pas 6.
+
+*Corrigé.* (1) Partie entière 6 : le nombre est entre 6 et 7, sans atteindre 7. (2) Arrondi 7 : il est plus proche de 7 que de 6, donc après le milieu 6,5. (3) Seul 6,72 remplit les deux conditions : 6{,}5 < 6{,}72 < 7. (4) 6,38 a bien pour partie entière 6, mais son arrondi est 6. 7,4 a bien pour arrondi 7, mais sa partie entière est 7. La bonne réponse est b.
+
+*Indice.* Vérifie les deux conditions pour chaque nombre, l'une après l'autre.
+
+---
+
+## `D019` · Décimal sur une demi-droite graduée — CM1, difficulté 3
+
+*Placer un décimal (écriture à virgule ou fraction décimale) sur une demi-droite graduée en dixièmes ou en centièmes, et lire l'abscisse d'un point repéré. Au plus deux chiffres après la virgule.*
+
+> « Placer une fraction décimale sur une demi-droite graduée et repérer un point d'une demi-droite graduée par une fraction décimale » — *Cycle 3, Cours moyen première année, Les nombres décimaux*
+> « Placer un nombre décimal en écriture à virgule sur une demi-droite graduée et repérer un point d'une demi-droite graduée par un nombre décimal » — *Cycle 3, Cours moyen première année, Les nombres décimaux*
+
+**EX-D019-D-01** — decouverte, numerique, 45 s
+
+Une demi-droite est graduée en dixièmes : entre 0 et 1, il y a 10 intervalles égaux. Quel nombre se trouve à la 7e graduation après 0 ?
+
+**Réponse :** 0.7
+
+*Corrigé.* (1) L'unité, de 0 à 1, est partagée en 10 intervalles égaux : chaque intervalle vaut un dixième, 1/10. (2) À la 7e graduation après 0, on a avancé de 7 dixièmes : 7/10. (3) 7/10 s'écrit 0,7 : 0 unité et 7 dixièmes. Le nombre est 0,7. (4) Rappel : le dénominateur 10 donne la taille d'un intervalle, le numérateur 7 dit combien on en parcourt.
+
+*Indice.* Combien vaut un intervalle quand l'unité est partagée en 10 ?
+
+**EX-D019-D-02** — decouverte, qcm, 60 s
+
+Une demi-droite est graduée en dixièmes. On y lit la graduation 3 puis la graduation 4, avec 10 intervalles égaux entre elles. Où se place le nombre 3,6 ?
+
+- **a.** à la 7e graduation après 3
+  <br>*Erreur visée :* L'élève compte les traits au lieu des intervalles : il compte la graduation 3 comme la première, 3,1 comme la deuxième, et arrive à 7 en atteignant 3,6.
+- **b.** à la 6e graduation après 3 ✅
+- **c.** à la 6e graduation après 0
+  <br>*Erreur visée :* L'élève oublie la partie entière : il place 0,6 au lieu de 3,6.
+
+*Corrigé.* (1) 3,6, c'est 3 unités et 6 dixièmes : on part de la graduation 3. (2) Entre 3 et 4, chaque intervalle vaut un dixième. On avance de 6 intervalles : 3,1 ; 3,2 ; 3,3 ; 3,4 ; 3,5 ; 3,6. (3) On ne compte pas la graduation 3 elle-même : la 1re graduation après 3 est 3,1. (4) 3,6 est à la 6e graduation après 3, juste après le milieu entre 3 et 4, qui est 3,5. La bonne réponse est b.
+
+*Indice.* Pars de la graduation 3 et compte les intervalles, pas les traits.
+
+**EX-D019-E-01** — entrainement, numerique, 75 s
+
+Une demi-droite est graduée en centièmes : entre 7 et 7,1, il y a 10 intervalles égaux. Quel nombre se trouve à la 4e graduation après 7 ?
+
+**Réponse :** 7.04
+
+*Corrigé.* (1) De 7 à 7,1, on avance d'un dixième, c'est-à-dire de 10 centièmes : 7,1 = 7,10. (2) Ce dixième est partagé en 10 intervalles égaux : chaque intervalle vaut un centième. (3) À la 4e graduation après 7, on a avancé de 4 centièmes. (4) Piège : ce n'est pas 7,4. Le chiffre 4 doit être au rang des centièmes, d'où le 0 au rang des dixièmes. Le nombre est 7,04.
+
+*Indice.* Combien vaut un intervalle quand un dixième est partagé en 10 ?
+
+**EX-D019-E-02** — entrainement, texte, 75 s
+
+Une demi-droite est graduée en dixièmes à partir de 0. Le point A est à la 13e graduation après 0. Repère A par une fraction décimale, sous la forme numérateur/dénominateur.
+
+**Réponse :** 13/10
+
+*Corrigé.* (1) Chaque intervalle vaut un dixième, 1/10. (2) À la 13e graduation, on a parcouru 13 dixièmes : l'abscisse de A est 13/10. (3) 10 dixièmes font une unité : 13/10 = 1 + 3/10, soit 1,3. A est entre 1 et 2, à la 3e graduation après 1. (4) On peut aussi écrire 1,3, l'écriture à virgule. La question demandait la fraction décimale : 13/10.
+
+*Indice.* Chaque graduation ajoute un dixième. Combien de dixièmes en tout ?
+
+**EX-D019-M-01** — maitrise, vrai_faux, 120 s
+
+Une demi-droite est graduée en dixièmes : 10 intervalles égaux entre 5 et 6. Léo place 5,25 à la 25e graduation après 5. A-t-il raison ?
+
+**Réponse :** False
+
+*Corrigé.* (1) Chaque intervalle vaut un dixième. La 25e graduation après 5 est 25 dixièmes plus loin, soit 2 unités et 5 dixièmes : on arriverait à 7,5. (2) 5,25, c'est 5 unités, 2 dixièmes et 5 centièmes. Il est entre 5,2 et 5,3 : 5{,}2 < 5{,}25 < 5{,}3. (3) 5,25 dépasse 5,20 de 5 centièmes, la moitié d'un dixième : le point est au milieu entre la 2e et la 3e graduation après 5. (4) Léo a lu 25 comme un nombre de dixièmes. Il a tort.
+
+*Indice.* Dans 5,25, quel chiffre compte les dixièmes ?
+
+**EX-D019-M-02** — maitrise, numerique, 120 s
+
+Une demi-droite est graduée en centièmes. Un point se trouve 6 graduations après 1,97. Quelle est son abscisse ?
+
+**Réponse :** 2.03
+
+*Corrigé.* (1) Chaque graduation vaut un centième : on avance de 6 centièmes à partir de 1,97. (2) On compte : 1,98 ; 1,99 ; puis 2, car 100 centièmes font une unité ; 2,01 ; 2,02 ; 2,03. (3) Le point a pour abscisse 2,03. En chemin, on a franchi la graduation 2. (4) Piège : ajouter 6 à 97 et écrire 1,103. Après 1,99, on ne passe pas à « 1,100 » : on arrive à 2.
+
+*Indice.* Compte de centième en centième. Que vient-il après 1,99 ?
+
+---
+
+## `D020` · Calcul mental : multiplier et diviser un décimal par 10 — CM1, difficulté 3
+
+*Multiplier ou diviser mentalement un décimal par 10 en raisonnant sur la valeur des chiffres (les dixièmes deviennent des unités, les unités des dixièmes). Au plus deux chiffres après la virgule.*
+
+> « Multiplier un nombre décimal par 10 » — *Cycle 3, Cours moyen première année, Le calcul mental*
+> « Diviser un nombre décimal par 10 » — *Cycle 3, Cours moyen première année, Le calcul mental*
+
+**EX-D020-D-01** — decouverte, numerique, 60 s
+
+Un timbre mesure 2,4 cm de large. On colle 10 timbres côte à côte, sans espace. Calcule 2{,}4 × 10 pour trouver la longueur de la bande, en centimètres.
+
+**Réponse :** 24
+
+*Corrigé.* (1) 2,4, c'est 2 unités et 4 dixièmes. (2) Multiplier par 10 rend chaque chiffre 10 fois plus grand. 10 dixièmes font 1 unité : les 4 dixièmes deviennent 4 unités. 10 unités font 1 dizaine : les 2 unités deviennent 2 dizaines. (3) 2 dizaines et 4 unités : 2{,}4 × 10 = 24. Chaque chiffre a avancé d'un rang vers la gauche. (4) La bande mesure 24 cm.
+
+*Indice.* Quand on multiplie par 10, que deviennent les 4 dixièmes de 2,4 ?
+
+**EX-D020-D-02** — decouverte, qcm, 60 s
+
+On verse 8,5 L de jus dans 10 carafes, la même quantité dans chaque carafe. Combien de litres y a-t-il dans une carafe ?
+
+- **a.** 85 L
+  <br>*Erreur visée :* L'élève multiplie par 10 au lieu de diviser : une carafe contiendrait plus que les 8,5 L de départ, ce qui est impossible pour un partage.
+- **b.** 8,05 L
+  <br>*Erreur visée :* L'élève croit que diviser par 10, c'est glisser un zéro après la virgule. Mais 10 carafes de 8,05 L feraient 80,5 L, pas 8,5 L.
+- **c.** 0,85 L ✅
+
+*Corrigé.* (1) On partage 8,5 L en 10 parts égales : on calcule 8{,}5 ÷ 10. (2) Diviser par 10 rend chaque chiffre 10 fois plus petit. Une unité, c'est 10 dixièmes : les 8 unités deviennent 8 dixièmes. Un dixième, c'est 10 centièmes : les 5 dixièmes deviennent 5 centièmes. (3) 0 unité, 8 dixièmes et 5 centièmes s'écrivent 0,85. Chaque chiffre a reculé d'un rang vers la droite. (4) Vérification par la multiplication : 0{,}85 × 10 = 8{,}5. Chaque carafe contient 0,85 L.
+
+*Indice.* Que deviennent les 8 unités quand on divise par 10 ? Et les 5 dixièmes ?
+
+**EX-D020-E-01** — entrainement, numerique, 45 s
+
+Calcule mentalement 0{,}37 × 10.
+
+**Réponse :** 3.7
+
+*Corrigé.* (1) 0,37, c'est 3 dixièmes et 7 centièmes. (2) Multiplier par 10 rend chaque chiffre 10 fois plus grand : les 3 dixièmes deviennent 3 unités, les 7 centièmes deviennent 7 dixièmes. (3) 3 unités et 7 dixièmes : 0{,}37 × 10 = 3{,}7. (4) Écrire un zéro à droite de 0,37 ne multiplie pas par 10 : 0,370 est le même nombre. Ce n'est pas 37 non plus : seuls les 3 dixièmes deviennent des unités, il y a donc 3 unités, pas 37.
+
+*Indice.* Que deviennent les 3 dixièmes quand on multiplie par 10 ?
+
+**EX-D020-E-02** — entrainement, vrai_faux, 50 s
+
+Tom dit : « 4{,}6 × 10 = 4{,}60, car multiplier par 10, c'est écrire un zéro à droite. » Tom a-t-il raison ?
+
+**Réponse :** False
+
+*Corrigé.* (1) 4,60 et 4,6 sont le même nombre : 6 dixièmes font 60 centièmes. Écrire un zéro à droite après la virgule ne change rien, donc ne multiplie pas par 10. (2) 4,6, c'est 4 unités et 6 dixièmes. Multiplier par 10 rend chaque chiffre 10 fois plus grand : les 4 unités deviennent 4 dizaines, les 6 dixièmes deviennent 6 unités. (3) 4{,}6 × 10 = 46. (4) C'est faux. « Écrire un zéro à droite » marche pour un entier (46 × 10 = 460), pas pour un nombre à virgule.
+
+*Indice.* 4,60 est-il plus grand que 4,6 ?
+
+**EX-D020-M-01** — maitrise, numerique, 70 s
+
+Une pile de 10 livres identiques mesure 31,5 cm de haut. Quelle est l'épaisseur d'un livre, en centimètres ?
+
+**Réponse :** 3.15
+
+*Corrigé.* (1) Les 10 livres ont la même épaisseur : on partage 31,5 cm en 10, on calcule 31{,}5 ÷ 10. (2) Diviser par 10 rend chaque chiffre 10 fois plus petit : les 3 dizaines deviennent 3 unités, l'unité devient 1 dixième, les 5 dixièmes deviennent 5 centièmes. (3) 3 unités, 1 dixième et 5 centièmes : 31{,}5 ÷ 10 = 3{,}15. (4) Vérification : 3{,}15 × 10 = 31{,}5. Un livre mesure 3,15 cm d'épaisseur.
+
+*Indice.* On connaît la hauteur de 10 livres et on cherche celle d'un seul : faut-il multiplier ou diviser par 10 ?
+
+**EX-D020-M-02** — maitrise, qcm, 75 s
+
+Lina pense à un nombre. Elle le multiplie par 10 et trouve 30,4. À quel nombre a-t-elle pensé ?
+
+- **a.** 304
+  <br>*Erreur visée :* L'élève multiplie 30,4 par 10 au lieu de faire l'opération inverse : 304 est le résultat de 30{,}4 × 10, pas le nombre de départ.
+- **b.** 3,04 ✅
+- **c.** 30,04
+  <br>*Erreur visée :* L'élève croit que diviser par 10, c'est glisser un zéro après la virgule. Mais 30{,}04 × 10 = 300{,}4, pas 30,4.
+- **d.** 3,4
+  <br>*Erreur visée :* L'élève enlève le zéro de 30,4, en pensant que diviser par 10, c'est effacer un zéro. Mais 3{,}4 × 10 = 34, pas 30,4 : le 0 occupait le rang des unités.
+
+*Corrigé.* (1) Lina a multiplié par 10. Pour retrouver son nombre, on fait l'opération inverse : on divise 30,4 par 10. (2) 30,4, c'est 3 dizaines, 0 unité et 4 dixièmes. Diviser par 10 rend chaque chiffre 10 fois plus petit : 3 dizaines deviennent 3 unités, 0 unité devient 0 dixième, 4 dixièmes deviennent 4 centièmes. (3) 3 unités, 0 dixième et 4 centièmes : 30{,}4 ÷ 10 = 3{,}04. Le 0 garde sa place : il devient le chiffre des dixièmes. (4) Vérification : 3{,}04 × 10 = 30{,}4. Lina a pensé à 3,04.
+
+*Indice.* Quelle opération défait une multiplication par 10 ?
+
+---
+
+## `D021` · Multiplier un décimal par un entier inférieur à 10 (posé) — CM1, difficulté 3
+
+*Poser et effectuer la multiplication d'un décimal par un nombre entier à un chiffre, et placer la virgule dans le résultat. Au plus deux chiffres après la virgule.*
+
+> « Poser et effectuer des multiplications d'un nombre décimal par un nombre entier inférieur à 10 » — *Cycle 3, Cours moyen première année, Les quatre opérations*
+
+**EX-D021-D-01** — decouverte, numerique, 90 s
+
+Un cahier coûte 2,47 €. Combien coûtent 3 cahiers ? Pose la multiplication 2{,}47 × 3.
+
+**Réponse :** 7.41
+
+*Corrigé.* (1) 3 cahiers à 2,47 € : on calcule 2{,}47 × 3. On pose 2,47 en haut et 3 en dessous, sous le dernier chiffre de droite, le 7. Pour l'instant, on ne s'occupe pas de la virgule : on calcule comme pour 247 × 3. (2) Chiffre de droite : 3 × 7 = 21, on écrit 1 et on retient 2. Chiffre suivant : 3 × 4 = 12, plus 2 de retenue, cela fait 14 : on écrit 4 et on retient 1. Dernier chiffre : 3 × 2 = 6, plus 1 de retenue, cela fait 7. On obtient 741. (3) Où placer la virgule ? 2,47, c'est 247 centièmes. 3 fois 247 centièmes font 741 centièmes, c'est-à-dire 7 unités et 41 centièmes : 7,41. (4) À retenir : 2,47 a deux chiffres après la virgule, le produit en a deux aussi. On place la virgule en comptant deux chiffres à partir de la droite : 2{,}47 × 3 = 7{,}41. Les 3 cahiers coûtent 7,41 €.
+
+*Indice.* Calcule d'abord sans la virgule, puis demande-toi combien de centièmes tu as obtenus.
+
+**EX-D021-D-02** — decouverte, qcm, 75 s
+
+Lina pose bout à bout 4 planches de 1,8 m. Quelle longueur obtient-elle ?
+
+- **a.** 72 m
+  <br>*Erreur visée :* L'élève calcule bien 18 × 4 = 72, mais oublie de remettre la virgule dans le résultat.
+- **b.** 4,32 m
+  <br>*Erreur visée :* L'élève multiplie séparément la partie entière et la partie décimale : 1 × 4 = 4, puis 8 × 4 = 32, et colle les deux résultats. Il oublie que 32 dixièmes font plus de 3 unités.
+- **c.** 7,2 m ✅
+
+*Corrigé.* (1) 4 planches de 1,8 m : on calcule 1{,}8 × 4. On pose 1,8 en haut et 4 sous le 8, et on calcule comme pour 18 × 4. (2) 4 × 8 = 32 : on écrit 2 et on retient 3. Puis 4 × 1 = 4, plus 3 de retenue, cela fait 7. On obtient 72. (3) 1,8, c'est 18 dixièmes. 4 fois 18 dixièmes font 72 dixièmes, soit 7 unités et 2 dixièmes : 7,2. (4) 1,8 a un chiffre après la virgule, le produit aussi : 1{,}8 × 4 = 7{,}2. Lina obtient 7,2 m : la bonne réponse est c.
+
+*Indice.* 1,8 m, c'est 18 dixièmes de mètre. Combien de dixièmes dans 4 planches ?
+
+**EX-D021-E-01** — entrainement, numerique, 90 s
+
+Une bouteille de jus contient 0,75 L. Combien de litres de jus y a-t-il dans un pack de 6 bouteilles ?
+
+**Réponse :** 4.5
+
+*Corrigé.* (1) On calcule 0{,}75 × 6, posé comme 75 × 6 : 6 × 5 = 30, on écrit 0 et on retient 3 ; 6 × 7 = 42, plus 3 de retenue, cela fait 45. On obtient 450. (2) 0,75, c'est 75 centièmes. 6 fois 75 centièmes font 450 centièmes : il faut deux chiffres après la virgule, comme dans 0,75. On place la virgule : 4,50. (3) Le 0 à la fin de 4,50 ne change pas la valeur : 4 unités et 5 dixièmes, c'est 4,5. Attention, on place la virgule avant d'effacer ce 0 : en l'effaçant d'abord, on garderait 45 et on écrirait 0,45, ce qui est faux. (4) Le pack contient 4,5 L. Contrôle : chaque bouteille contient moins d'un litre, donc 6 bouteilles moins de 6 L ; mais plus d'un demi-litre (75 centièmes, c'est plus que 50 centièmes), donc 2 bouteilles plus de 1 L et 6 bouteilles plus de 3 L. 4,5 L convient, pas 0,45 L.
+
+*Indice.* 0,75 L, c'est 75 centièmes de litre.
+
+**EX-D021-E-02** — entrainement, qcm, 90 s
+
+Un ticket de bus coûte 1,45 €. Combien coûtent 9 tickets ?
+
+- **a.** 13,05 € ✅
+- **b.** 9,405 €
+  <br>*Erreur visée :* L'élève multiplie séparément la partie entière et la partie décimale : 1 × 9 = 9 et 45 × 9 = 405, puis colle les résultats. Or 405 centièmes, c'est plus de 4 unités.
+- **c.** 130,5 €
+  <br>*Erreur visée :* L'élève calcule bien 145 × 9 = 1 305, mais ne laisse qu'un seul chiffre après la virgule, alors que 1,45 en a deux.
+
+*Corrigé.* (1) On calcule 1{,}45 × 9, posé comme 145 × 9. (2) 9 × 5 = 45 : on écrit 5 et on retient 4. 9 × 4 = 36, plus 4 de retenue, cela fait 40 : on écrit 0 et on retient 4. 9 × 1 = 9, plus 4 de retenue, cela fait 13. On obtient 1 305. (3) 1,45 a deux chiffres après la virgule : 1 305 centièmes, c'est 13,05. Le 0 des dixièmes doit rester écrit. (4) Contrôle : un ticket coûte entre 1 € et 2 €, donc 9 tickets coûtent entre 9 € et 18 € : 130,5 € est impossible. 9,405 € aussi, car un prix s'écrit avec deux chiffres après la virgule, les centimes. 13,05 € convient : la bonne réponse est a.
+
+*Indice.* Pose 145 × 9, puis compte les chiffres après la virgule dans 1,45.
+
+**EX-D021-M-01** — maitrise, numerique, 120 s
+
+Pour un bouquet, un fleuriste utilise 0,65 m de ruban. Il fait 5 bouquets le matin et 3 l'après-midi. Quelle longueur de ruban utilise-t-il ?
+
+**Réponse :** 5.2
+
+*Corrigé.* (1) Nombre de bouquets : 5 + 3 = 8. (2) Ruban : 0{,}65 × 8, posé comme 65 × 8 : 8 × 5 = 40, on écrit 0 et on retient 4 ; 8 × 6 = 48, plus 4 de retenue, cela fait 52. On obtient 520. (3) 0,65 a deux chiffres après la virgule : 520 centièmes, c'est 5,20. Une fois la virgule placée, le 0 final peut s'effacer : 5,2. (4) Le fleuriste utilise 5,2 m de ruban. Contrôle : chaque bouquet prend moins d'un mètre, donc 8 bouquets moins de 8 m ; mais plus d'un demi-mètre (65 centièmes, c'est plus que 50 centièmes), donc 2 bouquets plus de 1 m et 8 bouquets plus de 4 m. 5,2 m convient, pas 0,52 m.
+
+*Indice.* Cherche d'abord combien de bouquets il fait en tout.
+
+**EX-D021-M-02** — maitrise, vrai_faux, 90 s
+
+Une gourde contient 1,25 L. Vrai ou faux : 4 gourdes contiennent un nombre entier de litres.
+
+**Réponse :** True
+
+*Corrigé.* (1) On calcule 1{,}25 × 4, posé comme 125 × 4 : 4 × 5 = 20, on écrit 0 et on retient 2 ; 4 × 2 = 8, plus 2, cela fait 10, on écrit 0 et on retient 1 ; 4 × 1 = 4, plus 1, cela fait 5. On obtient 500. (2) 1,25 a deux chiffres après la virgule : 500 centièmes, c'est 5,00. (3) 5,00, c'est 5 unités, 0 dixième et 0 centième : c'est le nombre entier 5. Multiplier un nombre à virgule par un entier peut donner un entier. (4) C'est vrai : 4 gourdes contiennent 5 L.
+
+*Indice.* Pose la multiplication, place la virgule, puis regarde les chiffres après la virgule.
+
+---
+
+## `D014` · Convertir des mesures écrites avec une virgule — CM1, difficulté 4
+
+*Convertir une longueur, une masse ou une contenance écrite avec une virgule dans une unité plus petite, en s'appuyant sur les relations entre unités et sans tableau de conversion (3,5 m = 3 m + 50 cm = 350 cm).*
+
+> « Les longueurs, les masses et les contenances permettent de nourrir le travail mené sur les fractions et les nombres décimaux. » — *Cycle 3, Cours moyen première année, Grandeurs et mesures*
+> « 3,5 mètres est égal à 350 centimètres, car 1 mètre est égal à 100 centimètres. » — *Cycle 3, Cours moyen première année, Grandeurs et mesures*
+> « Connaître les relations entre les unités de longueur » — *Cycle 3, Cours moyen première année, Les longueurs*
+
+**EX-D014-D-01** — decouverte, numerique, 60 s
+
+Une planche mesure 2,6 m. On sait que 1 m = 100 cm. Quelle est la longueur de la planche en centimètres ?
+
+**Réponse :** 260
+
+*Corrigé.* (1) 2,6 m, c'est 2 m et 6 dixièmes de mètre. (2) 1 m = 100 cm, donc 2 m = 200 cm. (3) Un dixième de mètre, c'est 1 dm, soit 10 cm. Donc 6 dixièmes de mètre font 60 cm. (4) 200 + 60 = 260 : la planche mesure 260 cm. (5) 26 cm serait faux : c'est moins qu'une règle de 30 cm, pas une planche de plus de 2 m.
+
+*Indice.* Que vaut 1 dixième de mètre en centimètres ?
+
+**EX-D014-D-02** — decouverte, qcm, 60 s
+
+Une gourde contient 1,5 L d'eau. On sait que 1 L = 100 cL. Combien de centilitres contient la gourde ?
+
+- **a.** 15 cL
+  <br>*Erreur visée :* L'élève pense que 1 L = 10 cL : il multiplie par 10 au lieu d'utiliser 1 L = 100 cL. 15 cL, c'est 15 centièmes de litre, moins d'un quart de litre.
+- **b.** 150 cL ✅
+- **c.** 105 cL
+  <br>*Erreur visée :* L'élève lit 1,5 L comme « 1 L et 5 cL » : il traite le 5 comme un nombre de centilitres alors que c'est un chiffre des dixièmes de litre.
+- **d.** 1,50 cL
+  <br>*Erreur visée :* L'élève écrit un zéro à droite en croyant convertir : 1,50 est le même nombre que 1,5, et il a seulement changé l'unité. 1,50 cL tiendrait dans une cuillère.
+
+*Corrigé.* (1) 1,5 L, c'est 1 L et 5 dixièmes de litre. (2) 1 L = 100 cL. Un dixième de litre, c'est 1 dL, soit 10 cL : 5 dixièmes de litre font 50 cL. (3) 100 + 50 = 150. La gourde contient 150 cL. (4) Le 5 de 1,5 est un chiffre des dixièmes, pas des centièmes : il vaut 50 cL, pas 5 cL.
+
+*Indice.* Le 5 de 1,5 L est un chiffre des dixièmes. Combien de centilitres dans un dixième de litre ?
+
+**EX-D014-E-01** — entrainement, numerique, 75 s
+
+Un melon pèse 1,25 kg. Quelle est sa masse en grammes ?
+
+**Réponse :** 1250
+
+*Corrigé.* (1) 1,25 kg, c'est 1 kg, 2 dixièmes de kilogramme et 5 centièmes de kilogramme. (2) 1 kg = 1 000 g. (3) Un dixième de kilogramme vaut 100 g, car 10 × 100 = 1 000. Donc 2 dixièmes de kilogramme font 200 g. (4) Un centième de kilogramme vaut 10 g, car 100 × 10 = 1 000. Donc 5 centièmes de kilogramme font 50 g. (5) 1 000 + 200 + 50 = 1 250. Le melon pèse 1 250 g.
+
+*Indice.* Combien de grammes dans 1 kg ? Et dans un dixième de kilogramme ?
+
+**EX-D014-E-02** — entrainement, vrai_faux, 60 s
+
+Un clou mesure 3,4 cm. Inès dit : « Il mesure 3,40 mm, car 1 cm = 10 mm. » A-t-elle raison ?
+
+**Réponse :** False
+
+*Corrigé.* (1) 3,4 cm, c'est 3 cm et 4 dixièmes de centimètre. Un dixième de centimètre, c'est 1 mm. (2) 3 cm = 30 mm, donc 3,4 cm = 30 mm + 4 mm = 34 mm. (3) On peut aussi le voir comme 3{,}4 × 10 = 34 : les 3 unités deviennent 3 dizaines, les 4 dixièmes deviennent 4 unités. (4) 3,40 et 3,4 sont le même nombre : Inès a seulement écrit un zéro à droite, ce qui ne multiplie pas par 10. Un clou de 3,40 mm serait dix fois plus court. (5) C'est faux : le clou mesure 34 mm.
+
+*Indice.* 3,40 est-il vraiment 10 fois plus grand que 3,4 ?
+
+**EX-D014-M-01** — maitrise, numerique, 100 s
+
+Un ruban mesure 2,05 m. Sarah en coupe un morceau de 80 cm. Quelle longueur de ruban reste-t-il, en centimètres ?
+
+**Réponse :** 125
+
+*Corrigé.* (1) Les deux longueurs ne sont pas dans la même unité : on convertit d'abord 2,05 m en centimètres. (2) 2,05 m, c'est 2 m, 0 dixième de mètre et 5 centièmes de mètre. Un centième de mètre, c'est 1 cm. (3) 2 m = 200 cm, donc 2,05 m = 200 cm + 5 cm = 205 cm. Ce n'est pas 250 cm : le 5 est le chiffre des centièmes, pas celui des dixièmes. (4) On enlève le morceau coupé : 205 - 80 = 125. (5) Il reste 125 cm de ruban.
+
+*Indice.* Écris d'abord 2,05 m en centimètres. Attention au 0 : quel est le rang du 5 ?
+
+**EX-D014-M-02** — maitrise, qcm, 90 s
+
+Trois bouteilles contiennent 0,75 L ; 85 cL et 0,9 L. Laquelle contient le plus de liquide ?
+
+- **a.** La bouteille de 0,75 L
+  <br>*Erreur visée :* L'élève pense que plus il y a de chiffres après la virgule, plus le nombre est grand : 75 lui paraît plus grand que 9. Or 0,75 L = 75 cL et 0,9 L = 90 cL.
+- **b.** La bouteille de 85 cL
+  <br>*Erreur visée :* L'élève compare les nombres sans convertir : 85 lui paraît plus grand que 0,75 et 0,9, sans tenir compte des unités. Or 85 cL est moins que 0,9 L, qui fait 90 cL.
+- **c.** La bouteille de 0,9 L ✅
+
+*Corrigé.* (1) Les contenances ne sont pas dans la même unité : pour comparer, on les écrit toutes en centilitres, avec 1 L = 100 cL. (2) 0,75 L, c'est 75 centièmes de litre. Un centième de litre, c'est 1 cL : 0,75 L = 75 cL. (3) 0,9 L, c'est 9 dixièmes de litre. Un dixième de litre vaut 10 cL : 0,9 L = 90 cL. (4) On compare : 75 cL < 85 cL < 90 cL. C'est la bouteille de 0,9 L qui contient le plus.
+
+*Indice.* Convertis les trois contenances dans la même unité avant de comparer.
+
+---
+
 ## `A026` · Tous les diviseurs d'un entier — CM2, difficulté 3
 
 *Déterminer tous les diviseurs d'un entier inférieur ou égal à 30*
@@ -3304,6 +4242,327 @@ Une recette demande 2/3 de litre de lait. On la fait 3 fois. Combien de lait fau
 
 ---
 
+## `D022` · Décimaux jusqu'aux millièmes — CM2, difficulté 4
+
+*Étendre aux millièmes la lecture, l'écriture, la décomposition et la comparaison des décimaux, et utiliser les relations 1 centième = 10 millièmes, 1 = 1 000 millièmes. Au plus trois chiffres après la virgule.*
+
+> « L'étude des nombres décimaux s'étend aux millièmes. » — *Cycle 3, Cours moyen deuxième année, Les nombres décimaux*
+> « Connaître et utiliser les relations entre unités simples, dixièmes, centièmes et millièmes » — *Cycle 3, Cours moyen deuxième année, Les nombres décimaux*
+
+**EX-D022-D-01** — decouverte, numerique, 45 s
+
+Après la virgule viennent les dixièmes, les centièmes, puis les millièmes. Écris avec une virgule : 2 + 4/10 + 6/1000
+
+**Réponse :** 2.406
+
+*Corrigé.* (1) Partie entière : 2, avant la virgule. (2) Dixièmes : 4, juste après la virgule. (3) Centièmes : il n'y en a pas. On écrit 0 pour garder la place. (4) Millièmes : 6, au troisième rang après la virgule. (5) 2 + 4/10 + 6/1000 = 2{,}406. Sans le 0, on écrirait 2,46, qui signifie 4 dixièmes et 6 centièmes.
+
+*Indice.* Y a-t-il des centièmes dans ce nombre ?
+
+**EX-D022-D-02** — decouverte, qcm, 40 s
+
+Une unité est partagée en 1 000 millièmes. 1 centième, c'est combien de millièmes ?
+
+- **a.** 10 millièmes ✅
+- **b.** 100 millièmes
+  <br>*Erreur visée :* L'élève reprend la relation entre l'unité et les centièmes (1 = 100 centièmes) au lieu de passer d'un seul rang. Or 100 millièmes, c'est 1 dixième.
+- **c.** 1 000 millièmes
+  <br>*Erreur visée :* L'élève confond le centième avec l'unité entière : 1 000 millièmes font 1 unité, pas 1 centième.
+- **d.** 10 milliers
+  <br>*Erreur visée :* L'élève confond millième et millier. Un millier vaut 1 000 unités ; un millième est une part de l'unité partagée en 1 000.
+
+*Corrigé.* (1) Un centième, c'est l'unité partagée en 100. Un millième, c'est l'unité partagée en 1 000. (2) D'un rang au suivant, on partage en 10 : 1 unité = 10 dixièmes, 1 dixième = 10 centièmes, 1 centième = 10 millièmes. (3) Vérification : 100 centièmes de 10 millièmes chacun font 1 000 millièmes, l'unité entière. (4) 1 centième = 10 millièmes, soit 1/100 = 10/1000.
+
+*Indice.* Pense au lien entre deux rangs voisins, comme entre dixièmes et centièmes.
+
+**EX-D022-E-01** — entrainement, vrai_faux, 60 s
+
+Jules écrit : 4053/1000 = 4{,}53. A-t-il raison ?
+
+**Réponse :** False
+
+*Corrigé.* (1) 4053 millièmes = 4000 millièmes + 53 millièmes. (2) 1 000 millièmes font 1 unité : 4000 millièmes font 4 unités. (3) 53 millièmes = 50 millièmes + 3 millièmes = 5 centièmes et 3 millièmes, car 10 millièmes = 1 centième. Il n'y a aucun dixième. (4) Donc 4053/1000 = 4{,}053, avec un 0 au rang des dixièmes. (5) 4,53, c'est 4 unités, 5 dixièmes et 3 centièmes, soit 4530/1000 : Jules a tort, il a oublié le 0 des dixièmes.
+
+*Indice.* Avec des millièmes, combien de chiffres faut-il après la virgule ?
+
+**EX-D022-E-02** — entrainement, qcm, 60 s
+
+Range dans l'ordre croissant : 7,45 ; 7,4 ; 7,409
+
+- **a.** 7,409 ; 7,45 ; 7,4
+  <br>*Erreur visée :* L'élève pense que plus il y a de chiffres après la virgule, plus le nombre est petit, comme si des millièmes étaient toujours plus petits que des dixièmes. Or 7,4 = 7,400 est le plus petit des trois.
+- **b.** 7,4 ; 7,409 ; 7,45 ✅
+- **c.** 7,4 ; 7,45 ; 7,409
+  <br>*Erreur visée :* L'élève compare les parties décimales comme des entiers : 4 < 45 < 409. Plus il y a de chiffres après la virgule, plus le nombre lui paraît grand.
+
+*Corrigé.* (1) Les trois nombres ont la même partie entière, 7 : on compare les rangs après la virgule, un par un. (2) Dixièmes : 4 pour les trois. Égalité. (3) Centièmes : 7,45 en a 5 ; 7,4 et 7,409 en ont 0. Donc 7,45 est le plus grand. (4) Millièmes, pour départager 7,4 = 7,400 et 7,409 : 0 < 9, donc 7,4 < 7,409. (5) Ordre croissant : 7,4 ; 7,409 ; 7,45. Le nombre de chiffres après la virgule ne dit rien de la taille : 7,409 en a plus que 7,45, et il est plus petit.
+
+*Indice.* Compare d'abord les dixièmes, puis les centièmes, puis les millièmes.
+
+**EX-D022-M-01** — maitrise, numerique, 75 s
+
+Un nombre est formé de 1 unité, 5 dixièmes et 7 millièmes. Combien de millièmes contient-il en tout ?
+
+**Réponse :** 1507
+
+*Corrigé.* (1) 1 unité = 1 000 millièmes. (2) 1 dixième = 10 centièmes, et chaque centième vaut 10 millièmes : 1 dixième = 100 millièmes. Donc 5 dixièmes = 500 millièmes. (3) Il reste 7 millièmes. (4) En tout : 1000 + 500 + 7 = 1507 millièmes. Le nombre s'écrit 1,507, c'est-à-dire 1507/1000. (5) Piège : coller les chiffres 1 ; 5 ; 7 donne 157 millièmes, ce qui ne fait même pas une unité.
+
+*Indice.* Commence par l'unité : combien de millièmes vaut-elle ?
+
+**EX-D022-M-02** — maitrise, qcm, 120 s
+
+Une seule de ces écritures n'est pas égale à 5,06. Laquelle ?
+
+- **a.** 506/100
+  <br>*Erreur visée :* L'élève lit 506 centièmes comme 50,6 : il oublie que 100 centièmes font 1 unité, donc que 500 centièmes font seulement 5 unités.
+- **b.** 5 + 60/1000
+  <br>*Erreur visée :* L'élève pense que 60 millièmes ne peuvent pas valoir 6 centièmes. Or 10 millièmes = 1 centième, donc 60 millièmes = 6 centièmes.
+- **c.** 5060/1000
+  <br>*Erreur visée :* L'élève croit qu'un zéro de plus change la valeur. 5060 millièmes = 5000 millièmes + 60 millièmes = 5 unités et 6 centièmes.
+- **d.** 5 + 6/10 ✅
+
+*Corrigé.* (1) 5,06, c'est 5 unités, 0 dixième et 6 centièmes. (2) a : 506 centièmes = 500 centièmes + 6 centièmes = 5 unités et 6 centièmes. Égal à 5,06. (3) b : 60 millièmes = 6 centièmes. 5 + 60/1000 = 5{,}060 = 5{,}06. Égal. (4) c : 5060 millièmes = 5000 millièmes + 60 millièmes = 5 unités et 6 centièmes. Égal. (5) d : 5 + 6/10, c'est 5 unités et 6 dixièmes, soit 5,6 = 5,60 : 60 centièmes, et non 6. C'est l'écriture qui n'est pas égale à 5,06.
+
+*Indice.* Écris chaque proposition avec une virgule, puis compare.
+
+---
+
+## `D007` · Division décimale par un entier à un chiffre — CM2, difficulté 4
+
+*Poser et effectuer une division décimale d'un entier ou d'un décimal par un entier à un chiffre, en poursuivant le calcul après la virgule jusqu'à un reste nul ou au rang demandé.*
+
+> « Poser et effectuer des divisions décimales avec un dividende entier et un diviseur à un chiffre » — *Cycle 3, Cours moyen deuxième année, Les quatre opérations*
+> « Poser et effectuer des divisions décimales avec un dividende décimal et un diviseur à un chiffre » — *Cycle 3, Cours moyen deuxième année, Les quatre opérations*
+
+**EX-D007-D-01** — decouverte, numerique, 80 s
+
+Un ruban de 8,4 m est coupé en 3 morceaux de même longueur. Pose la division 8{,}4 ÷ 3. Combien mesure chaque morceau, en mètres ?
+
+**Réponse :** 2.8
+
+*Corrigé.* (1) On commence par les unités : 8 unités divisées par 3. 3 × 2 = 6 : on écrit 2 au quotient. Il reste 8 - 6 = 2 unités. (2) On abaisse le 4, qui est le chiffre des dixièmes. À ce moment, on écrit la virgule au quotient, juste après le 2 : tout ce qu'on écrira ensuite au quotient sera des dixièmes. (3) 2 unités et 4 dixièmes font 24 dixièmes. 3 × 8 = 24 : on écrit 8 au quotient, après la virgule. Il reste 0 : la division est terminée. (4) 8{,}4 ÷ 3 = 2{,}8. Vérification par la multiplication : 2{,}8 × 3 = 8{,}4. (5) Chaque morceau mesure 2,8 m.
+
+*Indice.* Écris la virgule au quotient au moment où tu abaisses le chiffre des dixièmes.
+
+**EX-D007-D-02** — decouverte, qcm, 90 s
+
+Un pâtissier répartit 15 kg de farine dans 4 sacs, la même masse dans chaque sac. Combien de kilogrammes y a-t-il dans chaque sac ?
+
+- **a.** 3,3 kg
+  <br>*Erreur visée :* L'élève fait la division euclidienne (quotient 3, reste 3) et écrit le reste après la virgule. Mais le reste 3, ce sont 3 kg encore à partager, pas 3 dixièmes.
+- **b.** 37,5 kg
+  <br>*Erreur visée :* L'élève trouve les bons chiffres 3, 7 et 5 mais place mal la virgule : il l'écrit après le 7 au lieu de l'écrire juste après le 3, au moment d'abaisser le premier zéro. Un sac contiendrait plus que les 15 kg de départ.
+- **c.** 3,75 kg ✅
+- **d.** 3,7 kg
+  <br>*Erreur visée :* L'élève s'arrête après le premier zéro abaissé alors qu'il reste 2 dixièmes à partager : il faut abaisser un autre zéro jusqu'à obtenir un reste nul.
+
+*Corrigé.* (1) On partage 15 kg en 4 : on pose 15 ÷ 4. 4 × 3 = 12 : on écrit 3 au quotient. Il reste 15 - 12 = 3 kg à partager. (2) Le reste n'est pas nul : on continue après la virgule. Dans le dividende, on écrit une virgule et un 0 à droite de 15 : 15 = 15{,}0, cela ne change pas le nombre. On écrit la virgule au quotient, après le 3, puis on abaisse ce zéro : 3 unités, c'est 30 dixièmes. (3) 4 × 7 = 28 : on écrit 7 au quotient. Il reste 30 - 28 = 2 dixièmes. (4) On écrit un autre 0 au dividende (15{,}00) et on l'abaisse : 2 dixièmes, c'est 20 centièmes. 4 × 5 = 20 : on écrit 5 au quotient. Il reste 0 : la division est terminée. (5) 15 ÷ 4 = 3{,}75. Vérification par la multiplication : 3{,}75 × 4 = 15. Chaque sac contient 3,75 kg.
+
+*Indice.* Après le quotient 3, il reste 3 kg. Transforme ces 3 unités en dixièmes pour continuer le partage.
+
+**EX-D007-E-01** — entrainement, numerique, 90 s
+
+Pose et calcule 9{,}45 ÷ 5.
+
+**Réponse :** 1.89
+
+*Corrigé.* (1) Unités : 9 divisé par 5. 5 × 1 = 5 : on écrit 1 au quotient. Il reste 9 - 5 = 4 unités. (2) On abaisse le 4 des dixièmes et on écrit la virgule au quotient. 4 unités et 4 dixièmes font 44 dixièmes. 5 × 8 = 40 : on écrit 8. Il reste 44 - 40 = 4 dixièmes. (3) On abaisse le 5 des centièmes : 4 dixièmes et 5 centièmes font 45 centièmes. 5 × 9 = 45 : on écrit 9. Il reste 0 : la division est terminée. (4) 9{,}45 ÷ 5 = 1{,}89. Ordre de grandeur : 10 ÷ 5 = 2, le résultat est proche de 2. Vérification : 1{,}89 × 5 = 9{,}45.
+
+*Indice.* Écris la virgule au quotient quand tu abaisses le chiffre des dixièmes.
+
+**EX-D007-E-02** — entrainement, vrai_faux, 80 s
+
+Zoé pose la division 6{,}24 ÷ 6 et trouve 1,4. A-t-elle raison ?
+
+**Réponse :** False
+
+*Corrigé.* (1) Unités : 6 ÷ 6 = 1. On écrit 1 au quotient. Il reste 0. (2) On abaisse le 2 des dixièmes et on écrit la virgule au quotient. 2 dixièmes, c'est moins que 6 : on ne peut pas faire de part. On écrit 0 au quotient, au rang des dixièmes. Il reste 2 dixièmes. (3) On abaisse le 4 des centièmes : 2 dixièmes et 4 centièmes font 24 centièmes. 6 × 4 = 24 : on écrit 4. Il reste 0. (4) 6{,}24 ÷ 6 = 1{,}04. Zoé a oublié le 0 des dixièmes, comme on peut oublier un 0 au quotient d'une division d'entiers. (5) C'est faux : le quotient est 1,04. Vérification : 1{,}04 × 6 = 6{,}24, alors que 1{,}4 × 6 = 8{,}4. Chacune des 6 parts reçoit 1 unité, puis il ne reste que 24 centièmes à partager, soit 4 centièmes par part.
+
+*Indice.* Quand tu abaisses le 2, le diviseur 6 « rentre-t-il » dans 2 ? Que faut-il alors écrire au quotient ?
+
+**EX-D007-M-01** — maitrise, numerique, 120 s
+
+Huit coureurs se partagent un relais de 3 km : chacun court la même distance. Quelle distance court chaque coureur, en kilomètres ?
+
+**Réponse :** 0.375
+
+*Corrigé.* (1) On partage 3 km en 8 : on pose 3 ÷ 8. 3 unités, c'est moins que 8 : on ne peut pas faire de part d'une unité. On écrit 0 au quotient, au rang des unités, puis la virgule. (2) Dans le dividende, on écrit une virgule et un 0 à droite du 3 : 3 = 3{,}0, cela ne change pas le nombre. On abaisse ce zéro : 3 unités, c'est 30 dixièmes. 8 × 3 = 24 : on écrit 3. Il reste 30 - 24 = 6 dixièmes. (3) On écrit un autre 0 au dividende et on l'abaisse : 6 dixièmes, c'est 60 centièmes. 8 × 7 = 56 : on écrit 7. Il reste 60 - 56 = 4 centièmes. (4) On écrit encore un 0 au dividende et on l'abaisse : 4 centièmes, c'est 40 millièmes. 8 × 5 = 40 : on écrit 5. Il reste 0 : la division est terminée. (5) 3 ÷ 8 = 0{,}375. Chaque coureur court 0,375 km. C'est moins de 1 km, ce qui est cohérent : 3 km partagés entre 8 coureurs.
+
+*Indice.* 3 est plus petit que 8 : que faut-il écrire au quotient au rang des unités ?
+
+**EX-D007-M-02** — maitrise, qcm, 120 s
+
+Six pommes identiques pèsent ensemble 1,05 kg. Combien pèse une pomme, en kilogrammes ?
+
+- **a.** 1,75 kg
+  <br>*Erreur visée :* L'élève oublie le 0 des unités au quotient : comme 1 est plus petit que 6, il commence par 10 dixièmes mais écrit le premier chiffre aux unités. Une pomme pèserait plus que les six ensemble.
+- **b.** 0,17 kg
+  <br>*Erreur visée :* L'élève s'arrête au reste de 3 centièmes au lieu d'abaisser un zéro : la division n'est pas terminée tant que le reste n'est pas nul.
+- **c.** 0,173 kg
+  <br>*Erreur visée :* L'élève écrit le reste 3 à la suite du quotient, comme un chiffre. Mais 3 centièmes restent à partager entre 6 : il faut abaisser un zéro et diviser 30 millièmes par 6.
+- **d.** 0,175 kg ✅
+
+*Corrigé.* (1) On partage 1,05 kg en 6 : on pose 1{,}05 ÷ 6. 1 unité, c'est moins que 6 : on écrit 0 au quotient, au rang des unités, puis la virgule. (2) On abaisse le 0 des dixièmes : 1 unité, c'est 10 dixièmes. 6 × 1 = 6 : on écrit 1. Il reste 10 - 6 = 4 dixièmes. (3) On abaisse le 5 des centièmes : 4 dixièmes et 5 centièmes font 45 centièmes. 6 × 7 = 42 : on écrit 7. Il reste 45 - 42 = 3 centièmes. (4) Le reste n'est pas nul : on écrit un 0 à droite de 1,05 dans le dividende (1{,}05 = 1{,}050, c'est le même nombre) et on l'abaisse : 3 centièmes, c'est 30 millièmes. 6 × 5 = 30 : on écrit 5. Il reste 0. (5) 1{,}05 ÷ 6 = 0{,}175. Une pomme pèse 0,175 kg.
+
+*Indice.* 1 est plus petit que 6 : commence par écrire 0 et la virgule au quotient. Continue jusqu'à un reste nul.
+
+---
+
+## `D023` · Calcul mental : multiplier et diviser un décimal par 10, 100, 1 000 — CM2, difficulté 4
+
+*Multiplier ou diviser mentalement un décimal par 10, 100 ou 1 000 en raisonnant sur le rang des chiffres, y compris quand il faut ajouter des zéros (0,47 × 100 ; 5,2 ÷ 1 000).*
+
+> « Multiplier un nombre décimal par 10, 100 ou 1 000 » — *Cycle 3, Cours moyen deuxième année, Le calcul mental*
+> « Diviser un nombre décimal par 10, 100 ou 1 000 » — *Cycle 3, Cours moyen deuxième année, Le calcul mental*
+
+**EX-D023-D-01** — decouverte, numerique, 60 s
+
+Une boîte contient 100 sachets de thé. Chaque sachet contient 2,5 g de thé. Calcule 2{,}5 × 100 : quelle masse de thé y a-t-il dans la boîte, en grammes ?
+
+**Réponse :** 250
+
+*Corrigé.* (1) Multiplier par 100 rend chaque chiffre 100 fois plus grand : chaque chiffre avance de deux rangs vers la gauche. (2) 2,5, c'est 2 unités et 5 dixièmes. Les 2 unités deviennent 2 centaines ; les 5 dixièmes deviennent 5 dizaines. (3) Il n'y a plus de chiffre au rang des unités : on y écrit un 0. 2 centaines, 5 dizaines et 0 unité : 2{,}5 × 100 = 250. (4) Écrire 2,500 serait faux : un zéro écrit à droite après la virgule ne change pas le nombre. (5) La boîte contient 250 g de thé.
+
+*Indice.* Multiplier par 100, c'est multiplier par 10, puis multiplier le résultat par 10. Que deviennent les 5 dixièmes ?
+
+**EX-D023-D-02** — decouverte, qcm, 50 s
+
+Calcule mentalement 13{,}6 ÷ 100.
+
+- **a.** 1,36
+  <br>*Erreur visée :* L'élève divise par 10 au lieu de 100 : les chiffres n'ont reculé que d'un rang. 13{,}6 ÷ 10 = 1{,}36.
+- **b.** 1 360
+  <br>*Erreur visée :* L'élève multiplie par 100 au lieu de diviser. Le résultat d'une division par 100 doit être plus petit que 13,6.
+- **c.** 13,600
+  <br>*Erreur visée :* L'élève croit que diviser par 100, c'est écrire deux zéros. Mais 13,600 et 13,6 sont le même nombre : rien n'a été divisé.
+- **d.** 0,136 ✅
+
+*Corrigé.* (1) Diviser par 100 rend chaque chiffre 100 fois plus petit : chaque chiffre recule de deux rangs vers la droite. (2) 13,6, c'est 1 dizaine, 3 unités et 6 dixièmes. La dizaine devient 1 dixième, les 3 unités deviennent 3 centièmes, les 6 dixièmes deviennent 6 millièmes. (3) Il n'y a plus de chiffre au rang des unités : on y écrit un 0. 13{,}6 ÷ 100 = 0{,}136. (4) Vérification : 0{,}136 × 100 = 13{,}6. La bonne réponse est 0,136.
+
+*Indice.* Le résultat doit être plus petit que 13,6. De combien de rangs recule chaque chiffre ?
+
+**EX-D023-E-01** — entrainement, numerique, 50 s
+
+Calcule mentalement 4{,}07 × 1 000.
+
+**Réponse :** 4070
+
+*Corrigé.* (1) Multiplier par 1 000 rend chaque chiffre 1 000 fois plus grand : chaque chiffre avance de trois rangs vers la gauche. (2) 4,07, c'est 4 unités, 0 dixième et 7 centièmes. Les 4 unités deviennent 4 milliers, le 0 des dixièmes devient le 0 des centaines, les 7 centièmes deviennent 7 dizaines. (3) Le rang des unités est vide : on y écrit un 0. 4{,}07 × 1 000 = 4 070. (4) Ce n'est pas 407 : ce serait multiplier par 100. Et le 0 des dixièmes ne disparaît pas : il devient le chiffre des centaines.
+
+*Indice.* Chaque chiffre avance de trois rangs. Où va le 4 des unités ?
+
+**EX-D023-E-02** — entrainement, vrai_faux, 50 s
+
+Paul dit : « 7{,}5 ÷ 100 = 0{,}075, car le chiffre 7 des unités devient le chiffre des centièmes. » Paul a-t-il raison ?
+
+**Réponse :** True
+
+*Corrigé.* (1) Diviser par 100 rend chaque chiffre 100 fois plus petit : chaque chiffre recule de deux rangs vers la droite. (2) Le 7 des unités recule de deux rangs : unités, dixièmes, centièmes. Il devient bien le chiffre des centièmes. Le 5 des dixièmes devient le chiffre des millièmes. (3) Il reste 0 unité et 0 dixième : on écrit 0{,}075. Vérification : 0{,}075 × 100 = 7{,}5. (4) C'est vrai : Paul a raison. Les deux zéros sont indispensables, ils tiennent les rangs des unités et des dixièmes.
+
+*Indice.* Le 7 recule de deux rangs : compte unités, dixièmes, centièmes.
+
+**EX-D023-M-01** — maitrise, numerique, 75 s
+
+1 000 grains de riz pèsent 23 g. Combien pèse un grain de riz, en grammes ?
+
+**Réponse :** 0.023
+
+*Corrigé.* (1) Les 1 000 grains pèsent 23 g : pour la masse d'un seul grain, on partage en 1 000, on calcule 23 ÷ 1 000. (2) Diviser par 1 000 rend chaque chiffre 1 000 fois plus petit : chaque chiffre recule de trois rangs vers la droite. (3) 23, c'est 2 dizaines et 3 unités. Les 2 dizaines deviennent 2 centièmes, les 3 unités deviennent 3 millièmes. (4) Les rangs des unités et des dixièmes sont vides : on y écrit des 0. 23 ÷ 1 000 = 0{,}023. (5) Vérification : 0{,}023 × 1 000 = 23. Un grain de riz pèse 0,023 g, une masse très petite : c'est cohérent.
+
+*Indice.* On connaît la masse de 1 000 grains et on cherche celle d'un seul : multiplier ou diviser par 1 000 ?
+
+**EX-D023-M-02** — maitrise, qcm, 60 s
+
+Complète : 2{,}75 × … = 2 750.
+
+- **a.** 10
+  <br>*Erreur visée :* L'élève voit un zéro au bout de 2 750 et pense « un zéro ajouté, donc × 10 ». Mais 2{,}75 × 10 = 27{,}5.
+- **b.** 100
+  <br>*Erreur visée :* L'élève pense qu'il suffit d'effacer la virgule : deux chiffres après la virgule, donc × 100. Mais 2{,}75 × 100 = 275, pas 2 750.
+- **c.** 1 000 ✅
+
+*Corrigé.* (1) On suit le chiffre 2. Dans 2,75, c'est le chiffre des unités ; dans 2 750, c'est le chiffre des milliers. (2) Des unités aux milliers, il avance de trois rangs : unités, dizaines, centaines, milliers. Avancer de trois rangs, c'est multiplier par 1 000. (3) Vérification : 2{,}75 × 10 = 27{,}5 ; 2{,}75 × 100 = 275 ; 2{,}75 × 1 000 = 2 750. (4) La bonne réponse est 1 000.
+
+*Indice.* Suis le chiffre 2 : dans 2 750, à quel rang est-il ?
+
+---
+
+## `D024` · Multiplier un décimal par un entier (posé) — CM2, difficulté 4
+
+*Poser et effectuer la multiplication d'un décimal par un entier à plusieurs chiffres, et placer la virgule dans le résultat.*
+
+> « Poser et effectuer la multiplication d'un nombre décimal par un nombre entier » — *Cycle 3, Cours moyen deuxième année, Les quatre opérations*
+
+**EX-D024-D-01** — decouverte, numerique, 150 s
+
+Le billet de train coûte 4,65 € par élève. Combien paie une classe de 23 élèves ? Pose la multiplication.
+
+**Réponse :** 106.95
+
+*Corrigé.* (1) On calcule 4{,}65 × 23. On pose 4,65 en haut et 23 en dessous, à droite, sans s'occuper de la virgule : on calcule comme pour 465 × 23. Comme 23 = 3 + 20, il y a deux lignes. (2) Première ligne, 465 × 3 : 3 × 5 = 15, on écrit 5 et on retient 1 ; 3 × 6 = 18, plus 1, cela fait 19, on écrit 9 et on retient 1 ; 3 × 4 = 12, plus 1, cela fait 13. La ligne est 1 395. (3) Deuxième ligne, 465 × 20 : le 2 vaut 2 dizaines, on écrit d'abord un 0 à droite, puis 465 × 2 = 930. La ligne est 9 300. On additionne les deux lignes : 1 395 + 9 300 = 10 695. (4) 4,65, c'est 465 centièmes : le produit compte 10 695 centièmes. Il a deux chiffres après la virgule, comme 4,65 : 4{,}65 × 23 = 106{,}95. La classe paie 106,95 €.
+
+*Indice.* Calcule 465 × 23 en deux lignes, puis place la virgule.
+
+**EX-D024-D-02** — decouverte, qcm, 100 s
+
+Un fil électrique est vendu en bobines de 3,8 m. Quelle longueur de fil y a-t-il dans 12 bobines ?
+
+- **a.** 456 m
+  <br>*Erreur visée :* L'élève calcule bien 38 × 12 = 456, mais oublie de placer la virgule dans le produit.
+- **b.** 45,6 m ✅
+- **c.** 11,4 m
+  <br>*Erreur visée :* L'élève oublie le 0 de la deuxième ligne : il additionne 38 × 2 = 76 et 38 × 1 = 38, soit 114, comme si le 1 de 12 valait 1 unité et non 1 dizaine.
+
+*Corrigé.* (1) On calcule 3{,}8 × 12, posé comme 38 × 12, en deux lignes car 12 = 2 + 10. (2) Première ligne : 38 × 2 = 76. Deuxième ligne, 38 × 10 : on écrit un 0 à droite, puis 38, ce qui donne 380. On additionne : 76 + 380 = 456. (3) 3,8 a un chiffre après la virgule : 456 dixièmes, c'est 45,6. Le produit a un chiffre après la virgule. (4) Contrôle : 12 bobines de presque 4 m font presque 12 × 4 = 48 m. Il y a 45,6 m de fil : la bonne réponse est b.
+
+*Indice.* Calcule 38 × 12 sans oublier le 0 de la deuxième ligne, puis place la virgule.
+
+**EX-D024-E-01** — entrainement, vrai_faux, 120 s
+
+Une boîte de conserve pèse 0,68 kg. Hugo calcule la masse de 35 boîtes et trouve 2,38 kg. Hugo a-t-il raison ?
+
+**Réponse :** False
+
+*Corrigé.* (1) On calcule 0{,}68 × 35, posé comme 68 × 35. Première ligne : 68 × 5 = 340. Deuxième ligne, 68 × 30 : on écrit un 0 à droite, puis 68 × 3 = 204, ce qui donne 2 040. (2) On additionne : 340 + 2 040 = 2 380. 0,68 a deux chiffres après la virgule : on compte deux chiffres à partir de la droite dans 2 380, ce qui donne 23,80, soit 23,8. (3) Hugo a tort : 35 boîtes pèsent 23,8 kg. Il a effacé le 0 de 2 380 avant de placer la virgule : 238 donne alors 2,38. Il faut d'abord placer la virgule, puis effacer les 0 inutiles à la fin de la partie décimale. (4) Contrôle : une boîte pèse plus d'un demi-kilo, donc 2 boîtes pèsent déjà plus de 1 kg, et 35 boîtes bien plus que 2,38 kg.
+
+*Indice.* Pose 68 × 35, et place la virgule avant d'effacer un 0.
+
+**EX-D024-E-02** — entrainement, numerique, 150 s
+
+Un sac de croquettes pèse 1,375 kg. Un refuge pour chats en reçoit 12. Quelle masse de croquettes le refuge reçoit-il ?
+
+**Réponse :** 16.5
+
+*Corrigé.* (1) On calcule 1{,}375 × 12, posé comme 1 375 × 12. Première ligne : 1 375 × 2 = 2 750. Deuxième ligne, 1 375 × 10 : un 0 à droite, puis 1 375, soit 13 750. (2) On additionne les deux lignes : 2 750 + 13 750 = 16 500. (3) 1,375 a trois chiffres après la virgule (des millièmes) : le produit en a trois aussi. 16 500 millièmes, c'est 16,500. Une fois la virgule placée, on efface les 0 de la fin : 16,5. (4) Le refuge reçoit 16,5 kg de croquettes.
+
+*Indice.* 1,375 kg, ce sont des millièmes : combien de chiffres après la virgule dans le produit ?
+
+**EX-D024-M-01** — maitrise, qcm, 90 s
+
+On sait que 254 × 37 = 9 398. Sans poser d'opération, quel est le résultat de 2{,}54 × 37 ?
+
+- **a.** 939,8
+  <br>*Erreur visée :* L'élève ne laisse qu'un seul chiffre après la virgule, alors que 2,54 en a deux.
+- **b.** 9 398
+  <br>*Erreur visée :* L'élève recopie le produit des entiers sans placer de virgule, comme si 2,54 était égal à 254.
+- **c.** 93,98 ✅
+
+*Corrigé.* (1) 2,54, c'est 254 centièmes. Donc 2{,}54 × 37, c'est 254 centièmes multipliés par 37. (2) Or 254 × 37 = 9 398 : le résultat est 9 398 centièmes. (3) 9 398 centièmes, c'est 93 unités et 98 centièmes : 93,98. Le produit a deux chiffres après la virgule, comme 2,54. (4) Contrôle : 2,54 est entre 2 et 3, donc le produit est entre 2 × 37 = 74 et 3 × 37 = 111. 93,98 convient, mais ni 939,8 ni 9 398. La bonne réponse est c.
+
+*Indice.* 2,54, combien de centièmes ? Le produit est donc un nombre de centièmes.
+
+**EX-D024-M-02** — maitrise, numerique, 180 s
+
+Pour une course solidaire, 3 équipes de 12 coureurs courent chacun 4,15 km. Combien de kilomètres parcourent-ils en tout ?
+
+**Réponse :** 149.4
+
+*Corrigé.* (1) Nombre de coureurs : 3 × 12 = 36. (2) Distance totale : 4{,}15 × 36, posé comme 415 × 36. Première ligne : 415 × 6 = 2 490. Deuxième ligne, 415 × 30 : un 0 à droite, puis 415 × 3 = 1 245, soit 12 450. (3) On additionne : 2 490 + 12 450 = 14 940. 4,15 a deux chiffres après la virgule : 14 940 centièmes, c'est 149,40, soit 149,4. (4) Ils parcourent 149,4 km en tout. Contrôle : 36 coureurs qui font chacun un peu plus de 4 km parcourent un peu plus de 36 × 4 = 144 km.
+
+*Indice.* Cherche d'abord le nombre de coureurs.
+
+---
+
 ## `B040` · Division euclidienne par un nombre à deux chiffres — 6e, difficulté 4
 
 *Effectuer la division euclidienne d'un entier par un entier inférieur à 100 et l'utiliser pour résoudre un problème (partage ou groupement, interprétation du reste)*
@@ -3463,6 +4722,237 @@ Trouve le nombre qui, multiplié par 8, donne 5. Écris ta réponse avec une bar
 *Corrigé.* (1) On cherche le nombre x tel que 8 × x = 5. (2) Par définition du quotient, ce nombre est 5/8. (3) Ce nombre s'écrit donc 5/8. (4) Vérification : 8 × 5/8 = 40/8 = 5. (5) Ce type d'égalité à trou prépare la résolution d'équations.
 
 *Indice.* Une égalité à trou du type 8 × … = 5 se résout par une division. Écris-la en fraction.
+
+---
+
+## `D009` · Arrondir au dixième ou au centième — 6e, difficulté 4
+
+*Donner la valeur arrondie d'un décimal au dixième ou au centième, en l'encadrant entre deux valeurs consécutives au rang demandé.*
+
+> « Donner la valeur arrondie à l'unité, au dixième ou au centième, d'un nombre décimal » — *Cycle 3, classe de 6e, Les nombres entiers et décimaux*
+
+**EX-D009-D-01** — decouverte, qcm, 60 s
+
+Au 100 m, le chronomètre affiche 13,74 s. Quel est ce temps arrondi au dixième de seconde ?
+
+- **a.** 13,8 s
+  <br>*Erreur visée :* L'élève arrondit toujours au dixième du dessus. Or 13,74 est avant le milieu 13,75 : il est plus proche de 13,7.
+- **b.** 13,7 s ✅
+- **c.** 14 s
+  <br>*Erreur visée :* L'élève arrondit à l'unité au lieu du dixième.
+
+*Corrigé.* (1) Au dixième, on encadre 13,74 entre deux nombres à un chiffre après la virgule qui se suivent : 13{,}7 < 13{,}74 < 13{,}8. (2) Le milieu entre 13,7 et 13,8 est 13,75. (3) 13{,}74 < 13{,}75 : le temps est plus proche de 13,7. Il suffit de regarder le chiffre des centièmes : 4, moins que 5. (4) Arrondi au dixième : 13,7 s. La bonne réponse est b.
+
+*Indice.* Entre quels nombres à un chiffre après la virgule se trouve 13,74 ?
+
+**EX-D009-D-02** — decouverte, numerique, 60 s
+
+Sur la balance, un sac de farine pèse 2,316 kg. Arrondis cette masse au centième de kilogramme.
+
+**Réponse :** 2.32
+
+*Corrigé.* (1) Au centième, on encadre 2,316 entre deux nombres à deux chiffres après la virgule qui se suivent : 2{,}31 < 2{,}316 < 2{,}32. (2) Le milieu est 2,315. On regarde le chiffre des millièmes, juste après celui des centièmes : 6, plus que 5. Règle : si ce chiffre vaut 0, 1, 2, 3 ou 4, on prend la valeur du dessous ; s'il vaut 5, 6, 7, 8 ou 9, on prend la valeur du dessus. Pile au milieu, on prend donc la valeur du dessus : c'est une convention. (3) 2{,}316 > 2{,}315 : la masse est plus proche de 2,32. (4) Arrondi au centième : 2,32 kg.
+
+*Indice.* Quel chiffre faut-il regarder, juste après celui des centièmes ?
+
+**EX-D009-E-01** — entrainement, vrai_faux, 75 s
+
+Inès dit : « 4,65 est pile au milieu entre 4,6 et 4,7, donc on ne peut pas l'arrondir au dixième. » Inès a-t-elle raison ?
+
+**Réponse :** False
+
+*Corrigé.* (1) 4{,}6 < 4{,}65 < 4{,}7, et 4,65 est bien exactement au milieu : il est à 5 centièmes de 4,60 comme de 4,70. (2) Pile au milieu, le nombre est aussi proche de l'une que de l'autre : on a donc fixé une convention. On regarde le chiffre juste après le rang demandé : s'il est 5, 6, 7, 8 ou 9, on arrondit à la valeur du dessus ; s'il est 0, 1, 2, 3 ou 4, à la valeur du dessous. (3) Ici, le chiffre des centièmes est 5 : l'arrondi au dixième de 4,65 est 4,7. (4) On peut donc toujours arrondir, même pile au milieu. Inès a tort.
+
+*Indice.* Quel est le chiffre juste après celui des dixièmes ? Que dit la règle quand c'est un 5 ?
+
+**EX-D009-E-02** — entrainement, numerique, 60 s
+
+Arrondis 15,083 au dixième.
+
+**Réponse :** 15.1
+
+*Corrigé.* (1) 15,083 a 0 dixième, 8 centièmes et 3 millièmes. On l'encadre au dixième : 15{,}0 < 15{,}083 < 15{,}1. (2) Le milieu est 15,05. On regarde le chiffre des centièmes : 8, plus que 5. (3) 15{,}083 > 15{,}05 : le nombre est plus proche de 15,1. Arrondi au dixième : 15,1. (4) Piège : répondre 15,0, c'est couper le nombre sans regarder les centièmes ; répondre 15,08, c'est arrondir au centième au lieu du dixième.
+
+*Indice.* Quel est le chiffre des dixièmes de 15,083 ? Et celui qui le suit ?
+
+**EX-D009-M-01** — maitrise, numerique, 120 s
+
+Un trajet mesure 29,97 km. Le GPS affiche les distances arrondies au dixième. Quelle distance affiche-t-il ?
+
+**Réponse :** 30
+
+*Corrigé.* (1) On encadre 29,97 au dixième. Le nombre à un chiffre après la virgule qui suit 29,9 est 30,0 : 9 dixièmes et 1 dixième font 10 dixièmes, c'est-à-dire une unité de plus. Donc 29{,}9 < 29{,}97 < 30{,}0. (2) Le milieu est 29,95. Le chiffre des centièmes est 7, plus que 5 : 29{,}97 > 29{,}95. (3) L'arrondi au dixième est 30,0, qui s'écrit plus simplement 30. Le GPS affiche 30 km. (4) Piège : écrire 29,10. Après 29,9 ne vient pas « 29,10 », qui est d'ailleurs plus petit que 29,9 : 29,10 = 29,1.
+
+*Indice.* Quel nombre à un chiffre après la virgule vient juste après 29,9 ?
+
+**EX-D009-M-02** — maitrise, qcm, 120 s
+
+Un nombre à deux chiffres après la virgule a pour arrondi au dixième 5,3. Lequel de ces nombres peut-il être ?
+
+- **a.** 5,36
+  <br>*Erreur visée :* L'élève coupe le nombre après le chiffre des dixièmes : il croit que tout nombre qui commence par 5,3 s'arrondit à 5,3. Or 5,36 est après le milieu 5,35, son arrondi est 5,4.
+- **b.** 5,35
+  <br>*Erreur visée :* L'élève pense qu'au milieu on arrondit vers le bas. La règle dit l'inverse : avec un 5 au rang des centièmes, 5,35 s'arrondit à 5,4.
+- **c.** 5,25 ✅
+
+*Corrigé.* (1) Un nombre a pour arrondi au dixième 5,3 s'il est plus proche de 5,3 que de 5,2 ou de 5,4, ou s'il est pile au milieu 5,25 : on arrondit alors à la valeur du dessus. (2) 5,25 est au milieu entre 5,2 et 5,3. Son chiffre des centièmes est 5 : il s'arrondit à 5,3. (3) 5,36 et 5,35 sont entre 5,3 et 5,4, avec 6 et 5 centièmes : ils s'arrondissent tous deux à 5,4. (4) La bonne réponse est c : 5,25. Un nombre dont l'arrondi est 5,3 ne commence pas forcément par 5,3.
+
+*Indice.* Teste chaque proposition : encadre-la au dixième et regarde le chiffre des centièmes.
+
+---
+
+## `D025` · Multiplier par 0,1 ; 0,01 ; 0,001 — 6e, difficulté 4
+
+*Multiplier un entier ou un décimal par 0,1, 0,01 ou 0,001, et savoir que cela revient à le diviser par 10, 100 ou 1 000.*
+
+> « Multiplier un nombre entier ou un nombre décimal par 0,1, par 0,01, et par 0,001 » — *Cycle 3, classe de 6e, Les nombres entiers et décimaux*
+> « Connaître le lien avec la division par 10, 100 et par 1 000 » — *Cycle 3, classe de 6e, Les nombres entiers et décimaux*
+
+**EX-D025-D-01** — decouverte, numerique, 60 s
+
+Une feuille de papier a une épaisseur de 0,1 mm. Quelle est l'épaisseur d'une ramette de 500 feuilles ? Calcule 500 × 0{,}1.
+
+**Réponse :** 50
+
+*Corrigé.* (1) 0,1, c'est un dixième. 500 × 0{,}1, c'est 500 fois un dixième, soit 500 dixièmes. (2) 10 dixièmes font une unité : 500 dixièmes font 50 unités. Donc 500 × 0{,}1 = 50. (3) Multiplier par 0,1 revient à prendre le dixième, c'est-à-dire à diviser par 10 : 500 ÷ 10 = 50. Le résultat est plus petit que 500, car on multiplie par un nombre plus petit que 1. (4) La ramette a une épaisseur de 50 mm.
+
+*Indice.* 0,1 mm, c'est un dixième de millimètre. Combien d'unités font 500 dixièmes ?
+
+**EX-D025-D-02** — decouverte, qcm, 60 s
+
+Jules a 735 pièces de 1 centime. Un centime, c'est 0,01 €. Combien d'euros a-t-il ? Calcule 735 × 0{,}01.
+
+- **a.** 73,5 €
+  <br>*Erreur visée :* L'élève divise par 10 au lieu de 100 : il confond 0,01 (un centième) et 0,1 (un dixième).
+- **b.** 7 350 €
+  <br>*Erreur visée :* L'élève pense qu'une multiplication agrandit toujours le nombre : il fait comme s'il multipliait par 10.
+- **c.** 7,35 € ✅
+
+*Corrigé.* (1) 0,01, c'est un centième. 735 × 0{,}01, c'est 735 centièmes. (2) 100 centièmes font une unité : 735 centièmes, c'est 7 unités et 35 centièmes, soit 7,35. (3) Multiplier par 0,01 revient à diviser par 100 : 735 ÷ 100 = 7{,}35. Chaque chiffre recule de deux rangs : le 7 des centaines devient le chiffre des unités. (4) Jules a 7,35 € : la bonne réponse est c. C'est logique, car 100 centimes font 1 €.
+
+*Indice.* Multiplier par 0,01, c'est prendre le centième. Par combien divise-t-on ?
+
+**EX-D025-E-01** — entrainement, vrai_faux, 60 s
+
+Zoé affirme : « Une multiplication donne toujours un résultat plus grand que le nombre de départ. » Vrai ou faux : 6{,}4 × 0{,}1 est plus grand que 6,4.
+
+**Réponse :** False
+
+*Corrigé.* (1) Multiplier par 0,1, c'est prendre le dixième, donc diviser par 10 : 6{,}4 × 0{,}1 = 6{,}4 ÷ 10. (2) En divisant par 10, chaque chiffre recule d'un rang : les 6 unités deviennent 6 dixièmes, les 4 dixièmes deviennent 4 centièmes. 6{,}4 × 0{,}1 = 0{,}64. (3) 0,64 est plus petit que 6,4 : c'est faux. Zoé se trompe : multiplier par un nombre plus petit que 1 donne un résultat plus petit que le nombre de départ. (4) Sa règle ne marche que si l'on multiplie par un nombre plus grand que 1, comme dans 6{,}4 × 10 = 64.
+
+*Indice.* Multiplier par 0,1 revient à faire quelle division ?
+
+**EX-D025-E-02** — entrainement, numerique, 90 s
+
+Un flacon de parfum contient 85 mL. Un millilitre, c'est 0,001 L. Combien de litres contient le flacon ?
+
+**Réponse :** 0.085
+
+*Corrigé.* (1) Le flacon contient 85 fois 0,001 L : on calcule 85 × 0{,}001. (2) Multiplier par 0,001 revient à diviser par 1 000 : chaque chiffre recule de trois rangs. Les 8 dizaines deviennent 8 centièmes, les 5 unités deviennent 5 millièmes. (3) Il n'y a rien aux unités ni aux dixièmes : on écrit des 0 pour marquer ces rangs vides. 85 × 0{,}001 = 0{,}085. (4) Le flacon contient 0,085 L. Contrôle : 85 mL, c'est bien moins qu'un litre.
+
+*Indice.* Multiplier par 0,001, c'est diviser par 1 000. N'oublie pas les 0 des rangs vides.
+
+**EX-D025-M-01** — maitrise, numerique, 90 s
+
+Nora multiplie 72 par un nombre décimal et obtient 0,072. Par quel nombre a-t-elle multiplié 72 ?
+
+**Réponse :** 0.001
+
+*Corrigé.* (1) On passe de 72 à 0,072 : le 7 des dizaines devient le 7 des centièmes, le 2 des unités devient le 2 des millièmes. Chaque chiffre a reculé de trois rangs. (2) Reculer de trois rangs, c'est diviser par 1 000 : 72 ÷ 1 000 = 0{,}072. (3) Diviser par 1 000 revient à multiplier par 0,001. Nora a multiplié par 0,001 : 72 × 0{,}001 = 0{,}072. (4) Ce n'est ni 0,1, qui donnerait 7,2, ni 0,01, qui donnerait 0,72.
+
+*Indice.* De combien de rangs chaque chiffre a-t-il reculé ? À quelle division cela correspond-il ?
+
+**EX-D025-M-02** — maitrise, qcm, 90 s
+
+Sans poser d'opération, quel calcul donne le plus grand résultat ?
+
+- **a.** 630 × 0{,}01 ✅
+- **b.** 4 800 × 0{,}001
+  <br>*Erreur visée :* L'élève ne regarde que le premier nombre : 4 800 est le plus grand, il en déduit que ce produit est le plus grand, sans voir qu'on le divise par 1 000.
+- **c.** 52 × 0{,}1
+  <br>*Erreur visée :* L'élève ne regarde que le nombre décimal : 0,1 est le plus grand des trois, il pense que ce produit est le plus grand, sans tenir compte de 52, bien plus petit que 630 et 4 800.
+
+*Corrigé.* (1) On remplace chaque multiplication par la division qui lui correspond. 630 × 0{,}01 = 630 ÷ 100 = 6{,}3. (2) 4 800 × 0{,}001 = 4 800 ÷ 1 000 = 4{,}8. (3) 52 × 0{,}1 = 52 ÷ 10 = 5{,}2. (4) On compare les parties entières : 6 est plus grand que 5, qui est plus grand que 4. Le plus grand résultat est 6,3 : la bonne réponse est a.
+
+*Indice.* Remplace chaque multiplication par la division qui lui correspond.
+
+---
+
+## `D006` · Multiplier deux nombres décimaux — 6e, difficulté 5
+
+*Calculer le produit de deux décimaux en se ramenant au produit de deux entiers puis en plaçant la virgule, et contrôler le résultat par un ordre de grandeur.*
+
+> « Le sens des opérations étudiées au cours moyen s'élargit avec l'introduction de la multiplication de deux nombres décimaux. » — *Cycle 3, classe de 6e, Les nombres entiers et décimaux*
+> « Calculer le produit de deux nombres décimaux » — *Cycle 3, classe de 6e, Les nombres entiers et décimaux*
+> « Contrôler les résultats à l'aide d'ordres de grandeur » — *Cycle 3, classe de 6e, Les nombres entiers et décimaux*
+
+**EX-D006-D-01** — decouverte, numerique, 120 s
+
+Le raisin coûte 3,8 € le kilo. Emma en achète 2,1 kg. Donne d'abord un ordre de grandeur du prix, puis calcule le prix exact.
+
+**Réponse :** 7.98
+
+*Corrigé.* (1) Ordre de grandeur : on arrondit chaque nombre à l'unité. 3,8 est entre 3 et 4, plus proche de 4 ; 2,1 est entre 2 et 3, plus proche de 2. 4 × 2 = 8 : Emma paiera environ 8 €. (2) Calcul : on pose 38 × 21 sans les virgules. Première ligne, 38 × 1 = 38. Deuxième ligne, 38 × 20 : un 0 à droite, puis 38 × 2 = 76, soit 760. On additionne : 38 + 760 = 798. (3) Où placer la virgule : 3{,}8 = 38 × 0{,}1 et 2{,}1 = 21 × 0{,}1. Donc 3{,}8 × 2{,}1 = 38 × 21 × 0{,}1 × 0{,}1 = 798 × 0{,}1 × 0{,}1. Multiplier par 0,1, c'est diviser par 10 : 798 × 0{,}1 = 79{,}8, puis 79{,}8 × 0{,}1 = 7{,}98. Un chiffre après la virgule dans 3,8, un dans 2,1 : deux dans le produit. (4) Contrôle : 7,98 est très proche de l'ordre de grandeur, 8. Emma paie 7,98 €.
+
+*Indice.* Calcule 38 × 21, puis compte les chiffres après la virgule dans les deux nombres.
+
+**EX-D006-D-02** — decouverte, qcm, 75 s
+
+Un tuyau d'arrosage est vendu 4,5 € le mètre. Lou en achète 0,6 m. Combien paie-t-elle ?
+
+- **a.** 27 €
+  <br>*Erreur visée :* L'élève calcule 45 × 6 = 270 et ne compte que le chiffre après la virgule de 4,5, comme pour un décimal multiplié par un entier : il oublie celui de 0,6.
+- **b.** 2,7 € ✅
+- **c.** 270 €
+  <br>*Erreur visée :* L'élève calcule 45 × 6 = 270 et oublie les deux virgules.
+
+*Corrigé.* (1) Ordre de grandeur : Lou achète moins d'un mètre, elle paie donc moins que le prix d'un mètre, 4,5 €. Multiplier par 0,6, nombre plus petit que 1, donne un résultat plus petit. (2) On calcule sans les virgules : 45 × 6 = 270. (3) 4,5 a un chiffre après la virgule, 0,6 en a un : le produit en a deux. En effet, 4{,}5 = 45 × 0{,}1 et 0{,}6 = 6 × 0{,}1, donc 4{,}5 × 0{,}6 = 270 × 0{,}1 × 0{,}1 : on divise 270 par 10, puis encore par 10, ce qui donne 2,70, soit 2,7. (4) Lou paie 2,7 €, c'est-à-dire 2,70 € : c'est bien moins que 4,5 €. La bonne réponse est b.
+
+*Indice.* Lou achète moins d'un mètre : peut-elle payer plus de 4,5 € ?
+
+**EX-D006-E-01** — entrainement, vrai_faux, 90 s
+
+Nina calcule 18{,}5 × 0{,}42 et trouve 77,7. Vrai ou faux : grâce à un ordre de grandeur, on peut affirmer sans poser l'opération que Nina s'est trompée.
+
+**Réponse :** True
+
+*Corrigé.* (1) Ordre de grandeur : 18,5 est proche de 20. 0,42, c'est 4 dixièmes et 2 centièmes ; 2 centièmes, c'est très peu : 0,42 est proche de 0,4. (2) 20 × 0{,}4 = 20 × 4 × 0{,}1 = 80 × 0{,}1 = 8. Le produit est donc proche de 8. D'ailleurs, 0,42 est plus petit que 1 : le produit est forcément plus petit que 18,5. (3) Nina trouve 77,7 : c'est plus grand que 18,5, et environ dix fois trop. C'est vrai, on peut affirmer sans calcul exact qu'elle s'est trompée. (4) Le calcul exact : 185 × 42 = 7 770. Un chiffre après la virgule dans 18,5, deux dans 0,42 : trois dans le produit, donc 7,770, soit 7,77. Nina n'a placé que deux chiffres après la virgule : elle a oublié celui de 18,5.
+
+*Indice.* Remplace 18,5 et 0,42 par des nombres proches et simples, puis compare avec 77,7.
+
+**EX-D006-E-02** — entrainement, numerique, 150 s
+
+Un tissu coûte 7,25 € le mètre. Lina en achète 1,6 m. Combien paie-t-elle ? Contrôle ton résultat par un ordre de grandeur.
+
+**Réponse :** 11.6
+
+*Corrigé.* (1) Ordre de grandeur : 7,25 est proche de 7, et 1,6 est proche de 2. 7 × 2 = 14 : le prix est de l'ordre de la dizaine d'euros. (2) On pose 725 × 16. Première ligne : 725 × 6 = 4 350. Deuxième ligne, 725 × 10 : un 0 à droite, puis 725, soit 7 250. On additionne : 4 350 + 7 250 = 11 600. (3) Deux chiffres après la virgule dans 7,25, un dans 1,6 : trois dans le produit. On compte trois chiffres à partir de la droite de 11 600 : 11,600, soit 11,6. On place la virgule avant d'effacer les 0 de la fin. (4) Contrôle : 11,6 est bien de l'ordre de la dizaine, alors que 116 ou 1,16 ne le seraient pas. Lina paie 11,6 €, c'est-à-dire 11,60 €.
+
+*Indice.* Pose 725 × 16. Combien de chiffres après la virgule en tout dans 7,25 et 1,6 ?
+
+**EX-D006-M-01** — maitrise, qcm, 90 s
+
+Léa a calculé 85 × 43 = 3 655. Quel est le résultat de 0{,}85 × 4{,}3 ? Utilise un ordre de grandeur pour choisir.
+
+- **a.** 36,55
+  <br>*Erreur visée :* L'élève ne compte que les deux chiffres après la virgule de 0,85 et oublie celui de 4,3. L'ordre de grandeur, environ 4, montre que 36,55 est dix fois trop grand.
+- **b.** 365,5
+  <br>*Erreur visée :* L'élève ne compte que le chiffre après la virgule de 4,3, comme s'il multipliait 4,3 par le nombre entier 85.
+- **c.** 3,655 ✅
+
+*Corrigé.* (1) Ordre de grandeur : 0,85 est proche de 1, et 4,3 est proche de 4. 1 × 4 = 4 : le produit est proche de 4. (2) Seul 3,655 est proche de 4 : 36,55 et 365,5 sont beaucoup trop grands. (3) On le confirme en plaçant la virgule : deux chiffres après la virgule dans 0,85, un dans 4,3, donc trois dans le produit. 0{,}85 × 4{,}3 = 3 655 × 0{,}001 = 3{,}655. (4) Le produit est plus petit que 4,3, car on multiplie 4,3 par 0,85, nombre plus petit que 1. La bonne réponse est c.
+
+*Indice.* Remplace 0,85 et 4,3 par des nombres entiers proches.
+
+**EX-D006-M-02** — maitrise, numerique, 180 s
+
+Le gazole coûte 1,9 € le litre. Un automobiliste met 32,4 L dans son réservoir. Combien paie-t-il ? Contrôle avec un ordre de grandeur.
+
+**Réponse :** 61.56
+
+*Corrigé.* (1) Ordre de grandeur : on arrondit d'abord à l'unité. 1,9 est entre 1 et 2, plus proche de 2 ; 32,4 est entre 32 et 33, plus proche de 32, lui-même proche de 30. 2 × 30 = 60 : il paiera environ 60 €. (2) Sans les virgules, on calcule 19 × 324. On peut échanger l'ordre des facteurs sans changer le produit : on pose 324 × 19, en deux lignes car 19 = 9 + 10. Première ligne, 324 × 9 : 9 × 4 = 36, on écrit 6 et on retient 3 ; 9 × 2 = 18, plus 3, cela fait 21, on écrit 1 et on retient 2 ; 9 × 3 = 27, plus 2, cela fait 29. La ligne est 2 916. (3) Deuxième ligne, 324 × 10 : un 0 à droite, puis 324, soit 3 240. On additionne : 2 916 + 3 240 = 6 156. (4) Un chiffre après la virgule dans 1,9, un dans 32,4 : deux dans le produit. 1{,}9 × 32{,}4 = 61{,}56. Contrôle : 61,56 est très proche de 60, alors que 615,6 ou 6,156 ne le seraient pas. L'automobiliste paie 61,56 €.
+
+*Indice.* Pose 324 × 19, puis compte les chiffres après la virgule dans 1,9 et 32,4.
 
 ---
 

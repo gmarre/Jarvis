@@ -1,0 +1,198 @@
+[
+  {
+    "id": "EX-D022-D-01",
+    "skill_id": "D022",
+    "level": "decouverte",
+    "type": "numerique",
+    "statement": "Après la virgule viennent les dixièmes, les centièmes, puis les millièmes.\n\nÉcris avec une virgule : $2 + \\frac{4}{10} + \\frac{6}{1000}$",
+    "image": null,
+    "answer": {
+      "value": 2.406
+    },
+    "solution_steps": [
+      "Partie entière : 2, avant la virgule.",
+      "Dixièmes : 4, juste après la virgule.",
+      "Centièmes : il n'y en a pas. On écrit 0 pour garder la place.",
+      "Millièmes : 6, au troisième rang après la virgule.",
+      "$2 + \\frac{4}{10} + \\frac{6}{1000} = 2{,}406$. Sans le 0, on écrirait 2,46, qui signifie 4 dixièmes et 6 centièmes."
+    ],
+    "hint": "Y a-t-il des centièmes dans ce nombre ?",
+    "estimated_duration_s": 45,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 3, CM2 : passer d'une écriture sous forme d'une fraction décimale ou de la somme de fractions décimales à une écriture à virgule et réciproquement."
+  },
+  {
+    "id": "EX-D022-D-02",
+    "skill_id": "D022",
+    "level": "decouverte",
+    "type": "qcm",
+    "statement": "Une unité est partagée en 1 000 millièmes.\n\n1 centième, c'est combien de millièmes ?",
+    "image": null,
+    "choices": [
+      {
+        "key": "a",
+        "text": "10 millièmes",
+        "misconception": null
+      },
+      {
+        "key": "b",
+        "text": "100 millièmes",
+        "misconception": "L'élève reprend la relation entre l'unité et les centièmes (1 = 100 centièmes) au lieu de passer d'un seul rang. Or 100 millièmes, c'est 1 dixième."
+      },
+      {
+        "key": "c",
+        "text": "1 000 millièmes",
+        "misconception": "L'élève confond le centième avec l'unité entière : 1 000 millièmes font 1 unité, pas 1 centième."
+      },
+      {
+        "key": "d",
+        "text": "10 milliers",
+        "misconception": "L'élève confond millième et millier. Un millier vaut 1 000 unités ; un millième est une part de l'unité partagée en 1 000."
+      }
+    ],
+    "answer": {
+      "value": "a"
+    },
+    "solution_steps": [
+      "Un centième, c'est l'unité partagée en 100. Un millième, c'est l'unité partagée en 1 000.",
+      "D'un rang au suivant, on partage en 10 : 1 unité = 10 dixièmes, 1 dixième = 10 centièmes, 1 centième = 10 millièmes.",
+      "Vérification : 100 centièmes de 10 millièmes chacun font 1 000 millièmes, l'unité entière.",
+      "1 centième = **10 millièmes**, soit $\\frac{1}{100} = \\frac{10}{1000}$."
+    ],
+    "hint": "Pense au lien entre deux rangs voisins, comme entre dixièmes et centièmes.",
+    "estimated_duration_s": 40,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 3, CM2 : connaître et utiliser les relations entre unités simples, dixièmes, centièmes et millièmes."
+  },
+  {
+    "id": "EX-D022-E-01",
+    "skill_id": "D022",
+    "level": "entrainement",
+    "type": "vrai_faux",
+    "statement": "Jules écrit : $\\frac{4053}{1000} = 4{,}53$.\n\nA-t-il raison ?",
+    "image": null,
+    "answer": {
+      "value": false
+    },
+    "solution_steps": [
+      "4053 millièmes = 4000 millièmes + 53 millièmes.",
+      "1 000 millièmes font 1 unité : 4000 millièmes font 4 unités.",
+      "53 millièmes = 50 millièmes + 3 millièmes = 5 centièmes et 3 millièmes, car 10 millièmes = 1 centième. Il n'y a aucun dixième.",
+      "Donc $\\frac{4053}{1000} = 4{,}053$, avec un 0 au rang des dixièmes.",
+      "4,53, c'est 4 unités, 5 dixièmes et 3 centièmes, soit $\\frac{4530}{1000}$ : Jules a **tort**, il a oublié le 0 des dixièmes."
+    ],
+    "hint": "Avec des millièmes, combien de chiffres faut-il après la virgule ?",
+    "estimated_duration_s": 60,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 3, CM2 : passer d'une écriture sous forme d'une fraction décimale ou de la somme de fractions décimales à une écriture à virgule et réciproquement."
+  },
+  {
+    "id": "EX-D022-E-02",
+    "skill_id": "D022",
+    "level": "entrainement",
+    "type": "qcm",
+    "statement": "Range dans l'ordre croissant : 7,45 ; 7,4 ; 7,409",
+    "image": null,
+    "choices": [
+      {
+        "key": "a",
+        "text": "7,409 ; 7,45 ; 7,4",
+        "misconception": "L'élève pense que plus il y a de chiffres après la virgule, plus le nombre est petit, comme si des millièmes étaient toujours plus petits que des dixièmes. Or 7,4 = 7,400 est le plus petit des trois."
+      },
+      {
+        "key": "b",
+        "text": "7,4 ; 7,409 ; 7,45",
+        "misconception": null
+      },
+      {
+        "key": "c",
+        "text": "7,4 ; 7,45 ; 7,409",
+        "misconception": "L'élève compare les parties décimales comme des entiers : $4 < 45 < 409$. Plus il y a de chiffres après la virgule, plus le nombre lui paraît grand."
+      }
+    ],
+    "answer": {
+      "value": "b"
+    },
+    "solution_steps": [
+      "Les trois nombres ont la même partie entière, 7 : on compare les rangs après la virgule, un par un.",
+      "Dixièmes : 4 pour les trois. Égalité.",
+      "Centièmes : 7,45 en a 5 ; 7,4 et 7,409 en ont 0. Donc 7,45 est le plus grand.",
+      "Millièmes, pour départager 7,4 = 7,400 et 7,409 : $0 < 9$, donc 7,4 < 7,409.",
+      "Ordre croissant : 7,4 ; 7,409 ; 7,45. Le nombre de chiffres après la virgule ne dit rien de la taille : 7,409 en a plus que 7,45, et il est plus petit."
+    ],
+    "hint": "Compare d'abord les dixièmes, puis les centièmes, puis les millièmes.",
+    "estimated_duration_s": 60,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 3, CM2 : comparer, encadrer, intercaler, ordonner par ordre croissant ou décroissant des nombres décimaux donnés par leur écriture à virgule en utilisant les symboles =, < et >."
+  },
+  {
+    "id": "EX-D022-M-01",
+    "skill_id": "D022",
+    "level": "maitrise",
+    "type": "numerique",
+    "statement": "Un nombre est formé de 1 unité, 5 dixièmes et 7 millièmes.\n\nCombien de millièmes contient-il en tout ?",
+    "image": null,
+    "answer": {
+      "value": 1507,
+      "accepted": [
+        "1507 millièmes",
+        "1507 milliemes"
+      ]
+    },
+    "solution_steps": [
+      "1 unité = 1 000 millièmes.",
+      "1 dixième = 10 centièmes, et chaque centième vaut 10 millièmes : 1 dixième = 100 millièmes. Donc 5 dixièmes = 500 millièmes.",
+      "Il reste 7 millièmes.",
+      "En tout : $1000 + 500 + 7 = 1507$ millièmes. Le nombre s'écrit 1,507, c'est-à-dire $\\frac{1507}{1000}$.",
+      "Piège : coller les chiffres 1 ; 5 ; 7 donne 157 millièmes, ce qui ne fait même pas une unité."
+    ],
+    "hint": "Commence par l'unité : combien de millièmes vaut-elle ?",
+    "estimated_duration_s": 75,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 3, CM2 : connaître et utiliser les relations entre unités simples, dixièmes, centièmes et millièmes."
+  },
+  {
+    "id": "EX-D022-M-02",
+    "skill_id": "D022",
+    "level": "maitrise",
+    "type": "qcm",
+    "statement": "Une seule de ces écritures n'est pas égale à 5,06. Laquelle ?",
+    "image": null,
+    "choices": [
+      {
+        "key": "a",
+        "text": "$\\frac{506}{100}$",
+        "misconception": "L'élève lit 506 centièmes comme 50,6 : il oublie que 100 centièmes font 1 unité, donc que 500 centièmes font seulement 5 unités."
+      },
+      {
+        "key": "b",
+        "text": "$5 + \\frac{60}{1000}$",
+        "misconception": "L'élève pense que 60 millièmes ne peuvent pas valoir 6 centièmes. Or 10 millièmes = 1 centième, donc 60 millièmes = 6 centièmes."
+      },
+      {
+        "key": "c",
+        "text": "$\\frac{5060}{1000}$",
+        "misconception": "L'élève croit qu'un zéro de plus change la valeur. 5060 millièmes = 5000 millièmes + 60 millièmes = 5 unités et 6 centièmes."
+      },
+      {
+        "key": "d",
+        "text": "$5 + \\frac{6}{10}$",
+        "misconception": null
+      }
+    ],
+    "answer": {
+      "value": "d"
+    },
+    "solution_steps": [
+      "5,06, c'est 5 unités, 0 dixième et 6 centièmes.",
+      "a : 506 centièmes = 500 centièmes + 6 centièmes = 5 unités et 6 centièmes. Égal à 5,06.",
+      "b : 60 millièmes = 6 centièmes. $5 + \\frac{60}{1000} = 5{,}060 = 5{,}06$. Égal.",
+      "c : 5060 millièmes = 5000 millièmes + 60 millièmes = 5 unités et 6 centièmes. Égal.",
+      "d : $5 + \\frac{6}{10}$, c'est 5 unités et 6 **dixièmes**, soit 5,6 = 5,60 : 60 centièmes, et non 6. C'est l'écriture qui n'est pas égale à 5,06."
+    ],
+    "hint": "Écris chaque proposition avec une virgule, puis compare.",
+    "estimated_duration_s": 120,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 3, CM2 : passer d'une écriture sous forme d'une fraction décimale ou de la somme de fractions décimales à une écriture à virgule et réciproquement."
+  }
+]

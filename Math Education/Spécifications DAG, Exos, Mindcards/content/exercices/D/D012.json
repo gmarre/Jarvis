@@ -1,0 +1,172 @@
+[
+  {
+    "id": "EX-D012-D-01",
+    "skill_id": "D012",
+    "level": "decouverte",
+    "type": "numerique",
+    "statement": "Une ficelle mesure 8,3 m : un peu plus de 8 m.\n\nComplète l'encadrement par deux nombres entiers qui se suivent : $8 < 8{,}3 < \\ldots$",
+    "image": null,
+    "answer": {
+      "value": 9
+    },
+    "solution_steps": [
+      "8,3, c'est 8 unités et 3 dixièmes : le nombre est plus grand que 8.",
+      "3 dixièmes, c'est moins qu'une unité entière, qui vaut 10 dixièmes : 8,3 n'atteint pas l'entier suivant.",
+      "L'entier qui suit 8 est 9 : $8 < 8{,}3 < 9$. La ficelle mesure entre 8 m et **9** m.",
+      "Attention : 8,4 est bien plus grand que 8,3, mais ce n'est pas un nombre entier."
+    ],
+    "hint": "Les deux entiers qui se suivent doivent entourer 8,3 : l'un plus petit, l'autre plus grand.",
+    "estimated_duration_s": 45,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 3, CM1 : comparer, encadrer, intercaler, ordonner, par ordre croissant ou décroissant, des nombres décimaux donnés par leur écriture à virgule en utilisant les symboles =, < et >."
+  },
+  {
+    "id": "EX-D012-D-02",
+    "skill_id": "D012",
+    "level": "decouverte",
+    "type": "vrai_faux",
+    "statement": "Quand on compte de dixième en dixième, 6,2 est suivi de 6,3.\n\nSami dit : « Il n'existe aucun nombre entre 6,2 et 6,3. » Sami a-t-il raison ?",
+    "image": null,
+    "answer": {
+      "value": false
+    },
+    "solution_steps": [
+      "On écrit les deux nombres avec deux chiffres après la virgule : 6,2 = 6,20 et 6,3 = 6,30.",
+      "Entre 20 centièmes et 30 centièmes, il y a 21, 22, … jusqu'à 29 centièmes : 6,21 ; 6,22 ; … ; 6,29 sont tous entre 6,2 et 6,3.",
+      "Par exemple, $6{,}2 < 6{,}25 < 6{,}3$.",
+      "6,2 et 6,3 se suivent quand on compte en dixièmes, mais pas quand on compte en centièmes. Sami a **tort**."
+    ],
+    "hint": "Écris 6,2 et 6,3 avec deux chiffres après la virgule.",
+    "estimated_duration_s": 60,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 3, CM1 : comparer, encadrer, intercaler, ordonner, par ordre croissant ou décroissant, des nombres décimaux donnés par leur écriture à virgule en utilisant les symboles =, < et >."
+  },
+  {
+    "id": "EX-D012-E-01",
+    "skill_id": "D012",
+    "level": "entrainement",
+    "type": "qcm",
+    "statement": "Encadre 9,63 par deux nombres à un chiffre après la virgule qui se suivent.",
+    "image": null,
+    "choices": [
+      {
+        "key": "a",
+        "text": "9,5 et 9,6",
+        "misconception": "L'élève voit le 6 des dixièmes et prend 9,6 comme borne supérieure : il oublie que 9,63 dépasse 9,60 de 3 centièmes."
+      },
+      {
+        "key": "b",
+        "text": "9,6 et 9,7",
+        "misconception": null
+      },
+      {
+        "key": "c",
+        "text": "9 et 10",
+        "misconception": "L'élève encadre par deux entiers, comme pour la partie entière : 9 et 10 n'ont aucun chiffre après la virgule. Il confond l'encadrement à l'unité et l'encadrement au dixième."
+      },
+      {
+        "key": "d",
+        "text": "9,62 et 9,64",
+        "misconception": "L'élève encadre au centième : ces deux nombres ont deux chiffres après la virgule, pas un seul."
+      }
+    ],
+    "answer": {
+      "value": "b"
+    },
+    "solution_steps": [
+      "9,63, c'est 9 unités, 6 dixièmes et 3 centièmes.",
+      "En ne gardant que les dixièmes, on obtient 9,6. Comme 9,63 dépasse 9,60 de 3 centièmes, $9{,}6 < 9{,}63$.",
+      "Le nombre à un chiffre après la virgule qui suit 9,6 est 9,7, c'est-à-dire 9,70 : 63 centièmes, c'est moins que 70 centièmes.",
+      "$9{,}6 < 9{,}63 < 9{,}7$ : la bonne réponse est b."
+    ],
+    "hint": "Garde seulement les dixièmes de 9,63 : tu obtiens la borne du dessous.",
+    "estimated_duration_s": 75,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 3, CM1 : comparer, encadrer, intercaler, ordonner, par ordre croissant ou décroissant, des nombres décimaux donnés par leur écriture à virgule en utilisant les symboles =, < et >."
+  },
+  {
+    "id": "EX-D012-E-02",
+    "skill_id": "D012",
+    "level": "entrainement",
+    "type": "numerique",
+    "statement": "Un chat pèse 6,04 kg.\n\nComplète l'encadrement par deux nombres à un chiffre après la virgule qui se suivent : $\\ldots < 6{,}04 < 6{,}1$",
+    "image": null,
+    "answer": {
+      "value": 6,
+      "accepted": [
+        "6,0"
+      ]
+    },
+    "solution_steps": [
+      "6,04, c'est 6 unités, 0 dixième et 4 centièmes : son chiffre des dixièmes est 0.",
+      "En ne gardant que les dixièmes, on obtient 6,0, c'est-à-dire 6. Et 6,04 dépasse 6,00 de 4 centièmes.",
+      "Le nombre suivant, à un chiffre après la virgule, est 6,1 = 6,10 : 4 centièmes, c'est moins que 10 centièmes.",
+      "$6{,}0 < 6{,}04 < 6{,}1$ : le nombre cherché est 6,0, qui est égal à **6**.",
+      "Piège : lire 4 dixièmes dans 6,04, comme s'il s'agissait de 6,4. Mais 6,4 est plus grand que 6,1 : dans 6,04, le 4 est au rang des centièmes, et le chiffre des dixièmes est 0."
+    ],
+    "hint": "Quel est le chiffre des dixièmes de 6,04 ?",
+    "estimated_duration_s": 75,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 3, CM1 : comparer, encadrer, intercaler, ordonner, par ordre croissant ou décroissant, des nombres décimaux donnés par leur écriture à virgule en utilisant les symboles =, < et >."
+  },
+  {
+    "id": "EX-D012-M-01",
+    "skill_id": "D012",
+    "level": "maitrise",
+    "type": "qcm",
+    "statement": "Combien y a-t-il de nombres à deux chiffres après la virgule compris entre 4,7 et 4,8, sans compter 4,7 ni 4,8 ?",
+    "image": null,
+    "choices": [
+      {
+        "key": "a",
+        "text": "0",
+        "misconception": "L'élève pense que 4,7 et 4,8 se suivent, donc qu'il n'y a rien entre eux. C'est vrai pour les nombres à un chiffre après la virgule, pas avec les centièmes."
+      },
+      {
+        "key": "b",
+        "text": "10",
+        "misconception": "L'élève compte de 4,70 à 4,79 : il inclut 4,70, qui est égal à 4,7."
+      },
+      {
+        "key": "c",
+        "text": "9",
+        "misconception": null
+      }
+    ],
+    "answer": {
+      "value": "c"
+    },
+    "solution_steps": [
+      "On écrit les bornes avec deux chiffres après la virgule : 4,7 = 4,70 et 4,8 = 4,80.",
+      "Les nombres cherchés vont de 71 à 79 centièmes : 4,71 ; 4,72 ; … ; 4,79.",
+      "4,70 et 4,80 ne comptent pas : ce sont 4,7 et 4,8 eux-mêmes.",
+      "De 71 à 79, il y a **9** nombres. La bonne réponse est c.",
+      "En écrivant plus de chiffres après la virgule, on en trouverait d'autres encore : entre deux nombres décimaux différents, il y a toujours d'autres nombres décimaux."
+    ],
+    "hint": "Écris 4,7 et 4,8 avec deux chiffres après la virgule, puis liste les nombres entre eux.",
+    "estimated_duration_s": 120,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 3, CM1 : comparer, encadrer, intercaler, ordonner, par ordre croissant ou décroissant, des nombres décimaux donnés par leur écriture à virgule en utilisant les symboles =, < et >."
+  },
+  {
+    "id": "EX-D012-M-02",
+    "skill_id": "D012",
+    "level": "maitrise",
+    "type": "numerique",
+    "statement": "Devinette : je suis un nombre à deux chiffres après la virgule, compris entre 5,8 et 5,9. Mon chiffre des centièmes est la moitié de mon chiffre des dixièmes.\n\nQui suis-je ?",
+    "image": null,
+    "answer": {
+      "value": 5.84
+    },
+    "solution_steps": [
+      "Entre 5,8 et 5,9, c'est-à-dire entre 5,80 et 5,90, les nombres à deux chiffres après la virgule sont 5,81 ; 5,82 ; … ; 5,89.",
+      "Tous ont 5 pour partie entière et 8 pour chiffre des dixièmes.",
+      "La moitié de 8 est 4 : le chiffre des centièmes est 4.",
+      "Le nombre est **5,84**. Vérification : $5{,}8 < 5{,}84 < 5{,}9$."
+    ],
+    "hint": "Quel est le chiffre des dixièmes de tous les nombres compris entre 5,8 et 5,9 ?",
+    "estimated_duration_s": 120,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 3, CM1 : comparer, encadrer, intercaler, ordonner, par ordre croissant ou décroissant, des nombres décimaux donnés par leur écriture à virgule en utilisant les symboles =, < et >."
+  }
+]

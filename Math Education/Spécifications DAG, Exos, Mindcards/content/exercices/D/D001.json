@@ -1,0 +1,167 @@
+[
+  {
+    "id": "EX-D001-D-01",
+    "skill_id": "D001",
+    "level": "decouverte",
+    "type": "numerique",
+    "statement": "L'écriture à virgule code une somme : la partie entière, puis les dixièmes juste après la virgule, puis les centièmes.\n\nÉcris avec une virgule : $3 + \\frac{5}{10} + \\frac{2}{100}$",
+    "image": null,
+    "answer": {
+      "value": 3.52
+    },
+    "solution_steps": [
+      "Partie entière : 3. On l'écrit avant la virgule.",
+      "5 dixièmes : le chiffre 5 s'écrit juste après la virgule, au rang des dixièmes.",
+      "2 centièmes : le chiffre 2 s'écrit au rang suivant, celui des centièmes.",
+      "$3 + \\frac{5}{10} + \\frac{2}{100} = 3{,}52$."
+    ],
+    "hint": "Quel chiffre vient juste après la virgule : celui des dixièmes ou celui des centièmes ?",
+    "estimated_duration_s": 45,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 3, CM1 : passer d'une écriture sous forme d'une fraction décimale ou d'une somme de fractions décimales à une écriture à virgule et réciproquement."
+  },
+  {
+    "id": "EX-D001-D-02",
+    "skill_id": "D001",
+    "level": "decouverte",
+    "type": "qcm",
+    "statement": "Comment s'écrit $5 + \\frac{7}{100}$ avec une virgule ?",
+    "image": null,
+    "choices": [
+      {
+        "key": "a",
+        "text": "5,7",
+        "misconception": "L'élève écrit le 7 juste après la virgule, au rang des dixièmes. Or il n'y a aucun dixième : 5,7, c'est 5 et 7 dixièmes, soit 70 centièmes."
+      },
+      {
+        "key": "b",
+        "text": "57",
+        "misconception": "L'élève oublie la virgule : 57 est un nombre entier, cinquante-sept unités, bien plus que 5 et quelques centièmes."
+      },
+      {
+        "key": "c",
+        "text": "5,07",
+        "misconception": null
+      }
+    ],
+    "answer": {
+      "value": "c"
+    },
+    "solution_steps": [
+      "Partie entière : 5, avant la virgule.",
+      "Il n'y a pas de dixièmes : on écrit 0 au rang des dixièmes, juste après la virgule.",
+      "7 centièmes : on écrit 7 au rang des centièmes.",
+      "$5 + \\frac{7}{100} = 5{,}07$. C'est comme 5 € et 7 centimes, qui s'écrit 5,07 €."
+    ],
+    "hint": "Combien de dixièmes y a-t-il dans ce nombre ?",
+    "estimated_duration_s": 40,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 3, CM1 : passer d'une écriture sous forme d'une fraction décimale ou d'une somme de fractions décimales à une écriture à virgule et réciproquement."
+  },
+  {
+    "id": "EX-D001-E-01",
+    "skill_id": "D001",
+    "level": "entrainement",
+    "type": "texte",
+    "statement": "Écris 13,06 comme une fraction décimale de dénominateur 100.\n\nÉcris ta réponse sous la forme numérateur/dénominateur.",
+    "image": null,
+    "answer": {
+      "value": "1306/100",
+      "accepted": [
+        "1306 / 100",
+        "1 306/100",
+        "1 306 / 100"
+      ]
+    },
+    "solution_steps": [
+      "13,06, c'est 13 unités, 0 dixième et 6 centièmes : $13 + \\frac{6}{100}$.",
+      "1 unité = 100 centièmes, donc 13 unités = 1300 centièmes.",
+      "En tout : $1300 + 6 = 1306$ centièmes.",
+      "$13{,}06 = \\frac{1306}{100}$. Piège : $\\frac{136}{100}$ oublie le 0 des dixièmes et ne vaut que 1,36."
+    ],
+    "hint": "Combien de centièmes y a-t-il dans une unité ?",
+    "estimated_duration_s": 60,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 3, CM1 : passer d'une écriture sous forme d'une fraction décimale ou d'une somme de fractions décimales à une écriture à virgule et réciproquement."
+  },
+  {
+    "id": "EX-D001-E-02",
+    "skill_id": "D001",
+    "level": "entrainement",
+    "type": "qcm",
+    "statement": "Dans 472,85, le chiffre 7 est celui des dizaines.\n\nQue vaut le chiffre 8 ?",
+    "image": null,
+    "choices": [
+      {
+        "key": "a",
+        "text": "8 dizaines",
+        "misconception": "L'élève confond dixièmes et dizaines. Les dizaines sont à gauche de la virgule (ici le 7), les dixièmes juste à droite."
+      },
+      {
+        "key": "b",
+        "text": "8 dixièmes",
+        "misconception": null
+      },
+      {
+        "key": "c",
+        "text": "8 centièmes",
+        "misconception": "L'élève lit « 85 centièmes » et attribue les centièmes au 8. Or 85 centièmes, c'est 8 dixièmes et 5 centièmes : seul le 5 compte des centièmes."
+      }
+    ],
+    "answer": {
+      "value": "b"
+    },
+    "solution_steps": [
+      "À gauche de la virgule, les rangs des entiers : 4 centaines, 7 dizaines, 2 unités.",
+      "À droite de la virgule : d'abord les dixièmes, puis les centièmes.",
+      "Le 8 est juste après la virgule : il vaut 8 dixièmes, $\\frac{8}{10}$.",
+      "Le 7 vaut 7 dizaines, soit 70 ; le 8 vaut 8 dixièmes, moins qu'une unité. Dizaine et dixième se ressemblent à l'oreille, pas en valeur."
+    ],
+    "hint": "Le 8 est-il à gauche ou à droite de la virgule ? À quel rang ?",
+    "estimated_duration_s": 45,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 3, CM1 : interpréter, représenter, écrire et lire des nombres décimaux (écriture à virgule)."
+  },
+  {
+    "id": "EX-D001-M-01",
+    "skill_id": "D001",
+    "level": "maitrise",
+    "type": "numerique",
+    "statement": "Écris avec une virgule le nombre formé de 4 dizaines, 9 dixièmes et 3 centièmes.",
+    "image": null,
+    "answer": {
+      "value": 40.93
+    },
+    "solution_steps": [
+      "On place chaque chiffre à son rang. Dizaines : 4. Unités : aucune, on écrit 0 pour garder la place.",
+      "Juste après la virgule, les dixièmes : 9. Puis les centièmes : 3.",
+      "Le nombre s'écrit **40,93**.",
+      "Pièges : 4,93 met le 4 aux unités au lieu des dizaines ; 49,3 met le 9 aux unités au lieu des dixièmes. 4 dizaines (40) et 9 dixièmes (moins d'une unité) n'ont pas du tout la même valeur."
+    ],
+    "hint": "Commence par la partie entière : combien vaut-elle ? Y a-t-il des unités ?",
+    "estimated_duration_s": 60,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 3, CM1 : interpréter, représenter, écrire et lire des nombres décimaux (écriture à virgule)."
+  },
+  {
+    "id": "EX-D001-M-02",
+    "skill_id": "D001",
+    "level": "maitrise",
+    "type": "vrai_faux",
+    "statement": "Lou affirme : « Dans 60,04 et dans 6,40, le chiffre 4 a la même valeur. »\n\nA-t-elle raison ?",
+    "image": null,
+    "answer": {
+      "value": false
+    },
+    "solution_steps": [
+      "Dans 60,04, le 4 est au deuxième rang après la virgule : il vaut 4 centièmes, $\\frac{4}{100}$.",
+      "Dans 6,40, le 4 est juste après la virgule : il vaut 4 dixièmes, $\\frac{4}{10}$, soit 40 centièmes.",
+      "40 centièmes, ce n'est pas 4 centièmes : Lou a **tort**.",
+      "C'est la place d'un chiffre qui donne sa valeur. Le 6 aussi change : 6 dizaines dans 60,04, 6 unités dans 6,40."
+    ],
+    "hint": "Dans chaque nombre, à quel rang après la virgule se trouve le 4 ?",
+    "estimated_duration_s": 60,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 3, CM1 : interpréter, représenter, écrire et lire des nombres décimaux (écriture à virgule)."
+  }
+]

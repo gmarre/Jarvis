@@ -61,11 +61,11 @@ Le DAG v1.0 (`Spécifications DAG, Exos, Mindcards/skills_dag.json`) contient 41
 
 | Brique | Contenu | État |
 |--------|---------|------|
-| `skills_dag.json` | Graphe enrichi (`exercise_ids`, `mindmap_id`, `mastery_threshold`) | **56 compétences** au 3 octobre 2026 : A Numération 17, B Calcul 21 (CP à 6e), C Fractions 18. Intégrité vérifiée : aucun cycle, aucun prérequis fantôme, niveaux et citations contrôlés. |
-| `exercises.json` | Banque d'exercices, 3 niveaux, avec corrigés | **282 exercices**, tous en `relu_agent` (voir `QUALITY.md`). Chaque compétence en a au moins 3. |
-| `mindmaps.json` | Cartes mentales en Markdown hiérarchique | **10 cartes**, chaque compétence est couverte. |
+| `skills_dag.json` | Graphe enrichi (`exercise_ids`, `mindmap_id`, `mastery_threshold`) | **75 compétences** au 4 octobre 2026 : A Numération 17, B Calcul 21 (CP à 6e), C Fractions 18, D Décimaux 19 (CE1 à 6e). Intégrité vérifiée : aucun cycle, aucun prérequis fantôme, niveaux et citations contrôlés. |
+| `exercises.json` | Banque d'exercices, 3 niveaux, avec corrigés | **396 exercices**, tous en `relu_agent` (voir `QUALITY.md`). Chaque compétence en a au moins 3. |
+| `mindmaps.json` | Cartes mentales en Markdown hiérarchique | **14 cartes**, chaque compétence est couverte. |
 
-**L'extension du contenu suit `Spécifications DAG, Exos, Mindcards/PLAN_CONTENU.md`** : un domaine à la fois, d'après le programme officiel, DAG, exercices et cartes ensemble, produits et relus par agents. Étape 1 (domaine B) faite, étape 2 (décimaux) ensuite.
+**L'extension du contenu suit `Spécifications DAG, Exos, Mindcards/PLAN_CONTENU.md`** : un domaine à la fois, d'après le programme officiel, DAG, exercices et cartes ensemble, produits et relus par agents. Étapes 1 (calcul) et 2 (décimaux) faites, étape 3 (proportionnalité) ensuite.
 | Progression élève | État d'avancement sur le DAG | **En base Supabase**, tables et politiques RLS actives. |
 
 **Plus aucune compétence sans exercice.** Les 12 compétences A et C de l'ancienne liste avaient été remplies par Marius (7 ou 8 exercices chacune). Les trois dernières, B001, B005 et B006, l'ont été le 3 octobre 2026 : B005 était la lacune racine d'un élève CM1 typique, dont le plan du jour restait vide. Le code continue de contourner une compétence vide, ce qui redeviendra utile quand le DAG grandira : `placement.trous.test.ts` le vérifie sur un contenu troué exprès.
@@ -418,7 +418,7 @@ Aucun des quatre ne teste le navigateur. Avant tout commit : `npm test && npm ru
 
 **Réponses des exercices dans le bundle.** Vérifiable : `grep -o '"value":[0-9]*' dist/assets/index-*.js`. Corrigé au sprint 3 par la correction côté serveur.
 
-**Mur de taille du contenu.** Les 3 JSON sont importés statiquement, donc dans le chunk principal. À la cible de 414 compétences et 5 exercices par niveau, cela ferait de l'ordre de **8 Mo de JSON dans le bundle**. Cassé au sprint 3 par le passage en base. **Déjà sensible :** avec 56 compétences et 282 exercices, le chunk principal est passé de 60 à 95 ko gzippés (3 octobre 2026). Chaque étape du plan de contenu l'alourdit.
+**Mur de taille du contenu.** Les 3 JSON sont importés statiquement, donc dans le chunk principal. À la cible de 414 compétences et 5 exercices par niveau, cela ferait de l'ordre de **8 Mo de JSON dans le bundle**. Cassé au sprint 3 par le passage en base. **Déjà sensible :** le chunk principal est passé de 60 ko gzippés à 95 ko (56 compétences, 282 exercices, 3 octobre 2026), puis à **133 ko** (75 compétences, 396 exercices, 4 octobre 2026). Chaque étape du plan de contenu l'alourdit : la publication en base n'attend plus.
 
 **Poids du bundle.** `supabase-js` a fait passer le premier chargement de 92 à **148 ko gzippés**, dont un client realtime inutilisé. Les chunks vendor sont séparés pour rester en cache entre deux déploiements, ce qui aide les visites suivantes mais pas la première. Le réduire demanderait d'importer `@supabase/auth-js` et `@supabase/postgrest-js` séparément, au prix d'une API moins standard. À trancher au sprint 4 avec la cible Lighthouse.
 

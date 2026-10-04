@@ -1,0 +1,185 @@
+[
+  {
+    "id": "EX-D004-D-01",
+    "skill_id": "D004",
+    "level": "decouverte",
+    "type": "numerique",
+    "statement": "Un cycliste parcourt 23,4 km le matin et 12,35 km l'après-midi.\n\nPose l'addition en alignant les virgules. Quelle distance a-t-il parcourue en tout ?",
+    "image": null,
+    "answer": {
+      "value": 35.75,
+      "unit": "km",
+      "accepted": [
+        "35,75 km"
+      ]
+    },
+    "solution_steps": [
+      "On cherche la distance totale : on additionne $23{,}4 + 12{,}35$.",
+      "On pose l'addition en **alignant les virgules** : unités sous les unités, dixièmes sous les dixièmes. Le 4 de 23,4 est un chiffre des dixièmes : il se place sous le 3 de 12,35, pas sous le 5.",
+      "23,4 n'a pas de chiffre des centièmes : on écrit un 0 à droite, $23{,}4 = 23{,}40$. Cela ne change pas le nombre, car 4 dixièmes font 40 centièmes.",
+      "On calcule de droite à gauche. Centièmes : $0 + 5 = 5$. Dixièmes : $4 + 3 = 7$. On écrit la virgule du résultat sous les autres virgules. Unités : $3 + 2 = 5$. Dizaines : $2 + 1 = 3$.",
+      "$23{,}4 + 12{,}35 = 35{,}75$. Le cycliste a parcouru **35,75 km** en tout."
+    ],
+    "hint": "Le 4 de 23,4 est un chiffre des dixièmes : sous quel chiffre de 12,35 doit-il se placer ?",
+    "estimated_duration_s": 75,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 3, CM1, les quatre opérations : poser en colonnes et effectuer des additions et des soustractions de nombres décimaux."
+  },
+  {
+    "id": "EX-D004-D-02",
+    "skill_id": "D004",
+    "level": "decouverte",
+    "type": "qcm",
+    "statement": "Pose et calcule $6{,}8 + 2{,}35$, en alignant les virgules.",
+    "image": null,
+    "choices": [
+      {
+        "key": "a",
+        "text": "8,43",
+        "misconception": "L'élève additionne séparément les parties entières ($6 + 2 = 8$) et les parties décimales comme des entiers ($8 + 35 = 43$). Il aligne les chiffres après la virgule à droite : il ajoute 8 dixièmes à 35 centièmes comme s'ils avaient le même rang."
+      },
+      {
+        "key": "b",
+        "text": "9,15",
+        "misconception": null
+      },
+      {
+        "key": "c",
+        "text": "8,15",
+        "misconception": "L'élève aligne bien les virgules mais oublie la retenue : 8 dixièmes et 3 dixièmes font 11 dixièmes, soit 1 unité et 1 dixième. L'unité retenue n'est pas ajoutée aux unités."
+      },
+      {
+        "key": "d",
+        "text": "3,03",
+        "misconception": "L'élève aligne les derniers chiffres à droite au lieu d'aligner les virgules : il calcule $68 + 235 = 303$, puis place la virgule comme dans 2,35. Le résultat est même plus petit que 6,8, ce qui est impossible pour une addition."
+      }
+    ],
+    "answer": {
+      "value": "b"
+    },
+    "solution_steps": [
+      "On aligne les virgules : le 8 de 6,8 (dixièmes) se place sous le 3 de 2,35 (dixièmes). On complète 6,8 par un 0 : $6{,}8 = 6{,}80$.",
+      "Centièmes : $0 + 5 = 5$. Dixièmes : $8 + 3 = 11$ dixièmes, c'est 1 unité et 1 dixième. On écrit 1 aux dixièmes et on retient 1 unité, notée en petit au-dessus de la colonne des unités.",
+      "On écrit la virgule du résultat sous les autres virgules. Unités : $6 + 2 + 1 = 9$, sans oublier la retenue.",
+      "$6{,}8 + 2{,}35 = 9{,}15$. Vérification : le résultat est proche de $7 + 2 = 9$. La bonne réponse est **9,15**."
+    ],
+    "hint": "Écris 6,8 avec deux chiffres après la virgule, puis additionne les centièmes, les dixièmes et les unités.",
+    "estimated_duration_s": 70,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 3, CM1, les quatre opérations : poser en colonnes et effectuer des additions et des soustractions de nombres décimaux."
+  },
+  {
+    "id": "EX-D004-E-01",
+    "skill_id": "D004",
+    "level": "entrainement",
+    "type": "numerique",
+    "statement": "Un jardinier a un sac de 15 kg de terreau. Il en utilise 6,74 kg.\n\nQuelle masse de terreau reste-t-il dans le sac ? Pose la soustraction.",
+    "image": null,
+    "answer": {
+      "value": 8.26,
+      "unit": "kg",
+      "accepted": [
+        "8,26 kg"
+      ]
+    },
+    "solution_steps": [
+      "On cherche ce qui reste : on calcule $15 - 6{,}74$.",
+      "15 est un entier : sa virgule est cachée après le 5. On écrit $15 = 15{,}00$ pour avoir deux chiffres après la virgule, comme 6,74, puis on aligne les virgules.",
+      "Centièmes : on ne peut pas enlever 4 à 0, et il n'y a aucun dixième à casser. On casse une des 5 unités : il reste 4 unités, et on a 10 dixièmes. On casse un de ces dixièmes : il reste 9 dixièmes, et on a 10 centièmes. Sur ta feuille, barre les chiffres cassés et écris au-dessus ce qu'il reste.",
+      "Centièmes : $10 - 4 = 6$. Dixièmes : $9 - 7 = 2$. On écrit la virgule du résultat sous les autres virgules.",
+      "Unités : on ne peut pas enlever 6 à 4. On casse la dizaine : on a $10 + 4 = 14$ unités, et $14 - 6 = 8$. Il ne reste plus de dizaine.",
+      "$15 - 6{,}74 = 8{,}26$. On vérifie avec l'addition : $8{,}26 + 6{,}74 = 15$. Il reste **8,26 kg** de terreau. Si ta classe utilise une autre méthode de soustraction, tu dois trouver le même résultat."
+    ],
+    "hint": "Écris 15 avec une virgule et deux zéros, pour avoir autant de chiffres après la virgule que 6,74.",
+    "estimated_duration_s": 110,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 3, CM1, les quatre opérations : poser en colonnes et effectuer des additions et des soustractions de nombres décimaux."
+  },
+  {
+    "id": "EX-D004-E-02",
+    "skill_id": "D004",
+    "level": "entrainement",
+    "type": "vrai_faux",
+    "statement": "Mila pose la soustraction $7{,}3 - 2{,}58$. Elle écrit un 0 après le 3, calcule $7{,}30 - 2{,}58$ et trouve 4,72.\n\nA-t-elle raison ?",
+    "image": null,
+    "answer": {
+      "value": true
+    },
+    "solution_steps": [
+      "Écrire un 0 à droite de 7,3 est permis : 3 dixièmes font 30 centièmes, donc $7{,}3 = 7{,}30$. Mila obtient ainsi autant de chiffres après la virgule que dans 2,58, et chaque chiffre de 2,58 a un chiffre en face.",
+      "Centièmes : on ne peut pas enlever 8 à 0. On casse un des 3 dixièmes : il reste 2 dixièmes, et on a 10 centièmes. $10 - 8 = 2$.",
+      "Dixièmes : on ne peut pas enlever 5 à 2. On casse une des 7 unités : il reste 6 unités, et on a $10 + 2 = 12$ dixièmes. $12 - 5 = 7$. On écrit la virgule.",
+      "Unités : $6 - 2 = 4$. Donc $7{,}30 - 2{,}58 = 4{,}72$. Vérification : $4{,}72 + 2{,}58 = 7{,}30$.",
+      "C'est **vrai** : Mila a raison. Sans ce 0, on risque de recopier le 8 en bas au lieu de le soustraire, et de trouver 4,88."
+    ],
+    "hint": "Est-ce que 7,3 et 7,30 sont le même nombre ? Puis refais le calcul.",
+    "estimated_duration_s": 90,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 3, CM1, les quatre opérations : poser en colonnes et effectuer des additions et des soustractions de nombres décimaux."
+  },
+  {
+    "id": "EX-D004-M-01",
+    "skill_id": "D004",
+    "level": "maitrise",
+    "type": "numerique",
+    "statement": "Une planche mesure 2,5 m. Lucas en coupe un morceau de 0,75 m, puis un morceau de 1,2 m.\n\nQuelle longueur de planche reste-t-il, en mètres ?",
+    "image": null,
+    "answer": {
+      "value": 0.55,
+      "unit": "m",
+      "accepted": [
+        "0,55 m"
+      ]
+    },
+    "solution_steps": [
+      "On enlève les deux morceaux à la planche : on calcule d'abord $2{,}5 - 0{,}75$, puis on enlève 1,2 au résultat.",
+      "$2{,}5 - 0{,}75$ : on écrit $2{,}50$ et on aligne les virgules. Centièmes : on casse un des 5 dixièmes, il en reste 4 et on a 10 centièmes ; $10 - 5 = 5$. Dixièmes : on casse une des 2 unités, il en reste 1 et on a $10 + 4 = 14$ dixièmes ; $14 - 7 = 7$. Unités : $1 - 0 = 1$. On trouve 1,75.",
+      "$1{,}75 - 1{,}2$ : on écrit $1{,}20$ et on aligne les virgules. Centièmes : $5 - 0 = 5$. Dixièmes : $7 - 2 = 5$. Unités : $1 - 1 = 0$. On trouve 0,55.",
+      "Autre chemin : les deux morceaux mesurent $0{,}75 + 1{,}20 = 1{,}95$ m, et $2{,}50 - 1{,}95 = 0{,}55$. On trouve le même résultat.",
+      "Il reste **0,55 m** de planche. C'est moins de 1 m : c'est cohérent, car on a coupé presque 2 m sur 2,5 m."
+    ],
+    "hint": "Aligne les virgules à chaque calcul, et complète par des zéros pour avoir le même nombre de chiffres après la virgule.",
+    "estimated_duration_s": 140,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 3, CM1, les quatre opérations : poser en colonnes et effectuer des additions et des soustractions de nombres décimaux."
+  },
+  {
+    "id": "EX-D004-M-02",
+    "skill_id": "D004",
+    "level": "maitrise",
+    "type": "qcm",
+    "statement": "Noé pose l'addition $5{,}4 + 3{,}27$ et trouve 3,81.\n\nQuelle est son erreur ?",
+    "image": null,
+    "choices": [
+      {
+        "key": "a",
+        "text": "Il n'a pas fait d'erreur : 3,81 est juste.",
+        "misconception": "L'élève ne contrôle pas l'ordre de grandeur : en ajoutant 3,27 à 5,4, on ne peut pas obtenir un nombre plus petit que 5,4."
+      },
+      {
+        "key": "b",
+        "text": "Il a oublié une retenue.",
+        "misconception": "L'élève attribue l'erreur à une retenue oubliée sans refaire le calcul : dans $5{,}40 + 3{,}27$, aucune colonne ne dépasse 9, il n'y a donc aucune retenue à faire."
+      },
+      {
+        "key": "c",
+        "text": "Il a aligné les derniers chiffres à droite au lieu d'aligner les virgules.",
+        "misconception": null
+      }
+    ],
+    "answer": {
+      "value": "c"
+    },
+    "solution_steps": [
+      "Ordre de grandeur : $5{,}4 + 3{,}27$, c'est plus que $5 + 3 = 8$. Le résultat 3,81 est même plus petit que 5,4 : il est forcément faux.",
+      "Noé a placé le 4 de 5,4 sous le 7 de 3,27, comme pour additionner des entiers. Il a en fait calculé $54 + 327 = 381$, puis placé la virgule comme dans 3,27.",
+      "Or le 4 est un chiffre des dixièmes et le 7 un chiffre des centièmes : on ne peut pas les additionner. Il faut **aligner les virgules** et compléter : $5{,}4 = 5{,}40$.",
+      "Centièmes : $0 + 7 = 7$. Dixièmes : $4 + 2 = 6$. Unités : $5 + 3 = 8$. Donc $5{,}4 + 3{,}27 = 8{,}67$.",
+      "La bonne réponse est **c** : Noé a aligné les derniers chiffres au lieu des virgules."
+    ],
+    "hint": "Sans calculer, le résultat de Noé est-il possible ? Compare-le à 5,4.",
+    "estimated_duration_s": 90,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 3, CM1, les quatre opérations : poser en colonnes et effectuer des additions et des soustractions de nombres décimaux."
+  }
+]

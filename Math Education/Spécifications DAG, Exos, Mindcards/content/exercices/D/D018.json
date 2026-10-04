@@ -1,0 +1,169 @@
+[
+  {
+    "id": "EX-D018-D-01",
+    "skill_id": "D018",
+    "level": "decouverte",
+    "type": "texte",
+    "statement": "Un carré est partagé en 100 petits carreaux égaux : chaque carreau est un centième du carré. On colorie 37 carreaux.\n\nQuelle fraction du carré est coloriée ? Écris-la sous la forme numérateur/dénominateur.",
+    "image": null,
+    "answer": {
+      "value": "37/100",
+      "accepted": [
+        "37 / 100"
+      ]
+    },
+    "solution_steps": [
+      "Le carré entier est partagé en 100 parts égales : le dénominateur est 100.",
+      "On a colorié 37 de ces parts : le numérateur est 37.",
+      "La partie coloriée est $\\frac{37}{100}$ du carré : trente-sept centièmes.",
+      "On peut ranger les 100 carreaux en 10 rangées de 10 : une rangée est alors un dixième du carré. 37 carreaux, c'est 3 rangées complètes et 7 carreaux : 3 dixièmes et 7 centièmes."
+    ],
+    "hint": "En combien de parts égales le carré est-il partagé ? Combien en a-t-on colorié ?",
+    "estimated_duration_s": 45,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 3, CM1 : interpréter, représenter, écrire et lire des fractions décimales."
+  },
+  {
+    "id": "EX-D018-D-02",
+    "skill_id": "D018",
+    "level": "decouverte",
+    "type": "qcm",
+    "statement": "Une unité est partagée en 10 dixièmes. Puis chaque dixième est partagé en 10 parts égales.\n\nQue vaut une de ces petites parts ?",
+    "image": null,
+    "choices": [
+      {
+        "key": "a",
+        "text": "une centaine",
+        "misconception": "L'élève confond centième et centaine. Une centaine vaut 100 unités, alors qu'une petite part est bien plus petite qu'une unité."
+      },
+      {
+        "key": "b",
+        "text": "un dixième",
+        "misconception": "L'élève pense que partager un dixième donne encore des dixièmes. Or il faut 100 de ces petites parts pour faire l'unité, et seulement 10 dixièmes."
+      },
+      {
+        "key": "c",
+        "text": "une dizaine",
+        "misconception": "L'élève confond dixième et dizaine. Une dizaine vaut 10 unités : c'est plus grand que l'unité, pas une part de l'unité."
+      },
+      {
+        "key": "d",
+        "text": "un centième",
+        "misconception": null
+      }
+    ],
+    "answer": {
+      "value": "d"
+    },
+    "solution_steps": [
+      "Les 10 dixièmes sont chacun coupés en 10 : l'unité est coupée en 10 paquets de 10, soit 100 petites parts égales.",
+      "Une part sur 100 parts égales de l'unité, c'est $\\frac{1}{100}$ : un **centième**.",
+      "Il faut 10 centièmes pour faire 1 dixième, et 100 centièmes pour faire l'unité.",
+      "Attention aux mots : une dizaine (10) et une centaine (100) sont plus grandes que l'unité ; un dixième et un centième sont plus petits."
+    ],
+    "hint": "En combien de petites parts égales l'unité est-elle partagée en tout ?",
+    "estimated_duration_s": 45,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 3, CM1 : connaître et utiliser les relations entre unités simples, dixièmes et centièmes."
+  },
+  {
+    "id": "EX-D018-E-01",
+    "skill_id": "D018",
+    "level": "entrainement",
+    "type": "numerique",
+    "statement": "Une unité vaut 100 centièmes, un dixième vaut 10 centièmes.\n\nCombien de centièmes y a-t-il en tout dans 2 unités et 6 dixièmes ?",
+    "image": null,
+    "answer": {
+      "value": 260,
+      "accepted": [
+        "260 centièmes",
+        "260 centiemes"
+      ]
+    },
+    "solution_steps": [
+      "2 unités : $100 + 100 = 200$ centièmes.",
+      "6 dixièmes : 6 paquets de 10 centièmes, soit 60 centièmes.",
+      "En tout : $200 + 60 = 260$ centièmes. On peut l'écrire $2 + \\frac{6}{10} = \\frac{260}{100}$.",
+      "Attention : 26, c'est le nombre de **dixièmes** (2 unités = 20 dixièmes, plus 6). En centièmes, il y en a 10 fois plus : 260."
+    ],
+    "hint": "Compte d'abord les centièmes contenus dans 2 unités.",
+    "estimated_duration_s": 60,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 3, CM1 : connaître et utiliser les relations entre unités simples, dixièmes et centièmes."
+  },
+  {
+    "id": "EX-D018-E-02",
+    "skill_id": "D018",
+    "level": "entrainement",
+    "type": "texte",
+    "statement": "Écris $\\frac{358}{100}$ comme la somme d'un entier et de fractions décimales de numérateur inférieur à 10.\n\nÉcris ta réponse sous la forme d'un entier plus deux fractions numérateur/dénominateur.",
+    "image": null,
+    "answer": {
+      "value": "3 + 5/10 + 8/100",
+      "accepted": [
+        "3+5/10+8/100",
+        "3 + 5 / 10 + 8 / 100",
+        "3 + 8/100 + 5/10",
+        "5/10 + 8/100 + 3",
+        "8/100 + 5/10 + 3",
+        "5/10 + 3 + 8/100",
+        "8/100 + 3 + 5/10"
+      ]
+    },
+    "solution_steps": [
+      "358 centièmes = 300 centièmes + 50 centièmes + 8 centièmes.",
+      "100 centièmes font 1 unité : 300 centièmes font 3 unités.",
+      "10 centièmes font 1 dixième : 50 centièmes font 5 dixièmes, $\\frac{5}{10}$.",
+      "Il reste 8 centièmes, $\\frac{8}{100}$. Donc $\\frac{358}{100} = 3 + \\frac{5}{10} + \\frac{8}{100}$.",
+      "Chaque chiffre de 358 a son rôle : le 3 compte des unités (et non des centaines), le 5 des dixièmes (et non des dizaines), le 8 des centièmes."
+    ],
+    "hint": "Combien d'unités entières font 300 centièmes ? Et combien de dixièmes font 50 centièmes ?",
+    "estimated_duration_s": 90,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 3, CM1 : écrire une fraction décimale supérieure à 1 comme la somme d'un nombre entier et de fractions décimales ayant un numérateur inférieur à 10."
+  },
+  {
+    "id": "EX-D018-M-01",
+    "skill_id": "D018",
+    "level": "maitrise",
+    "type": "numerique",
+    "statement": "Complète : $2 + \\frac{13}{10} + \\frac{5}{100} = \\frac{\\ldots}{100}$",
+    "image": null,
+    "answer": {
+      "value": 335
+    },
+    "solution_steps": [
+      "On convertit tout en centièmes.",
+      "2 unités = 200 centièmes, car 1 unité = 100 centièmes.",
+      "13 dixièmes = 130 centièmes, car chaque dixième vaut 10 centièmes.",
+      "Les 5 centièmes restent 5 centièmes. En tout : $200 + 130 + 5 = 335$, donc $2 + \\frac{13}{10} + \\frac{5}{100} = \\frac{335}{100}$.",
+      "Piège : recopier les nombres à la suite donne 2135. Mais 13 dixièmes, c'est 1 unité et 3 dixièmes : le nombre vaut 3 unités et 35 centièmes, pas plus de 21 unités."
+    ],
+    "hint": "13 dixièmes, c'est plus qu'une unité. Combien de centièmes cela fait-il ?",
+    "estimated_duration_s": 90,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 3, CM1 : connaître et utiliser les relations entre unités simples, dixièmes et centièmes."
+  },
+  {
+    "id": "EX-D018-M-02",
+    "skill_id": "D018",
+    "level": "maitrise",
+    "type": "vrai_faux",
+    "statement": "Léo remplit une carafe avec 7 verres de $\\frac{1}{10}$ de litre et 25 cuillères de $\\frac{1}{100}$ de litre.\n\nIl dit : « J'ai versé $\\frac{32}{100}$ de litre. » A-t-il raison ?",
+    "image": null,
+    "answer": {
+      "value": false
+    },
+    "solution_steps": [
+      "7 verres de $\\frac{1}{10}$ de litre : 7 dixièmes de litre, $\\frac{7}{10}$ L.",
+      "Un dixième vaut 10 centièmes : $\\frac{7}{10} = \\frac{70}{100}$.",
+      "25 cuillères de $\\frac{1}{100}$ de litre : $\\frac{25}{100}$ L.",
+      "En tout : $\\frac{70}{100} + \\frac{25}{100} = \\frac{95}{100}$ de litre.",
+      "Léo a ajouté 7 et 25 comme si c'étaient tous des centièmes : il a **tort**. Ses 7 verres valent à eux seuls $\\frac{70}{100}$ L, déjà plus que $\\frac{32}{100}$."
+    ],
+    "hint": "Un verre de $\\frac{1}{10}$ de litre, c'est combien de centièmes de litre ?",
+    "estimated_duration_s": 90,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 3, CM1 : connaître et utiliser les relations entre unités simples, dixièmes et centièmes."
+  }
+]

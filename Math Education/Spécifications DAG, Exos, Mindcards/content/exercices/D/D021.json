@@ -1,0 +1,176 @@
+[
+  {
+    "id": "EX-D021-D-01",
+    "skill_id": "D021",
+    "level": "decouverte",
+    "type": "numerique",
+    "statement": "Un cahier coûte 2,47 €. Combien coûtent 3 cahiers ?\n\nPose la multiplication $2{,}47 \\times 3$.",
+    "image": null,
+    "answer": {
+      "value": 7.41,
+      "unit": "€",
+      "accepted": [
+        "7,41 €"
+      ]
+    },
+    "solution_steps": [
+      "3 cahiers à 2,47 € : on calcule $2{,}47 \\times 3$. On pose 2,47 en haut et 3 en dessous, sous le dernier chiffre de droite, le 7. Pour l'instant, on ne s'occupe pas de la virgule : on calcule comme pour $247 \\times 3$.",
+      "Chiffre de droite : $3 \\times 7 = 21$, on écrit 1 et on retient 2. Chiffre suivant : $3 \\times 4 = 12$, plus 2 de retenue, cela fait 14 : on écrit 4 et on retient 1. Dernier chiffre : $3 \\times 2 = 6$, plus 1 de retenue, cela fait 7. On obtient 741.",
+      "Où placer la virgule ? 2,47, c'est 247 centièmes. 3 fois 247 centièmes font 741 centièmes, c'est-à-dire 7 unités et 41 centièmes : 7,41.",
+      "À retenir : 2,47 a deux chiffres après la virgule, le produit en a deux aussi. On place la virgule en comptant deux chiffres à partir de la droite : $2{,}47 \\times 3 = 7{,}41$. Les 3 cahiers coûtent **7,41 €**."
+    ],
+    "hint": "Calcule d'abord sans la virgule, puis demande-toi combien de centièmes tu as obtenus.",
+    "estimated_duration_s": 90,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 3, CM1 : poser et effectuer des multiplications d'un nombre décimal par un nombre entier inférieur à 10."
+  },
+  {
+    "id": "EX-D021-D-02",
+    "skill_id": "D021",
+    "level": "decouverte",
+    "type": "qcm",
+    "statement": "Lina pose bout à bout 4 planches de 1,8 m.\n\nQuelle longueur obtient-elle ?",
+    "image": null,
+    "choices": [
+      {
+        "key": "a",
+        "text": "72 m",
+        "misconception": "L'élève calcule bien 18 × 4 = 72, mais oublie de remettre la virgule dans le résultat."
+      },
+      {
+        "key": "b",
+        "text": "4,32 m",
+        "misconception": "L'élève multiplie séparément la partie entière et la partie décimale : 1 × 4 = 4, puis 8 × 4 = 32, et colle les deux résultats. Il oublie que 32 dixièmes font plus de 3 unités."
+      },
+      {
+        "key": "c",
+        "text": "7,2 m",
+        "misconception": null
+      }
+    ],
+    "answer": {
+      "value": "c"
+    },
+    "solution_steps": [
+      "4 planches de 1,8 m : on calcule $1{,}8 \\times 4$. On pose 1,8 en haut et 4 sous le 8, et on calcule comme pour $18 \\times 4$.",
+      "$4 \\times 8 = 32$ : on écrit 2 et on retient 3. Puis $4 \\times 1 = 4$, plus 3 de retenue, cela fait 7. On obtient 72.",
+      "1,8, c'est 18 dixièmes. 4 fois 18 dixièmes font 72 dixièmes, soit 7 unités et 2 dixièmes : 7,2.",
+      "1,8 a un chiffre après la virgule, le produit aussi : $1{,}8 \\times 4 = 7{,}2$. Lina obtient **7,2 m** : la bonne réponse est c."
+    ],
+    "hint": "1,8 m, c'est 18 dixièmes de mètre. Combien de dixièmes dans 4 planches ?",
+    "estimated_duration_s": 75,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 3, CM1 : poser et effectuer des multiplications d'un nombre décimal par un nombre entier inférieur à 10."
+  },
+  {
+    "id": "EX-D021-E-01",
+    "skill_id": "D021",
+    "level": "entrainement",
+    "type": "numerique",
+    "statement": "Une bouteille de jus contient 0,75 L.\n\nCombien de litres de jus y a-t-il dans un pack de 6 bouteilles ?",
+    "image": null,
+    "answer": {
+      "value": 4.5,
+      "unit": "L",
+      "accepted": [
+        "4,5 L",
+        "4,50 L"
+      ]
+    },
+    "solution_steps": [
+      "On calcule $0{,}75 \\times 6$, posé comme $75 \\times 6$ : $6 \\times 5 = 30$, on écrit 0 et on retient 3 ; $6 \\times 7 = 42$, plus 3 de retenue, cela fait 45. On obtient 450.",
+      "0,75, c'est 75 centièmes. 6 fois 75 centièmes font 450 centièmes : il faut deux chiffres après la virgule, comme dans 0,75. On place la virgule : 4,50.",
+      "Le 0 à la fin de 4,50 ne change pas la valeur : 4 unités et 5 dixièmes, c'est 4,5. Attention, on place la virgule **avant** d'effacer ce 0 : en l'effaçant d'abord, on garderait 45 et on écrirait 0,45, ce qui est faux.",
+      "Le pack contient **4,5 L**. Contrôle : chaque bouteille contient moins d'un litre, donc 6 bouteilles moins de 6 L ; mais plus d'un demi-litre (75 centièmes, c'est plus que 50 centièmes), donc 2 bouteilles plus de 1 L et 6 bouteilles plus de 3 L. 4,5 L convient, pas 0,45 L."
+    ],
+    "hint": "0,75 L, c'est 75 centièmes de litre.",
+    "estimated_duration_s": 90,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 3, CM1 : poser et effectuer des multiplications d'un nombre décimal par un nombre entier inférieur à 10."
+  },
+  {
+    "id": "EX-D021-E-02",
+    "skill_id": "D021",
+    "level": "entrainement",
+    "type": "qcm",
+    "statement": "Un ticket de bus coûte 1,45 €.\n\nCombien coûtent 9 tickets ?",
+    "image": null,
+    "choices": [
+      {
+        "key": "a",
+        "text": "13,05 €",
+        "misconception": null
+      },
+      {
+        "key": "b",
+        "text": "9,405 €",
+        "misconception": "L'élève multiplie séparément la partie entière et la partie décimale : 1 × 9 = 9 et 45 × 9 = 405, puis colle les résultats. Or 405 centièmes, c'est plus de 4 unités."
+      },
+      {
+        "key": "c",
+        "text": "130,5 €",
+        "misconception": "L'élève calcule bien 145 × 9 = 1 305, mais ne laisse qu'un seul chiffre après la virgule, alors que 1,45 en a deux."
+      }
+    ],
+    "answer": {
+      "value": "a"
+    },
+    "solution_steps": [
+      "On calcule $1{,}45 \\times 9$, posé comme $145 \\times 9$.",
+      "$9 \\times 5 = 45$ : on écrit 5 et on retient 4. $9 \\times 4 = 36$, plus 4 de retenue, cela fait 40 : on écrit 0 et on retient 4. $9 \\times 1 = 9$, plus 4 de retenue, cela fait 13. On obtient 1 305.",
+      "1,45 a deux chiffres après la virgule : 1 305 centièmes, c'est 13,05. Le 0 des dixièmes doit rester écrit.",
+      "Contrôle : un ticket coûte entre 1 € et 2 €, donc 9 tickets coûtent entre 9 € et 18 € : 130,5 € est impossible. 9,405 € aussi, car un prix s'écrit avec deux chiffres après la virgule, les centimes. **13,05 €** convient : la bonne réponse est a."
+    ],
+    "hint": "Pose 145 × 9, puis compte les chiffres après la virgule dans 1,45.",
+    "estimated_duration_s": 90,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 3, CM1 : poser et effectuer des multiplications d'un nombre décimal par un nombre entier inférieur à 10."
+  },
+  {
+    "id": "EX-D021-M-01",
+    "skill_id": "D021",
+    "level": "maitrise",
+    "type": "numerique",
+    "statement": "Pour un bouquet, un fleuriste utilise 0,65 m de ruban. Il fait 5 bouquets le matin et 3 l'après-midi.\n\nQuelle longueur de ruban utilise-t-il ?",
+    "image": null,
+    "answer": {
+      "value": 5.2,
+      "unit": "m",
+      "accepted": [
+        "5,2 m",
+        "5,20 m"
+      ]
+    },
+    "solution_steps": [
+      "Nombre de bouquets : $5 + 3 = 8$.",
+      "Ruban : $0{,}65 \\times 8$, posé comme $65 \\times 8$ : $8 \\times 5 = 40$, on écrit 0 et on retient 4 ; $8 \\times 6 = 48$, plus 4 de retenue, cela fait 52. On obtient 520.",
+      "0,65 a deux chiffres après la virgule : 520 centièmes, c'est 5,20. Une fois la virgule placée, le 0 final peut s'effacer : 5,2.",
+      "Le fleuriste utilise **5,2 m** de ruban. Contrôle : chaque bouquet prend moins d'un mètre, donc 8 bouquets moins de 8 m ; mais plus d'un demi-mètre (65 centièmes, c'est plus que 50 centièmes), donc 2 bouquets plus de 1 m et 8 bouquets plus de 4 m. 5,2 m convient, pas 0,52 m."
+    ],
+    "hint": "Cherche d'abord combien de bouquets il fait en tout.",
+    "estimated_duration_s": 120,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 3, CM1 : poser et effectuer des multiplications d'un nombre décimal par un nombre entier inférieur à 10."
+  },
+  {
+    "id": "EX-D021-M-02",
+    "skill_id": "D021",
+    "level": "maitrise",
+    "type": "vrai_faux",
+    "statement": "Une gourde contient 1,25 L.\n\nVrai ou faux : 4 gourdes contiennent un nombre entier de litres.",
+    "image": null,
+    "answer": {
+      "value": true
+    },
+    "solution_steps": [
+      "On calcule $1{,}25 \\times 4$, posé comme $125 \\times 4$ : $4 \\times 5 = 20$, on écrit 0 et on retient 2 ; $4 \\times 2 = 8$, plus 2, cela fait 10, on écrit 0 et on retient 1 ; $4 \\times 1 = 4$, plus 1, cela fait 5. On obtient 500.",
+      "1,25 a deux chiffres après la virgule : 500 centièmes, c'est 5,00.",
+      "5,00, c'est 5 unités, 0 dixième et 0 centième : c'est le nombre entier 5. Multiplier un nombre à virgule par un entier peut donner un entier.",
+      "C'est **vrai** : 4 gourdes contiennent 5 L."
+    ],
+    "hint": "Pose la multiplication, place la virgule, puis regarde les chiffres après la virgule.",
+    "estimated_duration_s": 90,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 3, CM1 : poser et effectuer des multiplications d'un nombre décimal par un nombre entier inférieur à 10."
+  }
+]

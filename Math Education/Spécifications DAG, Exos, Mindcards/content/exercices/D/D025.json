@@ -1,0 +1,170 @@
+[
+  {
+    "id": "EX-D025-D-01",
+    "skill_id": "D025",
+    "level": "decouverte",
+    "type": "numerique",
+    "statement": "Une feuille de papier a une épaisseur de 0,1 mm.\n\nQuelle est l'épaisseur d'une ramette de 500 feuilles ? Calcule $500 \\times 0{,}1$.",
+    "image": null,
+    "answer": {
+      "value": 50,
+      "unit": "mm",
+      "accepted": [
+        "50 mm"
+      ]
+    },
+    "solution_steps": [
+      "0,1, c'est un dixième. $500 \\times 0{,}1$, c'est 500 fois un dixième, soit 500 dixièmes.",
+      "10 dixièmes font une unité : 500 dixièmes font 50 unités. Donc $500 \\times 0{,}1 = 50$.",
+      "Multiplier par 0,1 revient à prendre le dixième, c'est-à-dire à **diviser par 10** : $500 \\div 10 = 50$. Le résultat est plus petit que 500, car on multiplie par un nombre plus petit que 1.",
+      "La ramette a une épaisseur de **50 mm**."
+    ],
+    "hint": "0,1 mm, c'est un dixième de millimètre. Combien d'unités font 500 dixièmes ?",
+    "estimated_duration_s": 60,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 3, 6e : multiplier un nombre entier ou un nombre décimal par 0,1, par 0,01, et par 0,001 ; connaître le lien avec la division par 10, 100 et par 1 000."
+  },
+  {
+    "id": "EX-D025-D-02",
+    "skill_id": "D025",
+    "level": "decouverte",
+    "type": "qcm",
+    "statement": "Jules a 735 pièces de 1 centime. Un centime, c'est 0,01 €.\n\nCombien d'euros a-t-il ? Calcule $735 \\times 0{,}01$.",
+    "image": null,
+    "choices": [
+      {
+        "key": "a",
+        "text": "73,5 €",
+        "misconception": "L'élève divise par 10 au lieu de 100 : il confond 0,01 (un centième) et 0,1 (un dixième)."
+      },
+      {
+        "key": "b",
+        "text": "7 350 €",
+        "misconception": "L'élève pense qu'une multiplication agrandit toujours le nombre : il fait comme s'il multipliait par 10."
+      },
+      {
+        "key": "c",
+        "text": "7,35 €",
+        "misconception": null
+      }
+    ],
+    "answer": {
+      "value": "c"
+    },
+    "solution_steps": [
+      "0,01, c'est un centième. $735 \\times 0{,}01$, c'est 735 centièmes.",
+      "100 centièmes font une unité : 735 centièmes, c'est 7 unités et 35 centièmes, soit 7,35.",
+      "Multiplier par 0,01 revient à **diviser par 100** : $735 \\div 100 = 7{,}35$. Chaque chiffre recule de deux rangs : le 7 des centaines devient le chiffre des unités.",
+      "Jules a **7,35 €** : la bonne réponse est c. C'est logique, car 100 centimes font 1 €."
+    ],
+    "hint": "Multiplier par 0,01, c'est prendre le centième. Par combien divise-t-on ?",
+    "estimated_duration_s": 60,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 3, 6e : multiplier un nombre entier ou un nombre décimal par 0,1, par 0,01, et par 0,001 ; connaître le lien avec la division par 10, 100 et par 1 000."
+  },
+  {
+    "id": "EX-D025-E-01",
+    "skill_id": "D025",
+    "level": "entrainement",
+    "type": "vrai_faux",
+    "statement": "Zoé affirme : « Une multiplication donne toujours un résultat plus grand que le nombre de départ. »\n\nVrai ou faux : $6{,}4 \\times 0{,}1$ est plus grand que 6,4.",
+    "image": null,
+    "answer": {
+      "value": false
+    },
+    "solution_steps": [
+      "Multiplier par 0,1, c'est prendre le dixième, donc diviser par 10 : $6{,}4 \\times 0{,}1 = 6{,}4 \\div 10$.",
+      "En divisant par 10, chaque chiffre recule d'un rang : les 6 unités deviennent 6 dixièmes, les 4 dixièmes deviennent 4 centièmes. $6{,}4 \\times 0{,}1 = 0{,}64$.",
+      "0,64 est plus petit que 6,4 : c'est **faux**. Zoé se trompe : multiplier par un nombre plus petit que 1 donne un résultat plus petit que le nombre de départ.",
+      "Sa règle ne marche que si l'on multiplie par un nombre plus grand que 1, comme dans $6{,}4 \\times 10 = 64$."
+    ],
+    "hint": "Multiplier par 0,1 revient à faire quelle division ?",
+    "estimated_duration_s": 60,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 3, 6e : multiplier un nombre entier ou un nombre décimal par 0,1, par 0,01, et par 0,001 ; connaître le lien avec la division par 10, 100 et par 1 000."
+  },
+  {
+    "id": "EX-D025-E-02",
+    "skill_id": "D025",
+    "level": "entrainement",
+    "type": "numerique",
+    "statement": "Un flacon de parfum contient 85 mL. Un millilitre, c'est 0,001 L.\n\nCombien de litres contient le flacon ?",
+    "image": null,
+    "answer": {
+      "value": 0.085,
+      "unit": "L",
+      "accepted": [
+        "0,085 L"
+      ]
+    },
+    "solution_steps": [
+      "Le flacon contient 85 fois 0,001 L : on calcule $85 \\times 0{,}001$.",
+      "Multiplier par 0,001 revient à **diviser par 1 000** : chaque chiffre recule de trois rangs. Les 8 dizaines deviennent 8 centièmes, les 5 unités deviennent 5 millièmes.",
+      "Il n'y a rien aux unités ni aux dixièmes : on écrit des 0 pour marquer ces rangs vides. $85 \\times 0{,}001 = 0{,}085$.",
+      "Le flacon contient **0,085 L**. Contrôle : 85 mL, c'est bien moins qu'un litre."
+    ],
+    "hint": "Multiplier par 0,001, c'est diviser par 1 000. N'oublie pas les 0 des rangs vides.",
+    "estimated_duration_s": 90,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 3, 6e : multiplier un nombre entier ou un nombre décimal par 0,1, par 0,01, et par 0,001 ; connaître le lien avec la division par 10, 100 et par 1 000."
+  },
+  {
+    "id": "EX-D025-M-01",
+    "skill_id": "D025",
+    "level": "maitrise",
+    "type": "numerique",
+    "statement": "Nora multiplie 72 par un nombre décimal et obtient 0,072.\n\nPar quel nombre a-t-elle multiplié 72 ?",
+    "image": null,
+    "answer": {
+      "value": 0.001
+    },
+    "solution_steps": [
+      "On passe de 72 à 0,072 : le 7 des dizaines devient le 7 des centièmes, le 2 des unités devient le 2 des millièmes. Chaque chiffre a reculé de trois rangs.",
+      "Reculer de trois rangs, c'est **diviser par 1 000** : $72 \\div 1\\,000 = 0{,}072$.",
+      "Diviser par 1 000 revient à multiplier par 0,001. Nora a multiplié par **0,001** : $72 \\times 0{,}001 = 0{,}072$.",
+      "Ce n'est ni 0,1, qui donnerait 7,2, ni 0,01, qui donnerait 0,72."
+    ],
+    "hint": "De combien de rangs chaque chiffre a-t-il reculé ? À quelle division cela correspond-il ?",
+    "estimated_duration_s": 90,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 3, 6e : multiplier un nombre entier ou un nombre décimal par 0,1, par 0,01, et par 0,001 ; connaître le lien avec la division par 10, 100 et par 1 000."
+  },
+  {
+    "id": "EX-D025-M-02",
+    "skill_id": "D025",
+    "level": "maitrise",
+    "type": "qcm",
+    "statement": "Sans poser d'opération, quel calcul donne le plus grand résultat ?",
+    "image": null,
+    "choices": [
+      {
+        "key": "a",
+        "text": "$630 \\times 0{,}01$",
+        "misconception": null
+      },
+      {
+        "key": "b",
+        "text": "$4\\,800 \\times 0{,}001$",
+        "misconception": "L'élève ne regarde que le premier nombre : 4 800 est le plus grand, il en déduit que ce produit est le plus grand, sans voir qu'on le divise par 1 000."
+      },
+      {
+        "key": "c",
+        "text": "$52 \\times 0{,}1$",
+        "misconception": "L'élève ne regarde que le nombre décimal : 0,1 est le plus grand des trois, il pense que ce produit est le plus grand, sans tenir compte de 52, bien plus petit que 630 et 4 800."
+      }
+    ],
+    "answer": {
+      "value": "a"
+    },
+    "solution_steps": [
+      "On remplace chaque multiplication par la division qui lui correspond. $630 \\times 0{,}01 = 630 \\div 100 = 6{,}3$.",
+      "$4\\,800 \\times 0{,}001 = 4\\,800 \\div 1\\,000 = 4{,}8$.",
+      "$52 \\times 0{,}1 = 52 \\div 10 = 5{,}2$.",
+      "On compare les parties entières : 6 est plus grand que 5, qui est plus grand que 4. Le plus grand résultat est 6,3 : la bonne réponse est a."
+    ],
+    "hint": "Remplace chaque multiplication par la division qui lui correspond.",
+    "estimated_duration_s": 90,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 3, 6e : multiplier un nombre entier ou un nombre décimal par 0,1, par 0,01, et par 0,001 ; connaître le lien avec la division par 10, 100 et par 1 000."
+  }
+]

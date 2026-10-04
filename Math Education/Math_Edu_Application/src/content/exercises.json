@@ -3,7 +3,7 @@
     "version": "1.0",
     "scope": "Tranche pilote CP a 4e : 69 exercices, 3 par competence (1 decouverte, 1 entrainement, 1 maitrise) sur les 23 competences des domaines A et C. La cible finale de la roadmap est de 5 exercices par niveau, soit 15 par competence.",
     "updated_at": "2026-07-28",
-    "total_exercises": 282,
+    "total_exercises": 396,
     "review_status": "relu_agent"
   },
   "exercises": [
@@ -7565,6 +7565,3344 @@
       "estimated_duration_s": 180,
       "review_status": "relu_agent",
       "programme_ref": "Cycle 3, 6e : cette définition est mobilisée dans la résolution d'égalités à trous, qui préfigurent celle de l'équation a × x = b."
+    },
+    {
+      "id": "EX-D001-D-01",
+      "skill_id": "D001",
+      "level": "decouverte",
+      "type": "numerique",
+      "statement": "L'écriture à virgule code une somme : la partie entière, puis les dixièmes juste après la virgule, puis les centièmes.\n\nÉcris avec une virgule : $3 + \\frac{5}{10} + \\frac{2}{100}$",
+      "image": null,
+      "answer": {
+        "value": 3.52
+      },
+      "solution_steps": [
+        "Partie entière : 3. On l'écrit avant la virgule.",
+        "5 dixièmes : le chiffre 5 s'écrit juste après la virgule, au rang des dixièmes.",
+        "2 centièmes : le chiffre 2 s'écrit au rang suivant, celui des centièmes.",
+        "$3 + \\frac{5}{10} + \\frac{2}{100} = 3{,}52$."
+      ],
+      "hint": "Quel chiffre vient juste après la virgule : celui des dixièmes ou celui des centièmes ?",
+      "estimated_duration_s": 45,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 3, CM1 : passer d'une écriture sous forme d'une fraction décimale ou d'une somme de fractions décimales à une écriture à virgule et réciproquement."
+    },
+    {
+      "id": "EX-D001-D-02",
+      "skill_id": "D001",
+      "level": "decouverte",
+      "type": "qcm",
+      "statement": "Comment s'écrit $5 + \\frac{7}{100}$ avec une virgule ?",
+      "image": null,
+      "choices": [
+        {
+          "key": "a",
+          "text": "5,7",
+          "misconception": "L'élève écrit le 7 juste après la virgule, au rang des dixièmes. Or il n'y a aucun dixième : 5,7, c'est 5 et 7 dixièmes, soit 70 centièmes."
+        },
+        {
+          "key": "b",
+          "text": "57",
+          "misconception": "L'élève oublie la virgule : 57 est un nombre entier, cinquante-sept unités, bien plus que 5 et quelques centièmes."
+        },
+        {
+          "key": "c",
+          "text": "5,07",
+          "misconception": null
+        }
+      ],
+      "answer": {
+        "value": "c"
+      },
+      "solution_steps": [
+        "Partie entière : 5, avant la virgule.",
+        "Il n'y a pas de dixièmes : on écrit 0 au rang des dixièmes, juste après la virgule.",
+        "7 centièmes : on écrit 7 au rang des centièmes.",
+        "$5 + \\frac{7}{100} = 5{,}07$. C'est comme 5 € et 7 centimes, qui s'écrit 5,07 €."
+      ],
+      "hint": "Combien de dixièmes y a-t-il dans ce nombre ?",
+      "estimated_duration_s": 40,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 3, CM1 : passer d'une écriture sous forme d'une fraction décimale ou d'une somme de fractions décimales à une écriture à virgule et réciproquement."
+    },
+    {
+      "id": "EX-D001-E-01",
+      "skill_id": "D001",
+      "level": "entrainement",
+      "type": "texte",
+      "statement": "Écris 13,06 comme une fraction décimale de dénominateur 100.\n\nÉcris ta réponse sous la forme numérateur/dénominateur.",
+      "image": null,
+      "answer": {
+        "value": "1306/100",
+        "accepted": [
+          "1306 / 100",
+          "1 306/100",
+          "1 306 / 100"
+        ]
+      },
+      "solution_steps": [
+        "13,06, c'est 13 unités, 0 dixième et 6 centièmes : $13 + \\frac{6}{100}$.",
+        "1 unité = 100 centièmes, donc 13 unités = 1300 centièmes.",
+        "En tout : $1300 + 6 = 1306$ centièmes.",
+        "$13{,}06 = \\frac{1306}{100}$. Piège : $\\frac{136}{100}$ oublie le 0 des dixièmes et ne vaut que 1,36."
+      ],
+      "hint": "Combien de centièmes y a-t-il dans une unité ?",
+      "estimated_duration_s": 60,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 3, CM1 : passer d'une écriture sous forme d'une fraction décimale ou d'une somme de fractions décimales à une écriture à virgule et réciproquement."
+    },
+    {
+      "id": "EX-D001-E-02",
+      "skill_id": "D001",
+      "level": "entrainement",
+      "type": "qcm",
+      "statement": "Dans 472,85, le chiffre 7 est celui des dizaines.\n\nQue vaut le chiffre 8 ?",
+      "image": null,
+      "choices": [
+        {
+          "key": "a",
+          "text": "8 dizaines",
+          "misconception": "L'élève confond dixièmes et dizaines. Les dizaines sont à gauche de la virgule (ici le 7), les dixièmes juste à droite."
+        },
+        {
+          "key": "b",
+          "text": "8 dixièmes",
+          "misconception": null
+        },
+        {
+          "key": "c",
+          "text": "8 centièmes",
+          "misconception": "L'élève lit « 85 centièmes » et attribue les centièmes au 8. Or 85 centièmes, c'est 8 dixièmes et 5 centièmes : seul le 5 compte des centièmes."
+        }
+      ],
+      "answer": {
+        "value": "b"
+      },
+      "solution_steps": [
+        "À gauche de la virgule, les rangs des entiers : 4 centaines, 7 dizaines, 2 unités.",
+        "À droite de la virgule : d'abord les dixièmes, puis les centièmes.",
+        "Le 8 est juste après la virgule : il vaut 8 dixièmes, $\\frac{8}{10}$.",
+        "Le 7 vaut 7 dizaines, soit 70 ; le 8 vaut 8 dixièmes, moins qu'une unité. Dizaine et dixième se ressemblent à l'oreille, pas en valeur."
+      ],
+      "hint": "Le 8 est-il à gauche ou à droite de la virgule ? À quel rang ?",
+      "estimated_duration_s": 45,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 3, CM1 : interpréter, représenter, écrire et lire des nombres décimaux (écriture à virgule)."
+    },
+    {
+      "id": "EX-D001-M-01",
+      "skill_id": "D001",
+      "level": "maitrise",
+      "type": "numerique",
+      "statement": "Écris avec une virgule le nombre formé de 4 dizaines, 9 dixièmes et 3 centièmes.",
+      "image": null,
+      "answer": {
+        "value": 40.93
+      },
+      "solution_steps": [
+        "On place chaque chiffre à son rang. Dizaines : 4. Unités : aucune, on écrit 0 pour garder la place.",
+        "Juste après la virgule, les dixièmes : 9. Puis les centièmes : 3.",
+        "Le nombre s'écrit **40,93**.",
+        "Pièges : 4,93 met le 4 aux unités au lieu des dizaines ; 49,3 met le 9 aux unités au lieu des dixièmes. 4 dizaines (40) et 9 dixièmes (moins d'une unité) n'ont pas du tout la même valeur."
+      ],
+      "hint": "Commence par la partie entière : combien vaut-elle ? Y a-t-il des unités ?",
+      "estimated_duration_s": 60,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 3, CM1 : interpréter, représenter, écrire et lire des nombres décimaux (écriture à virgule)."
+    },
+    {
+      "id": "EX-D001-M-02",
+      "skill_id": "D001",
+      "level": "maitrise",
+      "type": "vrai_faux",
+      "statement": "Lou affirme : « Dans 60,04 et dans 6,40, le chiffre 4 a la même valeur. »\n\nA-t-elle raison ?",
+      "image": null,
+      "answer": {
+        "value": false
+      },
+      "solution_steps": [
+        "Dans 60,04, le 4 est au deuxième rang après la virgule : il vaut 4 centièmes, $\\frac{4}{100}$.",
+        "Dans 6,40, le 4 est juste après la virgule : il vaut 4 dixièmes, $\\frac{4}{10}$, soit 40 centièmes.",
+        "40 centièmes, ce n'est pas 4 centièmes : Lou a **tort**.",
+        "C'est la place d'un chiffre qui donne sa valeur. Le 6 aussi change : 6 dizaines dans 60,04, 6 unités dans 6,40."
+      ],
+      "hint": "Dans chaque nombre, à quel rang après la virgule se trouve le 4 ?",
+      "estimated_duration_s": 60,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 3, CM1 : interpréter, représenter, écrire et lire des nombres décimaux (écriture à virgule)."
+    },
+    {
+      "id": "EX-D003-D-01",
+      "skill_id": "D003",
+      "level": "decouverte",
+      "type": "vrai_faux",
+      "statement": "Deux escargots font la course. Le premier avance de 2,6 m, le second de 2,45 m.\n\nLéo dit : « Le second a gagné, car 45 est plus grand que 6. » Léo a-t-il raison ?",
+      "image": null,
+      "answer": {
+        "value": false
+      },
+      "solution_steps": [
+        "On compare d'abord les parties entières : 2 dans les deux nombres. Elles sont égales, on regarde donc les chiffres après la virgule, rang par rang.",
+        "Chiffre des dixièmes : 6 dans 2,6 et 4 dans 2,45. 6 dixièmes, c'est plus que 4 dixièmes : $2{,}6 > 2{,}45$.",
+        "On peut le vérifier en écrivant 2,6 avec deux chiffres après la virgule : 2,6 = 2,60. 60 centièmes, c'est plus que 45 centièmes.",
+        "L'erreur de Léo : il compare 45 et 6 comme des nombres entiers. Mais dans 2,45, le 4 compte des dixièmes et le 5 des centièmes ; dans 2,6, le 6 compte des dixièmes. Le premier escargot a gagné : Léo a **tort**."
+      ],
+      "hint": "Compare d'abord les chiffres des dixièmes. Que vaut le 6 de 2,6 ?",
+      "estimated_duration_s": 60,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 3, CM1 : comparer, encadrer, intercaler, ordonner, par ordre croissant ou décroissant, des nombres décimaux donnés par leur écriture à virgule en utilisant les symboles =, < et >."
+    },
+    {
+      "id": "EX-D003-D-02",
+      "skill_id": "D003",
+      "level": "decouverte",
+      "type": "qcm",
+      "statement": "Une bouteille contient 1,35 L de jus, une autre 1,3 L.\n\nQuel signe faut-il placer entre les deux nombres : 1,35 … 1,3 ?",
+      "image": null,
+      "choices": [
+        {
+          "key": "a",
+          "text": ">",
+          "misconception": null
+        },
+        {
+          "key": "b",
+          "text": "<",
+          "misconception": "L'élève pense que plus il y a de chiffres après la virgule, plus le nombre est petit : 1,35 a des centièmes, les centièmes sont plus petits que les dixièmes, donc il croit 1,35 plus petit que 1,3."
+        },
+        {
+          "key": "c",
+          "text": "=",
+          "misconception": "L'élève compare la partie entière et le chiffre des dixièmes, 1 et 3 dans les deux nombres, puis s'arrête : il oublie les 5 centièmes de 1,35."
+        }
+      ],
+      "answer": {
+        "value": "a"
+      },
+      "solution_steps": [
+        "Parties entières : 1 et 1, égales. Chiffres des dixièmes : 3 et 3, égaux eux aussi.",
+        "Chiffres des centièmes : 1,35 en a 5 ; 1,3 n'en a aucun, car 1,3 = 1,30.",
+        "1,35 a 5 centièmes de plus : il est plus grand. $1{,}35 > 1{,}3$, la bonne réponse est a.",
+        "Les centièmes sont plus petits que les dixièmes, mais ici les dixièmes sont égaux : les 5 centièmes s'ajoutent, ils ne retirent rien."
+      ],
+      "hint": "Écris 1,3 avec deux chiffres après la virgule, puis compare chiffre par chiffre.",
+      "estimated_duration_s": 45,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 3, CM1 : comparer, encadrer, intercaler, ordonner, par ordre croissant ou décroissant, des nombres décimaux donnés par leur écriture à virgule en utilisant les symboles =, < et >."
+    },
+    {
+      "id": "EX-D003-E-01",
+      "skill_id": "D003",
+      "level": "entrainement",
+      "type": "numerique",
+      "statement": "Pour aller en finale du lancer de balle, il faut dépasser 6,5 m. Résultats : 6,7 m ; 6,17 m ; 6,49 m ; 6,8 m ; 6,52 m.\n\nCombien d'élèves vont en finale ?",
+      "image": null,
+      "answer": {
+        "value": 3
+      },
+      "solution_steps": [
+        "On compare chaque résultat à 6,5. La partie entière vaut 6 partout : tout se joue après la virgule.",
+        "On écrit 6,5 = 6,50, et chaque résultat avec deux chiffres après la virgule : 6,70 ; 6,17 ; 6,49 ; 6,80 ; 6,52.",
+        "Plus de 50 centièmes : 6,70, 6,80 et 6,52. Moins de 50 centièmes : 6,17 et 6,49.",
+        "Attention : 6,17 et 6,49 ne dépassent pas 6,5, même si 17 et 49 sont plus grands que 5. Leur chiffre des dixièmes est 1 et 4 : moins que 5 dixièmes.",
+        "**3** élèves vont en finale."
+      ],
+      "hint": "Écris tous les nombres avec deux chiffres après la virgule, 6,5 compris.",
+      "estimated_duration_s": 90,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 3, CM1 : comparer, encadrer, intercaler, ordonner, par ordre croissant ou décroissant, des nombres décimaux donnés par leur écriture à virgule en utilisant les symboles =, < et >."
+    },
+    {
+      "id": "EX-D003-E-02",
+      "skill_id": "D003",
+      "level": "entrainement",
+      "type": "qcm",
+      "statement": "Range ces nombres dans l'ordre croissant : 4,5 ; 4,38 ; 4,52 ; 4,1.\n\nQuel est le bon rangement ?",
+      "image": null,
+      "choices": [
+        {
+          "key": "a",
+          "text": "4,1 ; 4,5 ; 4,38 ; 4,52",
+          "misconception": "L'élève lit les chiffres après la virgule comme des nombres entiers : 1, 5, 38, 52. Il pense que plus il y a de chiffres après la virgule, plus le nombre est grand."
+        },
+        {
+          "key": "b",
+          "text": "4,38 ; 4,52 ; 4,1 ; 4,5",
+          "misconception": "L'élève pense que plus il y a de chiffres après la virgule, plus le nombre est petit, puisque les centièmes sont plus petits que les dixièmes : il place d'abord les deux nombres à deux chiffres après la virgule."
+        },
+        {
+          "key": "c",
+          "text": "4,1 ; 4,38 ; 4,5 ; 4,52",
+          "misconception": null
+        },
+        {
+          "key": "d",
+          "text": "4,52 ; 4,5 ; 4,38 ; 4,1",
+          "misconception": "L'élève compare correctement, mais range du plus grand au plus petit : il confond croissant et décroissant."
+        }
+      ],
+      "answer": {
+        "value": "c"
+      },
+      "solution_steps": [
+        "Croissant : du plus petit au plus grand. La partie entière vaut 4 partout.",
+        "On écrit tous les nombres avec deux chiffres après la virgule : 4,50 ; 4,38 ; 4,52 ; 4,10.",
+        "On compare les centièmes : $10 < 38 < 50 < 52$.",
+        "L'ordre croissant est donc 4,1 ; 4,38 ; 4,5 ; 4,52 : la bonne réponse est c."
+      ],
+      "hint": "Écris chaque nombre avec deux chiffres après la virgule avant de comparer.",
+      "estimated_duration_s": 90,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 3, CM1 : comparer, encadrer, intercaler, ordonner, par ordre croissant ou décroissant, des nombres décimaux donnés par leur écriture à virgule en utilisant les symboles =, < et >."
+    },
+    {
+      "id": "EX-D003-M-01",
+      "skill_id": "D003",
+      "level": "maitrise",
+      "type": "vrai_faux",
+      "statement": "Dans le nombre 5,□4, le chiffre des dixièmes est caché.\n\nVrai ou faux : quel que soit le chiffre caché, 5,□4 est plus grand que 5,3.",
+      "image": null,
+      "answer": {
+        "value": false
+      },
+      "solution_steps": [
+        "Partie entière : 5 dans les deux nombres. Tout dépend du chiffre des dixièmes caché, comparé au 3 de 5,3.",
+        "Si le chiffre caché vaut 4 ou plus, par exemple 5,44, le nombre dépasse 5,3.",
+        "S'il vaut 3, on obtient 5,34 : 34 centièmes, c'est plus que 30 centièmes, donc $5{,}34 > 5{,}3$.",
+        "S'il vaut 0, 1 ou 2, par exemple 5,24 : 2 dixièmes, c'est moins que 3 dixièmes, donc $5{,}24 < 5{,}3$, même si 5,24 a plus de chiffres après la virgule.",
+        "Il existe des chiffres pour lesquels 5,□4 est plus petit que 5,3 : l'affirmation est **fausse**."
+      ],
+      "hint": "Essaie plusieurs chiffres à la place du carré, des petits et des grands.",
+      "estimated_duration_s": 120,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 3, CM1 : comparer, encadrer, intercaler, ordonner, par ordre croissant ou décroissant, des nombres décimaux donnés par leur écriture à virgule en utilisant les symboles =, < et >."
+    },
+    {
+      "id": "EX-D003-M-02",
+      "skill_id": "D003",
+      "level": "maitrise",
+      "type": "qcm",
+      "statement": "Quatre enfants se mesurent : Malo 1,4 m ; Sacha 1,35 m ; Yanis 1,5 m ; Nora 1,45 m.\n\nQui est le deuxième plus grand ?",
+      "image": null,
+      "choices": [
+        {
+          "key": "a",
+          "text": "Nora",
+          "misconception": null
+        },
+        {
+          "key": "b",
+          "text": "Sacha",
+          "misconception": "L'élève compare les chiffres après la virgule comme des nombres entiers : 45, 35, 5 et 4. Il croit Nora la plus grande, puis Sacha, car 35 est plus grand que 5."
+        },
+        {
+          "key": "c",
+          "text": "Malo",
+          "misconception": "L'élève pense que plus il y a de chiffres après la virgule, plus le nombre est petit : il place d'abord Yanis (1,5) et Malo (1,4), puis Nora et Sacha."
+        }
+      ],
+      "answer": {
+        "value": "a"
+      },
+      "solution_steps": [
+        "La partie entière vaut 1 pour tous. On écrit les tailles avec deux chiffres après la virgule : 1,40 ; 1,35 ; 1,50 ; 1,45.",
+        "Du plus grand au plus petit : 1,50 (Yanis), 1,45 (Nora), 1,40 (Malo), 1,35 (Sacha).",
+        "Le plus grand est Yanis ; la deuxième est **Nora**, avec 1,45 m. La bonne réponse est a.",
+        "Rappel : dans 1,45, le 4 compte des dixièmes et le 5 des centièmes. Nora a autant de dixièmes que Malo, et 5 centièmes de plus."
+      ],
+      "hint": "Écris toutes les tailles avec deux chiffres après la virgule, puis range-les de la plus grande à la plus petite.",
+      "estimated_duration_s": 120,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 3, CM1 : comparer, encadrer, intercaler, ordonner, par ordre croissant ou décroissant, des nombres décimaux donnés par leur écriture à virgule en utilisant les symboles =, < et >."
+    },
+    {
+      "id": "EX-D004-D-01",
+      "skill_id": "D004",
+      "level": "decouverte",
+      "type": "numerique",
+      "statement": "Un cycliste parcourt 23,4 km le matin et 12,35 km l'après-midi.\n\nPose l'addition en alignant les virgules. Quelle distance a-t-il parcourue en tout ?",
+      "image": null,
+      "answer": {
+        "value": 35.75,
+        "unit": "km",
+        "accepted": [
+          "35,75 km"
+        ]
+      },
+      "solution_steps": [
+        "On cherche la distance totale : on additionne $23{,}4 + 12{,}35$.",
+        "On pose l'addition en **alignant les virgules** : unités sous les unités, dixièmes sous les dixièmes. Le 4 de 23,4 est un chiffre des dixièmes : il se place sous le 3 de 12,35, pas sous le 5.",
+        "23,4 n'a pas de chiffre des centièmes : on écrit un 0 à droite, $23{,}4 = 23{,}40$. Cela ne change pas le nombre, car 4 dixièmes font 40 centièmes.",
+        "On calcule de droite à gauche. Centièmes : $0 + 5 = 5$. Dixièmes : $4 + 3 = 7$. On écrit la virgule du résultat sous les autres virgules. Unités : $3 + 2 = 5$. Dizaines : $2 + 1 = 3$.",
+        "$23{,}4 + 12{,}35 = 35{,}75$. Le cycliste a parcouru **35,75 km** en tout."
+      ],
+      "hint": "Le 4 de 23,4 est un chiffre des dixièmes : sous quel chiffre de 12,35 doit-il se placer ?",
+      "estimated_duration_s": 75,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 3, CM1, les quatre opérations : poser en colonnes et effectuer des additions et des soustractions de nombres décimaux."
+    },
+    {
+      "id": "EX-D004-D-02",
+      "skill_id": "D004",
+      "level": "decouverte",
+      "type": "qcm",
+      "statement": "Pose et calcule $6{,}8 + 2{,}35$, en alignant les virgules.",
+      "image": null,
+      "choices": [
+        {
+          "key": "a",
+          "text": "8,43",
+          "misconception": "L'élève additionne séparément les parties entières ($6 + 2 = 8$) et les parties décimales comme des entiers ($8 + 35 = 43$). Il aligne les chiffres après la virgule à droite : il ajoute 8 dixièmes à 35 centièmes comme s'ils avaient le même rang."
+        },
+        {
+          "key": "b",
+          "text": "9,15",
+          "misconception": null
+        },
+        {
+          "key": "c",
+          "text": "8,15",
+          "misconception": "L'élève aligne bien les virgules mais oublie la retenue : 8 dixièmes et 3 dixièmes font 11 dixièmes, soit 1 unité et 1 dixième. L'unité retenue n'est pas ajoutée aux unités."
+        },
+        {
+          "key": "d",
+          "text": "3,03",
+          "misconception": "L'élève aligne les derniers chiffres à droite au lieu d'aligner les virgules : il calcule $68 + 235 = 303$, puis place la virgule comme dans 2,35. Le résultat est même plus petit que 6,8, ce qui est impossible pour une addition."
+        }
+      ],
+      "answer": {
+        "value": "b"
+      },
+      "solution_steps": [
+        "On aligne les virgules : le 8 de 6,8 (dixièmes) se place sous le 3 de 2,35 (dixièmes). On complète 6,8 par un 0 : $6{,}8 = 6{,}80$.",
+        "Centièmes : $0 + 5 = 5$. Dixièmes : $8 + 3 = 11$ dixièmes, c'est 1 unité et 1 dixième. On écrit 1 aux dixièmes et on retient 1 unité, notée en petit au-dessus de la colonne des unités.",
+        "On écrit la virgule du résultat sous les autres virgules. Unités : $6 + 2 + 1 = 9$, sans oublier la retenue.",
+        "$6{,}8 + 2{,}35 = 9{,}15$. Vérification : le résultat est proche de $7 + 2 = 9$. La bonne réponse est **9,15**."
+      ],
+      "hint": "Écris 6,8 avec deux chiffres après la virgule, puis additionne les centièmes, les dixièmes et les unités.",
+      "estimated_duration_s": 70,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 3, CM1, les quatre opérations : poser en colonnes et effectuer des additions et des soustractions de nombres décimaux."
+    },
+    {
+      "id": "EX-D004-E-01",
+      "skill_id": "D004",
+      "level": "entrainement",
+      "type": "numerique",
+      "statement": "Un jardinier a un sac de 15 kg de terreau. Il en utilise 6,74 kg.\n\nQuelle masse de terreau reste-t-il dans le sac ? Pose la soustraction.",
+      "image": null,
+      "answer": {
+        "value": 8.26,
+        "unit": "kg",
+        "accepted": [
+          "8,26 kg"
+        ]
+      },
+      "solution_steps": [
+        "On cherche ce qui reste : on calcule $15 - 6{,}74$.",
+        "15 est un entier : sa virgule est cachée après le 5. On écrit $15 = 15{,}00$ pour avoir deux chiffres après la virgule, comme 6,74, puis on aligne les virgules.",
+        "Centièmes : on ne peut pas enlever 4 à 0, et il n'y a aucun dixième à casser. On casse une des 5 unités : il reste 4 unités, et on a 10 dixièmes. On casse un de ces dixièmes : il reste 9 dixièmes, et on a 10 centièmes. Sur ta feuille, barre les chiffres cassés et écris au-dessus ce qu'il reste.",
+        "Centièmes : $10 - 4 = 6$. Dixièmes : $9 - 7 = 2$. On écrit la virgule du résultat sous les autres virgules.",
+        "Unités : on ne peut pas enlever 6 à 4. On casse la dizaine : on a $10 + 4 = 14$ unités, et $14 - 6 = 8$. Il ne reste plus de dizaine.",
+        "$15 - 6{,}74 = 8{,}26$. On vérifie avec l'addition : $8{,}26 + 6{,}74 = 15$. Il reste **8,26 kg** de terreau. Si ta classe utilise une autre méthode de soustraction, tu dois trouver le même résultat."
+      ],
+      "hint": "Écris 15 avec une virgule et deux zéros, pour avoir autant de chiffres après la virgule que 6,74.",
+      "estimated_duration_s": 110,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 3, CM1, les quatre opérations : poser en colonnes et effectuer des additions et des soustractions de nombres décimaux."
+    },
+    {
+      "id": "EX-D004-E-02",
+      "skill_id": "D004",
+      "level": "entrainement",
+      "type": "vrai_faux",
+      "statement": "Mila pose la soustraction $7{,}3 - 2{,}58$. Elle écrit un 0 après le 3, calcule $7{,}30 - 2{,}58$ et trouve 4,72.\n\nA-t-elle raison ?",
+      "image": null,
+      "answer": {
+        "value": true
+      },
+      "solution_steps": [
+        "Écrire un 0 à droite de 7,3 est permis : 3 dixièmes font 30 centièmes, donc $7{,}3 = 7{,}30$. Mila obtient ainsi autant de chiffres après la virgule que dans 2,58, et chaque chiffre de 2,58 a un chiffre en face.",
+        "Centièmes : on ne peut pas enlever 8 à 0. On casse un des 3 dixièmes : il reste 2 dixièmes, et on a 10 centièmes. $10 - 8 = 2$.",
+        "Dixièmes : on ne peut pas enlever 5 à 2. On casse une des 7 unités : il reste 6 unités, et on a $10 + 2 = 12$ dixièmes. $12 - 5 = 7$. On écrit la virgule.",
+        "Unités : $6 - 2 = 4$. Donc $7{,}30 - 2{,}58 = 4{,}72$. Vérification : $4{,}72 + 2{,}58 = 7{,}30$.",
+        "C'est **vrai** : Mila a raison. Sans ce 0, on risque de recopier le 8 en bas au lieu de le soustraire, et de trouver 4,88."
+      ],
+      "hint": "Est-ce que 7,3 et 7,30 sont le même nombre ? Puis refais le calcul.",
+      "estimated_duration_s": 90,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 3, CM1, les quatre opérations : poser en colonnes et effectuer des additions et des soustractions de nombres décimaux."
+    },
+    {
+      "id": "EX-D004-M-01",
+      "skill_id": "D004",
+      "level": "maitrise",
+      "type": "numerique",
+      "statement": "Une planche mesure 2,5 m. Lucas en coupe un morceau de 0,75 m, puis un morceau de 1,2 m.\n\nQuelle longueur de planche reste-t-il, en mètres ?",
+      "image": null,
+      "answer": {
+        "value": 0.55,
+        "unit": "m",
+        "accepted": [
+          "0,55 m"
+        ]
+      },
+      "solution_steps": [
+        "On enlève les deux morceaux à la planche : on calcule d'abord $2{,}5 - 0{,}75$, puis on enlève 1,2 au résultat.",
+        "$2{,}5 - 0{,}75$ : on écrit $2{,}50$ et on aligne les virgules. Centièmes : on casse un des 5 dixièmes, il en reste 4 et on a 10 centièmes ; $10 - 5 = 5$. Dixièmes : on casse une des 2 unités, il en reste 1 et on a $10 + 4 = 14$ dixièmes ; $14 - 7 = 7$. Unités : $1 - 0 = 1$. On trouve 1,75.",
+        "$1{,}75 - 1{,}2$ : on écrit $1{,}20$ et on aligne les virgules. Centièmes : $5 - 0 = 5$. Dixièmes : $7 - 2 = 5$. Unités : $1 - 1 = 0$. On trouve 0,55.",
+        "Autre chemin : les deux morceaux mesurent $0{,}75 + 1{,}20 = 1{,}95$ m, et $2{,}50 - 1{,}95 = 0{,}55$. On trouve le même résultat.",
+        "Il reste **0,55 m** de planche. C'est moins de 1 m : c'est cohérent, car on a coupé presque 2 m sur 2,5 m."
+      ],
+      "hint": "Aligne les virgules à chaque calcul, et complète par des zéros pour avoir le même nombre de chiffres après la virgule.",
+      "estimated_duration_s": 140,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 3, CM1, les quatre opérations : poser en colonnes et effectuer des additions et des soustractions de nombres décimaux."
+    },
+    {
+      "id": "EX-D004-M-02",
+      "skill_id": "D004",
+      "level": "maitrise",
+      "type": "qcm",
+      "statement": "Noé pose l'addition $5{,}4 + 3{,}27$ et trouve 3,81.\n\nQuelle est son erreur ?",
+      "image": null,
+      "choices": [
+        {
+          "key": "a",
+          "text": "Il n'a pas fait d'erreur : 3,81 est juste.",
+          "misconception": "L'élève ne contrôle pas l'ordre de grandeur : en ajoutant 3,27 à 5,4, on ne peut pas obtenir un nombre plus petit que 5,4."
+        },
+        {
+          "key": "b",
+          "text": "Il a oublié une retenue.",
+          "misconception": "L'élève attribue l'erreur à une retenue oubliée sans refaire le calcul : dans $5{,}40 + 3{,}27$, aucune colonne ne dépasse 9, il n'y a donc aucune retenue à faire."
+        },
+        {
+          "key": "c",
+          "text": "Il a aligné les derniers chiffres à droite au lieu d'aligner les virgules.",
+          "misconception": null
+        }
+      ],
+      "answer": {
+        "value": "c"
+      },
+      "solution_steps": [
+        "Ordre de grandeur : $5{,}4 + 3{,}27$, c'est plus que $5 + 3 = 8$. Le résultat 3,81 est même plus petit que 5,4 : il est forcément faux.",
+        "Noé a placé le 4 de 5,4 sous le 7 de 3,27, comme pour additionner des entiers. Il a en fait calculé $54 + 327 = 381$, puis placé la virgule comme dans 3,27.",
+        "Or le 4 est un chiffre des dixièmes et le 7 un chiffre des centièmes : on ne peut pas les additionner. Il faut **aligner les virgules** et compléter : $5{,}4 = 5{,}40$.",
+        "Centièmes : $0 + 7 = 7$. Dixièmes : $4 + 2 = 6$. Unités : $5 + 3 = 8$. Donc $5{,}4 + 3{,}27 = 8{,}67$.",
+        "La bonne réponse est **c** : Noé a aligné les derniers chiffres au lieu des virgules."
+      ],
+      "hint": "Sans calculer, le résultat de Noé est-il possible ? Compare-le à 5,4.",
+      "estimated_duration_s": 90,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 3, CM1, les quatre opérations : poser en colonnes et effectuer des additions et des soustractions de nombres décimaux."
+    },
+    {
+      "id": "EX-D006-D-01",
+      "skill_id": "D006",
+      "level": "decouverte",
+      "type": "numerique",
+      "statement": "Le raisin coûte 3,8 € le kilo. Emma en achète 2,1 kg.\n\nDonne d'abord un ordre de grandeur du prix, puis calcule le prix exact.",
+      "image": null,
+      "answer": {
+        "value": 7.98,
+        "unit": "€",
+        "accepted": [
+          "7,98 €"
+        ]
+      },
+      "solution_steps": [
+        "Ordre de grandeur : on arrondit chaque nombre à l'unité. 3,8 est entre 3 et 4, plus proche de 4 ; 2,1 est entre 2 et 3, plus proche de 2. $4 \\times 2 = 8$ : Emma paiera environ 8 €.",
+        "Calcul : on pose $38 \\times 21$ sans les virgules. Première ligne, $38 \\times 1 = 38$. Deuxième ligne, $38 \\times 20$ : un 0 à droite, puis $38 \\times 2 = 76$, soit 760. On additionne : $38 + 760 = 798$.",
+        "Où placer la virgule : $3{,}8 = 38 \\times 0{,}1$ et $2{,}1 = 21 \\times 0{,}1$. Donc $3{,}8 \\times 2{,}1 = 38 \\times 21 \\times 0{,}1 \\times 0{,}1 = 798 \\times 0{,}1 \\times 0{,}1$. Multiplier par 0,1, c'est diviser par 10 : $798 \\times 0{,}1 = 79{,}8$, puis $79{,}8 \\times 0{,}1 = 7{,}98$. Un chiffre après la virgule dans 3,8, un dans 2,1 : deux dans le produit.",
+        "Contrôle : 7,98 est très proche de l'ordre de grandeur, 8. Emma paie **7,98 €**."
+      ],
+      "hint": "Calcule 38 × 21, puis compte les chiffres après la virgule dans les deux nombres.",
+      "estimated_duration_s": 120,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 3, 6e : calculer le produit de deux nombres décimaux ; contrôler les résultats à l'aide d'ordres de grandeur."
+    },
+    {
+      "id": "EX-D006-D-02",
+      "skill_id": "D006",
+      "level": "decouverte",
+      "type": "qcm",
+      "statement": "Un tuyau d'arrosage est vendu 4,5 € le mètre. Lou en achète 0,6 m.\n\nCombien paie-t-elle ?",
+      "image": null,
+      "choices": [
+        {
+          "key": "a",
+          "text": "27 €",
+          "misconception": "L'élève calcule 45 × 6 = 270 et ne compte que le chiffre après la virgule de 4,5, comme pour un décimal multiplié par un entier : il oublie celui de 0,6."
+        },
+        {
+          "key": "b",
+          "text": "2,7 €",
+          "misconception": null
+        },
+        {
+          "key": "c",
+          "text": "270 €",
+          "misconception": "L'élève calcule 45 × 6 = 270 et oublie les deux virgules."
+        }
+      ],
+      "answer": {
+        "value": "b"
+      },
+      "solution_steps": [
+        "Ordre de grandeur : Lou achète moins d'un mètre, elle paie donc moins que le prix d'un mètre, 4,5 €. Multiplier par 0,6, nombre plus petit que 1, donne un résultat plus petit.",
+        "On calcule sans les virgules : $45 \\times 6 = 270$.",
+        "4,5 a un chiffre après la virgule, 0,6 en a un : le produit en a deux. En effet, $4{,}5 = 45 \\times 0{,}1$ et $0{,}6 = 6 \\times 0{,}1$, donc $4{,}5 \\times 0{,}6 = 270 \\times 0{,}1 \\times 0{,}1$ : on divise 270 par 10, puis encore par 10, ce qui donne 2,70, soit 2,7.",
+        "Lou paie **2,7 €**, c'est-à-dire 2,70 € : c'est bien moins que 4,5 €. La bonne réponse est b."
+      ],
+      "hint": "Lou achète moins d'un mètre : peut-elle payer plus de 4,5 € ?",
+      "estimated_duration_s": 75,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 3, 6e : calculer le produit de deux nombres décimaux ; contrôler les résultats à l'aide d'ordres de grandeur."
+    },
+    {
+      "id": "EX-D006-E-01",
+      "skill_id": "D006",
+      "level": "entrainement",
+      "type": "vrai_faux",
+      "statement": "Nina calcule $18{,}5 \\times 0{,}42$ et trouve 77,7.\n\nVrai ou faux : grâce à un ordre de grandeur, on peut affirmer sans poser l'opération que Nina s'est trompée.",
+      "image": null,
+      "answer": {
+        "value": true
+      },
+      "solution_steps": [
+        "Ordre de grandeur : 18,5 est proche de 20. 0,42, c'est 4 dixièmes et 2 centièmes ; 2 centièmes, c'est très peu : 0,42 est proche de 0,4.",
+        "$20 \\times 0{,}4 = 20 \\times 4 \\times 0{,}1 = 80 \\times 0{,}1 = 8$. Le produit est donc proche de 8. D'ailleurs, 0,42 est plus petit que 1 : le produit est forcément plus petit que 18,5.",
+        "Nina trouve 77,7 : c'est plus grand que 18,5, et environ dix fois trop. C'est **vrai**, on peut affirmer sans calcul exact qu'elle s'est trompée.",
+        "Le calcul exact : $185 \\times 42 = 7\\,770$. Un chiffre après la virgule dans 18,5, deux dans 0,42 : trois dans le produit, donc 7,770, soit 7,77. Nina n'a placé que deux chiffres après la virgule : elle a oublié celui de 18,5."
+      ],
+      "hint": "Remplace 18,5 et 0,42 par des nombres proches et simples, puis compare avec 77,7.",
+      "estimated_duration_s": 90,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 3, 6e : calculer le produit de deux nombres décimaux ; contrôler les résultats à l'aide d'ordres de grandeur."
+    },
+    {
+      "id": "EX-D006-E-02",
+      "skill_id": "D006",
+      "level": "entrainement",
+      "type": "numerique",
+      "statement": "Un tissu coûte 7,25 € le mètre. Lina en achète 1,6 m.\n\nCombien paie-t-elle ? Contrôle ton résultat par un ordre de grandeur.",
+      "image": null,
+      "answer": {
+        "value": 11.6,
+        "unit": "€",
+        "accepted": [
+          "11,6 €",
+          "11,60 €",
+          "11,600 €"
+        ]
+      },
+      "solution_steps": [
+        "Ordre de grandeur : 7,25 est proche de 7, et 1,6 est proche de 2. $7 \\times 2 = 14$ : le prix est de l'ordre de la dizaine d'euros.",
+        "On pose $725 \\times 16$. Première ligne : $725 \\times 6 = 4\\,350$. Deuxième ligne, $725 \\times 10$ : un 0 à droite, puis 725, soit 7 250. On additionne : $4\\,350 + 7\\,250 = 11\\,600$.",
+        "Deux chiffres après la virgule dans 7,25, un dans 1,6 : trois dans le produit. On compte trois chiffres à partir de la droite de 11 600 : 11,600, soit 11,6. On place la virgule **avant** d'effacer les 0 de la fin.",
+        "Contrôle : 11,6 est bien de l'ordre de la dizaine, alors que 116 ou 1,16 ne le seraient pas. Lina paie **11,6 €**, c'est-à-dire 11,60 €."
+      ],
+      "hint": "Pose 725 × 16. Combien de chiffres après la virgule en tout dans 7,25 et 1,6 ?",
+      "estimated_duration_s": 150,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 3, 6e : calculer le produit de deux nombres décimaux ; contrôler les résultats à l'aide d'ordres de grandeur."
+    },
+    {
+      "id": "EX-D006-M-01",
+      "skill_id": "D006",
+      "level": "maitrise",
+      "type": "qcm",
+      "statement": "Léa a calculé $85 \\times 43 = 3\\,655$.\n\nQuel est le résultat de $0{,}85 \\times 4{,}3$ ? Utilise un ordre de grandeur pour choisir.",
+      "image": null,
+      "choices": [
+        {
+          "key": "a",
+          "text": "36,55",
+          "misconception": "L'élève ne compte que les deux chiffres après la virgule de 0,85 et oublie celui de 4,3. L'ordre de grandeur, environ 4, montre que 36,55 est dix fois trop grand."
+        },
+        {
+          "key": "b",
+          "text": "365,5",
+          "misconception": "L'élève ne compte que le chiffre après la virgule de 4,3, comme s'il multipliait 4,3 par le nombre entier 85."
+        },
+        {
+          "key": "c",
+          "text": "3,655",
+          "misconception": null
+        }
+      ],
+      "answer": {
+        "value": "c"
+      },
+      "solution_steps": [
+        "Ordre de grandeur : 0,85 est proche de 1, et 4,3 est proche de 4. $1 \\times 4 = 4$ : le produit est proche de 4.",
+        "Seul 3,655 est proche de 4 : 36,55 et 365,5 sont beaucoup trop grands.",
+        "On le confirme en plaçant la virgule : deux chiffres après la virgule dans 0,85, un dans 4,3, donc trois dans le produit. $0{,}85 \\times 4{,}3 = 3\\,655 \\times 0{,}001 = 3{,}655$.",
+        "Le produit est plus petit que 4,3, car on multiplie 4,3 par 0,85, nombre plus petit que 1. La bonne réponse est c."
+      ],
+      "hint": "Remplace 0,85 et 4,3 par des nombres entiers proches.",
+      "estimated_duration_s": 90,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 3, 6e : calculer le produit de deux nombres décimaux ; contrôler les résultats à l'aide d'ordres de grandeur."
+    },
+    {
+      "id": "EX-D006-M-02",
+      "skill_id": "D006",
+      "level": "maitrise",
+      "type": "numerique",
+      "statement": "Le gazole coûte 1,9 € le litre. Un automobiliste met 32,4 L dans son réservoir.\n\nCombien paie-t-il ? Contrôle avec un ordre de grandeur.",
+      "image": null,
+      "answer": {
+        "value": 61.56,
+        "unit": "€",
+        "accepted": [
+          "61,56 €",
+          "61,560 €"
+        ]
+      },
+      "solution_steps": [
+        "Ordre de grandeur : on arrondit d'abord à l'unité. 1,9 est entre 1 et 2, plus proche de 2 ; 32,4 est entre 32 et 33, plus proche de 32, lui-même proche de 30. $2 \\times 30 = 60$ : il paiera environ 60 €.",
+        "Sans les virgules, on calcule $19 \\times 324$. On peut échanger l'ordre des facteurs sans changer le produit : on pose $324 \\times 19$, en deux lignes car $19 = 9 + 10$. Première ligne, $324 \\times 9$ : $9 \\times 4 = 36$, on écrit 6 et on retient 3 ; $9 \\times 2 = 18$, plus 3, cela fait 21, on écrit 1 et on retient 2 ; $9 \\times 3 = 27$, plus 2, cela fait 29. La ligne est 2 916.",
+        "Deuxième ligne, $324 \\times 10$ : un 0 à droite, puis 324, soit 3 240. On additionne : $2\\,916 + 3\\,240 = 6\\,156$.",
+        "Un chiffre après la virgule dans 1,9, un dans 32,4 : deux dans le produit. $1{,}9 \\times 32{,}4 = 61{,}56$. Contrôle : 61,56 est très proche de 60, alors que 615,6 ou 6,156 ne le seraient pas. L'automobiliste paie **61,56 €**."
+      ],
+      "hint": "Pose 324 × 19, puis compte les chiffres après la virgule dans 1,9 et 32,4.",
+      "estimated_duration_s": 180,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 3, 6e : calculer le produit de deux nombres décimaux ; contrôler les résultats à l'aide d'ordres de grandeur."
+    },
+    {
+      "id": "EX-D007-D-01",
+      "skill_id": "D007",
+      "level": "decouverte",
+      "type": "numerique",
+      "statement": "Un ruban de 8,4 m est coupé en 3 morceaux de même longueur.\n\nPose la division $8{,}4 \\div 3$. Combien mesure chaque morceau, en mètres ?",
+      "image": null,
+      "answer": {
+        "value": 2.8,
+        "unit": "m",
+        "accepted": [
+          "2,8 m"
+        ]
+      },
+      "solution_steps": [
+        "On commence par les unités : 8 unités divisées par 3. $3 \\times 2 = 6$ : on écrit 2 au quotient. Il reste $8 - 6 = 2$ unités.",
+        "On abaisse le 4, qui est le chiffre des dixièmes. **À ce moment, on écrit la virgule au quotient**, juste après le 2 : tout ce qu'on écrira ensuite au quotient sera des dixièmes.",
+        "2 unités et 4 dixièmes font 24 dixièmes. $3 \\times 8 = 24$ : on écrit 8 au quotient, après la virgule. Il reste 0 : la division est terminée.",
+        "$8{,}4 \\div 3 = 2{,}8$. Vérification par la multiplication : $2{,}8 \\times 3 = 8{,}4$.",
+        "Chaque morceau mesure **2,8 m**."
+      ],
+      "hint": "Écris la virgule au quotient au moment où tu abaisses le chiffre des dixièmes.",
+      "estimated_duration_s": 80,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 3, CM2, les quatre opérations : poser et effectuer des divisions décimales avec un dividende décimal et un diviseur à un chiffre."
+    },
+    {
+      "id": "EX-D007-D-02",
+      "skill_id": "D007",
+      "level": "decouverte",
+      "type": "qcm",
+      "statement": "Un pâtissier répartit 15 kg de farine dans 4 sacs, la même masse dans chaque sac.\n\nCombien de kilogrammes y a-t-il dans chaque sac ?",
+      "image": null,
+      "choices": [
+        {
+          "key": "a",
+          "text": "3,3 kg",
+          "misconception": "L'élève fait la division euclidienne (quotient 3, reste 3) et écrit le reste après la virgule. Mais le reste 3, ce sont 3 kg encore à partager, pas 3 dixièmes."
+        },
+        {
+          "key": "b",
+          "text": "37,5 kg",
+          "misconception": "L'élève trouve les bons chiffres 3, 7 et 5 mais place mal la virgule : il l'écrit après le 7 au lieu de l'écrire juste après le 3, au moment d'abaisser le premier zéro. Un sac contiendrait plus que les 15 kg de départ."
+        },
+        {
+          "key": "c",
+          "text": "3,75 kg",
+          "misconception": null
+        },
+        {
+          "key": "d",
+          "text": "3,7 kg",
+          "misconception": "L'élève s'arrête après le premier zéro abaissé alors qu'il reste 2 dixièmes à partager : il faut abaisser un autre zéro jusqu'à obtenir un reste nul."
+        }
+      ],
+      "answer": {
+        "value": "c"
+      },
+      "solution_steps": [
+        "On partage 15 kg en 4 : on pose $15 \\div 4$. $4 \\times 3 = 12$ : on écrit 3 au quotient. Il reste $15 - 12 = 3$ kg à partager.",
+        "Le reste n'est pas nul : on continue après la virgule. Dans le dividende, on écrit une virgule et un 0 à droite de 15 : $15 = 15{,}0$, cela ne change pas le nombre. On écrit la virgule au quotient, après le 3, puis on **abaisse ce zéro** : 3 unités, c'est 30 dixièmes.",
+        "$4 \\times 7 = 28$ : on écrit 7 au quotient. Il reste $30 - 28 = 2$ dixièmes.",
+        "On écrit un autre 0 au dividende ($15{,}00$) et on l'abaisse : 2 dixièmes, c'est 20 centièmes. $4 \\times 5 = 20$ : on écrit 5 au quotient. Il reste 0 : la division est terminée.",
+        "$15 \\div 4 = 3{,}75$. Vérification par la multiplication : $3{,}75 \\times 4 = 15$. Chaque sac contient **3,75 kg**."
+      ],
+      "hint": "Après le quotient 3, il reste 3 kg. Transforme ces 3 unités en dixièmes pour continuer le partage.",
+      "estimated_duration_s": 90,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 3, CM2, les quatre opérations : poser et effectuer des divisions décimales avec un dividende entier et un diviseur à un chiffre."
+    },
+    {
+      "id": "EX-D007-E-01",
+      "skill_id": "D007",
+      "level": "entrainement",
+      "type": "numerique",
+      "statement": "Pose et calcule $9{,}45 \\div 5$.",
+      "image": null,
+      "answer": {
+        "value": 1.89
+      },
+      "solution_steps": [
+        "Unités : 9 divisé par 5. $5 \\times 1 = 5$ : on écrit 1 au quotient. Il reste $9 - 5 = 4$ unités.",
+        "On abaisse le 4 des dixièmes et on écrit la virgule au quotient. 4 unités et 4 dixièmes font 44 dixièmes. $5 \\times 8 = 40$ : on écrit 8. Il reste $44 - 40 = 4$ dixièmes.",
+        "On abaisse le 5 des centièmes : 4 dixièmes et 5 centièmes font 45 centièmes. $5 \\times 9 = 45$ : on écrit 9. Il reste 0 : la division est terminée.",
+        "$9{,}45 \\div 5 = 1{,}89$. Ordre de grandeur : $10 \\div 5 = 2$, le résultat est proche de 2. Vérification : $1{,}89 \\times 5 = 9{,}45$."
+      ],
+      "hint": "Écris la virgule au quotient quand tu abaisses le chiffre des dixièmes.",
+      "estimated_duration_s": 90,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 3, CM2, les quatre opérations : poser et effectuer des divisions décimales avec un dividende décimal et un diviseur à un chiffre."
+    },
+    {
+      "id": "EX-D007-E-02",
+      "skill_id": "D007",
+      "level": "entrainement",
+      "type": "vrai_faux",
+      "statement": "Zoé pose la division $6{,}24 \\div 6$ et trouve 1,4.\n\nA-t-elle raison ?",
+      "image": null,
+      "answer": {
+        "value": false
+      },
+      "solution_steps": [
+        "Unités : $6 \\div 6 = 1$. On écrit 1 au quotient. Il reste 0.",
+        "On abaisse le 2 des dixièmes et on écrit la virgule au quotient. 2 dixièmes, c'est moins que 6 : on ne peut pas faire de part. On écrit **0** au quotient, au rang des dixièmes. Il reste 2 dixièmes.",
+        "On abaisse le 4 des centièmes : 2 dixièmes et 4 centièmes font 24 centièmes. $6 \\times 4 = 24$ : on écrit 4. Il reste 0.",
+        "$6{,}24 \\div 6 = 1{,}04$. Zoé a oublié le 0 des dixièmes, comme on peut oublier un 0 au quotient d'une division d'entiers.",
+        "C'est **faux** : le quotient est 1,04. Vérification : $1{,}04 \\times 6 = 6{,}24$, alors que $1{,}4 \\times 6 = 8{,}4$. Chacune des 6 parts reçoit 1 unité, puis il ne reste que 24 centièmes à partager, soit 4 centièmes par part."
+      ],
+      "hint": "Quand tu abaisses le 2, le diviseur 6 « rentre-t-il » dans 2 ? Que faut-il alors écrire au quotient ?",
+      "estimated_duration_s": 80,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 3, CM2, les quatre opérations : poser et effectuer des divisions décimales avec un dividende décimal et un diviseur à un chiffre."
+    },
+    {
+      "id": "EX-D007-M-01",
+      "skill_id": "D007",
+      "level": "maitrise",
+      "type": "numerique",
+      "statement": "Huit coureurs se partagent un relais de 3 km : chacun court la même distance.\n\nQuelle distance court chaque coureur, en kilomètres ?",
+      "image": null,
+      "answer": {
+        "value": 0.375,
+        "unit": "km",
+        "accepted": [
+          "0,375 km"
+        ]
+      },
+      "solution_steps": [
+        "On partage 3 km en 8 : on pose $3 \\div 8$. 3 unités, c'est moins que 8 : on ne peut pas faire de part d'une unité. On écrit **0** au quotient, au rang des unités, puis la virgule.",
+        "Dans le dividende, on écrit une virgule et un 0 à droite du 3 : $3 = 3{,}0$, cela ne change pas le nombre. On abaisse ce zéro : 3 unités, c'est 30 dixièmes. $8 \\times 3 = 24$ : on écrit 3. Il reste $30 - 24 = 6$ dixièmes.",
+        "On écrit un autre 0 au dividende et on l'abaisse : 6 dixièmes, c'est 60 centièmes. $8 \\times 7 = 56$ : on écrit 7. Il reste $60 - 56 = 4$ centièmes.",
+        "On écrit encore un 0 au dividende et on l'abaisse : 4 centièmes, c'est 40 millièmes. $8 \\times 5 = 40$ : on écrit 5. Il reste 0 : la division est terminée.",
+        "$3 \\div 8 = 0{,}375$. Chaque coureur court **0,375 km**. C'est moins de 1 km, ce qui est cohérent : 3 km partagés entre 8 coureurs."
+      ],
+      "hint": "3 est plus petit que 8 : que faut-il écrire au quotient au rang des unités ?",
+      "estimated_duration_s": 120,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 3, CM2, les quatre opérations : poser et effectuer des divisions décimales avec un dividende entier et un diviseur à un chiffre."
+    },
+    {
+      "id": "EX-D007-M-02",
+      "skill_id": "D007",
+      "level": "maitrise",
+      "type": "qcm",
+      "statement": "Six pommes identiques pèsent ensemble 1,05 kg.\n\nCombien pèse une pomme, en kilogrammes ?",
+      "image": null,
+      "choices": [
+        {
+          "key": "a",
+          "text": "1,75 kg",
+          "misconception": "L'élève oublie le 0 des unités au quotient : comme 1 est plus petit que 6, il commence par 10 dixièmes mais écrit le premier chiffre aux unités. Une pomme pèserait plus que les six ensemble."
+        },
+        {
+          "key": "b",
+          "text": "0,17 kg",
+          "misconception": "L'élève s'arrête au reste de 3 centièmes au lieu d'abaisser un zéro : la division n'est pas terminée tant que le reste n'est pas nul."
+        },
+        {
+          "key": "c",
+          "text": "0,173 kg",
+          "misconception": "L'élève écrit le reste 3 à la suite du quotient, comme un chiffre. Mais 3 centièmes restent à partager entre 6 : il faut abaisser un zéro et diviser 30 millièmes par 6."
+        },
+        {
+          "key": "d",
+          "text": "0,175 kg",
+          "misconception": null
+        }
+      ],
+      "answer": {
+        "value": "d"
+      },
+      "solution_steps": [
+        "On partage 1,05 kg en 6 : on pose $1{,}05 \\div 6$. 1 unité, c'est moins que 6 : on écrit **0** au quotient, au rang des unités, puis la virgule.",
+        "On abaisse le 0 des dixièmes : 1 unité, c'est 10 dixièmes. $6 \\times 1 = 6$ : on écrit 1. Il reste $10 - 6 = 4$ dixièmes.",
+        "On abaisse le 5 des centièmes : 4 dixièmes et 5 centièmes font 45 centièmes. $6 \\times 7 = 42$ : on écrit 7. Il reste $45 - 42 = 3$ centièmes.",
+        "Le reste n'est pas nul : on écrit un 0 à droite de 1,05 dans le dividende ($1{,}05 = 1{,}050$, c'est le même nombre) et on l'**abaisse** : 3 centièmes, c'est 30 millièmes. $6 \\times 5 = 30$ : on écrit 5. Il reste 0.",
+        "$1{,}05 \\div 6 = 0{,}175$. Une pomme pèse **0,175 kg**."
+      ],
+      "hint": "1 est plus petit que 6 : commence par écrire 0 et la virgule au quotient. Continue jusqu'à un reste nul.",
+      "estimated_duration_s": 120,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 3, CM2, les quatre opérations : poser et effectuer des divisions décimales avec un dividende décimal et un diviseur à un chiffre."
+    },
+    {
+      "id": "EX-D008-D-01",
+      "skill_id": "D008",
+      "level": "decouverte",
+      "type": "numerique",
+      "statement": "Une randonnée fait 12,7 km.\n\nCombien de kilomètres entiers compte-t-elle ? Ce nombre est la partie entière de 12,7.",
+      "image": null,
+      "answer": {
+        "value": 12,
+        "accepted": [
+          "12 km"
+        ],
+        "unit": "km"
+      },
+      "solution_steps": [
+        "12,7, c'est 12 unités et 7 dixièmes : 12 km et 7 dixièmes de kilomètre.",
+        "Les 7 dixièmes ne font pas un kilomètre entier : il en faudrait 10.",
+        "$12 < 12{,}7 < 13$ : la partie entière est le plus petit des deux entiers de l'encadrement, **12**.",
+        "Rappel : la partie entière s'écrit avant la virgule ; le 7 est le chiffre des dixièmes."
+      ],
+      "hint": "Combien de dixièmes faut-il pour faire un kilomètre entier ?",
+      "estimated_duration_s": 45,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 3, CM1 : savoir donner la partie entière et l'arrondi à l'entier d'un nombre décimal."
+    },
+    {
+      "id": "EX-D008-D-02",
+      "skill_id": "D008",
+      "level": "decouverte",
+      "type": "qcm",
+      "statement": "Un sac pèse 5,8 kg : entre 5 kg et 6 kg.\n\nQuel est son arrondi à l'unité, c'est-à-dire l'entier le plus proche ?",
+      "image": null,
+      "choices": [
+        {
+          "key": "a",
+          "text": "5",
+          "misconception": "L'élève confond arrondi et partie entière : il garde le nombre écrit avant la virgule sans regarder s'il est plus près de 5 ou de 6."
+        },
+        {
+          "key": "b",
+          "text": "6",
+          "misconception": null
+        },
+        {
+          "key": "c",
+          "text": "5,5",
+          "misconception": "L'élève confond l'arrondi et le milieu de l'encadrement : il donne 5,5, le nombre qui sert à décider, au lieu de l'entier le plus proche."
+        }
+      ],
+      "answer": {
+        "value": "b"
+      },
+      "solution_steps": [
+        "5,8 est entre 5 et 6. Le milieu entre 5 et 6 est 5,5.",
+        "5,8 a 8 dixièmes, 5,5 en a 5 : $5{,}8 > 5{,}5$, donc 5,8 est après le milieu.",
+        "De 5 à 5,8, il y a 8 dixièmes ; de 5,8 à 6, il n'y en a que 2. 5,8 est plus proche de 6.",
+        "L'arrondi à l'unité est **6** : la bonne réponse est b. La partie entière, elle, vaut 5 : les deux ne sont pas toujours égales."
+      ],
+      "hint": "Combien de dixièmes séparent 5,8 de 5 ? Et de 6 ?",
+      "estimated_duration_s": 45,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 3, CM1 : savoir donner la partie entière et l'arrondi à l'entier d'un nombre décimal."
+    },
+    {
+      "id": "EX-D008-E-01",
+      "skill_id": "D008",
+      "level": "entrainement",
+      "type": "vrai_faux",
+      "statement": "Zoé dit : « L'arrondi à l'unité de 31,49 est 32, car 49 est plus grand que 5. »\n\nZoé a-t-elle raison ?",
+      "image": null,
+      "answer": {
+        "value": false
+      },
+      "solution_steps": [
+        "31,49 est entre 31 et 32. Le milieu est 31,5.",
+        "On compare 31,49 et 31,5 = 31,50 : 49 centièmes, c'est moins que 50 centièmes. Donc $31{,}49 < 31{,}5$ : 31,49 est avant le milieu.",
+        "Il est donc plus proche de 31 : l'arrondi à l'unité est 31.",
+        "L'erreur de Zoé : elle lit 49 comme un nombre entier. Pour arrondir à l'unité, c'est le chiffre des dixièmes, 4, qui compte : 4 dixièmes, c'est moins que la moitié d'une unité. Zoé a **tort**."
+      ],
+      "hint": "Où se trouve le milieu entre 31 et 32 ? 31,49 est-il avant ou après ?",
+      "estimated_duration_s": 75,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 3, CM1 : savoir donner la partie entière et l'arrondi à l'entier d'un nombre décimal."
+    },
+    {
+      "id": "EX-D008-E-02",
+      "skill_id": "D008",
+      "level": "entrainement",
+      "type": "qcm",
+      "statement": "Quelles sont la partie entière et l'arrondi à l'unité de 7,09 ?",
+      "image": null,
+      "choices": [
+        {
+          "key": "a",
+          "text": "partie entière 7, arrondi 8",
+          "misconception": "L'élève lit 09 comme 9, plus grand que 5, et arrondit vers le haut. Or le chiffre des dixièmes de 7,09 est 0."
+        },
+        {
+          "key": "b",
+          "text": "partie entière 7, arrondi 7,1",
+          "misconception": "L'élève arrondit au dixième au lieu de l'unité : 7,1 n'est pas un nombre entier."
+        },
+        {
+          "key": "c",
+          "text": "partie entière 7, arrondi 7",
+          "misconception": null
+        }
+      ],
+      "answer": {
+        "value": "c"
+      },
+      "solution_steps": [
+        "7,09, c'est 7 unités, 0 dixième et 9 centièmes. La partie entière est 7.",
+        "7,09 est entre 7 et 8, et le milieu est 7,5. Avec 0 dixième, 7,09 est avant le milieu, tout près de 7.",
+        "L'arrondi à l'unité est donc 7, comme la partie entière. La bonne réponse est c."
+      ],
+      "hint": "Quel est le chiffre des dixièmes de 7,09 ?",
+      "estimated_duration_s": 60,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 3, CM1 : savoir donner la partie entière et l'arrondi à l'entier d'un nombre décimal."
+    },
+    {
+      "id": "EX-D008-M-01",
+      "skill_id": "D008",
+      "level": "maitrise",
+      "type": "numerique",
+      "statement": "Un vélo coûte 199,60 €.\n\nArrondis ce prix à l'euro près, c'est-à-dire à l'unité.",
+      "image": null,
+      "answer": {
+        "value": 200,
+        "accepted": [
+          "200 €"
+        ],
+        "unit": "€"
+      },
+      "solution_steps": [
+        "199,60 € est entre 199 € et 200 €, deux entiers qui se suivent.",
+        "Le milieu est 199,50 €. Avec 6 dixièmes, 199,60 est après le milieu : $199{,}60 > 199{,}50$.",
+        "Le prix est plus proche de 200 € : il ne manque que 40 centimes pour y arriver.",
+        "L'arrondi à l'unité est l'entier qui suit 199 : **200 €**. Le chiffre des centaines change, ce qui surprend, mais 199 + 1 = 200."
+      ],
+      "hint": "199,60 € est-il plus près de 199 € ou de l'entier suivant ?",
+      "estimated_duration_s": 90,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 3, CM1 : savoir donner la partie entière et l'arrondi à l'entier d'un nombre décimal."
+    },
+    {
+      "id": "EX-D008-M-02",
+      "skill_id": "D008",
+      "level": "maitrise",
+      "type": "qcm",
+      "statement": "Un nombre a pour partie entière 6 et pour arrondi à l'unité 7.\n\nLequel de ces nombres peut-il être ?",
+      "image": null,
+      "choices": [
+        {
+          "key": "a",
+          "text": "6,38",
+          "misconception": "L'élève vérifie seulement la partie entière, 6, et oublie de contrôler l'arrondi : 6,38 est avant le milieu 6,5, son arrondi est 6."
+        },
+        {
+          "key": "b",
+          "text": "6,72",
+          "misconception": null
+        },
+        {
+          "key": "c",
+          "text": "7,4",
+          "misconception": "L'élève vérifie seulement l'arrondi : 7,4 s'arrondit bien à 7, mais sa partie entière est 7, pas 6."
+        }
+      ],
+      "answer": {
+        "value": "b"
+      },
+      "solution_steps": [
+        "Partie entière 6 : le nombre est entre 6 et 7, sans atteindre 7.",
+        "Arrondi 7 : il est plus proche de 7 que de 6, donc après le milieu 6,5.",
+        "Seul 6,72 remplit les deux conditions : $6{,}5 < 6{,}72 < 7$.",
+        "6,38 a bien pour partie entière 6, mais son arrondi est 6. 7,4 a bien pour arrondi 7, mais sa partie entière est 7. La bonne réponse est b."
+      ],
+      "hint": "Vérifie les deux conditions pour chaque nombre, l'une après l'autre.",
+      "estimated_duration_s": 120,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 3, CM1 : savoir donner la partie entière et l'arrondi à l'entier d'un nombre décimal."
+    },
+    {
+      "id": "EX-D009-D-01",
+      "skill_id": "D009",
+      "level": "decouverte",
+      "type": "qcm",
+      "statement": "Au 100 m, le chronomètre affiche 13,74 s.\n\nQuel est ce temps arrondi au dixième de seconde ?",
+      "image": null,
+      "choices": [
+        {
+          "key": "a",
+          "text": "13,8 s",
+          "misconception": "L'élève arrondit toujours au dixième du dessus. Or 13,74 est avant le milieu 13,75 : il est plus proche de 13,7."
+        },
+        {
+          "key": "b",
+          "text": "13,7 s",
+          "misconception": null
+        },
+        {
+          "key": "c",
+          "text": "14 s",
+          "misconception": "L'élève arrondit à l'unité au lieu du dixième."
+        }
+      ],
+      "answer": {
+        "value": "b"
+      },
+      "solution_steps": [
+        "Au dixième, on encadre 13,74 entre deux nombres à un chiffre après la virgule qui se suivent : $13{,}7 < 13{,}74 < 13{,}8$.",
+        "Le milieu entre 13,7 et 13,8 est 13,75.",
+        "$13{,}74 < 13{,}75$ : le temps est plus proche de 13,7. Il suffit de regarder le chiffre des centièmes : 4, moins que 5.",
+        "Arrondi au dixième : **13,7 s**. La bonne réponse est b."
+      ],
+      "hint": "Entre quels nombres à un chiffre après la virgule se trouve 13,74 ?",
+      "estimated_duration_s": 60,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 3, 6e : donner la valeur arrondie à l'unité, au dixième ou au centième, d'un nombre décimal."
+    },
+    {
+      "id": "EX-D009-D-02",
+      "skill_id": "D009",
+      "level": "decouverte",
+      "type": "numerique",
+      "statement": "Sur la balance, un sac de farine pèse 2,316 kg.\n\nArrondis cette masse au centième de kilogramme.",
+      "image": null,
+      "answer": {
+        "value": 2.32,
+        "accepted": [
+          "2,32 kg"
+        ],
+        "unit": "kg"
+      },
+      "solution_steps": [
+        "Au centième, on encadre 2,316 entre deux nombres à deux chiffres après la virgule qui se suivent : $2{,}31 < 2{,}316 < 2{,}32$.",
+        "Le milieu est 2,315. On regarde le chiffre des millièmes, juste après celui des centièmes : 6, plus que 5. Règle : si ce chiffre vaut 0, 1, 2, 3 ou 4, on prend la valeur du dessous ; s'il vaut 5, 6, 7, 8 ou 9, on prend la valeur du dessus. Pile au milieu, on prend donc la valeur du dessus : c'est une convention.",
+        "$2{,}316 > 2{,}315$ : la masse est plus proche de 2,32.",
+        "Arrondi au centième : **2,32 kg**."
+      ],
+      "hint": "Quel chiffre faut-il regarder, juste après celui des centièmes ?",
+      "estimated_duration_s": 60,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 3, 6e : donner la valeur arrondie à l'unité, au dixième ou au centième, d'un nombre décimal."
+    },
+    {
+      "id": "EX-D009-E-01",
+      "skill_id": "D009",
+      "level": "entrainement",
+      "type": "vrai_faux",
+      "statement": "Inès dit : « 4,65 est pile au milieu entre 4,6 et 4,7, donc on ne peut pas l'arrondir au dixième. »\n\nInès a-t-elle raison ?",
+      "image": null,
+      "answer": {
+        "value": false
+      },
+      "solution_steps": [
+        "$4{,}6 < 4{,}65 < 4{,}7$, et 4,65 est bien exactement au milieu : il est à 5 centièmes de 4,60 comme de 4,70.",
+        "Pile au milieu, le nombre est aussi proche de l'une que de l'autre : on a donc fixé une convention. On regarde le chiffre juste après le rang demandé : s'il est 5, 6, 7, 8 ou 9, on arrondit à la valeur du dessus ; s'il est 0, 1, 2, 3 ou 4, à la valeur du dessous.",
+        "Ici, le chiffre des centièmes est 5 : l'arrondi au dixième de 4,65 est 4,7.",
+        "On peut donc toujours arrondir, même pile au milieu. Inès a **tort**."
+      ],
+      "hint": "Quel est le chiffre juste après celui des dixièmes ? Que dit la règle quand c'est un 5 ?",
+      "estimated_duration_s": 75,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 3, 6e : donner la valeur arrondie à l'unité, au dixième ou au centième, d'un nombre décimal."
+    },
+    {
+      "id": "EX-D009-E-02",
+      "skill_id": "D009",
+      "level": "entrainement",
+      "type": "numerique",
+      "statement": "Arrondis 15,083 au dixième.",
+      "image": null,
+      "answer": {
+        "value": 15.1
+      },
+      "solution_steps": [
+        "15,083 a 0 dixième, 8 centièmes et 3 millièmes. On l'encadre au dixième : $15{,}0 < 15{,}083 < 15{,}1$.",
+        "Le milieu est 15,05. On regarde le chiffre des centièmes : 8, plus que 5.",
+        "$15{,}083 > 15{,}05$ : le nombre est plus proche de 15,1. Arrondi au dixième : **15,1**.",
+        "Piège : répondre 15,0, c'est couper le nombre sans regarder les centièmes ; répondre 15,08, c'est arrondir au centième au lieu du dixième."
+      ],
+      "hint": "Quel est le chiffre des dixièmes de 15,083 ? Et celui qui le suit ?",
+      "estimated_duration_s": 60,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 3, 6e : donner la valeur arrondie à l'unité, au dixième ou au centième, d'un nombre décimal."
+    },
+    {
+      "id": "EX-D009-M-01",
+      "skill_id": "D009",
+      "level": "maitrise",
+      "type": "numerique",
+      "statement": "Un trajet mesure 29,97 km. Le GPS affiche les distances arrondies au dixième.\n\nQuelle distance affiche-t-il ?",
+      "image": null,
+      "answer": {
+        "value": 30,
+        "accepted": [
+          "30,0",
+          "30 km",
+          "30,0 km"
+        ],
+        "unit": "km"
+      },
+      "solution_steps": [
+        "On encadre 29,97 au dixième. Le nombre à un chiffre après la virgule qui suit 29,9 est 30,0 : 9 dixièmes et 1 dixième font 10 dixièmes, c'est-à-dire une unité de plus. Donc $29{,}9 < 29{,}97 < 30{,}0$.",
+        "Le milieu est 29,95. Le chiffre des centièmes est 7, plus que 5 : $29{,}97 > 29{,}95$.",
+        "L'arrondi au dixième est 30,0, qui s'écrit plus simplement 30. Le GPS affiche **30 km**.",
+        "Piège : écrire 29,10. Après 29,9 ne vient pas « 29,10 », qui est d'ailleurs plus petit que 29,9 : 29,10 = 29,1."
+      ],
+      "hint": "Quel nombre à un chiffre après la virgule vient juste après 29,9 ?",
+      "estimated_duration_s": 120,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 3, 6e : donner la valeur arrondie à l'unité, au dixième ou au centième, d'un nombre décimal."
+    },
+    {
+      "id": "EX-D009-M-02",
+      "skill_id": "D009",
+      "level": "maitrise",
+      "type": "qcm",
+      "statement": "Un nombre à deux chiffres après la virgule a pour arrondi au dixième 5,3.\n\nLequel de ces nombres peut-il être ?",
+      "image": null,
+      "choices": [
+        {
+          "key": "a",
+          "text": "5,36",
+          "misconception": "L'élève coupe le nombre après le chiffre des dixièmes : il croit que tout nombre qui commence par 5,3 s'arrondit à 5,3. Or 5,36 est après le milieu 5,35, son arrondi est 5,4."
+        },
+        {
+          "key": "b",
+          "text": "5,35",
+          "misconception": "L'élève pense qu'au milieu on arrondit vers le bas. La règle dit l'inverse : avec un 5 au rang des centièmes, 5,35 s'arrondit à 5,4."
+        },
+        {
+          "key": "c",
+          "text": "5,25",
+          "misconception": null
+        }
+      ],
+      "answer": {
+        "value": "c"
+      },
+      "solution_steps": [
+        "Un nombre a pour arrondi au dixième 5,3 s'il est plus proche de 5,3 que de 5,2 ou de 5,4, ou s'il est pile au milieu 5,25 : on arrondit alors à la valeur du dessus.",
+        "5,25 est au milieu entre 5,2 et 5,3. Son chiffre des centièmes est 5 : il s'arrondit à 5,3.",
+        "5,36 et 5,35 sont entre 5,3 et 5,4, avec 6 et 5 centièmes : ils s'arrondissent tous deux à 5,4.",
+        "La bonne réponse est c : 5,25. Un nombre dont l'arrondi est 5,3 ne commence pas forcément par 5,3."
+      ],
+      "hint": "Teste chaque proposition : encadre-la au dixième et regarde le chiffre des centièmes.",
+      "estimated_duration_s": 120,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 3, 6e : donner la valeur arrondie à l'unité, au dixième ou au centième, d'un nombre décimal."
+    },
+    {
+      "id": "EX-D012-D-01",
+      "skill_id": "D012",
+      "level": "decouverte",
+      "type": "numerique",
+      "statement": "Une ficelle mesure 8,3 m : un peu plus de 8 m.\n\nComplète l'encadrement par deux nombres entiers qui se suivent : $8 < 8{,}3 < \\ldots$",
+      "image": null,
+      "answer": {
+        "value": 9
+      },
+      "solution_steps": [
+        "8,3, c'est 8 unités et 3 dixièmes : le nombre est plus grand que 8.",
+        "3 dixièmes, c'est moins qu'une unité entière, qui vaut 10 dixièmes : 8,3 n'atteint pas l'entier suivant.",
+        "L'entier qui suit 8 est 9 : $8 < 8{,}3 < 9$. La ficelle mesure entre 8 m et **9** m.",
+        "Attention : 8,4 est bien plus grand que 8,3, mais ce n'est pas un nombre entier."
+      ],
+      "hint": "Les deux entiers qui se suivent doivent entourer 8,3 : l'un plus petit, l'autre plus grand.",
+      "estimated_duration_s": 45,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 3, CM1 : comparer, encadrer, intercaler, ordonner, par ordre croissant ou décroissant, des nombres décimaux donnés par leur écriture à virgule en utilisant les symboles =, < et >."
+    },
+    {
+      "id": "EX-D012-D-02",
+      "skill_id": "D012",
+      "level": "decouverte",
+      "type": "vrai_faux",
+      "statement": "Quand on compte de dixième en dixième, 6,2 est suivi de 6,3.\n\nSami dit : « Il n'existe aucun nombre entre 6,2 et 6,3. » Sami a-t-il raison ?",
+      "image": null,
+      "answer": {
+        "value": false
+      },
+      "solution_steps": [
+        "On écrit les deux nombres avec deux chiffres après la virgule : 6,2 = 6,20 et 6,3 = 6,30.",
+        "Entre 20 centièmes et 30 centièmes, il y a 21, 22, … jusqu'à 29 centièmes : 6,21 ; 6,22 ; … ; 6,29 sont tous entre 6,2 et 6,3.",
+        "Par exemple, $6{,}2 < 6{,}25 < 6{,}3$.",
+        "6,2 et 6,3 se suivent quand on compte en dixièmes, mais pas quand on compte en centièmes. Sami a **tort**."
+      ],
+      "hint": "Écris 6,2 et 6,3 avec deux chiffres après la virgule.",
+      "estimated_duration_s": 60,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 3, CM1 : comparer, encadrer, intercaler, ordonner, par ordre croissant ou décroissant, des nombres décimaux donnés par leur écriture à virgule en utilisant les symboles =, < et >."
+    },
+    {
+      "id": "EX-D012-E-01",
+      "skill_id": "D012",
+      "level": "entrainement",
+      "type": "qcm",
+      "statement": "Encadre 9,63 par deux nombres à un chiffre après la virgule qui se suivent.",
+      "image": null,
+      "choices": [
+        {
+          "key": "a",
+          "text": "9,5 et 9,6",
+          "misconception": "L'élève voit le 6 des dixièmes et prend 9,6 comme borne supérieure : il oublie que 9,63 dépasse 9,60 de 3 centièmes."
+        },
+        {
+          "key": "b",
+          "text": "9,6 et 9,7",
+          "misconception": null
+        },
+        {
+          "key": "c",
+          "text": "9 et 10",
+          "misconception": "L'élève encadre par deux entiers, comme pour la partie entière : 9 et 10 n'ont aucun chiffre après la virgule. Il confond l'encadrement à l'unité et l'encadrement au dixième."
+        },
+        {
+          "key": "d",
+          "text": "9,62 et 9,64",
+          "misconception": "L'élève encadre au centième : ces deux nombres ont deux chiffres après la virgule, pas un seul."
+        }
+      ],
+      "answer": {
+        "value": "b"
+      },
+      "solution_steps": [
+        "9,63, c'est 9 unités, 6 dixièmes et 3 centièmes.",
+        "En ne gardant que les dixièmes, on obtient 9,6. Comme 9,63 dépasse 9,60 de 3 centièmes, $9{,}6 < 9{,}63$.",
+        "Le nombre à un chiffre après la virgule qui suit 9,6 est 9,7, c'est-à-dire 9,70 : 63 centièmes, c'est moins que 70 centièmes.",
+        "$9{,}6 < 9{,}63 < 9{,}7$ : la bonne réponse est b."
+      ],
+      "hint": "Garde seulement les dixièmes de 9,63 : tu obtiens la borne du dessous.",
+      "estimated_duration_s": 75,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 3, CM1 : comparer, encadrer, intercaler, ordonner, par ordre croissant ou décroissant, des nombres décimaux donnés par leur écriture à virgule en utilisant les symboles =, < et >."
+    },
+    {
+      "id": "EX-D012-E-02",
+      "skill_id": "D012",
+      "level": "entrainement",
+      "type": "numerique",
+      "statement": "Un chat pèse 6,04 kg.\n\nComplète l'encadrement par deux nombres à un chiffre après la virgule qui se suivent : $\\ldots < 6{,}04 < 6{,}1$",
+      "image": null,
+      "answer": {
+        "value": 6,
+        "accepted": [
+          "6,0"
+        ]
+      },
+      "solution_steps": [
+        "6,04, c'est 6 unités, 0 dixième et 4 centièmes : son chiffre des dixièmes est 0.",
+        "En ne gardant que les dixièmes, on obtient 6,0, c'est-à-dire 6. Et 6,04 dépasse 6,00 de 4 centièmes.",
+        "Le nombre suivant, à un chiffre après la virgule, est 6,1 = 6,10 : 4 centièmes, c'est moins que 10 centièmes.",
+        "$6{,}0 < 6{,}04 < 6{,}1$ : le nombre cherché est 6,0, qui est égal à **6**.",
+        "Piège : lire 4 dixièmes dans 6,04, comme s'il s'agissait de 6,4. Mais 6,4 est plus grand que 6,1 : dans 6,04, le 4 est au rang des centièmes, et le chiffre des dixièmes est 0."
+      ],
+      "hint": "Quel est le chiffre des dixièmes de 6,04 ?",
+      "estimated_duration_s": 75,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 3, CM1 : comparer, encadrer, intercaler, ordonner, par ordre croissant ou décroissant, des nombres décimaux donnés par leur écriture à virgule en utilisant les symboles =, < et >."
+    },
+    {
+      "id": "EX-D012-M-01",
+      "skill_id": "D012",
+      "level": "maitrise",
+      "type": "qcm",
+      "statement": "Combien y a-t-il de nombres à deux chiffres après la virgule compris entre 4,7 et 4,8, sans compter 4,7 ni 4,8 ?",
+      "image": null,
+      "choices": [
+        {
+          "key": "a",
+          "text": "0",
+          "misconception": "L'élève pense que 4,7 et 4,8 se suivent, donc qu'il n'y a rien entre eux. C'est vrai pour les nombres à un chiffre après la virgule, pas avec les centièmes."
+        },
+        {
+          "key": "b",
+          "text": "10",
+          "misconception": "L'élève compte de 4,70 à 4,79 : il inclut 4,70, qui est égal à 4,7."
+        },
+        {
+          "key": "c",
+          "text": "9",
+          "misconception": null
+        }
+      ],
+      "answer": {
+        "value": "c"
+      },
+      "solution_steps": [
+        "On écrit les bornes avec deux chiffres après la virgule : 4,7 = 4,70 et 4,8 = 4,80.",
+        "Les nombres cherchés vont de 71 à 79 centièmes : 4,71 ; 4,72 ; … ; 4,79.",
+        "4,70 et 4,80 ne comptent pas : ce sont 4,7 et 4,8 eux-mêmes.",
+        "De 71 à 79, il y a **9** nombres. La bonne réponse est c.",
+        "En écrivant plus de chiffres après la virgule, on en trouverait d'autres encore : entre deux nombres décimaux différents, il y a toujours d'autres nombres décimaux."
+      ],
+      "hint": "Écris 4,7 et 4,8 avec deux chiffres après la virgule, puis liste les nombres entre eux.",
+      "estimated_duration_s": 120,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 3, CM1 : comparer, encadrer, intercaler, ordonner, par ordre croissant ou décroissant, des nombres décimaux donnés par leur écriture à virgule en utilisant les symboles =, < et >."
+    },
+    {
+      "id": "EX-D012-M-02",
+      "skill_id": "D012",
+      "level": "maitrise",
+      "type": "numerique",
+      "statement": "Devinette : je suis un nombre à deux chiffres après la virgule, compris entre 5,8 et 5,9. Mon chiffre des centièmes est la moitié de mon chiffre des dixièmes.\n\nQui suis-je ?",
+      "image": null,
+      "answer": {
+        "value": 5.84
+      },
+      "solution_steps": [
+        "Entre 5,8 et 5,9, c'est-à-dire entre 5,80 et 5,90, les nombres à deux chiffres après la virgule sont 5,81 ; 5,82 ; … ; 5,89.",
+        "Tous ont 5 pour partie entière et 8 pour chiffre des dixièmes.",
+        "La moitié de 8 est 4 : le chiffre des centièmes est 4.",
+        "Le nombre est **5,84**. Vérification : $5{,}8 < 5{,}84 < 5{,}9$."
+      ],
+      "hint": "Quel est le chiffre des dixièmes de tous les nombres compris entre 5,8 et 5,9 ?",
+      "estimated_duration_s": 120,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 3, CM1 : comparer, encadrer, intercaler, ordonner, par ordre croissant ou décroissant, des nombres décimaux donnés par leur écriture à virgule en utilisant les symboles =, < et >."
+    },
+    {
+      "id": "EX-D014-D-01",
+      "skill_id": "D014",
+      "level": "decouverte",
+      "type": "numerique",
+      "statement": "Une planche mesure 2,6 m. On sait que 1 m = 100 cm.\n\nQuelle est la longueur de la planche en centimètres ?",
+      "image": null,
+      "answer": {
+        "value": 260,
+        "unit": "cm",
+        "accepted": [
+          "260 cm"
+        ]
+      },
+      "solution_steps": [
+        "2,6 m, c'est 2 m et 6 dixièmes de mètre.",
+        "1 m = 100 cm, donc 2 m = 200 cm.",
+        "Un dixième de mètre, c'est 1 dm, soit 10 cm. Donc 6 dixièmes de mètre font 60 cm.",
+        "$200 + 60 = 260$ : la planche mesure **260 cm**.",
+        "26 cm serait faux : c'est moins qu'une règle de 30 cm, pas une planche de plus de 2 m."
+      ],
+      "hint": "Que vaut 1 dixième de mètre en centimètres ?",
+      "estimated_duration_s": 60,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 3, CM1, les longueurs : connaître les relations entre les unités de longueur."
+    },
+    {
+      "id": "EX-D014-D-02",
+      "skill_id": "D014",
+      "level": "decouverte",
+      "type": "qcm",
+      "statement": "Une gourde contient 1,5 L d'eau. On sait que 1 L = 100 cL.\n\nCombien de centilitres contient la gourde ?",
+      "image": null,
+      "choices": [
+        {
+          "key": "a",
+          "text": "15 cL",
+          "misconception": "L'élève pense que 1 L = 10 cL : il multiplie par 10 au lieu d'utiliser 1 L = 100 cL. 15 cL, c'est 15 centièmes de litre, moins d'un quart de litre."
+        },
+        {
+          "key": "b",
+          "text": "150 cL",
+          "misconception": null
+        },
+        {
+          "key": "c",
+          "text": "105 cL",
+          "misconception": "L'élève lit 1,5 L comme « 1 L et 5 cL » : il traite le 5 comme un nombre de centilitres alors que c'est un chiffre des dixièmes de litre."
+        },
+        {
+          "key": "d",
+          "text": "1,50 cL",
+          "misconception": "L'élève écrit un zéro à droite en croyant convertir : 1,50 est le même nombre que 1,5, et il a seulement changé l'unité. 1,50 cL tiendrait dans une cuillère."
+        }
+      ],
+      "answer": {
+        "value": "b"
+      },
+      "solution_steps": [
+        "1,5 L, c'est 1 L et 5 dixièmes de litre.",
+        "1 L = 100 cL. Un dixième de litre, c'est 1 dL, soit 10 cL : 5 dixièmes de litre font 50 cL.",
+        "$100 + 50 = 150$. La gourde contient **150 cL**.",
+        "Le 5 de 1,5 est un chiffre des dixièmes, pas des centièmes : il vaut 50 cL, pas 5 cL."
+      ],
+      "hint": "Le 5 de 1,5 L est un chiffre des dixièmes. Combien de centilitres dans un dixième de litre ?",
+      "estimated_duration_s": 60,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 3, CM1, les contenances : connaître les relations entre les unités de contenance."
+    },
+    {
+      "id": "EX-D014-E-01",
+      "skill_id": "D014",
+      "level": "entrainement",
+      "type": "numerique",
+      "statement": "Un melon pèse 1,25 kg.\n\nQuelle est sa masse en grammes ?",
+      "image": null,
+      "answer": {
+        "value": 1250,
+        "unit": "g",
+        "accepted": [
+          "1 250",
+          "1 250 g",
+          "1250 g"
+        ]
+      },
+      "solution_steps": [
+        "1,25 kg, c'est 1 kg, 2 dixièmes de kilogramme et 5 centièmes de kilogramme.",
+        "1 kg = 1 000 g.",
+        "Un dixième de kilogramme vaut 100 g, car $10 \\times 100 = 1\\,000$. Donc 2 dixièmes de kilogramme font 200 g.",
+        "Un centième de kilogramme vaut 10 g, car $100 \\times 10 = 1\\,000$. Donc 5 centièmes de kilogramme font 50 g.",
+        "$1\\,000 + 200 + 50 = 1\\,250$. Le melon pèse **1 250 g**."
+      ],
+      "hint": "Combien de grammes dans 1 kg ? Et dans un dixième de kilogramme ?",
+      "estimated_duration_s": 75,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 3, CM1, les masses : connaître les relations entre les unités de masse."
+    },
+    {
+      "id": "EX-D014-E-02",
+      "skill_id": "D014",
+      "level": "entrainement",
+      "type": "vrai_faux",
+      "statement": "Un clou mesure 3,4 cm. Inès dit : « Il mesure 3,40 mm, car 1 cm = 10 mm. »\n\nA-t-elle raison ?",
+      "image": null,
+      "answer": {
+        "value": false
+      },
+      "solution_steps": [
+        "3,4 cm, c'est 3 cm et 4 dixièmes de centimètre. Un dixième de centimètre, c'est 1 mm.",
+        "3 cm = 30 mm, donc 3,4 cm = 30 mm + 4 mm = 34 mm.",
+        "On peut aussi le voir comme $3{,}4 \\times 10 = 34$ : les 3 unités deviennent 3 dizaines, les 4 dixièmes deviennent 4 unités.",
+        "3,40 et 3,4 sont le même nombre : Inès a seulement écrit un zéro à droite, ce qui ne multiplie pas par 10. Un clou de 3,40 mm serait dix fois plus court.",
+        "C'est **faux** : le clou mesure 34 mm."
+      ],
+      "hint": "3,40 est-il vraiment 10 fois plus grand que 3,4 ?",
+      "estimated_duration_s": 60,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 3, CM1, les longueurs : connaître les relations entre les unités de longueur."
+    },
+    {
+      "id": "EX-D014-M-01",
+      "skill_id": "D014",
+      "level": "maitrise",
+      "type": "numerique",
+      "statement": "Un ruban mesure 2,05 m. Sarah en coupe un morceau de 80 cm.\n\nQuelle longueur de ruban reste-t-il, en centimètres ?",
+      "image": null,
+      "answer": {
+        "value": 125,
+        "unit": "cm",
+        "accepted": [
+          "125 cm"
+        ]
+      },
+      "solution_steps": [
+        "Les deux longueurs ne sont pas dans la même unité : on convertit d'abord 2,05 m en centimètres.",
+        "2,05 m, c'est 2 m, 0 dixième de mètre et 5 centièmes de mètre. Un centième de mètre, c'est 1 cm.",
+        "2 m = 200 cm, donc 2,05 m = 200 cm + 5 cm = 205 cm. Ce n'est pas 250 cm : le 5 est le chiffre des centièmes, pas celui des dixièmes.",
+        "On enlève le morceau coupé : $205 - 80 = 125$.",
+        "Il reste **125 cm** de ruban."
+      ],
+      "hint": "Écris d'abord 2,05 m en centimètres. Attention au 0 : quel est le rang du 5 ?",
+      "estimated_duration_s": 100,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 3, CM1, les longueurs : connaître les relations entre les unités de longueur."
+    },
+    {
+      "id": "EX-D014-M-02",
+      "skill_id": "D014",
+      "level": "maitrise",
+      "type": "qcm",
+      "statement": "Trois bouteilles contiennent 0,75 L ; 85 cL et 0,9 L.\n\nLaquelle contient le plus de liquide ?",
+      "image": null,
+      "choices": [
+        {
+          "key": "a",
+          "text": "La bouteille de 0,75 L",
+          "misconception": "L'élève pense que plus il y a de chiffres après la virgule, plus le nombre est grand : 75 lui paraît plus grand que 9. Or 0,75 L = 75 cL et 0,9 L = 90 cL."
+        },
+        {
+          "key": "b",
+          "text": "La bouteille de 85 cL",
+          "misconception": "L'élève compare les nombres sans convertir : 85 lui paraît plus grand que 0,75 et 0,9, sans tenir compte des unités. Or 85 cL est moins que 0,9 L, qui fait 90 cL."
+        },
+        {
+          "key": "c",
+          "text": "La bouteille de 0,9 L",
+          "misconception": null
+        }
+      ],
+      "answer": {
+        "value": "c"
+      },
+      "solution_steps": [
+        "Les contenances ne sont pas dans la même unité : pour comparer, on les écrit toutes en centilitres, avec 1 L = 100 cL.",
+        "0,75 L, c'est 75 centièmes de litre. Un centième de litre, c'est 1 cL : 0,75 L = 75 cL.",
+        "0,9 L, c'est 9 dixièmes de litre. Un dixième de litre vaut 10 cL : 0,9 L = 90 cL.",
+        "On compare : 75 cL < 85 cL < 90 cL. C'est la bouteille de **0,9 L** qui contient le plus."
+      ],
+      "hint": "Convertis les trois contenances dans la même unité avant de comparer.",
+      "estimated_duration_s": 90,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 3, CM1, les contenances : connaître les relations entre les unités de contenance."
+    },
+    {
+      "id": "EX-D016-D-01",
+      "skill_id": "D016",
+      "level": "decouverte",
+      "type": "numerique",
+      "statement": "Lina a 8 € et 35 centimes dans sa tirelire.\n\nÉcris cette somme en euros, avec une virgule.",
+      "image": null,
+      "answer": {
+        "value": 8.35,
+        "unit": "€",
+        "accepted": [
+          "8,35 €",
+          "8,35 euros"
+        ]
+      },
+      "solution_steps": [
+        "Dans l'écriture d'une somme d'argent, la virgule sépare les euros des centimes : les euros avant la virgule, les centimes après.",
+        "Avant la virgule, on écrit les 8 euros.",
+        "Après la virgule, on écrit les 35 centimes : 3 dizaines de centimes, puis 5 centimes.",
+        "8 € et 35 centimes s'écrit **8,35 €**."
+      ],
+      "hint": "Avant la virgule, les euros. Après la virgule, les centimes.",
+      "estimated_duration_s": 30,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 2, CE1 : connaitre le sens de l'écriture à virgule d'une somme d'argent ; l'élève sait utiliser différentes écritures et passer d'une écriture à une autre (dans les deux sens)."
+    },
+    {
+      "id": "EX-D016-D-02",
+      "skill_id": "D016",
+      "level": "decouverte",
+      "type": "qcm",
+      "statement": "Tom paie 4 € et 8 centimes.\n\nComment s'écrit ce prix avec une virgule ?",
+      "image": null,
+      "choices": [
+        {
+          "key": "a",
+          "text": "48 €",
+          "misconception": "L'élève colle les euros et les centimes sans virgule. Mais 48 €, c'est quarante-huit euros, bien plus que le prix payé."
+        },
+        {
+          "key": "b",
+          "text": "4,08 €",
+          "misconception": null
+        },
+        {
+          "key": "c",
+          "text": "4,80 €",
+          "misconception": "L'élève écrit le 8 juste après la virgule. Or le premier chiffre après la virgule compte les dizaines de centimes : 4,80 €, c'est 4 € et 80 centimes, pas 8 centimes."
+        }
+      ],
+      "answer": {
+        "value": "b"
+      },
+      "solution_steps": [
+        "Avant la virgule, on écrit les euros : 4.",
+        "Après la virgule, il y a toujours deux chiffres : d'abord celui des dizaines de centimes, puis celui des centimes.",
+        "8 centimes, c'est 0 dizaine de centimes et 8 centimes : on écrit 0, puis 8.",
+        "4 € et 8 centimes s'écrit **4,08 €**. Attention : 4,80 €, c'est 4 € et 80 centimes."
+      ],
+      "hint": "8 centimes : combien de dizaines de centimes ?",
+      "estimated_duration_s": 30,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 2, CE1 : une attention particulière est portée à l'écriture à virgule d'expressions du type « deux euros et cinq centimes », en la distinguant de celle de « deux euros et cinquante centimes »."
+    },
+    {
+      "id": "EX-D016-E-01",
+      "skill_id": "D016",
+      "level": "entrainement",
+      "type": "numerique",
+      "statement": "Un cahier coûte 275 centimes. Rappel : 100 centimes font 1 €.\n\nÉcris ce prix en euros, avec une virgule.",
+      "image": null,
+      "answer": {
+        "value": 2.75,
+        "unit": "€",
+        "accepted": [
+          "2,75 €",
+          "2,75 euros"
+        ]
+      },
+      "solution_steps": [
+        "On décompose 275 centimes : 200 centimes et 75 centimes.",
+        "100 centimes font 1 €. 200 centimes, c'est 100 centimes et 100 centimes : cela fait 2 €.",
+        "Donc 275 centimes = 2 € et 75 centimes.",
+        "Avant la virgule les euros, après la virgule les centimes : **2,75 €**."
+      ],
+      "hint": "Combien d'euros peux-tu faire avec 275 centimes, sachant qu'il en faut 100 pour 1 € ?",
+      "estimated_duration_s": 45,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 2, CE1 : connaitre le sens de l'écriture à virgule d'une somme d'argent ; l'élève sait passer d'une écriture à une autre, par exemple 345 centimes = 300 centimes + 45 centimes = 3 € + 45 centimes."
+    },
+    {
+      "id": "EX-D016-E-02",
+      "skill_id": "D016",
+      "level": "entrainement",
+      "type": "vrai_faux",
+      "statement": "Zoé a 7 pièces de 1 € et 6 pièces de 10 centimes.\n\nElle écrit : 7,06 €. A-t-elle raison ?",
+      "image": null,
+      "answer": {
+        "value": false
+      },
+      "solution_steps": [
+        "7 pièces de 1 € font 7 €.",
+        "6 pièces de 10 centimes : on compte de 10 en 10, 10, 20, 30, 40, 50, 60. Cela fait 60 centimes, soit 6 dizaines de centimes.",
+        "7 € et 60 centimes s'écrit 7,60 €.",
+        "7,06 €, c'est 7 € et seulement 6 centimes : Zoé a confondu 6 pièces de 10 centimes avec 6 centimes. Elle a **tort**."
+      ],
+      "hint": "Combien de centimes font 6 pièces de 10 centimes ?",
+      "estimated_duration_s": 45,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 2, CE1 : l'élève exprime la valeur d'un ensemble constitué de pièces et de billets en euro et en centime d'euro, avec un nombre final de centimes strictement inférieur à 100 ou en utilisant l'écriture à virgule."
+    },
+    {
+      "id": "EX-D016-M-01",
+      "skill_id": "D016",
+      "level": "maitrise",
+      "type": "qcm",
+      "statement": "Range ces prix du moins cher au plus cher :\n\n2,50 € ; 195 centimes ; 2,05 € ; 2 € et 30 centimes",
+      "image": null,
+      "choices": [
+        {
+          "key": "a",
+          "text": "2,05 € ; 2 € et 30 centimes ; 2,50 € ; 195 centimes",
+          "misconception": "L'élève compare les nombres sans regarder l'unité : 195 lui paraît le plus grand. Or 195 centimes, c'est 1 € et 95 centimes, moins que 2 €."
+        },
+        {
+          "key": "b",
+          "text": "195 centimes ; 2,50 € ; 2 € et 30 centimes ; 2,05 €",
+          "misconception": "L'élève lit 2,50 € comme 2 € et 5 centimes, et 2,05 € comme 2 € et 50 centimes : il ne voit pas que le chiffre juste après la virgule compte les dizaines de centimes."
+        },
+        {
+          "key": "c",
+          "text": "195 centimes ; 2,05 € ; 2 € et 30 centimes ; 2,50 €",
+          "misconception": null
+        }
+      ],
+      "answer": {
+        "value": "c"
+      },
+      "solution_steps": [
+        "On écrit d'abord tous les prix de la même façon, en euros avec une virgule.",
+        "195 centimes = 100 centimes et 95 centimes = 1 € et 95 centimes, soit 1,95 €. 2 € et 30 centimes s'écrit 2,30 €.",
+        "1,95 € est le seul prix qui n'atteint pas 2 € : c'est le moins cher.",
+        "Les trois autres prix ont 2 euros : on compare les centimes. 2,05 €, c'est 5 centimes ; 2,30 €, 30 centimes ; 2,50 €, 50 centimes. Et $5 < 30 < 50$.",
+        "Du moins cher au plus cher : 195 centimes ; 2,05 € ; 2 € et 30 centimes ; 2,50 €."
+      ],
+      "hint": "Écris d'abord tous les prix en euros, avec une virgule.",
+      "estimated_duration_s": 90,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 2, CE1 : l'élève sait ordonner quatre prix dans l'ordre croissant ou décroissant, quelles que soient les écritures de ces prix."
+    },
+    {
+      "id": "EX-D016-M-02",
+      "skill_id": "D016",
+      "level": "maitrise",
+      "type": "numerique",
+      "statement": "Max a 2 € et 135 centimes.\n\nÉcris sa somme en euros, avec une virgule.",
+      "image": null,
+      "answer": {
+        "value": 3.35,
+        "unit": "€",
+        "accepted": [
+          "3,35 €",
+          "3,35 euros"
+        ]
+      },
+      "solution_steps": [
+        "135 centimes, c'est plus que 100 centimes : avec 100 centimes, on peut faire 1 € de plus.",
+        "135 centimes = 100 centimes et 35 centimes = 1 € et 35 centimes.",
+        "Max a donc 2 €, plus 1 € : en comptant, 2, 3. Il a 3 € et 35 centimes.",
+        "Après la virgule, il reste moins de 100 centimes : on écrit **3,35 €**."
+      ],
+      "hint": "Avec 100 de ses centimes, Max peut faire 1 €.",
+      "estimated_duration_s": 60,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 2, CE1 : l'élève sait passer d'une écriture à une autre, par exemple 1 € et 120 centimes = 1 € + 1 € + 20 centimes = 2 € + 20 centimes = 2,20 €."
+    },
+    {
+      "id": "EX-D017-D-01",
+      "skill_id": "D017",
+      "level": "decouverte",
+      "type": "numerique",
+      "statement": "Un stylo coûte 4,35 € et une gomme 2,52 €.\n\nPose l'addition, virgule sous virgule, et calcule le prix total.",
+      "image": null,
+      "answer": {
+        "value": 6.87,
+        "unit": "€",
+        "accepted": [
+          "6,87 €",
+          "6,87 euros"
+        ]
+      },
+      "solution_steps": [
+        "On écrit 2,52 sous 4,35 en alignant les virgules : centimes sous centimes, dizaines de centimes sous dizaines de centimes, euros sous euros.",
+        "Centimes : $5 + 2 = 7$. On écrit 7.",
+        "Dizaines de centimes : $3 + 5 = 8$. On écrit 8.",
+        "On écrit la virgule du résultat sous les autres virgules.",
+        "Euros : $4 + 2 = 6$. On écrit 6. Le prix total est **6,87 €**."
+      ],
+      "hint": "Commence par la colonne des centimes, tout à droite.",
+      "estimated_duration_s": 60,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 2, CE2 : poser et effectuer des additions de montants en euro."
+    },
+    {
+      "id": "EX-D017-D-02",
+      "skill_id": "D017",
+      "level": "decouverte",
+      "type": "qcm",
+      "statement": "Pose et calcule la somme de 12,75 € et de 3,40 €.",
+      "image": null,
+      "choices": [
+        {
+          "key": "a",
+          "text": "15,15 €",
+          "misconception": "L'élève oublie la retenue : $7 + 4 = 11$ dizaines de centimes, soit 1 € et 1 dizaine de centimes. Il écrit 1 mais n'ajoute pas l'euro retenu dans la colonne des euros."
+        },
+        {
+          "key": "b",
+          "text": "15,115 €",
+          "misconception": "L'élève additionne à part les euros ($12 + 3 = 15$) et les centimes ($75 + 40 = 115$), puis colle les deux. Or 115 centimes, c'est 1 € et 15 centimes : l'euro doit passer du côté des euros."
+        },
+        {
+          "key": "c",
+          "text": "16,15 €",
+          "misconception": null
+        }
+      ],
+      "answer": {
+        "value": "c"
+      },
+      "solution_steps": [
+        "On pose 3,40 sous 12,75, virgule sous virgule.",
+        "Centimes : $5 + 0 = 5$. On écrit 5.",
+        "Dizaines de centimes : $7 + 4 = 11$. 11 dizaines de centimes, c'est 110 centimes, soit 1 € et 1 dizaine de centimes. On écrit 1 et on retient 1 €, noté en petit en haut de la colonne des unités d'euros.",
+        "On écrit la virgule. Unités d'euros : $1 + 2 + 3 = 6$. Dizaines d'euros : on recopie 1.",
+        "$12{,}75 + 3{,}40 = 16{,}15$ : la bonne réponse est **16,15 €**."
+      ],
+      "hint": "Que fais-tu quand la colonne des dizaines de centimes dépasse 9 ?",
+      "estimated_duration_s": 60,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 2, CE2 : les techniques posées rencontrées au CE1 pour l'addition et la soustraction des nombres entiers sont étendues au CE2 aux montants en euro utilisant l'écriture à virgule."
+    },
+    {
+      "id": "EX-D017-E-01",
+      "skill_id": "D017",
+      "level": "entrainement",
+      "type": "numerique",
+      "statement": "Hugo a 25,30 €. Il achète une BD à 13,85 €.\n\nPose la soustraction : combien d'argent lui reste-t-il ?",
+      "image": null,
+      "answer": {
+        "value": 11.45,
+        "unit": "€",
+        "accepted": [
+          "11,45 €",
+          "11,45 euros"
+        ]
+      },
+      "solution_steps": [
+        "On enlève le prix de la BD à l'argent d'Hugo : on pose 13,85 sous 25,30, virgule sous virgule.",
+        "Centimes : on ne peut pas enlever 5 à 0. On casse une des 3 dizaines de centimes : barre le 3, écris 2 au-dessus, et écris un petit 1 devant le 0. $10 - 5 = 5$.",
+        "Dizaines de centimes : il en reste 2, on ne peut pas enlever 8. On casse un des 5 euros : 1 €, c'est 10 dizaines de centimes. Barre le 5, écris 4 au-dessus, et écris un petit 1 devant le 2. $12 - 8 = 4$.",
+        "On écrit la virgule. Unités d'euros : $4 - 3 = 1$. Dizaines d'euros : $2 - 1 = 1$.",
+        "Il reste **11,45 €** à Hugo. On vérifie : $11{,}45 + 13{,}85 = 25{,}30$. Si ta classe utilise une autre méthode de soustraction, tu dois trouver le même résultat."
+      ],
+      "hint": "Aux centimes, il faut casser une dizaine de centimes. Aux dizaines de centimes, il faut casser un euro.",
+      "estimated_duration_s": 90,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 2, CE2 : poser et effectuer des soustractions de montants en euro."
+    },
+    {
+      "id": "EX-D017-E-02",
+      "skill_id": "D017",
+      "level": "entrainement",
+      "type": "vrai_faux",
+      "statement": "Nina doit payer 24,60 €, puis 15 €. Elle pose l'addition et trouve 24,75 €.\n\nA-t-elle raison ?",
+      "image": null,
+      "answer": {
+        "value": false
+      },
+      "solution_steps": [
+        "15 € n'a pas de centimes : 15 € s'écrit aussi 15,00 €. Son 5 compte des euros, pas des centimes.",
+        "Nina a aligné 15 à droite, sous le 60 : elle a ajouté 15 centimes au lieu de 15 euros.",
+        "On aligne les virgules : 15,00 sous 24,60. Centimes : $0 + 0 = 0$. Dizaines de centimes : $6 + 0 = 6$. Unités d'euros : $4 + 5 = 9$. Dizaines d'euros : $2 + 1 = 3$.",
+        "$24{,}60 + 15{,}00 = 39{,}60$ : Nina a **tort**. Payer 15 € de plus ne peut pas ajouter seulement 15 centimes."
+      ],
+      "hint": "Le 5 de 15 € compte-t-il des euros ou des centimes ? Où le places-tu ?",
+      "estimated_duration_s": 60,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 2, CE2 : poser et effectuer des additions de montants en euro ; l'élève sait poser et effectuer des additions pour des calculs comme 43,45 € + 68 €."
+    },
+    {
+      "id": "EX-D017-M-01",
+      "skill_id": "D017",
+      "level": "maitrise",
+      "type": "numerique",
+      "statement": "Paul achète des fraises à 3,75 € et du pain à 1,40 €. Il paie avec un billet de 10 €.\n\nCombien la marchande lui rend-elle ?",
+      "image": null,
+      "answer": {
+        "value": 4.85,
+        "unit": "€",
+        "accepted": [
+          "4,85 €",
+          "4,85 euros"
+        ]
+      },
+      "solution_steps": [
+        "Première étape, le prix total : on pose 1,40 sous 3,75, virgule sous virgule.",
+        "Centimes : $5 + 0 = 5$. Dizaines de centimes : $7 + 4 = 11$, on écrit 1 et on retient 1 €. Euros : $1 + 3 + 1 = 5$. Paul doit payer 5,15 €.",
+        "Deuxième étape, la monnaie rendue : on enlève 5,15 € aux 10 €. On écrit 10 € sous la forme 10,00 € pour avoir des centimes, puis on pose 5,15 dessous, virgule sous virgule.",
+        "Centimes : on ne peut pas enlever 5 à 0, et il n'y a ni dizaine de centimes ni unité d'euro à casser. On casse d'abord la dizaine d'euros : barre le 1 et écris 0 au-dessus, barre le 0 des unités d'euros et écris 10 au-dessus. On casse un de ces 10 euros, car 1 € = 10 dizaines de centimes : barre le 10 et écris 9 au-dessus, barre le 0 des dizaines de centimes et écris 10 au-dessus. On casse enfin une de ces 10 dizaines de centimes : barre le 10, écris 9 au-dessus, et écris un petit 1 devant le 0 des centimes.",
+        "Centimes : $10 - 5 = 5$. Dizaines de centimes : $9 - 1 = 8$. Unités d'euros : $9 - 5 = 4$.",
+        "La marchande rend **4,85 €**. On vérifie : $4{,}85 + 5{,}15 = 10{,}00$. On peut aussi rendre la monnaie en complétant : de 5,15 € à 6 €, 85 centimes ; de 6 € à 10 €, 4 € ; en tout 4,85 €. Si ta classe utilise une autre méthode de soustraction, tu dois trouver le même résultat."
+      ],
+      "hint": "Calcule d'abord le prix total, puis ce qui reste du billet de 10 €.",
+      "estimated_duration_s": 150,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 2, CE2 : simuler des achats en manipulant des pièces et des billets fictifs. Rendre la monnaie."
+    },
+    {
+      "id": "EX-D017-M-02",
+      "skill_id": "D017",
+      "level": "maitrise",
+      "type": "qcm",
+      "statement": "Théo pose $32{,}40 - 8{,}75$ (en euros) et trouve 36,35 €.\n\nQuelle est son erreur ?",
+      "image": null,
+      "choices": [
+        {
+          "key": "a",
+          "text": "Il a additionné les deux montants au lieu de les soustraire.",
+          "misconception": "L'élève voit un résultat trop grand et pense à une addition, sans vérifier : $32{,}40 + 8{,}75 = 41{,}15$, pas 36,35."
+        },
+        {
+          "key": "b",
+          "text": "Dans chaque colonne, il a enlevé le petit chiffre du grand, même quand le chiffre du haut était le plus petit.",
+          "misconception": null
+        },
+        {
+          "key": "c",
+          "text": "Il n'a pas aligné les virgules.",
+          "misconception": "L'élève pense à l'erreur d'alignement, fréquente. Mais les deux montants ont deux chiffres de centimes : 8,75 tombe sous 32,40 chiffre sous chiffre, que l'on aligne les virgules ou les chiffres de droite."
+        }
+      ],
+      "answer": {
+        "value": "b"
+      },
+      "solution_steps": [
+        "Une soustraction ne peut pas donner plus que le nombre de départ : 36,35 € est plus que 32,40 €. Théo s'est trompé.",
+        "Ses colonnes. Centimes : 0 en haut, 5 en bas ; il a écrit 5, comme pour $5 - 0$. Dizaines de centimes : 4 en haut, 7 en bas ; il a écrit 3, soit $7 - 4$. Unités d'euros : 2 en haut, 8 en bas ; il a écrit 6, soit $8 - 2$.",
+        "Quand le chiffre du haut est le plus petit, il faut casser une unité de la colonne de gauche : une dizaine de centimes, puis un euro, puis une dizaine d'euros.",
+        "Le bon calcul : $32{,}40 - 8{,}75 = 23{,}65$. On vérifie : $23{,}65 + 8{,}75 = 32{,}40$. La bonne réponse est **b**. Si ta classe utilise une autre méthode de soustraction, tu dois trouver le même résultat."
+      ],
+      "hint": "Une soustraction peut-elle donner plus que le nombre de départ ? Regarde ensuite chaque colonne.",
+      "estimated_duration_s": 120,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 2, CE2 : poser et effectuer des soustractions de montants en euro."
+    },
+    {
+      "id": "EX-D018-D-01",
+      "skill_id": "D018",
+      "level": "decouverte",
+      "type": "texte",
+      "statement": "Un carré est partagé en 100 petits carreaux égaux : chaque carreau est un centième du carré. On colorie 37 carreaux.\n\nQuelle fraction du carré est coloriée ? Écris-la sous la forme numérateur/dénominateur.",
+      "image": null,
+      "answer": {
+        "value": "37/100",
+        "accepted": [
+          "37 / 100"
+        ]
+      },
+      "solution_steps": [
+        "Le carré entier est partagé en 100 parts égales : le dénominateur est 100.",
+        "On a colorié 37 de ces parts : le numérateur est 37.",
+        "La partie coloriée est $\\frac{37}{100}$ du carré : trente-sept centièmes.",
+        "On peut ranger les 100 carreaux en 10 rangées de 10 : une rangée est alors un dixième du carré. 37 carreaux, c'est 3 rangées complètes et 7 carreaux : 3 dixièmes et 7 centièmes."
+      ],
+      "hint": "En combien de parts égales le carré est-il partagé ? Combien en a-t-on colorié ?",
+      "estimated_duration_s": 45,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 3, CM1 : interpréter, représenter, écrire et lire des fractions décimales."
+    },
+    {
+      "id": "EX-D018-D-02",
+      "skill_id": "D018",
+      "level": "decouverte",
+      "type": "qcm",
+      "statement": "Une unité est partagée en 10 dixièmes. Puis chaque dixième est partagé en 10 parts égales.\n\nQue vaut une de ces petites parts ?",
+      "image": null,
+      "choices": [
+        {
+          "key": "a",
+          "text": "une centaine",
+          "misconception": "L'élève confond centième et centaine. Une centaine vaut 100 unités, alors qu'une petite part est bien plus petite qu'une unité."
+        },
+        {
+          "key": "b",
+          "text": "un dixième",
+          "misconception": "L'élève pense que partager un dixième donne encore des dixièmes. Or il faut 100 de ces petites parts pour faire l'unité, et seulement 10 dixièmes."
+        },
+        {
+          "key": "c",
+          "text": "une dizaine",
+          "misconception": "L'élève confond dixième et dizaine. Une dizaine vaut 10 unités : c'est plus grand que l'unité, pas une part de l'unité."
+        },
+        {
+          "key": "d",
+          "text": "un centième",
+          "misconception": null
+        }
+      ],
+      "answer": {
+        "value": "d"
+      },
+      "solution_steps": [
+        "Les 10 dixièmes sont chacun coupés en 10 : l'unité est coupée en 10 paquets de 10, soit 100 petites parts égales.",
+        "Une part sur 100 parts égales de l'unité, c'est $\\frac{1}{100}$ : un **centième**.",
+        "Il faut 10 centièmes pour faire 1 dixième, et 100 centièmes pour faire l'unité.",
+        "Attention aux mots : une dizaine (10) et une centaine (100) sont plus grandes que l'unité ; un dixième et un centième sont plus petits."
+      ],
+      "hint": "En combien de petites parts égales l'unité est-elle partagée en tout ?",
+      "estimated_duration_s": 45,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 3, CM1 : connaître et utiliser les relations entre unités simples, dixièmes et centièmes."
+    },
+    {
+      "id": "EX-D018-E-01",
+      "skill_id": "D018",
+      "level": "entrainement",
+      "type": "numerique",
+      "statement": "Une unité vaut 100 centièmes, un dixième vaut 10 centièmes.\n\nCombien de centièmes y a-t-il en tout dans 2 unités et 6 dixièmes ?",
+      "image": null,
+      "answer": {
+        "value": 260,
+        "accepted": [
+          "260 centièmes",
+          "260 centiemes"
+        ]
+      },
+      "solution_steps": [
+        "2 unités : $100 + 100 = 200$ centièmes.",
+        "6 dixièmes : 6 paquets de 10 centièmes, soit 60 centièmes.",
+        "En tout : $200 + 60 = 260$ centièmes. On peut l'écrire $2 + \\frac{6}{10} = \\frac{260}{100}$.",
+        "Attention : 26, c'est le nombre de **dixièmes** (2 unités = 20 dixièmes, plus 6). En centièmes, il y en a 10 fois plus : 260."
+      ],
+      "hint": "Compte d'abord les centièmes contenus dans 2 unités.",
+      "estimated_duration_s": 60,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 3, CM1 : connaître et utiliser les relations entre unités simples, dixièmes et centièmes."
+    },
+    {
+      "id": "EX-D018-E-02",
+      "skill_id": "D018",
+      "level": "entrainement",
+      "type": "texte",
+      "statement": "Écris $\\frac{358}{100}$ comme la somme d'un entier et de fractions décimales de numérateur inférieur à 10.\n\nÉcris ta réponse sous la forme d'un entier plus deux fractions numérateur/dénominateur.",
+      "image": null,
+      "answer": {
+        "value": "3 + 5/10 + 8/100",
+        "accepted": [
+          "3+5/10+8/100",
+          "3 + 5 / 10 + 8 / 100",
+          "3 + 8/100 + 5/10",
+          "5/10 + 8/100 + 3",
+          "8/100 + 5/10 + 3",
+          "5/10 + 3 + 8/100",
+          "8/100 + 3 + 5/10"
+        ]
+      },
+      "solution_steps": [
+        "358 centièmes = 300 centièmes + 50 centièmes + 8 centièmes.",
+        "100 centièmes font 1 unité : 300 centièmes font 3 unités.",
+        "10 centièmes font 1 dixième : 50 centièmes font 5 dixièmes, $\\frac{5}{10}$.",
+        "Il reste 8 centièmes, $\\frac{8}{100}$. Donc $\\frac{358}{100} = 3 + \\frac{5}{10} + \\frac{8}{100}$.",
+        "Chaque chiffre de 358 a son rôle : le 3 compte des unités (et non des centaines), le 5 des dixièmes (et non des dizaines), le 8 des centièmes."
+      ],
+      "hint": "Combien d'unités entières font 300 centièmes ? Et combien de dixièmes font 50 centièmes ?",
+      "estimated_duration_s": 90,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 3, CM1 : écrire une fraction décimale supérieure à 1 comme la somme d'un nombre entier et de fractions décimales ayant un numérateur inférieur à 10."
+    },
+    {
+      "id": "EX-D018-M-01",
+      "skill_id": "D018",
+      "level": "maitrise",
+      "type": "numerique",
+      "statement": "Complète : $2 + \\frac{13}{10} + \\frac{5}{100} = \\frac{\\ldots}{100}$",
+      "image": null,
+      "answer": {
+        "value": 335
+      },
+      "solution_steps": [
+        "On convertit tout en centièmes.",
+        "2 unités = 200 centièmes, car 1 unité = 100 centièmes.",
+        "13 dixièmes = 130 centièmes, car chaque dixième vaut 10 centièmes.",
+        "Les 5 centièmes restent 5 centièmes. En tout : $200 + 130 + 5 = 335$, donc $2 + \\frac{13}{10} + \\frac{5}{100} = \\frac{335}{100}$.",
+        "Piège : recopier les nombres à la suite donne 2135. Mais 13 dixièmes, c'est 1 unité et 3 dixièmes : le nombre vaut 3 unités et 35 centièmes, pas plus de 21 unités."
+      ],
+      "hint": "13 dixièmes, c'est plus qu'une unité. Combien de centièmes cela fait-il ?",
+      "estimated_duration_s": 90,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 3, CM1 : connaître et utiliser les relations entre unités simples, dixièmes et centièmes."
+    },
+    {
+      "id": "EX-D018-M-02",
+      "skill_id": "D018",
+      "level": "maitrise",
+      "type": "vrai_faux",
+      "statement": "Léo remplit une carafe avec 7 verres de $\\frac{1}{10}$ de litre et 25 cuillères de $\\frac{1}{100}$ de litre.\n\nIl dit : « J'ai versé $\\frac{32}{100}$ de litre. » A-t-il raison ?",
+      "image": null,
+      "answer": {
+        "value": false
+      },
+      "solution_steps": [
+        "7 verres de $\\frac{1}{10}$ de litre : 7 dixièmes de litre, $\\frac{7}{10}$ L.",
+        "Un dixième vaut 10 centièmes : $\\frac{7}{10} = \\frac{70}{100}$.",
+        "25 cuillères de $\\frac{1}{100}$ de litre : $\\frac{25}{100}$ L.",
+        "En tout : $\\frac{70}{100} + \\frac{25}{100} = \\frac{95}{100}$ de litre.",
+        "Léo a ajouté 7 et 25 comme si c'étaient tous des centièmes : il a **tort**. Ses 7 verres valent à eux seuls $\\frac{70}{100}$ L, déjà plus que $\\frac{32}{100}$."
+      ],
+      "hint": "Un verre de $\\frac{1}{10}$ de litre, c'est combien de centièmes de litre ?",
+      "estimated_duration_s": 90,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 3, CM1 : connaître et utiliser les relations entre unités simples, dixièmes et centièmes."
+    },
+    {
+      "id": "EX-D019-D-01",
+      "skill_id": "D019",
+      "level": "decouverte",
+      "type": "numerique",
+      "statement": "Une demi-droite est graduée en dixièmes : entre 0 et 1, il y a 10 intervalles égaux.\n\nQuel nombre se trouve à la 7e graduation après 0 ?",
+      "image": null,
+      "answer": {
+        "value": 0.7,
+        "accepted": [
+          "7/10"
+        ]
+      },
+      "solution_steps": [
+        "L'unité, de 0 à 1, est partagée en 10 intervalles égaux : chaque intervalle vaut un dixième, $\\frac{1}{10}$.",
+        "À la 7e graduation après 0, on a avancé de 7 dixièmes : $\\frac{7}{10}$.",
+        "$\\frac{7}{10}$ s'écrit 0,7 : 0 unité et 7 dixièmes. Le nombre est **0,7**.",
+        "Rappel : le dénominateur 10 donne la taille d'un intervalle, le numérateur 7 dit combien on en parcourt."
+      ],
+      "hint": "Combien vaut un intervalle quand l'unité est partagée en 10 ?",
+      "estimated_duration_s": 45,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 3, CM1 : placer un nombre décimal en écriture à virgule sur une demi-droite graduée et repérer un point d'une demi-droite graduée par un nombre décimal."
+    },
+    {
+      "id": "EX-D019-D-02",
+      "skill_id": "D019",
+      "level": "decouverte",
+      "type": "qcm",
+      "statement": "Une demi-droite est graduée en dixièmes. On y lit la graduation 3 puis la graduation 4, avec 10 intervalles égaux entre elles.\n\nOù se place le nombre 3,6 ?",
+      "image": null,
+      "choices": [
+        {
+          "key": "a",
+          "text": "à la 7e graduation après 3",
+          "misconception": "L'élève compte les traits au lieu des intervalles : il compte la graduation 3 comme la première, 3,1 comme la deuxième, et arrive à 7 en atteignant 3,6."
+        },
+        {
+          "key": "b",
+          "text": "à la 6e graduation après 3",
+          "misconception": null
+        },
+        {
+          "key": "c",
+          "text": "à la 6e graduation après 0",
+          "misconception": "L'élève oublie la partie entière : il place 0,6 au lieu de 3,6."
+        }
+      ],
+      "answer": {
+        "value": "b"
+      },
+      "solution_steps": [
+        "3,6, c'est 3 unités et 6 dixièmes : on part de la graduation 3.",
+        "Entre 3 et 4, chaque intervalle vaut un dixième. On avance de 6 intervalles : 3,1 ; 3,2 ; 3,3 ; 3,4 ; 3,5 ; 3,6.",
+        "On ne compte pas la graduation 3 elle-même : la 1re graduation après 3 est 3,1.",
+        "3,6 est à la **6e graduation après 3**, juste après le milieu entre 3 et 4, qui est 3,5. La bonne réponse est b."
+      ],
+      "hint": "Pars de la graduation 3 et compte les intervalles, pas les traits.",
+      "estimated_duration_s": 60,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 3, CM1 : placer un nombre décimal en écriture à virgule sur une demi-droite graduée et repérer un point d'une demi-droite graduée par un nombre décimal."
+    },
+    {
+      "id": "EX-D019-E-01",
+      "skill_id": "D019",
+      "level": "entrainement",
+      "type": "numerique",
+      "statement": "Une demi-droite est graduée en centièmes : entre 7 et 7,1, il y a 10 intervalles égaux.\n\nQuel nombre se trouve à la 4e graduation après 7 ?",
+      "image": null,
+      "answer": {
+        "value": 7.04
+      },
+      "solution_steps": [
+        "De 7 à 7,1, on avance d'un dixième, c'est-à-dire de 10 centièmes : 7,1 = 7,10.",
+        "Ce dixième est partagé en 10 intervalles égaux : chaque intervalle vaut un centième.",
+        "À la 4e graduation après 7, on a avancé de 4 centièmes.",
+        "Piège : ce n'est pas 7,4. Le chiffre 4 doit être au rang des centièmes, d'où le 0 au rang des dixièmes. Le nombre est **7,04**."
+      ],
+      "hint": "Combien vaut un intervalle quand un dixième est partagé en 10 ?",
+      "estimated_duration_s": 75,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 3, CM1 : placer un nombre décimal en écriture à virgule sur une demi-droite graduée et repérer un point d'une demi-droite graduée par un nombre décimal."
+    },
+    {
+      "id": "EX-D019-E-02",
+      "skill_id": "D019",
+      "level": "entrainement",
+      "type": "texte",
+      "statement": "Une demi-droite est graduée en dixièmes à partir de 0. Le point A est à la 13e graduation après 0.\n\nRepère A par une fraction décimale, sous la forme numérateur/dénominateur.",
+      "image": null,
+      "answer": {
+        "value": "13/10",
+        "accepted": [
+          "13 / 10",
+          "130/100",
+          "130 / 100"
+        ]
+      },
+      "solution_steps": [
+        "Chaque intervalle vaut un dixième, $\\frac{1}{10}$.",
+        "À la 13e graduation, on a parcouru 13 dixièmes : l'abscisse de A est $\\frac{13}{10}$.",
+        "10 dixièmes font une unité : $\\frac{13}{10} = 1 + \\frac{3}{10}$, soit 1,3. A est entre 1 et 2, à la 3e graduation après 1.",
+        "On peut aussi écrire 1,3, l'écriture à virgule. La question demandait la fraction décimale : $\\frac{13}{10}$."
+      ],
+      "hint": "Chaque graduation ajoute un dixième. Combien de dixièmes en tout ?",
+      "estimated_duration_s": 75,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 3, CM1 : placer une fraction décimale sur une demi-droite graduée et repérer un point d'une demi-droite graduée par une fraction décimale."
+    },
+    {
+      "id": "EX-D019-M-01",
+      "skill_id": "D019",
+      "level": "maitrise",
+      "type": "vrai_faux",
+      "statement": "Une demi-droite est graduée en dixièmes : 10 intervalles égaux entre 5 et 6.\n\nLéo place 5,25 à la 25e graduation après 5. A-t-il raison ?",
+      "image": null,
+      "answer": {
+        "value": false
+      },
+      "solution_steps": [
+        "Chaque intervalle vaut un dixième. La 25e graduation après 5 est 25 dixièmes plus loin, soit 2 unités et 5 dixièmes : on arriverait à 7,5.",
+        "5,25, c'est 5 unités, 2 dixièmes et 5 centièmes. Il est entre 5,2 et 5,3 : $5{,}2 < 5{,}25 < 5{,}3$.",
+        "5,25 dépasse 5,20 de 5 centièmes, la moitié d'un dixième : le point est au milieu entre la 2e et la 3e graduation après 5.",
+        "Léo a lu 25 comme un nombre de dixièmes. Il a **tort**."
+      ],
+      "hint": "Dans 5,25, quel chiffre compte les dixièmes ?",
+      "estimated_duration_s": 120,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 3, CM1 : placer un nombre décimal en écriture à virgule sur une demi-droite graduée et repérer un point d'une demi-droite graduée par un nombre décimal."
+    },
+    {
+      "id": "EX-D019-M-02",
+      "skill_id": "D019",
+      "level": "maitrise",
+      "type": "numerique",
+      "statement": "Une demi-droite est graduée en centièmes. Un point se trouve 6 graduations après 1,97.\n\nQuelle est son abscisse ?",
+      "image": null,
+      "answer": {
+        "value": 2.03
+      },
+      "solution_steps": [
+        "Chaque graduation vaut un centième : on avance de 6 centièmes à partir de 1,97.",
+        "On compte : 1,98 ; 1,99 ; puis 2, car 100 centièmes font une unité ; 2,01 ; 2,02 ; 2,03.",
+        "Le point a pour abscisse **2,03**. En chemin, on a franchi la graduation 2.",
+        "Piège : ajouter 6 à 97 et écrire 1,103. Après 1,99, on ne passe pas à « 1,100 » : on arrive à 2."
+      ],
+      "hint": "Compte de centième en centième. Que vient-il après 1,99 ?",
+      "estimated_duration_s": 120,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 3, CM1 : placer un nombre décimal en écriture à virgule sur une demi-droite graduée et repérer un point d'une demi-droite graduée par un nombre décimal."
+    },
+    {
+      "id": "EX-D020-D-01",
+      "skill_id": "D020",
+      "level": "decouverte",
+      "type": "numerique",
+      "statement": "Un timbre mesure 2,4 cm de large. On colle 10 timbres côte à côte, sans espace.\n\nCalcule $2{,}4 \\times 10$ pour trouver la longueur de la bande, en centimètres.",
+      "image": null,
+      "answer": {
+        "value": 24,
+        "unit": "cm",
+        "accepted": [
+          "24 cm"
+        ]
+      },
+      "solution_steps": [
+        "2,4, c'est 2 unités et 4 dixièmes.",
+        "Multiplier par 10 rend chaque chiffre 10 fois plus grand. 10 dixièmes font 1 unité : les 4 dixièmes deviennent 4 unités. 10 unités font 1 dizaine : les 2 unités deviennent 2 dizaines.",
+        "2 dizaines et 4 unités : $2{,}4 \\times 10 = 24$. Chaque chiffre a avancé d'un rang vers la gauche.",
+        "La bande mesure **24 cm**."
+      ],
+      "hint": "Quand on multiplie par 10, que deviennent les 4 dixièmes de 2,4 ?",
+      "estimated_duration_s": 60,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 3, CM1, calcul mental : multiplier un nombre décimal par 10."
+    },
+    {
+      "id": "EX-D020-D-02",
+      "skill_id": "D020",
+      "level": "decouverte",
+      "type": "qcm",
+      "statement": "On verse 8,5 L de jus dans 10 carafes, la même quantité dans chaque carafe.\n\nCombien de litres y a-t-il dans une carafe ?",
+      "image": null,
+      "choices": [
+        {
+          "key": "a",
+          "text": "85 L",
+          "misconception": "L'élève multiplie par 10 au lieu de diviser : une carafe contiendrait plus que les 8,5 L de départ, ce qui est impossible pour un partage."
+        },
+        {
+          "key": "b",
+          "text": "8,05 L",
+          "misconception": "L'élève croit que diviser par 10, c'est glisser un zéro après la virgule. Mais 10 carafes de 8,05 L feraient 80,5 L, pas 8,5 L."
+        },
+        {
+          "key": "c",
+          "text": "0,85 L",
+          "misconception": null
+        }
+      ],
+      "answer": {
+        "value": "c"
+      },
+      "solution_steps": [
+        "On partage 8,5 L en 10 parts égales : on calcule $8{,}5 \\div 10$.",
+        "Diviser par 10 rend chaque chiffre 10 fois plus petit. Une unité, c'est 10 dixièmes : les 8 unités deviennent 8 dixièmes. Un dixième, c'est 10 centièmes : les 5 dixièmes deviennent 5 centièmes.",
+        "0 unité, 8 dixièmes et 5 centièmes s'écrivent 0,85. Chaque chiffre a reculé d'un rang vers la droite.",
+        "Vérification par la multiplication : $0{,}85 \\times 10 = 8{,}5$. Chaque carafe contient **0,85 L**."
+      ],
+      "hint": "Que deviennent les 8 unités quand on divise par 10 ? Et les 5 dixièmes ?",
+      "estimated_duration_s": 60,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 3, CM1, calcul mental : diviser un nombre décimal par 10."
+    },
+    {
+      "id": "EX-D020-E-01",
+      "skill_id": "D020",
+      "level": "entrainement",
+      "type": "numerique",
+      "statement": "Calcule mentalement $0{,}37 \\times 10$.",
+      "image": null,
+      "answer": {
+        "value": 3.7,
+        "accepted": [
+          "3,70"
+        ]
+      },
+      "solution_steps": [
+        "0,37, c'est 3 dixièmes et 7 centièmes.",
+        "Multiplier par 10 rend chaque chiffre 10 fois plus grand : les 3 dixièmes deviennent 3 unités, les 7 centièmes deviennent 7 dixièmes.",
+        "3 unités et 7 dixièmes : $0{,}37 \\times 10 = 3{,}7$.",
+        "Écrire un zéro à droite de 0,37 ne multiplie pas par 10 : 0,370 est le même nombre. Ce n'est pas 37 non plus : seuls les 3 dixièmes deviennent des unités, il y a donc 3 unités, pas 37."
+      ],
+      "hint": "Que deviennent les 3 dixièmes quand on multiplie par 10 ?",
+      "estimated_duration_s": 45,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 3, CM1, calcul mental : multiplier un nombre décimal par 10."
+    },
+    {
+      "id": "EX-D020-E-02",
+      "skill_id": "D020",
+      "level": "entrainement",
+      "type": "vrai_faux",
+      "statement": "Tom dit : « $4{,}6 \\times 10 = 4{,}60$, car multiplier par 10, c'est écrire un zéro à droite. »\n\nTom a-t-il raison ?",
+      "image": null,
+      "answer": {
+        "value": false
+      },
+      "solution_steps": [
+        "4,60 et 4,6 sont le **même nombre** : 6 dixièmes font 60 centièmes. Écrire un zéro à droite après la virgule ne change rien, donc ne multiplie pas par 10.",
+        "4,6, c'est 4 unités et 6 dixièmes. Multiplier par 10 rend chaque chiffre 10 fois plus grand : les 4 unités deviennent 4 dizaines, les 6 dixièmes deviennent 6 unités.",
+        "$4{,}6 \\times 10 = 46$.",
+        "C'est **faux**. « Écrire un zéro à droite » marche pour un entier ($46 \\times 10 = 460$), pas pour un nombre à virgule."
+      ],
+      "hint": "4,60 est-il plus grand que 4,6 ?",
+      "estimated_duration_s": 50,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 3, CM1, calcul mental : multiplier un nombre décimal par 10."
+    },
+    {
+      "id": "EX-D020-M-01",
+      "skill_id": "D020",
+      "level": "maitrise",
+      "type": "numerique",
+      "statement": "Une pile de 10 livres identiques mesure 31,5 cm de haut.\n\nQuelle est l'épaisseur d'un livre, en centimètres ?",
+      "image": null,
+      "answer": {
+        "value": 3.15,
+        "unit": "cm",
+        "accepted": [
+          "3,15 cm"
+        ]
+      },
+      "solution_steps": [
+        "Les 10 livres ont la même épaisseur : on partage 31,5 cm en 10, on calcule $31{,}5 \\div 10$.",
+        "Diviser par 10 rend chaque chiffre 10 fois plus petit : les 3 dizaines deviennent 3 unités, l'unité devient 1 dixième, les 5 dixièmes deviennent 5 centièmes.",
+        "3 unités, 1 dixième et 5 centièmes : $31{,}5 \\div 10 = 3{,}15$.",
+        "Vérification : $3{,}15 \\times 10 = 31{,}5$. Un livre mesure **3,15 cm** d'épaisseur."
+      ],
+      "hint": "On connaît la hauteur de 10 livres et on cherche celle d'un seul : faut-il multiplier ou diviser par 10 ?",
+      "estimated_duration_s": 70,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 3, CM1, calcul mental : diviser un nombre décimal par 10."
+    },
+    {
+      "id": "EX-D020-M-02",
+      "skill_id": "D020",
+      "level": "maitrise",
+      "type": "qcm",
+      "statement": "Lina pense à un nombre. Elle le multiplie par 10 et trouve 30,4.\n\nÀ quel nombre a-t-elle pensé ?",
+      "image": null,
+      "choices": [
+        {
+          "key": "a",
+          "text": "304",
+          "misconception": "L'élève multiplie 30,4 par 10 au lieu de faire l'opération inverse : 304 est le résultat de $30{,}4 \\times 10$, pas le nombre de départ."
+        },
+        {
+          "key": "b",
+          "text": "3,04",
+          "misconception": null
+        },
+        {
+          "key": "c",
+          "text": "30,04",
+          "misconception": "L'élève croit que diviser par 10, c'est glisser un zéro après la virgule. Mais $30{,}04 \\times 10 = 300{,}4$, pas 30,4."
+        },
+        {
+          "key": "d",
+          "text": "3,4",
+          "misconception": "L'élève enlève le zéro de 30,4, en pensant que diviser par 10, c'est effacer un zéro. Mais $3{,}4 \\times 10 = 34$, pas 30,4 : le 0 occupait le rang des unités."
+        }
+      ],
+      "answer": {
+        "value": "b"
+      },
+      "solution_steps": [
+        "Lina a multiplié par 10. Pour retrouver son nombre, on fait l'opération inverse : on divise 30,4 par 10.",
+        "30,4, c'est 3 dizaines, 0 unité et 4 dixièmes. Diviser par 10 rend chaque chiffre 10 fois plus petit : 3 dizaines deviennent 3 unités, 0 unité devient 0 dixième, 4 dixièmes deviennent 4 centièmes.",
+        "3 unités, 0 dixième et 4 centièmes : $30{,}4 \\div 10 = 3{,}04$. Le 0 garde sa place : il devient le chiffre des dixièmes.",
+        "Vérification : $3{,}04 \\times 10 = 30{,}4$. Lina a pensé à **3,04**."
+      ],
+      "hint": "Quelle opération défait une multiplication par 10 ?",
+      "estimated_duration_s": 75,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 3, CM1, calcul mental : diviser un nombre décimal par 10."
+    },
+    {
+      "id": "EX-D021-D-01",
+      "skill_id": "D021",
+      "level": "decouverte",
+      "type": "numerique",
+      "statement": "Un cahier coûte 2,47 €. Combien coûtent 3 cahiers ?\n\nPose la multiplication $2{,}47 \\times 3$.",
+      "image": null,
+      "answer": {
+        "value": 7.41,
+        "unit": "€",
+        "accepted": [
+          "7,41 €"
+        ]
+      },
+      "solution_steps": [
+        "3 cahiers à 2,47 € : on calcule $2{,}47 \\times 3$. On pose 2,47 en haut et 3 en dessous, sous le dernier chiffre de droite, le 7. Pour l'instant, on ne s'occupe pas de la virgule : on calcule comme pour $247 \\times 3$.",
+        "Chiffre de droite : $3 \\times 7 = 21$, on écrit 1 et on retient 2. Chiffre suivant : $3 \\times 4 = 12$, plus 2 de retenue, cela fait 14 : on écrit 4 et on retient 1. Dernier chiffre : $3 \\times 2 = 6$, plus 1 de retenue, cela fait 7. On obtient 741.",
+        "Où placer la virgule ? 2,47, c'est 247 centièmes. 3 fois 247 centièmes font 741 centièmes, c'est-à-dire 7 unités et 41 centièmes : 7,41.",
+        "À retenir : 2,47 a deux chiffres après la virgule, le produit en a deux aussi. On place la virgule en comptant deux chiffres à partir de la droite : $2{,}47 \\times 3 = 7{,}41$. Les 3 cahiers coûtent **7,41 €**."
+      ],
+      "hint": "Calcule d'abord sans la virgule, puis demande-toi combien de centièmes tu as obtenus.",
+      "estimated_duration_s": 90,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 3, CM1 : poser et effectuer des multiplications d'un nombre décimal par un nombre entier inférieur à 10."
+    },
+    {
+      "id": "EX-D021-D-02",
+      "skill_id": "D021",
+      "level": "decouverte",
+      "type": "qcm",
+      "statement": "Lina pose bout à bout 4 planches de 1,8 m.\n\nQuelle longueur obtient-elle ?",
+      "image": null,
+      "choices": [
+        {
+          "key": "a",
+          "text": "72 m",
+          "misconception": "L'élève calcule bien 18 × 4 = 72, mais oublie de remettre la virgule dans le résultat."
+        },
+        {
+          "key": "b",
+          "text": "4,32 m",
+          "misconception": "L'élève multiplie séparément la partie entière et la partie décimale : 1 × 4 = 4, puis 8 × 4 = 32, et colle les deux résultats. Il oublie que 32 dixièmes font plus de 3 unités."
+        },
+        {
+          "key": "c",
+          "text": "7,2 m",
+          "misconception": null
+        }
+      ],
+      "answer": {
+        "value": "c"
+      },
+      "solution_steps": [
+        "4 planches de 1,8 m : on calcule $1{,}8 \\times 4$. On pose 1,8 en haut et 4 sous le 8, et on calcule comme pour $18 \\times 4$.",
+        "$4 \\times 8 = 32$ : on écrit 2 et on retient 3. Puis $4 \\times 1 = 4$, plus 3 de retenue, cela fait 7. On obtient 72.",
+        "1,8, c'est 18 dixièmes. 4 fois 18 dixièmes font 72 dixièmes, soit 7 unités et 2 dixièmes : 7,2.",
+        "1,8 a un chiffre après la virgule, le produit aussi : $1{,}8 \\times 4 = 7{,}2$. Lina obtient **7,2 m** : la bonne réponse est c."
+      ],
+      "hint": "1,8 m, c'est 18 dixièmes de mètre. Combien de dixièmes dans 4 planches ?",
+      "estimated_duration_s": 75,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 3, CM1 : poser et effectuer des multiplications d'un nombre décimal par un nombre entier inférieur à 10."
+    },
+    {
+      "id": "EX-D021-E-01",
+      "skill_id": "D021",
+      "level": "entrainement",
+      "type": "numerique",
+      "statement": "Une bouteille de jus contient 0,75 L.\n\nCombien de litres de jus y a-t-il dans un pack de 6 bouteilles ?",
+      "image": null,
+      "answer": {
+        "value": 4.5,
+        "unit": "L",
+        "accepted": [
+          "4,5 L",
+          "4,50 L"
+        ]
+      },
+      "solution_steps": [
+        "On calcule $0{,}75 \\times 6$, posé comme $75 \\times 6$ : $6 \\times 5 = 30$, on écrit 0 et on retient 3 ; $6 \\times 7 = 42$, plus 3 de retenue, cela fait 45. On obtient 450.",
+        "0,75, c'est 75 centièmes. 6 fois 75 centièmes font 450 centièmes : il faut deux chiffres après la virgule, comme dans 0,75. On place la virgule : 4,50.",
+        "Le 0 à la fin de 4,50 ne change pas la valeur : 4 unités et 5 dixièmes, c'est 4,5. Attention, on place la virgule **avant** d'effacer ce 0 : en l'effaçant d'abord, on garderait 45 et on écrirait 0,45, ce qui est faux.",
+        "Le pack contient **4,5 L**. Contrôle : chaque bouteille contient moins d'un litre, donc 6 bouteilles moins de 6 L ; mais plus d'un demi-litre (75 centièmes, c'est plus que 50 centièmes), donc 2 bouteilles plus de 1 L et 6 bouteilles plus de 3 L. 4,5 L convient, pas 0,45 L."
+      ],
+      "hint": "0,75 L, c'est 75 centièmes de litre.",
+      "estimated_duration_s": 90,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 3, CM1 : poser et effectuer des multiplications d'un nombre décimal par un nombre entier inférieur à 10."
+    },
+    {
+      "id": "EX-D021-E-02",
+      "skill_id": "D021",
+      "level": "entrainement",
+      "type": "qcm",
+      "statement": "Un ticket de bus coûte 1,45 €.\n\nCombien coûtent 9 tickets ?",
+      "image": null,
+      "choices": [
+        {
+          "key": "a",
+          "text": "13,05 €",
+          "misconception": null
+        },
+        {
+          "key": "b",
+          "text": "9,405 €",
+          "misconception": "L'élève multiplie séparément la partie entière et la partie décimale : 1 × 9 = 9 et 45 × 9 = 405, puis colle les résultats. Or 405 centièmes, c'est plus de 4 unités."
+        },
+        {
+          "key": "c",
+          "text": "130,5 €",
+          "misconception": "L'élève calcule bien 145 × 9 = 1 305, mais ne laisse qu'un seul chiffre après la virgule, alors que 1,45 en a deux."
+        }
+      ],
+      "answer": {
+        "value": "a"
+      },
+      "solution_steps": [
+        "On calcule $1{,}45 \\times 9$, posé comme $145 \\times 9$.",
+        "$9 \\times 5 = 45$ : on écrit 5 et on retient 4. $9 \\times 4 = 36$, plus 4 de retenue, cela fait 40 : on écrit 0 et on retient 4. $9 \\times 1 = 9$, plus 4 de retenue, cela fait 13. On obtient 1 305.",
+        "1,45 a deux chiffres après la virgule : 1 305 centièmes, c'est 13,05. Le 0 des dixièmes doit rester écrit.",
+        "Contrôle : un ticket coûte entre 1 € et 2 €, donc 9 tickets coûtent entre 9 € et 18 € : 130,5 € est impossible. 9,405 € aussi, car un prix s'écrit avec deux chiffres après la virgule, les centimes. **13,05 €** convient : la bonne réponse est a."
+      ],
+      "hint": "Pose 145 × 9, puis compte les chiffres après la virgule dans 1,45.",
+      "estimated_duration_s": 90,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 3, CM1 : poser et effectuer des multiplications d'un nombre décimal par un nombre entier inférieur à 10."
+    },
+    {
+      "id": "EX-D021-M-01",
+      "skill_id": "D021",
+      "level": "maitrise",
+      "type": "numerique",
+      "statement": "Pour un bouquet, un fleuriste utilise 0,65 m de ruban. Il fait 5 bouquets le matin et 3 l'après-midi.\n\nQuelle longueur de ruban utilise-t-il ?",
+      "image": null,
+      "answer": {
+        "value": 5.2,
+        "unit": "m",
+        "accepted": [
+          "5,2 m",
+          "5,20 m"
+        ]
+      },
+      "solution_steps": [
+        "Nombre de bouquets : $5 + 3 = 8$.",
+        "Ruban : $0{,}65 \\times 8$, posé comme $65 \\times 8$ : $8 \\times 5 = 40$, on écrit 0 et on retient 4 ; $8 \\times 6 = 48$, plus 4 de retenue, cela fait 52. On obtient 520.",
+        "0,65 a deux chiffres après la virgule : 520 centièmes, c'est 5,20. Une fois la virgule placée, le 0 final peut s'effacer : 5,2.",
+        "Le fleuriste utilise **5,2 m** de ruban. Contrôle : chaque bouquet prend moins d'un mètre, donc 8 bouquets moins de 8 m ; mais plus d'un demi-mètre (65 centièmes, c'est plus que 50 centièmes), donc 2 bouquets plus de 1 m et 8 bouquets plus de 4 m. 5,2 m convient, pas 0,52 m."
+      ],
+      "hint": "Cherche d'abord combien de bouquets il fait en tout.",
+      "estimated_duration_s": 120,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 3, CM1 : poser et effectuer des multiplications d'un nombre décimal par un nombre entier inférieur à 10."
+    },
+    {
+      "id": "EX-D021-M-02",
+      "skill_id": "D021",
+      "level": "maitrise",
+      "type": "vrai_faux",
+      "statement": "Une gourde contient 1,25 L.\n\nVrai ou faux : 4 gourdes contiennent un nombre entier de litres.",
+      "image": null,
+      "answer": {
+        "value": true
+      },
+      "solution_steps": [
+        "On calcule $1{,}25 \\times 4$, posé comme $125 \\times 4$ : $4 \\times 5 = 20$, on écrit 0 et on retient 2 ; $4 \\times 2 = 8$, plus 2, cela fait 10, on écrit 0 et on retient 1 ; $4 \\times 1 = 4$, plus 1, cela fait 5. On obtient 500.",
+        "1,25 a deux chiffres après la virgule : 500 centièmes, c'est 5,00.",
+        "5,00, c'est 5 unités, 0 dixième et 0 centième : c'est le nombre entier 5. Multiplier un nombre à virgule par un entier peut donner un entier.",
+        "C'est **vrai** : 4 gourdes contiennent 5 L."
+      ],
+      "hint": "Pose la multiplication, place la virgule, puis regarde les chiffres après la virgule.",
+      "estimated_duration_s": 90,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 3, CM1 : poser et effectuer des multiplications d'un nombre décimal par un nombre entier inférieur à 10."
+    },
+    {
+      "id": "EX-D022-D-01",
+      "skill_id": "D022",
+      "level": "decouverte",
+      "type": "numerique",
+      "statement": "Après la virgule viennent les dixièmes, les centièmes, puis les millièmes.\n\nÉcris avec une virgule : $2 + \\frac{4}{10} + \\frac{6}{1000}$",
+      "image": null,
+      "answer": {
+        "value": 2.406
+      },
+      "solution_steps": [
+        "Partie entière : 2, avant la virgule.",
+        "Dixièmes : 4, juste après la virgule.",
+        "Centièmes : il n'y en a pas. On écrit 0 pour garder la place.",
+        "Millièmes : 6, au troisième rang après la virgule.",
+        "$2 + \\frac{4}{10} + \\frac{6}{1000} = 2{,}406$. Sans le 0, on écrirait 2,46, qui signifie 4 dixièmes et 6 centièmes."
+      ],
+      "hint": "Y a-t-il des centièmes dans ce nombre ?",
+      "estimated_duration_s": 45,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 3, CM2 : passer d'une écriture sous forme d'une fraction décimale ou de la somme de fractions décimales à une écriture à virgule et réciproquement."
+    },
+    {
+      "id": "EX-D022-D-02",
+      "skill_id": "D022",
+      "level": "decouverte",
+      "type": "qcm",
+      "statement": "Une unité est partagée en 1 000 millièmes.\n\n1 centième, c'est combien de millièmes ?",
+      "image": null,
+      "choices": [
+        {
+          "key": "a",
+          "text": "10 millièmes",
+          "misconception": null
+        },
+        {
+          "key": "b",
+          "text": "100 millièmes",
+          "misconception": "L'élève reprend la relation entre l'unité et les centièmes (1 = 100 centièmes) au lieu de passer d'un seul rang. Or 100 millièmes, c'est 1 dixième."
+        },
+        {
+          "key": "c",
+          "text": "1 000 millièmes",
+          "misconception": "L'élève confond le centième avec l'unité entière : 1 000 millièmes font 1 unité, pas 1 centième."
+        },
+        {
+          "key": "d",
+          "text": "10 milliers",
+          "misconception": "L'élève confond millième et millier. Un millier vaut 1 000 unités ; un millième est une part de l'unité partagée en 1 000."
+        }
+      ],
+      "answer": {
+        "value": "a"
+      },
+      "solution_steps": [
+        "Un centième, c'est l'unité partagée en 100. Un millième, c'est l'unité partagée en 1 000.",
+        "D'un rang au suivant, on partage en 10 : 1 unité = 10 dixièmes, 1 dixième = 10 centièmes, 1 centième = 10 millièmes.",
+        "Vérification : 100 centièmes de 10 millièmes chacun font 1 000 millièmes, l'unité entière.",
+        "1 centième = **10 millièmes**, soit $\\frac{1}{100} = \\frac{10}{1000}$."
+      ],
+      "hint": "Pense au lien entre deux rangs voisins, comme entre dixièmes et centièmes.",
+      "estimated_duration_s": 40,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 3, CM2 : connaître et utiliser les relations entre unités simples, dixièmes, centièmes et millièmes."
+    },
+    {
+      "id": "EX-D022-E-01",
+      "skill_id": "D022",
+      "level": "entrainement",
+      "type": "vrai_faux",
+      "statement": "Jules écrit : $\\frac{4053}{1000} = 4{,}53$.\n\nA-t-il raison ?",
+      "image": null,
+      "answer": {
+        "value": false
+      },
+      "solution_steps": [
+        "4053 millièmes = 4000 millièmes + 53 millièmes.",
+        "1 000 millièmes font 1 unité : 4000 millièmes font 4 unités.",
+        "53 millièmes = 50 millièmes + 3 millièmes = 5 centièmes et 3 millièmes, car 10 millièmes = 1 centième. Il n'y a aucun dixième.",
+        "Donc $\\frac{4053}{1000} = 4{,}053$, avec un 0 au rang des dixièmes.",
+        "4,53, c'est 4 unités, 5 dixièmes et 3 centièmes, soit $\\frac{4530}{1000}$ : Jules a **tort**, il a oublié le 0 des dixièmes."
+      ],
+      "hint": "Avec des millièmes, combien de chiffres faut-il après la virgule ?",
+      "estimated_duration_s": 60,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 3, CM2 : passer d'une écriture sous forme d'une fraction décimale ou de la somme de fractions décimales à une écriture à virgule et réciproquement."
+    },
+    {
+      "id": "EX-D022-E-02",
+      "skill_id": "D022",
+      "level": "entrainement",
+      "type": "qcm",
+      "statement": "Range dans l'ordre croissant : 7,45 ; 7,4 ; 7,409",
+      "image": null,
+      "choices": [
+        {
+          "key": "a",
+          "text": "7,409 ; 7,45 ; 7,4",
+          "misconception": "L'élève pense que plus il y a de chiffres après la virgule, plus le nombre est petit, comme si des millièmes étaient toujours plus petits que des dixièmes. Or 7,4 = 7,400 est le plus petit des trois."
+        },
+        {
+          "key": "b",
+          "text": "7,4 ; 7,409 ; 7,45",
+          "misconception": null
+        },
+        {
+          "key": "c",
+          "text": "7,4 ; 7,45 ; 7,409",
+          "misconception": "L'élève compare les parties décimales comme des entiers : $4 < 45 < 409$. Plus il y a de chiffres après la virgule, plus le nombre lui paraît grand."
+        }
+      ],
+      "answer": {
+        "value": "b"
+      },
+      "solution_steps": [
+        "Les trois nombres ont la même partie entière, 7 : on compare les rangs après la virgule, un par un.",
+        "Dixièmes : 4 pour les trois. Égalité.",
+        "Centièmes : 7,45 en a 5 ; 7,4 et 7,409 en ont 0. Donc 7,45 est le plus grand.",
+        "Millièmes, pour départager 7,4 = 7,400 et 7,409 : $0 < 9$, donc 7,4 < 7,409.",
+        "Ordre croissant : 7,4 ; 7,409 ; 7,45. Le nombre de chiffres après la virgule ne dit rien de la taille : 7,409 en a plus que 7,45, et il est plus petit."
+      ],
+      "hint": "Compare d'abord les dixièmes, puis les centièmes, puis les millièmes.",
+      "estimated_duration_s": 60,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 3, CM2 : comparer, encadrer, intercaler, ordonner par ordre croissant ou décroissant des nombres décimaux donnés par leur écriture à virgule en utilisant les symboles =, < et >."
+    },
+    {
+      "id": "EX-D022-M-01",
+      "skill_id": "D022",
+      "level": "maitrise",
+      "type": "numerique",
+      "statement": "Un nombre est formé de 1 unité, 5 dixièmes et 7 millièmes.\n\nCombien de millièmes contient-il en tout ?",
+      "image": null,
+      "answer": {
+        "value": 1507,
+        "accepted": [
+          "1507 millièmes",
+          "1507 milliemes"
+        ]
+      },
+      "solution_steps": [
+        "1 unité = 1 000 millièmes.",
+        "1 dixième = 10 centièmes, et chaque centième vaut 10 millièmes : 1 dixième = 100 millièmes. Donc 5 dixièmes = 500 millièmes.",
+        "Il reste 7 millièmes.",
+        "En tout : $1000 + 500 + 7 = 1507$ millièmes. Le nombre s'écrit 1,507, c'est-à-dire $\\frac{1507}{1000}$.",
+        "Piège : coller les chiffres 1 ; 5 ; 7 donne 157 millièmes, ce qui ne fait même pas une unité."
+      ],
+      "hint": "Commence par l'unité : combien de millièmes vaut-elle ?",
+      "estimated_duration_s": 75,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 3, CM2 : connaître et utiliser les relations entre unités simples, dixièmes, centièmes et millièmes."
+    },
+    {
+      "id": "EX-D022-M-02",
+      "skill_id": "D022",
+      "level": "maitrise",
+      "type": "qcm",
+      "statement": "Une seule de ces écritures n'est pas égale à 5,06. Laquelle ?",
+      "image": null,
+      "choices": [
+        {
+          "key": "a",
+          "text": "$\\frac{506}{100}$",
+          "misconception": "L'élève lit 506 centièmes comme 50,6 : il oublie que 100 centièmes font 1 unité, donc que 500 centièmes font seulement 5 unités."
+        },
+        {
+          "key": "b",
+          "text": "$5 + \\frac{60}{1000}$",
+          "misconception": "L'élève pense que 60 millièmes ne peuvent pas valoir 6 centièmes. Or 10 millièmes = 1 centième, donc 60 millièmes = 6 centièmes."
+        },
+        {
+          "key": "c",
+          "text": "$\\frac{5060}{1000}$",
+          "misconception": "L'élève croit qu'un zéro de plus change la valeur. 5060 millièmes = 5000 millièmes + 60 millièmes = 5 unités et 6 centièmes."
+        },
+        {
+          "key": "d",
+          "text": "$5 + \\frac{6}{10}$",
+          "misconception": null
+        }
+      ],
+      "answer": {
+        "value": "d"
+      },
+      "solution_steps": [
+        "5,06, c'est 5 unités, 0 dixième et 6 centièmes.",
+        "a : 506 centièmes = 500 centièmes + 6 centièmes = 5 unités et 6 centièmes. Égal à 5,06.",
+        "b : 60 millièmes = 6 centièmes. $5 + \\frac{60}{1000} = 5{,}060 = 5{,}06$. Égal.",
+        "c : 5060 millièmes = 5000 millièmes + 60 millièmes = 5 unités et 6 centièmes. Égal.",
+        "d : $5 + \\frac{6}{10}$, c'est 5 unités et 6 **dixièmes**, soit 5,6 = 5,60 : 60 centièmes, et non 6. C'est l'écriture qui n'est pas égale à 5,06."
+      ],
+      "hint": "Écris chaque proposition avec une virgule, puis compare.",
+      "estimated_duration_s": 120,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 3, CM2 : passer d'une écriture sous forme d'une fraction décimale ou de la somme de fractions décimales à une écriture à virgule et réciproquement."
+    },
+    {
+      "id": "EX-D023-D-01",
+      "skill_id": "D023",
+      "level": "decouverte",
+      "type": "numerique",
+      "statement": "Une boîte contient 100 sachets de thé. Chaque sachet contient 2,5 g de thé.\n\nCalcule $2{,}5 \\times 100$ : quelle masse de thé y a-t-il dans la boîte, en grammes ?",
+      "image": null,
+      "answer": {
+        "value": 250,
+        "unit": "g",
+        "accepted": [
+          "250 g"
+        ]
+      },
+      "solution_steps": [
+        "Multiplier par 100 rend chaque chiffre 100 fois plus grand : chaque chiffre avance de **deux rangs** vers la gauche.",
+        "2,5, c'est 2 unités et 5 dixièmes. Les 2 unités deviennent 2 centaines ; les 5 dixièmes deviennent 5 dizaines.",
+        "Il n'y a plus de chiffre au rang des unités : on y écrit un 0. 2 centaines, 5 dizaines et 0 unité : $2{,}5 \\times 100 = 250$.",
+        "Écrire 2,500 serait faux : un zéro écrit à droite après la virgule ne change pas le nombre.",
+        "La boîte contient **250 g** de thé."
+      ],
+      "hint": "Multiplier par 100, c'est multiplier par 10, puis multiplier le résultat par 10. Que deviennent les 5 dixièmes ?",
+      "estimated_duration_s": 60,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 3, CM2, calcul mental : multiplier un nombre décimal par 10, 100 ou 1 000."
+    },
+    {
+      "id": "EX-D023-D-02",
+      "skill_id": "D023",
+      "level": "decouverte",
+      "type": "qcm",
+      "statement": "Calcule mentalement $13{,}6 \\div 100$.",
+      "image": null,
+      "choices": [
+        {
+          "key": "a",
+          "text": "1,36",
+          "misconception": "L'élève divise par 10 au lieu de 100 : les chiffres n'ont reculé que d'un rang. $13{,}6 \\div 10 = 1{,}36$."
+        },
+        {
+          "key": "b",
+          "text": "1 360",
+          "misconception": "L'élève multiplie par 100 au lieu de diviser. Le résultat d'une division par 100 doit être plus petit que 13,6."
+        },
+        {
+          "key": "c",
+          "text": "13,600",
+          "misconception": "L'élève croit que diviser par 100, c'est écrire deux zéros. Mais 13,600 et 13,6 sont le même nombre : rien n'a été divisé."
+        },
+        {
+          "key": "d",
+          "text": "0,136",
+          "misconception": null
+        }
+      ],
+      "answer": {
+        "value": "d"
+      },
+      "solution_steps": [
+        "Diviser par 100 rend chaque chiffre 100 fois plus petit : chaque chiffre recule de **deux rangs** vers la droite.",
+        "13,6, c'est 1 dizaine, 3 unités et 6 dixièmes. La dizaine devient 1 dixième, les 3 unités deviennent 3 centièmes, les 6 dixièmes deviennent 6 millièmes.",
+        "Il n'y a plus de chiffre au rang des unités : on y écrit un 0. $13{,}6 \\div 100 = 0{,}136$.",
+        "Vérification : $0{,}136 \\times 100 = 13{,}6$. La bonne réponse est **0,136**."
+      ],
+      "hint": "Le résultat doit être plus petit que 13,6. De combien de rangs recule chaque chiffre ?",
+      "estimated_duration_s": 50,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 3, CM2, calcul mental : diviser un nombre décimal par 10, 100 ou 1 000."
+    },
+    {
+      "id": "EX-D023-E-01",
+      "skill_id": "D023",
+      "level": "entrainement",
+      "type": "numerique",
+      "statement": "Calcule mentalement $4{,}07 \\times 1\\,000$.",
+      "image": null,
+      "answer": {
+        "value": 4070,
+        "accepted": [
+          "4 070"
+        ]
+      },
+      "solution_steps": [
+        "Multiplier par 1 000 rend chaque chiffre 1 000 fois plus grand : chaque chiffre avance de **trois rangs** vers la gauche.",
+        "4,07, c'est 4 unités, 0 dixième et 7 centièmes. Les 4 unités deviennent 4 milliers, le 0 des dixièmes devient le 0 des centaines, les 7 centièmes deviennent 7 dizaines.",
+        "Le rang des unités est vide : on y écrit un 0. $4{,}07 \\times 1\\,000 = 4\\,070$.",
+        "Ce n'est pas 407 : ce serait multiplier par 100. Et le 0 des dixièmes ne disparaît pas : il devient le chiffre des centaines."
+      ],
+      "hint": "Chaque chiffre avance de trois rangs. Où va le 4 des unités ?",
+      "estimated_duration_s": 50,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 3, CM2, calcul mental : multiplier un nombre décimal par 10, 100 ou 1 000."
+    },
+    {
+      "id": "EX-D023-E-02",
+      "skill_id": "D023",
+      "level": "entrainement",
+      "type": "vrai_faux",
+      "statement": "Paul dit : « $7{,}5 \\div 100 = 0{,}075$, car le chiffre 7 des unités devient le chiffre des centièmes. »\n\nPaul a-t-il raison ?",
+      "image": null,
+      "answer": {
+        "value": true
+      },
+      "solution_steps": [
+        "Diviser par 100 rend chaque chiffre 100 fois plus petit : chaque chiffre recule de deux rangs vers la droite.",
+        "Le 7 des unités recule de deux rangs : unités, dixièmes, centièmes. Il devient bien le chiffre des centièmes. Le 5 des dixièmes devient le chiffre des millièmes.",
+        "Il reste 0 unité et 0 dixième : on écrit $0{,}075$. Vérification : $0{,}075 \\times 100 = 7{,}5$.",
+        "C'est **vrai** : Paul a raison. Les deux zéros sont indispensables, ils tiennent les rangs des unités et des dixièmes."
+      ],
+      "hint": "Le 7 recule de deux rangs : compte unités, dixièmes, centièmes.",
+      "estimated_duration_s": 50,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 3, CM2, calcul mental : diviser un nombre décimal par 10, 100 ou 1 000."
+    },
+    {
+      "id": "EX-D023-M-01",
+      "skill_id": "D023",
+      "level": "maitrise",
+      "type": "numerique",
+      "statement": "1 000 grains de riz pèsent 23 g.\n\nCombien pèse un grain de riz, en grammes ?",
+      "image": null,
+      "answer": {
+        "value": 0.023,
+        "unit": "g",
+        "accepted": [
+          "0,023 g"
+        ]
+      },
+      "solution_steps": [
+        "Les 1 000 grains pèsent 23 g : pour la masse d'un seul grain, on partage en 1 000, on calcule $23 \\div 1\\,000$.",
+        "Diviser par 1 000 rend chaque chiffre 1 000 fois plus petit : chaque chiffre recule de **trois rangs** vers la droite.",
+        "23, c'est 2 dizaines et 3 unités. Les 2 dizaines deviennent 2 centièmes, les 3 unités deviennent 3 millièmes.",
+        "Les rangs des unités et des dixièmes sont vides : on y écrit des 0. $23 \\div 1\\,000 = 0{,}023$.",
+        "Vérification : $0{,}023 \\times 1\\,000 = 23$. Un grain de riz pèse **0,023 g**, une masse très petite : c'est cohérent."
+      ],
+      "hint": "On connaît la masse de 1 000 grains et on cherche celle d'un seul : multiplier ou diviser par 1 000 ?",
+      "estimated_duration_s": 75,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 3, CM2, calcul mental : diviser un nombre décimal par 10, 100 ou 1 000."
+    },
+    {
+      "id": "EX-D023-M-02",
+      "skill_id": "D023",
+      "level": "maitrise",
+      "type": "qcm",
+      "statement": "Complète : $2{,}75 \\times \\dots = 2\\,750$.",
+      "image": null,
+      "choices": [
+        {
+          "key": "a",
+          "text": "10",
+          "misconception": "L'élève voit un zéro au bout de 2 750 et pense « un zéro ajouté, donc × 10 ». Mais $2{,}75 \\times 10 = 27{,}5$."
+        },
+        {
+          "key": "b",
+          "text": "100",
+          "misconception": "L'élève pense qu'il suffit d'effacer la virgule : deux chiffres après la virgule, donc × 100. Mais $2{,}75 \\times 100 = 275$, pas 2 750."
+        },
+        {
+          "key": "c",
+          "text": "1 000",
+          "misconception": null
+        }
+      ],
+      "answer": {
+        "value": "c"
+      },
+      "solution_steps": [
+        "On suit le chiffre 2. Dans 2,75, c'est le chiffre des unités ; dans 2 750, c'est le chiffre des milliers.",
+        "Des unités aux milliers, il avance de trois rangs : unités, dizaines, centaines, milliers. Avancer de trois rangs, c'est multiplier par 1 000.",
+        "Vérification : $2{,}75 \\times 10 = 27{,}5$ ; $2{,}75 \\times 100 = 275$ ; $2{,}75 \\times 1\\,000 = 2\\,750$.",
+        "La bonne réponse est **1 000**."
+      ],
+      "hint": "Suis le chiffre 2 : dans 2 750, à quel rang est-il ?",
+      "estimated_duration_s": 60,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 3, CM2, calcul mental : multiplier un nombre décimal par 10, 100 ou 1 000."
+    },
+    {
+      "id": "EX-D024-D-01",
+      "skill_id": "D024",
+      "level": "decouverte",
+      "type": "numerique",
+      "statement": "Le billet de train coûte 4,65 € par élève.\n\nCombien paie une classe de 23 élèves ? Pose la multiplication.",
+      "image": null,
+      "answer": {
+        "value": 106.95,
+        "unit": "€",
+        "accepted": [
+          "106,95 €"
+        ]
+      },
+      "solution_steps": [
+        "On calcule $4{,}65 \\times 23$. On pose 4,65 en haut et 23 en dessous, à droite, sans s'occuper de la virgule : on calcule comme pour $465 \\times 23$. Comme $23 = 3 + 20$, il y a deux lignes.",
+        "Première ligne, $465 \\times 3$ : $3 \\times 5 = 15$, on écrit 5 et on retient 1 ; $3 \\times 6 = 18$, plus 1, cela fait 19, on écrit 9 et on retient 1 ; $3 \\times 4 = 12$, plus 1, cela fait 13. La ligne est 1 395.",
+        "Deuxième ligne, $465 \\times 20$ : le 2 vaut 2 dizaines, on écrit d'abord un 0 à droite, puis $465 \\times 2 = 930$. La ligne est 9 300. On additionne les deux lignes : $1\\,395 + 9\\,300 = 10\\,695$.",
+        "4,65, c'est 465 centièmes : le produit compte 10 695 centièmes. Il a deux chiffres après la virgule, comme 4,65 : $4{,}65 \\times 23 = 106{,}95$. La classe paie **106,95 €**."
+      ],
+      "hint": "Calcule 465 × 23 en deux lignes, puis place la virgule.",
+      "estimated_duration_s": 150,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 3, CM2 : poser et effectuer la multiplication d'un nombre décimal par un nombre entier."
+    },
+    {
+      "id": "EX-D024-D-02",
+      "skill_id": "D024",
+      "level": "decouverte",
+      "type": "qcm",
+      "statement": "Un fil électrique est vendu en bobines de 3,8 m.\n\nQuelle longueur de fil y a-t-il dans 12 bobines ?",
+      "image": null,
+      "choices": [
+        {
+          "key": "a",
+          "text": "456 m",
+          "misconception": "L'élève calcule bien 38 × 12 = 456, mais oublie de placer la virgule dans le produit."
+        },
+        {
+          "key": "b",
+          "text": "45,6 m",
+          "misconception": null
+        },
+        {
+          "key": "c",
+          "text": "11,4 m",
+          "misconception": "L'élève oublie le 0 de la deuxième ligne : il additionne 38 × 2 = 76 et 38 × 1 = 38, soit 114, comme si le 1 de 12 valait 1 unité et non 1 dizaine."
+        }
+      ],
+      "answer": {
+        "value": "b"
+      },
+      "solution_steps": [
+        "On calcule $3{,}8 \\times 12$, posé comme $38 \\times 12$, en deux lignes car $12 = 2 + 10$.",
+        "Première ligne : $38 \\times 2 = 76$. Deuxième ligne, $38 \\times 10$ : on écrit un 0 à droite, puis 38, ce qui donne 380. On additionne : $76 + 380 = 456$.",
+        "3,8 a un chiffre après la virgule : 456 dixièmes, c'est 45,6. Le produit a un chiffre après la virgule.",
+        "Contrôle : 12 bobines de presque 4 m font presque $12 \\times 4 = 48$ m. Il y a **45,6 m** de fil : la bonne réponse est b."
+      ],
+      "hint": "Calcule 38 × 12 sans oublier le 0 de la deuxième ligne, puis place la virgule.",
+      "estimated_duration_s": 100,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 3, CM2 : poser et effectuer la multiplication d'un nombre décimal par un nombre entier."
+    },
+    {
+      "id": "EX-D024-E-01",
+      "skill_id": "D024",
+      "level": "entrainement",
+      "type": "vrai_faux",
+      "statement": "Une boîte de conserve pèse 0,68 kg. Hugo calcule la masse de 35 boîtes et trouve 2,38 kg.\n\nHugo a-t-il raison ?",
+      "image": null,
+      "answer": {
+        "value": false
+      },
+      "solution_steps": [
+        "On calcule $0{,}68 \\times 35$, posé comme $68 \\times 35$. Première ligne : $68 \\times 5 = 340$. Deuxième ligne, $68 \\times 30$ : on écrit un 0 à droite, puis $68 \\times 3 = 204$, ce qui donne 2 040.",
+        "On additionne : $340 + 2\\,040 = 2\\,380$. 0,68 a deux chiffres après la virgule : on compte deux chiffres à partir de la droite dans 2 380, ce qui donne 23,80, soit 23,8.",
+        "Hugo a **tort** : 35 boîtes pèsent 23,8 kg. Il a effacé le 0 de 2 380 **avant** de placer la virgule : 238 donne alors 2,38. Il faut d'abord placer la virgule, puis effacer les 0 inutiles à la fin de la partie décimale.",
+        "Contrôle : une boîte pèse plus d'un demi-kilo, donc 2 boîtes pèsent déjà plus de 1 kg, et 35 boîtes bien plus que 2,38 kg."
+      ],
+      "hint": "Pose 68 × 35, et place la virgule avant d'effacer un 0.",
+      "estimated_duration_s": 120,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 3, CM2 : poser et effectuer la multiplication d'un nombre décimal par un nombre entier."
+    },
+    {
+      "id": "EX-D024-E-02",
+      "skill_id": "D024",
+      "level": "entrainement",
+      "type": "numerique",
+      "statement": "Un sac de croquettes pèse 1,375 kg. Un refuge pour chats en reçoit 12.\n\nQuelle masse de croquettes le refuge reçoit-il ?",
+      "image": null,
+      "answer": {
+        "value": 16.5,
+        "unit": "kg",
+        "accepted": [
+          "16,5 kg",
+          "16,50 kg",
+          "16,500 kg"
+        ]
+      },
+      "solution_steps": [
+        "On calcule $1{,}375 \\times 12$, posé comme $1\\,375 \\times 12$. Première ligne : $1\\,375 \\times 2 = 2\\,750$. Deuxième ligne, $1\\,375 \\times 10$ : un 0 à droite, puis 1 375, soit 13 750.",
+        "On additionne les deux lignes : $2\\,750 + 13\\,750 = 16\\,500$.",
+        "1,375 a trois chiffres après la virgule (des millièmes) : le produit en a trois aussi. 16 500 millièmes, c'est 16,500. Une fois la virgule placée, on efface les 0 de la fin : 16,5.",
+        "Le refuge reçoit **16,5 kg** de croquettes."
+      ],
+      "hint": "1,375 kg, ce sont des millièmes : combien de chiffres après la virgule dans le produit ?",
+      "estimated_duration_s": 150,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 3, CM2 : poser et effectuer la multiplication d'un nombre décimal par un nombre entier."
+    },
+    {
+      "id": "EX-D024-M-01",
+      "skill_id": "D024",
+      "level": "maitrise",
+      "type": "qcm",
+      "statement": "On sait que $254 \\times 37 = 9\\,398$.\n\nSans poser d'opération, quel est le résultat de $2{,}54 \\times 37$ ?",
+      "image": null,
+      "choices": [
+        {
+          "key": "a",
+          "text": "939,8",
+          "misconception": "L'élève ne laisse qu'un seul chiffre après la virgule, alors que 2,54 en a deux."
+        },
+        {
+          "key": "b",
+          "text": "9 398",
+          "misconception": "L'élève recopie le produit des entiers sans placer de virgule, comme si 2,54 était égal à 254."
+        },
+        {
+          "key": "c",
+          "text": "93,98",
+          "misconception": null
+        }
+      ],
+      "answer": {
+        "value": "c"
+      },
+      "solution_steps": [
+        "2,54, c'est 254 centièmes. Donc $2{,}54 \\times 37$, c'est 254 centièmes multipliés par 37.",
+        "Or $254 \\times 37 = 9\\,398$ : le résultat est 9 398 centièmes.",
+        "9 398 centièmes, c'est 93 unités et 98 centièmes : 93,98. Le produit a deux chiffres après la virgule, comme 2,54.",
+        "Contrôle : 2,54 est entre 2 et 3, donc le produit est entre $2 \\times 37 = 74$ et $3 \\times 37 = 111$. 93,98 convient, mais ni 939,8 ni 9 398. La bonne réponse est c."
+      ],
+      "hint": "2,54, combien de centièmes ? Le produit est donc un nombre de centièmes.",
+      "estimated_duration_s": 90,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 3, CM2 : poser et effectuer la multiplication d'un nombre décimal par un nombre entier."
+    },
+    {
+      "id": "EX-D024-M-02",
+      "skill_id": "D024",
+      "level": "maitrise",
+      "type": "numerique",
+      "statement": "Pour une course solidaire, 3 équipes de 12 coureurs courent chacun 4,15 km.\n\nCombien de kilomètres parcourent-ils en tout ?",
+      "image": null,
+      "answer": {
+        "value": 149.4,
+        "unit": "km",
+        "accepted": [
+          "149,4 km",
+          "149,40 km"
+        ]
+      },
+      "solution_steps": [
+        "Nombre de coureurs : $3 \\times 12 = 36$.",
+        "Distance totale : $4{,}15 \\times 36$, posé comme $415 \\times 36$. Première ligne : $415 \\times 6 = 2\\,490$. Deuxième ligne, $415 \\times 30$ : un 0 à droite, puis $415 \\times 3 = 1\\,245$, soit 12 450.",
+        "On additionne : $2\\,490 + 12\\,450 = 14\\,940$. 4,15 a deux chiffres après la virgule : 14 940 centièmes, c'est 149,40, soit 149,4.",
+        "Ils parcourent **149,4 km** en tout. Contrôle : 36 coureurs qui font chacun un peu plus de 4 km parcourent un peu plus de $36 \\times 4 = 144$ km."
+      ],
+      "hint": "Cherche d'abord le nombre de coureurs.",
+      "estimated_duration_s": 180,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 3, CM2 : poser et effectuer la multiplication d'un nombre décimal par un nombre entier."
+    },
+    {
+      "id": "EX-D025-D-01",
+      "skill_id": "D025",
+      "level": "decouverte",
+      "type": "numerique",
+      "statement": "Une feuille de papier a une épaisseur de 0,1 mm.\n\nQuelle est l'épaisseur d'une ramette de 500 feuilles ? Calcule $500 \\times 0{,}1$.",
+      "image": null,
+      "answer": {
+        "value": 50,
+        "unit": "mm",
+        "accepted": [
+          "50 mm"
+        ]
+      },
+      "solution_steps": [
+        "0,1, c'est un dixième. $500 \\times 0{,}1$, c'est 500 fois un dixième, soit 500 dixièmes.",
+        "10 dixièmes font une unité : 500 dixièmes font 50 unités. Donc $500 \\times 0{,}1 = 50$.",
+        "Multiplier par 0,1 revient à prendre le dixième, c'est-à-dire à **diviser par 10** : $500 \\div 10 = 50$. Le résultat est plus petit que 500, car on multiplie par un nombre plus petit que 1.",
+        "La ramette a une épaisseur de **50 mm**."
+      ],
+      "hint": "0,1 mm, c'est un dixième de millimètre. Combien d'unités font 500 dixièmes ?",
+      "estimated_duration_s": 60,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 3, 6e : multiplier un nombre entier ou un nombre décimal par 0,1, par 0,01, et par 0,001 ; connaître le lien avec la division par 10, 100 et par 1 000."
+    },
+    {
+      "id": "EX-D025-D-02",
+      "skill_id": "D025",
+      "level": "decouverte",
+      "type": "qcm",
+      "statement": "Jules a 735 pièces de 1 centime. Un centime, c'est 0,01 €.\n\nCombien d'euros a-t-il ? Calcule $735 \\times 0{,}01$.",
+      "image": null,
+      "choices": [
+        {
+          "key": "a",
+          "text": "73,5 €",
+          "misconception": "L'élève divise par 10 au lieu de 100 : il confond 0,01 (un centième) et 0,1 (un dixième)."
+        },
+        {
+          "key": "b",
+          "text": "7 350 €",
+          "misconception": "L'élève pense qu'une multiplication agrandit toujours le nombre : il fait comme s'il multipliait par 10."
+        },
+        {
+          "key": "c",
+          "text": "7,35 €",
+          "misconception": null
+        }
+      ],
+      "answer": {
+        "value": "c"
+      },
+      "solution_steps": [
+        "0,01, c'est un centième. $735 \\times 0{,}01$, c'est 735 centièmes.",
+        "100 centièmes font une unité : 735 centièmes, c'est 7 unités et 35 centièmes, soit 7,35.",
+        "Multiplier par 0,01 revient à **diviser par 100** : $735 \\div 100 = 7{,}35$. Chaque chiffre recule de deux rangs : le 7 des centaines devient le chiffre des unités.",
+        "Jules a **7,35 €** : la bonne réponse est c. C'est logique, car 100 centimes font 1 €."
+      ],
+      "hint": "Multiplier par 0,01, c'est prendre le centième. Par combien divise-t-on ?",
+      "estimated_duration_s": 60,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 3, 6e : multiplier un nombre entier ou un nombre décimal par 0,1, par 0,01, et par 0,001 ; connaître le lien avec la division par 10, 100 et par 1 000."
+    },
+    {
+      "id": "EX-D025-E-01",
+      "skill_id": "D025",
+      "level": "entrainement",
+      "type": "vrai_faux",
+      "statement": "Zoé affirme : « Une multiplication donne toujours un résultat plus grand que le nombre de départ. »\n\nVrai ou faux : $6{,}4 \\times 0{,}1$ est plus grand que 6,4.",
+      "image": null,
+      "answer": {
+        "value": false
+      },
+      "solution_steps": [
+        "Multiplier par 0,1, c'est prendre le dixième, donc diviser par 10 : $6{,}4 \\times 0{,}1 = 6{,}4 \\div 10$.",
+        "En divisant par 10, chaque chiffre recule d'un rang : les 6 unités deviennent 6 dixièmes, les 4 dixièmes deviennent 4 centièmes. $6{,}4 \\times 0{,}1 = 0{,}64$.",
+        "0,64 est plus petit que 6,4 : c'est **faux**. Zoé se trompe : multiplier par un nombre plus petit que 1 donne un résultat plus petit que le nombre de départ.",
+        "Sa règle ne marche que si l'on multiplie par un nombre plus grand que 1, comme dans $6{,}4 \\times 10 = 64$."
+      ],
+      "hint": "Multiplier par 0,1 revient à faire quelle division ?",
+      "estimated_duration_s": 60,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 3, 6e : multiplier un nombre entier ou un nombre décimal par 0,1, par 0,01, et par 0,001 ; connaître le lien avec la division par 10, 100 et par 1 000."
+    },
+    {
+      "id": "EX-D025-E-02",
+      "skill_id": "D025",
+      "level": "entrainement",
+      "type": "numerique",
+      "statement": "Un flacon de parfum contient 85 mL. Un millilitre, c'est 0,001 L.\n\nCombien de litres contient le flacon ?",
+      "image": null,
+      "answer": {
+        "value": 0.085,
+        "unit": "L",
+        "accepted": [
+          "0,085 L"
+        ]
+      },
+      "solution_steps": [
+        "Le flacon contient 85 fois 0,001 L : on calcule $85 \\times 0{,}001$.",
+        "Multiplier par 0,001 revient à **diviser par 1 000** : chaque chiffre recule de trois rangs. Les 8 dizaines deviennent 8 centièmes, les 5 unités deviennent 5 millièmes.",
+        "Il n'y a rien aux unités ni aux dixièmes : on écrit des 0 pour marquer ces rangs vides. $85 \\times 0{,}001 = 0{,}085$.",
+        "Le flacon contient **0,085 L**. Contrôle : 85 mL, c'est bien moins qu'un litre."
+      ],
+      "hint": "Multiplier par 0,001, c'est diviser par 1 000. N'oublie pas les 0 des rangs vides.",
+      "estimated_duration_s": 90,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 3, 6e : multiplier un nombre entier ou un nombre décimal par 0,1, par 0,01, et par 0,001 ; connaître le lien avec la division par 10, 100 et par 1 000."
+    },
+    {
+      "id": "EX-D025-M-01",
+      "skill_id": "D025",
+      "level": "maitrise",
+      "type": "numerique",
+      "statement": "Nora multiplie 72 par un nombre décimal et obtient 0,072.\n\nPar quel nombre a-t-elle multiplié 72 ?",
+      "image": null,
+      "answer": {
+        "value": 0.001
+      },
+      "solution_steps": [
+        "On passe de 72 à 0,072 : le 7 des dizaines devient le 7 des centièmes, le 2 des unités devient le 2 des millièmes. Chaque chiffre a reculé de trois rangs.",
+        "Reculer de trois rangs, c'est **diviser par 1 000** : $72 \\div 1\\,000 = 0{,}072$.",
+        "Diviser par 1 000 revient à multiplier par 0,001. Nora a multiplié par **0,001** : $72 \\times 0{,}001 = 0{,}072$.",
+        "Ce n'est ni 0,1, qui donnerait 7,2, ni 0,01, qui donnerait 0,72."
+      ],
+      "hint": "De combien de rangs chaque chiffre a-t-il reculé ? À quelle division cela correspond-il ?",
+      "estimated_duration_s": 90,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 3, 6e : multiplier un nombre entier ou un nombre décimal par 0,1, par 0,01, et par 0,001 ; connaître le lien avec la division par 10, 100 et par 1 000."
+    },
+    {
+      "id": "EX-D025-M-02",
+      "skill_id": "D025",
+      "level": "maitrise",
+      "type": "qcm",
+      "statement": "Sans poser d'opération, quel calcul donne le plus grand résultat ?",
+      "image": null,
+      "choices": [
+        {
+          "key": "a",
+          "text": "$630 \\times 0{,}01$",
+          "misconception": null
+        },
+        {
+          "key": "b",
+          "text": "$4\\,800 \\times 0{,}001$",
+          "misconception": "L'élève ne regarde que le premier nombre : 4 800 est le plus grand, il en déduit que ce produit est le plus grand, sans voir qu'on le divise par 1 000."
+        },
+        {
+          "key": "c",
+          "text": "$52 \\times 0{,}1$",
+          "misconception": "L'élève ne regarde que le nombre décimal : 0,1 est le plus grand des trois, il pense que ce produit est le plus grand, sans tenir compte de 52, bien plus petit que 630 et 4 800."
+        }
+      ],
+      "answer": {
+        "value": "a"
+      },
+      "solution_steps": [
+        "On remplace chaque multiplication par la division qui lui correspond. $630 \\times 0{,}01 = 630 \\div 100 = 6{,}3$.",
+        "$4\\,800 \\times 0{,}001 = 4\\,800 \\div 1\\,000 = 4{,}8$.",
+        "$52 \\times 0{,}1 = 52 \\div 10 = 5{,}2$.",
+        "On compare les parties entières : 6 est plus grand que 5, qui est plus grand que 4. Le plus grand résultat est 6,3 : la bonne réponse est a."
+      ],
+      "hint": "Remplace chaque multiplication par la division qui lui correspond.",
+      "estimated_duration_s": 90,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 3, 6e : multiplier un nombre entier ou un nombre décimal par 0,1, par 0,01, et par 0,001 ; connaître le lien avec la division par 10, 100 et par 1 000."
     }
   ]
 }
