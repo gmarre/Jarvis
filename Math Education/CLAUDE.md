@@ -213,6 +213,8 @@ Le schéma complet et commenté vit dans **`Math_Edu_Application/supabase/migrat
 | `content_skills` / `content_exercises` / `content_mindmaps` | Le contenu publié depuis Git (migration 0005, 4 octobre 2026). Lecture pour tout compte connecté, aucune écriture client. Les propositions de QCM y sont **sans misconception**. |
 | `content_exercise_keys` | Réponse, corrigé et misconceptions, séparés des énoncés. **Illisible pour les élèves** depuis la migration 0006 : seule l'Edge Function `corriger` la lit (clé `service_role`), et ne rend la clé d'un exercice qu'avec la correction d'une réponse. |
 | `content_publications` | Une ligne par publication : date, commit Git source, comptes. |
+| `content_reviewers` | Comptes autorisés à rendre des verdicts de recette. S'écrit à la main dans le SQL Editor (§10.6) ; un compte ne lit que sa propre ligne. |
+| `content_reviews` | Verdicts de recette (migration 0008) : un par relecteur et par exercice ou carte, `accepte` ou `invalide` (commentaire obligatoire), `traite_le` posé par `scripts/recette.py`. Chaque relecteur ne lit et n'écrit que les siens. Pas de clé étrangère vers le contenu, que chaque publication remplace. |
 | `publier_contenu(contenu, commit)` | Seule écriture du contenu : réservée à `service_role`, remplace tout en une transaction. Appelée par `scripts/publier.py`, qui valide d'abord et refuse les modifications non commitées. |
 
 ### 7.2 Les fonctions d'autorisation
@@ -382,6 +384,21 @@ Du plus isolé au plus réel. Comprendre ce que chacun prouve évite de croire q
 | `npm run check:db` | Triggers, RLS, escalade de privilège, capacité, sur le vrai projet | **Rien sur l'interface** |
 
 Aucun des quatre ne teste le navigateur. Avant tout commit : `npm test && npm run lint && npm run build`.
+
+### 10.6 Mener une recette du contenu
+
+La recette consiste à parcourir le contenu dans l'application, comme un élève, et à accepter ou invalider chaque exercice et chaque carte.
+
+1. **Un compte élève dédié** (par exemple `prenom+recette@...`), profil complété : ses réponses font bouger sa progression, autant ne pas abîmer un vrai compte.
+2. **L'inscrire comme relecteur**, dans le SQL Editor :
+   ```sql
+   insert into content_reviewers (user_id)
+   select id from auth.users where email = 'adresse+recette@exemple.fr';
+   ```
+   Le retirer : `delete from content_reviewers where user_id = (select id from auth.users where email = '...');`
+3. **Dans l'application**, une entrée « Recette » apparaît dans la navigation : la page `/recette` liste, compétence par compétence, ce qui reste à juger. Chaque écran d'exercice et de carte porte un panneau « Accepter / Invalider… ». Un refus exige un commentaire : c'est la consigne que liront les agents. Un verdict peut être changé tant qu'on veut.
+4. **Reporter les verdicts dans le contenu** : `python scripts/recette.py` (simulation), puis `--apply`. Accepté devient `valide`, invalidé redevient `brouillon` et part dans `Spécifications DAG, Exos, Mindcards/RECETTE.md` avec le commentaire. Puis commit, et `python scripts/publier.py --apply`.
+5. **Faire reprendre** la liste de `RECETTE.md` par les agents (circuit de `PLAN_CONTENU.md`) ; l'élément corrigé repasse en `relu_agent` et sera rejugé.
 
 ---
 

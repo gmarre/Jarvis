@@ -4,11 +4,13 @@ import type { ComponentType, ReactNode, SVGProps } from 'react'
 import { cn } from '@/lib/cn'
 import { initials } from '@/lib/format'
 import type { UserRole } from '@/types/domain'
+import { useRecette } from '@/state/recette'
 import { useSession } from '@/state/session'
 import { Avatar, Level } from '@/components/ui/Misc'
 import {
   IconCalendar,
   IconCards,
+  IconCheck,
   IconPath,
   IconStreak,
   IconUser,
@@ -43,6 +45,14 @@ const PARENT_NAV: NavItem[] = [
   { to: '/parent', label: 'Espace parent', shortLabel: 'Parent', icon: IconUser },
 ]
 
+/** Ajoute pour les seuls relecteurs du contenu (migration 0008). */
+const RECETTE_NAV: NavItem = {
+  to: '/recette',
+  label: 'Recette du contenu',
+  shortLabel: 'Recette',
+  icon: IconCheck,
+}
+
 /** La navigation depend du role : personne ne voit l'espace d'un autre. */
 function navFor(role: UserRole | undefined): NavItem[] {
   if (role === 'prof') return TEACHER_NAV
@@ -70,7 +80,8 @@ export function AppShell({ children, railTop, railBottom }: AppShellProps) {
   const { session } = useSession()
   const location = useLocation()
   const profile = session?.profile
-  const nav = navFor(profile?.role)
+  const { relecteur } = useRecette()
+  const nav = relecteur && profile?.role === 'eleve' ? [...navFor('eleve'), RECETTE_NAV] : navFor(profile?.role)
   const current = nav.find((item) => location.pathname.startsWith(item.to))
 
   return (

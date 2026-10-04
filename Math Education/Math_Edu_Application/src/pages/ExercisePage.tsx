@@ -6,6 +6,7 @@ import { cn } from '@/lib/cn'
 import { exerciseLevelLabel } from '@/lib/exercise'
 import { formatDuration } from '@/lib/format'
 import { AnswerInput } from '@/components/exercise/AnswerInput'
+import { RecettePanel } from '@/components/recette/RecettePanel'
 import { Wordmark } from '@/components/layout/AppShell'
 import { Badge } from '@/components/ui/Badge'
 import { Button, ButtonLink } from '@/components/ui/Button'
@@ -211,6 +212,9 @@ export default function ExercisePage() {
           />
         )}
       </Card>
+
+      {/* Relecteurs seulement : ne rend rien pour un eleve. */}
+      <RecettePanel itemType="exercise" itemId={exercise.id} className="mt-4" />
     </FocusFrame>
   )
 }

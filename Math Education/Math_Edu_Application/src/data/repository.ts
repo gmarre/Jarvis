@@ -19,9 +19,12 @@ import type { Correction } from '@/lib/exercise'
 import type {
   AvailabilitySlot,
   Booking,
+  ContentReview,
   ExerciseAttempt,
+  NewContentReview,
   PlacementResult,
   Profile,
+  Recette,
   SkillProgress,
   Teacher,
   UserRole,
@@ -136,6 +139,16 @@ export interface DataRepository {
   // --- Lectures -----------------------------------------------------------
 
   getCatalog(): Promise<Catalog>
+
+  // --- Recette du contenu ------------------------------------------------
+
+  /** Le compte est-il relecteur, et ses verdicts deja rendus. */
+  getRecette(): Promise<Recette>
+  /**
+   * Rend (ou change) un verdict. Un seul par relecteur et par element : le
+   * nouveau remplace l'ancien, et redevient a reporter par scripts/recette.py.
+   */
+  saveReview(review: NewContentReview): Promise<ContentReview>
 }
 
 /**

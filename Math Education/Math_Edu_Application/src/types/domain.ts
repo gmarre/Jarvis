@@ -122,3 +122,29 @@ export interface Booking {
   cree_le: string
   paid_at: string | null
 }
+
+/** Table `content_reviews` : verdict de recette sur un exercice ou une carte. */
+export type ReviewItemType = 'exercise' | 'mindmap'
+export type ReviewVerdict = 'accepte' | 'invalide'
+
+export interface ContentReview {
+  item_type: ReviewItemType
+  item_id: string
+  verdict: ReviewVerdict
+  /** Obligatoire pour un refus : c'est ce que lira celui qui corrige. */
+  commentaire: string
+  /** ISO 8601. */
+  mis_a_jour_le: string
+  /** Pose par scripts/recette.py une fois le verdict reporte dans le contenu. */
+  traite_le: string | null
+}
+
+/** Ce que l'ecran de recette envoie. */
+export type NewContentReview = Pick<ContentReview, 'item_type' | 'item_id' | 'verdict' | 'commentaire'>
+
+/** Etat de recette du compte connecte. */
+export interface Recette {
+  /** Le compte figure dans content_reviewers. Sinon, rien de la recette ne s'affiche. */
+  relecteur: boolean
+  reviews: ContentReview[]
+}

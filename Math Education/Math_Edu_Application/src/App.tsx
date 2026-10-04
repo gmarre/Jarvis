@@ -24,6 +24,7 @@ const TeacherSchedulePage = lazy(() => import('@/pages/TeacherSchedulePage'))
 const ParentPage = lazy(() => import('@/pages/ParentPage'))
 const SubscriptionPage = lazy(() => import('@/pages/SubscriptionPage'))
 const WelcomePage = lazy(() => import('@/pages/WelcomePage'))
+const RecettePage = lazy(() => import('@/pages/RecettePage'))
 
 /** Accueil propre a chaque role. */
 function homeFor(role: UserRole): string {
@@ -113,6 +114,15 @@ export default function App() {
           element={
             <RequireAuth roles={ELEVE}>
               <ExercisePage />
+            </RequireAuth>
+          }
+        />
+        {/* Recette du contenu : la page verifie elle-meme que le compte est relecteur. */}
+        <Route
+          path="/recette"
+          element={
+            <RequireAuth roles={ELEVE}>
+              <RecettePage />
             </RequireAuth>
           }
         />

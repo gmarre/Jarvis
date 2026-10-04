@@ -2,7 +2,7 @@ import { beforeEach, describe, expect, it, vi } from 'vitest'
 
 import { emptyProgress } from '@/lib/dag'
 import { skills } from '@/content'
-import { mockRepository, resetMockRepository } from './mockRepository'
+import { activerRecetteMock, mockRepository, resetMockRepository } from './mockRepository'
 import { RepositoryError, isProfileComplete, type SignUpInput } from './repository'
 import type { ExerciseAttempt, PlacementResult, Profile, SkillProgress } from '@/types/domain'
 
@@ -402,5 +402,67 @@ describe('ouverture de creneaux', () => {
     const seconde = await mockRepository.createSlots([slot])
 
     expect(seconde).toHaveLength(0)
+  })
+})
+
+describe('correction', () => {
+  beforeEach(async () => {
+    await mockRepository.signInWithPassword('lea.d@email.fr', 'x')
+  })
+
+  it('corrige sans que l exercice installe porte sa reponse', async () => {
+    const { exercises } = await import('@/content')
+    const exercise = exercises.find((e) => e.type === 'qcm')
+    if (!exercise) throw new Error('Aucun QCM dans le contenu')
+    expect(exercise).not.toHaveProperty('answer')
+
+    const correction = await mockRepository.corriger(exercise.id, 'z')
+    expect(correction.isCorrect).toBe(false)
+    expect(correction.expectedKey).toMatch(/^[a-z]$/)
+    expect(correction.solutionSteps.length).toBeGreaterThan(0)
+
+    const juste = await mockRepository.corriger(exercise.id, correction.expectedKey as string)
+    expect(juste.isCorrect).toBe(true)
+  })
+
+  it('refuse un exercice inconnu', async () => {
+    await expect(mockRepository.corriger('EX-Z999-D-01', 'a')).rejects.toBeInstanceOf(RepositoryError)
+  })
+})
+
+describe('recette du contenu', () => {
+  beforeEach(async () => {
+    await mockRepository.signInWithPassword('lea.d@email.fr', 'x')
+  })
+
+  it('un compte qui n est pas relecteur ne voit rien et ne peut rien rendre', async () => {
+    expect(await mockRepository.getRecette()).toEqual({ relecteur: false, reviews: [] })
+    await expect(
+      mockRepository.saveReview({ item_type: 'exercise', item_id: 'EX-A001-D-01', verdict: 'accepte', commentaire: '' }),
+    ).rejects.toBeInstanceOf(RepositoryError)
+  })
+
+  it('un relecteur rend un verdict, puis le change sans doublon', async () => {
+    activerRecetteMock()
+    await mockRepository.saveReview({
+      item_type: 'exercise', item_id: 'EX-A001-D-01', verdict: 'accepte', commentaire: '',
+    })
+    const change = await mockRepository.saveReview({
+      item_type: 'exercise', item_id: 'EX-A001-D-01', verdict: 'invalide', commentaire: '  Réponse fausse  ',
+    })
+    expect(change.commentaire).toBe('Réponse fausse')
+    expect(change.traite_le).toBeNull()
+
+    const { relecteur, reviews } = await mockRepository.getRecette()
+    expect(relecteur).toBe(true)
+    expect(reviews).toHaveLength(1)
+    expect(reviews[0].verdict).toBe('invalide')
+  })
+
+  it('refuse une invalidation sans commentaire, comme la contrainte SQL', async () => {
+    activerRecetteMock()
+    await expect(
+      mockRepository.saveReview({ item_type: 'mindmap', item_id: 'MM-A-01', verdict: 'invalide', commentaire: '   ' }),
+    ).rejects.toBeInstanceOf(RepositoryError)
   })
 })

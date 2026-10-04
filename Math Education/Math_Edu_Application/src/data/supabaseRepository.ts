@@ -28,6 +28,7 @@ import {
 import type {
   AvailabilitySlot,
   Booking,
+  ContentReview,
   ExerciseAttempt,
   PlacementResult,
   Profile,
@@ -526,4 +527,63 @@ export const supabaseRepository: DataRepository = {
 
     return { teachers, slots: (creneaux.data ?? []) as AvailabilitySlot[] }
   },
+
+  async getRecette() {
+    const db = requireSupabase()
+    const { data: utilisateur } = await db.auth.getUser()
+    if (!utilisateur.user) return { relecteur: false, reviews: [] }
+
+    // Le RLS ne montre au compte que sa propre ligne : presente, il est relecteur.
+    const { data: ligne, error } = await db
+      .from('content_reviewers')
+      .select('user_id')
+      .eq('user_id', utilisateur.user.id)
+      .maybeSingle()
+    // La recette est un outil interne : son absence (migration 0008 pas encore
+    // appliquee, par exemple) ne doit jamais empecher un eleve de travailler.
+    if (error || !ligne) return { relecteur: false, reviews: [] }
+
+    const { data, error: erreurLecture } = await db
+      .from('content_reviews')
+      .select(COLONNES_REVIEW)
+      .eq('reviewer_id', utilisateur.user.id)
+    if (erreurLecture) throw erreur('Lecture des verdicts de recette', erreurLecture)
+    return { relecteur: true, reviews: (data ?? []) as ContentReview[] }
+  },
+
+  async saveReview(review) {
+    const db = requireSupabase()
+    const { data: utilisateur } = await db.auth.getUser()
+    if (!utilisateur.user) throw new RepositoryError('Aucune session ouverte')
+
+    // Derniere publication : le verdict porte sur cette version du contenu.
+    const { data: publication } = await db
+      .from('content_publications')
+      .select('id')
+      .order('id', { ascending: false })
+      .limit(1)
+      .maybeSingle()
+
+    const { data, error } = await db
+      .from('content_reviews')
+      .upsert(
+        {
+          ...review,
+          commentaire: review.commentaire.trim(),
+          reviewer_id: utilisateur.user.id,
+          publication_id: publication?.id ?? null,
+          mis_a_jour_le: new Date().toISOString(),
+          // Un verdict change doit etre reporte de nouveau par recette.py.
+          traite_le: null,
+        },
+        { onConflict: 'reviewer_id,item_type,item_id' },
+      )
+      .select(COLONNES_REVIEW)
+      .single()
+
+    if (error) throw erreur('Enregistrement du verdict', error)
+    return data as ContentReview
+  },
 }
+
+const COLONNES_REVIEW = 'item_type, item_id, verdict, commentaire, mis_a_jour_le, traite_le'

@@ -30,7 +30,7 @@ import {
   type Session,
   type SignUpInput,
 } from './repository'
-import type { AvailabilitySlot, Booking, Profile } from '@/types/domain'
+import type { AvailabilitySlot, Booking, ContentReview, Profile } from '@/types/domain'
 
 const STORAGE_KEY = 'racine.session.v2'
 
@@ -114,6 +114,12 @@ function reviveSession(raw: string): Session | null {
  */
 let courante: Session | null = null
 let catalogue: Catalog | null = null
+/**
+ * Recette en demonstration : desactivee, comme pour tout compte qui n'est pas
+ * inscrit dans content_reviewers. Les tests l'activent (activerRecetteMock).
+ */
+let relecteurMock = false
+let verdicts: ContentReview[] = []
 const abonnes = new Set<(session: Session | null) => void>()
 
 function notifier() {
@@ -339,12 +345,44 @@ export const mockRepository: DataRepository = {
   async getCatalog() {
     return wait(catalogueCourant())
   },
+
+  async getRecette() {
+    return wait({ relecteur: relecteurMock, reviews: relecteurMock ? [...verdicts] : [] })
+  },
+
+  async saveReview(review) {
+    exigerSession()
+    if (!relecteurMock) throw new RepositoryError("Ce compte n'est pas relecteur.", undefined, true)
+    const commentaire = review.commentaire.trim()
+    // Meme regle que la contrainte SQL invalide_avec_commentaire.
+    if (review.verdict === 'invalide' && commentaire === '') {
+      throw new RepositoryError('Un refus doit dire ce qui ne va pas.', undefined, true)
+    }
+    const enregistre: ContentReview = {
+      ...review,
+      commentaire,
+      mis_a_jour_le: new Date().toISOString(),
+      traite_le: null,
+    }
+    verdicts = [
+      ...verdicts.filter((v) => !(v.item_type === review.item_type && v.item_id === review.item_id)),
+      enregistre,
+    ]
+    return wait(enregistre)
+  },
+}
+
+/** Fait du compte de demonstration un relecteur. Reserve aux tests. */
+export function activerRecetteMock() {
+  relecteurMock = true
 }
 
 /** Remet le mock a zero. Reserve aux tests. */
 export function resetMockRepository() {
   courante = null
   catalogue = null
+  relecteurMock = false
+  verdicts = []
   abonnes.clear()
   try {
     window.localStorage.removeItem(STORAGE_KEY)

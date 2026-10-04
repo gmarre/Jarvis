@@ -6,6 +6,7 @@ import { cn } from '@/lib/cn'
 import { REVIEW_INTERVALS_DAYS, reviewLabel, statusOf } from '@/lib/dag'
 import { relativeDays } from '@/lib/format'
 import { MindmapView } from '@/components/mindmap/MindmapView'
+import { RecettePanel } from '@/components/recette/RecettePanel'
 import { Wordmark } from '@/components/layout/AppShell'
 import { Badge, StatusBadge } from '@/components/ui/Badge'
 import { Button, ButtonLink } from '@/components/ui/Button'
@@ -169,6 +170,9 @@ export default function MindmapPage() {
               Retour à mon espace
             </ButtonLink>
           </div>
+
+          {/* Relecteurs seulement : ne rend rien pour un eleve. */}
+          <RecettePanel itemType="mindmap" itemId={mindmap.id} className="mt-5" />
 
           {mindmap.review_status !== 'valide' && (
             <p className="mt-5 text-[11px] leading-relaxed text-ink-faint">

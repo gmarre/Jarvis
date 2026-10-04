@@ -77,5 +77,9 @@ domaines à moitié faits.
    le produisent.
 6. **Suivi** : bilan dans `QUALITY.md`, état dans ce fichier, commit.
 
-Tout reste en `review_status: "brouillon"` ou `"relu_agent"` : **seule la relecture
-humaine de Marius fait passer un contenu en `valide`.**
+Tout reste en `review_status: "brouillon"` ou `"relu_agent"` jusqu'à la **recette
+dans l'application** (décision du 4 octobre 2026, à la place de la relecture de
+Marius) : un relecteur juge chaque exercice et chaque carte, et
+`scripts/recette.py` reporte les verdicts. Accepté devient `valide` ; invalidé
+redevient `brouillon` et part dans `RECETTE.md` avec le commentaire, à reprendre
+par les agents. Procédure : `CLAUDE.md` §10.6.
