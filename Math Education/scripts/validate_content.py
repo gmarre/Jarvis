@@ -475,7 +475,18 @@ def check_notations(dag: dict, exercises: dict) -> None:
 # de controle : l'eleve lit "$rac{3}{8}$". Douze zones de texte etaient
 # touchees sur quatre exercices, tous introduits par une correction manuelle.
 
-_CTRL = re.compile("[" + chr(0) + "-" + chr(8) + chr(11) + "-" + chr(31) + chr(127) + "]")
+# La tabulation (9) en fait partie : « \times » mal echappe devient une
+# tabulation suivie de « imes », arrive trois fois a l'etape 2 et laisse passer
+# jusque-la. Seul le saut de ligne (10) est legitime dans un texte.
+_CTRL = re.compile("[" + chr(0) + "-" + chr(9) + chr(11) + "-" + chr(31) + chr(127) + "]")
+
+# Filet pour les cas qu'aucun caractere de controle ne trahit : « \neq » mal
+# echappe devient un saut de ligne suivi de « eq ». Dans une formule, une
+# commande LaTeX privee de son antislash ne s'ecrit jamais en clair.
+_FORMULE = re.compile(r"\$[^$]+\$")
+_COMMANDE_ORPHELINE = re.compile(
+    r"(?<![\\a-zA-Z])(?:times|frac|div|cdot|ldots|dots|leq|geq|neq|approx|imes|rac\{)"
+)
 
 
 def check_caracteres_controle(exercises: dict) -> None:
@@ -493,6 +504,13 @@ def check_caracteres_controle(exercises: dict) -> None:
                     f"{', '.join(sorted({hex(ord(c)) for c in trouves}))} "
                     f"— probable antislash non double dans le JSON"
                 )
+            for formule in _FORMULE.findall(z):
+                orphelines = _COMMANDE_ORPHELINE.findall(formule)
+                if orphelines:
+                    err(
+                        f"Commande LaTeX sans antislash : {ex['id']} ({nom}) contient "
+                        f"« {', '.join(sorted(set(orphelines)))} » dans {formule!r}"
+                    )
 
 
 # ---------------------------------------------------------------------------
