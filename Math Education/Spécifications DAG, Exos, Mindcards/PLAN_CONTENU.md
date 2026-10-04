@@ -66,7 +66,9 @@ domaines à moitié faits.
    fichiers assemblés), et `npm test && npm run lint && npm run build` dans
    l'application. Une fois l'étape **commitée**, `python scripts/publier.py
    --apply` publie le contenu dans la base Supabase (il refuse un contenu
-   invalide ou non commité, et recompte ce que la base contient).
+   invalide ou non commité, et recompte ce que la base contient). L'application
+   lit la nouvelle publication au chargement suivant de la page : c'est
+   l'étape qui met le contenu entre les mains des élèves.
 
    Le contenu est découpé : `content/dag/<domaine>.json`,
    `content/exercices/<domaine>/<compétence>.json`, `content/cartes/<carte>.json`.

@@ -36,7 +36,7 @@ MATH EDUCATION est une application web d'apprentissage adaptatif des mathématiq
 - **Cours particuliers : 20€ / 1h30**, réservables via un calendrier de disponibilités professeurs, max **3 élèves par cours**. Pendant le cours, le professeur voit le DAG de chaque élève et reçoit des suggestions d'exercices et de cartes mentales.
 - Abonnement professeur : à définir (ne pas cumuler avec la commission cours).
 
-**Où en est la monétisation :** nulle part, et c'est voulu. La plateforme est gratuite pendant la bêta. L'écran `/abonnement` informe du tarif à venir sans rien encaisser. Stripe est en itération 2. **Ne pas activer de paiement avant que la correction des réponses soit passée côté serveur** (sprint 3) : aujourd'hui un élève peut lire toutes les réponses dans le bundle, donc falsifier sa progression, ce qui est acceptable pendant une bêta gratuite et pas pour un service payant.
+**Où en est la monétisation :** nulle part, et c'est voulu. La plateforme est gratuite pendant la bêta. L'écran `/abonnement` informe du tarif à venir sans rien encaisser. Stripe est en itération 2. **Ne pas activer de paiement avant que la correction des réponses soit passée côté serveur** (sprint 3) : aujourd'hui un élève connecté peut lire toutes les réponses en base, donc falsifier sa progression, ce qui est acceptable pendant une bêta gratuite et pas pour un service payant.
 
 ---
 
@@ -106,7 +106,7 @@ MATH EDUCATION est une **application** (comptes, base de données, logique méti
 | Cartes mentales | Markmap (Markdown hiérarchique vers rendu) | En place |
 | Base + Auth | Supabase : Postgres, **auth Google + email**, RLS | **Branché et validé**, recette navigateur le 3 octobre 2026 (§8.1) |
 | Tests | Vitest (moteur, repository), Docker + Postgres jetable (migrations et RLS) | En place |
-| Contenu pédagogique | JSON versionnés dans Git, chargés en base par script de seed | JSON en place, **seed au sprint 3** |
+| Contenu pédagogique | JSON versionnés dans Git (la source), publiés en base par `scripts/publier.py`, lus par l'application depuis la base | **En place** depuis le 4 octobre 2026 : `src/content/chargement.ts`, cache local par publication ; les JSON locaux ne servent plus qu'au mode démonstration et aux tests |
 | Logique serveur | Supabase Edge Functions (Deno) : correction des réponses, emails, cron | **Sprints 2b et 3** |
 | Emails transactionnels | **Resend**, gratuit jusqu'à 3 000 emails/mois | **Sprint 2b** |
 | État serveur | **TanStack Query** | **Sprint 3**, pas avant |
@@ -120,7 +120,7 @@ Toutes ces briques restent en TypeScript, y compris les Edge Functions (Deno). *
 ### 5.2 Les trois principes d'architecture
 
 1. **Le moteur vit dans `src/lib/`, il est pur et testé.** Aucun composant React, aucune dépendance au navigateur. C'est ce qui permettra de déplacer la correction côté serveur au sprint 3 sans réécrire une ligne du moteur.
-2. **Aucun composant ne contient de donnée en dur.** Tout passe par `src/data/` (accès aux données) ou `src/content/` (contenu pédagogique). La carte « Élèves à suivre » de l'espace professeur, qui affichait des élèves factices, a été retirée le 3 octobre 2026. Elle reviendra avec l'espace professeur v1, sur de vraies données.
+2. **Aucun composant ne contient de donnée en dur.** Tout passe par `src/data/` (accès aux données) ou `src/content/` (contenu pédagogique). Le contenu est installé par le repository avant toute session : **aucun module ne lit `skills`, `exercises` ou `domains` au niveau du fichier**, seulement dans une fonction, sinon il les verrait vides. La carte « Élèves à suivre » de l'espace professeur, qui affichait des élèves factices, a été retirée le 3 octobre 2026. Elle reviendra avec l'espace professeur v1, sur de vraies données.
 3. **`src/data/repository.ts` est la seule couture avec la base.** Il expose une mutation par intention, jamais une sauvegarde en bloc.
 
 ### 5.3 Le contrat du repository
@@ -257,7 +257,7 @@ Le travail se fait par **sprints courts et livrables seuls**. Le détail de chac
 | **1** | Audit et déblocage : test de positionnement en cul-de-sac, gardes de rôle, boutons morts, mise en place de Vitest | **Livré** |
 | **2a** | Auth Google et email, schéma Postgres, RLS, réécriture du repository en mutations | **Livré** |
 | **2b** | Node 24, domaine, Resend, consentement parental enfin obtenable | À faire |
-| **3** | Contenu en base, correction des réponses côté serveur, TanStack Query | À faire |
+| **3** | Contenu en base, correction des réponses côté serveur, TanStack Query | En cours : contenu en base et lu depuis la base (phases 1 et 2, 4 octobre 2026) ; reste la correction côté serveur |
 | **4** | Dépôt dédié, Netlify, domaine, PWA, landing et politique de confidentialité | À faire |
 | **5** | Espace parent (consentement, export et suppression RGPD, suivi) | À faire |
 | **6** | Playwright, `/security-review`, avant le premier élève réel | À faire |
@@ -298,7 +298,7 @@ Dans l'ordre :
 5. **Sprint 2b** : migration 0005 (jeton de consentement haché, expiration 7 jours), Edge Function `send-parent-consent` avec Resend en mode test, page `/consentement/:token`, boutons « Renvoyer » avec limitation de débit.
 6. **Nettoyage** des comptes de test (prof, `+eleve1` à `+eleve3`, comptes des testeurs) et du créneau du 4 octobre, après re-test du constat n°2.
 
-**Proposition de recentrage, à valider :** environ 32h de dev d'ici fin novembre ne couvrent pas les sprints 2b à 6. Avant la bêta gratuite, ne garder que 2b (obligation légale), 4 (mise en ligne) et un 6 réduit (`/security-review` et un parcours Playwright). Le sprint 3 (réponses dans le bundle, acceptable tant que c'est gratuit) et le sprint 5 (export et suppression RGPD traitables à la main pendant la bêta) passent entre la bêta et janvier.
+**Proposition de recentrage, à valider :** environ 32h de dev d'ici fin novembre ne couvrent pas les sprints 2b à 6. Avant la bêta gratuite, ne garder que 2b (obligation légale), 4 (mise en ligne) et un 6 réduit (`/security-review` et un parcours Playwright). Le sprint 3 (réponses lisibles, acceptable tant que c'est gratuit) et le sprint 5 (export et suppression RGPD traitables à la main pendant la bêta) passent entre la bêta et janvier.
 
 ---
 
@@ -419,9 +419,9 @@ Aucun des quatre ne teste le navigateur. Avant tout commit : `npm test && npm ru
 
 **react-router, 2 vulnérabilités modérées.** Open redirect via un antislash dans `<Link>` et `useNavigate`, et injection de constructeur dans l'hydratation SSR. La branche 6.x **n'a aucun correctif** : seule la 7.18.4 corrige, et c'est une montée majeure. Le cas qui concernait l'application, la redirection après connexion, est couvert par `lib/redirect.ts` et ses tests. Migration à décider au sprint 4.
 
-**Réponses des exercices dans le bundle.** Vérifiable : `grep -o '"value":[0-9]*' dist/assets/index-*.js`. Corrigé au sprint 3 par la correction côté serveur.
+**Réponses des exercices lisibles par un élève connecté.** Depuis la phase 2 (4 octobre 2026), elles ne sont plus dans le bundle d'une construction qui a les clés Supabase : `grep -l '"solution_steps"' dist/assets/*.js` ne doit rien trouver. Mais tout compte connecté peut encore lire `content_exercise_keys` (politique transitoire de la migration 0005), et l'application les garde dans son cache local. Corrigé en phase 3 par la correction côté serveur, puis le retrait de cette politique.
 
-**Mur de taille du contenu.** Les 3 JSON sont importés statiquement, donc dans le chunk principal. À la cible de 414 compétences et 5 exercices par niveau, cela ferait de l'ordre de **8 Mo de JSON dans le bundle**. Cassé au sprint 3 par le passage en base. **Déjà sensible :** le chunk principal est passé de 60 ko gzippés à 95 ko (56 compétences, 282 exercices, 3 octobre 2026), puis à **133 ko** (75 compétences, 396 exercices, 4 octobre 2026). Chaque étape du plan de contenu l'alourdit : la publication en base n'attend plus. **Phase 1 faite le 4 octobre 2026** (contenu publié en base, migration 0005) ; reste la phase 2, l'application qui le lit depuis la base au lieu du bundle.
+**Taille du contenu : levé le 4 octobre 2026.** Le chunk principal était monté à 133 ko gzippés (75 compétences, 396 exercices). Depuis la phase 2, l'application lit le contenu dans la base (`src/content/chargement.ts`), une fois par appareil et par publication, et le chunk principal est à **24 ko gzippés**. Reste à surveiller : le cache est dans le `localStorage` (environ 5 Mo) ; au-delà de quelques milliers d'exercices, il faudra le passer sur IndexedDB. Sans cache, l'application relit simplement tout à chaque chargement. Une nouvelle publication n'est vue qu'au rechargement de la page.
 
 **Avertissements de sécurité Supabase préexistants** (advisor du 4 octobre 2026, migrations 0001 à 0004) : neuf fonctions `security definer` sont exécutables par `anon` (`est_prof_de`, `peut_lire_eleve`, `role_actuel`, `nb_places_prises`, `est_parent_de`, et des fonctions de trigger) ; `nom_court_par_defaut` n'a pas de `search_path` fixé ; la protection contre les mots de passe compromis est désactivée (réglage du tableau de bord). Les fonctions d'autorisation doivent rester exécutables par `authenticated`, puisque les politiques RLS les appellent sous le rôle du lecteur : seul `anon` est à retirer. Migration dédiée à faire avant le `/security-review` du sprint 6.
 
@@ -499,7 +499,7 @@ Le lint est réglé sur **zéro warning toléré**, c'est volontaire. Après tou
 |--------|--------|
 | **Erreurs mathématiques** dans le contenu généré (détruisent la confiance des parents) | Double validation systématique, 100 % sur les domaines pilotes, suivi du taux d'erreur, réponses numériques vérifiées par script. |
 | **RGPD & mineurs** (quasi tous les utilisateurs) | Consentement parental requis avant 15 ans, hébergement UE, minimisation, export et suppression, politique de confidentialité. **Aujourd'hui le consentement est impossible à obtenir faute d'emails : blocage réglementaire n°1, sprint 2b.** |
-| **Réponses des exercices dans le bundle** | Lisibles en 30 secondes. Correction côté serveur au sprint 3, indispensable **avant** tout abonnement payant. |
+| **Réponses des exercices lisibles par un élève connecté** | Plus dans le bundle depuis le 4 octobre 2026, mais encore lisibles en base par tout compte connecté. Correction côté serveur (phase 3), indispensable **avant** tout abonnement payant. |
 | **Paiement & données sensibles** | Review par un développeur expérimenté avant activation Stripe, non négociable. |
 | **Effet tunnel** (414 compétences × exos × cartes = jamais fini) | Domaines prioritaires seulement (A, C en pilote, puis B, E, F) ; les autres affichent « bientôt disponible ». Mieux vaut 5 domaines excellents que 15 médiocres. |
 | **Dérive du périmètre** | Rien de l'itération 2 ne démarre avant que de vrais élèves utilisent l'app. |

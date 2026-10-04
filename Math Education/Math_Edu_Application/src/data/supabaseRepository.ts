@@ -15,6 +15,7 @@ import type { PostgrestError } from '@supabase/supabase-js'
 import { requireSupabase } from '@/lib/supabase'
 import { emptyProgress, type ProgressMap } from '@/lib/dag'
 import { skills } from '@/content'
+import { assurerContenu, chargerContenuSupabase } from '@/content/chargement'
 import {
   RepositoryError,
   type Catalog,
@@ -151,7 +152,14 @@ async function chargerSession(userId: string): Promise<Session | null> {
 
   // Une seule salve de requetes en parallele plutot qu'en cascade : sur un
   // reseau mobile, quatre allers-retours sequentiels se voient a l'oeil nu.
-  const [profil, progression, tentatives, positionnement, reservations] = await Promise.all([
+  // Le contenu pedagogique part dans la meme salve : il n'est lisible qu'une
+  // fois connecte, et toute session rendue doit le trouver installe (le moteur
+  // et versProgression le lisent). Il ne se charge qu'une fois par appareil et
+  // par publication, voir content/chargement.ts.
+  const [, profil, progression, tentatives, positionnement, reservations] = await Promise.all([
+    assurerContenu(() => chargerContenuSupabase(db)).catch((cause: unknown) => {
+      throw erreur('Lecture du contenu', cause instanceof Error ? cause : null)
+    }),
     db.from('profiles').select('*').eq('id', userId).maybeSingle(),
     db.from('skill_progress').select('*').eq('user_id', userId),
     db

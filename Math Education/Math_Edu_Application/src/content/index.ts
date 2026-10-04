@@ -1,50 +1,100 @@
 // Point d'entree unique du contenu pedagogique.
 //
-// Les 3 fichiers JSON sont la copie exacte de ceux produits par Marius dans
-// `Specifications DAG, Exos, Mindcards/content/`. Ils sont importes ici une
-// seule fois et indexes, pour que le reste de l'application n'ait jamais a
-// parcourir les tableaux a la main.
+// Depuis la phase 2 de la migration (octobre 2026), le contenu n'est plus
+// importe dans le bundle : il est charge une fois, avant la premiere session,
+// depuis la base Supabase (ou depuis les JSON locaux en mode demonstration),
+// puis installe ici par `installerContenu`. Voir `chargement.ts`.
 //
-// A terme ces memes JSON seront charges en base (tables `content_*`) par un
-// script de seed. L'interface exposee ci-dessous ne changera pas : seul le
-// contenu de ce fichier sera remplace par un appel Supabase.
+// L'interface exposee n'a pas change : le moteur, le positionnement et les
+// ecrans lisent toujours `skills`, `getSkill`, `getExercisesForSkill`... Les
+// tableaux exportes sont des conteneurs remplis sur place, pour que les
+// modules qui les ont importes voient le contenu une fois installe.
+//
+// Regle qui en decoule : aucun module ne doit lire le contenu au chargement
+// (au niveau du fichier). Seulement dans une fonction, appelee une fois la
+// session ouverte. Le repository garantit que le contenu est installe avant de
+// rendre une session.
 
-import type {
-  Exercise,
-  ExercisesBank,
-  Mindmap,
-  MindmapsBank,
-  SchoolLevel,
-  Skill,
-  SkillsDag,
-} from '@/types/content'
+import type { Exercise, Mindmap, SchoolLevel, Skill } from '@/types/content'
 import { SCHOOL_LEVELS } from '@/types/content'
 
-import exercisesJson from './exercises.json'
-import mindmapsJson from './mindmaps.json'
-import skillsJson from './skills_dag.json'
+export interface ContenuPedagogique {
+  skills: Skill[]
+  exercises: Exercise[]
+  mindmaps: Mindmap[]
+}
 
-const dag = skillsJson as unknown as SkillsDag
-const bank = exercisesJson as unknown as ExercisesBank
-const maps = mindmapsJson as unknown as MindmapsBank
+export interface Domain {
+  id: string
+  name: string
+  skills: Skill[]
+}
 
-export const dagMetadata = dag.metadata
-export const skills: Skill[] = dag.skills
-export const exercises: Exercise[] = bank.exercises
-export const mindmaps: Mindmap[] = maps.mindmaps
+export const skills: Skill[] = []
+export const exercises: Exercise[] = []
+export const mindmaps: Mindmap[] = []
+/** Domaines reellement presents dans le contenu, dans l'ordre alphabetique. */
+export const domains: Domain[] = []
 
-const skillById = new Map(skills.map((s) => [s.id, s]))
-const exerciseById = new Map(exercises.map((e) => [e.id, e]))
-const mindmapById = new Map(mindmaps.map((m) => [m.id, m]))
-
+const skillById = new Map<string, Skill>()
+const exerciseById = new Map<string, Exercise>()
+const mindmapById = new Map<string, Mindmap>()
 /** Competences qui dependent d'une competence donnee (arcs sortants du DAG). */
 const dependentsBySkill = new Map<string, string[]>()
-for (const skill of skills) {
-  for (const prereq of skill.prerequisites) {
-    const list = dependentsBySkill.get(prereq)
-    if (list) list.push(skill.id)
-    else dependentsBySkill.set(prereq, [skill.id])
+
+let installe = false
+
+// Une boucle plutot que splice(0, n, ...source) : l'etalement d'un tableau de
+// plusieurs dizaines de milliers d'elements depasse la pile d'appels.
+function remplacer<T>(cible: T[], source: T[]) {
+  const copie = source.slice()
+  cible.length = 0
+  for (const element of copie) cible.push(element)
+}
+
+/**
+ * Installe le contenu et recalcule les index. Rejouable : une nouvelle
+ * publication remplace entierement la precedente.
+ */
+export function installerContenu(contenu: ContenuPedagogique) {
+  // Copie avant tri : l'appelant peut passer les tableaux d'un JSON importe.
+  remplacer(skills, [...contenu.skills].sort((a, b) => a.id.localeCompare(b.id)))
+  remplacer(exercises, contenu.exercises)
+  remplacer(mindmaps, contenu.mindmaps)
+
+  skillById.clear()
+  for (const skill of skills) skillById.set(skill.id, skill)
+  exerciseById.clear()
+  for (const exercise of exercises) exerciseById.set(exercise.id, exercise)
+  mindmapById.clear()
+  for (const mindmap of mindmaps) mindmapById.set(mindmap.id, mindmap)
+
+  dependentsBySkill.clear()
+  for (const skill of skills) {
+    for (const prereq of skill.prerequisites) {
+      const list = dependentsBySkill.get(prereq)
+      if (list) list.push(skill.id)
+      else dependentsBySkill.set(prereq, [skill.id])
+    }
   }
+
+  const parDomaine = new Map<string, Domain>()
+  for (const skill of skills) {
+    const domaine = parDomaine.get(skill.domain)
+    if (domaine) domaine.skills.push(skill)
+    else parDomaine.set(skill.domain, { id: skill.domain, name: skill.domain_name, skills: [skill] })
+  }
+  remplacer(
+    domains,
+    [...parDomaine.values()].sort((a, b) => a.id.localeCompare(b.id)),
+  )
+
+  installe = true
+}
+
+/** Vrai une fois le contenu installe. */
+export function contenuInstalle(): boolean {
+  return installe
 }
 
 export function getSkill(id: string): Skill | undefined {
@@ -98,17 +148,6 @@ export function countUnlockedBy(skillId: string): number {
   }
   return seen.size
 }
-
-export interface Domain {
-  id: string
-  name: string
-  skills: Skill[]
-}
-
-/** Domaines reellement presents dans le contenu, dans l'ordre alphabetique. */
-export const domains: Domain[] = dagMetadata.domains
-  .map((d) => ({ id: d.id, name: d.name, skills: skills.filter((s) => s.domain === d.id) }))
-  .filter((d) => d.skills.length > 0)
 
 export function getDomain(id: string): Domain | undefined {
   return domains.find((d) => d.id === id)

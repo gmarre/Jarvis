@@ -38,5 +38,7 @@ export default defineConfig({
   test: {
     environment: 'node',
     include: ['src/**/*.test.ts'],
+    // Installe le contenu local avant chaque fichier de test (voir le fichier).
+    setupFiles: ['src/testSetup.ts'],
   },
 })

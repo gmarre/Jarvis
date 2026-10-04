@@ -18,6 +18,7 @@ import {
 import { emptyProgress } from '@/lib/dag'
 import { newId } from '@/lib/id'
 import { skills } from '@/content'
+import { assurerContenu, chargerContenuLocal } from '@/content/chargement'
 import {
   RepositoryError,
   type Catalog,
@@ -39,6 +40,14 @@ const LATENCY_MS = import.meta.env.MODE === 'test' ? 0 : 180
 
 function wait<T>(value: T, ms = LATENCY_MS): Promise<T> {
   return new Promise((resolve) => setTimeout(() => resolve(value), ms))
+}
+
+/**
+ * Contenu de la demonstration : les JSON locaux, importes a la demande (chunk a
+ * part). Comme en production, toute session rendue le trouve installe.
+ */
+function contenu(): Promise<void> {
+  return assurerContenu(chargerContenuLocal)
 }
 
 /**
@@ -126,6 +135,7 @@ function recalculerPlaces(slots: AvailabilitySlot[], bookings: Booking[]): Avail
 
 export const mockRepository: DataRepository = {
   async getSession() {
+    await contenu()
     if (!courante) {
       const raw = (() => {
         try {
@@ -151,6 +161,7 @@ export const mockRepository: DataRepository = {
   },
 
   async signInWithPassword(email) {
+    await contenu()
     const adresse = email.trim().toLowerCase()
     if (!COMPTES_DEMO.includes(adresse as (typeof COMPTES_DEMO)[number])) {
       throw new RepositoryError('Adresse inconnue en mode demonstration.')
@@ -168,6 +179,7 @@ export const mockRepository: DataRepository = {
   },
 
   async signUp(input) {
+    await contenu()
     courante = { ...buildNewAccountSnapshot(profileFromSignUp(input)), attempts: [] }
     persister()
     notifier()
