@@ -219,6 +219,8 @@ Le schéma complet et commenté vit dans **`Math_Edu_Application/supabase/migrat
 
 Toutes en `security definer` avec `set search_path = public`, pour éviter la récursion RLS (voir §11).
 
+**Droits d'exécution (migration 0007).** Aucune fonction `security definer` n'est appelable par `anon`. `authenticated` n'exécute que les trois dont il a besoin : `peut_lire_eleve` et `role_actuel` (appelées par les politiques RLS sous le rôle du lecteur) et `nb_places_prises` (vue `slots_disponibles`, en `security_invoker`). Les fonctions de trigger et `est_prof_de` / `est_parent_de` ne sont appelables par personne : un trigger se déclenche sans ce droit, et `peut_lire_eleve` les appelle avec les droits de son propriétaire. **Une nouvelle fonction n'est plus appelable par `anon` par défaut** ; si `authenticated` doit l'appeler (politique RLS, vue en `security_invoker`), il garde le droit par défaut de Supabase, sinon le retirer dans sa migration comme pour `publier_contenu`. Vérifié par `supabase/tests/04_droits_fonctions.sql`.
+
 | Fonction | Rôle |
 |----------|------|
 | `est_prof_de(eleve)` | Vrai si l'élève est inscrit à un créneau de ce professeur **et** a autorisé le partage. Les deux conditions. |
@@ -434,7 +436,10 @@ Aucun des quatre ne teste le navigateur. Avant tout commit : `npm test && npm ru
 
 **Taille du contenu : levé le 4 octobre 2026.** Le chunk principal était monté à 133 ko gzippés (75 compétences, 396 exercices). Depuis la phase 2, l'application lit le contenu dans la base (`src/content/chargement.ts`), une fois par appareil et par publication, et le chunk principal est à **24 ko gzippés**. Reste à surveiller : le cache est dans le `localStorage` (environ 5 Mo) ; au-delà de quelques milliers d'exercices, il faudra le passer sur IndexedDB. Sans cache, l'application relit simplement tout à chaque chargement. Une nouvelle publication n'est vue qu'au rechargement de la page.
 
-**Avertissements de sécurité Supabase préexistants** (advisor du 4 octobre 2026, migrations 0001 à 0004) : neuf fonctions `security definer` sont exécutables par `anon` (`est_prof_de`, `peut_lire_eleve`, `role_actuel`, `nb_places_prises`, `est_parent_de`, et des fonctions de trigger) ; `nom_court_par_defaut` n'a pas de `search_path` fixé ; la protection contre les mots de passe compromis est désactivée (réglage du tableau de bord). Les fonctions d'autorisation doivent rester exécutables par `authenticated`, puisque les politiques RLS les appellent sous le rôle du lecteur : seul `anon` est à retirer. Migration dédiée à faire avant le `/security-review` du sprint 6.
+**Advisor de sécurité Supabase : 4 avertissements restants, tous acceptés** (après la migration 0007, 4 octobre 2026 ; il y en avait 21).
+- `content_exercise_keys` sans politique : voulu, personne d'autre que `service_role` ne doit la lire (migration 0006).
+- `peut_lire_eleve`, `role_actuel`, `nb_places_prises` exécutables par `authenticated` : nécessaire, les politiques RLS et la vue `slots_disponibles` les appellent sous le rôle du lecteur. Elles ne rendent que ce que la personne connectée sait déjà.
+- Protection contre les mots de passe compromis (HaveIBeenPwned) désactivée : **réservée au plan Pro** de Supabase. À activer au passage en plan payant, au plus tard avant l'ouverture publique. En attendant, garder une longueur minimale de mot de passe d'au moins 8 caractères dans les réglages Auth.
 
 **Poids du bundle.** `supabase-js` a fait passer le premier chargement de 92 à **148 ko gzippés**, dont un client realtime inutilisé. Les chunks vendor sont séparés pour rester en cache entre deux déploiements, ce qui aide les visites suivantes mais pas la première. Le réduire demanderait d'importer `@supabase/auth-js` et `@supabase/postgrest-js` séparément, au prix d'une API moins standard. À trancher au sprint 4 avec la cible Lighthouse.
 

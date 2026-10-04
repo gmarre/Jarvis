@@ -121,6 +121,7 @@ verifier() {
 verifier "Triggers, capacite des creneaux, cascades" 01_triggers_et_capacite.sql
 verifier "Isolation RLS et escalade de privilege" 02_rls_isolation.sql
 verifier "Contenu pedagogique : publication et lecture" 03_contenu.sql
+verifier "Droits d'execution des fonctions" 04_droits_fonctions.sql
 
 echo
 if [ "$echec" -ne 0 ]; then
