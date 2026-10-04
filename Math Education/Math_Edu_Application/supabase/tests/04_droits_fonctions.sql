@@ -36,12 +36,17 @@ select 'TEST 43 les fonctions des politiques restent appelables par un eleve' as
        and has_function_privilege('authenticated', 'role_actuel()', 'execute')
        and has_function_privilege('authenticated', 'nb_places_prises(uuid)', 'execute') as ok;
 
+-- Les fonctions d'une extension ne sont pas les notres : pgcrypto les pose
+-- dans public sur le Postgres de test, alors que Supabase les range dans le
+-- schema extensions. On les reconnait a leur dependance de type 'e'.
 select 'TEST 44 aucune fonction sans search_path fige' as test,
        (select string_agg(p.proname, ',') from pg_proc p
          where p.pronamespace = 'public'::regnamespace
+           and not exists (select 1 from pg_depend d where d.objid = p.oid and d.deptype = 'e')
            and not exists (select 1 from unnest(coalesce(p.proconfig, '{}')) c where c like 'search_path=%')) as sans_search_path,
        not exists (select 1 from pg_proc p
                     where p.pronamespace = 'public'::regnamespace
+                      and not exists (select 1 from pg_depend d where d.objid = p.oid and d.deptype = 'e')
                       and not exists (select 1 from unnest(coalesce(p.proconfig, '{}')) c
                                       where c like 'search_path=%')) as ok;
 

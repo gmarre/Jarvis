@@ -387,7 +387,7 @@ Aucun des quatre ne teste le navigateur. Avant tout commit : `npm test && npm ru
 
 ### 10.6 Mener une recette du contenu
 
-La recette consiste à parcourir le contenu dans l'application, comme un élève, et à accepter ou invalider chaque exercice et chaque carte.
+La recette consiste à parcourir le contenu dans l'application, comme un élève, et à accepter ou invalider chaque exercice et chaque carte. **C'est Marius qui la mène** (lead contenu) ; Gauthier n'y valide rien. Les nouveaux contenus s'y ajoutent au fil des étapes : chaque publication les fait apparaître dans `/recette`, en « à juger ».
 
 1. **Un compte élève dédié** (par exemple `prenom+recette@...`), profil complété : ses réponses font bouger sa progression, autant ne pas abîmer un vrai compte.
 2. **L'inscrire comme relecteur**, dans le SQL Editor :
@@ -405,6 +405,8 @@ La recette consiste à parcourir le contenu dans l'application, comme un élève
 ---
 
 ## 11. Pièges connus et leçons apprises
+
+**Docker Desktop qui ne répond plus (`Internal Server Error` sur `docker info`).** Constaté le 4 octobre 2026 : le service Windows de Docker tourne, mais ne joint plus le moteur dans sa machine virtuelle WSL (journal `%LOCALAPPDATA%\Docker\log\host\com.docker.backend.exe.log` : `connect tcp 192.168.65.7:2375: no route to host`). Typique après une mise en veille. Attendre ne sert à rien. Remède, sans perte d'images ni de conteneurs : quitter Docker Desktop (ou arrêter les processus `com.docker.*`), `wsl --shutdown`, relancer Docker Desktop ; le moteur répond en une quinzaine de secondes.
 
 **Tester le SQL en propriétaire de table ne teste rien.** Deux bugs de production sont venus de là, et tous deux de la même famille : une règle qui doit valoir pour tout le monde s'exécutait dans le contexte de sécurité du lecteur. Un trigger non `security definer` faisait `select ... for update` sur une table dont la politique UPDATE excluait l'élève, donc il ne voyait pas le créneau et **aucune réservation n'était possible**. Une vue `security_invoker` comptait des réservations filtrées par le RLS du lecteur, donc **un créneau complet s'affichait comme disponible**. Le harnais local n'avait rien vu parce qu'il tournait en propriétaire de table, ce qui contourne entièrement le RLS. **Toute assertion SQL doit tourner sous `set role authenticated` avec un JWT.**
 
