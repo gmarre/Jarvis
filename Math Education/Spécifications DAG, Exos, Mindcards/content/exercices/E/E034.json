@@ -1,0 +1,176 @@
+[
+  {
+    "id": "EX-E034-D-01",
+    "skill_id": "E034",
+    "level": "decouverte",
+    "type": "numerique",
+    "statement": "Au marché, les clémentines sont vendues au kilogramme. Voici ce que paient trois clients.\n\nMasse (kg) : 2 ; 3 ; 5.\nPrix (€) : 5,60 ; 8,40 ; 14.\n\nChaque prix s'obtient en multipliant la masse par un même nombre : c'est le coefficient de proportionnalité. Quel est ce nombre ?",
+    "image": null,
+    "answer": {
+      "value": 2.8,
+      "accepted": [
+        "2,8",
+        "2,80"
+      ],
+      "unit": null
+    },
+    "solution_steps": [
+      "Le coefficient est le nombre par lequel on multiplie la masse (en kg) pour obtenir le prix (en €). On le cherche avec une colonne : pour 2 kg, on paie 5,60 €, donc on cherche le nombre qui, multiplié par 2, donne 5,60. C'est $5{,}6 \\div 2 = 2{,}8$.",
+      "On vérifie sur les autres colonnes : $3 \\times 2{,}8 = 8{,}4$ et $5 \\times 2{,}8 = 14$. On retrouve bien les prix 8,40 € et 14 €.",
+      "Le coefficient est **2,8**. C'est le prix d'un kilogramme de clémentines, 2,80 € : en 6e, on l'appelait la valeur pour une unité. Prix (en €) = masse (en kg) × 2,8."
+    ],
+    "hint": "Combien coûte 1 kg de clémentines ?",
+    "estimated_duration_s": 90,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, classe de 5e : « Utiliser un coefficient de proportionnalité dans des contextes concrets (prix unitaire, vitesse moyenne, échelle, etc.). »"
+  },
+  {
+    "id": "EX-E034-D-02",
+    "skill_id": "E034",
+    "level": "decouverte",
+    "type": "vrai_faux",
+    "statement": "Une boulangerie vend des pains au chocolat, tous au même prix.\n\nNombre de pains au chocolat : 4 ; 6 ; 10.\nPrix (€) : 6 ; 9 ; 15.\n\nLéo affirme : « Le coefficient de proportionnalité est 2, car $4 + 2 = 6$. »",
+    "image": null,
+    "answer": {
+      "value": false
+    },
+    "solution_steps": [
+      "Un coefficient de proportionnalité est un nombre par lequel on **multiplie**, pas un nombre qu'on ajoute. Léo a trouvé 2 avec une addition : $4 + 2 = 6$.",
+      "Son idée ne marche pas pour la colonne suivante : $6 + 2 = 8$, alors que 6 pains au chocolat coûtent 9 €. Et même en multipliant, 2 ne convient pas : $4 \\times 2 = 8$, pas 6.",
+      "Le bon coefficient : $6 \\div 4 = 1{,}5$. On vérifie : $4 \\times 1{,}5 = 6$, $6 \\times 1{,}5 = 9$ et $10 \\times 1{,}5 = 15$. Un pain au chocolat coûte 1,50 €.",
+      "L'affirmation de Léo est **fausse** : le coefficient est 1,5."
+    ],
+    "hint": "Un coefficient sert à multiplier. Vérifie l'idée de Léo sur toutes les colonnes.",
+    "estimated_duration_s": 75,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, classe de 5e : « Utiliser un coefficient de proportionnalité dans des contextes concrets (prix unitaire, vitesse moyenne, échelle, etc.). »"
+  },
+  {
+    "id": "EX-E034-E-01",
+    "skill_id": "E034",
+    "level": "entrainement",
+    "type": "numerique",
+    "statement": "Un fil électrique est vendu au mètre. 6 m de ce fil pèsent 52,8 g.\n\nTrouve le coefficient qui permet de passer de la longueur (en m) à la masse (en g), puis calcule la masse de 3,5 m de fil.",
+    "image": null,
+    "answer": {
+      "value": 30.8,
+      "accepted": [
+        "30,8 g",
+        "30,8",
+        "30,80 g"
+      ],
+      "unit": "g"
+    },
+    "solution_steps": [
+      "La masse est proportionnelle à la longueur. Le coefficient est le nombre par lequel on multiplie la longueur (en m) pour obtenir la masse (en g) : $52{,}8 \\div 6 = 8{,}8$. Un mètre de fil pèse 8,8 g.",
+      "Pourquoi le coefficient ? Passer de 6 m à 3,5 m ne se fait ni par un double ni par une moitié : le coefficient, lui, marche pour n'importe quelle longueur.",
+      "Masse de 3,5 m : $3{,}5 \\times 8{,}8 = 30{,}8$. On pose $35 \\times 88 = 3\\,080$, puis on place la virgule : un chiffre après la virgule dans 3,5, un dans 8,8, donc deux dans le produit : 30,80, soit 30,8.",
+      "Contrôle : 3,5 m, c'est un peu plus que la moitié de 6 m, et la moitié de 52,8 g est $52{,}8 \\div 2 = 26{,}4$ g. 30,8 g est un peu plus : c'est cohérent. 3,5 m de fil pèsent **30,8 g**."
+    ],
+    "hint": "Commence par la masse d'un mètre de fil.",
+    "estimated_duration_s": 150,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, classe de 5e : « Utiliser un coefficient de proportionnalité dans des contextes concrets (prix unitaire, vitesse moyenne, échelle, etc.). »"
+  },
+  {
+    "id": "EX-E034-E-02",
+    "skill_id": "E034",
+    "level": "entrainement",
+    "type": "qcm",
+    "statement": "La maquette d'un voilier est construite à l'échelle : 1 cm sur la maquette représente 40 cm sur le vrai bateau. La coque de la maquette mesure 18,5 cm.\n\nPar quel nombre faut-il multiplier une longueur de la maquette pour obtenir la longueur réelle ? Utilise ce coefficient : quelle est la longueur réelle de la coque ?",
+    "image": null,
+    "choices": [
+      {
+        "key": "a",
+        "text": "58,5 cm",
+        "misconception": "L'élève ajoute 40 au lieu de multiplier par 40 : $18{,}5 + 40 = 58{,}5$. Il traite l'échelle comme un écart à ajouter, alors qu'elle dit que chaque centimètre de la maquette vaut 40 cm."
+      },
+      {
+        "key": "b",
+        "text": "74 cm",
+        "misconception": "L'élève oublie le 0 de 40 : il calcule $18{,}5 \\times 4 = 74$, c'est-à-dire qu'il multiplie par 4 au lieu de 40."
+      },
+      {
+        "key": "c",
+        "text": "740 cm",
+        "misconception": null
+      }
+    ],
+    "answer": {
+      "value": "c"
+    },
+    "solution_steps": [
+      "« 1 cm sur la maquette représente 40 cm en réalité » : chaque centimètre de la maquette correspond à 40 cm sur le bateau. Pour passer d'une longueur de la maquette à la longueur réelle, on multiplie par **40** : c'est le coefficient de proportionnalité, l'échelle écrite comme un coefficient.",
+      "Longueur réelle de la coque : $18{,}5 \\times 40 = 740$. On calcule d'abord $18{,}5 \\times 4 = 74$, puis on multiplie par 10 : 740.",
+      "Contrôle : le vrai bateau est bien plus grand que la maquette, environ $20 \\times 40 = 800$ cm. 740 cm convient ; 58,5 cm ferait un bateau à peine plus de trois fois plus long que la maquette. La bonne réponse est c."
+    ],
+    "hint": "Que représente 1 cm de la maquette ? Et 2 cm ?",
+    "estimated_duration_s": 120,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, classe de 5e : « Utiliser un coefficient de proportionnalité dans des contextes concrets (prix unitaire, vitesse moyenne, échelle, etc.). »"
+  },
+  {
+    "id": "EX-E034-M-01",
+    "skill_id": "E034",
+    "level": "maitrise",
+    "type": "numerique",
+    "statement": "Pour faire des crêpes, la masse de farine est proportionnelle au nombre de crêpes : il faut 100 g de farine pour 8 crêpes.\n\nMila a 275 g de farine. Cherche le coefficient qui permet de passer de la masse de farine (en g) au nombre de crêpes, puis calcule combien de crêpes elle peut faire.",
+    "image": null,
+    "answer": {
+      "value": 22,
+      "accepted": [
+        "22 crêpes",
+        "22"
+      ],
+      "unit": "crêpes"
+    },
+    "solution_steps": [
+      "On cherche le nombre par lequel on multiplie la masse de farine (en g) pour obtenir le nombre de crêpes. Avec 100 g on fait 8 crêpes : $8 \\div 100 = 0{,}08$. Le coefficient est 0,08 : chaque gramme de farine donne 0,08 crêpe.",
+      "Nombre de crêpes avec 275 g : $275 \\times 0{,}08 = 22$. On calcule $275 \\times 8 = 2\\,200$, puis on divise par 100 : 22.",
+      "Contrôle dans l'autre sens : pour passer du nombre de crêpes à la farine, le coefficient est $100 \\div 8 = 12{,}5$ (12,5 g par crêpe), et $22 \\times 12{,}5 = 275$.",
+      "Les deux coefficients vont en sens contraires : on multiplie par 12,5 pour aller des crêpes à la farine, par 0,08 pour revenir de la farine aux crêpes. Mila peut faire **22 crêpes**."
+    ],
+    "hint": "Combien de crêpes fait-on avec 1 g de farine ? Ce nombre est plus petit que 1.",
+    "estimated_duration_s": 180,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, classe de 5e : « Utiliser un coefficient de proportionnalité dans des contextes concrets (prix unitaire, vitesse moyenne, échelle, etc.). »"
+  },
+  {
+    "id": "EX-E034-M-02",
+    "skill_id": "E034",
+    "level": "maitrise",
+    "type": "qcm",
+    "statement": "Un magasin de bricolage vend du câble au mètre : 3 m coûtent 10 €.\n\nUtilise le coefficient qui permet de passer de la longueur (en m) au prix (en €) : combien coûtent 4,5 m de ce câble ?",
+    "image": null,
+    "choices": [
+      {
+        "key": "a",
+        "text": "15 €",
+        "misconception": null
+      },
+      {
+        "key": "b",
+        "text": "14,99 €",
+        "misconception": "L'élève calcule le coefficient $10 \\div 3$, qui ne tombe pas juste, l'arrondit à 3,33, puis calcule $4{,}5 \\times 3{,}33 = 14{,}985$, qu'il arrondit à 14,99 €. L'arrondi du coefficient a faussé le résultat."
+      },
+      {
+        "key": "c",
+        "text": "11,50 €",
+        "misconception": "L'élève ajoute le même nombre à la longueur et au prix : 4,5 m, c'est 1,5 m de plus que 3 m, il ajoute donc 1,50 € à 10 €. C'est le modèle additif, qui ne respecte pas la proportionnalité."
+      }
+    ],
+    "answer": {
+      "value": "a"
+    },
+    "solution_steps": [
+      "Le coefficient qui passe de la longueur (en m) au prix (en €) est $10 \\div 3$. Cette division ne tombe pas juste (3,333…) : on écrit le coefficient sous forme de fraction, $\\frac{10}{3}$, sans l'arrondir.",
+      "Multiplier par $\\frac{10}{3}$, c'est multiplier par 10 puis diviser par 3 : $4{,}5 \\times 10 = 45$, puis $45 \\div 3 = 15$.",
+      "Autre chemin : 4,5 m, c'est 3 m plus la moitié de 3 m. Le prix est donc 10 € plus la moitié de 10 €, soit $10 + 5 = 15$.",
+      "4,5 m de câble coûtent **15 €** : la bonne réponse est a. Avec un coefficient arrondi à 3,33, on trouverait environ 14,99 € : quand le coefficient ne tombe pas juste, on le garde en fraction."
+    ],
+    "hint": "10 ÷ 3 ne tombe pas juste. Comment écrire ce coefficient exactement, sans l'arrondir ?",
+    "estimated_duration_s": 150,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, classe de 5e : « Utiliser un coefficient de proportionnalité dans des contextes concrets (prix unitaire, vitesse moyenne, échelle, etc.). »"
+  }
+]

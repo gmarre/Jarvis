@@ -1,6 +1,6 @@
 # Fiche de relecture — synthèse
 
-> 75 compétences, 396 exercices. Généré depuis `content/`, ne pas éditer à la main.  
+> 93 compétences, 504 exercices. Généré depuis `content/`, ne pas éditer à la main.  
 > Objectif : juger le **fond** et la **coordination**. Le détail complet, énoncés et corrigés, est dans `RELECTURE_DETAIL.md`.
 
 ⚠ **7 compétence(s) à regarder**, signalées dans la colonne *Signal* et détaillées en §3.
@@ -47,45 +47,63 @@ C'est la lecture qui compte pour juger la coordination : la difficulté doit mon
 | 34 | `B039` Sens de la division et symbole ÷ | CE2 | 3 | 6 | 14 |  |
 | 35 | `B041` Calcul mental : multiplier par 100 et p… | CE2 | 3 | 6 | 14 |  |
 | 36 | `B007` Multiplication posée | CE2 | 3 | 6 | 18 |  |
-| 37 | `D017` Additionner et soustraire des montants … | CE2 | 3 | 6 | 18 |  |
-| 38 | `A012` Multiple | CM1 | 3 | 7 | 22 |  |
-| 39 | `A013` Diviseur | CM1 | 3 | 7 | 21 |  |
-| 40 | `A014` Multiples de 2, de 5 et de 10 | CM1 | 3 | 7 | 18 |  |
-| 41 | `A028` Entier sur une demi-droite graduée | CM1 | 3 | 7 | 25 |  |
-| 42 | `B008` Division euclidienne posée (diviseur à … | CM1 | 3 | 6 | 20 |  |
-| 43 | `B012` Calcul avec parenthèses | CM1 | 3 | 6 | 15 |  |
-| 44 | `B017` Estimer le résultat d'une opération | CM1 | 3 | 6 | 20 |  |
-| 45 | `C004` Fraction d'une quantité | CM1 | 3 | 3 | 13 |  |
-| 46 | `C027` Fraction supérieure à 1 | CM1 | 3 | 8 | 15 |  |
-| 47 | `C029` Encadrer une fraction | CM1 | 3 | 7 | 14 |  |
-| 48 | `C030` Fraction sur une demi-droite graduée | CM1 | 3 | 7 | 25 |  |
-| 49 | `D018` Fractions décimales : dixièmes et centi… | CM1 | 3 | 6 | 24 |  |
-| 50 | `D001` Écriture à virgule d'un nombre décimal | CM1 | 3 | 6 | 16 |  |
-| 51 | `D003` Comparer et ranger des nombres décimaux | CM1 | 3 | 6 | 28 |  |
-| 52 | `D004` Additionner et soustraire des décimaux … | CM1 | 3 | 6 | 20 |  |
-| 53 | `D012` Encadrer et intercaler des nombres déci… | CM1 | 3 | 6 | 24 |  |
-| 54 | `D008` Partie entière et arrondi à l'unité | CM1 | 3 | 6 | 19 |  |
-| 55 | `D019` Décimal sur une demi-droite graduée | CM1 | 3 | 6 | 27 |  |
-| 56 | `D020` Calcul mental : multiplier et diviser u… | CM1 | 3 | 6 | 19 |  |
-| 57 | `D021` Multiplier un décimal par un entier inf… | CM1 | 3 | 6 | 17 |  |
-| 58 | `D014` Convertir des mesures écrites avec une … | CM1 | 4 | 6 | 20 |  |
-| 59 | `A026` Tous les diviseurs d'un entier | CM2 | 3 | 7 | 17 |  |
-| 60 | `B016` Calcul mental : diviser par 2, 4 ou 8 | CM2 | 3 | 6 | 16 |  |
-| 61 | `A027` Diviseurs et multiples communs | CM2 | 4 | 8 | 22 |  |
-| 62 | `C031` Produit d'un entier par une fraction | CM2 | 4 | 7 | 10 |  |
-| 63 | `D022` Décimaux jusqu'aux millièmes | CM2 | 4 | 6 | 14 |  |
-| 64 | `D007` Division décimale par un entier à un ch… | CM2 | 4 | 6 | 17 |  |
-| 65 | `D023` Calcul mental : multiplier et diviser u… | CM2 | 4 | 6 | 13 |  |
-| 66 | `D024` Multiplier un décimal par un entier (po… | CM2 | 4 | 6 | 20 |  |
-| 67 | `B040` Division euclidienne par un nombre à de… | 6e | 4 | 6 | 18 |  |
-| 68 | `C032` Fraction comme quotient | 6e | 4 | 7 | 16 |  |
-| 69 | `D009` Arrondir au dixième ou au centième | 6e | 4 | 6 | 17 |  |
-| 70 | `D025` Multiplier par 0,1 ; 0,01 ; 0,001 | 6e | 4 | 6 | 19 |  |
-| 71 | `D006` Multiplier deux nombres décimaux | 6e | 5 | 6 | 22 |  |
-| 72 | `C011` Réduction au même dénominateur | 5e | 4 | 3 | 14 |  |
-| 73 | `C010` Comparer fractions de dénominateurs dif… | 5e | 4 | 3 | 13 |  |
-| 74 | `C007` Simplification de fraction | 4e | 5 | 3 | 11 |  |
-| 75 | `C008` Fraction irréductible | 3e | 6 | 3 | 9 |  |
+| 37 | `B043` Comparaison multiplicative : fois plus,… | CE2 | 3 | 6 | 21 |  |
+| 38 | `D017` Additionner et soustraire des montants … | CE2 | 3 | 6 | 18 |  |
+| 39 | `A012` Multiple | CM1 | 3 | 7 | 22 |  |
+| 40 | `A013` Diviseur | CM1 | 3 | 7 | 21 |  |
+| 41 | `A014` Multiples de 2, de 5 et de 10 | CM1 | 3 | 7 | 18 |  |
+| 42 | `A028` Entier sur une demi-droite graduée | CM1 | 3 | 7 | 25 |  |
+| 43 | `B008` Division euclidienne posée (diviseur à … | CM1 | 3 | 6 | 20 |  |
+| 44 | `B012` Calcul avec parenthèses | CM1 | 3 | 6 | 15 |  |
+| 45 | `B017` Estimer le résultat d'une opération | CM1 | 3 | 6 | 20 |  |
+| 46 | `C004` Fraction d'une quantité | CM1 | 3 | 3 | 13 |  |
+| 47 | `C027` Fraction supérieure à 1 | CM1 | 3 | 8 | 15 |  |
+| 48 | `C029` Encadrer une fraction | CM1 | 3 | 7 | 14 |  |
+| 49 | `C030` Fraction sur une demi-droite graduée | CM1 | 3 | 7 | 25 |  |
+| 50 | `D018` Fractions décimales : dixièmes et centi… | CM1 | 3 | 6 | 24 |  |
+| 51 | `D001` Écriture à virgule d'un nombre décimal | CM1 | 3 | 6 | 16 |  |
+| 52 | `D003` Comparer et ranger des nombres décimaux | CM1 | 3 | 6 | 28 |  |
+| 53 | `D004` Additionner et soustraire des décimaux … | CM1 | 3 | 6 | 20 |  |
+| 54 | `D012` Encadrer et intercaler des nombres déci… | CM1 | 3 | 6 | 24 |  |
+| 55 | `D008` Partie entière et arrondi à l'unité | CM1 | 3 | 6 | 19 |  |
+| 56 | `D019` Décimal sur une demi-droite graduée | CM1 | 3 | 6 | 27 |  |
+| 57 | `D020` Calcul mental : multiplier et diviser u… | CM1 | 3 | 6 | 19 |  |
+| 58 | `D021` Multiplier un décimal par un entier inf… | CM1 | 3 | 6 | 17 |  |
+| 59 | `E026` Reconnaître une situation de proportion… | CM1 | 3 | 6 | 27 |  |
+| 60 | `E027` Résoudre par linéarité multiplicative (… | CM1 | 3 | 6 | 17 |  |
+| 61 | `D014` Convertir des mesures écrites avec une … | CM1 | 4 | 6 | 20 |  |
+| 62 | `A026` Tous les diviseurs d'un entier | CM2 | 3 | 7 | 17 |  |
+| 63 | `B016` Calcul mental : diviser par 2, 4 ou 8 | CM2 | 3 | 6 | 16 |  |
+| 64 | `A027` Diviseurs et multiples communs | CM2 | 4 | 8 | 22 |  |
+| 65 | `C031` Produit d'un entier par une fraction | CM2 | 4 | 7 | 10 |  |
+| 66 | `D022` Décimaux jusqu'aux millièmes | CM2 | 4 | 6 | 14 |  |
+| 67 | `D007` Division décimale par un entier à un ch… | CM2 | 4 | 6 | 17 |  |
+| 68 | `D023` Calcul mental : multiplier et diviser u… | CM2 | 4 | 6 | 13 |  |
+| 69 | `D024` Multiplier un décimal par un entier (po… | CM2 | 4 | 6 | 20 |  |
+| 70 | `E028` Résoudre par linéarité additive | CM2 | 4 | 6 | 22 |  |
+| 71 | `E029` Problèmes de proportionnalité en plusie… | CM2 | 4 | 6 | 18 |  |
+| 72 | `B040` Division euclidienne par un nombre à de… | 6e | 4 | 6 | 18 |  |
+| 73 | `C032` Fraction comme quotient | 6e | 4 | 7 | 16 |  |
+| 74 | `D009` Arrondir au dixième ou au centième | 6e | 4 | 6 | 17 |  |
+| 75 | `D025` Multiplier par 0,1 ; 0,01 ; 0,001 | 6e | 4 | 6 | 19 |  |
+| 76 | `E030` Grandeurs proportionnelles : définition… | 6e | 4 | 6 | 31 |  |
+| 77 | `E031` Passage par l'unité et choix de la proc… | 6e | 4 | 6 | 24 |  |
+| 78 | `E003` Tableau de proportionnalité : représent… | 6e | 4 | 6 | 51 |  |
+| 79 | `E032` Pourcentage : définition et écritures | 6e | 4 | 6 | 31 |  |
+| 80 | `E010` Appliquer un pourcentage à une grandeur… | 6e | 4 | 6 | 25 |  |
+| 81 | `E033` Exprimer une proportion en pourcentage … | 6e | 4 | 6 | 24 |  |
+| 82 | `D006` Multiplier deux nombres décimaux | 6e | 5 | 6 | 22 |  |
+| 83 | `E006` Échelle d'un plan : premiers problèmes | 6e | 5 | 6 | 36 |  |
+| 84 | `C011` Réduction au même dénominateur | 5e | 4 | 3 | 14 |  |
+| 85 | `C010` Comparer fractions de dénominateurs dif… | 5e | 4 | 3 | 13 |  |
+| 86 | `E034` Coefficient de proportionnalité | 5e | 5 | 6 | 48 |  |
+| 87 | `E007` Vitesse moyenne | 5e | 5 | 6 | 24 |  |
+| 88 | `E035` Reconnaître un tableau de proportionnal… | 5e | 5 | 6 | 47 |  |
+| 89 | `E023` Proportionnalité et graphique | 5e | 5 | 6 | 53 |  |
+| 90 | `E036` Calculer un pourcentage dans le cas gén… | 5e | 5 | 6 | 31 |  |
+| 91 | `E037` Pourcentages par linéarité : 1 %, 10 %,… | 5e | 5 | 6 | 29 |  |
+| 92 | `C007` Simplification de fraction | 4e | 5 | 3 | 11 |  |
+| 93 | `C008` Fraction irréductible | 3e | 6 | 3 | 9 |  |
 
 ## 2. Par chapitre
 
@@ -136,14 +154,15 @@ Le chapitre est l'unité qu'un exercice bilan validerait.
 | `B016` Calcul mental : diviser par 2, 4 … | Diviser mentalement un nombre entier par 4 ou par 8 en prenant successive… | 6 |
 | `B040` Division euclidienne par un nombr… | Effectuer la division euclidienne d'un entier par un entier inférieur à 1… | 6 |
 
-### `MM-B-04` · Problèmes à étapes et contrôle du calcul (CP-CM1)
+### `MM-B-04` · Problèmes en une ou deux étapes, parenthèses et estimation (CP-CM1)
 
-4 compétences, 24 exercices, niveaux CP, CE1, CM1.
+5 compétences, 30 exercices, niveaux CP, CE1, CE2, CM1.
 
 | Compétence | Ce que l'élève doit savoir faire | Exos |
 |---|---|--:|
 | `B037` Problèmes additifs en deux étapes | Résoudre un problème qui enchaîne deux étapes additives ou soustractives,… | 6 |
 | `B038` Problèmes mixtes en deux étapes | Résoudre un problème en deux étapes qui combine une étape multiplicative … | 6 |
+| `B043` Comparaison multiplicative : fois… | Résoudre en une étape un problème de comparaison multiplicative : traduir… | 6 |
 | `B012` Calcul avec parenthèses | Effectuer un calcul contenant une paire de parenthèses, en commençant par… | 6 |
 | `B017` Estimer le résultat d'une opérati… | Donner un ordre de grandeur du résultat d'une addition, d'une soustractio… | 6 |
 
@@ -253,6 +272,40 @@ Le chapitre est l'unité qu'un exercice bilan validerait.
 | `D025` Multiplier par 0,1 ; 0,01 ; 0,001 | Multiplier un entier ou un décimal par 0,1, 0,01 ou 0,001, et savoir que … | 6 |
 | `D006` Multiplier deux nombres décimaux | Calculer le produit de deux décimaux en se ramenant au produit de deux en… | 6 |
 
+### `MM-E-01` · La proportionnalité en phrases : fois plus, fois moins (CM1-CM2)
+
+4 compétences, 24 exercices, niveaux CM1, CM2.
+
+| Compétence | Ce que l'élève doit savoir faire | Exos |
+|---|---|--:|
+| `E026` Reconnaître une situation de prop… | Dire si, quand une grandeur devient 2, 3 ou 4 fois plus grande (ou plus p… | 6 |
+| `E027` Résoudre par linéarité multiplica… | Résoudre un problème de proportionnalité en multipliant ou en divisant le… | 6 |
+| `E028` Résoudre par linéarité additive | Résoudre un problème de proportionnalité en ajoutant ou en soustrayant de… | 6 |
+| `E029` Problèmes de proportionnalité en … | Enchaîner plusieurs raisonnements de linéarité quand on ne passe pas d'un… | 6 |
+
+### `MM-E-02` · Proportionnalité en 6e : unité, tableau, échelle (6e)
+
+4 compétences, 24 exercices, niveaux 6e.
+
+| Compétence | Ce que l'élève doit savoir faire | Exos |
+|---|---|--:|
+| `E030` Grandeurs proportionnelles : défi… | Savoir que deux grandeurs sont proportionnelles quand la quantité « pour … | 6 |
+| `E031` Passage par l'unité et choix de l… | Calculer la valeur pour une unité (prix d'un objet, quantité pour une per… | 6 |
+| `E003` Tableau de proportionnalité : rep… | Présenter une situation de proportionnalité dans un tableau, avec le nom … | 6 |
+| `E006` Échelle d'un plan : premiers prob… | Utiliser une échelle donnée en phrase (« 1 cm sur le plan représente 50 m… | 6 |
+
+### `MM-E-03` · Les pourcentages (6e-5e)
+
+5 compétences, 30 exercices, niveaux 6e, 5e.
+
+| Compétence | Ce que l'élève doit savoir faire | Exos |
+|---|---|--:|
+| `E032` Pourcentage : définition et écrit… | Savoir que 35 % signifie 35 pour 100, c'est-à-dire la fraction décimale d… | 6 |
+| `E010` Appliquer un pourcentage à une gr… | Calculer 20 % de 350 g ou 15 % de 60 en prenant la fraction correspondant… | 6 |
+| `E033` Exprimer une proportion en pource… | Calculer la proportion d'une partie dans un tout (12 filles sur 25 élèves… | 6 |
+| `E036` Calculer un pourcentage dans le c… | Exprimer en pourcentage la part d'un effectif dans un total quelconque (6… | 6 |
+| `E037` Pourcentages par linéarité : 1 %,… | Calculer mentalement 1 %, 10 % ou 50 % d'un nombre, et en déduire d'autre… | 6 |
+
 ### `MM-C-03` · Operer sur les fractions (5e-3e)
 
 4 compétences, 12 exercices, niveaux 5e, 4e, 3e.
@@ -263,6 +316,17 @@ Le chapitre est l'unité qu'un exercice bilan validerait.
 | `C010` Comparer fractions de dénominateu… | Comparer deux fractions de dénominateurs différents | 3 |
 | `C007` Simplification de fraction | Simplifier une fraction par un facteur commun au numérateur et au dénomin… | 3 |
 | `C008` Fraction irréductible | Mettre une fraction sous forme irréductible | 3 |
+
+### `MM-E-04` · Coefficient, vitesse et graphique (5e)
+
+4 compétences, 24 exercices, niveaux 5e.
+
+| Compétence | Ce que l'élève doit savoir faire | Exos |
+|---|---|--:|
+| `E034` Coefficient de proportionnalité | Trouver le nombre par lequel on multiplie une grandeur pour obtenir l'aut… | 6 |
+| `E007` Vitesse moyenne | À vitesse constante, la distance parcourue est proportionnelle à la durée… | 6 |
+| `E035` Reconnaître un tableau de proport… | Décider si un tableau de valeurs traduit une situation de proportionnalit… | 6 |
+| `E023` Proportionnalité et graphique | Représenter une situation de proportionnalité par des points dans un repè… | 6 |
 
 ## 3. Ce qui mérite ton oeil
 
@@ -694,6 +758,19 @@ Le chapitre est l'unité qu'un exercice bilan validerait.
 | M | qcm | Un avion transporte 168 passagers par vol. Ce mois-ci, il fait 37 vols complets. Combien de… | c) 6 216 |
 | M | nume | Une boulangère cuit 45 plaques de 12 croissants et 23 plaques de 9 brioches. Combien de cro… | 747 |
 
+**`B043` · Comparaison multiplicative : fois plus, fois moins** — diff. 3, seuil 3/4  
+*Résoudre en une étape un problème de comparaison multiplicative : traduire « 5 fois plus » par une multiplication et « 3 fois moins » par une division, et distinguer ces locutions de « 5 de plus » et « 3 de moins » (comparaison additive). Nombres entiers, résultats exacts.*
+> « Résoudre des problèmes de comparaison multiplicative en une étape. »
+
+| | Type | Demandé | Réponse |
+|---|---|---|---|
+| D | nume | Léo a 7 billes. Sam a 4 fois plus de billes que Léo. Combien de billes Sam a-t-il ? | 28 |
+| D | qcm | Une ficelle rouge mesure 30 cm. Une ficelle bleue est 5 fois moins longue. Combien mesure l… | c) 6 cm |
+| E | vrai | Une gomme coûte 2 €. Un compas coûte 4 fois plus cher que la gomme. Tom dit : « Le compas c… | faux |
+| E | nume | Un cheval a bu 36 litres d'eau. Un poney a bu 4 fois moins d'eau que le cheval. Combien de … | 9 |
+| M | qcm | Lou a 40 images. Elle a 5 fois plus d'images que Max. Combien d'images Max a-t-il ? | a) 8 images |
+| M | nume | Une trousse coûte 7 €. Elle coûte 6 fois moins cher qu'un cartable. Combien coûte le cartab… | 42 |
+
 **`D017` · Additionner et soustraire des montants en euros (posé)** — diff. 3, seuil 3/4  
 *Poser et effectuer des additions et des soustractions de montants en euros écrits avec une virgule (toujours deux chiffres de centimes), et rendre la monnaie. Les montants restent inférieurs à 10 000 €.*
 > « Les techniques posées rencontrées au CE1 pour l'addition et la soustraction des nombres entiers sont étendues au CE2 aux montants en euro utilisant l… »
@@ -974,6 +1051,32 @@ Le chapitre est l'unité qu'un exercice bilan validerait.
 | M | nume | Pour un bouquet, un fleuriste utilise 0,65 m de ruban. Il fait 5 bouquets le matin et 3 l'a… | 5.2 |
 | M | vrai | Une gourde contient 1,25 L. Vrai ou faux : 4 gourdes contiennent un nombre entier de litres. | vrai |
 
+**`E026` · Reconnaître une situation de proportionnalité** — diff. 3, seuil 3/4  
+*Dire si, quand une grandeur devient 2, 3 ou 4 fois plus grande (ou plus petite), l'autre change de la même façon : prix et nombre d'objets achetés, épaisseur d'une pile et nombre de feuilles. Repérer les situations qui ne le sont pas (taille et âge, prix avec frais de livraison). Toujours avec des grandeurs, en langage naturel, sans tableau.*
+> « Identifier une situation de proportionnalité »
+
+| | Type | Demandé | Réponse |
+|---|---|---|---|
+| D | vrai | Elsa achète 2 paquets de gâteaux à 4 € le paquet. Jules achète 3 fois plus de paquets. Vrai… | vrai |
+| D | qcm | Dans quelle situation, si la première grandeur devient 2 fois plus grande, la seconde devie… | b) Le nombre de timbres achetés e… |
+| E | qcm | Une pile de 40 feuilles identiques est épaisse de 8 mm. Léo garde seulement 10 de ces feuil… | a) Elle devient 4 fois plus petit… |
+| E | vrai | Lina a 5 ans et son frère a 10 ans : il a 2 fois l'âge de Lina. Vrai ou faux : dans 5 ans, … | faux |
+| M | nume | Une fleuriste vend des pots à 2 € pièce, plus 5 € de livraison par commande. 3 pots livrés … | 17 |
+| M | qcm | Un melon coûte 3 €. Le marchand propose une offre : 3 melons pour 7 €. Ana prend l'offre. P… | c) Non : 3 fois 3 €, c'est 9 €, e… |
+
+**`E027` · Résoudre par linéarité multiplicative (fois plus, fois moins)** — diff. 3, seuil 3/4  
+*Résoudre un problème de proportionnalité en multipliant ou en divisant les deux grandeurs par un même nombre entier, et le justifier par une phrase (« 3 fois plus de pains, donc 3 fois plus cher »), sans calculer le prix d'une unité quand c'est inutile. Ni tableau, ni coefficient, ni produit en croix.*
+> « Savoir résoudre un problème de proportionnalité »
+
+| | Type | Demandé | Réponse |
+|---|---|---|---|
+| D | nume | Au marché, 3 cahiers coûtent 8 €. Combien coûtent 6 de ces cahiers ? | 16 |
+| D | qcm | Pour 4 bols de soupe, il faut 3 carottes. Combien de carottes faut-il pour 12 bols ? | b) 9 carottes |
+| E | nume | 12 bouteilles de jus coûtent 20 €. Combien coûtent 3 de ces bouteilles ? | 5 |
+| E | vrai | 8 tickets de bus coûtent 14 €. Malo dit : « 32 tickets coûtent 56 €. » A-t-il raison ? | vrai |
+| M | qcm | Un boulanger fait 14 pains avec 6 kg de farine. Combien de farine lui faut-il pour faire 42… | c) 18 kg |
+| M | nume | Un club de foot paie 492 € pour 36 maillots identiques. Combien paierait-il pour 9 de ces m… | 123 |
+
 **`D014` · Convertir des mesures écrites avec une virgule** — diff. 4, seuil 3/4  
 *Convertir une longueur, une masse ou une contenance écrite avec une virgule dans une unité plus petite, en s'appuyant sur les relations entre unités et sans tableau de conversion (3,5 m = 3 m + 50 cm = 350 cm).*
 > « Les longueurs, les masses et les contenances permettent de nourrir le travail mené sur les fractions et les nombres décimaux. »
@@ -1097,6 +1200,32 @@ Le chapitre est l'unité qu'un exercice bilan validerait.
 | M | qcm | On sait que 254 × 37 = 9 398. Sans poser d'opération, quel est le résultat de 2{,}54 × 37 ? | c) 93,98 |
 | M | nume | Pour une course solidaire, 3 équipes de 12 coureurs courent chacun 4,15 km. Combien de kilo… | 149.4 |
 
+**`E028` · Résoudre par linéarité additive** — diff. 4, seuil 3/4  
+*Résoudre un problème de proportionnalité en ajoutant ou en soustrayant deux situations connues : si 4 pains coûtent 7 € et 3 pains 5,25 €, alors 7 pains coûtent 12,25 €. Raisonnement rédigé en phrases, sans tableau.*
+> « Seuls des raisonnements fondés sur les propriétés de linéarité pour la multiplication et pour l'addition sont attendus »
+
+| | Type | Demandé | Réponse |
+|---|---|---|---|
+| D | nume | 2 bouteilles de lait coûtent 3 € et 5 bouteilles coûtent 7,50 €. Combien coûtent 7 bouteill… | 10.5 |
+| D | qcm | 4 billets de musée coûtent 18 € et 6 billets coûtent 27 €. Comment trouver le prix de 10 bi… | a) On ajoute 18 € et 27 €, car 10… |
+| E | nume | 7 kg de carottes coûtent 9,10 € et 3 kg coûtent 3,90 €. Combien coûtent 4 kg de carottes ? | 5.2 |
+| E | vrai | 5 cahiers coûtent 8,50 € et 2 cahiers coûtent 3,40 €. Lila dit : « 10 cahiers coûtent 11,90… | faux |
+| M | nume | 4 kg de poires coûtent 10,80 € et 5 kg coûtent 13,50 €. Combien coûtent 13 kg de poires ? | 35.1 |
+| M | qcm | 2 kg de cerises coûtent 9 € et 5 kg coûtent 22,50 €. Léa paie 31,50 €. Quelle masse de ceri… | b) 7 kg |
+
+**`E029` · Problèmes de proportionnalité en plusieurs étapes** — diff. 4, seuil 3/4  
+*Enchaîner plusieurs raisonnements de linéarité quand on ne passe pas d'une quantité à l'autre par un nombre entier de fois : 6 cahiers coûtent 9 €, donc 2 cahiers coûtent 3 €, donc 10 cahiers coûtent 15 €. Combiner « fois plus » et somme. Toujours en phrases, sans tableau, ni coefficient, ni produit en croix.*
+> « les savoir-faire développés se consolident et s'enrichissent à travers la résolution de problèmes nécessitant plusieurs étapes »
+
+| | Type | Demandé | Réponse |
+|---|---|---|---|
+| D | nume | 4 pots de peinture coûtent 18 €. Cherche d'abord le prix de 2 pots. Combien coûtent 6 pots ? | 27 |
+| D | qcm | Une recette pour 6 personnes demande 4 tomates. Combien de tomates faut-il pour 9 personnes… | b) 6 tomates |
+| E | nume | 10 ballons coûtent 45 €. Combien coûtent 4 de ces ballons ? | 18 |
+| E | vrai | 15 kg de pommes donnent 9 litres de jus. Malik dit : « Avec 25 kg, j'aurai 19 litres, car j… | faux |
+| M | nume | Avec 21 €, Hugo achète 6 carnets identiques. Combien de ces carnets peut-il acheter avec 35… | 10 |
+| M | qcm | Un fleuriste vend 12 roses pour 18 €. Combien coûtent 28 roses ? | c) 42 € |
+
 ### ── 6e ──
 
 **`B040` · Division euclidienne par un nombre à deux chiffres** — diff. 4, seuil 3/4  
@@ -1152,6 +1281,84 @@ Le chapitre est l'unité qu'un exercice bilan validerait.
 | M | nume | Nora multiplie 72 par un nombre décimal et obtient 0,072. Par quel nombre a-t-elle multipli… | 0.001 |
 | M | qcm | Sans poser d'opération, quel calcul donne le plus grand résultat ? | a) 630 × 0{,}01 |
 
+**`E030` · Grandeurs proportionnelles : définition et modèle** — diff. 4, seuil 3/4  
+*Savoir que deux grandeurs sont proportionnelles quand la quantité « pour une unité » reste la même, et le relier aux expressions courantes (prix au kilo, battements du cœur par minute). Décider si une situation relève de ce modèle, et justifier un refus (prix au kilo différent, abonnement, frais fixes). Le mot « coefficient » n'est pas employé.*
+> « Connaître la définition de la proportionnalité entre deux grandeurs et la mettre en lien avec des expressions de la vie courante »
+
+| | Type | Demandé | Réponse |
+|---|---|---|---|
+| D | vrai | À la boulangerie, 3 baguettes coûtent 3,60 € et 5 baguettes coûtent 6 €. Calcule le prix d'… | vrai |
+| D | qcm | Au marché, une étiquette indique : « Tomates : 3 € le kilo ». Quelle phrase explique correc… | c) Chaque kilogramme coûte 3 €, d… |
+| E | qcm | Une salle d'escalade fait payer 8 € d'inscription pour l'année, puis 5 € par séance. Le pri… | b) Non : 2 séances coûtent 18 € e… |
+| E | vrai | Un magasin vend la bouteille d'eau 0,80 € à l'unité, et le pack de 6 de ces bouteilles 3 €.… | faux |
+| M | qcm | Laquelle de ces situations est une situation de proportionnalité ? | d) La longueur de tissu achetée e… |
+| M | nume | Sur un étal, les pommes de terre sont vendues en sacs : 7 € le sac de 4 kg, 16 € le sac de … | 17.5 |
+
+**`E031` · Passage par l'unité et choix de la procédure** — diff. 4, seuil 3/4  
+*Calculer la valeur pour une unité (prix d'un objet, quantité pour une personne) puis la multiplier, et choisir entre ce passage par l'unité et la linéarité multiplicative ou additive selon les nombres en jeu. Les unités des grandeurs figurent dans les calculs.*
+> « Résoudre un problème de proportionnalité en choisissant une procédure adaptée : propriété de linéarité pour la multiplication ou l'addition, retour à… »
+
+| | Type | Demandé | Réponse |
+|---|---|---|---|
+| D | nume | 5 classeurs identiques coûtent 9,50 €. Calcule d'abord le prix d'un classeur. Combien coûte… | 7.6 |
+| D | qcm | Une recette de soupe pour 6 personnes demande 1 200 g de légumes. Quelle masse de légumes f… | d) 1 000 g |
+| E | nume | 8 m de corde coûtent 13,60 €. Combien coûtent 5 m de cette corde, en euros ? | 8.5 |
+| E | vrai | 12 croissants coûtent 10,80 €. Nadia cherche le prix de 36 croissants. Elle dit : « 36 croi… | vrai |
+| M | nume | Pour 6 personnes, il faut 750 g de pâtes. Quelle masse de pâtes faut-il pour 15 personnes, … | 1875 |
+| M | nume | 3 melons identiques coûtent 7,50 €. Lou a 22 €. Combien de melons peut-elle acheter au maxi… | 8 |
+
+**`E003` · Tableau de proportionnalité : représenter et compléter** — diff. 4, seuil 3/4  
+*Présenter une situation de proportionnalité dans un tableau, avec le nom et l'unité de chaque grandeur, ou avec des flèches, puis compléter les cases manquantes en s'appuyant sur les relations entre les nombres (double, triple, moitié, somme de deux colonnes) ou sur la valeur pour une unité. Ni coefficient, ni produit en croix.*
+> « Représenter une situation de proportionnalité à l'aide d'un tableau ou de notations symboliques »
+
+| | Type | Demandé | Réponse |
+|---|---|---|---|
+| D | nume | Au marché, le prix des poires est proportionnel à leur masse. Voici un tableau à compléter … | 15 |
+| D | qcm | Chez le fleuriste, une botte de 5 tulipes coûte 4 €. Kenza a rempli ce tableau mais a oubli… | b) En haut « Nombre de tulipes »,… |
+| E | nume | Des boîtes de thé contiennent toutes la même masse de thé. Complète ce tableau : \begin{arr… | 625 |
+| E | vrai | Les lentilles sont vendues au même prix au kilo. Lucas complète ce tableau : \begin{array}{… | faux |
+| M | nume | Pour un repas, la masse de riz est proportionnelle au nombre d'invités. \begin{array}{/l/c/… | 1575 |
+| M | qcm | Le prix du comté est proportionnel à sa masse. Inès a payé 7,50 €. \begin{array}{/l/c/c/} \… | d) 500 g |
+
+**`E032` · Pourcentage : définition et écritures** — diff. 4, seuil 3/4  
+*Savoir que 35 % signifie 35 pour 100, c'est-à-dire la fraction décimale de dénominateur 100 ou 0,35, et passer d'une écriture à l'autre (50 % = un demi = 0,5 ; 25 % = un quart ; 10 % = un dixième). Pourcentages compris entre 0 % et 100 %.*
+> « Connaître la définition d'un pourcentage »
+
+| | Type | Demandé | Réponse |
+|---|---|---|---|
+| D | text | Sur une affiche, on lit : « 40 % des places sont réservées aux abonnés. » Le symbole % se l… | 40/100 |
+| D | qcm | La jauge de batterie d'une tablette affiche 50 %. 50 %, c'est 50 pour 100. Quelle part de l… | b) La moitié de la batterie |
+| E | nume | Sur l'étiquette d'une boisson, on lit : 8 % de sucre. Cela signifie 8 g de sucre pour 100 g… | 0.08 |
+| E | qcm | Une pizza est coupée en 4 parts égales. Chloé en mange une, c'est-à-dire un quart de la piz… | c) 25 % |
+| M | vrai | Léo affirme : « 0,7, c'est 7 %, puisque le chiffre après la virgule est un 7. » Léo a-t-il … | faux |
+| M | qcm | Trois élèves indiquent la part de leur trajet faite à vélo : Ana écrit 0,4 ; Bilal écrit 9 … | a) Ana (0,4) |
+
+**`E010` · Appliquer un pourcentage à une grandeur ou à un nombre** — diff. 4, seuil 3/4  
+*Calculer 20 % de 350 g ou 15 % de 60 en prenant la fraction correspondante du nombre : diviser par 100 puis multiplier, ou utiliser 50 % = la moitié, 25 % = le quart, 10 % = le dixième.*
+> « Appliquer un pourcentage à une grandeur ou à un nombre »
+
+| | Type | Demandé | Réponse |
+|---|---|---|---|
+| D | nume | Une randonnée fait 18 km. Le premier jour, le groupe parcourt 50 % du trajet. 50 %, c'est l… | 9 |
+| D | qcm | Un roman compte 230 pages. Mia en a lu 10 %. Combien de pages a-t-elle lues ? | b) 23 pages |
+| E | nume | Un paquet de céréales pèse 450 g. Les céréales contiennent 6 % de sucre. Quelle masse de su… | 27 |
+| E | vrai | Pour calculer 25 % de 84 €, Hugo divise 84 par 4 et trouve 21 €. Hugo a-t-il raison ? | vrai |
+| M | nume | Un jeu de société coûte 45 €. Pendant les soldes, le magasin fait une remise de 20 % sur ce… | 36 |
+| M | qcm | L'an dernier, un club de judo comptait 260 licenciés. Cette année, le nombre de licenciés a… | c) 299 licenciés |
+
+**`E033` · Exprimer une proportion en pourcentage (cas simples)** — diff. 4, seuil 3/4  
+*Calculer la proportion d'une partie dans un tout (12 filles sur 25 élèves) et l'écrire en pourcentage quand le total se ramène simplement à 100 (2, 4, 5, 10, 20, 25, 50, 200) : 12 sur 25, c'est 48 sur 100, soit 48 %.*
+> « Calculer une proportion (rapport entre une partie et le tout) et l'exprimer sous forme de pourcentage dans des cas simples »
+
+| | Type | Demandé | Réponse |
+|---|---|---|---|
+| D | nume | À l'entraînement, Inès tire 10 penaltys et en réussit 7. Quelle proportion de ses tirs a-t-… | 70 |
+| D | qcm | Un sachet contient 50 bonbons, dont 9 à la menthe. Quel pourcentage des bonbons est à la me… | b) 18 % |
+| E | nume | Une équipe de handball a joué 20 matchs cette saison et en a gagné 13. Quel pourcentage de … | 65 |
+| E | qcm | Un collège compte 200 élèves. 46 d'entre eux chantent dans la chorale. Quel pourcentage des… | a) 23 % |
+| M | vrai | Noa a réussi 4 tirs sur 5, Lou 17 tirs sur 20. Noa affirme : « J'ai le meilleur pourcentage… | faux |
+| M | nume | Un car transporte 50 passagers : 34 adultes, les autres sont des enfants. Quel pourcentage … | 32 |
+
 **`D006` · Multiplier deux nombres décimaux** — diff. 5, seuil 3/4  
 *Calculer le produit de deux décimaux en se ramenant au produit de deux entiers puis en plaçant la virgule, et contrôler le résultat par un ordre de grandeur.*
 > « Le sens des opérations étudiées au cours moyen s'élargit avec l'introduction de la multiplication de deux nombres décimaux. »
@@ -1164,6 +1371,19 @@ Le chapitre est l'unité qu'un exercice bilan validerait.
 | E | nume | Un tissu coûte 7,25 € le mètre. Lina en achète 1,6 m. Combien paie-t-elle ? Contrôle ton ré… | 11.6 |
 | M | qcm | Léa a calculé 85 × 43 = 3 655. Quel est le résultat de 0{,}85 × 4{,}3 ? Utilise un ordre de… | c) 3,655 |
 | M | nume | Le gazole coûte 1,9 € le litre. Un automobiliste met 32,4 L dans son réservoir. Combien pai… | 61.56 |
+
+**`E006` · Échelle d'un plan : premiers problèmes** — diff. 5, seuil 3/4  
+*Utiliser une échelle donnée en phrase (« 1 cm sur le plan représente 50 m en réalité ») pour calculer une distance réelle ou une longueur sur le plan, par linéarité ou passage par l'unité, en convertissant si besoin les longueurs. L'écriture d'une échelle sous forme de fraction n'est pas attendue.*
+> « S'initier à la résolution de problèmes d'échelles »
+
+| | Type | Demandé | Réponse |
+|---|---|---|---|
+| D | nume | Sur le plan d'un parc, 1 cm sur le plan représente 20 m en réalité. Sur ce plan, l'allée pr… | 120 |
+| D | qcm | Sur une carte, 1 cm sur la carte représente 5 km en réalité. Deux villages sont à 4 cm l'un… | a) 20 km |
+| E | nume | Sur le plan d'un quartier, 1 cm sur le plan représente 25 m en réalité. Une rue mesure 8,4 … | 210 |
+| E | vrai | Sur le plan d'une école, 1 cm sur le plan représente 4 m en réalité. La cour mesure 32 m de… | faux |
+| M | nume | Sur une carte de randonnée, 1 cm sur la carte représente 500 m en réalité. Un sentier mesur… | 9 |
+| M | qcm | Un terrain de football mesure 100 m de long. On le dessine sur deux plans. Sur le plan A, 1… | c) Sur le plan A : 10 cm contre 4… |
 
 ### ── 5e ──
 
@@ -1186,6 +1406,84 @@ Le chapitre est l'unité qu'un exercice bilan validerait.
 | D | qcm | Compare 2/3 et 3/5. | a) 2/3 > 3/5 |
 | E | qcm | Compare 8/12 et 8/21 sans calculer. | a) 8/12 > 8/21 |
 | M | text | Range ces trois fractions de la plus petite à la plus grande : 3/4, 7/18, 5/6 Écris-les sép… | 7/18, 3/4, 5/6 |
+
+**`E034` · Coefficient de proportionnalité** — diff. 5, seuil 3/4  
+*Trouver le nombre par lequel on multiplie une grandeur pour obtenir l'autre (prix unitaire, vitesse, échelle), éventuellement décimal ou écrit sous forme de fraction, et l'utiliser pour compléter un tableau ou résoudre un problème. Une échelle peut alors s'écrire comme un coefficient (1 cm pour 25 000 cm).*
+> « Utiliser un coefficient de proportionnalité dans des contextes concrets (prix unitaire, vitesse moyenne, échelle, etc.). »
+
+| | Type | Demandé | Réponse |
+|---|---|---|---|
+| D | nume | Au marché, les clémentines sont vendues au kilogramme. Voici ce que paient trois clients. M… | 2.8 |
+| D | vrai | Une boulangerie vend des pains au chocolat, tous au même prix. Nombre de pains au chocolat … | faux |
+| E | nume | Un fil électrique est vendu au mètre. 6 m de ce fil pèsent 52,8 g. Trouve le coefficient qu… | 30.8 |
+| E | qcm | La maquette d'un voilier est construite à l'échelle : 1 cm sur la maquette représente 40 cm… | c) 740 cm |
+| M | nume | Pour faire des crêpes, la masse de farine est proportionnelle au nombre de crêpes : il faut… | 22 |
+| M | qcm | Un magasin de bricolage vend du câble au mètre : 3 m coûtent 10 €. Utilise le coefficient q… | a) 15 € |
+
+**`E007` · Vitesse moyenne** — diff. 5, seuil 3/4  
+*À vitesse constante, la distance parcourue est proportionnelle à la durée : utiliser la vitesse moyenne (en km/h) comme coefficient pour calculer une distance, une durée ou une vitesse. Durées en heures entières ou en demi-heures ; les conversions d'unités composées sont de 4e.*
+> « Utiliser un coefficient de proportionnalité dans des contextes concrets (prix unitaire, vitesse moyenne, échelle, etc.). »
+
+| | Type | Demandé | Réponse |
+|---|---|---|---|
+| D | nume | Sur l'autoroute, une voiture roule à la vitesse constante de 80 km/h : elle parcourt 80 km … | 320 |
+| D | qcm | Un car scolaire parcourt 210 km en 3 h, à vitesse constante. Quelle est sa vitesse moyenne ? | b) 70 km/h |
+| E | nume | Une cycliste roule à la vitesse constante de 22 km/h pendant deux heures et demie (2,5 h). … | 55 |
+| E | vrai | Un bateau parcourt 36 km en 1,5 h, à vitesse constante. Affirmation : sa vitesse moyenne es… | faux |
+| M | nume | Un TER roule à la vitesse moyenne de 90 km/h. Il doit parcourir 225 km. Combien de temps du… | 2.5 |
+| M | qcm | Pour partir en vacances, une famille roule 2 h à 100 km/h, puis 1 h à 70 km/h. Quelle est s… | a) 90 km/h |
+
+**`E035` · Reconnaître un tableau de proportionnalité** — diff. 5, seuil 3/4  
+*Décider si un tableau de valeurs traduit une situation de proportionnalité en calculant les quotients de chaque colonne (ou en cherchant un coefficient commun), et justifier un refus par une colonne qui ne convient pas. Contextes concrets : prix, recettes, distances, échelles.*
+> « Reconnaitre une situation de proportionnalité à partir d'un tableau ou d'un graphique. »
+
+| | Type | Demandé | Réponse |
+|---|---|---|---|
+| D | vrai | À la papeterie, Inès note le prix de cahiers identiques. Nombre de cahiers : 2 ; 5 ; 7. Pri… | vrai |
+| D | qcm | Une supérette affiche le prix des yaourts à boire. Nombre de yaourts : 2 ; 4 ; 6. Prix (€) … | c) Non, car 3{,}9 ÷ 6 = 0{,}65, a… |
+| E | qcm | Trois cinémas affichent le prix à payer selon le nombre de places. Nombre de places : 2 ; 3… | a) Cinéma A |
+| E | nume | Lucas recopie les quantités d'une recette de mousse au chocolat pour plusieurs tablées. Nom… | 240 |
+| M | vrai | Pour préparer une boisson, on mélange du sirop et de l'eau. Volume de sirop (cL) : 3 ; 9 ; … | vrai |
+| M | qcm | Au marché, un vendeur affirme que le prix de ses abricots est proportionnel à la masse ache… | b) Non : une des colonnes ne donn… |
+
+**`E023` · Proportionnalité et graphique** — diff. 5, seuil 3/4  
+*Représenter une situation de proportionnalité par des points dans un repère et savoir qu'ils sont alignés avec l'origine ; décider, à partir d'un graphique ou d'un nuage de points, si une situation est de proportionnalité (alignés mais ne passant pas par l'origine : non).*
+> « Représenter une situation de proportionnalité par un tableau ou un graphique. »
+
+| | Type | Demandé | Réponse |
+|---|---|---|---|
+| D | vrai | Dans un repère, on représente le prix de places de concert : le nombre de places en absciss… | vrai |
+| D | qcm | On représente le nombre de pages imprimées par une imprimante selon la durée d'impression (… | c) (6 ; 54) |
+| E | nume | Un robinet fuit, en perdant chaque jour la même quantité d'eau. On représente le volume d'e… | 65 |
+| E | qcm | Au marché, on représente le prix payé (en €) selon la masse de pommes achetée (en kg) par t… | b) Non : le point (6 ; 20) n'est … |
+| M | vrai | Un taxi affiche ses tarifs. On représente le prix de la course (en €) selon la distance par… | faux |
+| M | nume | On représente le prix (en €) du jus de pomme vendu au litre selon le volume acheté (en L) :… | 11 |
+
+**`E036` · Calculer un pourcentage dans le cas général** — diff. 5, seuil 3/4  
+*Exprimer en pourcentage la part d'un effectif dans un total quelconque (6 voix sur 24, 14 élèves sur 40) : quotient de la partie par le tout, puis multiplication par 100, avec un résultat éventuellement décimal ou arrondi. Fréquences exprimées en pourcentage.*
+> « Calculer, appliquer des proportions, des pourcentages. »
+
+| | Type | Demandé | Réponse |
+|---|---|---|---|
+| D | nume | Pour l'élection du délégué, les 30 élèves d'une classe ont voté. Camille a obtenu 12 voix. … | 40 |
+| D | vrai | Dans une classe de 36 élèves, 9 portent des lunettes. Rayan calcule 36 ÷ 9 = 4 et annonce :… | faux |
+| E | nume | Un club de basket a disputé 27 matchs et en a gagné 21. Quel pourcentage de ses matchs a-t-… | 78 |
+| E | qcm | Une trousse contient 8 crayons, dont 3 rouges. Quel pourcentage des crayons est rouge ? | a) 37,5 % |
+| M | nume | Trois candidats se présentent à l'élection du bureau du club de théâtre. Chaque membre vote… | 43 |
+| M | qcm | Trois clubs de natation présentent des nageurs à un examen. - Club P : 30 reçus sur 42 nage… | c) Le club Q |
+
+**`E037` · Pourcentages par linéarité : 1 %, 10 %, 50 %** — diff. 5, seuil 3/4  
+*Calculer mentalement 1 %, 10 % ou 50 % d'un nombre, et en déduire d'autres pourcentages par linéarité : 15 % = 10 % + 5 %, 30 % = 3 fois 10 %, 120 % = 100 % + 20 %.*
+> « Prendre 1 %, 10 % ou 50 % d'un nombre, en lien avec la proportionnalité. »
+
+| | Type | Demandé | Réponse |
+|---|---|---|---|
+| D | nume | Une cuve contient 600 L d'eau. 1 %, c'est un centième. Calcule 1 % de 600 L, puis déduis-en… | 18 |
+| D | qcm | Un sac à dos coûte 70 €. 10 % de ce prix valent 7 €. Combien valent 20 % de ce prix ? | c) 14 € |
+| E | nume | Une cycliste doit parcourir 74 km en deux jours. Le premier jour, elle fait 60 % du parcour… | 44.4 |
+| E | vrai | Zoé calcule 51 % de 46 : « 50 % de 46, c'est 23 ; 1 % de 46, c'est 0,46 ; donc 51 % de 46, … | vrai |
+| M | nume | Une association s'était fixé un objectif de 350 € de dons. Elle a récolté 120 % de cet obje… | 420 |
+| M | qcm | On ne connaît pas le prix d'un vélo, mais on sait que 10 % de ce prix valent 12 €. Combien … | b) 54 € |
 
 ### ── 4e ──
 

@@ -1,0 +1,181 @@
+[
+  {
+    "id": "EX-E010-D-01",
+    "skill_id": "E010",
+    "level": "decouverte",
+    "type": "numerique",
+    "statement": "Une randonnée fait 18 km. Le premier jour, le groupe parcourt 50 % du trajet.\n\n50 %, c'est la moitié. Combien de kilomètres le groupe parcourt-il le premier jour ?",
+    "image": null,
+    "answer": {
+      "value": 9,
+      "unit": "km",
+      "accepted": [
+        "9 km"
+      ]
+    },
+    "solution_steps": [
+      "$50\\,\\% = \\frac{50}{100}$, et 50 parts sur 100, c'est 1 part sur 2 : 50 % d'une longueur, c'est sa moitié.",
+      "La moitié de 18 km : $18 \\div 2 = 9$.",
+      "Le groupe parcourt **9 km** le premier jour. Contrôle : il lui reste $18 - 9 = 9$ km, autant que ce qu'il a fait, comme il se doit pour une moitié."
+    ],
+    "hint": "Partage les 18 km en deux parts égales.",
+    "estimated_duration_s": 45,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 3, 6e : appliquer un pourcentage à une grandeur ou à un nombre."
+  },
+  {
+    "id": "EX-E010-D-02",
+    "skill_id": "E010",
+    "level": "decouverte",
+    "type": "qcm",
+    "statement": "Un roman compte 230 pages. Mia en a lu 10 %.\n\nCombien de pages a-t-elle lues ?",
+    "image": null,
+    "choices": [
+      {
+        "key": "a",
+        "text": "220 pages",
+        "misconception": "L'élève confond « 10 % de 230 » et « 10 de moins que 230 » : il retire 10 pages."
+      },
+      {
+        "key": "b",
+        "text": "23 pages",
+        "misconception": null
+      },
+      {
+        "key": "c",
+        "text": "2,3 pages",
+        "misconception": "L'élève divise par 100 au lieu de diviser par 10 : il calcule 1 % du livre, pas 10 %."
+      },
+      {
+        "key": "d",
+        "text": "10 pages",
+        "misconception": "L'élève prend le pourcentage pour un nombre de pages : 10 % devient 10 pages, sans tenir compte des 230 pages du livre."
+      }
+    ],
+    "answer": {
+      "value": "b"
+    },
+    "solution_steps": [
+      "$10\\,\\% = \\frac{10}{100} = \\frac{1}{10}$ : 10 % d'un nombre, c'est son dixième.",
+      "Le dixième de 230 pages : $230 \\div 10 = 23$.",
+      "Mia a lu **23 pages**. Contrôle : 23 pages, c'est bien moins que la moitié du livre (115 pages), ce qui est normal pour 10 %. La bonne réponse est b."
+    ],
+    "hint": "10 %, c'est 10 sur 100, c'est-à-dire un dixième.",
+    "estimated_duration_s": 60,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 3, 6e : appliquer un pourcentage à une grandeur ou à un nombre."
+  },
+  {
+    "id": "EX-E010-E-01",
+    "skill_id": "E010",
+    "level": "entrainement",
+    "type": "numerique",
+    "statement": "Un paquet de céréales pèse 450 g. Les céréales contiennent 6 % de sucre.\n\nQuelle masse de sucre contient le paquet ?",
+    "image": null,
+    "answer": {
+      "value": 27,
+      "unit": "g",
+      "accepted": [
+        "27 g"
+      ]
+    },
+    "solution_steps": [
+      "6 % de 450 g, c'est $\\frac{6}{100}$ de 450 g.",
+      "On multiplie 450 par la fraction : $450 \\times \\frac{6}{100} = \\frac{450 \\times 6}{100} = \\frac{2\\,700}{100}$.",
+      "$2\\,700 \\div 100 = 27$. Le paquet contient **27 g** de sucre.",
+      "Contrôle : 6 % est moins que 10 %, et 10 % de 450 g, c'est le dixième, 45 g. 27 g est bien plus petit que 45 g."
+    ],
+    "hint": "6 %, c'est la fraction $\\frac{6}{100}$. Multiplie d'abord 450 par 6.",
+    "estimated_duration_s": 90,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 3, 6e : appliquer un pourcentage à une grandeur ou à un nombre."
+  },
+  {
+    "id": "EX-E010-E-02",
+    "skill_id": "E010",
+    "level": "entrainement",
+    "type": "vrai_faux",
+    "statement": "Pour calculer 25 % de 84 €, Hugo divise 84 par 4 et trouve 21 €.\n\nHugo a-t-il raison ?",
+    "image": null,
+    "answer": {
+      "value": true
+    },
+    "solution_steps": [
+      "$25\\,\\% = \\frac{25}{100}$. Or $100 = 4 \\times 25$, donc $\\frac{25}{100} = \\frac{1}{4}$ : 25 %, c'est un quart.",
+      "25 % de 84 €, c'est donc le quart de 84 € : $84 \\div 4 = 21$.",
+      "Vérification avec la fraction : $84 \\times \\frac{25}{100} = \\frac{2\\,100}{100} = 21$. Hugo a raison : 25 % de 84 €, c'est 21 €."
+    ],
+    "hint": "À quelle fraction simple 25 % est-il égal ?",
+    "estimated_duration_s": 60,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 3, 6e : appliquer un pourcentage à une grandeur ou à un nombre."
+  },
+  {
+    "id": "EX-E010-M-01",
+    "skill_id": "E010",
+    "level": "maitrise",
+    "type": "numerique",
+    "statement": "Un jeu de société coûte 45 €. Pendant les soldes, le magasin fait une remise de 20 % sur ce jeu.\n\nQuel est le prix du jeu après la remise ?",
+    "image": null,
+    "answer": {
+      "value": 36,
+      "unit": "€",
+      "accepted": [
+        "36 €"
+      ]
+    },
+    "solution_steps": [
+      "Étape 1, le montant de la remise : 20 % de 45 €, c'est $45 \\times \\frac{20}{100} = \\frac{900}{100} = 9$ €.",
+      "Étape 2, le nouveau prix : une remise se retranche du prix de départ, $45 - 9 = 36$ €.",
+      "Le jeu coûte **36 €** après la remise. Attention : 9 € est le montant de la remise, pas le prix à payer ; et une remise de 20 % n'est pas une remise de 20 €.",
+      "Contrôle : avec une remise, le prix baisse, donc il est plus petit que 45 € ; et la remise, 9 €, est bien plus petite que la moitié du prix."
+    ],
+    "hint": "Calcule d'abord combien d'euros représente la remise.",
+    "estimated_duration_s": 120,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 3, 6e : appliquer un pourcentage à une grandeur ou à un nombre."
+  },
+  {
+    "id": "EX-E010-M-02",
+    "skill_id": "E010",
+    "level": "maitrise",
+    "type": "qcm",
+    "statement": "L'an dernier, un club de judo comptait 260 licenciés. Cette année, le nombre de licenciés a augmenté de 15 %.\n\nCombien le club compte-t-il de licenciés cette année ?",
+    "image": null,
+    "choices": [
+      {
+        "key": "a",
+        "text": "39 licenciés",
+        "misconception": "L'élève calcule bien l'augmentation, 15 % de 260, mais s'arrête là : 39 est le nombre de licenciés en plus, pas le nombre total."
+      },
+      {
+        "key": "b",
+        "text": "275 licenciés",
+        "misconception": "L'élève confond « augmenter de 15 % » et « augmenter de 15 » : il ajoute 15 licenciés."
+      },
+      {
+        "key": "c",
+        "text": "299 licenciés",
+        "misconception": null
+      },
+      {
+        "key": "d",
+        "text": "221 licenciés",
+        "misconception": "L'élève calcule bien 15 % de 260, soit 39, mais le retranche au lieu de l'ajouter : il traite l'augmentation comme une remise."
+      }
+    ],
+    "answer": {
+      "value": "c"
+    },
+    "solution_steps": [
+      "Étape 1, l'augmentation : 15 % de 260, c'est $260 \\times \\frac{15}{100} = \\frac{3\\,900}{100} = 39$. Le club a 39 licenciés de plus.",
+      "Étape 2, le nouvel effectif : on ajoute l'augmentation à l'effectif de départ, $260 + 39 = 299$.",
+      "Le club compte **299 licenciés** cette année.",
+      "Contrôle : le nombre de licenciés a augmenté, il doit dépasser 260, ce qui écarte 39 et 221. Et 15 % de 260 ne valent pas 15 : 10 % de 260 valent déjà 26. La bonne réponse est c."
+    ],
+    "hint": "Calcule d'abord le nombre de licenciés en plus.",
+    "estimated_duration_s": 120,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 3, 6e : appliquer un pourcentage à une grandeur ou à un nombre."
+  }
+]

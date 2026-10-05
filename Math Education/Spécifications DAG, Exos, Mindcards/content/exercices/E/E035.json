@@ -1,0 +1,181 @@
+[
+  {
+    "id": "EX-E035-D-01",
+    "skill_id": "E035",
+    "level": "decouverte",
+    "type": "vrai_faux",
+    "statement": "À la papeterie, Inès note le prix de cahiers identiques.\n\nNombre de cahiers : 2 ; 5 ; 7.\nPrix (€) : 3,60 ; 9 ; 12,60.\n\nPour chaque colonne, calcule le prix divisé par le nombre de cahiers.\n\nAffirmation : ce tableau est un tableau de proportionnalité.",
+    "image": null,
+    "answer": {
+      "value": true
+    },
+    "solution_steps": [
+      "Un tableau est un tableau de proportionnalité quand on obtient tous les nombres de la deuxième ligne en multipliant ceux de la première par un même nombre. Pour le vérifier, on calcule le quotient de chaque colonne.",
+      "$3{,}6 \\div 2 = 1{,}8$, $9 \\div 5 = 1{,}8$ et $12{,}6 \\div 7 = 1{,}8$.",
+      "Les trois quotients sont égaux : le tableau est un tableau de proportionnalité, de coefficient 1,8. Un cahier coûte 1,80 €. L'affirmation est **vraie**."
+    ],
+    "hint": "Divise chaque prix par le nombre de cahiers de sa colonne, puis compare.",
+    "estimated_duration_s": 90,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, classe de 5e : « Reconnaitre une situation de proportionnalité à partir d'un tableau ou d'un graphique. »"
+  },
+  {
+    "id": "EX-E035-D-02",
+    "skill_id": "E035",
+    "level": "decouverte",
+    "type": "qcm",
+    "statement": "Une supérette affiche le prix des yaourts à boire.\n\nNombre de yaourts : 2 ; 4 ; 6.\nPrix (€) : 1,40 ; 2,80 ; 3,90.\n\nCe tableau est-il un tableau de proportionnalité ?",
+    "image": null,
+    "choices": [
+      {
+        "key": "a",
+        "text": "Oui, car le prix augmente quand le nombre de yaourts augmente.",
+        "misconception": "L'élève confond « les deux grandeurs augmentent ensemble » et « les deux grandeurs sont proportionnelles ». Augmenter ensemble ne suffit pas : il faut multiplier par un même nombre dans toutes les colonnes."
+      },
+      {
+        "key": "b",
+        "text": "Oui, car de 2 à 4 yaourts, le prix double.",
+        "misconception": "L'élève vérifie une seule relation entre deux colonnes ($2 \\times 1{,}4 = 2{,}8$) et conclut sans regarder la troisième colonne, qui ne convient pas."
+      },
+      {
+        "key": "c",
+        "text": "Non, car $3{,}9 \\div 6 = 0{,}65$, alors que $1{,}4 \\div 2 = 0{,}7$.",
+        "misconception": null
+      }
+    ],
+    "answer": {
+      "value": "c"
+    },
+    "solution_steps": [
+      "On calcule le quotient prix ÷ nombre de yaourts dans chaque colonne : $1{,}4 \\div 2 = 0{,}7$, $2{,}8 \\div 4 = 0{,}7$ et $3{,}9 \\div 6 = 0{,}65$.",
+      "Les deux premiers quotients sont égaux, pas le troisième : un yaourt revient à 0,70 € dans les deux premières colonnes, mais à 0,65 € dans le lot de 6.",
+      "Une seule colonne qui ne convient pas suffit : ce tableau **n'est pas** un tableau de proportionnalité. Le lot de 6 est moins cher à l'unité, comme souvent en magasin. La bonne réponse est c."
+    ],
+    "hint": "Calcule le prix d'un yaourt dans chaque colonne.",
+    "estimated_duration_s": 90,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, classe de 5e : « Identifier des situations de proportionnalité dans des contextes concrets (prix, recettes, distances, échelles). »"
+  },
+  {
+    "id": "EX-E035-E-01",
+    "skill_id": "E035",
+    "level": "entrainement",
+    "type": "qcm",
+    "statement": "Trois cinémas affichent le prix à payer selon le nombre de places.\n\nNombre de places : 2 ; 3 ; 5.\nCinéma A, prix (€) : 13 ; 19,50 ; 32,50.\nCinéma B, prix (€) : 14 ; 20 ; 32.\nCinéma C, prix (€) : 12 ; 18 ; 28.\n\nDans quel cinéma le prix est-il proportionnel au nombre de places ?",
+    "image": null,
+    "choices": [
+      {
+        "key": "a",
+        "text": "Cinéma A",
+        "misconception": null
+      },
+      {
+        "key": "b",
+        "text": "Cinéma B",
+        "misconception": "L'élève voit que le prix augmente régulièrement, de 6 € par place supplémentaire, et croit que cela suffit. Mais $14 \\div 2 = 7$ et $3 \\times 7 = 21$, pas 20 : ce cinéma ajoute 2 € de frais fixes."
+      },
+      {
+        "key": "c",
+        "text": "Cinéma C",
+        "misconception": "L'élève ne vérifie que les deux premières colonnes, où le quotient vaut 6 ($12 \\div 2 = 6$ et $18 \\div 3 = 6$), sans regarder la dernière : $5 \\times 6 = 30$, pas 28. Ce cinéma fait une réduction à partir de 5 places."
+      }
+    ],
+    "answer": {
+      "value": "a"
+    },
+    "solution_steps": [
+      "Pour chaque cinéma, on calcule le prix d'une place dans chaque colonne, c'est-à-dire le quotient prix ÷ nombre de places.",
+      "Cinéma A : $13 \\div 2 = 6{,}5$, $19{,}5 \\div 3 = 6{,}5$ et $32{,}5 \\div 5 = 6{,}5$. Les trois quotients sont égaux.",
+      "Cinéma B : $14 \\div 2 = 7$, mais $3 \\times 7 = 21$, pas 20. Cinéma C : $12 \\div 2 = 6$ et $18 \\div 3 = 6$, mais $5 \\times 6 = 30$, pas 28.",
+      "Seul le cinéma A a un prix proportionnel au nombre de places, de coefficient 6,5 (une place à 6,50 €). La bonne réponse est a."
+    ],
+    "hint": "Une seule colonne qui ne convient pas suffit pour refuser. Vérifie les trois colonnes de chaque cinéma.",
+    "estimated_duration_s": 180,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, classe de 5e : « Identifier des situations de proportionnalité dans des contextes concrets (prix, recettes, distances, échelles). »"
+  },
+  {
+    "id": "EX-E035-E-02",
+    "skill_id": "E035",
+    "level": "entrainement",
+    "type": "numerique",
+    "statement": "Lucas recopie les quantités d'une recette de mousse au chocolat pour plusieurs tablées.\n\nNombre de personnes : 3 ; 4 ; 6 ; 9.\nMasse de chocolat (g) : 120 ; 160 ; 250 ; 360.\n\nUne seule colonne empêche ce tableau d'être un tableau de proportionnalité. Quelle masse de chocolat aurait-il fallu écrire dans cette colonne ?",
+    "image": null,
+    "answer": {
+      "value": 240,
+      "accepted": [
+        "240 g",
+        "240"
+      ],
+      "unit": "g"
+    },
+    "solution_steps": [
+      "Quotient masse ÷ nombre de personnes : $120 \\div 3 = 40$, $160 \\div 4 = 40$ et $360 \\div 9 = 40$. Trois colonnes donnent 40 g de chocolat par personne.",
+      "Colonne de 6 personnes : avec 40 g par personne, il faudrait $6 \\times 40 = 240$ g, et non 250 g. C'est cette colonne qui ne convient pas.",
+      "Pour que le tableau soit un tableau de proportionnalité, de coefficient 40, il fallait écrire **240 g** pour 6 personnes. Contrôle : 6 personnes, c'est le double de 3 personnes, et $2 \\times 120 = 240$."
+    ],
+    "hint": "Calcule la masse de chocolat par personne dans chaque colonne.",
+    "estimated_duration_s": 120,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, classe de 5e : « Reconnaitre une situation de proportionnalité à partir d'un tableau ou d'un graphique. »"
+  },
+  {
+    "id": "EX-E035-M-01",
+    "skill_id": "E035",
+    "level": "maitrise",
+    "type": "vrai_faux",
+    "statement": "Pour préparer une boisson, on mélange du sirop et de l'eau.\n\nVolume de sirop (cL) : 3 ; 9 ; 12.\nVolume d'eau (cL) : 20 ; 60 ; 80.\n\nAffirmation : le volume d'eau est proportionnel au volume de sirop.",
+    "image": null,
+    "answer": {
+      "value": true
+    },
+    "solution_steps": [
+      "Le quotient $20 \\div 3$ ne tombe pas juste (6,666…) : avec des valeurs arrondies, on ne peut pas comparer sûrement les colonnes. Deux façons d'éviter ce piège.",
+      "Première façon, le coefficient en fraction : passer du sirop à l'eau, c'est multiplier par $\\frac{20}{3}$. On vérifie : $9 \\times \\frac{20}{3} = \\frac{180}{3} = 60$ et $12 \\times \\frac{20}{3} = \\frac{240}{3} = 80$.",
+      "Deuxième façon, le quotient dans l'autre sens, qui tombe juste : $3 \\div 20 = 0{,}15$ (on divise 3 par 10, puis par 2). On vérifie : $60 \\times 0{,}15 = 9$ et $80 \\times 0{,}15 = 12$.",
+      "Troisième regard, sans quotient : 9 cL de sirop, c'est $3 \\times 3$ cL, et 60 cL d'eau, c'est $3 \\times 20$ cL ; 12 cL de sirop, c'est $4 \\times 3$ cL, et 80 cL d'eau, c'est $4 \\times 20$ cL. Chaque colonne s'obtient à partir de la première en multipliant les deux volumes par un même nombre.",
+      "Toutes les colonnes ont le même quotient : le tableau est un tableau de proportionnalité. L'affirmation est **vraie**."
+    ],
+    "hint": "Si un quotient ne tombe pas juste, essaie l'autre sens : de l'eau vers le sirop.",
+    "estimated_duration_s": 150,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, classe de 5e : « Reconnaitre une situation de proportionnalité à partir d'un tableau ou d'un graphique. »"
+  },
+  {
+    "id": "EX-E035-M-02",
+    "skill_id": "E035",
+    "level": "maitrise",
+    "type": "qcm",
+    "statement": "Au marché, un vendeur affirme que le prix de ses abricots est proportionnel à la masse achetée.\n\nMasse (kg) : 0,5 ; 1,5 ; 2 ; 2,5.\nPrix (€) : 1,60 ; 4,80 ; 6,40 ; 7,50.\n\nA-t-il raison ?",
+    "image": null,
+    "choices": [
+      {
+        "key": "a",
+        "text": "Oui : de 0,5 kg à 1,5 kg, la masse triple et le prix triple aussi.",
+        "misconception": "L'élève vérifie une seule relation entre deux colonnes ($3 \\times 1{,}6 = 4{,}8$) et généralise sans contrôler les autres colonnes."
+      },
+      {
+        "key": "b",
+        "text": "Non : une des colonnes ne donne pas le même prix au kilogramme que les autres.",
+        "misconception": null
+      },
+      {
+        "key": "c",
+        "text": "Oui : les trois premières colonnes donnent le même prix au kilogramme, cela suffit.",
+        "misconception": "L'élève vérifie trois colonnes sur quatre et s'arrête. Une seule colonne qui ne convient pas suffit pourtant à refuser la proportionnalité."
+      }
+    ],
+    "answer": {
+      "value": "b"
+    },
+    "solution_steps": [
+      "Prix d'un kilogramme : 0,5 kg coûte 1,60 €, donc 1 kg, le double, coûte $2 \\times 1{,}6 = 3{,}2$. Si le tableau est de proportionnalité, le coefficient est 3,2.",
+      "On vérifie chaque colonne : $1{,}5 \\times 3{,}2 = 4{,}8$, $2 \\times 3{,}2 = 6{,}4$ et $2{,}5 \\times 3{,}2 = 8$.",
+      "La dernière colonne ne convient pas : 7,50 € au lieu de 8 €. Ce n'est pas un tableau de proportionnalité, le vendeur a tort (il fait une remise sur 2,5 kg). La bonne réponse est b."
+    ],
+    "hint": "Combien coûte 1 kg d'après la première colonne ? Vérifie ensuite toutes les colonnes.",
+    "estimated_duration_s": 150,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, classe de 5e : « Identifier des situations de proportionnalité dans des contextes concrets (prix, recettes, distances, échelles). »"
+  }
+]

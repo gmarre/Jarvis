@@ -34,7 +34,7 @@ function renderInline(text: string, keyPrefix: string): ReactNode[] {
       return (
         <span
           key={key}
-          className="my-2 block text-center"
+          className="my-2 block max-w-full overflow-x-auto text-center"
           dangerouslySetInnerHTML={{ __html: renderMath(chunk.slice(2, -2), true) }}
         />
       )

@@ -3,7 +3,7 @@
     "version": "1.0",
     "scope": "Tranche pilote CP a 4e : 69 exercices, 3 par competence (1 decouverte, 1 entrainement, 1 maitrise) sur les 23 competences des domaines A et C. La cible finale de la roadmap est de 5 exercices par niveau, soit 15 par competence.",
     "updated_at": "2026-07-28",
-    "total_exercises": 396,
+    "total_exercises": 504,
     "review_status": "relu_agent"
   },
   "exercises": [
@@ -5386,6 +5386,181 @@
       "estimated_duration_s": 90,
       "review_status": "relu_agent",
       "programme_ref": "Cycle 2, CE1 : poser et effectuer des additions et des soustractions en colonnes ; l'élève sait poser une addition de deux ou de trois nombres à un, deux ou trois chiffres (en positionnant les unités sous les unités, les dizaines sous les dizaines, les centaines sous les centaines) et en calculer le résultat."
+    },
+    {
+      "id": "EX-B043-D-01",
+      "skill_id": "B043",
+      "level": "decouverte",
+      "type": "numerique",
+      "statement": "Léo a 7 billes. Sam a 4 fois plus de billes que Léo.\n\nCombien de billes Sam a-t-il ?",
+      "image": null,
+      "answer": {
+        "value": 28,
+        "unit": "billes",
+        "accepted": [
+          "28 billes"
+        ]
+      },
+      "solution_steps": [
+        "« 4 fois plus » veut dire : Sam a 4 fois le nombre de billes de Léo.",
+        "On multiplie : $7 \\times 4 = 28$.",
+        "Sam a **28 billes**.",
+        "Attention : « 4 billes de plus » donnerait $7 + 4 = 11$. « 4 fois plus », ce n'est pas « 4 de plus »."
+      ],
+      "hint": "Imagine 4 tas de 7 billes.",
+      "estimated_duration_s": 60,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 2, CE2, la résolution de problèmes : résoudre des problèmes de comparaison multiplicative en une étape ; l'élève comprend le sens des locutions « fois plus » et « fois moins » et les distingue des locutions « de plus » et « de moins »."
+    },
+    {
+      "id": "EX-B043-D-02",
+      "skill_id": "B043",
+      "level": "decouverte",
+      "type": "qcm",
+      "statement": "Une ficelle rouge mesure 30 cm. Une ficelle bleue est 5 fois moins longue.\n\nCombien mesure la ficelle bleue ?",
+      "image": null,
+      "choices": [
+        {
+          "key": "a",
+          "text": "25 cm",
+          "misconception": "L'élève lit « 5 fois moins » comme « 5 de moins » et soustrait : $30 - 5 = 25$. Il confond la comparaison multiplicative avec la comparaison additive."
+        },
+        {
+          "key": "b",
+          "text": "150 cm",
+          "misconception": "L'élève voit le mot « fois » et multiplie : $30 \\times 5 = 150$. Mais la ficelle bleue est plus courte que la rouge, elle ne peut pas mesurer plus."
+        },
+        {
+          "key": "c",
+          "text": "6 cm",
+          "misconception": null
+        }
+      ],
+      "answer": {
+        "value": "c"
+      },
+      "solution_steps": [
+        "« 5 fois moins longue » veut dire : il faut 5 ficelles bleues bout à bout pour faire la ficelle rouge.",
+        "On cherche donc le nombre qui, multiplié par 5, donne 30 : c'est une division, $30 \\div 5 = 6$, car $6 \\times 5 = 30$.",
+        "La ficelle bleue mesure **6 cm**.",
+        "« 5 cm de moins » donnerait 25 cm : ce n'est pas la même chose que « 5 fois moins »."
+      ],
+      "hint": "Combien de ficelles bleues faut-il mettre bout à bout pour faire la ficelle rouge ?",
+      "estimated_duration_s": 60,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 2, CE2, la résolution de problèmes : résoudre des problèmes de comparaison multiplicative en une étape ; l'élève comprend le sens des locutions « fois plus » et « fois moins » et les distingue des locutions « de plus » et « de moins »."
+    },
+    {
+      "id": "EX-B043-E-01",
+      "skill_id": "B043",
+      "level": "entrainement",
+      "type": "vrai_faux",
+      "statement": "Une gomme coûte 2 €. Un compas coûte 4 fois plus cher que la gomme.\n\nTom dit : « Le compas coûte 6 €. » A-t-il raison ?",
+      "image": null,
+      "answer": {
+        "value": false
+      },
+      "solution_steps": [
+        "« 4 fois plus cher » : le prix du compas, c'est 4 fois le prix de la gomme.",
+        "On multiplie : $2 \\times 4 = 8$. Le compas coûte 8 €.",
+        "Tom a calculé $2 + 4 = 6$ : il a trouvé le prix d'un compas qui coûterait « 4 € de plus », pas « 4 fois plus ».",
+        "L'affirmation de Tom est **fausse**."
+      ],
+      "hint": "« 4 fois plus » : faut-il ajouter 4, ou prendre 4 fois le prix ?",
+      "estimated_duration_s": 90,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 2, CE2, la résolution de problèmes : résoudre des problèmes de comparaison multiplicative en une étape ; l'élève comprend le sens des locutions « fois plus » et « fois moins » et les distingue des locutions « de plus » et « de moins »."
+    },
+    {
+      "id": "EX-B043-E-02",
+      "skill_id": "B043",
+      "level": "entrainement",
+      "type": "numerique",
+      "statement": "Un cheval a bu 36 litres d'eau. Un poney a bu 4 fois moins d'eau que le cheval.\n\nCombien de litres le poney a-t-il bu ?",
+      "image": null,
+      "answer": {
+        "value": 9,
+        "unit": "litres",
+        "accepted": [
+          "9 litres",
+          "9 L",
+          "9 l"
+        ]
+      },
+      "solution_steps": [
+        "« 4 fois moins » : il faudrait 4 fois l'eau du poney pour faire l'eau du cheval.",
+        "On cherche le nombre qui, multiplié par 4, donne 36 : $36 \\div 4 = 9$, car $9 \\times 4 = 36$.",
+        "Le poney a bu **9 litres**.",
+        "« 4 litres de moins » donnerait $36 - 4 = 32$ : ce n'est pas la même chose."
+      ],
+      "hint": "Dans la table de 4, quel nombre donne 36 ?",
+      "estimated_duration_s": 90,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 2, CE2, la résolution de problèmes : résoudre des problèmes de comparaison multiplicative en une étape ; l'élève comprend le sens des locutions « fois plus » et « fois moins » et les distingue des locutions « de plus » et « de moins »."
+    },
+    {
+      "id": "EX-B043-M-01",
+      "skill_id": "B043",
+      "level": "maitrise",
+      "type": "qcm",
+      "statement": "Lou a 40 images. Elle a 5 fois plus d'images que Max.\n\nCombien d'images Max a-t-il ?",
+      "image": null,
+      "choices": [
+        {
+          "key": "a",
+          "text": "8 images",
+          "misconception": null
+        },
+        {
+          "key": "b",
+          "text": "200 images",
+          "misconception": "L'élève voit « 5 fois plus » et multiplie le nombre qu'il a sous les yeux : $40 \\times 5 = 200$. Il n'a pas repéré que c'est Lou, et non Max, qui en a 5 fois plus."
+        },
+        {
+          "key": "c",
+          "text": "35 images",
+          "misconception": "L'élève lit « 5 fois plus » comme « 5 de plus » et retire 5 : $40 - 5 = 35$. Il confond comparaison multiplicative et comparaison additive."
+        }
+      ],
+      "answer": {
+        "value": "a"
+      },
+      "solution_steps": [
+        "C'est Lou qui en a le plus : Lou a 5 fois les images de Max.",
+        "On cherche donc le nombre qui, multiplié par 5, donne 40 : $40 \\div 5 = 8$, car $8 \\times 5 = 40$.",
+        "Max a **8 images**.",
+        "Vérification : 5 fois 8 images, cela fait bien 40 images, celles de Lou."
+      ],
+      "hint": "Qui a le plus d'images, Lou ou Max ?",
+      "estimated_duration_s": 120,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 2, CE2, la résolution de problèmes : résoudre des problèmes de comparaison multiplicative en une étape ; l'élève comprend le sens des locutions « fois plus » et « fois moins » et les distingue des locutions « de plus » et « de moins »."
+    },
+    {
+      "id": "EX-B043-M-02",
+      "skill_id": "B043",
+      "level": "maitrise",
+      "type": "numerique",
+      "statement": "Une trousse coûte 7 €. Elle coûte 6 fois moins cher qu'un cartable.\n\nCombien coûte le cartable ?",
+      "image": null,
+      "answer": {
+        "value": 42,
+        "unit": "€",
+        "accepted": [
+          "42 €",
+          "42 euros"
+        ]
+      },
+      "solution_steps": [
+        "La trousse est 6 fois moins chère : c'est donc le cartable qui coûte le plus.",
+        "Le cartable coûte 6 fois le prix de la trousse : $7 \\times 6 = 42$.",
+        "Le cartable coûte **42 €**.",
+        "Vérification : 42 € partagés en 6, cela fait bien $42 \\div 6 = 7$ €, le prix de la trousse."
+      ],
+      "hint": "Lequel des deux objets coûte le plus cher ?",
+      "estimated_duration_s": 120,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 2, CE2, la résolution de problèmes : résoudre des problèmes de comparaison multiplicative en une étape ; l'élève comprend le sens des locutions « fois plus » et « fois moins » et les distingue des locutions « de plus » et « de moins »."
     },
     {
       "id": "EX-C001-D-01",
@@ -10903,6 +11078,3025 @@
       "estimated_duration_s": 90,
       "review_status": "relu_agent",
       "programme_ref": "Cycle 3, 6e : multiplier un nombre entier ou un nombre décimal par 0,1, par 0,01, et par 0,001 ; connaître le lien avec la division par 10, 100 et par 1 000."
+    },
+    {
+      "id": "EX-E003-D-01",
+      "skill_id": "E003",
+      "level": "decouverte",
+      "type": "numerique",
+      "statement": "Au marché, le prix des poires est proportionnel à leur masse. Voici un tableau à compléter :\n\n$$\\begin{array}{|l|c|c|c|} \\hline \\text{Masse (kg)} & 2 & 4 & 6 \\\\ \\hline \\text{Prix (euros)} & 5 & 10 & ? \\\\ \\hline \\end{array}$$\n\nQuel prix faut-il écrire à la place du point d'interrogation, en euros ?",
+      "image": null,
+      "answer": {
+        "value": 15,
+        "unit": "€",
+        "accepted": [
+          "15 €"
+        ]
+      },
+      "solution_steps": [
+        "Chaque colonne associe une masse de poires et son prix. 6 kg, c'est 3 fois 2 kg, car $3 \\times 2 = 6$.",
+        "Le prix est proportionnel à la masse : 3 fois plus de poires coûtent 3 fois plus cher, $3 \\times 5 = 15$.",
+        "Autre méthode : 6 kg, c'est 2 kg et 4 kg ensemble. On ajoute les prix de ces deux colonnes : $5 + 10 = 15$.",
+        "On écrit **15** dans la case : 6 kg de poires coûtent 15 €."
+      ],
+      "hint": "Compare 6 kg avec 2 kg : combien de fois plus ? Tu peux aussi additionner deux colonnes.",
+      "estimated_duration_s": 60,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 3, classe de 6e, La proportionnalité : la recherche de données manquantes dans un tableau s'appuie sur le sens de la proportionnalité."
+    },
+    {
+      "id": "EX-E003-D-02",
+      "skill_id": "E003",
+      "level": "decouverte",
+      "type": "qcm",
+      "statement": "Chez le fleuriste, une botte de 5 tulipes coûte 4 €. Kenza a rempli ce tableau mais a oublié le nom des lignes :\n\n$$\\begin{array}{|l|c|c|c|} \\hline \\text{?} & 5 & 10 & 15 \\\\ \\hline \\text{?} & 4 & 8 & 12 \\\\ \\hline \\end{array}$$\n\nQuels noms doit-elle écrire ?",
+      "image": null,
+      "choices": [
+        {
+          "key": "a",
+          "text": "En haut « Prix (euros) », en bas « Nombre de tulipes »",
+          "misconception": "L'élève inverse les deux grandeurs. Avec ces noms, on paierait 5 € pour 4 tulipes, alors que ce sont 5 tulipes qui coûtent 4 €."
+        },
+        {
+          "key": "b",
+          "text": "En haut « Nombre de tulipes », en bas « Prix (euros) »",
+          "misconception": null
+        },
+        {
+          "key": "c",
+          "text": "En haut « Nombre de bottes », en bas « Prix (euros) »",
+          "misconception": "L'élève confond les bottes et les tulipes. 5 bottes coûteraient 5 × 4 = 20 €, et non 4 €."
+        },
+        {
+          "key": "d",
+          "text": "En haut « Nombre de tulipes », en bas « Prix d'une tulipe (euros) »",
+          "misconception": "L'élève confond le prix payé et le prix pour une tulipe. Le prix d'une tulipe ne change pas avec le nombre de tulipes : il ne peut pas valoir 4 €, puis 8 €, puis 12 €."
+        }
+      ],
+      "answer": {
+        "value": "b"
+      },
+      "solution_steps": [
+        "La première colonne doit traduire la phrase de l'énoncé : 5 tulipes coûtent 4 €. En haut le nombre de tulipes (5), en bas le prix en euros (4).",
+        "Les autres colonnes le confirment : 10 tulipes, c'est 2 fois plus que 5, et elles coûtent 2 fois plus, $2 \\times 4 = 8$ €. 15 tulipes, c'est 3 fois plus que 5, et $3 \\times 4 = 12$ €.",
+        "Dans un tableau, chaque ligne porte le nom de la grandeur et son unité : sans eux, on ne sait pas ce que représente chaque nombre. Réponse b."
+      ],
+      "hint": "Lis la première colonne avec la phrase de l'énoncé : qu'est-ce qui vaut 5, et qu'est-ce qui vaut 4 ?",
+      "estimated_duration_s": 75,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 3, classe de 6e, La proportionnalité : représenter une situation de proportionnalité à l'aide d'un tableau ou de notations symboliques."
+    },
+    {
+      "id": "EX-E003-E-01",
+      "skill_id": "E003",
+      "level": "entrainement",
+      "type": "numerique",
+      "statement": "Des boîtes de thé contiennent toutes la même masse de thé. Complète ce tableau :\n\n$$\\begin{array}{|l|c|c|} \\hline \\text{Boîtes} & 3 & 5 \\\\ \\hline \\text{Masse (g)} & 375 & ? \\\\ \\hline \\end{array}$$\n\nQuelle masse faut-il écrire à la place du point d'interrogation, en grammes ?",
+      "image": null,
+      "answer": {
+        "value": 625,
+        "unit": "g",
+        "accepted": [
+          "625 g"
+        ]
+      },
+      "solution_steps": [
+        "On ne passe pas de 3 boîtes à 5 boîtes en multipliant par un nombre entier : on ajoute une colonne pour 1 boîte.",
+        "1 boîte, c'est 3 fois moins que 3 boîtes : $375 \\div 3 = 125$. Une boîte contient 125 g de thé.",
+        "5 boîtes, c'est 5 fois plus qu'une boîte : $5 \\times 125 = 625$. On écrit **625** : 5 boîtes contiennent 625 g de thé.",
+        "Contrôle : 5 boîtes, c'est 2 boîtes de plus que 3 boîtes, soit $2 \\times 125 = 250$ g de plus, et $375 + 250 = 625$."
+      ],
+      "hint": "Ajoute une colonne pour 1 boîte : quelle masse de thé contient une seule boîte ?",
+      "estimated_duration_s": 90,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 3, classe de 6e, La proportionnalité : la recherche de données manquantes dans un tableau s'appuie sur le sens de la proportionnalité."
+    },
+    {
+      "id": "EX-E003-E-02",
+      "skill_id": "E003",
+      "level": "entrainement",
+      "type": "vrai_faux",
+      "statement": "Les lentilles sont vendues au même prix au kilo. Lucas complète ce tableau :\n\n$$\\begin{array}{|l|c|c|} \\hline \\text{Masse (kg)} & 2 & 5 \\\\ \\hline \\text{Prix (euros)} & 3 & ? \\\\ \\hline \\end{array}$$\n\nIl écrit 6 € et explique : « De 2 kg à 5 kg, on ajoute 3 kg, donc on ajoute 3 € au prix. » A-t-il raison ?",
+      "image": null,
+      "answer": {
+        "value": false
+      },
+      "solution_steps": [
+        "Lucas ajoute la même chose aux deux grandeurs : c'est un modèle additif. Mais 3 kg de plus ne coûtent pas 3 € de plus.",
+        "Prix d'un kilogramme : $3 \\div 2 = 1{,}50$, soit 1,50 € le kilo.",
+        "3 kg de plus coûtent $3 \\times 1{,}50 = 4{,}50$, soit 4,50 € de plus. Pour 5 kg : $3 + 4{,}50 = 7{,}50$, ou directement $5 \\times 1{,}50 = 7{,}50$.",
+        "Il fallait écrire 7,50 € : c'est **faux**."
+      ],
+      "hint": "Combien coûte 1 kg de lentilles ? Combien coûtent alors 3 kg de plus ?",
+      "estimated_duration_s": 90,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 3, classe de 6e, La proportionnalité : la recherche de données manquantes dans un tableau s'appuie sur le sens de la proportionnalité."
+    },
+    {
+      "id": "EX-E003-M-01",
+      "skill_id": "E003",
+      "level": "maitrise",
+      "type": "numerique",
+      "statement": "Pour un repas, la masse de riz est proportionnelle au nombre d'invités.\n\n$$\\begin{array}{|l|c|c|c|} \\hline \\text{Invités} & 6 & 9 & 21 \\\\ \\hline \\text{Riz (g)} & 450 & 675 & ? \\\\ \\hline \\end{array}$$\n\nQuelle masse de riz faut-il pour 21 invités, en grammes ?",
+      "image": null,
+      "answer": {
+        "value": 1575,
+        "unit": "g",
+        "accepted": [
+          "1 575",
+          "1575 g",
+          "1 575 g"
+        ]
+      },
+      "solution_steps": [
+        "21 n'est pas obtenu en multipliant 6 ou 9 par un nombre entier. On cherche à écrire 21 avec les colonnes connues.",
+        "$6 + 6 + 9 = 21$ : 21 invités, c'est 6 invités, plus 6 invités, plus 9 invités.",
+        "On ajoute les masses correspondantes : $450 + 450 + 675 = 1\\,575$ g.",
+        "Vérification par l'unité : pour 1 invité, $450 \\div 6 = 75$ g ; pour 21 invités, $21 \\times 75 = 1\\,575$ g.",
+        "Il faut **1 575 g** de riz."
+      ],
+      "hint": "Écris 21 comme une somme de nombres de la première ligne du tableau.",
+      "estimated_duration_s": 150,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 3, classe de 6e, La proportionnalité : la recherche de données manquantes dans un tableau s'appuie sur le sens de la proportionnalité."
+    },
+    {
+      "id": "EX-E003-M-02",
+      "skill_id": "E003",
+      "level": "maitrise",
+      "type": "qcm",
+      "statement": "Le prix du comté est proportionnel à sa masse. Inès a payé 7,50 €.\n\n$$\\begin{array}{|l|c|c|} \\hline \\text{Masse (g)} & 200 & ? \\\\ \\hline \\text{Prix (euros)} & 3 & 7{,}50 \\\\ \\hline \\end{array}$$\n\nQuelle masse de comté a-t-elle achetée ?",
+      "image": null,
+      "choices": [
+        {
+          "key": "a",
+          "text": "400 g",
+          "misconception": "L'élève double 200 g parce que 2 × 3 = 6, et oublie les 1,50 € qui restent pour arriver à 7,50 €."
+        },
+        {
+          "key": "b",
+          "text": "204,5 g",
+          "misconception": "Modèle additif : l'élève voit qu'on ajoute 4,50 au prix et ajoute 4,5 à la masse. Il additionne des euros et des grammes."
+        },
+        {
+          "key": "c",
+          "text": "300 g",
+          "misconception": "L'élève trouve bien que 1,50 € correspond à 100 g, mais l'ajoute à 200 g au lieu de l'ajouter aux 400 g payés avec 6 €."
+        },
+        {
+          "key": "d",
+          "text": "500 g",
+          "misconception": null
+        }
+      ],
+      "answer": {
+        "value": "d"
+      },
+      "solution_steps": [
+        "On raisonne à l'envers : on connaît le prix, on cherche la masse.",
+        "6 €, c'est 2 fois 3 € : avec 6 €, on paie 2 fois 200 g, soit 400 g.",
+        "Il reste $7{,}50 - 6 = 1{,}50$ €. 1,50 €, c'est la moitié de 3 € : on paie la moitié de 200 g, soit 100 g.",
+        "En tout : $400 + 100 = 500$ g. Réponse d.",
+        "Contrôle : 100 g coûtent 1,50 €, donc 500 g coûtent $5 \\times 1{,}50 = 7{,}50$ €."
+      ],
+      "hint": "Quelle masse paie-t-on avec 6 € ? Que reste-t-il à payer, et quelle masse cela représente-t-il ?",
+      "estimated_duration_s": 150,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 3, classe de 6e, La proportionnalité : la recherche de données manquantes dans un tableau s'appuie sur le sens de la proportionnalité."
+    },
+    {
+      "id": "EX-E006-D-01",
+      "skill_id": "E006",
+      "level": "decouverte",
+      "type": "numerique",
+      "statement": "Sur le plan d'un parc, 1 cm sur le plan représente 20 m en réalité. Sur ce plan, l'allée principale mesure 6 cm.\n\nQuelle est la longueur réelle de l'allée, en mètres ?",
+      "image": null,
+      "answer": {
+        "value": 120,
+        "unit": "m",
+        "accepted": [
+          "120 m"
+        ]
+      },
+      "solution_steps": [
+        "1 cm sur le plan représente 20 m en réalité. 6 cm, c'est 6 fois 1 cm.",
+        "La longueur réelle est 6 fois 20 m : $6 \\times 20 = 120$.",
+        "L'allée mesure **120 m** en réalité.",
+        "Contrôle : sur un plan, tout est dessiné plus petit qu'en réalité, et 120 m est bien plus long que 6 cm."
+      ],
+      "hint": "6 cm sur le plan, c'est combien de fois 1 cm ?",
+      "estimated_duration_s": 60,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 3, classe de 6e, La proportionnalité : s'initier à la résolution de problèmes d'échelles."
+    },
+    {
+      "id": "EX-E006-D-02",
+      "skill_id": "E006",
+      "level": "decouverte",
+      "type": "qcm",
+      "statement": "Sur une carte, 1 cm sur la carte représente 5 km en réalité. Deux villages sont à 4 cm l'un de l'autre sur la carte.\n\nQuelle distance les sépare en réalité ?",
+      "image": null,
+      "choices": [
+        {
+          "key": "a",
+          "text": "20 km",
+          "misconception": null
+        },
+        {
+          "key": "b",
+          "text": "9 km",
+          "misconception": "L'élève additionne les deux nombres de l'énoncé, 4 + 5 = 9, au lieu de prendre 4 fois 5 km."
+        },
+        {
+          "key": "c",
+          "text": "0,8 km",
+          "misconception": "L'élève inverse l'échelle : il divise 4 par 5, comme si 5 cm sur la carte représentaient 1 km en réalité."
+        },
+        {
+          "key": "d",
+          "text": "4 km",
+          "misconception": "L'élève recopie la mesure prise sur la carte en changeant seulement l'unité : 4 cm sur la carte ne représentent pas 4 km."
+        }
+      ],
+      "answer": {
+        "value": "a"
+      },
+      "solution_steps": [
+        "1 cm sur la carte représente 5 km. 4 cm, c'est 4 fois 1 cm.",
+        "La distance réelle est 4 fois 5 km : $4 \\times 5 = 20$.",
+        "Les villages sont à **20 km** l'un de l'autre. Réponse a."
+      ],
+      "hint": "4 cm sur la carte, c'est combien de fois 1 cm ?",
+      "estimated_duration_s": 60,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 3, classe de 6e, La proportionnalité : s'initier à la résolution de problèmes d'échelles."
+    },
+    {
+      "id": "EX-E006-E-01",
+      "skill_id": "E006",
+      "level": "entrainement",
+      "type": "numerique",
+      "statement": "Sur le plan d'un quartier, 1 cm sur le plan représente 25 m en réalité. Une rue mesure 8,4 cm sur le plan.\n\nQuelle est sa longueur réelle, en mètres ?",
+      "image": null,
+      "answer": {
+        "value": 210,
+        "unit": "m",
+        "accepted": [
+          "210 m"
+        ]
+      },
+      "solution_steps": [
+        "On sépare 8,4 cm en 8 cm et 0,4 cm. 8 cm représentent 8 fois 25 m : $8 \\times 25 = 200$ m.",
+        "0,4 cm représentent $0{,}4 \\times 25 = 10$ m.",
+        "En tout : $200 + 10 = 210$. On peut aussi poser directement $8{,}4 \\times 25 = 210$.",
+        "La rue mesure **210 m** en réalité."
+      ],
+      "hint": "Combien de mètres représentent 8 cm ? Et les 0,4 cm qui restent ?",
+      "estimated_duration_s": 90,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 3, classe de 6e, La proportionnalité : s'initier à la résolution de problèmes d'échelles."
+    },
+    {
+      "id": "EX-E006-E-02",
+      "skill_id": "E006",
+      "level": "entrainement",
+      "type": "vrai_faux",
+      "statement": "Sur le plan d'une école, 1 cm sur le plan représente 4 m en réalité. La cour mesure 32 m de long. Mia dit : « Sur le plan, la cour mesure 128 cm. »\n\nMia a-t-elle raison ?",
+      "image": null,
+      "answer": {
+        "value": false
+      },
+      "solution_steps": [
+        "Mia a multiplié : $32 \\times 4 = 128$. Elle a inversé l'échelle, comme si 1 m en réalité était représenté par 4 cm sur le plan.",
+        "Sur un plan, les longueurs sont plus petites qu'en réalité : 128 cm, c'est plus d'un mètre, cela ne tiendrait pas sur une feuille.",
+        "Il faut chercher combien de fois 4 m il y a dans 32 m : $32 \\div 4 = 8$. La cour mesure 8 cm sur le plan.",
+        "Contrôle : 8 cm représentent $8 \\times 4 = 32$ m. C'est **faux**."
+      ],
+      "hint": "Sur un plan, une longueur est-elle plus grande ou plus petite qu'en réalité ?",
+      "estimated_duration_s": 90,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 3, classe de 6e, La proportionnalité : s'initier à la résolution de problèmes d'échelles."
+    },
+    {
+      "id": "EX-E006-M-01",
+      "skill_id": "E006",
+      "level": "maitrise",
+      "type": "numerique",
+      "statement": "Sur une carte de randonnée, 1 cm sur la carte représente 500 m en réalité. Un sentier mesure 4,5 km.\n\nQuelle longueur a ce sentier sur la carte, en centimètres ?",
+      "image": null,
+      "answer": {
+        "value": 9,
+        "unit": "cm",
+        "accepted": [
+          "9 cm"
+        ]
+      },
+      "solution_steps": [
+        "Les deux longueurs ne sont pas dans la même unité : on écrit 4,5 km en mètres. 1 km = 1 000 m, donc 4 km = 4 000 m ; 0,5 km, c'est 5 dixièmes de kilomètre, soit 500 m. Donc 4,5 km = 4 500 m.",
+        "1 cm sur la carte représente 500 m. 1 000 m, c'est 2 fois 500 m : 1 km est représenté par 2 cm.",
+        "4 000 m sont représentés par $4 \\times 2 = 8$ cm, et les 500 m qui restent par 1 cm.",
+        "En tout : $8 + 1 = 9$. Le sentier mesure **9 cm** sur la carte.",
+        "Contrôle : 9 cm représentent $9 \\times 500 = 4\\,500$ m, soit 4,5 km."
+      ],
+      "hint": "Écris 4,5 km en mètres. Combien de centimètres sur la carte pour 1 000 m ?",
+      "estimated_duration_s": 150,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 3, classe de 6e, La proportionnalité : s'initier à la résolution de problèmes d'échelles."
+    },
+    {
+      "id": "EX-E006-M-02",
+      "skill_id": "E006",
+      "level": "maitrise",
+      "type": "qcm",
+      "statement": "Un terrain de football mesure 100 m de long. On le dessine sur deux plans. Sur le plan A, 1 cm représente 10 m en réalité. Sur le plan B, 1 cm représente 25 m en réalité.\n\nSur quel plan le terrain est-il dessiné le plus long ?",
+      "image": null,
+      "choices": [
+        {
+          "key": "a",
+          "text": "Sur le plan B, car 25 m, c'est plus que 10 m.",
+          "misconception": "L'élève croit qu'un plus grand nombre dans l'échelle donne un plus grand dessin. C'est l'inverse : quand 1 cm représente plus de mètres, il faut moins de centimètres pour dessiner le terrain."
+        },
+        {
+          "key": "b",
+          "text": "Sur aucun : le terrain a la même longueur sur les deux plans.",
+          "misconception": "L'élève confond la longueur réelle, qui est la même, et la longueur dessinée, qui dépend de l'échelle."
+        },
+        {
+          "key": "c",
+          "text": "Sur le plan A : 10 cm contre 4 cm.",
+          "misconception": null
+        },
+        {
+          "key": "d",
+          "text": "Sur le plan B : 2 500 cm contre 1 000 cm.",
+          "misconception": "L'élève multiplie 100 par le nombre de l'échelle (100 × 25 = 2 500 et 100 × 10 = 1 000) au lieu de chercher combien de fois 25 m ou 10 m il y a dans 100 m : il inverse l'échelle."
+        }
+      ],
+      "answer": {
+        "value": "c"
+      },
+      "solution_steps": [
+        "Plan A : 1 cm représente 10 m, et $10 \\times 10 = 100$. Il faut 10 fois 1 cm : le terrain mesure 10 cm sur le plan A.",
+        "Plan B : 1 cm représente 25 m, et $4 \\times 25 = 100$. Il faut 4 fois 1 cm : le terrain mesure 4 cm sur le plan B.",
+        "10 cm sur le plan A, 4 cm sur le plan B : le terrain est dessiné plus long sur le plan A. Réponse c.",
+        "Retiens : plus la longueur réelle représentée par 1 cm est grande, plus le dessin est petit."
+      ],
+      "hint": "Calcule la longueur du terrain sur chaque plan.",
+      "estimated_duration_s": 120,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 3, classe de 6e, La proportionnalité : s'initier à la résolution de problèmes d'échelles."
+    },
+    {
+      "id": "EX-E007-D-01",
+      "skill_id": "E007",
+      "level": "decouverte",
+      "type": "numerique",
+      "statement": "Sur l'autoroute, une voiture roule à la vitesse constante de 80 km/h : elle parcourt 80 km en 1 h.\n\nQuelle distance parcourt-elle en 4 h ?",
+      "image": null,
+      "answer": {
+        "value": 320,
+        "accepted": [
+          "320 km",
+          "320"
+        ],
+        "unit": "km"
+      },
+      "solution_steps": [
+        "« 80 km/h » se lit « 80 kilomètres par heure » : en 1 h, la voiture parcourt 80 km.",
+        "À vitesse constante, la distance parcourue est proportionnelle à la durée : en 2 fois plus de temps, on parcourt 2 fois plus de distance. La vitesse, 80, est le coefficient de proportionnalité qui passe de la durée (en h) à la distance (en km).",
+        "Distance en 4 h : $4 \\times 80 = 320$. La voiture parcourt **320 km**."
+      ],
+      "hint": "En 1 h, elle parcourt 80 km. Et en 2 h ?",
+      "estimated_duration_s": 60,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 4, classe de 5e : « Utiliser un coefficient de proportionnalité dans des contextes concrets (prix unitaire, vitesse moyenne, échelle, etc.). »"
+    },
+    {
+      "id": "EX-E007-D-02",
+      "skill_id": "E007",
+      "level": "decouverte",
+      "type": "qcm",
+      "statement": "Un car scolaire parcourt 210 km en 3 h, à vitesse constante.\n\nQuelle est sa vitesse moyenne ?",
+      "image": null,
+      "choices": [
+        {
+          "key": "a",
+          "text": "630 km/h",
+          "misconception": "L'élève multiplie la distance par la durée ($210 \\times 3 = 630$) au lieu de diviser. Un car ne roule pas à 630 km/h : ce serait plus vite qu'un TGV."
+        },
+        {
+          "key": "b",
+          "text": "70 km/h",
+          "misconception": null
+        },
+        {
+          "key": "c",
+          "text": "210 km/h",
+          "misconception": "L'élève confond la distance parcourue en 3 h avec la vitesse, qui est la distance parcourue en **1** h."
+        }
+      ],
+      "answer": {
+        "value": "b"
+      },
+      "solution_steps": [
+        "La vitesse moyenne est la distance parcourue en 1 h. En 3 h, le car parcourt 210 km ; en 1 h, il parcourt 3 fois moins : $210 \\div 3 = 70$.",
+        "Vérification avec le coefficient : $3 \\times 70 = 210$. La distance (en km) s'obtient en multipliant la durée (en h) par 70.",
+        "La vitesse moyenne du car est **70 km/h** : la bonne réponse est b."
+      ],
+      "hint": "Quelle distance le car parcourt-il en 1 h ?",
+      "estimated_duration_s": 75,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 4, classe de 5e : « Utiliser un coefficient de proportionnalité dans des contextes concrets (prix unitaire, vitesse moyenne, échelle, etc.). »"
+    },
+    {
+      "id": "EX-E007-E-01",
+      "skill_id": "E007",
+      "level": "entrainement",
+      "type": "numerique",
+      "statement": "Une cycliste roule à la vitesse constante de 22 km/h pendant deux heures et demie (2,5 h).\n\nQuelle distance parcourt-elle ?",
+      "image": null,
+      "answer": {
+        "value": 55,
+        "accepted": [
+          "55 km",
+          "55"
+        ],
+        "unit": "km"
+      },
+      "solution_steps": [
+        "En 1 h, elle parcourt 22 km. En 2 h, elle parcourt $2 \\times 22 = 44$ km.",
+        "Une demi-heure, c'est la moitié d'une heure : elle y parcourt la moitié de 22 km, soit $22 \\div 2 = 11$ km.",
+        "En 2,5 h : $44 + 11 = 55$. On retrouve ce résultat avec le coefficient : $2{,}5 \\times 22 = 55$. Elle parcourt **55 km**."
+      ],
+      "hint": "Calcule la distance parcourue en 2 h, puis en une demi-heure.",
+      "estimated_duration_s": 90,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 4, classe de 5e : « Utiliser un coefficient de proportionnalité dans des contextes concrets (prix unitaire, vitesse moyenne, échelle, etc.). »"
+    },
+    {
+      "id": "EX-E007-E-02",
+      "skill_id": "E007",
+      "level": "entrainement",
+      "type": "vrai_faux",
+      "statement": "Un bateau parcourt 36 km en 1,5 h, à vitesse constante.\n\nAffirmation : sa vitesse moyenne est de 54 km/h.",
+      "image": null,
+      "answer": {
+        "value": false
+      },
+      "solution_steps": [
+        "54 vient de $36 \\times 1{,}5 = 54$ : on a multiplié la distance par la durée. Or la vitesse est la distance parcourue en 1 h ; comme le bateau met plus d'une heure pour faire 36 km, en 1 h il en fait **moins** de 36. 54 km/h est impossible.",
+        "Calcul de la vitesse : 1,5 h, c'est 3 demi-heures. En une demi-heure, le bateau parcourt $36 \\div 3 = 12$ km.",
+        "En 1 h, soit 2 demi-heures : $2 \\times 12 = 24$ km. Sa vitesse moyenne est 24 km/h. Vérification : $1{,}5 \\times 24 = 36$.",
+        "L'affirmation est **fausse**."
+      ],
+      "hint": "En 1 h, le bateau parcourt-il plus ou moins de 36 km ?",
+      "estimated_duration_s": 120,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 4, classe de 5e : « Utiliser un coefficient de proportionnalité dans des contextes concrets (prix unitaire, vitesse moyenne, échelle, etc.). »"
+    },
+    {
+      "id": "EX-E007-M-01",
+      "skill_id": "E007",
+      "level": "maitrise",
+      "type": "numerique",
+      "statement": "Un TER roule à la vitesse moyenne de 90 km/h. Il doit parcourir 225 km.\n\nCombien de temps dure le trajet ? Donne ta réponse en heures.",
+      "image": null,
+      "answer": {
+        "value": 2.5,
+        "accepted": [
+          "2,5 h",
+          "2,5",
+          "2 h 30",
+          "2 h 30 min",
+          "2h30"
+        ],
+        "unit": "h"
+      },
+      "solution_steps": [
+        "On raisonne à l'envers : on connaît la distance et la vitesse, on cherche la durée. En 1 h, le train parcourt 90 km ; en 2 h, $2 \\times 90 = 180$ km.",
+        "Il reste $225 - 180 = 45$ km. C'est la moitié de 90 km : le train les parcourt en une demi-heure.",
+        "Durée totale : 2 h et une demi-heure, soit **2,5 h**. Vérification avec le coefficient : $2{,}5 \\times 90 = 225$."
+      ],
+      "hint": "Combien de kilomètres le train parcourt-il en 2 h ? Et en une demi-heure ?",
+      "estimated_duration_s": 150,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 4, classe de 5e : « Utiliser un coefficient de proportionnalité dans des contextes concrets (prix unitaire, vitesse moyenne, échelle, etc.). »"
+    },
+    {
+      "id": "EX-E007-M-02",
+      "skill_id": "E007",
+      "level": "maitrise",
+      "type": "qcm",
+      "statement": "Pour partir en vacances, une famille roule 2 h à 100 km/h, puis 1 h à 70 km/h.\n\nQuelle est sa vitesse moyenne sur l'ensemble du trajet ?",
+      "image": null,
+      "choices": [
+        {
+          "key": "a",
+          "text": "90 km/h",
+          "misconception": null
+        },
+        {
+          "key": "b",
+          "text": "85 km/h",
+          "misconception": "L'élève fait la moyenne des deux vitesses, $(100 + 70) \\div 2 = 85$, comme si la famille avait roulé aussi longtemps à chaque vitesse. Or elle a roulé 2 h à 100 km/h et seulement 1 h à 70 km/h."
+        },
+        {
+          "key": "c",
+          "text": "270 km/h",
+          "misconception": "L'élève calcule bien la distance totale, 270 km, mais la prend pour la vitesse : il oublie de la ramener à la distance parcourue en 1 h."
+        }
+      ],
+      "answer": {
+        "value": "a"
+      },
+      "solution_steps": [
+        "Distance parcourue : $2 \\times 100 = 200$ km pendant la première partie, $1 \\times 70 = 70$ km pendant la seconde, soit $200 + 70 = 270$ km en tout.",
+        "Durée totale : $2 + 1 = 3$ h.",
+        "La vitesse moyenne est la vitesse constante qui ferait parcourir la même distance dans le même temps : $270 \\div 3 = 90$. Vérification : $3 \\times 90 = 270$.",
+        "La vitesse moyenne est **90 km/h**, et non 85 km/h : la famille a roulé plus longtemps à 100 km/h, la moyenne penche de ce côté. La bonne réponse est a."
+      ],
+      "hint": "Calcule la distance totale et la durée totale.",
+      "estimated_duration_s": 150,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 4, classe de 5e : « Utiliser un coefficient de proportionnalité dans des contextes concrets (prix unitaire, vitesse moyenne, échelle, etc.). »"
+    },
+    {
+      "id": "EX-E010-D-01",
+      "skill_id": "E010",
+      "level": "decouverte",
+      "type": "numerique",
+      "statement": "Une randonnée fait 18 km. Le premier jour, le groupe parcourt 50 % du trajet.\n\n50 %, c'est la moitié. Combien de kilomètres le groupe parcourt-il le premier jour ?",
+      "image": null,
+      "answer": {
+        "value": 9,
+        "unit": "km",
+        "accepted": [
+          "9 km"
+        ]
+      },
+      "solution_steps": [
+        "$50\\,\\% = \\frac{50}{100}$, et 50 parts sur 100, c'est 1 part sur 2 : 50 % d'une longueur, c'est sa moitié.",
+        "La moitié de 18 km : $18 \\div 2 = 9$.",
+        "Le groupe parcourt **9 km** le premier jour. Contrôle : il lui reste $18 - 9 = 9$ km, autant que ce qu'il a fait, comme il se doit pour une moitié."
+      ],
+      "hint": "Partage les 18 km en deux parts égales.",
+      "estimated_duration_s": 45,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 3, 6e : appliquer un pourcentage à une grandeur ou à un nombre."
+    },
+    {
+      "id": "EX-E010-D-02",
+      "skill_id": "E010",
+      "level": "decouverte",
+      "type": "qcm",
+      "statement": "Un roman compte 230 pages. Mia en a lu 10 %.\n\nCombien de pages a-t-elle lues ?",
+      "image": null,
+      "choices": [
+        {
+          "key": "a",
+          "text": "220 pages",
+          "misconception": "L'élève confond « 10 % de 230 » et « 10 de moins que 230 » : il retire 10 pages."
+        },
+        {
+          "key": "b",
+          "text": "23 pages",
+          "misconception": null
+        },
+        {
+          "key": "c",
+          "text": "2,3 pages",
+          "misconception": "L'élève divise par 100 au lieu de diviser par 10 : il calcule 1 % du livre, pas 10 %."
+        },
+        {
+          "key": "d",
+          "text": "10 pages",
+          "misconception": "L'élève prend le pourcentage pour un nombre de pages : 10 % devient 10 pages, sans tenir compte des 230 pages du livre."
+        }
+      ],
+      "answer": {
+        "value": "b"
+      },
+      "solution_steps": [
+        "$10\\,\\% = \\frac{10}{100} = \\frac{1}{10}$ : 10 % d'un nombre, c'est son dixième.",
+        "Le dixième de 230 pages : $230 \\div 10 = 23$.",
+        "Mia a lu **23 pages**. Contrôle : 23 pages, c'est bien moins que la moitié du livre (115 pages), ce qui est normal pour 10 %. La bonne réponse est b."
+      ],
+      "hint": "10 %, c'est 10 sur 100, c'est-à-dire un dixième.",
+      "estimated_duration_s": 60,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 3, 6e : appliquer un pourcentage à une grandeur ou à un nombre."
+    },
+    {
+      "id": "EX-E010-E-01",
+      "skill_id": "E010",
+      "level": "entrainement",
+      "type": "numerique",
+      "statement": "Un paquet de céréales pèse 450 g. Les céréales contiennent 6 % de sucre.\n\nQuelle masse de sucre contient le paquet ?",
+      "image": null,
+      "answer": {
+        "value": 27,
+        "unit": "g",
+        "accepted": [
+          "27 g"
+        ]
+      },
+      "solution_steps": [
+        "6 % de 450 g, c'est $\\frac{6}{100}$ de 450 g.",
+        "On multiplie 450 par la fraction : $450 \\times \\frac{6}{100} = \\frac{450 \\times 6}{100} = \\frac{2\\,700}{100}$.",
+        "$2\\,700 \\div 100 = 27$. Le paquet contient **27 g** de sucre.",
+        "Contrôle : 6 % est moins que 10 %, et 10 % de 450 g, c'est le dixième, 45 g. 27 g est bien plus petit que 45 g."
+      ],
+      "hint": "6 %, c'est la fraction $\\frac{6}{100}$. Multiplie d'abord 450 par 6.",
+      "estimated_duration_s": 90,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 3, 6e : appliquer un pourcentage à une grandeur ou à un nombre."
+    },
+    {
+      "id": "EX-E010-E-02",
+      "skill_id": "E010",
+      "level": "entrainement",
+      "type": "vrai_faux",
+      "statement": "Pour calculer 25 % de 84 €, Hugo divise 84 par 4 et trouve 21 €.\n\nHugo a-t-il raison ?",
+      "image": null,
+      "answer": {
+        "value": true
+      },
+      "solution_steps": [
+        "$25\\,\\% = \\frac{25}{100}$. Or $100 = 4 \\times 25$, donc $\\frac{25}{100} = \\frac{1}{4}$ : 25 %, c'est un quart.",
+        "25 % de 84 €, c'est donc le quart de 84 € : $84 \\div 4 = 21$.",
+        "Vérification avec la fraction : $84 \\times \\frac{25}{100} = \\frac{2\\,100}{100} = 21$. Hugo a raison : 25 % de 84 €, c'est 21 €."
+      ],
+      "hint": "À quelle fraction simple 25 % est-il égal ?",
+      "estimated_duration_s": 60,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 3, 6e : appliquer un pourcentage à une grandeur ou à un nombre."
+    },
+    {
+      "id": "EX-E010-M-01",
+      "skill_id": "E010",
+      "level": "maitrise",
+      "type": "numerique",
+      "statement": "Un jeu de société coûte 45 €. Pendant les soldes, le magasin fait une remise de 20 % sur ce jeu.\n\nQuel est le prix du jeu après la remise ?",
+      "image": null,
+      "answer": {
+        "value": 36,
+        "unit": "€",
+        "accepted": [
+          "36 €"
+        ]
+      },
+      "solution_steps": [
+        "Étape 1, le montant de la remise : 20 % de 45 €, c'est $45 \\times \\frac{20}{100} = \\frac{900}{100} = 9$ €.",
+        "Étape 2, le nouveau prix : une remise se retranche du prix de départ, $45 - 9 = 36$ €.",
+        "Le jeu coûte **36 €** après la remise. Attention : 9 € est le montant de la remise, pas le prix à payer ; et une remise de 20 % n'est pas une remise de 20 €.",
+        "Contrôle : avec une remise, le prix baisse, donc il est plus petit que 45 € ; et la remise, 9 €, est bien plus petite que la moitié du prix."
+      ],
+      "hint": "Calcule d'abord combien d'euros représente la remise.",
+      "estimated_duration_s": 120,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 3, 6e : appliquer un pourcentage à une grandeur ou à un nombre."
+    },
+    {
+      "id": "EX-E010-M-02",
+      "skill_id": "E010",
+      "level": "maitrise",
+      "type": "qcm",
+      "statement": "L'an dernier, un club de judo comptait 260 licenciés. Cette année, le nombre de licenciés a augmenté de 15 %.\n\nCombien le club compte-t-il de licenciés cette année ?",
+      "image": null,
+      "choices": [
+        {
+          "key": "a",
+          "text": "39 licenciés",
+          "misconception": "L'élève calcule bien l'augmentation, 15 % de 260, mais s'arrête là : 39 est le nombre de licenciés en plus, pas le nombre total."
+        },
+        {
+          "key": "b",
+          "text": "275 licenciés",
+          "misconception": "L'élève confond « augmenter de 15 % » et « augmenter de 15 » : il ajoute 15 licenciés."
+        },
+        {
+          "key": "c",
+          "text": "299 licenciés",
+          "misconception": null
+        },
+        {
+          "key": "d",
+          "text": "221 licenciés",
+          "misconception": "L'élève calcule bien 15 % de 260, soit 39, mais le retranche au lieu de l'ajouter : il traite l'augmentation comme une remise."
+        }
+      ],
+      "answer": {
+        "value": "c"
+      },
+      "solution_steps": [
+        "Étape 1, l'augmentation : 15 % de 260, c'est $260 \\times \\frac{15}{100} = \\frac{3\\,900}{100} = 39$. Le club a 39 licenciés de plus.",
+        "Étape 2, le nouvel effectif : on ajoute l'augmentation à l'effectif de départ, $260 + 39 = 299$.",
+        "Le club compte **299 licenciés** cette année.",
+        "Contrôle : le nombre de licenciés a augmenté, il doit dépasser 260, ce qui écarte 39 et 221. Et 15 % de 260 ne valent pas 15 : 10 % de 260 valent déjà 26. La bonne réponse est c."
+      ],
+      "hint": "Calcule d'abord le nombre de licenciés en plus.",
+      "estimated_duration_s": 120,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 3, 6e : appliquer un pourcentage à une grandeur ou à un nombre."
+    },
+    {
+      "id": "EX-E023-D-01",
+      "skill_id": "E023",
+      "level": "decouverte",
+      "type": "vrai_faux",
+      "statement": "Dans un repère, on représente le prix de places de concert : le nombre de places en abscisse, le prix en euros en ordonnée. On place les points de coordonnées (2 ; 24), (3 ; 36) et (5 ; 60). Ils sont alignés sur une droite qui passe par l'origine du repère.\n\nAffirmation : le prix payé est proportionnel au nombre de places.",
+      "image": null,
+      "answer": {
+        "value": true
+      },
+      "solution_steps": [
+        "Une situation est de proportionnalité quand sa représentation est formée de points alignés avec l'origine du repère, c'est-à-dire sur une droite qui passe par le point (0 ; 0).",
+        "C'est le cas ici. Les quotients le confirment : $24 \\div 2 = 12$, $36 \\div 3 = 12$ et $60 \\div 5 = 12$. Une place coûte 12 € : le coefficient de proportionnalité est 12.",
+        "L'origine (0 ; 0) a un sens : 0 place, 0 €. L'affirmation est **vraie**."
+      ],
+      "hint": "Par quel point particulier du repère passe la droite ?",
+      "estimated_duration_s": 60,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 4, classe de 5e, Fonctions : « Caractériser graphiquement la proportionnalité. »"
+    },
+    {
+      "id": "EX-E023-D-02",
+      "skill_id": "E023",
+      "level": "decouverte",
+      "type": "qcm",
+      "statement": "On représente le nombre de pages imprimées par une imprimante selon la durée d'impression (en minutes). Les points sont sur une droite qui passe par l'origine du repère et par le point A (2 ; 18).\n\nLequel de ces points est sur cette droite ?",
+      "image": null,
+      "choices": [
+        {
+          "key": "a",
+          "text": "(5 ; 21)",
+          "misconception": "L'élève ajoute 3 aux deux coordonnées de A : 2 + 3 = 5 et 18 + 3 = 21. C'est le modèle additif : sur une droite qui passe par l'origine, on multiplie les deux coordonnées par un même nombre, on n'ajoute pas."
+        },
+        {
+          "key": "b",
+          "text": "(18 ; 2)",
+          "misconception": "L'élève échange l'abscisse et l'ordonnée de A. Ce point voudrait dire 2 pages en 18 minutes."
+        },
+        {
+          "key": "c",
+          "text": "(6 ; 54)",
+          "misconception": null
+        }
+      ],
+      "answer": {
+        "value": "c"
+      },
+      "solution_steps": [
+        "La droite passe par l'origine : c'est une situation de proportionnalité. Le coefficient qui passe de l'abscisse (durée en minutes) à l'ordonnée (nombre de pages) vaut $18 \\div 2 = 9$ : l'imprimante imprime 9 pages par minute.",
+        "Un point est sur la droite si son ordonnée vaut 9 fois son abscisse. Pour (6 ; 54) : $6 \\times 9 = 54$, il convient.",
+        "Pour (5 ; 21) : $5 \\times 9 = 45$, pas 21. Pour (18 ; 2) : $18 \\times 9 = 162$, pas 2. La bonne réponse est c."
+      ],
+      "hint": "Combien de pages l'imprimante imprime-t-elle en 1 minute ?",
+      "estimated_duration_s": 90,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 4, classe de 5e : « Représenter une situation de proportionnalité par un tableau ou un graphique. »"
+    },
+    {
+      "id": "EX-E023-E-01",
+      "skill_id": "E023",
+      "level": "entrainement",
+      "type": "numerique",
+      "statement": "Un robinet fuit, en perdant chaque jour la même quantité d'eau. On représente le volume d'eau perdu (en L) selon le nombre de jours : c'est une droite qui passe par l'origine et par le point (4 ; 26).\n\nQuel volume d'eau est perdu en 10 jours ? C'est l'ordonnée du point de la droite d'abscisse 10.",
+      "image": null,
+      "answer": {
+        "value": 65,
+        "accepted": [
+          "65 L",
+          "65"
+        ],
+        "unit": "L"
+      },
+      "solution_steps": [
+        "La droite passe par l'origine : le volume perdu est proportionnel au nombre de jours. Le point (4 ; 26) se lit : en 4 jours, 26 L perdus.",
+        "Coefficient : $26 \\div 4 = 6{,}5$. Le robinet perd 6,5 L par jour.",
+        "En 10 jours : $10 \\times 6{,}5 = 65$. Le point de la droite d'abscisse 10 a pour ordonnée 65 : en 10 jours, le robinet perd **65 L**.",
+        "Contrôle par la linéarité : 10 jours, c'est 4 jours, plus 4 jours, plus 2 jours, soit $26 + 26 + 13 = 65$."
+      ],
+      "hint": "Lis le point (4 ; 26) avec des mots, puis cherche le volume perdu en 1 jour.",
+      "estimated_duration_s": 120,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 4, classe de 5e : « Représenter une situation de proportionnalité par un tableau ou un graphique. »"
+    },
+    {
+      "id": "EX-E023-E-02",
+      "skill_id": "E023",
+      "level": "entrainement",
+      "type": "qcm",
+      "statement": "Au marché, on représente le prix payé (en €) selon la masse de pommes achetée (en kg) par trois clients. On obtient trois points : (2 ; 7), (4 ; 14) et (6 ; 20).\n\nCe nuage de points correspond-il à une situation de proportionnalité ?",
+      "image": null,
+      "choices": [
+        {
+          "key": "a",
+          "text": "Oui : quand la masse augmente, le prix augmente aussi.",
+          "misconception": "L'élève confond « augmenter ensemble » et « être proportionnels ». Un nuage de points qui monte n'est pas forcément aligné avec l'origine."
+        },
+        {
+          "key": "b",
+          "text": "Non : le point (6 ; 20) n'est pas sur la droite qui passe par l'origine et par (2 ; 7), car $6 \\times 3{,}5 = 21$.",
+          "misconception": null
+        },
+        {
+          "key": "c",
+          "text": "Oui : les points (2 ; 7) et (4 ; 14) sont alignés avec l'origine, cela suffit.",
+          "misconception": "L'élève ne vérifie que deux points ($4 \\times 3{,}5 = 14$). Pour qu'il y ait proportionnalité, **tous** les points doivent être alignés avec l'origine."
+        }
+      ],
+      "answer": {
+        "value": "b"
+      },
+      "solution_steps": [
+        "Les points sont alignés avec l'origine si l'ordonnée s'obtient en multipliant l'abscisse par un même nombre. Avec (2 ; 7) : $7 \\div 2 = 3{,}5$.",
+        "Point (4 ; 14) : $4 \\times 3{,}5 = 14$, il est sur la droite. Point (6 ; 20) : $6 \\times 3{,}5 = 21$, pas 20 : ce point est en dessous de la droite.",
+        "Les trois points ne sont pas alignés avec l'origine : le prix n'est pas proportionnel à la masse (le troisième client a eu une remise). La bonne réponse est b."
+      ],
+      "hint": "Calcule le prix d'un kilogramme pour chaque point.",
+      "estimated_duration_s": 120,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 4, classe de 5e : « Reconnaitre graphiquement qu'un nuage de points est ou n'est pas associé à une situation de proportionnalité entre données discrètes. »"
+    },
+    {
+      "id": "EX-E023-M-01",
+      "skill_id": "E023",
+      "level": "maitrise",
+      "type": "vrai_faux",
+      "statement": "Un taxi affiche ses tarifs. On représente le prix de la course (en €) selon la distance parcourue (en km) : (1 ; 5), (2 ; 7), (3 ; 9) et (4 ; 11). Ces points sont alignés.\n\nAffirmation : puisque les points sont alignés, le prix de la course est proportionnel à la distance.",
+      "image": null,
+      "answer": {
+        "value": false
+      },
+      "solution_steps": [
+        "Être alignés ne suffit pas : pour la proportionnalité, il faut que la droite passe par l'origine du repère.",
+        "Quand la distance augmente de 1 km, le prix augmente de 2 €. En reculant d'un kilomètre depuis (1 ; 5), on arrive à 0 km pour $5 - 2 = 3$ € : la droite passe par le point (0 ; 3), pas par l'origine. Ces 3 € sont la prise en charge, payée même sans rouler.",
+        "Les quotients le confirment : $5 \\div 1 = 5$ et $7 \\div 2 = 3{,}5$ sont différents.",
+        "L'affirmation est **fausse** : les points sont alignés, mais pas avec l'origine."
+      ],
+      "hint": "Quel prix correspondrait à une distance de 0 km ?",
+      "estimated_duration_s": 120,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 4, classe de 5e : « Reconnaitre une situation de proportionnalité à partir d'un tableau ou d'un graphique. »"
+    },
+    {
+      "id": "EX-E023-M-02",
+      "skill_id": "E023",
+      "level": "maitrise",
+      "type": "numerique",
+      "statement": "On représente le prix (en €) du jus de pomme vendu au litre selon le volume acheté (en L) : c'est une droite qui passe par l'origine et par le point (6 ; 15). Nora paie 27,50 €.\n\nQuel volume de jus achète-t-elle ? C'est l'abscisse du point de la droite d'ordonnée 27,5.",
+      "image": null,
+      "answer": {
+        "value": 11,
+        "accepted": [
+          "11 L",
+          "11"
+        ],
+        "unit": "L"
+      },
+      "solution_steps": [
+        "On raisonne à l'envers : on connaît l'ordonnée (le prix), on cherche l'abscisse (le volume). Le point (6 ; 15) se lit : 6 L coûtent 15 €.",
+        "On cherche le coefficient qui passe du prix au volume. 6 L pour 15 €, c'est 2 L pour 5 € (on divise les deux nombres par 3). Le coefficient est donc $2 \\div 5 = 0{,}4$ : chaque euro achète 0,4 L.",
+        "Volume pour 27,50 € : $27{,}5 \\times 0{,}4 = 11$.",
+        "Vérification dans le sens habituel : 1 L coûte $15 \\div 6 = 2{,}5$ €, et $11 \\times 2{,}5 = 27{,}5$. Nora achète **11 L** de jus."
+      ],
+      "hint": "Combien de litres achète-t-on avec 5 € ?",
+      "estimated_duration_s": 180,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 4, classe de 5e : « Représenter une situation de proportionnalité par un tableau ou un graphique. »"
+    },
+    {
+      "id": "EX-E026-D-01",
+      "skill_id": "E026",
+      "level": "decouverte",
+      "type": "vrai_faux",
+      "statement": "Elsa achète 2 paquets de gâteaux à 4 € le paquet. Jules achète 3 fois plus de paquets.\n\nVrai ou faux : Jules paie 3 fois plus qu'Elsa.",
+      "image": null,
+      "answer": {
+        "value": true
+      },
+      "solution_steps": [
+        "Tous les paquets ont le même prix : 4 €.",
+        "Elsa paie $2 \\times 4 = 8$ €.",
+        "Jules achète 3 fois plus de paquets : $2 \\times 3 = 6$ paquets. Il paie $6 \\times 4 = 24$ €.",
+        "Et $8 \\times 3 = 24$ : Jules paie bien 3 fois plus. Si j'achète 3 fois plus de paquets au même prix, je paie 3 fois plus. L'affirmation est **vraie**."
+      ],
+      "hint": "Calcule ce que paie Elsa, puis ce que paie Jules.",
+      "estimated_duration_s": 60,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 3, CM1, la proportionnalité : identifier une situation de proportionnalité."
+    },
+    {
+      "id": "EX-E026-D-02",
+      "skill_id": "E026",
+      "level": "decouverte",
+      "type": "qcm",
+      "statement": "Dans quelle situation, si la première grandeur devient 2 fois plus grande, la seconde devient-elle 2 fois plus grande ?",
+      "image": null,
+      "choices": [
+        {
+          "key": "a",
+          "text": "L'âge d'un enfant et sa taille.",
+          "misconception": "L'élève pense que tout ce qui augmente ensemble est proportionnel : l'enfant grandit en vieillissant, mais sa taille ne double pas quand son âge double."
+        },
+        {
+          "key": "b",
+          "text": "Le nombre de timbres achetés et le prix payé, tous les timbres ayant le même prix.",
+          "misconception": null
+        },
+        {
+          "key": "c",
+          "text": "L'âge de Paul et l'âge de sa grande sœur.",
+          "misconception": "L'élève voit deux âges qui augmentent en même temps. Mais chaque année, ils augmentent tous les deux d'un an : c'est la même quantité qui s'ajoute, pas le même nombre de fois."
+        }
+      ],
+      "answer": {
+        "value": "b"
+      },
+      "solution_steps": [
+        "Des timbres qui ont tous le même prix : 2 fois plus de timbres, c'est 2 fois plus à payer. C'est une situation de proportionnalité.",
+        "L'âge et la taille : un enfant grandit en vieillissant, mais à 10 ans il ne mesure pas 2 fois sa taille de 5 ans.",
+        "Les âges de Paul et de sa grande sœur augmentent ensemble, mais d'un an chacun par an : ils augmentent de la même quantité, pas du même nombre de fois.",
+        "La bonne réponse est **le nombre de timbres et le prix payé**."
+      ],
+      "hint": "Pour chaque situation, demande-toi : si je double la première, est-ce que la seconde double forcément ?",
+      "estimated_duration_s": 60,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 3, CM1, la proportionnalité : identifier une situation de proportionnalité."
+    },
+    {
+      "id": "EX-E026-E-01",
+      "skill_id": "E026",
+      "level": "entrainement",
+      "type": "qcm",
+      "statement": "Une pile de 40 feuilles identiques est épaisse de 8 mm. Léo garde seulement 10 de ces feuilles.\n\nQue devient l'épaisseur de la pile ?",
+      "image": null,
+      "choices": [
+        {
+          "key": "a",
+          "text": "Elle devient 4 fois plus petite.",
+          "misconception": null
+        },
+        {
+          "key": "b",
+          "text": "Elle diminue de 4 mm.",
+          "misconception": "L'élève a bien trouvé que 10 feuilles, c'est 4 fois moins que 40, mais transforme « 4 fois moins » en « 4 de moins » : $8 - 4 = 4$ mm. Il confond comparaison multiplicative et comparaison additive."
+        },
+        {
+          "key": "c",
+          "text": "Elle devient 4 fois plus grande.",
+          "misconception": "L'élève a bien vu le nombre 4, mais confond « 4 fois moins » et « 4 fois plus » : avec moins de feuilles, la pile ne peut pas être plus épaisse."
+        }
+      ],
+      "answer": {
+        "value": "a"
+      },
+      "solution_steps": [
+        "10 feuilles, c'est 4 fois moins que 40 feuilles, car $10 \\times 4 = 40$.",
+        "Toutes les feuilles ont la même épaisseur : si je prends 4 fois moins de feuilles, la pile est 4 fois moins épaisse.",
+        "La pile devient **4 fois plus petite** : elle mesure $8 \\div 4 = 2$ mm."
+      ],
+      "hint": "Combien de fois moins de feuilles Léo garde-t-il ?",
+      "estimated_duration_s": 90,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 3, CM1, la proportionnalité : identifier une situation de proportionnalité."
+    },
+    {
+      "id": "EX-E026-E-02",
+      "skill_id": "E026",
+      "level": "entrainement",
+      "type": "vrai_faux",
+      "statement": "Lina a 5 ans et son frère a 10 ans : il a 2 fois l'âge de Lina.\n\nVrai ou faux : dans 5 ans, il aura toujours 2 fois l'âge de Lina.",
+      "image": null,
+      "answer": {
+        "value": false
+      },
+      "solution_steps": [
+        "Dans 5 ans, Lina aura $5 + 5 = 10$ ans et son frère $10 + 5 = 15$ ans.",
+        "2 fois l'âge de Lina, ce serait $10 \\times 2 = 20$ ans. Or son frère aura 15 ans.",
+        "Les deux âges augmentent de la même quantité (5 ans), pas du même nombre de fois : l'âge du frère n'est pas proportionnel à celui de Lina.",
+        "L'affirmation est **fausse**."
+      ],
+      "hint": "Calcule l'âge de chacun dans 5 ans.",
+      "estimated_duration_s": 90,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 3, CM1, la proportionnalité : identifier une situation de proportionnalité."
+    },
+    {
+      "id": "EX-E026-M-01",
+      "skill_id": "E026",
+      "level": "maitrise",
+      "type": "numerique",
+      "statement": "Une fleuriste vend des pots à 2 € pièce, plus 5 € de livraison par commande. 3 pots livrés coûtent 11 €.\n\nCombien coûtent 6 pots livrés ?",
+      "image": null,
+      "answer": {
+        "value": 17,
+        "unit": "€",
+        "accepted": [
+          "17 €",
+          "17 euros"
+        ]
+      },
+      "solution_steps": [
+        "Les 6 pots coûtent $6 \\times 2 = 12$ €.",
+        "La livraison se paie une seule fois par commande : on ajoute 5 €, $12 + 5 = 17$.",
+        "6 pots livrés coûtent **17 €**.",
+        "Ce n'est pas $11 \\times 2 = 22$ € : 2 fois plus de pots ne donnent pas un prix 2 fois plus grand, car la livraison ne double pas. Le prix n'est pas proportionnel au nombre de pots."
+      ],
+      "hint": "La livraison se paie-t-elle une fois ou deux fois ?",
+      "estimated_duration_s": 120,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 3, CM1, la proportionnalité : identifier une situation de proportionnalité."
+    },
+    {
+      "id": "EX-E026-M-02",
+      "skill_id": "E026",
+      "level": "maitrise",
+      "type": "qcm",
+      "statement": "Un melon coûte 3 €. Le marchand propose une offre : 3 melons pour 7 €. Ana prend l'offre.\n\nPaie-t-elle 3 fois plus que pour un seul melon ?",
+      "image": null,
+      "choices": [
+        {
+          "key": "a",
+          "text": "Oui : 3 fois plus de melons, donc 3 fois plus cher.",
+          "misconception": "L'élève applique la règle « 3 fois plus d'objets, 3 fois plus cher » sans vérifier que le prix d'un melon reste le même. Une offre change le prix : la situation n'est pas proportionnelle."
+        },
+        {
+          "key": "b",
+          "text": "Oui, car 7 €, c'est plus que 3 €.",
+          "misconception": "L'élève confond « payer plus » et « payer 3 fois plus ». 7 € est bien plus que 3 €, mais 3 fois 3 €, cela ferait 9 €."
+        },
+        {
+          "key": "c",
+          "text": "Non : 3 fois 3 €, c'est 9 €, et elle paie 7 €.",
+          "misconception": null
+        }
+      ],
+      "answer": {
+        "value": "c"
+      },
+      "solution_steps": [
+        "3 fois le prix d'un melon, c'est $3 \\times 3 = 9$ €.",
+        "Avec l'offre, Ana paie 7 €, et 7 n'est pas 9.",
+        "Elle achète 3 fois plus de melons mais ne paie pas 3 fois plus : avec une offre, le prix n'est pas proportionnel au nombre de melons.",
+        "La bonne réponse est **Non : 3 fois 3 €, c'est 9 €, et elle paie 7 €**."
+      ],
+      "hint": "Calcule 3 fois le prix d'un melon, puis compare avec le prix de l'offre.",
+      "estimated_duration_s": 120,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 3, CM1, la proportionnalité : identifier une situation de proportionnalité."
+    },
+    {
+      "id": "EX-E027-D-01",
+      "skill_id": "E027",
+      "level": "decouverte",
+      "type": "numerique",
+      "statement": "Au marché, 3 cahiers coûtent 8 €.\n\nCombien coûtent 6 de ces cahiers ?",
+      "image": null,
+      "answer": {
+        "value": 16,
+        "unit": "€",
+        "accepted": [
+          "16 €",
+          "16 euros"
+        ]
+      },
+      "solution_steps": [
+        "6 cahiers, c'est 2 fois plus que 3 cahiers, car $3 \\times 2 = 6$.",
+        "Si j'achète 2 fois plus de cahiers, je paie 2 fois plus : $8 \\times 2 = 16$.",
+        "6 cahiers coûtent **16 €**.",
+        "Pas besoin du prix d'un cahier : d'ailleurs, en partageant 8 € en 3, on ne tombe pas sur un nombre entier d'euros."
+      ],
+      "hint": "Combien de fois plus de cahiers achète-t-on ?",
+      "estimated_duration_s": 60,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 3, CM1, la proportionnalité : savoir résoudre un problème de proportionnalité, par des raisonnements fondés sur la propriété de la linéarité pour la multiplication."
+    },
+    {
+      "id": "EX-E027-D-02",
+      "skill_id": "E027",
+      "level": "decouverte",
+      "type": "qcm",
+      "statement": "Pour 4 bols de soupe, il faut 3 carottes.\n\nCombien de carottes faut-il pour 12 bols ?",
+      "image": null,
+      "choices": [
+        {
+          "key": "a",
+          "text": "11 carottes",
+          "misconception": "L'élève raisonne par ajout : on passe de 4 à 12 bols en ajoutant 8, alors il ajoute 8 carottes ($3 + 8 = 11$). C'est le modèle additif, faux ici."
+        },
+        {
+          "key": "b",
+          "text": "9 carottes",
+          "misconception": null
+        },
+        {
+          "key": "c",
+          "text": "36 carottes",
+          "misconception": "L'élève multiplie les deux nombres qu'il voit, $3 \\times 12 = 36$, comme s'il fallait 3 carottes pour chaque bol. Or 3 carottes servent pour 4 bols."
+        }
+      ],
+      "answer": {
+        "value": "b"
+      },
+      "solution_steps": [
+        "12 bols, c'est 3 fois plus que 4 bols, car $4 \\times 3 = 12$.",
+        "Pour 3 fois plus de bols, il faut 3 fois plus de carottes : $3 \\times 3 = 9$.",
+        "Il faut **9 carottes**."
+      ],
+      "hint": "12 bols, c'est combien de fois 4 bols ?",
+      "estimated_duration_s": 60,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 3, CM1, la proportionnalité : savoir résoudre un problème de proportionnalité, par des raisonnements fondés sur la propriété de la linéarité pour la multiplication."
+    },
+    {
+      "id": "EX-E027-E-01",
+      "skill_id": "E027",
+      "level": "entrainement",
+      "type": "numerique",
+      "statement": "12 bouteilles de jus coûtent 20 €.\n\nCombien coûtent 3 de ces bouteilles ?",
+      "image": null,
+      "answer": {
+        "value": 5,
+        "unit": "€",
+        "accepted": [
+          "5 €",
+          "5 euros"
+        ]
+      },
+      "solution_steps": [
+        "3 bouteilles, c'est 4 fois moins que 12 bouteilles, car $3 \\times 4 = 12$.",
+        "Si j'achète 4 fois moins de bouteilles, je paie 4 fois moins : $20 \\div 4 = 5$.",
+        "3 bouteilles coûtent **5 €**.",
+        "Inutile de chercher le prix d'une bouteille : en partageant 20 € en 12, on ne tombe pas sur un nombre entier d'euros."
+      ],
+      "hint": "3 bouteilles, c'est combien de fois moins que 12 bouteilles ?",
+      "estimated_duration_s": 90,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 3, CM1, la proportionnalité : savoir résoudre un problème de proportionnalité, par des raisonnements fondés sur la propriété de la linéarité pour la multiplication."
+    },
+    {
+      "id": "EX-E027-E-02",
+      "skill_id": "E027",
+      "level": "entrainement",
+      "type": "vrai_faux",
+      "statement": "8 tickets de bus coûtent 14 €.\n\nMalo dit : « 32 tickets coûtent 56 €. » A-t-il raison ?",
+      "image": null,
+      "answer": {
+        "value": true
+      },
+      "solution_steps": [
+        "32 tickets, c'est 4 fois plus que 8 tickets, car $8 \\times 4 = 32$.",
+        "4 fois plus de tickets, donc 4 fois plus cher : $14 \\times 4 = 56$.",
+        "Malo a raison : l'affirmation est **vraie**."
+      ],
+      "hint": "32 tickets, c'est combien de fois 8 tickets ?",
+      "estimated_duration_s": 90,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 3, CM1, la proportionnalité : savoir résoudre un problème de proportionnalité, par des raisonnements fondés sur la propriété de la linéarité pour la multiplication."
+    },
+    {
+      "id": "EX-E027-M-01",
+      "skill_id": "E027",
+      "level": "maitrise",
+      "type": "qcm",
+      "statement": "Un boulanger fait 14 pains avec 6 kg de farine.\n\nCombien de farine lui faut-il pour faire 42 pains ?",
+      "image": null,
+      "choices": [
+        {
+          "key": "a",
+          "text": "34 kg",
+          "misconception": "L'élève raisonne par ajout : de 14 à 42 pains, on ajoute 28, alors il ajoute 28 kg ($6 + 28 = 34$). C'est le modèle additif, faux ici."
+        },
+        {
+          "key": "b",
+          "text": "252 kg",
+          "misconception": "L'élève multiplie les deux nombres de l'énoncé, $6 \\times 42 = 252$, comme si chaque pain demandait 6 kg de farine. Or 6 kg servent pour 14 pains."
+        },
+        {
+          "key": "c",
+          "text": "18 kg",
+          "misconception": null
+        }
+      ],
+      "answer": {
+        "value": "c"
+      },
+      "solution_steps": [
+        "42 pains, c'est 3 fois plus que 14 pains, car $14 \\times 3 = 42$.",
+        "Pour 3 fois plus de pains, il faut 3 fois plus de farine : $6 \\times 3 = 18$.",
+        "Il lui faut **18 kg** de farine."
+      ],
+      "hint": "Cherche combien de fois 14 pains il y a dans 42 pains.",
+      "estimated_duration_s": 120,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 3, CM1, la proportionnalité : savoir résoudre un problème de proportionnalité, par des raisonnements fondés sur la propriété de la linéarité pour la multiplication."
+    },
+    {
+      "id": "EX-E027-M-02",
+      "skill_id": "E027",
+      "level": "maitrise",
+      "type": "numerique",
+      "statement": "Un club de foot paie 492 € pour 36 maillots identiques.\n\nCombien paierait-il pour 9 de ces maillots ?",
+      "image": null,
+      "answer": {
+        "value": 123,
+        "unit": "€",
+        "accepted": [
+          "123 €",
+          "123 euros"
+        ]
+      },
+      "solution_steps": [
+        "9 maillots, c'est 4 fois moins que 36 maillots, car $9 \\times 4 = 36$.",
+        "4 fois moins de maillots, donc 4 fois moins cher : on calcule $492 \\div 4$.",
+        "On pose la division : en 4 centaines, 1 fois 4, reste 0 ; en 9 dizaines, 2 fois 4, reste 1 ; en 12 unités, 3 fois 4, reste 0. Donc $492 \\div 4 = 123$.",
+        "9 maillots coûtent **123 €**. Pas besoin du prix d'un maillot, qui demanderait de diviser par 36."
+      ],
+      "hint": "36 maillots, c'est combien de fois 9 maillots ?",
+      "estimated_duration_s": 120,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 3, CM1, la proportionnalité : savoir résoudre un problème de proportionnalité, par des raisonnements fondés sur la propriété de la linéarité pour la multiplication."
+    },
+    {
+      "id": "EX-E028-D-01",
+      "skill_id": "E028",
+      "level": "decouverte",
+      "type": "numerique",
+      "statement": "2 bouteilles de lait coûtent 3 € et 5 bouteilles coûtent 7,50 €.\n\nCombien coûtent 7 bouteilles ?",
+      "image": null,
+      "answer": {
+        "value": 10.5,
+        "unit": "€",
+        "accepted": [
+          "10,50 €",
+          "10,5 €",
+          "10,50",
+          "10,50 euros"
+        ]
+      },
+      "solution_steps": [
+        "7 bouteilles, c'est 2 bouteilles et 5 bouteilles : $2 + 5 = 7$.",
+        "Pour 7 bouteilles, je paie le prix de 2 bouteilles plus le prix de 5 bouteilles.",
+        "On pose l'addition : $3{,}00 + 7{,}50 = 10{,}50$.",
+        "7 bouteilles coûtent **10,50 €**."
+      ],
+      "hint": "Écris 7 comme une somme de deux nombres de l'énoncé.",
+      "estimated_duration_s": 60,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 3, CM2, la proportionnalité : savoir résoudre un problème de proportionnalité ; seuls des raisonnements fondés sur les propriétés de linéarité pour la multiplication et pour l'addition sont attendus."
+    },
+    {
+      "id": "EX-E028-D-02",
+      "skill_id": "E028",
+      "level": "decouverte",
+      "type": "qcm",
+      "statement": "4 billets de musée coûtent 18 € et 6 billets coûtent 27 €.\n\nComment trouver le prix de 10 billets ?",
+      "image": null,
+      "choices": [
+        {
+          "key": "a",
+          "text": "On ajoute 18 € et 27 €, car 10 billets, c'est 4 billets et 6 billets.",
+          "misconception": null
+        },
+        {
+          "key": "b",
+          "text": "On ajoute 4 € à 27 €, car on ajoute 4 billets.",
+          "misconception": "L'élève ajoute au prix le nombre de billets ajoutés : c'est le modèle additif. Mais 4 billets ne coûtent pas 4 €, ils coûtent 18 €."
+        },
+        {
+          "key": "c",
+          "text": "C'est impossible sans connaître le prix d'un billet.",
+          "misconception": "L'élève croit qu'il faut toujours passer par le prix d'un billet. Ici, on peut ajouter directement le prix de 4 billets et celui de 6 billets."
+        }
+      ],
+      "answer": {
+        "value": "a"
+      },
+      "solution_steps": [
+        "10 billets, c'est 4 billets et 6 billets : $4 + 6 = 10$.",
+        "Pour 10 billets, je paie donc le prix de 4 billets plus le prix de 6 billets.",
+        "La bonne réponse est **on ajoute 18 € et 27 €**, ce qui donne $18 + 27 = 45$ €."
+      ],
+      "hint": "10 billets, c'est combien de billets plus combien de billets ?",
+      "estimated_duration_s": 60,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 3, CM2, la proportionnalité : savoir résoudre un problème de proportionnalité ; seuls des raisonnements fondés sur les propriétés de linéarité pour la multiplication et pour l'addition sont attendus."
+    },
+    {
+      "id": "EX-E028-E-01",
+      "skill_id": "E028",
+      "level": "entrainement",
+      "type": "numerique",
+      "statement": "7 kg de carottes coûtent 9,10 € et 3 kg coûtent 3,90 €.\n\nCombien coûtent 4 kg de carottes ?",
+      "image": null,
+      "answer": {
+        "value": 5.2,
+        "unit": "€",
+        "accepted": [
+          "5,20 €",
+          "5,2 €",
+          "5,20",
+          "5,20 euros"
+        ]
+      },
+      "solution_steps": [
+        "4 kg, c'est 7 kg moins 3 kg : $7 - 3 = 4$.",
+        "Le prix de 4 kg, c'est donc le prix de 7 kg moins le prix de 3 kg.",
+        "On pose la soustraction : $9{,}10 - 3{,}90 = 5{,}20$.",
+        "4 kg de carottes coûtent **5,20 €**."
+      ],
+      "hint": "4 kg, peux-tu l'obtenir avec 7 kg et 3 kg ?",
+      "estimated_duration_s": 90,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 3, CM2, la proportionnalité : savoir résoudre un problème de proportionnalité ; seuls des raisonnements fondés sur les propriétés de linéarité pour la multiplication et pour l'addition sont attendus."
+    },
+    {
+      "id": "EX-E028-E-02",
+      "skill_id": "E028",
+      "level": "entrainement",
+      "type": "vrai_faux",
+      "statement": "5 cahiers coûtent 8,50 € et 2 cahiers coûtent 3,40 €.\n\nLila dit : « 10 cahiers coûtent 11,90 €, car $8{,}50 + 3{,}40 = 11{,}90$. » A-t-elle raison ?",
+      "image": null,
+      "answer": {
+        "value": false
+      },
+      "solution_steps": [
+        "Lila a ajouté le prix de 5 cahiers et celui de 2 cahiers : elle a trouvé le prix de $5 + 2 = 7$ cahiers, pas de 10 cahiers.",
+        "10 cahiers, c'est 5 cahiers et encore 5 cahiers : $5 + 5 = 10$.",
+        "Le prix de 10 cahiers est donc $8{,}50 + 8{,}50 = 17{,}00$, soit 17 €.",
+        "L'affirmation de Lila est **fausse**. Avant d'ajouter deux prix, on vérifie que les quantités font bien le total cherché."
+      ],
+      "hint": "Lila a ajouté les prix de combien de cahiers en tout ?",
+      "estimated_duration_s": 90,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 3, CM2, la proportionnalité : savoir résoudre un problème de proportionnalité ; seuls des raisonnements fondés sur les propriétés de linéarité pour la multiplication et pour l'addition sont attendus."
+    },
+    {
+      "id": "EX-E028-M-01",
+      "skill_id": "E028",
+      "level": "maitrise",
+      "type": "numerique",
+      "statement": "4 kg de poires coûtent 10,80 € et 5 kg coûtent 13,50 €.\n\nCombien coûtent 13 kg de poires ?",
+      "image": null,
+      "answer": {
+        "value": 35.1,
+        "unit": "€",
+        "accepted": [
+          "35,10 €",
+          "35,1 €",
+          "35,10",
+          "35,10 euros"
+        ]
+      },
+      "solution_steps": [
+        "On écrit 13 kg avec les masses connues : $13 = 4 + 4 + 5$.",
+        "Le prix de 13 kg, c'est le prix de 4 kg, plus le prix de 4 kg, plus le prix de 5 kg.",
+        "On pose les additions : $10{,}80 + 10{,}80 = 21{,}60$, puis $21{,}60 + 13{,}50 = 35{,}10$.",
+        "13 kg de poires coûtent **35,10 €**."
+      ],
+      "hint": "Écris 13 comme une somme de 4 et de 5.",
+      "estimated_duration_s": 120,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 3, CM2, la proportionnalité : savoir résoudre un problème de proportionnalité ; seuls des raisonnements fondés sur les propriétés de linéarité pour la multiplication et pour l'addition sont attendus."
+    },
+    {
+      "id": "EX-E028-M-02",
+      "skill_id": "E028",
+      "level": "maitrise",
+      "type": "qcm",
+      "statement": "2 kg de cerises coûtent 9 € et 5 kg coûtent 22,50 €. Léa paie 31,50 €.\n\nQuelle masse de cerises a-t-elle achetée ?",
+      "image": null,
+      "choices": [
+        {
+          "key": "a",
+          "text": "14 kg",
+          "misconception": "L'élève voit que 31,50 €, c'est 9 € de plus que 22,50 €, et ajoute 9 aux 5 kg ($5 + 9 = 14$) : il ajoute des euros à des kilos. C'est le modèle additif, faux ici."
+        },
+        {
+          "key": "b",
+          "text": "7 kg",
+          "misconception": null
+        },
+        {
+          "key": "c",
+          "text": "9 kg",
+          "misconception": "L'élève trouve bien que $9 + 22{,}50 = 31{,}50$, mais répond avec le prix 9 € au lieu de la masse qui lui correspond (2 kg) : il confond les deux grandeurs."
+        }
+      ],
+      "answer": {
+        "value": "b"
+      },
+      "solution_steps": [
+        "On cherche une masse à partir d'un prix : quels prix connus, ajoutés, font 31,50 € ?",
+        "On pose l'addition : $9{,}00 + 22{,}50 = 31{,}50$. Léa paie donc le prix de 2 kg plus le prix de 5 kg.",
+        "Elle a acheté $2 + 5 = 7$ kg : la bonne réponse est **7 kg**."
+      ],
+      "hint": "Quels prix de l'énoncé, ajoutés, donnent 31,50 € ?",
+      "estimated_duration_s": 120,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 3, CM2, la proportionnalité : savoir résoudre un problème de proportionnalité ; seuls des raisonnements fondés sur les propriétés de linéarité pour la multiplication et pour l'addition sont attendus."
+    },
+    {
+      "id": "EX-E029-D-01",
+      "skill_id": "E029",
+      "level": "decouverte",
+      "type": "numerique",
+      "statement": "4 pots de peinture coûtent 18 €. Cherche d'abord le prix de 2 pots.\n\nCombien coûtent 6 pots ?",
+      "image": null,
+      "answer": {
+        "value": 27,
+        "unit": "€",
+        "accepted": [
+          "27 €",
+          "27 euros"
+        ]
+      },
+      "solution_steps": [
+        "2 pots, c'est 2 fois moins que 4 pots : ils coûtent 2 fois moins, $18 \\div 2 = 9$ €.",
+        "6 pots, c'est 3 fois plus que 2 pots : ils coûtent 3 fois plus, $9 \\times 3 = 27$ €.",
+        "6 pots coûtent **27 €**.",
+        "Autre chemin : 6 pots, c'est 4 pots et 2 pots, donc $18 + 9 = 27$ €."
+      ],
+      "hint": "2 pots, c'est combien de fois moins que 4 pots ?",
+      "estimated_duration_s": 60,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 3, CM2, la proportionnalité : les savoir-faire se consolident et s'enrichissent à travers la résolution de problèmes nécessitant plusieurs étapes."
+    },
+    {
+      "id": "EX-E029-D-02",
+      "skill_id": "E029",
+      "level": "decouverte",
+      "type": "qcm",
+      "statement": "Une recette pour 6 personnes demande 4 tomates.\n\nCombien de tomates faut-il pour 9 personnes ?",
+      "image": null,
+      "choices": [
+        {
+          "key": "a",
+          "text": "7 tomates",
+          "misconception": "L'élève raisonne par ajout : 3 personnes de plus, donc 3 tomates de plus ($4 + 3 = 7$). C'est le modèle additif, faux ici."
+        },
+        {
+          "key": "b",
+          "text": "6 tomates",
+          "misconception": null
+        },
+        {
+          "key": "c",
+          "text": "12 tomates",
+          "misconception": "L'élève voit que 9, c'est 3 fois 3, et multiplie les 4 tomates par 3. Mais 4 tomates servent pour 6 personnes, pas pour 3 : 12 tomates, c'est pour 18 personnes."
+        }
+      ],
+      "answer": {
+        "value": "b"
+      },
+      "solution_steps": [
+        "On ne passe pas de 6 à 9 en multipliant par un nombre entier : on fait une étape intermédiaire.",
+        "3 personnes, c'est 2 fois moins que 6 personnes : il faut 2 fois moins de tomates, $4 \\div 2 = 2$ tomates.",
+        "9 personnes, c'est 6 personnes et 3 personnes : $4 + 2 = 6$ tomates.",
+        "Il faut **6 tomates**."
+      ],
+      "hint": "Combien de tomates faut-il pour 3 personnes ?",
+      "estimated_duration_s": 60,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 3, CM2, la proportionnalité : les savoir-faire se consolident et s'enrichissent à travers la résolution de problèmes nécessitant plusieurs étapes."
+    },
+    {
+      "id": "EX-E029-E-01",
+      "skill_id": "E029",
+      "level": "entrainement",
+      "type": "numerique",
+      "statement": "10 ballons coûtent 45 €.\n\nCombien coûtent 4 de ces ballons ?",
+      "image": null,
+      "answer": {
+        "value": 18,
+        "unit": "€",
+        "accepted": [
+          "18 €",
+          "18 euros"
+        ]
+      },
+      "solution_steps": [
+        "On ne passe pas de 10 à 4 ballons en divisant par un nombre entier : on passe par 2 ballons.",
+        "2 ballons, c'est 5 fois moins que 10 ballons : ils coûtent 5 fois moins, $45 \\div 5 = 9$ €.",
+        "4 ballons, c'est 2 fois plus que 2 ballons : ils coûtent 2 fois plus, $9 \\times 2 = 18$ €.",
+        "4 ballons coûtent **18 €**."
+      ],
+      "hint": "Cherche d'abord le prix de 2 ballons.",
+      "estimated_duration_s": 90,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 3, CM2, la proportionnalité : les savoir-faire se consolident et s'enrichissent à travers la résolution de problèmes nécessitant plusieurs étapes."
+    },
+    {
+      "id": "EX-E029-E-02",
+      "skill_id": "E029",
+      "level": "entrainement",
+      "type": "vrai_faux",
+      "statement": "15 kg de pommes donnent 9 litres de jus.\n\nMalik dit : « Avec 25 kg, j'aurai 19 litres, car j'ajoute 10 de chaque côté. » A-t-il raison ?",
+      "image": null,
+      "answer": {
+        "value": false
+      },
+      "solution_steps": [
+        "5 kg, c'est 3 fois moins que 15 kg : on obtient 3 fois moins de jus, $9 \\div 3 = 3$ litres.",
+        "25 kg, c'est 5 fois plus que 5 kg : on obtient 5 fois plus de jus, $3 \\times 5 = 15$ litres.",
+        "Avec 25 kg, on obtient 15 litres, pas 19. Ajouter 10 kg n'ajoute pas 10 litres : 10 kg donnent 6 litres.",
+        "L'affirmation de Malik est **fausse**."
+      ],
+      "hint": "Combien de litres donnent 5 kg de pommes ?",
+      "estimated_duration_s": 90,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 3, CM2, la proportionnalité : les savoir-faire se consolident et s'enrichissent à travers la résolution de problèmes nécessitant plusieurs étapes."
+    },
+    {
+      "id": "EX-E029-M-01",
+      "skill_id": "E029",
+      "level": "maitrise",
+      "type": "numerique",
+      "statement": "Avec 21 €, Hugo achète 6 carnets identiques.\n\nCombien de ces carnets peut-il acheter avec 35 € ?",
+      "image": null,
+      "answer": {
+        "value": 10,
+        "unit": "carnets",
+        "accepted": [
+          "10 carnets"
+        ]
+      },
+      "solution_steps": [
+        "On cherche un nombre de carnets, à partir d'une somme d'argent.",
+        "7 €, c'est 3 fois moins que 21 € : on achète 3 fois moins de carnets, $6 \\div 3 = 2$ carnets.",
+        "35 €, c'est 5 fois plus que 7 € : on achète 5 fois plus de carnets, $2 \\times 5 = 10$ carnets.",
+        "Avec 35 €, Hugo peut acheter **10 carnets**."
+      ],
+      "hint": "Combien de carnets peut-on acheter avec 7 € ?",
+      "estimated_duration_s": 120,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 3, CM2, la proportionnalité : les savoir-faire se consolident et s'enrichissent à travers la résolution de problèmes nécessitant plusieurs étapes."
+    },
+    {
+      "id": "EX-E029-M-02",
+      "skill_id": "E029",
+      "level": "maitrise",
+      "type": "qcm",
+      "statement": "Un fleuriste vend 12 roses pour 18 €.\n\nCombien coûtent 28 roses ?",
+      "image": null,
+      "choices": [
+        {
+          "key": "a",
+          "text": "34 €",
+          "misconception": "L'élève raisonne par ajout : 16 roses de plus, donc 16 € de plus ($18 + 16 = 34$). C'est le modèle additif, faux ici."
+        },
+        {
+          "key": "b",
+          "text": "36 €",
+          "misconception": "L'élève voit que 28, c'est un peu plus que 2 fois 12, et double le prix : $18 \\times 2 = 36$ €. Mais 36 €, c'est le prix de 24 roses : il oublie les 4 roses restantes."
+        },
+        {
+          "key": "c",
+          "text": "42 €",
+          "misconception": null
+        }
+      ],
+      "answer": {
+        "value": "c"
+      },
+      "solution_steps": [
+        "On ne passe pas de 12 à 28 roses en multipliant par un nombre entier : on passe par 4 roses.",
+        "4 roses, c'est 3 fois moins que 12 roses : elles coûtent 3 fois moins, $18 \\div 3 = 6$ €.",
+        "28 roses, c'est 7 fois plus que 4 roses : elles coûtent 7 fois plus, $6 \\times 7 = 42$ €.",
+        "28 roses coûtent **42 €**. Autre chemin : 28 roses, c'est 12 roses, 12 roses et 4 roses, donc $18 + 18 + 6 = 42$ €."
+      ],
+      "hint": "Cherche d'abord le prix de 4 roses.",
+      "estimated_duration_s": 120,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 3, CM2, la proportionnalité : les savoir-faire se consolident et s'enrichissent à travers la résolution de problèmes nécessitant plusieurs étapes."
+    },
+    {
+      "id": "EX-E030-D-01",
+      "skill_id": "E030",
+      "level": "decouverte",
+      "type": "vrai_faux",
+      "statement": "À la boulangerie, 3 baguettes coûtent 3,60 € et 5 baguettes coûtent 6 €.\n\nCalcule le prix d'une baguette dans chaque cas. Vrai ou faux : pour ces deux achats, le prix payé est proportionnel au nombre de baguettes.",
+      "image": null,
+      "answer": {
+        "value": true
+      },
+      "solution_steps": [
+        "Deux grandeurs sont proportionnelles quand la quantité pour une unité reste la même. Ici, l'unité est une baguette : on cherche le prix d'une baguette dans chaque cas.",
+        "Pour 3 baguettes : $3{,}60 \\div 3 = 1{,}20$. Une baguette coûte 1,20 €.",
+        "Pour 5 baguettes : $6 \\div 5 = 1{,}20$. Une baguette coûte 1,20 € là aussi.",
+        "Le prix d'une baguette est le même dans les deux cas : pour ces deux achats, le prix payé est proportionnel au nombre de baguettes. C'est **vrai**.",
+        "Attention : passer de 3 à 5 baguettes, c'est ajouter 2 baguettes, mais le prix n'augmente pas de 2 € : il augmente de $2 \\times 1{,}20 = 2{,}40$ €, et $6 - 3{,}60 = 2{,}40$."
+      ],
+      "hint": "Divise chaque prix par le nombre de baguettes. Trouves-tu le même prix pour une baguette ?",
+      "estimated_duration_s": 75,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 3, classe de 6e, La proportionnalité : connaître la définition de la proportionnalité entre deux grandeurs et la mettre en lien avec des expressions de la vie courante."
+    },
+    {
+      "id": "EX-E030-D-02",
+      "skill_id": "E030",
+      "level": "decouverte",
+      "type": "qcm",
+      "statement": "Au marché, une étiquette indique : « Tomates : 3 € le kilo ».\n\nQuelle phrase explique correctement cette étiquette ?",
+      "image": null,
+      "choices": [
+        {
+          "key": "a",
+          "text": "On paie 3 € quelle que soit la masse de tomates achetée.",
+          "misconception": "L'élève lit l'étiquette comme un prix unique pour tout l'achat, comme un forfait : il oublie que « le kilo » désigne une masse de 1 kg."
+        },
+        {
+          "key": "b",
+          "text": "3 kg de tomates coûtent 1 €.",
+          "misconception": "L'élève inverse les deux grandeurs : il associe 3 à la masse et 1 au prix, alors que l'étiquette donne le prix (3 €) d'une masse de 1 kg."
+        },
+        {
+          "key": "c",
+          "text": "Chaque kilogramme coûte 3 €, donc 2 kg coûtent 6 €.",
+          "misconception": null
+        },
+        {
+          "key": "d",
+          "text": "1 kg coûte 3 €, donc 2 kg coûtent 4 €.",
+          "misconception": "Modèle additif : l'élève ajoute 1 kg d'un côté et 1 € de l'autre. Or 1 kg de plus coûte 3 € de plus, pas 1 €."
+        }
+      ],
+      "answer": {
+        "value": "c"
+      },
+      "solution_steps": [
+        "« 3 € le kilo » se lit « 3 € pour 1 kilogramme » : c'est le prix pour une unité de masse, le prix au kilo.",
+        "Ce prix pour 1 kg reste le même quelle que soit la quantité achetée : le prix payé est proportionnel à la masse de tomates.",
+        "2 kg, c'est 2 fois 1 kg : on paie 2 fois 3 €, soit $2 \\times 3 = 6$ €.",
+        "La bonne phrase est la c."
+      ],
+      "hint": "« Le kilo » : pour quelle masse de tomates paie-t-on 3 € ?",
+      "estimated_duration_s": 60,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 3, classe de 6e, La proportionnalité : connaître la définition de la proportionnalité entre deux grandeurs et la mettre en lien avec des expressions de la vie courante."
+    },
+    {
+      "id": "EX-E030-E-01",
+      "skill_id": "E030",
+      "level": "entrainement",
+      "type": "qcm",
+      "statement": "Une salle d'escalade fait payer 8 € d'inscription pour l'année, puis 5 € par séance.\n\nLe prix payé dans l'année est-il proportionnel au nombre de séances ?",
+      "image": null,
+      "choices": [
+        {
+          "key": "a",
+          "text": "Oui, car chaque séance coûte toujours 5 €.",
+          "misconception": "L'élève ne regarde que le prix d'une séance et oublie les 8 € d'inscription, payés une seule fois quel que soit le nombre de séances."
+        },
+        {
+          "key": "b",
+          "text": "Non : 2 séances coûtent 18 € et 4 séances coûtent 28 €, ce n'est pas le double.",
+          "misconception": null
+        },
+        {
+          "key": "c",
+          "text": "Oui, car plus on fait de séances, plus on paie.",
+          "misconception": "L'élève confond « augmenter en même temps » et « être proportionnel » : le prix augmente bien, mais 2 fois plus de séances ne coûtent pas 2 fois plus cher."
+        },
+        {
+          "key": "d",
+          "text": "On ne peut pas savoir sans connaître le nombre de séances.",
+          "misconception": "L'élève croit qu'il faut un cas précis pour décider. On peut tester avec des nombres de séances que l'on choisit, par exemple 2 et 4."
+        }
+      ],
+      "answer": {
+        "value": "b"
+      },
+      "solution_steps": [
+        "Prix pour 2 séances : $8 + 2 \\times 5 = 18$, soit 18 €.",
+        "Prix pour 4 séances : $8 + 4 \\times 5 = 28$, soit 28 €.",
+        "4 séances, c'est 2 fois plus de séances que 2 séances. Si le prix était proportionnel, on paierait 2 fois plus : $2 \\times 18 = 36$ €. Or on paie 28 €.",
+        "Les 8 € d'inscription sont payés une seule fois, quel que soit le nombre de séances : ce sont des frais fixes. Le prix n'est **pas proportionnel** au nombre de séances. Réponse b."
+      ],
+      "hint": "Calcule ce que l'on paie pour 2 séances, puis pour 4 séances. Le prix a-t-il doublé ?",
+      "estimated_duration_s": 100,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 3, classe de 6e, La proportionnalité : identifier si une situation relève du « modèle » de la proportionnalité."
+    },
+    {
+      "id": "EX-E030-E-02",
+      "skill_id": "E030",
+      "level": "entrainement",
+      "type": "vrai_faux",
+      "statement": "Un magasin vend la bouteille d'eau 0,80 € à l'unité, et le pack de 6 de ces bouteilles 3 €.\n\nVrai ou faux : le prix payé est proportionnel au nombre de bouteilles achetées.",
+      "image": null,
+      "answer": {
+        "value": false
+      },
+      "solution_steps": [
+        "Si le prix était proportionnel, 6 bouteilles coûteraient 6 fois le prix d'une bouteille : $6 \\times 0{,}80 = 4{,}80$, soit 4,80 €.",
+        "Or le pack de 6 bouteilles coûte 3 €, et non 4,80 €.",
+        "Autre façon de le voir : dans le pack, une bouteille revient à $3 \\div 6 = 0{,}50$, soit 0,50 €, contre 0,80 € à l'unité. Le prix pour une bouteille n'est pas le même.",
+        "Le prix payé n'est donc **pas proportionnel** au nombre de bouteilles : le pack est une promotion. C'est **faux**."
+      ],
+      "hint": "Combien coûteraient 6 bouteilles achetées une par une ? Compare avec le prix du pack.",
+      "estimated_duration_s": 90,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 3, classe de 6e, La proportionnalité : identifier si une situation relève du « modèle » de la proportionnalité."
+    },
+    {
+      "id": "EX-E030-M-01",
+      "skill_id": "E030",
+      "level": "maitrise",
+      "type": "qcm",
+      "statement": "Laquelle de ces situations est une situation de proportionnalité ?",
+      "image": null,
+      "choices": [
+        {
+          "key": "a",
+          "text": "La taille d'un enfant et son âge.",
+          "misconception": "L'élève pense que si l'âge double, la taille double. Or un enfant de 10 ans ne mesure pas 2 fois plus qu'à 5 ans : sa croissance ralentit."
+        },
+        {
+          "key": "b",
+          "text": "Le prix d'une course de taxi : 4 € au départ, puis 2 € par kilomètre.",
+          "misconception": "L'élève ne voit que le prix par kilomètre et oublie les 4 € payés au départ : 10 km coûtent 24 €, mais 20 km coûtent 44 €, pas 48 €."
+        },
+        {
+          "key": "c",
+          "text": "Le prix d'entrées à la piscine à 4 € l'entrée, la cinquième entrée étant offerte.",
+          "misconception": "L'élève voit un prix par entrée et oublie la promotion : 4 entrées coûtent 16 €, et 5 entrées coûtent 16 € elles aussi, et non 20 €."
+        },
+        {
+          "key": "d",
+          "text": "La longueur de tissu achetée et le prix payé, quand le tissu est vendu 6 € le mètre.",
+          "misconception": null
+        }
+      ],
+      "answer": {
+        "value": "d"
+      },
+      "solution_steps": [
+        "Deux grandeurs sont proportionnelles quand la quantité pour une unité reste la même, quelle que soit la quantité.",
+        "Tissu : chaque mètre coûte 6 €, que l'on achète 1 m ou 10 m. 2 fois plus de tissu coûte 2 fois plus cher : c'est une situation de proportionnalité.",
+        "Taxi : les 4 € du départ sont payés une seule fois. 10 km coûtent $4 + 10 \\times 2 = 24$ €, 20 km coûtent $4 + 20 \\times 2 = 44$ €, et non $2 \\times 24 = 48$ €.",
+        "Piscine : 4 entrées coûtent $4 \\times 4 = 16$ €, et 5 entrées coûtent 16 € elles aussi grâce à l'entrée offerte. Le prix pour une entrée change.",
+        "Taille et âge : un enfant ne grandit pas de la même longueur chaque année, et sa taille ne double pas quand son âge double.",
+        "Réponse d."
+      ],
+      "hint": "Pour chaque situation, demande-toi : si je double la première grandeur, la seconde double-t-elle ?",
+      "estimated_duration_s": 120,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 3, classe de 6e, La proportionnalité : identifier si une situation relève du « modèle » de la proportionnalité."
+    },
+    {
+      "id": "EX-E030-M-02",
+      "skill_id": "E030",
+      "level": "maitrise",
+      "type": "numerique",
+      "statement": "Sur un étal, les pommes de terre sont vendues en sacs : 7 € le sac de 4 kg, 16 € le sac de 10 kg.\n\nSi le prix était proportionnel à la masse, avec le même prix au kilo que le petit sac, combien coûterait le sac de 10 kg, en euros ?",
+      "image": null,
+      "answer": {
+        "value": 17.5,
+        "unit": "€",
+        "accepted": [
+          "17,50",
+          "17,5 €",
+          "17,50 €"
+        ]
+      },
+      "solution_steps": [
+        "On ne passe pas de 4 kg à 10 kg en multipliant par un nombre entier : on cherche d'abord le prix d'une masse plus petite.",
+        "2 kg, c'est 2 fois moins que 4 kg : avec un prix proportionnel, 2 kg coûteraient $7 \\div 2 = 3{,}50$, soit 3,50 €.",
+        "10 kg, c'est 5 fois 2 kg : le sac de 10 kg coûterait $5 \\times 3{,}50 = 17{,}50$, soit **17,50 €**.",
+        "Autre méthode, en ajoutant : 10 kg, c'est 4 kg, plus 4 kg, plus 2 kg. Le prix serait $7 + 7 + 3{,}50 = 17{,}50$ €.",
+        "Le vendeur demande 16 € et non 17,50 € : le grand sac est moins cher au kilo. Le prix réel n'est donc pas proportionnel à la masse."
+      ],
+      "hint": "Quel serait le prix de 2 kg ? Combien de fois 2 kg y a-t-il dans 10 kg ?",
+      "estimated_duration_s": 150,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 3, classe de 6e, La proportionnalité : identifier si une situation relève du « modèle » de la proportionnalité."
+    },
+    {
+      "id": "EX-E031-D-01",
+      "skill_id": "E031",
+      "level": "decouverte",
+      "type": "numerique",
+      "statement": "5 classeurs identiques coûtent 9,50 €.\n\nCalcule d'abord le prix d'un classeur. Combien coûtent 4 de ces classeurs, en euros ?",
+      "image": null,
+      "answer": {
+        "value": 7.6,
+        "unit": "€",
+        "accepted": [
+          "7,60",
+          "7,6 €",
+          "7,60 €"
+        ]
+      },
+      "solution_steps": [
+        "On ne passe pas de 5 classeurs à 4 classeurs en multipliant par un nombre entier : on passe par le prix d'un classeur.",
+        "1 classeur coûte 5 fois moins que 5 classeurs : $9{,}50 \\div 5 = 1{,}90$, soit 1,90 € le classeur.",
+        "4 classeurs coûtent 4 fois plus qu'un classeur : $4 \\times 1{,}90 = 7{,}60$, soit **7,60 €**.",
+        "Contrôle : 4 classeurs, c'est un classeur de moins que 5 : $9{,}50 - 1{,}90 = 7{,}60$."
+      ],
+      "hint": "Combien coûte un seul classeur ? Divise le prix par le nombre de classeurs.",
+      "estimated_duration_s": 75,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 3, classe de 6e, La proportionnalité : résoudre un problème de proportionnalité en choisissant une procédure adaptée : propriété de linéarité pour la multiplication ou l'addition, retour à l'unité."
+    },
+    {
+      "id": "EX-E031-D-02",
+      "skill_id": "E031",
+      "level": "decouverte",
+      "type": "qcm",
+      "statement": "Une recette de soupe pour 6 personnes demande 1 200 g de légumes.\n\nQuelle masse de légumes faut-il pour 5 personnes ?",
+      "image": null,
+      "choices": [
+        {
+          "key": "a",
+          "text": "200 g",
+          "misconception": "L'élève calcule la masse pour une personne, 1 200 ÷ 6 = 200, et s'arrête là : il oublie de multiplier par 5."
+        },
+        {
+          "key": "b",
+          "text": "240 g",
+          "misconception": "L'élève divise 1 200 par 5, le nombre de personnes demandé, au lieu de diviser par 6, le nombre de personnes de la recette : 1 200 ÷ 5 = 240."
+        },
+        {
+          "key": "c",
+          "text": "6 000 g",
+          "misconception": "L'élève multiplie la masse de la recette par 5 sans passer par une personne : 1 200 × 5 = 6 000. Il obtient la masse pour 30 personnes."
+        },
+        {
+          "key": "d",
+          "text": "1 000 g",
+          "misconception": null
+        }
+      ],
+      "answer": {
+        "value": "d"
+      },
+      "solution_steps": [
+        "On ne passe pas de 6 personnes à 5 personnes en multipliant par un nombre entier : on cherche la masse pour une personne.",
+        "Pour 1 personne, il faut 6 fois moins de légumes : $1\\,200 \\div 6 = 200$, soit 200 g.",
+        "Pour 5 personnes, il en faut 5 fois plus : $5 \\times 200 = 1\\,000$, soit **1 000 g**. Réponse d.",
+        "Contrôle : pour une personne de moins, il faut 200 g de moins, et $1\\,200 - 200 = 1\\,000$."
+      ],
+      "hint": "Quelle masse de légumes faut-il pour une seule personne ?",
+      "estimated_duration_s": 75,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 3, classe de 6e, La proportionnalité : résoudre un problème de proportionnalité en choisissant une procédure adaptée : propriété de linéarité pour la multiplication ou l'addition, retour à l'unité."
+    },
+    {
+      "id": "EX-E031-E-01",
+      "skill_id": "E031",
+      "level": "entrainement",
+      "type": "numerique",
+      "statement": "8 m de corde coûtent 13,60 €.\n\nCombien coûtent 5 m de cette corde, en euros ?",
+      "image": null,
+      "answer": {
+        "value": 8.5,
+        "unit": "€",
+        "accepted": [
+          "8,50",
+          "8,5 €",
+          "8,50 €"
+        ]
+      },
+      "solution_steps": [
+        "On ne passe pas de 8 m à 5 m en multipliant par un nombre entier : on passe par le prix d'un mètre.",
+        "Prix d'un mètre : $13{,}60 \\div 8 = 1{,}70$, soit 1,70 € le mètre.",
+        "Prix de 5 m : $5 \\times 1{,}70 = 8{,}50$, soit **8,50 €**.",
+        "Contrôle : 4 m, la moitié de 8 m, coûtent $13{,}60 \\div 2 = 6{,}80$ €. 5 m coûtent un peu plus, et 8,50 € est bien un peu plus que 6,80 €."
+      ],
+      "hint": "Commence par le prix d'un mètre de corde.",
+      "estimated_duration_s": 90,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 3, classe de 6e, La proportionnalité : résoudre un problème de proportionnalité en choisissant une procédure adaptée : propriété de linéarité pour la multiplication ou l'addition, retour à l'unité."
+    },
+    {
+      "id": "EX-E031-E-02",
+      "skill_id": "E031",
+      "level": "entrainement",
+      "type": "vrai_faux",
+      "statement": "12 croissants coûtent 10,80 €. Nadia cherche le prix de 36 croissants. Elle dit : « 36 croissants, c'est 3 fois plus que 12 croissants, donc je paierai 3 fois plus, soit 32,40 €. Pas besoin du prix d'un croissant. »\n\nNadia a-t-elle raison ?",
+      "image": null,
+      "answer": {
+        "value": true
+      },
+      "solution_steps": [
+        "$3 \\times 12 = 36$ : 36 croissants, c'est bien 3 fois plus que 12 croissants.",
+        "Le prix est proportionnel au nombre de croissants : 3 fois plus de croissants coûtent 3 fois plus cher. $3 \\times 10{,}80 = 32{,}40$, soit 32,40 €.",
+        "Nadia a choisi la procédure adaptée aux nombres : passer par le prix d'un croissant obligerait à diviser 10,80 € par 12, un calcul plus long et inutile ici.",
+        "C'est **vrai**."
+      ],
+      "hint": "Combien de fois 12 croissants y a-t-il dans 36 croissants ?",
+      "estimated_duration_s": 75,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 3, classe de 6e, La proportionnalité : résoudre un problème de proportionnalité en choisissant une procédure adaptée : propriété de linéarité pour la multiplication ou l'addition, retour à l'unité."
+    },
+    {
+      "id": "EX-E031-M-01",
+      "skill_id": "E031",
+      "level": "maitrise",
+      "type": "numerique",
+      "statement": "Pour 6 personnes, il faut 750 g de pâtes.\n\nQuelle masse de pâtes faut-il pour 15 personnes, en grammes ?",
+      "image": null,
+      "answer": {
+        "value": 1875,
+        "unit": "g",
+        "accepted": [
+          "1 875",
+          "1875 g",
+          "1 875 g"
+        ]
+      },
+      "solution_steps": [
+        "On ne passe pas de 6 à 15 personnes en multipliant par un nombre entier. Deux procédures sont possibles.",
+        "Passage par l'unité : pour 1 personne, $750 \\div 6 = 125$, soit 125 g ; pour 15 personnes, $15 \\times 125 = 1\\,875$, soit 1 875 g.",
+        "Linéarité : pour 3 personnes, 2 fois moins que pour 6, il faut $750 \\div 2 = 375$ g. 15 personnes, c'est 5 fois 3 personnes : $5 \\times 375 = 1\\,875$ g.",
+        "Les deux procédures donnent **1 875 g**. Contrôle : 15 personnes, c'est un peu plus que 2 fois 6 personnes, et 1 875 g est un peu plus que $2 \\times 750 = 1\\,500$ g."
+      ],
+      "hint": "Cherche la masse de pâtes pour 1 personne, ou pour 3 personnes.",
+      "estimated_duration_s": 120,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 3, classe de 6e, La proportionnalité : résoudre un problème de proportionnalité en choisissant une procédure adaptée : propriété de linéarité pour la multiplication ou l'addition, retour à l'unité."
+    },
+    {
+      "id": "EX-E031-M-02",
+      "skill_id": "E031",
+      "level": "maitrise",
+      "type": "numerique",
+      "statement": "3 melons identiques coûtent 7,50 €. Lou a 22 €.\n\nCombien de melons peut-elle acheter au maximum ?",
+      "image": null,
+      "answer": {
+        "value": 8,
+        "unit": null,
+        "accepted": [
+          "8 melons"
+        ]
+      },
+      "solution_steps": [
+        "Prix d'un melon : $7{,}50 \\div 3 = 2{,}50$, soit 2,50 € le melon.",
+        "Pour compter plus facilement, on groupe les melons par 2 : 2 melons coûtent $2 \\times 2{,}50 = 5$, soit 5 €, un prix rond.",
+        "Combien de fois 5 € dans 22 € ? $4 \\times 5 = 20$ et $5 \\times 5 = 25$ : 4 fois, et il reste $22 - 20 = 2$ €. Avec 20 €, Lou achète 4 fois 2 melons, soit 8 melons.",
+        "Les 2 € qui restent ne suffisent pas pour un melon de plus, qui coûte 2,50 € : 9 melons coûteraient $9 \\times 2{,}50 = 22{,}50$ €, plus que 22 €.",
+        "Lou peut acheter au maximum **8 melons**."
+      ],
+      "hint": "Combien coûte un melon ? Et 2 melons ?",
+      "estimated_duration_s": 150,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 3, classe de 6e, La proportionnalité : résoudre un problème de proportionnalité en choisissant une procédure adaptée : propriété de linéarité pour la multiplication ou l'addition, retour à l'unité."
+    },
+    {
+      "id": "EX-E032-D-01",
+      "skill_id": "E032",
+      "level": "decouverte",
+      "type": "texte",
+      "statement": "Sur une affiche, on lit : « 40 % des places sont réservées aux abonnés. »\n\nLe symbole % se lit « pour cent », c'est-à-dire « sur 100 ». Écris 40 % sous la forme d'une fraction de dénominateur 100. Écris ta réponse sous la forme numérateur/dénominateur.",
+      "image": null,
+      "answer": {
+        "value": "40/100",
+        "accepted": [
+          "40 / 100"
+        ]
+      },
+      "solution_steps": [
+        "Le symbole % se lit « pour cent », c'est-à-dire « pour 100 » : 40 % signifie 40 places sur 100 places.",
+        "Sur 100 places, 40 sont réservées aux abonnés : c'est la fraction $\\frac{40}{100}$ des places. Le numérateur est le nombre écrit devant le symbole %, le dénominateur est toujours 100.",
+        "Donc $40\\,\\% = \\frac{40}{100}$. Cette fraction, c'est 40 centièmes : avec une virgule, elle s'écrit 0,40, ou 0,4."
+      ],
+      "hint": "« Pour cent » veut dire « sur 100 » : quel est le dénominateur ?",
+      "estimated_duration_s": 45,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 3, 6e : connaître la définition d'un pourcentage ; associer et utiliser différentes écritures d'un nombre décimal : écriture à virgule, fraction, nombre mixte, pourcentage."
+    },
+    {
+      "id": "EX-E032-D-02",
+      "skill_id": "E032",
+      "level": "decouverte",
+      "type": "qcm",
+      "statement": "La jauge de batterie d'une tablette affiche 50 %.\n\n50 %, c'est 50 pour 100. Quelle part de la batterie est chargée ?",
+      "image": null,
+      "choices": [
+        {
+          "key": "a",
+          "text": "Un cinquième de la batterie",
+          "misconception": "L'élève associe le 5 de 50 au mot « cinquième ». Or un cinquième, c'est 20 parts sur 100, soit 20 %."
+        },
+        {
+          "key": "b",
+          "text": "La moitié de la batterie",
+          "misconception": null
+        },
+        {
+          "key": "c",
+          "text": "Un cinquantième de la batterie",
+          "misconception": "L'élève lit 50 % comme « 1 sur 50 » : il prend le nombre écrit devant % pour le dénominateur. Or le dénominateur d'un pourcentage est toujours 100."
+        }
+      ],
+      "answer": {
+        "value": "b"
+      },
+      "solution_steps": [
+        "50 % signifie 50 pour 100 : la fraction $\\frac{50}{100}$ de la batterie.",
+        "Sur 100 parts, 50 sont chargées. Or $100 = 2 \\times 50$ : 50 parts sur 100, c'est 1 part sur 2, $\\frac{50}{100} = \\frac{1}{2}$.",
+        "À retenir : 50 % = un demi = 0,5. La bonne réponse est b."
+      ],
+      "hint": "Sur 100 parts, combien sont chargées ? Compare ce nombre à 100.",
+      "estimated_duration_s": 45,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 3, 6e : connaître la définition d'un pourcentage ; associer et utiliser différentes écritures d'un nombre décimal : écriture à virgule, fraction, nombre mixte, pourcentage."
+    },
+    {
+      "id": "EX-E032-E-01",
+      "skill_id": "E032",
+      "level": "entrainement",
+      "type": "numerique",
+      "statement": "Sur l'étiquette d'une boisson, on lit : 8 % de sucre. Cela signifie 8 g de sucre pour 100 g de boisson.\n\nÉcris 8 % comme un nombre à virgule.",
+      "image": null,
+      "answer": {
+        "value": 0.08,
+        "accepted": [
+          "0,08"
+        ]
+      },
+      "solution_steps": [
+        "8 % signifie 8 pour 100 : $8\\,\\% = \\frac{8}{100}$, c'est-à-dire 8 centièmes.",
+        "Avec une virgule, les centièmes occupent le deuxième rang après la virgule. 8 centièmes, c'est 0 unité, 0 dixième et 8 centièmes : 0,08.",
+        "Attention : 0,8, c'est 8 dixièmes, soit 80 centièmes, donc 80 %, dix fois trop. Le 0 des dixièmes doit rester écrit : $8\\,\\% = 0{,}08$."
+      ],
+      "hint": "8 %, c'est 8 centièmes. À quel rang se placent les centièmes après la virgule ?",
+      "estimated_duration_s": 60,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 3, 6e : connaître la définition d'un pourcentage ; associer et utiliser différentes écritures d'un nombre décimal : écriture à virgule, fraction, nombre mixte, pourcentage."
+    },
+    {
+      "id": "EX-E032-E-02",
+      "skill_id": "E032",
+      "level": "entrainement",
+      "type": "qcm",
+      "statement": "Une pizza est coupée en 4 parts égales. Chloé en mange une, c'est-à-dire un quart de la pizza.\n\nQuel pourcentage de la pizza a-t-elle mangé ?",
+      "image": null,
+      "choices": [
+        {
+          "key": "a",
+          "text": "4 %",
+          "misconception": "L'élève reprend le dénominateur de $\\frac{1}{4}$ comme pourcentage. Or 4 %, c'est 4 parts sur 100, bien moins qu'un quart."
+        },
+        {
+          "key": "b",
+          "text": "40 %",
+          "misconception": "L'élève écrit $\\frac{1}{4}$ comme 0,4 en plaçant le dénominateur après la virgule, puis lit 0,4 comme 40 %. Or 0,4, c'est $\\frac{4}{10}$, pas $\\frac{1}{4}$."
+        },
+        {
+          "key": "c",
+          "text": "25 %",
+          "misconception": null
+        }
+      ],
+      "answer": {
+        "value": "c"
+      },
+      "solution_steps": [
+        "Un pourcentage s'écrit avec le dénominateur 100. On cherche donc une fraction égale à $\\frac{1}{4}$ dont le dénominateur est 100.",
+        "$100 = 4 \\times 25$ : on multiplie le numérateur et le dénominateur par 25, $\\frac{1}{4} = \\frac{1 \\times 25}{4 \\times 25} = \\frac{25}{100}$.",
+        "Avec la pizza : si on la coupait en 100 petits morceaux, chacune des 4 parts en contiendrait 25.",
+        "$\\frac{25}{100} = 25\\,\\%$. À retenir : un quart = 25 %, un demi = 50 %. La bonne réponse est c."
+      ],
+      "hint": "Cherche une fraction égale à $\\frac{1}{4}$ dont le dénominateur est 100.",
+      "estimated_duration_s": 60,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 3, 6e : connaître la définition d'un pourcentage ; associer et utiliser différentes écritures d'un nombre décimal : écriture à virgule, fraction, nombre mixte, pourcentage."
+    },
+    {
+      "id": "EX-E032-M-01",
+      "skill_id": "E032",
+      "level": "maitrise",
+      "type": "vrai_faux",
+      "statement": "Léo affirme : « 0,7, c'est 7 %, puisque le chiffre après la virgule est un 7. »\n\nLéo a-t-il raison ?",
+      "image": null,
+      "answer": {
+        "value": false
+      },
+      "solution_steps": [
+        "Dans 0,7, le 7 est le chiffre des dixièmes : 0,7, c'est 7 dixièmes, $\\frac{7}{10}$.",
+        "Un pourcentage compte des centièmes. 1 dixième vaut 10 centièmes, donc 7 dixièmes valent 70 centièmes : $0{,}7 = \\frac{7}{10} = \\frac{70}{100}$.",
+        "Donc 0,7 = 70 %. 7 %, c'est 7 centièmes, soit 0,07 : dix fois moins. Léo a tort : il a lu le chiffre des dixièmes comme s'il comptait des centièmes."
+      ],
+      "hint": "Dans 0,7, le 7 compte-t-il des dixièmes ou des centièmes ?",
+      "estimated_duration_s": 60,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 3, 6e : connaître la définition d'un pourcentage ; associer et utiliser différentes écritures d'un nombre décimal : écriture à virgule, fraction, nombre mixte, pourcentage."
+    },
+    {
+      "id": "EX-E032-M-02",
+      "skill_id": "E032",
+      "level": "maitrise",
+      "type": "qcm",
+      "statement": "Trois élèves indiquent la part de leur trajet faite à vélo : Ana écrit 0,4 ; Bilal écrit 9 % ; Chloé écrit 35 %.\n\nQui fait la plus grande part de son trajet à vélo ?",
+      "image": null,
+      "choices": [
+        {
+          "key": "a",
+          "text": "Ana (0,4)",
+          "misconception": null
+        },
+        {
+          "key": "b",
+          "text": "Chloé (35 %)",
+          "misconception": "L'élève lit 0,4 comme 4 % : il prend le chiffre des dixièmes pour des centièmes, puis compare 4, 9 et 35. Or 0,4 = 40 %."
+        },
+        {
+          "key": "c",
+          "text": "Bilal (9 %)",
+          "misconception": "L'élève écrit 9 % comme 0,9 en plaçant le 9 juste après la virgule, puis trouve 0,9 plus grand que 0,4 et 0,35. Or 9 % = 0,09."
+        }
+      ],
+      "answer": {
+        "value": "a"
+      },
+      "solution_steps": [
+        "Les trois parts ne sont pas écrites de la même façon. Pour les comparer, on les écrit toutes en centièmes, donc en pourcentages.",
+        "Ana : 0,4, c'est 4 dixièmes, soit 40 centièmes : $0{,}4 = \\frac{40}{100} = 40\\,\\%$.",
+        "Bilal : 9 %, c'est 9 centièmes. Chloé : 35 %, c'est 35 centièmes.",
+        "On compare 40, 9 et 35 centièmes : 40 est le plus grand. C'est Ana qui fait la plus grande part de son trajet à vélo. La bonne réponse est a."
+      ],
+      "hint": "Écris 0,4 en centièmes avant de comparer.",
+      "estimated_duration_s": 75,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 3, 6e : connaître la définition d'un pourcentage ; associer et utiliser différentes écritures d'un nombre décimal : écriture à virgule, fraction, nombre mixte, pourcentage."
+    },
+    {
+      "id": "EX-E033-D-01",
+      "skill_id": "E033",
+      "level": "decouverte",
+      "type": "numerique",
+      "statement": "À l'entraînement, Inès tire 10 penaltys et en réussit 7.\n\nQuelle proportion de ses tirs a-t-elle réussie ? Exprime-la en pourcentage.",
+      "image": null,
+      "answer": {
+        "value": 70,
+        "unit": "%",
+        "accepted": [
+          "70 %"
+        ]
+      },
+      "solution_steps": [
+        "Inès réussit 7 tirs sur 10 : la proportion de tirs réussis est $\\frac{7}{10}$.",
+        "Un pourcentage est une proportion sur 100. Pour passer de 10 tirs à 100 tirs, on multiplie par 10 ; on multiplie aussi les tirs réussis par 10 : $\\frac{7}{10} = \\frac{7 \\times 10}{10 \\times 10} = \\frac{70}{100}$.",
+        "Sur 100 tirs, en réussissant de la même façon, elle en réussirait 70 : c'est 70 pour 100, soit **70 %**."
+      ],
+      "hint": "Combien de tirs réussirait-elle sur 100 tirs, en réussissant de la même façon ?",
+      "estimated_duration_s": 60,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 3, 6e : calculer une proportion (rapport entre une partie et le tout) et l'exprimer sous forme de pourcentage dans des cas simples."
+    },
+    {
+      "id": "EX-E033-D-02",
+      "skill_id": "E033",
+      "level": "decouverte",
+      "type": "qcm",
+      "statement": "Un sachet contient 50 bonbons, dont 9 à la menthe.\n\nQuel pourcentage des bonbons est à la menthe ?",
+      "image": null,
+      "choices": [
+        {
+          "key": "a",
+          "text": "9 %",
+          "misconception": "L'élève prend le nombre de bonbons à la menthe pour le pourcentage, comme si le sachet en contenait 100. Or il n'en contient que 50."
+        },
+        {
+          "key": "b",
+          "text": "18 %",
+          "misconception": null
+        },
+        {
+          "key": "c",
+          "text": "59 %",
+          "misconception": "L'élève passe de 50 à 100 en ajoutant 50, et ajoute aussi 50 aux bonbons à la menthe : 9 + 50 = 59. Pour passer de 50 à 100, il faut multiplier par 2, et multiplier aussi le nombre de bonbons à la menthe par 2."
+        }
+      ],
+      "answer": {
+        "value": "b"
+      },
+      "solution_steps": [
+        "La proportion de bonbons à la menthe est $\\frac{9}{50}$ : 9 sur 50.",
+        "Pour un pourcentage, on veut le dénominateur 100. $100 = 50 \\times 2$ : on multiplie le numérateur et le dénominateur par 2, $\\frac{9}{50} = \\frac{18}{100}$.",
+        "Avec deux sachets, on aurait 100 bonbons, dont 18 à la menthe. C'est 18 pour 100, soit 18 %. La bonne réponse est b."
+      ],
+      "hint": "Imagine deux sachets identiques : combien de bonbons en tout, et combien à la menthe ?",
+      "estimated_duration_s": 60,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 3, 6e : calculer une proportion (rapport entre une partie et le tout) et l'exprimer sous forme de pourcentage dans des cas simples."
+    },
+    {
+      "id": "EX-E033-E-01",
+      "skill_id": "E033",
+      "level": "entrainement",
+      "type": "numerique",
+      "statement": "Une équipe de handball a joué 20 matchs cette saison et en a gagné 13.\n\nQuel pourcentage de ses matchs a-t-elle gagné ?",
+      "image": null,
+      "answer": {
+        "value": 65,
+        "unit": "%",
+        "accepted": [
+          "65 %"
+        ]
+      },
+      "solution_steps": [
+        "Proportion de matchs gagnés : $\\frac{13}{20}$, 13 matchs sur 20.",
+        "$100 = 20 \\times 5$ : on multiplie le numérateur et le dénominateur par 5, $\\frac{13}{20} = \\frac{13 \\times 5}{20 \\times 5} = \\frac{65}{100}$.",
+        "65 pour 100, soit **65 %**. Contrôle : 13 matchs, c'est un peu plus que la moitié des 20 matchs (la moitié serait 10), et 65 % est un peu plus que 50 %."
+      ],
+      "hint": "Par combien faut-il multiplier 20 pour obtenir 100 ?",
+      "estimated_duration_s": 75,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 3, 6e : calculer une proportion (rapport entre une partie et le tout) et l'exprimer sous forme de pourcentage dans des cas simples."
+    },
+    {
+      "id": "EX-E033-E-02",
+      "skill_id": "E033",
+      "level": "entrainement",
+      "type": "qcm",
+      "statement": "Un collège compte 200 élèves. 46 d'entre eux chantent dans la chorale.\n\nQuel pourcentage des élèves chante dans la chorale ?",
+      "image": null,
+      "choices": [
+        {
+          "key": "a",
+          "text": "23 %",
+          "misconception": null
+        },
+        {
+          "key": "b",
+          "text": "46 %",
+          "misconception": "L'élève prend l'effectif de la chorale pour le pourcentage, sans tenir compte du total. 46 élèves sur 100 donneraient 46 %, mais ici le total est 200."
+        },
+        {
+          "key": "c",
+          "text": "92 %",
+          "misconception": "L'élève sait qu'il faut ramener le total à 100, mais multiplie par 2 au lieu de diviser : 200 est plus grand que 100, il faut diviser par 2."
+        }
+      ],
+      "answer": {
+        "value": "a"
+      },
+      "solution_steps": [
+        "Proportion de choristes : $\\frac{46}{200}$.",
+        "Ici le total, 200, est plus grand que 100 : $200 = 100 \\times 2$. On divise donc le numérateur et le dénominateur par 2 : $\\frac{46}{200} = \\frac{23}{100}$.",
+        "Dans chaque moitié de 100 élèves, il y aurait 23 choristes : c'est 23 pour 100, soit 23 %.",
+        "Contrôle : 46 est moins que le quart de 200, qui vaut 50 ; le pourcentage doit donc être plus petit que 25 %. La bonne réponse est a."
+      ],
+      "hint": "Partage le collège en deux moitiés de 100 élèves : combien de choristes dans chaque moitié ?",
+      "estimated_duration_s": 75,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 3, 6e : calculer une proportion (rapport entre une partie et le tout) et l'exprimer sous forme de pourcentage dans des cas simples."
+    },
+    {
+      "id": "EX-E033-M-01",
+      "skill_id": "E033",
+      "level": "maitrise",
+      "type": "vrai_faux",
+      "statement": "Noa a réussi 4 tirs sur 5, Lou 17 tirs sur 20. Noa affirme : « J'ai le meilleur pourcentage de réussite : je n'ai raté qu'un tir, Lou en a raté 3. »\n\nNoa a-t-il raison ?",
+      "image": null,
+      "answer": {
+        "value": false
+      },
+      "solution_steps": [
+        "Comparer les tirs ratés ne suffit pas : Noa et Lou n'ont pas tiré le même nombre de fois. On compare des pourcentages, c'est-à-dire des proportions ramenées sur 100.",
+        "Noa : $\\frac{4}{5} = \\frac{4 \\times 20}{5 \\times 20} = \\frac{80}{100}$, soit 80 %.",
+        "Lou : $\\frac{17}{20} = \\frac{17 \\times 5}{20 \\times 5} = \\frac{85}{100}$, soit 85 %.",
+        "85 % est plus grand que 80 % : c'est Lou qui a le meilleur pourcentage. Sur 100 tirs, Noa en raterait 20 et Lou 15. Noa a tort."
+      ],
+      "hint": "Ramène les deux proportions sur 100 avant de comparer.",
+      "estimated_duration_s": 90,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 3, 6e : calculer une proportion (rapport entre une partie et le tout) et l'exprimer sous forme de pourcentage dans des cas simples."
+    },
+    {
+      "id": "EX-E033-M-02",
+      "skill_id": "E033",
+      "level": "maitrise",
+      "type": "numerique",
+      "statement": "Un car transporte 50 passagers : 34 adultes, les autres sont des enfants.\n\nQuel pourcentage des passagers sont des enfants ?",
+      "image": null,
+      "answer": {
+        "value": 32,
+        "unit": "%",
+        "accepted": [
+          "32 %"
+        ]
+      },
+      "solution_steps": [
+        "On cherche d'abord le nombre d'enfants : $50 - 34 = 16$ enfants.",
+        "Proportion d'enfants : $\\frac{16}{50}$. Avec $100 = 50 \\times 2$ : $\\frac{16}{50} = \\frac{32}{100}$, soit **32 %**.",
+        "Attention au piège : 34 adultes sur 50, c'est $\\frac{68}{100}$, soit 68 % ; c'est le pourcentage d'adultes, pas celui des enfants.",
+        "Contrôle : adultes et enfants forment tous les passagers, et 68 % + 32 % = 100 %."
+      ],
+      "hint": "Combien y a-t-il d'enfants dans le car ?",
+      "estimated_duration_s": 90,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 3, 6e : calculer une proportion (rapport entre une partie et le tout) et l'exprimer sous forme de pourcentage dans des cas simples."
+    },
+    {
+      "id": "EX-E034-D-01",
+      "skill_id": "E034",
+      "level": "decouverte",
+      "type": "numerique",
+      "statement": "Au marché, les clémentines sont vendues au kilogramme. Voici ce que paient trois clients.\n\nMasse (kg) : 2 ; 3 ; 5.\nPrix (€) : 5,60 ; 8,40 ; 14.\n\nChaque prix s'obtient en multipliant la masse par un même nombre : c'est le coefficient de proportionnalité. Quel est ce nombre ?",
+      "image": null,
+      "answer": {
+        "value": 2.8,
+        "accepted": [
+          "2,8",
+          "2,80"
+        ],
+        "unit": null
+      },
+      "solution_steps": [
+        "Le coefficient est le nombre par lequel on multiplie la masse (en kg) pour obtenir le prix (en €). On le cherche avec une colonne : pour 2 kg, on paie 5,60 €, donc on cherche le nombre qui, multiplié par 2, donne 5,60. C'est $5{,}6 \\div 2 = 2{,}8$.",
+        "On vérifie sur les autres colonnes : $3 \\times 2{,}8 = 8{,}4$ et $5 \\times 2{,}8 = 14$. On retrouve bien les prix 8,40 € et 14 €.",
+        "Le coefficient est **2,8**. C'est le prix d'un kilogramme de clémentines, 2,80 € : en 6e, on l'appelait la valeur pour une unité. Prix (en €) = masse (en kg) × 2,8."
+      ],
+      "hint": "Combien coûte 1 kg de clémentines ?",
+      "estimated_duration_s": 90,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 4, classe de 5e : « Utiliser un coefficient de proportionnalité dans des contextes concrets (prix unitaire, vitesse moyenne, échelle, etc.). »"
+    },
+    {
+      "id": "EX-E034-D-02",
+      "skill_id": "E034",
+      "level": "decouverte",
+      "type": "vrai_faux",
+      "statement": "Une boulangerie vend des pains au chocolat, tous au même prix.\n\nNombre de pains au chocolat : 4 ; 6 ; 10.\nPrix (€) : 6 ; 9 ; 15.\n\nLéo affirme : « Le coefficient de proportionnalité est 2, car $4 + 2 = 6$. »",
+      "image": null,
+      "answer": {
+        "value": false
+      },
+      "solution_steps": [
+        "Un coefficient de proportionnalité est un nombre par lequel on **multiplie**, pas un nombre qu'on ajoute. Léo a trouvé 2 avec une addition : $4 + 2 = 6$.",
+        "Son idée ne marche pas pour la colonne suivante : $6 + 2 = 8$, alors que 6 pains au chocolat coûtent 9 €. Et même en multipliant, 2 ne convient pas : $4 \\times 2 = 8$, pas 6.",
+        "Le bon coefficient : $6 \\div 4 = 1{,}5$. On vérifie : $4 \\times 1{,}5 = 6$, $6 \\times 1{,}5 = 9$ et $10 \\times 1{,}5 = 15$. Un pain au chocolat coûte 1,50 €.",
+        "L'affirmation de Léo est **fausse** : le coefficient est 1,5."
+      ],
+      "hint": "Un coefficient sert à multiplier. Vérifie l'idée de Léo sur toutes les colonnes.",
+      "estimated_duration_s": 75,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 4, classe de 5e : « Utiliser un coefficient de proportionnalité dans des contextes concrets (prix unitaire, vitesse moyenne, échelle, etc.). »"
+    },
+    {
+      "id": "EX-E034-E-01",
+      "skill_id": "E034",
+      "level": "entrainement",
+      "type": "numerique",
+      "statement": "Un fil électrique est vendu au mètre. 6 m de ce fil pèsent 52,8 g.\n\nTrouve le coefficient qui permet de passer de la longueur (en m) à la masse (en g), puis calcule la masse de 3,5 m de fil.",
+      "image": null,
+      "answer": {
+        "value": 30.8,
+        "accepted": [
+          "30,8 g",
+          "30,8",
+          "30,80 g"
+        ],
+        "unit": "g"
+      },
+      "solution_steps": [
+        "La masse est proportionnelle à la longueur. Le coefficient est le nombre par lequel on multiplie la longueur (en m) pour obtenir la masse (en g) : $52{,}8 \\div 6 = 8{,}8$. Un mètre de fil pèse 8,8 g.",
+        "Pourquoi le coefficient ? Passer de 6 m à 3,5 m ne se fait ni par un double ni par une moitié : le coefficient, lui, marche pour n'importe quelle longueur.",
+        "Masse de 3,5 m : $3{,}5 \\times 8{,}8 = 30{,}8$. On pose $35 \\times 88 = 3\\,080$, puis on place la virgule : un chiffre après la virgule dans 3,5, un dans 8,8, donc deux dans le produit : 30,80, soit 30,8.",
+        "Contrôle : 3,5 m, c'est un peu plus que la moitié de 6 m, et la moitié de 52,8 g est $52{,}8 \\div 2 = 26{,}4$ g. 30,8 g est un peu plus : c'est cohérent. 3,5 m de fil pèsent **30,8 g**."
+      ],
+      "hint": "Commence par la masse d'un mètre de fil.",
+      "estimated_duration_s": 150,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 4, classe de 5e : « Utiliser un coefficient de proportionnalité dans des contextes concrets (prix unitaire, vitesse moyenne, échelle, etc.). »"
+    },
+    {
+      "id": "EX-E034-E-02",
+      "skill_id": "E034",
+      "level": "entrainement",
+      "type": "qcm",
+      "statement": "La maquette d'un voilier est construite à l'échelle : 1 cm sur la maquette représente 40 cm sur le vrai bateau. La coque de la maquette mesure 18,5 cm.\n\nPar quel nombre faut-il multiplier une longueur de la maquette pour obtenir la longueur réelle ? Utilise ce coefficient : quelle est la longueur réelle de la coque ?",
+      "image": null,
+      "choices": [
+        {
+          "key": "a",
+          "text": "58,5 cm",
+          "misconception": "L'élève ajoute 40 au lieu de multiplier par 40 : $18{,}5 + 40 = 58{,}5$. Il traite l'échelle comme un écart à ajouter, alors qu'elle dit que chaque centimètre de la maquette vaut 40 cm."
+        },
+        {
+          "key": "b",
+          "text": "74 cm",
+          "misconception": "L'élève oublie le 0 de 40 : il calcule $18{,}5 \\times 4 = 74$, c'est-à-dire qu'il multiplie par 4 au lieu de 40."
+        },
+        {
+          "key": "c",
+          "text": "740 cm",
+          "misconception": null
+        }
+      ],
+      "answer": {
+        "value": "c"
+      },
+      "solution_steps": [
+        "« 1 cm sur la maquette représente 40 cm en réalité » : chaque centimètre de la maquette correspond à 40 cm sur le bateau. Pour passer d'une longueur de la maquette à la longueur réelle, on multiplie par **40** : c'est le coefficient de proportionnalité, l'échelle écrite comme un coefficient.",
+        "Longueur réelle de la coque : $18{,}5 \\times 40 = 740$. On calcule d'abord $18{,}5 \\times 4 = 74$, puis on multiplie par 10 : 740.",
+        "Contrôle : le vrai bateau est bien plus grand que la maquette, environ $20 \\times 40 = 800$ cm. 740 cm convient ; 58,5 cm ferait un bateau à peine plus de trois fois plus long que la maquette. La bonne réponse est c."
+      ],
+      "hint": "Que représente 1 cm de la maquette ? Et 2 cm ?",
+      "estimated_duration_s": 120,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 4, classe de 5e : « Utiliser un coefficient de proportionnalité dans des contextes concrets (prix unitaire, vitesse moyenne, échelle, etc.). »"
+    },
+    {
+      "id": "EX-E034-M-01",
+      "skill_id": "E034",
+      "level": "maitrise",
+      "type": "numerique",
+      "statement": "Pour faire des crêpes, la masse de farine est proportionnelle au nombre de crêpes : il faut 100 g de farine pour 8 crêpes.\n\nMila a 275 g de farine. Cherche le coefficient qui permet de passer de la masse de farine (en g) au nombre de crêpes, puis calcule combien de crêpes elle peut faire.",
+      "image": null,
+      "answer": {
+        "value": 22,
+        "accepted": [
+          "22 crêpes",
+          "22"
+        ],
+        "unit": "crêpes"
+      },
+      "solution_steps": [
+        "On cherche le nombre par lequel on multiplie la masse de farine (en g) pour obtenir le nombre de crêpes. Avec 100 g on fait 8 crêpes : $8 \\div 100 = 0{,}08$. Le coefficient est 0,08 : chaque gramme de farine donne 0,08 crêpe.",
+        "Nombre de crêpes avec 275 g : $275 \\times 0{,}08 = 22$. On calcule $275 \\times 8 = 2\\,200$, puis on divise par 100 : 22.",
+        "Contrôle dans l'autre sens : pour passer du nombre de crêpes à la farine, le coefficient est $100 \\div 8 = 12{,}5$ (12,5 g par crêpe), et $22 \\times 12{,}5 = 275$.",
+        "Les deux coefficients vont en sens contraires : on multiplie par 12,5 pour aller des crêpes à la farine, par 0,08 pour revenir de la farine aux crêpes. Mila peut faire **22 crêpes**."
+      ],
+      "hint": "Combien de crêpes fait-on avec 1 g de farine ? Ce nombre est plus petit que 1.",
+      "estimated_duration_s": 180,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 4, classe de 5e : « Utiliser un coefficient de proportionnalité dans des contextes concrets (prix unitaire, vitesse moyenne, échelle, etc.). »"
+    },
+    {
+      "id": "EX-E034-M-02",
+      "skill_id": "E034",
+      "level": "maitrise",
+      "type": "qcm",
+      "statement": "Un magasin de bricolage vend du câble au mètre : 3 m coûtent 10 €.\n\nUtilise le coefficient qui permet de passer de la longueur (en m) au prix (en €) : combien coûtent 4,5 m de ce câble ?",
+      "image": null,
+      "choices": [
+        {
+          "key": "a",
+          "text": "15 €",
+          "misconception": null
+        },
+        {
+          "key": "b",
+          "text": "14,99 €",
+          "misconception": "L'élève calcule le coefficient $10 \\div 3$, qui ne tombe pas juste, l'arrondit à 3,33, puis calcule $4{,}5 \\times 3{,}33 = 14{,}985$, qu'il arrondit à 14,99 €. L'arrondi du coefficient a faussé le résultat."
+        },
+        {
+          "key": "c",
+          "text": "11,50 €",
+          "misconception": "L'élève ajoute le même nombre à la longueur et au prix : 4,5 m, c'est 1,5 m de plus que 3 m, il ajoute donc 1,50 € à 10 €. C'est le modèle additif, qui ne respecte pas la proportionnalité."
+        }
+      ],
+      "answer": {
+        "value": "a"
+      },
+      "solution_steps": [
+        "Le coefficient qui passe de la longueur (en m) au prix (en €) est $10 \\div 3$. Cette division ne tombe pas juste (3,333…) : on écrit le coefficient sous forme de fraction, $\\frac{10}{3}$, sans l'arrondir.",
+        "Multiplier par $\\frac{10}{3}$, c'est multiplier par 10 puis diviser par 3 : $4{,}5 \\times 10 = 45$, puis $45 \\div 3 = 15$.",
+        "Autre chemin : 4,5 m, c'est 3 m plus la moitié de 3 m. Le prix est donc 10 € plus la moitié de 10 €, soit $10 + 5 = 15$.",
+        "4,5 m de câble coûtent **15 €** : la bonne réponse est a. Avec un coefficient arrondi à 3,33, on trouverait environ 14,99 € : quand le coefficient ne tombe pas juste, on le garde en fraction."
+      ],
+      "hint": "10 ÷ 3 ne tombe pas juste. Comment écrire ce coefficient exactement, sans l'arrondir ?",
+      "estimated_duration_s": 150,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 4, classe de 5e : « Utiliser un coefficient de proportionnalité dans des contextes concrets (prix unitaire, vitesse moyenne, échelle, etc.). »"
+    },
+    {
+      "id": "EX-E035-D-01",
+      "skill_id": "E035",
+      "level": "decouverte",
+      "type": "vrai_faux",
+      "statement": "À la papeterie, Inès note le prix de cahiers identiques.\n\nNombre de cahiers : 2 ; 5 ; 7.\nPrix (€) : 3,60 ; 9 ; 12,60.\n\nPour chaque colonne, calcule le prix divisé par le nombre de cahiers.\n\nAffirmation : ce tableau est un tableau de proportionnalité.",
+      "image": null,
+      "answer": {
+        "value": true
+      },
+      "solution_steps": [
+        "Un tableau est un tableau de proportionnalité quand on obtient tous les nombres de la deuxième ligne en multipliant ceux de la première par un même nombre. Pour le vérifier, on calcule le quotient de chaque colonne.",
+        "$3{,}6 \\div 2 = 1{,}8$, $9 \\div 5 = 1{,}8$ et $12{,}6 \\div 7 = 1{,}8$.",
+        "Les trois quotients sont égaux : le tableau est un tableau de proportionnalité, de coefficient 1,8. Un cahier coûte 1,80 €. L'affirmation est **vraie**."
+      ],
+      "hint": "Divise chaque prix par le nombre de cahiers de sa colonne, puis compare.",
+      "estimated_duration_s": 90,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 4, classe de 5e : « Reconnaitre une situation de proportionnalité à partir d'un tableau ou d'un graphique. »"
+    },
+    {
+      "id": "EX-E035-D-02",
+      "skill_id": "E035",
+      "level": "decouverte",
+      "type": "qcm",
+      "statement": "Une supérette affiche le prix des yaourts à boire.\n\nNombre de yaourts : 2 ; 4 ; 6.\nPrix (€) : 1,40 ; 2,80 ; 3,90.\n\nCe tableau est-il un tableau de proportionnalité ?",
+      "image": null,
+      "choices": [
+        {
+          "key": "a",
+          "text": "Oui, car le prix augmente quand le nombre de yaourts augmente.",
+          "misconception": "L'élève confond « les deux grandeurs augmentent ensemble » et « les deux grandeurs sont proportionnelles ». Augmenter ensemble ne suffit pas : il faut multiplier par un même nombre dans toutes les colonnes."
+        },
+        {
+          "key": "b",
+          "text": "Oui, car de 2 à 4 yaourts, le prix double.",
+          "misconception": "L'élève vérifie une seule relation entre deux colonnes ($2 \\times 1{,}4 = 2{,}8$) et conclut sans regarder la troisième colonne, qui ne convient pas."
+        },
+        {
+          "key": "c",
+          "text": "Non, car $3{,}9 \\div 6 = 0{,}65$, alors que $1{,}4 \\div 2 = 0{,}7$.",
+          "misconception": null
+        }
+      ],
+      "answer": {
+        "value": "c"
+      },
+      "solution_steps": [
+        "On calcule le quotient prix ÷ nombre de yaourts dans chaque colonne : $1{,}4 \\div 2 = 0{,}7$, $2{,}8 \\div 4 = 0{,}7$ et $3{,}9 \\div 6 = 0{,}65$.",
+        "Les deux premiers quotients sont égaux, pas le troisième : un yaourt revient à 0,70 € dans les deux premières colonnes, mais à 0,65 € dans le lot de 6.",
+        "Une seule colonne qui ne convient pas suffit : ce tableau **n'est pas** un tableau de proportionnalité. Le lot de 6 est moins cher à l'unité, comme souvent en magasin. La bonne réponse est c."
+      ],
+      "hint": "Calcule le prix d'un yaourt dans chaque colonne.",
+      "estimated_duration_s": 90,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 4, classe de 5e : « Identifier des situations de proportionnalité dans des contextes concrets (prix, recettes, distances, échelles). »"
+    },
+    {
+      "id": "EX-E035-E-01",
+      "skill_id": "E035",
+      "level": "entrainement",
+      "type": "qcm",
+      "statement": "Trois cinémas affichent le prix à payer selon le nombre de places.\n\nNombre de places : 2 ; 3 ; 5.\nCinéma A, prix (€) : 13 ; 19,50 ; 32,50.\nCinéma B, prix (€) : 14 ; 20 ; 32.\nCinéma C, prix (€) : 12 ; 18 ; 28.\n\nDans quel cinéma le prix est-il proportionnel au nombre de places ?",
+      "image": null,
+      "choices": [
+        {
+          "key": "a",
+          "text": "Cinéma A",
+          "misconception": null
+        },
+        {
+          "key": "b",
+          "text": "Cinéma B",
+          "misconception": "L'élève voit que le prix augmente régulièrement, de 6 € par place supplémentaire, et croit que cela suffit. Mais $14 \\div 2 = 7$ et $3 \\times 7 = 21$, pas 20 : ce cinéma ajoute 2 € de frais fixes."
+        },
+        {
+          "key": "c",
+          "text": "Cinéma C",
+          "misconception": "L'élève ne vérifie que les deux premières colonnes, où le quotient vaut 6 ($12 \\div 2 = 6$ et $18 \\div 3 = 6$), sans regarder la dernière : $5 \\times 6 = 30$, pas 28. Ce cinéma fait une réduction à partir de 5 places."
+        }
+      ],
+      "answer": {
+        "value": "a"
+      },
+      "solution_steps": [
+        "Pour chaque cinéma, on calcule le prix d'une place dans chaque colonne, c'est-à-dire le quotient prix ÷ nombre de places.",
+        "Cinéma A : $13 \\div 2 = 6{,}5$, $19{,}5 \\div 3 = 6{,}5$ et $32{,}5 \\div 5 = 6{,}5$. Les trois quotients sont égaux.",
+        "Cinéma B : $14 \\div 2 = 7$, mais $3 \\times 7 = 21$, pas 20. Cinéma C : $12 \\div 2 = 6$ et $18 \\div 3 = 6$, mais $5 \\times 6 = 30$, pas 28.",
+        "Seul le cinéma A a un prix proportionnel au nombre de places, de coefficient 6,5 (une place à 6,50 €). La bonne réponse est a."
+      ],
+      "hint": "Une seule colonne qui ne convient pas suffit pour refuser. Vérifie les trois colonnes de chaque cinéma.",
+      "estimated_duration_s": 180,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 4, classe de 5e : « Identifier des situations de proportionnalité dans des contextes concrets (prix, recettes, distances, échelles). »"
+    },
+    {
+      "id": "EX-E035-E-02",
+      "skill_id": "E035",
+      "level": "entrainement",
+      "type": "numerique",
+      "statement": "Lucas recopie les quantités d'une recette de mousse au chocolat pour plusieurs tablées.\n\nNombre de personnes : 3 ; 4 ; 6 ; 9.\nMasse de chocolat (g) : 120 ; 160 ; 250 ; 360.\n\nUne seule colonne empêche ce tableau d'être un tableau de proportionnalité. Quelle masse de chocolat aurait-il fallu écrire dans cette colonne ?",
+      "image": null,
+      "answer": {
+        "value": 240,
+        "accepted": [
+          "240 g",
+          "240"
+        ],
+        "unit": "g"
+      },
+      "solution_steps": [
+        "Quotient masse ÷ nombre de personnes : $120 \\div 3 = 40$, $160 \\div 4 = 40$ et $360 \\div 9 = 40$. Trois colonnes donnent 40 g de chocolat par personne.",
+        "Colonne de 6 personnes : avec 40 g par personne, il faudrait $6 \\times 40 = 240$ g, et non 250 g. C'est cette colonne qui ne convient pas.",
+        "Pour que le tableau soit un tableau de proportionnalité, de coefficient 40, il fallait écrire **240 g** pour 6 personnes. Contrôle : 6 personnes, c'est le double de 3 personnes, et $2 \\times 120 = 240$."
+      ],
+      "hint": "Calcule la masse de chocolat par personne dans chaque colonne.",
+      "estimated_duration_s": 120,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 4, classe de 5e : « Reconnaitre une situation de proportionnalité à partir d'un tableau ou d'un graphique. »"
+    },
+    {
+      "id": "EX-E035-M-01",
+      "skill_id": "E035",
+      "level": "maitrise",
+      "type": "vrai_faux",
+      "statement": "Pour préparer une boisson, on mélange du sirop et de l'eau.\n\nVolume de sirop (cL) : 3 ; 9 ; 12.\nVolume d'eau (cL) : 20 ; 60 ; 80.\n\nAffirmation : le volume d'eau est proportionnel au volume de sirop.",
+      "image": null,
+      "answer": {
+        "value": true
+      },
+      "solution_steps": [
+        "Le quotient $20 \\div 3$ ne tombe pas juste (6,666…) : avec des valeurs arrondies, on ne peut pas comparer sûrement les colonnes. Deux façons d'éviter ce piège.",
+        "Première façon, le coefficient en fraction : passer du sirop à l'eau, c'est multiplier par $\\frac{20}{3}$. On vérifie : $9 \\times \\frac{20}{3} = \\frac{180}{3} = 60$ et $12 \\times \\frac{20}{3} = \\frac{240}{3} = 80$.",
+        "Deuxième façon, le quotient dans l'autre sens, qui tombe juste : $3 \\div 20 = 0{,}15$ (on divise 3 par 10, puis par 2). On vérifie : $60 \\times 0{,}15 = 9$ et $80 \\times 0{,}15 = 12$.",
+        "Troisième regard, sans quotient : 9 cL de sirop, c'est $3 \\times 3$ cL, et 60 cL d'eau, c'est $3 \\times 20$ cL ; 12 cL de sirop, c'est $4 \\times 3$ cL, et 80 cL d'eau, c'est $4 \\times 20$ cL. Chaque colonne s'obtient à partir de la première en multipliant les deux volumes par un même nombre.",
+        "Toutes les colonnes ont le même quotient : le tableau est un tableau de proportionnalité. L'affirmation est **vraie**."
+      ],
+      "hint": "Si un quotient ne tombe pas juste, essaie l'autre sens : de l'eau vers le sirop.",
+      "estimated_duration_s": 150,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 4, classe de 5e : « Reconnaitre une situation de proportionnalité à partir d'un tableau ou d'un graphique. »"
+    },
+    {
+      "id": "EX-E035-M-02",
+      "skill_id": "E035",
+      "level": "maitrise",
+      "type": "qcm",
+      "statement": "Au marché, un vendeur affirme que le prix de ses abricots est proportionnel à la masse achetée.\n\nMasse (kg) : 0,5 ; 1,5 ; 2 ; 2,5.\nPrix (€) : 1,60 ; 4,80 ; 6,40 ; 7,50.\n\nA-t-il raison ?",
+      "image": null,
+      "choices": [
+        {
+          "key": "a",
+          "text": "Oui : de 0,5 kg à 1,5 kg, la masse triple et le prix triple aussi.",
+          "misconception": "L'élève vérifie une seule relation entre deux colonnes ($3 \\times 1{,}6 = 4{,}8$) et généralise sans contrôler les autres colonnes."
+        },
+        {
+          "key": "b",
+          "text": "Non : une des colonnes ne donne pas le même prix au kilogramme que les autres.",
+          "misconception": null
+        },
+        {
+          "key": "c",
+          "text": "Oui : les trois premières colonnes donnent le même prix au kilogramme, cela suffit.",
+          "misconception": "L'élève vérifie trois colonnes sur quatre et s'arrête. Une seule colonne qui ne convient pas suffit pourtant à refuser la proportionnalité."
+        }
+      ],
+      "answer": {
+        "value": "b"
+      },
+      "solution_steps": [
+        "Prix d'un kilogramme : 0,5 kg coûte 1,60 €, donc 1 kg, le double, coûte $2 \\times 1{,}6 = 3{,}2$. Si le tableau est de proportionnalité, le coefficient est 3,2.",
+        "On vérifie chaque colonne : $1{,}5 \\times 3{,}2 = 4{,}8$, $2 \\times 3{,}2 = 6{,}4$ et $2{,}5 \\times 3{,}2 = 8$.",
+        "La dernière colonne ne convient pas : 7,50 € au lieu de 8 €. Ce n'est pas un tableau de proportionnalité, le vendeur a tort (il fait une remise sur 2,5 kg). La bonne réponse est b."
+      ],
+      "hint": "Combien coûte 1 kg d'après la première colonne ? Vérifie ensuite toutes les colonnes.",
+      "estimated_duration_s": 150,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 4, classe de 5e : « Identifier des situations de proportionnalité dans des contextes concrets (prix, recettes, distances, échelles). »"
+    },
+    {
+      "id": "EX-E036-D-01",
+      "skill_id": "E036",
+      "level": "decouverte",
+      "type": "numerique",
+      "statement": "Pour l'élection du délégué, les 30 élèves d'une classe ont voté. Camille a obtenu 12 voix.\n\nQuel pourcentage des voix Camille a-t-elle obtenu ?",
+      "image": null,
+      "answer": {
+        "value": 40,
+        "unit": "%",
+        "accepted": [
+          "40 %"
+        ]
+      },
+      "solution_steps": [
+        "Proportion des voix de Camille : la partie divisée par le tout, $\\frac{12}{30}$.",
+        "30 ne se ramène pas à 100 en multipliant par un entier. On cherche une fraction égale plus simple : $12 = 2 \\times 6$ et $30 = 5 \\times 6$, donc $\\frac{12}{30} = \\frac{2 \\times 6}{5 \\times 6} = \\frac{2}{5}$.",
+        "On calcule le quotient : $2 \\div 5 = 0{,}4$. Pour compter en centièmes, on multiplie par 100 : $0{,}4 \\times 100 = 40$. C'est 40 pour 100.",
+        "Camille a obtenu **40 %** des voix. Contrôle : 12 voix, c'est moins que la moitié de 30 (15), et 40 % est moins que 50 %."
+      ],
+      "hint": "Écris la fraction des voix de Camille. 12 et 30 sont dans la table de 6 : cherche une fraction égale plus simple.",
+      "estimated_duration_s": 75,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 4, 5e : calculer le pourcentage de voix de chaque candidat."
+    },
+    {
+      "id": "EX-E036-D-02",
+      "skill_id": "E036",
+      "level": "decouverte",
+      "type": "vrai_faux",
+      "statement": "Dans une classe de 36 élèves, 9 portent des lunettes. Rayan calcule $36 \\div 9 = 4$ et annonce : « 4 % des élèves portent des lunettes. »\n\nRayan a-t-il raison ?",
+      "image": null,
+      "answer": {
+        "value": false
+      },
+      "solution_steps": [
+        "Rayan a divisé le tout par la partie. La proportion d'élèves qui portent des lunettes, c'est la partie divisée par le tout : $\\frac{9}{36}$.",
+        "$9 = 1 \\times 9$ et $36 = 4 \\times 9$, donc $\\frac{9}{36} = \\frac{1 \\times 9}{4 \\times 9} = \\frac{1}{4}$, et $1 \\div 4 = 0{,}25$.",
+        "Pour compter en centièmes, on multiplie par 100 : $0{,}25 \\times 100 = 25$. La fréquence des élèves à lunettes est 0,25, c'est-à-dire 25 % : un élève sur 4.",
+        "Le 4 de Rayan signifie « 1 élève sur 4 », pas « 4 pour 100 ». Rayan a tort."
+      ],
+      "hint": "Pour une proportion, divise-t-on la partie par le tout, ou le tout par la partie ?",
+      "estimated_duration_s": 75,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 4, 5e : calculer des effectifs et des fréquences (exprimées sous forme décimale, fractionnaire ou de pourcentage)."
+    },
+    {
+      "id": "EX-E036-E-01",
+      "skill_id": "E036",
+      "level": "entrainement",
+      "type": "numerique",
+      "statement": "Un club de basket a disputé 27 matchs et en a gagné 21.\n\nQuel pourcentage de ses matchs a-t-il gagné ? Donne la valeur arrondie à l'unité.",
+      "image": null,
+      "answer": {
+        "value": 78,
+        "unit": "%",
+        "accepted": [
+          "78 %"
+        ]
+      },
+      "solution_steps": [
+        "Proportion de matchs gagnés : $\\frac{21}{27}$. $21 = 7 \\times 3$ et $27 = 9 \\times 3$, donc $\\frac{21}{27} = \\frac{7 \\times 3}{9 \\times 3} = \\frac{7}{9}$.",
+        "On pose la division $7 \\div 9$ : elle ne s'arrête pas, on obtient 0,777… (le chiffre 7 se répète).",
+        "On arrondit le quotient au centième : 0,777… est entre 0,77 et 0,78, plus près de 0,78 (son chiffre des millièmes est 7).",
+        "On multiplie par 100 : $0{,}78 \\times 100 = 78$. 0,78, c'est 78 centièmes : le club a gagné environ **78 %** de ses matchs."
+      ],
+      "hint": "Écris la fraction des matchs gagnés. 21 et 27 sont dans la table de 3 : cherche une fraction égale plus simple avant de diviser.",
+      "estimated_duration_s": 120,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 4, 5e : calculer, appliquer des proportions, des pourcentages."
+    },
+    {
+      "id": "EX-E036-E-02",
+      "skill_id": "E036",
+      "level": "entrainement",
+      "type": "qcm",
+      "statement": "Une trousse contient 8 crayons, dont 3 rouges.\n\nQuel pourcentage des crayons est rouge ?",
+      "image": null,
+      "choices": [
+        {
+          "key": "a",
+          "text": "37,5 %",
+          "misconception": null
+        },
+        {
+          "key": "b",
+          "text": "3 %",
+          "misconception": "L'élève prend le nombre de crayons rouges pour le pourcentage, comme si la trousse contenait 100 crayons."
+        },
+        {
+          "key": "c",
+          "text": "0,375 %",
+          "misconception": "L'élève calcule bien le quotient $3 \\div 8 = 0{,}375$, mais écrit le symbole % juste derrière : il oublie de multiplier par 100 pour compter en centièmes."
+        },
+        {
+          "key": "d",
+          "text": "30 %",
+          "misconception": "L'élève remplace le total de 8 crayons par 10 pour se ramener à un cas connu : 3 sur 10, c'est 30 %. Mais la trousse contient 8 crayons, pas 10."
+        }
+      ],
+      "answer": {
+        "value": "a"
+      },
+      "solution_steps": [
+        "Proportion de crayons rouges : la partie (3) divisée par le tout (8), $\\frac{3}{8}$.",
+        "8 ne se ramène pas à 100 en multipliant par un entier : on pose la division $3 \\div 8$, en continuant après la virgule jusqu'à un reste nul. On obtient $3 \\div 8 = 0{,}375$.",
+        "Pour compter en centièmes, on multiplie par 100 : $0{,}375 \\times 100 = 37{,}5$. C'est 37,5 pour 100.",
+        "37,5 % des crayons sont rouges. La bonne réponse est a."
+      ],
+      "hint": "Divise le nombre de crayons rouges par le nombre total de crayons.",
+      "estimated_duration_s": 75,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 4, 5e : calculer, appliquer des proportions, des pourcentages."
+    },
+    {
+      "id": "EX-E036-M-01",
+      "skill_id": "E036",
+      "level": "maitrise",
+      "type": "numerique",
+      "statement": "Trois candidats se présentent à l'élection du bureau du club de théâtre. Chaque membre vote pour un seul candidat. Ana obtient 7 voix, Baptiste 9 voix et Chloé 5 voix.\n\nQuel pourcentage des voix Baptiste a-t-il obtenu ? Donne la valeur arrondie à l'unité.",
+      "image": null,
+      "answer": {
+        "value": 43,
+        "unit": "%",
+        "accepted": [
+          "43 %"
+        ]
+      },
+      "solution_steps": [
+        "Le tout, c'est le nombre total de voix : $7 + 9 + 5 = 21$.",
+        "Proportion des voix de Baptiste : $\\frac{9}{21}$. $9 = 3 \\times 3$ et $21 = 7 \\times 3$, donc $\\frac{9}{21} = \\frac{3 \\times 3}{7 \\times 3} = \\frac{3}{7}$.",
+        "On pose la division $3 \\div 7$ : elle ne s'arrête pas, on obtient 0,428… en s'arrêtant au rang des millièmes.",
+        "On arrondit au centième : 0,428… est entre 0,42 et 0,43, plus près de 0,43 (son chiffre des millièmes est 8). On multiplie par 100 : $0{,}43 \\times 100 = 43$. 0,43, c'est 43 centièmes : Baptiste a obtenu environ **43 %** des voix.",
+        "Attention : 9 %, ce serait prendre son nombre de voix pour un pourcentage, alors que le total n'est pas 100."
+      ],
+      "hint": "Commence par calculer le nombre total de voix.",
+      "estimated_duration_s": 150,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 4, 5e : calculer le pourcentage de voix de chaque candidat."
+    },
+    {
+      "id": "EX-E036-M-02",
+      "skill_id": "E036",
+      "level": "maitrise",
+      "type": "qcm",
+      "statement": "Trois clubs de natation présentent des nageurs à un examen.\n\n- Club P : 30 reçus sur 42 nageurs ;\n- Club Q : 20 reçus sur 24 nageurs ;\n- Club R : 6 reçus sur 9 nageurs.\n\nQuel club a le plus fort pourcentage de reçus ?",
+      "image": null,
+      "choices": [
+        {
+          "key": "a",
+          "text": "Le club P",
+          "misconception": "L'élève compare les nombres de reçus : 30 est le plus grand. Mais le club P présente aussi le plus de nageurs ; il faut comparer des proportions, pas des effectifs."
+        },
+        {
+          "key": "b",
+          "text": "Le club R",
+          "misconception": "L'élève compare les nombres d'échecs : 3 au club R, 4 au club Q, 12 au club P. Ce raisonnement par différence ne tient pas compte du nombre de nageurs présentés."
+        },
+        {
+          "key": "c",
+          "text": "Le club Q",
+          "misconception": null
+        }
+      ],
+      "answer": {
+        "value": "c"
+      },
+      "solution_steps": [
+        "Pour chaque club, on calcule la proportion de reçus (la partie divisée par le tout), on arrondit le quotient au centième, puis on multiplie par 100 pour l'écrire en pourcentage.",
+        "Club P : $30 = 5 \\times 6$ et $42 = 7 \\times 6$, donc $\\frac{30}{42} = \\frac{5 \\times 6}{7 \\times 6} = \\frac{5}{7}$. La division $5 \\div 7$ donne 0,714…, arrondi à 0,71 ; $0{,}71 \\times 100 = 71$, soit environ 71 %.",
+        "Club Q : $20 = 5 \\times 4$ et $24 = 6 \\times 4$, donc $\\frac{20}{24} = \\frac{5 \\times 4}{6 \\times 4} = \\frac{5}{6}$. La division $5 \\div 6$ donne 0,833…, arrondi à 0,83 ; $0{,}83 \\times 100 = 83$, soit environ 83 %.",
+        "Club R : $6 = 2 \\times 3$ et $9 = 3 \\times 3$, donc $\\frac{6}{9} = \\frac{2 \\times 3}{3 \\times 3} = \\frac{2}{3}$. La division $2 \\div 3$ donne 0,666…, arrondi à 0,67 ; $0{,}67 \\times 100 = 67$, soit environ 67 %.",
+        "Le plus fort pourcentage de reçus est celui du club Q, environ 83 %. La bonne réponse est c."
+      ],
+      "hint": "Calcule le pourcentage de reçus de chaque club avant de comparer.",
+      "estimated_duration_s": 180,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 4, 5e : calculer, appliquer des proportions, des pourcentages."
+    },
+    {
+      "id": "EX-E037-D-01",
+      "skill_id": "E037",
+      "level": "decouverte",
+      "type": "numerique",
+      "statement": "Une cuve contient 600 L d'eau. 1 %, c'est un centième.\n\nCalcule 1 % de 600 L, puis déduis-en 3 % de 600 L. Combien de litres font 3 % de la cuve ?",
+      "image": null,
+      "answer": {
+        "value": 18,
+        "unit": "L",
+        "accepted": [
+          "18 L"
+        ]
+      },
+      "solution_steps": [
+        "1 % de 600 L, c'est le centième de 600 L : $600 \\div 100 = 6$ L.",
+        "3 %, c'est 3 fois 1 % : $3 \\times 6 = 18$ L.",
+        "3 % de la cuve représentent **18 L**. Contrôle avec la fraction : $600 \\times \\frac{3}{100} = \\frac{1\\,800}{100} = 18$."
+      ],
+      "hint": "Combien de litres font 1 % de la cuve ?",
+      "estimated_duration_s": 60,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 4, 5e : prendre 1 %, 10 % ou 50 % d'un nombre, en lien avec la proportionnalité."
+    },
+    {
+      "id": "EX-E037-D-02",
+      "skill_id": "E037",
+      "level": "decouverte",
+      "type": "qcm",
+      "statement": "Un sac à dos coûte 70 €. 10 % de ce prix valent 7 €.\n\nCombien valent 20 % de ce prix ?",
+      "image": null,
+      "choices": [
+        {
+          "key": "a",
+          "text": "17 €",
+          "misconception": "L'élève raisonne par ajout : pour passer de 10 % à 20 %, il ajoute 10, et il ajoute aussi 10 au résultat, 7 + 10 = 17. Or 20 %, c'est 2 fois 10 % : il faut doubler 7 €."
+        },
+        {
+          "key": "b",
+          "text": "27 €",
+          "misconception": "L'élève confond « 20 % de » et « 20 de plus » : il ajoute 20 € aux 7 €."
+        },
+        {
+          "key": "c",
+          "text": "14 €",
+          "misconception": null
+        }
+      ],
+      "answer": {
+        "value": "c"
+      },
+      "solution_steps": [
+        "20 %, c'est 2 fois 10 % : $20\\,\\% = 10\\,\\% + 10\\,\\%$.",
+        "Donc 20 % de 70 € valent $7 + 7 = 14$ €.",
+        "Contrôle : $20\\,\\% = \\frac{20}{100} = \\frac{1}{5}$, et le cinquième de 70 € est $70 \\div 5 = 14$ €. La bonne réponse est c."
+      ],
+      "hint": "Combien de fois 10 % y a-t-il dans 20 % ?",
+      "estimated_duration_s": 45,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 4, 5e : prendre 1 %, 10 % ou 50 % d'un nombre, en lien avec la proportionnalité."
+    },
+    {
+      "id": "EX-E037-E-01",
+      "skill_id": "E037",
+      "level": "entrainement",
+      "type": "numerique",
+      "statement": "Une cycliste doit parcourir 74 km en deux jours. Le premier jour, elle fait 60 % du parcours.\n\nEn utilisant 50 % et 10 %, calcule la distance parcourue le premier jour.",
+      "image": null,
+      "answer": {
+        "value": 44.4,
+        "unit": "km",
+        "accepted": [
+          "44,4 km",
+          "44,40 km",
+          "44,40"
+        ]
+      },
+      "solution_steps": [
+        "On décompose : $60\\,\\% = 50\\,\\% + 10\\,\\%$.",
+        "50 % de 74 km, c'est la moitié : $74 \\div 2 = 37$ km.",
+        "10 % de 74 km, c'est le dixième : $74 \\div 10 = 7{,}4$ km.",
+        "On additionne les deux morceaux : $37 + 7{,}4 = 44{,}4$ km. Le premier jour, elle parcourt **44,4 km**.",
+        "Contrôle : 60 %, c'est un peu plus que la moitié ; 44,4 km est un peu plus que 37 km."
+      ],
+      "hint": "Calcule séparément la moitié et le dixième de 74 km.",
+      "estimated_duration_s": 90,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 4, 5e : prendre 1 %, 10 % ou 50 % d'un nombre, en lien avec la proportionnalité."
+    },
+    {
+      "id": "EX-E037-E-02",
+      "skill_id": "E037",
+      "level": "entrainement",
+      "type": "vrai_faux",
+      "statement": "Zoé calcule 51 % de 46 : « 50 % de 46, c'est 23 ; 1 % de 46, c'est 0,46 ; donc 51 % de 46, c'est 23,46. »\n\nZoé a-t-elle raison ?",
+      "image": null,
+      "answer": {
+        "value": true
+      },
+      "solution_steps": [
+        "$51\\,\\% = 50\\,\\% + 1\\,\\%$ : on peut calculer les deux morceaux, puis les additionner.",
+        "50 % de 46, c'est la moitié : $46 \\div 2 = 23$. 1 % de 46, c'est le centième : $46 \\div 100 = 0{,}46$.",
+        "$23 + 0{,}46 = 23{,}46$. Zoé a raison.",
+        "Contrôle avec la fraction : $46 \\times \\frac{51}{100} = \\frac{2\\,346}{100} = 23{,}46$."
+      ],
+      "hint": "Décompose 51 % en deux pourcentages faciles à calculer.",
+      "estimated_duration_s": 75,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 4, 5e : prendre 1 %, 10 % ou 50 % d'un nombre, en lien avec la proportionnalité."
+    },
+    {
+      "id": "EX-E037-M-01",
+      "skill_id": "E037",
+      "level": "maitrise",
+      "type": "numerique",
+      "statement": "Une association s'était fixé un objectif de 350 € de dons. Elle a récolté 120 % de cet objectif.\n\nQuelle somme a-t-elle récoltée ?",
+      "image": null,
+      "answer": {
+        "value": 420,
+        "unit": "€",
+        "accepted": [
+          "420 €"
+        ]
+      },
+      "solution_steps": [
+        "On décompose : $120\\,\\% = 100\\,\\% + 20\\,\\%$. 100 % de l'objectif, c'est l'objectif entier : 350 €.",
+        "10 % de 350 €, c'est le dixième : $350 \\div 10 = 35$ €. 20 %, c'est 2 fois 10 % : $2 \\times 35 = 70$ €.",
+        "On additionne : $350 + 70 = 420$ €. L'association a récolté **420 €**.",
+        "Un pourcentage plus grand que 100 % donne plus que la quantité de départ : l'objectif est dépassé de 70 €."
+      ],
+      "hint": "Décompose 120 % en 100 % et un autre pourcentage.",
+      "estimated_duration_s": 90,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 4, 5e : prendre 1 %, 10 % ou 50 % d'un nombre, en lien avec la proportionnalité."
+    },
+    {
+      "id": "EX-E037-M-02",
+      "skill_id": "E037",
+      "level": "maitrise",
+      "type": "qcm",
+      "statement": "On ne connaît pas le prix d'un vélo, mais on sait que 10 % de ce prix valent 12 €.\n\nCombien valent 45 % du prix du vélo ?",
+      "image": null,
+      "choices": [
+        {
+          "key": "a",
+          "text": "57 €",
+          "misconception": "L'élève confond « 45 % de » et « 45 de plus » : il ajoute 45 € aux 12 €."
+        },
+        {
+          "key": "b",
+          "text": "54 €",
+          "misconception": null
+        },
+        {
+          "key": "c",
+          "text": "48 €",
+          "misconception": "L'élève compte quatre fois 10 %, soit 40 %, mais oublie les 5 % restants."
+        }
+      ],
+      "answer": {
+        "value": "b"
+      },
+      "solution_steps": [
+        "On décompose 45 % : 4 fois 10 %, plus 5 %. Et 5 %, c'est la moitié de 10 %.",
+        "4 fois 10 % : $4 \\times 12 = 48$ €. 5 % : $12 \\div 2 = 6$ €.",
+        "45 % du prix : $48 + 6 = 54$ €. La bonne réponse est b.",
+        "On n'a pas eu besoin du prix du vélo. Il vaut 10 fois 12 €, soit 120 €, et on peut vérifier : $120 \\times \\frac{45}{100} = \\frac{5\\,400}{100} = 54$."
+      ],
+      "hint": "Écris 45 % avec des 10 % et la moitié de 10 %.",
+      "estimated_duration_s": 90,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 4, 5e : prendre 1 %, 10 % ou 50 % d'un nombre, en lien avec la proportionnalité."
     }
   ]
 }

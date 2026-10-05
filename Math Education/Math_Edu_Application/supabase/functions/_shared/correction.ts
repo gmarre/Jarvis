@@ -161,7 +161,11 @@ export function formatExpected(exercise: ExerciceACorriger): string {
   // Un nombre s'affiche a la francaise : 3.5 ecrit dans le contenu devient 3,5.
   // Sans cela, le corrige montrait « 3.5 » a un eleve a qui l'on apprend la
   // virgule (domaine D, nombres decimaux).
-  const shown = typeof value === 'number' ? String(value).replace('.', ',') : String(value)
+  // Un prix s'ecrit avec ses centimes : 3,90 €, pas 3,9 € (releve en relecture,
+  // etape 3). Un prix entier reste sans decimales : 42 €.
+  const prix = unit === '€' && typeof value === 'number' && !Number.isInteger(value)
+  const nombre = typeof value === 'number' ? (prix ? value.toFixed(2) : String(value)) : String(value)
+  const shown = typeof value === 'number' ? nombre.replace('.', ',') : nombre
   return unit ? `${shown} ${unit}` : shown
 }
 

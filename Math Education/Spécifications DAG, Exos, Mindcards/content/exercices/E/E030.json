@@ -1,0 +1,204 @@
+[
+  {
+    "id": "EX-E030-D-01",
+    "skill_id": "E030",
+    "level": "decouverte",
+    "type": "vrai_faux",
+    "statement": "À la boulangerie, 3 baguettes coûtent 3,60 € et 5 baguettes coûtent 6 €.\n\nCalcule le prix d'une baguette dans chaque cas. Vrai ou faux : pour ces deux achats, le prix payé est proportionnel au nombre de baguettes.",
+    "image": null,
+    "answer": {
+      "value": true
+    },
+    "solution_steps": [
+      "Deux grandeurs sont proportionnelles quand la quantité pour une unité reste la même. Ici, l'unité est une baguette : on cherche le prix d'une baguette dans chaque cas.",
+      "Pour 3 baguettes : $3{,}60 \\div 3 = 1{,}20$. Une baguette coûte 1,20 €.",
+      "Pour 5 baguettes : $6 \\div 5 = 1{,}20$. Une baguette coûte 1,20 € là aussi.",
+      "Le prix d'une baguette est le même dans les deux cas : pour ces deux achats, le prix payé est proportionnel au nombre de baguettes. C'est **vrai**.",
+      "Attention : passer de 3 à 5 baguettes, c'est ajouter 2 baguettes, mais le prix n'augmente pas de 2 € : il augmente de $2 \\times 1{,}20 = 2{,}40$ €, et $6 - 3{,}60 = 2{,}40$."
+    ],
+    "hint": "Divise chaque prix par le nombre de baguettes. Trouves-tu le même prix pour une baguette ?",
+    "estimated_duration_s": 75,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 3, classe de 6e, La proportionnalité : connaître la définition de la proportionnalité entre deux grandeurs et la mettre en lien avec des expressions de la vie courante."
+  },
+  {
+    "id": "EX-E030-D-02",
+    "skill_id": "E030",
+    "level": "decouverte",
+    "type": "qcm",
+    "statement": "Au marché, une étiquette indique : « Tomates : 3 € le kilo ».\n\nQuelle phrase explique correctement cette étiquette ?",
+    "image": null,
+    "choices": [
+      {
+        "key": "a",
+        "text": "On paie 3 € quelle que soit la masse de tomates achetée.",
+        "misconception": "L'élève lit l'étiquette comme un prix unique pour tout l'achat, comme un forfait : il oublie que « le kilo » désigne une masse de 1 kg."
+      },
+      {
+        "key": "b",
+        "text": "3 kg de tomates coûtent 1 €.",
+        "misconception": "L'élève inverse les deux grandeurs : il associe 3 à la masse et 1 au prix, alors que l'étiquette donne le prix (3 €) d'une masse de 1 kg."
+      },
+      {
+        "key": "c",
+        "text": "Chaque kilogramme coûte 3 €, donc 2 kg coûtent 6 €.",
+        "misconception": null
+      },
+      {
+        "key": "d",
+        "text": "1 kg coûte 3 €, donc 2 kg coûtent 4 €.",
+        "misconception": "Modèle additif : l'élève ajoute 1 kg d'un côté et 1 € de l'autre. Or 1 kg de plus coûte 3 € de plus, pas 1 €."
+      }
+    ],
+    "answer": {
+      "value": "c"
+    },
+    "solution_steps": [
+      "« 3 € le kilo » se lit « 3 € pour 1 kilogramme » : c'est le prix pour une unité de masse, le prix au kilo.",
+      "Ce prix pour 1 kg reste le même quelle que soit la quantité achetée : le prix payé est proportionnel à la masse de tomates.",
+      "2 kg, c'est 2 fois 1 kg : on paie 2 fois 3 €, soit $2 \\times 3 = 6$ €.",
+      "La bonne phrase est la c."
+    ],
+    "hint": "« Le kilo » : pour quelle masse de tomates paie-t-on 3 € ?",
+    "estimated_duration_s": 60,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 3, classe de 6e, La proportionnalité : connaître la définition de la proportionnalité entre deux grandeurs et la mettre en lien avec des expressions de la vie courante."
+  },
+  {
+    "id": "EX-E030-E-01",
+    "skill_id": "E030",
+    "level": "entrainement",
+    "type": "qcm",
+    "statement": "Une salle d'escalade fait payer 8 € d'inscription pour l'année, puis 5 € par séance.\n\nLe prix payé dans l'année est-il proportionnel au nombre de séances ?",
+    "image": null,
+    "choices": [
+      {
+        "key": "a",
+        "text": "Oui, car chaque séance coûte toujours 5 €.",
+        "misconception": "L'élève ne regarde que le prix d'une séance et oublie les 8 € d'inscription, payés une seule fois quel que soit le nombre de séances."
+      },
+      {
+        "key": "b",
+        "text": "Non : 2 séances coûtent 18 € et 4 séances coûtent 28 €, ce n'est pas le double.",
+        "misconception": null
+      },
+      {
+        "key": "c",
+        "text": "Oui, car plus on fait de séances, plus on paie.",
+        "misconception": "L'élève confond « augmenter en même temps » et « être proportionnel » : le prix augmente bien, mais 2 fois plus de séances ne coûtent pas 2 fois plus cher."
+      },
+      {
+        "key": "d",
+        "text": "On ne peut pas savoir sans connaître le nombre de séances.",
+        "misconception": "L'élève croit qu'il faut un cas précis pour décider. On peut tester avec des nombres de séances que l'on choisit, par exemple 2 et 4."
+      }
+    ],
+    "answer": {
+      "value": "b"
+    },
+    "solution_steps": [
+      "Prix pour 2 séances : $8 + 2 \\times 5 = 18$, soit 18 €.",
+      "Prix pour 4 séances : $8 + 4 \\times 5 = 28$, soit 28 €.",
+      "4 séances, c'est 2 fois plus de séances que 2 séances. Si le prix était proportionnel, on paierait 2 fois plus : $2 \\times 18 = 36$ €. Or on paie 28 €.",
+      "Les 8 € d'inscription sont payés une seule fois, quel que soit le nombre de séances : ce sont des frais fixes. Le prix n'est **pas proportionnel** au nombre de séances. Réponse b."
+    ],
+    "hint": "Calcule ce que l'on paie pour 2 séances, puis pour 4 séances. Le prix a-t-il doublé ?",
+    "estimated_duration_s": 100,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 3, classe de 6e, La proportionnalité : identifier si une situation relève du « modèle » de la proportionnalité."
+  },
+  {
+    "id": "EX-E030-E-02",
+    "skill_id": "E030",
+    "level": "entrainement",
+    "type": "vrai_faux",
+    "statement": "Un magasin vend la bouteille d'eau 0,80 € à l'unité, et le pack de 6 de ces bouteilles 3 €.\n\nVrai ou faux : le prix payé est proportionnel au nombre de bouteilles achetées.",
+    "image": null,
+    "answer": {
+      "value": false
+    },
+    "solution_steps": [
+      "Si le prix était proportionnel, 6 bouteilles coûteraient 6 fois le prix d'une bouteille : $6 \\times 0{,}80 = 4{,}80$, soit 4,80 €.",
+      "Or le pack de 6 bouteilles coûte 3 €, et non 4,80 €.",
+      "Autre façon de le voir : dans le pack, une bouteille revient à $3 \\div 6 = 0{,}50$, soit 0,50 €, contre 0,80 € à l'unité. Le prix pour une bouteille n'est pas le même.",
+      "Le prix payé n'est donc **pas proportionnel** au nombre de bouteilles : le pack est une promotion. C'est **faux**."
+    ],
+    "hint": "Combien coûteraient 6 bouteilles achetées une par une ? Compare avec le prix du pack.",
+    "estimated_duration_s": 90,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 3, classe de 6e, La proportionnalité : identifier si une situation relève du « modèle » de la proportionnalité."
+  },
+  {
+    "id": "EX-E030-M-01",
+    "skill_id": "E030",
+    "level": "maitrise",
+    "type": "qcm",
+    "statement": "Laquelle de ces situations est une situation de proportionnalité ?",
+    "image": null,
+    "choices": [
+      {
+        "key": "a",
+        "text": "La taille d'un enfant et son âge.",
+        "misconception": "L'élève pense que si l'âge double, la taille double. Or un enfant de 10 ans ne mesure pas 2 fois plus qu'à 5 ans : sa croissance ralentit."
+      },
+      {
+        "key": "b",
+        "text": "Le prix d'une course de taxi : 4 € au départ, puis 2 € par kilomètre.",
+        "misconception": "L'élève ne voit que le prix par kilomètre et oublie les 4 € payés au départ : 10 km coûtent 24 €, mais 20 km coûtent 44 €, pas 48 €."
+      },
+      {
+        "key": "c",
+        "text": "Le prix d'entrées à la piscine à 4 € l'entrée, la cinquième entrée étant offerte.",
+        "misconception": "L'élève voit un prix par entrée et oublie la promotion : 4 entrées coûtent 16 €, et 5 entrées coûtent 16 € elles aussi, et non 20 €."
+      },
+      {
+        "key": "d",
+        "text": "La longueur de tissu achetée et le prix payé, quand le tissu est vendu 6 € le mètre.",
+        "misconception": null
+      }
+    ],
+    "answer": {
+      "value": "d"
+    },
+    "solution_steps": [
+      "Deux grandeurs sont proportionnelles quand la quantité pour une unité reste la même, quelle que soit la quantité.",
+      "Tissu : chaque mètre coûte 6 €, que l'on achète 1 m ou 10 m. 2 fois plus de tissu coûte 2 fois plus cher : c'est une situation de proportionnalité.",
+      "Taxi : les 4 € du départ sont payés une seule fois. 10 km coûtent $4 + 10 \\times 2 = 24$ €, 20 km coûtent $4 + 20 \\times 2 = 44$ €, et non $2 \\times 24 = 48$ €.",
+      "Piscine : 4 entrées coûtent $4 \\times 4 = 16$ €, et 5 entrées coûtent 16 € elles aussi grâce à l'entrée offerte. Le prix pour une entrée change.",
+      "Taille et âge : un enfant ne grandit pas de la même longueur chaque année, et sa taille ne double pas quand son âge double.",
+      "Réponse d."
+    ],
+    "hint": "Pour chaque situation, demande-toi : si je double la première grandeur, la seconde double-t-elle ?",
+    "estimated_duration_s": 120,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 3, classe de 6e, La proportionnalité : identifier si une situation relève du « modèle » de la proportionnalité."
+  },
+  {
+    "id": "EX-E030-M-02",
+    "skill_id": "E030",
+    "level": "maitrise",
+    "type": "numerique",
+    "statement": "Sur un étal, les pommes de terre sont vendues en sacs : 7 € le sac de 4 kg, 16 € le sac de 10 kg.\n\nSi le prix était proportionnel à la masse, avec le même prix au kilo que le petit sac, combien coûterait le sac de 10 kg, en euros ?",
+    "image": null,
+    "answer": {
+      "value": 17.5,
+      "unit": "€",
+      "accepted": [
+        "17,50",
+        "17,5 €",
+        "17,50 €"
+      ]
+    },
+    "solution_steps": [
+      "On ne passe pas de 4 kg à 10 kg en multipliant par un nombre entier : on cherche d'abord le prix d'une masse plus petite.",
+      "2 kg, c'est 2 fois moins que 4 kg : avec un prix proportionnel, 2 kg coûteraient $7 \\div 2 = 3{,}50$, soit 3,50 €.",
+      "10 kg, c'est 5 fois 2 kg : le sac de 10 kg coûterait $5 \\times 3{,}50 = 17{,}50$, soit **17,50 €**.",
+      "Autre méthode, en ajoutant : 10 kg, c'est 4 kg, plus 4 kg, plus 2 kg. Le prix serait $7 + 7 + 3{,}50 = 17{,}50$ €.",
+      "Le vendeur demande 16 € et non 17,50 € : le grand sac est moins cher au kilo. Le prix réel n'est donc pas proportionnel à la masse."
+    ],
+    "hint": "Quel serait le prix de 2 kg ? Combien de fois 2 kg y a-t-il dans 10 kg ?",
+    "estimated_duration_s": 150,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 3, classe de 6e, La proportionnalité : identifier si une situation relève du « modèle » de la proportionnalité."
+  }
+]

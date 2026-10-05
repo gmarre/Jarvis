@@ -2153,6 +2153,83 @@ Une boulangère cuit 45 plaques de 12 croissants et 23 plaques de 9 brioches. Co
 
 ---
 
+## `B043` · Comparaison multiplicative : fois plus, fois moins — CE2, difficulté 3
+
+*Résoudre en une étape un problème de comparaison multiplicative : traduire « 5 fois plus » par une multiplication et « 3 fois moins » par une division, et distinguer ces locutions de « 5 de plus » et « 3 de moins » (comparaison additive). Nombres entiers, résultats exacts.*
+
+> « Résoudre des problèmes de comparaison multiplicative en une étape. » — *Cycle 2, Cours élémentaire deuxième année, La résolution de problèmes*
+> « L'élève comprend le sens des locutions « fois plus » et « fois moins » et les distingue des locutions « de plus » et « de moins » qui apparaissent dans les problèmes de comparaison additive. » — *Cycle 2, Cours élémentaire deuxième année, La résolution de problèmes*
+
+**EX-B043-D-01** — decouverte, numerique, 60 s
+
+Léo a 7 billes. Sam a 4 fois plus de billes que Léo. Combien de billes Sam a-t-il ?
+
+**Réponse :** 28
+
+*Corrigé.* (1) « 4 fois plus » veut dire : Sam a 4 fois le nombre de billes de Léo. (2) On multiplie : 7 × 4 = 28. (3) Sam a 28 billes. (4) Attention : « 4 billes de plus » donnerait 7 + 4 = 11. « 4 fois plus », ce n'est pas « 4 de plus ».
+
+*Indice.* Imagine 4 tas de 7 billes.
+
+**EX-B043-D-02** — decouverte, qcm, 60 s
+
+Une ficelle rouge mesure 30 cm. Une ficelle bleue est 5 fois moins longue. Combien mesure la ficelle bleue ?
+
+- **a.** 25 cm
+  <br>*Erreur visée :* L'élève lit « 5 fois moins » comme « 5 de moins » et soustrait : 30 - 5 = 25. Il confond la comparaison multiplicative avec la comparaison additive.
+- **b.** 150 cm
+  <br>*Erreur visée :* L'élève voit le mot « fois » et multiplie : 30 × 5 = 150. Mais la ficelle bleue est plus courte que la rouge, elle ne peut pas mesurer plus.
+- **c.** 6 cm ✅
+
+*Corrigé.* (1) « 5 fois moins longue » veut dire : il faut 5 ficelles bleues bout à bout pour faire la ficelle rouge. (2) On cherche donc le nombre qui, multiplié par 5, donne 30 : c'est une division, 30 ÷ 5 = 6, car 6 × 5 = 30. (3) La ficelle bleue mesure 6 cm. (4) « 5 cm de moins » donnerait 25 cm : ce n'est pas la même chose que « 5 fois moins ».
+
+*Indice.* Combien de ficelles bleues faut-il mettre bout à bout pour faire la ficelle rouge ?
+
+**EX-B043-E-01** — entrainement, vrai_faux, 90 s
+
+Une gomme coûte 2 €. Un compas coûte 4 fois plus cher que la gomme. Tom dit : « Le compas coûte 6 €. » A-t-il raison ?
+
+**Réponse :** False
+
+*Corrigé.* (1) « 4 fois plus cher » : le prix du compas, c'est 4 fois le prix de la gomme. (2) On multiplie : 2 × 4 = 8. Le compas coûte 8 €. (3) Tom a calculé 2 + 4 = 6 : il a trouvé le prix d'un compas qui coûterait « 4 € de plus », pas « 4 fois plus ». (4) L'affirmation de Tom est fausse.
+
+*Indice.* « 4 fois plus » : faut-il ajouter 4, ou prendre 4 fois le prix ?
+
+**EX-B043-E-02** — entrainement, numerique, 90 s
+
+Un cheval a bu 36 litres d'eau. Un poney a bu 4 fois moins d'eau que le cheval. Combien de litres le poney a-t-il bu ?
+
+**Réponse :** 9
+
+*Corrigé.* (1) « 4 fois moins » : il faudrait 4 fois l'eau du poney pour faire l'eau du cheval. (2) On cherche le nombre qui, multiplié par 4, donne 36 : 36 ÷ 4 = 9, car 9 × 4 = 36. (3) Le poney a bu 9 litres. (4) « 4 litres de moins » donnerait 36 - 4 = 32 : ce n'est pas la même chose.
+
+*Indice.* Dans la table de 4, quel nombre donne 36 ?
+
+**EX-B043-M-01** — maitrise, qcm, 120 s
+
+Lou a 40 images. Elle a 5 fois plus d'images que Max. Combien d'images Max a-t-il ?
+
+- **a.** 8 images ✅
+- **b.** 200 images
+  <br>*Erreur visée :* L'élève voit « 5 fois plus » et multiplie le nombre qu'il a sous les yeux : 40 × 5 = 200. Il n'a pas repéré que c'est Lou, et non Max, qui en a 5 fois plus.
+- **c.** 35 images
+  <br>*Erreur visée :* L'élève lit « 5 fois plus » comme « 5 de plus » et retire 5 : 40 - 5 = 35. Il confond comparaison multiplicative et comparaison additive.
+
+*Corrigé.* (1) C'est Lou qui en a le plus : Lou a 5 fois les images de Max. (2) On cherche donc le nombre qui, multiplié par 5, donne 40 : 40 ÷ 5 = 8, car 8 × 5 = 40. (3) Max a 8 images. (4) Vérification : 5 fois 8 images, cela fait bien 40 images, celles de Lou.
+
+*Indice.* Qui a le plus d'images, Lou ou Max ?
+
+**EX-B043-M-02** — maitrise, numerique, 120 s
+
+Une trousse coûte 7 €. Elle coûte 6 fois moins cher qu'un cartable. Combien coûte le cartable ?
+
+**Réponse :** 42
+
+*Corrigé.* (1) La trousse est 6 fois moins chère : c'est donc le cartable qui coûte le plus. (2) Le cartable coûte 6 fois le prix de la trousse : 7 × 6 = 42. (3) Le cartable coûte 42 €. (4) Vérification : 42 € partagés en 6, cela fait bien 42 ÷ 6 = 7 €, le prix de la trousse.
+
+*Indice.* Lequel des deux objets coûte le plus cher ?
+
+---
+
 ## `D017` · Additionner et soustraire des montants en euros (posé) — CE2, difficulté 3
 
 *Poser et effectuer des additions et des soustractions de montants en euros écrits avec une virgule (toujours deux chiffres de centimes), et rendre la monnaie. Les montants restent inférieurs à 10 000 €.*
@@ -3820,6 +3897,167 @@ Une gourde contient 1,25 L. Vrai ou faux : 4 gourdes contiennent un nombre entie
 
 ---
 
+## `E026` · Reconnaître une situation de proportionnalité — CM1, difficulté 3
+
+*Dire si, quand une grandeur devient 2, 3 ou 4 fois plus grande (ou plus petite), l'autre change de la même façon : prix et nombre d'objets achetés, épaisseur d'une pile et nombre de feuilles. Repérer les situations qui ne le sont pas (taille et âge, prix avec frais de livraison). Toujours avec des grandeurs, en langage naturel, sans tableau.*
+
+> « Identifier une situation de proportionnalité » — *Cycle 3, Cours moyen première année, La proportionnalité*
+> « Au CM1, la notion de proportionnalité entre deux grandeurs est explicitement introduite dans le cadre de la résolution de problèmes » — *Cycle 3, Cours moyen première année, La proportionnalité*
+> « Si j'achète 3 fois plus de pains aux raisins, alors je vais payer 3 fois plus. » — *Cycle 3, Cours moyen première année, La proportionnalité*
+
+**EX-E026-D-01** — decouverte, vrai_faux, 60 s
+
+Elsa achète 2 paquets de gâteaux à 4 € le paquet. Jules achète 3 fois plus de paquets. Vrai ou faux : Jules paie 3 fois plus qu'Elsa.
+
+**Réponse :** True
+
+*Corrigé.* (1) Tous les paquets ont le même prix : 4 €. (2) Elsa paie 2 × 4 = 8 €. (3) Jules achète 3 fois plus de paquets : 2 × 3 = 6 paquets. Il paie 6 × 4 = 24 €. (4) Et 8 × 3 = 24 : Jules paie bien 3 fois plus. Si j'achète 3 fois plus de paquets au même prix, je paie 3 fois plus. L'affirmation est vraie.
+
+*Indice.* Calcule ce que paie Elsa, puis ce que paie Jules.
+
+**EX-E026-D-02** — decouverte, qcm, 60 s
+
+Dans quelle situation, si la première grandeur devient 2 fois plus grande, la seconde devient-elle 2 fois plus grande ?
+
+- **a.** L'âge d'un enfant et sa taille.
+  <br>*Erreur visée :* L'élève pense que tout ce qui augmente ensemble est proportionnel : l'enfant grandit en vieillissant, mais sa taille ne double pas quand son âge double.
+- **b.** Le nombre de timbres achetés et le prix payé, tous les timbres ayant le même prix. ✅
+- **c.** L'âge de Paul et l'âge de sa grande sœur.
+  <br>*Erreur visée :* L'élève voit deux âges qui augmentent en même temps. Mais chaque année, ils augmentent tous les deux d'un an : c'est la même quantité qui s'ajoute, pas le même nombre de fois.
+
+*Corrigé.* (1) Des timbres qui ont tous le même prix : 2 fois plus de timbres, c'est 2 fois plus à payer. C'est une situation de proportionnalité. (2) L'âge et la taille : un enfant grandit en vieillissant, mais à 10 ans il ne mesure pas 2 fois sa taille de 5 ans. (3) Les âges de Paul et de sa grande sœur augmentent ensemble, mais d'un an chacun par an : ils augmentent de la même quantité, pas du même nombre de fois. (4) La bonne réponse est le nombre de timbres et le prix payé.
+
+*Indice.* Pour chaque situation, demande-toi : si je double la première, est-ce que la seconde double forcément ?
+
+**EX-E026-E-01** — entrainement, qcm, 90 s
+
+Une pile de 40 feuilles identiques est épaisse de 8 mm. Léo garde seulement 10 de ces feuilles. Que devient l'épaisseur de la pile ?
+
+- **a.** Elle devient 4 fois plus petite. ✅
+- **b.** Elle diminue de 4 mm.
+  <br>*Erreur visée :* L'élève a bien trouvé que 10 feuilles, c'est 4 fois moins que 40, mais transforme « 4 fois moins » en « 4 de moins » : 8 - 4 = 4 mm. Il confond comparaison multiplicative et comparaison additive.
+- **c.** Elle devient 4 fois plus grande.
+  <br>*Erreur visée :* L'élève a bien vu le nombre 4, mais confond « 4 fois moins » et « 4 fois plus » : avec moins de feuilles, la pile ne peut pas être plus épaisse.
+
+*Corrigé.* (1) 10 feuilles, c'est 4 fois moins que 40 feuilles, car 10 × 4 = 40. (2) Toutes les feuilles ont la même épaisseur : si je prends 4 fois moins de feuilles, la pile est 4 fois moins épaisse. (3) La pile devient 4 fois plus petite : elle mesure 8 ÷ 4 = 2 mm.
+
+*Indice.* Combien de fois moins de feuilles Léo garde-t-il ?
+
+**EX-E026-E-02** — entrainement, vrai_faux, 90 s
+
+Lina a 5 ans et son frère a 10 ans : il a 2 fois l'âge de Lina. Vrai ou faux : dans 5 ans, il aura toujours 2 fois l'âge de Lina.
+
+**Réponse :** False
+
+*Corrigé.* (1) Dans 5 ans, Lina aura 5 + 5 = 10 ans et son frère 10 + 5 = 15 ans. (2) 2 fois l'âge de Lina, ce serait 10 × 2 = 20 ans. Or son frère aura 15 ans. (3) Les deux âges augmentent de la même quantité (5 ans), pas du même nombre de fois : l'âge du frère n'est pas proportionnel à celui de Lina. (4) L'affirmation est fausse.
+
+*Indice.* Calcule l'âge de chacun dans 5 ans.
+
+**EX-E026-M-01** — maitrise, numerique, 120 s
+
+Une fleuriste vend des pots à 2 € pièce, plus 5 € de livraison par commande. 3 pots livrés coûtent 11 €. Combien coûtent 6 pots livrés ?
+
+**Réponse :** 17
+
+*Corrigé.* (1) Les 6 pots coûtent 6 × 2 = 12 €. (2) La livraison se paie une seule fois par commande : on ajoute 5 €, 12 + 5 = 17. (3) 6 pots livrés coûtent 17 €. (4) Ce n'est pas 11 × 2 = 22 € : 2 fois plus de pots ne donnent pas un prix 2 fois plus grand, car la livraison ne double pas. Le prix n'est pas proportionnel au nombre de pots.
+
+*Indice.* La livraison se paie-t-elle une fois ou deux fois ?
+
+**EX-E026-M-02** — maitrise, qcm, 120 s
+
+Un melon coûte 3 €. Le marchand propose une offre : 3 melons pour 7 €. Ana prend l'offre. Paie-t-elle 3 fois plus que pour un seul melon ?
+
+- **a.** Oui : 3 fois plus de melons, donc 3 fois plus cher.
+  <br>*Erreur visée :* L'élève applique la règle « 3 fois plus d'objets, 3 fois plus cher » sans vérifier que le prix d'un melon reste le même. Une offre change le prix : la situation n'est pas proportionnelle.
+- **b.** Oui, car 7 €, c'est plus que 3 €.
+  <br>*Erreur visée :* L'élève confond « payer plus » et « payer 3 fois plus ». 7 € est bien plus que 3 €, mais 3 fois 3 €, cela ferait 9 €.
+- **c.** Non : 3 fois 3 €, c'est 9 €, et elle paie 7 €. ✅
+
+*Corrigé.* (1) 3 fois le prix d'un melon, c'est 3 × 3 = 9 €. (2) Avec l'offre, Ana paie 7 €, et 7 n'est pas 9. (3) Elle achète 3 fois plus de melons mais ne paie pas 3 fois plus : avec une offre, le prix n'est pas proportionnel au nombre de melons. (4) La bonne réponse est Non : 3 fois 3 €, c'est 9 €, et elle paie 7 €.
+
+*Indice.* Calcule 3 fois le prix d'un melon, puis compare avec le prix de l'offre.
+
+---
+
+## `E027` · Résoudre par linéarité multiplicative (fois plus, fois moins) — CM1, difficulté 3
+
+*Résoudre un problème de proportionnalité en multipliant ou en divisant les deux grandeurs par un même nombre entier, et le justifier par une phrase (« 3 fois plus de pains, donc 3 fois plus cher »), sans calculer le prix d'une unité quand c'est inutile. Ni tableau, ni coefficient, ni produit en croix.*
+
+> « Savoir résoudre un problème de proportionnalité » — *Cycle 3, Cours moyen première année, La proportionnalité*
+> « des raisonnements fondés sur la propriété de la linéarité pour la multiplication » — *Cycle 3, Cours moyen première année, La proportionnalité*
+> « les élèves comprennent qu'il est inutile de déterminer le prix unitaire pour répondre à la question posée » — *Cycle 3, Cours moyen première année, La proportionnalité*
+> « Les connaissances et les savoir-faire sur les mesures de longueur, de masse et de contenance sont réinvestis dans le cadre de l'enseignement de la résolution de problèmes, notamment de ceux qui relèvent de la proportionnalité. » — *Cycle 3, Cours moyen première année, Grandeurs et mesures*
+
+**EX-E027-D-01** — decouverte, numerique, 60 s
+
+Au marché, 3 cahiers coûtent 8 €. Combien coûtent 6 de ces cahiers ?
+
+**Réponse :** 16
+
+*Corrigé.* (1) 6 cahiers, c'est 2 fois plus que 3 cahiers, car 3 × 2 = 6. (2) Si j'achète 2 fois plus de cahiers, je paie 2 fois plus : 8 × 2 = 16. (3) 6 cahiers coûtent 16 €. (4) Pas besoin du prix d'un cahier : d'ailleurs, en partageant 8 € en 3, on ne tombe pas sur un nombre entier d'euros.
+
+*Indice.* Combien de fois plus de cahiers achète-t-on ?
+
+**EX-E027-D-02** — decouverte, qcm, 60 s
+
+Pour 4 bols de soupe, il faut 3 carottes. Combien de carottes faut-il pour 12 bols ?
+
+- **a.** 11 carottes
+  <br>*Erreur visée :* L'élève raisonne par ajout : on passe de 4 à 12 bols en ajoutant 8, alors il ajoute 8 carottes (3 + 8 = 11). C'est le modèle additif, faux ici.
+- **b.** 9 carottes ✅
+- **c.** 36 carottes
+  <br>*Erreur visée :* L'élève multiplie les deux nombres qu'il voit, 3 × 12 = 36, comme s'il fallait 3 carottes pour chaque bol. Or 3 carottes servent pour 4 bols.
+
+*Corrigé.* (1) 12 bols, c'est 3 fois plus que 4 bols, car 4 × 3 = 12. (2) Pour 3 fois plus de bols, il faut 3 fois plus de carottes : 3 × 3 = 9. (3) Il faut 9 carottes.
+
+*Indice.* 12 bols, c'est combien de fois 4 bols ?
+
+**EX-E027-E-01** — entrainement, numerique, 90 s
+
+12 bouteilles de jus coûtent 20 €. Combien coûtent 3 de ces bouteilles ?
+
+**Réponse :** 5
+
+*Corrigé.* (1) 3 bouteilles, c'est 4 fois moins que 12 bouteilles, car 3 × 4 = 12. (2) Si j'achète 4 fois moins de bouteilles, je paie 4 fois moins : 20 ÷ 4 = 5. (3) 3 bouteilles coûtent 5 €. (4) Inutile de chercher le prix d'une bouteille : en partageant 20 € en 12, on ne tombe pas sur un nombre entier d'euros.
+
+*Indice.* 3 bouteilles, c'est combien de fois moins que 12 bouteilles ?
+
+**EX-E027-E-02** — entrainement, vrai_faux, 90 s
+
+8 tickets de bus coûtent 14 €. Malo dit : « 32 tickets coûtent 56 €. » A-t-il raison ?
+
+**Réponse :** True
+
+*Corrigé.* (1) 32 tickets, c'est 4 fois plus que 8 tickets, car 8 × 4 = 32. (2) 4 fois plus de tickets, donc 4 fois plus cher : 14 × 4 = 56. (3) Malo a raison : l'affirmation est vraie.
+
+*Indice.* 32 tickets, c'est combien de fois 8 tickets ?
+
+**EX-E027-M-01** — maitrise, qcm, 120 s
+
+Un boulanger fait 14 pains avec 6 kg de farine. Combien de farine lui faut-il pour faire 42 pains ?
+
+- **a.** 34 kg
+  <br>*Erreur visée :* L'élève raisonne par ajout : de 14 à 42 pains, on ajoute 28, alors il ajoute 28 kg (6 + 28 = 34). C'est le modèle additif, faux ici.
+- **b.** 252 kg
+  <br>*Erreur visée :* L'élève multiplie les deux nombres de l'énoncé, 6 × 42 = 252, comme si chaque pain demandait 6 kg de farine. Or 6 kg servent pour 14 pains.
+- **c.** 18 kg ✅
+
+*Corrigé.* (1) 42 pains, c'est 3 fois plus que 14 pains, car 14 × 3 = 42. (2) Pour 3 fois plus de pains, il faut 3 fois plus de farine : 6 × 3 = 18. (3) Il lui faut 18 kg de farine.
+
+*Indice.* Cherche combien de fois 14 pains il y a dans 42 pains.
+
+**EX-E027-M-02** — maitrise, numerique, 120 s
+
+Un club de foot paie 492 € pour 36 maillots identiques. Combien paierait-il pour 9 de ces maillots ?
+
+**Réponse :** 123
+
+*Corrigé.* (1) 9 maillots, c'est 4 fois moins que 36 maillots, car 9 × 4 = 36. (2) 4 fois moins de maillots, donc 4 fois moins cher : on calcule 492 ÷ 4. (3) On pose la division : en 4 centaines, 1 fois 4, reste 0 ; en 9 dizaines, 2 fois 4, reste 1 ; en 12 unités, 3 fois 4, reste 0. Donc 492 ÷ 4 = 123. (4) 9 maillots coûtent 123 €. Pas besoin du prix d'un maillot, qui demanderait de diviser par 36.
+
+*Indice.* 36 maillots, c'est combien de fois 9 maillots ?
+
+---
+
 ## `D014` · Convertir des mesures écrites avec une virgule — CM1, difficulté 4
 
 *Convertir une longueur, une masse ou une contenance écrite avec une virgule dans une unité plus petite, en s'appuyant sur les relations entre unités et sans tableau de conversion (3,5 m = 3 m + 50 cm = 350 cm).*
@@ -4563,6 +4801,161 @@ Pour une course solidaire, 3 équipes de 12 coureurs courent chacun 4,15 km. Com
 
 ---
 
+## `E028` · Résoudre par linéarité additive — CM2, difficulté 4
+
+*Résoudre un problème de proportionnalité en ajoutant ou en soustrayant deux situations connues : si 4 pains coûtent 7 € et 3 pains 5,25 €, alors 7 pains coûtent 12,25 €. Raisonnement rédigé en phrases, sans tableau.*
+
+> « Seuls des raisonnements fondés sur les propriétés de linéarité pour la multiplication et pour l'addition sont attendus » — *Cycle 3, Cours moyen deuxième année, La proportionnalité*
+> « Savoir résoudre un problème de proportionnalité » — *Cycle 3, Cours moyen deuxième année, La proportionnalité*
+
+**EX-E028-D-01** — decouverte, numerique, 60 s
+
+2 bouteilles de lait coûtent 3 € et 5 bouteilles coûtent 7,50 €. Combien coûtent 7 bouteilles ?
+
+**Réponse :** 10.5
+
+*Corrigé.* (1) 7 bouteilles, c'est 2 bouteilles et 5 bouteilles : 2 + 5 = 7. (2) Pour 7 bouteilles, je paie le prix de 2 bouteilles plus le prix de 5 bouteilles. (3) On pose l'addition : 3{,}00 + 7{,}50 = 10{,}50. (4) 7 bouteilles coûtent 10,50 €.
+
+*Indice.* Écris 7 comme une somme de deux nombres de l'énoncé.
+
+**EX-E028-D-02** — decouverte, qcm, 60 s
+
+4 billets de musée coûtent 18 € et 6 billets coûtent 27 €. Comment trouver le prix de 10 billets ?
+
+- **a.** On ajoute 18 € et 27 €, car 10 billets, c'est 4 billets et 6 billets. ✅
+- **b.** On ajoute 4 € à 27 €, car on ajoute 4 billets.
+  <br>*Erreur visée :* L'élève ajoute au prix le nombre de billets ajoutés : c'est le modèle additif. Mais 4 billets ne coûtent pas 4 €, ils coûtent 18 €.
+- **c.** C'est impossible sans connaître le prix d'un billet.
+  <br>*Erreur visée :* L'élève croit qu'il faut toujours passer par le prix d'un billet. Ici, on peut ajouter directement le prix de 4 billets et celui de 6 billets.
+
+*Corrigé.* (1) 10 billets, c'est 4 billets et 6 billets : 4 + 6 = 10. (2) Pour 10 billets, je paie donc le prix de 4 billets plus le prix de 6 billets. (3) La bonne réponse est on ajoute 18 € et 27 €, ce qui donne 18 + 27 = 45 €.
+
+*Indice.* 10 billets, c'est combien de billets plus combien de billets ?
+
+**EX-E028-E-01** — entrainement, numerique, 90 s
+
+7 kg de carottes coûtent 9,10 € et 3 kg coûtent 3,90 €. Combien coûtent 4 kg de carottes ?
+
+**Réponse :** 5.2
+
+*Corrigé.* (1) 4 kg, c'est 7 kg moins 3 kg : 7 - 3 = 4. (2) Le prix de 4 kg, c'est donc le prix de 7 kg moins le prix de 3 kg. (3) On pose la soustraction : 9{,}10 - 3{,}90 = 5{,}20. (4) 4 kg de carottes coûtent 5,20 €.
+
+*Indice.* 4 kg, peux-tu l'obtenir avec 7 kg et 3 kg ?
+
+**EX-E028-E-02** — entrainement, vrai_faux, 90 s
+
+5 cahiers coûtent 8,50 € et 2 cahiers coûtent 3,40 €. Lila dit : « 10 cahiers coûtent 11,90 €, car 8{,}50 + 3{,}40 = 11{,}90. » A-t-elle raison ?
+
+**Réponse :** False
+
+*Corrigé.* (1) Lila a ajouté le prix de 5 cahiers et celui de 2 cahiers : elle a trouvé le prix de 5 + 2 = 7 cahiers, pas de 10 cahiers. (2) 10 cahiers, c'est 5 cahiers et encore 5 cahiers : 5 + 5 = 10. (3) Le prix de 10 cahiers est donc 8{,}50 + 8{,}50 = 17{,}00, soit 17 €. (4) L'affirmation de Lila est fausse. Avant d'ajouter deux prix, on vérifie que les quantités font bien le total cherché.
+
+*Indice.* Lila a ajouté les prix de combien de cahiers en tout ?
+
+**EX-E028-M-01** — maitrise, numerique, 120 s
+
+4 kg de poires coûtent 10,80 € et 5 kg coûtent 13,50 €. Combien coûtent 13 kg de poires ?
+
+**Réponse :** 35.1
+
+*Corrigé.* (1) On écrit 13 kg avec les masses connues : 13 = 4 + 4 + 5. (2) Le prix de 13 kg, c'est le prix de 4 kg, plus le prix de 4 kg, plus le prix de 5 kg. (3) On pose les additions : 10{,}80 + 10{,}80 = 21{,}60, puis 21{,}60 + 13{,}50 = 35{,}10. (4) 13 kg de poires coûtent 35,10 €.
+
+*Indice.* Écris 13 comme une somme de 4 et de 5.
+
+**EX-E028-M-02** — maitrise, qcm, 120 s
+
+2 kg de cerises coûtent 9 € et 5 kg coûtent 22,50 €. Léa paie 31,50 €. Quelle masse de cerises a-t-elle achetée ?
+
+- **a.** 14 kg
+  <br>*Erreur visée :* L'élève voit que 31,50 €, c'est 9 € de plus que 22,50 €, et ajoute 9 aux 5 kg (5 + 9 = 14) : il ajoute des euros à des kilos. C'est le modèle additif, faux ici.
+- **b.** 7 kg ✅
+- **c.** 9 kg
+  <br>*Erreur visée :* L'élève trouve bien que 9 + 22{,}50 = 31{,}50, mais répond avec le prix 9 € au lieu de la masse qui lui correspond (2 kg) : il confond les deux grandeurs.
+
+*Corrigé.* (1) On cherche une masse à partir d'un prix : quels prix connus, ajoutés, font 31,50 € ? (2) On pose l'addition : 9{,}00 + 22{,}50 = 31{,}50. Léa paie donc le prix de 2 kg plus le prix de 5 kg. (3) Elle a acheté 2 + 5 = 7 kg : la bonne réponse est 7 kg.
+
+*Indice.* Quels prix de l'énoncé, ajoutés, donnent 31,50 € ?
+
+---
+
+## `E029` · Problèmes de proportionnalité en plusieurs étapes — CM2, difficulté 4
+
+*Enchaîner plusieurs raisonnements de linéarité quand on ne passe pas d'une quantité à l'autre par un nombre entier de fois : 6 cahiers coûtent 9 €, donc 2 cahiers coûtent 3 €, donc 10 cahiers coûtent 15 €. Combiner « fois plus » et somme. Toujours en phrases, sans tableau, ni coefficient, ni produit en croix.*
+
+> « les savoir-faire développés se consolident et s'enrichissent à travers la résolution de problèmes nécessitant plusieurs étapes » — *Cycle 3, Cours moyen deuxième année, La proportionnalité*
+> « ni l'utilisation du coefficient de proportionnalité, ni le recours au « produit en croix » ne sont enseignés au cours moyen » — *Cycle 3, Cours moyen deuxième année, La proportionnalité*
+> « Le travail sur la proportionnalité est aussi une occasion de renforcer les connaissances des élèves sur les grandeurs et leurs mesures. » — *Cycle 3, Cours moyen deuxième année, Grandeurs et mesures*
+
+**EX-E029-D-01** — decouverte, numerique, 60 s
+
+4 pots de peinture coûtent 18 €. Cherche d'abord le prix de 2 pots. Combien coûtent 6 pots ?
+
+**Réponse :** 27
+
+*Corrigé.* (1) 2 pots, c'est 2 fois moins que 4 pots : ils coûtent 2 fois moins, 18 ÷ 2 = 9 €. (2) 6 pots, c'est 3 fois plus que 2 pots : ils coûtent 3 fois plus, 9 × 3 = 27 €. (3) 6 pots coûtent 27 €. (4) Autre chemin : 6 pots, c'est 4 pots et 2 pots, donc 18 + 9 = 27 €.
+
+*Indice.* 2 pots, c'est combien de fois moins que 4 pots ?
+
+**EX-E029-D-02** — decouverte, qcm, 60 s
+
+Une recette pour 6 personnes demande 4 tomates. Combien de tomates faut-il pour 9 personnes ?
+
+- **a.** 7 tomates
+  <br>*Erreur visée :* L'élève raisonne par ajout : 3 personnes de plus, donc 3 tomates de plus (4 + 3 = 7). C'est le modèle additif, faux ici.
+- **b.** 6 tomates ✅
+- **c.** 12 tomates
+  <br>*Erreur visée :* L'élève voit que 9, c'est 3 fois 3, et multiplie les 4 tomates par 3. Mais 4 tomates servent pour 6 personnes, pas pour 3 : 12 tomates, c'est pour 18 personnes.
+
+*Corrigé.* (1) On ne passe pas de 6 à 9 en multipliant par un nombre entier : on fait une étape intermédiaire. (2) 3 personnes, c'est 2 fois moins que 6 personnes : il faut 2 fois moins de tomates, 4 ÷ 2 = 2 tomates. (3) 9 personnes, c'est 6 personnes et 3 personnes : 4 + 2 = 6 tomates. (4) Il faut 6 tomates.
+
+*Indice.* Combien de tomates faut-il pour 3 personnes ?
+
+**EX-E029-E-01** — entrainement, numerique, 90 s
+
+10 ballons coûtent 45 €. Combien coûtent 4 de ces ballons ?
+
+**Réponse :** 18
+
+*Corrigé.* (1) On ne passe pas de 10 à 4 ballons en divisant par un nombre entier : on passe par 2 ballons. (2) 2 ballons, c'est 5 fois moins que 10 ballons : ils coûtent 5 fois moins, 45 ÷ 5 = 9 €. (3) 4 ballons, c'est 2 fois plus que 2 ballons : ils coûtent 2 fois plus, 9 × 2 = 18 €. (4) 4 ballons coûtent 18 €.
+
+*Indice.* Cherche d'abord le prix de 2 ballons.
+
+**EX-E029-E-02** — entrainement, vrai_faux, 90 s
+
+15 kg de pommes donnent 9 litres de jus. Malik dit : « Avec 25 kg, j'aurai 19 litres, car j'ajoute 10 de chaque côté. » A-t-il raison ?
+
+**Réponse :** False
+
+*Corrigé.* (1) 5 kg, c'est 3 fois moins que 15 kg : on obtient 3 fois moins de jus, 9 ÷ 3 = 3 litres. (2) 25 kg, c'est 5 fois plus que 5 kg : on obtient 5 fois plus de jus, 3 × 5 = 15 litres. (3) Avec 25 kg, on obtient 15 litres, pas 19. Ajouter 10 kg n'ajoute pas 10 litres : 10 kg donnent 6 litres. (4) L'affirmation de Malik est fausse.
+
+*Indice.* Combien de litres donnent 5 kg de pommes ?
+
+**EX-E029-M-01** — maitrise, numerique, 120 s
+
+Avec 21 €, Hugo achète 6 carnets identiques. Combien de ces carnets peut-il acheter avec 35 € ?
+
+**Réponse :** 10
+
+*Corrigé.* (1) On cherche un nombre de carnets, à partir d'une somme d'argent. (2) 7 €, c'est 3 fois moins que 21 € : on achète 3 fois moins de carnets, 6 ÷ 3 = 2 carnets. (3) 35 €, c'est 5 fois plus que 7 € : on achète 5 fois plus de carnets, 2 × 5 = 10 carnets. (4) Avec 35 €, Hugo peut acheter 10 carnets.
+
+*Indice.* Combien de carnets peut-on acheter avec 7 € ?
+
+**EX-E029-M-02** — maitrise, qcm, 120 s
+
+Un fleuriste vend 12 roses pour 18 €. Combien coûtent 28 roses ?
+
+- **a.** 34 €
+  <br>*Erreur visée :* L'élève raisonne par ajout : 16 roses de plus, donc 16 € de plus (18 + 16 = 34). C'est le modèle additif, faux ici.
+- **b.** 36 €
+  <br>*Erreur visée :* L'élève voit que 28, c'est un peu plus que 2 fois 12, et double le prix : 18 × 2 = 36 €. Mais 36 €, c'est le prix de 24 roses : il oublie les 4 roses restantes.
+- **c.** 42 € ✅
+
+*Corrigé.* (1) On ne passe pas de 12 à 28 roses en multipliant par un nombre entier : on passe par 4 roses. (2) 4 roses, c'est 3 fois moins que 12 roses : elles coûtent 3 fois moins, 18 ÷ 3 = 6 €. (3) 28 roses, c'est 7 fois plus que 4 roses : elles coûtent 7 fois plus, 6 × 7 = 42 €. (4) 28 roses coûtent 42 €. Autre chemin : 28 roses, c'est 12 roses, 12 roses et 4 roses, donc 18 + 18 + 6 = 42 €.
+
+*Indice.* Cherche d'abord le prix de 4 roses.
+
+---
+
 ## `B040` · Division euclidienne par un nombre à deux chiffres — 6e, difficulté 4
 
 *Effectuer la division euclidienne d'un entier par un entier inférieur à 100 et l'utiliser pour résoudre un problème (partage ou groupement, interprétation du reste)*
@@ -4878,6 +5271,493 @@ Sans poser d'opération, quel calcul donne le plus grand résultat ?
 
 ---
 
+## `E030` · Grandeurs proportionnelles : définition et modèle — 6e, difficulté 4
+
+*Savoir que deux grandeurs sont proportionnelles quand la quantité « pour une unité » reste la même, et le relier aux expressions courantes (prix au kilo, battements du cœur par minute). Décider si une situation relève de ce modèle, et justifier un refus (prix au kilo différent, abonnement, frais fixes). Le mot « coefficient » n'est pas employé.*
+
+> « Connaître la définition de la proportionnalité entre deux grandeurs et la mettre en lien avec des expressions de la vie courante » — *Cycle 3, classe de 6e, La proportionnalité*
+> « Identifier si une situation relève du « modèle » de la proportionnalité » — *Cycle 3, classe de 6e, La proportionnalité*
+> « La définition de la proportionnalité entre deux grandeurs est formalisée et reliée à l'utilisation d'expression du type « prix au kilo ». » — *Cycle 3, classe de 6e, La proportionnalité*
+
+**EX-E030-D-01** — decouverte, vrai_faux, 75 s
+
+À la boulangerie, 3 baguettes coûtent 3,60 € et 5 baguettes coûtent 6 €. Calcule le prix d'une baguette dans chaque cas. Vrai ou faux : pour ces deux achats, le prix payé est proportionnel au nombre de baguettes.
+
+**Réponse :** True
+
+*Corrigé.* (1) Deux grandeurs sont proportionnelles quand la quantité pour une unité reste la même. Ici, l'unité est une baguette : on cherche le prix d'une baguette dans chaque cas. (2) Pour 3 baguettes : 3{,}60 ÷ 3 = 1{,}20. Une baguette coûte 1,20 €. (3) Pour 5 baguettes : 6 ÷ 5 = 1{,}20. Une baguette coûte 1,20 € là aussi. (4) Le prix d'une baguette est le même dans les deux cas : pour ces deux achats, le prix payé est proportionnel au nombre de baguettes. C'est vrai. (5) Attention : passer de 3 à 5 baguettes, c'est ajouter 2 baguettes, mais le prix n'augmente pas de 2 € : il augmente de 2 × 1{,}20 = 2{,}40 €, et 6 - 3{,}60 = 2{,}40.
+
+*Indice.* Divise chaque prix par le nombre de baguettes. Trouves-tu le même prix pour une baguette ?
+
+**EX-E030-D-02** — decouverte, qcm, 60 s
+
+Au marché, une étiquette indique : « Tomates : 3 € le kilo ». Quelle phrase explique correctement cette étiquette ?
+
+- **a.** On paie 3 € quelle que soit la masse de tomates achetée.
+  <br>*Erreur visée :* L'élève lit l'étiquette comme un prix unique pour tout l'achat, comme un forfait : il oublie que « le kilo » désigne une masse de 1 kg.
+- **b.** 3 kg de tomates coûtent 1 €.
+  <br>*Erreur visée :* L'élève inverse les deux grandeurs : il associe 3 à la masse et 1 au prix, alors que l'étiquette donne le prix (3 €) d'une masse de 1 kg.
+- **c.** Chaque kilogramme coûte 3 €, donc 2 kg coûtent 6 €. ✅
+- **d.** 1 kg coûte 3 €, donc 2 kg coûtent 4 €.
+  <br>*Erreur visée :* Modèle additif : l'élève ajoute 1 kg d'un côté et 1 € de l'autre. Or 1 kg de plus coûte 3 € de plus, pas 1 €.
+
+*Corrigé.* (1) « 3 € le kilo » se lit « 3 € pour 1 kilogramme » : c'est le prix pour une unité de masse, le prix au kilo. (2) Ce prix pour 1 kg reste le même quelle que soit la quantité achetée : le prix payé est proportionnel à la masse de tomates. (3) 2 kg, c'est 2 fois 1 kg : on paie 2 fois 3 €, soit 2 × 3 = 6 €. (4) La bonne phrase est la c.
+
+*Indice.* « Le kilo » : pour quelle masse de tomates paie-t-on 3 € ?
+
+**EX-E030-E-01** — entrainement, qcm, 100 s
+
+Une salle d'escalade fait payer 8 € d'inscription pour l'année, puis 5 € par séance. Le prix payé dans l'année est-il proportionnel au nombre de séances ?
+
+- **a.** Oui, car chaque séance coûte toujours 5 €.
+  <br>*Erreur visée :* L'élève ne regarde que le prix d'une séance et oublie les 8 € d'inscription, payés une seule fois quel que soit le nombre de séances.
+- **b.** Non : 2 séances coûtent 18 € et 4 séances coûtent 28 €, ce n'est pas le double. ✅
+- **c.** Oui, car plus on fait de séances, plus on paie.
+  <br>*Erreur visée :* L'élève confond « augmenter en même temps » et « être proportionnel » : le prix augmente bien, mais 2 fois plus de séances ne coûtent pas 2 fois plus cher.
+- **d.** On ne peut pas savoir sans connaître le nombre de séances.
+  <br>*Erreur visée :* L'élève croit qu'il faut un cas précis pour décider. On peut tester avec des nombres de séances que l'on choisit, par exemple 2 et 4.
+
+*Corrigé.* (1) Prix pour 2 séances : 8 + 2 × 5 = 18, soit 18 €. (2) Prix pour 4 séances : 8 + 4 × 5 = 28, soit 28 €. (3) 4 séances, c'est 2 fois plus de séances que 2 séances. Si le prix était proportionnel, on paierait 2 fois plus : 2 × 18 = 36 €. Or on paie 28 €. (4) Les 8 € d'inscription sont payés une seule fois, quel que soit le nombre de séances : ce sont des frais fixes. Le prix n'est pas proportionnel au nombre de séances. Réponse b.
+
+*Indice.* Calcule ce que l'on paie pour 2 séances, puis pour 4 séances. Le prix a-t-il doublé ?
+
+**EX-E030-E-02** — entrainement, vrai_faux, 90 s
+
+Un magasin vend la bouteille d'eau 0,80 € à l'unité, et le pack de 6 de ces bouteilles 3 €. Vrai ou faux : le prix payé est proportionnel au nombre de bouteilles achetées.
+
+**Réponse :** False
+
+*Corrigé.* (1) Si le prix était proportionnel, 6 bouteilles coûteraient 6 fois le prix d'une bouteille : 6 × 0{,}80 = 4{,}80, soit 4,80 €. (2) Or le pack de 6 bouteilles coûte 3 €, et non 4,80 €. (3) Autre façon de le voir : dans le pack, une bouteille revient à 3 ÷ 6 = 0{,}50, soit 0,50 €, contre 0,80 € à l'unité. Le prix pour une bouteille n'est pas le même. (4) Le prix payé n'est donc pas proportionnel au nombre de bouteilles : le pack est une promotion. C'est faux.
+
+*Indice.* Combien coûteraient 6 bouteilles achetées une par une ? Compare avec le prix du pack.
+
+**EX-E030-M-01** — maitrise, qcm, 120 s
+
+Laquelle de ces situations est une situation de proportionnalité ?
+
+- **a.** La taille d'un enfant et son âge.
+  <br>*Erreur visée :* L'élève pense que si l'âge double, la taille double. Or un enfant de 10 ans ne mesure pas 2 fois plus qu'à 5 ans : sa croissance ralentit.
+- **b.** Le prix d'une course de taxi : 4 € au départ, puis 2 € par kilomètre.
+  <br>*Erreur visée :* L'élève ne voit que le prix par kilomètre et oublie les 4 € payés au départ : 10 km coûtent 24 €, mais 20 km coûtent 44 €, pas 48 €.
+- **c.** Le prix d'entrées à la piscine à 4 € l'entrée, la cinquième entrée étant offerte.
+  <br>*Erreur visée :* L'élève voit un prix par entrée et oublie la promotion : 4 entrées coûtent 16 €, et 5 entrées coûtent 16 € elles aussi, et non 20 €.
+- **d.** La longueur de tissu achetée et le prix payé, quand le tissu est vendu 6 € le mètre. ✅
+
+*Corrigé.* (1) Deux grandeurs sont proportionnelles quand la quantité pour une unité reste la même, quelle que soit la quantité. (2) Tissu : chaque mètre coûte 6 €, que l'on achète 1 m ou 10 m. 2 fois plus de tissu coûte 2 fois plus cher : c'est une situation de proportionnalité. (3) Taxi : les 4 € du départ sont payés une seule fois. 10 km coûtent 4 + 10 × 2 = 24 €, 20 km coûtent 4 + 20 × 2 = 44 €, et non 2 × 24 = 48 €. (4) Piscine : 4 entrées coûtent 4 × 4 = 16 €, et 5 entrées coûtent 16 € elles aussi grâce à l'entrée offerte. Le prix pour une entrée change. (5) Taille et âge : un enfant ne grandit pas de la même longueur chaque année, et sa taille ne double pas quand son âge double. (6) Réponse d.
+
+*Indice.* Pour chaque situation, demande-toi : si je double la première grandeur, la seconde double-t-elle ?
+
+**EX-E030-M-02** — maitrise, numerique, 150 s
+
+Sur un étal, les pommes de terre sont vendues en sacs : 7 € le sac de 4 kg, 16 € le sac de 10 kg. Si le prix était proportionnel à la masse, avec le même prix au kilo que le petit sac, combien coûterait le sac de 10 kg, en euros ?
+
+**Réponse :** 17.5
+
+*Corrigé.* (1) On ne passe pas de 4 kg à 10 kg en multipliant par un nombre entier : on cherche d'abord le prix d'une masse plus petite. (2) 2 kg, c'est 2 fois moins que 4 kg : avec un prix proportionnel, 2 kg coûteraient 7 ÷ 2 = 3{,}50, soit 3,50 €. (3) 10 kg, c'est 5 fois 2 kg : le sac de 10 kg coûterait 5 × 3{,}50 = 17{,}50, soit 17,50 €. (4) Autre méthode, en ajoutant : 10 kg, c'est 4 kg, plus 4 kg, plus 2 kg. Le prix serait 7 + 7 + 3{,}50 = 17{,}50 €. (5) Le vendeur demande 16 € et non 17,50 € : le grand sac est moins cher au kilo. Le prix réel n'est donc pas proportionnel à la masse.
+
+*Indice.* Quel serait le prix de 2 kg ? Combien de fois 2 kg y a-t-il dans 10 kg ?
+
+---
+
+## `E031` · Passage par l'unité et choix de la procédure — 6e, difficulté 4
+
+*Calculer la valeur pour une unité (prix d'un objet, quantité pour une personne) puis la multiplier, et choisir entre ce passage par l'unité et la linéarité multiplicative ou additive selon les nombres en jeu. Les unités des grandeurs figurent dans les calculs.*
+
+> « Résoudre un problème de proportionnalité en choisissant une procédure adaptée : propriété de linéarité pour la multiplication ou l'addition, retour à l'unité » — *Cycle 3, classe de 6e, La proportionnalité*
+> « Il résout des problèmes qui en relèvent en utilisant la procédure la mieux adaptée aux nombres mis en jeu : linéarité multiplicative ou additive, retour à l'unité. » — *Cycle 3, classe de 6e, La proportionnalité*
+> « Comme au cours moyen, il est encouragé à laisser apparaître à l'intérieur des calculs les unités des grandeurs manipulées. » — *Cycle 3, classe de 6e, La proportionnalité*
+
+**EX-E031-D-01** — decouverte, numerique, 75 s
+
+5 classeurs identiques coûtent 9,50 €. Calcule d'abord le prix d'un classeur. Combien coûtent 4 de ces classeurs, en euros ?
+
+**Réponse :** 7.6
+
+*Corrigé.* (1) On ne passe pas de 5 classeurs à 4 classeurs en multipliant par un nombre entier : on passe par le prix d'un classeur. (2) 1 classeur coûte 5 fois moins que 5 classeurs : 9{,}50 ÷ 5 = 1{,}90, soit 1,90 € le classeur. (3) 4 classeurs coûtent 4 fois plus qu'un classeur : 4 × 1{,}90 = 7{,}60, soit 7,60 €. (4) Contrôle : 4 classeurs, c'est un classeur de moins que 5 : 9{,}50 - 1{,}90 = 7{,}60.
+
+*Indice.* Combien coûte un seul classeur ? Divise le prix par le nombre de classeurs.
+
+**EX-E031-D-02** — decouverte, qcm, 75 s
+
+Une recette de soupe pour 6 personnes demande 1 200 g de légumes. Quelle masse de légumes faut-il pour 5 personnes ?
+
+- **a.** 200 g
+  <br>*Erreur visée :* L'élève calcule la masse pour une personne, 1 200 ÷ 6 = 200, et s'arrête là : il oublie de multiplier par 5.
+- **b.** 240 g
+  <br>*Erreur visée :* L'élève divise 1 200 par 5, le nombre de personnes demandé, au lieu de diviser par 6, le nombre de personnes de la recette : 1 200 ÷ 5 = 240.
+- **c.** 6 000 g
+  <br>*Erreur visée :* L'élève multiplie la masse de la recette par 5 sans passer par une personne : 1 200 × 5 = 6 000. Il obtient la masse pour 30 personnes.
+- **d.** 1 000 g ✅
+
+*Corrigé.* (1) On ne passe pas de 6 personnes à 5 personnes en multipliant par un nombre entier : on cherche la masse pour une personne. (2) Pour 1 personne, il faut 6 fois moins de légumes : 1 200 ÷ 6 = 200, soit 200 g. (3) Pour 5 personnes, il en faut 5 fois plus : 5 × 200 = 1 000, soit 1 000 g. Réponse d. (4) Contrôle : pour une personne de moins, il faut 200 g de moins, et 1 200 - 200 = 1 000.
+
+*Indice.* Quelle masse de légumes faut-il pour une seule personne ?
+
+**EX-E031-E-01** — entrainement, numerique, 90 s
+
+8 m de corde coûtent 13,60 €. Combien coûtent 5 m de cette corde, en euros ?
+
+**Réponse :** 8.5
+
+*Corrigé.* (1) On ne passe pas de 8 m à 5 m en multipliant par un nombre entier : on passe par le prix d'un mètre. (2) Prix d'un mètre : 13{,}60 ÷ 8 = 1{,}70, soit 1,70 € le mètre. (3) Prix de 5 m : 5 × 1{,}70 = 8{,}50, soit 8,50 €. (4) Contrôle : 4 m, la moitié de 8 m, coûtent 13{,}60 ÷ 2 = 6{,}80 €. 5 m coûtent un peu plus, et 8,50 € est bien un peu plus que 6,80 €.
+
+*Indice.* Commence par le prix d'un mètre de corde.
+
+**EX-E031-E-02** — entrainement, vrai_faux, 75 s
+
+12 croissants coûtent 10,80 €. Nadia cherche le prix de 36 croissants. Elle dit : « 36 croissants, c'est 3 fois plus que 12 croissants, donc je paierai 3 fois plus, soit 32,40 €. Pas besoin du prix d'un croissant. » Nadia a-t-elle raison ?
+
+**Réponse :** True
+
+*Corrigé.* (1) 3 × 12 = 36 : 36 croissants, c'est bien 3 fois plus que 12 croissants. (2) Le prix est proportionnel au nombre de croissants : 3 fois plus de croissants coûtent 3 fois plus cher. 3 × 10{,}80 = 32{,}40, soit 32,40 €. (3) Nadia a choisi la procédure adaptée aux nombres : passer par le prix d'un croissant obligerait à diviser 10,80 € par 12, un calcul plus long et inutile ici. (4) C'est vrai.
+
+*Indice.* Combien de fois 12 croissants y a-t-il dans 36 croissants ?
+
+**EX-E031-M-01** — maitrise, numerique, 120 s
+
+Pour 6 personnes, il faut 750 g de pâtes. Quelle masse de pâtes faut-il pour 15 personnes, en grammes ?
+
+**Réponse :** 1875
+
+*Corrigé.* (1) On ne passe pas de 6 à 15 personnes en multipliant par un nombre entier. Deux procédures sont possibles. (2) Passage par l'unité : pour 1 personne, 750 ÷ 6 = 125, soit 125 g ; pour 15 personnes, 15 × 125 = 1 875, soit 1 875 g. (3) Linéarité : pour 3 personnes, 2 fois moins que pour 6, il faut 750 ÷ 2 = 375 g. 15 personnes, c'est 5 fois 3 personnes : 5 × 375 = 1 875 g. (4) Les deux procédures donnent 1 875 g. Contrôle : 15 personnes, c'est un peu plus que 2 fois 6 personnes, et 1 875 g est un peu plus que 2 × 750 = 1 500 g.
+
+*Indice.* Cherche la masse de pâtes pour 1 personne, ou pour 3 personnes.
+
+**EX-E031-M-02** — maitrise, numerique, 150 s
+
+3 melons identiques coûtent 7,50 €. Lou a 22 €. Combien de melons peut-elle acheter au maximum ?
+
+**Réponse :** 8
+
+*Corrigé.* (1) Prix d'un melon : 7{,}50 ÷ 3 = 2{,}50, soit 2,50 € le melon. (2) Pour compter plus facilement, on groupe les melons par 2 : 2 melons coûtent 2 × 2{,}50 = 5, soit 5 €, un prix rond. (3) Combien de fois 5 € dans 22 € ? 4 × 5 = 20 et 5 × 5 = 25 : 4 fois, et il reste 22 - 20 = 2 €. Avec 20 €, Lou achète 4 fois 2 melons, soit 8 melons. (4) Les 2 € qui restent ne suffisent pas pour un melon de plus, qui coûte 2,50 € : 9 melons coûteraient 9 × 2{,}50 = 22{,}50 €, plus que 22 €. (5) Lou peut acheter au maximum 8 melons.
+
+*Indice.* Combien coûte un melon ? Et 2 melons ?
+
+---
+
+## `E003` · Tableau de proportionnalité : représenter et compléter — 6e, difficulté 4
+
+*Présenter une situation de proportionnalité dans un tableau, avec le nom et l'unité de chaque grandeur, ou avec des flèches, puis compléter les cases manquantes en s'appuyant sur les relations entre les nombres (double, triple, moitié, somme de deux colonnes) ou sur la valeur pour une unité. Ni coefficient, ni produit en croix.*
+
+> « Représenter une situation de proportionnalité à l'aide d'un tableau ou de notations symboliques » — *Cycle 3, classe de 6e, La proportionnalité*
+> « Lorsqu'il s'agit d'un tableau, le nom de chaque grandeur, accompagné de son unité, y figure explicitement. » — *Cycle 3, classe de 6e, La proportionnalité*
+> « La recherche de données manquantes dans un tableau s'appuie sur le sens de la proportionnalité » — *Cycle 3, classe de 6e, La proportionnalité*
+> « L'élève sait repérer des relations multiplicatives simples entre des nombres (double, quadruple, moitié, tiers, quart). » — *Cycle 3, classe de 6e, La proportionnalité*
+
+**EX-E003-D-01** — decouverte, numerique, 60 s
+
+Au marché, le prix des poires est proportionnel à leur masse. Voici un tableau à compléter : \begin{array}{|l|c|c|c|} \hline \text{Masse (kg)} & 2 & 4 & 6 \\ \hline \text{Prix (euros)} & 5 & 10 & ? \\ \hline \end{array} Quel prix faut-il écrire à la place du point d'interrogation, en euros ?
+
+**Réponse :** 15
+
+*Corrigé.* (1) Chaque colonne associe une masse de poires et son prix. 6 kg, c'est 3 fois 2 kg, car 3 × 2 = 6. (2) Le prix est proportionnel à la masse : 3 fois plus de poires coûtent 3 fois plus cher, 3 × 5 = 15. (3) Autre méthode : 6 kg, c'est 2 kg et 4 kg ensemble. On ajoute les prix de ces deux colonnes : 5 + 10 = 15. (4) On écrit 15 dans la case : 6 kg de poires coûtent 15 €.
+
+*Indice.* Compare 6 kg avec 2 kg : combien de fois plus ? Tu peux aussi additionner deux colonnes.
+
+**EX-E003-D-02** — decouverte, qcm, 75 s
+
+Chez le fleuriste, une botte de 5 tulipes coûte 4 €. Kenza a rempli ce tableau mais a oublié le nom des lignes : \begin{array}{|l|c|c|c|} \hline \text{?} & 5 & 10 & 15 \\ \hline \text{?} & 4 & 8 & 12 \\ \hline \end{array} Quels noms doit-elle écrire ?
+
+- **a.** En haut « Prix (euros) », en bas « Nombre de tulipes »
+  <br>*Erreur visée :* L'élève inverse les deux grandeurs. Avec ces noms, on paierait 5 € pour 4 tulipes, alors que ce sont 5 tulipes qui coûtent 4 €.
+- **b.** En haut « Nombre de tulipes », en bas « Prix (euros) » ✅
+- **c.** En haut « Nombre de bottes », en bas « Prix (euros) »
+  <br>*Erreur visée :* L'élève confond les bottes et les tulipes. 5 bottes coûteraient 5 × 4 = 20 €, et non 4 €.
+- **d.** En haut « Nombre de tulipes », en bas « Prix d'une tulipe (euros) »
+  <br>*Erreur visée :* L'élève confond le prix payé et le prix pour une tulipe. Le prix d'une tulipe ne change pas avec le nombre de tulipes : il ne peut pas valoir 4 €, puis 8 €, puis 12 €.
+
+*Corrigé.* (1) La première colonne doit traduire la phrase de l'énoncé : 5 tulipes coûtent 4 €. En haut le nombre de tulipes (5), en bas le prix en euros (4). (2) Les autres colonnes le confirment : 10 tulipes, c'est 2 fois plus que 5, et elles coûtent 2 fois plus, 2 × 4 = 8 €. 15 tulipes, c'est 3 fois plus que 5, et 3 × 4 = 12 €. (3) Dans un tableau, chaque ligne porte le nom de la grandeur et son unité : sans eux, on ne sait pas ce que représente chaque nombre. Réponse b.
+
+*Indice.* Lis la première colonne avec la phrase de l'énoncé : qu'est-ce qui vaut 5, et qu'est-ce qui vaut 4 ?
+
+**EX-E003-E-01** — entrainement, numerique, 90 s
+
+Des boîtes de thé contiennent toutes la même masse de thé. Complète ce tableau : \begin{array}{|l|c|c|} \hline \text{Boîtes} & 3 & 5 \\ \hline \text{Masse (g)} & 375 & ? \\ \hline \end{array} Quelle masse faut-il écrire à la place du point d'interrogation, en grammes ?
+
+**Réponse :** 625
+
+*Corrigé.* (1) On ne passe pas de 3 boîtes à 5 boîtes en multipliant par un nombre entier : on ajoute une colonne pour 1 boîte. (2) 1 boîte, c'est 3 fois moins que 3 boîtes : 375 ÷ 3 = 125. Une boîte contient 125 g de thé. (3) 5 boîtes, c'est 5 fois plus qu'une boîte : 5 × 125 = 625. On écrit 625 : 5 boîtes contiennent 625 g de thé. (4) Contrôle : 5 boîtes, c'est 2 boîtes de plus que 3 boîtes, soit 2 × 125 = 250 g de plus, et 375 + 250 = 625.
+
+*Indice.* Ajoute une colonne pour 1 boîte : quelle masse de thé contient une seule boîte ?
+
+**EX-E003-E-02** — entrainement, vrai_faux, 90 s
+
+Les lentilles sont vendues au même prix au kilo. Lucas complète ce tableau : \begin{array}{|l|c|c|} \hline \text{Masse (kg)} & 2 & 5 \\ \hline \text{Prix (euros)} & 3 & ? \\ \hline \end{array} Il écrit 6 € et explique : « De 2 kg à 5 kg, on ajoute 3 kg, donc on ajoute 3 € au prix. » A-t-il raison ?
+
+**Réponse :** False
+
+*Corrigé.* (1) Lucas ajoute la même chose aux deux grandeurs : c'est un modèle additif. Mais 3 kg de plus ne coûtent pas 3 € de plus. (2) Prix d'un kilogramme : 3 ÷ 2 = 1{,}50, soit 1,50 € le kilo. (3) 3 kg de plus coûtent 3 × 1{,}50 = 4{,}50, soit 4,50 € de plus. Pour 5 kg : 3 + 4{,}50 = 7{,}50, ou directement 5 × 1{,}50 = 7{,}50. (4) Il fallait écrire 7,50 € : c'est faux.
+
+*Indice.* Combien coûte 1 kg de lentilles ? Combien coûtent alors 3 kg de plus ?
+
+**EX-E003-M-01** — maitrise, numerique, 150 s
+
+Pour un repas, la masse de riz est proportionnelle au nombre d'invités. \begin{array}{|l|c|c|c|} \hline \text{Invités} & 6 & 9 & 21 \\ \hline \text{Riz (g)} & 450 & 675 & ? \\ \hline \end{array} Quelle masse de riz faut-il pour 21 invités, en grammes ?
+
+**Réponse :** 1575
+
+*Corrigé.* (1) 21 n'est pas obtenu en multipliant 6 ou 9 par un nombre entier. On cherche à écrire 21 avec les colonnes connues. (2) 6 + 6 + 9 = 21 : 21 invités, c'est 6 invités, plus 6 invités, plus 9 invités. (3) On ajoute les masses correspondantes : 450 + 450 + 675 = 1 575 g. (4) Vérification par l'unité : pour 1 invité, 450 ÷ 6 = 75 g ; pour 21 invités, 21 × 75 = 1 575 g. (5) Il faut 1 575 g de riz.
+
+*Indice.* Écris 21 comme une somme de nombres de la première ligne du tableau.
+
+**EX-E003-M-02** — maitrise, qcm, 150 s
+
+Le prix du comté est proportionnel à sa masse. Inès a payé 7,50 €. \begin{array}{|l|c|c|} \hline \text{Masse (g)} & 200 & ? \\ \hline \text{Prix (euros)} & 3 & 7{,}50 \\ \hline \end{array} Quelle masse de comté a-t-elle achetée ?
+
+- **a.** 400 g
+  <br>*Erreur visée :* L'élève double 200 g parce que 2 × 3 = 6, et oublie les 1,50 € qui restent pour arriver à 7,50 €.
+- **b.** 204,5 g
+  <br>*Erreur visée :* Modèle additif : l'élève voit qu'on ajoute 4,50 au prix et ajoute 4,5 à la masse. Il additionne des euros et des grammes.
+- **c.** 300 g
+  <br>*Erreur visée :* L'élève trouve bien que 1,50 € correspond à 100 g, mais l'ajoute à 200 g au lieu de l'ajouter aux 400 g payés avec 6 €.
+- **d.** 500 g ✅
+
+*Corrigé.* (1) On raisonne à l'envers : on connaît le prix, on cherche la masse. (2) 6 €, c'est 2 fois 3 € : avec 6 €, on paie 2 fois 200 g, soit 400 g. (3) Il reste 7{,}50 - 6 = 1{,}50 €. 1,50 €, c'est la moitié de 3 € : on paie la moitié de 200 g, soit 100 g. (4) En tout : 400 + 100 = 500 g. Réponse d. (5) Contrôle : 100 g coûtent 1,50 €, donc 500 g coûtent 5 × 1{,}50 = 7{,}50 €.
+
+*Indice.* Quelle masse paie-t-on avec 6 € ? Que reste-t-il à payer, et quelle masse cela représente-t-il ?
+
+---
+
+## `E032` · Pourcentage : définition et écritures — 6e, difficulté 4
+
+*Savoir que 35 % signifie 35 pour 100, c'est-à-dire la fraction décimale de dénominateur 100 ou 0,35, et passer d'une écriture à l'autre (50 % = un demi = 0,5 ; 25 % = un quart ; 10 % = un dixième). Pourcentages compris entre 0 % et 100 %.*
+
+> « Connaître la définition d'un pourcentage » — *Cycle 3, classe de 6e, Les nombres entiers et décimaux*
+> « Associer et utiliser différentes écritures d'un nombre décimal : écriture à virgule, fraction, nombre mixte, pourcentage » — *Cycle 3, classe de 6e, Les nombres entiers et décimaux*
+> « À celles-ci vient s'ajouter l'écriture sous forme de pourcentage. » — *Cycle 3, classe de 6e, Les nombres entiers et décimaux*
+> « Comprendre le sens d'un pourcentage » — *Cycle 3, classe de 6e, Les fractions, Pourcentages*
+
+**EX-E032-D-01** — decouverte, texte, 45 s
+
+Sur une affiche, on lit : « 40 % des places sont réservées aux abonnés. » Le symbole % se lit « pour cent », c'est-à-dire « sur 100 ». Écris 40 % sous la forme d'une fraction de dénominateur 100. Écris ta réponse sous la forme numérateur/dénominateur.
+
+**Réponse :** 40/100
+
+*Corrigé.* (1) Le symbole % se lit « pour cent », c'est-à-dire « pour 100 » : 40 % signifie 40 places sur 100 places. (2) Sur 100 places, 40 sont réservées aux abonnés : c'est la fraction 40/100 des places. Le numérateur est le nombre écrit devant le symbole %, le dénominateur est toujours 100. (3) Donc 40 % = 40/100. Cette fraction, c'est 40 centièmes : avec une virgule, elle s'écrit 0,40, ou 0,4.
+
+*Indice.* « Pour cent » veut dire « sur 100 » : quel est le dénominateur ?
+
+**EX-E032-D-02** — decouverte, qcm, 45 s
+
+La jauge de batterie d'une tablette affiche 50 %. 50 %, c'est 50 pour 100. Quelle part de la batterie est chargée ?
+
+- **a.** Un cinquième de la batterie
+  <br>*Erreur visée :* L'élève associe le 5 de 50 au mot « cinquième ». Or un cinquième, c'est 20 parts sur 100, soit 20 %.
+- **b.** La moitié de la batterie ✅
+- **c.** Un cinquantième de la batterie
+  <br>*Erreur visée :* L'élève lit 50 % comme « 1 sur 50 » : il prend le nombre écrit devant % pour le dénominateur. Or le dénominateur d'un pourcentage est toujours 100.
+
+*Corrigé.* (1) 50 % signifie 50 pour 100 : la fraction 50/100 de la batterie. (2) Sur 100 parts, 50 sont chargées. Or 100 = 2 × 50 : 50 parts sur 100, c'est 1 part sur 2, 50/100 = 1/2. (3) À retenir : 50 % = un demi = 0,5. La bonne réponse est b.
+
+*Indice.* Sur 100 parts, combien sont chargées ? Compare ce nombre à 100.
+
+**EX-E032-E-01** — entrainement, numerique, 60 s
+
+Sur l'étiquette d'une boisson, on lit : 8 % de sucre. Cela signifie 8 g de sucre pour 100 g de boisson. Écris 8 % comme un nombre à virgule.
+
+**Réponse :** 0.08
+
+*Corrigé.* (1) 8 % signifie 8 pour 100 : 8 % = 8/100, c'est-à-dire 8 centièmes. (2) Avec une virgule, les centièmes occupent le deuxième rang après la virgule. 8 centièmes, c'est 0 unité, 0 dixième et 8 centièmes : 0,08. (3) Attention : 0,8, c'est 8 dixièmes, soit 80 centièmes, donc 80 %, dix fois trop. Le 0 des dixièmes doit rester écrit : 8 % = 0{,}08.
+
+*Indice.* 8 %, c'est 8 centièmes. À quel rang se placent les centièmes après la virgule ?
+
+**EX-E032-E-02** — entrainement, qcm, 60 s
+
+Une pizza est coupée en 4 parts égales. Chloé en mange une, c'est-à-dire un quart de la pizza. Quel pourcentage de la pizza a-t-elle mangé ?
+
+- **a.** 4 %
+  <br>*Erreur visée :* L'élève reprend le dénominateur de 1/4 comme pourcentage. Or 4 %, c'est 4 parts sur 100, bien moins qu'un quart.
+- **b.** 40 %
+  <br>*Erreur visée :* L'élève écrit 1/4 comme 0,4 en plaçant le dénominateur après la virgule, puis lit 0,4 comme 40 %. Or 0,4, c'est 4/10, pas 1/4.
+- **c.** 25 % ✅
+
+*Corrigé.* (1) Un pourcentage s'écrit avec le dénominateur 100. On cherche donc une fraction égale à 1/4 dont le dénominateur est 100. (2) 100 = 4 × 25 : on multiplie le numérateur et le dénominateur par 25, 1/4 = 1 × 25/4 × 25 = 25/100. (3) Avec la pizza : si on la coupait en 100 petits morceaux, chacune des 4 parts en contiendrait 25. (4) 25/100 = 25 %. À retenir : un quart = 25 %, un demi = 50 %. La bonne réponse est c.
+
+*Indice.* Cherche une fraction égale à 1/4 dont le dénominateur est 100.
+
+**EX-E032-M-01** — maitrise, vrai_faux, 60 s
+
+Léo affirme : « 0,7, c'est 7 %, puisque le chiffre après la virgule est un 7. » Léo a-t-il raison ?
+
+**Réponse :** False
+
+*Corrigé.* (1) Dans 0,7, le 7 est le chiffre des dixièmes : 0,7, c'est 7 dixièmes, 7/10. (2) Un pourcentage compte des centièmes. 1 dixième vaut 10 centièmes, donc 7 dixièmes valent 70 centièmes : 0{,}7 = 7/10 = 70/100. (3) Donc 0,7 = 70 %. 7 %, c'est 7 centièmes, soit 0,07 : dix fois moins. Léo a tort : il a lu le chiffre des dixièmes comme s'il comptait des centièmes.
+
+*Indice.* Dans 0,7, le 7 compte-t-il des dixièmes ou des centièmes ?
+
+**EX-E032-M-02** — maitrise, qcm, 75 s
+
+Trois élèves indiquent la part de leur trajet faite à vélo : Ana écrit 0,4 ; Bilal écrit 9 % ; Chloé écrit 35 %. Qui fait la plus grande part de son trajet à vélo ?
+
+- **a.** Ana (0,4) ✅
+- **b.** Chloé (35 %)
+  <br>*Erreur visée :* L'élève lit 0,4 comme 4 % : il prend le chiffre des dixièmes pour des centièmes, puis compare 4, 9 et 35. Or 0,4 = 40 %.
+- **c.** Bilal (9 %)
+  <br>*Erreur visée :* L'élève écrit 9 % comme 0,9 en plaçant le 9 juste après la virgule, puis trouve 0,9 plus grand que 0,4 et 0,35. Or 9 % = 0,09.
+
+*Corrigé.* (1) Les trois parts ne sont pas écrites de la même façon. Pour les comparer, on les écrit toutes en centièmes, donc en pourcentages. (2) Ana : 0,4, c'est 4 dixièmes, soit 40 centièmes : 0{,}4 = 40/100 = 40 %. (3) Bilal : 9 %, c'est 9 centièmes. Chloé : 35 %, c'est 35 centièmes. (4) On compare 40, 9 et 35 centièmes : 40 est le plus grand. C'est Ana qui fait la plus grande part de son trajet à vélo. La bonne réponse est a.
+
+*Indice.* Écris 0,4 en centièmes avant de comparer.
+
+---
+
+## `E010` · Appliquer un pourcentage à une grandeur ou à un nombre — 6e, difficulté 4
+
+*Calculer 20 % de 350 g ou 15 % de 60 en prenant la fraction correspondante du nombre : diviser par 100 puis multiplier, ou utiliser 50 % = la moitié, 25 % = le quart, 10 % = le dixième.*
+
+> « Appliquer un pourcentage à une grandeur ou à un nombre » — *Cycle 3, classe de 6e, Les fractions, Pourcentages*
+> « En classe de 6e, la fraction opère également sur un nombre, notamment quand elle est exprimée sous forme de pourcentage. » — *Cycle 3, classe de 6e, Les fractions*
+
+**EX-E010-D-01** — decouverte, numerique, 45 s
+
+Une randonnée fait 18 km. Le premier jour, le groupe parcourt 50 % du trajet. 50 %, c'est la moitié. Combien de kilomètres le groupe parcourt-il le premier jour ?
+
+**Réponse :** 9
+
+*Corrigé.* (1) 50 % = 50/100, et 50 parts sur 100, c'est 1 part sur 2 : 50 % d'une longueur, c'est sa moitié. (2) La moitié de 18 km : 18 ÷ 2 = 9. (3) Le groupe parcourt 9 km le premier jour. Contrôle : il lui reste 18 - 9 = 9 km, autant que ce qu'il a fait, comme il se doit pour une moitié.
+
+*Indice.* Partage les 18 km en deux parts égales.
+
+**EX-E010-D-02** — decouverte, qcm, 60 s
+
+Un roman compte 230 pages. Mia en a lu 10 %. Combien de pages a-t-elle lues ?
+
+- **a.** 220 pages
+  <br>*Erreur visée :* L'élève confond « 10 % de 230 » et « 10 de moins que 230 » : il retire 10 pages.
+- **b.** 23 pages ✅
+- **c.** 2,3 pages
+  <br>*Erreur visée :* L'élève divise par 100 au lieu de diviser par 10 : il calcule 1 % du livre, pas 10 %.
+- **d.** 10 pages
+  <br>*Erreur visée :* L'élève prend le pourcentage pour un nombre de pages : 10 % devient 10 pages, sans tenir compte des 230 pages du livre.
+
+*Corrigé.* (1) 10 % = 10/100 = 1/10 : 10 % d'un nombre, c'est son dixième. (2) Le dixième de 230 pages : 230 ÷ 10 = 23. (3) Mia a lu 23 pages. Contrôle : 23 pages, c'est bien moins que la moitié du livre (115 pages), ce qui est normal pour 10 %. La bonne réponse est b.
+
+*Indice.* 10 %, c'est 10 sur 100, c'est-à-dire un dixième.
+
+**EX-E010-E-01** — entrainement, numerique, 90 s
+
+Un paquet de céréales pèse 450 g. Les céréales contiennent 6 % de sucre. Quelle masse de sucre contient le paquet ?
+
+**Réponse :** 27
+
+*Corrigé.* (1) 6 % de 450 g, c'est 6/100 de 450 g. (2) On multiplie 450 par la fraction : 450 × 6/100 = 450 × 6/100 = 2 700/100. (3) 2 700 ÷ 100 = 27. Le paquet contient 27 g de sucre. (4) Contrôle : 6 % est moins que 10 %, et 10 % de 450 g, c'est le dixième, 45 g. 27 g est bien plus petit que 45 g.
+
+*Indice.* 6 %, c'est la fraction 6/100. Multiplie d'abord 450 par 6.
+
+**EX-E010-E-02** — entrainement, vrai_faux, 60 s
+
+Pour calculer 25 % de 84 €, Hugo divise 84 par 4 et trouve 21 €. Hugo a-t-il raison ?
+
+**Réponse :** True
+
+*Corrigé.* (1) 25 % = 25/100. Or 100 = 4 × 25, donc 25/100 = 1/4 : 25 %, c'est un quart. (2) 25 % de 84 €, c'est donc le quart de 84 € : 84 ÷ 4 = 21. (3) Vérification avec la fraction : 84 × 25/100 = 2 100/100 = 21. Hugo a raison : 25 % de 84 €, c'est 21 €.
+
+*Indice.* À quelle fraction simple 25 % est-il égal ?
+
+**EX-E010-M-01** — maitrise, numerique, 120 s
+
+Un jeu de société coûte 45 €. Pendant les soldes, le magasin fait une remise de 20 % sur ce jeu. Quel est le prix du jeu après la remise ?
+
+**Réponse :** 36
+
+*Corrigé.* (1) Étape 1, le montant de la remise : 20 % de 45 €, c'est 45 × 20/100 = 900/100 = 9 €. (2) Étape 2, le nouveau prix : une remise se retranche du prix de départ, 45 - 9 = 36 €. (3) Le jeu coûte 36 € après la remise. Attention : 9 € est le montant de la remise, pas le prix à payer ; et une remise de 20 % n'est pas une remise de 20 €. (4) Contrôle : avec une remise, le prix baisse, donc il est plus petit que 45 € ; et la remise, 9 €, est bien plus petite que la moitié du prix.
+
+*Indice.* Calcule d'abord combien d'euros représente la remise.
+
+**EX-E010-M-02** — maitrise, qcm, 120 s
+
+L'an dernier, un club de judo comptait 260 licenciés. Cette année, le nombre de licenciés a augmenté de 15 %. Combien le club compte-t-il de licenciés cette année ?
+
+- **a.** 39 licenciés
+  <br>*Erreur visée :* L'élève calcule bien l'augmentation, 15 % de 260, mais s'arrête là : 39 est le nombre de licenciés en plus, pas le nombre total.
+- **b.** 275 licenciés
+  <br>*Erreur visée :* L'élève confond « augmenter de 15 % » et « augmenter de 15 » : il ajoute 15 licenciés.
+- **c.** 299 licenciés ✅
+- **d.** 221 licenciés
+  <br>*Erreur visée :* L'élève calcule bien 15 % de 260, soit 39, mais le retranche au lieu de l'ajouter : il traite l'augmentation comme une remise.
+
+*Corrigé.* (1) Étape 1, l'augmentation : 15 % de 260, c'est 260 × 15/100 = 3 900/100 = 39. Le club a 39 licenciés de plus. (2) Étape 2, le nouvel effectif : on ajoute l'augmentation à l'effectif de départ, 260 + 39 = 299. (3) Le club compte 299 licenciés cette année. (4) Contrôle : le nombre de licenciés a augmenté, il doit dépasser 260, ce qui écarte 39 et 221. Et 15 % de 260 ne valent pas 15 : 10 % de 260 valent déjà 26. La bonne réponse est c.
+
+*Indice.* Calcule d'abord le nombre de licenciés en plus.
+
+---
+
+## `E033` · Exprimer une proportion en pourcentage (cas simples) — 6e, difficulté 4
+
+*Calculer la proportion d'une partie dans un tout (12 filles sur 25 élèves) et l'écrire en pourcentage quand le total se ramène simplement à 100 (2, 4, 5, 10, 20, 25, 50, 200) : 12 sur 25, c'est 48 sur 100, soit 48 %.*
+
+> « Calculer une proportion (rapport entre une partie et le tout) et l'exprimer sous forme de pourcentage dans des cas simples » — *Cycle 3, classe de 6e, Les fractions, Pourcentages*
+
+**EX-E033-D-01** — decouverte, numerique, 60 s
+
+À l'entraînement, Inès tire 10 penaltys et en réussit 7. Quelle proportion de ses tirs a-t-elle réussie ? Exprime-la en pourcentage.
+
+**Réponse :** 70
+
+*Corrigé.* (1) Inès réussit 7 tirs sur 10 : la proportion de tirs réussis est 7/10. (2) Un pourcentage est une proportion sur 100. Pour passer de 10 tirs à 100 tirs, on multiplie par 10 ; on multiplie aussi les tirs réussis par 10 : 7/10 = 7 × 10/10 × 10 = 70/100. (3) Sur 100 tirs, en réussissant de la même façon, elle en réussirait 70 : c'est 70 pour 100, soit 70 %.
+
+*Indice.* Combien de tirs réussirait-elle sur 100 tirs, en réussissant de la même façon ?
+
+**EX-E033-D-02** — decouverte, qcm, 60 s
+
+Un sachet contient 50 bonbons, dont 9 à la menthe. Quel pourcentage des bonbons est à la menthe ?
+
+- **a.** 9 %
+  <br>*Erreur visée :* L'élève prend le nombre de bonbons à la menthe pour le pourcentage, comme si le sachet en contenait 100. Or il n'en contient que 50.
+- **b.** 18 % ✅
+- **c.** 59 %
+  <br>*Erreur visée :* L'élève passe de 50 à 100 en ajoutant 50, et ajoute aussi 50 aux bonbons à la menthe : 9 + 50 = 59. Pour passer de 50 à 100, il faut multiplier par 2, et multiplier aussi le nombre de bonbons à la menthe par 2.
+
+*Corrigé.* (1) La proportion de bonbons à la menthe est 9/50 : 9 sur 50. (2) Pour un pourcentage, on veut le dénominateur 100. 100 = 50 × 2 : on multiplie le numérateur et le dénominateur par 2, 9/50 = 18/100. (3) Avec deux sachets, on aurait 100 bonbons, dont 18 à la menthe. C'est 18 pour 100, soit 18 %. La bonne réponse est b.
+
+*Indice.* Imagine deux sachets identiques : combien de bonbons en tout, et combien à la menthe ?
+
+**EX-E033-E-01** — entrainement, numerique, 75 s
+
+Une équipe de handball a joué 20 matchs cette saison et en a gagné 13. Quel pourcentage de ses matchs a-t-elle gagné ?
+
+**Réponse :** 65
+
+*Corrigé.* (1) Proportion de matchs gagnés : 13/20, 13 matchs sur 20. (2) 100 = 20 × 5 : on multiplie le numérateur et le dénominateur par 5, 13/20 = 13 × 5/20 × 5 = 65/100. (3) 65 pour 100, soit 65 %. Contrôle : 13 matchs, c'est un peu plus que la moitié des 20 matchs (la moitié serait 10), et 65 % est un peu plus que 50 %.
+
+*Indice.* Par combien faut-il multiplier 20 pour obtenir 100 ?
+
+**EX-E033-E-02** — entrainement, qcm, 75 s
+
+Un collège compte 200 élèves. 46 d'entre eux chantent dans la chorale. Quel pourcentage des élèves chante dans la chorale ?
+
+- **a.** 23 % ✅
+- **b.** 46 %
+  <br>*Erreur visée :* L'élève prend l'effectif de la chorale pour le pourcentage, sans tenir compte du total. 46 élèves sur 100 donneraient 46 %, mais ici le total est 200.
+- **c.** 92 %
+  <br>*Erreur visée :* L'élève sait qu'il faut ramener le total à 100, mais multiplie par 2 au lieu de diviser : 200 est plus grand que 100, il faut diviser par 2.
+
+*Corrigé.* (1) Proportion de choristes : 46/200. (2) Ici le total, 200, est plus grand que 100 : 200 = 100 × 2. On divise donc le numérateur et le dénominateur par 2 : 46/200 = 23/100. (3) Dans chaque moitié de 100 élèves, il y aurait 23 choristes : c'est 23 pour 100, soit 23 %. (4) Contrôle : 46 est moins que le quart de 200, qui vaut 50 ; le pourcentage doit donc être plus petit que 25 %. La bonne réponse est a.
+
+*Indice.* Partage le collège en deux moitiés de 100 élèves : combien de choristes dans chaque moitié ?
+
+**EX-E033-M-01** — maitrise, vrai_faux, 90 s
+
+Noa a réussi 4 tirs sur 5, Lou 17 tirs sur 20. Noa affirme : « J'ai le meilleur pourcentage de réussite : je n'ai raté qu'un tir, Lou en a raté 3. » Noa a-t-il raison ?
+
+**Réponse :** False
+
+*Corrigé.* (1) Comparer les tirs ratés ne suffit pas : Noa et Lou n'ont pas tiré le même nombre de fois. On compare des pourcentages, c'est-à-dire des proportions ramenées sur 100. (2) Noa : 4/5 = 4 × 20/5 × 20 = 80/100, soit 80 %. (3) Lou : 17/20 = 17 × 5/20 × 5 = 85/100, soit 85 %. (4) 85 % est plus grand que 80 % : c'est Lou qui a le meilleur pourcentage. Sur 100 tirs, Noa en raterait 20 et Lou 15. Noa a tort.
+
+*Indice.* Ramène les deux proportions sur 100 avant de comparer.
+
+**EX-E033-M-02** — maitrise, numerique, 90 s
+
+Un car transporte 50 passagers : 34 adultes, les autres sont des enfants. Quel pourcentage des passagers sont des enfants ?
+
+**Réponse :** 32
+
+*Corrigé.* (1) On cherche d'abord le nombre d'enfants : 50 - 34 = 16 enfants. (2) Proportion d'enfants : 16/50. Avec 100 = 50 × 2 : 16/50 = 32/100, soit 32 %. (3) Attention au piège : 34 adultes sur 50, c'est 68/100, soit 68 % ; c'est le pourcentage d'adultes, pas celui des enfants. (4) Contrôle : adultes et enfants forment tous les passagers, et 68 % + 32 % = 100 %.
+
+*Indice.* Combien y a-t-il d'enfants dans le car ?
+
+---
+
 ## `D006` · Multiplier deux nombres décimaux — 6e, difficulté 5
 
 *Calculer le produit de deux décimaux en se ramenant au produit de deux entiers puis en plaçant la virgule, et contrôler le résultat par un ordre de grandeur.*
@@ -4953,6 +5833,86 @@ Le gazole coûte 1,9 € le litre. Un automobiliste met 32,4 L dans son réservo
 *Corrigé.* (1) Ordre de grandeur : on arrondit d'abord à l'unité. 1,9 est entre 1 et 2, plus proche de 2 ; 32,4 est entre 32 et 33, plus proche de 32, lui-même proche de 30. 2 × 30 = 60 : il paiera environ 60 €. (2) Sans les virgules, on calcule 19 × 324. On peut échanger l'ordre des facteurs sans changer le produit : on pose 324 × 19, en deux lignes car 19 = 9 + 10. Première ligne, 324 × 9 : 9 × 4 = 36, on écrit 6 et on retient 3 ; 9 × 2 = 18, plus 3, cela fait 21, on écrit 1 et on retient 2 ; 9 × 3 = 27, plus 2, cela fait 29. La ligne est 2 916. (3) Deuxième ligne, 324 × 10 : un 0 à droite, puis 324, soit 3 240. On additionne : 2 916 + 3 240 = 6 156. (4) Un chiffre après la virgule dans 1,9, un dans 32,4 : deux dans le produit. 1{,}9 × 32{,}4 = 61{,}56. Contrôle : 61,56 est très proche de 60, alors que 615,6 ou 6,156 ne le seraient pas. L'automobiliste paie 61,56 €.
 
 *Indice.* Pose 324 × 19, puis compte les chiffres après la virgule dans 1,9 et 32,4.
+
+---
+
+## `E006` · Échelle d'un plan : premiers problèmes — 6e, difficulté 5
+
+*Utiliser une échelle donnée en phrase (« 1 cm sur le plan représente 50 m en réalité ») pour calculer une distance réelle ou une longueur sur le plan, par linéarité ou passage par l'unité, en convertissant si besoin les longueurs. L'écriture d'une échelle sous forme de fraction n'est pas attendue.*
+
+> « S'initier à la résolution de problèmes d'échelles » — *Cycle 3, classe de 6e, La proportionnalité*
+
+**EX-E006-D-01** — decouverte, numerique, 60 s
+
+Sur le plan d'un parc, 1 cm sur le plan représente 20 m en réalité. Sur ce plan, l'allée principale mesure 6 cm. Quelle est la longueur réelle de l'allée, en mètres ?
+
+**Réponse :** 120
+
+*Corrigé.* (1) 1 cm sur le plan représente 20 m en réalité. 6 cm, c'est 6 fois 1 cm. (2) La longueur réelle est 6 fois 20 m : 6 × 20 = 120. (3) L'allée mesure 120 m en réalité. (4) Contrôle : sur un plan, tout est dessiné plus petit qu'en réalité, et 120 m est bien plus long que 6 cm.
+
+*Indice.* 6 cm sur le plan, c'est combien de fois 1 cm ?
+
+**EX-E006-D-02** — decouverte, qcm, 60 s
+
+Sur une carte, 1 cm sur la carte représente 5 km en réalité. Deux villages sont à 4 cm l'un de l'autre sur la carte. Quelle distance les sépare en réalité ?
+
+- **a.** 20 km ✅
+- **b.** 9 km
+  <br>*Erreur visée :* L'élève additionne les deux nombres de l'énoncé, 4 + 5 = 9, au lieu de prendre 4 fois 5 km.
+- **c.** 0,8 km
+  <br>*Erreur visée :* L'élève inverse l'échelle : il divise 4 par 5, comme si 5 cm sur la carte représentaient 1 km en réalité.
+- **d.** 4 km
+  <br>*Erreur visée :* L'élève recopie la mesure prise sur la carte en changeant seulement l'unité : 4 cm sur la carte ne représentent pas 4 km.
+
+*Corrigé.* (1) 1 cm sur la carte représente 5 km. 4 cm, c'est 4 fois 1 cm. (2) La distance réelle est 4 fois 5 km : 4 × 5 = 20. (3) Les villages sont à 20 km l'un de l'autre. Réponse a.
+
+*Indice.* 4 cm sur la carte, c'est combien de fois 1 cm ?
+
+**EX-E006-E-01** — entrainement, numerique, 90 s
+
+Sur le plan d'un quartier, 1 cm sur le plan représente 25 m en réalité. Une rue mesure 8,4 cm sur le plan. Quelle est sa longueur réelle, en mètres ?
+
+**Réponse :** 210
+
+*Corrigé.* (1) On sépare 8,4 cm en 8 cm et 0,4 cm. 8 cm représentent 8 fois 25 m : 8 × 25 = 200 m. (2) 0,4 cm représentent 0{,}4 × 25 = 10 m. (3) En tout : 200 + 10 = 210. On peut aussi poser directement 8{,}4 × 25 = 210. (4) La rue mesure 210 m en réalité.
+
+*Indice.* Combien de mètres représentent 8 cm ? Et les 0,4 cm qui restent ?
+
+**EX-E006-E-02** — entrainement, vrai_faux, 90 s
+
+Sur le plan d'une école, 1 cm sur le plan représente 4 m en réalité. La cour mesure 32 m de long. Mia dit : « Sur le plan, la cour mesure 128 cm. » Mia a-t-elle raison ?
+
+**Réponse :** False
+
+*Corrigé.* (1) Mia a multiplié : 32 × 4 = 128. Elle a inversé l'échelle, comme si 1 m en réalité était représenté par 4 cm sur le plan. (2) Sur un plan, les longueurs sont plus petites qu'en réalité : 128 cm, c'est plus d'un mètre, cela ne tiendrait pas sur une feuille. (3) Il faut chercher combien de fois 4 m il y a dans 32 m : 32 ÷ 4 = 8. La cour mesure 8 cm sur le plan. (4) Contrôle : 8 cm représentent 8 × 4 = 32 m. C'est faux.
+
+*Indice.* Sur un plan, une longueur est-elle plus grande ou plus petite qu'en réalité ?
+
+**EX-E006-M-01** — maitrise, numerique, 150 s
+
+Sur une carte de randonnée, 1 cm sur la carte représente 500 m en réalité. Un sentier mesure 4,5 km. Quelle longueur a ce sentier sur la carte, en centimètres ?
+
+**Réponse :** 9
+
+*Corrigé.* (1) Les deux longueurs ne sont pas dans la même unité : on écrit 4,5 km en mètres. 1 km = 1 000 m, donc 4 km = 4 000 m ; 0,5 km, c'est 5 dixièmes de kilomètre, soit 500 m. Donc 4,5 km = 4 500 m. (2) 1 cm sur la carte représente 500 m. 1 000 m, c'est 2 fois 500 m : 1 km est représenté par 2 cm. (3) 4 000 m sont représentés par 4 × 2 = 8 cm, et les 500 m qui restent par 1 cm. (4) En tout : 8 + 1 = 9. Le sentier mesure 9 cm sur la carte. (5) Contrôle : 9 cm représentent 9 × 500 = 4 500 m, soit 4,5 km.
+
+*Indice.* Écris 4,5 km en mètres. Combien de centimètres sur la carte pour 1 000 m ?
+
+**EX-E006-M-02** — maitrise, qcm, 120 s
+
+Un terrain de football mesure 100 m de long. On le dessine sur deux plans. Sur le plan A, 1 cm représente 10 m en réalité. Sur le plan B, 1 cm représente 25 m en réalité. Sur quel plan le terrain est-il dessiné le plus long ?
+
+- **a.** Sur le plan B, car 25 m, c'est plus que 10 m.
+  <br>*Erreur visée :* L'élève croit qu'un plus grand nombre dans l'échelle donne un plus grand dessin. C'est l'inverse : quand 1 cm représente plus de mètres, il faut moins de centimètres pour dessiner le terrain.
+- **b.** Sur aucun : le terrain a la même longueur sur les deux plans.
+  <br>*Erreur visée :* L'élève confond la longueur réelle, qui est la même, et la longueur dessinée, qui dépend de l'échelle.
+- **c.** Sur le plan A : 10 cm contre 4 cm. ✅
+- **d.** Sur le plan B : 2 500 cm contre 1 000 cm.
+  <br>*Erreur visée :* L'élève multiplie 100 par le nombre de l'échelle (100 × 25 = 2 500 et 100 × 10 = 1 000) au lieu de chercher combien de fois 25 m ou 10 m il y a dans 100 m : il inverse l'échelle.
+
+*Corrigé.* (1) Plan A : 1 cm représente 10 m, et 10 × 10 = 100. Il faut 10 fois 1 cm : le terrain mesure 10 cm sur le plan A. (2) Plan B : 1 cm représente 25 m, et 4 × 25 = 100. Il faut 4 fois 1 cm : le terrain mesure 4 cm sur le plan B. (3) 10 cm sur le plan A, 4 cm sur le plan B : le terrain est dessiné plus long sur le plan A. Réponse c. (4) Retiens : plus la longueur réelle représentée par 1 cm est grande, plus le dessin est petit.
+
+*Indice.* Calcule la longueur du terrain sur chaque plan.
 
 ---
 
@@ -5039,6 +5999,476 @@ Range ces trois fractions de la plus petite à la plus grande : 3/4, 7/18, 5/6 �
 *Corrigé.* (1) Aucune astuce ne fonctionne ici : les trois fractions sont inférieures à 1, et elles n'ont ni numérateur ni dénominateur commun. (2) Il faut donc les réduire au même dénominateur. 4, 18 et 6 divisent tous 36. (3) 3/4 = 27/36, 7/18 = 14/36, 5/6 = 30/36. (4) On compare les numérateurs : 14 < 27 < 30. (5) Donc 7/18 < 3/4 < 5/6.
 
 *Indice.* Cherche un dénominateur commun aux trois fractions : un multiple de 4, de 18 et de 6.
+
+---
+
+## `E034` · Coefficient de proportionnalité — 5e, difficulté 5
+
+*Trouver le nombre par lequel on multiplie une grandeur pour obtenir l'autre (prix unitaire, vitesse, échelle), éventuellement décimal ou écrit sous forme de fraction, et l'utiliser pour compléter un tableau ou résoudre un problème. Une échelle peut alors s'écrire comme un coefficient (1 cm pour 25 000 cm).*
+
+> « Utiliser un coefficient de proportionnalité dans des contextes concrets (prix unitaire, vitesse moyenne, échelle, etc.). » — *Cycle 4, classe de 5e, Proportionnalité*
+
+**EX-E034-D-01** — decouverte, numerique, 90 s
+
+Au marché, les clémentines sont vendues au kilogramme. Voici ce que paient trois clients. Masse (kg) : 2 ; 3 ; 5. Prix (€) : 5,60 ; 8,40 ; 14. Chaque prix s'obtient en multipliant la masse par un même nombre : c'est le coefficient de proportionnalité. Quel est ce nombre ?
+
+**Réponse :** 2.8
+
+*Corrigé.* (1) Le coefficient est le nombre par lequel on multiplie la masse (en kg) pour obtenir le prix (en €). On le cherche avec une colonne : pour 2 kg, on paie 5,60 €, donc on cherche le nombre qui, multiplié par 2, donne 5,60. C'est 5{,}6 ÷ 2 = 2{,}8. (2) On vérifie sur les autres colonnes : 3 × 2{,}8 = 8{,}4 et 5 × 2{,}8 = 14. On retrouve bien les prix 8,40 € et 14 €. (3) Le coefficient est 2,8. C'est le prix d'un kilogramme de clémentines, 2,80 € : en 6e, on l'appelait la valeur pour une unité. Prix (en €) = masse (en kg) × 2,8.
+
+*Indice.* Combien coûte 1 kg de clémentines ?
+
+**EX-E034-D-02** — decouverte, vrai_faux, 75 s
+
+Une boulangerie vend des pains au chocolat, tous au même prix. Nombre de pains au chocolat : 4 ; 6 ; 10. Prix (€) : 6 ; 9 ; 15. Léo affirme : « Le coefficient de proportionnalité est 2, car 4 + 2 = 6. »
+
+**Réponse :** False
+
+*Corrigé.* (1) Un coefficient de proportionnalité est un nombre par lequel on multiplie, pas un nombre qu'on ajoute. Léo a trouvé 2 avec une addition : 4 + 2 = 6. (2) Son idée ne marche pas pour la colonne suivante : 6 + 2 = 8, alors que 6 pains au chocolat coûtent 9 €. Et même en multipliant, 2 ne convient pas : 4 × 2 = 8, pas 6. (3) Le bon coefficient : 6 ÷ 4 = 1{,}5. On vérifie : 4 × 1{,}5 = 6, 6 × 1{,}5 = 9 et 10 × 1{,}5 = 15. Un pain au chocolat coûte 1,50 €. (4) L'affirmation de Léo est fausse : le coefficient est 1,5.
+
+*Indice.* Un coefficient sert à multiplier. Vérifie l'idée de Léo sur toutes les colonnes.
+
+**EX-E034-E-01** — entrainement, numerique, 150 s
+
+Un fil électrique est vendu au mètre. 6 m de ce fil pèsent 52,8 g. Trouve le coefficient qui permet de passer de la longueur (en m) à la masse (en g), puis calcule la masse de 3,5 m de fil.
+
+**Réponse :** 30.8
+
+*Corrigé.* (1) La masse est proportionnelle à la longueur. Le coefficient est le nombre par lequel on multiplie la longueur (en m) pour obtenir la masse (en g) : 52{,}8 ÷ 6 = 8{,}8. Un mètre de fil pèse 8,8 g. (2) Pourquoi le coefficient ? Passer de 6 m à 3,5 m ne se fait ni par un double ni par une moitié : le coefficient, lui, marche pour n'importe quelle longueur. (3) Masse de 3,5 m : 3{,}5 × 8{,}8 = 30{,}8. On pose 35 × 88 = 3 080, puis on place la virgule : un chiffre après la virgule dans 3,5, un dans 8,8, donc deux dans le produit : 30,80, soit 30,8. (4) Contrôle : 3,5 m, c'est un peu plus que la moitié de 6 m, et la moitié de 52,8 g est 52{,}8 ÷ 2 = 26{,}4 g. 30,8 g est un peu plus : c'est cohérent. 3,5 m de fil pèsent 30,8 g.
+
+*Indice.* Commence par la masse d'un mètre de fil.
+
+**EX-E034-E-02** — entrainement, qcm, 120 s
+
+La maquette d'un voilier est construite à l'échelle : 1 cm sur la maquette représente 40 cm sur le vrai bateau. La coque de la maquette mesure 18,5 cm. Par quel nombre faut-il multiplier une longueur de la maquette pour obtenir la longueur réelle ? Utilise ce coefficient : quelle est la longueur réelle de la coque ?
+
+- **a.** 58,5 cm
+  <br>*Erreur visée :* L'élève ajoute 40 au lieu de multiplier par 40 : 18{,}5 + 40 = 58{,}5. Il traite l'échelle comme un écart à ajouter, alors qu'elle dit que chaque centimètre de la maquette vaut 40 cm.
+- **b.** 74 cm
+  <br>*Erreur visée :* L'élève oublie le 0 de 40 : il calcule 18{,}5 × 4 = 74, c'est-à-dire qu'il multiplie par 4 au lieu de 40.
+- **c.** 740 cm ✅
+
+*Corrigé.* (1) « 1 cm sur la maquette représente 40 cm en réalité » : chaque centimètre de la maquette correspond à 40 cm sur le bateau. Pour passer d'une longueur de la maquette à la longueur réelle, on multiplie par 40 : c'est le coefficient de proportionnalité, l'échelle écrite comme un coefficient. (2) Longueur réelle de la coque : 18{,}5 × 40 = 740. On calcule d'abord 18{,}5 × 4 = 74, puis on multiplie par 10 : 740. (3) Contrôle : le vrai bateau est bien plus grand que la maquette, environ 20 × 40 = 800 cm. 740 cm convient ; 58,5 cm ferait un bateau à peine plus de trois fois plus long que la maquette. La bonne réponse est c.
+
+*Indice.* Que représente 1 cm de la maquette ? Et 2 cm ?
+
+**EX-E034-M-01** — maitrise, numerique, 180 s
+
+Pour faire des crêpes, la masse de farine est proportionnelle au nombre de crêpes : il faut 100 g de farine pour 8 crêpes. Mila a 275 g de farine. Cherche le coefficient qui permet de passer de la masse de farine (en g) au nombre de crêpes, puis calcule combien de crêpes elle peut faire.
+
+**Réponse :** 22
+
+*Corrigé.* (1) On cherche le nombre par lequel on multiplie la masse de farine (en g) pour obtenir le nombre de crêpes. Avec 100 g on fait 8 crêpes : 8 ÷ 100 = 0{,}08. Le coefficient est 0,08 : chaque gramme de farine donne 0,08 crêpe. (2) Nombre de crêpes avec 275 g : 275 × 0{,}08 = 22. On calcule 275 × 8 = 2 200, puis on divise par 100 : 22. (3) Contrôle dans l'autre sens : pour passer du nombre de crêpes à la farine, le coefficient est 100 ÷ 8 = 12{,}5 (12,5 g par crêpe), et 22 × 12{,}5 = 275. (4) Les deux coefficients vont en sens contraires : on multiplie par 12,5 pour aller des crêpes à la farine, par 0,08 pour revenir de la farine aux crêpes. Mila peut faire 22 crêpes.
+
+*Indice.* Combien de crêpes fait-on avec 1 g de farine ? Ce nombre est plus petit que 1.
+
+**EX-E034-M-02** — maitrise, qcm, 150 s
+
+Un magasin de bricolage vend du câble au mètre : 3 m coûtent 10 €. Utilise le coefficient qui permet de passer de la longueur (en m) au prix (en €) : combien coûtent 4,5 m de ce câble ?
+
+- **a.** 15 € ✅
+- **b.** 14,99 €
+  <br>*Erreur visée :* L'élève calcule le coefficient 10 ÷ 3, qui ne tombe pas juste, l'arrondit à 3,33, puis calcule 4{,}5 × 3{,}33 = 14{,}985, qu'il arrondit à 14,99 €. L'arrondi du coefficient a faussé le résultat.
+- **c.** 11,50 €
+  <br>*Erreur visée :* L'élève ajoute le même nombre à la longueur et au prix : 4,5 m, c'est 1,5 m de plus que 3 m, il ajoute donc 1,50 € à 10 €. C'est le modèle additif, qui ne respecte pas la proportionnalité.
+
+*Corrigé.* (1) Le coefficient qui passe de la longueur (en m) au prix (en €) est 10 ÷ 3. Cette division ne tombe pas juste (3,333…) : on écrit le coefficient sous forme de fraction, 10/3, sans l'arrondir. (2) Multiplier par 10/3, c'est multiplier par 10 puis diviser par 3 : 4{,}5 × 10 = 45, puis 45 ÷ 3 = 15. (3) Autre chemin : 4,5 m, c'est 3 m plus la moitié de 3 m. Le prix est donc 10 € plus la moitié de 10 €, soit 10 + 5 = 15. (4) 4,5 m de câble coûtent 15 € : la bonne réponse est a. Avec un coefficient arrondi à 3,33, on trouverait environ 14,99 € : quand le coefficient ne tombe pas juste, on le garde en fraction.
+
+*Indice.* 10 ÷ 3 ne tombe pas juste. Comment écrire ce coefficient exactement, sans l'arrondir ?
+
+---
+
+## `E007` · Vitesse moyenne — 5e, difficulté 5
+
+*À vitesse constante, la distance parcourue est proportionnelle à la durée : utiliser la vitesse moyenne (en km/h) comme coefficient pour calculer une distance, une durée ou une vitesse. Durées en heures entières ou en demi-heures ; les conversions d'unités composées sont de 4e.*
+
+> « Utiliser un coefficient de proportionnalité dans des contextes concrets (prix unitaire, vitesse moyenne, échelle, etc.). » — *Cycle 4, classe de 5e, Proportionnalité*
+> « Identifier des situations de proportionnalité dans des contextes concrets (prix, recettes, distances, échelles). » — *Cycle 4, classe de 5e, Proportionnalité*
+
+**EX-E007-D-01** — decouverte, numerique, 60 s
+
+Sur l'autoroute, une voiture roule à la vitesse constante de 80 km/h : elle parcourt 80 km en 1 h. Quelle distance parcourt-elle en 4 h ?
+
+**Réponse :** 320
+
+*Corrigé.* (1) « 80 km/h » se lit « 80 kilomètres par heure » : en 1 h, la voiture parcourt 80 km. (2) À vitesse constante, la distance parcourue est proportionnelle à la durée : en 2 fois plus de temps, on parcourt 2 fois plus de distance. La vitesse, 80, est le coefficient de proportionnalité qui passe de la durée (en h) à la distance (en km). (3) Distance en 4 h : 4 × 80 = 320. La voiture parcourt 320 km.
+
+*Indice.* En 1 h, elle parcourt 80 km. Et en 2 h ?
+
+**EX-E007-D-02** — decouverte, qcm, 75 s
+
+Un car scolaire parcourt 210 km en 3 h, à vitesse constante. Quelle est sa vitesse moyenne ?
+
+- **a.** 630 km/h
+  <br>*Erreur visée :* L'élève multiplie la distance par la durée (210 × 3 = 630) au lieu de diviser. Un car ne roule pas à 630 km/h : ce serait plus vite qu'un TGV.
+- **b.** 70 km/h ✅
+- **c.** 210 km/h
+  <br>*Erreur visée :* L'élève confond la distance parcourue en 3 h avec la vitesse, qui est la distance parcourue en 1 h.
+
+*Corrigé.* (1) La vitesse moyenne est la distance parcourue en 1 h. En 3 h, le car parcourt 210 km ; en 1 h, il parcourt 3 fois moins : 210 ÷ 3 = 70. (2) Vérification avec le coefficient : 3 × 70 = 210. La distance (en km) s'obtient en multipliant la durée (en h) par 70. (3) La vitesse moyenne du car est 70 km/h : la bonne réponse est b.
+
+*Indice.* Quelle distance le car parcourt-il en 1 h ?
+
+**EX-E007-E-01** — entrainement, numerique, 90 s
+
+Une cycliste roule à la vitesse constante de 22 km/h pendant deux heures et demie (2,5 h). Quelle distance parcourt-elle ?
+
+**Réponse :** 55
+
+*Corrigé.* (1) En 1 h, elle parcourt 22 km. En 2 h, elle parcourt 2 × 22 = 44 km. (2) Une demi-heure, c'est la moitié d'une heure : elle y parcourt la moitié de 22 km, soit 22 ÷ 2 = 11 km. (3) En 2,5 h : 44 + 11 = 55. On retrouve ce résultat avec le coefficient : 2{,}5 × 22 = 55. Elle parcourt 55 km.
+
+*Indice.* Calcule la distance parcourue en 2 h, puis en une demi-heure.
+
+**EX-E007-E-02** — entrainement, vrai_faux, 120 s
+
+Un bateau parcourt 36 km en 1,5 h, à vitesse constante. Affirmation : sa vitesse moyenne est de 54 km/h.
+
+**Réponse :** False
+
+*Corrigé.* (1) 54 vient de 36 × 1{,}5 = 54 : on a multiplié la distance par la durée. Or la vitesse est la distance parcourue en 1 h ; comme le bateau met plus d'une heure pour faire 36 km, en 1 h il en fait moins de 36. 54 km/h est impossible. (2) Calcul de la vitesse : 1,5 h, c'est 3 demi-heures. En une demi-heure, le bateau parcourt 36 ÷ 3 = 12 km. (3) En 1 h, soit 2 demi-heures : 2 × 12 = 24 km. Sa vitesse moyenne est 24 km/h. Vérification : 1{,}5 × 24 = 36. (4) L'affirmation est fausse.
+
+*Indice.* En 1 h, le bateau parcourt-il plus ou moins de 36 km ?
+
+**EX-E007-M-01** — maitrise, numerique, 150 s
+
+Un TER roule à la vitesse moyenne de 90 km/h. Il doit parcourir 225 km. Combien de temps dure le trajet ? Donne ta réponse en heures.
+
+**Réponse :** 2.5
+
+*Corrigé.* (1) On raisonne à l'envers : on connaît la distance et la vitesse, on cherche la durée. En 1 h, le train parcourt 90 km ; en 2 h, 2 × 90 = 180 km. (2) Il reste 225 - 180 = 45 km. C'est la moitié de 90 km : le train les parcourt en une demi-heure. (3) Durée totale : 2 h et une demi-heure, soit 2,5 h. Vérification avec le coefficient : 2{,}5 × 90 = 225.
+
+*Indice.* Combien de kilomètres le train parcourt-il en 2 h ? Et en une demi-heure ?
+
+**EX-E007-M-02** — maitrise, qcm, 150 s
+
+Pour partir en vacances, une famille roule 2 h à 100 km/h, puis 1 h à 70 km/h. Quelle est sa vitesse moyenne sur l'ensemble du trajet ?
+
+- **a.** 90 km/h ✅
+- **b.** 85 km/h
+  <br>*Erreur visée :* L'élève fait la moyenne des deux vitesses, (100 + 70) ÷ 2 = 85, comme si la famille avait roulé aussi longtemps à chaque vitesse. Or elle a roulé 2 h à 100 km/h et seulement 1 h à 70 km/h.
+- **c.** 270 km/h
+  <br>*Erreur visée :* L'élève calcule bien la distance totale, 270 km, mais la prend pour la vitesse : il oublie de la ramener à la distance parcourue en 1 h.
+
+*Corrigé.* (1) Distance parcourue : 2 × 100 = 200 km pendant la première partie, 1 × 70 = 70 km pendant la seconde, soit 200 + 70 = 270 km en tout. (2) Durée totale : 2 + 1 = 3 h. (3) La vitesse moyenne est la vitesse constante qui ferait parcourir la même distance dans le même temps : 270 ÷ 3 = 90. Vérification : 3 × 90 = 270. (4) La vitesse moyenne est 90 km/h, et non 85 km/h : la famille a roulé plus longtemps à 100 km/h, la moyenne penche de ce côté. La bonne réponse est a.
+
+*Indice.* Calcule la distance totale et la durée totale.
+
+---
+
+## `E035` · Reconnaître un tableau de proportionnalité — 5e, difficulté 5
+
+*Décider si un tableau de valeurs traduit une situation de proportionnalité en calculant les quotients de chaque colonne (ou en cherchant un coefficient commun), et justifier un refus par une colonne qui ne convient pas. Contextes concrets : prix, recettes, distances, échelles.*
+
+> « Reconnaitre une situation de proportionnalité à partir d'un tableau ou d'un graphique. » — *Cycle 4, classe de 5e, Proportionnalité*
+> « Reconnaitre si une situation donnée entre dans le cadre de la proportionnalité ou non. » — *Cycle 4, classe de 5e, Proportionnalité*
+> « Identifier des situations de proportionnalité dans des contextes concrets (prix, recettes, distances, échelles). » — *Cycle 4, classe de 5e, Proportionnalité*
+
+**EX-E035-D-01** — decouverte, vrai_faux, 90 s
+
+À la papeterie, Inès note le prix de cahiers identiques. Nombre de cahiers : 2 ; 5 ; 7. Prix (€) : 3,60 ; 9 ; 12,60. Pour chaque colonne, calcule le prix divisé par le nombre de cahiers. Affirmation : ce tableau est un tableau de proportionnalité.
+
+**Réponse :** True
+
+*Corrigé.* (1) Un tableau est un tableau de proportionnalité quand on obtient tous les nombres de la deuxième ligne en multipliant ceux de la première par un même nombre. Pour le vérifier, on calcule le quotient de chaque colonne. (2) 3{,}6 ÷ 2 = 1{,}8, 9 ÷ 5 = 1{,}8 et 12{,}6 ÷ 7 = 1{,}8. (3) Les trois quotients sont égaux : le tableau est un tableau de proportionnalité, de coefficient 1,8. Un cahier coûte 1,80 €. L'affirmation est vraie.
+
+*Indice.* Divise chaque prix par le nombre de cahiers de sa colonne, puis compare.
+
+**EX-E035-D-02** — decouverte, qcm, 90 s
+
+Une supérette affiche le prix des yaourts à boire. Nombre de yaourts : 2 ; 4 ; 6. Prix (€) : 1,40 ; 2,80 ; 3,90. Ce tableau est-il un tableau de proportionnalité ?
+
+- **a.** Oui, car le prix augmente quand le nombre de yaourts augmente.
+  <br>*Erreur visée :* L'élève confond « les deux grandeurs augmentent ensemble » et « les deux grandeurs sont proportionnelles ». Augmenter ensemble ne suffit pas : il faut multiplier par un même nombre dans toutes les colonnes.
+- **b.** Oui, car de 2 à 4 yaourts, le prix double.
+  <br>*Erreur visée :* L'élève vérifie une seule relation entre deux colonnes (2 × 1{,}4 = 2{,}8) et conclut sans regarder la troisième colonne, qui ne convient pas.
+- **c.** Non, car 3{,}9 ÷ 6 = 0{,}65, alors que 1{,}4 ÷ 2 = 0{,}7. ✅
+
+*Corrigé.* (1) On calcule le quotient prix ÷ nombre de yaourts dans chaque colonne : 1{,}4 ÷ 2 = 0{,}7, 2{,}8 ÷ 4 = 0{,}7 et 3{,}9 ÷ 6 = 0{,}65. (2) Les deux premiers quotients sont égaux, pas le troisième : un yaourt revient à 0,70 € dans les deux premières colonnes, mais à 0,65 € dans le lot de 6. (3) Une seule colonne qui ne convient pas suffit : ce tableau n'est pas un tableau de proportionnalité. Le lot de 6 est moins cher à l'unité, comme souvent en magasin. La bonne réponse est c.
+
+*Indice.* Calcule le prix d'un yaourt dans chaque colonne.
+
+**EX-E035-E-01** — entrainement, qcm, 180 s
+
+Trois cinémas affichent le prix à payer selon le nombre de places. Nombre de places : 2 ; 3 ; 5. Cinéma A, prix (€) : 13 ; 19,50 ; 32,50. Cinéma B, prix (€) : 14 ; 20 ; 32. Cinéma C, prix (€) : 12 ; 18 ; 28. Dans quel cinéma le prix est-il proportionnel au nombre de places ?
+
+- **a.** Cinéma A ✅
+- **b.** Cinéma B
+  <br>*Erreur visée :* L'élève voit que le prix augmente régulièrement, de 6 € par place supplémentaire, et croit que cela suffit. Mais 14 ÷ 2 = 7 et 3 × 7 = 21, pas 20 : ce cinéma ajoute 2 € de frais fixes.
+- **c.** Cinéma C
+  <br>*Erreur visée :* L'élève ne vérifie que les deux premières colonnes, où le quotient vaut 6 (12 ÷ 2 = 6 et 18 ÷ 3 = 6), sans regarder la dernière : 5 × 6 = 30, pas 28. Ce cinéma fait une réduction à partir de 5 places.
+
+*Corrigé.* (1) Pour chaque cinéma, on calcule le prix d'une place dans chaque colonne, c'est-à-dire le quotient prix ÷ nombre de places. (2) Cinéma A : 13 ÷ 2 = 6{,}5, 19{,}5 ÷ 3 = 6{,}5 et 32{,}5 ÷ 5 = 6{,}5. Les trois quotients sont égaux. (3) Cinéma B : 14 ÷ 2 = 7, mais 3 × 7 = 21, pas 20. Cinéma C : 12 ÷ 2 = 6 et 18 ÷ 3 = 6, mais 5 × 6 = 30, pas 28. (4) Seul le cinéma A a un prix proportionnel au nombre de places, de coefficient 6,5 (une place à 6,50 €). La bonne réponse est a.
+
+*Indice.* Une seule colonne qui ne convient pas suffit pour refuser. Vérifie les trois colonnes de chaque cinéma.
+
+**EX-E035-E-02** — entrainement, numerique, 120 s
+
+Lucas recopie les quantités d'une recette de mousse au chocolat pour plusieurs tablées. Nombre de personnes : 3 ; 4 ; 6 ; 9. Masse de chocolat (g) : 120 ; 160 ; 250 ; 360. Une seule colonne empêche ce tableau d'être un tableau de proportionnalité. Quelle masse de chocolat aurait-il fallu écrire dans cette colonne ?
+
+**Réponse :** 240
+
+*Corrigé.* (1) Quotient masse ÷ nombre de personnes : 120 ÷ 3 = 40, 160 ÷ 4 = 40 et 360 ÷ 9 = 40. Trois colonnes donnent 40 g de chocolat par personne. (2) Colonne de 6 personnes : avec 40 g par personne, il faudrait 6 × 40 = 240 g, et non 250 g. C'est cette colonne qui ne convient pas. (3) Pour que le tableau soit un tableau de proportionnalité, de coefficient 40, il fallait écrire 240 g pour 6 personnes. Contrôle : 6 personnes, c'est le double de 3 personnes, et 2 × 120 = 240.
+
+*Indice.* Calcule la masse de chocolat par personne dans chaque colonne.
+
+**EX-E035-M-01** — maitrise, vrai_faux, 150 s
+
+Pour préparer une boisson, on mélange du sirop et de l'eau. Volume de sirop (cL) : 3 ; 9 ; 12. Volume d'eau (cL) : 20 ; 60 ; 80. Affirmation : le volume d'eau est proportionnel au volume de sirop.
+
+**Réponse :** True
+
+*Corrigé.* (1) Le quotient 20 ÷ 3 ne tombe pas juste (6,666…) : avec des valeurs arrondies, on ne peut pas comparer sûrement les colonnes. Deux façons d'éviter ce piège. (2) Première façon, le coefficient en fraction : passer du sirop à l'eau, c'est multiplier par 20/3. On vérifie : 9 × 20/3 = 180/3 = 60 et 12 × 20/3 = 240/3 = 80. (3) Deuxième façon, le quotient dans l'autre sens, qui tombe juste : 3 ÷ 20 = 0{,}15 (on divise 3 par 10, puis par 2). On vérifie : 60 × 0{,}15 = 9 et 80 × 0{,}15 = 12. (4) Troisième regard, sans quotient : 9 cL de sirop, c'est 3 × 3 cL, et 60 cL d'eau, c'est 3 × 20 cL ; 12 cL de sirop, c'est 4 × 3 cL, et 80 cL d'eau, c'est 4 × 20 cL. Chaque colonne s'obtient à partir de la première en multipliant les deux volumes par un même nombre. (5) Toutes les colonnes ont le même quotient : le tableau est un tableau de proportionnalité. L'affirmation est vraie.
+
+*Indice.* Si un quotient ne tombe pas juste, essaie l'autre sens : de l'eau vers le sirop.
+
+**EX-E035-M-02** — maitrise, qcm, 150 s
+
+Au marché, un vendeur affirme que le prix de ses abricots est proportionnel à la masse achetée. Masse (kg) : 0,5 ; 1,5 ; 2 ; 2,5. Prix (€) : 1,60 ; 4,80 ; 6,40 ; 7,50. A-t-il raison ?
+
+- **a.** Oui : de 0,5 kg à 1,5 kg, la masse triple et le prix triple aussi.
+  <br>*Erreur visée :* L'élève vérifie une seule relation entre deux colonnes (3 × 1{,}6 = 4{,}8) et généralise sans contrôler les autres colonnes.
+- **b.** Non : une des colonnes ne donne pas le même prix au kilogramme que les autres. ✅
+- **c.** Oui : les trois premières colonnes donnent le même prix au kilogramme, cela suffit.
+  <br>*Erreur visée :* L'élève vérifie trois colonnes sur quatre et s'arrête. Une seule colonne qui ne convient pas suffit pourtant à refuser la proportionnalité.
+
+*Corrigé.* (1) Prix d'un kilogramme : 0,5 kg coûte 1,60 €, donc 1 kg, le double, coûte 2 × 1{,}6 = 3{,}2. Si le tableau est de proportionnalité, le coefficient est 3,2. (2) On vérifie chaque colonne : 1{,}5 × 3{,}2 = 4{,}8, 2 × 3{,}2 = 6{,}4 et 2{,}5 × 3{,}2 = 8. (3) La dernière colonne ne convient pas : 7,50 € au lieu de 8 €. Ce n'est pas un tableau de proportionnalité, le vendeur a tort (il fait une remise sur 2,5 kg). La bonne réponse est b.
+
+*Indice.* Combien coûte 1 kg d'après la première colonne ? Vérifie ensuite toutes les colonnes.
+
+---
+
+## `E023` · Proportionnalité et graphique — 5e, difficulté 5
+
+*Représenter une situation de proportionnalité par des points dans un repère et savoir qu'ils sont alignés avec l'origine ; décider, à partir d'un graphique ou d'un nuage de points, si une situation est de proportionnalité (alignés mais ne passant pas par l'origine : non).*
+
+> « Représenter une situation de proportionnalité par un tableau ou un graphique. » — *Cycle 4, classe de 5e, Proportionnalité*
+> « Reconnaitre graphiquement qu'un nuage de points est ou n'est pas associé à une situation de proportionnalité entre données discrètes. » — *Cycle 4, classe de 5e, Proportionnalité*
+> « Caractériser graphiquement la proportionnalité. » — *Cycle 4, classe de 5e, Fonctions*
+
+**EX-E023-D-01** — decouverte, vrai_faux, 60 s
+
+Dans un repère, on représente le prix de places de concert : le nombre de places en abscisse, le prix en euros en ordonnée. On place les points de coordonnées (2 ; 24), (3 ; 36) et (5 ; 60). Ils sont alignés sur une droite qui passe par l'origine du repère. Affirmation : le prix payé est proportionnel au nombre de places.
+
+**Réponse :** True
+
+*Corrigé.* (1) Une situation est de proportionnalité quand sa représentation est formée de points alignés avec l'origine du repère, c'est-à-dire sur une droite qui passe par le point (0 ; 0). (2) C'est le cas ici. Les quotients le confirment : 24 ÷ 2 = 12, 36 ÷ 3 = 12 et 60 ÷ 5 = 12. Une place coûte 12 € : le coefficient de proportionnalité est 12. (3) L'origine (0 ; 0) a un sens : 0 place, 0 €. L'affirmation est vraie.
+
+*Indice.* Par quel point particulier du repère passe la droite ?
+
+**EX-E023-D-02** — decouverte, qcm, 90 s
+
+On représente le nombre de pages imprimées par une imprimante selon la durée d'impression (en minutes). Les points sont sur une droite qui passe par l'origine du repère et par le point A (2 ; 18). Lequel de ces points est sur cette droite ?
+
+- **a.** (5 ; 21)
+  <br>*Erreur visée :* L'élève ajoute 3 aux deux coordonnées de A : 2 + 3 = 5 et 18 + 3 = 21. C'est le modèle additif : sur une droite qui passe par l'origine, on multiplie les deux coordonnées par un même nombre, on n'ajoute pas.
+- **b.** (18 ; 2)
+  <br>*Erreur visée :* L'élève échange l'abscisse et l'ordonnée de A. Ce point voudrait dire 2 pages en 18 minutes.
+- **c.** (6 ; 54) ✅
+
+*Corrigé.* (1) La droite passe par l'origine : c'est une situation de proportionnalité. Le coefficient qui passe de l'abscisse (durée en minutes) à l'ordonnée (nombre de pages) vaut 18 ÷ 2 = 9 : l'imprimante imprime 9 pages par minute. (2) Un point est sur la droite si son ordonnée vaut 9 fois son abscisse. Pour (6 ; 54) : 6 × 9 = 54, il convient. (3) Pour (5 ; 21) : 5 × 9 = 45, pas 21. Pour (18 ; 2) : 18 × 9 = 162, pas 2. La bonne réponse est c.
+
+*Indice.* Combien de pages l'imprimante imprime-t-elle en 1 minute ?
+
+**EX-E023-E-01** — entrainement, numerique, 120 s
+
+Un robinet fuit, en perdant chaque jour la même quantité d'eau. On représente le volume d'eau perdu (en L) selon le nombre de jours : c'est une droite qui passe par l'origine et par le point (4 ; 26). Quel volume d'eau est perdu en 10 jours ? C'est l'ordonnée du point de la droite d'abscisse 10.
+
+**Réponse :** 65
+
+*Corrigé.* (1) La droite passe par l'origine : le volume perdu est proportionnel au nombre de jours. Le point (4 ; 26) se lit : en 4 jours, 26 L perdus. (2) Coefficient : 26 ÷ 4 = 6{,}5. Le robinet perd 6,5 L par jour. (3) En 10 jours : 10 × 6{,}5 = 65. Le point de la droite d'abscisse 10 a pour ordonnée 65 : en 10 jours, le robinet perd 65 L. (4) Contrôle par la linéarité : 10 jours, c'est 4 jours, plus 4 jours, plus 2 jours, soit 26 + 26 + 13 = 65.
+
+*Indice.* Lis le point (4 ; 26) avec des mots, puis cherche le volume perdu en 1 jour.
+
+**EX-E023-E-02** — entrainement, qcm, 120 s
+
+Au marché, on représente le prix payé (en €) selon la masse de pommes achetée (en kg) par trois clients. On obtient trois points : (2 ; 7), (4 ; 14) et (6 ; 20). Ce nuage de points correspond-il à une situation de proportionnalité ?
+
+- **a.** Oui : quand la masse augmente, le prix augmente aussi.
+  <br>*Erreur visée :* L'élève confond « augmenter ensemble » et « être proportionnels ». Un nuage de points qui monte n'est pas forcément aligné avec l'origine.
+- **b.** Non : le point (6 ; 20) n'est pas sur la droite qui passe par l'origine et par (2 ; 7), car 6 × 3{,}5 = 21. ✅
+- **c.** Oui : les points (2 ; 7) et (4 ; 14) sont alignés avec l'origine, cela suffit.
+  <br>*Erreur visée :* L'élève ne vérifie que deux points (4 × 3{,}5 = 14). Pour qu'il y ait proportionnalité, tous les points doivent être alignés avec l'origine.
+
+*Corrigé.* (1) Les points sont alignés avec l'origine si l'ordonnée s'obtient en multipliant l'abscisse par un même nombre. Avec (2 ; 7) : 7 ÷ 2 = 3{,}5. (2) Point (4 ; 14) : 4 × 3{,}5 = 14, il est sur la droite. Point (6 ; 20) : 6 × 3{,}5 = 21, pas 20 : ce point est en dessous de la droite. (3) Les trois points ne sont pas alignés avec l'origine : le prix n'est pas proportionnel à la masse (le troisième client a eu une remise). La bonne réponse est b.
+
+*Indice.* Calcule le prix d'un kilogramme pour chaque point.
+
+**EX-E023-M-01** — maitrise, vrai_faux, 120 s
+
+Un taxi affiche ses tarifs. On représente le prix de la course (en €) selon la distance parcourue (en km) : (1 ; 5), (2 ; 7), (3 ; 9) et (4 ; 11). Ces points sont alignés. Affirmation : puisque les points sont alignés, le prix de la course est proportionnel à la distance.
+
+**Réponse :** False
+
+*Corrigé.* (1) Être alignés ne suffit pas : pour la proportionnalité, il faut que la droite passe par l'origine du repère. (2) Quand la distance augmente de 1 km, le prix augmente de 2 €. En reculant d'un kilomètre depuis (1 ; 5), on arrive à 0 km pour 5 - 2 = 3 € : la droite passe par le point (0 ; 3), pas par l'origine. Ces 3 € sont la prise en charge, payée même sans rouler. (3) Les quotients le confirment : 5 ÷ 1 = 5 et 7 ÷ 2 = 3{,}5 sont différents. (4) L'affirmation est fausse : les points sont alignés, mais pas avec l'origine.
+
+*Indice.* Quel prix correspondrait à une distance de 0 km ?
+
+**EX-E023-M-02** — maitrise, numerique, 180 s
+
+On représente le prix (en €) du jus de pomme vendu au litre selon le volume acheté (en L) : c'est une droite qui passe par l'origine et par le point (6 ; 15). Nora paie 27,50 €. Quel volume de jus achète-t-elle ? C'est l'abscisse du point de la droite d'ordonnée 27,5.
+
+**Réponse :** 11
+
+*Corrigé.* (1) On raisonne à l'envers : on connaît l'ordonnée (le prix), on cherche l'abscisse (le volume). Le point (6 ; 15) se lit : 6 L coûtent 15 €. (2) On cherche le coefficient qui passe du prix au volume. 6 L pour 15 €, c'est 2 L pour 5 € (on divise les deux nombres par 3). Le coefficient est donc 2 ÷ 5 = 0{,}4 : chaque euro achète 0,4 L. (3) Volume pour 27,50 € : 27{,}5 × 0{,}4 = 11. (4) Vérification dans le sens habituel : 1 L coûte 15 ÷ 6 = 2{,}5 €, et 11 × 2{,}5 = 27{,}5. Nora achète 11 L de jus.
+
+*Indice.* Combien de litres achète-t-on avec 5 € ?
+
+---
+
+## `E036` · Calculer un pourcentage dans le cas général — 5e, difficulté 5
+
+*Exprimer en pourcentage la part d'un effectif dans un total quelconque (6 voix sur 24, 14 élèves sur 40) : quotient de la partie par le tout, puis multiplication par 100, avec un résultat éventuellement décimal ou arrondi. Fréquences exprimées en pourcentage.*
+
+> « Calculer, appliquer des proportions, des pourcentages. » — *Cycle 4, classe de 5e, Proportionnalité*
+> « Calculer le pourcentage de voix de chaque candidat. » — *Cycle 4, classe de 5e, Proportionnalité, Automatismes*
+> « Calculer des effectifs et des fréquences (exprimées sous forme décimale, fractionnaire ou de pourcentage). » — *Cycle 4, classe de 5e, Statistiques*
+
+**EX-E036-D-01** — decouverte, numerique, 75 s
+
+Pour l'élection du délégué, les 30 élèves d'une classe ont voté. Camille a obtenu 12 voix. Quel pourcentage des voix Camille a-t-elle obtenu ?
+
+**Réponse :** 40
+
+*Corrigé.* (1) Proportion des voix de Camille : la partie divisée par le tout, 12/30. (2) 30 ne se ramène pas à 100 en multipliant par un entier. On cherche une fraction égale plus simple : 12 = 2 × 6 et 30 = 5 × 6, donc 12/30 = 2 × 6/5 × 6 = 2/5. (3) On calcule le quotient : 2 ÷ 5 = 0{,}4. Pour compter en centièmes, on multiplie par 100 : 0{,}4 × 100 = 40. C'est 40 pour 100. (4) Camille a obtenu 40 % des voix. Contrôle : 12 voix, c'est moins que la moitié de 30 (15), et 40 % est moins que 50 %.
+
+*Indice.* Écris la fraction des voix de Camille. 12 et 30 sont dans la table de 6 : cherche une fraction égale plus simple.
+
+**EX-E036-D-02** — decouverte, vrai_faux, 75 s
+
+Dans une classe de 36 élèves, 9 portent des lunettes. Rayan calcule 36 ÷ 9 = 4 et annonce : « 4 % des élèves portent des lunettes. » Rayan a-t-il raison ?
+
+**Réponse :** False
+
+*Corrigé.* (1) Rayan a divisé le tout par la partie. La proportion d'élèves qui portent des lunettes, c'est la partie divisée par le tout : 9/36. (2) 9 = 1 × 9 et 36 = 4 × 9, donc 9/36 = 1 × 9/4 × 9 = 1/4, et 1 ÷ 4 = 0{,}25. (3) Pour compter en centièmes, on multiplie par 100 : 0{,}25 × 100 = 25. La fréquence des élèves à lunettes est 0,25, c'est-à-dire 25 % : un élève sur 4. (4) Le 4 de Rayan signifie « 1 élève sur 4 », pas « 4 pour 100 ». Rayan a tort.
+
+*Indice.* Pour une proportion, divise-t-on la partie par le tout, ou le tout par la partie ?
+
+**EX-E036-E-01** — entrainement, numerique, 120 s
+
+Un club de basket a disputé 27 matchs et en a gagné 21. Quel pourcentage de ses matchs a-t-il gagné ? Donne la valeur arrondie à l'unité.
+
+**Réponse :** 78
+
+*Corrigé.* (1) Proportion de matchs gagnés : 21/27. 21 = 7 × 3 et 27 = 9 × 3, donc 21/27 = 7 × 3/9 × 3 = 7/9. (2) On pose la division 7 ÷ 9 : elle ne s'arrête pas, on obtient 0,777… (le chiffre 7 se répète). (3) On arrondit le quotient au centième : 0,777… est entre 0,77 et 0,78, plus près de 0,78 (son chiffre des millièmes est 7). (4) On multiplie par 100 : 0{,}78 × 100 = 78. 0,78, c'est 78 centièmes : le club a gagné environ 78 % de ses matchs.
+
+*Indice.* Écris la fraction des matchs gagnés. 21 et 27 sont dans la table de 3 : cherche une fraction égale plus simple avant de diviser.
+
+**EX-E036-E-02** — entrainement, qcm, 75 s
+
+Une trousse contient 8 crayons, dont 3 rouges. Quel pourcentage des crayons est rouge ?
+
+- **a.** 37,5 % ✅
+- **b.** 3 %
+  <br>*Erreur visée :* L'élève prend le nombre de crayons rouges pour le pourcentage, comme si la trousse contenait 100 crayons.
+- **c.** 0,375 %
+  <br>*Erreur visée :* L'élève calcule bien le quotient 3 ÷ 8 = 0{,}375, mais écrit le symbole % juste derrière : il oublie de multiplier par 100 pour compter en centièmes.
+- **d.** 30 %
+  <br>*Erreur visée :* L'élève remplace le total de 8 crayons par 10 pour se ramener à un cas connu : 3 sur 10, c'est 30 %. Mais la trousse contient 8 crayons, pas 10.
+
+*Corrigé.* (1) Proportion de crayons rouges : la partie (3) divisée par le tout (8), 3/8. (2) 8 ne se ramène pas à 100 en multipliant par un entier : on pose la division 3 ÷ 8, en continuant après la virgule jusqu'à un reste nul. On obtient 3 ÷ 8 = 0{,}375. (3) Pour compter en centièmes, on multiplie par 100 : 0{,}375 × 100 = 37{,}5. C'est 37,5 pour 100. (4) 37,5 % des crayons sont rouges. La bonne réponse est a.
+
+*Indice.* Divise le nombre de crayons rouges par le nombre total de crayons.
+
+**EX-E036-M-01** — maitrise, numerique, 150 s
+
+Trois candidats se présentent à l'élection du bureau du club de théâtre. Chaque membre vote pour un seul candidat. Ana obtient 7 voix, Baptiste 9 voix et Chloé 5 voix. Quel pourcentage des voix Baptiste a-t-il obtenu ? Donne la valeur arrondie à l'unité.
+
+**Réponse :** 43
+
+*Corrigé.* (1) Le tout, c'est le nombre total de voix : 7 + 9 + 5 = 21. (2) Proportion des voix de Baptiste : 9/21. 9 = 3 × 3 et 21 = 7 × 3, donc 9/21 = 3 × 3/7 × 3 = 3/7. (3) On pose la division 3 ÷ 7 : elle ne s'arrête pas, on obtient 0,428… en s'arrêtant au rang des millièmes. (4) On arrondit au centième : 0,428… est entre 0,42 et 0,43, plus près de 0,43 (son chiffre des millièmes est 8). On multiplie par 100 : 0{,}43 × 100 = 43. 0,43, c'est 43 centièmes : Baptiste a obtenu environ 43 % des voix. (5) Attention : 9 %, ce serait prendre son nombre de voix pour un pourcentage, alors que le total n'est pas 100.
+
+*Indice.* Commence par calculer le nombre total de voix.
+
+**EX-E036-M-02** — maitrise, qcm, 180 s
+
+Trois clubs de natation présentent des nageurs à un examen. - Club P : 30 reçus sur 42 nageurs ; - Club Q : 20 reçus sur 24 nageurs ; - Club R : 6 reçus sur 9 nageurs. Quel club a le plus fort pourcentage de reçus ?
+
+- **a.** Le club P
+  <br>*Erreur visée :* L'élève compare les nombres de reçus : 30 est le plus grand. Mais le club P présente aussi le plus de nageurs ; il faut comparer des proportions, pas des effectifs.
+- **b.** Le club R
+  <br>*Erreur visée :* L'élève compare les nombres d'échecs : 3 au club R, 4 au club Q, 12 au club P. Ce raisonnement par différence ne tient pas compte du nombre de nageurs présentés.
+- **c.** Le club Q ✅
+
+*Corrigé.* (1) Pour chaque club, on calcule la proportion de reçus (la partie divisée par le tout), on arrondit le quotient au centième, puis on multiplie par 100 pour l'écrire en pourcentage. (2) Club P : 30 = 5 × 6 et 42 = 7 × 6, donc 30/42 = 5 × 6/7 × 6 = 5/7. La division 5 ÷ 7 donne 0,714…, arrondi à 0,71 ; 0{,}71 × 100 = 71, soit environ 71 %. (3) Club Q : 20 = 5 × 4 et 24 = 6 × 4, donc 20/24 = 5 × 4/6 × 4 = 5/6. La division 5 ÷ 6 donne 0,833…, arrondi à 0,83 ; 0{,}83 × 100 = 83, soit environ 83 %. (4) Club R : 6 = 2 × 3 et 9 = 3 × 3, donc 6/9 = 2 × 3/3 × 3 = 2/3. La division 2 ÷ 3 donne 0,666…, arrondi à 0,67 ; 0{,}67 × 100 = 67, soit environ 67 %. (5) Le plus fort pourcentage de reçus est celui du club Q, environ 83 %. La bonne réponse est c.
+
+*Indice.* Calcule le pourcentage de reçus de chaque club avant de comparer.
+
+---
+
+## `E037` · Pourcentages par linéarité : 1 %, 10 %, 50 % — 5e, difficulté 5
+
+*Calculer mentalement 1 %, 10 % ou 50 % d'un nombre, et en déduire d'autres pourcentages par linéarité : 15 % = 10 % + 5 %, 30 % = 3 fois 10 %, 120 % = 100 % + 20 %.*
+
+> « Prendre 1 %, 10 % ou 50 % d'un nombre, en lien avec la proportionnalité. » — *Cycle 4, classe de 5e, Nombres rationnels, Automatismes*
+> « Utiliser des proportions, des pourcentages. » — *Cycle 4, classe de 5e, Proportionnalité*
+
+**EX-E037-D-01** — decouverte, numerique, 60 s
+
+Une cuve contient 600 L d'eau. 1 %, c'est un centième. Calcule 1 % de 600 L, puis déduis-en 3 % de 600 L. Combien de litres font 3 % de la cuve ?
+
+**Réponse :** 18
+
+*Corrigé.* (1) 1 % de 600 L, c'est le centième de 600 L : 600 ÷ 100 = 6 L. (2) 3 %, c'est 3 fois 1 % : 3 × 6 = 18 L. (3) 3 % de la cuve représentent 18 L. Contrôle avec la fraction : 600 × 3/100 = 1 800/100 = 18.
+
+*Indice.* Combien de litres font 1 % de la cuve ?
+
+**EX-E037-D-02** — decouverte, qcm, 45 s
+
+Un sac à dos coûte 70 €. 10 % de ce prix valent 7 €. Combien valent 20 % de ce prix ?
+
+- **a.** 17 €
+  <br>*Erreur visée :* L'élève raisonne par ajout : pour passer de 10 % à 20 %, il ajoute 10, et il ajoute aussi 10 au résultat, 7 + 10 = 17. Or 20 %, c'est 2 fois 10 % : il faut doubler 7 €.
+- **b.** 27 €
+  <br>*Erreur visée :* L'élève confond « 20 % de » et « 20 de plus » : il ajoute 20 € aux 7 €.
+- **c.** 14 € ✅
+
+*Corrigé.* (1) 20 %, c'est 2 fois 10 % : 20 % = 10 % + 10 %. (2) Donc 20 % de 70 € valent 7 + 7 = 14 €. (3) Contrôle : 20 % = 20/100 = 1/5, et le cinquième de 70 € est 70 ÷ 5 = 14 €. La bonne réponse est c.
+
+*Indice.* Combien de fois 10 % y a-t-il dans 20 % ?
+
+**EX-E037-E-01** — entrainement, numerique, 90 s
+
+Une cycliste doit parcourir 74 km en deux jours. Le premier jour, elle fait 60 % du parcours. En utilisant 50 % et 10 %, calcule la distance parcourue le premier jour.
+
+**Réponse :** 44.4
+
+*Corrigé.* (1) On décompose : 60 % = 50 % + 10 %. (2) 50 % de 74 km, c'est la moitié : 74 ÷ 2 = 37 km. (3) 10 % de 74 km, c'est le dixième : 74 ÷ 10 = 7{,}4 km. (4) On additionne les deux morceaux : 37 + 7{,}4 = 44{,}4 km. Le premier jour, elle parcourt 44,4 km. (5) Contrôle : 60 %, c'est un peu plus que la moitié ; 44,4 km est un peu plus que 37 km.
+
+*Indice.* Calcule séparément la moitié et le dixième de 74 km.
+
+**EX-E037-E-02** — entrainement, vrai_faux, 75 s
+
+Zoé calcule 51 % de 46 : « 50 % de 46, c'est 23 ; 1 % de 46, c'est 0,46 ; donc 51 % de 46, c'est 23,46. » Zoé a-t-elle raison ?
+
+**Réponse :** True
+
+*Corrigé.* (1) 51 % = 50 % + 1 % : on peut calculer les deux morceaux, puis les additionner. (2) 50 % de 46, c'est la moitié : 46 ÷ 2 = 23. 1 % de 46, c'est le centième : 46 ÷ 100 = 0{,}46. (3) 23 + 0{,}46 = 23{,}46. Zoé a raison. (4) Contrôle avec la fraction : 46 × 51/100 = 2 346/100 = 23{,}46.
+
+*Indice.* Décompose 51 % en deux pourcentages faciles à calculer.
+
+**EX-E037-M-01** — maitrise, numerique, 90 s
+
+Une association s'était fixé un objectif de 350 € de dons. Elle a récolté 120 % de cet objectif. Quelle somme a-t-elle récoltée ?
+
+**Réponse :** 420
+
+*Corrigé.* (1) On décompose : 120 % = 100 % + 20 %. 100 % de l'objectif, c'est l'objectif entier : 350 €. (2) 10 % de 350 €, c'est le dixième : 350 ÷ 10 = 35 €. 20 %, c'est 2 fois 10 % : 2 × 35 = 70 €. (3) On additionne : 350 + 70 = 420 €. L'association a récolté 420 €. (4) Un pourcentage plus grand que 100 % donne plus que la quantité de départ : l'objectif est dépassé de 70 €.
+
+*Indice.* Décompose 120 % en 100 % et un autre pourcentage.
+
+**EX-E037-M-02** — maitrise, qcm, 90 s
+
+On ne connaît pas le prix d'un vélo, mais on sait que 10 % de ce prix valent 12 €. Combien valent 45 % du prix du vélo ?
+
+- **a.** 57 €
+  <br>*Erreur visée :* L'élève confond « 45 % de » et « 45 de plus » : il ajoute 45 € aux 12 €.
+- **b.** 54 € ✅
+- **c.** 48 €
+  <br>*Erreur visée :* L'élève compte quatre fois 10 %, soit 40 %, mais oublie les 5 % restants.
+
+*Corrigé.* (1) On décompose 45 % : 4 fois 10 %, plus 5 %. Et 5 %, c'est la moitié de 10 %. (2) 4 fois 10 % : 4 × 12 = 48 €. 5 % : 12 ÷ 2 = 6 €. (3) 45 % du prix : 48 + 6 = 54 €. La bonne réponse est b. (4) On n'a pas eu besoin du prix du vélo. Il vaut 10 fois 12 €, soit 120 €, et on peut vérifier : 120 × 45/100 = 5 400/100 = 54.
+
+*Indice.* Écris 45 % avec des 10 % et la moitié de 10 %.
 
 ---
 

@@ -61,11 +61,11 @@ Le DAG v1.0 (`Spécifications DAG, Exos, Mindcards/skills_dag.json`) contient 41
 
 | Brique | Contenu | État |
 |--------|---------|------|
-| `skills_dag.json` | Graphe enrichi (`exercise_ids`, `mindmap_id`, `mastery_threshold`) | **75 compétences** au 4 octobre 2026 : A Numération 17, B Calcul 21 (CP à 6e), C Fractions 18, D Décimaux 19 (CE1 à 6e). Intégrité vérifiée : aucun cycle, aucun prérequis fantôme, niveaux et citations contrôlés. |
-| `exercises.json` | Banque d'exercices, 3 niveaux, avec corrigés | **396 exercices**, tous en `relu_agent` (voir `QUALITY.md`). Chaque compétence en a au moins 3. |
-| `mindmaps.json` | Cartes mentales en Markdown hiérarchique | **14 cartes**, chaque compétence est couverte. |
+| `skills_dag.json` | Graphe enrichi (`exercise_ids`, `mindmap_id`, `mastery_threshold`) | **93 compétences** au 5 octobre 2026 : A Numération 17, B Calcul 22 (CP à 6e), C Fractions 18, D Décimaux 19 (CE1 à 6e), E Proportionnalité et pourcentages 17 (CM1 à 5e). Intégrité vérifiée : aucun cycle, aucun prérequis fantôme, niveaux et citations contrôlés. |
+| `exercises.json` | Banque d'exercices, 3 niveaux, avec corrigés | **504 exercices**, tous en `relu_agent` (voir `QUALITY.md`), en attente de la recette de Marius dans l'application (§10.6). Chaque compétence en a au moins 3. |
+| `mindmaps.json` | Cartes mentales en Markdown hiérarchique | **18 cartes**, chaque compétence est couverte. |
 
-**L'extension du contenu suit `Spécifications DAG, Exos, Mindcards/PLAN_CONTENU.md`** : un domaine à la fois, d'après le programme officiel, DAG, exercices et cartes ensemble, produits et relus par agents. Étapes 1 (calcul) et 2 (décimaux) faites, étape 3 (proportionnalité) ensuite.
+**L'extension du contenu suit `Spécifications DAG, Exos, Mindcards/PLAN_CONTENU.md`** : un domaine à la fois, d'après le programme officiel, DAG, exercices et cartes ensemble, produits et relus par agents. Étapes 1 (calcul), 2 (décimaux) et 3 (proportionnalité) faites, étape 4 (grandeurs et géométrie) ensuite.
 | Progression élève | État d'avancement sur le DAG | **En base Supabase**, tables et politiques RLS actives. |
 
 **Plus aucune compétence sans exercice.** Les 12 compétences A et C de l'ancienne liste avaient été remplies par Marius (7 ou 8 exercices chacune). Les trois dernières, B001, B005 et B006, l'ont été le 3 octobre 2026 : B005 était la lacune racine d'un élève CM1 typique, dont le plan du jour restait vide. Le code continue de contourner une compétence vide, ce qui redeviendra utile quand le DAG grandira : `placement.trous.test.ts` le vérifie sur un contenu troué exprès.

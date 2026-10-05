@@ -1,0 +1,169 @@
+[
+  {
+    "id": "EX-E023-D-01",
+    "skill_id": "E023",
+    "level": "decouverte",
+    "type": "vrai_faux",
+    "statement": "Dans un repère, on représente le prix de places de concert : le nombre de places en abscisse, le prix en euros en ordonnée. On place les points de coordonnées (2 ; 24), (3 ; 36) et (5 ; 60). Ils sont alignés sur une droite qui passe par l'origine du repère.\n\nAffirmation : le prix payé est proportionnel au nombre de places.",
+    "image": null,
+    "answer": {
+      "value": true
+    },
+    "solution_steps": [
+      "Une situation est de proportionnalité quand sa représentation est formée de points alignés avec l'origine du repère, c'est-à-dire sur une droite qui passe par le point (0 ; 0).",
+      "C'est le cas ici. Les quotients le confirment : $24 \\div 2 = 12$, $36 \\div 3 = 12$ et $60 \\div 5 = 12$. Une place coûte 12 € : le coefficient de proportionnalité est 12.",
+      "L'origine (0 ; 0) a un sens : 0 place, 0 €. L'affirmation est **vraie**."
+    ],
+    "hint": "Par quel point particulier du repère passe la droite ?",
+    "estimated_duration_s": 60,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, classe de 5e, Fonctions : « Caractériser graphiquement la proportionnalité. »"
+  },
+  {
+    "id": "EX-E023-D-02",
+    "skill_id": "E023",
+    "level": "decouverte",
+    "type": "qcm",
+    "statement": "On représente le nombre de pages imprimées par une imprimante selon la durée d'impression (en minutes). Les points sont sur une droite qui passe par l'origine du repère et par le point A (2 ; 18).\n\nLequel de ces points est sur cette droite ?",
+    "image": null,
+    "choices": [
+      {
+        "key": "a",
+        "text": "(5 ; 21)",
+        "misconception": "L'élève ajoute 3 aux deux coordonnées de A : 2 + 3 = 5 et 18 + 3 = 21. C'est le modèle additif : sur une droite qui passe par l'origine, on multiplie les deux coordonnées par un même nombre, on n'ajoute pas."
+      },
+      {
+        "key": "b",
+        "text": "(18 ; 2)",
+        "misconception": "L'élève échange l'abscisse et l'ordonnée de A. Ce point voudrait dire 2 pages en 18 minutes."
+      },
+      {
+        "key": "c",
+        "text": "(6 ; 54)",
+        "misconception": null
+      }
+    ],
+    "answer": {
+      "value": "c"
+    },
+    "solution_steps": [
+      "La droite passe par l'origine : c'est une situation de proportionnalité. Le coefficient qui passe de l'abscisse (durée en minutes) à l'ordonnée (nombre de pages) vaut $18 \\div 2 = 9$ : l'imprimante imprime 9 pages par minute.",
+      "Un point est sur la droite si son ordonnée vaut 9 fois son abscisse. Pour (6 ; 54) : $6 \\times 9 = 54$, il convient.",
+      "Pour (5 ; 21) : $5 \\times 9 = 45$, pas 21. Pour (18 ; 2) : $18 \\times 9 = 162$, pas 2. La bonne réponse est c."
+    ],
+    "hint": "Combien de pages l'imprimante imprime-t-elle en 1 minute ?",
+    "estimated_duration_s": 90,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, classe de 5e : « Représenter une situation de proportionnalité par un tableau ou un graphique. »"
+  },
+  {
+    "id": "EX-E023-E-01",
+    "skill_id": "E023",
+    "level": "entrainement",
+    "type": "numerique",
+    "statement": "Un robinet fuit, en perdant chaque jour la même quantité d'eau. On représente le volume d'eau perdu (en L) selon le nombre de jours : c'est une droite qui passe par l'origine et par le point (4 ; 26).\n\nQuel volume d'eau est perdu en 10 jours ? C'est l'ordonnée du point de la droite d'abscisse 10.",
+    "image": null,
+    "answer": {
+      "value": 65,
+      "accepted": [
+        "65 L",
+        "65"
+      ],
+      "unit": "L"
+    },
+    "solution_steps": [
+      "La droite passe par l'origine : le volume perdu est proportionnel au nombre de jours. Le point (4 ; 26) se lit : en 4 jours, 26 L perdus.",
+      "Coefficient : $26 \\div 4 = 6{,}5$. Le robinet perd 6,5 L par jour.",
+      "En 10 jours : $10 \\times 6{,}5 = 65$. Le point de la droite d'abscisse 10 a pour ordonnée 65 : en 10 jours, le robinet perd **65 L**.",
+      "Contrôle par la linéarité : 10 jours, c'est 4 jours, plus 4 jours, plus 2 jours, soit $26 + 26 + 13 = 65$."
+    ],
+    "hint": "Lis le point (4 ; 26) avec des mots, puis cherche le volume perdu en 1 jour.",
+    "estimated_duration_s": 120,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, classe de 5e : « Représenter une situation de proportionnalité par un tableau ou un graphique. »"
+  },
+  {
+    "id": "EX-E023-E-02",
+    "skill_id": "E023",
+    "level": "entrainement",
+    "type": "qcm",
+    "statement": "Au marché, on représente le prix payé (en €) selon la masse de pommes achetée (en kg) par trois clients. On obtient trois points : (2 ; 7), (4 ; 14) et (6 ; 20).\n\nCe nuage de points correspond-il à une situation de proportionnalité ?",
+    "image": null,
+    "choices": [
+      {
+        "key": "a",
+        "text": "Oui : quand la masse augmente, le prix augmente aussi.",
+        "misconception": "L'élève confond « augmenter ensemble » et « être proportionnels ». Un nuage de points qui monte n'est pas forcément aligné avec l'origine."
+      },
+      {
+        "key": "b",
+        "text": "Non : le point (6 ; 20) n'est pas sur la droite qui passe par l'origine et par (2 ; 7), car $6 \\times 3{,}5 = 21$.",
+        "misconception": null
+      },
+      {
+        "key": "c",
+        "text": "Oui : les points (2 ; 7) et (4 ; 14) sont alignés avec l'origine, cela suffit.",
+        "misconception": "L'élève ne vérifie que deux points ($4 \\times 3{,}5 = 14$). Pour qu'il y ait proportionnalité, **tous** les points doivent être alignés avec l'origine."
+      }
+    ],
+    "answer": {
+      "value": "b"
+    },
+    "solution_steps": [
+      "Les points sont alignés avec l'origine si l'ordonnée s'obtient en multipliant l'abscisse par un même nombre. Avec (2 ; 7) : $7 \\div 2 = 3{,}5$.",
+      "Point (4 ; 14) : $4 \\times 3{,}5 = 14$, il est sur la droite. Point (6 ; 20) : $6 \\times 3{,}5 = 21$, pas 20 : ce point est en dessous de la droite.",
+      "Les trois points ne sont pas alignés avec l'origine : le prix n'est pas proportionnel à la masse (le troisième client a eu une remise). La bonne réponse est b."
+    ],
+    "hint": "Calcule le prix d'un kilogramme pour chaque point.",
+    "estimated_duration_s": 120,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, classe de 5e : « Reconnaitre graphiquement qu'un nuage de points est ou n'est pas associé à une situation de proportionnalité entre données discrètes. »"
+  },
+  {
+    "id": "EX-E023-M-01",
+    "skill_id": "E023",
+    "level": "maitrise",
+    "type": "vrai_faux",
+    "statement": "Un taxi affiche ses tarifs. On représente le prix de la course (en €) selon la distance parcourue (en km) : (1 ; 5), (2 ; 7), (3 ; 9) et (4 ; 11). Ces points sont alignés.\n\nAffirmation : puisque les points sont alignés, le prix de la course est proportionnel à la distance.",
+    "image": null,
+    "answer": {
+      "value": false
+    },
+    "solution_steps": [
+      "Être alignés ne suffit pas : pour la proportionnalité, il faut que la droite passe par l'origine du repère.",
+      "Quand la distance augmente de 1 km, le prix augmente de 2 €. En reculant d'un kilomètre depuis (1 ; 5), on arrive à 0 km pour $5 - 2 = 3$ € : la droite passe par le point (0 ; 3), pas par l'origine. Ces 3 € sont la prise en charge, payée même sans rouler.",
+      "Les quotients le confirment : $5 \\div 1 = 5$ et $7 \\div 2 = 3{,}5$ sont différents.",
+      "L'affirmation est **fausse** : les points sont alignés, mais pas avec l'origine."
+    ],
+    "hint": "Quel prix correspondrait à une distance de 0 km ?",
+    "estimated_duration_s": 120,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, classe de 5e : « Reconnaitre une situation de proportionnalité à partir d'un tableau ou d'un graphique. »"
+  },
+  {
+    "id": "EX-E023-M-02",
+    "skill_id": "E023",
+    "level": "maitrise",
+    "type": "numerique",
+    "statement": "On représente le prix (en €) du jus de pomme vendu au litre selon le volume acheté (en L) : c'est une droite qui passe par l'origine et par le point (6 ; 15). Nora paie 27,50 €.\n\nQuel volume de jus achète-t-elle ? C'est l'abscisse du point de la droite d'ordonnée 27,5.",
+    "image": null,
+    "answer": {
+      "value": 11,
+      "accepted": [
+        "11 L",
+        "11"
+      ],
+      "unit": "L"
+    },
+    "solution_steps": [
+      "On raisonne à l'envers : on connaît l'ordonnée (le prix), on cherche l'abscisse (le volume). Le point (6 ; 15) se lit : 6 L coûtent 15 €.",
+      "On cherche le coefficient qui passe du prix au volume. 6 L pour 15 €, c'est 2 L pour 5 € (on divise les deux nombres par 3). Le coefficient est donc $2 \\div 5 = 0{,}4$ : chaque euro achète 0,4 L.",
+      "Volume pour 27,50 € : $27{,}5 \\times 0{,}4 = 11$.",
+      "Vérification dans le sens habituel : 1 L coûte $15 \\div 6 = 2{,}5$ €, et $11 \\times 2{,}5 = 27{,}5$. Nora achète **11 L** de jus."
+    ],
+    "hint": "Combien de litres achète-t-on avec 5 € ?",
+    "estimated_duration_s": 180,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, classe de 5e : « Représenter une situation de proportionnalité par un tableau ou un graphique. »"
+  }
+]

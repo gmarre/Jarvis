@@ -1,0 +1,181 @@
+[
+  {
+    "id": "EX-E036-D-01",
+    "skill_id": "E036",
+    "level": "decouverte",
+    "type": "numerique",
+    "statement": "Pour l'élection du délégué, les 30 élèves d'une classe ont voté. Camille a obtenu 12 voix.\n\nQuel pourcentage des voix Camille a-t-elle obtenu ?",
+    "image": null,
+    "answer": {
+      "value": 40,
+      "unit": "%",
+      "accepted": [
+        "40 %"
+      ]
+    },
+    "solution_steps": [
+      "Proportion des voix de Camille : la partie divisée par le tout, $\\frac{12}{30}$.",
+      "30 ne se ramène pas à 100 en multipliant par un entier. On cherche une fraction égale plus simple : $12 = 2 \\times 6$ et $30 = 5 \\times 6$, donc $\\frac{12}{30} = \\frac{2 \\times 6}{5 \\times 6} = \\frac{2}{5}$.",
+      "On calcule le quotient : $2 \\div 5 = 0{,}4$. Pour compter en centièmes, on multiplie par 100 : $0{,}4 \\times 100 = 40$. C'est 40 pour 100.",
+      "Camille a obtenu **40 %** des voix. Contrôle : 12 voix, c'est moins que la moitié de 30 (15), et 40 % est moins que 50 %."
+    ],
+    "hint": "Écris la fraction des voix de Camille. 12 et 30 sont dans la table de 6 : cherche une fraction égale plus simple.",
+    "estimated_duration_s": 75,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, 5e : calculer le pourcentage de voix de chaque candidat."
+  },
+  {
+    "id": "EX-E036-D-02",
+    "skill_id": "E036",
+    "level": "decouverte",
+    "type": "vrai_faux",
+    "statement": "Dans une classe de 36 élèves, 9 portent des lunettes. Rayan calcule $36 \\div 9 = 4$ et annonce : « 4 % des élèves portent des lunettes. »\n\nRayan a-t-il raison ?",
+    "image": null,
+    "answer": {
+      "value": false
+    },
+    "solution_steps": [
+      "Rayan a divisé le tout par la partie. La proportion d'élèves qui portent des lunettes, c'est la partie divisée par le tout : $\\frac{9}{36}$.",
+      "$9 = 1 \\times 9$ et $36 = 4 \\times 9$, donc $\\frac{9}{36} = \\frac{1 \\times 9}{4 \\times 9} = \\frac{1}{4}$, et $1 \\div 4 = 0{,}25$.",
+      "Pour compter en centièmes, on multiplie par 100 : $0{,}25 \\times 100 = 25$. La fréquence des élèves à lunettes est 0,25, c'est-à-dire 25 % : un élève sur 4.",
+      "Le 4 de Rayan signifie « 1 élève sur 4 », pas « 4 pour 100 ». Rayan a tort."
+    ],
+    "hint": "Pour une proportion, divise-t-on la partie par le tout, ou le tout par la partie ?",
+    "estimated_duration_s": 75,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, 5e : calculer des effectifs et des fréquences (exprimées sous forme décimale, fractionnaire ou de pourcentage)."
+  },
+  {
+    "id": "EX-E036-E-01",
+    "skill_id": "E036",
+    "level": "entrainement",
+    "type": "numerique",
+    "statement": "Un club de basket a disputé 27 matchs et en a gagné 21.\n\nQuel pourcentage de ses matchs a-t-il gagné ? Donne la valeur arrondie à l'unité.",
+    "image": null,
+    "answer": {
+      "value": 78,
+      "unit": "%",
+      "accepted": [
+        "78 %"
+      ]
+    },
+    "solution_steps": [
+      "Proportion de matchs gagnés : $\\frac{21}{27}$. $21 = 7 \\times 3$ et $27 = 9 \\times 3$, donc $\\frac{21}{27} = \\frac{7 \\times 3}{9 \\times 3} = \\frac{7}{9}$.",
+      "On pose la division $7 \\div 9$ : elle ne s'arrête pas, on obtient 0,777… (le chiffre 7 se répète).",
+      "On arrondit le quotient au centième : 0,777… est entre 0,77 et 0,78, plus près de 0,78 (son chiffre des millièmes est 7).",
+      "On multiplie par 100 : $0{,}78 \\times 100 = 78$. 0,78, c'est 78 centièmes : le club a gagné environ **78 %** de ses matchs."
+    ],
+    "hint": "Écris la fraction des matchs gagnés. 21 et 27 sont dans la table de 3 : cherche une fraction égale plus simple avant de diviser.",
+    "estimated_duration_s": 120,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, 5e : calculer, appliquer des proportions, des pourcentages."
+  },
+  {
+    "id": "EX-E036-E-02",
+    "skill_id": "E036",
+    "level": "entrainement",
+    "type": "qcm",
+    "statement": "Une trousse contient 8 crayons, dont 3 rouges.\n\nQuel pourcentage des crayons est rouge ?",
+    "image": null,
+    "choices": [
+      {
+        "key": "a",
+        "text": "37,5 %",
+        "misconception": null
+      },
+      {
+        "key": "b",
+        "text": "3 %",
+        "misconception": "L'élève prend le nombre de crayons rouges pour le pourcentage, comme si la trousse contenait 100 crayons."
+      },
+      {
+        "key": "c",
+        "text": "0,375 %",
+        "misconception": "L'élève calcule bien le quotient $3 \\div 8 = 0{,}375$, mais écrit le symbole % juste derrière : il oublie de multiplier par 100 pour compter en centièmes."
+      },
+      {
+        "key": "d",
+        "text": "30 %",
+        "misconception": "L'élève remplace le total de 8 crayons par 10 pour se ramener à un cas connu : 3 sur 10, c'est 30 %. Mais la trousse contient 8 crayons, pas 10."
+      }
+    ],
+    "answer": {
+      "value": "a"
+    },
+    "solution_steps": [
+      "Proportion de crayons rouges : la partie (3) divisée par le tout (8), $\\frac{3}{8}$.",
+      "8 ne se ramène pas à 100 en multipliant par un entier : on pose la division $3 \\div 8$, en continuant après la virgule jusqu'à un reste nul. On obtient $3 \\div 8 = 0{,}375$.",
+      "Pour compter en centièmes, on multiplie par 100 : $0{,}375 \\times 100 = 37{,}5$. C'est 37,5 pour 100.",
+      "37,5 % des crayons sont rouges. La bonne réponse est a."
+    ],
+    "hint": "Divise le nombre de crayons rouges par le nombre total de crayons.",
+    "estimated_duration_s": 75,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, 5e : calculer, appliquer des proportions, des pourcentages."
+  },
+  {
+    "id": "EX-E036-M-01",
+    "skill_id": "E036",
+    "level": "maitrise",
+    "type": "numerique",
+    "statement": "Trois candidats se présentent à l'élection du bureau du club de théâtre. Chaque membre vote pour un seul candidat. Ana obtient 7 voix, Baptiste 9 voix et Chloé 5 voix.\n\nQuel pourcentage des voix Baptiste a-t-il obtenu ? Donne la valeur arrondie à l'unité.",
+    "image": null,
+    "answer": {
+      "value": 43,
+      "unit": "%",
+      "accepted": [
+        "43 %"
+      ]
+    },
+    "solution_steps": [
+      "Le tout, c'est le nombre total de voix : $7 + 9 + 5 = 21$.",
+      "Proportion des voix de Baptiste : $\\frac{9}{21}$. $9 = 3 \\times 3$ et $21 = 7 \\times 3$, donc $\\frac{9}{21} = \\frac{3 \\times 3}{7 \\times 3} = \\frac{3}{7}$.",
+      "On pose la division $3 \\div 7$ : elle ne s'arrête pas, on obtient 0,428… en s'arrêtant au rang des millièmes.",
+      "On arrondit au centième : 0,428… est entre 0,42 et 0,43, plus près de 0,43 (son chiffre des millièmes est 8). On multiplie par 100 : $0{,}43 \\times 100 = 43$. 0,43, c'est 43 centièmes : Baptiste a obtenu environ **43 %** des voix.",
+      "Attention : 9 %, ce serait prendre son nombre de voix pour un pourcentage, alors que le total n'est pas 100."
+    ],
+    "hint": "Commence par calculer le nombre total de voix.",
+    "estimated_duration_s": 150,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, 5e : calculer le pourcentage de voix de chaque candidat."
+  },
+  {
+    "id": "EX-E036-M-02",
+    "skill_id": "E036",
+    "level": "maitrise",
+    "type": "qcm",
+    "statement": "Trois clubs de natation présentent des nageurs à un examen.\n\n- Club P : 30 reçus sur 42 nageurs ;\n- Club Q : 20 reçus sur 24 nageurs ;\n- Club R : 6 reçus sur 9 nageurs.\n\nQuel club a le plus fort pourcentage de reçus ?",
+    "image": null,
+    "choices": [
+      {
+        "key": "a",
+        "text": "Le club P",
+        "misconception": "L'élève compare les nombres de reçus : 30 est le plus grand. Mais le club P présente aussi le plus de nageurs ; il faut comparer des proportions, pas des effectifs."
+      },
+      {
+        "key": "b",
+        "text": "Le club R",
+        "misconception": "L'élève compare les nombres d'échecs : 3 au club R, 4 au club Q, 12 au club P. Ce raisonnement par différence ne tient pas compte du nombre de nageurs présentés."
+      },
+      {
+        "key": "c",
+        "text": "Le club Q",
+        "misconception": null
+      }
+    ],
+    "answer": {
+      "value": "c"
+    },
+    "solution_steps": [
+      "Pour chaque club, on calcule la proportion de reçus (la partie divisée par le tout), on arrondit le quotient au centième, puis on multiplie par 100 pour l'écrire en pourcentage.",
+      "Club P : $30 = 5 \\times 6$ et $42 = 7 \\times 6$, donc $\\frac{30}{42} = \\frac{5 \\times 6}{7 \\times 6} = \\frac{5}{7}$. La division $5 \\div 7$ donne 0,714…, arrondi à 0,71 ; $0{,}71 \\times 100 = 71$, soit environ 71 %.",
+      "Club Q : $20 = 5 \\times 4$ et $24 = 6 \\times 4$, donc $\\frac{20}{24} = \\frac{5 \\times 4}{6 \\times 4} = \\frac{5}{6}$. La division $5 \\div 6$ donne 0,833…, arrondi à 0,83 ; $0{,}83 \\times 100 = 83$, soit environ 83 %.",
+      "Club R : $6 = 2 \\times 3$ et $9 = 3 \\times 3$, donc $\\frac{6}{9} = \\frac{2 \\times 3}{3 \\times 3} = \\frac{2}{3}$. La division $2 \\div 3$ donne 0,666…, arrondi à 0,67 ; $0{,}67 \\times 100 = 67$, soit environ 67 %.",
+      "Le plus fort pourcentage de reçus est celui du club Q, environ 83 %. La bonne réponse est c."
+    ],
+    "hint": "Calcule le pourcentage de reçus de chaque club avant de comparer.",
+    "estimated_duration_s": 180,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, 5e : calculer, appliquer des proportions, des pourcentages."
+  }
+]

@@ -1,0 +1,175 @@
+[
+  {
+    "id": "EX-E037-D-01",
+    "skill_id": "E037",
+    "level": "decouverte",
+    "type": "numerique",
+    "statement": "Une cuve contient 600 L d'eau. 1 %, c'est un centième.\n\nCalcule 1 % de 600 L, puis déduis-en 3 % de 600 L. Combien de litres font 3 % de la cuve ?",
+    "image": null,
+    "answer": {
+      "value": 18,
+      "unit": "L",
+      "accepted": [
+        "18 L"
+      ]
+    },
+    "solution_steps": [
+      "1 % de 600 L, c'est le centième de 600 L : $600 \\div 100 = 6$ L.",
+      "3 %, c'est 3 fois 1 % : $3 \\times 6 = 18$ L.",
+      "3 % de la cuve représentent **18 L**. Contrôle avec la fraction : $600 \\times \\frac{3}{100} = \\frac{1\\,800}{100} = 18$."
+    ],
+    "hint": "Combien de litres font 1 % de la cuve ?",
+    "estimated_duration_s": 60,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, 5e : prendre 1 %, 10 % ou 50 % d'un nombre, en lien avec la proportionnalité."
+  },
+  {
+    "id": "EX-E037-D-02",
+    "skill_id": "E037",
+    "level": "decouverte",
+    "type": "qcm",
+    "statement": "Un sac à dos coûte 70 €. 10 % de ce prix valent 7 €.\n\nCombien valent 20 % de ce prix ?",
+    "image": null,
+    "choices": [
+      {
+        "key": "a",
+        "text": "17 €",
+        "misconception": "L'élève raisonne par ajout : pour passer de 10 % à 20 %, il ajoute 10, et il ajoute aussi 10 au résultat, 7 + 10 = 17. Or 20 %, c'est 2 fois 10 % : il faut doubler 7 €."
+      },
+      {
+        "key": "b",
+        "text": "27 €",
+        "misconception": "L'élève confond « 20 % de » et « 20 de plus » : il ajoute 20 € aux 7 €."
+      },
+      {
+        "key": "c",
+        "text": "14 €",
+        "misconception": null
+      }
+    ],
+    "answer": {
+      "value": "c"
+    },
+    "solution_steps": [
+      "20 %, c'est 2 fois 10 % : $20\\,\\% = 10\\,\\% + 10\\,\\%$.",
+      "Donc 20 % de 70 € valent $7 + 7 = 14$ €.",
+      "Contrôle : $20\\,\\% = \\frac{20}{100} = \\frac{1}{5}$, et le cinquième de 70 € est $70 \\div 5 = 14$ €. La bonne réponse est c."
+    ],
+    "hint": "Combien de fois 10 % y a-t-il dans 20 % ?",
+    "estimated_duration_s": 45,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, 5e : prendre 1 %, 10 % ou 50 % d'un nombre, en lien avec la proportionnalité."
+  },
+  {
+    "id": "EX-E037-E-01",
+    "skill_id": "E037",
+    "level": "entrainement",
+    "type": "numerique",
+    "statement": "Une cycliste doit parcourir 74 km en deux jours. Le premier jour, elle fait 60 % du parcours.\n\nEn utilisant 50 % et 10 %, calcule la distance parcourue le premier jour.",
+    "image": null,
+    "answer": {
+      "value": 44.4,
+      "unit": "km",
+      "accepted": [
+        "44,4 km",
+        "44,40 km",
+        "44,40"
+      ]
+    },
+    "solution_steps": [
+      "On décompose : $60\\,\\% = 50\\,\\% + 10\\,\\%$.",
+      "50 % de 74 km, c'est la moitié : $74 \\div 2 = 37$ km.",
+      "10 % de 74 km, c'est le dixième : $74 \\div 10 = 7{,}4$ km.",
+      "On additionne les deux morceaux : $37 + 7{,}4 = 44{,}4$ km. Le premier jour, elle parcourt **44,4 km**.",
+      "Contrôle : 60 %, c'est un peu plus que la moitié ; 44,4 km est un peu plus que 37 km."
+    ],
+    "hint": "Calcule séparément la moitié et le dixième de 74 km.",
+    "estimated_duration_s": 90,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, 5e : prendre 1 %, 10 % ou 50 % d'un nombre, en lien avec la proportionnalité."
+  },
+  {
+    "id": "EX-E037-E-02",
+    "skill_id": "E037",
+    "level": "entrainement",
+    "type": "vrai_faux",
+    "statement": "Zoé calcule 51 % de 46 : « 50 % de 46, c'est 23 ; 1 % de 46, c'est 0,46 ; donc 51 % de 46, c'est 23,46. »\n\nZoé a-t-elle raison ?",
+    "image": null,
+    "answer": {
+      "value": true
+    },
+    "solution_steps": [
+      "$51\\,\\% = 50\\,\\% + 1\\,\\%$ : on peut calculer les deux morceaux, puis les additionner.",
+      "50 % de 46, c'est la moitié : $46 \\div 2 = 23$. 1 % de 46, c'est le centième : $46 \\div 100 = 0{,}46$.",
+      "$23 + 0{,}46 = 23{,}46$. Zoé a raison.",
+      "Contrôle avec la fraction : $46 \\times \\frac{51}{100} = \\frac{2\\,346}{100} = 23{,}46$."
+    ],
+    "hint": "Décompose 51 % en deux pourcentages faciles à calculer.",
+    "estimated_duration_s": 75,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, 5e : prendre 1 %, 10 % ou 50 % d'un nombre, en lien avec la proportionnalité."
+  },
+  {
+    "id": "EX-E037-M-01",
+    "skill_id": "E037",
+    "level": "maitrise",
+    "type": "numerique",
+    "statement": "Une association s'était fixé un objectif de 350 € de dons. Elle a récolté 120 % de cet objectif.\n\nQuelle somme a-t-elle récoltée ?",
+    "image": null,
+    "answer": {
+      "value": 420,
+      "unit": "€",
+      "accepted": [
+        "420 €"
+      ]
+    },
+    "solution_steps": [
+      "On décompose : $120\\,\\% = 100\\,\\% + 20\\,\\%$. 100 % de l'objectif, c'est l'objectif entier : 350 €.",
+      "10 % de 350 €, c'est le dixième : $350 \\div 10 = 35$ €. 20 %, c'est 2 fois 10 % : $2 \\times 35 = 70$ €.",
+      "On additionne : $350 + 70 = 420$ €. L'association a récolté **420 €**.",
+      "Un pourcentage plus grand que 100 % donne plus que la quantité de départ : l'objectif est dépassé de 70 €."
+    ],
+    "hint": "Décompose 120 % en 100 % et un autre pourcentage.",
+    "estimated_duration_s": 90,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, 5e : prendre 1 %, 10 % ou 50 % d'un nombre, en lien avec la proportionnalité."
+  },
+  {
+    "id": "EX-E037-M-02",
+    "skill_id": "E037",
+    "level": "maitrise",
+    "type": "qcm",
+    "statement": "On ne connaît pas le prix d'un vélo, mais on sait que 10 % de ce prix valent 12 €.\n\nCombien valent 45 % du prix du vélo ?",
+    "image": null,
+    "choices": [
+      {
+        "key": "a",
+        "text": "57 €",
+        "misconception": "L'élève confond « 45 % de » et « 45 de plus » : il ajoute 45 € aux 12 €."
+      },
+      {
+        "key": "b",
+        "text": "54 €",
+        "misconception": null
+      },
+      {
+        "key": "c",
+        "text": "48 €",
+        "misconception": "L'élève compte quatre fois 10 %, soit 40 %, mais oublie les 5 % restants."
+      }
+    ],
+    "answer": {
+      "value": "b"
+    },
+    "solution_steps": [
+      "On décompose 45 % : 4 fois 10 %, plus 5 %. Et 5 %, c'est la moitié de 10 %.",
+      "4 fois 10 % : $4 \\times 12 = 48$ €. 5 % : $12 \\div 2 = 6$ €.",
+      "45 % du prix : $48 + 6 = 54$ €. La bonne réponse est b.",
+      "On n'a pas eu besoin du prix du vélo. Il vaut 10 fois 12 €, soit 120 €, et on peut vérifier : $120 \\times \\frac{45}{100} = \\frac{5\\,400}{100} = 54$."
+    ],
+    "hint": "Écris 45 % avec des 10 % et la moitié de 10 %.",
+    "estimated_duration_s": 90,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, 5e : prendre 1 %, 10 % ou 50 % d'un nombre, en lien avec la proportionnalité."
+  }
+]

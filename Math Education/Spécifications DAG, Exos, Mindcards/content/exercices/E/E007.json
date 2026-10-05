@@ -1,0 +1,176 @@
+[
+  {
+    "id": "EX-E007-D-01",
+    "skill_id": "E007",
+    "level": "decouverte",
+    "type": "numerique",
+    "statement": "Sur l'autoroute, une voiture roule à la vitesse constante de 80 km/h : elle parcourt 80 km en 1 h.\n\nQuelle distance parcourt-elle en 4 h ?",
+    "image": null,
+    "answer": {
+      "value": 320,
+      "accepted": [
+        "320 km",
+        "320"
+      ],
+      "unit": "km"
+    },
+    "solution_steps": [
+      "« 80 km/h » se lit « 80 kilomètres par heure » : en 1 h, la voiture parcourt 80 km.",
+      "À vitesse constante, la distance parcourue est proportionnelle à la durée : en 2 fois plus de temps, on parcourt 2 fois plus de distance. La vitesse, 80, est le coefficient de proportionnalité qui passe de la durée (en h) à la distance (en km).",
+      "Distance en 4 h : $4 \\times 80 = 320$. La voiture parcourt **320 km**."
+    ],
+    "hint": "En 1 h, elle parcourt 80 km. Et en 2 h ?",
+    "estimated_duration_s": 60,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, classe de 5e : « Utiliser un coefficient de proportionnalité dans des contextes concrets (prix unitaire, vitesse moyenne, échelle, etc.). »"
+  },
+  {
+    "id": "EX-E007-D-02",
+    "skill_id": "E007",
+    "level": "decouverte",
+    "type": "qcm",
+    "statement": "Un car scolaire parcourt 210 km en 3 h, à vitesse constante.\n\nQuelle est sa vitesse moyenne ?",
+    "image": null,
+    "choices": [
+      {
+        "key": "a",
+        "text": "630 km/h",
+        "misconception": "L'élève multiplie la distance par la durée ($210 \\times 3 = 630$) au lieu de diviser. Un car ne roule pas à 630 km/h : ce serait plus vite qu'un TGV."
+      },
+      {
+        "key": "b",
+        "text": "70 km/h",
+        "misconception": null
+      },
+      {
+        "key": "c",
+        "text": "210 km/h",
+        "misconception": "L'élève confond la distance parcourue en 3 h avec la vitesse, qui est la distance parcourue en **1** h."
+      }
+    ],
+    "answer": {
+      "value": "b"
+    },
+    "solution_steps": [
+      "La vitesse moyenne est la distance parcourue en 1 h. En 3 h, le car parcourt 210 km ; en 1 h, il parcourt 3 fois moins : $210 \\div 3 = 70$.",
+      "Vérification avec le coefficient : $3 \\times 70 = 210$. La distance (en km) s'obtient en multipliant la durée (en h) par 70.",
+      "La vitesse moyenne du car est **70 km/h** : la bonne réponse est b."
+    ],
+    "hint": "Quelle distance le car parcourt-il en 1 h ?",
+    "estimated_duration_s": 75,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, classe de 5e : « Utiliser un coefficient de proportionnalité dans des contextes concrets (prix unitaire, vitesse moyenne, échelle, etc.). »"
+  },
+  {
+    "id": "EX-E007-E-01",
+    "skill_id": "E007",
+    "level": "entrainement",
+    "type": "numerique",
+    "statement": "Une cycliste roule à la vitesse constante de 22 km/h pendant deux heures et demie (2,5 h).\n\nQuelle distance parcourt-elle ?",
+    "image": null,
+    "answer": {
+      "value": 55,
+      "accepted": [
+        "55 km",
+        "55"
+      ],
+      "unit": "km"
+    },
+    "solution_steps": [
+      "En 1 h, elle parcourt 22 km. En 2 h, elle parcourt $2 \\times 22 = 44$ km.",
+      "Une demi-heure, c'est la moitié d'une heure : elle y parcourt la moitié de 22 km, soit $22 \\div 2 = 11$ km.",
+      "En 2,5 h : $44 + 11 = 55$. On retrouve ce résultat avec le coefficient : $2{,}5 \\times 22 = 55$. Elle parcourt **55 km**."
+    ],
+    "hint": "Calcule la distance parcourue en 2 h, puis en une demi-heure.",
+    "estimated_duration_s": 90,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, classe de 5e : « Utiliser un coefficient de proportionnalité dans des contextes concrets (prix unitaire, vitesse moyenne, échelle, etc.). »"
+  },
+  {
+    "id": "EX-E007-E-02",
+    "skill_id": "E007",
+    "level": "entrainement",
+    "type": "vrai_faux",
+    "statement": "Un bateau parcourt 36 km en 1,5 h, à vitesse constante.\n\nAffirmation : sa vitesse moyenne est de 54 km/h.",
+    "image": null,
+    "answer": {
+      "value": false
+    },
+    "solution_steps": [
+      "54 vient de $36 \\times 1{,}5 = 54$ : on a multiplié la distance par la durée. Or la vitesse est la distance parcourue en 1 h ; comme le bateau met plus d'une heure pour faire 36 km, en 1 h il en fait **moins** de 36. 54 km/h est impossible.",
+      "Calcul de la vitesse : 1,5 h, c'est 3 demi-heures. En une demi-heure, le bateau parcourt $36 \\div 3 = 12$ km.",
+      "En 1 h, soit 2 demi-heures : $2 \\times 12 = 24$ km. Sa vitesse moyenne est 24 km/h. Vérification : $1{,}5 \\times 24 = 36$.",
+      "L'affirmation est **fausse**."
+    ],
+    "hint": "En 1 h, le bateau parcourt-il plus ou moins de 36 km ?",
+    "estimated_duration_s": 120,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, classe de 5e : « Utiliser un coefficient de proportionnalité dans des contextes concrets (prix unitaire, vitesse moyenne, échelle, etc.). »"
+  },
+  {
+    "id": "EX-E007-M-01",
+    "skill_id": "E007",
+    "level": "maitrise",
+    "type": "numerique",
+    "statement": "Un TER roule à la vitesse moyenne de 90 km/h. Il doit parcourir 225 km.\n\nCombien de temps dure le trajet ? Donne ta réponse en heures.",
+    "image": null,
+    "answer": {
+      "value": 2.5,
+      "accepted": [
+        "2,5 h",
+        "2,5",
+        "2 h 30",
+        "2 h 30 min",
+        "2h30"
+      ],
+      "unit": "h"
+    },
+    "solution_steps": [
+      "On raisonne à l'envers : on connaît la distance et la vitesse, on cherche la durée. En 1 h, le train parcourt 90 km ; en 2 h, $2 \\times 90 = 180$ km.",
+      "Il reste $225 - 180 = 45$ km. C'est la moitié de 90 km : le train les parcourt en une demi-heure.",
+      "Durée totale : 2 h et une demi-heure, soit **2,5 h**. Vérification avec le coefficient : $2{,}5 \\times 90 = 225$."
+    ],
+    "hint": "Combien de kilomètres le train parcourt-il en 2 h ? Et en une demi-heure ?",
+    "estimated_duration_s": 150,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, classe de 5e : « Utiliser un coefficient de proportionnalité dans des contextes concrets (prix unitaire, vitesse moyenne, échelle, etc.). »"
+  },
+  {
+    "id": "EX-E007-M-02",
+    "skill_id": "E007",
+    "level": "maitrise",
+    "type": "qcm",
+    "statement": "Pour partir en vacances, une famille roule 2 h à 100 km/h, puis 1 h à 70 km/h.\n\nQuelle est sa vitesse moyenne sur l'ensemble du trajet ?",
+    "image": null,
+    "choices": [
+      {
+        "key": "a",
+        "text": "90 km/h",
+        "misconception": null
+      },
+      {
+        "key": "b",
+        "text": "85 km/h",
+        "misconception": "L'élève fait la moyenne des deux vitesses, $(100 + 70) \\div 2 = 85$, comme si la famille avait roulé aussi longtemps à chaque vitesse. Or elle a roulé 2 h à 100 km/h et seulement 1 h à 70 km/h."
+      },
+      {
+        "key": "c",
+        "text": "270 km/h",
+        "misconception": "L'élève calcule bien la distance totale, 270 km, mais la prend pour la vitesse : il oublie de la ramener à la distance parcourue en 1 h."
+      }
+    ],
+    "answer": {
+      "value": "a"
+    },
+    "solution_steps": [
+      "Distance parcourue : $2 \\times 100 = 200$ km pendant la première partie, $1 \\times 70 = 70$ km pendant la seconde, soit $200 + 70 = 270$ km en tout.",
+      "Durée totale : $2 + 1 = 3$ h.",
+      "La vitesse moyenne est la vitesse constante qui ferait parcourir la même distance dans le même temps : $270 \\div 3 = 90$. Vérification : $3 \\times 90 = 270$.",
+      "La vitesse moyenne est **90 km/h**, et non 85 km/h : la famille a roulé plus longtemps à 100 km/h, la moyenne penche de ce côté. La bonne réponse est a."
+    ],
+    "hint": "Calcule la distance totale et la durée totale.",
+    "estimated_duration_s": 150,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, classe de 5e : « Utiliser un coefficient de proportionnalité dans des contextes concrets (prix unitaire, vitesse moyenne, échelle, etc.). »"
+  }
+]

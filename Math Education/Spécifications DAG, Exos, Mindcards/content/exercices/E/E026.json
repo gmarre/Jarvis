@@ -1,0 +1,183 @@
+[
+  {
+    "id": "EX-E026-D-01",
+    "skill_id": "E026",
+    "level": "decouverte",
+    "type": "vrai_faux",
+    "statement": "Elsa achète 2 paquets de gâteaux à 4 € le paquet. Jules achète 3 fois plus de paquets.\n\nVrai ou faux : Jules paie 3 fois plus qu'Elsa.",
+    "image": null,
+    "answer": {
+      "value": true
+    },
+    "solution_steps": [
+      "Tous les paquets ont le même prix : 4 €.",
+      "Elsa paie $2 \\times 4 = 8$ €.",
+      "Jules achète 3 fois plus de paquets : $2 \\times 3 = 6$ paquets. Il paie $6 \\times 4 = 24$ €.",
+      "Et $8 \\times 3 = 24$ : Jules paie bien 3 fois plus. Si j'achète 3 fois plus de paquets au même prix, je paie 3 fois plus. L'affirmation est **vraie**."
+    ],
+    "hint": "Calcule ce que paie Elsa, puis ce que paie Jules.",
+    "estimated_duration_s": 60,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 3, CM1, la proportionnalité : identifier une situation de proportionnalité."
+  },
+  {
+    "id": "EX-E026-D-02",
+    "skill_id": "E026",
+    "level": "decouverte",
+    "type": "qcm",
+    "statement": "Dans quelle situation, si la première grandeur devient 2 fois plus grande, la seconde devient-elle 2 fois plus grande ?",
+    "image": null,
+    "choices": [
+      {
+        "key": "a",
+        "text": "L'âge d'un enfant et sa taille.",
+        "misconception": "L'élève pense que tout ce qui augmente ensemble est proportionnel : l'enfant grandit en vieillissant, mais sa taille ne double pas quand son âge double."
+      },
+      {
+        "key": "b",
+        "text": "Le nombre de timbres achetés et le prix payé, tous les timbres ayant le même prix.",
+        "misconception": null
+      },
+      {
+        "key": "c",
+        "text": "L'âge de Paul et l'âge de sa grande sœur.",
+        "misconception": "L'élève voit deux âges qui augmentent en même temps. Mais chaque année, ils augmentent tous les deux d'un an : c'est la même quantité qui s'ajoute, pas le même nombre de fois."
+      }
+    ],
+    "answer": {
+      "value": "b"
+    },
+    "solution_steps": [
+      "Des timbres qui ont tous le même prix : 2 fois plus de timbres, c'est 2 fois plus à payer. C'est une situation de proportionnalité.",
+      "L'âge et la taille : un enfant grandit en vieillissant, mais à 10 ans il ne mesure pas 2 fois sa taille de 5 ans.",
+      "Les âges de Paul et de sa grande sœur augmentent ensemble, mais d'un an chacun par an : ils augmentent de la même quantité, pas du même nombre de fois.",
+      "La bonne réponse est **le nombre de timbres et le prix payé**."
+    ],
+    "hint": "Pour chaque situation, demande-toi : si je double la première, est-ce que la seconde double forcément ?",
+    "estimated_duration_s": 60,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 3, CM1, la proportionnalité : identifier une situation de proportionnalité."
+  },
+  {
+    "id": "EX-E026-E-01",
+    "skill_id": "E026",
+    "level": "entrainement",
+    "type": "qcm",
+    "statement": "Une pile de 40 feuilles identiques est épaisse de 8 mm. Léo garde seulement 10 de ces feuilles.\n\nQue devient l'épaisseur de la pile ?",
+    "image": null,
+    "choices": [
+      {
+        "key": "a",
+        "text": "Elle devient 4 fois plus petite.",
+        "misconception": null
+      },
+      {
+        "key": "b",
+        "text": "Elle diminue de 4 mm.",
+        "misconception": "L'élève a bien trouvé que 10 feuilles, c'est 4 fois moins que 40, mais transforme « 4 fois moins » en « 4 de moins » : $8 - 4 = 4$ mm. Il confond comparaison multiplicative et comparaison additive."
+      },
+      {
+        "key": "c",
+        "text": "Elle devient 4 fois plus grande.",
+        "misconception": "L'élève a bien vu le nombre 4, mais confond « 4 fois moins » et « 4 fois plus » : avec moins de feuilles, la pile ne peut pas être plus épaisse."
+      }
+    ],
+    "answer": {
+      "value": "a"
+    },
+    "solution_steps": [
+      "10 feuilles, c'est 4 fois moins que 40 feuilles, car $10 \\times 4 = 40$.",
+      "Toutes les feuilles ont la même épaisseur : si je prends 4 fois moins de feuilles, la pile est 4 fois moins épaisse.",
+      "La pile devient **4 fois plus petite** : elle mesure $8 \\div 4 = 2$ mm."
+    ],
+    "hint": "Combien de fois moins de feuilles Léo garde-t-il ?",
+    "estimated_duration_s": 90,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 3, CM1, la proportionnalité : identifier une situation de proportionnalité."
+  },
+  {
+    "id": "EX-E026-E-02",
+    "skill_id": "E026",
+    "level": "entrainement",
+    "type": "vrai_faux",
+    "statement": "Lina a 5 ans et son frère a 10 ans : il a 2 fois l'âge de Lina.\n\nVrai ou faux : dans 5 ans, il aura toujours 2 fois l'âge de Lina.",
+    "image": null,
+    "answer": {
+      "value": false
+    },
+    "solution_steps": [
+      "Dans 5 ans, Lina aura $5 + 5 = 10$ ans et son frère $10 + 5 = 15$ ans.",
+      "2 fois l'âge de Lina, ce serait $10 \\times 2 = 20$ ans. Or son frère aura 15 ans.",
+      "Les deux âges augmentent de la même quantité (5 ans), pas du même nombre de fois : l'âge du frère n'est pas proportionnel à celui de Lina.",
+      "L'affirmation est **fausse**."
+    ],
+    "hint": "Calcule l'âge de chacun dans 5 ans.",
+    "estimated_duration_s": 90,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 3, CM1, la proportionnalité : identifier une situation de proportionnalité."
+  },
+  {
+    "id": "EX-E026-M-01",
+    "skill_id": "E026",
+    "level": "maitrise",
+    "type": "numerique",
+    "statement": "Une fleuriste vend des pots à 2 € pièce, plus 5 € de livraison par commande. 3 pots livrés coûtent 11 €.\n\nCombien coûtent 6 pots livrés ?",
+    "image": null,
+    "answer": {
+      "value": 17,
+      "unit": "€",
+      "accepted": [
+        "17 €",
+        "17 euros"
+      ]
+    },
+    "solution_steps": [
+      "Les 6 pots coûtent $6 \\times 2 = 12$ €.",
+      "La livraison se paie une seule fois par commande : on ajoute 5 €, $12 + 5 = 17$.",
+      "6 pots livrés coûtent **17 €**.",
+      "Ce n'est pas $11 \\times 2 = 22$ € : 2 fois plus de pots ne donnent pas un prix 2 fois plus grand, car la livraison ne double pas. Le prix n'est pas proportionnel au nombre de pots."
+    ],
+    "hint": "La livraison se paie-t-elle une fois ou deux fois ?",
+    "estimated_duration_s": 120,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 3, CM1, la proportionnalité : identifier une situation de proportionnalité."
+  },
+  {
+    "id": "EX-E026-M-02",
+    "skill_id": "E026",
+    "level": "maitrise",
+    "type": "qcm",
+    "statement": "Un melon coûte 3 €. Le marchand propose une offre : 3 melons pour 7 €. Ana prend l'offre.\n\nPaie-t-elle 3 fois plus que pour un seul melon ?",
+    "image": null,
+    "choices": [
+      {
+        "key": "a",
+        "text": "Oui : 3 fois plus de melons, donc 3 fois plus cher.",
+        "misconception": "L'élève applique la règle « 3 fois plus d'objets, 3 fois plus cher » sans vérifier que le prix d'un melon reste le même. Une offre change le prix : la situation n'est pas proportionnelle."
+      },
+      {
+        "key": "b",
+        "text": "Oui, car 7 €, c'est plus que 3 €.",
+        "misconception": "L'élève confond « payer plus » et « payer 3 fois plus ». 7 € est bien plus que 3 €, mais 3 fois 3 €, cela ferait 9 €."
+      },
+      {
+        "key": "c",
+        "text": "Non : 3 fois 3 €, c'est 9 €, et elle paie 7 €.",
+        "misconception": null
+      }
+    ],
+    "answer": {
+      "value": "c"
+    },
+    "solution_steps": [
+      "3 fois le prix d'un melon, c'est $3 \\times 3 = 9$ €.",
+      "Avec l'offre, Ana paie 7 €, et 7 n'est pas 9.",
+      "Elle achète 3 fois plus de melons mais ne paie pas 3 fois plus : avec une offre, le prix n'est pas proportionnel au nombre de melons.",
+      "La bonne réponse est **Non : 3 fois 3 €, c'est 9 €, et elle paie 7 €**."
+    ],
+    "hint": "Calcule 3 fois le prix d'un melon, puis compare avec le prix de l'offre.",
+    "estimated_duration_s": 120,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 3, CM1, la proportionnalité : identifier une situation de proportionnalité."
+  }
+]

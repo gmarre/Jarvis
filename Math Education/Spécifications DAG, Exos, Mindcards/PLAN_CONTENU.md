@@ -29,8 +29,8 @@ domaines à moitié faits.
 | 0 bis | B001, B005, B006 (calcul de base) | CP → CE2 | Fait le 3 octobre 2026 |
 | 1 | B Calcul numérique : opérations, calcul mental, division | CP → 6e | Fait le 3 octobre 2026 : 18 compétences, 108 exercices, 4 cartes (bilan dans `QUALITY.md`) |
 | 2 | D Nombres décimaux | CE1 → 6e | Fait le 4 octobre 2026 : 19 compétences, 114 exercices, 4 cartes |
-| **3** | **E Proportionnalité et pourcentages** | CM1 → 5e | Prochaine |
-| 4 | Grandeurs et mesures, géométrie plane | CP → 6e | À faire |
+| 3 | E Proportionnalité et pourcentages | CM1 → 5e | Fait le 5 octobre 2026 : 17 compétences E et B043, 108 exercices, 4 cartes (bilan dans `QUALITY.md`) |
+| **4** | **Grandeurs et mesures, géométrie plane** | CP → 6e | Prochaine |
 | 5+ | Statistiques, probabilités, algèbre, puissances | Cycle 4 | À faire |
 
 ## Le circuit d'une étape
@@ -55,7 +55,9 @@ domaines à moitié faits.
    python scripts/set_review_status.py --status relu_agent --cartes <MM-...>
    python scripts/build_review_sheet.py
    ```
-   Les consignes communes de l'étape 1 servent de modèle aux suivantes :
+   Les consignes de l'étape 3, les plus complètes (cartographe, rédacteurs,
+   relecteurs : `modeles_agents/consigne_*_etape3.md`), servent de modèle aux
+   suivantes. Celles de l'étape 1 restent disponibles :
    `modeles_agents/consigne_redacteurs_etape1.md` et
    `modeles_agents/consigne_relecteurs_etape1.md` (à recopier dans `_travail/`
    et adapter au domaine).

@@ -133,6 +133,13 @@ describe('formatExpected', () => {
     expect(formatExpected(avecUnite)).toBe('12,75 €')
   })
 
+  it('affiche un prix avec ses centimes, et un prix entier sans decimales', () => {
+    const base = byType('numerique')
+    expect(formatExpected({ ...base, answer: { value: 3.9, unit: '€' } })).toBe('3,90 €')
+    expect(formatExpected({ ...base, answer: { value: 42, unit: '€' } })).toBe('42 €')
+    expect(formatExpected({ ...base, answer: { value: 3.9, unit: 'kg' } })).toBe('3,9 kg')
+  })
+
   it('accepte la virgule a la saisie d une reponse decimale', () => {
     const base = byType('numerique')
     const decimal: Exercise = { ...base, answer: { value: 3.5 } }

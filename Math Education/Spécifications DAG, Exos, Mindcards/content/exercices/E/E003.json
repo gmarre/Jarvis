@@ -1,0 +1,187 @@
+[
+  {
+    "id": "EX-E003-D-01",
+    "skill_id": "E003",
+    "level": "decouverte",
+    "type": "numerique",
+    "statement": "Au marché, le prix des poires est proportionnel à leur masse. Voici un tableau à compléter :\n\n$$\\begin{array}{|l|c|c|c|} \\hline \\text{Masse (kg)} & 2 & 4 & 6 \\\\ \\hline \\text{Prix (euros)} & 5 & 10 & ? \\\\ \\hline \\end{array}$$\n\nQuel prix faut-il écrire à la place du point d'interrogation, en euros ?",
+    "image": null,
+    "answer": {
+      "value": 15,
+      "unit": "€",
+      "accepted": [
+        "15 €"
+      ]
+    },
+    "solution_steps": [
+      "Chaque colonne associe une masse de poires et son prix. 6 kg, c'est 3 fois 2 kg, car $3 \\times 2 = 6$.",
+      "Le prix est proportionnel à la masse : 3 fois plus de poires coûtent 3 fois plus cher, $3 \\times 5 = 15$.",
+      "Autre méthode : 6 kg, c'est 2 kg et 4 kg ensemble. On ajoute les prix de ces deux colonnes : $5 + 10 = 15$.",
+      "On écrit **15** dans la case : 6 kg de poires coûtent 15 €."
+    ],
+    "hint": "Compare 6 kg avec 2 kg : combien de fois plus ? Tu peux aussi additionner deux colonnes.",
+    "estimated_duration_s": 60,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 3, classe de 6e, La proportionnalité : la recherche de données manquantes dans un tableau s'appuie sur le sens de la proportionnalité."
+  },
+  {
+    "id": "EX-E003-D-02",
+    "skill_id": "E003",
+    "level": "decouverte",
+    "type": "qcm",
+    "statement": "Chez le fleuriste, une botte de 5 tulipes coûte 4 €. Kenza a rempli ce tableau mais a oublié le nom des lignes :\n\n$$\\begin{array}{|l|c|c|c|} \\hline \\text{?} & 5 & 10 & 15 \\\\ \\hline \\text{?} & 4 & 8 & 12 \\\\ \\hline \\end{array}$$\n\nQuels noms doit-elle écrire ?",
+    "image": null,
+    "choices": [
+      {
+        "key": "a",
+        "text": "En haut « Prix (euros) », en bas « Nombre de tulipes »",
+        "misconception": "L'élève inverse les deux grandeurs. Avec ces noms, on paierait 5 € pour 4 tulipes, alors que ce sont 5 tulipes qui coûtent 4 €."
+      },
+      {
+        "key": "b",
+        "text": "En haut « Nombre de tulipes », en bas « Prix (euros) »",
+        "misconception": null
+      },
+      {
+        "key": "c",
+        "text": "En haut « Nombre de bottes », en bas « Prix (euros) »",
+        "misconception": "L'élève confond les bottes et les tulipes. 5 bottes coûteraient 5 × 4 = 20 €, et non 4 €."
+      },
+      {
+        "key": "d",
+        "text": "En haut « Nombre de tulipes », en bas « Prix d'une tulipe (euros) »",
+        "misconception": "L'élève confond le prix payé et le prix pour une tulipe. Le prix d'une tulipe ne change pas avec le nombre de tulipes : il ne peut pas valoir 4 €, puis 8 €, puis 12 €."
+      }
+    ],
+    "answer": {
+      "value": "b"
+    },
+    "solution_steps": [
+      "La première colonne doit traduire la phrase de l'énoncé : 5 tulipes coûtent 4 €. En haut le nombre de tulipes (5), en bas le prix en euros (4).",
+      "Les autres colonnes le confirment : 10 tulipes, c'est 2 fois plus que 5, et elles coûtent 2 fois plus, $2 \\times 4 = 8$ €. 15 tulipes, c'est 3 fois plus que 5, et $3 \\times 4 = 12$ €.",
+      "Dans un tableau, chaque ligne porte le nom de la grandeur et son unité : sans eux, on ne sait pas ce que représente chaque nombre. Réponse b."
+    ],
+    "hint": "Lis la première colonne avec la phrase de l'énoncé : qu'est-ce qui vaut 5, et qu'est-ce qui vaut 4 ?",
+    "estimated_duration_s": 75,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 3, classe de 6e, La proportionnalité : représenter une situation de proportionnalité à l'aide d'un tableau ou de notations symboliques."
+  },
+  {
+    "id": "EX-E003-E-01",
+    "skill_id": "E003",
+    "level": "entrainement",
+    "type": "numerique",
+    "statement": "Des boîtes de thé contiennent toutes la même masse de thé. Complète ce tableau :\n\n$$\\begin{array}{|l|c|c|} \\hline \\text{Boîtes} & 3 & 5 \\\\ \\hline \\text{Masse (g)} & 375 & ? \\\\ \\hline \\end{array}$$\n\nQuelle masse faut-il écrire à la place du point d'interrogation, en grammes ?",
+    "image": null,
+    "answer": {
+      "value": 625,
+      "unit": "g",
+      "accepted": [
+        "625 g"
+      ]
+    },
+    "solution_steps": [
+      "On ne passe pas de 3 boîtes à 5 boîtes en multipliant par un nombre entier : on ajoute une colonne pour 1 boîte.",
+      "1 boîte, c'est 3 fois moins que 3 boîtes : $375 \\div 3 = 125$. Une boîte contient 125 g de thé.",
+      "5 boîtes, c'est 5 fois plus qu'une boîte : $5 \\times 125 = 625$. On écrit **625** : 5 boîtes contiennent 625 g de thé.",
+      "Contrôle : 5 boîtes, c'est 2 boîtes de plus que 3 boîtes, soit $2 \\times 125 = 250$ g de plus, et $375 + 250 = 625$."
+    ],
+    "hint": "Ajoute une colonne pour 1 boîte : quelle masse de thé contient une seule boîte ?",
+    "estimated_duration_s": 90,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 3, classe de 6e, La proportionnalité : la recherche de données manquantes dans un tableau s'appuie sur le sens de la proportionnalité."
+  },
+  {
+    "id": "EX-E003-E-02",
+    "skill_id": "E003",
+    "level": "entrainement",
+    "type": "vrai_faux",
+    "statement": "Les lentilles sont vendues au même prix au kilo. Lucas complète ce tableau :\n\n$$\\begin{array}{|l|c|c|} \\hline \\text{Masse (kg)} & 2 & 5 \\\\ \\hline \\text{Prix (euros)} & 3 & ? \\\\ \\hline \\end{array}$$\n\nIl écrit 6 € et explique : « De 2 kg à 5 kg, on ajoute 3 kg, donc on ajoute 3 € au prix. » A-t-il raison ?",
+    "image": null,
+    "answer": {
+      "value": false
+    },
+    "solution_steps": [
+      "Lucas ajoute la même chose aux deux grandeurs : c'est un modèle additif. Mais 3 kg de plus ne coûtent pas 3 € de plus.",
+      "Prix d'un kilogramme : $3 \\div 2 = 1{,}50$, soit 1,50 € le kilo.",
+      "3 kg de plus coûtent $3 \\times 1{,}50 = 4{,}50$, soit 4,50 € de plus. Pour 5 kg : $3 + 4{,}50 = 7{,}50$, ou directement $5 \\times 1{,}50 = 7{,}50$.",
+      "Il fallait écrire 7,50 € : c'est **faux**."
+    ],
+    "hint": "Combien coûte 1 kg de lentilles ? Combien coûtent alors 3 kg de plus ?",
+    "estimated_duration_s": 90,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 3, classe de 6e, La proportionnalité : la recherche de données manquantes dans un tableau s'appuie sur le sens de la proportionnalité."
+  },
+  {
+    "id": "EX-E003-M-01",
+    "skill_id": "E003",
+    "level": "maitrise",
+    "type": "numerique",
+    "statement": "Pour un repas, la masse de riz est proportionnelle au nombre d'invités.\n\n$$\\begin{array}{|l|c|c|c|} \\hline \\text{Invités} & 6 & 9 & 21 \\\\ \\hline \\text{Riz (g)} & 450 & 675 & ? \\\\ \\hline \\end{array}$$\n\nQuelle masse de riz faut-il pour 21 invités, en grammes ?",
+    "image": null,
+    "answer": {
+      "value": 1575,
+      "unit": "g",
+      "accepted": [
+        "1 575",
+        "1575 g",
+        "1 575 g"
+      ]
+    },
+    "solution_steps": [
+      "21 n'est pas obtenu en multipliant 6 ou 9 par un nombre entier. On cherche à écrire 21 avec les colonnes connues.",
+      "$6 + 6 + 9 = 21$ : 21 invités, c'est 6 invités, plus 6 invités, plus 9 invités.",
+      "On ajoute les masses correspondantes : $450 + 450 + 675 = 1\\,575$ g.",
+      "Vérification par l'unité : pour 1 invité, $450 \\div 6 = 75$ g ; pour 21 invités, $21 \\times 75 = 1\\,575$ g.",
+      "Il faut **1 575 g** de riz."
+    ],
+    "hint": "Écris 21 comme une somme de nombres de la première ligne du tableau.",
+    "estimated_duration_s": 150,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 3, classe de 6e, La proportionnalité : la recherche de données manquantes dans un tableau s'appuie sur le sens de la proportionnalité."
+  },
+  {
+    "id": "EX-E003-M-02",
+    "skill_id": "E003",
+    "level": "maitrise",
+    "type": "qcm",
+    "statement": "Le prix du comté est proportionnel à sa masse. Inès a payé 7,50 €.\n\n$$\\begin{array}{|l|c|c|} \\hline \\text{Masse (g)} & 200 & ? \\\\ \\hline \\text{Prix (euros)} & 3 & 7{,}50 \\\\ \\hline \\end{array}$$\n\nQuelle masse de comté a-t-elle achetée ?",
+    "image": null,
+    "choices": [
+      {
+        "key": "a",
+        "text": "400 g",
+        "misconception": "L'élève double 200 g parce que 2 × 3 = 6, et oublie les 1,50 € qui restent pour arriver à 7,50 €."
+      },
+      {
+        "key": "b",
+        "text": "204,5 g",
+        "misconception": "Modèle additif : l'élève voit qu'on ajoute 4,50 au prix et ajoute 4,5 à la masse. Il additionne des euros et des grammes."
+      },
+      {
+        "key": "c",
+        "text": "300 g",
+        "misconception": "L'élève trouve bien que 1,50 € correspond à 100 g, mais l'ajoute à 200 g au lieu de l'ajouter aux 400 g payés avec 6 €."
+      },
+      {
+        "key": "d",
+        "text": "500 g",
+        "misconception": null
+      }
+    ],
+    "answer": {
+      "value": "d"
+    },
+    "solution_steps": [
+      "On raisonne à l'envers : on connaît le prix, on cherche la masse.",
+      "6 €, c'est 2 fois 3 € : avec 6 €, on paie 2 fois 200 g, soit 400 g.",
+      "Il reste $7{,}50 - 6 = 1{,}50$ €. 1,50 €, c'est la moitié de 3 € : on paie la moitié de 200 g, soit 100 g.",
+      "En tout : $400 + 100 = 500$ g. Réponse d.",
+      "Contrôle : 100 g coûtent 1,50 €, donc 500 g coûtent $5 \\times 1{,}50 = 7{,}50$ €."
+    ],
+    "hint": "Quelle masse paie-t-on avec 6 € ? Que reste-t-il à payer, et quelle masse cela représente-t-il ?",
+    "estimated_duration_s": 150,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 3, classe de 6e, La proportionnalité : la recherche de données manquantes dans un tableau s'appuie sur le sens de la proportionnalité."
+  }
+]
