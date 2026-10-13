@@ -76,9 +76,27 @@ function normalize(value: string): string {
     .replace(/[\s.!?;:]+$/, '')
 }
 
+/**
+ * Durees et horaires : un eleve ecrit « 1 heure et 15 min », « 14:35 » ou
+ * « 7 mn 50 s » pour ce que le contenu note « 1 h 15 min », « 14 h 35 »,
+ * « 7 min 50 s » (releve en relecture, etape 4a). On ramene tout a h, min et s,
+ * on retire le « et » entre deux unites, et on complete l'unite sous-entendue :
+ * « 1 h 15 » vaut « 1 h 15 min ». S'applique apres le retrait des espaces.
+ */
+function normaliseDuree(compact: string): string {
+  return compact
+    .replace(/^(\d{1,2}):(\d{2})$/, '$1h$2')
+    .replace(/(heures?|h|minutes?|mn|min)et(?=\d)/g, '$1')
+    .replace(/(\d)heures?/g, '$1h')
+    .replace(/(\d)(?:minutes?|mn)/g, '$1min')
+    .replace(/(\d)(?:secondes?|sec)/g, '$1s')
+    .replace(/^(\d+)h(\d+)$/, '$1h$2min')
+    .replace(/^(\d+)min(\d+)$/, '$1min$2s')
+}
+
 /** Compare sans tenir compte des espaces : "3, 5, 8" vaut "3,5,8". */
 function normalizeLoose(value: string): string {
-  return normalize(value).replace(/\s/g, '')
+  return normaliseDuree(normalize(value).replace(/\s/g, ''))
 }
 
 function toNumber(value: string): number | null {

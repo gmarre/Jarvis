@@ -281,3 +281,35 @@ describe('checkAnswer, accents et unites en toutes lettres', () => {
     expect(checkAnswer(sansUnite, '5 metres').isCorrect).toBe(false)
   })
 })
+
+describe('checkAnswer, durees et horaires', () => {
+  const base = () => byType('numerique')
+
+  it('accepte les ecritures courantes d une duree en heures et minutes', () => {
+    const duree: Exercise = { ...base(), type: 'texte', answer: { value: '1 h 15 min' } }
+    for (const saisie of ['1 h 15 min', '1h15', '1 h 15', '1 heure 15', '1 heure et 15 minutes', '1 h et 15 min', '1 h 15 mn', '1 heure 15 min.']) {
+      expect(checkAnswer(duree, saisie).isCorrect).toBe(true)
+    }
+    for (const saisie of ['1 h 50', '1 h 05', '75 min', '2 h 15']) {
+      expect(checkAnswer(duree, saisie).isCorrect).toBe(false)
+    }
+  })
+
+  it('accepte un horaire ecrit avec h, heures ou deux-points', () => {
+    const horaire: Exercise = { ...base(), type: 'texte', answer: { value: '14 h 35' } }
+    for (const saisie of ['14 h 35', '14h35', '14:35', '14 heures 35', '14 heures et 35 minutes', '14 h 35 min']) {
+      expect(checkAnswer(horaire, saisie).isCorrect).toBe(true)
+    }
+    expect(checkAnswer(horaire, '15 h 35').isCorrect).toBe(false)
+  })
+
+  it('accepte minutes et secondes, abreviations comprises', () => {
+    const duree: Exercise = { ...base(), type: 'texte', answer: { value: '7 min 50 s' } }
+    for (const saisie of ['7 min 50', '7 minutes 50 secondes', '7 mn 50 s', '7 min et 50 sec']) {
+      expect(checkAnswer(duree, saisie).isCorrect).toBe(true)
+    }
+    expect(checkAnswer(duree, '4 min 70 s').isCorrect).toBe(false)
+    const minutes: Exercise = { ...base(), answer: { value: 15, unit: 'min' } }
+    expect(checkAnswer(minutes, '15 mn').isCorrect).toBe(true)
+  })
+})
