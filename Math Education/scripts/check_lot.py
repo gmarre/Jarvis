@@ -97,6 +97,13 @@ def main() -> int:
     ids |= {m["id"] for m in mm_in}
     motif = re.compile("|".join(re.escape(i) for i in sorted(ids, key=len, reverse=True))) if ids else None
 
+    # Un validateur qui plante n'ecrit rien sur stdout : sans ceci, l'echec
+    # etait muet (constate a l'etape 4a, un fichier de DAG en cours d'ecriture).
+    if r.returncode != 0 and "Validation" not in r.stdout:
+        print("Le validateur a plante :")
+        print(r.stderr[-3000:])
+        return r.returncode or 1
+
     sortie = r.stdout.splitlines()
     if "--tout" in sys.argv:
         print(r.stdout)

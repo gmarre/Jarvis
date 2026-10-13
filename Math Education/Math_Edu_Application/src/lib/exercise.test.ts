@@ -217,3 +217,67 @@ describe('checkAnswer, espaces des grands nombres', () => {
     }
   })
 })
+
+describe('checkAnswer, ponctuation et apostrophes', () => {
+  it('accepte une reponse texte suivie de ponctuation ou avec une apostrophe typographique', () => {
+    const base = byType('numerique')
+    const texte: Exercise = {
+      ...base,
+      type: 'texte',
+      answer: { value: "c'est le triangle", accepted: ['le triangle'] },
+    }
+    // Construit par code : une apostrophe typographique collee dans la source
+    // pourrait etre remplacee sans qu'on le voie.
+    const typo = String.fromCharCode(0x2019)
+    for (const saisie of ['le triangle.', 'Le triangle !', `C${typo}est le triangle`, "c'est le triangle ?"]) {
+      expect(checkAnswer(texte, saisie).isCorrect).toBe(true)
+    }
+    expect(checkAnswer(texte, 'le carre.').isCorrect).toBe(false)
+  })
+
+  it('accepte un nombre suivi d un point final', () => {
+    const base = byType('numerique')
+    const nombre: Exercise = { ...base, answer: { value: 113 } }
+    expect(checkAnswer(nombre, '113.').isCorrect).toBe(true)
+    expect(checkAnswer(nombre, '113,5').isCorrect).toBe(false)
+  })
+})
+
+describe('checkAnswer, accents et unites en toutes lettres', () => {
+  // Caracteres construits par code : invisibles ou faciles a remplacer dans la source.
+  const e = String.fromCharCode(0x00e8)
+  const carre = String.fromCharCode(0x00b2)
+
+  it('ignore les accents dans une reponse texte', () => {
+    const base = byType('numerique')
+    const texte: Exercise = { ...base, type: 'texte', answer: { value: `le m${e}tre` } }
+    expect(checkAnswer(texte, 'le metre').isCorrect).toBe(true)
+    expect(checkAnswer(texte, `LE M${e}TRE`).isCorrect).toBe(true)
+  })
+
+  it("accepte le nombre suivi de l'unite attendue, en symbole ou en toutes lettres", () => {
+    const base = byType('numerique')
+    const longueur: Exercise = { ...base, answer: { value: 50, unit: 'mm' } }
+    for (const saisie of ['50 mm', '50mm', `50 millim${e}tres`, '50 millimetre']) {
+      expect(checkAnswer(longueur, saisie).isCorrect).toBe(true)
+    }
+    const masse: Exercise = { ...base, answer: { value: 3, unit: 'kg' } }
+    expect(checkAnswer(masse, '3 kilos').isCorrect).toBe(true)
+    const aire: Exercise = { ...base, answer: { value: 12, unit: `cm${carre}` } }
+    for (const saisie of [`12 cm${carre}`, '12 cm2', `12 centim${e}tres carr${String.fromCharCode(0x00e9)}s`]) {
+      expect(checkAnswer(aire, saisie).isCorrect).toBe(true)
+    }
+    const prix: Exercise = { ...base, answer: { value: 35, unit: String.fromCharCode(0x20ac) } }
+    expect(checkAnswer(prix, '35 euros').isCorrect).toBe(true)
+  })
+
+  it("refuse une autre unite que celle attendue, et un mauvais nombre", () => {
+    const base = byType('numerique')
+    const longueur: Exercise = { ...base, answer: { value: 5, unit: 'm' } }
+    expect(checkAnswer(longueur, '5 cm').isCorrect).toBe(false)
+    expect(checkAnswer(longueur, '5 kilometres').isCorrect).toBe(false)
+    expect(checkAnswer(longueur, '6 metres').isCorrect).toBe(false)
+    const sansUnite: Exercise = { ...base, answer: { value: 5 } }
+    expect(checkAnswer(sansUnite, '5 metres').isCorrect).toBe(false)
+  })
+})

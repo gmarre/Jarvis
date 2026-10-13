@@ -49,15 +49,31 @@ export interface Correction {
   solutionSteps: string[]
 }
 
-/** Minuscules, sans accents parasites d'espacement, virgule decimale unifiee. */
+// Accents : un eleve tape souvent « metre » sur une tablette. Aucune reponse de
+// la banque ne se distingue d'une autre par un accent : on les retire
+// (decomposition NFD, puis suppression des signes U+0300 a U+036F). Ecrit avec
+// des codes plutot qu'avec les caracteres eux-memes, invisibles a la relecture.
+const DIACRITIQUES = new RegExp(`[${String.fromCharCode(0x300)}-${String.fromCharCode(0x36f)}]`, 'g')
+
+/** Minuscules, sans accents, espaces unifiees, virgule decimale unifiee. */
 function normalize(value: string): string {
   return value
     .trim()
     .toLowerCase()
+    .normalize('NFD')
+    .replace(DIACRITIQUES, '')
+    // cm² et cm2 s'equivalent : l'exposant se tape rarement au clavier.
+    .replace(/\u00B2/g, '2')
+    .replace(/\u00B3/g, '3')
     // Espaces insecables, frequents dans les grands nombres ecrits "1 024".
     .replace(/[\u00A0\u202F\u2009]/g, ' ')
     .replace(/\s+/g, ' ')
     .replace(/,(?=\d)/g, '.')
+    // Apostrophe typographique du clavier d'un telephone, et ponctuation
+    // finale : « C’est le triangle ! » vaut « c'est le triangle » (releve en
+    // relecture, etape 4a). La ponctuation interne n'est pas touchee.
+    .replace(/[’‘`]/g, "'")
+    .replace(/[\s.!?;:]+$/, '')
 }
 
 /** Compare sans tenir compte des espaces : "3, 5, 8" vaut "3,5,8". */
@@ -81,6 +97,61 @@ function toNumber(value: string): number | null {
   return Number.isFinite(parsed) ? parsed : null
 }
 
+/**
+ * Noms des unites ecrits en toutes lettres, sous leur forme normalisee (sans
+ * accent ni espace) : « 50 millimètres » vaut « 50 mm » quand l'unite attendue
+ * est mm (releve en relecture, etape 4a). Le pluriel est ajoute plus bas.
+ */
+const NOMS_UNITES: Record<string, string[]> = {
+  mm: ['millimetre'],
+  cm: ['centimetre'],
+  dm: ['decimetre'],
+  m: ['metre'],
+  dam: ['decametre'],
+  hm: ['hectometre'],
+  km: ['kilometre'],
+  mg: ['milligramme'],
+  g: ['gramme', 'gr'],
+  kg: ['kilogramme', 'kilo'],
+  t: ['tonne'],
+  ml: ['millilitre'],
+  cl: ['centilitre'],
+  dl: ['decilitre'],
+  l: ['litre'],
+  hl: ['hectolitre'],
+  s: ['seconde', 'sec'],
+  min: ['minute', 'mn'],
+  h: ['heure'],
+  '\u20ac': ['euro', 'eur'],
+}
+
+/** Toutes les ecritures acceptees d'une unite : symbole, nom, pluriel, carre ou cube. */
+function formesUnite(unit: string): Set<string> {
+  const symbole = normalizeLoose(unit)
+  const formes = new Set([symbole])
+  const base = symbole.replace(/[23]$/, '')
+  const exposant = symbole.slice(base.length)
+  const suffixes = exposant === '2' ? ['carre', 'carres'] : exposant === '3' ? ['cube', 'cubes'] : ['']
+  for (const nom of NOMS_UNITES[base] ?? []) {
+    for (const forme of [nom, `${nom}s`]) {
+      for (const suffixe of suffixes) formes.add(forme + suffixe)
+    }
+  }
+  return formes
+}
+
+/**
+ * Un nombre suivi de l'unite attendue, en symbole ou en toutes lettres. Une
+ * autre unite que celle attendue n'est pas acceptee : « 5 cm » n'est pas
+ * « 5 m ».
+ */
+function nombreAvecUnite(raw: string, unit: string | null | undefined): number | null {
+  if (!unit) return null
+  const morceaux = normalizeLoose(raw).match(/^(-?\d+(?:\.\d+)?)(.+)$/)
+  if (!morceaux || !formesUnite(unit).has(morceaux[2])) return null
+  return Number(morceaux[1])
+}
+
 /** Le verdict seul : juste ou faux. */
 function estJuste(exercise: ExerciceACorriger, raw: string): boolean {
   const expectedValue = exercise.answer.value
@@ -94,7 +165,7 @@ function estJuste(exercise: ExerciceACorriger, raw: string): boolean {
       return (raw === 'true') === Boolean(expectedValue)
 
     case 'numerique': {
-      const given = toNumber(raw)
+      const given = toNumber(raw) ?? nombreAvecUnite(raw, exercise.answer.unit)
       const target = toNumber(String(expectedValue))
       if (given === null || target === null) return matchesAccepted(exercise, raw)
       const tolerance = exercise.answer.tolerance ?? floatNoise(target)
