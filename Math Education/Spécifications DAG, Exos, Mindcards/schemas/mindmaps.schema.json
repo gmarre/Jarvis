@@ -34,7 +34,7 @@
       "properties": {
         "id": {
           "type": "string",
-          "pattern": "^MM-[A-O]-[0-9]{2}$",
+          "pattern": "^MM-[A-P]-[0-9]{2}$",
           "description": "MM - lettre de domaine - numero. Ex. MM-C-01."
         },
 
@@ -45,14 +45,14 @@
           "description": "Titre du chapitre couvert, affiche en tete de carte."
         },
 
-        "domain": { "type": "string", "pattern": "^[A-O]$" },
+        "domain": { "type": "string", "pattern": "^[A-P]$" },
 
         "skill_ids": {
           "type": "array",
           "minItems": 1,
           "uniqueItems": true,
           "description": "Competences couvertes. Une carte porte un chapitre entier, pas une competence isolee : c'est ce qui la rend utile a la revision.",
-          "items": { "type": "string", "pattern": "^[A-O][0-9]{3}$" }
+          "items": { "type": "string", "pattern": "^[A-P][0-9]{3}$" }
         },
 
         "school_levels": {

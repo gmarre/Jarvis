@@ -29,7 +29,7 @@ const CORS = {
   'Access-Control-Allow-Methods': 'POST, OPTIONS',
 }
 
-const ID_EXERCICE = /^EX-[A-O][0-9]{3}-[DEM]-[0-9]{2}$/
+const ID_EXERCICE = /^EX-[A-P][0-9]{3}-[DEM]-[0-9]{2}$/
 /** Aucune reponse legitime n'approche cette longueur. */
 const LONGUEUR_MAX = 200
 

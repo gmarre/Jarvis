@@ -57,13 +57,13 @@
   "$defs": {
     "domainId": {
       "type": "string",
-      "pattern": "^[A-O]$",
+      "pattern": "^[A-P]$",
       "description": "Une lettre de A a O, soit les 15 domaines du DAG."
     },
 
     "skillId": {
       "type": "string",
-      "pattern": "^[A-O][0-9]{3}$",
+      "pattern": "^[A-P][0-9]{3}$",
       "description": "Lettre de domaine + numero sur 3 chiffres, ex. A001, C012 (convention CLAUDE.md section 11)."
     },
 
@@ -138,13 +138,13 @@
         "exercise_ids": {
           "type": "array",
           "description": "Exercices rattaches a cette competence. Chaque identifiant doit exister dans exercises.json (verifie par scripts/validate_content.py, pas par ce schema).",
-          "items": { "type": "string", "pattern": "^EX-[A-O][0-9]{3}-[DEM]-[0-9]{2}$" },
+          "items": { "type": "string", "pattern": "^EX-[A-P][0-9]{3}-[DEM]-[0-9]{2}$" },
           "uniqueItems": true
         },
 
         "mindmap_id": {
           "type": ["string", "null"],
-          "pattern": "^MM-[A-O]-[0-9]{2}$",
+          "pattern": "^MM-[A-P]-[0-9]{2}$",
           "description": "Carte mentale de rattachement, ou null si la competence n'en a pas encore. Plusieurs competences partagent la meme carte : une carte couvre un chapitre."
         },
 
