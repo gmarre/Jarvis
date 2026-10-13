@@ -27,6 +27,23 @@ export function isMastered(progress: ProgressMap, skillId: string): boolean {
 }
 
 /**
+ * Un prerequis est franchi s'il est maitrise, ou s'il n'a encore aucun
+ * exercice. Le second cas est voulu (etape 4a, octobre 2026) : une competence
+ * qui attend ses figures (lire une regle, une horloge, un quadrillage) ne peut
+ * pas etre travaillee, et ne doit pas verrouiller pour toujours ce qui en
+ * depend. Des que ses exercices arrivent, elle redevient un prerequis normal.
+ *
+ * La transparence est transitive : une competence vide n'est franchie que si
+ * ses propres prerequis le sont. Sinon elle ferait sauter tout ce qui est en
+ * amont (A -> vide -> C ouvrirait C sans que A soit acquis).
+ */
+export function isCleared(progress: ProgressMap, skillId: string): boolean {
+  if (isMastered(progress, skillId)) return true
+  if (isExercisable(skillId)) return false
+  return (getSkill(skillId)?.prerequisites ?? []).every((id) => isCleared(progress, id))
+}
+
+/**
  * Statut effectif d'une competence. Le verrouillage n'est jamais stocke : il se
  * deduit des prerequis, sinon la moindre correction du DAG laisserait des
  * statuts perimes en base.
@@ -38,7 +55,7 @@ export function statusOf(progress: ProgressMap, skillId: string): SkillStatus {
   const skill = getSkill(skillId)
   if (!skill) return 'locked'
 
-  const prerequisitesReady = skill.prerequisites.every((id) => isMastered(progress, id))
+  const prerequisitesReady = skill.prerequisites.every((id) => isCleared(progress, id))
   if (!prerequisitesReady) return 'locked'
   if (stored && stored.attempts > 0) return 'in_progress'
   return 'available'
@@ -113,11 +130,13 @@ function byCursus(a: string, b: string): number {
  * Rendues de la plus ancienne a la plus recente : c'est l'ordre de reparation.
  */
 export function findRootGaps(progress: ProgressMap, targetSkillId: string): string[] {
+  // Une competence sans exercice n'est jamais une lacune : on ne peut pas la
+  // travailler (voir isCleared).
   const missing = [targetSkillId, ...ancestorsOf(targetSkillId)].filter(
-    (id) => !isMastered(progress, id),
+    (id) => !isCleared(progress, id),
   )
   return missing
-    .filter((id) => (getSkill(id)?.prerequisites ?? []).every((p) => isMastered(progress, p)))
+    .filter((id) => (getSkill(id)?.prerequisites ?? []).every((p) => isCleared(progress, p)))
     .sort(byCursus)
 }
 
@@ -169,8 +188,9 @@ export function buildPathToTarget(
   const target = getSkill(targetSkillId)
   if (!target) return []
 
+  // Une competence sans exercice n'est pas une etape : on ne peut pas la travailler.
   const missing = topologicalOrder(
-    ancestorsOf(targetSkillId).filter((id) => !isMastered(progress, id)),
+    ancestorsOf(targetSkillId).filter((id) => !isCleared(progress, id) && isExercisable(id)),
   )
   const rootGaps = new Set(findRootGaps(progress, targetSkillId))
 
@@ -265,7 +285,8 @@ export function applyAttempt(
   // Fenetre pleine sans la moindre reussite : s'acharner n'apporte rien, le
   // blocage est en amont.
   const noSuccessAtAll = attempts >= outOf && score === 0
-  const unmasteredPrerequisites = skill.prerequisites.filter((id) => !isMastered(progress, id))
+  // On ne renvoie jamais vers un prerequis sans exercice : il n'y aurait rien a y faire.
+  const unmasteredPrerequisites = skill.prerequisites.filter((id) => !isCleared(progress, id))
 
   // On ne propose de redescendre que s'il existe reellement un prerequis a
   // retravailler. Quand tous sont acquis, il n'y a nulle part ou aller : la

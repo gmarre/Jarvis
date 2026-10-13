@@ -434,6 +434,11 @@ NOTATIONS = {
     # etape 3). Dans une formule KaTeX il s'ecrit \% (sinon il ouvre un
     # commentaire) : le motif reconnait les deux ecritures.
     "E032": (re.compile(r"%"), "le symbole %"),
+    # Unites d'aire et de volume (etape 4a, domaine P) : cm² arrive avec l'aire
+    # mesuree au CM1 (P017), cm³ avec le volume en 6e (P026). Dans une formule
+    # KaTeX, ^2 et ^3 sur une unite comptent aussi.
+    "P017": (re.compile(r"²|(?:mm|cm|dm|km|m)\^\{?2"), "les unites d'aire (²)"),
+    "P026": (re.compile(r"³|(?:mm|cm|dm|m)\^\{?3"), "les unites de volume (³)"),
 }
 
 
@@ -452,6 +457,12 @@ VOCABULAIRE_PROPORTIONNALITE = [
     (re.compile(r"produits?\s+en\s+croix", re.I), "« produit en croix »", None),
     (re.compile(r"coefficient", re.I), "« coefficient »", "5e"),
     (re.compile(r"tableaux?\s+de\s+proportionnalit", re.I), "« tableau de proportionnalité »", "6e"),
+    # Grandeurs et mesures (etape 4a) : « Il n'est pas attendu de memorisation
+    # de formules de perimetres ou d'aires de figures planes au CM1 » ; les
+    # formules « s'installent progressivement » en 6e. Le tableau de conversion
+    # n'est nomme qu'en 6e.
+    (re.compile(r"\bformules?\b", re.I), "« formule »", "6e"),
+    (re.compile(r"tableaux?\s+de\s+conversion", re.I), "« tableau de conversion »", "6e"),
 ]
 
 CURSUS = ["CP", "CE1", "CE2", "CM1", "CM2", "6e", "5e", "4e", "3e", "2nde", "1ere", "Terminale"]

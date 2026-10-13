@@ -147,8 +147,14 @@ export function answerPlacement(state: PlacementState, isCorrect: boolean): Plac
   }
 
   const isTested = (id: string) => mastered.has(id) || failed.has(id) || asked.has(id)
+  // Un prerequis sans exercice ne s'evalue pas : il ne bloque pas la frontiere,
+  // a condition que ses propres prerequis soient acquis (meme regle, transitive,
+  // que isCleared dans dag.ts).
+  const franchi = (id: string): boolean =>
+    mastered.has(id) ||
+    (!isTestable(id) && (getSkill(id)?.prerequisites ?? []).every((p) => franchi(p)))
   const prerequisitesReady = (id: string) =>
-    (getSkill(id)?.prerequisites ?? []).every((p) => mastered.has(p))
+    (getSkill(id)?.prerequisites ?? []).every((p) => franchi(p))
 
   let next: string | null = null
 
