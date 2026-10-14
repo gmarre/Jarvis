@@ -467,22 +467,32 @@ def _monnaie(p: dict) -> tuple[str, str]:
             raise FigureInvalide(f"elements : {v} n'est pas une piece ni un billet en euros")
     billets = sorted([v for v in valeurs if v >= 5], reverse=True)
     pieces = sorted([v for v in valeurs if v < 5], reverse=True)
-    corps, x, y = [], 12, 12
-    for v in billets:
+    # Au plus 3 billets ou 6 pieces par rangee : une figure plus large que 344 px
+    # est reduite sur un telephone (colonne de 328 px), et la valeur ecrite sur
+    # une piece, l'information a lire, tombait a 9 px (relecture du lot figures F2).
+    corps, y = [], 12
+    largeur = 0
+    for i, v in enumerate(billets):
+        if i and i % 3 == 0:
+            y += 58
+        x = 12 + (i % 3) * 96
         corps.append(f'<rect x="{x}" y="{y}" width="86" height="46" rx="5" fill="#dcfce7" stroke="{TRAIT}" stroke-width="1.4"/>')
         corps.append(_texte(x + 43, y + 29, f"{v.numerator} €", 16, gras=True))
-        x += 96
+        largeur = max(largeur, x + 96)
     if billets:
-        x, y = 12, y + 58
-    for v in pieces:
+        y += 58
+    for i, v in enumerate(pieces):
+        if i and i % 6 == 0:
+            y += 54
+        x = 12 + (i % 6) * 54
         r = 22 if v >= 1 else 18
         libelle = f"{v.numerator} €" if v >= 1 else f"{int(v * 100)} c"
         corps.append(f'<circle cx="{x + 24}" cy="{y + 24}" r="{r}" fill="{"#fde68a" if v >= 1 else "#fed7aa"}" '
                      f'stroke="{TRAIT}" stroke-width="1.4"/>')
         corps.append(_texte(x + 24, y + 29, libelle, 13, gras=True))
-        x += 54
-    L = max(12 + 96 * max(len(billets), 1), 12 + 54 * max(len(pieces), 1)) + 8
-    H = y + 56
+        largeur = max(largeur, x + 54)
+    L = largeur + 8
+    H = y + (56 if pieces else 0)
     alt = "Pièces et billets en euros"
     return _svg(L, H, corps, alt), alt
 
