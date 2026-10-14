@@ -290,6 +290,9 @@ describe('checkAnswer, durees et horaires', () => {
     for (const saisie of ['1 h 15 min', '1h15', '1 h 15', '1 heure 15', '1 heure et 15 minutes', '1 h et 15 min', '1 h 15 mn', '1 heure 15 min.']) {
       expect(checkAnswer(duree, saisie).isCorrect).toBe(true)
     }
+    for (const saisie of ['01:15', '01 h 15', '1 heure, 15 minutes']) {
+      expect(checkAnswer(duree, saisie).isCorrect).toBe(true)
+    }
     for (const saisie of ['1 h 50', '1 h 05', '75 min', '2 h 15']) {
       expect(checkAnswer(duree, saisie).isCorrect).toBe(false)
     }
@@ -297,7 +300,7 @@ describe('checkAnswer, durees et horaires', () => {
 
   it('accepte un horaire ecrit avec h, heures ou deux-points', () => {
     const horaire: Exercise = { ...base(), type: 'texte', answer: { value: '14 h 35' } }
-    for (const saisie of ['14 h 35', '14h35', '14:35', '14 heures 35', '14 heures et 35 minutes', '14 h 35 min']) {
+    for (const saisie of ['14 h 35', '14h35', '14:35', '14 heures 35', '14 heures et 35 minutes', '14 h 35 min', '14 heures, 35 minutes']) {
       expect(checkAnswer(horaire, saisie).isCorrect).toBe(true)
     }
     expect(checkAnswer(horaire, '15 h 35').isCorrect).toBe(false)

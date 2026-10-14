@@ -85,7 +85,11 @@ function normalize(value: string): string {
  */
 function normaliseDuree(compact: string): string {
   return compact
+    // « 01:15 » et « 01 h 15 » : le zero devant l'heure ne change rien.
+    .replace(/^0(\d)(?=[:h])/, '$1')
     .replace(/^(\d{1,2}):(\d{2})$/, '$1h$2')
+    // « 1 heure, 15 minutes » : la virgule entre deux unites se lit comme « et ».
+    .replace(/(heures?|h|minutes?|mn|min),(?=\d)/g, '$1')
     .replace(/(heures?|h|minutes?|mn|min)et(?=\d)/g, '$1')
     .replace(/(\d)heures?/g, '$1h')
     .replace(/(\d)(?:minutes?|mn)/g, '$1min')
