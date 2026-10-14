@@ -1,0 +1,180 @@
+[
+  {
+    "id": "EX-P024-D-01",
+    "skill_id": "P024",
+    "level": "decouverte",
+    "type": "numerique",
+    "statement": "La formule de l'aire d'un rectangle est $A = L \\times l$, où $L$ est la longueur et $l$ la largeur.\n\nUne tablette de chocolat mesure 16 cm de long et 8 cm de large. Quelle est son aire, en cm² ?",
+    "image": null,
+    "answer": {
+      "value": 128,
+      "unit": "cm²",
+      "accepted": [
+        "128 cm²",
+        "128 cm2"
+      ]
+    },
+    "solution_steps": [
+      "On remplace les lettres par les dimensions de la tablette : la longueur vaut 16 cm, la largeur 8 cm.",
+      "$A = 16 \\times 8 = 128$.",
+      "L'aire est **128 cm²** : des longueurs en cm donnent une aire en cm².",
+      "C'est ce qu'on comptait au CM2 : 8 rangées de 16 carrés de 1 cm de côté. La formule résume ce dénombrement."
+    ],
+    "hint": "Remplace $L$ et $l$ par les dimensions de la tablette.",
+    "estimated_duration_s": 60,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 3, classe de 6e, Les aires : « Connaître la formule de l'aire d'un carré ou d'un rectangle »"
+  },
+  {
+    "id": "EX-P024-D-02",
+    "skill_id": "P024",
+    "level": "decouverte",
+    "type": "qcm",
+    "statement": "La formule de l'aire d'un carré de côté $c$ est $A = c \\times c$.\n\nUn potager carré mesure 11 m de côté. Quelle est son aire ?",
+    "image": null,
+    "choices": [
+      {
+        "key": "a",
+        "text": "44 m²",
+        "misconception": "L'élève additionne les quatre côtés, 11 + 11 + 11 + 11 = 44 : c'est le périmètre du potager, la longueur de sa clôture en m, pas sa surface."
+      },
+      {
+        "key": "b",
+        "text": "22 m²",
+        "misconception": "L'élève lit $c \\times c$ comme deux fois le côté : il calcule $2 \\times 11 = 22$."
+      },
+      {
+        "key": "c",
+        "text": "121 m²",
+        "misconception": null
+      }
+    ],
+    "answer": {
+      "value": "c"
+    },
+    "solution_steps": [
+      "On remplace $c$ par 11 dans la formule de l'aire du carré.",
+      "$A = 11 \\times 11 = 121$.",
+      "Le potager a une aire de **121 m²**.",
+      "44 m serait la longueur de la clôture, le périmètre : 11 + 11 + 11 + 11 = 44. Le périmètre se mesure en m, l'aire en m²."
+    ],
+    "hint": "Que vaut $c \\times c$ quand $c$ vaut 11 ?",
+    "estimated_duration_s": 60,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 3, classe de 6e, Les aires : « Connaître la formule de l'aire d'un carré ou d'un rectangle »"
+  },
+  {
+    "id": "EX-P024-E-01",
+    "skill_id": "P024",
+    "level": "entrainement",
+    "type": "numerique",
+    "statement": "Une terrasse rectangulaire mesure 6,4 m de long et 4 m de large.\n\nCalcule son aire avec la formule, en m².",
+    "image": null,
+    "answer": {
+      "value": 25.6,
+      "unit": "m²",
+      "accepted": [
+        "25,6",
+        "25,60",
+        "25,6 m²",
+        "25,6 m2"
+      ]
+    },
+    "solution_steps": [
+      "Aire d'un rectangle : $A = L \\times l$, ici $A = 6{,}4 \\times 4$.",
+      "On calcule $64 \\times 4 = 256$, puis on place la virgule : 6,4 a un chiffre après la virgule, le résultat aussi.",
+      "$6{,}4 \\times 4 = 25{,}6$ : la terrasse a une aire de **25,6 m²**.",
+      "Ordre de grandeur : $6 \\times 4 = 24$, le résultat est cohérent.",
+      "À ne pas confondre avec le tour de la terrasse : 6,4 + 4 + 6,4 + 4 = 20,8. C'est son périmètre, 20,8 m."
+    ],
+    "hint": "Multiplie d'abord comme si 6,4 était 64, puis place la virgule.",
+    "estimated_duration_s": 90,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 3, classe de 6e, Les aires : « Calculer l'aire d'un carré ou d'un rectangle »"
+  },
+  {
+    "id": "EX-P024-E-02",
+    "skill_id": "P024",
+    "level": "entrainement",
+    "type": "vrai_faux",
+    "statement": "Un rectangle mesure 15 cm de long et 4 cm de large. Inès écrit : « 15 + 4 + 15 + 4 = 38, donc son aire est 38 cm². »\n\nInès a-t-elle raison ?",
+    "image": null,
+    "answer": {
+      "value": false
+    },
+    "solution_steps": [
+      "Inès a additionné les quatre côtés : c'est le périmètre, la longueur du contour, 38 cm.",
+      "L'aire se calcule avec la formule $A = L \\times l$ : $A = 15 \\times 4 = 60$.",
+      "L'aire est 60 cm². Inès a **tort** : elle confond périmètre et aire.",
+      "Les unités le signalent : le périmètre est une longueur (cm), l'aire une surface (cm²)."
+    ],
+    "hint": "Quelle formule donne l'aire d'un rectangle ? Inès l'a-t-elle utilisée ?",
+    "estimated_duration_s": 60,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 3, classe de 6e, Les aires : « Calculer l'aire d'un carré ou d'un rectangle »"
+  },
+  {
+    "id": "EX-P024-M-01",
+    "skill_id": "P024",
+    "level": "maitrise",
+    "type": "qcm",
+    "statement": "Un napperon carré a une aire de 64 cm².\n\nQuelle est la longueur de son côté ?",
+    "image": null,
+    "choices": [
+      {
+        "key": "a",
+        "text": "8 cm",
+        "misconception": null
+      },
+      {
+        "key": "b",
+        "text": "16 cm",
+        "misconception": "L'élève partage l'aire en 4, comme s'il retrouvait le côté à partir du périmètre : $64 \\div 4 = 16$. Un carré de 16 cm de côté aurait une aire de 256 cm²."
+      },
+      {
+        "key": "c",
+        "text": "32 cm",
+        "misconception": "L'élève lit $c \\times c$ comme deux fois le côté et calcule $64 \\div 2 = 32$."
+      }
+    ],
+    "answer": {
+      "value": "a"
+    },
+    "solution_steps": [
+      "Pour un carré, $A = c \\times c$. On cherche donc le nombre qui, multiplié par lui-même, donne 64.",
+      "Dans les tables : $8 \\times 8 = 64$.",
+      "Le côté du napperon mesure **8 cm**.",
+      "Vérification avec la formule : $8 \\times 8 = 64$, soit 64 cm². Avec un côté de 16 cm, on trouverait $16 \\times 16 = 256$, beaucoup trop."
+    ],
+    "hint": "Quel nombre, multiplié par lui-même, donne 64 ?",
+    "estimated_duration_s": 75,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 3, classe de 6e, Les aires : « Connaître la formule de l'aire d'un carré ou d'un rectangle »"
+  },
+  {
+    "id": "EX-P024-M-02",
+    "skill_id": "P024",
+    "level": "maitrise",
+    "type": "numerique",
+    "statement": "On repeint un mur rectangulaire de 6,5 m de long et 3 m de haut. Un pot de peinture couvre 4 m².\n\nCombien de pots faut-il acheter, au minimum ?",
+    "image": null,
+    "answer": {
+      "value": 5,
+      "unit": null,
+      "accepted": [
+        "5 pots"
+      ]
+    },
+    "solution_steps": [
+      "On calcule d'abord l'aire du mur avec la formule du rectangle : $A = 6{,}5 \\times 3 = 19{,}5$. Le mur a une aire de 19,5 m².",
+      "4 pots couvrent $4 \\times 4 = 16$ m² : c'est moins que 19,5 m², il resterait 3,5 m² sans peinture.",
+      "5 pots couvrent $5 \\times 4 = 20$ m² : c'est assez.",
+      "Il faut acheter **5 pots** au minimum.",
+      "Attention à ne pas calculer le périmètre : 6,5 + 3 + 6,5 + 3 = 19 donne la longueur du bord du mur, 19 m, pas la surface à peindre."
+    ],
+    "hint": "Calcule d'abord l'aire du mur, puis cherche combien de pots couvrent au moins cette aire.",
+    "estimated_duration_s": 120,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 3, classe de 6e, Les aires : « Calculer l'aire d'un carré ou d'un rectangle »"
+  }
+]

@@ -1,0 +1,179 @@
+[
+  {
+    "id": "EX-P018-D-01",
+    "skill_id": "P018",
+    "level": "decouverte",
+    "type": "numerique",
+    "statement": "Une étiquette rectangulaire de 7 cm sur 4 cm est recouverte de carrés de 1 cm de côté : 4 rangées de 7 carrés.\n\nQuelle est son aire, en cm² ?",
+    "image": null,
+    "answer": {
+      "value": 28,
+      "unit": "cm²",
+      "accepted": [
+        "28 cm²",
+        "28 cm2"
+      ]
+    },
+    "solution_steps": [
+      "Un carré de 1 cm de côté a une aire de 1 cm² : l'aire de l'étiquette, c'est le nombre de carrés qui la recouvrent, sans trou ni chevauchement.",
+      "Une rangée suit la longueur de 7 cm : elle compte 7 carrés. La largeur de 4 cm donne 4 rangées.",
+      "4 rangées de 7 carrés : $4 \\times 7 = 28$ carrés.",
+      "L'aire de l'étiquette est **28 cm²**.",
+      "À ne pas confondre avec le tour de l'étiquette : 7 + 4 + 7 + 4 = 22. C'est son périmètre, 22 cm, une longueur, pas un nombre de carrés."
+    ],
+    "hint": "Combien de carrés dans une rangée ? Combien de rangées ?",
+    "estimated_duration_s": 60,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 3, CM2, Les aires : « Déterminer l'aire d'un carré ou d'un rectangle »"
+  },
+  {
+    "id": "EX-P018-D-02",
+    "skill_id": "P018",
+    "level": "decouverte",
+    "type": "qcm",
+    "statement": "Un badge carré mesure 6 cm de côté. On le recouvre de carrés de 1 cm de côté.\n\nQuelle est son aire ?",
+    "image": null,
+    "choices": [
+      {
+        "key": "a",
+        "text": "24 cm²",
+        "misconception": "L'élève calcule le tour du badge, 6 + 6 + 6 + 6 = 24 : c'est le périmètre, 24 cm, une longueur. Il confond périmètre et aire."
+      },
+      {
+        "key": "b",
+        "text": "36 cm²",
+        "misconception": null
+      },
+      {
+        "key": "c",
+        "text": "12 cm²",
+        "misconception": "L'élève additionne deux côtés, 6 + 6 = 12, comme s'il suffisait d'une rangée dans chaque sens, au lieu de compter 6 rangées de 6 carrés."
+      }
+    ],
+    "answer": {
+      "value": "b"
+    },
+    "solution_steps": [
+      "Un carré a ses 4 côtés de même longueur : le badge mesure 6 cm dans les deux sens.",
+      "On peut poser 6 rangées de 6 carrés de 1 cm de côté : $6 \\times 6 = 36$ carrés.",
+      "Chaque carré a une aire de 1 cm² : l'aire du badge est **36 cm²**.",
+      "24 est le périmètre : 6 + 6 + 6 + 6 = 24. Le périmètre est la longueur du tour, en cm ; l'aire compte les carrés qui recouvrent, en cm²."
+    ],
+    "hint": "Combien de rangées de carrés de 1 cm tiennent dans le badge ? Combien de carrés dans chaque rangée ?",
+    "estimated_duration_s": 60,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 3, CM2, Les aires : « Déterminer l'aire d'un carré ou d'un rectangle »"
+  },
+  {
+    "id": "EX-P018-E-01",
+    "skill_id": "P018",
+    "level": "entrainement",
+    "type": "vrai_faux",
+    "statement": "Un rectangle mesure 9 cm sur 3 cm. Tom affirme : « Son aire est 24 cm², car 9 + 3 + 9 + 3 = 24. »\n\nTom a-t-il raison ?",
+    "image": null,
+    "answer": {
+      "value": false
+    },
+    "solution_steps": [
+      "Tom a additionné les quatre côtés : 9 + 3 + 9 + 3 = 24. C'est la longueur du contour, le périmètre du rectangle : 24 cm.",
+      "L'aire, c'est le nombre de carrés de 1 cm de côté qui recouvrent le rectangle : 3 rangées de 9 carrés, $3 \\times 9 = 27$.",
+      "L'aire est 27 cm², pas 24 cm². Tom a **tort** : il a confondu le tour du rectangle et la surface qu'il recouvre."
+    ],
+    "hint": "Tom a-t-il compté des carrés, ou mesuré la longueur du tour ?",
+    "estimated_duration_s": 60,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 3, CM2, Les aires : « Déterminer l'aire d'un carré ou d'un rectangle »"
+  },
+  {
+    "id": "EX-P018-E-02",
+    "skill_id": "P018",
+    "level": "entrainement",
+    "type": "numerique",
+    "statement": "Une affiche rectangulaire mesure 45 cm de long et 32 cm de large.\n\nQuelle est son aire, en cm² ? Pose la multiplication.",
+    "image": null,
+    "answer": {
+      "value": 1440,
+      "unit": "cm²",
+      "accepted": [
+        "1 440",
+        "1 440 cm²",
+        "1440 cm²",
+        "1440 cm2"
+      ]
+    },
+    "solution_steps": [
+      "On peut recouvrir l'affiche de carrés de 1 cm de côté : 32 rangées de 45 carrés.",
+      "Il faut calculer $45 \\times 32$. On pose la multiplication : première ligne $45 \\times 2 = 90$, deuxième ligne $45 \\times 30 = 1\\,350$.",
+      "On additionne les deux lignes : $90 + 1\\,350 = 1\\,440$.",
+      "L'affiche est recouverte par 1 440 carrés : son aire est **1 440 cm²**.",
+      "À ne pas confondre avec le tour de l'affiche : 45 + 32 + 45 + 32 = 154. C'est son périmètre, 154 cm, une longueur, pas un nombre de carrés."
+    ],
+    "hint": "Combien de rangées de carrés de 1 cm ? Combien de carrés dans chaque rangée ?",
+    "estimated_duration_s": 120,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 3, CM2, Les aires : « Déterminer l'aire d'un carré ou d'un rectangle »"
+  },
+  {
+    "id": "EX-P018-M-01",
+    "skill_id": "P018",
+    "level": "maitrise",
+    "type": "qcm",
+    "statement": "Deux rectangles ont 26 cm de périmètre : le premier mesure 10 cm sur 3 cm, le second 7 cm sur 6 cm.\n\nLequel a la plus grande aire ?",
+    "image": null,
+    "choices": [
+      {
+        "key": "a",
+        "text": "Ils ont la même aire, puisqu'ils ont le même périmètre.",
+        "misconception": "L'élève croit que deux surfaces de même contour recouvrent la même place : il confond périmètre et aire."
+      },
+      {
+        "key": "b",
+        "text": "Le premier, car il est le plus long.",
+        "misconception": "L'élève juge l'aire sur une seule dimension, la longueur de 10 cm, sans tenir compte de la largeur de 3 cm."
+      },
+      {
+        "key": "c",
+        "text": "Le second.",
+        "misconception": null
+      }
+    ],
+    "answer": {
+      "value": "c"
+    },
+    "solution_steps": [
+      "Premier rectangle : 3 rangées de 10 carrés de 1 cm de côté, $3 \\times 10 = 30$. Son aire est 30 cm².",
+      "Second rectangle : 6 rangées de 7 carrés, $6 \\times 7 = 42$. Son aire est 42 cm².",
+      "42 cm², c'est plus que 30 cm² : **le second** a la plus grande aire.",
+      "Les deux contours mesurent bien 26 cm : 10 + 3 + 10 + 3 = 26 et 7 + 6 + 7 + 6 = 26. Même périmètre ne veut pas dire même aire."
+    ],
+    "hint": "Calcule l'aire de chaque rectangle en comptant les rangées de carrés de 1 cm.",
+    "estimated_duration_s": 90,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 3, CM2, Les aires : « Comparer les aires de différentes figures planes »"
+  },
+  {
+    "id": "EX-P018-M-02",
+    "skill_id": "P018",
+    "level": "maitrise",
+    "type": "numerique",
+    "statement": "Lou recouvre exactement une carte rectangulaire avec 56 carrés de 1 cm de côté, en 7 rangées identiques. Chaque rangée suit la longueur de la carte.\n\nQuelle est sa longueur, en cm ?",
+    "image": null,
+    "answer": {
+      "value": 8,
+      "unit": "cm",
+      "accepted": [
+        "8 cm"
+      ]
+    },
+    "solution_steps": [
+      "Les 56 carrés sont répartis en 7 rangées identiques : on cherche le nombre de carrés d'une rangée, c'est-à-dire le nombre qui, multiplié par 7, donne 56.",
+      "Dans la table de 7 : $7 \\times 8 = 56$. Chaque rangée compte 8 carrés.",
+      "Une rangée suit la longueur et chaque carré mesure 1 cm de côté : la carte mesure **8 cm** de long, et 7 cm de large.",
+      "Vérification : 7 rangées de 8 carrés, $7 \\times 8 = 56$, l'aire est bien 56 cm². Le tour de la carte, lui, mesure 8 + 7 + 8 + 7 = 30 cm : aire et périmètre sont deux grandeurs différentes."
+    ],
+    "hint": "Combien de carrés dans une rangée ? Cherche dans la table de 7.",
+    "estimated_duration_s": 90,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 3, CM2, Les aires : « Déterminer l'aire d'un carré ou d'un rectangle »"
+  }
+]

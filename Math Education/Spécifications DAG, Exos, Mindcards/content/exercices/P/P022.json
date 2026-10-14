@@ -1,0 +1,189 @@
+[
+  {
+    "id": "EX-P022-D-01",
+    "skill_id": "P022",
+    "level": "decouverte",
+    "type": "numerique",
+    "statement": "Une nappe carrée a des côtés de 1,35 m.\n\nCalcule son périmètre avec la formule du carré $P = 4 \\times c$, où $c$ est la longueur d'un côté.",
+    "image": null,
+    "answer": {
+      "value": 5.4,
+      "unit": "m",
+      "accepted": [
+        "5,4",
+        "5,40",
+        "5,4 m",
+        "5,40 m"
+      ]
+    },
+    "solution_steps": [
+      "Un carré a 4 côtés de même longueur. Son contour mesure $c + c + c + c$, c'est-à-dire $4 \\times c$ : c'est la formule $P = 4 \\times c$.",
+      "On remplace $c$ par 1,35 : $P = 4 \\times 1{,}35$.",
+      "On pose $135 \\times 4 = 540$, puis on place la virgule : deux chiffres après la virgule dans 1,35, donc deux dans le produit : 5,40.",
+      "Le périmètre de la nappe est **5,4 m**. Contrôle : $4 \\times 1 = 4$ et $4 \\times 1{,}5 = 6$, le résultat est bien entre 4 m et 6 m."
+    ],
+    "hint": "Remplace la lettre $c$ par la longueur du côté.",
+    "estimated_duration_s": 60,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 3, 6e : l'élève substitue une valeur numérique à une lettre pour calculer, en situation, un périmètre ou une aire."
+  },
+  {
+    "id": "EX-P022-D-02",
+    "skill_id": "P022",
+    "level": "decouverte",
+    "type": "qcm",
+    "statement": "Une étiquette rectangulaire mesure 8,5 cm de long et 3,2 cm de large.\n\nAvec la formule $P = 2 \\times (L + l)$, quel est son périmètre ?",
+    "image": null,
+    "choices": [
+      {
+        "key": "a",
+        "text": "11,7 cm",
+        "misconception": "L'élève calcule seulement L + l = 11,7 : il fait le tour d'une moitié du rectangle et oublie de multiplier par 2."
+      },
+      {
+        "key": "b",
+        "text": "23,4 cm",
+        "misconception": null
+      },
+      {
+        "key": "c",
+        "text": "20,2 cm",
+        "misconception": "L'élève oublie les parenthèses et calcule 2 × 8,5 + 3,2 = 20,2 : il double la longueur mais pas la largeur, il manque un côté."
+      },
+      {
+        "key": "d",
+        "text": "27,2 cm",
+        "misconception": "L'élève multiplie la longueur par la largeur (8,5 × 3,2 = 27,2) : il confond le périmètre avec l'aire."
+      }
+    ],
+    "answer": {
+      "value": "b"
+    },
+    "solution_steps": [
+      "Le contour du rectangle passe par 2 longueurs et 2 largeurs : $L + l + L + l$, c'est-à-dire $2 \\times (L + l)$.",
+      "On remplace $L$ par 8,5 et $l$ par 3,2 : $P = 2 \\times (8{,}5 + 3{,}2) = 2 \\times 11{,}7 = 23{,}4$.",
+      "Les parenthèses comptent : on additionne d'abord la longueur et la largeur, puis on double. Le périmètre est **23,4 cm**."
+    ],
+    "hint": "Calcule d'abord ce qui est entre parenthèses.",
+    "estimated_duration_s": 60,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 3, 6e : l'élève sait calculer le périmètre d'un carré et d'un rectangle."
+  },
+  {
+    "id": "EX-P022-E-01",
+    "skill_id": "P022",
+    "level": "entrainement",
+    "type": "numerique",
+    "statement": "Un plan de travail de cuisine rectangulaire mesure 3 m de long et 65 cm de large. On colle une baguette de bois tout autour.\n\nQuelle longueur de baguette faut-il, en centimètres ?",
+    "image": null,
+    "answer": {
+      "value": 730,
+      "unit": "cm",
+      "accepted": [
+        "730 cm",
+        "730cm"
+      ]
+    },
+    "solution_steps": [
+      "La baguette suit le contour : il faut le périmètre du rectangle, $P = 2 \\times (L + l)$.",
+      "Les deux longueurs ne sont pas dans la même unité : avant de remplacer, on convertit. 1 m = 100 cm, donc 3 m = 300 cm.",
+      "$P = 2 \\times (300 + 65) = 2 \\times 365 = 730$.",
+      "Il faut **730 cm** de baguette, soit 7 m et 30 cm. Sans conversion, on aurait écrit $2 \\times (3 + 65) = 136$ : un résultat absurde, qui mélange des mètres et des centimètres."
+    ],
+    "hint": "La longueur et la largeur sont-elles dans la même unité ?",
+    "estimated_duration_s": 90,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 3, 6e : résoudre des problèmes impliquant des longueurs ; l'élève sait calculer le périmètre d'un carré et d'un rectangle."
+  },
+  {
+    "id": "EX-P022-E-02",
+    "skill_id": "P022",
+    "level": "entrainement",
+    "type": "vrai_faux",
+    "statement": "Hugo dit : « Pour un rectangle de longueur $L$ et de largeur $l$, les calculs $L + l + L + l$ et $2 \\times (L + l)$ donnent toujours le même périmètre. »",
+    "image": null,
+    "answer": {
+      "value": true
+    },
+    "solution_steps": [
+      "$L + l + L + l$ suit le contour du rectangle : une longueur, une largeur, une longueur, une largeur.",
+      "On regroupe une longueur et une largeur : $L + l + L + l = (L + l) + (L + l)$. Ajouter deux fois la même somme, c'est la multiplier par 2 : $(L + l) + (L + l) = 2 \\times (L + l)$.",
+      "Exemple avec $L = 12{,}6$ et $l = 4{,}8$ : $12{,}6 + 4{,}8 + 12{,}6 + 4{,}8 = 34{,}8$ et $2 \\times (12{,}6 + 4{,}8) = 2 \\times 17{,}4 = 34{,}8$.",
+      "Hugo a **raison** : ce sont deux écritures de la même formule du périmètre du rectangle. La seconde demande moins de calculs."
+    ],
+    "hint": "Regroupe une longueur et une largeur.",
+    "estimated_duration_s": 75,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 3, 6e : les formules du périmètre d'un carré, d'un rectangle, d'un disque et celles de l'aire d'un carré ou d'un rectangle s'installent progressivement."
+  },
+  {
+    "id": "EX-P022-M-01",
+    "skill_id": "P022",
+    "level": "maitrise",
+    "type": "numerique",
+    "statement": "Un jardin rectangulaire est entouré d'une clôture de 64 m. Sa longueur mesure 19,5 m.\n\nQuelle est sa largeur ?",
+    "image": null,
+    "answer": {
+      "value": 12.5,
+      "unit": "m",
+      "accepted": [
+        "12,5",
+        "12,50",
+        "12,5 m",
+        "12,50 m"
+      ]
+    },
+    "solution_steps": [
+      "La clôture fait le tour du jardin : le périmètre est 64 m. Le contour passe par 2 longueurs et 2 largeurs, soit deux fois (une longueur + une largeur), comme dans $P = 2 \\times (L + l)$.",
+      "Une longueur plus une largeur font donc la moitié du périmètre : $64 \\div 2 = 32$, soit 32 m. C'est le demi-périmètre.",
+      "$l = 32 - 19{,}5 = 12{,}5$. On pose la soustraction en alignant les virgules : $32{,}0 - 19{,}5 = 12{,}5$.",
+      "La largeur est **12,5 m**. Vérification : $2 \\times (19{,}5 + 12{,}5) = 2 \\times 32 = 64$."
+    ],
+    "hint": "Que vaut une longueur plus une largeur ?",
+    "estimated_duration_s": 150,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 3, 6e : résoudre des problèmes impliquant des longueurs ; l'élève substitue une valeur numérique à une lettre pour calculer, en situation, un périmètre ou une aire."
+  },
+  {
+    "id": "EX-P022-M-02",
+    "skill_id": "P022",
+    "level": "maitrise",
+    "type": "qcm",
+    "statement": "Un rectangle mesure 9,7 cm de long et 6,3 cm de large. Un carré a le même périmètre que ce rectangle.\n\nQuelle est la longueur du côté du carré ?",
+    "image": null,
+    "choices": [
+      {
+        "key": "a",
+        "text": "16 cm",
+        "misconception": "L'élève divise le périmètre (32 cm) par 2 au lieu de 4 : il applique au carré le demi-périmètre du rectangle."
+      },
+      {
+        "key": "b",
+        "text": "4 cm",
+        "misconception": "L'élève prend L + l = 16 pour le périmètre du rectangle, sans doubler, puis divise par 4."
+      },
+      {
+        "key": "c",
+        "text": "32 cm",
+        "misconception": "L'élève s'arrête au périmètre du rectangle et le donne comme côté du carré."
+      },
+      {
+        "key": "d",
+        "text": "8 cm",
+        "misconception": null
+      }
+    ],
+    "answer": {
+      "value": "d"
+    },
+    "solution_steps": [
+      "Périmètre du rectangle : $P = 2 \\times (9{,}7 + 6{,}3) = 2 \\times 16 = 32$, soit 32 cm.",
+      "Pour le carré, $P = 4 \\times c$ : il faut donc $4 \\times c = 32$.",
+      "$c = 32 \\div 4 = 8$. Le côté du carré mesure **8 cm**. Vérification : $4 \\times 8 = 32$."
+    ],
+    "hint": "Calcule d'abord le périmètre du rectangle, puis utilise la formule du carré à l'envers.",
+    "estimated_duration_s": 120,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 3, 6e : l'élève sait calculer le périmètre d'un carré et d'un rectangle."
+  }
+]

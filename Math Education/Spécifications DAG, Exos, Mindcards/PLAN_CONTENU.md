@@ -30,7 +30,8 @@ domaines à moitié faits.
 | 1 | B Calcul numérique : opérations, calcul mental, division | CP → 6e | Fait le 3 octobre 2026 : 18 compétences, 108 exercices, 4 cartes (bilan dans `QUALITY.md`) |
 | 2 | D Nombres décimaux | CE1 → 6e | Fait le 4 octobre 2026 : 19 compétences, 114 exercices, 4 cartes |
 | 3 | E Proportionnalité et pourcentages | CM1 → 5e | Fait le 5 octobre 2026 : 17 compétences E et B043, 108 exercices, 4 cartes (bilan dans `QUALITY.md`) |
-| **4** | **Grandeurs et mesures, géométrie plane** | CP → 6e | Prochaine |
+| 4a | P Grandeurs et mesures (domaine ouvert, lettre P) | CP → 6e | Fait le 14 octobre 2026 : 27 compétences (dont 5 à figure), 132 exercices, 6 cartes |
+| **4b** | **G Géométrie plane** | CP → 6e | Prochaine, après l'affichage des figures dans l'application |
 | 5+ | Statistiques, probabilités, algèbre, puissances | Cycle 4 | À faire |
 
 ## Le circuit d'une étape

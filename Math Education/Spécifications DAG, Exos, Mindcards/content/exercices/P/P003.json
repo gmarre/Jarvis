@@ -1,0 +1,175 @@
+[
+  {
+    "id": "EX-P003-D-01",
+    "skill_id": "P003",
+    "level": "decouverte",
+    "type": "numerique",
+    "statement": "Inès a un billet de 20 € et 3 pièces de 1 €.\n\nCombien a-t-elle ?",
+    "image": null,
+    "answer": {
+      "value": 23,
+      "unit": "€",
+      "accepted": [
+        "23 €",
+        "23 euros"
+      ]
+    },
+    "solution_steps": [
+      "On commence par le billet : il vaut 20 €.",
+      "On ajoute les pièces de 1 € une par une, en comptant : 21, 22, 23.",
+      "Inès a **23 €**.",
+      "On compte la valeur des billets et des pièces, pas leur nombre : Inès n'a que 4 objets, mais elle a 23 €."
+    ],
+    "hint": "Pars de 20, puis avance de 1 pour chaque pièce.",
+    "estimated_duration_s": 30,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 2, CP, la monnaie : déterminer la valeur en euro d'un ensemble constitué de pièces et de billets."
+  },
+  {
+    "id": "EX-P003-D-02",
+    "skill_id": "P003",
+    "level": "decouverte",
+    "type": "qcm",
+    "statement": "Qu'est-ce qui vaut le plus d'argent ?",
+    "image": null,
+    "choices": [
+      {
+        "key": "a",
+        "text": "5 pièces de 1 €",
+        "misconception": "L'élève compte les objets : 5 pièces, c'est plus qu'un seul billet. Mais 5 pièces de 1 € ne valent que 5 €."
+      },
+      {
+        "key": "b",
+        "text": "1 billet de 10 €",
+        "misconception": null
+      },
+      {
+        "key": "c",
+        "text": "On ne peut pas comparer des pièces et des billets",
+        "misconception": "L'élève croit que des pièces et des billets ne se comparent pas. On compare leur valeur en euros : 5 € et 10 €."
+      }
+    ],
+    "answer": {
+      "value": "b"
+    },
+    "solution_steps": [
+      "5 pièces de 1 € : on compte 1, 2, 3, 4, 5. Elles valent 5 €.",
+      "Le billet de 10 € vaut 10 €, autant que dix pièces de 1 €.",
+      "10 €, c'est plus que 5 € : c'est **le billet de 10 €** qui vaut le plus, même s'il n'y a qu'un seul billet."
+    ],
+    "hint": "Combien d'euros valent les 5 pièces ensemble ?",
+    "estimated_duration_s": 30,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 2, CP, la monnaie : l'élève sait comparer deux ensembles constitués de pièces ou de billets du point de vue de leur valeur et non de celui du nombre de pièces ou de billets ; l'élève sait que dix pièces de 1 € ont la même valeur qu'un billet de 10 €."
+  },
+  {
+    "id": "EX-P003-E-01",
+    "skill_id": "P003",
+    "level": "entrainement",
+    "type": "numerique",
+    "statement": "Un jeu coûte 30 €. Tu donnes un billet de 50 €.\n\nCombien te rend-on ?",
+    "image": null,
+    "answer": {
+      "value": 20,
+      "unit": "€",
+      "accepted": [
+        "20 €",
+        "20 euros"
+      ]
+    },
+    "solution_steps": [
+      "Tu donnes plus que le prix : le vendeur te rend ce que tu as donné en trop.",
+      "Il compte à partir du prix, de 10 en 10, jusqu'à 50 : 30, puis 40, 50.",
+      "Il a ajouté 2 billets de 10 € : il te rend **20 €**.",
+      "Vérification : 30 + 20 = 50. Le jeu et la monnaie rendue font bien les 50 € donnés."
+    ],
+    "hint": "Compte de 10 en 10 à partir de 30, jusqu'à 50.",
+    "estimated_duration_s": 45,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 2, CP, la monnaie : simuler des achats en manipulant des pièces et des billets fictifs. Rendre la monnaie."
+  },
+  {
+    "id": "EX-P003-E-02",
+    "skill_id": "P003",
+    "level": "entrainement",
+    "type": "vrai_faux",
+    "statement": "Zoé a 4 billets de 5 €. Elle dit : « J'ai 9 €. »\n\nA-t-elle raison ?",
+    "image": null,
+    "answer": {
+      "value": false
+    },
+    "solution_steps": [
+      "Zoé a ajouté 4 et 5 : elle mélange le nombre de billets et la valeur d'un billet.",
+      "Chaque billet vaut 5 €. On compte de 5 en 5, un billet après l'autre : 5, 10, 15, 20.",
+      "Zoé a 20 €, pas 9 € : elle a **tort**."
+    ],
+    "hint": "Compte de 5 en 5, un billet après l'autre.",
+    "estimated_duration_s": 45,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 2, CP, la monnaie : déterminer la valeur en euro d'un ensemble constitué de pièces et de billets."
+  },
+  {
+    "id": "EX-P003-M-01",
+    "skill_id": "P003",
+    "level": "maitrise",
+    "type": "qcm",
+    "statement": "Tu veux payer 37 € avec le moins possible de billets et de pièces.\n\nQue donnes-tu ?",
+    "image": null,
+    "choices": [
+      {
+        "key": "a",
+        "text": "1 billet de 20 €, 1 billet de 10 € et 1 billet de 5 €",
+        "misconception": "L'élève cherche le moins d'objets possible mais oublie de vérifier la somme : 20, 30, 35. Cela fait 35 €, pas 37 €."
+      },
+      {
+        "key": "b",
+        "text": "3 billets de 10 € et 7 pièces de 1 €",
+        "misconception": "L'élève découpe 37 en 3 dizaines et 7 unités, comme en numération. La somme est juste, mais il donne 10 objets."
+      },
+      {
+        "key": "c",
+        "text": "1 billet de 20 €, 1 billet de 10 €, 1 billet de 5 € et 1 pièce de 2 €",
+        "misconception": null
+      }
+    ],
+    "answer": {
+      "value": "c"
+    },
+    "solution_steps": [
+      "Le billet de 50 € est trop grand. On prend le plus gros billet qui ne dépasse pas 37 € : un billet de 20 €.",
+      "On ajoute un billet de 10 € : 20, 30. On est à 30 €, il faut aller jusqu'à 37 €.",
+      "Un billet de 5 € : 35. Puis une pièce de 2 € : 37.",
+      "On donne 4 objets et on a bien 37 € : c'est la réponse c. La réponse b fait 37 €, mais avec 10 objets ; la réponse a ne fait que 35 €."
+    ],
+    "hint": "Commence par le plus gros billet qui ne dépasse pas 37 €.",
+    "estimated_duration_s": 90,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 2, CP, la monnaie : constituer une somme d'argent donnée avec des pièces et des billets ; « Produire 48 € en utilisant le moins de pièces possible et le moins de billets possible »."
+  },
+  {
+    "id": "EX-P003-M-02",
+    "skill_id": "P003",
+    "level": "maitrise",
+    "type": "numerique",
+    "statement": "Tu donnes 40 € pour un jouet. On te rend 5 €.\n\nCombien coûte-t-il ?",
+    "image": null,
+    "answer": {
+      "value": 35,
+      "unit": "€",
+      "accepted": [
+        "35 €",
+        "35 euros"
+      ]
+    },
+    "solution_steps": [
+      "Les 40 € que tu donnes servent à payer le jouet, et le vendeur te rend ce qui est en trop : 5 €.",
+      "Le prix du jouet et les 5 € rendus font donc 40 € à eux deux.",
+      "On recule de 5 à partir de 40 : 39, 38, 37, 36, 35.",
+      "Vérification, comme le vendeur : à partir de 35, il compte 36, 37, 38, 39, 40. Il rend bien 5 €. Le jouet coûte **35 €**."
+    ],
+    "hint": "Le prix du jouet et les 5 € rendus font ensemble les 40 € donnés.",
+    "estimated_duration_s": 90,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 2, CP, la monnaie : simuler des achats en manipulant des pièces et des billets fictifs. Rendre la monnaie."
+  }
+]

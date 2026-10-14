@@ -1,0 +1,177 @@
+[
+  {
+    "id": "EX-P025-D-01",
+    "skill_id": "P025",
+    "level": "decouverte",
+    "type": "numerique",
+    "statement": "Un tapis de salon a une aire de 4,7 m². On sait que 1 m² = 100 dm².\n\nQuelle est son aire en dm² ?",
+    "image": null,
+    "answer": {
+      "value": 470,
+      "unit": "dm²",
+      "accepted": [
+        "470 dm²",
+        "470 dm2"
+      ]
+    },
+    "solution_steps": [
+      "1 m² = 100 dm² : pour passer des m² aux dm², on multiplie par 100.",
+      "$4{,}7 \\times 100 = 470$ : le chiffre 4 des unités devient le chiffre des centaines, le 7 des dixièmes devient celui des dizaines.",
+      "Le tapis a une aire de **470 dm²**.",
+      "47 dm² serait faux : c'est le rapport 10 des longueurs (1 m = 10 dm). Pour les aires, le rapport est 100."
+    ],
+    "hint": "Par quel nombre multiplie-t-on pour passer des m² aux dm² ?",
+    "estimated_duration_s": 60,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 3, classe de 6e, Les aires : « Effectuer des conversions d'aire »"
+  },
+  {
+    "id": "EX-P025-D-02",
+    "skill_id": "P025",
+    "level": "decouverte",
+    "type": "qcm",
+    "statement": "Une carte postale a une aire de 150 cm². On sait que 1 cm² = 0,01 dm².\n\nQuelle est son aire en dm² ?",
+    "image": null,
+    "choices": [
+      {
+        "key": "a",
+        "text": "1,5 dm²",
+        "misconception": null
+      },
+      {
+        "key": "b",
+        "text": "15 dm²",
+        "misconception": "L'élève divise par 10, le rapport des longueurs (1 dm = 10 cm), au lieu de 100 pour les aires."
+      },
+      {
+        "key": "c",
+        "text": "15 000 dm²",
+        "misconception": "L'élève convertit dans le mauvais sens : il multiplie par 100, alors qu'on passe à une unité plus grande, donc à un nombre plus petit."
+      }
+    ],
+    "answer": {
+      "value": "a"
+    },
+    "solution_steps": [
+      "1 cm² est un centième de dm² : il faut 100 cm² pour faire 1 dm².",
+      "Passer des cm² aux dm², c'est diviser par 100 : $150 \\div 100 = 1{,}5$.",
+      "La carte a une aire de **1,5 dm²**.",
+      "Contrôle : 1 dm² = 100 cm², donc 1,5 dm², c'est $1{,}5 \\times 100 = 150$ cm². On retrouve l'aire de départ."
+    ],
+    "hint": "Combien de cm² faut-il pour faire 1 dm² ?",
+    "estimated_duration_s": 60,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 3, classe de 6e, Les aires : « L'élève mémorise que 1 cm² est égal à un centième de 1 dm² »"
+  },
+  {
+    "id": "EX-P025-E-01",
+    "skill_id": "P025",
+    "level": "entrainement",
+    "type": "vrai_faux",
+    "statement": "Lina affirme : « 0,8 m² = 8 dm², car 1 m = 10 dm. »\n\nLina a-t-elle raison ?",
+    "image": null,
+    "answer": {
+      "value": false
+    },
+    "solution_steps": [
+      "1 m = 10 dm concerne les longueurs. Pour les aires, un carré de 1 m de côté contient 10 rangées de 10 carrés de 1 dm de côté : 1 m² = 100 dm².",
+      "$0{,}8 \\times 100 = 80$ : 0,8 m² = 80 dm².",
+      "Lina a **tort** : elle a utilisé le rapport 10 des longueurs au lieu du rapport 100 des aires."
+    ],
+    "hint": "Combien de dm² dans 1 m² ?",
+    "estimated_duration_s": 60,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 3, classe de 6e, Les aires : « Effectuer des conversions d'aire »"
+  },
+  {
+    "id": "EX-P025-E-02",
+    "skill_id": "P025",
+    "level": "entrainement",
+    "type": "numerique",
+    "statement": "Un coupon de tissu a une aire de 65 dm².\n\nQuelle est son aire en m² ?",
+    "image": null,
+    "answer": {
+      "value": 0.65,
+      "unit": "m²",
+      "accepted": [
+        "0,65",
+        "0,65 m²",
+        "0,65 m2"
+      ]
+    },
+    "solution_steps": [
+      "1 dm² = 0,01 m² : il faut 100 dm² pour faire 1 m².",
+      "Passer des dm² aux m², c'est diviser par 100 : $65 \\div 100 = 0{,}65$.",
+      "Le tissu a une aire de **0,65 m²**, un peu plus d'un demi-mètre carré.",
+      "6,5 m² serait le rapport 10 des longueurs. 6 500 m² serait une conversion dans le mauvais sens : on passe à une unité plus grande, le nombre doit diminuer."
+    ],
+    "hint": "Combien de dm² faut-il pour faire 1 m² ?",
+    "estimated_duration_s": 75,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 3, classe de 6e, Les aires : « Effectuer des conversions d'aire »"
+  },
+  {
+    "id": "EX-P025-M-01",
+    "skill_id": "P025",
+    "level": "maitrise",
+    "type": "qcm",
+    "statement": "Une vitre a une aire de 0,36 m².\n\nQuelle est son aire en cm² ?",
+    "image": null,
+    "choices": [
+      {
+        "key": "a",
+        "text": "36 cm²",
+        "misconception": "L'élève transpose aux aires la relation des longueurs 1 m = 100 cm et croit que 1 m² = 100 cm². 36 cm², c'est l'aire d'un carré de 6 cm de côté : trop petit pour une vitre."
+      },
+      {
+        "key": "b",
+        "text": "0,0036 cm²",
+        "misconception": "L'élève divise par 100 au lieu de multiplier : il convertit dans le mauvais sens. Passer à une unité plus petite doit faire augmenter le nombre."
+      },
+      {
+        "key": "c",
+        "text": "3 600 cm²",
+        "misconception": null
+      }
+    ],
+    "answer": {
+      "value": "c"
+    },
+    "solution_steps": [
+      "On passe par les dm² : 1 m² = 100 dm², donc $0{,}36 \\times 100 = 36$. 0,36 m² = 36 dm².",
+      "1 dm² = 100 cm², donc $36 \\times 100 = 3\\,600$. 36 dm² = 3 600 cm².",
+      "La vitre a une aire de **3 600 cm²**, celle d'un carré de 60 cm de côté : $60 \\times 60 = 3\\,600$.",
+      "Entre m² et cm², le rapport est $100 \\times 100 = 10\\,000$, et non 100 comme entre m et cm."
+    ],
+    "hint": "Convertis d'abord en dm², puis en cm².",
+    "estimated_duration_s": 90,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 3, classe de 6e, Les aires : « Effectuer des conversions d'aire »"
+  },
+  {
+    "id": "EX-P025-M-02",
+    "skill_id": "P025",
+    "level": "maitrise",
+    "type": "numerique",
+    "statement": "On veut carreler un mur de 2,4 m² avec des carreaux de 4 dm² chacun.\n\nCombien de carreaux faut-il ?",
+    "image": null,
+    "answer": {
+      "value": 60,
+      "unit": null,
+      "accepted": [
+        "60 carreaux"
+      ]
+    },
+    "solution_steps": [
+      "Les deux aires ne sont pas dans la même unité : on convertit l'aire du mur en dm².",
+      "1 m² = 100 dm², donc $2{,}4 \\times 100 = 240$ : le mur mesure 240 dm².",
+      "Chaque carreau couvre 4 dm² : $240 \\div 4 = 60$.",
+      "Il faut **60 carreaux**. Vérification : $60 \\times 4 = 240$.",
+      "Avec le rapport 10 des longueurs, on trouverait 24 dm² et seulement $24 \\div 4 = 6$ carreaux : de quoi couvrir moins d'un quart de mètre carré."
+    ],
+    "hint": "Écris d'abord l'aire du mur en dm².",
+    "estimated_duration_s": 100,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 3, classe de 6e, Les aires : « Effectuer des conversions d'aire »"
+  }
+]

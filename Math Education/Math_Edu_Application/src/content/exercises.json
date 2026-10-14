@@ -3,7 +3,7 @@
     "version": "1.0",
     "scope": "Tranche pilote CP a 4e : 69 exercices, 3 par competence (1 decouverte, 1 entrainement, 1 maitrise) sur les 23 competences des domaines A et C. La cible finale de la roadmap est de 5 exercices par niveau, soit 15 par competence.",
     "updated_at": "2026-07-28",
-    "total_exercises": 504,
+    "total_exercises": 636,
     "review_status": "relu_agent"
   },
   "exercises": [
@@ -14097,6 +14097,4000 @@
       "estimated_duration_s": 90,
       "review_status": "relu_agent",
       "programme_ref": "Cycle 4, 5e : prendre 1 %, 10 % ou 50 % d'un nombre, en lien avec la proportionnalité."
+    },
+    {
+      "id": "EX-P002-D-01",
+      "skill_id": "P002",
+      "level": "decouverte",
+      "type": "qcm",
+      "statement": "À peu près combien mesure un crayon de couleur ?",
+      "image": null,
+      "choices": [
+        {
+          "key": "a",
+          "text": "2 cm",
+          "misconception": "L'élève croit que le centimètre est une grande unité, ou pense à l'épaisseur du crayon. 2 cm, c'est à peu près la largeur de deux doigts : un crayon est bien plus long."
+        },
+        {
+          "key": "b",
+          "text": "15 cm",
+          "misconception": null
+        },
+        {
+          "key": "c",
+          "text": "15 m",
+          "misconception": "L'élève a une bonne idée du nombre mais se trompe d'unité. 15 m, c'est plus long que la salle de classe."
+        }
+      ],
+      "answer": {
+        "value": "b"
+      },
+      "solution_steps": [
+        "Le centimètre (cm) sert pour les petites longueurs : 1 cm, c'est à peu près la largeur d'un doigt.",
+        "Le mètre (m) sert pour les grandes longueurs : 1 m, c'est à peu près la hauteur de la poignée de la porte.",
+        "Un crayon tient dans la main et sur la règle de la trousse, qui mesure 20 cm : il mesure environ **15 cm**.",
+        "2 cm, c'est trop court : deux doigts. 15 m, c'est trop long : plus que la classe."
+      ],
+      "hint": "Un crayon tient-il sur ta règle de la trousse ?",
+      "estimated_duration_s": 30,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 2, CP, les longueurs : l'élève sait dire si la longueur d'une trousse est plutôt 2 cm, 20 cm ou 1 m."
+    },
+    {
+      "id": "EX-P002-D-02",
+      "skill_id": "P002",
+      "level": "decouverte",
+      "type": "texte",
+      "statement": "Le lit de Tom mesure 2 … de long.\n\nQuelle unité manque : m ou cm ?",
+      "image": null,
+      "answer": {
+        "value": "m",
+        "accepted": [
+          "mètre",
+          "mètres",
+          "le mètre",
+          "les mètres",
+          "en mètres",
+          "2 m",
+          "2 mètres",
+          "un mètre",
+          "en m",
+          "le m",
+          "en mètre",
+          "2 mètre"
+        ]
+      },
+      "solution_steps": [
+        "2 cm, c'est la largeur de deux doigts : Tom ne tiendrait jamais dans un lit si petit.",
+        "Tom s'allonge dans son lit : le lit est plus long que lui. Il faut la grande unité, le mètre.",
+        "Le lit mesure 2 m. L'unité qui manque est **m**."
+      ],
+      "hint": "Un lit est-il plus petit ou plus grand que toi ?",
+      "estimated_duration_s": 30,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 2, CP, les longueurs : connaitre quelques longueurs de référence."
+    },
+    {
+      "id": "EX-P002-E-01",
+      "skill_id": "P002",
+      "level": "entrainement",
+      "type": "numerique",
+      "statement": "Une piste de voitures est faite de 10 rails de 10 cm.\n\nCombien de mètres mesure-t-elle ?",
+      "image": null,
+      "answer": {
+        "value": 1,
+        "unit": "m",
+        "accepted": [
+          "1 m",
+          "1 mètre",
+          "un mètre"
+        ]
+      },
+      "solution_steps": [
+        "On compte la longueur rail après rail, de 10 en 10 : 10, 20, 30, 40, 50, 60, 70, 80, 90, 100.",
+        "Avec les 10 rails, la piste mesure 100 cm.",
+        "Un mètre est égal à cent centimètres : 100 cm, c'est 1 m.",
+        "La piste mesure **1 m**."
+      ],
+      "hint": "Compte de 10 en 10, un rail après l'autre, puis pense au mètre.",
+      "estimated_duration_s": 60,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 2, CP, les longueurs : savoir qu'un mètre est égal à cent centimètres."
+    },
+    {
+      "id": "EX-P002-E-02",
+      "skill_id": "P002",
+      "level": "entrainement",
+      "type": "qcm",
+      "statement": "Quel objet mesure environ 2 m de haut ?",
+      "image": null,
+      "choices": [
+        {
+          "key": "a",
+          "text": "La porte de la classe",
+          "misconception": null
+        },
+        {
+          "key": "b",
+          "text": "Une chaise",
+          "misconception": "L'élève pense que 2 m, c'est petit, parce que 2 est un petit nombre. Or une chaise n'arrive même pas à la poignée de la porte, qui est à environ 1 m."
+        },
+        {
+          "key": "c",
+          "text": "Un bouchon de bouteille",
+          "misconception": "L'élève confond le mètre et le centimètre : c'est le bouchon qui mesure environ 2 cm."
+        }
+      ],
+      "answer": {
+        "value": "a"
+      },
+      "solution_steps": [
+        "1 m, c'est à peu près la hauteur de la poignée de la porte.",
+        "2 m, c'est 1 m et 1 m : plus haut qu'un adulte.",
+        "La porte de la classe est plus haute qu'un adulte : elle mesure environ **2 m**.",
+        "Le bouchon mesure environ 2 cm : c'est le même nombre, mais pas la même unité."
+      ],
+      "hint": "1 m arrive à peu près à la poignée de la porte. Et 2 m ?",
+      "estimated_duration_s": 30,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 2, CP, les longueurs : l'élève sait estimer la hauteur de la porte, la largeur de la classe ou la longueur du couloir."
+    },
+    {
+      "id": "EX-P002-M-01",
+      "skill_id": "P002",
+      "level": "maitrise",
+      "type": "vrai_faux",
+      "statement": "Sam dit : « 95 cm, c'est plus long que 1 m. »\n\nA-t-il raison ?",
+      "image": null,
+      "answer": {
+        "value": false
+      },
+      "solution_steps": [
+        "Sam compare 95 et 1 sans regarder les unités. On ne compare deux longueurs que dans la même unité.",
+        "Un mètre est égal à cent centimètres : 1 m, c'est 100 cm.",
+        "On compare 95 cm et 100 cm : quand on compte, 95 vient avant 100. 95 est plus petit que 100.",
+        "95 cm, c'est plus court que 1 m : Sam a **tort**."
+      ],
+      "hint": "Écris 1 m en centimètres avant de comparer.",
+      "estimated_duration_s": 45,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 2, CP, les longueurs : savoir qu'un mètre est égal à cent centimètres."
+    },
+    {
+      "id": "EX-P002-M-02",
+      "skill_id": "P002",
+      "level": "maitrise",
+      "type": "qcm",
+      "statement": "Une corde mesure 100 cm. Une autre mesure 1 m.\n\nLaquelle est la plus longue ?",
+      "image": null,
+      "choices": [
+        {
+          "key": "a",
+          "text": "La corde de 100 cm",
+          "misconception": "L'élève compare 100 et 1 sans regarder les unités : 100 lui paraît bien plus grand."
+        },
+        {
+          "key": "b",
+          "text": "La corde de 1 m",
+          "misconception": "L'élève pense qu'un mètre est toujours plus long que des centimètres, sans chercher combien de centimètres il y a dans un mètre."
+        },
+        {
+          "key": "c",
+          "text": "Elles ont la même longueur",
+          "misconception": null
+        }
+      ],
+      "answer": {
+        "value": "c"
+      },
+      "solution_steps": [
+        "Les deux longueurs ne sont pas dans la même unité : on ne peut pas comparer 100 et 1 directement.",
+        "Un mètre est égal à cent centimètres : 1 m, c'est 100 cm.",
+        "La corde de 1 m mesure donc 100 cm, comme l'autre corde.",
+        "**Elles ont la même longueur.**"
+      ],
+      "hint": "Écris la longueur de la deuxième corde en centimètres.",
+      "estimated_duration_s": 45,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 2, CP, les longueurs : savoir qu'un mètre est égal à cent centimètres."
+    },
+    {
+      "id": "EX-P003-D-01",
+      "skill_id": "P003",
+      "level": "decouverte",
+      "type": "numerique",
+      "statement": "Inès a un billet de 20 € et 3 pièces de 1 €.\n\nCombien a-t-elle ?",
+      "image": null,
+      "answer": {
+        "value": 23,
+        "unit": "€",
+        "accepted": [
+          "23 €",
+          "23 euros"
+        ]
+      },
+      "solution_steps": [
+        "On commence par le billet : il vaut 20 €.",
+        "On ajoute les pièces de 1 € une par une, en comptant : 21, 22, 23.",
+        "Inès a **23 €**.",
+        "On compte la valeur des billets et des pièces, pas leur nombre : Inès n'a que 4 objets, mais elle a 23 €."
+      ],
+      "hint": "Pars de 20, puis avance de 1 pour chaque pièce.",
+      "estimated_duration_s": 30,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 2, CP, la monnaie : déterminer la valeur en euro d'un ensemble constitué de pièces et de billets."
+    },
+    {
+      "id": "EX-P003-D-02",
+      "skill_id": "P003",
+      "level": "decouverte",
+      "type": "qcm",
+      "statement": "Qu'est-ce qui vaut le plus d'argent ?",
+      "image": null,
+      "choices": [
+        {
+          "key": "a",
+          "text": "5 pièces de 1 €",
+          "misconception": "L'élève compte les objets : 5 pièces, c'est plus qu'un seul billet. Mais 5 pièces de 1 € ne valent que 5 €."
+        },
+        {
+          "key": "b",
+          "text": "1 billet de 10 €",
+          "misconception": null
+        },
+        {
+          "key": "c",
+          "text": "On ne peut pas comparer des pièces et des billets",
+          "misconception": "L'élève croit que des pièces et des billets ne se comparent pas. On compare leur valeur en euros : 5 € et 10 €."
+        }
+      ],
+      "answer": {
+        "value": "b"
+      },
+      "solution_steps": [
+        "5 pièces de 1 € : on compte 1, 2, 3, 4, 5. Elles valent 5 €.",
+        "Le billet de 10 € vaut 10 €, autant que dix pièces de 1 €.",
+        "10 €, c'est plus que 5 € : c'est **le billet de 10 €** qui vaut le plus, même s'il n'y a qu'un seul billet."
+      ],
+      "hint": "Combien d'euros valent les 5 pièces ensemble ?",
+      "estimated_duration_s": 30,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 2, CP, la monnaie : l'élève sait comparer deux ensembles constitués de pièces ou de billets du point de vue de leur valeur et non de celui du nombre de pièces ou de billets ; l'élève sait que dix pièces de 1 € ont la même valeur qu'un billet de 10 €."
+    },
+    {
+      "id": "EX-P003-E-01",
+      "skill_id": "P003",
+      "level": "entrainement",
+      "type": "numerique",
+      "statement": "Un jeu coûte 30 €. Tu donnes un billet de 50 €.\n\nCombien te rend-on ?",
+      "image": null,
+      "answer": {
+        "value": 20,
+        "unit": "€",
+        "accepted": [
+          "20 €",
+          "20 euros"
+        ]
+      },
+      "solution_steps": [
+        "Tu donnes plus que le prix : le vendeur te rend ce que tu as donné en trop.",
+        "Il compte à partir du prix, de 10 en 10, jusqu'à 50 : 30, puis 40, 50.",
+        "Il a ajouté 2 billets de 10 € : il te rend **20 €**.",
+        "Vérification : 30 + 20 = 50. Le jeu et la monnaie rendue font bien les 50 € donnés."
+      ],
+      "hint": "Compte de 10 en 10 à partir de 30, jusqu'à 50.",
+      "estimated_duration_s": 45,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 2, CP, la monnaie : simuler des achats en manipulant des pièces et des billets fictifs. Rendre la monnaie."
+    },
+    {
+      "id": "EX-P003-E-02",
+      "skill_id": "P003",
+      "level": "entrainement",
+      "type": "vrai_faux",
+      "statement": "Zoé a 4 billets de 5 €. Elle dit : « J'ai 9 €. »\n\nA-t-elle raison ?",
+      "image": null,
+      "answer": {
+        "value": false
+      },
+      "solution_steps": [
+        "Zoé a ajouté 4 et 5 : elle mélange le nombre de billets et la valeur d'un billet.",
+        "Chaque billet vaut 5 €. On compte de 5 en 5, un billet après l'autre : 5, 10, 15, 20.",
+        "Zoé a 20 €, pas 9 € : elle a **tort**."
+      ],
+      "hint": "Compte de 5 en 5, un billet après l'autre.",
+      "estimated_duration_s": 45,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 2, CP, la monnaie : déterminer la valeur en euro d'un ensemble constitué de pièces et de billets."
+    },
+    {
+      "id": "EX-P003-M-01",
+      "skill_id": "P003",
+      "level": "maitrise",
+      "type": "qcm",
+      "statement": "Tu veux payer 37 € avec le moins possible de billets et de pièces.\n\nQue donnes-tu ?",
+      "image": null,
+      "choices": [
+        {
+          "key": "a",
+          "text": "1 billet de 20 €, 1 billet de 10 € et 1 billet de 5 €",
+          "misconception": "L'élève cherche le moins d'objets possible mais oublie de vérifier la somme : 20, 30, 35. Cela fait 35 €, pas 37 €."
+        },
+        {
+          "key": "b",
+          "text": "3 billets de 10 € et 7 pièces de 1 €",
+          "misconception": "L'élève découpe 37 en 3 dizaines et 7 unités, comme en numération. La somme est juste, mais il donne 10 objets."
+        },
+        {
+          "key": "c",
+          "text": "1 billet de 20 €, 1 billet de 10 €, 1 billet de 5 € et 1 pièce de 2 €",
+          "misconception": null
+        }
+      ],
+      "answer": {
+        "value": "c"
+      },
+      "solution_steps": [
+        "Le billet de 50 € est trop grand. On prend le plus gros billet qui ne dépasse pas 37 € : un billet de 20 €.",
+        "On ajoute un billet de 10 € : 20, 30. On est à 30 €, il faut aller jusqu'à 37 €.",
+        "Un billet de 5 € : 35. Puis une pièce de 2 € : 37.",
+        "On donne 4 objets et on a bien 37 € : c'est la réponse c. La réponse b fait 37 €, mais avec 10 objets ; la réponse a ne fait que 35 €."
+      ],
+      "hint": "Commence par le plus gros billet qui ne dépasse pas 37 €.",
+      "estimated_duration_s": 90,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 2, CP, la monnaie : constituer une somme d'argent donnée avec des pièces et des billets ; « Produire 48 € en utilisant le moins de pièces possible et le moins de billets possible »."
+    },
+    {
+      "id": "EX-P003-M-02",
+      "skill_id": "P003",
+      "level": "maitrise",
+      "type": "numerique",
+      "statement": "Tu donnes 40 € pour un jouet. On te rend 5 €.\n\nCombien coûte-t-il ?",
+      "image": null,
+      "answer": {
+        "value": 35,
+        "unit": "€",
+        "accepted": [
+          "35 €",
+          "35 euros"
+        ]
+      },
+      "solution_steps": [
+        "Les 40 € que tu donnes servent à payer le jouet, et le vendeur te rend ce qui est en trop : 5 €.",
+        "Le prix du jouet et les 5 € rendus font donc 40 € à eux deux.",
+        "On recule de 5 à partir de 40 : 39, 38, 37, 36, 35.",
+        "Vérification, comme le vendeur : à partir de 35, il compte 36, 37, 38, 39, 40. Il rend bien 5 €. Le jouet coûte **35 €**."
+      ],
+      "hint": "Le prix du jouet et les 5 € rendus font ensemble les 40 € donnés.",
+      "estimated_duration_s": 90,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 2, CP, la monnaie : simuler des achats en manipulant des pièces et des billets fictifs. Rendre la monnaie."
+    },
+    {
+      "id": "EX-P005-D-01",
+      "skill_id": "P005",
+      "level": "decouverte",
+      "type": "qcm",
+      "statement": "Quelle unité choisir pour la distance entre deux villes ?",
+      "image": null,
+      "choices": [
+        {
+          "key": "a",
+          "text": "le centimètre (cm)",
+          "misconception": "L'élève choisit l'unité qu'il connaît le mieux. Mais en centimètres, on mesure un crayon ou un cahier, pas une route entre deux villes."
+        },
+        {
+          "key": "b",
+          "text": "le kilomètre (km)",
+          "misconception": null
+        },
+        {
+          "key": "c",
+          "text": "le mètre (m)",
+          "misconception": "L'élève sait que le mètre sert pour les grandes longueurs, comme une salle. Mais entre deux villes, il faudrait des milliers de mètres : on prend le kilomètre."
+        }
+      ],
+      "answer": {
+        "value": "b"
+      },
+      "solution_steps": [
+        "Le centimètre (cm) sert pour les petits objets : un crayon, un cahier.",
+        "Le mètre (m) sert pour une salle, une cour, une piscine.",
+        "Le kilomètre (km) sert pour les grandes distances : 1 km = 1 000 m.",
+        "Entre deux villes, on mesure en **kilomètres**."
+      ],
+      "hint": "Pense aux panneaux au bord de la route.",
+      "estimated_duration_s": 30,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 2, CE1, les longueurs : choisir l'unité la mieux adaptée pour exprimer une longueur."
+    },
+    {
+      "id": "EX-P005-D-02",
+      "skill_id": "P005",
+      "level": "decouverte",
+      "type": "numerique",
+      "statement": "Le tableau de la classe mesure 3 m.\n\nQuelle est sa longueur en centimètres ?",
+      "image": null,
+      "answer": {
+        "value": 300,
+        "unit": "cm",
+        "accepted": [
+          "300 cm",
+          "300 centimètres"
+        ]
+      },
+      "solution_steps": [
+        "1 m = 100 cm.",
+        "3 m, c'est 1 m, 1 m et 1 m : on compte de 100 en 100, 100, 200, 300.",
+        "Le tableau mesure **300 cm** : 3 centaines de centimètres.",
+        "Attention à ne pas confondre : c'est entre le kilomètre et le mètre qu'il y a 1 000, car 1 km = 1 000 m."
+      ],
+      "hint": "Compte de 100 en 100, un mètre après l'autre.",
+      "estimated_duration_s": 45,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 2, CE1, les longueurs : l'élève sait que 1 m = 100 cm et 1 km = 1 000 m."
+    },
+    {
+      "id": "EX-P005-E-01",
+      "skill_id": "P005",
+      "level": "entrainement",
+      "type": "numerique",
+      "statement": "Tom mesure 1 m et 27 cm.\n\nQuelle est sa taille en centimètres ?",
+      "image": null,
+      "answer": {
+        "value": 127,
+        "unit": "cm",
+        "accepted": [
+          "127 cm",
+          "127 centimètres"
+        ]
+      },
+      "solution_steps": [
+        "1 m = 100 cm.",
+        "1 m et 27 cm, c'est donc 100 cm et 27 cm.",
+        "100 et 27, c'est 1 centaine, 2 dizaines et 7 unités : 127.",
+        "Tom mesure **127 cm**."
+      ],
+      "hint": "Écris d'abord 1 m en centimètres.",
+      "estimated_duration_s": 45,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 2, CE1, les longueurs : l'élève sait que 1 m + 46 cm = 146 cm."
+    },
+    {
+      "id": "EX-P005-E-02",
+      "skill_id": "P005",
+      "level": "entrainement",
+      "type": "vrai_faux",
+      "statement": "Un tour de piste mesure 400 m. Lina dit : « C'est plus court que 1 km. »\n\nA-t-elle raison ?",
+      "image": null,
+      "answer": {
+        "value": true
+      },
+      "solution_steps": [
+        "Attention : 400 est plus grand que 1, mais les unités ne sont pas les mêmes. On ne peut pas comparer 400 et 1 directement.",
+        "On écrit 1 km en mètres : 1 km = 1 000 m. Ce n'est pas 100 m : c'est entre le mètre et le centimètre qu'il y a 100.",
+        "On compare 400 m et 1 000 m : 4 centaines, c'est moins que 10 centaines.",
+        "Un tour de piste est plus court que 1 km : Lina a **raison**."
+      ],
+      "hint": "Écris 1 km en mètres avant de comparer.",
+      "estimated_duration_s": 45,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 2, CE1, les longueurs : comparer des longueurs ; l'élève sait que 1 m = 100 cm et 1 km = 1 000 m."
+    },
+    {
+      "id": "EX-P005-M-01",
+      "skill_id": "P005",
+      "level": "maitrise",
+      "type": "qcm",
+      "statement": "Une guirlande mesure 5 m et 7 cm.\n\nQuelle est sa longueur en centimètres ?",
+      "image": null,
+      "choices": [
+        {
+          "key": "a",
+          "text": "57 cm",
+          "misconception": "L'élève colle le 5 et le 7. Mais 57 cm, c'est moins que 1 m : il a oublié que 5 m, c'est 500 cm."
+        },
+        {
+          "key": "b",
+          "text": "570 cm",
+          "misconception": "L'élève écrit le 7 au rang des dizaines : 570 cm, c'est 5 m et 70 cm, pas 5 m et 7 cm."
+        },
+        {
+          "key": "c",
+          "text": "507 cm",
+          "misconception": null
+        }
+      ],
+      "answer": {
+        "value": "c"
+      },
+      "solution_steps": [
+        "1 m = 100 cm, donc 5 m, c'est 5 centaines de centimètres : 500 cm.",
+        "5 m et 7 cm, c'est 500 cm et 7 cm.",
+        "500 et 7 : 5 centaines, 0 dizaine, 7 unités. Le zéro garde la place des dizaines : 507.",
+        "La guirlande mesure **507 cm**."
+      ],
+      "hint": "Combien de dizaines y a-t-il dans 7 cm ?",
+      "estimated_duration_s": 60,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 2, CE1, les longueurs : connaitre les relations entre les unités de longueur usuelles ; l'élève sait que 1 m + 46 cm = 146 cm."
+    },
+    {
+      "id": "EX-P005-M-02",
+      "skill_id": "P005",
+      "level": "maitrise",
+      "type": "qcm",
+      "statement": "Au saut en longueur, Léa fait 1 m et 98 cm, Tom 205 cm, Inès 2 m et 10 cm.\n\nQui saute le plus loin ?",
+      "image": null,
+      "choices": [
+        {
+          "key": "a",
+          "text": "Inès",
+          "misconception": null
+        },
+        {
+          "key": "b",
+          "text": "Tom",
+          "misconception": "L'élève compare les nombres écrits sans regarder les unités : 205 est le plus grand. Mais 205 cm, c'est 2 m et 5 cm, moins que 2 m et 10 cm."
+        },
+        {
+          "key": "c",
+          "text": "Léa",
+          "misconception": "L'élève ne regarde que les centimètres qui suivent les mètres : 98 pour Léa, 10 pour Inès, 5 pour Tom (205 cm, c'est 2 m et 5 cm). Mais Léa n'a sauté que 1 m et quelques centimètres, les deux autres plus de 2 m."
+        }
+      ],
+      "answer": {
+        "value": "a"
+      },
+      "solution_steps": [
+        "On écrit les trois sauts dans la même unité, en centimètres, avec 1 m = 100 cm.",
+        "Léa : 1 m et 98 cm, c'est 198 cm. Inès : 2 m et 10 cm, c'est 210 cm. Tom : 205 cm.",
+        "On compare d'abord les centaines : Léa n'en a qu'une, elle a sauté le moins loin.",
+        "Entre 210 et 205, les centaines sont les mêmes : on compare les dizaines. 1 dizaine contre 0 : 210 est le plus grand.",
+        "C'est **Inès** qui saute le plus loin."
+      ],
+      "hint": "Écris d'abord les trois sauts en centimètres.",
+      "estimated_duration_s": 90,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 2, CE1, les longueurs : comparer des longueurs."
+    },
+    {
+      "id": "EX-P006-D-01",
+      "skill_id": "P006",
+      "level": "decouverte",
+      "type": "qcm",
+      "statement": "Combien pèse une pomme, à peu près ?",
+      "image": null,
+      "choices": [
+        {
+          "key": "a",
+          "text": "150 g",
+          "misconception": null
+        },
+        {
+          "key": "b",
+          "text": "150 kg",
+          "misconception": "L'élève a le bon nombre mais se trompe d'unité : 150 kg, c'est plus lourd que deux adultes."
+        },
+        {
+          "key": "c",
+          "text": "1 kg",
+          "misconception": "L'élève pense au « kilo de pommes » du marché. Mais 1 kg, c'est la masse d'un paquet de sucre : il faut plusieurs pommes pour faire 1 kg."
+        }
+      ],
+      "answer": {
+        "value": "a"
+      },
+      "solution_steps": [
+        "Le gramme (g) sert pour les objets légers, le kilogramme (kg) pour les objets plus lourds.",
+        "Un paquet de sucre pèse 1 kg, c'est-à-dire 1 000 g.",
+        "Une pomme est bien plus légère qu'un paquet de sucre : elle pèse environ **150 g**."
+      ],
+      "hint": "Une pomme est-elle plus lourde ou plus légère qu'un paquet de sucre de 1 kg ?",
+      "estimated_duration_s": 30,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 2, CE1, les masses : disposer de quelques masses de référence. Estimer la masse d'objets du quotidien en gramme ou en kilogramme."
+    },
+    {
+      "id": "EX-P006-D-02",
+      "skill_id": "P006",
+      "level": "decouverte",
+      "type": "numerique",
+      "statement": "Un sac de farine pèse 1 kg.\n\nQuelle est sa masse en grammes ?",
+      "image": null,
+      "answer": {
+        "value": 1000,
+        "unit": "g",
+        "accepted": [
+          "1 000",
+          "1000 g",
+          "1 000 g",
+          "1000 grammes",
+          "1 000 grammes"
+        ]
+      },
+      "solution_steps": [
+        "Le kilogramme est une unité plus grande que le gramme : « kilo » veut dire « mille ».",
+        "1 kg est égal à 1 000 g.",
+        "Le sac pèse **1 000 g**.",
+        "Ne confonds pas avec les longueurs : 1 m = 100 cm, mais 1 kg = 1 000 g."
+      ],
+      "hint": "Le mot « kilo » cache un nombre. Lequel ?",
+      "estimated_duration_s": 30,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 2, CE1, les masses : savoir que 1 kg est égal à 1 000 g."
+    },
+    {
+      "id": "EX-P006-E-01",
+      "skill_id": "P006",
+      "level": "entrainement",
+      "type": "vrai_faux",
+      "statement": "Un chou pèse 900 g. Max dit : « Il pèse moins de 1 kg. »\n\nA-t-il raison ?",
+      "image": null,
+      "answer": {
+        "value": true
+      },
+      "solution_steps": [
+        "Attention : 900 est un grand nombre et 1 un petit, mais les unités ne sont pas les mêmes. On ne compare pas 900 et 1.",
+        "On écrit 1 kg en grammes : 1 kg = 1 000 g.",
+        "On compare dans la même unité : 900 g < 1 000 g.",
+        "Le chou pèse moins de 1 kg : Max a **raison**."
+      ],
+      "hint": "Écris 1 kg en grammes avant de comparer.",
+      "estimated_duration_s": 45,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 2, CE1, les masses : comparer des masses ; savoir que 1 kg est égal à 1 000 g."
+    },
+    {
+      "id": "EX-P006-E-02",
+      "skill_id": "P006",
+      "level": "entrainement",
+      "type": "texte",
+      "statement": "Un cartable plein pèse 3 …\n\nQuelle unité manque : g ou kg ?",
+      "image": null,
+      "answer": {
+        "value": "kg",
+        "accepted": [
+          "kilogramme",
+          "kilogrammes",
+          "le kilogramme",
+          "les kilogrammes",
+          "en kilogrammes",
+          "kilo",
+          "kilos",
+          "3 kg",
+          "3 kilogrammes",
+          "en kg",
+          "le kg",
+          "un kilo",
+          "un kilogramme",
+          "en kilos",
+          "en kilo",
+          "3 kilos",
+          "3 kilo"
+        ]
+      },
+      "solution_steps": [
+        "3 g, c'est à peu près la masse de trois trombones : bien trop léger pour un cartable plein.",
+        "Un paquet de sucre pèse 1 kg. Un cartable plein est plus lourd qu'un paquet de sucre : il pèse à peu près comme 3 paquets de sucre.",
+        "L'unité qui manque est **kg** : le cartable pèse 3 kg."
+      ],
+      "hint": "Un cartable plein est-il plus léger ou plus lourd qu'un paquet de sucre de 1 kg ?",
+      "estimated_duration_s": 30,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 2, CE1, les masses : l'élève estime la masse d'un objet du quotidien en la comparant à des masses connues."
+    },
+    {
+      "id": "EX-P006-M-01",
+      "skill_id": "P006",
+      "level": "maitrise",
+      "type": "qcm",
+      "statement": "Range du plus léger au plus lourd :\n\n2 kg ; 600 g ; 1 kg et 500 g ; 1 000 g",
+      "image": null,
+      "choices": [
+        {
+          "key": "a",
+          "text": "2 kg ; 1 kg et 500 g ; 600 g ; 1 000 g",
+          "misconception": "L'élève range les nombres écrits sans regarder les unités : 2, puis 500, puis 600, puis 1 000."
+        },
+        {
+          "key": "b",
+          "text": "1 kg et 500 g ; 600 g ; 1 000 g ; 2 kg",
+          "misconception": "L'élève ne regarde que les grammes de « 1 kg et 500 g » : 500 g, c'est moins que 600 g. Il oublie le kilogramme : 1 kg et 500 g, c'est plus lourd que 1 000 g, qui fait juste 1 kg."
+        },
+        {
+          "key": "c",
+          "text": "600 g ; 1 000 g ; 1 kg et 500 g ; 2 kg",
+          "misconception": null
+        }
+      ],
+      "answer": {
+        "value": "c"
+      },
+      "solution_steps": [
+        "On se sert de 1 kg = 1 000 g pour savoir quelles masses font moins de 1 kg et lesquelles font plus.",
+        "600 g < 1 000 g : 600 g, c'est moins de 1 kg. C'est la plus légère.",
+        "1 000 g, c'est exactement 1 kg.",
+        "1 kg et 500 g, c'est plus que 1 kg, mais moins que 2 kg.",
+        "Du plus léger au plus lourd : 600 g ; 1 000 g ; 1 kg et 500 g ; 2 kg."
+      ],
+      "hint": "Cherche d'abord quelles masses font moins de 1 kg, et lesquelles font plus.",
+      "estimated_duration_s": 90,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 2, CE1, les masses : l'élève sait ordonner quatre masses exprimées en gramme ou en kilogramme."
+    },
+    {
+      "id": "EX-P006-M-02",
+      "skill_id": "P006",
+      "level": "maitrise",
+      "type": "vrai_faux",
+      "statement": "Léo dit : « 1 kg de plumes, c'est plus léger que 1 000 g de cailloux. »\n\nA-t-il raison ?",
+      "image": null,
+      "answer": {
+        "value": false
+      },
+      "solution_steps": [
+        "Léo pense aux plumes, légères, et aux cailloux, lourds. Mais ici, les masses sont données : on compare les masses, pas les objets.",
+        "1 kg = 1 000 g.",
+        "1 kg de plumes et 1 000 g de cailloux ont la même masse : sur une balance, les deux plateaux sont à la même hauteur.",
+        "Il y a bien plus de plumes que de cailloux, mais la masse est la même. Léo a **tort**."
+      ],
+      "hint": "Écris 1 kg en grammes. Que montrerait une balance ?",
+      "estimated_duration_s": 60,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 2, CE1, les masses : comparer des masses ; savoir que 1 kg est égal à 1 000 g."
+    },
+    {
+      "id": "EX-P008-D-01",
+      "skill_id": "P008",
+      "level": "decouverte",
+      "type": "numerique",
+      "statement": "Une heure dure 60 minutes. Léo lit pendant un quart d'heure.\n\nCombien de minutes lit-il ?",
+      "image": null,
+      "answer": {
+        "value": 15,
+        "unit": "min",
+        "accepted": [
+          "15 min",
+          "15 minutes"
+        ]
+      },
+      "solution_steps": [
+        "Un quart d'heure, c'est une heure partagée en 4 parts égales : on prend une de ces parts.",
+        "On partage d'abord l'heure en 2 : une demi-heure, c'est 30 minutes, car $30 + 30 = 60$.",
+        "On partage chaque demi-heure en 2 : $15 + 15 = 30$. L'heure est alors coupée en 4 parts de 15 minutes : $15 + 15 + 15 + 15 = 60$.",
+        "Un quart d'heure dure **15 minutes** : Léo lit 15 minutes. Deux quarts d'heure font une demi-heure."
+      ],
+      "hint": "Partage l'heure en 2 parts égales, puis chaque moitié en 2.",
+      "estimated_duration_s": 45,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 2, CE1 : l'élève connait les relations : 1 heure = 60 minutes ; 1 demi-heure = 30 minutes ; 1 quart d'heure = 15 minutes."
+    },
+    {
+      "id": "EX-P008-D-02",
+      "skill_id": "P008",
+      "level": "decouverte",
+      "type": "qcm",
+      "statement": "Le goûter est à 4 heures de l'après-midi.\n\nComment écrit-on cette heure avec les heures de 0 h à 23 h ?",
+      "image": null,
+      "choices": [
+        {
+          "key": "a",
+          "text": "4 h",
+          "misconception": "L'élève ne distingue pas le matin de l'après-midi. Or 4 h, c'est 4 heures du matin, en pleine nuit : le goûter n'a pas lieu à cette heure-là."
+        },
+        {
+          "key": "b",
+          "text": "15 h",
+          "misconception": "L'élève compte les heures à partir de midi en disant « 12, 13, 14, 15 » : il compte midi comme la première heure. Or 4 heures après midi, on compte 13, 14, 15, 16."
+        },
+        {
+          "key": "c",
+          "text": "16 h",
+          "misconception": null
+        }
+      ],
+      "answer": {
+        "value": "c"
+      },
+      "solution_steps": [
+        "L'après-midi commence à midi, c'est-à-dire à 12 h.",
+        "4 heures de l'après-midi, c'est 4 heures après midi : $12 + 4 = 16$.",
+        "On écrit **16 h**. Le matin, 4 heures s'écrit 4 h ; l'après-midi, on ajoute 12 au nombre d'heures."
+      ],
+      "hint": "L'après-midi commence à 12 h. Combien d'heures après midi est le goûter ?",
+      "estimated_duration_s": 45,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 2, CE1 : connaitre, utiliser et distinguer les heures du matin et celles de l'après-midi ; l'élève comprend et utilise les expressions « trois heures du matin », « trois heures de l'après-midi »."
+    },
+    {
+      "id": "EX-P008-E-01",
+      "skill_id": "P008",
+      "level": "entrainement",
+      "type": "numerique",
+      "statement": "Le cours de judo commence à 17 h 15 et finit à 18 h.\n\nCombien de minutes dure-t-il ?",
+      "image": null,
+      "answer": {
+        "value": 45,
+        "unit": "min",
+        "accepted": [
+          "45 min",
+          "45 minutes"
+        ]
+      },
+      "solution_steps": [
+        "On avance de 17 h 15 jusqu'à 18 h, de quart d'heure en quart d'heure.",
+        "De 17 h 15 à 17 h 30 : 15 minutes. De 17 h 30 à 17 h 45 : 15 minutes. De 17 h 45 à 18 h : 15 minutes.",
+        "Cela fait trois quarts d'heure : $15 + 15 + 15 = 45$. Le cours dure **45 minutes**.",
+        "Autre chemin : de 17 h à 18 h, il y a 60 minutes. Le cours commence 15 minutes après 17 h, donc il dure $60 - 15 = 45$ minutes."
+      ],
+      "hint": "Avance de quart d'heure en quart d'heure, de 17 h 15 jusqu'à 18 h.",
+      "estimated_duration_s": 60,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 2, CE1 : comparer et mesurer des durées écoulées entre deux instants affichés sur une horloge (pour des intervalles de temps situés dans une même journée, avec des heures données en heures entières, en heures et demi-heure ou en heures et quarts d'heure)."
+    },
+    {
+      "id": "EX-P008-E-02",
+      "skill_id": "P008",
+      "level": "entrainement",
+      "type": "vrai_faux",
+      "statement": "Tom dit : « 1 h 10 min, c'est plus long que 80 min. »\n\nA-t-il raison ?",
+      "image": null,
+      "answer": {
+        "value": false
+      },
+      "solution_steps": [
+        "Pour comparer deux durées, on les écrit dans la même unité : ici, en minutes.",
+        "1 h, c'est 60 minutes, et non 100 minutes. Donc 1 h 10 min, c'est $60 + 10 = 70$ minutes.",
+        "70 minutes, c'est moins long que 80 minutes : Tom a **tort**.",
+        "Erreur à éviter : croire qu'une heure fait 100 minutes. On trouverait 110 minutes et on donnerait raison à Tom."
+      ],
+      "hint": "Combien de minutes y a-t-il dans 1 h ?",
+      "estimated_duration_s": 45,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 2, CE1 : l'élève sait comparer des durées comme 2 heures et 130 minutes."
+    },
+    {
+      "id": "EX-P008-M-01",
+      "skill_id": "P008",
+      "level": "maitrise",
+      "type": "texte",
+      "statement": "Sami lit une demi-heure, puis joue du piano trois quarts d'heure.\n\nCombien de temps en tout, en heures et minutes ?",
+      "image": null,
+      "answer": {
+        "value": "1 h 15 min",
+        "accepted": [
+          "1 h 15",
+          "1 h 15 minutes",
+          "1 heure 15 minutes",
+          "1 heure et 15 minutes",
+          "1 h et 15 min"
+        ]
+      },
+      "solution_steps": [
+        "Une demi-heure, c'est 30 minutes.",
+        "Trois quarts d'heure, c'est un quart d'heure plus un quart d'heure plus un quart d'heure : $15 + 15 + 15 = 45$ minutes.",
+        "En tout : $30 + 45 = 75$ minutes.",
+        "Dès qu'on a 60 minutes, on a une heure : dans 75 minutes, il y a une heure (60 minutes) et il reste $75 - 60 = 15$ minutes.",
+        "Sami a passé **1 h 15 min** à lire et à jouer du piano."
+      ],
+      "hint": "Écris chaque durée en minutes, ajoute-les, puis cherche l'heure entière cachée dans le total.",
+      "estimated_duration_s": 90,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 2, CE1 : l'élève sait ajouter ou soustraire des durées. Il sait aussi que trois quarts d'heure c'est un quart d'heure plus un quart d'heure plus un quart d'heure, c'est-à-dire trois fois un quart d'heure."
+    },
+    {
+      "id": "EX-P008-M-02",
+      "skill_id": "P008",
+      "level": "maitrise",
+      "type": "qcm",
+      "statement": "La sortie au zoo part à 10 heures du matin et revient à 2 heures de l'après-midi.\n\nCombien de temps dure-t-elle ?",
+      "image": null,
+      "choices": [
+        {
+          "key": "a",
+          "text": "4 heures",
+          "misconception": null
+        },
+        {
+          "key": "b",
+          "text": "8 heures",
+          "misconception": "L'élève calcule $10 - 2 = 8$ : il n'écrit pas 2 heures de l'après-midi sous la forme 14 h, et il enlève le plus petit nombre au plus grand."
+        },
+        {
+          "key": "c",
+          "text": "5 heures",
+          "misconception": "L'élève compte les heures 10, 11, 12, 13, 14 : cela fait 5 nombres, mais seulement 4 heures entre eux (de 10 à 11, de 11 à 12, de 12 à 13, de 13 à 14)."
+        }
+      ],
+      "answer": {
+        "value": "a"
+      },
+      "solution_steps": [
+        "2 heures de l'après-midi, c'est 2 heures après midi : $12 + 2 = 14$, soit 14 h.",
+        "De 10 h à 12 h (midi) : 2 heures. De 12 h à 14 h : 2 heures.",
+        "En tout : $2 + 2 = 4$. La sortie dure **4 heures**."
+      ],
+      "hint": "Écris d'abord 2 heures de l'après-midi avec les heures de 0 h à 23 h.",
+      "estimated_duration_s": 75,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 2, CE1 : connaitre, utiliser et distinguer les heures du matin et celles de l'après-midi ; l'élève sait dire que 8 heures est la durée qui s'écoule entre midi et 20 h."
+    },
+    {
+      "id": "EX-P009-D-01",
+      "skill_id": "P009",
+      "level": "decouverte",
+      "type": "numerique",
+      "statement": "Une gomme mesure 5 cm de long. On sait que 1 cm = 10 mm.\n\nQuelle est la longueur de la gomme, en millimètres ?",
+      "image": null,
+      "answer": {
+        "value": 50,
+        "unit": "mm",
+        "accepted": [
+          "50 mm"
+        ]
+      },
+      "solution_steps": [
+        "1 cm = 10 mm : dans chaque centimètre, il y a 10 millimètres.",
+        "La gomme mesure 5 cm, donc 5 fois 10 mm : $5 \\times 10 = 50$.",
+        "La gomme mesure **50 mm**. Le nombre est plus grand qu'en centimètres, car le millimètre est une unité plus petite : il en faut plus pour la même longueur."
+      ],
+      "hint": "Combien de millimètres y a-t-il dans 1 cm ?",
+      "estimated_duration_s": 45,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 2, CE2, les longueurs : « L'élève sait que 1 cm = 10 mm et 1 m = 1 000 mm. »"
+    },
+    {
+      "id": "EX-P009-D-02",
+      "skill_id": "P009",
+      "level": "decouverte",
+      "type": "qcm",
+      "statement": "Un crayon mesure 1 dm et 6 cm. On sait que 1 dm = 10 cm.\n\nCombien mesure le crayon, en centimètres ?",
+      "image": null,
+      "choices": [
+        {
+          "key": "a",
+          "text": "7 cm",
+          "misconception": "L'élève additionne 1 et 6 sans convertir : il met ensemble des décimètres et des centimètres comme si c'était la même unité. Or 1 dm vaut 10 cm, pas 1 cm."
+        },
+        {
+          "key": "b",
+          "text": "106 cm",
+          "misconception": "L'élève confond le décimètre et le mètre : il utilise 1 m = 100 cm au lieu de 1 dm = 10 cm. 106 cm, c'est plus d'un mètre, bien trop long pour un crayon."
+        },
+        {
+          "key": "c",
+          "text": "16 cm",
+          "misconception": null
+        }
+      ],
+      "answer": {
+        "value": "c"
+      },
+      "solution_steps": [
+        "1 dm = 10 cm.",
+        "Le crayon mesure 1 dm et 6 cm, donc 10 cm et 6 cm : $10 + 6 = 16$.",
+        "Le crayon mesure **16 cm**, une longueur vraisemblable pour un crayon."
+      ],
+      "hint": "Remplace 1 dm par des centimètres, puis ajoute les 6 cm.",
+      "estimated_duration_s": 45,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 2, CE2, les longueurs : « Connaitre et utiliser les unités mètre, décimètre, centimètre, millimètre, kilomètre et les symboles associés (m, dm, cm, mm, km). »"
+    },
+    {
+      "id": "EX-P009-E-01",
+      "skill_id": "P009",
+      "level": "entrainement",
+      "type": "numerique",
+      "statement": "Une étagère mesure 9 dm de long.\n\nQuelle est sa longueur, en millimètres ?",
+      "image": null,
+      "answer": {
+        "value": 900,
+        "unit": "mm",
+        "accepted": [
+          "900 mm"
+        ]
+      },
+      "solution_steps": [
+        "On ne passe pas directement du décimètre au millimètre : on passe par le centimètre.",
+        "1 dm = 10 cm, donc 9 dm = 90 cm, car $9 \\times 10 = 90$.",
+        "1 cm = 10 mm, donc 90 cm = 900 mm, car $90 \\times 10 = 900$.",
+        "L'étagère mesure **900 mm**. Écrire 90 mm serait faux : on aurait multiplié par 10 une seule fois, alors qu'on change deux fois d'unité, du décimètre au centimètre, puis du centimètre au millimètre.",
+        "Vérification : 1 m = 1 000 mm, et l'étagère mesure un peu moins d'un mètre, car 10 dm font 1 m."
+      ],
+      "hint": "Passe par les centimètres : 1 dm = 10 cm et 1 cm = 10 mm.",
+      "estimated_duration_s": 60,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 2, CE2, les longueurs : « Connaitre les relations entre les unités de longueur. »"
+    },
+    {
+      "id": "EX-P009-E-02",
+      "skill_id": "P009",
+      "level": "entrainement",
+      "type": "vrai_faux",
+      "statement": "Une barque mesure 6 m. Jade dit : « Elle mesure donc 60 mm : pour convertir, on ajoute un zéro. »\n\nJade a-t-elle raison ?",
+      "image": null,
+      "answer": {
+        "value": false
+      },
+      "solution_steps": [
+        "1 m = 1 000 mm : dans un mètre, il y a mille millimètres.",
+        "6 m, c'est donc 6 fois 1 000 mm : $6 \\times 1\\,000 = 6\\,000$. La barque mesure 6 000 mm.",
+        "Ajouter un zéro, c'est multiplier par 10. Cela ne marche que si l'on passe à une unité 10 fois plus petite, comme du centimètre au millimètre. Du mètre au millimètre, l'unité est 1 000 fois plus petite.",
+        "60 mm, c'est 6 cm : la longueur d'un petit doigt, pas d'une barque. Jade a **tort**, c'est faux."
+      ],
+      "hint": "Combien de millimètres y a-t-il dans 1 m ?",
+      "estimated_duration_s": 60,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 2, CE2, les longueurs : « L'élève sait que 1 cm = 10 mm et 1 m = 1 000 mm. »"
+    },
+    {
+      "id": "EX-P009-M-01",
+      "skill_id": "P009",
+      "level": "maitrise",
+      "type": "numerique",
+      "statement": "Un escargot doit parcourir 1 m pour atteindre une salade. Il a déjà parcouru 6 dm et 7 cm.\n\nQuelle distance lui reste-t-il, en millimètres ?",
+      "image": null,
+      "answer": {
+        "value": 330,
+        "unit": "mm",
+        "accepted": [
+          "330 mm"
+        ]
+      },
+      "solution_steps": [
+        "Les longueurs ne sont pas dans la même unité : avant de calculer, on les écrit toutes en millimètres.",
+        "1 m = 1 000 mm.",
+        "1 dm = 100 mm, donc 6 dm = 600 mm, car $6 \\times 100 = 600$. 1 cm = 10 mm, donc 7 cm = 70 mm.",
+        "L'escargot a déjà parcouru 600 mm + 70 mm = 670 mm.",
+        "Il reste $1\\,000 - 670 = 330$ : l'escargot doit encore parcourir **330 mm**.",
+        "Vérification : $670 + 330 = 1\\,000$, on retrouve bien 1 m. Calculer avec les nombres écrits, sans convertir, n'aurait pas de sens : 6 et 7 ne sont pas des mètres."
+      ],
+      "hint": "Écris 1 m et la distance déjà parcourue en millimètres, puis cherche ce qui manque.",
+      "estimated_duration_s": 100,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 2, CE2, les longueurs : « L'élève sait effectuer des conversions (cm-mm ; m-dm-cm et km-m), notamment pour pouvoir effectuer des calculs avec des longueurs qui ne sont pas données dans la même unité »"
+    },
+    {
+      "id": "EX-P009-M-02",
+      "skill_id": "P009",
+      "level": "maitrise",
+      "type": "qcm",
+      "statement": "Un tapis de gym mesure 185 cm de long.\n\nQuelle écriture donne la même longueur ?",
+      "image": null,
+      "choices": [
+        {
+          "key": "a",
+          "text": "1 m, 8 dm et 5 cm",
+          "misconception": null
+        },
+        {
+          "key": "b",
+          "text": "18 m et 5 cm",
+          "misconception": "L'élève croit que 1 m = 10 cm : il fait 18 paquets de 10 cm et les appelle des mètres. 18 m, c'est la longueur d'un grand bus, pas d'un tapis."
+        },
+        {
+          "key": "c",
+          "text": "1 m et 85 dm",
+          "misconception": "L'élève prend bien 1 m dans 100 cm, mais il garde le nombre 85 en changeant d'unité : 85 dm, c'est 850 cm, bien plus que les 85 cm qui restent."
+        },
+        {
+          "key": "d",
+          "text": "185 dm",
+          "misconception": "L'élève change l'unité sans changer le nombre : 185 dm, c'est une longueur 10 fois plus grande que 185 cm, plus de 18 m."
+        }
+      ],
+      "answer": {
+        "value": "a"
+      },
+      "solution_steps": [
+        "On décompose : 185 cm = 100 cm + 80 cm + 5 cm.",
+        "1 m = 100 cm, donc 100 cm = 1 m.",
+        "1 dm = 10 cm, donc 80 cm = 8 dm, car $8 \\times 10 = 80$.",
+        "Il reste 5 cm. Donc 185 cm = **1 m, 8 dm et 5 cm**."
+      ],
+      "hint": "Décompose 185 cm en centaines, dizaines et unités de centimètres.",
+      "estimated_duration_s": 90,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 2, CE2, les longueurs : « Connaitre les relations entre les unités de longueur. »"
+    },
+    {
+      "id": "EX-P010-D-01",
+      "skill_id": "P010",
+      "level": "decouverte",
+      "type": "numerique",
+      "statement": "Les côtés d'un jardin triangulaire mesurent 12 m ; 15 m et 8 m.\n\nLéa fait le tour complet du jardin. Quelle distance parcourt-elle ?",
+      "image": null,
+      "answer": {
+        "value": 35,
+        "unit": "m",
+        "accepted": [
+          "35 m",
+          "35m"
+        ]
+      },
+      "solution_steps": [
+        "Faire le tour complet du jardin, c'est suivre tout son contour : Léa longe les 3 côtés, chacun d'un bout à l'autre.",
+        "On ajoute les longueurs des 3 côtés : 12 + 15 + 8 = 35.",
+        "Léa parcourt **35 m**. La longueur du contour s'appelle le **périmètre** : le périmètre du jardin est 35 m."
+      ],
+      "hint": "Le tour du jardin passe par chacun de ses côtés.",
+      "estimated_duration_s": 60,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 2, CE2 : savoir ce qu'est le périmètre d'une figure plane ; l'élève sait que le périmètre d'une figure plane est la longueur de son contour."
+    },
+    {
+      "id": "EX-P010-D-02",
+      "skill_id": "P010",
+      "level": "decouverte",
+      "type": "qcm",
+      "statement": "Une étiquette rectangulaire mesure 11 cm de long et 6 cm de large.\n\nQuel calcul donne son périmètre, la longueur de son contour ?",
+      "image": null,
+      "choices": [
+        {
+          "key": "a",
+          "text": "11 + 6",
+          "misconception": "L'élève n'additionne que les deux longueurs écrites dans l'énoncé : il oublie qu'un rectangle a 4 côtés, deux longueurs et deux largeurs."
+        },
+        {
+          "key": "b",
+          "text": "11 + 6 + 11",
+          "misconception": "L'élève oublie un côté : il ne compte qu'une largeur."
+        },
+        {
+          "key": "c",
+          "text": "11 + 6 + 11 + 6",
+          "misconception": null
+        },
+        {
+          "key": "d",
+          "text": "11 + 6 + 11 + 6 + 11",
+          "misconception": "L'élève repasse sur la première longueur en fermant le tour : il compte ce côté à deux reprises."
+        }
+      ],
+      "answer": {
+        "value": "c"
+      },
+      "solution_steps": [
+        "Un rectangle a 4 côtés : 2 longueurs de 11 cm et 2 largeurs de 6 cm. Les côtés opposés ont la même longueur : pas besoin de mesurer les 4 côtés, la longueur et la largeur suffisent.",
+        "Le contour passe par les 4 côtés, sans en sauter aucun et sans repasser sur un côté déjà compté : 11 + 6 + 11 + 6.",
+        "11 + 6 + 11 + 6 = 34 : le périmètre de l'étiquette est 34 cm. La bonne réponse est **c**."
+      ],
+      "hint": "Combien un rectangle a-t-il de côtés ? Lesquels ont la même longueur ?",
+      "estimated_duration_s": 45,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 2, CE2 : dans le cas du carré et du rectangle, aucune formule n'est enseignée, mais l'élève sait qu'il n'est pas nécessaire de mesurer la longueur de chacun des côtés."
+    },
+    {
+      "id": "EX-P010-E-01",
+      "skill_id": "P010",
+      "level": "entrainement",
+      "type": "numerique",
+      "statement": "Un champ a quatre côtés, de 135 m ; 98 m ; 142 m et 87 m.\n\nQuelle longueur de clôture faut-il pour l'entourer complètement ?",
+      "image": null,
+      "answer": {
+        "value": 462,
+        "unit": "m",
+        "accepted": [
+          "462 m",
+          "462m"
+        ]
+      },
+      "solution_steps": [
+        "La clôture fait tout le tour du champ : sa longueur est le périmètre du champ, la somme des longueurs des 4 côtés.",
+        "On pose les additions, unités sous les unités : 135 + 98 = 233, puis 233 + 142 = 375, puis 375 + 87 = 462.",
+        "Vérification avec un autre regroupement : 135 + 87 = 222 et 98 + 142 = 240, puis 222 + 240 = 462.",
+        "Il faut **462 m** de clôture."
+      ],
+      "hint": "La clôture longe combien de côtés ?",
+      "estimated_duration_s": 120,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 2, CE2 : l'élève sait que le périmètre d'une figure plane est la longueur de son contour."
+    },
+    {
+      "id": "EX-P010-E-02",
+      "skill_id": "P010",
+      "level": "entrainement",
+      "type": "vrai_faux",
+      "statement": "Un carré a des côtés de 13 cm.\n\nTom affirme : « Le périmètre de ce carré est 39 cm. »",
+      "image": null,
+      "answer": {
+        "value": false
+      },
+      "solution_steps": [
+        "Un carré a 4 côtés, tous de la même longueur. Connaître un côté suffit : les 4 côtés mesurent 13 cm.",
+        "Le contour passe par les 4 côtés : 13 + 13 + 13 + 13 = 52. Le périmètre est 52 cm.",
+        "Tom a calculé 13 + 13 + 13 = 39 : il n'a compté que 3 côtés, il en a oublié un. L'affirmation est **fausse**."
+      ],
+      "hint": "Combien de côtés a un carré ?",
+      "estimated_duration_s": 60,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 2, CE2 : dans le cas du carré et du rectangle, aucune formule n'est enseignée, mais l'élève sait qu'il n'est pas nécessaire de mesurer la longueur de chacun des côtés."
+    },
+    {
+      "id": "EX-P010-M-01",
+      "skill_id": "P010",
+      "level": "maitrise",
+      "type": "qcm",
+      "statement": "Deux carreaux carrés de 15 cm de côté, posés côte à côte, forment un rectangle de 30 cm de long et 15 cm de large.\n\nQuel est son périmètre ?",
+      "image": null,
+      "choices": [
+        {
+          "key": "a",
+          "text": "120 cm",
+          "misconception": "L'élève ajoute les périmètres des deux carreaux (60 cm + 60 cm) : le côté où les carreaux se touchent entre dans le contour de chaque carreau, alors qu'il est à l'intérieur du rectangle."
+        },
+        {
+          "key": "b",
+          "text": "90 cm",
+          "misconception": null
+        },
+        {
+          "key": "c",
+          "text": "60 cm",
+          "misconception": "L'élève donne le périmètre d'un seul carreau (15 + 15 + 15 + 15 = 60) au lieu de celui du rectangle."
+        },
+        {
+          "key": "d",
+          "text": "105 cm",
+          "misconception": "L'élève fait bien le tour du rectangle (90 cm), puis ajoute le côté du milieu (15 cm), qui ne fait pas partie du contour."
+        }
+      ],
+      "answer": {
+        "value": "b"
+      },
+      "solution_steps": [
+        "Le périmètre est la longueur du contour, le bord extérieur du rectangle. Le rectangle a 2 longueurs de 30 cm (15 + 15 = 30) et 2 largeurs de 15 cm.",
+        "30 + 15 + 30 + 15 = 90 : le périmètre du rectangle est **90 cm**.",
+        "Le côté où les deux carreaux se touchent est à l'intérieur du rectangle : il ne fait pas partie du contour. C'est pourquoi on ne trouve pas 60 + 60 = 120, la somme des périmètres des deux carreaux."
+      ],
+      "hint": "Suis en pensée le bord extérieur du rectangle. Le côté du milieu en fait-il partie ?",
+      "estimated_duration_s": 90,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 2, CE2 : l'élève sait que le périmètre d'une figure plane est la longueur de son contour."
+    },
+    {
+      "id": "EX-P010-M-02",
+      "skill_id": "P010",
+      "level": "maitrise",
+      "type": "numerique",
+      "statement": "Une table de jeu a la forme d'un polygone à 6 côtés, tous de 45 cm.\n\nQuel est le périmètre de la table ?",
+      "image": null,
+      "answer": {
+        "value": 270,
+        "unit": "cm",
+        "accepted": [
+          "270 cm",
+          "270cm"
+        ]
+      },
+      "solution_steps": [
+        "Le périmètre est la longueur du contour : on ajoute les longueurs des 6 côtés.",
+        "Les 6 côtés ont la même longueur : connaître un côté suffit, comme pour le carré. Le contour mesure 45 + 45 + 45 + 45 + 45 + 45.",
+        "On regroupe les côtés par deux : 45 + 45 = 90. Il y a 3 paires : 90 + 90 + 90 = 270.",
+        "Le périmètre de la table est **270 cm**, soit 2 m et 70 cm. Piège : 45 + 45 + 45 + 45 = 180 ne compte que 4 côtés, comme pour un carré, alors que la table en a 6."
+      ],
+      "hint": "Combien de côtés faut-il ajouter ? Ont-ils tous la même longueur ?",
+      "estimated_duration_s": 90,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 2, CE2 : l'élève sait que le périmètre d'une figure plane est la longueur de son contour."
+    },
+    {
+      "id": "EX-P011-D-01",
+      "skill_id": "P011",
+      "level": "decouverte",
+      "type": "numerique",
+      "statement": "Un sac de pommes de terre pèse 5 kg. On sait que 1 kg = 1 000 g.\n\nCombien pèse le sac, en grammes ?",
+      "image": null,
+      "answer": {
+        "value": 5000,
+        "unit": "g",
+        "accepted": [
+          "5 000",
+          "5 000 g",
+          "5000 g"
+        ]
+      },
+      "solution_steps": [
+        "1 kg = 1 000 g : dans un kilogramme, il y a mille grammes.",
+        "5 kg, c'est 5 fois 1 000 g : $5 \\times 1\\,000 = 5\\,000$.",
+        "Le sac pèse **5 000 g**. 5 kg et 5 000 g sont la même masse : on a changé d'unité, pas de sac."
+      ],
+      "hint": "Combien de grammes y a-t-il dans 1 kg ?",
+      "estimated_duration_s": 45,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 2, CE2, les masses : « L'élève sait convertir entre les unités gramme et kilogramme »"
+    },
+    {
+      "id": "EX-P011-D-02",
+      "skill_id": "P011",
+      "level": "decouverte",
+      "type": "qcm",
+      "statement": "Un éléphant pèse 6 t. On sait que 1 t = 1 000 kg.\n\nCombien pèse-t-il, en kilogrammes ?",
+      "image": null,
+      "choices": [
+        {
+          "key": "a",
+          "text": "60 kg",
+          "misconception": "L'élève ajoute un zéro quel que soit l'écart entre les unités : il multiplie par 10 au lieu de 1 000. 60 kg, c'est la masse d'un adulte, pas d'un éléphant."
+        },
+        {
+          "key": "b",
+          "text": "6 000 kg",
+          "misconception": null
+        },
+        {
+          "key": "c",
+          "text": "600 kg",
+          "misconception": "L'élève pense que 1 t = 100 kg, comme 1 m = 100 cm. Or il faut 1 000 kg pour faire une tonne."
+        },
+        {
+          "key": "d",
+          "text": "6 000 g",
+          "misconception": "L'élève multiplie bien par 1 000, mais il convertit comme si l'éléphant pesait 6 kg : il confond la tonne et le kilogramme. 6 000 g, c'est seulement 6 kg."
+        }
+      ],
+      "answer": {
+        "value": "b"
+      },
+      "solution_steps": [
+        "1 t = 1 000 kg.",
+        "6 t, c'est 6 fois 1 000 kg : $6 \\times 1\\,000 = 6\\,000$.",
+        "L'éléphant pèse **6 000 kg**. La tonne sert à exprimer de très grandes masses : un camion, un éléphant."
+      ],
+      "hint": "Combien de kilogrammes y a-t-il dans 1 t ?",
+      "estimated_duration_s": 45,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 2, CE2, les masses : « Connaitre et utiliser les unités gramme, kilogramme et tonne et les symboles associés (g, kg, t). »"
+    },
+    {
+      "id": "EX-P011-E-01",
+      "skill_id": "P011",
+      "level": "entrainement",
+      "type": "numerique",
+      "statement": "Une citrouille pèse 7 kg et 60 g.\n\nQuelle est sa masse, en grammes ?",
+      "image": null,
+      "answer": {
+        "value": 7060,
+        "unit": "g",
+        "accepted": [
+          "7 060",
+          "7 060 g",
+          "7060 g"
+        ]
+      },
+      "solution_steps": [
+        "1 kg = 1 000 g, donc 7 kg = 7 000 g, car $7 \\times 1\\,000 = 7\\,000$.",
+        "La citrouille pèse 7 000 g et 60 g : $7\\,000 + 60 = 7\\,060$.",
+        "Elle pèse **7 060 g**. Attention au zéro : 60 g, c'est 0 centaine, 6 dizaines et 0 unité de grammes.",
+        "760 g serait faux, c'est moins d'un kilogramme. 7 600 g serait faux aussi, c'est 7 kg et 600 g."
+      ],
+      "hint": "Écris d'abord 7 kg en grammes, puis ajoute les 60 g.",
+      "estimated_duration_s": 60,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 2, CE2, les masses : « Connaitre les relations entre les unités de masse usuelles. »"
+    },
+    {
+      "id": "EX-P011-E-02",
+      "skill_id": "P011",
+      "level": "entrainement",
+      "type": "vrai_faux",
+      "statement": "Tom dit : « Une camionnette de 2 t est plus légère qu'une caravane de 1 500 kg, car 2 est plus petit que 1 500. »\n\nTom a-t-il raison ?",
+      "image": null,
+      "answer": {
+        "value": false
+      },
+      "solution_steps": [
+        "On ne peut comparer deux masses que si elles sont écrites dans la même unité.",
+        "1 t = 1 000 kg, donc la camionnette pèse 2 t = 2 000 kg, car $2 \\times 1\\,000 = 2\\,000$.",
+        "On compare 2 000 kg et 1 500 kg : 2 000 > 1 500. C'est la camionnette la plus lourde.",
+        "Tom a comparé les nombres 2 et 1 500 sans regarder les unités. Il a **tort**, c'est faux."
+      ],
+      "hint": "Écris d'abord la masse de la camionnette en kilogrammes.",
+      "estimated_duration_s": 60,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 2, CE2, les masses : « Comparer des masses. »"
+    },
+    {
+      "id": "EX-P011-M-01",
+      "skill_id": "P011",
+      "level": "maitrise",
+      "type": "numerique",
+      "statement": "Une remorque transporte trois charges : 1 t ; 450 kg ; 320 kg.\n\nQuelle masse transporte-t-elle en tout, en kilogrammes ?",
+      "image": null,
+      "answer": {
+        "value": 1770,
+        "unit": "kg",
+        "accepted": [
+          "1 770",
+          "1 770 kg",
+          "1770 kg"
+        ]
+      },
+      "solution_steps": [
+        "Les masses ne sont pas toutes dans la même unité : on écrit 1 t en kilogrammes, 1 t = 1 000 kg.",
+        "On additionne les trois masses en kilogrammes : $1\\,000 + 450 + 320 = 1\\,770$.",
+        "La remorque transporte **1 770 kg**.",
+        "Calculer $1 + 450 + 320 = 771$ serait faux : le 1 compte des tonnes, pas des kilogrammes."
+      ],
+      "hint": "Écris toutes les masses en kilogrammes avant d'additionner.",
+      "estimated_duration_s": 75,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 2, CE2, les masses : « Connaitre les relations entre les unités de masse usuelles. »"
+    },
+    {
+      "id": "EX-P011-M-02",
+      "skill_id": "P011",
+      "level": "maitrise",
+      "type": "qcm",
+      "statement": "Trois paquets pèsent : 1 kg et 90 g ; 950 g ; 1 kg et 9 g.\n\nQuel rangement, du plus léger au plus lourd, est juste ?",
+      "image": null,
+      "choices": [
+        {
+          "key": "a",
+          "text": "1 kg et 9 g < 1 kg et 90 g < 950 g",
+          "misconception": "L'élève compare seulement les nombres de grammes écrits (9, 90 et 950) et oublie les kilogrammes. Or 950 g, c'est moins de 1 kg, donc moins que les deux autres paquets."
+        },
+        {
+          "key": "b",
+          "text": "950 g < 1 kg et 90 g < 1 kg et 9 g",
+          "misconception": "L'élève lit 1 kg et 9 g comme 1 900 g : il place le 9 au rang des centaines de grammes. Or 9 g, ce sont 9 unités : 1 kg et 9 g = 1 009 g, moins que 1 kg et 90 g = 1 090 g."
+        },
+        {
+          "key": "c",
+          "text": "950 g < 1 kg et 9 g < 1 kg et 90 g",
+          "misconception": null
+        }
+      ],
+      "answer": {
+        "value": "c"
+      },
+      "solution_steps": [
+        "Pour comparer, on écrit les trois masses en grammes, avec 1 kg = 1 000 g.",
+        "1 kg et 90 g = 1 000 g + 90 g = 1 090 g. 1 kg et 9 g = 1 000 g + 9 g = 1 009 g.",
+        "On range les nombres de grammes : 950 < 1 009 < 1 090.",
+        "Du plus léger au plus lourd : **950 g < 1 kg et 9 g < 1 kg et 90 g**."
+      ],
+      "hint": "Écris les trois masses en grammes avant de les ranger.",
+      "estimated_duration_s": 90,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 2, CE2, les masses : « Comparer des masses. »"
+    },
+    {
+      "id": "EX-P012-D-01",
+      "skill_id": "P012",
+      "level": "decouverte",
+      "type": "numerique",
+      "statement": "Un seau contient 8 L d'eau. On sait que 1 L = 10 dL.\n\nCombien de décilitres d'eau contient-il ?",
+      "image": null,
+      "answer": {
+        "value": 80,
+        "unit": "dL",
+        "accepted": [
+          "80 dL"
+        ]
+      },
+      "solution_steps": [
+        "1 L = 10 dL : dans un litre, il y a 10 décilitres.",
+        "8 L, c'est 8 fois 10 dL : $8 \\times 10 = 80$.",
+        "Le seau contient **80 dL**. Le décilitre est plus petit que le litre : il en faut plus pour la même quantité d'eau."
+      ],
+      "hint": "Combien de décilitres y a-t-il dans 1 L ?",
+      "estimated_duration_s": 45,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 2, CE2, les contenances : « Savoir que 1 L est égal à 10 dL et également à 100 cL. »"
+    },
+    {
+      "id": "EX-P012-D-02",
+      "skill_id": "P012",
+      "level": "decouverte",
+      "type": "qcm",
+      "statement": "Une bouteille de jus contient 2 L. On sait que 1 L = 100 cL.\n\nCombien de centilitres de jus contient-elle ?",
+      "image": null,
+      "choices": [
+        {
+          "key": "a",
+          "text": "200 cL",
+          "misconception": null
+        },
+        {
+          "key": "b",
+          "text": "20 cL",
+          "misconception": "L'élève ajoute un seul zéro, comme si 1 L valait 10 cL. 20 cL, c'est le contenu d'un verre, pas d'une grande bouteille."
+        },
+        {
+          "key": "c",
+          "text": "2 000 cL",
+          "misconception": "L'élève utilise 1 000, comme pour 1 kg = 1 000 g. Mais pour les contenances, 1 L = 100 cL."
+        }
+      ],
+      "answer": {
+        "value": "a"
+      },
+      "solution_steps": [
+        "1 L = 100 cL.",
+        "2 L, c'est 2 fois 100 cL : $2 \\times 100 = 200$.",
+        "La bouteille contient **200 cL**. Un verre contient environ 20 cL : la bouteille remplit environ 10 verres, car $10 \\times 20 = 200$."
+      ],
+      "hint": "Combien de centilitres y a-t-il dans 1 L ?",
+      "estimated_duration_s": 45,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 2, CE2, les contenances : « L'élève sait effectuer des conversions en utilisant les unités litre, décilitre et centilitre »"
+    },
+    {
+      "id": "EX-P012-E-01",
+      "skill_id": "P012",
+      "level": "entrainement",
+      "type": "numerique",
+      "statement": "Un bol de soupe contient 30 cL.\n\nQuelle est sa contenance, en décilitres ?",
+      "image": null,
+      "answer": {
+        "value": 3,
+        "unit": "dL",
+        "accepted": [
+          "3 dL"
+        ]
+      },
+      "solution_steps": [
+        "On sait que 1 L = 10 dL et que 1 L = 100 cL : 10 dL et 100 cL, c'est la même quantité.",
+        "Partager 1 L en 10 décilitres, c'est partager 100 cL en 10 parts égales de 10 cL : 1 dL = 10 cL, car $10 \\times 10 = 100$.",
+        "30 cL, ce sont 3 fois 10 cL, car $3 \\times 10 = 30$. Donc 30 cL = 3 dL.",
+        "Le bol contient **3 dL**. Le nombre est plus petit qu'en centilitres, car le décilitre est une unité plus grande."
+      ],
+      "hint": "Combien de centilitres y a-t-il dans 1 dL ?",
+      "estimated_duration_s": 60,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 2, CE2, les contenances : « L'élève sait effectuer des conversions en utilisant les unités litre, décilitre et centilitre »"
+    },
+    {
+      "id": "EX-P012-E-02",
+      "skill_id": "P012",
+      "level": "entrainement",
+      "type": "qcm",
+      "statement": "Lina remplit d'eau un arrosoir de jardin.\n\nQuelle est sa contenance la plus vraisemblable ?",
+      "image": null,
+      "choices": [
+        {
+          "key": "a",
+          "text": "10 cL",
+          "misconception": "L'élève choisit une unité bien trop petite : 10 cL, c'est la moitié d'un verre."
+        },
+        {
+          "key": "b",
+          "text": "10 kg",
+          "misconception": "L'élève confond masse et contenance : le kilogramme mesure ce que pèse un objet, pas ce qu'un récipient peut contenir."
+        },
+        {
+          "key": "c",
+          "text": "10 dL",
+          "misconception": "L'élève confond le décilitre et le litre : 10 dL, c'est seulement 1 L, le contenu d'une bouteille d'eau, bien trop peu pour un arrosoir."
+        },
+        {
+          "key": "d",
+          "text": "10 L",
+          "misconception": null
+        }
+      ],
+      "answer": {
+        "value": "d"
+      },
+      "solution_steps": [
+        "Un verre contient environ 20 cL, et une bouteille d'eau contient souvent 1 L, soit 100 cL.",
+        "Un arrosoir de jardin contient bien plus qu'une bouteille : on exprime sa contenance en litres.",
+        "Sa contenance vraisemblable est **10 L** : de quoi remplir environ 10 bouteilles d'un litre.",
+        "Le kilogramme ne convient pas : c'est une unité de masse, pas de contenance."
+      ],
+      "hint": "Combien de bouteilles d'un litre faudrait-il pour remplir un arrosoir ?",
+      "estimated_duration_s": 45,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 2, CE2, les contenances : « L'élève sait estimer la contenance d'un récipient de la vie courante : verre, bouteille, arrosoir. »"
+    },
+    {
+      "id": "EX-P012-M-01",
+      "skill_id": "P012",
+      "level": "maitrise",
+      "type": "numerique",
+      "statement": "Une bouteille contient 1 L de lait. Pour une recette, Malo en verse 3 dL et 5 cL.\n\nQuelle quantité de lait reste-t-il dans la bouteille, en centilitres ?",
+      "image": null,
+      "answer": {
+        "value": 65,
+        "unit": "cL",
+        "accepted": [
+          "65 cL"
+        ]
+      },
+      "solution_steps": [
+        "Les quantités ne sont pas dans la même unité : on les écrit toutes en centilitres.",
+        "1 L = 100 cL.",
+        "1 dL = 10 cL, donc 3 dL = 30 cL, car $3 \\times 10 = 30$. Malo verse 30 cL + 5 cL = 35 cL.",
+        "Il reste $100 - 35 = 65$ : il reste **65 cL** de lait dans la bouteille.",
+        "Vérification : $35 + 65 = 100$, on retrouve bien 1 L. Calculer $100 - 3 - 5 = 92$ serait faux : les 3 sont des décilitres, pas des centilitres."
+      ],
+      "hint": "Écris 1 L et la quantité versée en centilitres, puis cherche ce qui reste.",
+      "estimated_duration_s": 90,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 2, CE2, les contenances : « L'élève sait effectuer des conversions en utilisant les unités litre, décilitre et centilitre »"
+    },
+    {
+      "id": "EX-P012-M-02",
+      "skill_id": "P012",
+      "level": "maitrise",
+      "type": "vrai_faux",
+      "statement": "Une bassine contient 605 cL d'eau. Sami dit : « C'est 6 L et 5 cL. »\n\nSami a-t-il raison ?",
+      "image": null,
+      "answer": {
+        "value": true
+      },
+      "solution_steps": [
+        "On décompose : 605 cL = 600 cL + 5 cL.",
+        "1 L = 100 cL, donc 600 cL = 6 L, car $6 \\times 100 = 600$.",
+        "Donc 605 cL = 6 L et 5 cL : Sami a **raison**, c'est vrai.",
+        "Attention : 6 L et 50 cL, ce serait 650 cL. Le 0 de 605 indique qu'il n'y a aucune dizaine de centilitres."
+      ],
+      "hint": "Décompose 605 cL en centaines et en unités de centilitres.",
+      "estimated_duration_s": 60,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 2, CE2, les contenances : « L'élève sait effectuer des conversions en utilisant les unités litre, décilitre et centilitre »"
+    },
+    {
+      "id": "EX-P014-D-01",
+      "skill_id": "P014",
+      "level": "decouverte",
+      "type": "numerique",
+      "statement": "Un spectacle de marionnettes dure 1 h 25 min. Une heure, c'est 60 minutes.\n\nCombien de minutes dure le spectacle ?",
+      "image": null,
+      "answer": {
+        "value": 85,
+        "unit": "min",
+        "accepted": [
+          "85 min",
+          "85 minutes"
+        ]
+      },
+      "solution_steps": [
+        "1 h 25 min, c'est 1 heure et 25 minutes de plus.",
+        "1 heure, c'est 60 minutes.",
+        "On ajoute les 25 minutes : $60 + 25 = 85$. Le spectacle dure **85 minutes**.",
+        "Erreur à éviter : coller les chiffres et répondre 125 minutes, comme si une heure valait 100 minutes."
+      ],
+      "hint": "Remplace 1 h par le nombre de minutes qu'elle contient.",
+      "estimated_duration_s": 45,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 2, CE2 : l'élève sait déterminer le nombre de minutes qu'il y a dans deux heures et vingt minutes."
+    },
+    {
+      "id": "EX-P014-D-02",
+      "skill_id": "P014",
+      "level": "decouverte",
+      "type": "qcm",
+      "statement": "Le bus part à 8 h 50 et arrive à l'école à 9 h 20.\n\nCombien de temps dure le trajet ?",
+      "image": null,
+      "choices": [
+        {
+          "key": "a",
+          "text": "70 min",
+          "misconception": "L'élève calcule 920 − 850 = 70, comme si une heure valait 100 minutes. Or une heure n'a que 60 minutes : de 8 h 50 à 9 h, il n'y a que 10 minutes, pas 50."
+        },
+        {
+          "key": "b",
+          "text": "30 min",
+          "misconception": null
+        },
+        {
+          "key": "c",
+          "text": "1 h 30 min",
+          "misconception": "L'élève soustrait les heures (9 − 8 = 1), puis les minutes en enlevant la plus petite à la plus grande (50 − 20 = 30). Or à 9 h 20, il ne s'est même pas écoulé une heure depuis 8 h 50 : une heure plus tard, il serait 9 h 50."
+        }
+      ],
+      "answer": {
+        "value": "b"
+      },
+      "solution_steps": [
+        "On avance de 8 h 50 jusqu'à l'heure ronde, 9 h : il manque 10 minutes, car $50 + 10 = 60$.",
+        "De 9 h à 9 h 20 : 20 minutes.",
+        "En tout : $10 + 20 = 30$. Le trajet dure **30 minutes**, une demi-heure."
+      ],
+      "hint": "Passe par 9 h : combien de minutes de 8 h 50 à 9 h, puis de 9 h à 9 h 20 ?",
+      "estimated_duration_s": 60,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 2, CE2 : comparer et mesurer des durées écoulées entre deux instants affichés sur une horloge (pour des intervalles de temps situés dans une même journée)."
+    },
+    {
+      "id": "EX-P014-E-01",
+      "skill_id": "P014",
+      "level": "entrainement",
+      "type": "texte",
+      "statement": "Le train part à 13 h 45. Le trajet dure 50 minutes.\n\nÀ quelle heure arrive-t-il ? Réponds en heures et minutes.",
+      "image": null,
+      "answer": {
+        "value": "14 h 35",
+        "accepted": [
+          "14h35",
+          "14:35",
+          "14 h 35 min",
+          "14 heures 35",
+          "14 heures 35 minutes"
+        ]
+      },
+      "solution_steps": [
+        "On avance d'abord jusqu'à l'heure ronde : de 13 h 45 à 14 h, il y a 15 minutes, car $45 + 15 = 60$.",
+        "Sur les 50 minutes du trajet, il en reste $50 - 15 = 35$ à ajouter après 14 h.",
+        "35 minutes après 14 h, il est 14 h 35. Le train arrive à **14 h 35**.",
+        "Erreur à éviter : calculer $45 + 50 = 95$ et écrire 13 h 95. Un horaire n'a jamais plus de 59 minutes : 60 minutes font une heure de plus."
+      ],
+      "hint": "Combien de minutes faut-il pour aller de 13 h 45 à 14 h ?",
+      "estimated_duration_s": 75,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 2, CE2 : résoudre des problèmes à une ou deux étapes impliquant des durées."
+    },
+    {
+      "id": "EX-P014-E-02",
+      "skill_id": "P014",
+      "level": "entrainement",
+      "type": "vrai_faux",
+      "statement": "Inès a fini un puzzle en 2 h 10 min. Hugo a mis 150 minutes.\n\nVrai ou faux : Hugo a mis plus de temps qu'Inès ?",
+      "image": null,
+      "answer": {
+        "value": true
+      },
+      "solution_steps": [
+        "Pour comparer, on écrit le temps d'Inès en minutes, comme celui d'Hugo.",
+        "1 h, c'est 60 minutes. 2 h, c'est $60 + 60 = 120$ minutes. Donc 2 h 10 min, c'est $120 + 10 = 130$ minutes.",
+        "Hugo a mis 150 minutes : c'est plus que 130 minutes. C'est **vrai**, Hugo a mis 20 minutes de plus qu'Inès.",
+        "Erreur à éviter : compter 100 minutes dans une heure. On trouverait 210 minutes pour Inès et on répondrait faux."
+      ],
+      "hint": "Combien de minutes y a-t-il dans 2 h ?",
+      "estimated_duration_s": 60,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 2, CE2 : l'élève sait déterminer le nombre de minutes qu'il y a dans deux heures et vingt minutes. Il sait dire laquelle de ces deux durées est la plus longue."
+    },
+    {
+      "id": "EX-P014-M-01",
+      "skill_id": "P014",
+      "level": "maitrise",
+      "type": "texte",
+      "statement": "Emma part à 16 h 50. Elle marche 25 minutes jusqu'à la gare, puis son train roule 1 h 10 min.\n\nÀ quelle heure arrive-t-elle, en heures et minutes ?",
+      "image": null,
+      "answer": {
+        "value": "18 h 25",
+        "accepted": [
+          "18h25",
+          "18:25",
+          "18 h 25 min",
+          "18 heures 25",
+          "18 heures 25 minutes"
+        ]
+      },
+      "solution_steps": [
+        "Première étape, l'arrivée à la gare. De 16 h 50 à 17 h, il y a 10 minutes. Il reste $25 - 10 = 15$ minutes à marcher après 17 h : Emma est à la gare à 17 h 15.",
+        "Deuxième étape, le train. 1 h après 17 h 15, il est 18 h 15. 10 minutes plus tard, il est 18 h 25.",
+        "Emma arrive à **18 h 25**.",
+        "Erreur à éviter : calculer $50 + 25 = 75$ et écrire 16 h 75. Dès qu'on atteint 60 minutes, on passe à l'heure suivante."
+      ],
+      "hint": "Commence par trouver l'heure à laquelle Emma arrive à la gare.",
+      "estimated_duration_s": 120,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 2, CE2 : résoudre des problèmes à une ou deux étapes impliquant des durées."
+    },
+    {
+      "id": "EX-P014-M-02",
+      "skill_id": "P014",
+      "level": "maitrise",
+      "type": "qcm",
+      "statement": "Nora doit être au stade à 14 h 10. Le trajet dure 35 minutes.\n\nÀ quelle heure doit-elle partir ?",
+      "image": null,
+      "choices": [
+        {
+          "key": "a",
+          "text": "13 h 75",
+          "misconception": "L'élève casse une heure en 100 minutes : 14 h 10 devient 13 h 110, et 110 − 35 = 75. Or une heure n'a que 60 minutes, et un horaire n'a jamais 75 minutes."
+        },
+        {
+          "key": "b",
+          "text": "14 h 45",
+          "misconception": "L'élève ajoute les 35 minutes au lieu de les enlever : 14 h 10 + 35 min = 14 h 45. Or Nora part avant d'arriver : il faut remonter le temps."
+        },
+        {
+          "key": "c",
+          "text": "14 h 25",
+          "misconception": "L'élève enlève le petit nombre au grand dans les minutes (35 − 10 = 25) et garde 14 h. Or 14 h 25 est après 14 h 10 : Nora arriverait en retard."
+        },
+        {
+          "key": "d",
+          "text": "13 h 35",
+          "misconception": null
+        }
+      ],
+      "answer": {
+        "value": "d"
+      },
+      "solution_steps": [
+        "On remonte le temps à partir de 14 h 10 : on enlève 35 minutes.",
+        "On recule d'abord de 10 minutes jusqu'à l'heure ronde : 14 h. Il reste $35 - 10 = 25$ minutes à enlever.",
+        "25 minutes avant 14 h : une heure a 60 minutes et $60 - 25 = 35$, donc il est 13 h 35.",
+        "Nora doit partir à **13 h 35**. On vérifie : de 13 h 35 à 14 h, 25 minutes ; de 14 h à 14 h 10, 10 minutes ; $25 + 10 = 35$."
+      ],
+      "hint": "Recule d'abord jusqu'à 14 h, puis continue à reculer.",
+      "estimated_duration_s": 90,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 2, CE2 : l'élève sait utiliser un axe chronologiquement orienté pour positionner des instants et repérer une durée, notamment dans le cadre de la résolution de problèmes."
+    },
+    {
+      "id": "EX-P015-D-01",
+      "skill_id": "P015",
+      "level": "decouverte",
+      "type": "numerique",
+      "statement": "Une cuve récupère l'eau de pluie. Elle contient 6 hL. On sait que 1 hL = 100 L.\n\nCombien de litres d'eau contient la cuve ?",
+      "image": null,
+      "answer": {
+        "value": 600,
+        "unit": "L",
+        "accepted": [
+          "600 L"
+        ]
+      },
+      "solution_steps": [
+        "Le préfixe hecto- veut dire cent : 1 hL = 100 L, comme 1 hm = 100 m.",
+        "6 hL, c'est 6 fois 100 L : $6 \\times 100 = 600$.",
+        "La cuve contient **600 L**."
+      ],
+      "hint": "Que veut dire le préfixe hecto- ?",
+      "estimated_duration_s": 45,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 3, CM1, les contenances : « Connaître et utiliser les unités de contenance du millilitre à l'hectolitre et les symboles associés »"
+    },
+    {
+      "id": "EX-P015-D-02",
+      "skill_id": "P015",
+      "level": "decouverte",
+      "type": "qcm",
+      "statement": "Une pièce de 10 centimes pèse 4 g. On sait que 1 g = 1 000 mg.\n\nCombien pèse-t-elle, en milligrammes ?",
+      "image": null,
+      "choices": [
+        {
+          "key": "a",
+          "text": "400 mg",
+          "misconception": "L'élève pense que 1 g = 100 mg, comme 1 m = 100 cm. Or milli- veut dire millième : il faut 1 000 mg pour faire 1 g."
+        },
+        {
+          "key": "b",
+          "text": "4 000 kg",
+          "misconception": "L'élève prend bien le nombre 1 000, mais il se trompe de préfixe : kilo- désigne une unité 1 000 fois plus grande que le gramme, milli- une unité 1 000 fois plus petite. 4 000 kg, c'est 4 t, la masse d'un camion."
+        },
+        {
+          "key": "c",
+          "text": "40 mg",
+          "misconception": "L'élève ajoute un zéro quel que soit l'écart entre les unités : il multiplie par 10 au lieu de 1 000."
+        },
+        {
+          "key": "d",
+          "text": "4 000 mg",
+          "misconception": null
+        }
+      ],
+      "answer": {
+        "value": "d"
+      },
+      "solution_steps": [
+        "Le préfixe milli- veut dire millième : il faut 1 000 mg pour faire 1 g, comme 1 000 mm pour faire 1 m.",
+        "4 g, c'est 4 fois 1 000 mg : $4 \\times 1\\,000 = 4\\,000$.",
+        "La pièce pèse **4 000 mg**. Le milligramme est une toute petite unité : il en faut beaucoup."
+      ],
+      "hint": "Que veut dire le préfixe milli- ? Pense à 1 m = 1 000 mm.",
+      "estimated_duration_s": 45,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 3, CM1, les masses : « Connaître et utiliser les unités de masse du milligramme au kilogramme et la tonne, et les symboles associés »"
+    },
+    {
+      "id": "EX-P015-E-01",
+      "skill_id": "P015",
+      "level": "entrainement",
+      "type": "numerique",
+      "statement": "Une plage mesure 7 hm de long.\n\nQuelle est sa longueur, en décamètres ?",
+      "image": null,
+      "answer": {
+        "value": 70,
+        "unit": "dam",
+        "accepted": [
+          "70 dam"
+        ]
+      },
+      "solution_steps": [
+        "Hecto- veut dire cent et déca- veut dire dix : 1 hm = 100 m et 1 dam = 10 m.",
+        "Dans 100 m, il y a 10 fois 10 m, car $10 \\times 10 = 100$ : 1 hm = 10 dam. Deux unités qui se suivent sont toujours dans un rapport de 10.",
+        "7 hm, c'est 7 fois 10 dam : $7 \\times 10 = 70$.",
+        "La plage mesure **70 dam**, c'est-à-dire 700 m."
+      ],
+      "hint": "Écris 1 hm et 1 dam en mètres. Combien de décamètres faut-il pour faire 1 hm ?",
+      "estimated_duration_s": 60,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 3, CM1, les longueurs : « Connaître les relations entre les unités de longueur »"
+    },
+    {
+      "id": "EX-P015-E-02",
+      "skill_id": "P015",
+      "level": "entrainement",
+      "type": "vrai_faux",
+      "statement": "Lucas dit : « Milli- veut dire la même chose dans mm et dans mL. Comme 1 m = 1 000 mm, on a 1 L = 1 000 mL. »\n\nLucas a-t-il raison ?",
+      "image": null,
+      "answer": {
+        "value": true
+      },
+      "solution_steps": [
+        "Un préfixe garde le même sens, quelle que soit la grandeur : milli- veut dire millième.",
+        "1 mm est un millième de mètre : 1 m = 1 000 mm. 1 mg est un millième de gramme : 1 g = 1 000 mg.",
+        "De même, 1 mL est un millième de litre : 1 L = 1 000 mL. Lucas a **raison**, c'est vrai.",
+        "Cela vaut pour les autres préfixes : kilo- veut dire mille (1 km = 1 000 m, 1 kg = 1 000 g), centi- veut dire centième (1 m = 100 cm, 1 L = 100 cL)."
+      ],
+      "hint": "Compare 1 mm et 1 m, puis 1 mg et 1 g. Que veut dire milli- ?",
+      "estimated_duration_s": 60,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 3, CM1, les contenances : « Connaître les relations entre les unités de contenance »"
+    },
+    {
+      "id": "EX-P015-M-01",
+      "skill_id": "P015",
+      "level": "maitrise",
+      "type": "numerique",
+      "statement": "Pour aller à l'école, Inès fait 1 km dans la rue, 6 hm dans le parc, puis 7 dam jusqu'au portail.\n\nQuelle distance parcourt-elle, en mètres ?",
+      "image": null,
+      "answer": {
+        "value": 1670,
+        "unit": "m",
+        "accepted": [
+          "1 670",
+          "1 670 m",
+          "1670 m"
+        ]
+      },
+      "solution_steps": [
+        "Les trois longueurs ne sont pas dans la même unité : on les écrit toutes en mètres.",
+        "1 km = 1 000 m.",
+        "1 hm = 100 m, donc 6 hm = 600 m, car $6 \\times 100 = 600$.",
+        "1 dam = 10 m, donc 7 dam = 70 m, car $7 \\times 10 = 70$.",
+        "$1\\,000 + 600 + 70 = 1\\,670$ : Inès parcourt **1 670 m**.",
+        "Calculer $1 + 6 + 7 = 14$ ne veut rien dire : ce sont des kilomètres, des hectomètres et des décamètres."
+      ],
+      "hint": "Que valent 1 km, 1 hm et 1 dam en mètres ?",
+      "estimated_duration_s": 90,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 3, CM1, les longueurs : « Connaître et utiliser les unités de longueur du millimètre au kilomètre et les symboles associés »"
+    },
+    {
+      "id": "EX-P015-M-02",
+      "skill_id": "P015",
+      "level": "maitrise",
+      "type": "qcm",
+      "statement": "Pour un pique-nique, on emporte une gourde de 60 cL, une carafe de 7 dL et une bouteille de 650 mL.\n\nQuel récipient contient le plus de liquide ?",
+      "image": null,
+      "choices": [
+        {
+          "key": "a",
+          "text": "La bouteille de 650 mL",
+          "misconception": "L'élève compare les nombres sans regarder les unités : 650 est le plus grand nombre écrit. Or 7 dL = 700 mL, plus que 650 mL."
+        },
+        {
+          "key": "b",
+          "text": "La gourde de 60 cL",
+          "misconception": "L'élève pense que 1 cL = 100 mL, comme 1 L = 100 cL : il trouve 6 000 mL. Or 1 cL = 10 mL, donc 60 cL = 600 mL."
+        },
+        {
+          "key": "c",
+          "text": "La carafe de 7 dL",
+          "misconception": null
+        }
+      ],
+      "answer": {
+        "value": "c"
+      },
+      "solution_steps": [
+        "Pour comparer, on écrit les trois contenances dans la même unité, le millilitre.",
+        "1 L = 1 000 mL et 1 L = 100 cL : 100 cL font 1 000 mL, donc 1 cL = 10 mL, car $100 \\times 10 = 1\\,000$.",
+        "1 L = 10 dL : 10 dL font 1 000 mL, donc 1 dL = 100 mL, car $10 \\times 100 = 1\\,000$.",
+        "60 cL = 600 mL, car $60 \\times 10 = 600$. 7 dL = 700 mL, car $7 \\times 100 = 700$.",
+        "On range : 600 mL < 650 mL < 700 mL. C'est **la carafe de 7 dL** qui contient le plus."
+      ],
+      "hint": "Écris les trois contenances en millilitres avant de comparer.",
+      "estimated_duration_s": 90,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 3, CM1, les contenances : « Comparer des contenances »"
+    },
+    {
+      "id": "EX-P016-D-01",
+      "skill_id": "P016",
+      "level": "decouverte",
+      "type": "numerique",
+      "statement": "Un potager a la forme d'un carré de 8 m de côté. Son contour est formé de 4 côtés de même longueur.\n\nQuel est le périmètre du potager ?",
+      "image": null,
+      "answer": {
+        "value": 32,
+        "unit": "m",
+        "accepted": [
+          "32 m",
+          "32m"
+        ]
+      },
+      "solution_steps": [
+        "Le contour du carré passe par ses 4 côtés, qui mesurent tous 8 m : 8 + 8 + 8 + 8.",
+        "Ajouter 4 côtés de même longueur, c'est prendre le quadruple de cette longueur : $4 \\times 8 = 32$.",
+        "Le périmètre du potager est **32 m**. Règle à retenir : le périmètre d'un carré est le quadruple de son côté."
+      ],
+      "hint": "Combien de côtés de 8 m faut-il ajouter pour faire le tour ?",
+      "estimated_duration_s": 45,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 3, CM1 : les élèves peuvent établir eux-mêmes des règles de calcul et les utiliser, comme par exemple le fait que le périmètre d'un carré est le quadruple de la longueur de l'un de ses côtés."
+    },
+    {
+      "id": "EX-P016-D-02",
+      "skill_id": "P016",
+      "level": "decouverte",
+      "type": "qcm",
+      "statement": "Un bassin a la forme d'un carré. Son périmètre est 28 m.\n\nQuelle est la longueur d'un de ses côtés ?",
+      "image": null,
+      "choices": [
+        {
+          "key": "a",
+          "text": "14 m",
+          "misconception": "L'élève partage le périmètre en 2, comme si le carré n'avait que deux côtés."
+        },
+        {
+          "key": "b",
+          "text": "112 m",
+          "misconception": "L'élève multiplie par 4 au lieu de partager : il calcule le quadruple du périmètre, alors que c'est le périmètre qui est le quadruple du côté."
+        },
+        {
+          "key": "c",
+          "text": "7 m",
+          "misconception": null
+        },
+        {
+          "key": "d",
+          "text": "24 m",
+          "misconception": "L'élève retire 4 (28 − 4 = 24) au lieu de partager en 4 : il confond « 4 côtés » avec « 4 mètres de moins »."
+        }
+      ],
+      "answer": {
+        "value": "c"
+      },
+      "solution_steps": [
+        "Le périmètre d'un carré est le quadruple de son côté : les 4 côtés, de même longueur, font 28 m en tout.",
+        "On cherche donc le nombre qui, multiplié par 4, donne 28. On partage 28 en 4 parts égales : $28 \\div 4 = 7$, car $4 \\times 7 = 28$.",
+        "Vérification : 7 + 7 + 7 + 7 = 28. Le côté du bassin mesure **7 m**."
+      ],
+      "hint": "Le périmètre est le quadruple du côté. Quel nombre, multiplié par 4, donne 28 ?",
+      "estimated_duration_s": 60,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 3, CM1 : résoudre des problèmes mettant en jeu les longueurs des côtés d'un polygone et son périmètre."
+    },
+    {
+      "id": "EX-P016-E-01",
+      "skill_id": "P016",
+      "level": "entrainement",
+      "type": "numerique",
+      "statement": "L'enclos des chèvres a la forme d'un rectangle. Son périmètre est 50 m et sa longueur 15 m.\n\nQuelle est sa largeur ?",
+      "image": null,
+      "answer": {
+        "value": 10,
+        "unit": "m",
+        "accepted": [
+          "10 m",
+          "10m"
+        ]
+      },
+      "solution_steps": [
+        "Le contour du rectangle passe par 2 longueurs et 2 largeurs, et il mesure 50 m en tout.",
+        "Les 2 longueurs font 15 + 15 = 30, soit 30 m.",
+        "Les 2 largeurs mesurent ensemble ce qui reste quand on retire les 2 longueurs du contour : 50 − 30 = 20, soit 20 m.",
+        "Les 2 largeurs sont égales : $20 \\div 2 = 10$. La largeur est **10 m**. Vérification : 15 + 10 + 15 + 10 = 50."
+      ],
+      "hint": "Commence par la longueur des deux grands côtés ensemble.",
+      "estimated_duration_s": 120,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 3, CM1 : résoudre des problèmes mettant en jeu les longueurs des côtés d'un polygone et son périmètre."
+    },
+    {
+      "id": "EX-P016-E-02",
+      "skill_id": "P016",
+      "level": "entrainement",
+      "type": "vrai_faux",
+      "statement": "Un carré a des côtés de 5 cm. Un rectangle mesure 6 cm de long et 4 cm de large.\n\nSami affirme : « Ces deux figures ont le même périmètre. »",
+      "image": null,
+      "answer": {
+        "value": true
+      },
+      "solution_steps": [
+        "Carré : le périmètre est le quadruple du côté, $4 \\times 5 = 20$, soit 20 cm.",
+        "Rectangle : le contour passe par 2 longueurs et 2 largeurs, 6 + 4 + 6 + 4 = 20, soit 20 cm.",
+        "Les deux périmètres valent 20 cm : Sami a **raison**. Les deux figures n'ont pas la même forme, mais leurs contours ont la même longueur."
+      ],
+      "hint": "Calcule le périmètre de chaque figure, puis compare.",
+      "estimated_duration_s": 75,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 3, CM1 : résoudre des problèmes mettant en jeu les longueurs des côtés d'un polygone et son périmètre."
+    },
+    {
+      "id": "EX-P016-M-01",
+      "skill_id": "P016",
+      "level": "maitrise",
+      "type": "qcm",
+      "statement": "Un carré a des côtés de 12 cm. Un rectangle de 16 cm de long a le même périmètre que ce carré.\n\nQuelle est la largeur du rectangle ?",
+      "image": null,
+      "choices": [
+        {
+          "key": "a",
+          "text": "24 cm",
+          "misconception": "L'élève partage le périmètre en 2 (48 ÷ 2 = 24) : il trouve une longueur plus une largeur, et oublie d'en retirer la longueur de 16 cm."
+        },
+        {
+          "key": "b",
+          "text": "16 cm",
+          "misconception": "L'élève retire bien les 2 longueurs (48 − 32 = 16), mais oublie de partager ce reste entre les 2 largeurs."
+        },
+        {
+          "key": "c",
+          "text": "32 cm",
+          "misconception": "L'élève ne retire qu'une longueur (48 − 16 = 32) : il oublie qu'un rectangle a 2 longueurs et 2 largeurs."
+        },
+        {
+          "key": "d",
+          "text": "8 cm",
+          "misconception": null
+        }
+      ],
+      "answer": {
+        "value": "d"
+      },
+      "solution_steps": [
+        "Périmètre du carré : le quadruple de 12 cm. 12 + 12 = 24, puis 24 + 24 = 48 (le double du double), donc $4 \\times 12 = 48$. Le périmètre est 48 cm.",
+        "Le contour du rectangle mesure donc 48 cm. Ses 2 longueurs font 16 + 16 = 32, soit 32 cm.",
+        "Les 2 largeurs mesurent ensemble ce qui reste quand on retire les 2 longueurs : 48 − 32 = 16, soit 16 cm.",
+        "Une largeur : $16 \\div 2 = 8$. La largeur du rectangle est **8 cm**. Vérification : 16 + 8 + 16 + 8 = 48."
+      ],
+      "hint": "Calcule d'abord le périmètre du carré : c'est la longueur du contour du rectangle.",
+      "estimated_duration_s": 150,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 3, CM1 : résoudre des problèmes mettant en jeu les longueurs des côtés d'un polygone et son périmètre."
+    },
+    {
+      "id": "EX-P016-M-02",
+      "skill_id": "P016",
+      "level": "maitrise",
+      "type": "qcm",
+      "statement": "Jade a deux ficelles de 24 cm. Avec l'une, elle forme un carré. Avec l'autre, elle forme un triangle dont les 3 côtés ont la même longueur.\n\nQuelle figure a les côtés les plus longs ?",
+      "image": null,
+      "choices": [
+        {
+          "key": "a",
+          "text": "Le carré, avec des côtés de 8 cm",
+          "misconception": "L'élève inverse les partages : il partage les 24 cm en 3 pour le carré et en 4 pour le triangle."
+        },
+        {
+          "key": "b",
+          "text": "Le triangle, avec des côtés de 8 cm",
+          "misconception": null
+        },
+        {
+          "key": "c",
+          "text": "Aucune : les deux ficelles mesurent 24 cm, donc les côtés ont la même longueur",
+          "misconception": "L'élève confond le périmètre et la longueur d'un côté : les deux figures ont le même contour, mais il est partagé en un nombre différent de côtés."
+        },
+        {
+          "key": "d",
+          "text": "Le carré, avec des côtés de 6 cm",
+          "misconception": "L'élève calcule bien le côté du carré (24 ÷ 4 = 6), mais croit que la figure qui a le plus de côtés a aussi les côtés les plus longs, sans calculer le côté du triangle."
+        }
+      ],
+      "answer": {
+        "value": "b"
+      },
+      "solution_steps": [
+        "Toute la ficelle forme le contour : chaque figure a un périmètre de 24 cm.",
+        "Carré : 4 côtés égaux. Le périmètre est le quadruple du côté, donc le côté mesure $24 \\div 4 = 6$, soit 6 cm.",
+        "Triangle : 3 côtés égaux. Le périmètre est le triple du côté, donc le côté mesure $24 \\div 3 = 8$, soit 8 cm.",
+        "8 cm, c'est plus long que 6 cm : c'est **le triangle** qui a les côtés les plus longs. La bonne réponse est **b**. Une même longueur de ficelle partagée en moins de côtés donne des côtés plus longs."
+      ],
+      "hint": "Partage les 24 cm entre les côtés de chaque figure.",
+      "estimated_duration_s": 120,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 3, CM1 : résoudre des problèmes mettant en jeu les longueurs des côtés d'un polygone et son périmètre."
+    },
+    {
+      "id": "EX-P018-D-01",
+      "skill_id": "P018",
+      "level": "decouverte",
+      "type": "numerique",
+      "statement": "Une étiquette rectangulaire de 7 cm sur 4 cm est recouverte de carrés de 1 cm de côté : 4 rangées de 7 carrés.\n\nQuelle est son aire, en cm² ?",
+      "image": null,
+      "answer": {
+        "value": 28,
+        "unit": "cm²",
+        "accepted": [
+          "28 cm²",
+          "28 cm2"
+        ]
+      },
+      "solution_steps": [
+        "Un carré de 1 cm de côté a une aire de 1 cm² : l'aire de l'étiquette, c'est le nombre de carrés qui la recouvrent, sans trou ni chevauchement.",
+        "Une rangée suit la longueur de 7 cm : elle compte 7 carrés. La largeur de 4 cm donne 4 rangées.",
+        "4 rangées de 7 carrés : $4 \\times 7 = 28$ carrés.",
+        "L'aire de l'étiquette est **28 cm²**.",
+        "À ne pas confondre avec le tour de l'étiquette : 7 + 4 + 7 + 4 = 22. C'est son périmètre, 22 cm, une longueur, pas un nombre de carrés."
+      ],
+      "hint": "Combien de carrés dans une rangée ? Combien de rangées ?",
+      "estimated_duration_s": 60,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 3, CM2, Les aires : « Déterminer l'aire d'un carré ou d'un rectangle »"
+    },
+    {
+      "id": "EX-P018-D-02",
+      "skill_id": "P018",
+      "level": "decouverte",
+      "type": "qcm",
+      "statement": "Un badge carré mesure 6 cm de côté. On le recouvre de carrés de 1 cm de côté.\n\nQuelle est son aire ?",
+      "image": null,
+      "choices": [
+        {
+          "key": "a",
+          "text": "24 cm²",
+          "misconception": "L'élève calcule le tour du badge, 6 + 6 + 6 + 6 = 24 : c'est le périmètre, 24 cm, une longueur. Il confond périmètre et aire."
+        },
+        {
+          "key": "b",
+          "text": "36 cm²",
+          "misconception": null
+        },
+        {
+          "key": "c",
+          "text": "12 cm²",
+          "misconception": "L'élève additionne deux côtés, 6 + 6 = 12, comme s'il suffisait d'une rangée dans chaque sens, au lieu de compter 6 rangées de 6 carrés."
+        }
+      ],
+      "answer": {
+        "value": "b"
+      },
+      "solution_steps": [
+        "Un carré a ses 4 côtés de même longueur : le badge mesure 6 cm dans les deux sens.",
+        "On peut poser 6 rangées de 6 carrés de 1 cm de côté : $6 \\times 6 = 36$ carrés.",
+        "Chaque carré a une aire de 1 cm² : l'aire du badge est **36 cm²**.",
+        "24 est le périmètre : 6 + 6 + 6 + 6 = 24. Le périmètre est la longueur du tour, en cm ; l'aire compte les carrés qui recouvrent, en cm²."
+      ],
+      "hint": "Combien de rangées de carrés de 1 cm tiennent dans le badge ? Combien de carrés dans chaque rangée ?",
+      "estimated_duration_s": 60,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 3, CM2, Les aires : « Déterminer l'aire d'un carré ou d'un rectangle »"
+    },
+    {
+      "id": "EX-P018-E-01",
+      "skill_id": "P018",
+      "level": "entrainement",
+      "type": "vrai_faux",
+      "statement": "Un rectangle mesure 9 cm sur 3 cm. Tom affirme : « Son aire est 24 cm², car 9 + 3 + 9 + 3 = 24. »\n\nTom a-t-il raison ?",
+      "image": null,
+      "answer": {
+        "value": false
+      },
+      "solution_steps": [
+        "Tom a additionné les quatre côtés : 9 + 3 + 9 + 3 = 24. C'est la longueur du contour, le périmètre du rectangle : 24 cm.",
+        "L'aire, c'est le nombre de carrés de 1 cm de côté qui recouvrent le rectangle : 3 rangées de 9 carrés, $3 \\times 9 = 27$.",
+        "L'aire est 27 cm², pas 24 cm². Tom a **tort** : il a confondu le tour du rectangle et la surface qu'il recouvre."
+      ],
+      "hint": "Tom a-t-il compté des carrés, ou mesuré la longueur du tour ?",
+      "estimated_duration_s": 60,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 3, CM2, Les aires : « Déterminer l'aire d'un carré ou d'un rectangle »"
+    },
+    {
+      "id": "EX-P018-E-02",
+      "skill_id": "P018",
+      "level": "entrainement",
+      "type": "numerique",
+      "statement": "Une affiche rectangulaire mesure 45 cm de long et 32 cm de large.\n\nQuelle est son aire, en cm² ? Pose la multiplication.",
+      "image": null,
+      "answer": {
+        "value": 1440,
+        "unit": "cm²",
+        "accepted": [
+          "1 440",
+          "1 440 cm²",
+          "1440 cm²",
+          "1440 cm2"
+        ]
+      },
+      "solution_steps": [
+        "On peut recouvrir l'affiche de carrés de 1 cm de côté : 32 rangées de 45 carrés.",
+        "Il faut calculer $45 \\times 32$. On pose la multiplication : première ligne $45 \\times 2 = 90$, deuxième ligne $45 \\times 30 = 1\\,350$.",
+        "On additionne les deux lignes : $90 + 1\\,350 = 1\\,440$.",
+        "L'affiche est recouverte par 1 440 carrés : son aire est **1 440 cm²**.",
+        "À ne pas confondre avec le tour de l'affiche : 45 + 32 + 45 + 32 = 154. C'est son périmètre, 154 cm, une longueur, pas un nombre de carrés."
+      ],
+      "hint": "Combien de rangées de carrés de 1 cm ? Combien de carrés dans chaque rangée ?",
+      "estimated_duration_s": 120,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 3, CM2, Les aires : « Déterminer l'aire d'un carré ou d'un rectangle »"
+    },
+    {
+      "id": "EX-P018-M-01",
+      "skill_id": "P018",
+      "level": "maitrise",
+      "type": "qcm",
+      "statement": "Deux rectangles ont 26 cm de périmètre : le premier mesure 10 cm sur 3 cm, le second 7 cm sur 6 cm.\n\nLequel a la plus grande aire ?",
+      "image": null,
+      "choices": [
+        {
+          "key": "a",
+          "text": "Ils ont la même aire, puisqu'ils ont le même périmètre.",
+          "misconception": "L'élève croit que deux surfaces de même contour recouvrent la même place : il confond périmètre et aire."
+        },
+        {
+          "key": "b",
+          "text": "Le premier, car il est le plus long.",
+          "misconception": "L'élève juge l'aire sur une seule dimension, la longueur de 10 cm, sans tenir compte de la largeur de 3 cm."
+        },
+        {
+          "key": "c",
+          "text": "Le second.",
+          "misconception": null
+        }
+      ],
+      "answer": {
+        "value": "c"
+      },
+      "solution_steps": [
+        "Premier rectangle : 3 rangées de 10 carrés de 1 cm de côté, $3 \\times 10 = 30$. Son aire est 30 cm².",
+        "Second rectangle : 6 rangées de 7 carrés, $6 \\times 7 = 42$. Son aire est 42 cm².",
+        "42 cm², c'est plus que 30 cm² : **le second** a la plus grande aire.",
+        "Les deux contours mesurent bien 26 cm : 10 + 3 + 10 + 3 = 26 et 7 + 6 + 7 + 6 = 26. Même périmètre ne veut pas dire même aire."
+      ],
+      "hint": "Calcule l'aire de chaque rectangle en comptant les rangées de carrés de 1 cm.",
+      "estimated_duration_s": 90,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 3, CM2, Les aires : « Comparer les aires de différentes figures planes »"
+    },
+    {
+      "id": "EX-P018-M-02",
+      "skill_id": "P018",
+      "level": "maitrise",
+      "type": "numerique",
+      "statement": "Lou recouvre exactement une carte rectangulaire avec 56 carrés de 1 cm de côté, en 7 rangées identiques. Chaque rangée suit la longueur de la carte.\n\nQuelle est sa longueur, en cm ?",
+      "image": null,
+      "answer": {
+        "value": 8,
+        "unit": "cm",
+        "accepted": [
+          "8 cm"
+        ]
+      },
+      "solution_steps": [
+        "Les 56 carrés sont répartis en 7 rangées identiques : on cherche le nombre de carrés d'une rangée, c'est-à-dire le nombre qui, multiplié par 7, donne 56.",
+        "Dans la table de 7 : $7 \\times 8 = 56$. Chaque rangée compte 8 carrés.",
+        "Une rangée suit la longueur et chaque carré mesure 1 cm de côté : la carte mesure **8 cm** de long, et 7 cm de large.",
+        "Vérification : 7 rangées de 8 carrés, $7 \\times 8 = 56$, l'aire est bien 56 cm². Le tour de la carte, lui, mesure 8 + 7 + 8 + 7 = 30 cm : aire et périmètre sont deux grandeurs différentes."
+      ],
+      "hint": "Combien de carrés dans une rangée ? Cherche dans la table de 7.",
+      "estimated_duration_s": 90,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 3, CM2, Les aires : « Déterminer l'aire d'un carré ou d'un rectangle »"
+    },
+    {
+      "id": "EX-P019-D-01",
+      "skill_id": "P019",
+      "level": "decouverte",
+      "type": "numerique",
+      "statement": "Un dessous-de-verre carré mesure 1 dm de côté, c'est-à-dire 10 cm. Son aire est 1 dm².\n\nCombien de cm² y a-t-il dans 1 dm² ? Pense aux carrés de 1 cm de côté qui le recouvrent.",
+      "image": null,
+      "answer": {
+        "value": 100,
+        "unit": "cm²",
+        "accepted": [
+          "100 cm²",
+          "100 cm2"
+        ]
+      },
+      "solution_steps": [
+        "1 cm² est l'aire d'un carré de 1 cm de côté. On recouvre le dessous-de-verre de tels carrés.",
+        "Une rangée suit un côté de 10 cm : elle compte 10 carrés. Le dessous-de-verre contient 10 rangées.",
+        "$10 \\times 10 = 100$ carrés : 1 dm² = **100 cm²**.",
+        "Ce n'est pas 10 cm² : 1 dm = 10 cm est une relation entre longueurs. Pour une aire, il y a 10 rangées de 10 carrés, donc 100."
+      ],
+      "hint": "Combien de carrés de 1 cm dans une rangée ? Combien de rangées ?",
+      "estimated_duration_s": 60,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 3, CM2, Les aires : « Connaître et utiliser les unités centimètre carré, décimètre carré et mètre carré pour exprimer des aires »"
+    },
+    {
+      "id": "EX-P019-D-02",
+      "skill_id": "P019",
+      "level": "decouverte",
+      "type": "qcm",
+      "statement": "Le tableau d'une classe a une aire de 4 m². On sait que 1 m² = 100 dm².\n\nQuelle est l'aire du tableau en dm² ?",
+      "image": null,
+      "choices": [
+        {
+          "key": "a",
+          "text": "40 dm²",
+          "misconception": "L'élève utilise le rapport des longueurs, 1 m = 10 dm, et pense que 1 m² = 10 dm². Or un carré de 1 m de côté contient 10 rangées de 10 dm²."
+        },
+        {
+          "key": "b",
+          "text": "4 000 dm²",
+          "misconception": "L'élève ajoute trois zéros, comme pour passer des mètres aux millimètres, sans s'appuyer sur la relation 1 m² = 100 dm²."
+        },
+        {
+          "key": "c",
+          "text": "400 dm²",
+          "misconception": null
+        }
+      ],
+      "answer": {
+        "value": "c"
+      },
+      "solution_steps": [
+        "1 m² = 100 dm² : chaque mètre carré contient 100 décimètres carrés.",
+        "4 m², c'est 4 fois 100 dm² : $4 \\times 100 = 400$.",
+        "Le tableau a une aire de **400 dm²**.",
+        "Le rapport 10 vaut pour les longueurs (1 m = 10 dm). Pour les aires, un mètre carré contient 10 rangées de 10 dm², soit 100."
+      ],
+      "hint": "Combien de dm² dans chacun des 4 mètres carrés ?",
+      "estimated_duration_s": 60,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 3, CM2, Les aires : « Convertir des aires entre différentes unités »"
+    },
+    {
+      "id": "EX-P019-E-01",
+      "skill_id": "P019",
+      "level": "entrainement",
+      "type": "numerique",
+      "statement": "Une feuille de papier cadeau a une aire de 1 800 cm².\n\nQuelle est son aire en dm² ?",
+      "image": null,
+      "answer": {
+        "value": 18,
+        "unit": "dm²",
+        "accepted": [
+          "18 dm²",
+          "18 dm2"
+        ]
+      },
+      "solution_steps": [
+        "1 dm² = 100 cm² : il faut 100 cm² pour faire 1 dm².",
+        "On cherche combien de paquets de 100 cm² il y a dans 1 800 cm². 1 800, c'est 18 centaines.",
+        "Il y a 18 paquets de 100 cm² : $18 \\times 100 = 1\\,800$. La feuille a une aire de **18 dm²**.",
+        "180 dm² serait faux : c'est le rapport 10 des longueurs. On vérifie : 180 dm² font $180 \\times 100 = 18\\,000$ cm², dix fois trop."
+      ],
+      "hint": "Combien de centaines dans 1 800 ?",
+      "estimated_duration_s": 75,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 3, CM2, Les aires : « Convertir des aires entre différentes unités »"
+    },
+    {
+      "id": "EX-P019-E-02",
+      "skill_id": "P019",
+      "level": "entrainement",
+      "type": "vrai_faux",
+      "statement": "Hugo dit : « 6 m² = 60 dm², car 1 m = 10 dm. »\n\nHugo a-t-il raison ?",
+      "image": null,
+      "answer": {
+        "value": false
+      },
+      "solution_steps": [
+        "1 m = 10 dm est vrai, mais c'est une relation entre longueurs.",
+        "Un carré de 1 m de côté se recouvre de 10 rangées de 10 carrés de 1 dm de côté : $10 \\times 10 = 100$. Donc 1 m² = 100 dm².",
+        "6 m², c'est 6 fois 100 dm² : $6 \\times 100 = 600$.",
+        "Hugo a **tort** : 6 m² = 600 dm². Il a utilisé le rapport 10 des longueurs au lieu du rapport 100 des aires."
+      ],
+      "hint": "Combien de carrés de 1 dm de côté recouvrent un carré de 1 m de côté ?",
+      "estimated_duration_s": 60,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 3, CM2, Les aires : « Convertir des aires entre différentes unités »"
+    },
+    {
+      "id": "EX-P019-M-01",
+      "skill_id": "P019",
+      "level": "maitrise",
+      "type": "qcm",
+      "statement": "Une serviette de plage a une aire de 2 m².\n\nQuelle est son aire en cm² ?",
+      "image": null,
+      "choices": [
+        {
+          "key": "a",
+          "text": "20 000 cm²",
+          "misconception": null
+        },
+        {
+          "key": "b",
+          "text": "200 cm²",
+          "misconception": "L'élève transpose la relation des longueurs, 1 m = 100 cm, et croit que 1 m² = 100 cm². Il oublie qu'une aire se compte en rangées de carrés."
+        },
+        {
+          "key": "c",
+          "text": "40 000 cm²",
+          "misconception": "L'élève lit 2 m² comme l'aire d'un carré de 2 m de côté. Un tel carré contient 2 rangées de 2 carrés de 1 m², soit 4 m² : le double de la serviette."
+        }
+      ],
+      "answer": {
+        "value": "a"
+      },
+      "solution_steps": [
+        "On passe par les dm² : 1 m² = 100 dm², donc 2 m², c'est $2 \\times 100 = 200$ dm².",
+        "1 dm² = 100 cm², donc 200 dm², c'est $200 \\times 100 = 20\\,000$ cm².",
+        "La serviette a une aire de **20 000 cm²**.",
+        "Autre regard : 1 m² est un carré de 100 cm de côté, recouvert de 100 rangées de 100 carrés de 1 cm, $100 \\times 100 = 10\\,000$. Donc 1 m² = 10 000 cm², et 2 m² = 20 000 cm²."
+      ],
+      "hint": "Passe d'abord par les dm² : combien de dm² dans 2 m² ?",
+      "estimated_duration_s": 90,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 3, CM2, Les aires : « Convertir des aires entre différentes unités »"
+    },
+    {
+      "id": "EX-P019-M-02",
+      "skill_id": "P019",
+      "level": "maitrise",
+      "type": "numerique",
+      "statement": "On pose du parquet dans une chambre de 12 m² et dans un dressing de 300 dm².\n\nQuelle aire de parquet faut-il en tout, en m² ?",
+      "image": null,
+      "answer": {
+        "value": 15,
+        "unit": "m²",
+        "accepted": [
+          "15 m²",
+          "15 m2"
+        ]
+      },
+      "solution_steps": [
+        "Les deux aires ne sont pas dans la même unité : on ne peut pas additionner 12 et 300 directement.",
+        "On écrit l'aire du dressing en m². 1 m² = 100 dm² : il faut 100 dm² pour faire 1 m². 300, c'est 3 centaines, donc 300 dm² = 3 m².",
+        "On additionne : $12 + 3 = 15$.",
+        "Il faut **15 m²** de parquet.",
+        "Le calcul 12 + 300 = 312 mélange des m² et des dm². Avec le rapport 10 des longueurs, on trouverait 300 dm² = 30 m² : un dressing plus grand que la chambre, c'est impossible."
+      ],
+      "hint": "Combien de paquets de 100 dm² y a-t-il dans 300 dm² ?",
+      "estimated_duration_s": 100,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 3, CM2, Les aires : « Convertir des aires entre différentes unités »"
+    },
+    {
+      "id": "EX-P020-D-01",
+      "skill_id": "P020",
+      "level": "decouverte",
+      "type": "numerique",
+      "statement": "Une chanson dure 4 min 15 s. Une minute, c'est 60 secondes.\n\nCombien de secondes dure la chanson ?",
+      "image": null,
+      "answer": {
+        "value": 255,
+        "unit": "s",
+        "accepted": [
+          "255 s",
+          "255 secondes"
+        ]
+      },
+      "solution_steps": [
+        "4 min, ce sont 4 paquets de 60 secondes : $4 \\times 60 = 240$ secondes.",
+        "On ajoute les 15 secondes : $240 + 15 = 255$.",
+        "La chanson dure **255 secondes**.",
+        "Erreur à éviter : répondre 415 secondes en collant les chiffres, comme si une minute valait 100 secondes."
+      ],
+      "hint": "Combien de secondes y a-t-il dans 4 minutes ?",
+      "estimated_duration_s": 45,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 3, CM2 : la compréhension du système sexagésimal (base soixante) utilisé pour les unités de durée s'étend avec l'introduction des secondes."
+    },
+    {
+      "id": "EX-P020-D-02",
+      "skill_id": "P020",
+      "level": "decouverte",
+      "type": "qcm",
+      "statement": "Trois enfants courent le même tour de piste. Léa met 95 s, Max 1 min 40 s et Zoé 1 min 25 s.\n\nQui est le plus rapide ?",
+      "image": null,
+      "choices": [
+        {
+          "key": "a",
+          "text": "Léa",
+          "misconception": "L'élève lit 1 min 40 s comme 140 s et 1 min 25 s comme 125 s, comme si une minute valait 100 secondes : 95 s lui semble alors le temps le plus court."
+        },
+        {
+          "key": "b",
+          "text": "Max",
+          "misconception": "L'élève pense que le plus grand temps est le meilleur. Or Max met 100 secondes, le temps le plus long des trois : c'est le plus lent."
+        },
+        {
+          "key": "c",
+          "text": "Zoé",
+          "misconception": null
+        }
+      ],
+      "answer": {
+        "value": "c"
+      },
+      "solution_steps": [
+        "Pour comparer, on écrit les trois temps en secondes. Une minute, c'est 60 secondes.",
+        "Max : $60 + 40 = 100$ secondes. Zoé : $60 + 25 = 85$ secondes. Léa : 95 secondes.",
+        "Le plus rapide est celui qui met le moins de temps : 85 secondes est le plus petit des trois temps.",
+        "C'est **Zoé** la plus rapide, avec 85 secondes."
+      ],
+      "hint": "Écris chaque temps en secondes avant de comparer.",
+      "estimated_duration_s": 60,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 3, CM2 : comparer et mesurer des durées écoulées entre deux instants affichés sur une horloge (instants et durées sont exprimés en heure, minute et seconde)."
+    },
+    {
+      "id": "EX-P020-E-01",
+      "skill_id": "P020",
+      "level": "entrainement",
+      "type": "numerique",
+      "statement": "Lina lance son chronomètre à 9 h 12 min 50 s et l'arrête à 9 h 15 min 20 s.\n\nCombien de secondes se sont écoulées ?",
+      "image": null,
+      "answer": {
+        "value": 150,
+        "unit": "s",
+        "accepted": [
+          "150 s",
+          "150 secondes"
+        ]
+      },
+      "solution_steps": [
+        "On avance par étapes, en passant par les minutes rondes. De 9 h 12 min 50 s à 9 h 13 min : 10 secondes, car $50 + 10 = 60$.",
+        "De 9 h 13 min à 9 h 15 min : 2 minutes, soit $2 \\times 60 = 120$ secondes.",
+        "De 9 h 15 min à 9 h 15 min 20 s : 20 secondes.",
+        "En tout : $10 + 120 + 20 = 150$. Il s'est écoulé **150 secondes**, c'est-à-dire 2 min 30 s.",
+        "Erreur à éviter : calculer 1520 − 1250 = 270, comme si une minute valait 100 secondes."
+      ],
+      "hint": "Combien de secondes faut-il pour aller de 9 h 12 min 50 s à 9 h 13 min ?",
+      "estimated_duration_s": 90,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 3, CM2 : comparer et mesurer des durées écoulées entre deux instants affichés sur une horloge (instants et durées sont exprimés en heure, minute et seconde)."
+    },
+    {
+      "id": "EX-P020-E-02",
+      "skill_id": "P020",
+      "level": "entrainement",
+      "type": "texte",
+      "statement": "Une vidéo dure 470 secondes.\n\nÉcris cette durée en minutes et secondes.",
+      "image": null,
+      "answer": {
+        "value": "7 min 50 s",
+        "accepted": [
+          "7 min 50",
+          "7 min 50 secondes",
+          "7 minutes 50 secondes",
+          "7 minutes et 50 secondes",
+          "7 min et 50 s"
+        ]
+      },
+      "solution_steps": [
+        "Une minute, c'est 60 secondes. On cherche combien de paquets de 60 secondes tiennent dans 470 secondes.",
+        "Avec la table de 6 : $7 \\times 60 = 420$ et $8 \\times 60 = 480$. 480 dépasse 470, donc on prend 7 paquets : 7 minutes.",
+        "Il reste 50 secondes, car $420 + 50 = 470$.",
+        "La vidéo dure **7 min 50 s**.",
+        "Erreur à éviter : couper 470 en 4 min 70 s, comme si une minute valait 100 secondes. Il n'y a jamais 60 secondes ou plus dans la partie « secondes » d'une durée."
+      ],
+      "hint": "Combien de minutes entières, de 60 secondes chacune, tiennent dans 470 secondes ?",
+      "estimated_duration_s": 75,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 3, CM2 : la compréhension du système sexagésimal (base soixante) utilisé pour les unités de durée s'étend avec l'introduction des secondes."
+    },
+    {
+      "id": "EX-P020-M-01",
+      "skill_id": "P020",
+      "level": "maitrise",
+      "type": "texte",
+      "statement": "Quatre coureurs se relaient. Leurs temps sont 2 min 35 s ; 2 min 48 s ; 2 min 52 s ; 2 min 40 s.\n\nQuel est le temps de l'équipe, en minutes et secondes ?",
+      "image": null,
+      "answer": {
+        "value": "10 min 55 s",
+        "accepted": [
+          "10 min 55",
+          "10 min 55 secondes",
+          "10 minutes 55 secondes",
+          "10 minutes et 55 secondes",
+          "10 min et 55 s"
+        ]
+      },
+      "solution_steps": [
+        "On ajoute d'abord les minutes : 4 coureurs de 2 minutes chacun, $4 \\times 2 = 8$ minutes.",
+        "Puis les secondes : $35 + 48 + 52 + 40 = 175$ secondes.",
+        "175 secondes, c'est plus d'une minute. $2 \\times 60 = 120$ et $3 \\times 60 = 180$ : 180 dépasse 175, donc 175 s contient 2 minutes, et il reste 55 secondes, car $120 + 55 = 175$. Donc 175 s = 2 min 55 s.",
+        "En tout : 8 min + 2 min 55 s = **10 min 55 s**.",
+        "Erreur à éviter : laisser 8 min 175 s, ou écrire 9 min 75 s en comptant 100 secondes dans une minute."
+      ],
+      "hint": "Additionne les minutes d'un côté, les secondes de l'autre, puis transforme les secondes en trop.",
+      "estimated_duration_s": 150,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 3, CM2 : résoudre des problèmes à une ou plusieurs étapes impliquant des durées."
+    },
+    {
+      "id": "EX-P020-M-02",
+      "skill_id": "P020",
+      "level": "maitrise",
+      "type": "vrai_faux",
+      "statement": "Un four s'arrête à 12 h 03 min 10 s, après avoir chauffé 5 min 25 s. Paul affirme qu'il a démarré à 11 h 57 min 45 s.\n\nPaul a-t-il raison ?",
+      "image": null,
+      "answer": {
+        "value": true
+      },
+      "solution_steps": [
+        "On remonte le temps de 5 min 25 s à partir de 12 h 03 min 10 s.",
+        "On enlève d'abord 10 secondes : 12 h 03 min. Il reste 5 min 15 s à enlever.",
+        "On enlève 3 minutes pour revenir à midi : 12 h. Il reste 2 min 15 s à enlever.",
+        "2 minutes avant midi, il est 11 h 58 min. 15 secondes avant, il est 11 h 57 min 45 s, car une minute a 60 secondes et $45 + 15 = 60$.",
+        "Paul a **raison**. On vérifie dans l'autre sens : de 11 h 57 min 45 s à 11 h 58 min, 15 s ; puis 5 min jusqu'à 12 h 03 min ; puis 10 s. En tout, 5 min 25 s."
+      ],
+      "hint": "Recule d'abord jusqu'à 12 h 03 min, puis jusqu'à midi.",
+      "estimated_duration_s": 120,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 3, CM2 : résoudre des problèmes à une ou plusieurs étapes impliquant des durées ; renforcer l'aptitude à effectuer des calculs avec les unités heure, minute et seconde."
+    },
+    {
+      "id": "EX-P021-D-01",
+      "skill_id": "P021",
+      "level": "decouverte",
+      "type": "numerique",
+      "statement": "Un banc mesure 180 cm de long. On sait que 1 m = 100 cm.\n\nQuelle est sa longueur, en mètres ?",
+      "image": null,
+      "answer": {
+        "value": 1.8,
+        "unit": "m",
+        "accepted": [
+          "1,8 m",
+          "1,80",
+          "1,80 m"
+        ]
+      },
+      "solution_steps": [
+        "1 m = 100 cm : 1 cm est un centième de mètre.",
+        "On passe à une unité 100 fois plus grande : le nombre devient 100 fois plus petit. $180 \\div 100 = 1{,}8$.",
+        "Autre façon de voir : 180 cm = 100 cm + 80 cm, soit 1 m et 80 cm. Comme 1 dm = 10 cm, 80 cm font 8 dm, c'est-à-dire 8 dixièmes de mètre.",
+        "Le banc mesure **1,8 m** (on peut aussi écrire 1,80 m)."
+      ],
+      "hint": "On passe à une unité plus grande : le nombre doit-il grandir ou diminuer ?",
+      "estimated_duration_s": 60,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 3, 6e, les longueurs : « L'élève sait convertir en mètre une longueur donnée dans une autre unité, multiple ou sous-multiple du mètre. »"
+    },
+    {
+      "id": "EX-P021-D-02",
+      "skill_id": "P021",
+      "level": "decouverte",
+      "type": "qcm",
+      "statement": "Le tour d'un lac mesure 4 200 m.\n\nQuelle est cette longueur, en kilomètres ?",
+      "image": null,
+      "choices": [
+        {
+          "key": "a",
+          "text": "42 km",
+          "misconception": "L'élève pense que 1 km = 100 m : il divise par 100 au lieu de 1 000. 42 km, c'est à peu près la distance d'un marathon."
+        },
+        {
+          "key": "b",
+          "text": "4,2 km",
+          "misconception": null
+        },
+        {
+          "key": "c",
+          "text": "4 200 000 km",
+          "misconception": "L'élève convertit dans le mauvais sens : il multiplie par 1 000 alors qu'on passe à une unité plus grande. Le nombre de kilomètres doit être plus petit que le nombre de mètres."
+        },
+        {
+          "key": "d",
+          "text": "420 km",
+          "misconception": "L'élève enlève un seul zéro, quel que soit l'écart entre les unités : il divise par 10 au lieu de 1 000."
+        }
+      ],
+      "answer": {
+        "value": "b"
+      },
+      "solution_steps": [
+        "Kilo- veut dire mille : 1 km = 1 000 m.",
+        "On passe à une unité 1 000 fois plus grande : on divise par 1 000. $4\\,200 \\div 1\\,000 = 4{,}2$.",
+        "Autre façon de voir : 4 200 m = 4 000 m + 200 m, soit 4 km et 200 m. Comme 1 hm = 100 m est un dixième de kilomètre, 200 m font 2 dixièmes de kilomètre.",
+        "Le tour du lac mesure **4,2 km**."
+      ],
+      "hint": "Combien de mètres y a-t-il dans 1 km ? Le nombre de kilomètres est-il plus grand ou plus petit que le nombre de mètres ?",
+      "estimated_duration_s": 60,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 3, 6e, les longueurs : « Inversement, l'élève sait convertir dans une unité donnée une longueur exprimée en mètre. »"
+    },
+    {
+      "id": "EX-P021-E-01",
+      "skill_id": "P021",
+      "level": "entrainement",
+      "type": "numerique",
+      "statement": "Un crayon de couleur mesure 175 mm.\n\nQuelle est sa longueur, en mètres ?",
+      "image": null,
+      "answer": {
+        "value": 0.175,
+        "unit": "m",
+        "accepted": [
+          "0,175 m"
+        ]
+      },
+      "solution_steps": [
+        "Milli- veut dire millième : 1 mm est un millième de mètre, car 1 m = 1 000 mm.",
+        "On passe à une unité 1 000 fois plus grande : on divise par 1 000. $175 \\div 1\\,000 = 0{,}175$.",
+        "Vérification par les rangs : 175 mm, c'est 1 dm, 7 cm et 5 mm, soit 1 dixième, 7 centièmes et 5 millièmes de mètre.",
+        "Le crayon mesure **0,175 m**, un peu moins de 2 dixièmes de mètre, c'est-à-dire moins de 20 cm : c'est vraisemblable."
+      ],
+      "hint": "Combien de millimètres y a-t-il dans 1 m ?",
+      "estimated_duration_s": 75,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 3, 6e, les longueurs : « L'élève connaît les significations des préfixes allant du kilo- au milli-, ainsi que les relations entre le mètre, ses multiples et ses sous-multiples, et fait le lien avec les unités de numération du système décimal. »"
+    },
+    {
+      "id": "EX-P021-E-02",
+      "skill_id": "P021",
+      "level": "entrainement",
+      "type": "vrai_faux",
+      "statement": "Une rue mesure 64 m. Théo dit : « C'est 6,4 km, car kilo- veut dire mille. »\n\nThéo a-t-il raison ?",
+      "image": null,
+      "answer": {
+        "value": false
+      },
+      "solution_steps": [
+        "Kilo- veut dire mille : 1 km = 1 000 m, donc 1 m est un millième de kilomètre.",
+        "Pour passer des mètres aux kilomètres, on divise par 1 000 : $64 \\div 1\\,000 = 0{,}064$. La rue mesure 0,064 km.",
+        "Théo a seulement divisé par 10 : il a décalé les chiffres d'un rang au lieu de trois.",
+        "Contrôle : 6,4 km = 6 400 m, cent fois plus que 64 m. Théo a **tort**, c'est faux."
+      ],
+      "hint": "Combien de mètres y a-t-il dans 1 km ? 64 m, est-ce plus ou moins d'un kilomètre ?",
+      "estimated_duration_s": 60,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 3, 6e, les longueurs : « Inversement, l'élève sait convertir dans une unité donnée une longueur exprimée en mètre. »"
+    },
+    {
+      "id": "EX-P021-M-01",
+      "skill_id": "P021",
+      "level": "maitrise",
+      "type": "numerique",
+      "statement": "Pour un relais, quatre coureurs parcourent 1,2 km ; 850 m ; 9 hm et 75 dam.\n\nQuelle distance parcourent-ils en tout, en kilomètres ?",
+      "image": null,
+      "answer": {
+        "value": 3.7,
+        "unit": "km",
+        "accepted": [
+          "3,7 km",
+          "3,70",
+          "3,70 km"
+        ]
+      },
+      "solution_steps": [
+        "Les longueurs sont dans quatre unités différentes : on les écrit toutes en mètres, où ce sont des nombres entiers.",
+        "1 km = 1 000 m, donc 1,2 km = 1 200 m, car $1{,}2 \\times 1\\,000 = 1\\,200$.",
+        "1 hm = 100 m, donc 9 hm = 900 m. 1 dam = 10 m, donc 75 dam = 750 m, car $75 \\times 10 = 750$.",
+        "On additionne : $1\\,200 + 850 + 900 + 750 = 3\\,700$. Les coureurs parcourent 3 700 m.",
+        "On revient aux kilomètres, unité 1 000 fois plus grande : $3\\,700 \\div 1\\,000 = 3{,}7$. Ils parcourent **3,7 km**."
+      ],
+      "hint": "Convertis chaque longueur en mètres, additionne, puis reviens aux kilomètres.",
+      "estimated_duration_s": 120,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 3, 6e, les longueurs : « Résoudre des problèmes impliquant des longueurs »"
+    },
+    {
+      "id": "EX-P021-M-02",
+      "skill_id": "P021",
+      "level": "maitrise",
+      "type": "qcm",
+      "statement": "Trois chemins mesurent 0,45 km ; 4 600 dm et 47 000 cm.\n\nQuelle est la longueur du plus long, en kilomètres ?",
+      "image": null,
+      "choices": [
+        {
+          "key": "a",
+          "text": "0,46 km",
+          "misconception": "L'élève divise 47 000 cm par 1 000, comme si c'étaient des millimètres : il trouve 47 m et croit que le chemin de 4 600 dm, soit 460 m, est le plus long. Or 1 m = 100 cm, donc 47 000 cm = 470 m."
+        },
+        {
+          "key": "b",
+          "text": "4,7 km",
+          "misconception": "L'élève trouve bien le chemin de 470 m, mais il divise par 100 au lieu de 1 000, comme si 1 km = 100 m. 4,7 km, c'est 4 700 m."
+        },
+        {
+          "key": "c",
+          "text": "0,47 km",
+          "misconception": null
+        },
+        {
+          "key": "d",
+          "text": "0,45 km",
+          "misconception": "L'élève pense que la longueur écrite dans la plus grande unité est forcément la plus grande. Or 0,45 km = 450 m, la plus courte des trois."
+        }
+      ],
+      "answer": {
+        "value": "c"
+      },
+      "solution_steps": [
+        "Pour comparer, on écrit les trois longueurs en mètres.",
+        "1 km = 1 000 m, donc 0,45 km = 450 m, car $0{,}45 \\times 1\\,000 = 450$.",
+        "1 m = 10 dm, donc 4 600 dm = 460 m, car $4\\,600 \\div 10 = 460$.",
+        "1 m = 100 cm, donc 47 000 cm = 470 m, car $47\\,000 \\div 100 = 470$.",
+        "450 m < 460 m < 470 m : le plus long est le chemin de 47 000 cm, qui mesure 470 m.",
+        "On revient aux kilomètres, unité 1 000 fois plus grande : $470 \\div 1\\,000 = 0{,}47$. Le plus long mesure **0,47 km**."
+      ],
+      "hint": "Convertis les trois longueurs en mètres avant de comparer.",
+      "estimated_duration_s": 120,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 3, 6e, les longueurs : « L'élève sait convertir en mètre une longueur donnée dans une autre unité, multiple ou sous-multiple du mètre. »"
+    },
+    {
+      "id": "EX-P022-D-01",
+      "skill_id": "P022",
+      "level": "decouverte",
+      "type": "numerique",
+      "statement": "Une nappe carrée a des côtés de 1,35 m.\n\nCalcule son périmètre avec la formule du carré $P = 4 \\times c$, où $c$ est la longueur d'un côté.",
+      "image": null,
+      "answer": {
+        "value": 5.4,
+        "unit": "m",
+        "accepted": [
+          "5,4",
+          "5,40",
+          "5,4 m",
+          "5,40 m"
+        ]
+      },
+      "solution_steps": [
+        "Un carré a 4 côtés de même longueur. Son contour mesure $c + c + c + c$, c'est-à-dire $4 \\times c$ : c'est la formule $P = 4 \\times c$.",
+        "On remplace $c$ par 1,35 : $P = 4 \\times 1{,}35$.",
+        "On pose $135 \\times 4 = 540$, puis on place la virgule : deux chiffres après la virgule dans 1,35, donc deux dans le produit : 5,40.",
+        "Le périmètre de la nappe est **5,4 m**. Contrôle : $4 \\times 1 = 4$ et $4 \\times 1{,}5 = 6$, le résultat est bien entre 4 m et 6 m."
+      ],
+      "hint": "Remplace la lettre $c$ par la longueur du côté.",
+      "estimated_duration_s": 60,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 3, 6e : l'élève substitue une valeur numérique à une lettre pour calculer, en situation, un périmètre ou une aire."
+    },
+    {
+      "id": "EX-P022-D-02",
+      "skill_id": "P022",
+      "level": "decouverte",
+      "type": "qcm",
+      "statement": "Une étiquette rectangulaire mesure 8,5 cm de long et 3,2 cm de large.\n\nAvec la formule $P = 2 \\times (L + l)$, quel est son périmètre ?",
+      "image": null,
+      "choices": [
+        {
+          "key": "a",
+          "text": "11,7 cm",
+          "misconception": "L'élève calcule seulement L + l = 11,7 : il fait le tour d'une moitié du rectangle et oublie de multiplier par 2."
+        },
+        {
+          "key": "b",
+          "text": "23,4 cm",
+          "misconception": null
+        },
+        {
+          "key": "c",
+          "text": "20,2 cm",
+          "misconception": "L'élève oublie les parenthèses et calcule 2 × 8,5 + 3,2 = 20,2 : il double la longueur mais pas la largeur, il manque un côté."
+        },
+        {
+          "key": "d",
+          "text": "27,2 cm",
+          "misconception": "L'élève multiplie la longueur par la largeur (8,5 × 3,2 = 27,2) : il confond le périmètre avec l'aire."
+        }
+      ],
+      "answer": {
+        "value": "b"
+      },
+      "solution_steps": [
+        "Le contour du rectangle passe par 2 longueurs et 2 largeurs : $L + l + L + l$, c'est-à-dire $2 \\times (L + l)$.",
+        "On remplace $L$ par 8,5 et $l$ par 3,2 : $P = 2 \\times (8{,}5 + 3{,}2) = 2 \\times 11{,}7 = 23{,}4$.",
+        "Les parenthèses comptent : on additionne d'abord la longueur et la largeur, puis on double. Le périmètre est **23,4 cm**."
+      ],
+      "hint": "Calcule d'abord ce qui est entre parenthèses.",
+      "estimated_duration_s": 60,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 3, 6e : l'élève sait calculer le périmètre d'un carré et d'un rectangle."
+    },
+    {
+      "id": "EX-P022-E-01",
+      "skill_id": "P022",
+      "level": "entrainement",
+      "type": "numerique",
+      "statement": "Un plan de travail de cuisine rectangulaire mesure 3 m de long et 65 cm de large. On colle une baguette de bois tout autour.\n\nQuelle longueur de baguette faut-il, en centimètres ?",
+      "image": null,
+      "answer": {
+        "value": 730,
+        "unit": "cm",
+        "accepted": [
+          "730 cm",
+          "730cm"
+        ]
+      },
+      "solution_steps": [
+        "La baguette suit le contour : il faut le périmètre du rectangle, $P = 2 \\times (L + l)$.",
+        "Les deux longueurs ne sont pas dans la même unité : avant de remplacer, on convertit. 1 m = 100 cm, donc 3 m = 300 cm.",
+        "$P = 2 \\times (300 + 65) = 2 \\times 365 = 730$.",
+        "Il faut **730 cm** de baguette, soit 7 m et 30 cm. Sans conversion, on aurait écrit $2 \\times (3 + 65) = 136$ : un résultat absurde, qui mélange des mètres et des centimètres."
+      ],
+      "hint": "La longueur et la largeur sont-elles dans la même unité ?",
+      "estimated_duration_s": 90,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 3, 6e : résoudre des problèmes impliquant des longueurs ; l'élève sait calculer le périmètre d'un carré et d'un rectangle."
+    },
+    {
+      "id": "EX-P022-E-02",
+      "skill_id": "P022",
+      "level": "entrainement",
+      "type": "vrai_faux",
+      "statement": "Hugo dit : « Pour un rectangle de longueur $L$ et de largeur $l$, les calculs $L + l + L + l$ et $2 \\times (L + l)$ donnent toujours le même périmètre. »",
+      "image": null,
+      "answer": {
+        "value": true
+      },
+      "solution_steps": [
+        "$L + l + L + l$ suit le contour du rectangle : une longueur, une largeur, une longueur, une largeur.",
+        "On regroupe une longueur et une largeur : $L + l + L + l = (L + l) + (L + l)$. Ajouter deux fois la même somme, c'est la multiplier par 2 : $(L + l) + (L + l) = 2 \\times (L + l)$.",
+        "Exemple avec $L = 12{,}6$ et $l = 4{,}8$ : $12{,}6 + 4{,}8 + 12{,}6 + 4{,}8 = 34{,}8$ et $2 \\times (12{,}6 + 4{,}8) = 2 \\times 17{,}4 = 34{,}8$.",
+        "Hugo a **raison** : ce sont deux écritures de la même formule du périmètre du rectangle. La seconde demande moins de calculs."
+      ],
+      "hint": "Regroupe une longueur et une largeur.",
+      "estimated_duration_s": 75,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 3, 6e : les formules du périmètre d'un carré, d'un rectangle, d'un disque et celles de l'aire d'un carré ou d'un rectangle s'installent progressivement."
+    },
+    {
+      "id": "EX-P022-M-01",
+      "skill_id": "P022",
+      "level": "maitrise",
+      "type": "numerique",
+      "statement": "Un jardin rectangulaire est entouré d'une clôture de 64 m. Sa longueur mesure 19,5 m.\n\nQuelle est sa largeur ?",
+      "image": null,
+      "answer": {
+        "value": 12.5,
+        "unit": "m",
+        "accepted": [
+          "12,5",
+          "12,50",
+          "12,5 m",
+          "12,50 m"
+        ]
+      },
+      "solution_steps": [
+        "La clôture fait le tour du jardin : le périmètre est 64 m. Le contour passe par 2 longueurs et 2 largeurs, soit deux fois (une longueur + une largeur), comme dans $P = 2 \\times (L + l)$.",
+        "Une longueur plus une largeur font donc la moitié du périmètre : $64 \\div 2 = 32$, soit 32 m. C'est le demi-périmètre.",
+        "$l = 32 - 19{,}5 = 12{,}5$. On pose la soustraction en alignant les virgules : $32{,}0 - 19{,}5 = 12{,}5$.",
+        "La largeur est **12,5 m**. Vérification : $2 \\times (19{,}5 + 12{,}5) = 2 \\times 32 = 64$."
+      ],
+      "hint": "Que vaut une longueur plus une largeur ?",
+      "estimated_duration_s": 150,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 3, 6e : résoudre des problèmes impliquant des longueurs ; l'élève substitue une valeur numérique à une lettre pour calculer, en situation, un périmètre ou une aire."
+    },
+    {
+      "id": "EX-P022-M-02",
+      "skill_id": "P022",
+      "level": "maitrise",
+      "type": "qcm",
+      "statement": "Un rectangle mesure 9,7 cm de long et 6,3 cm de large. Un carré a le même périmètre que ce rectangle.\n\nQuelle est la longueur du côté du carré ?",
+      "image": null,
+      "choices": [
+        {
+          "key": "a",
+          "text": "16 cm",
+          "misconception": "L'élève divise le périmètre (32 cm) par 2 au lieu de 4 : il applique au carré le demi-périmètre du rectangle."
+        },
+        {
+          "key": "b",
+          "text": "4 cm",
+          "misconception": "L'élève prend L + l = 16 pour le périmètre du rectangle, sans doubler, puis divise par 4."
+        },
+        {
+          "key": "c",
+          "text": "32 cm",
+          "misconception": "L'élève s'arrête au périmètre du rectangle et le donne comme côté du carré."
+        },
+        {
+          "key": "d",
+          "text": "8 cm",
+          "misconception": null
+        }
+      ],
+      "answer": {
+        "value": "d"
+      },
+      "solution_steps": [
+        "Périmètre du rectangle : $P = 2 \\times (9{,}7 + 6{,}3) = 2 \\times 16 = 32$, soit 32 cm.",
+        "Pour le carré, $P = 4 \\times c$ : il faut donc $4 \\times c = 32$.",
+        "$c = 32 \\div 4 = 8$. Le côté du carré mesure **8 cm**. Vérification : $4 \\times 8 = 32$."
+      ],
+      "hint": "Calcule d'abord le périmètre du rectangle, puis utilise la formule du carré à l'envers.",
+      "estimated_duration_s": 120,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 3, 6e : l'élève sait calculer le périmètre d'un carré et d'un rectangle."
+    },
+    {
+      "id": "EX-P023-D-01",
+      "skill_id": "P023",
+      "level": "decouverte",
+      "type": "numerique",
+      "statement": "Un cerceau de gymnastique a un diamètre de 80 cm.\n\nEn prenant 3,14 pour $\\pi$, calcule son périmètre avec la formule $P = d \\times \\pi$, où $d$ est le diamètre.",
+      "image": null,
+      "answer": {
+        "value": 251.2,
+        "unit": "cm",
+        "accepted": [
+          "251,2",
+          "251,20",
+          "251,2 cm",
+          "251,20 cm"
+        ]
+      },
+      "solution_steps": [
+        "Le périmètre d'un disque (on dit souvent le périmètre du cercle) s'obtient en multipliant son diamètre par $\\pi$ : $P = d \\times \\pi$.",
+        "On remplace $d$ par 80 et $\\pi$ par 3,14 : $P = 80 \\times 3{,}14$.",
+        "On pose $314 \\times 80 = 25\\,120$, puis on place la virgule : deux chiffres après la virgule dans 3,14, donc deux dans le produit : 251,20.",
+        "Le périmètre du cerceau est **251,2 cm**. Contrôle : c'est un peu plus que $3 \\times 80 = 240$, comme attendu puisque $\\pi$ est un peu plus grand que 3. Le résultat est une valeur approchée, car 3,14 est une valeur approchée de $\\pi$."
+      ],
+      "hint": "Remplace $d$ par le diamètre et $\\pi$ par 3,14.",
+      "estimated_duration_s": 75,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 3, 6e : connaître la formule du périmètre d'un disque ; calculer le périmètre d'un disque."
+    },
+    {
+      "id": "EX-P023-D-02",
+      "skill_id": "P023",
+      "level": "decouverte",
+      "type": "qcm",
+      "statement": "En prenant 3,14 pour $\\pi$, une assiette de 25 cm de diamètre a un périmètre de 78,5 cm.\n\nLe périmètre d'un disque est proportionnel à son diamètre. Quel est le périmètre d'un plat de 50 cm de diamètre ?",
+      "image": null,
+      "choices": [
+        {
+          "key": "a",
+          "text": "157 cm",
+          "misconception": null
+        },
+        {
+          "key": "b",
+          "text": "103,5 cm",
+          "misconception": "L'élève ajoute 25 cm au périmètre parce que le diamètre a augmenté de 25 cm : il raisonne par addition au lieu de multiplier."
+        },
+        {
+          "key": "c",
+          "text": "314 cm",
+          "misconception": "L'élève prend 50 cm pour un rayon et calcule 2 × 50 × 3,14 = 314 : il confond rayon et diamètre."
+        },
+        {
+          "key": "d",
+          "text": "128,5 cm",
+          "misconception": "L'élève ajoute le nouveau diamètre au périmètre de l'assiette (78,5 + 50) au lieu de multiplier."
+        }
+      ],
+      "answer": {
+        "value": "a"
+      },
+      "solution_steps": [
+        "Le périmètre est proportionnel au diamètre : quand le diamètre est multiplié par un nombre, le périmètre est multiplié par le même nombre.",
+        "Le diamètre passe de 25 cm à 50 cm : il est multiplié par 2 ($25 \\times 2 = 50$). Le périmètre est donc multiplié par 2 : $78{,}5 \\times 2 = 157$.",
+        "Vérification avec la formule : $P = 50 \\times 3{,}14 = 157$. Le périmètre du plat est **157 cm**."
+      ],
+      "hint": "Par combien le diamètre est-il multiplié ?",
+      "estimated_duration_s": 60,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 3, 6e : savoir que le périmètre du disque est proportionnel à son diamètre."
+    },
+    {
+      "id": "EX-P023-E-01",
+      "skill_id": "P023",
+      "level": "entrainement",
+      "type": "numerique",
+      "statement": "Le cadran rond d'une horloge a un rayon de 18 cm.\n\nEn prenant 3,14 pour $\\pi$, calcule le périmètre du cadran. Donne le résultat arrondi au centimètre.",
+      "image": null,
+      "answer": {
+        "value": 113,
+        "unit": "cm",
+        "tolerance": 0.05,
+        "accepted": [
+          "113 cm",
+          "113cm",
+          "113,04 cm",
+          "113,04cm"
+        ]
+      },
+      "solution_steps": [
+        "On connaît le rayon, pas le diamètre. Le diamètre est le double du rayon : $d = 2 \\times 18 = 36$, soit 36 cm.",
+        "$P = d \\times \\pi$, donc $P = 36 \\times 3{,}14 = 113{,}04$. On pose $314 \\times 36 = 11\\,304$, puis on place deux chiffres après la virgule.",
+        "Arrondi au centimètre : 113,04 est entre 113 et 114, plus près de 113. Le périmètre du cadran est d'environ **113 cm**.",
+        "Piège : $18 \\times 3{,}14 = 56{,}52$ ne donne que la moitié du tour, car 18 cm est le rayon et non le diamètre. On peut aussi écrire $P = 2 \\times r \\times \\pi$."
+      ],
+      "hint": "La formule utilise le diamètre. Que vaut le diamètre quand on connaît le rayon ?",
+      "estimated_duration_s": 90,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 3, 6e : connaître la formule du périmètre d'un disque ; calculer le périmètre d'un disque."
+    },
+    {
+      "id": "EX-P023-E-02",
+      "skill_id": "P023",
+      "level": "entrainement",
+      "type": "vrai_faux",
+      "statement": "Une table ronde a un rayon de 45 cm. Zoé prend 3,14 pour $\\pi$ et écrit : $45 \\times 3{,}14 = 141{,}3$, donc le périmètre de la table est 141,3 cm.\n\nZoé a-t-elle raison ?",
+      "image": null,
+      "answer": {
+        "value": false
+      },
+      "solution_steps": [
+        "Le calcul $45 \\times 3{,}14 = 141{,}3$ est juste, mais ce n'est pas le bon calcul : la formule $P = d \\times \\pi$ utilise le **diamètre**, et 45 cm est le rayon.",
+        "Le diamètre est le double du rayon : $d = 2 \\times 45 = 90$, soit 90 cm.",
+        "$P = 90 \\times 3{,}14 = 282{,}6$. Le périmètre est 282,6 cm, le double du résultat de Zoé : Zoé a **tort**.",
+        "Même calcul avec l'autre écriture de la formule : $P = 2 \\times r \\times \\pi = 2 \\times 45 \\times 3{,}14 = 282{,}6$."
+      ],
+      "hint": "Dans $P = d \\times \\pi$, que représente $d$ ?",
+      "estimated_duration_s": 75,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 3, 6e : connaître la formule du périmètre d'un disque."
+    },
+    {
+      "id": "EX-P023-M-01",
+      "skill_id": "P023",
+      "level": "maitrise",
+      "type": "qcm",
+      "statement": "La roue d'une brouette a un diamètre de 35 cm. Pendant le trajet, la roue fait 20 tours.\n\nEn prenant 3,14 pour $\\pi$, quelle distance la brouette a-t-elle parcourue ?",
+      "image": null,
+      "choices": [
+        {
+          "key": "a",
+          "text": "700 cm",
+          "misconception": "L'élève multiplie le diamètre par le nombre de tours (35 × 20 = 700) : il croit qu'en un tour la roue avance de son diamètre, et oublie π."
+        },
+        {
+          "key": "b",
+          "text": "4 396 cm",
+          "misconception": "L'élève prend 35 cm pour un rayon : 2 × 35 × 3,14 × 20 = 4 396. Il confond rayon et diamètre."
+        },
+        {
+          "key": "c",
+          "text": "2 198 cm",
+          "misconception": null
+        },
+        {
+          "key": "d",
+          "text": "109,9 cm",
+          "misconception": "L'élève calcule la distance parcourue pendant un seul tour de roue et oublie les 20 tours."
+        }
+      ],
+      "answer": {
+        "value": "c"
+      },
+      "solution_steps": [
+        "En un tour, la roue avance de la longueur de son contour, c'est-à-dire de son périmètre : $P = 35 \\times 3{,}14 = 109{,}9$, soit 109,9 cm.",
+        "En 20 tours, elle avance 20 fois plus : $109{,}9 \\times 20 = 2\\,198$. On pose $1\\,099 \\times 20 = 21\\,980$ et on place un chiffre après la virgule : 2 198,0.",
+        "La brouette a parcouru **2 198 cm**."
+      ],
+      "hint": "De combien la roue avance-t-elle en un seul tour ?",
+      "estimated_duration_s": 150,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 3, 6e : calculer le périmètre d'un disque ; résoudre des problèmes impliquant des longueurs."
+    },
+    {
+      "id": "EX-P023-M-02",
+      "skill_id": "P023",
+      "level": "maitrise",
+      "type": "numerique",
+      "statement": "Un bassin rond a un diamètre de 30 m. Un bassin carré a des côtés de 30 m.\n\nEn prenant 3,14 pour $\\pi$, de combien de mètres le tour du bassin carré est-il plus long que le tour du bassin rond ?",
+      "image": null,
+      "answer": {
+        "value": 25.8,
+        "unit": "m",
+        "accepted": [
+          "25,8",
+          "25,80",
+          "25,8 m",
+          "25,80 m"
+        ]
+      },
+      "solution_steps": [
+        "Tour du bassin rond : $P = d \\times \\pi = 30 \\times 3{,}14 = 94{,}2$, soit 94,2 m.",
+        "Tour du bassin carré : $P = 4 \\times c = 4 \\times 30 = 120$, soit 120 m.",
+        "Différence : $120 - 94{,}2 = 25{,}8$. On pose la soustraction en alignant les virgules : $120{,}0 - 94{,}2 = 25{,}8$.",
+        "Le tour du bassin carré est plus long de **25,8 m**. C'est logique : un disque de 30 m de diamètre tient à l'intérieur d'un carré de 30 m de côté, son contour est plus court."
+      ],
+      "hint": "Calcule le tour de chaque bassin avec la formule qui lui correspond, puis la différence.",
+      "estimated_duration_s": 150,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 3, 6e : calculer le périmètre d'un disque ; résoudre des problèmes impliquant des longueurs."
+    },
+    {
+      "id": "EX-P024-D-01",
+      "skill_id": "P024",
+      "level": "decouverte",
+      "type": "numerique",
+      "statement": "La formule de l'aire d'un rectangle est $A = L \\times l$, où $L$ est la longueur et $l$ la largeur.\n\nUne tablette de chocolat mesure 16 cm de long et 8 cm de large. Quelle est son aire, en cm² ?",
+      "image": null,
+      "answer": {
+        "value": 128,
+        "unit": "cm²",
+        "accepted": [
+          "128 cm²",
+          "128 cm2"
+        ]
+      },
+      "solution_steps": [
+        "On remplace les lettres par les dimensions de la tablette : la longueur vaut 16 cm, la largeur 8 cm.",
+        "$A = 16 \\times 8 = 128$.",
+        "L'aire est **128 cm²** : des longueurs en cm donnent une aire en cm².",
+        "C'est ce qu'on comptait au CM2 : 8 rangées de 16 carrés de 1 cm de côté. La formule résume ce dénombrement."
+      ],
+      "hint": "Remplace $L$ et $l$ par les dimensions de la tablette.",
+      "estimated_duration_s": 60,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 3, classe de 6e, Les aires : « Connaître la formule de l'aire d'un carré ou d'un rectangle »"
+    },
+    {
+      "id": "EX-P024-D-02",
+      "skill_id": "P024",
+      "level": "decouverte",
+      "type": "qcm",
+      "statement": "La formule de l'aire d'un carré de côté $c$ est $A = c \\times c$.\n\nUn potager carré mesure 11 m de côté. Quelle est son aire ?",
+      "image": null,
+      "choices": [
+        {
+          "key": "a",
+          "text": "44 m²",
+          "misconception": "L'élève additionne les quatre côtés, 11 + 11 + 11 + 11 = 44 : c'est le périmètre du potager, la longueur de sa clôture en m, pas sa surface."
+        },
+        {
+          "key": "b",
+          "text": "22 m²",
+          "misconception": "L'élève lit $c \\times c$ comme deux fois le côté : il calcule $2 \\times 11 = 22$."
+        },
+        {
+          "key": "c",
+          "text": "121 m²",
+          "misconception": null
+        }
+      ],
+      "answer": {
+        "value": "c"
+      },
+      "solution_steps": [
+        "On remplace $c$ par 11 dans la formule de l'aire du carré.",
+        "$A = 11 \\times 11 = 121$.",
+        "Le potager a une aire de **121 m²**.",
+        "44 m serait la longueur de la clôture, le périmètre : 11 + 11 + 11 + 11 = 44. Le périmètre se mesure en m, l'aire en m²."
+      ],
+      "hint": "Que vaut $c \\times c$ quand $c$ vaut 11 ?",
+      "estimated_duration_s": 60,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 3, classe de 6e, Les aires : « Connaître la formule de l'aire d'un carré ou d'un rectangle »"
+    },
+    {
+      "id": "EX-P024-E-01",
+      "skill_id": "P024",
+      "level": "entrainement",
+      "type": "numerique",
+      "statement": "Une terrasse rectangulaire mesure 6,4 m de long et 4 m de large.\n\nCalcule son aire avec la formule, en m².",
+      "image": null,
+      "answer": {
+        "value": 25.6,
+        "unit": "m²",
+        "accepted": [
+          "25,6",
+          "25,60",
+          "25,6 m²",
+          "25,6 m2"
+        ]
+      },
+      "solution_steps": [
+        "Aire d'un rectangle : $A = L \\times l$, ici $A = 6{,}4 \\times 4$.",
+        "On calcule $64 \\times 4 = 256$, puis on place la virgule : 6,4 a un chiffre après la virgule, le résultat aussi.",
+        "$6{,}4 \\times 4 = 25{,}6$ : la terrasse a une aire de **25,6 m²**.",
+        "Ordre de grandeur : $6 \\times 4 = 24$, le résultat est cohérent.",
+        "À ne pas confondre avec le tour de la terrasse : 6,4 + 4 + 6,4 + 4 = 20,8. C'est son périmètre, 20,8 m."
+      ],
+      "hint": "Multiplie d'abord comme si 6,4 était 64, puis place la virgule.",
+      "estimated_duration_s": 90,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 3, classe de 6e, Les aires : « Calculer l'aire d'un carré ou d'un rectangle »"
+    },
+    {
+      "id": "EX-P024-E-02",
+      "skill_id": "P024",
+      "level": "entrainement",
+      "type": "vrai_faux",
+      "statement": "Un rectangle mesure 15 cm de long et 4 cm de large. Inès écrit : « 15 + 4 + 15 + 4 = 38, donc son aire est 38 cm². »\n\nInès a-t-elle raison ?",
+      "image": null,
+      "answer": {
+        "value": false
+      },
+      "solution_steps": [
+        "Inès a additionné les quatre côtés : c'est le périmètre, la longueur du contour, 38 cm.",
+        "L'aire se calcule avec la formule $A = L \\times l$ : $A = 15 \\times 4 = 60$.",
+        "L'aire est 60 cm². Inès a **tort** : elle confond périmètre et aire.",
+        "Les unités le signalent : le périmètre est une longueur (cm), l'aire une surface (cm²)."
+      ],
+      "hint": "Quelle formule donne l'aire d'un rectangle ? Inès l'a-t-elle utilisée ?",
+      "estimated_duration_s": 60,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 3, classe de 6e, Les aires : « Calculer l'aire d'un carré ou d'un rectangle »"
+    },
+    {
+      "id": "EX-P024-M-01",
+      "skill_id": "P024",
+      "level": "maitrise",
+      "type": "qcm",
+      "statement": "Un napperon carré a une aire de 64 cm².\n\nQuelle est la longueur de son côté ?",
+      "image": null,
+      "choices": [
+        {
+          "key": "a",
+          "text": "8 cm",
+          "misconception": null
+        },
+        {
+          "key": "b",
+          "text": "16 cm",
+          "misconception": "L'élève partage l'aire en 4, comme s'il retrouvait le côté à partir du périmètre : $64 \\div 4 = 16$. Un carré de 16 cm de côté aurait une aire de 256 cm²."
+        },
+        {
+          "key": "c",
+          "text": "32 cm",
+          "misconception": "L'élève lit $c \\times c$ comme deux fois le côté et calcule $64 \\div 2 = 32$."
+        }
+      ],
+      "answer": {
+        "value": "a"
+      },
+      "solution_steps": [
+        "Pour un carré, $A = c \\times c$. On cherche donc le nombre qui, multiplié par lui-même, donne 64.",
+        "Dans les tables : $8 \\times 8 = 64$.",
+        "Le côté du napperon mesure **8 cm**.",
+        "Vérification avec la formule : $8 \\times 8 = 64$, soit 64 cm². Avec un côté de 16 cm, on trouverait $16 \\times 16 = 256$, beaucoup trop."
+      ],
+      "hint": "Quel nombre, multiplié par lui-même, donne 64 ?",
+      "estimated_duration_s": 75,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 3, classe de 6e, Les aires : « Connaître la formule de l'aire d'un carré ou d'un rectangle »"
+    },
+    {
+      "id": "EX-P024-M-02",
+      "skill_id": "P024",
+      "level": "maitrise",
+      "type": "numerique",
+      "statement": "On repeint un mur rectangulaire de 6,5 m de long et 3 m de haut. Un pot de peinture couvre 4 m².\n\nCombien de pots faut-il acheter, au minimum ?",
+      "image": null,
+      "answer": {
+        "value": 5,
+        "unit": null,
+        "accepted": [
+          "5 pots"
+        ]
+      },
+      "solution_steps": [
+        "On calcule d'abord l'aire du mur avec la formule du rectangle : $A = 6{,}5 \\times 3 = 19{,}5$. Le mur a une aire de 19,5 m².",
+        "4 pots couvrent $4 \\times 4 = 16$ m² : c'est moins que 19,5 m², il resterait 3,5 m² sans peinture.",
+        "5 pots couvrent $5 \\times 4 = 20$ m² : c'est assez.",
+        "Il faut acheter **5 pots** au minimum.",
+        "Attention à ne pas calculer le périmètre : 6,5 + 3 + 6,5 + 3 = 19 donne la longueur du bord du mur, 19 m, pas la surface à peindre."
+      ],
+      "hint": "Calcule d'abord l'aire du mur, puis cherche combien de pots couvrent au moins cette aire.",
+      "estimated_duration_s": 120,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 3, classe de 6e, Les aires : « Calculer l'aire d'un carré ou d'un rectangle »"
+    },
+    {
+      "id": "EX-P025-D-01",
+      "skill_id": "P025",
+      "level": "decouverte",
+      "type": "numerique",
+      "statement": "Un tapis de salon a une aire de 4,7 m². On sait que 1 m² = 100 dm².\n\nQuelle est son aire en dm² ?",
+      "image": null,
+      "answer": {
+        "value": 470,
+        "unit": "dm²",
+        "accepted": [
+          "470 dm²",
+          "470 dm2"
+        ]
+      },
+      "solution_steps": [
+        "1 m² = 100 dm² : pour passer des m² aux dm², on multiplie par 100.",
+        "$4{,}7 \\times 100 = 470$ : le chiffre 4 des unités devient le chiffre des centaines, le 7 des dixièmes devient celui des dizaines.",
+        "Le tapis a une aire de **470 dm²**.",
+        "47 dm² serait faux : c'est le rapport 10 des longueurs (1 m = 10 dm). Pour les aires, le rapport est 100."
+      ],
+      "hint": "Par quel nombre multiplie-t-on pour passer des m² aux dm² ?",
+      "estimated_duration_s": 60,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 3, classe de 6e, Les aires : « Effectuer des conversions d'aire »"
+    },
+    {
+      "id": "EX-P025-D-02",
+      "skill_id": "P025",
+      "level": "decouverte",
+      "type": "qcm",
+      "statement": "Une carte postale a une aire de 150 cm². On sait que 1 cm² = 0,01 dm².\n\nQuelle est son aire en dm² ?",
+      "image": null,
+      "choices": [
+        {
+          "key": "a",
+          "text": "1,5 dm²",
+          "misconception": null
+        },
+        {
+          "key": "b",
+          "text": "15 dm²",
+          "misconception": "L'élève divise par 10, le rapport des longueurs (1 dm = 10 cm), au lieu de 100 pour les aires."
+        },
+        {
+          "key": "c",
+          "text": "15 000 dm²",
+          "misconception": "L'élève convertit dans le mauvais sens : il multiplie par 100, alors qu'on passe à une unité plus grande, donc à un nombre plus petit."
+        }
+      ],
+      "answer": {
+        "value": "a"
+      },
+      "solution_steps": [
+        "1 cm² est un centième de dm² : il faut 100 cm² pour faire 1 dm².",
+        "Passer des cm² aux dm², c'est diviser par 100 : $150 \\div 100 = 1{,}5$.",
+        "La carte a une aire de **1,5 dm²**.",
+        "Contrôle : 1 dm² = 100 cm², donc 1,5 dm², c'est $1{,}5 \\times 100 = 150$ cm². On retrouve l'aire de départ."
+      ],
+      "hint": "Combien de cm² faut-il pour faire 1 dm² ?",
+      "estimated_duration_s": 60,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 3, classe de 6e, Les aires : « L'élève mémorise que 1 cm² est égal à un centième de 1 dm² »"
+    },
+    {
+      "id": "EX-P025-E-01",
+      "skill_id": "P025",
+      "level": "entrainement",
+      "type": "vrai_faux",
+      "statement": "Lina affirme : « 0,8 m² = 8 dm², car 1 m = 10 dm. »\n\nLina a-t-elle raison ?",
+      "image": null,
+      "answer": {
+        "value": false
+      },
+      "solution_steps": [
+        "1 m = 10 dm concerne les longueurs. Pour les aires, un carré de 1 m de côté contient 10 rangées de 10 carrés de 1 dm de côté : 1 m² = 100 dm².",
+        "$0{,}8 \\times 100 = 80$ : 0,8 m² = 80 dm².",
+        "Lina a **tort** : elle a utilisé le rapport 10 des longueurs au lieu du rapport 100 des aires."
+      ],
+      "hint": "Combien de dm² dans 1 m² ?",
+      "estimated_duration_s": 60,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 3, classe de 6e, Les aires : « Effectuer des conversions d'aire »"
+    },
+    {
+      "id": "EX-P025-E-02",
+      "skill_id": "P025",
+      "level": "entrainement",
+      "type": "numerique",
+      "statement": "Un coupon de tissu a une aire de 65 dm².\n\nQuelle est son aire en m² ?",
+      "image": null,
+      "answer": {
+        "value": 0.65,
+        "unit": "m²",
+        "accepted": [
+          "0,65",
+          "0,65 m²",
+          "0,65 m2"
+        ]
+      },
+      "solution_steps": [
+        "1 dm² = 0,01 m² : il faut 100 dm² pour faire 1 m².",
+        "Passer des dm² aux m², c'est diviser par 100 : $65 \\div 100 = 0{,}65$.",
+        "Le tissu a une aire de **0,65 m²**, un peu plus d'un demi-mètre carré.",
+        "6,5 m² serait le rapport 10 des longueurs. 6 500 m² serait une conversion dans le mauvais sens : on passe à une unité plus grande, le nombre doit diminuer."
+      ],
+      "hint": "Combien de dm² faut-il pour faire 1 m² ?",
+      "estimated_duration_s": 75,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 3, classe de 6e, Les aires : « Effectuer des conversions d'aire »"
+    },
+    {
+      "id": "EX-P025-M-01",
+      "skill_id": "P025",
+      "level": "maitrise",
+      "type": "qcm",
+      "statement": "Une vitre a une aire de 0,36 m².\n\nQuelle est son aire en cm² ?",
+      "image": null,
+      "choices": [
+        {
+          "key": "a",
+          "text": "36 cm²",
+          "misconception": "L'élève transpose aux aires la relation des longueurs 1 m = 100 cm et croit que 1 m² = 100 cm². 36 cm², c'est l'aire d'un carré de 6 cm de côté : trop petit pour une vitre."
+        },
+        {
+          "key": "b",
+          "text": "0,0036 cm²",
+          "misconception": "L'élève divise par 100 au lieu de multiplier : il convertit dans le mauvais sens. Passer à une unité plus petite doit faire augmenter le nombre."
+        },
+        {
+          "key": "c",
+          "text": "3 600 cm²",
+          "misconception": null
+        }
+      ],
+      "answer": {
+        "value": "c"
+      },
+      "solution_steps": [
+        "On passe par les dm² : 1 m² = 100 dm², donc $0{,}36 \\times 100 = 36$. 0,36 m² = 36 dm².",
+        "1 dm² = 100 cm², donc $36 \\times 100 = 3\\,600$. 36 dm² = 3 600 cm².",
+        "La vitre a une aire de **3 600 cm²**, celle d'un carré de 60 cm de côté : $60 \\times 60 = 3\\,600$.",
+        "Entre m² et cm², le rapport est $100 \\times 100 = 10\\,000$, et non 100 comme entre m et cm."
+      ],
+      "hint": "Convertis d'abord en dm², puis en cm².",
+      "estimated_duration_s": 90,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 3, classe de 6e, Les aires : « Effectuer des conversions d'aire »"
+    },
+    {
+      "id": "EX-P025-M-02",
+      "skill_id": "P025",
+      "level": "maitrise",
+      "type": "numerique",
+      "statement": "On veut carreler un mur de 2,4 m² avec des carreaux de 4 dm² chacun.\n\nCombien de carreaux faut-il ?",
+      "image": null,
+      "answer": {
+        "value": 60,
+        "unit": null,
+        "accepted": [
+          "60 carreaux"
+        ]
+      },
+      "solution_steps": [
+        "Les deux aires ne sont pas dans la même unité : on convertit l'aire du mur en dm².",
+        "1 m² = 100 dm², donc $2{,}4 \\times 100 = 240$ : le mur mesure 240 dm².",
+        "Chaque carreau couvre 4 dm² : $240 \\div 4 = 60$.",
+        "Il faut **60 carreaux**. Vérification : $60 \\times 4 = 240$.",
+        "Avec le rapport 10 des longueurs, on trouverait 24 dm² et seulement $24 \\div 4 = 6$ carreaux : de quoi couvrir moins d'un quart de mètre carré."
+      ],
+      "hint": "Écris d'abord l'aire du mur en dm².",
+      "estimated_duration_s": 100,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 3, classe de 6e, Les aires : « Effectuer des conversions d'aire »"
+    },
+    {
+      "id": "EX-P026-D-01",
+      "skill_id": "P026",
+      "level": "decouverte",
+      "type": "numerique",
+      "statement": "Une boîte est remplie de cubes de 1 cm d'arête, qui ont chacun un volume de 1 cm³. Elle contient 2 couches ; chaque couche compte 6 rangées de 7 cubes.\n\nQuel est le volume de la boîte, en cm³ ?",
+      "image": null,
+      "answer": {
+        "value": 84,
+        "unit": "cm³",
+        "accepted": [
+          "84 cm³",
+          "84 cm3"
+        ]
+      },
+      "solution_steps": [
+        "Chaque cube a un volume de 1 cm³ : le volume de la boîte, c'est le nombre de cubes qu'elle contient.",
+        "Une couche : 6 rangées de 7 cubes, $6 \\times 7 = 42$ cubes.",
+        "2 couches : $2 \\times 42 = 84$ cubes.",
+        "Le volume de la boîte est **84 cm³**.",
+        "42 est le nombre de cubes d'une seule couche. Le fond de la boîte a une aire de 42 cm² : une aire se compte en carrés, un volume en cubes."
+      ],
+      "hint": "Compte d'abord les cubes d'une couche.",
+      "estimated_duration_s": 60,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 3, classe de 6e, Les volumes : « Connaître l'unité centimètre cube »"
+    },
+    {
+      "id": "EX-P026-D-02",
+      "skill_id": "P026",
+      "level": "decouverte",
+      "type": "vrai_faux",
+      "statement": "Un pavé est formé de 2 couches ; chaque couche compte 3 rangées de 4 cubes de 1 cm³. Sam affirme : « Son volume est 9 cm³, car 2 + 3 + 4 = 9. »\n\nSam a-t-il raison ?",
+      "image": null,
+      "answer": {
+        "value": false
+      },
+      "solution_steps": [
+        "Sam a additionné les nombres de l'énoncé. Or le volume, c'est le nombre de cubes de 1 cm³ : il faut tous les compter.",
+        "Une couche : 3 rangées de 4 cubes, $3 \\times 4 = 12$ cubes.",
+        "2 couches : $2 \\times 12 = 24$ cubes.",
+        "Le volume est 24 cm³ : Sam a **tort**."
+      ],
+      "hint": "Combien de cubes dans une couche ?",
+      "estimated_duration_s": 60,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 3, classe de 6e, Les volumes : « Déterminer un volume »"
+    },
+    {
+      "id": "EX-P026-E-01",
+      "skill_id": "P026",
+      "level": "entrainement",
+      "type": "qcm",
+      "statement": "Un pavé est formé de 4 couches identiques. Chaque couche compte 5 rangées de 8 cubes de 1 cm d'arête.\n\nQuel est son volume ?",
+      "image": null,
+      "choices": [
+        {
+          "key": "a",
+          "text": "17 cm³",
+          "misconception": "L'élève additionne les nombres de l'énoncé, 4 + 5 + 8 = 17, au lieu de compter les cubes."
+        },
+        {
+          "key": "b",
+          "text": "160 cm³",
+          "misconception": null
+        },
+        {
+          "key": "c",
+          "text": "40 cm³",
+          "misconception": "L'élève compte les cubes d'une seule couche, $5 \\times 8 = 40$, et oublie qu'il y a 4 couches."
+        }
+      ],
+      "answer": {
+        "value": "b"
+      },
+      "solution_steps": [
+        "Une couche : 5 rangées de 8 cubes, $5 \\times 8 = 40$ cubes.",
+        "4 couches : $4 \\times 40 = 160$ cubes.",
+        "Chaque cube de 1 cm d'arête a un volume de 1 cm³ : le volume du pavé est **160 cm³**.",
+        "Une couche de 40 cubes repose sur un fond de 40 cm² : l'aire compte des carrés, le volume des cubes."
+      ],
+      "hint": "Combien de cubes dans une couche ? Combien de couches ?",
+      "estimated_duration_s": 75,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 3, classe de 6e, Les volumes : « Déterminer un volume »"
+    },
+    {
+      "id": "EX-P026-E-02",
+      "skill_id": "P026",
+      "level": "entrainement",
+      "type": "numerique",
+      "statement": "Une boîte en forme de pavé mesure 9 cm de long, 4 cm de large et 3 cm de haut. On la remplit exactement de cubes de 1 cm d'arête.\n\nQuel est son volume, en cm³ ?",
+      "image": null,
+      "answer": {
+        "value": 108,
+        "unit": "cm³",
+        "accepted": [
+          "108 cm³",
+          "108 cm3"
+        ]
+      },
+      "solution_steps": [
+        "Au fond de la boîte, sur 9 cm de long et 4 cm de large, on pose 4 rangées de 9 cubes : $4 \\times 9 = 36$ cubes. C'est une couche.",
+        "La boîte a 3 cm de haut : on empile 3 couches. $3 \\times 36 = 108$ cubes.",
+        "Chaque cube a un volume de 1 cm³ : le volume de la boîte est **108 cm³**.",
+        "Ce n'est pas 9 + 4 + 3 = 16 : on compte des cubes, pas des longueurs."
+      ],
+      "hint": "Combien de cubes tiennent au fond de la boîte ? Combien de couches peut-on empiler ?",
+      "estimated_duration_s": 90,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 3, classe de 6e, Les volumes : « Déterminer un volume »"
+    },
+    {
+      "id": "EX-P026-M-01",
+      "skill_id": "P026",
+      "level": "maitrise",
+      "type": "qcm",
+      "statement": "Deux pavés sont faits de cubes identiques. Le pavé A a 2 couches de 8 rangées de 9 cubes. Le pavé B a 4 couches de 6 rangées de 6 cubes.\n\nLequel a le plus grand volume ?",
+      "image": null,
+      "choices": [
+        {
+          "key": "a",
+          "text": "Le pavé A, car ses rangées sont plus longues.",
+          "misconception": "L'élève compare une seule dimension, la longueur des rangées (9 cubes contre 6), sans compter les cubes."
+        },
+        {
+          "key": "b",
+          "text": "Le pavé B, car il a plus de couches.",
+          "misconception": "L'élève compare seulement la hauteur, 4 couches contre 2, sans compter les cubes de chaque couche."
+        },
+        {
+          "key": "c",
+          "text": "Ils ont le même volume.",
+          "misconception": null
+        }
+      ],
+      "answer": {
+        "value": "c"
+      },
+      "solution_steps": [
+        "Pavé A : une couche compte $8 \\times 9 = 72$ cubes, et 2 couches font $2 \\times 72 = 144$ cubes.",
+        "Pavé B : une couche compte $6 \\times 6 = 36$ cubes, et 4 couches font $4 \\times 36 = 144$ cubes.",
+        "Les deux pavés contiennent 144 cubes identiques : ils ont **le même volume**.",
+        "Deux pavés de formes différentes peuvent avoir le même volume : pour comparer, on compte les cubes."
+      ],
+      "hint": "Compte les cubes de chaque pavé, couche par couche.",
+      "estimated_duration_s": 100,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 3, classe de 6e, Les volumes : « Comparer des volumes »"
+    },
+    {
+      "id": "EX-P026-M-02",
+      "skill_id": "P026",
+      "level": "maitrise",
+      "type": "numerique",
+      "statement": "Avec des cubes de 1 cm d'arête, Nora construit un pavé de 120 cm³. Chaque couche compte 3 rangées de 8 cubes.\n\nCombien de couches a-t-elle empilées ?",
+      "image": null,
+      "answer": {
+        "value": 5,
+        "unit": null,
+        "accepted": [
+          "5 couches"
+        ]
+      },
+      "solution_steps": [
+        "Un volume de 120 cm³, c'est 120 cubes de 1 cm³.",
+        "Une couche : 3 rangées de 8 cubes, $3 \\times 8 = 24$ cubes.",
+        "On empile les couches une par une et on compte les cubes : 24 ; 48 ; 72 ; 96 ; 120. Il faut 5 couches pour arriver à 120.",
+        "Vérification : $5 \\times 24 = 120$. Nora a empilé **5 couches**."
+      ],
+      "hint": "Combien de cubes dans une couche ? Ajoute une couche à la fois jusqu'à 120 cubes.",
+      "estimated_duration_s": 100,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 3, classe de 6e, Les volumes : « Déterminer un volume »"
+    },
+    {
+      "id": "EX-P027-D-01",
+      "skill_id": "P027",
+      "level": "decouverte",
+      "type": "qcm",
+      "statement": "Un trajet en voiture dure 3,5 h.\n\nQuelle est cette durée en heures et minutes ?",
+      "image": null,
+      "choices": [
+        {
+          "key": "a",
+          "text": "3 h 50 min",
+          "misconception": "L'élève lit les chiffres après la virgule comme des minutes, comme si une heure valait 100 minutes. Or 0,5 h, c'est la moitié d'une heure, donc 30 minutes."
+        },
+        {
+          "key": "b",
+          "text": "3 h 30 min",
+          "misconception": null
+        },
+        {
+          "key": "c",
+          "text": "3 h 5 min",
+          "misconception": "L'élève recopie le 5 des dixièmes comme 5 minutes. Or 0,5 h, ce sont 5 dixièmes d'heure, et un dixième d'heure dure 6 minutes."
+        }
+      ],
+      "answer": {
+        "value": "b"
+      },
+      "solution_steps": [
+        "3,5 h, c'est 3 h plus 0,5 h.",
+        "$0{,}5 = \\frac{5}{10} = \\frac{1}{2}$ : 0,5 h est une demi-heure, c'est-à-dire 30 min.",
+        "Donc 3,5 h = **3 h 30 min**.",
+        "L'écriture décimale compte en dixièmes d'heure, alors qu'une heure contient 60 minutes : le chiffre après la virgule n'est pas un nombre de minutes."
+      ],
+      "hint": "Que vaut 0,5 h ? Pense à une fraction simple de l'heure.",
+      "estimated_duration_s": 45,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 3, 6e : concernant les durées, les élèves résolvent des problèmes mobilisant des conversions entre le système décimal et le système sexagésimal ; convertir des durées."
+    },
+    {
+      "id": "EX-P027-D-02",
+      "skill_id": "P027",
+      "level": "decouverte",
+      "type": "numerique",
+      "statement": "Une croisière dure 3 jours et 5 heures.\n\nCombien d'heures dure-t-elle ?",
+      "image": null,
+      "answer": {
+        "value": 77,
+        "unit": "h",
+        "accepted": [
+          "77 h",
+          "77 heures"
+        ]
+      },
+      "solution_steps": [
+        "Un jour dure 24 heures : de minuit à minuit, on compte 24 heures.",
+        "3 jours durent 3 fois 24 heures : $3 \\times 24 = 72$ heures.",
+        "On ajoute les 5 heures : $72 + 5 = 77$. La croisière dure **77 heures**.",
+        "Erreur à éviter : coller les nombres et répondre 35 heures. Un jour ne compte pas 10 heures, mais 24."
+      ],
+      "hint": "Combien d'heures dure un jour ?",
+      "estimated_duration_s": 60,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 3, 6e : l'élève connaît les unités de mesure de durées jour, heure, minute et seconde et les relations qui les lient ; convertir des durées."
+    },
+    {
+      "id": "EX-P027-E-01",
+      "skill_id": "P027",
+      "level": "entrainement",
+      "type": "texte",
+      "statement": "Une randonnée dure 4,2 h.\n\nÉcris cette durée en heures et minutes.",
+      "image": null,
+      "answer": {
+        "value": "4 h 12 min",
+        "accepted": [
+          "4 h 12",
+          "4 h 12 minutes",
+          "4 heures 12 minutes",
+          "4 heures et 12 minutes",
+          "4 h et 12 min"
+        ]
+      },
+      "solution_steps": [
+        "4,2 h, c'est 4 h plus 0,2 h, c'est-à-dire 2 dixièmes d'heure.",
+        "Un dixième d'heure dure $60 \\div 10 = 6$ minutes.",
+        "2 dixièmes d'heure durent $2 \\times 6 = 12$ minutes.",
+        "La randonnée dure **4 h 12 min**.",
+        "Erreur à éviter : écrire 4 h 20 min ou 4 h 2 min. Le chiffre des dixièmes compte des dixièmes d'heure, pas des minutes."
+      ],
+      "hint": "Combien de minutes dure un dixième d'heure ?",
+      "estimated_duration_s": 75,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 3, 6e : concernant les durées, les élèves résolvent des problèmes mobilisant des conversions entre le système décimal et le système sexagésimal ; convertir des durées."
+    },
+    {
+      "id": "EX-P027-E-02",
+      "skill_id": "P027",
+      "level": "entrainement",
+      "type": "numerique",
+      "statement": "Une séance de cinéma dure 2 h 15 min.\n\nÉcris cette durée en heures, avec un nombre décimal.",
+      "image": null,
+      "answer": {
+        "value": 2.25,
+        "unit": "h",
+        "accepted": [
+          "2,25 h",
+          "2,25 heures"
+        ]
+      },
+      "solution_steps": [
+        "15 min, c'est un quart d'heure : $\\frac{15}{60} = \\frac{1}{4}$.",
+        "$\\frac{1}{4} = \\frac{25}{100} = 0{,}25$ : 15 min = 0,25 h.",
+        "2 h 15 min = 2 h + 0,25 h = **2,25 h**.",
+        "Erreur à éviter : écrire 2,15 h. 2,15 h, c'est 2 h et 15 centièmes d'heure, soit 2 h 9 min."
+      ],
+      "hint": "Quelle fraction de l'heure représentent 15 minutes ?",
+      "estimated_duration_s": 75,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 3, 6e : concernant les durées, les élèves résolvent des problèmes mobilisant des conversions entre le système décimal et le système sexagésimal ; convertir des durées."
+    },
+    {
+      "id": "EX-P027-M-01",
+      "skill_id": "P027",
+      "level": "maitrise",
+      "type": "vrai_faux",
+      "statement": "Lou fait du vélo pendant 1 h 30 min, puis pendant 2,75 h. Elle affirme avoir roulé 4 h 05 min en tout.\n\nA-t-elle raison ?",
+      "image": null,
+      "answer": {
+        "value": false
+      },
+      "solution_steps": [
+        "On convertit 2,75 h en heures et minutes : $0{,}75 = \\frac{75}{100} = \\frac{3}{4}$, et trois quarts d'heure durent $3 \\times 15 = 45$ minutes. Donc 2,75 h = 2 h 45 min.",
+        "On ajoute : 1 h 30 min + 2 h 45 min = 3 h 75 min.",
+        "75 min = 1 h 15 min, donc 3 h 75 min = 4 h 15 min.",
+        "Lou a **tort** : elle a roulé 4 h 15 min, soit 4,25 h. On le retrouve en décimal : 1 h 30 min = 1,5 h et $1{,}5 + 2{,}75 = 4{,}25$.",
+        "Son erreur : elle a lu 2,75 h comme 2 h 75 min, a obtenu 1 h 30 min + 2 h 75 min = 3 h 105 min, puis a transformé 105 min en 1 h 05 min en comptant 100 minutes dans une heure."
+      ],
+      "hint": "Écris d'abord 2,75 h en heures et minutes.",
+      "estimated_duration_s": 120,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 3, 6e : effectuer des calculs sur des horaires et des durées ; convertir des durées."
+    },
+    {
+      "id": "EX-P027-M-02",
+      "skill_id": "P027",
+      "level": "maitrise",
+      "type": "qcm",
+      "statement": "Entre deux villes, le train met 3 h 12 min et l'avion 1,2 h.\n\nCombien de temps de plus met le train ?",
+      "image": null,
+      "choices": [
+        {
+          "key": "a",
+          "text": "1 h 52 min",
+          "misconception": "L'élève lit 1,2 h comme 1 h 20 min, en prenant le chiffre des dixièmes pour des dizaines de minutes, puis calcule 3 h 12 min − 1 h 20 min = 1 h 52 min. Or 0,2 h ne vaut que 12 minutes."
+        },
+        {
+          "key": "b",
+          "text": "1,92 h",
+          "misconception": "L'élève écrit 3 h 12 min sous la forme 3,12 h, en prenant les minutes pour des centièmes d'heure, puis calcule $3{,}12 - 1{,}2 = 1{,}92$. Or 12 minutes ne font pas 12 centièmes d'heure."
+        },
+        {
+          "key": "c",
+          "text": "2 h",
+          "misconception": null
+        }
+      ],
+      "answer": {
+        "value": "c"
+      },
+      "solution_steps": [
+        "On met les deux durées dans la même écriture. L'avion : 1,2 h = 1 h + 0,2 h.",
+        "Un dixième d'heure dure $60 \\div 10 = 6$ minutes, donc 0,2 h = $2 \\times 6 = 12$ minutes. L'avion met 1 h 12 min.",
+        "Écart : 3 h 12 min − 1 h 12 min = 2 h. Le train met **2 h** de plus.",
+        "Autre chemin, en décimal : 12 min = $\\frac{12}{60}$ h = $\\frac{2}{10}$ h = 0,2 h, donc le train met 3,2 h, et $3{,}2 - 1{,}2 = 2$."
+      ],
+      "hint": "Convertis d'abord la durée de l'avion en heures et minutes.",
+      "estimated_duration_s": 120,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 3, 6e : résoudre des problèmes impliquant des horaires et des durées ; convertir des durées."
     }
   ]
 }

@@ -1,0 +1,173 @@
+[
+  {
+    "id": "EX-P020-D-01",
+    "skill_id": "P020",
+    "level": "decouverte",
+    "type": "numerique",
+    "statement": "Une chanson dure 4 min 15 s. Une minute, c'est 60 secondes.\n\nCombien de secondes dure la chanson ?",
+    "image": null,
+    "answer": {
+      "value": 255,
+      "unit": "s",
+      "accepted": [
+        "255 s",
+        "255 secondes"
+      ]
+    },
+    "solution_steps": [
+      "4 min, ce sont 4 paquets de 60 secondes : $4 \\times 60 = 240$ secondes.",
+      "On ajoute les 15 secondes : $240 + 15 = 255$.",
+      "La chanson dure **255 secondes**.",
+      "Erreur à éviter : répondre 415 secondes en collant les chiffres, comme si une minute valait 100 secondes."
+    ],
+    "hint": "Combien de secondes y a-t-il dans 4 minutes ?",
+    "estimated_duration_s": 45,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 3, CM2 : la compréhension du système sexagésimal (base soixante) utilisé pour les unités de durée s'étend avec l'introduction des secondes."
+  },
+  {
+    "id": "EX-P020-D-02",
+    "skill_id": "P020",
+    "level": "decouverte",
+    "type": "qcm",
+    "statement": "Trois enfants courent le même tour de piste. Léa met 95 s, Max 1 min 40 s et Zoé 1 min 25 s.\n\nQui est le plus rapide ?",
+    "image": null,
+    "choices": [
+      {
+        "key": "a",
+        "text": "Léa",
+        "misconception": "L'élève lit 1 min 40 s comme 140 s et 1 min 25 s comme 125 s, comme si une minute valait 100 secondes : 95 s lui semble alors le temps le plus court."
+      },
+      {
+        "key": "b",
+        "text": "Max",
+        "misconception": "L'élève pense que le plus grand temps est le meilleur. Or Max met 100 secondes, le temps le plus long des trois : c'est le plus lent."
+      },
+      {
+        "key": "c",
+        "text": "Zoé",
+        "misconception": null
+      }
+    ],
+    "answer": {
+      "value": "c"
+    },
+    "solution_steps": [
+      "Pour comparer, on écrit les trois temps en secondes. Une minute, c'est 60 secondes.",
+      "Max : $60 + 40 = 100$ secondes. Zoé : $60 + 25 = 85$ secondes. Léa : 95 secondes.",
+      "Le plus rapide est celui qui met le moins de temps : 85 secondes est le plus petit des trois temps.",
+      "C'est **Zoé** la plus rapide, avec 85 secondes."
+    ],
+    "hint": "Écris chaque temps en secondes avant de comparer.",
+    "estimated_duration_s": 60,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 3, CM2 : comparer et mesurer des durées écoulées entre deux instants affichés sur une horloge (instants et durées sont exprimés en heure, minute et seconde)."
+  },
+  {
+    "id": "EX-P020-E-01",
+    "skill_id": "P020",
+    "level": "entrainement",
+    "type": "numerique",
+    "statement": "Lina lance son chronomètre à 9 h 12 min 50 s et l'arrête à 9 h 15 min 20 s.\n\nCombien de secondes se sont écoulées ?",
+    "image": null,
+    "answer": {
+      "value": 150,
+      "unit": "s",
+      "accepted": [
+        "150 s",
+        "150 secondes"
+      ]
+    },
+    "solution_steps": [
+      "On avance par étapes, en passant par les minutes rondes. De 9 h 12 min 50 s à 9 h 13 min : 10 secondes, car $50 + 10 = 60$.",
+      "De 9 h 13 min à 9 h 15 min : 2 minutes, soit $2 \\times 60 = 120$ secondes.",
+      "De 9 h 15 min à 9 h 15 min 20 s : 20 secondes.",
+      "En tout : $10 + 120 + 20 = 150$. Il s'est écoulé **150 secondes**, c'est-à-dire 2 min 30 s.",
+      "Erreur à éviter : calculer 1520 − 1250 = 270, comme si une minute valait 100 secondes."
+    ],
+    "hint": "Combien de secondes faut-il pour aller de 9 h 12 min 50 s à 9 h 13 min ?",
+    "estimated_duration_s": 90,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 3, CM2 : comparer et mesurer des durées écoulées entre deux instants affichés sur une horloge (instants et durées sont exprimés en heure, minute et seconde)."
+  },
+  {
+    "id": "EX-P020-E-02",
+    "skill_id": "P020",
+    "level": "entrainement",
+    "type": "texte",
+    "statement": "Une vidéo dure 470 secondes.\n\nÉcris cette durée en minutes et secondes.",
+    "image": null,
+    "answer": {
+      "value": "7 min 50 s",
+      "accepted": [
+        "7 min 50",
+        "7 min 50 secondes",
+        "7 minutes 50 secondes",
+        "7 minutes et 50 secondes",
+        "7 min et 50 s"
+      ]
+    },
+    "solution_steps": [
+      "Une minute, c'est 60 secondes. On cherche combien de paquets de 60 secondes tiennent dans 470 secondes.",
+      "Avec la table de 6 : $7 \\times 60 = 420$ et $8 \\times 60 = 480$. 480 dépasse 470, donc on prend 7 paquets : 7 minutes.",
+      "Il reste 50 secondes, car $420 + 50 = 470$.",
+      "La vidéo dure **7 min 50 s**.",
+      "Erreur à éviter : couper 470 en 4 min 70 s, comme si une minute valait 100 secondes. Il n'y a jamais 60 secondes ou plus dans la partie « secondes » d'une durée."
+    ],
+    "hint": "Combien de minutes entières, de 60 secondes chacune, tiennent dans 470 secondes ?",
+    "estimated_duration_s": 75,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 3, CM2 : la compréhension du système sexagésimal (base soixante) utilisé pour les unités de durée s'étend avec l'introduction des secondes."
+  },
+  {
+    "id": "EX-P020-M-01",
+    "skill_id": "P020",
+    "level": "maitrise",
+    "type": "texte",
+    "statement": "Quatre coureurs se relaient. Leurs temps sont 2 min 35 s ; 2 min 48 s ; 2 min 52 s ; 2 min 40 s.\n\nQuel est le temps de l'équipe, en minutes et secondes ?",
+    "image": null,
+    "answer": {
+      "value": "10 min 55 s",
+      "accepted": [
+        "10 min 55",
+        "10 min 55 secondes",
+        "10 minutes 55 secondes",
+        "10 minutes et 55 secondes",
+        "10 min et 55 s"
+      ]
+    },
+    "solution_steps": [
+      "On ajoute d'abord les minutes : 4 coureurs de 2 minutes chacun, $4 \\times 2 = 8$ minutes.",
+      "Puis les secondes : $35 + 48 + 52 + 40 = 175$ secondes.",
+      "175 secondes, c'est plus d'une minute. $2 \\times 60 = 120$ et $3 \\times 60 = 180$ : 180 dépasse 175, donc 175 s contient 2 minutes, et il reste 55 secondes, car $120 + 55 = 175$. Donc 175 s = 2 min 55 s.",
+      "En tout : 8 min + 2 min 55 s = **10 min 55 s**.",
+      "Erreur à éviter : laisser 8 min 175 s, ou écrire 9 min 75 s en comptant 100 secondes dans une minute."
+    ],
+    "hint": "Additionne les minutes d'un côté, les secondes de l'autre, puis transforme les secondes en trop.",
+    "estimated_duration_s": 150,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 3, CM2 : résoudre des problèmes à une ou plusieurs étapes impliquant des durées."
+  },
+  {
+    "id": "EX-P020-M-02",
+    "skill_id": "P020",
+    "level": "maitrise",
+    "type": "vrai_faux",
+    "statement": "Un four s'arrête à 12 h 03 min 10 s, après avoir chauffé 5 min 25 s. Paul affirme qu'il a démarré à 11 h 57 min 45 s.\n\nPaul a-t-il raison ?",
+    "image": null,
+    "answer": {
+      "value": true
+    },
+    "solution_steps": [
+      "On remonte le temps de 5 min 25 s à partir de 12 h 03 min 10 s.",
+      "On enlève d'abord 10 secondes : 12 h 03 min. Il reste 5 min 15 s à enlever.",
+      "On enlève 3 minutes pour revenir à midi : 12 h. Il reste 2 min 15 s à enlever.",
+      "2 minutes avant midi, il est 11 h 58 min. 15 secondes avant, il est 11 h 57 min 45 s, car une minute a 60 secondes et $45 + 15 = 60$.",
+      "Paul a **raison**. On vérifie dans l'autre sens : de 11 h 57 min 45 s à 11 h 58 min, 15 s ; puis 5 min jusqu'à 12 h 03 min ; puis 10 s. En tout, 5 min 25 s."
+    ],
+    "hint": "Recule d'abord jusqu'à 12 h 03 min, puis jusqu'à midi.",
+    "estimated_duration_s": 120,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 3, CM2 : résoudre des problèmes à une ou plusieurs étapes impliquant des durées ; renforcer l'aptitude à effectuer des calculs avec les unités heure, minute et seconde."
+  }
+]

@@ -1,0 +1,183 @@
+[
+  {
+    "id": "EX-P010-D-01",
+    "skill_id": "P010",
+    "level": "decouverte",
+    "type": "numerique",
+    "statement": "Les côtés d'un jardin triangulaire mesurent 12 m ; 15 m et 8 m.\n\nLéa fait le tour complet du jardin. Quelle distance parcourt-elle ?",
+    "image": null,
+    "answer": {
+      "value": 35,
+      "unit": "m",
+      "accepted": [
+        "35 m",
+        "35m"
+      ]
+    },
+    "solution_steps": [
+      "Faire le tour complet du jardin, c'est suivre tout son contour : Léa longe les 3 côtés, chacun d'un bout à l'autre.",
+      "On ajoute les longueurs des 3 côtés : 12 + 15 + 8 = 35.",
+      "Léa parcourt **35 m**. La longueur du contour s'appelle le **périmètre** : le périmètre du jardin est 35 m."
+    ],
+    "hint": "Le tour du jardin passe par chacun de ses côtés.",
+    "estimated_duration_s": 60,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 2, CE2 : savoir ce qu'est le périmètre d'une figure plane ; l'élève sait que le périmètre d'une figure plane est la longueur de son contour."
+  },
+  {
+    "id": "EX-P010-D-02",
+    "skill_id": "P010",
+    "level": "decouverte",
+    "type": "qcm",
+    "statement": "Une étiquette rectangulaire mesure 11 cm de long et 6 cm de large.\n\nQuel calcul donne son périmètre, la longueur de son contour ?",
+    "image": null,
+    "choices": [
+      {
+        "key": "a",
+        "text": "11 + 6",
+        "misconception": "L'élève n'additionne que les deux longueurs écrites dans l'énoncé : il oublie qu'un rectangle a 4 côtés, deux longueurs et deux largeurs."
+      },
+      {
+        "key": "b",
+        "text": "11 + 6 + 11",
+        "misconception": "L'élève oublie un côté : il ne compte qu'une largeur."
+      },
+      {
+        "key": "c",
+        "text": "11 + 6 + 11 + 6",
+        "misconception": null
+      },
+      {
+        "key": "d",
+        "text": "11 + 6 + 11 + 6 + 11",
+        "misconception": "L'élève repasse sur la première longueur en fermant le tour : il compte ce côté à deux reprises."
+      }
+    ],
+    "answer": {
+      "value": "c"
+    },
+    "solution_steps": [
+      "Un rectangle a 4 côtés : 2 longueurs de 11 cm et 2 largeurs de 6 cm. Les côtés opposés ont la même longueur : pas besoin de mesurer les 4 côtés, la longueur et la largeur suffisent.",
+      "Le contour passe par les 4 côtés, sans en sauter aucun et sans repasser sur un côté déjà compté : 11 + 6 + 11 + 6.",
+      "11 + 6 + 11 + 6 = 34 : le périmètre de l'étiquette est 34 cm. La bonne réponse est **c**."
+    ],
+    "hint": "Combien un rectangle a-t-il de côtés ? Lesquels ont la même longueur ?",
+    "estimated_duration_s": 45,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 2, CE2 : dans le cas du carré et du rectangle, aucune formule n'est enseignée, mais l'élève sait qu'il n'est pas nécessaire de mesurer la longueur de chacun des côtés."
+  },
+  {
+    "id": "EX-P010-E-01",
+    "skill_id": "P010",
+    "level": "entrainement",
+    "type": "numerique",
+    "statement": "Un champ a quatre côtés, de 135 m ; 98 m ; 142 m et 87 m.\n\nQuelle longueur de clôture faut-il pour l'entourer complètement ?",
+    "image": null,
+    "answer": {
+      "value": 462,
+      "unit": "m",
+      "accepted": [
+        "462 m",
+        "462m"
+      ]
+    },
+    "solution_steps": [
+      "La clôture fait tout le tour du champ : sa longueur est le périmètre du champ, la somme des longueurs des 4 côtés.",
+      "On pose les additions, unités sous les unités : 135 + 98 = 233, puis 233 + 142 = 375, puis 375 + 87 = 462.",
+      "Vérification avec un autre regroupement : 135 + 87 = 222 et 98 + 142 = 240, puis 222 + 240 = 462.",
+      "Il faut **462 m** de clôture."
+    ],
+    "hint": "La clôture longe combien de côtés ?",
+    "estimated_duration_s": 120,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 2, CE2 : l'élève sait que le périmètre d'une figure plane est la longueur de son contour."
+  },
+  {
+    "id": "EX-P010-E-02",
+    "skill_id": "P010",
+    "level": "entrainement",
+    "type": "vrai_faux",
+    "statement": "Un carré a des côtés de 13 cm.\n\nTom affirme : « Le périmètre de ce carré est 39 cm. »",
+    "image": null,
+    "answer": {
+      "value": false
+    },
+    "solution_steps": [
+      "Un carré a 4 côtés, tous de la même longueur. Connaître un côté suffit : les 4 côtés mesurent 13 cm.",
+      "Le contour passe par les 4 côtés : 13 + 13 + 13 + 13 = 52. Le périmètre est 52 cm.",
+      "Tom a calculé 13 + 13 + 13 = 39 : il n'a compté que 3 côtés, il en a oublié un. L'affirmation est **fausse**."
+    ],
+    "hint": "Combien de côtés a un carré ?",
+    "estimated_duration_s": 60,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 2, CE2 : dans le cas du carré et du rectangle, aucune formule n'est enseignée, mais l'élève sait qu'il n'est pas nécessaire de mesurer la longueur de chacun des côtés."
+  },
+  {
+    "id": "EX-P010-M-01",
+    "skill_id": "P010",
+    "level": "maitrise",
+    "type": "qcm",
+    "statement": "Deux carreaux carrés de 15 cm de côté, posés côte à côte, forment un rectangle de 30 cm de long et 15 cm de large.\n\nQuel est son périmètre ?",
+    "image": null,
+    "choices": [
+      {
+        "key": "a",
+        "text": "120 cm",
+        "misconception": "L'élève ajoute les périmètres des deux carreaux (60 cm + 60 cm) : le côté où les carreaux se touchent entre dans le contour de chaque carreau, alors qu'il est à l'intérieur du rectangle."
+      },
+      {
+        "key": "b",
+        "text": "90 cm",
+        "misconception": null
+      },
+      {
+        "key": "c",
+        "text": "60 cm",
+        "misconception": "L'élève donne le périmètre d'un seul carreau (15 + 15 + 15 + 15 = 60) au lieu de celui du rectangle."
+      },
+      {
+        "key": "d",
+        "text": "105 cm",
+        "misconception": "L'élève fait bien le tour du rectangle (90 cm), puis ajoute le côté du milieu (15 cm), qui ne fait pas partie du contour."
+      }
+    ],
+    "answer": {
+      "value": "b"
+    },
+    "solution_steps": [
+      "Le périmètre est la longueur du contour, le bord extérieur du rectangle. Le rectangle a 2 longueurs de 30 cm (15 + 15 = 30) et 2 largeurs de 15 cm.",
+      "30 + 15 + 30 + 15 = 90 : le périmètre du rectangle est **90 cm**.",
+      "Le côté où les deux carreaux se touchent est à l'intérieur du rectangle : il ne fait pas partie du contour. C'est pourquoi on ne trouve pas 60 + 60 = 120, la somme des périmètres des deux carreaux."
+    ],
+    "hint": "Suis en pensée le bord extérieur du rectangle. Le côté du milieu en fait-il partie ?",
+    "estimated_duration_s": 90,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 2, CE2 : l'élève sait que le périmètre d'une figure plane est la longueur de son contour."
+  },
+  {
+    "id": "EX-P010-M-02",
+    "skill_id": "P010",
+    "level": "maitrise",
+    "type": "numerique",
+    "statement": "Une table de jeu a la forme d'un polygone à 6 côtés, tous de 45 cm.\n\nQuel est le périmètre de la table ?",
+    "image": null,
+    "answer": {
+      "value": 270,
+      "unit": "cm",
+      "accepted": [
+        "270 cm",
+        "270cm"
+      ]
+    },
+    "solution_steps": [
+      "Le périmètre est la longueur du contour : on ajoute les longueurs des 6 côtés.",
+      "Les 6 côtés ont la même longueur : connaître un côté suffit, comme pour le carré. Le contour mesure 45 + 45 + 45 + 45 + 45 + 45.",
+      "On regroupe les côtés par deux : 45 + 45 = 90. Il y a 3 paires : 90 + 90 + 90 = 270.",
+      "Le périmètre de la table est **270 cm**, soit 2 m et 70 cm. Piège : 45 + 45 + 45 + 45 = 180 ne compte que 4 côtés, comme pour un carré, alors que la table en a 6."
+    ],
+    "hint": "Combien de côtés faut-il ajouter ? Ont-ils tous la même longueur ?",
+    "estimated_duration_s": 90,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 2, CE2 : l'élève sait que le périmètre d'une figure plane est la longueur de son contour."
+  }
+]

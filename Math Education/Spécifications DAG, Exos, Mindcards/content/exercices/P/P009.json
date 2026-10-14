@@ -1,0 +1,180 @@
+[
+  {
+    "id": "EX-P009-D-01",
+    "skill_id": "P009",
+    "level": "decouverte",
+    "type": "numerique",
+    "statement": "Une gomme mesure 5 cm de long. On sait que 1 cm = 10 mm.\n\nQuelle est la longueur de la gomme, en millimètres ?",
+    "image": null,
+    "answer": {
+      "value": 50,
+      "unit": "mm",
+      "accepted": [
+        "50 mm"
+      ]
+    },
+    "solution_steps": [
+      "1 cm = 10 mm : dans chaque centimètre, il y a 10 millimètres.",
+      "La gomme mesure 5 cm, donc 5 fois 10 mm : $5 \\times 10 = 50$.",
+      "La gomme mesure **50 mm**. Le nombre est plus grand qu'en centimètres, car le millimètre est une unité plus petite : il en faut plus pour la même longueur."
+    ],
+    "hint": "Combien de millimètres y a-t-il dans 1 cm ?",
+    "estimated_duration_s": 45,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 2, CE2, les longueurs : « L'élève sait que 1 cm = 10 mm et 1 m = 1 000 mm. »"
+  },
+  {
+    "id": "EX-P009-D-02",
+    "skill_id": "P009",
+    "level": "decouverte",
+    "type": "qcm",
+    "statement": "Un crayon mesure 1 dm et 6 cm. On sait que 1 dm = 10 cm.\n\nCombien mesure le crayon, en centimètres ?",
+    "image": null,
+    "choices": [
+      {
+        "key": "a",
+        "text": "7 cm",
+        "misconception": "L'élève additionne 1 et 6 sans convertir : il met ensemble des décimètres et des centimètres comme si c'était la même unité. Or 1 dm vaut 10 cm, pas 1 cm."
+      },
+      {
+        "key": "b",
+        "text": "106 cm",
+        "misconception": "L'élève confond le décimètre et le mètre : il utilise 1 m = 100 cm au lieu de 1 dm = 10 cm. 106 cm, c'est plus d'un mètre, bien trop long pour un crayon."
+      },
+      {
+        "key": "c",
+        "text": "16 cm",
+        "misconception": null
+      }
+    ],
+    "answer": {
+      "value": "c"
+    },
+    "solution_steps": [
+      "1 dm = 10 cm.",
+      "Le crayon mesure 1 dm et 6 cm, donc 10 cm et 6 cm : $10 + 6 = 16$.",
+      "Le crayon mesure **16 cm**, une longueur vraisemblable pour un crayon."
+    ],
+    "hint": "Remplace 1 dm par des centimètres, puis ajoute les 6 cm.",
+    "estimated_duration_s": 45,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 2, CE2, les longueurs : « Connaitre et utiliser les unités mètre, décimètre, centimètre, millimètre, kilomètre et les symboles associés (m, dm, cm, mm, km). »"
+  },
+  {
+    "id": "EX-P009-E-01",
+    "skill_id": "P009",
+    "level": "entrainement",
+    "type": "numerique",
+    "statement": "Une étagère mesure 9 dm de long.\n\nQuelle est sa longueur, en millimètres ?",
+    "image": null,
+    "answer": {
+      "value": 900,
+      "unit": "mm",
+      "accepted": [
+        "900 mm"
+      ]
+    },
+    "solution_steps": [
+      "On ne passe pas directement du décimètre au millimètre : on passe par le centimètre.",
+      "1 dm = 10 cm, donc 9 dm = 90 cm, car $9 \\times 10 = 90$.",
+      "1 cm = 10 mm, donc 90 cm = 900 mm, car $90 \\times 10 = 900$.",
+      "L'étagère mesure **900 mm**. Écrire 90 mm serait faux : on aurait multiplié par 10 une seule fois, alors qu'on change deux fois d'unité, du décimètre au centimètre, puis du centimètre au millimètre.",
+      "Vérification : 1 m = 1 000 mm, et l'étagère mesure un peu moins d'un mètre, car 10 dm font 1 m."
+    ],
+    "hint": "Passe par les centimètres : 1 dm = 10 cm et 1 cm = 10 mm.",
+    "estimated_duration_s": 60,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 2, CE2, les longueurs : « Connaitre les relations entre les unités de longueur. »"
+  },
+  {
+    "id": "EX-P009-E-02",
+    "skill_id": "P009",
+    "level": "entrainement",
+    "type": "vrai_faux",
+    "statement": "Une barque mesure 6 m. Jade dit : « Elle mesure donc 60 mm : pour convertir, on ajoute un zéro. »\n\nJade a-t-elle raison ?",
+    "image": null,
+    "answer": {
+      "value": false
+    },
+    "solution_steps": [
+      "1 m = 1 000 mm : dans un mètre, il y a mille millimètres.",
+      "6 m, c'est donc 6 fois 1 000 mm : $6 \\times 1\\,000 = 6\\,000$. La barque mesure 6 000 mm.",
+      "Ajouter un zéro, c'est multiplier par 10. Cela ne marche que si l'on passe à une unité 10 fois plus petite, comme du centimètre au millimètre. Du mètre au millimètre, l'unité est 1 000 fois plus petite.",
+      "60 mm, c'est 6 cm : la longueur d'un petit doigt, pas d'une barque. Jade a **tort**, c'est faux."
+    ],
+    "hint": "Combien de millimètres y a-t-il dans 1 m ?",
+    "estimated_duration_s": 60,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 2, CE2, les longueurs : « L'élève sait que 1 cm = 10 mm et 1 m = 1 000 mm. »"
+  },
+  {
+    "id": "EX-P009-M-01",
+    "skill_id": "P009",
+    "level": "maitrise",
+    "type": "numerique",
+    "statement": "Un escargot doit parcourir 1 m pour atteindre une salade. Il a déjà parcouru 6 dm et 7 cm.\n\nQuelle distance lui reste-t-il, en millimètres ?",
+    "image": null,
+    "answer": {
+      "value": 330,
+      "unit": "mm",
+      "accepted": [
+        "330 mm"
+      ]
+    },
+    "solution_steps": [
+      "Les longueurs ne sont pas dans la même unité : avant de calculer, on les écrit toutes en millimètres.",
+      "1 m = 1 000 mm.",
+      "1 dm = 100 mm, donc 6 dm = 600 mm, car $6 \\times 100 = 600$. 1 cm = 10 mm, donc 7 cm = 70 mm.",
+      "L'escargot a déjà parcouru 600 mm + 70 mm = 670 mm.",
+      "Il reste $1\\,000 - 670 = 330$ : l'escargot doit encore parcourir **330 mm**.",
+      "Vérification : $670 + 330 = 1\\,000$, on retrouve bien 1 m. Calculer avec les nombres écrits, sans convertir, n'aurait pas de sens : 6 et 7 ne sont pas des mètres."
+    ],
+    "hint": "Écris 1 m et la distance déjà parcourue en millimètres, puis cherche ce qui manque.",
+    "estimated_duration_s": 100,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 2, CE2, les longueurs : « L'élève sait effectuer des conversions (cm-mm ; m-dm-cm et km-m), notamment pour pouvoir effectuer des calculs avec des longueurs qui ne sont pas données dans la même unité »"
+  },
+  {
+    "id": "EX-P009-M-02",
+    "skill_id": "P009",
+    "level": "maitrise",
+    "type": "qcm",
+    "statement": "Un tapis de gym mesure 185 cm de long.\n\nQuelle écriture donne la même longueur ?",
+    "image": null,
+    "choices": [
+      {
+        "key": "a",
+        "text": "1 m, 8 dm et 5 cm",
+        "misconception": null
+      },
+      {
+        "key": "b",
+        "text": "18 m et 5 cm",
+        "misconception": "L'élève croit que 1 m = 10 cm : il fait 18 paquets de 10 cm et les appelle des mètres. 18 m, c'est la longueur d'un grand bus, pas d'un tapis."
+      },
+      {
+        "key": "c",
+        "text": "1 m et 85 dm",
+        "misconception": "L'élève prend bien 1 m dans 100 cm, mais il garde le nombre 85 en changeant d'unité : 85 dm, c'est 850 cm, bien plus que les 85 cm qui restent."
+      },
+      {
+        "key": "d",
+        "text": "185 dm",
+        "misconception": "L'élève change l'unité sans changer le nombre : 185 dm, c'est une longueur 10 fois plus grande que 185 cm, plus de 18 m."
+      }
+    ],
+    "answer": {
+      "value": "a"
+    },
+    "solution_steps": [
+      "On décompose : 185 cm = 100 cm + 80 cm + 5 cm.",
+      "1 m = 100 cm, donc 100 cm = 1 m.",
+      "1 dm = 10 cm, donc 80 cm = 8 dm, car $8 \\times 10 = 80$.",
+      "Il reste 5 cm. Donc 185 cm = **1 m, 8 dm et 5 cm**."
+    ],
+    "hint": "Décompose 185 cm en centaines, dizaines et unités de centimètres.",
+    "estimated_duration_s": 90,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 2, CE2, les longueurs : « Connaitre les relations entre les unités de longueur. »"
+  }
+]

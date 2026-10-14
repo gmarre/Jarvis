@@ -1,0 +1,192 @@
+[
+  {
+    "id": "EX-P023-D-01",
+    "skill_id": "P023",
+    "level": "decouverte",
+    "type": "numerique",
+    "statement": "Un cerceau de gymnastique a un diamètre de 80 cm.\n\nEn prenant 3,14 pour $\\pi$, calcule son périmètre avec la formule $P = d \\times \\pi$, où $d$ est le diamètre.",
+    "image": null,
+    "answer": {
+      "value": 251.2,
+      "unit": "cm",
+      "accepted": [
+        "251,2",
+        "251,20",
+        "251,2 cm",
+        "251,20 cm"
+      ]
+    },
+    "solution_steps": [
+      "Le périmètre d'un disque (on dit souvent le périmètre du cercle) s'obtient en multipliant son diamètre par $\\pi$ : $P = d \\times \\pi$.",
+      "On remplace $d$ par 80 et $\\pi$ par 3,14 : $P = 80 \\times 3{,}14$.",
+      "On pose $314 \\times 80 = 25\\,120$, puis on place la virgule : deux chiffres après la virgule dans 3,14, donc deux dans le produit : 251,20.",
+      "Le périmètre du cerceau est **251,2 cm**. Contrôle : c'est un peu plus que $3 \\times 80 = 240$, comme attendu puisque $\\pi$ est un peu plus grand que 3. Le résultat est une valeur approchée, car 3,14 est une valeur approchée de $\\pi$."
+    ],
+    "hint": "Remplace $d$ par le diamètre et $\\pi$ par 3,14.",
+    "estimated_duration_s": 75,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 3, 6e : connaître la formule du périmètre d'un disque ; calculer le périmètre d'un disque."
+  },
+  {
+    "id": "EX-P023-D-02",
+    "skill_id": "P023",
+    "level": "decouverte",
+    "type": "qcm",
+    "statement": "En prenant 3,14 pour $\\pi$, une assiette de 25 cm de diamètre a un périmètre de 78,5 cm.\n\nLe périmètre d'un disque est proportionnel à son diamètre. Quel est le périmètre d'un plat de 50 cm de diamètre ?",
+    "image": null,
+    "choices": [
+      {
+        "key": "a",
+        "text": "157 cm",
+        "misconception": null
+      },
+      {
+        "key": "b",
+        "text": "103,5 cm",
+        "misconception": "L'élève ajoute 25 cm au périmètre parce que le diamètre a augmenté de 25 cm : il raisonne par addition au lieu de multiplier."
+      },
+      {
+        "key": "c",
+        "text": "314 cm",
+        "misconception": "L'élève prend 50 cm pour un rayon et calcule 2 × 50 × 3,14 = 314 : il confond rayon et diamètre."
+      },
+      {
+        "key": "d",
+        "text": "128,5 cm",
+        "misconception": "L'élève ajoute le nouveau diamètre au périmètre de l'assiette (78,5 + 50) au lieu de multiplier."
+      }
+    ],
+    "answer": {
+      "value": "a"
+    },
+    "solution_steps": [
+      "Le périmètre est proportionnel au diamètre : quand le diamètre est multiplié par un nombre, le périmètre est multiplié par le même nombre.",
+      "Le diamètre passe de 25 cm à 50 cm : il est multiplié par 2 ($25 \\times 2 = 50$). Le périmètre est donc multiplié par 2 : $78{,}5 \\times 2 = 157$.",
+      "Vérification avec la formule : $P = 50 \\times 3{,}14 = 157$. Le périmètre du plat est **157 cm**."
+    ],
+    "hint": "Par combien le diamètre est-il multiplié ?",
+    "estimated_duration_s": 60,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 3, 6e : savoir que le périmètre du disque est proportionnel à son diamètre."
+  },
+  {
+    "id": "EX-P023-E-01",
+    "skill_id": "P023",
+    "level": "entrainement",
+    "type": "numerique",
+    "statement": "Le cadran rond d'une horloge a un rayon de 18 cm.\n\nEn prenant 3,14 pour $\\pi$, calcule le périmètre du cadran. Donne le résultat arrondi au centimètre.",
+    "image": null,
+    "answer": {
+      "value": 113,
+      "unit": "cm",
+      "tolerance": 0.05,
+      "accepted": [
+        "113 cm",
+        "113cm",
+        "113,04 cm",
+        "113,04cm"
+      ]
+    },
+    "solution_steps": [
+      "On connaît le rayon, pas le diamètre. Le diamètre est le double du rayon : $d = 2 \\times 18 = 36$, soit 36 cm.",
+      "$P = d \\times \\pi$, donc $P = 36 \\times 3{,}14 = 113{,}04$. On pose $314 \\times 36 = 11\\,304$, puis on place deux chiffres après la virgule.",
+      "Arrondi au centimètre : 113,04 est entre 113 et 114, plus près de 113. Le périmètre du cadran est d'environ **113 cm**.",
+      "Piège : $18 \\times 3{,}14 = 56{,}52$ ne donne que la moitié du tour, car 18 cm est le rayon et non le diamètre. On peut aussi écrire $P = 2 \\times r \\times \\pi$."
+    ],
+    "hint": "La formule utilise le diamètre. Que vaut le diamètre quand on connaît le rayon ?",
+    "estimated_duration_s": 90,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 3, 6e : connaître la formule du périmètre d'un disque ; calculer le périmètre d'un disque."
+  },
+  {
+    "id": "EX-P023-E-02",
+    "skill_id": "P023",
+    "level": "entrainement",
+    "type": "vrai_faux",
+    "statement": "Une table ronde a un rayon de 45 cm. Zoé prend 3,14 pour $\\pi$ et écrit : $45 \\times 3{,}14 = 141{,}3$, donc le périmètre de la table est 141,3 cm.\n\nZoé a-t-elle raison ?",
+    "image": null,
+    "answer": {
+      "value": false
+    },
+    "solution_steps": [
+      "Le calcul $45 \\times 3{,}14 = 141{,}3$ est juste, mais ce n'est pas le bon calcul : la formule $P = d \\times \\pi$ utilise le **diamètre**, et 45 cm est le rayon.",
+      "Le diamètre est le double du rayon : $d = 2 \\times 45 = 90$, soit 90 cm.",
+      "$P = 90 \\times 3{,}14 = 282{,}6$. Le périmètre est 282,6 cm, le double du résultat de Zoé : Zoé a **tort**.",
+      "Même calcul avec l'autre écriture de la formule : $P = 2 \\times r \\times \\pi = 2 \\times 45 \\times 3{,}14 = 282{,}6$."
+    ],
+    "hint": "Dans $P = d \\times \\pi$, que représente $d$ ?",
+    "estimated_duration_s": 75,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 3, 6e : connaître la formule du périmètre d'un disque."
+  },
+  {
+    "id": "EX-P023-M-01",
+    "skill_id": "P023",
+    "level": "maitrise",
+    "type": "qcm",
+    "statement": "La roue d'une brouette a un diamètre de 35 cm. Pendant le trajet, la roue fait 20 tours.\n\nEn prenant 3,14 pour $\\pi$, quelle distance la brouette a-t-elle parcourue ?",
+    "image": null,
+    "choices": [
+      {
+        "key": "a",
+        "text": "700 cm",
+        "misconception": "L'élève multiplie le diamètre par le nombre de tours (35 × 20 = 700) : il croit qu'en un tour la roue avance de son diamètre, et oublie π."
+      },
+      {
+        "key": "b",
+        "text": "4 396 cm",
+        "misconception": "L'élève prend 35 cm pour un rayon : 2 × 35 × 3,14 × 20 = 4 396. Il confond rayon et diamètre."
+      },
+      {
+        "key": "c",
+        "text": "2 198 cm",
+        "misconception": null
+      },
+      {
+        "key": "d",
+        "text": "109,9 cm",
+        "misconception": "L'élève calcule la distance parcourue pendant un seul tour de roue et oublie les 20 tours."
+      }
+    ],
+    "answer": {
+      "value": "c"
+    },
+    "solution_steps": [
+      "En un tour, la roue avance de la longueur de son contour, c'est-à-dire de son périmètre : $P = 35 \\times 3{,}14 = 109{,}9$, soit 109,9 cm.",
+      "En 20 tours, elle avance 20 fois plus : $109{,}9 \\times 20 = 2\\,198$. On pose $1\\,099 \\times 20 = 21\\,980$ et on place un chiffre après la virgule : 2 198,0.",
+      "La brouette a parcouru **2 198 cm**."
+    ],
+    "hint": "De combien la roue avance-t-elle en un seul tour ?",
+    "estimated_duration_s": 150,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 3, 6e : calculer le périmètre d'un disque ; résoudre des problèmes impliquant des longueurs."
+  },
+  {
+    "id": "EX-P023-M-02",
+    "skill_id": "P023",
+    "level": "maitrise",
+    "type": "numerique",
+    "statement": "Un bassin rond a un diamètre de 30 m. Un bassin carré a des côtés de 30 m.\n\nEn prenant 3,14 pour $\\pi$, de combien de mètres le tour du bassin carré est-il plus long que le tour du bassin rond ?",
+    "image": null,
+    "answer": {
+      "value": 25.8,
+      "unit": "m",
+      "accepted": [
+        "25,8",
+        "25,80",
+        "25,8 m",
+        "25,80 m"
+      ]
+    },
+    "solution_steps": [
+      "Tour du bassin rond : $P = d \\times \\pi = 30 \\times 3{,}14 = 94{,}2$, soit 94,2 m.",
+      "Tour du bassin carré : $P = 4 \\times c = 4 \\times 30 = 120$, soit 120 m.",
+      "Différence : $120 - 94{,}2 = 25{,}8$. On pose la soustraction en alignant les virgules : $120{,}0 - 94{,}2 = 25{,}8$.",
+      "Le tour du bassin carré est plus long de **25,8 m**. C'est logique : un disque de 30 m de diamètre tient à l'intérieur d'un carré de 30 m de côté, son contour est plus court."
+    ],
+    "hint": "Calcule le tour de chaque bassin avec la formule qui lui correspond, puis la différence.",
+    "estimated_duration_s": 150,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 3, 6e : calculer le périmètre d'un disque ; résoudre des problèmes impliquant des longueurs."
+  }
+]

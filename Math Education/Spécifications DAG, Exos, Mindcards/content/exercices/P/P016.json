@@ -1,0 +1,201 @@
+[
+  {
+    "id": "EX-P016-D-01",
+    "skill_id": "P016",
+    "level": "decouverte",
+    "type": "numerique",
+    "statement": "Un potager a la forme d'un carré de 8 m de côté. Son contour est formé de 4 côtés de même longueur.\n\nQuel est le périmètre du potager ?",
+    "image": null,
+    "answer": {
+      "value": 32,
+      "unit": "m",
+      "accepted": [
+        "32 m",
+        "32m"
+      ]
+    },
+    "solution_steps": [
+      "Le contour du carré passe par ses 4 côtés, qui mesurent tous 8 m : 8 + 8 + 8 + 8.",
+      "Ajouter 4 côtés de même longueur, c'est prendre le quadruple de cette longueur : $4 \\times 8 = 32$.",
+      "Le périmètre du potager est **32 m**. Règle à retenir : le périmètre d'un carré est le quadruple de son côté."
+    ],
+    "hint": "Combien de côtés de 8 m faut-il ajouter pour faire le tour ?",
+    "estimated_duration_s": 45,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 3, CM1 : les élèves peuvent établir eux-mêmes des règles de calcul et les utiliser, comme par exemple le fait que le périmètre d'un carré est le quadruple de la longueur de l'un de ses côtés."
+  },
+  {
+    "id": "EX-P016-D-02",
+    "skill_id": "P016",
+    "level": "decouverte",
+    "type": "qcm",
+    "statement": "Un bassin a la forme d'un carré. Son périmètre est 28 m.\n\nQuelle est la longueur d'un de ses côtés ?",
+    "image": null,
+    "choices": [
+      {
+        "key": "a",
+        "text": "14 m",
+        "misconception": "L'élève partage le périmètre en 2, comme si le carré n'avait que deux côtés."
+      },
+      {
+        "key": "b",
+        "text": "112 m",
+        "misconception": "L'élève multiplie par 4 au lieu de partager : il calcule le quadruple du périmètre, alors que c'est le périmètre qui est le quadruple du côté."
+      },
+      {
+        "key": "c",
+        "text": "7 m",
+        "misconception": null
+      },
+      {
+        "key": "d",
+        "text": "24 m",
+        "misconception": "L'élève retire 4 (28 − 4 = 24) au lieu de partager en 4 : il confond « 4 côtés » avec « 4 mètres de moins »."
+      }
+    ],
+    "answer": {
+      "value": "c"
+    },
+    "solution_steps": [
+      "Le périmètre d'un carré est le quadruple de son côté : les 4 côtés, de même longueur, font 28 m en tout.",
+      "On cherche donc le nombre qui, multiplié par 4, donne 28. On partage 28 en 4 parts égales : $28 \\div 4 = 7$, car $4 \\times 7 = 28$.",
+      "Vérification : 7 + 7 + 7 + 7 = 28. Le côté du bassin mesure **7 m**."
+    ],
+    "hint": "Le périmètre est le quadruple du côté. Quel nombre, multiplié par 4, donne 28 ?",
+    "estimated_duration_s": 60,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 3, CM1 : résoudre des problèmes mettant en jeu les longueurs des côtés d'un polygone et son périmètre."
+  },
+  {
+    "id": "EX-P016-E-01",
+    "skill_id": "P016",
+    "level": "entrainement",
+    "type": "numerique",
+    "statement": "L'enclos des chèvres a la forme d'un rectangle. Son périmètre est 50 m et sa longueur 15 m.\n\nQuelle est sa largeur ?",
+    "image": null,
+    "answer": {
+      "value": 10,
+      "unit": "m",
+      "accepted": [
+        "10 m",
+        "10m"
+      ]
+    },
+    "solution_steps": [
+      "Le contour du rectangle passe par 2 longueurs et 2 largeurs, et il mesure 50 m en tout.",
+      "Les 2 longueurs font 15 + 15 = 30, soit 30 m.",
+      "Les 2 largeurs mesurent ensemble ce qui reste quand on retire les 2 longueurs du contour : 50 − 30 = 20, soit 20 m.",
+      "Les 2 largeurs sont égales : $20 \\div 2 = 10$. La largeur est **10 m**. Vérification : 15 + 10 + 15 + 10 = 50."
+    ],
+    "hint": "Commence par la longueur des deux grands côtés ensemble.",
+    "estimated_duration_s": 120,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 3, CM1 : résoudre des problèmes mettant en jeu les longueurs des côtés d'un polygone et son périmètre."
+  },
+  {
+    "id": "EX-P016-E-02",
+    "skill_id": "P016",
+    "level": "entrainement",
+    "type": "vrai_faux",
+    "statement": "Un carré a des côtés de 5 cm. Un rectangle mesure 6 cm de long et 4 cm de large.\n\nSami affirme : « Ces deux figures ont le même périmètre. »",
+    "image": null,
+    "answer": {
+      "value": true
+    },
+    "solution_steps": [
+      "Carré : le périmètre est le quadruple du côté, $4 \\times 5 = 20$, soit 20 cm.",
+      "Rectangle : le contour passe par 2 longueurs et 2 largeurs, 6 + 4 + 6 + 4 = 20, soit 20 cm.",
+      "Les deux périmètres valent 20 cm : Sami a **raison**. Les deux figures n'ont pas la même forme, mais leurs contours ont la même longueur."
+    ],
+    "hint": "Calcule le périmètre de chaque figure, puis compare.",
+    "estimated_duration_s": 75,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 3, CM1 : résoudre des problèmes mettant en jeu les longueurs des côtés d'un polygone et son périmètre."
+  },
+  {
+    "id": "EX-P016-M-01",
+    "skill_id": "P016",
+    "level": "maitrise",
+    "type": "qcm",
+    "statement": "Un carré a des côtés de 12 cm. Un rectangle de 16 cm de long a le même périmètre que ce carré.\n\nQuelle est la largeur du rectangle ?",
+    "image": null,
+    "choices": [
+      {
+        "key": "a",
+        "text": "24 cm",
+        "misconception": "L'élève partage le périmètre en 2 (48 ÷ 2 = 24) : il trouve une longueur plus une largeur, et oublie d'en retirer la longueur de 16 cm."
+      },
+      {
+        "key": "b",
+        "text": "16 cm",
+        "misconception": "L'élève retire bien les 2 longueurs (48 − 32 = 16), mais oublie de partager ce reste entre les 2 largeurs."
+      },
+      {
+        "key": "c",
+        "text": "32 cm",
+        "misconception": "L'élève ne retire qu'une longueur (48 − 16 = 32) : il oublie qu'un rectangle a 2 longueurs et 2 largeurs."
+      },
+      {
+        "key": "d",
+        "text": "8 cm",
+        "misconception": null
+      }
+    ],
+    "answer": {
+      "value": "d"
+    },
+    "solution_steps": [
+      "Périmètre du carré : le quadruple de 12 cm. 12 + 12 = 24, puis 24 + 24 = 48 (le double du double), donc $4 \\times 12 = 48$. Le périmètre est 48 cm.",
+      "Le contour du rectangle mesure donc 48 cm. Ses 2 longueurs font 16 + 16 = 32, soit 32 cm.",
+      "Les 2 largeurs mesurent ensemble ce qui reste quand on retire les 2 longueurs : 48 − 32 = 16, soit 16 cm.",
+      "Une largeur : $16 \\div 2 = 8$. La largeur du rectangle est **8 cm**. Vérification : 16 + 8 + 16 + 8 = 48."
+    ],
+    "hint": "Calcule d'abord le périmètre du carré : c'est la longueur du contour du rectangle.",
+    "estimated_duration_s": 150,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 3, CM1 : résoudre des problèmes mettant en jeu les longueurs des côtés d'un polygone et son périmètre."
+  },
+  {
+    "id": "EX-P016-M-02",
+    "skill_id": "P016",
+    "level": "maitrise",
+    "type": "qcm",
+    "statement": "Jade a deux ficelles de 24 cm. Avec l'une, elle forme un carré. Avec l'autre, elle forme un triangle dont les 3 côtés ont la même longueur.\n\nQuelle figure a les côtés les plus longs ?",
+    "image": null,
+    "choices": [
+      {
+        "key": "a",
+        "text": "Le carré, avec des côtés de 8 cm",
+        "misconception": "L'élève inverse les partages : il partage les 24 cm en 3 pour le carré et en 4 pour le triangle."
+      },
+      {
+        "key": "b",
+        "text": "Le triangle, avec des côtés de 8 cm",
+        "misconception": null
+      },
+      {
+        "key": "c",
+        "text": "Aucune : les deux ficelles mesurent 24 cm, donc les côtés ont la même longueur",
+        "misconception": "L'élève confond le périmètre et la longueur d'un côté : les deux figures ont le même contour, mais il est partagé en un nombre différent de côtés."
+      },
+      {
+        "key": "d",
+        "text": "Le carré, avec des côtés de 6 cm",
+        "misconception": "L'élève calcule bien le côté du carré (24 ÷ 4 = 6), mais croit que la figure qui a le plus de côtés a aussi les côtés les plus longs, sans calculer le côté du triangle."
+      }
+    ],
+    "answer": {
+      "value": "b"
+    },
+    "solution_steps": [
+      "Toute la ficelle forme le contour : chaque figure a un périmètre de 24 cm.",
+      "Carré : 4 côtés égaux. Le périmètre est le quadruple du côté, donc le côté mesure $24 \\div 4 = 6$, soit 6 cm.",
+      "Triangle : 3 côtés égaux. Le périmètre est le triple du côté, donc le côté mesure $24 \\div 3 = 8$, soit 8 cm.",
+      "8 cm, c'est plus long que 6 cm : c'est **le triangle** qui a les côtés les plus longs. La bonne réponse est **b**. Une même longueur de ficelle partagée en moins de côtés donne des côtés plus longs."
+    ],
+    "hint": "Partage les 24 cm entre les côtés de chaque figure.",
+    "estimated_duration_s": 120,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 3, CM1 : résoudre des problèmes mettant en jeu les longueurs des côtés d'un polygone et son périmètre."
+  }
+]

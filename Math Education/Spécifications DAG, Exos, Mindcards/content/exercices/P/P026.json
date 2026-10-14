@@ -1,0 +1,177 @@
+[
+  {
+    "id": "EX-P026-D-01",
+    "skill_id": "P026",
+    "level": "decouverte",
+    "type": "numerique",
+    "statement": "Une boîte est remplie de cubes de 1 cm d'arête, qui ont chacun un volume de 1 cm³. Elle contient 2 couches ; chaque couche compte 6 rangées de 7 cubes.\n\nQuel est le volume de la boîte, en cm³ ?",
+    "image": null,
+    "answer": {
+      "value": 84,
+      "unit": "cm³",
+      "accepted": [
+        "84 cm³",
+        "84 cm3"
+      ]
+    },
+    "solution_steps": [
+      "Chaque cube a un volume de 1 cm³ : le volume de la boîte, c'est le nombre de cubes qu'elle contient.",
+      "Une couche : 6 rangées de 7 cubes, $6 \\times 7 = 42$ cubes.",
+      "2 couches : $2 \\times 42 = 84$ cubes.",
+      "Le volume de la boîte est **84 cm³**.",
+      "42 est le nombre de cubes d'une seule couche. Le fond de la boîte a une aire de 42 cm² : une aire se compte en carrés, un volume en cubes."
+    ],
+    "hint": "Compte d'abord les cubes d'une couche.",
+    "estimated_duration_s": 60,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 3, classe de 6e, Les volumes : « Connaître l'unité centimètre cube »"
+  },
+  {
+    "id": "EX-P026-D-02",
+    "skill_id": "P026",
+    "level": "decouverte",
+    "type": "vrai_faux",
+    "statement": "Un pavé est formé de 2 couches ; chaque couche compte 3 rangées de 4 cubes de 1 cm³. Sam affirme : « Son volume est 9 cm³, car 2 + 3 + 4 = 9. »\n\nSam a-t-il raison ?",
+    "image": null,
+    "answer": {
+      "value": false
+    },
+    "solution_steps": [
+      "Sam a additionné les nombres de l'énoncé. Or le volume, c'est le nombre de cubes de 1 cm³ : il faut tous les compter.",
+      "Une couche : 3 rangées de 4 cubes, $3 \\times 4 = 12$ cubes.",
+      "2 couches : $2 \\times 12 = 24$ cubes.",
+      "Le volume est 24 cm³ : Sam a **tort**."
+    ],
+    "hint": "Combien de cubes dans une couche ?",
+    "estimated_duration_s": 60,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 3, classe de 6e, Les volumes : « Déterminer un volume »"
+  },
+  {
+    "id": "EX-P026-E-01",
+    "skill_id": "P026",
+    "level": "entrainement",
+    "type": "qcm",
+    "statement": "Un pavé est formé de 4 couches identiques. Chaque couche compte 5 rangées de 8 cubes de 1 cm d'arête.\n\nQuel est son volume ?",
+    "image": null,
+    "choices": [
+      {
+        "key": "a",
+        "text": "17 cm³",
+        "misconception": "L'élève additionne les nombres de l'énoncé, 4 + 5 + 8 = 17, au lieu de compter les cubes."
+      },
+      {
+        "key": "b",
+        "text": "160 cm³",
+        "misconception": null
+      },
+      {
+        "key": "c",
+        "text": "40 cm³",
+        "misconception": "L'élève compte les cubes d'une seule couche, $5 \\times 8 = 40$, et oublie qu'il y a 4 couches."
+      }
+    ],
+    "answer": {
+      "value": "b"
+    },
+    "solution_steps": [
+      "Une couche : 5 rangées de 8 cubes, $5 \\times 8 = 40$ cubes.",
+      "4 couches : $4 \\times 40 = 160$ cubes.",
+      "Chaque cube de 1 cm d'arête a un volume de 1 cm³ : le volume du pavé est **160 cm³**.",
+      "Une couche de 40 cubes repose sur un fond de 40 cm² : l'aire compte des carrés, le volume des cubes."
+    ],
+    "hint": "Combien de cubes dans une couche ? Combien de couches ?",
+    "estimated_duration_s": 75,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 3, classe de 6e, Les volumes : « Déterminer un volume »"
+  },
+  {
+    "id": "EX-P026-E-02",
+    "skill_id": "P026",
+    "level": "entrainement",
+    "type": "numerique",
+    "statement": "Une boîte en forme de pavé mesure 9 cm de long, 4 cm de large et 3 cm de haut. On la remplit exactement de cubes de 1 cm d'arête.\n\nQuel est son volume, en cm³ ?",
+    "image": null,
+    "answer": {
+      "value": 108,
+      "unit": "cm³",
+      "accepted": [
+        "108 cm³",
+        "108 cm3"
+      ]
+    },
+    "solution_steps": [
+      "Au fond de la boîte, sur 9 cm de long et 4 cm de large, on pose 4 rangées de 9 cubes : $4 \\times 9 = 36$ cubes. C'est une couche.",
+      "La boîte a 3 cm de haut : on empile 3 couches. $3 \\times 36 = 108$ cubes.",
+      "Chaque cube a un volume de 1 cm³ : le volume de la boîte est **108 cm³**.",
+      "Ce n'est pas 9 + 4 + 3 = 16 : on compte des cubes, pas des longueurs."
+    ],
+    "hint": "Combien de cubes tiennent au fond de la boîte ? Combien de couches peut-on empiler ?",
+    "estimated_duration_s": 90,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 3, classe de 6e, Les volumes : « Déterminer un volume »"
+  },
+  {
+    "id": "EX-P026-M-01",
+    "skill_id": "P026",
+    "level": "maitrise",
+    "type": "qcm",
+    "statement": "Deux pavés sont faits de cubes identiques. Le pavé A a 2 couches de 8 rangées de 9 cubes. Le pavé B a 4 couches de 6 rangées de 6 cubes.\n\nLequel a le plus grand volume ?",
+    "image": null,
+    "choices": [
+      {
+        "key": "a",
+        "text": "Le pavé A, car ses rangées sont plus longues.",
+        "misconception": "L'élève compare une seule dimension, la longueur des rangées (9 cubes contre 6), sans compter les cubes."
+      },
+      {
+        "key": "b",
+        "text": "Le pavé B, car il a plus de couches.",
+        "misconception": "L'élève compare seulement la hauteur, 4 couches contre 2, sans compter les cubes de chaque couche."
+      },
+      {
+        "key": "c",
+        "text": "Ils ont le même volume.",
+        "misconception": null
+      }
+    ],
+    "answer": {
+      "value": "c"
+    },
+    "solution_steps": [
+      "Pavé A : une couche compte $8 \\times 9 = 72$ cubes, et 2 couches font $2 \\times 72 = 144$ cubes.",
+      "Pavé B : une couche compte $6 \\times 6 = 36$ cubes, et 4 couches font $4 \\times 36 = 144$ cubes.",
+      "Les deux pavés contiennent 144 cubes identiques : ils ont **le même volume**.",
+      "Deux pavés de formes différentes peuvent avoir le même volume : pour comparer, on compte les cubes."
+    ],
+    "hint": "Compte les cubes de chaque pavé, couche par couche.",
+    "estimated_duration_s": 100,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 3, classe de 6e, Les volumes : « Comparer des volumes »"
+  },
+  {
+    "id": "EX-P026-M-02",
+    "skill_id": "P026",
+    "level": "maitrise",
+    "type": "numerique",
+    "statement": "Avec des cubes de 1 cm d'arête, Nora construit un pavé de 120 cm³. Chaque couche compte 3 rangées de 8 cubes.\n\nCombien de couches a-t-elle empilées ?",
+    "image": null,
+    "answer": {
+      "value": 5,
+      "unit": null,
+      "accepted": [
+        "5 couches"
+      ]
+    },
+    "solution_steps": [
+      "Un volume de 120 cm³, c'est 120 cubes de 1 cm³.",
+      "Une couche : 3 rangées de 8 cubes, $3 \\times 8 = 24$ cubes.",
+      "On empile les couches une par une et on compte les cubes : 24 ; 48 ; 72 ; 96 ; 120. Il faut 5 couches pour arriver à 120.",
+      "Vérification : $5 \\times 24 = 120$. Nora a empilé **5 couches**."
+    ],
+    "hint": "Combien de cubes dans une couche ? Ajoute une couche à la fois jusqu'à 120 cubes.",
+    "estimated_duration_s": 100,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 3, classe de 6e, Les volumes : « Déterminer un volume »"
+  }
+]

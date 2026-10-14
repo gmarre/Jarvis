@@ -1,0 +1,191 @@
+[
+  {
+    "id": "EX-P021-D-01",
+    "skill_id": "P021",
+    "level": "decouverte",
+    "type": "numerique",
+    "statement": "Un banc mesure 180 cm de long. On sait que 1 m = 100 cm.\n\nQuelle est sa longueur, en mètres ?",
+    "image": null,
+    "answer": {
+      "value": 1.8,
+      "unit": "m",
+      "accepted": [
+        "1,8 m",
+        "1,80",
+        "1,80 m"
+      ]
+    },
+    "solution_steps": [
+      "1 m = 100 cm : 1 cm est un centième de mètre.",
+      "On passe à une unité 100 fois plus grande : le nombre devient 100 fois plus petit. $180 \\div 100 = 1{,}8$.",
+      "Autre façon de voir : 180 cm = 100 cm + 80 cm, soit 1 m et 80 cm. Comme 1 dm = 10 cm, 80 cm font 8 dm, c'est-à-dire 8 dixièmes de mètre.",
+      "Le banc mesure **1,8 m** (on peut aussi écrire 1,80 m)."
+    ],
+    "hint": "On passe à une unité plus grande : le nombre doit-il grandir ou diminuer ?",
+    "estimated_duration_s": 60,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 3, 6e, les longueurs : « L'élève sait convertir en mètre une longueur donnée dans une autre unité, multiple ou sous-multiple du mètre. »"
+  },
+  {
+    "id": "EX-P021-D-02",
+    "skill_id": "P021",
+    "level": "decouverte",
+    "type": "qcm",
+    "statement": "Le tour d'un lac mesure 4 200 m.\n\nQuelle est cette longueur, en kilomètres ?",
+    "image": null,
+    "choices": [
+      {
+        "key": "a",
+        "text": "42 km",
+        "misconception": "L'élève pense que 1 km = 100 m : il divise par 100 au lieu de 1 000. 42 km, c'est à peu près la distance d'un marathon."
+      },
+      {
+        "key": "b",
+        "text": "4,2 km",
+        "misconception": null
+      },
+      {
+        "key": "c",
+        "text": "4 200 000 km",
+        "misconception": "L'élève convertit dans le mauvais sens : il multiplie par 1 000 alors qu'on passe à une unité plus grande. Le nombre de kilomètres doit être plus petit que le nombre de mètres."
+      },
+      {
+        "key": "d",
+        "text": "420 km",
+        "misconception": "L'élève enlève un seul zéro, quel que soit l'écart entre les unités : il divise par 10 au lieu de 1 000."
+      }
+    ],
+    "answer": {
+      "value": "b"
+    },
+    "solution_steps": [
+      "Kilo- veut dire mille : 1 km = 1 000 m.",
+      "On passe à une unité 1 000 fois plus grande : on divise par 1 000. $4\\,200 \\div 1\\,000 = 4{,}2$.",
+      "Autre façon de voir : 4 200 m = 4 000 m + 200 m, soit 4 km et 200 m. Comme 1 hm = 100 m est un dixième de kilomètre, 200 m font 2 dixièmes de kilomètre.",
+      "Le tour du lac mesure **4,2 km**."
+    ],
+    "hint": "Combien de mètres y a-t-il dans 1 km ? Le nombre de kilomètres est-il plus grand ou plus petit que le nombre de mètres ?",
+    "estimated_duration_s": 60,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 3, 6e, les longueurs : « Inversement, l'élève sait convertir dans une unité donnée une longueur exprimée en mètre. »"
+  },
+  {
+    "id": "EX-P021-E-01",
+    "skill_id": "P021",
+    "level": "entrainement",
+    "type": "numerique",
+    "statement": "Un crayon de couleur mesure 175 mm.\n\nQuelle est sa longueur, en mètres ?",
+    "image": null,
+    "answer": {
+      "value": 0.175,
+      "unit": "m",
+      "accepted": [
+        "0,175 m"
+      ]
+    },
+    "solution_steps": [
+      "Milli- veut dire millième : 1 mm est un millième de mètre, car 1 m = 1 000 mm.",
+      "On passe à une unité 1 000 fois plus grande : on divise par 1 000. $175 \\div 1\\,000 = 0{,}175$.",
+      "Vérification par les rangs : 175 mm, c'est 1 dm, 7 cm et 5 mm, soit 1 dixième, 7 centièmes et 5 millièmes de mètre.",
+      "Le crayon mesure **0,175 m**, un peu moins de 2 dixièmes de mètre, c'est-à-dire moins de 20 cm : c'est vraisemblable."
+    ],
+    "hint": "Combien de millimètres y a-t-il dans 1 m ?",
+    "estimated_duration_s": 75,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 3, 6e, les longueurs : « L'élève connaît les significations des préfixes allant du kilo- au milli-, ainsi que les relations entre le mètre, ses multiples et ses sous-multiples, et fait le lien avec les unités de numération du système décimal. »"
+  },
+  {
+    "id": "EX-P021-E-02",
+    "skill_id": "P021",
+    "level": "entrainement",
+    "type": "vrai_faux",
+    "statement": "Une rue mesure 64 m. Théo dit : « C'est 6,4 km, car kilo- veut dire mille. »\n\nThéo a-t-il raison ?",
+    "image": null,
+    "answer": {
+      "value": false
+    },
+    "solution_steps": [
+      "Kilo- veut dire mille : 1 km = 1 000 m, donc 1 m est un millième de kilomètre.",
+      "Pour passer des mètres aux kilomètres, on divise par 1 000 : $64 \\div 1\\,000 = 0{,}064$. La rue mesure 0,064 km.",
+      "Théo a seulement divisé par 10 : il a décalé les chiffres d'un rang au lieu de trois.",
+      "Contrôle : 6,4 km = 6 400 m, cent fois plus que 64 m. Théo a **tort**, c'est faux."
+    ],
+    "hint": "Combien de mètres y a-t-il dans 1 km ? 64 m, est-ce plus ou moins d'un kilomètre ?",
+    "estimated_duration_s": 60,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 3, 6e, les longueurs : « Inversement, l'élève sait convertir dans une unité donnée une longueur exprimée en mètre. »"
+  },
+  {
+    "id": "EX-P021-M-01",
+    "skill_id": "P021",
+    "level": "maitrise",
+    "type": "numerique",
+    "statement": "Pour un relais, quatre coureurs parcourent 1,2 km ; 850 m ; 9 hm et 75 dam.\n\nQuelle distance parcourent-ils en tout, en kilomètres ?",
+    "image": null,
+    "answer": {
+      "value": 3.7,
+      "unit": "km",
+      "accepted": [
+        "3,7 km",
+        "3,70",
+        "3,70 km"
+      ]
+    },
+    "solution_steps": [
+      "Les longueurs sont dans quatre unités différentes : on les écrit toutes en mètres, où ce sont des nombres entiers.",
+      "1 km = 1 000 m, donc 1,2 km = 1 200 m, car $1{,}2 \\times 1\\,000 = 1\\,200$.",
+      "1 hm = 100 m, donc 9 hm = 900 m. 1 dam = 10 m, donc 75 dam = 750 m, car $75 \\times 10 = 750$.",
+      "On additionne : $1\\,200 + 850 + 900 + 750 = 3\\,700$. Les coureurs parcourent 3 700 m.",
+      "On revient aux kilomètres, unité 1 000 fois plus grande : $3\\,700 \\div 1\\,000 = 3{,}7$. Ils parcourent **3,7 km**."
+    ],
+    "hint": "Convertis chaque longueur en mètres, additionne, puis reviens aux kilomètres.",
+    "estimated_duration_s": 120,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 3, 6e, les longueurs : « Résoudre des problèmes impliquant des longueurs »"
+  },
+  {
+    "id": "EX-P021-M-02",
+    "skill_id": "P021",
+    "level": "maitrise",
+    "type": "qcm",
+    "statement": "Trois chemins mesurent 0,45 km ; 4 600 dm et 47 000 cm.\n\nQuelle est la longueur du plus long, en kilomètres ?",
+    "image": null,
+    "choices": [
+      {
+        "key": "a",
+        "text": "0,46 km",
+        "misconception": "L'élève divise 47 000 cm par 1 000, comme si c'étaient des millimètres : il trouve 47 m et croit que le chemin de 4 600 dm, soit 460 m, est le plus long. Or 1 m = 100 cm, donc 47 000 cm = 470 m."
+      },
+      {
+        "key": "b",
+        "text": "4,7 km",
+        "misconception": "L'élève trouve bien le chemin de 470 m, mais il divise par 100 au lieu de 1 000, comme si 1 km = 100 m. 4,7 km, c'est 4 700 m."
+      },
+      {
+        "key": "c",
+        "text": "0,47 km",
+        "misconception": null
+      },
+      {
+        "key": "d",
+        "text": "0,45 km",
+        "misconception": "L'élève pense que la longueur écrite dans la plus grande unité est forcément la plus grande. Or 0,45 km = 450 m, la plus courte des trois."
+      }
+    ],
+    "answer": {
+      "value": "c"
+    },
+    "solution_steps": [
+      "Pour comparer, on écrit les trois longueurs en mètres.",
+      "1 km = 1 000 m, donc 0,45 km = 450 m, car $0{,}45 \\times 1\\,000 = 450$.",
+      "1 m = 10 dm, donc 4 600 dm = 460 m, car $4\\,600 \\div 10 = 460$.",
+      "1 m = 100 cm, donc 47 000 cm = 470 m, car $47\\,000 \\div 100 = 470$.",
+      "450 m < 460 m < 470 m : le plus long est le chemin de 47 000 cm, qui mesure 470 m.",
+      "On revient aux kilomètres, unité 1 000 fois plus grande : $470 \\div 1\\,000 = 0{,}47$. Le plus long mesure **0,47 km**."
+    ],
+    "hint": "Convertis les trois longueurs en mètres avant de comparer.",
+    "estimated_duration_s": 120,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 3, 6e, les longueurs : « L'élève sait convertir en mètre une longueur donnée dans une autre unité, multiple ou sous-multiple du mètre. »"
+  }
+]

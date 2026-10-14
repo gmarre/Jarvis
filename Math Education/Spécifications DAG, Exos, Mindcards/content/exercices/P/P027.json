@@ -1,0 +1,181 @@
+[
+  {
+    "id": "EX-P027-D-01",
+    "skill_id": "P027",
+    "level": "decouverte",
+    "type": "qcm",
+    "statement": "Un trajet en voiture dure 3,5 h.\n\nQuelle est cette durée en heures et minutes ?",
+    "image": null,
+    "choices": [
+      {
+        "key": "a",
+        "text": "3 h 50 min",
+        "misconception": "L'élève lit les chiffres après la virgule comme des minutes, comme si une heure valait 100 minutes. Or 0,5 h, c'est la moitié d'une heure, donc 30 minutes."
+      },
+      {
+        "key": "b",
+        "text": "3 h 30 min",
+        "misconception": null
+      },
+      {
+        "key": "c",
+        "text": "3 h 5 min",
+        "misconception": "L'élève recopie le 5 des dixièmes comme 5 minutes. Or 0,5 h, ce sont 5 dixièmes d'heure, et un dixième d'heure dure 6 minutes."
+      }
+    ],
+    "answer": {
+      "value": "b"
+    },
+    "solution_steps": [
+      "3,5 h, c'est 3 h plus 0,5 h.",
+      "$0{,}5 = \\frac{5}{10} = \\frac{1}{2}$ : 0,5 h est une demi-heure, c'est-à-dire 30 min.",
+      "Donc 3,5 h = **3 h 30 min**.",
+      "L'écriture décimale compte en dixièmes d'heure, alors qu'une heure contient 60 minutes : le chiffre après la virgule n'est pas un nombre de minutes."
+    ],
+    "hint": "Que vaut 0,5 h ? Pense à une fraction simple de l'heure.",
+    "estimated_duration_s": 45,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 3, 6e : concernant les durées, les élèves résolvent des problèmes mobilisant des conversions entre le système décimal et le système sexagésimal ; convertir des durées."
+  },
+  {
+    "id": "EX-P027-D-02",
+    "skill_id": "P027",
+    "level": "decouverte",
+    "type": "numerique",
+    "statement": "Une croisière dure 3 jours et 5 heures.\n\nCombien d'heures dure-t-elle ?",
+    "image": null,
+    "answer": {
+      "value": 77,
+      "unit": "h",
+      "accepted": [
+        "77 h",
+        "77 heures"
+      ]
+    },
+    "solution_steps": [
+      "Un jour dure 24 heures : de minuit à minuit, on compte 24 heures.",
+      "3 jours durent 3 fois 24 heures : $3 \\times 24 = 72$ heures.",
+      "On ajoute les 5 heures : $72 + 5 = 77$. La croisière dure **77 heures**.",
+      "Erreur à éviter : coller les nombres et répondre 35 heures. Un jour ne compte pas 10 heures, mais 24."
+    ],
+    "hint": "Combien d'heures dure un jour ?",
+    "estimated_duration_s": 60,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 3, 6e : l'élève connaît les unités de mesure de durées jour, heure, minute et seconde et les relations qui les lient ; convertir des durées."
+  },
+  {
+    "id": "EX-P027-E-01",
+    "skill_id": "P027",
+    "level": "entrainement",
+    "type": "texte",
+    "statement": "Une randonnée dure 4,2 h.\n\nÉcris cette durée en heures et minutes.",
+    "image": null,
+    "answer": {
+      "value": "4 h 12 min",
+      "accepted": [
+        "4 h 12",
+        "4 h 12 minutes",
+        "4 heures 12 minutes",
+        "4 heures et 12 minutes",
+        "4 h et 12 min"
+      ]
+    },
+    "solution_steps": [
+      "4,2 h, c'est 4 h plus 0,2 h, c'est-à-dire 2 dixièmes d'heure.",
+      "Un dixième d'heure dure $60 \\div 10 = 6$ minutes.",
+      "2 dixièmes d'heure durent $2 \\times 6 = 12$ minutes.",
+      "La randonnée dure **4 h 12 min**.",
+      "Erreur à éviter : écrire 4 h 20 min ou 4 h 2 min. Le chiffre des dixièmes compte des dixièmes d'heure, pas des minutes."
+    ],
+    "hint": "Combien de minutes dure un dixième d'heure ?",
+    "estimated_duration_s": 75,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 3, 6e : concernant les durées, les élèves résolvent des problèmes mobilisant des conversions entre le système décimal et le système sexagésimal ; convertir des durées."
+  },
+  {
+    "id": "EX-P027-E-02",
+    "skill_id": "P027",
+    "level": "entrainement",
+    "type": "numerique",
+    "statement": "Une séance de cinéma dure 2 h 15 min.\n\nÉcris cette durée en heures, avec un nombre décimal.",
+    "image": null,
+    "answer": {
+      "value": 2.25,
+      "unit": "h",
+      "accepted": [
+        "2,25 h",
+        "2,25 heures"
+      ]
+    },
+    "solution_steps": [
+      "15 min, c'est un quart d'heure : $\\frac{15}{60} = \\frac{1}{4}$.",
+      "$\\frac{1}{4} = \\frac{25}{100} = 0{,}25$ : 15 min = 0,25 h.",
+      "2 h 15 min = 2 h + 0,25 h = **2,25 h**.",
+      "Erreur à éviter : écrire 2,15 h. 2,15 h, c'est 2 h et 15 centièmes d'heure, soit 2 h 9 min."
+    ],
+    "hint": "Quelle fraction de l'heure représentent 15 minutes ?",
+    "estimated_duration_s": 75,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 3, 6e : concernant les durées, les élèves résolvent des problèmes mobilisant des conversions entre le système décimal et le système sexagésimal ; convertir des durées."
+  },
+  {
+    "id": "EX-P027-M-01",
+    "skill_id": "P027",
+    "level": "maitrise",
+    "type": "vrai_faux",
+    "statement": "Lou fait du vélo pendant 1 h 30 min, puis pendant 2,75 h. Elle affirme avoir roulé 4 h 05 min en tout.\n\nA-t-elle raison ?",
+    "image": null,
+    "answer": {
+      "value": false
+    },
+    "solution_steps": [
+      "On convertit 2,75 h en heures et minutes : $0{,}75 = \\frac{75}{100} = \\frac{3}{4}$, et trois quarts d'heure durent $3 \\times 15 = 45$ minutes. Donc 2,75 h = 2 h 45 min.",
+      "On ajoute : 1 h 30 min + 2 h 45 min = 3 h 75 min.",
+      "75 min = 1 h 15 min, donc 3 h 75 min = 4 h 15 min.",
+      "Lou a **tort** : elle a roulé 4 h 15 min, soit 4,25 h. On le retrouve en décimal : 1 h 30 min = 1,5 h et $1{,}5 + 2{,}75 = 4{,}25$.",
+      "Son erreur : elle a lu 2,75 h comme 2 h 75 min, a obtenu 1 h 30 min + 2 h 75 min = 3 h 105 min, puis a transformé 105 min en 1 h 05 min en comptant 100 minutes dans une heure."
+    ],
+    "hint": "Écris d'abord 2,75 h en heures et minutes.",
+    "estimated_duration_s": 120,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 3, 6e : effectuer des calculs sur des horaires et des durées ; convertir des durées."
+  },
+  {
+    "id": "EX-P027-M-02",
+    "skill_id": "P027",
+    "level": "maitrise",
+    "type": "qcm",
+    "statement": "Entre deux villes, le train met 3 h 12 min et l'avion 1,2 h.\n\nCombien de temps de plus met le train ?",
+    "image": null,
+    "choices": [
+      {
+        "key": "a",
+        "text": "1 h 52 min",
+        "misconception": "L'élève lit 1,2 h comme 1 h 20 min, en prenant le chiffre des dixièmes pour des dizaines de minutes, puis calcule 3 h 12 min − 1 h 20 min = 1 h 52 min. Or 0,2 h ne vaut que 12 minutes."
+      },
+      {
+        "key": "b",
+        "text": "1,92 h",
+        "misconception": "L'élève écrit 3 h 12 min sous la forme 3,12 h, en prenant les minutes pour des centièmes d'heure, puis calcule $3{,}12 - 1{,}2 = 1{,}92$. Or 12 minutes ne font pas 12 centièmes d'heure."
+      },
+      {
+        "key": "c",
+        "text": "2 h",
+        "misconception": null
+      }
+    ],
+    "answer": {
+      "value": "c"
+    },
+    "solution_steps": [
+      "On met les deux durées dans la même écriture. L'avion : 1,2 h = 1 h + 0,2 h.",
+      "Un dixième d'heure dure $60 \\div 10 = 6$ minutes, donc 0,2 h = $2 \\times 6 = 12$ minutes. L'avion met 1 h 12 min.",
+      "Écart : 3 h 12 min − 1 h 12 min = 2 h. Le train met **2 h** de plus.",
+      "Autre chemin, en décimal : 12 min = $\\frac{12}{60}$ h = $\\frac{2}{10}$ h = 0,2 h, donc le train met 3,2 h, et $3{,}2 - 1{,}2 = 2$."
+    ],
+    "hint": "Convertis d'abord la durée de l'avion en heures et minutes.",
+    "estimated_duration_s": 120,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 3, 6e : résoudre des problèmes impliquant des horaires et des durées ; convertir des durées."
+  }
+]

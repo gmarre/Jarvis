@@ -56,8 +56,13 @@ function runPlacement(level: SchoolLevel, strategy: Strategy) {
 
 describe('positionnement sur un contenu troue', () => {
   it('le contenu simule a bien des trous', () => {
-    const vides = skills.filter((skill) => !isTestable(skill.id)).map((skill) => skill.id)
-    expect(new Set(vides)).toEqual(COMPETENCES_VIDES)
+    // Les trous simules, plus ceux du contenu reel : depuis l'etape 4a, cinq
+    // competences de mesure attendent leurs figures (P001, P004, P007, P013,
+    // P017). Le test verifie que chaque trou simule est bien vide, sans figer
+    // la liste des trous reels.
+    const vides = new Set(skills.filter((skill) => !isTestable(skill.id)).map((skill) => skill.id))
+    for (const id of COMPETENCES_VIDES) expect(vides.has(id)).toBe(true)
+    expect(vides.size).toBeGreaterThanOrEqual(COMPETENCES_VIDES.size)
   })
 
   const cases = SCHOOL_LEVELS.flatMap((level) =>

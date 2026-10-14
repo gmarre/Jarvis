@@ -1,0 +1,178 @@
+[
+  {
+    "id": "EX-P008-D-01",
+    "skill_id": "P008",
+    "level": "decouverte",
+    "type": "numerique",
+    "statement": "Une heure dure 60 minutes. Léo lit pendant un quart d'heure.\n\nCombien de minutes lit-il ?",
+    "image": null,
+    "answer": {
+      "value": 15,
+      "unit": "min",
+      "accepted": [
+        "15 min",
+        "15 minutes"
+      ]
+    },
+    "solution_steps": [
+      "Un quart d'heure, c'est une heure partagée en 4 parts égales : on prend une de ces parts.",
+      "On partage d'abord l'heure en 2 : une demi-heure, c'est 30 minutes, car $30 + 30 = 60$.",
+      "On partage chaque demi-heure en 2 : $15 + 15 = 30$. L'heure est alors coupée en 4 parts de 15 minutes : $15 + 15 + 15 + 15 = 60$.",
+      "Un quart d'heure dure **15 minutes** : Léo lit 15 minutes. Deux quarts d'heure font une demi-heure."
+    ],
+    "hint": "Partage l'heure en 2 parts égales, puis chaque moitié en 2.",
+    "estimated_duration_s": 45,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 2, CE1 : l'élève connait les relations : 1 heure = 60 minutes ; 1 demi-heure = 30 minutes ; 1 quart d'heure = 15 minutes."
+  },
+  {
+    "id": "EX-P008-D-02",
+    "skill_id": "P008",
+    "level": "decouverte",
+    "type": "qcm",
+    "statement": "Le goûter est à 4 heures de l'après-midi.\n\nComment écrit-on cette heure avec les heures de 0 h à 23 h ?",
+    "image": null,
+    "choices": [
+      {
+        "key": "a",
+        "text": "4 h",
+        "misconception": "L'élève ne distingue pas le matin de l'après-midi. Or 4 h, c'est 4 heures du matin, en pleine nuit : le goûter n'a pas lieu à cette heure-là."
+      },
+      {
+        "key": "b",
+        "text": "15 h",
+        "misconception": "L'élève compte les heures à partir de midi en disant « 12, 13, 14, 15 » : il compte midi comme la première heure. Or 4 heures après midi, on compte 13, 14, 15, 16."
+      },
+      {
+        "key": "c",
+        "text": "16 h",
+        "misconception": null
+      }
+    ],
+    "answer": {
+      "value": "c"
+    },
+    "solution_steps": [
+      "L'après-midi commence à midi, c'est-à-dire à 12 h.",
+      "4 heures de l'après-midi, c'est 4 heures après midi : $12 + 4 = 16$.",
+      "On écrit **16 h**. Le matin, 4 heures s'écrit 4 h ; l'après-midi, on ajoute 12 au nombre d'heures."
+    ],
+    "hint": "L'après-midi commence à 12 h. Combien d'heures après midi est le goûter ?",
+    "estimated_duration_s": 45,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 2, CE1 : connaitre, utiliser et distinguer les heures du matin et celles de l'après-midi ; l'élève comprend et utilise les expressions « trois heures du matin », « trois heures de l'après-midi »."
+  },
+  {
+    "id": "EX-P008-E-01",
+    "skill_id": "P008",
+    "level": "entrainement",
+    "type": "numerique",
+    "statement": "Le cours de judo commence à 17 h 15 et finit à 18 h.\n\nCombien de minutes dure-t-il ?",
+    "image": null,
+    "answer": {
+      "value": 45,
+      "unit": "min",
+      "accepted": [
+        "45 min",
+        "45 minutes"
+      ]
+    },
+    "solution_steps": [
+      "On avance de 17 h 15 jusqu'à 18 h, de quart d'heure en quart d'heure.",
+      "De 17 h 15 à 17 h 30 : 15 minutes. De 17 h 30 à 17 h 45 : 15 minutes. De 17 h 45 à 18 h : 15 minutes.",
+      "Cela fait trois quarts d'heure : $15 + 15 + 15 = 45$. Le cours dure **45 minutes**.",
+      "Autre chemin : de 17 h à 18 h, il y a 60 minutes. Le cours commence 15 minutes après 17 h, donc il dure $60 - 15 = 45$ minutes."
+    ],
+    "hint": "Avance de quart d'heure en quart d'heure, de 17 h 15 jusqu'à 18 h.",
+    "estimated_duration_s": 60,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 2, CE1 : comparer et mesurer des durées écoulées entre deux instants affichés sur une horloge (pour des intervalles de temps situés dans une même journée, avec des heures données en heures entières, en heures et demi-heure ou en heures et quarts d'heure)."
+  },
+  {
+    "id": "EX-P008-E-02",
+    "skill_id": "P008",
+    "level": "entrainement",
+    "type": "vrai_faux",
+    "statement": "Tom dit : « 1 h 10 min, c'est plus long que 80 min. »\n\nA-t-il raison ?",
+    "image": null,
+    "answer": {
+      "value": false
+    },
+    "solution_steps": [
+      "Pour comparer deux durées, on les écrit dans la même unité : ici, en minutes.",
+      "1 h, c'est 60 minutes, et non 100 minutes. Donc 1 h 10 min, c'est $60 + 10 = 70$ minutes.",
+      "70 minutes, c'est moins long que 80 minutes : Tom a **tort**.",
+      "Erreur à éviter : croire qu'une heure fait 100 minutes. On trouverait 110 minutes et on donnerait raison à Tom."
+    ],
+    "hint": "Combien de minutes y a-t-il dans 1 h ?",
+    "estimated_duration_s": 45,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 2, CE1 : l'élève sait comparer des durées comme 2 heures et 130 minutes."
+  },
+  {
+    "id": "EX-P008-M-01",
+    "skill_id": "P008",
+    "level": "maitrise",
+    "type": "texte",
+    "statement": "Sami lit une demi-heure, puis joue du piano trois quarts d'heure.\n\nCombien de temps en tout, en heures et minutes ?",
+    "image": null,
+    "answer": {
+      "value": "1 h 15 min",
+      "accepted": [
+        "1 h 15",
+        "1 h 15 minutes",
+        "1 heure 15 minutes",
+        "1 heure et 15 minutes",
+        "1 h et 15 min"
+      ]
+    },
+    "solution_steps": [
+      "Une demi-heure, c'est 30 minutes.",
+      "Trois quarts d'heure, c'est un quart d'heure plus un quart d'heure plus un quart d'heure : $15 + 15 + 15 = 45$ minutes.",
+      "En tout : $30 + 45 = 75$ minutes.",
+      "Dès qu'on a 60 minutes, on a une heure : dans 75 minutes, il y a une heure (60 minutes) et il reste $75 - 60 = 15$ minutes.",
+      "Sami a passé **1 h 15 min** à lire et à jouer du piano."
+    ],
+    "hint": "Écris chaque durée en minutes, ajoute-les, puis cherche l'heure entière cachée dans le total.",
+    "estimated_duration_s": 90,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 2, CE1 : l'élève sait ajouter ou soustraire des durées. Il sait aussi que trois quarts d'heure c'est un quart d'heure plus un quart d'heure plus un quart d'heure, c'est-à-dire trois fois un quart d'heure."
+  },
+  {
+    "id": "EX-P008-M-02",
+    "skill_id": "P008",
+    "level": "maitrise",
+    "type": "qcm",
+    "statement": "La sortie au zoo part à 10 heures du matin et revient à 2 heures de l'après-midi.\n\nCombien de temps dure-t-elle ?",
+    "image": null,
+    "choices": [
+      {
+        "key": "a",
+        "text": "4 heures",
+        "misconception": null
+      },
+      {
+        "key": "b",
+        "text": "8 heures",
+        "misconception": "L'élève calcule $10 - 2 = 8$ : il n'écrit pas 2 heures de l'après-midi sous la forme 14 h, et il enlève le plus petit nombre au plus grand."
+      },
+      {
+        "key": "c",
+        "text": "5 heures",
+        "misconception": "L'élève compte les heures 10, 11, 12, 13, 14 : cela fait 5 nombres, mais seulement 4 heures entre eux (de 10 à 11, de 11 à 12, de 12 à 13, de 13 à 14)."
+      }
+    ],
+    "answer": {
+      "value": "a"
+    },
+    "solution_steps": [
+      "2 heures de l'après-midi, c'est 2 heures après midi : $12 + 2 = 14$, soit 14 h.",
+      "De 10 h à 12 h (midi) : 2 heures. De 12 h à 14 h : 2 heures.",
+      "En tout : $2 + 2 = 4$. La sortie dure **4 heures**."
+    ],
+    "hint": "Écris d'abord 2 heures de l'après-midi avec les heures de 0 h à 23 h.",
+    "estimated_duration_s": 75,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 2, CE1 : connaitre, utiliser et distinguer les heures du matin et celles de l'après-midi ; l'élève sait dire que 8 heures est la durée qui s'écoule entre midi et 20 h."
+  }
+]

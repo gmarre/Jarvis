@@ -1,6 +1,6 @@
 # Fiche de relecture — synthèse
 
-> 93 compétences, 504 exercices. Généré depuis `content/`, ne pas éditer à la main.  
+> 115 compétences, 636 exercices. Généré depuis `content/`, ne pas éditer à la main.  
 > Objectif : juger le **fond** et la **coordination**. Le détail complet, énoncés et corrigés, est dans `RELECTURE_DETAIL.md`.
 
 ⚠ **7 compétence(s) à regarder**, signalées dans la colonne *Signal* et détaillées en §3.
@@ -15,95 +15,119 @@ C'est la lecture qui compte pour juger la coordination : la difficulté doit mon
 | 2 | `A002` Compter jusqu'à 100 | CP | 1 | 3 | 6 |  |
 | 3 | `B001` Addition simple | CP | 1 | 6 | 14 |  |
 | 4 | `B003` Soustraction simple | CP | 1 | 6 | 12 |  |
-| 5 | `B002` Addition posée avec retenue | CP | 2 | 6 | 11 |  |
-| 6 | `B013` Calcul mental : additions | CP | 2 | 6 | 11 |  |
-| 7 | `B014` Calcul mental : soustractions | CP | 2 | 6 | 9 |  |
-| 8 | `B036` Problèmes de partage équitable | CP | 2 | 6 | 15 |  |
-| 9 | `B037` Problèmes additifs en deux étapes | CP | 2 | 6 | 15 |  |
-| 10 | `A003` Compter jusqu'à 1000 | CE1 | 2 | 3 | 5 |  |
-| 11 | `A004` Lire un entier | CE1 | 2 | 3 | 6 | ⚠ |
-| 12 | `A005` Écrire un entier | CE1 | 2 | 3 | 5 | ⚠ |
-| 13 | `A006` Comparer deux entiers | CE1 | 2 | 3 | 13 | ⚠ |
-| 14 | `A008` Identifier chiffre et nombre | CE1 | 2 | 3 | 11 | ⚠ |
-| 15 | `A011` Pair / impair | CE1 | 2 | 3 | 11 |  |
-| 16 | `B005` Multiplication à un chiffre | CE1 | 2 | 7 | 17 |  |
-| 17 | `B015` Calcul mental : multiplier par 10 | CE1 | 2 | 6 | 16 |  |
-| 18 | `B042` Addition posée de nombres à trois chiff… | CE1 | 2 | 6 | 11 |  |
-| 19 | `B004` Soustraction posée avec retenue | CE1 | 2 | 6 | 12 |  |
-| 20 | `C001` Fraction comme partage | CE1 | 2 | 3 | 23 | ⚠ |
-| 21 | `C002` Numérateur | CE1 | 2 | 3 | 17 |  |
-| 22 | `C003` Dénominateur | CE1 | 2 | 3 | 21 | ⚠ |
-| 23 | `C009` Comparer fractions de même dénominateur | CE1 | 2 | 3 | 25 | ⚠ |
-| 24 | `C012` Additionner des fractions de même dénom… | CE1 | 2 | 3 | 17 |  |
-| 25 | `C026` Comparer des fractions de numérateur 1 | CE1 | 2 | 7 | 18 |  |
-| 26 | `D016` Écrire une somme d'argent avec une virg… | CE1 | 2 | 6 | 19 |  |
-| 27 | `B038` Problèmes mixtes en deux étapes | CE1 | 3 | 6 | 19 |  |
-| 28 | `A007` Ranger plusieurs entiers | CE2 | 2 | 3 | 17 |  |
-| 29 | `A009` Comprendre la valeur positionnelle | CE2 | 2 | 3 | 12 |  |
-| 30 | `B006` Tables de multiplication | CE2 | 2 | 6 | 14 |  |
-| 31 | `C006` Fractions équivalentes | CE2 | 2 | 3 | 8 |  |
-| 32 | `C005` Fraction sur une droite graduée | CE2 | 2 | 3 | 25 |  |
-| 33 | `A010` Décomposer un entier | CE2 | 3 | 3 | 7 |  |
-| 34 | `B039` Sens de la division et symbole ÷ | CE2 | 3 | 6 | 14 |  |
-| 35 | `B041` Calcul mental : multiplier par 100 et p… | CE2 | 3 | 6 | 14 |  |
-| 36 | `B007` Multiplication posée | CE2 | 3 | 6 | 18 |  |
-| 37 | `B043` Comparaison multiplicative : fois plus,… | CE2 | 3 | 6 | 21 |  |
-| 38 | `D017` Additionner et soustraire des montants … | CE2 | 3 | 6 | 18 |  |
-| 39 | `A012` Multiple | CM1 | 3 | 7 | 22 |  |
-| 40 | `A013` Diviseur | CM1 | 3 | 7 | 21 |  |
-| 41 | `A014` Multiples de 2, de 5 et de 10 | CM1 | 3 | 7 | 18 |  |
-| 42 | `A028` Entier sur une demi-droite graduée | CM1 | 3 | 7 | 25 |  |
-| 43 | `B008` Division euclidienne posée (diviseur à … | CM1 | 3 | 6 | 20 |  |
-| 44 | `B012` Calcul avec parenthèses | CM1 | 3 | 6 | 15 |  |
-| 45 | `B017` Estimer le résultat d'une opération | CM1 | 3 | 6 | 20 |  |
-| 46 | `C004` Fraction d'une quantité | CM1 | 3 | 3 | 13 |  |
-| 47 | `C027` Fraction supérieure à 1 | CM1 | 3 | 8 | 15 |  |
-| 48 | `C029` Encadrer une fraction | CM1 | 3 | 7 | 14 |  |
-| 49 | `C030` Fraction sur une demi-droite graduée | CM1 | 3 | 7 | 25 |  |
-| 50 | `D018` Fractions décimales : dixièmes et centi… | CM1 | 3 | 6 | 24 |  |
-| 51 | `D001` Écriture à virgule d'un nombre décimal | CM1 | 3 | 6 | 16 |  |
-| 52 | `D003` Comparer et ranger des nombres décimaux | CM1 | 3 | 6 | 28 |  |
-| 53 | `D004` Additionner et soustraire des décimaux … | CM1 | 3 | 6 | 20 |  |
-| 54 | `D012` Encadrer et intercaler des nombres déci… | CM1 | 3 | 6 | 24 |  |
-| 55 | `D008` Partie entière et arrondi à l'unité | CM1 | 3 | 6 | 19 |  |
-| 56 | `D019` Décimal sur une demi-droite graduée | CM1 | 3 | 6 | 27 |  |
-| 57 | `D020` Calcul mental : multiplier et diviser u… | CM1 | 3 | 6 | 19 |  |
-| 58 | `D021` Multiplier un décimal par un entier inf… | CM1 | 3 | 6 | 17 |  |
-| 59 | `E026` Reconnaître une situation de proportion… | CM1 | 3 | 6 | 27 |  |
-| 60 | `E027` Résoudre par linéarité multiplicative (… | CM1 | 3 | 6 | 17 |  |
-| 61 | `D014` Convertir des mesures écrites avec une … | CM1 | 4 | 6 | 20 |  |
-| 62 | `A026` Tous les diviseurs d'un entier | CM2 | 3 | 7 | 17 |  |
-| 63 | `B016` Calcul mental : diviser par 2, 4 ou 8 | CM2 | 3 | 6 | 16 |  |
-| 64 | `A027` Diviseurs et multiples communs | CM2 | 4 | 8 | 22 |  |
-| 65 | `C031` Produit d'un entier par une fraction | CM2 | 4 | 7 | 10 |  |
-| 66 | `D022` Décimaux jusqu'aux millièmes | CM2 | 4 | 6 | 14 |  |
-| 67 | `D007` Division décimale par un entier à un ch… | CM2 | 4 | 6 | 17 |  |
-| 68 | `D023` Calcul mental : multiplier et diviser u… | CM2 | 4 | 6 | 13 |  |
-| 69 | `D024` Multiplier un décimal par un entier (po… | CM2 | 4 | 6 | 20 |  |
-| 70 | `E028` Résoudre par linéarité additive | CM2 | 4 | 6 | 22 |  |
-| 71 | `E029` Problèmes de proportionnalité en plusie… | CM2 | 4 | 6 | 18 |  |
-| 72 | `B040` Division euclidienne par un nombre à de… | 6e | 4 | 6 | 18 |  |
-| 73 | `C032` Fraction comme quotient | 6e | 4 | 7 | 16 |  |
-| 74 | `D009` Arrondir au dixième ou au centième | 6e | 4 | 6 | 17 |  |
-| 75 | `D025` Multiplier par 0,1 ; 0,01 ; 0,001 | 6e | 4 | 6 | 19 |  |
-| 76 | `E030` Grandeurs proportionnelles : définition… | 6e | 4 | 6 | 31 |  |
-| 77 | `E031` Passage par l'unité et choix de la proc… | 6e | 4 | 6 | 24 |  |
-| 78 | `E003` Tableau de proportionnalité : représent… | 6e | 4 | 6 | 51 |  |
-| 79 | `E032` Pourcentage : définition et écritures | 6e | 4 | 6 | 31 |  |
-| 80 | `E010` Appliquer un pourcentage à une grandeur… | 6e | 4 | 6 | 25 |  |
-| 81 | `E033` Exprimer une proportion en pourcentage … | 6e | 4 | 6 | 24 |  |
-| 82 | `D006` Multiplier deux nombres décimaux | 6e | 5 | 6 | 22 |  |
-| 83 | `E006` Échelle d'un plan : premiers problèmes | 6e | 5 | 6 | 36 |  |
-| 84 | `C011` Réduction au même dénominateur | 5e | 4 | 3 | 14 |  |
-| 85 | `C010` Comparer fractions de dénominateurs dif… | 5e | 4 | 3 | 13 |  |
-| 86 | `E034` Coefficient de proportionnalité | 5e | 5 | 6 | 48 |  |
-| 87 | `E007` Vitesse moyenne | 5e | 5 | 6 | 24 |  |
-| 88 | `E035` Reconnaître un tableau de proportionnal… | 5e | 5 | 6 | 47 |  |
-| 89 | `E023` Proportionnalité et graphique | 5e | 5 | 6 | 53 |  |
-| 90 | `E036` Calculer un pourcentage dans le cas gén… | 5e | 5 | 6 | 31 |  |
-| 91 | `E037` Pourcentages par linéarité : 1 %, 10 %,… | 5e | 5 | 6 | 29 |  |
-| 92 | `C007` Simplification de fraction | 4e | 5 | 3 | 11 |  |
-| 93 | `C008` Fraction irréductible | 3e | 6 | 3 | 9 |  |
+| 5 | `P002` Le mètre et le centimètre : unités et o… | CP | 1 | 6 | 14 |  |
+| 6 | `B002` Addition posée avec retenue | CP | 2 | 6 | 11 |  |
+| 7 | `B013` Calcul mental : additions | CP | 2 | 6 | 11 |  |
+| 8 | `B014` Calcul mental : soustractions | CP | 2 | 6 | 9 |  |
+| 9 | `B036` Problèmes de partage équitable | CP | 2 | 6 | 15 |  |
+| 10 | `B037` Problèmes additifs en deux étapes | CP | 2 | 6 | 15 |  |
+| 11 | `P003` La monnaie en euros entiers : valeur, c… | CP | 2 | 6 | 15 |  |
+| 12 | `A003` Compter jusqu'à 1000 | CE1 | 2 | 3 | 5 |  |
+| 13 | `A004` Lire un entier | CE1 | 2 | 3 | 6 | ⚠ |
+| 14 | `A005` Écrire un entier | CE1 | 2 | 3 | 5 | ⚠ |
+| 15 | `A006` Comparer deux entiers | CE1 | 2 | 3 | 13 | ⚠ |
+| 16 | `A008` Identifier chiffre et nombre | CE1 | 2 | 3 | 11 | ⚠ |
+| 17 | `A011` Pair / impair | CE1 | 2 | 3 | 11 |  |
+| 18 | `B005` Multiplication à un chiffre | CE1 | 2 | 7 | 17 |  |
+| 19 | `B015` Calcul mental : multiplier par 10 | CE1 | 2 | 6 | 16 |  |
+| 20 | `B042` Addition posée de nombres à trois chiff… | CE1 | 2 | 6 | 11 |  |
+| 21 | `B004` Soustraction posée avec retenue | CE1 | 2 | 6 | 12 |  |
+| 22 | `C001` Fraction comme partage | CE1 | 2 | 3 | 23 | ⚠ |
+| 23 | `C002` Numérateur | CE1 | 2 | 3 | 17 |  |
+| 24 | `C003` Dénominateur | CE1 | 2 | 3 | 21 | ⚠ |
+| 25 | `C009` Comparer fractions de même dénominateur | CE1 | 2 | 3 | 25 | ⚠ |
+| 26 | `C012` Additionner des fractions de même dénom… | CE1 | 2 | 3 | 17 |  |
+| 27 | `C026` Comparer des fractions de numérateur 1 | CE1 | 2 | 7 | 18 |  |
+| 28 | `D016` Écrire une somme d'argent avec une virg… | CE1 | 2 | 6 | 19 |  |
+| 29 | `P005` Longueurs : mètre, centimètre, kilomètre | CE1 | 2 | 6 | 17 |  |
+| 30 | `P006` Masses : gramme et kilogramme | CE1 | 2 | 6 | 16 |  |
+| 31 | `P008` Heures et minutes : unités de durée et … | CE1 | 2 | 6 | 20 |  |
+| 32 | `B038` Problèmes mixtes en deux étapes | CE1 | 3 | 6 | 19 |  |
+| 33 | `A007` Ranger plusieurs entiers | CE2 | 2 | 3 | 17 |  |
+| 34 | `A009` Comprendre la valeur positionnelle | CE2 | 2 | 3 | 12 |  |
+| 35 | `B006` Tables de multiplication | CE2 | 2 | 6 | 14 |  |
+| 36 | `C006` Fractions équivalentes | CE2 | 2 | 3 | 8 |  |
+| 37 | `C005` Fraction sur une droite graduée | CE2 | 2 | 3 | 25 |  |
+| 38 | `P010` Périmètre d'un polygone : longueur du c… | CE2 | 2 | 6 | 25 |  |
+| 39 | `A010` Décomposer un entier | CE2 | 3 | 3 | 7 |  |
+| 40 | `B039` Sens de la division et symbole ÷ | CE2 | 3 | 6 | 14 |  |
+| 41 | `B041` Calcul mental : multiplier par 100 et p… | CE2 | 3 | 6 | 14 |  |
+| 42 | `B007` Multiplication posée | CE2 | 3 | 6 | 18 |  |
+| 43 | `B043` Comparaison multiplicative : fois plus,… | CE2 | 3 | 6 | 21 |  |
+| 44 | `D017` Additionner et soustraire des montants … | CE2 | 3 | 6 | 18 |  |
+| 45 | `P009` Longueurs : millimètre et décimètre, co… | CE2 | 3 | 6 | 22 |  |
+| 46 | `P011` Masses : la tonne, conversions entre g,… | CE2 | 3 | 6 | 24 |  |
+| 47 | `P012` Contenances : litre, décilitre, centili… | CE2 | 3 | 6 | 20 |  |
+| 48 | `P014` Problèmes de durées en heures et minutes | CE2 | 3 | 6 | 24 |  |
+| 49 | `A012` Multiple | CM1 | 3 | 7 | 22 |  |
+| 50 | `A013` Diviseur | CM1 | 3 | 7 | 21 |  |
+| 51 | `A014` Multiples de 2, de 5 et de 10 | CM1 | 3 | 7 | 18 |  |
+| 52 | `A028` Entier sur une demi-droite graduée | CM1 | 3 | 7 | 25 |  |
+| 53 | `B008` Division euclidienne posée (diviseur à … | CM1 | 3 | 6 | 20 |  |
+| 54 | `B012` Calcul avec parenthèses | CM1 | 3 | 6 | 15 |  |
+| 55 | `B017` Estimer le résultat d'une opération | CM1 | 3 | 6 | 20 |  |
+| 56 | `C004` Fraction d'une quantité | CM1 | 3 | 3 | 13 |  |
+| 57 | `C027` Fraction supérieure à 1 | CM1 | 3 | 8 | 15 |  |
+| 58 | `C029` Encadrer une fraction | CM1 | 3 | 7 | 14 |  |
+| 59 | `C030` Fraction sur une demi-droite graduée | CM1 | 3 | 7 | 25 |  |
+| 60 | `D018` Fractions décimales : dixièmes et centi… | CM1 | 3 | 6 | 24 |  |
+| 61 | `D001` Écriture à virgule d'un nombre décimal | CM1 | 3 | 6 | 16 |  |
+| 62 | `D003` Comparer et ranger des nombres décimaux | CM1 | 3 | 6 | 28 |  |
+| 63 | `D004` Additionner et soustraire des décimaux … | CM1 | 3 | 6 | 20 |  |
+| 64 | `D012` Encadrer et intercaler des nombres déci… | CM1 | 3 | 6 | 24 |  |
+| 65 | `D008` Partie entière et arrondi à l'unité | CM1 | 3 | 6 | 19 |  |
+| 66 | `D019` Décimal sur une demi-droite graduée | CM1 | 3 | 6 | 27 |  |
+| 67 | `D020` Calcul mental : multiplier et diviser u… | CM1 | 3 | 6 | 19 |  |
+| 68 | `D021` Multiplier un décimal par un entier inf… | CM1 | 3 | 6 | 17 |  |
+| 69 | `E026` Reconnaître une situation de proportion… | CM1 | 3 | 6 | 27 |  |
+| 70 | `E027` Résoudre par linéarité multiplicative (… | CM1 | 3 | 6 | 17 |  |
+| 71 | `P015` Unités de mesure du milli au kilo : lon… | CM1 | 3 | 6 | 26 |  |
+| 72 | `P016` Problèmes de périmètre : retrouver un c… | CM1 | 3 | 6 | 28 |  |
+| 73 | `D014` Convertir des mesures écrites avec une … | CM1 | 4 | 6 | 20 |  |
+| 74 | `A026` Tous les diviseurs d'un entier | CM2 | 3 | 7 | 17 |  |
+| 75 | `B016` Calcul mental : diviser par 2, 4 ou 8 | CM2 | 3 | 6 | 16 |  |
+| 76 | `P020` Durées en heures, minutes et secondes | CM2 | 3 | 6 | 26 |  |
+| 77 | `A027` Diviseurs et multiples communs | CM2 | 4 | 8 | 22 |  |
+| 78 | `C031` Produit d'un entier par une fraction | CM2 | 4 | 7 | 10 |  |
+| 79 | `D022` Décimaux jusqu'aux millièmes | CM2 | 4 | 6 | 14 |  |
+| 80 | `D007` Division décimale par un entier à un ch… | CM2 | 4 | 6 | 17 |  |
+| 81 | `D023` Calcul mental : multiplier et diviser u… | CM2 | 4 | 6 | 13 |  |
+| 82 | `D024` Multiplier un décimal par un entier (po… | CM2 | 4 | 6 | 20 |  |
+| 83 | `E028` Résoudre par linéarité additive | CM2 | 4 | 6 | 22 |  |
+| 84 | `E029` Problèmes de proportionnalité en plusie… | CM2 | 4 | 6 | 18 |  |
+| 85 | `P018` Aire d'un carré ou d'un rectangle (cour… | CM2 | 4 | 6 | 29 |  |
+| 86 | `P019` Unités d'aire : cm², dm², m² et convers… | CM2 | 4 | 6 | 24 |  |
+| 87 | `B040` Division euclidienne par un nombre à de… | 6e | 4 | 6 | 18 |  |
+| 88 | `C032` Fraction comme quotient | 6e | 4 | 7 | 16 |  |
+| 89 | `D009` Arrondir au dixième ou au centième | 6e | 4 | 6 | 17 |  |
+| 90 | `D025` Multiplier par 0,1 ; 0,01 ; 0,001 | 6e | 4 | 6 | 19 |  |
+| 91 | `E030` Grandeurs proportionnelles : définition… | 6e | 4 | 6 | 31 |  |
+| 92 | `E031` Passage par l'unité et choix de la proc… | 6e | 4 | 6 | 24 |  |
+| 93 | `E003` Tableau de proportionnalité : représent… | 6e | 4 | 6 | 51 |  |
+| 94 | `E032` Pourcentage : définition et écritures | 6e | 4 | 6 | 31 |  |
+| 95 | `E010` Appliquer un pourcentage à une grandeur… | 6e | 4 | 6 | 25 |  |
+| 96 | `E033` Exprimer une proportion en pourcentage … | 6e | 4 | 6 | 24 |  |
+| 97 | `P021` Convertir des longueurs vers et depuis … | 6e | 4 | 6 | 20 |  |
+| 98 | `P022` Périmètre du carré et du rectangle : fo… | 6e | 4 | 6 | 26 |  |
+| 99 | `P024` Aire du carré et du rectangle : formules | 6e | 4 | 6 | 28 |  |
+| 100 | `P025` Conversions d'aires avec des nombres dé… | 6e | 4 | 6 | 20 |  |
+| 101 | `P026` Volume : le centimètre cube et le dénom… | 6e | 4 | 6 | 35 |  |
+| 102 | `P027` Convertir des durées : système décimal … | 6e | 4 | 6 | 18 |  |
+| 103 | `D006` Multiplier deux nombres décimaux | 6e | 5 | 6 | 22 |  |
+| 104 | `E006` Échelle d'un plan : premiers problèmes | 6e | 5 | 6 | 36 |  |
+| 105 | `P023` Périmètre d'un disque | 6e | 5 | 6 | 34 |  |
+| 106 | `C011` Réduction au même dénominateur | 5e | 4 | 3 | 14 |  |
+| 107 | `C010` Comparer fractions de dénominateurs dif… | 5e | 4 | 3 | 13 |  |
+| 108 | `E034` Coefficient de proportionnalité | 5e | 5 | 6 | 48 |  |
+| 109 | `E007` Vitesse moyenne | 5e | 5 | 6 | 24 |  |
+| 110 | `E035` Reconnaître un tableau de proportionnal… | 5e | 5 | 6 | 47 |  |
+| 111 | `E023` Proportionnalité et graphique | 5e | 5 | 6 | 53 |  |
+| 112 | `E036` Calculer un pourcentage dans le cas gén… | 5e | 5 | 6 | 31 |  |
+| 113 | `E037` Pourcentages par linéarité : 1 %, 10 %,… | 5e | 5 | 6 | 29 |  |
+| 114 | `C007` Simplification de fraction | 4e | 5 | 3 | 11 |  |
+| 115 | `C008` Fraction irréductible | 3e | 6 | 3 | 9 |  |
+
+**Sans exercice (5)** : `P001` Comparer et mesurer des longueurs avec une règle graduée, `P004` Lire l'heure en heures entières, `P007` Lire l'heure : demi-heures et quarts d'heure, `P013` Lire l'heure à la minute, `P017` L'aire : comparer des surfaces et mesurer en centimètres carrés
 
 ## 2. Par chapitre
 
@@ -166,6 +190,26 @@ Le chapitre est l'unité qu'un exercice bilan validerait.
 | `B012` Calcul avec parenthèses | Effectuer un calcul contenant une paire de parenthèses, en commençant par… | 6 |
 | `B017` Estimer le résultat d'une opérati… | Donner un ordre de grandeur du résultat d'une addition, d'une soustractio… | 6 |
 
+### `MM-P-01` · Premières mesures : longueurs, masses, monnaie (CP-CE1)
+
+4 compétences, 24 exercices, niveaux CP, CE1.
+
+| Compétence | Ce que l'élève doit savoir faire | Exos |
+|---|---|--:|
+| `P002` Le mètre et le centimètre : unité… | Connaître les unités mètre et centimètre et leurs symboles m et cm, savoi… | 6 |
+| `P003` La monnaie en euros entiers : val… | Déterminer la valeur en euros d'un ensemble de pièces et de billets décri… | 6 |
+| `P005` Longueurs : mètre, centimètre, ki… | Connaître les unités m, cm et km et les relations 1 m = 100 cm et 1 km = … | 6 |
+| `P006` Masses : gramme et kilogramme | Connaître les unités g et kg et la relation 1 kg = 1 000 g, comparer et r… | 6 |
+
+### `MM-P-02` · Lire l'heure et calculer des durées (CP-CE2)
+
+2 compétences, 12 exercices, niveaux CP, CE1, CE2.
+
+| Compétence | Ce que l'élève doit savoir faire | Exos |
+|---|---|--:|
+| `P008` Heures et minutes : unités de dur… | Connaître les unités h et min et les relations 1 h = 60 min, une demi-heu… | 6 |
+| `P014` Problèmes de durées en heures et … | Calculer la durée entre deux horaires d'une même journée donnés à la minu… | 6 |
+
 ### `MM-B-02` · La multiplication (CE1-CE2)
 
 5 compétences, 31 exercices, niveaux CE1, CE2.
@@ -223,6 +267,29 @@ Le chapitre est l'unité qu'un exercice bilan validerait.
 | `D020` Calcul mental : multiplier et div… | Multiplier ou diviser mentalement un décimal par 10 en raisonnant sur la … | 6 |
 | `D014` Convertir des mesures écrites ave… | Convertir une longueur, une masse ou une contenance écrite avec une virgu… | 6 |
 | `D023` Calcul mental : multiplier et div… | Multiplier ou diviser mentalement un décimal par 10, 100 ou 1 000 en rais… | 6 |
+
+### `MM-P-03` · Unités et conversions : longueurs, masses, contenances (CE2-6e)
+
+5 compétences, 30 exercices, niveaux CE2, CM1, 6e.
+
+| Compétence | Ce que l'élève doit savoir faire | Exos |
+|---|---|--:|
+| `P009` Longueurs : millimètre et décimèt… | Connaître les unités mm, cm, dm, m et km et leurs relations (1 cm = 10 mm… | 6 |
+| `P011` Masses : la tonne, conversions en… | Connaître les unités g, kg et t et les relations 1 kg = 1 000 g et 1 t = … | 6 |
+| `P012` Contenances : litre, décilitre, c… | Connaître les unités L, dL et cL et les relations 1 L = 10 dL = 100 cL ; … | 6 |
+| `P015` Unités de mesure du milli au kilo… | Connaître les unités de longueur du mm au km (dont dam et hm), de masse d… | 6 |
+| `P021` Convertir des longueurs vers et d… | Connaître le sens des préfixes kilo-, hecto-, déca-, déci-, centi- et mil… | 6 |
+
+### `MM-P-04` · Le périmètre (CE2-6e)
+
+4 compétences, 24 exercices, niveaux CE2, CM1, 6e.
+
+| Compétence | Ce que l'élève doit savoir faire | Exos |
+|---|---|--:|
+| `P010` Périmètre d'un polygone : longueu… | Savoir que le périmètre d'une figure plane est la longueur de son contour… | 6 |
+| `P016` Problèmes de périmètre : retrouve… | Résoudre des problèmes reliant les côtés d'un polygone et son périmètre :… | 6 |
+| `P022` Périmètre du carré et du rectangl… | Calculer le périmètre d'un carré (4 × c) et d'un rectangle (2 × (L + l), … | 6 |
+| `P023` Périmètre d'un disque | Savoir que le périmètre d'un disque est proportionnel à son diamètre, con… | 6 |
 
 ### `MM-A-02` · Multiples et diviseurs (CM1-CM2)
 
@@ -282,6 +349,27 @@ Le chapitre est l'unité qu'un exercice bilan validerait.
 | `E027` Résoudre par linéarité multiplica… | Résoudre un problème de proportionnalité en multipliant ou en divisant le… | 6 |
 | `E028` Résoudre par linéarité additive | Résoudre un problème de proportionnalité en ajoutant ou en soustrayant de… | 6 |
 | `E029` Problèmes de proportionnalité en … | Enchaîner plusieurs raisonnements de linéarité quand on ne passe pas d'un… | 6 |
+
+### `MM-P-05` · Aires et volumes (CM1-6e)
+
+5 compétences, 30 exercices, niveaux CM1, CM2, 6e.
+
+| Compétence | Ce que l'élève doit savoir faire | Exos |
+|---|---|--:|
+| `P018` Aire d'un carré ou d'un rectangle… | Déterminer l'aire d'un rectangle ou d'un carré aux côtés entiers en compt… | 6 |
+| `P019` Unités d'aire : cm², dm², m² et c… | Connaître les unités cm², dm² et m², savoir qu'un m² est l'aire d'un carr… | 6 |
+| `P024` Aire du carré et du rectangle : f… | Connaître les formules de l'aire d'un rectangle (L × l) et d'un carré (c … | 6 |
+| `P025` Conversions d'aires avec des nomb… | Effectuer des conversions entre cm², dm² et m², dans les deux sens et ave… | 6 |
+| `P026` Volume : le centimètre cube et le… | Connaître le centimètre cube (volume d'un cube de 1 cm d'arête), détermin… | 6 |
+
+### `MM-P-06` · Secondes et durées décimales (CM2-6e)
+
+2 compétences, 12 exercices, niveaux CM2, 6e.
+
+| Compétence | Ce que l'élève doit savoir faire | Exos |
+|---|---|--:|
+| `P020` Durées en heures, minutes et seco… | Utiliser la seconde et la relation 1 min = 60 s, convertir entre heures, … | 6 |
+| `P027` Convertir des durées : système dé… | Connaître les unités jour, heure, minute, seconde et leurs relations (1 j… | 6 |
 
 ### `MM-E-02` · Proportionnalité en 6e : unité, tableau, échelle (6e)
 
@@ -388,6 +476,19 @@ Le chapitre est l'unité qu'un exercice bilan validerait.
 | M | nume | Au marché, Paul avait 67 œufs. Il lui en reste 41. Combien d'œufs a-t-il vendus ? | 26 |
 | M | nume | Complète l'égalité : … - 32 = 45 | 77 |
 
+**`P002` · Le mètre et le centimètre : unités et ordres de grandeur** — diff. 1, seuil 3/4  
+*Connaître les unités mètre et centimètre et leurs symboles m et cm, savoir qu'un mètre est égal à cent centimètres, et choisir la mesure vraisemblable d'un objet familier (une trousse mesure plutôt 20 cm que 2 cm ou 1 m). Nombres entiers jusqu'à 100, sans conversion écrite autre que 1 m = 100 cm.*
+> « Savoir qu'un mètre est égal à cent centimètres. »
+
+| | Type | Demandé | Réponse |
+|---|---|---|---|
+| D | qcm | À peu près combien mesure un crayon de couleur ? | b) 15 cm |
+| D | text | Le lit de Tom mesure 2 … de long. Quelle unité manque : m ou cm ? | m |
+| E | nume | Une piste de voitures est faite de 10 rails de 10 cm. Combien de mètres mesure-t-elle ? | 1 |
+| E | qcm | Quel objet mesure environ 2 m de haut ? | a) La porte de la classe |
+| M | vrai | Sam dit : « 95 cm, c'est plus long que 1 m. » A-t-il raison ? | faux |
+| M | qcm | Une corde mesure 100 cm. Une autre mesure 1 m. Laquelle est la plus longue ? | c) Elles ont la même longueur |
+
 **`B002` · Addition posée avec retenue** — diff. 2, seuil 3/4  
 *Poser en colonnes et calculer l'addition de deux ou trois nombres à un ou deux chiffres, avec passage de la retenue des unités aux dizaines*
 > « Au CP, l'addition posée n'est introduite qu'en période 4 ou 5 »
@@ -452,6 +553,19 @@ Le chapitre est l'unité qu'un exercice bilan validerait.
 | E | vrai | 19 cahiers. Le maître en distribue 5, puis 3. Il en reste 11. | vrai |
 | M | nume | Sur l'étang, 3 canards s'envolent, 4 arrivent : ils sont 18. Combien étaient-ils avant ? | 17 |
 | M | qcm | Max a 14 euros, en gagne 5, en dépense et finit avec 12. Combien a-t-il dépensé ? | b) 7 |
+
+**`P003` · La monnaie en euros entiers : valeur, comparaison, rendu** — diff. 2, seuil 3/4  
+*Déterminer la valeur en euros d'un ensemble de pièces et de billets décrit par l'énoncé, comparer deux ensembles selon leur valeur (et non selon le nombre de pièces), constituer une somme donnée, payer et rendre la monnaie. Montants entiers en euros, inférieurs ou égaux à 100 €, sans centimes ni virgule.*
+> « Les montants sont des nombres entiers d'euros toujours inférieurs ou égaux à cent. »
+
+| | Type | Demandé | Réponse |
+|---|---|---|---|
+| D | nume | Inès a un billet de 20 € et 3 pièces de 1 €. Combien a-t-elle ? | 23 |
+| D | qcm | Qu'est-ce qui vaut le plus d'argent ? | b) 1 billet de 10 € |
+| E | nume | Un jeu coûte 30 €. Tu donnes un billet de 50 €. Combien te rend-on ? | 20 |
+| E | vrai | Zoé a 4 billets de 5 €. Elle dit : « J'ai 9 €. » A-t-elle raison ? | faux |
+| M | qcm | Tu veux payer 37 € avec le moins possible de billets et de pièces. Que donnes-tu ? | c) 1 billet de 20 €, 1 billet de … |
+| M | nume | Tu donnes 40 € pour un jouet. On te rend 5 €. Combien coûte-t-il ? | 35 |
 
 ### ── CE1 ──
 
@@ -641,6 +755,45 @@ Le chapitre est l'unité qu'un exercice bilan validerait.
 | M | qcm | Range ces prix du moins cher au plus cher : 2,50 € ; 195 centimes ; 2,05 € ; 2 € et 30 cent… | c) 195 centimes ; 2,05 € ; 2 € et… |
 | M | nume | Max a 2 € et 135 centimes. Écris sa somme en euros, avec une virgule. | 3.35 |
 
+**`P005` · Longueurs : mètre, centimètre, kilomètre** — diff. 2, seuil 3/4  
+*Connaître les unités m, cm et km et les relations 1 m = 100 cm et 1 km = 1 000 m, écrire une longueur donnée en deux unités dans une seule (1 m et 46 cm = 146 cm), avec une partie en centimètres toujours inférieure à 100, comparer des longueurs et choisir l'unité adaptée (cm pour un crayon, m pour une salle, km pour une distance entre deux villes). Nombres entiers jusqu'à 1 000, sans virgule.*
+> « L'élève sait que 1 m = 100 cm et 1 km = 1 000 m. »
+
+| | Type | Demandé | Réponse |
+|---|---|---|---|
+| D | qcm | Quelle unité choisir pour la distance entre deux villes ? | b) le kilomètre (km) |
+| D | nume | Le tableau de la classe mesure 3 m. Quelle est sa longueur en centimètres ? | 300 |
+| E | nume | Tom mesure 1 m et 27 cm. Quelle est sa taille en centimètres ? | 127 |
+| E | vrai | Un tour de piste mesure 400 m. Lina dit : « C'est plus court que 1 km. » A-t-elle raison ? | vrai |
+| M | qcm | Une guirlande mesure 5 m et 7 cm. Quelle est sa longueur en centimètres ? | c) 507 cm |
+| M | qcm | Au saut en longueur, Léa fait 1 m et 98 cm, Tom 205 cm, Inès 2 m et 10 cm. Qui saute le plu… | a) Inès |
+
+**`P006` · Masses : gramme et kilogramme** — diff. 2, seuil 3/4  
+*Connaître les unités g et kg et la relation 1 kg = 1 000 g, comparer et ranger des masses données dans ces unités (1 kg et 300 g ; 1 000 g ; 2 kg), et estimer la masse d'un objet du quotidien à partir de masses connues (un paquet de sucre pèse 1 kg). Nombres entiers jusqu'à 1 000, sans virgule.*
+> « Connaitre et utiliser les unités gramme et kilogramme et les symboles associés (g, kg). »
+
+| | Type | Demandé | Réponse |
+|---|---|---|---|
+| D | qcm | Combien pèse une pomme, à peu près ? | a) 150 g |
+| D | nume | Un sac de farine pèse 1 kg. Quelle est sa masse en grammes ? | 1000 |
+| E | vrai | Un chou pèse 900 g. Max dit : « Il pèse moins de 1 kg. » A-t-il raison ? | vrai |
+| E | text | Un cartable plein pèse 3 … Quelle unité manque : g ou kg ? | kg |
+| M | qcm | Range du plus léger au plus lourd : 2 kg ; 600 g ; 1 kg et 500 g ; 1 000 g | c) 600 g ; 1 000 g ; 1 kg et 500 … |
+| M | vrai | Léo dit : « 1 kg de plumes, c'est plus léger que 1 000 g de cailloux. » A-t-il raison ? | faux |
+
+**`P008` · Heures et minutes : unités de durée et durées simples** — diff. 2, seuil 3/4  
+*Connaître les unités h et min et les relations 1 h = 60 min, une demi-heure = 30 min, un quart d'heure = 15 min ; distinguer les heures du matin et de l'après-midi (3 heures de l'après-midi, c'est 15 h) ; ajouter des durées et trouver la durée entre deux horaires écrits d'une même journée, en heures entières, demi-heures ou quarts d'heure ; comparer 2 h et 130 min. Horaires donnés par écrit, sans horloge.*
+> « Connaitre les unités de mesure de durée, heure et minute, et les symboles associés (h et min). »
+
+| | Type | Demandé | Réponse |
+|---|---|---|---|
+| D | nume | Une heure dure 60 minutes. Léo lit pendant un quart d'heure. Combien de minutes lit-il ? | 15 |
+| D | qcm | Le goûter est à 4 heures de l'après-midi. Comment écrit-on cette heure avec les heures de 0… | c) 16 h |
+| E | nume | Le cours de judo commence à 17 h 15 et finit à 18 h. Combien de minutes dure-t-il ? | 45 |
+| E | vrai | Tom dit : « 1 h 10 min, c'est plus long que 80 min. » A-t-il raison ? | faux |
+| M | text | Sami lit une demi-heure, puis joue du piano trois quarts d'heure. Combien de temps en tout,… | 1 h 15 min |
+| M | qcm | La sortie au zoo part à 10 heures du matin et revient à 2 heures de l'après-midi. Combien d… | a) 4 heures |
+
 **`B038` · Problèmes mixtes en deux étapes** — diff. 3, seuil 3/4  
 *Résoudre un problème en deux étapes qui combine une étape multiplicative et une étape additive ou soustractive*
 > « Résoudre des problèmes mixtes en deux étapes (une étape additive et une étape multiplicative). »
@@ -708,6 +861,19 @@ Le chapitre est l'unité qu'un exercice bilan validerait.
 | D | nume | Une bande-unité va de 0 à 1. Elle est partagée en quarts, c'est-à-dire en 4 intervalles éga… | 3 |
 | E | text | Une bande-unité va de 0 à 1. Elle est partagée en cinquièmes, c'est-à-dire en 5 intervalles… | 4/5 |
 | M | vrai | Sur une même bande-unité graduée, 1/2 et 3/6 se placent exactement au même endroit. | vrai |
+
+**`P010` · Périmètre d'un polygone : longueur du contour** — diff. 2, seuil 3/4  
+*Savoir que le périmètre d'une figure plane est la longueur de son contour, et le calculer en additionnant les longueurs des côtés données par l'énoncé (triangle, quadrilatère, polygone). Pour le carré et le rectangle, sans formule : l'élève sait qu'un côté suffit pour le carré et deux pour le rectangle. Côtés entiers, dans une même unité.*
+> « Savoir ce qu'est le périmètre d'une figure plane. »
+
+| | Type | Demandé | Réponse |
+|---|---|---|---|
+| D | nume | Les côtés d'un jardin triangulaire mesurent 12 m ; 15 m et 8 m. Léa fait le tour complet du… | 35 |
+| D | qcm | Une étiquette rectangulaire mesure 11 cm de long et 6 cm de large. Quel calcul donne son pé… | c) 11 + 6 + 11 + 6 |
+| E | nume | Un champ a quatre côtés, de 135 m ; 98 m ; 142 m et 87 m. Quelle longueur de clôture faut-i… | 462 |
+| E | vrai | Un carré a des côtés de 13 cm. Tom affirme : « Le périmètre de ce carré est 39 cm. » | faux |
+| M | qcm | Deux carreaux carrés de 15 cm de côté, posés côte à côte, forment un rectangle de 30 cm de … | b) 90 cm |
+| M | nume | Une table de jeu a la forme d'un polygone à 6 côtés, tous de 45 cm. Quel est le périmètre d… | 270 |
 
 **`A010` · Décomposer un entier** — diff. 3, seuil 2/3  
 *Écrire 5 827 = 5 000 + 800 + 20 + 7*
@@ -783,6 +949,58 @@ Le chapitre est l'unité qu'un exercice bilan validerait.
 | E | vrai | Nina doit payer 24,60 €, puis 15 €. Elle pose l'addition et trouve 24,75 €. A-t-elle raison… | faux |
 | M | nume | Paul achète des fraises à 3,75 € et du pain à 1,40 €. Il paie avec un billet de 10 €. Combi… | 4.85 |
 | M | qcm | Théo pose 32{,}40 - 8{,}75 (en euros) et trouve 36,35 €. Quelle est son erreur ? | b) Dans chaque colonne, il a enle… |
+
+**`P009` · Longueurs : millimètre et décimètre, conversions** — diff. 3, seuil 3/4  
+*Connaître les unités mm, cm, dm, m et km et leurs relations (1 cm = 10 mm, 1 m = 1 000 mm, 1 m = 10 dm), et convertir dans les deux sens en s'appuyant sur ces relations, sans tableau de conversion, notamment pour calculer avec des longueurs exprimées dans des unités différentes (3 cm + 4 mm = 34 mm ; 215 cm = 2 m et 15 cm). Nombres entiers jusqu'à 10 000, sans virgule.*
+> « Connaitre et utiliser les unités mètre, décimètre, centimètre, millimètre, kilomètre et les symboles associés (m, dm, cm, mm, km). »
+
+| | Type | Demandé | Réponse |
+|---|---|---|---|
+| D | nume | Une gomme mesure 5 cm de long. On sait que 1 cm = 10 mm. Quelle est la longueur de la gomme… | 50 |
+| D | qcm | Un crayon mesure 1 dm et 6 cm. On sait que 1 dm = 10 cm. Combien mesure le crayon, en centi… | c) 16 cm |
+| E | nume | Une étagère mesure 9 dm de long. Quelle est sa longueur, en millimètres ? | 900 |
+| E | vrai | Une barque mesure 6 m. Jade dit : « Elle mesure donc 60 mm : pour convertir, on ajoute un z… | faux |
+| M | nume | Un escargot doit parcourir 1 m pour atteindre une salade. Il a déjà parcouru 6 dm et 7 cm. … | 330 |
+| M | qcm | Un tapis de gym mesure 185 cm de long. Quelle écriture donne la même longueur ? | a) 1 m, 8 dm et 5 cm |
+
+**`P011` · Masses : la tonne, conversions entre g, kg et t** — diff. 3, seuil 3/4  
+*Connaître les unités g, kg et t et les relations 1 kg = 1 000 g et 1 t = 1 000 kg ; convertir dans les deux sens (3 kg = 3 000 g ; 5 462 g = 5 kg et 462 g ; 5 350 kg = 5 t et 350 kg), choisir l'unité adaptée et comparer des masses données dans des unités différentes. Nombres entiers jusqu'à 10 000, sans virgule.*
+> « Connaitre et utiliser les unités gramme, kilogramme et tonne et les symboles associés (g, kg, t). »
+
+| | Type | Demandé | Réponse |
+|---|---|---|---|
+| D | nume | Un sac de pommes de terre pèse 5 kg. On sait que 1 kg = 1 000 g. Combien pèse le sac, en gr… | 5000 |
+| D | qcm | Un éléphant pèse 6 t. On sait que 1 t = 1 000 kg. Combien pèse-t-il, en kilogrammes ? | b) 6 000 kg |
+| E | nume | Une citrouille pèse 7 kg et 60 g. Quelle est sa masse, en grammes ? | 7060 |
+| E | vrai | Tom dit : « Une camionnette de 2 t est plus légère qu'une caravane de 1 500 kg, car 2 est p… | faux |
+| M | nume | Une remorque transporte trois charges : 1 t ; 450 kg ; 320 kg. Quelle masse transporte-t-el… | 1770 |
+| M | qcm | Trois paquets pèsent : 1 kg et 90 g ; 950 g ; 1 kg et 9 g. Quel rangement, du plus léger au… | c) 950 g < 1 kg et 9 g < 1 kg et … |
+
+**`P012` · Contenances : litre, décilitre, centilitre** — diff. 3, seuil 3/4  
+*Connaître les unités L, dL et cL et les relations 1 L = 10 dL = 100 cL ; convertir dans les deux sens (780 cL = 7 L et 80 cL), comparer des contenances données dans des unités différentes et estimer la contenance d'un récipient courant (verre, bouteille, arrosoir). Nombres entiers, sans virgule.*
+> « Connaitre et utiliser les unités litre, décilitre et centilitre et les symboles associés (L, dL et cL). »
+
+| | Type | Demandé | Réponse |
+|---|---|---|---|
+| D | nume | Un seau contient 8 L d'eau. On sait que 1 L = 10 dL. Combien de décilitres d'eau contient-i… | 80 |
+| D | qcm | Une bouteille de jus contient 2 L. On sait que 1 L = 100 cL. Combien de centilitres de jus … | a) 200 cL |
+| E | nume | Un bol de soupe contient 30 cL. Quelle est sa contenance, en décilitres ? | 3 |
+| E | qcm | Lina remplit d'eau un arrosoir de jardin. Quelle est sa contenance la plus vraisemblable ? | d) 10 L |
+| M | nume | Une bouteille contient 1 L de lait. Pour une recette, Malo en verse 3 dL et 5 cL. Quelle qu… | 65 |
+| M | vrai | Une bassine contient 605 cL d'eau. Sami dit : « C'est 6 L et 5 cL. » Sami a-t-il raison ? | vrai |
+
+**`P014` · Problèmes de durées en heures et minutes** — diff. 3, seuil 3/4  
+*Calculer la durée entre deux horaires d'une même journée donnés à la minute (de 15 h 40 à 16 h 05), retrouver un horaire de départ ou d'arrivée connaissant une durée, convertir des heures et minutes en minutes (2 h 20 min = 140 min), et résoudre des problèmes en une ou deux étapes, éventuellement en s'aidant d'un axe du temps.*
+> « Résoudre des problèmes à une ou deux étapes impliquant des durées. »
+
+| | Type | Demandé | Réponse |
+|---|---|---|---|
+| D | nume | Un spectacle de marionnettes dure 1 h 25 min. Une heure, c'est 60 minutes. Combien de minut… | 85 |
+| D | qcm | Le bus part à 8 h 50 et arrive à l'école à 9 h 20. Combien de temps dure le trajet ? | b) 30 min |
+| E | text | Le train part à 13 h 45. Le trajet dure 50 minutes. À quelle heure arrive-t-il ? Réponds en… | 14 h 35 |
+| E | vrai | Inès a fini un puzzle en 2 h 10 min. Hugo a mis 150 minutes. Vrai ou faux : Hugo a mis plus… | vrai |
+| M | text | Emma part à 16 h 50. Elle marche 25 minutes jusqu'à la gare, puis son train roule 1 h 10 mi… | 18 h 25 |
+| M | qcm | Nora doit être au stade à 14 h 10. Le trajet dure 35 minutes. À quelle heure doit-elle part… | d) 13 h 35 |
 
 ### ── CM1 ──
 
@@ -1077,6 +1295,32 @@ Le chapitre est l'unité qu'un exercice bilan validerait.
 | M | qcm | Un boulanger fait 14 pains avec 6 kg de farine. Combien de farine lui faut-il pour faire 42… | c) 18 kg |
 | M | nume | Un club de foot paie 492 € pour 36 maillots identiques. Combien paierait-il pour 9 de ces m… | 123 |
 
+**`P015` · Unités de mesure du milli au kilo : longueur, masse, contenance** — diff. 3, seuil 3/4  
+*Connaître les unités de longueur du mm au km (dont dam et hm), de masse du mg à la tonne et de contenance du mL au hL, comprendre que les préfixes jouent le même rôle pour les trois grandeurs, et convertir des mesures entières en s'appuyant sur les relations entre unités (1 hL = 100 L ; 1 g = 1 000 mg). Un tableau peut présenter les unités, mais les conversions ne se font pas avec un tableau. Nombres entiers.*
+> « Connaître et utiliser les unités de longueur du millimètre au kilomètre et les symboles associés »
+
+| | Type | Demandé | Réponse |
+|---|---|---|---|
+| D | nume | Une cuve récupère l'eau de pluie. Elle contient 6 hL. On sait que 1 hL = 100 L. Combien de … | 600 |
+| D | qcm | Une pièce de 10 centimes pèse 4 g. On sait que 1 g = 1 000 mg. Combien pèse-t-elle, en mill… | d) 4 000 mg |
+| E | nume | Une plage mesure 7 hm de long. Quelle est sa longueur, en décamètres ? | 70 |
+| E | vrai | Lucas dit : « Milli- veut dire la même chose dans mm et dans mL. Comme 1 m = 1 000 mm, on a… | vrai |
+| M | nume | Pour aller à l'école, Inès fait 1 km dans la rue, 6 hm dans le parc, puis 7 dam jusqu'au po… | 1670 |
+| M | qcm | Pour un pique-nique, on emporte une gourde de 60 cL, une carafe de 7 dL et une bouteille de… | c) La carafe de 7 dL |
+
+**`P016` · Problèmes de périmètre : retrouver un côté** — diff. 3, seuil 3/4  
+*Résoudre des problèmes reliant les côtés d'un polygone et son périmètre : utiliser que le périmètre d'un carré est le quadruple de son côté, retrouver le côté d'un carré ou la largeur d'un rectangle à partir du périmètre, comparer les périmètres de deux figures décrites. Règles établies par l'élève, sans formule à mémoriser. Nombres entiers.*
+> « Résoudre des problèmes mettant en jeu les longueurs des côtés d'un polygone et son périmètre »
+
+| | Type | Demandé | Réponse |
+|---|---|---|---|
+| D | nume | Un potager a la forme d'un carré de 8 m de côté. Son contour est formé de 4 côtés de même l… | 32 |
+| D | qcm | Un bassin a la forme d'un carré. Son périmètre est 28 m. Quelle est la longueur d'un de ses… | c) 7 m |
+| E | nume | L'enclos des chèvres a la forme d'un rectangle. Son périmètre est 50 m et sa longueur 15 m.… | 10 |
+| E | vrai | Un carré a des côtés de 5 cm. Un rectangle mesure 6 cm de long et 4 cm de large. Sami affir… | vrai |
+| M | qcm | Un carré a des côtés de 12 cm. Un rectangle de 16 cm de long a le même périmètre que ce car… | d) 8 cm |
+| M | qcm | Jade a deux ficelles de 24 cm. Avec l'une, elle forme un carré. Avec l'autre, elle forme un… | b) Le triangle, avec des côtés de… |
+
 **`D014` · Convertir des mesures écrites avec une virgule** — diff. 4, seuil 3/4  
 *Convertir une longueur, une masse ou une contenance écrite avec une virgule dans une unité plus petite, en s'appuyant sur les relations entre unités et sans tableau de conversion (3,5 m = 3 m + 50 cm = 350 cm).*
 > « Les longueurs, les masses et les contenances permettent de nourrir le travail mené sur les fractions et les nombres décimaux. »
@@ -1118,6 +1362,19 @@ Le chapitre est l'unité qu'un exercice bilan validerait.
 | E | vrai | Pour calculer 248 ÷ 8, Sam prend des moitiés : 248, puis 124, puis 62. Il répond 62. Sam a-… | faux |
 | M | nume | Un ruban de 360 cm est coupé en 8 morceaux de même longueur. Quelle est la longueur d'un mo… | 45 |
 | M | qcm | Nour divise un nombre par 4 et trouve 38. Que trouverait-elle en divisant ce nombre par 8 ? | c) 19 |
+
+**`P020` · Durées en heures, minutes et secondes** — diff. 3, seuil 3/4  
+*Utiliser la seconde et la relation 1 min = 60 s, convertir entre heures, minutes et secondes (3 min 20 s = 200 s), calculer des durées et des horaires exprimés en heures, minutes et secondes, et résoudre des problèmes en une ou plusieurs étapes (courses, horaires de transport, durée d'un film). Nombres entiers.*
+> « Au CM2, la compréhension du système sexagésimal (base soixante) utilisé pour les unités de durée s'étend avec l'introduction des secondes. »
+
+| | Type | Demandé | Réponse |
+|---|---|---|---|
+| D | nume | Une chanson dure 4 min 15 s. Une minute, c'est 60 secondes. Combien de secondes dure la cha… | 255 |
+| D | qcm | Trois enfants courent le même tour de piste. Léa met 95 s, Max 1 min 40 s et Zoé 1 min 25 s… | c) Zoé |
+| E | nume | Lina lance son chronomètre à 9 h 12 min 50 s et l'arrête à 9 h 15 min 20 s. Combien de seco… | 150 |
+| E | text | Une vidéo dure 470 secondes. Écris cette durée en minutes et secondes. | 7 min 50 s |
+| M | text | Quatre coureurs se relaient. Leurs temps sont 2 min 35 s ; 2 min 48 s ; 2 min 52 s ; 2 min … | 10 min 55 s |
+| M | vrai | Un four s'arrête à 12 h 03 min 10 s, après avoir chauffé 5 min 25 s. Paul affirme qu'il a d… | vrai |
 
 **`A027` · Diviseurs et multiples communs** — diff. 4, seuil 3/4  
 *Déterminer les diviseurs communs à deux entiers, et des multiples communs à deux entiers*
@@ -1225,6 +1482,32 @@ Le chapitre est l'unité qu'un exercice bilan validerait.
 | E | vrai | 15 kg de pommes donnent 9 litres de jus. Malik dit : « Avec 25 kg, j'aurai 19 litres, car j… | faux |
 | M | nume | Avec 21 €, Hugo achète 6 carnets identiques. Combien de ces carnets peut-il acheter avec 35… | 10 |
 | M | qcm | Un fleuriste vend 12 roses pour 18 €. Combien coûtent 28 roses ? | c) 42 € |
+
+**`P018` · Aire d'un carré ou d'un rectangle (cours moyen)** — diff. 4, seuil 3/4  
+*Déterminer l'aire d'un rectangle ou d'un carré aux côtés entiers en comptant les carrés unités qui le recouvrent par rangées (5 rangées de 8 carrés de 1 cm de côté, soit 40 cm²), sans formule à mémoriser. Les dimensions sont données par l'énoncé.*
+> « Déterminer l'aire d'un carré ou d'un rectangle »
+
+| | Type | Demandé | Réponse |
+|---|---|---|---|
+| D | nume | Une étiquette rectangulaire de 7 cm sur 4 cm est recouverte de carrés de 1 cm de côté : 4 r… | 28 |
+| D | qcm | Un badge carré mesure 6 cm de côté. On le recouvre de carrés de 1 cm de côté. Quelle est so… | b) 36 cm² |
+| E | vrai | Un rectangle mesure 9 cm sur 3 cm. Tom affirme : « Son aire est 24 cm², car 9 + 3 + 9 + 3 =… | faux |
+| E | nume | Une affiche rectangulaire mesure 45 cm de long et 32 cm de large. Quelle est son aire, en c… | 1440 |
+| M | qcm | Deux rectangles ont 26 cm de périmètre : le premier mesure 10 cm sur 3 cm, le second 7 cm s… | c) Le second. |
+| M | nume | Lou recouvre exactement une carte rectangulaire avec 56 carrés de 1 cm de côté, en 7 rangée… | 8 |
+
+**`P019` · Unités d'aire : cm², dm², m² et conversions** — diff. 4, seuil 3/4  
+*Connaître les unités cm², dm² et m², savoir qu'un m² est l'aire d'un carré de 1 m de côté et donc qu'il contient 10 rangées de 10 dm² (1 m² = 100 dm², 1 dm² = 100 cm²), et convertir des aires entières d'une unité à l'autre, sans tableau. Nombres entiers.*
+> « Connaître et utiliser les unités centimètre carré, décimètre carré et mètre carré pour exprimer des aires »
+
+| | Type | Demandé | Réponse |
+|---|---|---|---|
+| D | nume | Un dessous-de-verre carré mesure 1 dm de côté, c'est-à-dire 10 cm. Son aire est 1 dm². Comb… | 100 |
+| D | qcm | Le tableau d'une classe a une aire de 4 m². On sait que 1 m² = 100 dm². Quelle est l'aire d… | c) 400 dm² |
+| E | nume | Une feuille de papier cadeau a une aire de 1 800 cm². Quelle est son aire en dm² ? | 18 |
+| E | vrai | Hugo dit : « 6 m² = 60 dm², car 1 m = 10 dm. » Hugo a-t-il raison ? | faux |
+| M | qcm | Une serviette de plage a une aire de 2 m². Quelle est son aire en cm² ? | a) 20 000 cm² |
+| M | nume | On pose du parquet dans une chambre de 12 m² et dans un dressing de 300 dm². Quelle aire de… | 15 |
 
 ### ── 6e ──
 
@@ -1359,6 +1642,84 @@ Le chapitre est l'unité qu'un exercice bilan validerait.
 | M | vrai | Noa a réussi 4 tirs sur 5, Lou 17 tirs sur 20. Noa affirme : « J'ai le meilleur pourcentage… | faux |
 | M | nume | Un car transporte 50 passagers : 34 adultes, les autres sont des enfants. Quel pourcentage … | 32 |
 
+**`P021` · Convertir des longueurs vers et depuis le mètre** — diff. 4, seuil 3/4  
+*Connaître le sens des préfixes kilo-, hecto-, déca-, déci-, centi- et milli- et les relier aux unités de numération ; convertir en mètres une longueur donnée dans une autre unité et inversement, y compris vers une unité plus grande et avec des nombres décimaux (350 cm = 3,5 m ; 1 cm = 0,1 dm ; 2,5 km = 2 500 m), et résoudre des problèmes de longueurs aux unités mélangées.*
+> « L'élève connaît les significations des préfixes allant du kilo- au milli-, ainsi que les relations entre le mètre, ses multiples et ses sous-multiple… »
+
+| | Type | Demandé | Réponse |
+|---|---|---|---|
+| D | nume | Un banc mesure 180 cm de long. On sait que 1 m = 100 cm. Quelle est sa longueur, en mètres ? | 1.8 |
+| D | qcm | Le tour d'un lac mesure 4 200 m. Quelle est cette longueur, en kilomètres ? | b) 4,2 km |
+| E | nume | Un crayon de couleur mesure 175 mm. Quelle est sa longueur, en mètres ? | 0.175 |
+| E | vrai | Une rue mesure 64 m. Théo dit : « C'est 6,4 km, car kilo- veut dire mille. » Théo a-t-il ra… | faux |
+| M | nume | Pour un relais, quatre coureurs parcourent 1,2 km ; 850 m ; 9 hm et 75 dam. Quelle distance… | 3.7 |
+| M | qcm | Trois chemins mesurent 0,45 km ; 4 600 dm et 47 000 cm. Quelle est la longueur du plus long… | c) 0,47 km |
+
+**`P022` · Périmètre du carré et du rectangle : formules** — diff. 4, seuil 3/4  
+*Calculer le périmètre d'un carré (4 × c) et d'un rectangle (2 × (L + l), ou L + l + L + l) en substituant les valeurs données, entières ou décimales, dans la formule, et vérifier que les deux longueurs sont dans la même unité.*
+> « L'élève sait calculer le périmètre d'un carré et d'un rectangle. »
+
+| | Type | Demandé | Réponse |
+|---|---|---|---|
+| D | nume | Une nappe carrée a des côtés de 1,35 m. Calcule son périmètre avec la formule du carré P = … | 5.4 |
+| D | qcm | Une étiquette rectangulaire mesure 8,5 cm de long et 3,2 cm de large. Avec la formule P = 2… | b) 23,4 cm |
+| E | nume | Un plan de travail de cuisine rectangulaire mesure 3 m de long et 65 cm de large. On colle … | 730 |
+| E | vrai | Hugo dit : « Pour un rectangle de longueur L et de largeur l, les calculs L + l + L + l et … | vrai |
+| M | nume | Un jardin rectangulaire est entouré d'une clôture de 64 m. Sa longueur mesure 19,5 m. Quell… | 12.5 |
+| M | qcm | Un rectangle mesure 9,7 cm de long et 6,3 cm de large. Un carré a le même périmètre que ce … | d) 8 cm |
+
+**`P024` · Aire du carré et du rectangle : formules** — diff. 4, seuil 3/4  
+*Connaître les formules de l'aire d'un rectangle (L × l) et d'un carré (c × c) et les appliquer en substituant les dimensions données, l'une au moins étant entière (12 m × 7,5 m), avec le résultat dans l'unité d'aire correspondante ; ne pas confondre aire et périmètre.*
+> « Connaître la formule de l'aire d'un carré ou d'un rectangle »
+
+| | Type | Demandé | Réponse |
+|---|---|---|---|
+| D | nume | La formule de l'aire d'un rectangle est A = L × l, où L est la longueur et l la largeur. Un… | 128 |
+| D | qcm | La formule de l'aire d'un carré de côté c est A = c × c. Un potager carré mesure 11 m de cô… | c) 121 m² |
+| E | nume | Une terrasse rectangulaire mesure 6,4 m de long et 4 m de large. Calcule son aire avec la f… | 25.6 |
+| E | vrai | Un rectangle mesure 15 cm de long et 4 cm de large. Inès écrit : « 15 + 4 + 15 + 4 = 38, do… | faux |
+| M | qcm | Un napperon carré a une aire de 64 cm². Quelle est la longueur de son côté ? | a) 8 cm |
+| M | nume | On repeint un mur rectangulaire de 6,5 m de long et 3 m de haut. Un pot de peinture couvre … | 5 |
+
+**`P025` · Conversions d'aires avec des nombres décimaux** — diff. 4, seuil 3/4  
+*Effectuer des conversions entre cm², dm² et m², dans les deux sens et avec des nombres décimaux, en sachant que chaque unité vaut 100 fois la suivante (1 cm² = 0,01 dm² ; 3,5 m² = 350 dm²), et non 10 fois comme pour les longueurs.*
+> « Effectuer des conversions d'aire »
+
+| | Type | Demandé | Réponse |
+|---|---|---|---|
+| D | nume | Un tapis de salon a une aire de 4,7 m². On sait que 1 m² = 100 dm². Quelle est son aire en … | 470 |
+| D | qcm | Une carte postale a une aire de 150 cm². On sait que 1 cm² = 0,01 dm². Quelle est son aire … | a) 1,5 dm² |
+| E | vrai | Lina affirme : « 0,8 m² = 8 dm², car 1 m = 10 dm. » Lina a-t-elle raison ? | faux |
+| E | nume | Un coupon de tissu a une aire de 65 dm². Quelle est son aire en m² ? | 0.65 |
+| M | qcm | Une vitre a une aire de 0,36 m². Quelle est son aire en cm² ? | c) 3 600 cm² |
+| M | nume | On veut carreler un mur de 2,4 m² avec des carreaux de 4 dm² chacun. Combien de carreaux fa… | 60 |
+
+**`P026` · Volume : le centimètre cube et le dénombrement de cubes** — diff. 4, seuil 3/4  
+*Connaître le centimètre cube (volume d'un cube de 1 cm d'arête), déterminer le volume d'un pavé décrit par ses couches de cubes unités (3 couches de 4 rangées de 5 cubes) et comparer des volumes. Le pavé est décrit par l'énoncé ; la formule du volume du pavé relève de la 5e. Nombres entiers.*
+> « Il découvre l'unité de volume cm3. En lien avec les problèmes de dénombrement d'assemblages de cubes, il détermine des volumes. »
+
+| | Type | Demandé | Réponse |
+|---|---|---|---|
+| D | nume | Une boîte est remplie de cubes de 1 cm d'arête, qui ont chacun un volume de 1 cm³. Elle con… | 84 |
+| D | vrai | Un pavé est formé de 2 couches ; chaque couche compte 3 rangées de 4 cubes de 1 cm³. Sam af… | faux |
+| E | qcm | Un pavé est formé de 4 couches identiques. Chaque couche compte 5 rangées de 8 cubes de 1 c… | b) 160 cm³ |
+| E | nume | Une boîte en forme de pavé mesure 9 cm de long, 4 cm de large et 3 cm de haut. On la rempli… | 108 |
+| M | qcm | Deux pavés sont faits de cubes identiques. Le pavé A a 2 couches de 8 rangées de 9 cubes. L… | c) Ils ont le même volume. |
+| M | nume | Avec des cubes de 1 cm d'arête, Nora construit un pavé de 120 cm³. Chaque couche compte 3 r… | 5 |
+
+**`P027` · Convertir des durées : système décimal et sexagésimal** — diff. 4, seuil 3/4  
+*Connaître les unités jour, heure, minute, seconde et leurs relations (1 jour = 24 h) ; convertir une durée écrite en nombre décimal d'heures en heures et minutes et inversement (2,5 h = 2 h 30 min ; 1 h 45 min = 1,75 h), et calculer sur des horaires et des durées.*
+> « Concernant les durées, les élèves résolvent des problèmes mobilisant des conversions entre le système décimal et le système sexagésimal, consolidant … »
+
+| | Type | Demandé | Réponse |
+|---|---|---|---|
+| D | qcm | Un trajet en voiture dure 3,5 h. Quelle est cette durée en heures et minutes ? | b) 3 h 30 min |
+| D | nume | Une croisière dure 3 jours et 5 heures. Combien d'heures dure-t-elle ? | 77 |
+| E | text | Une randonnée dure 4,2 h. Écris cette durée en heures et minutes. | 4 h 12 min |
+| E | nume | Une séance de cinéma dure 2 h 15 min. Écris cette durée en heures, avec un nombre décimal. | 2.25 |
+| M | vrai | Lou fait du vélo pendant 1 h 30 min, puis pendant 2,75 h. Elle affirme avoir roulé 4 h 05 m… | faux |
+| M | qcm | Entre deux villes, le train met 3 h 12 min et l'avion 1,2 h. Combien de temps de plus met l… | c) 2 h |
+
 **`D006` · Multiplier deux nombres décimaux** — diff. 5, seuil 3/4  
 *Calculer le produit de deux décimaux en se ramenant au produit de deux entiers puis en plaçant la virgule, et contrôler le résultat par un ordre de grandeur.*
 > « Le sens des opérations étudiées au cours moyen s'élargit avec l'introduction de la multiplication de deux nombres décimaux. »
@@ -1384,6 +1745,19 @@ Le chapitre est l'unité qu'un exercice bilan validerait.
 | E | vrai | Sur le plan d'une école, 1 cm sur le plan représente 4 m en réalité. La cour mesure 32 m de… | faux |
 | M | nume | Sur une carte de randonnée, 1 cm sur la carte représente 500 m en réalité. Un sentier mesur… | 9 |
 | M | qcm | Un terrain de football mesure 100 m de long. On le dessine sur deux plans. Sur le plan A, 1… | c) Sur le plan A : 10 cm contre 4… |
+
+**`P023` · Périmètre d'un disque** — diff. 5, seuil 3/4  
+*Savoir que le périmètre d'un disque est proportionnel à son diamètre, connaître la formule (diamètre × π, ou 2 × rayon × π) et calculer un périmètre en prenant 3,14 comme valeur approchée de π. Diamètres ou rayons entiers.*
+> « Savoir que le périmètre du disque est proportionnel à son diamètre »
+
+| | Type | Demandé | Réponse |
+|---|---|---|---|
+| D | nume | Un cerceau de gymnastique a un diamètre de 80 cm. En prenant 3,14 pour \pi, calcule son pér… | 251.2 |
+| D | qcm | En prenant 3,14 pour \pi, une assiette de 25 cm de diamètre a un périmètre de 78,5 cm. Le p… | a) 157 cm |
+| E | nume | Le cadran rond d'une horloge a un rayon de 18 cm. En prenant 3,14 pour \pi, calcule le péri… | 113 |
+| E | vrai | Une table ronde a un rayon de 45 cm. Zoé prend 3,14 pour \pi et écrit : 45 × 3{,}14 = 141{,… | faux |
+| M | qcm | La roue d'une brouette a un diamètre de 35 cm. Pendant le trajet, la roue fait 20 tours. En… | c) 2 198 cm |
+| M | nume | Un bassin rond a un diamètre de 30 m. Un bassin carré a des côtés de 30 m. En prenant 3,14 … | 25.8 |
 
 ### ── 5e ──
 

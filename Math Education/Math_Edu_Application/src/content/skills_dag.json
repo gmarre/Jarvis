@@ -9,7 +9,7 @@
       "Programme de mathématiques pour le cycle 3 (CM1, CM2, 6e)",
       "Annexe 2 - Programme de mathématiques pour le cycle 4 (5e, 4e, 3e)"
     ],
-    "total_skills": 93,
+    "total_skills": 120,
     "domains": [
       {
         "id": "A",
@@ -35,6 +35,11 @@
         "id": "E",
         "name": "Proportionnalité et pourcentages",
         "count": 17
+      },
+      {
+        "id": "P",
+        "name": "Grandeurs et mesures",
+        "count": 27
       }
     ]
   },
@@ -2085,7 +2090,8 @@
         "D024",
         "D025",
         "B017",
-        "D008"
+        "D008",
+        "P018"
       ],
       "difficulty": 5,
       "school_level": "6e",
@@ -2266,7 +2272,8 @@
       "description": "Convertir une longueur, une masse ou une contenance écrite avec une virgule dans une unité plus petite, en s'appuyant sur les relations entre unités et sans tableau de conversion (3,5 m = 3 m + 50 cm = 350 cm).",
       "prerequisites": [
         "D001",
-        "D020"
+        "D020",
+        "P015"
       ],
       "difficulty": 4,
       "school_level": "CM1",
@@ -2308,7 +2315,8 @@
       "prerequisites": [
         "A003",
         "A006",
-        "A008"
+        "A008",
+        "P003"
       ],
       "difficulty": 2,
       "school_level": "CE1",
@@ -2761,7 +2769,8 @@
       "label": "Vitesse moyenne",
       "description": "À vitesse constante, la distance parcourue est proportionnelle à la durée : utiliser la vitesse moyenne (en km/h) comme coefficient pour calculer une distance, une durée ou une vitesse. Durées en heures entières ou en demi-heures ; les conversions d'unités composées sont de 4e.",
       "prerequisites": [
-        "E034"
+        "E034",
+        "P027"
       ],
       "difficulty": 5,
       "school_level": "5e",
@@ -3341,6 +3350,1096 @@
         {
           "source": "Cycle 4, classe de 5e, Proportionnalité",
           "quote": "Utiliser des proportions, des pourcentages."
+        }
+      ]
+    },
+    {
+      "id": "P001",
+      "domain": "P",
+      "domain_name": "Grandeurs et mesures",
+      "label": "Comparer et mesurer des longueurs avec une règle graduée",
+      "description": "Dire lequel de deux objets ou de deux segments est le plus long, par superposition, report d'un étalon ou mesure. Mesurer la longueur d'un segment en centimètres entiers avec une règle graduée, en plaçant le zéro à une extrémité. Figure nécessaire : le segment et la règle doivent être dessinés.",
+      "prerequisites": [
+        "A002"
+      ],
+      "difficulty": 1,
+      "school_level": "CP",
+      "validation_test": "Avec ta règle graduée, mesure le segment dessiné. Mesure-t-il 7 cm, 8 cm ou 9 cm ?",
+      "mastery_threshold": {
+        "required": 2,
+        "out_of": 3
+      },
+      "exercise_ids": [],
+      "mindmap_id": "MM-P-01",
+      "programme_ref": [
+        {
+          "source": "Cycle 2, Cours préparatoire, Grandeurs et mesures, Les longueurs",
+          "quote": "Savoir mesurer la longueur d'un segment en utilisant une règle graduée."
+        },
+        {
+          "source": "Cycle 2, Cours préparatoire, Grandeurs et mesures, Les longueurs",
+          "quote": "L'élève compare les longueurs de deux segments en les mesurant par report d'un étalon ou en utilisant une règle graduée."
+        },
+        {
+          "source": "Cycle 2, Cours préparatoire, Grandeurs et mesures, Les longueurs et les masses",
+          "quote": "Au CP, les travaux sur les longueurs s'appuient principalement sur des manipulations."
+        }
+      ]
+    },
+    {
+      "id": "P002",
+      "domain": "P",
+      "domain_name": "Grandeurs et mesures",
+      "label": "Le mètre et le centimètre : unités et ordres de grandeur",
+      "description": "Connaître les unités mètre et centimètre et leurs symboles m et cm, savoir qu'un mètre est égal à cent centimètres, et choisir la mesure vraisemblable d'un objet familier (une trousse mesure plutôt 20 cm que 2 cm ou 1 m). Nombres entiers jusqu'à 100, sans conversion écrite autre que 1 m = 100 cm.",
+      "prerequisites": [
+        "A002",
+        "B001"
+      ],
+      "difficulty": 1,
+      "school_level": "CP",
+      "validation_test": "Une table mesure-t-elle plutôt 1 cm ou 1 m ? Combien de centimètres y a-t-il dans 1 m ?",
+      "mastery_threshold": {
+        "required": 3,
+        "out_of": 4
+      },
+      "exercise_ids": [
+        "EX-P002-D-01",
+        "EX-P002-D-02",
+        "EX-P002-E-01",
+        "EX-P002-E-02",
+        "EX-P002-M-01",
+        "EX-P002-M-02"
+      ],
+      "mindmap_id": "MM-P-01",
+      "programme_ref": [
+        {
+          "source": "Cycle 2, Cours préparatoire, Grandeurs et mesures, Les longueurs",
+          "quote": "Savoir qu'un mètre est égal à cent centimètres."
+        },
+        {
+          "source": "Cycle 2, Cours préparatoire, Grandeurs et mesures, Les longueurs",
+          "quote": "L'élève sait dire si la longueur d'une trousse est plutôt 2 cm, 20 cm ou 1 m."
+        }
+      ]
+    },
+    {
+      "id": "P003",
+      "domain": "P",
+      "domain_name": "Grandeurs et mesures",
+      "label": "La monnaie en euros entiers : valeur, comparaison, rendu",
+      "description": "Déterminer la valeur en euros d'un ensemble de pièces et de billets décrit par l'énoncé, comparer deux ensembles selon leur valeur (et non selon le nombre de pièces), constituer une somme donnée, payer et rendre la monnaie. Montants entiers en euros, inférieurs ou égaux à 100 €, sans centimes ni virgule.",
+      "prerequisites": [
+        "B014"
+      ],
+      "difficulty": 2,
+      "school_level": "CP",
+      "validation_test": "Tu as 2 billets de 10 € et 3 pièces de 2 €. Combien d'euros as-tu ? Tu paies un livre de 15 € avec un billet de 20 € : combien te rend-on ?",
+      "mastery_threshold": {
+        "required": 3,
+        "out_of": 4
+      },
+      "exercise_ids": [
+        "EX-P003-D-01",
+        "EX-P003-D-02",
+        "EX-P003-E-01",
+        "EX-P003-E-02",
+        "EX-P003-M-01",
+        "EX-P003-M-02"
+      ],
+      "mindmap_id": "MM-P-01",
+      "programme_ref": [
+        {
+          "source": "Cycle 2, Cours préparatoire, Grandeurs et mesures, La monnaie",
+          "quote": "Les montants sont des nombres entiers d'euros toujours inférieurs ou égaux à cent."
+        },
+        {
+          "source": "Cycle 2, Cours préparatoire, Grandeurs et mesures, La monnaie",
+          "quote": "Déterminer la valeur en euro d'un ensemble constitué de pièces et de billets."
+        },
+        {
+          "source": "Cycle 2, Cours préparatoire, Grandeurs et mesures, La monnaie",
+          "quote": "L'élève sait comparer deux ensembles constitués de pièces ou de billets du point de vue de leur valeur et non de celui du nombre de pièces ou de billets."
+        },
+        {
+          "source": "Cycle 2, Cours préparatoire, Grandeurs et mesures, La monnaie",
+          "quote": "Simuler des achats en manipulant des pièces et des billets fictifs. Rendre la monnaie."
+        }
+      ]
+    },
+    {
+      "id": "P004",
+      "domain": "P",
+      "domain_name": "Grandeurs et mesures",
+      "label": "Lire l'heure en heures entières",
+      "description": "Lire sur une horloge à aiguilles une heure entière (trois heures, neuf heures, midi) et associer une heure à un moment familier de la journée. Figure nécessaire : l'horloge doit être dessinée.",
+      "prerequisites": [
+        "A001"
+      ],
+      "difficulty": 1,
+      "school_level": "CP",
+      "validation_test": "Sur l'horloge dessinée, la petite aiguille est sur le 7 et la grande aiguille sur le 12. Quelle heure est-il ?",
+      "mastery_threshold": {
+        "required": 2,
+        "out_of": 3
+      },
+      "exercise_ids": [],
+      "mindmap_id": "MM-P-02",
+      "programme_ref": [
+        {
+          "source": "Cycle 2, Cours préparatoire, Grandeurs et mesures, Le repérage dans le temps",
+          "quote": "Au CP, le travail mené sur le repérage dans le temps se limite aux heures entières."
+        },
+        {
+          "source": "Cycle 2, Cours préparatoire, Grandeurs et mesures, Le repérage dans le temps",
+          "quote": "L'élève sait lire des heures entières (par exemple trois heures, neuf heures, mais aussi midi) montrées sur un cadran à aiguilles."
+        }
+      ]
+    },
+    {
+      "id": "P005",
+      "domain": "P",
+      "domain_name": "Grandeurs et mesures",
+      "label": "Longueurs : mètre, centimètre, kilomètre",
+      "description": "Connaître les unités m, cm et km et les relations 1 m = 100 cm et 1 km = 1 000 m, écrire une longueur donnée en deux unités dans une seule (1 m et 46 cm = 146 cm), avec une partie en centimètres toujours inférieure à 100, comparer des longueurs et choisir l'unité adaptée (cm pour un crayon, m pour une salle, km pour une distance entre deux villes). Nombres entiers jusqu'à 1 000, sans virgule.",
+      "prerequisites": [
+        "P002",
+        "A006",
+        "B042"
+      ],
+      "difficulty": 2,
+      "school_level": "CE1",
+      "validation_test": "Combien de mètres y a-t-il dans 1 km ? Écris 2 m et 35 cm en centimètres.",
+      "mastery_threshold": {
+        "required": 3,
+        "out_of": 4
+      },
+      "exercise_ids": [
+        "EX-P005-D-01",
+        "EX-P005-D-02",
+        "EX-P005-E-01",
+        "EX-P005-E-02",
+        "EX-P005-M-01",
+        "EX-P005-M-02"
+      ],
+      "mindmap_id": "MM-P-01",
+      "programme_ref": [
+        {
+          "source": "Cycle 2, Cours élémentaire première année, Grandeurs et mesures, Les longueurs",
+          "quote": "L'élève sait que 1 m = 100 cm et 1 km = 1 000 m."
+        },
+        {
+          "source": "Cycle 2, Cours élémentaire première année, Grandeurs et mesures, Les longueurs",
+          "quote": "L'élève sait que 1 m + 46 cm = 146 cm."
+        },
+        {
+          "source": "Cycle 2, Cours élémentaire première année, Grandeurs et mesures, Les longueurs",
+          "quote": "Connaitre et utiliser les unités mètre, centimètre, kilomètre et les symboles associés (m, cm et km)."
+        },
+        {
+          "source": "Cycle 2, Cours élémentaire première année, Grandeurs et mesures, Les longueurs",
+          "quote": "Choisir l'unité la mieux adaptée pour exprimer une longueur."
+        },
+        {
+          "source": "Cycle 2, Cours élémentaire première année, Grandeurs et mesures, Les longueurs et les masses",
+          "quote": "L'utilisation de l'écriture à virgule n'est pas attendue dans le cadre de l'étude des longueurs et des masses."
+        }
+      ]
+    },
+    {
+      "id": "P006",
+      "domain": "P",
+      "domain_name": "Grandeurs et mesures",
+      "label": "Masses : gramme et kilogramme",
+      "description": "Connaître les unités g et kg et la relation 1 kg = 1 000 g, comparer et ranger des masses données dans ces unités (1 kg et 300 g ; 1 000 g ; 2 kg), et estimer la masse d'un objet du quotidien à partir de masses connues (un paquet de sucre pèse 1 kg). Nombres entiers jusqu'à 1 000, sans virgule.",
+      "prerequisites": [
+        "P005"
+      ],
+      "difficulty": 2,
+      "school_level": "CE1",
+      "validation_test": "Range du plus léger au plus lourd : 1 kg ; 800 g ; 1 kg et 200 g.",
+      "mastery_threshold": {
+        "required": 3,
+        "out_of": 4
+      },
+      "exercise_ids": [
+        "EX-P006-D-01",
+        "EX-P006-D-02",
+        "EX-P006-E-01",
+        "EX-P006-E-02",
+        "EX-P006-M-01",
+        "EX-P006-M-02"
+      ],
+      "mindmap_id": "MM-P-01",
+      "programme_ref": [
+        {
+          "source": "Cycle 2, Cours élémentaire première année, Grandeurs et mesures, Les masses",
+          "quote": "Connaitre et utiliser les unités gramme et kilogramme et les symboles associés (g, kg)."
+        },
+        {
+          "source": "Cycle 2, Cours élémentaire première année, Grandeurs et mesures, Les masses",
+          "quote": "Savoir que 1 kg est égal à 1 000 g."
+        },
+        {
+          "source": "Cycle 2, Cours élémentaire première année, Grandeurs et mesures, Les masses",
+          "quote": "L'élève sait ordonner quatre masses exprimées en gramme ou en kilogramme."
+        }
+      ]
+    },
+    {
+      "id": "P007",
+      "domain": "P",
+      "domain_name": "Grandeurs et mesures",
+      "label": "Lire l'heure : demi-heures et quarts d'heure",
+      "description": "Lire sur une horloge à aiguilles une heure donnée en heures entières (jusqu'à 23 h), en heures et demie ou en heures et quart, et faire le lien avec l'affichage digital (2 heures et quart de l'après-midi s'affiche 14 : 15). Figure nécessaire : l'horloge doit être dessinée.",
+      "prerequisites": [
+        "P004",
+        "C001"
+      ],
+      "difficulty": 2,
+      "school_level": "CE1",
+      "validation_test": "Sur l'horloge dessinée, la petite aiguille est entre le 3 et le 4, la grande aiguille sur le 6. Quelle heure est-il ?",
+      "mastery_threshold": {
+        "required": 2,
+        "out_of": 3
+      },
+      "exercise_ids": [],
+      "mindmap_id": "MM-P-02",
+      "programme_ref": [
+        {
+          "source": "Cycle 2, Cours élémentaire première année, Grandeurs et mesures, Le repérage dans le temps et les durées",
+          "quote": "Lire l'heure sur une horloge à aiguilles (lorsque l'heure est donnée en heures entières, en heures et demi-heure ou en heures et quarts d'heure)."
+        },
+        {
+          "source": "Cycle 2, Cours élémentaire première année, Grandeurs et mesures, Le repérage dans le temps et les durées",
+          "quote": "Le travail sur les heures initié au CP s'étend au CE1 aux heures entières supérieures à douze ainsi qu'à la demi-heure et aux quarts d'heure, en lien avec l'introduction des fractions."
+        }
+      ]
+    },
+    {
+      "id": "P008",
+      "domain": "P",
+      "domain_name": "Grandeurs et mesures",
+      "label": "Heures et minutes : unités de durée et durées simples",
+      "description": "Connaître les unités h et min et les relations 1 h = 60 min, une demi-heure = 30 min, un quart d'heure = 15 min ; distinguer les heures du matin et de l'après-midi (3 heures de l'après-midi, c'est 15 h) ; ajouter des durées et trouver la durée entre deux horaires écrits d'une même journée, en heures entières, demi-heures ou quarts d'heure ; comparer 2 h et 130 min. Horaires donnés par écrit, sans horloge.",
+      "prerequisites": [
+        "B014",
+        "C001",
+        "B005",
+        "A006"
+      ],
+      "difficulty": 2,
+      "school_level": "CE1",
+      "validation_test": "Combien de minutes dure une demi-heure ? Un film commence à 14 h et finit à 15 h 30 : combien de temps dure-t-il ?",
+      "mastery_threshold": {
+        "required": 3,
+        "out_of": 4
+      },
+      "exercise_ids": [
+        "EX-P008-D-01",
+        "EX-P008-D-02",
+        "EX-P008-E-01",
+        "EX-P008-E-02",
+        "EX-P008-M-01",
+        "EX-P008-M-02"
+      ],
+      "mindmap_id": "MM-P-02",
+      "programme_ref": [
+        {
+          "source": "Cycle 2, Cours élémentaire première année, Grandeurs et mesures, Le repérage dans le temps et les durées",
+          "quote": "Connaitre les unités de mesure de durée, heure et minute, et les symboles associés (h et min)."
+        },
+        {
+          "source": "Cycle 2, Cours élémentaire première année, Grandeurs et mesures, Le repérage dans le temps et les durées",
+          "quote": "L'élève connait les relations : 1 heure = 60 minutes ; 1 demi-heure = 30 minutes ; 1 quart d'heure = 15 minutes."
+        },
+        {
+          "source": "Cycle 2, Cours élémentaire première année, Grandeurs et mesures, Le repérage dans le temps et les durées",
+          "quote": "Connaitre, utiliser et distinguer les heures du matin et celles de l'après-midi."
+        },
+        {
+          "source": "Cycle 2, Cours élémentaire première année, Grandeurs et mesures, Le repérage dans le temps et les durées",
+          "quote": "L'élève sait ajouter ou soustraire des durées."
+        },
+        {
+          "source": "Cycle 2, Cours élémentaire première année, Grandeurs et mesures, Le repérage dans le temps et les durées",
+          "quote": "L'élève sait comparer des durées comme 2 heures et 130 minutes."
+        }
+      ]
+    },
+    {
+      "id": "P009",
+      "domain": "P",
+      "domain_name": "Grandeurs et mesures",
+      "label": "Longueurs : millimètre et décimètre, conversions",
+      "description": "Connaître les unités mm, cm, dm, m et km et leurs relations (1 cm = 10 mm, 1 m = 1 000 mm, 1 m = 10 dm), et convertir dans les deux sens en s'appuyant sur ces relations, sans tableau de conversion, notamment pour calculer avec des longueurs exprimées dans des unités différentes (3 cm + 4 mm = 34 mm ; 215 cm = 2 m et 15 cm). Nombres entiers jusqu'à 10 000, sans virgule.",
+      "prerequisites": [
+        "P005",
+        "A010",
+        "B041",
+        "B004",
+        "A007"
+      ],
+      "difficulty": 3,
+      "school_level": "CE2",
+      "validation_test": "Écris 3 m et 25 cm en centimètres, puis 8 cm et 4 mm en millimètres.",
+      "mastery_threshold": {
+        "required": 3,
+        "out_of": 4
+      },
+      "exercise_ids": [
+        "EX-P009-D-01",
+        "EX-P009-D-02",
+        "EX-P009-E-01",
+        "EX-P009-E-02",
+        "EX-P009-M-01",
+        "EX-P009-M-02"
+      ],
+      "mindmap_id": "MM-P-03",
+      "programme_ref": [
+        {
+          "source": "Cycle 2, Cours élémentaire deuxième année, Grandeurs et mesures, Les longueurs",
+          "quote": "Connaitre et utiliser les unités mètre, décimètre, centimètre, millimètre, kilomètre et les symboles associés (m, dm, cm, mm, km)."
+        },
+        {
+          "source": "Cycle 2, Cours élémentaire deuxième année, Grandeurs et mesures, Les longueurs",
+          "quote": "L'élève sait que 1 cm = 10 mm et 1 m = 1 000 mm."
+        },
+        {
+          "source": "Cycle 2, Cours élémentaire deuxième année, Grandeurs et mesures, Les longueurs, les masses et les contenances",
+          "quote": "Les élèves n'utilisent pas de tableaux de conversion au cycle 2, mais s'appuient sur les relations connues entre les unités pour effectuer des conversions."
+        }
+      ]
+    },
+    {
+      "id": "P010",
+      "domain": "P",
+      "domain_name": "Grandeurs et mesures",
+      "label": "Périmètre d'un polygone : longueur du contour",
+      "description": "Savoir que le périmètre d'une figure plane est la longueur de son contour, et le calculer en additionnant les longueurs des côtés données par l'énoncé (triangle, quadrilatère, polygone). Pour le carré et le rectangle, sans formule : l'élève sait qu'un côté suffit pour le carré et deux pour le rectangle. Côtés entiers, dans une même unité.",
+      "prerequisites": [
+        "P005",
+        "B004",
+        "A007",
+        "B006"
+      ],
+      "difficulty": 2,
+      "school_level": "CE2",
+      "validation_test": "Les côtés d'un triangle mesurent 5 cm, 7 cm et 9 cm. Quel est son périmètre ?",
+      "mastery_threshold": {
+        "required": 3,
+        "out_of": 4
+      },
+      "exercise_ids": [
+        "EX-P010-D-01",
+        "EX-P010-D-02",
+        "EX-P010-E-01",
+        "EX-P010-E-02",
+        "EX-P010-M-01",
+        "EX-P010-M-02"
+      ],
+      "mindmap_id": "MM-P-04",
+      "programme_ref": [
+        {
+          "source": "Cycle 2, Cours élémentaire deuxième année, Grandeurs et mesures, Les longueurs",
+          "quote": "Savoir ce qu'est le périmètre d'une figure plane."
+        },
+        {
+          "source": "Cycle 2, Cours élémentaire deuxième année, Grandeurs et mesures, Les longueurs",
+          "quote": "L'élève sait que le périmètre d'une figure plane est la longueur de son contour."
+        },
+        {
+          "source": "Cycle 2, Cours élémentaire deuxième année, Grandeurs et mesures, Les longueurs",
+          "quote": "Dans le cas du carré et du rectangle, aucune formule n'est enseignée, mais l'élève sait qu'il n'est pas nécessaire de mesurer la longueur de chacun des côtés."
+        }
+      ]
+    },
+    {
+      "id": "P011",
+      "domain": "P",
+      "domain_name": "Grandeurs et mesures",
+      "label": "Masses : la tonne, conversions entre g, kg et t",
+      "description": "Connaître les unités g, kg et t et les relations 1 kg = 1 000 g et 1 t = 1 000 kg ; convertir dans les deux sens (3 kg = 3 000 g ; 5 462 g = 5 kg et 462 g ; 5 350 kg = 5 t et 350 kg), choisir l'unité adaptée et comparer des masses données dans des unités différentes. Nombres entiers jusqu'à 10 000, sans virgule.",
+      "prerequisites": [
+        "P006",
+        "A010",
+        "B041",
+        "B004",
+        "A007"
+      ],
+      "difficulty": 3,
+      "school_level": "CE2",
+      "validation_test": "Écris 4 kg en grammes, puis 3 250 kg en tonnes et kilogrammes.",
+      "mastery_threshold": {
+        "required": 3,
+        "out_of": 4
+      },
+      "exercise_ids": [
+        "EX-P011-D-01",
+        "EX-P011-D-02",
+        "EX-P011-E-01",
+        "EX-P011-E-02",
+        "EX-P011-M-01",
+        "EX-P011-M-02"
+      ],
+      "mindmap_id": "MM-P-03",
+      "programme_ref": [
+        {
+          "source": "Cycle 2, Cours élémentaire deuxième année, Grandeurs et mesures, Les masses",
+          "quote": "Connaitre et utiliser les unités gramme, kilogramme et tonne et les symboles associés (g, kg, t)."
+        },
+        {
+          "source": "Cycle 2, Cours élémentaire deuxième année, Grandeurs et mesures, Les masses",
+          "quote": "Connaitre les relations entre les unités de masse usuelles."
+        },
+        {
+          "source": "Cycle 2, Cours élémentaire deuxième année, Grandeurs et mesures, Les masses",
+          "quote": "L'élève sait convertir entre les unités gramme et kilogramme"
+        }
+      ]
+    },
+    {
+      "id": "P012",
+      "domain": "P",
+      "domain_name": "Grandeurs et mesures",
+      "label": "Contenances : litre, décilitre, centilitre",
+      "description": "Connaître les unités L, dL et cL et les relations 1 L = 10 dL = 100 cL ; convertir dans les deux sens (780 cL = 7 L et 80 cL), comparer des contenances données dans des unités différentes et estimer la contenance d'un récipient courant (verre, bouteille, arrosoir). Nombres entiers, sans virgule.",
+      "prerequisites": [
+        "A010",
+        "B041",
+        "B004",
+        "A007"
+      ],
+      "difficulty": 3,
+      "school_level": "CE2",
+      "validation_test": "Combien de centilitres y a-t-il dans 1 L ? Écris 340 cL en litres et centilitres.",
+      "mastery_threshold": {
+        "required": 3,
+        "out_of": 4
+      },
+      "exercise_ids": [
+        "EX-P012-D-01",
+        "EX-P012-D-02",
+        "EX-P012-E-01",
+        "EX-P012-E-02",
+        "EX-P012-M-01",
+        "EX-P012-M-02"
+      ],
+      "mindmap_id": "MM-P-03",
+      "programme_ref": [
+        {
+          "source": "Cycle 2, Cours élémentaire deuxième année, Grandeurs et mesures, Les contenances",
+          "quote": "Connaitre et utiliser les unités litre, décilitre et centilitre et les symboles associés (L, dL et cL)."
+        },
+        {
+          "source": "Cycle 2, Cours élémentaire deuxième année, Grandeurs et mesures, Les contenances",
+          "quote": "Savoir que 1 L est égal à 10 dL et également à 100 cL."
+        },
+        {
+          "source": "Cycle 2, Cours élémentaire deuxième année, Grandeurs et mesures, Les contenances",
+          "quote": "L'élève sait effectuer des conversions en utilisant les unités litre, décilitre et centilitre"
+        },
+        {
+          "source": "Cycle 2, Cours élémentaire deuxième année, Grandeurs et mesures, Les contenances",
+          "quote": "Comparer les contenances de différents objets."
+        }
+      ]
+    },
+    {
+      "id": "P013",
+      "domain": "P",
+      "domain_name": "Grandeurs et mesures",
+      "label": "Lire l'heure à la minute",
+      "description": "Lire l'heure à la minute près sur une horloge à aiguilles (dix heures trente-cinq, sept heures moins le quart, quatre heures moins vingt) et la faire correspondre à l'affichage digital. Figure nécessaire : l'horloge doit être dessinée.",
+      "prerequisites": [
+        "P007"
+      ],
+      "difficulty": 2,
+      "school_level": "CE2",
+      "validation_test": "Sur l'horloge dessinée, quelle heure est-il, à la minute près ? Écris-la comme sur une horloge digitale.",
+      "mastery_threshold": {
+        "required": 2,
+        "out_of": 3
+      },
+      "exercise_ids": [],
+      "mindmap_id": "MM-P-02",
+      "programme_ref": [
+        {
+          "source": "Cycle 2, Cours élémentaire deuxième année, Grandeurs et mesures, Le repérage dans le temps et les durées",
+          "quote": "L'élève lit l'heure sur un cadran à aiguilles ou sur un affichage digital"
+        },
+        {
+          "source": "Cycle 2, Cours élémentaire deuxième année, Grandeurs et mesures, Le repérage dans le temps et les durées",
+          "quote": "Positionner les aiguilles d'une horloge correspondant à une heure donnée en heures entières ou en heures et minutes."
+        }
+      ]
+    },
+    {
+      "id": "P014",
+      "domain": "P",
+      "domain_name": "Grandeurs et mesures",
+      "label": "Problèmes de durées en heures et minutes",
+      "description": "Calculer la durée entre deux horaires d'une même journée donnés à la minute (de 15 h 40 à 16 h 05), retrouver un horaire de départ ou d'arrivée connaissant une durée, convertir des heures et minutes en minutes (2 h 20 min = 140 min), et résoudre des problèmes en une ou deux étapes, éventuellement en s'aidant d'un axe du temps.",
+      "prerequisites": [
+        "P008",
+        "B038"
+      ],
+      "difficulty": 3,
+      "school_level": "CE2",
+      "validation_test": "Un train part à 9 h 40 et arrive à 11 h 15. Combien de temps dure le trajet ? Combien de minutes y a-t-il dans 1 h 50 min ?",
+      "mastery_threshold": {
+        "required": 3,
+        "out_of": 4
+      },
+      "exercise_ids": [
+        "EX-P014-D-01",
+        "EX-P014-D-02",
+        "EX-P014-E-01",
+        "EX-P014-E-02",
+        "EX-P014-M-01",
+        "EX-P014-M-02"
+      ],
+      "mindmap_id": "MM-P-02",
+      "programme_ref": [
+        {
+          "source": "Cycle 2, Cours élémentaire deuxième année, Grandeurs et mesures, Le repérage dans le temps et les durées",
+          "quote": "Résoudre des problèmes à une ou deux étapes impliquant des durées."
+        },
+        {
+          "source": "Cycle 2, Cours élémentaire deuxième année, Grandeurs et mesures, Le repérage dans le temps et les durées",
+          "quote": "L'élève sait déterminer le nombre de minutes qu'il y a dans deux heures et vingt minutes."
+        },
+        {
+          "source": "Cycle 2, Cours élémentaire deuxième année, Grandeurs et mesures, Le repérage dans le temps et les durées",
+          "quote": "Au cycle 2, en mathématiques, l'enseignement relatif au repérage dans le temps et aux durées s'applique aux temps courts, exprimés en heure et en minute."
+        }
+      ]
+    },
+    {
+      "id": "P015",
+      "domain": "P",
+      "domain_name": "Grandeurs et mesures",
+      "label": "Unités de mesure du milli au kilo : longueur, masse, contenance",
+      "description": "Connaître les unités de longueur du mm au km (dont dam et hm), de masse du mg à la tonne et de contenance du mL au hL, comprendre que les préfixes jouent le même rôle pour les trois grandeurs, et convertir des mesures entières en s'appuyant sur les relations entre unités (1 hL = 100 L ; 1 g = 1 000 mg). Un tableau peut présenter les unités, mais les conversions ne se font pas avec un tableau. Nombres entiers.",
+      "prerequisites": [
+        "P009",
+        "P011",
+        "P012"
+      ],
+      "difficulty": 3,
+      "school_level": "CM1",
+      "validation_test": "Écris 5 km en décamètres, 3 g en milligrammes, puis 2 hL en litres.",
+      "mastery_threshold": {
+        "required": 3,
+        "out_of": 4
+      },
+      "exercise_ids": [
+        "EX-P015-D-01",
+        "EX-P015-D-02",
+        "EX-P015-E-01",
+        "EX-P015-E-02",
+        "EX-P015-M-01",
+        "EX-P015-M-02"
+      ],
+      "mindmap_id": "MM-P-03",
+      "programme_ref": [
+        {
+          "source": "Cycle 3, Cours moyen première année, Grandeurs et mesures, Les longueurs",
+          "quote": "Connaître et utiliser les unités de longueur du millimètre au kilomètre et les symboles associés"
+        },
+        {
+          "source": "Cycle 3, Cours moyen première année, Grandeurs et mesures, Les masses",
+          "quote": "Connaître et utiliser les unités de masse du milligramme au kilogramme et la tonne, et les symboles associés"
+        },
+        {
+          "source": "Cycle 3, Cours moyen première année, Grandeurs et mesures, Les contenances",
+          "quote": "Connaître et utiliser les unités de contenance du millilitre à l'hectolitre et les symboles associés"
+        },
+        {
+          "source": "Cycle 3, Cours moyen première année, Grandeurs et mesures",
+          "quote": "au cours moyen, les élèves n'utilisent pas de tableaux pour effectuer des conversions ; ils s'appuient sur les relations connues entre les unités en jeu"
+        }
+      ]
+    },
+    {
+      "id": "P016",
+      "domain": "P",
+      "domain_name": "Grandeurs et mesures",
+      "label": "Problèmes de périmètre : retrouver un côté",
+      "description": "Résoudre des problèmes reliant les côtés d'un polygone et son périmètre : utiliser que le périmètre d'un carré est le quadruple de son côté, retrouver le côté d'un carré ou la largeur d'un rectangle à partir du périmètre, comparer les périmètres de deux figures décrites. Règles établies par l'élève, sans formule à mémoriser. Nombres entiers.",
+      "prerequisites": [
+        "P010",
+        "B039"
+      ],
+      "difficulty": 3,
+      "school_level": "CM1",
+      "validation_test": "Le périmètre d'un carré est 36 cm : quelle est la longueur de son côté ? Un rectangle a un périmètre de 30 cm et une longueur de 9 cm : quelle est sa largeur ?",
+      "mastery_threshold": {
+        "required": 3,
+        "out_of": 4
+      },
+      "exercise_ids": [
+        "EX-P016-D-01",
+        "EX-P016-D-02",
+        "EX-P016-E-01",
+        "EX-P016-E-02",
+        "EX-P016-M-01",
+        "EX-P016-M-02"
+      ],
+      "mindmap_id": "MM-P-04",
+      "programme_ref": [
+        {
+          "source": "Cycle 3, Cours moyen première année, Grandeurs et mesures, Les longueurs",
+          "quote": "Résoudre des problèmes mettant en jeu les longueurs des côtés d'un polygone et son périmètre"
+        },
+        {
+          "source": "Cycle 3, Cours moyen première année, Grandeurs et mesures",
+          "quote": "le fait que le périmètre d'un carré est le quadruple de la longueur de l'un de ses côtés."
+        }
+      ]
+    },
+    {
+      "id": "P017",
+      "domain": "P",
+      "domain_name": "Grandeurs et mesures",
+      "label": "L'aire : comparer des surfaces et mesurer en centimètres carrés",
+      "description": "Comparer l'aire de deux surfaces sans mesure (superposition, découpage et recollement), distinguer l'aire du périmètre, puis déterminer une aire en comptant des carreaux unités sur un quadrillage et l'exprimer en cm² (un carré de 1 cm de côté a une aire de 1 cm²). Figure nécessaire : surfaces et quadrillages doivent être dessinés.",
+      "prerequisites": [
+        "P010"
+      ],
+      "difficulty": 3,
+      "school_level": "CM1",
+      "validation_test": "Sur le quadrillage dessiné, chaque carreau a 1 cm de côté. Quelle est l'aire de la figure coloriée, en cm² ?",
+      "mastery_threshold": {
+        "required": 2,
+        "out_of": 3
+      },
+      "exercise_ids": [],
+      "mindmap_id": "MM-P-05",
+      "programme_ref": [
+        {
+          "source": "Cycle 3, Cours moyen première année, Grandeurs et mesures",
+          "quote": "L'aire est introduite au CM1, en suivant la même progressivité que pour les autres grandeurs au cycle 2 : les élèves abordent cette notion en comparant des surfaces selon leur aire sans utiliser de mesures, puis ils apprennent à déterminer des aires en utilisant une unité et un quadrillage."
+        },
+        {
+          "source": "Cycle 3, Cours moyen première année, Grandeurs et mesures, Les aires",
+          "quote": "Comparer les aires de différentes figures planes"
+        },
+        {
+          "source": "Cycle 3, Cours moyen première année, Grandeurs et mesures, Les aires",
+          "quote": "Connaître et utiliser les centimètres carrés pour exprimer des aires"
+        }
+      ]
+    },
+    {
+      "id": "P018",
+      "domain": "P",
+      "domain_name": "Grandeurs et mesures",
+      "label": "Aire d'un carré ou d'un rectangle (cours moyen)",
+      "description": "Déterminer l'aire d'un rectangle ou d'un carré aux côtés entiers en comptant les carrés unités qui le recouvrent par rangées (5 rangées de 8 carrés de 1 cm de côté, soit 40 cm²), sans formule à mémoriser. Les dimensions sont données par l'énoncé.",
+      "prerequisites": [
+        "P017",
+        "D004"
+      ],
+      "difficulty": 4,
+      "school_level": "CM2",
+      "validation_test": "Un rectangle mesure 8 cm de long et 5 cm de large. Combien de carrés de 1 cm de côté faut-il pour le recouvrir ? Quelle est son aire ?",
+      "mastery_threshold": {
+        "required": 3,
+        "out_of": 4
+      },
+      "exercise_ids": [
+        "EX-P018-D-01",
+        "EX-P018-D-02",
+        "EX-P018-E-01",
+        "EX-P018-E-02",
+        "EX-P018-M-01",
+        "EX-P018-M-02"
+      ],
+      "mindmap_id": "MM-P-05",
+      "programme_ref": [
+        {
+          "source": "Cycle 3, Cours moyen deuxième année, Grandeurs et mesures, Les aires",
+          "quote": "Déterminer l'aire d'un carré ou d'un rectangle"
+        },
+        {
+          "source": "Cycle 3, Cours moyen deuxième année, Grandeurs et mesures, Les aires",
+          "quote": "Déterminer des aires"
+        }
+      ]
+    },
+    {
+      "id": "P019",
+      "domain": "P",
+      "domain_name": "Grandeurs et mesures",
+      "label": "Unités d'aire : cm², dm², m² et conversions",
+      "description": "Connaître les unités cm², dm² et m², savoir qu'un m² est l'aire d'un carré de 1 m de côté et donc qu'il contient 10 rangées de 10 dm² (1 m² = 100 dm², 1 dm² = 100 cm²), et convertir des aires entières d'une unité à l'autre, sans tableau. Nombres entiers.",
+      "prerequisites": [
+        "P018",
+        "P009"
+      ],
+      "difficulty": 4,
+      "school_level": "CM2",
+      "validation_test": "Combien de dm² y a-t-il dans 1 m² ? Écris 3 m² en dm², puis 500 cm² en dm².",
+      "mastery_threshold": {
+        "required": 3,
+        "out_of": 4
+      },
+      "exercise_ids": [
+        "EX-P019-D-01",
+        "EX-P019-D-02",
+        "EX-P019-E-01",
+        "EX-P019-E-02",
+        "EX-P019-M-01",
+        "EX-P019-M-02"
+      ],
+      "mindmap_id": "MM-P-05",
+      "programme_ref": [
+        {
+          "source": "Cycle 3, Cours moyen deuxième année, Grandeurs et mesures, Les aires",
+          "quote": "Connaître et utiliser les unités centimètre carré, décimètre carré et mètre carré pour exprimer des aires"
+        },
+        {
+          "source": "Cycle 3, Cours moyen deuxième année, Grandeurs et mesures, Les aires",
+          "quote": "Convertir des aires entre différentes unités"
+        }
+      ]
+    },
+    {
+      "id": "P020",
+      "domain": "P",
+      "domain_name": "Grandeurs et mesures",
+      "label": "Durées en heures, minutes et secondes",
+      "description": "Utiliser la seconde et la relation 1 min = 60 s, convertir entre heures, minutes et secondes (3 min 20 s = 200 s), calculer des durées et des horaires exprimés en heures, minutes et secondes, et résoudre des problèmes en une ou plusieurs étapes (courses, horaires de transport, durée d'un film). Nombres entiers.",
+      "prerequisites": [
+        "P014",
+        "B008"
+      ],
+      "difficulty": 3,
+      "school_level": "CM2",
+      "validation_test": "Combien de secondes y a-t-il dans 3 min 20 s ? Une course commence à 10 h 58 min 30 s et dure 2 min 45 s : à quelle heure finit-elle ?",
+      "mastery_threshold": {
+        "required": 3,
+        "out_of": 4
+      },
+      "exercise_ids": [
+        "EX-P020-D-01",
+        "EX-P020-D-02",
+        "EX-P020-E-01",
+        "EX-P020-E-02",
+        "EX-P020-M-01",
+        "EX-P020-M-02"
+      ],
+      "mindmap_id": "MM-P-06",
+      "programme_ref": [
+        {
+          "source": "Cycle 3, Cours moyen deuxième année, Grandeurs et mesures",
+          "quote": "Au CM2, la compréhension du système sexagésimal (base soixante) utilisé pour les unités de durée s'étend avec l'introduction des secondes."
+        },
+        {
+          "source": "Cycle 3, Cours moyen deuxième année, Grandeurs et mesures, Le repérage dans le temps et les durées",
+          "quote": "Comparer et mesurer des durées écoulées entre deux instants affichés sur une horloge (instants et durées sont exprimés en heure, minute et seconde)"
+        },
+        {
+          "source": "Cycle 3, Cours moyen deuxième année, Grandeurs et mesures, Le repérage dans le temps et les durées",
+          "quote": "Résoudre des problèmes à une ou plusieurs étapes impliquant des durées"
+        }
+      ]
+    },
+    {
+      "id": "P021",
+      "domain": "P",
+      "domain_name": "Grandeurs et mesures",
+      "label": "Convertir des longueurs vers et depuis le mètre",
+      "description": "Connaître le sens des préfixes kilo-, hecto-, déca-, déci-, centi- et milli- et les relier aux unités de numération ; convertir en mètres une longueur donnée dans une autre unité et inversement, y compris vers une unité plus grande et avec des nombres décimaux (350 cm = 3,5 m ; 1 cm = 0,1 dm ; 2,5 km = 2 500 m), et résoudre des problèmes de longueurs aux unités mélangées.",
+      "prerequisites": [
+        "D014",
+        "D023"
+      ],
+      "difficulty": 4,
+      "school_level": "6e",
+      "validation_test": "Convertir 2,5 km en mètres, puis 350 cm en mètres, puis 48 mm en mètres.",
+      "mastery_threshold": {
+        "required": 3,
+        "out_of": 4
+      },
+      "exercise_ids": [
+        "EX-P021-D-01",
+        "EX-P021-D-02",
+        "EX-P021-E-01",
+        "EX-P021-E-02",
+        "EX-P021-M-01",
+        "EX-P021-M-02"
+      ],
+      "mindmap_id": "MM-P-03",
+      "programme_ref": [
+        {
+          "source": "Cycle 3, classe de 6e, Grandeurs et mesures, Les longueurs",
+          "quote": "L'élève connaît les significations des préfixes allant du kilo- au milli-, ainsi que les relations entre le mètre, ses multiples et ses sous-multiples, et fait le lien avec les unités de numération du système décimal."
+        },
+        {
+          "source": "Cycle 3, classe de 6e, Grandeurs et mesures, Les longueurs",
+          "quote": "L'élève sait convertir en mètre une longueur donnée dans une autre unité, multiple ou sous-multiple du mètre."
+        },
+        {
+          "source": "Cycle 3, classe de 6e, Grandeurs et mesures, Les longueurs",
+          "quote": "Inversement, l'élève sait convertir dans une unité donnée une longueur exprimée en mètre."
+        },
+        {
+          "source": "Cycle 3, classe de 6e, Grandeurs et mesures, Les longueurs",
+          "quote": "Résoudre des problèmes impliquant des longueurs"
+        }
+      ]
+    },
+    {
+      "id": "P022",
+      "domain": "P",
+      "domain_name": "Grandeurs et mesures",
+      "label": "Périmètre du carré et du rectangle : formules",
+      "description": "Calculer le périmètre d'un carré (4 × c) et d'un rectangle (2 × (L + l), ou L + l + L + l) en substituant les valeurs données, entières ou décimales, dans la formule, et vérifier que les deux longueurs sont dans la même unité.",
+      "prerequisites": [
+        "P016",
+        "D004",
+        "D024",
+        "B012"
+      ],
+      "difficulty": 4,
+      "school_level": "6e",
+      "validation_test": "Calculer le périmètre d'un rectangle de longueur 7,5 cm et de largeur 4 cm, puis celui d'un carré de côté 2,3 m.",
+      "mastery_threshold": {
+        "required": 3,
+        "out_of": 4
+      },
+      "exercise_ids": [
+        "EX-P022-D-01",
+        "EX-P022-D-02",
+        "EX-P022-E-01",
+        "EX-P022-E-02",
+        "EX-P022-M-01",
+        "EX-P022-M-02"
+      ],
+      "mindmap_id": "MM-P-04",
+      "programme_ref": [
+        {
+          "source": "Cycle 3, classe de 6e, Grandeurs et mesures, Les longueurs",
+          "quote": "L'élève sait calculer le périmètre d'un carré et d'un rectangle."
+        },
+        {
+          "source": "Cycle 3, classe de 6e, Grandeurs et mesures",
+          "quote": "Les formules du périmètre d'un carré, d'un rectangle, d'un disque et celles de l'aire d'un carré ou d'un rectangle s'installent progressivement."
+        },
+        {
+          "source": "Cycle 3, classe de 6e, Grandeurs et mesures",
+          "quote": "L'élève substitue une valeur numérique à une lettre pour calculer, en situation, un périmètre ou une aire."
+        }
+      ]
+    },
+    {
+      "id": "P023",
+      "domain": "P",
+      "domain_name": "Grandeurs et mesures",
+      "label": "Périmètre d'un disque",
+      "description": "Savoir que le périmètre d'un disque est proportionnel à son diamètre, connaître la formule (diamètre × π, ou 2 × rayon × π) et calculer un périmètre en prenant 3,14 comme valeur approchée de π. Diamètres ou rayons entiers.",
+      "prerequisites": [
+        "P022",
+        "E030",
+        "D009"
+      ],
+      "difficulty": 5,
+      "school_level": "6e",
+      "validation_test": "Une roue a un diamètre de 60 cm. En prenant 3,14 pour π, quelle distance parcourt-elle en un tour ?",
+      "mastery_threshold": {
+        "required": 3,
+        "out_of": 4
+      },
+      "exercise_ids": [
+        "EX-P023-D-01",
+        "EX-P023-D-02",
+        "EX-P023-E-01",
+        "EX-P023-E-02",
+        "EX-P023-M-01",
+        "EX-P023-M-02"
+      ],
+      "mindmap_id": "MM-P-04",
+      "programme_ref": [
+        {
+          "source": "Cycle 3, classe de 6e, Grandeurs et mesures, Les longueurs",
+          "quote": "Savoir que le périmètre du disque est proportionnel à son diamètre"
+        },
+        {
+          "source": "Cycle 3, classe de 6e, Grandeurs et mesures, Les longueurs",
+          "quote": "Connaître la formule du périmètre d'un disque"
+        },
+        {
+          "source": "Cycle 3, classe de 6e, Grandeurs et mesures, Les longueurs",
+          "quote": "Calculer le périmètre d'un disque"
+        }
+      ]
+    },
+    {
+      "id": "P024",
+      "domain": "P",
+      "domain_name": "Grandeurs et mesures",
+      "label": "Aire du carré et du rectangle : formules",
+      "description": "Connaître les formules de l'aire d'un rectangle (L × l) et d'un carré (c × c) et les appliquer en substituant les dimensions données, l'une au moins étant entière (12 m × 7,5 m), avec le résultat dans l'unité d'aire correspondante ; ne pas confondre aire et périmètre.",
+      "prerequisites": [
+        "P018",
+        "D024"
+      ],
+      "difficulty": 4,
+      "school_level": "6e",
+      "validation_test": "Calculer l'aire d'un rectangle de 12 m sur 7,5 m, puis celle d'un carré de 9 cm de côté.",
+      "mastery_threshold": {
+        "required": 3,
+        "out_of": 4
+      },
+      "exercise_ids": [
+        "EX-P024-D-01",
+        "EX-P024-D-02",
+        "EX-P024-E-01",
+        "EX-P024-E-02",
+        "EX-P024-M-01",
+        "EX-P024-M-02"
+      ],
+      "mindmap_id": "MM-P-05",
+      "programme_ref": [
+        {
+          "source": "Cycle 3, classe de 6e, Grandeurs et mesures, Les aires",
+          "quote": "Connaître la formule de l'aire d'un carré ou d'un rectangle"
+        },
+        {
+          "source": "Cycle 3, classe de 6e, Grandeurs et mesures, Les aires",
+          "quote": "Calculer l'aire d'un carré ou d'un rectangle"
+        }
+      ]
+    },
+    {
+      "id": "P025",
+      "domain": "P",
+      "domain_name": "Grandeurs et mesures",
+      "label": "Conversions d'aires avec des nombres décimaux",
+      "description": "Effectuer des conversions entre cm², dm² et m², dans les deux sens et avec des nombres décimaux, en sachant que chaque unité vaut 100 fois la suivante (1 cm² = 0,01 dm² ; 3,5 m² = 350 dm²), et non 10 fois comme pour les longueurs.",
+      "prerequisites": [
+        "P019",
+        "D023"
+      ],
+      "difficulty": 4,
+      "school_level": "6e",
+      "validation_test": "Convertir 3,5 m² en dm², puis 250 cm² en dm².",
+      "mastery_threshold": {
+        "required": 3,
+        "out_of": 4
+      },
+      "exercise_ids": [
+        "EX-P025-D-01",
+        "EX-P025-D-02",
+        "EX-P025-E-01",
+        "EX-P025-E-02",
+        "EX-P025-M-01",
+        "EX-P025-M-02"
+      ],
+      "mindmap_id": "MM-P-05",
+      "programme_ref": [
+        {
+          "source": "Cycle 3, classe de 6e, Grandeurs et mesures, Les aires",
+          "quote": "Effectuer des conversions d'aire"
+        },
+        {
+          "source": "Cycle 3, classe de 6e, Grandeurs et mesures, Les aires",
+          "quote": "L'élève mémorise que 1 cm² est égal à un centième de 1 dm²"
+        },
+        {
+          "source": "Cycle 3, classe de 6e, Grandeurs et mesures, Les aires",
+          "quote": "L'élève mémorise que 1 dm² est égal à un centième de 1 m²"
+        }
+      ]
+    },
+    {
+      "id": "P026",
+      "domain": "P",
+      "domain_name": "Grandeurs et mesures",
+      "label": "Volume : le centimètre cube et le dénombrement de cubes",
+      "description": "Connaître le centimètre cube (volume d'un cube de 1 cm d'arête), déterminer le volume d'un pavé décrit par ses couches de cubes unités (3 couches de 4 rangées de 5 cubes) et comparer des volumes. Le pavé est décrit par l'énoncé ; la formule du volume du pavé relève de la 5e. Nombres entiers.",
+      "prerequisites": [
+        "P018"
+      ],
+      "difficulty": 4,
+      "school_level": "6e",
+      "validation_test": "Un pavé est formé de 3 couches ; chaque couche compte 4 rangées de 5 cubes de 1 cm³. Quel est son volume en cm³ ?",
+      "mastery_threshold": {
+        "required": 3,
+        "out_of": 4
+      },
+      "exercise_ids": [
+        "EX-P026-D-01",
+        "EX-P026-D-02",
+        "EX-P026-E-01",
+        "EX-P026-E-02",
+        "EX-P026-M-01",
+        "EX-P026-M-02"
+      ],
+      "mindmap_id": "MM-P-05",
+      "programme_ref": [
+        {
+          "source": "Cycle 3, classe de 6e, Grandeurs et mesures",
+          "quote": "Il découvre l'unité de volume cm3. En lien avec les problèmes de dénombrement d'assemblages de cubes, il détermine des volumes."
+        },
+        {
+          "source": "Cycle 3, classe de 6e, Grandeurs et mesures, Les volumes",
+          "quote": "Connaître l'unité centimètre cube"
+        },
+        {
+          "source": "Cycle 3, classe de 6e, Grandeurs et mesures, Les volumes",
+          "quote": "Déterminer un volume"
+        },
+        {
+          "source": "Cycle 3, classe de 6e, Grandeurs et mesures, Les volumes",
+          "quote": "Comparer des volumes"
+        }
+      ]
+    },
+    {
+      "id": "P027",
+      "domain": "P",
+      "domain_name": "Grandeurs et mesures",
+      "label": "Convertir des durées : système décimal et sexagésimal",
+      "description": "Connaître les unités jour, heure, minute, seconde et leurs relations (1 jour = 24 h) ; convertir une durée écrite en nombre décimal d'heures en heures et minutes et inversement (2,5 h = 2 h 30 min ; 1 h 45 min = 1,75 h), et calculer sur des horaires et des durées.",
+      "prerequisites": [
+        "P020",
+        "D004"
+      ],
+      "difficulty": 4,
+      "school_level": "6e",
+      "validation_test": "Convertir 2,5 h en heures et minutes, puis 1 h 45 min en heures avec un nombre décimal. Combien d'heures durent 2 jours ?",
+      "mastery_threshold": {
+        "required": 3,
+        "out_of": 4
+      },
+      "exercise_ids": [
+        "EX-P027-D-01",
+        "EX-P027-D-02",
+        "EX-P027-E-01",
+        "EX-P027-E-02",
+        "EX-P027-M-01",
+        "EX-P027-M-02"
+      ],
+      "mindmap_id": "MM-P-06",
+      "programme_ref": [
+        {
+          "source": "Cycle 3, classe de 6e, Grandeurs et mesures",
+          "quote": "Concernant les durées, les élèves résolvent des problèmes mobilisant des conversions entre le système décimal et le système sexagésimal, consolidant leurs compétences en gestion des unités de temps."
+        },
+        {
+          "source": "Cycle 3, classe de 6e, Grandeurs et mesures, Le repérage dans le temps et les durées",
+          "quote": "L'élève connaît les unités de mesure de durées jour, heure, minute et seconde et les relations qui les lient."
+        },
+        {
+          "source": "Cycle 3, classe de 6e, Grandeurs et mesures, Le repérage dans le temps et les durées",
+          "quote": "Convertir des durées"
+        },
+        {
+          "source": "Cycle 3, classe de 6e, Grandeurs et mesures, Le repérage dans le temps et les durées",
+          "quote": "Effectuer des calculs sur des horaires et des durées"
         }
       ]
     }

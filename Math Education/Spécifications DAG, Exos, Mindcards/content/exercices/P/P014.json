@@ -1,0 +1,185 @@
+[
+  {
+    "id": "EX-P014-D-01",
+    "skill_id": "P014",
+    "level": "decouverte",
+    "type": "numerique",
+    "statement": "Un spectacle de marionnettes dure 1 h 25 min. Une heure, c'est 60 minutes.\n\nCombien de minutes dure le spectacle ?",
+    "image": null,
+    "answer": {
+      "value": 85,
+      "unit": "min",
+      "accepted": [
+        "85 min",
+        "85 minutes"
+      ]
+    },
+    "solution_steps": [
+      "1 h 25 min, c'est 1 heure et 25 minutes de plus.",
+      "1 heure, c'est 60 minutes.",
+      "On ajoute les 25 minutes : $60 + 25 = 85$. Le spectacle dure **85 minutes**.",
+      "Erreur à éviter : coller les chiffres et répondre 125 minutes, comme si une heure valait 100 minutes."
+    ],
+    "hint": "Remplace 1 h par le nombre de minutes qu'elle contient.",
+    "estimated_duration_s": 45,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 2, CE2 : l'élève sait déterminer le nombre de minutes qu'il y a dans deux heures et vingt minutes."
+  },
+  {
+    "id": "EX-P014-D-02",
+    "skill_id": "P014",
+    "level": "decouverte",
+    "type": "qcm",
+    "statement": "Le bus part à 8 h 50 et arrive à l'école à 9 h 20.\n\nCombien de temps dure le trajet ?",
+    "image": null,
+    "choices": [
+      {
+        "key": "a",
+        "text": "70 min",
+        "misconception": "L'élève calcule 920 − 850 = 70, comme si une heure valait 100 minutes. Or une heure n'a que 60 minutes : de 8 h 50 à 9 h, il n'y a que 10 minutes, pas 50."
+      },
+      {
+        "key": "b",
+        "text": "30 min",
+        "misconception": null
+      },
+      {
+        "key": "c",
+        "text": "1 h 30 min",
+        "misconception": "L'élève soustrait les heures (9 − 8 = 1), puis les minutes en enlevant la plus petite à la plus grande (50 − 20 = 30). Or à 9 h 20, il ne s'est même pas écoulé une heure depuis 8 h 50 : une heure plus tard, il serait 9 h 50."
+      }
+    ],
+    "answer": {
+      "value": "b"
+    },
+    "solution_steps": [
+      "On avance de 8 h 50 jusqu'à l'heure ronde, 9 h : il manque 10 minutes, car $50 + 10 = 60$.",
+      "De 9 h à 9 h 20 : 20 minutes.",
+      "En tout : $10 + 20 = 30$. Le trajet dure **30 minutes**, une demi-heure."
+    ],
+    "hint": "Passe par 9 h : combien de minutes de 8 h 50 à 9 h, puis de 9 h à 9 h 20 ?",
+    "estimated_duration_s": 60,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 2, CE2 : comparer et mesurer des durées écoulées entre deux instants affichés sur une horloge (pour des intervalles de temps situés dans une même journée)."
+  },
+  {
+    "id": "EX-P014-E-01",
+    "skill_id": "P014",
+    "level": "entrainement",
+    "type": "texte",
+    "statement": "Le train part à 13 h 45. Le trajet dure 50 minutes.\n\nÀ quelle heure arrive-t-il ? Réponds en heures et minutes.",
+    "image": null,
+    "answer": {
+      "value": "14 h 35",
+      "accepted": [
+        "14h35",
+        "14:35",
+        "14 h 35 min",
+        "14 heures 35",
+        "14 heures 35 minutes"
+      ]
+    },
+    "solution_steps": [
+      "On avance d'abord jusqu'à l'heure ronde : de 13 h 45 à 14 h, il y a 15 minutes, car $45 + 15 = 60$.",
+      "Sur les 50 minutes du trajet, il en reste $50 - 15 = 35$ à ajouter après 14 h.",
+      "35 minutes après 14 h, il est 14 h 35. Le train arrive à **14 h 35**.",
+      "Erreur à éviter : calculer $45 + 50 = 95$ et écrire 13 h 95. Un horaire n'a jamais plus de 59 minutes : 60 minutes font une heure de plus."
+    ],
+    "hint": "Combien de minutes faut-il pour aller de 13 h 45 à 14 h ?",
+    "estimated_duration_s": 75,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 2, CE2 : résoudre des problèmes à une ou deux étapes impliquant des durées."
+  },
+  {
+    "id": "EX-P014-E-02",
+    "skill_id": "P014",
+    "level": "entrainement",
+    "type": "vrai_faux",
+    "statement": "Inès a fini un puzzle en 2 h 10 min. Hugo a mis 150 minutes.\n\nVrai ou faux : Hugo a mis plus de temps qu'Inès ?",
+    "image": null,
+    "answer": {
+      "value": true
+    },
+    "solution_steps": [
+      "Pour comparer, on écrit le temps d'Inès en minutes, comme celui d'Hugo.",
+      "1 h, c'est 60 minutes. 2 h, c'est $60 + 60 = 120$ minutes. Donc 2 h 10 min, c'est $120 + 10 = 130$ minutes.",
+      "Hugo a mis 150 minutes : c'est plus que 130 minutes. C'est **vrai**, Hugo a mis 20 minutes de plus qu'Inès.",
+      "Erreur à éviter : compter 100 minutes dans une heure. On trouverait 210 minutes pour Inès et on répondrait faux."
+    ],
+    "hint": "Combien de minutes y a-t-il dans 2 h ?",
+    "estimated_duration_s": 60,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 2, CE2 : l'élève sait déterminer le nombre de minutes qu'il y a dans deux heures et vingt minutes. Il sait dire laquelle de ces deux durées est la plus longue."
+  },
+  {
+    "id": "EX-P014-M-01",
+    "skill_id": "P014",
+    "level": "maitrise",
+    "type": "texte",
+    "statement": "Emma part à 16 h 50. Elle marche 25 minutes jusqu'à la gare, puis son train roule 1 h 10 min.\n\nÀ quelle heure arrive-t-elle, en heures et minutes ?",
+    "image": null,
+    "answer": {
+      "value": "18 h 25",
+      "accepted": [
+        "18h25",
+        "18:25",
+        "18 h 25 min",
+        "18 heures 25",
+        "18 heures 25 minutes"
+      ]
+    },
+    "solution_steps": [
+      "Première étape, l'arrivée à la gare. De 16 h 50 à 17 h, il y a 10 minutes. Il reste $25 - 10 = 15$ minutes à marcher après 17 h : Emma est à la gare à 17 h 15.",
+      "Deuxième étape, le train. 1 h après 17 h 15, il est 18 h 15. 10 minutes plus tard, il est 18 h 25.",
+      "Emma arrive à **18 h 25**.",
+      "Erreur à éviter : calculer $50 + 25 = 75$ et écrire 16 h 75. Dès qu'on atteint 60 minutes, on passe à l'heure suivante."
+    ],
+    "hint": "Commence par trouver l'heure à laquelle Emma arrive à la gare.",
+    "estimated_duration_s": 120,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 2, CE2 : résoudre des problèmes à une ou deux étapes impliquant des durées."
+  },
+  {
+    "id": "EX-P014-M-02",
+    "skill_id": "P014",
+    "level": "maitrise",
+    "type": "qcm",
+    "statement": "Nora doit être au stade à 14 h 10. Le trajet dure 35 minutes.\n\nÀ quelle heure doit-elle partir ?",
+    "image": null,
+    "choices": [
+      {
+        "key": "a",
+        "text": "13 h 75",
+        "misconception": "L'élève casse une heure en 100 minutes : 14 h 10 devient 13 h 110, et 110 − 35 = 75. Or une heure n'a que 60 minutes, et un horaire n'a jamais 75 minutes."
+      },
+      {
+        "key": "b",
+        "text": "14 h 45",
+        "misconception": "L'élève ajoute les 35 minutes au lieu de les enlever : 14 h 10 + 35 min = 14 h 45. Or Nora part avant d'arriver : il faut remonter le temps."
+      },
+      {
+        "key": "c",
+        "text": "14 h 25",
+        "misconception": "L'élève enlève le petit nombre au grand dans les minutes (35 − 10 = 25) et garde 14 h. Or 14 h 25 est après 14 h 10 : Nora arriverait en retard."
+      },
+      {
+        "key": "d",
+        "text": "13 h 35",
+        "misconception": null
+      }
+    ],
+    "answer": {
+      "value": "d"
+    },
+    "solution_steps": [
+      "On remonte le temps à partir de 14 h 10 : on enlève 35 minutes.",
+      "On recule d'abord de 10 minutes jusqu'à l'heure ronde : 14 h. Il reste $35 - 10 = 25$ minutes à enlever.",
+      "25 minutes avant 14 h : une heure a 60 minutes et $60 - 25 = 35$, donc il est 13 h 35.",
+      "Nora doit partir à **13 h 35**. On vérifie : de 13 h 35 à 14 h, 25 minutes ; de 14 h à 14 h 10, 10 minutes ; $25 + 10 = 35$."
+    ],
+    "hint": "Recule d'abord jusqu'à 14 h, puis continue à reculer.",
+    "estimated_duration_s": 90,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 2, CE2 : l'élève sait utiliser un axe chronologiquement orienté pour positionner des instants et repérer une durée, notamment dans le cadre de la résolution de problèmes."
+  }
+]

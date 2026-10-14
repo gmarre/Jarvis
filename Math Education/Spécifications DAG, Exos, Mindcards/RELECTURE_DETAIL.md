@@ -228,6 +228,87 @@ Complète l'égalité : … - 32 = 45
 
 ---
 
+## `P002` · Le mètre et le centimètre : unités et ordres de grandeur — CP, difficulté 1
+
+*Connaître les unités mètre et centimètre et leurs symboles m et cm, savoir qu'un mètre est égal à cent centimètres, et choisir la mesure vraisemblable d'un objet familier (une trousse mesure plutôt 20 cm que 2 cm ou 1 m). Nombres entiers jusqu'à 100, sans conversion écrite autre que 1 m = 100 cm.*
+
+> « Savoir qu'un mètre est égal à cent centimètres. » — *Cycle 2, Cours préparatoire, Grandeurs et mesures, Les longueurs*
+> « L'élève sait dire si la longueur d'une trousse est plutôt 2 cm, 20 cm ou 1 m. » — *Cycle 2, Cours préparatoire, Grandeurs et mesures, Les longueurs*
+
+**EX-P002-D-01** — decouverte, qcm, 30 s
+
+À peu près combien mesure un crayon de couleur ?
+
+- **a.** 2 cm
+  <br>*Erreur visée :* L'élève croit que le centimètre est une grande unité, ou pense à l'épaisseur du crayon. 2 cm, c'est à peu près la largeur de deux doigts : un crayon est bien plus long.
+- **b.** 15 cm ✅
+- **c.** 15 m
+  <br>*Erreur visée :* L'élève a une bonne idée du nombre mais se trompe d'unité. 15 m, c'est plus long que la salle de classe.
+
+*Corrigé.* (1) Le centimètre (cm) sert pour les petites longueurs : 1 cm, c'est à peu près la largeur d'un doigt. (2) Le mètre (m) sert pour les grandes longueurs : 1 m, c'est à peu près la hauteur de la poignée de la porte. (3) Un crayon tient dans la main et sur la règle de la trousse, qui mesure 20 cm : il mesure environ 15 cm. (4) 2 cm, c'est trop court : deux doigts. 15 m, c'est trop long : plus que la classe.
+
+*Indice.* Un crayon tient-il sur ta règle de la trousse ?
+
+**EX-P002-D-02** — decouverte, texte, 30 s
+
+Le lit de Tom mesure 2 … de long. Quelle unité manque : m ou cm ?
+
+**Réponse :** m
+
+*Corrigé.* (1) 2 cm, c'est la largeur de deux doigts : Tom ne tiendrait jamais dans un lit si petit. (2) Tom s'allonge dans son lit : le lit est plus long que lui. Il faut la grande unité, le mètre. (3) Le lit mesure 2 m. L'unité qui manque est m.
+
+*Indice.* Un lit est-il plus petit ou plus grand que toi ?
+
+**EX-P002-E-01** — entrainement, numerique, 60 s
+
+Une piste de voitures est faite de 10 rails de 10 cm. Combien de mètres mesure-t-elle ?
+
+**Réponse :** 1
+
+*Corrigé.* (1) On compte la longueur rail après rail, de 10 en 10 : 10, 20, 30, 40, 50, 60, 70, 80, 90, 100. (2) Avec les 10 rails, la piste mesure 100 cm. (3) Un mètre est égal à cent centimètres : 100 cm, c'est 1 m. (4) La piste mesure 1 m.
+
+*Indice.* Compte de 10 en 10, un rail après l'autre, puis pense au mètre.
+
+**EX-P002-E-02** — entrainement, qcm, 30 s
+
+Quel objet mesure environ 2 m de haut ?
+
+- **a.** La porte de la classe ✅
+- **b.** Une chaise
+  <br>*Erreur visée :* L'élève pense que 2 m, c'est petit, parce que 2 est un petit nombre. Or une chaise n'arrive même pas à la poignée de la porte, qui est à environ 1 m.
+- **c.** Un bouchon de bouteille
+  <br>*Erreur visée :* L'élève confond le mètre et le centimètre : c'est le bouchon qui mesure environ 2 cm.
+
+*Corrigé.* (1) 1 m, c'est à peu près la hauteur de la poignée de la porte. (2) 2 m, c'est 1 m et 1 m : plus haut qu'un adulte. (3) La porte de la classe est plus haute qu'un adulte : elle mesure environ 2 m. (4) Le bouchon mesure environ 2 cm : c'est le même nombre, mais pas la même unité.
+
+*Indice.* 1 m arrive à peu près à la poignée de la porte. Et 2 m ?
+
+**EX-P002-M-01** — maitrise, vrai_faux, 45 s
+
+Sam dit : « 95 cm, c'est plus long que 1 m. » A-t-il raison ?
+
+**Réponse :** False
+
+*Corrigé.* (1) Sam compare 95 et 1 sans regarder les unités. On ne compare deux longueurs que dans la même unité. (2) Un mètre est égal à cent centimètres : 1 m, c'est 100 cm. (3) On compare 95 cm et 100 cm : quand on compte, 95 vient avant 100. 95 est plus petit que 100. (4) 95 cm, c'est plus court que 1 m : Sam a tort.
+
+*Indice.* Écris 1 m en centimètres avant de comparer.
+
+**EX-P002-M-02** — maitrise, qcm, 45 s
+
+Une corde mesure 100 cm. Une autre mesure 1 m. Laquelle est la plus longue ?
+
+- **a.** La corde de 100 cm
+  <br>*Erreur visée :* L'élève compare 100 et 1 sans regarder les unités : 100 lui paraît bien plus grand.
+- **b.** La corde de 1 m
+  <br>*Erreur visée :* L'élève pense qu'un mètre est toujours plus long que des centimètres, sans chercher combien de centimètres il y a dans un mètre.
+- **c.** Elles ont la même longueur ✅
+
+*Corrigé.* (1) Les deux longueurs ne sont pas dans la même unité : on ne peut pas comparer 100 et 1 directement. (2) Un mètre est égal à cent centimètres : 1 m, c'est 100 cm. (3) La corde de 1 m mesure donc 100 cm, comme l'autre corde. (4) Elles ont la même longueur.
+
+*Indice.* Écris la longueur de la deuxième corde en centimètres.
+
+---
+
 ## `B002` · Addition posée avec retenue — CP, difficulté 2
 
 *Poser en colonnes et calculer l'addition de deux ou trois nombres à un ou deux chiffres, avec passage de la retenue des unités aux dizaines*
@@ -608,6 +689,85 @@ Max a 14 euros, en gagne 5, en dépense et finit avec 12. Combien a-t-il dépens
 *Corrigé.* (1) Première étape : Max gagne 5 euros, il en a plus. 14 + 5 = 19. (2) Deuxième étape : il dépense, et il passe de 19 euros à 12 euros. Ce qu'il a dépensé, c'est ce qui manque à 12 pour faire 19 : 19 - 12 = 7. (3) On vérifie dans l'ordre de l'histoire : 14 + 5 = 19, puis 19 - 7 = 12. Max a dépensé 7 euros.
 
 *Indice.* Combien Max a-t-il d'argent juste avant de dépenser ?
+
+---
+
+## `P003` · La monnaie en euros entiers : valeur, comparaison, rendu — CP, difficulté 2
+
+*Déterminer la valeur en euros d'un ensemble de pièces et de billets décrit par l'énoncé, comparer deux ensembles selon leur valeur (et non selon le nombre de pièces), constituer une somme donnée, payer et rendre la monnaie. Montants entiers en euros, inférieurs ou égaux à 100 €, sans centimes ni virgule.*
+
+> « Les montants sont des nombres entiers d'euros toujours inférieurs ou égaux à cent. » — *Cycle 2, Cours préparatoire, Grandeurs et mesures, La monnaie*
+> « Déterminer la valeur en euro d'un ensemble constitué de pièces et de billets. » — *Cycle 2, Cours préparatoire, Grandeurs et mesures, La monnaie*
+> « L'élève sait comparer deux ensembles constitués de pièces ou de billets du point de vue de leur valeur et non de celui du nombre de pièces ou de billets. » — *Cycle 2, Cours préparatoire, Grandeurs et mesures, La monnaie*
+> « Simuler des achats en manipulant des pièces et des billets fictifs. Rendre la monnaie. » — *Cycle 2, Cours préparatoire, Grandeurs et mesures, La monnaie*
+
+**EX-P003-D-01** — decouverte, numerique, 30 s
+
+Inès a un billet de 20 € et 3 pièces de 1 €. Combien a-t-elle ?
+
+**Réponse :** 23
+
+*Corrigé.* (1) On commence par le billet : il vaut 20 €. (2) On ajoute les pièces de 1 € une par une, en comptant : 21, 22, 23. (3) Inès a 23 €. (4) On compte la valeur des billets et des pièces, pas leur nombre : Inès n'a que 4 objets, mais elle a 23 €.
+
+*Indice.* Pars de 20, puis avance de 1 pour chaque pièce.
+
+**EX-P003-D-02** — decouverte, qcm, 30 s
+
+Qu'est-ce qui vaut le plus d'argent ?
+
+- **a.** 5 pièces de 1 €
+  <br>*Erreur visée :* L'élève compte les objets : 5 pièces, c'est plus qu'un seul billet. Mais 5 pièces de 1 € ne valent que 5 €.
+- **b.** 1 billet de 10 € ✅
+- **c.** On ne peut pas comparer des pièces et des billets
+  <br>*Erreur visée :* L'élève croit que des pièces et des billets ne se comparent pas. On compare leur valeur en euros : 5 € et 10 €.
+
+*Corrigé.* (1) 5 pièces de 1 € : on compte 1, 2, 3, 4, 5. Elles valent 5 €. (2) Le billet de 10 € vaut 10 €, autant que dix pièces de 1 €. (3) 10 €, c'est plus que 5 € : c'est le billet de 10 € qui vaut le plus, même s'il n'y a qu'un seul billet.
+
+*Indice.* Combien d'euros valent les 5 pièces ensemble ?
+
+**EX-P003-E-01** — entrainement, numerique, 45 s
+
+Un jeu coûte 30 €. Tu donnes un billet de 50 €. Combien te rend-on ?
+
+**Réponse :** 20
+
+*Corrigé.* (1) Tu donnes plus que le prix : le vendeur te rend ce que tu as donné en trop. (2) Il compte à partir du prix, de 10 en 10, jusqu'à 50 : 30, puis 40, 50. (3) Il a ajouté 2 billets de 10 € : il te rend 20 €. (4) Vérification : 30 + 20 = 50. Le jeu et la monnaie rendue font bien les 50 € donnés.
+
+*Indice.* Compte de 10 en 10 à partir de 30, jusqu'à 50.
+
+**EX-P003-E-02** — entrainement, vrai_faux, 45 s
+
+Zoé a 4 billets de 5 €. Elle dit : « J'ai 9 €. » A-t-elle raison ?
+
+**Réponse :** False
+
+*Corrigé.* (1) Zoé a ajouté 4 et 5 : elle mélange le nombre de billets et la valeur d'un billet. (2) Chaque billet vaut 5 €. On compte de 5 en 5, un billet après l'autre : 5, 10, 15, 20. (3) Zoé a 20 €, pas 9 € : elle a tort.
+
+*Indice.* Compte de 5 en 5, un billet après l'autre.
+
+**EX-P003-M-01** — maitrise, qcm, 90 s
+
+Tu veux payer 37 € avec le moins possible de billets et de pièces. Que donnes-tu ?
+
+- **a.** 1 billet de 20 €, 1 billet de 10 € et 1 billet de 5 €
+  <br>*Erreur visée :* L'élève cherche le moins d'objets possible mais oublie de vérifier la somme : 20, 30, 35. Cela fait 35 €, pas 37 €.
+- **b.** 3 billets de 10 € et 7 pièces de 1 €
+  <br>*Erreur visée :* L'élève découpe 37 en 3 dizaines et 7 unités, comme en numération. La somme est juste, mais il donne 10 objets.
+- **c.** 1 billet de 20 €, 1 billet de 10 €, 1 billet de 5 € et 1 pièce de 2 € ✅
+
+*Corrigé.* (1) Le billet de 50 € est trop grand. On prend le plus gros billet qui ne dépasse pas 37 € : un billet de 20 €. (2) On ajoute un billet de 10 € : 20, 30. On est à 30 €, il faut aller jusqu'à 37 €. (3) Un billet de 5 € : 35. Puis une pièce de 2 € : 37. (4) On donne 4 objets et on a bien 37 € : c'est la réponse c. La réponse b fait 37 €, mais avec 10 objets ; la réponse a ne fait que 35 €.
+
+*Indice.* Commence par le plus gros billet qui ne dépasse pas 37 €.
+
+**EX-P003-M-02** — maitrise, numerique, 90 s
+
+Tu donnes 40 € pour un jouet. On te rend 5 €. Combien coûte-t-il ?
+
+**Réponse :** 35
+
+*Corrigé.* (1) Les 40 € que tu donnes servent à payer le jouet, et le vendeur te rend ce qui est en trop : 5 €. (2) Le prix du jouet et les 5 € rendus font donc 40 € à eux deux. (3) On recule de 5 à partir de 40 : 39, 38, 37, 36, 35. (4) Vérification, comme le vendeur : à partir de 35, il compte 36, 37, 38, 39, 40. Il rend bien 5 €. Le jouet coûte 35 €.
+
+*Indice.* Le prix du jouet et les 5 € rendus font ensemble les 40 € donnés.
 
 ---
 
@@ -1570,6 +1730,248 @@ Max a 2 € et 135 centimes. Écris sa somme en euros, avec une virgule.
 
 ---
 
+## `P005` · Longueurs : mètre, centimètre, kilomètre — CE1, difficulté 2
+
+*Connaître les unités m, cm et km et les relations 1 m = 100 cm et 1 km = 1 000 m, écrire une longueur donnée en deux unités dans une seule (1 m et 46 cm = 146 cm), avec une partie en centimètres toujours inférieure à 100, comparer des longueurs et choisir l'unité adaptée (cm pour un crayon, m pour une salle, km pour une distance entre deux villes). Nombres entiers jusqu'à 1 000, sans virgule.*
+
+> « L'élève sait que 1 m = 100 cm et 1 km = 1 000 m. » — *Cycle 2, Cours élémentaire première année, Grandeurs et mesures, Les longueurs*
+> « L'élève sait que 1 m + 46 cm = 146 cm. » — *Cycle 2, Cours élémentaire première année, Grandeurs et mesures, Les longueurs*
+> « Connaitre et utiliser les unités mètre, centimètre, kilomètre et les symboles associés (m, cm et km). » — *Cycle 2, Cours élémentaire première année, Grandeurs et mesures, Les longueurs*
+> « Choisir l'unité la mieux adaptée pour exprimer une longueur. » — *Cycle 2, Cours élémentaire première année, Grandeurs et mesures, Les longueurs*
+> « L'utilisation de l'écriture à virgule n'est pas attendue dans le cadre de l'étude des longueurs et des masses. » — *Cycle 2, Cours élémentaire première année, Grandeurs et mesures, Les longueurs et les masses*
+
+**EX-P005-D-01** — decouverte, qcm, 30 s
+
+Quelle unité choisir pour la distance entre deux villes ?
+
+- **a.** le centimètre (cm)
+  <br>*Erreur visée :* L'élève choisit l'unité qu'il connaît le mieux. Mais en centimètres, on mesure un crayon ou un cahier, pas une route entre deux villes.
+- **b.** le kilomètre (km) ✅
+- **c.** le mètre (m)
+  <br>*Erreur visée :* L'élève sait que le mètre sert pour les grandes longueurs, comme une salle. Mais entre deux villes, il faudrait des milliers de mètres : on prend le kilomètre.
+
+*Corrigé.* (1) Le centimètre (cm) sert pour les petits objets : un crayon, un cahier. (2) Le mètre (m) sert pour une salle, une cour, une piscine. (3) Le kilomètre (km) sert pour les grandes distances : 1 km = 1 000 m. (4) Entre deux villes, on mesure en kilomètres.
+
+*Indice.* Pense aux panneaux au bord de la route.
+
+**EX-P005-D-02** — decouverte, numerique, 45 s
+
+Le tableau de la classe mesure 3 m. Quelle est sa longueur en centimètres ?
+
+**Réponse :** 300
+
+*Corrigé.* (1) 1 m = 100 cm. (2) 3 m, c'est 1 m, 1 m et 1 m : on compte de 100 en 100, 100, 200, 300. (3) Le tableau mesure 300 cm : 3 centaines de centimètres. (4) Attention à ne pas confondre : c'est entre le kilomètre et le mètre qu'il y a 1 000, car 1 km = 1 000 m.
+
+*Indice.* Compte de 100 en 100, un mètre après l'autre.
+
+**EX-P005-E-01** — entrainement, numerique, 45 s
+
+Tom mesure 1 m et 27 cm. Quelle est sa taille en centimètres ?
+
+**Réponse :** 127
+
+*Corrigé.* (1) 1 m = 100 cm. (2) 1 m et 27 cm, c'est donc 100 cm et 27 cm. (3) 100 et 27, c'est 1 centaine, 2 dizaines et 7 unités : 127. (4) Tom mesure 127 cm.
+
+*Indice.* Écris d'abord 1 m en centimètres.
+
+**EX-P005-E-02** — entrainement, vrai_faux, 45 s
+
+Un tour de piste mesure 400 m. Lina dit : « C'est plus court que 1 km. » A-t-elle raison ?
+
+**Réponse :** True
+
+*Corrigé.* (1) Attention : 400 est plus grand que 1, mais les unités ne sont pas les mêmes. On ne peut pas comparer 400 et 1 directement. (2) On écrit 1 km en mètres : 1 km = 1 000 m. Ce n'est pas 100 m : c'est entre le mètre et le centimètre qu'il y a 100. (3) On compare 400 m et 1 000 m : 4 centaines, c'est moins que 10 centaines. (4) Un tour de piste est plus court que 1 km : Lina a raison.
+
+*Indice.* Écris 1 km en mètres avant de comparer.
+
+**EX-P005-M-01** — maitrise, qcm, 60 s
+
+Une guirlande mesure 5 m et 7 cm. Quelle est sa longueur en centimètres ?
+
+- **a.** 57 cm
+  <br>*Erreur visée :* L'élève colle le 5 et le 7. Mais 57 cm, c'est moins que 1 m : il a oublié que 5 m, c'est 500 cm.
+- **b.** 570 cm
+  <br>*Erreur visée :* L'élève écrit le 7 au rang des dizaines : 570 cm, c'est 5 m et 70 cm, pas 5 m et 7 cm.
+- **c.** 507 cm ✅
+
+*Corrigé.* (1) 1 m = 100 cm, donc 5 m, c'est 5 centaines de centimètres : 500 cm. (2) 5 m et 7 cm, c'est 500 cm et 7 cm. (3) 500 et 7 : 5 centaines, 0 dizaine, 7 unités. Le zéro garde la place des dizaines : 507. (4) La guirlande mesure 507 cm.
+
+*Indice.* Combien de dizaines y a-t-il dans 7 cm ?
+
+**EX-P005-M-02** — maitrise, qcm, 90 s
+
+Au saut en longueur, Léa fait 1 m et 98 cm, Tom 205 cm, Inès 2 m et 10 cm. Qui saute le plus loin ?
+
+- **a.** Inès ✅
+- **b.** Tom
+  <br>*Erreur visée :* L'élève compare les nombres écrits sans regarder les unités : 205 est le plus grand. Mais 205 cm, c'est 2 m et 5 cm, moins que 2 m et 10 cm.
+- **c.** Léa
+  <br>*Erreur visée :* L'élève ne regarde que les centimètres qui suivent les mètres : 98 pour Léa, 10 pour Inès, 5 pour Tom (205 cm, c'est 2 m et 5 cm). Mais Léa n'a sauté que 1 m et quelques centimètres, les deux autres plus de 2 m.
+
+*Corrigé.* (1) On écrit les trois sauts dans la même unité, en centimètres, avec 1 m = 100 cm. (2) Léa : 1 m et 98 cm, c'est 198 cm. Inès : 2 m et 10 cm, c'est 210 cm. Tom : 205 cm. (3) On compare d'abord les centaines : Léa n'en a qu'une, elle a sauté le moins loin. (4) Entre 210 et 205, les centaines sont les mêmes : on compare les dizaines. 1 dizaine contre 0 : 210 est le plus grand. (5) C'est Inès qui saute le plus loin.
+
+*Indice.* Écris d'abord les trois sauts en centimètres.
+
+---
+
+## `P006` · Masses : gramme et kilogramme — CE1, difficulté 2
+
+*Connaître les unités g et kg et la relation 1 kg = 1 000 g, comparer et ranger des masses données dans ces unités (1 kg et 300 g ; 1 000 g ; 2 kg), et estimer la masse d'un objet du quotidien à partir de masses connues (un paquet de sucre pèse 1 kg). Nombres entiers jusqu'à 1 000, sans virgule.*
+
+> « Connaitre et utiliser les unités gramme et kilogramme et les symboles associés (g, kg). » — *Cycle 2, Cours élémentaire première année, Grandeurs et mesures, Les masses*
+> « Savoir que 1 kg est égal à 1 000 g. » — *Cycle 2, Cours élémentaire première année, Grandeurs et mesures, Les masses*
+> « L'élève sait ordonner quatre masses exprimées en gramme ou en kilogramme. » — *Cycle 2, Cours élémentaire première année, Grandeurs et mesures, Les masses*
+
+**EX-P006-D-01** — decouverte, qcm, 30 s
+
+Combien pèse une pomme, à peu près ?
+
+- **a.** 150 g ✅
+- **b.** 150 kg
+  <br>*Erreur visée :* L'élève a le bon nombre mais se trompe d'unité : 150 kg, c'est plus lourd que deux adultes.
+- **c.** 1 kg
+  <br>*Erreur visée :* L'élève pense au « kilo de pommes » du marché. Mais 1 kg, c'est la masse d'un paquet de sucre : il faut plusieurs pommes pour faire 1 kg.
+
+*Corrigé.* (1) Le gramme (g) sert pour les objets légers, le kilogramme (kg) pour les objets plus lourds. (2) Un paquet de sucre pèse 1 kg, c'est-à-dire 1 000 g. (3) Une pomme est bien plus légère qu'un paquet de sucre : elle pèse environ 150 g.
+
+*Indice.* Une pomme est-elle plus lourde ou plus légère qu'un paquet de sucre de 1 kg ?
+
+**EX-P006-D-02** — decouverte, numerique, 30 s
+
+Un sac de farine pèse 1 kg. Quelle est sa masse en grammes ?
+
+**Réponse :** 1000
+
+*Corrigé.* (1) Le kilogramme est une unité plus grande que le gramme : « kilo » veut dire « mille ». (2) 1 kg est égal à 1 000 g. (3) Le sac pèse 1 000 g. (4) Ne confonds pas avec les longueurs : 1 m = 100 cm, mais 1 kg = 1 000 g.
+
+*Indice.* Le mot « kilo » cache un nombre. Lequel ?
+
+**EX-P006-E-01** — entrainement, vrai_faux, 45 s
+
+Un chou pèse 900 g. Max dit : « Il pèse moins de 1 kg. » A-t-il raison ?
+
+**Réponse :** True
+
+*Corrigé.* (1) Attention : 900 est un grand nombre et 1 un petit, mais les unités ne sont pas les mêmes. On ne compare pas 900 et 1. (2) On écrit 1 kg en grammes : 1 kg = 1 000 g. (3) On compare dans la même unité : 900 g < 1 000 g. (4) Le chou pèse moins de 1 kg : Max a raison.
+
+*Indice.* Écris 1 kg en grammes avant de comparer.
+
+**EX-P006-E-02** — entrainement, texte, 30 s
+
+Un cartable plein pèse 3 … Quelle unité manque : g ou kg ?
+
+**Réponse :** kg
+
+*Corrigé.* (1) 3 g, c'est à peu près la masse de trois trombones : bien trop léger pour un cartable plein. (2) Un paquet de sucre pèse 1 kg. Un cartable plein est plus lourd qu'un paquet de sucre : il pèse à peu près comme 3 paquets de sucre. (3) L'unité qui manque est kg : le cartable pèse 3 kg.
+
+*Indice.* Un cartable plein est-il plus léger ou plus lourd qu'un paquet de sucre de 1 kg ?
+
+**EX-P006-M-01** — maitrise, qcm, 90 s
+
+Range du plus léger au plus lourd : 2 kg ; 600 g ; 1 kg et 500 g ; 1 000 g
+
+- **a.** 2 kg ; 1 kg et 500 g ; 600 g ; 1 000 g
+  <br>*Erreur visée :* L'élève range les nombres écrits sans regarder les unités : 2, puis 500, puis 600, puis 1 000.
+- **b.** 1 kg et 500 g ; 600 g ; 1 000 g ; 2 kg
+  <br>*Erreur visée :* L'élève ne regarde que les grammes de « 1 kg et 500 g » : 500 g, c'est moins que 600 g. Il oublie le kilogramme : 1 kg et 500 g, c'est plus lourd que 1 000 g, qui fait juste 1 kg.
+- **c.** 600 g ; 1 000 g ; 1 kg et 500 g ; 2 kg ✅
+
+*Corrigé.* (1) On se sert de 1 kg = 1 000 g pour savoir quelles masses font moins de 1 kg et lesquelles font plus. (2) 600 g < 1 000 g : 600 g, c'est moins de 1 kg. C'est la plus légère. (3) 1 000 g, c'est exactement 1 kg. (4) 1 kg et 500 g, c'est plus que 1 kg, mais moins que 2 kg. (5) Du plus léger au plus lourd : 600 g ; 1 000 g ; 1 kg et 500 g ; 2 kg.
+
+*Indice.* Cherche d'abord quelles masses font moins de 1 kg, et lesquelles font plus.
+
+**EX-P006-M-02** — maitrise, vrai_faux, 60 s
+
+Léo dit : « 1 kg de plumes, c'est plus léger que 1 000 g de cailloux. » A-t-il raison ?
+
+**Réponse :** False
+
+*Corrigé.* (1) Léo pense aux plumes, légères, et aux cailloux, lourds. Mais ici, les masses sont données : on compare les masses, pas les objets. (2) 1 kg = 1 000 g. (3) 1 kg de plumes et 1 000 g de cailloux ont la même masse : sur une balance, les deux plateaux sont à la même hauteur. (4) Il y a bien plus de plumes que de cailloux, mais la masse est la même. Léo a tort.
+
+*Indice.* Écris 1 kg en grammes. Que montrerait une balance ?
+
+---
+
+## `P008` · Heures et minutes : unités de durée et durées simples — CE1, difficulté 2
+
+*Connaître les unités h et min et les relations 1 h = 60 min, une demi-heure = 30 min, un quart d'heure = 15 min ; distinguer les heures du matin et de l'après-midi (3 heures de l'après-midi, c'est 15 h) ; ajouter des durées et trouver la durée entre deux horaires écrits d'une même journée, en heures entières, demi-heures ou quarts d'heure ; comparer 2 h et 130 min. Horaires donnés par écrit, sans horloge.*
+
+> « Connaitre les unités de mesure de durée, heure et minute, et les symboles associés (h et min). » — *Cycle 2, Cours élémentaire première année, Grandeurs et mesures, Le repérage dans le temps et les durées*
+> « L'élève connait les relations : 1 heure = 60 minutes ; 1 demi-heure = 30 minutes ; 1 quart d'heure = 15 minutes. » — *Cycle 2, Cours élémentaire première année, Grandeurs et mesures, Le repérage dans le temps et les durées*
+> « Connaitre, utiliser et distinguer les heures du matin et celles de l'après-midi. » — *Cycle 2, Cours élémentaire première année, Grandeurs et mesures, Le repérage dans le temps et les durées*
+> « L'élève sait ajouter ou soustraire des durées. » — *Cycle 2, Cours élémentaire première année, Grandeurs et mesures, Le repérage dans le temps et les durées*
+> « L'élève sait comparer des durées comme 2 heures et 130 minutes. » — *Cycle 2, Cours élémentaire première année, Grandeurs et mesures, Le repérage dans le temps et les durées*
+
+**EX-P008-D-01** — decouverte, numerique, 45 s
+
+Une heure dure 60 minutes. Léo lit pendant un quart d'heure. Combien de minutes lit-il ?
+
+**Réponse :** 15
+
+*Corrigé.* (1) Un quart d'heure, c'est une heure partagée en 4 parts égales : on prend une de ces parts. (2) On partage d'abord l'heure en 2 : une demi-heure, c'est 30 minutes, car 30 + 30 = 60. (3) On partage chaque demi-heure en 2 : 15 + 15 = 30. L'heure est alors coupée en 4 parts de 15 minutes : 15 + 15 + 15 + 15 = 60. (4) Un quart d'heure dure 15 minutes : Léo lit 15 minutes. Deux quarts d'heure font une demi-heure.
+
+*Indice.* Partage l'heure en 2 parts égales, puis chaque moitié en 2.
+
+**EX-P008-D-02** — decouverte, qcm, 45 s
+
+Le goûter est à 4 heures de l'après-midi. Comment écrit-on cette heure avec les heures de 0 h à 23 h ?
+
+- **a.** 4 h
+  <br>*Erreur visée :* L'élève ne distingue pas le matin de l'après-midi. Or 4 h, c'est 4 heures du matin, en pleine nuit : le goûter n'a pas lieu à cette heure-là.
+- **b.** 15 h
+  <br>*Erreur visée :* L'élève compte les heures à partir de midi en disant « 12, 13, 14, 15 » : il compte midi comme la première heure. Or 4 heures après midi, on compte 13, 14, 15, 16.
+- **c.** 16 h ✅
+
+*Corrigé.* (1) L'après-midi commence à midi, c'est-à-dire à 12 h. (2) 4 heures de l'après-midi, c'est 4 heures après midi : 12 + 4 = 16. (3) On écrit 16 h. Le matin, 4 heures s'écrit 4 h ; l'après-midi, on ajoute 12 au nombre d'heures.
+
+*Indice.* L'après-midi commence à 12 h. Combien d'heures après midi est le goûter ?
+
+**EX-P008-E-01** — entrainement, numerique, 60 s
+
+Le cours de judo commence à 17 h 15 et finit à 18 h. Combien de minutes dure-t-il ?
+
+**Réponse :** 45
+
+*Corrigé.* (1) On avance de 17 h 15 jusqu'à 18 h, de quart d'heure en quart d'heure. (2) De 17 h 15 à 17 h 30 : 15 minutes. De 17 h 30 à 17 h 45 : 15 minutes. De 17 h 45 à 18 h : 15 minutes. (3) Cela fait trois quarts d'heure : 15 + 15 + 15 = 45. Le cours dure 45 minutes. (4) Autre chemin : de 17 h à 18 h, il y a 60 minutes. Le cours commence 15 minutes après 17 h, donc il dure 60 - 15 = 45 minutes.
+
+*Indice.* Avance de quart d'heure en quart d'heure, de 17 h 15 jusqu'à 18 h.
+
+**EX-P008-E-02** — entrainement, vrai_faux, 45 s
+
+Tom dit : « 1 h 10 min, c'est plus long que 80 min. » A-t-il raison ?
+
+**Réponse :** False
+
+*Corrigé.* (1) Pour comparer deux durées, on les écrit dans la même unité : ici, en minutes. (2) 1 h, c'est 60 minutes, et non 100 minutes. Donc 1 h 10 min, c'est 60 + 10 = 70 minutes. (3) 70 minutes, c'est moins long que 80 minutes : Tom a tort. (4) Erreur à éviter : croire qu'une heure fait 100 minutes. On trouverait 110 minutes et on donnerait raison à Tom.
+
+*Indice.* Combien de minutes y a-t-il dans 1 h ?
+
+**EX-P008-M-01** — maitrise, texte, 90 s
+
+Sami lit une demi-heure, puis joue du piano trois quarts d'heure. Combien de temps en tout, en heures et minutes ?
+
+**Réponse :** 1 h 15 min
+
+*Corrigé.* (1) Une demi-heure, c'est 30 minutes. (2) Trois quarts d'heure, c'est un quart d'heure plus un quart d'heure plus un quart d'heure : 15 + 15 + 15 = 45 minutes. (3) En tout : 30 + 45 = 75 minutes. (4) Dès qu'on a 60 minutes, on a une heure : dans 75 minutes, il y a une heure (60 minutes) et il reste 75 - 60 = 15 minutes. (5) Sami a passé 1 h 15 min à lire et à jouer du piano.
+
+*Indice.* Écris chaque durée en minutes, ajoute-les, puis cherche l'heure entière cachée dans le total.
+
+**EX-P008-M-02** — maitrise, qcm, 75 s
+
+La sortie au zoo part à 10 heures du matin et revient à 2 heures de l'après-midi. Combien de temps dure-t-elle ?
+
+- **a.** 4 heures ✅
+- **b.** 8 heures
+  <br>*Erreur visée :* L'élève calcule 10 - 2 = 8 : il n'écrit pas 2 heures de l'après-midi sous la forme 14 h, et il enlève le plus petit nombre au plus grand.
+- **c.** 5 heures
+  <br>*Erreur visée :* L'élève compte les heures 10, 11, 12, 13, 14 : cela fait 5 nombres, mais seulement 4 heures entre eux (de 10 à 11, de 11 à 12, de 12 à 13, de 13 à 14).
+
+*Corrigé.* (1) 2 heures de l'après-midi, c'est 2 heures après midi : 12 + 2 = 14, soit 14 h. (2) De 10 h à 12 h (midi) : 2 heures. De 12 h à 14 h : 2 heures. (3) En tout : 2 + 2 = 4. La sortie dure 4 heures.
+
+*Indice.* Écris d'abord 2 heures de l'après-midi avec les heures de 0 h à 23 h.
+
+---
+
 ## `B038` · Problèmes mixtes en deux étapes — CE1, difficulté 3
 
 *Résoudre un problème en deux étapes qui combine une étape multiplicative et une étape additive ou soustractive*
@@ -1881,6 +2283,88 @@ Sur une même bande-unité graduée, 1/2 et 3/6 se placent exactement au même e
 *Corrigé.* (1) 3/6 s'obtient à partir de 1/2 en multipliant numérateur et dénominateur par 3. (2) Ces deux écritures désignent donc le même nombre. (3) Un nombre n'occupe qu'une seule place sur la demi-droite graduée. (4) L'affirmation est vraie : des fractions égales tombent au même point.
 
 *Indice.* Ces deux fractions sont-elles égales ?
+
+---
+
+## `P010` · Périmètre d'un polygone : longueur du contour — CE2, difficulté 2
+
+*Savoir que le périmètre d'une figure plane est la longueur de son contour, et le calculer en additionnant les longueurs des côtés données par l'énoncé (triangle, quadrilatère, polygone). Pour le carré et le rectangle, sans formule : l'élève sait qu'un côté suffit pour le carré et deux pour le rectangle. Côtés entiers, dans une même unité.*
+
+> « Savoir ce qu'est le périmètre d'une figure plane. » — *Cycle 2, Cours élémentaire deuxième année, Grandeurs et mesures, Les longueurs*
+> « L'élève sait que le périmètre d'une figure plane est la longueur de son contour. » — *Cycle 2, Cours élémentaire deuxième année, Grandeurs et mesures, Les longueurs*
+> « Dans le cas du carré et du rectangle, aucune formule n'est enseignée, mais l'élève sait qu'il n'est pas nécessaire de mesurer la longueur de chacun des côtés. » — *Cycle 2, Cours élémentaire deuxième année, Grandeurs et mesures, Les longueurs*
+
+**EX-P010-D-01** — decouverte, numerique, 60 s
+
+Les côtés d'un jardin triangulaire mesurent 12 m ; 15 m et 8 m. Léa fait le tour complet du jardin. Quelle distance parcourt-elle ?
+
+**Réponse :** 35
+
+*Corrigé.* (1) Faire le tour complet du jardin, c'est suivre tout son contour : Léa longe les 3 côtés, chacun d'un bout à l'autre. (2) On ajoute les longueurs des 3 côtés : 12 + 15 + 8 = 35. (3) Léa parcourt 35 m. La longueur du contour s'appelle le périmètre : le périmètre du jardin est 35 m.
+
+*Indice.* Le tour du jardin passe par chacun de ses côtés.
+
+**EX-P010-D-02** — decouverte, qcm, 45 s
+
+Une étiquette rectangulaire mesure 11 cm de long et 6 cm de large. Quel calcul donne son périmètre, la longueur de son contour ?
+
+- **a.** 11 + 6
+  <br>*Erreur visée :* L'élève n'additionne que les deux longueurs écrites dans l'énoncé : il oublie qu'un rectangle a 4 côtés, deux longueurs et deux largeurs.
+- **b.** 11 + 6 + 11
+  <br>*Erreur visée :* L'élève oublie un côté : il ne compte qu'une largeur.
+- **c.** 11 + 6 + 11 + 6 ✅
+- **d.** 11 + 6 + 11 + 6 + 11
+  <br>*Erreur visée :* L'élève repasse sur la première longueur en fermant le tour : il compte ce côté à deux reprises.
+
+*Corrigé.* (1) Un rectangle a 4 côtés : 2 longueurs de 11 cm et 2 largeurs de 6 cm. Les côtés opposés ont la même longueur : pas besoin de mesurer les 4 côtés, la longueur et la largeur suffisent. (2) Le contour passe par les 4 côtés, sans en sauter aucun et sans repasser sur un côté déjà compté : 11 + 6 + 11 + 6. (3) 11 + 6 + 11 + 6 = 34 : le périmètre de l'étiquette est 34 cm. La bonne réponse est c.
+
+*Indice.* Combien un rectangle a-t-il de côtés ? Lesquels ont la même longueur ?
+
+**EX-P010-E-01** — entrainement, numerique, 120 s
+
+Un champ a quatre côtés, de 135 m ; 98 m ; 142 m et 87 m. Quelle longueur de clôture faut-il pour l'entourer complètement ?
+
+**Réponse :** 462
+
+*Corrigé.* (1) La clôture fait tout le tour du champ : sa longueur est le périmètre du champ, la somme des longueurs des 4 côtés. (2) On pose les additions, unités sous les unités : 135 + 98 = 233, puis 233 + 142 = 375, puis 375 + 87 = 462. (3) Vérification avec un autre regroupement : 135 + 87 = 222 et 98 + 142 = 240, puis 222 + 240 = 462. (4) Il faut 462 m de clôture.
+
+*Indice.* La clôture longe combien de côtés ?
+
+**EX-P010-E-02** — entrainement, vrai_faux, 60 s
+
+Un carré a des côtés de 13 cm. Tom affirme : « Le périmètre de ce carré est 39 cm. »
+
+**Réponse :** False
+
+*Corrigé.* (1) Un carré a 4 côtés, tous de la même longueur. Connaître un côté suffit : les 4 côtés mesurent 13 cm. (2) Le contour passe par les 4 côtés : 13 + 13 + 13 + 13 = 52. Le périmètre est 52 cm. (3) Tom a calculé 13 + 13 + 13 = 39 : il n'a compté que 3 côtés, il en a oublié un. L'affirmation est fausse.
+
+*Indice.* Combien de côtés a un carré ?
+
+**EX-P010-M-01** — maitrise, qcm, 90 s
+
+Deux carreaux carrés de 15 cm de côté, posés côte à côte, forment un rectangle de 30 cm de long et 15 cm de large. Quel est son périmètre ?
+
+- **a.** 120 cm
+  <br>*Erreur visée :* L'élève ajoute les périmètres des deux carreaux (60 cm + 60 cm) : le côté où les carreaux se touchent entre dans le contour de chaque carreau, alors qu'il est à l'intérieur du rectangle.
+- **b.** 90 cm ✅
+- **c.** 60 cm
+  <br>*Erreur visée :* L'élève donne le périmètre d'un seul carreau (15 + 15 + 15 + 15 = 60) au lieu de celui du rectangle.
+- **d.** 105 cm
+  <br>*Erreur visée :* L'élève fait bien le tour du rectangle (90 cm), puis ajoute le côté du milieu (15 cm), qui ne fait pas partie du contour.
+
+*Corrigé.* (1) Le périmètre est la longueur du contour, le bord extérieur du rectangle. Le rectangle a 2 longueurs de 30 cm (15 + 15 = 30) et 2 largeurs de 15 cm. (2) 30 + 15 + 30 + 15 = 90 : le périmètre du rectangle est 90 cm. (3) Le côté où les deux carreaux se touchent est à l'intérieur du rectangle : il ne fait pas partie du contour. C'est pourquoi on ne trouve pas 60 + 60 = 120, la somme des périmètres des deux carreaux.
+
+*Indice.* Suis en pensée le bord extérieur du rectangle. Le côté du milieu en fait-il partie ?
+
+**EX-P010-M-02** — maitrise, numerique, 90 s
+
+Une table de jeu a la forme d'un polygone à 6 côtés, tous de 45 cm. Quel est le périmètre de la table ?
+
+**Réponse :** 270
+
+*Corrigé.* (1) Le périmètre est la longueur du contour : on ajoute les longueurs des 6 côtés. (2) Les 6 côtés ont la même longueur : connaître un côté suffit, comme pour le carré. Le contour mesure 45 + 45 + 45 + 45 + 45 + 45. (3) On regroupe les côtés par deux : 45 + 45 = 90. Il y a 3 paires : 90 + 90 + 90 = 270. (4) Le périmètre de la table est 270 cm, soit 2 m et 70 cm. Piège : 45 + 45 + 45 + 45 = 180 ne compte que 4 côtés, comme pour un carré, alors que la table en a 6.
+
+*Indice.* Combien de côtés faut-il ajouter ? Ont-ils tous la même longueur ?
 
 ---
 
@@ -2305,6 +2789,327 @@ Théo pose 32{,}40 - 8{,}75 (en euros) et trouve 36,35 €. Quelle est son erreu
 *Corrigé.* (1) Une soustraction ne peut pas donner plus que le nombre de départ : 36,35 € est plus que 32,40 €. Théo s'est trompé. (2) Ses colonnes. Centimes : 0 en haut, 5 en bas ; il a écrit 5, comme pour 5 - 0. Dizaines de centimes : 4 en haut, 7 en bas ; il a écrit 3, soit 7 - 4. Unités d'euros : 2 en haut, 8 en bas ; il a écrit 6, soit 8 - 2. (3) Quand le chiffre du haut est le plus petit, il faut casser une unité de la colonne de gauche : une dizaine de centimes, puis un euro, puis une dizaine d'euros. (4) Le bon calcul : 32{,}40 - 8{,}75 = 23{,}65. On vérifie : 23{,}65 + 8{,}75 = 32{,}40. La bonne réponse est b. Si ta classe utilise une autre méthode de soustraction, tu dois trouver le même résultat.
 
 *Indice.* Une soustraction peut-elle donner plus que le nombre de départ ? Regarde ensuite chaque colonne.
+
+---
+
+## `P009` · Longueurs : millimètre et décimètre, conversions — CE2, difficulté 3
+
+*Connaître les unités mm, cm, dm, m et km et leurs relations (1 cm = 10 mm, 1 m = 1 000 mm, 1 m = 10 dm), et convertir dans les deux sens en s'appuyant sur ces relations, sans tableau de conversion, notamment pour calculer avec des longueurs exprimées dans des unités différentes (3 cm + 4 mm = 34 mm ; 215 cm = 2 m et 15 cm). Nombres entiers jusqu'à 10 000, sans virgule.*
+
+> « Connaitre et utiliser les unités mètre, décimètre, centimètre, millimètre, kilomètre et les symboles associés (m, dm, cm, mm, km). » — *Cycle 2, Cours élémentaire deuxième année, Grandeurs et mesures, Les longueurs*
+> « L'élève sait que 1 cm = 10 mm et 1 m = 1 000 mm. » — *Cycle 2, Cours élémentaire deuxième année, Grandeurs et mesures, Les longueurs*
+> « Les élèves n'utilisent pas de tableaux de conversion au cycle 2, mais s'appuient sur les relations connues entre les unités pour effectuer des conversions. » — *Cycle 2, Cours élémentaire deuxième année, Grandeurs et mesures, Les longueurs, les masses et les contenances*
+
+**EX-P009-D-01** — decouverte, numerique, 45 s
+
+Une gomme mesure 5 cm de long. On sait que 1 cm = 10 mm. Quelle est la longueur de la gomme, en millimètres ?
+
+**Réponse :** 50
+
+*Corrigé.* (1) 1 cm = 10 mm : dans chaque centimètre, il y a 10 millimètres. (2) La gomme mesure 5 cm, donc 5 fois 10 mm : 5 × 10 = 50. (3) La gomme mesure 50 mm. Le nombre est plus grand qu'en centimètres, car le millimètre est une unité plus petite : il en faut plus pour la même longueur.
+
+*Indice.* Combien de millimètres y a-t-il dans 1 cm ?
+
+**EX-P009-D-02** — decouverte, qcm, 45 s
+
+Un crayon mesure 1 dm et 6 cm. On sait que 1 dm = 10 cm. Combien mesure le crayon, en centimètres ?
+
+- **a.** 7 cm
+  <br>*Erreur visée :* L'élève additionne 1 et 6 sans convertir : il met ensemble des décimètres et des centimètres comme si c'était la même unité. Or 1 dm vaut 10 cm, pas 1 cm.
+- **b.** 106 cm
+  <br>*Erreur visée :* L'élève confond le décimètre et le mètre : il utilise 1 m = 100 cm au lieu de 1 dm = 10 cm. 106 cm, c'est plus d'un mètre, bien trop long pour un crayon.
+- **c.** 16 cm ✅
+
+*Corrigé.* (1) 1 dm = 10 cm. (2) Le crayon mesure 1 dm et 6 cm, donc 10 cm et 6 cm : 10 + 6 = 16. (3) Le crayon mesure 16 cm, une longueur vraisemblable pour un crayon.
+
+*Indice.* Remplace 1 dm par des centimètres, puis ajoute les 6 cm.
+
+**EX-P009-E-01** — entrainement, numerique, 60 s
+
+Une étagère mesure 9 dm de long. Quelle est sa longueur, en millimètres ?
+
+**Réponse :** 900
+
+*Corrigé.* (1) On ne passe pas directement du décimètre au millimètre : on passe par le centimètre. (2) 1 dm = 10 cm, donc 9 dm = 90 cm, car 9 × 10 = 90. (3) 1 cm = 10 mm, donc 90 cm = 900 mm, car 90 × 10 = 900. (4) L'étagère mesure 900 mm. Écrire 90 mm serait faux : on aurait multiplié par 10 une seule fois, alors qu'on change deux fois d'unité, du décimètre au centimètre, puis du centimètre au millimètre. (5) Vérification : 1 m = 1 000 mm, et l'étagère mesure un peu moins d'un mètre, car 10 dm font 1 m.
+
+*Indice.* Passe par les centimètres : 1 dm = 10 cm et 1 cm = 10 mm.
+
+**EX-P009-E-02** — entrainement, vrai_faux, 60 s
+
+Une barque mesure 6 m. Jade dit : « Elle mesure donc 60 mm : pour convertir, on ajoute un zéro. » Jade a-t-elle raison ?
+
+**Réponse :** False
+
+*Corrigé.* (1) 1 m = 1 000 mm : dans un mètre, il y a mille millimètres. (2) 6 m, c'est donc 6 fois 1 000 mm : 6 × 1 000 = 6 000. La barque mesure 6 000 mm. (3) Ajouter un zéro, c'est multiplier par 10. Cela ne marche que si l'on passe à une unité 10 fois plus petite, comme du centimètre au millimètre. Du mètre au millimètre, l'unité est 1 000 fois plus petite. (4) 60 mm, c'est 6 cm : la longueur d'un petit doigt, pas d'une barque. Jade a tort, c'est faux.
+
+*Indice.* Combien de millimètres y a-t-il dans 1 m ?
+
+**EX-P009-M-01** — maitrise, numerique, 100 s
+
+Un escargot doit parcourir 1 m pour atteindre une salade. Il a déjà parcouru 6 dm et 7 cm. Quelle distance lui reste-t-il, en millimètres ?
+
+**Réponse :** 330
+
+*Corrigé.* (1) Les longueurs ne sont pas dans la même unité : avant de calculer, on les écrit toutes en millimètres. (2) 1 m = 1 000 mm. (3) 1 dm = 100 mm, donc 6 dm = 600 mm, car 6 × 100 = 600. 1 cm = 10 mm, donc 7 cm = 70 mm. (4) L'escargot a déjà parcouru 600 mm + 70 mm = 670 mm. (5) Il reste 1 000 - 670 = 330 : l'escargot doit encore parcourir 330 mm. (6) Vérification : 670 + 330 = 1 000, on retrouve bien 1 m. Calculer avec les nombres écrits, sans convertir, n'aurait pas de sens : 6 et 7 ne sont pas des mètres.
+
+*Indice.* Écris 1 m et la distance déjà parcourue en millimètres, puis cherche ce qui manque.
+
+**EX-P009-M-02** — maitrise, qcm, 90 s
+
+Un tapis de gym mesure 185 cm de long. Quelle écriture donne la même longueur ?
+
+- **a.** 1 m, 8 dm et 5 cm ✅
+- **b.** 18 m et 5 cm
+  <br>*Erreur visée :* L'élève croit que 1 m = 10 cm : il fait 18 paquets de 10 cm et les appelle des mètres. 18 m, c'est la longueur d'un grand bus, pas d'un tapis.
+- **c.** 1 m et 85 dm
+  <br>*Erreur visée :* L'élève prend bien 1 m dans 100 cm, mais il garde le nombre 85 en changeant d'unité : 85 dm, c'est 850 cm, bien plus que les 85 cm qui restent.
+- **d.** 185 dm
+  <br>*Erreur visée :* L'élève change l'unité sans changer le nombre : 185 dm, c'est une longueur 10 fois plus grande que 185 cm, plus de 18 m.
+
+*Corrigé.* (1) On décompose : 185 cm = 100 cm + 80 cm + 5 cm. (2) 1 m = 100 cm, donc 100 cm = 1 m. (3) 1 dm = 10 cm, donc 80 cm = 8 dm, car 8 × 10 = 80. (4) Il reste 5 cm. Donc 185 cm = 1 m, 8 dm et 5 cm.
+
+*Indice.* Décompose 185 cm en centaines, dizaines et unités de centimètres.
+
+---
+
+## `P011` · Masses : la tonne, conversions entre g, kg et t — CE2, difficulté 3
+
+*Connaître les unités g, kg et t et les relations 1 kg = 1 000 g et 1 t = 1 000 kg ; convertir dans les deux sens (3 kg = 3 000 g ; 5 462 g = 5 kg et 462 g ; 5 350 kg = 5 t et 350 kg), choisir l'unité adaptée et comparer des masses données dans des unités différentes. Nombres entiers jusqu'à 10 000, sans virgule.*
+
+> « Connaitre et utiliser les unités gramme, kilogramme et tonne et les symboles associés (g, kg, t). » — *Cycle 2, Cours élémentaire deuxième année, Grandeurs et mesures, Les masses*
+> « Connaitre les relations entre les unités de masse usuelles. » — *Cycle 2, Cours élémentaire deuxième année, Grandeurs et mesures, Les masses*
+> « L'élève sait convertir entre les unités gramme et kilogramme » — *Cycle 2, Cours élémentaire deuxième année, Grandeurs et mesures, Les masses*
+
+**EX-P011-D-01** — decouverte, numerique, 45 s
+
+Un sac de pommes de terre pèse 5 kg. On sait que 1 kg = 1 000 g. Combien pèse le sac, en grammes ?
+
+**Réponse :** 5000
+
+*Corrigé.* (1) 1 kg = 1 000 g : dans un kilogramme, il y a mille grammes. (2) 5 kg, c'est 5 fois 1 000 g : 5 × 1 000 = 5 000. (3) Le sac pèse 5 000 g. 5 kg et 5 000 g sont la même masse : on a changé d'unité, pas de sac.
+
+*Indice.* Combien de grammes y a-t-il dans 1 kg ?
+
+**EX-P011-D-02** — decouverte, qcm, 45 s
+
+Un éléphant pèse 6 t. On sait que 1 t = 1 000 kg. Combien pèse-t-il, en kilogrammes ?
+
+- **a.** 60 kg
+  <br>*Erreur visée :* L'élève ajoute un zéro quel que soit l'écart entre les unités : il multiplie par 10 au lieu de 1 000. 60 kg, c'est la masse d'un adulte, pas d'un éléphant.
+- **b.** 6 000 kg ✅
+- **c.** 600 kg
+  <br>*Erreur visée :* L'élève pense que 1 t = 100 kg, comme 1 m = 100 cm. Or il faut 1 000 kg pour faire une tonne.
+- **d.** 6 000 g
+  <br>*Erreur visée :* L'élève multiplie bien par 1 000, mais il convertit comme si l'éléphant pesait 6 kg : il confond la tonne et le kilogramme. 6 000 g, c'est seulement 6 kg.
+
+*Corrigé.* (1) 1 t = 1 000 kg. (2) 6 t, c'est 6 fois 1 000 kg : 6 × 1 000 = 6 000. (3) L'éléphant pèse 6 000 kg. La tonne sert à exprimer de très grandes masses : un camion, un éléphant.
+
+*Indice.* Combien de kilogrammes y a-t-il dans 1 t ?
+
+**EX-P011-E-01** — entrainement, numerique, 60 s
+
+Une citrouille pèse 7 kg et 60 g. Quelle est sa masse, en grammes ?
+
+**Réponse :** 7060
+
+*Corrigé.* (1) 1 kg = 1 000 g, donc 7 kg = 7 000 g, car 7 × 1 000 = 7 000. (2) La citrouille pèse 7 000 g et 60 g : 7 000 + 60 = 7 060. (3) Elle pèse 7 060 g. Attention au zéro : 60 g, c'est 0 centaine, 6 dizaines et 0 unité de grammes. (4) 760 g serait faux, c'est moins d'un kilogramme. 7 600 g serait faux aussi, c'est 7 kg et 600 g.
+
+*Indice.* Écris d'abord 7 kg en grammes, puis ajoute les 60 g.
+
+**EX-P011-E-02** — entrainement, vrai_faux, 60 s
+
+Tom dit : « Une camionnette de 2 t est plus légère qu'une caravane de 1 500 kg, car 2 est plus petit que 1 500. » Tom a-t-il raison ?
+
+**Réponse :** False
+
+*Corrigé.* (1) On ne peut comparer deux masses que si elles sont écrites dans la même unité. (2) 1 t = 1 000 kg, donc la camionnette pèse 2 t = 2 000 kg, car 2 × 1 000 = 2 000. (3) On compare 2 000 kg et 1 500 kg : 2 000 > 1 500. C'est la camionnette la plus lourde. (4) Tom a comparé les nombres 2 et 1 500 sans regarder les unités. Il a tort, c'est faux.
+
+*Indice.* Écris d'abord la masse de la camionnette en kilogrammes.
+
+**EX-P011-M-01** — maitrise, numerique, 75 s
+
+Une remorque transporte trois charges : 1 t ; 450 kg ; 320 kg. Quelle masse transporte-t-elle en tout, en kilogrammes ?
+
+**Réponse :** 1770
+
+*Corrigé.* (1) Les masses ne sont pas toutes dans la même unité : on écrit 1 t en kilogrammes, 1 t = 1 000 kg. (2) On additionne les trois masses en kilogrammes : 1 000 + 450 + 320 = 1 770. (3) La remorque transporte 1 770 kg. (4) Calculer 1 + 450 + 320 = 771 serait faux : le 1 compte des tonnes, pas des kilogrammes.
+
+*Indice.* Écris toutes les masses en kilogrammes avant d'additionner.
+
+**EX-P011-M-02** — maitrise, qcm, 90 s
+
+Trois paquets pèsent : 1 kg et 90 g ; 950 g ; 1 kg et 9 g. Quel rangement, du plus léger au plus lourd, est juste ?
+
+- **a.** 1 kg et 9 g < 1 kg et 90 g < 950 g
+  <br>*Erreur visée :* L'élève compare seulement les nombres de grammes écrits (9, 90 et 950) et oublie les kilogrammes. Or 950 g, c'est moins de 1 kg, donc moins que les deux autres paquets.
+- **b.** 950 g < 1 kg et 90 g < 1 kg et 9 g
+  <br>*Erreur visée :* L'élève lit 1 kg et 9 g comme 1 900 g : il place le 9 au rang des centaines de grammes. Or 9 g, ce sont 9 unités : 1 kg et 9 g = 1 009 g, moins que 1 kg et 90 g = 1 090 g.
+- **c.** 950 g < 1 kg et 9 g < 1 kg et 90 g ✅
+
+*Corrigé.* (1) Pour comparer, on écrit les trois masses en grammes, avec 1 kg = 1 000 g. (2) 1 kg et 90 g = 1 000 g + 90 g = 1 090 g. 1 kg et 9 g = 1 000 g + 9 g = 1 009 g. (3) On range les nombres de grammes : 950 < 1 009 < 1 090. (4) Du plus léger au plus lourd : 950 g < 1 kg et 9 g < 1 kg et 90 g.
+
+*Indice.* Écris les trois masses en grammes avant de les ranger.
+
+---
+
+## `P012` · Contenances : litre, décilitre, centilitre — CE2, difficulté 3
+
+*Connaître les unités L, dL et cL et les relations 1 L = 10 dL = 100 cL ; convertir dans les deux sens (780 cL = 7 L et 80 cL), comparer des contenances données dans des unités différentes et estimer la contenance d'un récipient courant (verre, bouteille, arrosoir). Nombres entiers, sans virgule.*
+
+> « Connaitre et utiliser les unités litre, décilitre et centilitre et les symboles associés (L, dL et cL). » — *Cycle 2, Cours élémentaire deuxième année, Grandeurs et mesures, Les contenances*
+> « Savoir que 1 L est égal à 10 dL et également à 100 cL. » — *Cycle 2, Cours élémentaire deuxième année, Grandeurs et mesures, Les contenances*
+> « L'élève sait effectuer des conversions en utilisant les unités litre, décilitre et centilitre » — *Cycle 2, Cours élémentaire deuxième année, Grandeurs et mesures, Les contenances*
+> « Comparer les contenances de différents objets. » — *Cycle 2, Cours élémentaire deuxième année, Grandeurs et mesures, Les contenances*
+
+**EX-P012-D-01** — decouverte, numerique, 45 s
+
+Un seau contient 8 L d'eau. On sait que 1 L = 10 dL. Combien de décilitres d'eau contient-il ?
+
+**Réponse :** 80
+
+*Corrigé.* (1) 1 L = 10 dL : dans un litre, il y a 10 décilitres. (2) 8 L, c'est 8 fois 10 dL : 8 × 10 = 80. (3) Le seau contient 80 dL. Le décilitre est plus petit que le litre : il en faut plus pour la même quantité d'eau.
+
+*Indice.* Combien de décilitres y a-t-il dans 1 L ?
+
+**EX-P012-D-02** — decouverte, qcm, 45 s
+
+Une bouteille de jus contient 2 L. On sait que 1 L = 100 cL. Combien de centilitres de jus contient-elle ?
+
+- **a.** 200 cL ✅
+- **b.** 20 cL
+  <br>*Erreur visée :* L'élève ajoute un seul zéro, comme si 1 L valait 10 cL. 20 cL, c'est le contenu d'un verre, pas d'une grande bouteille.
+- **c.** 2 000 cL
+  <br>*Erreur visée :* L'élève utilise 1 000, comme pour 1 kg = 1 000 g. Mais pour les contenances, 1 L = 100 cL.
+
+*Corrigé.* (1) 1 L = 100 cL. (2) 2 L, c'est 2 fois 100 cL : 2 × 100 = 200. (3) La bouteille contient 200 cL. Un verre contient environ 20 cL : la bouteille remplit environ 10 verres, car 10 × 20 = 200.
+
+*Indice.* Combien de centilitres y a-t-il dans 1 L ?
+
+**EX-P012-E-01** — entrainement, numerique, 60 s
+
+Un bol de soupe contient 30 cL. Quelle est sa contenance, en décilitres ?
+
+**Réponse :** 3
+
+*Corrigé.* (1) On sait que 1 L = 10 dL et que 1 L = 100 cL : 10 dL et 100 cL, c'est la même quantité. (2) Partager 1 L en 10 décilitres, c'est partager 100 cL en 10 parts égales de 10 cL : 1 dL = 10 cL, car 10 × 10 = 100. (3) 30 cL, ce sont 3 fois 10 cL, car 3 × 10 = 30. Donc 30 cL = 3 dL. (4) Le bol contient 3 dL. Le nombre est plus petit qu'en centilitres, car le décilitre est une unité plus grande.
+
+*Indice.* Combien de centilitres y a-t-il dans 1 dL ?
+
+**EX-P012-E-02** — entrainement, qcm, 45 s
+
+Lina remplit d'eau un arrosoir de jardin. Quelle est sa contenance la plus vraisemblable ?
+
+- **a.** 10 cL
+  <br>*Erreur visée :* L'élève choisit une unité bien trop petite : 10 cL, c'est la moitié d'un verre.
+- **b.** 10 kg
+  <br>*Erreur visée :* L'élève confond masse et contenance : le kilogramme mesure ce que pèse un objet, pas ce qu'un récipient peut contenir.
+- **c.** 10 dL
+  <br>*Erreur visée :* L'élève confond le décilitre et le litre : 10 dL, c'est seulement 1 L, le contenu d'une bouteille d'eau, bien trop peu pour un arrosoir.
+- **d.** 10 L ✅
+
+*Corrigé.* (1) Un verre contient environ 20 cL, et une bouteille d'eau contient souvent 1 L, soit 100 cL. (2) Un arrosoir de jardin contient bien plus qu'une bouteille : on exprime sa contenance en litres. (3) Sa contenance vraisemblable est 10 L : de quoi remplir environ 10 bouteilles d'un litre. (4) Le kilogramme ne convient pas : c'est une unité de masse, pas de contenance.
+
+*Indice.* Combien de bouteilles d'un litre faudrait-il pour remplir un arrosoir ?
+
+**EX-P012-M-01** — maitrise, numerique, 90 s
+
+Une bouteille contient 1 L de lait. Pour une recette, Malo en verse 3 dL et 5 cL. Quelle quantité de lait reste-t-il dans la bouteille, en centilitres ?
+
+**Réponse :** 65
+
+*Corrigé.* (1) Les quantités ne sont pas dans la même unité : on les écrit toutes en centilitres. (2) 1 L = 100 cL. (3) 1 dL = 10 cL, donc 3 dL = 30 cL, car 3 × 10 = 30. Malo verse 30 cL + 5 cL = 35 cL. (4) Il reste 100 - 35 = 65 : il reste 65 cL de lait dans la bouteille. (5) Vérification : 35 + 65 = 100, on retrouve bien 1 L. Calculer 100 - 3 - 5 = 92 serait faux : les 3 sont des décilitres, pas des centilitres.
+
+*Indice.* Écris 1 L et la quantité versée en centilitres, puis cherche ce qui reste.
+
+**EX-P012-M-02** — maitrise, vrai_faux, 60 s
+
+Une bassine contient 605 cL d'eau. Sami dit : « C'est 6 L et 5 cL. » Sami a-t-il raison ?
+
+**Réponse :** True
+
+*Corrigé.* (1) On décompose : 605 cL = 600 cL + 5 cL. (2) 1 L = 100 cL, donc 600 cL = 6 L, car 6 × 100 = 600. (3) Donc 605 cL = 6 L et 5 cL : Sami a raison, c'est vrai. (4) Attention : 6 L et 50 cL, ce serait 650 cL. Le 0 de 605 indique qu'il n'y a aucune dizaine de centilitres.
+
+*Indice.* Décompose 605 cL en centaines et en unités de centilitres.
+
+---
+
+## `P014` · Problèmes de durées en heures et minutes — CE2, difficulté 3
+
+*Calculer la durée entre deux horaires d'une même journée donnés à la minute (de 15 h 40 à 16 h 05), retrouver un horaire de départ ou d'arrivée connaissant une durée, convertir des heures et minutes en minutes (2 h 20 min = 140 min), et résoudre des problèmes en une ou deux étapes, éventuellement en s'aidant d'un axe du temps.*
+
+> « Résoudre des problèmes à une ou deux étapes impliquant des durées. » — *Cycle 2, Cours élémentaire deuxième année, Grandeurs et mesures, Le repérage dans le temps et les durées*
+> « L'élève sait déterminer le nombre de minutes qu'il y a dans deux heures et vingt minutes. » — *Cycle 2, Cours élémentaire deuxième année, Grandeurs et mesures, Le repérage dans le temps et les durées*
+> « Au cycle 2, en mathématiques, l'enseignement relatif au repérage dans le temps et aux durées s'applique aux temps courts, exprimés en heure et en minute. » — *Cycle 2, Cours élémentaire deuxième année, Grandeurs et mesures, Le repérage dans le temps et les durées*
+
+**EX-P014-D-01** — decouverte, numerique, 45 s
+
+Un spectacle de marionnettes dure 1 h 25 min. Une heure, c'est 60 minutes. Combien de minutes dure le spectacle ?
+
+**Réponse :** 85
+
+*Corrigé.* (1) 1 h 25 min, c'est 1 heure et 25 minutes de plus. (2) 1 heure, c'est 60 minutes. (3) On ajoute les 25 minutes : 60 + 25 = 85. Le spectacle dure 85 minutes. (4) Erreur à éviter : coller les chiffres et répondre 125 minutes, comme si une heure valait 100 minutes.
+
+*Indice.* Remplace 1 h par le nombre de minutes qu'elle contient.
+
+**EX-P014-D-02** — decouverte, qcm, 60 s
+
+Le bus part à 8 h 50 et arrive à l'école à 9 h 20. Combien de temps dure le trajet ?
+
+- **a.** 70 min
+  <br>*Erreur visée :* L'élève calcule 920 − 850 = 70, comme si une heure valait 100 minutes. Or une heure n'a que 60 minutes : de 8 h 50 à 9 h, il n'y a que 10 minutes, pas 50.
+- **b.** 30 min ✅
+- **c.** 1 h 30 min
+  <br>*Erreur visée :* L'élève soustrait les heures (9 − 8 = 1), puis les minutes en enlevant la plus petite à la plus grande (50 − 20 = 30). Or à 9 h 20, il ne s'est même pas écoulé une heure depuis 8 h 50 : une heure plus tard, il serait 9 h 50.
+
+*Corrigé.* (1) On avance de 8 h 50 jusqu'à l'heure ronde, 9 h : il manque 10 minutes, car 50 + 10 = 60. (2) De 9 h à 9 h 20 : 20 minutes. (3) En tout : 10 + 20 = 30. Le trajet dure 30 minutes, une demi-heure.
+
+*Indice.* Passe par 9 h : combien de minutes de 8 h 50 à 9 h, puis de 9 h à 9 h 20 ?
+
+**EX-P014-E-01** — entrainement, texte, 75 s
+
+Le train part à 13 h 45. Le trajet dure 50 minutes. À quelle heure arrive-t-il ? Réponds en heures et minutes.
+
+**Réponse :** 14 h 35
+
+*Corrigé.* (1) On avance d'abord jusqu'à l'heure ronde : de 13 h 45 à 14 h, il y a 15 minutes, car 45 + 15 = 60. (2) Sur les 50 minutes du trajet, il en reste 50 - 15 = 35 à ajouter après 14 h. (3) 35 minutes après 14 h, il est 14 h 35. Le train arrive à 14 h 35. (4) Erreur à éviter : calculer 45 + 50 = 95 et écrire 13 h 95. Un horaire n'a jamais plus de 59 minutes : 60 minutes font une heure de plus.
+
+*Indice.* Combien de minutes faut-il pour aller de 13 h 45 à 14 h ?
+
+**EX-P014-E-02** — entrainement, vrai_faux, 60 s
+
+Inès a fini un puzzle en 2 h 10 min. Hugo a mis 150 minutes. Vrai ou faux : Hugo a mis plus de temps qu'Inès ?
+
+**Réponse :** True
+
+*Corrigé.* (1) Pour comparer, on écrit le temps d'Inès en minutes, comme celui d'Hugo. (2) 1 h, c'est 60 minutes. 2 h, c'est 60 + 60 = 120 minutes. Donc 2 h 10 min, c'est 120 + 10 = 130 minutes. (3) Hugo a mis 150 minutes : c'est plus que 130 minutes. C'est vrai, Hugo a mis 20 minutes de plus qu'Inès. (4) Erreur à éviter : compter 100 minutes dans une heure. On trouverait 210 minutes pour Inès et on répondrait faux.
+
+*Indice.* Combien de minutes y a-t-il dans 2 h ?
+
+**EX-P014-M-01** — maitrise, texte, 120 s
+
+Emma part à 16 h 50. Elle marche 25 minutes jusqu'à la gare, puis son train roule 1 h 10 min. À quelle heure arrive-t-elle, en heures et minutes ?
+
+**Réponse :** 18 h 25
+
+*Corrigé.* (1) Première étape, l'arrivée à la gare. De 16 h 50 à 17 h, il y a 10 minutes. Il reste 25 - 10 = 15 minutes à marcher après 17 h : Emma est à la gare à 17 h 15. (2) Deuxième étape, le train. 1 h après 17 h 15, il est 18 h 15. 10 minutes plus tard, il est 18 h 25. (3) Emma arrive à 18 h 25. (4) Erreur à éviter : calculer 50 + 25 = 75 et écrire 16 h 75. Dès qu'on atteint 60 minutes, on passe à l'heure suivante.
+
+*Indice.* Commence par trouver l'heure à laquelle Emma arrive à la gare.
+
+**EX-P014-M-02** — maitrise, qcm, 90 s
+
+Nora doit être au stade à 14 h 10. Le trajet dure 35 minutes. À quelle heure doit-elle partir ?
+
+- **a.** 13 h 75
+  <br>*Erreur visée :* L'élève casse une heure en 100 minutes : 14 h 10 devient 13 h 110, et 110 − 35 = 75. Or une heure n'a que 60 minutes, et un horaire n'a jamais 75 minutes.
+- **b.** 14 h 45
+  <br>*Erreur visée :* L'élève ajoute les 35 minutes au lieu de les enlever : 14 h 10 + 35 min = 14 h 45. Or Nora part avant d'arriver : il faut remonter le temps.
+- **c.** 14 h 25
+  <br>*Erreur visée :* L'élève enlève le petit nombre au grand dans les minutes (35 − 10 = 25) et garde 14 h. Or 14 h 25 est après 14 h 10 : Nora arriverait en retard.
+- **d.** 13 h 35 ✅
+
+*Corrigé.* (1) On remonte le temps à partir de 14 h 10 : on enlève 35 minutes. (2) On recule d'abord de 10 minutes jusqu'à l'heure ronde : 14 h. Il reste 35 - 10 = 25 minutes à enlever. (3) 25 minutes avant 14 h : une heure a 60 minutes et 60 - 25 = 35, donc il est 13 h 35. (4) Nora doit partir à 13 h 35. On vérifie : de 13 h 35 à 14 h, 25 minutes ; de 14 h à 14 h 10, 10 minutes ; 25 + 10 = 35.
+
+*Indice.* Recule d'abord jusqu'à 14 h, puis continue à reculer.
 
 ---
 
@@ -4058,6 +4863,174 @@ Un club de foot paie 492 € pour 36 maillots identiques. Combien paierait-il po
 
 ---
 
+## `P015` · Unités de mesure du milli au kilo : longueur, masse, contenance — CM1, difficulté 3
+
+*Connaître les unités de longueur du mm au km (dont dam et hm), de masse du mg à la tonne et de contenance du mL au hL, comprendre que les préfixes jouent le même rôle pour les trois grandeurs, et convertir des mesures entières en s'appuyant sur les relations entre unités (1 hL = 100 L ; 1 g = 1 000 mg). Un tableau peut présenter les unités, mais les conversions ne se font pas avec un tableau. Nombres entiers.*
+
+> « Connaître et utiliser les unités de longueur du millimètre au kilomètre et les symboles associés » — *Cycle 3, Cours moyen première année, Grandeurs et mesures, Les longueurs*
+> « Connaître et utiliser les unités de masse du milligramme au kilogramme et la tonne, et les symboles associés » — *Cycle 3, Cours moyen première année, Grandeurs et mesures, Les masses*
+> « Connaître et utiliser les unités de contenance du millilitre à l'hectolitre et les symboles associés » — *Cycle 3, Cours moyen première année, Grandeurs et mesures, Les contenances*
+> « au cours moyen, les élèves n'utilisent pas de tableaux pour effectuer des conversions ; ils s'appuient sur les relations connues entre les unités en jeu » — *Cycle 3, Cours moyen première année, Grandeurs et mesures*
+
+**EX-P015-D-01** — decouverte, numerique, 45 s
+
+Une cuve récupère l'eau de pluie. Elle contient 6 hL. On sait que 1 hL = 100 L. Combien de litres d'eau contient la cuve ?
+
+**Réponse :** 600
+
+*Corrigé.* (1) Le préfixe hecto- veut dire cent : 1 hL = 100 L, comme 1 hm = 100 m. (2) 6 hL, c'est 6 fois 100 L : 6 × 100 = 600. (3) La cuve contient 600 L.
+
+*Indice.* Que veut dire le préfixe hecto- ?
+
+**EX-P015-D-02** — decouverte, qcm, 45 s
+
+Une pièce de 10 centimes pèse 4 g. On sait que 1 g = 1 000 mg. Combien pèse-t-elle, en milligrammes ?
+
+- **a.** 400 mg
+  <br>*Erreur visée :* L'élève pense que 1 g = 100 mg, comme 1 m = 100 cm. Or milli- veut dire millième : il faut 1 000 mg pour faire 1 g.
+- **b.** 4 000 kg
+  <br>*Erreur visée :* L'élève prend bien le nombre 1 000, mais il se trompe de préfixe : kilo- désigne une unité 1 000 fois plus grande que le gramme, milli- une unité 1 000 fois plus petite. 4 000 kg, c'est 4 t, la masse d'un camion.
+- **c.** 40 mg
+  <br>*Erreur visée :* L'élève ajoute un zéro quel que soit l'écart entre les unités : il multiplie par 10 au lieu de 1 000.
+- **d.** 4 000 mg ✅
+
+*Corrigé.* (1) Le préfixe milli- veut dire millième : il faut 1 000 mg pour faire 1 g, comme 1 000 mm pour faire 1 m. (2) 4 g, c'est 4 fois 1 000 mg : 4 × 1 000 = 4 000. (3) La pièce pèse 4 000 mg. Le milligramme est une toute petite unité : il en faut beaucoup.
+
+*Indice.* Que veut dire le préfixe milli- ? Pense à 1 m = 1 000 mm.
+
+**EX-P015-E-01** — entrainement, numerique, 60 s
+
+Une plage mesure 7 hm de long. Quelle est sa longueur, en décamètres ?
+
+**Réponse :** 70
+
+*Corrigé.* (1) Hecto- veut dire cent et déca- veut dire dix : 1 hm = 100 m et 1 dam = 10 m. (2) Dans 100 m, il y a 10 fois 10 m, car 10 × 10 = 100 : 1 hm = 10 dam. Deux unités qui se suivent sont toujours dans un rapport de 10. (3) 7 hm, c'est 7 fois 10 dam : 7 × 10 = 70. (4) La plage mesure 70 dam, c'est-à-dire 700 m.
+
+*Indice.* Écris 1 hm et 1 dam en mètres. Combien de décamètres faut-il pour faire 1 hm ?
+
+**EX-P015-E-02** — entrainement, vrai_faux, 60 s
+
+Lucas dit : « Milli- veut dire la même chose dans mm et dans mL. Comme 1 m = 1 000 mm, on a 1 L = 1 000 mL. » Lucas a-t-il raison ?
+
+**Réponse :** True
+
+*Corrigé.* (1) Un préfixe garde le même sens, quelle que soit la grandeur : milli- veut dire millième. (2) 1 mm est un millième de mètre : 1 m = 1 000 mm. 1 mg est un millième de gramme : 1 g = 1 000 mg. (3) De même, 1 mL est un millième de litre : 1 L = 1 000 mL. Lucas a raison, c'est vrai. (4) Cela vaut pour les autres préfixes : kilo- veut dire mille (1 km = 1 000 m, 1 kg = 1 000 g), centi- veut dire centième (1 m = 100 cm, 1 L = 100 cL).
+
+*Indice.* Compare 1 mm et 1 m, puis 1 mg et 1 g. Que veut dire milli- ?
+
+**EX-P015-M-01** — maitrise, numerique, 90 s
+
+Pour aller à l'école, Inès fait 1 km dans la rue, 6 hm dans le parc, puis 7 dam jusqu'au portail. Quelle distance parcourt-elle, en mètres ?
+
+**Réponse :** 1670
+
+*Corrigé.* (1) Les trois longueurs ne sont pas dans la même unité : on les écrit toutes en mètres. (2) 1 km = 1 000 m. (3) 1 hm = 100 m, donc 6 hm = 600 m, car 6 × 100 = 600. (4) 1 dam = 10 m, donc 7 dam = 70 m, car 7 × 10 = 70. (5) 1 000 + 600 + 70 = 1 670 : Inès parcourt 1 670 m. (6) Calculer 1 + 6 + 7 = 14 ne veut rien dire : ce sont des kilomètres, des hectomètres et des décamètres.
+
+*Indice.* Que valent 1 km, 1 hm et 1 dam en mètres ?
+
+**EX-P015-M-02** — maitrise, qcm, 90 s
+
+Pour un pique-nique, on emporte une gourde de 60 cL, une carafe de 7 dL et une bouteille de 650 mL. Quel récipient contient le plus de liquide ?
+
+- **a.** La bouteille de 650 mL
+  <br>*Erreur visée :* L'élève compare les nombres sans regarder les unités : 650 est le plus grand nombre écrit. Or 7 dL = 700 mL, plus que 650 mL.
+- **b.** La gourde de 60 cL
+  <br>*Erreur visée :* L'élève pense que 1 cL = 100 mL, comme 1 L = 100 cL : il trouve 6 000 mL. Or 1 cL = 10 mL, donc 60 cL = 600 mL.
+- **c.** La carafe de 7 dL ✅
+
+*Corrigé.* (1) Pour comparer, on écrit les trois contenances dans la même unité, le millilitre. (2) 1 L = 1 000 mL et 1 L = 100 cL : 100 cL font 1 000 mL, donc 1 cL = 10 mL, car 100 × 10 = 1 000. (3) 1 L = 10 dL : 10 dL font 1 000 mL, donc 1 dL = 100 mL, car 10 × 100 = 1 000. (4) 60 cL = 600 mL, car 60 × 10 = 600. 7 dL = 700 mL, car 7 × 100 = 700. (5) On range : 600 mL < 650 mL < 700 mL. C'est la carafe de 7 dL qui contient le plus.
+
+*Indice.* Écris les trois contenances en millilitres avant de comparer.
+
+---
+
+## `P016` · Problèmes de périmètre : retrouver un côté — CM1, difficulté 3
+
+*Résoudre des problèmes reliant les côtés d'un polygone et son périmètre : utiliser que le périmètre d'un carré est le quadruple de son côté, retrouver le côté d'un carré ou la largeur d'un rectangle à partir du périmètre, comparer les périmètres de deux figures décrites. Règles établies par l'élève, sans formule à mémoriser. Nombres entiers.*
+
+> « Résoudre des problèmes mettant en jeu les longueurs des côtés d'un polygone et son périmètre » — *Cycle 3, Cours moyen première année, Grandeurs et mesures, Les longueurs*
+> « le fait que le périmètre d'un carré est le quadruple de la longueur de l'un de ses côtés. » — *Cycle 3, Cours moyen première année, Grandeurs et mesures*
+
+**EX-P016-D-01** — decouverte, numerique, 45 s
+
+Un potager a la forme d'un carré de 8 m de côté. Son contour est formé de 4 côtés de même longueur. Quel est le périmètre du potager ?
+
+**Réponse :** 32
+
+*Corrigé.* (1) Le contour du carré passe par ses 4 côtés, qui mesurent tous 8 m : 8 + 8 + 8 + 8. (2) Ajouter 4 côtés de même longueur, c'est prendre le quadruple de cette longueur : 4 × 8 = 32. (3) Le périmètre du potager est 32 m. Règle à retenir : le périmètre d'un carré est le quadruple de son côté.
+
+*Indice.* Combien de côtés de 8 m faut-il ajouter pour faire le tour ?
+
+**EX-P016-D-02** — decouverte, qcm, 60 s
+
+Un bassin a la forme d'un carré. Son périmètre est 28 m. Quelle est la longueur d'un de ses côtés ?
+
+- **a.** 14 m
+  <br>*Erreur visée :* L'élève partage le périmètre en 2, comme si le carré n'avait que deux côtés.
+- **b.** 112 m
+  <br>*Erreur visée :* L'élève multiplie par 4 au lieu de partager : il calcule le quadruple du périmètre, alors que c'est le périmètre qui est le quadruple du côté.
+- **c.** 7 m ✅
+- **d.** 24 m
+  <br>*Erreur visée :* L'élève retire 4 (28 − 4 = 24) au lieu de partager en 4 : il confond « 4 côtés » avec « 4 mètres de moins ».
+
+*Corrigé.* (1) Le périmètre d'un carré est le quadruple de son côté : les 4 côtés, de même longueur, font 28 m en tout. (2) On cherche donc le nombre qui, multiplié par 4, donne 28. On partage 28 en 4 parts égales : 28 ÷ 4 = 7, car 4 × 7 = 28. (3) Vérification : 7 + 7 + 7 + 7 = 28. Le côté du bassin mesure 7 m.
+
+*Indice.* Le périmètre est le quadruple du côté. Quel nombre, multiplié par 4, donne 28 ?
+
+**EX-P016-E-01** — entrainement, numerique, 120 s
+
+L'enclos des chèvres a la forme d'un rectangle. Son périmètre est 50 m et sa longueur 15 m. Quelle est sa largeur ?
+
+**Réponse :** 10
+
+*Corrigé.* (1) Le contour du rectangle passe par 2 longueurs et 2 largeurs, et il mesure 50 m en tout. (2) Les 2 longueurs font 15 + 15 = 30, soit 30 m. (3) Les 2 largeurs mesurent ensemble ce qui reste quand on retire les 2 longueurs du contour : 50 − 30 = 20, soit 20 m. (4) Les 2 largeurs sont égales : 20 ÷ 2 = 10. La largeur est 10 m. Vérification : 15 + 10 + 15 + 10 = 50.
+
+*Indice.* Commence par la longueur des deux grands côtés ensemble.
+
+**EX-P016-E-02** — entrainement, vrai_faux, 75 s
+
+Un carré a des côtés de 5 cm. Un rectangle mesure 6 cm de long et 4 cm de large. Sami affirme : « Ces deux figures ont le même périmètre. »
+
+**Réponse :** True
+
+*Corrigé.* (1) Carré : le périmètre est le quadruple du côté, 4 × 5 = 20, soit 20 cm. (2) Rectangle : le contour passe par 2 longueurs et 2 largeurs, 6 + 4 + 6 + 4 = 20, soit 20 cm. (3) Les deux périmètres valent 20 cm : Sami a raison. Les deux figures n'ont pas la même forme, mais leurs contours ont la même longueur.
+
+*Indice.* Calcule le périmètre de chaque figure, puis compare.
+
+**EX-P016-M-01** — maitrise, qcm, 150 s
+
+Un carré a des côtés de 12 cm. Un rectangle de 16 cm de long a le même périmètre que ce carré. Quelle est la largeur du rectangle ?
+
+- **a.** 24 cm
+  <br>*Erreur visée :* L'élève partage le périmètre en 2 (48 ÷ 2 = 24) : il trouve une longueur plus une largeur, et oublie d'en retirer la longueur de 16 cm.
+- **b.** 16 cm
+  <br>*Erreur visée :* L'élève retire bien les 2 longueurs (48 − 32 = 16), mais oublie de partager ce reste entre les 2 largeurs.
+- **c.** 32 cm
+  <br>*Erreur visée :* L'élève ne retire qu'une longueur (48 − 16 = 32) : il oublie qu'un rectangle a 2 longueurs et 2 largeurs.
+- **d.** 8 cm ✅
+
+*Corrigé.* (1) Périmètre du carré : le quadruple de 12 cm. 12 + 12 = 24, puis 24 + 24 = 48 (le double du double), donc 4 × 12 = 48. Le périmètre est 48 cm. (2) Le contour du rectangle mesure donc 48 cm. Ses 2 longueurs font 16 + 16 = 32, soit 32 cm. (3) Les 2 largeurs mesurent ensemble ce qui reste quand on retire les 2 longueurs : 48 − 32 = 16, soit 16 cm. (4) Une largeur : 16 ÷ 2 = 8. La largeur du rectangle est 8 cm. Vérification : 16 + 8 + 16 + 8 = 48.
+
+*Indice.* Calcule d'abord le périmètre du carré : c'est la longueur du contour du rectangle.
+
+**EX-P016-M-02** — maitrise, qcm, 120 s
+
+Jade a deux ficelles de 24 cm. Avec l'une, elle forme un carré. Avec l'autre, elle forme un triangle dont les 3 côtés ont la même longueur. Quelle figure a les côtés les plus longs ?
+
+- **a.** Le carré, avec des côtés de 8 cm
+  <br>*Erreur visée :* L'élève inverse les partages : il partage les 24 cm en 3 pour le carré et en 4 pour le triangle.
+- **b.** Le triangle, avec des côtés de 8 cm ✅
+- **c.** Aucune : les deux ficelles mesurent 24 cm, donc les côtés ont la même longueur
+  <br>*Erreur visée :* L'élève confond le périmètre et la longueur d'un côté : les deux figures ont le même contour, mais il est partagé en un nombre différent de côtés.
+- **d.** Le carré, avec des côtés de 6 cm
+  <br>*Erreur visée :* L'élève calcule bien le côté du carré (24 ÷ 4 = 6), mais croit que la figure qui a le plus de côtés a aussi les côtés les plus longs, sans calculer le côté du triangle.
+
+*Corrigé.* (1) Toute la ficelle forme le contour : chaque figure a un périmètre de 24 cm. (2) Carré : 4 côtés égaux. Le périmètre est le quadruple du côté, donc le côté mesure 24 ÷ 4 = 6, soit 6 cm. (3) Triangle : 3 côtés égaux. Le périmètre est le triple du côté, donc le côté mesure 24 ÷ 3 = 8, soit 8 cm. (4) 8 cm, c'est plus long que 6 cm : c'est le triangle qui a les côtés les plus longs. La bonne réponse est b. Une même longueur de ficelle partagée en moins de côtés donne des côtés plus longs.
+
+*Indice.* Partage les 24 cm entre les côtés de chaque figure.
+
+---
+
 ## `D014` · Convertir des mesures écrites avec une virgule — CM1, difficulté 4
 
 *Convertir une longueur, une masse ou une contenance écrite avec une virgule dans une unité plus petite, en s'appuyant sur les relations entre unités et sans tableau de conversion (3,5 m = 3 m + 50 cm = 350 cm).*
@@ -4298,6 +5271,80 @@ Nour divise un nombre par 4 et trouve 38. Que trouverait-elle en divisant ce nom
 *Corrigé.* (1) Diviser par 8, c'est prendre trois moitiés ; diviser par 4, c'est en prendre deux. (2) En trouvant 38, Nour a déjà pris les deux premières moitiés. Il manque une seule moitié. (3) La moitié de 38 : la moitié de 30 est 15, la moitié de 8 est 4. Donc 19. (4) En divisant par 8, Nour trouverait 19. C'est logique : on partage en deux fois plus de parts, donc chaque part est deux fois plus petite.
 
 *Indice.* Diviser par 8, c'est diviser par 4 et faire une étape de plus.
+
+---
+
+## `P020` · Durées en heures, minutes et secondes — CM2, difficulté 3
+
+*Utiliser la seconde et la relation 1 min = 60 s, convertir entre heures, minutes et secondes (3 min 20 s = 200 s), calculer des durées et des horaires exprimés en heures, minutes et secondes, et résoudre des problèmes en une ou plusieurs étapes (courses, horaires de transport, durée d'un film). Nombres entiers.*
+
+> « Au CM2, la compréhension du système sexagésimal (base soixante) utilisé pour les unités de durée s'étend avec l'introduction des secondes. » — *Cycle 3, Cours moyen deuxième année, Grandeurs et mesures*
+> « Comparer et mesurer des durées écoulées entre deux instants affichés sur une horloge (instants et durées sont exprimés en heure, minute et seconde) » — *Cycle 3, Cours moyen deuxième année, Grandeurs et mesures, Le repérage dans le temps et les durées*
+> « Résoudre des problèmes à une ou plusieurs étapes impliquant des durées » — *Cycle 3, Cours moyen deuxième année, Grandeurs et mesures, Le repérage dans le temps et les durées*
+
+**EX-P020-D-01** — decouverte, numerique, 45 s
+
+Une chanson dure 4 min 15 s. Une minute, c'est 60 secondes. Combien de secondes dure la chanson ?
+
+**Réponse :** 255
+
+*Corrigé.* (1) 4 min, ce sont 4 paquets de 60 secondes : 4 × 60 = 240 secondes. (2) On ajoute les 15 secondes : 240 + 15 = 255. (3) La chanson dure 255 secondes. (4) Erreur à éviter : répondre 415 secondes en collant les chiffres, comme si une minute valait 100 secondes.
+
+*Indice.* Combien de secondes y a-t-il dans 4 minutes ?
+
+**EX-P020-D-02** — decouverte, qcm, 60 s
+
+Trois enfants courent le même tour de piste. Léa met 95 s, Max 1 min 40 s et Zoé 1 min 25 s. Qui est le plus rapide ?
+
+- **a.** Léa
+  <br>*Erreur visée :* L'élève lit 1 min 40 s comme 140 s et 1 min 25 s comme 125 s, comme si une minute valait 100 secondes : 95 s lui semble alors le temps le plus court.
+- **b.** Max
+  <br>*Erreur visée :* L'élève pense que le plus grand temps est le meilleur. Or Max met 100 secondes, le temps le plus long des trois : c'est le plus lent.
+- **c.** Zoé ✅
+
+*Corrigé.* (1) Pour comparer, on écrit les trois temps en secondes. Une minute, c'est 60 secondes. (2) Max : 60 + 40 = 100 secondes. Zoé : 60 + 25 = 85 secondes. Léa : 95 secondes. (3) Le plus rapide est celui qui met le moins de temps : 85 secondes est le plus petit des trois temps. (4) C'est Zoé la plus rapide, avec 85 secondes.
+
+*Indice.* Écris chaque temps en secondes avant de comparer.
+
+**EX-P020-E-01** — entrainement, numerique, 90 s
+
+Lina lance son chronomètre à 9 h 12 min 50 s et l'arrête à 9 h 15 min 20 s. Combien de secondes se sont écoulées ?
+
+**Réponse :** 150
+
+*Corrigé.* (1) On avance par étapes, en passant par les minutes rondes. De 9 h 12 min 50 s à 9 h 13 min : 10 secondes, car 50 + 10 = 60. (2) De 9 h 13 min à 9 h 15 min : 2 minutes, soit 2 × 60 = 120 secondes. (3) De 9 h 15 min à 9 h 15 min 20 s : 20 secondes. (4) En tout : 10 + 120 + 20 = 150. Il s'est écoulé 150 secondes, c'est-à-dire 2 min 30 s. (5) Erreur à éviter : calculer 1520 − 1250 = 270, comme si une minute valait 100 secondes.
+
+*Indice.* Combien de secondes faut-il pour aller de 9 h 12 min 50 s à 9 h 13 min ?
+
+**EX-P020-E-02** — entrainement, texte, 75 s
+
+Une vidéo dure 470 secondes. Écris cette durée en minutes et secondes.
+
+**Réponse :** 7 min 50 s
+
+*Corrigé.* (1) Une minute, c'est 60 secondes. On cherche combien de paquets de 60 secondes tiennent dans 470 secondes. (2) Avec la table de 6 : 7 × 60 = 420 et 8 × 60 = 480. 480 dépasse 470, donc on prend 7 paquets : 7 minutes. (3) Il reste 50 secondes, car 420 + 50 = 470. (4) La vidéo dure 7 min 50 s. (5) Erreur à éviter : couper 470 en 4 min 70 s, comme si une minute valait 100 secondes. Il n'y a jamais 60 secondes ou plus dans la partie « secondes » d'une durée.
+
+*Indice.* Combien de minutes entières, de 60 secondes chacune, tiennent dans 470 secondes ?
+
+**EX-P020-M-01** — maitrise, texte, 150 s
+
+Quatre coureurs se relaient. Leurs temps sont 2 min 35 s ; 2 min 48 s ; 2 min 52 s ; 2 min 40 s. Quel est le temps de l'équipe, en minutes et secondes ?
+
+**Réponse :** 10 min 55 s
+
+*Corrigé.* (1) On ajoute d'abord les minutes : 4 coureurs de 2 minutes chacun, 4 × 2 = 8 minutes. (2) Puis les secondes : 35 + 48 + 52 + 40 = 175 secondes. (3) 175 secondes, c'est plus d'une minute. 2 × 60 = 120 et 3 × 60 = 180 : 180 dépasse 175, donc 175 s contient 2 minutes, et il reste 55 secondes, car 120 + 55 = 175. Donc 175 s = 2 min 55 s. (4) En tout : 8 min + 2 min 55 s = 10 min 55 s. (5) Erreur à éviter : laisser 8 min 175 s, ou écrire 9 min 75 s en comptant 100 secondes dans une minute.
+
+*Indice.* Additionne les minutes d'un côté, les secondes de l'autre, puis transforme les secondes en trop.
+
+**EX-P020-M-02** — maitrise, vrai_faux, 120 s
+
+Un four s'arrête à 12 h 03 min 10 s, après avoir chauffé 5 min 25 s. Paul affirme qu'il a démarré à 11 h 57 min 45 s. Paul a-t-il raison ?
+
+**Réponse :** True
+
+*Corrigé.* (1) On remonte le temps de 5 min 25 s à partir de 12 h 03 min 10 s. (2) On enlève d'abord 10 secondes : 12 h 03 min. Il reste 5 min 15 s à enlever. (3) On enlève 3 minutes pour revenir à midi : 12 h. Il reste 2 min 15 s à enlever. (4) 2 minutes avant midi, il est 11 h 58 min. 15 secondes avant, il est 11 h 57 min 45 s, car une minute a 60 secondes et 45 + 15 = 60. (5) Paul a raison. On vérifie dans l'autre sens : de 11 h 57 min 45 s à 11 h 58 min, 15 s ; puis 5 min jusqu'à 12 h 03 min ; puis 10 s. En tout, 5 min 25 s.
+
+*Indice.* Recule d'abord jusqu'à 12 h 03 min, puis jusqu'à midi.
 
 ---
 
@@ -4953,6 +6000,160 @@ Un fleuriste vend 12 roses pour 18 €. Combien coûtent 28 roses ?
 *Corrigé.* (1) On ne passe pas de 12 à 28 roses en multipliant par un nombre entier : on passe par 4 roses. (2) 4 roses, c'est 3 fois moins que 12 roses : elles coûtent 3 fois moins, 18 ÷ 3 = 6 €. (3) 28 roses, c'est 7 fois plus que 4 roses : elles coûtent 7 fois plus, 6 × 7 = 42 €. (4) 28 roses coûtent 42 €. Autre chemin : 28 roses, c'est 12 roses, 12 roses et 4 roses, donc 18 + 18 + 6 = 42 €.
 
 *Indice.* Cherche d'abord le prix de 4 roses.
+
+---
+
+## `P018` · Aire d'un carré ou d'un rectangle (cours moyen) — CM2, difficulté 4
+
+*Déterminer l'aire d'un rectangle ou d'un carré aux côtés entiers en comptant les carrés unités qui le recouvrent par rangées (5 rangées de 8 carrés de 1 cm de côté, soit 40 cm²), sans formule à mémoriser. Les dimensions sont données par l'énoncé.*
+
+> « Déterminer l'aire d'un carré ou d'un rectangle » — *Cycle 3, Cours moyen deuxième année, Grandeurs et mesures, Les aires*
+> « Déterminer des aires » — *Cycle 3, Cours moyen deuxième année, Grandeurs et mesures, Les aires*
+
+**EX-P018-D-01** — decouverte, numerique, 60 s
+
+Une étiquette rectangulaire de 7 cm sur 4 cm est recouverte de carrés de 1 cm de côté : 4 rangées de 7 carrés. Quelle est son aire, en cm² ?
+
+**Réponse :** 28
+
+*Corrigé.* (1) Un carré de 1 cm de côté a une aire de 1 cm² : l'aire de l'étiquette, c'est le nombre de carrés qui la recouvrent, sans trou ni chevauchement. (2) Une rangée suit la longueur de 7 cm : elle compte 7 carrés. La largeur de 4 cm donne 4 rangées. (3) 4 rangées de 7 carrés : 4 × 7 = 28 carrés. (4) L'aire de l'étiquette est 28 cm². (5) À ne pas confondre avec le tour de l'étiquette : 7 + 4 + 7 + 4 = 22. C'est son périmètre, 22 cm, une longueur, pas un nombre de carrés.
+
+*Indice.* Combien de carrés dans une rangée ? Combien de rangées ?
+
+**EX-P018-D-02** — decouverte, qcm, 60 s
+
+Un badge carré mesure 6 cm de côté. On le recouvre de carrés de 1 cm de côté. Quelle est son aire ?
+
+- **a.** 24 cm²
+  <br>*Erreur visée :* L'élève calcule le tour du badge, 6 + 6 + 6 + 6 = 24 : c'est le périmètre, 24 cm, une longueur. Il confond périmètre et aire.
+- **b.** 36 cm² ✅
+- **c.** 12 cm²
+  <br>*Erreur visée :* L'élève additionne deux côtés, 6 + 6 = 12, comme s'il suffisait d'une rangée dans chaque sens, au lieu de compter 6 rangées de 6 carrés.
+
+*Corrigé.* (1) Un carré a ses 4 côtés de même longueur : le badge mesure 6 cm dans les deux sens. (2) On peut poser 6 rangées de 6 carrés de 1 cm de côté : 6 × 6 = 36 carrés. (3) Chaque carré a une aire de 1 cm² : l'aire du badge est 36 cm². (4) 24 est le périmètre : 6 + 6 + 6 + 6 = 24. Le périmètre est la longueur du tour, en cm ; l'aire compte les carrés qui recouvrent, en cm².
+
+*Indice.* Combien de rangées de carrés de 1 cm tiennent dans le badge ? Combien de carrés dans chaque rangée ?
+
+**EX-P018-E-01** — entrainement, vrai_faux, 60 s
+
+Un rectangle mesure 9 cm sur 3 cm. Tom affirme : « Son aire est 24 cm², car 9 + 3 + 9 + 3 = 24. » Tom a-t-il raison ?
+
+**Réponse :** False
+
+*Corrigé.* (1) Tom a additionné les quatre côtés : 9 + 3 + 9 + 3 = 24. C'est la longueur du contour, le périmètre du rectangle : 24 cm. (2) L'aire, c'est le nombre de carrés de 1 cm de côté qui recouvrent le rectangle : 3 rangées de 9 carrés, 3 × 9 = 27. (3) L'aire est 27 cm², pas 24 cm². Tom a tort : il a confondu le tour du rectangle et la surface qu'il recouvre.
+
+*Indice.* Tom a-t-il compté des carrés, ou mesuré la longueur du tour ?
+
+**EX-P018-E-02** — entrainement, numerique, 120 s
+
+Une affiche rectangulaire mesure 45 cm de long et 32 cm de large. Quelle est son aire, en cm² ? Pose la multiplication.
+
+**Réponse :** 1440
+
+*Corrigé.* (1) On peut recouvrir l'affiche de carrés de 1 cm de côté : 32 rangées de 45 carrés. (2) Il faut calculer 45 × 32. On pose la multiplication : première ligne 45 × 2 = 90, deuxième ligne 45 × 30 = 1 350. (3) On additionne les deux lignes : 90 + 1 350 = 1 440. (4) L'affiche est recouverte par 1 440 carrés : son aire est 1 440 cm². (5) À ne pas confondre avec le tour de l'affiche : 45 + 32 + 45 + 32 = 154. C'est son périmètre, 154 cm, une longueur, pas un nombre de carrés.
+
+*Indice.* Combien de rangées de carrés de 1 cm ? Combien de carrés dans chaque rangée ?
+
+**EX-P018-M-01** — maitrise, qcm, 90 s
+
+Deux rectangles ont 26 cm de périmètre : le premier mesure 10 cm sur 3 cm, le second 7 cm sur 6 cm. Lequel a la plus grande aire ?
+
+- **a.** Ils ont la même aire, puisqu'ils ont le même périmètre.
+  <br>*Erreur visée :* L'élève croit que deux surfaces de même contour recouvrent la même place : il confond périmètre et aire.
+- **b.** Le premier, car il est le plus long.
+  <br>*Erreur visée :* L'élève juge l'aire sur une seule dimension, la longueur de 10 cm, sans tenir compte de la largeur de 3 cm.
+- **c.** Le second. ✅
+
+*Corrigé.* (1) Premier rectangle : 3 rangées de 10 carrés de 1 cm de côté, 3 × 10 = 30. Son aire est 30 cm². (2) Second rectangle : 6 rangées de 7 carrés, 6 × 7 = 42. Son aire est 42 cm². (3) 42 cm², c'est plus que 30 cm² : le second a la plus grande aire. (4) Les deux contours mesurent bien 26 cm : 10 + 3 + 10 + 3 = 26 et 7 + 6 + 7 + 6 = 26. Même périmètre ne veut pas dire même aire.
+
+*Indice.* Calcule l'aire de chaque rectangle en comptant les rangées de carrés de 1 cm.
+
+**EX-P018-M-02** — maitrise, numerique, 90 s
+
+Lou recouvre exactement une carte rectangulaire avec 56 carrés de 1 cm de côté, en 7 rangées identiques. Chaque rangée suit la longueur de la carte. Quelle est sa longueur, en cm ?
+
+**Réponse :** 8
+
+*Corrigé.* (1) Les 56 carrés sont répartis en 7 rangées identiques : on cherche le nombre de carrés d'une rangée, c'est-à-dire le nombre qui, multiplié par 7, donne 56. (2) Dans la table de 7 : 7 × 8 = 56. Chaque rangée compte 8 carrés. (3) Une rangée suit la longueur et chaque carré mesure 1 cm de côté : la carte mesure 8 cm de long, et 7 cm de large. (4) Vérification : 7 rangées de 8 carrés, 7 × 8 = 56, l'aire est bien 56 cm². Le tour de la carte, lui, mesure 8 + 7 + 8 + 7 = 30 cm : aire et périmètre sont deux grandeurs différentes.
+
+*Indice.* Combien de carrés dans une rangée ? Cherche dans la table de 7.
+
+---
+
+## `P019` · Unités d'aire : cm², dm², m² et conversions — CM2, difficulté 4
+
+*Connaître les unités cm², dm² et m², savoir qu'un m² est l'aire d'un carré de 1 m de côté et donc qu'il contient 10 rangées de 10 dm² (1 m² = 100 dm², 1 dm² = 100 cm²), et convertir des aires entières d'une unité à l'autre, sans tableau. Nombres entiers.*
+
+> « Connaître et utiliser les unités centimètre carré, décimètre carré et mètre carré pour exprimer des aires » — *Cycle 3, Cours moyen deuxième année, Grandeurs et mesures, Les aires*
+> « Convertir des aires entre différentes unités » — *Cycle 3, Cours moyen deuxième année, Grandeurs et mesures, Les aires*
+
+**EX-P019-D-01** — decouverte, numerique, 60 s
+
+Un dessous-de-verre carré mesure 1 dm de côté, c'est-à-dire 10 cm. Son aire est 1 dm². Combien de cm² y a-t-il dans 1 dm² ? Pense aux carrés de 1 cm de côté qui le recouvrent.
+
+**Réponse :** 100
+
+*Corrigé.* (1) 1 cm² est l'aire d'un carré de 1 cm de côté. On recouvre le dessous-de-verre de tels carrés. (2) Une rangée suit un côté de 10 cm : elle compte 10 carrés. Le dessous-de-verre contient 10 rangées. (3) 10 × 10 = 100 carrés : 1 dm² = 100 cm². (4) Ce n'est pas 10 cm² : 1 dm = 10 cm est une relation entre longueurs. Pour une aire, il y a 10 rangées de 10 carrés, donc 100.
+
+*Indice.* Combien de carrés de 1 cm dans une rangée ? Combien de rangées ?
+
+**EX-P019-D-02** — decouverte, qcm, 60 s
+
+Le tableau d'une classe a une aire de 4 m². On sait que 1 m² = 100 dm². Quelle est l'aire du tableau en dm² ?
+
+- **a.** 40 dm²
+  <br>*Erreur visée :* L'élève utilise le rapport des longueurs, 1 m = 10 dm, et pense que 1 m² = 10 dm². Or un carré de 1 m de côté contient 10 rangées de 10 dm².
+- **b.** 4 000 dm²
+  <br>*Erreur visée :* L'élève ajoute trois zéros, comme pour passer des mètres aux millimètres, sans s'appuyer sur la relation 1 m² = 100 dm².
+- **c.** 400 dm² ✅
+
+*Corrigé.* (1) 1 m² = 100 dm² : chaque mètre carré contient 100 décimètres carrés. (2) 4 m², c'est 4 fois 100 dm² : 4 × 100 = 400. (3) Le tableau a une aire de 400 dm². (4) Le rapport 10 vaut pour les longueurs (1 m = 10 dm). Pour les aires, un mètre carré contient 10 rangées de 10 dm², soit 100.
+
+*Indice.* Combien de dm² dans chacun des 4 mètres carrés ?
+
+**EX-P019-E-01** — entrainement, numerique, 75 s
+
+Une feuille de papier cadeau a une aire de 1 800 cm². Quelle est son aire en dm² ?
+
+**Réponse :** 18
+
+*Corrigé.* (1) 1 dm² = 100 cm² : il faut 100 cm² pour faire 1 dm². (2) On cherche combien de paquets de 100 cm² il y a dans 1 800 cm². 1 800, c'est 18 centaines. (3) Il y a 18 paquets de 100 cm² : 18 × 100 = 1 800. La feuille a une aire de 18 dm². (4) 180 dm² serait faux : c'est le rapport 10 des longueurs. On vérifie : 180 dm² font 180 × 100 = 18 000 cm², dix fois trop.
+
+*Indice.* Combien de centaines dans 1 800 ?
+
+**EX-P019-E-02** — entrainement, vrai_faux, 60 s
+
+Hugo dit : « 6 m² = 60 dm², car 1 m = 10 dm. » Hugo a-t-il raison ?
+
+**Réponse :** False
+
+*Corrigé.* (1) 1 m = 10 dm est vrai, mais c'est une relation entre longueurs. (2) Un carré de 1 m de côté se recouvre de 10 rangées de 10 carrés de 1 dm de côté : 10 × 10 = 100. Donc 1 m² = 100 dm². (3) 6 m², c'est 6 fois 100 dm² : 6 × 100 = 600. (4) Hugo a tort : 6 m² = 600 dm². Il a utilisé le rapport 10 des longueurs au lieu du rapport 100 des aires.
+
+*Indice.* Combien de carrés de 1 dm de côté recouvrent un carré de 1 m de côté ?
+
+**EX-P019-M-01** — maitrise, qcm, 90 s
+
+Une serviette de plage a une aire de 2 m². Quelle est son aire en cm² ?
+
+- **a.** 20 000 cm² ✅
+- **b.** 200 cm²
+  <br>*Erreur visée :* L'élève transpose la relation des longueurs, 1 m = 100 cm, et croit que 1 m² = 100 cm². Il oublie qu'une aire se compte en rangées de carrés.
+- **c.** 40 000 cm²
+  <br>*Erreur visée :* L'élève lit 2 m² comme l'aire d'un carré de 2 m de côté. Un tel carré contient 2 rangées de 2 carrés de 1 m², soit 4 m² : le double de la serviette.
+
+*Corrigé.* (1) On passe par les dm² : 1 m² = 100 dm², donc 2 m², c'est 2 × 100 = 200 dm². (2) 1 dm² = 100 cm², donc 200 dm², c'est 200 × 100 = 20 000 cm². (3) La serviette a une aire de 20 000 cm². (4) Autre regard : 1 m² est un carré de 100 cm de côté, recouvert de 100 rangées de 100 carrés de 1 cm, 100 × 100 = 10 000. Donc 1 m² = 10 000 cm², et 2 m² = 20 000 cm².
+
+*Indice.* Passe d'abord par les dm² : combien de dm² dans 2 m² ?
+
+**EX-P019-M-02** — maitrise, numerique, 100 s
+
+On pose du parquet dans une chambre de 12 m² et dans un dressing de 300 dm². Quelle aire de parquet faut-il en tout, en m² ?
+
+**Réponse :** 15
+
+*Corrigé.* (1) Les deux aires ne sont pas dans la même unité : on ne peut pas additionner 12 et 300 directement. (2) On écrit l'aire du dressing en m². 1 m² = 100 dm² : il faut 100 dm² pour faire 1 m². 300, c'est 3 centaines, donc 300 dm² = 3 m². (3) On additionne : 12 + 3 = 15. (4) Il faut 15 m² de parquet. (5) Le calcul 12 + 300 = 312 mélange des m² et des dm². Avec le rapport 10 des longueurs, on trouverait 300 dm² = 30 m² : un dressing plus grand que la chambre, c'est impossible.
+
+*Indice.* Combien de paquets de 100 dm² y a-t-il dans 300 dm² ?
 
 ---
 
@@ -5758,6 +6959,484 @@ Un car transporte 50 passagers : 34 adultes, les autres sont des enfants. Quel p
 
 ---
 
+## `P021` · Convertir des longueurs vers et depuis le mètre — 6e, difficulté 4
+
+*Connaître le sens des préfixes kilo-, hecto-, déca-, déci-, centi- et milli- et les relier aux unités de numération ; convertir en mètres une longueur donnée dans une autre unité et inversement, y compris vers une unité plus grande et avec des nombres décimaux (350 cm = 3,5 m ; 1 cm = 0,1 dm ; 2,5 km = 2 500 m), et résoudre des problèmes de longueurs aux unités mélangées.*
+
+> « L'élève connaît les significations des préfixes allant du kilo- au milli-, ainsi que les relations entre le mètre, ses multiples et ses sous-multiples, et fait le lien avec les unités de numération du système décimal. » — *Cycle 3, classe de 6e, Grandeurs et mesures, Les longueurs*
+> « L'élève sait convertir en mètre une longueur donnée dans une autre unité, multiple ou sous-multiple du mètre. » — *Cycle 3, classe de 6e, Grandeurs et mesures, Les longueurs*
+> « Inversement, l'élève sait convertir dans une unité donnée une longueur exprimée en mètre. » — *Cycle 3, classe de 6e, Grandeurs et mesures, Les longueurs*
+> « Résoudre des problèmes impliquant des longueurs » — *Cycle 3, classe de 6e, Grandeurs et mesures, Les longueurs*
+
+**EX-P021-D-01** — decouverte, numerique, 60 s
+
+Un banc mesure 180 cm de long. On sait que 1 m = 100 cm. Quelle est sa longueur, en mètres ?
+
+**Réponse :** 1.8
+
+*Corrigé.* (1) 1 m = 100 cm : 1 cm est un centième de mètre. (2) On passe à une unité 100 fois plus grande : le nombre devient 100 fois plus petit. 180 ÷ 100 = 1{,}8. (3) Autre façon de voir : 180 cm = 100 cm + 80 cm, soit 1 m et 80 cm. Comme 1 dm = 10 cm, 80 cm font 8 dm, c'est-à-dire 8 dixièmes de mètre. (4) Le banc mesure 1,8 m (on peut aussi écrire 1,80 m).
+
+*Indice.* On passe à une unité plus grande : le nombre doit-il grandir ou diminuer ?
+
+**EX-P021-D-02** — decouverte, qcm, 60 s
+
+Le tour d'un lac mesure 4 200 m. Quelle est cette longueur, en kilomètres ?
+
+- **a.** 42 km
+  <br>*Erreur visée :* L'élève pense que 1 km = 100 m : il divise par 100 au lieu de 1 000. 42 km, c'est à peu près la distance d'un marathon.
+- **b.** 4,2 km ✅
+- **c.** 4 200 000 km
+  <br>*Erreur visée :* L'élève convertit dans le mauvais sens : il multiplie par 1 000 alors qu'on passe à une unité plus grande. Le nombre de kilomètres doit être plus petit que le nombre de mètres.
+- **d.** 420 km
+  <br>*Erreur visée :* L'élève enlève un seul zéro, quel que soit l'écart entre les unités : il divise par 10 au lieu de 1 000.
+
+*Corrigé.* (1) Kilo- veut dire mille : 1 km = 1 000 m. (2) On passe à une unité 1 000 fois plus grande : on divise par 1 000. 4 200 ÷ 1 000 = 4{,}2. (3) Autre façon de voir : 4 200 m = 4 000 m + 200 m, soit 4 km et 200 m. Comme 1 hm = 100 m est un dixième de kilomètre, 200 m font 2 dixièmes de kilomètre. (4) Le tour du lac mesure 4,2 km.
+
+*Indice.* Combien de mètres y a-t-il dans 1 km ? Le nombre de kilomètres est-il plus grand ou plus petit que le nombre de mètres ?
+
+**EX-P021-E-01** — entrainement, numerique, 75 s
+
+Un crayon de couleur mesure 175 mm. Quelle est sa longueur, en mètres ?
+
+**Réponse :** 0.175
+
+*Corrigé.* (1) Milli- veut dire millième : 1 mm est un millième de mètre, car 1 m = 1 000 mm. (2) On passe à une unité 1 000 fois plus grande : on divise par 1 000. 175 ÷ 1 000 = 0{,}175. (3) Vérification par les rangs : 175 mm, c'est 1 dm, 7 cm et 5 mm, soit 1 dixième, 7 centièmes et 5 millièmes de mètre. (4) Le crayon mesure 0,175 m, un peu moins de 2 dixièmes de mètre, c'est-à-dire moins de 20 cm : c'est vraisemblable.
+
+*Indice.* Combien de millimètres y a-t-il dans 1 m ?
+
+**EX-P021-E-02** — entrainement, vrai_faux, 60 s
+
+Une rue mesure 64 m. Théo dit : « C'est 6,4 km, car kilo- veut dire mille. » Théo a-t-il raison ?
+
+**Réponse :** False
+
+*Corrigé.* (1) Kilo- veut dire mille : 1 km = 1 000 m, donc 1 m est un millième de kilomètre. (2) Pour passer des mètres aux kilomètres, on divise par 1 000 : 64 ÷ 1 000 = 0{,}064. La rue mesure 0,064 km. (3) Théo a seulement divisé par 10 : il a décalé les chiffres d'un rang au lieu de trois. (4) Contrôle : 6,4 km = 6 400 m, cent fois plus que 64 m. Théo a tort, c'est faux.
+
+*Indice.* Combien de mètres y a-t-il dans 1 km ? 64 m, est-ce plus ou moins d'un kilomètre ?
+
+**EX-P021-M-01** — maitrise, numerique, 120 s
+
+Pour un relais, quatre coureurs parcourent 1,2 km ; 850 m ; 9 hm et 75 dam. Quelle distance parcourent-ils en tout, en kilomètres ?
+
+**Réponse :** 3.7
+
+*Corrigé.* (1) Les longueurs sont dans quatre unités différentes : on les écrit toutes en mètres, où ce sont des nombres entiers. (2) 1 km = 1 000 m, donc 1,2 km = 1 200 m, car 1{,}2 × 1 000 = 1 200. (3) 1 hm = 100 m, donc 9 hm = 900 m. 1 dam = 10 m, donc 75 dam = 750 m, car 75 × 10 = 750. (4) On additionne : 1 200 + 850 + 900 + 750 = 3 700. Les coureurs parcourent 3 700 m. (5) On revient aux kilomètres, unité 1 000 fois plus grande : 3 700 ÷ 1 000 = 3{,}7. Ils parcourent 3,7 km.
+
+*Indice.* Convertis chaque longueur en mètres, additionne, puis reviens aux kilomètres.
+
+**EX-P021-M-02** — maitrise, qcm, 120 s
+
+Trois chemins mesurent 0,45 km ; 4 600 dm et 47 000 cm. Quelle est la longueur du plus long, en kilomètres ?
+
+- **a.** 0,46 km
+  <br>*Erreur visée :* L'élève divise 47 000 cm par 1 000, comme si c'étaient des millimètres : il trouve 47 m et croit que le chemin de 4 600 dm, soit 460 m, est le plus long. Or 1 m = 100 cm, donc 47 000 cm = 470 m.
+- **b.** 4,7 km
+  <br>*Erreur visée :* L'élève trouve bien le chemin de 470 m, mais il divise par 100 au lieu de 1 000, comme si 1 km = 100 m. 4,7 km, c'est 4 700 m.
+- **c.** 0,47 km ✅
+- **d.** 0,45 km
+  <br>*Erreur visée :* L'élève pense que la longueur écrite dans la plus grande unité est forcément la plus grande. Or 0,45 km = 450 m, la plus courte des trois.
+
+*Corrigé.* (1) Pour comparer, on écrit les trois longueurs en mètres. (2) 1 km = 1 000 m, donc 0,45 km = 450 m, car 0{,}45 × 1 000 = 450. (3) 1 m = 10 dm, donc 4 600 dm = 460 m, car 4 600 ÷ 10 = 460. (4) 1 m = 100 cm, donc 47 000 cm = 470 m, car 47 000 ÷ 100 = 470. (5) 450 m < 460 m < 470 m : le plus long est le chemin de 47 000 cm, qui mesure 470 m. (6) On revient aux kilomètres, unité 1 000 fois plus grande : 470 ÷ 1 000 = 0{,}47. Le plus long mesure 0,47 km.
+
+*Indice.* Convertis les trois longueurs en mètres avant de comparer.
+
+---
+
+## `P022` · Périmètre du carré et du rectangle : formules — 6e, difficulté 4
+
+*Calculer le périmètre d'un carré (4 × c) et d'un rectangle (2 × (L + l), ou L + l + L + l) en substituant les valeurs données, entières ou décimales, dans la formule, et vérifier que les deux longueurs sont dans la même unité.*
+
+> « L'élève sait calculer le périmètre d'un carré et d'un rectangle. » — *Cycle 3, classe de 6e, Grandeurs et mesures, Les longueurs*
+> « Les formules du périmètre d'un carré, d'un rectangle, d'un disque et celles de l'aire d'un carré ou d'un rectangle s'installent progressivement. » — *Cycle 3, classe de 6e, Grandeurs et mesures*
+> « L'élève substitue une valeur numérique à une lettre pour calculer, en situation, un périmètre ou une aire. » — *Cycle 3, classe de 6e, Grandeurs et mesures*
+
+**EX-P022-D-01** — decouverte, numerique, 60 s
+
+Une nappe carrée a des côtés de 1,35 m. Calcule son périmètre avec la formule du carré P = 4 × c, où c est la longueur d'un côté.
+
+**Réponse :** 5.4
+
+*Corrigé.* (1) Un carré a 4 côtés de même longueur. Son contour mesure c + c + c + c, c'est-à-dire 4 × c : c'est la formule P = 4 × c. (2) On remplace c par 1,35 : P = 4 × 1{,}35. (3) On pose 135 × 4 = 540, puis on place la virgule : deux chiffres après la virgule dans 1,35, donc deux dans le produit : 5,40. (4) Le périmètre de la nappe est 5,4 m. Contrôle : 4 × 1 = 4 et 4 × 1{,}5 = 6, le résultat est bien entre 4 m et 6 m.
+
+*Indice.* Remplace la lettre c par la longueur du côté.
+
+**EX-P022-D-02** — decouverte, qcm, 60 s
+
+Une étiquette rectangulaire mesure 8,5 cm de long et 3,2 cm de large. Avec la formule P = 2 × (L + l), quel est son périmètre ?
+
+- **a.** 11,7 cm
+  <br>*Erreur visée :* L'élève calcule seulement L + l = 11,7 : il fait le tour d'une moitié du rectangle et oublie de multiplier par 2.
+- **b.** 23,4 cm ✅
+- **c.** 20,2 cm
+  <br>*Erreur visée :* L'élève oublie les parenthèses et calcule 2 × 8,5 + 3,2 = 20,2 : il double la longueur mais pas la largeur, il manque un côté.
+- **d.** 27,2 cm
+  <br>*Erreur visée :* L'élève multiplie la longueur par la largeur (8,5 × 3,2 = 27,2) : il confond le périmètre avec l'aire.
+
+*Corrigé.* (1) Le contour du rectangle passe par 2 longueurs et 2 largeurs : L + l + L + l, c'est-à-dire 2 × (L + l). (2) On remplace L par 8,5 et l par 3,2 : P = 2 × (8{,}5 + 3{,}2) = 2 × 11{,}7 = 23{,}4. (3) Les parenthèses comptent : on additionne d'abord la longueur et la largeur, puis on double. Le périmètre est 23,4 cm.
+
+*Indice.* Calcule d'abord ce qui est entre parenthèses.
+
+**EX-P022-E-01** — entrainement, numerique, 90 s
+
+Un plan de travail de cuisine rectangulaire mesure 3 m de long et 65 cm de large. On colle une baguette de bois tout autour. Quelle longueur de baguette faut-il, en centimètres ?
+
+**Réponse :** 730
+
+*Corrigé.* (1) La baguette suit le contour : il faut le périmètre du rectangle, P = 2 × (L + l). (2) Les deux longueurs ne sont pas dans la même unité : avant de remplacer, on convertit. 1 m = 100 cm, donc 3 m = 300 cm. (3) P = 2 × (300 + 65) = 2 × 365 = 730. (4) Il faut 730 cm de baguette, soit 7 m et 30 cm. Sans conversion, on aurait écrit 2 × (3 + 65) = 136 : un résultat absurde, qui mélange des mètres et des centimètres.
+
+*Indice.* La longueur et la largeur sont-elles dans la même unité ?
+
+**EX-P022-E-02** — entrainement, vrai_faux, 75 s
+
+Hugo dit : « Pour un rectangle de longueur L et de largeur l, les calculs L + l + L + l et 2 × (L + l) donnent toujours le même périmètre. »
+
+**Réponse :** True
+
+*Corrigé.* (1) L + l + L + l suit le contour du rectangle : une longueur, une largeur, une longueur, une largeur. (2) On regroupe une longueur et une largeur : L + l + L + l = (L + l) + (L + l). Ajouter deux fois la même somme, c'est la multiplier par 2 : (L + l) + (L + l) = 2 × (L + l). (3) Exemple avec L = 12{,}6 et l = 4{,}8 : 12{,}6 + 4{,}8 + 12{,}6 + 4{,}8 = 34{,}8 et 2 × (12{,}6 + 4{,}8) = 2 × 17{,}4 = 34{,}8. (4) Hugo a raison : ce sont deux écritures de la même formule du périmètre du rectangle. La seconde demande moins de calculs.
+
+*Indice.* Regroupe une longueur et une largeur.
+
+**EX-P022-M-01** — maitrise, numerique, 150 s
+
+Un jardin rectangulaire est entouré d'une clôture de 64 m. Sa longueur mesure 19,5 m. Quelle est sa largeur ?
+
+**Réponse :** 12.5
+
+*Corrigé.* (1) La clôture fait le tour du jardin : le périmètre est 64 m. Le contour passe par 2 longueurs et 2 largeurs, soit deux fois (une longueur + une largeur), comme dans P = 2 × (L + l). (2) Une longueur plus une largeur font donc la moitié du périmètre : 64 ÷ 2 = 32, soit 32 m. C'est le demi-périmètre. (3) l = 32 - 19{,}5 = 12{,}5. On pose la soustraction en alignant les virgules : 32{,}0 - 19{,}5 = 12{,}5. (4) La largeur est 12,5 m. Vérification : 2 × (19{,}5 + 12{,}5) = 2 × 32 = 64.
+
+*Indice.* Que vaut une longueur plus une largeur ?
+
+**EX-P022-M-02** — maitrise, qcm, 120 s
+
+Un rectangle mesure 9,7 cm de long et 6,3 cm de large. Un carré a le même périmètre que ce rectangle. Quelle est la longueur du côté du carré ?
+
+- **a.** 16 cm
+  <br>*Erreur visée :* L'élève divise le périmètre (32 cm) par 2 au lieu de 4 : il applique au carré le demi-périmètre du rectangle.
+- **b.** 4 cm
+  <br>*Erreur visée :* L'élève prend L + l = 16 pour le périmètre du rectangle, sans doubler, puis divise par 4.
+- **c.** 32 cm
+  <br>*Erreur visée :* L'élève s'arrête au périmètre du rectangle et le donne comme côté du carré.
+- **d.** 8 cm ✅
+
+*Corrigé.* (1) Périmètre du rectangle : P = 2 × (9{,}7 + 6{,}3) = 2 × 16 = 32, soit 32 cm. (2) Pour le carré, P = 4 × c : il faut donc 4 × c = 32. (3) c = 32 ÷ 4 = 8. Le côté du carré mesure 8 cm. Vérification : 4 × 8 = 32.
+
+*Indice.* Calcule d'abord le périmètre du rectangle, puis utilise la formule du carré à l'envers.
+
+---
+
+## `P024` · Aire du carré et du rectangle : formules — 6e, difficulté 4
+
+*Connaître les formules de l'aire d'un rectangle (L × l) et d'un carré (c × c) et les appliquer en substituant les dimensions données, l'une au moins étant entière (12 m × 7,5 m), avec le résultat dans l'unité d'aire correspondante ; ne pas confondre aire et périmètre.*
+
+> « Connaître la formule de l'aire d'un carré ou d'un rectangle » — *Cycle 3, classe de 6e, Grandeurs et mesures, Les aires*
+> « Calculer l'aire d'un carré ou d'un rectangle » — *Cycle 3, classe de 6e, Grandeurs et mesures, Les aires*
+
+**EX-P024-D-01** — decouverte, numerique, 60 s
+
+La formule de l'aire d'un rectangle est A = L × l, où L est la longueur et l la largeur. Une tablette de chocolat mesure 16 cm de long et 8 cm de large. Quelle est son aire, en cm² ?
+
+**Réponse :** 128
+
+*Corrigé.* (1) On remplace les lettres par les dimensions de la tablette : la longueur vaut 16 cm, la largeur 8 cm. (2) A = 16 × 8 = 128. (3) L'aire est 128 cm² : des longueurs en cm donnent une aire en cm². (4) C'est ce qu'on comptait au CM2 : 8 rangées de 16 carrés de 1 cm de côté. La formule résume ce dénombrement.
+
+*Indice.* Remplace L et l par les dimensions de la tablette.
+
+**EX-P024-D-02** — decouverte, qcm, 60 s
+
+La formule de l'aire d'un carré de côté c est A = c × c. Un potager carré mesure 11 m de côté. Quelle est son aire ?
+
+- **a.** 44 m²
+  <br>*Erreur visée :* L'élève additionne les quatre côtés, 11 + 11 + 11 + 11 = 44 : c'est le périmètre du potager, la longueur de sa clôture en m, pas sa surface.
+- **b.** 22 m²
+  <br>*Erreur visée :* L'élève lit c × c comme deux fois le côté : il calcule 2 × 11 = 22.
+- **c.** 121 m² ✅
+
+*Corrigé.* (1) On remplace c par 11 dans la formule de l'aire du carré. (2) A = 11 × 11 = 121. (3) Le potager a une aire de 121 m². (4) 44 m serait la longueur de la clôture, le périmètre : 11 + 11 + 11 + 11 = 44. Le périmètre se mesure en m, l'aire en m².
+
+*Indice.* Que vaut c × c quand c vaut 11 ?
+
+**EX-P024-E-01** — entrainement, numerique, 90 s
+
+Une terrasse rectangulaire mesure 6,4 m de long et 4 m de large. Calcule son aire avec la formule, en m².
+
+**Réponse :** 25.6
+
+*Corrigé.* (1) Aire d'un rectangle : A = L × l, ici A = 6{,}4 × 4. (2) On calcule 64 × 4 = 256, puis on place la virgule : 6,4 a un chiffre après la virgule, le résultat aussi. (3) 6{,}4 × 4 = 25{,}6 : la terrasse a une aire de 25,6 m². (4) Ordre de grandeur : 6 × 4 = 24, le résultat est cohérent. (5) À ne pas confondre avec le tour de la terrasse : 6,4 + 4 + 6,4 + 4 = 20,8. C'est son périmètre, 20,8 m.
+
+*Indice.* Multiplie d'abord comme si 6,4 était 64, puis place la virgule.
+
+**EX-P024-E-02** — entrainement, vrai_faux, 60 s
+
+Un rectangle mesure 15 cm de long et 4 cm de large. Inès écrit : « 15 + 4 + 15 + 4 = 38, donc son aire est 38 cm². » Inès a-t-elle raison ?
+
+**Réponse :** False
+
+*Corrigé.* (1) Inès a additionné les quatre côtés : c'est le périmètre, la longueur du contour, 38 cm. (2) L'aire se calcule avec la formule A = L × l : A = 15 × 4 = 60. (3) L'aire est 60 cm². Inès a tort : elle confond périmètre et aire. (4) Les unités le signalent : le périmètre est une longueur (cm), l'aire une surface (cm²).
+
+*Indice.* Quelle formule donne l'aire d'un rectangle ? Inès l'a-t-elle utilisée ?
+
+**EX-P024-M-01** — maitrise, qcm, 75 s
+
+Un napperon carré a une aire de 64 cm². Quelle est la longueur de son côté ?
+
+- **a.** 8 cm ✅
+- **b.** 16 cm
+  <br>*Erreur visée :* L'élève partage l'aire en 4, comme s'il retrouvait le côté à partir du périmètre : 64 ÷ 4 = 16. Un carré de 16 cm de côté aurait une aire de 256 cm².
+- **c.** 32 cm
+  <br>*Erreur visée :* L'élève lit c × c comme deux fois le côté et calcule 64 ÷ 2 = 32.
+
+*Corrigé.* (1) Pour un carré, A = c × c. On cherche donc le nombre qui, multiplié par lui-même, donne 64. (2) Dans les tables : 8 × 8 = 64. (3) Le côté du napperon mesure 8 cm. (4) Vérification avec la formule : 8 × 8 = 64, soit 64 cm². Avec un côté de 16 cm, on trouverait 16 × 16 = 256, beaucoup trop.
+
+*Indice.* Quel nombre, multiplié par lui-même, donne 64 ?
+
+**EX-P024-M-02** — maitrise, numerique, 120 s
+
+On repeint un mur rectangulaire de 6,5 m de long et 3 m de haut. Un pot de peinture couvre 4 m². Combien de pots faut-il acheter, au minimum ?
+
+**Réponse :** 5
+
+*Corrigé.* (1) On calcule d'abord l'aire du mur avec la formule du rectangle : A = 6{,}5 × 3 = 19{,}5. Le mur a une aire de 19,5 m². (2) 4 pots couvrent 4 × 4 = 16 m² : c'est moins que 19,5 m², il resterait 3,5 m² sans peinture. (3) 5 pots couvrent 5 × 4 = 20 m² : c'est assez. (4) Il faut acheter 5 pots au minimum. (5) Attention à ne pas calculer le périmètre : 6,5 + 3 + 6,5 + 3 = 19 donne la longueur du bord du mur, 19 m, pas la surface à peindre.
+
+*Indice.* Calcule d'abord l'aire du mur, puis cherche combien de pots couvrent au moins cette aire.
+
+---
+
+## `P025` · Conversions d'aires avec des nombres décimaux — 6e, difficulté 4
+
+*Effectuer des conversions entre cm², dm² et m², dans les deux sens et avec des nombres décimaux, en sachant que chaque unité vaut 100 fois la suivante (1 cm² = 0,01 dm² ; 3,5 m² = 350 dm²), et non 10 fois comme pour les longueurs.*
+
+> « Effectuer des conversions d'aire » — *Cycle 3, classe de 6e, Grandeurs et mesures, Les aires*
+> « L'élève mémorise que 1 cm² est égal à un centième de 1 dm² » — *Cycle 3, classe de 6e, Grandeurs et mesures, Les aires*
+> « L'élève mémorise que 1 dm² est égal à un centième de 1 m² » — *Cycle 3, classe de 6e, Grandeurs et mesures, Les aires*
+
+**EX-P025-D-01** — decouverte, numerique, 60 s
+
+Un tapis de salon a une aire de 4,7 m². On sait que 1 m² = 100 dm². Quelle est son aire en dm² ?
+
+**Réponse :** 470
+
+*Corrigé.* (1) 1 m² = 100 dm² : pour passer des m² aux dm², on multiplie par 100. (2) 4{,}7 × 100 = 470 : le chiffre 4 des unités devient le chiffre des centaines, le 7 des dixièmes devient celui des dizaines. (3) Le tapis a une aire de 470 dm². (4) 47 dm² serait faux : c'est le rapport 10 des longueurs (1 m = 10 dm). Pour les aires, le rapport est 100.
+
+*Indice.* Par quel nombre multiplie-t-on pour passer des m² aux dm² ?
+
+**EX-P025-D-02** — decouverte, qcm, 60 s
+
+Une carte postale a une aire de 150 cm². On sait que 1 cm² = 0,01 dm². Quelle est son aire en dm² ?
+
+- **a.** 1,5 dm² ✅
+- **b.** 15 dm²
+  <br>*Erreur visée :* L'élève divise par 10, le rapport des longueurs (1 dm = 10 cm), au lieu de 100 pour les aires.
+- **c.** 15 000 dm²
+  <br>*Erreur visée :* L'élève convertit dans le mauvais sens : il multiplie par 100, alors qu'on passe à une unité plus grande, donc à un nombre plus petit.
+
+*Corrigé.* (1) 1 cm² est un centième de dm² : il faut 100 cm² pour faire 1 dm². (2) Passer des cm² aux dm², c'est diviser par 100 : 150 ÷ 100 = 1{,}5. (3) La carte a une aire de 1,5 dm². (4) Contrôle : 1 dm² = 100 cm², donc 1,5 dm², c'est 1{,}5 × 100 = 150 cm². On retrouve l'aire de départ.
+
+*Indice.* Combien de cm² faut-il pour faire 1 dm² ?
+
+**EX-P025-E-01** — entrainement, vrai_faux, 60 s
+
+Lina affirme : « 0,8 m² = 8 dm², car 1 m = 10 dm. » Lina a-t-elle raison ?
+
+**Réponse :** False
+
+*Corrigé.* (1) 1 m = 10 dm concerne les longueurs. Pour les aires, un carré de 1 m de côté contient 10 rangées de 10 carrés de 1 dm de côté : 1 m² = 100 dm². (2) 0{,}8 × 100 = 80 : 0,8 m² = 80 dm². (3) Lina a tort : elle a utilisé le rapport 10 des longueurs au lieu du rapport 100 des aires.
+
+*Indice.* Combien de dm² dans 1 m² ?
+
+**EX-P025-E-02** — entrainement, numerique, 75 s
+
+Un coupon de tissu a une aire de 65 dm². Quelle est son aire en m² ?
+
+**Réponse :** 0.65
+
+*Corrigé.* (1) 1 dm² = 0,01 m² : il faut 100 dm² pour faire 1 m². (2) Passer des dm² aux m², c'est diviser par 100 : 65 ÷ 100 = 0{,}65. (3) Le tissu a une aire de 0,65 m², un peu plus d'un demi-mètre carré. (4) 6,5 m² serait le rapport 10 des longueurs. 6 500 m² serait une conversion dans le mauvais sens : on passe à une unité plus grande, le nombre doit diminuer.
+
+*Indice.* Combien de dm² faut-il pour faire 1 m² ?
+
+**EX-P025-M-01** — maitrise, qcm, 90 s
+
+Une vitre a une aire de 0,36 m². Quelle est son aire en cm² ?
+
+- **a.** 36 cm²
+  <br>*Erreur visée :* L'élève transpose aux aires la relation des longueurs 1 m = 100 cm et croit que 1 m² = 100 cm². 36 cm², c'est l'aire d'un carré de 6 cm de côté : trop petit pour une vitre.
+- **b.** 0,0036 cm²
+  <br>*Erreur visée :* L'élève divise par 100 au lieu de multiplier : il convertit dans le mauvais sens. Passer à une unité plus petite doit faire augmenter le nombre.
+- **c.** 3 600 cm² ✅
+
+*Corrigé.* (1) On passe par les dm² : 1 m² = 100 dm², donc 0{,}36 × 100 = 36. 0,36 m² = 36 dm². (2) 1 dm² = 100 cm², donc 36 × 100 = 3 600. 36 dm² = 3 600 cm². (3) La vitre a une aire de 3 600 cm², celle d'un carré de 60 cm de côté : 60 × 60 = 3 600. (4) Entre m² et cm², le rapport est 100 × 100 = 10 000, et non 100 comme entre m et cm.
+
+*Indice.* Convertis d'abord en dm², puis en cm².
+
+**EX-P025-M-02** — maitrise, numerique, 100 s
+
+On veut carreler un mur de 2,4 m² avec des carreaux de 4 dm² chacun. Combien de carreaux faut-il ?
+
+**Réponse :** 60
+
+*Corrigé.* (1) Les deux aires ne sont pas dans la même unité : on convertit l'aire du mur en dm². (2) 1 m² = 100 dm², donc 2{,}4 × 100 = 240 : le mur mesure 240 dm². (3) Chaque carreau couvre 4 dm² : 240 ÷ 4 = 60. (4) Il faut 60 carreaux. Vérification : 60 × 4 = 240. (5) Avec le rapport 10 des longueurs, on trouverait 24 dm² et seulement 24 ÷ 4 = 6 carreaux : de quoi couvrir moins d'un quart de mètre carré.
+
+*Indice.* Écris d'abord l'aire du mur en dm².
+
+---
+
+## `P026` · Volume : le centimètre cube et le dénombrement de cubes — 6e, difficulté 4
+
+*Connaître le centimètre cube (volume d'un cube de 1 cm d'arête), déterminer le volume d'un pavé décrit par ses couches de cubes unités (3 couches de 4 rangées de 5 cubes) et comparer des volumes. Le pavé est décrit par l'énoncé ; la formule du volume du pavé relève de la 5e. Nombres entiers.*
+
+> « Il découvre l'unité de volume cm3. En lien avec les problèmes de dénombrement d'assemblages de cubes, il détermine des volumes. » — *Cycle 3, classe de 6e, Grandeurs et mesures*
+> « Connaître l'unité centimètre cube » — *Cycle 3, classe de 6e, Grandeurs et mesures, Les volumes*
+> « Déterminer un volume » — *Cycle 3, classe de 6e, Grandeurs et mesures, Les volumes*
+> « Comparer des volumes » — *Cycle 3, classe de 6e, Grandeurs et mesures, Les volumes*
+
+**EX-P026-D-01** — decouverte, numerique, 60 s
+
+Une boîte est remplie de cubes de 1 cm d'arête, qui ont chacun un volume de 1 cm³. Elle contient 2 couches ; chaque couche compte 6 rangées de 7 cubes. Quel est le volume de la boîte, en cm³ ?
+
+**Réponse :** 84
+
+*Corrigé.* (1) Chaque cube a un volume de 1 cm³ : le volume de la boîte, c'est le nombre de cubes qu'elle contient. (2) Une couche : 6 rangées de 7 cubes, 6 × 7 = 42 cubes. (3) 2 couches : 2 × 42 = 84 cubes. (4) Le volume de la boîte est 84 cm³. (5) 42 est le nombre de cubes d'une seule couche. Le fond de la boîte a une aire de 42 cm² : une aire se compte en carrés, un volume en cubes.
+
+*Indice.* Compte d'abord les cubes d'une couche.
+
+**EX-P026-D-02** — decouverte, vrai_faux, 60 s
+
+Un pavé est formé de 2 couches ; chaque couche compte 3 rangées de 4 cubes de 1 cm³. Sam affirme : « Son volume est 9 cm³, car 2 + 3 + 4 = 9. » Sam a-t-il raison ?
+
+**Réponse :** False
+
+*Corrigé.* (1) Sam a additionné les nombres de l'énoncé. Or le volume, c'est le nombre de cubes de 1 cm³ : il faut tous les compter. (2) Une couche : 3 rangées de 4 cubes, 3 × 4 = 12 cubes. (3) 2 couches : 2 × 12 = 24 cubes. (4) Le volume est 24 cm³ : Sam a tort.
+
+*Indice.* Combien de cubes dans une couche ?
+
+**EX-P026-E-01** — entrainement, qcm, 75 s
+
+Un pavé est formé de 4 couches identiques. Chaque couche compte 5 rangées de 8 cubes de 1 cm d'arête. Quel est son volume ?
+
+- **a.** 17 cm³
+  <br>*Erreur visée :* L'élève additionne les nombres de l'énoncé, 4 + 5 + 8 = 17, au lieu de compter les cubes.
+- **b.** 160 cm³ ✅
+- **c.** 40 cm³
+  <br>*Erreur visée :* L'élève compte les cubes d'une seule couche, 5 × 8 = 40, et oublie qu'il y a 4 couches.
+
+*Corrigé.* (1) Une couche : 5 rangées de 8 cubes, 5 × 8 = 40 cubes. (2) 4 couches : 4 × 40 = 160 cubes. (3) Chaque cube de 1 cm d'arête a un volume de 1 cm³ : le volume du pavé est 160 cm³. (4) Une couche de 40 cubes repose sur un fond de 40 cm² : l'aire compte des carrés, le volume des cubes.
+
+*Indice.* Combien de cubes dans une couche ? Combien de couches ?
+
+**EX-P026-E-02** — entrainement, numerique, 90 s
+
+Une boîte en forme de pavé mesure 9 cm de long, 4 cm de large et 3 cm de haut. On la remplit exactement de cubes de 1 cm d'arête. Quel est son volume, en cm³ ?
+
+**Réponse :** 108
+
+*Corrigé.* (1) Au fond de la boîte, sur 9 cm de long et 4 cm de large, on pose 4 rangées de 9 cubes : 4 × 9 = 36 cubes. C'est une couche. (2) La boîte a 3 cm de haut : on empile 3 couches. 3 × 36 = 108 cubes. (3) Chaque cube a un volume de 1 cm³ : le volume de la boîte est 108 cm³. (4) Ce n'est pas 9 + 4 + 3 = 16 : on compte des cubes, pas des longueurs.
+
+*Indice.* Combien de cubes tiennent au fond de la boîte ? Combien de couches peut-on empiler ?
+
+**EX-P026-M-01** — maitrise, qcm, 100 s
+
+Deux pavés sont faits de cubes identiques. Le pavé A a 2 couches de 8 rangées de 9 cubes. Le pavé B a 4 couches de 6 rangées de 6 cubes. Lequel a le plus grand volume ?
+
+- **a.** Le pavé A, car ses rangées sont plus longues.
+  <br>*Erreur visée :* L'élève compare une seule dimension, la longueur des rangées (9 cubes contre 6), sans compter les cubes.
+- **b.** Le pavé B, car il a plus de couches.
+  <br>*Erreur visée :* L'élève compare seulement la hauteur, 4 couches contre 2, sans compter les cubes de chaque couche.
+- **c.** Ils ont le même volume. ✅
+
+*Corrigé.* (1) Pavé A : une couche compte 8 × 9 = 72 cubes, et 2 couches font 2 × 72 = 144 cubes. (2) Pavé B : une couche compte 6 × 6 = 36 cubes, et 4 couches font 4 × 36 = 144 cubes. (3) Les deux pavés contiennent 144 cubes identiques : ils ont le même volume. (4) Deux pavés de formes différentes peuvent avoir le même volume : pour comparer, on compte les cubes.
+
+*Indice.* Compte les cubes de chaque pavé, couche par couche.
+
+**EX-P026-M-02** — maitrise, numerique, 100 s
+
+Avec des cubes de 1 cm d'arête, Nora construit un pavé de 120 cm³. Chaque couche compte 3 rangées de 8 cubes. Combien de couches a-t-elle empilées ?
+
+**Réponse :** 5
+
+*Corrigé.* (1) Un volume de 120 cm³, c'est 120 cubes de 1 cm³. (2) Une couche : 3 rangées de 8 cubes, 3 × 8 = 24 cubes. (3) On empile les couches une par une et on compte les cubes : 24 ; 48 ; 72 ; 96 ; 120. Il faut 5 couches pour arriver à 120. (4) Vérification : 5 × 24 = 120. Nora a empilé 5 couches.
+
+*Indice.* Combien de cubes dans une couche ? Ajoute une couche à la fois jusqu'à 120 cubes.
+
+---
+
+## `P027` · Convertir des durées : système décimal et sexagésimal — 6e, difficulté 4
+
+*Connaître les unités jour, heure, minute, seconde et leurs relations (1 jour = 24 h) ; convertir une durée écrite en nombre décimal d'heures en heures et minutes et inversement (2,5 h = 2 h 30 min ; 1 h 45 min = 1,75 h), et calculer sur des horaires et des durées.*
+
+> « Concernant les durées, les élèves résolvent des problèmes mobilisant des conversions entre le système décimal et le système sexagésimal, consolidant leurs compétences en gestion des unités de temps. » — *Cycle 3, classe de 6e, Grandeurs et mesures*
+> « L'élève connaît les unités de mesure de durées jour, heure, minute et seconde et les relations qui les lient. » — *Cycle 3, classe de 6e, Grandeurs et mesures, Le repérage dans le temps et les durées*
+> « Convertir des durées » — *Cycle 3, classe de 6e, Grandeurs et mesures, Le repérage dans le temps et les durées*
+> « Effectuer des calculs sur des horaires et des durées » — *Cycle 3, classe de 6e, Grandeurs et mesures, Le repérage dans le temps et les durées*
+
+**EX-P027-D-01** — decouverte, qcm, 45 s
+
+Un trajet en voiture dure 3,5 h. Quelle est cette durée en heures et minutes ?
+
+- **a.** 3 h 50 min
+  <br>*Erreur visée :* L'élève lit les chiffres après la virgule comme des minutes, comme si une heure valait 100 minutes. Or 0,5 h, c'est la moitié d'une heure, donc 30 minutes.
+- **b.** 3 h 30 min ✅
+- **c.** 3 h 5 min
+  <br>*Erreur visée :* L'élève recopie le 5 des dixièmes comme 5 minutes. Or 0,5 h, ce sont 5 dixièmes d'heure, et un dixième d'heure dure 6 minutes.
+
+*Corrigé.* (1) 3,5 h, c'est 3 h plus 0,5 h. (2) 0{,}5 = 5/10 = 1/2 : 0,5 h est une demi-heure, c'est-à-dire 30 min. (3) Donc 3,5 h = 3 h 30 min. (4) L'écriture décimale compte en dixièmes d'heure, alors qu'une heure contient 60 minutes : le chiffre après la virgule n'est pas un nombre de minutes.
+
+*Indice.* Que vaut 0,5 h ? Pense à une fraction simple de l'heure.
+
+**EX-P027-D-02** — decouverte, numerique, 60 s
+
+Une croisière dure 3 jours et 5 heures. Combien d'heures dure-t-elle ?
+
+**Réponse :** 77
+
+*Corrigé.* (1) Un jour dure 24 heures : de minuit à minuit, on compte 24 heures. (2) 3 jours durent 3 fois 24 heures : 3 × 24 = 72 heures. (3) On ajoute les 5 heures : 72 + 5 = 77. La croisière dure 77 heures. (4) Erreur à éviter : coller les nombres et répondre 35 heures. Un jour ne compte pas 10 heures, mais 24.
+
+*Indice.* Combien d'heures dure un jour ?
+
+**EX-P027-E-01** — entrainement, texte, 75 s
+
+Une randonnée dure 4,2 h. Écris cette durée en heures et minutes.
+
+**Réponse :** 4 h 12 min
+
+*Corrigé.* (1) 4,2 h, c'est 4 h plus 0,2 h, c'est-à-dire 2 dixièmes d'heure. (2) Un dixième d'heure dure 60 ÷ 10 = 6 minutes. (3) 2 dixièmes d'heure durent 2 × 6 = 12 minutes. (4) La randonnée dure 4 h 12 min. (5) Erreur à éviter : écrire 4 h 20 min ou 4 h 2 min. Le chiffre des dixièmes compte des dixièmes d'heure, pas des minutes.
+
+*Indice.* Combien de minutes dure un dixième d'heure ?
+
+**EX-P027-E-02** — entrainement, numerique, 75 s
+
+Une séance de cinéma dure 2 h 15 min. Écris cette durée en heures, avec un nombre décimal.
+
+**Réponse :** 2.25
+
+*Corrigé.* (1) 15 min, c'est un quart d'heure : 15/60 = 1/4. (2) 1/4 = 25/100 = 0{,}25 : 15 min = 0,25 h. (3) 2 h 15 min = 2 h + 0,25 h = 2,25 h. (4) Erreur à éviter : écrire 2,15 h. 2,15 h, c'est 2 h et 15 centièmes d'heure, soit 2 h 9 min.
+
+*Indice.* Quelle fraction de l'heure représentent 15 minutes ?
+
+**EX-P027-M-01** — maitrise, vrai_faux, 120 s
+
+Lou fait du vélo pendant 1 h 30 min, puis pendant 2,75 h. Elle affirme avoir roulé 4 h 05 min en tout. A-t-elle raison ?
+
+**Réponse :** False
+
+*Corrigé.* (1) On convertit 2,75 h en heures et minutes : 0{,}75 = 75/100 = 3/4, et trois quarts d'heure durent 3 × 15 = 45 minutes. Donc 2,75 h = 2 h 45 min. (2) On ajoute : 1 h 30 min + 2 h 45 min = 3 h 75 min. (3) 75 min = 1 h 15 min, donc 3 h 75 min = 4 h 15 min. (4) Lou a tort : elle a roulé 4 h 15 min, soit 4,25 h. On le retrouve en décimal : 1 h 30 min = 1,5 h et 1{,}5 + 2{,}75 = 4{,}25. (5) Son erreur : elle a lu 2,75 h comme 2 h 75 min, a obtenu 1 h 30 min + 2 h 75 min = 3 h 105 min, puis a transformé 105 min en 1 h 05 min en comptant 100 minutes dans une heure.
+
+*Indice.* Écris d'abord 2,75 h en heures et minutes.
+
+**EX-P027-M-02** — maitrise, qcm, 120 s
+
+Entre deux villes, le train met 3 h 12 min et l'avion 1,2 h. Combien de temps de plus met le train ?
+
+- **a.** 1 h 52 min
+  <br>*Erreur visée :* L'élève lit 1,2 h comme 1 h 20 min, en prenant le chiffre des dixièmes pour des dizaines de minutes, puis calcule 3 h 12 min − 1 h 20 min = 1 h 52 min. Or 0,2 h ne vaut que 12 minutes.
+- **b.** 1,92 h
+  <br>*Erreur visée :* L'élève écrit 3 h 12 min sous la forme 3,12 h, en prenant les minutes pour des centièmes d'heure, puis calcule 3{,}12 - 1{,}2 = 1{,}92. Or 12 minutes ne font pas 12 centièmes d'heure.
+- **c.** 2 h ✅
+
+*Corrigé.* (1) On met les deux durées dans la même écriture. L'avion : 1,2 h = 1 h + 0,2 h. (2) Un dixième d'heure dure 60 ÷ 10 = 6 minutes, donc 0,2 h = 2 × 6 = 12 minutes. L'avion met 1 h 12 min. (3) Écart : 3 h 12 min − 1 h 12 min = 2 h. Le train met 2 h de plus. (4) Autre chemin, en décimal : 12 min = 12/60 h = 2/10 h = 0,2 h, donc le train met 3,2 h, et 3{,}2 - 1{,}2 = 2.
+
+*Indice.* Convertis d'abord la durée de l'avion en heures et minutes.
+
+---
+
 ## `D006` · Multiplier deux nombres décimaux — 6e, difficulté 5
 
 *Calculer le produit de deux décimaux en se ramenant au produit de deux entiers puis en plaçant la virgule, et contrôler le résultat par un ordre de grandeur.*
@@ -5913,6 +7592,88 @@ Un terrain de football mesure 100 m de long. On le dessine sur deux plans. Sur l
 *Corrigé.* (1) Plan A : 1 cm représente 10 m, et 10 × 10 = 100. Il faut 10 fois 1 cm : le terrain mesure 10 cm sur le plan A. (2) Plan B : 1 cm représente 25 m, et 4 × 25 = 100. Il faut 4 fois 1 cm : le terrain mesure 4 cm sur le plan B. (3) 10 cm sur le plan A, 4 cm sur le plan B : le terrain est dessiné plus long sur le plan A. Réponse c. (4) Retiens : plus la longueur réelle représentée par 1 cm est grande, plus le dessin est petit.
 
 *Indice.* Calcule la longueur du terrain sur chaque plan.
+
+---
+
+## `P023` · Périmètre d'un disque — 6e, difficulté 5
+
+*Savoir que le périmètre d'un disque est proportionnel à son diamètre, connaître la formule (diamètre × π, ou 2 × rayon × π) et calculer un périmètre en prenant 3,14 comme valeur approchée de π. Diamètres ou rayons entiers.*
+
+> « Savoir que le périmètre du disque est proportionnel à son diamètre » — *Cycle 3, classe de 6e, Grandeurs et mesures, Les longueurs*
+> « Connaître la formule du périmètre d'un disque » — *Cycle 3, classe de 6e, Grandeurs et mesures, Les longueurs*
+> « Calculer le périmètre d'un disque » — *Cycle 3, classe de 6e, Grandeurs et mesures, Les longueurs*
+
+**EX-P023-D-01** — decouverte, numerique, 75 s
+
+Un cerceau de gymnastique a un diamètre de 80 cm. En prenant 3,14 pour \pi, calcule son périmètre avec la formule P = d × \pi, où d est le diamètre.
+
+**Réponse :** 251.2
+
+*Corrigé.* (1) Le périmètre d'un disque (on dit souvent le périmètre du cercle) s'obtient en multipliant son diamètre par \pi : P = d × \pi. (2) On remplace d par 80 et \pi par 3,14 : P = 80 × 3{,}14. (3) On pose 314 × 80 = 25 120, puis on place la virgule : deux chiffres après la virgule dans 3,14, donc deux dans le produit : 251,20. (4) Le périmètre du cerceau est 251,2 cm. Contrôle : c'est un peu plus que 3 × 80 = 240, comme attendu puisque \pi est un peu plus grand que 3. Le résultat est une valeur approchée, car 3,14 est une valeur approchée de \pi.
+
+*Indice.* Remplace d par le diamètre et \pi par 3,14.
+
+**EX-P023-D-02** — decouverte, qcm, 60 s
+
+En prenant 3,14 pour \pi, une assiette de 25 cm de diamètre a un périmètre de 78,5 cm. Le périmètre d'un disque est proportionnel à son diamètre. Quel est le périmètre d'un plat de 50 cm de diamètre ?
+
+- **a.** 157 cm ✅
+- **b.** 103,5 cm
+  <br>*Erreur visée :* L'élève ajoute 25 cm au périmètre parce que le diamètre a augmenté de 25 cm : il raisonne par addition au lieu de multiplier.
+- **c.** 314 cm
+  <br>*Erreur visée :* L'élève prend 50 cm pour un rayon et calcule 2 × 50 × 3,14 = 314 : il confond rayon et diamètre.
+- **d.** 128,5 cm
+  <br>*Erreur visée :* L'élève ajoute le nouveau diamètre au périmètre de l'assiette (78,5 + 50) au lieu de multiplier.
+
+*Corrigé.* (1) Le périmètre est proportionnel au diamètre : quand le diamètre est multiplié par un nombre, le périmètre est multiplié par le même nombre. (2) Le diamètre passe de 25 cm à 50 cm : il est multiplié par 2 (25 × 2 = 50). Le périmètre est donc multiplié par 2 : 78{,}5 × 2 = 157. (3) Vérification avec la formule : P = 50 × 3{,}14 = 157. Le périmètre du plat est 157 cm.
+
+*Indice.* Par combien le diamètre est-il multiplié ?
+
+**EX-P023-E-01** — entrainement, numerique, 90 s
+
+Le cadran rond d'une horloge a un rayon de 18 cm. En prenant 3,14 pour \pi, calcule le périmètre du cadran. Donne le résultat arrondi au centimètre.
+
+**Réponse :** 113
+
+*Corrigé.* (1) On connaît le rayon, pas le diamètre. Le diamètre est le double du rayon : d = 2 × 18 = 36, soit 36 cm. (2) P = d × \pi, donc P = 36 × 3{,}14 = 113{,}04. On pose 314 × 36 = 11 304, puis on place deux chiffres après la virgule. (3) Arrondi au centimètre : 113,04 est entre 113 et 114, plus près de 113. Le périmètre du cadran est d'environ 113 cm. (4) Piège : 18 × 3{,}14 = 56{,}52 ne donne que la moitié du tour, car 18 cm est le rayon et non le diamètre. On peut aussi écrire P = 2 × r × \pi.
+
+*Indice.* La formule utilise le diamètre. Que vaut le diamètre quand on connaît le rayon ?
+
+**EX-P023-E-02** — entrainement, vrai_faux, 75 s
+
+Une table ronde a un rayon de 45 cm. Zoé prend 3,14 pour \pi et écrit : 45 × 3{,}14 = 141{,}3, donc le périmètre de la table est 141,3 cm. Zoé a-t-elle raison ?
+
+**Réponse :** False
+
+*Corrigé.* (1) Le calcul 45 × 3{,}14 = 141{,}3 est juste, mais ce n'est pas le bon calcul : la formule P = d × \pi utilise le diamètre, et 45 cm est le rayon. (2) Le diamètre est le double du rayon : d = 2 × 45 = 90, soit 90 cm. (3) P = 90 × 3{,}14 = 282{,}6. Le périmètre est 282,6 cm, le double du résultat de Zoé : Zoé a tort. (4) Même calcul avec l'autre écriture de la formule : P = 2 × r × \pi = 2 × 45 × 3{,}14 = 282{,}6.
+
+*Indice.* Dans P = d × \pi, que représente d ?
+
+**EX-P023-M-01** — maitrise, qcm, 150 s
+
+La roue d'une brouette a un diamètre de 35 cm. Pendant le trajet, la roue fait 20 tours. En prenant 3,14 pour \pi, quelle distance la brouette a-t-elle parcourue ?
+
+- **a.** 700 cm
+  <br>*Erreur visée :* L'élève multiplie le diamètre par le nombre de tours (35 × 20 = 700) : il croit qu'en un tour la roue avance de son diamètre, et oublie π.
+- **b.** 4 396 cm
+  <br>*Erreur visée :* L'élève prend 35 cm pour un rayon : 2 × 35 × 3,14 × 20 = 4 396. Il confond rayon et diamètre.
+- **c.** 2 198 cm ✅
+- **d.** 109,9 cm
+  <br>*Erreur visée :* L'élève calcule la distance parcourue pendant un seul tour de roue et oublie les 20 tours.
+
+*Corrigé.* (1) En un tour, la roue avance de la longueur de son contour, c'est-à-dire de son périmètre : P = 35 × 3{,}14 = 109{,}9, soit 109,9 cm. (2) En 20 tours, elle avance 20 fois plus : 109{,}9 × 20 = 2 198. On pose 1 099 × 20 = 21 980 et on place un chiffre après la virgule : 2 198,0. (3) La brouette a parcouru 2 198 cm.
+
+*Indice.* De combien la roue avance-t-elle en un seul tour ?
+
+**EX-P023-M-02** — maitrise, numerique, 150 s
+
+Un bassin rond a un diamètre de 30 m. Un bassin carré a des côtés de 30 m. En prenant 3,14 pour \pi, de combien de mètres le tour du bassin carré est-il plus long que le tour du bassin rond ?
+
+**Réponse :** 25.8
+
+*Corrigé.* (1) Tour du bassin rond : P = d × \pi = 30 × 3{,}14 = 94{,}2, soit 94,2 m. (2) Tour du bassin carré : P = 4 × c = 4 × 30 = 120, soit 120 m. (3) Différence : 120 - 94{,}2 = 25{,}8. On pose la soustraction en alignant les virgules : 120{,}0 - 94{,}2 = 25{,}8. (4) Le tour du bassin carré est plus long de 25,8 m. C'est logique : un disque de 30 m de diamètre tient à l'intérieur d'un carré de 30 m de côté, son contour est plus court.
+
+*Indice.* Calcule le tour de chaque bassin avec la formule qui lui correspond, puis la différence.
 
 ---
 
