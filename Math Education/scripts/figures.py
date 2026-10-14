@@ -77,10 +77,28 @@ def _nombre(v, champ: str) -> Fraction:
     raise FigureInvalide(f"{champ} : nombre attendu")
 
 
+# Espace fine insecable (U+202F) entre les tranches de trois chiffres : « 4 000 »,
+# comme dans les enonces. Ecrite par son code, invisible a la relecture.
+ESPACE_MILLIERS = chr(0x202F)
+
+
+def _milliers(entier: int) -> str:
+    """12345 -> « 12 345 » (a partir de 10 000 ; 1 000 a 9 999 aussi, comme au primaire)."""
+    signe = "-" if entier < 0 else ""
+    chiffres = str(abs(entier))
+    if len(chiffres) <= 3:
+        return signe + chiffres
+    tranches = []
+    while chiffres:
+        tranches.insert(0, chiffres[-3:])
+        chiffres = chiffres[:-3]
+    return signe + ESPACE_MILLIERS.join(tranches)
+
+
 def _texte_nombre(x: Fraction, style: str = "auto") -> str:
-    """Ecriture francaise : 2,5 ; 3/4 si demande ou si non decimal."""
+    """Ecriture francaise : 4 000 ; 2,5 ; 3/4 si demande ou si non decimal."""
     if x.denominator == 1:
-        return str(x.numerator)
+        return _milliers(x.numerator)
     if style == "fraction":
         return f"{x.numerator}/{x.denominator}"
     d = x.denominator
@@ -91,7 +109,8 @@ def _texte_nombre(x: Fraction, style: str = "auto") -> str:
     if d != 1:
         return f"{x.numerator}/{x.denominator}"
     s = f"{float(x):.6f}".rstrip("0").rstrip(".")
-    return s.replace(".", ",")
+    entiere, _, decimale = s.partition(".")
+    return _milliers(int(entiere)) + ("," + decimale if decimale else "")
 
 
 def _echapper(t: str) -> str:
