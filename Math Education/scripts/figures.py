@@ -506,6 +506,294 @@ def _monnaie(p: dict) -> tuple[str, str]:
     return _svg(L, H, corps, alt), alt
 
 
+def _geometrie(p: dict) -> tuple[str, str]:
+    """Figure de geometrie plane : points, segments, droites, polygones, cercles,
+    angles et codages, sur fond blanc, quadrille ou pointe.
+
+    Les coordonnees sont en unites du fond (un carreau = une unite), origine en
+    haut a gauche, x vers la droite, y vers le BAS (comme `quadrillage`). Elles
+    peuvent etre fractionnaires ("2.5", "7/2").
+
+    params :
+      colonnes, lignes  taille du cadre en unites (2 a 12, 2 a 10)
+      fond        "blanc" (defaut), "quadrille" ou "pointe"
+      points      {"A": [x, y], ...} : chaque point nomme est marque d'une croix
+                  et de son nom ; un nom commencant par "_" n'est ni marque ni
+                  nomme (point de construction, par exemple l'autre bout d'un axe)
+      etiquettes  {"A": "haut" | "bas" | "gauche" | "droite" | "haut_gauche" ...}
+                  pour forcer la place d'un nom (sinon : a l'oppose du centre)
+      elements    liste, dessinee dans l'ordre :
+        {"segment": ["A", "B"]}
+        {"droite": ["A", "B"], "nom": "(d)"}     droite prolongee jusqu'au cadre
+        {"demi_droite": ["A", "B"]}              d'origine A, passant par B
+        {"polygone": ["A", "B", "C", ...], "rempli": true}
+        {"cercle": "O", "rayon": 3}  ou  {"cercle": "O", "passe_par": "A"}
+        {"axe": ["A", "B"]}                      droite en tirets (axe de symetrie)
+        {"angle": ["B", "A", "C"], "nom": "1"}   arc au sommet A (angle saillant)
+        {"angle_droit": ["B", "A", "C"]}         petit carre au sommet A
+        {"codage": [["A", "B"], ["C", "D"]], "marque": 1}
+                                                 traits sur des segments de meme longueur
+      Options d'un element : "couleur": "accent" (bleu) ou "trait" (defaut),
+      "style": "pointille".
+
+    Controles (une figure exacte ne doit pas mentir) : un angle droit code doit
+    etre droit, des segments codes egaux doivent etre egaux, tout point doit
+    tenir dans le cadre.
+    """
+    nc = _entier(p, "colonnes", 2, 12)
+    nl = _entier(p, "lignes", 2, 10)
+    fond = p.get("fond", "blanc")
+    if fond not in ("blanc", "quadrille", "pointe"):
+        raise FigureInvalide("fond : \"blanc\", \"quadrille\" ou \"pointe\"")
+    s, m = 26, 16
+    L, H = 2 * m + nc * s, 2 * m + nl * s
+
+    brut = p.get("points", {})
+    if not isinstance(brut, dict) or not brut:
+        raise FigureInvalide("points : objet {\"A\": [x, y]} attendu")
+    pts: dict[str, tuple[Fraction, Fraction]] = {}
+    for nom, xy in brut.items():
+        if not (isinstance(nom, str) and 1 <= len(nom) <= 4):
+            raise FigureInvalide(f"points : nom « {nom} » invalide (1 a 4 caracteres)")
+        if not (isinstance(xy, list) and len(xy) == 2):
+            raise FigureInvalide(f"point {nom} : [x, y] attendu")
+        x, y = _nombre(xy[0], f"point {nom}"), _nombre(xy[1], f"point {nom}")
+        if not (0 <= x <= nc and 0 <= y <= nl):
+            raise FigureInvalide(f"point {nom} : hors du cadre ({nc} x {nl})")
+        pts[nom] = (x, y)
+
+    def P(nom) -> tuple[Fraction, Fraction]:
+        if nom not in pts:
+            raise FigureInvalide(f"point « {nom} » non defini dans points")
+        return pts[nom]
+
+    def px(pt) -> tuple[float, float]:
+        return m + float(pt[0]) * s, m + float(pt[1]) * s
+
+    def dist2(a, b) -> Fraction:
+        return (a[0] - b[0]) ** 2 + (a[1] - b[1]) ** 2
+
+    def couleur(e) -> str:
+        return ACCENT if e.get("couleur") == "accent" else TRAIT
+
+    def tirets(e) -> str:
+        return ' stroke-dasharray="5 4"' if e.get("style") == "pointille" else ""
+
+    def trait(a, b, e, epaisseur=2.0, extra="") -> str:
+        (x1, y1), (x2, y2) = a, b
+        return (f'<line x1="{x1:.1f}" y1="{y1:.1f}" x2="{x2:.1f}" y2="{y2:.1f}" stroke="{couleur(e)}" '
+                f'stroke-width="{epaisseur}" stroke-linecap="round"{tirets(e)}{extra}/>')
+
+    def jusquau_cadre(a, b, deux_sens: bool) -> tuple[tuple[float, float], tuple[float, float]]:
+        """Prolonge [ab] jusqu'aux bords du cadre (en pixels)."""
+        (ax, ay), (bx, by) = px(a), px(b)
+        dx, dy = bx - ax, by - ay
+        if dx == 0 and dy == 0:
+            raise FigureInvalide("droite : deux points confondus")
+        ts = []
+        for bord, d, o in ((4, dx, ax), (L - 4, dx, ax), (4, dy, ay), (H - 4, dy, ay)):
+            if d:
+                ts.append((bord - o) / d)
+        t_max = min(t for t in ts if t > 0)
+        t_min = max(t for t in ts if t < 0) if deux_sens else 0.0
+        return (ax + t_min * dx, ay + t_min * dy), (ax + t_max * dx, ay + t_max * dy)
+
+    corps: list[str] = []
+    if fond == "quadrille":
+        for k in range(nc + 1):
+            corps.append(_ligne(m + k * s, m, m + k * s, m + nl * s, couleur="#cbd5e1", epaisseur=1))
+        for k in range(nl + 1):
+            corps.append(_ligne(m, m + k * s, m + nc * s, m + k * s, couleur="#cbd5e1", epaisseur=1))
+    elif fond == "pointe":
+        for i in range(nc + 1):
+            for j in range(nl + 1):
+                corps.append(f'<circle cx="{m + i * s}" cy="{m + j * s}" r="1.6" fill="{DOUX}"/>')
+
+    for i, e in enumerate(p.get("elements", [])):
+        if not isinstance(e, dict):
+            raise FigureInvalide(f"element {i + 1} : objet attendu")
+        if "segment" in e:
+            a, b = e["segment"]
+            corps.append(trait(px(P(a)), px(P(b)), e))
+        elif "droite" in e or "axe" in e or "demi_droite" in e:
+            cle = "droite" if "droite" in e else "axe" if "axe" in e else "demi_droite"
+            a, b = e[cle]
+            u, v = jusquau_cadre(P(a), P(b), deux_sens=cle != "demi_droite")
+            if cle == "axe":
+                e = {**e, "style": "pointille"}
+            corps.append(trait(u, v, e, epaisseur=1.6 if cle == "axe" else 1.8))
+            if e.get("nom"):
+                # Nom de la droite pres de son extremite, decale perpendiculairement.
+                dx, dy = v[0] - u[0], v[1] - u[1]
+                n = math.hypot(dx, dy)
+                ex, ey = v[0] - dx / n * 16 - dy / n * 12, v[1] - dy / n * 16 + dx / n * 12
+                corps.append(_texte(min(max(ex, 12), L - 12), min(max(ey + 5, 14), H - 4),
+                                    str(e["nom"])[:5], 14, couleur=couleur(e)))
+        elif "polygone" in e:
+            sommets = [px(P(n)) for n in e["polygone"]]
+            if len(sommets) < 3:
+                raise FigureInvalide(f"element {i + 1} : polygone de 3 sommets au moins")
+            remp = REMPLI if e.get("rempli") else "none"
+            chemin = " ".join(f"{x:.1f},{y:.1f}" for x, y in sommets)
+            corps.append(f'<polygon points="{chemin}" fill="{remp}" fill-opacity="0.6" stroke="{couleur(e)}" '
+                         f'stroke-width="2" stroke-linejoin="round"{tirets(e)}/>')
+        elif "cercle" in e:
+            o = P(e["cercle"])
+            if "passe_par" in e:
+                r = math.sqrt(float(dist2(o, P(e["passe_par"]))))
+            else:
+                r = float(_nombre(e.get("rayon"), "cercle.rayon"))
+            if r <= 0:
+                raise FigureInvalide(f"element {i + 1} : rayon nul")
+            if not (float(o[0]) - r >= -1e-9 and float(o[0]) + r <= nc + 1e-9
+                    and float(o[1]) - r >= -1e-9 and float(o[1]) + r <= nl + 1e-9):
+                raise FigureInvalide(f"element {i + 1} : le cercle sort du cadre")
+            cx, cy = px(o)
+            corps.append(f'<circle cx="{cx:.1f}" cy="{cy:.1f}" r="{r * s:.1f}" fill="none" '
+                         f'stroke="{couleur(e)}" stroke-width="2"{tirets(e)}/>')
+        elif "angle" in e or "angle_droit" in e:
+            droit = "angle_droit" in e
+            b, a, c = e["angle_droit" if droit else "angle"]
+            A, B, C = P(a), P(b), P(c)
+            u = (B[0] - A[0], B[1] - A[1])
+            v = (C[0] - A[0], C[1] - A[1])
+            if u == (0, 0) or v == (0, 0):
+                raise FigureInvalide(f"element {i + 1} : angle avec un cote nul")
+            if droit and u[0] * v[0] + u[1] * v[1] != 0:
+                raise FigureInvalide(f"element {i + 1} : l'angle {b}{a}{c} est code droit mais ne l'est pas")
+            nu, nv = math.hypot(*map(float, u)), math.hypot(*map(float, v))
+            ux, uy = float(u[0]) / nu, float(u[1]) / nu
+            vx, vy = float(v[0]) / nv, float(v[1]) / nv
+            ax, ay = px(A)
+            if droit:
+                k = 11
+                chemin = (f"M{ax + ux * k:.1f},{ay + uy * k:.1f} L{ax + (ux + vx) * k:.1f},{ay + (uy + vy) * k:.1f} "
+                          f"L{ax + vx * k:.1f},{ay + vy * k:.1f}")
+                corps.append(f'<path d="{chemin}" fill="none" stroke="{couleur(e)}" stroke-width="1.6"/>')
+            else:
+                r = float(e.get("rayon_arc", 20))
+                balayage = 1 if ux * vy - uy * vx > 0 else 0
+                chemin = (f"M{ax + ux * r:.1f},{ay + uy * r:.1f} "
+                          f"A{r},{r} 0 0 {balayage} {ax + vx * r:.1f},{ay + vy * r:.1f}")
+                corps.append(f'<path d="{chemin}" fill="none" stroke="{ACCENT}" stroke-width="2"/>')
+                if e.get("nom"):
+                    bx, by = ux + vx, uy + vy
+                    nb = math.hypot(bx, by) or 1.0
+                    corps.append(_texte(ax + bx / nb * (r + 12), ay + by / nb * (r + 12) + 5,
+                                        str(e["nom"])[:3], 13, couleur=ACCENT, gras=True))
+        elif "codage" in e:
+            marque = e.get("marque", 1)
+            if marque not in (1, 2, 3):
+                raise FigureInvalide(f"element {i + 1} : marque 1, 2 ou 3")
+            segs = e["codage"]
+            longueurs = {dist2(P(a), P(b)) for a, b in segs}
+            if len(longueurs) > 1:
+                raise FigureInvalide(f"element {i + 1} : segments codes egaux mais de longueurs differentes")
+            for a, b in segs:
+                (x1, y1), (x2, y2) = px(P(a)), px(P(b))
+                dx, dy = x2 - x1, y2 - y1
+                n = math.hypot(dx, dy)
+                tx, ty, nx, ny = dx / n, dy / n, -dy / n, dx / n
+                mx, my = (x1 + x2) / 2, (y1 + y2) / 2
+                for k in range(marque):
+                    d = (k - (marque - 1) / 2) * 5
+                    cx, cy = mx + tx * d, my + ty * d
+                    corps.append(_ligne(cx - nx * 6 + tx * 2, cy - ny * 6 + ty * 2,
+                                        cx + nx * 6 - tx * 2, cy + ny * 6 - ty * 2,
+                                        couleur=ACCENT, epaisseur=1.6))
+        else:
+            raise FigureInvalide(f"element {i + 1} : type inconnu ({', '.join(e)})")
+
+    # Points : une croix et le nom, a l'oppose du centre de la figure.
+    visibles = [n for n in pts if not n.startswith("_")]
+    gx = sum(float(pts[n][0]) for n in visibles) / max(len(visibles), 1)
+    gy = sum(float(pts[n][1]) for n in visibles) / max(len(visibles), 1)
+    places = {"haut": (0, -1), "bas": (0, 1), "gauche": (-1, 0), "droite": (1, 0),
+              "haut_gauche": (-0.7, -0.7), "haut_droite": (0.7, -0.7),
+              "bas_gauche": (-0.7, 0.7), "bas_droite": (0.7, 0.7)}
+    forcees = p.get("etiquettes", {})
+    for nom in visibles:
+        x, y = px(pts[nom])
+        corps.append(_ligne(x - 4, y - 4, x + 4, y + 4, epaisseur=1.6))
+        corps.append(_ligne(x - 4, y + 4, x + 4, y - 4, epaisseur=1.6))
+        if nom in forcees:
+            if forcees[nom] not in places:
+                raise FigureInvalide(f"etiquettes.{nom} : {', '.join(places)}")
+            dx, dy = places[forcees[nom]]
+        else:
+            dx, dy = float(pts[nom][0]) - gx, float(pts[nom][1]) - gy
+            n = math.hypot(dx, dy)
+            dx, dy = (dx / n, dy / n) if n > 1e-9 else (0.0, -1.0)
+        tx = min(max(x + dx * 14, 8), L - 8)
+        ty = min(max(y + dy * 14 + 5, 14), H - 3)
+        corps.append(_texte(tx, ty, nom, 15, gras=True))
+
+    alt = "Figure de géométrie"
+    if visibles:
+        alt += " avec les points " + ", ".join(visibles)
+    return _svg(L, H, corps, alt), alt
+
+
+def _rapporteur(p: dict) -> tuple[str, str]:
+    """Un angle pose sur un rapporteur gradue de 0 a 180 degres.
+
+    params :
+      angle       mesure de l'angle en degres (5 a 175, multiple de 5)
+      depart      "droite" (defaut : le premier cote passe par le 0 de droite)
+                  ou "gauche" (il passe par le 0 de gauche : on lit l'autre echelle)
+      echelles    "double" (defaut, deux graduations en sens contraire, comme un
+                  vrai rapporteur) ou "simple"
+      sommet, cotes  noms : "O" et ["A", "B"] par defaut (A sur le premier cote)
+    """
+    a = _entier(p, "angle", 5, 175)
+    if a % 5:
+        raise FigureInvalide("angle : multiple de 5 (graduations de 5 en 5)")
+    depart = p.get("depart", "droite")
+    if depart not in ("droite", "gauche"):
+        raise FigureInvalide("depart : \"droite\" ou \"gauche\"")
+    double = p.get("echelles", "double") == "double"
+    sommet = str(p.get("sommet", "O"))[:2]
+    cotes = p.get("cotes", ["A", "B"])
+    L, R = 344, 148
+    cx, cy = L / 2, 172
+    H = cy + 26
+
+    def point(deg: float, r: float) -> tuple[float, float]:
+        t = math.radians(deg)
+        return cx + r * math.cos(t), cy - r * math.sin(t)
+
+    corps = [f'<path d="M{cx - R},{cy} A{R},{R} 0 0 1 {cx + R},{cy} Z" fill="#fef9c3" '
+             f'fill-opacity="0.85" stroke="{TRAIT}" stroke-width="1.2"/>']
+    for d in range(0, 181, 5):
+        long = 10 if d % 10 == 0 else 6
+        x1, y1 = point(d, R)
+        x2, y2 = point(d, R - long)
+        corps.append(_ligne(x1, y1, x2, y2, epaisseur=1.2 if d % 10 == 0 else 0.8))
+        if d % 10 == 0:
+            # Aux deux bouts, les nombres remontent au-dessus de la base, que
+            # couvre un cote de l'angle.
+            haut = -8 if d in (0, 180) else 4
+            x, y = point(d, R - 20)
+            corps.append(_texte(x, y + haut, str(d), 10))
+            if double:
+                x, y = point(d, R - 40)
+                corps.append(_texte(x, y + haut, str(180 - d), 9, couleur="#b91c1c"))
+    corps.append(f'<circle cx="{cx}" cy="{cy}" r="2.5" fill="{TRAIT}"/>')
+    # Les deux cotes de l'angle, qui depassent du rapporteur.
+    d1 = 0 if depart == "droite" else 180
+    d2 = a if depart == "droite" else 180 - a
+    for d, nom in ((d1, cotes[0]), (d2, cotes[1])):
+        x, y = point(d, R + 12)
+        corps.append(_ligne(cx, cy, x, y, couleur=ACCENT, epaisseur=2.2))
+        lx, ly = point(d, R + 4)
+        decal = 12 if d < 90 else -12 if d > 90 else 0
+        corps.append(_texte(min(max(lx + decal, 8), L - 8), max(ly - 6, 12), str(nom)[:2], 14,
+                            couleur=ACCENT, gras=True))
+    corps.append(_texte(cx, cy + 20, sommet, 14, gras=True))
+    alt = f"Angle de sommet {sommet} posé sur un rapporteur"
+    return _svg(L, H, corps, alt), alt
+
+
 GENERATEURS = {
     "demi_droite": _demi_droite,
     "regle": _regle,
@@ -514,6 +802,8 @@ GENERATEURS = {
     "partage": _partage,
     "bandes": _bandes,
     "monnaie": _monnaie,
+    "geometrie": _geometrie,
+    "rapporteur": _rapporteur,
 }
 
 
