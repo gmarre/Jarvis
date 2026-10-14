@@ -366,6 +366,38 @@ def check_validation_tests(dag: dict) -> None:
                 )
 
 
+_CLASSE_TITRE = re.compile(r"\b(CP|CE1|CE2|CM1|CM2|6e)\b")
+
+
+def check_champ_cartes(mindmaps: dict | None) -> None:
+    """Champ numerique des cartes, section par section.
+
+    Une section ``##`` dont le titre porte une classe entre parentheses
+    (« Comparer des masses (CE1) ») est lue par un eleve de cette classe : ses
+    nombres respectent le meme plafond que les exercices. Avec plusieurs
+    classes dans le titre, la plus petite fait foi. Une section sans classe
+    n'est pas controlee. Constat de l'etape 4a : 1 400 g dans une section de
+    CE1, que seul le controle des exercices aurait vu.
+    """
+    ordre = list(MAX_ENTIER)
+    for mm in (mindmaps or {}).get("mindmaps", []):
+        sections = re.split(r"(?m)^## ", mm.get("markdown", ""))[1:]
+        for section in sections:
+            titre, _, corps = section.partition("\n")
+            dans_parentheses = " ".join(re.findall(r"\(([^)]*)\)", titre))
+            classes = [c for c in _CLASSE_TITRE.findall(dans_parentheses) if c in MAX_ENTIER]
+            if not classes:
+                continue
+            classe = min(classes, key=ordre.index)
+            plafond = MAX_ENTIER[classe]
+            hors = sorted({n for n in _entiers(section) if n > plafond})
+            if hors:
+                err(
+                    f"Champ numerique : carte {mm['id']}, section « {titre.strip()} » "
+                    f"({classe}, plafond {plafond}) utilise {', '.join(str(n) for n in hors)}"
+                )
+
+
 def check_champ_numerique(dag: dict, exercises: dict) -> None:
     niveaux = {s["id"]: s["school_level"] for s in dag["skills"]}
 
@@ -892,6 +924,7 @@ def main() -> int:
         # en anomalie.
         err_avant = len(errors)
         check_champ_numerique(dag, exercises)
+        check_champ_cartes(mindmaps)
         print(f"  champ numerique       {'OK' if len(errors) == err_avant else 'ANOMALIES'}")
 
         warn_avant = len(warnings)
