@@ -4,23 +4,23 @@
     "skill_id": "A028",
     "level": "decouverte",
     "type": "numerique",
-    "statement": "Une demi-droite est graduée de 1 000 en 1 000 à partir de 0.\n\nQuel nombre est écrit à la quatrième graduation après 0 ?",
-    "image": null,
+    "statement": "Lis les nombres écrits sous la demi-droite graduée.\n\nQuel nombre est repéré par le point A ?",
+    "image": "figures/EX-A028-D-01",
     "answer": {
-      "value": 4000,
+      "value": 3500,
       "accepted": [
-        "4 000",
-        "4000"
+        "3 500",
+        "3500"
       ]
     },
     "solution_steps": [
-      "Sur une demi-droite graduée, l'écart entre deux graduations voisines est toujours le même. Ici il vaut 1 000.",
-      "Première graduation : 1 000. Deuxième : 2 000. Troisième : 3 000.",
-      "Quatrième : $4 \\times 1\\,000 = 4\\,000$.",
-      "Réponse : **4 000**."
+      "Sous les deux premières graduations, on lit 0 et 500 : d'une graduation à la suivante, on avance de 500.",
+      "On compte les intervalles, pas les traits, entre 0 et le point A : il y en a 7.",
+      "$7 \\times 500 = 3\\,500$. On peut aussi compter de 500 en 500 : 500, 1 000, 1 500, 2 000, 2 500, 3 000, 3 500.",
+      "Le point A repère **3 500**. Compter les traits en partant de celui de 0 donnerait 4 000, un de trop."
     ],
-    "hint": "Compte de 1 000 en 1 000 en partant de 0.",
-    "estimated_duration_s": 60,
+    "hint": "Regarde les deux nombres écrits : de combien avance-t-on d'une graduation à la suivante ?",
+    "estimated_duration_s": 75,
     "review_status": "relu_agent",
     "programme_ref": "Cycle 3, CM1, les nombres entiers : savoir placer des nombres et reperer des points sur une demi-droite graduee."
   },
@@ -29,35 +29,35 @@
     "skill_id": "A028",
     "level": "decouverte",
     "type": "qcm",
-    "statement": "Une demi-droite est graduée de 1 000 en 1 000 à partir de 0.\n\nOù faut-il placer le nombre 3 500 ?",
-    "image": null,
+    "statement": "Quel point de la demi-droite graduée repère le nombre 1 200 ?",
+    "image": "figures/EX-A028-D-02",
     "choices": [
       {
         "key": "a",
-        "text": "Juste au milieu entre les graduations 3 000 et 4 000",
-        "misconception": null
+        "text": "Le point A",
+        "misconception": "L'élève ne lit pas les nombres écrits et compte de 100 en 100 par habitude : il avance de 12 graduations et arrive sur 2 400."
       },
       {
         "key": "b",
-        "text": "Sur la graduation 3 000",
-        "misconception": "L'élève ne lit que le chiffre des milliers et pose le point sur la graduation précédente, comme si 3 500 valait 3 000."
+        "text": "Le point B",
+        "misconception": "L'élève compte les traits au lieu des intervalles : il compte le trait de 0 comme le premier et s'arrête une graduation trop tôt, sur 1 000."
       },
       {
         "key": "c",
-        "text": "Juste après la graduation 4 000",
-        "misconception": "L'élève arrondit 3 500 à 4 000, puis place le point au-delà de cette graduation alors que 3 500 est plus petit que 4 000."
+        "text": "Le point C",
+        "misconception": null
       }
     ],
     "answer": {
-      "value": "a"
+      "value": "c"
     },
     "solution_steps": [
-      "3 500 est plus grand que 3 000 et plus petit que 4 000 : il se trouve entre ces deux graduations.",
-      "L'écart entre deux graduations vaut 1 000, et 500 en est exactement la moitié.",
-      "$3\\,000 + 500 = 3\\,500$ : le point tombe donc au milieu de cet intervalle.",
-      "Réponse : juste au milieu entre 3 000 et 4 000."
+      "Sous les deux premières graduations, on lit 0 et 200 : on avance de 200 à chaque graduation.",
+      "On compte de 200 en 200 depuis 0 : 200, 400, 600, 800, 1 000, 1 200. Il faut 6 intervalles.",
+      "Le point situé 6 intervalles après 0 est le point C.",
+      "Le point B est sur 1 000 (5 intervalles) et le point A sur 2 400 (12 intervalles). La bonne réponse est c."
     ],
-    "hint": "Entre quelles deux graduations 3 500 se trouve-t-il ? Regarde ensuite s'il est plus près de l'une des deux.",
+    "hint": "De combien avance-t-on d'une graduation à la suivante ? Compte ensuite les intervalles depuis 0.",
     "estimated_duration_s": 75,
     "review_status": "relu_agent",
     "programme_ref": "Cycle 3, CM1, les nombres entiers : savoir placer des nombres et reperer des points sur une demi-droite graduee."
@@ -67,22 +67,22 @@
     "skill_id": "A028",
     "level": "entrainement",
     "type": "numerique",
-    "statement": "Sur une demi-droite graduée de 100 en 100, un point se situe 7 graduations après 2 000.\n\nQuelle est son abscisse ?",
-    "image": null,
+    "statement": "Quel nombre est repéré par le point A sur cette demi-droite graduée ?",
+    "image": "figures/EX-A028-E-01",
     "answer": {
-      "value": 2700,
+      "value": 43000,
       "accepted": [
-        "2 700",
-        "2700"
+        "43 000",
+        "43000"
       ]
     },
     "solution_steps": [
-      "L'abscisse d'un point, c'est le nombre qui lui correspond sur la demi-droite.",
-      "Chaque graduation avance de 100, donc sept graduations valent $7 \\times 100 = 700$.",
-      "On part de 2 000 : $2\\,000 + 700 = 2\\,700$.",
-      "L'abscisse du point est **2 700**."
+      "Entre 30 000 et 40 000, on compte 10 intervalles égaux.",
+      "Ces 10 intervalles valent ensemble $40\\,000 - 30\\,000 = 10\\,000$, donc un intervalle vaut $10\\,000 \\div 10 = 1\\,000$.",
+      "Le point A est 3 intervalles après 40 000 : $40\\,000 + 3\\,000 = 43\\,000$.",
+      "Le point A repère **43 000**. Prendre un intervalle pour 10 000 donnerait 70 000, un nombre qui n'est même pas sur ce dessin."
     ],
-    "hint": "Combien vaut un déplacement de 7 graduations, si chaque graduation vaut 100 ?",
+    "hint": "Combien d'intervalles entre les deux nombres écrits ? Combien vaut alors un seul intervalle ?",
     "estimated_duration_s": 90,
     "review_status": "relu_agent",
     "programme_ref": "Cycle 3, CM1, les nombres entiers : savoir placer des nombres et reperer des points sur une demi-droite graduee."
@@ -91,24 +91,37 @@
     "id": "EX-A028-E-02",
     "skill_id": "A028",
     "level": "entrainement",
-    "type": "texte",
-    "statement": "Une demi-droite est graduée de 20 en 20 à partir de 0.\n\nEntre quelles deux graduations se place 130 ? Sépare-les par une virgule.",
-    "image": null,
+    "type": "qcm",
+    "statement": "Quel nombre est repéré par le point A ?",
+    "image": "figures/EX-A028-E-02",
+    "choices": [
+      {
+        "key": "a",
+        "text": "1 300",
+        "misconception": "L'élève suppose qu'on avance de 100 en 100 sans le vérifier : or 4 intervalles séparent 0 de 1 000, donc chacun vaut 250."
+      },
+      {
+        "key": "b",
+        "text": "1 750",
+        "misconception": null
+      },
+      {
+        "key": "c",
+        "text": "1 600",
+        "misconception": "L'élève compte les traits au lieu des intervalles entre 0 et 1 000 : il en trouve 5 et croit qu'une graduation vaut $1\\,000 \\div 5 = 200$ ; 3 graduations après 1 000 donnent alors 1 600."
+      }
+    ],
     "answer": {
-      "value": "120, 140",
-      "accepted": [
-        "120,140",
-        "120 et 140"
-      ]
+      "value": "b"
     },
     "solution_steps": [
-      "Les graduations sont 0, 20, 40, 60, 80, 100, 120, 140, et ainsi de suite.",
-      "On avance jusqu'à dépasser 130 : après 120 vient 140.",
-      "130 est plus grand que 120 et plus petit que 140, et aucune graduation ne se trouve entre les deux.",
-      "Réponse : 120, 140."
+      "Entre 0 et 1 000, on compte 4 intervalles égaux : chacun vaut $1\\,000 \\div 4 = 250$.",
+      "Le point A est 3 intervalles après 1 000 : $3 \\times 250 = 750$.",
+      "$1\\,000 + 750 = 1\\,750$.",
+      "Vérification : 1 750 est aux trois quarts du chemin entre 1 000 et 2 000, comme le point A. La bonne réponse est b."
     ],
-    "hint": "Compte de 20 en 20 jusqu'à dépasser 130.",
-    "estimated_duration_s": 105,
+    "hint": "Combien d'intervalles faut-il pour aller de 0 à 1 000 ?",
+    "estimated_duration_s": 90,
     "review_status": "relu_agent",
     "programme_ref": "Cycle 3, CM1, les nombres entiers : savoir placer des nombres et reperer des points sur une demi-droite graduee."
   },
@@ -117,18 +130,18 @@
     "skill_id": "A028",
     "level": "entrainement",
     "type": "vrai_faux",
-    "statement": "Sur une demi-droite graduée de 500 en 500, il faut avancer de trois intervalles pour aller du point d'abscisse 2 500 au point d'abscisse 4 000.",
-    "image": null,
+    "statement": "Tom affirme que le point B repère le nombre 4 600. A-t-il raison ?",
+    "image": "figures/EX-A028-E-03",
     "answer": {
       "value": true
     },
     "solution_steps": [
-      "On avance de 500 en 500 à partir de 2 500 : 3 000, puis 3 500, puis 4 000.",
-      "Il faut donc trois déplacements pour aller de 2 500 à 4 000.",
-      "On peut aussi le calculer : $4\\,000 - 2\\,500 = 1\\,500$, puis $1\\,500 \\div 500 = 3$.",
-      "L'affirmation est **vraie**."
+      "Entre 4 000 et 5 000, on compte 5 intervalles égaux : chacun vaut $1\\,000 \\div 5 = 200$.",
+      "Le point B est 3 intervalles après 4 000 : $4\\,000 + 3 \\times 200 = 4\\,600$.",
+      "Tom a **raison**.",
+      "Piège : compter les traits au lieu des intervalles. En comptant celui de 4 000, on en trouve 4 et on lit 4 800, une graduation trop loin."
     ],
-    "hint": "Calcule l'écart entre les deux abscisses, puis divise-le par la valeur d'une graduation.",
+    "hint": "Compte les intervalles entre 4 000 et le point B, pas les traits.",
     "estimated_duration_s": 90,
     "review_status": "relu_agent",
     "programme_ref": "Cycle 3, CM1, les nombres entiers : savoir placer des nombres et reperer des points sur une demi-droite graduee."
@@ -138,24 +151,23 @@
     "skill_id": "A028",
     "level": "maitrise",
     "type": "numerique",
-    "statement": "Une demi-droite est graduée régulièrement à partir de 0. La troisième graduation après 0 porte le nombre 1 200.\n\nQuel nombre porte la cinquième graduation après 0 ?",
-    "image": null,
+    "statement": "Sur cette demi-droite graduée, seuls deux nombres sont écrits.\n\nQuel nombre est repéré par le point A ?",
+    "image": "figures/EX-A028-M-01",
     "answer": {
-      "value": 2000,
+      "value": 270000,
       "accepted": [
-        "2 000",
-        "2000"
+        "270 000",
+        "270000"
       ]
     },
     "solution_steps": [
-      "Ici la valeur d'une graduation n'est pas donnée : il faut la retrouver d'abord.",
-      "Trois graduations valent 1 200, donc une seule vaut $1\\,200 \\div 3 = 400$.",
-      "La cinquième graduation vaut alors $5 \\times 400 = 2\\,000$.",
-      "Vérification en comptant : 400, 800, 1 200, 1 600, 2 000.",
-      "Réponse : **2 000**."
+      "Ici, aucune graduation voisine n'est écrite : il faut d'abord trouver ce que vaut un intervalle.",
+      "Entre 60 000 et 150 000, on compte 3 intervalles. Ils valent ensemble $150\\,000 - 60\\,000 = 90\\,000$, donc un intervalle vaut $90\\,000 \\div 3 = 30\\,000$.",
+      "Le point A est 4 intervalles après 150 000 : $150\\,000 + 4 \\times 30\\,000 = 270\\,000$.",
+      "Vérification : de 30 000 en 30 000 depuis 150 000, on lit 180 000, 210 000, 240 000, puis 270 000 au point A. Le point A repère **270 000**."
     ],
-    "hint": "Cherche d'abord de combien on avance en passant d'une graduation à la suivante.",
-    "estimated_duration_s": 180,
+    "hint": "Trouve d'abord combien vaut un intervalle, à l'aide des deux nombres écrits.",
+    "estimated_duration_s": 150,
     "review_status": "relu_agent",
     "programme_ref": "Cycle 3, CM1, les nombres entiers : savoir placer des nombres et reperer des points sur une demi-droite graduee."
   },
@@ -164,18 +176,18 @@
     "skill_id": "A028",
     "level": "maitrise",
     "type": "vrai_faux",
-    "statement": "Une demi-droite va de 0 à 100 000 et elle est graduée de 10 000 en 10 000. Sarah place le nombre 9 500 juste après la graduation 10 000.",
-    "image": null,
+    "statement": "Sarah lit le nombre 70 000 pour le point M. A-t-elle raison ?",
+    "image": "figures/EX-A028-M-02",
     "answer": {
       "value": false
     },
     "solution_steps": [
-      "Les graduations sont 0, 10 000, 20 000, et ainsi de suite jusqu'à 100 000.",
-      "9 500 est plus petit que 10 000 : il ne peut pas se trouver après cette graduation.",
-      "Il manque 500 pour atteindre 10 000, soit un vingtième de l'intervalle : le point est donc très près de la graduation, mais avant elle.",
-      "Sarah a **tort** : 9 500 se place entre 0 et 10 000, juste avant la graduation 10 000."
+      "Entre 0 et 40 000, il y a 4 grands intervalles : un grand intervalle vaut $40\\,000 \\div 4 = 10\\,000$.",
+      "Chaque grand intervalle est coupé en 2 par une petite graduation : un petit intervalle vaut la moitié de 10 000, soit 5 000.",
+      "Le point M est 3 petits intervalles après 40 000 : $40\\,000 + 3 \\times 5\\,000 = 55\\,000$. Il est d'ailleurs avant 60 000, au milieu entre 50 000 et 60 000.",
+      "Sarah est partie de 40 000 et a compté chaque trait pour 10 000, sans distinguer les petites graduations des grandes : 3 traits, 70 000. Elle a **tort** : M repère 55 000."
     ],
-    "hint": "9 500 est-il plus grand ou plus petit que 10 000 ?",
+    "hint": "Les petites et les grandes graduations ne valent pas la même chose. Que vaut un petit intervalle ?",
     "estimated_duration_s": 150,
     "review_status": "relu_agent",
     "programme_ref": "Cycle 3, CM1, les nombres entiers : savoir placer des nombres et reperer des points sur une demi-droite graduee."

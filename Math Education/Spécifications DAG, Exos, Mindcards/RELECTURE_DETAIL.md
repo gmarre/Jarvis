@@ -228,6 +228,88 @@ Complète l'égalité : … - 32 = 45
 
 ---
 
+## `P001` · Comparer et mesurer des longueurs avec une règle graduée — CP, difficulté 1
+
+*Dire lequel de deux objets ou de deux segments est le plus long, par superposition, report d'un étalon ou mesure. Mesurer la longueur d'un segment en centimètres entiers avec une règle graduée, en plaçant le zéro à une extrémité. Figure nécessaire : le segment et la règle doivent être dessinés.*
+
+> « Savoir mesurer la longueur d'un segment en utilisant une règle graduée. » — *Cycle 2, Cours préparatoire, Grandeurs et mesures, Les longueurs*
+> « L'élève compare les longueurs de deux segments en les mesurant par report d'un étalon ou en utilisant une règle graduée. » — *Cycle 2, Cours préparatoire, Grandeurs et mesures, Les longueurs*
+> « Au CP, les travaux sur les longueurs s'appuient principalement sur des manipulations. » — *Cycle 2, Cours préparatoire, Grandeurs et mesures, Les longueurs et les masses*
+
+**EX-P001-D-01** — decouverte, numerique, 30 s
+
+Mesure le segment AB avec la règle. Combien de centimètres mesure-t-il ?
+
+**Réponse :** 6
+
+*Corrigé.* (1) Le bout A du segment est posé sur le 0 de la règle. (2) Un centimètre, c'est l'espace entre deux grands traits. On compte les espaces de A jusqu'à B : 1, 2, 3, 4, 5, 6. (3) Le segment AB mesure 6 cm. (4) Comme A est sur le 0, on retrouve ce nombre sous le bout B : c'est pour cela qu'on place toujours le 0 au bout du segment.
+
+*Indice.* Où est posé le bout A ? Compte les centimètres jusqu'au bout B.
+
+**EX-P001-D-02** — decouverte, qcm, 30 s
+
+Combien mesure le segment CD ?
+
+- **a.** 3 cm
+  <br>*Erreur visée :* L'élève compte les nombres écrits entre les deux bouts, 1, 2, 3, et oublie le 4 qui est sous le bout D.
+- **b.** 4 cm ✅
+- **c.** 5 cm
+  <br>*Erreur visée :* L'élève compte les traits 0, 1, 2, 3, 4 : il y a 5 traits, mais seulement 4 espaces d'un centimètre. On compte les centimètres, pas les traits.
+
+*Corrigé.* (1) Le bout C est posé sur le 0 de la règle. (2) On compte les espaces d'un centimètre de C jusqu'à D : 1, 2, 3, 4. (3) Le segment CD mesure 4 cm. (4) Attention : de C à D, il y a 5 traits (0, 1, 2, 3, 4), mais seulement 4 espaces. La longueur, ce sont les espaces.
+
+*Indice.* Compte les espaces entre les grands traits, pas les traits.
+
+**EX-P001-E-01** — entrainement, numerique, 45 s
+
+Combien de centimètres mesure le segment EF ?
+
+**Réponse :** 5
+
+*Corrigé.* (1) Le bout E n'est pas sur le 0 de la règle : il est sur le 2. (2) On ne lit donc pas la longueur sous le bout F. On compte les espaces d'un centimètre de E jusqu'à F : 1, 2, 3, 4, 5. (3) Le segment EF mesure 5 cm. (4) Le 7 écrit sous F n'est pas la longueur : ce serait la longueur seulement si E était sur le 0.
+
+*Indice.* Le bout E est-il sur le 0 ? Compte les centimètres de E jusqu'à F.
+
+**EX-P001-E-02** — entrainement, qcm, 45 s
+
+Combien mesure le segment GH ?
+
+- **a.** 10 cm ✅
+- **b.** 12 cm
+  <br>*Erreur visée :* L'élève lit le nombre sous le bout H, comme si le segment partait du 0. Or le bout G est sur le 2.
+- **c.** 11 cm
+  <br>*Erreur visée :* L'élève compte les traits de G à H : 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, soit 11 traits. Mais entre ces traits il n'y a que 10 espaces d'un centimètre.
+
+*Corrigé.* (1) Le bout G n'est pas sur le 0 : il est sur le 2. (2) On compte les espaces d'un centimètre de G jusqu'à H : 1, 2, 3, 4, 5, 6, 7, 8, 9, 10. (3) Le segment GH mesure 10 cm. (4) Le 12 sous H n'est pas la longueur : de G à H il y a 11 traits, mais 10 espaces.
+
+*Indice.* Où est posé le bout G ? Compte les centimètres, pas les traits.
+
+**EX-P001-M-01** — maitrise, numerique, 45 s
+
+Léo a posé sa règle sous le segment KL. Il dit : « KL mesure 12 cm. » Combien de centimètres mesure KL ?
+
+**Réponse :** 11
+
+*Corrigé.* (1) Léo a lu le nombre écrit sous le bout L : 12. (2) Mais le bout K n'est pas sur le 0 de la règle : il est sur le 1. Léo a commencé à 1 au lieu de 0. (3) On compte les espaces d'un centimètre de K jusqu'à L : 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11. Le segment KL mesure 11 cm. (4) Pour lire la longueur sous le bout L, il faut d'abord poser le bout K sur le 0.
+
+*Indice.* Où est posé le bout K sur la règle ?
+
+**EX-P001-M-02** — maitrise, qcm, 60 s
+
+Lina a une bande de 11 cm. Lequel est le plus long : sa bande ou le segment MN ?
+
+- **a.** Le segment MN
+  <br>*Erreur visée :* L'élève lit 13 sous le bout N, comme si le segment partait du 0 : il croit que MN mesure 13 cm.
+- **b.** Ils ont la même longueur
+  <br>*Erreur visée :* L'élève compte les traits de M à N : du 3 au 13, il y en a 11. Mais entre ces traits, il n'y a que 10 espaces d'un centimètre.
+- **c.** La bande de Lina ✅
+
+*Corrigé.* (1) Le bout M est sur le 3, pas sur le 0 : on compte les centimètres de M jusqu'à N. (2) 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 : le segment MN mesure 10 cm. (3) La bande mesure 11 cm. Quand on compte, 11 vient après 10 : la bande est la plus longue. (4) Réponse : la bande de Lina.
+
+*Indice.* Mesure d'abord le segment MN. Attention au bout M.
+
+---
+
 ## `P002` · Le mètre et le centimètre : unités et ordres de grandeur — CP, difficulté 1
 
 *Connaître les unités mètre et centimètre et leurs symboles m et cm, savoir qu'un mètre est égal à cent centimètres, et choisir la mesure vraisemblable d'un objet familier (une trousse mesure plutôt 20 cm que 2 cm ou 1 m). Nombres entiers jusqu'à 100, sans conversion écrite autre que 1 m = 100 cm.*
@@ -306,6 +388,83 @@ Une corde mesure 100 cm. Une autre mesure 1 m. Laquelle est la plus longue ?
 *Corrigé.* (1) Les deux longueurs ne sont pas dans la même unité : on ne peut pas comparer 100 et 1 directement. (2) Un mètre est égal à cent centimètres : 1 m, c'est 100 cm. (3) La corde de 1 m mesure donc 100 cm, comme l'autre corde. (4) Elles ont la même longueur.
 
 *Indice.* Écris la longueur de la deuxième corde en centimètres.
+
+---
+
+## `P004` · Lire l'heure en heures entières — CP, difficulté 1
+
+*Lire sur une horloge à aiguilles une heure entière (trois heures, neuf heures, midi) et associer une heure à un moment familier de la journée. Figure nécessaire : l'horloge doit être dessinée.*
+
+> « Au CP, le travail mené sur le repérage dans le temps se limite aux heures entières. » — *Cycle 2, Cours préparatoire, Grandeurs et mesures, Le repérage dans le temps*
+> « L'élève sait lire des heures entières (par exemple trois heures, neuf heures, mais aussi midi) montrées sur un cadran à aiguilles. » — *Cycle 2, Cours préparatoire, Grandeurs et mesures, Le repérage dans le temps*
+
+**EX-P004-D-01** — decouverte, texte, 30 s
+
+Regarde bien la petite aiguille. Quelle heure indique l'horloge ?
+
+**Réponse :** 3 heures
+
+*Corrigé.* (1) Sur une horloge, la petite aiguille montre les heures. La grande aiguille montre les minutes. (2) La grande aiguille est tout en haut, sur le 12 : l'heure est juste, il n'y a pas de minutes en plus. (3) La petite aiguille est sur le 3 : il est 3 heures. (4) Erreur à éviter : lire la grande aiguille à la place de la petite. On répondrait 12 heures, ce qui est faux.
+
+*Indice.* La petite aiguille montre l'heure. Sur quel nombre est-elle ?
+
+**EX-P004-D-02** — decouverte, vrai_faux, 30 s
+
+Tom regarde l'horloge et dit : « Il est 12 heures. » A-t-il raison ?
+
+**Réponse :** False
+
+*Corrigé.* (1) La petite aiguille montre l'heure : elle est sur le 10. (2) La grande aiguille est sur le 12 : elle dit seulement que l'heure est juste, sans minutes en plus. (3) Il est 10 heures. Tom a tort : il a lu la grande aiguille à la place de la petite.
+
+*Indice.* Quelle aiguille montre l'heure : la petite ou la grande ?
+
+**EX-P004-E-01** — entrainement, texte, 40 s
+
+Quelle heure indique l'horloge ?
+
+**Réponse :** 12 heures
+
+*Corrigé.* (1) Les deux aiguilles sont l'une sur l'autre, tout en haut : la petite est sous la grande. (2) La grande aiguille est sur le 12 : l'heure est juste. (3) La petite aiguille est sur le 12 elle aussi : il est 12 heures. Le jour, on dit midi ; la nuit, on dit minuit. (4) Erreur à éviter : croire qu'il n'y a qu'une aiguille. Quand les deux aiguilles sont l'une sur l'autre, elles montrent le même nombre.
+
+*Indice.* Où est la petite aiguille ? Regarde bien sous la grande.
+
+**EX-P004-E-02** — entrainement, qcm, 45 s
+
+Sur cette horloge, il manque des nombres. Quelle heure indique-t-elle ?
+
+- **a.** 3 heures
+  <br>*Erreur visée :* L'élève lit le nombre écrit le plus proche de la petite aiguille. Mais la petite aiguille n'est pas sur le 3 : elle s'arrête un grand trait avant lui.
+- **b.** 2 heures ✅
+- **c.** 12 heures
+  <br>*Erreur visée :* L'élève lit la grande aiguille, qui est sur le 12, à la place de la petite. La grande aiguille ne donne pas l'heure : elle dit seulement que l'heure est juste.
+
+*Corrigé.* (1) La grande aiguille est en haut, sur le 12 : l'heure est juste. (2) La petite aiguille montre un grand trait sans nombre. On compte les grands traits à partir du 12, en tournant comme les aiguilles : 1, 2. (3) La petite aiguille est à la place du 2 : il est 2 heures. (4) On peut vérifier en partant du 3 : la petite aiguille est un grand trait avant lui, donc sur le 2.
+
+*Indice.* Compte les grands traits depuis le 12 jusqu'à la petite aiguille.
+
+**EX-P004-M-01** — maitrise, texte, 60 s
+
+Léa se lève à l'heure de cette horloge sans nombres. À quelle heure se lève-t-elle ?
+
+**Réponse :** 8 heures
+
+*Corrigé.* (1) Sans nombres, on se sert des grands traits : il y en a 12, un à la place de chaque nombre de 1 à 12. (2) La grande aiguille est tout en haut, à la place du 12 : l'heure est juste. (3) On compte les grands traits depuis le haut, en tournant comme les aiguilles, jusqu'à la petite aiguille : 1, 2, 3, 4, 5, 6, 7, 8. (4) La petite aiguille est à la place du 8 : Léa se lève à 8 heures, le matin, avant d'aller à l'école. (5) Autre chemin : le grand trait tout en bas est celui du 6. La petite aiguille est 2 grands traits plus loin : 7, 8. (6) Erreur à éviter : compter aussi les petits traits. Pour les heures, on ne compte que les grands.
+
+*Indice.* Compte les grands traits à partir du haut de l'horloge.
+
+**EX-P004-M-02** — maitrise, qcm, 60 s
+
+Il n'y a pas de nombres sur cette horloge. Quelle heure est-il ?
+
+- **a.** 12 heures
+  <br>*Erreur visée :* L'élève lit la grande aiguille, tout en haut à la place du 12, à la place de la petite. C'est la petite aiguille qui montre l'heure.
+- **b.** 5 heures
+  <br>*Erreur visée :* L'élève compte aussi le grand trait du haut : 1, 2, 3, 4, 5. Ce trait-là est celui du 12 : on commence à compter au grand trait suivant.
+- **c.** 4 heures ✅
+
+*Corrigé.* (1) La grande aiguille est tout en haut, à la place du 12 : l'heure est juste. (2) Pour trouver l'heure, on compte seulement les grands traits, depuis le haut jusqu'à la petite aiguille, en tournant comme les aiguilles : 1, 2, 3, 4. (3) La petite aiguille est à la place du 4 : il est 4 heures. (4) Erreur à éviter : compter le grand trait du haut comme « 1 ». C'est celui du 12 : on commence au trait suivant, et on trouve 4.
+
+*Indice.* Les grands traits sont à la place des nombres. Compte-les depuis le haut.
 
 ---
 
@@ -1566,89 +1725,85 @@ Lucie a colorié les 3/10 d'une figure en bleu, et tout le reste en rouge. Quell
 
 **EX-C026-D-01** — decouverte, qcm, 45 s
 
-Lequel est le plus grand : 1/5 ou 1/3 ?
+Les bandes A et B sont pareilles. Quelle part coloriée est la plus grande ?
 
-- **a.** 1/3 ✅
-- **b.** 1/5
-  <br>*Erreur visée :* L'élève applique aux dénominateurs l'ordre des entiers : 5 est plus grand que 3, donc la fraction serait plus grande. C'est l'erreur la plus fréquente sur cette notion.
-- **c.** Ils sont égaux
-  <br>*Erreur visée :* L'élève ne compare que les numérateurs, qui sont égaux, et conclut à l'égalité.
+- **a.** Celle de la bande A ✅
+- **b.** Celle de la bande B
+  <br>*Erreur visée :* L'élève compte 5 parts sur la bande B et 3 sur la bande A, puis applique aux dénominateurs l'ordre des entiers : 5 est plus grand que 3. C'est l'erreur la plus fréquente sur cette notion ; la figure montre le contraire.
+- **c.** Elles ont la même taille
+  <br>*Erreur visée :* L'élève voit qu'une seule part est coloriée sur chaque bande et conclut à l'égalité : il ne compare que les numérateurs, sans regarder la taille des parts.
 
-*Corrigé.* (1) Les deux fractions ont le même numérateur : on prend une part dans chaque cas. (2) Mais les parts n'ont pas la même taille. Partager un tout en 5 donne des parts plus petites que le partager en 3. (3) Une part sur 3 est donc plus grande qu'une part sur 5. (4) C'est 1/3 le plus grand. Retiens : quand le numérateur est 1, plus le dénominateur est grand, plus la fraction est petite.
+*Corrigé.* (1) On compte les parts de chaque bande. La bande A a 3 parts égales : sa part coloriée est 1/3 de la bande. La bande B a 5 parts égales : sa part coloriée est 1/5 de la bande. (2) Le numérateur est 1 dans les deux cas : une seule part est coloriée. Le dénominateur dit en combien de parts égales la bande est partagée. (3) Les deux bandes sont pareilles : c'est le même tout. La bande B est partagée en plus de parts, donc ses parts sont plus petites. On le voit sur la figure. (4) La part coloriée de la bande A est la plus grande : 1/3 est plus grand que 1/5.
 
-*Indice.* Préfères-tu partager un gâteau entre 3 personnes ou entre 5 ?
+*Indice.* Compte les parts de chaque bande. Puis regarde la taille d'une part.
 
-**EX-C026-D-02** — decouverte, qcm, 45 s
+**EX-C026-D-02** — decouverte, vrai_faux, 45 s
 
-Une même tablette de chocolat est partagée en parts égales. Dans quel cas une part est-elle la plus grande ?
+Une tablette pareille à celle-ci, partagée en 4 parts égales, donne des parts plus grosses que la part coloriée.
 
-- **a.** Quand on partage en 2 ✅
-- **b.** Quand on partage en 4
-  <br>*Erreur visée :* L'élève associe un plus grand nombre de parts à des parts plus grandes.
-- **c.** Quand on partage en 8
-  <br>*Erreur visée :* Même erreur, poussée plus loin : l'élève choisit le plus grand dénominateur.
+**Réponse :** True
 
-*Corrigé.* (1) La tablette est la même dans les trois cas : c'est le tout. (2) Plus on la partage en un grand nombre de parts, plus chaque part est petite. (3) En partageant en 2, on obtient les parts les plus grandes : 1/2. (4) Du plus petit au plus grand : un huitième, puis un quart, puis un demi.
+*Corrigé.* (1) On compte les parts de la tablette dessinée : 8 parts égales. La part coloriée est 1/8 de la tablette. (2) Une part de la tablette partagée en 4 est 1/4 de la tablette. (3) C'est la même tablette, donc le même tout. En 4, on fait moins de parts qu'en 8 : chaque part est plus grosse. (4) 1/4 est plus grand que 1/8 : l'affirmation est vraie. Le dénominateur compte les parts : plus il est grand, plus la part est petite.
 
-*Indice.* Le nombre de parts augmente, mais la tablette, elle, ne grandit pas.
+*Indice.* Compte les parts de la tablette dessinée, puis compare avec un partage en 4.
 
 **EX-C026-E-01** — entrainement, qcm, 60 s
 
-Léa partage une tarte entre 4 amis. Tom partage une tarte pareille entre 6. Qui a la plus grosse part ?
+Voici la tarte de Léa. Tom coupe une tarte pareille en 6 parts égales. Qui a les plus petites parts ?
 
-- **a.** Un ami de Léa ✅
-- **b.** Un ami de Tom
-  <br>*Erreur visée :* L'élève retient qu'il y a plus d'amis chez Tom et en déduit à tort des parts plus grandes.
-- **c.** Ils reçoivent la même part
-  <br>*Erreur visée :* L'élève ne relie pas le nombre de convives à la taille des parts.
+- **a.** Léa
+  <br>*Erreur visée :* L'élève compte 4 parts chez Léa et applique l'ordre des entiers : 4 est plus petit que 6, il en déduit que les parts de Léa sont plus petites.
+- **b.** Tom ✅
+- **c.** Leurs parts ont la même taille
+  <br>*Erreur visée :* L'élève sait que les parts d'une même tarte sont égales et croit qu'elles le sont aussi d'une tarte à l'autre : il ne relie pas le nombre de parts à leur taille.
 
-*Corrigé.* (1) Chez Léa, chaque ami reçoit 1/4 de tarte. Chez Tom, chaque ami reçoit 1/6. (2) Les deux tartes sont identiques : c'est le même tout. (3) Partager en 4 donne des parts plus grandes que partager en 6. (4) Une part sur 6 est plus petite qu'une part sur 4 : c'est un ami de Léa qui reçoit la plus grosse part.
+*Corrigé.* (1) On compte les parts de la tarte de Léa : 4 parts égales. Une part de Léa est 1/4 de tarte. (2) Tom coupe sa tarte en 6 : une part de Tom est 1/6 de tarte. (3) Les deux tartes sont pareilles : c'est le même tout. Plus on coupe de parts, plus elles sont petites. (4) 6 parts, c'est plus que 4 parts : les parts de Tom sont les plus petites. 1/6 est plus petit que 1/4.
 
-*Indice.* Plus il y a de convives autour d'une même tarte, plus les parts rétrécissent.
+*Indice.* Compte les parts de la tarte de Léa. Qui coupe sa tarte en le plus de parts ?
 
 **EX-C026-E-02** — entrainement, texte, 75 s
 
-Range de la plus petite à la plus grande : 1/2, 1/8, 1/4. Sépare-les par des virgules.
+Les trois bandes sont pareilles. Range les fractions coloriées de la plus petite à la plus grande. Sépare-les par des virgules.
 
-**Réponse :** 1/8, 1/4, 1/2
+**Réponse :** 1/10, 1/6, 1/3
 
-*Corrigé.* (1) Les trois fractions ont le même numérateur 1 : on compare donc les dénominateurs. (2) Plus le dénominateur est grand, plus la part est petite. (3) Le plus grand dénominateur est 8, donc 1/8 est la plus petite. (4) Puis vient 1/4, et enfin 1/2, la plus grande. (5) Réponse : 1/8, 1/4, 1/2.
+*Corrigé.* (1) On compte les parts de chaque bande. A : 3 parts égales, la part coloriée est 1/3. B : 10 parts égales, 1/10. C : 6 parts égales, 1/6. (2) Les trois fractions ont le même numérateur 1 : une seule part est coloriée sur chaque bande. C'est la taille des parts qui change. (3) Les bandes sont pareilles : plus une bande est partagée en un grand nombre de parts, plus chaque part est petite. La bande B, partagée en 10, a la plus petite part : 1/10. (4) Puis vient la bande C, 1/6, et enfin la bande A, 1/3 : partagée en 3 seulement, elle a la plus grande part. La figure le confirme. (5) Réponse : 1/10, 1/6, 1/3.
 
-*Indice.* Range les dénominateurs du plus grand au plus petit : les fractions suivront dans l'ordre croissant.
+*Indice.* Écris d'abord la fraction coloriée de chaque bande. Puis cherche la bande dont les parts sont les plus petites.
 
 **EX-C026-E-03** — entrainement, vrai_faux, 60 s
 
-1/10 est plus grand que 1/6, parce que 10 est plus grand que 6.
+La part coloriée est plus grande que 1/6 de ce rectangle.
 
 **Réponse :** False
 
-*Corrigé.* (1) Le raisonnement proposé applique aux fractions l'ordre des entiers : c'est justement le piège. (2) Partager un tout en 10 donne des parts plus petites que le partager en 6. (3) Un dixième est plus petit qu'un sixième : l'affirmation est fausse. (4) Le dénominateur compte les parts, il ne mesure pas leur taille : quand il augmente, la part diminue.
+*Corrigé.* (1) On compte les parts du rectangle : 10 parts égales. La part coloriée est 1/10 du rectangle. (2) On compare 1/10 et 1/6 : le numérateur est 1 dans les deux cas, on prend une seule part. (3) Partager le rectangle en 10 donne des parts plus petites que le partager en 6 : il y a plus de parts dans le même tout. (4) La part coloriée est plus petite que 1/6 du rectangle : l'affirmation est fausse. Piège : 10 est plus grand que 6, mais le dénominateur compte les parts, il ne mesure pas leur taille.
 
-*Indice.* Regarde la taille d'une part, pas la taille du nombre écrit en bas.
+*Indice.* Compte les parts du rectangle. Imagine ensuite le même rectangle partagé en 6.
 
 **EX-C026-M-01** — maitrise, qcm, 90 s
 
-Léa mange 1/4 d'une tarte. Tom en mange 1/8, et Zoé 1/3. Qui a mangé le moins ?
+Chacun a une tarte pareille. Léa en mange 1/4, Zoé 1/6, Tom la part coloriée. Qui mange le moins ?
 
-- **a.** Tom ✅
-- **b.** Zoé
-  <br>*Erreur visée :* L'élève choisit le plus petit dénominateur en croyant qu'il donne la plus petite part.
-- **c.** Léa
-  <br>*Erreur visée :* L'élève repère le dénominateur du milieu et l'associe à la plus petite part.
+- **a.** Zoé
+  <br>*Erreur visée :* L'élève ne compte pas les parts de la tarte dessinée : il compare seulement les dénominateurs écrits, 4 et 6, et choisit le plus grand.
+- **b.** Léa
+  <br>*Erreur visée :* L'élève applique aux dénominateurs l'ordre des entiers : 4 est le plus petit nombre, il croit que c'est la plus petite part.
+- **c.** Tom ✅
 
-*Corrigé.* (1) Les trois fractions ont le même numérateur 1 : chacun prend une seule part. (2) La plus petite part correspond au plus grand dénominateur. (3) Les dénominateurs sont 4, 8 et 3. Le plus grand est 8. (4) C'est donc Tom, avec 1/8, qui a mangé le moins. (5) Dans l'ordre, du plus petit au plus grand : 1/8, puis 1/4, puis 1/3.
+*Corrigé.* (1) On compte les parts de la tarte dessinée : 8 parts égales. Tom mange 1/8 de sa tarte. (2) Les trois fractions ont le même numérateur 1 : chacun mange une seule part. Les tartes sont pareilles, on peut donc comparer les parts. (3) La plus petite part vient de la tarte partagée en le plus de parts. Les dénominateurs sont 4, 6 et 8 : le plus grand est 8. (4) C'est donc Tom qui mange le moins. Du plus petit au plus grand : 1/8, puis 1/6, puis 1/4.
 
-*Indice.* Cherche celui dont la tarte a été partagée en le plus grand nombre de parts.
+*Indice.* Compte les parts de la tarte dessinée. Quelle tarte est partagée en le plus de parts ?
 
-**EX-C026-M-02** — maitrise, texte, 120 s
+**EX-C026-M-02** — maitrise, numerique, 120 s
 
-Trouve une fraction de numérateur 1 plus grande que 1/8 et plus petite que 1/4. Écris-la avec une barre : 1/…
+Lou partage une bande pareille en parts plus petites que celles de A, mais plus grandes que celles de B. Combien de parts égales ?
 
-**Réponse :** 1/6
+**Réponse :** 5
 
-*Corrigé.* (1) On cherche une fraction 1/? comprise entre 1/8 et 1/4. (2) Comme le numérateur est 1, la fraction est d'autant plus petite que le dénominateur est grand. (3) Il faut donc un dénominateur compris entre 4 et 8. (4) Avec 6 : une part sur 6 est plus petite qu'une part sur 4, et plus grande qu'une part sur 8, car 6 se place entre 4 et 8. (5) 1/5 convient aussi, pour la même raison.
+*Corrigé.* (1) On compte les parts des bandes dessinées. A : 4 parts égales, une part vaut 1/4 de la bande. B : 6 parts égales, une part vaut 1/6. (2) Les parts de Lou doivent être plus petites que 1/4 : Lou doit faire plus de 4 parts, car plus on fait de parts dans un même tout, plus elles sont petites. (3) Elles doivent aussi être plus grandes que 1/6 : Lou doit faire moins de 6 parts. (4) Plus de 4 parts et moins de 6 parts : Lou partage la bande en 5 parts égales. Chaque part vaut 1/5 de la bande. (5) Piège : en 3 parts, les parts seraient plus grandes que celles de A, et non plus petites.
 
-*Indice.* Le dénominateur cherché doit se placer entre 4 et 8.
+*Indice.* Pour avoir des parts plus petites que celles de A, faut-il faire plus de parts, ou moins de parts ?
 
 ---
 
@@ -1694,15 +1849,15 @@ Un cahier coûte 275 centimes. Rappel : 100 centimes font 1 €. Écris ce prix 
 
 *Indice.* Combien d'euros peux-tu faire avec 275 centimes, sachant qu'il en faut 100 pour 1 € ?
 
-**EX-D016-E-02** — entrainement, vrai_faux, 45 s
+**EX-D016-E-02** — entrainement, vrai_faux, 60 s
 
-Zoé a 7 pièces de 1 € et 6 pièces de 10 centimes. Elle écrit : 7,06 €. A-t-elle raison ?
+Zoé compte cet argent. Elle écrit : 7,06 €. A-t-elle raison ?
 
 **Réponse :** False
 
-*Corrigé.* (1) 7 pièces de 1 € font 7 €. (2) 6 pièces de 10 centimes : on compte de 10 en 10, 10, 20, 30, 40, 50, 60. Cela fait 60 centimes, soit 6 dizaines de centimes. (3) 7 € et 60 centimes s'écrit 7,60 €. (4) 7,06 €, c'est 7 € et seulement 6 centimes : Zoé a confondu 6 pièces de 10 centimes avec 6 centimes. Elle a tort.
+*Corrigé.* (1) On compte d'abord les euros : le billet de 5 €, puis les 2 pièces de 1 €. En comptant à partir de 5 : 6, 7. Cela fait 7 €. (2) On compte ensuite les centimes : 6 pièces de 10 centimes. De 10 en 10 : 10, 20, 30, 40, 50, 60. Cela fait 60 centimes. (3) 7 € et 60 centimes s'écrit 7,60 € : juste après la virgule, le chiffre des dizaines de centimes (6), puis celui des centimes (0). (4) 7,06 €, c'est 7 € et seulement 6 centimes : Zoé a compté les pièces de 10 centimes comme des pièces de 1 centime. Elle a tort.
 
-*Indice.* Combien de centimes font 6 pièces de 10 centimes ?
+*Indice.* Compte d'abord les euros, puis les centimes. Regarde bien la valeur écrite sur chaque pièce.
 
 **EX-D016-M-01** — maitrise, qcm, 90 s
 
@@ -1889,6 +2044,85 @@ Léo dit : « 1 kg de plumes, c'est plus léger que 1 000 g de cailloux. » A-t-
 *Corrigé.* (1) Léo pense aux plumes, légères, et aux cailloux, lourds. Mais ici, les masses sont données : on compare les masses, pas les objets. (2) 1 kg = 1 000 g. (3) 1 kg de plumes et 1 000 g de cailloux ont la même masse : sur une balance, les deux plateaux sont à la même hauteur. (4) Il y a bien plus de plumes que de cailloux, mais la masse est la même. Léo a tort.
 
 *Indice.* Écris 1 kg en grammes. Que montrerait une balance ?
+
+---
+
+## `P007` · Lire l'heure : demi-heures et quarts d'heure — CE1, difficulté 2
+
+*Lire sur une horloge à aiguilles une heure donnée en heures entières (jusqu'à 23 h), en heures et demie ou en heures et quart, et faire le lien avec l'affichage digital (2 heures et quart de l'après-midi s'affiche 14 : 15). Figure nécessaire : l'horloge doit être dessinée.*
+
+> « Lire l'heure sur une horloge à aiguilles (lorsque l'heure est donnée en heures entières, en heures et demi-heure ou en heures et quarts d'heure). » — *Cycle 2, Cours élémentaire première année, Grandeurs et mesures, Le repérage dans le temps et les durées*
+> « Le travail sur les heures initié au CP s'étend au CE1 aux heures entières supérieures à douze ainsi qu'à la demi-heure et aux quarts d'heure, en lien avec l'introduction des fractions. » — *Cycle 2, Cours élémentaire première année, Grandeurs et mesures, Le repérage dans le temps et les durées*
+
+**EX-P007-D-01** — decouverte, texte, 45 s
+
+C'est le matin. Regarde la petite aiguille, puis la grande. Quelle heure indique l'horloge ?
+
+**Réponse :** 7 h 30
+
+*Corrigé.* (1) La petite aiguille est entre le 7 et le 8 : 7 heures sont passées, 8 heures pas encore. On lit le nombre qu'elle a dépassé : 7. (2) La grande aiguille est sur le 6 : depuis le 12, elle a fait la moitié du tour. Une demi-heure, c'est 30 minutes. (3) Il est 7 h 30, sept heures et demie. (4) Erreurs à éviter : lire 8 h 30 parce que la petite aiguille s'approche du 8 ; lire 7 h 6 en prenant le 6 de la grande aiguille pour 6 minutes.
+
+*Indice.* Quel nombre la petite aiguille a-t-elle déjà dépassé ? Quelle part du tour la grande aiguille a-t-elle faite ?
+
+**EX-P007-D-02** — decouverte, qcm, 45 s
+
+Regarde les deux aiguilles. Quelle heure indique l'horloge ?
+
+- **a.** 9 h 3
+  <br>*Erreur visée :* L'élève lit le nombre montré par la grande aiguille comme un nombre de minutes. Or la grande aiguille sur le 3 a fait un quart du tour : cela fait 15 minutes, pas 3.
+- **b.** 3 h 45
+  <br>*Erreur visée :* L'élève confond les deux aiguilles : il lit l'heure sur la grande (le 3) et les minutes sur la petite, juste après le 9 (45 minutes). C'est la petite aiguille qui montre l'heure.
+- **c.** 9 h 15 ✅
+
+*Corrigé.* (1) La petite aiguille, celle des heures, vient de dépasser le 9 : il est 9 heures et quelques minutes. (2) La grande aiguille, celle des minutes, est sur le 3 : depuis le 12, elle a fait un quart du tour. Un quart d'heure, c'est 15 minutes. (3) Il est 9 h 15, neuf heures et quart.
+
+*Indice.* La petite aiguille donne l'heure, la grande donne les minutes.
+
+**EX-P007-E-01** — entrainement, texte, 60 s
+
+C'est l'après-midi. Quelle heure indique l'horloge ? Écris-la comme sur une horloge digitale, de 0 h à 23 h.
+
+**Réponse :** 14 h 45
+
+*Corrigé.* (1) La grande aiguille est sur le 9 : depuis le 12, elle a fait trois quarts du tour. Trois quarts d'heure, c'est 45 minutes. (2) La petite aiguille est presque sur le 3, mais ne l'a pas atteint : 2 heures sont passées, 3 heures pas encore. (3) C'est l'après-midi : 2 heures de l'après-midi, c'est 12 + 2 = 14 heures. (4) Il est 14 h 45. Une horloge digitale affiche 14 : 45. (5) Erreurs à éviter : 15 h 45, parce que la petite aiguille touche presque le 3 ; 2 h 45, en oubliant que c'est l'après-midi.
+
+*Indice.* Quel nombre la petite aiguille a-t-elle dépassé ? Puis ajoute 12, car c'est l'après-midi.
+
+**EX-P007-E-02** — entrainement, vrai_faux, 45 s
+
+Inès regarde l'horloge et dit : « Il est dix heures et demie. » A-t-elle raison ?
+
+**Réponse :** True
+
+*Corrigé.* (1) La grande aiguille est sur le 6 : elle a fait la moitié du tour. Il est « et demie », 30 minutes. (2) La petite aiguille est à mi-chemin entre le 10 et le 11 : 10 heures sont passées, 11 heures pas encore. (3) Il est 10 h 30, dix heures et demie : Inès a raison. Attention : la petite aiguille s'approche du 11, mais elle ne l'a pas atteint.
+
+*Indice.* Entre deux nombres, la petite aiguille donne l'heure qu'elle a déjà dépassée.
+
+**EX-P007-M-01** — maitrise, qcm, 75 s
+
+C'est le soir. Le dîner commence à l'heure de l'horloge. À quelle heure commence-t-il ?
+
+- **a.** 18 h 45 ✅
+- **b.** 19 h 45
+  <br>*Erreur visée :* L'élève lit le nombre dont la petite aiguille s'approche, le 7. Mais elle ne l'a pas encore atteint : 6 heures sont passées, pas 7.
+- **c.** 6 h 45
+  <br>*Erreur visée :* L'élève lit bien l'horloge mais oublie que c'est le soir : 6 h 45, c'est le matin. Le soir, on ajoute 12 heures.
+- **d.** 18 h 9
+  <br>*Erreur visée :* L'élève prend le 9 de la grande aiguille pour 9 minutes. Or la grande aiguille sur le 9 a fait trois quarts du tour : cela fait 45 minutes.
+
+*Corrigé.* (1) La grande aiguille est sur le 9 : trois quarts du tour, soit 45 minutes. (2) La petite aiguille est entre le 6 et le 7, tout près du 7 sans l'avoir atteint : 6 heures sont passées. (3) C'est le soir : 6 heures du soir, c'est 12 + 6 = 18 heures. (4) Le dîner commence à 18 h 45, sept heures moins le quart du soir.
+
+*Indice.* Lis d'abord l'heure sur l'horloge, puis souviens-toi que c'est le soir.
+
+**EX-P007-M-02** — maitrise, texte, 75 s
+
+C'est le matin. Sur cette horloge, il manque des nombres. Quelle heure indique-t-elle ?
+
+**Réponse :** 11 h 45
+
+*Corrigé.* (1) La grande aiguille est sur le 9 : depuis le 12, elle a fait trois quarts du tour. Il est 45 minutes. (2) La petite aiguille est juste avant le 12, sans l'avoir atteint. Le dernier grand trait qu'elle a dépassé est celui du 11, un grand trait avant le 12. (3) Il est 11 h 45, midi moins le quart. (4) Erreur à éviter : lire 12 h 45 parce que la petite aiguille touche presque le 12. À 12 h 45, elle aurait déjà dépassé le 12.
+
+*Indice.* La petite aiguille a-t-elle déjà dépassé le 12 ?
 
 ---
 
@@ -2365,6 +2599,87 @@ Une table de jeu a la forme d'un polygone à 6 côtés, tous de 45 cm. Quel est 
 *Corrigé.* (1) Le périmètre est la longueur du contour : on ajoute les longueurs des 6 côtés. (2) Les 6 côtés ont la même longueur : connaître un côté suffit, comme pour le carré. Le contour mesure 45 + 45 + 45 + 45 + 45 + 45. (3) On regroupe les côtés par deux : 45 + 45 = 90. Il y a 3 paires : 90 + 90 + 90 = 270. (4) Le périmètre de la table est 270 cm, soit 2 m et 70 cm. Piège : 45 + 45 + 45 + 45 = 180 ne compte que 4 côtés, comme pour un carré, alors que la table en a 6.
 
 *Indice.* Combien de côtés faut-il ajouter ? Ont-ils tous la même longueur ?
+
+---
+
+## `P013` · Lire l'heure à la minute — CE2, difficulté 2
+
+*Lire l'heure à la minute près sur une horloge à aiguilles (dix heures trente-cinq, sept heures moins le quart, quatre heures moins vingt) et la faire correspondre à l'affichage digital. Figure nécessaire : l'horloge doit être dessinée.*
+
+> « L'élève lit l'heure sur un cadran à aiguilles ou sur un affichage digital » — *Cycle 2, Cours élémentaire deuxième année, Grandeurs et mesures, Le repérage dans le temps et les durées*
+> « Positionner les aiguilles d'une horloge correspondant à une heure donnée en heures entières ou en heures et minutes. » — *Cycle 2, Cours élémentaire deuxième année, Grandeurs et mesures, Le repérage dans le temps et les durées*
+
+**EX-P013-D-01** — decouverte, texte, 45 s
+
+C'est le matin. Quelle heure indique l'horloge ? Compte les minutes de 5 en 5 avec la grande aiguille.
+
+**Réponse :** 9 h 20
+
+*Corrigé.* (1) La petite aiguille a dépassé le 9 mais pas le 10 : 9 heures sont passées. (2) La grande aiguille est sur le 4. D'un nombre au suivant, elle avance de 5 minutes. On compte depuis le 12 : 5, 10, 15, 20. (3) Il est 9 h 20. (4) Erreur à éviter : lire 9 h 4. Le 4 compte les heures pour la petite aiguille ; pour la grande, il veut dire 20 minutes.
+
+*Indice.* La grande aiguille est sur un nombre : compte 5, 10, 15... depuis le 12 jusqu'à elle.
+
+**EX-P013-D-02** — decouverte, qcm, 45 s
+
+Quelle heure indique l'horloge ?
+
+- **a.** 2 h 7
+  <br>*Erreur visée :* L'élève lit le 7, où est la grande aiguille, comme 7 minutes. Pour la grande aiguille, on compte de 5 en 5 : sur le 7, il est 35 minutes.
+- **b.** 2 h 35 ✅
+- **c.** 3 h 35
+  <br>*Erreur visée :* L'élève lit le nombre le plus proche de la petite aiguille, le 3. Mais elle ne l'a pas encore atteint : 2 heures sont passées, pas 3.
+- **d.** 7 h 10
+  <br>*Erreur visée :* L'élève confond les aiguilles : il lit l'heure sur la grande (le 7) et les minutes sur la petite, vers le 2 (10 minutes). C'est la petite aiguille qui montre l'heure.
+
+*Corrigé.* (1) La petite aiguille est entre le 2 et le 3 : 2 heures sont passées, 3 heures pas encore. (2) La grande aiguille est sur le 7. On compte de 5 en 5 depuis le 12 : 5, 10, 15, 20, 25, 30, 35. (3) Il est 2 h 35.
+
+*Indice.* Commence par la petite aiguille : quel nombre a-t-elle déjà dépassé ?
+
+**EX-P013-E-01** — entrainement, texte, 60 s
+
+C'est le matin. Quelle heure indique l'horloge, à la minute près ?
+
+**Réponse :** 6 h 18
+
+*Corrigé.* (1) La petite aiguille a dépassé le 6 sans atteindre le 7 : 6 heures sont passées. (2) La grande aiguille a dépassé le 3. Sur le 3, il est 15 minutes : 5, 10, 15. (3) Après le 3, elle a avancé de 3 petits traits. Chaque petit trait vaut 1 minute : 15 + 3 = 18. (4) Il est 6 h 18. (5) Erreurs à éviter : lire 6 h 3 en prenant le nombre près de la grande aiguille pour des minutes ; compter les petits traits en comptant celui du 3, et trouver 19.
+
+*Indice.* Quel nombre la grande aiguille a-t-elle dépassé ? Combien de petits traits ensuite ?
+
+**EX-P013-E-02** — entrainement, vrai_faux, 60 s
+
+Malo regarde l'horloge et dit : « Il est 9 h 55. » A-t-il raison ?
+
+**Réponse :** False
+
+*Corrigé.* (1) La grande aiguille est sur le 11 : 5, 10, 15... 55. Il est bien 55 minutes. (2) À l'œil, la petite aiguille paraît sur le 9. Mais la grande aiguille dit 55 minutes : il manque encore 5 minutes avant 9 h. La petite aiguille n'a donc pas encore atteint le 9 : 8 heures sont passées. (3) Il est 8 h 55, c'est-à-dire 9 h moins 5. Malo a tort : il a lu le nombre dont la petite aiguille s'approche.
+
+*Indice.* Quand la grande aiguille est presque revenue au 12, la petite aiguille a-t-elle déjà atteint l'heure suivante ?
+
+**EX-P013-M-01** — maitrise, texte, 90 s
+
+C'est l'après-midi. Sur cette horloge, seuls quatre nombres sont écrits. Quelle heure indique-t-elle ? Écris-la comme sur un affichage digital, de 0 h à 23 h.
+
+**Réponse :** 16 h 52
+
+*Corrigé.* (1) La grande aiguille a dépassé le 9. Sur le 9, il est 45 minutes : trois quarts d'heure. (2) Après le 9, elle a avancé de 7 petits traits : 45 + 7 = 52 minutes. (3) À l'œil, la petite aiguille semble sur le grand trait du 5. Mais la grande aiguille dit 52 minutes : 5 heures ne sont pas encore arrivées. La petite aiguille est donc juste avant le 5 : 4 heures sont passées. (4) C'est l'après-midi : 12 + 4 = 16. Il est 16 h 52, et une horloge digitale affiche 16 : 52. (5) Erreurs à éviter : 17 h 52, parce que la petite aiguille touche presque le 5 ; 4 h 52, en oubliant l'après-midi.
+
+*Indice.* Pars du 9 pour les minutes : combien de petits traits la grande aiguille a-t-elle encore parcourus ?
+
+**EX-P013-M-02** — maitrise, qcm, 75 s
+
+Lis l'heure de l'horloge avec le mot « moins ». Que dis-tu ?
+
+- **a.** 6 h moins 20
+  <br>*Erreur visée :* L'élève part de l'heure que la petite aiguille a dépassée, 6 h. Mais « moins » se compte à partir de l'heure qui arrive : 6 h moins 20, c'est 5 h 40.
+- **b.** 7 h moins 40
+  <br>*Erreur visée :* L'élève enlève les minutes déjà passées (40) au lieu de celles qui manquent pour arriver à 7 h. 7 h moins 40, ce serait 6 h 20.
+- **c.** 7 h moins 20 ✅
+- **d.** 7 h moins 8
+  <br>*Erreur visée :* L'élève lit le 8, où est la grande aiguille, comme 8 minutes. Sur le 8, la grande aiguille indique 40 minutes.
+
+*Corrigé.* (1) La petite aiguille a dépassé le 6 sans atteindre le 7 : 6 heures sont passées. (2) La grande aiguille est sur le 8 : 5, 10, 15, 20, 25, 30, 35, 40. Il est 6 h 40. (3) Pour dire l'heure avec « moins », on cherche combien de minutes il manque avant 7 h : 60 - 40 = 20. (4) Il est 7 h moins 20, sept heures moins vingt.
+
+*Indice.* Combien de minutes manque-t-il à la grande aiguille pour revenir au 12 ?
 
 ---
 
@@ -3382,79 +3697,83 @@ Un magasin range tous ses crayons dans des boîtes de 10, sans qu'il en reste. I
 
 > « Savoir placer des nombres et repérer des points sur une demi-droite graduée » — *Cycle 3, Cours moyen première année, Les nombres entiers*
 
-**EX-A028-D-01** — decouverte, numerique, 60 s
+**EX-A028-D-01** — decouverte, numerique, 75 s
 
-Une demi-droite est graduée de 1 000 en 1 000 à partir de 0. Quel nombre est écrit à la quatrième graduation après 0 ?
+Lis les nombres écrits sous la demi-droite graduée. Quel nombre est repéré par le point A ?
 
-**Réponse :** 4000
+**Réponse :** 3500
 
-*Corrigé.* (1) Sur une demi-droite graduée, l'écart entre deux graduations voisines est toujours le même. Ici il vaut 1 000. (2) Première graduation : 1 000. Deuxième : 2 000. Troisième : 3 000. (3) Quatrième : 4 × 1 000 = 4 000. (4) Réponse : 4 000.
+*Corrigé.* (1) Sous les deux premières graduations, on lit 0 et 500 : d'une graduation à la suivante, on avance de 500. (2) On compte les intervalles, pas les traits, entre 0 et le point A : il y en a 7. (3) 7 × 500 = 3 500. On peut aussi compter de 500 en 500 : 500, 1 000, 1 500, 2 000, 2 500, 3 000, 3 500. (4) Le point A repère 3 500. Compter les traits en partant de celui de 0 donnerait 4 000, un de trop.
 
-*Indice.* Compte de 1 000 en 1 000 en partant de 0.
+*Indice.* Regarde les deux nombres écrits : de combien avance-t-on d'une graduation à la suivante ?
 
 **EX-A028-D-02** — decouverte, qcm, 75 s
 
-Une demi-droite est graduée de 1 000 en 1 000 à partir de 0. Où faut-il placer le nombre 3 500 ?
+Quel point de la demi-droite graduée repère le nombre 1 200 ?
 
-- **a.** Juste au milieu entre les graduations 3 000 et 4 000 ✅
-- **b.** Sur la graduation 3 000
-  <br>*Erreur visée :* L'élève ne lit que le chiffre des milliers et pose le point sur la graduation précédente, comme si 3 500 valait 3 000.
-- **c.** Juste après la graduation 4 000
-  <br>*Erreur visée :* L'élève arrondit 3 500 à 4 000, puis place le point au-delà de cette graduation alors que 3 500 est plus petit que 4 000.
+- **a.** Le point A
+  <br>*Erreur visée :* L'élève ne lit pas les nombres écrits et compte de 100 en 100 par habitude : il avance de 12 graduations et arrive sur 2 400.
+- **b.** Le point B
+  <br>*Erreur visée :* L'élève compte les traits au lieu des intervalles : il compte le trait de 0 comme le premier et s'arrête une graduation trop tôt, sur 1 000.
+- **c.** Le point C ✅
 
-*Corrigé.* (1) 3 500 est plus grand que 3 000 et plus petit que 4 000 : il se trouve entre ces deux graduations. (2) L'écart entre deux graduations vaut 1 000, et 500 en est exactement la moitié. (3) 3 000 + 500 = 3 500 : le point tombe donc au milieu de cet intervalle. (4) Réponse : juste au milieu entre 3 000 et 4 000.
+*Corrigé.* (1) Sous les deux premières graduations, on lit 0 et 200 : on avance de 200 à chaque graduation. (2) On compte de 200 en 200 depuis 0 : 200, 400, 600, 800, 1 000, 1 200. Il faut 6 intervalles. (3) Le point situé 6 intervalles après 0 est le point C. (4) Le point B est sur 1 000 (5 intervalles) et le point A sur 2 400 (12 intervalles). La bonne réponse est c.
 
-*Indice.* Entre quelles deux graduations 3 500 se trouve-t-il ? Regarde ensuite s'il est plus près de l'une des deux.
+*Indice.* De combien avance-t-on d'une graduation à la suivante ? Compte ensuite les intervalles depuis 0.
 
 **EX-A028-E-01** — entrainement, numerique, 90 s
 
-Sur une demi-droite graduée de 100 en 100, un point se situe 7 graduations après 2 000. Quelle est son abscisse ?
+Quel nombre est repéré par le point A sur cette demi-droite graduée ?
 
-**Réponse :** 2700
+**Réponse :** 43000
 
-*Corrigé.* (1) L'abscisse d'un point, c'est le nombre qui lui correspond sur la demi-droite. (2) Chaque graduation avance de 100, donc sept graduations valent 7 × 100 = 700. (3) On part de 2 000 : 2 000 + 700 = 2 700. (4) L'abscisse du point est 2 700.
+*Corrigé.* (1) Entre 30 000 et 40 000, on compte 10 intervalles égaux. (2) Ces 10 intervalles valent ensemble 40 000 - 30 000 = 10 000, donc un intervalle vaut 10 000 ÷ 10 = 1 000. (3) Le point A est 3 intervalles après 40 000 : 40 000 + 3 000 = 43 000. (4) Le point A repère 43 000. Prendre un intervalle pour 10 000 donnerait 70 000, un nombre qui n'est même pas sur ce dessin.
 
-*Indice.* Combien vaut un déplacement de 7 graduations, si chaque graduation vaut 100 ?
+*Indice.* Combien d'intervalles entre les deux nombres écrits ? Combien vaut alors un seul intervalle ?
 
-**EX-A028-E-02** — entrainement, texte, 105 s
+**EX-A028-E-02** — entrainement, qcm, 90 s
 
-Une demi-droite est graduée de 20 en 20 à partir de 0. Entre quelles deux graduations se place 130 ? Sépare-les par une virgule.
+Quel nombre est repéré par le point A ?
 
-**Réponse :** 120, 140
+- **a.** 1 300
+  <br>*Erreur visée :* L'élève suppose qu'on avance de 100 en 100 sans le vérifier : or 4 intervalles séparent 0 de 1 000, donc chacun vaut 250.
+- **b.** 1 750 ✅
+- **c.** 1 600
+  <br>*Erreur visée :* L'élève compte les traits au lieu des intervalles entre 0 et 1 000 : il en trouve 5 et croit qu'une graduation vaut 1 000 ÷ 5 = 200 ; 3 graduations après 1 000 donnent alors 1 600.
 
-*Corrigé.* (1) Les graduations sont 0, 20, 40, 60, 80, 100, 120, 140, et ainsi de suite. (2) On avance jusqu'à dépasser 130 : après 120 vient 140. (3) 130 est plus grand que 120 et plus petit que 140, et aucune graduation ne se trouve entre les deux. (4) Réponse : 120, 140.
+*Corrigé.* (1) Entre 0 et 1 000, on compte 4 intervalles égaux : chacun vaut 1 000 ÷ 4 = 250. (2) Le point A est 3 intervalles après 1 000 : 3 × 250 = 750. (3) 1 000 + 750 = 1 750. (4) Vérification : 1 750 est aux trois quarts du chemin entre 1 000 et 2 000, comme le point A. La bonne réponse est b.
 
-*Indice.* Compte de 20 en 20 jusqu'à dépasser 130.
+*Indice.* Combien d'intervalles faut-il pour aller de 0 à 1 000 ?
 
 **EX-A028-E-03** — entrainement, vrai_faux, 90 s
 
-Sur une demi-droite graduée de 500 en 500, il faut avancer de trois intervalles pour aller du point d'abscisse 2 500 au point d'abscisse 4 000.
+Tom affirme que le point B repère le nombre 4 600. A-t-il raison ?
 
 **Réponse :** True
 
-*Corrigé.* (1) On avance de 500 en 500 à partir de 2 500 : 3 000, puis 3 500, puis 4 000. (2) Il faut donc trois déplacements pour aller de 2 500 à 4 000. (3) On peut aussi le calculer : 4 000 - 2 500 = 1 500, puis 1 500 ÷ 500 = 3. (4) L'affirmation est vraie.
+*Corrigé.* (1) Entre 4 000 et 5 000, on compte 5 intervalles égaux : chacun vaut 1 000 ÷ 5 = 200. (2) Le point B est 3 intervalles après 4 000 : 4 000 + 3 × 200 = 4 600. (3) Tom a raison. (4) Piège : compter les traits au lieu des intervalles. En comptant celui de 4 000, on en trouve 4 et on lit 4 800, une graduation trop loin.
 
-*Indice.* Calcule l'écart entre les deux abscisses, puis divise-le par la valeur d'une graduation.
+*Indice.* Compte les intervalles entre 4 000 et le point B, pas les traits.
 
-**EX-A028-M-01** — maitrise, numerique, 180 s
+**EX-A028-M-01** — maitrise, numerique, 150 s
 
-Une demi-droite est graduée régulièrement à partir de 0. La troisième graduation après 0 porte le nombre 1 200. Quel nombre porte la cinquième graduation après 0 ?
+Sur cette demi-droite graduée, seuls deux nombres sont écrits. Quel nombre est repéré par le point A ?
 
-**Réponse :** 2000
+**Réponse :** 270000
 
-*Corrigé.* (1) Ici la valeur d'une graduation n'est pas donnée : il faut la retrouver d'abord. (2) Trois graduations valent 1 200, donc une seule vaut 1 200 ÷ 3 = 400. (3) La cinquième graduation vaut alors 5 × 400 = 2 000. (4) Vérification en comptant : 400, 800, 1 200, 1 600, 2 000. (5) Réponse : 2 000.
+*Corrigé.* (1) Ici, aucune graduation voisine n'est écrite : il faut d'abord trouver ce que vaut un intervalle. (2) Entre 60 000 et 150 000, on compte 3 intervalles. Ils valent ensemble 150 000 - 60 000 = 90 000, donc un intervalle vaut 90 000 ÷ 3 = 30 000. (3) Le point A est 4 intervalles après 150 000 : 150 000 + 4 × 30 000 = 270 000. (4) Vérification : de 30 000 en 30 000 depuis 150 000, on lit 180 000, 210 000, 240 000, puis 270 000 au point A. Le point A repère 270 000.
 
-*Indice.* Cherche d'abord de combien on avance en passant d'une graduation à la suivante.
+*Indice.* Trouve d'abord combien vaut un intervalle, à l'aide des deux nombres écrits.
 
 **EX-A028-M-02** — maitrise, vrai_faux, 150 s
 
-Une demi-droite va de 0 à 100 000 et elle est graduée de 10 000 en 10 000. Sarah place le nombre 9 500 juste après la graduation 10 000.
+Sarah lit le nombre 70 000 pour le point M. A-t-elle raison ?
 
 **Réponse :** False
 
-*Corrigé.* (1) Les graduations sont 0, 10 000, 20 000, et ainsi de suite jusqu'à 100 000. (2) 9 500 est plus petit que 10 000 : il ne peut pas se trouver après cette graduation. (3) Il manque 500 pour atteindre 10 000, soit un vingtième de l'intervalle : le point est donc très près de la graduation, mais avant elle. (4) Sarah a tort : 9 500 se place entre 0 et 10 000, juste avant la graduation 10 000.
+*Corrigé.* (1) Entre 0 et 40 000, il y a 4 grands intervalles : un grand intervalle vaut 40 000 ÷ 4 = 10 000. (2) Chaque grand intervalle est coupé en 2 par une petite graduation : un petit intervalle vaut la moitié de 10 000, soit 5 000. (3) Le point M est 3 petits intervalles après 40 000 : 40 000 + 3 × 5 000 = 55 000. Il est d'ailleurs avant 60 000, au milieu entre 50 000 et 60 000. (4) Sarah est partie de 40 000 et a compté chaque trait pour 10 000, sans distinguer les petites graduations des grandes : 3 traits, 70 000. Elle a tort : M repère 55 000.
 
-*Indice.* 9 500 est-il plus grand ou plus petit que 10 000 ?
+*Indice.* Les petites et les grandes graduations ne valent pas la même chose. Que vaut un petit intervalle ?
 
 ---
 
@@ -3926,77 +4245,83 @@ Trouve une fraction de dénominateur 5 comprise entre 2 et 3. Écris ta réponse
 
 **EX-C030-D-01** — decouverte, numerique, 60 s
 
-Une demi-droite est graduée en quarts à partir de 0. Combien de graduations faut-il parcourir depuis 0 pour atteindre 7/4 ?
+Quelle fraction repère le point A ? Écris-la sous la forme numérateur/dénominateur.
 
-**Réponse :** 7
+**Réponse :** 5/4
 
-*Corrigé.* (1) Chaque intervalle vaut 1/4. (2) Le numérateur indique combien de ces intervalles il faut parcourir. (3) Pour 7/4, il en faut 7. (4) On dépasse alors 1, puisqu'un tout n'en contient que 4.
+*Corrigé.* (1) Entre 0 et 1, l'unité est partagée en 4 intervalles égaux : chacun vaut 1/4. (2) On compte les intervalles depuis 0 jusqu'au point A : 4 pour atteindre 1, puis 1 de plus, soit 5. (3) 5 intervalles d'un quart : le point A repère 5/4, c'est-à-dire 1 + 1/4. (4) Le dénominateur 4 dit en combien d'intervalles on partage l'unité ; le numérateur 5 compte les intervalles parcourus.
 
-*Indice.* Le numérateur compte les graduations, le dénominateur donne la taille du graduation.
+*Indice.* En combien d'intervalles l'unité, de 0 à 1, est-elle partagée ?
 
-**EX-C030-D-02** — decouverte, texte, 60 s
+**EX-C030-D-02** — decouverte, qcm, 60 s
 
-Une demi-droite est graduée en tiers à partir de 0. Quelle fraction se trouve au 5e graduation après 0 ? Écris ta réponse sous la forme numérateur/dénominateur.
+Quel point repère la fraction 4/3 ?
 
-**Réponse :** 5/3
+- **a.** Le point A
+  <br>*Erreur visée :* L'élève compte les traits au lieu des intervalles : il compte le trait de 0 comme le premier et s'arrête au 4e trait, celui de 1, qui vaut 3/3.
+- **b.** Le point B ✅
+- **c.** Le point C
+  <br>*Erreur visée :* L'élève part de la première graduation après 0 au lieu de 0 : il avance de 4 intervalles depuis 1/3 et arrive sur 5/3.
 
-*Corrigé.* (1) Graduée en tiers : chaque graduation vaut 1/3. (2) Au 5e graduation, on a parcouru 5 tiers. (3) L'abscisse du point est donc 5/3. (4) Ce point se situe entre 1 et 2, car 5/3 = 1 + 2/3.
+*Corrigé.* (1) Chaque unité est partagée en 3 intervalles égaux : un intervalle vaut 1/3. (2) 4/3, ce sont 4 tiers : on avance de 4 intervalles depuis 0. (3) 3 intervalles mènent à 1, car 3/3 = 1 ; le 4e mène juste après 1 : c'est le point B. (4) 4/3 = 1 + 1/3 : B est juste après 1. Le point A est sur 1, c'est-à-dire 3/3, et le point C sur 5/3. La bonne réponse est b.
 
-*Indice.* Cinq fois un tiers, cela fait combien de tiers ?
+*Indice.* En combien d'intervalles l'unité est-elle partagée ? Combien de ces intervalles faut-il parcourir ?
 
 **EX-C030-E-01** — entrainement, qcm, 90 s
 
-Une demi-droite est graduée en cinquièmes à partir de 0. Entre quels deux nombres entiers se situe le point d'abscisse 7/5 ?
+Quelle fraction repère le point A ?
 
-- **a.** entre 1 et 2 ✅
-- **b.** entre 0 et 1
-  <br>*Erreur visée :* L'élève applique la règle apprise au CE2, où toutes les fractions étaient inférieures à 1, et place donc tout point d'abscisse fractionnaire dans le premier intervalle.
-- **c.** entre 7 et 8
-  <br>*Erreur visée :* L'élève lit le numérateur comme un entier et ignore le dénominateur : il place le point comme s'il s'agissait du nombre 7.
+- **a.** 11/9
+  <br>*Erreur visée :* L'élève compte les traits entre 0 et 1, les deux extrémités comprises : il en trouve 9 et croit l'unité partagée en 9 au lieu de 8 intervalles.
+- **b.** 3/8
+  <br>*Erreur visée :* L'élève ne compte que les intervalles après 1 et oublie l'unité déjà parcourue entre 0 et 1.
+- **c.** 11/8 ✅
+- **d.** 12/8
+  <br>*Erreur visée :* L'élève compte les traits au lieu des intervalles depuis 0 : en comptant le trait de 0, il en trouve un de trop.
 
-*Corrigé.* (1) Un tout vaut 5 cinquièmes, deux touts valent 10 cinquièmes. (2) 7/5 contient 7 cinquièmes : c'est plus que 5, donc plus que 1, et moins que 10, donc moins que 2. (3) 7/5 = 1 + 2/5. (4) Le point se situe donc entre 1 et 2, juste après 1.
+*Corrigé.* (1) Entre 0 et 1, on compte 8 intervalles égaux (et 9 traits) : chaque intervalle vaut 1/8. (2) Jusqu'à 1, on parcourt 8 huitièmes ; le point A est 3 intervalles après 1. (3) 8 + 3 = 11 huitièmes : A repère 11/8, soit 1 + 3/8. (4) Le dénominateur 8 donne la taille d'un intervalle, le numérateur 11 le nombre d'intervalles parcourus. La bonne réponse est c.
 
-*Indice.* Combien de cinquièmes pour atteindre 1 ? Et pour atteindre 2 ?
+*Indice.* Compte les intervalles entre 0 et 1, pas les traits.
 
-**EX-C030-E-02** — entrainement, texte, 75 s
+**EX-C030-E-02** — entrainement, texte, 90 s
 
-Une demi-droite est graduée en cinquièmes. Un point se trouve au 12e graduation après 0. Quelle est son abscisse ? Écris ta réponse sous la forme numérateur/dénominateur.
+Repère le point A par la somme d'un nombre entier et d'une fraction inférieure à 1. Écris ta réponse sous la forme d'un entier plus une fraction.
 
-**Réponse :** 12/5
+**Réponse :** 2 + 5/6
 
-*Corrigé.* (1) Chaque graduation vaut 1/5. (2) Au 12e graduation, on a parcouru 12 cinquièmes : l'abscisse est 12/5. (3) On peut vérifier sa position : 12/5 = 2 + 2/5, donc le point est entre 2 et 3.
+*Corrigé.* (1) Chaque unité est partagée en 6 intervalles égaux : un intervalle vaut 1/6. (2) Le dernier nombre entier avant le point A est 2 : la partie entière est 2. (3) Après 2, on compte 5 intervalles jusqu'à A : cela fait 5/6, une fraction inférieure à 1. (4) A repère 2 + 5/6, qu'on peut aussi écrire 17/6.
 
-*Indice.* Le nombre de graduations donne directement le numérateur.
+*Indice.* Quel est le dernier nombre entier avant A ? Combien d'intervalles reste-t-il ensuite ?
 
-**EX-C030-E-03** — entrainement, numerique, 90 s
+**EX-C030-E-03** — entrainement, numerique, 105 s
 
-Une demi-droite est graduée en demis. À quel graduation après 0 se trouve le nombre entier 3 ?
+Quelle fraction repère le point A ? Écris-la sous la forme numérateur/dénominateur.
 
-**Réponse :** 6
+**Réponse :** 17/7
 
-*Corrigé.* (1) Chaque graduation vaut 1/2. (2) Un tout entier vaut 2 demis, donc 3 touts valent 3 × 2 = 6 demis. (3) 3 = 6/2 : le nombre 3 se trouve au 6e graduation. (4) Les nombres entiers tombent bien sur des graduations, tous les 2 graduations ici.
+*Corrigé.* (1) Entre 0 et 1, on compte 7 intervalles égaux : chacun vaut 1/7. (2) Les grandes graduations marquent les nombres entiers : après 1 viennent 2 puis 3, qui ne sont pas écrits. (3) A est 3 intervalles après 2. Or 2 = 14/7, et 14 + 3 = 17. (4) A repère 17/7, soit 2 + 3/7.
 
-*Indice.* Combien de demis dans un tout entier ? Et dans trois ?
+*Indice.* Les grandes graduations marquent les nombres entiers. Combien d'intervalles dans une unité ?
 
-**EX-C030-M-01** — maitrise, texte, 120 s
+**EX-C030-M-01** — maitrise, texte, 150 s
 
-Une demi-droite est graduée en quarts. Un point se trouve 3 graduations après le nombre 2. Quelle est son abscisse ? Écris ta réponse sous la forme numérateur/dénominateur.
+Le point A repère la somme d'un nombre entier et d'une fraction inférieure à 1. Laquelle ? Réponds sous la forme d'un entier plus une fraction.
 
-**Réponse :** 11/4
+**Réponse :** 2 + 1/4
 
-*Corrigé.* (1) On commence par exprimer 2 en quarts : 2 = 8/4. (2) On avance ensuite de 3 graduations, soit 3 quarts de plus : 8 + 3 = 11 quarts. (3) L'abscisse du point est 11/4. (4) Vérification : 11/4 = 2 + 3/4, ce qui correspond bien à 3 graduations après 2.
+*Corrigé.* (1) Le nombre 1 n'est pas écrit : il faut d'abord trouver ce que vaut un intervalle. (2) Entre 0 et 3/4, on compte 3 intervalles égaux : chacun vaut 1/4. (3) Il faut 4 quarts pour faire 1 : le nombre 1 est à la 4e graduation après 0, et 2 à la 8e. (4) A est à la 9e graduation, une de plus que 2 : A repère 2 + 1/4, c'est-à-dire 9/4. Erreur à éviter : prendre un intervalle pour 1.
 
-*Indice.* Convertis d'abord le nombre 2 en quarts, puis ajoute les graduations.
+*Indice.* Que vaut un intervalle ? Combien d'intervalles faut-il pour faire 1 ?
 
-**EX-C030-M-02** — maitrise, texte, 120 s
+**EX-C030-M-02** — maitrise, numerique, 150 s
 
-Sur une demi-droite graduée en sixièmes, quelle fraction se trouve à la graduation située juste avant le nombre 2 ? Écris ta réponse avec une barre, par exemple 7/6.
+Le point A est repéré par une fraction. Laquelle ? Écris-la sous la forme numérateur/dénominateur.
 
-**Réponse :** 11/6
+**Réponse :** 13/5
 
-*Corrigé.* (1) Un tout vaut 6 sixièmes. (2) Deux touts valent donc 2 × 6 = 12 sixièmes : 2 = 12/6. (3) La graduation juste avant est la onzième. (4) C'est 11/6, c'est-à-dire 1 + 5/6.
+*Corrigé.* (1) Ce dessin commence à 1, pas à 0, et 1 = 5/5. (2) Entre 1 et 7/5, on compte 2 intervalles, qui valent ensemble 2/5 : un intervalle vaut 1/5. (3) A est 8 intervalles après 1 : 5 + 8 = 13 cinquièmes, soit 13/5, ou 2 + 3/5. (4) Piège : répondre 8/5 en comptant les intervalles depuis le début du dessin, comme s'il commençait à 0.
 
-*Indice.* Combien de sixièmes faut-il pour atteindre 2 ? Recule ensuite d'une graduation.
+*Indice.* Quel nombre est écrit au début de la demi-droite ? Que vaut un intervalle ?
 
 ---
 
@@ -4008,31 +4333,25 @@ Sur une demi-droite graduée en sixièmes, quelle fraction se trouve à la gradu
 > « Connaître et utiliser les relations entre unités simples, dixièmes et centièmes » — *Cycle 3, Cours moyen première année, Les nombres décimaux*
 > « Écrire une fraction décimale supérieure à 1 comme la somme d'un nombre entier et de fractions décimales ayant un numérateur inférieur à 10 » — *Cycle 3, Cours moyen première année, Les nombres décimaux*
 
-**EX-D018-D-01** — decouverte, texte, 45 s
+**EX-D018-D-01** — decouverte, texte, 60 s
 
-Un carré est partagé en 100 petits carreaux égaux : chaque carreau est un centième du carré. On colorie 37 carreaux. Quelle fraction du carré est coloriée ? Écris-la sous la forme numérateur/dénominateur.
+Le grand carré est partagé en petits carreaux égaux. Quelle fraction du grand carré est coloriée ? Écris-la sous la forme numérateur/dénominateur.
 
 **Réponse :** 37/100
 
-*Corrigé.* (1) Le carré entier est partagé en 100 parts égales : le dénominateur est 100. (2) On a colorié 37 de ces parts : le numérateur est 37. (3) La partie coloriée est 37/100 du carré : trente-sept centièmes. (4) On peut ranger les 100 carreaux en 10 rangées de 10 : une rangée est alors un dixième du carré. 37 carreaux, c'est 3 rangées complètes et 7 carreaux : 3 dixièmes et 7 centièmes.
+*Corrigé.* (1) On compte les carreaux du grand carré : 10 rangées de 10 carreaux, soit 100 carreaux égaux. Le dénominateur est 100 : chaque carreau est un centième du carré. (2) On compte les carreaux coloriés : 3 rangées complètes, soit 30 carreaux, plus 7 carreaux. En tout, 37 : le numérateur est 37. (3) La partie coloriée est 37/100 du carré : trente-sept centièmes. (4) Une rangée de 10 carreaux est un dixième du carré. 37 carreaux, c'est 3 rangées et 7 carreaux : 3 dixièmes et 7 centièmes, 3/10 + 7/100. (5) Piège : écrire 37/10, en prenant pour dénominateur les carreaux d'une seule rangée. Le dénominateur compte les parts du carré entier.
 
-*Indice.* En combien de parts égales le carré est-il partagé ? Combien en a-t-on colorié ?
+*Indice.* Combien de carreaux dans une rangée ? Combien de rangées ? Compte ensuite les carreaux coloriés.
 
-**EX-D018-D-02** — decouverte, qcm, 45 s
+**EX-D018-D-02** — decouverte, numerique, 60 s
 
-Une unité est partagée en 10 dixièmes. Puis chaque dixième est partagé en 10 parts égales. Que vaut une de ces petites parts ?
+Cette bande est l'unité. On partage chacune de ses parts en 10 parts égales. Combien de petites parts y a-t-il dans toute la bande ?
 
-- **a.** une centaine
-  <br>*Erreur visée :* L'élève confond centième et centaine. Une centaine vaut 100 unités, alors qu'une petite part est bien plus petite qu'une unité.
-- **b.** un dixième
-  <br>*Erreur visée :* L'élève pense que partager un dixième donne encore des dixièmes. Or il faut 100 de ces petites parts pour faire l'unité, et seulement 10 dixièmes.
-- **c.** une dizaine
-  <br>*Erreur visée :* L'élève confond dixième et dizaine. Une dizaine vaut 10 unités : c'est plus grand que l'unité, pas une part de l'unité.
-- **d.** un centième ✅
+**Réponse :** 100
 
-*Corrigé.* (1) Les 10 dixièmes sont chacun coupés en 10 : l'unité est coupée en 10 paquets de 10, soit 100 petites parts égales. (2) Une part sur 100 parts égales de l'unité, c'est 1/100 : un centième. (3) Il faut 10 centièmes pour faire 1 dixième, et 100 centièmes pour faire l'unité. (4) Attention aux mots : une dizaine (10) et une centaine (100) sont plus grandes que l'unité ; un dixième et un centième sont plus petits.
+*Corrigé.* (1) On compte les parts de la bande : 10 parts égales. Chaque part est un dixième de l'unité, 1/10. La part coloriée est l'un de ces dixièmes. (2) Chaque dixième est partagé en 10 : la part coloriée devient 10 petites parts, et chacun des 10 dixièmes aussi. (3) 10 paquets de 10 petites parts : cela fait 100 petites parts égales dans l'unité. (4) Une petite part est donc 1 part sur 100 : 1/100, un centième. Il faut 10 centièmes pour faire 1 dixième, et 100 centièmes pour faire l'unité. (5) Piège : répondre 20, en ajoutant 10 et 10 au lieu de compter 10 paquets de 10. Attention aussi aux mots : une centaine (100) est plus grande que l'unité, un centième est plus petit.
 
-*Indice.* En combien de petites parts égales l'unité est-elle partagée en tout ?
+*Indice.* Compte les parts de la bande. Chacune devient 10 petites parts : combien en tout ?
 
 **EX-D018-E-01** — entrainement, numerique, 60 s
 
@@ -4481,69 +4800,69 @@ Un nombre a pour partie entière 6 et pour arrondi à l'unité 7. Lequel de ces 
 > « Placer une fraction décimale sur une demi-droite graduée et repérer un point d'une demi-droite graduée par une fraction décimale » — *Cycle 3, Cours moyen première année, Les nombres décimaux*
 > « Placer un nombre décimal en écriture à virgule sur une demi-droite graduée et repérer un point d'une demi-droite graduée par un nombre décimal » — *Cycle 3, Cours moyen première année, Les nombres décimaux*
 
-**EX-D019-D-01** — decouverte, numerique, 45 s
+**EX-D019-D-01** — decouverte, numerique, 60 s
 
-Une demi-droite est graduée en dixièmes : entre 0 et 1, il y a 10 intervalles égaux. Quel nombre se trouve à la 7e graduation après 0 ?
+Quel nombre décimal repère le point A ? Écris-le avec une virgule.
 
-**Réponse :** 0.7
+**Réponse :** 1.6
 
-*Corrigé.* (1) L'unité, de 0 à 1, est partagée en 10 intervalles égaux : chaque intervalle vaut un dixième, 1/10. (2) À la 7e graduation après 0, on a avancé de 7 dixièmes : 7/10. (3) 7/10 s'écrit 0,7 : 0 unité et 7 dixièmes. Le nombre est 0,7. (4) Rappel : le dénominateur 10 donne la taille d'un intervalle, le numérateur 7 dit combien on en parcourt.
+*Corrigé.* (1) Entre 0 et 1, l'unité est partagée en 10 intervalles égaux : chacun vaut un dixième, 0,1. (2) Le point A est après 1 : on compte les intervalles depuis la graduation 1 jusqu'à A, il y en a 6. (3) A repère 1 unité et 6 dixièmes : 1,6, c'est-à-dire 16/10. (4) Piège : compter les traits en commençant par celui de 1 donnerait 1,7.
 
-*Indice.* Combien vaut un intervalle quand l'unité est partagée en 10 ?
+*Indice.* En combien d'intervalles l'unité est-elle partagée ? Pars de la graduation 1.
 
 **EX-D019-D-02** — decouverte, qcm, 60 s
 
-Une demi-droite est graduée en dixièmes. On y lit la graduation 3 puis la graduation 4, avec 10 intervalles égaux entre elles. Où se place le nombre 3,6 ?
+Quel point repère le nombre 6,3 ?
 
-- **a.** à la 7e graduation après 3
-  <br>*Erreur visée :* L'élève compte les traits au lieu des intervalles : il compte la graduation 3 comme la première, 3,1 comme la deuxième, et arrive à 7 en atteignant 3,6.
-- **b.** à la 6e graduation après 3 ✅
-- **c.** à la 6e graduation après 0
-  <br>*Erreur visée :* L'élève oublie la partie entière : il place 0,6 au lieu de 3,6.
+- **a.** Le point A ✅
+- **b.** Le point B
+  <br>*Erreur visée :* L'élève compte les traits au lieu des intervalles : il compte le trait de 6 comme le premier et s'arrête au 3e trait, qui repère 6,2.
+- **c.** Le point C
+  <br>*Erreur visée :* L'élève part de la graduation 5, la première écrite, au lieu de 6 : il avance bien de 3 dixièmes, mais repère 5,3.
 
-*Corrigé.* (1) 3,6, c'est 3 unités et 6 dixièmes : on part de la graduation 3. (2) Entre 3 et 4, chaque intervalle vaut un dixième. On avance de 6 intervalles : 3,1 ; 3,2 ; 3,3 ; 3,4 ; 3,5 ; 3,6. (3) On ne compte pas la graduation 3 elle-même : la 1re graduation après 3 est 3,1. (4) 3,6 est à la 6e graduation après 3, juste après le milieu entre 3 et 4, qui est 3,5. La bonne réponse est b.
+*Corrigé.* (1) Chaque unité est partagée en 10 intervalles égaux : un intervalle vaut un dixième. (2) 6,3, c'est 6 unités et 3 dixièmes : on part de la graduation 6 et on avance de 3 intervalles. (3) On ne compte pas le trait de 6 lui-même : le 1er intervalle mène à 6,1, puis 6,2, puis 6,3. (4) C'est le point A. Le point B repère 6,2 et le point C repère 5,3. La bonne réponse est a.
 
-*Indice.* Pars de la graduation 3 et compte les intervalles, pas les traits.
+*Indice.* Pars de la graduation 6 et compte les intervalles, pas les traits.
 
-**EX-D019-E-01** — entrainement, numerique, 75 s
+**EX-D019-E-01** — entrainement, numerique, 90 s
 
-Une demi-droite est graduée en centièmes : entre 7 et 7,1, il y a 10 intervalles égaux. Quel nombre se trouve à la 4e graduation après 7 ?
+Quel nombre décimal repère le point A ?
 
-**Réponse :** 7.04
+**Réponse :** 4.37
 
-*Corrigé.* (1) De 7 à 7,1, on avance d'un dixième, c'est-à-dire de 10 centièmes : 7,1 = 7,10. (2) Ce dixième est partagé en 10 intervalles égaux : chaque intervalle vaut un centième. (3) À la 4e graduation après 7, on a avancé de 4 centièmes. (4) Piège : ce n'est pas 7,4. Le chiffre 4 doit être au rang des centièmes, d'où le 0 au rang des dixièmes. Le nombre est 7,04.
+*Corrigé.* (1) Entre 4,3 et 4,4, l'écart est d'un dixième. Ce dixième est partagé en 10 petits intervalles : chacun vaut un centième, 0,01. (2) Le point A est 7 petits intervalles après 4,3. (3) 4,3 et 7 centièmes : le 3 reste au rang des dixièmes, le 7 se place au rang des centièmes. (4) A repère 4,37 : 4 unités, 3 dixièmes et 7 centièmes. Piège : lire 4,7 en prenant les petits intervalles pour des dixièmes.
 
-*Indice.* Combien vaut un intervalle quand un dixième est partagé en 10 ?
+*Indice.* Combien de petits intervalles entre deux nombres écrits voisins ? Que vaut alors chacun ?
 
-**EX-D019-E-02** — entrainement, texte, 75 s
+**EX-D019-E-02** — entrainement, texte, 90 s
 
-Une demi-droite est graduée en dixièmes à partir de 0. Le point A est à la 13e graduation après 0. Repère A par une fraction décimale, sous la forme numérateur/dénominateur.
+Repère le point A par une fraction décimale. Écris-la sous la forme numérateur/dénominateur.
 
-**Réponse :** 13/10
+**Réponse :** 34/10
 
-*Corrigé.* (1) Chaque intervalle vaut un dixième, 1/10. (2) À la 13e graduation, on a parcouru 13 dixièmes : l'abscisse de A est 13/10. (3) 10 dixièmes font une unité : 13/10 = 1 + 3/10, soit 1,3. A est entre 1 et 2, à la 3e graduation après 1. (4) On peut aussi écrire 1,3, l'écriture à virgule. La question demandait la fraction décimale : 13/10.
+*Corrigé.* (1) Chaque unité est partagée en 10 intervalles égaux : un intervalle vaut 1/10. (2) A est 4 intervalles après 3. Or 3 unités valent 30 dixièmes. (3) 30 + 4 = 34 dixièmes : A repère 34/10. (4) En écriture à virgule, c'est 3,4. Le numérateur compte les dixièmes, le dénominateur 10 dit qu'un intervalle est un dixième.
 
-*Indice.* Chaque graduation ajoute un dixième. Combien de dixièmes en tout ?
+*Indice.* Que vaut un intervalle ? Combien en faut-il pour aller de 0 jusqu'au point A ?
 
 **EX-D019-M-01** — maitrise, vrai_faux, 120 s
 
-Une demi-droite est graduée en dixièmes : 10 intervalles égaux entre 5 et 6. Léo place 5,25 à la 25e graduation après 5. A-t-il raison ?
+Léo dit que le point A repère 8,13. A-t-il raison ?
 
-**Réponse :** False
+**Réponse :** True
 
-*Corrigé.* (1) Chaque intervalle vaut un dixième. La 25e graduation après 5 est 25 dixièmes plus loin, soit 2 unités et 5 dixièmes : on arriverait à 7,5. (2) 5,25, c'est 5 unités, 2 dixièmes et 5 centièmes. Il est entre 5,2 et 5,3 : 5{,}2 < 5{,}25 < 5{,}3. (3) 5,25 dépasse 5,20 de 5 centièmes, la moitié d'un dixième : le point est au milieu entre la 2e et la 3e graduation après 5. (4) Léo a lu 25 comme un nombre de dixièmes. Il a tort.
+*Corrigé.* (1) Entre 8 et 8,2, il y a 2 grands intervalles : un grand intervalle vaut un dixième, 0,1. La grande graduation du milieu est 8,1. (2) Chaque dixième est partagé en 10 petits intervalles : un petit intervalle vaut un centième, 0,01. (3) Le point A est 3 petits intervalles après 8,1 : il repère 8,13. (4) Léo a raison. Piège : prendre les petits intervalles pour des dixièmes ferait lire 8,1 + 0,3 = 8,4, un nombre plus grand que 8,2 : il ne peut pas être sur ce dessin.
 
-*Indice.* Dans 5,25, quel chiffre compte les dixièmes ?
+*Indice.* Que vaut un grand intervalle ? Et un petit ?
 
-**EX-D019-M-02** — maitrise, numerique, 120 s
+**EX-D019-M-02** — maitrise, numerique, 150 s
 
-Une demi-droite est graduée en centièmes. Un point se trouve 6 graduations après 1,97. Quelle est son abscisse ?
+Seuls deux nombres sont écrits sur cette demi-droite graduée. Quel nombre décimal repère le point A ?
 
-**Réponse :** 2.03
+**Réponse :** 4.04
 
-*Corrigé.* (1) Chaque graduation vaut un centième : on avance de 6 centièmes à partir de 1,97. (2) On compte : 1,98 ; 1,99 ; puis 2, car 100 centièmes font une unité ; 2,01 ; 2,02 ; 2,03. (3) Le point a pour abscisse 2,03. En chemin, on a franchi la graduation 2. (4) Piège : ajouter 6 à 97 et écrire 1,103. Après 1,99, on ne passe pas à « 1,100 » : on arrive à 2.
+*Corrigé.* (1) De 3,97 à 3,99, il y a 2 intervalles pour un écart de 2 centièmes : un intervalle vaut un centième. (2) On compte de centième en centième depuis 3,99 : 4, car 100 centièmes font une unité, puis 4,01 ; 4,02 ; 4,03 ; 4,04. (3) Le point A est 5 intervalles après 3,99 : il repère 4,04. En chemin, on a franchi le nombre 4. (4) Piège : ajouter 5 à 99 et écrire 3,104. Après 3,99, on n'écrit pas « 3,100 » : on arrive à 4.
 
-*Indice.* Compte de centième en centième. Que vient-il après 1,99 ?
+*Indice.* Que vaut un intervalle ? Que vient-il après 3,99 ?
 
 ---
 
@@ -5028,6 +5347,98 @@ Jade a deux ficelles de 24 cm. Avec l'une, elle forme un carré. Avec l'autre, e
 *Corrigé.* (1) Toute la ficelle forme le contour : chaque figure a un périmètre de 24 cm. (2) Carré : 4 côtés égaux. Le périmètre est le quadruple du côté, donc le côté mesure 24 ÷ 4 = 6, soit 6 cm. (3) Triangle : 3 côtés égaux. Le périmètre est le triple du côté, donc le côté mesure 24 ÷ 3 = 8, soit 8 cm. (4) 8 cm, c'est plus long que 6 cm : c'est le triangle qui a les côtés les plus longs. La bonne réponse est b. Une même longueur de ficelle partagée en moins de côtés donne des côtés plus longs.
 
 *Indice.* Partage les 24 cm entre les côtés de chaque figure.
+
+---
+
+## `P017` · L'aire : comparer des surfaces et mesurer en centimètres carrés — CM1, difficulté 3
+
+*Comparer l'aire de deux surfaces sans mesure (superposition, découpage et recollement), distinguer l'aire du périmètre, puis déterminer une aire en comptant des carreaux unités sur un quadrillage et l'exprimer en cm² (un carré de 1 cm de côté a une aire de 1 cm²). Figure nécessaire : surfaces et quadrillages doivent être dessinés.*
+
+> « L'aire est introduite au CM1, en suivant la même progressivité que pour les autres grandeurs au cycle 2 : les élèves abordent cette notion en comparant des surfaces selon leur aire sans utiliser de mesures, puis ils apprennent à déterminer des aires en utilisant une unité et un quadrillage. » — *Cycle 3, Cours moyen première année, Grandeurs et mesures*
+> « Comparer les aires de différentes figures planes » — *Cycle 3, Cours moyen première année, Grandeurs et mesures, Les aires*
+> « Connaître et utiliser les centimètres carrés pour exprimer des aires » — *Cycle 3, Cours moyen première année, Grandeurs et mesures, Les aires*
+
+**EX-P017-D-01** — decouverte, numerique, 45 s
+
+Chaque carreau du quadrillage est un carré d'un centimètre de côté. Quelle est l'aire de la surface A, en cm² ?
+
+**Réponse :** 9
+
+*Corrigé.* (1) Un carré d'un centimètre de côté a une aire de 1 cm² : chaque carreau vaut 1 cm². (2) On compte les carreaux coloriés, rangée par rangée : 2 en haut, 4 au milieu, 3 en bas. 2 + 4 + 3 = 9. (3) La surface A recouvre 9 carreaux : son aire est 9 cm². (4) On compte les carreaux, pas les points où les lignes se croisent : l'aire, c'est la place que la surface recouvre.
+
+*Indice.* Compte les carreaux coloriés, une rangée après l'autre.
+
+**EX-P017-D-02** — decouverte, qcm, 45 s
+
+Quelle surface a la plus grande aire ?
+
+- **a.** La surface A
+  <br>*Erreur visée :* L'élève juge à la longueur : A est plus longue, et son contour aussi (16 côtés de carreau contre 12). Mais l'aire, c'est la place recouverte : A recouvre 7 carreaux, B en recouvre 8.
+- **b.** La surface B ✅
+- **c.** On ne peut pas savoir, elles n'ont pas la même forme
+  <br>*Erreur visée :* L'élève croit qu'on ne compare que des surfaces de même forme. Deux surfaces de formes différentes se comparent en comptant les carreaux qu'elles recouvrent, ou en découpant l'une pour la poser sur l'autre.
+
+*Corrigé.* (1) L'aire d'une surface, c'est la place qu'elle recouvre. Pour comparer, on compte les carreaux de chaque surface. (2) A : une rangée de 7 carreaux. B : 4 rangées de 2 carreaux, 2 + 2 + 2 + 2 = 8 carreaux. (3) 8 carreaux, c'est plus que 7 : la surface B a la plus grande aire, même si A est plus longue. (4) A a pourtant le plus long contour : 7 + 1 + 7 + 1 = 16 côtés de carreau, contre 2 + 4 + 2 + 4 = 12 pour B. Le plus grand périmètre n'a pas forcément la plus grande aire.
+
+*Indice.* Compte les carreaux de A, puis ceux de B.
+
+**EX-P017-E-01** — entrainement, vrai_faux, 90 s
+
+Inès dit : « Les surfaces A et B ont la même aire, mais pas le même périmètre. » Inès a-t-elle raison ?
+
+**Réponse :** True
+
+*Corrigé.* (1) Aire : on compte les carreaux. A : 2 rangées de 5, 5 + 5 = 10 carreaux. B : 1 + 2 + 3 + 4 = 10 carreaux. Les deux surfaces ont la même aire. (2) Périmètre : on compte les côtés de carreau sur le contour. A : 5 + 2 + 5 + 2 = 14. B : en escalier, le contour compte 16 côtés de carreau. (3) Même aire, 10 carreaux, mais périmètres différents, 14 et 16 : Inès a raison. (4) L'aire et le périmètre sont deux grandeurs différentes : on peut changer la forme d'une surface sans changer son aire, et son contour s'allonge ou raccourcit.
+
+*Indice.* Compte les carreaux de chaque surface, puis les côtés de carreau sur chaque contour.
+
+**EX-P017-E-02** — entrainement, numerique, 60 s
+
+Chaque carreau du quadrillage est un carré d'un centimètre de côté. Quelle est l'aire de la surface coloriée, en cm² ?
+
+**Réponse :** 14
+
+*Corrigé.* (1) Chaque carreau colorié vaut 1 cm². Le trou blanc au milieu ne fait pas partie de la surface : on ne le compte pas. (2) Rangée par rangée : 5 carreaux en haut, 2 dans chacune des deux rangées du milieu (un à gauche, un à droite), 5 en bas. 5 + 2 + 2 + 5 = 14. (3) L'aire de la surface coloriée est 14 cm². (4) Compter tout le rectangle, trou compris, donne 20 carreaux : c'est l'aire du grand rectangle, pas celle de la surface coloriée.
+
+*Indice.* Compte seulement les carreaux coloriés, rangée par rangée.
+
+**EX-P017-E-03** — entrainement, qcm, 75 s
+
+Zoé découpe la surface A en morceaux, puis elle recolle tous les morceaux autrement, sans trou ni chevauchement. Quelle surface peut-elle obtenir ?
+
+- **a.** La surface C ✅
+- **b.** La surface B
+  <br>*Erreur visée :* L'élève compare les contours : B a le même contour que A, 16 côtés de carreau. Mais B recouvre 16 carreaux, A seulement 12.
+- **c.** Aucune des deux, car découper change l'aire
+  <br>*Erreur visée :* L'élève croit qu'en découpant et en recollant, on change l'aire. Or les morceaux recouvrent la même place, seulement rangée autrement.
+
+*Corrigé.* (1) Découper une surface et recoller tous ses morceaux, sans trou ni chevauchement, ne change pas son aire : la place recouverte reste la même. (2) On peut le voir sans compter : on coupe A en deux moitiés de 3 carreaux de long, et on pose une moitié sous l'autre. On obtient exactement C. (3) On peut aussi compter : A recouvre 12 carreaux (2 rangées de 6), C aussi (4 rangées de 3), B en recouvre 16 (4 rangées de 4). (4) Zoé a pu obtenir la surface C. B a le même contour que A, mais une plus grande aire.
+
+*Indice.* Quand on découpe et qu'on recolle tous les morceaux, la place recouverte change-t-elle ?
+
+**EX-P017-M-01** — maitrise, qcm, 90 s
+
+Laquelle de ces surfaces a une aire de 12 cm² ?
+
+- **a.** La surface B
+  <br>*Erreur visée :* L'élève compte les côtés de carreau sur le contour de B : 3 + 3 + 3 + 3 = 12. C'est le périmètre de B, 12 cm, une longueur. Son aire est 9 cm² : 3 rangées de 3 carreaux.
+- **b.** La surface C
+  <br>*Erreur visée :* L'élève compte les points où les lignes se croisent, sur C et à l'intérieur : 3 rangées de 4 points, 12 points. Mais l'aire compte les carreaux : C en recouvre 6, son aire est 6 cm².
+- **c.** La surface A ✅
+
+*Corrigé.* (1) Chaque carreau vaut 1 cm² : une aire de 12 cm², c'est 12 carreaux recouverts. (2) A : 4 + 4 + 2 + 2 = 12 carreaux. B : 3 + 3 + 3 = 9 carreaux. C : 3 + 3 = 6 carreaux. (3) C'est la surface A qui a une aire de 12 cm². (4) Le contour de B compte 12 côtés de carreau (son périmètre est 12 cm, une longueur), et C touche 12 points du quadrillage : ni l'un ni l'autre n'est une aire.
+
+*Indice.* Pour chaque surface, compte les carreaux, et seulement les carreaux.
+
+**EX-P017-M-02** — maitrise, numerique, 90 s
+
+Combien de surfaces comme A faut-il pour recouvrir exactement la surface B, sans trou ni chevauchement ?
+
+**Réponse :** 4
+
+*Corrigé.* (1) On mesure l'aire de B avec une autre unité : la surface A, au lieu du carreau. (2) A recouvre 6 carreaux : 2 rangées de 3. B recouvre 24 carreaux : 4 rangées de 6, 6 + 6 + 6 + 6 = 24. (3) On pose des surfaces A jusqu'à 24 carreaux : 6, 12, 18, 24. Il en faut 4. (4) On peut aussi le tracer sur le dessin : B se partage en 4 rectangles comme A, 2 en haut et 2 en bas. (5) Répondre 2 parce que B est deux fois plus longue que A, c'est oublier qu'elle est aussi deux fois plus haute.
+
+*Indice.* Combien de carreaux recouvre A ? Et B ?
 
 ---
 

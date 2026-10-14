@@ -4,18 +4,26 @@
     "skill_id": "C030",
     "level": "decouverte",
     "type": "numerique",
-    "statement": "Une demi-droite est graduée en **quarts** à partir de 0.\n\nCombien de graduations faut-il parcourir depuis 0 pour atteindre $\\frac{7}{4}$ ?",
-    "image": null,
+    "statement": "Quelle fraction repère le point A ? Écris-la sous la forme numérateur/dénominateur.",
+    "image": "figures/EX-C030-D-01",
     "answer": {
-      "value": 7
+      "value": "5/4",
+      "accepted": [
+        "5 / 4",
+        "1 + 1/4",
+        "1+1/4",
+        "1/4 + 1",
+        "1 et 1/4",
+        "1 plus 1/4"
+      ]
     },
     "solution_steps": [
-      "Chaque intervalle vaut $\\frac{1}{4}$.",
-      "Le numérateur indique combien de ces intervalles il faut parcourir.",
-      "Pour $\\frac{7}{4}$, il en faut **7**.",
-      "On dépasse alors 1, puisqu'un tout n'en contient que 4."
+      "Entre 0 et 1, l'unité est partagée en 4 intervalles égaux : chacun vaut $\\frac{1}{4}$.",
+      "On compte les intervalles depuis 0 jusqu'au point A : 4 pour atteindre 1, puis 1 de plus, soit 5.",
+      "5 intervalles d'un quart : le point A repère $\\frac{5}{4}$, c'est-à-dire $1 + \\frac{1}{4}$.",
+      "Le dénominateur 4 dit en combien d'intervalles on partage l'unité ; le numérateur 5 compte les intervalles parcourus."
     ],
-    "hint": "Le numérateur compte les graduations, le dénominateur donne la taille du graduation.",
+    "hint": "En combien d'intervalles l'unité, de 0 à 1, est-elle partagée ?",
     "estimated_duration_s": 60,
     "review_status": "relu_agent",
     "programme_ref": "Cycle 3, CM1 : savoir repérer un point d'une demi-droite graduée par une fraction."
@@ -24,129 +32,167 @@
     "id": "EX-C030-D-02",
     "skill_id": "C030",
     "level": "decouverte",
-    "type": "texte",
-    "statement": "Une demi-droite est graduée en **tiers** à partir de 0.\n\nQuelle fraction se trouve au 5e graduation après 0 ? Écris ta réponse sous la forme numérateur/dénominateur.",
-    "image": null,
+    "type": "qcm",
+    "statement": "Quel point repère la fraction $\\frac{4}{3}$ ?",
+    "image": "figures/EX-C030-D-02",
+    "choices": [
+      {
+        "key": "a",
+        "text": "Le point A",
+        "misconception": "L'élève compte les traits au lieu des intervalles : il compte le trait de 0 comme le premier et s'arrête au 4e trait, celui de 1, qui vaut $\\frac{3}{3}$."
+      },
+      {
+        "key": "b",
+        "text": "Le point B",
+        "misconception": null
+      },
+      {
+        "key": "c",
+        "text": "Le point C",
+        "misconception": "L'élève part de la première graduation après 0 au lieu de 0 : il avance de 4 intervalles depuis $\\frac{1}{3}$ et arrive sur $\\frac{5}{3}$."
+      }
+    ],
     "answer": {
-      "value": "5/3",
-      "accepted": [
-        "5 / 3"
-      ]
+      "value": "b"
     },
     "solution_steps": [
-      "Graduée en tiers : chaque graduation vaut $\\frac{1}{3}$.",
-      "Au 5e graduation, on a parcouru 5 tiers.",
-      "L'abscisse du point est donc $\\frac{5}{3}$.",
-      "Ce point se situe entre 1 et 2, car $\\frac{5}{3} = 1 + \\frac{2}{3}$."
+      "Chaque unité est partagée en 3 intervalles égaux : un intervalle vaut $\\frac{1}{3}$.",
+      "$\\frac{4}{3}$, ce sont 4 tiers : on avance de 4 intervalles depuis 0.",
+      "3 intervalles mènent à 1, car $\\frac{3}{3} = 1$ ; le 4e mène juste après 1 : c'est le point B.",
+      "$\\frac{4}{3} = 1 + \\frac{1}{3}$ : B est juste après 1. Le point A est sur 1, c'est-à-dire $\\frac{3}{3}$, et le point C sur $\\frac{5}{3}$. La bonne réponse est b."
     ],
-    "hint": "Cinq fois un tiers, cela fait combien de tiers ?",
+    "hint": "En combien d'intervalles l'unité est-elle partagée ? Combien de ces intervalles faut-il parcourir ?",
     "estimated_duration_s": 60,
     "review_status": "relu_agent",
-    "programme_ref": "Cycle 3, CM1 : savoir repérer un point d'une demi-droite graduée par une fraction."
+    "programme_ref": "Cycle 3, CM1 : savoir placer une fraction sur une demi-droite graduée."
   },
   {
     "id": "EX-C030-E-01",
     "skill_id": "C030",
     "level": "entrainement",
     "type": "qcm",
-    "statement": "Une demi-droite est graduée en **cinquièmes** à partir de 0.\n\nEntre quels deux nombres entiers se situe le point d'abscisse $\\frac{7}{5}$ ?",
-    "image": null,
+    "statement": "Quelle fraction repère le point A ?",
+    "image": "figures/EX-C030-E-01",
     "choices": [
       {
         "key": "a",
-        "text": "entre 1 et 2",
-        "misconception": null
+        "text": "$\\frac{11}{9}$",
+        "misconception": "L'élève compte les traits entre 0 et 1, les deux extrémités comprises : il en trouve 9 et croit l'unité partagée en 9 au lieu de 8 intervalles."
       },
       {
         "key": "b",
-        "text": "entre 0 et 1",
-        "misconception": "L'élève applique la règle apprise au CE2, où toutes les fractions étaient inférieures à 1, et place donc tout point d'abscisse fractionnaire dans le premier intervalle."
+        "text": "$\\frac{3}{8}$",
+        "misconception": "L'élève ne compte que les intervalles après 1 et oublie l'unité déjà parcourue entre 0 et 1."
       },
       {
         "key": "c",
-        "text": "entre 7 et 8",
-        "misconception": "L'élève lit le numérateur comme un entier et ignore le dénominateur : il place le point comme s'il s'agissait du nombre 7."
+        "text": "$\\frac{11}{8}$",
+        "misconception": null
+      },
+      {
+        "key": "d",
+        "text": "$\\frac{12}{8}$",
+        "misconception": "L'élève compte les traits au lieu des intervalles depuis 0 : en comptant le trait de 0, il en trouve un de trop."
       }
     ],
     "answer": {
-      "value": "a"
+      "value": "c"
     },
     "solution_steps": [
-      "Un tout vaut 5 cinquièmes, deux touts valent 10 cinquièmes.",
-      "$\\frac{7}{5}$ contient 7 cinquièmes : c'est plus que 5, donc plus que 1, et moins que 10, donc moins que 2.",
-      "$\\frac{7}{5} = 1 + \\frac{2}{5}$.",
-      "Le point se situe donc **entre 1 et 2**, juste après 1."
+      "Entre 0 et 1, on compte 8 intervalles égaux (et 9 traits) : chaque intervalle vaut $\\frac{1}{8}$.",
+      "Jusqu'à 1, on parcourt 8 huitièmes ; le point A est 3 intervalles après 1.",
+      "$8 + 3 = 11$ huitièmes : A repère $\\frac{11}{8}$, soit $1 + \\frac{3}{8}$.",
+      "Le dénominateur 8 donne la taille d'un intervalle, le numérateur 11 le nombre d'intervalles parcourus. La bonne réponse est c."
     ],
-    "hint": "Combien de cinquièmes pour atteindre 1 ? Et pour atteindre 2 ?",
+    "hint": "Compte les intervalles entre 0 et 1, pas les traits.",
     "estimated_duration_s": 90,
     "review_status": "relu_agent",
-    "programme_ref": "Cycle 3, CM1 : savoir placer une fraction sur une demi-droite graduée."
+    "programme_ref": "Cycle 3, CM1 : savoir repérer un point d'une demi-droite graduée par une fraction."
   },
   {
     "id": "EX-C030-E-02",
     "skill_id": "C030",
     "level": "entrainement",
     "type": "texte",
-    "statement": "Une demi-droite est graduée en **cinquièmes**. Un point se trouve au 12e graduation après 0.\n\nQuelle est son abscisse ? Écris ta réponse sous la forme numérateur/dénominateur.",
-    "image": null,
+    "statement": "Repère le point A par la somme d'un nombre entier et d'une fraction inférieure à 1. Écris ta réponse sous la forme d'un entier plus une fraction.",
+    "image": "figures/EX-C030-E-02",
     "answer": {
-      "value": "12/5",
+      "value": "2 + 5/6",
       "accepted": [
-        "12 / 5"
+        "2+5/6",
+        "5/6 + 2",
+        "2 + 5 / 6",
+        "2 et 5/6",
+        "2 plus 5/6",
+        "17/6"
       ]
     },
     "solution_steps": [
-      "Chaque graduation vaut $\\frac{1}{5}$.",
-      "Au 12e graduation, on a parcouru 12 cinquièmes : l'abscisse est $\\frac{12}{5}$.",
-      "On peut vérifier sa position : $\\frac{12}{5} = 2 + \\frac{2}{5}$, donc le point est entre 2 et 3."
+      "Chaque unité est partagée en 6 intervalles égaux : un intervalle vaut $\\frac{1}{6}$.",
+      "Le dernier nombre entier avant le point A est 2 : la partie entière est 2.",
+      "Après 2, on compte 5 intervalles jusqu'à A : cela fait $\\frac{5}{6}$, une fraction inférieure à 1.",
+      "A repère $2 + \\frac{5}{6}$, qu'on peut aussi écrire $\\frac{17}{6}$."
     ],
-    "hint": "Le nombre de graduations donne directement le numérateur.",
-    "estimated_duration_s": 75,
+    "hint": "Quel est le dernier nombre entier avant A ? Combien d'intervalles reste-t-il ensuite ?",
+    "estimated_duration_s": 90,
     "review_status": "relu_agent",
-    "programme_ref": "Cycle 3, CM1 : savoir repérer un point d'une demi-droite graduée par une fraction."
+    "programme_ref": "Cycle 3, CM1 : savoir repérer un point d'une demi-droite graduée par une fraction ou par la somme d'un nombre entier et d'une fraction."
   },
   {
     "id": "EX-C030-E-03",
     "skill_id": "C030",
     "level": "entrainement",
     "type": "numerique",
-    "statement": "Une demi-droite est graduée en **demis**.\n\nÀ quel graduation après 0 se trouve le nombre entier 3 ?",
-    "image": null,
+    "statement": "Quelle fraction repère le point A ? Écris-la sous la forme numérateur/dénominateur.",
+    "image": "figures/EX-C030-E-03",
     "answer": {
-      "value": 6
+      "value": "17/7",
+      "accepted": [
+        "17 / 7",
+        "2 + 3/7",
+        "2+3/7",
+        "3/7 + 2",
+        "2 et 3/7",
+        "2 plus 3/7"
+      ]
     },
     "solution_steps": [
-      "Chaque graduation vaut $\\frac{1}{2}$.",
-      "Un tout entier vaut 2 demis, donc 3 touts valent $3 \\times 2 = 6$ demis.",
-      "$3 = \\frac{6}{2}$ : le nombre 3 se trouve au **6e** graduation.",
-      "Les nombres entiers tombent bien sur des graduations, tous les 2 graduations ici."
+      "Entre 0 et 1, on compte 7 intervalles égaux : chacun vaut $\\frac{1}{7}$.",
+      "Les grandes graduations marquent les nombres entiers : après 1 viennent 2 puis 3, qui ne sont pas écrits.",
+      "A est 3 intervalles après 2. Or $2 = \\frac{14}{7}$, et $14 + 3 = 17$.",
+      "A repère $\\frac{17}{7}$, soit $2 + \\frac{3}{7}$."
     ],
-    "hint": "Combien de demis dans un tout entier ? Et dans trois ?",
-    "estimated_duration_s": 90,
+    "hint": "Les grandes graduations marquent les nombres entiers. Combien d'intervalles dans une unité ?",
+    "estimated_duration_s": 105,
     "review_status": "relu_agent",
-    "programme_ref": "Cycle 3, CM1 : savoir placer une fraction sur une demi-droite graduée."
+    "programme_ref": "Cycle 3, CM1 : savoir repérer un point d'une demi-droite graduée par une fraction."
   },
   {
     "id": "EX-C030-M-01",
     "skill_id": "C030",
     "level": "maitrise",
     "type": "texte",
-    "statement": "Une demi-droite est graduée en **quarts**. Un point se trouve 3 graduations **après le nombre 2**.\n\nQuelle est son abscisse ? Écris ta réponse sous la forme numérateur/dénominateur.",
-    "image": null,
+    "statement": "Le point A repère la somme d'un nombre entier et d'une fraction inférieure à 1. Laquelle ? Réponds sous la forme d'un entier plus une fraction.",
+    "image": "figures/EX-C030-M-01",
     "answer": {
-      "value": "11/4",
+      "value": "2 + 1/4",
       "accepted": [
-        "11 / 4"
+        "2+1/4",
+        "1/4 + 2",
+        "2 + 1 / 4",
+        "2 et 1/4",
+        "2 plus 1/4",
+        "9/4"
       ]
     },
     "solution_steps": [
-      "On commence par exprimer 2 en quarts : $2 = \\frac{8}{4}$.",
-      "On avance ensuite de 3 graduations, soit 3 quarts de plus : $8 + 3 = 11$ quarts.",
-      "L'abscisse du point est $\\frac{11}{4}$.",
-      "Vérification : $\\frac{11}{4} = 2 + \\frac{3}{4}$, ce qui correspond bien à 3 graduations après 2."
+      "Le nombre 1 n'est pas écrit : il faut d'abord trouver ce que vaut un intervalle.",
+      "Entre 0 et $\\frac{3}{4}$, on compte 3 intervalles égaux : chacun vaut $\\frac{1}{4}$.",
+      "Il faut 4 quarts pour faire 1 : le nombre 1 est à la 4e graduation après 0, et 2 à la 8e.",
+      "A est à la 9e graduation, une de plus que 2 : A repère $2 + \\frac{1}{4}$, c'est-à-dire $\\frac{9}{4}$. Erreur à éviter : prendre un intervalle pour 1."
     ],
-    "hint": "Convertis d'abord le nombre 2 en quarts, puis ajoute les graduations.",
-    "estimated_duration_s": 120,
+    "hint": "Que vaut un intervalle ? Combien d'intervalles faut-il pour faire 1 ?",
+    "estimated_duration_s": 150,
     "review_status": "relu_agent",
     "programme_ref": "Cycle 3, CM1 : savoir repérer un point d'une demi-droite graduée par une fraction ou par la somme d'un nombre entier et d'une fraction."
   },
@@ -154,23 +200,28 @@
     "id": "EX-C030-M-02",
     "skill_id": "C030",
     "level": "maitrise",
-    "type": "texte",
-    "statement": "Sur une demi-droite graduée en **sixièmes**, quelle fraction se trouve à la graduation située **juste avant** le nombre 2 ?\n\nÉcris ta réponse avec une barre, par exemple 7/6.",
-    "image": null,
+    "type": "numerique",
+    "statement": "Le point A est repéré par une fraction. Laquelle ? Écris-la sous la forme numérateur/dénominateur.",
+    "image": "figures/EX-C030-M-02",
     "answer": {
-      "value": "11/6",
+      "value": "13/5",
       "accepted": [
-        "11 / 6"
+        "13 / 5",
+        "2 + 3/5",
+        "2+3/5",
+        "3/5 + 2",
+        "2 et 3/5",
+        "2 plus 3/5"
       ]
     },
     "solution_steps": [
-      "Un tout vaut 6 sixièmes.",
-      "Deux touts valent donc $2 \\times 6 = 12$ sixièmes : $2 = \\frac{12}{6}$.",
-      "La graduation juste avant est la onzième.",
-      "C'est $\\frac{11}{6}$, c'est-à-dire $1 + \\frac{5}{6}$."
+      "Ce dessin commence à 1, pas à 0, et $1 = \\frac{5}{5}$.",
+      "Entre 1 et $\\frac{7}{5}$, on compte 2 intervalles, qui valent ensemble $\\frac{2}{5}$ : un intervalle vaut $\\frac{1}{5}$.",
+      "A est 8 intervalles après 1 : $5 + 8 = 13$ cinquièmes, soit $\\frac{13}{5}$, ou $2 + \\frac{3}{5}$.",
+      "Piège : répondre $\\frac{8}{5}$ en comptant les intervalles depuis le début du dessin, comme s'il commençait à 0."
     ],
-    "hint": "Combien de sixièmes faut-il pour atteindre 2 ? Recule ensuite d'une graduation.",
-    "estimated_duration_s": 120,
+    "hint": "Quel nombre est écrit au début de la demi-droite ? Que vaut un intervalle ?",
+    "estimated_duration_s": 150,
     "review_status": "relu_agent",
     "programme_ref": "Cycle 3, CM1 : savoir repérer un point d'une demi-droite graduée par une fraction."
   }

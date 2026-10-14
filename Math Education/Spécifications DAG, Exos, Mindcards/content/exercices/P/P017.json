@@ -1,0 +1,218 @@
+[
+  {
+    "id": "EX-P017-D-01",
+    "skill_id": "P017",
+    "level": "decouverte",
+    "type": "numerique",
+    "statement": "Chaque carreau du quadrillage est un carré d'un centimètre de côté.\n\nQuelle est l'aire de la surface A, en cm² ?",
+    "image": "figures/EX-P017-D-01",
+    "answer": {
+      "value": 9,
+      "unit": "cm²",
+      "accepted": [
+        "9 cm²",
+        "9 cm2",
+        "9 carreaux"
+      ]
+    },
+    "solution_steps": [
+      "Un carré d'un centimètre de côté a une aire de 1 cm² : chaque carreau vaut 1 cm².",
+      "On compte les carreaux coloriés, rangée par rangée : 2 en haut, 4 au milieu, 3 en bas. 2 + 4 + 3 = 9.",
+      "La surface A recouvre 9 carreaux : son aire est **9 cm²**.",
+      "On compte les carreaux, pas les points où les lignes se croisent : l'aire, c'est la place que la surface recouvre."
+    ],
+    "hint": "Compte les carreaux coloriés, une rangée après l'autre.",
+    "estimated_duration_s": 45,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 3, CM1, Les aires : « Déterminer des aires »"
+  },
+  {
+    "id": "EX-P017-D-02",
+    "skill_id": "P017",
+    "level": "decouverte",
+    "type": "qcm",
+    "statement": "Quelle surface a la plus grande aire ?",
+    "image": "figures/EX-P017-D-02",
+    "choices": [
+      {
+        "key": "a",
+        "text": "La surface A",
+        "misconception": "L'élève juge à la longueur : A est plus longue, et son contour aussi (16 côtés de carreau contre 12). Mais l'aire, c'est la place recouverte : A recouvre 7 carreaux, B en recouvre 8."
+      },
+      {
+        "key": "b",
+        "text": "La surface B",
+        "misconception": null
+      },
+      {
+        "key": "c",
+        "text": "On ne peut pas savoir, elles n'ont pas la même forme",
+        "misconception": "L'élève croit qu'on ne compare que des surfaces de même forme. Deux surfaces de formes différentes se comparent en comptant les carreaux qu'elles recouvrent, ou en découpant l'une pour la poser sur l'autre."
+      }
+    ],
+    "answer": {
+      "value": "b"
+    },
+    "solution_steps": [
+      "L'aire d'une surface, c'est la place qu'elle recouvre. Pour comparer, on compte les carreaux de chaque surface.",
+      "A : une rangée de 7 carreaux. B : 4 rangées de 2 carreaux, 2 + 2 + 2 + 2 = 8 carreaux.",
+      "8 carreaux, c'est plus que 7 : **la surface B** a la plus grande aire, même si A est plus longue.",
+      "A a pourtant le plus long contour : 7 + 1 + 7 + 1 = 16 côtés de carreau, contre 2 + 4 + 2 + 4 = 12 pour B. Le plus grand périmètre n'a pas forcément la plus grande aire."
+    ],
+    "hint": "Compte les carreaux de A, puis ceux de B.",
+    "estimated_duration_s": 45,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 3, CM1, Les aires : « Comparer les aires de différentes figures planes »"
+  },
+  {
+    "id": "EX-P017-E-01",
+    "skill_id": "P017",
+    "level": "entrainement",
+    "type": "vrai_faux",
+    "statement": "Inès dit : « Les surfaces A et B ont la même aire, mais pas le même périmètre. »\n\nInès a-t-elle raison ?",
+    "image": "figures/EX-P017-E-01",
+    "answer": {
+      "value": true
+    },
+    "solution_steps": [
+      "Aire : on compte les carreaux. A : 2 rangées de 5, 5 + 5 = 10 carreaux. B : 1 + 2 + 3 + 4 = 10 carreaux. Les deux surfaces ont la même aire.",
+      "Périmètre : on compte les côtés de carreau sur le contour. A : 5 + 2 + 5 + 2 = 14. B : en escalier, le contour compte 16 côtés de carreau.",
+      "Même aire, 10 carreaux, mais périmètres différents, 14 et 16 : Inès a **raison**.",
+      "L'aire et le périmètre sont deux grandeurs différentes : on peut changer la forme d'une surface sans changer son aire, et son contour s'allonge ou raccourcit."
+    ],
+    "hint": "Compte les carreaux de chaque surface, puis les côtés de carreau sur chaque contour.",
+    "estimated_duration_s": 90,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 3, CM1, Les aires : « Comparer les aires de différentes figures planes »"
+  },
+  {
+    "id": "EX-P017-E-02",
+    "skill_id": "P017",
+    "level": "entrainement",
+    "type": "numerique",
+    "statement": "Chaque carreau du quadrillage est un carré d'un centimètre de côté.\n\nQuelle est l'aire de la surface coloriée, en cm² ?",
+    "image": "figures/EX-P017-E-02",
+    "answer": {
+      "value": 14,
+      "unit": "cm²",
+      "accepted": [
+        "14 cm²",
+        "14 cm2",
+        "14 carreaux"
+      ]
+    },
+    "solution_steps": [
+      "Chaque carreau colorié vaut 1 cm². Le trou blanc au milieu ne fait pas partie de la surface : on ne le compte pas.",
+      "Rangée par rangée : 5 carreaux en haut, 2 dans chacune des deux rangées du milieu (un à gauche, un à droite), 5 en bas. 5 + 2 + 2 + 5 = 14.",
+      "L'aire de la surface coloriée est **14 cm²**.",
+      "Compter tout le rectangle, trou compris, donne 20 carreaux : c'est l'aire du grand rectangle, pas celle de la surface coloriée."
+    ],
+    "hint": "Compte seulement les carreaux coloriés, rangée par rangée.",
+    "estimated_duration_s": 60,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 3, CM1, Les aires : « Déterminer des aires »"
+  },
+  {
+    "id": "EX-P017-E-03",
+    "skill_id": "P017",
+    "level": "entrainement",
+    "type": "qcm",
+    "statement": "Zoé découpe la surface A en morceaux, puis elle recolle tous les morceaux autrement, sans trou ni chevauchement.\n\nQuelle surface peut-elle obtenir ?",
+    "image": "figures/EX-P017-E-03",
+    "choices": [
+      {
+        "key": "a",
+        "text": "La surface C",
+        "misconception": null
+      },
+      {
+        "key": "b",
+        "text": "La surface B",
+        "misconception": "L'élève compare les contours : B a le même contour que A, 16 côtés de carreau. Mais B recouvre 16 carreaux, A seulement 12."
+      },
+      {
+        "key": "c",
+        "text": "Aucune des deux, car découper change l'aire",
+        "misconception": "L'élève croit qu'en découpant et en recollant, on change l'aire. Or les morceaux recouvrent la même place, seulement rangée autrement."
+      }
+    ],
+    "answer": {
+      "value": "a"
+    },
+    "solution_steps": [
+      "Découper une surface et recoller tous ses morceaux, sans trou ni chevauchement, ne change pas son aire : la place recouverte reste la même.",
+      "On peut le voir sans compter : on coupe A en deux moitiés de 3 carreaux de long, et on pose une moitié sous l'autre. On obtient exactement C.",
+      "On peut aussi compter : A recouvre 12 carreaux (2 rangées de 6), C aussi (4 rangées de 3), B en recouvre 16 (4 rangées de 4).",
+      "Zoé a pu obtenir **la surface C**. B a le même contour que A, mais une plus grande aire."
+    ],
+    "hint": "Quand on découpe et qu'on recolle tous les morceaux, la place recouverte change-t-elle ?",
+    "estimated_duration_s": 75,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 3, CM1, Grandeurs et mesures : les élèves « abordent cette notion en comparant des surfaces selon leur aire sans utiliser de mesures »"
+  },
+  {
+    "id": "EX-P017-M-01",
+    "skill_id": "P017",
+    "level": "maitrise",
+    "type": "qcm",
+    "statement": "Laquelle de ces surfaces a une aire de 12 cm² ?",
+    "image": "figures/EX-P017-M-01",
+    "choices": [
+      {
+        "key": "a",
+        "text": "La surface B",
+        "misconception": "L'élève compte les côtés de carreau sur le contour de B : 3 + 3 + 3 + 3 = 12. C'est le périmètre de B, 12 cm, une longueur. Son aire est 9 cm² : 3 rangées de 3 carreaux."
+      },
+      {
+        "key": "b",
+        "text": "La surface C",
+        "misconception": "L'élève compte les points où les lignes se croisent, sur C et à l'intérieur : 3 rangées de 4 points, 12 points. Mais l'aire compte les carreaux : C en recouvre 6, son aire est 6 cm²."
+      },
+      {
+        "key": "c",
+        "text": "La surface A",
+        "misconception": null
+      }
+    ],
+    "answer": {
+      "value": "c"
+    },
+    "solution_steps": [
+      "Chaque carreau vaut 1 cm² : une aire de 12 cm², c'est 12 carreaux recouverts.",
+      "A : 4 + 4 + 2 + 2 = 12 carreaux. B : 3 + 3 + 3 = 9 carreaux. C : 3 + 3 = 6 carreaux.",
+      "C'est **la surface A** qui a une aire de 12 cm².",
+      "Le contour de B compte 12 côtés de carreau (son périmètre est 12 cm, une longueur), et C touche 12 points du quadrillage : ni l'un ni l'autre n'est une aire."
+    ],
+    "hint": "Pour chaque surface, compte les carreaux, et seulement les carreaux.",
+    "estimated_duration_s": 90,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 3, CM1, Les aires : « Connaître et utiliser les centimètres carrés pour exprimer des aires »"
+  },
+  {
+    "id": "EX-P017-M-02",
+    "skill_id": "P017",
+    "level": "maitrise",
+    "type": "numerique",
+    "statement": "Combien de surfaces comme A faut-il pour recouvrir exactement la surface B, sans trou ni chevauchement ?",
+    "image": "figures/EX-P017-M-02",
+    "answer": {
+      "value": 4,
+      "accepted": [
+        "4 surfaces",
+        "4 surfaces A",
+        "4 fois"
+      ]
+    },
+    "solution_steps": [
+      "On mesure l'aire de B avec une autre unité : la surface A, au lieu du carreau.",
+      "A recouvre 6 carreaux : 2 rangées de 3. B recouvre 24 carreaux : 4 rangées de 6, 6 + 6 + 6 + 6 = 24.",
+      "On pose des surfaces A jusqu'à 24 carreaux : 6, 12, 18, 24. Il en faut **4**.",
+      "On peut aussi le tracer sur le dessin : B se partage en 4 rectangles comme A, 2 en haut et 2 en bas.",
+      "Répondre 2 parce que B est deux fois plus longue que A, c'est oublier qu'elle est aussi deux fois plus haute."
+    ],
+    "hint": "Combien de carreaux recouvre A ? Et B ?",
+    "estimated_duration_s": 90,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 3, CM1, Grandeurs et mesures : les élèves « apprennent à déterminer des aires en utilisant une unité et un quadrillage »"
+  }
+]

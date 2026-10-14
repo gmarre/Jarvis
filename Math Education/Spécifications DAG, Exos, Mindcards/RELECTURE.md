@@ -1,6 +1,6 @@
 # Fiche de relecture — synthèse
 
-> 115 compétences, 636 exercices. Généré depuis `content/`, ne pas éditer à la main.  
+> 120 compétences, 667 exercices. Généré depuis `content/`, ne pas éditer à la main.  
 > Objectif : juger le **fond** et la **coordination**. Le détail complet, énoncés et corrigés, est dans `RELECTURE_DETAIL.md`.
 
 ⚠ **7 compétence(s) à regarder**, signalées dans la colonne *Signal* et détaillées en §3.
@@ -15,119 +15,122 @@ C'est la lecture qui compte pour juger la coordination : la difficulté doit mon
 | 2 | `A002` Compter jusqu'à 100 | CP | 1 | 3 | 6 |  |
 | 3 | `B001` Addition simple | CP | 1 | 6 | 14 |  |
 | 4 | `B003` Soustraction simple | CP | 1 | 6 | 12 |  |
-| 5 | `P002` Le mètre et le centimètre : unités et o… | CP | 1 | 6 | 14 |  |
-| 6 | `B002` Addition posée avec retenue | CP | 2 | 6 | 11 |  |
-| 7 | `B013` Calcul mental : additions | CP | 2 | 6 | 11 |  |
-| 8 | `B014` Calcul mental : soustractions | CP | 2 | 6 | 9 |  |
-| 9 | `B036` Problèmes de partage équitable | CP | 2 | 6 | 15 |  |
-| 10 | `B037` Problèmes additifs en deux étapes | CP | 2 | 6 | 15 |  |
-| 11 | `P003` La monnaie en euros entiers : valeur, c… | CP | 2 | 6 | 15 |  |
-| 12 | `A003` Compter jusqu'à 1000 | CE1 | 2 | 3 | 5 |  |
-| 13 | `A004` Lire un entier | CE1 | 2 | 3 | 6 | ⚠ |
-| 14 | `A005` Écrire un entier | CE1 | 2 | 3 | 5 | ⚠ |
-| 15 | `A006` Comparer deux entiers | CE1 | 2 | 3 | 13 | ⚠ |
-| 16 | `A008` Identifier chiffre et nombre | CE1 | 2 | 3 | 11 | ⚠ |
-| 17 | `A011` Pair / impair | CE1 | 2 | 3 | 11 |  |
-| 18 | `B005` Multiplication à un chiffre | CE1 | 2 | 7 | 17 |  |
-| 19 | `B015` Calcul mental : multiplier par 10 | CE1 | 2 | 6 | 16 |  |
-| 20 | `B042` Addition posée de nombres à trois chiff… | CE1 | 2 | 6 | 11 |  |
-| 21 | `B004` Soustraction posée avec retenue | CE1 | 2 | 6 | 12 |  |
-| 22 | `C001` Fraction comme partage | CE1 | 2 | 3 | 23 | ⚠ |
-| 23 | `C002` Numérateur | CE1 | 2 | 3 | 17 |  |
-| 24 | `C003` Dénominateur | CE1 | 2 | 3 | 21 | ⚠ |
-| 25 | `C009` Comparer fractions de même dénominateur | CE1 | 2 | 3 | 25 | ⚠ |
-| 26 | `C012` Additionner des fractions de même dénom… | CE1 | 2 | 3 | 17 |  |
-| 27 | `C026` Comparer des fractions de numérateur 1 | CE1 | 2 | 7 | 18 |  |
-| 28 | `D016` Écrire une somme d'argent avec une virg… | CE1 | 2 | 6 | 19 |  |
-| 29 | `P005` Longueurs : mètre, centimètre, kilomètre | CE1 | 2 | 6 | 17 |  |
-| 30 | `P006` Masses : gramme et kilogramme | CE1 | 2 | 6 | 16 |  |
-| 31 | `P008` Heures et minutes : unités de durée et … | CE1 | 2 | 6 | 20 |  |
-| 32 | `B038` Problèmes mixtes en deux étapes | CE1 | 3 | 6 | 19 |  |
-| 33 | `A007` Ranger plusieurs entiers | CE2 | 2 | 3 | 17 |  |
-| 34 | `A009` Comprendre la valeur positionnelle | CE2 | 2 | 3 | 12 |  |
-| 35 | `B006` Tables de multiplication | CE2 | 2 | 6 | 14 |  |
-| 36 | `C006` Fractions équivalentes | CE2 | 2 | 3 | 8 |  |
-| 37 | `C005` Fraction sur une droite graduée | CE2 | 2 | 3 | 25 |  |
-| 38 | `P010` Périmètre d'un polygone : longueur du c… | CE2 | 2 | 6 | 25 |  |
-| 39 | `A010` Décomposer un entier | CE2 | 3 | 3 | 7 |  |
-| 40 | `B039` Sens de la division et symbole ÷ | CE2 | 3 | 6 | 14 |  |
-| 41 | `B041` Calcul mental : multiplier par 100 et p… | CE2 | 3 | 6 | 14 |  |
-| 42 | `B007` Multiplication posée | CE2 | 3 | 6 | 18 |  |
-| 43 | `B043` Comparaison multiplicative : fois plus,… | CE2 | 3 | 6 | 21 |  |
-| 44 | `D017` Additionner et soustraire des montants … | CE2 | 3 | 6 | 18 |  |
-| 45 | `P009` Longueurs : millimètre et décimètre, co… | CE2 | 3 | 6 | 22 |  |
-| 46 | `P011` Masses : la tonne, conversions entre g,… | CE2 | 3 | 6 | 24 |  |
-| 47 | `P012` Contenances : litre, décilitre, centili… | CE2 | 3 | 6 | 20 |  |
-| 48 | `P014` Problèmes de durées en heures et minutes | CE2 | 3 | 6 | 24 |  |
-| 49 | `A012` Multiple | CM1 | 3 | 7 | 22 |  |
-| 50 | `A013` Diviseur | CM1 | 3 | 7 | 21 |  |
-| 51 | `A014` Multiples de 2, de 5 et de 10 | CM1 | 3 | 7 | 18 |  |
-| 52 | `A028` Entier sur une demi-droite graduée | CM1 | 3 | 7 | 25 |  |
-| 53 | `B008` Division euclidienne posée (diviseur à … | CM1 | 3 | 6 | 20 |  |
-| 54 | `B012` Calcul avec parenthèses | CM1 | 3 | 6 | 15 |  |
-| 55 | `B017` Estimer le résultat d'une opération | CM1 | 3 | 6 | 20 |  |
-| 56 | `C004` Fraction d'une quantité | CM1 | 3 | 3 | 13 |  |
-| 57 | `C027` Fraction supérieure à 1 | CM1 | 3 | 8 | 15 |  |
-| 58 | `C029` Encadrer une fraction | CM1 | 3 | 7 | 14 |  |
-| 59 | `C030` Fraction sur une demi-droite graduée | CM1 | 3 | 7 | 25 |  |
-| 60 | `D018` Fractions décimales : dixièmes et centi… | CM1 | 3 | 6 | 24 |  |
-| 61 | `D001` Écriture à virgule d'un nombre décimal | CM1 | 3 | 6 | 16 |  |
-| 62 | `D003` Comparer et ranger des nombres décimaux | CM1 | 3 | 6 | 28 |  |
-| 63 | `D004` Additionner et soustraire des décimaux … | CM1 | 3 | 6 | 20 |  |
-| 64 | `D012` Encadrer et intercaler des nombres déci… | CM1 | 3 | 6 | 24 |  |
-| 65 | `D008` Partie entière et arrondi à l'unité | CM1 | 3 | 6 | 19 |  |
-| 66 | `D019` Décimal sur une demi-droite graduée | CM1 | 3 | 6 | 27 |  |
-| 67 | `D020` Calcul mental : multiplier et diviser u… | CM1 | 3 | 6 | 19 |  |
-| 68 | `D021` Multiplier un décimal par un entier inf… | CM1 | 3 | 6 | 17 |  |
-| 69 | `E026` Reconnaître une situation de proportion… | CM1 | 3 | 6 | 27 |  |
-| 70 | `E027` Résoudre par linéarité multiplicative (… | CM1 | 3 | 6 | 17 |  |
-| 71 | `P015` Unités de mesure du milli au kilo : lon… | CM1 | 3 | 6 | 26 |  |
-| 72 | `P016` Problèmes de périmètre : retrouver un c… | CM1 | 3 | 6 | 28 |  |
-| 73 | `D014` Convertir des mesures écrites avec une … | CM1 | 4 | 6 | 20 |  |
-| 74 | `A026` Tous les diviseurs d'un entier | CM2 | 3 | 7 | 17 |  |
-| 75 | `B016` Calcul mental : diviser par 2, 4 ou 8 | CM2 | 3 | 6 | 16 |  |
-| 76 | `P020` Durées en heures, minutes et secondes | CM2 | 3 | 6 | 26 |  |
-| 77 | `A027` Diviseurs et multiples communs | CM2 | 4 | 8 | 22 |  |
-| 78 | `C031` Produit d'un entier par une fraction | CM2 | 4 | 7 | 10 |  |
-| 79 | `D022` Décimaux jusqu'aux millièmes | CM2 | 4 | 6 | 14 |  |
-| 80 | `D007` Division décimale par un entier à un ch… | CM2 | 4 | 6 | 17 |  |
-| 81 | `D023` Calcul mental : multiplier et diviser u… | CM2 | 4 | 6 | 13 |  |
-| 82 | `D024` Multiplier un décimal par un entier (po… | CM2 | 4 | 6 | 20 |  |
-| 83 | `E028` Résoudre par linéarité additive | CM2 | 4 | 6 | 22 |  |
-| 84 | `E029` Problèmes de proportionnalité en plusie… | CM2 | 4 | 6 | 18 |  |
-| 85 | `P018` Aire d'un carré ou d'un rectangle (cour… | CM2 | 4 | 6 | 29 |  |
-| 86 | `P019` Unités d'aire : cm², dm², m² et convers… | CM2 | 4 | 6 | 24 |  |
-| 87 | `B040` Division euclidienne par un nombre à de… | 6e | 4 | 6 | 18 |  |
-| 88 | `C032` Fraction comme quotient | 6e | 4 | 7 | 16 |  |
-| 89 | `D009` Arrondir au dixième ou au centième | 6e | 4 | 6 | 17 |  |
-| 90 | `D025` Multiplier par 0,1 ; 0,01 ; 0,001 | 6e | 4 | 6 | 19 |  |
-| 91 | `E030` Grandeurs proportionnelles : définition… | 6e | 4 | 6 | 31 |  |
-| 92 | `E031` Passage par l'unité et choix de la proc… | 6e | 4 | 6 | 24 |  |
-| 93 | `E003` Tableau de proportionnalité : représent… | 6e | 4 | 6 | 51 |  |
-| 94 | `E032` Pourcentage : définition et écritures | 6e | 4 | 6 | 31 |  |
-| 95 | `E010` Appliquer un pourcentage à une grandeur… | 6e | 4 | 6 | 25 |  |
-| 96 | `E033` Exprimer une proportion en pourcentage … | 6e | 4 | 6 | 24 |  |
-| 97 | `P021` Convertir des longueurs vers et depuis … | 6e | 4 | 6 | 20 |  |
-| 98 | `P022` Périmètre du carré et du rectangle : fo… | 6e | 4 | 6 | 26 |  |
-| 99 | `P024` Aire du carré et du rectangle : formules | 6e | 4 | 6 | 28 |  |
-| 100 | `P025` Conversions d'aires avec des nombres dé… | 6e | 4 | 6 | 20 |  |
-| 101 | `P026` Volume : le centimètre cube et le dénom… | 6e | 4 | 6 | 35 |  |
-| 102 | `P027` Convertir des durées : système décimal … | 6e | 4 | 6 | 18 |  |
-| 103 | `D006` Multiplier deux nombres décimaux | 6e | 5 | 6 | 22 |  |
-| 104 | `E006` Échelle d'un plan : premiers problèmes | 6e | 5 | 6 | 36 |  |
-| 105 | `P023` Périmètre d'un disque | 6e | 5 | 6 | 34 |  |
-| 106 | `C011` Réduction au même dénominateur | 5e | 4 | 3 | 14 |  |
-| 107 | `C010` Comparer fractions de dénominateurs dif… | 5e | 4 | 3 | 13 |  |
-| 108 | `E034` Coefficient de proportionnalité | 5e | 5 | 6 | 48 |  |
-| 109 | `E007` Vitesse moyenne | 5e | 5 | 6 | 24 |  |
-| 110 | `E035` Reconnaître un tableau de proportionnal… | 5e | 5 | 6 | 47 |  |
-| 111 | `E023` Proportionnalité et graphique | 5e | 5 | 6 | 53 |  |
-| 112 | `E036` Calculer un pourcentage dans le cas gén… | 5e | 5 | 6 | 31 |  |
-| 113 | `E037` Pourcentages par linéarité : 1 %, 10 %,… | 5e | 5 | 6 | 29 |  |
-| 114 | `C007` Simplification de fraction | 4e | 5 | 3 | 11 |  |
-| 115 | `C008` Fraction irréductible | 3e | 6 | 3 | 9 |  |
-
-**Sans exercice (5)** : `P001` Comparer et mesurer des longueurs avec une règle graduée, `P004` Lire l'heure en heures entières, `P007` Lire l'heure : demi-heures et quarts d'heure, `P013` Lire l'heure à la minute, `P017` L'aire : comparer des surfaces et mesurer en centimètres carrés
+| 5 | `P001` Comparer et mesurer des longueurs avec … | CP | 1 | 6 | 13 |  |
+| 6 | `P002` Le mètre et le centimètre : unités et o… | CP | 1 | 6 | 14 |  |
+| 7 | `P004` Lire l'heure en heures entières | CP | 1 | 6 | 12 |  |
+| 8 | `B002` Addition posée avec retenue | CP | 2 | 6 | 11 |  |
+| 9 | `B013` Calcul mental : additions | CP | 2 | 6 | 11 |  |
+| 10 | `B014` Calcul mental : soustractions | CP | 2 | 6 | 9 |  |
+| 11 | `B036` Problèmes de partage équitable | CP | 2 | 6 | 15 |  |
+| 12 | `B037` Problèmes additifs en deux étapes | CP | 2 | 6 | 15 |  |
+| 13 | `P003` La monnaie en euros entiers : valeur, c… | CP | 2 | 6 | 15 |  |
+| 14 | `A003` Compter jusqu'à 1000 | CE1 | 2 | 3 | 5 |  |
+| 15 | `A004` Lire un entier | CE1 | 2 | 3 | 6 | ⚠ |
+| 16 | `A005` Écrire un entier | CE1 | 2 | 3 | 5 | ⚠ |
+| 17 | `A006` Comparer deux entiers | CE1 | 2 | 3 | 13 | ⚠ |
+| 18 | `A008` Identifier chiffre et nombre | CE1 | 2 | 3 | 11 | ⚠ |
+| 19 | `A011` Pair / impair | CE1 | 2 | 3 | 11 |  |
+| 20 | `B005` Multiplication à un chiffre | CE1 | 2 | 7 | 17 |  |
+| 21 | `B015` Calcul mental : multiplier par 10 | CE1 | 2 | 6 | 16 |  |
+| 22 | `B042` Addition posée de nombres à trois chiff… | CE1 | 2 | 6 | 11 |  |
+| 23 | `B004` Soustraction posée avec retenue | CE1 | 2 | 6 | 12 |  |
+| 24 | `C001` Fraction comme partage | CE1 | 2 | 3 | 23 | ⚠ |
+| 25 | `C002` Numérateur | CE1 | 2 | 3 | 17 |  |
+| 26 | `C003` Dénominateur | CE1 | 2 | 3 | 21 | ⚠ |
+| 27 | `C009` Comparer fractions de même dénominateur | CE1 | 2 | 3 | 25 | ⚠ |
+| 28 | `C012` Additionner des fractions de même dénom… | CE1 | 2 | 3 | 17 |  |
+| 29 | `C026` Comparer des fractions de numérateur 1 | CE1 | 2 | 7 | 19 |  |
+| 30 | `D016` Écrire une somme d'argent avec une virg… | CE1 | 2 | 6 | 17 |  |
+| 31 | `P005` Longueurs : mètre, centimètre, kilomètre | CE1 | 2 | 6 | 17 |  |
+| 32 | `P006` Masses : gramme et kilogramme | CE1 | 2 | 6 | 16 |  |
+| 33 | `P007` Lire l'heure : demi-heures et quarts d'… | CE1 | 2 | 6 | 15 |  |
+| 34 | `P008` Heures et minutes : unités de durée et … | CE1 | 2 | 6 | 20 |  |
+| 35 | `B038` Problèmes mixtes en deux étapes | CE1 | 3 | 6 | 19 |  |
+| 36 | `A007` Ranger plusieurs entiers | CE2 | 2 | 3 | 17 |  |
+| 37 | `A009` Comprendre la valeur positionnelle | CE2 | 2 | 3 | 12 |  |
+| 38 | `B006` Tables de multiplication | CE2 | 2 | 6 | 14 |  |
+| 39 | `C006` Fractions équivalentes | CE2 | 2 | 3 | 8 |  |
+| 40 | `C005` Fraction sur une droite graduée | CE2 | 2 | 3 | 25 |  |
+| 41 | `P010` Périmètre d'un polygone : longueur du c… | CE2 | 2 | 6 | 25 |  |
+| 42 | `P013` Lire l'heure à la minute | CE2 | 2 | 6 | 15 |  |
+| 43 | `A010` Décomposer un entier | CE2 | 3 | 3 | 7 |  |
+| 44 | `B039` Sens de la division et symbole ÷ | CE2 | 3 | 6 | 14 |  |
+| 45 | `B041` Calcul mental : multiplier par 100 et p… | CE2 | 3 | 6 | 14 |  |
+| 46 | `B007` Multiplication posée | CE2 | 3 | 6 | 18 |  |
+| 47 | `B043` Comparaison multiplicative : fois plus,… | CE2 | 3 | 6 | 21 |  |
+| 48 | `D017` Additionner et soustraire des montants … | CE2 | 3 | 6 | 18 |  |
+| 49 | `P009` Longueurs : millimètre et décimètre, co… | CE2 | 3 | 6 | 22 |  |
+| 50 | `P011` Masses : la tonne, conversions entre g,… | CE2 | 3 | 6 | 24 |  |
+| 51 | `P012` Contenances : litre, décilitre, centili… | CE2 | 3 | 6 | 20 |  |
+| 52 | `P014` Problèmes de durées en heures et minutes | CE2 | 3 | 6 | 24 |  |
+| 53 | `A012` Multiple | CM1 | 3 | 7 | 22 |  |
+| 54 | `A013` Diviseur | CM1 | 3 | 7 | 21 |  |
+| 55 | `A014` Multiples de 2, de 5 et de 10 | CM1 | 3 | 7 | 18 |  |
+| 56 | `A028` Entier sur une demi-droite graduée | CM1 | 3 | 7 | 14 |  |
+| 57 | `B008` Division euclidienne posée (diviseur à … | CM1 | 3 | 6 | 20 |  |
+| 58 | `B012` Calcul avec parenthèses | CM1 | 3 | 6 | 15 |  |
+| 59 | `B017` Estimer le résultat d'une opération | CM1 | 3 | 6 | 20 |  |
+| 60 | `C004` Fraction d'une quantité | CM1 | 3 | 3 | 13 |  |
+| 61 | `C027` Fraction supérieure à 1 | CM1 | 3 | 8 | 15 |  |
+| 62 | `C029` Encadrer une fraction | CM1 | 3 | 7 | 14 |  |
+| 63 | `C030` Fraction sur une demi-droite graduée | CM1 | 3 | 7 | 15 |  |
+| 64 | `D018` Fractions décimales : dixièmes et centi… | CM1 | 3 | 6 | 22 |  |
+| 65 | `D001` Écriture à virgule d'un nombre décimal | CM1 | 3 | 6 | 16 |  |
+| 66 | `D003` Comparer et ranger des nombres décimaux | CM1 | 3 | 6 | 28 |  |
+| 67 | `D004` Additionner et soustraire des décimaux … | CM1 | 3 | 6 | 20 |  |
+| 68 | `D012` Encadrer et intercaler des nombres déci… | CM1 | 3 | 6 | 24 |  |
+| 69 | `D008` Partie entière et arrondi à l'unité | CM1 | 3 | 6 | 19 |  |
+| 70 | `D019` Décimal sur une demi-droite graduée | CM1 | 3 | 6 | 11 |  |
+| 71 | `D020` Calcul mental : multiplier et diviser u… | CM1 | 3 | 6 | 19 |  |
+| 72 | `D021` Multiplier un décimal par un entier inf… | CM1 | 3 | 6 | 17 |  |
+| 73 | `E026` Reconnaître une situation de proportion… | CM1 | 3 | 6 | 27 |  |
+| 74 | `E027` Résoudre par linéarité multiplicative (… | CM1 | 3 | 6 | 17 |  |
+| 75 | `P015` Unités de mesure du milli au kilo : lon… | CM1 | 3 | 6 | 26 |  |
+| 76 | `P016` Problèmes de périmètre : retrouver un c… | CM1 | 3 | 6 | 28 |  |
+| 77 | `P017` L'aire : comparer des surfaces et mesur… | CM1 | 3 | 7 | 18 |  |
+| 78 | `D014` Convertir des mesures écrites avec une … | CM1 | 4 | 6 | 20 |  |
+| 79 | `A026` Tous les diviseurs d'un entier | CM2 | 3 | 7 | 17 |  |
+| 80 | `B016` Calcul mental : diviser par 2, 4 ou 8 | CM2 | 3 | 6 | 16 |  |
+| 81 | `P020` Durées en heures, minutes et secondes | CM2 | 3 | 6 | 26 |  |
+| 82 | `A027` Diviseurs et multiples communs | CM2 | 4 | 8 | 22 |  |
+| 83 | `C031` Produit d'un entier par une fraction | CM2 | 4 | 7 | 10 |  |
+| 84 | `D022` Décimaux jusqu'aux millièmes | CM2 | 4 | 6 | 14 |  |
+| 85 | `D007` Division décimale par un entier à un ch… | CM2 | 4 | 6 | 17 |  |
+| 86 | `D023` Calcul mental : multiplier et diviser u… | CM2 | 4 | 6 | 13 |  |
+| 87 | `D024` Multiplier un décimal par un entier (po… | CM2 | 4 | 6 | 20 |  |
+| 88 | `E028` Résoudre par linéarité additive | CM2 | 4 | 6 | 22 |  |
+| 89 | `E029` Problèmes de proportionnalité en plusie… | CM2 | 4 | 6 | 18 |  |
+| 90 | `P018` Aire d'un carré ou d'un rectangle (cour… | CM2 | 4 | 6 | 29 |  |
+| 91 | `P019` Unités d'aire : cm², dm², m² et convers… | CM2 | 4 | 6 | 24 |  |
+| 92 | `B040` Division euclidienne par un nombre à de… | 6e | 4 | 6 | 18 |  |
+| 93 | `C032` Fraction comme quotient | 6e | 4 | 7 | 16 |  |
+| 94 | `D009` Arrondir au dixième ou au centième | 6e | 4 | 6 | 17 |  |
+| 95 | `D025` Multiplier par 0,1 ; 0,01 ; 0,001 | 6e | 4 | 6 | 19 |  |
+| 96 | `E030` Grandeurs proportionnelles : définition… | 6e | 4 | 6 | 31 |  |
+| 97 | `E031` Passage par l'unité et choix de la proc… | 6e | 4 | 6 | 24 |  |
+| 98 | `E003` Tableau de proportionnalité : représent… | 6e | 4 | 6 | 51 |  |
+| 99 | `E032` Pourcentage : définition et écritures | 6e | 4 | 6 | 31 |  |
+| 100 | `E010` Appliquer un pourcentage à une grandeur… | 6e | 4 | 6 | 25 |  |
+| 101 | `E033` Exprimer une proportion en pourcentage … | 6e | 4 | 6 | 24 |  |
+| 102 | `P021` Convertir des longueurs vers et depuis … | 6e | 4 | 6 | 20 |  |
+| 103 | `P022` Périmètre du carré et du rectangle : fo… | 6e | 4 | 6 | 26 |  |
+| 104 | `P024` Aire du carré et du rectangle : formules | 6e | 4 | 6 | 28 |  |
+| 105 | `P025` Conversions d'aires avec des nombres dé… | 6e | 4 | 6 | 20 |  |
+| 106 | `P026` Volume : le centimètre cube et le dénom… | 6e | 4 | 6 | 35 |  |
+| 107 | `P027` Convertir des durées : système décimal … | 6e | 4 | 6 | 18 |  |
+| 108 | `D006` Multiplier deux nombres décimaux | 6e | 5 | 6 | 22 |  |
+| 109 | `E006` Échelle d'un plan : premiers problèmes | 6e | 5 | 6 | 36 |  |
+| 110 | `P023` Périmètre d'un disque | 6e | 5 | 6 | 34 |  |
+| 111 | `C011` Réduction au même dénominateur | 5e | 4 | 3 | 14 |  |
+| 112 | `C010` Comparer fractions de dénominateurs dif… | 5e | 4 | 3 | 13 |  |
+| 113 | `E034` Coefficient de proportionnalité | 5e | 5 | 6 | 48 |  |
+| 114 | `E007` Vitesse moyenne | 5e | 5 | 6 | 24 |  |
+| 115 | `E035` Reconnaître un tableau de proportionnal… | 5e | 5 | 6 | 47 |  |
+| 116 | `E023` Proportionnalité et graphique | 5e | 5 | 6 | 53 |  |
+| 117 | `E036` Calculer un pourcentage dans le cas gén… | 5e | 5 | 6 | 31 |  |
+| 118 | `E037` Pourcentages par linéarité : 1 %, 10 %,… | 5e | 5 | 6 | 29 |  |
+| 119 | `C007` Simplification de fraction | 4e | 5 | 3 | 11 |  |
+| 120 | `C008` Fraction irréductible | 3e | 6 | 3 | 9 |  |
 
 ## 2. Par chapitre
 
@@ -192,10 +195,11 @@ Le chapitre est l'unité qu'un exercice bilan validerait.
 
 ### `MM-P-01` · Premières mesures : longueurs, masses, monnaie (CP-CE1)
 
-4 compétences, 24 exercices, niveaux CP, CE1.
+5 compétences, 30 exercices, niveaux CP, CE1.
 
 | Compétence | Ce que l'élève doit savoir faire | Exos |
 |---|---|--:|
+| `P001` Comparer et mesurer des longueurs… | Dire lequel de deux objets ou de deux segments est le plus long, par supe… | 6 |
 | `P002` Le mètre et le centimètre : unité… | Connaître les unités mètre et centimètre et leurs symboles m et cm, savoi… | 6 |
 | `P003` La monnaie en euros entiers : val… | Déterminer la valeur en euros d'un ensemble de pièces et de billets décri… | 6 |
 | `P005` Longueurs : mètre, centimètre, ki… | Connaître les unités m, cm et km et les relations 1 m = 100 cm et 1 km = … | 6 |
@@ -203,11 +207,14 @@ Le chapitre est l'unité qu'un exercice bilan validerait.
 
 ### `MM-P-02` · Lire l'heure et calculer des durées (CP-CE2)
 
-2 compétences, 12 exercices, niveaux CP, CE1, CE2.
+5 compétences, 30 exercices, niveaux CP, CE1, CE2.
 
 | Compétence | Ce que l'élève doit savoir faire | Exos |
 |---|---|--:|
+| `P004` Lire l'heure en heures entières | Lire sur une horloge à aiguilles une heure entière (trois heures, neuf he… | 6 |
+| `P007` Lire l'heure : demi-heures et qua… | Lire sur une horloge à aiguilles une heure donnée en heures entières (jus… | 6 |
 | `P008` Heures et minutes : unités de dur… | Connaître les unités h et min et les relations 1 h = 60 min, une demi-heu… | 6 |
+| `P013` Lire l'heure à la minute | Lire l'heure à la minute près sur une horloge à aiguilles (dix heures tre… | 6 |
 | `P014` Problèmes de durées en heures et … | Calculer la durée entre deux horaires d'une même journée donnés à la minu… | 6 |
 
 ### `MM-B-02` · La multiplication (CE1-CE2)
@@ -352,10 +359,11 @@ Le chapitre est l'unité qu'un exercice bilan validerait.
 
 ### `MM-P-05` · Aires et volumes (CM1-6e)
 
-5 compétences, 30 exercices, niveaux CM1, CM2, 6e.
+6 compétences, 37 exercices, niveaux CM1, CM2, 6e.
 
 | Compétence | Ce que l'élève doit savoir faire | Exos |
 |---|---|--:|
+| `P017` L'aire : comparer des surfaces et… | Comparer l'aire de deux surfaces sans mesure (superposition, découpage et… | 7 |
 | `P018` Aire d'un carré ou d'un rectangle… | Déterminer l'aire d'un rectangle ou d'un carré aux côtés entiers en compt… | 6 |
 | `P019` Unités d'aire : cm², dm², m² et c… | Connaître les unités cm², dm² et m², savoir qu'un m² est l'aire d'un carr… | 6 |
 | `P024` Aire du carré et du rectangle : f… | Connaître les formules de l'aire d'un rectangle (L × l) et d'un carré (c … | 6 |
@@ -476,6 +484,19 @@ Le chapitre est l'unité qu'un exercice bilan validerait.
 | M | nume | Au marché, Paul avait 67 œufs. Il lui en reste 41. Combien d'œufs a-t-il vendus ? | 26 |
 | M | nume | Complète l'égalité : … - 32 = 45 | 77 |
 
+**`P001` · Comparer et mesurer des longueurs avec une règle graduée** — diff. 1, seuil 3/4  
+*Dire lequel de deux objets ou de deux segments est le plus long, par superposition, report d'un étalon ou mesure. Mesurer la longueur d'un segment en centimètres entiers avec une règle graduée, en plaçant le zéro à une extrémité. Figure nécessaire : le segment et la règle doivent être dessinés.*
+> « Savoir mesurer la longueur d'un segment en utilisant une règle graduée. »
+
+| | Type | Demandé | Réponse |
+|---|---|---|---|
+| D | nume | Mesure le segment AB avec la règle. Combien de centimètres mesure-t-il ? | 6 |
+| D | qcm | Combien mesure le segment CD ? | b) 4 cm |
+| E | nume | Combien de centimètres mesure le segment EF ? | 5 |
+| E | qcm | Combien mesure le segment GH ? | a) 10 cm |
+| M | nume | Léo a posé sa règle sous le segment KL. Il dit : « KL mesure 12 cm. » Combien de centimètre… | 11 |
+| M | qcm | Lina a une bande de 11 cm. Lequel est le plus long : sa bande ou le segment MN ? | c) La bande de Lina |
+
 **`P002` · Le mètre et le centimètre : unités et ordres de grandeur** — diff. 1, seuil 3/4  
 *Connaître les unités mètre et centimètre et leurs symboles m et cm, savoir qu'un mètre est égal à cent centimètres, et choisir la mesure vraisemblable d'un objet familier (une trousse mesure plutôt 20 cm que 2 cm ou 1 m). Nombres entiers jusqu'à 100, sans conversion écrite autre que 1 m = 100 cm.*
 > « Savoir qu'un mètre est égal à cent centimètres. »
@@ -488,6 +509,19 @@ Le chapitre est l'unité qu'un exercice bilan validerait.
 | E | qcm | Quel objet mesure environ 2 m de haut ? | a) La porte de la classe |
 | M | vrai | Sam dit : « 95 cm, c'est plus long que 1 m. » A-t-il raison ? | faux |
 | M | qcm | Une corde mesure 100 cm. Une autre mesure 1 m. Laquelle est la plus longue ? | c) Elles ont la même longueur |
+
+**`P004` · Lire l'heure en heures entières** — diff. 1, seuil 3/4  
+*Lire sur une horloge à aiguilles une heure entière (trois heures, neuf heures, midi) et associer une heure à un moment familier de la journée. Figure nécessaire : l'horloge doit être dessinée.*
+> « Au CP, le travail mené sur le repérage dans le temps se limite aux heures entières. »
+
+| | Type | Demandé | Réponse |
+|---|---|---|---|
+| D | text | Regarde bien la petite aiguille. Quelle heure indique l'horloge ? | 3 heures |
+| D | vrai | Tom regarde l'horloge et dit : « Il est 12 heures. » A-t-il raison ? | faux |
+| E | text | Quelle heure indique l'horloge ? | 12 heures |
+| E | qcm | Sur cette horloge, il manque des nombres. Quelle heure indique-t-elle ? | b) 2 heures |
+| M | text | Léa se lève à l'heure de cette horloge sans nombres. À quelle heure se lève-t-elle ? | 8 heures |
+| M | qcm | Il n'y a pas de nombres sur cette horloge. Quelle heure est-il ? | c) 4 heures |
 
 **`B002` · Addition posée avec retenue** — diff. 2, seuil 3/4  
 *Poser en colonnes et calculer l'addition de deux ou trois nombres à un ou deux chiffres, avec passage de la retenue des unités aux dizaines*
@@ -734,13 +768,13 @@ Le chapitre est l'unité qu'un exercice bilan validerait.
 
 | | Type | Demandé | Réponse |
 |---|---|---|---|
-| D | qcm | Lequel est le plus grand : 1/5 ou 1/3 ? | a) 1/3 |
-| D | qcm | Une même tablette de chocolat est partagée en parts égales. Dans quel cas une part est-elle… | a) Quand on partage en 2 |
-| E | qcm | Léa partage une tarte entre 4 amis. Tom partage une tarte pareille entre 6. Qui a la plus g… | a) Un ami de Léa |
-| E | text | Range de la plus petite à la plus grande : 1/2, 1/8, 1/4. Sépare-les par des virgules. | 1/8, 1/4, 1/2 |
-| E | vrai | 1/10 est plus grand que 1/6, parce que 10 est plus grand que 6. | faux |
-| M | qcm | Léa mange 1/4 d'une tarte. Tom en mange 1/8, et Zoé 1/3. Qui a mangé le moins ? | a) Tom |
-| M | text | Trouve une fraction de numérateur 1 plus grande que 1/8 et plus petite que 1/4. Écris-la av… | 1/6 |
+| D | qcm | Les bandes A et B sont pareilles. Quelle part coloriée est la plus grande ? | a) Celle de la bande A |
+| D | vrai | Une tablette pareille à celle-ci, partagée en 4 parts égales, donne des parts plus grosses … | vrai |
+| E | qcm | Voici la tarte de Léa. Tom coupe une tarte pareille en 6 parts égales. Qui a les plus petit… | b) Tom |
+| E | text | Les trois bandes sont pareilles. Range les fractions coloriées de la plus petite à la plus … | 1/10, 1/6, 1/3 |
+| E | vrai | La part coloriée est plus grande que 1/6 de ce rectangle. | faux |
+| M | qcm | Chacun a une tarte pareille. Léa en mange 1/4, Zoé 1/6, Tom la part coloriée. Qui mange le … | c) Tom |
+| M | nume | Lou partage une bande pareille en parts plus petites que celles de A, mais plus grandes que… | 5 |
 
 **`D016` · Écrire une somme d'argent avec une virgule** — diff. 2, seuil 3/4  
 *Passer d'une somme en euros et centimes à son écriture à virgule et réciproquement (100 centimes = 1 €), en distinguant 2,05 € de 2,50 €, et ranger des prix donnés sous des écritures différentes. Monnaie uniquement, sans les mots dixième ni centième.*
@@ -751,7 +785,7 @@ Le chapitre est l'unité qu'un exercice bilan validerait.
 | D | nume | Lina a 8 € et 35 centimes dans sa tirelire. Écris cette somme en euros, avec une virgule. | 8.35 |
 | D | qcm | Tom paie 4 € et 8 centimes. Comment s'écrit ce prix avec une virgule ? | b) 4,08 € |
 | E | nume | Un cahier coûte 275 centimes. Rappel : 100 centimes font 1 €. Écris ce prix en euros, avec … | 2.75 |
-| E | vrai | Zoé a 7 pièces de 1 € et 6 pièces de 10 centimes. Elle écrit : 7,06 €. A-t-elle raison ? | faux |
+| E | vrai | Zoé compte cet argent. Elle écrit : 7,06 €. A-t-elle raison ? | faux |
 | M | qcm | Range ces prix du moins cher au plus cher : 2,50 € ; 195 centimes ; 2,05 € ; 2 € et 30 cent… | c) 195 centimes ; 2,05 € ; 2 € et… |
 | M | nume | Max a 2 € et 135 centimes. Écris sa somme en euros, avec une virgule. | 3.35 |
 
@@ -780,6 +814,19 @@ Le chapitre est l'unité qu'un exercice bilan validerait.
 | E | text | Un cartable plein pèse 3 … Quelle unité manque : g ou kg ? | kg |
 | M | qcm | Range du plus léger au plus lourd : 2 kg ; 600 g ; 1 kg et 500 g ; 1 000 g | c) 600 g ; 1 000 g ; 1 kg et 500 … |
 | M | vrai | Léo dit : « 1 kg de plumes, c'est plus léger que 1 000 g de cailloux. » A-t-il raison ? | faux |
+
+**`P007` · Lire l'heure : demi-heures et quarts d'heure** — diff. 2, seuil 3/4  
+*Lire sur une horloge à aiguilles une heure donnée en heures entières (jusqu'à 23 h), en heures et demie ou en heures et quart, et faire le lien avec l'affichage digital (2 heures et quart de l'après-midi s'affiche 14 : 15). Figure nécessaire : l'horloge doit être dessinée.*
+> « Lire l'heure sur une horloge à aiguilles (lorsque l'heure est donnée en heures entières, en heures et demi-heure ou en heures et quarts d'heure). »
+
+| | Type | Demandé | Réponse |
+|---|---|---|---|
+| D | text | C'est le matin. Regarde la petite aiguille, puis la grande. Quelle heure indique l'horloge ? | 7 h 30 |
+| D | qcm | Regarde les deux aiguilles. Quelle heure indique l'horloge ? | c) 9 h 15 |
+| E | text | C'est l'après-midi. Quelle heure indique l'horloge ? Écris-la comme sur une horloge digital… | 14 h 45 |
+| E | vrai | Inès regarde l'horloge et dit : « Il est dix heures et demie. » A-t-elle raison ? | vrai |
+| M | qcm | C'est le soir. Le dîner commence à l'heure de l'horloge. À quelle heure commence-t-il ? | a) 18 h 45 |
+| M | text | C'est le matin. Sur cette horloge, il manque des nombres. Quelle heure indique-t-elle ? | 11 h 45 |
 
 **`P008` · Heures et minutes : unités de durée et durées simples** — diff. 2, seuil 3/4  
 *Connaître les unités h et min et les relations 1 h = 60 min, une demi-heure = 30 min, un quart d'heure = 15 min ; distinguer les heures du matin et de l'après-midi (3 heures de l'après-midi, c'est 15 h) ; ajouter des durées et trouver la durée entre deux horaires écrits d'une même journée, en heures entières, demi-heures ou quarts d'heure ; comparer 2 h et 130 min. Horaires donnés par écrit, sans horloge.*
@@ -874,6 +921,19 @@ Le chapitre est l'unité qu'un exercice bilan validerait.
 | E | vrai | Un carré a des côtés de 13 cm. Tom affirme : « Le périmètre de ce carré est 39 cm. » | faux |
 | M | qcm | Deux carreaux carrés de 15 cm de côté, posés côte à côte, forment un rectangle de 30 cm de … | b) 90 cm |
 | M | nume | Une table de jeu a la forme d'un polygone à 6 côtés, tous de 45 cm. Quel est le périmètre d… | 270 |
+
+**`P013` · Lire l'heure à la minute** — diff. 2, seuil 3/4  
+*Lire l'heure à la minute près sur une horloge à aiguilles (dix heures trente-cinq, sept heures moins le quart, quatre heures moins vingt) et la faire correspondre à l'affichage digital. Figure nécessaire : l'horloge doit être dessinée.*
+> « L'élève lit l'heure sur un cadran à aiguilles ou sur un affichage digital »
+
+| | Type | Demandé | Réponse |
+|---|---|---|---|
+| D | text | C'est le matin. Quelle heure indique l'horloge ? Compte les minutes de 5 en 5 avec la grand… | 9 h 20 |
+| D | qcm | Quelle heure indique l'horloge ? | b) 2 h 35 |
+| E | text | C'est le matin. Quelle heure indique l'horloge, à la minute près ? | 6 h 18 |
+| E | vrai | Malo regarde l'horloge et dit : « Il est 9 h 55. » A-t-il raison ? | faux |
+| M | text | C'est l'après-midi. Sur cette horloge, seuls quatre nombres sont écrits. Quelle heure indiq… | 16 h 52 |
+| M | qcm | Lis l'heure de l'horloge avec le mot « moins ». Que dis-tu ? | c) 7 h moins 20 |
 
 **`A010` · Décomposer un entier** — diff. 3, seuil 2/3  
 *Écrire 5 827 = 5 000 + 800 + 20 + 7*
@@ -1052,13 +1112,13 @@ Le chapitre est l'unité qu'un exercice bilan validerait.
 
 | | Type | Demandé | Réponse |
 |---|---|---|---|
-| D | nume | Une demi-droite est graduée de 1 000 en 1 000 à partir de 0. Quel nombre est écrit à la qua… | 4000 |
-| D | qcm | Une demi-droite est graduée de 1 000 en 1 000 à partir de 0. Où faut-il placer le nombre 3 … | a) Juste au milieu entre les grad… |
-| E | nume | Sur une demi-droite graduée de 100 en 100, un point se situe 7 graduations après 2 000. Que… | 2700 |
-| E | text | Une demi-droite est graduée de 20 en 20 à partir de 0. Entre quelles deux graduations se pl… | 120, 140 |
-| E | vrai | Sur une demi-droite graduée de 500 en 500, il faut avancer de trois intervalles pour aller … | vrai |
-| M | nume | Une demi-droite est graduée régulièrement à partir de 0. La troisième graduation après 0 po… | 2000 |
-| M | vrai | Une demi-droite va de 0 à 100 000 et elle est graduée de 10 000 en 10 000. Sarah place le n… | faux |
+| D | nume | Lis les nombres écrits sous la demi-droite graduée. Quel nombre est repéré par le point A ? | 3500 |
+| D | qcm | Quel point de la demi-droite graduée repère le nombre 1 200 ? | c) Le point C |
+| E | nume | Quel nombre est repéré par le point A sur cette demi-droite graduée ? | 43000 |
+| E | qcm | Quel nombre est repéré par le point A ? | b) 1 750 |
+| E | vrai | Tom affirme que le point B repère le nombre 4 600. A-t-il raison ? | vrai |
+| M | nume | Sur cette demi-droite graduée, seuls deux nombres sont écrits. Quel nombre est repéré par l… | 270000 |
+| M | vrai | Sarah lit le nombre 70 000 pour le point M. A-t-elle raison ? | faux |
 
 **`B008` · Division euclidienne posée (diviseur à un chiffre)** — diff. 3, seuil 3/4  
 *Poser une division euclidienne par un nombre à un chiffre, donner le quotient et le reste, et interpréter le reste dans un problème*
@@ -1144,13 +1204,13 @@ Le chapitre est l'unité qu'un exercice bilan validerait.
 
 | | Type | Demandé | Réponse |
 |---|---|---|---|
-| D | nume | Une demi-droite est graduée en quarts à partir de 0. Combien de graduations faut-il parcour… | 7 |
-| D | text | Une demi-droite est graduée en tiers à partir de 0. Quelle fraction se trouve au 5e graduat… | 5/3 |
-| E | qcm | Une demi-droite est graduée en cinquièmes à partir de 0. Entre quels deux nombres entiers s… | a) entre 1 et 2 |
-| E | text | Une demi-droite est graduée en cinquièmes. Un point se trouve au 12e graduation après 0. Qu… | 12/5 |
-| E | nume | Une demi-droite est graduée en demis. À quel graduation après 0 se trouve le nombre entier … | 6 |
-| M | text | Une demi-droite est graduée en quarts. Un point se trouve 3 graduations après le nombre 2. … | 11/4 |
-| M | text | Sur une demi-droite graduée en sixièmes, quelle fraction se trouve à la graduation située j… | 11/6 |
+| D | nume | Quelle fraction repère le point A ? Écris-la sous la forme numérateur/dénominateur. | 5/4 |
+| D | qcm | Quel point repère la fraction 4/3 ? | b) Le point B |
+| E | qcm | Quelle fraction repère le point A ? | c) 11/8 |
+| E | text | Repère le point A par la somme d'un nombre entier et d'une fraction inférieure à 1. Écris t… | 2 + 5/6 |
+| E | nume | Quelle fraction repère le point A ? Écris-la sous la forme numérateur/dénominateur. | 17/7 |
+| M | text | Le point A repère la somme d'un nombre entier et d'une fraction inférieure à 1. Laquelle ? … | 2 + 1/4 |
+| M | nume | Le point A est repéré par une fraction. Laquelle ? Écris-la sous la forme numérateur/dénomi… | 13/5 |
 
 **`D018` · Fractions décimales : dixièmes et centièmes** — diff. 3, seuil 3/4  
 *Lire, écrire et représenter des fractions de dénominateur 10 ou 100, utiliser les relations 1 = 10 dixièmes = 100 centièmes et 1 dixième = 10 centièmes, et décomposer une fraction décimale supérieure à 1 en un entier plus des dixièmes et des centièmes.*
@@ -1158,8 +1218,8 @@ Le chapitre est l'unité qu'un exercice bilan validerait.
 
 | | Type | Demandé | Réponse |
 |---|---|---|---|
-| D | text | Un carré est partagé en 100 petits carreaux égaux : chaque carreau est un centième du carré… | 37/100 |
-| D | qcm | Une unité est partagée en 10 dixièmes. Puis chaque dixième est partagé en 10 parts égales. … | d) un centième |
+| D | text | Le grand carré est partagé en petits carreaux égaux. Quelle fraction du grand carré est col… | 37/100 |
+| D | nume | Cette bande est l'unité. On partage chacune de ses parts en 10 parts égales. Combien de pet… | 100 |
 | E | nume | Une unité vaut 100 centièmes, un dixième vaut 10 centièmes. Combien de centièmes y a-t-il e… | 260 |
 | E | text | Écris 358/100 comme la somme d'un entier et de fractions décimales de numérateur inférieur … | 3 + 5/10 + 8/100 |
 | M | nume | Complète : 2 + 13/10 + 5/100 = …/100 | 335 |
@@ -1236,12 +1296,12 @@ Le chapitre est l'unité qu'un exercice bilan validerait.
 
 | | Type | Demandé | Réponse |
 |---|---|---|---|
-| D | nume | Une demi-droite est graduée en dixièmes : entre 0 et 1, il y a 10 intervalles égaux. Quel n… | 0.7 |
-| D | qcm | Une demi-droite est graduée en dixièmes. On y lit la graduation 3 puis la graduation 4, ave… | b) à la 6e graduation après 3 |
-| E | nume | Une demi-droite est graduée en centièmes : entre 7 et 7,1, il y a 10 intervalles égaux. Que… | 7.04 |
-| E | text | Une demi-droite est graduée en dixièmes à partir de 0. Le point A est à la 13e graduation a… | 13/10 |
-| M | vrai | Une demi-droite est graduée en dixièmes : 10 intervalles égaux entre 5 et 6. Léo place 5,25… | faux |
-| M | nume | Une demi-droite est graduée en centièmes. Un point se trouve 6 graduations après 1,97. Quel… | 2.03 |
+| D | nume | Quel nombre décimal repère le point A ? Écris-le avec une virgule. | 1.6 |
+| D | qcm | Quel point repère le nombre 6,3 ? | a) Le point A |
+| E | nume | Quel nombre décimal repère le point A ? | 4.37 |
+| E | text | Repère le point A par une fraction décimale. Écris-la sous la forme numérateur/dénominateur. | 34/10 |
+| M | vrai | Léo dit que le point A repère 8,13. A-t-il raison ? | vrai |
+| M | nume | Seuls deux nombres sont écrits sur cette demi-droite graduée. Quel nombre décimal repère le… | 4.04 |
 
 **`D020` · Calcul mental : multiplier et diviser un décimal par 10** — diff. 3, seuil 3/4  
 *Multiplier ou diviser mentalement un décimal par 10 en raisonnant sur la valeur des chiffres (les dixièmes deviennent des unités, les unités des dixièmes). Au plus deux chiffres après la virgule.*
@@ -1320,6 +1380,20 @@ Le chapitre est l'unité qu'un exercice bilan validerait.
 | E | vrai | Un carré a des côtés de 5 cm. Un rectangle mesure 6 cm de long et 4 cm de large. Sami affir… | vrai |
 | M | qcm | Un carré a des côtés de 12 cm. Un rectangle de 16 cm de long a le même périmètre que ce car… | d) 8 cm |
 | M | qcm | Jade a deux ficelles de 24 cm. Avec l'une, elle forme un carré. Avec l'autre, elle forme un… | b) Le triangle, avec des côtés de… |
+
+**`P017` · L'aire : comparer des surfaces et mesurer en centimètres carrés** — diff. 3, seuil 3/4  
+*Comparer l'aire de deux surfaces sans mesure (superposition, découpage et recollement), distinguer l'aire du périmètre, puis déterminer une aire en comptant des carreaux unités sur un quadrillage et l'exprimer en cm² (un carré de 1 cm de côté a une aire de 1 cm²). Figure nécessaire : surfaces et quadrillages doivent être dessinés.*
+> « L'aire est introduite au CM1, en suivant la même progressivité que pour les autres grandeurs au cycle 2 : les élèves abordent cette notion en compara… »
+
+| | Type | Demandé | Réponse |
+|---|---|---|---|
+| D | nume | Chaque carreau du quadrillage est un carré d'un centimètre de côté. Quelle est l'aire de la… | 9 |
+| D | qcm | Quelle surface a la plus grande aire ? | b) La surface B |
+| E | vrai | Inès dit : « Les surfaces A et B ont la même aire, mais pas le même périmètre. » Inès a-t-e… | vrai |
+| E | nume | Chaque carreau du quadrillage est un carré d'un centimètre de côté. Quelle est l'aire de la… | 14 |
+| E | qcm | Zoé découpe la surface A en morceaux, puis elle recolle tous les morceaux autrement, sans t… | a) La surface C |
+| M | qcm | Laquelle de ces surfaces a une aire de 12 cm² ? | c) La surface A |
+| M | nume | Combien de surfaces comme A faut-il pour recouvrir exactement la surface B, sans trou ni ch… | 4 |
 
 **`D014` · Convertir des mesures écrites avec une virgule** — diff. 4, seuil 3/4  
 *Convertir une longueur, une masse ou une contenance écrite avec une virgule dans une unité plus petite, en s'appuyant sur les relations entre unités et sans tableau de conversion (3,5 m = 3 m + 50 cm = 350 cm).*

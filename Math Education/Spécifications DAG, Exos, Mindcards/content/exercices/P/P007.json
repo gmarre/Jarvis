@@ -1,0 +1,192 @@
+[
+  {
+    "id": "EX-P007-D-01",
+    "skill_id": "P007",
+    "level": "decouverte",
+    "type": "texte",
+    "statement": "C'est le matin. Regarde la petite aiguille, puis la grande.\n\nQuelle heure indique l'horloge ?",
+    "image": "figures/EX-P007-D-01",
+    "answer": {
+      "value": "7 h 30",
+      "accepted": [
+        "7h30",
+        "7:30",
+        "7 heures 30",
+        "7 h 30 min",
+        "7 heures 30 minutes",
+        "7 heures et demie",
+        "7 h et demie"
+      ]
+    },
+    "solution_steps": [
+      "La petite aiguille est entre le 7 et le 8 : 7 heures sont passées, 8 heures pas encore. On lit le nombre qu'elle a dépassé : 7.",
+      "La grande aiguille est sur le 6 : depuis le 12, elle a fait la moitié du tour. Une demi-heure, c'est 30 minutes.",
+      "Il est **7 h 30**, sept heures et demie.",
+      "Erreurs à éviter : lire 8 h 30 parce que la petite aiguille s'approche du 8 ; lire 7 h 6 en prenant le 6 de la grande aiguille pour 6 minutes."
+    ],
+    "hint": "Quel nombre la petite aiguille a-t-elle déjà dépassé ? Quelle part du tour la grande aiguille a-t-elle faite ?",
+    "estimated_duration_s": 45,
+    "programme_ref": "Cycle 2, CE1 : lire l'heure sur une horloge à aiguilles (lorsque l'heure est donnée en heures entières, en heures et demi-heure ou en heures et quarts d'heure).",
+    "review_status": "relu_agent"
+  },
+  {
+    "id": "EX-P007-D-02",
+    "skill_id": "P007",
+    "level": "decouverte",
+    "type": "qcm",
+    "statement": "Regarde les deux aiguilles.\n\nQuelle heure indique l'horloge ?",
+    "image": "figures/EX-P007-D-02",
+    "choices": [
+      {
+        "key": "a",
+        "text": "9 h 3",
+        "misconception": "L'élève lit le nombre montré par la grande aiguille comme un nombre de minutes. Or la grande aiguille sur le 3 a fait un quart du tour : cela fait 15 minutes, pas 3."
+      },
+      {
+        "key": "b",
+        "text": "3 h 45",
+        "misconception": "L'élève confond les deux aiguilles : il lit l'heure sur la grande (le 3) et les minutes sur la petite, juste après le 9 (45 minutes). C'est la petite aiguille qui montre l'heure."
+      },
+      {
+        "key": "c",
+        "text": "9 h 15",
+        "misconception": null
+      }
+    ],
+    "answer": {
+      "value": "c"
+    },
+    "solution_steps": [
+      "La petite aiguille, celle des heures, vient de dépasser le 9 : il est 9 heures et quelques minutes.",
+      "La grande aiguille, celle des minutes, est sur le 3 : depuis le 12, elle a fait un quart du tour. Un quart d'heure, c'est 15 minutes.",
+      "Il est **9 h 15**, neuf heures et quart."
+    ],
+    "hint": "La petite aiguille donne l'heure, la grande donne les minutes.",
+    "estimated_duration_s": 45,
+    "programme_ref": "Cycle 2, CE1 : lire l'heure sur une horloge à aiguilles (lorsque l'heure est donnée en heures entières, en heures et demi-heure ou en heures et quarts d'heure).",
+    "review_status": "relu_agent"
+  },
+  {
+    "id": "EX-P007-E-01",
+    "skill_id": "P007",
+    "level": "entrainement",
+    "type": "texte",
+    "statement": "C'est l'après-midi. Quelle heure indique l'horloge ?\n\nÉcris-la comme sur une horloge digitale, de 0 h à 23 h.",
+    "image": "figures/EX-P007-E-01",
+    "answer": {
+      "value": "14 h 45",
+      "accepted": [
+        "14h45",
+        "14:45",
+        "14 heures 45",
+        "14 h 45 min",
+        "14 heures 45 minutes"
+      ]
+    },
+    "solution_steps": [
+      "La grande aiguille est sur le 9 : depuis le 12, elle a fait trois quarts du tour. Trois quarts d'heure, c'est 45 minutes.",
+      "La petite aiguille est presque sur le 3, mais ne l'a pas atteint : 2 heures sont passées, 3 heures pas encore.",
+      "C'est l'après-midi : 2 heures de l'après-midi, c'est $12 + 2 = 14$ heures.",
+      "Il est **14 h 45**. Une horloge digitale affiche 14 : 45.",
+      "Erreurs à éviter : 15 h 45, parce que la petite aiguille touche presque le 3 ; 2 h 45, en oubliant que c'est l'après-midi."
+    ],
+    "hint": "Quel nombre la petite aiguille a-t-elle dépassé ? Puis ajoute 12, car c'est l'après-midi.",
+    "estimated_duration_s": 60,
+    "programme_ref": "Cycle 2, CE1 : sachant qu'on parle d'un instant de l'après-midi, l'élève sait lire sur une horloge à aiguilles qu'il est « 2 heures et quart » ou « 14 heures et 15 minutes » et il sait que sur une horloge digitale, il est alors écrit « 14 : 15 ».",
+    "review_status": "relu_agent"
+  },
+  {
+    "id": "EX-P007-E-02",
+    "skill_id": "P007",
+    "level": "entrainement",
+    "type": "vrai_faux",
+    "statement": "Inès regarde l'horloge et dit : « Il est dix heures et demie. »\n\nA-t-elle raison ?",
+    "image": "figures/EX-P007-E-02",
+    "answer": {
+      "value": true
+    },
+    "solution_steps": [
+      "La grande aiguille est sur le 6 : elle a fait la moitié du tour. Il est « et demie », 30 minutes.",
+      "La petite aiguille est à mi-chemin entre le 10 et le 11 : 10 heures sont passées, 11 heures pas encore.",
+      "Il est 10 h 30, dix heures et demie : Inès a **raison**. Attention : la petite aiguille s'approche du 11, mais elle ne l'a pas atteint."
+    ],
+    "hint": "Entre deux nombres, la petite aiguille donne l'heure qu'elle a déjà dépassée.",
+    "estimated_duration_s": 45,
+    "programme_ref": "Cycle 2, CE1 : lire l'heure sur une horloge à aiguilles (lorsque l'heure est donnée en heures entières, en heures et demi-heure ou en heures et quarts d'heure).",
+    "review_status": "relu_agent"
+  },
+  {
+    "id": "EX-P007-M-01",
+    "skill_id": "P007",
+    "level": "maitrise",
+    "type": "qcm",
+    "statement": "C'est le soir. Le dîner commence à l'heure de l'horloge.\n\nÀ quelle heure commence-t-il ?",
+    "image": "figures/EX-P007-M-01",
+    "choices": [
+      {
+        "key": "a",
+        "text": "18 h 45",
+        "misconception": null
+      },
+      {
+        "key": "b",
+        "text": "19 h 45",
+        "misconception": "L'élève lit le nombre dont la petite aiguille s'approche, le 7. Mais elle ne l'a pas encore atteint : 6 heures sont passées, pas 7."
+      },
+      {
+        "key": "c",
+        "text": "6 h 45",
+        "misconception": "L'élève lit bien l'horloge mais oublie que c'est le soir : 6 h 45, c'est le matin. Le soir, on ajoute 12 heures."
+      },
+      {
+        "key": "d",
+        "text": "18 h 9",
+        "misconception": "L'élève prend le 9 de la grande aiguille pour 9 minutes. Or la grande aiguille sur le 9 a fait trois quarts du tour : cela fait 45 minutes."
+      }
+    ],
+    "answer": {
+      "value": "a"
+    },
+    "solution_steps": [
+      "La grande aiguille est sur le 9 : trois quarts du tour, soit 45 minutes.",
+      "La petite aiguille est entre le 6 et le 7, tout près du 7 sans l'avoir atteint : 6 heures sont passées.",
+      "C'est le soir : 6 heures du soir, c'est $12 + 6 = 18$ heures.",
+      "Le dîner commence à **18 h 45**, sept heures moins le quart du soir."
+    ],
+    "hint": "Lis d'abord l'heure sur l'horloge, puis souviens-toi que c'est le soir.",
+    "estimated_duration_s": 75,
+    "programme_ref": "Cycle 2, CE1 : sachant qu'on parle d'un instant de l'après-midi, l'élève sait lire sur une horloge à aiguilles qu'il est « 2 heures et quart » ou « 14 heures et 15 minutes » et il sait que sur une horloge digitale, il est alors écrit « 14 : 15 ».",
+    "review_status": "relu_agent"
+  },
+  {
+    "id": "EX-P007-M-02",
+    "skill_id": "P007",
+    "level": "maitrise",
+    "type": "texte",
+    "statement": "C'est le matin. Sur cette horloge, il manque des nombres.\n\nQuelle heure indique-t-elle ?",
+    "image": "figures/EX-P007-M-02",
+    "answer": {
+      "value": "11 h 45",
+      "accepted": [
+        "11h45",
+        "11:45",
+        "11 heures 45",
+        "11 h 45 min",
+        "11 heures 45 minutes",
+        "midi moins le quart",
+        "12 h moins le quart",
+        "12 heures moins le quart"
+      ]
+    },
+    "solution_steps": [
+      "La grande aiguille est sur le 9 : depuis le 12, elle a fait trois quarts du tour. Il est 45 minutes.",
+      "La petite aiguille est juste avant le 12, sans l'avoir atteint. Le dernier grand trait qu'elle a dépassé est celui du 11, un grand trait avant le 12.",
+      "Il est **11 h 45**, midi moins le quart.",
+      "Erreur à éviter : lire 12 h 45 parce que la petite aiguille touche presque le 12. À 12 h 45, elle aurait déjà dépassé le 12."
+    ],
+    "hint": "La petite aiguille a-t-elle déjà dépassé le 12 ?",
+    "estimated_duration_s": 75,
+    "programme_ref": "Cycle 2, CE1 : lire l'heure sur une horloge à aiguilles (lorsque l'heure est donnée en heures entières, en heures et demi-heure ou en heures et quarts d'heure).",
+    "review_status": "relu_agent"
+  }
+]

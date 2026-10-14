@@ -31,7 +31,8 @@ domaines à moitié faits.
 | 2 | D Nombres décimaux | CE1 → 6e | Fait le 4 octobre 2026 : 19 compétences, 114 exercices, 4 cartes |
 | 3 | E Proportionnalité et pourcentages | CM1 → 5e | Fait le 5 octobre 2026 : 17 compétences E et B043, 108 exercices, 4 cartes (bilan dans `QUALITY.md`) |
 | 4a | P Grandeurs et mesures (domaine ouvert, lettre P) | CP → 6e | Fait le 14 octobre 2026 : 27 compétences (dont 5 à figure), 132 exercices, 6 cartes |
-| **4b** | **G Géométrie plane** | CP → 6e | Prochaine, après l'affichage des figures dans l'application |
+| Figures | Reprises et compétences à figure | CP → CM1 | Fait le 14 octobre 2026 : 30 exercices repris, 31 nouveaux (P001, P004, P007, P013, P017), 61 figures |
+| **4b** | **G Géométrie plane** | CP → 6e | Prochaine : demande des générateurs de géométrie (segments, polygones, angles) |
 | 5+ | Statistiques, probabilités, algèbre, puissances | Cycle 4 | À faire |
 
 ## Le circuit d'une étape

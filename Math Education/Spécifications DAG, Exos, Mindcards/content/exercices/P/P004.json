@@ -1,0 +1,193 @@
+[
+  {
+    "id": "EX-P004-D-01",
+    "skill_id": "P004",
+    "level": "decouverte",
+    "type": "texte",
+    "statement": "Regarde bien la petite aiguille.\n\nQuelle heure indique l'horloge ?",
+    "image": "figures/EX-P004-D-01",
+    "answer": {
+      "value": "3 heures",
+      "accepted": [
+        "3 h",
+        "3 h 00",
+        "3",
+        "trois heures",
+        "trois heure",
+        "15 h",
+        "15 h 00",
+        "15 heures",
+        "quinze heures",
+        "15"
+      ]
+    },
+    "solution_steps": [
+      "Sur une horloge, la petite aiguille montre les heures. La grande aiguille montre les minutes.",
+      "La grande aiguille est tout en haut, sur le 12 : l'heure est juste, il n'y a pas de minutes en plus.",
+      "La petite aiguille est sur le 3 : il est **3 heures**.",
+      "Erreur à éviter : lire la grande aiguille à la place de la petite. On répondrait 12 heures, ce qui est faux."
+    ],
+    "hint": "La petite aiguille montre l'heure. Sur quel nombre est-elle ?",
+    "estimated_duration_s": 30,
+    "programme_ref": "Cycle 2, CP : l'élève sait lire des heures entières (par exemple trois heures, neuf heures, mais aussi midi) montrées sur un cadran à aiguilles.",
+    "review_status": "relu_agent"
+  },
+  {
+    "id": "EX-P004-D-02",
+    "skill_id": "P004",
+    "level": "decouverte",
+    "type": "vrai_faux",
+    "statement": "Tom regarde l'horloge et dit : « Il est 12 heures. »\n\nA-t-il raison ?",
+    "image": "figures/EX-P004-D-02",
+    "answer": {
+      "value": false
+    },
+    "solution_steps": [
+      "La petite aiguille montre l'heure : elle est sur le 10.",
+      "La grande aiguille est sur le 12 : elle dit seulement que l'heure est juste, sans minutes en plus.",
+      "Il est 10 heures. Tom a **tort** : il a lu la grande aiguille à la place de la petite."
+    ],
+    "hint": "Quelle aiguille montre l'heure : la petite ou la grande ?",
+    "estimated_duration_s": 30,
+    "programme_ref": "Cycle 2, CP : l'élève sait lire des heures entières (par exemple trois heures, neuf heures, mais aussi midi) montrées sur un cadran à aiguilles.",
+    "review_status": "relu_agent"
+  },
+  {
+    "id": "EX-P004-E-01",
+    "skill_id": "P004",
+    "level": "entrainement",
+    "type": "texte",
+    "statement": "Quelle heure indique l'horloge ?",
+    "image": "figures/EX-P004-E-01",
+    "answer": {
+      "value": "12 heures",
+      "accepted": [
+        "12 h",
+        "12 h 00",
+        "12",
+        "douze heures",
+        "douze heure",
+        "midi",
+        "minuit",
+        "0 h",
+        "0 h 00"
+      ]
+    },
+    "solution_steps": [
+      "Les deux aiguilles sont l'une sur l'autre, tout en haut : la petite est sous la grande.",
+      "La grande aiguille est sur le 12 : l'heure est juste.",
+      "La petite aiguille est sur le 12 elle aussi : il est **12 heures**. Le jour, on dit midi ; la nuit, on dit minuit.",
+      "Erreur à éviter : croire qu'il n'y a qu'une aiguille. Quand les deux aiguilles sont l'une sur l'autre, elles montrent le même nombre."
+    ],
+    "hint": "Où est la petite aiguille ? Regarde bien sous la grande.",
+    "estimated_duration_s": 40,
+    "programme_ref": "Cycle 2, CP : l'élève sait lire des heures entières (par exemple trois heures, neuf heures, mais aussi midi) montrées sur un cadran à aiguilles.",
+    "review_status": "relu_agent"
+  },
+  {
+    "id": "EX-P004-E-02",
+    "skill_id": "P004",
+    "level": "entrainement",
+    "type": "qcm",
+    "statement": "Sur cette horloge, il manque des nombres.\n\nQuelle heure indique-t-elle ?",
+    "image": "figures/EX-P004-E-02",
+    "choices": [
+      {
+        "key": "a",
+        "text": "3 heures",
+        "misconception": "L'élève lit le nombre écrit le plus proche de la petite aiguille. Mais la petite aiguille n'est pas sur le 3 : elle s'arrête un grand trait avant lui."
+      },
+      {
+        "key": "b",
+        "text": "2 heures",
+        "misconception": null
+      },
+      {
+        "key": "c",
+        "text": "12 heures",
+        "misconception": "L'élève lit la grande aiguille, qui est sur le 12, à la place de la petite. La grande aiguille ne donne pas l'heure : elle dit seulement que l'heure est juste."
+      }
+    ],
+    "answer": {
+      "value": "b"
+    },
+    "solution_steps": [
+      "La grande aiguille est en haut, sur le 12 : l'heure est juste.",
+      "La petite aiguille montre un grand trait sans nombre. On compte les grands traits à partir du 12, en tournant comme les aiguilles : 1, 2.",
+      "La petite aiguille est à la place du 2 : il est **2 heures**.",
+      "On peut vérifier en partant du 3 : la petite aiguille est un grand trait avant lui, donc sur le 2."
+    ],
+    "hint": "Compte les grands traits depuis le 12 jusqu'à la petite aiguille.",
+    "estimated_duration_s": 45,
+    "programme_ref": "Cycle 2, CP : l'élève sait lire des heures entières (par exemple trois heures, neuf heures, mais aussi midi) montrées sur un cadran à aiguilles.",
+    "review_status": "relu_agent"
+  },
+  {
+    "id": "EX-P004-M-01",
+    "skill_id": "P004",
+    "level": "maitrise",
+    "type": "texte",
+    "statement": "Léa se lève à l'heure de cette horloge sans nombres.\n\nÀ quelle heure se lève-t-elle ?",
+    "image": "figures/EX-P004-M-01",
+    "answer": {
+      "value": "8 heures",
+      "accepted": [
+        "8 h",
+        "8 h 00",
+        "8",
+        "huit heures",
+        "huit heure"
+      ]
+    },
+    "solution_steps": [
+      "Sans nombres, on se sert des grands traits : il y en a 12, un à la place de chaque nombre de 1 à 12.",
+      "La grande aiguille est tout en haut, à la place du 12 : l'heure est juste.",
+      "On compte les grands traits depuis le haut, en tournant comme les aiguilles, jusqu'à la petite aiguille : 1, 2, 3, 4, 5, 6, 7, 8.",
+      "La petite aiguille est à la place du 8 : Léa se lève à **8 heures**, le matin, avant d'aller à l'école.",
+      "Autre chemin : le grand trait tout en bas est celui du 6. La petite aiguille est 2 grands traits plus loin : 7, 8.",
+      "Erreur à éviter : compter aussi les petits traits. Pour les heures, on ne compte que les grands."
+    ],
+    "hint": "Compte les grands traits à partir du haut de l'horloge.",
+    "estimated_duration_s": 60,
+    "programme_ref": "Cycle 2, CP : l'élève sait associer des actions familières (se lever, aller à l'école, déjeuner, etc.) à des heures affichées sur des horloges.",
+    "review_status": "relu_agent"
+  },
+  {
+    "id": "EX-P004-M-02",
+    "skill_id": "P004",
+    "level": "maitrise",
+    "type": "qcm",
+    "statement": "Il n'y a pas de nombres sur cette horloge.\n\nQuelle heure est-il ?",
+    "image": "figures/EX-P004-M-02",
+    "choices": [
+      {
+        "key": "a",
+        "text": "12 heures",
+        "misconception": "L'élève lit la grande aiguille, tout en haut à la place du 12, à la place de la petite. C'est la petite aiguille qui montre l'heure."
+      },
+      {
+        "key": "b",
+        "text": "5 heures",
+        "misconception": "L'élève compte aussi le grand trait du haut : 1, 2, 3, 4, 5. Ce trait-là est celui du 12 : on commence à compter au grand trait suivant."
+      },
+      {
+        "key": "c",
+        "text": "4 heures",
+        "misconception": null
+      }
+    ],
+    "answer": {
+      "value": "c"
+    },
+    "solution_steps": [
+      "La grande aiguille est tout en haut, à la place du 12 : l'heure est juste.",
+      "Pour trouver l'heure, on compte seulement les grands traits, depuis le haut jusqu'à la petite aiguille, en tournant comme les aiguilles : 1, 2, 3, 4.",
+      "La petite aiguille est à la place du 4 : il est **4 heures**.",
+      "Erreur à éviter : compter le grand trait du haut comme « 1 ». C'est celui du 12 : on commence au trait suivant, et on trouve 4."
+    ],
+    "hint": "Les grands traits sont à la place des nombres. Compte-les depuis le haut.",
+    "estimated_duration_s": 60,
+    "programme_ref": "Cycle 2, CP : l'élève sait lire des heures entières (par exemple trois heures, neuf heures, mais aussi midi) montrées sur un cadran à aiguilles.",
+    "review_status": "relu_agent"
+  }
+]

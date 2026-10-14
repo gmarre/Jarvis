@@ -4,73 +4,56 @@
     "skill_id": "C026",
     "level": "decouverte",
     "type": "qcm",
-    "statement": "Lequel est le plus grand : $\\frac{1}{5}$ ou $\\frac{1}{3}$ ?",
-    "image": null,
+    "statement": "Les bandes A et B sont pareilles.\n\nQuelle part coloriée est la plus grande ?",
+    "image": "figures/EX-C026-D-01",
     "choices": [
       {
         "key": "a",
-        "text": "$\\frac{1}{3}$",
+        "text": "Celle de la bande A",
         "misconception": null
       },
       {
         "key": "b",
-        "text": "$\\frac{1}{5}$",
-        "misconception": "L'élève applique aux dénominateurs l'ordre des entiers : 5 est plus grand que 3, donc la fraction serait plus grande. C'est l'erreur la plus fréquente sur cette notion."
+        "text": "Celle de la bande B",
+        "misconception": "L'élève compte 5 parts sur la bande B et 3 sur la bande A, puis applique aux dénominateurs l'ordre des entiers : 5 est plus grand que 3. C'est l'erreur la plus fréquente sur cette notion ; la figure montre le contraire."
       },
       {
         "key": "c",
-        "text": "Ils sont égaux",
-        "misconception": "L'élève ne compare que les numérateurs, qui sont égaux, et conclut à l'égalité."
+        "text": "Elles ont la même taille",
+        "misconception": "L'élève voit qu'une seule part est coloriée sur chaque bande et conclut à l'égalité : il ne compare que les numérateurs, sans regarder la taille des parts."
       }
     ],
     "answer": {
       "value": "a"
     },
     "solution_steps": [
-      "Les deux fractions ont le même numérateur : on prend **une** part dans chaque cas.",
-      "Mais les parts n'ont pas la même taille. Partager un tout en 5 donne des parts plus petites que le partager en 3.",
-      "Une part sur 3 est donc plus grande qu'une part sur 5.",
-      "C'est $\\frac{1}{3}$ le plus grand. Retiens : quand le numérateur est 1, plus le dénominateur est grand, plus la fraction est petite."
+      "On compte les parts de chaque bande. La bande A a 3 parts égales : sa part coloriée est $\\frac{1}{3}$ de la bande. La bande B a 5 parts égales : sa part coloriée est $\\frac{1}{5}$ de la bande.",
+      "Le numérateur est 1 dans les deux cas : une seule part est coloriée. Le dénominateur dit en combien de parts égales la bande est partagée.",
+      "Les deux bandes sont pareilles : c'est le même tout. La bande B est partagée en plus de parts, donc ses parts sont plus petites. On le voit sur la figure.",
+      "La part coloriée de la bande **A** est la plus grande : $\\frac{1}{3}$ est plus grand que $\\frac{1}{5}$."
     ],
-    "hint": "Préfères-tu partager un gâteau entre 3 personnes ou entre 5 ?",
+    "hint": "Compte les parts de chaque bande. Puis regarde la taille d'une part.",
     "estimated_duration_s": 45,
     "review_status": "relu_agent",
-    "programme_ref": "Cycle 2, CE1 : comparer des fractions dont le numérateur est 1."
+    "programme_ref": "Cycle 2, CE1 : l'élève sait dire et expliquer pourquoi 1/5 est plus petit que 1/3, en s'appuyant sur deux partages distincts d'un même tout."
   },
   {
     "id": "EX-C026-D-02",
     "skill_id": "C026",
     "level": "decouverte",
-    "type": "qcm",
-    "statement": "Une même tablette de chocolat est partagée en parts égales.\n\nDans quel cas une part est-elle la **plus grande** ?",
-    "image": null,
-    "choices": [
-      {
-        "key": "a",
-        "text": "Quand on partage en 2",
-        "misconception": null
-      },
-      {
-        "key": "b",
-        "text": "Quand on partage en 4",
-        "misconception": "L'élève associe un plus grand nombre de parts à des parts plus grandes."
-      },
-      {
-        "key": "c",
-        "text": "Quand on partage en 8",
-        "misconception": "Même erreur, poussée plus loin : l'élève choisit le plus grand dénominateur."
-      }
-    ],
+    "type": "vrai_faux",
+    "statement": "Une tablette pareille à celle-ci, partagée en 4 parts égales, donne des parts plus grosses que la part coloriée.",
+    "image": "figures/EX-C026-D-02",
     "answer": {
-      "value": "a"
+      "value": true
     },
     "solution_steps": [
-      "La tablette est la même dans les trois cas : c'est le **tout**.",
-      "Plus on la partage en un grand nombre de parts, plus chaque part est petite.",
-      "En partageant en 2, on obtient les parts les plus grandes : $\\frac{1}{2}$.",
-      "Du plus petit au plus grand : un huitième, puis un quart, puis un demi."
+      "On compte les parts de la tablette dessinée : 8 parts égales. La part coloriée est $\\frac{1}{8}$ de la tablette.",
+      "Une part de la tablette partagée en 4 est $\\frac{1}{4}$ de la tablette.",
+      "C'est la même tablette, donc le même tout. En 4, on fait moins de parts qu'en 8 : chaque part est plus grosse.",
+      "$\\frac{1}{4}$ est plus grand que $\\frac{1}{8}$ : l'affirmation est **vraie**. Le dénominateur compte les parts : plus il est grand, plus la part est petite."
     ],
-    "hint": "Le nombre de parts augmente, mais la tablette, elle, ne grandit pas.",
+    "hint": "Compte les parts de la tablette dessinée, puis compare avec un partage en 4.",
     "estimated_duration_s": 45,
     "review_status": "relu_agent",
     "programme_ref": "Cycle 2, CE1 : comparer des fractions dont le numérateur est 1."
@@ -80,35 +63,35 @@
     "skill_id": "C026",
     "level": "entrainement",
     "type": "qcm",
-    "statement": "Léa partage une tarte entre 4 amis. Tom partage une tarte pareille entre 6.\n\nQui a la plus grosse part ?",
-    "image": null,
+    "statement": "Voici la tarte de Léa. Tom coupe une tarte pareille en 6 parts égales.\n\nQui a les plus petites parts ?",
+    "image": "figures/EX-C026-E-01",
     "choices": [
       {
         "key": "a",
-        "text": "Un ami de Léa",
-        "misconception": null
+        "text": "Léa",
+        "misconception": "L'élève compte 4 parts chez Léa et applique l'ordre des entiers : 4 est plus petit que 6, il en déduit que les parts de Léa sont plus petites."
       },
       {
         "key": "b",
-        "text": "Un ami de Tom",
-        "misconception": "L'élève retient qu'il y a plus d'amis chez Tom et en déduit à tort des parts plus grandes."
+        "text": "Tom",
+        "misconception": null
       },
       {
         "key": "c",
-        "text": "Ils reçoivent la même part",
-        "misconception": "L'élève ne relie pas le nombre de convives à la taille des parts."
+        "text": "Leurs parts ont la même taille",
+        "misconception": "L'élève sait que les parts d'une même tarte sont égales et croit qu'elles le sont aussi d'une tarte à l'autre : il ne relie pas le nombre de parts à leur taille."
       }
     ],
     "answer": {
-      "value": "a"
+      "value": "b"
     },
     "solution_steps": [
-      "Chez Léa, chaque ami reçoit $\\frac{1}{4}$ de tarte. Chez Tom, chaque ami reçoit $\\frac{1}{6}$.",
-      "Les deux tartes sont identiques : c'est le même tout.",
-      "Partager en 4 donne des parts plus grandes que partager en 6.",
-      "Une part sur 6 est plus petite qu'une part sur 4 : c'est un ami de **Léa** qui reçoit la plus grosse part."
+      "On compte les parts de la tarte de Léa : 4 parts égales. Une part de Léa est $\\frac{1}{4}$ de tarte.",
+      "Tom coupe sa tarte en 6 : une part de Tom est $\\frac{1}{6}$ de tarte.",
+      "Les deux tartes sont pareilles : c'est le même tout. Plus on coupe de parts, plus elles sont petites.",
+      "6 parts, c'est plus que 4 parts : les parts de **Tom** sont les plus petites. $\\frac{1}{6}$ est plus petit que $\\frac{1}{4}$."
     ],
-    "hint": "Plus il y a de convives autour d'une même tarte, plus les parts rétrécissent.",
+    "hint": "Compte les parts de la tarte de Léa. Qui coupe sa tarte en le plus de parts ?",
     "estimated_duration_s": 60,
     "review_status": "relu_agent",
     "programme_ref": "Cycle 2, CE1 : comparer des fractions dont le numérateur est 1."
@@ -118,24 +101,31 @@
     "skill_id": "C026",
     "level": "entrainement",
     "type": "texte",
-    "statement": "Range de la plus petite à la plus grande : $\\frac{1}{2}$, $\\frac{1}{8}$, $\\frac{1}{4}$.\n\nSépare-les par des virgules.",
-    "image": null,
+    "statement": "Les trois bandes sont pareilles. Range les fractions coloriées de la plus petite à la plus grande.\n\nSépare-les par des virgules.",
+    "image": "figures/EX-C026-E-02",
     "answer": {
-      "value": "1/8, 1/4, 1/2",
+      "value": "1/10, 1/6, 1/3",
       "accepted": [
-        "1/8,1/4,1/2",
-        "1/8 1/4 1/2",
-        "1 / 8, 1 / 4, 1 / 2"
+        "1/10,1/6,1/3",
+        "1/10 ; 1/6 ; 1/3",
+        "1/10;1/6;1/3",
+        "1/10 1/6 1/3",
+        "1 / 10, 1 / 6, 1 / 3",
+        "1/10, 1/6,1/3",
+        "1/10,1/6, 1/3",
+        "1/10, 1/6 et 1/3",
+        "1/10 et 1/6 et 1/3",
+        "1/10 ; 1/6 et 1/3"
       ]
     },
     "solution_steps": [
-      "Les trois fractions ont le même numérateur 1 : on compare donc les dénominateurs.",
-      "Plus le dénominateur est grand, plus la part est petite.",
-      "Le plus grand dénominateur est 8, donc $\\frac{1}{8}$ est la plus petite.",
-      "Puis vient $\\frac{1}{4}$, et enfin $\\frac{1}{2}$, la plus grande.",
-      "Réponse : $\\frac{1}{8}$, $\\frac{1}{4}$, $\\frac{1}{2}$."
+      "On compte les parts de chaque bande. A : 3 parts égales, la part coloriée est $\\frac{1}{3}$. B : 10 parts égales, $\\frac{1}{10}$. C : 6 parts égales, $\\frac{1}{6}$.",
+      "Les trois fractions ont le même numérateur 1 : une seule part est coloriée sur chaque bande. C'est la taille des parts qui change.",
+      "Les bandes sont pareilles : plus une bande est partagée en un grand nombre de parts, plus chaque part est petite. La bande B, partagée en 10, a la plus petite part : $\\frac{1}{10}$.",
+      "Puis vient la bande C, $\\frac{1}{6}$, et enfin la bande A, $\\frac{1}{3}$ : partagée en 3 seulement, elle a la plus grande part. La figure le confirme.",
+      "Réponse : $\\frac{1}{10}$, $\\frac{1}{6}$, $\\frac{1}{3}$."
     ],
-    "hint": "Range les dénominateurs du plus grand au plus petit : les fractions suivront dans l'ordre croissant.",
+    "hint": "Écris d'abord la fraction coloriée de chaque bande. Puis cherche la bande dont les parts sont les plus petites.",
     "estimated_duration_s": 75,
     "review_status": "relu_agent",
     "programme_ref": "Cycle 2, CE1 : comparer des fractions dont le numérateur est 1."
@@ -145,18 +135,18 @@
     "skill_id": "C026",
     "level": "entrainement",
     "type": "vrai_faux",
-    "statement": "$\\frac{1}{10}$ est plus grand que $\\frac{1}{6}$, parce que 10 est plus grand que 6.",
-    "image": null,
+    "statement": "La part coloriée est plus grande que $\\frac{1}{6}$ de ce rectangle.",
+    "image": "figures/EX-C026-E-03",
     "answer": {
       "value": false
     },
     "solution_steps": [
-      "Le raisonnement proposé applique aux fractions l'ordre des entiers : c'est justement le piège.",
-      "Partager un tout en 10 donne des parts **plus petites** que le partager en 6.",
-      "Un dixième est plus petit qu'un sixième : l'affirmation est **fausse**.",
-      "Le dénominateur compte les parts, il ne mesure pas leur taille : quand il augmente, la part diminue."
+      "On compte les parts du rectangle : 10 parts égales. La part coloriée est $\\frac{1}{10}$ du rectangle.",
+      "On compare $\\frac{1}{10}$ et $\\frac{1}{6}$ : le numérateur est 1 dans les deux cas, on prend une seule part.",
+      "Partager le rectangle en 10 donne des parts **plus petites** que le partager en 6 : il y a plus de parts dans le même tout.",
+      "La part coloriée est plus petite que $\\frac{1}{6}$ du rectangle : l'affirmation est **fausse**. Piège : 10 est plus grand que 6, mais le dénominateur compte les parts, il ne mesure pas leur taille."
     ],
-    "hint": "Regarde la taille d'une part, pas la taille du nombre écrit en bas.",
+    "hint": "Compte les parts du rectangle. Imagine ensuite le même rectangle partagé en 6.",
     "estimated_duration_s": 60,
     "review_status": "relu_agent",
     "programme_ref": "Cycle 2, CE1 : comparer des fractions dont le numérateur est 1."
@@ -166,36 +156,35 @@
     "skill_id": "C026",
     "level": "maitrise",
     "type": "qcm",
-    "statement": "Léa mange $\\frac{1}{4}$ d'une tarte. Tom en mange $\\frac{1}{8}$, et Zoé $\\frac{1}{3}$.\n\nQui a mangé le **moins** ?",
-    "image": null,
+    "statement": "Chacun a une tarte pareille. Léa en mange $\\frac{1}{4}$, Zoé $\\frac{1}{6}$, Tom la part coloriée.\n\nQui mange le moins ?",
+    "image": "figures/EX-C026-M-01",
     "choices": [
       {
         "key": "a",
-        "text": "Tom",
-        "misconception": null
+        "text": "Zoé",
+        "misconception": "L'élève ne compte pas les parts de la tarte dessinée : il compare seulement les dénominateurs écrits, 4 et 6, et choisit le plus grand."
       },
       {
         "key": "b",
-        "text": "Zoé",
-        "misconception": "L'élève choisit le plus petit dénominateur en croyant qu'il donne la plus petite part."
+        "text": "Léa",
+        "misconception": "L'élève applique aux dénominateurs l'ordre des entiers : 4 est le plus petit nombre, il croit que c'est la plus petite part."
       },
       {
         "key": "c",
-        "text": "Léa",
-        "misconception": "L'élève repère le dénominateur du milieu et l'associe à la plus petite part."
+        "text": "Tom",
+        "misconception": null
       }
     ],
     "answer": {
-      "value": "a"
+      "value": "c"
     },
     "solution_steps": [
-      "Les trois fractions ont le même numérateur 1 : chacun prend une seule part.",
-      "La plus petite part correspond au **plus grand** dénominateur.",
-      "Les dénominateurs sont 4, 8 et 3. Le plus grand est 8.",
-      "C'est donc **Tom**, avec $\\frac{1}{8}$, qui a mangé le moins.",
-      "Dans l'ordre, du plus petit au plus grand : $\\frac{1}{8}$, puis $\\frac{1}{4}$, puis $\\frac{1}{3}$."
+      "On compte les parts de la tarte dessinée : 8 parts égales. Tom mange $\\frac{1}{8}$ de sa tarte.",
+      "Les trois fractions ont le même numérateur 1 : chacun mange une seule part. Les tartes sont pareilles, on peut donc comparer les parts.",
+      "La plus petite part vient de la tarte partagée en le plus de parts. Les dénominateurs sont 4, 6 et 8 : le plus grand est 8.",
+      "C'est donc **Tom** qui mange le moins. Du plus petit au plus grand : $\\frac{1}{8}$, puis $\\frac{1}{6}$, puis $\\frac{1}{4}$."
     ],
-    "hint": "Cherche celui dont la tarte a été partagée en le plus grand nombre de parts.",
+    "hint": "Compte les parts de la tarte dessinée. Quelle tarte est partagée en le plus de parts ?",
     "estimated_duration_s": 90,
     "review_status": "relu_agent",
     "programme_ref": "Cycle 2, CE1 : comparer des fractions dont le numérateur est 1."
@@ -204,27 +193,29 @@
     "id": "EX-C026-M-02",
     "skill_id": "C026",
     "level": "maitrise",
-    "type": "texte",
-    "statement": "Trouve une fraction de numérateur 1 plus grande que $\\frac{1}{8}$ et plus petite que $\\frac{1}{4}$.\n\nÉcris-la avec une barre : 1/…",
-    "image": null,
+    "type": "numerique",
+    "statement": "Lou partage une bande pareille en parts plus petites que celles de A, mais plus grandes que celles de B.\n\nCombien de parts égales ?",
+    "image": "figures/EX-C026-M-02",
     "answer": {
-      "value": "1/6",
+      "value": 5,
       "accepted": [
-        "1 / 6",
-        "1/5",
-        "1 / 5",
-        "1/7",
-        "1 / 7"
+        "5 parts",
+        "en 5",
+        "en 5 parts",
+        "5 parts égales",
+        "en 5 parts égales",
+        "cinq",
+        "cinq parts"
       ]
     },
     "solution_steps": [
-      "On cherche une fraction $\\frac{1}{?}$ comprise entre $\\frac{1}{8}$ et $\\frac{1}{4}$.",
-      "Comme le numérateur est 1, la fraction est d'autant plus petite que le dénominateur est grand.",
-      "Il faut donc un dénominateur **compris entre 4 et 8**.",
-      "Avec 6 : une part sur 6 est plus petite qu'une part sur 4, et plus grande qu'une part sur 8, car 6 se place entre 4 et 8.",
-      "$\\frac{1}{5}$ convient aussi, pour la même raison."
+      "On compte les parts des bandes dessinées. A : 4 parts égales, une part vaut $\\frac{1}{4}$ de la bande. B : 6 parts égales, une part vaut $\\frac{1}{6}$.",
+      "Les parts de Lou doivent être plus petites que $\\frac{1}{4}$ : Lou doit faire plus de 4 parts, car plus on fait de parts dans un même tout, plus elles sont petites.",
+      "Elles doivent aussi être plus grandes que $\\frac{1}{6}$ : Lou doit faire moins de 6 parts.",
+      "Plus de 4 parts et moins de 6 parts : Lou partage la bande en **5** parts égales. Chaque part vaut $\\frac{1}{5}$ de la bande.",
+      "Piège : en 3 parts, les parts seraient plus grandes que celles de A, et non plus petites."
     ],
-    "hint": "Le dénominateur cherché doit se placer entre 4 et 8.",
+    "hint": "Pour avoir des parts plus petites que celles de A, faut-il faire plus de parts, ou moins de parts ?",
     "estimated_duration_s": 120,
     "review_status": "relu_agent",
     "programme_ref": "Cycle 2, CE1 : comparer des fractions dont le numérateur est 1."

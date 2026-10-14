@@ -1,0 +1,193 @@
+[
+  {
+    "id": "EX-P013-D-01",
+    "skill_id": "P013",
+    "level": "decouverte",
+    "type": "texte",
+    "statement": "C'est le matin. Quelle heure indique l'horloge ?\n\nCompte les minutes de 5 en 5 avec la grande aiguille.",
+    "image": "figures/EX-P013-D-01",
+    "answer": {
+      "value": "9 h 20",
+      "accepted": [
+        "9h20",
+        "9:20",
+        "9 heures 20",
+        "9 h 20 min",
+        "9 heures 20 minutes"
+      ]
+    },
+    "solution_steps": [
+      "La petite aiguille a dépassé le 9 mais pas le 10 : 9 heures sont passées.",
+      "La grande aiguille est sur le 4. D'un nombre au suivant, elle avance de 5 minutes. On compte depuis le 12 : 5, 10, 15, 20.",
+      "Il est **9 h 20**.",
+      "Erreur à éviter : lire 9 h 4. Le 4 compte les heures pour la petite aiguille ; pour la grande, il veut dire 20 minutes."
+    ],
+    "hint": "La grande aiguille est sur un nombre : compte 5, 10, 15... depuis le 12 jusqu'à elle.",
+    "estimated_duration_s": 45,
+    "programme_ref": "Cycle 2, CE2 : l'élève lit l'heure sur un cadran à aiguilles ou sur un affichage digital (huit heures et demie, neuf heures, dix heures trente-cinq, sept heures moins le quart, sept heures quinze, quatre heures moins vingt, quinze heures quarante-deux, midi, etc.).",
+    "review_status": "relu_agent"
+  },
+  {
+    "id": "EX-P013-D-02",
+    "skill_id": "P013",
+    "level": "decouverte",
+    "type": "qcm",
+    "statement": "Quelle heure indique l'horloge ?",
+    "image": "figures/EX-P013-D-02",
+    "choices": [
+      {
+        "key": "a",
+        "text": "2 h 7",
+        "misconception": "L'élève lit le 7, où est la grande aiguille, comme 7 minutes. Pour la grande aiguille, on compte de 5 en 5 : sur le 7, il est 35 minutes."
+      },
+      {
+        "key": "b",
+        "text": "2 h 35",
+        "misconception": null
+      },
+      {
+        "key": "c",
+        "text": "3 h 35",
+        "misconception": "L'élève lit le nombre le plus proche de la petite aiguille, le 3. Mais elle ne l'a pas encore atteint : 2 heures sont passées, pas 3."
+      },
+      {
+        "key": "d",
+        "text": "7 h 10",
+        "misconception": "L'élève confond les aiguilles : il lit l'heure sur la grande (le 7) et les minutes sur la petite, vers le 2 (10 minutes). C'est la petite aiguille qui montre l'heure."
+      }
+    ],
+    "answer": {
+      "value": "b"
+    },
+    "solution_steps": [
+      "La petite aiguille est entre le 2 et le 3 : 2 heures sont passées, 3 heures pas encore.",
+      "La grande aiguille est sur le 7. On compte de 5 en 5 depuis le 12 : 5, 10, 15, 20, 25, 30, 35.",
+      "Il est **2 h 35**."
+    ],
+    "hint": "Commence par la petite aiguille : quel nombre a-t-elle déjà dépassé ?",
+    "estimated_duration_s": 45,
+    "programme_ref": "Cycle 2, CE2 : l'élève lit l'heure sur un cadran à aiguilles ou sur un affichage digital (huit heures et demie, neuf heures, dix heures trente-cinq, sept heures moins le quart, sept heures quinze, quatre heures moins vingt, quinze heures quarante-deux, midi, etc.).",
+    "review_status": "relu_agent"
+  },
+  {
+    "id": "EX-P013-E-01",
+    "skill_id": "P013",
+    "level": "entrainement",
+    "type": "texte",
+    "statement": "C'est le matin. Quelle heure indique l'horloge, à la minute près ?",
+    "image": "figures/EX-P013-E-01",
+    "answer": {
+      "value": "6 h 18",
+      "accepted": [
+        "6h18",
+        "6:18",
+        "6 heures 18",
+        "6 h 18 min",
+        "6 heures 18 minutes"
+      ]
+    },
+    "solution_steps": [
+      "La petite aiguille a dépassé le 6 sans atteindre le 7 : 6 heures sont passées.",
+      "La grande aiguille a dépassé le 3. Sur le 3, il est 15 minutes : 5, 10, 15.",
+      "Après le 3, elle a avancé de 3 petits traits. Chaque petit trait vaut 1 minute : $15 + 3 = 18$.",
+      "Il est **6 h 18**.",
+      "Erreurs à éviter : lire 6 h 3 en prenant le nombre près de la grande aiguille pour des minutes ; compter les petits traits en comptant celui du 3, et trouver 19."
+    ],
+    "hint": "Quel nombre la grande aiguille a-t-elle dépassé ? Combien de petits traits ensuite ?",
+    "estimated_duration_s": 60,
+    "programme_ref": "Cycle 2, CE2 : l'élève lit l'heure sur un cadran à aiguilles ou sur un affichage digital (huit heures et demie, neuf heures, dix heures trente-cinq, sept heures moins le quart, sept heures quinze, quatre heures moins vingt, quinze heures quarante-deux, midi, etc.).",
+    "review_status": "relu_agent"
+  },
+  {
+    "id": "EX-P013-E-02",
+    "skill_id": "P013",
+    "level": "entrainement",
+    "type": "vrai_faux",
+    "statement": "Malo regarde l'horloge et dit : « Il est 9 h 55. »\n\nA-t-il raison ?",
+    "image": "figures/EX-P013-E-02",
+    "answer": {
+      "value": false
+    },
+    "solution_steps": [
+      "La grande aiguille est sur le 11 : 5, 10, 15... 55. Il est bien 55 minutes.",
+      "À l'œil, la petite aiguille paraît sur le 9. Mais la grande aiguille dit 55 minutes : il manque encore 5 minutes avant 9 h. La petite aiguille n'a donc pas encore atteint le 9 : 8 heures sont passées.",
+      "Il est 8 h 55, c'est-à-dire 9 h moins 5. Malo a **tort** : il a lu le nombre dont la petite aiguille s'approche."
+    ],
+    "hint": "Quand la grande aiguille est presque revenue au 12, la petite aiguille a-t-elle déjà atteint l'heure suivante ?",
+    "estimated_duration_s": 60,
+    "programme_ref": "Cycle 2, CE2 : l'élève lit l'heure sur un cadran à aiguilles ou sur un affichage digital (huit heures et demie, neuf heures, dix heures trente-cinq, sept heures moins le quart, sept heures quinze, quatre heures moins vingt, quinze heures quarante-deux, midi, etc.).",
+    "review_status": "relu_agent"
+  },
+  {
+    "id": "EX-P013-M-01",
+    "skill_id": "P013",
+    "level": "maitrise",
+    "type": "texte",
+    "statement": "C'est l'après-midi. Sur cette horloge, seuls quatre nombres sont écrits.\n\nQuelle heure indique-t-elle ? Écris-la comme sur un affichage digital, de 0 h à 23 h.",
+    "image": "figures/EX-P013-M-01",
+    "answer": {
+      "value": "16 h 52",
+      "accepted": [
+        "16h52",
+        "16:52",
+        "16 heures 52",
+        "16 h 52 min",
+        "16 heures 52 minutes"
+      ]
+    },
+    "solution_steps": [
+      "La grande aiguille a dépassé le 9. Sur le 9, il est 45 minutes : trois quarts d'heure.",
+      "Après le 9, elle a avancé de 7 petits traits : $45 + 7 = 52$ minutes.",
+      "À l'œil, la petite aiguille semble sur le grand trait du 5. Mais la grande aiguille dit 52 minutes : 5 heures ne sont pas encore arrivées. La petite aiguille est donc juste avant le 5 : 4 heures sont passées.",
+      "C'est l'après-midi : $12 + 4 = 16$. Il est **16 h 52**, et une horloge digitale affiche 16 : 52.",
+      "Erreurs à éviter : 17 h 52, parce que la petite aiguille touche presque le 5 ; 4 h 52, en oubliant l'après-midi."
+    ],
+    "hint": "Pars du 9 pour les minutes : combien de petits traits la grande aiguille a-t-elle encore parcourus ?",
+    "estimated_duration_s": 90,
+    "programme_ref": "Cycle 2, CE2 : l'élève lit l'heure sur un cadran à aiguilles ou sur un affichage digital (huit heures et demie, neuf heures, dix heures trente-cinq, sept heures moins le quart, sept heures quinze, quatre heures moins vingt, quinze heures quarante-deux, midi, etc.).",
+    "review_status": "relu_agent"
+  },
+  {
+    "id": "EX-P013-M-02",
+    "skill_id": "P013",
+    "level": "maitrise",
+    "type": "qcm",
+    "statement": "Lis l'heure de l'horloge avec le mot « moins ».\n\nQue dis-tu ?",
+    "image": "figures/EX-P013-M-02",
+    "choices": [
+      {
+        "key": "a",
+        "text": "6 h moins 20",
+        "misconception": "L'élève part de l'heure que la petite aiguille a dépassée, 6 h. Mais « moins » se compte à partir de l'heure qui arrive : 6 h moins 20, c'est 5 h 40."
+      },
+      {
+        "key": "b",
+        "text": "7 h moins 40",
+        "misconception": "L'élève enlève les minutes déjà passées (40) au lieu de celles qui manquent pour arriver à 7 h. 7 h moins 40, ce serait 6 h 20."
+      },
+      {
+        "key": "c",
+        "text": "7 h moins 20",
+        "misconception": null
+      },
+      {
+        "key": "d",
+        "text": "7 h moins 8",
+        "misconception": "L'élève lit le 8, où est la grande aiguille, comme 8 minutes. Sur le 8, la grande aiguille indique 40 minutes."
+      }
+    ],
+    "answer": {
+      "value": "c"
+    },
+    "solution_steps": [
+      "La petite aiguille a dépassé le 6 sans atteindre le 7 : 6 heures sont passées.",
+      "La grande aiguille est sur le 8 : 5, 10, 15, 20, 25, 30, 35, 40. Il est 6 h 40.",
+      "Pour dire l'heure avec « moins », on cherche combien de minutes il manque avant 7 h : $60 - 40 = 20$.",
+      "Il est **7 h moins 20**, sept heures moins vingt."
+    ],
+    "hint": "Combien de minutes manque-t-il à la grande aiguille pour revenir au 12 ?",
+    "estimated_duration_s": 75,
+    "programme_ref": "Cycle 2, CE2 : l'élève lit l'heure sur un cadran à aiguilles ou sur un affichage digital (huit heures et demie, neuf heures, dix heures trente-cinq, sept heures moins le quart, sept heures quinze, quatre heures moins vingt, quinze heures quarante-deux, midi, etc.).",
+    "review_status": "relu_agent"
+  }
+]
