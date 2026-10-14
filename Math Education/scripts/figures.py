@@ -290,17 +290,23 @@ def _horloge(p: dict) -> tuple[str, str]:
         corps.append(_ligne(c + r1 * math.sin(ang), c - r1 * math.cos(ang),
                             c + (r - 2) * math.sin(ang), c - (r - 2) * math.cos(ang),
                             epaisseur=2 if grand else 1))
+    # Les aiguilles d'abord, les chiffres ensuite, par-dessus et cernes de
+    # blanc : la grande aiguille peut aller jusqu'aux petits traits (lecture a
+    # la minute) sans jamais cacher un chiffre. Version precedente : aiguille
+    # raccourcie pour epargner les chiffres, illisible a la minute (relecture
+    # du lot figures F4).
+    a_h = math.radians(((hh % 12) + mn / 60) * 30)
+    a_m = math.radians(mn * 6)
+    corps.append(_ligne(c, c, c + 40 * math.sin(a_h), c - 40 * math.cos(a_h), epaisseur=6))
+    corps.append(_ligne(c, c, c + (r - 4) * math.sin(a_m), c - (r - 4) * math.cos(a_m),
+                        couleur=ACCENT, epaisseur=2.5))
     for h in range(1, 13):
         if chiffres == "aucun" or (chiffres == "quarts" and h % 3):
             continue
         ang = math.radians(h * 30)
-        # Chiffres places a 66 : la grande aiguille (54) s'arrete avant eux et
-        # ne cache jamais le 12, le 3, le 6 ou le 9.
-        corps.append(_texte(c + (r - 18) * math.sin(ang), c - (r - 18) * math.cos(ang) + 5, str(h), 15))
-    a_h = math.radians(((hh % 12) + mn / 60) * 30)
-    a_m = math.radians(mn * 6)
-    corps.append(_ligne(c, c, c + 34 * math.sin(a_h), c - 34 * math.cos(a_h), epaisseur=6))
-    corps.append(_ligne(c, c, c + 54 * math.sin(a_m), c - 54 * math.cos(a_m), couleur=ACCENT, epaisseur=3.5))
+        x, y = c + (r - 20) * math.sin(ang), c - (r - 20) * math.cos(ang) + 5
+        corps.append(f'<text x="{x:.1f}" y="{y:.1f}" font-size="15" text-anchor="middle" fill="{TRAIT}" '
+                     f'stroke="#ffffff" stroke-width="4" stroke-linejoin="round" paint-order="stroke">{h}</text>')
     corps.append(f'<circle cx="{c}" cy="{c}" r="5" fill="{TRAIT}"/>')
     alt = "Horloge à aiguilles"
     return _svg(200, 200, corps, alt), alt
