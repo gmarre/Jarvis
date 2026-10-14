@@ -155,7 +155,9 @@ def _demi_droite(p: dict) -> tuple[str, str]:
     """Demi-droite graduee.
 
     params :
-      debut          nombre a l'origine de la graduation (defaut 0)
+      debut          nombre a l'origine de la graduation (defaut 0) ; s'il n'est pas
+                     nul, un trait pointille a gauche montre qu'on ne voit qu'une
+                     portion de la demi-droite
       pas            ecart entre deux graduations principales (defaut 1)
       graduations    nombre d'intervalles principaux affiches (2 a 20)
       sous_graduations  intervalles entre deux graduations principales (1 = aucun, max 10)
@@ -174,14 +176,21 @@ def _demi_droite(p: dict) -> tuple[str, str]:
     fin = debut + pas * n
 
     L, m, h = 380, 28, 96
-    utile = L - 2 * m - 14
+    # Portion de demi-droite (debut non nul) : l'origine n'est pas dessinee, un
+    # trait pointille le signale au lieu de laisser croire que debut est l'origine
+    # (relecture du lot figures F1).
+    portion = 22 if debut != 0 else 0
+    utile = L - 2 * m - 14 - portion
     y = 54
 
     def x(v: Fraction) -> float:
-        return m + float((v - debut) / (fin - debut)) * utile
+        return m + portion + float((v - debut) / (fin - debut)) * utile
 
-    corps = [_ligne(m, y, L - m, y, epaisseur=2),
+    corps = [_ligne(m + portion, y, L - m, y, epaisseur=2),
              f'<path d="M{L - m:.1f},{y:.1f} l-9,-5 v10 z" fill="{TRAIT}"/>']
+    if portion:
+        corps.append(f'<line x1="{m - 8}" y1="{y}" x2="{m + portion}" y2="{y}" stroke="{TRAIT}" '
+                     f'stroke-width="2" stroke-dasharray="4 4"/>')
     for i in range(n * sous + 1):
         v = debut + pas * Fraction(i, sous)
         principal = i % sous == 0
@@ -246,7 +255,7 @@ def _regle(p: dict) -> tuple[str, str]:
     m, cm = 20, 30
     L = 2 * m + L_cm * cm
     y_seg, y_regle = 34, 54
-    corps = [f'<rect x="{m - 8}" y="{y_regle}" width="{L_cm * cm + 16}" height="46" rx="4" '
+    corps = [f'<rect x="{m - 14}" y="{y_regle}" width="{L_cm * cm + 28}" height="46" rx="4" '
              f'fill="#fef9c3" stroke="{TRAIT}" stroke-width="1.2"/>']
     for k in range(L_cm * 10 + 1):
         xk = m + k * cm / 10
