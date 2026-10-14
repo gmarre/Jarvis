@@ -264,7 +264,7 @@ describe('checkAnswer, accents et unites en toutes lettres', () => {
     const masse: Exercise = { ...base, answer: { value: 3, unit: 'kg' } }
     expect(checkAnswer(masse, '3 kilos').isCorrect).toBe(true)
     const aire: Exercise = { ...base, answer: { value: 12, unit: `cm${carre}` } }
-    for (const saisie of [`12 cm${carre}`, '12 cm2', `12 centim${e}tres carr${String.fromCharCode(0x00e9)}s`]) {
+    for (const saisie of [`12 cm${carre}`, '12 cm2', `12 centim${e}tres carr${String.fromCharCode(0x00e9)}s`, `12 cm carr${String.fromCharCode(0x00e9)}s`]) {
       expect(checkAnswer(aire, saisie).isCorrect).toBe(true)
     }
     const prix: Exercise = { ...base, answer: { value: 35, unit: String.fromCharCode(0x20ac) } }

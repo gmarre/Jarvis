@@ -159,6 +159,9 @@ function formesUnite(unit: string): Set<string> {
       for (const suffixe of suffixes) formes.add(forme + suffixe)
     }
   }
+  // « 9 cm carrés », « 8 cm cube » : le symbole suivi du mot (releve en
+  // relecture, lot figures).
+  if (exposant) for (const suffixe of suffixes) formes.add(base + suffixe)
   return formes
 }
 
