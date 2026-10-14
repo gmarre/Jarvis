@@ -65,6 +65,8 @@ Le DAG v1.0 (`Spécifications DAG, Exos, Mindcards/skills_dag.json`) contient 41
 | `exercises.json` | Banque d'exercices, 3 niveaux, avec corrigés | **636 exercices**, tous en `relu_agent` (voir `QUALITY.md`), en attente de la recette de Marius dans l'application (§10.6). Chaque compétence en a au moins 3. |
 | `mindmaps.json` | Cartes mentales en Markdown hiérarchique | **24 cartes**, chaque compétence est couverte. |
 
+**Figures (octobre 2026).** Une figure n'est jamais dessinée à la main : l'auteur la **décrit** en JSON (`content/figures/<nom>.json`, par exemple « demi-droite de 0 à 10, pas de 1, point A en 7 »), et `scripts/figures.py` la dessine en SVG. Types disponibles : `demi_droite`, `regle`, `horloge`, `quadrillage`, `partage`, `monnaie` (d'autres viendront avec la géométrie). L'exercice y renvoie par `"image": "figures/<nom>"`. Le validateur vérifie que chaque figure se dessine et reste cohérente (un point doit tomber sur une graduation, un segment tenir sur la règle). À l'export et à la publication, le SVG est calculé et placé dans le champ `image` ; l'application l'affiche comme une image (`ExerciseFigure`, data URI dans `<img>`), ce qui interdit toute exécution de script. Relire des figures : `python scripts/figures.py apercu <dossier> <sortie>`.
+
 **L'extension du contenu suit `Spécifications DAG, Exos, Mindcards/PLAN_CONTENU.md`** : un domaine à la fois, d'après le programme officiel, DAG, exercices et cartes ensemble, produits et relus par agents. Étapes 1 (calcul), 2 (décimaux), 3 (proportionnalité) et 4a (grandeurs et mesures, nouveau domaine P) faites ; 4b (géométrie) attend l'affichage des figures.
 | Progression élève | État d'avancement sur le DAG | **En base Supabase**, tables et politiques RLS actives. |
 

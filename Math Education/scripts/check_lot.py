@@ -12,12 +12,13 @@ toute erreur : les avertissements deja connus de la banque ne noient pas le
 resultat.
 
 Usage :
-    python .\scripts\check_lot.py [--skills f.json] [--links f.json] [--exercises f.json ...] [--mindmaps f.json]
+    python .\scripts\check_lot.py [--skills f.json] [--links f.json] [--exercises f.json ...] [--mindmaps f.json] [--figures dossier]
 
   --skills     tableau de competences (format skills_dag.schema.json)
   --links      prerequis a ajouter a des competences existantes, format de merge_dag.py
   --exercises  tableau d'exercices, ou objet {"exercises": [...]}
   --mindmaps   tableau de cartes (format mindmaps.schema.json)
+  --figures    dossier(s) de descriptions de figures du lot (scripts/figures.py)
 """
 
 from __future__ import annotations
@@ -72,7 +73,9 @@ def main() -> int:
             cible = skills.get(lien["skill"])
             if cible is not None and lien["add_prerequisite"] not in cible["prerequisites"]:
                 cible["prerequisites"].append(lien["add_prerequisite"])
-        exos["exercises"].extend(exos_in)
+        # Un exercice du lot qui existe deja le remplace : c'est le cas d'une reprise.
+        repris = {e["id"] for e in exos_in}
+        exos["exercises"] = [e for e in exos["exercises"] if e["id"] not in repris] + exos_in
         exos["exercises"].sort(key=lambda e: (e["skill_id"], ORDRE.get(e["level"], 9), e["id"]))
         par_comp: dict[str, list[str]] = {}
         for e in exos["exercises"]:
@@ -89,7 +92,11 @@ def main() -> int:
         # Les compteurs des metadonnees sont recalcules par l'ecriture.
         contenu.ecrire(dag, exos, mm, tmp)
 
-        env = dict(os.environ, MATH_EDU_CONTENT_DIR=str(tmp), PYTHONIOENCODING="utf-8")
+        # Le contenu temporaire n'a pas de dossier figures : le validateur lit
+        # celles de la banque, plus celles du lot.
+        extra = [str(contenu.CONTENT / "figures")] + [str(d) for d in fichiers("--figures")]
+        env = dict(os.environ, MATH_EDU_CONTENT_DIR=str(tmp), PYTHONIOENCODING="utf-8",
+                   MATH_EDU_FIGURES_EXTRA=os.pathsep.join(extra))
         r = subprocess.run([sys.executable, str(ROOT / "scripts" / "validate_content.py")],
                            capture_output=True, text=True, encoding="utf-8", errors="replace", env=env)
 

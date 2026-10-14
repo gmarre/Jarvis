@@ -13,6 +13,7 @@ import {
 } from '@/lib/placement'
 import { cn } from '@/lib/cn'
 import { AnswerInput } from '@/components/exercise/AnswerInput'
+import { ExerciseFigure } from '@/components/exercise/ExerciseFigure'
 import { Wordmark } from '@/components/layout/AppShell'
 import { Badge } from '@/components/ui/Badge'
 import { Button, ButtonLink } from '@/components/ui/Button'
@@ -168,6 +169,8 @@ export default function PlacementTestPage() {
             <RichText className="mb-7 font-display text-[22px] font-medium leading-snug text-ink sm:text-[27px]">
               {exercise.statement}
             </RichText>
+
+            <ExerciseFigure image={exercise.image} className="-mt-3 mb-6" />
 
             <AnswerInput
               exercise={exercise}

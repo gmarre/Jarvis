@@ -93,7 +93,9 @@ def main() -> int:
         return 1
 
     dag, exos, cartes = contenu.charger()
-    payload = {"skills": dag["skills"], "exercises": exos["exercises"], "mindmaps": cartes["mindmaps"]}
+    # Les figures sont dessinees ici : la base recoit le SVG, pas la description.
+    payload = {"skills": dag["skills"], "exercises": contenu.avec_figures(exos["exercises"]),
+               "mindmaps": cartes["mindmaps"]}
     taille = len(json.dumps(payload, ensure_ascii=False).encode("utf-8"))
 
     # 2. Une publication = un commit.

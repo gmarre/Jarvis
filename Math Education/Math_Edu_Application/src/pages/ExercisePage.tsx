@@ -6,6 +6,7 @@ import { cn } from '@/lib/cn'
 import { exerciseLevelLabel } from '@/lib/exercise'
 import { formatDuration } from '@/lib/format'
 import { AnswerInput } from '@/components/exercise/AnswerInput'
+import { ExerciseFigure } from '@/components/exercise/ExerciseFigure'
 import { RecettePanel } from '@/components/recette/RecettePanel'
 import { Wordmark } from '@/components/layout/AppShell'
 import { Badge } from '@/components/ui/Badge'
@@ -148,6 +149,8 @@ export default function ExercisePage() {
         <RichText className="mb-7 font-display text-[20px] font-medium leading-snug text-ink sm:text-[24px]">
           {exercise.statement}
         </RichText>
+
+        <ExerciseFigure image={exercise.image} className="-mt-3 mb-6" />
 
         <AnswerInput
           exercise={exercise}

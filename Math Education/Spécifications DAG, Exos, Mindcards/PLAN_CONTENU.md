@@ -73,6 +73,13 @@ domaines à moitié faits.
    lit la nouvelle publication au chargement suivant de la page : c'est
    l'étape qui met le contenu entre les mains des élèves.
 
+   **Figures** : un lot qui en porte livre aussi un dossier de descriptions
+   (`_travail/figures_<lot>/<nom>.json`, format de `scripts/figures.py`). On le
+   passe à `check_lot.py --figures <dossier>` et à `merge_lot.py --figures
+   <dossier>`, qui copie les descriptions dans `content/figures/` après une
+   validation réussie. Pour reprendre des exercices existants (leur ajouter une
+   figure), `merge_lot.py --remplacer`.
+
    Le contenu est découpé : `content/dag/<domaine>.json`,
    `content/exercices/<domaine>/<compétence>.json`, `content/cartes/<carte>.json`.
    Aucun script ne lit ces fichiers à la main : tous passent par

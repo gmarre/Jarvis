@@ -181,11 +181,28 @@ def ecrire_et_valider(dag: dict, exercices: dict, cartes: dict, racine: Path = C
         return True, r.stdout
 
 
+def avec_figures(exercices: list[dict], racine: Path = CONTENT) -> list[dict]:
+    """Copie des exercices ou chaque `image` "figures/<nom>" devient le SVG dessine.
+
+    En Git, un exercice renvoie a la description de sa figure ; l'application et
+    la base recoivent le dessin lui-meme (scripts/figures.py). Les exercices
+    d'origine ne sont pas modifies.
+    """
+    import figures
+    dossiers = figures.dossiers_figures(racine)
+    sortie = []
+    for e in exercices:
+        if e.get("image"):
+            e = {**e, "image": figures.svg_de_reference(e["image"], dossiers)}
+        sortie.append(e)
+    return sortie
+
+
 def exporter_app(dag: dict, exercices: dict, cartes: dict, dest: Path = APP_CONTENT) -> None:
     """Les trois fichiers assembles que l'application importe."""
     recalculer_compteurs(dag, exercices, cartes)
     _ecrire_json(Path(dest) / "skills_dag.json", dag)
-    _ecrire_json(Path(dest) / "exercises.json", exercices)
+    _ecrire_json(Path(dest) / "exercises.json", {**exercices, "exercises": avec_figures(exercices["exercises"])})
     _ecrire_json(Path(dest) / "mindmaps.json", cartes)
 
 

@@ -369,6 +369,25 @@ def check_validation_tests(dag: dict) -> None:
 _CLASSE_TITRE = re.compile(r"\b(CP|CE1|CE2|CM1|CM2|6e)\b")
 
 
+def check_images(exercises: dict) -> None:
+    """Chaque image renvoie a une description de figure qui se dessine.
+
+    Les figures sont decrites en JSON (scripts/figures.py) et dessinees par
+    script : une reference cassee, ou une description incoherente (point hors
+    graduation, segment plus long que la regle), est bloquante.
+    """
+    import figures
+    dossiers = figures.dossiers_figures(CONTENT_DIR)
+    for ex in exercises["exercises"]:
+        ref = ex.get("image")
+        if not ref:
+            continue
+        try:
+            figures.svg_de_reference(ref, dossiers)
+        except (figures.FigureInvalide, json.JSONDecodeError) as exc:
+            err(f"Figure : {ex['id']} : {exc}")
+
+
 def check_champ_cartes(mindmaps: dict | None) -> None:
     """Champ numerique des cartes, section par section.
 
@@ -925,6 +944,7 @@ def main() -> int:
         err_avant = len(errors)
         check_champ_numerique(dag, exercises)
         check_champ_cartes(mindmaps)
+        check_images(exercises)
         print(f"  champ numerique       {'OK' if len(errors) == err_avant else 'ANOMALIES'}")
 
         warn_avant = len(warnings)

@@ -8,11 +8,19 @@ Met a jour, dans le meme mouvement :
 
 Un lot est un tableau d'exercices, ou un objet {"exercises": [...]}.
 
-Refuse de fusionner si un identifiant existe deja, ou si la validation echoue
-apres fusion : dans ce cas rien n'est ecrit.
+Refuse de fusionner si un identifiant existe deja (sauf --remplacer), ou si la
+validation echoue apres fusion : dans ce cas rien n'est ecrit.
+
+Options :
+  --remplacer         un exercice deja present est remplace par celui du lot
+                      (reprise d'exercices existants, par exemple pour y ajouter
+                      une figure) ; sans l'option, un doublon annule la fusion
+  --figures <dossier> descriptions de figures du lot (scripts/figures.py),
+                      copiees dans content/figures une fois la validation reussie ;
+                      une figure deja presente avec un contenu different annule
 
 Usage :
-    python .\scripts\merge_lot.py _travail\lot_C_nouvelles.json ... [--apply]
+    python .\scripts\merge_lot.py _travail\lot_C_nouvelles.json ... [--figures dossier] [--remplacer] [--apply]
 """
 
 from __future__ import annotations
@@ -45,8 +53,34 @@ def lire_lot(chemin: Path) -> list[dict]:
 
 
 def main() -> int:
+    import os
+    import shutil
+
     appliquer = "--apply" in sys.argv
-    lots = [Path(a) for a in sys.argv[1:] if not a.startswith("--")]
+    remplacer = "--remplacer" in sys.argv
+    args = sys.argv[1:]
+    dossier_figures = None
+    if "--figures" in args:
+        i = args.index("--figures")
+        dossier_figures = Path(args[i + 1])
+        del args[i:i + 2]
+    lots = [Path(a) for a in args if not a.startswith("--")]
+
+    # Figures du lot : nouvelles, ou identiques a celles de la banque.
+    figures_a_copier: list[Path] = []
+    if dossier_figures is not None:
+        if not dossier_figures.is_dir():
+            print(f"Dossier de figures introuvable : {dossier_figures}", file=sys.stderr)
+            return 1
+        for f in sorted(dossier_figures.glob("*.json")):
+            cible = contenu.CONTENT / "figures" / f.name
+            if cible.is_file() and cible.read_text(encoding="utf-8") != f.read_text(encoding="utf-8"):
+                print(f"Figure deja presente avec un contenu different, fusion annulee : {f.name}", file=sys.stderr)
+                return 1
+            figures_a_copier.append(f)
+        # Le validateur les lit sur place pendant la verification.
+        os.environ["MATH_EDU_FIGURES_EXTRA"] = str(dossier_figures)
+        print(f"  {len(figures_a_copier)} figure(s) dans {dossier_figures.name}")
     if not lots:
         print("Indiquer au moins un fichier de lot.", file=sys.stderr)
         return 1
@@ -56,14 +90,19 @@ def main() -> int:
     skills = {s["id"]: s for s in dag["skills"]}
 
     ajoutes = []
+    remplaces: list[str] = []
     for lot in lots:
         if not lot.is_file():
             print(f"Introuvable : {lot}", file=sys.stderr)
             return 1
         contenu_lot = lire_lot(lot)
         for e in contenu_lot:
+            if e["id"] in connus and remplacer:
+                exos["exercises"] = [x for x in exos["exercises"] if x["id"] != e["id"]]
+                connus.discard(e["id"])
+                remplaces.append(e["id"])
             if e["id"] in connus:
-                print(f"Deja present, fusion annulee : {e['id']}", file=sys.stderr)
+                print(f"Deja present, fusion annulee : {e['id']} (option --remplacer pour le reprendre)", file=sys.stderr)
                 return 1
             if e["skill_id"] not in skills:
                 print(f"Competence inconnue, fusion annulee : {e['skill_id']}", file=sys.stderr)
@@ -87,7 +126,8 @@ def main() -> int:
             touchees.append(s["id"])
         s["mastery_threshold"] = seuil(len(ids)) if ids else {"required": 2, "out_of": 3}
 
-    print(f"\n{len(ajoutes)} exercice(s) ajoute(s), total {len(exos['exercises'])}.")
+    print(f"\n{len(ajoutes) - len(remplaces)} exercice(s) ajoute(s), {len(remplaces)} remplace(s), "
+          f"total {len(exos['exercises'])}.")
     print(f"Competences dont exercise_ids change : {', '.join(touchees) or 'aucune'}")
 
     if not appliquer:
@@ -99,6 +139,11 @@ def main() -> int:
         print("\nVALIDATION ECHOUEE, fusion annulee et fichiers restaures.\n")
         print(sortie[-3000:])
         return 1
+    if figures_a_copier:
+        (contenu.CONTENT / "figures").mkdir(parents=True, exist_ok=True)
+        for f in figures_a_copier:
+            shutil.copyfile(f, contenu.CONTENT / "figures" / f.name)
+        print(f"{len(figures_a_copier)} figure(s) copiee(s) dans content/figures.")
     print("\nFusion ecrite, validation reussie.")
     return 0
 
