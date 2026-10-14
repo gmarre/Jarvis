@@ -275,11 +275,13 @@ def _horloge(p: dict) -> tuple[str, str]:
         if chiffres == "aucun" or (chiffres == "quarts" and h % 3):
             continue
         ang = math.radians(h * 30)
-        corps.append(_texte(c + (r - 24) * math.sin(ang), c - (r - 24) * math.cos(ang) + 5, str(h), 15))
+        # Chiffres places a 66 : la grande aiguille (54) s'arrete avant eux et
+        # ne cache jamais le 12, le 3, le 6 ou le 9.
+        corps.append(_texte(c + (r - 18) * math.sin(ang), c - (r - 18) * math.cos(ang) + 5, str(h), 15))
     a_h = math.radians(((hh % 12) + mn / 60) * 30)
     a_m = math.radians(mn * 6)
-    corps.append(_ligne(c, c, c + 44 * math.sin(a_h), c - 44 * math.cos(a_h), epaisseur=6))
-    corps.append(_ligne(c, c, c + 68 * math.sin(a_m), c - 68 * math.cos(a_m), couleur=ACCENT, epaisseur=3.5))
+    corps.append(_ligne(c, c, c + 34 * math.sin(a_h), c - 34 * math.cos(a_h), epaisseur=6))
+    corps.append(_ligne(c, c, c + 54 * math.sin(a_m), c - 54 * math.cos(a_m), couleur=ACCENT, epaisseur=3.5))
     corps.append(f'<circle cx="{c}" cy="{c}" r="5" fill="{TRAIT}"/>')
     alt = "Horloge à aiguilles"
     return _svg(200, 200, corps, alt), alt
@@ -380,6 +382,47 @@ def _partage(p: dict) -> tuple[str, str]:
     return _svg(L, Ht, corps, alt), alt
 
 
+def _bandes(p: dict) -> tuple[str, str]:
+    """Plusieurs partages d'une meme unite : des bandes de meme longueur, superposees.
+
+    Sert a comparer des fractions d'un meme tout (programme de CE1 : « deux
+    partages distincts d'un meme tout »).
+
+    params :
+      bandes   liste de 2 a 4 bandes : {"parts": n (2 a 12),
+               "coloriees": nombre ou liste de rangs, "nom": "A" (facultatif)}
+    """
+    bandes = p.get("bandes")
+    if not isinstance(bandes, list) or not 2 <= len(bandes) <= 4:
+        raise FigureInvalide("bandes : liste de 2 a 4 bandes")
+    W, H, m, ecart, marge_nom = 300, 40, 14, 14, 26
+    corps = []
+    for i, b in enumerate(bandes):
+        if not isinstance(b, dict):
+            raise FigureInvalide(f"bande {i + 1} : objet attendu")
+        n = _entier(b, "parts", 2, 12)
+        col = b.get("coloriees", 0)
+        if isinstance(col, int) and not isinstance(col, bool):
+            if not 0 <= col <= n:
+                raise FigureInvalide(f"bande {i + 1} : coloriees entre 0 et le nombre de parts")
+            rangs = set(range(col))
+        elif isinstance(col, list) and all(isinstance(k, int) and 0 <= k < n for k in col):
+            rangs = set(col)
+        else:
+            raise FigureInvalide(f"bande {i + 1} : coloriees, nombre de parts ou liste de rangs")
+        y = m + i * (H + ecart)
+        x0 = m + marge_nom
+        for k in range(n):
+            corps.append(f'<rect x="{x0 + k * W / n:.1f}" y="{y}" width="{W / n:.1f}" height="{H}" '
+                         f'fill="{REMPLI_FORT if k in rangs else "#ffffff"}" stroke="{TRAIT}" stroke-width="1.6"/>')
+        if b.get("nom"):
+            corps.append(_texte(m + 8, y + H / 2 + 5, str(b["nom"])[:2], 15, gras=True))
+    L = 2 * m + marge_nom + W
+    Ht = 2 * m + len(bandes) * H + (len(bandes) - 1) * ecart
+    alt = f"{len(bandes)} bandes de même longueur, partagées en parts égales"
+    return _svg(L, Ht, corps, alt), alt
+
+
 def _monnaie(p: dict) -> tuple[str, str]:
     """Pieces et billets en euros, dessin schematique (pas une reproduction).
 
@@ -425,6 +468,7 @@ GENERATEURS = {
     "horloge": _horloge,
     "quadrillage": _quadrillage,
     "partage": _partage,
+    "bandes": _bandes,
     "monnaie": _monnaie,
 }
 
