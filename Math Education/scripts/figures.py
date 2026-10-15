@@ -1103,7 +1103,9 @@ def _solide(p: dict) -> tuple[str, str]:
         raise FigureInvalide("solides : liste de 1 a 4 solides")
     seul = len(liste) == 1
     t = 170 if seul else 72
-    case = t + (60 if seul else 14)
+    # Seul, le solide garde de la place a droite pour la fuyante et les lettres
+    # des sommets (lettre C d une pyramide coupee, lot 4b L2).
+    case = t + (100 if seul else 14)
     L = max(case * len(liste), 160)
     H = t + (60 if seul else 44)
     corps: list[str] = []
