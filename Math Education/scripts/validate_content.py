@@ -490,6 +490,9 @@ NOTATIONS = {
     # KaTeX, ^2 et ^3 sur une unite comptent aussi.
     "P017": (re.compile(r"²|(?:mm|cm|dm|km|m)\^\{?2"), "les unites d'aire (²)"),
     "P026": (re.compile(r"³|(?:mm|cm|dm|m)\^\{?3"), "les unites de volume (³)"),
+    # Le degre (symbole DEG) est introduit au CM2 a partir de l'angle droit (G022,
+    # etape 4b). Ecrit par son code : invisible a la relecture sinon.
+    "G022": (re.compile(chr(176) + r"|\^\{?\\circ"), "le symbole du degre"),
 }
 
 
@@ -514,6 +517,13 @@ VOCABULAIRE_PROPORTIONNALITE = [
     # n'est nomme qu'en 6e.
     (re.compile(r"\bformules?\b", re.I), "« formule »", "6e"),
     (re.compile(r"tableaux?\s+de\s+conversion", re.I), "« tableau de conversion »", "6e"),
+    # Geometrie (etape 4b) : « L'utilisation d'un instrument de mesure des
+    # angles (rapporteur) ne releve pas du CM2 et sera introduite au college. »
+    # Au cours moyen, « il ne sera pas demande aux eleves de "tracer [AB]",
+    # mais de "tracer le segment [AB]" » : la notation seule arrive en 6e.
+    (re.compile(r"rapporteur", re.I), "« rapporteur »", "6e"),
+    (re.compile(r"(?<!segment )(?<!segment \$)\[[A-Z]{2}\](?!\))"), "« [AB] » sans le mot segment", "6e"),
+    (re.compile(r"(?<!droite )(?<!droite \$)(?<![A-Za-z])\((?!CP|CE|CM)[A-Z]{2}\)"), "« (AB) » sans le mot droite", "6e"),
 ]
 
 CURSUS = ["CP", "CE1", "CE2", "CM1", "CM2", "6e", "5e", "4e", "3e", "2nde", "1ere", "Terminale"]
