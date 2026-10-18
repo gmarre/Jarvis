@@ -316,3 +316,19 @@ describe('checkAnswer, durees et horaires', () => {
     expect(checkAnswer(minutes, '15 mn').isCorrect).toBe(true)
   })
 })
+
+describe('checkAnswer, angles en degres', () => {
+  const angle: Exercise = { ...byType('numerique'), answer: { value: 120, unit: '°' } }
+
+  it('affiche le degre colle au nombre', () => {
+    expect(formatExpected(angle)).toBe('120°')
+  })
+
+  it.each(['120', '120°', '120 °', '120 degres', '120 degrés', '120 degré'])('accepte « %s »', (saisie) => {
+    expect(checkAnswer(angle, saisie).isCorrect).toBe(true)
+  })
+
+  it('refuse une autre mesure', () => {
+    expect(checkAnswer(angle, '60°').isCorrect).toBe(false)
+  })
+})

@@ -144,6 +144,7 @@ const NOMS_UNITES: Record<string, string[]> = {
   s: ['seconde', 'sec'],
   min: ['minute', 'mn'],
   h: ['heure'],
+  '°': ['degre'],
   '\u20ac': ['euro', 'eur'],
 }
 
@@ -262,6 +263,9 @@ export function formatExpected(exercise: ExerciceACorriger): string {
   const prix = unit === '€' && typeof value === 'number' && !Number.isInteger(value)
   const nombre = typeof value === 'number' ? (prix ? value.toFixed(2) : String(value)) : String(value)
   const shown = typeof value === 'number' ? nombre.replace('.', ',') : nombre
+  // Le degre se colle au nombre (« 120° »), toutes les autres unites
+  // s'en separent par une espace (« 12 cm »).
+  if (unit === '°') return `${shown}°`
   return unit ? `${shown} ${unit}` : shown
 }
 

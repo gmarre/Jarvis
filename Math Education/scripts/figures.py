@@ -349,6 +349,7 @@ def _quadrillage(p: dict) -> tuple[str, str]:
     corps = []
     couleurs = [REMPLI_FORT, "#fde68a", "#bbf7d0", "#fecaca"]
     occupees: set[tuple[int, int]] = set()
+    noms_formes: list[str] = []
     for i, f in enumerate(p.get("formes", [])):
         cases: list[tuple[int, int]] = []
         if "rectangle" in f:
@@ -369,13 +370,20 @@ def _quadrillage(p: dict) -> tuple[str, str]:
         if f.get("nom"):
             mx = sum(c[0] for c in cases) / len(cases)
             my = sum(c[1] for c in cases) / len(cases)
+            # Nom ecrit apres les lignes, avec un liseré blanc : un trait au
+            # milieu d'un mot gene l'eleve de CP qui dechiffre lettre a lettre
+            # (relecture 4b L1). 14 px s'il tient dans la forme, 12 sinon.
             nom_forme = str(f["nom"])[:10]
-            corps.append(_texte(m + (mx + 0.5) * s, m + (my + 0.5) * s + 5, nom_forme,
-                                14 if len(nom_forme) <= 3 else 11, gras=True))
+            largeur_forme = (max(c[0] for c in cases) - min(c[0] for c in cases) + 1) * s
+            taille = 14 if len(nom_forme) * 8.5 <= largeur_forme else 12
+            noms_formes.append(_texte(m + (mx + 0.5) * s, m + (my + 0.5) * s + 5, nom_forme, taille, gras=True)
+                               .replace("<text ", '<text stroke="#ffffff" stroke-width="3" paint-order="stroke" ', 1))
     for k in range(nc + 1):
         corps.append(_ligne(m + k * s, m, m + k * s, m + nl * s, couleur=DOUX, epaisseur=1))
     for k in range(nl + 1):
         corps.append(_ligne(m, m + k * s, m + nc * s, m + k * s, couleur=DOUX, epaisseur=1))
+    corps += noms_formes
+
     def noeud(xy, champ):
         if not (isinstance(xy, list) and len(xy) == 2 and all(isinstance(v, int) for v in xy)):
             raise FigureInvalide(f"{champ} : [x, y] entiers attendus")
@@ -419,7 +427,7 @@ def _quadrillage(p: dict) -> tuple[str, str]:
         if rb.get("direction") not in sens:
             raise FigureInvalide("robot.direction : haut, bas, gauche ou droite")
         ux, uy = sens[rb["direction"]]
-        k = s * 0.36
+        k = s * 0.42
         pointe = (x + ux * k, y + uy * k)
         g = (x - ux * k * 0.7 - uy * k * 0.8, y - uy * k * 0.7 + ux * k * 0.8)
         d = (x - ux * k * 0.7 + uy * k * 0.8, y - uy * k * 0.7 - ux * k * 0.8)
@@ -779,8 +787,10 @@ def _geometrie(p: dict) -> tuple[str, str]:
             if marque not in (1, 2, 3):
                 raise FigureInvalide(f"element {i + 1} : marque 1, 2 ou 3")
             segs = e["codage"]
-            longueurs = {dist2(P(a), P(b)) for a, b in segs}
-            if len(longueurs) > 1:
+            # Egalite a 0,2 % pres : un triangle equilateral n'a pas de sommets
+            # a coordonnees rationnelles (lot 4b L5) ; l'ecart reste invisible.
+            longueurs = [dist2(P(a), P(b)) for a, b in segs]
+            if max(longueurs) > min(longueurs) * Fraction(1004, 1000):
                 raise FigureInvalide(f"element {i + 1} : segments codes egaux mais de longueurs differentes")
             for a, b in segs:
                 (x1, y1), (x2, y2) = px(P(a)), px(P(b))
