@@ -807,8 +807,20 @@ def _geometrie(p: dict) -> tuple[str, str]:
             gy0 = m + sum(float(pts[q][1]) for q in vis) / len(vis) * s
             if (mx - gx0) * nx + (my - gy0) * ny < 0:
                 nx, ny = -nx, -ny
-            corps.append(_texte(min(max(mx + nx * 14, 20), L - 20), min(max(my + ny * 14 + 5, 14), H - 3),
-                                str(e.get("texte", ""))[:8], 13, couleur=couleur(e)))
+            # Le texte part du trait vers l'exterieur : aligne a gauche ou a droite
+            # le long d'un cote vertical ou penche, centre le long d'un cote
+            # horizontal. Centre a 14 px, « 4 cm » chevauchait un cote vertical
+            # (lot 4b L3).
+            texte = str(e.get("texte", ""))[:8]
+            if abs(nx) > 0.5:
+                ancre = "start" if nx > 0 else "end"
+                tx, ty = mx + nx * 8, my + ny * 8 + 5
+                largeur = 7.5 * len(texte)
+                tx = min(max(tx, 4 + (largeur if ancre == "end" else 0)), L - 4 - (largeur if ancre == "start" else 0))
+            else:
+                ancre = "middle"
+                tx, ty = min(max(mx + nx * 14, 20), L - 20), my + ny * 13 + 5
+            corps.append(_texte(tx, min(max(ty, 14), H - 3), texte, 13, ancre=ancre, couleur=couleur(e)))
         elif "texte" in e:
             xy = e.get("position")
             if not (isinstance(xy, list) and len(xy) == 2):
@@ -1055,7 +1067,9 @@ def _dessin_solide(sorte: str, x0: float, y0: float, t: float, p: dict) -> list[
                 seg((cx + R, cyb), S)
         else:
             n = 3 if sorte == "prisme" else 6
-            decal = math.pi / 2 if n == 3 else 0.0
+            # Hexagone tourne de 15 degres : sinon chaque arete debout cachee tombe
+            # sur une arete de devant et disparait (relecture 4b L2).
+            decal = math.pi / 2 if n == 3 else math.pi / 12
             base = [(cx + R * math.cos(decal + 2 * math.pi * k / n), cyb + r * math.sin(decal + 2 * math.pi * k / n))
                     for k in range(n)]
             haut = [(x, y - hauteur) for x, y in base]
