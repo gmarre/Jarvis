@@ -18,6 +18,11 @@ export interface Profile {
   email_parent: string | null
   /** Null tant que le parent n'a pas confirme (RGPD mineurs, < 15 ans). */
   consentement_parental_at: string | null
+  /**
+   * Moment ou le role a ete fixe (migration 0010). Null : compte Google qui
+   * n'a pas encore complete son profil, il peut encore choisir son role, une fois.
+   */
+  role_choisi_le: string | null
   cree_le: string
   /** Preferences de confidentialite, ecran Profil. */
   partage_progression_prof: boolean

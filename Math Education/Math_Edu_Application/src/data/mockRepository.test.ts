@@ -159,6 +159,7 @@ describe('isProfileComplete', () => {
     date_naissance: '2015-04-02',
     email_parent: null,
     consentement_parental_at: null,
+    role_choisi_le: null,
     cree_le: new Date().toISOString(),
     partage_progression_prof: true,
     resume_hebdo_parent: false,
@@ -284,6 +285,14 @@ describe('mutations granulaires', () => {
 
     expect(isProfileComplete(profile)).toBe(true)
     expect(profile.niveau_scolaire).toBe('6e')
+  })
+
+  it('refuse de changer un role deja fixe a l inscription par email', async () => {
+    // Le formulaire d'inscription a fixe le role : comme le trigger de 0010.
+    await inscrire()
+    await expect(
+      mockRepository.completeProfile({ ...COMPLETION, role: 'prof' }),
+    ).rejects.toThrow(RepositoryError)
   })
 
   it('ne fabrique pas de nom de famille a partir du prenom', async () => {

@@ -61,6 +61,10 @@ function WelcomeForm({ profile }: { profile: Profile }) {
     [],
   )
 
+  // Le role ne se choisit qu'une fois (migration 0010) : un compte cree par
+  // email l'a deja fixe sur le formulaire d'inscription. Afficher le selecteur
+  // promettrait un changement que la base refuserait.
+  const roleOuvert = profile.role_choisi_le === null
   const isStudent = role === 'eleve'
   const age = ageFrom(naissance)
   const needsConsent = consentementRequis(role, naissance)
@@ -128,20 +132,27 @@ function WelcomeForm({ profile }: { profile: Profile }) {
 
         <Card>
           <form onSubmit={handleSubmit} noValidate>
-            <p className="mb-2.5 text-[11px] font-semibold uppercase leading-none tracking-[0.06em] text-ink-faint">
-              Je suis
-            </p>
-            <Segmented<UserRole>
-              ariaLabel="Je suis"
-              value={role}
-              onChange={setRole}
-              className="mb-5"
-              options={[
-                { value: 'eleve', label: 'Élève' },
-                { value: 'prof', label: 'Professeur' },
-                { value: 'parent', label: 'Parent' },
-              ]}
-            />
+            {roleOuvert && (
+              <>
+                <p className="mb-2.5 text-[11px] font-semibold uppercase leading-none tracking-[0.06em] text-ink-faint">
+                  Je suis
+                </p>
+                <Segmented<UserRole>
+                  ariaLabel="Je suis"
+                  value={role}
+                  onChange={setRole}
+                  className="mb-1.5"
+                  options={[
+                    { value: 'eleve', label: 'Élève' },
+                    { value: 'prof', label: 'Professeur' },
+                    { value: 'parent', label: 'Parent' },
+                  ]}
+                />
+                <p className="mb-5 text-[11.5px] leading-relaxed text-ink-subtle">
+                  Ce choix est définitif pour ce compte.
+                </p>
+              </>
+            )}
 
             <div className="grid gap-3">
               <Field label="Prénom" htmlFor="w-prenom" error={errors.prenom}>

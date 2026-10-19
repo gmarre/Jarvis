@@ -140,4 +140,55 @@ from profiles where id = '22222222-2222-2222-2222-222222222222';
 
 reset role;
 
+-- --- Choix du role une seule fois (migration 0010) ---------------------------
+
+-- Deux comptes Google (sans role dans les metadonnees) : Zoe (6666, deja creee)
+-- et Yann, qui restera eleve.
+insert into auth.users (id, email, raw_user_meta_data) values
+  ('99999999-9999-9999-9999-999999999999', 'g2@test.fr', '{"given_name":"Yann"}');
+
+select 'TEST 23a un compte email a son role fige des l inscription' as test,
+       (role_choisi_le is not null) as ok
+from profiles where id = '22222222-2222-2222-2222-222222222222';
+
+select 'TEST 23b un compte Google garde le choix ouvert' as test,
+       (role_choisi_le is null) as ok
+from profiles where id = '66666666-6666-6666-6666-666666666666';
+
+set role authenticated;
+set request.jwt.claim.role = 'authenticated';
+
+\echo '--- Zoe (Google) choisit Professeur sur /bienvenue : accepte ---'
+set request.jwt.claim.sub = '66666666-6666-6666-6666-666666666666';
+update profiles set role = 'prof' where id = '66666666-6666-6666-6666-666666666666';
+select 'TEST 23c un compte Google choisit son role une fois' as test,
+       role::text as role, (role = 'prof' and role_choisi_le is not null) as ok
+from profiles where id = '66666666-6666-6666-6666-666666666666';
+
+\echo '--- Zoe tente de changer encore : refuse ---'
+\set ON_ERROR_STOP off
+update profiles set role = 'parent' where id = '66666666-6666-6666-6666-666666666666';
+\set ON_ERROR_STOP on
+select 'TEST 23d le role ne change pas une seconde fois' as test,
+       role::text as role, (role = 'prof') as ok
+from profiles where id = '66666666-6666-6666-6666-666666666666';
+
+\echo '--- Yann (Google) complete son profil en eleve : le role se fige ---'
+set request.jwt.claim.sub = '99999999-9999-9999-9999-999999999999';
+update profiles set niveau_scolaire = '5e' where id = '99999999-9999-9999-9999-999999999999';
+\set ON_ERROR_STOP off
+update profiles set role = 'prof' where id = '99999999-9999-9999-9999-999999999999';
+\set ON_ERROR_STOP on
+select 'TEST 23e un eleve Google complet ne devient pas prof' as test,
+       role::text as role, (role = 'eleve' and role_choisi_le is not null) as ok
+from profiles where id = '99999999-9999-9999-9999-999999999999';
+
+\echo '--- Le client ne peut pas effacer role_choisi_le pour rouvrir le choix ---'
+update profiles set role_choisi_le = null where id = '99999999-9999-9999-9999-999999999999';
+select 'TEST 23f role_choisi_le protege' as test,
+       (role_choisi_le is not null) as ok
+from profiles where id = '99999999-9999-9999-9999-999999999999';
+
+reset role;
+
 select 'TEST FIN 02 le fichier est alle jusqu au bout' as test, true as ok;

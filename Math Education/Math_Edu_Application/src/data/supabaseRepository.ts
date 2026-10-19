@@ -55,6 +55,7 @@ interface LigneProfil {
   date_naissance: string | null
   email_parent: string | null
   consentement_parental_at: string | null
+  role_choisi_le: string | null
   partage_progression_prof: boolean
   resume_hebdo_parent: boolean
   rappels_revision: boolean
@@ -73,6 +74,9 @@ function versProfil(ligne: LigneProfil): Profile {
     date_naissance: ligne.date_naissance,
     email_parent: ligne.email_parent,
     consentement_parental_at: ligne.consentement_parental_at,
+    // Absente tant que la migration 0010 n'est pas appliquee : on la traite
+    // comme un role deja choisi, ce qui laisse l'ecran tel qu'avant.
+    role_choisi_le: ligne.role_choisi_le === undefined ? ligne.cree_le : ligne.role_choisi_le,
     cree_le: ligne.cree_le,
     partage_progression_prof: ligne.partage_progression_prof,
     resume_hebdo_parent: ligne.resume_hebdo_parent,

@@ -86,6 +86,8 @@ function profileFromSignUp(input: SignUpInput): Profile {
     date_naissance: null,
     email_parent: null,
     consentement_parental_at: null,
+    // Inscription par email : le role vient du formulaire, il est fixe.
+    role_choisi_le: now,
     cree_le: now,
     partage_progression_prof: true,
     resume_hebdo_parent: false,
@@ -230,7 +232,16 @@ export const mockRepository: DataRepository = {
 
   async completeProfile(completion: ProfileCompletion) {
     const session = exigerSession()
-    const profile: Profile = { ...session.profile, ...completion }
+    // Meme regle que le trigger de la migration 0010 : le role ne se choisit
+    // qu'une fois, et la completion du profil fige ce choix.
+    if (session.profile.role_choisi_le !== null && completion.role !== session.profile.role) {
+      throw new RepositoryError('Le role ne se modifie pas depuis le client', undefined, true)
+    }
+    const profile: Profile = {
+      ...session.profile,
+      ...completion,
+      role_choisi_le: session.profile.role_choisi_le ?? new Date().toISOString(),
+    }
     courante = { ...session, profile }
     persister()
     notifier()
