@@ -61,9 +61,26 @@ function navFor(role: UserRole | undefined): NavItem[] {
   return STUDENT_NAV
 }
 
-export function Wordmark({ className }: { className?: string }) {
+/**
+ * Symbole du logo et nom. Sur fond fonce ou sur photo (`surFonce`), le symbole
+ * garde ses racines blanches ; sur fond clair, elles passent en bleu.
+ */
+export function Wordmark({ className, surFonce = false }: { className?: string; surFonce?: boolean }) {
   return (
-    <span className={cn('font-display text-lg font-semibold leading-none text-ink', className)}>
+    <span
+      className={cn(
+        'inline-flex items-center gap-2 font-display text-lg font-semibold leading-none',
+        surFonce ? 'text-white' : 'text-ink',
+        className,
+      )}
+    >
+      <img
+        src={surFonce ? '/brand/racine-symbole.png' : '/brand/racine-symbole-fond-clair.png'}
+        alt=""
+        width={28}
+        height={28}
+        className="h-[1.6em] w-[1.6em] shrink-0"
+      />
       Racine
     </span>
   )

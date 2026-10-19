@@ -90,7 +90,7 @@ function enHtml(paragraphes: string[], lien: string, bouton: string): string {
   const corps = paragraphes.map((p) => `<p>${echapper(p)}</p>`).join('\n')
   return `<!doctype html><html lang="fr"><body style="font-family:Arial,sans-serif;font-size:15px;line-height:1.5;color:#1f2937">
 ${corps}
-<p><a href="${echapper(lien)}" style="display:inline-block;padding:12px 20px;background:#0B5ED7;color:#ffffff;text-decoration:none;border-radius:8px;font-weight:bold">${echapper(bouton)}</a></p>
+<p><a href="${echapper(lien)}" style="display:inline-block;padding:12px 20px;background:#0265C8;color:#ffffff;text-decoration:none;border-radius:8px;font-weight:bold">${echapper(bouton)}</a></p>
 <p style="font-size:13px;color:#6b7280">Si le bouton ne marche pas, copiez ce lien dans votre navigateur : ${echapper(lien)}</p>
 </body></html>`
 }

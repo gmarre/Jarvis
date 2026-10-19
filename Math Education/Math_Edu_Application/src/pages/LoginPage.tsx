@@ -142,18 +142,29 @@ export default function LoginPage() {
 
   return (
     <div className="flex min-h-full flex-col bg-canvas lg:flex-row">
-      {/* Colonne d'accroche, desktop uniquement */}
-      <aside className="relative hidden w-[46%] max-w-[520px] shrink-0 flex-col justify-between bg-muted p-10 lg:flex">
-        <Wordmark className="text-xl" />
-        <IllustrationPlaceholder />
-        <p className="max-w-[340px] font-display text-[17px] font-medium leading-relaxed text-ink">
+      {/* Colonne d'accroche : bandeau en haut sur mobile, colonne a gauche en
+          desktop. La photo est un decor ; le voile bleu garantit la lisibilite
+          du texte blanc, quelle que soit la photo. */}
+      <aside className="relative flex h-[200px] shrink-0 flex-col justify-between overflow-hidden bg-accent p-5 lg:h-auto lg:w-[46%] lg:max-w-[560px] lg:p-10">
+        <img
+          src="/images/connexion.webp"
+          alt="Des collégiens travaillent leurs mathématiques sur un cahier, à côté d'un téléphone qui affiche leur progression."
+          className="absolute inset-0 h-full w-full object-cover"
+          width={1200}
+          height={655}
+        />
+        <div
+          aria-hidden
+          className="absolute inset-0 bg-gradient-to-b from-accent/90 via-accent/40 to-accent-700/95"
+        />
+        <Wordmark surFonce className="relative text-lg lg:text-xl" />
+        <p className="relative max-w-[360px] font-display text-[15px] font-medium leading-snug text-white lg:text-[19px] lg:leading-relaxed">
           On remonte à la racine de la difficulté, puis on ne travaille que ça.
         </p>
       </aside>
 
       <div className="flex flex-1 items-center justify-center px-5 py-10 sm:px-8">
         <div className="w-full max-w-[400px]">
-          <Wordmark className="mb-6 text-base lg:hidden" />
 
           <h1 className="font-display text-[26px] font-medium leading-tight tracking-[-0.015em] text-ink sm:text-[30px]">
             {mode === 'inscription' ? 'Créer un compte' : 'Se connecter'}
@@ -378,34 +389,6 @@ export default function LoginPage() {
             supprimer le compte à tout moment.
           </p>
         </div>
-      </div>
-    </div>
-  )
-}
-
-/** Emplacement de l'illustration maths, en attendant le visuel definitif. */
-function IllustrationPlaceholder() {
-  return (
-    <div className="relative my-10 flex-1 overflow-hidden rounded-[20px] border border-dashed border-[#C7C3B8]">
-      <svg width="100%" height="100%" className="block">
-        <defs>
-          <pattern
-            id="hatch"
-            width="12"
-            height="12"
-            patternUnits="userSpaceOnUse"
-            patternTransform="rotate(45)"
-          >
-            <rect width="6" height="12" fill="#E7E4DC" />
-            <rect x="6" width="6" height="12" fill="#EFEDE6" />
-          </pattern>
-        </defs>
-        <rect width="100%" height="100%" fill="url(#hatch)" />
-      </svg>
-      <div className="absolute inset-0 flex items-center justify-center">
-        <p className="max-w-[280px] rounded-lg border border-[#DAD6CC] bg-canvas/90 px-3.5 py-2.5 text-center font-mono text-[11.5px] leading-relaxed text-ink-subtle">
-          illustration maths
-        </p>
       </div>
     </div>
   )

@@ -24,6 +24,7 @@ import { RichText } from '@/components/ui/RichText'
 import { useAuthenticatedSession } from '@/state/session'
 import type { Skill } from '@/types/content'
 import type { PlacementResult } from '@/types/domain'
+import { COULEURS } from '@/lib/couleurs'
 
 // Ecran 2 des maquettes : 1d (test en cours) et 1e (resultat).
 //
@@ -241,7 +242,7 @@ function TestTrace({
         if (!skill) return null
         return (
           <li key={`${entry.skillId}-${index}`} className="relative mb-5">
-            <TraceDot color={entry.correct ? '#10B981' : '#EF4444'} />
+            <TraceDot color={entry.correct ? COULEURS.mastered : COULEURS.wrong} />
             <p className="text-[13px] font-semibold leading-snug text-ink">{skill.label}</p>
             <p
               className={cn(
@@ -257,7 +258,7 @@ function TestTrace({
       })}
 
       <li className="relative mb-5">
-        <TraceDot color="#6366F1" />
+        <TraceDot color={COULEURS.accent} />
         <p className="text-[13px] font-semibold leading-snug text-ink">{currentSkill.label}</p>
         <p className="text-[11.5px] leading-relaxed text-accent">
           En cours · <Level value={currentSkill.school_level} />
@@ -265,7 +266,7 @@ function TestTrace({
       </li>
 
       <li className="relative opacity-50">
-        <TraceDot color="#CBD5E1" />
+        <TraceDot color={COULEURS.locked200} />
         <p className="text-[13px] font-semibold leading-snug text-ink">Prérequis en amont</p>
         <p className="text-[11.5px] leading-relaxed text-ink-faint">À tester si besoin</p>
       </li>

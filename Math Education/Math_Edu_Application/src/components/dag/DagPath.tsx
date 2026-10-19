@@ -6,6 +6,7 @@ import { Button } from '@/components/ui/Button'
 import { Level } from '@/components/ui/Misc'
 import { IconCheck } from '@/components/ui/icons'
 import type { PathStep } from '@/lib/dag'
+import { COULEURS } from '@/lib/couleurs'
 
 // Vue DAG, variante B des maquettes (1j) : la meme donnee que le graphe, mais
 // lue de haut en bas. C'est la vue par defaut apres le test.
@@ -52,14 +53,14 @@ export function DagPath({ path, onStart }: DagPathProps) {
 
 function StepDot({ step }: { step: PathStep }) {
   const color = step.isTarget
-    ? '#0F172A'
+    ? COULEURS.ink
     : step.isRootGap
-      ? '#6366F1'
+      ? COULEURS.accent
       : step.status === 'mastered'
-        ? '#10B981'
+        ? COULEURS.mastered
         : step.status === 'in_progress'
-          ? '#F59E0B'
-          : '#CBD5E1'
+          ? COULEURS.progress
+          : COULEURS.locked200
 
   return (
     <span

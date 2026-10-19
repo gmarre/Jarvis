@@ -2,6 +2,7 @@ import { useEffect, useRef } from 'react'
 import { Markmap } from 'markmap-view'
 
 import { parseMindmap } from '@/lib/mindmapTree'
+import { COULEURS } from '@/lib/couleurs'
 
 // Rendu d'une carte mentale.
 //
@@ -13,7 +14,13 @@ import { parseMindmap } from '@/lib/mindmapTree'
 // markmap-view.
 
 /** Profondeur -> couleur de branche. On reste dans la palette Studio Clair. */
-const BRANCH_COLORS = ['#0F172A', '#6366F1', '#10B981', '#F59E0B', '#4338CA']
+const BRANCH_COLORS = [
+  COULEURS.ink,
+  COULEURS.accent,
+  COULEURS.mastered,
+  COULEURS.progress,
+  COULEURS.accent700,
+]
 
 interface MindmapViewProps {
   markdown: string

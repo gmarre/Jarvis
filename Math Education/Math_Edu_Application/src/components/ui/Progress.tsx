@@ -1,4 +1,5 @@
 import { cn } from '@/lib/cn'
+import { COULEURS } from '@/lib/couleurs'
 
 // Barres et anneaux de progression. La couleur suit toujours le meme code que
 // les etats de maitrise : vert quand c'est solide, ambre quand ca progresse.
@@ -61,7 +62,7 @@ export function ProgressRing({ mastered, inProgress, total, size = 92 }: Progres
       style={{
         width: size,
         height: size,
-        background: `conic-gradient(#10B981 0 ${masteredPct}%, #F59E0B ${masteredPct}% ${inProgressPct}%, #E2E0D9 ${inProgressPct}% 100%)`,
+        background: `conic-gradient(${COULEURS.mastered} 0 ${masteredPct}%, ${COULEURS.progress} ${masteredPct}% ${inProgressPct}%, ${COULEURS.line} ${inProgressPct}% 100%)`,
       }}
       role="img"
       aria-label={`${percent}% du niveau maîtrisé, ${mastered} compétences sur ${total}`}

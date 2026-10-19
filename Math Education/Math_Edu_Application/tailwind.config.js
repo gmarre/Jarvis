@@ -25,15 +25,28 @@ export default {
           faint: '#94A3B8', // meta, legendes
         },
 
-        // Accent produit
+        // Accent produit : le bleu du logo (#0265C8), adopte le 19 octobre
+        // 2026 a la place de l'indigo #6366F1. Contrastes : blanc sur accent
+        // 5,7 ; accent sur canvas 5,4 ; accent-700 sur accent-50 7,9 (AA).
+        // L'orange, le jaune, le vert et le bleu ciel du logo ne servent qu'en
+        // decor (jetons brand) : aucun n'atteint 4,5 sur fond blanc.
         accent: {
-          50: '#EEF2FF',
-          100: '#DDD9F7',
-          200: '#C7D2FE',
-          300: '#818CF8',
-          DEFAULT: '#6366F1',
-          600: '#4F46E5',
-          700: '#4338CA',
+          50: '#EAF3FC',
+          100: '#D3E5F8',
+          200: '#A9CDF1',
+          300: '#5C9FE2',
+          DEFAULT: '#0265C8',
+          600: '#0257AD',
+          700: '#034A8F',
+        },
+
+        // Couleurs du logo, decor seulement (jamais pour du texte).
+        brand: {
+          pi: '#F8B810',
+          vert: '#91D94F',
+          orange: '#FC7243',
+          ciel: '#88D0F8',
+          jaune: '#FCD05A',
         },
 
         // Etats de maitrise : le coeur du langage visuel
@@ -74,8 +87,8 @@ export default {
       boxShadow: {
         card: '0 1px 2px rgba(15,23,42,.04), 0 8px 24px rgba(15,23,42,.04)',
         panel: '0 1px 2px rgba(15,23,42,.04), 0 12px 32px rgba(15,23,42,.05)',
-        focus: '0 0 0 4px rgba(99,102,241,.12)',
-        accent: '0 8px 22px rgba(99,102,241,.14)',
+        focus: '0 0 0 4px rgba(2,101,200,.14)',
+        accent: '0 8px 22px rgba(2,101,200,.16)',
       },
       keyframes: {
         'fade-up': {

@@ -20,6 +20,7 @@ import { splitLevel } from '@/lib/format'
 import { IconMinus, IconPlus } from '@/components/ui/icons'
 import type { Skill } from '@/types/content'
 import type { SkillStatus } from '@/types/domain'
+import { COULEURS } from '@/lib/couleurs'
 
 // Vue DAG, variante A des maquettes (1i) : le graphe d'un domaine, range par
 // niveau scolaire. Jamais les 414 competences d'un coup, c'est la regle posee
@@ -172,7 +173,7 @@ function buildLayout(
         type: 'smoothstep',
         animated: highlighted,
         style: {
-          stroke: highlighted ? '#6366F1' : '#CBD5E1',
+          stroke: highlighted ? COULEURS.accent : COULEURS.locked200,
           strokeWidth: highlighted ? 2 : 1.5,
           strokeDasharray: highlighted ? '5 4' : undefined,
         },
@@ -220,7 +221,7 @@ function DagGraphInner({
         proOptions={{ hideAttribution: true }}
         className="bg-surface"
       >
-        <Background variant={BackgroundVariant.Dots} gap={22} size={1} color="#EDEAE3" />
+        <Background variant={BackgroundVariant.Dots} gap={22} size={1} color={COULEURS.divider} />
       </ReactFlow>
 
       {/* Reperes de niveau scolaire, cales sur les rangees. */}
