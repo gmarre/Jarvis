@@ -45,7 +45,7 @@ Vérifie chaque nombre que tu écris, y compris dans les distracteurs et les cor
 
 Autres bornes du programme à respecter :
 - Au cycle 3, **seuls les critères de divisibilité par 2, 5 et 10** sont au programme. Pas par 3, ni par 9.
-- **PGCD, PPCM et décomposition en facteurs premiers n'existent dans aucun programme du collège.** Ne les utilise jamais comme méthode.
+- **PGCD et PPCM n'existent dans aucun programme du collège** : ne les nomme jamais, on cherche des multiples ou des diviseurs communs en listant. La **décomposition en produit de facteurs premiers arrive en 3e** (A025, étape 5), écrite sans puissances avant l'étape 6 ; ne l'emploie jamais comme méthode avant la 3e.
 - La simplification de fraction se fait en repérant un facteur commun, typiquement « numérateur et dénominateur dans une même table de multiplication ».
 
 # Deuxième règle : la progression doit être réelle
