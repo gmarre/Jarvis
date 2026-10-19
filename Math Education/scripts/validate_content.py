@@ -492,7 +492,8 @@ NOTATIONS = {
     "P026": (re.compile(r"³|(?:mm|cm|dm|m)\^\{?3"), "les unites de volume (³)"),
     # Le degre (symbole DEG) est introduit au CM2 a partir de l'angle droit (G022,
     # etape 4b). Ecrit par son code : invisible a la relecture sinon.
-    "G022": (re.compile(chr(176) + r"|\^\{?\\circ"), "le symbole du degre"),
+    # « °C » (temperature, etape 5) n'est pas un angle : le motif l'exclut.
+    "G022": (re.compile(chr(176) + r"(?!\s?C\b)|\^\{?\\circ(?!\}?\s*(?:\\text\{\s*)?C\b)"), "le symbole du degre"),
 }
 
 
