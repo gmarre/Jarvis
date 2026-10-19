@@ -1,4 +1,7 @@
+import { useMemo } from 'react'
+
 import { cn } from '@/lib/cn'
+import { melanger } from '@/lib/melange'
 import { RichText } from '@/components/ui/RichText'
 import type { PublicExercise } from '@/types/content'
 
@@ -35,11 +38,14 @@ export function AnswerInput({
   onSubmit,
 }: AnswerInputProps) {
   const revealed = feedback !== 'none'
+  // Tire une fois par exercice : l'ordre ne doit pas bouger quand l'eleve
+  // clique ou quand la correction s'affiche.
+  const choices = useMemo(() => melanger(exercise.choices ?? []), [exercise.choices])
 
   if (exercise.type === 'qcm') {
     return (
       <div role="radiogroup" aria-label="Réponses possibles" className="grid gap-3 sm:grid-cols-2">
-        {(exercise.choices ?? []).map((choice) => {
+        {choices.map((choice) => {
           const selected = value === choice.key
           const isExpected = choice.key === expectedKey
           return (
