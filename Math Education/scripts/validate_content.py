@@ -909,7 +909,9 @@ def check_position_qcm(exercises: dict) -> None:
 # point B clique sur « B »... qui est une autre proposition, et il est compte
 # faux. L'application affiche la cle en majuscule (AnswerInput.tsx). Releve
 # sur quatre lots de l'etape 4b (geometrie).
-_LETTRE_SEULE = re.compile(r"(?<![A-Za-zÀ-ÿ$\\{])([A-Z])(?![A-Za-zÀ-ÿ'’}-])")
+# Le C de « °C » (temperature, etape 5) n'est pas une lettre citee : le
+# symbole du degre, colle ou suivi d'une espace, l'exclut.
+_LETTRE_SEULE = re.compile(r"(?<![A-Za-zÀ-ÿ$\\{" + chr(176) + r"])(?<!" + chr(176) + r" )([A-Z])(?![A-Za-zÀ-ÿ'’}-])")
 
 
 def check_cles_et_lettres(exercises: dict) -> None:
