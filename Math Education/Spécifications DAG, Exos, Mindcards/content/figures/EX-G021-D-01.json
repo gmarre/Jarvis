@@ -1,0 +1,68 @@
+{
+  "type": "geometrie",
+  "params": {
+    "colonnes": 12,
+    "lignes": 9,
+    "fond": "blanc",
+    "points": {
+      "E": [
+        4,
+        "4.5"
+      ],
+      "F": [
+        7,
+        "4.5"
+      ],
+      "_I": [
+        "5.5",
+        "4.5"
+      ]
+    },
+    "elements": [
+      {
+        "segment": [
+          "E",
+          "F"
+        ]
+      },
+      {
+        "cercle": "E",
+        "passe_par": "F"
+      },
+      {
+        "cercle": "F",
+        "passe_par": "E"
+      },
+      {
+        "cercle": "_I",
+        "passe_par": "E"
+      },
+      {
+        "texte": "1",
+        "position": [
+          "1.2",
+          "1.9"
+        ]
+      },
+      {
+        "texte": "2",
+        "position": [
+          "9.8",
+          "1.9"
+        ]
+      },
+      {
+        "texte": "3",
+        "position": [
+          "5.5",
+          "3.75"
+        ]
+      }
+    ],
+    "etiquettes": {
+      "E": "bas_gauche",
+      "F": "bas_droite"
+    }
+  },
+  "alt": "Un segment et trois cercles numérotés de 1 à 3"
+}

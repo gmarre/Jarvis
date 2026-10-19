@@ -1,0 +1,197 @@
+[
+  {
+    "id": "EX-G011-D-01",
+    "skill_id": "G011",
+    "level": "decouverte",
+    "type": "numerique",
+    "statement": "On veut fabriquer un cube avec cet assemblage de carrés. Combien de carrés pareils faut-il ajouter ?",
+    "image": "figures/EX-G011-D-01",
+    "answer": {
+      "value": 2,
+      "accepted": [
+        "2 carrés",
+        "deux",
+        "deux carrés"
+      ]
+    },
+    "solution_steps": [
+      "Un cube a 6 faces, et ce sont des carrés tous pareils.",
+      "L'assemblage a 4 carrés. On compte à partir de 4 jusqu'à 6 : 5, 6. Il manque **2** carrés.",
+      "On voit où les mettre : les 4 carrés en ligne se replient pour faire le tour du cube. Il reste à fermer le dessus et le dessous, avec un carré de chaque côté de la bande."
+    ],
+    "hint": "Combien de faces a un cube ? Combien de carrés vois-tu ?",
+    "estimated_duration_s": 60,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 2, CE2, Les solides : « L'élève sait dire si un assemblage de polygones est ou non un patron d'un cube en argumentant sur le nombre de faces, la nature des faces et la position des faces les unes par rapport aux autres. »"
+  },
+  {
+    "id": "EX-G011-D-02",
+    "skill_id": "G011",
+    "level": "decouverte",
+    "type": "qcm",
+    "statement": "Lequel de ces assemblages est un patron de cube ?",
+    "image": "figures/EX-G011-D-02",
+    "choices": [
+      {
+        "key": "a",
+        "text": "L'assemblage A",
+        "misconception": "L'élève compte seulement les carrés : A en a bien 6, mais ils sont tous en ligne. En pliant, les 4 premiers font le tour du cube et le cinquième retombe sur le premier : il n'y a ni dessus ni dessous."
+      },
+      {
+        "key": "b",
+        "text": "L'assemblage B",
+        "misconception": null
+      },
+      {
+        "key": "c",
+        "text": "L'assemblage C",
+        "misconception": "L'élève reconnaît la forme d'une croix sans compter les carrés : C n'en a que 5, il manque une face au cube."
+      }
+    ],
+    "answer": {
+      "value": "b"
+    },
+    "solution_steps": [
+      "Un patron de cube a 6 carrés pareils, qui se replient sans se superposer.",
+      "C n'a que 5 carrés : il manque une face.",
+      "A a 6 carrés, mais tous en ligne : quand on plie, le cinquième carré retombe sur le premier, et le sixième sur le deuxième. Le dessus et le dessous restent ouverts.",
+      "B a 6 carrés : les 4 carrés de la colonne font le tour du cube, et les 2 carrés de côté ferment les deux bouts. **B est un patron de cube.**"
+    ],
+    "hint": "Compte les carrés de chaque assemblage, puis imagine que tu les plies.",
+    "estimated_duration_s": 60,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 2, CE2, Les solides : « L'élève sait dire si un assemblage de polygones est ou non un patron d'un cube en argumentant sur le nombre de faces, la nature des faces et la position des faces les unes par rapport aux autres. »"
+  },
+  {
+    "id": "EX-G011-E-01",
+    "skill_id": "G011",
+    "level": "entrainement",
+    "type": "qcm",
+    "statement": "Un seul de ces assemblages n'est **pas** un patron de cube. Lequel ?",
+    "image": "figures/EX-G011-E-01",
+    "choices": [
+      {
+        "key": "a",
+        "text": "L'assemblage A",
+        "misconception": "L'élève croit qu'un patron de cube doit ressembler à une croix. A, en escalier, se plie pourtant en cube : chaque carré se rabat sur une face différente."
+      },
+      {
+        "key": "b",
+        "text": "L'assemblage B",
+        "misconception": "L'élève juge à la forme : B, fait de deux rangées de 3 carrés décalées, ne ressemble pas à une croix, mais il se plie en cube sans superposition."
+      },
+      {
+        "key": "c",
+        "text": "L'assemblage C",
+        "misconception": null
+      }
+    ],
+    "answer": {
+      "value": "c"
+    },
+    "solution_steps": [
+      "Les trois assemblages ont 6 carrés pareils : le nombre et la nature des faces ne suffisent pas, il faut regarder leur position.",
+      "Dans C, quatre carrés forment un grand carré : ils se touchent tous par un même coin. Or un coin de cube ne touche que 3 faces. Quand on plie, deux de ces carrés se superposent.",
+      "A et B ne ressemblent pas à une croix, et pourtant ils se plient en cube : chaque carré ferme une face différente.",
+      "**C n'est pas un patron de cube.**"
+    ],
+    "hint": "Un coin de cube touche combien de faces ? Regarde les carrés qui se touchent par un coin.",
+    "estimated_duration_s": 90,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 2, CE2, Les solides : « L'élève sait dire si un assemblage de polygones est ou non un patron d'un cube en argumentant sur le nombre de faces, la nature des faces et la position des faces les unes par rapport aux autres. »"
+  },
+  {
+    "id": "EX-G011-E-02",
+    "skill_id": "G011",
+    "level": "entrainement",
+    "type": "numerique",
+    "statement": "On plie ce patron pour fabriquer un cube. Quel numéro est sur la face opposée à la face 1, de l'autre côté du cube ?",
+    "image": "figures/EX-G011-E-02",
+    "answer": {
+      "value": 3,
+      "accepted": [
+        "la face 3",
+        "face 3",
+        "trois",
+        "le 3",
+        "numéro 3",
+        "le numéro 3",
+        "c'est le 3"
+      ]
+    },
+    "solution_steps": [
+      "Les 4 carrés de la colonne, 5, 1, 6 et 3, se replient pour faire le tour du cube.",
+      "Dans ce tour, deux faces séparées par une autre se retrouvent face à face : 1 et 3 sont séparées par 6.",
+      "Les faces 5 et 6 touchent la face 1 par un côté : ce sont ses voisines. Les faces 2 et 4 sont accrochées à la face 1 : ce sont aussi ses voisines, et elles se retrouvent face à face entre elles.",
+      "La face opposée à la face 1 porte le numéro **3**."
+    ],
+    "hint": "La face opposée ne touche jamais la face 1. Quelles faces touchent la face 1 quand on plie ?",
+    "estimated_duration_s": 90,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 2, CE2, Les solides : « Construire un cube à partir d'un patron. »"
+  },
+  {
+    "id": "EX-G011-M-01",
+    "skill_id": "G011",
+    "level": "maitrise",
+    "type": "vrai_faux",
+    "statement": "Hugo dit : « Cet assemblage est un patron de cube. » A-t-il raison ?",
+    "image": "figures/EX-G011-M-01",
+    "answer": {
+      "value": false
+    },
+    "solution_steps": [
+      "L'assemblage a 6 carrés pareils, comme les 6 faces d'un cube : cela ne suffit pas, il faut regarder leur position.",
+      "La rangée de 4 carrés se replie pour faire le tour du cube : le premier et le troisième carré de la rangée se retrouvent face à face.",
+      "Les deux carrés du dessus sont accrochés à ces deux carrés-là, du même côté de la rangée : en pliant, ils viennent tous les deux fermer le même côté du cube, l'un sur l'autre.",
+      "Le côté opposé reste ouvert : ce n'est pas un patron de cube. Hugo a **tort**."
+    ],
+    "hint": "Plie dans ta tête la rangée de 4 carrés pour faire un tour. Où vont les deux carrés du dessus ?",
+    "estimated_duration_s": 90,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 2, CE2, Les solides : « L'élève sait dire si un assemblage de polygones est ou non un patron d'un cube en argumentant sur le nombre de faces, la nature des faces et la position des faces les unes par rapport aux autres. »"
+  },
+  {
+    "id": "EX-G011-M-02",
+    "skill_id": "G011",
+    "level": "maitrise",
+    "type": "qcm",
+    "statement": "Il manque un carré à cet assemblage pour avoir un patron de cube. Sur quelle case lettrée faut-il l'ajouter ?",
+    "image": "figures/EX-G011-M-02",
+    "choices": [
+      {
+        "key": "a",
+        "text": "La case A",
+        "misconception": "L'élève complète en faisant un bloc : avec A, quatre carrés se touchent par un même coin, et deux faces se superposent au pliage."
+      },
+      {
+        "key": "b",
+        "text": "La case B",
+        "misconception": "L'élève met les deux carrés du même côté de la rangée. Ils sont accrochés à deux carrés qui se retrouvent face à face dans le tour du cube : en pliant, ils ferment tous les deux le même côté, et le côté opposé reste ouvert."
+      },
+      {
+        "key": "c",
+        "text": "La case C",
+        "misconception": null
+      },
+      {
+        "key": "d",
+        "text": "La case D",
+        "misconception": "L'élève allonge la rangée : avec D, 5 carrés sont en ligne, et le cinquième retombe sur le premier quand on plie."
+      }
+    ],
+    "answer": {
+      "value": "c"
+    },
+    "solution_steps": [
+      "L'assemblage a 5 carrés : il en manque bien un. Il faut choisir sa place pour que les faces ne se superposent pas.",
+      "La rangée de 4 carrés fait le tour du cube. Le carré du dessus ferme un côté ; le dernier carré doit fermer le côté opposé, donc il va en dessous de la rangée.",
+      "Avec A, quatre carrés forment un bloc autour d'un même coin. Avec B, deux carrés ferment le même côté. Avec D, la rangée de 5 carrés se replie sur elle-même.",
+      "Le carré manquant va sur **la case C**."
+    ],
+    "hint": "La rangée de 4 carrés fait le tour du cube. Quel côté reste à fermer ?",
+    "estimated_duration_s": 90,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 2, CE2, Les solides : « L'élève sait dire si un assemblage de polygones est ou non un patron d'un cube en argumentant sur le nombre de faces, la nature des faces et la position des faces les unes par rapport aux autres. »"
+  }
+]

@@ -1,0 +1,177 @@
+[
+  {
+    "id": "EX-G020-D-01",
+    "skill_id": "G020",
+    "level": "decouverte",
+    "type": "numerique",
+    "statement": "Cet assemblage de cubes forme un pavé. Aucun cube ne manque à l'intérieur.\n\nCombien de cubes compte l'étage du bas ?",
+    "image": "figures/EX-G020-D-01",
+    "answer": {
+      "value": 6,
+      "accepted": [
+        "6 cubes",
+        "six",
+        "six cubes"
+      ]
+    },
+    "solution_steps": [
+      "L'assemblage a 2 étages. L'étage du haut se voit en entier : 2 rangées de 3 cubes.",
+      "L'étage du bas porte celui du haut : sous chaque cube du haut, il y a un cube.",
+      "Dans la rangée de derrière, en bas, 2 cubes sont entièrement cachés ; on ne voit que le côté du troisième. Ils sont là quand même, puisqu'ils portent les cubes du haut.",
+      "L'étage du bas compte 2 rangées de 3 cubes : $2 \\times 3 = 6$. Il compte **6 cubes**."
+    ],
+    "hint": "Combien de cubes dans l'étage du haut ? Qu'y a-t-il en dessous de chacun ?",
+    "estimated_duration_s": 45,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 3, CM1, Le repérage dans l'espace : « Résoudre des problèmes portant sur des assemblages de cubes »"
+  },
+  {
+    "id": "EX-G020-D-02",
+    "skill_id": "G020",
+    "level": "decouverte",
+    "type": "qcm",
+    "statement": "Aucun cube ne manque à l'intérieur de cet assemblage.\n\nCombien de cubes compte-t-il en tout ?",
+    "image": "figures/EX-G020-D-02",
+    "choices": [
+      {
+        "key": "a",
+        "text": "10",
+        "misconception": "L'élève compte seulement les cubes qu'il voit. Or 2 cubes sont cachés derrière, à gauche, sous le cube du haut : ils comptent aussi."
+      },
+      {
+        "key": "b",
+        "text": "6",
+        "misconception": "L'élève compte seulement la rangée de devant : 2 colonnes de 3 cubes. Il oublie la rangée de derrière."
+      },
+      {
+        "key": "c",
+        "text": "12",
+        "misconception": null
+      }
+    ],
+    "answer": {
+      "value": "c"
+    },
+    "solution_steps": [
+      "On compte par étages. L'étage du haut se voit en entier : 2 rangées de 2 cubes, soit 4 cubes.",
+      "L'assemblage a 3 étages, et aucun cube ne manque : chaque étage compte aussi 4 cubes, même si certains sont cachés.",
+      "$3 \\times 4 = 12$ : l'assemblage compte **12 cubes**.",
+      "Sur le dessin, on ne voit que 10 cubes : les 2 cubes cachés sont derrière, à gauche, sous les cubes du haut."
+    ],
+    "hint": "Compte les cubes d'un étage, puis le nombre d'étages.",
+    "estimated_duration_s": 60,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 3, CM1, Le repérage dans l'espace : « Résoudre des problèmes portant sur des assemblages de cubes »"
+  },
+  {
+    "id": "EX-G020-E-01",
+    "skill_id": "G020",
+    "level": "entrainement",
+    "type": "numerique",
+    "statement": "Cet assemblage est posé sur une table. Aucun cube ne manque à l'intérieur.\n\nCombien de cubes compte-t-il ?",
+    "image": "figures/EX-G020-E-01",
+    "answer": {
+      "value": 20,
+      "accepted": [
+        "20 cubes",
+        "vingt",
+        "vingt cubes"
+      ]
+    },
+    "solution_steps": [
+      "L'assemblage est un escalier de 4 colonnes, sur 2 rangées : celle de devant et celle de derrière, qui a la même forme.",
+      "On compte la rangée de devant, colonne par colonne : 1 cube, puis 2, puis 3, puis 4. $1 + 2 + 3 + 4 = 10$ cubes.",
+      "La rangée de derrière a la même forme : 10 cubes aussi. $2 \\times 10 = 20$ : l'assemblage compte **20 cubes**.",
+      "Sur le dessin, on n'en voit que 17 : 3 cubes de la rangée de derrière sont cachés par leurs voisins. Ils sont là, puisqu'ils portent les cubes du dessus."
+    ],
+    "hint": "Compte étage par étage, sans oublier la rangée de derrière.",
+    "estimated_duration_s": 90,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 3, CM1, Le repérage dans l'espace : « Résoudre des problèmes portant sur des assemblages de cubes »"
+  },
+  {
+    "id": "EX-G020-E-02",
+    "skill_id": "G020",
+    "level": "entrainement",
+    "type": "vrai_faux",
+    "statement": "Aucun cube ne manque à l'intérieur de cet assemblage. Léo dit : « Il compte 7 cubes. »\n\nLéo a-t-il raison ?",
+    "image": "figures/EX-G020-E-02",
+    "answer": {
+      "value": false
+    },
+    "solution_steps": [
+      "Léo a compté les cubes qu'il voit sur le dessin : il y en a bien 7.",
+      "Mais la rangée de derrière a 2 étages : chaque cube du haut repose sur un cube. Ceux du bas, derrière, sont cachés par la rangée de devant ; on ne voit que le côté de celui de droite.",
+      "Rangée de devant : 3 cubes. Rangée de derrière : 2 étages de 3 cubes, $2 \\times 3 = 6$. En tout, $3 + 6 = 9$ cubes.",
+      "L'assemblage compte 9 cubes : Léo a **tort**, il a oublié 2 cubes cachés."
+    ],
+    "hint": "Sous chaque cube de l'étage du haut, qu'y a-t-il ?",
+    "estimated_duration_s": 60,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 3, CM1, Le repérage dans l'espace : « Résoudre des problèmes portant sur des assemblages de cubes »"
+  },
+  {
+    "id": "EX-G020-M-01",
+    "skill_id": "G020",
+    "level": "maitrise",
+    "type": "numerique",
+    "statement": "Aucun cube ne manque à l'intérieur de cet assemblage. On veut ajouter des cubes, sans en enlever, pour obtenir le plus petit pavé possible.\n\nCombien de cubes faut-il ajouter ?",
+    "image": "figures/EX-G020-M-01",
+    "answer": {
+      "value": 12,
+      "accepted": [
+        "12 cubes",
+        "douze",
+        "douze cubes"
+      ]
+    },
+    "solution_steps": [
+      "L'assemblage a 3 rangées de 4 colonnes. La rangée de derrière a 3 étages : le plus petit pavé possible a donc 3 étages partout.",
+      "On compte les places vides d'une tranche, de derrière à devant : la rangée de derrière est complète, il manque 1 cube à celle du milieu et 2 à celle de devant. $1 + 2 = 3$ cubes par tranche.",
+      "L'assemblage a 4 tranches identiques, une par colonne : $4 \\times 3 = 12$.",
+      "Il faut ajouter **12 cubes**. Les places vides se voient au-dessus des marches ; aucune n'est cachée, puisque aucun cube ne manque à l'intérieur."
+    ],
+    "hint": "Pour chaque rangée, combien d'étages manque-t-il dans chaque colonne ?",
+    "estimated_duration_s": 120,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 3, CM1, Le repérage dans l'espace : « Résoudre des problèmes portant sur des assemblages de cubes »"
+  },
+  {
+    "id": "EX-G020-M-02",
+    "skill_id": "G020",
+    "level": "maitrise",
+    "type": "qcm",
+    "statement": "Cet assemblage est un grand cube. Aucun petit cube ne manque à l'intérieur.\n\nCombien de petits cubes ne voit-on pas du tout sur le dessin ?",
+    "image": "figures/EX-G020-M-02",
+    "choices": [
+      {
+        "key": "a",
+        "text": "8",
+        "misconception": null
+      },
+      {
+        "key": "b",
+        "text": "1",
+        "misconception": "L'élève imagine un seul cube caché, au centre du grand cube. Mais derrière la face de devant, il y a plusieurs cubes cachés à chaque étage, sauf en haut."
+      },
+      {
+        "key": "c",
+        "text": "4",
+        "misconception": "L'élève ne cherche les cubes cachés que dans l'étage du bas, où il y en a 4. L'étage du milieu en cache 4 autres."
+      }
+    ],
+    "answer": {
+      "value": "a"
+    },
+    "solution_steps": [
+      "On voit un petit cube dès qu'on voit une de ses faces : devant, dessus ou à droite.",
+      "On voit donc tous les cubes de la rangée de devant, tous ceux de l'étage du haut, et tous ceux de la colonne de droite.",
+      "Les cubes cachés ne sont dans aucune des trois : 2 rangées (pas celle de devant), 2 colonnes (pas celle de droite), 2 étages (pas celui du haut). $2 \\times 2 \\times 2 = 8$.",
+      "On ne voit pas **8 petits cubes**. Le grand cube en compte $3 \\times 3 \\times 3 = 27$ : on en voit 19, les 8 autres sont cachés."
+    ],
+    "hint": "Un cube caché n'est ni devant, ni en haut, ni à droite.",
+    "estimated_duration_s": 120,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 3, CM1, Le repérage dans l'espace : « Résoudre des problèmes portant sur des assemblages de cubes »"
+  }
+]

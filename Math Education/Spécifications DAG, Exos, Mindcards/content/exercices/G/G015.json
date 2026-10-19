@@ -1,0 +1,185 @@
+[
+  {
+    "id": "EX-G015-D-01",
+    "skill_id": "G015",
+    "level": "decouverte",
+    "type": "texte",
+    "statement": "Un angle est marqué d'un arc sur la figure.\n\nÉcris son nom avec trois lettres.",
+    "image": "figures/EX-G015-D-01",
+    "answer": {
+      "value": "BCD",
+      "accepted": [
+        "DCB",
+        "l'angle BCD",
+        "angle BCD",
+        "l'angle DCB",
+        "angle DCB",
+        "B C D",
+        "D C B"
+      ]
+    },
+    "solution_steps": [
+      "L'arc est dessiné au point C : C est le **sommet** de l'angle, le point d'où partent ses deux côtés.",
+      "Les deux côtés partent de C : l'un va vers B, l'autre vers D.",
+      "Pour nommer un angle, on écrit le sommet au milieu, entre un point de chaque côté : l'angle **BCD**. On peut aussi l'appeler DCB, c'est le même angle.",
+      "« CBD » ne convient pas : la lettre du milieu y est B, ce serait un angle de sommet B. Et l'angle ABC est un autre angle de la ligne brisée, celui de sommet B, qui n'est pas marqué."
+    ],
+    "hint": "Où se trouve le sommet de l'angle marqué ? Quelle place a le sommet dans le nom d'un angle ?",
+    "estimated_duration_s": 40,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 3, CM1, Grandeurs et mesures, Les angles : « Comprendre et utiliser les notations des angles »"
+  },
+  {
+    "id": "EX-G015-D-02",
+    "skill_id": "G015",
+    "level": "decouverte",
+    "type": "qcm",
+    "statement": "Lequel est le plus grand : l'angle MNP ou l'angle RST ?",
+    "image": "figures/EX-G015-D-02",
+    "choices": [
+      {
+        "key": "a",
+        "text": "L'angle RST",
+        "misconception": null
+      },
+      {
+        "key": "b",
+        "text": "L'angle MNP",
+        "misconception": "L'élève compare la longueur des côtés, ou la taille des arcs : ceux de l'angle MNP sont bien plus longs. Mais la grandeur d'un angle, c'est l'écartement de ses côtés, et l'angle MNP est très fermé."
+      },
+      {
+        "key": "c",
+        "text": "On ne peut pas savoir sans les mesurer",
+        "misconception": "L'élève croit qu'il faut une mesure pour comparer deux angles. On compare sans mesurer : à l'œil quand l'écart est net, ou en comparant chaque angle au coin d'une feuille, qui est un angle droit."
+      }
+    ],
+    "answer": {
+      "value": "a"
+    },
+    "solution_steps": [
+      "La grandeur d'un angle, c'est l'écartement entre ses deux côtés, pas la longueur des côtés.",
+      "Les côtés de l'angle MNP sont longs, mais peu écartés : l'angle MNP est plus petit qu'un angle droit.",
+      "Les côtés de l'angle RST sont courts, mais très écartés : l'angle RST est plus grand qu'un angle droit.",
+      "Le plus grand est donc **l'angle RST**. Pour s'en assurer sans mesure, on pose le coin d'une feuille, un angle droit, sur chacun : l'angle MNP tient à l'intérieur du coin, l'angle RST le dépasse."
+    ],
+    "hint": "Regarde l'écartement entre les côtés, pas leur longueur.",
+    "estimated_duration_s": 40,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 3, CM1, Grandeurs et mesures, Les angles : « Comparer des angles »"
+  },
+  {
+    "id": "EX-G015-E-01",
+    "skill_id": "G015",
+    "level": "entrainement",
+    "type": "texte",
+    "statement": "Range les angles 1, 2 et 3 du plus petit au plus grand.\n\nÉcris leurs numéros séparés par des virgules.",
+    "image": "figures/EX-G015-E-01",
+    "answer": {
+      "value": "2, 1, 3",
+      "accepted": [
+        "2,1,3",
+        "2,1, 3",
+        "2, 1,3",
+        "2 ; 1 ; 3",
+        "2;1;3",
+        "2 1 3",
+        "2, 1 et 3",
+        "2 1 et 3",
+        "2-1-3",
+        "2 - 1 - 3",
+        "2 puis 1 puis 3",
+        "2 < 1 < 3"
+      ]
+    },
+    "solution_steps": [
+      "On ne regarde pas la longueur des côtés : l'angle 2 a les côtés les plus longs, l'angle 3 les plus courts. Ce qui compte, c'est l'écartement.",
+      "On compare chaque angle au coin d'une feuille, qui est un angle droit : les angles 1 et 2 sont plus petits qu'un angle droit, l'angle 3 est plus grand. L'angle 3 est donc le plus grand des trois.",
+      "Entre les angles 1 et 2 : les côtés de l'angle 2 sont presque collés, ceux de l'angle 1 bien plus écartés. L'écart se voit à l'œil : l'angle 2 est le plus petit.",
+      "Du plus petit au plus grand : **2, 1, 3**."
+    ],
+    "hint": "Compare d'abord chaque angle au coin d'une feuille, qui est un angle droit.",
+    "estimated_duration_s": 60,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 3, CM1, Grandeurs et mesures, Les angles : « Comparer des angles »"
+  },
+  {
+    "id": "EX-G015-E-02",
+    "skill_id": "G015",
+    "level": "entrainement",
+    "type": "vrai_faux",
+    "statement": "Tom dit : « L'angle AOC est plus grand que l'angle AOB. »\n\nTom a-t-il raison ?",
+    "image": "figures/EX-G015-E-02",
+    "answer": {
+      "value": false
+    },
+    "solution_steps": [
+      "Les deux angles ont le même sommet O et un côté commun, celui qui va de O vers A.",
+      "Le côté qui va de O vers C est **à l'intérieur** de l'angle AOB : l'angle AOC n'est qu'une partie de l'angle AOB.",
+      "Une partie est plus petite que le tout : l'angle AOC est plus petit que l'angle AOB. Tom a **tort**.",
+      "Erreur à éviter : le côté qui va vers C est plus long que celui qui va vers B, mais la longueur des côtés ne dit rien de la grandeur d'un angle. Si on prolonge un côté, l'angle ne change pas."
+    ],
+    "hint": "Le côté qui va de O vers C est-il dans l'angle AOB, ou en dehors ?",
+    "estimated_duration_s": 60,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 3, CM1, Grandeurs et mesures, Les angles : « Comparer des angles »"
+  },
+  {
+    "id": "EX-G015-M-01",
+    "skill_id": "G015",
+    "level": "maitrise",
+    "type": "qcm",
+    "statement": "Quatre segments partent du point O.\n\nLequel est le plus grand : l'angle POR ou l'angle QOS ?",
+    "image": "figures/EX-G015-M-01",
+    "choices": [
+      {
+        "key": "a",
+        "text": "L'angle POR",
+        "misconception": "L'élève se fie à la longueur des côtés : les segments qui vont vers P et vers R sont les plus longs. Mais la longueur des côtés ne dit rien de l'écartement."
+      },
+      {
+        "key": "b",
+        "text": "L'angle QOS",
+        "misconception": null
+      },
+      {
+        "key": "c",
+        "text": "Ils sont aussi grands l'un que l'autre",
+        "misconception": "L'élève voit que les deux angles ont en commun l'angle QOR et s'arrête là. Il faut comparer ce qui dépasse : l'angle POQ d'un côté, l'angle ROS de l'autre, bien plus grand."
+      }
+    ],
+    "answer": {
+      "value": "b"
+    },
+    "solution_steps": [
+      "Les deux angles ont pour sommet O, la lettre du milieu. L'angle POR est entre les côtés qui vont vers P et vers R ; l'angle QOS entre ceux qui vont vers Q et vers S.",
+      "Les deux angles se chevauchent : ils ont en commun l'angle QOR.",
+      "L'angle POR, c'est l'angle QOR avec, en plus, l'angle POQ, très fermé. L'angle QOS, c'est l'angle QOR avec, en plus, l'angle ROS, bien plus ouvert.",
+      "Donc **l'angle QOS** est le plus grand, même si ses côtés sont plus courts. D'ailleurs, l'angle QOS est plus grand qu'un angle droit, et l'angle POR plus petit."
+    ],
+    "hint": "Repère le sommet et les deux côtés de chaque angle. Quelle partie ont-ils en commun ?",
+    "estimated_duration_s": 75,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 3, CM1, Grandeurs et mesures, Les angles : « Comparer des angles »"
+  },
+  {
+    "id": "EX-G015-M-02",
+    "skill_id": "G015",
+    "level": "maitrise",
+    "type": "vrai_faux",
+    "statement": "Inès dit : « Le plus grand angle de ce triangle est l'angle KLM. »\n\nInès a-t-elle raison ?",
+    "image": "figures/EX-G015-M-02",
+    "answer": {
+      "value": true
+    },
+    "solution_steps": [
+      "Dans le nom KLM, la lettre du milieu est le sommet : l'angle KLM est l'angle du triangle de sommet L.",
+      "On compare les trois angles du triangle à un angle droit : en K et en M, les angles sont plus petits ; en L, l'angle est plus grand qu'un angle droit.",
+      "L'angle de sommet L est donc le plus grand : Inès a **raison**.",
+      "Deux pièges : les côtés qui partent de L sont les plus courts du triangle, mais cela ne rend pas l'angle petit ; et l'angle KLM n'est pas l'angle de sommet K, la première lettre."
+    ],
+    "hint": "Quel point est le sommet de l'angle KLM ? Compare ensuite les angles du triangle à un angle droit.",
+    "estimated_duration_s": 60,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 3, CM1, Grandeurs et mesures, Les angles : « Comprendre et utiliser les notations des angles »"
+  }
+]

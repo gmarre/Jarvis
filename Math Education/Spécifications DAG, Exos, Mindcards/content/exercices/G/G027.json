@@ -1,0 +1,174 @@
+[
+  {
+    "id": "EX-G027-D-01",
+    "skill_id": "G027",
+    "level": "decouverte",
+    "type": "numerique",
+    "statement": "Combien mesure l'angle $\\widehat{ACB}$ du triangle ABC, en degrés ?",
+    "image": "figures/EX-G027-D-01",
+    "answer": {
+      "value": 70,
+      "unit": "°",
+      "accepted": [
+        "70°",
+        "70 °",
+        "70 degrés",
+        "70 degré"
+      ]
+    },
+    "solution_steps": [
+      "Dans un triangle, la somme des mesures des trois angles est toujours **180°**.",
+      "On connaît deux angles : $\\widehat{BAC}$ mesure 50° et $\\widehat{ABC}$ mesure 60°. Ensemble : 50 + 60 = 110.",
+      "Le troisième angle complète jusqu'à 180° : 180 − 110 = 70. $\\widehat{ACB}$ mesure **70°**.",
+      "Vérification : 50 + 60 + 70 = 180."
+    ],
+    "hint": "Combien font ensemble les trois angles d'un triangle ?",
+    "estimated_duration_s": 45,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 3, 6e, Espace et géométrie, Triangles : « Connaître la valeur de la somme des mesures des angles d'un triangle »"
+  },
+  {
+    "id": "EX-G027-D-02",
+    "skill_id": "G027",
+    "level": "decouverte",
+    "type": "qcm",
+    "statement": "Combien mesure l'angle $\\widehat{RTS}$ ?",
+    "image": "figures/EX-G027-D-02",
+    "choices": [
+      {
+        "key": "a",
+        "text": "150°",
+        "misconception": "L'élève oublie l'angle droit : il calcule 180 − 30, comme si le triangle n'avait que deux angles. Le petit carré en S compte pour 90°."
+      },
+      {
+        "key": "b",
+        "text": "45°",
+        "misconception": "L'élève croit que les deux angles aigus d'un triangle rectangle mesurent toujours 45°. C'est vrai seulement si le triangle rectangle est aussi isocèle ; ici, l'angle en R mesure 30°."
+      },
+      {
+        "key": "c",
+        "text": "60°",
+        "misconception": null
+      }
+    ],
+    "answer": {
+      "value": "c"
+    },
+    "solution_steps": [
+      "Le petit carré en S code un angle droit : $\\widehat{RST}$ mesure 90°.",
+      "La somme des trois angles du triangle est 180° : 90 + 30 = 120, et 180 − 120 = 60.",
+      "$\\widehat{RTS}$ mesure **60°**.",
+      "À retenir : dans un triangle rectangle, les deux angles aigus font ensemble 90°. Ici, 30 + 60 = 90."
+    ],
+    "hint": "Que signifie le petit carré en S ? Combien font ensemble les trois angles d'un triangle ?",
+    "estimated_duration_s": 45,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 3, 6e, Espace et géométrie, Triangles : « Connaître et utiliser les propriétés angulaires des triangles particuliers : triangle rectangle, triangle isocèle, triangle équilatéral »"
+  },
+  {
+    "id": "EX-G027-E-01",
+    "skill_id": "G027",
+    "level": "entrainement",
+    "type": "numerique",
+    "statement": "Combien mesure l'angle $\\widehat{ABC}$, en degrés ?",
+    "image": "figures/EX-G027-E-01",
+    "answer": {
+      "value": 35,
+      "unit": "°",
+      "accepted": [
+        "35°",
+        "35 °",
+        "35 degrés",
+        "35 degré"
+      ]
+    },
+    "solution_steps": [
+      "Le codage montre que AB = AC : le triangle ABC est **isocèle** en A.",
+      "Dans un triangle isocèle, les deux angles à la base sont égaux : $\\widehat{ABC}$ et $\\widehat{ACB}$ ont la même mesure.",
+      "Ces deux angles se partagent ce qui reste de 180° : 180 − 110 = 70, puis 70 ÷ 2 = 35. $\\widehat{ABC}$ mesure **35°**.",
+      "Vérification : 110 + 35 + 35 = 180. Répondre 70° serait oublier de partager le reste entre les deux angles de la base."
+    ],
+    "hint": "Que dit le codage sur le triangle ? Que sais-tu alors de ses angles ?",
+    "estimated_duration_s": 60,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 3, 6e, Espace et géométrie, Triangles : « Connaître et utiliser les propriétés angulaires des triangles particuliers : triangle rectangle, triangle isocèle, triangle équilatéral »"
+  },
+  {
+    "id": "EX-G027-E-02",
+    "skill_id": "G027",
+    "level": "entrainement",
+    "type": "vrai_faux",
+    "statement": "Hugo dit : « L'angle $\\widehat{DFE}$ mesure 145°. »\n\nHugo a-t-il raison ?",
+    "image": "figures/EX-G027-E-02",
+    "answer": {
+      "value": false
+    },
+    "solution_steps": [
+      "La somme des trois angles du triangle est 180°, et deux angles sont connus : $\\widehat{FDE}$ mesure 25° et $\\widehat{DEF}$ mesure 35°.",
+      "Le bon calcul : 25 + 35 = 60, puis 180 − 60 = 120.",
+      "$\\widehat{DFE}$ mesure 120°, pas 145° : Hugo a **tort**.",
+      "Hugo a fait 180 − 35 = 145 : il a oublié l'angle de 25°. Vérification : 25 + 35 + 120 = 180, alors que 25 + 35 + 145 dépasse 180."
+    ],
+    "hint": "Combien d'angles du triangle sont déjà connus sur la figure ?",
+    "estimated_duration_s": 60,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 3, 6e, Espace et géométrie, Triangles : « L'utiliser pour calculer des angles, effectuer des constructions et résoudre des problèmes »"
+  },
+  {
+    "id": "EX-G027-M-01",
+    "skill_id": "G027",
+    "level": "maitrise",
+    "type": "numerique",
+    "statement": "Les points B, C et D sont alignés.\n\nCombien mesure l'angle $\\widehat{ABC}$, en degrés ?",
+    "image": "figures/EX-G027-M-01",
+    "answer": {
+      "value": 60,
+      "unit": "°",
+      "accepted": [
+        "60°",
+        "60 °",
+        "60 degrés",
+        "60 degré"
+      ]
+    },
+    "solution_steps": [
+      "B, C et D sont alignés : $\\widehat{BCD}$ est un angle plat. $\\widehat{ACB}$ et $\\widehat{ACD}$ sont donc supplémentaires : $\\widehat{ACB}$ mesure 180 − 130 = 50°.",
+      "Dans le triangle ABC, la somme des angles est 180° : 70 + 50 = 120.",
+      "$\\widehat{ABC}$ mesure 180 − 120 = 60 : **60°**.",
+      "Erreur à éviter : prendre 130° pour un angle du triangle. Il est à l'extérieur, entre [CA) et [CD) ; l'angle du triangle en C est son supplémentaire."
+    ],
+    "hint": "L'angle marqué en C est-il un angle du triangle ? Combien mesure l'angle du triangle en C ?",
+    "estimated_duration_s": 90,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 3, 6e, Espace et géométrie, Triangles : « L'utiliser pour calculer des angles, effectuer des constructions et résoudre des problèmes »"
+  },
+  {
+    "id": "EX-G027-M-02",
+    "skill_id": "G027",
+    "level": "maitrise",
+    "type": "numerique",
+    "statement": "Les points B, C et D sont alignés.\n\nCombien mesure l'angle $\\widehat{CAD}$, en degrés ?",
+    "image": "figures/EX-G027-M-02",
+    "answer": {
+      "value": 30,
+      "unit": "°",
+      "accepted": [
+        "30°",
+        "30 °",
+        "30 degrés",
+        "30 degré"
+      ]
+    },
+    "solution_steps": [
+      "Le codage montre AB = BC = CA : le triangle ABC est équilatéral, ses trois angles mesurent 60°. Donc $\\widehat{ACB}$ mesure 60°.",
+      "B, C et D sont alignés : $\\widehat{ACD}$ est le supplémentaire de $\\widehat{ACB}$, 180 − 60 = 120°.",
+      "Le codage montre CA = CD : le triangle ACD est isocèle en C, ses angles à la base $\\widehat{CAD}$ et $\\widehat{CDA}$ sont égaux. Ils se partagent 180 − 120 = 60°, donc chacun mesure 60 ÷ 2 = **30°**.",
+      "Vérification dans le triangle ACD : 120 + 30 + 30 = 180.",
+      "Erreurs à éviter : 60°, en croyant ACD équilatéral alors que AD n'est pas codé ; 120°, qui est l'angle de sommet C."
+    ],
+    "hint": "Commence par le triangle ABC : quelle est sa nature ? Regarde ensuite le triangle ACD.",
+    "estimated_duration_s": 120,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 3, 6e, Espace et géométrie, Triangles : « Connaître et utiliser les propriétés angulaires des triangles particuliers : triangle rectangle, triangle isocèle, triangle équilatéral »"
+  }
+]

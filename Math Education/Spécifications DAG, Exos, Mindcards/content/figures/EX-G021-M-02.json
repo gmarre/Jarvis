@@ -1,0 +1,56 @@
+{
+  "type": "geometrie",
+  "params": {
+    "colonnes": 10,
+    "lignes": 10,
+    "fond": "blanc",
+    "points": {
+      "A": [
+        2,
+        7
+      ],
+      "B": [
+        8,
+        7
+      ],
+      "C": [
+        8,
+        1
+      ],
+      "D": [
+        2,
+        1
+      ],
+      "O": [
+        5,
+        7
+      ]
+    },
+    "elements": [
+      {
+        "polygone": [
+          "A",
+          "B",
+          "C",
+          "D"
+        ]
+      },
+      {
+        "cercle": "O",
+        "passe_par": "A"
+      },
+      {
+        "longueur": [
+          "A",
+          "B"
+        ],
+        "texte": "6 cm"
+      }
+    ],
+    "etiquettes": {
+      "A": "gauche",
+      "B": "droite",
+      "O": "haut"
+    }
+  }
+}

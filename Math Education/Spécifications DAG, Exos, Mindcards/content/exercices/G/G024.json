@@ -1,0 +1,164 @@
+[
+  {
+    "id": "EX-G024-D-01",
+    "skill_id": "G024",
+    "level": "decouverte",
+    "type": "qcm",
+    "statement": "Quelle surface est la symétrique de la surface F par rapport à l'axe ?",
+    "image": "figures/EX-G024-D-01",
+    "choices": [
+      {
+        "key": "a",
+        "text": "La surface 1",
+        "misconception": null
+      },
+      {
+        "key": "b",
+        "text": "La surface 2",
+        "misconception": "L'élève fait glisser F de l'autre côté de l'axe sans la retourner : la surface 2 est orientée exactement comme F, colonne debout et pied à droite."
+      },
+      {
+        "key": "c",
+        "text": "La surface 3",
+        "misconception": "L'élève fait tourner F d'un quart de tour au lieu de la retourner : la rangée est bien horizontale, mais le pied est sous le mauvais bout."
+      }
+    ],
+    "answer": {
+      "value": "a"
+    },
+    "solution_steps": [
+      "L'axe suit une diagonale des carreaux. Le symétrique de F s'obtient en pliant la feuille le long de cet axe : F est retournée, pas seulement déplacée.",
+      "Pour chaque case de F, on va jusqu'à l'axe en traversant les carreaux en biais, perpendiculairement à l'axe, puis on continue d'autant de carreaux de l'autre côté.",
+      "La colonne de trois cases de F devient une rangée de trois cases, et la case du pied, en bas à droite de F, se retrouve sous le bout droit de la rangée.",
+      "C'est **la surface 1**.",
+      "La surface 2 est F déplacée sans être retournée ; la surface 3 est F tournée d'un quart de tour : ni l'une ni l'autre ne se superpose à F par pliage le long de l'axe."
+    ],
+    "hint": "Suis une case de F jusqu'à l'axe en traversant les carreaux en biais, puis continue d'autant de l'autre côté.",
+    "estimated_duration_s": 75,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 3, CM2, La géométrie plane : « Construire, sur papier quadrillé, la figure symétrique d'une figure donnée par rapport à une droite verticale, horizontale ou une diagonale du quadrillage »"
+  },
+  {
+    "id": "EX-G024-D-02",
+    "skill_id": "G024",
+    "level": "decouverte",
+    "type": "texte",
+    "statement": "Quel point est le symétrique du point M par rapport à l'axe ?",
+    "image": "figures/EX-G024-D-02",
+    "answer": {
+      "value": "C",
+      "accepted": [
+        "le point C",
+        "point C"
+      ]
+    },
+    "solution_steps": [
+      "Le symétrique de M est de l'autre côté de l'axe, sur la droite qui passe par M et qui est perpendiculaire à l'axe, à la même distance de l'axe.",
+      "L'axe est horizontal : on descend donc tout droit depuis M, sans aller ni à gauche ni à droite.",
+      "M est à 3 carreaux au-dessus de l'axe. On descend de 3 carreaux jusqu'à l'axe, puis de 3 carreaux sous l'axe.",
+      "On arrive sur **le point C**.",
+      "Le point A est collé trop près de l'axe, à 1 carreau ; le point B est à la bonne distance, mais décalé vers la droite."
+    ],
+    "hint": "Compte les carreaux entre M et l'axe.",
+    "estimated_duration_s": 45,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 3, CM2, La géométrie plane : « Construire, sur papier quadrillé, la figure symétrique d'une figure donnée par rapport à une droite verticale, horizontale ou une diagonale du quadrillage »"
+  },
+  {
+    "id": "EX-G024-E-01",
+    "skill_id": "G024",
+    "level": "entrainement",
+    "type": "vrai_faux",
+    "statement": "Nora affirme que le triangle DEF est le symétrique du triangle ABC par rapport à l'axe. A-t-elle raison ?",
+    "image": "figures/EX-G024-E-01",
+    "answer": {
+      "value": true
+    },
+    "solution_steps": [
+      "On vérifie chaque sommet : son symétrique doit être de l'autre côté de l'axe, sur la perpendiculaire à l'axe, à la même distance.",
+      "L'axe suit la diagonale des carreaux : la perpendiculaire à l'axe traverse les carreaux en biais, un carreau vers la droite et un carreau vers le haut à chaque pas.",
+      "Depuis A, 3 pas en biais mènent en D, et l'axe coupe ce chemin en son milieu. Depuis B, 8 pas mènent en E, l'axe est au 4e pas. Depuis C, 2 pas mènent en F, l'axe est au 1er pas.",
+      "Chaque sommet de DEF est le symétrique d'un sommet de ABC : D de A, E de B, F de C.",
+      "Le triangle DEF est bien le symétrique du triangle ABC : Nora a **raison**."
+    ],
+    "hint": "Pour chaque sommet du triangle ABC, cherche son symétrique en traversant les carreaux en biais.",
+    "estimated_duration_s": 90,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 3, CM2, La géométrie plane : « Construire, sur papier quadrillé, la figure symétrique d'une figure donnée par rapport à une droite verticale, horizontale ou une diagonale du quadrillage »"
+  },
+  {
+    "id": "EX-G024-E-02",
+    "skill_id": "G024",
+    "level": "entrainement",
+    "type": "texte",
+    "statement": "Hugo a voulu tracer le symétrique du quadrilatère ABCD par rapport à l'axe. Il a obtenu EFGH, mais un sommet est mal placé. Lequel ?",
+    "image": "figures/EX-G024-E-02",
+    "answer": {
+      "value": "G",
+      "accepted": [
+        "le sommet G",
+        "sommet G",
+        "le point G",
+        "point G"
+      ]
+    },
+    "solution_steps": [
+      "On cherche le symétrique de chaque sommet de ABCD : on traverse les carreaux en biais jusqu'à l'axe, puis d'autant de l'autre côté.",
+      "Le symétrique de A est E, celui de B est F, celui de D est H : ces trois sommets sont bien placés.",
+      "Depuis C, on fait des pas en biais, un carreau vers la droite et un vers le haut : au 2e pas, on est sur l'axe ; 2 pas de plus, et on est au symétrique de C, 4 carreaux plus à droite et 4 carreaux plus haut que C.",
+      "Le sommet G n'est pas à cet endroit : il est un carreau trop à droite et un carreau trop haut.",
+      "Le sommet mal placé est **G**."
+    ],
+    "hint": "Trouve le symétrique de chaque sommet de ABCD, un par un, et compare avec E, F, G, H.",
+    "estimated_duration_s": 90,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 3, CM2, La géométrie plane : « Construire, sur papier quadrillé, la figure symétrique d'une figure donnée par rapport à une droite verticale, horizontale ou une diagonale du quadrillage »"
+  },
+  {
+    "id": "EX-G024-M-01",
+    "skill_id": "G024",
+    "level": "maitrise",
+    "type": "numerique",
+    "statement": "On veut que la figure soit symétrique par rapport à l'axe. Combien de cases faut-il colorier en plus, au minimum ?",
+    "image": "figures/EX-G024-M-01",
+    "answer": {
+      "value": 3,
+      "accepted": [
+        "3 cases"
+      ]
+    },
+    "solution_steps": [
+      "L'axe suit la diagonale des carreaux. Une case que l'axe traverse d'un coin à l'autre est sa propre symétrique : elle n'a pas besoin de jumelle. La figure en a deux.",
+      "Les autres cases doivent avoir une jumelle de l'autre côté de l'axe, à la même distance.",
+      "Les deux cases collées aux cases de l'axe, l'une au-dessus, l'autre en dessous, sont déjà jumelles l'une de l'autre.",
+      "Les trois cases de droite, au-dessus de l'axe, n'ont pas de jumelle sous l'axe : il en manque 3.",
+      "Il faut colorier **3 cases** de plus. Répondre 5, c'est chercher une jumelle aussi aux deux cases qui sont déjà jumelles l'une de l'autre ; répondre 7, c'est doubler aussi les cases traversées par l'axe."
+    ],
+    "hint": "Commence par repérer les cases que l'axe coupe d'un coin à l'autre : ont-elles besoin d'une jumelle ?",
+    "estimated_duration_s": 120,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 3, CM2, La géométrie plane : « Construire, sur papier quadrillé, la figure symétrique d'une figure donnée par rapport à une droite verticale, horizontale ou une diagonale du quadrillage »"
+  },
+  {
+    "id": "EX-G024-M-02",
+    "skill_id": "G024",
+    "level": "maitrise",
+    "type": "vrai_faux",
+    "statement": "Sami affirme : « Le point N est le symétrique du point M par rapport à l'axe. » A-t-il raison ?",
+    "image": "figures/EX-G024-M-02",
+    "answer": {
+      "value": false
+    },
+    "solution_steps": [
+      "Le symétrique d'un point est sur la droite qui passe par ce point et qui est perpendiculaire à l'axe.",
+      "Sami a sans doute compté les carreaux vers la droite jusqu'à l'axe (4), puis autant après l'axe : il a avancé horizontalement. Cela marche quand l'axe est vertical, mais ici l'axe suit une diagonale des carreaux.",
+      "La droite (MN) est horizontale : elle n'est pas perpendiculaire à l'axe en diagonale. N ne peut pas être le symétrique de M.",
+      "Pour un axe en diagonale, on fait des pas en biais, un carreau vers la droite et un vers le haut : depuis M, 2 pas mènent à l'axe, 2 de plus au symétrique, 4 carreaux plus à droite et 4 carreaux plus haut que M.",
+      "Sami a **tort** : N n'est pas le symétrique de M."
+    ],
+    "hint": "La droite (MN) est-elle perpendiculaire à l'axe ?",
+    "estimated_duration_s": 90,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 3, CM2, La géométrie plane : « Construire, sur papier quadrillé, la figure symétrique d'une figure donnée par rapport à une droite verticale, horizontale ou une diagonale du quadrillage »"
+  }
+]

@@ -1,0 +1,52 @@
+{
+  "type": "geometrie",
+  "params": {
+    "colonnes": 11,
+    "lignes": 10,
+    "fond": "quadrille",
+    "points": {
+      "E": [
+        2,
+        1
+      ],
+      "F": [
+        6,
+        1
+      ],
+      "G": [
+        6,
+        5
+      ],
+      "H": [
+        2,
+        5
+      ]
+    },
+    "elements": [
+      {
+        "polygone": [
+          "E",
+          "F",
+          "G",
+          "H"
+        ]
+      },
+      {
+        "segment": [
+          "F",
+          "H"
+        ]
+      },
+      {
+        "cercle": "G",
+        "passe_par": "H"
+      }
+    ],
+    "etiquettes": {
+      "E": "haut_gauche",
+      "F": "haut_droite",
+      "G": "bas_droite",
+      "H": "bas_gauche"
+    }
+  }
+}

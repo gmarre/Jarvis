@@ -1,0 +1,110 @@
+{
+  "type": "geometrie",
+  "params": {
+    "colonnes": 12,
+    "lignes": 10,
+    "points": {
+      "R": [
+        2,
+        5
+      ],
+      "S": [
+        6,
+        1
+      ],
+      "T": [
+        "8.4",
+        "8.2"
+      ],
+      "A": [
+        6,
+        5
+      ],
+      "B": [
+        "4.8",
+        "5.4"
+      ],
+      "C": [
+        "5.2",
+        "6.6"
+      ],
+      "_K": [
+        4,
+        3
+      ],
+      "_L": [
+        "7.2",
+        "4.6"
+      ]
+    },
+    "etiquettes": {
+      "A": "haut",
+      "B": "bas",
+      "C": "bas_gauche"
+    },
+    "elements": [
+      {
+        "polygone": [
+          "R",
+          "S",
+          "T"
+        ]
+      },
+      {
+        "droite": [
+          "_K",
+          "A"
+        ],
+        "style": "pointille"
+      },
+      {
+        "droite": [
+          "_L",
+          "A"
+        ],
+        "style": "pointille"
+      },
+      {
+        "angle_droit": [
+          "A",
+          "_K",
+          "S"
+        ]
+      },
+      {
+        "angle_droit": [
+          "A",
+          "_L",
+          "T"
+        ]
+      },
+      {
+        "codage": [
+          [
+            "R",
+            "_K"
+          ],
+          [
+            "_K",
+            "S"
+          ]
+        ],
+        "marque": 1
+      },
+      {
+        "codage": [
+          [
+            "S",
+            "_L"
+          ],
+          [
+            "_L",
+            "T"
+          ]
+        ],
+        "marque": 2
+      }
+    ]
+  },
+  "alt": "Triangle RST, deux droites en pointillés et les points A, B, C"
+}

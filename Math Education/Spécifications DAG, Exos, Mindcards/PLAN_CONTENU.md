@@ -32,7 +32,7 @@ domaines à moitié faits.
 | 3 | E Proportionnalité et pourcentages | CM1 → 5e | Fait le 5 octobre 2026 : 17 compétences E et B043, 108 exercices, 4 cartes (bilan dans `QUALITY.md`) |
 | 4a | P Grandeurs et mesures (domaine ouvert, lettre P) | CP → 6e | Fait le 14 octobre 2026 : 27 compétences (dont 5 à figure), 132 exercices, 6 cartes |
 | Figures | Reprises et compétences à figure | CP → CM1 | Fait le 14 octobre 2026 : 30 exercices repris, 31 nouveaux (P001, P004, P007, P013, P017), 61 figures |
-| **4b** | **G Géométrie plane** | CP → 6e | Prochaine : demande des générateurs de géométrie (segments, polygones, angles) |
+| 4b | G Espace et géométrie | CP → 6e | Fait le 19 octobre 2026 : 30 compétences, 180 exercices (tous à figure), 6 cartes |
 | 5+ | Statistiques, probabilités, algèbre, puissances | Cycle 4 | À faire |
 
 ## Le circuit d'une étape
@@ -59,7 +59,9 @@ domaines à moitié faits.
    ```
    Les consignes de l'étape 3, les plus complètes (cartographe, rédacteurs,
    relecteurs : `modeles_agents/consigne_*_etape3.md`), servent de modèle aux
-   suivantes. Celles de l'étape 1 restent disponibles :
+   suivantes ; pour un domaine à figures, prendre celles de l'étape 4b
+   (`modeles_agents/consigne_*_etape4b.md`), qui portent les règles des figures
+   tirées des relectures. Celles de l'étape 1 restent disponibles :
    `modeles_agents/consigne_redacteurs_etape1.md` et
    `modeles_agents/consigne_relecteurs_etape1.md` (à recopier dans `_travail/`
    et adapter au domaine).

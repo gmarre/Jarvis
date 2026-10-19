@@ -1,0 +1,183 @@
+[
+  {
+    "id": "EX-G013-D-01",
+    "skill_id": "G013",
+    "level": "decouverte",
+    "type": "qcm",
+    "statement": "Le point O est le centre du cercle. Lequel de ces segments est un diamètre du cercle ?",
+    "image": "figures/EX-G013-D-01",
+    "choices": [
+      {
+        "key": "a",
+        "text": "Le segment [OR]",
+        "misconception": "L'élève confond rayon et diamètre : le segment [OR] part bien du centre, mais il va seulement du centre jusqu'au cercle. C'est un rayon ; un diamètre traverse tout le cercle."
+      },
+      {
+        "key": "b",
+        "text": "Le segment [UV]",
+        "misconception": "L'élève voit les deux bouts du segment [UV] posés sur le cercle et s'arrête là. Mais le segment [UV] ne passe pas par le centre O : ce n'est pas un diamètre."
+      },
+      {
+        "key": "c",
+        "text": "Le segment [ST]",
+        "misconception": null
+      }
+    ],
+    "answer": {
+      "value": "c"
+    },
+    "solution_steps": [
+      "On regarde d'abord le centre O : un diamètre passe par le centre, et ses deux bouts sont sur le cercle.",
+      "Le segment [OR] part du centre et s'arrête sur le cercle en R : il ne traverse pas le cercle, c'est un rayon.",
+      "Le segment [UV] a ses deux bouts sur le cercle, mais il passe à côté du centre O : ce n'est pas un diamètre.",
+      "Le segment [ST] va de S à T, deux points du cercle, en passant par le centre O : c'est **un diamètre**.",
+      "Un diamètre est fait de deux rayons mis bout à bout : de S jusqu'à O, puis de O jusqu'à T."
+    ],
+    "hint": "Cherche le segment qui traverse tout le cercle en passant par le point O.",
+    "estimated_duration_s": 45,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 2, CE2, La géométrie plane : « disque, cercle, centre, rayon, diamètre »"
+  },
+  {
+    "id": "EX-G013-D-02",
+    "skill_id": "G013",
+    "level": "decouverte",
+    "type": "numerique",
+    "statement": "Le point O est le centre du cercle. Combien de centimètres mesure le segment [BC] ?",
+    "image": "figures/EX-G013-D-02",
+    "answer": {
+      "value": 6,
+      "unit": "cm",
+      "accepted": [
+        "6 cm",
+        "6 centimètres"
+      ]
+    },
+    "solution_steps": [
+      "Le segment [OA] va du centre jusqu'au cercle : c'est un rayon. On lit sur la figure qu'il mesure 3 cm.",
+      "Le segment [BC] va d'un point du cercle à un autre en passant par le centre O : c'est un diamètre.",
+      "Un diamètre, c'est deux rayons bout à bout : de B jusqu'à O, puis de O jusqu'à C. Il mesure deux fois le rayon.",
+      "2 × 3 = 6 : le segment [BC] mesure **6 cm**.",
+      "Répondre 3 cm, c'est confondre le diamètre avec le rayon."
+    ],
+    "hint": "Le segment [BC] passe par le centre. Combien de rayons met-on bout à bout pour aller de B à C ?",
+    "estimated_duration_s": 45,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 2, CE2, La géométrie plane : « disque, cercle, centre, rayon, diamètre »"
+  },
+  {
+    "id": "EX-G013-E-01",
+    "skill_id": "G013",
+    "level": "entrainement",
+    "type": "numerique",
+    "statement": "Le point O est le centre du cercle. Combien de centimètres mesure le segment [OC] ?",
+    "image": "figures/EX-G013-E-01",
+    "answer": {
+      "value": 5,
+      "unit": "cm",
+      "accepted": [
+        "5 cm",
+        "5 centimètres"
+      ]
+    },
+    "solution_steps": [
+      "Le segment [AB] passe par le centre O et ses bouts sont sur le cercle : c'est un diamètre. Il mesure 10 cm.",
+      "Le segment [OC] va du centre jusqu'au cercle : c'est un rayon.",
+      "Le diamètre mesure deux fois le rayon. On cherche donc le nombre qui, pris deux fois, donne 10 : 2 × 5 = 10.",
+      "On peut aussi le voir sur le diamètre : de A jusqu'à O, il y a un rayon, de O jusqu'à B, un autre rayon. 10 cm partagés en 2 parts égales, cela fait 5 cm chacune.",
+      "Le segment [OC] mesure **5 cm**. Répondre 20 cm, c'est doubler au lieu de prendre la moitié."
+    ],
+    "hint": "Le segment [OC] est-il un rayon ou un diamètre ? Et le segment [AB] ?",
+    "estimated_duration_s": 60,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 2, CE2, La géométrie plane : « disque, cercle, centre, rayon, diamètre »"
+  },
+  {
+    "id": "EX-G013-E-02",
+    "skill_id": "G013",
+    "level": "entrainement",
+    "type": "vrai_faux",
+    "statement": "Le point O est le centre du cercle. Tom dit : « Le segment [BC] est deux fois plus long que le segment [OA]. » A-t-il raison ?",
+    "image": "figures/EX-G013-E-02",
+    "answer": {
+      "value": true
+    },
+    "solution_steps": [
+      "Le segment [OA] va du centre O jusqu'au point A du cercle : c'est un rayon.",
+      "Le segment [BC] va de B à C, deux points du cercle, en passant par le centre O : c'est un diamètre.",
+      "Le segment [BC] est fait de deux rayons bout à bout : le segment [BO] et le segment [OC].",
+      "Tous les rayons d'un même cercle ont la même longueur : le segment [BO], le segment [OC] et le segment [OA] sont aussi longs.",
+      "Donc le segment [BC] est bien deux fois plus long que le segment [OA] : Tom a **raison**, même si les deux segments ne sont pas tracés dans le même sens."
+    ],
+    "hint": "Lequel de ces deux segments est un rayon ? Lequel est un diamètre ?",
+    "estimated_duration_s": 60,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 2, CE2, La géométrie plane : « disque, cercle, centre, rayon, diamètre »"
+  },
+  {
+    "id": "EX-G013-M-01",
+    "skill_id": "G013",
+    "level": "maitrise",
+    "type": "qcm",
+    "statement": "Les trois cercles ont le même rayon. Chaque cercle touche le suivant. Combien mesure le segment [AB] ?",
+    "image": "figures/EX-G013-M-01",
+    "choices": [
+      {
+        "key": "a",
+        "text": "6 cm",
+        "misconception": "L'élève compte un rayon par cercle : 3 × 2 = 6. Mais le segment [AB] traverse chaque cercle en entier, en passant par le centre : dans chaque cercle, il mesure un diamètre, deux rayons."
+      },
+      {
+        "key": "b",
+        "text": "12 cm",
+        "misconception": null
+      },
+      {
+        "key": "c",
+        "text": "8 cm",
+        "misconception": "L'élève mesure du centre O au centre Q : deux diamètres, 4 + 4 = 8. Mais le segment [AB] commence en A, avant O, et finit en B, après Q : il faut ajouter un rayon de chaque côté."
+      }
+    ],
+    "answer": {
+      "value": "b"
+    },
+    "solution_steps": [
+      "On lit sur la figure le rayon d'un cercle : 2 cm.",
+      "Le diamètre d'un cercle mesure deux fois le rayon : 2 × 2 = 4. Chaque diamètre mesure 4 cm.",
+      "Le segment [AB] traverse les trois cercles en passant par leurs centres O, P et Q : il est fait de trois diamètres mis bout à bout.",
+      "3 × 4 = 12 : le segment [AB] mesure **12 cm**.",
+      "On peut aussi compter les rayons : de A jusqu'à B, il y en a 6, et 6 × 2 = 12."
+    ],
+    "hint": "Le segment [AB] traverse chaque cercle en passant par son centre : combien mesure un diamètre ?",
+    "estimated_duration_s": 90,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 2, CE2, La géométrie plane : « disque, cercle, centre, rayon, diamètre »"
+  },
+  {
+    "id": "EX-G013-M-02",
+    "skill_id": "G013",
+    "level": "maitrise",
+    "type": "numerique",
+    "statement": "Les deux cercles ont un diamètre de 6 cm. Chacun passe par le centre de l'autre. Combien de centimètres mesure le segment [CD] ?",
+    "image": "figures/EX-G013-M-02",
+    "answer": {
+      "value": 9,
+      "unit": "cm",
+      "accepted": [
+        "9 cm",
+        "9 centimètres"
+      ]
+    },
+    "solution_steps": [
+      "Chaque cercle a un diamètre de 6 cm. Le rayon est la moitié du diamètre : 2 × 3 = 6, donc le rayon mesure 3 cm.",
+      "Le segment [CA] va du point C du cercle jusqu'à son centre A : c'est un rayon, 3 cm.",
+      "Le cercle de centre A passe par B : le segment [AB] va du centre jusqu'au cercle, c'est aussi un rayon, 3 cm.",
+      "Le segment [BD] va du centre B jusqu'au point D de l'autre cercle : encore un rayon, 3 cm.",
+      "3 + 3 + 3 = 9 : le segment [CD] mesure **9 cm**. Répondre 12 cm, c'est mettre deux diamètres bout à bout, alors que les deux cercles se chevauchent."
+    ],
+    "hint": "Découpe le segment [CD] en morceaux qui vont d'un point à un centre. Combien mesure chaque morceau ?",
+    "estimated_duration_s": 120,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 2, CE2, La géométrie plane : « disque, cercle, centre, rayon, diamètre »"
+  }
+]

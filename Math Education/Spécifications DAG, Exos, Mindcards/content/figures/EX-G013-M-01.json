@@ -1,0 +1,75 @@
+{
+  "type": "geometrie",
+  "params": {
+    "colonnes": 12,
+    "lignes": 6,
+    "points": {
+      "A": [
+        "0.6",
+        3
+      ],
+      "O": [
+        "2.4",
+        3
+      ],
+      "P": [
+        6,
+        3
+      ],
+      "Q": [
+        "9.6",
+        3
+      ],
+      "B": [
+        "11.4",
+        3
+      ],
+      "_R": [
+        6,
+        "1.2"
+      ]
+    },
+    "etiquettes": {
+      "A": "gauche",
+      "B": "droite",
+      "O": "bas",
+      "P": "bas",
+      "Q": "bas"
+    },
+    "elements": [
+      {
+        "cercle": "O",
+        "rayon": "1.8"
+      },
+      {
+        "cercle": "P",
+        "rayon": "1.8"
+      },
+      {
+        "cercle": "Q",
+        "rayon": "1.8"
+      },
+      {
+        "segment": [
+          "A",
+          "B"
+        ],
+        "couleur": "accent"
+      },
+      {
+        "segment": [
+          "P",
+          "_R"
+        ]
+      },
+      {
+        "longueur": [
+          "P",
+          "_R"
+        ],
+        "texte": "2 cm"
+      }
+    ]
+  },
+  "alt": "Trois cercles de centres O, P et Q, avec un segment AB et une longueur écrite"
+}

@@ -1,0 +1,104 @@
+{
+  "type": "geometrie",
+  "params": {
+    "colonnes": 12,
+    "lignes": 10,
+    "points": {
+      "_P": [
+        1,
+        10
+      ],
+      "_Q": [
+        11,
+        0
+      ],
+      "M": [
+        3,
+        4
+      ],
+      "_H": [
+        5,
+        6
+      ],
+      "C": [
+        7,
+        8
+      ],
+      "A": [
+        8,
+        9
+      ],
+      "_J": [
+        7,
+        4
+      ],
+      "B": [
+        11,
+        4
+      ]
+    },
+    "etiquettes": {
+      "M": "haut_gauche",
+      "A": "droite",
+      "C": "gauche",
+      "B": "haut"
+    },
+    "elements": [
+      {
+        "axe": [
+          "_P",
+          "_Q"
+        ],
+        "nom": "(d)"
+      },
+      {
+        "segment": [
+          "M",
+          "A"
+        ],
+        "style": "pointille"
+      },
+      {
+        "segment": [
+          "M",
+          "B"
+        ],
+        "style": "pointille"
+      },
+      {
+        "angle_droit": [
+          "M",
+          "_H",
+          "_Q"
+        ]
+      },
+      {
+        "codage": [
+          [
+            "M",
+            "_H"
+          ],
+          [
+            "_H",
+            "C"
+          ]
+        ],
+        "marque": 1
+      },
+      {
+        "codage": [
+          [
+            "M",
+            "_J"
+          ],
+          [
+            "_J",
+            "B"
+          ]
+        ],
+        "marque": 2
+      }
+    ]
+  },
+  "alt": "Droite (d), point M et trois points A, B, C"
+}

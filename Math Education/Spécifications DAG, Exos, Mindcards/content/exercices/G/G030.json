@@ -1,0 +1,186 @@
+[
+  {
+    "id": "EX-G030-D-01",
+    "skill_id": "G030",
+    "level": "decouverte",
+    "type": "qcm",
+    "statement": "Quel point est le symétrique du point M par rapport à la droite (d) ?",
+    "image": "figures/EX-G030-D-01",
+    "choices": [
+      {
+        "key": "a",
+        "text": "Le point A",
+        "misconception": "L'élève vérifie l'angle droit mais pas les distances : A est bien sur la perpendiculaire à (d) passant par M, mais il est plus loin de (d) que M."
+      },
+      {
+        "key": "b",
+        "text": "Le point B",
+        "misconception": "L'élève reporte la même distance de l'autre côté de (d), mais horizontalement : le segment [MB] n'est pas perpendiculaire à (d)."
+      },
+      {
+        "key": "c",
+        "text": "Le point C",
+        "misconception": null
+      }
+    ],
+    "answer": {
+      "value": "c"
+    },
+    "solution_steps": [
+      "Le symétrique de M par rapport à (d) est le point M' tel que (d) soit la médiatrice du segment [MM'] : [MM'] est perpendiculaire à (d) et (d) le coupe en son milieu.",
+      "Le segment qui va de M à C coupe (d) avec un angle droit (codage), et les deux morceaux portent le même codage : (d) le coupe en son milieu.",
+      "Le point C remplit les deux conditions : c'est **le point C**.",
+      "Le point A est sur la même perpendiculaire, mais plus loin : (d) ne coupe pas le segment [MA] en son milieu.",
+      "Le point B est à la même distance de (d) le long d'un trajet horizontal, mais [MB] n'est pas perpendiculaire à (d)."
+    ],
+    "hint": "Pour chaque point, regarde les deux conditions : angle droit avec (d), et milieu sur (d).",
+    "estimated_duration_s": 60,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 3, 6e, Symétrie axiale : « Connaître la définition du symétrique d'un point par rapport à une droite »"
+  },
+  {
+    "id": "EX-G030-D-02",
+    "skill_id": "G030",
+    "level": "decouverte",
+    "type": "numerique",
+    "statement": "Le point M' est le symétrique du point M par rapport à la droite (d). Combien de centimètres mesure le segment [MM'] ?",
+    "image": "figures/EX-G030-D-02",
+    "answer": {
+      "value": 7,
+      "unit": "cm",
+      "accepted": [
+        "7 cm",
+        "7 centimètres"
+      ]
+    },
+    "solution_steps": [
+      "Par définition du symétrique, (d) est la médiatrice du segment [MM'] : elle le coupe perpendiculairement en son milieu H.",
+      "Donc MH = HM' : on lit MH = 3,5 cm.",
+      "MM' = MH + HM' = 3,5 + 3,5 = 7.",
+      "Le segment [MM'] mesure **7 cm**. Répondre 3,5 cm, c'est confondre la distance de M à (d) avec la longueur du segment [MM']."
+    ],
+    "hint": "Que représente la droite (d) pour le segment [MM'] ?",
+    "estimated_duration_s": 45,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 3, 6e, Symétrie axiale : « Connaître la définition du symétrique d'un point par rapport à une droite »"
+  },
+  {
+    "id": "EX-G030-E-01",
+    "skill_id": "G030",
+    "level": "entrainement",
+    "type": "numerique",
+    "statement": "Le triangle A'B'C' est le symétrique du triangle ABC par rapport à la droite (d). Quel est le périmètre du triangle ABC, en centimètres ?",
+    "image": "figures/EX-G030-E-01",
+    "answer": {
+      "value": 12.6,
+      "unit": "cm",
+      "accepted": [
+        "12,6 cm",
+        "12,6 centimètres",
+        "12 cm 6 mm",
+        "126 mm"
+      ]
+    },
+    "solution_steps": [
+      "Sur le triangle ABC, on lit AB = 4,2 cm et AC = 3,9 cm. La longueur BC n'est pas écrite.",
+      "La symétrie axiale conserve les longueurs : le segment [BC] et son symétrique [B'C'] ont la même longueur. On lit B'C' = 4,5 cm, donc BC = 4,5 cm.",
+      "Périmètre du triangle ABC : AB + BC + AC = 4,2 + 4,5 + 3,9 = 12,6.",
+      "Le périmètre est **12,6 cm**.",
+      "Additionner toutes les longueurs écrites donne 16,8 cm : le segment [A'B'] est un côté du triangle A'B'C', pas du triangle ABC."
+    ],
+    "hint": "Quelle longueur de ABC manque ? Où peut-on la lire sur l'autre triangle ?",
+    "estimated_duration_s": 90,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 3, 6e, Symétrie axiale : « Connaître et utiliser les propriétés de la symétrie axiale pour effectuer des constructions »"
+  },
+  {
+    "id": "EX-G030-E-02",
+    "skill_id": "G030",
+    "level": "entrainement",
+    "type": "vrai_faux",
+    "statement": "Yanis dit : « Le triangle DEF est le symétrique du triangle ABC par rapport à la droite (d). » A-t-il raison ?",
+    "image": "figures/EX-G030-E-02",
+    "answer": {
+      "value": false
+    },
+    "solution_steps": [
+      "Pour vérifier, on regarde chaque sommet : son symétrique doit être à la même distance de (d), de l'autre côté, sur la perpendiculaire à (d).",
+      "B est à 3 carreaux de (d) ; E est à 3 carreaux de l'autre côté, à la même hauteur : E est bien le symétrique de B.",
+      "A est à 1 carreau de (d) : son symétrique est à 1 carreau de l'autre côté. Or D est à 5 carreaux de (d). Même chose pour C et F.",
+      "DEF est le triangle ABC glissé de 6 carreaux vers la droite, sans être retourné : le côté [AC], tout près de (d), devient [DF], loin de (d). Son symétrique devrait rester tout près de (d).",
+      "Yanis a **tort** : un seul sommet bien placé ne suffit pas."
+    ],
+    "hint": "Vérifie les trois sommets, pas seulement un.",
+    "estimated_duration_s": 75,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 3, 6e, Symétrie axiale : « Connaître et utiliser les propriétés de la symétrie axiale pour effectuer des constructions »"
+  },
+  {
+    "id": "EX-G030-M-01",
+    "skill_id": "G030",
+    "level": "maitrise",
+    "type": "numerique",
+    "statement": "Le point A' est le symétrique du point A par rapport à la droite (d). Quel est le périmètre du triangle PAA', en centimètres ?",
+    "image": "figures/EX-G030-M-01",
+    "answer": {
+      "value": 9.6,
+      "unit": "cm",
+      "accepted": [
+        "9,6 cm",
+        "9,6 centimètres",
+        "9 cm 6 mm",
+        "96 mm"
+      ]
+    },
+    "solution_steps": [
+      "A' est le symétrique de A : (d) est la médiatrice du segment [AA'], elle le coupe perpendiculairement en son milieu H.",
+      "Donc AA' = 2 × AH = 2 × 1,8 = 3,6 cm.",
+      "P est sur (d), la médiatrice de [AA'] : il est à égale distance de A et de A'. Donc PA' = PA = 3 cm. (On peut aussi dire : le symétrique de P est P lui-même, celui de A est A', et la symétrie conserve les longueurs.)",
+      "Périmètre du triangle PAA' : PA + PA' + AA' = 3 + 3 + 3,6 = 9,6.",
+      "Le périmètre est **9,6 cm**. Prendre AA' = 1,8 cm donne 7,8 cm : c'est oublier que H est le milieu de [AA']."
+    ],
+    "hint": "Que représente (d) pour le segment [AA'] ? Qu'en déduit-on pour H, puis pour le point P ?",
+    "estimated_duration_s": 120,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 3, 6e, Symétrie axiale : « Connaître et utiliser les propriétés de la symétrie axiale pour effectuer des constructions »"
+  },
+  {
+    "id": "EX-G030-M-02",
+    "skill_id": "G030",
+    "level": "maitrise",
+    "type": "qcm",
+    "statement": "Quel est le symétrique du point B par rapport à la droite (d) ?",
+    "image": "figures/EX-G030-M-02",
+    "choices": [
+      {
+        "key": "a",
+        "text": "Le point A",
+        "misconception": "L'élève croit que le symétrique est toujours un autre point, de l'autre côté. A est sur la perpendiculaire à (d) passant par B, mais B n'est d'aucun côté de (d) : il est dessus."
+      },
+      {
+        "key": "b",
+        "text": "Le point B",
+        "misconception": null
+      },
+      {
+        "key": "c",
+        "text": "Il n'en a pas.",
+        "misconception": "L'élève pense qu'un point de l'axe n'a pas de symétrique. Or tout point a un symétrique ; pour un point de l'axe, c'est lui-même."
+      }
+    ],
+    "answer": {
+      "value": "b"
+    },
+    "solution_steps": [
+      "Sur la figure, M' est le symétrique de M : [MM'] est perpendiculaire à (d), et (d) le coupe en son milieu. Plus M est près de (d), plus M' l'est aussi.",
+      "Le point B est sur la droite (d) : sa distance à (d) est nulle.",
+      "Son symétrique est donc aussi à une distance nulle de (d), sur la perpendiculaire à (d) passant par B : c'est B lui-même.",
+      "Le symétrique de B est **le point B** lui-même : il ne bouge pas quand on plie le long de (d).",
+      "Tous les points de l'axe sont leurs propres symétriques."
+    ],
+    "hint": "Si on plie la feuille le long de (d), où va le point B ?",
+    "estimated_duration_s": 60,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 3, 6e, Symétrie axiale : « Connaître la définition du symétrique d'un point par rapport à une droite »"
+  }
+]

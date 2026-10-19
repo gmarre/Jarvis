@@ -1,0 +1,179 @@
+[
+  {
+    "id": "EX-G029-D-01",
+    "skill_id": "G029",
+    "level": "decouverte",
+    "type": "qcm",
+    "statement": "Quelle droite est la médiatrice du segment [EF] ?",
+    "image": "figures/EX-G029-D-01",
+    "choices": [
+      {
+        "key": "a",
+        "text": "La droite (d1)",
+        "misconception": "L'élève ne vérifie que l'angle droit : (d1) est bien perpendiculaire à [EF], mais elle le coupe à 2 carreaux de E, pas en son milieu."
+      },
+      {
+        "key": "b",
+        "text": "La droite (d2)",
+        "misconception": "L'élève ne vérifie que le milieu : (d2) passe bien par le milieu de [EF], mais elle le coupe en biais, sans former d'angle droit."
+      },
+      {
+        "key": "c",
+        "text": "La droite (d3)",
+        "misconception": null
+      }
+    ],
+    "answer": {
+      "value": "c"
+    },
+    "solution_steps": [
+      "La médiatrice d'un segment est la droite perpendiculaire à ce segment qui passe par son milieu. Il faut les deux conditions.",
+      "On cherche le milieu de [EF] sur le quadrillage : EF mesure 8 carreaux, le milieu est à 4 carreaux de E.",
+      "(d1) est perpendiculaire à [EF], mais elle le coupe à 2 carreaux de E : elle ne passe pas par le milieu.",
+      "(d2) passe par le milieu, mais elle coupe [EF] en biais : elle n'est pas perpendiculaire.",
+      "(d3) passe par le milieu et suit une ligne verticale du quadrillage, perpendiculaire à [EF] : la médiatrice est **(d3)**."
+    ],
+    "hint": "Repère d'abord le milieu du segment [EF] en comptant les carreaux.",
+    "estimated_duration_s": 60,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 3, 6e, Médiatrice d'un segment : « Connaître la définition de la médiatrice d'un segment »"
+  },
+  {
+    "id": "EX-G029-D-02",
+    "skill_id": "G029",
+    "level": "decouverte",
+    "type": "numerique",
+    "statement": "Combien de centimètres mesure le segment [MB] ?",
+    "image": "figures/EX-G029-D-02",
+    "answer": {
+      "value": 5,
+      "unit": "cm",
+      "accepted": [
+        "5 cm",
+        "5 centimètres"
+      ]
+    },
+    "solution_steps": [
+      "Sur la figure, la droite (d) coupe [AB] en I avec un angle droit, et les codages disent que IA = IB : (d) est perpendiculaire à [AB] en son milieu, c'est la médiatrice de [AB].",
+      "Le point M est sur la médiatrice de [AB].",
+      "Tout point de la médiatrice d'un segment est à égale distance des extrémités de ce segment : MB = MA.",
+      "On lit MA = 5 cm : le segment [MB] mesure **5 cm**."
+    ],
+    "hint": "Que disent les codages sur la droite (d) ? Où est le point M ?",
+    "estimated_duration_s": 45,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 3, 6e, Médiatrice d'un segment : « Comprendre et utiliser la propriété caractéristique de la médiatrice d'un segment »"
+  },
+  {
+    "id": "EX-G029-E-01",
+    "skill_id": "G029",
+    "level": "entrainement",
+    "type": "vrai_faux",
+    "statement": "Zoé dit : « Le point N est sur la médiatrice du segment [AB]. » A-t-elle raison ?",
+    "image": "figures/EX-G029-E-01",
+    "answer": {
+      "value": true
+    },
+    "solution_steps": [
+      "La médiatrice de [AB] n'est pas tracée : on ne peut pas le voir directement.",
+      "On lit sur la figure NA = 5,1 cm et NB = 5,1 cm : N est à égale distance de A et de B.",
+      "Propriété caractéristique de la médiatrice : un point à égale distance des extrémités d'un segment est sur la médiatrice de ce segment.",
+      "N est donc sur la médiatrice de [AB] : Zoé a **raison**.",
+      "Cette propriété marche dans les deux sens : un point de la médiatrice est à égale distance de A et de B, et un point à égale distance de A et de B est sur la médiatrice."
+    ],
+    "hint": "Compare les distances NA et NB.",
+    "estimated_duration_s": 60,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 3, 6e, Médiatrice d'un segment : « Comprendre et utiliser la propriété caractéristique de la médiatrice d'un segment »"
+  },
+  {
+    "id": "EX-G029-E-02",
+    "skill_id": "G029",
+    "level": "entrainement",
+    "type": "numerique",
+    "statement": "Quel est le périmètre du triangle MAB, en centimètres ?",
+    "image": "figures/EX-G029-E-02",
+    "answer": {
+      "value": 12.8,
+      "unit": "cm",
+      "accepted": [
+        "12,8 cm",
+        "12,8 centimètres",
+        "12 cm 8 mm",
+        "128 mm"
+      ]
+    },
+    "solution_steps": [
+      "Les codages montrent que la droite (d) est perpendiculaire à [AB] en son milieu : c'est la médiatrice de [AB].",
+      "M est sur la médiatrice de [AB] : il est à égale distance de A et de B. Donc MB = MA = 4 cm.",
+      "On lit 2,4 cm sur la moitié gauche du segment [AB]. Les codages disent que (d) coupe [AB] en son milieu : AB = 2 × 2,4 = 4,8 cm.",
+      "Périmètre du triangle MAB : MA + MB + AB = 4 + 4 + 4,8 = 12,8.",
+      "Le périmètre est **12,8 cm**. Répondre 8,8 cm, c'est oublier le côté [MB], dont la longueur n'est pas écrite ; répondre 10,4 cm, c'est prendre 2,4 cm pour AB."
+    ],
+    "hint": "Deux longueurs ne sont pas écrites : lesquelles, et comment les trouver avec la droite (d) ?",
+    "estimated_duration_s": 90,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 3, 6e, Médiatrice d'un segment : « Résoudre des problèmes en s'appuyant sur la propriété caractéristique de la médiatrice »"
+  },
+  {
+    "id": "EX-G029-M-01",
+    "skill_id": "G029",
+    "level": "maitrise",
+    "type": "qcm",
+    "statement": "Quel point est à la même distance des trois sommets R, S et T du triangle ?",
+    "image": "figures/EX-G029-M-01",
+    "choices": [
+      {
+        "key": "a",
+        "text": "Le point A",
+        "misconception": null
+      },
+      {
+        "key": "b",
+        "text": "Le point B",
+        "misconception": "L'élève voit B sur une médiatrice et s'arrête là : B est sur la médiatrice de [ST], donc BS = BT, mais il n'est pas sur la médiatrice de [RS], et BR est plus court."
+      },
+      {
+        "key": "c",
+        "text": "Le point C",
+        "misconception": "L'élève pense qu'un milieu est à égale distance de tout : C, milieu de [RT], est bien à égale distance de R et de T, mais il est bien plus loin de S."
+      }
+    ],
+    "answer": {
+      "value": "a"
+    },
+    "solution_steps": [
+      "Les codages montrent que les deux droites en pointillés sont les médiatrices des côtés [RS] et [ST].",
+      "A est sur la médiatrice de [RS] : AR = AS. A est aussi sur la médiatrice de [ST] : AS = AT.",
+      "Donc AR = AS = AT : **le point A** est à la même distance des trois sommets. C'est le centre du cercle qui passe par R, S et T.",
+      "B est sur la médiatrice de [ST] seulement : BS = BT, mais B est bien plus près de R.",
+      "C est le milieu de [RT] : CR = CT, mais C est bien plus loin de S. La médiatrice de [RT] passerait elle aussi par A : les trois médiatrices d'un triangle se coupent en un même point."
+    ],
+    "hint": "Sur quelle médiatrice est chaque point ? Que peut-on en déduire pour ses distances aux sommets ?",
+    "estimated_duration_s": 90,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 3, 6e, Triangles : « Savoir que les médiatrices d'un triangle sont concourantes »"
+  },
+  {
+    "id": "EX-G029-M-02",
+    "skill_id": "G029",
+    "level": "maitrise",
+    "type": "vrai_faux",
+    "statement": "Kenza affirme : « La droite (d) est la médiatrice du segment [AB]. » A-t-elle raison ?",
+    "image": "figures/EX-G029-M-02",
+    "answer": {
+      "value": false
+    },
+    "solution_steps": [
+      "La médiatrice de [AB] doit remplir deux conditions : passer par le milieu de [AB] ET être perpendiculaire à [AB].",
+      "Les codages montrent que (d) passe bien par I, le milieu de [AB].",
+      "Mais (d) coupe [AB] en biais : il n'y a pas d'angle droit en I. (d) n'est donc pas la médiatrice de [AB].",
+      "On le confirme avec le point C de (d) : s'il était sur la médiatrice, on aurait CA = CB. Or, sur la figure, C est bien plus près de B que de A.",
+      "Kenza a **tort** : passer par le milieu ne suffit pas."
+    ],
+    "hint": "La droite (d) est-elle perpendiculaire au segment [AB] ?",
+    "estimated_duration_s": 75,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 3, 6e, Médiatrice d'un segment : « Connaître la définition de la médiatrice d'un segment »"
+  }
+]

@@ -1,0 +1,171 @@
+[
+  {
+    "id": "EX-G004-D-01",
+    "skill_id": "G004",
+    "level": "decouverte",
+    "type": "vrai_faux",
+    "statement": "Lou dit que les points R, S et T sont alignés. A-t-elle raison ?",
+    "image": "figures/EX-G004-D-01",
+    "answer": {
+      "value": true
+    },
+    "solution_steps": [
+      "Des points sont alignés quand un même trait droit passe par tous ces points.",
+      "On imagine le trait droit qui va de R à T : il passe exactement par S.",
+      "Le bord d'une feuille posé sur l'écran, contre R et T, toucherait S.",
+      "R, S et T sont alignés : Lou a **raison**. Le point U, lui, est loin de ce trait."
+    ],
+    "hint": "Pose le bord d'une feuille sur l'écran, contre R et T. Touche-t-il S ?",
+    "estimated_duration_s": 30,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 2, CP, La géométrie plane : « Repérer visuellement des alignements. »"
+  },
+  {
+    "id": "EX-G004-D-02",
+    "skill_id": "G004",
+    "level": "decouverte",
+    "type": "qcm",
+    "statement": "Quel point est aligné avec P et Q ?",
+    "image": "figures/EX-G004-D-02",
+    "choices": [
+      {
+        "key": "a",
+        "text": "Le point A",
+        "misconception": "L'élève cherche un point entre P et Q. Mais A est à côté du trait qui va de P à Q : il n'est pas aligné avec eux. Un point aligné peut être plus loin, au-delà de Q."
+      },
+      {
+        "key": "b",
+        "text": "Le point B",
+        "misconception": null
+      },
+      {
+        "key": "c",
+        "text": "Le point C",
+        "misconception": "L'élève croit que « aligné » veut dire « à la même hauteur ». C est à la même hauteur que Q, mais le trait qui passe par P et Q monte : il ne passe pas par C."
+      }
+    ],
+    "answer": {
+      "value": "b"
+    },
+    "solution_steps": [
+      "On imagine le trait droit qui passe par P et par Q, et on le prolonge au-delà de Q.",
+      "Ce trait monte vers la droite et arrive exactement sur B : P, Q et B sont alignés.",
+      "A est entre P et Q, mais à côté du trait. C est à la même hauteur que Q, mais le trait monte : il passe bien au-dessus de C.",
+      "Le point aligné avec P et Q est **le point B**, même s'il est loin d'eux."
+    ],
+    "hint": "Pose le bord d'une feuille sur l'écran, contre P et Q, et prolonge le trait.",
+    "estimated_duration_s": 40,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 2, CP, La géométrie plane : « Repérer visuellement des alignements. »"
+  },
+  {
+    "id": "EX-G004-E-01",
+    "skill_id": "G004",
+    "level": "entrainement",
+    "type": "qcm",
+    "statement": "Quelle droite passe par le point P et par le point Q ?",
+    "image": "figures/EX-G004-E-01",
+    "choices": [
+      {
+        "key": "a",
+        "text": "La droite 1",
+        "misconception": null
+      },
+      {
+        "key": "b",
+        "text": "La droite 2",
+        "misconception": "L'élève s'arrête au premier point : la droite 2 passe bien par P, mais elle passe loin de Q."
+      },
+      {
+        "key": "c",
+        "text": "La droite 3",
+        "misconception": "L'élève choisit la droite qui va dans la même direction que P et Q. Mais elle passe à côté des deux points, sans toucher ni P ni Q."
+      }
+    ],
+    "answer": {
+      "value": "a"
+    },
+    "solution_steps": [
+      "Une droite qui passe par deux points touche ces deux points.",
+      "La droite 1 passe exactement par P et par Q : c'est **la droite 1**.",
+      "La droite 2 passe par P, mais loin de Q.",
+      "La droite 3 va dans la même direction que la droite 1, mais elle passe à côté de P et à côté de Q : elle ne passe par aucun des deux."
+    ],
+    "hint": "Suis chaque droite avec ton doigt. Touche-t-elle P ? Touche-t-elle Q ?",
+    "estimated_duration_s": 45,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 2, CP, La géométrie plane : « L'élève trace une droite passant par deux points à l'aide d'une règle. »"
+  },
+  {
+    "id": "EX-G004-E-02",
+    "skill_id": "G004",
+    "level": "entrainement",
+    "type": "vrai_faux",
+    "statement": "Léo veut tracer la droite qui passe par A et par B. A-t-il réussi ?",
+    "image": "figures/EX-G004-E-02",
+    "answer": {
+      "value": false
+    },
+    "solution_steps": [
+      "La droite tracée passe bien par A.",
+      "Mais en suivant le trait jusqu'au bout, il passe sous le point B, sans le toucher.",
+      "Léo n'a **pas réussi** : son trait devait toucher A et B à la fois.",
+      "Une droite qui passe par deux points doit toucher les deux points, pas un seul."
+    ],
+    "hint": "Suis la droite avec ton doigt. Touche-t-elle A ? Touche-t-elle B ?",
+    "estimated_duration_s": 30,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 2, CP, La géométrie plane : « L'élève trace une droite passant par deux points à l'aide d'une règle. »"
+  },
+  {
+    "id": "EX-G004-M-01",
+    "skill_id": "G004",
+    "level": "maitrise",
+    "type": "numerique",
+    "statement": "Combien d'autres points sont alignés avec A et B ?",
+    "image": "figures/EX-G004-M-01",
+    "answer": {
+      "value": 3,
+      "accepted": [
+        "3 points",
+        "trois",
+        "trois points"
+      ]
+    },
+    "solution_steps": [
+      "On imagine le trait droit qui passe par A et par B, et on le prolonge des deux côtés.",
+      "Entre A et B, le trait passe par E. Au-delà de B, il passe par C, puis par F.",
+      "D, G et H sont loin de ce trait : ils ne sont pas alignés avec A et B.",
+      "Il y a **3** autres points alignés avec A et B : E, C et F. Un point aligné peut être entre les deux points ou au-delà."
+    ],
+    "hint": "Pose le bord d'une feuille sur l'écran, contre A et B, et prolonge le trait des deux côtés.",
+    "estimated_duration_s": 60,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 2, CP, La géométrie plane : « Repérer visuellement des alignements. »"
+  },
+  {
+    "id": "EX-G004-M-02",
+    "skill_id": "G004",
+    "level": "maitrise",
+    "type": "texte",
+    "statement": "Jade voulait aligner quatre points. Elle en a mal placé un. Lequel ?",
+    "image": "figures/EX-G004-M-02",
+    "answer": {
+      "value": "M",
+      "accepted": [
+        "le point M",
+        "point M"
+      ]
+    },
+    "solution_steps": [
+      "Quatre points alignés sont tous sur un même trait droit.",
+      "Le trait droit qui va de K à N passe exactement par L : K, L et N sont alignés.",
+      "M est au-dessus de ce trait : il n'est pas aligné avec les trois autres.",
+      "Jade a mal placé **le point M**."
+    ],
+    "hint": "Cherche trois points que le bord d'une même feuille pourrait toucher.",
+    "estimated_duration_s": 45,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 2, CP, La géométrie plane : « Repérer visuellement des alignements. »"
+  }
+]

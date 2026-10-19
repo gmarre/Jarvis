@@ -1,0 +1,174 @@
+[
+  {
+    "id": "EX-G026-D-01",
+    "skill_id": "G026",
+    "level": "decouverte",
+    "type": "numerique",
+    "statement": "Combien mesure l'angle $\\widehat{BOC}$, en degrés ?",
+    "image": "figures/EX-G026-D-01",
+    "answer": {
+      "value": 55,
+      "unit": "°",
+      "accepted": [
+        "55°",
+        "55 °",
+        "55 degrés",
+        "55 degré"
+      ]
+    },
+    "solution_steps": [
+      "Les points A, O et B sont sur une droite : l'angle $\\widehat{AOB}$ est un **angle plat**, il mesure 180°.",
+      "La demi-droite [OC) le partage en deux angles adjacents : $\\widehat{AOC}$, qui mesure 125°, et $\\widehat{BOC}$. Ensemble, ils font 180° : ils sont supplémentaires.",
+      "$\\widehat{BOC}$ mesure 180 − 125 = 55 : **55°**.",
+      "Vérification : 125 + 55 = 180. Et l'angle $\\widehat{BOC}$ est bien aigu sur la figure."
+    ],
+    "hint": "Que forment les points A, O et B ? Quel angle obtient-on ?",
+    "estimated_duration_s": 45,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 3, 6e, Espace et géométrie, Angles : « Connaître et utiliser les angles ainsi que le lexique et les notations qui s'y rapportent : angle droit, angle plat, angle plein, angle nul, angle aigu, angle obtus, angles opposés par le sommet, angles adjacents, angles supplémentaires »"
+  },
+  {
+    "id": "EX-G026-D-02",
+    "skill_id": "G026",
+    "level": "decouverte",
+    "type": "qcm",
+    "statement": "Combien mesure l'angle $\\widehat{BOD}$ ?",
+    "image": "figures/EX-G026-D-02",
+    "choices": [
+      {
+        "key": "a",
+        "text": "150°",
+        "misconception": "L'élève calcule 180 − 30, comme pour deux angles adjacents qui forment un angle plat. Mais $\\widehat{BOD}$ n'est pas à côté de $\\widehat{AOC}$ : il lui est opposé par le sommet."
+      },
+      {
+        "key": "b",
+        "text": "30°",
+        "misconception": null
+      },
+      {
+        "key": "c",
+        "text": "60°",
+        "misconception": "L'élève croit que les angles autour de O se complètent jusqu'à 90°, comme dans un angle droit. Les droites ne sont pas perpendiculaires : rien ne fait 90° ici."
+      }
+    ],
+    "answer": {
+      "value": "b"
+    },
+    "solution_steps": [
+      "Les droites (AB) et (CD) se coupent en O. Les angles $\\widehat{AOC}$ et $\\widehat{BOD}$ ont le même sommet, et leurs côtés se prolongent : [OB) prolonge [OA), [OD) prolonge [OC).",
+      "Ce sont des angles **opposés par le sommet** : ils ont la même mesure.",
+      "$\\widehat{AOC}$ mesure 30°, donc $\\widehat{BOD}$ mesure **30°**.",
+      "Les deux autres angles, $\\widehat{AOD}$ et $\\widehat{BOC}$, mesurent chacun 180 − 30 = 150° : c'est le piège de la réponse 150°."
+    ],
+    "hint": "Repère les côtés de l'angle $\\widehat{BOD}$ : quels côtés prolongent-ils ?",
+    "estimated_duration_s": 40,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 3, 6e, Espace et géométrie, Angles : « Connaître et utiliser les angles ainsi que le lexique et les notations qui s'y rapportent : angle droit, angle plat, angle plein, angle nul, angle aigu, angle obtus, angles opposés par le sommet, angles adjacents, angles supplémentaires »"
+  },
+  {
+    "id": "EX-G026-E-01",
+    "skill_id": "G026",
+    "level": "entrainement",
+    "type": "numerique",
+    "statement": "La demi-droite [OC) est la bissectrice de l'angle $\\widehat{AOB}$.\n\nCombien mesure l'angle $\\widehat{AOB}$, en degrés ?",
+    "image": "figures/EX-G026-E-01",
+    "answer": {
+      "value": 70,
+      "unit": "°",
+      "accepted": [
+        "70°",
+        "70 °",
+        "70 degrés",
+        "70 degré"
+      ]
+    },
+    "solution_steps": [
+      "La bissectrice d'un angle le partage en deux angles adjacents de même mesure.",
+      "Donc $\\widehat{AOC}$ et $\\widehat{COB}$ ont la même mesure : 35° chacun, d'après la figure.",
+      "$\\widehat{AOB}$ est formé de ces deux angles : 35 + 35 = 70. Il mesure **70°**.",
+      "Piège : 35° est la mesure d'une moitié seulement. La bissectrice ne coupe pas l'angle en deux angles quelconques : les deux moitiés sont égales."
+    ],
+    "hint": "Que fait une bissectrice à l'angle qu'elle partage ?",
+    "estimated_duration_s": 45,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 3, 6e, Espace et géométrie, Bissectrice d'un angle saillant : « Connaître la définition de la bissectrice d'un angle saillant »"
+  },
+  {
+    "id": "EX-G026-E-02",
+    "skill_id": "G026",
+    "level": "entrainement",
+    "type": "vrai_faux",
+    "statement": "Mia dit : « Les angles $\\widehat{ABC}$ et $\\widehat{DEF}$ sont supplémentaires. »\n\nMia a-t-elle raison ?",
+    "image": "figures/EX-G026-E-02",
+    "answer": {
+      "value": true
+    },
+    "solution_steps": [
+      "Deux angles sont **supplémentaires** quand la somme de leurs mesures est 180°.",
+      "$\\widehat{ABC}$ mesure 110° et $\\widehat{DEF}$ mesure 70° : 110 + 70 = 180.",
+      "Ils sont donc supplémentaires : Mia a **raison**.",
+      "Ils ne sont pas côte à côte, mais ce n'est pas nécessaire : « supplémentaires » parle des mesures, « adjacents » de la position. Mis côte à côte, ces deux angles formeraient un angle plat."
+    ],
+    "hint": "Que doivent vérifier deux angles pour être supplémentaires ? Faut-il qu'ils se touchent ?",
+    "estimated_duration_s": 45,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 3, 6e, Espace et géométrie, Angles : « Connaître et utiliser les angles ainsi que le lexique et les notations qui s'y rapportent : angle droit, angle plat, angle plein, angle nul, angle aigu, angle obtus, angles opposés par le sommet, angles adjacents, angles supplémentaires »"
+  },
+  {
+    "id": "EX-G026-M-01",
+    "skill_id": "G026",
+    "level": "maitrise",
+    "type": "numerique",
+    "statement": "Les droites (AB) et (CD) se coupent en O, et [OE) est la bissectrice de l'angle $\\widehat{BOD}$.\n\nCombien mesure l'angle $\\widehat{BOE}$, en degrés ?",
+    "image": "figures/EX-G026-M-01",
+    "answer": {
+      "value": 25,
+      "unit": "°",
+      "accepted": [
+        "25°",
+        "25 °",
+        "25 degrés",
+        "25 degré"
+      ]
+    },
+    "solution_steps": [
+      "$\\widehat{BOD}$ et $\\widehat{AOC}$ sont opposés par le sommet : leurs côtés se prolongent. Ils ont donc la même mesure, 50°.",
+      "[OE) est la bissectrice de $\\widehat{BOD}$ : elle le partage en deux angles de même mesure.",
+      "$\\widehat{BOE}$ mesure la moitié de 50° : 50 ÷ 2 = 25. Il mesure **25°**.",
+      "Erreurs à éviter : 50° est la mesure de tout l'angle $\\widehat{BOD}$, pas de sa moitié ; et 130° (180 − 50) est la mesure d'un angle adjacent à $\\widehat{AOC}$, pas opposé."
+    ],
+    "hint": "Commence par la mesure de l'angle $\\widehat{BOD}$ : quel angle de la figure lui est opposé par le sommet ?",
+    "estimated_duration_s": 75,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 3, 6e, Espace et géométrie, Bissectrice d'un angle saillant : « Utiliser la définition de la bissectrice d'un angle pour effectuer des constructions et résoudre des problèmes »"
+  },
+  {
+    "id": "EX-G026-M-02",
+    "skill_id": "G026",
+    "level": "maitrise",
+    "type": "numerique",
+    "statement": "La demi-droite [OD) est la bissectrice de l'angle $\\widehat{COB}$.\n\nCombien mesure l'angle $\\widehat{AOD}$, en degrés ?",
+    "image": "figures/EX-G026-M-02",
+    "answer": {
+      "value": 110,
+      "unit": "°",
+      "accepted": [
+        "110°",
+        "110 °",
+        "110 degrés",
+        "110 degré"
+      ]
+    },
+    "solution_steps": [
+      "A, O et B sont alignés : $\\widehat{AOB}$ est un angle plat de 180°. $\\widehat{AOC}$ mesure 40°, donc son supplémentaire $\\widehat{COB}$ mesure 180 − 40 = 140°.",
+      "[OD) est la bissectrice de $\\widehat{COB}$ : $\\widehat{COD}$ et $\\widehat{DOB}$ mesurent chacun 140 ÷ 2 = 70°.",
+      "$\\widehat{AOD}$ est formé de $\\widehat{AOC}$ et de $\\widehat{COD}$ : 40 + 70 = 110. Il mesure **110°**.",
+      "Autre chemin : $\\widehat{AOD}$ et $\\widehat{DOB}$ sont supplémentaires, et 180 − 70 = 110.",
+      "Erreurs à éviter : 70°, c'est seulement $\\widehat{COD}$ ; 90° supposerait que [OD) partage l'angle plat $\\widehat{AOB}$."
+    ],
+    "hint": "Calcule d'abord l'angle $\\widehat{COB}$, puis sa moitié.",
+    "estimated_duration_s": 90,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 3, 6e, Espace et géométrie, Bissectrice d'un angle saillant : « Utiliser la définition de la bissectrice d'un angle pour effectuer des constructions et résoudre des problèmes »"
+  }
+]

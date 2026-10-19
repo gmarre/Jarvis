@@ -1,0 +1,194 @@
+[
+  {
+    "id": "EX-G021-D-01",
+    "skill_id": "G021",
+    "level": "decouverte",
+    "type": "qcm",
+    "statement": "Programme : « Trace le segment [EF]. Trace le cercle de centre E qui passe par le point F. »\n\nQuel cercle suit ce programme ?",
+    "image": "figures/EX-G021-D-01",
+    "choices": [
+      {
+        "key": "a",
+        "text": "Le cercle 2",
+        "misconception": "L'élève inverse le centre et le point de passage : le cercle 2 a pour centre F et passe par E."
+      },
+      {
+        "key": "b",
+        "text": "Le cercle 1",
+        "misconception": null
+      },
+      {
+        "key": "c",
+        "text": "Le cercle 3",
+        "misconception": "L'élève confond rayon et diamètre : le cercle 3 a pour diamètre le segment [EF], son centre est le milieu de ce segment, pas E."
+      }
+    ],
+    "answer": {
+      "value": "b"
+    },
+    "solution_steps": [
+      "Le centre du cercle doit être le point E : le cercle cherché est tracé autour de E.",
+      "Le cercle doit passer par F : son rayon est la longueur du segment [EF].",
+      "Le cercle 1 a pour centre E et passe par F : il suit le programme. Réponse : **le cercle 1**.",
+      "Le cercle 2 a pour centre F et passe par E : le centre et le point de passage sont inversés. Le cercle 3 passe par E et par F, mais son centre est le milieu du segment [EF] : le segment [EF] en est un diamètre, pas un rayon."
+    ],
+    "hint": "Repère d'abord le centre de chaque cercle.",
+    "estimated_duration_s": 50,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 3, CM1, La géométrie plane : « Construire une figure géométrique composée de segments, de droites, de polygones usuels et de cercles. »"
+  },
+  {
+    "id": "EX-G021-D-02",
+    "skill_id": "G021",
+    "level": "decouverte",
+    "type": "vrai_faux",
+    "statement": "Le côté d'un carreau mesure 1 cm. Programme : « Trace un carré ABCD de côté 3 cm. Trace le cercle de centre C qui passe par B. »\n\nLou a tracé cette figure. A-t-elle suivi ce programme ?",
+    "image": "figures/EX-G021-D-02",
+    "answer": {
+      "value": true
+    },
+    "solution_steps": [
+      "Étape 1 : ABCD a quatre côtés de 3 carreaux, soit 3 cm, et quatre angles droits, ceux du quadrillage. C'est bien un carré de côté 3 cm.",
+      "Étape 2 : le cercle a pour centre le sommet C et il passe par le sommet B.",
+      "Les deux étapes sont respectées : Lou a **suivi le programme**.",
+      "Le cercle passe aussi par D : le côté CD a la même longueur que le côté CB, qui est un rayon."
+    ],
+    "hint": "Vérifie les étapes l'une après l'autre : longueur des côtés, centre, point de passage.",
+    "estimated_duration_s": 60,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 3, CM1, La géométrie plane : « Construire une figure géométrique composée de segments, de droites, de polygones usuels et de cercles. »"
+  },
+  {
+    "id": "EX-G021-E-01",
+    "skill_id": "G021",
+    "level": "entrainement",
+    "type": "numerique",
+    "statement": "Programme de Léa :\n1. Trace un carré EFGH.\n2. Trace le segment [EG].\n3. Trace le cercle de centre G qui passe par H.\n\nÀ quelle étape Léa s'est-elle trompée ?",
+    "image": "figures/EX-G021-E-01",
+    "answer": {
+      "value": 2,
+      "accepted": [
+        "étape 2",
+        "l'étape 2",
+        "a l'étape 2",
+        "la 2",
+        "la deuxième",
+        "deuxième",
+        "la deuxième étape",
+        "2e",
+        "2e étape",
+        "deux",
+        "étape deux",
+        "l'étape deux",
+        "la 2e",
+        "la 2e étape",
+        "la seconde",
+        "la seconde étape",
+        "seconde"
+      ]
+    },
+    "solution_steps": [
+      "Étape 1 : EFGH a quatre côtés de même longueur et quatre angles droits, c'est un carré. L'étape est réussie.",
+      "Étape 2 : le segment tracé relie F et H. Le programme demande le segment [EG], qui relie E et G : c'est l'autre diagonale. L'erreur est ici.",
+      "Étape 3 : le cercle a pour centre G et passe par H. L'étape est réussie ; il passe par F, ce qui est normal, car GF = GH.",
+      "Léa s'est trompée à l'**étape 2**."
+    ],
+    "hint": "Pour chaque étape, regarde quels points la figure relie.",
+    "estimated_duration_s": 75,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 3, CM1, Initiation à la pensée informatique : « La réalisation de figures géométriques s'appuyant sur des programmes de construction comme « Trace un rectangle ABCD tel que AB = 5 cm et BC = 3 cm. Trace le cercle de centre A qui passe par le milieu du côté [AB]. » contribue également au développement de la pensée informatique. »"
+  },
+  {
+    "id": "EX-G021-E-02",
+    "skill_id": "G021",
+    "level": "entrainement",
+    "type": "texte",
+    "statement": "Programme : « Trace le segment [AB] de 6 cm. Place son milieu M. Trace le cercle de centre M et de … 3 cm. »\n\nQuel mot manque ?",
+    "image": "figures/EX-G021-E-02",
+    "answer": {
+      "value": "rayon",
+      "accepted": [
+        "de rayon",
+        "le rayon",
+        "un rayon",
+        "rayon de"
+      ]
+    },
+    "solution_steps": [
+      "Le segment [AB] mesure 6 cm et M est son milieu : MA et MB mesurent 3 cm.",
+      "Le cercle tracé a pour centre M et passe par A et par B. Un segment qui va du centre à un point du cercle est un rayon : le rayon mesure 3 cm.",
+      "Le mot qui manque est **rayon** : « le cercle de centre M et de rayon 3 cm ».",
+      "« Diamètre » ne convient pas : un cercle de diamètre 3 cm serait bien plus petit, il ne passerait ni par A ni par B. Le diamètre de ce cercle est le segment [AB], qui mesure 6 cm."
+    ],
+    "hint": "Quelle est la distance du centre M au point A ?",
+    "estimated_duration_s": 60,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 3, CM1, La géométrie plane : « Construire une figure géométrique composée de segments, de droites, de polygones usuels et de cercles. »"
+  },
+  {
+    "id": "EX-G021-M-01",
+    "skill_id": "G021",
+    "level": "maitrise",
+    "type": "qcm",
+    "statement": "Le côté d'un carreau mesure 1 cm. Quel programme permet de tracer cette figure ?",
+    "image": "figures/EX-G021-M-01",
+    "choices": [
+      {
+        "key": "a",
+        "text": "Trace un rectangle EFGH avec EF = 2 cm et FG = 4 cm. Trace le cercle de centre I, milieu du segment [EF], qui passe par E.",
+        "misconception": "L'élève inverse la longueur et la largeur : sur la figure, EF mesure 4 carreaux et FG 2 carreaux."
+      },
+      {
+        "key": "b",
+        "text": "Trace un rectangle EFGH avec EF = 4 cm et FG = 2 cm. Trace le cercle de centre E qui passe par I, milieu du segment [EF].",
+        "misconception": "L'élève inverse le centre et le point de passage : le cercle de la figure est centré en I et passe par E, pas l'inverse."
+      },
+      {
+        "key": "c",
+        "text": "Trace un rectangle EFGH avec EF = 4 cm et FG = 2 cm. Trace le cercle de centre I, milieu du segment [EF], qui passe par E.",
+        "misconception": null
+      }
+    ],
+    "answer": {
+      "value": "c"
+    },
+    "solution_steps": [
+      "On lit la figure : EFGH est un rectangle. EF mesure 4 carreaux, soit 4 cm, et FG mesure 2 cm.",
+      "I est le milieu du segment [EF], à 2 carreaux de E et de F. Le cercle a pour centre I et passe par E (et par F).",
+      "Le bon programme est le troisième : **EF = 4 cm, FG = 2 cm, cercle de centre I qui passe par E**.",
+      "Le premier inverse les longueurs : avec EF = 2 cm, EF serait le petit côté. Le deuxième inverse le centre et le point de passage : son cercle serait centré sur le sommet E."
+    ],
+    "hint": "Compte les carreaux de EF et de FG, puis cherche le centre du cercle.",
+    "estimated_duration_s": 90,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 3, CM1, Initiation à la pensée informatique : « La réalisation de figures géométriques s'appuyant sur des programmes de construction comme « Trace un rectangle ABCD tel que AB = 5 cm et BC = 3 cm. Trace le cercle de centre A qui passe par le milieu du côté [AB]. » contribue également au développement de la pensée informatique. »"
+  },
+  {
+    "id": "EX-G021-M-02",
+    "skill_id": "G021",
+    "level": "maitrise",
+    "type": "numerique",
+    "statement": "Programme : « Trace un cercle de centre O et de rayon … cm. Trace le segment [AB], un diamètre de ce cercle. Trace le carré ABCD. »\n\nQuel nombre manque ?",
+    "image": "figures/EX-G021-M-02",
+    "answer": {
+      "value": 3,
+      "unit": "cm",
+      "accepted": [
+        "3 cm",
+        "trois",
+        "trois cm",
+        "trois centimètres"
+      ]
+    },
+    "solution_steps": [
+      "Le côté AB du carré mesure 6 cm : c'est écrit sur la figure.",
+      "Le segment [AB] est un diamètre du cercle : le diamètre mesure 6 cm.",
+      "Le diamètre mesure deux fois le rayon : 2 × 3 = 6. Le rayon mesure **3 cm**.",
+      "6 cm est la longueur du diamètre, pas celle du rayon : le rayon va du centre O au cercle, il mesure la moitié du diamètre."
+    ],
+    "hint": "Le segment [AB] est un diamètre. Quel lien y a-t-il entre diamètre et rayon ?",
+    "estimated_duration_s": 75,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 3, CM1, La géométrie plane : « Construire une figure géométrique composée de segments, de droites, de polygones usuels et de cercles. »"
+  }
+]

@@ -1,0 +1,56 @@
+{
+  "type": "geometrie",
+  "params": {
+    "colonnes": 12,
+    "lignes": 10,
+    "points": {
+      "O": [
+        6,
+        5
+      ],
+      "A": [
+        1,
+        5
+      ],
+      "B": [
+        11,
+        5
+      ],
+      "C": [
+        9,
+        9
+      ]
+    },
+    "etiquettes": {
+      "O": "bas_gauche",
+      "A": "haut_droite",
+      "B": "haut_gauche"
+    },
+    "elements": [
+      {
+        "cercle": "O",
+        "rayon": 5
+      },
+      {
+        "segment": [
+          "A",
+          "B"
+        ]
+      },
+      {
+        "segment": [
+          "O",
+          "C"
+        ]
+      },
+      {
+        "longueur": [
+          "A",
+          "B"
+        ],
+        "texte": "10 cm"
+      }
+    ]
+  },
+  "alt": "Cercle de centre O avec deux segments et une longueur écrite"
+}

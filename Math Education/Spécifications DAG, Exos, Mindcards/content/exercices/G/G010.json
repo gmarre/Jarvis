@@ -1,0 +1,181 @@
+[
+  {
+    "id": "EX-G010-D-01",
+    "skill_id": "G010",
+    "level": "decouverte",
+    "type": "numerique",
+    "statement": "ABCD est un rectangle. Combien mesure le côté CD ?",
+    "image": "figures/EX-G010-D-01",
+    "answer": {
+      "value": 7,
+      "unit": "cm",
+      "accepted": [
+        "7 cm",
+        "7 centimètres"
+      ]
+    },
+    "solution_steps": [
+      "Dans un rectangle, les côtés opposés, ceux qui se font face, ont la même longueur.",
+      "Le côté CD est en face du côté AB.",
+      "AB mesure 7 cm : CD mesure **7 cm**.",
+      "Le côté BC, 4 cm, touche CD en C : il n'est pas en face de lui. BC a la même longueur que AD."
+    ],
+    "hint": "Quel côté est en face de CD ?",
+    "estimated_duration_s": 30,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 2, CE1, La géométrie plane : « L'élève sait dire qu'un rectangle a quatre sommets, quatre angles droits, quatre côtés et que les côtés opposés ont la même longueur. »"
+  },
+  {
+    "id": "EX-G010-D-02",
+    "skill_id": "G010",
+    "level": "decouverte",
+    "type": "qcm",
+    "statement": "Cette figure n'est pas un rectangle. Quelle propriété du rectangle lui manque ?",
+    "image": "figures/EX-G010-D-02",
+    "choices": [
+      {
+        "key": "a",
+        "text": "Avoir ses côtés opposés de même longueur",
+        "misconception": "L'élève voit des côtés penchés et croit qu'ils ne sont pas égaux. Mais AD et BC ont le même décalage sur le quadrillage : les côtés opposés de ABCD ont bien la même longueur."
+      },
+      {
+        "key": "b",
+        "text": "Avoir quatre angles droits",
+        "misconception": null
+      },
+      {
+        "key": "c",
+        "text": "Avoir quatre côtés de même longueur",
+        "misconception": "L'élève confond le rectangle et le carré : avoir quatre côtés de même longueur n'est pas une propriété du rectangle, qui peut avoir deux côtés longs et deux côtés courts."
+      }
+    ],
+    "answer": {
+      "value": "b"
+    },
+    "solution_steps": [
+      "Un rectangle a quatre côtés, quatre angles droits, et ses côtés opposés ont la même longueur.",
+      "Les côtés opposés de ABCD ont la même longueur : AB et DC mesurent 5 carreaux ; AD et BC vont tous les deux de 2 carreaux de côté et de 3 carreaux en hauteur.",
+      "Mais aucun de ses angles n'a la forme du coin d'une feuille : en A et en C ils sont aigus, en B et en D ils sont obtus.",
+      "Il lui manque **les quatre angles droits** : ce n'est pas un rectangle car ses angles ne sont pas droits."
+    ],
+    "hint": "Regarde les angles de la figure, puis la longueur des côtés d'en face.",
+    "estimated_duration_s": 45,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 2, CE1, La géométrie plane : « Ce n'est pas un rectangle car l'un de ses angles n'est pas droit. »"
+  },
+  {
+    "id": "EX-G010-E-01",
+    "skill_id": "G010",
+    "level": "entrainement",
+    "type": "vrai_faux",
+    "statement": "Mia dit : « ABCD est un carré. » A-t-elle raison ?",
+    "image": "figures/EX-G010-E-01",
+    "answer": {
+      "value": false
+    },
+    "solution_steps": [
+      "Un carré a quatre côtés de même longueur ET quatre angles droits.",
+      "Les quatre côtés de ABCD mesurent bien 5 cm.",
+      "Mais ses angles ne sont pas droits : en A et en C ils sont aigus, en B et en D ils sont obtus.",
+      "ABCD n'est pas un carré : Mia a **tort**. Quatre côtés de même longueur ne suffisent pas, il faut aussi vérifier les angles."
+    ],
+    "hint": "Un carré a deux sortes de propriétés : regarde les côtés, puis pose le coin d'une feuille sur l'écran contre les angles.",
+    "estimated_duration_s": 45,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 2, CE1, La géométrie plane : « Connaitre les propriétés des angles et des égalités de longueur pour les carrés et les rectangles. »"
+  },
+  {
+    "id": "EX-G010-E-02",
+    "skill_id": "G010",
+    "level": "entrainement",
+    "type": "texte",
+    "statement": "Écris le nom de la figure EFGH.",
+    "image": "figures/EX-G010-E-02",
+    "answer": {
+      "value": "rectangle",
+      "accepted": [
+        "un rectangle",
+        "le rectangle",
+        "c'est un rectangle",
+        "EFGH est un rectangle"
+      ]
+    },
+    "solution_steps": [
+      "La figure a quatre côtés, et ses quatre angles portent le code de l'angle droit.",
+      "Une figure qui a quatre côtés et quatre angles droits est un rectangle, même quand elle est penchée.",
+      "Ses côtés n'ont pas tous la même longueur, 5 cm et 3 cm : ce n'est pas un carré.",
+      "EFGH est **un rectangle**."
+    ],
+    "hint": "Lis les codes des angles, puis compare les longueurs des côtés.",
+    "estimated_duration_s": 45,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 2, CE1, La géométrie plane : « Reconnaitre, nommer et décrire un cercle, un carré, un rectangle, un triangle, un triangle rectangle en utilisant le vocabulaire approprié. »"
+  },
+  {
+    "id": "EX-G010-M-01",
+    "skill_id": "G010",
+    "level": "maitrise",
+    "type": "numerique",
+    "statement": "Combien de ces figures sont des rectangles ?",
+    "image": "figures/EX-G010-M-01",
+    "answer": {
+      "value": 2,
+      "accepted": [
+        "2 figures",
+        "2 rectangles",
+        "deux",
+        "deux figures",
+        "deux rectangles"
+      ]
+    },
+    "solution_steps": [
+      "Un rectangle a quatre côtés et quatre angles droits.",
+      "Figure 1 : quatre angles droits, deux côtés longs et deux courts. C'est un rectangle.",
+      "Figure 2 : elle est penchée, ses côtés traversent les carreaux en diagonale. Ses quatre angles sont droits (le coin d'une feuille posé sur l'écran le confirme) et ses côtés d'en face ont la même longueur : c'est un rectangle, même penché.",
+      "Figures 3 et 4 : certains de leurs angles ne sont pas droits. Ce ne sont pas des rectangles.",
+      "Il y a **2** rectangles : les figures 1 et 2."
+    ],
+    "hint": "Pour chaque figure, vérifie les quatre angles avec le coin d'une feuille posé sur l'écran.",
+    "estimated_duration_s": 75,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 2, CE1, La géométrie plane : « L'élève sait dire qu'un rectangle a quatre sommets, quatre angles droits, quatre côtés et que les côtés opposés ont la même longueur. »"
+  },
+  {
+    "id": "EX-G010-M-02",
+    "skill_id": "G010",
+    "level": "maitrise",
+    "type": "qcm",
+    "statement": "Le segment AC partage la figure ABCD en deux triangles. Que peut-on dire de ces triangles ?",
+    "image": "figures/EX-G010-M-02",
+    "choices": [
+      {
+        "key": "a",
+        "text": "Aucun des deux n'a d'angle droit.",
+        "misconception": "L'élève croit que le segment AC a « cassé » les angles droits. Il coupe les angles en A et en C, mais les angles en B et en D restent entiers et droits."
+      },
+      {
+        "key": "b",
+        "text": "Seul le triangle ABC est un triangle rectangle.",
+        "misconception": "L'élève reconnaît l'angle droit en bas, mais pas celui du triangle du haut, retourné. Le triangle ACD a lui aussi un angle droit, en D."
+      },
+      {
+        "key": "c",
+        "text": "Ce sont deux triangles rectangles.",
+        "misconception": null
+      }
+    ],
+    "answer": {
+      "value": "c"
+    },
+    "solution_steps": [
+      "Sur le quadrillage, les côtés de ABCD suivent les lignes : ses angles en A, B, C et D sont droits.",
+      "Le segment AC coupe les angles en A et en C, mais il ne touche pas les angles en B et en D : ils restent droits.",
+      "Le triangle ABC a un angle droit en B, le triangle ACD a un angle droit en D. Un triangle qui a un angle droit est un triangle rectangle.",
+      "Ce sont **deux triangles rectangles**, même si celui du haut a son angle droit en haut à gauche."
+    ],
+    "hint": "Quels angles de ABCD le segment AC ne coupe-t-il pas ?",
+    "estimated_duration_s": 60,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 2, CE1, La géométrie plane : « Reconnaitre, nommer et décrire un cercle, un carré, un rectangle, un triangle, un triangle rectangle en utilisant le vocabulaire approprié. »"
+  }
+]

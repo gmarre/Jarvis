@@ -1,0 +1,179 @@
+[
+  {
+    "id": "EX-G018-D-01",
+    "skill_id": "G018",
+    "level": "decouverte",
+    "type": "texte",
+    "statement": "Lis les codages. Quel est le nom précis du quadrilatère ABCD ?",
+    "image": "figures/EX-G018-D-01",
+    "answer": {
+      "value": "rectangle",
+      "accepted": [
+        "un rectangle",
+        "c'est un rectangle",
+        "le rectangle",
+        "ABCD est un rectangle"
+      ]
+    },
+    "solution_steps": [
+      "Le petit carré à chaque sommet code un angle droit : ABCD a quatre angles droits.",
+      "Un quadrilatère qui a quatre angles droits est un **rectangle**, même s'il est penché.",
+      "Ce n'est pas un carré : AB et CD portent deux traits, BC et DA un seul. Les côtés n'ont pas tous la même longueur.",
+      "Comme dans tout rectangle, ses côtés opposés ont la même longueur et sont parallèles."
+    ],
+    "hint": "Que disent les petits carrés aux sommets ?",
+    "estimated_duration_s": 45,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 3, CM1, La géométrie plane : « Reconnaître et nommer les figures suivantes en faisant référence à leur définition : triangle, triangle rectangle, triangle isocèle, triangle équilatéral, quadrilatère, carré, rectangle et losange »"
+  },
+  {
+    "id": "EX-G018-D-02",
+    "skill_id": "G018",
+    "level": "decouverte",
+    "type": "vrai_faux",
+    "statement": "Léo affirme : « Dans le quadrilatère ABCD, les côtés AB et DC sont parallèles. »\n\nA-t-il raison ?",
+    "image": "figures/EX-G018-D-02",
+    "answer": {
+      "value": true
+    },
+    "solution_steps": [
+      "Les quatre côtés portent le même petit trait : ABCD a quatre côtés de même longueur, c'est un losange.",
+      "Un losange a ses côtés opposés parallèles. AB et DC sont deux côtés opposés : ils ne se touchent pas.",
+      "AB et DC sont donc parallèles : Léo a **raison**.",
+      "De la même façon, AD et BC sont parallèles."
+    ],
+    "hint": "Trouve d'abord la nature du quadrilatère grâce aux codages.",
+    "estimated_duration_s": 50,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 3, CM1, La géométrie plane : « Connaître les propriétés de parallélisme des côtés opposés, des égalités de longueurs et d'angles pour les figures usuelles : triangle rectangle, triangle isocèle, triangle équilatéral, carré, rectangle et losange. »"
+  },
+  {
+    "id": "EX-G018-E-01",
+    "skill_id": "G018",
+    "level": "entrainement",
+    "type": "qcm",
+    "statement": "Que manque-t-il au quadrilatère ABCD pour être un carré ?",
+    "image": "figures/EX-G018-E-01",
+    "choices": [
+      {
+        "key": "a",
+        "text": "Des côtés opposés parallèles",
+        "misconception": "L'élève croit qu'un losange n'a pas de côtés parallèles. Or tout losange a ses côtés opposés parallèles, comme le carré."
+      },
+      {
+        "key": "b",
+        "text": "Quatre côtés de même longueur",
+        "misconception": "L'élève ne lit pas le codage des côtés : les quatre côtés portent le même petit trait, ABCD les a déjà."
+      },
+      {
+        "key": "c",
+        "text": "Quatre angles droits",
+        "misconception": null
+      }
+    ],
+    "answer": {
+      "value": "c"
+    },
+    "solution_steps": [
+      "Un carré est un quadrilatère qui a quatre côtés de même longueur et quatre angles droits.",
+      "Les quatre côtés de ABCD portent le même petit trait : ils ont la même longueur. ABCD est un losange.",
+      "Aucun angle ne porte le codage de l'angle droit, et ses angles sont aigus ou obtus : il lui manque **quatre angles droits**.",
+      "Un carré, c'est un losange qui a quatre angles droits."
+    ],
+    "hint": "Compare ce que disent les codages avec la définition du carré.",
+    "estimated_duration_s": 60,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 3, CM1, La géométrie plane : « Reconnaître et nommer les figures suivantes en faisant référence à leur définition : triangle, triangle rectangle, triangle isocèle, triangle équilatéral, quadrilatère, carré, rectangle et losange »"
+  },
+  {
+    "id": "EX-G018-E-02",
+    "skill_id": "G018",
+    "level": "entrainement",
+    "type": "qcm",
+    "statement": "Laquelle de ces figures n'est pas un losange ?",
+    "image": "figures/EX-G018-E-02",
+    "choices": [
+      {
+        "key": "a",
+        "text": "La figure 1",
+        "misconception": "L'élève croit qu'un carré n'est pas un losange, ou qu'un carré posé sur une pointe change de nature. La figure 1 a quatre côtés de même longueur : c'est un losange."
+      },
+      {
+        "key": "b",
+        "text": "La figure 3",
+        "misconception": null
+      },
+      {
+        "key": "c",
+        "text": "Aucune : elles ont toutes leurs côtés opposés de même longueur.",
+        "misconception": "L'élève croit que des côtés opposés égaux suffisent pour faire un losange. Il faut les quatre côtés égaux, ce que la figure 3 n'a pas."
+      }
+    ],
+    "answer": {
+      "value": "b"
+    },
+    "solution_steps": [
+      "Un losange est un quadrilatère qui a ses quatre côtés de même longueur. On lit le codage des côtés.",
+      "Figure 1 : quatre côtés codés pareil et quatre angles droits. C'est un carré, et c'est un losange : il a bien quatre côtés de même longueur.",
+      "Figure 2 : quatre côtés codés pareil, c'est un losange.",
+      "Figure 3 : deux côtés portent un trait, deux autres trois traits. Ses côtés n'ont pas tous la même longueur : la **figure 3** n'est pas un losange, c'est un rectangle."
+    ],
+    "hint": "Pour chaque figure, regarde si les quatre côtés portent le même codage.",
+    "estimated_duration_s": 60,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 3, CM1, La géométrie plane : « Reconnaître et nommer les figures suivantes en faisant référence à leur définition : triangle, triangle rectangle, triangle isocèle, triangle équilatéral, quadrilatère, carré, rectangle et losange »"
+  },
+  {
+    "id": "EX-G018-M-01",
+    "skill_id": "G018",
+    "level": "maitrise",
+    "type": "numerique",
+    "statement": "Lis les codages. Combien de ces figures sont des rectangles ?",
+    "image": "figures/EX-G018-M-01",
+    "answer": {
+      "value": 2,
+      "accepted": [
+        "2 rectangles",
+        "2 figures",
+        "deux"
+      ]
+    },
+    "solution_steps": [
+      "Un rectangle est un quadrilatère qui a quatre angles droits. On cherche les figures dont les quatre angles portent le petit carré.",
+      "Figure 1 : quatre angles droits et quatre côtés égaux. C'est un carré, et un carré est un rectangle particulier.",
+      "Figure 3 : quatre angles droits et côtés opposés égaux, c'est un rectangle. Les figures 2 et 4 n'ont aucun angle droit : ce ne sont pas des rectangles, même si la figure 4 a ses côtés opposés de même longueur.",
+      "Il y a **2** rectangles : les figures 1 et 3. Oublier le carré est l'erreur la plus fréquente."
+    ],
+    "hint": "Un carré a-t-il quatre angles droits ?",
+    "estimated_duration_s": 75,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 3, CM1, La géométrie plane : « Reconnaître et nommer les figures suivantes en faisant référence à leur définition : triangle, triangle rectangle, triangle isocèle, triangle équilatéral, quadrilatère, carré, rectangle et losange »"
+  },
+  {
+    "id": "EX-G018-M-02",
+    "skill_id": "G018",
+    "level": "maitrise",
+    "type": "texte",
+    "statement": "Lis les codages et les longueurs. Quel est le nom le plus précis du quadrilatère EFGH ?",
+    "image": "figures/EX-G018-M-02",
+    "answer": {
+      "value": "carré",
+      "accepted": [
+        "un carré",
+        "c'est un carré",
+        "le carré",
+        "EFGH est un carré"
+      ]
+    },
+    "solution_steps": [
+      "Les quatre angles portent le petit carré : EFGH a quatre angles droits, c'est un rectangle.",
+      "Dans un rectangle, les côtés opposés ont la même longueur : GH mesure comme EF, 5 cm, et HE mesure comme FG, 5 cm.",
+      "Les quatre côtés mesurent 5 cm : EFGH est un rectangle qui a quatre côtés de même longueur, c'est un **carré**.",
+      "Il est posé sur une pointe, mais sa position ne change rien. « Rectangle » et « losange » sont justes, mais « carré » est plus précis : un carré est à la fois un rectangle et un losange."
+    ],
+    "hint": "Commence par les angles, puis utilise ce que tu sais des côtés opposés d'un rectangle.",
+    "estimated_duration_s": 90,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 3, CM1, La géométrie plane : « Connaître les propriétés de parallélisme des côtés opposés, des égalités de longueurs et d'angles pour les figures usuelles : triangle rectangle, triangle isocèle, triangle équilatéral, carré, rectangle et losange. »"
+  }
+]

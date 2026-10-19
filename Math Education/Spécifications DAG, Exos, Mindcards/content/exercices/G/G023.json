@@ -1,0 +1,175 @@
+[
+  {
+    "id": "EX-G023-D-01",
+    "skill_id": "G023",
+    "level": "decouverte",
+    "type": "texte",
+    "statement": "Observe le quadrillage. Quel est le nom précis du quadrilatère ABCD ?",
+    "image": "figures/EX-G023-D-01",
+    "answer": {
+      "value": "trapèze",
+      "accepted": [
+        "un trapèze",
+        "c'est un trapèze",
+        "le trapèze",
+        "ABCD est un trapèze",
+        "trapèze quelconque",
+        "un trapèze quelconque"
+      ]
+    },
+    "solution_steps": [
+      "Les côtés AB et DC suivent des lignes horizontales du quadrillage : ils sont parallèles.",
+      "Les côtés AD et BC ne sont pas parallèles : ils se rapprochent vers le haut.",
+      "Un quadrilatère qui a deux côtés opposés parallèles est un **trapèze**.",
+      "Ce n'est pas un trapèze rectangle : aucun de ses angles n'est droit."
+    ],
+    "hint": "Cherche deux côtés opposés parallèles.",
+    "estimated_duration_s": 45,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 3, CM2, La géométrie plane : « Reconnaître et nommer les figures suivantes en s'appuyant sur leur définition : triangle, triangle rectangle, triangle isocèle, triangle équilatéral, quadrilatère, carré, rectangle, losange, trapèze, trapèze rectangle, pentagone et hexagone »"
+  },
+  {
+    "id": "EX-G023-D-02",
+    "skill_id": "G023",
+    "level": "decouverte",
+    "type": "numerique",
+    "statement": "Combien de ces figures sont des hexagones ?",
+    "image": "figures/EX-G023-D-02",
+    "answer": {
+      "value": 2,
+      "accepted": [
+        "2 hexagones",
+        "2 figures",
+        "deux"
+      ]
+    },
+    "solution_steps": [
+      "Un hexagone est un polygone qui a six côtés et six sommets. On compte les côtés de chaque figure.",
+      "Figure 1 : 6 côtés, c'est un hexagone. Figure 2 : 6 côtés, c'est un hexagone, même avec son coin qui rentre.",
+      "Figure 3 : 5 côtés, c'est un pentagone. Figure 4 : 4 côtés, c'est un trapèze.",
+      "Il y a **2** hexagones. Un hexagone n'a pas besoin d'avoir la forme d'une alvéole d'abeille : seul le nombre de côtés compte."
+    ],
+    "hint": "Compte les côtés de chaque figure.",
+    "estimated_duration_s": 50,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 3, CM2, La géométrie plane : « Reconnaître et nommer les figures suivantes en s'appuyant sur leur définition : triangle, triangle rectangle, triangle isocèle, triangle équilatéral, quadrilatère, carré, rectangle, losange, trapèze, trapèze rectangle, pentagone et hexagone »"
+  },
+  {
+    "id": "EX-G023-E-01",
+    "skill_id": "G023",
+    "level": "entrainement",
+    "type": "qcm",
+    "statement": "Quelle figure est un trapèze rectangle ?",
+    "image": "figures/EX-G023-E-01",
+    "choices": [
+      {
+        "key": "a",
+        "text": "La figure 3",
+        "misconception": "L'élève s'arrête à l'angle droit : la figure 3 en a un, mais aucun de ses côtés opposés n'est parallèle, ce n'est pas un trapèze."
+      },
+      {
+        "key": "b",
+        "text": "La figure 1",
+        "misconception": "L'élève reconnaît un trapèze sans vérifier l'angle droit : la figure 1 n'en a aucun."
+      },
+      {
+        "key": "c",
+        "text": "La figure 2",
+        "misconception": null
+      }
+    ],
+    "answer": {
+      "value": "c"
+    },
+    "solution_steps": [
+      "Un trapèze rectangle est un trapèze (deux côtés opposés parallèles) qui a un angle droit.",
+      "Figure 1 : les côtés du haut et du bas sont parallèles, c'est un trapèze, mais il n'a pas d'angle droit.",
+      "Figure 3 : elle a un angle droit, mais aucun côté n'est parallèle au côté opposé : ce n'est pas un trapèze.",
+      "Figure 2 : côtés du haut et du bas parallèles, et deux angles droits. Réponse : **la figure 2**."
+    ],
+    "hint": "Il faut deux conditions : des côtés opposés parallèles et un angle droit.",
+    "estimated_duration_s": 50,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 3, CM2, La géométrie plane : « Reconnaître et nommer les figures suivantes en s'appuyant sur leur définition : triangle, triangle rectangle, triangle isocèle, triangle équilatéral, quadrilatère, carré, rectangle, losange, trapèze, trapèze rectangle, pentagone et hexagone »"
+  },
+  {
+    "id": "EX-G023-E-02",
+    "skill_id": "G023",
+    "level": "entrainement",
+    "type": "vrai_faux",
+    "statement": "Léa dit : « ABCD est un trapèze. »\n\nA-t-elle raison ?",
+    "image": "figures/EX-G023-E-02",
+    "answer": {
+      "value": true
+    },
+    "solution_steps": [
+      "Un trapèze est un quadrilatère qui a deux côtés opposés parallèles, qu'ils soient penchés ou non.",
+      "Sur le quadrillage, le côté AB avance de 6 carreaux vers la droite pour 3 vers le bas, et le côté DC de 2 carreaux vers la droite pour 1 vers le bas. Pour chaque carreau vers le bas, chacun avance de 2 carreaux vers la droite : ils ont la même direction, ils sont parallèles.",
+      "AB et DC sont deux côtés opposés parallèles : ABCD est un trapèze. Léa a **raison**.",
+      "Les côtés AD et BC, eux, ne sont pas parallèles."
+    ],
+    "hint": "Compare la direction de AB et celle de DC sur le quadrillage.",
+    "estimated_duration_s": 75,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 3, CM2, La géométrie plane : « Connaître les propriétés de parallélisme des côtés opposés, des égalités de longueurs et d'angles pour les figures usuelles : triangle rectangle, triangle isocèle, triangle équilatéral, carré, rectangle, losange, trapèze et trapèze rectangle »"
+  },
+  {
+    "id": "EX-G023-M-01",
+    "skill_id": "G023",
+    "level": "maitrise",
+    "type": "vrai_faux",
+    "statement": "Tom dit : « ABCD est un trapèze. »\n\nA-t-il raison ? Vérifie sur le quadrillage.",
+    "image": "figures/EX-G023-M-01",
+    "answer": {
+      "value": false
+    },
+    "solution_steps": [
+      "Pour être un trapèze, ABCD doit avoir deux côtés opposés parallèles.",
+      "AB est horizontal. DC monte d'1 carreau quand il avance de 4 carreaux vers la droite : il n'est pas horizontal, donc pas parallèle à AB.",
+      "AD et BC ne sont pas parallèles non plus : AD avance de 2 carreaux vers la droite pour 4 vers le haut, BC recule de 3 carreaux pour 5 vers le haut.",
+      "Aucun côté n'est parallèle au côté opposé : ABCD n'est pas un trapèze, Tom a **tort**. Il en a l'allure, mais seul le quadrillage permet de trancher."
+    ],
+    "hint": "Compte les carreaux pour comparer la direction de AB et celle de DC.",
+    "estimated_duration_s": 75,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 3, CM2, La géométrie plane : « Connaître les propriétés de parallélisme des côtés opposés, des égalités de longueurs et d'angles pour les figures usuelles : triangle rectangle, triangle isocèle, triangle équilatéral, carré, rectangle, losange, trapèze et trapèze rectangle »"
+  },
+  {
+    "id": "EX-G023-M-02",
+    "skill_id": "G023",
+    "level": "maitrise",
+    "type": "qcm",
+    "statement": "On veut tracer un trapèze rectangle en reliant M à l'un des points E, F ou G, puis ce point à K. Quel point faut-il choisir ?",
+    "image": "figures/EX-G023-M-02",
+    "choices": [
+      {
+        "key": "a",
+        "text": "Le point E",
+        "misconception": null
+      },
+      {
+        "key": "b",
+        "text": "Le point F",
+        "misconception": "L'élève obtient un trapèze (FM est parallèle à KL) mais oublie l'angle droit : ce trapèze n'en a aucun."
+      },
+      {
+        "key": "c",
+        "text": "Le point G",
+        "misconception": "L'élève croit qu'un angle droit suffit : avec G, l'angle en K est droit, mais aucun côté n'est parallèle au côté opposé."
+      }
+    ],
+    "answer": {
+      "value": "a"
+    },
+    "solution_steps": [
+      "Il faut un quadrilatère qui a deux côtés opposés parallèles et un angle droit.",
+      "Avec E : le côté EM est horizontal comme KL, ils sont parallèles ; le côté KE est vertical, il forme un angle droit avec KL. C'est un trapèze rectangle.",
+      "Avec F : FM est parallèle à KL, c'est un trapèze, mais aucun de ses angles n'est droit. Avec G : l'angle en K est droit, mais aucun côté n'est parallèle au côté opposé.",
+      "Il faut choisir **le point E**."
+    ],
+    "hint": "Pour chaque point, imagine le quadrilatère et vérifie les deux conditions.",
+    "estimated_duration_s": 90,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 3, CM2, La géométrie plane : « Reconnaître et nommer les figures suivantes en s'appuyant sur leur définition : triangle, triangle rectangle, triangle isocèle, triangle équilatéral, quadrilatère, carré, rectangle, losange, trapèze, trapèze rectangle, pentagone et hexagone »"
+  }
+]

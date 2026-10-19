@@ -1,0 +1,84 @@
+{
+  "type": "geometrie",
+  "params": {
+    "colonnes": 10,
+    "lignes": 8,
+    "points": {
+      "A": [
+        2,
+        6
+      ],
+      "B": [
+        8,
+        6
+      ],
+      "I": [
+        5,
+        6
+      ],
+      "M": [
+        5,
+        2
+      ]
+    },
+    "etiquettes": {
+      "I": "bas_droite",
+      "M": "haut_droite"
+    },
+    "elements": [
+      {
+        "segment": [
+          "A",
+          "B"
+        ]
+      },
+      {
+        "droite": [
+          "I",
+          "M"
+        ],
+        "nom": "(d)"
+      },
+      {
+        "angle_droit": [
+          "M",
+          "I",
+          "B"
+        ]
+      },
+      {
+        "codage": [
+          [
+            "A",
+            "I"
+          ],
+          [
+            "I",
+            "B"
+          ]
+        ],
+        "marque": 1
+      },
+      {
+        "segment": [
+          "M",
+          "A"
+        ]
+      },
+      {
+        "segment": [
+          "M",
+          "B"
+        ]
+      },
+      {
+        "longueur": [
+          "M",
+          "A"
+        ],
+        "texte": "5 cm"
+      }
+    ]
+  },
+  "alt": "Segment AB, droite (d), point M et une longueur écrite"
+}

@@ -1,0 +1,84 @@
+{
+  "type": "geometrie",
+  "params": {
+    "colonnes": 12,
+    "lignes": 10,
+    "points": {
+      "T": [
+        3,
+        5
+      ],
+      "P": [
+        8,
+        5
+      ],
+      "_r": [
+        0,
+        5
+      ],
+      "_s": [
+        12,
+        5
+      ],
+      "B": [
+        "4.8",
+        "2.6"
+      ],
+      "A": [
+        3,
+        8
+      ],
+      "D": [
+        "10.4",
+        "8.2"
+      ],
+      "C": [
+        "5.5",
+        5
+      ]
+    },
+    "etiquettes": {
+      "T": "bas",
+      "P": "bas",
+      "B": "haut",
+      "C": "haut"
+    },
+    "elements": [
+      {
+        "cercle": "T",
+        "rayon": 3
+      },
+      {
+        "cercle": "P",
+        "rayon": 4
+      },
+      {
+        "segment": [
+          "T",
+          "_r"
+        ]
+      },
+      {
+        "segment": [
+          "P",
+          "_s"
+        ]
+      },
+      {
+        "longueur": [
+          "T",
+          "_r"
+        ],
+        "texte": "3 cm"
+      },
+      {
+        "longueur": [
+          "P",
+          "_s"
+        ],
+        "texte": "4 cm"
+      }
+    ]
+  },
+  "alt": "Deux cercles de centres T et P, avec les points A, B, C, D"
+}

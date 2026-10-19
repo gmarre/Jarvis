@@ -1,0 +1,191 @@
+[
+  {
+    "id": "EX-G017-D-01",
+    "skill_id": "G017",
+    "level": "decouverte",
+    "type": "texte",
+    "statement": "Lis le codage de la figure. Quel est le nom précis du triangle ABC ?",
+    "image": "figures/EX-G017-D-01",
+    "answer": {
+      "value": "isocèle",
+      "accepted": [
+        "triangle isocèle",
+        "un triangle isocèle",
+        "isocèle en A",
+        "triangle isocèle en A",
+        "un triangle isocèle en A",
+        "c'est un triangle isocèle",
+        "ABC est isocèle",
+        "ABC est un triangle isocèle",
+        "il est isocèle"
+      ]
+    },
+    "solution_steps": [
+      "Les côtés AB et AC portent le même petit trait : ils ont la même longueur. Le côté BC ne porte pas de trait.",
+      "Un triangle qui a deux côtés de même longueur est un triangle **isocèle**. On dit isocèle en A : A est le sommet commun aux deux côtés égaux.",
+      "Il n'est pas équilatéral : rien ne dit que BC a la même longueur que les deux autres côtés, et on voit qu'il est plus court.",
+      "Il n'est pas rectangle : aucun angle ne porte le petit carré de l'angle droit."
+    ],
+    "hint": "Regarde quels côtés portent le même petit trait.",
+    "estimated_duration_s": 45,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 3, CM1, La géométrie plane : « Reconnaître et nommer les figures suivantes en faisant référence à leur définition : triangle, triangle rectangle, triangle isocèle, triangle équilatéral, quadrilatère, carré, rectangle et losange »"
+  },
+  {
+    "id": "EX-G017-D-02",
+    "skill_id": "G017",
+    "level": "decouverte",
+    "type": "qcm",
+    "statement": "Lis les codages. Quel triangle est rectangle ?",
+    "image": "figures/EX-G017-D-02",
+    "choices": [
+      {
+        "key": "a",
+        "text": "Le triangle 1",
+        "misconception": "L'élève choisit la figure la plus « régulière ». Le triangle 1 a deux côtés codés égaux : il est isocèle, mais aucun de ses angles n'est droit."
+      },
+      {
+        "key": "b",
+        "text": "Le triangle 3",
+        "misconception": "L'élève croit qu'un angle droit a forcément un côté horizontal, et cherche un triangle posé à plat. Le triangle 3 a un côté horizontal, mais aucun angle droit."
+      },
+      {
+        "key": "c",
+        "text": "Le triangle 2",
+        "misconception": null
+      }
+    ],
+    "answer": {
+      "value": "c"
+    },
+    "solution_steps": [
+      "Un triangle rectangle est un triangle qui a un angle droit. On code l'angle droit par un petit carré.",
+      "Le triangle 2 porte ce petit carré : il a un angle droit, c'est un **triangle rectangle**, même si ses côtés sont penchés.",
+      "Le triangle 1 a deux côtés de même longueur (même petit trait) : il est isocèle, sans angle droit.",
+      "Le triangle 3 est posé sur un côté horizontal, mais il a deux angles aigus et un angle obtus : il n'est pas rectangle. Un angle droit n'a pas besoin d'un côté horizontal."
+    ],
+    "hint": "Cherche le codage de l'angle droit.",
+    "estimated_duration_s": 45,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 3, CM1, La géométrie plane : « Connaître les codes usuels utilisés en géométrie »"
+  },
+  {
+    "id": "EX-G017-E-01",
+    "skill_id": "G017",
+    "level": "entrainement",
+    "type": "numerique",
+    "statement": "Lis les codages et les longueurs écrites. Combien mesure le côté KM ?",
+    "image": "figures/EX-G017-E-01",
+    "answer": {
+      "value": 5,
+      "unit": "cm",
+      "accepted": [
+        "5 cm"
+      ]
+    },
+    "solution_steps": [
+      "Les côtés KL et KM portent le même petit trait : ils ont la même longueur. Le triangle KLM est isocèle en K.",
+      "Le côté KL mesure 5 cm : c'est écrit sur la figure.",
+      "KM a la même longueur que KL : il mesure **5 cm**.",
+      "Le côté LM mesure 6 cm, mais il ne porte pas le même codage que KM : ce n'est pas sa longueur qu'il faut prendre."
+    ],
+    "hint": "Quel côté porte le même petit trait que KM ?",
+    "estimated_duration_s": 50,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 3, CM1, La géométrie plane : « Connaître les propriétés de parallélisme des côtés opposés, des égalités de longueurs et d'angles pour les figures usuelles : triangle rectangle, triangle isocèle, triangle équilatéral, carré, rectangle et losange. »"
+  },
+  {
+    "id": "EX-G017-E-02",
+    "skill_id": "G017",
+    "level": "entrainement",
+    "type": "qcm",
+    "statement": "Lis les longueurs écrites sur le triangle RST. Que peut-on dire de ses trois angles ?",
+    "image": "figures/EX-G017-E-02",
+    "choices": [
+      {
+        "key": "a",
+        "text": "Seuls deux angles ont la même grandeur.",
+        "misconception": "L'élève applique la propriété du triangle isocèle, deux angles égaux, sans voir que les trois côtés sont égaux : RST est équilatéral."
+      },
+      {
+        "key": "b",
+        "text": "Les trois angles ont la même grandeur.",
+        "misconception": null
+      },
+      {
+        "key": "c",
+        "text": "On ne peut pas le savoir sans les mesurer.",
+        "misconception": "L'élève croit qu'il faut mesurer pour comparer des angles. Les longueurs suffisent : un triangle dont les trois côtés sont égaux a ses trois angles égaux."
+      }
+    ],
+    "answer": {
+      "value": "b"
+    },
+    "solution_steps": [
+      "Les trois côtés mesurent 4 cm : le triangle RST a ses trois côtés de même longueur, c'est un triangle équilatéral.",
+      "Un triangle équilatéral a ses trois angles de même grandeur.",
+      "Réponse : **les trois angles ont la même grandeur**. On le sait sans rien mesurer, grâce aux longueurs.",
+      "Un triangle isocèle qui n'est pas équilatéral n'a, lui, que deux angles égaux : ceux qui touchent le côté différent."
+    ],
+    "hint": "Trouve d'abord la nature du triangle grâce aux longueurs.",
+    "estimated_duration_s": 60,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 3, CM1, La géométrie plane : « Connaître les propriétés de parallélisme des côtés opposés, des égalités de longueurs et d'angles pour les figures usuelles : triangle rectangle, triangle isocèle, triangle équilatéral, carré, rectangle et losange. »"
+  },
+  {
+    "id": "EX-G017-M-01",
+    "skill_id": "G017",
+    "level": "maitrise",
+    "type": "texte",
+    "statement": "L'angle EDF est marqué d'un arc. Quel autre angle du triangle DEF a la même grandeur ?",
+    "image": "figures/EX-G017-M-01",
+    "answer": {
+      "value": "DFE",
+      "accepted": [
+        "EFD",
+        "l'angle DFE",
+        "l'angle EFD",
+        "angle DFE",
+        "angle EFD",
+        "F",
+        "l'angle F",
+        "angle F",
+        "l'angle en F",
+        "angle en F",
+        "l'angle de sommet F",
+        "angle de sommet F"
+      ]
+    },
+    "solution_steps": [
+      "Les côtés ED et EF portent le même petit trait : le triangle DEF est isocèle en E.",
+      "Dans un triangle isocèle, les deux angles qui touchent le troisième côté, ici DF, ont la même grandeur.",
+      "Ces deux angles ont pour sommets D et F : l'angle EDF, marqué, et l'angle **DFE**, de sommet F.",
+      "L'angle DEF, de sommet E, n'a pas la même grandeur que les deux autres : il ne l'aurait que si le triangle était équilatéral, et ici DF n'est pas codé comme ED."
+    ],
+    "hint": "Repère d'abord les deux côtés de même longueur.",
+    "estimated_duration_s": 75,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 3, CM1, La géométrie plane : « Connaître les propriétés de parallélisme des côtés opposés, des égalités de longueurs et d'angles pour les figures usuelles : triangle rectangle, triangle isocèle, triangle équilatéral, carré, rectangle et losange. »"
+  },
+  {
+    "id": "EX-G017-M-02",
+    "skill_id": "G017",
+    "level": "maitrise",
+    "type": "vrai_faux",
+    "statement": "Nina dit : « Le triangle GHI est rectangle, mais il n'est pas isocèle. »\n\nA-t-elle raison ?",
+    "image": "figures/EX-G017-M-02",
+    "answer": {
+      "value": false
+    },
+    "solution_steps": [
+      "Le petit carré en H code un angle droit : le triangle GHI est rectangle en H.",
+      "Les côtés HG et HI portent le même petit trait : ils ont la même longueur, le triangle est isocèle en H.",
+      "GHI est rectangle et isocèle : c'est un triangle rectangle isocèle. Nina a **tort** : un triangle rectangle peut aussi être isocèle.",
+      "Comme dans tout triangle isocèle, ses deux autres angles, en G et en I, ont la même grandeur."
+    ],
+    "hint": "Lis les deux codages, l'un après l'autre.",
+    "estimated_duration_s": 50,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 3, CM1, La géométrie plane : « Reconnaître et nommer les figures suivantes en faisant référence à leur définition : triangle, triangle rectangle, triangle isocèle, triangle équilatéral, quadrilatère, carré, rectangle et losange »"
+  }
+]

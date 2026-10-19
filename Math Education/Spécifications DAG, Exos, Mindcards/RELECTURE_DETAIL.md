@@ -228,6 +228,325 @@ Complète l'égalité : … - 32 = 45
 
 ---
 
+## `G001` · Se repérer : positions relatives et plan — CP, difficulté 1
+
+*Situer des objets les uns par rapport aux autres avec le vocabulaire gauche, droite, sur, sous, entre, devant, derrière, au-dessus, en dessous, et retrouver un objet dont la position est indiquée sur un plan. Gauche et droite sont toujours celles du plan vu par l'élève, jamais celles d'un personnage qui lui fait face. Figure nécessaire : un plan vu de dessus (classe, cour), avec des objets étiquetés.*
+
+> « Connaitre et utiliser le vocabulaire lié aux positions relatives. » — *Cycle 2, Cours préparatoire, Espace et géométrie, Le repérage dans l'espace*
+> « L'élève sait repérer la position de ses camarades sur un plan de la classe. » — *Cycle 2, Cours préparatoire, Espace et géométrie, Le repérage dans l'espace*
+> « L'élève sait retrouver un objet caché dont la position est indiquée sur un plan. » — *Cycle 2, Cours préparatoire, Espace et géométrie, Le repérage dans l'espace*
+
+**EX-G001-D-01** — decouverte, qcm, 45 s
+
+Voici le plan de la classe. Quel objet est entre le tableau et l'armoire ?
+
+- **a.** L'évier
+  <br>*Erreur visée :* L'élève prend un objet qui est à côté du tableau, mais de l'autre côté : sur le plan, l'évier est à gauche du tableau, il n'est pas entre le tableau et l'armoire.
+- **b.** La porte ✅
+- **c.** Le tapis
+  <br>*Erreur visée :* L'élève prend l'objet le plus proche du tableau : le tapis est en dessous du tableau sur le plan, il n'est pas sur le chemin qui va du tableau à l'armoire.
+
+*Corrigé.* (1) Sur le plan, on cherche le tableau et l'armoire : ils sont tous les deux en haut, le long du mur. (2) On glisse le doigt du tableau jusqu'à l'armoire, le long du mur : on passe sur un seul objet, la porte. (3) La porte a le tableau d'un côté et l'armoire de l'autre côté : elle est entre le tableau et l'armoire. (4) L'évier est juste avant le tableau, de l'autre côté ; le tapis est en dessous du tableau. Ni l'un ni l'autre n'est entre le tableau et l'armoire.
+
+*Indice.* Pose ton doigt sur le tableau, puis glisse-le jusqu'à l'armoire. Sur quel objet passes-tu ?
+
+**EX-G001-D-02** — decouverte, vrai_faux, 40 s
+
+Vrai ou faux : sur le plan, l'aquarium est à droite du tapis.
+
+**Réponse :** True
+
+*Corrigé.* (1) Sur le plan, on cherche le tapis et l'aquarium : ils sont à la même hauteur, l'un à côté de l'autre. (2) La gauche et la droite sont celles du plan, tel que tu le regardes : le tapis est du côté de ta main gauche, l'aquarium du côté de ta main droite. (3) L'aquarium est donc à droite du tapis : la phrase est vraie. (4) On peut le dire à l'envers : le tapis est à gauche de l'aquarium.
+
+*Indice.* Regarde le plan : lequel des deux objets est du côté de ta main droite ?
+
+**EX-G001-E-01** — entrainement, texte, 45 s
+
+Sur le plan, quel élève est assis juste à droite de Tom ?
+
+**Réponse :** Ali
+
+*Corrigé.* (1) On cherche Tom sur le plan : il est au milieu de la rangée la plus proche du tableau. (2) Juste à droite de Tom, c'est la place d'à côté dans la même rangée, du côté de ta main droite : c'est Ali. (3) Zoé est à gauche de Tom. Mia est derrière Tom, dans la rangée suivante : elle n'est pas à droite de lui. (4) Les élèves regardent le tableau, comme toi quand tu regardes le plan : leur droite est la même que la tienne.
+
+*Indice.* Trouve Tom, puis regarde la place d'à côté, du côté de ta main droite.
+
+**EX-G001-E-02** — entrainement, qcm, 45 s
+
+Le ballon est caché entre l'arbre et le banc. Dans quelle case est-il ?
+
+- **a.** La case A
+  <br>*Erreur visée :* L'élève prend une case qui touche presque l'arbre, mais elle est de l'autre côté de l'arbre : pour aller de l'arbre au banc, on ne passe pas par A.
+- **b.** La case B
+  <br>*Erreur visée :* L'élève prend une case qui touche le banc, mais elle est de l'autre côté du banc : pour aller de l'arbre au banc, on ne passe pas par B.
+- **c.** La case C ✅
+- **d.** La case D
+  <br>*Erreur visée :* L'élève prend une case qui touche l'arbre, mais elle est entre l'arbre et les fleurs, pas entre l'arbre et le banc.
+
+*Corrigé.* (1) On cherche l'arbre et le banc sur le plan : l'arbre est en haut, le banc en bas. (2) Pour aller de l'arbre au banc, on descend tout droit : la case C est sur ce chemin. Elle a l'arbre au-dessus d'elle et le banc en dessous. (3) La case A est au-dessus de l'arbre, et la case B en dessous du banc : elles ne sont pas entre les deux. La case D est entre l'arbre et les fleurs. (4) Le ballon est dans la case C.
+
+*Indice.* Glisse ton doigt de l'arbre jusqu'au banc. Sur quelle case passes-tu ?
+
+**EX-G001-M-01** — maitrise, qcm, 60 s
+
+Quel objet est à droite de la porte et à gauche de l'armoire ?
+
+- **a.** Le bureau ✅
+- **b.** Le piano
+  <br>*Erreur visée :* L'élève ne vérifie qu'une indication : le piano est bien à droite de la porte, mais il est à droite de l'armoire, pas à gauche.
+- **c.** L'évier
+  <br>*Erreur visée :* L'élève ne vérifie qu'une indication : l'évier est bien à gauche de l'armoire, mais il est à gauche de la porte, pas à droite.
+
+*Corrigé.* (1) Il y a deux indications : le bon objet doit respecter les deux. (2) À droite de la porte, il y a trois objets : le bureau, l'armoire et le piano. (3) Parmi eux, un seul est à gauche de l'armoire : le bureau. Il est entre la porte et l'armoire. (4) Le piano est à droite de la porte, mais pas à gauche de l'armoire. L'évier est à gauche de l'armoire, mais pas à droite de la porte.
+
+*Indice.* Cherche d'abord les objets qui sont à droite de la porte. Lequel est à gauche de l'armoire ?
+
+**EX-G001-M-02** — maitrise, texte, 60 s
+
+Les élèves regardent le tableau. Qui est assis juste derrière Léa ?
+
+**Réponse :** Noé
+
+*Corrigé.* (1) Les élèves regardent le tableau : devant eux, c'est le côté du tableau, en haut du plan. Derrière eux, c'est l'autre côté, vers le bas du plan. (2) On cherche Léa : elle est au milieu de la rangée du milieu. (3) Juste derrière Léa, c'est la place juste en dessous sur le plan, dans la rangée suivante : c'est Noé. (4) Kim est devant Léa, plus près du tableau. Lou et Ben sont à côté de Léa, à sa gauche et à sa droite.
+
+*Indice.* Où est le tableau sur le plan ? Derrière Léa, c'est du côté opposé au tableau.
+
+---
+
+## `G003` · Carré, rectangle, triangle, disque : reconnaître et nommer — CP, difficulté 1
+
+*Reconnaître et nommer le carré, le rectangle, le triangle et le disque, seuls ou dans un assemblage, et donner le nombre de sommets et de côtés d'un polygone. Au CP la reconnaissance est perceptive : le carré n'est pas présenté comme un rectangle particulier. Figure nécessaire : formes planes repérées par des lettres, isolées ou assemblées (type tangram), dans des positions variées.*
+
+> « Nommer le disque, le carré, le rectangle et le triangle. » — *Cycle 2, Cours préparatoire, Espace et géométrie, La géométrie plane*
+> « Donner une première description du carré, du rectangle, du triangle en utilisant les termes « sommet » et « côté ». » — *Cycle 2, Cours préparatoire, Espace et géométrie, La géométrie plane*
+> « L'élève sait donner le nombre de sommets et le nombre de côtés d'un polygone qui lui est présenté. » — *Cycle 2, Cours préparatoire, Espace et géométrie, La géométrie plane*
+
+**EX-G003-D-01** — decouverte, qcm, 30 s
+
+Quelle forme est un carré ?
+
+- **a.** La forme A
+  <br>*Erreur visée :* L'élève voit quatre côtés et quatre coins comme celui d'une feuille, et s'arrête là. Mais la forme A a deux côtés longs et deux côtés courts : c'est un rectangle, pas un carré.
+- **b.** La forme B ✅
+- **c.** La forme C
+  <br>*Erreur visée :* L'élève voit quatre côtés de même longueur. Mais les coins de la forme C sont pointus d'un côté et écrasés de l'autre : elle est aplatie, ce n'est pas un carré.
+
+*Corrigé.* (1) Un carré a quatre côtés, tous de la même longueur, et quatre coins pareils au coin d'une feuille. (2) La forme A a quatre côtés, mais deux sont longs et deux sont courts : c'est un rectangle. (3) La forme C a quatre côtés de même longueur, mais ses coins ne ressemblent pas au coin d'une feuille : deux sont pointus, deux sont écrasés. (4) La forme B a quatre côtés de même longueur et quatre coins comme celui d'une feuille : le carré, c'est la forme B.
+
+*Indice.* Regarde la longueur des côtés, puis les coins de chaque forme.
+
+**EX-G003-D-02** — decouverte, numerique, 40 s
+
+Combien de côtés a cette forme ?
+
+**Réponse :** 6
+
+*Corrigé.* (1) Un côté est un trait droit du bord de la forme, qui va d'un coin au coin suivant. Les coins sont les sommets. (2) On pose le doigt sur un coin et on fait le tour de la forme en comptant les traits : 1, 2, 3, 4, 5, 6. (3) La forme a 6 côtés, et 6 sommets : autant de coins que de côtés. (4) Le coin rentrant, au creux de la forme, est un sommet comme les autres. Celui qui l'oublie trouve 5 côtés ; celui qui pense « quatre côtés comme un rectangle » en trouve 4.
+
+*Indice.* Fais le tour de la forme avec ton doigt et compte les traits.
+
+**EX-G003-E-01** — entrainement, texte, 45 s
+
+Les pièces A et B sont collées. Quelle forme font-elles ensemble ?
+
+**Réponse :** rectangle
+
+*Corrigé.* (1) Chaque pièce a trois côtés : A et B sont deux triangles. (2) On suit avec le doigt le bord des deux pièces réunies, sans le trait qui les sépare : ce bord a quatre côtés et quatre coins comme celui d'une feuille. (3) Deux côtés sont longs et deux sont courts : ce n'est pas un carré. (4) Les deux triangles forment ensemble un rectangle. Deux triangles collés ne font pas forcément un triangle.
+
+*Indice.* Suis avec ton doigt le bord des deux pièces ensemble, sans le trait du milieu.
+
+**EX-G003-E-02** — entrainement, numerique, 45 s
+
+Combien de triangles vois-tu sur la figure ?
+
+**Réponse :** 3
+
+*Corrigé.* (1) Un triangle a trois côtés et trois sommets, quelle que soit sa position. (2) En haut, de gauche à droite : un triangle dont le coin droit est en haut à gauche, un triangle posé sur sa pointe, un triangle tout aplati. Ils ont chacun trois côtés. (3) En bas, le carré posé sur sa pointe a quatre côtés, le rectangle aussi, et le disque n'a pas de côté : ce ne sont pas des triangles. (4) Il y a 3 triangles. Un triangle reste un triangle, même renversé ou aplati.
+
+*Indice.* Pour chaque forme, compte ses côtés.
+
+**EX-G003-M-01** — maitrise, qcm, 60 s
+
+Quelles formes sont des carrés ?
+
+- **a.** Seulement la forme 2
+  <br>*Erreur visée :* L'élève croit qu'un carré posé sur la pointe n'est plus un carré. Tourner une forme ne change ni ses côtés ni ses coins : la forme 1 est un carré.
+- **b.** Les formes 1, 2 et 3
+  <br>*Erreur visée :* L'élève voit trois formes à quatre côtés de même longueur. Mais la forme 3 est allongée : ses coins du haut et du bas sont pointus, ceux des côtés sont écrasés. Ce n'est pas un carré.
+- **c.** Les formes 1 et 2 ✅
+
+*Corrigé.* (1) Un carré a quatre côtés de même longueur et quatre coins pareils au coin d'une feuille, qu'il soit posé à plat ou sur sa pointe. (2) La forme 2 est un carré posé à plat. (3) La forme 1 est posée sur sa pointe. Si on tourne la feuille, elle se pose à plat : ses quatre côtés sont égaux et ses coins sont comme celui d'une feuille. C'est un carré. (4) La forme 3 a quatre côtés de même longueur, mais elle est allongée : ses coins du haut et du bas sont pointus, ceux de gauche et de droite sont écrasés. Même en tournant la feuille, ce n'est pas un carré. (5) Les carrés sont les formes 1 et 2.
+
+*Indice.* Pose le coin d'une feuille sur l'écran, contre chaque coin des formes, ou imagine que tu les tournes.
+
+**EX-G003-M-02** — maitrise, numerique, 45 s
+
+Combien de sommets du triangle colorié sont des sommets du carré ?
+
+**Réponse :** 2
+
+*Corrigé.* (1) Le triangle colorié a trois sommets : on regarde où est chacun d'eux. (2) Deux sommets du triangle sont dans les deux coins du bas du carré : ce sont des sommets du carré. (3) Le troisième sommet du triangle touche le côté du haut du carré, mais pas dans un coin : ce n'est pas un sommet du carré. (4) Réponse : 2. Un sommet du carré, c'est un de ses quatre coins, pas n'importe quel point de son bord.
+
+*Indice.* Un sommet du carré, c'est un de ses quatre coins.
+
+---
+
+## `G004` · Points alignés et droite passant par deux points — CP, difficulté 1
+
+*Dire si trois points sont alignés, à vue quand il n'y a aucun doute, sinon en lisant une règle déjà posée sur la figure, et reconnaître la droite qui passe par deux points donnés (horizontale, verticale ou oblique). Le geste (poser la règle, tracer) ne s'évalue pas à l'écran. Figure nécessaire : points marqués d'une croix et d'une lettre, droites tracées, règle posée en option.*
+
+> « Repérer visuellement des alignements. » — *Cycle 2, Cours préparatoire, Espace et géométrie, La géométrie plane*
+> « L'élève sait dire si trois points sont alignés ou non en utilisant la règle dans les cas où la réponse n'est pas perceptible de façon évidente. » — *Cycle 2, Cours préparatoire, Espace et géométrie, La géométrie plane*
+> « L'élève trace une droite passant par deux points à l'aide d'une règle. » — *Cycle 2, Cours préparatoire, Espace et géométrie, La géométrie plane*
+
+**EX-G004-D-01** — decouverte, vrai_faux, 30 s
+
+Lou dit que les points R, S et T sont alignés. A-t-elle raison ?
+
+**Réponse :** True
+
+*Corrigé.* (1) Des points sont alignés quand un même trait droit passe par tous ces points. (2) On imagine le trait droit qui va de R à T : il passe exactement par S. (3) Le bord d'une feuille posé sur l'écran, contre R et T, toucherait S. (4) R, S et T sont alignés : Lou a raison. Le point U, lui, est loin de ce trait.
+
+*Indice.* Pose le bord d'une feuille sur l'écran, contre R et T. Touche-t-il S ?
+
+**EX-G004-D-02** — decouverte, qcm, 40 s
+
+Quel point est aligné avec P et Q ?
+
+- **a.** Le point A
+  <br>*Erreur visée :* L'élève cherche un point entre P et Q. Mais A est à côté du trait qui va de P à Q : il n'est pas aligné avec eux. Un point aligné peut être plus loin, au-delà de Q.
+- **b.** Le point B ✅
+- **c.** Le point C
+  <br>*Erreur visée :* L'élève croit que « aligné » veut dire « à la même hauteur ». C est à la même hauteur que Q, mais le trait qui passe par P et Q monte : il ne passe pas par C.
+
+*Corrigé.* (1) On imagine le trait droit qui passe par P et par Q, et on le prolonge au-delà de Q. (2) Ce trait monte vers la droite et arrive exactement sur B : P, Q et B sont alignés. (3) A est entre P et Q, mais à côté du trait. C est à la même hauteur que Q, mais le trait monte : il passe bien au-dessus de C. (4) Le point aligné avec P et Q est le point B, même s'il est loin d'eux.
+
+*Indice.* Pose le bord d'une feuille sur l'écran, contre P et Q, et prolonge le trait.
+
+**EX-G004-E-01** — entrainement, qcm, 45 s
+
+Quelle droite passe par le point P et par le point Q ?
+
+- **a.** La droite 1 ✅
+- **b.** La droite 2
+  <br>*Erreur visée :* L'élève s'arrête au premier point : la droite 2 passe bien par P, mais elle passe loin de Q.
+- **c.** La droite 3
+  <br>*Erreur visée :* L'élève choisit la droite qui va dans la même direction que P et Q. Mais elle passe à côté des deux points, sans toucher ni P ni Q.
+
+*Corrigé.* (1) Une droite qui passe par deux points touche ces deux points. (2) La droite 1 passe exactement par P et par Q : c'est la droite 1. (3) La droite 2 passe par P, mais loin de Q. (4) La droite 3 va dans la même direction que la droite 1, mais elle passe à côté de P et à côté de Q : elle ne passe par aucun des deux.
+
+*Indice.* Suis chaque droite avec ton doigt. Touche-t-elle P ? Touche-t-elle Q ?
+
+**EX-G004-E-02** — entrainement, vrai_faux, 30 s
+
+Léo veut tracer la droite qui passe par A et par B. A-t-il réussi ?
+
+**Réponse :** False
+
+*Corrigé.* (1) La droite tracée passe bien par A. (2) Mais en suivant le trait jusqu'au bout, il passe sous le point B, sans le toucher. (3) Léo n'a pas réussi : son trait devait toucher A et B à la fois. (4) Une droite qui passe par deux points doit toucher les deux points, pas un seul.
+
+*Indice.* Suis la droite avec ton doigt. Touche-t-elle A ? Touche-t-elle B ?
+
+**EX-G004-M-01** — maitrise, numerique, 60 s
+
+Combien d'autres points sont alignés avec A et B ?
+
+**Réponse :** 3
+
+*Corrigé.* (1) On imagine le trait droit qui passe par A et par B, et on le prolonge des deux côtés. (2) Entre A et B, le trait passe par E. Au-delà de B, il passe par C, puis par F. (3) D, G et H sont loin de ce trait : ils ne sont pas alignés avec A et B. (4) Il y a 3 autres points alignés avec A et B : E, C et F. Un point aligné peut être entre les deux points ou au-delà.
+
+*Indice.* Pose le bord d'une feuille sur l'écran, contre A et B, et prolonge le trait des deux côtés.
+
+**EX-G004-M-02** — maitrise, texte, 45 s
+
+Jade voulait aligner quatre points. Elle en a mal placé un. Lequel ?
+
+**Réponse :** M
+
+*Corrigé.* (1) Quatre points alignés sont tous sur un même trait droit. (2) Le trait droit qui va de K à N passe exactement par L : K, L et N sont alignés. (3) M est au-dessus de ce trait : il n'est pas aligné avec les trois autres. (4) Jade a mal placé le point M.
+
+*Indice.* Cherche trois points que le bord d'une même feuille pourrait toucher.
+
+---
+
+## `G005` · Reconnaître et nommer les solides usuels — CP, difficulté 1
+
+*Reconnaître le cube, la boule, le cône, le cylindre et le pavé, y compris dans des objets familiers (boîte à chaussures, boîte de conserve, balle), nommer le cube, le pavé et la boule, et décrire un cube ou un pavé par ses faces : combien il en a, et si ce sont des carrés ou des rectangles. Au CP le cube n'est pas considéré comme un pavé. La manipulation d'objets réels, qui fonde l'attendu, ne se fait pas à l'écran. Figure nécessaire : solides dessinés en perspective, repérés par des lettres.*
+
+> « Reconnaitre les solides usuels suivants : cube, boule, cône, cylindre, pavé. » — *Cycle 2, Cours préparatoire, Espace et géométrie, Les solides*
+> « Nommer un cube, un pavé et une boule. » — *Cycle 2, Cours préparatoire, Espace et géométrie, Les solides*
+> « Un cube ou un pavé lui étant donné, l'élève sait le nommer et le décrire en parlant de ses faces : nombre de faces et nature des faces (carré ou rectangle). » — *Cycle 2, Cours préparatoire, Espace et géométrie, Les solides*
+> « Au CP, où le classement se fait sur des critères visuels, le cube n'est pas considéré comme un pavé. » — *Cycle 2, Cours préparatoire, Espace et géométrie, Les solides*
+
+**EX-G005-D-01** — decouverte, qcm, 30 s
+
+Quel solide est un cube ?
+
+- **a.** A
+  <br>*Erreur visée :* L'élève voit une boîte avec des faces plates et des coins, comme un cube. Mais les faces du solide A sont allongées : ce sont des rectangles. C'est un pavé.
+- **b.** B ✅
+- **c.** C
+  <br>*Erreur visée :* L'élève voit un solide qui tient debout avec un dessus plat. Mais le solide C a un dessus rond et il peut rouler : c'est un cylindre.
+
+*Corrigé.* (1) Un cube a des faces qui sont toutes des carrés, toutes pareilles. (2) Le solide B : sa face de devant est un carré, et toutes ses faces ont la même taille. Le solide B est un cube. (3) Le solide A a des faces allongées : ce sont des rectangles. C'est un pavé, pas un cube. (4) Le solide C a un dessus rond et il peut rouler : c'est un cylindre.
+
+*Indice.* Regarde la face de devant de chaque solide.
+
+**EX-G005-D-02** — decouverte, numerique, 45 s
+
+Combien de faces a ce solide ?
+
+**Réponse :** 6
+
+*Corrigé.* (1) Sur le dessin, on voit 3 faces : celle de devant, celle du dessus et celle de droite. (2) Les traits en pointillés montrent ce qui est caché derrière. Il y a d'autres faces : derrière, dessous et à gauche. (3) On compte toutes les faces : devant, derrière, dessus, dessous, à gauche, à droite. 1, 2, 3, 4, 5, 6. (4) Ce solide a 6 faces. C'est un cube : ses 6 faces sont des carrés.
+
+*Indice.* Une face peut être cachée derrière le solide.
+
+**EX-G005-E-01** — entrainement, vrai_faux, 30 s
+
+Lina dit : « Ce solide est un cube. » A-t-elle raison ?
+
+**Réponse :** False
+
+*Corrigé.* (1) Un cube a toutes ses faces carrées, et toutes pareilles. (2) Regarde la face coloriée, devant : elle est allongée, plus longue que haute. Ce n'est pas un carré, c'est un rectangle. (3) Ce solide a des faces rectangles : c'est un pavé, pas un cube. Lina a tort. (4) Un pavé ressemble à une boîte à chaussures ; un cube ressemble à un dé.
+
+*Indice.* Regarde la forme de la face coloriée.
+
+**EX-G005-E-02** — entrainement, qcm, 40 s
+
+Une boîte de conserve a la forme d'un de ces solides. Lequel ?
+
+- **a.** A
+  <br>*Erreur visée :* La boîte de conserve roule, comme une boule. Mais elle a un dessus plat et un dessous plat ; une boule n'a rien de plat.
+- **b.** B
+  <br>*Erreur visée :* Le cône a un fond plat et rond, comme la boîte. Mais il finit en pointe, alors que la boîte a un dessus plat et rond, pareil à son fond.
+- **c.** C ✅
+
+*Corrigé.* (1) Une boîte de conserve a un dessus plat et rond, et un dessous plat et rond. Entre les deux, son bord est droit. (2) Le solide C a lui aussi un dessus rond et un dessous rond, tout pareils, et un bord droit. (3) La boîte de conserve a la forme du solide C : un cylindre. (4) Le solide A est une boule, comme une balle : il n'a rien de plat. Le solide B est un cône : il finit en pointe.
+
+*Indice.* Pense au dessus et au dessous d'une boîte de conserve.
+
+**EX-G005-M-01** — maitrise, texte, 45 s
+
+Comment s'appelle le solide B ?
+
+**Réponse :** pavé
+
+*Corrigé.* (1) Le solide A a des faces toutes carrées : c'est un cube. (2) Le solide B ressemble à A, mais ses faces sont allongées : ce sont des rectangles. (3) Un solide comme une boîte à chaussures, avec des faces rectangles, s'appelle un pavé. (4) Le solide B n'est pas un cube : un cube a toutes ses faces carrées.
+
+*Indice.* Compare la face de devant de A et celle de B.
+
+**EX-G005-M-02** — maitrise, vrai_faux, 45 s
+
+Noé dit : « La face coloriée est un carré. » A-t-il raison ?
+
+**Réponse :** True
+
+*Corrigé.* (1) Ce solide a la forme d'un dé : c'est un cube. (2) Un cube a toutes ses faces carrées : la face du dessus aussi. (3) Sur le dessin, la face du dessus est vue de biais, comme quand on regarde une table de côté : elle a l'air penchée. Mais en vrai, c'est un carré. (4) Noé a raison.
+
+*Indice.* Quel est ce solide ? Comment sont toutes ses faces ?
+
+---
+
 ## `P001` · Comparer et mesurer des longueurs avec une règle graduée — CP, difficulté 1
 
 *Dire lequel de deux objets ou de deux segments est le plus long, par superposition, report d'un étalon ou mesure. Mesurer la longueur d'un segment en centimètres entiers avec une règle graduée, en plaçant le zéro à une extrémité. Figure nécessaire : le segment et la règle doivent être dessinés.*
@@ -848,6 +1167,166 @@ Max a 14 euros, en gagne 5, en dépense et finit avec 12. Combien a-t-il dépens
 *Corrigé.* (1) Première étape : Max gagne 5 euros, il en a plus. 14 + 5 = 19. (2) Deuxième étape : il dépense, et il passe de 19 euros à 12 euros. Ce qu'il a dépensé, c'est ce qui manque à 12 pour faire 19 : 19 - 12 = 7. (3) On vérifie dans l'ordre de l'histoire : 14 + 5 = 19, puis 19 - 7 = 12. Max a dépensé 7 euros.
 
 *Indice.* Combien Max a-t-il d'argent juste avant de dépenser ?
+
+---
+
+## `G002` · Suivre et coder un déplacement sur un quadrillage — CP, difficulté 2
+
+*Exécuter sur un quadrillage une suite d'instructions (avancer, reculer, tourner à droite, tourner à gauche d'un quart de tour) et dire sur quelle case arrive le robot ; choisir, parmi plusieurs codes, celui qui mène d'une case à une autre. Au plus dix instructions, dont deux virages. La difficulté propre est l'orientation : tourner à droite dépend de la direction dans laquelle le robot regarde. Figure nécessaire : quadrillage avec le robot et sa direction (flèche), des cases repérées par des lettres, éventuellement le chemin tracé.*
+
+> « L'élève comprend et utilise les instructions suivantes : avancer, reculer, tourner à droite, tourner à gauche, monter, descendre. » — *Cycle 2, Cours préparatoire, Espace et géométrie, Le repérage dans l'espace*
+> « Si un robot est disponible, l'élève peut programmer son déplacement sur un tapis quadrillé. » — *Cycle 2, Cours préparatoire, Espace et géométrie, Le repérage dans l'espace*
+> « Les déplacements à programmer comprennent au maximum dix instructions, dont deux virages. » — *Cycle 2, Cours préparatoire, Espace et géométrie, Le repérage dans l'espace*
+
+**EX-G002-D-01** — decouverte, texte, 60 s
+
+Le robot avance de 4 cases, tourne à gauche, avance de 2 cases. Sur quelle lettre arrive-t-il ?
+
+**Réponse :** C
+
+*Corrigé.* (1) Au départ, le robot regarde vers le haut : la pointe du triangle montre le haut. (2) Il avance de 4 cases vers le haut. On compte les cases où il arrive, pas celle d'où il part : 1, 2, 3, 4. (3) Il tourne à gauche. Il regarde vers le haut, comme toi devant le quadrillage : sa gauche est la même que la tienne. Il regarde alors vers la gauche. (4) Il avance de 2 cases vers la gauche : 1, 2. Il arrive sur la lettre C. (5) En comptant la case de départ, on s'arrête trop tôt et on arrive sur B. En tournant à droite, on arrive sur A. En oubliant la dernière instruction, on reste sur D.
+
+*Indice.* Le robot, c'est le triangle orange. Avance-le case par case avec ton doigt. Ne compte pas la case d'où il part.
+
+**EX-G002-D-02** — decouverte, qcm, 45 s
+
+Le robot recule de 3 cases. Sur quelle lettre arrive-t-il ?
+
+- **a.** La lettre A
+  <br>*Erreur visée :* L'élève fait avancer le robot au lieu de le faire reculer : reculer, c'est se déplacer vers l'arrière, à l'opposé de la pointe du triangle.
+- **b.** La lettre B ✅
+- **c.** La lettre C
+  <br>*Erreur visée :* L'élève compte la case de départ comme la première : le robot ne recule alors que de 2 cases.
+
+*Corrigé.* (1) Le robot regarde vers la droite : la pointe du triangle montre la droite. (2) Reculer, c'est se déplacer sans tourner, vers l'arrière : le robot va vers la gauche du quadrillage. (3) Il recule de 3 cases, sans compter celle d'où il part : 1, 2, 3. Il arrive sur la lettre B. (4) En avançant de 3 cases, il serait arrivé sur A, de l'autre côté.
+
+*Indice.* Le robot ne se retourne pas : il va à reculons, du côté opposé à la pointe.
+
+**EX-G002-E-01** — entrainement, texte, 75 s
+
+Le robot avance d'une case, tourne à droite, avance de 4 cases. Sur quelle lettre arrive-t-il ?
+
+**Réponse :** A
+
+*Corrigé.* (1) Au départ, le robot regarde vers le bas : la pointe du triangle montre le bas. (2) Il avance d'une case vers le bas. (3) Il tourne à droite. Attention : il regarde vers le bas, il te fait face. Sa droite est du côté de ta main gauche. Après avoir tourné, il regarde vers la gauche du quadrillage. (4) Il avance de 4 cases vers la gauche : 1, 2, 3, 4. Il arrive sur la lettre A. (5) Tourner vers ta droite à toi mène sur B. Oublier de tourner mène sur C. Compter la case où il tourne mène sur D.
+
+*Indice.* Mets-toi à la place du robot, qui regarde vers le bas. De quel côté est sa main droite ?
+
+**EX-G002-E-02** — entrainement, qcm, 60 s
+
+Quel programme fait suivre au robot le chemin tracé ?
+
+- **a.** Avance de 4 cases, tourne à gauche, avance de 3 cases. ✅
+- **b.** Avance de 4 cases, tourne à droite, avance de 3 cases.
+  <br>*Erreur visée :* L'élève confond la gauche et la droite : le robot regarde vers le haut et le chemin part vers la gauche du quadrillage, il doit donc tourner à gauche.
+- **c.** Avance de 5 cases, tourne à gauche, avance de 4 cases.
+  <br>*Erreur visée :* L'élève compte toutes les cases du chemin, y compris celle d'où part le robot et celle où il tourne. On ne compte que les cases où le robot arrive.
+
+*Corrigé.* (1) Le robot regarde vers le haut. Le chemin monte, puis part vers la gauche. (2) Il monte de 4 cases : on compte les cases où il arrive, pas celle d'où il part. (3) Pour partir vers la gauche, le robot, qui regarde vers le haut, tourne à gauche. (4) Puis il avance de 3 cases. Le bon programme est : avance de 4 cases, tourne à gauche, avance de 3 cases.
+
+*Indice.* Suis le chemin avec ton doigt et compte les cases où le robot arrive, une par une.
+
+**EX-G002-M-01** — maitrise, qcm, 75 s
+
+Quel programme mène le robot sur la lettre B ?
+
+- **a.** Avance de 4 cases, tourne à gauche, avance de 2 cases.
+  <br>*Erreur visée :* L'élève inverse les deux nombres : le robot descendrait de 4 cases, puis irait de 2 cases vers la droite, et il arriverait sur C.
+- **b.** Avance de 2 cases, tourne à droite, avance de 4 cases.
+  <br>*Erreur visée :* L'élève tourne vers sa propre droite. Le robot regarde vers le bas, il lui fait face : la droite du robot est du côté de la main gauche de l'élève, et le robot arriverait sur A.
+- **c.** Avance de 2 cases, tourne à gauche, avance de 4 cases. ✅
+
+*Corrigé.* (1) Le robot regarde vers le bas. Pour aller sur B, il doit descendre de 2 cases, puis aller de 4 cases vers la droite du quadrillage. (2) Pour aller vers la droite du quadrillage, un robot qui regarde vers le bas tourne à sa gauche : il te fait face, sa gauche est du côté de ta main droite. (3) Le programme est donc : avance de 2 cases, tourne à gauche, avance de 4 cases. (4) En tournant à droite, il irait sur A ; en descendant d'abord de 4 cases, il arriverait sur C.
+
+*Indice.* Imagine que tu es le robot et que tu regardes vers le bas. De quel côté est ta gauche ?
+
+**EX-G002-M-02** — maitrise, texte, 90 s
+
+Le robot avance de 3 cases, tourne à droite, avance de 2 cases, tourne à droite, recule d'une case. Sur quelle lettre arrive-t-il ?
+
+**Réponse :** D
+
+*Corrigé.* (1) Au départ, le robot regarde vers la gauche. Il avance de 3 cases vers la gauche. (2) Premier virage à droite : un robot qui regarde vers la gauche a sa droite vers le haut du quadrillage. Il avance de 2 cases vers le haut. (3) Second virage à droite : il regardait vers le haut, il regarde alors vers la droite du quadrillage. (4) Il recule d'une case : il va à l'opposé de la pointe, donc d'une case vers la gauche. Il arrive sur la lettre D. (5) En avançant au lieu de reculer, on arrive sur A ; en oubliant le second virage, sur B ; en tournant à gauche au lieu de tourner à droite, sur C.
+
+*Indice.* Avance le robot pas à pas avec ton doigt, et à chaque virage, tourne-toi comme lui.
+
+---
+
+## `G006` · Compléter un carré ou un rectangle sur quadrillage — CP, difficulté 2
+
+*Sur papier quadrillé ou pointé, les côtés suivant les lignes du quadrillage : trouver le quatrième sommet d'un rectangle dont deux côtés consécutifs sont tracés, les sommets manquants d'un carré dont un côté est tracé, ou la figure correctement complétée parmi plusieurs. Le tracé lui-même ne s'évalue pas à l'écran. Figure nécessaire : quadrillage ou réseau pointé, côtés déjà tracés, sommets candidats repérés par des lettres.*
+
+> « Construire un carré, un rectangle, un triangle ou un assemblage de ces figures sur du papier quadrillé ou pointé. » — *Cycle 2, Cours préparatoire, Espace et géométrie, La géométrie plane*
+> « Sur du papier quadrillé ou pointé, les rectangles et les carrés ont des côtés qui suivent les lignes du quadrillage. » — *Cycle 2, Cours préparatoire, Espace et géométrie, La géométrie plane*
+> « L'élève sait compléter un rectangle dont deux côtés consécutifs sont déjà tracés, et compléter un carré dont un côté est déjà tracé. » — *Cycle 2, Cours préparatoire, Espace et géométrie, La géométrie plane*
+
+**EX-G006-D-01** — decouverte, texte, 40 s
+
+Pour finir le rectangle, quel point faut-il relier à A et à C ?
+
+**Réponse :** L
+
+*Corrigé.* (1) Sur le quadrillage, les côtés d'un rectangle suivent les lignes, et les côtés d'en face ont la même longueur. (2) De B à C, on monte de 5 carreaux. Le côté d'en face part de A : depuis A, on monte de 5 carreaux. (3) On arrive sur L, juste au-dessus de A et à la même hauteur que C. (4) Il faut relier L à A et à C. Avec K, le côté qui va vers A serait penché ; M est trop haut, à 7 carreaux de A.
+
+*Indice.* Depuis A, monte d'autant de carreaux que de B à C.
+
+**EX-G006-D-02** — decouverte, qcm, 40 s
+
+MN est un côté d'un carré. Quels sont ses deux autres sommets ?
+
+- **a.** P et Q
+  <br>*Erreur visée :* L'élève compte les lignes du quadrillage au lieu des carreaux : de M à P, il y a 3 lignes (celle de M comprise), mais seulement 2 carreaux. La figure serait un rectangle, pas un carré.
+- **b.** P et S
+  <br>*Erreur visée :* L'élève prend un point à gauche et un point à droite sans comparer les hauteurs : P est plus bas que S, le côté du haut serait penché.
+- **c.** R et S ✅
+
+*Corrigé.* (1) Les quatre côtés d'un carré ont la même longueur. (2) On compte les carreaux du côté MN : 3 carreaux. (3) Depuis M et depuis N, on monte de 3 carreaux : on arrive sur R et sur S. (4) Les deux autres sommets sont R et S. Avec P et Q, on monte de 2 carreaux seulement : on obtient un rectangle, pas un carré.
+
+*Indice.* Compte les carreaux du côté MN, puis monte d'autant.
+
+**EX-G006-E-01** — entrainement, vrai_faux, 40 s
+
+Nina devait finir un carré. Elle a tracé les côtés bleus. A-t-elle réussi ?
+
+**Réponse :** False
+
+*Corrigé.* (1) Les quatre côtés d'un carré ont la même longueur. (2) Le côté noir mesure 4 carreaux. Les côtés bleus qui montent mesurent 3 carreaux. (3) Les côtés n'ont pas tous la même longueur : Nina a tracé un rectangle. Elle n'a pas réussi. (4) Pour finir le carré, il fallait monter de 4 carreaux, autant que la longueur du côté noir.
+
+*Indice.* Compte les carreaux de chaque côté.
+
+**EX-G006-E-02** — entrainement, numerique, 45 s
+
+Il manque deux côtés au rectangle. Combien de carreaux mesure celui qui part de C ?
+
+**Réponse :** 5
+
+*Corrigé.* (1) Depuis C, le côté qui manque monte, en face du côté AB. (2) Dans un rectangle, les côtés d'en face ont la même longueur. (3) Le côté AB mesure 5 carreaux : le côté qui part de C mesure 5 carreaux. (4) Le côté BC, 7 carreaux, est à côté de lui, pas en face : il est égal à l'autre côté qui manque, celui du haut.
+
+*Indice.* Quel côté déjà tracé est en face de celui qui part de C ?
+
+**EX-G006-M-01** — maitrise, qcm, 60 s
+
+Le côté noir était déjà tracé. Quelle figure est un carré bien fini ?
+
+- **a.** La figure 1 ✅
+- **b.** La figure 2
+  <br>*Erreur visée :* L'élève voit quatre coins comme celui d'une feuille et une forme presque carrée, et s'arrête là. Mais la figure 2 monte de 4 carreaux pour un côté noir de 3 : c'est un rectangle, pas un carré.
+- **c.** La figure 3
+  <br>*Erreur visée :* L'élève vérifie que la figure monte de 3 carreaux et que le côté du haut mesure 3 carreaux. Mais les côtés penchés ne suivent pas les lignes du quadrillage : ce n'est pas un carré.
+
+*Corrigé.* (1) Dans chaque figure, le côté noir mesure 3 carreaux. Un carré a ses quatre côtés de même longueur et, sur le quadrillage, ils suivent les lignes. (2) Figure 1 : les côtés bleus descendent de 3 carreaux et suivent les lignes. Les quatre côtés mesurent 3 carreaux : c'est un carré. (3) Figure 2 : les côtés bleus montent de 4 carreaux pour un côté noir de 3. C'est un rectangle, pas un carré. (4) Figure 3 : les côtés bleus sont penchés, ils ne suivent pas les lignes : ce n'est pas un carré. (5) C'est la figure 1. On peut finir un carré au-dessus ou au-dessous du côté tracé : les deux sont justes.
+
+*Indice.* Compte les carreaux de chaque côté, et regarde s'il suit les lignes.
+
+**EX-G006-M-02** — maitrise, numerique, 75 s
+
+AB est un côté d'un carré. Combien des points C, D, E, F peuvent être ses sommets ?
+
+**Réponse :** 2
+
+*Corrigé.* (1) Le côté AB mesure 3 espaces entre deux points du papier. Les autres côtés du carré mesurent aussi 3 espaces et suivent les lignes de points. (2) Le carré peut être à gauche de AB ou à droite de AB : il y a deux carrés possibles. (3) À gauche, ses autres sommets sont à 3 espaces de A et de B : C en est un. À droite, ils sont à 3 espaces de A et de B : D en est un. (4) E n'est qu'à 2 espaces de A. F est plus bas que B : aucun carré ne passe par eux. (5) Réponse : 2 points, C et D. Celui qui ne cherche le carré que d'un côté n'en trouve qu'un.
+
+*Indice.* Le carré peut être d'un côté de AB ou de l'autre.
 
 ---
 
@@ -1885,6 +2364,329 @@ Max a 2 € et 135 centimes. Écris sa somme en euros, avec une virgule.
 
 ---
 
+## `G007` · Cube, pavé, pyramide : faces, arêtes et sommets — CE1, difficulté 2
+
+*Reconnaître et nommer le cube, le pavé, la pyramide, le cône et la boule, et décrire un cube, un pavé ou une pyramide à base carrée avec les mots face, arête et sommet : nombre et nature des faces (carrés, rectangles, triangles), nombre d'arêtes et de sommets. Les faits se retiennent (un cube a 6 faces, 12 arêtes, 8 sommets) mais se comptent d'abord sur le solide, ce que l'application remplace par un dessin : la manipulation ne se fait pas à l'écran. Figure nécessaire : solide en perspective cavalière, arêtes cachées en pointillés, sommets et faces marquables.*
+
+> « Décrire un cube, un pavé ou une pyramide en utilisant les termes « face », « sommet » et « arête ». » — *Cycle 2, Cours élémentaire première année, Espace et géométrie, Les solides*
+> « L'élève sait dénombrer les faces, les arêtes et les sommets d'un polyèdre qui lui est présenté. » — *Cycle 2, Cours élémentaire première année, Espace et géométrie, Les solides*
+> « Un pavé, un cube ou une pyramide à base carrée lui étant donné, l'élève sait le nommer, décrire ses faces (carrés, rectangles, triangles) et donner le nombre de ses arêtes et de ses sommets. » — *Cycle 2, Cours élémentaire première année, Espace et géométrie, Les solides*
+> « Les représentations planes de solides (sur papier) par les élèves eux-mêmes ne sont pas un objet d'apprentissage, cependant l'association de solides manipulés et de premières représentations planes de ces solides (photographies ou représentations en perspective cavalière) est proposée aux élèves. » — *Cycle 2, Cours élémentaire première année, Espace et géométrie, Les solides*
+
+**EX-G007-D-01** — decouverte, numerique, 40 s
+
+Combien de sommets a ce solide ?
+
+**Réponse :** 5
+
+*Corrigé.* (1) Un sommet, c'est un coin du solide : un point où des arêtes se rejoignent. (2) En haut, la pointe : 1 sommet. En bas, la base a 3 coins qu'on voit bien. (3) Derrière, à gauche, trois traits en pointillés se rejoignent : c'est un coin caché de la base. C'est bien un sommet. (4) On compte : la pointe, puis 2, 3, 4 pour les coins qu'on voit, et 5 pour le coin caché. Ce solide a 5 sommets.
+
+*Indice.* Cherche aussi le coin où se rejoignent les pointillés.
+
+**EX-G007-D-02** — decouverte, qcm, 45 s
+
+Quel solide est une pyramide à base carrée ?
+
+- **a.** A
+  <br>*Erreur visée :* L'élève choisit le solide pointu. Mais le cône a un fond rond et un côté arrondi : il n'a pas de faces plates en triangle, ce n'est pas une pyramide.
+- **b.** B
+  <br>*Erreur visée :* Le solide B est bien une pyramide, mais sa base n'a que 3 coins : c'est un triangle, pas un carré.
+- **c.** C ✅
+
+*Corrigé.* (1) Une pyramide a des faces plates en forme de triangle, qui se rejoignent en une pointe. La base, en bas, peut être un carré ou un triangle. (2) Le solide A finit en pointe, mais il n'a pas de faces plates en triangle : son fond est rond. C'est un cône. (3) Les solides B et C sont des pyramides. On compte les coins de leur base : B en a 3, sa base est un triangle ; C en a 4 : c'est la pyramide à base carrée. (4) La pyramide à base carrée est le solide C.
+
+*Indice.* Compte les coins de la base de chaque solide.
+
+**EX-G007-E-01** — entrainement, vrai_faux, 45 s
+
+Jade dit : « Toutes les faces de ce solide sont des triangles. » A-t-elle raison ?
+
+**Réponse :** False
+
+*Corrigé.* (1) Ce solide est une pyramide : ses faces de côté sont des triangles qui se rejoignent en haut, à la pointe. (2) Il a aussi une face en bas, la base. Elle a 4 côtés et 4 coins : ce n'est pas un triangle. C'est un carré, dessiné de biais. (3) Une face n'est pas un triangle : Jade a tort. (4) Ce solide a 5 faces : 4 triangles et 1 carré.
+
+*Indice.* N'oublie pas la face du dessous.
+
+**EX-G007-E-02** — entrainement, qcm, 60 s
+
+Combien d'arêtes a ce solide ?
+
+- **a.** 12 ✅
+- **b.** 9
+  <br>*Erreur visée :* L'élève ne compte que les traits pleins, les arêtes qu'il voit. Les 3 traits en pointillés sont des arêtes cachées derrière : elles comptent aussi.
+- **c.** 8
+  <br>*Erreur visée :* L'élève compte les coins du solide : ce sont les 8 sommets. Une arête est un bord, pas un coin.
+
+*Corrigé.* (1) Une arête, c'est un bord du solide, là où deux faces se touchent. (2) Sur le dessin, les arêtes cachées sont en pointillés. Il faut les compter aussi. (3) On compte les arêtes autour de la face de devant : 1, 2, 3, 4. Autour de la face de derrière : 5, 6, 7, 8. Celles qui vont de l'avant vers l'arrière : 9, 10, 11, 12. (4) Ce solide, un pavé, a 12 arêtes. On ne confond pas avec ses 8 sommets, les coins.
+
+*Indice.* Compte aussi les traits en pointillés.
+
+**EX-G007-M-01** — maitrise, numerique, 60 s
+
+Ce solide n'est ni un cube, ni un pavé, ni une pyramide. Combien d'arêtes a-t-il ?
+
+**Réponse :** 9
+
+*Corrigé.* (1) Une arête, c'est un bord du solide, là où deux faces se touchent. Les arêtes cachées sont en pointillés. (2) En haut, autour du triangle : 3 arêtes. En bas, autour de l'autre triangle : 3 arêtes, dont une cachée, en pointillés. (3) Debout, entre le haut et le bas : 3 arêtes. (4) On compte : 1, 2, 3 en haut ; 4, 5, 6 en bas ; 7, 8, 9 debout. Ce solide a 9 arêtes.
+
+*Indice.* Compte les arêtes du haut, puis celles du bas, puis celles qui sont debout.
+
+**EX-G007-M-02** — maitrise, vrai_faux, 75 s
+
+Mia dit : « Ces deux solides ont le même nombre d'arêtes. » A-t-elle raison ?
+
+**Réponse :** True
+
+*Corrigé.* (1) Le solide A est un cube, le solide B est un pavé. Ils n'ont pas la même taille ni la même forme de faces. (2) Cube : autour de la face de devant, 1, 2, 3, 4 ; autour de celle de derrière, 5, 6, 7, 8 ; de l'avant vers l'arrière, 9, 10, 11, 12. (3) Pavé : on compte de la même façon, pointillés compris, et on trouve 12 arêtes. (4) Les deux solides ont 12 arêtes : Mia a raison. Le nombre d'arêtes ne dépend pas de leur longueur.
+
+*Indice.* Compte les arêtes de chaque solide, en n'oubliant pas les pointillés.
+
+---
+
+## `G008` · Point, droite, segment, milieu, cercle et centre — CE1, difficulté 2
+
+*Employer à bon escient le vocabulaire point, droite, segment, milieu d'un segment, cercle, centre : distinguer un segment (deux extrémités) d'une droite (illimitée), reconnaître le milieu d'un segment (le point qui le partage en deux longueurs égales, trouvé par pliage en classe), reconnaître le cercle de centre donné passant par un point donné. Sans définition formelle. Figure nécessaire : points, segments et droites lettrés, points candidats au milieu, règle graduée posée en option, cercles avec leur centre.*
+
+> « point, droite, segment, milieu d'un segment » — *Cycle 2, Cours élémentaire première année, Espace et géométrie, La géométrie plane*
+> « L'élève sait trouver le milieu d'un segment (par pliage). » — *Cycle 2, Cours élémentaire première année, Espace et géométrie, La géométrie plane*
+> « L'élève sait tracer un cercle avec un compas. Il sait tracer le cercle de centre un point donné et passant par un autre point donné. » — *Cycle 2, Cours élémentaire première année, Espace et géométrie, La géométrie plane*
+> « Les concepts généraux de la géométrie plane (droites, points, segments) sont introduits en situation, sans faire l'objet de définitions formelles. » — *Cycle 2, Cours élémentaire première année, Espace et géométrie, La géométrie plane*
+
+**EX-G008-D-01** — decouverte, qcm, 30 s
+
+Quel tracé est une droite ?
+
+- **a.** Le tracé 1
+  <br>*Erreur visée :* L'élève appelle « droite » tout trait bien droit, comme dans la vie courante. Mais le tracé 1 s'arrête en K et en L : il a deux extrémités, c'est un segment.
+- **b.** Le tracé 2 ✅
+- **c.** Le tracé 3
+  <br>*Erreur visée :* L'élève croit qu'une droite est un trait horizontal. Mais le tracé 3 s'arrête en E et en F : c'est un segment. Une droite peut être penchée.
+
+*Corrigé.* (1) Un segment s'arrête à ses deux extrémités. Une droite ne s'arrête pas : on la prolonge de chaque côté, jusqu'au bord de la feuille. (2) Le tracé 1 commence en K et s'arrête en L : c'est un segment, même s'il est long. (3) Le tracé 3 commence en E et s'arrête en F : c'est un segment, même s'il est horizontal. (4) Le tracé 2 passe par M et N et continue au-delà, jusqu'au bord : la droite, c'est le tracé 2.
+
+*Indice.* Regarde si le trait s'arrête sur ses points ou s'il continue.
+
+**EX-G008-D-02** — decouverte, texte, 40 s
+
+Quel point est le milieu du segment AB ?
+
+**Réponse :** F
+
+*Corrigé.* (1) Le milieu d'un segment est le point du segment qui le partage en deux morceaux de même longueur. Si on plie la feuille pour poser A sur B, le pli passe par le milieu. (2) De A à F, il y a 4 carreaux. De F à B, il y a 4 carreaux : les deux morceaux sont égaux. (3) De A à E, 5 carreaux, et de E à B, 3 : E n'est pas le milieu. De même pour G, 6 carreaux d'un côté et 2 de l'autre. (4) H est au-dessus du milieu, mais il n'est pas sur le segment : ce n'est pas le milieu. (5) Le milieu du segment AB est F.
+
+*Indice.* Compte les carreaux de A au point, puis du point à B.
+
+**EX-G008-E-01** — entrainement, numerique, 40 s
+
+Combien de points marqués sont sur le cercle de centre O ?
+
+**Réponse :** 3
+
+*Corrigé.* (1) Un point est sur le cercle quand il est sur le trait du cercle. (2) A, B et D sont sur le trait du cercle. (3) C et E sont à l'intérieur du cercle, F est à l'extérieur. O est le centre : il est au milieu, pas sur le cercle. (4) Il y a 3 points sur le cercle : A, B et D.
+
+*Indice.* Pour chaque point, regarde s'il touche le trait du cercle.
+
+**EX-G008-E-02** — entrainement, qcm, 45 s
+
+Quel cercle a pour centre O et passe par le point P ?
+
+- **a.** Le cercle 1 ✅
+- **b.** Le cercle 2
+  <br>*Erreur visée :* L'élève vérifie seulement le centre. Le cercle 2 a bien pour centre O, mais il ne passe pas par P : il est trop petit.
+- **c.** Le cercle 3
+  <br>*Erreur visée :* L'élève échange le centre et le point de passage : le cercle 3 a pour centre P et passe par O.
+
+*Corrigé.* (1) Le centre d'un cercle est le point qui est au milieu du cercle. Le cercle passe par P si P est sur son trait. (2) Les cercles 1 et 2 ont pour centre O. Le cercle 3 a pour centre P. (3) Parmi les cercles 1 et 2, seul le cercle 1 passe par P. (4) C'est le cercle 1.
+
+*Indice.* Cherche d'abord les cercles dont O est le centre.
+
+**EX-G008-M-01** — maitrise, vrai_faux, 45 s
+
+Ali dit que le point K est sur la droite qui passe par A et B. A-t-il raison ?
+
+**Réponse :** True
+
+*Corrigé.* (1) Sur la figure, on a tracé seulement le segment AB : il s'arrête en A et en B. (2) La droite qui passe par A et B, elle, ne s'arrête pas : elle continue des deux côtés. (3) En prolongeant le trait après B, avec le bord d'une feuille posé sur l'écran, on arrive exactement sur K : K est sur la droite. (4) Ali a raison. K n'est pas sur le segment AB, mais il est sur la droite. L, lui, n'est ni sur le segment ni sur la droite.
+
+*Indice.* Une droite continue après ses points. Prolonge le trait après B.
+
+**EX-G008-M-02** — maitrise, qcm, 60 s
+
+Le point M est le milieu du segment KL, mais L a été effacé. Où était L ?
+
+- **a.** Au point A
+  <br>*Erreur visée :* L'élève prolonge bien le segment après M, mais s'arrête trop tôt : de M à A, il n'y a que la moitié du chemin de K à M.
+- **b.** Au point B
+  <br>*Erreur visée :* L'élève avance de 4 carreaux vers la droite depuis M, comme de K à M, mais oublie de monter : B n'est pas dans le prolongement du segment.
+- **c.** Au point C ✅
+
+*Corrigé.* (1) M est le milieu : il est sur le segment KL et le partage en deux morceaux de même longueur. (2) De K à M, on avance de 4 carreaux vers la droite et on monte de 2 carreaux. (3) De M à L, il faut refaire le même chemin : 4 carreaux vers la droite, 2 carreaux vers le haut. On arrive en C. (4) L était au point C.
+
+*Indice.* Le chemin de M à L est le même que le chemin de K à M.
+
+---
+
+## `G009` · L'angle droit : le reconnaître, le coder ; aigu ou obtus — CE1, difficulté 2
+
+*Reconnaître un angle droit, à vue quand il n'y a aucun doute, sinon en lisant une équerre posée sur la figure ; dire qu'un angle qui n'est pas droit est aigu (plus petit) ou obtus (plus grand) ; reconnaître et placer le code de l'angle droit. Les angles sont ceux des polygones ou de deux segments issus d'un même point. Figure nécessaire : angles et polygones lettrés, codage de l'angle droit, équerre posée en option.*
+
+> « Utiliser la règle pour vérifier des alignements et l'équerre pour vérifier qu'un angle est droit. » — *Cycle 2, Cours élémentaire première année, Espace et géométrie, La géométrie plane*
+> « Connaitre et utiliser le code pour les angles droits. » — *Cycle 2, Cours élémentaire première année, Espace et géométrie, La géométrie plane*
+> « L'élève sait dire qu'un angle n'est pas droit sans équerre quand il n'y a aucun doute. Il sait alors dire si l'angle est aigu (plus petit qu'un angle droit) ou obtus (plus grand qu'un angle droit). » — *Cycle 2, Cours élémentaire première année, Espace et géométrie, La géométrie plane*
+
+**EX-G009-D-01** — decouverte, texte, 30 s
+
+Un des angles du triangle ABC est un angle droit. Quel est son sommet ?
+
+**Réponse :** B
+
+*Corrigé.* (1) Un angle droit a la forme du coin d'une feuille : on le vérifie en posant le coin d'une feuille sur l'écran. (2) En B, un côté suit une ligne horizontale du quadrillage et l'autre une ligne verticale : ils forment un angle droit. (3) En A et en C, les angles sont plus fermés que le coin d'une feuille : ils sont aigus. (4) L'angle droit a pour sommet B. Il est en haut à droite : un angle droit n'est pas toujours en bas.
+
+*Indice.* Cherche le coin qui a la forme du coin d'une feuille.
+
+**EX-G009-D-02** — decouverte, qcm, 40 s
+
+Quel angle est aigu ?
+
+- **a.** L'angle 1
+  <br>*Erreur visée :* L'élève juge l'angle à la longueur de ses côtés : ceux de l'angle 1 sont courts, mais il est plus ouvert qu'un angle droit. Il est obtus.
+- **b.** L'angle 2 ✅
+- **c.** L'angle 3
+  <br>*Erreur visée :* L'angle 3 est un angle droit, posé sur la pointe. Un angle aigu est plus petit qu'un angle droit : un angle droit n'est pas aigu.
+
+*Corrigé.* (1) Un angle aigu est plus petit qu'un angle droit : plus fermé que le coin d'une feuille. (2) On pose le coin d'une feuille sur l'écran, sur le sommet de chaque angle, un bord contre un côté. (3) L'angle 1 est plus ouvert que le coin de la feuille : il est obtus. L'angle 3 a exactement la forme du coin : il est droit, même tourné. (4) L'angle 2 est plus fermé que le coin de la feuille : l'angle aigu est l'angle 2. Ses côtés sont longs, mais la longueur des côtés ne change pas l'angle.
+
+*Indice.* Compare chaque angle au coin d'une feuille.
+
+**EX-G009-E-01** — entrainement, numerique, 60 s
+
+Combien d'angles droits a cette figure ?
+
+**Réponse :** 3
+
+*Corrigé.* (1) La figure a cinq sommets, donc cinq angles : on les examine un par un. (2) En bas, les deux angles suivent les lignes du quadrillage, une horizontale et une verticale : ce sont deux angles droits. (3) En haut, les deux côtés traversent les carreaux en diagonale, l'un en montant, l'autre en descendant : ils forment un angle droit, pointe en haut. Le coin d'une feuille posé sur l'écran le confirme. (4) Les deux angles entre les côtés verticaux et le haut sont plus ouverts qu'un angle droit : ils sont obtus. (5) La figure a 3 angles droits.
+
+*Indice.* Pose le coin d'une feuille sur l'écran, contre chaque angle.
+
+**EX-G009-E-02** — entrainement, qcm, 40 s
+
+Comment est l'angle de sommet T du triangle RST ?
+
+- **a.** Aigu
+  <br>*Erreur visée :* L'élève juge l'angle à la longueur de ses côtés : ce sont les deux plus courts du triangle. Mais l'angle T est plus ouvert qu'un angle droit.
+- **b.** Droit
+  <br>*Erreur visée :* L'élève estime à l'œil sans comparer au coin d'une feuille : l'angle T dépasse nettement l'angle droit, il n'est pas droit.
+- **c.** Obtus ✅
+
+*Corrigé.* (1) On compare l'angle T à un angle droit, par exemple au coin d'une feuille posé en T, un bord contre le côté TR. (2) L'autre côté, TS, passe à l'extérieur du coin de la feuille : l'angle T est plus grand qu'un angle droit. (3) Un angle plus grand qu'un angle droit est obtus : l'angle T est obtus. (4) Ses côtés sont les deux plus courts du triangle, mais c'est l'ouverture qui compte, pas la longueur des côtés.
+
+*Indice.* Pose le coin d'une feuille sur l'écran, sur le sommet T.
+
+**EX-G009-M-01** — maitrise, vrai_faux, 60 s
+
+Lou dit : « Cette figure n'a aucun angle droit. » A-t-elle raison ?
+
+**Réponse :** False
+
+*Corrigé.* (1) Aucun côté de la figure ne suit une ligne horizontale ou verticale : elle est penchée. Cela ne dit rien de ses angles. (2) En A et en B, les deux côtés traversent les carreaux en diagonale, l'un en montant, l'autre en descendant : ils forment des angles droits. Le coin d'une feuille posé sur l'écran le confirme. (3) En C, l'angle est aigu ; en D, il est obtus. (4) La figure a deux angles droits : Lou a tort. Un angle droit n'a pas besoin d'un côté horizontal.
+
+*Indice.* Pose le coin d'une feuille sur l'écran, contre chaque angle.
+
+**EX-G009-M-02** — maitrise, qcm, 60 s
+
+Quel segment fait un angle droit avec le segment MN ?
+
+- **a.** Le segment MP ✅
+- **b.** Le segment MR
+  <br>*Erreur visée :* L'élève croit qu'un angle droit a toujours un côté vertical. Mais MN n'est pas horizontal : l'angle entre MN et MR est plus petit qu'un angle droit, il est aigu.
+- **c.** Le segment MT
+  <br>*Erreur visée :* L'élève choisit le segment qui part « vers l'arrière ». Mais l'angle entre MN et MT est plus ouvert qu'un angle droit : il est obtus.
+
+*Corrigé.* (1) On pose le coin d'une feuille sur l'écran en M, un bord contre le segment MN. Le segment qui fait un angle droit avec MN suit l'autre bord. (2) MN monte d'un carreau quand il avance de 2 carreaux vers la droite. MP monte de 2 carreaux quand il recule d'un carreau vers la gauche : l'autre bord de la feuille le suit exactement. (3) MR est vertical, mais MN n'est pas horizontal : l'angle entre MN et MR est plus petit qu'un angle droit, il est aigu. L'angle entre MN et MT est plus grand, il est obtus. (4) C'est le segment MP.
+
+*Indice.* Pose le coin d'une feuille sur l'écran en M, un bord contre le segment MN.
+
+---
+
+## `G010` · Carré, rectangle, triangle rectangle : propriétés — CE1, difficulté 2
+
+*Nommer un carré, un rectangle, un triangle ou un triangle rectangle et justifier par ses propriétés : un rectangle a quatre sommets, quatre côtés, quatre angles droits et des côtés opposés de même longueur ; un carré a en plus ses quatre côtés de même longueur ; un triangle rectangle a un angle droit. Dire qu'une figure n'est pas un rectangle en citant la propriété qui manque. Figure nécessaire : polygones sur quadrillage ou avec longueurs écrites, codage des angles droits.*
+
+> « Connaitre les propriétés des angles et des égalités de longueur pour les carrés et les rectangles. » — *Cycle 2, Cours élémentaire première année, Espace et géométrie, La géométrie plane*
+> « Reconnaitre, nommer et décrire un cercle, un carré, un rectangle, un triangle, un triangle rectangle en utilisant le vocabulaire approprié. » — *Cycle 2, Cours élémentaire première année, Espace et géométrie, La géométrie plane*
+> « L'élève sait dire qu'un rectangle a quatre sommets, quatre angles droits, quatre côtés et que les côtés opposés ont la même longueur. » — *Cycle 2, Cours élémentaire première année, Espace et géométrie, La géométrie plane*
+> « Ce n'est pas un rectangle car l'un de ses angles n'est pas droit. » — *Cycle 2, Cours élémentaire première année, Espace et géométrie, La géométrie plane*
+
+**EX-G010-D-01** — decouverte, numerique, 30 s
+
+ABCD est un rectangle. Combien mesure le côté CD ?
+
+**Réponse :** 7
+
+*Corrigé.* (1) Dans un rectangle, les côtés opposés, ceux qui se font face, ont la même longueur. (2) Le côté CD est en face du côté AB. (3) AB mesure 7 cm : CD mesure 7 cm. (4) Le côté BC, 4 cm, touche CD en C : il n'est pas en face de lui. BC a la même longueur que AD.
+
+*Indice.* Quel côté est en face de CD ?
+
+**EX-G010-D-02** — decouverte, qcm, 45 s
+
+Cette figure n'est pas un rectangle. Quelle propriété du rectangle lui manque ?
+
+- **a.** Avoir ses côtés opposés de même longueur
+  <br>*Erreur visée :* L'élève voit des côtés penchés et croit qu'ils ne sont pas égaux. Mais AD et BC ont le même décalage sur le quadrillage : les côtés opposés de ABCD ont bien la même longueur.
+- **b.** Avoir quatre angles droits ✅
+- **c.** Avoir quatre côtés de même longueur
+  <br>*Erreur visée :* L'élève confond le rectangle et le carré : avoir quatre côtés de même longueur n'est pas une propriété du rectangle, qui peut avoir deux côtés longs et deux côtés courts.
+
+*Corrigé.* (1) Un rectangle a quatre côtés, quatre angles droits, et ses côtés opposés ont la même longueur. (2) Les côtés opposés de ABCD ont la même longueur : AB et DC mesurent 5 carreaux ; AD et BC vont tous les deux de 2 carreaux de côté et de 3 carreaux en hauteur. (3) Mais aucun de ses angles n'a la forme du coin d'une feuille : en A et en C ils sont aigus, en B et en D ils sont obtus. (4) Il lui manque les quatre angles droits : ce n'est pas un rectangle car ses angles ne sont pas droits.
+
+*Indice.* Regarde les angles de la figure, puis la longueur des côtés d'en face.
+
+**EX-G010-E-01** — entrainement, vrai_faux, 45 s
+
+Mia dit : « ABCD est un carré. » A-t-elle raison ?
+
+**Réponse :** False
+
+*Corrigé.* (1) Un carré a quatre côtés de même longueur ET quatre angles droits. (2) Les quatre côtés de ABCD mesurent bien 5 cm. (3) Mais ses angles ne sont pas droits : en A et en C ils sont aigus, en B et en D ils sont obtus. (4) ABCD n'est pas un carré : Mia a tort. Quatre côtés de même longueur ne suffisent pas, il faut aussi vérifier les angles.
+
+*Indice.* Un carré a deux sortes de propriétés : regarde les côtés, puis pose le coin d'une feuille sur l'écran contre les angles.
+
+**EX-G010-E-02** — entrainement, texte, 45 s
+
+Écris le nom de la figure EFGH.
+
+**Réponse :** rectangle
+
+*Corrigé.* (1) La figure a quatre côtés, et ses quatre angles portent le code de l'angle droit. (2) Une figure qui a quatre côtés et quatre angles droits est un rectangle, même quand elle est penchée. (3) Ses côtés n'ont pas tous la même longueur, 5 cm et 3 cm : ce n'est pas un carré. (4) EFGH est un rectangle.
+
+*Indice.* Lis les codes des angles, puis compare les longueurs des côtés.
+
+**EX-G010-M-01** — maitrise, numerique, 75 s
+
+Combien de ces figures sont des rectangles ?
+
+**Réponse :** 2
+
+*Corrigé.* (1) Un rectangle a quatre côtés et quatre angles droits. (2) Figure 1 : quatre angles droits, deux côtés longs et deux courts. C'est un rectangle. (3) Figure 2 : elle est penchée, ses côtés traversent les carreaux en diagonale. Ses quatre angles sont droits (le coin d'une feuille posé sur l'écran le confirme) et ses côtés d'en face ont la même longueur : c'est un rectangle, même penché. (4) Figures 3 et 4 : certains de leurs angles ne sont pas droits. Ce ne sont pas des rectangles. (5) Il y a 2 rectangles : les figures 1 et 2.
+
+*Indice.* Pour chaque figure, vérifie les quatre angles avec le coin d'une feuille posé sur l'écran.
+
+**EX-G010-M-02** — maitrise, qcm, 60 s
+
+Le segment AC partage la figure ABCD en deux triangles. Que peut-on dire de ces triangles ?
+
+- **a.** Aucun des deux n'a d'angle droit.
+  <br>*Erreur visée :* L'élève croit que le segment AC a « cassé » les angles droits. Il coupe les angles en A et en C, mais les angles en B et en D restent entiers et droits.
+- **b.** Seul le triangle ABC est un triangle rectangle.
+  <br>*Erreur visée :* L'élève reconnaît l'angle droit en bas, mais pas celui du triangle du haut, retourné. Le triangle ACD a lui aussi un angle droit, en D.
+- **c.** Ce sont deux triangles rectangles. ✅
+
+*Corrigé.* (1) Sur le quadrillage, les côtés de ABCD suivent les lignes : ses angles en A, B, C et D sont droits. (2) Le segment AC coupe les angles en A et en C, mais il ne touche pas les angles en B et en D : ils restent droits. (3) Le triangle ABC a un angle droit en B, le triangle ACD a un angle droit en D. Un triangle qui a un angle droit est un triangle rectangle. (4) Ce sont deux triangles rectangles, même si celui du haut a son angle droit en haut à gauche.
+
+*Indice.* Quels angles de ABCD le segment AC ne coupe-t-il pas ?
+
+---
+
 ## `P005` · Longueurs : mètre, centimètre, kilomètre — CE1, difficulté 2
 
 *Connaître les unités m, cm et km et les relations 1 m = 100 cm et 1 km = 1 000 m, écrire une longueur donnée en deux unités dans une seule (1 m et 46 cm = 146 cm), avec une partie en centimètres toujours inférieure à 100, comparer des longueurs et choisir l'unité adaptée (cm pour un crayon, m pour une salle, km pour une distance entre deux villes). Nombres entiers jusqu'à 1 000, sans virgule.*
@@ -2520,6 +3322,245 @@ Sur une même bande-unité graduée, 1/2 et 3/6 se placent exactement au même e
 
 ---
 
+## `G012` · Losange, quadrilatère, polygones ; lire une figure codée — CE2, difficulté 2
+
+*Employer polygone, triangle, quadrilatère, pentagone, hexagone et diagonale ; savoir qu'un quadrilatère a quatre côtés et quatre sommets et qu'un losange a ses quatre côtés de même longueur ; nommer un carré, un rectangle, un losange, un triangle ou un triangle rectangle en lisant son codage (angles droits, segments de même longueur) et justifier qu'une figure n'est pas d'une nature donnée par la propriété qui manque. Figure nécessaire : polygones lettrés avec codage des angles droits et des longueurs égales, diagonales en option.*
+
+> « Reconnaitre, nommer et décrire le carré, le rectangle, le triangle, le triangle rectangle et le losange. » — *Cycle 2, Cours élémentaire deuxième année, Espace et géométrie, La géométrie plane*
+> « polygone, triangle, quadrilatère, pentagone et hexagone » — *Cycle 2, Cours élémentaire deuxième année, Espace et géométrie, La géométrie plane*
+> « L'élève sait dire qu'un losange a quatre sommets et quatre côtés de même longueur. » — *Cycle 2, Cours élémentaire deuxième année, Espace et géométrie, La géométrie plane*
+> « L'élève sait dire qu'un quadrilatère est un polygone ayant quatre côtés et quatre sommets. » — *Cycle 2, Cours élémentaire deuxième année, Espace et géométrie, La géométrie plane*
+> « Connaitre et utiliser le codage d'un angle droit et celui qui indique que des segments ont la même longueur. » — *Cycle 2, Cours élémentaire deuxième année, Espace et géométrie, La géométrie plane*
+
+**EX-G012-D-01** — decouverte, texte, 45 s
+
+Observe les codages de la figure. Quel est le nom du quadrilatère ABCD ?
+
+**Réponse :** losange
+
+*Corrigé.* (1) Les petits traits sur les côtés sont un codage : des côtés qui portent le même trait ont la même longueur. Ici, les quatre côtés AB, BC, CD et DA portent le même trait : ils ont tous la même longueur. (2) Aucun angle ne porte le petit carré de l'angle droit, et aucun n'est droit : deux angles sont aigus (plus petits qu'un angle droit), deux sont obtus (plus grands). (3) Un quadrilatère qui a quatre côtés de même longueur est un losange. (4) Ce n'est pas un carré : un carré a quatre côtés de même longueur, mais en plus quatre angles droits.
+
+*Indice.* Regarde les petits traits sur les côtés : que disent-ils de leurs longueurs ?
+
+**EX-G012-D-02** — decouverte, vrai_faux, 40 s
+
+Jade dit : « Cette figure est un quadrilatère. » A-t-elle raison ?
+
+**Réponse :** False
+
+*Corrigé.* (1) Un quadrilatère est un polygone qui a quatre côtés et quatre sommets. Pour savoir, on compte les côtés. (2) On fait le tour de la figure : le côté du haut, le côté de droite, le petit côté penché du coin coupé en bas à droite, le côté du bas, le côté de gauche. La figure a 5 côtés et 5 sommets. (3) Une figure qui a 5 côtés est un pentagone, pas un quadrilatère : Jade a tort. (4) Jade a regardé la forme générale, qui ressemble à un rectangle. Mais le coin coupé ajoute un côté et un sommet : il faut compter les côtés un par un.
+
+*Indice.* Fais le tour de la figure en comptant ses côtés.
+
+**EX-G012-E-01** — entrainement, vrai_faux, 50 s
+
+Tom dit : « ABCD est un carré. » Tom a-t-il raison ?
+
+**Réponse :** True
+
+*Corrigé.* (1) Les quatre côtés portent le même petit trait : AB, BC, CD et DA ont la même longueur. (2) Les quatre sommets portent le petit carré de l'angle droit : les quatre angles sont droits. (3) Quatre côtés de même longueur et quatre angles droits : ABCD est un carré. Tom a raison. (4) Beaucoup d'élèves croient qu'un carré posé sur une pointe n'est plus un carré. Tourner une figure ne change ni la longueur de ses côtés ni ses angles : sa nature reste la même.
+
+*Indice.* Lis les codages : que disent les petits traits ? Et les petits carrés ?
+
+**EX-G012-E-02** — entrainement, qcm, 60 s
+
+Le quadrilatère EFGH est-il un losange ? Lis bien les codages.
+
+- **a.** Oui, car ses quatre côtés ont la même longueur.
+  <br>*Erreur visée :* L'élève voit des traits sur les quatre côtés et croit qu'ils sont tous égaux. Or EF et GH portent deux traits, FG et HE un seul : des traits différents signalent des longueurs différentes.
+- **b.** Non, car il n'est pas posé sur une pointe.
+  <br>*Erreur visée :* L'élève reconnaît le losange à sa position, posé sur une pointe. La position ne compte pas : ce qui fait un losange, ce sont ses quatre côtés de même longueur.
+- **c.** Non, car ses quatre côtés n'ont pas tous la même longueur. ✅
+
+*Corrigé.* (1) Un losange a ses quatre côtés de même longueur. Il faut donc lire le codage des côtés. (2) EF et GH portent deux petits traits : ils ont la même longueur. FG et HE portent un seul trait : ils ont la même longueur entre eux, mais pas celle de EF. (3) Les quatre côtés n'ont pas tous la même longueur : EFGH n'est pas un losange. (4) Les petits carrés disent que ses quatre angles sont droits ; avec ses côtés opposés de même longueur, EFGH est un rectangle.
+
+*Indice.* Compare les petits traits des quatre côtés : sont-ils tous pareils ?
+
+**EX-G012-M-01** — maitrise, numerique, 60 s
+
+Combien de ces figures sont des quadrilatères ?
+
+**Réponse :** 3
+
+*Corrigé.* (1) Un quadrilatère est un polygone qui a quatre côtés et quatre sommets, quelle que soit sa forme. (2) Figure 1 : 4 côtés, c'est un quadrilatère. Figure 2 : 5 côtés, c'est un pentagone. Figure 3 : 4 côtés, c'est un quadrilatère, même avec son coin qui rentre. Figure 4 : 4 côtés, c'est un quadrilatère. (3) Les figures 1, 3 et 4 sont des quadrilatères : il y en a 3. (4) Le piège est la figure 3, en pointe de flèche : elle ne ressemble pas aux quadrilatères habituels, mais elle a bien quatre côtés et quatre sommets.
+
+*Indice.* Compte les côtés de chaque figure, une par une.
+
+**EX-G012-M-02** — maitrise, qcm, 60 s
+
+Trois segments sont numérotés. Lequel est une diagonale du quadrilatère ?
+
+- **a.** Le segment 2 ✅
+- **b.** Le segment 1
+  <br>*Erreur visée :* L'élève confond côté et diagonale : le segment 1 relie deux sommets qui se suivent, c'est un côté du quadrilatère.
+- **c.** Le segment 3
+  <br>*Erreur visée :* L'élève croit que tout segment qui traverse la figure est une diagonale. Le segment 3 part d'un sommet mais s'arrête au milieu d'un côté.
+
+*Corrigé.* (1) Une diagonale d'un quadrilatère relie deux sommets qui ne se suivent pas : deux sommets opposés. (2) Le segment 1 relie deux sommets voisins : il fait partie du contour, c'est un côté. (3) Le segment 3 part d'un sommet, mais son autre bout est au milieu d'un côté, pas sur un sommet. (4) Le segment 2 relie deux sommets opposés : c'est une diagonale. Un quadrilatère a deux diagonales ; l'autre relierait les deux autres sommets.
+
+*Indice.* Regarde les deux bouts de chaque segment : sont-ils des sommets ? Se suivent-ils ?
+
+---
+
+## `G013` · Le cercle : centre, rayon et diamètre — CE2, difficulté 2
+
+*Reconnaître sur un cercle son centre, un rayon et un diamètre ; savoir que le diamètre mesure deux fois le rayon ; reconnaître le cercle de rayon donné. Nombres entiers de centimètres. Figure nécessaire : cercle avec son centre, rayons et diamètres tracés et lettrés, longueurs écrites en option.*
+
+> « disque, cercle, centre, rayon, diamètre » — *Cycle 2, Cours élémentaire deuxième année, Espace et géométrie, La géométrie plane*
+> « Un carré dont les côtés ont pour longueur 6 cm et un cercle de rayon 4 cm ayant pour centre un des sommets du carré. » — *Cycle 2, Cours élémentaire deuxième année, Espace et géométrie, La géométrie plane*
+
+**EX-G013-D-01** — decouverte, qcm, 45 s
+
+Le point O est le centre du cercle. Lequel de ces segments est un diamètre du cercle ?
+
+- **a.** Le segment [OR]
+  <br>*Erreur visée :* L'élève confond rayon et diamètre : le segment [OR] part bien du centre, mais il va seulement du centre jusqu'au cercle. C'est un rayon ; un diamètre traverse tout le cercle.
+- **b.** Le segment [UV]
+  <br>*Erreur visée :* L'élève voit les deux bouts du segment [UV] posés sur le cercle et s'arrête là. Mais le segment [UV] ne passe pas par le centre O : ce n'est pas un diamètre.
+- **c.** Le segment [ST] ✅
+
+*Corrigé.* (1) On regarde d'abord le centre O : un diamètre passe par le centre, et ses deux bouts sont sur le cercle. (2) Le segment [OR] part du centre et s'arrête sur le cercle en R : il ne traverse pas le cercle, c'est un rayon. (3) Le segment [UV] a ses deux bouts sur le cercle, mais il passe à côté du centre O : ce n'est pas un diamètre. (4) Le segment [ST] va de S à T, deux points du cercle, en passant par le centre O : c'est un diamètre. (5) Un diamètre est fait de deux rayons mis bout à bout : de S jusqu'à O, puis de O jusqu'à T.
+
+*Indice.* Cherche le segment qui traverse tout le cercle en passant par le point O.
+
+**EX-G013-D-02** — decouverte, numerique, 45 s
+
+Le point O est le centre du cercle. Combien de centimètres mesure le segment [BC] ?
+
+**Réponse :** 6
+
+*Corrigé.* (1) Le segment [OA] va du centre jusqu'au cercle : c'est un rayon. On lit sur la figure qu'il mesure 3 cm. (2) Le segment [BC] va d'un point du cercle à un autre en passant par le centre O : c'est un diamètre. (3) Un diamètre, c'est deux rayons bout à bout : de B jusqu'à O, puis de O jusqu'à C. Il mesure deux fois le rayon. (4) 2 × 3 = 6 : le segment [BC] mesure 6 cm. (5) Répondre 3 cm, c'est confondre le diamètre avec le rayon.
+
+*Indice.* Le segment [BC] passe par le centre. Combien de rayons met-on bout à bout pour aller de B à C ?
+
+**EX-G013-E-01** — entrainement, numerique, 60 s
+
+Le point O est le centre du cercle. Combien de centimètres mesure le segment [OC] ?
+
+**Réponse :** 5
+
+*Corrigé.* (1) Le segment [AB] passe par le centre O et ses bouts sont sur le cercle : c'est un diamètre. Il mesure 10 cm. (2) Le segment [OC] va du centre jusqu'au cercle : c'est un rayon. (3) Le diamètre mesure deux fois le rayon. On cherche donc le nombre qui, pris deux fois, donne 10 : 2 × 5 = 10. (4) On peut aussi le voir sur le diamètre : de A jusqu'à O, il y a un rayon, de O jusqu'à B, un autre rayon. 10 cm partagés en 2 parts égales, cela fait 5 cm chacune. (5) Le segment [OC] mesure 5 cm. Répondre 20 cm, c'est doubler au lieu de prendre la moitié.
+
+*Indice.* Le segment [OC] est-il un rayon ou un diamètre ? Et le segment [AB] ?
+
+**EX-G013-E-02** — entrainement, vrai_faux, 60 s
+
+Le point O est le centre du cercle. Tom dit : « Le segment [BC] est deux fois plus long que le segment [OA]. » A-t-il raison ?
+
+**Réponse :** True
+
+*Corrigé.* (1) Le segment [OA] va du centre O jusqu'au point A du cercle : c'est un rayon. (2) Le segment [BC] va de B à C, deux points du cercle, en passant par le centre O : c'est un diamètre. (3) Le segment [BC] est fait de deux rayons bout à bout : le segment [BO] et le segment [OC]. (4) Tous les rayons d'un même cercle ont la même longueur : le segment [BO], le segment [OC] et le segment [OA] sont aussi longs. (5) Donc le segment [BC] est bien deux fois plus long que le segment [OA] : Tom a raison, même si les deux segments ne sont pas tracés dans le même sens.
+
+*Indice.* Lequel de ces deux segments est un rayon ? Lequel est un diamètre ?
+
+**EX-G013-M-01** — maitrise, qcm, 90 s
+
+Les trois cercles ont le même rayon. Chaque cercle touche le suivant. Combien mesure le segment [AB] ?
+
+- **a.** 6 cm
+  <br>*Erreur visée :* L'élève compte un rayon par cercle : 3 × 2 = 6. Mais le segment [AB] traverse chaque cercle en entier, en passant par le centre : dans chaque cercle, il mesure un diamètre, deux rayons.
+- **b.** 12 cm ✅
+- **c.** 8 cm
+  <br>*Erreur visée :* L'élève mesure du centre O au centre Q : deux diamètres, 4 + 4 = 8. Mais le segment [AB] commence en A, avant O, et finit en B, après Q : il faut ajouter un rayon de chaque côté.
+
+*Corrigé.* (1) On lit sur la figure le rayon d'un cercle : 2 cm. (2) Le diamètre d'un cercle mesure deux fois le rayon : 2 × 2 = 4. Chaque diamètre mesure 4 cm. (3) Le segment [AB] traverse les trois cercles en passant par leurs centres O, P et Q : il est fait de trois diamètres mis bout à bout. (4) 3 × 4 = 12 : le segment [AB] mesure 12 cm. (5) On peut aussi compter les rayons : de A jusqu'à B, il y en a 6, et 6 × 2 = 12.
+
+*Indice.* Le segment [AB] traverse chaque cercle en passant par son centre : combien mesure un diamètre ?
+
+**EX-G013-M-02** — maitrise, numerique, 120 s
+
+Les deux cercles ont un diamètre de 6 cm. Chacun passe par le centre de l'autre. Combien de centimètres mesure le segment [CD] ?
+
+**Réponse :** 9
+
+*Corrigé.* (1) Chaque cercle a un diamètre de 6 cm. Le rayon est la moitié du diamètre : 2 × 3 = 6, donc le rayon mesure 3 cm. (2) Le segment [CA] va du point C du cercle jusqu'à son centre A : c'est un rayon, 3 cm. (3) Le cercle de centre A passe par B : le segment [AB] va du centre jusqu'au cercle, c'est aussi un rayon, 3 cm. (4) Le segment [BD] va du centre B jusqu'au point D de l'autre cercle : encore un rayon, 3 cm. (5) 3 + 3 + 3 = 9 : le segment [CD] mesure 9 cm. Répondre 12 cm, c'est mettre deux diamètres bout à bout, alors que les deux cercles se chevauchent.
+
+*Indice.* Découpe le segment [CD] en morceaux qui vont d'un point à un centre. Combien mesure chaque morceau ?
+
+---
+
+## `G014` · Axes de symétrie ; compléter une figure symétrique — CE2, difficulté 2
+
+*Dire si une figure (lettre majuscule, panneau, cœur, rectangle) possède un ou plusieurs axes de symétrie, ou si une droite tracée en est un ; compléter sur quadrillage ou réseau pointé une figure pour la rendre symétrique par rapport à un axe vertical ou horizontal, en désignant les cases ou les points à ajouter. Le pliage et le calque ne se font pas à l'écran. Figure nécessaire : figure avec droite candidate en pointillés ; quadrillage avec axe et demi-figure, cases ou points candidats lettrés.*
+
+> « Reconnaitre si une figure possède un ou plusieurs axes de symétrie en utilisant des pliages ou du papier calque. » — *Cycle 2, Cours élémentaire deuxième année, Espace et géométrie, La géométrie plane*
+> « Compléter, sur une feuille quadrillée ou pointée, une figure simple pour la rendre symétrique par rapport à un axe donné. » — *Cycle 2, Cours élémentaire deuxième année, Espace et géométrie, La géométrie plane*
+> « L'élève complète une figure sur une feuille quadrillée ou pointée pour la rendre symétrique (l'axe étant vertical ou horizontal). » — *Cycle 2, Cours élémentaire deuxième année, Espace et géométrie, La géométrie plane*
+
+**EX-G014-D-01** — decouverte, qcm, 45 s
+
+Quelle droite en pointillés est un axe de symétrie de la figure ?
+
+- **a.** La droite 1 ✅
+- **b.** La droite 2
+  <br>*Erreur visée :* L'élève voit que la droite 2 coupe la figure en deux morceaux et pense que cela suffit. Mais le morceau du bas est bien plus long que celui du haut : en pliant, ils ne se superposent pas.
+- **c.** La droite 3
+  <br>*Erreur visée :* L'élève choisit une droite qui passe à travers le milieu de la figure. Mais la droite 3 coupe la figure en deux morceaux de formes différentes : en pliant, ils ne se superposent pas.
+
+*Corrigé.* (1) Une droite est un axe de symétrie si, en pliant la figure le long de cette droite, les deux parties se posent exactement l'une sur l'autre. (2) On plie le long de la droite 1 : la pointe de gauche tombe sur la pointe de droite, la pointe du haut et la pointe du bas restent sur le pli. Les deux moitiés se superposent. (3) On plie le long de la droite 2 : la pointe du haut, toute proche du pli, ne tombe pas sur la pointe du bas, bien plus loin du pli. Les deux parties ne se superposent pas. (4) La droite 3 coupe la figure en deux morceaux de formes différentes : en pliant, ils ne se superposent pas. (5) L'axe de symétrie est la droite 1.
+
+*Indice.* Imagine que tu plies la feuille le long de chaque droite : les deux parties se posent-elles l'une sur l'autre ?
+
+**EX-G014-D-02** — decouverte, qcm, 45 s
+
+Quelle case faut-il colorier pour que la figure soit symétrique par rapport à l'axe ?
+
+- **a.** La case A
+  <br>*Erreur visée :* L'élève fait glisser la case de gauche vers la droite au lieu de la retourner : la case A est la troisième case à partir de l'axe, alors que la case de gauche à recopier est la deuxième.
+- **b.** La case B ✅
+- **c.** La case C
+  <br>*Erreur visée :* L'élève trouve la bonne distance à l'axe mais se trompe de rangée : la case C est une rangée plus bas que la case de gauche à recopier.
+
+*Corrigé.* (1) On compare les deux côtés de l'axe, rangée par rangée : chaque case coloriée doit avoir sa jumelle de l'autre côté, à la même distance de l'axe. (2) Les deux premières rangées coloriées sont déjà symétriques. (3) Dans la rangée de la case B, à gauche, la case qui touche l'axe et la deuxième case à partir de l'axe sont coloriées. À droite, seule la case qui touche l'axe est coloriée. (4) Il manque, à droite, la deuxième case à partir de l'axe : c'est la case B. (5) La case A est la troisième case à partir de l'axe : elle vient d'un glissement de la figure vers la droite, pas d'un pliage.
+
+*Indice.* Dans chaque rangée, compte à quelle distance de l'axe sont les cases coloriées, à gauche puis à droite.
+
+**EX-G014-E-01** — entrainement, vrai_faux, 60 s
+
+Lina a colorié les cases jaunes pour que la figure soit symétrique par rapport à l'axe. A-t-elle réussi ?
+
+**Réponse :** False
+
+*Corrigé.* (1) Si on plie le long de l'axe, chaque case bleue doit tomber sur une case jaune. (2) La rangée de trois cases bleues est la troisième rangée au-dessus de l'axe. Sa jumelle doit être la troisième rangée sous l'axe. (3) Lina a placé sa rangée de trois cases jaunes sur la deuxième rangée sous l'axe, et sa colonne jaune s'éloigne de l'axe au lieu de le toucher : elle a fait glisser la figure vers le bas, sans la retourner. (4) En pliant, la rangée bleue ne tombe pas sur la rangée jaune : la figure n'est pas symétrique. Lina n'a pas réussi. (5) Pour réussir, la colonne jaune touche l'axe, comme la colonne bleue, et la rangée de trois cases jaunes est la troisième sous l'axe.
+
+*Indice.* Plie la figure dans ta tête le long de l'axe : la rangée de trois cases bleues tombe-t-elle sur la rangée jaune ?
+
+**EX-G014-E-02** — entrainement, texte, 60 s
+
+Paul a colorié les cases jaunes pour rendre la figure symétrique par rapport à l'axe. Une case est mal placée : laquelle ?
+
+**Réponse :** C
+
+*Corrigé.* (1) Chaque case bleue doit avoir sa jumelle jaune de l'autre côté de l'axe, dans la même rangée et à la même distance de l'axe. (2) Première rangée coloriée : les cases bleues sont la deuxième et la troisième à partir de l'axe ; leurs jumelles sont B et A. Elles sont bien placées. (3) Dernière rangée coloriée : les cases bleues sont la première et la deuxième à partir de l'axe ; leurs jumelles sont E et D. Elles sont bien placées. (4) Rangée du milieu : la case bleue touche l'axe. Sa jumelle doit toucher l'axe de l'autre côté. La case C est la deuxième à partir de l'axe : une case trop loin. (5) La case mal placée est la case C.
+
+*Indice.* Rangée par rangée, compare la distance à l'axe des cases bleues et des cases jaunes.
+
+**EX-G014-M-01** — maitrise, qcm, 60 s
+
+Combien d'axes de symétrie a cette figure ?
+
+- **a.** 1 axe
+  <br>*Erreur visée :* L'élève ne pense qu'au pli vertical. Mais le pli horizontal marche aussi : le haut de la figure tombe exactement sur le bas.
+- **b.** 4 axes
+  <br>*Erreur visée :* L'élève compte aussi les plis en biais, comme pour un carré. Mais la figure est plus haute que large : en pliant en biais, le haut d'une colonne tombe à côté de la figure.
+- **c.** 2 axes ✅
+
+*Corrigé.* (1) On essaie chaque pliage possible. (2) Pli vertical au milieu : la colonne de gauche tombe sur celle de droite, la case du milieu reste sur le pli. C'est un axe de symétrie. (3) Pli horizontal au milieu : le haut des deux colonnes tombe sur le bas, la case du milieu reste sur le pli. C'est un deuxième axe. (4) Pli en biais, d'un coin à l'autre : la figure est plus haute que large, le haut d'une colonne tomberait à côté de la figure. Ce n'est pas un axe. (5) La figure a 2 axes de symétrie.
+
+*Indice.* Essaie de plier la figure verticalement, horizontalement, puis en biais.
+
+**EX-G014-M-02** — maitrise, numerique, 120 s
+
+Combien de cases faut-il colorier en plus, au minimum, pour que la figure soit symétrique par rapport à l'axe ?
+
+**Réponse :** 5
+
+*Corrigé.* (1) Chaque case coloriée doit avoir sa jumelle de l'autre côté de l'axe, dans la même rangée et à la même distance de l'axe. Il y a des cases coloriées des deux côtés : on vérifie les deux. (2) Rangée du haut : à droite, la deuxième case à partir de l'axe est coloriée ; sa jumelle, à gauche, manque. 1 case. (3) Deuxième rangée : à gauche, les trois premières cases à partir de l'axe sont coloriées ; à droite, seulement la première. Il manque la deuxième et la troisième à droite. 2 cases. (4) Troisième rangée : la case qui touche l'axe est coloriée des deux côtés. Rien ne manque. (5) Quatrième rangée : à gauche, la première et la deuxième case sont coloriées ; à droite, aucune. 2 cases. Cinquième rangée : la troisième case est coloriée des deux côtés. Rien ne manque. (6) 1 + 2 + 2 = 5 : il faut colorier 5 cases de plus.
+
+*Indice.* Rangée par rangée, cherche les cases coloriées qui n'ont pas encore de jumelle de l'autre côté de l'axe.
+
+---
+
 ## `P010` · Périmètre d'un polygone : longueur du contour — CE2, difficulté 2
 
 *Savoir que le périmètre d'une figure plane est la longueur de son contour, et le calculer en additionnant les longueurs des côtés données par l'énoncé (triangle, quadrilatère, polygone). Pour le carré et le rectangle, sans formule : l'élève sait qu'un côté suffit pour le carré et deux pour le rectangle. Côtés entiers, dans une même unité.*
@@ -3104,6 +4145,89 @@ Théo pose 32{,}40 - 8{,}75 (en euros) et trouve 36,35 €. Quelle est son erreu
 *Corrigé.* (1) Une soustraction ne peut pas donner plus que le nombre de départ : 36,35 € est plus que 32,40 €. Théo s'est trompé. (2) Ses colonnes. Centimes : 0 en haut, 5 en bas ; il a écrit 5, comme pour 5 - 0. Dizaines de centimes : 4 en haut, 7 en bas ; il a écrit 3, soit 7 - 4. Unités d'euros : 2 en haut, 8 en bas ; il a écrit 6, soit 8 - 2. (3) Quand le chiffre du haut est le plus petit, il faut casser une unité de la colonne de gauche : une dizaine de centimes, puis un euro, puis une dizaine d'euros. (4) Le bon calcul : 32{,}40 - 8{,}75 = 23{,}65. On vérifie : 23{,}65 + 8{,}75 = 32{,}40. La bonne réponse est b. Si ta classe utilise une autre méthode de soustraction, tu dois trouver le même résultat.
 
 *Indice.* Une soustraction peut-elle donner plus que le nombre de départ ? Regarde ensuite chaque colonne.
+
+---
+
+## `G011` · Reconnaître un patron de cube — CE2, difficulté 3
+
+*Dire si un assemblage de carrés est un patron de cube, en argumentant sur le nombre de faces (six), leur nature (des carrés de même taille) et leur position (deux faces ne doivent pas se superposer au pliage). Le pliage effectif, qui permet en classe de vérifier, ne se fait pas à l'écran. Figure nécessaire : assemblages de carrés sur quadrillage, repérés par des lettres ; une face peut être marquée pour demander la face opposée.*
+
+> « Construire un cube à partir d'un patron. » — *Cycle 2, Cours élémentaire deuxième année, Espace et géométrie, Les solides*
+> « L'élève sait dire si un assemblage de polygones est ou non un patron d'un cube en argumentant sur le nombre de faces, la nature des faces et la position des faces les unes par rapport aux autres. » — *Cycle 2, Cours élémentaire deuxième année, Espace et géométrie, Les solides*
+
+**EX-G011-D-01** — decouverte, numerique, 60 s
+
+On veut fabriquer un cube avec cet assemblage de carrés. Combien de carrés pareils faut-il ajouter ?
+
+**Réponse :** 2
+
+*Corrigé.* (1) Un cube a 6 faces, et ce sont des carrés tous pareils. (2) L'assemblage a 4 carrés. On compte à partir de 4 jusqu'à 6 : 5, 6. Il manque 2 carrés. (3) On voit où les mettre : les 4 carrés en ligne se replient pour faire le tour du cube. Il reste à fermer le dessus et le dessous, avec un carré de chaque côté de la bande.
+
+*Indice.* Combien de faces a un cube ? Combien de carrés vois-tu ?
+
+**EX-G011-D-02** — decouverte, qcm, 60 s
+
+Lequel de ces assemblages est un patron de cube ?
+
+- **a.** L'assemblage A
+  <br>*Erreur visée :* L'élève compte seulement les carrés : A en a bien 6, mais ils sont tous en ligne. En pliant, les 4 premiers font le tour du cube et le cinquième retombe sur le premier : il n'y a ni dessus ni dessous.
+- **b.** L'assemblage B ✅
+- **c.** L'assemblage C
+  <br>*Erreur visée :* L'élève reconnaît la forme d'une croix sans compter les carrés : C n'en a que 5, il manque une face au cube.
+
+*Corrigé.* (1) Un patron de cube a 6 carrés pareils, qui se replient sans se superposer. (2) C n'a que 5 carrés : il manque une face. (3) A a 6 carrés, mais tous en ligne : quand on plie, le cinquième carré retombe sur le premier, et le sixième sur le deuxième. Le dessus et le dessous restent ouverts. (4) B a 6 carrés : les 4 carrés de la colonne font le tour du cube, et les 2 carrés de côté ferment les deux bouts. B est un patron de cube.
+
+*Indice.* Compte les carrés de chaque assemblage, puis imagine que tu les plies.
+
+**EX-G011-E-01** — entrainement, qcm, 90 s
+
+Un seul de ces assemblages n'est pas un patron de cube. Lequel ?
+
+- **a.** L'assemblage A
+  <br>*Erreur visée :* L'élève croit qu'un patron de cube doit ressembler à une croix. A, en escalier, se plie pourtant en cube : chaque carré se rabat sur une face différente.
+- **b.** L'assemblage B
+  <br>*Erreur visée :* L'élève juge à la forme : B, fait de deux rangées de 3 carrés décalées, ne ressemble pas à une croix, mais il se plie en cube sans superposition.
+- **c.** L'assemblage C ✅
+
+*Corrigé.* (1) Les trois assemblages ont 6 carrés pareils : le nombre et la nature des faces ne suffisent pas, il faut regarder leur position. (2) Dans C, quatre carrés forment un grand carré : ils se touchent tous par un même coin. Or un coin de cube ne touche que 3 faces. Quand on plie, deux de ces carrés se superposent. (3) A et B ne ressemblent pas à une croix, et pourtant ils se plient en cube : chaque carré ferme une face différente. (4) C n'est pas un patron de cube.
+
+*Indice.* Un coin de cube touche combien de faces ? Regarde les carrés qui se touchent par un coin.
+
+**EX-G011-E-02** — entrainement, numerique, 90 s
+
+On plie ce patron pour fabriquer un cube. Quel numéro est sur la face opposée à la face 1, de l'autre côté du cube ?
+
+**Réponse :** 3
+
+*Corrigé.* (1) Les 4 carrés de la colonne, 5, 1, 6 et 3, se replient pour faire le tour du cube. (2) Dans ce tour, deux faces séparées par une autre se retrouvent face à face : 1 et 3 sont séparées par 6. (3) Les faces 5 et 6 touchent la face 1 par un côté : ce sont ses voisines. Les faces 2 et 4 sont accrochées à la face 1 : ce sont aussi ses voisines, et elles se retrouvent face à face entre elles. (4) La face opposée à la face 1 porte le numéro 3.
+
+*Indice.* La face opposée ne touche jamais la face 1. Quelles faces touchent la face 1 quand on plie ?
+
+**EX-G011-M-01** — maitrise, vrai_faux, 90 s
+
+Hugo dit : « Cet assemblage est un patron de cube. » A-t-il raison ?
+
+**Réponse :** False
+
+*Corrigé.* (1) L'assemblage a 6 carrés pareils, comme les 6 faces d'un cube : cela ne suffit pas, il faut regarder leur position. (2) La rangée de 4 carrés se replie pour faire le tour du cube : le premier et le troisième carré de la rangée se retrouvent face à face. (3) Les deux carrés du dessus sont accrochés à ces deux carrés-là, du même côté de la rangée : en pliant, ils viennent tous les deux fermer le même côté du cube, l'un sur l'autre. (4) Le côté opposé reste ouvert : ce n'est pas un patron de cube. Hugo a tort.
+
+*Indice.* Plie dans ta tête la rangée de 4 carrés pour faire un tour. Où vont les deux carrés du dessus ?
+
+**EX-G011-M-02** — maitrise, qcm, 90 s
+
+Il manque un carré à cet assemblage pour avoir un patron de cube. Sur quelle case lettrée faut-il l'ajouter ?
+
+- **a.** La case A
+  <br>*Erreur visée :* L'élève complète en faisant un bloc : avec A, quatre carrés se touchent par un même coin, et deux faces se superposent au pliage.
+- **b.** La case B
+  <br>*Erreur visée :* L'élève met les deux carrés du même côté de la rangée. Ils sont accrochés à deux carrés qui se retrouvent face à face dans le tour du cube : en pliant, ils ferment tous les deux le même côté, et le côté opposé reste ouvert.
+- **c.** La case C ✅
+- **d.** La case D
+  <br>*Erreur visée :* L'élève allonge la rangée : avec D, 5 carrés sont en ligne, et le cinquième retombe sur le premier quand on plie.
+
+*Corrigé.* (1) L'assemblage a 5 carrés : il en manque bien un. Il faut choisir sa place pour que les faces ne se superposent pas. (2) La rangée de 4 carrés fait le tour du cube. Le carré du dessus ferme un côté ; le dernier carré doit fermer le côté opposé, donc il va en dessous de la rangée. (3) Avec A, quatre carrés forment un bloc autour d'un même coin. Avec B, deux carrés ferment le même côté. Avec D, la rangée de 5 carrés se replie sur elle-même. (4) Le carré manquant va sur la case C.
+
+*Indice.* La rangée de 4 carrés fait le tour du cube. Quel côté reste à fermer ?
 
 ---
 
@@ -5182,6 +6306,558 @@ Un club de foot paie 492 € pour 36 maillots identiques. Combien paierait-il po
 
 ---
 
+## `G015` · Comparer des angles — CM1, difficulté 3
+
+*Nommer un angle par son sommet et deux points de ses côtés (l'angle ABC a pour sommet B), et comparer des angles saillants : lequel est le plus grand, sans mesure, par superposition ou par comparaison à l'angle droit. Piège à travailler : la longueur des côtés dessinés ne dit rien de la grandeur de l'angle. Figure nécessaire : angles lettrés, côtés de longueurs différentes, angles superposés ou de même sommet, arc de marquage.*
+
+> « Comparer des angles » — *Cycle 3, Cours moyen première année, Grandeurs et mesures, Les angles*
+> « Comprendre et utiliser les notations des angles » — *Cycle 3, Cours moyen première année, Grandeurs et mesures, Les angles*
+> « Au CM1, le travail sur la grandeur « angle » se généralise en comparant des angles. Au cours moyen, les élèves ne travaillent qu'avec des angles saillants. » — *Cycle 3, Cours moyen première année, Grandeurs et mesures*
+
+**EX-G015-D-01** — decouverte, texte, 40 s
+
+Un angle est marqué d'un arc sur la figure. Écris son nom avec trois lettres.
+
+**Réponse :** BCD
+
+*Corrigé.* (1) L'arc est dessiné au point C : C est le sommet de l'angle, le point d'où partent ses deux côtés. (2) Les deux côtés partent de C : l'un va vers B, l'autre vers D. (3) Pour nommer un angle, on écrit le sommet au milieu, entre un point de chaque côté : l'angle BCD. On peut aussi l'appeler DCB, c'est le même angle. (4) « CBD » ne convient pas : la lettre du milieu y est B, ce serait un angle de sommet B. Et l'angle ABC est un autre angle de la ligne brisée, celui de sommet B, qui n'est pas marqué.
+
+*Indice.* Où se trouve le sommet de l'angle marqué ? Quelle place a le sommet dans le nom d'un angle ?
+
+**EX-G015-D-02** — decouverte, qcm, 40 s
+
+Lequel est le plus grand : l'angle MNP ou l'angle RST ?
+
+- **a.** L'angle RST ✅
+- **b.** L'angle MNP
+  <br>*Erreur visée :* L'élève compare la longueur des côtés, ou la taille des arcs : ceux de l'angle MNP sont bien plus longs. Mais la grandeur d'un angle, c'est l'écartement de ses côtés, et l'angle MNP est très fermé.
+- **c.** On ne peut pas savoir sans les mesurer
+  <br>*Erreur visée :* L'élève croit qu'il faut une mesure pour comparer deux angles. On compare sans mesurer : à l'œil quand l'écart est net, ou en comparant chaque angle au coin d'une feuille, qui est un angle droit.
+
+*Corrigé.* (1) La grandeur d'un angle, c'est l'écartement entre ses deux côtés, pas la longueur des côtés. (2) Les côtés de l'angle MNP sont longs, mais peu écartés : l'angle MNP est plus petit qu'un angle droit. (3) Les côtés de l'angle RST sont courts, mais très écartés : l'angle RST est plus grand qu'un angle droit. (4) Le plus grand est donc l'angle RST. Pour s'en assurer sans mesure, on pose le coin d'une feuille, un angle droit, sur chacun : l'angle MNP tient à l'intérieur du coin, l'angle RST le dépasse.
+
+*Indice.* Regarde l'écartement entre les côtés, pas leur longueur.
+
+**EX-G015-E-01** — entrainement, texte, 60 s
+
+Range les angles 1, 2 et 3 du plus petit au plus grand. Écris leurs numéros séparés par des virgules.
+
+**Réponse :** 2, 1, 3
+
+*Corrigé.* (1) On ne regarde pas la longueur des côtés : l'angle 2 a les côtés les plus longs, l'angle 3 les plus courts. Ce qui compte, c'est l'écartement. (2) On compare chaque angle au coin d'une feuille, qui est un angle droit : les angles 1 et 2 sont plus petits qu'un angle droit, l'angle 3 est plus grand. L'angle 3 est donc le plus grand des trois. (3) Entre les angles 1 et 2 : les côtés de l'angle 2 sont presque collés, ceux de l'angle 1 bien plus écartés. L'écart se voit à l'œil : l'angle 2 est le plus petit. (4) Du plus petit au plus grand : 2, 1, 3.
+
+*Indice.* Compare d'abord chaque angle au coin d'une feuille, qui est un angle droit.
+
+**EX-G015-E-02** — entrainement, vrai_faux, 60 s
+
+Tom dit : « L'angle AOC est plus grand que l'angle AOB. » Tom a-t-il raison ?
+
+**Réponse :** False
+
+*Corrigé.* (1) Les deux angles ont le même sommet O et un côté commun, celui qui va de O vers A. (2) Le côté qui va de O vers C est à l'intérieur de l'angle AOB : l'angle AOC n'est qu'une partie de l'angle AOB. (3) Une partie est plus petite que le tout : l'angle AOC est plus petit que l'angle AOB. Tom a tort. (4) Erreur à éviter : le côté qui va vers C est plus long que celui qui va vers B, mais la longueur des côtés ne dit rien de la grandeur d'un angle. Si on prolonge un côté, l'angle ne change pas.
+
+*Indice.* Le côté qui va de O vers C est-il dans l'angle AOB, ou en dehors ?
+
+**EX-G015-M-01** — maitrise, qcm, 75 s
+
+Quatre segments partent du point O. Lequel est le plus grand : l'angle POR ou l'angle QOS ?
+
+- **a.** L'angle POR
+  <br>*Erreur visée :* L'élève se fie à la longueur des côtés : les segments qui vont vers P et vers R sont les plus longs. Mais la longueur des côtés ne dit rien de l'écartement.
+- **b.** L'angle QOS ✅
+- **c.** Ils sont aussi grands l'un que l'autre
+  <br>*Erreur visée :* L'élève voit que les deux angles ont en commun l'angle QOR et s'arrête là. Il faut comparer ce qui dépasse : l'angle POQ d'un côté, l'angle ROS de l'autre, bien plus grand.
+
+*Corrigé.* (1) Les deux angles ont pour sommet O, la lettre du milieu. L'angle POR est entre les côtés qui vont vers P et vers R ; l'angle QOS entre ceux qui vont vers Q et vers S. (2) Les deux angles se chevauchent : ils ont en commun l'angle QOR. (3) L'angle POR, c'est l'angle QOR avec, en plus, l'angle POQ, très fermé. L'angle QOS, c'est l'angle QOR avec, en plus, l'angle ROS, bien plus ouvert. (4) Donc l'angle QOS est le plus grand, même si ses côtés sont plus courts. D'ailleurs, l'angle QOS est plus grand qu'un angle droit, et l'angle POR plus petit.
+
+*Indice.* Repère le sommet et les deux côtés de chaque angle. Quelle partie ont-ils en commun ?
+
+**EX-G015-M-02** — maitrise, vrai_faux, 60 s
+
+Inès dit : « Le plus grand angle de ce triangle est l'angle KLM. » Inès a-t-elle raison ?
+
+**Réponse :** True
+
+*Corrigé.* (1) Dans le nom KLM, la lettre du milieu est le sommet : l'angle KLM est l'angle du triangle de sommet L. (2) On compare les trois angles du triangle à un angle droit : en K et en M, les angles sont plus petits ; en L, l'angle est plus grand qu'un angle droit. (3) L'angle de sommet L est donc le plus grand : Inès a raison. (4) Deux pièges : les côtés qui partent de L sont les plus courts du triangle, mais cela ne rend pas l'angle petit ; et l'angle KLM n'est pas l'angle de sommet K, la première lettre.
+
+*Indice.* Quel point est le sommet de l'angle KLM ? Compare ensuite les angles du triangle à un angle droit.
+
+---
+
+## `G016` · Droites perpendiculaires et droites parallèles — CM1, difficulté 3
+
+*Reconnaître deux droites perpendiculaires (elles se coupent en formant un angle droit) et deux droites parallèles (elles ne se coupent pas, même prolongées), sur une figure, avec ou sans codage, sur quadrillage ou papier uni ; distinguer les deux, et repérer la perpendiculaire ou la parallèle à une droite passant par un point donné. Le tracé à l'équerre ne s'évalue pas à l'écran. Figure nécessaire : plusieurs droites nommées, codage de l'angle droit, équerre posée en option, quadrillage ou fond blanc.*
+
+> « Reconnaître et utiliser la notion de perpendicularité » — *Cycle 3, Cours moyen première année, Espace et géométrie, La géométrie plane*
+> « Reconnaître et utiliser la notion de parallélisme » — *Cycle 3, Cours moyen première année, Espace et géométrie, La géométrie plane*
+> « Utiliser les outils géométriques usuels : règle, règle graduée, équerre et compas » — *Cycle 3, Cours moyen première année, Espace et géométrie, La géométrie plane*
+
+**EX-G016-D-01** — decouverte, qcm, 45 s
+
+Quelle droite est perpendiculaire à la droite (d) ?
+
+- **a.** La droite (g)
+  <br>*Erreur visée :* L'élève croit que toute droite qui coupe la droite (d) lui est perpendiculaire. La droite (g) coupe bien la droite (d), mais sans former d'angle droit.
+- **b.** La droite (f)
+  <br>*Erreur visée :* L'élève confond les deux mots : la droite (f) ne coupe pas la droite (d), elle lui est parallèle, pas perpendiculaire.
+- **c.** La droite (e) ✅
+
+*Corrigé.* (1) Deux droites perpendiculaires se coupent en formant un angle droit. (2) La droite (f) ne coupe pas la droite (d) : elles sont parallèles, pas perpendiculaires. (3) La droite (g) coupe la droite (d), mais elle avance d'1 carreau vers la droite pour 2 vers le bas : elle forme avec la droite (d) un angle aigu d'un côté, obtus de l'autre. (4) La droite (e) suit une ligne verticale du quadrillage et la droite (d) une ligne horizontale : elles forment quatre angles droits. Réponse : la droite (e).
+
+*Indice.* Cherche la droite qui coupe la droite (d) en formant un angle droit.
+
+**EX-G016-D-02** — decouverte, vrai_faux, 45 s
+
+Lucas dit : « Les droites (d) et (e) sont parallèles. » A-t-il raison ?
+
+**Réponse :** True
+
+*Corrigé.* (1) Deux droites parallèles ne se coupent pas, même prolongées : l'écart entre elles reste le même. (2) Sur le quadrillage, chacune des deux droites avance de 3 carreaux vers la droite pour descendre d'1 carreau : elles ont la même direction. (3) Au bord gauche comme au bord droit, il y a 4 carreaux entre les droites (d) et (e) : l'écart ne change pas. (4) Elles ne se couperont jamais : Lucas a raison, les droites (d) et (e) sont parallèles, même si elles ne sont pas horizontales.
+
+*Indice.* Compte les carreaux entre les deux droites, à gauche puis à droite.
+
+**EX-G016-E-01** — entrainement, qcm, 75 s
+
+La droite (d) est penchée. Quelle droite lui est perpendiculaire ?
+
+- **a.** La droite (f)
+  <br>*Erreur visée :* L'élève croit qu'une perpendiculaire est toujours verticale. La droite (f) l'est, mais la droite (d) est penchée : elles ne forment pas d'angle droit.
+- **b.** La droite (e) ✅
+- **c.** La droite (g)
+  <br>*Erreur visée :* L'élève juge à l'œil un angle presque droit sans le vérifier : la droite (g) avance d'1 carreau pour 1, elle forme avec la droite (d) un angle aigu.
+
+*Corrigé.* (1) Deux droites sont perpendiculaires si elles se coupent en formant un angle droit, même quand aucune n'est horizontale ni verticale. (2) On lit les directions sur le quadrillage. La droite (d) avance de 2 carreaux vers la droite pour 1 vers le bas. La droite (e) avance d'1 carreau vers la droite pour 2 vers le haut : c'est la direction de la droite (d) tournée d'un quart de tour. Elles forment un angle droit, ce que confirme le coin d'une feuille posé sur l'écran. (3) La droite (f) est verticale, mais la droite (d) n'est pas horizontale : elles forment un angle aigu et un angle obtus. La droite (g) avance d'1 carreau pour 1 carreau : elle forme avec la droite (d) un angle aigu, plus petit qu'un angle droit. (4) La droite perpendiculaire à la droite (d) est la droite (e).
+
+*Indice.* Pose le coin d'une feuille sur l'écran, là où une droite coupe la droite (d) : il sert d'angle droit.
+
+**EX-G016-E-02** — entrainement, numerique, 75 s
+
+Combien de droites de la figure sont perpendiculaires à la droite (d) ?
+
+**Réponse :** 2
+
+*Corrigé.* (1) On cherche les droites qui coupent la droite (d) en formant un angle droit. (2) La droite (d) avance de 2 carreaux vers la droite pour 1 vers le haut. Les droites (e) et (f) avancent d'1 carreau vers la droite pour 2 vers le bas : c'est la direction de la droite (d) tournée d'un quart de tour. Elles sont perpendiculaires à la droite (d). (3) La droite (g) avance de 2 carreaux vers la droite pour 1 vers le haut, comme la droite (d) : elle ne la coupe pas, elle lui est parallèle. (4) Il y a 2 droites perpendiculaires à la droite (d) : les droites (e) et (f). On remarque que les droites (e) et (f) ne se coupent pas : elles ont la même direction.
+
+*Indice.* Pose le coin d'une feuille sur l'écran, là où une droite coupe la droite (d) : il sert d'angle droit.
+
+**EX-G016-M-01** — maitrise, vrai_faux, 60 s
+
+Zoé dit : « Les droites (d) et (e) sont parallèles. » A-t-elle raison ?
+
+**Réponse :** False
+
+*Corrigé.* (1) Deux droites parallèles ne se coupent jamais, même prolongées : l'écart entre elles reste le même partout. (2) On compte les carreaux entre les droites (d) et (e) : 4 carreaux au bord gauche, 3 carreaux au bord droit. L'écart diminue. (3) Si on prolonge les deux droites vers la droite, l'écart continue de diminuer : elles finissent par se couper, en dehors du dessin. (4) Zoé a tort : sur le dessin, les droites ne se coupent pas, mais une droite est illimitée et on n'en voit qu'un morceau. C'est l'écart entre elles, qui diminue, qui permet de trancher.
+
+*Indice.* Compare l'écart entre les deux droites au bord gauche et au bord droit.
+
+**EX-G016-M-02** — maitrise, qcm, 75 s
+
+Quelle droite passe par le point P et est perpendiculaire à la droite (d) ?
+
+- **a.** La droite (e) ✅
+- **b.** La droite (g)
+  <br>*Erreur visée :* L'élève ne vérifie qu'une condition : la droite (g) est bien perpendiculaire à la droite (d), mais elle ne passe pas par P.
+- **c.** La droite (f)
+  <br>*Erreur visée :* L'élève croit qu'une perpendiculaire est toujours verticale : la droite (f) passe par P, mais elle ne forme pas d'angle droit avec la droite (d), qui est penchée.
+
+*Corrigé.* (1) Il faut deux conditions à la fois : passer par le point P, et couper la droite (d) en formant un angle droit. (2) Passent par P : les droites (e) et (f). La droite (g) ne passe pas par P. (3) La droite (f) est verticale, mais la droite (d) n'est pas horizontale : pas d'angle droit. La droite (d) avance de 2 carreaux vers la droite pour 1 vers le bas ; la droite (e) avance d'1 carreau vers la droite pour 2 vers le haut : elle est perpendiculaire à la droite (d), comme la droite (g). (4) Seule la droite (e) remplit les deux conditions.
+
+*Indice.* Vérifie les deux conditions l'une après l'autre. Pour l'angle droit, pose le coin d'une feuille sur l'écran.
+
+---
+
+## `G017` · Triangles particuliers : rectangle, isocèle, équilatéral — CM1, difficulté 3
+
+*Reconnaître et nommer un triangle rectangle, isocèle ou équilatéral en se référant à sa définition (un angle droit ; deux côtés de même longueur ; trois côtés de même longueur), à partir des longueurs données ou du codage, et connaître les égalités d'angles qui en découlent (deux angles égaux dans le triangle isocèle, trois dans l'équilatéral). Figure nécessaire : triangles lettrés avec codage des longueurs, des angles droits et des angles égaux, longueurs écrites en option.*
+
+> « Reconnaître et nommer les figures suivantes en faisant référence à leur définition : triangle, triangle rectangle, triangle isocèle, triangle équilatéral, quadrilatère, carré, rectangle et losange » — *Cycle 3, Cours moyen première année, Espace et géométrie, La géométrie plane*
+> « Connaître les propriétés de parallélisme des côtés opposés, des égalités de longueurs et d'angles pour les figures usuelles : triangle rectangle, triangle isocèle, triangle équilatéral, carré, rectangle et losange. » — *Cycle 3, Cours moyen première année, Espace et géométrie, La géométrie plane*
+> « Connaître les codes usuels utilisés en géométrie » — *Cycle 3, Cours moyen première année, Espace et géométrie, La géométrie plane*
+
+**EX-G017-D-01** — decouverte, texte, 45 s
+
+Lis le codage de la figure. Quel est le nom précis du triangle ABC ?
+
+**Réponse :** isocèle
+
+*Corrigé.* (1) Les côtés AB et AC portent le même petit trait : ils ont la même longueur. Le côté BC ne porte pas de trait. (2) Un triangle qui a deux côtés de même longueur est un triangle isocèle. On dit isocèle en A : A est le sommet commun aux deux côtés égaux. (3) Il n'est pas équilatéral : rien ne dit que BC a la même longueur que les deux autres côtés, et on voit qu'il est plus court. (4) Il n'est pas rectangle : aucun angle ne porte le petit carré de l'angle droit.
+
+*Indice.* Regarde quels côtés portent le même petit trait.
+
+**EX-G017-D-02** — decouverte, qcm, 45 s
+
+Lis les codages. Quel triangle est rectangle ?
+
+- **a.** Le triangle 1
+  <br>*Erreur visée :* L'élève choisit la figure la plus « régulière ». Le triangle 1 a deux côtés codés égaux : il est isocèle, mais aucun de ses angles n'est droit.
+- **b.** Le triangle 3
+  <br>*Erreur visée :* L'élève croit qu'un angle droit a forcément un côté horizontal, et cherche un triangle posé à plat. Le triangle 3 a un côté horizontal, mais aucun angle droit.
+- **c.** Le triangle 2 ✅
+
+*Corrigé.* (1) Un triangle rectangle est un triangle qui a un angle droit. On code l'angle droit par un petit carré. (2) Le triangle 2 porte ce petit carré : il a un angle droit, c'est un triangle rectangle, même si ses côtés sont penchés. (3) Le triangle 1 a deux côtés de même longueur (même petit trait) : il est isocèle, sans angle droit. (4) Le triangle 3 est posé sur un côté horizontal, mais il a deux angles aigus et un angle obtus : il n'est pas rectangle. Un angle droit n'a pas besoin d'un côté horizontal.
+
+*Indice.* Cherche le codage de l'angle droit.
+
+**EX-G017-E-01** — entrainement, numerique, 50 s
+
+Lis les codages et les longueurs écrites. Combien mesure le côté KM ?
+
+**Réponse :** 5
+
+*Corrigé.* (1) Les côtés KL et KM portent le même petit trait : ils ont la même longueur. Le triangle KLM est isocèle en K. (2) Le côté KL mesure 5 cm : c'est écrit sur la figure. (3) KM a la même longueur que KL : il mesure 5 cm. (4) Le côté LM mesure 6 cm, mais il ne porte pas le même codage que KM : ce n'est pas sa longueur qu'il faut prendre.
+
+*Indice.* Quel côté porte le même petit trait que KM ?
+
+**EX-G017-E-02** — entrainement, qcm, 60 s
+
+Lis les longueurs écrites sur le triangle RST. Que peut-on dire de ses trois angles ?
+
+- **a.** Seuls deux angles ont la même grandeur.
+  <br>*Erreur visée :* L'élève applique la propriété du triangle isocèle, deux angles égaux, sans voir que les trois côtés sont égaux : RST est équilatéral.
+- **b.** Les trois angles ont la même grandeur. ✅
+- **c.** On ne peut pas le savoir sans les mesurer.
+  <br>*Erreur visée :* L'élève croit qu'il faut mesurer pour comparer des angles. Les longueurs suffisent : un triangle dont les trois côtés sont égaux a ses trois angles égaux.
+
+*Corrigé.* (1) Les trois côtés mesurent 4 cm : le triangle RST a ses trois côtés de même longueur, c'est un triangle équilatéral. (2) Un triangle équilatéral a ses trois angles de même grandeur. (3) Réponse : les trois angles ont la même grandeur. On le sait sans rien mesurer, grâce aux longueurs. (4) Un triangle isocèle qui n'est pas équilatéral n'a, lui, que deux angles égaux : ceux qui touchent le côté différent.
+
+*Indice.* Trouve d'abord la nature du triangle grâce aux longueurs.
+
+**EX-G017-M-01** — maitrise, texte, 75 s
+
+L'angle EDF est marqué d'un arc. Quel autre angle du triangle DEF a la même grandeur ?
+
+**Réponse :** DFE
+
+*Corrigé.* (1) Les côtés ED et EF portent le même petit trait : le triangle DEF est isocèle en E. (2) Dans un triangle isocèle, les deux angles qui touchent le troisième côté, ici DF, ont la même grandeur. (3) Ces deux angles ont pour sommets D et F : l'angle EDF, marqué, et l'angle DFE, de sommet F. (4) L'angle DEF, de sommet E, n'a pas la même grandeur que les deux autres : il ne l'aurait que si le triangle était équilatéral, et ici DF n'est pas codé comme ED.
+
+*Indice.* Repère d'abord les deux côtés de même longueur.
+
+**EX-G017-M-02** — maitrise, vrai_faux, 50 s
+
+Nina dit : « Le triangle GHI est rectangle, mais il n'est pas isocèle. » A-t-elle raison ?
+
+**Réponse :** False
+
+*Corrigé.* (1) Le petit carré en H code un angle droit : le triangle GHI est rectangle en H. (2) Les côtés HG et HI portent le même petit trait : ils ont la même longueur, le triangle est isocèle en H. (3) GHI est rectangle et isocèle : c'est un triangle rectangle isocèle. Nina a tort : un triangle rectangle peut aussi être isocèle. (4) Comme dans tout triangle isocèle, ses deux autres angles, en G et en I, ont la même grandeur.
+
+*Indice.* Lis les deux codages, l'un après l'autre.
+
+---
+
+## `G018` · Carré, rectangle, losange : définitions et propriétés — CM1, difficulté 3
+
+*Reconnaître et nommer un carré, un rectangle ou un losange en se référant à sa définition et connaître leurs propriétés : côtés opposés parallèles, égalités de longueurs, angles droits. En tirer qu'un carré est à la fois un rectangle et un losange. Contraste avec G012 : on ne décrit plus seulement la figure, on raisonne sur la définition. Figure nécessaire : quadrilatères lettrés avec codage, sur quadrillage ou fond blanc, éventuellement tournés.*
+
+> « Reconnaître et nommer les figures suivantes en faisant référence à leur définition : triangle, triangle rectangle, triangle isocèle, triangle équilatéral, quadrilatère, carré, rectangle et losange » — *Cycle 3, Cours moyen première année, Espace et géométrie, La géométrie plane*
+> « Connaître les propriétés de parallélisme des côtés opposés, des égalités de longueurs et d'angles pour les figures usuelles : triangle rectangle, triangle isocèle, triangle équilatéral, carré, rectangle et losange. » — *Cycle 3, Cours moyen première année, Espace et géométrie, La géométrie plane*
+
+**EX-G018-D-01** — decouverte, texte, 45 s
+
+Lis les codages. Quel est le nom précis du quadrilatère ABCD ?
+
+**Réponse :** rectangle
+
+*Corrigé.* (1) Le petit carré à chaque sommet code un angle droit : ABCD a quatre angles droits. (2) Un quadrilatère qui a quatre angles droits est un rectangle, même s'il est penché. (3) Ce n'est pas un carré : AB et CD portent deux traits, BC et DA un seul. Les côtés n'ont pas tous la même longueur. (4) Comme dans tout rectangle, ses côtés opposés ont la même longueur et sont parallèles.
+
+*Indice.* Que disent les petits carrés aux sommets ?
+
+**EX-G018-D-02** — decouverte, vrai_faux, 50 s
+
+Léo affirme : « Dans le quadrilatère ABCD, les côtés AB et DC sont parallèles. » A-t-il raison ?
+
+**Réponse :** True
+
+*Corrigé.* (1) Les quatre côtés portent le même petit trait : ABCD a quatre côtés de même longueur, c'est un losange. (2) Un losange a ses côtés opposés parallèles. AB et DC sont deux côtés opposés : ils ne se touchent pas. (3) AB et DC sont donc parallèles : Léo a raison. (4) De la même façon, AD et BC sont parallèles.
+
+*Indice.* Trouve d'abord la nature du quadrilatère grâce aux codages.
+
+**EX-G018-E-01** — entrainement, qcm, 60 s
+
+Que manque-t-il au quadrilatère ABCD pour être un carré ?
+
+- **a.** Des côtés opposés parallèles
+  <br>*Erreur visée :* L'élève croit qu'un losange n'a pas de côtés parallèles. Or tout losange a ses côtés opposés parallèles, comme le carré.
+- **b.** Quatre côtés de même longueur
+  <br>*Erreur visée :* L'élève ne lit pas le codage des côtés : les quatre côtés portent le même petit trait, ABCD les a déjà.
+- **c.** Quatre angles droits ✅
+
+*Corrigé.* (1) Un carré est un quadrilatère qui a quatre côtés de même longueur et quatre angles droits. (2) Les quatre côtés de ABCD portent le même petit trait : ils ont la même longueur. ABCD est un losange. (3) Aucun angle ne porte le codage de l'angle droit, et ses angles sont aigus ou obtus : il lui manque quatre angles droits. (4) Un carré, c'est un losange qui a quatre angles droits.
+
+*Indice.* Compare ce que disent les codages avec la définition du carré.
+
+**EX-G018-E-02** — entrainement, qcm, 60 s
+
+Laquelle de ces figures n'est pas un losange ?
+
+- **a.** La figure 1
+  <br>*Erreur visée :* L'élève croit qu'un carré n'est pas un losange, ou qu'un carré posé sur une pointe change de nature. La figure 1 a quatre côtés de même longueur : c'est un losange.
+- **b.** La figure 3 ✅
+- **c.** Aucune : elles ont toutes leurs côtés opposés de même longueur.
+  <br>*Erreur visée :* L'élève croit que des côtés opposés égaux suffisent pour faire un losange. Il faut les quatre côtés égaux, ce que la figure 3 n'a pas.
+
+*Corrigé.* (1) Un losange est un quadrilatère qui a ses quatre côtés de même longueur. On lit le codage des côtés. (2) Figure 1 : quatre côtés codés pareil et quatre angles droits. C'est un carré, et c'est un losange : il a bien quatre côtés de même longueur. (3) Figure 2 : quatre côtés codés pareil, c'est un losange. (4) Figure 3 : deux côtés portent un trait, deux autres trois traits. Ses côtés n'ont pas tous la même longueur : la figure 3 n'est pas un losange, c'est un rectangle.
+
+*Indice.* Pour chaque figure, regarde si les quatre côtés portent le même codage.
+
+**EX-G018-M-01** — maitrise, numerique, 75 s
+
+Lis les codages. Combien de ces figures sont des rectangles ?
+
+**Réponse :** 2
+
+*Corrigé.* (1) Un rectangle est un quadrilatère qui a quatre angles droits. On cherche les figures dont les quatre angles portent le petit carré. (2) Figure 1 : quatre angles droits et quatre côtés égaux. C'est un carré, et un carré est un rectangle particulier. (3) Figure 3 : quatre angles droits et côtés opposés égaux, c'est un rectangle. Les figures 2 et 4 n'ont aucun angle droit : ce ne sont pas des rectangles, même si la figure 4 a ses côtés opposés de même longueur. (4) Il y a 2 rectangles : les figures 1 et 3. Oublier le carré est l'erreur la plus fréquente.
+
+*Indice.* Un carré a-t-il quatre angles droits ?
+
+**EX-G018-M-02** — maitrise, texte, 90 s
+
+Lis les codages et les longueurs. Quel est le nom le plus précis du quadrilatère EFGH ?
+
+**Réponse :** carré
+
+*Corrigé.* (1) Les quatre angles portent le petit carré : EFGH a quatre angles droits, c'est un rectangle. (2) Dans un rectangle, les côtés opposés ont la même longueur : GH mesure comme EF, 5 cm, et HE mesure comme FG, 5 cm. (3) Les quatre côtés mesurent 5 cm : EFGH est un rectangle qui a quatre côtés de même longueur, c'est un carré. (4) Il est posé sur une pointe, mais sa position ne change rien. « Rectangle » et « losange » sont justes, mais « carré » est plus précis : un carré est à la fois un rectangle et un losange.
+
+*Indice.* Commence par les angles, puis utilise ce que tu sais des côtés opposés d'un rectangle.
+
+---
+
+## `G019` · Solides en perspective ; le prisme droit — CM1, difficulté 3
+
+*Identifier un solide (cube, pavé, pyramide, cylindre, cône, prisme droit) à partir d'une représentation en perspective, en sachant que certaines faces, arêtes et sommets sont cachés et que les arêtes cachées sont en pointillés ; connaître la nature des faces d'un prisme droit (deux bases polygonales identiques, des faces latérales rectangulaires) et d'une pyramide. Figure nécessaire : solides en perspective cavalière, arêtes cachées en pointillés, faces et sommets marquables.*
+
+> « Nommer un cube, une boule, un pavé, un cône, une pyramide, un cylindre et un prisme droit » — *Cycle 3, Cours moyen première année, Espace et géométrie, Les solides*
+> « Connaître la nature des faces d'un prisme droit » — *Cycle 3, Cours moyen première année, Espace et géométrie, Les solides*
+> « S'ils ne construisent pas eux-mêmes de telles représentations, ils savent néanmoins identifier un solide à partir d'une représentation en perspective. » — *Cycle 3, Cours moyen première année, Espace et géométrie, Les solides*
+> « L'élève sait que les faces d'une pyramide sont des triangles ayant un sommet commun, à l'exception éventuelle d'une face, appelée la base de la pyramide, qui est un polygone ayant trois côtés ou plus. » — *Cycle 2, Cours élémentaire deuxième année, Espace et géométrie, Les solides*
+
+**EX-G019-D-01** — decouverte, qcm, 45 s
+
+Quel solide est un prisme droit ?
+
+- **a.** A
+  <br>*Erreur visée :* L'élève voit deux bases identiques reliées par un côté droit, comme pour un prisme. Mais ces bases sont des disques et le côté est arrondi : un cylindre n'a pas de faces rectangulaires.
+- **b.** B ✅
+- **c.** C
+  <br>*Erreur visée :* L'élève voit des faces en triangle, comme les bases du prisme. Mais ces triangles se rejoignent en un même sommet : c'est une pyramide, qui n'a qu'une base.
+
+*Corrigé.* (1) Un prisme droit a deux bases identiques, en haut et en bas, qui sont des polygones. Ses autres faces sont des rectangles. (2) Le solide B a deux bases en forme de triangle, l'une au-dessus de l'autre, et des faces de côté rectangulaires : c'est un prisme droit. (3) Le solide A a deux bases identiques, mais ce sont des disques, et son côté est arrondi : c'est un cylindre. (4) Le solide C a des faces en triangle qui se rejoignent en un même sommet : c'est une pyramide.
+
+*Indice.* Cherche deux faces identiques, en haut et en bas, reliées par des rectangles.
+
+**EX-G019-D-02** — decouverte, numerique, 60 s
+
+Combien de faces a ce solide ?
+
+**Réponse :** 5
+
+*Corrigé.* (1) Ce solide est un prisme droit. Ses deux bases sont des triangles : celui du dessus, et celui du dessous, caché. (2) Les faces de côté sont des rectangles. Sur le dessin, on en voit 2 ; la troisième est derrière : une de ses arêtes est en pointillés. (3) Il y a un rectangle pour chaque côté du triangle de base, donc 3 rectangles. (4) On compte les 2 triangles, puis les 3 rectangles : ce solide a 5 faces.
+
+*Indice.* Combien de côtés a la base ? Il y a autant de faces rectangulaires.
+
+**EX-G019-E-01** — entrainement, texte, 60 s
+
+Quel est le nom de ce solide ?
+
+**Réponse :** prisme droit
+
+*Corrigé.* (1) Le solide a deux bases identiques, en haut et en bas : ce sont des hexagones, des polygones à 6 côtés. (2) Ses faces de côté sont des rectangles qui relient les deux bases. Celles de derrière sont cachées : leurs arêtes sont en pointillés. (3) Deux bases polygonales identiques et des faces rectangulaires : c'est un prisme droit, à base hexagonale. (4) Ce n'est pas un cylindre : ses bases ne sont pas des disques, et ses faces de côté sont plates.
+
+*Indice.* Regarde la forme des bases et celle des faces de côté.
+
+**EX-G019-E-02** — entrainement, vrai_faux, 60 s
+
+Noé dit : « Ce solide est une pyramide. » A-t-il raison ?
+
+**Réponse :** False
+
+*Corrigé.* (1) Dans une pyramide, les faces en triangle se rejoignent toutes en un même sommet, la pointe. (2) Ici, les deux triangles sont l'un au-dessus de l'autre, identiques : ils ne se touchent pas. Ce sont deux bases. (3) Les autres faces sont des rectangles qui relient les deux bases : ce solide est un prisme droit. (4) Avoir des faces en triangle ne suffit pas pour être une pyramide : Noé a tort.
+
+*Indice.* Les triangles se rejoignent-ils en une pointe ?
+
+**EX-G019-M-01** — maitrise, numerique, 90 s
+
+Combien d'arêtes a ce solide ?
+
+**Réponse :** 18
+
+*Corrigé.* (1) Ce solide est un prisme droit dont les bases sont des hexagones, à 6 côtés. (2) La base du dessus a 6 arêtes, toutes visibles. La base du dessous a aussi 6 arêtes : 3 sont visibles devant, 3 sont cachées derrière, en pointillés. (3) Chaque sommet de la base du dessous est relié au sommet du dessus par une arête debout : 6 arêtes debout, dont 2 cachées, en pointillés. (4) On compte : de 1 à 6 pour la base du dessus ; on continue avec la base du dessous, de 7 à 12 ; puis avec les arêtes debout, de 13 à 18. Ce solide a 18 arêtes. Sur le dessin, les traits pleins n'en montrent que 13.
+
+*Indice.* Compte les arêtes de chaque base, puis les arêtes debout, pointillés compris.
+
+**EX-G019-M-02** — maitrise, qcm, 75 s
+
+Lequel de ces solides a exactement 6 sommets ?
+
+- **a.** A
+  <br>*Erreur visée :* L'élève pense à l'hexagone, qui a 6 sommets. Mais le prisme a deux bases hexagonales : 6 sommets en haut, et 6 autres en bas : en comptant tout, 12.
+- **b.** B
+  <br>*Erreur visée :* L'élève compte les arêtes au lieu des sommets : la pyramide B a 6 arêtes, mais seulement 4 sommets, 3 à la base et la pointe.
+- **c.** C ✅
+- **d.** D
+  <br>*Erreur visée :* L'élève compte les faces au lieu des sommets : le cube D a 6 faces, mais 8 sommets, ses coins.
+
+*Corrigé.* (1) A est un prisme droit à base hexagonale : 6 sommets en haut, puis on continue en bas : 7, 8, 9, 10, 11, 12. A a 12 sommets. (2) B est une pyramide à base triangulaire : 3 sommets à la base et la pointe, 4 sommets. Elle a 6 arêtes, pas 6 sommets. (3) C est un prisme droit à base triangulaire : 1, 2, 3 en haut, puis 4, 5, 6 en bas : 6 sommets. (4) D est un cube : 8 sommets. Il a 6 faces, pas 6 sommets.
+
+*Indice.* Pour un prisme, compte les sommets d'une base, puis ceux de l'autre.
+
+---
+
+## `G020` · Assemblages de cubes : dénombrer, cubes cachés — CM1, difficulté 3
+
+*Dénombrer les cubes d'un assemblage représenté en perspective, y compris ceux qu'on ne voit pas, en raisonnant par étages et par rangées ; dire combien il en manque pour obtenir un pavé. Prépare le volume par dénombrement (P026, 6e). Figure nécessaire : assemblage de cubes en perspective, par étages, cubes visibles seulement.*
+
+> « Résoudre des problèmes portant sur des assemblages de cubes » — *Cycle 3, Cours moyen première année, Espace et géométrie, Le repérage dans l'espace*
+> « L'élève construit des assemblages de cubes et de pavés à partir d'un modèle physique en trois dimensions ou d'une représentation plane (une photographie ou une représentation en perspective cavalière). » — *Cycle 2, Cours élémentaire première année, Espace et géométrie, Le repérage dans l'espace*
+
+**EX-G020-D-01** — decouverte, numerique, 45 s
+
+Cet assemblage de cubes forme un pavé. Aucun cube ne manque à l'intérieur. Combien de cubes compte l'étage du bas ?
+
+**Réponse :** 6
+
+*Corrigé.* (1) L'assemblage a 2 étages. L'étage du haut se voit en entier : 2 rangées de 3 cubes. (2) L'étage du bas porte celui du haut : sous chaque cube du haut, il y a un cube. (3) Dans la rangée de derrière, en bas, 2 cubes sont entièrement cachés ; on ne voit que le côté du troisième. Ils sont là quand même, puisqu'ils portent les cubes du haut. (4) L'étage du bas compte 2 rangées de 3 cubes : 2 × 3 = 6. Il compte 6 cubes.
+
+*Indice.* Combien de cubes dans l'étage du haut ? Qu'y a-t-il en dessous de chacun ?
+
+**EX-G020-D-02** — decouverte, qcm, 60 s
+
+Aucun cube ne manque à l'intérieur de cet assemblage. Combien de cubes compte-t-il en tout ?
+
+- **a.** 10
+  <br>*Erreur visée :* L'élève compte seulement les cubes qu'il voit. Or 2 cubes sont cachés derrière, à gauche, sous le cube du haut : ils comptent aussi.
+- **b.** 6
+  <br>*Erreur visée :* L'élève compte seulement la rangée de devant : 2 colonnes de 3 cubes. Il oublie la rangée de derrière.
+- **c.** 12 ✅
+
+*Corrigé.* (1) On compte par étages. L'étage du haut se voit en entier : 2 rangées de 2 cubes, soit 4 cubes. (2) L'assemblage a 3 étages, et aucun cube ne manque : chaque étage compte aussi 4 cubes, même si certains sont cachés. (3) 3 × 4 = 12 : l'assemblage compte 12 cubes. (4) Sur le dessin, on ne voit que 10 cubes : les 2 cubes cachés sont derrière, à gauche, sous les cubes du haut.
+
+*Indice.* Compte les cubes d'un étage, puis le nombre d'étages.
+
+**EX-G020-E-01** — entrainement, numerique, 90 s
+
+Cet assemblage est posé sur une table. Aucun cube ne manque à l'intérieur. Combien de cubes compte-t-il ?
+
+**Réponse :** 20
+
+*Corrigé.* (1) L'assemblage est un escalier de 4 colonnes, sur 2 rangées : celle de devant et celle de derrière, qui a la même forme. (2) On compte la rangée de devant, colonne par colonne : 1 cube, puis 2, puis 3, puis 4. 1 + 2 + 3 + 4 = 10 cubes. (3) La rangée de derrière a la même forme : 10 cubes aussi. 2 × 10 = 20 : l'assemblage compte 20 cubes. (4) Sur le dessin, on n'en voit que 17 : 3 cubes de la rangée de derrière sont cachés par leurs voisins. Ils sont là, puisqu'ils portent les cubes du dessus.
+
+*Indice.* Compte étage par étage, sans oublier la rangée de derrière.
+
+**EX-G020-E-02** — entrainement, vrai_faux, 60 s
+
+Aucun cube ne manque à l'intérieur de cet assemblage. Léo dit : « Il compte 7 cubes. » Léo a-t-il raison ?
+
+**Réponse :** False
+
+*Corrigé.* (1) Léo a compté les cubes qu'il voit sur le dessin : il y en a bien 7. (2) Mais la rangée de derrière a 2 étages : chaque cube du haut repose sur un cube. Ceux du bas, derrière, sont cachés par la rangée de devant ; on ne voit que le côté de celui de droite. (3) Rangée de devant : 3 cubes. Rangée de derrière : 2 étages de 3 cubes, 2 × 3 = 6. En tout, 3 + 6 = 9 cubes. (4) L'assemblage compte 9 cubes : Léo a tort, il a oublié 2 cubes cachés.
+
+*Indice.* Sous chaque cube de l'étage du haut, qu'y a-t-il ?
+
+**EX-G020-M-01** — maitrise, numerique, 120 s
+
+Aucun cube ne manque à l'intérieur de cet assemblage. On veut ajouter des cubes, sans en enlever, pour obtenir le plus petit pavé possible. Combien de cubes faut-il ajouter ?
+
+**Réponse :** 12
+
+*Corrigé.* (1) L'assemblage a 3 rangées de 4 colonnes. La rangée de derrière a 3 étages : le plus petit pavé possible a donc 3 étages partout. (2) On compte les places vides d'une tranche, de derrière à devant : la rangée de derrière est complète, il manque 1 cube à celle du milieu et 2 à celle de devant. 1 + 2 = 3 cubes par tranche. (3) L'assemblage a 4 tranches identiques, une par colonne : 4 × 3 = 12. (4) Il faut ajouter 12 cubes. Les places vides se voient au-dessus des marches ; aucune n'est cachée, puisque aucun cube ne manque à l'intérieur.
+
+*Indice.* Pour chaque rangée, combien d'étages manque-t-il dans chaque colonne ?
+
+**EX-G020-M-02** — maitrise, qcm, 120 s
+
+Cet assemblage est un grand cube. Aucun petit cube ne manque à l'intérieur. Combien de petits cubes ne voit-on pas du tout sur le dessin ?
+
+- **a.** 8 ✅
+- **b.** 1
+  <br>*Erreur visée :* L'élève imagine un seul cube caché, au centre du grand cube. Mais derrière la face de devant, il y a plusieurs cubes cachés à chaque étage, sauf en haut.
+- **c.** 4
+  <br>*Erreur visée :* L'élève ne cherche les cubes cachés que dans l'étage du bas, où il y en a 4. L'étage du milieu en cache 4 autres.
+
+*Corrigé.* (1) On voit un petit cube dès qu'on voit une de ses faces : devant, dessus ou à droite. (2) On voit donc tous les cubes de la rangée de devant, tous ceux de l'étage du haut, et tous ceux de la colonne de droite. (3) Les cubes cachés ne sont dans aucune des trois : 2 rangées (pas celle de devant), 2 colonnes (pas celle de droite), 2 étages (pas celui du haut). 2 × 2 × 2 = 8. (4) On ne voit pas 8 petits cubes. Le grand cube en compte 3 × 3 × 3 = 27 : on en voit 19, les 8 autres sont cachés.
+
+*Indice.* Un cube caché n'est ni devant, ni en haut, ni à droite.
+
+---
+
+## `G021` · Lire un programme de construction — CM1, difficulté 3
+
+*Lire un programme de construction (« Trace un rectangle ABCD tel que AB = 5 cm et BC = 3 cm. Trace le cercle de centre A qui passe par le milieu du côté [AB]. ») et dire quelle figure il produit parmi plusieurs, repérer l'étape mal exécutée dans un tracé, ou compléter une étape manquante. Les consignes nomment toujours l'objet (« le segment [AB] »), les notations n'étant pas exigibles au cours moyen. Construire soi-même ne s'évalue pas à l'écran. Figure nécessaire : figures composées (segments, droites, polygones, cercles) lettrées, plusieurs candidates numérotées sur la même image, dont certaines fautives.*
+
+> « Construire une figure géométrique composée de segments, de droites, de polygones usuels et de cercles. » — *Cycle 3, Cours moyen première année, Espace et géométrie, La géométrie plane*
+> « La réalisation de figures géométriques s'appuyant sur des programmes de construction comme « Trace un rectangle ABCD tel que AB = 5 cm et BC = 3 cm. Trace le cercle de centre A qui passe par le milieu du côté [AB]. » contribue également au développement de la pensée informatique. » — *Cycle 3, Cours moyen première année, Initiation à la pensée informatique*
+> « Par exemple, il ne sera pas demandé aux élèves de « tracer [AB] », mais de « tracer le segment [AB] ». » — *Cycle 3, Cours moyen première année, Espace et géométrie, La géométrie plane*
+> « Reproduire ou construire un carré, un rectangle, un triangle, un triangle rectangle ou un cercle ou des assemblages de ces figures sur tout support (papier quadrillé, pointé ou uni), avec une règle graduée, une équerre ou un compas. » — *Cycle 3, Cours moyen première année, Espace et géométrie, La géométrie plane*
+
+**EX-G021-D-01** — decouverte, qcm, 50 s
+
+Programme : « Trace le segment [EF]. Trace le cercle de centre E qui passe par le point F. » Quel cercle suit ce programme ?
+
+- **a.** Le cercle 2
+  <br>*Erreur visée :* L'élève inverse le centre et le point de passage : le cercle 2 a pour centre F et passe par E.
+- **b.** Le cercle 1 ✅
+- **c.** Le cercle 3
+  <br>*Erreur visée :* L'élève confond rayon et diamètre : le cercle 3 a pour diamètre le segment [EF], son centre est le milieu de ce segment, pas E.
+
+*Corrigé.* (1) Le centre du cercle doit être le point E : le cercle cherché est tracé autour de E. (2) Le cercle doit passer par F : son rayon est la longueur du segment [EF]. (3) Le cercle 1 a pour centre E et passe par F : il suit le programme. Réponse : le cercle 1. (4) Le cercle 2 a pour centre F et passe par E : le centre et le point de passage sont inversés. Le cercle 3 passe par E et par F, mais son centre est le milieu du segment [EF] : le segment [EF] en est un diamètre, pas un rayon.
+
+*Indice.* Repère d'abord le centre de chaque cercle.
+
+**EX-G021-D-02** — decouverte, vrai_faux, 60 s
+
+Le côté d'un carreau mesure 1 cm. Programme : « Trace un carré ABCD de côté 3 cm. Trace le cercle de centre C qui passe par B. » Lou a tracé cette figure. A-t-elle suivi ce programme ?
+
+**Réponse :** True
+
+*Corrigé.* (1) Étape 1 : ABCD a quatre côtés de 3 carreaux, soit 3 cm, et quatre angles droits, ceux du quadrillage. C'est bien un carré de côté 3 cm. (2) Étape 2 : le cercle a pour centre le sommet C et il passe par le sommet B. (3) Les deux étapes sont respectées : Lou a suivi le programme. (4) Le cercle passe aussi par D : le côté CD a la même longueur que le côté CB, qui est un rayon.
+
+*Indice.* Vérifie les étapes l'une après l'autre : longueur des côtés, centre, point de passage.
+
+**EX-G021-E-01** — entrainement, numerique, 75 s
+
+Programme de Léa : 1. Trace un carré EFGH. 2. Trace le segment [EG]. 3. Trace le cercle de centre G qui passe par H. À quelle étape Léa s'est-elle trompée ?
+
+**Réponse :** 2
+
+*Corrigé.* (1) Étape 1 : EFGH a quatre côtés de même longueur et quatre angles droits, c'est un carré. L'étape est réussie. (2) Étape 2 : le segment tracé relie F et H. Le programme demande le segment [EG], qui relie E et G : c'est l'autre diagonale. L'erreur est ici. (3) Étape 3 : le cercle a pour centre G et passe par H. L'étape est réussie ; il passe par F, ce qui est normal, car GF = GH. (4) Léa s'est trompée à l'étape 2.
+
+*Indice.* Pour chaque étape, regarde quels points la figure relie.
+
+**EX-G021-E-02** — entrainement, texte, 60 s
+
+Programme : « Trace le segment [AB] de 6 cm. Place son milieu M. Trace le cercle de centre M et de … 3 cm. » Quel mot manque ?
+
+**Réponse :** rayon
+
+*Corrigé.* (1) Le segment [AB] mesure 6 cm et M est son milieu : MA et MB mesurent 3 cm. (2) Le cercle tracé a pour centre M et passe par A et par B. Un segment qui va du centre à un point du cercle est un rayon : le rayon mesure 3 cm. (3) Le mot qui manque est rayon : « le cercle de centre M et de rayon 3 cm ». (4) « Diamètre » ne convient pas : un cercle de diamètre 3 cm serait bien plus petit, il ne passerait ni par A ni par B. Le diamètre de ce cercle est le segment [AB], qui mesure 6 cm.
+
+*Indice.* Quelle est la distance du centre M au point A ?
+
+**EX-G021-M-01** — maitrise, qcm, 90 s
+
+Le côté d'un carreau mesure 1 cm. Quel programme permet de tracer cette figure ?
+
+- **a.** Trace un rectangle EFGH avec EF = 2 cm et FG = 4 cm. Trace le cercle de centre I, milieu du segment [EF], qui passe par E.
+  <br>*Erreur visée :* L'élève inverse la longueur et la largeur : sur la figure, EF mesure 4 carreaux et FG 2 carreaux.
+- **b.** Trace un rectangle EFGH avec EF = 4 cm et FG = 2 cm. Trace le cercle de centre E qui passe par I, milieu du segment [EF].
+  <br>*Erreur visée :* L'élève inverse le centre et le point de passage : le cercle de la figure est centré en I et passe par E, pas l'inverse.
+- **c.** Trace un rectangle EFGH avec EF = 4 cm et FG = 2 cm. Trace le cercle de centre I, milieu du segment [EF], qui passe par E. ✅
+
+*Corrigé.* (1) On lit la figure : EFGH est un rectangle. EF mesure 4 carreaux, soit 4 cm, et FG mesure 2 cm. (2) I est le milieu du segment [EF], à 2 carreaux de E et de F. Le cercle a pour centre I et passe par E (et par F). (3) Le bon programme est le troisième : EF = 4 cm, FG = 2 cm, cercle de centre I qui passe par E. (4) Le premier inverse les longueurs : avec EF = 2 cm, EF serait le petit côté. Le deuxième inverse le centre et le point de passage : son cercle serait centré sur le sommet E.
+
+*Indice.* Compte les carreaux de EF et de FG, puis cherche le centre du cercle.
+
+**EX-G021-M-02** — maitrise, numerique, 75 s
+
+Programme : « Trace un cercle de centre O et de rayon … cm. Trace le segment [AB], un diamètre de ce cercle. Trace le carré ABCD. » Quel nombre manque ?
+
+**Réponse :** 3
+
+*Corrigé.* (1) Le côté AB du carré mesure 6 cm : c'est écrit sur la figure. (2) Le segment [AB] est un diamètre du cercle : le diamètre mesure 6 cm. (3) Le diamètre mesure deux fois le rayon : 2 × 3 = 6. Le rayon mesure 3 cm. (4) 6 cm est la longueur du diamètre, pas celle du rayon : le rayon va du centre O au cercle, il mesure la moitié du diamètre.
+
+*Indice.* Le segment [AB] est un diamètre. Quel lien y a-t-il entre diamètre et rayon ?
+
+---
+
 ## `P015` · Unités de mesure du milli au kilo : longueur, masse, contenance — CM1, difficulté 3
 
 *Connaître les unités de longueur du mm au km (dont dam et hm), de masse du mg à la tonne et de contenance du mL au hL, comprendre que les préfixes jouent le même rôle pour les trois grandeurs, et convertir des mesures entières en s'appuyant sur les relations entre unités (1 hL = 100 L ; 1 g = 1 000 mg). Un tableau peut présenter les unités, mais les conversions ne se font pas avec un tableau. Nombres entiers.*
@@ -5406,11 +7082,11 @@ Chaque carreau du quadrillage est un carré d'un centimètre de côté. Quelle e
 
 Zoé découpe la surface A en morceaux, puis elle recolle tous les morceaux autrement, sans trou ni chevauchement. Quelle surface peut-elle obtenir ?
 
-- **a.** La surface C ✅
+- **a.** Aucune des deux, car découper change l'aire
+  <br>*Erreur visée :* L'élève croit qu'en découpant et en recollant, on change l'aire. Or les morceaux recouvrent la même place, seulement rangée autrement.
 - **b.** La surface B
   <br>*Erreur visée :* L'élève compare les contours : B a le même contour que A, 16 côtés de carreau. Mais B recouvre 16 carreaux, A seulement 12.
-- **c.** Aucune des deux, car découper change l'aire
-  <br>*Erreur visée :* L'élève croit qu'en découpant et en recollant, on change l'aire. Or les morceaux recouvrent la même place, seulement rangée autrement.
+- **c.** La surface C ✅
 
 *Corrigé.* (1) Découper une surface et recoller tous ses morceaux, sans trou ni chevauchement, ne change pas son aire : la place recouverte reste la même. (2) On peut le voir sans compter : on coupe A en deux moitiés de 3 carreaux de long, et on pose une moitié sous l'autre. On obtient exactement C. (3) On peut aussi compter : A recouvre 12 carreaux (2 rangées de 6), C aussi (4 rangées de 3), B en recouvre 16 (4 rangées de 4). (4) Zoé a pu obtenir la surface C. B a le même contour que A, mais une plus grande aire.
 
@@ -5420,11 +7096,11 @@ Zoé découpe la surface A en morceaux, puis elle recolle tous les morceaux autr
 
 Laquelle de ces surfaces a une aire de 12 cm² ?
 
-- **a.** La surface B
+- **a.** La surface A ✅
+- **b.** La surface B
   <br>*Erreur visée :* L'élève compte les côtés de carreau sur le contour de B : 3 + 3 + 3 + 3 = 12. C'est le périmètre de B, 12 cm, une longueur. Son aire est 9 cm² : 3 rangées de 3 carreaux.
-- **b.** La surface C
+- **c.** La surface C
   <br>*Erreur visée :* L'élève compte les points où les lignes se croisent, sur C et à l'intérieur : 3 rangées de 4 points, 12 points. Mais l'aire compte les carreaux : C en recouvre 6, son aire est 6 cm².
-- **c.** La surface A ✅
 
 *Corrigé.* (1) Chaque carreau vaut 1 cm² : une aire de 12 cm², c'est 12 carreaux recouverts. (2) A : 4 + 4 + 2 + 2 = 12 carreaux. B : 3 + 3 + 3 = 9 carreaux. C : 3 + 3 = 6 carreaux. (3) C'est la surface A qui a une aire de 12 cm². (4) Le contour de B compte 12 côtés de carreau (son périmètre est 12 cm, une longueur), et C touche 12 points du quadrillage : ni l'un ni l'autre n'est une aire.
 
@@ -5682,6 +7358,83 @@ Nour divise un nombre par 4 et trouve 38. Que trouverait-elle en divisant ce nom
 *Corrigé.* (1) Diviser par 8, c'est prendre trois moitiés ; diviser par 4, c'est en prendre deux. (2) En trouvant 38, Nour a déjà pris les deux premières moitiés. Il manque une seule moitié. (3) La moitié de 38 : la moitié de 30 est 15, la moitié de 8 est 4. Donc 19. (4) En divisant par 8, Nour trouverait 19. C'est logique : on partage en deux fois plus de parts, donc chaque part est deux fois plus petite.
 
 *Indice.* Diviser par 8, c'est diviser par 4 et faire une étape de plus.
+
+---
+
+## `G023` · Trapèze, pentagone, hexagone : reconnaître par la définition — CM2, difficulté 3
+
+*Reconnaître et nommer un trapèze (quadrilatère ayant deux côtés opposés parallèles), un trapèze rectangle, un pentagone, un hexagone en se référant à leur définition, et connaître les propriétés de parallélisme et d'angles du trapèze et du trapèze rectangle. Figure nécessaire : quadrilatères et polygones lettrés, sur quadrillage pour rendre le parallélisme lisible, codage des angles droits.*
+
+> « Reconnaître et nommer les figures suivantes en s'appuyant sur leur définition : triangle, triangle rectangle, triangle isocèle, triangle équilatéral, quadrilatère, carré, rectangle, losange, trapèze, trapèze rectangle, pentagone et hexagone » — *Cycle 3, Cours moyen deuxième année, Espace et géométrie, La géométrie plane*
+> « Connaître les propriétés de parallélisme des côtés opposés, des égalités de longueurs et d'angles pour les figures usuelles : triangle rectangle, triangle isocèle, triangle équilatéral, carré, rectangle, losange, trapèze et trapèze rectangle » — *Cycle 3, Cours moyen deuxième année, Espace et géométrie, La géométrie plane*
+
+**EX-G023-D-01** — decouverte, texte, 45 s
+
+Observe le quadrillage. Quel est le nom précis du quadrilatère ABCD ?
+
+**Réponse :** trapèze
+
+*Corrigé.* (1) Les côtés AB et DC suivent des lignes horizontales du quadrillage : ils sont parallèles. (2) Les côtés AD et BC ne sont pas parallèles : ils se rapprochent vers le haut. (3) Un quadrilatère qui a deux côtés opposés parallèles est un trapèze. (4) Ce n'est pas un trapèze rectangle : aucun de ses angles n'est droit.
+
+*Indice.* Cherche deux côtés opposés parallèles.
+
+**EX-G023-D-02** — decouverte, numerique, 50 s
+
+Combien de ces figures sont des hexagones ?
+
+**Réponse :** 2
+
+*Corrigé.* (1) Un hexagone est un polygone qui a six côtés et six sommets. On compte les côtés de chaque figure. (2) Figure 1 : 6 côtés, c'est un hexagone. Figure 2 : 6 côtés, c'est un hexagone, même avec son coin qui rentre. (3) Figure 3 : 5 côtés, c'est un pentagone. Figure 4 : 4 côtés, c'est un trapèze. (4) Il y a 2 hexagones. Un hexagone n'a pas besoin d'avoir la forme d'une alvéole d'abeille : seul le nombre de côtés compte.
+
+*Indice.* Compte les côtés de chaque figure.
+
+**EX-G023-E-01** — entrainement, qcm, 50 s
+
+Quelle figure est un trapèze rectangle ?
+
+- **a.** La figure 3
+  <br>*Erreur visée :* L'élève s'arrête à l'angle droit : la figure 3 en a un, mais aucun de ses côtés opposés n'est parallèle, ce n'est pas un trapèze.
+- **b.** La figure 1
+  <br>*Erreur visée :* L'élève reconnaît un trapèze sans vérifier l'angle droit : la figure 1 n'en a aucun.
+- **c.** La figure 2 ✅
+
+*Corrigé.* (1) Un trapèze rectangle est un trapèze (deux côtés opposés parallèles) qui a un angle droit. (2) Figure 1 : les côtés du haut et du bas sont parallèles, c'est un trapèze, mais il n'a pas d'angle droit. (3) Figure 3 : elle a un angle droit, mais aucun côté n'est parallèle au côté opposé : ce n'est pas un trapèze. (4) Figure 2 : côtés du haut et du bas parallèles, et deux angles droits. Réponse : la figure 2.
+
+*Indice.* Il faut deux conditions : des côtés opposés parallèles et un angle droit.
+
+**EX-G023-E-02** — entrainement, vrai_faux, 75 s
+
+Léa dit : « ABCD est un trapèze. » A-t-elle raison ?
+
+**Réponse :** True
+
+*Corrigé.* (1) Un trapèze est un quadrilatère qui a deux côtés opposés parallèles, qu'ils soient penchés ou non. (2) Sur le quadrillage, le côté AB avance de 6 carreaux vers la droite pour 3 vers le bas, et le côté DC de 2 carreaux vers la droite pour 1 vers le bas. Pour chaque carreau vers le bas, chacun avance de 2 carreaux vers la droite : ils ont la même direction, ils sont parallèles. (3) AB et DC sont deux côtés opposés parallèles : ABCD est un trapèze. Léa a raison. (4) Les côtés AD et BC, eux, ne sont pas parallèles.
+
+*Indice.* Compare la direction de AB et celle de DC sur le quadrillage.
+
+**EX-G023-M-01** — maitrise, vrai_faux, 75 s
+
+Tom dit : « ABCD est un trapèze. » A-t-il raison ? Vérifie sur le quadrillage.
+
+**Réponse :** False
+
+*Corrigé.* (1) Pour être un trapèze, ABCD doit avoir deux côtés opposés parallèles. (2) AB est horizontal. DC monte d'1 carreau quand il avance de 4 carreaux vers la droite : il n'est pas horizontal, donc pas parallèle à AB. (3) AD et BC ne sont pas parallèles non plus : AD avance de 2 carreaux vers la droite pour 4 vers le haut, BC recule de 3 carreaux pour 5 vers le haut. (4) Aucun côté n'est parallèle au côté opposé : ABCD n'est pas un trapèze, Tom a tort. Il en a l'allure, mais seul le quadrillage permet de trancher.
+
+*Indice.* Compte les carreaux pour comparer la direction de AB et celle de DC.
+
+**EX-G023-M-02** — maitrise, qcm, 90 s
+
+On veut tracer un trapèze rectangle en reliant M à l'un des points E, F ou G, puis ce point à K. Quel point faut-il choisir ?
+
+- **a.** Le point E ✅
+- **b.** Le point F
+  <br>*Erreur visée :* L'élève obtient un trapèze (FM est parallèle à KL) mais oublie l'angle droit : ce trapèze n'en a aucun.
+- **c.** Le point G
+  <br>*Erreur visée :* L'élève croit qu'un angle droit suffit : avec G, l'angle en K est droit, mais aucun côté n'est parallèle au côté opposé.
+
+*Corrigé.* (1) Il faut un quadrilatère qui a deux côtés opposés parallèles et un angle droit. (2) Avec E : le côté EM est horizontal comme KL, ils sont parallèles ; le côté KE est vertical, il forme un angle droit avec KL. C'est un trapèze rectangle. (3) Avec F : FM est parallèle à KL, c'est un trapèze, mais aucun de ses angles n'est droit. Avec G : l'angle en K est droit, mais aucun côté n'est parallèle au côté opposé. (4) Il faut choisir le point E.
+
+*Indice.* Pour chaque point, imagine le quadrilatère et vérifie les deux conditions.
 
 ---
 
@@ -6411,6 +8164,162 @@ Un fleuriste vend 12 roses pour 18 €. Combien coûtent 28 roses ?
 *Corrigé.* (1) On ne passe pas de 12 à 28 roses en multipliant par un nombre entier : on passe par 4 roses. (2) 4 roses, c'est 3 fois moins que 12 roses : elles coûtent 3 fois moins, 18 ÷ 3 = 6 €. (3) 28 roses, c'est 7 fois plus que 4 roses : elles coûtent 7 fois plus, 6 × 7 = 42 €. (4) 28 roses coûtent 42 €. Autre chemin : 28 roses, c'est 12 roses, 12 roses et 4 roses, donc 18 + 18 + 6 = 42 €.
 
 *Indice.* Cherche d'abord le prix de 4 roses.
+
+---
+
+## `G022` · Le degré : l'angle droit mesure 90° — CM2, difficulté 4
+
+*Savoir qu'un angle droit mesure 90° et en déduire, sans rapporteur, la mesure d'angles obtenus à partir d'angles connus : la moitié d'un angle droit (45°), la somme de deux angles donnés, un multiple d'un angle donné (trois angles de 30° forment un angle droit). Angles saillants. Construire par pliage ne s'évalue pas à l'écran. Figure utile : angles avec leur mesure écrite, angle droit partagé, codage des angles égaux.*
+
+> « Savoir qu'un angle droit mesure 90° » — *Cycle 3, Cours moyen deuxième année, Grandeurs et mesures, Les angles*
+> « Construire un angle égal à la somme de deux angles donnés ou un angle multiple d'un angle donné » — *Cycle 3, Cours moyen deuxième année, Grandeurs et mesures, Les angles*
+> « Construire par pliage la moitié d'un angle donné » — *Cycle 3, Cours moyen deuxième année, Grandeurs et mesures, Les angles*
+> « L'unité degré est introduite à partir de la mesure de l'angle droit. L'utilisation d'un instrument de mesure des angles (rapporteur) ne relève pas du CM2 et sera introduite au collège. » — *Cycle 3, Cours moyen deuxième année, Grandeurs et mesures*
+
+**EX-G022-D-01** — decouverte, qcm, 30 s
+
+Lequel de ces trois angles mesure 90° ?
+
+- **a.** L'angle 1
+  <br>*Erreur visée :* L'élève choisit l'angle posé sur un côté horizontal, comme les angles droits qu'il voit le plus souvent. Mais il est plus fermé qu'un angle droit : il mesure moins de 90°.
+- **b.** L'angle 2 ✅
+- **c.** L'angle 3
+  <br>*Erreur visée :* L'élève pense que 90° est une grande mesure, donc celle de l'angle le plus ouvert. Mais l'angle 3 est plus ouvert qu'un angle droit : il mesure plus de 90°.
+
+*Corrigé.* (1) Un angle droit mesure 90° : c'est l'angle du coin d'une feuille, celui à partir duquel on définit le degré. (2) L'angle 2 porte le petit carré, le code de l'angle droit : il mesure 90°, même s'il est penché. (3) L'angle 1 est plus fermé qu'un angle droit, il mesure moins de 90°. L'angle 3 est plus ouvert, il mesure plus de 90°. (4) Réponse : l'angle 2. Un angle droit n'a pas besoin d'un côté horizontal : si on tourne la feuille, l'angle ne change pas.
+
+*Indice.* Quel code montre qu'un angle est droit ? Tu peux aussi poser le coin d'une feuille sur l'écran. Combien mesure un angle droit ?
+
+**EX-G022-D-02** — decouverte, qcm, 45 s
+
+Combien mesure l'angle AOC ?
+
+- **a.** 20°
+  <br>*Erreur visée :* L'élève lit la mesure écrite près du côté qui va vers C : c'est celle de l'angle BOC, une partie seulement de l'angle AOC.
+- **b.** 15°
+  <br>*Erreur visée :* L'élève fait la différence entre les deux mesures écrites. Mais l'angle AOC est formé des deux angles mis côte à côte : on ajoute leurs mesures.
+- **c.** 55° ✅
+
+*Corrigé.* (1) L'angle AOC a pour côtés ceux qui vont de O vers A et de O vers C. Le côté qui va vers B est à l'intérieur : il partage l'angle AOC en deux angles. (2) L'angle AOB mesure 35° et l'angle BOC mesure 20° : ce sont les deux morceaux de l'angle AOC. (3) On ajoute les deux mesures : 35 + 20 = 55. L'angle AOC mesure 55°. (4) Vérification : 55°, c'est moins que 90°, et l'angle AOC est bien plus fermé qu'un angle droit.
+
+*Indice.* L'angle AOC est fait de deux angles mis côte à côte. Lesquels ?
+
+**EX-G022-E-01** — entrainement, numerique, 60 s
+
+Combien de degrés mesure l'angle AOD ?
+
+**Réponse :** 120
+
+*Corrigé.* (1) Les trois angles AOB, BOC et COD portent le même code, deux petits arcs : ils ont la même mesure. (2) L'angle AOB mesure 40°, donc chacun des trois angles mesure 40°. (3) L'angle AOD est formé des trois angles mis côte à côte : 3 × 40 = 120. L'angle AOD mesure 120°. (4) Vérification : 120°, c'est plus que 90°, et l'angle AOD est bien plus ouvert qu'un angle droit. Répondre 40° serait ne compter qu'un seul des trois morceaux.
+
+*Indice.* Que veut dire le même code sur plusieurs angles ? De combien d'angles est fait l'angle AOD ?
+
+**EX-G022-E-02** — entrainement, vrai_faux, 60 s
+
+L'angle AOC est un angle droit. Sami dit : « L'angle AOB mesure 45°. » Sami a-t-il raison ?
+
+**Réponse :** True
+
+*Corrigé.* (1) L'angle AOC est droit : il mesure 90°. (2) AOB et BOC portent le même code : ils ont la même mesure, ce sont les deux moitiés de l'angle droit. (3) La moitié de 90 est 45 : l'angle AOB mesure 45°, Sami a raison. (4) C'est le codage qui dit que les deux angles sont égaux ; à l'œil seul, on ne pourrait pas l'affirmer.
+
+*Indice.* Que montrent les arcs doubles ?
+
+**EX-G022-M-01** — maitrise, numerique, 75 s
+
+L'angle AOD est un angle droit. Combien de degrés mesure l'angle AOC ?
+
+**Réponse :** 60
+
+*Corrigé.* (1) L'angle AOD est droit : il mesure 90°. (2) Il est partagé en trois angles qui portent le même code : AOB, BOC et COD ont la même mesure. Trois angles égaux font 90°, et 3 × 30 = 90 : chacun mesure 30°. (3) L'angle AOC est formé de deux de ces angles, AOB et BOC : 2 × 30 = 60. L'angle AOC mesure 60°. (4) Erreurs à éviter : 30° est la mesure d'un seul morceau ; 45° serait la moitié de l'angle droit, alors qu'il est partagé en trois.
+
+*Indice.* Combien mesure l'angle droit AOD ? En combien d'angles égaux est-il partagé ?
+
+**EX-G022-M-02** — maitrise, qcm, 75 s
+
+Lequel est le plus grand : l'angle 1 ou l'angle 2 ?
+
+- **a.** L'angle 1
+  <br>*Erreur visée :* L'élève compare la longueur des côtés : ceux de l'angle 1 sont plus longs. Mais la longueur des côtés ne change pas la mesure d'un angle.
+- **b.** L'angle 2
+  <br>*Erreur visée :* L'élève compte les morceaux : l'angle 2 en a trois, l'angle 1 deux seulement. Mais les morceaux n'ont pas tous la même taille : il faut ajouter les mesures.
+- **c.** Ils ont la même mesure ✅
+
+*Corrigé.* (1) L'angle 1 est formé d'un angle de 20° et d'un angle de 40° : 20 + 40 = 60. Il mesure 60°. (2) L'angle 2 est formé de trois angles de 20° : 3 × 20 = 60. Il mesure 60°. (3) Les deux angles mesurent 60° : ils ont la même mesure. (4) Ni la longueur des côtés ni le nombre de morceaux ne décident de la grandeur d'un angle : c'est sa mesure qui compte.
+
+*Indice.* Calcule la mesure de chaque angle à partir des mesures écrites.
+
+---
+
+## `G024` · Symétrique d'une figure sur quadrillage, axe en diagonale — CM2, difficulté 4
+
+*Sur quadrillage, trouver le symétrique d'une figure donnée (qui ne touche pas forcément l'axe) par rapport à une droite verticale, horizontale ou suivant une diagonale du quadrillage : désigner le symétrique d'un point parmi des points lettrés, ou la bonne figure parmi plusieurs. L'axe en diagonale est l'attendu nouveau du CM2. Le tracé ne s'évalue pas à l'écran. Figure nécessaire : quadrillage, axe tracé (y compris en diagonale), figure et points candidats lettrés.*
+
+> « Construire, sur papier quadrillé, la figure symétrique d'une figure donnée par rapport à une droite verticale, horizontale ou une diagonale du quadrillage » — *Cycle 3, Cours moyen deuxième année, Espace et géométrie, La géométrie plane*
+> « Construire, sur papier quadrillé, la figure symétrique d'une figure donnée par rapport à une droite horizontale ou verticale » — *Cycle 3, Cours moyen première année, Espace et géométrie, La géométrie plane*
+
+**EX-G024-D-01** — decouverte, qcm, 75 s
+
+Quelle surface est la symétrique de la surface F par rapport à l'axe ?
+
+- **a.** La surface 1 ✅
+- **b.** La surface 2
+  <br>*Erreur visée :* L'élève fait glisser F de l'autre côté de l'axe sans la retourner : la surface 2 est orientée exactement comme F, colonne debout et pied à droite.
+- **c.** La surface 3
+  <br>*Erreur visée :* L'élève fait tourner F d'un quart de tour au lieu de la retourner : la rangée est bien horizontale, mais le pied est sous le mauvais bout.
+
+*Corrigé.* (1) L'axe suit une diagonale des carreaux. Le symétrique de F s'obtient en pliant la feuille le long de cet axe : F est retournée, pas seulement déplacée. (2) Pour chaque case de F, on va jusqu'à l'axe en traversant les carreaux en biais, perpendiculairement à l'axe, puis on continue d'autant de carreaux de l'autre côté. (3) La colonne de trois cases de F devient une rangée de trois cases, et la case du pied, en bas à droite de F, se retrouve sous le bout droit de la rangée. (4) C'est la surface 1. (5) La surface 2 est F déplacée sans être retournée ; la surface 3 est F tournée d'un quart de tour : ni l'une ni l'autre ne se superpose à F par pliage le long de l'axe.
+
+*Indice.* Suis une case de F jusqu'à l'axe en traversant les carreaux en biais, puis continue d'autant de l'autre côté.
+
+**EX-G024-D-02** — decouverte, texte, 45 s
+
+Quel point est le symétrique du point M par rapport à l'axe ?
+
+**Réponse :** C
+
+*Corrigé.* (1) Le symétrique de M est de l'autre côté de l'axe, sur la droite qui passe par M et qui est perpendiculaire à l'axe, à la même distance de l'axe. (2) L'axe est horizontal : on descend donc tout droit depuis M, sans aller ni à gauche ni à droite. (3) M est à 3 carreaux au-dessus de l'axe. On descend de 3 carreaux jusqu'à l'axe, puis de 3 carreaux sous l'axe. (4) On arrive sur le point C. (5) Le point A est collé trop près de l'axe, à 1 carreau ; le point B est à la bonne distance, mais décalé vers la droite.
+
+*Indice.* Compte les carreaux entre M et l'axe.
+
+**EX-G024-E-01** — entrainement, vrai_faux, 90 s
+
+Nora affirme que le triangle DEF est le symétrique du triangle ABC par rapport à l'axe. A-t-elle raison ?
+
+**Réponse :** True
+
+*Corrigé.* (1) On vérifie chaque sommet : son symétrique doit être de l'autre côté de l'axe, sur la perpendiculaire à l'axe, à la même distance. (2) L'axe suit la diagonale des carreaux : la perpendiculaire à l'axe traverse les carreaux en biais, un carreau vers la droite et un carreau vers le haut à chaque pas. (3) Depuis A, 3 pas en biais mènent en D, et l'axe coupe ce chemin en son milieu. Depuis B, 8 pas mènent en E, l'axe est au 4e pas. Depuis C, 2 pas mènent en F, l'axe est au 1er pas. (4) Chaque sommet de DEF est le symétrique d'un sommet de ABC : D de A, E de B, F de C. (5) Le triangle DEF est bien le symétrique du triangle ABC : Nora a raison.
+
+*Indice.* Pour chaque sommet du triangle ABC, cherche son symétrique en traversant les carreaux en biais.
+
+**EX-G024-E-02** — entrainement, texte, 90 s
+
+Hugo a voulu tracer le symétrique du quadrilatère ABCD par rapport à l'axe. Il a obtenu EFGH, mais un sommet est mal placé. Lequel ?
+
+**Réponse :** G
+
+*Corrigé.* (1) On cherche le symétrique de chaque sommet de ABCD : on traverse les carreaux en biais jusqu'à l'axe, puis d'autant de l'autre côté. (2) Le symétrique de A est E, celui de B est F, celui de D est H : ces trois sommets sont bien placés. (3) Depuis C, on fait des pas en biais, un carreau vers la droite et un vers le haut : au 2e pas, on est sur l'axe ; 2 pas de plus, et on est au symétrique de C, 4 carreaux plus à droite et 4 carreaux plus haut que C. (4) Le sommet G n'est pas à cet endroit : il est un carreau trop à droite et un carreau trop haut. (5) Le sommet mal placé est G.
+
+*Indice.* Trouve le symétrique de chaque sommet de ABCD, un par un, et compare avec E, F, G, H.
+
+**EX-G024-M-01** — maitrise, numerique, 120 s
+
+On veut que la figure soit symétrique par rapport à l'axe. Combien de cases faut-il colorier en plus, au minimum ?
+
+**Réponse :** 3
+
+*Corrigé.* (1) L'axe suit la diagonale des carreaux. Une case que l'axe traverse d'un coin à l'autre est sa propre symétrique : elle n'a pas besoin de jumelle. La figure en a deux. (2) Les autres cases doivent avoir une jumelle de l'autre côté de l'axe, à la même distance. (3) Les deux cases collées aux cases de l'axe, l'une au-dessus, l'autre en dessous, sont déjà jumelles l'une de l'autre. (4) Les trois cases de droite, au-dessus de l'axe, n'ont pas de jumelle sous l'axe : il en manque 3. (5) Il faut colorier 3 cases de plus. Répondre 5, c'est chercher une jumelle aussi aux deux cases qui sont déjà jumelles l'une de l'autre ; répondre 7, c'est doubler aussi les cases traversées par l'axe.
+
+*Indice.* Commence par repérer les cases que l'axe coupe d'un coin à l'autre : ont-elles besoin d'une jumelle ?
+
+**EX-G024-M-02** — maitrise, vrai_faux, 90 s
+
+Sami affirme : « Le point N est le symétrique du point M par rapport à l'axe. » A-t-il raison ?
+
+**Réponse :** False
+
+*Corrigé.* (1) Le symétrique d'un point est sur la droite qui passe par ce point et qui est perpendiculaire à l'axe. (2) Sami a sans doute compté les carreaux vers la droite jusqu'à l'axe (4), puis autant après l'axe : il a avancé horizontalement. Cela marche quand l'axe est vertical, mais ici l'axe suit une diagonale des carreaux. (3) La droite (MN) est horizontale : elle n'est pas perpendiculaire à l'axe en diagonale. N ne peut pas être le symétrique de M. (4) Pour un axe en diagonale, on fait des pas en biais, un carreau vers la droite et un vers le haut : depuis M, 2 pas mènent à l'axe, 2 de plus au symétrique, 4 carreaux plus à droite et 4 carreaux plus haut que M. (5) Sami a tort : N n'est pas le symétrique de M.
+
+*Indice.* La droite (MN) est-elle perpendiculaire à l'axe ?
 
 ---
 
@@ -7370,6 +9279,240 @@ Un car transporte 50 passagers : 34 adultes, les autres sont des enfants. Quel p
 
 ---
 
+## `G025` · Mesurer un angle avec un rapporteur — 6e, difficulté 4
+
+*Lire la mesure en degrés d'un angle sur un rapporteur posé correctement (centre au sommet, zéro sur un côté), en choisissant la bonne graduation parmi les deux, et vérifier la vraisemblance (un angle aigu mesure moins de 90°) ; reconnaître un angle de mesure donnée. Construire un angle au rapporteur ne s'évalue pas à l'écran. Figure nécessaire : rapporteur dessiné sur l'angle, double graduation de 0 à 180°.*
+
+> « Mesurer un angle » — *Cycle 3, classe de 6e, Espace et géométrie, Étude de configurations planes, Angles*
+> « Construire un angle de mesure donnée » — *Cycle 3, classe de 6e, Espace et géométrie, Étude de configurations planes, Angles*
+> « Le travail sur les mesures d'angle est intégré au champ « Géométrie », dans lequel on traite simultanément l'objet géométrique « angle » et la mesure de la grandeur « angle ». » — *Cycle 3, classe de 6e, Grandeurs et mesures*
+
+**EX-G025-D-01** — decouverte, numerique, 40 s
+
+Le rapporteur est posé sur l'angle \widehat{AOB}. Quelle est la mesure de cet angle, en degrés ?
+
+**Réponse :** 70
+
+*Corrigé.* (1) Le rapporteur est bien posé : son centre est sur le sommet O, et le côté [OA) passe par le 0 de droite. (2) On lit donc la graduation qui part de ce 0 : la graduation extérieure, dont les nombres augmentent de droite à gauche. (3) En suivant cette graduation jusqu'au côté [OB), on lit 70 : l'angle \widehat{AOB} mesure 70°. (4) Vérification : l'angle est plus petit qu'un angle droit, il est aigu, et 70° est bien moins que 90°. Le nombre 110, écrit au même endroit, appartient à la graduation qui part de l'autre 0.
+
+*Indice.* Par quel 0 passe le côté [OA) ? Lis la graduation qui part de ce 0.
+
+**EX-G025-D-02** — decouverte, qcm, 45 s
+
+Combien mesure l'angle \widehat{DEF} ?
+
+- **a.** 130° ✅
+- **b.** 50°
+  <br>*Erreur visée :* L'élève lit la graduation extérieure, celle qui part du 0 de droite. Mais le côté [ED) passe par le 0 de gauche : il faut lire la graduation qui part de ce 0. Et un angle obtus mesure plus de 90°.
+- **c.** On ne peut pas le mesurer : le côté [ED) n'est pas à droite
+  <br>*Erreur visée :* L'élève croit qu'un angle se mesure seulement depuis le 0 de droite. Le rapporteur a deux graduations justement pour mesurer un angle dont un côté passe par l'un ou l'autre des deux 0.
+
+*Corrigé.* (1) Le centre du rapporteur est sur le sommet E, et le côté [ED) passe par le 0 de gauche. (2) On lit donc la graduation qui part du 0 de gauche : la graduation intérieure. (3) Au niveau du côté [EF), elle indique 130 : l'angle \widehat{DEF} mesure 130°. (4) Vérification : l'angle est plus ouvert qu'un angle droit, il est obtus, et sa mesure dépasse 90°. Le 50 de l'autre graduation ne peut pas convenir.
+
+*Indice.* Par quel 0 passe le côté [ED) ? L'angle est-il aigu ou obtus ?
+
+**EX-G025-E-01** — entrainement, numerique, 60 s
+
+Quelle est la mesure de l'angle \widehat{JKL}, en degrés ?
+
+**Réponse :** 55
+
+*Corrigé.* (1) Le centre du rapporteur est sur le sommet K, et le côté [KJ) passe par le 0 de gauche : on lit la graduation intérieure, qui part de ce 0. (2) Le côté [KL) passe entre les nombres 50 et 60 de cette graduation, sur le petit trait du milieu : d'un trait au suivant, on avance de 5 degrés. (3) 50 + 5 = 55 : l'angle \widehat{JKL} mesure 55°. (4) Vérification : l'angle est aigu, sa mesure est inférieure à 90°. Lire 125 sur l'autre graduation donnerait un angle obtus : impossible ici.
+
+*Indice.* Par quel 0 passe le côté [KJ) ? De combien de degrés avance-t-on d'un petit trait au suivant ?
+
+**EX-G025-E-02** — entrainement, vrai_faux, 60 s
+
+Inès lit 60 sur son rapporteur. Elle dit : « L'angle \widehat{MPN} mesure 60°. » Inès a-t-elle raison ?
+
+**Réponse :** False
+
+*Corrigé.* (1) Le centre du rapporteur est bien sur le sommet P, mais le côté [PM) ne passe pas par le 0 : il passe par le 10 de la graduation extérieure. (2) Inès a lu 60 au niveau du côté [PN), comme si l'angle partait de 0. (3) Le côté [PM) part de 10 et non de 0 : l'angle mesure moins que les 60 lus. Inès a tort. (4) Pour lire directement la mesure, un côté de l'angle doit passer par un 0 du rapporteur.
+
+*Indice.* Par quelle graduation passe le côté [PM) ? Est-ce un 0 ?
+
+**EX-G025-M-01** — maitrise, numerique, 60 s
+
+Quelle est la mesure de l'angle \widehat{RST}, en degrés ?
+
+**Réponse :** 15
+
+*Corrigé.* (1) Le centre est sur S et le côté [SR) passe par le 0 de gauche : on lit la graduation intérieure, qui part de ce 0. (2) Le côté [ST) passe entre 10 et 20, sur le petit trait du milieu : 10 + 5 = 15. (3) L'angle \widehat{RST} mesure 15°. (4) Vérification : l'angle est très fermé. Le 165 de la graduation extérieure, la plus visible, donnerait un angle presque plat : impossible.
+
+*Indice.* Par quel 0 passe le côté [SR) ? L'angle est-il très fermé ou très ouvert ?
+
+**EX-G025-M-02** — maitrise, qcm, 60 s
+
+Noé veut mesurer l'angle \widehat{FGH} avec ce rapporteur. Quelle erreur a-t-il faite en le posant ?
+
+- **a.** Le côté [GF) ne passe pas par un 0
+  <br>*Erreur visée :* L'élève sent que la pose est fausse sans voir pourquoi : le côté [GF) suit bien la base du rapporteur et passe par le 0 de droite. C'est le sommet qui est mal placé.
+- **b.** Il doit lire l'autre graduation
+  <br>*Erreur visée :* L'élève croit que le problème vient du choix de la graduation. Mais quelle que soit la graduation lue, un rapporteur dont le centre n'est pas sur le sommet donne une mesure fausse.
+- **c.** Le sommet G n'est pas sur le centre du rapporteur ✅
+
+*Corrigé.* (1) Pour mesurer un angle, on vérifie deux choses : le centre du rapporteur est sur le sommet, et un côté passe par un 0. (2) Ici, le côté [GF) suit le bord droit du rapporteur et passe bien par le 0 de droite. (3) Mais le sommet G est décalé vers la droite : le centre du rapporteur est le petit point noir au milieu de sa base. Le sommet n'est pas sur le centre : c'est l'erreur. (4) Conséquence : le côté [GH) ne coupe pas la graduation au bon endroit, et la mesure lue serait fausse. Il faut faire glisser le rapporteur pour amener son centre sur G.
+
+*Indice.* Vérifie les deux règles de pose : où doit être le sommet ? Par où doit passer un côté ?
+
+---
+
+## `G026` · Angles plat, adjacents, supplémentaires, opposés ; bissectrice — 6e, difficulté 4
+
+*Connaître l'angle nul, plat (180°) et plein (360°), reconnaître des angles adjacents, des angles opposés par le sommet (de même mesure) et des angles supplémentaires (somme de 180°), et la bissectrice d'un angle saillant (elle le partage en deux angles de même mesure) ; en déduire des mesures par calcul. Figure nécessaire : angles avec mesures écrites, demi-droites issues d'un même sommet, droites sécantes, bissectrice et codage des angles égaux.*
+
+> « Connaître et utiliser les angles ainsi que le lexique et les notations qui s'y rapportent : angle droit, angle plat, angle plein, angle nul, angle aigu, angle obtus, angles opposés par le sommet, angles adjacents, angles supplémentaires » — *Cycle 3, classe de 6e, Espace et géométrie, Étude de configurations planes, Angles*
+> « Connaître la définition de la bissectrice d'un angle saillant » — *Cycle 3, classe de 6e, Espace et géométrie, Étude de configurations planes, Bissectrice d'un angle saillant*
+> « Utiliser la définition de la bissectrice d'un angle pour effectuer des constructions et résoudre des problèmes » — *Cycle 3, classe de 6e, Espace et géométrie, Étude de configurations planes, Bissectrice d'un angle saillant*
+
+**EX-G026-D-01** — decouverte, numerique, 45 s
+
+Combien mesure l'angle \widehat{BOC}, en degrés ?
+
+**Réponse :** 55
+
+*Corrigé.* (1) Les points A, O et B sont sur une droite : l'angle \widehat{AOB} est un angle plat, il mesure 180°. (2) La demi-droite [OC) le partage en deux angles adjacents : \widehat{AOC}, qui mesure 125°, et \widehat{BOC}. Ensemble, ils font 180° : ils sont supplémentaires. (3) \widehat{BOC} mesure 180 − 125 = 55 : 55°. (4) Vérification : 125 + 55 = 180. Et l'angle \widehat{BOC} est bien aigu sur la figure.
+
+*Indice.* Que forment les points A, O et B ? Quel angle obtient-on ?
+
+**EX-G026-D-02** — decouverte, qcm, 40 s
+
+Combien mesure l'angle \widehat{BOD} ?
+
+- **a.** 150°
+  <br>*Erreur visée :* L'élève calcule 180 − 30, comme pour deux angles adjacents qui forment un angle plat. Mais \widehat{BOD} n'est pas à côté de \widehat{AOC} : il lui est opposé par le sommet.
+- **b.** 30° ✅
+- **c.** 60°
+  <br>*Erreur visée :* L'élève croit que les angles autour de O se complètent jusqu'à 90°, comme dans un angle droit. Les droites ne sont pas perpendiculaires : rien ne fait 90° ici.
+
+*Corrigé.* (1) Les droites (AB) et (CD) se coupent en O. Les angles \widehat{AOC} et \widehat{BOD} ont le même sommet, et leurs côtés se prolongent : [OB) prolonge [OA), [OD) prolonge [OC). (2) Ce sont des angles opposés par le sommet : ils ont la même mesure. (3) \widehat{AOC} mesure 30°, donc \widehat{BOD} mesure 30°. (4) Les deux autres angles, \widehat{AOD} et \widehat{BOC}, mesurent chacun 180 − 30 = 150° : c'est le piège de la réponse 150°.
+
+*Indice.* Repère les côtés de l'angle \widehat{BOD} : quels côtés prolongent-ils ?
+
+**EX-G026-E-01** — entrainement, numerique, 45 s
+
+La demi-droite [OC) est la bissectrice de l'angle \widehat{AOB}. Combien mesure l'angle \widehat{AOB}, en degrés ?
+
+**Réponse :** 70
+
+*Corrigé.* (1) La bissectrice d'un angle le partage en deux angles adjacents de même mesure. (2) Donc \widehat{AOC} et \widehat{COB} ont la même mesure : 35° chacun, d'après la figure. (3) \widehat{AOB} est formé de ces deux angles : 35 + 35 = 70. Il mesure 70°. (4) Piège : 35° est la mesure d'une moitié seulement. La bissectrice ne coupe pas l'angle en deux angles quelconques : les deux moitiés sont égales.
+
+*Indice.* Que fait une bissectrice à l'angle qu'elle partage ?
+
+**EX-G026-E-02** — entrainement, vrai_faux, 45 s
+
+Mia dit : « Les angles \widehat{ABC} et \widehat{DEF} sont supplémentaires. » Mia a-t-elle raison ?
+
+**Réponse :** True
+
+*Corrigé.* (1) Deux angles sont supplémentaires quand la somme de leurs mesures est 180°. (2) \widehat{ABC} mesure 110° et \widehat{DEF} mesure 70° : 110 + 70 = 180. (3) Ils sont donc supplémentaires : Mia a raison. (4) Ils ne sont pas côte à côte, mais ce n'est pas nécessaire : « supplémentaires » parle des mesures, « adjacents » de la position. Mis côte à côte, ces deux angles formeraient un angle plat.
+
+*Indice.* Que doivent vérifier deux angles pour être supplémentaires ? Faut-il qu'ils se touchent ?
+
+**EX-G026-M-01** — maitrise, numerique, 75 s
+
+Les droites (AB) et (CD) se coupent en O, et [OE) est la bissectrice de l'angle \widehat{BOD}. Combien mesure l'angle \widehat{BOE}, en degrés ?
+
+**Réponse :** 25
+
+*Corrigé.* (1) \widehat{BOD} et \widehat{AOC} sont opposés par le sommet : leurs côtés se prolongent. Ils ont donc la même mesure, 50°. (2) [OE) est la bissectrice de \widehat{BOD} : elle le partage en deux angles de même mesure. (3) \widehat{BOE} mesure la moitié de 50° : 50 ÷ 2 = 25. Il mesure 25°. (4) Erreurs à éviter : 50° est la mesure de tout l'angle \widehat{BOD}, pas de sa moitié ; et 130° (180 − 50) est la mesure d'un angle adjacent à \widehat{AOC}, pas opposé.
+
+*Indice.* Commence par la mesure de l'angle \widehat{BOD} : quel angle de la figure lui est opposé par le sommet ?
+
+**EX-G026-M-02** — maitrise, numerique, 90 s
+
+La demi-droite [OD) est la bissectrice de l'angle \widehat{COB}. Combien mesure l'angle \widehat{AOD}, en degrés ?
+
+**Réponse :** 110
+
+*Corrigé.* (1) A, O et B sont alignés : \widehat{AOB} est un angle plat de 180°. \widehat{AOC} mesure 40°, donc son supplémentaire \widehat{COB} mesure 180 − 40 = 140°. (2) [OD) est la bissectrice de \widehat{COB} : \widehat{COD} et \widehat{DOB} mesurent chacun 140 ÷ 2 = 70°. (3) \widehat{AOD} est formé de \widehat{AOC} et de \widehat{COD} : 40 + 70 = 110. Il mesure 110°. (4) Autre chemin : \widehat{AOD} et \widehat{DOB} sont supplémentaires, et 180 − 70 = 110. (5) Erreurs à éviter : 70°, c'est seulement \widehat{COD} ; 90° supposerait que [OD) partage l'angle plat \widehat{AOB}.
+
+*Indice.* Calcule d'abord l'angle \widehat{COB}, puis sa moitié.
+
+---
+
+## `G028` · Distances : milieu d'un segment, cercle, disque, corde — 6e, difficulté 4
+
+*Connaître et utiliser la distance entre deux points, la définition du milieu d'un segment (le point du segment à égale distance de ses extrémités), du cercle (les points à une distance donnée du centre) et du disque (les points à une distance inférieure ou égale), du rayon, du diamètre et de la corde ; résoudre des problèmes de distance à un point (un point est-il sur le cercle, dans le disque, à l'extérieur). Figure utile : cercle et disque avec centre, rayon, diamètre, corde, points lettrés à placer sur, dans ou hors du disque.*
+
+> « Connaître et utiliser la définition de la distance entre deux points » — *Cycle 3, classe de 6e, Espace et géométrie, Étude de configurations planes, Distances*
+> « Connaître et utiliser la définition du milieu d'un segment » — *Cycle 3, classe de 6e, Espace et géométrie, Étude de configurations planes, Distances*
+> « Connaître les définitions d'un cercle, d'un disque, d'un rayon, d'un diamètre, d'une corde » — *Cycle 3, classe de 6e, Espace et géométrie, Étude de configurations planes, Cercles et disques*
+> « Résoudre des problèmes mettant en jeu des distances à un point » — *Cycle 3, classe de 6e, Espace et géométrie, Étude de configurations planes, Cercles et disques*
+> « Décrire et reconnaître un cercle et un disque comme un ensemble de points caractérisés par leur distance à un point donné » — *Cycle 3, Cours moyen première année, Espace et géométrie, La géométrie plane*
+
+**EX-G028-D-01** — decouverte, numerique, 45 s
+
+Combien de centimètres mesure le segment [AM] ?
+
+**Réponse :** 4.5
+
+*Corrigé.* (1) Sur la figure, le point M est sur le segment [AB], et les codages identiques sur [AM] et [MB] disent que AM = MB. (2) Un point du segment à égale distance des deux extrémités, c'est le milieu : M est le milieu du segment [AB]. (3) AM est donc la moitié de AB : 9 ÷ 2 = 4,5. (4) Le segment [AM] mesure 4,5 cm. (5) Répondre 9 cm, c'est lire la longueur de tout le segment [AB] sans voir le codage.
+
+*Indice.* Que disent les deux petits codages identiques sur la figure ?
+
+**EX-G028-D-02** — decouverte, numerique, 45 s
+
+Le point O est le centre du cercle. Combien de cordes de ce cercle sont tracées ?
+
+**Réponse :** 3
+
+*Corrigé.* (1) Une corde est un segment dont les deux extrémités sont sur le cercle. (2) [CD] et [EF] ont leurs deux extrémités sur le cercle : ce sont des cordes. (3) [AB] a aussi ses deux extrémités sur le cercle : c'est une corde. Elle passe en plus par le centre : c'est un diamètre, la plus longue des cordes. (4) [OG] a une extrémité au centre, pas sur le cercle : c'est un rayon, pas une corde. (5) Il y a 3 cordes : [AB], [CD] et [EF]. Répondre 2, c'est oublier qu'un diamètre est une corde.
+
+*Indice.* Pour chaque segment, regarde où sont ses deux extrémités.
+
+**EX-G028-E-01** — entrainement, qcm, 60 s
+
+Quels points appartiennent au disque de centre O et de rayon 4 cm ?
+
+- **a.** P et S seulement
+  <br>*Erreur visée :* L'élève oublie le bord : Q est à 4 cm de O, il est sur le cercle, et le cercle fait partie du disque (distance inférieure ou égale au rayon).
+- **b.** Q seulement
+  <br>*Erreur visée :* L'élève confond le disque et le cercle : Q est le seul point du cercle, mais le disque contient aussi tous les points plus proches de O, comme P et S.
+- **c.** P, Q et S ✅
+
+*Corrigé.* (1) Le disque de centre O et de rayon 4 cm est formé de tous les points situés à 4 cm ou moins de O. (2) On lit les distances sur la figure : OP = 2,5 cm, OQ = 4 cm, OR = 4,5 cm, OS = 3 cm. (3) P et S sont à moins de 4 cm de O : ils sont dans le disque. (4) Q est à exactement 4 cm de O : il est sur le cercle, qui fait partie du disque. R est à plus de 4 cm : il est hors du disque. (5) Les points du disque sont P, Q et S.
+
+*Indice.* Le disque, c'est l'intérieur du cercle avec ou sans le cercle lui-même ?
+
+**EX-G028-E-02** — entrainement, vrai_faux, 60 s
+
+Théo affirme : « Le point M est le milieu du segment [AB]. » A-t-il raison ?
+
+**Réponse :** False
+
+*Corrigé.* (1) On lit sur la figure : MA = 5 cm et MB = 5 cm. M est bien à la même distance de A et de B : c'est sans doute ce qui convainc Théo. (2) Mais le milieu d'un segment est un point DU segment, à égale distance de ses deux extrémités. (3) Ici, M n'est pas sur le segment [AB] : il est au-dessus. (4) M n'est donc pas le milieu de [AB] : Théo a tort. (5) Il existe beaucoup de points à égale distance de A et de B ; un seul d'entre eux est sur le segment [AB], c'est le milieu.
+
+*Indice.* Le milieu d'un segment doit-il être sur ce segment ?
+
+**EX-G028-M-01** — maitrise, qcm, 90 s
+
+Le trésor est à 3 cm de l'arbre T et à 4 cm du puits P. Lequel de ces points peut être le trésor ?
+
+- **a.** Le point A
+  <br>*Erreur visée :* L'élève ne vérifie qu'une condition : A est bien à 3 cm de T, sur le petit cercle, mais il n'est pas sur le grand cercle, donc pas à 4 cm de P.
+- **b.** Le point B ✅
+- **c.** Le point C
+  <br>*Erreur visée :* L'élève confond « à 3 cm » et « à moins de 3 cm » : C est à l'intérieur des deux disques, mais il n'est sur aucun des deux cercles.
+- **d.** Le point D
+  <br>*Erreur visée :* L'élève ne vérifie qu'une condition : D est bien à 4 cm de P, sur le grand cercle, mais il est loin de T, bien plus qu'à 3 cm.
+
+*Corrigé.* (1) Les points à 3 cm de T forment le cercle de centre T et de rayon 3 cm : c'est le petit cercle, son rayon est écrit sur la figure. (2) Les points à 4 cm de P forment le cercle de centre P et de rayon 4 cm : c'est le grand cercle. (3) Le trésor est à la fois sur les deux cercles : il est à un de leurs points d'intersection. (4) A est sur le petit cercle seulement, D sur le grand cercle seulement, C n'est sur aucun des deux cercles. (5) Le trésor peut être le point B, situé sur les deux cercles.
+
+*Indice.* Où sont tous les points à 3 cm de T ? Et tous les points à 4 cm de P ?
+
+**EX-G028-M-02** — maitrise, vrai_faux, 90 s
+
+Lou affirme : « Dans ce cercle, on ne peut pas tracer de corde de 9 cm. » A-t-elle raison ?
+
+**Réponse :** True
+
+*Corrigé.* (1) On lit sur la figure le rayon du cercle : OA = 4 cm. (2) La plus longue corde d'un cercle est un diamètre, car elle passe par le centre. Ici, un diamètre mesure 2 × 4 = 8 cm. (3) Plus une corde passe près du centre, plus elle est longue : la corde [BC] tracée, loin du centre, est plus courte que le diamètre. La plus longue de toutes passe par le centre. (4) Une corde de 9 cm serait plus longue que le diamètre : c'est impossible. (5) Lou a raison.
+
+*Indice.* Quelle est la plus longue corde que l'on puisse tracer dans un cercle ?
+
+---
+
 ## `P021` · Convertir des longueurs vers et depuis le mètre — 6e, difficulté 4
 
 *Connaître le sens des préfixes kilo-, hecto-, déca-, déci-, centi- et milli- et les relier aux unités de numération ; convertir en mètres une longueur donnée dans une autre unité et inversement, y compris vers une unité plus grande et avec des nombres décimaux (350 cm = 3,5 m ; 1 cm = 0,1 dm ; 2,5 km = 2 500 m), et résoudre des problèmes de longueurs aux unités mélangées.*
@@ -7990,19 +10133,250 @@ Sur une carte de randonnée, 1 cm sur la carte représente 500 m en réalité. U
 
 **EX-E006-M-02** — maitrise, qcm, 120 s
 
-Un terrain de football mesure 100 m de long. On le dessine sur deux plans. Sur le plan A, 1 cm représente 10 m en réalité. Sur le plan B, 1 cm représente 25 m en réalité. Sur quel plan le terrain est-il dessiné le plus long ?
+Un terrain de football mesure 100 m de long. On le dessine sur deux plans. Sur le plan 1, 1 cm représente 10 m en réalité. Sur le plan 2, 1 cm représente 25 m en réalité. Sur quel plan le terrain est-il dessiné le plus long ?
 
-- **a.** Sur le plan B, car 25 m, c'est plus que 10 m.
+- **a.** Sur le plan 2, car 25 m, c'est plus que 10 m.
   <br>*Erreur visée :* L'élève croit qu'un plus grand nombre dans l'échelle donne un plus grand dessin. C'est l'inverse : quand 1 cm représente plus de mètres, il faut moins de centimètres pour dessiner le terrain.
 - **b.** Sur aucun : le terrain a la même longueur sur les deux plans.
   <br>*Erreur visée :* L'élève confond la longueur réelle, qui est la même, et la longueur dessinée, qui dépend de l'échelle.
-- **c.** Sur le plan A : 10 cm contre 4 cm. ✅
-- **d.** Sur le plan B : 2 500 cm contre 1 000 cm.
+- **c.** Sur le plan 1 : 10 cm contre 4 cm. ✅
+- **d.** Sur le plan 2 : 2 500 cm contre 1 000 cm.
   <br>*Erreur visée :* L'élève multiplie 100 par le nombre de l'échelle (100 × 25 = 2 500 et 100 × 10 = 1 000) au lieu de chercher combien de fois 25 m ou 10 m il y a dans 100 m : il inverse l'échelle.
 
-*Corrigé.* (1) Plan A : 1 cm représente 10 m, et 10 × 10 = 100. Il faut 10 fois 1 cm : le terrain mesure 10 cm sur le plan A. (2) Plan B : 1 cm représente 25 m, et 4 × 25 = 100. Il faut 4 fois 1 cm : le terrain mesure 4 cm sur le plan B. (3) 10 cm sur le plan A, 4 cm sur le plan B : le terrain est dessiné plus long sur le plan A. Réponse c. (4) Retiens : plus la longueur réelle représentée par 1 cm est grande, plus le dessin est petit.
+*Corrigé.* (1) Plan 1 : 1 cm représente 10 m, et 10 × 10 = 100. Il faut 10 fois 1 cm : le terrain mesure 10 cm sur le plan 1. (2) Plan 2 : 1 cm représente 25 m, et 4 × 25 = 100. Il faut 4 fois 1 cm : le terrain mesure 4 cm sur le plan 2. (3) 10 cm sur le plan 1, 4 cm sur le plan 2 : le terrain est dessiné plus long sur le plan 1. Réponse c. (4) Retiens : plus la longueur réelle représentée par 1 cm est grande, plus le dessin est petit.
 
 *Indice.* Calcule la longueur du terrain sur chaque plan.
+
+---
+
+## `G027` · Somme des angles d'un triangle — 6e, difficulté 5
+
+*Savoir que la somme des mesures des angles d'un triangle est 180° et l'utiliser pour calculer un angle ; connaître les propriétés angulaires des triangles particuliers (angles de 60° du triangle équilatéral, angles égaux à la base du triangle isocèle, deux angles aigus de somme 90° dans le triangle rectangle). Figure utile : triangle lettré avec mesures d'angles écrites et codage (angle droit, côtés égaux).*
+
+> « Connaître la valeur de la somme des mesures des angles d'un triangle » — *Cycle 3, classe de 6e, Espace et géométrie, Étude de configurations planes, Triangles*
+> « L'utiliser pour calculer des angles, effectuer des constructions et résoudre des problèmes » — *Cycle 3, classe de 6e, Espace et géométrie, Étude de configurations planes, Triangles*
+> « Connaître et utiliser les propriétés angulaires des triangles particuliers : triangle rectangle, triangle isocèle, triangle équilatéral » — *Cycle 3, classe de 6e, Espace et géométrie, Étude de configurations planes, Triangles*
+
+**EX-G027-D-01** — decouverte, numerique, 45 s
+
+Combien mesure l'angle \widehat{ACB} du triangle ABC, en degrés ?
+
+**Réponse :** 70
+
+*Corrigé.* (1) Dans un triangle, la somme des mesures des trois angles est toujours 180°. (2) On connaît deux angles : \widehat{BAC} mesure 50° et \widehat{ABC} mesure 60°. Ensemble : 50 + 60 = 110. (3) Le troisième angle complète jusqu'à 180° : 180 − 110 = 70. \widehat{ACB} mesure 70°. (4) Vérification : 50 + 60 + 70 = 180.
+
+*Indice.* Combien font ensemble les trois angles d'un triangle ?
+
+**EX-G027-D-02** — decouverte, qcm, 45 s
+
+Combien mesure l'angle \widehat{RTS} ?
+
+- **a.** 150°
+  <br>*Erreur visée :* L'élève oublie l'angle droit : il calcule 180 − 30, comme si le triangle n'avait que deux angles. Le petit carré en S compte pour 90°.
+- **b.** 45°
+  <br>*Erreur visée :* L'élève croit que les deux angles aigus d'un triangle rectangle mesurent toujours 45°. C'est vrai seulement si le triangle rectangle est aussi isocèle ; ici, l'angle en R mesure 30°.
+- **c.** 60° ✅
+
+*Corrigé.* (1) Le petit carré en S code un angle droit : \widehat{RST} mesure 90°. (2) La somme des trois angles du triangle est 180° : 90 + 30 = 120, et 180 − 120 = 60. (3) \widehat{RTS} mesure 60°. (4) À retenir : dans un triangle rectangle, les deux angles aigus font ensemble 90°. Ici, 30 + 60 = 90.
+
+*Indice.* Que signifie le petit carré en S ? Combien font ensemble les trois angles d'un triangle ?
+
+**EX-G027-E-01** — entrainement, numerique, 60 s
+
+Combien mesure l'angle \widehat{ABC}, en degrés ?
+
+**Réponse :** 35
+
+*Corrigé.* (1) Le codage montre que AB = AC : le triangle ABC est isocèle en A. (2) Dans un triangle isocèle, les deux angles à la base sont égaux : \widehat{ABC} et \widehat{ACB} ont la même mesure. (3) Ces deux angles se partagent ce qui reste de 180° : 180 − 110 = 70, puis 70 ÷ 2 = 35. \widehat{ABC} mesure 35°. (4) Vérification : 110 + 35 + 35 = 180. Répondre 70° serait oublier de partager le reste entre les deux angles de la base.
+
+*Indice.* Que dit le codage sur le triangle ? Que sais-tu alors de ses angles ?
+
+**EX-G027-E-02** — entrainement, vrai_faux, 60 s
+
+Hugo dit : « L'angle \widehat{DFE} mesure 145°. » Hugo a-t-il raison ?
+
+**Réponse :** False
+
+*Corrigé.* (1) La somme des trois angles du triangle est 180°, et deux angles sont connus : \widehat{FDE} mesure 25° et \widehat{DEF} mesure 35°. (2) Le bon calcul : 25 + 35 = 60, puis 180 − 60 = 120. (3) \widehat{DFE} mesure 120°, pas 145° : Hugo a tort. (4) Hugo a fait 180 − 35 = 145 : il a oublié l'angle de 25°. Vérification : 25 + 35 + 120 = 180, alors que 25 + 35 + 145 dépasse 180.
+
+*Indice.* Combien d'angles du triangle sont déjà connus sur la figure ?
+
+**EX-G027-M-01** — maitrise, numerique, 90 s
+
+Les points B, C et D sont alignés. Combien mesure l'angle \widehat{ABC}, en degrés ?
+
+**Réponse :** 60
+
+*Corrigé.* (1) B, C et D sont alignés : \widehat{BCD} est un angle plat. \widehat{ACB} et \widehat{ACD} sont donc supplémentaires : \widehat{ACB} mesure 180 − 130 = 50°. (2) Dans le triangle ABC, la somme des angles est 180° : 70 + 50 = 120. (3) \widehat{ABC} mesure 180 − 120 = 60 : 60°. (4) Erreur à éviter : prendre 130° pour un angle du triangle. Il est à l'extérieur, entre [CA) et [CD) ; l'angle du triangle en C est son supplémentaire.
+
+*Indice.* L'angle marqué en C est-il un angle du triangle ? Combien mesure l'angle du triangle en C ?
+
+**EX-G027-M-02** — maitrise, numerique, 120 s
+
+Les points B, C et D sont alignés. Combien mesure l'angle \widehat{CAD}, en degrés ?
+
+**Réponse :** 30
+
+*Corrigé.* (1) Le codage montre AB = BC = CA : le triangle ABC est équilatéral, ses trois angles mesurent 60°. Donc \widehat{ACB} mesure 60°. (2) B, C et D sont alignés : \widehat{ACD} est le supplémentaire de \widehat{ACB}, 180 − 60 = 120°. (3) Le codage montre CA = CD : le triangle ACD est isocèle en C, ses angles à la base \widehat{CAD} et \widehat{CDA} sont égaux. Ils se partagent 180 − 120 = 60°, donc chacun mesure 60 ÷ 2 = 30°. (4) Vérification dans le triangle ACD : 120 + 30 + 30 = 180. (5) Erreurs à éviter : 60°, en croyant ACD équilatéral alors que AD n'est pas codé ; 120°, qui est l'angle de sommet C.
+
+*Indice.* Commence par le triangle ABC : quelle est sa nature ? Regarde ensuite le triangle ACD.
+
+---
+
+## `G029` · La médiatrice d'un segment — 6e, difficulté 5
+
+*Connaître la définition de la médiatrice d'un segment (la droite perpendiculaire au segment en son milieu) et sa propriété caractéristique (ses points sont à égale distance des extrémités du segment) ; l'utiliser pour trouver une longueur ou décider si un point est sur la médiatrice ; savoir que les trois médiatrices d'un triangle se coupent au centre du cercle circonscrit. Figure utile : segment avec sa médiatrice codée (angle droit, milieu), points lettrés et longueurs écrites, triangle avec cercle circonscrit.*
+
+> « Connaître la définition de la médiatrice d'un segment » — *Cycle 3, classe de 6e, Espace et géométrie, Étude de configurations planes, Médiatrice d'un segment*
+> « Comprendre et utiliser la propriété caractéristique de la médiatrice d'un segment » — *Cycle 3, classe de 6e, Espace et géométrie, Étude de configurations planes, Médiatrice d'un segment*
+> « Savoir que les médiatrices d'un triangle sont concourantes » — *Cycle 3, classe de 6e, Espace et géométrie, Étude de configurations planes, Triangles*
+> « Connaître et construire le cercle circonscrit à un triangle » — *Cycle 3, classe de 6e, Espace et géométrie, Étude de configurations planes, Triangles*
+
+**EX-G029-D-01** — decouverte, qcm, 60 s
+
+Quelle droite est la médiatrice du segment [EF] ?
+
+- **a.** La droite (d1)
+  <br>*Erreur visée :* L'élève ne vérifie que l'angle droit : (d1) est bien perpendiculaire à [EF], mais elle le coupe à 2 carreaux de E, pas en son milieu.
+- **b.** La droite (d2)
+  <br>*Erreur visée :* L'élève ne vérifie que le milieu : (d2) passe bien par le milieu de [EF], mais elle le coupe en biais, sans former d'angle droit.
+- **c.** La droite (d3) ✅
+
+*Corrigé.* (1) La médiatrice d'un segment est la droite perpendiculaire à ce segment qui passe par son milieu. Il faut les deux conditions. (2) On cherche le milieu de [EF] sur le quadrillage : EF mesure 8 carreaux, le milieu est à 4 carreaux de E. (3) (d1) est perpendiculaire à [EF], mais elle le coupe à 2 carreaux de E : elle ne passe pas par le milieu. (4) (d2) passe par le milieu, mais elle coupe [EF] en biais : elle n'est pas perpendiculaire. (5) (d3) passe par le milieu et suit une ligne verticale du quadrillage, perpendiculaire à [EF] : la médiatrice est (d3).
+
+*Indice.* Repère d'abord le milieu du segment [EF] en comptant les carreaux.
+
+**EX-G029-D-02** — decouverte, numerique, 45 s
+
+Combien de centimètres mesure le segment [MB] ?
+
+**Réponse :** 5
+
+*Corrigé.* (1) Sur la figure, la droite (d) coupe [AB] en I avec un angle droit, et les codages disent que IA = IB : (d) est perpendiculaire à [AB] en son milieu, c'est la médiatrice de [AB]. (2) Le point M est sur la médiatrice de [AB]. (3) Tout point de la médiatrice d'un segment est à égale distance des extrémités de ce segment : MB = MA. (4) On lit MA = 5 cm : le segment [MB] mesure 5 cm.
+
+*Indice.* Que disent les codages sur la droite (d) ? Où est le point M ?
+
+**EX-G029-E-01** — entrainement, vrai_faux, 60 s
+
+Zoé dit : « Le point N est sur la médiatrice du segment [AB]. » A-t-elle raison ?
+
+**Réponse :** True
+
+*Corrigé.* (1) La médiatrice de [AB] n'est pas tracée : on ne peut pas le voir directement. (2) On lit sur la figure NA = 5,1 cm et NB = 5,1 cm : N est à égale distance de A et de B. (3) Propriété caractéristique de la médiatrice : un point à égale distance des extrémités d'un segment est sur la médiatrice de ce segment. (4) N est donc sur la médiatrice de [AB] : Zoé a raison. (5) Cette propriété marche dans les deux sens : un point de la médiatrice est à égale distance de A et de B, et un point à égale distance de A et de B est sur la médiatrice.
+
+*Indice.* Compare les distances NA et NB.
+
+**EX-G029-E-02** — entrainement, numerique, 90 s
+
+Quel est le périmètre du triangle MAB, en centimètres ?
+
+**Réponse :** 12.8
+
+*Corrigé.* (1) Les codages montrent que la droite (d) est perpendiculaire à [AB] en son milieu : c'est la médiatrice de [AB]. (2) M est sur la médiatrice de [AB] : il est à égale distance de A et de B. Donc MB = MA = 4 cm. (3) On lit 2,4 cm sur la moitié gauche du segment [AB]. Les codages disent que (d) coupe [AB] en son milieu : AB = 2 × 2,4 = 4,8 cm. (4) Périmètre du triangle MAB : MA + MB + AB = 4 + 4 + 4,8 = 12,8. (5) Le périmètre est 12,8 cm. Répondre 8,8 cm, c'est oublier le côté [MB], dont la longueur n'est pas écrite ; répondre 10,4 cm, c'est prendre 2,4 cm pour AB.
+
+*Indice.* Deux longueurs ne sont pas écrites : lesquelles, et comment les trouver avec la droite (d) ?
+
+**EX-G029-M-01** — maitrise, qcm, 90 s
+
+Quel point est à la même distance des trois sommets R, S et T du triangle ?
+
+- **a.** Le point A ✅
+- **b.** Le point B
+  <br>*Erreur visée :* L'élève voit B sur une médiatrice et s'arrête là : B est sur la médiatrice de [ST], donc BS = BT, mais il n'est pas sur la médiatrice de [RS], et BR est plus court.
+- **c.** Le point C
+  <br>*Erreur visée :* L'élève pense qu'un milieu est à égale distance de tout : C, milieu de [RT], est bien à égale distance de R et de T, mais il est bien plus loin de S.
+
+*Corrigé.* (1) Les codages montrent que les deux droites en pointillés sont les médiatrices des côtés [RS] et [ST]. (2) A est sur la médiatrice de [RS] : AR = AS. A est aussi sur la médiatrice de [ST] : AS = AT. (3) Donc AR = AS = AT : le point A est à la même distance des trois sommets. C'est le centre du cercle qui passe par R, S et T. (4) B est sur la médiatrice de [ST] seulement : BS = BT, mais B est bien plus près de R. (5) C est le milieu de [RT] : CR = CT, mais C est bien plus loin de S. La médiatrice de [RT] passerait elle aussi par A : les trois médiatrices d'un triangle se coupent en un même point.
+
+*Indice.* Sur quelle médiatrice est chaque point ? Que peut-on en déduire pour ses distances aux sommets ?
+
+**EX-G029-M-02** — maitrise, vrai_faux, 75 s
+
+Kenza affirme : « La droite (d) est la médiatrice du segment [AB]. » A-t-elle raison ?
+
+**Réponse :** False
+
+*Corrigé.* (1) La médiatrice de [AB] doit remplir deux conditions : passer par le milieu de [AB] ET être perpendiculaire à [AB]. (2) Les codages montrent que (d) passe bien par I, le milieu de [AB]. (3) Mais (d) coupe [AB] en biais : il n'y a pas d'angle droit en I. (d) n'est donc pas la médiatrice de [AB]. (4) On le confirme avec le point C de (d) : s'il était sur la médiatrice, on aurait CA = CB. Or, sur la figure, C est bien plus près de B que de A. (5) Kenza a tort : passer par le milieu ne suffit pas.
+
+*Indice.* La droite (d) est-elle perpendiculaire au segment [AB] ?
+
+---
+
+## `G030` · Symétrie axiale : symétrique d'un point, propriétés — 6e, difficulté 5
+
+*Connaître la définition du symétrique d'un point par rapport à une droite (la droite est la médiatrice du segment qui joint le point à son symétrique) et les propriétés de la symétrie axiale (elle conserve les longueurs, les angles et l'alignement) ; les utiliser sur papier uni pour trouver une longueur, un angle ou vérifier une construction. Figure nécessaire : axe, points et figures lettrés avec leurs symétriques, codage (angle droit, longueurs égales), sur fond blanc ou quadrillé.*
+
+> « Connaître la définition du symétrique d'un point par rapport à une droite » — *Cycle 3, classe de 6e, Espace et géométrie, Étude de configurations planes, Symétrie axiale*
+> « Connaître et utiliser les propriétés de la symétrie axiale pour effectuer des constructions » — *Cycle 3, classe de 6e, Espace et géométrie, Étude de configurations planes, Symétrie axiale*
+> « Différents supports peuvent être utilisés : papier quadrillé, papier pointé, auxquels on ajoute le papier uni. » — *Cycle 3, classe de 6e, Espace et géométrie, Étude de configurations planes, Symétrie axiale*
+
+**EX-G030-D-01** — decouverte, qcm, 60 s
+
+Quel point est le symétrique du point M par rapport à la droite (d) ?
+
+- **a.** Le point A
+  <br>*Erreur visée :* L'élève vérifie l'angle droit mais pas les distances : A est bien sur la perpendiculaire à (d) passant par M, mais il est plus loin de (d) que M.
+- **b.** Le point B
+  <br>*Erreur visée :* L'élève reporte la même distance de l'autre côté de (d), mais horizontalement : le segment [MB] n'est pas perpendiculaire à (d).
+- **c.** Le point C ✅
+
+*Corrigé.* (1) Le symétrique de M par rapport à (d) est le point M' tel que (d) soit la médiatrice du segment [MM'] : [MM'] est perpendiculaire à (d) et (d) le coupe en son milieu. (2) Le segment qui va de M à C coupe (d) avec un angle droit (codage), et les deux morceaux portent le même codage : (d) le coupe en son milieu. (3) Le point C remplit les deux conditions : c'est le point C. (4) Le point A est sur la même perpendiculaire, mais plus loin : (d) ne coupe pas le segment [MA] en son milieu. (5) Le point B est à la même distance de (d) le long d'un trajet horizontal, mais [MB] n'est pas perpendiculaire à (d).
+
+*Indice.* Pour chaque point, regarde les deux conditions : angle droit avec (d), et milieu sur (d).
+
+**EX-G030-D-02** — decouverte, numerique, 45 s
+
+Le point M' est le symétrique du point M par rapport à la droite (d). Combien de centimètres mesure le segment [MM'] ?
+
+**Réponse :** 7
+
+*Corrigé.* (1) Par définition du symétrique, (d) est la médiatrice du segment [MM'] : elle le coupe perpendiculairement en son milieu H. (2) Donc MH = HM' : on lit MH = 3,5 cm. (3) MM' = MH + HM' = 3,5 + 3,5 = 7. (4) Le segment [MM'] mesure 7 cm. Répondre 3,5 cm, c'est confondre la distance de M à (d) avec la longueur du segment [MM'].
+
+*Indice.* Que représente la droite (d) pour le segment [MM'] ?
+
+**EX-G030-E-01** — entrainement, numerique, 90 s
+
+Le triangle A'B'C' est le symétrique du triangle ABC par rapport à la droite (d). Quel est le périmètre du triangle ABC, en centimètres ?
+
+**Réponse :** 12.6
+
+*Corrigé.* (1) Sur le triangle ABC, on lit AB = 4,2 cm et AC = 3,9 cm. La longueur BC n'est pas écrite. (2) La symétrie axiale conserve les longueurs : le segment [BC] et son symétrique [B'C'] ont la même longueur. On lit B'C' = 4,5 cm, donc BC = 4,5 cm. (3) Périmètre du triangle ABC : AB + BC + AC = 4,2 + 4,5 + 3,9 = 12,6. (4) Le périmètre est 12,6 cm. (5) Additionner toutes les longueurs écrites donne 16,8 cm : le segment [A'B'] est un côté du triangle A'B'C', pas du triangle ABC.
+
+*Indice.* Quelle longueur de ABC manque ? Où peut-on la lire sur l'autre triangle ?
+
+**EX-G030-E-02** — entrainement, vrai_faux, 75 s
+
+Yanis dit : « Le triangle DEF est le symétrique du triangle ABC par rapport à la droite (d). » A-t-il raison ?
+
+**Réponse :** False
+
+*Corrigé.* (1) Pour vérifier, on regarde chaque sommet : son symétrique doit être à la même distance de (d), de l'autre côté, sur la perpendiculaire à (d). (2) B est à 3 carreaux de (d) ; E est à 3 carreaux de l'autre côté, à la même hauteur : E est bien le symétrique de B. (3) A est à 1 carreau de (d) : son symétrique est à 1 carreau de l'autre côté. Or D est à 5 carreaux de (d). Même chose pour C et F. (4) DEF est le triangle ABC glissé de 6 carreaux vers la droite, sans être retourné : le côté [AC], tout près de (d), devient [DF], loin de (d). Son symétrique devrait rester tout près de (d). (5) Yanis a tort : un seul sommet bien placé ne suffit pas.
+
+*Indice.* Vérifie les trois sommets, pas seulement un.
+
+**EX-G030-M-01** — maitrise, numerique, 120 s
+
+Le point A' est le symétrique du point A par rapport à la droite (d). Quel est le périmètre du triangle PAA', en centimètres ?
+
+**Réponse :** 9.6
+
+*Corrigé.* (1) A' est le symétrique de A : (d) est la médiatrice du segment [AA'], elle le coupe perpendiculairement en son milieu H. (2) Donc AA' = 2 × AH = 2 × 1,8 = 3,6 cm. (3) P est sur (d), la médiatrice de [AA'] : il est à égale distance de A et de A'. Donc PA' = PA = 3 cm. (On peut aussi dire : le symétrique de P est P lui-même, celui de A est A', et la symétrie conserve les longueurs.) (4) Périmètre du triangle PAA' : PA + PA' + AA' = 3 + 3 + 3,6 = 9,6. (5) Le périmètre est 9,6 cm. Prendre AA' = 1,8 cm donne 7,8 cm : c'est oublier que H est le milieu de [AA'].
+
+*Indice.* Que représente (d) pour le segment [AA'] ? Qu'en déduit-on pour H, puis pour le point P ?
+
+**EX-G030-M-02** — maitrise, qcm, 60 s
+
+Quel est le symétrique du point B par rapport à la droite (d) ?
+
+- **a.** Le point A
+  <br>*Erreur visée :* L'élève croit que le symétrique est toujours un autre point, de l'autre côté. A est sur la perpendiculaire à (d) passant par B, mais B n'est d'aucun côté de (d) : il est dessus.
+- **b.** Le point B ✅
+- **c.** Il n'en a pas.
+  <br>*Erreur visée :* L'élève pense qu'un point de l'axe n'a pas de symétrique. Or tout point a un symétrique ; pour un point de l'axe, c'est lui-même.
+
+*Corrigé.* (1) Sur la figure, M' est le symétrique de M : [MM'] est perpendiculaire à (d), et (d) le coupe en son milieu. Plus M est près de (d), plus M' l'est aussi. (2) Le point B est sur la droite (d) : sa distance à (d) est nulle. (3) Son symétrique est donc aussi à une distance nulle de (d), sur la perpendiculaire à (d) passant par B : c'est B lui-même. (4) Le symétrique de B est le point B lui-même : il ne bouge pas quand on plie le long de (d). (5) Tous les points de l'axe sont leurs propres symétriques.
+
+*Indice.* Si on plie la feuille le long de (d), où va le point B ?
 
 ---
 

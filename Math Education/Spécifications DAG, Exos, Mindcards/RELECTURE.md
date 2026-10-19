@@ -1,6 +1,6 @@
 # Fiche de relecture — synthèse
 
-> 120 compétences, 667 exercices. Généré depuis `content/`, ne pas éditer à la main.  
+> 150 compétences, 847 exercices. Généré depuis `content/`, ne pas éditer à la main.  
 > Objectif : juger le **fond** et la **coordination**. Le détail complet, énoncés et corrigés, est dans `RELECTURE_DETAIL.md`.
 
 ⚠ **7 compétence(s) à regarder**, signalées dans la colonne *Signal* et détaillées en §3.
@@ -15,122 +15,152 @@ C'est la lecture qui compte pour juger la coordination : la difficulté doit mon
 | 2 | `A002` Compter jusqu'à 100 | CP | 1 | 3 | 6 |  |
 | 3 | `B001` Addition simple | CP | 1 | 6 | 14 |  |
 | 4 | `B003` Soustraction simple | CP | 1 | 6 | 12 |  |
-| 5 | `P001` Comparer et mesurer des longueurs avec … | CP | 1 | 6 | 13 |  |
-| 6 | `P002` Le mètre et le centimètre : unités et o… | CP | 1 | 6 | 14 |  |
-| 7 | `P004` Lire l'heure en heures entières | CP | 1 | 6 | 12 |  |
-| 8 | `B002` Addition posée avec retenue | CP | 2 | 6 | 11 |  |
-| 9 | `B013` Calcul mental : additions | CP | 2 | 6 | 11 |  |
-| 10 | `B014` Calcul mental : soustractions | CP | 2 | 6 | 9 |  |
-| 11 | `B036` Problèmes de partage équitable | CP | 2 | 6 | 15 |  |
-| 12 | `B037` Problèmes additifs en deux étapes | CP | 2 | 6 | 15 |  |
-| 13 | `P003` La monnaie en euros entiers : valeur, c… | CP | 2 | 6 | 15 |  |
-| 14 | `A003` Compter jusqu'à 1000 | CE1 | 2 | 3 | 5 |  |
-| 15 | `A004` Lire un entier | CE1 | 2 | 3 | 6 | ⚠ |
-| 16 | `A005` Écrire un entier | CE1 | 2 | 3 | 5 | ⚠ |
-| 17 | `A006` Comparer deux entiers | CE1 | 2 | 3 | 13 | ⚠ |
-| 18 | `A008` Identifier chiffre et nombre | CE1 | 2 | 3 | 11 | ⚠ |
-| 19 | `A011` Pair / impair | CE1 | 2 | 3 | 11 |  |
-| 20 | `B005` Multiplication à un chiffre | CE1 | 2 | 7 | 17 |  |
-| 21 | `B015` Calcul mental : multiplier par 10 | CE1 | 2 | 6 | 16 |  |
-| 22 | `B042` Addition posée de nombres à trois chiff… | CE1 | 2 | 6 | 11 |  |
-| 23 | `B004` Soustraction posée avec retenue | CE1 | 2 | 6 | 12 |  |
-| 24 | `C001` Fraction comme partage | CE1 | 2 | 3 | 23 | ⚠ |
-| 25 | `C002` Numérateur | CE1 | 2 | 3 | 17 |  |
-| 26 | `C003` Dénominateur | CE1 | 2 | 3 | 21 | ⚠ |
-| 27 | `C009` Comparer fractions de même dénominateur | CE1 | 2 | 3 | 25 | ⚠ |
-| 28 | `C012` Additionner des fractions de même dénom… | CE1 | 2 | 3 | 17 |  |
-| 29 | `C026` Comparer des fractions de numérateur 1 | CE1 | 2 | 7 | 19 |  |
-| 30 | `D016` Écrire une somme d'argent avec une virg… | CE1 | 2 | 6 | 17 |  |
-| 31 | `P005` Longueurs : mètre, centimètre, kilomètre | CE1 | 2 | 6 | 17 |  |
-| 32 | `P006` Masses : gramme et kilogramme | CE1 | 2 | 6 | 16 |  |
-| 33 | `P007` Lire l'heure : demi-heures et quarts d'… | CE1 | 2 | 6 | 15 |  |
-| 34 | `P008` Heures et minutes : unités de durée et … | CE1 | 2 | 6 | 20 |  |
-| 35 | `B038` Problèmes mixtes en deux étapes | CE1 | 3 | 6 | 19 |  |
-| 36 | `A007` Ranger plusieurs entiers | CE2 | 2 | 3 | 17 |  |
-| 37 | `A009` Comprendre la valeur positionnelle | CE2 | 2 | 3 | 12 |  |
-| 38 | `B006` Tables de multiplication | CE2 | 2 | 6 | 14 |  |
-| 39 | `C006` Fractions équivalentes | CE2 | 2 | 3 | 8 |  |
-| 40 | `C005` Fraction sur une droite graduée | CE2 | 2 | 3 | 25 |  |
-| 41 | `P010` Périmètre d'un polygone : longueur du c… | CE2 | 2 | 6 | 25 |  |
-| 42 | `P013` Lire l'heure à la minute | CE2 | 2 | 6 | 15 |  |
-| 43 | `A010` Décomposer un entier | CE2 | 3 | 3 | 7 |  |
-| 44 | `B039` Sens de la division et symbole ÷ | CE2 | 3 | 6 | 14 |  |
-| 45 | `B041` Calcul mental : multiplier par 100 et p… | CE2 | 3 | 6 | 14 |  |
-| 46 | `B007` Multiplication posée | CE2 | 3 | 6 | 18 |  |
-| 47 | `B043` Comparaison multiplicative : fois plus,… | CE2 | 3 | 6 | 21 |  |
-| 48 | `D017` Additionner et soustraire des montants … | CE2 | 3 | 6 | 18 |  |
-| 49 | `P009` Longueurs : millimètre et décimètre, co… | CE2 | 3 | 6 | 22 |  |
-| 50 | `P011` Masses : la tonne, conversions entre g,… | CE2 | 3 | 6 | 24 |  |
-| 51 | `P012` Contenances : litre, décilitre, centili… | CE2 | 3 | 6 | 20 |  |
-| 52 | `P014` Problèmes de durées en heures et minutes | CE2 | 3 | 6 | 24 |  |
-| 53 | `A012` Multiple | CM1 | 3 | 7 | 22 |  |
-| 54 | `A013` Diviseur | CM1 | 3 | 7 | 21 |  |
-| 55 | `A014` Multiples de 2, de 5 et de 10 | CM1 | 3 | 7 | 18 |  |
-| 56 | `A028` Entier sur une demi-droite graduée | CM1 | 3 | 7 | 14 |  |
-| 57 | `B008` Division euclidienne posée (diviseur à … | CM1 | 3 | 6 | 20 |  |
-| 58 | `B012` Calcul avec parenthèses | CM1 | 3 | 6 | 15 |  |
-| 59 | `B017` Estimer le résultat d'une opération | CM1 | 3 | 6 | 20 |  |
-| 60 | `C004` Fraction d'une quantité | CM1 | 3 | 3 | 13 |  |
-| 61 | `C027` Fraction supérieure à 1 | CM1 | 3 | 8 | 15 |  |
-| 62 | `C029` Encadrer une fraction | CM1 | 3 | 7 | 14 |  |
-| 63 | `C030` Fraction sur une demi-droite graduée | CM1 | 3 | 7 | 15 |  |
-| 64 | `D018` Fractions décimales : dixièmes et centi… | CM1 | 3 | 6 | 22 |  |
-| 65 | `D001` Écriture à virgule d'un nombre décimal | CM1 | 3 | 6 | 16 |  |
-| 66 | `D003` Comparer et ranger des nombres décimaux | CM1 | 3 | 6 | 28 |  |
-| 67 | `D004` Additionner et soustraire des décimaux … | CM1 | 3 | 6 | 20 |  |
-| 68 | `D012` Encadrer et intercaler des nombres déci… | CM1 | 3 | 6 | 24 |  |
-| 69 | `D008` Partie entière et arrondi à l'unité | CM1 | 3 | 6 | 19 |  |
-| 70 | `D019` Décimal sur une demi-droite graduée | CM1 | 3 | 6 | 11 |  |
-| 71 | `D020` Calcul mental : multiplier et diviser u… | CM1 | 3 | 6 | 19 |  |
-| 72 | `D021` Multiplier un décimal par un entier inf… | CM1 | 3 | 6 | 17 |  |
-| 73 | `E026` Reconnaître une situation de proportion… | CM1 | 3 | 6 | 27 |  |
-| 74 | `E027` Résoudre par linéarité multiplicative (… | CM1 | 3 | 6 | 17 |  |
-| 75 | `P015` Unités de mesure du milli au kilo : lon… | CM1 | 3 | 6 | 26 |  |
-| 76 | `P016` Problèmes de périmètre : retrouver un c… | CM1 | 3 | 6 | 28 |  |
-| 77 | `P017` L'aire : comparer des surfaces et mesur… | CM1 | 3 | 7 | 18 |  |
-| 78 | `D014` Convertir des mesures écrites avec une … | CM1 | 4 | 6 | 20 |  |
-| 79 | `A026` Tous les diviseurs d'un entier | CM2 | 3 | 7 | 17 |  |
-| 80 | `B016` Calcul mental : diviser par 2, 4 ou 8 | CM2 | 3 | 6 | 16 |  |
-| 81 | `P020` Durées en heures, minutes et secondes | CM2 | 3 | 6 | 26 |  |
-| 82 | `A027` Diviseurs et multiples communs | CM2 | 4 | 8 | 22 |  |
-| 83 | `C031` Produit d'un entier par une fraction | CM2 | 4 | 7 | 10 |  |
-| 84 | `D022` Décimaux jusqu'aux millièmes | CM2 | 4 | 6 | 14 |  |
-| 85 | `D007` Division décimale par un entier à un ch… | CM2 | 4 | 6 | 17 |  |
-| 86 | `D023` Calcul mental : multiplier et diviser u… | CM2 | 4 | 6 | 13 |  |
-| 87 | `D024` Multiplier un décimal par un entier (po… | CM2 | 4 | 6 | 20 |  |
-| 88 | `E028` Résoudre par linéarité additive | CM2 | 4 | 6 | 22 |  |
-| 89 | `E029` Problèmes de proportionnalité en plusie… | CM2 | 4 | 6 | 18 |  |
-| 90 | `P018` Aire d'un carré ou d'un rectangle (cour… | CM2 | 4 | 6 | 29 |  |
-| 91 | `P019` Unités d'aire : cm², dm², m² et convers… | CM2 | 4 | 6 | 24 |  |
-| 92 | `B040` Division euclidienne par un nombre à de… | 6e | 4 | 6 | 18 |  |
-| 93 | `C032` Fraction comme quotient | 6e | 4 | 7 | 16 |  |
-| 94 | `D009` Arrondir au dixième ou au centième | 6e | 4 | 6 | 17 |  |
-| 95 | `D025` Multiplier par 0,1 ; 0,01 ; 0,001 | 6e | 4 | 6 | 19 |  |
-| 96 | `E030` Grandeurs proportionnelles : définition… | 6e | 4 | 6 | 31 |  |
-| 97 | `E031` Passage par l'unité et choix de la proc… | 6e | 4 | 6 | 24 |  |
-| 98 | `E003` Tableau de proportionnalité : représent… | 6e | 4 | 6 | 51 |  |
-| 99 | `E032` Pourcentage : définition et écritures | 6e | 4 | 6 | 31 |  |
-| 100 | `E010` Appliquer un pourcentage à une grandeur… | 6e | 4 | 6 | 25 |  |
-| 101 | `E033` Exprimer une proportion en pourcentage … | 6e | 4 | 6 | 24 |  |
-| 102 | `P021` Convertir des longueurs vers et depuis … | 6e | 4 | 6 | 20 |  |
-| 103 | `P022` Périmètre du carré et du rectangle : fo… | 6e | 4 | 6 | 26 |  |
-| 104 | `P024` Aire du carré et du rectangle : formules | 6e | 4 | 6 | 28 |  |
-| 105 | `P025` Conversions d'aires avec des nombres dé… | 6e | 4 | 6 | 20 |  |
-| 106 | `P026` Volume : le centimètre cube et le dénom… | 6e | 4 | 6 | 35 |  |
-| 107 | `P027` Convertir des durées : système décimal … | 6e | 4 | 6 | 18 |  |
-| 108 | `D006` Multiplier deux nombres décimaux | 6e | 5 | 6 | 22 |  |
-| 109 | `E006` Échelle d'un plan : premiers problèmes | 6e | 5 | 6 | 36 |  |
-| 110 | `P023` Périmètre d'un disque | 6e | 5 | 6 | 34 |  |
-| 111 | `C011` Réduction au même dénominateur | 5e | 4 | 3 | 14 |  |
-| 112 | `C010` Comparer fractions de dénominateurs dif… | 5e | 4 | 3 | 13 |  |
-| 113 | `E034` Coefficient de proportionnalité | 5e | 5 | 6 | 48 |  |
-| 114 | `E007` Vitesse moyenne | 5e | 5 | 6 | 24 |  |
-| 115 | `E035` Reconnaître un tableau de proportionnal… | 5e | 5 | 6 | 47 |  |
-| 116 | `E023` Proportionnalité et graphique | 5e | 5 | 6 | 53 |  |
-| 117 | `E036` Calculer un pourcentage dans le cas gén… | 5e | 5 | 6 | 31 |  |
-| 118 | `E037` Pourcentages par linéarité : 1 %, 10 %,… | 5e | 5 | 6 | 29 |  |
-| 119 | `C007` Simplification de fraction | 4e | 5 | 3 | 11 |  |
-| 120 | `C008` Fraction irréductible | 3e | 6 | 3 | 9 |  |
+| 5 | `G001` Se repérer : positions relatives et plan | CP | 1 | 6 | 14 |  |
+| 6 | `G003` Carré, rectangle, triangle, disque : re… | CP | 1 | 6 | 8 |  |
+| 7 | `G004` Points alignés et droite passant par de… | CP | 1 | 6 | 12 |  |
+| 8 | `G005` Reconnaître et nommer les solides usuels | CP | 1 | 6 | 10 |  |
+| 9 | `P001` Comparer et mesurer des longueurs avec … | CP | 1 | 6 | 13 |  |
+| 10 | `P002` Le mètre et le centimètre : unités et o… | CP | 1 | 6 | 14 |  |
+| 11 | `P004` Lire l'heure en heures entières | CP | 1 | 6 | 12 |  |
+| 12 | `B002` Addition posée avec retenue | CP | 2 | 6 | 11 |  |
+| 13 | `B013` Calcul mental : additions | CP | 2 | 6 | 11 |  |
+| 14 | `B014` Calcul mental : soustractions | CP | 2 | 6 | 9 |  |
+| 15 | `B036` Problèmes de partage équitable | CP | 2 | 6 | 15 |  |
+| 16 | `B037` Problèmes additifs en deux étapes | CP | 2 | 6 | 15 |  |
+| 17 | `G002` Suivre et coder un déplacement sur un q… | CP | 2 | 6 | 15 |  |
+| 18 | `G006` Compléter un carré ou un rectangle sur … | CP | 2 | 6 | 15 |  |
+| 19 | `P003` La monnaie en euros entiers : valeur, c… | CP | 2 | 6 | 15 |  |
+| 20 | `A003` Compter jusqu'à 1000 | CE1 | 2 | 3 | 5 |  |
+| 21 | `A004` Lire un entier | CE1 | 2 | 3 | 6 | ⚠ |
+| 22 | `A005` Écrire un entier | CE1 | 2 | 3 | 5 | ⚠ |
+| 23 | `A006` Comparer deux entiers | CE1 | 2 | 3 | 13 | ⚠ |
+| 24 | `A008` Identifier chiffre et nombre | CE1 | 2 | 3 | 11 | ⚠ |
+| 25 | `A011` Pair / impair | CE1 | 2 | 3 | 11 |  |
+| 26 | `B005` Multiplication à un chiffre | CE1 | 2 | 7 | 17 |  |
+| 27 | `B015` Calcul mental : multiplier par 10 | CE1 | 2 | 6 | 16 |  |
+| 28 | `B042` Addition posée de nombres à trois chiff… | CE1 | 2 | 6 | 11 |  |
+| 29 | `B004` Soustraction posée avec retenue | CE1 | 2 | 6 | 12 |  |
+| 30 | `C001` Fraction comme partage | CE1 | 2 | 3 | 23 | ⚠ |
+| 31 | `C002` Numérateur | CE1 | 2 | 3 | 17 |  |
+| 32 | `C003` Dénominateur | CE1 | 2 | 3 | 21 | ⚠ |
+| 33 | `C009` Comparer fractions de même dénominateur | CE1 | 2 | 3 | 25 | ⚠ |
+| 34 | `C012` Additionner des fractions de même dénom… | CE1 | 2 | 3 | 17 |  |
+| 35 | `C026` Comparer des fractions de numérateur 1 | CE1 | 2 | 7 | 19 |  |
+| 36 | `D016` Écrire une somme d'argent avec une virg… | CE1 | 2 | 6 | 17 |  |
+| 37 | `G007` Cube, pavé, pyramide : faces, arêtes et… | CE1 | 2 | 6 | 12 |  |
+| 38 | `G008` Point, droite, segment, milieu, cercle … | CE1 | 2 | 6 | 13 |  |
+| 39 | `G009` L'angle droit : le reconnaître, le code… | CE1 | 2 | 6 | 10 |  |
+| 40 | `G010` Carré, rectangle, triangle rectangle : … | CE1 | 2 | 6 | 11 |  |
+| 41 | `P005` Longueurs : mètre, centimètre, kilomètre | CE1 | 2 | 6 | 17 |  |
+| 42 | `P006` Masses : gramme et kilogramme | CE1 | 2 | 6 | 16 |  |
+| 43 | `P007` Lire l'heure : demi-heures et quarts d'… | CE1 | 2 | 6 | 15 |  |
+| 44 | `P008` Heures et minutes : unités de durée et … | CE1 | 2 | 6 | 20 |  |
+| 45 | `B038` Problèmes mixtes en deux étapes | CE1 | 3 | 6 | 19 |  |
+| 46 | `A007` Ranger plusieurs entiers | CE2 | 2 | 3 | 17 |  |
+| 47 | `A009` Comprendre la valeur positionnelle | CE2 | 2 | 3 | 12 |  |
+| 48 | `B006` Tables de multiplication | CE2 | 2 | 6 | 14 |  |
+| 49 | `C006` Fractions équivalentes | CE2 | 2 | 3 | 8 |  |
+| 50 | `C005` Fraction sur une droite graduée | CE2 | 2 | 3 | 25 |  |
+| 51 | `G012` Losange, quadrilatère, polygones ; lire… | CE2 | 2 | 6 | 12 |  |
+| 52 | `G013` Le cercle : centre, rayon et diamètre | CE2 | 2 | 6 | 20 |  |
+| 53 | `G014` Axes de symétrie ; compléter une figure… | CE2 | 2 | 6 | 16 |  |
+| 54 | `P010` Périmètre d'un polygone : longueur du c… | CE2 | 2 | 6 | 25 |  |
+| 55 | `P013` Lire l'heure à la minute | CE2 | 2 | 6 | 15 |  |
+| 56 | `A010` Décomposer un entier | CE2 | 3 | 3 | 7 |  |
+| 57 | `B039` Sens de la division et symbole ÷ | CE2 | 3 | 6 | 14 |  |
+| 58 | `B041` Calcul mental : multiplier par 100 et p… | CE2 | 3 | 6 | 14 |  |
+| 59 | `B007` Multiplication posée | CE2 | 3 | 6 | 18 |  |
+| 60 | `B043` Comparaison multiplicative : fois plus,… | CE2 | 3 | 6 | 21 |  |
+| 61 | `D017` Additionner et soustraire des montants … | CE2 | 3 | 6 | 18 |  |
+| 62 | `G011` Reconnaître un patron de cube | CE2 | 3 | 6 | 17 |  |
+| 63 | `P009` Longueurs : millimètre et décimètre, co… | CE2 | 3 | 6 | 22 |  |
+| 64 | `P011` Masses : la tonne, conversions entre g,… | CE2 | 3 | 6 | 24 |  |
+| 65 | `P012` Contenances : litre, décilitre, centili… | CE2 | 3 | 6 | 20 |  |
+| 66 | `P014` Problèmes de durées en heures et minutes | CE2 | 3 | 6 | 24 |  |
+| 67 | `A012` Multiple | CM1 | 3 | 7 | 22 |  |
+| 68 | `A013` Diviseur | CM1 | 3 | 7 | 21 |  |
+| 69 | `A014` Multiples de 2, de 5 et de 10 | CM1 | 3 | 7 | 18 |  |
+| 70 | `A028` Entier sur une demi-droite graduée | CM1 | 3 | 7 | 14 |  |
+| 71 | `B008` Division euclidienne posée (diviseur à … | CM1 | 3 | 6 | 20 |  |
+| 72 | `B012` Calcul avec parenthèses | CM1 | 3 | 6 | 15 |  |
+| 73 | `B017` Estimer le résultat d'une opération | CM1 | 3 | 6 | 20 |  |
+| 74 | `C004` Fraction d'une quantité | CM1 | 3 | 3 | 13 |  |
+| 75 | `C027` Fraction supérieure à 1 | CM1 | 3 | 8 | 15 |  |
+| 76 | `C029` Encadrer une fraction | CM1 | 3 | 7 | 14 |  |
+| 77 | `C030` Fraction sur une demi-droite graduée | CM1 | 3 | 7 | 15 |  |
+| 78 | `D018` Fractions décimales : dixièmes et centi… | CM1 | 3 | 6 | 22 |  |
+| 79 | `D001` Écriture à virgule d'un nombre décimal | CM1 | 3 | 6 | 16 |  |
+| 80 | `D003` Comparer et ranger des nombres décimaux | CM1 | 3 | 6 | 28 |  |
+| 81 | `D004` Additionner et soustraire des décimaux … | CM1 | 3 | 6 | 20 |  |
+| 82 | `D012` Encadrer et intercaler des nombres déci… | CM1 | 3 | 6 | 24 |  |
+| 83 | `D008` Partie entière et arrondi à l'unité | CM1 | 3 | 6 | 19 |  |
+| 84 | `D019` Décimal sur une demi-droite graduée | CM1 | 3 | 6 | 11 |  |
+| 85 | `D020` Calcul mental : multiplier et diviser u… | CM1 | 3 | 6 | 19 |  |
+| 86 | `D021` Multiplier un décimal par un entier inf… | CM1 | 3 | 6 | 17 |  |
+| 87 | `E026` Reconnaître une situation de proportion… | CM1 | 3 | 6 | 27 |  |
+| 88 | `E027` Résoudre par linéarité multiplicative (… | CM1 | 3 | 6 | 17 |  |
+| 89 | `G015` Comparer des angles | CM1 | 3 | 6 | 17 |  |
+| 90 | `G016` Droites perpendiculaires et droites par… | CM1 | 3 | 6 | 13 |  |
+| 91 | `G017` Triangles particuliers : rectangle, iso… | CM1 | 3 | 6 | 14 |  |
+| 92 | `G018` Carré, rectangle, losange : définitions… | CM1 | 3 | 6 | 13 |  |
+| 93 | `G019` Solides en perspective ; le prisme droit | CM1 | 3 | 6 | 8 |  |
+| 94 | `G020` Assemblages de cubes : dénombrer, cubes… | CM1 | 3 | 6 | 22 |  |
+| 95 | `G021` Lire un programme de construction | CM1 | 3 | 6 | 29 |  |
+| 96 | `P015` Unités de mesure du milli au kilo : lon… | CM1 | 3 | 6 | 26 |  |
+| 97 | `P016` Problèmes de périmètre : retrouver un c… | CM1 | 3 | 6 | 28 |  |
+| 98 | `P017` L'aire : comparer des surfaces et mesur… | CM1 | 3 | 7 | 18 |  |
+| 99 | `D014` Convertir des mesures écrites avec une … | CM1 | 4 | 6 | 20 |  |
+| 100 | `A026` Tous les diviseurs d'un entier | CM2 | 3 | 7 | 17 |  |
+| 101 | `B016` Calcul mental : diviser par 2, 4 ou 8 | CM2 | 3 | 6 | 16 |  |
+| 102 | `G023` Trapèze, pentagone, hexagone : reconnaî… | CM2 | 3 | 6 | 14 |  |
+| 103 | `P020` Durées en heures, minutes et secondes | CM2 | 3 | 6 | 26 |  |
+| 104 | `A027` Diviseurs et multiples communs | CM2 | 4 | 8 | 22 |  |
+| 105 | `C031` Produit d'un entier par une fraction | CM2 | 4 | 7 | 10 |  |
+| 106 | `D022` Décimaux jusqu'aux millièmes | CM2 | 4 | 6 | 14 |  |
+| 107 | `D007` Division décimale par un entier à un ch… | CM2 | 4 | 6 | 17 |  |
+| 108 | `D023` Calcul mental : multiplier et diviser u… | CM2 | 4 | 6 | 13 |  |
+| 109 | `D024` Multiplier un décimal par un entier (po… | CM2 | 4 | 6 | 20 |  |
+| 110 | `E028` Résoudre par linéarité additive | CM2 | 4 | 6 | 22 |  |
+| 111 | `E029` Problèmes de proportionnalité en plusie… | CM2 | 4 | 6 | 18 |  |
+| 112 | `G022` Le degré : l'angle droit mesure 90° | CM2 | 4 | 6 | 11 |  |
+| 113 | `G024` Symétrique d'une figure sur quadrillage… | CM2 | 4 | 6 | 19 |  |
+| 114 | `P018` Aire d'un carré ou d'un rectangle (cour… | CM2 | 4 | 6 | 29 |  |
+| 115 | `P019` Unités d'aire : cm², dm², m² et convers… | CM2 | 4 | 6 | 24 |  |
+| 116 | `B040` Division euclidienne par un nombre à de… | 6e | 4 | 6 | 18 |  |
+| 117 | `C032` Fraction comme quotient | 6e | 4 | 7 | 16 |  |
+| 118 | `D009` Arrondir au dixième ou au centième | 6e | 4 | 6 | 17 |  |
+| 119 | `D025` Multiplier par 0,1 ; 0,01 ; 0,001 | 6e | 4 | 6 | 19 |  |
+| 120 | `E030` Grandeurs proportionnelles : définition… | 6e | 4 | 6 | 31 |  |
+| 121 | `E031` Passage par l'unité et choix de la proc… | 6e | 4 | 6 | 24 |  |
+| 122 | `E003` Tableau de proportionnalité : représent… | 6e | 4 | 6 | 51 |  |
+| 123 | `E032` Pourcentage : définition et écritures | 6e | 4 | 6 | 31 |  |
+| 124 | `E010` Appliquer un pourcentage à une grandeur… | 6e | 4 | 6 | 25 |  |
+| 125 | `E033` Exprimer une proportion en pourcentage … | 6e | 4 | 6 | 24 |  |
+| 126 | `G025` Mesurer un angle avec un rapporteur | 6e | 4 | 6 | 13 |  |
+| 127 | `G026` Angles plat, adjacents, supplémentaires… | 6e | 4 | 6 | 15 |  |
+| 128 | `G028` Distances : milieu d'un segment, cercle… | 6e | 4 | 6 | 17 |  |
+| 129 | `P021` Convertir des longueurs vers et depuis … | 6e | 4 | 6 | 20 |  |
+| 130 | `P022` Périmètre du carré et du rectangle : fo… | 6e | 4 | 6 | 26 |  |
+| 131 | `P024` Aire du carré et du rectangle : formules | 6e | 4 | 6 | 28 |  |
+| 132 | `P025` Conversions d'aires avec des nombres dé… | 6e | 4 | 6 | 20 |  |
+| 133 | `P026` Volume : le centimètre cube et le dénom… | 6e | 4 | 6 | 35 |  |
+| 134 | `P027` Convertir des durées : système décimal … | 6e | 4 | 6 | 18 |  |
+| 135 | `D006` Multiplier deux nombres décimaux | 6e | 5 | 6 | 22 |  |
+| 136 | `E006` Échelle d'un plan : premiers problèmes | 6e | 5 | 6 | 36 |  |
+| 137 | `G027` Somme des angles d'un triangle | 6e | 5 | 6 | 11 |  |
+| 138 | `G029` La médiatrice d'un segment | 6e | 5 | 6 | 13 |  |
+| 139 | `G030` Symétrie axiale : symétrique d'un point… | 6e | 5 | 6 | 21 |  |
+| 140 | `P023` Périmètre d'un disque | 6e | 5 | 6 | 34 |  |
+| 141 | `C011` Réduction au même dénominateur | 5e | 4 | 3 | 14 |  |
+| 142 | `C010` Comparer fractions de dénominateurs dif… | 5e | 4 | 3 | 13 |  |
+| 143 | `E034` Coefficient de proportionnalité | 5e | 5 | 6 | 48 |  |
+| 144 | `E007` Vitesse moyenne | 5e | 5 | 6 | 24 |  |
+| 145 | `E035` Reconnaître un tableau de proportionnal… | 5e | 5 | 6 | 47 |  |
+| 146 | `E023` Proportionnalité et graphique | 5e | 5 | 6 | 53 |  |
+| 147 | `E036` Calculer un pourcentage dans le cas gén… | 5e | 5 | 6 | 31 |  |
+| 148 | `E037` Pourcentages par linéarité : 1 %, 10 %,… | 5e | 5 | 6 | 29 |  |
+| 149 | `C007` Simplification de fraction | 4e | 5 | 3 | 11 |  |
+| 150 | `C008` Fraction irréductible | 3e | 6 | 3 | 9 |  |
 
 ## 2. Par chapitre
 
@@ -192,6 +222,33 @@ Le chapitre est l'unité qu'un exercice bilan validerait.
 | `B043` Comparaison multiplicative : fois… | Résoudre en une étape un problème de comparaison multiplicative : traduir… | 6 |
 | `B012` Calcul avec parenthèses | Effectuer un calcul contenant une paire de parenthèses, en commençant par… | 6 |
 | `B017` Estimer le résultat d'une opérati… | Donner un ordre de grandeur du résultat d'une addition, d'une soustractio… | 6 |
+
+### `MM-G-01` · Se repérer, se déplacer, reconnaître les solides (CP-CM1)
+
+7 compétences, 42 exercices, niveaux CP, CE1, CE2, CM1.
+
+| Compétence | Ce que l'élève doit savoir faire | Exos |
+|---|---|--:|
+| `G001` Se repérer : positions relatives … | Situer des objets les uns par rapport aux autres avec le vocabulaire gauc… | 6 |
+| `G005` Reconnaître et nommer les solides… | Reconnaître le cube, la boule, le cône, le cylindre et le pavé, y compris… | 6 |
+| `G002` Suivre et coder un déplacement su… | Exécuter sur un quadrillage une suite d'instructions (avancer, reculer, t… | 6 |
+| `G007` Cube, pavé, pyramide : faces, arê… | Reconnaître et nommer le cube, le pavé, la pyramide, le cône et la boule,… | 6 |
+| `G011` Reconnaître un patron de cube | Dire si un assemblage de carrés est un patron de cube, en argumentant sur… | 6 |
+| `G019` Solides en perspective ; le prism… | Identifier un solide (cube, pavé, pyramide, cylindre, cône, prisme droit)… | 6 |
+| `G020` Assemblages de cubes : dénombrer,… | Dénombrer les cubes d'un assemblage représenté en perspective, y compris … | 6 |
+
+### `MM-G-02` · Premières figures : formes, alignement, angle droit (CP-CE1)
+
+6 compétences, 36 exercices, niveaux CP, CE1.
+
+| Compétence | Ce que l'élève doit savoir faire | Exos |
+|---|---|--:|
+| `G003` Carré, rectangle, triangle, disqu… | Reconnaître et nommer le carré, le rectangle, le triangle et le disque, s… | 6 |
+| `G004` Points alignés et droite passant … | Dire si trois points sont alignés, à vue quand il n'y a aucun doute, sino… | 6 |
+| `G006` Compléter un carré ou un rectangl… | Sur papier quadrillé ou pointé, les côtés suivant les lignes du quadrilla… | 6 |
+| `G008` Point, droite, segment, milieu, c… | Employer à bon escient le vocabulaire point, droite, segment, milieu d'un… | 6 |
+| `G009` L'angle droit : le reconnaître, l… | Reconnaître un angle droit, à vue quand il n'y a aucun doute, sinon en li… | 6 |
+| `G010` Carré, rectangle, triangle rectan… | Nommer un carré, un rectangle, un triangle ou un triangle rectangle et ju… | 6 |
 
 ### `MM-P-01` · Premières mesures : longueurs, masses, monnaie (CP-CE1)
 
@@ -275,6 +332,32 @@ Le chapitre est l'unité qu'un exercice bilan validerait.
 | `D014` Convertir des mesures écrites ave… | Convertir une longueur, une masse ou une contenance écrite avec une virgu… | 6 |
 | `D023` Calcul mental : multiplier et div… | Multiplier ou diviser mentalement un décimal par 10, 100 ou 1 000 en rais… | 6 |
 
+### `MM-G-03` · Figures usuelles et programmes de construction (CE2-CM2)
+
+6 compétences, 36 exercices, niveaux CE2, CM1, CM2.
+
+| Compétence | Ce que l'élève doit savoir faire | Exos |
+|---|---|--:|
+| `G012` Losange, quadrilatère, polygones … | Employer polygone, triangle, quadrilatère, pentagone, hexagone et diagona… | 6 |
+| `G016` Droites perpendiculaires et droit… | Reconnaître deux droites perpendiculaires (elles se coupent en formant un… | 6 |
+| `G017` Triangles particuliers : rectangl… | Reconnaître et nommer un triangle rectangle, isocèle ou équilatéral en se… | 6 |
+| `G018` Carré, rectangle, losange : défin… | Reconnaître et nommer un carré, un rectangle ou un losange en se référant… | 6 |
+| `G021` Lire un programme de construction | Lire un programme de construction (« Trace un rectangle ABCD tel que AB =… | 6 |
+| `G023` Trapèze, pentagone, hexagone : re… | Reconnaître et nommer un trapèze (quadrilatère ayant deux côtés opposés p… | 6 |
+
+### `MM-G-05` · Cercle, distances, médiatrice et symétrie (CE2-6e)
+
+6 compétences, 36 exercices, niveaux CE2, CM2, 6e.
+
+| Compétence | Ce que l'élève doit savoir faire | Exos |
+|---|---|--:|
+| `G013` Le cercle : centre, rayon et diam… | Reconnaître sur un cercle son centre, un rayon et un diamètre ; savoir qu… | 6 |
+| `G014` Axes de symétrie ; compléter une … | Dire si une figure (lettre majuscule, panneau, cœur, rectangle) possède u… | 6 |
+| `G024` Symétrique d'une figure sur quadr… | Sur quadrillage, trouver le symétrique d'une figure donnée (qui ne touche… | 6 |
+| `G028` Distances : milieu d'un segment, … | Connaître et utiliser la distance entre deux points, la définition du mil… | 6 |
+| `G029` La médiatrice d'un segment | Connaître la définition de la médiatrice d'un segment (la droite perpendi… | 6 |
+| `G030` Symétrie axiale : symétrique d'un… | Connaître la définition du symétrique d'un point par rapport à une droite… | 6 |
+
 ### `MM-P-03` · Unités et conversions : longueurs, masses, contenances (CE2-6e)
 
 5 compétences, 30 exercices, niveaux CE2, CM1, 6e.
@@ -357,6 +440,15 @@ Le chapitre est l'unité qu'un exercice bilan validerait.
 | `E028` Résoudre par linéarité additive | Résoudre un problème de proportionnalité en ajoutant ou en soustrayant de… | 6 |
 | `E029` Problèmes de proportionnalité en … | Enchaîner plusieurs raisonnements de linéarité quand on ne passe pas d'un… | 6 |
 
+### `MM-G-04` · Comparer des angles, le degré (CM1-CM2)
+
+2 compétences, 12 exercices, niveaux CM1, CM2.
+
+| Compétence | Ce que l'élève doit savoir faire | Exos |
+|---|---|--:|
+| `G015` Comparer des angles | Nommer un angle par son sommet et deux points de ses côtés (l'angle ABC a… | 6 |
+| `G022` Le degré : l'angle droit mesure 9… | Savoir qu'un angle droit mesure 90° et en déduire, sans rapporteur, la me… | 6 |
+
 ### `MM-P-05` · Aires et volumes (CM1-6e)
 
 6 compétences, 37 exercices, niveaux CM1, CM2, 6e.
@@ -401,6 +493,16 @@ Le chapitre est l'unité qu'un exercice bilan validerait.
 | `E033` Exprimer une proportion en pource… | Calculer la proportion d'une partie dans un tout (12 filles sur 25 élèves… | 6 |
 | `E036` Calculer un pourcentage dans le c… | Exprimer en pourcentage la part d'un effectif dans un total quelconque (6… | 6 |
 | `E037` Pourcentages par linéarité : 1 %,… | Calculer mentalement 1 %, 10 % ou 50 % d'un nombre, et en déduire d'autre… | 6 |
+
+### `MM-G-06` · Mesurer et calculer des angles (6e)
+
+3 compétences, 18 exercices, niveaux 6e.
+
+| Compétence | Ce que l'élève doit savoir faire | Exos |
+|---|---|--:|
+| `G025` Mesurer un angle avec un rapporte… | Lire la mesure en degrés d'un angle sur un rapporteur posé correctement (… | 6 |
+| `G026` Angles plat, adjacents, supplémen… | Connaître l'angle nul, plat (180°) et plein (360°), reconnaître des angle… | 6 |
+| `G027` Somme des angles d'un triangle | Savoir que la somme des mesures des angles d'un triangle est 180° et l'ut… | 6 |
 
 ### `MM-C-03` · Operer sur les fractions (5e-3e)
 
@@ -483,6 +585,58 @@ Le chapitre est l'unité qu'un exercice bilan validerait.
 | E | vrai | Yanis dit : « 65 - 23 et 23 - 65 donnent le même résultat. » A-t-il raison ? | faux |
 | M | nume | Au marché, Paul avait 67 œufs. Il lui en reste 41. Combien d'œufs a-t-il vendus ? | 26 |
 | M | nume | Complète l'égalité : … - 32 = 45 | 77 |
+
+**`G001` · Se repérer : positions relatives et plan** — diff. 1, seuil 3/4  
+*Situer des objets les uns par rapport aux autres avec le vocabulaire gauche, droite, sur, sous, entre, devant, derrière, au-dessus, en dessous, et retrouver un objet dont la position est indiquée sur un plan. Gauche et droite sont toujours celles du plan vu par l'élève, jamais celles d'un personnage qui lui fait face. Figure nécessaire : un plan vu de dessus (classe, cour), avec des objets étiquetés.*
+> « Connaitre et utiliser le vocabulaire lié aux positions relatives. »
+
+| | Type | Demandé | Réponse |
+|---|---|---|---|
+| D | qcm | Voici le plan de la classe. Quel objet est entre le tableau et l'armoire ? | b) La porte |
+| D | vrai | Vrai ou faux : sur le plan, l'aquarium est à droite du tapis. | vrai |
+| E | text | Sur le plan, quel élève est assis juste à droite de Tom ? | Ali |
+| E | qcm | Le ballon est caché entre l'arbre et le banc. Dans quelle case est-il ? | c) La case C |
+| M | qcm | Quel objet est à droite de la porte et à gauche de l'armoire ? | a) Le bureau |
+| M | text | Les élèves regardent le tableau. Qui est assis juste derrière Léa ? | Noé |
+
+**`G003` · Carré, rectangle, triangle, disque : reconnaître et nommer** — diff. 1, seuil 3/4  
+*Reconnaître et nommer le carré, le rectangle, le triangle et le disque, seuls ou dans un assemblage, et donner le nombre de sommets et de côtés d'un polygone. Au CP la reconnaissance est perceptive : le carré n'est pas présenté comme un rectangle particulier. Figure nécessaire : formes planes repérées par des lettres, isolées ou assemblées (type tangram), dans des positions variées.*
+> « Nommer le disque, le carré, le rectangle et le triangle. »
+
+| | Type | Demandé | Réponse |
+|---|---|---|---|
+| D | qcm | Quelle forme est un carré ? | b) La forme B |
+| D | nume | Combien de côtés a cette forme ? | 6 |
+| E | text | Les pièces A et B sont collées. Quelle forme font-elles ensemble ? | rectangle |
+| E | nume | Combien de triangles vois-tu sur la figure ? | 3 |
+| M | qcm | Quelles formes sont des carrés ? | c) Les formes 1 et 2 |
+| M | nume | Combien de sommets du triangle colorié sont des sommets du carré ? | 2 |
+
+**`G004` · Points alignés et droite passant par deux points** — diff. 1, seuil 3/4  
+*Dire si trois points sont alignés, à vue quand il n'y a aucun doute, sinon en lisant une règle déjà posée sur la figure, et reconnaître la droite qui passe par deux points donnés (horizontale, verticale ou oblique). Le geste (poser la règle, tracer) ne s'évalue pas à l'écran. Figure nécessaire : points marqués d'une croix et d'une lettre, droites tracées, règle posée en option.*
+> « Repérer visuellement des alignements. »
+
+| | Type | Demandé | Réponse |
+|---|---|---|---|
+| D | vrai | Lou dit que les points R, S et T sont alignés. A-t-elle raison ? | vrai |
+| D | qcm | Quel point est aligné avec P et Q ? | b) Le point B |
+| E | qcm | Quelle droite passe par le point P et par le point Q ? | a) La droite 1 |
+| E | vrai | Léo veut tracer la droite qui passe par A et par B. A-t-il réussi ? | faux |
+| M | nume | Combien d'autres points sont alignés avec A et B ? | 3 |
+| M | text | Jade voulait aligner quatre points. Elle en a mal placé un. Lequel ? | M |
+
+**`G005` · Reconnaître et nommer les solides usuels** — diff. 1, seuil 3/4  
+*Reconnaître le cube, la boule, le cône, le cylindre et le pavé, y compris dans des objets familiers (boîte à chaussures, boîte de conserve, balle), nommer le cube, le pavé et la boule, et décrire un cube ou un pavé par ses faces : combien il en a, et si ce sont des carrés ou des rectangles. Au CP le cube n'est pas considéré comme un pavé. La manipulation d'objets réels, qui fonde l'attendu, ne se fait pas à l'écran. Figure nécessaire : solides dessinés en perspective, repérés par des lettres.*
+> « Reconnaitre les solides usuels suivants : cube, boule, cône, cylindre, pavé. »
+
+| | Type | Demandé | Réponse |
+|---|---|---|---|
+| D | qcm | Quel solide est un cube ? | b) B |
+| D | nume | Combien de faces a ce solide ? | 6 |
+| E | vrai | Lina dit : « Ce solide est un cube. » A-t-elle raison ? | faux |
+| E | qcm | Une boîte de conserve a la forme d'un de ces solides. Lequel ? | c) C |
+| M | text | Comment s'appelle le solide B ? | pavé |
+| M | vrai | Noé dit : « La face coloriée est un carré. » A-t-il raison ? | vrai |
 
 **`P001` · Comparer et mesurer des longueurs avec une règle graduée** — diff. 1, seuil 3/4  
 *Dire lequel de deux objets ou de deux segments est le plus long, par superposition, report d'un étalon ou mesure. Mesurer la longueur d'un segment en centimètres entiers avec une règle graduée, en plaçant le zéro à une extrémité. Figure nécessaire : le segment et la règle doivent être dessinés.*
@@ -587,6 +741,32 @@ Le chapitre est l'unité qu'un exercice bilan validerait.
 | E | vrai | 19 cahiers. Le maître en distribue 5, puis 3. Il en reste 11. | vrai |
 | M | nume | Sur l'étang, 3 canards s'envolent, 4 arrivent : ils sont 18. Combien étaient-ils avant ? | 17 |
 | M | qcm | Max a 14 euros, en gagne 5, en dépense et finit avec 12. Combien a-t-il dépensé ? | b) 7 |
+
+**`G002` · Suivre et coder un déplacement sur un quadrillage** — diff. 2, seuil 3/4  
+*Exécuter sur un quadrillage une suite d'instructions (avancer, reculer, tourner à droite, tourner à gauche d'un quart de tour) et dire sur quelle case arrive le robot ; choisir, parmi plusieurs codes, celui qui mène d'une case à une autre. Au plus dix instructions, dont deux virages. La difficulté propre est l'orientation : tourner à droite dépend de la direction dans laquelle le robot regarde. Figure nécessaire : quadrillage avec le robot et sa direction (flèche), des cases repérées par des lettres, éventuellement le chemin tracé.*
+> « L'élève comprend et utilise les instructions suivantes : avancer, reculer, tourner à droite, tourner à gauche, monter, descendre. »
+
+| | Type | Demandé | Réponse |
+|---|---|---|---|
+| D | text | Le robot avance de 4 cases, tourne à gauche, avance de 2 cases. Sur quelle lettre arrive-t-… | C |
+| D | qcm | Le robot recule de 3 cases. Sur quelle lettre arrive-t-il ? | b) La lettre B |
+| E | text | Le robot avance d'une case, tourne à droite, avance de 4 cases. Sur quelle lettre arrive-t-… | A |
+| E | qcm | Quel programme fait suivre au robot le chemin tracé ? | a) Avance de 4 cases, tourne à ga… |
+| M | qcm | Quel programme mène le robot sur la lettre B ? | c) Avance de 2 cases, tourne à ga… |
+| M | text | Le robot avance de 3 cases, tourne à droite, avance de 2 cases, tourne à droite, recule d'u… | D |
+
+**`G006` · Compléter un carré ou un rectangle sur quadrillage** — diff. 2, seuil 3/4  
+*Sur papier quadrillé ou pointé, les côtés suivant les lignes du quadrillage : trouver le quatrième sommet d'un rectangle dont deux côtés consécutifs sont tracés, les sommets manquants d'un carré dont un côté est tracé, ou la figure correctement complétée parmi plusieurs. Le tracé lui-même ne s'évalue pas à l'écran. Figure nécessaire : quadrillage ou réseau pointé, côtés déjà tracés, sommets candidats repérés par des lettres.*
+> « Construire un carré, un rectangle, un triangle ou un assemblage de ces figures sur du papier quadrillé ou pointé. »
+
+| | Type | Demandé | Réponse |
+|---|---|---|---|
+| D | text | Pour finir le rectangle, quel point faut-il relier à A et à C ? | L |
+| D | qcm | MN est un côté d'un carré. Quels sont ses deux autres sommets ? | c) R et S |
+| E | vrai | Nina devait finir un carré. Elle a tracé les côtés bleus. A-t-elle réussi ? | faux |
+| E | nume | Il manque deux côtés au rectangle. Combien de carreaux mesure celui qui part de C ? | 5 |
+| M | qcm | Le côté noir était déjà tracé. Quelle figure est un carré bien fini ? | a) La figure 1 |
+| M | nume | AB est un côté d'un carré. Combien des points C, D, E, F peuvent être ses sommets ? | 2 |
 
 **`P003` · La monnaie en euros entiers : valeur, comparaison, rendu** — diff. 2, seuil 3/4  
 *Déterminer la valeur en euros d'un ensemble de pièces et de billets décrit par l'énoncé, comparer deux ensembles selon leur valeur (et non selon le nombre de pièces), constituer une somme donnée, payer et rendre la monnaie. Montants entiers en euros, inférieurs ou égaux à 100 €, sans centimes ni virgule.*
@@ -789,6 +969,58 @@ Le chapitre est l'unité qu'un exercice bilan validerait.
 | M | qcm | Range ces prix du moins cher au plus cher : 2,50 € ; 195 centimes ; 2,05 € ; 2 € et 30 cent… | c) 195 centimes ; 2,05 € ; 2 € et… |
 | M | nume | Max a 2 € et 135 centimes. Écris sa somme en euros, avec une virgule. | 3.35 |
 
+**`G007` · Cube, pavé, pyramide : faces, arêtes et sommets** — diff. 2, seuil 3/4  
+*Reconnaître et nommer le cube, le pavé, la pyramide, le cône et la boule, et décrire un cube, un pavé ou une pyramide à base carrée avec les mots face, arête et sommet : nombre et nature des faces (carrés, rectangles, triangles), nombre d'arêtes et de sommets. Les faits se retiennent (un cube a 6 faces, 12 arêtes, 8 sommets) mais se comptent d'abord sur le solide, ce que l'application remplace par un dessin : la manipulation ne se fait pas à l'écran. Figure nécessaire : solide en perspective cavalière, arêtes cachées en pointillés, sommets et faces marquables.*
+> « Décrire un cube, un pavé ou une pyramide en utilisant les termes « face », « sommet » et « arête ». »
+
+| | Type | Demandé | Réponse |
+|---|---|---|---|
+| D | nume | Combien de sommets a ce solide ? | 5 |
+| D | qcm | Quel solide est une pyramide à base carrée ? | c) C |
+| E | vrai | Jade dit : « Toutes les faces de ce solide sont des triangles. » A-t-elle raison ? | faux |
+| E | qcm | Combien d'arêtes a ce solide ? | a) 12 |
+| M | nume | Ce solide n'est ni un cube, ni un pavé, ni une pyramide. Combien d'arêtes a-t-il ? | 9 |
+| M | vrai | Mia dit : « Ces deux solides ont le même nombre d'arêtes. » A-t-elle raison ? | vrai |
+
+**`G008` · Point, droite, segment, milieu, cercle et centre** — diff. 2, seuil 3/4  
+*Employer à bon escient le vocabulaire point, droite, segment, milieu d'un segment, cercle, centre : distinguer un segment (deux extrémités) d'une droite (illimitée), reconnaître le milieu d'un segment (le point qui le partage en deux longueurs égales, trouvé par pliage en classe), reconnaître le cercle de centre donné passant par un point donné. Sans définition formelle. Figure nécessaire : points, segments et droites lettrés, points candidats au milieu, règle graduée posée en option, cercles avec leur centre.*
+> « point, droite, segment, milieu d'un segment »
+
+| | Type | Demandé | Réponse |
+|---|---|---|---|
+| D | qcm | Quel tracé est une droite ? | b) Le tracé 2 |
+| D | text | Quel point est le milieu du segment AB ? | F |
+| E | nume | Combien de points marqués sont sur le cercle de centre O ? | 3 |
+| E | qcm | Quel cercle a pour centre O et passe par le point P ? | a) Le cercle 1 |
+| M | vrai | Ali dit que le point K est sur la droite qui passe par A et B. A-t-il raison ? | vrai |
+| M | qcm | Le point M est le milieu du segment KL, mais L a été effacé. Où était L ? | c) Au point C |
+
+**`G009` · L'angle droit : le reconnaître, le coder ; aigu ou obtus** — diff. 2, seuil 3/4  
+*Reconnaître un angle droit, à vue quand il n'y a aucun doute, sinon en lisant une équerre posée sur la figure ; dire qu'un angle qui n'est pas droit est aigu (plus petit) ou obtus (plus grand) ; reconnaître et placer le code de l'angle droit. Les angles sont ceux des polygones ou de deux segments issus d'un même point. Figure nécessaire : angles et polygones lettrés, codage de l'angle droit, équerre posée en option.*
+> « Utiliser la règle pour vérifier des alignements et l'équerre pour vérifier qu'un angle est droit. »
+
+| | Type | Demandé | Réponse |
+|---|---|---|---|
+| D | text | Un des angles du triangle ABC est un angle droit. Quel est son sommet ? | B |
+| D | qcm | Quel angle est aigu ? | b) L'angle 2 |
+| E | nume | Combien d'angles droits a cette figure ? | 3 |
+| E | qcm | Comment est l'angle de sommet T du triangle RST ? | c) Obtus |
+| M | vrai | Lou dit : « Cette figure n'a aucun angle droit. » A-t-elle raison ? | faux |
+| M | qcm | Quel segment fait un angle droit avec le segment MN ? | a) Le segment MP |
+
+**`G010` · Carré, rectangle, triangle rectangle : propriétés** — diff. 2, seuil 3/4  
+*Nommer un carré, un rectangle, un triangle ou un triangle rectangle et justifier par ses propriétés : un rectangle a quatre sommets, quatre côtés, quatre angles droits et des côtés opposés de même longueur ; un carré a en plus ses quatre côtés de même longueur ; un triangle rectangle a un angle droit. Dire qu'une figure n'est pas un rectangle en citant la propriété qui manque. Figure nécessaire : polygones sur quadrillage ou avec longueurs écrites, codage des angles droits.*
+> « Connaitre les propriétés des angles et des égalités de longueur pour les carrés et les rectangles. »
+
+| | Type | Demandé | Réponse |
+|---|---|---|---|
+| D | nume | ABCD est un rectangle. Combien mesure le côté CD ? | 7 |
+| D | qcm | Cette figure n'est pas un rectangle. Quelle propriété du rectangle lui manque ? | b) Avoir quatre angles droits |
+| E | vrai | Mia dit : « ABCD est un carré. » A-t-elle raison ? | faux |
+| E | text | Écris le nom de la figure EFGH. | rectangle |
+| M | nume | Combien de ces figures sont des rectangles ? | 2 |
+| M | qcm | Le segment AC partage la figure ABCD en deux triangles. Que peut-on dire de ces triangles ? | c) Ce sont deux triangles rectang… |
+
 **`P005` · Longueurs : mètre, centimètre, kilomètre** — diff. 2, seuil 3/4  
 *Connaître les unités m, cm et km et les relations 1 m = 100 cm et 1 km = 1 000 m, écrire une longueur donnée en deux unités dans une seule (1 m et 46 cm = 146 cm), avec une partie en centimètres toujours inférieure à 100, comparer des longueurs et choisir l'unité adaptée (cm pour un crayon, m pour une salle, km pour une distance entre deux villes). Nombres entiers jusqu'à 1 000, sans virgule.*
 > « L'élève sait que 1 m = 100 cm et 1 km = 1 000 m. »
@@ -909,6 +1141,45 @@ Le chapitre est l'unité qu'un exercice bilan validerait.
 | E | text | Une bande-unité va de 0 à 1. Elle est partagée en cinquièmes, c'est-à-dire en 5 intervalles… | 4/5 |
 | M | vrai | Sur une même bande-unité graduée, 1/2 et 3/6 se placent exactement au même endroit. | vrai |
 
+**`G012` · Losange, quadrilatère, polygones ; lire une figure codée** — diff. 2, seuil 3/4  
+*Employer polygone, triangle, quadrilatère, pentagone, hexagone et diagonale ; savoir qu'un quadrilatère a quatre côtés et quatre sommets et qu'un losange a ses quatre côtés de même longueur ; nommer un carré, un rectangle, un losange, un triangle ou un triangle rectangle en lisant son codage (angles droits, segments de même longueur) et justifier qu'une figure n'est pas d'une nature donnée par la propriété qui manque. Figure nécessaire : polygones lettrés avec codage des angles droits et des longueurs égales, diagonales en option.*
+> « Reconnaitre, nommer et décrire le carré, le rectangle, le triangle, le triangle rectangle et le losange. »
+
+| | Type | Demandé | Réponse |
+|---|---|---|---|
+| D | text | Observe les codages de la figure. Quel est le nom du quadrilatère ABCD ? | losange |
+| D | vrai | Jade dit : « Cette figure est un quadrilatère. » A-t-elle raison ? | faux |
+| E | vrai | Tom dit : « ABCD est un carré. » Tom a-t-il raison ? | vrai |
+| E | qcm | Le quadrilatère EFGH est-il un losange ? Lis bien les codages. | c) Non, car ses quatre côtés n'on… |
+| M | nume | Combien de ces figures sont des quadrilatères ? | 3 |
+| M | qcm | Trois segments sont numérotés. Lequel est une diagonale du quadrilatère ? | a) Le segment 2 |
+
+**`G013` · Le cercle : centre, rayon et diamètre** — diff. 2, seuil 3/4  
+*Reconnaître sur un cercle son centre, un rayon et un diamètre ; savoir que le diamètre mesure deux fois le rayon ; reconnaître le cercle de rayon donné. Nombres entiers de centimètres. Figure nécessaire : cercle avec son centre, rayons et diamètres tracés et lettrés, longueurs écrites en option.*
+> « disque, cercle, centre, rayon, diamètre »
+
+| | Type | Demandé | Réponse |
+|---|---|---|---|
+| D | qcm | Le point O est le centre du cercle. Lequel de ces segments est un diamètre du cercle ? | c) Le segment [ST] |
+| D | nume | Le point O est le centre du cercle. Combien de centimètres mesure le segment [BC] ? | 6 |
+| E | nume | Le point O est le centre du cercle. Combien de centimètres mesure le segment [OC] ? | 5 |
+| E | vrai | Le point O est le centre du cercle. Tom dit : « Le segment [BC] est deux fois plus long que… | vrai |
+| M | qcm | Les trois cercles ont le même rayon. Chaque cercle touche le suivant. Combien mesure le seg… | b) 12 cm |
+| M | nume | Les deux cercles ont un diamètre de 6 cm. Chacun passe par le centre de l'autre. Combien de… | 9 |
+
+**`G014` · Axes de symétrie ; compléter une figure symétrique** — diff. 2, seuil 3/4  
+*Dire si une figure (lettre majuscule, panneau, cœur, rectangle) possède un ou plusieurs axes de symétrie, ou si une droite tracée en est un ; compléter sur quadrillage ou réseau pointé une figure pour la rendre symétrique par rapport à un axe vertical ou horizontal, en désignant les cases ou les points à ajouter. Le pliage et le calque ne se font pas à l'écran. Figure nécessaire : figure avec droite candidate en pointillés ; quadrillage avec axe et demi-figure, cases ou points candidats lettrés.*
+> « Reconnaitre si une figure possède un ou plusieurs axes de symétrie en utilisant des pliages ou du papier calque. »
+
+| | Type | Demandé | Réponse |
+|---|---|---|---|
+| D | qcm | Quelle droite en pointillés est un axe de symétrie de la figure ? | a) La droite 1 |
+| D | qcm | Quelle case faut-il colorier pour que la figure soit symétrique par rapport à l'axe ? | b) La case B |
+| E | vrai | Lina a colorié les cases jaunes pour que la figure soit symétrique par rapport à l'axe. A-t… | faux |
+| E | text | Paul a colorié les cases jaunes pour rendre la figure symétrique par rapport à l'axe. Une c… | C |
+| M | qcm | Combien d'axes de symétrie a cette figure ? | c) 2 axes |
+| M | nume | Combien de cases faut-il colorier en plus, au minimum, pour que la figure soit symétrique p… | 5 |
+
 **`P010` · Périmètre d'un polygone : longueur du contour** — diff. 2, seuil 3/4  
 *Savoir que le périmètre d'une figure plane est la longueur de son contour, et le calculer en additionnant les longueurs des côtés données par l'énoncé (triangle, quadrilatère, polygone). Pour le carré et le rectangle, sans formule : l'élève sait qu'un côté suffit pour le carré et deux pour le rectangle. Côtés entiers, dans une même unité.*
 > « Savoir ce qu'est le périmètre d'une figure plane. »
@@ -1009,6 +1280,19 @@ Le chapitre est l'unité qu'un exercice bilan validerait.
 | E | vrai | Nina doit payer 24,60 €, puis 15 €. Elle pose l'addition et trouve 24,75 €. A-t-elle raison… | faux |
 | M | nume | Paul achète des fraises à 3,75 € et du pain à 1,40 €. Il paie avec un billet de 10 €. Combi… | 4.85 |
 | M | qcm | Théo pose 32{,}40 - 8{,}75 (en euros) et trouve 36,35 €. Quelle est son erreur ? | b) Dans chaque colonne, il a enle… |
+
+**`G011` · Reconnaître un patron de cube** — diff. 3, seuil 3/4  
+*Dire si un assemblage de carrés est un patron de cube, en argumentant sur le nombre de faces (six), leur nature (des carrés de même taille) et leur position (deux faces ne doivent pas se superposer au pliage). Le pliage effectif, qui permet en classe de vérifier, ne se fait pas à l'écran. Figure nécessaire : assemblages de carrés sur quadrillage, repérés par des lettres ; une face peut être marquée pour demander la face opposée.*
+> « Construire un cube à partir d'un patron. »
+
+| | Type | Demandé | Réponse |
+|---|---|---|---|
+| D | nume | On veut fabriquer un cube avec cet assemblage de carrés. Combien de carrés pareils faut-il … | 2 |
+| D | qcm | Lequel de ces assemblages est un patron de cube ? | b) L'assemblage B |
+| E | qcm | Un seul de ces assemblages n'est pas un patron de cube. Lequel ? | c) L'assemblage C |
+| E | nume | On plie ce patron pour fabriquer un cube. Quel numéro est sur la face opposée à la face 1, … | 3 |
+| M | vrai | Hugo dit : « Cet assemblage est un patron de cube. » A-t-il raison ? | faux |
+| M | qcm | Il manque un carré à cet assemblage pour avoir un patron de cube. Sur quelle case lettrée f… | c) La case C |
 
 **`P009` · Longueurs : millimètre et décimètre, conversions** — diff. 3, seuil 3/4  
 *Connaître les unités mm, cm, dm, m et km et leurs relations (1 cm = 10 mm, 1 m = 1 000 mm, 1 m = 10 dm), et convertir dans les deux sens en s'appuyant sur ces relations, sans tableau de conversion, notamment pour calculer avec des longueurs exprimées dans des unités différentes (3 cm + 4 mm = 34 mm ; 215 cm = 2 m et 15 cm). Nombres entiers jusqu'à 10 000, sans virgule.*
@@ -1355,6 +1639,97 @@ Le chapitre est l'unité qu'un exercice bilan validerait.
 | M | qcm | Un boulanger fait 14 pains avec 6 kg de farine. Combien de farine lui faut-il pour faire 42… | c) 18 kg |
 | M | nume | Un club de foot paie 492 € pour 36 maillots identiques. Combien paierait-il pour 9 de ces m… | 123 |
 
+**`G015` · Comparer des angles** — diff. 3, seuil 3/4  
+*Nommer un angle par son sommet et deux points de ses côtés (l'angle ABC a pour sommet B), et comparer des angles saillants : lequel est le plus grand, sans mesure, par superposition ou par comparaison à l'angle droit. Piège à travailler : la longueur des côtés dessinés ne dit rien de la grandeur de l'angle. Figure nécessaire : angles lettrés, côtés de longueurs différentes, angles superposés ou de même sommet, arc de marquage.*
+> « Comparer des angles »
+
+| | Type | Demandé | Réponse |
+|---|---|---|---|
+| D | text | Un angle est marqué d'un arc sur la figure. Écris son nom avec trois lettres. | BCD |
+| D | qcm | Lequel est le plus grand : l'angle MNP ou l'angle RST ? | a) L'angle RST |
+| E | text | Range les angles 1, 2 et 3 du plus petit au plus grand. Écris leurs numéros séparés par des… | 2, 1, 3 |
+| E | vrai | Tom dit : « L'angle AOC est plus grand que l'angle AOB. » Tom a-t-il raison ? | faux |
+| M | qcm | Quatre segments partent du point O. Lequel est le plus grand : l'angle POR ou l'angle QOS ? | b) L'angle QOS |
+| M | vrai | Inès dit : « Le plus grand angle de ce triangle est l'angle KLM. » Inès a-t-elle raison ? | vrai |
+
+**`G016` · Droites perpendiculaires et droites parallèles** — diff. 3, seuil 3/4  
+*Reconnaître deux droites perpendiculaires (elles se coupent en formant un angle droit) et deux droites parallèles (elles ne se coupent pas, même prolongées), sur une figure, avec ou sans codage, sur quadrillage ou papier uni ; distinguer les deux, et repérer la perpendiculaire ou la parallèle à une droite passant par un point donné. Le tracé à l'équerre ne s'évalue pas à l'écran. Figure nécessaire : plusieurs droites nommées, codage de l'angle droit, équerre posée en option, quadrillage ou fond blanc.*
+> « Reconnaître et utiliser la notion de perpendicularité »
+
+| | Type | Demandé | Réponse |
+|---|---|---|---|
+| D | qcm | Quelle droite est perpendiculaire à la droite (d) ? | c) La droite (e) |
+| D | vrai | Lucas dit : « Les droites (d) et (e) sont parallèles. » A-t-il raison ? | vrai |
+| E | qcm | La droite (d) est penchée. Quelle droite lui est perpendiculaire ? | b) La droite (e) |
+| E | nume | Combien de droites de la figure sont perpendiculaires à la droite (d) ? | 2 |
+| M | vrai | Zoé dit : « Les droites (d) et (e) sont parallèles. » A-t-elle raison ? | faux |
+| M | qcm | Quelle droite passe par le point P et est perpendiculaire à la droite (d) ? | a) La droite (e) |
+
+**`G017` · Triangles particuliers : rectangle, isocèle, équilatéral** — diff. 3, seuil 3/4  
+*Reconnaître et nommer un triangle rectangle, isocèle ou équilatéral en se référant à sa définition (un angle droit ; deux côtés de même longueur ; trois côtés de même longueur), à partir des longueurs données ou du codage, et connaître les égalités d'angles qui en découlent (deux angles égaux dans le triangle isocèle, trois dans l'équilatéral). Figure nécessaire : triangles lettrés avec codage des longueurs, des angles droits et des angles égaux, longueurs écrites en option.*
+> « Reconnaître et nommer les figures suivantes en faisant référence à leur définition : triangle, triangle rectangle, triangle isocèle, triangle équilat… »
+
+| | Type | Demandé | Réponse |
+|---|---|---|---|
+| D | text | Lis le codage de la figure. Quel est le nom précis du triangle ABC ? | isocèle |
+| D | qcm | Lis les codages. Quel triangle est rectangle ? | c) Le triangle 2 |
+| E | nume | Lis les codages et les longueurs écrites. Combien mesure le côté KM ? | 5 |
+| E | qcm | Lis les longueurs écrites sur le triangle RST. Que peut-on dire de ses trois angles ? | b) Les trois angles ont la même g… |
+| M | text | L'angle EDF est marqué d'un arc. Quel autre angle du triangle DEF a la même grandeur ? | DFE |
+| M | vrai | Nina dit : « Le triangle GHI est rectangle, mais il n'est pas isocèle. » A-t-elle raison ? | faux |
+
+**`G018` · Carré, rectangle, losange : définitions et propriétés** — diff. 3, seuil 3/4  
+*Reconnaître et nommer un carré, un rectangle ou un losange en se référant à sa définition et connaître leurs propriétés : côtés opposés parallèles, égalités de longueurs, angles droits. En tirer qu'un carré est à la fois un rectangle et un losange. Contraste avec G012 : on ne décrit plus seulement la figure, on raisonne sur la définition. Figure nécessaire : quadrilatères lettrés avec codage, sur quadrillage ou fond blanc, éventuellement tournés.*
+> « Reconnaître et nommer les figures suivantes en faisant référence à leur définition : triangle, triangle rectangle, triangle isocèle, triangle équilat… »
+
+| | Type | Demandé | Réponse |
+|---|---|---|---|
+| D | text | Lis les codages. Quel est le nom précis du quadrilatère ABCD ? | rectangle |
+| D | vrai | Léo affirme : « Dans le quadrilatère ABCD, les côtés AB et DC sont parallèles. » A-t-il rai… | vrai |
+| E | qcm | Que manque-t-il au quadrilatère ABCD pour être un carré ? | c) Quatre angles droits |
+| E | qcm | Laquelle de ces figures n'est pas un losange ? | b) La figure 3 |
+| M | nume | Lis les codages. Combien de ces figures sont des rectangles ? | 2 |
+| M | text | Lis les codages et les longueurs. Quel est le nom le plus précis du quadrilatère EFGH ? | carré |
+
+**`G019` · Solides en perspective ; le prisme droit** — diff. 3, seuil 3/4  
+*Identifier un solide (cube, pavé, pyramide, cylindre, cône, prisme droit) à partir d'une représentation en perspective, en sachant que certaines faces, arêtes et sommets sont cachés et que les arêtes cachées sont en pointillés ; connaître la nature des faces d'un prisme droit (deux bases polygonales identiques, des faces latérales rectangulaires) et d'une pyramide. Figure nécessaire : solides en perspective cavalière, arêtes cachées en pointillés, faces et sommets marquables.*
+> « Nommer un cube, une boule, un pavé, un cône, une pyramide, un cylindre et un prisme droit »
+
+| | Type | Demandé | Réponse |
+|---|---|---|---|
+| D | qcm | Quel solide est un prisme droit ? | b) B |
+| D | nume | Combien de faces a ce solide ? | 5 |
+| E | text | Quel est le nom de ce solide ? | prisme droit |
+| E | vrai | Noé dit : « Ce solide est une pyramide. » A-t-il raison ? | faux |
+| M | nume | Combien d'arêtes a ce solide ? | 18 |
+| M | qcm | Lequel de ces solides a exactement 6 sommets ? | c) C |
+
+**`G020` · Assemblages de cubes : dénombrer, cubes cachés** — diff. 3, seuil 3/4  
+*Dénombrer les cubes d'un assemblage représenté en perspective, y compris ceux qu'on ne voit pas, en raisonnant par étages et par rangées ; dire combien il en manque pour obtenir un pavé. Prépare le volume par dénombrement (P026, 6e). Figure nécessaire : assemblage de cubes en perspective, par étages, cubes visibles seulement.*
+> « Résoudre des problèmes portant sur des assemblages de cubes »
+
+| | Type | Demandé | Réponse |
+|---|---|---|---|
+| D | nume | Cet assemblage de cubes forme un pavé. Aucun cube ne manque à l'intérieur. Combien de cubes… | 6 |
+| D | qcm | Aucun cube ne manque à l'intérieur de cet assemblage. Combien de cubes compte-t-il en tout ? | c) 12 |
+| E | nume | Cet assemblage est posé sur une table. Aucun cube ne manque à l'intérieur. Combien de cubes… | 20 |
+| E | vrai | Aucun cube ne manque à l'intérieur de cet assemblage. Léo dit : « Il compte 7 cubes. » Léo … | faux |
+| M | nume | Aucun cube ne manque à l'intérieur de cet assemblage. On veut ajouter des cubes, sans en en… | 12 |
+| M | qcm | Cet assemblage est un grand cube. Aucun petit cube ne manque à l'intérieur. Combien de peti… | a) 8 |
+
+**`G021` · Lire un programme de construction** — diff. 3, seuil 3/4  
+*Lire un programme de construction (« Trace un rectangle ABCD tel que AB = 5 cm et BC = 3 cm. Trace le cercle de centre A qui passe par le milieu du côté [AB]. ») et dire quelle figure il produit parmi plusieurs, repérer l'étape mal exécutée dans un tracé, ou compléter une étape manquante. Les consignes nomment toujours l'objet (« le segment [AB] »), les notations n'étant pas exigibles au cours moyen. Construire soi-même ne s'évalue pas à l'écran. Figure nécessaire : figures composées (segments, droites, polygones, cercles) lettrées, plusieurs candidates numérotées sur la même image, dont certaines fautives.*
+> « Construire une figure géométrique composée de segments, de droites, de polygones usuels et de cercles. »
+
+| | Type | Demandé | Réponse |
+|---|---|---|---|
+| D | qcm | Programme : « Trace le segment [EF]. Trace le cercle de centre E qui passe par le point F. … | b) Le cercle 1 |
+| D | vrai | Le côté d'un carreau mesure 1 cm. Programme : « Trace un carré ABCD de côté 3 cm. Trace le … | vrai |
+| E | nume | Programme de Léa : 1. Trace un carré EFGH. 2. Trace le segment [EG]. 3. Trace le cercle de … | 2 |
+| E | text | Programme : « Trace le segment [AB] de 6 cm. Place son milieu M. Trace le cercle de centre … | rayon |
+| M | qcm | Le côté d'un carreau mesure 1 cm. Quel programme permet de tracer cette figure ? | c) Trace un rectangle EFGH avec E… |
+| M | nume | Programme : « Trace un cercle de centre O et de rayon … cm. Trace le segment [AB], un diamè… | 3 |
+
 **`P015` · Unités de mesure du milli au kilo : longueur, masse, contenance** — diff. 3, seuil 3/4  
 *Connaître les unités de longueur du mm au km (dont dam et hm), de masse du mg à la tonne et de contenance du mL au hL, comprendre que les préfixes jouent le même rôle pour les trois grandeurs, et convertir des mesures entières en s'appuyant sur les relations entre unités (1 hL = 100 L ; 1 g = 1 000 mg). Un tableau peut présenter les unités, mais les conversions ne se font pas avec un tableau. Nombres entiers.*
 > « Connaître et utiliser les unités de longueur du millimètre au kilomètre et les symboles associés »
@@ -1391,8 +1766,8 @@ Le chapitre est l'unité qu'un exercice bilan validerait.
 | D | qcm | Quelle surface a la plus grande aire ? | b) La surface B |
 | E | vrai | Inès dit : « Les surfaces A et B ont la même aire, mais pas le même périmètre. » Inès a-t-e… | vrai |
 | E | nume | Chaque carreau du quadrillage est un carré d'un centimètre de côté. Quelle est l'aire de la… | 14 |
-| E | qcm | Zoé découpe la surface A en morceaux, puis elle recolle tous les morceaux autrement, sans t… | a) La surface C |
-| M | qcm | Laquelle de ces surfaces a une aire de 12 cm² ? | c) La surface A |
+| E | qcm | Zoé découpe la surface A en morceaux, puis elle recolle tous les morceaux autrement, sans t… | c) La surface C |
+| M | qcm | Laquelle de ces surfaces a une aire de 12 cm² ? | a) La surface A |
 | M | nume | Combien de surfaces comme A faut-il pour recouvrir exactement la surface B, sans trou ni ch… | 4 |
 
 **`D014` · Convertir des mesures écrites avec une virgule** — diff. 4, seuil 3/4  
@@ -1436,6 +1811,19 @@ Le chapitre est l'unité qu'un exercice bilan validerait.
 | E | vrai | Pour calculer 248 ÷ 8, Sam prend des moitiés : 248, puis 124, puis 62. Il répond 62. Sam a-… | faux |
 | M | nume | Un ruban de 360 cm est coupé en 8 morceaux de même longueur. Quelle est la longueur d'un mo… | 45 |
 | M | qcm | Nour divise un nombre par 4 et trouve 38. Que trouverait-elle en divisant ce nombre par 8 ? | c) 19 |
+
+**`G023` · Trapèze, pentagone, hexagone : reconnaître par la définition** — diff. 3, seuil 3/4  
+*Reconnaître et nommer un trapèze (quadrilatère ayant deux côtés opposés parallèles), un trapèze rectangle, un pentagone, un hexagone en se référant à leur définition, et connaître les propriétés de parallélisme et d'angles du trapèze et du trapèze rectangle. Figure nécessaire : quadrilatères et polygones lettrés, sur quadrillage pour rendre le parallélisme lisible, codage des angles droits.*
+> « Reconnaître et nommer les figures suivantes en s'appuyant sur leur définition : triangle, triangle rectangle, triangle isocèle, triangle équilatéral,… »
+
+| | Type | Demandé | Réponse |
+|---|---|---|---|
+| D | text | Observe le quadrillage. Quel est le nom précis du quadrilatère ABCD ? | trapèze |
+| D | nume | Combien de ces figures sont des hexagones ? | 2 |
+| E | qcm | Quelle figure est un trapèze rectangle ? | c) La figure 2 |
+| E | vrai | Léa dit : « ABCD est un trapèze. » A-t-elle raison ? | vrai |
+| M | vrai | Tom dit : « ABCD est un trapèze. » A-t-il raison ? Vérifie sur le quadrillage. | faux |
+| M | qcm | On veut tracer un trapèze rectangle en reliant M à l'un des points E, F ou G, puis ce point… | a) Le point E |
 
 **`P020` · Durées en heures, minutes et secondes** — diff. 3, seuil 3/4  
 *Utiliser la seconde et la relation 1 min = 60 s, convertir entre heures, minutes et secondes (3 min 20 s = 200 s), calculer des durées et des horaires exprimés en heures, minutes et secondes, et résoudre des problèmes en une ou plusieurs étapes (courses, horaires de transport, durée d'un film). Nombres entiers.*
@@ -1556,6 +1944,32 @@ Le chapitre est l'unité qu'un exercice bilan validerait.
 | E | vrai | 15 kg de pommes donnent 9 litres de jus. Malik dit : « Avec 25 kg, j'aurai 19 litres, car j… | faux |
 | M | nume | Avec 21 €, Hugo achète 6 carnets identiques. Combien de ces carnets peut-il acheter avec 35… | 10 |
 | M | qcm | Un fleuriste vend 12 roses pour 18 €. Combien coûtent 28 roses ? | c) 42 € |
+
+**`G022` · Le degré : l'angle droit mesure 90°** — diff. 4, seuil 3/4  
+*Savoir qu'un angle droit mesure 90° et en déduire, sans rapporteur, la mesure d'angles obtenus à partir d'angles connus : la moitié d'un angle droit (45°), la somme de deux angles donnés, un multiple d'un angle donné (trois angles de 30° forment un angle droit). Angles saillants. Construire par pliage ne s'évalue pas à l'écran. Figure utile : angles avec leur mesure écrite, angle droit partagé, codage des angles égaux.*
+> « Savoir qu'un angle droit mesure 90° »
+
+| | Type | Demandé | Réponse |
+|---|---|---|---|
+| D | qcm | Lequel de ces trois angles mesure 90° ? | b) L'angle 2 |
+| D | qcm | Combien mesure l'angle AOC ? | c) 55° |
+| E | nume | Combien de degrés mesure l'angle AOD ? | 120 |
+| E | vrai | L'angle AOC est un angle droit. Sami dit : « L'angle AOB mesure 45°. » Sami a-t-il raison ? | vrai |
+| M | nume | L'angle AOD est un angle droit. Combien de degrés mesure l'angle AOC ? | 60 |
+| M | qcm | Lequel est le plus grand : l'angle 1 ou l'angle 2 ? | c) Ils ont la même mesure |
+
+**`G024` · Symétrique d'une figure sur quadrillage, axe en diagonale** — diff. 4, seuil 3/4  
+*Sur quadrillage, trouver le symétrique d'une figure donnée (qui ne touche pas forcément l'axe) par rapport à une droite verticale, horizontale ou suivant une diagonale du quadrillage : désigner le symétrique d'un point parmi des points lettrés, ou la bonne figure parmi plusieurs. L'axe en diagonale est l'attendu nouveau du CM2. Le tracé ne s'évalue pas à l'écran. Figure nécessaire : quadrillage, axe tracé (y compris en diagonale), figure et points candidats lettrés.*
+> « Construire, sur papier quadrillé, la figure symétrique d'une figure donnée par rapport à une droite verticale, horizontale ou une diagonale du quadri… »
+
+| | Type | Demandé | Réponse |
+|---|---|---|---|
+| D | qcm | Quelle surface est la symétrique de la surface F par rapport à l'axe ? | a) La surface 1 |
+| D | text | Quel point est le symétrique du point M par rapport à l'axe ? | C |
+| E | vrai | Nora affirme que le triangle DEF est le symétrique du triangle ABC par rapport à l'axe. A-t… | vrai |
+| E | text | Hugo a voulu tracer le symétrique du quadrilatère ABCD par rapport à l'axe. Il a obtenu EFG… | G |
+| M | nume | On veut que la figure soit symétrique par rapport à l'axe. Combien de cases faut-il colorie… | 3 |
+| M | vrai | Sami affirme : « Le point N est le symétrique du point M par rapport à l'axe. » A-t-il rais… | faux |
 
 **`P018` · Aire d'un carré ou d'un rectangle (cours moyen)** — diff. 4, seuil 3/4  
 *Déterminer l'aire d'un rectangle ou d'un carré aux côtés entiers en comptant les carrés unités qui le recouvrent par rangées (5 rangées de 8 carrés de 1 cm de côté, soit 40 cm²), sans formule à mémoriser. Les dimensions sont données par l'énoncé.*
@@ -1716,6 +2130,45 @@ Le chapitre est l'unité qu'un exercice bilan validerait.
 | M | vrai | Noa a réussi 4 tirs sur 5, Lou 17 tirs sur 20. Noa affirme : « J'ai le meilleur pourcentage… | faux |
 | M | nume | Un car transporte 50 passagers : 34 adultes, les autres sont des enfants. Quel pourcentage … | 32 |
 
+**`G025` · Mesurer un angle avec un rapporteur** — diff. 4, seuil 3/4  
+*Lire la mesure en degrés d'un angle sur un rapporteur posé correctement (centre au sommet, zéro sur un côté), en choisissant la bonne graduation parmi les deux, et vérifier la vraisemblance (un angle aigu mesure moins de 90°) ; reconnaître un angle de mesure donnée. Construire un angle au rapporteur ne s'évalue pas à l'écran. Figure nécessaire : rapporteur dessiné sur l'angle, double graduation de 0 à 180°.*
+> « Mesurer un angle »
+
+| | Type | Demandé | Réponse |
+|---|---|---|---|
+| D | nume | Le rapporteur est posé sur l'angle \widehat{AOB}. Quelle est la mesure de cet angle, en deg… | 70 |
+| D | qcm | Combien mesure l'angle \widehat{DEF} ? | a) 130° |
+| E | nume | Quelle est la mesure de l'angle \widehat{JKL}, en degrés ? | 55 |
+| E | vrai | Inès lit 60 sur son rapporteur. Elle dit : « L'angle \widehat{MPN} mesure 60°. » Inès a-t-e… | faux |
+| M | nume | Quelle est la mesure de l'angle \widehat{RST}, en degrés ? | 15 |
+| M | qcm | Noé veut mesurer l'angle \widehat{FGH} avec ce rapporteur. Quelle erreur a-t-il faite en le… | c) Le sommet G n'est pas sur le c… |
+
+**`G026` · Angles plat, adjacents, supplémentaires, opposés ; bissectrice** — diff. 4, seuil 3/4  
+*Connaître l'angle nul, plat (180°) et plein (360°), reconnaître des angles adjacents, des angles opposés par le sommet (de même mesure) et des angles supplémentaires (somme de 180°), et la bissectrice d'un angle saillant (elle le partage en deux angles de même mesure) ; en déduire des mesures par calcul. Figure nécessaire : angles avec mesures écrites, demi-droites issues d'un même sommet, droites sécantes, bissectrice et codage des angles égaux.*
+> « Connaître et utiliser les angles ainsi que le lexique et les notations qui s'y rapportent : angle droit, angle plat, angle plein, angle nul, angle ai… »
+
+| | Type | Demandé | Réponse |
+|---|---|---|---|
+| D | nume | Combien mesure l'angle \widehat{BOC}, en degrés ? | 55 |
+| D | qcm | Combien mesure l'angle \widehat{BOD} ? | b) 30° |
+| E | nume | La demi-droite [OC) est la bissectrice de l'angle \widehat{AOB}. Combien mesure l'angle \wi… | 70 |
+| E | vrai | Mia dit : « Les angles \widehat{ABC} et \widehat{DEF} sont supplémentaires. » Mia a-t-elle … | vrai |
+| M | nume | Les droites (AB) et (CD) se coupent en O, et [OE) est la bissectrice de l'angle \widehat{BO… | 25 |
+| M | nume | La demi-droite [OD) est la bissectrice de l'angle \widehat{COB}. Combien mesure l'angle \wi… | 110 |
+
+**`G028` · Distances : milieu d'un segment, cercle, disque, corde** — diff. 4, seuil 3/4  
+*Connaître et utiliser la distance entre deux points, la définition du milieu d'un segment (le point du segment à égale distance de ses extrémités), du cercle (les points à une distance donnée du centre) et du disque (les points à une distance inférieure ou égale), du rayon, du diamètre et de la corde ; résoudre des problèmes de distance à un point (un point est-il sur le cercle, dans le disque, à l'extérieur). Figure utile : cercle et disque avec centre, rayon, diamètre, corde, points lettrés à placer sur, dans ou hors du disque.*
+> « Connaître et utiliser la définition de la distance entre deux points »
+
+| | Type | Demandé | Réponse |
+|---|---|---|---|
+| D | nume | Combien de centimètres mesure le segment [AM] ? | 4.5 |
+| D | nume | Le point O est le centre du cercle. Combien de cordes de ce cercle sont tracées ? | 3 |
+| E | qcm | Quels points appartiennent au disque de centre O et de rayon 4 cm ? | c) P, Q et S |
+| E | vrai | Théo affirme : « Le point M est le milieu du segment [AB]. » A-t-il raison ? | faux |
+| M | qcm | Le trésor est à 3 cm de l'arbre T et à 4 cm du puits P. Lequel de ces points peut être le t… | b) Le point B |
+| M | vrai | Lou affirme : « Dans ce cercle, on ne peut pas tracer de corde de 9 cm. » A-t-elle raison ? | vrai |
+
 **`P021` · Convertir des longueurs vers et depuis le mètre** — diff. 4, seuil 3/4  
 *Connaître le sens des préfixes kilo-, hecto-, déca-, déci-, centi- et milli- et les relier aux unités de numération ; convertir en mètres une longueur donnée dans une autre unité et inversement, y compris vers une unité plus grande et avec des nombres décimaux (350 cm = 3,5 m ; 1 cm = 0,1 dm ; 2,5 km = 2 500 m), et résoudre des problèmes de longueurs aux unités mélangées.*
 > « L'élève connaît les significations des préfixes allant du kilo- au milli-, ainsi que les relations entre le mètre, ses multiples et ses sous-multiple… »
@@ -1818,7 +2271,46 @@ Le chapitre est l'unité qu'un exercice bilan validerait.
 | E | nume | Sur le plan d'un quartier, 1 cm sur le plan représente 25 m en réalité. Une rue mesure 8,4 … | 210 |
 | E | vrai | Sur le plan d'une école, 1 cm sur le plan représente 4 m en réalité. La cour mesure 32 m de… | faux |
 | M | nume | Sur une carte de randonnée, 1 cm sur la carte représente 500 m en réalité. Un sentier mesur… | 9 |
-| M | qcm | Un terrain de football mesure 100 m de long. On le dessine sur deux plans. Sur le plan A, 1… | c) Sur le plan A : 10 cm contre 4… |
+| M | qcm | Un terrain de football mesure 100 m de long. On le dessine sur deux plans. Sur le plan 1, 1… | c) Sur le plan 1 : 10 cm contre 4… |
+
+**`G027` · Somme des angles d'un triangle** — diff. 5, seuil 3/4  
+*Savoir que la somme des mesures des angles d'un triangle est 180° et l'utiliser pour calculer un angle ; connaître les propriétés angulaires des triangles particuliers (angles de 60° du triangle équilatéral, angles égaux à la base du triangle isocèle, deux angles aigus de somme 90° dans le triangle rectangle). Figure utile : triangle lettré avec mesures d'angles écrites et codage (angle droit, côtés égaux).*
+> « Connaître la valeur de la somme des mesures des angles d'un triangle »
+
+| | Type | Demandé | Réponse |
+|---|---|---|---|
+| D | nume | Combien mesure l'angle \widehat{ACB} du triangle ABC, en degrés ? | 70 |
+| D | qcm | Combien mesure l'angle \widehat{RTS} ? | c) 60° |
+| E | nume | Combien mesure l'angle \widehat{ABC}, en degrés ? | 35 |
+| E | vrai | Hugo dit : « L'angle \widehat{DFE} mesure 145°. » Hugo a-t-il raison ? | faux |
+| M | nume | Les points B, C et D sont alignés. Combien mesure l'angle \widehat{ABC}, en degrés ? | 60 |
+| M | nume | Les points B, C et D sont alignés. Combien mesure l'angle \widehat{CAD}, en degrés ? | 30 |
+
+**`G029` · La médiatrice d'un segment** — diff. 5, seuil 3/4  
+*Connaître la définition de la médiatrice d'un segment (la droite perpendiculaire au segment en son milieu) et sa propriété caractéristique (ses points sont à égale distance des extrémités du segment) ; l'utiliser pour trouver une longueur ou décider si un point est sur la médiatrice ; savoir que les trois médiatrices d'un triangle se coupent au centre du cercle circonscrit. Figure utile : segment avec sa médiatrice codée (angle droit, milieu), points lettrés et longueurs écrites, triangle avec cercle circonscrit.*
+> « Connaître la définition de la médiatrice d'un segment »
+
+| | Type | Demandé | Réponse |
+|---|---|---|---|
+| D | qcm | Quelle droite est la médiatrice du segment [EF] ? | c) La droite (d3) |
+| D | nume | Combien de centimètres mesure le segment [MB] ? | 5 |
+| E | vrai | Zoé dit : « Le point N est sur la médiatrice du segment [AB]. » A-t-elle raison ? | vrai |
+| E | nume | Quel est le périmètre du triangle MAB, en centimètres ? | 12.8 |
+| M | qcm | Quel point est à la même distance des trois sommets R, S et T du triangle ? | a) Le point A |
+| M | vrai | Kenza affirme : « La droite (d) est la médiatrice du segment [AB]. » A-t-elle raison ? | faux |
+
+**`G030` · Symétrie axiale : symétrique d'un point, propriétés** — diff. 5, seuil 3/4  
+*Connaître la définition du symétrique d'un point par rapport à une droite (la droite est la médiatrice du segment qui joint le point à son symétrique) et les propriétés de la symétrie axiale (elle conserve les longueurs, les angles et l'alignement) ; les utiliser sur papier uni pour trouver une longueur, un angle ou vérifier une construction. Figure nécessaire : axe, points et figures lettrés avec leurs symétriques, codage (angle droit, longueurs égales), sur fond blanc ou quadrillé.*
+> « Connaître la définition du symétrique d'un point par rapport à une droite »
+
+| | Type | Demandé | Réponse |
+|---|---|---|---|
+| D | qcm | Quel point est le symétrique du point M par rapport à la droite (d) ? | c) Le point C |
+| D | nume | Le point M' est le symétrique du point M par rapport à la droite (d). Combien de centimètre… | 7 |
+| E | nume | Le triangle A'B'C' est le symétrique du triangle ABC par rapport à la droite (d). Quel est … | 12.6 |
+| E | vrai | Yanis dit : « Le triangle DEF est le symétrique du triangle ABC par rapport à la droite (d)… | faux |
+| M | nume | Le point A' est le symétrique du point A par rapport à la droite (d). Quel est le périmètre… | 9.6 |
+| M | qcm | Quel est le symétrique du point B par rapport à la droite (d) ? | b) Le point B |
 
 **`P023` · Périmètre d'un disque** — diff. 5, seuil 3/4  
 *Savoir que le périmètre d'un disque est proportionnel à son diamètre, connaître la formule (diamètre × π, ou 2 × rayon × π) et calculer un périmètre en prenant 3,14 comme valeur approchée de π. Diamètres ou rayons entiers.*

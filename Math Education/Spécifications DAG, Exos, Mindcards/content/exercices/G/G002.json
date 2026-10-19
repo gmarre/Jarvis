@@ -1,0 +1,215 @@
+[
+  {
+    "id": "EX-G002-D-01",
+    "skill_id": "G002",
+    "level": "decouverte",
+    "type": "texte",
+    "statement": "Le robot avance de 4 cases, tourne à gauche, avance de 2 cases. Sur quelle lettre arrive-t-il ?",
+    "image": "figures/EX-G002-D-01",
+    "answer": {
+      "value": "C",
+      "accepted": [
+        "la lettre C",
+        "lettre C",
+        "la case C",
+        "case C",
+        "sur la lettre C",
+        "sur la case C",
+        "sur C",
+        "le C",
+        "sur le C"
+      ]
+    },
+    "solution_steps": [
+      "Au départ, le robot regarde vers le haut : la pointe du triangle montre le haut.",
+      "Il avance de 4 cases vers le haut. On compte les cases où il arrive, pas celle d'où il part : 1, 2, 3, 4.",
+      "Il tourne à gauche. Il regarde vers le haut, comme toi devant le quadrillage : sa gauche est la même que la tienne. Il regarde alors vers la gauche.",
+      "Il avance de 2 cases vers la gauche : 1, 2. Il arrive sur la lettre **C**.",
+      "En comptant la case de départ, on s'arrête trop tôt et on arrive sur B. En tournant à droite, on arrive sur A. En oubliant la dernière instruction, on reste sur D."
+    ],
+    "hint": "Le robot, c'est le triangle orange. Avance-le case par case avec ton doigt. Ne compte pas la case d'où il part.",
+    "estimated_duration_s": 60,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 2, CP, Le repérage dans l'espace : « L'élève comprend et utilise les instructions suivantes : avancer, reculer, tourner à droite, tourner à gauche, monter, descendre. »"
+  },
+  {
+    "id": "EX-G002-D-02",
+    "skill_id": "G002",
+    "level": "decouverte",
+    "type": "qcm",
+    "statement": "Le robot recule de 3 cases. Sur quelle lettre arrive-t-il ?",
+    "image": "figures/EX-G002-D-02",
+    "choices": [
+      {
+        "key": "a",
+        "text": "La lettre A",
+        "misconception": "L'élève fait avancer le robot au lieu de le faire reculer : reculer, c'est se déplacer vers l'arrière, à l'opposé de la pointe du triangle."
+      },
+      {
+        "key": "b",
+        "text": "La lettre B",
+        "misconception": null
+      },
+      {
+        "key": "c",
+        "text": "La lettre C",
+        "misconception": "L'élève compte la case de départ comme la première : le robot ne recule alors que de 2 cases."
+      }
+    ],
+    "answer": {
+      "value": "b"
+    },
+    "solution_steps": [
+      "Le robot regarde vers la droite : la pointe du triangle montre la droite.",
+      "Reculer, c'est se déplacer sans tourner, vers l'arrière : le robot va vers la gauche du quadrillage.",
+      "Il recule de 3 cases, sans compter celle d'où il part : 1, 2, 3. Il arrive sur la lettre **B**.",
+      "En avançant de 3 cases, il serait arrivé sur A, de l'autre côté."
+    ],
+    "hint": "Le robot ne se retourne pas : il va à reculons, du côté opposé à la pointe.",
+    "estimated_duration_s": 45,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 2, CP, Le repérage dans l'espace : « L'élève comprend et utilise les instructions suivantes : avancer, reculer, tourner à droite, tourner à gauche, monter, descendre. »"
+  },
+  {
+    "id": "EX-G002-E-01",
+    "skill_id": "G002",
+    "level": "entrainement",
+    "type": "texte",
+    "statement": "Le robot avance d'une case, tourne à droite, avance de 4 cases. Sur quelle lettre arrive-t-il ?",
+    "image": "figures/EX-G002-E-01",
+    "answer": {
+      "value": "A",
+      "accepted": [
+        "la lettre A",
+        "lettre A",
+        "la case A",
+        "case A",
+        "sur la lettre A",
+        "sur la case A",
+        "sur A",
+        "le A",
+        "sur le A"
+      ]
+    },
+    "solution_steps": [
+      "Au départ, le robot regarde vers le bas : la pointe du triangle montre le bas.",
+      "Il avance d'une case vers le bas.",
+      "Il tourne à droite. Attention : il regarde vers le bas, il te fait face. Sa droite est du côté de ta main gauche. Après avoir tourné, il regarde vers la gauche du quadrillage.",
+      "Il avance de 4 cases vers la gauche : 1, 2, 3, 4. Il arrive sur la lettre **A**.",
+      "Tourner vers ta droite à toi mène sur B. Oublier de tourner mène sur C. Compter la case où il tourne mène sur D."
+    ],
+    "hint": "Mets-toi à la place du robot, qui regarde vers le bas. De quel côté est sa main droite ?",
+    "estimated_duration_s": 75,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 2, CP, Le repérage dans l'espace : « L'élève comprend et utilise les instructions suivantes : avancer, reculer, tourner à droite, tourner à gauche, monter, descendre. »"
+  },
+  {
+    "id": "EX-G002-E-02",
+    "skill_id": "G002",
+    "level": "entrainement",
+    "type": "qcm",
+    "statement": "Quel programme fait suivre au robot le chemin tracé ?",
+    "image": "figures/EX-G002-E-02",
+    "choices": [
+      {
+        "key": "a",
+        "text": "Avance de 4 cases, tourne à gauche, avance de 3 cases.",
+        "misconception": null
+      },
+      {
+        "key": "b",
+        "text": "Avance de 4 cases, tourne à droite, avance de 3 cases.",
+        "misconception": "L'élève confond la gauche et la droite : le robot regarde vers le haut et le chemin part vers la gauche du quadrillage, il doit donc tourner à gauche."
+      },
+      {
+        "key": "c",
+        "text": "Avance de 5 cases, tourne à gauche, avance de 4 cases.",
+        "misconception": "L'élève compte toutes les cases du chemin, y compris celle d'où part le robot et celle où il tourne. On ne compte que les cases où le robot arrive."
+      }
+    ],
+    "answer": {
+      "value": "a"
+    },
+    "solution_steps": [
+      "Le robot regarde vers le haut. Le chemin monte, puis part vers la gauche.",
+      "Il monte de 4 cases : on compte les cases où il arrive, pas celle d'où il part.",
+      "Pour partir vers la gauche, le robot, qui regarde vers le haut, tourne à gauche.",
+      "Puis il avance de 3 cases. Le bon programme est : **avance de 4 cases, tourne à gauche, avance de 3 cases**."
+    ],
+    "hint": "Suis le chemin avec ton doigt et compte les cases où le robot arrive, une par une.",
+    "estimated_duration_s": 60,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 2, CP, Le repérage dans l'espace : « L'élève sait coder un déplacement qu'un autre élève doit ensuite effectuer »"
+  },
+  {
+    "id": "EX-G002-M-01",
+    "skill_id": "G002",
+    "level": "maitrise",
+    "type": "qcm",
+    "statement": "Quel programme mène le robot sur la lettre B ?",
+    "image": "figures/EX-G002-M-01",
+    "choices": [
+      {
+        "key": "a",
+        "text": "Avance de 4 cases, tourne à gauche, avance de 2 cases.",
+        "misconception": "L'élève inverse les deux nombres : le robot descendrait de 4 cases, puis irait de 2 cases vers la droite, et il arriverait sur C."
+      },
+      {
+        "key": "b",
+        "text": "Avance de 2 cases, tourne à droite, avance de 4 cases.",
+        "misconception": "L'élève tourne vers sa propre droite. Le robot regarde vers le bas, il lui fait face : la droite du robot est du côté de la main gauche de l'élève, et le robot arriverait sur A."
+      },
+      {
+        "key": "c",
+        "text": "Avance de 2 cases, tourne à gauche, avance de 4 cases.",
+        "misconception": null
+      }
+    ],
+    "answer": {
+      "value": "c"
+    },
+    "solution_steps": [
+      "Le robot regarde vers le bas. Pour aller sur B, il doit descendre de 2 cases, puis aller de 4 cases vers la droite du quadrillage.",
+      "Pour aller vers la droite du quadrillage, un robot qui regarde vers le bas tourne à **sa** gauche : il te fait face, sa gauche est du côté de ta main droite.",
+      "Le programme est donc : **avance de 2 cases, tourne à gauche, avance de 4 cases**.",
+      "En tournant à droite, il irait sur A ; en descendant d'abord de 4 cases, il arriverait sur C."
+    ],
+    "hint": "Imagine que tu es le robot et que tu regardes vers le bas. De quel côté est ta gauche ?",
+    "estimated_duration_s": 75,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 2, CP, Le repérage dans l'espace : « Si un robot est disponible, l'élève peut programmer son déplacement sur un tapis quadrillé. »"
+  },
+  {
+    "id": "EX-G002-M-02",
+    "skill_id": "G002",
+    "level": "maitrise",
+    "type": "texte",
+    "statement": "Le robot avance de 3 cases, tourne à droite, avance de 2 cases, tourne à droite, recule d'une case. Sur quelle lettre arrive-t-il ?",
+    "image": "figures/EX-G002-M-02",
+    "answer": {
+      "value": "D",
+      "accepted": [
+        "la lettre D",
+        "lettre D",
+        "la case D",
+        "case D",
+        "sur la lettre D",
+        "sur la case D",
+        "sur D",
+        "le D",
+        "sur le D"
+      ]
+    },
+    "solution_steps": [
+      "Au départ, le robot regarde vers la gauche. Il avance de 3 cases vers la gauche.",
+      "Premier virage à droite : un robot qui regarde vers la gauche a sa droite vers le haut du quadrillage. Il avance de 2 cases vers le haut.",
+      "Second virage à droite : il regardait vers le haut, il regarde alors vers la droite du quadrillage.",
+      "Il recule d'une case : il va à l'opposé de la pointe, donc d'une case vers la gauche. Il arrive sur la lettre **D**.",
+      "En avançant au lieu de reculer, on arrive sur A ; en oubliant le second virage, sur B ; en tournant à gauche au lieu de tourner à droite, sur C."
+    ],
+    "hint": "Avance le robot pas à pas avec ton doigt, et à chaque virage, tourne-toi comme lui.",
+    "estimated_duration_s": 90,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 2, CP, Le repérage dans l'espace : « Les déplacements à programmer comprennent au maximum dix instructions, dont deux virages. »"
+  }
+]

@@ -1,0 +1,184 @@
+[
+  {
+    "id": "EX-G028-D-01",
+    "skill_id": "G028",
+    "level": "decouverte",
+    "type": "numerique",
+    "statement": "Combien de centimètres mesure le segment [AM] ?",
+    "image": "figures/EX-G028-D-01",
+    "answer": {
+      "value": 4.5,
+      "unit": "cm",
+      "accepted": [
+        "4,5 cm",
+        "4,5 centimètres",
+        "4 cm 5 mm",
+        "4cm5mm",
+        "45 mm"
+      ]
+    },
+    "solution_steps": [
+      "Sur la figure, le point M est sur le segment [AB], et les codages identiques sur [AM] et [MB] disent que AM = MB.",
+      "Un point du segment à égale distance des deux extrémités, c'est le milieu : M est le milieu du segment [AB].",
+      "AM est donc la moitié de AB : 9 ÷ 2 = 4,5.",
+      "Le segment [AM] mesure **4,5 cm**.",
+      "Répondre 9 cm, c'est lire la longueur de tout le segment [AB] sans voir le codage."
+    ],
+    "hint": "Que disent les deux petits codages identiques sur la figure ?",
+    "estimated_duration_s": 45,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 3, 6e, Distances : « Connaître et utiliser la définition du milieu d'un segment »"
+  },
+  {
+    "id": "EX-G028-D-02",
+    "skill_id": "G028",
+    "level": "decouverte",
+    "type": "numerique",
+    "statement": "Le point O est le centre du cercle. Combien de cordes de ce cercle sont tracées ?",
+    "image": "figures/EX-G028-D-02",
+    "answer": {
+      "value": 3,
+      "accepted": [
+        "3 cordes"
+      ]
+    },
+    "solution_steps": [
+      "Une corde est un segment dont les deux extrémités sont sur le cercle.",
+      "[CD] et [EF] ont leurs deux extrémités sur le cercle : ce sont des cordes.",
+      "[AB] a aussi ses deux extrémités sur le cercle : c'est une corde. Elle passe en plus par le centre : c'est un diamètre, la plus longue des cordes.",
+      "[OG] a une extrémité au centre, pas sur le cercle : c'est un rayon, pas une corde.",
+      "Il y a **3 cordes** : [AB], [CD] et [EF]. Répondre 2, c'est oublier qu'un diamètre est une corde."
+    ],
+    "hint": "Pour chaque segment, regarde où sont ses deux extrémités.",
+    "estimated_duration_s": 45,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 3, 6e, Cercles et disques : « Connaître les définitions d'un cercle, d'un disque, d'un rayon, d'un diamètre, d'une corde »"
+  },
+  {
+    "id": "EX-G028-E-01",
+    "skill_id": "G028",
+    "level": "entrainement",
+    "type": "qcm",
+    "statement": "Quels points appartiennent au disque de centre O et de rayon 4 cm ?",
+    "image": "figures/EX-G028-E-01",
+    "choices": [
+      {
+        "key": "a",
+        "text": "P et S seulement",
+        "misconception": "L'élève oublie le bord : Q est à 4 cm de O, il est sur le cercle, et le cercle fait partie du disque (distance inférieure ou égale au rayon)."
+      },
+      {
+        "key": "b",
+        "text": "Q seulement",
+        "misconception": "L'élève confond le disque et le cercle : Q est le seul point du cercle, mais le disque contient aussi tous les points plus proches de O, comme P et S."
+      },
+      {
+        "key": "c",
+        "text": "P, Q et S",
+        "misconception": null
+      }
+    ],
+    "answer": {
+      "value": "c"
+    },
+    "solution_steps": [
+      "Le disque de centre O et de rayon 4 cm est formé de tous les points situés à 4 cm ou moins de O.",
+      "On lit les distances sur la figure : OP = 2,5 cm, OQ = 4 cm, OR = 4,5 cm, OS = 3 cm.",
+      "P et S sont à moins de 4 cm de O : ils sont dans le disque.",
+      "Q est à exactement 4 cm de O : il est sur le cercle, qui fait partie du disque. R est à plus de 4 cm : il est hors du disque.",
+      "Les points du disque sont **P, Q et S**."
+    ],
+    "hint": "Le disque, c'est l'intérieur du cercle avec ou sans le cercle lui-même ?",
+    "estimated_duration_s": 60,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 3, 6e, Cercles et disques : « Comprendre la définition d'un cercle et celle d'un disque sous la forme d'ensembles de points »"
+  },
+  {
+    "id": "EX-G028-E-02",
+    "skill_id": "G028",
+    "level": "entrainement",
+    "type": "vrai_faux",
+    "statement": "Théo affirme : « Le point M est le milieu du segment [AB]. » A-t-il raison ?",
+    "image": "figures/EX-G028-E-02",
+    "answer": {
+      "value": false
+    },
+    "solution_steps": [
+      "On lit sur la figure : MA = 5 cm et MB = 5 cm. M est bien à la même distance de A et de B : c'est sans doute ce qui convainc Théo.",
+      "Mais le milieu d'un segment est un point DU segment, à égale distance de ses deux extrémités.",
+      "Ici, M n'est pas sur le segment [AB] : il est au-dessus.",
+      "M n'est donc pas le milieu de [AB] : Théo a **tort**.",
+      "Il existe beaucoup de points à égale distance de A et de B ; un seul d'entre eux est sur le segment [AB], c'est le milieu."
+    ],
+    "hint": "Le milieu d'un segment doit-il être sur ce segment ?",
+    "estimated_duration_s": 60,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 3, 6e, Distances : « Connaître et utiliser la définition du milieu d'un segment »"
+  },
+  {
+    "id": "EX-G028-M-01",
+    "skill_id": "G028",
+    "level": "maitrise",
+    "type": "qcm",
+    "statement": "Le trésor est à 3 cm de l'arbre T et à 4 cm du puits P. Lequel de ces points peut être le trésor ?",
+    "image": "figures/EX-G028-M-01",
+    "choices": [
+      {
+        "key": "a",
+        "text": "Le point A",
+        "misconception": "L'élève ne vérifie qu'une condition : A est bien à 3 cm de T, sur le petit cercle, mais il n'est pas sur le grand cercle, donc pas à 4 cm de P."
+      },
+      {
+        "key": "b",
+        "text": "Le point B",
+        "misconception": null
+      },
+      {
+        "key": "c",
+        "text": "Le point C",
+        "misconception": "L'élève confond « à 3 cm » et « à moins de 3 cm » : C est à l'intérieur des deux disques, mais il n'est sur aucun des deux cercles."
+      },
+      {
+        "key": "d",
+        "text": "Le point D",
+        "misconception": "L'élève ne vérifie qu'une condition : D est bien à 4 cm de P, sur le grand cercle, mais il est loin de T, bien plus qu'à 3 cm."
+      }
+    ],
+    "answer": {
+      "value": "b"
+    },
+    "solution_steps": [
+      "Les points à 3 cm de T forment le cercle de centre T et de rayon 3 cm : c'est le petit cercle, son rayon est écrit sur la figure.",
+      "Les points à 4 cm de P forment le cercle de centre P et de rayon 4 cm : c'est le grand cercle.",
+      "Le trésor est à la fois sur les deux cercles : il est à un de leurs points d'intersection.",
+      "A est sur le petit cercle seulement, D sur le grand cercle seulement, C n'est sur aucun des deux cercles.",
+      "Le trésor peut être **le point B**, situé sur les deux cercles."
+    ],
+    "hint": "Où sont tous les points à 3 cm de T ? Et tous les points à 4 cm de P ?",
+    "estimated_duration_s": 90,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 3, 6e, Cercles et disques : « Résoudre des problèmes mettant en jeu des distances à un point »"
+  },
+  {
+    "id": "EX-G028-M-02",
+    "skill_id": "G028",
+    "level": "maitrise",
+    "type": "vrai_faux",
+    "statement": "Lou affirme : « Dans ce cercle, on ne peut pas tracer de corde de 9 cm. » A-t-elle raison ?",
+    "image": "figures/EX-G028-M-02",
+    "answer": {
+      "value": true
+    },
+    "solution_steps": [
+      "On lit sur la figure le rayon du cercle : OA = 4 cm.",
+      "La plus longue corde d'un cercle est un diamètre, car elle passe par le centre. Ici, un diamètre mesure 2 × 4 = 8 cm.",
+      "Plus une corde passe près du centre, plus elle est longue : la corde [BC] tracée, loin du centre, est plus courte que le diamètre. La plus longue de toutes passe par le centre.",
+      "Une corde de 9 cm serait plus longue que le diamètre : c'est impossible.",
+      "Lou a **raison**."
+    ],
+    "hint": "Quelle est la plus longue corde que l'on puisse tracer dans un cercle ?",
+    "estimated_duration_s": 90,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 3, 6e, Cercles et disques : « Connaître les définitions d'un cercle, d'un disque, d'un rayon, d'un diamètre, d'une corde »"
+  }
+]
