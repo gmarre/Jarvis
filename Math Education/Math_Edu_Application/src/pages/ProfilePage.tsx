@@ -1,7 +1,11 @@
-import { useState } from 'react'
+import { useCallback, useEffect, useState } from 'react'
 import { Link, useNavigate } from 'react-router-dom'
 
 import { formatDateLong, formatEuros, initials } from '@/lib/format'
+import { ageFrom, estMineur, needsParentalConsent } from '@/lib/age'
+import { ConnexionCard } from '@/components/compte/ConnexionCard'
+import { ConsentementNotice } from '@/components/compte/ConsentementNotice'
+import type { ModificationEnAttente } from '@/types/domain'
 import { AppShell, PageBody, PageHeader } from '@/components/layout/AppShell'
 import { Button, ButtonLink } from '@/components/ui/Button'
 import { Card, CardTitle } from '@/components/ui/Card'
@@ -18,18 +22,44 @@ import { SCHOOL_LEVELS, type SchoolLevel } from '@/types/content'
 // c'est la donnee qui decide, pas une page separee.
 
 export default function ProfilePage() {
-  const { session, updateProfile, signOut, isDemo } = useAuthenticatedSession()
+  const {
+    session,
+    updateProfile,
+    modifierProfil,
+    demanderModification,
+    getModificationsEnAttente,
+    signOut,
+    isDemo,
+  } = useAuthenticatedSession()
   const plan = useDailyPlan()
   const navigate = useNavigate()
   const { profile } = session
 
   const [editing, setEditing] = useState(false)
-  const [draft, setDraft] = useState({
+  const brouillonDe = () => ({
     prenom: profile.prenom,
     niveau: profile.niveau_scolaire ?? '',
-    email: profile.email,
+    naissance: profile.date_naissance ?? '',
     emailParent: profile.email_parent ?? '',
   })
+  const [draft, setDraft] = useState(brouillonDe)
+  const [erreurs, setErreurs] = useState<Record<string, string>>({})
+  const [retour, setRetour] = useState<{ ton: 'mastered' | 'progress'; texte: string } | null>(null)
+  const [pending, setPending] = useState(false)
+
+  // Demandes soumises au parent, affichees tant qu'il n'a pas tranche.
+  const [enAttente, setEnAttente] = useState<ModificationEnAttente[]>([])
+  const relireEnAttente = useCallback(() => {
+    if (profile.role !== 'eleve') return
+    getModificationsEnAttente()
+      .then(setEnAttente)
+      .catch(() => setEnAttente([]))
+  }, [getModificationsEnAttente, profile.role])
+  useEffect(relireEnAttente, [relireEnAttente])
+
+  // Un mineur ne change sa date de naissance qu'avec l'accord de son parent ;
+  // la premiere saisie, elle, est libre (migration 0011).
+  const mineur = estMineur(profile.date_naissance)
 
   const isTeacher = profile.role === 'prof'
   // Les blocs scolaires (niveau, consentement parental, progression, abonnement)
@@ -38,14 +68,58 @@ export default function ProfilePage() {
   const isStudent = profile.role === 'eleve'
   const hasProgress = !plan.needsPlacement
 
-  const save = () => {
-    updateProfile({
-      prenom: draft.prenom.trim() || profile.prenom,
-      niveau_scolaire: (draft.niveau || null) as SchoolLevel | null,
-      email: draft.email.trim() || profile.email,
-      email_parent: draft.emailParent.trim() || null,
-    })
-    setEditing(false)
+  const save = async () => {
+    const naissanceChangee = draft.naissance !== (profile.date_naissance ?? '')
+    const viaParent = naissanceChangee && mineur
+    const emailParent = draft.emailParent.trim()
+
+    const suivantes: Record<string, string> = {}
+    if (!draft.prenom.trim()) suivantes.prenom = 'Indique ton prénom.'
+    if (isStudent && naissanceChangee && ageFrom(draft.naissance) === null) {
+      suivantes.naissance = 'Cette date ne semble pas valide.'
+    }
+    if (emailParent && !/^\S+@\S+\.\S+$/.test(emailParent)) {
+      suivantes.emailParent = 'Cette adresse semble incomplète.'
+    } else if (isStudent && !emailParent && needsParentalConsent('eleve', draft.naissance)) {
+      // Avant 15 ans, quelle que soit la voie (directe ou par le parent), il
+      // faut l'adresse d'un parent.
+      suivantes.emailParent = "Email d'un parent obligatoire avant 15 ans."
+    }
+    setErreurs(suivantes)
+    if (Object.keys(suivantes).length > 0) return
+
+    setPending(true)
+    setRetour(null)
+    try {
+      await modifierProfil({
+        prenom: draft.prenom.trim(),
+        ...(isStudent
+          ? {
+              niveau_scolaire: (draft.niveau || null) as SchoolLevel | null,
+              email_parent: emailParent || null,
+              ...(naissanceChangee && !viaParent ? { date_naissance: draft.naissance } : {}),
+            }
+          : {}),
+      })
+      if (viaParent) {
+        const { envoye_a } = await demanderModification('date_naissance', draft.naissance)
+        relireEnAttente()
+        setRetour({
+          ton: 'mastered',
+          texte: `Profil enregistré. Le changement de date de naissance attend l'accord de ${envoye_a}.`,
+        })
+      } else {
+        setRetour({ ton: 'mastered', texte: 'Profil enregistré.' })
+      }
+      setEditing(false)
+    } catch (cause: unknown) {
+      setRetour({
+        ton: 'progress',
+        texte: cause instanceof Error ? cause.message : "L'enregistrement a échoué.",
+      })
+    } finally {
+      setPending(false)
+    }
   }
 
   return (
@@ -81,7 +155,16 @@ export default function ProfilePage() {
                   </p>
                 </div>
                 {!editing && (
-                  <Button variant="secondary" size="sm" onClick={() => setEditing(true)}>
+                  <Button
+                    variant="secondary"
+                    size="sm"
+                    onClick={() => {
+                      setDraft(brouillonDe())
+                      setErreurs({})
+                      setRetour(null)
+                      setEditing(true)
+                    }}
+                  >
                     Modifier
                   </Button>
                 )}
@@ -89,7 +172,7 @@ export default function ProfilePage() {
 
               {editing ? (
                 <div className="grid gap-4 sm:grid-cols-2">
-                  <Field label="Prénom" htmlFor="p-prenom">
+                  <Field label="Prénom" htmlFor="p-prenom" error={erreurs.prenom}>
                     <TextInput
                       id="p-prenom"
                       value={draft.prenom}
@@ -112,19 +195,28 @@ export default function ProfilePage() {
                       </Select>
                     </Field>
                   )}
-                  <Field label="Email" htmlFor="p-email">
-                    <TextInput
-                      id="p-email"
-                      type="email"
-                      value={draft.email}
-                      onChange={(e) => setDraft({ ...draft, email: e.target.value })}
-                    />
-                  </Field>
+                  {isStudent && (
+                    <Field
+                      label="Date de naissance"
+                      htmlFor="p-naissance"
+                      hint={mineur ? "Un changement attendra l'accord de ton parent." : undefined}
+                      error={erreurs.naissance}
+                    >
+                      <TextInput
+                        id="p-naissance"
+                        type="date"
+                        autoComplete="bday"
+                        value={draft.naissance}
+                        onChange={(e) => setDraft({ ...draft, naissance: e.target.value })}
+                      />
+                    </Field>
+                  )}
                   {isStudent && (
                     <Field
                       label="Email du parent"
                       htmlFor="p-parent"
-                      hint="Obligatoire avant 15 ans."
+                      hint="Obligatoire avant 15 ans. Le changer redemande son accord."
+                      error={erreurs.emailParent}
                     >
                       <TextInput
                         id="p-parent"
@@ -134,9 +226,16 @@ export default function ProfilePage() {
                       />
                     </Field>
                   )}
+                  {retour && (
+                    <Notice tone={retour.ton} className="sm:col-span-2">
+                      {retour.texte}
+                    </Notice>
+                  )}
                   <div className="flex gap-2.5 sm:col-span-2">
-                    <Button onClick={save}>Enregistrer</Button>
-                    <Button variant="secondary" onClick={() => setEditing(false)}>
+                    <Button onClick={() => void save()} disabled={pending}>
+                      {pending ? 'Un instant…' : 'Enregistrer'}
+                    </Button>
+                    <Button variant="secondary" onClick={() => setEditing(false)} disabled={pending}>
                       Annuler
                     </Button>
                   </div>
@@ -151,7 +250,17 @@ export default function ProfilePage() {
                       muted={!profile.niveau_scolaire}
                     />
                   )}
-                  <ReadOnlyField label="Email" value={profile.email} />
+                  {isStudent && (
+                    <ReadOnlyField
+                      label="Date de naissance"
+                      value={
+                        profile.date_naissance
+                          ? formatDateLong(profile.date_naissance)
+                          : 'À renseigner'
+                      }
+                      muted={!profile.date_naissance}
+                    />
+                  )}
                   {isStudent && (
                     <ReadOnlyField
                       label="Email du parent"
@@ -162,46 +271,36 @@ export default function ProfilePage() {
                 </dl>
               )}
 
-              {isStudent && (
-                <div className="mt-5">
-                  {profile.consentement_parental_at ? (
-                    <Notice tone="mastered">
-                      Consentement parental confirmé le{' '}
-                      {formatDateLong(profile.consentement_parental_at)}. Ton parent peut retirer
-                      son accord et supprimer le compte à tout moment.
-                    </Notice>
-                  ) : profile.email_parent ? (
-                    <Notice tone="progress" icon="!">
-                      En attente de l'accord de {profile.email_parent}. L'envoi automatique de
-                      l'email de confirmation arrive au prochain jalon.
-                      {/* Raccourci de recette, mode demonstration uniquement. Contre
-                          la vraie base, un trigger refuse cette ecriture : un mineur
-                          ne doit pas pouvoir se confirmer a lui-meme l'accord de son
-                          parent. La confirmation passera par le lien envoye au parent. */}
-                      {isDemo && (
-                        <>
-                          {' '}
-                          <button
-                            type="button"
-                            onClick={() =>
-                              updateProfile({
-                                consentement_parental_at: new Date().toISOString(),
-                              })
-                            }
-                            className="font-semibold underline underline-offset-2"
-                          >
-                            Simuler la confirmation (démo)
-                          </button>
-                        </>
-                      )}
-                    </Notice>
-                  ) : (
-                    <Notice tone="progress" icon="!">
-                      Aucun email de parent renseigné. Avant 15 ans, l'accord d'un parent est
-                      obligatoire pour utiliser la plateforme.
-                    </Notice>
-                  )}
-                </div>
+              {!editing && retour && (
+                <Notice tone={retour.ton} className="mt-5">
+                  {retour.texte}
+                </Notice>
+              )}
+
+              {enAttente.map((demande) => (
+                <Notice key={demande.id} tone="progress" icon="!" className="mt-5">
+                  {demande.champ === 'email'
+                    ? `Nouvelle adresse ${demande.nouvelle_valeur}`
+                    : `Nouvelle date de naissance (${formatDateLong(demande.nouvelle_valeur)})`}{' '}
+                  en attente de l'accord de {demande.email_parent}, jusqu'au{' '}
+                  {formatDateLong(demande.expire_le)}.
+                </Notice>
+              ))}
+
+              <ConsentementNotice className="mt-5" afficherConfirme />
+              {/* Raccourci de recette, mode demonstration uniquement. Contre la
+                  vraie base, un trigger refuse cette ecriture : un mineur ne doit
+                  pas pouvoir se confirmer a lui-meme l'accord de son parent. */}
+              {isDemo && isStudent && !profile.consentement_parental_at && profile.email_parent && (
+                <button
+                  type="button"
+                  onClick={() =>
+                    updateProfile({ consentement_parental_at: new Date().toISOString() })
+                  }
+                  className="mt-2 min-h-[44px] text-[12px] font-semibold text-ink-subtle underline underline-offset-2"
+                >
+                  Simuler la confirmation du parent (démo)
+                </button>
               )}
             </Card>
 
@@ -255,6 +354,8 @@ export default function ProfilePage() {
 
           <div className="flex flex-col gap-5">
             {isStudent && <SubscriptionCard abonnement={profile.abonnement} />}
+
+            <ConnexionCard onDemandeEnvoyee={relireEnAttente} />
 
             <Card>
               <CardTitle>Données &amp; confidentialité</CardTitle>
@@ -389,12 +490,12 @@ function SubscriptionCard({
  * sans les rendre. L'export se fait cote client depuis la session courante, la
  * suppression efface le compte local puis deconnecte.
  *
- * Au branchement de Supabase, l'export passera par le repository et la
- * suppression par une fonction serveur, mais le contrat de cet ecran ne change
- * pas : un bouton qui exporte, un bouton qui supprime apres confirmation.
+ * Contre Supabase, la suppression n'efface encore rien (une deconnexion ne
+ * supprime pas le compte) : le bouton n'y est donc pas affiche, il mentirait.
+ * La vraie suppression, par une fonction serveur, arrive au sprint 4 (RGPD).
  */
 function DataRights() {
-  const { session, signOut } = useAuthenticatedSession()
+  const { session, signOut, isDemo } = useAuthenticatedSession()
   const navigate = useNavigate()
   const [confirming, setConfirming] = useState(false)
   const [exported, setExported] = useState(false)
@@ -433,7 +534,7 @@ function DataRights() {
         <Button variant="secondary" size="sm" onClick={exportData}>
           {exported ? 'Fichier téléchargé' : 'Exporter mes données'}
         </Button>
-        {confirming ? (
+        {!isDemo ? null : confirming ? (
           <>
             <Button size="sm" onClick={deleteAccount} className="bg-wrong-600 hover:bg-wrong-600">
               Confirmer la suppression
