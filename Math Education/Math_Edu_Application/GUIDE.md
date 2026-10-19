@@ -81,6 +81,47 @@ sont présentes, il n'a rien à faire devant un vrai utilisateur.
 Le rôle décide de l'espace : élève, professeur ou parent. Chacun est cloisonné,
 personne ne peut ouvrir l'espace d'un autre en tapant l'URL.
 
+### Tester sur un vrai téléphone, sans rien déployer
+
+Le téléphone ouvre l'application servie par l'ordinateur, sur le Wi-Fi de la
+maison. Rien ne sort sur Internet.
+
+1. **Même Wi-Fi.** L'ordinateur et le téléphone sont sur le même réseau (pas le
+   réseau « invité » de la box, qui isole les appareils).
+2. **Lancer le serveur ouvert au réseau local**, dans le dossier
+   `Math_Edu_Application` :
+   ```bash
+   npm run dev -- --host
+   ```
+   Vite affiche deux adresses. Garder celle de la ligne **Network**, par exemple
+   `http://192.168.1.23:5173`. Le nombre change selon la box.
+3. **Pare-feu Windows.** Au premier lancement, Windows demande si Node.js peut
+   communiquer sur le réseau : cocher **Réseaux privés**, puis **Autoriser**. Si
+   la fenêtre a été refusée par erreur : Paramètres Windows > Confidentialité et
+   sécurité > Sécurité Windows > Pare-feu > Autoriser une application > Node.js,
+   cocher la colonne « Privé ».
+4. **Sur le téléphone**, taper l'adresse **Network** dans le navigateur, avec
+   `http://` et le `:5173`.
+5. **Se connecter par email et mot de passe.** Google ne marche pas encore
+   depuis le téléphone : Supabase ne renvoie qu'aux adresses qu'il connaît, et
+   `192.168.x.x` n'en fait pas partie. Pour l'ajouter le temps des tests :
+   tableau de bord Supabase > Authentication > URL Configuration > Redirect URLs
+   > Add URL, coller `http://192.168.1.23:5173/**` (avec votre adresse), Save.
+   À retirer après les tests.
+6. **Mode démonstration** (sans toucher à la vraie base) : lancer plutôt
+   `VITE_USE_MOCK=true npm run dev -- --host` depuis Git Bash. Les comptes de
+   démonstration apparaissent sous le formulaire de connexion.
+
+Ce qui demande du HTTPS ne marche pas sur l'adresse `http://192.168.x.x` : pour
+l'instant seulement `crypto.randomUUID`, déjà contourné (`src/lib/id.ts`). Le
+jour où l'application installable (PWA) ou la caméra seront testées, ajouter un
+certificat local avec le plugin `@vitejs/plugin-basic-ssl`.
+
+**Ce qu'on regarde sur le téléphone :** aucun défilement horizontal, des boutons
+assez grands pour le pouce, le clavier qui ne masque pas le champ en cours de
+saisie, la barre du bas au-dessus de la barre système (iPhone), le retour à
+l'application après un passage dans une autre.
+
 ---
 
 ## 3. Les commandes disponibles
@@ -228,6 +269,26 @@ Dans `.env.local`, ignoré par Git. Modèle dans `.env.example`.
 Où les trouver : **Project Settings → API**. La publishable key va dans
 `VITE_SUPABASE_ANON_KEY`, la `service_role` (appelée « secret key » dans la
 nouvelle interface) dans `SUPABASE_SERVICE_ROLE_KEY`.
+
+### Mémo administrateur
+
+- **Confirmation d'email obligatoire** : Authentication > Sign In / Providers >
+  Email > activer **Confirm email**, Save. Sans domaine, le SMTP par défaut de
+  Supabase n'envoie que quelques emails par heure : suffisant pour tester.
+- **Créer un compte déjà confirmé** (test, dépannage) : Authentication > Users >
+  Add user > Create new user, saisir email et mot de passe, cocher **Auto
+  Confirm User**. Le profil est créé élève : il complète ensuite `/bienvenue`.
+- **Accord parental (Edge Function `accord-parental`)** : il faut la migration
+  0011 appliquée, la fonction déployée avec `verify_jwt: false` (le parent n'a
+  pas de compte), et ces secrets dans Edge Functions > Secrets :
+  - `RESEND_API_KEY` : clé d'un compte Resend gratuit (resend.com > API Keys).
+    Sans domaine vérifié, Resend n'écrit **qu'à l'adresse du titulaire** du
+    compte : pour tester, mettre cette adresse comme email du parent ;
+  - `APP_URL` : `http://localhost:5173` en développement (adresse de base des
+    liens envoyés au parent) ;
+  - `RESEND_FROM` : facultatif, `Racine <onboarding@resend.dev>` par défaut.
+  Sans `RESEND_API_KEY`, l'application dit que l'envoi n'est pas configuré :
+  rien ne part, rien n'est faussement annoncé.
 
 ### Le schéma
 
