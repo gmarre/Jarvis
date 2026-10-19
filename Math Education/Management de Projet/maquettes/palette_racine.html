@@ -1,0 +1,175 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Maquette palette Racine</title>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --canvas: #FAFAF8; --surface: #FFFFFF; --muted: #F1F0EC; --line: #E2E0D9;
+    --ink: #0F172A; --ink-muted: #475569; --ink-subtle: #64748B; --ink-faint: #94A3B8;
+    /* Accent propose : bleu du logo */
+    --a50: #EAF3FC; --a100: #D3E5F8; --a200: #A9CDF1; --a300: #5C9FE2;
+    --a: #0265C8; --a600: #0257AD; --a700: #034A8F;
+    /* Ancien accent, pour comparer */
+    --i: #6366F1; --i50: #EEF2FF; --i700: #4338CA;
+    /* Etats de maitrise, inchanges */
+    --mastered: #10B981; --progress: #F59E0B; --wrong: #DC2626;
+    /* Couleurs du logo : decor seulement */
+    --b-orange: #FC7243; --b-jaune: #FCD05A; --b-vert: #91D94F; --b-pi: #F8B810; --b-ciel: #88D0F8;
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--canvas); color: var(--ink); font: 14px/1.5 Inter, system-ui, sans-serif; }
+  main { max-width: 1180px; margin: 0 auto; padding: 32px 16px 64px; }
+  h1, h2 { font-family: Fraunces, Georgia, serif; font-weight: 500; letter-spacing: -.015em; }
+  h1 { font-size: 30px; margin: 0 0 6px; }
+  h2 { font-size: 21px; margin: 40px 0 12px; }
+  p.lead { color: var(--ink-subtle); max-width: 720px; margin: 0; }
+  .swatches { display: grid; grid-template-columns: repeat(auto-fill, minmax(130px, 1fr)); gap: 10px; }
+  .sw { border: 1px solid var(--line); border-radius: 12px; overflow: hidden; background: var(--surface); }
+  .sw div { height: 56px; }
+  .sw p { margin: 0; padding: 8px 10px; font-size: 12px; color: var(--ink-muted); }
+  .sw b { display: block; color: var(--ink); font-size: 12.5px; }
+  .compare { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+  @media (max-width: 760px) { .compare { grid-template-columns: 1fr; } }
+  .panel { background: var(--surface); border: 1px solid var(--line); border-radius: 16px; padding: 20px; }
+  .panel h3 { margin: 0 0 14px; font-size: 13px; text-transform: uppercase; letter-spacing: .06em; color: var(--ink-faint); }
+  .btn { display: inline-flex; align-items: center; justify-content: center; min-height: 44px; padding: 0 18px; border-radius: 12px; font-weight: 600; border: 0; color: #fff; }
+  .row { display: flex; flex-wrap: wrap; gap: 10px; align-items: center; margin-bottom: 12px; }
+  .nav { display: flex; flex-direction: column; gap: 2px; width: 220px; }
+  .nav span { padding: 10px 12px; border-radius: 10px; font-size: 13.5px; color: var(--ink-muted); font-weight: 500; }
+  .notice { border-radius: 12px; padding: 12px 14px; font-size: 13px; }
+  /* Ecran de connexion */
+  .login { display: grid; grid-template-columns: 46% 1fr; border: 1px solid var(--line); border-radius: 18px; overflow: hidden; background: var(--canvas); min-height: 560px; }
+  @media (max-width: 860px) { .login { grid-template-columns: 1fr; } .login aside { min-height: 360px; } }
+  .login aside { position: relative; background: var(--a) url('../../Math_Edu_Application/public/images/connexion.webp') center/cover; color: #fff; display: flex; flex-direction: column; justify-content: space-between; padding: 28px; }
+  .login aside::before { content: ''; position: absolute; inset: 0; background: linear-gradient(180deg, rgba(2,101,200,.88) 0%, rgba(2,101,200,.35) 45%, rgba(3,74,143,.92) 100%); }
+  .login aside > * { position: relative; }
+  .brand { display: flex; align-items: center; gap: 10px; font-weight: 700; letter-spacing: .08em; font-size: 18px; }
+  .brand img { width: 40px; height: 40px; }
+  .login aside p { font-family: Fraunces, Georgia, serif; font-size: 19px; max-width: 360px; margin: 0; }
+  .form { padding: 36px 28px; max-width: 420px; width: 100%; margin: auto; }
+  .form h4 { font-family: Fraunces, Georgia, serif; font-weight: 500; font-size: 28px; margin: 0 0 6px; }
+  .field { display: flex; flex-direction: column; gap: 6px; margin-bottom: 12px; }
+  .field label { font-size: 12px; font-weight: 600; color: #334155; }
+  .field input { height: 46px; border: 1px solid var(--line); border-radius: 12px; padding: 0 14px; font: inherit; background: #fff; }
+  .field input:focus { outline: none; border-color: var(--a); box-shadow: 0 0 0 4px rgba(2,101,200,.14); }
+  .seg { display: grid; grid-template-columns: repeat(3, 1fr); background: var(--muted); border-radius: 12px; padding: 4px; margin-bottom: 16px; }
+  .seg span { text-align: center; padding: 9px 0; border-radius: 9px; font-weight: 600; font-size: 13px; color: var(--ink-subtle); }
+  .seg span.on { background: #fff; color: var(--a700); box-shadow: 0 1px 2px rgba(15,23,42,.08); }
+  /* En-tete mobile */
+  .phone { width: 360px; max-width: 100%; border: 1px solid var(--line); border-radius: 24px; overflow: hidden; background: var(--canvas); }
+  .phone header { display: flex; justify-content: space-between; align-items: center; padding: 12px 16px; background: #fff; border-bottom: 1px solid #EDEAE3; }
+  .chip { border: 1px solid var(--line); border-radius: 10px; padding: 5px 9px; font-size: 12px; font-weight: 600; color: var(--ink-muted); }
+  .avatar { width: 32px; height: 32px; border-radius: 50%; display: grid; place-items: center; font-size: 12px; font-weight: 700; background: var(--a50); color: var(--a700); }
+  .phone .body { padding: 18px 16px; }
+  .card { background: #fff; border: 1px solid var(--line); border-radius: 16px; padding: 16px; margin-bottom: 12px; }
+  .bar { height: 8px; border-radius: 99px; background: var(--muted); overflow: hidden; }
+  .bar i { display: block; height: 100%; background: var(--mastered); }
+  .tabbar { display: flex; justify-content: space-around; padding: 10px 6px 14px; background: #fff; border-top: 1px solid #EDEAE3; font-size: 10.5px; font-weight: 500; color: var(--ink-faint); }
+  .tabbar .on { color: var(--a700); font-weight: 600; }
+  table { border-collapse: collapse; width: 100%; font-size: 13px; background: #fff; border: 1px solid var(--line); border-radius: 12px; overflow: hidden; }
+  td, th { padding: 9px 12px; border-bottom: 1px solid #EDEAE3; text-align: left; }
+  th { font-size: 11.5px; text-transform: uppercase; letter-spacing: .05em; color: var(--ink-faint); }
+  .ok { color: #047857; font-weight: 600; } .ko { color: var(--wrong); font-weight: 600; }
+  .deco { display: flex; gap: 6px; }
+  .deco i { width: 18px; height: 6px; border-radius: 3px; display: block; }
+</style>
+</head>
+<body>
+<main>
+  <h1>Racine : palette dérivée du logo</h1>
+  <p class="lead">Proposition pour le sprint 1, point 7. Seul l'accent change : l'indigo devient le bleu du logo. Les couleurs d'état (vert maîtrisé, ambre en cours, rouge erreur) restent, car elles portent un sens. L'orange, le jaune, le vert et le bleu ciel du logo ne servent que de décor : aucun n'est assez contrasté pour du texte.</p>
+
+  <h2>1. L'accent proposé</h2>
+  <div class="swatches">
+    <div class="sw"><div style="background:var(--a50)"></div><p><b>accent-50</b>#EAF3FC</p></div>
+    <div class="sw"><div style="background:var(--a100)"></div><p><b>accent-100</b>#D3E5F8</p></div>
+    <div class="sw"><div style="background:var(--a200)"></div><p><b>accent-200</b>#A9CDF1</p></div>
+    <div class="sw"><div style="background:var(--a300)"></div><p><b>accent-300</b>#5C9FE2</p></div>
+    <div class="sw"><div style="background:var(--a)"></div><p><b>accent</b>#0265C8 (logo)</p></div>
+    <div class="sw"><div style="background:var(--a600)"></div><p><b>accent-600</b>#0257AD</p></div>
+    <div class="sw"><div style="background:var(--a700)"></div><p><b>accent-700</b>#034A8F</p></div>
+  </div>
+
+  <h2>2. Couleurs du logo, en décor seulement</h2>
+  <div class="swatches">
+    <div class="sw"><div style="background:var(--b-pi)"></div><p><b>π</b>#F8B810</p></div>
+    <div class="sw"><div style="background:var(--b-vert)"></div><p><b>÷ et feuilles</b>#91D94F</p></div>
+    <div class="sw"><div style="background:var(--b-orange)"></div><p><b>×</b>#FC7243</p></div>
+    <div class="sw"><div style="background:var(--b-ciel)"></div><p><b>√</b>#88D0F8</p></div>
+    <div class="sw"><div style="background:var(--b-jaune)"></div><p><b>+</b>#FCD05A</p></div>
+  </div>
+
+  <h2>3. Contrastes (WCAG AA : 4,5 pour du texte, 3 pour un gros titre ou une icône)</h2>
+  <table>
+    <tr><th>Combinaison</th><th>Contraste</th><th>AA texte</th></tr>
+    <tr><td>Texte blanc sur bouton bleu #0265C8</td><td>5,68</td><td class="ok">oui</td></tr>
+    <tr><td>Bleu #0265C8 (lien) sur fond #FAFAF8</td><td>5,43</td><td class="ok">oui</td></tr>
+    <tr><td>accent-700 sur accent-50 (onglet actif, pastille)</td><td>7,87</td><td class="ok">oui</td></tr>
+    <tr><td>Ancien : texte blanc sur indigo #6366F1</td><td>4,47</td><td class="ko">non</td></tr>
+    <tr><td>Orange × sur blanc</td><td>2,75</td><td class="ko">non : décor seulement</td></tr>
+    <tr><td>Jaune + sur bleu du logo</td><td>3,87</td><td>icône seulement</td></tr>
+  </table>
+
+  <h2>4. Avant, après</h2>
+  <div class="compare">
+    <div class="panel">
+      <h3>Aujourd'hui (indigo)</h3>
+      <div class="row"><span class="btn" style="background:var(--i)">Commencer</span><span style="color:var(--i);font-weight:600">Se connecter</span></div>
+      <div class="nav">
+        <span style="background:var(--i50);color:var(--i700);font-weight:600">Espace de travail</span>
+        <span>Mon parcours</span><span>Cartes mémoire</span>
+      </div>
+    </div>
+    <div class="panel">
+      <h3>Proposé (bleu du logo)</h3>
+      <div class="row"><span class="btn" style="background:var(--a)">Commencer</span><span style="color:var(--a);font-weight:600">Se connecter</span></div>
+      <div class="nav">
+        <span style="background:var(--a50);color:var(--a700);font-weight:600">Espace de travail</span>
+        <span>Mon parcours</span><span>Cartes mémoire</span>
+      </div>
+    </div>
+  </div>
+
+  <h2>5. Écran de connexion, avec ta photo</h2>
+  <div class="login">
+    <aside>
+      <div class="brand"><img src="../../Math_Edu_Application/public/brand/racine-symbole.png" alt="">RACINE</div>
+      <p>On remonte à la racine de la difficulté, puis on ne travaille que ça.</p>
+    </aside>
+    <div class="form">
+      <h4>Créer un compte</h4>
+      <p style="color:var(--ink-subtle);margin:0 0 18px">Déjà inscrit ? <span style="color:var(--a);font-weight:600">Se connecter</span></p>
+      <div class="seg"><span class="on">Élève</span><span>Professeur</span><span>Parent</span></div>
+      <div class="field"><label>Prénom</label><input placeholder="Léa"></div>
+      <div class="field"><label>Email</label><input placeholder="lea.d@email.fr"></div>
+      <span class="btn" style="background:var(--a);width:100%;margin-top:6px">Créer mon compte</span>
+      <div class="deco" style="margin-top:20px;justify-content:center"><i style="background:var(--b-pi)"></i><i style="background:var(--b-vert)"></i><i style="background:var(--b-orange)"></i><i style="background:var(--b-ciel)"></i><i style="background:var(--b-jaune)"></i></div>
+    </div>
+  </div>
+  <p class="lead" style="margin-top:8px">Sur téléphone, la photo passe en bandeau de 180 px au-dessus du formulaire. Un voile bleu garantit la lisibilité du texte blanc sur la photo.</p>
+
+  <h2>6. Espace de travail, sur téléphone (360 px)</h2>
+  <div class="phone">
+    <header>
+      <span class="brand" style="font-size:15px;color:var(--a700)"><img src="../../Math_Edu_Application/public/brand/racine-symbole-fond-clair.png" alt="" style="width:30px;height:30px">RACINE</span>
+      <span class="row" style="margin:0;gap:8px"><span class="chip">5e</span><span class="avatar">LD</span></span>
+    </header>
+    <div class="body">
+      <h1 style="font-size:24px">Bonjour Léa</h1>
+      <p style="color:var(--ink-subtle);margin:0 0 14px">25 minutes aujourd'hui : 3 exercices prioritaires et 2 révisions.</p>
+      <div class="card">
+        <div style="font-size:11px;text-transform:uppercase;letter-spacing:.06em;color:var(--ink-faint);font-weight:600;margin-bottom:6px">Priorité du jour</div>
+        <div style="font-weight:600;margin-bottom:10px">Comparer des fractions</div>
+        <div class="bar" style="margin-bottom:12px"><i style="width:55%"></i></div>
+        <span class="btn" style="background:var(--a);width:100%">Continuer</span>
+      </div>
+      <div class="notice" style="background:#FFFBEB;color:#92400E">En attente de l'accord de parent@email.fr. <u>Renvoyer l'email</u></div>
+    </div>
+    <div class="tabbar"><span class="on">Travail</span><span>Parcours</span><span>Cartes</span><span>Cours</span><span>Profil</span></div>
+  </div>
+</main>
+</body>
+</html>
