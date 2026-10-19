@@ -1,3 +1,5 @@
+> **HISTORIQUE, ne plus suivre (19 octobre 2026).** L'état du projet et le backlog des prochains sprints sont dans `../CLAUDE.md`, qui fait foi.
+
 # Où en est l'application, et ce qui reste à faire
 
 > **À lire en premier** pour reprendre le projet. Ce fichier dit l'état réel du
