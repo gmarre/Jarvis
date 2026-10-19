@@ -40,9 +40,10 @@ Application web d'apprentissage adaptatif des mathématiques, CP à Terminale à
 Étapes faites (bilans détaillés dans `Spécifications DAG, Exos, Mindcards/QUALITY.md`) : tranche pilote A et C ; 1 calcul ; 2 décimaux ; 3 proportionnalité ; 4a grandeurs et mesures ; figures (reprise de 30 exercices) ; 4b géométrie ; 5 relatifs et arithmétique (5e à 3e).
 
 Restes connus sur le contenu :
-- 6 cartes anciennes en `brouillon` : MM-A-01, MM-A-02, MM-C-01 à MM-C-04 ;
-- 7 compétences CE1 signalées « anomalie de coordination » dans `RELECTURE.md` (A004, A005, A006, A008, C001, C003, C009) ;
-- C009 dépasse le plafond de mots du CE1.
+- **tranche pilote incomplète : 23 compétences (A001 à A011, C001 à C012, CP à CM) n'ont que 3 exercices** au lieu de 6, avec des QCM dont la bonne réponse est souvent en « a » (le mélange à l'affichage le masque à l'élève, pas au validateur). À compléter par le circuit complet, de préférence avec l'étape 6 qui reprend le domaine C ;
+- MM-A-01 couvre 12 compétences (règle : 4 à 8) : à scinder lors de cette reprise ;
+- le validateur réserve `<` et `>` aux descendants de A006 (CE1), alors que le programme du CP les emploie déjà : à vérifier dans le programme avant de changer la règle ;
+- les 4 citations manquantes (A004, A005, A006, A008), les énoncés trop longs de C001, C003, C009 et les 6 cartes en brouillon sont repris le 20 octobre 2026 (en relecture).
 
 ### 2.2 Application
 
