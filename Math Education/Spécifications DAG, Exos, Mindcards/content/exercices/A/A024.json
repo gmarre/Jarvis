@@ -1,0 +1,176 @@
+[
+  {
+    "id": "EX-A024-D-01",
+    "skill_id": "A024",
+    "level": "decouverte",
+    "type": "vrai_faux",
+    "statement": "Un nombre premier a exactement deux diviseurs : 1 et lui-même. Les diviseurs de 15 sont 1, 3, 5 et 15.\n\nVrai ou faux : 15 est un nombre premier.",
+    "image": null,
+    "answer": {
+      "value": false
+    },
+    "solution_steps": [
+      "Un nombre premier a exactement deux diviseurs : 1 et lui-même.",
+      "15 en a quatre : 1, 3, 5 et 15. Il en a trop : 15 n'est **pas** premier. La phrase est fausse.",
+      "On le voit dans la table de 3 ou de 5 : 15 = 3 × 5. Dès qu'un nombre s'écrit comme produit de deux entiers différents de 1, il n'est pas premier.",
+      "15 est impair, mais cela ne suffit pas : être impair ne rend pas un nombre premier."
+    ],
+    "hint": "Compte les diviseurs de 15. Combien un nombre premier doit-il en avoir ?",
+    "estimated_duration_s": 45,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, classe de 5e, Nombres et calculs, Opérations, Prolongements possibles : « Notion de nombre premier et développements sur ce thème (existence d'un nombre infini de nombres premiers, crible d'Ératosthène, etc.). »"
+  },
+  {
+    "id": "EX-A024-D-02",
+    "skill_id": "A024",
+    "level": "decouverte",
+    "type": "qcm",
+    "statement": "Un nombre premier a exactement deux diviseurs : 1 et lui-même.\n\nLequel de ces nombres est premier ?",
+    "image": null,
+    "choices": [
+      {
+        "key": "a",
+        "text": "2",
+        "misconception": null
+      },
+      {
+        "key": "b",
+        "text": "1",
+        "misconception": "L'élève compte 1 parmi les nombres premiers parce qu'il n'est divisible que par 1 et par lui-même. Mais « 1 et lui-même », c'est ici le même nombre : 1 n'a qu'un seul diviseur, pas deux."
+      },
+      {
+        "key": "c",
+        "text": "9",
+        "misconception": "L'élève pense qu'un nombre impair est premier. Mais 9 = 3 × 3 : il a trois diviseurs, 1, 3 et 9."
+      }
+    ],
+    "answer": {
+      "value": "a"
+    },
+    "solution_steps": [
+      "On compte les diviseurs de chaque nombre.",
+      "1 n'a qu'un diviseur, lui-même : il n'en a pas deux, il n'est pas premier.",
+      "9 a trois diviseurs : 1, 3 et 9, car 9 = 3 × 3. Il n'est pas premier, même s'il est impair.",
+      "2 a exactement deux diviseurs, 1 et 2 : il est **premier**. C'est le seul nombre premier pair, puisque tout autre nombre pair est divisible par 2."
+    ],
+    "hint": "Pour chaque nombre, écris la liste de ses diviseurs et compte-les.",
+    "estimated_duration_s": 60,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, classe de 5e, Nombres et calculs, Opérations, Prolongements possibles : « Notion de nombre premier et développements sur ce thème (existence d'un nombre infini de nombres premiers, crible d'Ératosthène, etc.). »"
+  },
+  {
+    "id": "EX-A024-E-01",
+    "skill_id": "A024",
+    "level": "entrainement",
+    "type": "texte",
+    "statement": "Parmi 31, 33, 35, 37 et 39, lesquels sont des nombres premiers ?\n\nÉcris-les du plus petit au plus grand, séparés par des virgules.",
+    "image": null,
+    "answer": {
+      "value": "31, 37",
+      "accepted": [
+        "31,37",
+        "31 ; 37",
+        "31 37",
+        "31 et 37",
+        "37, 31",
+        "37,31",
+        "37 ; 31",
+        "37 et 31"
+      ]
+    },
+    "solution_steps": [
+      "On cherche, pour chaque nombre, un diviseur autre que 1 et lui-même, avec les tables et les critères de divisibilité.",
+      "33 : 3 + 3 = 6, il est divisible par 3 (33 = 3 × 11). 39 : 3 + 9 = 12, il est divisible par 3 (39 = 3 × 13). 35 finit par 5 (35 = 5 × 7). Aucun des trois n'est premier.",
+      "31 : il est impair, 3 + 1 = 4 n'est pas dans la table de 3, il ne finit ni par 0 ni par 5, et 7 × 4 = 28, 7 × 5 = 35 sautent 31. Il n'a que deux diviseurs : 31 est premier.",
+      "37 : impair, 3 + 7 = 10 n'est pas dans la table de 3, il ne finit ni par 0 ni par 5, et 7 × 5 = 35, 7 × 6 = 42 sautent 37. 37 est premier.",
+      "Inutile de chercher plus loin : si 31 ou 37 s'écrivait a × b, avec a et b différents de 1 et non divisibles par 2, 3 ou 5, chaque facteur vaudrait au moins 7, et le produit au moins 7 × 7 = 49, trop grand.",
+      "Réponse : 31, 37."
+    ],
+    "hint": "Pour chaque nombre, cherche s'il est divisible par 2, par 3, par 5 ou par 7.",
+    "estimated_duration_s": 150,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, classe de 3e, Nombres et calculs, Multiples et diviseurs, Automatismes : « Appliquer les critères de divisibilité par 2, 3, 5, 9. »"
+  },
+  {
+    "id": "EX-A024-E-02",
+    "skill_id": "A024",
+    "level": "entrainement",
+    "type": "vrai_faux",
+    "statement": "Hugo affirme : « 57 n'est dans aucune table de multiplication de 2 à 9, donc 57 est un nombre premier. »\n\nVrai ou faux : Hugo a raison.",
+    "image": null,
+    "answer": {
+      "value": false
+    },
+    "solution_steps": [
+      "Les tables s'arrêtent à × 10 : un nombre peut avoir un diviseur sans apparaître dans une table apprise.",
+      "Critère par 3 : 5 + 7 = 12, qui est dans la table de 3. Donc 57 est divisible par 3.",
+      "En effet, 57 = 3 × 19. 57 a au moins quatre diviseurs : 1, 3, 19 et 57.",
+      "57 n'est **pas** premier : Hugo a tort."
+    ],
+    "hint": "Applique le critère de divisibilité par 3 à 57.",
+    "estimated_duration_s": 90,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, classe de 3e, Nombres et calculs, Multiples et diviseurs, Automatismes : « Appliquer les critères de divisibilité par 2, 3, 5, 9. »"
+  },
+  {
+    "id": "EX-A024-M-01",
+    "skill_id": "A024",
+    "level": "maitrise",
+    "type": "numerique",
+    "statement": "Quel est le plus petit nombre premier plus grand que 75 ?",
+    "image": null,
+    "answer": {
+      "value": 79
+    },
+    "solution_steps": [
+      "On teste les nombres qui suivent 75, un par un. 76 et 78 sont pairs, donc divisibles par 2 : on les écarte.",
+      "77 = 7 × 11 : il n'est pas premier.",
+      "79 : impair ; 7 + 9 = 16, qui n'est pas divisible par 3 ; il ne finit ni par 0 ni par 5 ; 7 × 11 = 77 et 7 × 12 = 84 sautent 79.",
+      "Inutile d'aller plus loin : 9 × 9 = 81 dépasse déjà 79, donc un produit de deux facteurs différents de 1 aurait un facteur entre 2 et 8, et on les a tous écartés. 79 a exactement deux diviseurs.",
+      "Le plus petit nombre premier plus grand que 75 est **79**. Le piège était 77 : il est impair et ne finit pas par 5, mais il vaut 7 × 11."
+    ],
+    "hint": "Écarte les nombres pairs et ceux qui finissent par 5. Pour les autres, pense au critère par 3 et à la table de 7.",
+    "estimated_duration_s": 180,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, classe de 3e, Nombres et calculs, Multiples et diviseurs, Automatismes : « Appliquer les critères de divisibilité par 2, 3, 5, 9. »"
+  },
+  {
+    "id": "EX-A024-M-02",
+    "skill_id": "A024",
+    "level": "maitrise",
+    "type": "qcm",
+    "statement": "Dans le nombre 4■, le chiffre des unités est caché. Ce nombre est premier.\n\nQuel peut être le chiffre caché ?",
+    "image": null,
+    "choices": [
+      {
+        "key": "a",
+        "text": "9",
+        "misconception": "L'élève vérifie 2, 3 et 5 mais oublie la table de 7 : 49 est impair, 4 + 9 = 13 n'est pas dans la table de 3, il ne finit pas par 5… mais 49 = 7 × 7."
+      },
+      {
+        "key": "b",
+        "text": "7",
+        "misconception": null
+      },
+      {
+        "key": "c",
+        "text": "5",
+        "misconception": "L'élève pense qu'un nombre qui finit par un chiffre premier est premier. Mais 45 finit par 5 : il est divisible par 5 (45 = 5 × 9)."
+      }
+    ],
+    "answer": {
+      "value": "b"
+    },
+    "solution_steps": [
+      "On teste chaque proposition : 49, 47 et 45.",
+      "45 finit par 5 : 45 = 5 × 9, il n'est pas premier.",
+      "49 = 7 × 7 : il a trois diviseurs, 1, 7 et 49. Il n'est pas premier.",
+      "47 : impair, 4 + 7 = 11 n'est pas dans la table de 3, il ne finit ni par 0 ni par 5, et 7 × 6 = 42, 7 × 7 = 49 sautent 47. 47 est **premier**.",
+      "Le chiffre caché peut être 7. (41 et 43 sont aussi premiers, mais 1 et 3 ne sont pas proposés.)"
+    ],
+    "hint": "Forme les trois nombres possibles et cherche, pour chacun, un diviseur autre que 1 et lui-même.",
+    "estimated_duration_s": 120,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, classe de 5e, Nombres et calculs, Opérations, Prolongements possibles : « Notion de nombre premier et développements sur ce thème (existence d'un nombre infini de nombres premiers, crible d'Ératosthène, etc.). »"
+  }
+]

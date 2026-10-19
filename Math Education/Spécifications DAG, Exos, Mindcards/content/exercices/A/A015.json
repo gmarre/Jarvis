@@ -1,0 +1,182 @@
+[
+  {
+    "id": "EX-A015-D-01",
+    "skill_id": "A015",
+    "level": "decouverte",
+    "type": "vrai_faux",
+    "statement": "Mia a 744 perles. Elle calcule 7 + 4 + 4 = 15, et 15 est dans la table de 3.\n\nVrai ou faux : Mia peut faire 3 colliers avec le même nombre de perles, sans qu'il en reste.",
+    "image": null,
+    "answer": {
+      "value": true
+    },
+    "solution_steps": [
+      "Un nombre est divisible par 3 quand la somme de ses chiffres est divisible par 3.",
+      "Ici, la somme des chiffres de 744 est 7 + 4 + 4 = 15, et 15 = 3 × 5 : elle est divisible par 3, donc 744 est divisible par 3.",
+      "Vérification : 3 × 248 = 744. Chaque collier a 248 perles et il n'en reste aucune : la phrase est **vraie**.",
+      "Pourquoi la somme des chiffres ? 744 = 7 × 100 + 4 × 10 + 4, avec 100 = 99 + 1 et 10 = 9 + 1. Donc 744 = 7 × 99 + 4 × 9 + (7 + 4 + 4). Les nombres 7 × 99 et 4 × 9 sont dans la table de 3 : tout dépend de 7 + 4 + 4, la somme des chiffres.",
+      "Attention : pour 3, le dernier chiffre ne suffit pas. 744 finit par 4, qui n'est pas dans la table de 3, et pourtant 744 est divisible par 3."
+    ],
+    "hint": "Regarde la somme des chiffres que Mia a calculée : est-elle dans la table de 3 ?",
+    "estimated_duration_s": 60,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, classe de 5e, Nombres et calculs, Opérations : « Connaitre les critères de divisibilité par 3 et par 9. »"
+  },
+  {
+    "id": "EX-A015-D-02",
+    "skill_id": "A015",
+    "level": "decouverte",
+    "type": "qcm",
+    "statement": "Un nombre est divisible par 9 quand la somme de ses chiffres est divisible par 9.\n\nLequel de ces nombres est divisible par 9 ?",
+    "image": null,
+    "choices": [
+      {
+        "key": "a",
+        "text": "3 618",
+        "misconception": null
+      },
+      {
+        "key": "b",
+        "text": "529",
+        "misconception": "L'élève regarde le dernier chiffre, comme pour 2, 5 ou 10 : 529 finit par 9. Mais pour 9, c'est la somme des chiffres qui compte : 5 + 2 + 9 = 16, qui n'est pas dans la table de 9."
+      },
+      {
+        "key": "c",
+        "text": "1 254",
+        "misconception": "L'élève trouve la somme des chiffres, 1 + 2 + 5 + 4 = 12, voit qu'elle est dans la table de 3 et confond le critère par 3 avec le critère par 9 : 12 n'est pas dans la table de 9."
+      }
+    ],
+    "answer": {
+      "value": "a"
+    },
+    "solution_steps": [
+      "On calcule la somme des chiffres de chaque nombre.",
+      "529 : 5 + 2 + 9 = 16. 1 254 : 1 + 2 + 5 + 4 = 12. 3 618 : 3 + 6 + 1 + 8 = 18.",
+      "Seule la somme 18 est dans la table de 9 (18 = 9 × 2) : 3 618 est divisible par 9. Vérification : 9 × 402 = 3 618.",
+      "529 finit par 9, mais cela ne compte pas : pour 9, on ne regarde pas le dernier chiffre.",
+      "1 254 est divisible par 3 (12 est dans la table de 3), mais pas par 9."
+    ],
+    "hint": "Additionne les chiffres de chaque nombre, puis cherche une somme qui est dans la table de 9.",
+    "estimated_duration_s": 75,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, classe de 5e, Nombres et calculs, Opérations : « Connaitre les critères de divisibilité par 3 et par 9. »"
+  },
+  {
+    "id": "EX-A015-E-01",
+    "skill_id": "A015",
+    "level": "entrainement",
+    "type": "texte",
+    "statement": "Parmi 1 033, 2 469, 4 503 et 7 360, lesquels sont divisibles par 3 ?\n\nÉcris-les du plus petit au plus grand, séparés par des virgules.",
+    "image": null,
+    "answer": {
+      "value": "2 469, 4 503",
+      "accepted": [
+        "2469, 4503",
+        "2469,4503",
+        "2 469 ; 4 503",
+        "2469 ; 4503",
+        "2469 4503",
+        "2469 et 4503",
+        "2 469 et 4 503",
+        "4 503, 2 469",
+        "4503, 2469",
+        "4503,2469",
+        "4503 ; 2469"
+      ]
+    },
+    "solution_steps": [
+      "On ne pose aucune division : on calcule la somme des chiffres de chaque nombre.",
+      "1 033 : 1 + 0 + 3 + 3 = 7, qui n'est pas dans la table de 3. 1 033 n'est pas divisible par 3, même s'il finit par 3.",
+      "2 469 : 2 + 4 + 6 + 9 = 21 = 3 × 7. 2 469 est divisible par 3.",
+      "4 503 : 4 + 5 + 0 + 3 = 12 = 3 × 4. 4 503 est divisible par 3.",
+      "7 360 : 7 + 3 + 6 + 0 = 16, qui n'est pas dans la table de 3. 7 360 n'est pas divisible par 3, même s'il est divisible par 10.",
+      "Réponse : 2 469, 4 503. Vérification : 3 × 823 = 2 469 et 3 × 1 501 = 4 503."
+    ],
+    "hint": "Pour chaque nombre, additionne ses chiffres. Le dernier chiffre ne dit rien pour 3.",
+    "estimated_duration_s": 120,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, classe de 5e, Nombres et calculs, Opérations : « Connaitre les critères de divisibilité par 3 et par 9. »"
+  },
+  {
+    "id": "EX-A015-E-02",
+    "skill_id": "A015",
+    "level": "entrainement",
+    "type": "numerique",
+    "statement": "Dans le nombre 7■4, le chiffre des dizaines est caché. Ce nombre est divisible par 9.\n\nQuel est le chiffre caché ?",
+    "image": null,
+    "answer": {
+      "value": 7
+    },
+    "solution_steps": [
+      "Le nombre est divisible par 9, donc la somme de ses chiffres est dans la table de 9.",
+      "La somme des chiffres vaut 7 + 4 + ■, c'est-à-dire 11 + ■.",
+      "Le chiffre caché va de 0 à 9 : la somme va donc de 11 à 20. Dans la table de 9, un seul nombre est entre 11 et 20 : 18.",
+      "11 + ■ = 18, donc ■ = 7. Le nombre est 774.",
+      "Vérification : 7 + 7 + 4 = 18 et 9 × 86 = 774."
+    ],
+    "hint": "Additionne les deux chiffres connus. Que faut-il ajouter pour tomber sur un nombre de la table de 9 ?",
+    "estimated_duration_s": 120,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, classe de 5e, Nombres et calculs, Opérations : « Connaitre les critères de divisibilité par 3 et par 9. »"
+  },
+  {
+    "id": "EX-A015-M-01",
+    "skill_id": "A015",
+    "level": "maitrise",
+    "type": "qcm",
+    "statement": "Dans le nombre 52■, le chiffre des unités est caché. Ce nombre est divisible par 3 et par 5.\n\nQuel est le chiffre caché ?",
+    "image": null,
+    "choices": [
+      {
+        "key": "a",
+        "text": "0",
+        "misconception": "L'élève n'applique que le critère par 5 : 520 finit par 0, il est bien divisible par 5. Mais 5 + 2 + 0 = 7 n'est pas dans la table de 3."
+      },
+      {
+        "key": "b",
+        "text": "2",
+        "misconception": "L'élève n'applique que le critère par 3 : 5 + 2 + 2 = 9, donc 522 est divisible par 3. Mais 522 finit par 2 : il n'est pas divisible par 5."
+      },
+      {
+        "key": "c",
+        "text": "5",
+        "misconception": null
+      }
+    ],
+    "answer": {
+      "value": "c"
+    },
+    "solution_steps": [
+      "Il faut que les deux conditions soient vraies en même temps. On commence par la plus restrictive : le critère par 5.",
+      "Un nombre est divisible par 5 quand il finit par 0 ou par 5. Le chiffre caché est donc 0 ou 5.",
+      "On teste ces deux nombres avec le critère par 3. Pour 520 : 5 + 2 + 0 = 7, pas dans la table de 3. Pour 525 : 5 + 2 + 5 = 12 = 3 × 4, dans la table de 3.",
+      "Le chiffre caché est 5. Vérification : 525 = 3 × 175 et 525 = 5 × 105.",
+      "522 est divisible par 3 mais pas par 5, et 520 par 5 mais pas par 3 : chacun ne vérifie qu'une des deux conditions."
+    ],
+    "hint": "Commence par le critère par 5 : il ne laisse que deux chiffres possibles. Teste-les ensuite avec le critère par 3.",
+    "estimated_duration_s": 150,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, classe de 5e, Nombres et calculs, Opérations : « Connaitre les critères de divisibilité par 3 et par 9. » ; Automatismes : « Mobiliser les critères de divisibilité par 2, 5 et 10 vus en CM1 et CM2. »"
+  },
+  {
+    "id": "EX-A015-M-02",
+    "skill_id": "A015",
+    "level": "maitrise",
+    "type": "vrai_faux",
+    "statement": "Sacha peut partager ses 2 136 billes en 3 sacs égaux. Elle en déduit qu'elle peut les partager en 9 sacs égaux, sans reste.\n\nVrai ou faux : Sacha a raison.",
+    "image": null,
+    "answer": {
+      "value": false
+    },
+    "solution_steps": [
+      "La somme des chiffres de 2 136 est 2 + 1 + 3 + 6 = 12.",
+      "12 est dans la table de 3 : 2 136 est bien divisible par 3 (3 × 712 = 2 136). Les 3 sacs sont possibles.",
+      "12 n'est pas dans la table de 9 : 2 136 n'est pas divisible par 9. Il resterait des billes (9 × 237 = 2 133, il en reste 3).",
+      "Sacha a donc **tort** : un nombre divisible par 3 n'est pas toujours divisible par 9.",
+      "Dans l'autre sens, c'est vrai : un nombre divisible par 9 est divisible par 3, puisque 9 = 3 × 3."
+    ],
+    "hint": "Calcule la somme des chiffres de 2 136. Est-elle dans la table de 3 ? Et dans la table de 9 ?",
+    "estimated_duration_s": 120,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, classe de 5e, Nombres et calculs, Opérations : « Connaitre les critères de divisibilité par 3 et par 9. »"
+  }
+]

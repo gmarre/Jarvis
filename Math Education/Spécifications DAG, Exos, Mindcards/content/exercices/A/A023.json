@@ -1,0 +1,172 @@
+[
+  {
+    "id": "EX-A023-D-01",
+    "skill_id": "A023",
+    "level": "decouverte",
+    "type": "qcm",
+    "statement": "Ce matin, il fait −3 °C à Lille et −8 °C à Strasbourg.\n\nOù fait-il le plus froid, et quel signe placer entre −3 et −8 ?",
+    "image": null,
+    "choices": [
+      {
+        "key": "a",
+        "text": "À Lille, donc −3 < −8",
+        "misconception": "L'élève compare les distances à zéro, 3 et 8, sans tenir compte du signe : il croit que −3 est plus petit que −8, donc qu'il fait plus froid à Lille."
+      },
+      {
+        "key": "b",
+        "text": "À Strasbourg, donc −3 > −8",
+        "misconception": null
+      },
+      {
+        "key": "c",
+        "text": "À Strasbourg, donc −3 < −8",
+        "misconception": "L'élève sait qu'il fait plus froid à Strasbourg, mais pense que 8 degrés sous zéro, « c'est plus » : il compare 8 et 3 et en déduit −8 > −3. Or la température la plus froide est le plus petit nombre."
+      }
+    ],
+    "answer": {
+      "value": "b"
+    },
+    "solution_steps": [
+      "−8 °C, c'est 8 degrés sous zéro ; −3 °C, seulement 3 degrés sous zéro. Plus on descend sous zéro, plus il fait froid : il fait plus froid à Strasbourg.",
+      "La température la plus froide est le plus petit nombre : −8 est plus petit que −3. On écrit −8 < −3, ou, dans l'autre sens, −3 > −8.",
+      "Règle : de deux nombres négatifs, le plus petit est le plus éloigné de zéro. La distance à zéro de −8 est 8, celle de −3 est 3.",
+      "Piège : comparer 8 et 3 sans regarder le signe fait croire que −8 est le plus grand. La bonne réponse est b."
+    ],
+    "hint": "Sur un thermomètre, lequel des deux nombres est placé le plus bas ?",
+    "estimated_duration_s": 60,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, 5e : comparer et ranger dans l'ordre croissant et décroissant des nombres décimaux relatifs."
+  },
+  {
+    "id": "EX-A023-D-02",
+    "skill_id": "A023",
+    "level": "decouverte",
+    "type": "numerique",
+    "statement": "Une nuit de janvier, on relève la température dans quatre villes, en °C : −2 ; 1 ; −6 ; −5.\n\nQuelle est la température la plus basse ?",
+    "image": null,
+    "answer": {
+      "value": -6,
+      "unit": "°C",
+      "accepted": [
+        "-6°",
+        "-6 degrés"
+      ]
+    },
+    "solution_steps": [
+      "La température la plus basse est le plus petit des quatre nombres.",
+      "1 est positif : il est plus grand que tous les nombres négatifs. On le met de côté.",
+      "Restent −2, −6 et −5. De deux nombres négatifs, le plus petit est le plus éloigné de zéro. Les distances à zéro sont 2, 6 et 5 : la plus grande est 6.",
+      "La température la plus basse est −6 °C. Piège : choisir −2 parce que 2 est le plus petit des nombres écrits sans leur signe."
+    ],
+    "hint": "Imagine les quatre températures sur un thermomètre : laquelle est placée le plus bas ?",
+    "estimated_duration_s": 60,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, 5e : comparer et ranger dans l'ordre croissant et décroissant des nombres décimaux relatifs."
+  },
+  {
+    "id": "EX-A023-E-01",
+    "skill_id": "A023",
+    "level": "entrainement",
+    "type": "qcm",
+    "statement": "Range ces nombres dans l'ordre croissant : −1,5 ; 0,8 ; −3 ; −1,25 ; 2.\n\nQuel est le bon rangement ?",
+    "image": null,
+    "choices": [
+      {
+        "key": "a",
+        "text": "0,8 ; −1,25 ; −1,5 ; 2 ; −3",
+        "misconception": "L'élève range les nombres selon leur distance à zéro (0,8 ; 1,25 ; 1,5 ; 2 ; 3), sans tenir compte du signe."
+      },
+      {
+        "key": "b",
+        "text": "−1,25 ; −1,5 ; −3 ; 0,8 ; 2",
+        "misconception": "L'élève place bien les négatifs avant les positifs, mais range les négatifs comme des positifs : il croit que −1,25 est le plus petit parce que sa distance à zéro est la plus petite."
+      },
+      {
+        "key": "c",
+        "text": "−3 ; −1,25 ; −1,5 ; 0,8 ; 2",
+        "misconception": "L'élève sait que le plus éloigné de zéro est le plus petit, mais compare 1,5 et 1,25 en lisant 25 > 5 : il croit 1,25 plus éloigné de zéro que 1,5. Or 1,5 = 1,50, et 50 centièmes, c'est plus que 25 centièmes."
+      },
+      {
+        "key": "d",
+        "text": "−3 ; −1,5 ; −1,25 ; 0,8 ; 2",
+        "misconception": null
+      }
+    ],
+    "answer": {
+      "value": "d"
+    },
+    "solution_steps": [
+      "Croissant : du plus petit au plus grand. Les négatifs sont plus petits que les positifs : −1,5 ; −3 et −1,25 viennent avant 0,8 et 2.",
+      "Entre négatifs, le plus petit est le plus éloigné de zéro. Distances à zéro : 1,5 ; 3 ; 1,25. On écrit 1,5 = 1,50 pour comparer avec 1,25 : 3 > 1,50 > 1,25.",
+      "Donc −3 < −1,5 < −1,25. Pour les positifs, 0,8 < 2.",
+      "Rangement : −3 ; −1,5 ; −1,25 ; 0,8 ; 2. La bonne réponse est d."
+    ],
+    "hint": "Range d'abord les trois négatifs entre eux : lequel est le plus loin de zéro ?",
+    "estimated_duration_s": 90,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, 5e : comparer et ranger dans l'ordre croissant et décroissant des nombres décimaux relatifs."
+  },
+  {
+    "id": "EX-A023-E-02",
+    "skill_id": "A023",
+    "level": "entrainement",
+    "type": "vrai_faux",
+    "statement": "Léa affirme : « −0,7 est plus petit que −0,65, car 0,7 est plus grand que 0,65. »\n\nA-t-elle raison ?",
+    "image": null,
+    "answer": {
+      "value": true
+    },
+    "solution_steps": [
+      "On compare d'abord les distances à zéro, 0,7 et 0,65. On écrit 0,7 = 0,70 : 70 centièmes, c'est plus que 65 centièmes, donc 0,7 > 0,65.",
+      "−0,7 est donc plus éloigné de zéro que −0,65. De deux nombres négatifs, le plus éloigné de zéro est le plus petit : −0,7 < −0,65.",
+      "Léa a raison : c'est **vrai**. Pour deux nombres négatifs, l'ordre des distances à zéro s'inverse.",
+      "Piège : comparer 65 et 7 comme des entiers fait croire que 0,65 est plus grand que 0,7, et conduit à dire que Léa a tort."
+    ],
+    "hint": "Écris 0,7 avec deux chiffres après la virgule, puis pense à l'ordre des nombres négatifs.",
+    "estimated_duration_s": 90,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, 5e : comparer et ranger dans l'ordre croissant et décroissant des nombres décimaux relatifs."
+  },
+  {
+    "id": "EX-A023-M-01",
+    "skill_id": "A023",
+    "level": "maitrise",
+    "type": "vrai_faux",
+    "statement": "Vrai ou faux : de deux nombres relatifs, le plus grand est toujours celui qui a la plus grande distance à zéro.",
+    "image": null,
+    "answer": {
+      "value": false
+    },
+    "solution_steps": [
+      "Pour deux nombres positifs, c'est juste : 9 est plus éloigné de zéro que 4, et 9 > 4.",
+      "Pour deux nombres négatifs, c'est l'inverse : −9 est plus éloigné de zéro que −4, mais −9 < −4.",
+      "Et un négatif peut être plus éloigné de zéro qu'un positif tout en étant plus petit : la distance à zéro de −5 est 5, celle de 1 est 1, mais −5 < 1.",
+      "Un seul contre-exemple suffit : l'affirmation est **fausse**. Pour comparer, on regarde d'abord le signe ; la distance à zéro ne décide qu'entre deux nombres de même signe."
+    ],
+    "hint": "Teste l'affirmation sur deux nombres négatifs.",
+    "estimated_duration_s": 120,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, 5e : comparer et ranger dans l'ordre croissant et décroissant des nombres décimaux relatifs."
+  },
+  {
+    "id": "EX-A023-M-02",
+    "skill_id": "A023",
+    "level": "maitrise",
+    "type": "numerique",
+    "statement": "Je suis un nombre entier négatif. Je suis plus grand que −4,5, et ma distance à zéro est plus grande que 3.\n\nQui suis-je ?",
+    "image": null,
+    "answer": {
+      "value": -4
+    },
+    "solution_steps": [
+      "Les entiers négatifs plus grands que −4,5 sont ceux qui sont plus proches de zéro : −4 ; −3 ; −2 ; −1 et 0 (zéro est à la fois positif et négatif). Attention : −5 est plus petit que −4,5, il ne convient pas.",
+      "Leurs distances à zéro : 4 ; 3 ; 2 ; 1 ; 0. Une seule est plus grande que 3 : celle de −4. Celle de −3 vaut 3, ce n'est pas plus grand que 3.",
+      "Je suis **−4**. Vérification : −4 > −4,5, et la distance à zéro de −4 est 4, plus grande que 3.",
+      "Piège : répondre −5, qui a bien une distance à zéro plus grande que 3, mais qui est plus petit que −4,5."
+    ],
+    "hint": "Écris d'abord tous les entiers négatifs plus grands que −4,5.",
+    "estimated_duration_s": 120,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, 5e : comparer et ranger dans l'ordre croissant et décroissant des nombres décimaux relatifs."
+  }
+]

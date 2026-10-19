@@ -21,23 +21,23 @@ Application web d'apprentissage adaptatif des mathématiques, CP à Terminale à
 
 ## 2. État au 19 octobre 2026
 
-### 2.1 Contenu (publié en base, commit 8574078)
+### 2.1 Contenu (étape 5 fusionnée le 19 octobre 2026)
 
-**150 compétences, 847 exercices (dont 241 avec figure), 30 cartes mentales**, tous en `relu_agent` (relus par agents), en attente de la recette de Marius.
+**170 compétences, 967 exercices (dont 262 avec figure), 35 cartes mentales**, tous en `relu_agent` (relus par agents), en attente de la recette de Marius.
 
 | Domaine | Compétences | Classes couvertes |
 |---|---|---|
-| A Numération | 17 | CP à CM2 |
-| B Calcul | 22 | CP à 6e |
+| A Numération | 28 | CP à 3e (relatifs, repère, arithmétique du cycle 4) |
+| B Calcul | 31 | CP à 4e (opérations sur les relatifs, priorités) |
 | C Fractions | 18 | CE1 à 3e (cycle 4 très partiel : 4 compétences) |
 | D Décimaux | 19 | CE1 à 6e |
 | E Proportionnalité, pourcentages | 17 | CM1 à 5e |
 | G Espace et géométrie | 30 | CP à 6e |
 | P Grandeurs et mesures | 27 | CP à 6e |
 
-**Constat :** le **cycle 3 (CM1 à 6e) et le cycle 2 sont couverts ; le cycle 4 (5e, 4e, 3e) est presque vide.** Plan pour aller au bout de la 3e : §7.
+**Constat :** le **cycle 3 (CM1 à 6e) et le cycle 2 sont couverts ; le cycle 4 (5e, 4e, 3e) commence** (étape 5 : relatifs et arithmétique). Plan pour aller au bout de la 3e : §7.
 
-Étapes faites (bilans détaillés dans `Spécifications DAG, Exos, Mindcards/QUALITY.md`) : tranche pilote A et C ; 1 calcul ; 2 décimaux ; 3 proportionnalité ; 4a grandeurs et mesures ; figures (reprise de 30 exercices) ; 4b géométrie.
+Étapes faites (bilans détaillés dans `Spécifications DAG, Exos, Mindcards/QUALITY.md`) : tranche pilote A et C ; 1 calcul ; 2 décimaux ; 3 proportionnalité ; 4a grandeurs et mesures ; figures (reprise de 30 exercices) ; 4b géométrie ; 5 relatifs et arithmétique (5e à 3e).
 
 Restes connus sur le contenu :
 - 6 cartes anciennes en `brouillon` : MM-A-01, MM-A-02, MM-C-01 à MM-C-04 ;
@@ -163,7 +163,7 @@ Ce qui est faux ou absent aujourd'hui (repris dans le backlog §6) :
    - bilan dans `QUALITY.md`, compteurs dans ce fichier ;
    - commit, puis `publier.py --apply`.
 
-Modèles de consignes : `Spécifications DAG, Exos, Mindcards/modeles_agents/consigne_*_etape4b.md`. Ce sont les plus complètes, avec toutes les règles de figures.
+Modèles de consignes : `Spécifications DAG, Exos, Mindcards/modeles_agents/consigne_*_etape5.md` (les plus récentes, cycle 4, avec la consigne des cartes) et `consigne_*_etape4b.md` (toutes les règles de figures).
 
 **Python :** recréer un venv (`python -m venv venv`, `pip install -r scripts/requirements.lock.txt`), puis lancer avec `PYTHONIOENCODING=utf-8`. Validation : `scripts/validate_content.py` ; un lot seul : `scripts/check_lot.py`.
 
@@ -263,7 +263,7 @@ Décisions prises en route : la page publique du parent est `/accord/:jeton` (co
     - jeton haché, valable 7 jours ;
     - page `/consentement/:token` et bouton « Renvoyer » limité en fréquence.
 
-**Contenu (agents, en parallèle) :** étape 5 du §7 (nombres relatifs et arithmétique). Cartographe fait et arbitré le 19 octobre 2026 : 20 compétences renumérotées (`_travail/etape5_dag_AB.*`, 13 recommandations validées). Correction, validateur (négatif avant la 5e, |x| interdit) et générateurs `droite_graduee`, `repere` prêts. Rédacteurs lancés en 4 lots (`_travail/brief_etape5.md`). Remettre aussi au propre les 6 cartes en brouillon et les 7 anomalies CE1 (§2.1).
+**Contenu (agents, en parallèle) :** étape 5 du §7 **faite** le 19 octobre 2026 (20 compétences, 120 exercices, 5 cartes, aucune réponse fausse en relecture ; bilan dans `QUALITY.md`). Consignes rangées en modèles : `modeles_agents/consigne_*_etape5.md`. Remettre aussi au propre les 6 cartes en brouillon et les 7 anomalies CE1 (§2.1).
 
 ### Sprint 2 : Pédagogie de l'élève
 

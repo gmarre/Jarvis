@@ -10462,6 +10462,782 @@ Un bassin rond a un diamètre de 30 m. Un bassin carré a des côtés de 30 m. E
 
 ---
 
+## `A015` · Critères de divisibilité par 3 et par 9 — 5e, difficulté 4
+
+*Savoir qu'un entier est divisible par 3 (par 9) lorsque la somme de ses chiffres est divisible par 3 (par 9), et l'appliquer à des entiers de trois à six chiffres ; savoir qu'un nombre divisible par 9 l'est aussi par 3, la réciproque étant fausse (12 est divisible par 3, pas par 9). Combiner avec les critères par 2, 5 et 10 du cours moyen. L'erreur type est de regarder le dernier chiffre pour 3 ou 9, ou d'appliquer la somme des chiffres au critère par 2 ou par 5. Figure : aucune.*
+
+> « Connaitre les critères de divisibilité par 3 et par 9. » — *Cycle 4, classe de 5e, Nombres et calculs, Opérations, Objectifs d'apprentissage*
+> « Mobiliser les critères de divisibilité par 2, 5 et 10 vus en CM1 et CM2. » — *Cycle 4, classe de 5e, Nombres et calculs, Opérations, Automatismes*
+
+**EX-A015-D-01** — decouverte, vrai_faux, 60 s
+
+Mia a 744 perles. Elle calcule 7 + 4 + 4 = 15, et 15 est dans la table de 3. Vrai ou faux : Mia peut faire 3 colliers avec le même nombre de perles, sans qu'il en reste.
+
+**Réponse :** True
+
+*Corrigé.* (1) Un nombre est divisible par 3 quand la somme de ses chiffres est divisible par 3. (2) Ici, la somme des chiffres de 744 est 7 + 4 + 4 = 15, et 15 = 3 × 5 : elle est divisible par 3, donc 744 est divisible par 3. (3) Vérification : 3 × 248 = 744. Chaque collier a 248 perles et il n'en reste aucune : la phrase est vraie. (4) Pourquoi la somme des chiffres ? 744 = 7 × 100 + 4 × 10 + 4, avec 100 = 99 + 1 et 10 = 9 + 1. Donc 744 = 7 × 99 + 4 × 9 + (7 + 4 + 4). Les nombres 7 × 99 et 4 × 9 sont dans la table de 3 : tout dépend de 7 + 4 + 4, la somme des chiffres. (5) Attention : pour 3, le dernier chiffre ne suffit pas. 744 finit par 4, qui n'est pas dans la table de 3, et pourtant 744 est divisible par 3.
+
+*Indice.* Regarde la somme des chiffres que Mia a calculée : est-elle dans la table de 3 ?
+
+**EX-A015-D-02** — decouverte, qcm, 75 s
+
+Un nombre est divisible par 9 quand la somme de ses chiffres est divisible par 9. Lequel de ces nombres est divisible par 9 ?
+
+- **a.** 3 618 ✅
+- **b.** 529
+  <br>*Erreur visée :* L'élève regarde le dernier chiffre, comme pour 2, 5 ou 10 : 529 finit par 9. Mais pour 9, c'est la somme des chiffres qui compte : 5 + 2 + 9 = 16, qui n'est pas dans la table de 9.
+- **c.** 1 254
+  <br>*Erreur visée :* L'élève trouve la somme des chiffres, 1 + 2 + 5 + 4 = 12, voit qu'elle est dans la table de 3 et confond le critère par 3 avec le critère par 9 : 12 n'est pas dans la table de 9.
+
+*Corrigé.* (1) On calcule la somme des chiffres de chaque nombre. (2) 529 : 5 + 2 + 9 = 16. 1 254 : 1 + 2 + 5 + 4 = 12. 3 618 : 3 + 6 + 1 + 8 = 18. (3) Seule la somme 18 est dans la table de 9 (18 = 9 × 2) : 3 618 est divisible par 9. Vérification : 9 × 402 = 3 618. (4) 529 finit par 9, mais cela ne compte pas : pour 9, on ne regarde pas le dernier chiffre. (5) 1 254 est divisible par 3 (12 est dans la table de 3), mais pas par 9.
+
+*Indice.* Additionne les chiffres de chaque nombre, puis cherche une somme qui est dans la table de 9.
+
+**EX-A015-E-01** — entrainement, texte, 120 s
+
+Parmi 1 033, 2 469, 4 503 et 7 360, lesquels sont divisibles par 3 ? Écris-les du plus petit au plus grand, séparés par des virgules.
+
+**Réponse :** 2 469, 4 503
+
+*Corrigé.* (1) On ne pose aucune division : on calcule la somme des chiffres de chaque nombre. (2) 1 033 : 1 + 0 + 3 + 3 = 7, qui n'est pas dans la table de 3. 1 033 n'est pas divisible par 3, même s'il finit par 3. (3) 2 469 : 2 + 4 + 6 + 9 = 21 = 3 × 7. 2 469 est divisible par 3. (4) 4 503 : 4 + 5 + 0 + 3 = 12 = 3 × 4. 4 503 est divisible par 3. (5) 7 360 : 7 + 3 + 6 + 0 = 16, qui n'est pas dans la table de 3. 7 360 n'est pas divisible par 3, même s'il est divisible par 10. (6) Réponse : 2 469, 4 503. Vérification : 3 × 823 = 2 469 et 3 × 1 501 = 4 503.
+
+*Indice.* Pour chaque nombre, additionne ses chiffres. Le dernier chiffre ne dit rien pour 3.
+
+**EX-A015-E-02** — entrainement, numerique, 120 s
+
+Dans le nombre 7■4, le chiffre des dizaines est caché. Ce nombre est divisible par 9. Quel est le chiffre caché ?
+
+**Réponse :** 7
+
+*Corrigé.* (1) Le nombre est divisible par 9, donc la somme de ses chiffres est dans la table de 9. (2) La somme des chiffres vaut 7 + 4 + ■, c'est-à-dire 11 + ■. (3) Le chiffre caché va de 0 à 9 : la somme va donc de 11 à 20. Dans la table de 9, un seul nombre est entre 11 et 20 : 18. (4) 11 + ■ = 18, donc ■ = 7. Le nombre est 774. (5) Vérification : 7 + 7 + 4 = 18 et 9 × 86 = 774.
+
+*Indice.* Additionne les deux chiffres connus. Que faut-il ajouter pour tomber sur un nombre de la table de 9 ?
+
+**EX-A015-M-01** — maitrise, qcm, 150 s
+
+Dans le nombre 52■, le chiffre des unités est caché. Ce nombre est divisible par 3 et par 5. Quel est le chiffre caché ?
+
+- **a.** 0
+  <br>*Erreur visée :* L'élève n'applique que le critère par 5 : 520 finit par 0, il est bien divisible par 5. Mais 5 + 2 + 0 = 7 n'est pas dans la table de 3.
+- **b.** 2
+  <br>*Erreur visée :* L'élève n'applique que le critère par 3 : 5 + 2 + 2 = 9, donc 522 est divisible par 3. Mais 522 finit par 2 : il n'est pas divisible par 5.
+- **c.** 5 ✅
+
+*Corrigé.* (1) Il faut que les deux conditions soient vraies en même temps. On commence par la plus restrictive : le critère par 5. (2) Un nombre est divisible par 5 quand il finit par 0 ou par 5. Le chiffre caché est donc 0 ou 5. (3) On teste ces deux nombres avec le critère par 3. Pour 520 : 5 + 2 + 0 = 7, pas dans la table de 3. Pour 525 : 5 + 2 + 5 = 12 = 3 × 4, dans la table de 3. (4) Le chiffre caché est 5. Vérification : 525 = 3 × 175 et 525 = 5 × 105. (5) 522 est divisible par 3 mais pas par 5, et 520 par 5 mais pas par 3 : chacun ne vérifie qu'une des deux conditions.
+
+*Indice.* Commence par le critère par 5 : il ne laisse que deux chiffres possibles. Teste-les ensuite avec le critère par 3.
+
+**EX-A015-M-02** — maitrise, vrai_faux, 120 s
+
+Sacha peut partager ses 2 136 billes en 3 sacs égaux. Elle en déduit qu'elle peut les partager en 9 sacs égaux, sans reste. Vrai ou faux : Sacha a raison.
+
+**Réponse :** False
+
+*Corrigé.* (1) La somme des chiffres de 2 136 est 2 + 1 + 3 + 6 = 12. (2) 12 est dans la table de 3 : 2 136 est bien divisible par 3 (3 × 712 = 2 136). Les 3 sacs sont possibles. (3) 12 n'est pas dans la table de 9 : 2 136 n'est pas divisible par 9. Il resterait des billes (9 × 237 = 2 133, il en reste 3). (4) Sacha a donc tort : un nombre divisible par 3 n'est pas toujours divisible par 9. (5) Dans l'autre sens, c'est vrai : un nombre divisible par 9 est divisible par 3, puisque 9 = 3 × 3.
+
+*Indice.* Calcule la somme des chiffres de 2 136. Est-elle dans la table de 3 ? Et dans la table de 9 ?
+
+---
+
+## `A016` · Multiple, diviseur, divisible : le lien avec la division — 5e, difficulté 4
+
+*Employer les trois formulations équivalentes « a est un multiple de b », « b est un diviseur de a », « a est divisible par b », et les relier à la division euclidienne : b divise a quand le reste est nul (391 = 17 × 23, donc 391 est divisible par 17), alors que 17 = 3 × 5 + 2 montre que 17 n'est pas un multiple de 3. Écrire un entier comme produit de deux facteurs différents de 1 à l'aide des tables (21 = 3 × 7 ; 56 = 7 × 8), et constater qu'un nombre comme 13 ne s'écrit pas ainsi. Au-delà des tables, l'élève s'appuie sur une division euclidienne posée ou donnée. Figure : aucune.*
+
+> « Utiliser les notions de multiples et diviseurs. » — *Cycle 4, classe de 5e, Nombres et calculs, Opérations, Objectifs d'apprentissage*
+> « Utiliser les tables de multiplication pour factoriser des nombres entiers décomposables en produit de deux nombres différents de 1, par exemple, 21 = 3 × 7. » — *Cycle 4, classe de 5e, Nombres et calculs, Opérations, Automatismes*
+> « Déterminer le quotient et le reste dans une division euclidienne, par exemple, savoir que 17 = 3 × 5 + 2. » — *Cycle 4, classe de 5e, Nombres et calculs, Opérations, Automatismes*
+
+**EX-A016-D-01** — decouverte, qcm, 60 s
+
+Un fleuriste fait des bouquets de 8 roses avec ses 96 roses, sans qu'il en reste : 96 = 8 × 12. Quelle phrase est juste ?
+
+- **a.** 8 est un multiple de 96.
+  <br>*Erreur visée :* L'élève inverse les rôles : c'est le grand nombre, 96, qui est dans la table de 8, et non 8 qui est dans la table de 96.
+- **b.** 96 est divisible par 8. ✅
+- **c.** 96 est un diviseur de 8.
+  <br>*Erreur visée :* L'élève inverse les rôles : un diviseur « rentre » un nombre entier de fois dans l'autre. Ici 8 rentre 12 fois dans 96 : c'est 8 le diviseur, et 96 ne rentre pas dans 8.
+
+*Corrigé.* (1) L'égalité 96 = 8 × 12 dit que 96 est dans la table de 8 : on fait 12 bouquets et il ne reste aucune rose. (2) Cette même égalité se dit de trois façons : « 96 est un multiple de 8 », « 8 est un diviseur de 96 », « 96 est divisible par 8 ». (3) La phrase juste est donc « 96 est divisible par 8 ». (4) Les deux autres phrases échangent les deux nombres : 8 n'est pas un multiple de 96, et 96 n'est pas un diviseur de 8. (5) La même égalité dit aussi que 12 est un diviseur de 96 : on pourrait faire 8 bouquets de 12 roses.
+
+*Indice.* Dans 96 = 8 × 12, quel nombre est dans la table de 8 ?
+
+**EX-A016-D-02** — decouverte, vrai_faux, 60 s
+
+On pose la division euclidienne de 87 par 4 et on trouve : 87 = 4 × 21 + 3. Vrai ou faux : 87 est un multiple de 4.
+
+**Réponse :** False
+
+*Corrigé.* (1) Dans 87 = 4 × 21 + 3, le quotient est 21 et le reste est 3. (2) Un nombre est un multiple de 4 quand la division euclidienne par 4 tombe juste, c'est-à-dire quand le reste est 0. (3) Ici le reste est 3, pas 0 : 87 n'est pas un multiple de 4. La phrase est fausse. (4) On le voit dans la table de 4 : 4 × 21 = 84 et 4 × 22 = 88. 87 est entre les deux, il n'est pas dans la table.
+
+*Indice.* Regarde le reste de la division : est-il égal à 0 ?
+
+**EX-A016-E-01** — entrainement, numerique, 150 s
+
+Le nombre 60 s'écrit de plusieurs façons comme produit de deux entiers différents de 1, par exemple 2 × 30. Combien de façons y a-t-il en tout, sans tenir compte de l'ordre des facteurs ?
+
+**Réponse :** 5
+
+*Corrigé.* (1) On cherche les diviseurs de 60 en partant de 2, et on écrit à chaque fois le produit. (2) 60 = 2 × 30 ; 60 = 3 × 20 ; 60 = 4 × 15 ; 60 = 5 × 12 ; 60 = 6 × 10. (3) 7 ne convient pas : 7 × 8 = 56 et 7 × 9 = 63, on saute 60. (4) On peut s'arrêter : 8 × 8 = 64 dépasse 60. Les produits suivants, comme 10 × 6, sont ceux déjà trouvés écrits dans l'autre ordre. (5) Il y a 5 façons. On ne compte pas 1 × 60, puisque les deux facteurs doivent être différents de 1.
+
+*Indice.* Teste 2, 3, 4, 5… : pour chacun, 60 est-il dans sa table ? Arrête-toi quand les produits reviennent dans l'autre ordre.
+
+**EX-A016-E-02** — entrainement, vrai_faux, 90 s
+
+Nora pose la division euclidienne de 658 par 14. Elle trouve un quotient de 47 et un reste de 0. Vrai ou faux : 47 est un diviseur de 658.
+
+**Réponse :** True
+
+*Corrigé.* (1) Le reste est 0 : la division tombe juste, et 658 = 14 × 47. (2) Une multiplication se lit dans les deux sens : 658 = 47 × 14. Donc 658 est dans la table de 47. (3) 47 est donc un diviseur de 658 : la phrase est vraie. On pourrait faire 14 paquets de 47, ou 47 paquets de 14. (4) Quand la division d'un nombre par un diviseur tombe juste, le quotient est lui aussi un diviseur de ce nombre.
+
+*Indice.* Écris l'égalité de la division de Nora, puis lis la multiplication dans l'autre sens.
+
+**EX-A016-M-01** — maitrise, numerique, 120 s
+
+On sait que 1 001 = 7 × 143. Sans poser de division, quel est le reste de la division euclidienne de 1 005 par 7 ?
+
+**Réponse :** 4
+
+*Corrigé.* (1) 1 001 = 7 × 143 : 1 001 est un multiple de 7. (2) 1 005 = 1 001 + 4, donc 1 005 = 7 × 143 + 4. (3) Le nombre ajouté, 4, est plus petit que 7 : c'est bien le reste. Le quotient est 143 et le reste est 4. (4) Vérification : le multiple de 7 suivant est 7 × 144 = 1 008, qui dépasse 1 005. 1 005 est entre 1 001 et 1 008, il n'est donc pas un multiple de 7.
+
+*Indice.* 1 005 est un peu plus grand que 1 001. Combien faut-il ajouter à 1 001 pour obtenir 1 005 ?
+
+**EX-A016-M-02** — maitrise, qcm, 120 s
+
+Un nombre est un multiple de 6. Quelle phrase est forcément vraie ?
+
+- **a.** Ce nombre est divisible par 12.
+  <br>*Erreur visée :* L'élève croit que les multiples de 6 sont aussi ceux de 12, qui est dans la table de 6. C'est faux : 18 est un multiple de 6, mais pas de 12 (12 × 1 = 12 et 12 × 2 = 24).
+- **b.** Ce nombre est un diviseur de 6.
+  <br>*Erreur visée :* L'élève confond multiple et diviseur : 18 est un multiple de 6, mais 18 ne rentre pas dans 6.
+- **c.** Ce nombre est divisible par 3. ✅
+
+*Corrigé.* (1) Un multiple de 6 s'écrit 6 × un entier. Or 6 = 2 × 3. (2) Donc un multiple de 6 s'écrit 3 × 2 × un entier : il est dans la table de 3. Par exemple, 42 = 6 × 7 = 3 × 14. (3) « Ce nombre est divisible par 3 » est donc toujours vrai. (4) Les deux autres phrases tombent avec un seul exemple : 18 est un multiple de 6, mais 18 n'est pas divisible par 12, et 18 n'est pas un diviseur de 6.
+
+*Indice.* Écris 6 comme produit de deux nombres, puis essaie chaque phrase sur un multiple de 6, par exemple 18.
+
+---
+
+## `A018` · Nombres relatifs : positifs, négatifs, grandeurs sous zéro — 5e, difficulté 4
+
+*Savoir qu'un nombre relatif est un nombre décimal muni d'un signe (+5 ou 5, −3,5), que zéro est à la fois positif et négatif, et distinguer positif et strictement positif, négatif et strictement négatif. Utiliser un nombre négatif pour une grandeur inférieure à zéro : température sous zéro, altitude sous le niveau de la mer, solde d'un compte à découvert, date avant l'an 1 ; traduire « 4 degrés sous zéro » par −4 °C, et inversement. Pas d'écriture fractionnaire (étape 6). Figure utile : thermomètre gradué vertical (droite graduée verticale) ; tout le reste s'évalue en texte.*
+
+> « Définir les nombres relatifs. » — *Cycle 4, classe de 5e, Nombres et calculs, Nombres relatifs, Objectifs d'apprentissage*
+> « Définir la notion de nombre positif, strictement positif, négatif, strictement négatif. » — *Cycle 4, classe de 5e, Nombres et calculs, Nombres relatifs, Objectifs d'apprentissage*
+> « Utiliser les nombres relatifs pour représenter des grandeurs observables qui peuvent prendre des valeurs inférieures à zéro (température, temps, altitude, etc.), en particulier dans le cadre de la résolution de problèmes. » — *Cycle 4, classe de 5e, Nombres et calculs, Nombres relatifs, Objectifs d'apprentissage*
+
+**EX-A018-D-01** — decouverte, numerique, 45 s
+
+Ce matin à Strasbourg, le thermomètre indique 5 degrés sous zéro. Écris cette température avec un nombre relatif, en °C.
+
+**Réponse :** -5
+
+*Corrigé.* (1) « Sous zéro » veut dire plus froid que 0 °C : la température est inférieure à zéro. (2) Une valeur inférieure à zéro s'écrit avec un nombre négatif, précédé du signe moins. On lit « moins cinq degrés ». (3) La température est −5 °C. Piège : écrire 5 °C, c'est dire qu'il fait 5 degrés au-dessus de zéro.
+
+*Indice.* Une température sous zéro est plus froide que 0 °C. Quel signe faut-il écrire devant le nombre ?
+
+**EX-A018-D-02** — decouverte, qcm, 45 s
+
+Un thermomètre affiche −2 °C. Quelle phrase décrit cette température ?
+
+- **a.** Il fait 2 degrés au-dessus de zéro.
+  <br>*Erreur visée :* L'élève lit le nombre 2 sans tenir compte du signe moins : il prend −2 pour 2.
+- **b.** Il fait 2 degrés sous zéro. ✅
+- **c.** Il fait 2 degrés de moins qu'hier.
+  <br>*Erreur visée :* L'élève lit le signe moins comme une baisse, une soustraction. Or −2 °C désigne la température qu'il fait, 2 degrés sous zéro, et ne dit rien de la veille.
+
+*Corrigé.* (1) Le signe moins devant 2 indique un nombre négatif : une valeur inférieure à zéro. (2) Une température négative est une température sous zéro : −2 °C, c'est 2 degrés sous zéro. (3) −2 °C désigne la température du moment, pas un changement : on ne sait rien de celle d'hier. La bonne réponse est b.
+
+*Indice.* Que signifie le signe moins devant une température ?
+
+**EX-A018-E-01** — entrainement, vrai_faux, 60 s
+
+Le relevé du compte bancaire de Nadia affiche un solde de −35 €. Nadia dit : « Je dois 35 € à ma banque. » A-t-elle raison ?
+
+**Réponse :** True
+
+*Corrigé.* (1) Un solde positif, c'est l'argent que Nadia a sur son compte. Un solde négatif, c'est l'argent qui manque : Nadia le doit à sa banque, on dit que son compte est à découvert. (2) −35 € signifie qu'il manque 35 € : Nadia doit 35 € à sa banque. (3) Nadia a raison. Piège : oublier le signe et croire que Nadia a 35 € sur son compte.
+
+*Indice.* Un solde négatif, est-ce de l'argent qu'on a ou de l'argent qui manque ?
+
+**EX-A018-E-02** — entrainement, qcm, 75 s
+
+Voici cinq nombres : −4,2 ; 0 ; 3 ; −0,5 ; 1,5. Lesquels sont négatifs ?
+
+- **a.** −4,2 et −0,5
+  <br>*Erreur visée :* L'élève oublie 0 : il confond « négatif » et « strictement négatif ». Zéro est en même temps positif et négatif.
+- **b.** −4,2 seulement
+  <br>*Erreur visée :* L'élève ne reconnaît pas −0,5 comme négatif parce que sa partie entière est 0 : il croit qu'un nombre qui commence par 0 ne peut pas être sous zéro.
+- **c.** −4,2 ; −0,5 et 0 ✅
+
+*Corrigé.* (1) Un nombre négatif est inférieur ou égal à zéro. Ceux qui sont inférieurs à zéro s'écrivent avec le signe moins : −4,2 et −0,5. (2) −0,5 est bien négatif, même si sa partie entière est 0 : c'est un demi sous zéro. (3) Zéro est en même temps positif et négatif. En revanche, il n'est ni strictement positif ni strictement négatif. (4) Les nombres négatifs de la liste sont −4,2 ; −0,5 et 0. La bonne réponse est c.
+
+*Indice.* Attention à la différence entre « négatif » et « strictement négatif ». Que dire de 0 ?
+
+**EX-A018-M-01** — maitrise, numerique, 90 s
+
+Températures relevées à 6 h pendant une semaine, en °C : 4 ; −1,5 ; 0 ; −4 ; 2,5 ; 0 ; −0,5. Combien de jours la température était-elle strictement négative ?
+
+**Réponse :** 3
+
+*Corrigé.* (1) « Strictement négative » veut dire inférieure à zéro, sans être égale à zéro : ce sont les températures écrites avec le signe moins. (2) On les repère : −1,5 ; −4 et −0,5. Cela fait 3 jours. (3) Les deux jours à 0 °C ne comptent pas : 0 est négatif, mais pas strictement négatif. Si l'on demandait les jours où la température était négative, il faudrait les compter, et l'on trouverait 5 jours. (4) Réponse : 3 jours. Piège : oublier −0,5, qui est bien sous zéro, donnerait 2.
+
+*Indice.* Que veut dire « strictement » ? Le nombre 0 compte-t-il ?
+
+**EX-A018-M-02** — maitrise, vrai_faux, 90 s
+
+Tom affirme : « 0 n'est ni positif ni négatif, puisqu'il n'est ni strictement positif ni strictement négatif. » A-t-il raison ?
+
+**Réponse :** False
+
+*Corrigé.* (1) Un nombre positif est supérieur ou égal à zéro ; un nombre négatif est inférieur ou égal à zéro. (2) 0 est égal à zéro : il est donc en même temps positif et négatif. (3) Tom a raison sur un point : 0 n'est ni strictement positif ni strictement négatif. Le mot « strictement » exclut zéro. (4) Mais sa conclusion est fausse : Tom a tort.
+
+*Indice.* Quelle est la différence entre « positif » et « strictement positif » ?
+
+---
+
+## `A019` · Droite graduée : lire et placer un nombre relatif — 5e, difficulté 4
+
+*Sur une droite graduée dont l'origine 0 est marquée, lire l'abscisse d'un point d'abscisse positive ou négative, et désigner le point d'abscisse donnée (−2,5 ; 1,5), avec un pas de 1, 0,5, 0,1, 2 ou 10. La difficulté propre est le sens des graduations à gauche de 0 : −2,5 est entre −3 et −2, et non entre −2 et −1 ; −0,3 est à gauche de 0, pas à droite. Placer un point ne se fait pas à l'écran : l'élève choisit, parmi des points lettrés, celui qui a l'abscisse donnée. Figure nécessaire : droite graduée qui s'étend des deux côtés de 0, graduations principales et secondaires, quelques étiquettes seulement, points lettrés au-dessus.*
+
+> « Lire l'abscisse d'un nombre relatif sur une droite graduée et placer un nombre relatif d'abscisse donnée. » — *Cycle 4, classe de 5e, Nombres et calculs, Nombres relatifs, Objectifs d'apprentissage*
+> « Sur une droite graduée : - lire l'abscisse d'un point donné ; - placer un point d'abscisse donnée. » — *Cycle 4, classe de 5e, Espace et géométrie, Repérage sur une droite et dans le plan, Objectifs d'apprentissage*
+
+**EX-A019-D-01** — decouverte, numerique, 60 s
+
+Sur cette droite graduée, quelle est l'abscisse du point A ?
+
+**Réponse :** -3
+
+*Corrigé.* (1) Les nombres 0 et 1 sont écrits sur deux graduations voisines : d'une graduation à la suivante, on avance de 1. (2) Le point A est à gauche de 0 : son abscisse est un nombre négatif. (3) De 0 jusqu'à A, on compte les intervalles, pas les traits : il y en a 3. A est à 3 unités à gauche de 0. (4) L'abscisse de A est −3. Pièges : compter les traits en comptant celui de 0 donne −4 ; oublier le signe donne 3, un nombre situé à droite de 0.
+
+*Indice.* Que vaut un intervalle ? De quel côté de 0 se trouve le point A ?
+
+**EX-A019-D-02** — decouverte, qcm, 60 s
+
+Quel point de cette droite graduée a pour abscisse −2 ?
+
+- **a.** Le point A
+  <br>*Erreur visée :* L'élève compte les traits au lieu des intervalles : il compte le trait de 0 comme le premier et s'arrête au deuxième trait, qui a pour abscisse −1.
+- **b.** Le point B
+  <br>*Erreur visée :* L'élève oublie le signe moins : il avance de 2 vers la droite, du côté des nombres positifs, et trouve le point d'abscisse 2.
+- **c.** Le point C ✅
+
+*Corrigé.* (1) 0 et 1 sont sur deux graduations voisines : une graduation vaut 1. (2) −2 est négatif : il est à gauche de 0. (3) On part de 0 et on avance de 2 intervalles vers la gauche : −1, puis −2. On arrive au point C. (4) Le point A a pour abscisse −1, le point B a pour abscisse 2. La bonne réponse est c.
+
+*Indice.* Un nombre négatif est-il à gauche ou à droite de 0 ? Compte les intervalles depuis 0.
+
+**EX-A019-E-01** — entrainement, numerique, 90 s
+
+Quelle est l'abscisse du point A sur cette droite graduée ?
+
+**Réponse :** -1.5
+
+*Corrigé.* (1) Entre 0 et 1, il y a 2 petits intervalles : chacun vaut une demi-unité, 0,5. (2) A est à gauche de 0 : son abscisse est négative. On compte de 0,5 en 0,5 vers la gauche depuis 0 : −0,5 ; −1 ; −1,5. (3) A est entre −2 et −1, au milieu : son abscisse est −1,5. (4) Piège : lire « −2,5 » en partant de −2 vers la droite, comme pour un nombre positif. −2,5 est plus loin de 0 que −2 : il se trouve entre −3 et −2.
+
+*Indice.* Que vaut un petit intervalle ? Compte-les depuis 0.
+
+**EX-A019-E-02** — entrainement, qcm, 90 s
+
+Quel point a pour abscisse −0,3 ?
+
+- **a.** Le point A
+  <br>*Erreur visée :* L'élève oublie le signe moins : il avance de 3 dixièmes vers la droite et trouve 0,3.
+- **b.** Le point B ✅
+- **c.** Le point C
+  <br>*Erreur visée :* L'élève lit les dixièmes de gauche à droite, comme pour un positif : il part de −1 et avance de 3 dixièmes, ce qui mène à −0,7.
+- **d.** Le point D
+  <br>*Erreur visée :* L'élève compte les traits au lieu des intervalles : il compte le trait de 0 comme le premier et s'arrête au troisième, qui a pour abscisse −0,2.
+
+*Corrigé.* (1) Entre 0 et 1, il y a 10 intervalles : un intervalle vaut un dixième, 0,1. (2) −0,3 est négatif : il est à gauche de 0, à 3 dixièmes de 0. (3) On part de 0 et on compte 3 intervalles vers la gauche : −0,1 ; −0,2 ; −0,3. C'est le point B. (4) Le point C a pour abscisse −0,7 : il est à 3 dixièmes de −1, pas de 0. La bonne réponse est b.
+
+*Indice.* Que vaut un intervalle ? Pars de 0, pas de l'extrémité gauche du dessin.
+
+**EX-A019-M-01** — maitrise, numerique, 120 s
+
+Seuls deux nombres sont écrits sur cette droite graduée. Quelle est l'abscisse du point A ?
+
+**Réponse :** -25
+
+*Corrigé.* (1) De 0 à 10, il y a 2 petits intervalles : un petit intervalle vaut 5, une grande graduation vaut 10. (2) A est à gauche de 0 : son abscisse est négative. (3) On compte de 5 en 5 vers la gauche depuis 0 : −5 ; −10 ; −15 ; −20 ; −25. On arrive au point A. (4) A est entre −30 et −20, au milieu : son abscisse est −25. (5) Pièges : prendre un petit intervalle pour 0,5 donne −2,5 ; lire « −35 » en ajoutant 5 après −30, comme pour un positif, alors que −35 est entre −40 et −30.
+
+*Indice.* Que vaut un petit intervalle ? Compte depuis 0 jusqu'à A.
+
+**EX-A019-M-02** — maitrise, vrai_faux, 120 s
+
+Maël dit que le point A a pour abscisse −4,5. A-t-il raison ?
+
+**Réponse :** False
+
+*Corrigé.* (1) De 0 à 2, il y a 4 intervalles : un intervalle vaut 0,5. (2) On compte de 0,5 en 0,5 vers la gauche depuis 0 : −0,5 ; −1 ; −1,5 ; −2 ; −2,5 ; −3 ; −3,5. L'abscisse de A est −3,5. (3) Maël est parti de −4 et a ajouté « et demi » vers la droite, comme pour un positif. Mais −4,5 est plus loin de 0 que −4 : il se trouve entre −5 et −4. (4) Maël a tort : A a pour abscisse −3,5.
+
+*Indice.* Que vaut un intervalle ? Où se trouve −4 sur la droite ?
+
+---
+
+## `A020` · Repère du plan : lire et placer un point — 5e, difficulté 4
+
+*Dans un repère orthogonal du plan (origine O, axe des abscisses horizontal, axe des ordonnées vertical), lire les coordonnées d'un point, l'abscisse d'abord, et désigner le point de coordonnées données, dans les quatre quadrants et sur les axes, avec des coordonnées entières ou demi-entières. Les coordonnées s'écrivent A(−2 ; 3), avec un point-virgule, comme dans les exercices de E023. L'erreur type est d'inverser abscisse et ordonnée, puis d'oublier un signe. Placer un point ne se fait pas à l'écran : l'élève choisit le point lettré qui a les coordonnées données, ou donne l'abscisse puis l'ordonnée dans deux questions séparées. Figure nécessaire : repère avec ses deux axes gradués, quadrillage léger, points lettrés.*
+
+> « Dans le plan muni d'un repère orthogonal : - lire les coordonnées d'un point donné ; - placer un point de coordonnées données. » — *Cycle 4, classe de 5e, Espace et géométrie, Repérage sur une droite et dans le plan, Objectifs d'apprentissage*
+
+**EX-A020-D-01** — decouverte, numerique, 60 s
+
+Dans ce repère, quelle est l'abscisse du point A ? Les pointillés mènent aux axes.
+
+**Réponse :** -4
+
+*Corrigé.* (1) L'abscisse se lit sur l'axe horizontal, l'axe des abscisses. (2) Le pointillé vertical part de A et rejoint l'axe horizontal à la graduation −4. (3) L'abscisse de A est −4. Son ordonnée, lue sur l'axe vertical, est 1 : A a pour coordonnées (−4 ; 1), l'abscisse d'abord. (4) Pièges : donner 1, qui est l'ordonnée, ou 4 en oubliant que A est à gauche de l'axe vertical.
+
+*Indice.* Sur quel axe lit-on l'abscisse : l'horizontal ou le vertical ?
+
+**EX-A020-D-02** — decouverte, qcm, 60 s
+
+Quelles sont les coordonnées du point B ? Les pointillés mènent aux axes.
+
+- **a.** (2 ; −5) ✅
+- **b.** (−5 ; 2)
+  <br>*Erreur visée :* L'élève inverse abscisse et ordonnée : il écrit d'abord la valeur lue sur l'axe vertical.
+- **c.** (2 ; 5)
+  <br>*Erreur visée :* L'élève oublie le signe de l'ordonnée : le point est sous l'axe horizontal, son ordonnée est négative.
+
+*Corrigé.* (1) L'abscisse se lit sur l'axe horizontal : le pointillé vertical arrive à 2. (2) L'ordonnée se lit sur l'axe vertical : le pointillé horizontal arrive à −5, sous l'origine O. (3) On écrit l'abscisse d'abord, puis l'ordonnée, séparées par un point-virgule : B(2 ; −5). La bonne réponse est a.
+
+*Indice.* Lis d'abord sur l'axe horizontal, puis sur l'axe vertical.
+
+**EX-A020-E-01** — entrainement, qcm, 90 s
+
+Quel point a pour coordonnées (−4 ; 3) ?
+
+- **a.** Le point A
+  <br>*Erreur visée :* L'élève inverse abscisse et ordonnée : il lit 3 sur l'axe horizontal et −4 sur l'axe vertical. Ce point a pour coordonnées (3 ; −4).
+- **b.** Le point B
+  <br>*Erreur visée :* L'élève oublie le signe de l'abscisse : il va à droite de l'axe vertical. Ce point a pour coordonnées (4 ; 3).
+- **c.** Le point C ✅
+- **d.** Le point D
+  <br>*Erreur visée :* L'élève échange les deux nombres en laissant les signes à leur place : il cherche le point de coordonnées (−3 ; 4).
+
+*Corrigé.* (1) L'abscisse −4 se lit sur l'axe horizontal : 4 graduations à gauche de l'origine O. (2) L'ordonnée 3 se lit sur l'axe vertical : 3 graduations vers le haut. (3) Le point qui est en même temps au-dessus de −4 et à la hauteur de 3 est C. (4) A(3 ; −4) inverse les deux coordonnées, B(4 ; 3) oublie un signe, D(−3 ; 4) échange les nombres. La bonne réponse est c.
+
+*Indice.* Le premier nombre se lit sur l'axe horizontal. De quel côté de l'origine ?
+
+**EX-A020-E-02** — entrainement, numerique, 90 s
+
+Dans ce repère, quelle est l'ordonnée du point E ?
+
+**Réponse :** -3
+
+*Corrigé.* (1) L'ordonnée se lit sur l'axe vertical, l'axe des ordonnées. (2) Une graduation sur deux est écrite : 2, 4, 6 vers le haut, −2, −4, −6 vers le bas. Chaque graduation vaut donc 1. (3) Depuis E, on se déplace horizontalement jusqu'à l'axe vertical : on arrive entre −2 et −4, sur la graduation du milieu. L'ordonnée de E est −3. (4) Pièges : donner 4, l'abscisse de E, ou lire −2 ou −4, la graduation écrite la plus proche.
+
+*Indice.* Sur quel axe lit-on l'ordonnée ? Que vaut une graduation ?
+
+**EX-A020-M-01** — maitrise, qcm, 90 s
+
+Quel point a pour coordonnées (0 ; −4) ?
+
+- **a.** Le point A
+  <br>*Erreur visée :* L'élève inverse abscisse et ordonnée : il place −4 sur l'axe horizontal. Ce point a pour coordonnées (−4 ; 0).
+- **b.** Le point B ✅
+- **c.** Le point C
+  <br>*Erreur visée :* L'élève oublie le signe de l'ordonnée : il monte de 4 au lieu de descendre. Ce point a pour coordonnées (0 ; 4).
+- **d.** Le point D
+  <br>*Erreur visée :* L'élève inverse les coordonnées et oublie le signe : il va à 4 sur l'axe horizontal. Ce point a pour coordonnées (4 ; 0).
+
+*Corrigé.* (1) L'abscisse est 0 : le point ne s'écarte pas de l'axe vertical, il est sur cet axe. (2) L'ordonnée est −4 : on descend de 4 graduations sous l'origine O. (3) C'est le point B, sur l'axe des ordonnées. A(−4 ; 0) est sur l'axe des abscisses : ses coordonnées sont inversées. La bonne réponse est b.
+
+*Indice.* Une abscisse égale à 0 : de combien le point s'écarte-t-il de l'axe vertical ?
+
+**EX-A020-M-02** — maitrise, vrai_faux, 120 s
+
+Jade affirme que le point K a pour coordonnées (4 ; −2,5). A-t-elle raison ?
+
+**Réponse :** False
+
+*Corrigé.* (1) Abscisse de K : K est à la verticale de la graduation 4 de l'axe horizontal. Son abscisse est 4. (2) Ordonnée de K : K est sous l'axe horizontal, à mi-chemin entre −1 et −2. Son ordonnée est −1,5. (3) K a pour coordonnées (4 ; −1,5). Jade est partie de −2 et a ajouté « et demi », comme pour un positif. Mais −2,5 est plus loin de 0 que −2 : il se trouve entre −3 et −2. (4) Jade a tort.
+
+*Indice.* Lis l'ordonnée de K sur l'axe vertical : entre quelles graduations se trouve K ?
+
+---
+
+## `A021` · Opposé d'un nombre relatif — 5e, difficulté 4
+
+*Savoir que deux nombres opposés ont la même distance à zéro et des signes contraires, donc qu'ils sont symétriques par rapport à l'origine sur une droite graduée ; donner l'opposé d'un nombre (l'opposé de −7,2 est 7,2, l'opposé de 15 est −15, l'opposé de 0 est 0). La somme de deux opposés est vue avec l'addition (B044). L'erreur type est de croire que l'opposé d'un nombre est toujours négatif. Figure utile : droite graduée portant deux points symétriques par rapport à 0.*
+
+> « Définir l'opposé et la valeur absolue d'un nombre. » — *Cycle 4, classe de 5e, Nombres et calculs, Nombres relatifs, Objectifs d'apprentissage*
+
+**EX-A021-D-01** — decouverte, numerique, 60 s
+
+Sur une droite graduée, le point A a pour abscisse 6. Le point B est à la même distance de 0, de l'autre côté. Quelle est l'abscisse de B ?
+
+**Réponse :** -6
+
+*Corrigé.* (1) A est à 6 unités à droite de 0. (2) B est à la même distance de 0, donc à 6 unités, mais de l'autre côté, à gauche : son abscisse est négative. (3) L'abscisse de B est −6. (4) 6 et −6 ont la même distance à zéro et des signes contraires : on dit qu'ils sont opposés. L'opposé de 6 est −6, l'opposé de −6 est 6.
+
+*Indice.* De quel côté de 0 se trouve B ? À combien d'unités de 0 ?
+
+**EX-A021-D-02** — decouverte, numerique, 45 s
+
+Deux nombres opposés ont la même distance à zéro et des signes contraires. Quel est l'opposé de −8 ?
+
+**Réponse :** 8
+
+*Corrigé.* (1) −8 est à 8 unités de 0, à gauche. (2) Son opposé est à 8 unités de 0, de l'autre côté, à droite : c'est 8. (3) L'opposé de −8 est 8, qu'on peut écrire +8. Piège : croire qu'un opposé est toujours négatif et répondre −8. Seul 0 est égal à son opposé.
+
+*Indice.* −8 est négatif. Quel est le signe contraire ?
+
+**EX-A021-E-01** — entrainement, qcm, 90 s
+
+Quel point a pour abscisse l'opposé de l'abscisse du point M ?
+
+- **a.** Le point A
+  <br>*Erreur visée :* L'élève lit bien 2,5 pour M, mais place −2,5 en partant de −2 vers la droite, comme pour un positif : il arrive à −1,5.
+- **b.** Le point B ✅
+- **c.** Le point C
+  <br>*Erreur visée :* L'élève compte les petits intervalles comme des unités : M est à 5 petits intervalles de 0, il place l'opposé à 5 unités à gauche de 0, en −5.
+
+*Corrigé.* (1) Entre 0 et 1, il y a 2 petits intervalles : chacun vaut 0,5. M est 5 petits intervalles à droite de 0 : son abscisse est 2,5. (2) L'opposé de 2,5 est −2,5 : même distance à zéro, 5 petits intervalles, mais à gauche de 0. (3) On compte 5 petits intervalles vers la gauche depuis 0 : on arrive au point B, entre −3 et −2. (4) M et B sont symétriques par rapport à 0. La bonne réponse est b.
+
+*Indice.* Lis d'abord l'abscisse de M. Son opposé est à la même distance de 0, de l'autre côté.
+
+**EX-A021-E-02** — entrainement, vrai_faux, 60 s
+
+Léo affirme : « L'opposé d'un nombre est toujours un nombre négatif. » A-t-il raison ?
+
+**Réponse :** False
+
+*Corrigé.* (1) Prenons un nombre négatif, par exemple −4 : son opposé est 4, qui est positif. (2) L'opposé d'un nombre positif est négatif, mais l'opposé d'un nombre négatif est positif, et l'opposé de 0 est 0. (3) Léo a tort : prendre l'opposé change le signe, cela ne rend pas toujours le nombre négatif.
+
+*Indice.* Cherche l'opposé d'un nombre négatif.
+
+**EX-A021-M-01** — maitrise, numerique, 90 s
+
+L'opposé d'un nombre est 9,4. Quel est ce nombre ?
+
+**Réponse :** -9.4
+
+*Corrigé.* (1) Deux nombres opposés ont la même distance à zéro et des signes contraires. (2) Le nombre cherché est donc à 9,4 unités de 0, mais de l'autre côté de 0 que 9,4 : il est négatif. (3) C'est −9,4 : l'opposé de −9,4 est bien 9,4. (4) Piège : répondre 9,4. Un nombre n'est égal à son opposé que s'il vaut 0.
+
+*Indice.* Si l'opposé est positif, quel est le signe du nombre de départ ?
+
+**EX-A021-M-02** — maitrise, vrai_faux, 120 s
+
+Sofia affirme que les abscisses des points A et B sont des nombres opposés. A-t-elle raison ?
+
+**Réponse :** True
+
+*Corrigé.* (1) Entre 0 et 1, il y a 2 petits intervalles : un petit intervalle vaut 0,5. (2) A est 7 petits intervalles à gauche de 0 : son abscisse est −3,5. B est 7 petits intervalles à droite de 0 : son abscisse est 3,5. (3) −3,5 et 3,5 ont la même distance à zéro et des signes contraires : ce sont des opposés. Sofia a raison. (4) Piège : juger à l'œil par rapport au milieu du dessin. La droite ne s'arrête pas au même endroit des deux côtés : c'est par rapport à 0 qu'on compare.
+
+*Indice.* Compare les distances de A et de B à 0, pas aux extrémités du dessin.
+
+---
+
+## `A022` · Valeur absolue : la distance à zéro — 5e, difficulté 4
+
+*Savoir que la valeur absolue d'un nombre relatif est sa distance à zéro, c'est-à-dire le nombre sans son signe : la valeur absolue de −6,5 est 6,5, celle de 4 est 4 ; deux nombres opposés ont la même valeur absolue, et deux nombres différents peuvent avoir la même. Le programme demande de définir la valeur absolue, pas sa notation : les énoncés écrivent « la valeur absolue de −6,5 » ou « la distance à zéro », sans barres verticales. Figure utile : droite graduée où la distance d'un point à 0 se compte en graduations.*
+
+> « Définir l'opposé et la valeur absolue d'un nombre. » — *Cycle 4, classe de 5e, Nombres et calculs, Nombres relatifs, Objectifs d'apprentissage*
+
+**EX-A022-D-01** — decouverte, numerique, 60 s
+
+Combien d'unités séparent le point A de 0 ? Ce nombre est la distance à zéro de l'abscisse de A.
+
+**Réponse :** 5
+
+*Corrigé.* (1) 0 et 1 sont sur deux graduations voisines : une graduation vaut 1. (2) De A jusqu'à 0, on compte 5 intervalles : A est à 5 unités de 0. (3) L'abscisse de A est −5 ; sa distance à zéro est 5. Le signe dit de quel côté de 0 se trouve le point ; la distance à zéro dit combien d'unités le séparent de 0. Une distance n'est jamais négative. (4) La distance à zéro s'appelle la valeur absolue : la valeur absolue de −5 est 5, comme celle de son opposé 5.
+
+*Indice.* Compte les intervalles entre A et 0, pas les traits.
+
+**EX-A022-D-02** — decouverte, vrai_faux, 45 s
+
+Lina dit : « La distance à zéro de −4,8 est −4,8. » A-t-elle raison ?
+
+**Réponse :** False
+
+*Corrigé.* (1) −4,8 est à gauche de 0, à 4,8 unités de 0. (2) Une distance se compte en unités : elle n'est jamais négative. La distance à zéro de −4,8 est 4,8. (3) Lina a tort : elle a gardé le signe. La valeur absolue de −4,8 est 4,8, comme celle de son opposé 4,8.
+
+*Indice.* Une distance peut-elle être négative ?
+
+**EX-A022-E-01** — entrainement, qcm, 75 s
+
+Quels nombres ont une distance à zéro égale à 2,5 ?
+
+- **a.** 2,5 seulement
+  <br>*Erreur visée :* L'élève oublie le nombre négatif : il croit qu'une distance à zéro ne correspond qu'à un nombre positif. Or −2,5 est à 2,5 unités de 0, de l'autre côté.
+- **b.** −2,5 et 2,5 ✅
+- **c.** Tous les nombres compris entre −2,5 et 2,5
+  <br>*Erreur visée :* L'élève confond « à 2,5 unités de 0 » et « à moins de 2,5 unités de 0 » : il prend tous les nombres proches de 0, alors que 1, par exemple, est à 1 unité de 0.
+
+*Corrigé.* (1) Sur une droite graduée, on part de 0 et on se déplace de 2,5 unités. (2) Vers la droite, on arrive à 2,5 ; vers la gauche, on arrive à −2,5. (3) Deux nombres ont donc une distance à zéro égale à 2,5 : 2,5 et son opposé −2,5. Deux nombres opposés ont toujours la même distance à zéro. La bonne réponse est b.
+
+*Indice.* Depuis 0, dans combien de sens peut-on se déplacer sur une droite graduée ?
+
+**EX-A022-E-02** — entrainement, numerique, 75 s
+
+Parmi les nombres −9 ; 4 ; −0,7 et 8, lequel a la plus grande distance à zéro ? Écris ce nombre.
+
+**Réponse :** -9
+
+*Corrigé.* (1) La distance à zéro d'un nombre, c'est ce nombre sans son signe : 9 pour −9, 4 pour 4, 0,7 pour −0,7 et 8 pour 8. (2) La plus grande de ces distances est 9 : c'est celle de −9. (3) Le nombre cherché est −9 : sur une droite graduée, c'est lui le plus loin de 0. (4) Piège : répondre 8 en cherchant le nombre le plus grand. −9 est à gauche de 0, mais plus loin de 0 que 8.
+
+*Indice.* Pour chaque nombre, cherche sa distance à zéro, puis compare ces distances.
+
+**EX-A022-M-01** — maitrise, numerique, 120 s
+
+Quelle est la distance à zéro de l'abscisse du point A ?
+
+**Réponse :** 13
+
+*Corrigé.* (1) De 0 à 5, il y a 5 petits intervalles : un petit intervalle vaut 1. (2) De 0 jusqu'à A, vers la gauche, on compte 13 petits intervalles : 10 jusqu'à la deuxième grande graduation, puis 3. (3) L'abscisse de A est −13 ; sa distance à zéro est 13. (4) Pièges : répondre −13, alors qu'une distance n'est jamais négative ; ou répondre 3 en ne comptant les petits intervalles qu'à partir de la graduation −10.
+
+*Indice.* Que vaut un petit intervalle ? Compte depuis 0 jusqu'à A.
+
+**EX-A022-M-02** — maitrise, vrai_faux, 120 s
+
+Zoé affirme : « Si deux nombres différents ont la même distance à zéro, alors ils sont opposés. » A-t-elle raison ?
+
+**Réponse :** True
+
+*Corrigé.* (1) Deux nombres qui ont la même distance à zéro sont au même nombre d'unités de 0. (2) S'ils sont du même côté de 0, ils sont égaux. S'ils sont différents, ils sont donc de part et d'autre de 0 : même distance à zéro, signes contraires. (3) Ce sont des opposés, par exemple −7,5 et 7,5. Zoé a raison.
+
+*Indice.* Place sur une droite graduée deux nombres différents à la même distance de 0.
+
+---
+
+## `A023` · Comparer et ranger des décimaux relatifs — 5e, difficulté 4
+
+*Comparer deux nombres décimaux relatifs avec < et >, et ranger une liste dans l'ordre croissant ou décroissant : un nombre négatif est plus petit qu'un nombre positif ; de deux nombres négatifs, le plus petit est le plus éloigné de zéro (−7 < −2 ; −3,5 < −3,25). L'erreur type est de comparer les distances à zéro sans tenir compte du signe (croire que −7 > −2 parce que 7 > 2), ou, pour les décimaux négatifs, de cumuler cette erreur avec celle de la partie décimale. Contextes : températures, altitudes. Figure : aucune dans les exercices de maîtrise, car une droite graduée portant les nombres donnerait la réponse ; elle peut servir dans une question d'introduction.*
+
+> « Comparer et ranger dans l'ordre croissant et décroissant des nombres décimaux relatifs. » — *Cycle 4, classe de 5e, Nombres et calculs, Nombres relatifs, Objectifs d'apprentissage*
+
+**EX-A023-D-01** — decouverte, qcm, 60 s
+
+Ce matin, il fait −3 °C à Lille et −8 °C à Strasbourg. Où fait-il le plus froid, et quel signe placer entre −3 et −8 ?
+
+- **a.** À Lille, donc −3 < −8
+  <br>*Erreur visée :* L'élève compare les distances à zéro, 3 et 8, sans tenir compte du signe : il croit que −3 est plus petit que −8, donc qu'il fait plus froid à Lille.
+- **b.** À Strasbourg, donc −3 > −8 ✅
+- **c.** À Strasbourg, donc −3 < −8
+  <br>*Erreur visée :* L'élève sait qu'il fait plus froid à Strasbourg, mais pense que 8 degrés sous zéro, « c'est plus » : il compare 8 et 3 et en déduit −8 > −3. Or la température la plus froide est le plus petit nombre.
+
+*Corrigé.* (1) −8 °C, c'est 8 degrés sous zéro ; −3 °C, seulement 3 degrés sous zéro. Plus on descend sous zéro, plus il fait froid : il fait plus froid à Strasbourg. (2) La température la plus froide est le plus petit nombre : −8 est plus petit que −3. On écrit −8 < −3, ou, dans l'autre sens, −3 > −8. (3) Règle : de deux nombres négatifs, le plus petit est le plus éloigné de zéro. La distance à zéro de −8 est 8, celle de −3 est 3. (4) Piège : comparer 8 et 3 sans regarder le signe fait croire que −8 est le plus grand. La bonne réponse est b.
+
+*Indice.* Sur un thermomètre, lequel des deux nombres est placé le plus bas ?
+
+**EX-A023-D-02** — decouverte, numerique, 60 s
+
+Une nuit de janvier, on relève la température dans quatre villes, en °C : −2 ; 1 ; −6 ; −5. Quelle est la température la plus basse ?
+
+**Réponse :** -6
+
+*Corrigé.* (1) La température la plus basse est le plus petit des quatre nombres. (2) 1 est positif : il est plus grand que tous les nombres négatifs. On le met de côté. (3) Restent −2, −6 et −5. De deux nombres négatifs, le plus petit est le plus éloigné de zéro. Les distances à zéro sont 2, 6 et 5 : la plus grande est 6. (4) La température la plus basse est −6 °C. Piège : choisir −2 parce que 2 est le plus petit des nombres écrits sans leur signe.
+
+*Indice.* Imagine les quatre températures sur un thermomètre : laquelle est placée le plus bas ?
+
+**EX-A023-E-01** — entrainement, qcm, 90 s
+
+Range ces nombres dans l'ordre croissant : −1,5 ; 0,8 ; −3 ; −1,25 ; 2. Quel est le bon rangement ?
+
+- **a.** 0,8 ; −1,25 ; −1,5 ; 2 ; −3
+  <br>*Erreur visée :* L'élève range les nombres selon leur distance à zéro (0,8 ; 1,25 ; 1,5 ; 2 ; 3), sans tenir compte du signe.
+- **b.** −1,25 ; −1,5 ; −3 ; 0,8 ; 2
+  <br>*Erreur visée :* L'élève place bien les négatifs avant les positifs, mais range les négatifs comme des positifs : il croit que −1,25 est le plus petit parce que sa distance à zéro est la plus petite.
+- **c.** −3 ; −1,25 ; −1,5 ; 0,8 ; 2
+  <br>*Erreur visée :* L'élève sait que le plus éloigné de zéro est le plus petit, mais compare 1,5 et 1,25 en lisant 25 > 5 : il croit 1,25 plus éloigné de zéro que 1,5. Or 1,5 = 1,50, et 50 centièmes, c'est plus que 25 centièmes.
+- **d.** −3 ; −1,5 ; −1,25 ; 0,8 ; 2 ✅
+
+*Corrigé.* (1) Croissant : du plus petit au plus grand. Les négatifs sont plus petits que les positifs : −1,5 ; −3 et −1,25 viennent avant 0,8 et 2. (2) Entre négatifs, le plus petit est le plus éloigné de zéro. Distances à zéro : 1,5 ; 3 ; 1,25. On écrit 1,5 = 1,50 pour comparer avec 1,25 : 3 > 1,50 > 1,25. (3) Donc −3 < −1,5 < −1,25. Pour les positifs, 0,8 < 2. (4) Rangement : −3 ; −1,5 ; −1,25 ; 0,8 ; 2. La bonne réponse est d.
+
+*Indice.* Range d'abord les trois négatifs entre eux : lequel est le plus loin de zéro ?
+
+**EX-A023-E-02** — entrainement, vrai_faux, 90 s
+
+Léa affirme : « −0,7 est plus petit que −0,65, car 0,7 est plus grand que 0,65. » A-t-elle raison ?
+
+**Réponse :** True
+
+*Corrigé.* (1) On compare d'abord les distances à zéro, 0,7 et 0,65. On écrit 0,7 = 0,70 : 70 centièmes, c'est plus que 65 centièmes, donc 0,7 > 0,65. (2) −0,7 est donc plus éloigné de zéro que −0,65. De deux nombres négatifs, le plus éloigné de zéro est le plus petit : −0,7 < −0,65. (3) Léa a raison : c'est vrai. Pour deux nombres négatifs, l'ordre des distances à zéro s'inverse. (4) Piège : comparer 65 et 7 comme des entiers fait croire que 0,65 est plus grand que 0,7, et conduit à dire que Léa a tort.
+
+*Indice.* Écris 0,7 avec deux chiffres après la virgule, puis pense à l'ordre des nombres négatifs.
+
+**EX-A023-M-01** — maitrise, vrai_faux, 120 s
+
+Vrai ou faux : de deux nombres relatifs, le plus grand est toujours celui qui a la plus grande distance à zéro.
+
+**Réponse :** False
+
+*Corrigé.* (1) Pour deux nombres positifs, c'est juste : 9 est plus éloigné de zéro que 4, et 9 > 4. (2) Pour deux nombres négatifs, c'est l'inverse : −9 est plus éloigné de zéro que −4, mais −9 < −4. (3) Et un négatif peut être plus éloigné de zéro qu'un positif tout en étant plus petit : la distance à zéro de −5 est 5, celle de 1 est 1, mais −5 < 1. (4) Un seul contre-exemple suffit : l'affirmation est fausse. Pour comparer, on regarde d'abord le signe ; la distance à zéro ne décide qu'entre deux nombres de même signe.
+
+*Indice.* Teste l'affirmation sur deux nombres négatifs.
+
+**EX-A023-M-02** — maitrise, numerique, 120 s
+
+Je suis un nombre entier négatif. Je suis plus grand que −4,5, et ma distance à zéro est plus grande que 3. Qui suis-je ?
+
+**Réponse :** -4
+
+*Corrigé.* (1) Les entiers négatifs plus grands que −4,5 sont ceux qui sont plus proches de zéro : −4 ; −3 ; −2 ; −1 et 0 (zéro est à la fois positif et négatif). Attention : −5 est plus petit que −4,5, il ne convient pas. (2) Leurs distances à zéro : 4 ; 3 ; 2 ; 1 ; 0. Une seule est plus grande que 3 : celle de −4. Celle de −3 vaut 3, ce n'est pas plus grand que 3. (3) Je suis −4. Vérification : −4 > −4,5, et la distance à zéro de −4 est 4, plus grande que 3. (4) Piège : répondre −5, qui a bien une distance à zéro plus grande que 3, mais qui est plus petit que −4,5.
+
+*Indice.* Écris d'abord tous les entiers négatifs plus grands que −4,5.
+
+---
+
+## `B011` · Priorités opératoires — 5e, difficulté 4
+
+*Calculer une expression qui mêle les quatre opérations sur des nombres positifs, avec ou sans parenthèses, en effectuant d'abord les calculs entre parenthèses, puis les multiplications et les divisions, puis les additions et les soustractions, de gauche à droite à priorité égale : 7 + 3 × 5 = 22 ; 20 − 8 ÷ 4 = 18. Nommer le calcul (somme, différence, produit, quotient) d'après la dernière opération effectuée, distinguer termes et facteurs. L'erreur type est de calculer de gauche à droite sans tenir compte des priorités (7 + 3 × 5 = 50). Figure : aucune.*
+
+> « Connaitre et utiliser les priorités opératoires. » — *Cycle 4, classe de 5e, Nombres et calculs, Opérations, Objectifs d'apprentissage*
+> « Nommer un calcul, distinguer sommes et produits, termes et facteurs. » — *Cycle 4, classe de 5e, Nombres et calculs, Opérations, Objectifs d'apprentissage*
+> « Enchainer des opérations. » — *Cycle 4, classe de 5e, Nombres et calculs, Opérations, Objectifs d'apprentissage*
+
+**EX-B011-D-01** — decouverte, numerique, 45 s
+
+Léo achète une gomme à 2 € et 3 cahiers à 4 € chacun. Son ticket de caisse indique le calcul 2 + 3 × 4. Combien Léo paie-t-il ?
+
+**Réponse :** 14
+
+*Corrigé.* (1) Les 3 cahiers coûtent 3 × 4 = 12 €. La gomme coûte 2 €. En tout : 2 + 12 = 14 €. (2) C'est exactement la règle des priorités : dans 2 + 3 × 4, on effectue d'abord la multiplication, puis l'addition. (3) Calculer de gauche à droite donnerait 2 + 3 = 5, puis 5 × 4 = 20 : ce serait le prix de 5 objets à 4 €, alors que la gomme ne coûte que 2 €. (4) Léo paie 14 €.
+
+*Indice.* Combien coûtent les 3 cahiers ?
+
+**EX-B011-D-02** — decouverte, qcm, 40 s
+
+Quel est le résultat de 30 - 4 × 5 ?
+
+- **a.** 10 ✅
+- **b.** 130
+  <br>*Erreur visée :* L'élève calcule de gauche à droite : 30 - 4 = 26, puis 26 × 5 = 130. Il ne tient pas compte de la priorité de la multiplication.
+- **c.** 20
+  <br>*Erreur visée :* L'élève effectue bien la multiplication en premier, 4 × 5 = 20, mais s'arrête là : il oublie de soustraire ce résultat à 30.
+
+*Corrigé.* (1) Dans 30 - 4 × 5, la multiplication est prioritaire sur la soustraction : on calcule d'abord 4 × 5 = 20. (2) On termine le calcul : 30 - 20 = 10. (3) La bonne réponse est a.
+
+*Indice.* Quelle opération doit-on effectuer en premier ?
+
+**EX-B011-E-01** — entrainement, numerique, 50 s
+
+Calcule 50 - 36 ÷ 4 + 2.
+
+**Réponse :** 43
+
+*Corrigé.* (1) La division est prioritaire : 36 ÷ 4 = 9. Le calcul devient 50 - 9 + 2. (2) Il ne reste qu'une soustraction et une addition, qui ont la même priorité : on les effectue de gauche à droite. 50 - 9 = 41, puis 41 + 2 = 43. (3) Attention au piège : calculer d'abord 9 + 2 = 11, puis 50 - 11 = 39, est faux. À priorité égale, on va de gauche à droite. (4) Résultat : 50 - 36 ÷ 4 + 2 = 43.
+
+*Indice.* Commence par la division. Ensuite, dans quel ordre fais-tu une soustraction et une addition ?
+
+**EX-B011-E-02** — entrainement, vrai_faux, 45 s
+
+Tom dit : « 8 × 3 + 6 est un produit, car on y voit d'abord une multiplication. » A-t-il raison ?
+
+**Réponse :** False
+
+*Corrigé.* (1) Le nom d'un calcul vient de la dernière opération effectuée, pas de la première écrite. (2) Dans 8 × 3 + 6, on calcule d'abord 8 × 3 = 24, puis 24 + 6 = 30. La dernière opération est une addition. (3) C'est donc une somme, dont les termes sont 8 × 3 et 6. Tom a tort. Le produit 8 × 3 n'est qu'un des termes de cette somme.
+
+*Indice.* Quelle est la dernière opération que l'on effectue ?
+
+**EX-B011-M-01** — maitrise, qcm, 90 s
+
+On veut placer des parenthèses dans 4 + 8 × 5 - 2 pour obtenir 58. Quelle écriture convient ?
+
+- **a.** 4 + 8 × (5 - 2)
+  <br>*Erreur visée :* L'élève place les parenthèses autour de la soustraction sans calculer : l'écriture vaut 4 + 8 × 3 = 28.
+- **b.** (4 + 8) × (5 - 2)
+  <br>*Erreur visée :* L'élève voit qu'il faut grouper 4 + 8, mais ajoute aussi des parenthèses autour de 5 - 2 : l'écriture vaut 12 × 3 = 36.
+- **c.** 4 + (8 × 5) - 2
+  <br>*Erreur visée :* L'élève entoure la multiplication, qui était déjà prioritaire : ces parenthèses ne changent rien, l'écriture vaut 42.
+- **d.** (4 + 8) × 5 - 2 ✅
+
+*Corrigé.* (1) On calcule chaque écriture en commençant par les parenthèses, puis les multiplications, puis les additions et soustractions. (2) a : 4 + 8 × 3 = 4 + 24 = 28. b : 12 × 3 = 36. c : 4 + 40 - 2 = 42, les parenthèses ne changent rien. (3) d : (4 + 8) × 5 - 2 = 12 × 5 - 2 = 60 - 2 = 58. La bonne réponse est d. (4) Les parenthèses servent à imposer un calcul qui ne serait pas fait en premier : ici, l'addition 4 + 8.
+
+*Indice.* Quel calcul faut-il faire en premier pour arriver près de 60 ?
+
+**EX-B011-M-02** — maitrise, numerique, 90 s
+
+Calcule 3 × (14 - 2 × 5) + 12 ÷ 4.
+
+**Réponse :** 15
+
+*Corrigé.* (1) On commence par les parenthèses. À l'intérieur, la multiplication passe d'abord : 2 × 5 = 10, puis 14 - 10 = 4. (2) L'expression devient 3 × 4 + 12 ÷ 4. (3) Multiplication et division avant l'addition : 3 × 4 = 12 et 12 ÷ 4 = 3. (4) Enfin, 12 + 3 = 15.
+
+*Indice.* Dans les parenthèses aussi, les priorités s'appliquent.
+
+---
+
+## `B044` · Additionner deux décimaux relatifs — 5e, difficulté 4
+
+*Additionner deux nombres décimaux relatifs : de même signe, on ajoute les distances à zéro et on garde le signe ; de signes contraires, on soustrait la plus petite distance à zéro de la plus grande et on prend le signe du nombre le plus éloigné de zéro ; la somme de deux nombres opposés est nulle. Le sens vient d'abord de situations (gains et pertes, température qui monte ou descend) et de déplacements sur la droite graduée. Écritures avec parenthèses : (−4) + (+7) ; (−2,5) + (−1,3). L'erreur type est d'ajouter les distances à zéro quand les signes sont contraires ((−4) + (+7) = −11 ou 11). Figure utile : droite graduée avec un déplacement fléché depuis le premier nombre.*
+
+> « Additionner deux nombres décimaux relatifs. » — *Cycle 4, classe de 5e, Nombres et calculs, Nombres relatifs, Objectifs d'apprentissage*
+
+**EX-B044-D-01** — decouverte, qcm, 60 s
+
+La flèche représente une addition : on part du nombre où elle commence, puis on avance ou on recule. Quelle addition représente-t-elle ?
+
+- **a.** (−2) + (+3) = 1
+  <br>*Erreur visée :* L'élève confond le départ et l'arrivée de la flèche : il part de la pointe, −2, au lieu de la graduation où la flèche commence.
+- **b.** (−5) + (−3) = −8
+  <br>*Erreur visée :* L'élève lit bien le départ et la longueur, mais donne au déplacement le signe du premier terme : il croit qu'en partant d'un négatif, on ajoute forcément un négatif. La flèche va pourtant vers la droite.
+- **c.** (−5) + (+3) = −2 ✅
+- **d.** (−5) + (+4) = −1
+  <br>*Erreur visée :* L'élève compte les traits au lieu des intervalles : de −5 à −2, il y a 4 traits, mais seulement 3 intervalles.
+
+*Corrigé.* (1) La flèche commence à la graduation −5 : c'est le premier terme, (−5). (2) Elle va vers la droite, dans le sens où les nombres grandissent, de 3 intervalles : on ajoute (+3). On compte les intervalles, pas les traits. (3) Elle s'arrête à −2. Donc (−5) + (+3) = −2. (4) Avec les distances à zéro : les signes sont contraires, on calcule 5 − 3 = 2 et on garde le signe de −5, le plus éloigné de zéro. La bonne réponse est c.
+
+*Indice.* Où commence la flèche ? Dans quel sens va-t-elle, et de combien d'intervalles ?
+
+**EX-B044-D-02** — decouverte, numerique, 60 s
+
+Dans un jeu, Inès perd 6 points au premier tour, puis en gagne 9 au second. Calcule (−6) + (+9) : c'est son score après les deux tours.
+
+**Réponse :** 3
+
+*Corrigé.* (1) Perdre 6 points, c'est (−6) ; gagner 9 points, c'est (+9). (2) Les points gagnés compensent d'abord les 6 points perdus : sur les 9, il en reste 3. (3) Avec les distances à zéro : les signes sont contraires, on soustrait la plus petite distance de la plus grande, 9 − 6 = 3, et on garde le signe de (+9), le plus éloigné de zéro. (4) (−6) + (+9) = 3 : Inès a 3 points. Piège : ajouter 6 et 9, ce qui donne 15 ou −15, comme si les points perdus et gagnés s'additionnaient.
+
+*Indice.* Les points gagnés compensent d'abord les points perdus. Combien en reste-t-il ?
+
+**EX-B044-E-01** — entrainement, numerique, 90 s
+
+Le point A repère la température à 7 h. À 14 h, elle a augmenté de 6,5 degrés. Quelle température fait-il à 14 h, en °C ?
+
+**Réponse :** 2
+
+*Corrigé.* (1) Lecture du thermomètre : entre deux nombres écrits, l'écart de 1 degré est partagé en 2 petits intervalles, qui valent chacun 0,5 degré. A est à mi-chemin entre −5 et −4 : il repère −4,5. (2) La température augmente de 6,5 degrés : on calcule (−4,5) + (+6,5). (3) Les signes sont contraires : on soustrait les distances à zéro, 6,5 − 4,5 = 2, et on garde le signe de (+6,5), le plus éloigné de zéro. (4) Il fait 2 °C à 14 h. Sur le thermomètre, on monte de 6,5 degrés depuis A : on dépasse 0 et on arrive à 2.
+
+*Indice.* Que vaut un petit intervalle du thermomètre ? Une hausse de température, c'est l'ajout d'un nombre positif.
+
+**EX-B044-E-02** — entrainement, vrai_faux, 90 s
+
+Tom calcule (−3,4) + (+1,9) et trouve −5,3. A-t-il raison ?
+
+**Réponse :** False
+
+*Corrigé.* (1) Les deux nombres sont de signes contraires : on n'ajoute pas leurs distances à zéro. (2) On soustrait la plus petite distance à zéro de la plus grande : 3,4 − 1,9 = 1,5. (3) On garde le signe du nombre le plus éloigné de zéro, −3,4 : le résultat est négatif. (−3,4) + (+1,9) = −1,5. (4) Tom a tort : c'est faux. Il a ajouté 3,4 et 1,9 comme si les deux nombres étaient négatifs. Contrôle : en partant de −3,4 et en avançant de 1,9 vers la droite, on se rapproche de zéro, on ne s'en éloigne pas.
+
+*Indice.* Les deux nombres ont-ils le même signe ? Quelle règle s'applique alors aux distances à zéro ?
+
+**EX-B044-M-01** — maitrise, qcm, 120 s
+
+Sans calculer, laquelle de ces sommes est négative ?
+
+- **a.** (+3,7) + (−5,2) ✅
+- **b.** (−6,2) + (+8,1)
+  <br>*Erreur visée :* L'élève donne à la somme le signe du premier terme : −6,2 est négatif, il croit la somme négative. Or c'est (+8,1), le plus éloigné de zéro, qui l'emporte.
+- **c.** (−1,25) + (+1,3)
+  <br>*Erreur visée :* L'élève compare 1,25 et 1,3 en lisant 25 > 3 : il croit −1,25 plus éloigné de zéro que +1,3. Or 1,3 = 1,30, et 30 centièmes, c'est plus que 25 centièmes : la somme est positive.
+
+*Corrigé.* (1) Les deux termes de chaque somme sont de signes contraires : le résultat a le signe du nombre le plus éloigné de zéro. On compare donc les distances à zéro, sans calculer. (2) a : 5,2 > 3,7, c'est (−5,2) qui l'emporte : la somme est négative. (3) b : 8,1 > 6,2, c'est (+8,1) qui l'emporte : la somme est positive, même si le premier terme est négatif. (4) c : 1,3 = 1,30 et 1,30 > 1,25, c'est (+1,3) qui l'emporte : la somme est positive. (5) La seule somme négative est la a. Vérification : (+3,7) + (−5,2) = −1,5.
+
+*Indice.* Dans chaque somme, quel est le nombre le plus éloigné de zéro ?
+
+**EX-B044-M-02** — maitrise, numerique, 120 s
+
+Le compte de Sami affiche −12,35 € : il doit cet argent à la banque. Il dépose 8,70 €. Quel est son nouveau solde, en euros ?
+
+**Réponse :** -3.65
+
+*Corrigé.* (1) Déposer 8,70 €, c'est ajouter (+8,70) au solde : on calcule (−12,35) + (+8,70). (2) Les signes sont contraires : on soustrait les distances à zéro. On pose 12,35 − 8,70 en alignant les virgules : on trouve 3,65. (3) On garde le signe du nombre le plus éloigné de zéro, −12,35 : le résultat est négatif. (4) (−12,35) + (+8,70) = −3,65. Le nouveau solde est −3,65 € : le dépôt ne suffit pas à rembourser toute la dette. Pièges : −21,05 € (distances ajoutées) ou 3,65 € (signe oublié).
+
+*Indice.* Le dépôt suffit-il à effacer toute la dette ?
+
+---
+
 ## `C011` · Réduction au même dénominateur — 5e, difficulté 4
 
 *Trouver un dénominateur commun à deux fractions et les réduire*
@@ -10545,6 +11321,406 @@ Range ces trois fractions de la plus petite à la plus grande : 3/4, 7/18, 5/6 �
 *Corrigé.* (1) Aucune astuce ne fonctionne ici : les trois fractions sont inférieures à 1, et elles n'ont ni numérateur ni dénominateur commun. (2) Il faut donc les réduire au même dénominateur. 4, 18 et 6 divisent tous 36. (3) 3/4 = 27/36, 7/18 = 14/36, 5/6 = 30/36. (4) On compare les numérateurs : 14 < 27 < 30. (5) Donc 7/18 < 3/4 < 5/6.
 
 *Indice.* Cherche un dénominateur commun aux trois fractions : un multiple de 4, de 18 et de 6.
+
+---
+
+## `A017` · Problèmes de multiples et de diviseurs communs — 5e, difficulté 5
+
+*Résoudre des problèmes où il faut chercher un multiple commun (deux phénomènes périodiques qui se reproduisent ensemble : deux bus qui repassent toutes les 12 et toutes les 18 minutes, deux engrenages) ou un diviseur commun (répartir 84 billes et 60 calots en paquets identiques, sans reste, le plus grand nombre de paquets possible), avec des nombres jusqu'à quelques centaines, en listant les multiples ou les diviseurs. Les mots PGCD et PPCM ne sont pas employés : ils ne figurent pas au programme. Figure : aucune.*
+
+> « Utiliser les notions de multiples et diviseurs. » — *Cycle 4, classe de 5e, Nombres et calculs, Opérations, Objectifs d'apprentissage*
+> « Les multiples et les diviseurs sont utilisés en lien avec les fractions, mais également dans le cadre de résolution de problèmes » — *Cycle 4, Nombres et calculs, présentation commune aux trois classes*
+> « Ces notions se prêtent particulièrement à une approche interdisciplinaire par l'étude des problématiques liées au calendrier, à l'informatique, aux engrenages, à la conjonction de phénomènes périodiques et aux cycles d'éclosion de certaines espèces » — *Cycle 4, Nombres et calculs, présentation commune aux trois classes*
+
+**EX-A017-D-01** — decouverte, numerique, 90 s
+
+Un phare clignote toutes les 15 secondes, un autre toutes les 25 secondes. Ils viennent de clignoter ensemble. Dans combien de secondes clignoteront-ils de nouveau ensemble ?
+
+**Réponse :** 75
+
+*Corrigé.* (1) Le premier phare clignote au bout de 15, 30, 45, 60, 75, 90… secondes : ce sont les multiples de 15. (2) Le second clignote au bout de 25, 50, 75, 100… secondes : ce sont les multiples de 25. (3) Ils clignotent ensemble quand le nombre de secondes est un multiple de 15 et de 25 à la fois. Le premier nombre présent dans les deux listes est 75. (4) Réponse : dans 75 secondes. Vérification : 75 = 15 × 5 et 75 = 25 × 3. Le premier phare aura clignoté 5 fois, le second 3 fois. (5) 15 × 25 = 375 est aussi un multiple commun, mais ce n'est pas le premier : les phares se sont déjà retrouvés au bout de 75, 150, 225 et 300 secondes.
+
+*Indice.* Écris les multiples de 15, puis ceux de 25. Quel est le premier nombre présent dans les deux listes ?
+
+**EX-A017-D-02** — decouverte, qcm, 75 s
+
+Un fleuriste a 24 roses et 36 tulipes. Il fait des bouquets tous identiques et utilise toutes ses fleurs. Parmi ces nombres de bouquets, lequel est possible ?
+
+- **a.** 6 bouquets ✅
+- **b.** 8 bouquets
+  <br>*Erreur visée :* L'élève ne vérifie que les roses : 24 = 8 × 3, chaque bouquet aurait 3 roses. Mais 36 n'est pas dans la table de 8 (8 × 4 = 32, 8 × 5 = 40) : il resterait des tulipes.
+- **c.** 9 bouquets
+  <br>*Erreur visée :* L'élève ne vérifie que les tulipes : 36 = 9 × 4, chaque bouquet aurait 4 tulipes. Mais 24 n'est pas dans la table de 9 (9 × 2 = 18, 9 × 3 = 27) : il resterait des roses.
+
+*Corrigé.* (1) Pour que les bouquets soient identiques sans reste, le nombre de bouquets doit diviser 24 (les roses) et 36 (les tulipes). (2) 6 divise 24 (24 = 6 × 4) et 36 (36 = 6 × 6) : 6 bouquets de 4 roses et 6 tulipes, c'est possible. (3) 8 divise 24, mais pas 36. 9 divise 36, mais pas 24. Il faut un diviseur commun aux deux nombres.
+
+*Indice.* Le nombre de bouquets doit partager les roses sans reste, et aussi les tulipes sans reste.
+
+**EX-A017-E-01** — entrainement, numerique, 150 s
+
+Pour un goûter, on a 48 crêpes et 72 gaufres. On prépare des assiettes identiques en utilisant tout. Quel est le plus grand nombre d'assiettes possible ?
+
+**Réponse :** 24
+
+*Corrigé.* (1) Le nombre d'assiettes doit diviser 48 et 72 : c'est un diviseur commun à 48 et à 72. (2) Diviseurs de 48 : 1, 2, 3, 4, 6, 8, 12, 16, 24, 48. (3) On les teste sur 72 en partant du plus grand. 48 ne divise pas 72 (48 × 2 = 96). 24 divise 72 : 72 = 24 × 3. (4) Le plus grand nombre d'assiettes est 24. Chaque assiette porte 2 crêpes (48 = 24 × 2) et 3 gaufres (72 = 24 × 3).
+
+*Indice.* Écris les diviseurs de 48, puis cherche le plus grand qui divise aussi 72.
+
+**EX-A017-E-02** — entrainement, vrai_faux, 120 s
+
+Inès fait un tour de piste en 10 min, Paul en 15 min. Ils partent ensemble. Vrai ou faux : ils se retrouveront sur la ligne de départ pour la première fois après 150 min.
+
+**Réponse :** False
+
+*Corrigé.* (1) Inès passe sur la ligne au bout de 10, 20, 30, 40… minutes : les multiples de 10. (2) Paul passe sur la ligne au bout de 15, 30, 45… minutes : les multiples de 15. (3) Le premier multiple commun est 30 : ils se retrouvent sur la ligne au bout de 30 min, Inès après 3 tours et Paul après 2 tours. (4) La phrase est fausse. 150 = 10 × 15 est bien un multiple commun, mais pas le premier : multiplier les deux durées ne donne pas toujours le plus petit.
+
+*Indice.* Écris les instants où Inès passe sur la ligne, puis ceux de Paul. Quel est le premier instant commun ?
+
+**EX-A017-M-01** — maitrise, numerique, 180 s
+
+Deux roues dentées s'engrènent : la petite a 18 dents, la grande 30. Deux dents marquées se touchent. Combien de tours fera la petite roue pour qu'elles se touchent de nouveau ?
+
+**Réponse :** 5
+
+*Corrigé.* (1) Quand les roues tournent, le même nombre de dents passe au point de contact sur chacune. (2) Les dents marquées se retrouvent quand ce nombre de dents est un multiple de 18 (la petite a fait des tours complets) et de 30 (la grande aussi). (3) Multiples de 30 : 30, 60, 90… 30 et 60 ne sont pas dans la table de 18 (18 × 1 = 18, 18 × 2 = 36, 18 × 3 = 54, 18 × 4 = 72). 90 l'est : 90 = 18 × 5. (4) Il passe donc 90 dents : la petite roue a fait 5 tours (90 = 18 × 5) et la grande 3 tours (90 = 30 × 3). (5) La question porte sur les tours de la petite roue, pas sur le nombre de dents : la réponse est 5, pas 90.
+
+*Indice.* Compte en dents : après combien de dents la petite roue a-t-elle fait un nombre entier de tours, et la grande aussi ?
+
+**EX-A017-M-02** — maitrise, qcm, 180 s
+
+Un club compte entre 100 et 150 membres. Qu'on les range par 6, par 8 ou par 10, il n'en reste jamais. Combien de membres compte le club ?
+
+- **a.** 144
+  <br>*Erreur visée :* L'élève ne vérifie que deux des trois conditions : 144 = 6 × 24 = 8 × 18, mais 144 ne finit pas par 0, il n'est pas un multiple de 10.
+- **b.** 120 ✅
+- **c.** 150
+  <br>*Erreur visée :* L'élève ne vérifie que deux des trois conditions : 150 = 6 × 25 = 10 × 15, mais 150 n'est pas dans la table de 8 (8 × 18 = 144, 8 × 19 = 152).
+
+*Corrigé.* (1) Le nombre de membres doit être un multiple de 6, de 8 et de 10 à la fois. (2) On part des multiples de 10 entre 100 et 150 : 100, 110, 120, 130, 140, 150. (3) Lequel est dans la table de 8 ? 8 × 15 = 120. Les autres ne le sont pas : 8 × 12 = 96, 8 × 13 = 104, 8 × 14 = 112, 8 × 16 = 128, 8 × 17 = 136, 8 × 18 = 144, 8 × 19 = 152. (4) 120 est aussi dans la table de 6 : 120 = 6 × 20. Le club compte 120 membres. (5) 144 et 150 ne vérifient chacun que deux conditions sur trois.
+
+*Indice.* Commence par les multiples de 10 entre 100 et 150 : il n'y en a que six. Garde ceux qui sont dans la table de 8, puis de 6.
+
+---
+
+## `B045` · Soustraire deux décimaux relatifs — 5e, difficulté 5
+
+*Savoir que soustraire un nombre relatif revient à ajouter son opposé : (+3) − (−5) = (+3) + (+5) = 8 ; calculer la différence de deux décimaux relatifs, et l'interpréter comme un écart (de −4 °C à 6 °C, la température a augmenté de 6 − (−4) = 10 degrés). La règle se justifie par l'addition à trou : (−5) + ... = (+3) se complète en calculant (+3) − (−5). L'erreur type est de changer le signe de l'opération sans changer celui du nombre, ou de soustraire les distances à zéro. Figure utile : droite graduée verticale (thermomètre) où l'écart se compte en graduations.*
+
+> « Soustraire deux nombres décimaux relatifs. » — *Cycle 4, classe de 5e, Nombres et calculs, Nombres relatifs, Objectifs d'apprentissage*
+> « Savoir que pour compléter une addition à trou, on utilise une soustraction : 2 + ... = 7 se complète en calculant 7 – 2. » — *Cycle 4, classe de 5e, Nombres et calculs, Nombres relatifs, Automatismes*
+
+**EX-B045-D-01** — decouverte, numerique, 60 s
+
+Sur ce thermomètre, M repère la température du matin et S celle de l'après-midi. De combien de degrés la température a-t-elle augmenté ?
+
+**Réponse :** 8
+
+*Corrigé.* (1) On lit le thermomètre : M est à −5 et S à 3. (2) On compte les intervalles d'un degré de M jusqu'à S : 5 pour remonter jusqu'à 0, puis 3 pour aller de 0 à 3. En tout, 5 + 3 = 8 degrés. (3) Par le calcul, l'augmentation est la température d'arrivée moins celle de départ : 3 − (−5). Soustraire (−5), c'est ajouter son opposé, (+5) : 3 + 5 = 8. (4) La température a augmenté de 8 degrés. Piège : calculer 5 − 3 = 2, en soustrayant les distances à zéro.
+
+*Indice.* Compte les intervalles d'un degré de M jusqu'à 0, puis de 0 jusqu'à S.
+
+**EX-B045-D-02** — decouverte, qcm, 60 s
+
+Soustraire un nombre, c'est ajouter son opposé. Quelle écriture permet de calculer (−4) − (+9) ?
+
+- **a.** (−4) + (+9) = 5
+  <br>*Erreur visée :* L'élève change le signe de l'opération sans changer celui du nombre : il ajoute (+9) au lieu d'ajouter son opposé.
+- **b.** (+4) + (−9) = −5
+  <br>*Erreur visée :* L'élève prend l'opposé du premier terme au lieu de celui du nombre qu'on soustrait.
+- **c.** (−4) − (−9) = 5
+  <br>*Erreur visée :* L'élève change le signe du nombre mais garde la soustraction : il change un seul des deux signes.
+- **d.** (−4) + (−9) = −13 ✅
+
+*Corrigé.* (1) L'opposé de (+9) est (−9) : même distance à zéro, signe contraire. (2) On remplace « − (+9) » par « + (−9) » : (−4) − (+9) = (−4) + (−9). Le premier terme ne change pas. (3) Deux nombres négatifs : on ajoute les distances à zéro, 4 + 9 = 13, et on garde le signe −. Résultat : −13. (4) Vérification : partir de −4 et reculer de 9 sur la droite graduée mène à −13. La bonne réponse est d.
+
+*Indice.* Quel est l'opposé de (+9) ? Que devient le premier terme ?
+
+**EX-B045-E-01** — entrainement, numerique, 90 s
+
+Sur cette échelle d'altitude, D repère un drone et P un plongeur. Quelle distance verticale les sépare, en mètres ?
+
+**Réponse :** 20
+
+*Corrigé.* (1) Lecture : entre deux nombres écrits, l'écart de 5 m est partagé en 5 petits intervalles, qui valent chacun 1 m. D est 2 intervalles au-dessus de 5 : altitude 7 m. P est 3 intervalles sous −10 : altitude −13 m. (2) La distance est la plus grande altitude moins la plus petite : 7 − (−13). (3) Soustraire (−13), c'est ajouter son opposé, (+13) : 7 + 13 = 20. (4) Le drone et le plongeur sont séparés de 20 m : 7 m au-dessus du niveau 0, et 13 m en dessous. Piège : 13 − 7 = 6, en soustrayant les distances à zéro.
+
+*Indice.* Lis les deux altitudes, puis calcule la plus grande moins la plus petite.
+
+**EX-B045-E-02** — entrainement, vrai_faux, 90 s
+
+Lina calcule (−6,3) − (−2,8). Elle écrit (−6,3) + (+2,8), puis trouve −3,5. A-t-elle raison ?
+
+**Réponse :** True
+
+*Corrigé.* (1) L'opposé de (−2,8) est (+2,8). Soustraire (−2,8), c'est ajouter (+2,8) : la transformation de Lina est juste. (2) (−6,3) + (+2,8) : les signes sont contraires, on soustrait les distances à zéro, 6,3 − 2,8 = 3,5, et on garde le signe de −6,3, le plus éloigné de zéro. (3) Le résultat est −3,5 : Lina a raison, c'est vrai. (4) Piège : calculer −6,3 − 2,8 = −9,1, en oubliant de changer le signe de (−2,8).
+
+*Indice.* Quel est l'opposé de (−2,8) ? Refais ensuite l'addition.
+
+**EX-B045-M-01** — maitrise, qcm, 120 s
+
+Quel nombre faut-il ajouter à (−7,5) pour obtenir (+2) ?
+
+- **a.** −5,5
+  <br>*Erreur visée :* L'élève additionne les deux nombres de l'énoncé : (−7,5) + (+2) = −5,5. Pour compléter une addition à trou, il faut soustraire.
+- **b.** 9,5 ✅
+- **c.** −9,5
+  <br>*Erreur visée :* L'élève soustrait dans le mauvais ordre : (−7,5) − (+2) = −9,5. Le nombre cherché est l'arrivée moins le départ, (+2) − (−7,5).
+- **d.** 5,5
+  <br>*Erreur visée :* L'élève soustrait les distances à zéro, 7,5 − 2 = 5,5, sans tenir compte des signes : pour aller de −7,5 à 0, il faut déjà avancer de 7,5.
+
+*Corrigé.* (1) On cherche le nombre qui complète (−7,5) + … = (+2). Pour compléter une addition à trou, on soustrait : … = (+2) − (−7,5). (2) Soustraire (−7,5), c'est ajouter son opposé : (+2) + (+7,5) = 9,5. (3) Sur la droite graduée : de −7,5 à 0, on avance de 7,5 ; puis de 0 à 2, on avance de 2. En tout, 7,5 + 2 = 9,5. (4) Contrôle : (−7,5) + (+9,5) = 2. La bonne réponse est b.
+
+*Indice.* Pour compléter 2 + … = 7, on calcule 7 − 2. Fais de même ici.
+
+**EX-B045-M-02** — maitrise, numerique, 120 s
+
+Record de froid sur Terre : −89,2 °C, en Antarctique. Record de chaleur : 56,7 °C, aux États-Unis. Quel est l'écart entre ces deux records, en degrés ?
+
+**Réponse :** 145.9
+
+*Corrigé.* (1) L'écart est la plus haute température moins la plus basse : 56,7 − (−89,2). (2) Soustraire (−89,2), c'est ajouter son opposé, (+89,2) : on calcule 56,7 + 89,2. (3) On pose l'addition en alignant les virgules : 56,7 + 89,2 = 145,9. (4) L'écart est de 145,9 degrés : 89,2 degrés pour remonter jusqu'à 0, puis 56,7 degrés au-dessus de 0. Piège : 89,2 − 56,7 = 32,5, en soustrayant les distances à zéro.
+
+*Indice.* Sur un thermomètre, de combien faut-il monter pour aller de −89,2 à 0 ? Puis de 0 à 56,7 ?
+
+---
+
+## `B046` · Sommes de relatifs : parenthèses et écriture simplifiée — 5e, difficulté 5
+
+*Passer de l'écriture avec parenthèses d'une somme de relatifs à l'écriture simplifiée, et inversement : (−3) + (+5) − (−2) s'écrit −3 + 5 + 2 ; savoir que, dans l'écriture simplifiée, chaque signe est celui du terme qui le suit, et que les parenthèses sont indispensables quand deux signes se suivent : on écrit 4 − (−3), jamais 4 − −3. Reconnaître des écritures égales. Écrire une expression en saisie libre ne se fait pas à l'écran : l'élève choisit l'écriture simplifiée correcte, dit si une écriture est correcte (vrai ou faux), ou calcule la valeur. Figure : aucune.*
+
+> « Simplifier l'écriture de sommes comportant des parenthèses. » — *Cycle 4, classe de 5e, Nombres et calculs, Nombres relatifs, Objectifs d'apprentissage*
+> « Connaitre et justifier les situations dans lesquelles des parenthèses sont indispensables au sens des écritures. » — *Cycle 4, classe de 5e, Nombres et calculs, Nombres relatifs, Objectifs d'apprentissage*
+
+**EX-B046-D-01** — decouverte, qcm, 60 s
+
+Pour simplifier l'écriture d'une somme, on supprime les parenthèses et les signes d'addition placés devant elles. Quelle est l'écriture simplifiée de (+5) + (−8) + (+1) ?
+
+- **a.** 5 + 8 + 1
+  <br>*Erreur visée :* L'élève supprime les parenthèses avec le signe des nombres : il perd le signe de (−8), et la somme change de valeur (14 au lieu de −2).
+- **b.** 5 − 8 + 1 ✅
+- **c.** 5 + −8 + 1
+  <br>*Erreur visée :* L'élève recopie le signe de l'addition et celui du nombre : deux signes se suivent, « + − », ce qui ne s'écrit jamais sans parenthèses.
+
+*Corrigé.* (1) (+5) est positif : en tête de la somme, on l'écrit simplement 5. (2) + (−8) : on supprime le signe d'addition et les parenthèses, il reste le signe du nombre, − 8. (3) + (+1) s'écrit de même + 1. Chaque signe de l'écriture simplifiée est celui du terme qui le suit. (4) On obtient 5 − 8 + 1. Les deux écritures valent −2. La bonne réponse est b.
+
+*Indice.* Pour chaque terme, garde seulement le signe qui est dans la parenthèse.
+
+**EX-B046-D-02** — decouverte, vrai_faux, 60 s
+
+Vrai ou faux : (−7) − (+4) s'écrit plus simplement −7 − 4.
+
+**Réponse :** True
+
+*Corrigé.* (1) Soustraire (+4), c'est ajouter son opposé : (−7) − (+4) = (−7) + (−4). (2) Dans l'écriture simplifiée, chaque signe est celui du terme qui le suit : (−7) + (−4) s'écrit −7 − 4. (3) C'est vrai. Les deux écritures valent −11. (4) À retenir : « − (+4) » devient « − 4 », alors que « − (−4) » deviendrait « + 4 ».
+
+*Indice.* Transforme d'abord la soustraction en addition de l'opposé.
+
+**EX-B046-E-01** — entrainement, qcm, 90 s
+
+Quelle écriture avec parenthèses est égale à −2 + 9 − 5 ?
+
+- **a.** (−2) + (−9) + (−5)
+  <br>*Erreur visée :* L'élève donne à tous les termes le signe du premier : il lit −2 + 9 − 5 comme une somme de trois nombres négatifs. Cette écriture vaut −16.
+- **b.** (−2) + (+9) − (−5)
+  <br>*Erreur visée :* L'élève met le signe − à la fois dans l'opération et dans le nombre : soustraire (−5) ajoute 5 au lieu de l'enlever. Cette écriture vaut 12 au lieu de 2.
+- **c.** (−2) + (+9) + (−5) ✅
+
+*Corrigé.* (1) Dans −2 + 9 − 5, chaque signe est celui du terme qui le suit : les termes sont −2, +9 et −5. (2) On écrit chaque terme entre parenthèses avec son signe, et on les relie par des additions : (−2) + (+9) + (−5). (3) Vérification : les deux écritures valent 2. L'écriture (−2) + (+9) − (+5) conviendrait également, car soustraire (+5), c'est ajouter (−5). (4) La bonne réponse est c.
+
+*Indice.* Repère les trois termes de −2 + 9 − 5, chacun avec son signe.
+
+**EX-B046-E-02** — entrainement, numerique, 90 s
+
+Mila écrit (−8) − (−3) + (+2,5) sous forme simplifiée, puis calcule. Quel résultat doit-elle trouver ?
+
+**Réponse :** -2.5
+
+*Corrigé.* (1) − (−3) : soustraire (−3), c'est ajouter (+3). Dans l'écriture simplifiée : + 3. (2) + (+2,5) s'écrit + 2,5. On obtient −8 + 3 + 2,5. (3) On calcule de gauche à droite : −8 + 3 = −5, puis −5 + 2,5 = −2,5. (4) Mila doit trouver −2,5. Piège : écrire −8 − 3 + 2,5, en gardant le signe − devant 3, donne −8,5.
+
+*Indice.* Que devient « − (−3) » dans l'écriture simplifiée ?
+
+**EX-B046-M-01** — maitrise, qcm, 120 s
+
+Quelle est l'écriture simplifiée de (−2,5) − (−4) − (+1,5) + (−3) ?
+
+- **a.** −2,5 − 4 − 1,5 − 3
+  <br>*Erreur visée :* L'élève traite − (−4) comme − (+4) : il garde le signe de la soustraction et oublie celui du nombre soustrait, et écrit − 4 au lieu de + 4. Cette écriture vaut −11 au lieu de −3.
+- **b.** 2,5 + 4 + 1,5 + 3
+  <br>*Erreur visée :* L'élève supprime tous les signes en même temps que les parenthèses : il ne garde que les distances à zéro.
+- **c.** −2,5 + 4 + 1,5 − 3
+  <br>*Erreur visée :* L'élève croit que soustraire, c'est toujours ajouter : il transforme − (+1,5) en + 1,5 comme − (−4) en + 4, au lieu d'ajouter l'opposé de (+1,5), qui est (−1,5). Cette écriture vaut 0 au lieu de −3.
+- **d.** −2,5 + 4 − 1,5 − 3 ✅
+
+*Corrigé.* (1) On traite chaque terme. (−2,5), en tête, s'écrit −2,5. (2) − (−4) : soustraire (−4), c'est ajouter (+4). On écrit + 4. (3) − (+1,5) : soustraire (+1,5), c'est ajouter (−1,5). On écrit − 1,5. Et + (−3) s'écrit − 3. (4) Écriture simplifiée : −2,5 + 4 − 1,5 − 3. Les deux écritures valent −3. La bonne réponse est d.
+
+*Indice.* Transforme chaque soustraction en addition de l'opposé, puis supprime les parenthèses.
+
+**EX-B046-M-02** — maitrise, vrai_faux, 90 s
+
+Sami écrit : 6 − −4 = 10. Vrai ou faux : cette écriture est correcte.
+
+**Réponse :** False
+
+*Corrigé.* (1) Le résultat est juste : 6 − (−4) = 6 + 4 = 10. (2) Mais l'écriture ne l'est pas : deux signes, « − − », se suivent. On ne sait plus lequel est l'opération et lequel est le signe du nombre. (3) Quand deux signes se suivent, les parenthèses sont indispensables : on écrit 6 − (−4) = 10, ou, en écriture simplifiée, 6 + 4 = 10. (4) L'affirmation est fausse : un résultat juste ne suffit pas, l'écriture doit avoir un sens.
+
+*Indice.* Regarde les signes placés juste devant le 4 : combien y en a-t-il ?
+
+---
+
+## `B047` · Enchaîner additions et soustractions de relatifs — 5e, difficulté 5
+
+*Calculer une suite de quatre à six additions et soustractions de décimaux relatifs, avec ou sans parenthèses : transformer les soustractions en additions des opposés, puis regrouper les termes positifs d'un côté et les termes négatifs de l'autre, ou les opposés qui s'annulent ; ou calculer de gauche à droite. Exemple : −7 + 4 − (−3) − 2,5 + 7. L'erreur type est de perdre un signe en regroupant, ou de soustraire deux fois. Figure : aucune.*
+
+> « Enchainer additions et soustractions de décimaux relatifs. » — *Cycle 4, classe de 5e, Nombres et calculs, Nombres relatifs, Objectifs d'apprentissage*
+> « Additionner plusieurs nombres décimaux relatifs. » — *Cycle 4, classe de 5e, Nombres et calculs, Nombres relatifs, Objectifs d'apprentissage*
+
+**EX-B047-D-01** — decouverte, numerique, 75 s
+
+Calcule 5 − 8 + 3 − 6. Conseil : regroupe d'abord les termes positifs, puis les termes négatifs.
+
+**Réponse :** -6
+
+*Corrigé.* (1) Chaque signe est celui du terme qui le suit : les termes positifs sont 5 et 3, les termes négatifs −8 et −6. (2) Termes positifs : 5 + 3 = 8. Termes négatifs : −8 − 6 = −14 ; même signe, on ajoute les distances à zéro et on garde le signe −. (3) On regroupe : 8 − 14. Signes contraires : 14 − 8 = 6, avec le signe de −14, le plus éloigné de zéro. Résultat : −6. (4) Vérification de gauche à droite : 5 − 8 = −3 ; −3 + 3 = 0 ; 0 − 6 = −6.
+
+*Indice.* Additionne d'abord 5 et 3, puis les deux termes négatifs.
+
+**EX-B047-D-02** — decouverte, qcm, 75 s
+
+Calcule −7 + 2 + 7 − 4.
+
+- **a.** 12
+  <br>*Erreur visée :* L'élève perd le signe du premier terme et calcule 7 + 2 + 7 − 4 = 12 : un terme négatif placé en tête garde son signe.
+- **b.** −2 ✅
+- **c.** 20
+  <br>*Erreur visée :* L'élève regroupe les positifs (2 + 7 = 9) et les négatifs (−7 − 4 = −11), puis soustrait les négatifs une deuxième fois : 9 − (−11) = 20. Le regroupement s'écrit 9 + (−11).
+- **d.** −16
+  <br>*Erreur visée :* L'élève calcule −7 + 7 = −14, en ajoutant les distances à zéro et en gardant le signe du premier terme. Or la somme de deux nombres opposés est nulle.
+
+*Corrigé.* (1) −7 et +7 sont deux nombres opposés : leur somme est nulle. On peut les barrer. (2) Il reste 2 − 4. Signes contraires : 4 − 2 = 2, avec le signe de −4. Résultat : −2. (3) Vérification par regroupement : positifs 2 + 7 = 9 ; négatifs −7 − 4 = −11 ; 9 + (−11) = −2. (4) La bonne réponse est b.
+
+*Indice.* Cherche deux termes opposés : que vaut leur somme ?
+
+**EX-B047-E-01** — entrainement, numerique, 120 s
+
+Calcule (−3,5) + (+6) − (−1,5) − (+4,25) + (−2).
+
+**Réponse :** -2.25
+
+*Corrigé.* (1) On passe d'abord à l'écriture simplifiée : − (−1,5) devient + 1,5 et − (+4,25) devient − 4,25. On obtient −3,5 + 6 + 1,5 − 4,25 − 2. (2) Termes positifs : 6 + 1,5 = 7,5. (3) Termes négatifs : on ajoute les distances à zéro, 3,5 + 4,25 + 2 = 9,75. Leur somme est −9,75. (4) 7,5 − 9,75 : signes contraires, 9,75 − 7,5 = 2,25, avec le signe de −9,75. Résultat : −2,25. (5) Piège : écrire − 1,5 au lieu de + 1,5 donne −5,25.
+
+*Indice.* Commence par l'écriture simplifiée : que deviennent − (−1,5) et − (+4,25) ?
+
+**EX-B047-E-02** — entrainement, vrai_faux, 90 s
+
+Pour calculer 4,8 − 6 − 2,3 + 6 + 1,5, Adam barre « − 6 » et « + 6 », puis trouve 4. A-t-il raison ?
+
+**Réponse :** True
+
+*Corrigé.* (1) −6 et +6 sont deux termes opposés : leur somme est nulle. Adam peut les barrer sans changer le résultat. (2) Il reste 4,8 − 2,3 + 1,5. De gauche à droite : 4,8 − 2,3 = 2,5, puis 2,5 + 1,5 = 4. (3) Adam a raison : c'est vrai. (4) Attention : on ne barre que deux termes opposés, chacun avec son signe. Barrer « − 6 » et « − 2,3 » ensemble serait faux.
+
+*Indice.* Que vaut −6 + 6 ?
+
+**EX-B047-M-01** — maitrise, qcm, 150 s
+
+Inès calcule −9 − (−4) + 2,5 − 6 − (+1,5) et trouve −18. Quelle est son erreur ?
+
+- **a.** Il n'y a pas d'erreur : −18 est juste.
+  <br>*Erreur visée :* L'élève refait la même erreur qu'Inès : il garde − 4 pour − (−4), et retrouve −18.
+- **b.** Elle a calculé de gauche à droite au lieu de regrouper les termes.
+  <br>*Erreur visée :* L'élève croit que le résultat dépend de la méthode : calculer de gauche à droite ou regrouper les termes positifs et négatifs donne le même résultat, si chaque signe est respecté.
+- **c.** Elle a écrit − (−4) comme − 4, au lieu de + 4. ✅
+- **d.** Elle aurait dû écrire − (+1,5) comme + 1,5.
+  <br>*Erreur visée :* L'élève croit que deux signes qui se suivent donnent toujours + : or soustraire (+1,5), c'est ajouter (−1,5), donc − 1,5.
+
+*Corrigé.* (1) Écriture simplifiée correcte : − (−4) devient + 4 et − (+1,5) devient − 1,5. On obtient −9 + 4 + 2,5 − 6 − 1,5. (2) Positifs : 4 + 2,5 = 6,5. Négatifs : −9 − 6 − 1,5 = −16,5. Résultat : 6,5 − 16,5 = −10. (3) Pour trouver −18, Inès a calculé −9 − 4 + 2,5 − 6 − 1,5 : elle a soustrait 4 au lieu de l'ajouter. L'écart entre −10 et −18, 8, vaut deux fois 4. (4) La bonne réponse est c.
+
+*Indice.* Écris la somme sous forme simplifiée, calcule-la, puis compare avec −18.
+
+**EX-B047-M-02** — maitrise, numerique, 150 s
+
+Quel nombre faut-il écrire à la place du carré pour que l'égalité soit vraie ? −5 + 3,5 − □ + 2 = −4
+
+**Réponse :** 4.5
+
+*Corrigé.* (1) On calcule d'abord les termes connus : −5 + 3,5 + 2 = 0,5. (2) L'égalité devient 0,5 − □ = −4 : en partant de 0,5, on doit descendre jusqu'à −4. (3) On descend de 0,5 pour atteindre 0, puis de 4 pour atteindre −4 : en tout, 0,5 + 4 = 4,5. Par le calcul : □ = 0,5 − (−4) = 0,5 + 4 = 4,5. (4) Vérification : −5 + 3,5 − 4,5 + 2 = −4. Le nombre cherché est 4,5.
+
+*Indice.* Calcule d'abord −5 + 3,5 + 2, puis cherche combien il faut enlever pour arriver à −4.
+
+---
+
+## `B048` · Problèmes d'addition et de soustraction de relatifs — 5e, difficulté 5
+
+*Résoudre des problèmes de températures, d'altitudes, de soldes bancaires, de points de jeu ou de dates qui demandent une ou plusieurs additions ou soustractions de relatifs : variation (de −3,5 °C à 2 °C), état final après plusieurs variations, écart entre deux altitudes. Traduire l'énoncé par un calcul sur des relatifs, puis interpréter le signe du résultat (une variation négative est une baisse). Pour les dates, éviter les écarts qui traversent l'an 1 : il n'y a pas d'année zéro, et le calcul donnerait un an de trop. Figure utile : droite graduée verticale (thermomètre, échelle d'altitude).*
+
+> « Résoudre des problèmes mobilisant addition et soustraction de nombres décimaux relatifs. » — *Cycle 4, classe de 5e, Nombres et calculs, Nombres relatifs, Objectifs d'apprentissage*
+> « Utiliser les nombres relatifs pour représenter des grandeurs observables qui peuvent prendre des valeurs inférieures à zéro (température, temps, altitude, etc.), en particulier dans le cadre de la résolution de problèmes. » — *Cycle 4, classe de 5e, Nombres et calculs, Nombres relatifs, Objectifs d'apprentissage*
+
+**EX-B048-D-01** — decouverte, numerique, 60 s
+
+Le point M du thermomètre indique la température à 6 h. À 14 h, il fait 7 degrés de plus. Quelle température fait-il à 14 h ?
+
+**Réponse :** 2
+
+*Corrigé.* (1) On lit d'abord le thermomètre. Les nombres écrits vont de 2 en 2, et il y a un petit trait entre deux nombres écrits : chaque petit intervalle vaut 1 degré. Le point M est sur le petit trait situé entre −6 et −4 : il indique −5 °C. (2) Il fait 7 degrés de plus : la température monte de 7. Monter, c'est ajouter : (-5) + (+7). (3) Les deux nombres sont de signes contraires : on soustrait les distances à zéro, 7 − 5 = 2, et on garde le signe du nombre le plus éloigné de zéro, ici +7. Donc (-5) + (+7) = 2. (4) À 14 h, il fait 2 °C. On le vérifie sur le thermomètre : de −5, on monte de 5 graduations jusqu'à 0, puis de 2 graduations encore, soit 7 en tout.
+
+*Indice.* Lis d'abord la température du point M : combien vaut un petit intervalle ?
+
+**EX-B048-D-02** — decouverte, qcm, 45 s
+
+Un sous-marin est à 35 m sous le niveau de la mer : son altitude est −35 m. Il remonte de 20 m. Quel calcul donne sa nouvelle altitude ?
+
+- **a.** (-35) + (-20)
+  <br>*Erreur visée :* L'élève associe « sous le niveau de la mer » à un nombre négatif pour les deux nombres : il ajoute −20 comme si le sous-marin descendait encore. Ce calcul donne −55 m, plus profond qu'au départ.
+- **b.** (-35) + (+20) ✅
+- **c.** 35 - 20
+  <br>*Erreur visée :* L'élève oublie que le sous-marin est sous la surface : il part de 35 au lieu de −35. Ce calcul donne 15 m, comme si le sous-marin était sorti de l'eau.
+
+*Corrigé.* (1) Une altitude se mesure à partir du niveau de la mer : au-dessus, elle est positive ; en dessous, elle est négative. Le sous-marin part de −35 m. (2) Remonter de 20 m, c'est faire varier l'altitude de +20 : on ajoute (+20). Le calcul est (-35) + (+20). (3) (-35) + (+20) = -15 : le sous-marin est à 15 m sous la surface, plus près de la surface qu'au départ, ce qui est logique puisqu'il est remonté. La bonne réponse est b.
+
+*Indice.* Remonter fait-il augmenter ou diminuer l'altitude ?
+
+**EX-B048-E-01** — entrainement, numerique, 60 s
+
+À Moscou, un jour d'hiver, il faisait −6,5 °C à 7 h et 3 °C à 15 h. De combien de degrés la température a-t-elle augmenté ?
+
+**Réponse :** 9.5
+
+*Corrigé.* (1) Une variation se calcule toujours : température d'arrivée − température de départ. Ici : 3 - (-6{,}5). (2) Soustraire un nombre, c'est ajouter son opposé. L'opposé de -6{,}5 est 6{,}5 : 3 - (-6{,}5) = 3 + 6{,}5 = 9{,}5. (3) La température a augmenté de 9,5 degrés. Contrôle : de −6,5 °C à 0 °C, elle monte de 6,5 degrés ; de 0 °C à 3 °C, de 3 degrés encore ; 6,5 + 3 = 9,5.
+
+*Indice.* Combien de degrés pour remonter jusqu'à 0 °C, puis de 0 °C jusqu'à 3 °C ?
+
+**EX-B048-E-02** — entrainement, numerique, 75 s
+
+Le compte bancaire de Sami est à −45 € : il doit 45 € à sa banque. Il dépose 120 €, puis paie 90 € par carte. Quel est le nouveau solde de son compte ?
+
+**Réponse :** -15
+
+*Corrigé.* (1) Un dépôt fait monter le solde : on ajoute 120. Un paiement le fait baisser : on soustrait 90. Le calcul est -45 + 120 - 90. (2) On calcule de gauche à droite : -45 + 120 = 75, car 120 est plus loin de zéro que -45 et 120 - 45 = 75. (3) Puis 75 - 90 = -15 : on enlève 90 alors qu'il n'y a que 75, il manque 15. (4) Le nouveau solde est −15 € : Sami doit encore 15 € à sa banque.
+
+*Indice.* Écris un seul calcul : un dépôt s'ajoute, un paiement se soustrait.
+
+**EX-B048-M-01** — maitrise, numerique, 75 s
+
+Un spéléologue entre dans une grotte et descend de 140 m. Il se trouve alors à l'altitude −85 m. À quelle altitude se trouve l'entrée de la grotte ?
+
+**Réponse :** 55
+
+*Corrigé.* (1) On ne connaît pas l'altitude de départ. On sait que : altitude de l'entrée − 140 = −85. (2) Pour retrouver le départ, on fait le chemin à l'envers : à partir de −85 m, on remonte de 140 m. Cela s'écrit -85 + 140. (3) -85 + 140 = 55 : signes contraires, on soustrait les distances à zéro, 140 - 85 = 55, et on garde le signe de +140, le plus éloigné de zéro. (4) L'entrée de la grotte est à 55 m d'altitude. Vérification : 55 − 140 = −85.
+
+*Indice.* Fais le trajet à l'envers : si le spéléologue remontait de 140 m, où arriverait-il ?
+
+**EX-B048-M-02** — maitrise, qcm, 75 s
+
+Entre ce matin et ce soir, la température a varié de −6,5 degrés. Ce soir, il fait −2 °C. Quelle température faisait-il ce matin ?
+
+- **a.** 4,5 degrés ✅
+- **b.** −8,5 degrés
+  <br>*Erreur visée :* L'élève applique la variation à la température du soir au lieu de faire le chemin à l'envers : −2 + (−6,5) = −8,5. Or une baisse qui arrive à −2 °C part d'une température plus haute.
+- **c.** 8,5 degrés
+  <br>*Erreur visée :* L'élève voit que le matin était plus chaud, mais part de 2 °C au lieu de −2 °C : 2 + 6,5 = 8,5.
+
+*Corrigé.* (1) La variation est négative : entre ce matin et ce soir, la température a baissé de 6,5 degrés. Le matin était donc plus chaud que le soir. (2) Pour retrouver la température du matin, on fait le chemin à l'envers : à partir de −2 °C, on remonte de 6,5 degrés. Cela s'écrit -2 + 6{,}5. (3) -2 + 6{,}5 = 4{,}5 : signes contraires, on soustrait les distances à zéro, 6{,}5 - 2 = 4{,}5, et on garde le signe de +6{,}5, le plus éloigné de zéro. (4) Ce matin, il faisait 4,5 °C. Vérification : 4{,}5 + (-6{,}5) = -2. La bonne réponse est a.
+
+*Indice.* Une variation négative, est-ce une hausse ou une baisse ? Fais ensuite le chemin à l'envers.
 
 ---
 
@@ -11018,6 +12194,240 @@ On ne connaît pas le prix d'un vélo, mais on sait que 10 % de ce prix valent 1
 
 ---
 
+## `B049` · Multiplier deux décimaux relatifs — 4e, difficulté 5
+
+*Calculer le produit de deux nombres décimaux relatifs : d'abord quand un seul facteur est négatif, en voyant la multiplication comme une addition répétée (4 × (−3) = (−3) + (−3) + (−3) + (−3) = −12) ; puis quand les deux facteurs sont négatifs, dont le produit est positif, ce que la distributivité justifie ((−3) × (−4) + (−3) × 4 = (−3) × 0 = 0). En déduire la règle des signes d'un produit de deux facteurs. L'erreur type est de transposer la règle de l'addition : « deux négatifs donnent un négatif », (−3) × (−4) = −12. Figure : aucune.*
+
+> « Multiplier deux nombres relatifs : d'abord dans le cas où un seul des facteurs est négatif, puis, grâce à la distributivité, dans le cas où les deux facteurs sont négatifs. » — *Cycle 4, classe de 4e, Nombres et calculs, Opérations sur les nombres relatifs, Objectifs d'apprentissage*
+> « Multiplication comme addition itérée : 3 + 3 + 3 + 3 = 4 × 3. » — *Cycle 4, classe de 4e, Nombres et calculs, Opérations sur les nombres relatifs, Automatismes*
+
+**EX-B049-D-01** — decouverte, numerique, 45 s
+
+Le niveau d'un lac baisse de 7 cm chaque semaine : sa variation est de −7 cm par semaine. Sa variation en 6 semaines s'écrit 6 × (-7). Combien vaut-elle ?
+
+**Réponse :** -42
+
+*Corrigé.* (1) Multiplier par 6, c'est additionner 6 fois le même nombre : 6 × (-7) = (-7) + (-7) + (-7) + (-7) + (-7) + (-7). (2) On additionne des nombres négatifs : on ajoute les distances à zéro, 6 × 7 = 42, et on garde le signe moins. Donc 6 × (-7) = -42. (3) En 6 semaines, le niveau varie de −42 cm : il a baissé de 42 cm, ce qui est logique pour un niveau qui baisse chaque semaine.
+
+*Indice.* Écris 6 × (-7) comme une addition.
+
+**EX-B049-D-02** — decouverte, qcm, 40 s
+
+Quel calcul est égal à 3 × (-2{,}5) ?
+
+- **a.** 3 + (-2{,}5)
+  <br>*Erreur visée :* L'élève confond multiplication et addition : il ajoute 3 et -2{,}5 au lieu d'additionner trois fois -2{,}5.
+- **b.** (-2{,}5) + (-2{,}5) + (-2{,}5) ✅
+- **c.** 2{,}5 + 2{,}5 + 2{,}5
+  <br>*Erreur visée :* L'élève voit bien l'addition répétée, mais perd le signe du facteur négatif : il additionne la distance à zéro au lieu du nombre -2{,}5.
+
+*Corrigé.* (1) 3 × (-2{,}5), c'est 3 fois le nombre -2{,}5 : on l'additionne 3 fois. (2) 3 × (-2{,}5) = (-2{,}5) + (-2{,}5) + (-2{,}5) = -7{,}5. La bonne réponse est b.
+
+*Indice.* Que veut dire « 3 fois un nombre » ?
+
+**EX-B049-E-01** — entrainement, numerique, 45 s
+
+Calcule (-6) × (-1{,}5).
+
+**Réponse :** 9
+
+*Corrigé.* (1) On multiplie d'abord les distances à zéro : 6 × 1{,}5 = 9. (2) Puis on cherche le signe : les deux facteurs sont négatifs, le produit est positif. (3) Pourquoi ? Par distributivité, (-6) × 1{,}5 + (-6) × (-1{,}5) = (-6) × (1{,}5 + (-1{,}5)) = (-6) × 0 = 0. Comme (-6) × 1{,}5 = -9, le produit (-6) × (-1{,}5) est l'opposé de -9, c'est-à-dire 9. (4) (-6) × (-1{,}5) = 9. (5) Retiens : le produit de deux nombres de même signe est positif, celui de deux nombres de signes contraires est négatif.
+
+*Indice.* Calcule séparément la distance à zéro du produit, puis son signe.
+
+**EX-B049-E-02** — entrainement, vrai_faux, 45 s
+
+Léa affirme : « (-8) × (-5) = -40, car deux nombres négatifs donnent un résultat négatif. » A-t-elle raison ?
+
+**Réponse :** False
+
+*Corrigé.* (1) La distance à zéro du produit est juste : 8 × 5 = 40. (2) Mais le signe est faux. Le produit de deux nombres négatifs est positif : (-8) × (-5) = 40. (3) Léa applique une règle de l'addition : la somme de deux négatifs est négative, (-8) + (-5) = -13. Pour le produit, la règle des signes est différente. Léa a tort.
+
+*Indice.* Les deux facteurs ont-ils le même signe ?
+
+**EX-B049-M-01** — maitrise, numerique, 60 s
+
+Calcule (-0{,}4) × (-0{,}5).
+
+**Réponse :** 0.2
+
+*Corrigé.* (1) Distance à zéro du produit : 0{,}4 × 0{,}5. On calcule 4 × 5 = 20 ; il y a deux chiffres après la virgule dans les facteurs, donc 0{,}4 × 0{,}5 = 0{,}20 = 0{,}2. (2) Signe : deux facteurs négatifs, le produit est positif. (3) (-0{,}4) × (-0{,}5) = 0{,}2. Le résultat est plus petit que chaque distance à zéro, ce qui est normal quand on multiplie par un nombre compris entre 0 et 1.
+
+*Indice.* Traite le signe et la virgule séparément.
+
+**EX-B049-M-02** — maitrise, qcm, 90 s
+
+On sait que (-5) × 4 = -20 et que (-5) × 4 + (-5) × (-4) = (-5) × (4 + (-4)). Que vaut (-5) × (-4) ?
+
+- **a.** -20
+  <br>*Erreur visée :* L'élève transpose la règle de l'addition au produit : il croit que deux facteurs négatifs donnent un résultat négatif.
+- **b.** 0
+  <br>*Erreur visée :* L'élève voit que l'expression entière vaut 0 et attribue cette valeur au seul produit (-5) × (-4), en oubliant le terme -20.
+- **c.** 20 ✅
+- **d.** -9
+  <br>*Erreur visée :* L'élève additionne les deux facteurs au lieu de les multiplier : (-5) + (-4) = -9.
+
+*Corrigé.* (1) À droite : 4 + (-4) = 0, car deux nombres opposés ont une somme nulle. Donc (-5) × (4 + (-4)) = (-5) × 0 = 0. (2) À gauche, on remplace (-5) × 4 par sa valeur : -20 + (-5) × (-4) = 0. (3) Le nombre qui, ajouté à -20, donne 0, est l'opposé de -20, c'est-à-dire 20. Donc (-5) × (-4) = 20. (4) C'est pour cela que le produit de deux nombres négatifs est positif. La bonne réponse est c.
+
+*Indice.* Que vaut 4 + (-4) ? Et un nombre multiplié par 0 ?
+
+---
+
+## `B050` · Diviser deux décimaux relatifs — 4e, difficulté 5
+
+*Calculer le quotient de deux nombres relatifs quand il est décimal, avec la même règle des signes que pour le produit : (−36) ÷ (−9) = 4 ; (−7,5) ÷ 3 = −2,5 ; savoir que diviser, c'est trouver le facteur manquant d'une multiplication à trou ((−4) × ... = 20 se complète par 20 ÷ (−4) = −5), et qu'on ne divise jamais par zéro. Diviseur entier, pour rester dans ce que l'élève sait poser ; les quotients non décimaux et l'écriture fractionnaire des relatifs sont à l'étape 6. Figure : aucune.*
+
+> « Diviser deux nombres relatifs. » — *Cycle 4, classe de 4e, Nombres et calculs, Opérations sur les nombres relatifs, Objectifs d'apprentissage*
+> « Compléter des multiplications à trou : 5 × ... = 3 ; faire le lien entre multiplication et division. » — *Cycle 4, classe de 4e, Nombres et calculs, Opérations sur les nombres relatifs, Automatismes*
+
+**EX-B050-D-01** — decouverte, numerique, 45 s
+
+Un plongeur descend régulièrement : son altitude varie de −18 m en 6 minutes. Quelle est la variation de son altitude en une minute ?
+
+**Réponse :** -3
+
+*Corrigé.* (1) On partage la variation totale en 6 minutes égales : (-18) ÷ 6. (2) Diviser, c'est chercher le facteur manquant : 6 × … = -18. Comme 6 × (-3) = -18, on a (-18) ÷ 6 = -3. (3) Chaque minute, l'altitude varie de −3 m : le plongeur descend de 3 m par minute.
+
+*Indice.* Par quel nombre faut-il multiplier 6 pour obtenir la variation totale ?
+
+**EX-B050-D-02** — decouverte, qcm, 40 s
+
+Quel nombre complète l'égalité (-5) × … = 35 ?
+
+- **a.** 7
+  <br>*Erreur visée :* L'élève trouve la distance à zéro, 35 ÷ 5 = 7, mais oublie le signe : or (-5) × 7 = -35, pas 35.
+- **b.** -7 ✅
+- **c.** -175
+  <br>*Erreur visée :* L'élève multiplie au lieu de diviser : (-5) × 35 = -175. Pour trouver un facteur manquant, on divise le produit par le facteur connu.
+
+*Corrigé.* (1) Le nombre manquant est le quotient 35 ÷ (-5). (2) Distance à zéro : 35 ÷ 5 = 7. Signe : 35 est positif et -5 est négatif, de signes contraires, donc le quotient est négatif. (3) Le nombre cherché est -7. Vérification : (-5) × (-7) = 35. La bonne réponse est b.
+
+*Indice.* Le produit est positif et un facteur est négatif : quel est le signe de l'autre facteur ?
+
+**EX-B050-E-01** — entrainement, numerique, 50 s
+
+Calcule (-8{,}4) ÷ (-4).
+
+**Réponse :** 2.1
+
+*Corrigé.* (1) Distance à zéro du quotient : 8{,}4 ÷ 4 = 2{,}1, car 4 × 2{,}1 = 8{,}4. (2) Signe : les deux nombres sont négatifs, de même signe, donc le quotient est positif. C'est la même règle que pour le produit. (3) (-8{,}4) ÷ (-4) = 2{,}1. Vérification : (-4) × 2{,}1 = -8{,}4.
+
+*Indice.* Divise les distances à zéro, puis cherche le signe comme pour un produit.
+
+**EX-B050-E-02** — entrainement, vrai_faux, 40 s
+
+Inès affirme : « (-56) ÷ (-7) est un nombre positif. » A-t-elle raison ?
+
+**Réponse :** True
+
+*Corrigé.* (1) Le quotient de deux nombres de même signe est positif, comme pour le produit. (2) (-56) ÷ (-7) = 8, car (-7) × 8 = -56. (3) Inès a raison.
+
+*Indice.* Quel nombre faut-il multiplier par -7 pour obtenir -56 ?
+
+**EX-B050-M-01** — maitrise, numerique, 75 s
+
+Quel nombre, divisé par −6, donne 1,5 ?
+
+**Réponse :** -9
+
+*Corrigé.* (1) On cherche le nombre qui manque dans … ÷ (-6) = 1{,}5. (2) La multiplication défait la division : le nombre cherché est 1{,}5 × (-6). (3) 1{,}5 × 6 = 9, et les deux facteurs sont de signes contraires : 1{,}5 × (-6) = -9. (4) Le nombre cherché est -9. Vérification : (-9) ÷ (-6) = 1{,}5, positif car les deux nombres sont négatifs.
+
+*Indice.* Fais le chemin à l'envers : quelle opération défait une division ?
+
+**EX-B050-M-02** — maitrise, qcm, 60 s
+
+Lequel de ces calculs n'a pas de résultat ?
+
+- **a.** (-3) ÷ (-3)
+  <br>*Erreur visée :* L'élève croit qu'un nombre divisé par lui-même donne 0, comme un nombre moins lui-même. Or ce quotient vaut 1.
+- **b.** 0 ÷ (-3)
+  <br>*Erreur visée :* L'élève confond le nombre qu'on divise et le diviseur : diviser zéro est possible, le résultat est 0. C'est diviser par zéro qui est impossible.
+- **c.** (-3) ÷ 0 ✅
+
+*Corrigé.* (1) (-3) ÷ (-3) = 1, car (-3) × 1 = -3. Et 0 ÷ (-3) = 0, car (-3) × 0 = 0. (2) (-3) ÷ 0 demanderait un nombre qui, multiplié par 0, donne -3. Or tout nombre multiplié par 0 donne 0 : ce nombre n'existe pas. (3) On ne divise jamais par zéro. La bonne réponse est c.
+
+*Indice.* Pour chaque calcul, cherche le facteur manquant de la multiplication à trou.
+
+---
+
+## `B051` · Enchaînements d'opérations avec des relatifs — 4e, difficulté 5
+
+*Calculer une expression qui enchaîne les quatre opérations sur des relatifs en respectant les priorités : −5 + 3 × (−4) = −17 ; (−2) × (6 − 9) = 6 ; trouver le signe d'un produit de plusieurs facteurs d'après le nombre de facteurs négatifs ; appliquer un programme de calcul à un nombre négatif (choisir −3, le multiplier par −2, ajouter 5 : on obtient 11), et nommer un calcul (somme, produit, quotient) d'après sa dernière opération. L'erreur type est d'appliquer la règle des signes du produit à une somme (−5 + (−12) = 17). Figure : aucune.*
+
+> « Savoir calculer un enchainement d'opérations avec des nombres relatifs. » — *Cycle 4, classe de 4e, Nombres et calculs, Opérations sur les nombres relatifs, Objectifs d'apprentissage*
+> « Utiliser le vocabulaire (somme, quotient, etc.) à partir d'un enchainement d'opérations dans un programme de calcul et inversement. » — *Cycle 4, classe de 4e, Nombres et calculs, Opérations sur les nombres relatifs, Objectifs d'apprentissage*
+> « Manipulation de sommes et différences de nombre relatifs. » — *Cycle 4, classe de 4e, Nombres et calculs, Opérations sur les nombres relatifs, Automatismes*
+
+**EX-B051-D-01** — decouverte, numerique, 45 s
+
+Calcule -7 + 2 × (-3).
+
+**Réponse :** -13
+
+*Corrigé.* (1) La multiplication est prioritaire : 2 × (-3) = -6. (2) Il reste une somme : -7 + (-6). Les deux termes sont négatifs : on ajoute les distances à zéro, 7 + 6 = 13, et on garde le signe moins. (3) -7 + 2 × (-3) = -13. (4) Attention : la règle « deux négatifs donnent un positif » vaut pour le produit, pas pour la somme -7 + (-6).
+
+*Indice.* Commence par la multiplication.
+
+**EX-B051-D-02** — decouverte, qcm, 60 s
+
+Programme de calcul : choisir un nombre ; le multiplier par −3 ; ajouter 4 au résultat. Quelle expression donne le résultat quand on choisit −2 ?
+
+- **a.** (-2) × (-3 + 4)
+  <br>*Erreur visée :* L'élève ajoute 4 au nombre -3 au lieu de l'ajouter au résultat de la multiplication : les parenthèses changent l'ordre des étapes.
+- **b.** (-2 + 4) × (-3)
+  <br>*Erreur visée :* L'élève effectue les étapes dans le désordre : il ajoute 4 avant de multiplier par −3. Cette expression vaut 2 × (-3) = -6, et non 10.
+- **c.** (-2) × (-3) + 4 ✅
+
+*Corrigé.* (1) Première étape : on multiplie le nombre choisi par -3, ce qui s'écrit (-2) × (-3). (2) Deuxième étape : on ajoute 4 au résultat. Comme la multiplication est prioritaire, inutile de parenthèses : (-2) × (-3) + 4. (3) Ce programme donne 6 + 4 = 10. La bonne réponse est c.
+
+*Indice.* Quelle est la dernière opération du programme ?
+
+**EX-B051-E-01** — entrainement, numerique, 60 s
+
+Calcule (-4) × (3 - 8) - 6.
+
+**Réponse :** 14
+
+*Corrigé.* (1) On commence par les parenthèses : 3 - 8 = -5. (2) Puis la multiplication : (-4) × (-5) = 20, positif car les deux facteurs sont négatifs. (3) Enfin la soustraction : 20 - 6 = 14.
+
+*Indice.* Parenthèses d'abord, puis multiplication, puis soustraction.
+
+**EX-B051-E-02** — entrainement, vrai_faux, 50 s
+
+Sans calculer, Yanis affirme que (-2) × (-1{,}5) × (-4) × 3 est un nombre négatif. A-t-il raison ?
+
+**Réponse :** True
+
+*Corrigé.* (1) Le signe d'un produit dépend du nombre de facteurs négatifs. Ici, il y en a trois : -2, -1{,}5 et -4. (2) Deux facteurs négatifs donnent un produit positif : (-2) × (-1{,}5) = 3. Le troisième facteur négatif rend le produit négatif : 3 × (-4) = -12. Le facteur 3, positif, ne change pas le signe : -12 × 3 = -36. (3) Un nombre impair de facteurs négatifs donne un produit négatif. Yanis a raison.
+
+*Indice.* Compte les facteurs négatifs.
+
+**EX-B051-M-01** — maitrise, numerique, 75 s
+
+Programme de calcul : choisir un nombre ; lui soustraire 5 ; multiplier le résultat par le nombre choisi. Quel résultat obtient-on en choisissant −4 ?
+
+**Réponse :** 36
+
+*Corrigé.* (1) Première étape : -4 - 5 = -9. (2) Deuxième étape : on multiplie -9 par le nombre choisi, -4 : (-9) × (-4) = 36. (3) En une seule expression : (-4 - 5) × (-4) = 36. Les parenthèses sont indispensables : sans elles, la multiplication passerait avant la soustraction.
+
+*Indice.* Fais les étapes dans l'ordre et note chaque résultat.
+
+**EX-B051-M-02** — maitrise, qcm, 75 s
+
+Quelle phrase décrit l'expression (-6) + 18 ÷ (-3) ?
+
+- **a.** C'est une somme ; elle vaut −12. ✅
+- **b.** C'est un quotient ; il vaut −4.
+  <br>*Erreur visée :* L'élève calcule de gauche à droite : (-6) + 18 = 12, puis 12 ÷ (-3) = -4. Il prend alors la division pour la dernière opération.
+- **c.** C'est une somme ; elle vaut 12.
+  <br>*Erreur visée :* L'élève nomme bien le calcul et trouve 18 ÷ (-3) = -6, mais applique la règle des signes du produit à la somme : (-6) + (-6) ne vaut pas 12.
+
+*Corrigé.* (1) La division est prioritaire : 18 ÷ (-3) = -6. La dernière opération est l'addition : l'expression est une somme. (2) (-6) + (-6) = -12 : deux termes négatifs, on ajoute les distances à zéro et on garde le signe moins. (3) La bonne réponse est a.
+
+*Indice.* Quelle opération effectue-t-on en dernier ?
+
+---
+
 ## `C007` · Simplification de fraction — 4e, difficulté 5
 
 *Simplifier une fraction par un facteur commun au numérateur et au dénominateur*
@@ -11058,6 +12468,167 @@ Peut-on simplifier l'écriture 4 + 2/4 en barrant les deux 4 ?
 *Corrigé.* (1) On ne peut simplifier que des facteurs (des nombres multipliés), jamais des termes d'une addition. (2) Ici le numérateur est une somme : 4 + 2 = 6. (3) La fraction vaut donc 6/4, qui se simplifie par 2 : 3/2. (4) Ce n'est pas 2 : barrer les 4 donne un résultat faux.
 
 *Indice.* Calcule d'abord le numérateur, puis compare avec ce que donnerait le fait de barrer les 4.
+
+---
+
+## `A024` · Reconnaître un nombre premier — 3e, difficulté 5
+
+*Savoir qu'un nombre premier est un entier qui a exactement deux diviseurs, 1 et lui-même : 1 n'est donc pas premier, et 2 est le seul nombre premier pair. Reconnaître si un entier inférieur à 100 est premier en cherchant un diviseur à l'aide des tables et des critères de divisibilité (51 = 3 × 17 et 91 = 7 × 13 ne sont pas premiers) ; connaître les nombres premiers inférieurs à 30. Le crible d'Ératosthène est une méthode possible, pas un attendu. Figure : aucune.*
+
+> « Factoriser un nombre entier positif : 60 = 2² × 3 × 5. » — *Cycle 4, classe de 3e, Nombres et calculs, Multiples et diviseurs, Automatismes*
+> « Notion de nombre premier et développements sur ce thème (existence d'un nombre infini de nombres premiers, crible d'Ératosthène, etc.). » — *Cycle 4, classe de 5e, Nombres et calculs, Opérations, Prolongements possibles*
+> « Définition d'un nombre premier ; liste des nombres premiers inférieurs ou égaux à 30. » — *Cycle 4, programme de 2020 commun aux trois classes, Thème A, Nombres et calculs*
+> « Déterminer les nombres premiers inférieurs ou égaux à 100. » — *Cycle 4, programme de 2020 commun aux trois classes, Thème A, Nombres et calculs*
+
+**EX-A024-D-01** — decouverte, vrai_faux, 45 s
+
+Un nombre premier a exactement deux diviseurs : 1 et lui-même. Les diviseurs de 15 sont 1, 3, 5 et 15. Vrai ou faux : 15 est un nombre premier.
+
+**Réponse :** False
+
+*Corrigé.* (1) Un nombre premier a exactement deux diviseurs : 1 et lui-même. (2) 15 en a quatre : 1, 3, 5 et 15. Il en a trop : 15 n'est pas premier. La phrase est fausse. (3) On le voit dans la table de 3 ou de 5 : 15 = 3 × 5. Dès qu'un nombre s'écrit comme produit de deux entiers différents de 1, il n'est pas premier. (4) 15 est impair, mais cela ne suffit pas : être impair ne rend pas un nombre premier.
+
+*Indice.* Compte les diviseurs de 15. Combien un nombre premier doit-il en avoir ?
+
+**EX-A024-D-02** — decouverte, qcm, 60 s
+
+Un nombre premier a exactement deux diviseurs : 1 et lui-même. Lequel de ces nombres est premier ?
+
+- **a.** 2 ✅
+- **b.** 1
+  <br>*Erreur visée :* L'élève compte 1 parmi les nombres premiers parce qu'il n'est divisible que par 1 et par lui-même. Mais « 1 et lui-même », c'est ici le même nombre : 1 n'a qu'un seul diviseur, pas deux.
+- **c.** 9
+  <br>*Erreur visée :* L'élève pense qu'un nombre impair est premier. Mais 9 = 3 × 3 : il a trois diviseurs, 1, 3 et 9.
+
+*Corrigé.* (1) On compte les diviseurs de chaque nombre. (2) 1 n'a qu'un diviseur, lui-même : il n'en a pas deux, il n'est pas premier. (3) 9 a trois diviseurs : 1, 3 et 9, car 9 = 3 × 3. Il n'est pas premier, même s'il est impair. (4) 2 a exactement deux diviseurs, 1 et 2 : il est premier. C'est le seul nombre premier pair, puisque tout autre nombre pair est divisible par 2.
+
+*Indice.* Pour chaque nombre, écris la liste de ses diviseurs et compte-les.
+
+**EX-A024-E-01** — entrainement, texte, 150 s
+
+Parmi 31, 33, 35, 37 et 39, lesquels sont des nombres premiers ? Écris-les du plus petit au plus grand, séparés par des virgules.
+
+**Réponse :** 31, 37
+
+*Corrigé.* (1) On cherche, pour chaque nombre, un diviseur autre que 1 et lui-même, avec les tables et les critères de divisibilité. (2) 33 : 3 + 3 = 6, il est divisible par 3 (33 = 3 × 11). 39 : 3 + 9 = 12, il est divisible par 3 (39 = 3 × 13). 35 finit par 5 (35 = 5 × 7). Aucun des trois n'est premier. (3) 31 : il est impair, 3 + 1 = 4 n'est pas dans la table de 3, il ne finit ni par 0 ni par 5, et 7 × 4 = 28, 7 × 5 = 35 sautent 31. Il n'a que deux diviseurs : 31 est premier. (4) 37 : impair, 3 + 7 = 10 n'est pas dans la table de 3, il ne finit ni par 0 ni par 5, et 7 × 5 = 35, 7 × 6 = 42 sautent 37. 37 est premier. (5) Inutile de chercher plus loin : si 31 ou 37 s'écrivait a × b, avec a et b différents de 1 et non divisibles par 2, 3 ou 5, chaque facteur vaudrait au moins 7, et le produit au moins 7 × 7 = 49, trop grand. (6) Réponse : 31, 37.
+
+*Indice.* Pour chaque nombre, cherche s'il est divisible par 2, par 3, par 5 ou par 7.
+
+**EX-A024-E-02** — entrainement, vrai_faux, 90 s
+
+Hugo affirme : « 57 n'est dans aucune table de multiplication de 2 à 9, donc 57 est un nombre premier. » Vrai ou faux : Hugo a raison.
+
+**Réponse :** False
+
+*Corrigé.* (1) Les tables s'arrêtent à × 10 : un nombre peut avoir un diviseur sans apparaître dans une table apprise. (2) Critère par 3 : 5 + 7 = 12, qui est dans la table de 3. Donc 57 est divisible par 3. (3) En effet, 57 = 3 × 19. 57 a au moins quatre diviseurs : 1, 3, 19 et 57. (4) 57 n'est pas premier : Hugo a tort.
+
+*Indice.* Applique le critère de divisibilité par 3 à 57.
+
+**EX-A024-M-01** — maitrise, numerique, 180 s
+
+Quel est le plus petit nombre premier plus grand que 75 ?
+
+**Réponse :** 79
+
+*Corrigé.* (1) On teste les nombres qui suivent 75, un par un. 76 et 78 sont pairs, donc divisibles par 2 : on les écarte. (2) 77 = 7 × 11 : il n'est pas premier. (3) 79 : impair ; 7 + 9 = 16, qui n'est pas divisible par 3 ; il ne finit ni par 0 ni par 5 ; 7 × 11 = 77 et 7 × 12 = 84 sautent 79. (4) Inutile d'aller plus loin : 9 × 9 = 81 dépasse déjà 79, donc un produit de deux facteurs différents de 1 aurait un facteur entre 2 et 8, et on les a tous écartés. 79 a exactement deux diviseurs. (5) Le plus petit nombre premier plus grand que 75 est 79. Le piège était 77 : il est impair et ne finit pas par 5, mais il vaut 7 × 11.
+
+*Indice.* Écarte les nombres pairs et ceux qui finissent par 5. Pour les autres, pense au critère par 3 et à la table de 7.
+
+**EX-A024-M-02** — maitrise, qcm, 120 s
+
+Dans le nombre 4■, le chiffre des unités est caché. Ce nombre est premier. Quel peut être le chiffre caché ?
+
+- **a.** 9
+  <br>*Erreur visée :* L'élève vérifie 2, 3 et 5 mais oublie la table de 7 : 49 est impair, 4 + 9 = 13 n'est pas dans la table de 3, il ne finit pas par 5… mais 49 = 7 × 7.
+- **b.** 7 ✅
+- **c.** 5
+  <br>*Erreur visée :* L'élève pense qu'un nombre qui finit par un chiffre premier est premier. Mais 45 finit par 5 : il est divisible par 5 (45 = 5 × 9).
+
+*Corrigé.* (1) On teste chaque proposition : 49, 47 et 45. (2) 45 finit par 5 : 45 = 5 × 9, il n'est pas premier. (3) 49 = 7 × 7 : il a trois diviseurs, 1, 7 et 49. Il n'est pas premier. (4) 47 : impair, 4 + 7 = 11 n'est pas dans la table de 3, il ne finit ni par 0 ni par 5, et 7 × 6 = 42, 7 × 7 = 49 sautent 47. 47 est premier. (5) Le chiffre caché peut être 7. (41 et 43 sont aussi premiers, mais 1 et 3 ne sont pas proposés.)
+
+*Indice.* Forme les trois nombres possibles et cherche, pour chacun, un diviseur autre que 1 et lui-même.
+
+---
+
+## `A025` · Décomposer un entier en produit de facteurs premiers — 3e, difficulté 5
+
+*Écrire un entier jusqu'à 1 000 comme produit de nombres premiers, en divisant successivement par 2, 3, 5, 7… (126 = 2 × 3 × 3 × 7), savoir que cette décomposition est unique à l'ordre des facteurs près, et s'en servir pour trouver des diviseurs d'un nombre. En attendant les puissances (étape 6), la décomposition s'écrit en produit sans puissances : un facteur répété est écrit autant de fois qu'il apparaît (60 = 2 × 2 × 3 × 5), jamais avec un exposant. L'erreur type est de s'arrêter sur un facteur non premier (60 = 4 × 15). Écrire la décomposition en saisie libre ne se fait pas à l'écran : l'élève choisit la bonne décomposition parmi des produits dont certains contiennent un facteur non premier, ou répond par un nombre (combien de fois le facteur 2, le plus grand facteur premier). Figure : aucune.*
+
+> « Factoriser un nombre entier positif : 60 = 2² × 3 × 5. » — *Cycle 4, classe de 3e, Nombres et calculs, Multiples et diviseurs, Automatismes*
+> « Appliquer les critères de divisibilité par 2, 3, 5, 9. » — *Cycle 4, classe de 3e, Nombres et calculs, Multiples et diviseurs, Automatismes*
+> « Décomposer un nombre entier en produit de facteurs premiers (à la main ou à l'aide d'un logiciel). » — *Cycle 4, programme de 2020 commun aux trois classes, Thème A, Nombres et calculs*
+
+**EX-A025-D-01** — decouverte, qcm, 60 s
+
+Quelle est la décomposition de 42 en produit de facteurs premiers ?
+
+- **a.** 2 × 21
+  <br>*Erreur visée :* L'élève s'arrête trop tôt : le produit vaut bien 42, mais 21 = 3 × 7 n'est pas premier. Il faut continuer à le décomposer.
+- **b.** 1 × 2 × 3 × 7
+  <br>*Erreur visée :* L'élève ajoute le facteur 1 en le croyant premier. 1 n'est pas un nombre premier : il n'apparaît jamais dans une décomposition en facteurs premiers.
+- **c.** 2 × 3 × 7 ✅
+
+*Corrigé.* (1) 42 est pair : 42 = 2 × 21. (2) 21 n'est pas premier : 21 = 3 × 7. (3) Donc 42 = 2 × 3 × 7. Les trois facteurs 2, 3 et 7 sont premiers : on s'arrête. (4) 2 × 21 contient un facteur non premier, et 1 × 2 × 3 × 7 contient 1, qui n'est pas premier.
+
+*Indice.* Vérifie deux choses pour chaque produit : vaut-il 42 ? Tous ses facteurs sont-ils premiers ?
+
+**EX-A025-D-02** — decouverte, vrai_faux, 60 s
+
+Léo écrit : 72 = 2 × 2 × 2 × 3 × 3. Vrai ou faux : c'est la décomposition de 72 en produit de facteurs premiers.
+
+**Réponse :** True
+
+*Corrigé.* (1) Il faut vérifier deux choses : le produit vaut 72, et chaque facteur est premier. (2) Le produit : 2 × 2 × 2 = 8 et 3 × 3 = 9, puis 8 × 9 = 72. C'est juste. (3) Les facteurs sont 2 et 3, deux nombres premiers. C'est juste aussi : la phrase est vraie. (4) On retrouve cette décomposition en divisant par 2 tant que c'est possible : 72, 36, 18, 9 ; puis par 3 : 9, 3, 1. On a divisé trois fois par 2 et deux fois par 3.
+
+*Indice.* Calcule le produit écrit par Léo, puis regarde si chaque facteur est un nombre premier.
+
+**EX-A025-E-01** — entrainement, numerique, 120 s
+
+Quel est le plus grand facteur premier de 231 ?
+
+**Réponse :** 11
+
+*Corrigé.* (1) 231 est impair : il n'est pas divisible par 2. (2) 2 + 3 + 1 = 6, qui est dans la table de 3 : 231 = 3 × 77. (3) 77 n'est pas premier : 77 = 7 × 11. (4) Donc 231 = 3 × 7 × 11, et ces trois facteurs sont premiers. (5) Le plus grand facteur premier est 11. Ce n'est pas 77 : 77 est un diviseur de 231, mais il n'est pas premier.
+
+*Indice.* Commence par le critère de divisibilité par 3, puis décompose le quotient obtenu.
+
+**EX-A025-E-02** — entrainement, qcm, 120 s
+
+Quelle est la décomposition de 180 en produit de facteurs premiers ?
+
+- **a.** 2 × 2 × 3 × 3 × 5 ✅
+- **b.** 2 × 2 × 5 × 9
+  <br>*Erreur visée :* L'élève s'arrête sur un facteur non premier : le produit vaut bien 180, mais 9 = 3 × 3 n'est pas premier.
+- **c.** 2 × 3 × 3 × 5
+  <br>*Erreur visée :* L'élève oublie un facteur 2 : ce produit vaut 90, pas 180. 180 se divise deux fois par 2 (180, 90, 45).
+
+*Corrigé.* (1) On divise par 2 tant que c'est possible : 180 = 2 × 90 et 90 = 2 × 45. 45 est impair. (2) On divise par 3 : 4 + 5 = 9, donc 45 = 3 × 15, puis 15 = 3 × 5. (3) 5 est premier : on s'arrête. 180 = 2 × 2 × 3 × 3 × 5. (4) Vérification : 2 × 2 = 4, 3 × 3 = 9, 4 × 9 = 36 et 36 × 5 = 180. (5) 2 × 2 × 5 × 9 contient 9, qui n'est pas premier ; 2 × 3 × 3 × 5 vaut 90.
+
+*Indice.* Calcule chaque produit, puis regarde si tous ses facteurs sont premiers.
+
+**EX-A025-M-01** — maitrise, qcm, 150 s
+
+La décomposition de 270 en produit de facteurs premiers est 2 × 3 × 3 × 3 × 5. Sans poser de division, lequel de ces nombres est un diviseur de 270 ?
+
+- **a.** 4
+  <br>*Erreur visée :* L'élève voit le facteur 2 et pense que 4, qui est pair, divise aussi 270. Mais 4 = 2 × 2 demande deux facteurs 2, et la décomposition de 270 n'en a qu'un.
+- **b.** 45 ✅
+- **c.** 21
+  <br>*Erreur visée :* L'élève voit le facteur 3 et conclut que 21, qui est dans la table de 3, divise 270. Mais 21 = 3 × 7, et 7 n'apparaît pas dans la décomposition de 270.
+
+*Corrigé.* (1) Un nombre divise 270 quand ses facteurs premiers se retrouvent tous dans la décomposition de 270, autant de fois au moins. (2) 45 = 3 × 3 × 5. On trouve deux facteurs 3 et un facteur 5 dans 2 × 3 × 3 × 3 × 5. Ce qui reste, 2 × 3 = 6, donne 270 = 45 × 6 : 45 est un diviseur de 270. (3) 4 = 2 × 2 demande deux facteurs 2, mais 270 n'en a qu'un : 4 ne divise pas 270. (4) 21 = 3 × 7 demande un facteur 7, absent de la décomposition : 21 ne divise pas 270.
+
+*Indice.* Décompose chaque proposition en facteurs premiers, puis cherche ces facteurs dans 2 × 3 × 3 × 3 × 5.
+
+**EX-A025-M-02** — maitrise, numerique, 120 s
+
+On décompose 1 000 en produit de facteurs premiers. Combien de facteurs ce produit contient-il, en comptant chaque répétition ?
+
+**Réponse :** 6
+
+*Corrigé.* (1) 1 000 = 10 × 10 × 10, mais 10 n'est pas premier : 10 = 2 × 5. (2) Chaque 10 donne un facteur 2 et un facteur 5. Donc 1 000 = 2 × 2 × 2 × 5 × 5 × 5. (3) Vérification : 2 × 2 × 2 = 8, 5 × 5 × 5 = 125, et 8 × 125 = 1 000. (4) Le produit contient 6 facteurs : trois fois 2 et trois fois 5. Répondre 3 reviendrait à s'arrêter à 10 × 10 × 10, qui n'est pas une décomposition en facteurs premiers.
+
+*Indice.* Écris d'abord 1 000 comme produit de 10, puis décompose chaque 10.
 
 ---
 

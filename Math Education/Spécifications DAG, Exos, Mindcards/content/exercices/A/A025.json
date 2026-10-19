@@ -1,0 +1,184 @@
+[
+  {
+    "id": "EX-A025-D-01",
+    "skill_id": "A025",
+    "level": "decouverte",
+    "type": "qcm",
+    "statement": "Quelle est la décomposition de 42 en produit de facteurs premiers ?",
+    "image": null,
+    "choices": [
+      {
+        "key": "a",
+        "text": "2 × 21",
+        "misconception": "L'élève s'arrête trop tôt : le produit vaut bien 42, mais 21 = 3 × 7 n'est pas premier. Il faut continuer à le décomposer."
+      },
+      {
+        "key": "b",
+        "text": "1 × 2 × 3 × 7",
+        "misconception": "L'élève ajoute le facteur 1 en le croyant premier. 1 n'est pas un nombre premier : il n'apparaît jamais dans une décomposition en facteurs premiers."
+      },
+      {
+        "key": "c",
+        "text": "2 × 3 × 7",
+        "misconception": null
+      }
+    ],
+    "answer": {
+      "value": "c"
+    },
+    "solution_steps": [
+      "42 est pair : 42 = 2 × 21.",
+      "21 n'est pas premier : 21 = 3 × 7.",
+      "Donc 42 = 2 × 3 × 7. Les trois facteurs 2, 3 et 7 sont premiers : on s'arrête.",
+      "2 × 21 contient un facteur non premier, et 1 × 2 × 3 × 7 contient 1, qui n'est pas premier."
+    ],
+    "hint": "Vérifie deux choses pour chaque produit : vaut-il 42 ? Tous ses facteurs sont-ils premiers ?",
+    "estimated_duration_s": 60,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, classe de 3e, Nombres et calculs, Multiples et diviseurs, Automatismes : « Factoriser un nombre entier positif : 60 = 2² × 3 × 5. »"
+  },
+  {
+    "id": "EX-A025-D-02",
+    "skill_id": "A025",
+    "level": "decouverte",
+    "type": "vrai_faux",
+    "statement": "Léo écrit : 72 = 2 × 2 × 2 × 3 × 3.\n\nVrai ou faux : c'est la décomposition de 72 en produit de facteurs premiers.",
+    "image": null,
+    "answer": {
+      "value": true
+    },
+    "solution_steps": [
+      "Il faut vérifier deux choses : le produit vaut 72, et chaque facteur est premier.",
+      "Le produit : 2 × 2 × 2 = 8 et 3 × 3 = 9, puis 8 × 9 = 72. C'est juste.",
+      "Les facteurs sont 2 et 3, deux nombres premiers. C'est juste aussi : la phrase est **vraie**.",
+      "On retrouve cette décomposition en divisant par 2 tant que c'est possible : 72, 36, 18, 9 ; puis par 3 : 9, 3, 1. On a divisé trois fois par 2 et deux fois par 3."
+    ],
+    "hint": "Calcule le produit écrit par Léo, puis regarde si chaque facteur est un nombre premier.",
+    "estimated_duration_s": 60,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, classe de 3e, Nombres et calculs, Multiples et diviseurs, Automatismes : « Factoriser un nombre entier positif : 60 = 2² × 3 × 5. »"
+  },
+  {
+    "id": "EX-A025-E-01",
+    "skill_id": "A025",
+    "level": "entrainement",
+    "type": "numerique",
+    "statement": "Quel est le plus grand facteur premier de 231 ?",
+    "image": null,
+    "answer": {
+      "value": 11
+    },
+    "solution_steps": [
+      "231 est impair : il n'est pas divisible par 2.",
+      "2 + 3 + 1 = 6, qui est dans la table de 3 : 231 = 3 × 77.",
+      "77 n'est pas premier : 77 = 7 × 11.",
+      "Donc 231 = 3 × 7 × 11, et ces trois facteurs sont premiers.",
+      "Le plus grand facteur premier est **11**. Ce n'est pas 77 : 77 est un diviseur de 231, mais il n'est pas premier."
+    ],
+    "hint": "Commence par le critère de divisibilité par 3, puis décompose le quotient obtenu.",
+    "estimated_duration_s": 120,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, classe de 3e, Nombres et calculs, Multiples et diviseurs, Automatismes : « Factoriser un nombre entier positif : 60 = 2² × 3 × 5. »"
+  },
+  {
+    "id": "EX-A025-E-02",
+    "skill_id": "A025",
+    "level": "entrainement",
+    "type": "qcm",
+    "statement": "Quelle est la décomposition de 180 en produit de facteurs premiers ?",
+    "image": null,
+    "choices": [
+      {
+        "key": "a",
+        "text": "2 × 2 × 3 × 3 × 5",
+        "misconception": null
+      },
+      {
+        "key": "b",
+        "text": "2 × 2 × 5 × 9",
+        "misconception": "L'élève s'arrête sur un facteur non premier : le produit vaut bien 180, mais 9 = 3 × 3 n'est pas premier."
+      },
+      {
+        "key": "c",
+        "text": "2 × 3 × 3 × 5",
+        "misconception": "L'élève oublie un facteur 2 : ce produit vaut 90, pas 180. 180 se divise deux fois par 2 (180, 90, 45)."
+      }
+    ],
+    "answer": {
+      "value": "a"
+    },
+    "solution_steps": [
+      "On divise par 2 tant que c'est possible : 180 = 2 × 90 et 90 = 2 × 45. 45 est impair.",
+      "On divise par 3 : 4 + 5 = 9, donc 45 = 3 × 15, puis 15 = 3 × 5.",
+      "5 est premier : on s'arrête. 180 = 2 × 2 × 3 × 3 × 5.",
+      "Vérification : 2 × 2 = 4, 3 × 3 = 9, 4 × 9 = 36 et 36 × 5 = 180.",
+      "2 × 2 × 5 × 9 contient 9, qui n'est pas premier ; 2 × 3 × 3 × 5 vaut 90."
+    ],
+    "hint": "Calcule chaque produit, puis regarde si tous ses facteurs sont premiers.",
+    "estimated_duration_s": 120,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, classe de 3e, Nombres et calculs, Multiples et diviseurs, Automatismes : « Factoriser un nombre entier positif : 60 = 2² × 3 × 5. »"
+  },
+  {
+    "id": "EX-A025-M-01",
+    "skill_id": "A025",
+    "level": "maitrise",
+    "type": "qcm",
+    "statement": "La décomposition de 270 en produit de facteurs premiers est 2 × 3 × 3 × 3 × 5.\n\nSans poser de division, lequel de ces nombres est un diviseur de 270 ?",
+    "image": null,
+    "choices": [
+      {
+        "key": "a",
+        "text": "4",
+        "misconception": "L'élève voit le facteur 2 et pense que 4, qui est pair, divise aussi 270. Mais 4 = 2 × 2 demande deux facteurs 2, et la décomposition de 270 n'en a qu'un."
+      },
+      {
+        "key": "b",
+        "text": "45",
+        "misconception": null
+      },
+      {
+        "key": "c",
+        "text": "21",
+        "misconception": "L'élève voit le facteur 3 et conclut que 21, qui est dans la table de 3, divise 270. Mais 21 = 3 × 7, et 7 n'apparaît pas dans la décomposition de 270."
+      }
+    ],
+    "answer": {
+      "value": "b"
+    },
+    "solution_steps": [
+      "Un nombre divise 270 quand ses facteurs premiers se retrouvent tous dans la décomposition de 270, autant de fois au moins.",
+      "45 = 3 × 3 × 5. On trouve deux facteurs 3 et un facteur 5 dans 2 × 3 × 3 × 3 × 5. Ce qui reste, 2 × 3 = 6, donne 270 = 45 × 6 : 45 est un **diviseur** de 270.",
+      "4 = 2 × 2 demande deux facteurs 2, mais 270 n'en a qu'un : 4 ne divise pas 270.",
+      "21 = 3 × 7 demande un facteur 7, absent de la décomposition : 21 ne divise pas 270."
+    ],
+    "hint": "Décompose chaque proposition en facteurs premiers, puis cherche ces facteurs dans 2 × 3 × 3 × 3 × 5.",
+    "estimated_duration_s": 150,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, classe de 3e, Nombres et calculs, Multiples et diviseurs, Automatismes : « Factoriser un nombre entier positif : 60 = 2² × 3 × 5. »"
+  },
+  {
+    "id": "EX-A025-M-02",
+    "skill_id": "A025",
+    "level": "maitrise",
+    "type": "numerique",
+    "statement": "On décompose 1 000 en produit de facteurs premiers.\n\nCombien de facteurs ce produit contient-il, en comptant chaque répétition ?",
+    "image": null,
+    "answer": {
+      "value": 6,
+      "accepted": [
+        "6 facteurs"
+      ]
+    },
+    "solution_steps": [
+      "1 000 = 10 × 10 × 10, mais 10 n'est pas premier : 10 = 2 × 5.",
+      "Chaque 10 donne un facteur 2 et un facteur 5. Donc 1 000 = 2 × 2 × 2 × 5 × 5 × 5.",
+      "Vérification : 2 × 2 × 2 = 8, 5 × 5 × 5 = 125, et 8 × 125 = 1 000.",
+      "Le produit contient **6** facteurs : trois fois 2 et trois fois 5. Répondre 3 reviendrait à s'arrêter à 10 × 10 × 10, qui n'est pas une décomposition en facteurs premiers."
+    ],
+    "hint": "Écris d'abord 1 000 comme produit de 10, puis décompose chaque 10.",
+    "estimated_duration_s": 120,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, classe de 3e, Nombres et calculs, Multiples et diviseurs, Automatismes : « Factoriser un nombre entier positif : 60 = 2² × 3 × 5. »"
+  }
+]

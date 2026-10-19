@@ -1,0 +1,171 @@
+[
+  {
+    "id": "EX-A019-D-01",
+    "skill_id": "A019",
+    "level": "decouverte",
+    "type": "numerique",
+    "statement": "Sur cette droite graduée, quelle est l'abscisse du point A ?",
+    "image": "figures/EX-A019-D-01",
+    "answer": {
+      "value": -3
+    },
+    "solution_steps": [
+      "Les nombres 0 et 1 sont écrits sur deux graduations voisines : d'une graduation à la suivante, on avance de 1.",
+      "Le point A est à gauche de 0 : son abscisse est un nombre négatif.",
+      "De 0 jusqu'à A, on compte les intervalles, pas les traits : il y en a 3. A est à 3 unités à gauche de 0.",
+      "L'abscisse de A est **−3**. Pièges : compter les traits en comptant celui de 0 donne −4 ; oublier le signe donne 3, un nombre situé à droite de 0."
+    ],
+    "hint": "Que vaut un intervalle ? De quel côté de 0 se trouve le point A ?",
+    "estimated_duration_s": 60,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, classe de 5e, Nombres relatifs : « Lire l'abscisse d'un nombre relatif sur une droite graduée et placer un nombre relatif d'abscisse donnée. »"
+  },
+  {
+    "id": "EX-A019-D-02",
+    "skill_id": "A019",
+    "level": "decouverte",
+    "type": "qcm",
+    "statement": "Quel point de cette droite graduée a pour abscisse −2 ?",
+    "image": "figures/EX-A019-D-02",
+    "choices": [
+      {
+        "key": "a",
+        "text": "Le point A",
+        "misconception": "L'élève compte les traits au lieu des intervalles : il compte le trait de 0 comme le premier et s'arrête au deuxième trait, qui a pour abscisse −1."
+      },
+      {
+        "key": "b",
+        "text": "Le point B",
+        "misconception": "L'élève oublie le signe moins : il avance de 2 vers la droite, du côté des nombres positifs, et trouve le point d'abscisse 2."
+      },
+      {
+        "key": "c",
+        "text": "Le point C",
+        "misconception": null
+      }
+    ],
+    "answer": {
+      "value": "c"
+    },
+    "solution_steps": [
+      "0 et 1 sont sur deux graduations voisines : une graduation vaut 1.",
+      "−2 est négatif : il est à gauche de 0.",
+      "On part de 0 et on avance de 2 intervalles vers la gauche : −1, puis −2. On arrive au point C.",
+      "Le point A a pour abscisse −1, le point B a pour abscisse 2. La bonne réponse est c."
+    ],
+    "hint": "Un nombre négatif est-il à gauche ou à droite de 0 ? Compte les intervalles depuis 0.",
+    "estimated_duration_s": 60,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, classe de 5e, Nombres relatifs : « Lire l'abscisse d'un nombre relatif sur une droite graduée et placer un nombre relatif d'abscisse donnée. »"
+  },
+  {
+    "id": "EX-A019-E-01",
+    "skill_id": "A019",
+    "level": "entrainement",
+    "type": "numerique",
+    "statement": "Quelle est l'abscisse du point A sur cette droite graduée ?",
+    "image": "figures/EX-A019-E-01",
+    "answer": {
+      "value": -1.5,
+      "accepted": [
+        "-1,5"
+      ]
+    },
+    "solution_steps": [
+      "Entre 0 et 1, il y a 2 petits intervalles : chacun vaut une demi-unité, 0,5.",
+      "A est à gauche de 0 : son abscisse est négative. On compte de 0,5 en 0,5 vers la gauche depuis 0 : −0,5 ; −1 ; −1,5.",
+      "A est entre −2 et −1, au milieu : son abscisse est **−1,5**.",
+      "Piège : lire « −2,5 » en partant de −2 vers la droite, comme pour un nombre positif. −2,5 est plus loin de 0 que −2 : il se trouve entre −3 et −2."
+    ],
+    "hint": "Que vaut un petit intervalle ? Compte-les depuis 0.",
+    "estimated_duration_s": 90,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, classe de 5e, Nombres relatifs : « Lire l'abscisse d'un nombre relatif sur une droite graduée et placer un nombre relatif d'abscisse donnée. »"
+  },
+  {
+    "id": "EX-A019-E-02",
+    "skill_id": "A019",
+    "level": "entrainement",
+    "type": "qcm",
+    "statement": "Quel point a pour abscisse −0,3 ?",
+    "image": "figures/EX-A019-E-02",
+    "choices": [
+      {
+        "key": "a",
+        "text": "Le point A",
+        "misconception": "L'élève oublie le signe moins : il avance de 3 dixièmes vers la droite et trouve 0,3."
+      },
+      {
+        "key": "b",
+        "text": "Le point B",
+        "misconception": null
+      },
+      {
+        "key": "c",
+        "text": "Le point C",
+        "misconception": "L'élève lit les dixièmes de gauche à droite, comme pour un positif : il part de −1 et avance de 3 dixièmes, ce qui mène à −0,7."
+      },
+      {
+        "key": "d",
+        "text": "Le point D",
+        "misconception": "L'élève compte les traits au lieu des intervalles : il compte le trait de 0 comme le premier et s'arrête au troisième, qui a pour abscisse −0,2."
+      }
+    ],
+    "answer": {
+      "value": "b"
+    },
+    "solution_steps": [
+      "Entre 0 et 1, il y a 10 intervalles : un intervalle vaut un dixième, 0,1.",
+      "−0,3 est négatif : il est à gauche de 0, à 3 dixièmes de 0.",
+      "On part de 0 et on compte 3 intervalles vers la gauche : −0,1 ; −0,2 ; −0,3. C'est le point B.",
+      "Le point C a pour abscisse −0,7 : il est à 3 dixièmes de −1, pas de 0. La bonne réponse est b."
+    ],
+    "hint": "Que vaut un intervalle ? Pars de 0, pas de l'extrémité gauche du dessin.",
+    "estimated_duration_s": 90,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, classe de 5e, Nombres relatifs : « Lire l'abscisse d'un nombre relatif sur une droite graduée et placer un nombre relatif d'abscisse donnée. »"
+  },
+  {
+    "id": "EX-A019-M-01",
+    "skill_id": "A019",
+    "level": "maitrise",
+    "type": "numerique",
+    "statement": "Seuls deux nombres sont écrits sur cette droite graduée. Quelle est l'abscisse du point A ?",
+    "image": "figures/EX-A019-M-01",
+    "answer": {
+      "value": -25
+    },
+    "solution_steps": [
+      "De 0 à 10, il y a 2 petits intervalles : un petit intervalle vaut 5, une grande graduation vaut 10.",
+      "A est à gauche de 0 : son abscisse est négative.",
+      "On compte de 5 en 5 vers la gauche depuis 0 : −5 ; −10 ; −15 ; −20 ; −25. On arrive au point A.",
+      "A est entre −30 et −20, au milieu : son abscisse est **−25**.",
+      "Pièges : prendre un petit intervalle pour 0,5 donne −2,5 ; lire « −35 » en ajoutant 5 après −30, comme pour un positif, alors que −35 est entre −40 et −30."
+    ],
+    "hint": "Que vaut un petit intervalle ? Compte depuis 0 jusqu'à A.",
+    "estimated_duration_s": 120,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, classe de 5e, Nombres relatifs : « Lire l'abscisse d'un nombre relatif sur une droite graduée et placer un nombre relatif d'abscisse donnée. »"
+  },
+  {
+    "id": "EX-A019-M-02",
+    "skill_id": "A019",
+    "level": "maitrise",
+    "type": "vrai_faux",
+    "statement": "Maël dit que le point A a pour abscisse −4,5. A-t-il raison ?",
+    "image": "figures/EX-A019-M-02",
+    "answer": {
+      "value": false
+    },
+    "solution_steps": [
+      "De 0 à 2, il y a 4 intervalles : un intervalle vaut 0,5.",
+      "On compte de 0,5 en 0,5 vers la gauche depuis 0 : −0,5 ; −1 ; −1,5 ; −2 ; −2,5 ; −3 ; −3,5. L'abscisse de A est −3,5.",
+      "Maël est parti de −4 et a ajouté « et demi » vers la droite, comme pour un positif. Mais −4,5 est plus loin de 0 que −4 : il se trouve entre −5 et −4.",
+      "Maël a **tort** : A a pour abscisse −3,5."
+    ],
+    "hint": "Que vaut un intervalle ? Où se trouve −4 sur la droite ?",
+    "estimated_duration_s": 120,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, classe de 5e, Nombres relatifs : « Lire l'abscisse d'un nombre relatif sur une droite graduée et placer un nombre relatif d'abscisse donnée. »"
+  }
+]

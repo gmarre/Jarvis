@@ -1,0 +1,167 @@
+[
+  {
+    "id": "EX-B049-D-01",
+    "skill_id": "B049",
+    "level": "decouverte",
+    "type": "numerique",
+    "statement": "Le niveau d'un lac baisse de 7 cm chaque semaine : sa variation est de −7 cm par semaine.\n\nSa variation en 6 semaines s'écrit $6 \\times (-7)$. Combien vaut-elle ?",
+    "image": null,
+    "answer": {
+      "value": -42,
+      "unit": "cm"
+    },
+    "solution_steps": [
+      "Multiplier par 6, c'est additionner 6 fois le même nombre : $6 \\times (-7) = (-7) + (-7) + (-7) + (-7) + (-7) + (-7)$.",
+      "On additionne des nombres négatifs : on ajoute les distances à zéro, $6 \\times 7 = 42$, et on garde le signe moins. Donc $6 \\times (-7) = -42$.",
+      "En 6 semaines, le niveau varie de **−42 cm** : il a baissé de 42 cm, ce qui est logique pour un niveau qui baisse chaque semaine."
+    ],
+    "hint": "Écris $6 \\times (-7)$ comme une addition.",
+    "estimated_duration_s": 45,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, classe de 4e, Nombres et calculs, Opérations sur les nombres relatifs, Automatismes : « Multiplication comme addition itérée : 3 + 3 + 3 + 3 = 4 × 3. »"
+  },
+  {
+    "id": "EX-B049-D-02",
+    "skill_id": "B049",
+    "level": "decouverte",
+    "type": "qcm",
+    "statement": "Quel calcul est égal à $3 \\times (-2{,}5)$ ?",
+    "image": null,
+    "choices": [
+      {
+        "key": "a",
+        "text": "$3 + (-2{,}5)$",
+        "misconception": "L'élève confond multiplication et addition : il ajoute 3 et $-2{,}5$ au lieu d'additionner trois fois $-2{,}5$."
+      },
+      {
+        "key": "b",
+        "text": "$(-2{,}5) + (-2{,}5) + (-2{,}5)$",
+        "misconception": null
+      },
+      {
+        "key": "c",
+        "text": "$2{,}5 + 2{,}5 + 2{,}5$",
+        "misconception": "L'élève voit bien l'addition répétée, mais perd le signe du facteur négatif : il additionne la distance à zéro au lieu du nombre $-2{,}5$."
+      }
+    ],
+    "answer": {
+      "value": "b"
+    },
+    "solution_steps": [
+      "$3 \\times (-2{,}5)$, c'est 3 fois le nombre $-2{,}5$ : on l'additionne 3 fois.",
+      "$3 \\times (-2{,}5) = (-2{,}5) + (-2{,}5) + (-2{,}5) = -7{,}5$. La bonne réponse est b."
+    ],
+    "hint": "Que veut dire « 3 fois un nombre » ?",
+    "estimated_duration_s": 40,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, classe de 4e, Nombres et calculs, Opérations sur les nombres relatifs, Automatismes : « Multiplication comme addition itérée : 3 + 3 + 3 + 3 = 4 × 3. »"
+  },
+  {
+    "id": "EX-B049-E-01",
+    "skill_id": "B049",
+    "level": "entrainement",
+    "type": "numerique",
+    "statement": "Calcule $(-6) \\times (-1{,}5)$.",
+    "image": null,
+    "answer": {
+      "value": 9
+    },
+    "solution_steps": [
+      "On multiplie d'abord les distances à zéro : $6 \\times 1{,}5 = 9$.",
+      "Puis on cherche le signe : les deux facteurs sont négatifs, le produit est **positif**.",
+      "Pourquoi ? Par distributivité, $(-6) \\times 1{,}5 + (-6) \\times (-1{,}5) = (-6) \\times (1{,}5 + (-1{,}5)) = (-6) \\times 0 = 0$. Comme $(-6) \\times 1{,}5 = -9$, le produit $(-6) \\times (-1{,}5)$ est l'opposé de $-9$, c'est-à-dire 9.",
+      "$(-6) \\times (-1{,}5) = 9$.",
+      "Retiens : le produit de deux nombres de même signe est positif, celui de deux nombres de signes contraires est négatif."
+    ],
+    "hint": "Calcule séparément la distance à zéro du produit, puis son signe.",
+    "estimated_duration_s": 45,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, classe de 4e, Nombres et calculs, Opérations sur les nombres relatifs : « Multiplier deux nombres relatifs : d'abord dans le cas où un seul des facteurs est négatif, puis, grâce à la distributivité, dans le cas où les deux facteurs sont négatifs. »"
+  },
+  {
+    "id": "EX-B049-E-02",
+    "skill_id": "B049",
+    "level": "entrainement",
+    "type": "vrai_faux",
+    "statement": "Léa affirme : « $(-8) \\times (-5) = -40$, car deux nombres négatifs donnent un résultat négatif. »\n\nA-t-elle raison ?",
+    "image": null,
+    "answer": {
+      "value": false
+    },
+    "solution_steps": [
+      "La distance à zéro du produit est juste : $8 \\times 5 = 40$.",
+      "Mais le signe est faux. Le produit de deux nombres négatifs est **positif** : $(-8) \\times (-5) = 40$.",
+      "Léa applique une règle de l'addition : la **somme** de deux négatifs est négative, $(-8) + (-5) = -13$. Pour le produit, la règle des signes est différente. Léa a **tort**."
+    ],
+    "hint": "Les deux facteurs ont-ils le même signe ?",
+    "estimated_duration_s": 45,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, classe de 4e, Nombres et calculs, Opérations sur les nombres relatifs : « Multiplier deux nombres relatifs : d'abord dans le cas où un seul des facteurs est négatif, puis, grâce à la distributivité, dans le cas où les deux facteurs sont négatifs. »"
+  },
+  {
+    "id": "EX-B049-M-01",
+    "skill_id": "B049",
+    "level": "maitrise",
+    "type": "numerique",
+    "statement": "Calcule $(-0{,}4) \\times (-0{,}5)$.",
+    "image": null,
+    "answer": {
+      "value": 0.2,
+      "accepted": [
+        "0,20"
+      ]
+    },
+    "solution_steps": [
+      "Distance à zéro du produit : $0{,}4 \\times 0{,}5$. On calcule $4 \\times 5 = 20$ ; il y a deux chiffres après la virgule dans les facteurs, donc $0{,}4 \\times 0{,}5 = 0{,}20 = 0{,}2$.",
+      "Signe : deux facteurs négatifs, le produit est positif.",
+      "$(-0{,}4) \\times (-0{,}5) = 0{,}2$. Le résultat est plus petit que chaque distance à zéro, ce qui est normal quand on multiplie par un nombre compris entre 0 et 1."
+    ],
+    "hint": "Traite le signe et la virgule séparément.",
+    "estimated_duration_s": 60,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, classe de 4e, Nombres et calculs, Opérations sur les nombres relatifs : « Multiplier deux nombres relatifs : d'abord dans le cas où un seul des facteurs est négatif, puis, grâce à la distributivité, dans le cas où les deux facteurs sont négatifs. »"
+  },
+  {
+    "id": "EX-B049-M-02",
+    "skill_id": "B049",
+    "level": "maitrise",
+    "type": "qcm",
+    "statement": "On sait que $(-5) \\times 4 = -20$ et que $(-5) \\times 4 + (-5) \\times (-4) = (-5) \\times (4 + (-4))$.\n\nQue vaut $(-5) \\times (-4)$ ?",
+    "image": null,
+    "choices": [
+      {
+        "key": "a",
+        "text": "$-20$",
+        "misconception": "L'élève transpose la règle de l'addition au produit : il croit que deux facteurs négatifs donnent un résultat négatif."
+      },
+      {
+        "key": "b",
+        "text": "0",
+        "misconception": "L'élève voit que l'expression entière vaut 0 et attribue cette valeur au seul produit $(-5) \\times (-4)$, en oubliant le terme $-20$."
+      },
+      {
+        "key": "c",
+        "text": "20",
+        "misconception": null
+      },
+      {
+        "key": "d",
+        "text": "$-9$",
+        "misconception": "L'élève additionne les deux facteurs au lieu de les multiplier : $(-5) + (-4) = -9$."
+      }
+    ],
+    "answer": {
+      "value": "c"
+    },
+    "solution_steps": [
+      "À droite : $4 + (-4) = 0$, car deux nombres opposés ont une somme nulle. Donc $(-5) \\times (4 + (-4)) = (-5) \\times 0 = 0$.",
+      "À gauche, on remplace $(-5) \\times 4$ par sa valeur : $-20 + (-5) \\times (-4) = 0$.",
+      "Le nombre qui, ajouté à $-20$, donne 0, est l'opposé de $-20$, c'est-à-dire 20. Donc $(-5) \\times (-4) = 20$.",
+      "C'est pour cela que le produit de deux nombres négatifs est positif. La bonne réponse est c."
+    ],
+    "hint": "Que vaut $4 + (-4)$ ? Et un nombre multiplié par 0 ?",
+    "estimated_duration_s": 90,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, classe de 4e, Nombres et calculs, Opérations sur les nombres relatifs : « Multiplier deux nombres relatifs : d'abord dans le cas où un seul des facteurs est négatif, puis, grâce à la distributivité, dans le cas où les deux facteurs sont négatifs. »"
+  }
+]

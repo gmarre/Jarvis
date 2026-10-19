@@ -1,0 +1,166 @@
+[
+  {
+    "id": "EX-B011-D-01",
+    "skill_id": "B011",
+    "level": "decouverte",
+    "type": "numerique",
+    "statement": "Léo achète une gomme à 2 € et 3 cahiers à 4 € chacun. Son ticket de caisse indique le calcul $2 + 3 \\times 4$.\n\nCombien Léo paie-t-il ?",
+    "image": null,
+    "answer": {
+      "value": 14,
+      "unit": "€"
+    },
+    "solution_steps": [
+      "Les 3 cahiers coûtent $3 \\times 4 = 12$ €. La gomme coûte 2 €. En tout : $2 + 12 = 14$ €.",
+      "C'est exactement la règle des priorités : dans $2 + 3 \\times 4$, on effectue **d'abord la multiplication**, puis l'addition.",
+      "Calculer de gauche à droite donnerait $2 + 3 = 5$, puis $5 \\times 4 = 20$ : ce serait le prix de 5 objets à 4 €, alors que la gomme ne coûte que 2 €.",
+      "Léo paie **14 €**."
+    ],
+    "hint": "Combien coûtent les 3 cahiers ?",
+    "estimated_duration_s": 45,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, classe de 5e, Nombres et calculs, Opérations : « Connaitre et utiliser les priorités opératoires. »"
+  },
+  {
+    "id": "EX-B011-D-02",
+    "skill_id": "B011",
+    "level": "decouverte",
+    "type": "qcm",
+    "statement": "Quel est le résultat de $30 - 4 \\times 5$ ?",
+    "image": null,
+    "choices": [
+      {
+        "key": "a",
+        "text": "10",
+        "misconception": null
+      },
+      {
+        "key": "b",
+        "text": "130",
+        "misconception": "L'élève calcule de gauche à droite : $30 - 4 = 26$, puis $26 \\times 5 = 130$. Il ne tient pas compte de la priorité de la multiplication."
+      },
+      {
+        "key": "c",
+        "text": "20",
+        "misconception": "L'élève effectue bien la multiplication en premier, $4 \\times 5 = 20$, mais s'arrête là : il oublie de soustraire ce résultat à 30."
+      }
+    ],
+    "answer": {
+      "value": "a"
+    },
+    "solution_steps": [
+      "Dans $30 - 4 \\times 5$, la multiplication est prioritaire sur la soustraction : on calcule d'abord $4 \\times 5 = 20$.",
+      "On termine le calcul : $30 - 20 = 10$.",
+      "La bonne réponse est a."
+    ],
+    "hint": "Quelle opération doit-on effectuer en premier ?",
+    "estimated_duration_s": 40,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, classe de 5e, Nombres et calculs, Opérations : « Connaitre et utiliser les priorités opératoires. »"
+  },
+  {
+    "id": "EX-B011-E-01",
+    "skill_id": "B011",
+    "level": "entrainement",
+    "type": "numerique",
+    "statement": "Calcule $50 - 36 \\div 4 + 2$.",
+    "image": null,
+    "answer": {
+      "value": 43
+    },
+    "solution_steps": [
+      "La division est prioritaire : $36 \\div 4 = 9$. Le calcul devient $50 - 9 + 2$.",
+      "Il ne reste qu'une soustraction et une addition, qui ont la même priorité : on les effectue de gauche à droite. $50 - 9 = 41$, puis $41 + 2 = 43$.",
+      "Attention au piège : calculer d'abord $9 + 2 = 11$, puis $50 - 11 = 39$, est faux. À priorité égale, on va de gauche à droite.",
+      "Résultat : $50 - 36 \\div 4 + 2 = 43$."
+    ],
+    "hint": "Commence par la division. Ensuite, dans quel ordre fais-tu une soustraction et une addition ?",
+    "estimated_duration_s": 50,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, classe de 5e, Nombres et calculs, Opérations : « Connaitre et utiliser les priorités opératoires. »"
+  },
+  {
+    "id": "EX-B011-E-02",
+    "skill_id": "B011",
+    "level": "entrainement",
+    "type": "vrai_faux",
+    "statement": "Tom dit : « $8 \\times 3 + 6$ est un produit, car on y voit d'abord une multiplication. »\n\nA-t-il raison ?",
+    "image": null,
+    "answer": {
+      "value": false
+    },
+    "solution_steps": [
+      "Le nom d'un calcul vient de la **dernière** opération effectuée, pas de la première écrite.",
+      "Dans $8 \\times 3 + 6$, on calcule d'abord $8 \\times 3 = 24$, puis $24 + 6 = 30$. La dernière opération est une addition.",
+      "C'est donc une **somme**, dont les termes sont $8 \\times 3$ et 6. Tom a **tort**. Le produit $8 \\times 3$ n'est qu'un des termes de cette somme."
+    ],
+    "hint": "Quelle est la dernière opération que l'on effectue ?",
+    "estimated_duration_s": 45,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, classe de 5e, Nombres et calculs, Opérations : « Nommer un calcul, distinguer sommes et produits, termes et facteurs. »"
+  },
+  {
+    "id": "EX-B011-M-01",
+    "skill_id": "B011",
+    "level": "maitrise",
+    "type": "qcm",
+    "statement": "On veut placer des parenthèses dans $4 + 8 \\times 5 - 2$ pour obtenir 58.\n\nQuelle écriture convient ?",
+    "image": null,
+    "choices": [
+      {
+        "key": "a",
+        "text": "$4 + 8 \\times (5 - 2)$",
+        "misconception": "L'élève place les parenthèses autour de la soustraction sans calculer : l'écriture vaut $4 + 8 \\times 3 = 28$."
+      },
+      {
+        "key": "b",
+        "text": "$(4 + 8) \\times (5 - 2)$",
+        "misconception": "L'élève voit qu'il faut grouper $4 + 8$, mais ajoute aussi des parenthèses autour de $5 - 2$ : l'écriture vaut $12 \\times 3 = 36$."
+      },
+      {
+        "key": "c",
+        "text": "$4 + (8 \\times 5) - 2$",
+        "misconception": "L'élève entoure la multiplication, qui était déjà prioritaire : ces parenthèses ne changent rien, l'écriture vaut 42."
+      },
+      {
+        "key": "d",
+        "text": "$(4 + 8) \\times 5 - 2$",
+        "misconception": null
+      }
+    ],
+    "answer": {
+      "value": "d"
+    },
+    "solution_steps": [
+      "On calcule chaque écriture en commençant par les parenthèses, puis les multiplications, puis les additions et soustractions.",
+      "a : $4 + 8 \\times 3 = 4 + 24 = 28$. b : $12 \\times 3 = 36$. c : $4 + 40 - 2 = 42$, les parenthèses ne changent rien.",
+      "d : $(4 + 8) \\times 5 - 2 = 12 \\times 5 - 2 = 60 - 2 = 58$. La bonne réponse est d.",
+      "Les parenthèses servent à imposer un calcul qui ne serait pas fait en premier : ici, l'addition $4 + 8$."
+    ],
+    "hint": "Quel calcul faut-il faire en premier pour arriver près de 60 ?",
+    "estimated_duration_s": 90,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, classe de 5e, Nombres et calculs, Opérations : « Connaitre et utiliser les priorités opératoires. »"
+  },
+  {
+    "id": "EX-B011-M-02",
+    "skill_id": "B011",
+    "level": "maitrise",
+    "type": "numerique",
+    "statement": "Calcule $3 \\times (14 - 2 \\times 5) + 12 \\div 4$.",
+    "image": null,
+    "answer": {
+      "value": 15
+    },
+    "solution_steps": [
+      "On commence par les parenthèses. À l'intérieur, la multiplication passe d'abord : $2 \\times 5 = 10$, puis $14 - 10 = 4$.",
+      "L'expression devient $3 \\times 4 + 12 \\div 4$.",
+      "Multiplication et division avant l'addition : $3 \\times 4 = 12$ et $12 \\div 4 = 3$.",
+      "Enfin, $12 + 3 = 15$."
+    ],
+    "hint": "Dans les parenthèses aussi, les priorités s'appliquent.",
+    "estimated_duration_s": 90,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, classe de 5e, Nombres et calculs, Opérations : « Connaitre et utiliser les priorités opératoires. »"
+  }
+]

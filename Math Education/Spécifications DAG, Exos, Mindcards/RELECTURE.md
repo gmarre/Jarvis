@@ -1,6 +1,6 @@
 # Fiche de relecture — synthèse
 
-> 150 compétences, 847 exercices. Généré depuis `content/`, ne pas éditer à la main.  
+> 170 compétences, 967 exercices. Généré depuis `content/`, ne pas éditer à la main.  
 > Objectif : juger le **fond** et la **coordination**. Le détail complet, énoncés et corrigés, est dans `RELECTURE_DETAIL.md`.
 
 ⚠ **7 compétence(s) à regarder**, signalées dans la colonne *Signal* et détaillées en §3.
@@ -151,16 +151,36 @@ C'est la lecture qui compte pour juger la coordination : la difficulté doit mon
 | 138 | `G029` La médiatrice d'un segment | 6e | 5 | 6 | 13 |  |
 | 139 | `G030` Symétrie axiale : symétrique d'un point… | 6e | 5 | 6 | 21 |  |
 | 140 | `P023` Périmètre d'un disque | 6e | 5 | 6 | 34 |  |
-| 141 | `C011` Réduction au même dénominateur | 5e | 4 | 3 | 14 |  |
-| 142 | `C010` Comparer fractions de dénominateurs dif… | 5e | 4 | 3 | 13 |  |
-| 143 | `E034` Coefficient de proportionnalité | 5e | 5 | 6 | 48 |  |
-| 144 | `E007` Vitesse moyenne | 5e | 5 | 6 | 24 |  |
-| 145 | `E035` Reconnaître un tableau de proportionnal… | 5e | 5 | 6 | 47 |  |
-| 146 | `E023` Proportionnalité et graphique | 5e | 5 | 6 | 53 |  |
-| 147 | `E036` Calculer un pourcentage dans le cas gén… | 5e | 5 | 6 | 31 |  |
-| 148 | `E037` Pourcentages par linéarité : 1 %, 10 %,… | 5e | 5 | 6 | 29 |  |
-| 149 | `C007` Simplification de fraction | 4e | 5 | 3 | 11 |  |
-| 150 | `C008` Fraction irréductible | 3e | 6 | 3 | 9 |  |
+| 141 | `A015` Critères de divisibilité par 3 et par 9 | 5e | 4 | 6 | 28 |  |
+| 142 | `A016` Multiple, diviseur, divisible : le lien… | 5e | 4 | 6 | 27 |  |
+| 143 | `A018` Nombres relatifs : positifs, négatifs, … | 5e | 4 | 6 | 22 |  |
+| 144 | `A019` Droite graduée : lire et placer un nomb… | 5e | 4 | 6 | 12 |  |
+| 145 | `A020` Repère du plan : lire et placer un point | 5e | 4 | 6 | 12 |  |
+| 146 | `A021` Opposé d'un nombre relatif | 5e | 4 | 6 | 17 |  |
+| 147 | `A022` Valeur absolue : la distance à zéro | 5e | 4 | 6 | 17 |  |
+| 148 | `A023` Comparer et ranger des décimaux relatifs | 5e | 4 | 6 | 24 |  |
+| 149 | `B011` Priorités opératoires | 5e | 4 | 6 | 12 |  |
+| 150 | `B044` Additionner deux décimaux relatifs | 5e | 4 | 6 | 21 |  |
+| 151 | `C011` Réduction au même dénominateur | 5e | 4 | 3 | 14 |  |
+| 152 | `C010` Comparer fractions de dénominateurs dif… | 5e | 4 | 3 | 13 |  |
+| 153 | `A017` Problèmes de multiples et de diviseurs … | 5e | 5 | 6 | 30 |  |
+| 154 | `B045` Soustraire deux décimaux relatifs | 5e | 5 | 6 | 19 |  |
+| 155 | `B046` Sommes de relatifs : parenthèses et écr… | 5e | 5 | 6 | 16 |  |
+| 156 | `B047` Enchaîner additions et soustractions de… | 5e | 5 | 6 | 18 |  |
+| 157 | `B048` Problèmes d'addition et de soustraction… | 5e | 5 | 6 | 29 |  |
+| 158 | `E034` Coefficient de proportionnalité | 5e | 5 | 6 | 48 |  |
+| 159 | `E007` Vitesse moyenne | 5e | 5 | 6 | 24 |  |
+| 160 | `E035` Reconnaître un tableau de proportionnal… | 5e | 5 | 6 | 47 |  |
+| 161 | `E023` Proportionnalité et graphique | 5e | 5 | 6 | 53 |  |
+| 162 | `E036` Calculer un pourcentage dans le cas gén… | 5e | 5 | 6 | 31 |  |
+| 163 | `E037` Pourcentages par linéarité : 1 %, 10 %,… | 5e | 5 | 6 | 29 |  |
+| 164 | `B049` Multiplier deux décimaux relatifs | 4e | 5 | 6 | 12 |  |
+| 165 | `B050` Diviser deux décimaux relatifs | 4e | 5 | 6 | 11 |  |
+| 166 | `B051` Enchaînements d'opérations avec des rel… | 4e | 5 | 6 | 13 |  |
+| 167 | `C007` Simplification de fraction | 4e | 5 | 3 | 11 |  |
+| 168 | `A024` Reconnaître un nombre premier | 3e | 5 | 6 | 22 |  |
+| 169 | `A025` Décomposer un entier en produit de fact… | 3e | 5 | 6 | 19 |  |
+| 170 | `C008` Fraction irréductible | 3e | 6 | 3 | 9 |  |
 
 ## 2. Par chapitre
 
@@ -504,6 +524,52 @@ Le chapitre est l'unité qu'un exercice bilan validerait.
 | `G026` Angles plat, adjacents, supplémen… | Connaître l'angle nul, plat (180°) et plein (360°), reconnaître des angle… | 6 |
 | `G027` Somme des angles d'un triangle | Savoir que la somme des mesures des angles d'un triangle est 180° et l'ut… | 6 |
 
+### `MM-A-03` · Les nombres relatifs : repérer, comparer (5e)
+
+6 compétences, 36 exercices, niveaux 5e.
+
+| Compétence | Ce que l'élève doit savoir faire | Exos |
+|---|---|--:|
+| `A018` Nombres relatifs : positifs, néga… | Savoir qu'un nombre relatif est un nombre décimal muni d'un signe (+5 ou … | 6 |
+| `A019` Droite graduée : lire et placer u… | Sur une droite graduée dont l'origine 0 est marquée, lire l'abscisse d'un… | 6 |
+| `A020` Repère du plan : lire et placer u… | Dans un repère orthogonal du plan (origine O, axe des abscisses horizonta… | 6 |
+| `A021` Opposé d'un nombre relatif | Savoir que deux nombres opposés ont la même distance à zéro et des signes… | 6 |
+| `A022` Valeur absolue : la distance à zé… | Savoir que la valeur absolue d'un nombre relatif est sa distance à zéro, … | 6 |
+| `A023` Comparer et ranger des décimaux r… | Comparer deux nombres décimaux relatifs avec < et >, et ranger une liste … | 6 |
+
+### `MM-A-04` · Multiples, diviseurs et critères de divisibilité (5e)
+
+3 compétences, 18 exercices, niveaux 5e.
+
+| Compétence | Ce que l'élève doit savoir faire | Exos |
+|---|---|--:|
+| `A015` Critères de divisibilité par 3 et… | Savoir qu'un entier est divisible par 3 (par 9) lorsque la somme de ses c… | 6 |
+| `A016` Multiple, diviseur, divisible : l… | Employer les trois formulations équivalentes « a est un multiple de b », … | 6 |
+| `A017` Problèmes de multiples et de divi… | Résoudre des problèmes où il faut chercher un multiple commun (deux phéno… | 6 |
+
+### `MM-B-05` · Additionner et soustraire des relatifs (5e)
+
+5 compétences, 30 exercices, niveaux 5e.
+
+| Compétence | Ce que l'élève doit savoir faire | Exos |
+|---|---|--:|
+| `B044` Additionner deux décimaux relatifs | Additionner deux nombres décimaux relatifs : de même signe, on ajoute les… | 6 |
+| `B045` Soustraire deux décimaux relatifs | Savoir que soustraire un nombre relatif revient à ajouter son opposé : (+… | 6 |
+| `B046` Sommes de relatifs : parenthèses … | Passer de l'écriture avec parenthèses d'une somme de relatifs à l'écritur… | 6 |
+| `B047` Enchaîner additions et soustracti… | Calculer une suite de quatre à six additions et soustractions de décimaux… | 6 |
+| `B048` Problèmes d'addition et de soustr… | Résoudre des problèmes de températures, d'altitudes, de soldes bancaires,… | 6 |
+
+### `MM-B-06` · Priorités, produits et quotients de relatifs (5e-4e)
+
+4 compétences, 24 exercices, niveaux 5e, 4e.
+
+| Compétence | Ce que l'élève doit savoir faire | Exos |
+|---|---|--:|
+| `B011` Priorités opératoires | Calculer une expression qui mêle les quatre opérations sur des nombres po… | 6 |
+| `B049` Multiplier deux décimaux relatifs | Calculer le produit de deux nombres décimaux relatifs : d'abord quand un … | 6 |
+| `B050` Diviser deux décimaux relatifs | Calculer le quotient de deux nombres relatifs quand il est décimal, avec … | 6 |
+| `B051` Enchaînements d'opérations avec d… | Calculer une expression qui enchaîne les quatre opérations sur des relati… | 6 |
+
 ### `MM-C-03` · Operer sur les fractions (5e-3e)
 
 4 compétences, 12 exercices, niveaux 5e, 4e, 3e.
@@ -525,6 +591,15 @@ Le chapitre est l'unité qu'un exercice bilan validerait.
 | `E007` Vitesse moyenne | À vitesse constante, la distance parcourue est proportionnelle à la durée… | 6 |
 | `E035` Reconnaître un tableau de proport… | Décider si un tableau de valeurs traduit une situation de proportionnalit… | 6 |
 | `E023` Proportionnalité et graphique | Représenter une situation de proportionnalité par des points dans un repè… | 6 |
+
+### `MM-A-05` · Nombres premiers et décomposition (3e)
+
+2 compétences, 12 exercices, niveaux 3e.
+
+| Compétence | Ce que l'élève doit savoir faire | Exos |
+|---|---|--:|
+| `A024` Reconnaître un nombre premier | Savoir qu'un nombre premier est un entier qui a exactement deux diviseurs… | 6 |
+| `A025` Décomposer un entier en produit d… | Écrire un entier jusqu'à 1 000 comme produit de nombres premiers, en divi… | 6 |
 
 ## 3. Ce qui mérite ton oeil
 
@@ -2327,6 +2402,136 @@ Le chapitre est l'unité qu'un exercice bilan validerait.
 
 ### ── 5e ──
 
+**`A015` · Critères de divisibilité par 3 et par 9** — diff. 4, seuil 3/4  
+*Savoir qu'un entier est divisible par 3 (par 9) lorsque la somme de ses chiffres est divisible par 3 (par 9), et l'appliquer à des entiers de trois à six chiffres ; savoir qu'un nombre divisible par 9 l'est aussi par 3, la réciproque étant fausse (12 est divisible par 3, pas par 9). Combiner avec les critères par 2, 5 et 10 du cours moyen. L'erreur type est de regarder le dernier chiffre pour 3 ou 9, ou d'appliquer la somme des chiffres au critère par 2 ou par 5. Figure : aucune.*
+> « Connaitre les critères de divisibilité par 3 et par 9. »
+
+| | Type | Demandé | Réponse |
+|---|---|---|---|
+| D | vrai | Mia a 744 perles. Elle calcule 7 + 4 + 4 = 15, et 15 est dans la table de 3. Vrai ou faux :… | vrai |
+| D | qcm | Un nombre est divisible par 9 quand la somme de ses chiffres est divisible par 9. Lequel de… | a) 3 618 |
+| E | text | Parmi 1 033, 2 469, 4 503 et 7 360, lesquels sont divisibles par 3 ? Écris-les du plus peti… | 2 469, 4 503 |
+| E | nume | Dans le nombre 7■4, le chiffre des dizaines est caché. Ce nombre est divisible par 9. Quel … | 7 |
+| M | qcm | Dans le nombre 52■, le chiffre des unités est caché. Ce nombre est divisible par 3 et par 5… | c) 5 |
+| M | vrai | Sacha peut partager ses 2 136 billes en 3 sacs égaux. Elle en déduit qu'elle peut les parta… | faux |
+
+**`A016` · Multiple, diviseur, divisible : le lien avec la division** — diff. 4, seuil 3/4  
+*Employer les trois formulations équivalentes « a est un multiple de b », « b est un diviseur de a », « a est divisible par b », et les relier à la division euclidienne : b divise a quand le reste est nul (391 = 17 × 23, donc 391 est divisible par 17), alors que 17 = 3 × 5 + 2 montre que 17 n'est pas un multiple de 3. Écrire un entier comme produit de deux facteurs différents de 1 à l'aide des tables (21 = 3 × 7 ; 56 = 7 × 8), et constater qu'un nombre comme 13 ne s'écrit pas ainsi. Au-delà des tables, l'élève s'appuie sur une division euclidienne posée ou donnée. Figure : aucune.*
+> « Utiliser les notions de multiples et diviseurs. »
+
+| | Type | Demandé | Réponse |
+|---|---|---|---|
+| D | qcm | Un fleuriste fait des bouquets de 8 roses avec ses 96 roses, sans qu'il en reste : 96 = 8 ×… | b) 96 est divisible par 8. |
+| D | vrai | On pose la division euclidienne de 87 par 4 et on trouve : 87 = 4 × 21 + 3. Vrai ou faux : … | faux |
+| E | nume | Le nombre 60 s'écrit de plusieurs façons comme produit de deux entiers différents de 1, par… | 5 |
+| E | vrai | Nora pose la division euclidienne de 658 par 14. Elle trouve un quotient de 47 et un reste … | vrai |
+| M | nume | On sait que 1 001 = 7 × 143. Sans poser de division, quel est le reste de la division eucli… | 4 |
+| M | qcm | Un nombre est un multiple de 6. Quelle phrase est forcément vraie ? | c) Ce nombre est divisible par 3. |
+
+**`A018` · Nombres relatifs : positifs, négatifs, grandeurs sous zéro** — diff. 4, seuil 3/4  
+*Savoir qu'un nombre relatif est un nombre décimal muni d'un signe (+5 ou 5, −3,5), que zéro est à la fois positif et négatif, et distinguer positif et strictement positif, négatif et strictement négatif. Utiliser un nombre négatif pour une grandeur inférieure à zéro : température sous zéro, altitude sous le niveau de la mer, solde d'un compte à découvert, date avant l'an 1 ; traduire « 4 degrés sous zéro » par −4 °C, et inversement. Pas d'écriture fractionnaire (étape 6). Figure utile : thermomètre gradué vertical (droite graduée verticale) ; tout le reste s'évalue en texte.*
+> « Définir les nombres relatifs. »
+
+| | Type | Demandé | Réponse |
+|---|---|---|---|
+| D | nume | Ce matin à Strasbourg, le thermomètre indique 5 degrés sous zéro. Écris cette température a… | -5 |
+| D | qcm | Un thermomètre affiche −2 °C. Quelle phrase décrit cette température ? | b) Il fait 2 degrés sous zéro. |
+| E | vrai | Le relevé du compte bancaire de Nadia affiche un solde de −35 €. Nadia dit : « Je dois 35 €… | vrai |
+| E | qcm | Voici cinq nombres : −4,2 ; 0 ; 3 ; −0,5 ; 1,5. Lesquels sont négatifs ? | c) −4,2 ; −0,5 et 0 |
+| M | nume | Températures relevées à 6 h pendant une semaine, en °C : 4 ; −1,5 ; 0 ; −4 ; 2,5 ; 0 ; −0,5… | 3 |
+| M | vrai | Tom affirme : « 0 n'est ni positif ni négatif, puisqu'il n'est ni strictement positif ni st… | faux |
+
+**`A019` · Droite graduée : lire et placer un nombre relatif** — diff. 4, seuil 3/4  
+*Sur une droite graduée dont l'origine 0 est marquée, lire l'abscisse d'un point d'abscisse positive ou négative, et désigner le point d'abscisse donnée (−2,5 ; 1,5), avec un pas de 1, 0,5, 0,1, 2 ou 10. La difficulté propre est le sens des graduations à gauche de 0 : −2,5 est entre −3 et −2, et non entre −2 et −1 ; −0,3 est à gauche de 0, pas à droite. Placer un point ne se fait pas à l'écran : l'élève choisit, parmi des points lettrés, celui qui a l'abscisse donnée. Figure nécessaire : droite graduée qui s'étend des deux côtés de 0, graduations principales et secondaires, quelques étiquettes seulement, points lettrés au-dessus.*
+> « Lire l'abscisse d'un nombre relatif sur une droite graduée et placer un nombre relatif d'abscisse donnée. »
+
+| | Type | Demandé | Réponse |
+|---|---|---|---|
+| D | nume | Sur cette droite graduée, quelle est l'abscisse du point A ? | -3 |
+| D | qcm | Quel point de cette droite graduée a pour abscisse −2 ? | c) Le point C |
+| E | nume | Quelle est l'abscisse du point A sur cette droite graduée ? | -1.5 |
+| E | qcm | Quel point a pour abscisse −0,3 ? | b) Le point B |
+| M | nume | Seuls deux nombres sont écrits sur cette droite graduée. Quelle est l'abscisse du point A ? | -25 |
+| M | vrai | Maël dit que le point A a pour abscisse −4,5. A-t-il raison ? | faux |
+
+**`A020` · Repère du plan : lire et placer un point** — diff. 4, seuil 3/4  
+*Dans un repère orthogonal du plan (origine O, axe des abscisses horizontal, axe des ordonnées vertical), lire les coordonnées d'un point, l'abscisse d'abord, et désigner le point de coordonnées données, dans les quatre quadrants et sur les axes, avec des coordonnées entières ou demi-entières. Les coordonnées s'écrivent A(−2 ; 3), avec un point-virgule, comme dans les exercices de E023. L'erreur type est d'inverser abscisse et ordonnée, puis d'oublier un signe. Placer un point ne se fait pas à l'écran : l'élève choisit le point lettré qui a les coordonnées données, ou donne l'abscisse puis l'ordonnée dans deux questions séparées. Figure nécessaire : repère avec ses deux axes gradués, quadrillage léger, points lettrés.*
+> « Dans le plan muni d'un repère orthogonal : - lire les coordonnées d'un point donné ; - placer un point de coordonnées données. »
+
+| | Type | Demandé | Réponse |
+|---|---|---|---|
+| D | nume | Dans ce repère, quelle est l'abscisse du point A ? Les pointillés mènent aux axes. | -4 |
+| D | qcm | Quelles sont les coordonnées du point B ? Les pointillés mènent aux axes. | a) (2 ; −5) |
+| E | qcm | Quel point a pour coordonnées (−4 ; 3) ? | c) Le point C |
+| E | nume | Dans ce repère, quelle est l'ordonnée du point E ? | -3 |
+| M | qcm | Quel point a pour coordonnées (0 ; −4) ? | b) Le point B |
+| M | vrai | Jade affirme que le point K a pour coordonnées (4 ; −2,5). A-t-elle raison ? | faux |
+
+**`A021` · Opposé d'un nombre relatif** — diff. 4, seuil 3/4  
+*Savoir que deux nombres opposés ont la même distance à zéro et des signes contraires, donc qu'ils sont symétriques par rapport à l'origine sur une droite graduée ; donner l'opposé d'un nombre (l'opposé de −7,2 est 7,2, l'opposé de 15 est −15, l'opposé de 0 est 0). La somme de deux opposés est vue avec l'addition (B044). L'erreur type est de croire que l'opposé d'un nombre est toujours négatif. Figure utile : droite graduée portant deux points symétriques par rapport à 0.*
+> « Définir l'opposé et la valeur absolue d'un nombre. »
+
+| | Type | Demandé | Réponse |
+|---|---|---|---|
+| D | nume | Sur une droite graduée, le point A a pour abscisse 6. Le point B est à la même distance de … | -6 |
+| D | nume | Deux nombres opposés ont la même distance à zéro et des signes contraires. Quel est l'oppos… | 8 |
+| E | qcm | Quel point a pour abscisse l'opposé de l'abscisse du point M ? | b) Le point B |
+| E | vrai | Léo affirme : « L'opposé d'un nombre est toujours un nombre négatif. » A-t-il raison ? | faux |
+| M | nume | L'opposé d'un nombre est 9,4. Quel est ce nombre ? | -9.4 |
+| M | vrai | Sofia affirme que les abscisses des points A et B sont des nombres opposés. A-t-elle raison… | vrai |
+
+**`A022` · Valeur absolue : la distance à zéro** — diff. 4, seuil 3/4  
+*Savoir que la valeur absolue d'un nombre relatif est sa distance à zéro, c'est-à-dire le nombre sans son signe : la valeur absolue de −6,5 est 6,5, celle de 4 est 4 ; deux nombres opposés ont la même valeur absolue, et deux nombres différents peuvent avoir la même. Le programme demande de définir la valeur absolue, pas sa notation : les énoncés écrivent « la valeur absolue de −6,5 » ou « la distance à zéro », sans barres verticales. Figure utile : droite graduée où la distance d'un point à 0 se compte en graduations.*
+> « Définir l'opposé et la valeur absolue d'un nombre. »
+
+| | Type | Demandé | Réponse |
+|---|---|---|---|
+| D | nume | Combien d'unités séparent le point A de 0 ? Ce nombre est la distance à zéro de l'abscisse … | 5 |
+| D | vrai | Lina dit : « La distance à zéro de −4,8 est −4,8. » A-t-elle raison ? | faux |
+| E | qcm | Quels nombres ont une distance à zéro égale à 2,5 ? | b) −2,5 et 2,5 |
+| E | nume | Parmi les nombres −9 ; 4 ; −0,7 et 8, lequel a la plus grande distance à zéro ? Écris ce no… | -9 |
+| M | nume | Quelle est la distance à zéro de l'abscisse du point A ? | 13 |
+| M | vrai | Zoé affirme : « Si deux nombres différents ont la même distance à zéro, alors ils sont oppo… | vrai |
+
+**`A023` · Comparer et ranger des décimaux relatifs** — diff. 4, seuil 3/4  
+*Comparer deux nombres décimaux relatifs avec < et >, et ranger une liste dans l'ordre croissant ou décroissant : un nombre négatif est plus petit qu'un nombre positif ; de deux nombres négatifs, le plus petit est le plus éloigné de zéro (−7 < −2 ; −3,5 < −3,25). L'erreur type est de comparer les distances à zéro sans tenir compte du signe (croire que −7 > −2 parce que 7 > 2), ou, pour les décimaux négatifs, de cumuler cette erreur avec celle de la partie décimale. Contextes : températures, altitudes. Figure : aucune dans les exercices de maîtrise, car une droite graduée portant les nombres donnerait la réponse ; elle peut servir dans une question d'introduction.*
+> « Comparer et ranger dans l'ordre croissant et décroissant des nombres décimaux relatifs. »
+
+| | Type | Demandé | Réponse |
+|---|---|---|---|
+| D | qcm | Ce matin, il fait −3 °C à Lille et −8 °C à Strasbourg. Où fait-il le plus froid, et quel si… | b) À Strasbourg, donc −3 > −8 |
+| D | nume | Une nuit de janvier, on relève la température dans quatre villes, en °C : −2 ; 1 ; −6 ; −5.… | -6 |
+| E | qcm | Range ces nombres dans l'ordre croissant : −1,5 ; 0,8 ; −3 ; −1,25 ; 2. Quel est le bon ran… | d) −3 ; −1,5 ; −1,25 ; 0,8 ; 2 |
+| E | vrai | Léa affirme : « −0,7 est plus petit que −0,65, car 0,7 est plus grand que 0,65. » A-t-elle … | vrai |
+| M | vrai | Vrai ou faux : de deux nombres relatifs, le plus grand est toujours celui qui a la plus gra… | faux |
+| M | nume | Je suis un nombre entier négatif. Je suis plus grand que −4,5, et ma distance à zéro est pl… | -4 |
+
+**`B011` · Priorités opératoires** — diff. 4, seuil 3/4  
+*Calculer une expression qui mêle les quatre opérations sur des nombres positifs, avec ou sans parenthèses, en effectuant d'abord les calculs entre parenthèses, puis les multiplications et les divisions, puis les additions et les soustractions, de gauche à droite à priorité égale : 7 + 3 × 5 = 22 ; 20 − 8 ÷ 4 = 18. Nommer le calcul (somme, différence, produit, quotient) d'après la dernière opération effectuée, distinguer termes et facteurs. L'erreur type est de calculer de gauche à droite sans tenir compte des priorités (7 + 3 × 5 = 50). Figure : aucune.*
+> « Connaitre et utiliser les priorités opératoires. »
+
+| | Type | Demandé | Réponse |
+|---|---|---|---|
+| D | nume | Léo achète une gomme à 2 € et 3 cahiers à 4 € chacun. Son ticket de caisse indique le calcu… | 14 |
+| D | qcm | Quel est le résultat de 30 - 4 × 5 ? | a) 10 |
+| E | nume | Calcule 50 - 36 ÷ 4 + 2. | 43 |
+| E | vrai | Tom dit : « 8 × 3 + 6 est un produit, car on y voit d'abord une multiplication. » A-t-il ra… | faux |
+| M | qcm | On veut placer des parenthèses dans 4 + 8 × 5 - 2 pour obtenir 58. Quelle écriture convient… | d) (4 + 8) × 5 - 2 |
+| M | nume | Calcule 3 × (14 - 2 × 5) + 12 ÷ 4. | 15 |
+
+**`B044` · Additionner deux décimaux relatifs** — diff. 4, seuil 3/4  
+*Additionner deux nombres décimaux relatifs : de même signe, on ajoute les distances à zéro et on garde le signe ; de signes contraires, on soustrait la plus petite distance à zéro de la plus grande et on prend le signe du nombre le plus éloigné de zéro ; la somme de deux nombres opposés est nulle. Le sens vient d'abord de situations (gains et pertes, température qui monte ou descend) et de déplacements sur la droite graduée. Écritures avec parenthèses : (−4) + (+7) ; (−2,5) + (−1,3). L'erreur type est d'ajouter les distances à zéro quand les signes sont contraires ((−4) + (+7) = −11 ou 11). Figure utile : droite graduée avec un déplacement fléché depuis le premier nombre.*
+> « Additionner deux nombres décimaux relatifs. »
+
+| | Type | Demandé | Réponse |
+|---|---|---|---|
+| D | qcm | La flèche représente une addition : on part du nombre où elle commence, puis on avance ou o… | c) (−5) + (+3) = −2 |
+| D | nume | Dans un jeu, Inès perd 6 points au premier tour, puis en gagne 9 au second. Calcule (−6) + … | 3 |
+| E | nume | Le point A repère la température à 7 h. À 14 h, elle a augmenté de 6,5 degrés. Quelle tempé… | 2 |
+| E | vrai | Tom calcule (−3,4) + (+1,9) et trouve −5,3. A-t-il raison ? | faux |
+| M | qcm | Sans calculer, laquelle de ces sommes est négative ? | a) (+3,7) + (−5,2) |
+| M | nume | Le compte de Sami affiche −12,35 € : il doit cet argent à la banque. Il dépose 8,70 €. Quel… | -3.65 |
+
 **`C011` · Réduction au même dénominateur** — diff. 4, seuil 2/3  
 *Trouver un dénominateur commun à deux fractions et les réduire*
 > « Additionner et soustraire des fractions de dénominateurs quelconques. »
@@ -2346,6 +2551,71 @@ Le chapitre est l'unité qu'un exercice bilan validerait.
 | D | qcm | Compare 2/3 et 3/5. | a) 2/3 > 3/5 |
 | E | qcm | Compare 8/12 et 8/21 sans calculer. | a) 8/12 > 8/21 |
 | M | text | Range ces trois fractions de la plus petite à la plus grande : 3/4, 7/18, 5/6 Écris-les sép… | 7/18, 3/4, 5/6 |
+
+**`A017` · Problèmes de multiples et de diviseurs communs** — diff. 5, seuil 3/4  
+*Résoudre des problèmes où il faut chercher un multiple commun (deux phénomènes périodiques qui se reproduisent ensemble : deux bus qui repassent toutes les 12 et toutes les 18 minutes, deux engrenages) ou un diviseur commun (répartir 84 billes et 60 calots en paquets identiques, sans reste, le plus grand nombre de paquets possible), avec des nombres jusqu'à quelques centaines, en listant les multiples ou les diviseurs. Les mots PGCD et PPCM ne sont pas employés : ils ne figurent pas au programme. Figure : aucune.*
+> « Utiliser les notions de multiples et diviseurs. »
+
+| | Type | Demandé | Réponse |
+|---|---|---|---|
+| D | nume | Un phare clignote toutes les 15 secondes, un autre toutes les 25 secondes. Ils viennent de … | 75 |
+| D | qcm | Un fleuriste a 24 roses et 36 tulipes. Il fait des bouquets tous identiques et utilise tout… | a) 6 bouquets |
+| E | nume | Pour un goûter, on a 48 crêpes et 72 gaufres. On prépare des assiettes identiques en utilis… | 24 |
+| E | vrai | Inès fait un tour de piste en 10 min, Paul en 15 min. Ils partent ensemble. Vrai ou faux : … | faux |
+| M | nume | Deux roues dentées s'engrènent : la petite a 18 dents, la grande 30. Deux dents marquées se… | 5 |
+| M | qcm | Un club compte entre 100 et 150 membres. Qu'on les range par 6, par 8 ou par 10, il n'en re… | b) 120 |
+
+**`B045` · Soustraire deux décimaux relatifs** — diff. 5, seuil 3/4  
+*Savoir que soustraire un nombre relatif revient à ajouter son opposé : (+3) − (−5) = (+3) + (+5) = 8 ; calculer la différence de deux décimaux relatifs, et l'interpréter comme un écart (de −4 °C à 6 °C, la température a augmenté de 6 − (−4) = 10 degrés). La règle se justifie par l'addition à trou : (−5) + ... = (+3) se complète en calculant (+3) − (−5). L'erreur type est de changer le signe de l'opération sans changer celui du nombre, ou de soustraire les distances à zéro. Figure utile : droite graduée verticale (thermomètre) où l'écart se compte en graduations.*
+> « Soustraire deux nombres décimaux relatifs. »
+
+| | Type | Demandé | Réponse |
+|---|---|---|---|
+| D | nume | Sur ce thermomètre, M repère la température du matin et S celle de l'après-midi. De combien… | 8 |
+| D | qcm | Soustraire un nombre, c'est ajouter son opposé. Quelle écriture permet de calculer (−4) − (… | d) (−4) + (−9) = −13 |
+| E | nume | Sur cette échelle d'altitude, D repère un drone et P un plongeur. Quelle distance verticale… | 20 |
+| E | vrai | Lina calcule (−6,3) − (−2,8). Elle écrit (−6,3) + (+2,8), puis trouve −3,5. A-t-elle raison… | vrai |
+| M | qcm | Quel nombre faut-il ajouter à (−7,5) pour obtenir (+2) ? | b) 9,5 |
+| M | nume | Record de froid sur Terre : −89,2 °C, en Antarctique. Record de chaleur : 56,7 °C, aux État… | 145.9 |
+
+**`B046` · Sommes de relatifs : parenthèses et écriture simplifiée** — diff. 5, seuil 3/4  
+*Passer de l'écriture avec parenthèses d'une somme de relatifs à l'écriture simplifiée, et inversement : (−3) + (+5) − (−2) s'écrit −3 + 5 + 2 ; savoir que, dans l'écriture simplifiée, chaque signe est celui du terme qui le suit, et que les parenthèses sont indispensables quand deux signes se suivent : on écrit 4 − (−3), jamais 4 − −3. Reconnaître des écritures égales. Écrire une expression en saisie libre ne se fait pas à l'écran : l'élève choisit l'écriture simplifiée correcte, dit si une écriture est correcte (vrai ou faux), ou calcule la valeur. Figure : aucune.*
+> « Simplifier l'écriture de sommes comportant des parenthèses. »
+
+| | Type | Demandé | Réponse |
+|---|---|---|---|
+| D | qcm | Pour simplifier l'écriture d'une somme, on supprime les parenthèses et les signes d'additio… | b) 5 − 8 + 1 |
+| D | vrai | Vrai ou faux : (−7) − (+4) s'écrit plus simplement −7 − 4. | vrai |
+| E | qcm | Quelle écriture avec parenthèses est égale à −2 + 9 − 5 ? | c) (−2) + (+9) + (−5) |
+| E | nume | Mila écrit (−8) − (−3) + (+2,5) sous forme simplifiée, puis calcule. Quel résultat doit-ell… | -2.5 |
+| M | qcm | Quelle est l'écriture simplifiée de (−2,5) − (−4) − (+1,5) + (−3) ? | d) −2,5 + 4 − 1,5 − 3 |
+| M | vrai | Sami écrit : 6 − −4 = 10. Vrai ou faux : cette écriture est correcte. | faux |
+
+**`B047` · Enchaîner additions et soustractions de relatifs** — diff. 5, seuil 3/4  
+*Calculer une suite de quatre à six additions et soustractions de décimaux relatifs, avec ou sans parenthèses : transformer les soustractions en additions des opposés, puis regrouper les termes positifs d'un côté et les termes négatifs de l'autre, ou les opposés qui s'annulent ; ou calculer de gauche à droite. Exemple : −7 + 4 − (−3) − 2,5 + 7. L'erreur type est de perdre un signe en regroupant, ou de soustraire deux fois. Figure : aucune.*
+> « Enchainer additions et soustractions de décimaux relatifs. »
+
+| | Type | Demandé | Réponse |
+|---|---|---|---|
+| D | nume | Calcule 5 − 8 + 3 − 6. Conseil : regroupe d'abord les termes positifs, puis les termes néga… | -6 |
+| D | qcm | Calcule −7 + 2 + 7 − 4. | b) −2 |
+| E | nume | Calcule (−3,5) + (+6) − (−1,5) − (+4,25) + (−2). | -2.25 |
+| E | vrai | Pour calculer 4,8 − 6 − 2,3 + 6 + 1,5, Adam barre « − 6 » et « + 6 », puis trouve 4. A-t-il… | vrai |
+| M | qcm | Inès calcule −9 − (−4) + 2,5 − 6 − (+1,5) et trouve −18. Quelle est son erreur ? | c) Elle a écrit − (−4) comme − 4,… |
+| M | nume | Quel nombre faut-il écrire à la place du carré pour que l'égalité soit vraie ? −5 + 3,5 − □… | 4.5 |
+
+**`B048` · Problèmes d'addition et de soustraction de relatifs** — diff. 5, seuil 3/4  
+*Résoudre des problèmes de températures, d'altitudes, de soldes bancaires, de points de jeu ou de dates qui demandent une ou plusieurs additions ou soustractions de relatifs : variation (de −3,5 °C à 2 °C), état final après plusieurs variations, écart entre deux altitudes. Traduire l'énoncé par un calcul sur des relatifs, puis interpréter le signe du résultat (une variation négative est une baisse). Pour les dates, éviter les écarts qui traversent l'an 1 : il n'y a pas d'année zéro, et le calcul donnerait un an de trop. Figure utile : droite graduée verticale (thermomètre, échelle d'altitude).*
+> « Résoudre des problèmes mobilisant addition et soustraction de nombres décimaux relatifs. »
+
+| | Type | Demandé | Réponse |
+|---|---|---|---|
+| D | nume | Le point M du thermomètre indique la température à 6 h. À 14 h, il fait 7 degrés de plus. Q… | 2 |
+| D | qcm | Un sous-marin est à 35 m sous le niveau de la mer : son altitude est −35 m. Il remonte de 2… | b) (-35) + (+20) |
+| E | nume | À Moscou, un jour d'hiver, il faisait −6,5 °C à 7 h et 3 °C à 15 h. De combien de degrés la… | 9.5 |
+| E | nume | Le compte bancaire de Sami est à −45 € : il doit 45 € à sa banque. Il dépose 120 €, puis pa… | -15 |
+| M | nume | Un spéléologue entre dans une grotte et descend de 140 m. Il se trouve alors à l'altitude −… | 55 |
+| M | qcm | Entre ce matin et ce soir, la température a varié de −6,5 degrés. Ce soir, il fait −2 °C. Q… | a) 4,5 degrés |
 
 **`E034` · Coefficient de proportionnalité** — diff. 5, seuil 3/4  
 *Trouver le nombre par lequel on multiplie une grandeur pour obtenir l'autre (prix unitaire, vitesse, échelle), éventuellement décimal ou écrit sous forme de fraction, et l'utiliser pour compléter un tableau ou résoudre un problème. Une échelle peut alors s'écrire comme un coefficient (1 cm pour 25 000 cm).*
@@ -2427,6 +2697,45 @@ Le chapitre est l'unité qu'un exercice bilan validerait.
 
 ### ── 4e ──
 
+**`B049` · Multiplier deux décimaux relatifs** — diff. 5, seuil 3/4  
+*Calculer le produit de deux nombres décimaux relatifs : d'abord quand un seul facteur est négatif, en voyant la multiplication comme une addition répétée (4 × (−3) = (−3) + (−3) + (−3) + (−3) = −12) ; puis quand les deux facteurs sont négatifs, dont le produit est positif, ce que la distributivité justifie ((−3) × (−4) + (−3) × 4 = (−3) × 0 = 0). En déduire la règle des signes d'un produit de deux facteurs. L'erreur type est de transposer la règle de l'addition : « deux négatifs donnent un négatif », (−3) × (−4) = −12. Figure : aucune.*
+> « Multiplier deux nombres relatifs : d'abord dans le cas où un seul des facteurs est négatif, puis, grâce à la distributivité, dans le cas où les deux … »
+
+| | Type | Demandé | Réponse |
+|---|---|---|---|
+| D | nume | Le niveau d'un lac baisse de 7 cm chaque semaine : sa variation est de −7 cm par semaine. S… | -42 |
+| D | qcm | Quel calcul est égal à 3 × (-2{,}5) ? | b) (-2{,}5) + (-2{,}5) + (-2{,}5) |
+| E | nume | Calcule (-6) × (-1{,}5). | 9 |
+| E | vrai | Léa affirme : « (-8) × (-5) = -40, car deux nombres négatifs donnent un résultat négatif. »… | faux |
+| M | nume | Calcule (-0{,}4) × (-0{,}5). | 0.2 |
+| M | qcm | On sait que (-5) × 4 = -20 et que (-5) × 4 + (-5) × (-4) = (-5) × (4 + (-4)). Que vaut (-5)… | c) 20 |
+
+**`B050` · Diviser deux décimaux relatifs** — diff. 5, seuil 3/4  
+*Calculer le quotient de deux nombres relatifs quand il est décimal, avec la même règle des signes que pour le produit : (−36) ÷ (−9) = 4 ; (−7,5) ÷ 3 = −2,5 ; savoir que diviser, c'est trouver le facteur manquant d'une multiplication à trou ((−4) × ... = 20 se complète par 20 ÷ (−4) = −5), et qu'on ne divise jamais par zéro. Diviseur entier, pour rester dans ce que l'élève sait poser ; les quotients non décimaux et l'écriture fractionnaire des relatifs sont à l'étape 6. Figure : aucune.*
+> « Diviser deux nombres relatifs. »
+
+| | Type | Demandé | Réponse |
+|---|---|---|---|
+| D | nume | Un plongeur descend régulièrement : son altitude varie de −18 m en 6 minutes. Quelle est la… | -3 |
+| D | qcm | Quel nombre complète l'égalité (-5) × … = 35 ? | b) -7 |
+| E | nume | Calcule (-8{,}4) ÷ (-4). | 2.1 |
+| E | vrai | Inès affirme : « (-56) ÷ (-7) est un nombre positif. » A-t-elle raison ? | vrai |
+| M | nume | Quel nombre, divisé par −6, donne 1,5 ? | -9 |
+| M | qcm | Lequel de ces calculs n'a pas de résultat ? | c) (-3) ÷ 0 |
+
+**`B051` · Enchaînements d'opérations avec des relatifs** — diff. 5, seuil 3/4  
+*Calculer une expression qui enchaîne les quatre opérations sur des relatifs en respectant les priorités : −5 + 3 × (−4) = −17 ; (−2) × (6 − 9) = 6 ; trouver le signe d'un produit de plusieurs facteurs d'après le nombre de facteurs négatifs ; appliquer un programme de calcul à un nombre négatif (choisir −3, le multiplier par −2, ajouter 5 : on obtient 11), et nommer un calcul (somme, produit, quotient) d'après sa dernière opération. L'erreur type est d'appliquer la règle des signes du produit à une somme (−5 + (−12) = 17). Figure : aucune.*
+> « Savoir calculer un enchainement d'opérations avec des nombres relatifs. »
+
+| | Type | Demandé | Réponse |
+|---|---|---|---|
+| D | nume | Calcule -7 + 2 × (-3). | -13 |
+| D | qcm | Programme de calcul : choisir un nombre ; le multiplier par −3 ; ajouter 4 au résultat. Que… | c) (-2) × (-3) + 4 |
+| E | nume | Calcule (-4) × (3 - 8) - 6. | 14 |
+| E | vrai | Sans calculer, Yanis affirme que (-2) × (-1{,}5) × (-4) × 3 est un nombre négatif. A-t-il r… | vrai |
+| M | nume | Programme de calcul : choisir un nombre ; lui soustraire 5 ; multiplier le résultat par le … | 36 |
+| M | qcm | Quelle phrase décrit l'expression (-6) + 18 ÷ (-3) ? | a) C'est une somme ; elle vaut −1… |
+
 **`C007` · Simplification de fraction** — diff. 5, seuil 2/3  
 *Simplifier une fraction par un facteur commun au numérateur et au dénominateur*
 > « Simplifier une fraction. »
@@ -2438,6 +2747,32 @@ Le chapitre est l'unité qu'un exercice bilan validerait.
 | M | qcm | Peut-on simplifier l'écriture 4 + 2/4 en barrant les deux 4 ? | a) Non, car le 4 du haut est dans… |
 
 ### ── 3e ──
+
+**`A024` · Reconnaître un nombre premier** — diff. 5, seuil 3/4  
+*Savoir qu'un nombre premier est un entier qui a exactement deux diviseurs, 1 et lui-même : 1 n'est donc pas premier, et 2 est le seul nombre premier pair. Reconnaître si un entier inférieur à 100 est premier en cherchant un diviseur à l'aide des tables et des critères de divisibilité (51 = 3 × 17 et 91 = 7 × 13 ne sont pas premiers) ; connaître les nombres premiers inférieurs à 30. Le crible d'Ératosthène est une méthode possible, pas un attendu. Figure : aucune.*
+> « Factoriser un nombre entier positif : 60 = 2² × 3 × 5. »
+
+| | Type | Demandé | Réponse |
+|---|---|---|---|
+| D | vrai | Un nombre premier a exactement deux diviseurs : 1 et lui-même. Les diviseurs de 15 sont 1, … | faux |
+| D | qcm | Un nombre premier a exactement deux diviseurs : 1 et lui-même. Lequel de ces nombres est pr… | a) 2 |
+| E | text | Parmi 31, 33, 35, 37 et 39, lesquels sont des nombres premiers ? Écris-les du plus petit au… | 31, 37 |
+| E | vrai | Hugo affirme : « 57 n'est dans aucune table de multiplication de 2 à 9, donc 57 est un nomb… | faux |
+| M | nume | Quel est le plus petit nombre premier plus grand que 75 ? | 79 |
+| M | qcm | Dans le nombre 4■, le chiffre des unités est caché. Ce nombre est premier. Quel peut être l… | b) 7 |
+
+**`A025` · Décomposer un entier en produit de facteurs premiers** — diff. 5, seuil 3/4  
+*Écrire un entier jusqu'à 1 000 comme produit de nombres premiers, en divisant successivement par 2, 3, 5, 7… (126 = 2 × 3 × 3 × 7), savoir que cette décomposition est unique à l'ordre des facteurs près, et s'en servir pour trouver des diviseurs d'un nombre. En attendant les puissances (étape 6), la décomposition s'écrit en produit sans puissances : un facteur répété est écrit autant de fois qu'il apparaît (60 = 2 × 2 × 3 × 5), jamais avec un exposant. L'erreur type est de s'arrêter sur un facteur non premier (60 = 4 × 15). Écrire la décomposition en saisie libre ne se fait pas à l'écran : l'élève choisit la bonne décomposition parmi des produits dont certains contiennent un facteur non premier, ou répond par un nombre (combien de fois le facteur 2, le plus grand facteur premier). Figure : aucune.*
+> « Factoriser un nombre entier positif : 60 = 2² × 3 × 5. »
+
+| | Type | Demandé | Réponse |
+|---|---|---|---|
+| D | qcm | Quelle est la décomposition de 42 en produit de facteurs premiers ? | c) 2 × 3 × 7 |
+| D | vrai | Léo écrit : 72 = 2 × 2 × 2 × 3 × 3. Vrai ou faux : c'est la décomposition de 72 en produit … | vrai |
+| E | nume | Quel est le plus grand facteur premier de 231 ? | 11 |
+| E | qcm | Quelle est la décomposition de 180 en produit de facteurs premiers ? | a) 2 × 2 × 3 × 3 × 5 |
+| M | qcm | La décomposition de 270 en produit de facteurs premiers est 2 × 3 × 3 × 3 × 5. Sans poser d… | b) 45 |
+| M | nume | On décompose 1 000 en produit de facteurs premiers. Combien de facteurs ce produit contient… | 6 |
 
 **`C008` · Fraction irréductible** — diff. 6, seuil 2/3  
 *Mettre une fraction sous forme irréductible*

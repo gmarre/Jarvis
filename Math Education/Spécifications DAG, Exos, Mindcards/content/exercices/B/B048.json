@@ -1,0 +1,178 @@
+[
+  {
+    "id": "EX-B048-D-01",
+    "skill_id": "B048",
+    "level": "decouverte",
+    "type": "numerique",
+    "statement": "Le point M du thermomètre indique la température à 6 h.\n\nÀ 14 h, il fait 7 degrés de plus. Quelle température fait-il à 14 h ?",
+    "image": "figures/EX-B048-D-01",
+    "answer": {
+      "value": 2,
+      "unit": "°C",
+      "accepted": [
+        "+2 °C",
+        "+2 degrés",
+        "+2"
+      ]
+    },
+    "solution_steps": [
+      "On lit d'abord le thermomètre. Les nombres écrits vont de 2 en 2, et il y a un petit trait entre deux nombres écrits : chaque petit intervalle vaut 1 degré. Le point M est sur le petit trait situé entre −6 et −4 : il indique −5 °C.",
+      "Il fait 7 degrés de plus : la température monte de 7. Monter, c'est ajouter : $(-5) + (+7)$.",
+      "Les deux nombres sont de signes contraires : on soustrait les distances à zéro, 7 − 5 = 2, et on garde le signe du nombre le plus éloigné de zéro, ici +7. Donc $(-5) + (+7) = 2$.",
+      "À 14 h, il fait **2 °C**. On le vérifie sur le thermomètre : de −5, on monte de 5 graduations jusqu'à 0, puis de 2 graduations encore, soit 7 en tout."
+    ],
+    "hint": "Lis d'abord la température du point M : combien vaut un petit intervalle ?",
+    "estimated_duration_s": 60,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, classe de 5e, Nombres et calculs, Nombres relatifs : « Utiliser les nombres relatifs pour représenter des grandeurs observables qui peuvent prendre des valeurs inférieures à zéro (température, temps, altitude, etc.), en particulier dans le cadre de la résolution de problèmes. »"
+  },
+  {
+    "id": "EX-B048-D-02",
+    "skill_id": "B048",
+    "level": "decouverte",
+    "type": "qcm",
+    "statement": "Un sous-marin est à 35 m sous le niveau de la mer : son altitude est −35 m. Il remonte de 20 m.\n\nQuel calcul donne sa nouvelle altitude ?",
+    "image": null,
+    "choices": [
+      {
+        "key": "a",
+        "text": "$(-35) + (-20)$",
+        "misconception": "L'élève associe « sous le niveau de la mer » à un nombre négatif pour les deux nombres : il ajoute −20 comme si le sous-marin descendait encore. Ce calcul donne −55 m, plus profond qu'au départ."
+      },
+      {
+        "key": "b",
+        "text": "$(-35) + (+20)$",
+        "misconception": null
+      },
+      {
+        "key": "c",
+        "text": "$35 - 20$",
+        "misconception": "L'élève oublie que le sous-marin est sous la surface : il part de 35 au lieu de −35. Ce calcul donne 15 m, comme si le sous-marin était sorti de l'eau."
+      }
+    ],
+    "answer": {
+      "value": "b"
+    },
+    "solution_steps": [
+      "Une altitude se mesure à partir du niveau de la mer : au-dessus, elle est positive ; en dessous, elle est négative. Le sous-marin part de −35 m.",
+      "Remonter de 20 m, c'est faire varier l'altitude de +20 : on ajoute (+20). Le calcul est $(-35) + (+20)$.",
+      "$(-35) + (+20) = -15$ : le sous-marin est à 15 m sous la surface, plus près de la surface qu'au départ, ce qui est logique puisqu'il est remonté. La bonne réponse est b."
+    ],
+    "hint": "Remonter fait-il augmenter ou diminuer l'altitude ?",
+    "estimated_duration_s": 45,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, classe de 5e, Nombres et calculs, Nombres relatifs : « Utiliser les nombres relatifs pour représenter des grandeurs observables qui peuvent prendre des valeurs inférieures à zéro (température, temps, altitude, etc.), en particulier dans le cadre de la résolution de problèmes. »"
+  },
+  {
+    "id": "EX-B048-E-01",
+    "skill_id": "B048",
+    "level": "entrainement",
+    "type": "numerique",
+    "statement": "À Moscou, un jour d'hiver, il faisait −6,5 °C à 7 h et 3 °C à 15 h.\n\nDe combien de degrés la température a-t-elle augmenté ?",
+    "image": null,
+    "answer": {
+      "value": 9.5,
+      "unit": "°C",
+      "accepted": [
+        "+9,5 °C",
+        "+9,5 degrés",
+        "+9,5"
+      ]
+    },
+    "solution_steps": [
+      "Une variation se calcule toujours : température d'arrivée − température de départ. Ici : $3 - (-6{,}5)$.",
+      "Soustraire un nombre, c'est ajouter son opposé. L'opposé de $-6{,}5$ est $6{,}5$ : $3 - (-6{,}5) = 3 + 6{,}5 = 9{,}5$.",
+      "La température a augmenté de **9,5 degrés**. Contrôle : de −6,5 °C à 0 °C, elle monte de 6,5 degrés ; de 0 °C à 3 °C, de 3 degrés encore ; 6,5 + 3 = 9,5."
+    ],
+    "hint": "Combien de degrés pour remonter jusqu'à 0 °C, puis de 0 °C jusqu'à 3 °C ?",
+    "estimated_duration_s": 60,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, classe de 5e, Nombres et calculs, Nombres relatifs : « Résoudre des problèmes mobilisant addition et soustraction de nombres décimaux relatifs. »"
+  },
+  {
+    "id": "EX-B048-E-02",
+    "skill_id": "B048",
+    "level": "entrainement",
+    "type": "numerique",
+    "statement": "Le compte bancaire de Sami est à −45 € : il doit 45 € à sa banque. Il dépose 120 €, puis paie 90 € par carte.\n\nQuel est le nouveau solde de son compte ?",
+    "image": null,
+    "answer": {
+      "value": -15,
+      "unit": "€"
+    },
+    "solution_steps": [
+      "Un dépôt fait monter le solde : on ajoute 120. Un paiement le fait baisser : on soustrait 90. Le calcul est $-45 + 120 - 90$.",
+      "On calcule de gauche à droite : $-45 + 120 = 75$, car 120 est plus loin de zéro que $-45$ et $120 - 45 = 75$.",
+      "Puis $75 - 90 = -15$ : on enlève 90 alors qu'il n'y a que 75, il manque 15.",
+      "Le nouveau solde est **−15 €** : Sami doit encore 15 € à sa banque."
+    ],
+    "hint": "Écris un seul calcul : un dépôt s'ajoute, un paiement se soustrait.",
+    "estimated_duration_s": 75,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, classe de 5e, Nombres et calculs, Nombres relatifs : « Résoudre des problèmes mobilisant addition et soustraction de nombres décimaux relatifs. »"
+  },
+  {
+    "id": "EX-B048-M-01",
+    "skill_id": "B048",
+    "level": "maitrise",
+    "type": "numerique",
+    "statement": "Un spéléologue entre dans une grotte et descend de 140 m. Il se trouve alors à l'altitude −85 m.\n\nÀ quelle altitude se trouve l'entrée de la grotte ?",
+    "image": null,
+    "answer": {
+      "value": 55,
+      "unit": "m",
+      "accepted": [
+        "+55 m",
+        "+55"
+      ]
+    },
+    "solution_steps": [
+      "On ne connaît pas l'altitude de départ. On sait que : altitude de l'entrée − 140 = −85.",
+      "Pour retrouver le départ, on fait le chemin à l'envers : à partir de −85 m, on remonte de 140 m. Cela s'écrit $-85 + 140$.",
+      "$-85 + 140 = 55$ : signes contraires, on soustrait les distances à zéro, $140 - 85 = 55$, et on garde le signe de $+140$, le plus éloigné de zéro.",
+      "L'entrée de la grotte est à **55 m** d'altitude. Vérification : 55 − 140 = −85."
+    ],
+    "hint": "Fais le trajet à l'envers : si le spéléologue remontait de 140 m, où arriverait-il ?",
+    "estimated_duration_s": 75,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, classe de 5e, Nombres et calculs, Nombres relatifs : « Résoudre des problèmes mobilisant addition et soustraction de nombres décimaux relatifs. »"
+  },
+  {
+    "id": "EX-B048-M-02",
+    "skill_id": "B048",
+    "level": "maitrise",
+    "type": "qcm",
+    "statement": "Entre ce matin et ce soir, la température a varié de −6,5 degrés. Ce soir, il fait −2 °C.\n\nQuelle température faisait-il ce matin ?",
+    "image": null,
+    "choices": [
+      {
+        "key": "a",
+        "text": "4,5 degrés",
+        "misconception": null
+      },
+      {
+        "key": "b",
+        "text": "−8,5 degrés",
+        "misconception": "L'élève applique la variation à la température du soir au lieu de faire le chemin à l'envers : −2 + (−6,5) = −8,5. Or une baisse qui arrive à −2 °C part d'une température plus haute."
+      },
+      {
+        "key": "c",
+        "text": "8,5 degrés",
+        "misconception": "L'élève voit que le matin était plus chaud, mais part de 2 °C au lieu de −2 °C : 2 + 6,5 = 8,5."
+      }
+    ],
+    "answer": {
+      "value": "a"
+    },
+    "solution_steps": [
+      "La variation est négative : entre ce matin et ce soir, la température a **baissé** de 6,5 degrés. Le matin était donc plus chaud que le soir.",
+      "Pour retrouver la température du matin, on fait le chemin à l'envers : à partir de −2 °C, on remonte de 6,5 degrés. Cela s'écrit $-2 + 6{,}5$.",
+      "$-2 + 6{,}5 = 4{,}5$ : signes contraires, on soustrait les distances à zéro, $6{,}5 - 2 = 4{,}5$, et on garde le signe de $+6{,}5$, le plus éloigné de zéro.",
+      "Ce matin, il faisait **4,5 °C**. Vérification : $4{,}5 + (-6{,}5) = -2$. La bonne réponse est a."
+    ],
+    "hint": "Une variation négative, est-ce une hausse ou une baisse ? Fais ensuite le chemin à l'envers.",
+    "estimated_duration_s": 75,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, classe de 5e, Nombres et calculs, Nombres relatifs : « Résoudre des problèmes mobilisant addition et soustraction de nombres décimaux relatifs. »"
+  }
+]

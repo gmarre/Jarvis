@@ -1,0 +1,185 @@
+[
+  {
+    "id": "EX-B045-D-01",
+    "skill_id": "B045",
+    "level": "decouverte",
+    "type": "numerique",
+    "statement": "Sur ce thermomètre, M repère la température du matin et S celle de l'après-midi.\n\nDe combien de degrés la température a-t-elle augmenté ?",
+    "image": "figures/EX-B045-D-01",
+    "answer": {
+      "value": 8,
+      "unit": "°C",
+      "accepted": [
+        "8°",
+        "+8",
+        "+8 °C",
+        "+8°",
+        "+8 degrés"
+      ]
+    },
+    "solution_steps": [
+      "On lit le thermomètre : M est à −5 et S à 3.",
+      "On compte les intervalles d'un degré de M jusqu'à S : 5 pour remonter jusqu'à 0, puis 3 pour aller de 0 à 3. En tout, 5 + 3 = 8 degrés.",
+      "Par le calcul, l'augmentation est la température d'arrivée moins celle de départ : 3 − (−5). Soustraire (−5), c'est ajouter son opposé, (+5) : 3 + 5 = 8.",
+      "La température a augmenté de **8 degrés**. Piège : calculer 5 − 3 = 2, en soustrayant les distances à zéro."
+    ],
+    "hint": "Compte les intervalles d'un degré de M jusqu'à 0, puis de 0 jusqu'à S.",
+    "estimated_duration_s": 60,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, 5e : soustraire deux nombres décimaux relatifs."
+  },
+  {
+    "id": "EX-B045-D-02",
+    "skill_id": "B045",
+    "level": "decouverte",
+    "type": "qcm",
+    "statement": "Soustraire un nombre, c'est ajouter son opposé.\n\nQuelle écriture permet de calculer (−4) − (+9) ?",
+    "image": null,
+    "choices": [
+      {
+        "key": "a",
+        "text": "(−4) + (+9) = 5",
+        "misconception": "L'élève change le signe de l'opération sans changer celui du nombre : il ajoute (+9) au lieu d'ajouter son opposé."
+      },
+      {
+        "key": "b",
+        "text": "(+4) + (−9) = −5",
+        "misconception": "L'élève prend l'opposé du premier terme au lieu de celui du nombre qu'on soustrait."
+      },
+      {
+        "key": "c",
+        "text": "(−4) − (−9) = 5",
+        "misconception": "L'élève change le signe du nombre mais garde la soustraction : il change un seul des deux signes."
+      },
+      {
+        "key": "d",
+        "text": "(−4) + (−9) = −13",
+        "misconception": null
+      }
+    ],
+    "answer": {
+      "value": "d"
+    },
+    "solution_steps": [
+      "L'opposé de (+9) est (−9) : même distance à zéro, signe contraire.",
+      "On remplace « − (+9) » par « + (−9) » : (−4) − (+9) = (−4) + (−9). Le premier terme ne change pas.",
+      "Deux nombres négatifs : on ajoute les distances à zéro, 4 + 9 = 13, et on garde le signe −. Résultat : −13.",
+      "Vérification : partir de −4 et reculer de 9 sur la droite graduée mène à −13. La bonne réponse est d."
+    ],
+    "hint": "Quel est l'opposé de (+9) ? Que devient le premier terme ?",
+    "estimated_duration_s": 60,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, 5e : soustraire deux nombres décimaux relatifs."
+  },
+  {
+    "id": "EX-B045-E-01",
+    "skill_id": "B045",
+    "level": "entrainement",
+    "type": "numerique",
+    "statement": "Sur cette échelle d'altitude, D repère un drone et P un plongeur.\n\nQuelle distance verticale les sépare, en mètres ?",
+    "image": "figures/EX-B045-E-01",
+    "answer": {
+      "value": 20,
+      "unit": "m"
+    },
+    "solution_steps": [
+      "Lecture : entre deux nombres écrits, l'écart de 5 m est partagé en 5 petits intervalles, qui valent chacun 1 m. D est 2 intervalles au-dessus de 5 : altitude 7 m. P est 3 intervalles sous −10 : altitude −13 m.",
+      "La distance est la plus grande altitude moins la plus petite : 7 − (−13).",
+      "Soustraire (−13), c'est ajouter son opposé, (+13) : 7 + 13 = 20.",
+      "Le drone et le plongeur sont séparés de **20 m** : 7 m au-dessus du niveau 0, et 13 m en dessous. Piège : 13 − 7 = 6, en soustrayant les distances à zéro."
+    ],
+    "hint": "Lis les deux altitudes, puis calcule la plus grande moins la plus petite.",
+    "estimated_duration_s": 90,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, 5e : soustraire deux nombres décimaux relatifs."
+  },
+  {
+    "id": "EX-B045-E-02",
+    "skill_id": "B045",
+    "level": "entrainement",
+    "type": "vrai_faux",
+    "statement": "Lina calcule (−6,3) − (−2,8). Elle écrit (−6,3) + (+2,8), puis trouve −3,5.\n\nA-t-elle raison ?",
+    "image": null,
+    "answer": {
+      "value": true
+    },
+    "solution_steps": [
+      "L'opposé de (−2,8) est (+2,8). Soustraire (−2,8), c'est ajouter (+2,8) : la transformation de Lina est juste.",
+      "(−6,3) + (+2,8) : les signes sont contraires, on soustrait les distances à zéro, 6,3 − 2,8 = 3,5, et on garde le signe de −6,3, le plus éloigné de zéro.",
+      "Le résultat est −3,5 : Lina a raison, c'est **vrai**.",
+      "Piège : calculer −6,3 − 2,8 = −9,1, en oubliant de changer le signe de (−2,8)."
+    ],
+    "hint": "Quel est l'opposé de (−2,8) ? Refais ensuite l'addition.",
+    "estimated_duration_s": 90,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, 5e : soustraire deux nombres décimaux relatifs."
+  },
+  {
+    "id": "EX-B045-M-01",
+    "skill_id": "B045",
+    "level": "maitrise",
+    "type": "qcm",
+    "statement": "Quel nombre faut-il ajouter à (−7,5) pour obtenir (+2) ?",
+    "image": null,
+    "choices": [
+      {
+        "key": "a",
+        "text": "−5,5",
+        "misconception": "L'élève additionne les deux nombres de l'énoncé : (−7,5) + (+2) = −5,5. Pour compléter une addition à trou, il faut soustraire."
+      },
+      {
+        "key": "b",
+        "text": "9,5",
+        "misconception": null
+      },
+      {
+        "key": "c",
+        "text": "−9,5",
+        "misconception": "L'élève soustrait dans le mauvais ordre : (−7,5) − (+2) = −9,5. Le nombre cherché est l'arrivée moins le départ, (+2) − (−7,5)."
+      },
+      {
+        "key": "d",
+        "text": "5,5",
+        "misconception": "L'élève soustrait les distances à zéro, 7,5 − 2 = 5,5, sans tenir compte des signes : pour aller de −7,5 à 0, il faut déjà avancer de 7,5."
+      }
+    ],
+    "answer": {
+      "value": "b"
+    },
+    "solution_steps": [
+      "On cherche le nombre qui complète (−7,5) + … = (+2). Pour compléter une addition à trou, on soustrait : … = (+2) − (−7,5).",
+      "Soustraire (−7,5), c'est ajouter son opposé : (+2) + (+7,5) = 9,5.",
+      "Sur la droite graduée : de −7,5 à 0, on avance de 7,5 ; puis de 0 à 2, on avance de 2. En tout, 7,5 + 2 = 9,5.",
+      "Contrôle : (−7,5) + (+9,5) = 2. La bonne réponse est b."
+    ],
+    "hint": "Pour compléter 2 + … = 7, on calcule 7 − 2. Fais de même ici.",
+    "estimated_duration_s": 120,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, 5e, automatismes : savoir que pour compléter une addition à trou, on utilise une soustraction."
+  },
+  {
+    "id": "EX-B045-M-02",
+    "skill_id": "B045",
+    "level": "maitrise",
+    "type": "numerique",
+    "statement": "Record de froid sur Terre : −89,2 °C, en Antarctique. Record de chaleur : 56,7 °C, aux États-Unis.\n\nQuel est l'écart entre ces deux records, en degrés ?",
+    "image": null,
+    "answer": {
+      "value": 145.9,
+      "unit": "°C",
+      "accepted": [
+        "145,9°"
+      ]
+    },
+    "solution_steps": [
+      "L'écart est la plus haute température moins la plus basse : 56,7 − (−89,2).",
+      "Soustraire (−89,2), c'est ajouter son opposé, (+89,2) : on calcule 56,7 + 89,2.",
+      "On pose l'addition en alignant les virgules : 56,7 + 89,2 = 145,9.",
+      "L'écart est de **145,9 degrés** : 89,2 degrés pour remonter jusqu'à 0, puis 56,7 degrés au-dessus de 0. Piège : 89,2 − 56,7 = 32,5, en soustrayant les distances à zéro."
+    ],
+    "hint": "Sur un thermomètre, de combien faut-il monter pour aller de −89,2 à 0 ? Puis de 0 à 56,7 ?",
+    "estimated_duration_s": 120,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, 5e : soustraire deux nombres décimaux relatifs."
+  }
+]

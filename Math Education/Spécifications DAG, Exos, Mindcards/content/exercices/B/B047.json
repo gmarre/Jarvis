@@ -1,0 +1,173 @@
+[
+  {
+    "id": "EX-B047-D-01",
+    "skill_id": "B047",
+    "level": "decouverte",
+    "type": "numerique",
+    "statement": "Calcule 5 − 8 + 3 − 6.\n\nConseil : regroupe d'abord les termes positifs, puis les termes négatifs.",
+    "image": null,
+    "answer": {
+      "value": -6
+    },
+    "solution_steps": [
+      "Chaque signe est celui du terme qui le suit : les termes positifs sont 5 et 3, les termes négatifs −8 et −6.",
+      "Termes positifs : 5 + 3 = 8. Termes négatifs : −8 − 6 = −14 ; même signe, on ajoute les distances à zéro et on garde le signe −.",
+      "On regroupe : 8 − 14. Signes contraires : 14 − 8 = 6, avec le signe de −14, le plus éloigné de zéro. Résultat : **−6**.",
+      "Vérification de gauche à droite : 5 − 8 = −3 ; −3 + 3 = 0 ; 0 − 6 = −6."
+    ],
+    "hint": "Additionne d'abord 5 et 3, puis les deux termes négatifs.",
+    "estimated_duration_s": 75,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, 5e : enchainer additions et soustractions de décimaux relatifs."
+  },
+  {
+    "id": "EX-B047-D-02",
+    "skill_id": "B047",
+    "level": "decouverte",
+    "type": "qcm",
+    "statement": "Calcule −7 + 2 + 7 − 4.",
+    "image": null,
+    "choices": [
+      {
+        "key": "a",
+        "text": "12",
+        "misconception": "L'élève perd le signe du premier terme et calcule 7 + 2 + 7 − 4 = 12 : un terme négatif placé en tête garde son signe."
+      },
+      {
+        "key": "b",
+        "text": "−2",
+        "misconception": null
+      },
+      {
+        "key": "c",
+        "text": "20",
+        "misconception": "L'élève regroupe les positifs (2 + 7 = 9) et les négatifs (−7 − 4 = −11), puis soustrait les négatifs une deuxième fois : 9 − (−11) = 20. Le regroupement s'écrit 9 + (−11)."
+      },
+      {
+        "key": "d",
+        "text": "−16",
+        "misconception": "L'élève calcule −7 + 7 = −14, en ajoutant les distances à zéro et en gardant le signe du premier terme. Or la somme de deux nombres opposés est nulle."
+      }
+    ],
+    "answer": {
+      "value": "b"
+    },
+    "solution_steps": [
+      "−7 et +7 sont deux nombres opposés : leur somme est nulle. On peut les barrer.",
+      "Il reste 2 − 4. Signes contraires : 4 − 2 = 2, avec le signe de −4. Résultat : −2.",
+      "Vérification par regroupement : positifs 2 + 7 = 9 ; négatifs −7 − 4 = −11 ; 9 + (−11) = −2.",
+      "La bonne réponse est b."
+    ],
+    "hint": "Cherche deux termes opposés : que vaut leur somme ?",
+    "estimated_duration_s": 75,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, 5e : enchainer additions et soustractions de décimaux relatifs."
+  },
+  {
+    "id": "EX-B047-E-01",
+    "skill_id": "B047",
+    "level": "entrainement",
+    "type": "numerique",
+    "statement": "Calcule (−3,5) + (+6) − (−1,5) − (+4,25) + (−2).",
+    "image": null,
+    "answer": {
+      "value": -2.25
+    },
+    "solution_steps": [
+      "On passe d'abord à l'écriture simplifiée : − (−1,5) devient + 1,5 et − (+4,25) devient − 4,25. On obtient −3,5 + 6 + 1,5 − 4,25 − 2.",
+      "Termes positifs : 6 + 1,5 = 7,5.",
+      "Termes négatifs : on ajoute les distances à zéro, 3,5 + 4,25 + 2 = 9,75. Leur somme est −9,75.",
+      "7,5 − 9,75 : signes contraires, 9,75 − 7,5 = 2,25, avec le signe de −9,75. Résultat : **−2,25**.",
+      "Piège : écrire − 1,5 au lieu de + 1,5 donne −5,25."
+    ],
+    "hint": "Commence par l'écriture simplifiée : que deviennent − (−1,5) et − (+4,25) ?",
+    "estimated_duration_s": 120,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, 5e : enchainer additions et soustractions de décimaux relatifs."
+  },
+  {
+    "id": "EX-B047-E-02",
+    "skill_id": "B047",
+    "level": "entrainement",
+    "type": "vrai_faux",
+    "statement": "Pour calculer 4,8 − 6 − 2,3 + 6 + 1,5, Adam barre « − 6 » et « + 6 », puis trouve 4.\n\nA-t-il raison ?",
+    "image": null,
+    "answer": {
+      "value": true
+    },
+    "solution_steps": [
+      "−6 et +6 sont deux termes opposés : leur somme est nulle. Adam peut les barrer sans changer le résultat.",
+      "Il reste 4,8 − 2,3 + 1,5. De gauche à droite : 4,8 − 2,3 = 2,5, puis 2,5 + 1,5 = 4.",
+      "Adam a raison : c'est **vrai**.",
+      "Attention : on ne barre que deux termes opposés, chacun avec son signe. Barrer « − 6 » et « − 2,3 » ensemble serait faux."
+    ],
+    "hint": "Que vaut −6 + 6 ?",
+    "estimated_duration_s": 90,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, 5e : additionner plusieurs nombres décimaux relatifs."
+  },
+  {
+    "id": "EX-B047-M-01",
+    "skill_id": "B047",
+    "level": "maitrise",
+    "type": "qcm",
+    "statement": "Inès calcule −9 − (−4) + 2,5 − 6 − (+1,5) et trouve −18.\n\nQuelle est son erreur ?",
+    "image": null,
+    "choices": [
+      {
+        "key": "a",
+        "text": "Il n'y a pas d'erreur : −18 est juste.",
+        "misconception": "L'élève refait la même erreur qu'Inès : il garde − 4 pour − (−4), et retrouve −18."
+      },
+      {
+        "key": "b",
+        "text": "Elle a calculé de gauche à droite au lieu de regrouper les termes.",
+        "misconception": "L'élève croit que le résultat dépend de la méthode : calculer de gauche à droite ou regrouper les termes positifs et négatifs donne le même résultat, si chaque signe est respecté."
+      },
+      {
+        "key": "c",
+        "text": "Elle a écrit − (−4) comme − 4, au lieu de + 4.",
+        "misconception": null
+      },
+      {
+        "key": "d",
+        "text": "Elle aurait dû écrire − (+1,5) comme + 1,5.",
+        "misconception": "L'élève croit que deux signes qui se suivent donnent toujours + : or soustraire (+1,5), c'est ajouter (−1,5), donc − 1,5."
+      }
+    ],
+    "answer": {
+      "value": "c"
+    },
+    "solution_steps": [
+      "Écriture simplifiée correcte : − (−4) devient + 4 et − (+1,5) devient − 1,5. On obtient −9 + 4 + 2,5 − 6 − 1,5.",
+      "Positifs : 4 + 2,5 = 6,5. Négatifs : −9 − 6 − 1,5 = −16,5. Résultat : 6,5 − 16,5 = −10.",
+      "Pour trouver −18, Inès a calculé −9 − 4 + 2,5 − 6 − 1,5 : elle a soustrait 4 au lieu de l'ajouter. L'écart entre −10 et −18, 8, vaut deux fois 4.",
+      "La bonne réponse est c."
+    ],
+    "hint": "Écris la somme sous forme simplifiée, calcule-la, puis compare avec −18.",
+    "estimated_duration_s": 150,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, 5e : enchainer additions et soustractions de décimaux relatifs."
+  },
+  {
+    "id": "EX-B047-M-02",
+    "skill_id": "B047",
+    "level": "maitrise",
+    "type": "numerique",
+    "statement": "Quel nombre faut-il écrire à la place du carré pour que l'égalité soit vraie ?\n\n−5 + 3,5 − □ + 2 = −4",
+    "image": null,
+    "answer": {
+      "value": 4.5
+    },
+    "solution_steps": [
+      "On calcule d'abord les termes connus : −5 + 3,5 + 2 = 0,5.",
+      "L'égalité devient 0,5 − □ = −4 : en partant de 0,5, on doit descendre jusqu'à −4.",
+      "On descend de 0,5 pour atteindre 0, puis de 4 pour atteindre −4 : en tout, 0,5 + 4 = 4,5. Par le calcul : □ = 0,5 − (−4) = 0,5 + 4 = 4,5.",
+      "Vérification : −5 + 3,5 − 4,5 + 2 = −4. Le nombre cherché est **4,5**."
+    ],
+    "hint": "Calcule d'abord −5 + 3,5 + 2, puis cherche combien il faut enlever pour arriver à −4.",
+    "estimated_duration_s": 150,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, 5e : enchainer additions et soustractions de décimaux relatifs."
+  }
+]

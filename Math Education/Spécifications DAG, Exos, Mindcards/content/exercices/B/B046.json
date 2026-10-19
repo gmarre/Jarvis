@@ -1,0 +1,184 @@
+[
+  {
+    "id": "EX-B046-D-01",
+    "skill_id": "B046",
+    "level": "decouverte",
+    "type": "qcm",
+    "statement": "Pour simplifier l'écriture d'une somme, on supprime les parenthèses et les signes d'addition placés devant elles.\n\nQuelle est l'écriture simplifiée de (+5) + (−8) + (+1) ?",
+    "image": null,
+    "choices": [
+      {
+        "key": "a",
+        "text": "5 + 8 + 1",
+        "misconception": "L'élève supprime les parenthèses avec le signe des nombres : il perd le signe de (−8), et la somme change de valeur (14 au lieu de −2)."
+      },
+      {
+        "key": "b",
+        "text": "5 − 8 + 1",
+        "misconception": null
+      },
+      {
+        "key": "c",
+        "text": "5 + −8 + 1",
+        "misconception": "L'élève recopie le signe de l'addition et celui du nombre : deux signes se suivent, « + − », ce qui ne s'écrit jamais sans parenthèses."
+      }
+    ],
+    "answer": {
+      "value": "b"
+    },
+    "solution_steps": [
+      "(+5) est positif : en tête de la somme, on l'écrit simplement 5.",
+      "+ (−8) : on supprime le signe d'addition et les parenthèses, il reste le signe du nombre, − 8.",
+      "+ (+1) s'écrit de même + 1. Chaque signe de l'écriture simplifiée est celui du terme qui le suit.",
+      "On obtient 5 − 8 + 1. Les deux écritures valent −2. La bonne réponse est b."
+    ],
+    "hint": "Pour chaque terme, garde seulement le signe qui est dans la parenthèse.",
+    "estimated_duration_s": 60,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, 5e : simplifier l'écriture de sommes comportant des parenthèses."
+  },
+  {
+    "id": "EX-B046-D-02",
+    "skill_id": "B046",
+    "level": "decouverte",
+    "type": "vrai_faux",
+    "statement": "Vrai ou faux : (−7) − (+4) s'écrit plus simplement −7 − 4.",
+    "image": null,
+    "answer": {
+      "value": true
+    },
+    "solution_steps": [
+      "Soustraire (+4), c'est ajouter son opposé : (−7) − (+4) = (−7) + (−4).",
+      "Dans l'écriture simplifiée, chaque signe est celui du terme qui le suit : (−7) + (−4) s'écrit −7 − 4.",
+      "C'est **vrai**. Les deux écritures valent −11.",
+      "À retenir : « − (+4) » devient « − 4 », alors que « − (−4) » deviendrait « + 4 »."
+    ],
+    "hint": "Transforme d'abord la soustraction en addition de l'opposé.",
+    "estimated_duration_s": 60,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, 5e : simplifier l'écriture de sommes comportant des parenthèses."
+  },
+  {
+    "id": "EX-B046-E-01",
+    "skill_id": "B046",
+    "level": "entrainement",
+    "type": "qcm",
+    "statement": "Quelle écriture avec parenthèses est égale à −2 + 9 − 5 ?",
+    "image": null,
+    "choices": [
+      {
+        "key": "a",
+        "text": "(−2) + (−9) + (−5)",
+        "misconception": "L'élève donne à tous les termes le signe du premier : il lit −2 + 9 − 5 comme une somme de trois nombres négatifs. Cette écriture vaut −16."
+      },
+      {
+        "key": "b",
+        "text": "(−2) + (+9) − (−5)",
+        "misconception": "L'élève met le signe − à la fois dans l'opération et dans le nombre : soustraire (−5) ajoute 5 au lieu de l'enlever. Cette écriture vaut 12 au lieu de 2."
+      },
+      {
+        "key": "c",
+        "text": "(−2) + (+9) + (−5)",
+        "misconception": null
+      }
+    ],
+    "answer": {
+      "value": "c"
+    },
+    "solution_steps": [
+      "Dans −2 + 9 − 5, chaque signe est celui du terme qui le suit : les termes sont −2, +9 et −5.",
+      "On écrit chaque terme entre parenthèses avec son signe, et on les relie par des additions : (−2) + (+9) + (−5).",
+      "Vérification : les deux écritures valent 2. L'écriture (−2) + (+9) − (+5) conviendrait également, car soustraire (+5), c'est ajouter (−5).",
+      "La bonne réponse est c."
+    ],
+    "hint": "Repère les trois termes de −2 + 9 − 5, chacun avec son signe.",
+    "estimated_duration_s": 90,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, 5e : simplifier l'écriture de sommes comportant des parenthèses."
+  },
+  {
+    "id": "EX-B046-E-02",
+    "skill_id": "B046",
+    "level": "entrainement",
+    "type": "numerique",
+    "statement": "Mila écrit (−8) − (−3) + (+2,5) sous forme simplifiée, puis calcule.\n\nQuel résultat doit-elle trouver ?",
+    "image": null,
+    "answer": {
+      "value": -2.5
+    },
+    "solution_steps": [
+      "− (−3) : soustraire (−3), c'est ajouter (+3). Dans l'écriture simplifiée : + 3.",
+      "+ (+2,5) s'écrit + 2,5. On obtient −8 + 3 + 2,5.",
+      "On calcule de gauche à droite : −8 + 3 = −5, puis −5 + 2,5 = −2,5.",
+      "Mila doit trouver **−2,5**. Piège : écrire −8 − 3 + 2,5, en gardant le signe − devant 3, donne −8,5."
+    ],
+    "hint": "Que devient « − (−3) » dans l'écriture simplifiée ?",
+    "estimated_duration_s": 90,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, 5e : simplifier l'écriture de sommes comportant des parenthèses."
+  },
+  {
+    "id": "EX-B046-M-01",
+    "skill_id": "B046",
+    "level": "maitrise",
+    "type": "qcm",
+    "statement": "Quelle est l'écriture simplifiée de (−2,5) − (−4) − (+1,5) + (−3) ?",
+    "image": null,
+    "choices": [
+      {
+        "key": "a",
+        "text": "−2,5 − 4 − 1,5 − 3",
+        "misconception": "L'élève traite − (−4) comme − (+4) : il garde le signe de la soustraction et oublie celui du nombre soustrait, et écrit − 4 au lieu de + 4. Cette écriture vaut −11 au lieu de −3."
+      },
+      {
+        "key": "b",
+        "text": "2,5 + 4 + 1,5 + 3",
+        "misconception": "L'élève supprime tous les signes en même temps que les parenthèses : il ne garde que les distances à zéro."
+      },
+      {
+        "key": "c",
+        "text": "−2,5 + 4 + 1,5 − 3",
+        "misconception": "L'élève croit que soustraire, c'est toujours ajouter : il transforme − (+1,5) en + 1,5 comme − (−4) en + 4, au lieu d'ajouter l'opposé de (+1,5), qui est (−1,5). Cette écriture vaut 0 au lieu de −3."
+      },
+      {
+        "key": "d",
+        "text": "−2,5 + 4 − 1,5 − 3",
+        "misconception": null
+      }
+    ],
+    "answer": {
+      "value": "d"
+    },
+    "solution_steps": [
+      "On traite chaque terme. (−2,5), en tête, s'écrit −2,5.",
+      "− (−4) : soustraire (−4), c'est ajouter (+4). On écrit + 4.",
+      "− (+1,5) : soustraire (+1,5), c'est ajouter (−1,5). On écrit − 1,5. Et + (−3) s'écrit − 3.",
+      "Écriture simplifiée : −2,5 + 4 − 1,5 − 3. Les deux écritures valent −3. La bonne réponse est d."
+    ],
+    "hint": "Transforme chaque soustraction en addition de l'opposé, puis supprime les parenthèses.",
+    "estimated_duration_s": 120,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, 5e : simplifier l'écriture de sommes comportant des parenthèses."
+  },
+  {
+    "id": "EX-B046-M-02",
+    "skill_id": "B046",
+    "level": "maitrise",
+    "type": "vrai_faux",
+    "statement": "Sami écrit : 6 − −4 = 10.\n\nVrai ou faux : cette écriture est correcte.",
+    "image": null,
+    "answer": {
+      "value": false
+    },
+    "solution_steps": [
+      "Le résultat est juste : 6 − (−4) = 6 + 4 = 10.",
+      "Mais l'écriture ne l'est pas : deux signes, « − − », se suivent. On ne sait plus lequel est l'opération et lequel est le signe du nombre.",
+      "Quand deux signes se suivent, les parenthèses sont indispensables : on écrit 6 − (−4) = 10, ou, en écriture simplifiée, 6 + 4 = 10.",
+      "L'affirmation est **fausse** : un résultat juste ne suffit pas, l'écriture doit avoir un sens."
+    ],
+    "hint": "Regarde les signes placés juste devant le 4 : combien y en a-t-il ?",
+    "estimated_duration_s": 90,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, 5e : connaitre et justifier les situations dans lesquelles des parenthèses sont indispensables au sens des écritures."
+  }
+]

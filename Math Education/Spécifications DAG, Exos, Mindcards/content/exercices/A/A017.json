@@ -1,0 +1,174 @@
+[
+  {
+    "id": "EX-A017-D-01",
+    "skill_id": "A017",
+    "level": "decouverte",
+    "type": "numerique",
+    "statement": "Un phare clignote toutes les 15 secondes, un autre toutes les 25 secondes. Ils viennent de clignoter ensemble.\n\nDans combien de secondes clignoteront-ils de nouveau ensemble ?",
+    "image": null,
+    "answer": {
+      "value": 75,
+      "unit": "s",
+      "accepted": [
+        "1 min 15 s"
+      ]
+    },
+    "solution_steps": [
+      "Le premier phare clignote au bout de 15, 30, 45, 60, 75, 90… secondes : ce sont les multiples de 15.",
+      "Le second clignote au bout de 25, 50, 75, 100… secondes : ce sont les multiples de 25.",
+      "Ils clignotent ensemble quand le nombre de secondes est un multiple de 15 et de 25 à la fois. Le premier nombre présent dans les deux listes est 75.",
+      "Réponse : dans **75 secondes**. Vérification : 75 = 15 × 5 et 75 = 25 × 3. Le premier phare aura clignoté 5 fois, le second 3 fois.",
+      "15 × 25 = 375 est aussi un multiple commun, mais ce n'est pas le premier : les phares se sont déjà retrouvés au bout de 75, 150, 225 et 300 secondes."
+    ],
+    "hint": "Écris les multiples de 15, puis ceux de 25. Quel est le premier nombre présent dans les deux listes ?",
+    "estimated_duration_s": 90,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, Nombres et calculs, présentation : « Ces notions se prêtent particulièrement à une approche interdisciplinaire par l'étude des problématiques liées au calendrier, à l'informatique, aux engrenages, à la conjonction de phénomènes périodiques » ; classe de 5e : « Utiliser les notions de multiples et diviseurs. »"
+  },
+  {
+    "id": "EX-A017-D-02",
+    "skill_id": "A017",
+    "level": "decouverte",
+    "type": "qcm",
+    "statement": "Un fleuriste a 24 roses et 36 tulipes. Il fait des bouquets tous identiques et utilise toutes ses fleurs.\n\nParmi ces nombres de bouquets, lequel est possible ?",
+    "image": null,
+    "choices": [
+      {
+        "key": "a",
+        "text": "6 bouquets",
+        "misconception": null
+      },
+      {
+        "key": "b",
+        "text": "8 bouquets",
+        "misconception": "L'élève ne vérifie que les roses : 24 = 8 × 3, chaque bouquet aurait 3 roses. Mais 36 n'est pas dans la table de 8 (8 × 4 = 32, 8 × 5 = 40) : il resterait des tulipes."
+      },
+      {
+        "key": "c",
+        "text": "9 bouquets",
+        "misconception": "L'élève ne vérifie que les tulipes : 36 = 9 × 4, chaque bouquet aurait 4 tulipes. Mais 24 n'est pas dans la table de 9 (9 × 2 = 18, 9 × 3 = 27) : il resterait des roses."
+      }
+    ],
+    "answer": {
+      "value": "a"
+    },
+    "solution_steps": [
+      "Pour que les bouquets soient identiques sans reste, le nombre de bouquets doit diviser 24 (les roses) **et** 36 (les tulipes).",
+      "6 divise 24 (24 = 6 × 4) et 36 (36 = 6 × 6) : 6 bouquets de 4 roses et 6 tulipes, c'est possible.",
+      "8 divise 24, mais pas 36. 9 divise 36, mais pas 24. Il faut un diviseur commun aux deux nombres."
+    ],
+    "hint": "Le nombre de bouquets doit partager les roses sans reste, et aussi les tulipes sans reste.",
+    "estimated_duration_s": 75,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, Nombres et calculs, présentation : « Les multiples et les diviseurs sont utilisés en lien avec les fractions, mais également dans le cadre de résolution de problèmes » ; classe de 5e : « Utiliser les notions de multiples et diviseurs. »"
+  },
+  {
+    "id": "EX-A017-E-01",
+    "skill_id": "A017",
+    "level": "entrainement",
+    "type": "numerique",
+    "statement": "Pour un goûter, on a 48 crêpes et 72 gaufres. On prépare des assiettes identiques en utilisant tout.\n\nQuel est le plus grand nombre d'assiettes possible ?",
+    "image": null,
+    "answer": {
+      "value": 24,
+      "accepted": [
+        "24 assiettes"
+      ]
+    },
+    "solution_steps": [
+      "Le nombre d'assiettes doit diviser 48 et 72 : c'est un diviseur commun à 48 et à 72.",
+      "Diviseurs de 48 : 1, 2, 3, 4, 6, 8, 12, 16, 24, 48.",
+      "On les teste sur 72 en partant du plus grand. 48 ne divise pas 72 (48 × 2 = 96). 24 divise 72 : 72 = 24 × 3.",
+      "Le plus grand nombre d'assiettes est **24**. Chaque assiette porte 2 crêpes (48 = 24 × 2) et 3 gaufres (72 = 24 × 3)."
+    ],
+    "hint": "Écris les diviseurs de 48, puis cherche le plus grand qui divise aussi 72.",
+    "estimated_duration_s": 150,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, Nombres et calculs, présentation : « Les multiples et les diviseurs sont utilisés en lien avec les fractions, mais également dans le cadre de résolution de problèmes » ; classe de 5e : « Utiliser les notions de multiples et diviseurs. »"
+  },
+  {
+    "id": "EX-A017-E-02",
+    "skill_id": "A017",
+    "level": "entrainement",
+    "type": "vrai_faux",
+    "statement": "Inès fait un tour de piste en 10 min, Paul en 15 min. Ils partent ensemble.\n\nVrai ou faux : ils se retrouveront sur la ligne de départ pour la première fois après 150 min.",
+    "image": null,
+    "answer": {
+      "value": false
+    },
+    "solution_steps": [
+      "Inès passe sur la ligne au bout de 10, 20, 30, 40… minutes : les multiples de 10.",
+      "Paul passe sur la ligne au bout de 15, 30, 45… minutes : les multiples de 15.",
+      "Le premier multiple commun est 30 : ils se retrouvent sur la ligne au bout de **30 min**, Inès après 3 tours et Paul après 2 tours.",
+      "La phrase est fausse. 150 = 10 × 15 est bien un multiple commun, mais pas le premier : multiplier les deux durées ne donne pas toujours le plus petit."
+    ],
+    "hint": "Écris les instants où Inès passe sur la ligne, puis ceux de Paul. Quel est le premier instant commun ?",
+    "estimated_duration_s": 120,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, Nombres et calculs, présentation : « Ces notions se prêtent particulièrement à une approche interdisciplinaire par l'étude des problématiques liées au calendrier, à l'informatique, aux engrenages, à la conjonction de phénomènes périodiques » ; classe de 5e : « Utiliser les notions de multiples et diviseurs. »"
+  },
+  {
+    "id": "EX-A017-M-01",
+    "skill_id": "A017",
+    "level": "maitrise",
+    "type": "numerique",
+    "statement": "Deux roues dentées s'engrènent : la petite a 18 dents, la grande 30. Deux dents marquées se touchent.\n\nCombien de tours fera la petite roue pour qu'elles se touchent de nouveau ?",
+    "image": null,
+    "answer": {
+      "value": 5,
+      "accepted": [
+        "5 tours"
+      ]
+    },
+    "solution_steps": [
+      "Quand les roues tournent, le même nombre de dents passe au point de contact sur chacune.",
+      "Les dents marquées se retrouvent quand ce nombre de dents est un multiple de 18 (la petite a fait des tours complets) et de 30 (la grande aussi).",
+      "Multiples de 30 : 30, 60, 90… 30 et 60 ne sont pas dans la table de 18 (18 × 1 = 18, 18 × 2 = 36, 18 × 3 = 54, 18 × 4 = 72). 90 l'est : 90 = 18 × 5.",
+      "Il passe donc 90 dents : la petite roue a fait **5 tours** (90 = 18 × 5) et la grande 3 tours (90 = 30 × 3).",
+      "La question porte sur les tours de la petite roue, pas sur le nombre de dents : la réponse est 5, pas 90."
+    ],
+    "hint": "Compte en dents : après combien de dents la petite roue a-t-elle fait un nombre entier de tours, et la grande aussi ?",
+    "estimated_duration_s": 180,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, Nombres et calculs, présentation : « Ces notions se prêtent particulièrement à une approche interdisciplinaire par l'étude des problématiques liées au calendrier, à l'informatique, aux engrenages, à la conjonction de phénomènes périodiques » ; classe de 5e : « Utiliser les notions de multiples et diviseurs. »"
+  },
+  {
+    "id": "EX-A017-M-02",
+    "skill_id": "A017",
+    "level": "maitrise",
+    "type": "qcm",
+    "statement": "Un club compte entre 100 et 150 membres. Qu'on les range par 6, par 8 ou par 10, il n'en reste jamais.\n\nCombien de membres compte le club ?",
+    "image": null,
+    "choices": [
+      {
+        "key": "a",
+        "text": "144",
+        "misconception": "L'élève ne vérifie que deux des trois conditions : 144 = 6 × 24 = 8 × 18, mais 144 ne finit pas par 0, il n'est pas un multiple de 10."
+      },
+      {
+        "key": "b",
+        "text": "120",
+        "misconception": null
+      },
+      {
+        "key": "c",
+        "text": "150",
+        "misconception": "L'élève ne vérifie que deux des trois conditions : 150 = 6 × 25 = 10 × 15, mais 150 n'est pas dans la table de 8 (8 × 18 = 144, 8 × 19 = 152)."
+      }
+    ],
+    "answer": {
+      "value": "b"
+    },
+    "solution_steps": [
+      "Le nombre de membres doit être un multiple de 6, de 8 et de 10 à la fois.",
+      "On part des multiples de 10 entre 100 et 150 : 100, 110, 120, 130, 140, 150.",
+      "Lequel est dans la table de 8 ? 8 × 15 = 120. Les autres ne le sont pas : 8 × 12 = 96, 8 × 13 = 104, 8 × 14 = 112, 8 × 16 = 128, 8 × 17 = 136, 8 × 18 = 144, 8 × 19 = 152.",
+      "120 est aussi dans la table de 6 : 120 = 6 × 20. Le club compte **120** membres.",
+      "144 et 150 ne vérifient chacun que deux conditions sur trois."
+    ],
+    "hint": "Commence par les multiples de 10 entre 100 et 150 : il n'y en a que six. Garde ceux qui sont dans la table de 8, puis de 6.",
+    "estimated_duration_s": 180,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, Nombres et calculs, présentation : « Les multiples et les diviseurs sont utilisés en lien avec les fractions, mais également dans le cadre de résolution de problèmes » ; classe de 5e : « Utiliser les notions de multiples et diviseurs. »"
+  }
+]

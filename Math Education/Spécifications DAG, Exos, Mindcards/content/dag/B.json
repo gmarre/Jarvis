@@ -284,6 +284,47 @@
     ]
   },
   {
+    "id": "B011",
+    "domain": "B",
+    "domain_name": "Calcul numérique",
+    "label": "Priorités opératoires",
+    "description": "Calculer une expression qui mêle les quatre opérations sur des nombres positifs, avec ou sans parenthèses, en effectuant d'abord les calculs entre parenthèses, puis les multiplications et les divisions, puis les additions et les soustractions, de gauche à droite à priorité égale : 7 + 3 × 5 = 22 ; 20 − 8 ÷ 4 = 18. Nommer le calcul (somme, différence, produit, quotient) d'après la dernière opération effectuée, distinguer termes et facteurs. L'erreur type est de calculer de gauche à droite sans tenir compte des priorités (7 + 3 × 5 = 50). Figure : aucune.",
+    "prerequisites": [
+      "B012",
+      "B039"
+    ],
+    "difficulty": 4,
+    "school_level": "5e",
+    "validation_test": "Calcule 7 + 3 × 5, puis 20 − 8 ÷ 4, puis (7 + 3) × 5. Le calcul 4 × 6 + 2 est-il une somme ou un produit ?",
+    "mastery_threshold": {
+      "required": 3,
+      "out_of": 4
+    },
+    "exercise_ids": [
+      "EX-B011-D-01",
+      "EX-B011-D-02",
+      "EX-B011-E-01",
+      "EX-B011-E-02",
+      "EX-B011-M-01",
+      "EX-B011-M-02"
+    ],
+    "mindmap_id": "MM-B-06",
+    "programme_ref": [
+      {
+        "source": "Cycle 4, classe de 5e, Nombres et calculs, Opérations, Objectifs d'apprentissage",
+        "quote": "Connaitre et utiliser les priorités opératoires."
+      },
+      {
+        "source": "Cycle 4, classe de 5e, Nombres et calculs, Opérations, Objectifs d'apprentissage",
+        "quote": "Nommer un calcul, distinguer sommes et produits, termes et facteurs."
+      },
+      {
+        "source": "Cycle 4, classe de 5e, Nombres et calculs, Opérations, Objectifs d'apprentissage",
+        "quote": "Enchainer des opérations."
+      }
+    ]
+  },
+  {
     "id": "B012",
     "domain": "B",
     "domain_name": "Calcul numérique",
@@ -766,6 +807,301 @@
       {
         "source": "Cycle 2, Cours élémentaire deuxième année, La résolution de problèmes",
         "quote": "L'élève comprend le sens des locutions « fois plus » et « fois moins » et les distingue des locutions « de plus » et « de moins » qui apparaissent dans les problèmes de comparaison additive."
+      }
+    ]
+  },
+  {
+    "id": "B044",
+    "domain": "B",
+    "domain_name": "Calcul numérique",
+    "label": "Additionner deux décimaux relatifs",
+    "description": "Additionner deux nombres décimaux relatifs : de même signe, on ajoute les distances à zéro et on garde le signe ; de signes contraires, on soustrait la plus petite distance à zéro de la plus grande et on prend le signe du nombre le plus éloigné de zéro ; la somme de deux nombres opposés est nulle. Le sens vient d'abord de situations (gains et pertes, température qui monte ou descend) et de déplacements sur la droite graduée. Écritures avec parenthèses : (−4) + (+7) ; (−2,5) + (−1,3). L'erreur type est d'ajouter les distances à zéro quand les signes sont contraires ((−4) + (+7) = −11 ou 11). Figure utile : droite graduée avec un déplacement fléché depuis le premier nombre.",
+    "prerequisites": [
+      "A022",
+      "D004",
+      "D003"
+    ],
+    "difficulty": 4,
+    "school_level": "5e",
+    "validation_test": "Calcule (−4) + (+7), puis (−2,5) + (−1,3), puis (+6) + (−6).",
+    "mastery_threshold": {
+      "required": 3,
+      "out_of": 4
+    },
+    "exercise_ids": [
+      "EX-B044-D-01",
+      "EX-B044-D-02",
+      "EX-B044-E-01",
+      "EX-B044-E-02",
+      "EX-B044-M-01",
+      "EX-B044-M-02"
+    ],
+    "mindmap_id": "MM-B-05",
+    "programme_ref": [
+      {
+        "source": "Cycle 4, classe de 5e, Nombres et calculs, Nombres relatifs, Objectifs d'apprentissage",
+        "quote": "Additionner deux nombres décimaux relatifs."
+      }
+    ]
+  },
+  {
+    "id": "B045",
+    "domain": "B",
+    "domain_name": "Calcul numérique",
+    "label": "Soustraire deux décimaux relatifs",
+    "description": "Savoir que soustraire un nombre relatif revient à ajouter son opposé : (+3) − (−5) = (+3) + (+5) = 8 ; calculer la différence de deux décimaux relatifs, et l'interpréter comme un écart (de −4 °C à 6 °C, la température a augmenté de 6 − (−4) = 10 degrés). La règle se justifie par l'addition à trou : (−5) + ... = (+3) se complète en calculant (+3) − (−5). L'erreur type est de changer le signe de l'opération sans changer celui du nombre, ou de soustraire les distances à zéro. Figure utile : droite graduée verticale (thermomètre) où l'écart se compte en graduations.",
+    "prerequisites": [
+      "B044"
+    ],
+    "difficulty": 5,
+    "school_level": "5e",
+    "validation_test": "Calcule (+3) − (−5), puis (−2) − (+6), puis (−1,5) − (−4).",
+    "mastery_threshold": {
+      "required": 3,
+      "out_of": 4
+    },
+    "exercise_ids": [
+      "EX-B045-D-01",
+      "EX-B045-D-02",
+      "EX-B045-E-01",
+      "EX-B045-E-02",
+      "EX-B045-M-01",
+      "EX-B045-M-02"
+    ],
+    "mindmap_id": "MM-B-05",
+    "programme_ref": [
+      {
+        "source": "Cycle 4, classe de 5e, Nombres et calculs, Nombres relatifs, Objectifs d'apprentissage",
+        "quote": "Soustraire deux nombres décimaux relatifs."
+      },
+      {
+        "source": "Cycle 4, classe de 5e, Nombres et calculs, Nombres relatifs, Automatismes",
+        "quote": "Savoir que pour compléter une addition à trou, on utilise une soustraction : 2 + ... = 7 se complète en calculant 7 – 2."
+      }
+    ]
+  },
+  {
+    "id": "B046",
+    "domain": "B",
+    "domain_name": "Calcul numérique",
+    "label": "Sommes de relatifs : parenthèses et écriture simplifiée",
+    "description": "Passer de l'écriture avec parenthèses d'une somme de relatifs à l'écriture simplifiée, et inversement : (−3) + (+5) − (−2) s'écrit −3 + 5 + 2 ; savoir que, dans l'écriture simplifiée, chaque signe est celui du terme qui le suit, et que les parenthèses sont indispensables quand deux signes se suivent : on écrit 4 − (−3), jamais 4 − −3. Reconnaître des écritures égales. Écrire une expression en saisie libre ne se fait pas à l'écran : l'élève choisit l'écriture simplifiée correcte, dit si une écriture est correcte (vrai ou faux), ou calcule la valeur. Figure : aucune.",
+    "prerequisites": [
+      "B045",
+      "B012"
+    ],
+    "difficulty": 5,
+    "school_level": "5e",
+    "validation_test": "Laquelle de ces écritures est égale à (−3) + (+5) − (−2) : −3 + 5 − 2 ; −3 + 5 + 2 ; 3 + 5 + 2 ? Pourquoi écrit-on 4 − (−3) avec des parenthèses ?",
+    "mastery_threshold": {
+      "required": 3,
+      "out_of": 4
+    },
+    "exercise_ids": [
+      "EX-B046-D-01",
+      "EX-B046-D-02",
+      "EX-B046-E-01",
+      "EX-B046-E-02",
+      "EX-B046-M-01",
+      "EX-B046-M-02"
+    ],
+    "mindmap_id": "MM-B-05",
+    "programme_ref": [
+      {
+        "source": "Cycle 4, classe de 5e, Nombres et calculs, Nombres relatifs, Objectifs d'apprentissage",
+        "quote": "Simplifier l'écriture de sommes comportant des parenthèses."
+      },
+      {
+        "source": "Cycle 4, classe de 5e, Nombres et calculs, Nombres relatifs, Objectifs d'apprentissage",
+        "quote": "Connaitre et justifier les situations dans lesquelles des parenthèses sont indispensables au sens des écritures."
+      }
+    ]
+  },
+  {
+    "id": "B047",
+    "domain": "B",
+    "domain_name": "Calcul numérique",
+    "label": "Enchaîner additions et soustractions de relatifs",
+    "description": "Calculer une suite de quatre à six additions et soustractions de décimaux relatifs, avec ou sans parenthèses : transformer les soustractions en additions des opposés, puis regrouper les termes positifs d'un côté et les termes négatifs de l'autre, ou les opposés qui s'annulent ; ou calculer de gauche à droite. Exemple : −7 + 4 − (−3) − 2,5 + 7. L'erreur type est de perdre un signe en regroupant, ou de soustraire deux fois. Figure : aucune.",
+    "prerequisites": [
+      "B046"
+    ],
+    "difficulty": 5,
+    "school_level": "5e",
+    "validation_test": "Calcule −7 + 4 − (−3) − 2,5 + 7.",
+    "mastery_threshold": {
+      "required": 3,
+      "out_of": 4
+    },
+    "exercise_ids": [
+      "EX-B047-D-01",
+      "EX-B047-D-02",
+      "EX-B047-E-01",
+      "EX-B047-E-02",
+      "EX-B047-M-01",
+      "EX-B047-M-02"
+    ],
+    "mindmap_id": "MM-B-05",
+    "programme_ref": [
+      {
+        "source": "Cycle 4, classe de 5e, Nombres et calculs, Nombres relatifs, Objectifs d'apprentissage",
+        "quote": "Enchainer additions et soustractions de décimaux relatifs."
+      },
+      {
+        "source": "Cycle 4, classe de 5e, Nombres et calculs, Nombres relatifs, Objectifs d'apprentissage",
+        "quote": "Additionner plusieurs nombres décimaux relatifs."
+      }
+    ]
+  },
+  {
+    "id": "B048",
+    "domain": "B",
+    "domain_name": "Calcul numérique",
+    "label": "Problèmes d'addition et de soustraction de relatifs",
+    "description": "Résoudre des problèmes de températures, d'altitudes, de soldes bancaires, de points de jeu ou de dates qui demandent une ou plusieurs additions ou soustractions de relatifs : variation (de −3,5 °C à 2 °C), état final après plusieurs variations, écart entre deux altitudes. Traduire l'énoncé par un calcul sur des relatifs, puis interpréter le signe du résultat (une variation négative est une baisse). Pour les dates, éviter les écarts qui traversent l'an 1 : il n'y a pas d'année zéro, et le calcul donnerait un an de trop. Figure utile : droite graduée verticale (thermomètre, échelle d'altitude).",
+    "prerequisites": [
+      "B047"
+    ],
+    "difficulty": 5,
+    "school_level": "5e",
+    "validation_test": "À 6 h, il fait −3,5 °C ; à midi, il fait 2 °C. De combien de degrés la température a-t-elle augmenté ? Un plongeur à −12 m remonte de 5 m : à quelle altitude est-il ?",
+    "mastery_threshold": {
+      "required": 3,
+      "out_of": 4
+    },
+    "exercise_ids": [
+      "EX-B048-D-01",
+      "EX-B048-D-02",
+      "EX-B048-E-01",
+      "EX-B048-E-02",
+      "EX-B048-M-01",
+      "EX-B048-M-02"
+    ],
+    "mindmap_id": "MM-B-05",
+    "programme_ref": [
+      {
+        "source": "Cycle 4, classe de 5e, Nombres et calculs, Nombres relatifs, Objectifs d'apprentissage",
+        "quote": "Résoudre des problèmes mobilisant addition et soustraction de nombres décimaux relatifs."
+      },
+      {
+        "source": "Cycle 4, classe de 5e, Nombres et calculs, Nombres relatifs, Objectifs d'apprentissage",
+        "quote": "Utiliser les nombres relatifs pour représenter des grandeurs observables qui peuvent prendre des valeurs inférieures à zéro (température, temps, altitude, etc.), en particulier dans le cadre de la résolution de problèmes."
+      }
+    ]
+  },
+  {
+    "id": "B049",
+    "domain": "B",
+    "domain_name": "Calcul numérique",
+    "label": "Multiplier deux décimaux relatifs",
+    "description": "Calculer le produit de deux nombres décimaux relatifs : d'abord quand un seul facteur est négatif, en voyant la multiplication comme une addition répétée (4 × (−3) = (−3) + (−3) + (−3) + (−3) = −12) ; puis quand les deux facteurs sont négatifs, dont le produit est positif, ce que la distributivité justifie ((−3) × (−4) + (−3) × 4 = (−3) × 0 = 0). En déduire la règle des signes d'un produit de deux facteurs. L'erreur type est de transposer la règle de l'addition : « deux négatifs donnent un négatif », (−3) × (−4) = −12. Figure : aucune.",
+    "prerequisites": [
+      "B044",
+      "D006",
+      "B011"
+    ],
+    "difficulty": 5,
+    "school_level": "4e",
+    "validation_test": "Calcule 4 × (−3), puis (−2,5) × (−4), puis (−0,5) × 6.",
+    "mastery_threshold": {
+      "required": 3,
+      "out_of": 4
+    },
+    "exercise_ids": [
+      "EX-B049-D-01",
+      "EX-B049-D-02",
+      "EX-B049-E-01",
+      "EX-B049-E-02",
+      "EX-B049-M-01",
+      "EX-B049-M-02"
+    ],
+    "mindmap_id": "MM-B-06",
+    "programme_ref": [
+      {
+        "source": "Cycle 4, classe de 4e, Nombres et calculs, Opérations sur les nombres relatifs, Objectifs d'apprentissage",
+        "quote": "Multiplier deux nombres relatifs : d'abord dans le cas où un seul des facteurs est négatif, puis, grâce à la distributivité, dans le cas où les deux facteurs sont négatifs."
+      },
+      {
+        "source": "Cycle 4, classe de 4e, Nombres et calculs, Opérations sur les nombres relatifs, Automatismes",
+        "quote": "Multiplication comme addition itérée : 3 + 3 + 3 + 3 = 4 × 3."
+      }
+    ]
+  },
+  {
+    "id": "B050",
+    "domain": "B",
+    "domain_name": "Calcul numérique",
+    "label": "Diviser deux décimaux relatifs",
+    "description": "Calculer le quotient de deux nombres relatifs quand il est décimal, avec la même règle des signes que pour le produit : (−36) ÷ (−9) = 4 ; (−7,5) ÷ 3 = −2,5 ; savoir que diviser, c'est trouver le facteur manquant d'une multiplication à trou ((−4) × ... = 20 se complète par 20 ÷ (−4) = −5), et qu'on ne divise jamais par zéro. Diviseur entier, pour rester dans ce que l'élève sait poser ; les quotients non décimaux et l'écriture fractionnaire des relatifs sont à l'étape 6. Figure : aucune.",
+    "prerequisites": [
+      "B049",
+      "D007"
+    ],
+    "difficulty": 5,
+    "school_level": "4e",
+    "validation_test": "Calcule (−36) ÷ (−9), puis (−7,5) ÷ 3, puis 20 ÷ (−4).",
+    "mastery_threshold": {
+      "required": 3,
+      "out_of": 4
+    },
+    "exercise_ids": [
+      "EX-B050-D-01",
+      "EX-B050-D-02",
+      "EX-B050-E-01",
+      "EX-B050-E-02",
+      "EX-B050-M-01",
+      "EX-B050-M-02"
+    ],
+    "mindmap_id": "MM-B-06",
+    "programme_ref": [
+      {
+        "source": "Cycle 4, classe de 4e, Nombres et calculs, Opérations sur les nombres relatifs, Objectifs d'apprentissage",
+        "quote": "Diviser deux nombres relatifs."
+      },
+      {
+        "source": "Cycle 4, classe de 4e, Nombres et calculs, Opérations sur les nombres relatifs, Automatismes",
+        "quote": "Compléter des multiplications à trou : 5 × ... = 3 ; faire le lien entre multiplication et division."
+      }
+    ]
+  },
+  {
+    "id": "B051",
+    "domain": "B",
+    "domain_name": "Calcul numérique",
+    "label": "Enchaînements d'opérations avec des relatifs",
+    "description": "Calculer une expression qui enchaîne les quatre opérations sur des relatifs en respectant les priorités : −5 + 3 × (−4) = −17 ; (−2) × (6 − 9) = 6 ; trouver le signe d'un produit de plusieurs facteurs d'après le nombre de facteurs négatifs ; appliquer un programme de calcul à un nombre négatif (choisir −3, le multiplier par −2, ajouter 5 : on obtient 11), et nommer un calcul (somme, produit, quotient) d'après sa dernière opération. L'erreur type est d'appliquer la règle des signes du produit à une somme (−5 + (−12) = 17). Figure : aucune.",
+    "prerequisites": [
+      "B050",
+      "B047"
+    ],
+    "difficulty": 5,
+    "school_level": "4e",
+    "validation_test": "Calcule −5 + 3 × (−4), puis (−2) × (6 − 9). On choisit −3, on le multiplie par −2, puis on ajoute 5 : quel résultat obtient-on ?",
+    "mastery_threshold": {
+      "required": 3,
+      "out_of": 4
+    },
+    "exercise_ids": [
+      "EX-B051-D-01",
+      "EX-B051-D-02",
+      "EX-B051-E-01",
+      "EX-B051-E-02",
+      "EX-B051-M-01",
+      "EX-B051-M-02"
+    ],
+    "mindmap_id": "MM-B-06",
+    "programme_ref": [
+      {
+        "source": "Cycle 4, classe de 4e, Nombres et calculs, Opérations sur les nombres relatifs, Objectifs d'apprentissage",
+        "quote": "Savoir calculer un enchainement d'opérations avec des nombres relatifs."
+      },
+      {
+        "source": "Cycle 4, classe de 4e, Nombres et calculs, Opérations sur les nombres relatifs, Objectifs d'apprentissage",
+        "quote": "Utiliser le vocabulaire (somme, quotient, etc.) à partir d'un enchainement d'opérations dans un programme de calcul et inversement."
+      },
+      {
+        "source": "Cycle 4, classe de 4e, Nombres et calculs, Opérations sur les nombres relatifs, Automatismes",
+        "quote": "Manipulation de sommes et différences de nombre relatifs."
       }
     ]
   }

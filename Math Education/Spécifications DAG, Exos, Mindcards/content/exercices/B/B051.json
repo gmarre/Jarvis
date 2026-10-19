@@ -1,0 +1,157 @@
+[
+  {
+    "id": "EX-B051-D-01",
+    "skill_id": "B051",
+    "level": "decouverte",
+    "type": "numerique",
+    "statement": "Calcule $-7 + 2 \\times (-3)$.",
+    "image": null,
+    "answer": {
+      "value": -13
+    },
+    "solution_steps": [
+      "La multiplication est prioritaire : $2 \\times (-3) = -6$.",
+      "Il reste une somme : $-7 + (-6)$. Les deux termes sont négatifs : on ajoute les distances à zéro, $7 + 6 = 13$, et on garde le signe moins.",
+      "$-7 + 2 \\times (-3) = -13$.",
+      "Attention : la règle « deux négatifs donnent un positif » vaut pour le produit, pas pour la somme $-7 + (-6)$."
+    ],
+    "hint": "Commence par la multiplication.",
+    "estimated_duration_s": 45,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, classe de 4e, Nombres et calculs, Opérations sur les nombres relatifs : « Savoir calculer un enchainement d'opérations avec des nombres relatifs. »"
+  },
+  {
+    "id": "EX-B051-D-02",
+    "skill_id": "B051",
+    "level": "decouverte",
+    "type": "qcm",
+    "statement": "Programme de calcul : choisir un nombre ; le multiplier par −3 ; ajouter 4 au résultat.\n\nQuelle expression donne le résultat quand on choisit −2 ?",
+    "image": null,
+    "choices": [
+      {
+        "key": "a",
+        "text": "$(-2) \\times (-3 + 4)$",
+        "misconception": "L'élève ajoute 4 au nombre $-3$ au lieu de l'ajouter au résultat de la multiplication : les parenthèses changent l'ordre des étapes."
+      },
+      {
+        "key": "b",
+        "text": "$(-2 + 4) \\times (-3)$",
+        "misconception": "L'élève effectue les étapes dans le désordre : il ajoute 4 avant de multiplier par −3. Cette expression vaut $2 \\times (-3) = -6$, et non 10."
+      },
+      {
+        "key": "c",
+        "text": "$(-2) \\times (-3) + 4$",
+        "misconception": null
+      }
+    ],
+    "answer": {
+      "value": "c"
+    },
+    "solution_steps": [
+      "Première étape : on multiplie le nombre choisi par $-3$, ce qui s'écrit $(-2) \\times (-3)$.",
+      "Deuxième étape : on ajoute 4 au résultat. Comme la multiplication est prioritaire, inutile de parenthèses : $(-2) \\times (-3) + 4$.",
+      "Ce programme donne $6 + 4 = 10$. La bonne réponse est c."
+    ],
+    "hint": "Quelle est la dernière opération du programme ?",
+    "estimated_duration_s": 60,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, classe de 4e, Nombres et calculs, Opérations sur les nombres relatifs : « Utiliser le vocabulaire (somme, quotient, etc.) à partir d'un enchainement d'opérations dans un programme de calcul et inversement. »"
+  },
+  {
+    "id": "EX-B051-E-01",
+    "skill_id": "B051",
+    "level": "entrainement",
+    "type": "numerique",
+    "statement": "Calcule $(-4) \\times (3 - 8) - 6$.",
+    "image": null,
+    "answer": {
+      "value": 14
+    },
+    "solution_steps": [
+      "On commence par les parenthèses : $3 - 8 = -5$.",
+      "Puis la multiplication : $(-4) \\times (-5) = 20$, positif car les deux facteurs sont négatifs.",
+      "Enfin la soustraction : $20 - 6 = 14$."
+    ],
+    "hint": "Parenthèses d'abord, puis multiplication, puis soustraction.",
+    "estimated_duration_s": 60,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, classe de 4e, Nombres et calculs, Opérations sur les nombres relatifs : « Savoir calculer un enchainement d'opérations avec des nombres relatifs. »"
+  },
+  {
+    "id": "EX-B051-E-02",
+    "skill_id": "B051",
+    "level": "entrainement",
+    "type": "vrai_faux",
+    "statement": "Sans calculer, Yanis affirme que $(-2) \\times (-1{,}5) \\times (-4) \\times 3$ est un nombre négatif.\n\nA-t-il raison ?",
+    "image": null,
+    "answer": {
+      "value": true
+    },
+    "solution_steps": [
+      "Le signe d'un produit dépend du nombre de facteurs négatifs. Ici, il y en a trois : $-2$, $-1{,}5$ et $-4$.",
+      "Deux facteurs négatifs donnent un produit positif : $(-2) \\times (-1{,}5) = 3$. Le troisième facteur négatif rend le produit négatif : $3 \\times (-4) = -12$. Le facteur 3, positif, ne change pas le signe : $-12 \\times 3 = -36$.",
+      "Un nombre impair de facteurs négatifs donne un produit négatif. Yanis a **raison**."
+    ],
+    "hint": "Compte les facteurs négatifs.",
+    "estimated_duration_s": 50,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, classe de 4e, Nombres et calculs, Opérations sur les nombres relatifs : « Savoir calculer un enchainement d'opérations avec des nombres relatifs. »"
+  },
+  {
+    "id": "EX-B051-M-01",
+    "skill_id": "B051",
+    "level": "maitrise",
+    "type": "numerique",
+    "statement": "Programme de calcul : choisir un nombre ; lui soustraire 5 ; multiplier le résultat par le nombre choisi.\n\nQuel résultat obtient-on en choisissant −4 ?",
+    "image": null,
+    "answer": {
+      "value": 36
+    },
+    "solution_steps": [
+      "Première étape : $-4 - 5 = -9$.",
+      "Deuxième étape : on multiplie $-9$ par le nombre choisi, $-4$ : $(-9) \\times (-4) = 36$.",
+      "En une seule expression : $(-4 - 5) \\times (-4) = 36$. Les parenthèses sont indispensables : sans elles, la multiplication passerait avant la soustraction."
+    ],
+    "hint": "Fais les étapes dans l'ordre et note chaque résultat.",
+    "estimated_duration_s": 75,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, classe de 4e, Nombres et calculs, Opérations sur les nombres relatifs : « Utiliser le vocabulaire (somme, quotient, etc.) à partir d'un enchainement d'opérations dans un programme de calcul et inversement. »"
+  },
+  {
+    "id": "EX-B051-M-02",
+    "skill_id": "B051",
+    "level": "maitrise",
+    "type": "qcm",
+    "statement": "Quelle phrase décrit l'expression $(-6) + 18 \\div (-3)$ ?",
+    "image": null,
+    "choices": [
+      {
+        "key": "a",
+        "text": "C'est une somme ; elle vaut −12.",
+        "misconception": null
+      },
+      {
+        "key": "b",
+        "text": "C'est un quotient ; il vaut −4.",
+        "misconception": "L'élève calcule de gauche à droite : $(-6) + 18 = 12$, puis $12 \\div (-3) = -4$. Il prend alors la division pour la dernière opération."
+      },
+      {
+        "key": "c",
+        "text": "C'est une somme ; elle vaut 12.",
+        "misconception": "L'élève nomme bien le calcul et trouve $18 \\div (-3) = -6$, mais applique la règle des signes du produit à la somme : $(-6) + (-6)$ ne vaut pas 12."
+      }
+    ],
+    "answer": {
+      "value": "a"
+    },
+    "solution_steps": [
+      "La division est prioritaire : $18 \\div (-3) = -6$. La dernière opération est l'addition : l'expression est une **somme**.",
+      "$(-6) + (-6) = -12$ : deux termes négatifs, on ajoute les distances à zéro et on garde le signe moins.",
+      "La bonne réponse est a."
+    ],
+    "hint": "Quelle opération effectue-t-on en dernier ?",
+    "estimated_duration_s": 75,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, classe de 4e, Nombres et calculs, Opérations sur les nombres relatifs : « Utiliser le vocabulaire (somme, quotient, etc.) à partir d'un enchainement d'opérations dans un programme de calcul et inversement. »"
+  }
+]

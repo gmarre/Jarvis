@@ -1,0 +1,167 @@
+[
+  {
+    "id": "EX-A016-D-01",
+    "skill_id": "A016",
+    "level": "decouverte",
+    "type": "qcm",
+    "statement": "Un fleuriste fait des bouquets de 8 roses avec ses 96 roses, sans qu'il en reste : 96 = 8 × 12.\n\nQuelle phrase est juste ?",
+    "image": null,
+    "choices": [
+      {
+        "key": "a",
+        "text": "8 est un multiple de 96.",
+        "misconception": "L'élève inverse les rôles : c'est le grand nombre, 96, qui est dans la table de 8, et non 8 qui est dans la table de 96."
+      },
+      {
+        "key": "b",
+        "text": "96 est divisible par 8.",
+        "misconception": null
+      },
+      {
+        "key": "c",
+        "text": "96 est un diviseur de 8.",
+        "misconception": "L'élève inverse les rôles : un diviseur « rentre » un nombre entier de fois dans l'autre. Ici 8 rentre 12 fois dans 96 : c'est 8 le diviseur, et 96 ne rentre pas dans 8."
+      }
+    ],
+    "answer": {
+      "value": "b"
+    },
+    "solution_steps": [
+      "L'égalité 96 = 8 × 12 dit que 96 est dans la table de 8 : on fait 12 bouquets et il ne reste aucune rose.",
+      "Cette même égalité se dit de trois façons : « 96 est un multiple de 8 », « 8 est un diviseur de 96 », « 96 est divisible par 8 ».",
+      "La phrase juste est donc « 96 est divisible par 8 ».",
+      "Les deux autres phrases échangent les deux nombres : 8 n'est pas un multiple de 96, et 96 n'est pas un diviseur de 8.",
+      "La même égalité dit aussi que 12 est un diviseur de 96 : on pourrait faire 8 bouquets de 12 roses."
+    ],
+    "hint": "Dans 96 = 8 × 12, quel nombre est dans la table de 8 ?",
+    "estimated_duration_s": 60,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, classe de 5e, Nombres et calculs, Opérations : « Utiliser les notions de multiples et diviseurs. »"
+  },
+  {
+    "id": "EX-A016-D-02",
+    "skill_id": "A016",
+    "level": "decouverte",
+    "type": "vrai_faux",
+    "statement": "On pose la division euclidienne de 87 par 4 et on trouve : 87 = 4 × 21 + 3.\n\nVrai ou faux : 87 est un multiple de 4.",
+    "image": null,
+    "answer": {
+      "value": false
+    },
+    "solution_steps": [
+      "Dans 87 = 4 × 21 + 3, le quotient est 21 et le reste est 3.",
+      "Un nombre est un multiple de 4 quand la division euclidienne par 4 tombe juste, c'est-à-dire quand le reste est 0.",
+      "Ici le reste est 3, pas 0 : 87 n'est **pas** un multiple de 4. La phrase est fausse.",
+      "On le voit dans la table de 4 : 4 × 21 = 84 et 4 × 22 = 88. 87 est entre les deux, il n'est pas dans la table."
+    ],
+    "hint": "Regarde le reste de la division : est-il égal à 0 ?",
+    "estimated_duration_s": 60,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, classe de 5e, Nombres et calculs, Opérations, Automatismes : « Déterminer le quotient et le reste dans une division euclidienne, par exemple, savoir que 17 = 3 × 5 + 2. »"
+  },
+  {
+    "id": "EX-A016-E-01",
+    "skill_id": "A016",
+    "level": "entrainement",
+    "type": "numerique",
+    "statement": "Le nombre 60 s'écrit de plusieurs façons comme produit de deux entiers différents de 1, par exemple 2 × 30.\n\nCombien de façons y a-t-il en tout, sans tenir compte de l'ordre des facteurs ?",
+    "image": null,
+    "answer": {
+      "value": 5,
+      "accepted": [
+        "5 façons"
+      ]
+    },
+    "solution_steps": [
+      "On cherche les diviseurs de 60 en partant de 2, et on écrit à chaque fois le produit.",
+      "60 = 2 × 30 ; 60 = 3 × 20 ; 60 = 4 × 15 ; 60 = 5 × 12 ; 60 = 6 × 10.",
+      "7 ne convient pas : 7 × 8 = 56 et 7 × 9 = 63, on saute 60.",
+      "On peut s'arrêter : 8 × 8 = 64 dépasse 60. Les produits suivants, comme 10 × 6, sont ceux déjà trouvés écrits dans l'autre ordre.",
+      "Il y a **5** façons. On ne compte pas 1 × 60, puisque les deux facteurs doivent être différents de 1."
+    ],
+    "hint": "Teste 2, 3, 4, 5… : pour chacun, 60 est-il dans sa table ? Arrête-toi quand les produits reviennent dans l'autre ordre.",
+    "estimated_duration_s": 150,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, classe de 5e, Nombres et calculs, Opérations, Automatismes : « Utiliser les tables de multiplication pour factoriser des nombres entiers décomposables en produit de deux nombres différents de 1, par exemple, 21 = 3 × 7. »"
+  },
+  {
+    "id": "EX-A016-E-02",
+    "skill_id": "A016",
+    "level": "entrainement",
+    "type": "vrai_faux",
+    "statement": "Nora pose la division euclidienne de 658 par 14. Elle trouve un quotient de 47 et un reste de 0.\n\nVrai ou faux : 47 est un diviseur de 658.",
+    "image": null,
+    "answer": {
+      "value": true
+    },
+    "solution_steps": [
+      "Le reste est 0 : la division tombe juste, et 658 = 14 × 47.",
+      "Une multiplication se lit dans les deux sens : 658 = 47 × 14. Donc 658 est dans la table de 47.",
+      "47 est donc un diviseur de 658 : la phrase est **vraie**. On pourrait faire 14 paquets de 47, ou 47 paquets de 14.",
+      "Quand la division d'un nombre par un diviseur tombe juste, le quotient est lui aussi un diviseur de ce nombre."
+    ],
+    "hint": "Écris l'égalité de la division de Nora, puis lis la multiplication dans l'autre sens.",
+    "estimated_duration_s": 90,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, classe de 5e, Nombres et calculs, Opérations : « Utiliser les notions de multiples et diviseurs. »"
+  },
+  {
+    "id": "EX-A016-M-01",
+    "skill_id": "A016",
+    "level": "maitrise",
+    "type": "numerique",
+    "statement": "On sait que 1 001 = 7 × 143.\n\nSans poser de division, quel est le reste de la division euclidienne de 1 005 par 7 ?",
+    "image": null,
+    "answer": {
+      "value": 4
+    },
+    "solution_steps": [
+      "1 001 = 7 × 143 : 1 001 est un multiple de 7.",
+      "1 005 = 1 001 + 4, donc 1 005 = 7 × 143 + 4.",
+      "Le nombre ajouté, 4, est plus petit que 7 : c'est bien le reste. Le quotient est 143 et le reste est **4**.",
+      "Vérification : le multiple de 7 suivant est 7 × 144 = 1 008, qui dépasse 1 005. 1 005 est entre 1 001 et 1 008, il n'est donc pas un multiple de 7."
+    ],
+    "hint": "1 005 est un peu plus grand que 1 001. Combien faut-il ajouter à 1 001 pour obtenir 1 005 ?",
+    "estimated_duration_s": 120,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, classe de 5e, Nombres et calculs, Opérations, Automatismes : « Déterminer le quotient et le reste dans une division euclidienne, par exemple, savoir que 17 = 3 × 5 + 2. »"
+  },
+  {
+    "id": "EX-A016-M-02",
+    "skill_id": "A016",
+    "level": "maitrise",
+    "type": "qcm",
+    "statement": "Un nombre est un multiple de 6.\n\nQuelle phrase est forcément vraie ?",
+    "image": null,
+    "choices": [
+      {
+        "key": "a",
+        "text": "Ce nombre est divisible par 12.",
+        "misconception": "L'élève croit que les multiples de 6 sont aussi ceux de 12, qui est dans la table de 6. C'est faux : 18 est un multiple de 6, mais pas de 12 (12 × 1 = 12 et 12 × 2 = 24)."
+      },
+      {
+        "key": "b",
+        "text": "Ce nombre est un diviseur de 6.",
+        "misconception": "L'élève confond multiple et diviseur : 18 est un multiple de 6, mais 18 ne rentre pas dans 6."
+      },
+      {
+        "key": "c",
+        "text": "Ce nombre est divisible par 3.",
+        "misconception": null
+      }
+    ],
+    "answer": {
+      "value": "c"
+    },
+    "solution_steps": [
+      "Un multiple de 6 s'écrit 6 × un entier. Or 6 = 2 × 3.",
+      "Donc un multiple de 6 s'écrit 3 × 2 × un entier : il est dans la table de 3. Par exemple, 42 = 6 × 7 = 3 × 14.",
+      "« Ce nombre est divisible par 3 » est donc toujours vrai.",
+      "Les deux autres phrases tombent avec un seul exemple : 18 est un multiple de 6, mais 18 n'est pas divisible par 12, et 18 n'est pas un diviseur de 6."
+    ],
+    "hint": "Écris 6 comme produit de deux nombres, puis essaie chaque phrase sur un multiple de 6, par exemple 18.",
+    "estimated_duration_s": 120,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, classe de 5e, Nombres et calculs, Opérations : « Utiliser les notions de multiples et diviseurs. »"
+  }
+]

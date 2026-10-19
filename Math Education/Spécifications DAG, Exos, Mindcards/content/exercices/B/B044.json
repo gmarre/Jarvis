@@ -1,0 +1,181 @@
+[
+  {
+    "id": "EX-B044-D-01",
+    "skill_id": "B044",
+    "level": "decouverte",
+    "type": "qcm",
+    "statement": "La flèche représente une addition : on part du nombre où elle commence, puis on avance ou on recule.\n\nQuelle addition représente-t-elle ?",
+    "image": "figures/EX-B044-D-01",
+    "choices": [
+      {
+        "key": "a",
+        "text": "(−2) + (+3) = 1",
+        "misconception": "L'élève confond le départ et l'arrivée de la flèche : il part de la pointe, −2, au lieu de la graduation où la flèche commence."
+      },
+      {
+        "key": "b",
+        "text": "(−5) + (−3) = −8",
+        "misconception": "L'élève lit bien le départ et la longueur, mais donne au déplacement le signe du premier terme : il croit qu'en partant d'un négatif, on ajoute forcément un négatif. La flèche va pourtant vers la droite."
+      },
+      {
+        "key": "c",
+        "text": "(−5) + (+3) = −2",
+        "misconception": null
+      },
+      {
+        "key": "d",
+        "text": "(−5) + (+4) = −1",
+        "misconception": "L'élève compte les traits au lieu des intervalles : de −5 à −2, il y a 4 traits, mais seulement 3 intervalles."
+      }
+    ],
+    "answer": {
+      "value": "c"
+    },
+    "solution_steps": [
+      "La flèche commence à la graduation −5 : c'est le premier terme, (−5).",
+      "Elle va vers la droite, dans le sens où les nombres grandissent, de 3 intervalles : on ajoute (+3). On compte les intervalles, pas les traits.",
+      "Elle s'arrête à −2. Donc (−5) + (+3) = −2.",
+      "Avec les distances à zéro : les signes sont contraires, on calcule 5 − 3 = 2 et on garde le signe de −5, le plus éloigné de zéro. La bonne réponse est c."
+    ],
+    "hint": "Où commence la flèche ? Dans quel sens va-t-elle, et de combien d'intervalles ?",
+    "estimated_duration_s": 60,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, 5e : additionner deux nombres décimaux relatifs."
+  },
+  {
+    "id": "EX-B044-D-02",
+    "skill_id": "B044",
+    "level": "decouverte",
+    "type": "numerique",
+    "statement": "Dans un jeu, Inès perd 6 points au premier tour, puis en gagne 9 au second.\n\nCalcule (−6) + (+9) : c'est son score après les deux tours.",
+    "image": null,
+    "answer": {
+      "value": 3,
+      "accepted": [
+        "3 points",
+        "+3 points"
+      ]
+    },
+    "solution_steps": [
+      "Perdre 6 points, c'est (−6) ; gagner 9 points, c'est (+9).",
+      "Les points gagnés compensent d'abord les 6 points perdus : sur les 9, il en reste 3.",
+      "Avec les distances à zéro : les signes sont contraires, on soustrait la plus petite distance de la plus grande, 9 − 6 = 3, et on garde le signe de (+9), le plus éloigné de zéro.",
+      "(−6) + (+9) = 3 : Inès a 3 points. Piège : ajouter 6 et 9, ce qui donne 15 ou −15, comme si les points perdus et gagnés s'additionnaient."
+    ],
+    "hint": "Les points gagnés compensent d'abord les points perdus. Combien en reste-t-il ?",
+    "estimated_duration_s": 60,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, 5e : additionner deux nombres décimaux relatifs."
+  },
+  {
+    "id": "EX-B044-E-01",
+    "skill_id": "B044",
+    "level": "entrainement",
+    "type": "numerique",
+    "statement": "Le point A repère la température à 7 h. À 14 h, elle a augmenté de 6,5 degrés.\n\nQuelle température fait-il à 14 h, en °C ?",
+    "image": "figures/EX-B044-E-01",
+    "answer": {
+      "value": 2,
+      "unit": "°C",
+      "accepted": [
+        "2°",
+        "+2",
+        "+2 °C",
+        "+2°",
+        "+2 degrés"
+      ]
+    },
+    "solution_steps": [
+      "Lecture du thermomètre : entre deux nombres écrits, l'écart de 1 degré est partagé en 2 petits intervalles, qui valent chacun 0,5 degré. A est à mi-chemin entre −5 et −4 : il repère −4,5.",
+      "La température augmente de 6,5 degrés : on calcule (−4,5) + (+6,5).",
+      "Les signes sont contraires : on soustrait les distances à zéro, 6,5 − 4,5 = 2, et on garde le signe de (+6,5), le plus éloigné de zéro.",
+      "Il fait **2 °C** à 14 h. Sur le thermomètre, on monte de 6,5 degrés depuis A : on dépasse 0 et on arrive à 2."
+    ],
+    "hint": "Que vaut un petit intervalle du thermomètre ? Une hausse de température, c'est l'ajout d'un nombre positif.",
+    "estimated_duration_s": 90,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, 5e : additionner deux nombres décimaux relatifs."
+  },
+  {
+    "id": "EX-B044-E-02",
+    "skill_id": "B044",
+    "level": "entrainement",
+    "type": "vrai_faux",
+    "statement": "Tom calcule (−3,4) + (+1,9) et trouve −5,3.\n\nA-t-il raison ?",
+    "image": null,
+    "answer": {
+      "value": false
+    },
+    "solution_steps": [
+      "Les deux nombres sont de signes contraires : on n'ajoute pas leurs distances à zéro.",
+      "On soustrait la plus petite distance à zéro de la plus grande : 3,4 − 1,9 = 1,5.",
+      "On garde le signe du nombre le plus éloigné de zéro, −3,4 : le résultat est négatif. (−3,4) + (+1,9) = −1,5.",
+      "Tom a tort : c'est **faux**. Il a ajouté 3,4 et 1,9 comme si les deux nombres étaient négatifs. Contrôle : en partant de −3,4 et en avançant de 1,9 vers la droite, on se rapproche de zéro, on ne s'en éloigne pas."
+    ],
+    "hint": "Les deux nombres ont-ils le même signe ? Quelle règle s'applique alors aux distances à zéro ?",
+    "estimated_duration_s": 90,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, 5e : additionner deux nombres décimaux relatifs."
+  },
+  {
+    "id": "EX-B044-M-01",
+    "skill_id": "B044",
+    "level": "maitrise",
+    "type": "qcm",
+    "statement": "Sans calculer, laquelle de ces sommes est négative ?",
+    "image": null,
+    "choices": [
+      {
+        "key": "a",
+        "text": "(+3,7) + (−5,2)",
+        "misconception": null
+      },
+      {
+        "key": "b",
+        "text": "(−6,2) + (+8,1)",
+        "misconception": "L'élève donne à la somme le signe du premier terme : −6,2 est négatif, il croit la somme négative. Or c'est (+8,1), le plus éloigné de zéro, qui l'emporte."
+      },
+      {
+        "key": "c",
+        "text": "(−1,25) + (+1,3)",
+        "misconception": "L'élève compare 1,25 et 1,3 en lisant 25 > 3 : il croit −1,25 plus éloigné de zéro que +1,3. Or 1,3 = 1,30, et 30 centièmes, c'est plus que 25 centièmes : la somme est positive."
+      }
+    ],
+    "answer": {
+      "value": "a"
+    },
+    "solution_steps": [
+      "Les deux termes de chaque somme sont de signes contraires : le résultat a le signe du nombre le plus éloigné de zéro. On compare donc les distances à zéro, sans calculer.",
+      "a : 5,2 > 3,7, c'est (−5,2) qui l'emporte : la somme est négative.",
+      "b : 8,1 > 6,2, c'est (+8,1) qui l'emporte : la somme est positive, même si le premier terme est négatif.",
+      "c : 1,3 = 1,30 et 1,30 > 1,25, c'est (+1,3) qui l'emporte : la somme est positive.",
+      "La seule somme négative est la a. Vérification : (+3,7) + (−5,2) = −1,5."
+    ],
+    "hint": "Dans chaque somme, quel est le nombre le plus éloigné de zéro ?",
+    "estimated_duration_s": 120,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, 5e : additionner deux nombres décimaux relatifs."
+  },
+  {
+    "id": "EX-B044-M-02",
+    "skill_id": "B044",
+    "level": "maitrise",
+    "type": "numerique",
+    "statement": "Le compte de Sami affiche −12,35 € : il doit cet argent à la banque. Il dépose 8,70 €.\n\nQuel est son nouveau solde, en euros ?",
+    "image": null,
+    "answer": {
+      "value": -3.65,
+      "unit": "€"
+    },
+    "solution_steps": [
+      "Déposer 8,70 €, c'est ajouter (+8,70) au solde : on calcule (−12,35) + (+8,70).",
+      "Les signes sont contraires : on soustrait les distances à zéro. On pose 12,35 − 8,70 en alignant les virgules : on trouve 3,65.",
+      "On garde le signe du nombre le plus éloigné de zéro, −12,35 : le résultat est négatif.",
+      "(−12,35) + (+8,70) = −3,65. Le nouveau solde est **−3,65 €** : le dépôt ne suffit pas à rembourser toute la dette. Pièges : −21,05 € (distances ajoutées) ou 3,65 € (signe oublié)."
+    ],
+    "hint": "Le dépôt suffit-il à effacer toute la dette ?",
+    "estimated_duration_s": 120,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, 5e : additionner deux nombres décimaux relatifs."
+  }
+]
