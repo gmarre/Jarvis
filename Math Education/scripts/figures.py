@@ -1499,7 +1499,9 @@ def _repere(p: dict) -> tuple[str, str]:
         corps.append(_ligne(X(0) - 4, Y(j), X(0) + 4, Y(j), epaisseur=1.4))
         if ecrire(j):
             corps.append(_texte(X(0) - 7, Y(j) + 4, _relatif(pas_y * j), 11, ancre="end"))
-    corps.append(_texte(X(0) - 7, Y(0) + 15, "O", 12, ancre="end", gras=True))
+    # « O » au-dessus et a gauche de l'origine : sur la ligne des etiquettes de
+    # l'axe horizontal, il collait a « −1 » et se lisait « −10 » (relecture L2).
+    corps.append(_texte(X(0) - 6, Y(0) - 6, "O", 12, ancre="end", gras=True))
 
     noms = []
     for pt in p.get("points", []):
