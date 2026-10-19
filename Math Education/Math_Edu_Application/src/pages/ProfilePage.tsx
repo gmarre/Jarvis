@@ -127,7 +127,7 @@ export default function ProfilePage() {
       <PageBody>
         <PageHeader title="Mon profil" />
 
-        <div className="grid gap-5 lg:grid-cols-[1.3fr_1fr]">
+        <div className="grid grid-cols-1 gap-5 lg:grid-cols-[minmax(0,1.3fr)_minmax(0,1fr)]">
           <div className="flex flex-col gap-5">
             {/* Identite */}
             <Card>
@@ -138,7 +138,7 @@ export default function ProfilePage() {
                   tone={hasProgress || isTeacher ? 'accent' : 'neutral'}
                 />
                 <div className="min-w-0 flex-1">
-                  <p className="truncate font-display text-xl font-medium leading-tight text-ink">
+                  <p className="break-words font-display text-xl font-medium leading-tight text-ink">
                     {profile.prenom} {profile.nom}
                   </p>
                   <p className="mt-1 text-[12.5px] leading-relaxed text-ink-subtle">

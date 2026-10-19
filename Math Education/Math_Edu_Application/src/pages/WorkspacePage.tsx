@@ -71,7 +71,7 @@ export default function WorkspacePage() {
         )}
 
         {!plan.needsPlacement && (
-          <div className="mt-5 grid gap-5 lg:grid-cols-[1.35fr_1fr]">
+          <div className="mt-5 grid grid-cols-1 gap-5 lg:grid-cols-[minmax(0,1.35fr)_minmax(0,1fr)]">
             <ReviewList reviews={plan.reviews} />
 
             <div className="flex flex-col gap-5">

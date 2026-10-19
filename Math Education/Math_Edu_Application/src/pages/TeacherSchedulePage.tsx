@@ -124,7 +124,7 @@ export default function TeacherSchedulePage() {
           </Notice>
         )}
 
-        <div className="grid gap-5 lg:grid-cols-[1.1fr_1fr]">
+        <div className="grid grid-cols-1 gap-5 lg:grid-cols-[minmax(0,1.1fr)_minmax(0,1fr)]">
           <Card>
             <div className="mb-4 grid gap-4 sm:grid-cols-2">
               <Field label="Jour" htmlFor="jour">

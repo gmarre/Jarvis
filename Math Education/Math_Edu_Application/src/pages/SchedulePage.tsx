@@ -195,7 +195,7 @@ export default function SchedulePage() {
             />
           </Card>
         ) : (
-          <div className="grid gap-5 lg:grid-cols-[1fr_300px]">
+          <div className="grid grid-cols-1 gap-5 lg:grid-cols-[minmax(0,1fr)_300px]">
             {/* Grille hebdomadaire, desktop */}
             <div className="hidden overflow-hidden rounded-panel border border-line bg-surface lg:block">
               <div

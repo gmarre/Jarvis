@@ -101,7 +101,7 @@ export default function PathPage() {
         />
 
         {view === 'chemin' ? (
-          <div className="grid gap-5 lg:grid-cols-[1fr_320px]">
+          <div className="grid grid-cols-1 gap-5 lg:grid-cols-[minmax(0,1fr)_320px]">
             <div>
               <DagPath path={plan.path} onStart={startSkill} />
               <GraphHint onOpen={() => setView('graphe')} />
@@ -115,7 +115,7 @@ export default function PathPage() {
               <StatusLegend />
             </div>
 
-            <div className="grid gap-5 lg:grid-cols-[1fr_320px]">
+            <div className="grid grid-cols-1 gap-5 lg:grid-cols-[minmax(0,1fr)_320px]">
               <div className="h-[440px] sm:h-[560px] lg:h-[620px]">
                 {domain && (
                   <DagGraph

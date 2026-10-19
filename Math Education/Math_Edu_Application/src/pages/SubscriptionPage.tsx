@@ -69,7 +69,7 @@ export default function SubscriptionPage() {
           </div>
         </Card>
 
-        <div className="grid gap-5 lg:grid-cols-[1.25fr_1fr]">
+        <div className="grid grid-cols-1 gap-5 lg:grid-cols-[minmax(0,1.25fr)_minmax(0,1fr)]">
           <Card>
             <CardTitle>Formule plateforme</CardTitle>
 
