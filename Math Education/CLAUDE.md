@@ -61,7 +61,8 @@ Ce qui marche :
 
 Ce qui est faux ou absent aujourd'hui (repris dans le backlog §6) :
 - les « flammes » (série de jours) sont **codées en dur à 6** (`WorkspacePage.tsx`, `streakDays`) ;
-- consentement parental et accord du parent pour les mineurs : codés (0011, Edge Function `accord-parental`), **pas encore en service** (migration à appliquer, fonction à déployer, clé Resend à créer) ;
+- consentement parental et accord du parent pour les mineurs : en base (0011) et fonction `accord-parental` déployée ; **aucun email ne part tant que le secret `RESEND_API_KEY` n'est pas posé** (la fonction le dit à l'élève) ;
+- **refus du parent : le compte reste utilisable « en attente »** (décision de Gauthier, 19 octobre 2026 : on ne bloque pas pour l'instant, à reprendre au sprint 4) ;
 - « Supprimer mon compte » n'efface rien : masqué hors démonstration jusqu'au sprint 4 ;
 - la progression est écrite par le navigateur, donc falsifiable ;
 - pas de vérification des professeurs ;
@@ -76,11 +77,11 @@ Ce qui est faux ou absent aujourd'hui (repris dans le backlog §6) :
 **Sécurité et opérations**
 - `SUPABASE_SERVICE_ROLE_KEY` : jamais affichée, jamais préfixée `VITE_`, lue seulement par les scripts locaux depuis `.env.local`.
 - Le fichier Google `client_secret_*.json` n'est jamais commité.
-- **Migrations : jamais par l'outil MCP `apply_migration` (refusé par Gauthier).** Créer le fichier numéroté suivant dans `supabase/migrations/` (rejouable : `if not exists`, `create or replace`, `drop policy if exists`), puis Gauthier le colle dans le SQL Editor. Ne jamais modifier une migration déjà appliquée (dernière appliquée : 0009 ; **0010 et 0011 écrites le 19 octobre 2026, à appliquer par Gauthier**).
+- **Migrations : jamais par l'outil MCP `apply_migration` (refusé par Gauthier).** Créer le fichier numéroté suivant dans `supabase/migrations/` (rejouable : `if not exists`, `create or replace`, `drop policy if exists`), puis Gauthier le colle dans le SQL Editor. Ne jamais modifier une migration déjà appliquée (dernière appliquée : 0011, le 19 octobre 2026).
 - Les outils MCP Supabase `deploy_edge_function`, `get_edge_function` et `execute_sql` en lecture sont acceptés.
 - Ne pas contourner un refus du classifieur de sécurité.
 
-**Avant chaque commit :** `cd Math_Edu_Application && npm test && npm run lint && npm run build` (lint à zéro avertissement). Après une migration : `bash supabase/tests/run.sh` depuis Git Bash (Docker Desktop lancé).
+**Avant chaque commit :** `cd Math_Edu_Application && npm test && npm run lint && npm run build` (lint à zéro avertissement). Après une migration : **`npm run test:sql`** (PGlite, Postgres en WebAssembly, sans Docker : Gauthier ne veut pas de Docker Desktop). `supabase/tests/run.sh` reste pour qui a Docker.
 
 **Trois règles de conception :**
 1. Jamais de bouton inerte : un bouton non branché ne s'affiche pas.
@@ -119,11 +120,11 @@ Ce qui est faux ou absent aujourd'hui (repris dans le backlog §6) :
   - Il normalise largement : accents, ponctuation, unités en toutes lettres (« cm carrés », « degrés »), durées « 1 h 05 / 1:05 », virgule ou point.
   - **Une règle modifiée doit être redéployée** (§5.3), sinon le serveur et l'app divergent.
 - **Figures :** décrites en JSON (`content/figures/<id>.json`) et dessinées en SVG par `scripts/figures.py`.
-  - Types : `demi_droite`, `regle`, `horloge`, `quadrillage` (axe, robot, chemin), `partage`, `bandes`, `monnaie`, `geometrie`, `rapporteur`, `solide`, `cubes`.
+  - Types : `demi_droite`, `droite_graduee` (relatifs, horizontale ou verticale, flèches de déplacement, écarts), `repere` (quatre quadrants), `regle`, `horloge`, `quadrillage` (axe, robot, chemin), `partage`, `bandes`, `monnaie`, `geometrie`, `rapporteur`, `solide`, `cubes`.
   - Le générateur refuse une figure qui trompe l'œil : angle codé droit qui ne l'est pas, angle presque droit, points presque alignés, longueurs codées égales qui ne le sont pas.
   - L'app affiche la figure en `<img>` data URI, donc aucun script ne peut s'exécuter.
 
-### 4.2 Base (`supabase/migrations/0001` à `0009`, chaque fichier explique son objet)
+### 4.2 Base (`supabase/migrations/0001` à `0011`, chaque fichier explique son objet)
 
 **Tables :**
 - `profiles` (rôle, niveau, email parent, consentement, préférences) ;
@@ -133,9 +134,12 @@ Ce qui est faux ou absent aujourd'hui (repris dans le backlog §6) :
 - `teachers`, `availability_slots`, `bookings`, vue `slots_disponibles` (places calculées, jamais stockées) ;
 - `parent_links` (seulement `token_hash`) ;
 - contenu publié : `content_skills`, `content_exercises`, `content_mindmaps`, `content_exercise_keys` (illisible pour les élèves, seule la fonction `corriger` la lit), `content_publications` ;
-- recette : `content_reviewers`, `content_reviews`.
+- recette : `content_reviewers`, `content_reviews` ;
+- accord parental : `modifications_profil` (demandes d'un mineur soumises au parent, jeton haché).
 
-**Colonnes protégées du client** (trigger) : `role`, `consentement_parental_at`, `email`, `cree_le`, `abonnement`.
+**Colonnes protégées du client** (trigger) : `role` (choisi une seule fois, `role_choisi_le`, 0010), `consentement_parental_at`, `email`, `cree_le`, `abonnement` ; pour un mineur, `date_naissance` (0011). Un changement de parent ou une date sous 15 ans remet le consentement à zéro.
+
+**Edge Functions :** `corriger` (`verify_jwt: true`, version 6 : signe moins typographique et °C) ; `accord-parental` (`verify_jwt: false`, le parent n'a pas de compte ; secrets `RESEND_API_KEY`, `RESEND_FROM`, `APP_URL`).
 
 **Fonctions d'autorisation** en `security definer`, pour éviter la récursion RLS : `peut_lire_eleve`, `est_prof_de`, `est_parent_de`, `role_actuel`, `nb_places_prises`. Aucune n'est appelable par `anon`.
 
@@ -193,7 +197,8 @@ Contrôle : un appel avec la clé anonyme doit répondre **401 « Connexion requ
 ### 5.4 Pièges connus
 
 - **Supabase gratuit en pause après 7 jours sans activité** : « Restore project » dans le tableau de bord. Avant la bêta : plan Pro, ou activité hebdomadaire (workflow `supabase-keepalive.yml`).
-- **Docker bloqué** (`no route to host`) : arrêter les processus `com.docker.*`, `wsl --shutdown`, relancer Docker Desktop.
+- **Tests SQL** : PGlite n'a qu'une connexion ; le lanceur remet la session à zéro entre deux fichiers, comme psql. Un test qui vise un compte supprimé par un test précédent ne rend aucune ligne et ne peut pas échouer (arrivé au test 62).
+- **Codes d'échappement Unicode** (antislash, u, quatre chiffres) : l'outil Write, les heredocs Python et les paramètres d'outils MCP les transforment en caractères. Pour en écrire un dans un fichier, passer par `chr(92)`.
 - **Tester le SQL en propriétaire de table ne teste rien** : toute assertion tourne sous `set role authenticated` avec un JWT.
 - **Une règle valable pour tous doit être `security definer`.**
 - **`crypto.randomUUID()` n'existe qu'en HTTPS** (test sur téléphone en http local) : utiliser `lib/id.ts`.
@@ -212,8 +217,8 @@ Contrôle : un appel avec la clé anonyme doit répondre **401 « Connexion requ
 
 ### Sprint 1 : Compte, profil, style graphique et mobile (priorité absolue)
 
-**Avancement au 19 octobre 2026 (soir)** : points 1, 2, 3, 5, 6, 8 et 10 codés et commités ; point 7 : variantes du logo faites, maquette de palette dans `Management de Projet/maquettes/palette_racine.html`, **bascule des jetons en attente de l'accord de Gauthier** ; point 4 : capture toujours absente (le fichier `captures/Fenetre_co.jpg` est la photo de connexion, pas la fenêtre de reconnexion).
-Reste à faire par Gauthier : appliquer 0010 puis 0011 dans le SQL Editor ; activer « Confirm email » ; créer le compte Resend ; puis Claude déploie `accord-parental` (`verify_jwt: false`) et pose les secrets (mémo dans `GUIDE.md` §5). Les tests SQL (`supabase/tests/run.sh`, fichier 06 ajouté) n'ont pas tourné : **Docker Desktop n'est plus installé** sur le poste.
+**Avancement au 19 octobre 2026 (soir)** : points 1, 2, 3, 5, 6, 7, 8 et 10 faits et commités (palette bleu du logo validée par Gauthier, photo sur l'écran de connexion) ; migrations 0010 et 0011 appliquées ; « Confirm email » activé ; `accord-parental` déployée ; tests SQL verts sous PGlite.
+**Reste :** point 4 (capture de la fenêtre de reconnexion, toujours absente : `captures/Fenetre_co.jpg` est la photo de connexion) ; Gauthier pose le secret `RESEND_API_KEY` (Supabase, Edge Functions, Secrets), puis test de bout en bout du consentement avec son propre email (sans domaine, Resend n'écrit qu'au titulaire du compte).
 Décisions prises en route : la page publique du parent est `/accord/:jeton` (consentement et modifications), pas `/consentement/:token` ; les pastilles de QCM gardent leur lettre d'origine (11 corrigés citent « la proposition c »).
 
 **Application**
@@ -258,7 +263,7 @@ Décisions prises en route : la page publique du parent est `/accord/:jeton` (co
     - jeton haché, valable 7 jours ;
     - page `/consentement/:token` et bouton « Renvoyer » limité en fréquence.
 
-**Contenu (agents, en parallèle) :** étape 5 du §7 (nombres relatifs et arithmétique). Cartographe fait le 19 octobre 2026 : 20 compétences (`_travail/etape5_dag_AB.*`, consigne `_travail/brief_cartographe_etape5.md`), vérifications vertes, **13 points à arbitrer par Gauthier** avant les rédacteurs (dont la saisie du signe moins typographique, refusée par `correction.ts`). Remettre aussi au propre les 6 cartes en brouillon et les 7 anomalies CE1 (§2.1).
+**Contenu (agents, en parallèle) :** étape 5 du §7 (nombres relatifs et arithmétique). Cartographe fait et arbitré le 19 octobre 2026 : 20 compétences renumérotées (`_travail/etape5_dag_AB.*`, 13 recommandations validées). Correction, validateur (négatif avant la 5e, |x| interdit) et générateurs `droite_graduee`, `repere` prêts. Rédacteurs lancés en 4 lots (`_travail/brief_etape5.md`). Remettre aussi au propre les 6 cartes en brouillon et les 7 anomalies CE1 (§2.1).
 
 ### Sprint 2 : Pédagogie de l'élève
 
@@ -330,6 +335,7 @@ Décisions prises en route : la page publique du parent est `/accord/:jeton` (co
 ### Sprint 4 : Parents
 
 1. **Espace parent :** rattachement à un ou plusieurs enfants (le consentement du sprint 1 crée le lien), et suivi de leur progression.
+   - **Refus du consentement par le parent** : aujourd'hui le compte reste utilisable « en attente ». Décider avec Gauthier s'il faut le bloquer, le supprimer après un délai, ou relancer le parent (décision du 19 octobre 2026 : ne pas bloquer pour l'instant).
 2. **Rapport hebdomadaire par email :** exercices faits, cartes revues, compétences gagnées. Cron Supabase et Resend.
 3. **Chemins à faire réviser, avec réponses et corrigés pour le parent.** Décision de Gauthier : on part du principe que l'enfant ne va pas dans l'espace parent. Les réponses et les corrigés y sont donc visibles librement. Il faut une fonction serveur qui ne rend les clés qu'à un compte parent rattaché.
 4. **RGPD :** export et suppression des données à la demande du parent.
@@ -405,6 +411,8 @@ Toute nouvelle lettre exige une migration qui élargit les contraintes `A-P`, et
 | 10 | Statistiques (moyenne, médiane, étendue, diagrammes) et probabilités | K, L | diagrammes en barres et circulaires, arbres |
 | 11 | Super exercices de fin de cycle (CM2, 6e, 3e) et cartes défi pour tout le collège | transverse | aucun |
 
+**Attendus de 5e sans nœud après l'étape 5** (relevés par le cartographe) : diviser par un décimal, traduire un programme de calcul en une seule expression, distributivité simple sur des exemples numériques. À placer à l'étape 6 ou 7.
+
 **Arbitrages déjà pris, à reconduire :**
 - algorithmique et programmation (Scratch) : hors évaluation, sauf un nœud de lecture si le programme l'impose ;
 - seuil de maîtrise : `{3, 4}` ;
@@ -428,11 +436,10 @@ Toute nouvelle lettre exige une migration qui élargit les contraintes `A-P`, et
 9. Business plan : à proposer par Claude.
 10. Domaine, dépôt dédié et déploiement : au sprint final, avec un guide pas à pas.
 
+**Réponses du 19 octobre 2026 (soir)** : palette du logo validée ; refus du parent : on ne bloque pas pour l'instant (sprint 4) ; 13 arbitrages de l'étape 5 validés ; pas de Docker Desktop (tests SQL sous PGlite).
+
 **Questions encore ouvertes :**
 - la capture du point 1 ;
-- la palette dérivée du logo (maquette du 19 octobre) ;
-- les 13 arbitrages du cartographe de l'étape 5 ;
-- que faire quand un parent **refuse** le consentement (aujourd'hui le compte reste utilisable « en attente ») ;
 - la table niveau de maîtrise → intervalle de révision (sprint 2) ;
 - l'interprétation du volume de super exercices (sprint 2) ;
 - les hypothèses du business plan, une fois proposées.
