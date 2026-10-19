@@ -32,6 +32,7 @@ Tu rédiges les 5 cartes mentales de l'étape 5 de MATH EDUCATION. Réponds en f
   - un nombre formé par un énoncé à trou et une proposition de QCM (« 4■ » et « 9 » donnent 49) est une donnée de l'exercice : ne l'emploie pas en exemple ;
   - une ligne « Erreur à éviter » ne paraphrase jamais l'énoncé d'un vrai/faux de la même carte : elle donnerait la réponse ;
   - « graduation » désigne un trait ; pour compter, on parle d'**intervalles** ;
+  - contrôle des couples (reprise pilote, 20 octobre 2026) : comparer aussi les corrigés, les indices et la géométrie des figures (nombre d'intervalles) ; une fraction a/b compte comme **une seule** donnée et les paires de fractions ne sont jamais exemptées ; aucune exemption pour un couple présent dans l'énoncé, la réponse, les propositions ou la figure du même exercice ; « un chiffre et sa valeur » n'est exempté que pour (c ; c × 10, 100 ou 1 000) ;
   - une règle qui s'appuie sur une définition de la carte reste vraie avec elle (si 0 est positif et négatif, « négatif < positif » devient « strictement négatif < positif »).
 - Chaque compétence de la carte a au moins une ligne de méthode et un exemple.
 

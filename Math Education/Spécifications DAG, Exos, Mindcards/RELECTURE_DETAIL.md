@@ -1451,6 +1451,8 @@ Complète : 754 = 700 + 50 + …
 
 *Lire à voix haute tout entier écrit en chiffres*
 
+> « Il sait également lire un nombre écrit en chiffres et l'écrire en lettres. » — *Cycle 2, Cours élémentaire première année, Les nombres entiers*
+> « Connaitre la suite écrite et la suite orale des nombres jusqu'à mille. » — *Cycle 2, Cours élémentaire première année, Les nombres entiers*
 
 **EX-A004-D-01** — decouverte, qcm, 45 s
 
@@ -1502,6 +1504,8 @@ Comment lit-on le nombre 190 ?
 
 *Transcrire en chiffres un entier énoncé à l'oral*
 
+> « L'élève sait écrire en chiffres un nombre dicté. » — *Cycle 2, Cours élémentaire première année, Les nombres entiers*
+> « Connaitre et utiliser diverses représentations d'un nombre et passer de l'une à l'autre. » — *Cycle 2, Cours élémentaire première année, Les nombres entiers*
 
 **EX-A005-D-01** — decouverte, numerique, 35 s
 
@@ -1539,6 +1543,9 @@ Comment lit-on le nombre 190 ?
 
 *Utiliser <, > et = pour comparer deux entiers*
 
+> « Comparer, encadrer, intercaler des nombres entiers en utilisant les symboles (=, <, >). » — *Cycle 2, Cours élémentaire première année, Les nombres entiers*
+> « Comprendre et savoir utiliser les expressions « égal à », « supérieur à », « inférieur à », « compris entre … et … ». » — *Cycle 2, Cours élémentaire première année, Les nombres entiers*
+> « L'élève sait placer le symbole qui convient (= ou < ou >) entre deux nombres, par exemple entre 49 et 53. » — *Cycle 2, Cours préparatoire, Les nombres entiers*
 
 **EX-A006-D-01** — decouverte, qcm, 35 s
 
@@ -1588,6 +1595,9 @@ Quel est le plus grand de ces deux nombres : 999 et 1 000 ?
 
 *Distinguer un chiffre (0 à 9) d'un nombre*
 
+> « Connaitre la valeur des chiffres en fonction de leur position dans un nombre. » — *Cycle 2, Cours élémentaire première année, Les nombres entiers*
+> « La compréhension des aspects décimal (base dix) et positionnel (la valeur d'un chiffre dépend de sa position) étudiés au CP se renforce et s'étend. » — *Cycle 2, Cours élémentaire première année, Les nombres entiers*
+> « L'élève sait expliquer, en s'appuyant sur la numération, pourquoi 23 n'est pas le même nombre que 32 bien que les écritures des deux nombres soient composées des mêmes chiffres. » — *Cycle 2, Cours préparatoire, Les nombres entiers*
 
 **EX-A008-D-01** — decouverte, numerique, 30 s
 
@@ -1625,8 +1635,8 @@ Le nombre 99 s'écrit avec plus de chiffres que le nombre 100.
 
 *Reconnaître si un entier est pair ou impair*
 
-> « L'élève sait dire si un nombre est pair ou impair. » — *Cycle 2, Cours élémentaire première année, Le calcul mental*
-> « L'élève sait donner tous les nombres pairs compris en 767 et 778. » — *Cycle 2, Cours élémentaire première année, Le calcul mental*
+> « L'élève sait dire si un nombre est pair ou impair. » — *Cycle 2, Cours élémentaire première année, Les quatre opérations*
+> « L'élève sait donner tous les nombres pairs compris en 767 et 778. » — *Cycle 2, Cours élémentaire première année, Les quatre opérations*
 
 **EX-A011-D-01** — decouverte, qcm, 45 s
 
@@ -1985,7 +1995,7 @@ Le glacier a vendu 423 glaces en juillet et 186 en juin. Combien de glaces de pl
 
 **EX-C001-D-01** — decouverte, qcm, 45 s
 
-Un gâteau est partagé en 4 parts égales. Léa en prend 3. Quelle fraction du gâteau Léa a-t-elle prise ?
+Un gâteau est partagé en 4 parts égales. Léa en prend 3. Quelle fraction du gâteau a-t-elle prise ?
 
 - **a.** 3/4 ✅
 - **b.** 4/3
@@ -1999,7 +2009,7 @@ Un gâteau est partagé en 4 parts égales. Léa en prend 3. Quelle fraction du 
 
 **EX-C001-E-01** — entrainement, qcm, 50 s
 
-Une bande de papier est partagée en 5 parts égales. On en colorie 2. Quelle fraction de la bande est coloriée ?
+Une bande est partagée en 5 parts égales. On en colorie 2. Quelle fraction est coloriée ?
 
 - **a.** 2/5 ✅
 - **b.** 2/3
@@ -2013,7 +2023,7 @@ Une bande de papier est partagée en 5 parts égales. On en colorie 2. Quelle fr
 
 **EX-C001-M-01** — maitrise, vrai_faux, 75 s
 
-Un rectangle est découpé en 3 morceaux : un grand et deux petits. On prend le grand morceau. Peut-on dire qu'on a pris 1/3 du rectangle ?
+Un rectangle est découpé en 3 morceaux : un grand, deux petits. On prend le grand. A-t-on pris 1/3 du rectangle ?
 
 **Réponse :** False
 
@@ -2095,7 +2105,7 @@ Une pizza est partagée en 6 parts égales. On en prend 1. La fraction prise s'�
 
 **EX-C003-M-01** — maitrise, qcm, 75 s
 
-On partage un même tout de deux façons : une fois en 3 parts égales, une fois en 8 parts égales. Dans quel cas une part est-elle la plus petite ?
+On partage un même tout en 3 parts égales, ou en 8 parts égales. Dans quel cas une part est-elle la plus petite ?
 
 - **a.** Quand on partage en 8 ✅
 - **b.** Quand on partage en 3
@@ -2132,7 +2142,7 @@ Lequel est le plus grand : 3/8 ou 5/8 ?
 
 **EX-C009-E-01** — entrainement, qcm, 60 s
 
-Tom et Lisa ont chacun leur propre tarte, partagée en 6 parts égales. Tom a mangé 2/6 de sa tarte. Lisa a mangé 5/6 de la sienne. Qui a mangé la plus grande part de sa tarte ?
+Tom a mangé 2/6 de sa tarte. Lisa a mangé 5/6 de sa tarte. Qui a mangé la plus grande part de sa tarte ?
 
 - **a.** Lisa ✅
 - **b.** Tom
@@ -2146,7 +2156,7 @@ Tom et Lisa ont chacun leur propre tarte, partagée en 6 parts égales. Tom a ma
 
 **EX-C009-M-01** — maitrise, texte, 60 s
 
-Range ces fractions de la plus petite à la plus grande : 7/10, 2/10, 5/10. Écris-les séparées par des virgules, sous la forme numérateur/dénominateur.
+Range de la plus petite à la plus grande : 7/10, 2/10, 5/10. Écris-les avec une barre, séparées par des virgules.
 
 **Réponse :** 2/10, 5/10, 7/10
 
@@ -7527,7 +7537,7 @@ Les diviseurs de 12 sont 1, 2, 3, 4, 6 et 12. Parmi eux, écris ceux qui sont au
 
 *Corrigé.* (1) On reprend la liste un nombre à la fois et on teste chacun sur 20. (2) 20 = 1 × 20, 20 = 2 × 10 et 20 = 4 × 5 : ces trois multiplications tombent juste. (3) 3 ne convient pas : 3 × 6 = 18 et 3 × 7 = 21, on saute 20. (4) 6 non plus : 6 × 3 = 18 et 6 × 4 = 24. Quant à 12, il est plus grand que la moitié de 20. (5) Les diviseurs communs à 12 et à 20 sont donc 1, 2 et 4.
 
-*Indice.* Prends les nombres de la liste un par un et divise 18 par chacun.
+*Indice.* Prends les nombres de la liste un par un et divise 20 par chacun.
 
 **EX-A027-D-02** — decouverte, qcm, 90 s
 

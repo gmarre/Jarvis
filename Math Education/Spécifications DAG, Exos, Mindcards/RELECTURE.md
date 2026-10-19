@@ -3,7 +3,7 @@
 > 170 compétences, 967 exercices. Généré depuis `content/`, ne pas éditer à la main.  
 > Objectif : juger le **fond** et la **coordination**. Le détail complet, énoncés et corrigés, est dans `RELECTURE_DETAIL.md`.
 
-⚠ **7 compétence(s) à regarder**, signalées dans la colonne *Signal* et détaillées en §3.
+✅ Aucune anomalie de coordination détectée.
 
 ## 1. Le parcours, dans l'ordre où l'élève le suit
 
@@ -31,19 +31,19 @@ C'est la lecture qui compte pour juger la coordination : la difficulté doit mon
 | 18 | `G006` Compléter un carré ou un rectangle sur … | CP | 2 | 6 | 15 |  |
 | 19 | `P003` La monnaie en euros entiers : valeur, c… | CP | 2 | 6 | 15 |  |
 | 20 | `A003` Compter jusqu'à 1000 | CE1 | 2 | 3 | 5 |  |
-| 21 | `A004` Lire un entier | CE1 | 2 | 3 | 6 | ⚠ |
-| 22 | `A005` Écrire un entier | CE1 | 2 | 3 | 5 | ⚠ |
-| 23 | `A006` Comparer deux entiers | CE1 | 2 | 3 | 13 | ⚠ |
-| 24 | `A008` Identifier chiffre et nombre | CE1 | 2 | 3 | 11 | ⚠ |
+| 21 | `A004` Lire un entier | CE1 | 2 | 3 | 6 |  |
+| 22 | `A005` Écrire un entier | CE1 | 2 | 3 | 5 |  |
+| 23 | `A006` Comparer deux entiers | CE1 | 2 | 3 | 13 |  |
+| 24 | `A008` Identifier chiffre et nombre | CE1 | 2 | 3 | 11 |  |
 | 25 | `A011` Pair / impair | CE1 | 2 | 3 | 11 |  |
 | 26 | `B005` Multiplication à un chiffre | CE1 | 2 | 7 | 17 |  |
 | 27 | `B015` Calcul mental : multiplier par 10 | CE1 | 2 | 6 | 16 |  |
 | 28 | `B042` Addition posée de nombres à trois chiff… | CE1 | 2 | 6 | 11 |  |
 | 29 | `B004` Soustraction posée avec retenue | CE1 | 2 | 6 | 12 |  |
-| 30 | `C001` Fraction comme partage | CE1 | 2 | 3 | 23 | ⚠ |
+| 30 | `C001` Fraction comme partage | CE1 | 2 | 3 | 19 |  |
 | 31 | `C002` Numérateur | CE1 | 2 | 3 | 17 |  |
-| 32 | `C003` Dénominateur | CE1 | 2 | 3 | 21 | ⚠ |
-| 33 | `C009` Comparer fractions de même dénominateur | CE1 | 2 | 3 | 25 | ⚠ |
+| 32 | `C003` Dénominateur | CE1 | 2 | 3 | 19 |  |
+| 33 | `C009` Comparer fractions de même dénominateur | CE1 | 2 | 3 | 20 |  |
 | 34 | `C012` Additionner des fractions de même dénom… | CE1 | 2 | 3 | 17 |  |
 | 35 | `C026` Comparer des fractions de numérateur 1 | CE1 | 2 | 7 | 19 |  |
 | 36 | `D016` Écrire une somme d'argent avec une virg… | CE1 | 2 | 6 | 17 |  |
@@ -186,7 +186,7 @@ C'est la lecture qui compte pour juger la coordination : la difficulté doit mon
 
 Le chapitre est l'unité qu'un exercice bilan validerait.
 
-### `MM-A-01` · Les nombres entiers, du CP au CE2
+### `MM-A-01` · Les nombres entiers (CP-CM1)
 
 12 compétences, 40 exercices, niveaux CP, CE1, CE2, CM1.
 
@@ -306,7 +306,7 @@ Le chapitre est l'unité qu'un exercice bilan validerait.
 | `B041` Calcul mental : multiplier par 10… | Multiplier mentalement un nombre entier par 10 ou par 100, et un nombre i… | 6 |
 | `B007` Multiplication posée | Poser et calculer la multiplication d'un nombre à deux ou trois chiffres … | 6 |
 
-### `MM-C-01` · Decouvrir les fractions (CE1)
+### `MM-C-01` · Découvrir les fractions (CE1)
 
 6 compétences, 22 exercices, niveaux CE1.
 
@@ -330,7 +330,7 @@ Le chapitre est l'unité qu'un exercice bilan validerait.
 | `D001` Écriture à virgule d'un nombre dé… | Passer d'une fraction décimale ou d'une somme de fractions décimales à l'… | 6 |
 | `D022` Décimaux jusqu'aux millièmes | Étendre aux millièmes la lecture, l'écriture, la décomposition et la comp… | 6 |
 
-### `MM-C-02` · Fractions egales, droite graduee, fraction d'une quantite (CE2-CM1)
+### `MM-C-02` · Fractions égales, bande-unité, fraction d'une quantité (CE2-CM1)
 
 3 compétences, 9 exercices, niveaux CE2, CM1.
 
@@ -570,7 +570,7 @@ Le chapitre est l'unité qu'un exercice bilan validerait.
 | `B050` Diviser deux décimaux relatifs | Calculer le quotient de deux nombres relatifs quand il est décimal, avec … | 6 |
 | `B051` Enchaînements d'opérations avec d… | Calculer une expression qui enchaîne les quatre opérations sur des relati… | 6 |
 
-### `MM-C-03` · Operer sur les fractions (5e-3e)
+### `MM-C-03` · Opérer sur les fractions (5e-3e)
 
 4 compétences, 12 exercices, niveaux 5e, 4e, 3e.
 
@@ -600,16 +600,6 @@ Le chapitre est l'unité qu'un exercice bilan validerait.
 |---|---|--:|
 | `A024` Reconnaître un nombre premier | Savoir qu'un nombre premier est un entier qui a exactement deux diviseurs… | 6 |
 | `A025` Décomposer un entier en produit d… | Écrire un entier jusqu'à 1 000 comme produit de nombres premiers, en divi… | 6 |
-
-## 3. Ce qui mérite ton oeil
-
-- **`A004` Lire un entier** (CE1) — niveau non sourcé (aucune citation de programme)
-- **`A005` Écrire un entier** (CE1) — niveau non sourcé (aucune citation de programme)
-- **`A006` Comparer deux entiers** (CE1) — niveau non sourcé (aucune citation de programme)
-- **`A008` Identifier chiffre et nombre** (CE1) — niveau non sourcé (aucune citation de programme)
-- **`C001` Fraction comme partage** (CE1) — énoncés trop longs pour le niveau (23 mots, plafond 20)
-- **`C003` Dénominateur** (CE1) — énoncés trop longs pour le niveau (21 mots, plafond 20)
-- **`C009` Comparer fractions de même dénominateur** (CE1) — énoncés trop longs pour le niveau (25 mots, plafond 20)
 
 ## 4. Les exercices, une ligne chacun
 
@@ -868,8 +858,9 @@ Le chapitre est l'unité qu'un exercice bilan validerait.
 | E | nume | Quel nombre vient juste avant 700 ? | 699 |
 | M | nume | Complète : 754 = 700 + 50 + … | 4 |
 
-**`A004` · Lire un entier** — diff. 2, seuil 2/3  ⚠  
+**`A004` · Lire un entier** — diff. 2, seuil 2/3  
 *Lire à voix haute tout entier écrit en chiffres*
+> « Il sait également lire un nombre écrit en chiffres et l'écrire en lettres. »
 
 | | Type | Demandé | Réponse |
 |---|---|---|---|
@@ -877,8 +868,9 @@ Le chapitre est l'unité qu'un exercice bilan validerait.
 | E | qcm | Comment lit-on le nombre 380 ? | a) trois-cent-quatre-vingts |
 | M | qcm | Comment lit-on le nombre 190 ? | a) cent-quatre-vingt-dix |
 
-**`A005` · Écrire un entier** — diff. 2, seuil 2/3  ⚠  
+**`A005` · Écrire un entier** — diff. 2, seuil 2/3  
 *Transcrire en chiffres un entier énoncé à l'oral*
+> « L'élève sait écrire en chiffres un nombre dicté. »
 
 | | Type | Demandé | Réponse |
 |---|---|---|---|
@@ -886,8 +878,9 @@ Le chapitre est l'unité qu'un exercice bilan validerait.
 | E | nume | Écris en chiffres : neuf-cent-quatre-vingt-dix-neuf. | 999 |
 | M | nume | Écris en chiffres : cinq-cent-quatre-vingt-dix. | 590 |
 
-**`A006` · Comparer deux entiers** — diff. 2, seuil 2/3  ⚠  
+**`A006` · Comparer deux entiers** — diff. 2, seuil 2/3  
 *Utiliser <, > et = pour comparer deux entiers*
+> « Comparer, encadrer, intercaler des nombres entiers en utilisant les symboles (=, <, >). »
 
 | | Type | Demandé | Réponse |
 |---|---|---|---|
@@ -895,8 +888,9 @@ Le chapitre est l'unité qu'un exercice bilan validerait.
 | E | qcm | Quel symbole faut-il placer entre 302 et 320 ? 302 … 320 | a) < |
 | M | qcm | Quel est le plus grand de ces deux nombres : 999 et 1 000 ? | a) 1 000 |
 
-**`A008` · Identifier chiffre et nombre** — diff. 2, seuil 2/3  ⚠  
+**`A008` · Identifier chiffre et nombre** — diff. 2, seuil 2/3  
 *Distinguer un chiffre (0 à 9) d'un nombre*
+> « Connaitre la valeur des chiffres en fonction de leur position dans un nombre. »
 
 | | Type | Demandé | Réponse |
 |---|---|---|---|
@@ -967,15 +961,15 @@ Le chapitre est l'unité qu'un exercice bilan validerait.
 | M | nume | Un camion transporte 503 caisses. Il en livre 268. Combien de caisses reste-t-il dans le ca… | 235 |
 | M | qcm | Le glacier a vendu 423 glaces en juillet et 186 en juin. Combien de glaces de plus en juill… | c) 237 |
 
-**`C001` · Fraction comme partage** — diff. 2, seuil 2/3  ⚠  
+**`C001` · Fraction comme partage** — diff. 2, seuil 2/3  
 *Comprendre une fraction comme le partage d'un tout en parts égales*
 > « L'étude des fractions à l'école élémentaire, débutant dès le CE1, s'est appuyée sur des manipulations et des représentations variées. »
 
 | | Type | Demandé | Réponse |
 |---|---|---|---|
-| D | qcm | Un gâteau est partagé en 4 parts égales. Léa en prend 3. Quelle fraction du gâteau Léa a-t-… | a) 3/4 |
-| E | qcm | Une bande de papier est partagée en 5 parts égales. On en colorie 2. Quelle fraction de la … | a) 2/5 |
-| M | vrai | Un rectangle est découpé en 3 morceaux : un grand et deux petits. On prend le grand morceau… | faux |
+| D | qcm | Un gâteau est partagé en 4 parts égales. Léa en prend 3. Quelle fraction du gâteau a-t-elle… | a) 3/4 |
+| E | qcm | Une bande est partagée en 5 parts égales. On en colorie 2. Quelle fraction est coloriée ? | a) 2/5 |
+| M | vrai | Un rectangle est découpé en 3 morceaux : un grand, deux petits. On prend le grand. A-t-on p… | faux |
 
 **`C002` · Numérateur** — diff. 2, seuil 2/3  
 *Identifier et comprendre le rôle du numérateur*
@@ -987,7 +981,7 @@ Le chapitre est l'unité qu'un exercice bilan validerait.
 | E | qcm | Que représente le numérateur d'une fraction ? | a) Le nombre de parts que l'on pr… |
 | M | nume | Une figure est partagée en 8 parts égales. 2 parts sont coloriées en vert, toutes les autre… | 6 |
 
-**`C003` · Dénominateur** — diff. 2, seuil 2/3  ⚠  
+**`C003` · Dénominateur** — diff. 2, seuil 2/3  
 *Identifier et comprendre le rôle du dénominateur*
 > « Connaître et utiliser les mots « dénominateur » et « numérateur ». »
 
@@ -995,17 +989,17 @@ Le chapitre est l'unité qu'un exercice bilan validerait.
 |---|---|---|---|
 | D | nume | Dans la fraction 5/8, quel est le dénominateur ? | 8 |
 | E | nume | Une pizza est partagée en 6 parts égales. On en prend 1. La fraction prise s'écrit 1/…. Que… | 6 |
-| M | qcm | On partage un même tout de deux façons : une fois en 3 parts égales, une fois en 8 parts ég… | a) Quand on partage en 8 |
+| M | qcm | On partage un même tout en 3 parts égales, ou en 8 parts égales. Dans quel cas une part est… | a) Quand on partage en 8 |
 
-**`C009` · Comparer fractions de même dénominateur** — diff. 2, seuil 2/3  ⚠  
+**`C009` · Comparer fractions de même dénominateur** — diff. 2, seuil 2/3  
 *Comparer deux fractions ayant le même dénominateur*
 > « Comparer des fractions ayant le même dénominateur. »
 
 | | Type | Demandé | Réponse |
 |---|---|---|---|
 | D | qcm | Lequel est le plus grand : 3/8 ou 5/8 ? | a) 5/8 |
-| E | qcm | Tom et Lisa ont chacun leur propre tarte, partagée en 6 parts égales. Tom a mangé 2/6 de sa… | a) Lisa |
-| M | text | Range ces fractions de la plus petite à la plus grande : 7/10, 2/10, 5/10. Écris-les séparé… | 2/10, 5/10, 7/10 |
+| E | qcm | Tom a mangé 2/6 de sa tarte. Lisa a mangé 5/6 de sa tarte. Qui a mangé la plus grande part … | a) Lisa |
+| M | text | Range de la plus petite à la plus grande : 7/10, 2/10, 5/10. Écris-les avec une barre, sépa… | 2/10, 5/10, 7/10 |
 
 **`C012` · Additionner des fractions de même dénominateur** — diff. 2, seuil 2/3  
 *Additionner et soustraire deux fractions de même dénominateur*

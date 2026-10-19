@@ -43,7 +43,7 @@ Restes connus sur le contenu :
 - **tranche pilote incomplète : 23 compétences (A001 à A011, C001 à C012, CP à CM) n'ont que 3 exercices** au lieu de 6, avec des QCM dont la bonne réponse est souvent en « a » (le mélange à l'affichage le masque à l'élève, pas au validateur). À compléter par le circuit complet, de préférence avec l'étape 6 qui reprend le domaine C ;
 - MM-A-01 couvre 12 compétences (règle : 4 à 8) : à scinder lors de cette reprise ;
 - le validateur réserve `<` et `>` aux descendants de A006 (CE1), alors que le programme du CP les emploie déjà : à vérifier dans le programme avant de changer la règle ;
-- les 4 citations manquantes (A004, A005, A006, A008), les énoncés trop longs de C001, C003, C009 et les 6 cartes en brouillon sont repris le 20 octobre 2026 (en relecture).
+- reprise du 20 octobre 2026, relue et contre-relue : citations de A004, A005, A006, A008 (et rubrique de A011), énoncés de C001, C003, C009 sous le plafond du CE1, 6 anciennes cartes remises au niveau (toutes les cartes sont maintenant `relu_agent`), indice faux de EX-A027-D-01 corrigé. Plus aucune anomalie de coordination dans `RELECTURE.md`. Mineur laissé : l'exemple de MM-C-03 (C011) donne 95/60, non simplifié.
 
 ### 2.2 Application
 
@@ -264,7 +264,7 @@ Décisions prises en route : la page publique du parent est `/accord/:jeton` (co
     - jeton haché, valable 7 jours ;
     - page `/consentement/:token` et bouton « Renvoyer » limité en fréquence.
 
-**Contenu (agents, en parallèle) :** étape 5 du §7 **faite** le 19 octobre 2026 (20 compétences, 120 exercices, 5 cartes, aucune réponse fausse en relecture ; bilan dans `QUALITY.md`). Consignes rangées en modèles : `modeles_agents/consigne_*_etape5.md`. Remettre aussi au propre les 6 cartes en brouillon et les 7 anomalies CE1 (§2.1).
+**Contenu (agents, en parallèle) :** reprise des anomalies CE1 et des 6 cartes en brouillon **faite** le 20 octobre 2026 ; étape 5 du §7 **faite** le 19 octobre 2026 (20 compétences, 120 exercices, 5 cartes, aucune réponse fausse en relecture ; bilan dans `QUALITY.md`). Consignes rangées en modèles : `modeles_agents/consigne_*_etape5.md`. Remettre aussi au propre les 6 cartes en brouillon et les 7 anomalies CE1 (§2.1).
 
 ### Sprint 2 : Pédagogie de l'élève
 
