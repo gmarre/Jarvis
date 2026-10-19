@@ -13,6 +13,7 @@
 import type { PostgrestError } from '@supabase/supabase-js'
 
 import { requireSupabase } from '@/lib/supabase'
+import { messageAuth } from '@/lib/authErreurs'
 import { emptyProgress, type ProgressMap } from '@/lib/dag'
 import type { Correction } from '@/lib/exercise'
 import { skills } from '@/content'
@@ -265,7 +266,9 @@ export const supabaseRepository: DataRepository = {
     if (error) {
       // Message volontairement identique pour un email inconnu et un mot de
       // passe faux : distinguer les deux revient a publier la liste des comptes.
-      throw new RepositoryError('Adresse ou mot de passe incorrect.', error)
+      // Seule exception, l'adresse pas encore confirmee : Supabase ne la signale
+      // qu'avec le bon mot de passe, elle ne revele donc rien.
+      throw new RepositoryError(messageAuth(error, 'connexion'), error, true)
     }
 
     const session = data.user ? await chargerSession(data.user.id) : null
@@ -287,7 +290,7 @@ export const supabaseRepository: DataRepository = {
         emailRedirectTo: `${window.location.origin}/`,
       },
     })
-    if (error) throw erreur('Creation du compte', error)
+    if (error) throw new RepositoryError(messageAuth(error, 'inscription'), error, true)
 
     // Pas de session : la confirmation d'email est active, le compte attend le
     // clic sur le lien. Aucune ecriture n'est possible d'ici, le RLS la
@@ -299,6 +302,16 @@ export const supabaseRepository: DataRepository = {
     const session = await chargerSession(data.user.id)
     if (!session) throw new RepositoryError('Profil introuvable apres inscription.')
     return session
+  },
+
+  async resendConfirmation(email) {
+    const db = requireSupabase()
+    const { error } = await db.auth.resend({
+      type: 'signup',
+      email: email.trim(),
+      options: { emailRedirectTo: `${window.location.origin}/` },
+    })
+    if (error) throw new RepositoryError(messageAuth(error, 'inscription'), error, true)
   },
 
   async signOut() {

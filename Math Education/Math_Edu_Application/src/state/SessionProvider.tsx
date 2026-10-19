@@ -136,6 +136,11 @@ export function SessionProvider({ children }: { children: ReactNode }) {
     }
   }, [])
 
+  const resendConfirmation = useCallback(
+    (email: string) => repository.resendConfirmation(email),
+    [],
+  )
+
   const signOut = useCallback(async () => {
     await repository.signOut()
     setSession(null)
@@ -334,6 +339,7 @@ export function SessionProvider({ children }: { children: ReactNode }) {
       signInWithGoogle,
       signInWithPassword,
       signUp,
+      resendConfirmation,
       signOut,
       completeProfile,
       answerExercise,
@@ -354,6 +360,7 @@ export function SessionProvider({ children }: { children: ReactNode }) {
       signInWithGoogle,
       signInWithPassword,
       signUp,
+      resendConfirmation,
       signOut,
       completeProfile,
       answerExercise,

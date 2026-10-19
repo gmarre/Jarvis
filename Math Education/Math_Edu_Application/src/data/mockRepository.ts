@@ -207,6 +207,11 @@ export const mockRepository: DataRepository = {
     return wait(courante)
   },
 
+  async resendConfirmation() {
+    // Aucun email en mode demonstration : l'inscription y ouvre la session.
+    await wait(undefined)
+  },
+
   async signOut() {
     courante = null
     persister()

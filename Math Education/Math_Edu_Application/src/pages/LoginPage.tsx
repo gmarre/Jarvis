@@ -5,6 +5,7 @@ import { Button } from '@/components/ui/Button'
 import { Field, Segmented, TextInput } from '@/components/ui/Field'
 import { LoadingScreen, Notice } from '@/components/ui/Misc'
 import { safeRedirect } from '@/lib/redirect'
+import { LONGUEUR_MIN_MOT_DE_PASSE, verifierMotDePasse } from '@/lib/authErreurs'
 import { Wordmark } from '@/components/layout/AppShell'
 import { GoogleMark } from '@/components/ui/icons'
 import { useSession } from '@/state/session'
@@ -28,6 +29,8 @@ interface FormState {
   prenom: string
   email: string
   motDePasse: string
+  /** Seconde saisie : une faute de frappe dans un champ masque bloque le compte. */
+  confirmation: string
 }
 
 const INITIAL: FormState = {
@@ -35,10 +38,15 @@ const INITIAL: FormState = {
   prenom: '',
   email: '',
   motDePasse: '',
+  confirmation: '',
 }
 
+/** Delai avant de pouvoir redemander le lien : l'envoi d'emails est limite. */
+const DELAI_RENVOI_S = 60
+
 export default function LoginPage() {
-  const { status, signUp, signInWithGoogle, signInWithPassword, isDemo } = useSession()
+  const { status, signUp, signInWithGoogle, signInWithPassword, resendConfirmation, isDemo } =
+    useSession()
   const location = useLocation()
   const [mode, setMode] = useState<Mode>('inscription')
   const [form, setForm] = useState<FormState>(INITIAL)
@@ -48,6 +56,9 @@ export default function LoginPage() {
   /** Adresse a laquelle Supabase vient d'envoyer le lien de confirmation. */
   const [aConfirmer, setAConfirmer] = useState<string | null>(null)
   const [pending, setPending] = useState(false)
+  /** Horodatage du dernier envoi du lien, pour limiter les renvois. */
+  const [dernierEnvoi, setDernierEnvoi] = useState<number | null>(null)
+  const [renvoi, setRenvoi] = useState<'envoye' | 'trop_tot' | null>(null)
 
   const set = <K extends keyof FormState>(key: K, value: FormState[K]) => {
     setForm((current) => ({ ...current, [key]: value }))
@@ -66,7 +77,7 @@ export default function LoginPage() {
     if (!form.prenom.trim()) next.prenom = 'Indique ton prénom.'
     if (!form.email.trim()) next.email = 'Indique une adresse email.'
     else if (!/^\S+@\S+\.\S+$/.test(form.email.trim())) next.email = 'Cette adresse semble incomplète.'
-    if (form.motDePasse.length < 8) next.motDePasse = 'Au moins 8 caractères.'
+    Object.assign(next, verifierMotDePasse(form.motDePasse, form.confirmation))
 
     setErrors(next)
     return Object.keys(next).length === 0
@@ -108,9 +119,24 @@ export default function LoginPage() {
       })
       if (issue === 'confirmation_requise') {
         setAConfirmer(form.email.trim())
+        setDernierEnvoi(Date.now())
+        setRenvoi(null)
         setMode('connexion')
-        setForm((current) => ({ ...current, motDePasse: '' }))
+        setForm((current) => ({ ...current, motDePasse: '', confirmation: '' }))
       }
+    })
+  }
+
+  const renvoyerLien = () => {
+    if (!aConfirmer) return
+    if (dernierEnvoi && Date.now() - dernierEnvoi < DELAI_RENVOI_S * 1000) {
+      setRenvoi('trop_tot')
+      return
+    }
+    void tenter(async () => {
+      await resendConfirmation(aConfirmer)
+      setDernierEnvoi(Date.now())
+      setRenvoi('envoye')
     })
   }
 
@@ -171,6 +197,24 @@ export default function LoginPage() {
             <Notice tone="mastered" className="mb-4">
               Si {aConfirmer} n'avait pas encore de compte, un lien de confirmation vient d'y
               être envoyé. Clique dessus pour activer ton compte, puis connecte-toi ici.
+              <span className="mt-2 block">
+                Rien reçu après quelques minutes ? Regarde dans les indésirables, ou{' '}
+                <button
+                  type="button"
+                  onClick={renvoyerLien}
+                  disabled={pending}
+                  className="min-h-[44px] font-semibold text-accent underline hover:text-accent-600"
+                >
+                  renvoie le lien
+                </button>
+                .
+              </span>
+              {renvoi === 'envoye' && <span className="mt-1 block">Lien renvoyé.</span>}
+              {renvoi === 'trop_tot' && (
+                <span className="mt-1 block">
+                  Patiente une minute entre deux envois.
+                </span>
+              )}
             </Notice>
           )}
 
@@ -223,7 +267,7 @@ export default function LoginPage() {
                   <Field
                     label="Mot de passe"
                     htmlFor="motdepasse"
-                    hint="8 caractères minimum."
+                    hint={`${LONGUEUR_MIN_MOT_DE_PASSE} caractères minimum. Évite ton prénom ou une date de naissance.`}
                     error={errors.motDePasse}
                   >
                     <TextInput
@@ -233,6 +277,21 @@ export default function LoginPage() {
                       placeholder="••••••••"
                       value={form.motDePasse}
                       onChange={(e) => set('motDePasse', e.target.value)}
+                    />
+                  </Field>
+
+                  <Field
+                    label="Confirme le mot de passe"
+                    htmlFor="confirmation"
+                    error={errors.confirmation}
+                  >
+                    <TextInput
+                      id="confirmation"
+                      type="password"
+                      autoComplete="new-password"
+                      placeholder="••••••••"
+                      value={form.confirmation}
+                      onChange={(e) => set('confirmation', e.target.value)}
                     />
                   </Field>
                 </div>

@@ -50,6 +50,8 @@ export interface SessionValue {
   signInWithGoogle: () => Promise<void>
   signInWithPassword: (email: string, motDePasse: string) => Promise<void>
   signUp: (input: SignUpInput) => Promise<SignUpOutcome>
+  /** Renvoie le lien de confirmation d'une inscription par email. */
+  resendConfirmation: (email: string) => Promise<void>
   signOut: () => Promise<void>
   /** Complete un profil cree par OAuth ou par email (ecran /bienvenue). */
   completeProfile: (completion: ProfileCompletion) => Promise<void>

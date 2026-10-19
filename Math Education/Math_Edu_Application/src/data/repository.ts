@@ -110,6 +110,11 @@ export interface DataRepository {
    * le dire au lieu de faire comme si l'utilisateur etait connecte.
    */
   signUp(input: SignUpInput): Promise<Session | null>
+  /**
+   * Renvoie le lien de confirmation d'une inscription par email. Ne dit pas si
+   * l'adresse a un compte : la reponse est la meme dans les deux cas.
+   */
+  resendConfirmation(email: string): Promise<void>
   signOut(): Promise<void>
   /** Complete un profil cree par OAuth ou par email (ecran /bienvenue). */
   completeProfile(completion: ProfileCompletion): Promise<Profile>
