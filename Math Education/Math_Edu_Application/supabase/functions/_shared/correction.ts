@@ -69,6 +69,10 @@ function normalize(value: string): string {
     .replace(/[\u00A0\u202F\u2009]/g, ' ')
     .replace(/\s+/g, ' ')
     .replace(/,(?=\d)/g, '.')
+    // Signe moins : le clavier d'un telephone ou un copier-coller donne souvent
+    // le moins typographique (U+2212), un tiret demi-cadratin (U+2013) ou un
+    // trait d'union insecable. Tous valent « - » (etape 5, nombres relatifs).
+    .replace(/[\u2212\u2013\u2014\u2010\u2011\uFE63\uFF0D]/g, '-')
     // Apostrophe typographique du clavier d'un telephone, et ponctuation
     // finale : « C’est le triangle ! » vaut « c'est le triangle » (releve en
     // relecture, etape 4a). La ponctuation interne n'est pas touchee.
@@ -104,7 +108,10 @@ function normalizeLoose(value: string): string {
 }
 
 function toNumber(value: string): number | null {
-  const cleaned = normalize(value).replace(/\s/g, '')
+  const cleaned = normalize(value)
+    .replace(/\s/g, '')
+    // « (-3) » : la parenthese d'un relatif ecrit comme dans un calcul.
+    .replace(/^\(([+-]?\d+(?:\.\d+)?)\)$/, '$1')
   if (cleaned === '') return null
 
   // Fraction saisie telle quelle : 3/4.
@@ -145,6 +152,8 @@ const NOMS_UNITES: Record<string, string[]> = {
   min: ['minute', 'mn'],
   h: ['heure'],
   '°': ['degre'],
+  // Temperatures (etape 5) : « -3 °C », « -3 degres », « -3 degres Celsius ».
+  '°c': ['degre', 'degrecelsius', 'degrescelsius', 'c'],
   '\u20ac': ['euro', 'eur'],
 }
 

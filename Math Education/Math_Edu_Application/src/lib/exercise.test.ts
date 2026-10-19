@@ -332,3 +332,32 @@ describe('checkAnswer, angles en degres', () => {
     expect(checkAnswer(angle, '60°').isCorrect).toBe(false)
   })
 })
+
+describe('checkAnswer, nombres relatifs', () => {
+  const relatif: Exercise = { ...byType('numerique'), answer: { value: -3 } }
+
+  // Le moins typographique, le tiret demi-cadratin et la parenthese arrivent
+  // par le clavier d'un telephone ou un copier-coller.
+  it.each(['-3', '- 3', '\u22123', '\u2013 3', '(-3)', '-3,0'])('accepte « %s »', (saisie) => {
+    expect(checkAnswer(relatif, saisie).isCorrect).toBe(true)
+  })
+
+  it('refuse le nombre oppose', () => {
+    expect(checkAnswer(relatif, '3').isCorrect).toBe(false)
+    expect(checkAnswer(relatif, '(3)').isCorrect).toBe(false)
+  })
+
+  it('accepte une reponse attendue ecrite avec le moins typographique', () => {
+    const ecrite: Exercise = { ...relatif, answer: { value: '\u22123' } }
+    expect(checkAnswer(ecrite, '-3').isCorrect).toBe(true)
+  })
+
+  it('accepte une temperature en degres Celsius', () => {
+    const temperature: Exercise = { ...relatif, answer: { value: -3, unit: '°C' } }
+    for (const saisie of ['-3 °C', '-3°C', '\u22123 °C', '-3 degres', '-3 degrés Celsius', '-3']) {
+      expect(checkAnswer(temperature, saisie).isCorrect).toBe(true)
+    }
+    expect(checkAnswer(temperature, '-3 cm').isCorrect).toBe(false)
+  })
+})
+
