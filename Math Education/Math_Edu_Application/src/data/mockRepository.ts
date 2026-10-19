@@ -20,6 +20,8 @@ import { newId } from '@/lib/id'
 import { skills } from '@/content'
 import { assurerContenu, chargerContenuLocal, versContenuPublic } from '@/content/chargement'
 import { checkAnswer } from '@/lib/exercise'
+import { MINIMUM_AGE_WITHOUT_CONSENT, ageFrom, estMineur } from '@/lib/age'
+import { verifierValeur } from '../../supabase/functions/_shared/accord'
 import type { Exercise } from '@/types/content'
 import {
   RepositoryError,
@@ -30,7 +32,13 @@ import {
   type Session,
   type SignUpInput,
 } from './repository'
-import type { AvailabilitySlot, Booking, ContentReview, Profile } from '@/types/domain'
+import type {
+  AvailabilitySlot,
+  Booking,
+  ContentReview,
+  ModificationEnAttente,
+  Profile,
+} from '@/types/domain'
 
 const STORAGE_KEY = 'racine.session.v2'
 
@@ -116,6 +124,8 @@ function reviveSession(raw: string): Session | null {
  */
 let courante: Session | null = null
 let catalogue: Catalog | null = null
+/** Demandes soumises au parent, en memoire seulement (aucun email ne part). */
+let modifications: ModificationEnAttente[] = []
 /**
  * Recette en demonstration : desactivee, comme pour tout compte qui n'est pas
  * inscrit dans content_reviewers. Les tests l'activent (activerRecetteMock).
@@ -358,6 +368,86 @@ export const mockRepository: DataRepository = {
     return wait(nouveaux)
   },
 
+  async aUnMotDePasse() {
+    exigerSession()
+    return wait(true)
+  },
+
+  async changerMotDePasse(ancien, nouveau) {
+    exigerSession()
+    // Aucun mot de passe n'est conserve en demonstration : on ne verifie que
+    // ce que l'ecran doit deja garantir.
+    if (!ancien || !nouveau) throw new RepositoryError('Mot de passe manquant', undefined, true)
+    await wait(undefined)
+  },
+
+  async changerEmail(nouvelEmail) {
+    const session = exigerSession()
+    if (estMineur(session.profile.date_naissance)) {
+      throw new RepositoryError("Ton email se modifie avec l'accord de ton parent.", undefined, true)
+    }
+    // Pas d'email en demonstration : l'adresse change tout de suite.
+    const profile = { ...session.profile, email: nouvelEmail.trim() }
+    courante = { ...session, profile }
+    persister()
+    notifier()
+    await wait(undefined)
+  },
+
+  async demanderConsentement() {
+    const { profile } = exigerSession()
+    if (profile.consentement_parental_at) {
+      throw new RepositoryError('Ton parent a déjà donné son accord.', undefined, true)
+    }
+    if (!profile.email_parent) {
+      throw new RepositoryError("Indique d'abord l'email d'un parent.", undefined, true)
+    }
+    const age = profile.date_naissance ? ageFrom(profile.date_naissance) : null
+    if (age === null || age >= MINIMUM_AGE_WITHOUT_CONSENT) {
+      throw new RepositoryError("L'accord d'un parent n'est demandé qu'avant 15 ans.", undefined, true)
+    }
+    return wait({ envoye_a: profile.email_parent })
+  },
+
+  async demanderModification(champ, valeur) {
+    const { profile } = exigerSession()
+    const invalide = verifierValeur(champ, valeur.trim())
+    if (invalide) throw new RepositoryError(invalide, undefined, true)
+    if (!estMineur(profile.date_naissance)) {
+      throw new RepositoryError("Pas besoin de l'accord d'un parent : modifie-le directement.", undefined, true)
+    }
+    if (!profile.email_parent) {
+      throw new RepositoryError("Indique d'abord l'email d'un parent.", undefined, true)
+    }
+    const maintenant = new Date()
+    modifications = [
+      {
+        id: newId(),
+        champ,
+        nouvelle_valeur: valeur.trim(),
+        email_parent: profile.email_parent,
+        cree_le: maintenant.toISOString(),
+        expire_le: new Date(maintenant.getTime() + 7 * 24 * 3600 * 1000).toISOString(),
+      },
+      // Une seule demande en cours par champ, comme le serveur.
+      ...modifications.filter((m) => m.champ !== champ),
+    ]
+    return wait({ envoye_a: profile.email_parent })
+  },
+
+  async getModificationsEnAttente() {
+    exigerSession()
+    return wait([...modifications])
+  },
+
+  async lireAccord() {
+    throw new RepositoryError("Aucun lien n'est envoyé en mode démonstration.", undefined, true)
+  },
+
+  async repondreAccord() {
+    throw new RepositoryError("Aucun lien n'est envoyé en mode démonstration.", undefined, true)
+  },
+
   async getCatalog() {
     return wait(catalogueCourant())
   },
@@ -396,6 +486,7 @@ export function activerRecetteMock() {
 /** Remet le mock a zero. Reserve aux tests. */
 export function resetMockRepository() {
   courante = null
+  modifications = []
   catalogue = null
   relecteurMock = false
   verdicts = []

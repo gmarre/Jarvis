@@ -10,7 +10,7 @@
 // meme sur les requetes de liste, parce qu'une politique peut evoluer et qu'une
 // requete explicite reste lisible.
 
-import type { PostgrestError } from '@supabase/supabase-js'
+import { FunctionsHttpError, type PostgrestError } from '@supabase/supabase-js'
 
 import { requireSupabase } from '@/lib/supabase'
 import { messageAuth } from '@/lib/authErreurs'
@@ -27,10 +27,12 @@ import {
   type Session,
 } from './repository'
 import type {
+  AccordPublic,
   AvailabilitySlot,
   Booking,
   ContentReview,
   ExerciseAttempt,
+  ModificationEnAttente,
   PlacementResult,
   Profile,
   SkillProgress,
@@ -148,6 +150,33 @@ function erreur(operation: string, cause: PostgrestError | Error | null): Reposi
     return new RepositoryError(`${operation} : reference introuvable.`, cause)
   }
   return new RepositoryError(`${operation} : ${cause.message}`, cause)
+}
+
+// =============================================================================
+// Edge Function accord-parental
+// =============================================================================
+
+/**
+ * Appelle `accord-parental` et rend sa reponse. Une reponse d'erreur porte un
+ * message destine a l'eleve ou au parent (`erreur`), qu'on remonte tel quel :
+ * c'est la fonction qui sait pourquoi elle refuse (trop d'envois, lien expire).
+ */
+async function appelerAccord<T>(corps: Record<string, unknown>): Promise<T> {
+  const db = requireSupabase()
+  const { data, error } = await db.functions.invoke<T>('accord-parental', { body: corps })
+  if (error) {
+    let message = "Le serveur n'a pas répondu. Vérifie ta connexion et réessaie."
+    let refus = false
+    if (error instanceof FunctionsHttpError) {
+      const detail = (await error.context.json().catch(() => null)) as { erreur?: string } | null
+      if (detail?.erreur) message = detail.erreur
+      // 4xx : la demande est refusee pour une raison qu'on explique ; 5xx : panne.
+      refus = error.context.status < 500
+    }
+    throw new RepositoryError(message, error, refus)
+  }
+  if (data === null) throw new RepositoryError('Réponse vide du serveur.')
+  return data
 }
 
 // =============================================================================
@@ -514,6 +543,80 @@ export const supabaseRepository: DataRepository = {
 
     if (error) throw erreur('Ouverture des creneaux', error)
     return (data ?? []).map((slot) => ({ ...slot, places_prises: 0 }) as AvailabilitySlot)
+  },
+
+  async aUnMotDePasse() {
+    const db = requireSupabase()
+    const { data } = await db.auth.getUser()
+    const fournisseurs = (data.user?.app_metadata?.providers ?? []) as string[]
+    return fournisseurs.includes('email')
+  },
+
+  async changerMotDePasse(ancien, nouveau) {
+    const db = requireSupabase()
+    const { data: utilisateur } = await db.auth.getUser()
+    const email = utilisateur.user?.email
+    if (!email) throw new RepositoryError('Aucune session ouverte')
+
+    // Verifie l'ancien mot de passe en se reconnectant avec : Supabase ne le
+    // demande pas pour updateUser, et un telephone laisse deverrouille ne doit
+    // pas suffire a prendre le compte.
+    const verification = await db.auth.signInWithPassword({ email, password: ancien })
+    if (verification.error) {
+      throw new RepositoryError(messageAuth(verification.error, 'modification'), verification.error, true)
+    }
+    const { error } = await db.auth.updateUser({ password: nouveau })
+    if (error) throw new RepositoryError(messageAuth(error, 'modification'), error, true)
+  },
+
+  async changerEmail(nouvelEmail) {
+    const db = requireSupabase()
+    const { error } = await db.auth.updateUser(
+      { email: nouvelEmail.trim() },
+      { emailRedirectTo: `${window.location.origin}/profil` },
+    )
+    if (error) {
+      // Le trigger de 0011 refuse le changement pour un mineur : Supabase Auth
+      // le rend comme une erreur de base, sans code utile.
+      if (/database error/i.test(error.message)) {
+        throw new RepositoryError(
+          "Ton email se modifie avec l'accord de ton parent.",
+          error,
+          true,
+        )
+      }
+      throw new RepositoryError(messageAuth(error, 'modification'), error, true)
+    }
+  },
+
+  demanderConsentement() {
+    return appelerAccord<{ envoye_a: string }>({ action: 'demander_consentement' })
+  },
+
+  demanderModification(champ, valeur) {
+    return appelerAccord<{ envoye_a: string }>({ action: 'demander_modification', champ, valeur })
+  },
+
+  async getModificationsEnAttente() {
+    const db = requireSupabase()
+    const { data, error } = await db
+      .from('modifications_profil')
+      .select('id, champ, nouvelle_valeur, email_parent, cree_le, expire_le')
+      .is('confirme_le', null)
+      .is('annule_le', null)
+      .gt('expire_le', new Date().toISOString())
+      .order('cree_le', { ascending: false })
+    if (error) throw erreur('Lecture des demandes en attente', error)
+    return (data ?? []) as ModificationEnAttente[]
+  },
+
+  lireAccord(jeton) {
+    return appelerAccord<AccordPublic>({ action: 'lire', jeton })
+  },
+
+  async repondreAccord(jeton, reponse) {
+    const { etat } = await appelerAccord<{ etat: AccordPublic['etat'] }>({ action: reponse, jeton })
+    return etat
   },
 
   async getCatalog(): Promise<Catalog> {

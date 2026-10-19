@@ -19,8 +19,11 @@ import type { Correction } from '@/lib/exercise'
 import type {
   AvailabilitySlot,
   Booking,
+  AccordPublic,
+  ChampModifiable,
   ContentReview,
   ExerciseAttempt,
+  ModificationEnAttente,
   NewContentReview,
   PlacementResult,
   Profile,
@@ -140,6 +143,32 @@ export interface DataRepository {
   createBooking(slotId: string, skillId: string | null): Promise<Booking>
   deleteBooking(bookingId: string): Promise<void>
   createSlots(slots: NewSlot[]): Promise<AvailabilitySlot[]>
+
+  // --- Compte et accord parental (migration 0011) ------------------------
+
+  /** Vrai si le compte se connecte par mot de passe (et non seulement Google). */
+  aUnMotDePasse(): Promise<boolean>
+  /**
+   * Change le mot de passe apres avoir verifie l'ancien. Rejette si l'ancien
+   * est faux : un telephone laisse ouvert ne suffit pas a prendre le compte.
+   */
+  changerMotDePasse(ancien: string, nouveau: string): Promise<void>
+  /**
+   * Majeur seulement : demande le changement d'adresse a Supabase Auth, qui
+   * envoie un lien de confirmation a la nouvelle adresse. Rien ne change avant
+   * le clic. Un mineur passe par demanderModification.
+   */
+  changerEmail(nouvelEmail: string): Promise<void>
+  /** Envoie (ou renvoie) au parent l'email de consentement. Rend l'adresse visee. */
+  demanderConsentement(): Promise<{ envoye_a: string }>
+  /** Mineur : soumet un changement d'email ou de date de naissance au parent. */
+  demanderModification(champ: ChampModifiable, valeur: string): Promise<{ envoye_a: string }>
+  /** Demandes de modification en attente du parent, pour les afficher. */
+  getModificationsEnAttente(): Promise<ModificationEnAttente[]>
+  /** Page publique du parent : lit la demande liee au jeton. Sans session. */
+  lireAccord(jeton: string): Promise<AccordPublic>
+  /** Page publique du parent : accepte ou refuse. Rend l'etat final. */
+  repondreAccord(jeton: string, reponse: 'confirmer' | 'refuser'): Promise<AccordPublic['etat']>
 
   // --- Lectures -----------------------------------------------------------
 

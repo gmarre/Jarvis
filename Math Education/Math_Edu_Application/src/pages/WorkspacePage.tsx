@@ -6,7 +6,8 @@ import { AppShell, PageBody, PageHeader, StreakCard } from '@/components/layout/
 import { Badge } from '@/components/ui/Badge'
 import { Button, ButtonLink } from '@/components/ui/Button'
 import { Card, CardTitle, SectionLabel } from '@/components/ui/Card'
-import { Avatar, EmptyState, Level, Notice } from '@/components/ui/Misc'
+import { Avatar, EmptyState, Level } from '@/components/ui/Misc'
+import { ConsentementNotice } from '@/components/compte/ConsentementNotice'
 import { ProgressRing } from '@/components/ui/Progress'
 import { IconArrowRight, IconChevronRight, IconMindmap, IconVideo } from '@/components/ui/icons'
 import { useAuthenticatedSession } from '@/state/session'
@@ -57,12 +58,7 @@ export default function WorkspacePage() {
           }
         />
 
-        {profile.role === 'eleve' && !profile.consentement_parental_at && profile.email_parent && (
-          <Notice tone="progress" icon="!" className="mb-5">
-            En attente de l'accord de {profile.email_parent}. Tu peux travailler normalement en
-            attendant.
-          </Notice>
-        )}
+        <ConsentementNotice className="mb-5" />
 
         {plan.needsPlacement ? (
           <PlacementInvite />

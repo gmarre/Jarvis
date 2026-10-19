@@ -34,6 +34,15 @@ export function ageFrom(birthDate: string, now: Date = new Date()): number | nul
   return age
 }
 
+/** Majorite : en dessous, l'email et la date de naissance changent avec l'accord du parent. */
+export const AGE_MAJORITE = 18
+
+/** Mineur au sens de la regle de modification du profil (date inconnue : non). */
+export function estMineur(birthDate: string | null, now: Date = new Date()): boolean {
+  const age = birthDate ? ageFrom(birthDate, now) : null
+  return age !== null && age < AGE_MAJORITE
+}
+
 /**
  * L'accord d'un parent est-il requis pour ce compte ?
  *

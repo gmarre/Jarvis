@@ -1,11 +1,12 @@
 import { useCallback, useEffect, useMemo, useRef, useState, type ReactNode } from 'react'
 
 import { RepositoryError, repository, useMockData, type Catalog, type Session } from '@/data'
+import { needsParentalConsent } from '@/lib/age'
 import { applyAttempt, nextReviewDate } from '@/lib/dag'
 import { newId } from '@/lib/id'
 import { atMinutes } from '@/lib/schedule'
 import type { PublicExercise } from '@/types/content'
-import type { SkillProgress } from '@/types/domain'
+import type { Profile, SkillProgress } from '@/types/domain'
 import {
   SessionContext,
   type AnswerResult,
@@ -147,10 +148,33 @@ export function SessionProvider({ children }: { children: ReactNode }) {
     setStatus('anonymous')
   }, [])
 
-  const completeProfile = useCallback<SessionValue['completeProfile']>(async (completion) => {
-    const profile = await repository.completeProfile(completion)
-    setSession((current) => (current ? { ...current, profile } : current))
+  /**
+   * Envoie l'email de consentement si le profil l'exige. Ne bloque jamais
+   * l'eleve : un echec s'affiche dans le bandeau, et /travail propose de
+   * renvoyer l'email.
+   */
+  const envoyerConsentementSiRequis = useCallback((profile: Profile) => {
+    if (
+      profile.role !== 'eleve' ||
+      profile.consentement_parental_at ||
+      !profile.email_parent ||
+      !needsParentalConsent(profile.role, profile.date_naissance ?? '')
+    ) {
+      return
+    }
+    void repository.demanderConsentement().catch((cause: unknown) => {
+      setSyncError(echec("L'email à ton parent n'est pas parti.", cause))
+    })
   }, [])
+
+  const completeProfile = useCallback<SessionValue['completeProfile']>(
+    async (completion) => {
+      const profile = await repository.completeProfile(completion)
+      setSession((current) => (current ? { ...current, profile } : current))
+      envoyerConsentementSiRequis(profile)
+    },
+    [envoyerConsentementSiRequis],
+  )
 
   // --- Mutations ----------------------------------------------------------
 
@@ -302,6 +326,45 @@ export function SessionProvider({ children }: { children: ReactNode }) {
     [session, ecrire],
   )
 
+  const modifierProfil = useCallback<SessionValue['modifierProfil']>(
+    async (patch) => {
+      const avant = sessionRef.current?.profile
+      const profile = await repository.updateProfile(patch)
+      setSession((current) => (current ? { ...current, profile } : current))
+      // Consentement remis a zero par la base (nouveau parent, ou date sous
+      // 15 ans) : on previent le parent sans attendre un clic de plus.
+      if (avant?.consentement_parental_at || avant?.email_parent !== profile.email_parent) {
+        envoyerConsentementSiRequis(profile)
+      }
+      return profile
+    },
+    [envoyerConsentementSiRequis],
+  )
+
+  const aUnMotDePasse = useCallback(() => repository.aUnMotDePasse(), [])
+  const changerMotDePasse = useCallback(
+    (ancien: string, nouveau: string) => repository.changerMotDePasse(ancien, nouveau),
+    [],
+  )
+  const changerEmail = useCallback(async (nouvelEmail: string) => {
+    await repository.changerEmail(nouvelEmail)
+    // Le mock change l'adresse tout de suite ; Supabase attend le clic sur le
+    // lien. Relire la session donne la verite dans les deux cas.
+    const fraiche = await repository.getSession()
+    if (fraiche) setSession(fraiche)
+  }, [])
+  const demanderConsentement = useCallback(() => repository.demanderConsentement(), [])
+  const demanderModification = useCallback<SessionValue['demanderModification']>(
+    (champ, valeur) => repository.demanderModification(champ, valeur),
+    [],
+  )
+  const getModificationsEnAttente = useCallback(() => repository.getModificationsEnAttente(), [])
+  const lireAccord = useCallback((jeton: string) => repository.lireAccord(jeton), [])
+  const repondreAccord = useCallback<SessionValue['repondreAccord']>(
+    (jeton, reponse) => repository.repondreAccord(jeton, reponse),
+    [],
+  )
+
   const openSlots = useCallback<SessionValue['openSlots']>(
     (dayIso, starts, domaines) => {
       const profId = session?.profile.id
@@ -349,6 +412,15 @@ export function SessionProvider({ children }: { children: ReactNode }) {
       bookSlot,
       cancelBooking,
       updateProfile,
+      modifierProfil,
+      aUnMotDePasse,
+      changerMotDePasse,
+      changerEmail,
+      demanderConsentement,
+      demanderModification,
+      getModificationsEnAttente,
+      lireAccord,
+      repondreAccord,
       openSlots,
     }),
     [
@@ -370,6 +442,15 @@ export function SessionProvider({ children }: { children: ReactNode }) {
       bookSlot,
       cancelBooking,
       updateProfile,
+      modifierProfil,
+      aUnMotDePasse,
+      changerMotDePasse,
+      changerEmail,
+      demanderConsentement,
+      demanderModification,
+      getModificationsEnAttente,
+      lireAccord,
+      repondreAccord,
       openSlots,
     ],
   )

@@ -475,3 +475,41 @@ describe('recette du contenu', () => {
     ).rejects.toBeInstanceOf(RepositoryError)
   })
 })
+
+describe('accord parental', () => {
+  it('envoie le consentement au parent d un eleve de moins de 15 ans', async () => {
+    await inscrire()
+    await mockRepository.completeProfile({ ...COMPLETION, date_naissance: '2015-04-02' })
+    await expect(mockRepository.demanderConsentement()).resolves.toEqual({
+      envoye_a: 'parent@test.fr',
+    })
+  })
+
+  it('ne demande pas de consentement a partir de 15 ans', async () => {
+    await inscrire()
+    await mockRepository.completeProfile({ ...COMPLETION, date_naissance: '2008-01-01' })
+    await expect(mockRepository.demanderConsentement()).rejects.toThrow(RepositoryError)
+  })
+
+  it('soumet au parent le changement d email d un mineur', async () => {
+    await inscrire()
+    await mockRepository.completeProfile(COMPLETION)
+    await mockRepository.demanderModification('email', 'nina2@test.fr')
+    const demandes = await mockRepository.getModificationsEnAttente()
+    expect(demandes).toHaveLength(1)
+    expect(demandes[0].nouvelle_valeur).toBe('nina2@test.fr')
+    // Le mineur ne peut pas contourner le parent.
+    await expect(mockRepository.changerEmail('nina3@test.fr')).rejects.toThrow(RepositoryError)
+  })
+
+  it('laisse un majeur changer son email sans passer par un parent', async () => {
+    await inscrire()
+    await mockRepository.completeProfile({ ...COMPLETION, date_naissance: '2000-01-01' })
+    await expect(mockRepository.demanderModification('email', 'x@test.fr')).rejects.toThrow(
+      RepositoryError,
+    )
+    await mockRepository.changerEmail('nina.adulte@test.fr')
+    const session = await mockRepository.getSession()
+    expect(session?.profile.email).toBe('nina.adulte@test.fr')
+  })
+})

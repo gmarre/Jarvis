@@ -4,7 +4,13 @@ import type { Catalog, ProfileCompletion, Session, SignUpInput } from '@/data'
 import type { ProgressMap } from '@/lib/dag'
 import type { Correction } from '@/lib/exercise'
 import type { PublicExercise } from '@/types/content'
-import type { PlacementResult, Profile } from '@/types/domain'
+import type {
+  AccordPublic,
+  ChampModifiable,
+  ModificationEnAttente,
+  PlacementResult,
+  Profile,
+} from '@/types/domain'
 
 // Contrat de la session et hooks d'acces. Separe du provider pour que ce
 // fichier n'exporte aucun composant : c'est ce qui garde le rechargement a
@@ -79,6 +85,23 @@ export interface SessionValue {
   bookSlot: (slotId: string, skillId: string | null) => void
   cancelBooking: (bookingId: string) => void
   updateProfile: (patch: Partial<Profile>) => void
+  /**
+   * Comme updateProfile, mais attend le serveur et reprend le profil qu'il
+   * rend : la base peut avoir remis le consentement a zero (migration 0011).
+   * Rejette en cas d'echec, pour que le formulaire l'affiche.
+   */
+  modifierProfil: (patch: Partial<Profile>) => Promise<Profile>
+
+  // --- Compte et accord parental -----------------------------------------
+
+  aUnMotDePasse: () => Promise<boolean>
+  changerMotDePasse: (ancien: string, nouveau: string) => Promise<void>
+  changerEmail: (nouvelEmail: string) => Promise<void>
+  demanderConsentement: () => Promise<{ envoye_a: string }>
+  demanderModification: (champ: ChampModifiable, valeur: string) => Promise<{ envoye_a: string }>
+  getModificationsEnAttente: () => Promise<ModificationEnAttente[]>
+  lireAccord: (jeton: string) => Promise<AccordPublic>
+  repondreAccord: (jeton: string, reponse: 'confirmer' | 'refuser') => Promise<AccordPublic['etat']>
   /**
    * Ouverture de creneaux par un professeur (ecran 7, vue prof). `starts` en
    * minutes depuis minuit, au quart d'heure : 555 vaut 9h15.

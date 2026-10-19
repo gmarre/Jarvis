@@ -31,6 +31,28 @@ export interface Profile {
   abonnement: Abonnement | null
 }
 
+/** Ce qu'un mineur ne change qu'avec l'accord de son parent (migration 0011). */
+export type ChampModifiable = 'date_naissance' | 'email'
+
+/** Demande de modification envoyee au parent, pas encore tranchee. */
+export interface ModificationEnAttente {
+  id: string
+  champ: ChampModifiable
+  nouvelle_valeur: string
+  email_parent: string
+  cree_le: string
+  expire_le: string
+}
+
+/** Ce que la page publique /accord/:jeton montre au parent. */
+export interface AccordPublic {
+  type: 'consentement' | 'modification'
+  prenom: string
+  champ: ChampModifiable | null
+  nouvelle_valeur: string | null
+  etat: 'en_attente' | 'confirme' | 'expire' | 'annule'
+}
+
 export interface Abonnement {
   prix_mensuel: number
   engagement_mois: number
