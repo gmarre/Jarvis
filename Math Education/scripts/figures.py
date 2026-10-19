@@ -934,6 +934,10 @@ def _rapporteur(p: dict) -> tuple[str, str]:
 
     corps = [f'<path d="M{cx - R},{cy} A{R},{R} 0 0 1 {cx + R},{cy} Z" fill="#fef9c3" '
              f'fill-opacity="0.85" stroke="{TRAIT}" stroke-width="1.2"/>']
+    # Les nombres sont dessines apres les cotes de l'angle, avec un halo couleur
+    # du rapporteur : un cote pose sur une dizaine rayait le nombre a lire
+    # (relecture 4b L5).
+    nombres: list[str] = []
     for d in range(0, 181, 5):
         long = 10 if d % 10 == 0 else 6
         x1, y1 = point(d, R)
@@ -944,10 +948,10 @@ def _rapporteur(p: dict) -> tuple[str, str]:
             # couvre un cote de l'angle.
             haut = -8 if d in (0, 180) else 4
             x, y = point(d, R - 20)
-            corps.append(_texte(x, y + haut, str(d), 10))
+            nombres.append(_texte(x, y + haut, str(d), 10))
             if double:
                 x, y = point(d, R - 40)
-                corps.append(_texte(x, y + haut, str(180 - d), 9, couleur="#b91c1c"))
+                nombres.append(_texte(x, y + haut, str(180 - d), 9, couleur="#b91c1c"))
     corps.append(f'<circle cx="{cx}" cy="{cy}" r="2.5" fill="{TRAIT}"/>')
     # Les deux cotes de l'angle, qui depassent du rapporteur.
     d1 = 0 if depart == "droite" else 180
@@ -965,6 +969,8 @@ def _rapporteur(p: dict) -> tuple[str, str]:
         decal = 12 if d < 90 else -12 if d > 90 else 0
         corps.append(_texte(min(max(lx + decal, 8), L - 8), max(ly - 6, 12), str(nom)[:2], 14,
                             couleur=ACCENT, gras=True))
+    corps += [n.replace("<text ", '<text stroke="#fef9c3" stroke-width="3" paint-order="stroke" ', 1)
+              for n in nombres]
     if erreur == "centre":
         corps.append(f'<circle cx="{sx}" cy="{cy}" r="3" fill="{ACCENT}"/>')
     corps.append(_texte(sx, cy + 20, sommet, 14, gras=True))
