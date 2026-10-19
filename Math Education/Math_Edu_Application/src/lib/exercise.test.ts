@@ -358,6 +358,20 @@ describe('checkAnswer, nombres relatifs', () => {
       expect(checkAnswer(temperature, saisie).isCorrect).toBe(true)
     }
     expect(checkAnswer(temperature, '-3 cm').isCorrect).toBe(false)
+    const chaud: Exercise = { ...relatif, answer: { value: 8, unit: '°C' } }
+    for (const saisie of ['+8 °C', '+8', '8 °C', '(+8)']) {
+      expect(checkAnswer(chaud, saisie).isCorrect).toBe(true)
+    }
+  })
+})
+
+describe('formatExpected, nombres relatifs', () => {
+  it('affiche un negatif avec le signe moins typographique', () => {
+    const moins = String.fromCharCode(0x2212)
+    const base = byType('numerique')
+    expect(formatExpected({ ...base, answer: { value: -3 } })).toBe(`${moins}3`)
+    expect(formatExpected({ ...base, answer: { value: -2.5, unit: '°C' } })).toBe(`${moins}2,5 °C`)
+    expect(formatExpected({ ...base, answer: { value: 4 } })).toBe('4')
   })
 })
 

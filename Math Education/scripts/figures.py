@@ -1351,10 +1351,18 @@ def _droite_graduee(p: dict) -> tuple[str, str]:
             for d in (2.6, -2.6):
                 corps.append(_ligne(x2, base, x2 - 9 * math.cos(ang + d / 6), base - 9 * math.sin(ang + d / 6),
                                     couleur=ACCENT, epaisseur=1.8))
-            if etage:
-                # Une fleche d'un etage superieur arrive en l'air : un pointille
-                # la ramene sur sa graduation d'arrivee, sans ambiguite.
-                corps.append(f'<line x1="{x2:.1f}" y1="{base + 2:.1f}" x2="{x2:.1f}" y2="{y - 8:.1f}" '
+            # La fleche part et arrive au-dessus de la droite : un pointille la
+            # ramene sur ses graduations de depart et d'arrivee. Pas de pointille
+            # la ou un point est dessine : son nom le cacherait, et le point
+            # suffit a lire la valeur. A l'etage 0, seul le depart ou l'arrivee
+            # sans point en a besoin ; au-dessus, l'arrivee toujours.
+            valeurs_points = {v for v, _ in points}
+            for extremite, xe in ((de, x1), (a, x2)):
+                if extremite in valeurs_points and not (etage and extremite == a):
+                    continue
+                if etage and extremite == de:
+                    continue
+                corps.append(f'<line x1="{xe:.1f}" y1="{base + 2:.1f}" x2="{xe:.1f}" y2="{y - 8:.1f}" '
                              f'stroke="{ACCENT}" stroke-width="1.2" stroke-dasharray="3 3"/>')
             if t:
                 corps.append(_texte((x1 + x2) / 2, (base + sommet) / 2 - 6, t, 14, couleur=ACCENT, gras=True))

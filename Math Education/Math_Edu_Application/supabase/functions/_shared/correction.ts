@@ -182,7 +182,8 @@ function formesUnite(unit: string): Set<string> {
  */
 function nombreAvecUnite(raw: string, unit: string | null | undefined): number | null {
   if (!unit) return null
-  const morceaux = normalizeLoose(raw).match(/^(-?\d+(?:\.\d+)?)(.+)$/)
+  // « +8 °C » : le signe plus d'un relatif positif est permis (etape 5).
+  const morceaux = normalizeLoose(raw).match(/^([+-]?\d+(?:\.\d+)?)(.+)$/)
   if (!morceaux || !formesUnite(unit).has(morceaux[2])) return null
   return Number(morceaux[1])
 }
@@ -271,7 +272,13 @@ export function formatExpected(exercise: ExerciceACorriger): string {
   // etape 3). Un prix entier reste sans decimales : 42 €.
   const prix = unit === '€' && typeof value === 'number' && !Number.isInteger(value)
   const nombre = typeof value === 'number' ? (prix ? value.toFixed(2) : String(value)) : String(value)
-  const shown = typeof value === 'number' ? nombre.replace('.', ',') : nombre
+  // Un negatif s'affiche avec le signe moins typographique, comme dans les
+  // enonces : le trait d'union est trop court pour un eleve qui decouvre les
+  // relatifs (etape 5). Ecrit par son code, invisible a la relecture.
+  const shown =
+    typeof value === 'number'
+      ? nombre.replace('.', ',').replace(/^-/, String.fromCharCode(0x2212))
+      : nombre
   // Le degre se colle au nombre (« 120° »), toutes les autres unites
   // s'en separent par une espace (« 12 cm »).
   if (unit === '°') return `${shown}°`
