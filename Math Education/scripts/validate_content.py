@@ -524,6 +524,17 @@ VOCABULAIRE_PROPORTIONNALITE = [
     (re.compile(r"rapporteur", re.I), "« rapporteur »", "6e"),
     (re.compile(r"(?<!segment )(?<!segment \$)\[[A-Z]{2}\](?!\))"), "« [AB] » sans le mot segment", "6e"),
     (re.compile(r"(?<!droite )(?<!droite \$)(?<![A-Za-z])\((?!CP|CE|CM)[A-Z]{2}\)"), "« (AB) » sans le mot droite", "6e"),
+    # Nombres relatifs (etape 5) : « Les nombres relatifs sont introduits afin
+    # de rendre possible toutes les soustractions », en 5e. Avant, un nombre
+    # negatif est une notion que l'eleve n'a pas. Le motif veut un signe moins
+    # (trait d'union ou U+2212) colle au chiffre et precede d'un debut, d'une
+    # espace ou d'une ouverture : « 7 - 3 » (soustraction) et « CE1-CM2 » ne
+    # comptent pas.
+    (re.compile(r"(?:^|(?<=[\s(=:;$\[{]))[-" + chr(0x2212) + r"]\d"), "un nombre négatif", "5e"),
+    # Valeur absolue (decision de Gauthier, 19 octobre 2026) : le programme du
+    # college ne demande pas la notation |x| ; on dit « distance a zero ».
+    (re.compile(r"\|\s*[-+" + chr(0x2212) + r"]?\s*\d[\d,.]*\s*\||\\[lr]?vert|\\left\|"),
+     "la notation |x| de la valeur absolue", None),
 ]
 
 CURSUS = ["CP", "CE1", "CE2", "CM1", "CM2", "6e", "5e", "4e", "3e", "2nde", "1ere", "Terminale"]
