@@ -1,4 +1,4 @@
-import { NavLink, useLocation } from 'react-router-dom'
+import { Link, NavLink, useLocation } from 'react-router-dom'
 import type { ComponentType, ReactNode, SVGProps } from 'react'
 
 import { cn } from '@/lib/cn'
@@ -42,7 +42,8 @@ const TEACHER_NAV: NavItem[] = [
 ]
 
 const PARENT_NAV: NavItem[] = [
-  { to: '/parent', label: 'Espace parent', shortLabel: 'Parent', icon: IconUser },
+  { to: '/parent', label: 'Espace parent', shortLabel: 'Parent', icon: IconWorkspace },
+  { to: '/profil', label: 'Mon profil', shortLabel: 'Profil', icon: IconUser },
 ]
 
 /** Ajoute pour les seuls relecteurs du contenu (migration 0008). */
@@ -122,14 +123,20 @@ export function AppShell({ children, railTop, railBottom }: AppShellProps) {
         <header className="flex items-center justify-between border-b border-divider bg-surface px-5 py-3.5 lg:hidden">
           <Wordmark className="text-base" />
           {profile && (
-            <div className="flex items-center gap-2.5">
+            // L'avatar est la porte d'entree attendue vers le profil : un rond
+            // d'initiales qui ne reagit pas au toucher passe pour un bug.
+            <Link
+              to="/profil"
+              aria-label="Mon profil"
+              className="-mr-1.5 flex min-h-[44px] items-center gap-2.5 rounded-xl px-1.5 transition-colors hover:bg-muted"
+            >
               {profile.niveau_scolaire && (
                 <span className="rounded-[10px] border border-line px-2.5 py-1.5 text-xs font-semibold text-ink-muted">
                   <Level value={profile.niveau_scolaire} />
                 </span>
               )}
               <Avatar initials={initials(profile.prenom, profile.nom)} size="sm" />
-            </div>
+            </Link>
           )}
         </header>
 

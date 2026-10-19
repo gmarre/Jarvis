@@ -41,7 +41,11 @@ export default function WorkspacePage() {
                   : `${plan.totalMinutes} minutes aujourd'hui : ${describePlan(plan.priorityExerciseCount, plan.reviews.length)}.`
           }
           actions={
-            <div className="hidden items-center gap-3 lg:flex">
+            <Link
+              to="/profil"
+              aria-label="Mon profil"
+              className="hidden items-center gap-3 rounded-xl transition-opacity hover:opacity-80 lg:flex"
+            >
               {profile.niveau_scolaire && (
                 <span className="rounded-[10px] border border-line bg-surface px-3.5 py-2.5 text-[12.5px] font-semibold text-ink-muted">
                   <Level value={profile.niveau_scolaire} /> · {profile.prenom}
@@ -49,7 +53,7 @@ export default function WorkspacePage() {
                 </span>
               )}
               <Avatar initials={initials(profile.prenom, profile.nom)} size="lg" />
-            </div>
+            </Link>
           }
         />
 
