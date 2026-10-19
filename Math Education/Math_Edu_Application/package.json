@@ -15,7 +15,7 @@
     "test:watch": "vitest",
     "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
     "format": "prettier --write \"src/**/*.{ts,tsx,css}\"",
-    "test:sql": "bash supabase/tests/run.sh",
+    "test:sql": "node supabase/tests/run-pglite.mjs",
     "check:supabase": "bash supabase/tests/verifier-projet.sh",
     "check:db": "node supabase/tests/integration.mjs"
   },
@@ -29,6 +29,7 @@
     "reactflow": "^11.11.4"
   },
   "devDependencies": {
+    "@electric-sql/pglite": "0.5.8",
     "@types/katex": "^0.16.8",
     "@types/react": "^18.3.11",
     "@types/react-dom": "^18.3.0",

@@ -4,8 +4,10 @@
 -- consentement, un mineur ne change ni sa date de naissance ni son email sans
 -- le serveur, et le consentement se remet a zero quand il le faut.
 --
--- Depend de 01 et 02 pour les comptes. Lea (2222) devient mineure, Tom (3333)
--- majeur.
+-- Depend de 01 et 02 pour les comptes. Lea (2222) devient mineure ; Paul
+-- (aaaa), cree ici, est majeur. Tom (3333) ne convient pas : le test 7 du
+-- fichier 01 supprime son compte, et un test sur un compte absent ne rend
+-- aucune ligne, donc ne peut pas echouer.
 
 grant usage on schema public to authenticated;
 grant select, insert, update, delete on all tables in schema public to authenticated;
@@ -13,11 +15,14 @@ grant select, insert, update, delete on all tables in schema public to authentic
 -- Preparation en appel serveur : le trigger de protection laisse passer.
 set request.jwt.claim.role = 'service_role';
 
+insert into auth.users (id, email, raw_user_meta_data) values
+  ('aaaaaaaa-aaaa-aaaa-aaaa-aaaaaaaaaaaa', 'paul@test.fr', '{"role":"eleve","prenom":"Paul"}');
+
 update profiles set date_naissance = '2013-05-01', email_parent = 'parent.lea@test.fr'
 where id = '22222222-2222-2222-2222-222222222222';
 update profiles set date_naissance = '2000-01-01', consentement_parental_at = now(),
-                    email_parent = 'parent.tom@test.fr'
-where id = '33333333-3333-3333-3333-333333333333';
+                    email_parent = 'parent.paul@test.fr'
+where id = 'aaaaaaaa-aaaa-aaaa-aaaa-aaaaaaaaaaaa';
 
 insert into modifications_profil (eleve_id, champ, nouvelle_valeur, email_parent, token_hash, expire_le)
 values ('44444444-4444-4444-4444-444444444444', 'email', 'ines2@test.fr', 'p@test.fr', 'h-ines', now() + interval '7 days');
@@ -50,12 +55,12 @@ select 'TEST 61 un mineur ne change pas sa date de naissance' as test,
        date_naissance, (date_naissance = '2013-05-01') as ok
 from profiles where id = '22222222-2222-2222-2222-222222222222';
 
-\echo '--- Tom (majeur) passe sous 15 ans : accepte, consentement remis a zero ---'
-set request.jwt.claim.sub = '33333333-3333-3333-3333-333333333333';
-update profiles set date_naissance = '2016-01-01' where id = '33333333-3333-3333-3333-333333333333';
+\echo '--- Paul (majeur) passe sous 15 ans : accepte, consentement remis a zero ---'
+set request.jwt.claim.sub = 'aaaaaaaa-aaaa-aaaa-aaaa-aaaaaaaaaaaa';
+update profiles set date_naissance = '2016-01-01' where id = 'aaaaaaaa-aaaa-aaaa-aaaa-aaaaaaaaaaaa';
 select 'TEST 62 un majeur change sa date, le consentement redevient exige' as test,
        (date_naissance = '2016-01-01' and consentement_parental_at is null) as ok
-from profiles where id = '33333333-3333-3333-3333-333333333333';
+from profiles where id = 'aaaaaaaa-aaaa-aaaa-aaaa-aaaaaaaaaaaa';
 
 -- --- Email du parent -----------------------------------------------------------
 

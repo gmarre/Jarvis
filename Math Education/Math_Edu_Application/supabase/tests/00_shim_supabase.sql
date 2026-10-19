@@ -11,14 +11,15 @@ create table auth.users (
 );
 
 create or replace function auth.uid() returns uuid
-language sql stable as $$ select current_setting('request.jwt.claim.sub', true)::uuid $$;
+language sql stable as $$ select nullif(current_setting('request.jwt.claim.sub', true), '')::uuid $$;
 
 -- auth.role() rend le claim 'role' du JWT : 'authenticated' pour un utilisateur
--- connecte, 'service_role' pour un appel serveur. Les tests se placent par
+-- connecte, 'service_role' pour un appel serveur. nullif : un reglage remis
+-- a zero (reset all) vaut '' et non null. Les tests se placent par
 -- defaut en 'authenticated', c'est le cas a verrouiller.
 create or replace function auth.role() returns text
 language sql stable as $$
-  select coalesce(current_setting('request.jwt.claim.role', true), 'authenticated')
+  select coalesce(nullif(current_setting('request.jwt.claim.role', true), ''), 'authenticated')
 $$;
 
 do $$ begin create role authenticated; exception when duplicate_object then null; end $$;
