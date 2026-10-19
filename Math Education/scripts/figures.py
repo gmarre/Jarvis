@@ -1202,8 +1202,330 @@ def _cubes(p: dict) -> tuple[str, str]:
     return _svg(L, H, corps, alt), alt
 
 
+# ---------------------------------------------------------------------------
+#  Nombres relatifs (etape 5)
+# ---------------------------------------------------------------------------
+
+# Signe moins typographique (U+2212) : le trait d'union est trop court pour un
+# eleve qui decouvre les negatifs, et c'est l'ecriture des manuels.
+MOINS = chr(0x2212)
+
+
+def _relatif(x: Fraction, fmt: str = "auto") -> str:
+    """Ecriture d'un relatif : « −3 », « −0,5 », « 4 »."""
+    if x < 0:
+        return MOINS + _texte_nombre(-x, fmt)
+    return _texte_nombre(x, fmt)
+
+
+def _ecart_signe(x: Fraction, fmt: str = "auto") -> str:
+    """Deplacement : « +7 », « −3 »."""
+    return ("+" if x > 0 else "") + _relatif(x, fmt)
+
+
+def _sur_la_grille(v: Fraction, origine: Fraction, grain: Fraction, quoi: str) -> None:
+    if (v - origine) % grain != 0:
+        raise FigureInvalide(f"{quoi} : {_relatif(v)} ne tombe pas sur une graduation (grain {grain})")
+
+
+def _droite_graduee(p: dict) -> tuple[str, str]:
+    """Droite graduee des relatifs, horizontale ou verticale (thermometre, altitude).
+
+    A la difference de `demi_droite`, la droite n'a pas d'origine dessinee :
+    elle se prolonge des deux cotes, et 0 est une graduation comme une autre,
+    mise en evidence. Les negatifs s'ecrivent avec le signe moins « − ».
+
+    params :
+      min, max          bornes affichees ; min <= 0 <= max
+      pas               ecart entre deux graduations principales (defaut 1) ;
+                        (max - min) / pas entier, entre 2 et 24
+      sous_graduations  intervalles entre deux graduations principales (1 a 10)
+      etiquettes        "toutes" (defaut), "aucune", "zero" (0 seul) ou liste de
+                        valeurs ; pour faire compter l'eleve, n'ecrire que 0 et une
+                        autre valeur
+      format            "auto" ou "fraction"
+      orientation       "horizontale" (defaut) ou "verticale"
+      unite             texte ecrit en bout d'axe (« °C », « m »), facultatif
+      points            [{"valeur": x, "nom": "A"}] sur une graduation
+      fleches           [{"de": a, "a": b, "etiquette": true | false | "texte"}] :
+                        deplacement de a vers b ; true ecrit l'ecart signe (+7)
+      ecarts            [{"de": a, "a": b, "etiquette": true | false | "texte"}] :
+                        accolade entre deux valeurs ; true ecrit la distance (7)
+    """
+    mini = _nombre(p.get("min"), "min")
+    maxi = _nombre(p.get("max"), "max")
+    pas = _nombre(p.get("pas", 1), "pas")
+    if pas <= 0:
+        raise FigureInvalide("pas : doit etre strictement positif")
+    if not (mini <= 0 <= maxi) or mini == maxi:
+        raise FigureInvalide("min et max : la droite doit contenir 0 (min <= 0 <= max)")
+    if (maxi - mini) % pas != 0:
+        raise FigureInvalide("min, max, pas : (max - min) doit etre un multiple du pas")
+    n = int((maxi - mini) / pas)
+    if not 2 <= n <= 24:
+        raise FigureInvalide(f"(max - min) / pas = {n} : entre 2 et 24 graduations attendues")
+    if mini % pas != 0:
+        raise FigureInvalide("min : doit etre un multiple du pas (0 tombe alors sur une graduation)")
+    sous = _entier(p, "sous_graduations", 1, 10, 1)
+    fmt = p.get("format", "auto")
+    vertical = p.get("orientation", "horizontale") == "verticale"
+    if p.get("orientation", "horizontale") not in ("horizontale", "verticale"):
+        raise FigureInvalide("orientation : \"horizontale\" ou \"verticale\"")
+    unite = str(p.get("unite", ""))[:6]
+    grain = pas / sous
+
+    def verifier(v: Fraction, quoi: str) -> Fraction:
+        if not (mini <= v <= maxi):
+            raise FigureInvalide(f"{quoi} : {_relatif(v)} hors de la droite ({_relatif(mini)} à {_relatif(maxi)})")
+        _sur_la_grille(v, mini, grain, quoi)
+        return v
+
+    etiq = p.get("etiquettes", "toutes")
+    if etiq == "toutes":
+        etiquettes = [mini + pas * k for k in range(n + 1)]
+    elif etiq == "aucune":
+        etiquettes = []
+    elif etiq == "zero":
+        etiquettes = [Fraction(0)]
+    elif isinstance(etiq, list):
+        etiquettes = [verifier(_nombre(v, "etiquettes"), "etiquette") for v in etiq]
+    else:
+        raise FigureInvalide("etiquettes : \"toutes\", \"aucune\", \"zero\" ou liste de valeurs")
+
+    points = []
+    for pt in p.get("points", []):
+        nom = str(pt.get("nom", ""))[:3]
+        points.append((verifier(_nombre(pt.get("valeur"), "points.valeur"), f"point {nom}"), nom))
+    fleches = []
+    for f in p.get("fleches", []):
+        de = verifier(_nombre(f.get("de"), "fleches.de"), "fleche (de)")
+        a = verifier(_nombre(f.get("a"), "fleches.a"), "fleche (a)")
+        if de == a:
+            raise FigureInvalide("fleche : depart et arrivee confondus")
+        e = f.get("etiquette", True)
+        fleches.append((de, a, _ecart_signe(a - de, fmt) if e is True else (str(e) if e else "")))
+    ecarts = []
+    for f in p.get("ecarts", []):
+        de = verifier(_nombre(f.get("de"), "ecarts.de"), "ecart (de)")
+        a = verifier(_nombre(f.get("a"), "ecarts.a"), "ecart (a)")
+        if de == a:
+            raise FigureInvalide("ecart : extremites confondues")
+        e = f.get("etiquette", True)
+        ecarts.append((min(de, a), max(de, a), _texte_nombre(abs(a - de), fmt) if e is True else (str(e) if e else "")))
+
+    corps: list[str] = []
+    if not vertical:
+        L, m = 420, 30
+        # Chaque fleche supplementaire monte d'un etage (deplacements enchaines).
+        y = 52 + (58 + 22 * (len(fleches) - 1) if fleches else 0)
+        H = y + (72 if ecarts else 46)
+
+        def x(v: Fraction) -> float:
+            return m + 16 + float((v - mini) / (maxi - mini)) * (L - 2 * m - 32)
+
+        # Prolongee des deux cotes : pointille a gauche, fleche a droite.
+        corps.append(f'<line x1="{m - 10}" y1="{y}" x2="{m + 6}" y2="{y}" stroke="{TRAIT}" '
+                     f'stroke-width="2" stroke-dasharray="4 4"/>')
+        corps.append(_ligne(m + 6, y, L - m, y, epaisseur=2))
+        corps.append(f'<path d="M{L - m + 6:.1f},{y:.1f} l-10,-5 v10 z" fill="{TRAIT}"/>')
+        for i in range(n * sous + 1):
+            v = mini + grain * i
+            principal = i % sous == 0
+            t = 12 if v == 0 else 9 if principal else 5
+            corps.append(_ligne(x(v), y - t, x(v), y + t, epaisseur=2.4 if v == 0 else 1.8 if principal else 1.2))
+        for v in etiquettes:
+            corps.append(_texte(x(v), y + 28, _relatif(v, fmt), 13, gras=v == 0))
+        if unite:
+            corps.append(_texte(L - m + 4, y + 28, unite, 12, couleur=DOUX))
+        for etage, (de, a, t) in enumerate(fleches):
+            x1, x2 = x(de), x(a)
+            # La courbe part au-dessus des noms de points (y - 16) pour ne pas
+            # les barrer.
+            base = y - 32 - 22 * etage
+            h = min(38, 14 + abs(x2 - x1) * 0.12)
+            sommet = base - h
+            corps.append(f'<path d="M{x1:.1f},{base:.1f} Q{(x1 + x2) / 2:.1f},{sommet:.1f} {x2:.1f},{base:.1f}" '
+                         f'fill="none" stroke="{ACCENT}" stroke-width="1.8"/>')
+            # Pointe orientee selon la tangente en bout de courbe.
+            ang = math.atan2(base - sommet, x2 - (x1 + x2) / 2)
+            for d in (2.6, -2.6):
+                corps.append(_ligne(x2, base, x2 - 9 * math.cos(ang + d / 6), base - 9 * math.sin(ang + d / 6),
+                                    couleur=ACCENT, epaisseur=1.8))
+            if etage:
+                # Une fleche d'un etage superieur arrive en l'air : un pointille
+                # la ramene sur sa graduation d'arrivee, sans ambiguite.
+                corps.append(f'<line x1="{x2:.1f}" y1="{base + 2:.1f}" x2="{x2:.1f}" y2="{y - 8:.1f}" '
+                             f'stroke="{ACCENT}" stroke-width="1.2" stroke-dasharray="3 3"/>')
+            if t:
+                corps.append(_texte((x1 + x2) / 2, (base + sommet) / 2 - 6, t, 14, couleur=ACCENT, gras=True))
+        for v, nom in points:
+            corps.append(f'<circle cx="{x(v):.1f}" cy="{y:.1f}" r="4.5" fill="{ACCENT}"/>')
+            corps.append(_texte(x(v), y - 16, nom, 15, couleur=ACCENT, gras=True))
+        for de, a, t in ecarts:
+            yb = y + 40
+            corps.append(f'<path d="M{x(de):.1f},{yb - 5:.1f} v5 H{x(a):.1f} v-5" fill="none" stroke="{TRAIT}" stroke-width="1.4"/>')
+            if t:
+                corps.append(_texte((x(de) + x(a)) / 2, yb + 18, t, 13))
+    else:
+        H, m = 400, 34
+        xl = 92
+        L = 300 if (fleches or ecarts) else 220
+
+        def yv(v: Fraction) -> float:
+            return H - m - 10 - float((v - mini) / (maxi - mini)) * (H - 2 * m - 30)
+
+        corps.append(f'<line x1="{xl}" y1="{H - m + 6}" x2="{xl}" y2="{H - m - 8}" stroke="{TRAIT}" '
+                     f'stroke-width="2" stroke-dasharray="4 4"/>')
+        corps.append(_ligne(xl, H - m - 8, xl, m - 6, epaisseur=2))
+        corps.append(f'<path d="M{xl:.1f},{m - 12:.1f} l-5,10 h10 z" fill="{TRAIT}"/>')
+        if unite:
+            corps.append(_texte(xl, m - 18, unite, 12, couleur=DOUX))
+        for i in range(n * sous + 1):
+            v = mini + grain * i
+            principal = i % sous == 0
+            t = 12 if v == 0 else 9 if principal else 5
+            corps.append(_ligne(xl - t, yv(v), xl + t, yv(v), epaisseur=2.4 if v == 0 else 1.8 if principal else 1.2))
+        for v in etiquettes:
+            corps.append(_texte(xl - 18, yv(v) + 4.5, _relatif(v, fmt), 13, ancre="end", gras=v == 0))
+        for v, nom in points:
+            corps.append(f'<circle cx="{xl:.1f}" cy="{yv(v):.1f}" r="4.5" fill="{ACCENT}"/>')
+            corps.append(_texte(xl + 16, yv(v) + 5, nom, 15, ancre="start", couleur=ACCENT, gras=True))
+        for de, a, t in fleches:
+            y1, y2 = yv(de), yv(a)
+            larg = min(60, 18 + abs(y2 - y1) * 0.18)
+            cx = xl + 36 + larg
+            corps.append(f'<path d="M{xl + 34:.1f},{y1:.1f} Q{cx:.1f},{(y1 + y2) / 2:.1f} {xl + 34:.1f},{y2:.1f}" '
+                         f'fill="none" stroke="{ACCENT}" stroke-width="1.8"/>')
+            ang = math.atan2(y2 - (y1 + y2) / 2, (xl + 34) - cx)
+            for d in (2.6, -2.6):
+                corps.append(_ligne(xl + 34, y2, xl + 34 - 9 * math.cos(ang + d / 6), y2 - 9 * math.sin(ang + d / 6),
+                                    couleur=ACCENT, epaisseur=1.8))
+            if t:
+                corps.append(_texte((xl + 34 + cx) / 2 + 8, (y1 + y2) / 2 + 5, t, 14, ancre="start",
+                                    couleur=ACCENT, gras=True))
+        for de, a, t in ecarts:
+            xb = L - 60
+            corps.append(f'<path d="M{xb - 5:.1f},{yv(de):.1f} h5 V{yv(a):.1f} h-5" fill="none" stroke="{TRAIT}" stroke-width="1.4"/>')
+            if t:
+                corps.append(_texte(xb + 8, (yv(de) + yv(a)) / 2 + 5, t, 13, ancre="start"))
+
+    alt = (f"Droite graduée {'verticale ' if vertical else ''}de {_relatif(mini, fmt)} à {_relatif(maxi, fmt)}"
+           + (f" ({unite})" if unite else ""))
+    if points:
+        alt += ", avec les points " + ", ".join(nom for _, nom in points)
+    return _svg(L, H, corps, alt), alt
+
+
+def _repere(p: dict) -> tuple[str, str]:
+    """Repere orthogonal du plan, quatre quadrants, points lettres.
+
+    params :
+      xmin, xmax, ymin, ymax  bornes en graduations (defaut -6 a 6) ; chaque plage
+                              contient 0, au plus 16 graduations par axe
+      pas_x, pas_y            valeur d'une graduation sur chaque axe (defaut 1) :
+                              meme unite par defaut, unites differentes possibles
+      etiquettes              "toutes" (defaut), "une_sur_deux", "unite" (1 seul
+                              sur chaque axe) ou "aucune"
+      quadrillage             true (defaut) : quadrillage leger a chaque graduation
+      points                  [{"x": a, "y": b, "nom": "A", "lecture": false,
+                                "position": "ne"}] ; coordonnees multiples de la
+                              demi-graduation ; « lecture » trace les pointilles
+                              vers les axes (decouverte et corrige seulement) ;
+                              position du nom : ne, no, se, so
+    """
+    bornes = {}
+    for cle, defaut in (("xmin", -6), ("xmax", 6), ("ymin", -6), ("ymax", 6)):
+        v = p.get(cle, defaut)
+        if not isinstance(v, int) or isinstance(v, bool):
+            raise FigureInvalide(f"{cle} : entier attendu (en graduations)")
+        bornes[cle] = v
+    for a in ("x", "y"):
+        lo, hi = bornes[f"{a}min"], bornes[f"{a}max"]
+        if not (lo <= 0 <= hi) or hi - lo < 2 or hi - lo > 16:
+            raise FigureInvalide(f"{a}min, {a}max : l'axe doit contenir 0, entre 2 et 16 graduations")
+    pas_x = _nombre(p.get("pas_x", 1), "pas_x")
+    pas_y = _nombre(p.get("pas_y", 1), "pas_y")
+    if pas_x <= 0 or pas_y <= 0:
+        raise FigureInvalide("pas_x, pas_y : strictement positifs")
+    etiq = p.get("etiquettes", "toutes")
+    if etiq not in ("toutes", "une_sur_deux", "unite", "aucune"):
+        raise FigureInvalide("etiquettes : \"toutes\", \"une_sur_deux\", \"unite\" ou \"aucune\"")
+
+    nx, ny = bornes["xmax"] - bornes["xmin"], bornes["ymax"] - bornes["ymin"]
+    c = min(26.0, 300 / nx, 300 / ny)
+    m = 34
+    L, H = nx * c + 2 * m, ny * c + 2 * m
+
+    def X(gx: float) -> float:
+        return m + (gx - bornes["xmin"]) * c
+
+    def Y(gy: float) -> float:
+        return H - m - (gy - bornes["ymin"]) * c
+
+    corps: list[str] = []
+    if p.get("quadrillage", True):
+        for i in range(bornes["xmin"], bornes["xmax"] + 1):
+            corps.append(_ligne(X(i), Y(bornes["ymin"]), X(i), Y(bornes["ymax"]), couleur="#e2e8f0", epaisseur=1))
+        for j in range(bornes["ymin"], bornes["ymax"] + 1):
+            corps.append(_ligne(X(bornes["xmin"]), Y(j), X(bornes["xmax"]), Y(j), couleur="#e2e8f0", epaisseur=1))
+    # Axes, prolonges d'une demi-graduation et fleches.
+    corps.append(_ligne(X(bornes["xmin"]) - c / 2, Y(0), X(bornes["xmax"]) + c / 2, Y(0), epaisseur=1.8))
+    corps.append(f'<path d="M{X(bornes["xmax"]) + c / 2 + 6:.1f},{Y(0):.1f} l-10,-5 v10 z" fill="{TRAIT}"/>')
+    corps.append(_ligne(X(0), Y(bornes["ymin"]) + c / 2, X(0), Y(bornes["ymax"]) - c / 2, epaisseur=1.8))
+    corps.append(f'<path d="M{X(0):.1f},{Y(bornes["ymax"]) - c / 2 - 6:.1f} l-5,10 h10 z" fill="{TRAIT}"/>')
+
+    def ecrire(k: int) -> bool:
+        if k == 0 or etiq == "aucune":
+            return False
+        if etiq == "unite":
+            return k == 1
+        if etiq == "une_sur_deux":
+            return k % 2 == 0
+        return True
+
+    for i in range(bornes["xmin"], bornes["xmax"] + 1):
+        corps.append(_ligne(X(i), Y(0) - 4, X(i), Y(0) + 4, epaisseur=1.4))
+        if ecrire(i):
+            corps.append(_texte(X(i), Y(0) + 17, _relatif(pas_x * i), 11))
+    for j in range(bornes["ymin"], bornes["ymax"] + 1):
+        corps.append(_ligne(X(0) - 4, Y(j), X(0) + 4, Y(j), epaisseur=1.4))
+        if ecrire(j):
+            corps.append(_texte(X(0) - 7, Y(j) + 4, _relatif(pas_y * j), 11, ancre="end"))
+    corps.append(_texte(X(0) - 7, Y(0) + 15, "O", 12, ancre="end", gras=True))
+
+    noms = []
+    for pt in p.get("points", []):
+        nom = str(pt.get("nom", ""))[:3]
+        vx, vy = _nombre(pt.get("x"), "points.x"), _nombre(pt.get("y"), "points.y")
+        gx, gy = vx / pas_x, vy / pas_y
+        if (gx * 2).denominator != 1 or (gy * 2).denominator != 1:
+            raise FigureInvalide(f"point {nom} : coordonnees hors de la demi-graduation")
+        if not (bornes["xmin"] <= gx <= bornes["xmax"] and bornes["ymin"] <= gy <= bornes["ymax"]):
+            raise FigureInvalide(f"point {nom} : ({_relatif(vx)} ; {_relatif(vy)}) hors du repere")
+        px, py = X(float(gx)), Y(float(gy))
+        if pt.get("lecture"):
+            corps.append(f'<path d="M{px:.1f},{py:.1f} V{Y(0):.1f} M{px:.1f},{py:.1f} H{X(0):.1f}" fill="none" '
+                         f'stroke="{ACCENT}" stroke-width="1.2" stroke-dasharray="3 3"/>')
+        corps.append(_ligne(px - 5, py - 5, px + 5, py + 5, couleur=ACCENT, epaisseur=2))
+        corps.append(_ligne(px - 5, py + 5, px + 5, py - 5, couleur=ACCENT, epaisseur=2))
+        pos = pt.get("position", "ne")
+        if pos not in ("ne", "no", "se", "so"):
+            raise FigureInvalide(f"point {nom} : position ne, no, se ou so")
+        dx = 8 if pos[1] == "e" else -8
+        dy = -8 if pos[0] == "n" else 18
+        corps.append(_texte(px + dx, py + dy, nom, 14, ancre="start" if dx > 0 else "end", couleur=ACCENT, gras=True))
+        noms.append(nom)
+
+    alt = "Repère du plan d'origine O"
+    if noms:
+        alt += ", avec les points " + ", ".join(noms)
+    return _svg(L, H, corps, alt), alt
+
+
 GENERATEURS = {
     "demi_droite": _demi_droite,
+    "droite_graduee": _droite_graduee,
+    "repere": _repere,
     "regle": _regle,
     "horloge": _horloge,
     "quadrillage": _quadrillage,
