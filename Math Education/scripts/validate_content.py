@@ -892,6 +892,27 @@ def check_position_qcm(exercises: dict) -> None:
             warn(f"QCM : les {len(cles)} QCM de {sid} ont tous leur bonne reponse en « {cles[0]} »")
 
 
+# Une lettre seule dans une proposition (« Le point B ») que l'application
+# affiche derriere la pastille d'une AUTRE cle (« C ») : l'eleve qui veut le
+# point B clique sur « B »... qui est une autre proposition, et il est compte
+# faux. L'application affiche la cle en majuscule (AnswerInput.tsx). Releve
+# sur quatre lots de l'etape 4b (geometrie).
+_LETTRE_SEULE = re.compile(r"(?<![A-Za-zÀ-ÿ$\\{])([A-Z])(?![A-Za-zÀ-ÿ'’}-])")
+
+
+def check_cles_et_lettres(exercises: dict) -> None:
+    for ex in exercises["exercises"]:
+        if ex["type"] != "qcm" or not ex.get("choices"):
+            continue
+        cles = {c["key"].upper() for c in ex["choices"]}
+        for c in ex["choices"]:
+            lettres = set(_LETTRE_SEULE.findall(re.sub(r"\$[^$]*\$", " ", c["text"])))
+            autres = (lettres & cles) - {c["key"].upper()}
+            if autres:
+                err(f"QCM : {ex['id']}, la proposition « {c['key']} » ({c['text']}) cite "
+                    f"{', '.join(sorted(autres))}, qui est aussi la pastille d'une autre proposition")
+
+
 # Plafond de mots par enonce, en moyenne par competence. Un enonce de CP ou de
 # CE1 tient en une ou deux phrases courtes (PRINCIPES_PEDAGOGIQUES.md, section 5).
 # Meme mesure que build_review_sheet.py : les formules comptent pour un mot, les
@@ -997,6 +1018,7 @@ def main() -> int:
 
         warn_avant = len(warnings)
         check_longueur_enonces(dag, exercises)
+        check_cles_et_lettres(exercises)
         print(f"  longueur des enonces  {'OK' if len(warnings) == warn_avant else 'A VERIFIER'}")
 
     print()
