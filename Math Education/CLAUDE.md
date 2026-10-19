@@ -14,7 +14,7 @@ Application web d'apprentissage adaptatif des mathématiques, CP à Terminale à
 
 - **Équipe :** Gauthier (dev et produit, il pilote avec Claude) et Marius (contenu mathématique ; il mène la recette du contenu dans l'app, Gauthier n'y valide rien).
 - **Contraintes :** budget total **500 €**, **4 h par semaine et par personne**. Quand une option est plus propre mais plus longue, la plus courte gagne.
-- **Calendrier :** bêta fermée gratuite de 5 à 10 élèves **fin novembre 2026**, ouverture en **janvier 2027**.
+- **Calendrier :** décision de Gauthier (19 octobre 2026) : **le déploiement vient en dernier**, une fois tous les points du backlog et tout le contenu jusqu'à la 3e terminés (sprint final, §6). La bêta fermée (5 à 10 élèves) suit le déploiement : l'objectif « fin novembre 2026 » n'est plus tenable et sera replanifié à ce moment.
 - **Modèle économique visé :** abonnement élève 9,99 €/mois ; cours avec professeur 20 € les 1 h 30, 3 élèves maximum. **Rien n'est encaissé pendant la bêta** (`/abonnement` est informatif). Pas de paiement tant que la progression est écrite par le navigateur (§9).
 
 ---
@@ -212,11 +212,12 @@ Contrôle : un appel avec la clé anonyme doit répondre **401 « Connexion requ
 - **Au début de chaque sprint, poser à Gauthier les questions du §8 qui le concernent, puis lui présenter le plan avant de coder.**
 - Un point marqué « avis critique » porte une alternative à lui soumettre.
 
-### Sprint 1 : Compte, profil et mise en ligne (avant la bêta, priorité absolue)
+### Sprint 1 : Compte, profil, style graphique et mobile (priorité absolue)
 
 **Application**
 1. **Avatar en haut à droite cliquable vers `/profil`** (bug, `AppShell.tsx` : l'avatar de l'en-tête n'est pas un lien). Vérifier aussi l'en-tête desktop.
 2. **Modifier ses données dans `/profil`.**
+   - **Décision :** pour un **mineur**, changer sa date de naissance ou son email exige l'**accord du parent** (validation par le parent rattaché) ; pour un **majeur**, non.
    - **Date de naissance :** si elle passe sous 15 ans, le consentement parental redevient exigé.
    - **Email :** via `supabase.auth.updateUser`, avec confirmation sur la nouvelle adresse.
    - **Mot de passe :** ancien mot de passe redemandé, nouveau saisi deux fois.
@@ -224,26 +225,33 @@ Contrôle : un appel avec la clé anonyme doit répondre **401 « Connexion requ
    `email`, `role` et `consentement` restent protégés côté base : passer par l'Auth Supabase ou une fonction serveur, jamais par l'écriture directe du profil.
 3. **Création de compte par email :**
    - mot de passe saisi deux fois, avec règles minimales affichées (au moins 8 caractères) ;
-   - **email de validation obligatoire** : réactiver « Confirm email » dans Supabase et configurer un SMTP (Resend) ; tester le chemin complet dans un navigateur.
+   - **email de validation obligatoire** : réactiver « Confirm email » dans Supabase et tester le chemin complet dans un navigateur.
+   - **Limite à connaître :** sans domaine, l'envoi d'emails est bridé. Le SMTP par défaut de Supabase n'envoie que quelques emails par heure, et Resend n'écrit qu'à l'adresse du compte tant qu'aucun domaine n'est vérifié. Cela suffit pour les tests en développement. Le SMTP Resend sur le domaine se branche au sprint final.
 
    L'administrateur peut créer un compte déjà confirmé depuis le tableau de bord Supabase (Authentication, Add user, « Auto confirm »). L'écrire dans un mémo admin.
-4. **Reconnexion au retour d'arrière-plan** (formulation à confirmer, §8 Q1). Interprétation retenue en attendant :
+4. **Reconnexion au retour d'arrière-plan.** Gauthier a une capture de la fenêtre obtenue à la connexion, **mais elle n'est pas arrivée dans la conversation du 19 octobre** : la lui redemander (à enregistrer dans `Management de Projet/captures/`) avant de coder ce point (§8). Interprétation retenue en attendant :
    - quand l'onglet revient au premier plan, rafraîchir la session et le contenu ;
    - si le serveur ne répond pas, le dire et réessayer, au lieu de laisser l'app figée.
 5. **Rôle Professeur ou Parent choisi à l'inscription Google** : fonction serveur qui fixe le rôle une seule fois, tant que le profil est incomplet (aujourd'hui le trigger refuse).
 6. **Mélanger les propositions de QCM à l'affichage**, sans toucher aux clés.
-7. **Logo et style graphique** : intégrer les fichiers que Gauthier fournira (§8 Q2), en adaptant les jetons Tailwind sans écrire de couleur en dur. **Photos sur la page de connexion** : libres de droits, compressées (WebP), avec un texte alternatif.
+7. **Logo et style graphique.** Le logo est dans `Math_Edu_Application/logos/Logo RACINE, symbole racine et feuillage (1).png`. Il se compose :
+   - d'un fond bleu vif ;
+   - d'un symbole racine carrée formant un « R », avec des racines blanches et des feuilles vertes ;
+   - de symboles mathématiques colorés : π orange, ÷ vert, × rouge-orangé, √ bleu clair, + jaune ;
+   - du mot « RACINE » en capitales blanches arrondies.
+
+   À faire :
+   - renommer le fichier sans espaces ;
+   - produire les variantes : symbole seul, fond transparent, favicon, icônes PWA de 192 et 512 px ;
+   - **reprendre la palette** de la direction artistique (aujourd'hui accent indigo #6366F1) à partir du bleu du logo et de ses couleurs d'accent, uniquement par les jetons de `tailwind.config.js` ;
+   - vérifier les contrastes (WCAG AA).
+
+   Montrer une maquette à Gauthier avant de tout basculer. **Photos sur la page de connexion** : libres de droits, compressées (WebP), avec un texte alternatif.
 8. **Téléphone et tablette :**
    - passe responsive écran par écran (360, 768 et 1024 px) ;
-   - **procédure de test sur un vrai téléphone** : soit le site déployé (étape 9), soit `npm run dev -- --host` sur le réseau local, en sachant que certaines API ne marchent qu'en HTTPS.
-9. **Déploiement :**
-   - dépôt privé dédié `math-education` (Marius doit y avoir accès) ;
-   - Netlify, avec les variables `VITE_*` ;
-   - domaine OVH, environ 12 €/an, choisi par Gauthier ;
-   - HTTPS et PWA installable.
-
-   **Référencement Google** : landing statique séparée sur la racine du domaine (Astro ou HTML), app sur `/app`, plus politique de confidentialité, mentions légales, sitemap et Search Console. Ne pas migrer la SPA pour le SEO.
-10. **Consentement parental par email** (obligation légale avant 15 ans) :
+   - **procédure de test sur un vrai téléphone**, sans déploiement (repoussé au sprint final) : `npm run dev -- --host` sur le réseau local, puis l'adresse affichée ouverte sur le téléphone connecté au même Wi-Fi. Certaines API ne marchent qu'en HTTPS : prévoir un certificat local (plugin `@vitejs/plugin-basic-ssl`) si besoin, et écrire la procédure pas à pas pour Gauthier.
+9. **Déploiement et référencement : déplacés au sprint final** (décision de Gauthier).
+10. **Consentement parental par email** (obligation légale avant 15 ans), codé et testé maintenant avec les limites d'envoi ci-dessus ; la mise en service réelle se fait au sprint final :
     - Edge Function `send-parent-consent` avec Resend ;
     - jeton haché, valable 7 jours ;
     - page `/consentement/:token` et bouton « Renvoyer » limité en fréquence.
@@ -253,17 +261,24 @@ Contrôle : un appel avec la clé anonyme doit répondre **401 « Connexion requ
 ### Sprint 2 : Pédagogie de l'élève
 
 1. **Correction du test de positionnement :** à la fin du test (pas pendant, pour ne pas casser le rythme), l'élève revoit chaque question, sa réponse, la bonne réponse et le corrigé. Il faut une fonction serveur qui rend les clés **après** le test seulement.
-2. **Maîtrise exigeante (« réussir plusieurs fois, dans plusieurs contextes »).** Aujourd'hui une compétence est maîtrisée avec 3 réussites sur les 4 dernières tentatives (`mastery_threshold`). Nouvelle règle, à valider avec Gauthier :
-   - au moins **2 exercices différents** réussis, **dont un de niveau maîtrise** ;
-   - puis une **révision espacée réussie** (J+3 puis J+10) pour passer de « acquise » à « ancrée ».
+2. **Maîtrise exigeante et notée sur 5** (méthode validée par Gauthier le 19 octobre 2026). Aujourd'hui une compétence est maîtrisée avec 3 réussites sur les 4 dernières tentatives (`mastery_threshold`).
+   - **Règle d'acquisition :** au moins 2 exercices différents réussis, dont un de niveau maîtrise.
+   - **Niveau de maîtrise de 0 à 5 par compétence**, visible par l'élève, qui fixe la fréquence des contrôles :
+     - **5/5** : complètement acquis, plus de révision ;
+     - **4/5** : un contrôle très rarement ;
+     - plus bas : des contrôles de plus en plus fréquents.
 
-   Avec tests dans `dag.ts`.
+     Un contrôle réussi fait monter le niveau, un raté le fait descendre (à 3 ou moins, la compétence revient dans le plan de travail).
+   - **Les compétences validées par le test d'entrée sont aussi contrôlées de temps en temps.** Un contrôle réussi ne change rien pour l'élève. Un raté rouvre la compétence.
+   - Écrire la table exacte niveau → intervalle de révision avant de coder, et la faire valider.
+
+   À porter dans `dag.ts`, avec ses tests, et dans `skill_progress` (nouvelle colonne, par migration). Prévoir la reprise des progressions existantes.
 3. **Révisions et flammes réelles :**
    - calcul de la série de jours depuis `exercise_attempts`, au lieu du 6 en dur ;
    - file « à réviser » visible (exercices et cartes dont l'échéance est passée) ;
    - **scénario de test** qui avance l'horloge (Vitest, fausses dates) pour prouver la révision espacée et les flammes, puisque Gauthier n'a pas pu la valider à la main.
 4. **Cartes « défi » (recto et verso)** : cycle de l'élève découvrir (carte arbre), exercice simple, carte recto et verso à retrouver, exercices de plus en plus durs.
-   - **Contenu :** 4 à 6 cartes question-réponse par compétence, écrites par agents à partir des cartes mentales et relues comme les exercices. Nouveau fichier `content/flashcards/<compétence>.json` et nouveau schéma.
+   - **Contenu :** 4 à 6 cartes question-réponse par compétence, **écrites par agents** (décision de Gauthier) à partir des cartes mentales, et relues comme les exercices. Nouveau fichier `content/flashcards/<compétence>.json` et nouveau schéma.
    - **Application :** mode « défi » avec auto-évaluation (« je savais / je ne savais pas ») et une file de révision espacée propre aux cartes.
 5. **Cartes mentales :** indication visible au premier affichage (« Touche un rond pour déplier ») et bouton « Tout déplier ».
 6. **Chemins proposés :**
@@ -272,12 +287,12 @@ Contrôle : un appel avec la clé anonyme doit répondre **401 « Connexion requ
    - le bouton « Graphe » est rendu visible en haut de `/parcours`.
 
    Les chemins sont calculés depuis le DAG (lacunes et objectifs de la classe), pas écrits à la main.
-7. **« Super exercices » (examens transverses de 15 à 20 min) :** nœuds-jalons du DAG qui bloquent l'accès au niveau supérieur et demandent plusieurs domaines à la fois.
-   - Jamais proposés pendant le test d'entrée.
-   - **Contenu :** un jalon par fin de cycle et par grand bloc, rédigé et relu par agents (exercices à plusieurs étapes).
-   - **Application :** un type de nœud « jalon » et une page d'examen.
-
-   *Avis critique :* commencer par 3 jalons (fin CM2, fin 6e, fin 3e) avant d'en multiplier.
+7. **« Super exercices » (problèmes transverses de 15 à 20 min) :** ils bloquent l'accès au niveau supérieur et demandent plusieurs domaines à la fois. Jamais proposés pendant le test d'entrée.
+   - **Volume** (décision de Gauthier) : **au minimum 1 par classe et par domaine, et viser 4 à 5**.
+   - **Interprétation retenue :** « 1 par classe par compétence » est compris comme par classe et par domaine. Un super exercice par compétence ferait plus de 750 problèmes longs, hors de portée ; le confirmer avec Gauthier au lancement.
+   - **Ce qu'ils travaillent en priorité :** la **compréhension des énoncés** (texte long, données à trier, informations inutiles) et la **convergence des notions** (plusieurs compétences de domaines différents dans un même problème). C'est là que les élèves échouent le plus.
+   - **Contenu :** rédigés et relus par agents, comme les exercices ; une consigne propre est à écrire, avec un barème par étape.
+   - **Application :** un type d'exercice « super exercice » à plusieurs questions enchaînées, une page d'examen, et le blocage du niveau supérieur tant qu'il n'est pas réussi.
 8. **Engagement et recherche :** courte étude documentaire sur l'habitude et la motivation des 8 à 15 ans (autodétermination, rappels, gamification). Livrable : une note de 2 pages et 5 changements d'interface.
    - **Garde-fou :** pas de mécanique manipulatrice sur des mineurs (pas de perte punitive, pas de notifications nocturnes), conformément aux recommandations CNIL pour les mineurs.
    - Rappels : emails d'abord, notifications PWA ensuite.
@@ -302,7 +317,7 @@ Contrôle : un appel avec la clé anonyme doit répondre **401 « Connexion requ
    - **suggestions automatiques** de cartes, d'exercices et de super exercices adaptés au groupe (lacunes communes) ;
    - réutiliser `DagGraph`, `DagPath` et `SkillDetailPanel`.
 5. **Visioconférence :** ne pas développer de visio.
-   - *Recommandation :* **Jitsi Meet** (open source, gratuit, sans compte), avec un lien unique généré par séance ; à défaut, un champ URL Meet ou Zoom saisi par le professeur.
+   - **Décision : Jitsi Meet** (open source, gratuit, sans compte), avec un lien unique et difficile à deviner, généré par séance et visible des seuls inscrits.
    - **Pendant le cours :** une page « Séance » ouverte à côté de la visio. Le professeur y choisit une carte ou un exercice, et les élèves de la séance le voient s'afficher. Il faut une diffusion temps réel, Supabase Realtime, sur une table `seance_etat`.
 
    *Avis critique :* une version 1 sans temps réel est possible : le professeur partage son écran et les élèves ouvrent le lien de l'exercice.
@@ -314,9 +329,7 @@ Contrôle : un appel avec la clé anonyme doit répondre **401 « Connexion requ
 
 1. **Espace parent :** rattachement à un ou plusieurs enfants (le consentement du sprint 1 crée le lien), et suivi de leur progression.
 2. **Rapport hebdomadaire par email :** exercices faits, cartes revues, compétences gagnées. Cron Supabase et Resend.
-3. **Chemins à faire réviser, avec réponses et corrigés pour le parent.**
-   - *Avis critique :* un enfant peut se servir du compte parent pour lire les réponses.
-   - Réponses visibles seulement dans l'espace parent, sur un exercice que l'enfant a déjà tenté, ou en mode « fiche à imprimer » (§8 Q7).
+3. **Chemins à faire réviser, avec réponses et corrigés pour le parent.** Décision de Gauthier : on part du principe que l'enfant ne va pas dans l'espace parent. Les réponses et les corrigés y sont donc visibles librement. Il faut une fonction serveur qui ne rend les clés qu'à un compte parent rattaché.
 4. **RGPD :** export et suppression des données à la demande du parent.
 
 **Contenu :** étape 8 du §7.
@@ -344,14 +357,30 @@ Contrôle : un appel avec la clé anonyme doit répondre **401 « Connexion requ
 - Polices auto-hébergées.
 - Supabase Pro : pas de mise en pause, et la protection contre les mots de passe compromis est disponible.
 
+### Sprint final : déploiement et référencement (après tous les sprints et tout le contenu jusqu'à la 3e)
+
+Décision de Gauthier : on déploie une fois tout le reste fait. **Gauthier connaît mal le sujet** : produire un **guide pas à pas**, avec chaque clic, chaque écran et chaque valeur à saisir, et le dérouler avec lui. Contenu :
+1. dépôt GitHub privé dédié `math-education`, avec accès pour Marius ;
+2. achat du domaine (OVH, environ 12 €/an, nom à choisir avec Gauthier) ;
+3. Netlify relié au dépôt, avec les variables `VITE_*` recopiées **avant** le premier build, et `NODE_VERSION` ;
+4. DNS du domaine vers Netlify, puis HTTPS ;
+5. Resend avec le domaine vérifié (SPF, DKIM), branché comme SMTP de Supabase Auth et utilisé par les Edge Functions d'emails ;
+6. URL de redirection de Supabase Auth et de Google OAuth sur le domaine ;
+7. passage de l'écran Google en Production (exige la politique de confidentialité) ;
+8. PWA installable ;
+9. **référencement** : landing statique séparée sur la racine du domaine (Astro ou HTML), application sur `/app`, politique de confidentialité, mentions légales, `sitemap.xml`, Google Search Console. Ne pas migrer la SPA pour le SEO ;
+10. Supabase Pro, ou ping hebdomadaire actif ;
+11. vérification finale sur téléphone, tablette et ordinateur.
+
 ### Business (à mener en parallèle, sans code)
 
-1. **Revoir le business plan :**
-   - coûts : hébergement, Supabase Pro, Netlify, domaine, emails, publicité sur les réseaux, référencement ;
-   - **2 ou 3 offres** chiffrées (gratuit limité, élève, élève avec professeur, famille) ;
-   - point mort, avec des hypothèses explicites (§8 Q9).
+1. **Business plan : c'est à Claude de proposer** (Gauthier n'a pas d'hypothèses arrêtées). Livrable : un document à part, pas dans ce fichier, avec :
+   - les **coûts réels** recherchés et datés : Supabase Pro, Netlify, domaine, Resend, Sentry et PostHog gratuits, publicité sur les réseaux (Meta, TikTok), référencement, frais Stripe ;
+   - **2 ou 3 offres** cohérentes et chiffrées (par exemple gratuit limité, élève, élève avec professeur, famille) ;
+   - un prix par offre, la répartition élève et professeur sur un cours, le coût d'acquisition et le taux de conversion supposés, chacun justifié par une source ou un comparable (Kartable, Superprof, Mathia…) ;
+   - le point mort et trois scénarios (prudent, central, ambitieux) sur 24 mois, dans la limite d'un budget de départ de 500 €.
 
-   Livrable : un document à part, pas dans ce fichier.
+   Présenter les hypothèses à Gauthier pour validation avant de figer les chiffres.
 2. **Vision long terme, une version « classe » pour les professeurs de mathématiques** : niveau de chaque élève, forces et faiblesses, devoirs personnalisés.
    - *À étudier :* la vente aux établissements passe par le **GAR** (Gestionnaire d'accès aux ressources du ministère) et des contraintes RGPD fortes.
    - C'est un autre produit : ne rien développer avant que l'offre élève fonctionne.
@@ -383,20 +412,25 @@ Toute nouvelle lettre exige une migration qui élargit les contraintes `A-P`, et
 
 ---
 
-## 8. Questions à poser à Gauthier (au début du sprint concerné)
+## 8. Décisions de Gauthier et questions restantes
 
-Elles viennent de `Reste_a_faire.md`, que Gauthier a demandé de clarifier avant d'implémenter. Proposer chaque fois l'option recommandée en premier.
+**Réponses du 19 octobre 2026** (déjà reportées dans le backlog) :
+1. Retour d'arrière-plan : une capture de la fenêtre existe, **non reçue**. **À redemander au début du sprint 1.**
+2. Logo : fourni dans `Math_Edu_Application/logos/`. Le style graphique est à dériver du logo (§6, sprint 1, point 7).
+3. Accord du parent pour changer date de naissance ou email : **oui pour un mineur, non pour un majeur**.
+4. Maîtrise : méthode validée, avec un **niveau de maîtrise sur 5** et des contrôles réguliers, y compris sur ce que le test d'entrée a validé.
+5. Super exercices : au minimum 1 par classe et par domaine, viser 4 à 5. Ils portent sur la compréhension des énoncés et la convergence des notions. L'interprétation est à confirmer au lancement.
+6. Cartes défi : écrites par agents.
+7. Réponses visibles par le parent : librement dans l'espace parent.
+8. Visio : Jitsi.
+9. Business plan : à proposer par Claude.
+10. Domaine, dépôt dédié et déploiement : au sprint final, avec un guide pas à pas.
 
-1. *(Sprint 1)* « Connexion au serveur quand en arrière (le vider auto) » : qu'est-ce qui se passe exactement ? Une page figée au retour sur l'onglet, une déconnexion, ou le projet Supabase en pause ? Que faut-il « vider » ?
-2. *(Sprint 1)* « Le logo et le style graphique suivant » : **aucun fichier n'est joint dans `Reste_a_faire.md`**. Où sont-ils ? Faut-il en créer (Claude Design) ?
-3. *(Sprint 1)* Changer sa date de naissance ou son email : faut-il l'accord du parent pour un mineur ?
-4. *(Sprint 2)* Nouvelle règle de maîtrise (§6, sprint 2, point 2) : la valider ou l'ajuster. Faut-il aussi réviser la progression existante des comptes de test ?
-5. *(Sprint 2)* Super exercices : combien, à quelles bornes ? Bloquants ou seulement conseillés au début ?
-6. *(Sprint 2)* Cartes défi : écrites par agents (recommandé) ou dérivées automatiquement des cartes mentales ?
-7. *(Sprint 4)* Réponses visibles par le parent : dans quelles conditions (§6, sprint 4, point 3) ?
-8. *(Sprint 3 et 5)* Visio : Jitsi par lien (recommandé), champ URL libre, ou autre ? Séance en temps réel dès la version 1 ou plus tard ?
-9. *(Business)* Hypothèses du business plan : prix, budget marketing mensuel, coût d'acquisition visé, part élève et professeur sur un cours.
-10. *(Sprint 1)* Domaine à acheter (nom), et accord pour créer le dépôt GitHub dédié.
+**Questions encore ouvertes :**
+- la capture du point 1 ;
+- la table niveau de maîtrise → intervalle de révision (sprint 2) ;
+- l'interprétation du volume de super exercices (sprint 2) ;
+- les hypothèses du business plan, une fois proposées.
 
 ---
 
