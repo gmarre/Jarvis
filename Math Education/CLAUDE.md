@@ -60,11 +60,9 @@ Ce qui marche :
 - mode recette pour Marius.
 
 Ce qui est faux ou absent aujourd'hui (repris dans le backlog §6) :
-- l'avatar en haut à droite (mobile) n'est pas cliquable ;
 - les « flammes » (série de jours) sont **codées en dur à 6** (`WorkspacePage.tsx`, `streakDays`) ;
-- les propositions de QCM s'affichent dans l'ordre du fichier, jamais mélangées ;
-- aucun email n'est envoyé : consentement parental impossible, alors que c'est une obligation légale avant 15 ans ;
-- un compte Google ne peut pas choisir « Professeur » ou « Parent » : le trigger `proteger_colonnes_profil` refuse le changement de rôle ;
+- consentement parental et accord du parent pour les mineurs : codés (0011, Edge Function `accord-parental`), **pas encore en service** (migration à appliquer, fonction à déployer, clé Resend à créer) ;
+- « Supprimer mon compte » n'efface rien : masqué hors démonstration jusqu'au sprint 4 ;
 - la progression est écrite par le navigateur, donc falsifiable ;
 - pas de vérification des professeurs ;
 - l'espace parent est vide ;
@@ -78,7 +76,7 @@ Ce qui est faux ou absent aujourd'hui (repris dans le backlog §6) :
 **Sécurité et opérations**
 - `SUPABASE_SERVICE_ROLE_KEY` : jamais affichée, jamais préfixée `VITE_`, lue seulement par les scripts locaux depuis `.env.local`.
 - Le fichier Google `client_secret_*.json` n'est jamais commité.
-- **Migrations : jamais par l'outil MCP `apply_migration` (refusé par Gauthier).** Créer le fichier numéroté suivant dans `supabase/migrations/` (rejouable : `if not exists`, `create or replace`, `drop policy if exists`), puis Gauthier le colle dans le SQL Editor. Ne jamais modifier une migration déjà appliquée (dernière appliquée : 0009).
+- **Migrations : jamais par l'outil MCP `apply_migration` (refusé par Gauthier).** Créer le fichier numéroté suivant dans `supabase/migrations/` (rejouable : `if not exists`, `create or replace`, `drop policy if exists`), puis Gauthier le colle dans le SQL Editor. Ne jamais modifier une migration déjà appliquée (dernière appliquée : 0009 ; **0010 et 0011 écrites le 19 octobre 2026, à appliquer par Gauthier**).
 - Les outils MCP Supabase `deploy_edge_function`, `get_edge_function` et `execute_sql` en lecture sont acceptés.
 - Ne pas contourner un refus du classifieur de sécurité.
 
@@ -214,6 +212,10 @@ Contrôle : un appel avec la clé anonyme doit répondre **401 « Connexion requ
 
 ### Sprint 1 : Compte, profil, style graphique et mobile (priorité absolue)
 
+**Avancement au 19 octobre 2026 (soir)** : points 1, 2, 3, 5, 6, 8 et 10 codés et commités ; point 7 : variantes du logo faites, maquette de palette dans `Management de Projet/maquettes/palette_racine.html`, **bascule des jetons en attente de l'accord de Gauthier** ; point 4 : capture toujours absente (le fichier `captures/Fenetre_co.jpg` est la photo de connexion, pas la fenêtre de reconnexion).
+Reste à faire par Gauthier : appliquer 0010 puis 0011 dans le SQL Editor ; activer « Confirm email » ; créer le compte Resend ; puis Claude déploie `accord-parental` (`verify_jwt: false`) et pose les secrets (mémo dans `GUIDE.md` §5). Les tests SQL (`supabase/tests/run.sh`, fichier 06 ajouté) n'ont pas tourné : **Docker Desktop n'est plus installé** sur le poste.
+Décisions prises en route : la page publique du parent est `/accord/:jeton` (consentement et modifications), pas `/consentement/:token` ; les pastilles de QCM gardent leur lettre d'origine (11 corrigés citent « la proposition c »).
+
 **Application**
 1. **Avatar en haut à droite cliquable vers `/profil`** (bug, `AppShell.tsx` : l'avatar de l'en-tête n'est pas un lien). Vérifier aussi l'en-tête desktop.
 2. **Modifier ses données dans `/profil`.**
@@ -234,7 +236,7 @@ Contrôle : un appel avec la clé anonyme doit répondre **401 « Connexion requ
    - si le serveur ne répond pas, le dire et réessayer, au lieu de laisser l'app figée.
 5. **Rôle Professeur ou Parent choisi à l'inscription Google** : fonction serveur qui fixe le rôle une seule fois, tant que le profil est incomplet (aujourd'hui le trigger refuse).
 6. **Mélanger les propositions de QCM à l'affichage**, sans toucher aux clés.
-7. **Logo et style graphique.** Le logo est dans `Math_Edu_Application/logos/Logo RACINE, symbole racine et feuillage (1).png`. Il se compose :
+7. **Logo et style graphique.** Le logo source est `Math_Edu_Application/logos/logo-racine-source.png` (variantes dans `public/brand/`, voir `logos/LISEZMOI.md`). Il se compose :
    - d'un fond bleu vif ;
    - d'un symbole racine carrée formant un « R », avec des racines blanches et des feuilles vertes ;
    - de symboles mathématiques colorés : π orange, ÷ vert, × rouge-orangé, √ bleu clair, + jaune ;
@@ -256,7 +258,7 @@ Contrôle : un appel avec la clé anonyme doit répondre **401 « Connexion requ
     - jeton haché, valable 7 jours ;
     - page `/consentement/:token` et bouton « Renvoyer » limité en fréquence.
 
-**Contenu (agents, en parallèle) :** étape 5 du §7 (nombres relatifs et arithmétique). Remettre aussi au propre les 6 cartes en brouillon et les 7 anomalies CE1 (§2.1).
+**Contenu (agents, en parallèle) :** étape 5 du §7 (nombres relatifs et arithmétique). Cartographe fait le 19 octobre 2026 : 20 compétences (`_travail/etape5_dag_AB.*`, consigne `_travail/brief_cartographe_etape5.md`), vérifications vertes, **13 points à arbitrer par Gauthier** avant les rédacteurs (dont la saisie du signe moins typographique, refusée par `correction.ts`). Remettre aussi au propre les 6 cartes en brouillon et les 7 anomalies CE1 (§2.1).
 
 ### Sprint 2 : Pédagogie de l'élève
 
@@ -428,6 +430,9 @@ Toute nouvelle lettre exige une migration qui élargit les contraintes `A-P`, et
 
 **Questions encore ouvertes :**
 - la capture du point 1 ;
+- la palette dérivée du logo (maquette du 19 octobre) ;
+- les 13 arbitrages du cartographe de l'étape 5 ;
+- que faire quand un parent **refuse** le consentement (aujourd'hui le compte reste utilisable « en attente ») ;
 - la table niveau de maîtrise → intervalle de révision (sprint 2) ;
 - l'interprétation du volume de super exercices (sprint 2) ;
 - les hypothèses du business plan, une fois proposées.
