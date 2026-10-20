@@ -211,3 +211,18 @@ describe('nom de la grandeur devant une expression (releve du lot L1)', () => {
     tousFaux(exo('x + 5 = 12', 'equation'), ['P = x + 5'])
   })
 })
+
+describe('crochets, ensembles, inegalites au clavier (lots L5 et L6)', () => {
+  it('les crochets se lisent comme des parentheses', () => {
+    tousJustes(exo('(x − 2)(3x + 4)', 'factorisee'), ['(x-2)[3x+4]', '[x-2][3x+4]'])
+    tousFaux(exo('(x − 2)(3x + 4)', 'factorisee'), ['(x-2)[(5x+1)-(2x-3)]'])
+  })
+  it('S = {…} pour une liste de solutions', () => {
+    tousJustes(exo('−4 ; 2', 'solutions'), ['S = {-4 ; 2}', '{2 ; -4}'])
+    tousFaux(exo('−4 ; 2', 'solutions'), ['S = {2}'])
+  })
+  it('=> et =< pour les inegalites larges', () => {
+    tousJustes(exo('x ⩾ 7', 'inegalite'), ['x => 7'])
+    tousJustes(exo('x ⩽ −2/3', 'inegalite'), ['x =< -2/3'])
+  })
+})

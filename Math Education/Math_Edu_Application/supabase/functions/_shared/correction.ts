@@ -344,6 +344,13 @@ function texteAlgebrique(raw: string): string {
     .replace(new RegExp(FOIS, 'g'), '*')
     .replace(DIVISE, '/')
     .replace(/racine\s*(carree\s*)?(de\s*)?/g, RACINE)
+    // Crochets ecrits comme au college : « (x − 2)[3x + 4] » (releve en
+    // relecture de l'etape 7, lot L5).
+    .replace(/\[/g, '(')
+    .replace(/\]/g, ')')
+    // « x => 7 », « x =< 2 » : l'ordre inverse, frequent au clavier.
+    .replace(/=>/g, '>=')
+    .replace(/=</g, '<=')
     .replace(ESPACES_SPECIALES, ' ')
     .replace(/\s+/g, '')
     .replace(/(?<=\d),(?=\d)/g, '.')
@@ -722,6 +729,9 @@ function lireSolutions(texte: string): number[] | null {
   if (/^(aucunesolution|pasdesolution|aucune|s=)?$/.test(texte.replace(ENSEMBLE_VIDE, '').replace(/[{}]/g, ''))) {
     return texte.length > 0 ? [] : null
   }
+  // « S = {−5 ; 3/2} » : l'ensemble des solutions ecrit comme en 3e (releve
+  // en relecture de l'etape 7, lot L6).
+  texte = texte.replace(/^s=/, '').replace(/^\{(.*)\}$/, '$1')
   const valeurs: number[] = []
   for (let morceau of texte.split(/;|et|ou|,/)) {
     morceau = morceau.replace(/^[a-z]=/, '')
