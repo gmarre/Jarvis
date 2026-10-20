@@ -1,14 +1,17 @@
+import { useEffect, useState } from 'react'
 import { Navigate, useParams } from 'react-router-dom'
 
 import { domains, getSkill } from '@/content'
 import { dureeLisible } from '@/lib/schedule'
 import { AppShell, PageBody, PageHeader } from '@/components/layout/AppShell'
 import { Badge } from '@/components/ui/Badge'
-import { ButtonLink } from '@/components/ui/Button'
+import { Button, ButtonLink } from '@/components/ui/Button'
 import { Card, CardTitle } from '@/components/ui/Card'
-import { Avatar } from '@/components/ui/Misc'
+import { Avatar, Notice } from '@/components/ui/Misc'
 import { initials } from '@/lib/format'
+import { repository, RepositoryError } from '@/data'
 import { useSession } from '@/state/session'
+import type { Suivi } from '@/types/domain'
 
 // Profil public d'un professeur (sprint 3, point 3), ouvert par l'eleve depuis
 // l'icone du professeur sur /cours. Seuls les professeurs verifies sont
@@ -18,6 +21,19 @@ export default function TeacherPublicPage() {
   const { profId = '' } = useParams()
   const { catalog } = useSession()
   const prof = catalog.teachers.find((t) => t.id === profId)
+  // Suivi (sprint 5) : l'eleve le demande ici ; le professeur l'accepte.
+  const [suivi, setSuivi] = useState<Suivi | null | undefined>(undefined)
+  const [message, setMessage] = useState<string | null>(null)
+  useEffect(() => {
+    let annule = false
+    repository
+      .getMesSuivis()
+      .then((l) => !annule && setSuivi(l.find((s) => s.prof_id === profId && s.etat !== 'termine' && s.etat !== 'refuse') ?? null))
+      .catch(() => !annule && setSuivi(null))
+    return () => {
+      annule = true
+    }
+  }, [profId])
   if (!prof) return <Navigate to="/cours" replace />
 
   const offres = catalog.offers.filter((o) => o.prof_id === prof.id && o.active)
@@ -67,6 +83,38 @@ export default function TeacherPublicPage() {
                 <p className="mt-4 text-xs font-semibold text-ink-soft">Méthode</p>
                 <p className="mt-1 whitespace-pre-line text-[13px] leading-relaxed text-ink-muted">{prof.methode}</p>
               </>
+            )}
+          </Card>
+
+          <Card>
+            <CardTitle>Être suivi par {prof.prenom}</CardTitle>
+            <p className="text-[12.5px] leading-relaxed text-ink-subtle">
+              Un suivi ouvre un fil de messages pour tes questions de cours, et des créneaux réservés aux élèves
+              suivis. Ton parent voit tous vos échanges.
+            </p>
+            {suivi === undefined ? null : suivi ? (
+              <p className="mt-3 text-[12.5px] font-semibold text-mastered-700">
+                {suivi.etat === 'actif' ? 'Ce professeur te suit.' : 'Demande envoyée, en attente de sa réponse.'}
+              </p>
+            ) : (
+              <Button
+                size="sm"
+                className="mt-3"
+                onClick={() =>
+                  void repository
+                    .demanderSuivi(prof.id)
+                    .then(() => repository.getMesSuivis())
+                    .then((l) => setSuivi(l.find((s) => s.prof_id === prof.id && s.etat === 'demande') ?? null))
+                    .catch((cause) => setMessage(cause instanceof RepositoryError ? cause.message : 'La demande a échoué.'))
+                }
+              >
+                Demander un suivi
+              </Button>
+            )}
+            {message && (
+              <Notice tone="progress" className="mt-3">
+                {message}
+              </Notice>
             )}
           </Card>
 

@@ -17,7 +17,7 @@ import { AppShell, PageBody, PageHeader } from '@/components/layout/AppShell'
 import { Badge } from '@/components/ui/Badge'
 import { Button } from '@/components/ui/Button'
 import { Card, CardTitle, SectionLabel } from '@/components/ui/Card'
-import { Field, Select } from '@/components/ui/Field'
+import { Checkbox, Field, Select } from '@/components/ui/Field'
 import { Notice } from '@/components/ui/Misc'
 import { IconCheck, IconClose, IconPlus } from '@/components/ui/icons'
 import { OffresCard } from '@/components/prof/OffresCard'
@@ -54,6 +54,8 @@ export default function TeacherSchedulePage() {
   const [published, setPublished] = useState<number | null>(null)
   /** Offre choisie pour les creneaux a publier ; vide : cours libre de 1 h 30. */
   const [offreId, setOffreId] = useState('')
+  /** Creneaux reserves aux eleves suivis (sprint 5, migration 0020). */
+  const [reserve, setReserve] = useState(false)
 
   const mesOffres = catalog.offers.filter((o) => o.prof_id === profile?.id)
   const offre = mesOffres.find((o) => o.id === offreId)
@@ -111,7 +113,7 @@ export default function TeacherSchedulePage() {
 
   const publish = () => {
     if (startsToPublish.length === 0) return
-    openSlots(day.toISOString(), startsToPublish, selectedDomains, offre)
+    openSlots(day.toISOString(), startsToPublish, selectedDomains, offre, reserve)
     setPublished(startsToPublish.length)
     setSelectedStarts([])
     window.setTimeout(() => setPublished(null), 4000)
@@ -261,6 +263,10 @@ export default function TeacherSchedulePage() {
                 </p>
               </div>
             </div>
+
+            <Checkbox checked={reserve} onChange={setReserve} className="mb-4">
+              Réservés à mes élèves suivis : les autres élèves ne les voient pas.
+            </Checkbox>
 
             <Button
               variant="dark"

@@ -13,7 +13,7 @@ import { TextInput, Toggle } from '@/components/ui/Field'
 import { EmptyState, LoadingScreen, Notice } from '@/components/ui/Misc'
 import { ProgressBar } from '@/components/ui/Progress'
 import { useAuthenticatedSession } from '@/state/session'
-import type { Enfant, ExerciseAttempt } from '@/types/domain'
+import type { Enfant, ExerciseAttempt, Suivi } from '@/types/domain'
 
 // Espace parent (sprint 4, migration 0019).
 //
@@ -104,7 +104,9 @@ export default function ParentPage() {
 }
 
 function EnfantCard({ enfant, onSupprime }: { enfant: Enfant; onSupprime: () => void }) {
+  const { catalog } = useAuthenticatedSession()
   const [progress, setProgress] = useState<ProgressMap | null>(null)
+  const [suivis, setSuivis] = useState<Suivi[]>([])
   const [tentatives, setTentatives] = useState<ExerciseAttempt[]>([])
   const [rapport, setRapport] = useState(enfant.rapport_hebdo)
   const [message, setMessage] = useState<{ ton: 'mastered' | 'progress'; texte: string } | null>(null)
@@ -114,11 +116,16 @@ function EnfantCard({ enfant, onSupprime }: { enfant: Enfant; onSupprime: () => 
 
   useEffect(() => {
     let annule = false
-    Promise.all([repository.getProgressionEleve(enfant.eleve_id), repository.getTentativesEleve(enfant.eleve_id)])
-      .then(([p, t]) => {
+    Promise.all([
+      repository.getProgressionEleve(enfant.eleve_id),
+      repository.getTentativesEleve(enfant.eleve_id),
+      repository.getMesSuivis(),
+    ])
+      .then(([p, t, s]) => {
         if (annule) return
         setProgress(p ?? {})
         setTentatives(t)
+        setSuivis(s.filter((x) => x.eleve_id === enfant.eleve_id && (x.etat === 'actif' || x.etat === 'termine')))
       })
       .catch(() => !annule && setMessage({ ton: 'progress', texte: 'La progression n’a pas pu être lue.' }))
     return () => {
@@ -187,6 +194,25 @@ function EnfantCard({ enfant, onSupprime }: { enfant: Enfant; onSupprime: () => 
                 <span className="text-ink-soft">{getSkill(p.skill_id)?.label ?? p.skill_id}</span>
                 <Link to={`/parent/revision/${p.skill_id}`} className="font-semibold text-accent hover:text-accent-600">
                   Exercices et corrigés
+                </Link>
+              </li>
+            ))}
+          </ul>
+        </div>
+      )}
+
+      {suivis.length > 0 && (
+        <div className="mb-4">
+          <SectionLabel className="mb-2">Professeurs qui le suivent</SectionLabel>
+          <ul className="flex flex-col gap-1.5">
+            {suivis.map((s) => (
+              <li key={s.id} className="flex flex-wrap items-center justify-between gap-2 text-[12.5px]">
+                <span className="text-ink-soft">
+                  {catalog.teachers.find((t) => t.id === s.prof_id)?.nom_court ?? 'Professeur'}
+                  {s.etat === 'termine' ? ' (terminé)' : ''}
+                </span>
+                <Link to={`/suivi/${s.id}`} className="font-semibold text-accent hover:text-accent-600">
+                  Lire et écrire les messages
                 </Link>
               </li>
             ))}

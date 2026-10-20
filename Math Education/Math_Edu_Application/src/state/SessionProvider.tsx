@@ -433,7 +433,7 @@ export function SessionProvider({ children }: { children: ReactNode }) {
   )
 
   const openSlots = useCallback<SessionValue['openSlots']>(
-    (dayIso, starts, domaines, offre) => {
+    (dayIso, starts, domaines, offre, reserve) => {
       const profId = session?.profile.id
       if (!profId) return
 
@@ -446,6 +446,7 @@ export function SessionProvider({ children }: { children: ReactNode }) {
           prix_eur: offre?.prix_eur ?? 20,
           domaines: offre ? [...new Set(offre.skill_ids.map((id) => id.slice(0, 1)))].sort() : domaines,
           offer_id: offre?.id ?? null,
+          reserve_suivi: reserve ?? false,
         }
       })
 

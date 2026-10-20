@@ -135,7 +135,7 @@ export interface SessionValue {
    * Ouvre des creneaux ce jour-la, aux debuts donnes (minutes depuis minuit).
    * Avec une offre : duree, places et prix sont les siens (trigger de 0018).
    */
-  openSlots: (dayIso: string, starts: number[], domaines: string[], offre?: CourseOffer) => void
+  openSlots: (dayIso: string, starts: number[], domaines: string[], offre?: CourseOffer, reserve?: boolean) => void
   /** Relit le catalogue (offres, creneaux) apres une modification du professeur. */
   rechargerCatalogue: () => Promise<void>
 }

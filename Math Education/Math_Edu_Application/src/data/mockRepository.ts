@@ -40,6 +40,8 @@ import type {
   Profile,
   Rappel,
   CourseOffer,
+  MessageSuivi,
+  Suivi,
 } from '@/types/domain'
 
 const STORAGE_KEY = 'racine.session.v2'
@@ -105,6 +107,9 @@ const COMPTES_DEMO = ['lea.d@email.fr', 'marc.b@email.fr'] as const
 
 /** Rappel simule du mode demonstration (aucun email ne part). */
 let rappelMock: Rappel | null = null
+/** Suivis et messages simules du mode demonstration. */
+let suivisMock: Suivi[] = []
+let messagesMock: MessageSuivi[] = []
 
 function profileFromSignUp(input: SignUpInput): Profile {
   const now = new Date().toISOString()
@@ -403,6 +408,7 @@ export const mockRepository: DataRepository = {
     const crees: AvailabilitySlot[] = slots.map((slot) => ({
       ...slot,
       offer_id: slot.offer_id ?? null,
+      reserve_suivi: slot.reserve_suivi ?? false,
       id: newId(),
       places_prises: 0,
     }))
@@ -584,6 +590,75 @@ export const mockRepository: DataRepository = {
   async getProgressionEleve() {
     exigerSession()
     return wait(null)
+  },
+
+  // Suivi : en demonstration, un fil local, sans professeur reel.
+  async getMesSuivis() {
+    exigerSession()
+    return wait([...suivisMock])
+  },
+
+  async getSuivisProf() {
+    exigerSession()
+    return wait([])
+  },
+
+  async demanderSuivi(profId) {
+    const session = exigerSession()
+    if (!suivisMock.some((s) => s.prof_id === profId && (s.etat === 'demande' || s.etat === 'actif'))) {
+      suivisMock = [
+        ...suivisMock,
+        {
+          id: newId(),
+          prof_id: profId,
+          eleve_id: session.profile.id,
+          etat: 'demande',
+          demande_le: new Date().toISOString(),
+          accepte_le: null,
+          termine_le: null,
+        },
+      ]
+    }
+    await wait(undefined)
+  },
+
+  async repondreSuivi() {
+    throw new RepositoryError('Aucune demande en mode démonstration.', undefined, true)
+  },
+
+  async terminerSuivi(suiviId) {
+    exigerSession()
+    suivisMock = suivisMock.map((s) => (s.id === suiviId ? { ...s, etat: 'termine', termine_le: new Date().toISOString() } : s))
+    await wait(undefined)
+  },
+
+  async getMessages(suiviId) {
+    exigerSession()
+    return wait(messagesMock.filter((m) => m.suivi_id === suiviId))
+  },
+
+  async envoyerMessage(suiviId, texte) {
+    const session = exigerSession()
+    const suivi = suivisMock.find((s) => s.id === suiviId)
+    if (!suivi || suivi.etat !== 'actif') {
+      throw new RepositoryError('Le fil s’ouvre quand le professeur accepte le suivi.', undefined, true)
+    }
+    const message = {
+      id: newId(),
+      suivi_id: suiviId,
+      auteur_id: session.profile.id,
+      texte: texte.trim(),
+      cree_le: new Date().toISOString(),
+      signale_le: null,
+    }
+    messagesMock = [...messagesMock, message]
+    return wait(message)
+  },
+
+  async signalerMessage(messageId) {
+    exigerSession()
+    messagesMock = messagesMock.map((m) => (m.id === messageId ? { ...m, signale_le: new Date().toISOString() } : m))
+    await wait(undefined)
   },
 
   // Espace parent : en demonstration, aucun enfant n'est rattache.

@@ -49,6 +49,38 @@ export interface Rappel {
   pause_jusqu_au: string | null
 }
 
+/** Suivi d'un eleve par un professeur (migration 0020). */
+export interface Suivi {
+  id: string
+  prof_id: string
+  eleve_id: string
+  etat: 'demande' | 'actif' | 'refuse' | 'termine'
+  demande_le: string
+  accepte_le: string | null
+  termine_le: string | null
+}
+
+/** Un suivi vu par son professeur, eleve nomme (mes_suivis_prof). */
+export interface SuiviProf {
+  suivi_id: string
+  eleve_id: string
+  prenom: string
+  niveau_scolaire: string | null
+  etat: Suivi['etat']
+  partage: boolean
+  demande_le: string
+}
+
+/** Un message du fil d'un suivi, lu par le professeur, l'eleve et son parent. */
+export interface MessageSuivi {
+  id: string
+  suivi_id: string
+  auteur_id: string | null
+  texte: string
+  cree_le: string
+  signale_le: string | null
+}
+
 /** Un enfant rattache au compte parent (migration 0019, mes_enfants). */
 export interface Enfant {
   lien_id: string
@@ -260,6 +292,8 @@ export interface AvailabilitySlot {
   domaines: string[]
   /** Offre de cours dont le creneau est issu (migration 0018), null pour un cours libre. */
   offer_id: string | null
+  /** Reserve aux eleves suivis par ce professeur (migration 0020). */
+  reserve_suivi: boolean
 }
 
 /** Table `bookings`. */

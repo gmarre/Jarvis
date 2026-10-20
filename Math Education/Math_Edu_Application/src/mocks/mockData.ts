@@ -206,6 +206,7 @@ function buildSlots(now: Date): AvailabilitySlot[] {
       prix_eur: 20,
       domaines: teacher?.domaines ?? [],
       offer_id: null,
+      reserve_suivi: false,
     })
   }
 

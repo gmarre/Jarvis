@@ -34,6 +34,9 @@ const StudentGraphPage = lazy(() => import('@/pages/StudentGraphPage'))
 const TeacherPublicPage = lazy(() => import('@/pages/TeacherPublicPage'))
 const ParentRevisionPage = lazy(() => import('@/pages/ParentRevisionPage'))
 const RapportPage = lazy(() => import('@/pages/RapportPage'))
+const SuiviPage = lazy(() => import('@/pages/SuiviPage'))
+const MesProfsPage = lazy(() => import('@/pages/MesProfsPage'))
+const MesElevesPage = lazy(() => import('@/pages/MesElevesPage'))
 
 /** Accueil propre a chaque role. */
 function homeFor(role: UserRole): string {
@@ -194,6 +197,30 @@ export default function App() {
           element={
             <RequireAuth roles={PROF}>
               <TeacherAgendaPage />
+            </RequireAuth>
+          }
+        />
+        <Route
+          path="/prof/eleves"
+          element={
+            <RequireAuth roles={PROF}>
+              <MesElevesPage />
+            </RequireAuth>
+          }
+        />
+        <Route
+          path="/suivi/:suiviId"
+          element={
+            <RequireAuth>
+              <SuiviPage />
+            </RequireAuth>
+          }
+        />
+        <Route
+          path="/mes-profs"
+          element={
+            <RequireAuth roles={ELEVE}>
+              <MesProfsPage />
             </RequireAuth>
           }
         />

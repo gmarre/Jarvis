@@ -25,6 +25,9 @@ import type {
   CorrigeParent,
   Enfant,
   Inscrit,
+  MessageSuivi,
+  Suivi,
+  SuiviProf,
   NewCourseOffer,
   ProfilProf,
   ChampModifiable,
@@ -96,7 +99,10 @@ export interface Catalog {
 }
 
 /** Creneau a ouvrir, avant que le serveur ne lui attribue son identifiant. */
-export type NewSlot = Omit<AvailabilitySlot, 'id' | 'places_prises' | 'offer_id'> & { offer_id?: string | null }
+export type NewSlot = Omit<AvailabilitySlot, 'id' | 'places_prises' | 'offer_id' | 'reserve_suivi'> & {
+  offer_id?: string | null
+  reserve_suivi?: boolean
+}
 
 /**
  * Un profil est incomplet tant qu'il manque de quoi construire un parcours.
@@ -217,6 +223,19 @@ export interface DataRepository {
   /** Change l'heure ou met en pause jusqu'a une date (null : reprendre). */
   reglerRappel(reglage: { heure?: string; pause_jusqu_au?: string | null }): Promise<Rappel>
   desactiverRappel(): Promise<Rappel | null>
+  // --- Suivi (migration 0020) ---------------------------------------------
+
+  /** Suivis dont le compte est participant (eleve, ou parent d'un eleve suivi). */
+  getMesSuivis(): Promise<Suivi[]>
+  /** Suivis et demandes du professeur connecte, eleves nommes. */
+  getSuivisProf(): Promise<SuiviProf[]>
+  demanderSuivi(profId: string): Promise<void>
+  repondreSuivi(suiviId: string, accepte: boolean): Promise<void>
+  terminerSuivi(suiviId: string): Promise<void>
+  getMessages(suiviId: string): Promise<MessageSuivi[]>
+  envoyerMessage(suiviId: string, texte: string): Promise<MessageSuivi>
+  signalerMessage(messageId: string): Promise<void>
+
   // --- Espace parent (migration 0019) --------------------------------------
 
   /** Rattache au compte parent les enfants dont il a confirme le consentement. Rend leur nombre. */

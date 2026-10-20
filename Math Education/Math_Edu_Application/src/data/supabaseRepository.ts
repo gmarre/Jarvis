@@ -46,6 +46,9 @@ import type {
   CorrigeParent,
   Enfant,
   Inscrit,
+  MessageSuivi,
+  Suivi,
+  SuiviProf,
 } from '@/types/domain'
 
 // =============================================================================
@@ -640,6 +643,7 @@ export const supabaseRepository: DataRepository = {
           domaines: slot.domaines,
           // Le trigger de 0018 reprend duree, places et prix de l'offre.
           ...(slot.offer_id ? { offer_id: slot.offer_id } : {}),
+          ...(slot.reserve_suivi ? { reserve_suivi: true } : {}),
         })),
         // Republier un horaire deja ouvert ne doit pas etre une erreur.
         { onConflict: 'prof_id,start_at', ignoreDuplicates: true },
@@ -647,7 +651,9 @@ export const supabaseRepository: DataRepository = {
       .select('*')
 
     if (error) throw erreur('Ouverture des creneaux', error)
-    return (data ?? []).map((slot) => ({ ...slot, offer_id: slot.offer_id ?? null, places_prises: 0 }) as AvailabilitySlot)
+    return (data ?? []).map(
+      (slot) => ({ ...slot, offer_id: slot.offer_id ?? null, reserve_suivi: slot.reserve_suivi ?? false, places_prises: 0 }) as AvailabilitySlot,
+    )
   },
 
   async saveOffer(offre, id) {
@@ -811,6 +817,75 @@ export const supabaseRepository: DataRepository = {
     return this.getRappel()
   },
 
+  async getMesSuivis() {
+    const db = requireSupabase()
+    const { data, error } = await db.from('suivis').select('*').order('demande_le', { ascending: false })
+    if (error) {
+      if (['42P01', 'PGRST205'].includes(error.code)) return []
+      throw erreur('Lecture des suivis', error)
+    }
+    return (data ?? []) as Suivi[]
+  },
+
+  async getSuivisProf() {
+    const db = requireSupabase()
+    const { data, error } = await db.rpc('mes_suivis_prof')
+    if (error) {
+      if (error.code === 'PGRST202' || error.code === '42883') return []
+      throw erreur('Lecture des élèves suivis', error)
+    }
+    return (data ?? []) as SuiviProf[]
+  },
+
+  async demanderSuivi(profId) {
+    const db = requireSupabase()
+    const { error } = await db.rpc('demander_suivi', { prof: profId })
+    if (error) throw erreur('Demande de suivi', error)
+  },
+
+  async repondreSuivi(suiviId, accepte) {
+    const db = requireSupabase()
+    const { error } = await db.rpc('repondre_suivi', { suivi: suiviId, accepte })
+    if (error) throw erreur('Réponse à la demande', error)
+  },
+
+  async terminerSuivi(suiviId) {
+    const db = requireSupabase()
+    const { data, error } = await db.rpc('terminer_suivi', { suivi: suiviId })
+    if (error) throw erreur('Fin du suivi', error)
+    if (!data) throw new RepositoryError('Ce suivi est déjà terminé.', undefined, true)
+  },
+
+  async getMessages(suiviId) {
+    const db = requireSupabase()
+    const { data, error } = await db
+      .from('messages_suivi')
+      .select('*')
+      .eq('suivi_id', suiviId)
+      .order('cree_le', { ascending: true })
+    if (error) throw erreur('Lecture des messages', error)
+    return (data ?? []) as MessageSuivi[]
+  },
+
+  async envoyerMessage(suiviId, texte) {
+    const db = requireSupabase()
+    const { data: utilisateur } = await db.auth.getUser()
+    if (!utilisateur.user) throw new RepositoryError('Aucune session ouverte')
+    const { data, error } = await db
+      .from('messages_suivi')
+      .insert({ suivi_id: suiviId, auteur_id: utilisateur.user.id, texte: texte.trim() })
+      .select('*')
+      .single()
+    if (error) throw erreur('Envoi du message', error)
+    return data as MessageSuivi
+  },
+
+  async signalerMessage(messageId) {
+    const db = requireSupabase()
+    const { error } = await db.rpc('signaler_message', { message: messageId })
+    if (error) throw erreur('Signalement', error)
+  },
+
   async rattacherEnfants() {
     const db = requireSupabase()
     const { data, error } = await db.rpc('rattacher_mes_enfants')
@@ -911,7 +986,7 @@ export const supabaseRepository: DataRepository = {
       db.from('slots_disponibles').select('*').order('start_at', { ascending: true }),
       db.from('course_offers').select('*').eq('active', true).order('cree_le', { ascending: true }),
       // offer_id n'est pas dans la vue (0001 et 0004 doivent rester rejouables).
-      db.from('availability_slots').select('id, offer_id'),
+      db.from('availability_slots').select('id, offer_id, reserve_suivi'),
     ])
 
     if (professeurs.error) throw erreur('Lecture des professeurs', professeurs.error)
@@ -920,9 +995,13 @@ export const supabaseRepository: DataRepository = {
     // catalogue reste celui d'avant.
     const absente = (e: PostgrestError | null) => e !== null && ['42P01', 'PGRST205', '42703'].includes(e.code)
     if (offres.error && !absente(offres.error)) throw erreur('Lecture des offres', offres.error)
-    const offreDe = new Map<string, string | null>(
-      rattachements.error ? [] : (rattachements.data ?? []).map((l) => [l.id as string, (l.offer_id as string | null) ?? null]),
-    )
+    // Avant 0020, reserve_suivi n'existe pas : on relit sans elle.
+    let lignes = rattachements.data as { id: string; offer_id?: string | null; reserve_suivi?: boolean }[] | null
+    if (rattachements.error && absente(rattachements.error)) {
+      const repli = await db.from('availability_slots').select('id, offer_id')
+      lignes = repli.error ? [] : (repli.data as { id: string; offer_id: string | null }[])
+    }
+    const rattache = new Map((lignes ?? []).map((l) => [l.id, l]))
 
     const teachers: Teacher[] = (professeurs.data ?? []).map((ligne) => {
       const joint = ligne as { profiles?: { prenom?: string } | { prenom?: string }[] }
@@ -943,9 +1022,10 @@ export const supabaseRepository: DataRepository = {
       }
     })
 
-    const slots = ((creneaux.data ?? []) as Omit<AvailabilitySlot, 'offer_id'>[]).map((slot) => ({
+    const slots = ((creneaux.data ?? []) as Omit<AvailabilitySlot, 'offer_id' | 'reserve_suivi'>[]).map((slot) => ({
       ...slot,
-      offer_id: offreDe.get(slot.id) ?? null,
+      offer_id: rattache.get(slot.id)?.offer_id ?? null,
+      reserve_suivi: rattache.get(slot.id)?.reserve_suivi ?? false,
     }))
     return { teachers, slots, offers: offres.error ? [] : ((offres.data ?? []) as CourseOffer[]) }
   },

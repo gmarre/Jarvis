@@ -16,7 +16,7 @@ import {
 import { dayLabel } from '@/lib/schedule'
 import { AppShell, PageBody, PageHeader } from '@/components/layout/AppShell'
 import { Badge } from '@/components/ui/Badge'
-import { Button } from '@/components/ui/Button'
+import { Button, ButtonLink } from '@/components/ui/Button'
 import { Card, CardTitle, SectionLabel } from '@/components/ui/Card'
 import { Checkbox } from '@/components/ui/Field'
 import { Avatar, EmptyState, Notice } from '@/components/ui/Misc'
@@ -129,8 +129,13 @@ export default function SchedulePage() {
       <PageBody>
         <PageHeader
           title="Réserver un cours"
-          subtitle="20 € / 1h30, jusqu'à 3 élèves. Le professeur reçoit ton graphe et prépare la séance sur tes lacunes."
+          subtitle="Jusqu'à 3 élèves par cours. Le professeur reçoit ton graphe et prépare la séance sur tes lacunes."
           actions={
+            <div className="flex flex-wrap items-center gap-2">
+            {/* Les suivis et leurs messages (sprint 5). */}
+            <ButtonLink to="/mes-profs" variant="secondary" size="sm">
+              Mes professeurs
+            </ButtonLink>
             <div className="flex items-center overflow-hidden rounded-[10px] border border-line bg-surface">
               <button
                 type="button"
@@ -152,6 +157,7 @@ export default function SchedulePage() {
               >
                 <IconChevronRight size={16} />
               </button>
+            </div>
             </div>
           }
         />
