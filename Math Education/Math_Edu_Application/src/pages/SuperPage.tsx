@@ -13,7 +13,9 @@ import { Button, ButtonLink } from '@/components/ui/Button'
 import { Card } from '@/components/ui/Card'
 import { RichText } from '@/components/ui/RichText'
 import { IconCheck, IconClose, IconHint } from '@/components/ui/icons'
-import { useAuthenticatedSession } from '@/state/session'
+import { NiveauMaitrise } from '@/components/ui/NiveauMaitrise'
+import type { Niveau } from '@/lib/maitrise'
+import { useAuthenticatedSession, type EffetSuper } from '@/state/session'
 import { questionCommeExercice, type SuperExercise } from '@/types/content'
 
 // Super exercice (sprint 2, point 7) : un probleme long porte par une
@@ -43,6 +45,8 @@ function SuperEpreuve({ sx }: { sx: SuperExercise }) {
   const [enCorrection, setEnCorrection] = useState(false)
   const [erreur, setErreur] = useState<string | null>(null)
   const [resultats, setResultats] = useState<ResultatQuestion[] | null>(null)
+  /** Ce que le passage a change pour la competence porteuse (niveau sur 5). */
+  const [effet, setEffet] = useState<EffetSuper | null>(null)
   /** Indices deplies, par question : ils restent ouverts quand on revient en arriere. */
   const [indices, setIndices] = useState<Record<string, boolean>>({})
   const debut = useRef(Date.now())
@@ -108,6 +112,30 @@ function SuperEpreuve({ sx }: { sx: SuperExercise }) {
                   bilan.aRetravailler.length === 1 ? 'la compétence' : 'les compétences'
                 } en cause avant de retenter.`}
           </p>
+          {effet && effet.niveauApres !== effet.niveauAvant && (
+            <div className="mx-auto mt-4 flex flex-wrap items-center justify-center gap-2.5 text-[13px] font-semibold text-ink">
+              <NiveauMaitrise niveau={effet.niveauApres as Niveau} />
+              <span>
+                « {porteuse?.label ?? sx.skill_id} » : niveau {effet.niveauAvant} → {effet.niveauApres} sur 5
+              </span>
+            </div>
+          )}
+          {effet?.justMastered && (
+            <p className="mx-auto mt-1.5 max-w-[460px] text-[12.5px] font-medium leading-relaxed text-mastered-700">
+              Compétence acquise : elle ouvre la voie aux suivantes. Un premier contrôle dans 3 jours
+              vérifiera qu'elle tient.
+            </p>
+          )}
+          {effet?.niveauApres === 5 && effet.niveauAvant !== 5 && (
+            <p className="mx-auto mt-1.5 max-w-[460px] text-[12.5px] font-medium leading-relaxed text-mastered-700">
+              Sans faute, après tous les contrôles : complètement acquise.
+            </p>
+          )}
+          {bilan.reussi && bilan.score < bilan.total && effet && effet.niveauApres >= 4 && effet.niveauApres < 5 && (
+            <p className="mx-auto mt-1.5 max-w-[460px] text-[12.5px] leading-relaxed text-ink-subtle">
+              Pour le niveau 5 sur 5, il faudra un jour le réussir sans aucune faute.
+            </p>
+          )}
           {!bilan.reussi && bilan.aRetravailler.length > 0 && (
             <div className="mt-5 flex flex-wrap justify-center gap-2">
               {bilan.aRetravailler.map((id) => (
@@ -212,7 +240,7 @@ function SuperEpreuve({ sx }: { sx: SuperExercise }) {
         }),
       )
       const bilan = resultatSuper(sx, corrections)
-      enregistrerSuper({
+      const changement = enregistrerSuper({
         id: newId(),
         super_id: sx.id,
         skill_id: sx.skill_id,
@@ -225,6 +253,7 @@ function SuperEpreuve({ sx }: { sx: SuperExercise }) {
         duree_s: Math.round((Date.now() - debut.current) / 1000),
         created_at: new Date().toISOString(),
       })
+      setEffet(changement)
       setResultats(corrections)
       setPhase('correction')
     } catch {

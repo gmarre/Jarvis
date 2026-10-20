@@ -2,11 +2,15 @@ import { describe, expect, it } from 'vitest'
 
 import {
   ETAT_INITIAL,
+  apresEpreuve,
   apresReponse,
+  attendEpreuve,
   controleDu,
   estDeMaitrise,
   exerciceDeControle,
   valideeParLeTest,
+  viseSansFaute,
+  type Epreuve,
   type EtatMaitrise,
 } from './maitrise'
 
@@ -154,5 +158,79 @@ describe('exerciceDeControle', () => {
   it('prefere un exercice jamais fait', () => {
     const tentatives = [{ exercise_id: 'EX-X-M-01', created_at: '2026-10-10T10:00:00Z' }]
     expect(exerciceDeControle(exos, tentatives)?.id).toBe('EX-X-E-01')
+  })
+})
+
+// Decision de Gauthier du 20 octobre 2026 : le super exercice reussi fait
+// passer la competence au niveau 4 ; le niveau 5 demande en plus un super
+// exercice sans faute.
+describe('super exercice : il fait acquerir, le sans-faute ouvre le 5', () => {
+  const aFaire: Epreuve = { existe: true, reussie: false, sansFaute: false }
+  const reussi: Epreuve = { existe: true, reussie: true, sansFaute: false }
+  const parfait: Epreuve = { existe: true, reussie: true, sansFaute: true }
+
+  function exercicesFaits(epreuve: Epreuve) {
+    const un = apresReponse(ETAT_INITIAL, 'EX-C013-D-01', true, T0, epreuve).etat
+    return apresReponse(un, 'EX-C013-M-01', true, T0, epreuve)
+  }
+
+  it('exercices faits sans super exercice reussi : niveau 3, en attente', () => {
+    const r = exercicesFaits(aFaire)
+    expect(r.etat.niveau).toBe(3)
+    expect(r.vientDEtreAcquise).toBe(false)
+    expect(r.attendEpreuve).toBe(true)
+    expect(attendEpreuve(r.etat, aFaire)).toBe(true)
+  })
+
+  it('d autres exercices reussis ne suffisent pas : c est le super exercice', () => {
+    const r = apresReponse(exercicesFaits(aFaire).etat, 'EX-C013-M-02', true, T0, aFaire)
+    expect(r.etat.niveau).toBe(3)
+  })
+
+  it('le super exercice reussi fait passer a 4, avec un controle a J+3', () => {
+    const r = apresEpreuve(exercicesFaits(aFaire).etat, { reussie: true, sansFaute: false }, T0)
+    expect(r.etat.niveau).toBe(4)
+    expect(r.vientDEtreAcquise).toBe(true)
+    expect(controleDu(r.etat, plus(3))).toBe(true)
+  })
+
+  it('un super exercice rate ne fait rien redescendre', () => {
+    const avant = exercicesFaits(aFaire).etat
+    const r = apresEpreuve(avant, { reussie: false, sansFaute: false }, T0)
+    expect(r.etat).toEqual(avant)
+    expect(r.attendEpreuve).toBe(true)
+  })
+
+  it('reussi avant les exercices : il ne fait rien, les exercices concluent ensuite', () => {
+    expect(apresEpreuve(ETAT_INITIAL, { reussie: true, sansFaute: true }, T0).etat.niveau).toBe(0)
+    expect(exercicesFaits(reussi).etat.niveau).toBe(4)
+  })
+
+  it('controles faits sans le sans-faute : la competence reste a 4', () => {
+    let etat = exercicesFaits(reussi).etat
+    for (const j of [3, 13, 43]) etat = apresReponse(etat, 'EX-C013-E-01', true, plus(j), reussi).etat
+    expect(etat.niveau).toBe(4)
+    expect(etat.prochain_controle).toBeNull()
+    expect(viseSansFaute(etat, reussi)).toBe(true)
+    // Le sans-faute arrive ensuite : niveau 5.
+    expect(apresEpreuve(etat, { reussie: true, sansFaute: true }, plus(50)).etat.niveau).toBe(5)
+  })
+
+  it('sans-faute deja fait : les trois controles donnent 5', () => {
+    let etat = exercicesFaits(parfait).etat
+    for (const j of [3, 13, 43]) etat = apresReponse(etat, 'EX-C013-E-01', true, plus(j), parfait).etat
+    expect(etat.niveau).toBe(5)
+  })
+
+  it('un sans-faute avant la fin des controles ne saute pas les controles', () => {
+    const etat = exercicesFaits(reussi).etat
+    expect(apresEpreuve(etat, { reussie: true, sansFaute: true }, plus(1)).etat.niveau).toBe(4)
+  })
+
+  it('competence rouverte apres un controle rate : super deja reussi, une maitrise suffit', () => {
+    const acquis = exercicesFaits(reussi).etat
+    const rouverte = apresReponse(acquis, 'EX-C013-E-02', false, plus(3), reussi).etat
+    expect(rouverte.niveau).toBe(3)
+    expect(apresReponse(rouverte, 'EX-C013-M-02', true, plus(4), reussi).etat.niveau).toBe(4)
   })
 })

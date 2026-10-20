@@ -3,6 +3,9 @@ import { Link } from 'react-router-dom'
 import { getExercisesForSkill, getFlashcardsForSkill, getMindmap, getSkill, getSuperForSkill } from '@/content'
 import { cn } from '@/lib/cn'
 import { statusOf, unlockCount, type ProgressMap } from '@/lib/dag'
+import { attendEpreuve, viseSansFaute } from '@/lib/maitrise'
+import { epreuveDe } from '@/lib/super'
+import type { SuperAttempt } from '@/types/domain'
 import { Badge, StatusBadge } from '@/components/ui/Badge'
 import { Button, ButtonLink } from '@/components/ui/Button'
 import { Level } from '@/components/ui/Misc'
@@ -16,6 +19,8 @@ import { NiveauMaitrise } from '@/components/ui/NiveauMaitrise'
 interface SkillDetailPanelProps {
   skill: Skill
   progress: ProgressMap
+  /** Passages des super exercices de l'eleve. */
+  passagesSuper: SuperAttempt[]
   isRootGap: boolean
   onStart: (skillId: string) => void
   /** Nom du professeur qui verra ce meme graphe, si un cours est prevu. */
@@ -26,6 +31,7 @@ interface SkillDetailPanelProps {
 export function SkillDetailPanel({
   skill,
   progress,
+  passagesSuper,
   isRootGap,
   onStart,
   teacherName,
@@ -36,6 +42,10 @@ export function SkillDetailPanel({
   const exercises = getExercisesForSkill(skill.id)
   const mindmap = getMindmap(skill.mindmap_id)
   const unlocks = unlockCount(skill.id)
+  const superEx = getSuperForSkill(skill.id)[0]
+  const epreuve = epreuveDe(superEx ? [superEx.id] : [], passagesSuper)
+  const pourAcquerir = entry ? attendEpreuve(entry, epreuve) : false
+  const pourLe5 = entry ? viseSansFaute(entry, epreuve) : false
 
   const missingPrerequisites = skill.prerequisites.filter(
     (id) => statusOf(progress, id) !== 'mastered',
@@ -129,10 +139,12 @@ export function SkillDetailPanel({
         </ButtonLink>
       )}
 
-      {/* Epreuve finale : proposee une fois la competence acquise (niveau 4). */}
-      {getSuperForSkill(skill.id)[0] && (entry?.niveau ?? 0) >= 4 && (
-        <ButtonLink to={`/super/${getSuperForSkill(skill.id)[0].id}`} fullWidth className="mt-2.5">
-          Super exercice : l'épreuve finale
+      {/* Epreuve finale (decision de Gauthier du 20 octobre 2026) : au niveau 3,
+          c'est elle qui fait acquerir la competence ; ensuite, reussie sans
+          faute, elle compte pour le niveau 5. */}
+      {superEx && (pourAcquerir || pourLe5) && (
+        <ButtonLink to={`/super/${superEx.id}`} fullWidth className="mt-2.5">
+          {pourAcquerir ? 'Super exercice : pour acquérir la compétence' : 'Super exercice : vise le sans-faute'}
         </ButtonLink>
       )}
 

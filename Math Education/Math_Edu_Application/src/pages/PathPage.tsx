@@ -153,6 +153,7 @@ export default function PathPage() {
                 <SkillDetailPanel
                   skill={selectedSkill}
                   progress={session.progress}
+                  passagesSuper={session.superAttempts}
                   isRootGap={rootGapIds.includes(selectedSkill.id)}
                   onStart={startSkill}
                   teacherName={nextBooking?.teacher.nom_court ?? null}

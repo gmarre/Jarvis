@@ -142,10 +142,14 @@ function ExerciseSession({ skillId, onReprendre }: { skillId: string; onReprendr
     setPhase('correction')
   }
 
+  /** Exercices faits, le super exercice reste a passer : la seance s'arrete la. */
+  const versEpreuve = Boolean(result?.isCorrect && result.attendEpreuve)
+
   const next = () => {
     // Une competence qui vient d'etre acquise termine la seance : une erreur
-    // juste apres la rouvrirait avant meme son premier controle (J+3).
-    if (index + 1 >= exercises.length || result?.justMastered) {
+    // juste apres la rouvrirait avant meme son premier controle (J+3). De
+    // meme quand il ne reste que le super exercice : la suite est la-bas.
+    if (index + 1 >= exercises.length || result?.justMastered || versEpreuve) {
       setPhase('bilan')
       return
     }
@@ -259,7 +263,7 @@ function ExerciseSession({ skillId, onReprendre }: { skillId: string; onReprendr
             result={result}
             solutionSteps={result.solutionSteps}
             onNext={next}
-            isLast={index + 1 >= exercises.length || result.justMastered}
+            isLast={index + 1 >= exercises.length || result.justMastered || versEpreuve}
           />
         )}
       </Card>
@@ -327,6 +331,11 @@ function CorrectionPanel({
               qu'elle tient.
             </p>
           )}
+          {result.isCorrect && result.attendEpreuve && (
+            <p className="mt-1.5 text-[12.5px] font-medium leading-relaxed text-mastered-700">
+              Exercices réussis. Dernière marche pour acquérir la compétence : son super exercice.
+            </p>
+          )}
         </div>
       </div>
 
@@ -377,7 +386,7 @@ function SessionSummary({
   mindmapId: string | null
   /** Competence dont les cartes defi sont a proposer ensuite, ou null. */
   defiSkillId: string | null
-  /** Super exercice de la competence, propose une fois celle-ci acquise. */
+  /** Super exercice de la competence : il la fait acquerir, puis compte pour le niveau 5. */
   superId: string | null
   niveauAvant: Niveau
   niveauApres: Niveau
@@ -388,6 +397,9 @@ function SessionSummary({
 }) {
   const navigate = useNavigate()
   const prerequisite = descendTo[0] ? getSkill(descendTo[0]) : null
+  // Exercices faits, super exercice a passer (decision de Gauthier du
+  // 20 octobre 2026 : c'est lui qui fait passer au niveau 4).
+  const attendEpreuve = Boolean(superId && dernier?.attendEpreuve)
 
   return (
     <FocusFrame title={skillLabel} onQuit={() => navigate('/travail')}>
@@ -399,7 +411,9 @@ function SessionSummary({
               ? 'À consolider'
               : mastered
                 ? 'Compétence acquise'
-                : 'Séance terminée'}
+                : attendEpreuve
+                  ? 'Exercices réussis'
+                  : 'Séance terminée'}
         </Badge>
 
         <h1 className="font-display text-[24px] font-medium leading-snug text-ink sm:text-[28px]">
@@ -435,7 +449,9 @@ function SessionSummary({
               ? 'Cette compétence a besoin d’être consolidée : elle revient dans ton travail, un exercice de maîtrise réussi la validera de nouveau.'
               : mastered
                 ? 'La compétence passe au vert. Un premier contrôle dans 3 jours vérifiera qu’elle tient : la retrouver après quelques jours, c’est ce qui la fixe.'
-                : "Ce n'est pas encore solide, on y revient bientôt."}
+                : attendEpreuve
+                  ? 'Les exercices sont réussis. Pour acquérir la compétence et ouvrir les suivantes, il reste son super exercice.'
+                  : "Ce n'est pas encore solide, on y revient bientôt."}
         </p>
         {dernier?.controle === 'rate' && (
           <Button size="sm" className="mt-4" onClick={onReprendre}>
@@ -462,12 +478,15 @@ function SessionSummary({
           </div>
         )}
 
-        {superId && niveauApres >= 4 && !prerequisite && (
+        {superId && (niveauApres >= 4 || attendEpreuve) && !prerequisite && (
           <div className="mt-6 rounded-card border border-mastered-200 bg-mastered-50 p-4 text-left">
             <p className="text-[12.5px] font-semibold text-mastered-900">L'épreuve finale t'attend</p>
             <p className="mt-1.5 text-[12.5px] leading-relaxed text-mastered-900/80">
               Un problème long qui fait travailler cette compétence avec d'autres. Prévois 15 minutes et
-              un brouillon.
+              un brouillon.{' '}
+              {attendEpreuve
+                ? 'Réussi, il fait acquérir la compétence (niveau 4).'
+                : 'Réussi sans faute, il compte pour le niveau 5.'}
             </p>
             <ButtonLink to={`/super/${superId}`} size="sm" className="mt-3">
               Faire le super exercice

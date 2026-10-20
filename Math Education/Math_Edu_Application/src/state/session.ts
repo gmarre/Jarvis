@@ -27,9 +27,19 @@ export interface AnswerResult extends Correction {
   niveau: number
   /** Date du prochain controle apres la reponse, null si aucun. */
   prochainControle: string | null
+  /** Exercices faits : le super exercice de la competence reste a reussir. */
+  attendEpreuve: boolean
   /** L'eleve echoue de facon repetee : on lui reproposera les prerequis. */
   shouldDescend: boolean
   descendTo: string[]
+}
+
+/** Ce que le passage d'un super exercice a change pour sa competence. */
+export interface EffetSuper {
+  niveauAvant: number
+  niveauApres: number
+  /** La competence vient d'etre acquise (niveau 4) grace a ce passage. */
+  justMastered: boolean
 }
 
 export interface SyncError {
@@ -89,8 +99,11 @@ export interface SessionValue {
   reviewSkill: (skillId: string) => void
   /** Carte defi retournee : l'eleve dit s'il savait (lib/defis.ts). */
   reviserDefi: (carte: Flashcard, savait: boolean) => void
-  /** Super exercice rendu : enregistre le passage (score, reponses). */
-  enregistrerSuper: (attempt: SuperAttempt) => void
+  /**
+   * Super exercice rendu : enregistre le passage (score, reponses) et applique
+   * la regle de maitrise a sa competence porteuse (niveau 4 s'il est reussi).
+   */
+  enregistrerSuper: (attempt: SuperAttempt) => EffetSuper
   /** Cloture le test de positionnement. */
   completePlacement: (result: PlacementResult, progress: ProgressMap) => void
   bookSlot: (slotId: string, skillId: string | null) => void

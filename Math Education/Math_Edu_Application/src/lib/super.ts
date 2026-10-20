@@ -8,6 +8,7 @@
 import type { Correction } from '@/lib/exercise'
 import type { SuperExercise } from '@/types/content'
 import type { SuperAttempt } from '@/types/domain'
+import type { Epreuve } from './maitrise'
 
 export const SEUIL_REUSSITE = 0.7
 
@@ -49,6 +50,19 @@ export function resultatSuper(
   }
   const seuil = seuilDeReussite(total)
   return { score, total, seuil, reussi: score >= seuil, aRetravailler }
+}
+
+/**
+ * Ce que l'eleve a fait des super exercices d'une competence (ceux dont elle
+ * est la porteuse), pour la regle de maitrise (lib/maitrise.ts).
+ */
+export function epreuveDe(superIds: string[], passages: SuperAttempt[]): Epreuve {
+  const siens = passages.filter((p) => superIds.includes(p.super_id))
+  return {
+    existe: superIds.length > 0,
+    reussie: siens.some((p) => p.reussi),
+    sansFaute: siens.some((p) => p.reussi && p.score === p.total),
+  }
 }
 
 /** Le super exercice a-t-il deja ete reussi par l'eleve ? */

@@ -17,7 +17,7 @@ import {
   skills,
 } from '@/content'
 import type { Skill } from '@/types/content'
-import { apresReponse, type EtatMaitrise } from './maitrise'
+import { apresEpreuve, apresReponse, SANS_EPREUVE, type Epreuve, type EtatMaitrise } from './maitrise'
 import type { SkillProgress, SkillStatus } from '@/types/domain'
 
 /** Etat de progression de l'eleve, indexe par competence. */
@@ -230,6 +230,8 @@ export interface AttemptOutcome {
   justMastered: boolean
   /** Cette reponse etait un controle d'une competence acquise. */
   controle: 'reussi' | 'rate' | null
+  /** Exercices faits : le super exercice de la competence reste a reussir. */
+  attendEpreuve: boolean
   /**
    * L'eleve echoue de facon repetee : l'application doit lui reproposer les
    * prerequis plutot que s'acharner. C'est la regle 3 du moteur.
@@ -254,19 +256,13 @@ export function applyAttempt(
   exerciseId: string,
   isCorrect: boolean,
   now: Date = new Date(),
+  epreuve: Epreuve = SANS_EPREUVE,
 ): AttemptOutcome {
   const skill = requireSkill(skillId)
   const { out_of: outOf } = skill.mastery_threshold
   const base = { ...emptyProgress(skillId), ...progress[skillId] }
 
-  const avant: EtatMaitrise = {
-    niveau: base.niveau,
-    exercices_reussis: base.exercices_reussis,
-    controles_reussis: base.controles_reussis,
-    prochain_controle: base.prochain_controle,
-    valide_par_test: base.valide_par_test,
-  }
-  const evolution = apresReponse(avant, exerciseId, isCorrect, now)
+  const evolution = apresReponse(etatDe(base), exerciseId, isCorrect, now, epreuve)
   const etat = evolution.etat
 
   const recent = [...base.recent, isCorrect].slice(-outOf)
@@ -299,9 +295,53 @@ export function applyAttempt(
     progress: next,
     justMastered: evolution.vientDEtreAcquise,
     controle: evolution.controle,
+    attendEpreuve: evolution.attendEpreuve,
     shouldDescend: canDescend,
     descendTo: canDescend ? unmasteredPrerequisites : [],
   }
+}
+
+function etatDe(ligne: SkillProgress): EtatMaitrise {
+  return {
+    niveau: ligne.niveau,
+    exercices_reussis: ligne.exercices_reussis,
+    controles_reussis: ligne.controles_reussis,
+    prochain_controle: ligne.prochain_controle,
+    valide_par_test: ligne.valide_par_test,
+  }
+}
+
+export interface EpreuveOutcome {
+  progress: SkillProgress
+  /** Le super exercice vient de faire passer la competence au niveau 4. */
+  justMastered: boolean
+  niveauAvant: SkillProgress['niveau']
+}
+
+/**
+ * Applique un passage du super exercice a sa competence porteuse (decision de
+ * Gauthier du 20 octobre 2026) : reussi, il la fait acquerir (niveau 4) ;
+ * sans faute, il ouvre le niveau 5 une fois les controles faits.
+ */
+export function applySuper(
+  progress: ProgressMap,
+  skillId: string,
+  passage: { reussie: boolean; sansFaute: boolean },
+  now: Date = new Date(),
+): EpreuveOutcome {
+  const base = { ...emptyProgress(skillId), ...progress[skillId] }
+  const evolution = apresEpreuve(etatDe(base), passage, now)
+  const etat = evolution.etat
+  const next: SkillProgress = {
+    ...base,
+    ...etat,
+    status: etat.niveau >= 4 ? 'mastered' : base.attempts > 0 ? 'in_progress' : base.status,
+    updated_at: now.toISOString(),
+    ...(evolution.vientDEtreAcquise
+      ? { review_box: 1, next_review_at: nextReviewDate(1, now).toISOString() }
+      : {}),
+  }
+  return { progress: next, justMastered: evolution.vientDEtreAcquise, niveauAvant: base.niveau }
 }
 
 /** Echeances de revision espacee, methode de Leitner : J+1, J+3, J+7, J+21. */

@@ -12,6 +12,13 @@
 // Une competence validee par le test d'entree part de 4, avec des controles
 // plus espaces (J+14, J+45). Un controle rate fait redescendre a 3.
 //
+// Super exercice (decision de Gauthier du 20 octobre 2026) : quand la
+// competence a un super exercice, c'est sa reussite qui la fait passer au
+// niveau 4, une fois les exercices reussis ; en attendant, elle reste a 3
+// (super exercice a reussir). Le niveau 4 debloque les competences
+// suivantes. Le niveau 5, le plus dur, demande en plus des controles un
+// super exercice reussi sans faute ; il ne bloque rien.
+//
 // Ce module est pur : il ne lit ni la date du systeme ni le contenu, tout
 // arrive en parametre, pour que les tests puissent avancer l'horloge.
 
@@ -34,6 +41,19 @@ export interface EtatMaitrise {
   valide_par_test: boolean
 }
 
+/** Ce que l'eleve a fait du super exercice de la competence. */
+export interface Epreuve {
+  /** La competence a un super exercice. */
+  existe: boolean
+  /** Reussi au moins une fois (70 % des points). */
+  reussie: boolean
+  /** Reussi au moins une fois avec tous les points. */
+  sansFaute: boolean
+}
+
+/** Competence sans super exercice (A001, G001, G004) : la table d'origine s'applique. */
+export const SANS_EPREUVE: Epreuve = { existe: false, reussie: false, sansFaute: false }
+
 export const ETAT_INITIAL: EtatMaitrise = {
   niveau: 0,
   exercices_reussis: [],
@@ -54,6 +74,26 @@ function dansJours(jours: number, depuis: Date): string {
   // apparait des le debut de la journee.
   date.setHours(6, 0, 0, 0)
   return date.toISOString()
+}
+
+/**
+ * Les exercices sont-ils reussis comme il faut pour l'acquisition ? Deux
+ * exercices differents dont un de maitrise ; au niveau 3 (rouverte, liste
+ * remise a zero), un exercice de maitrise suffit.
+ */
+function exercicesFaits(etat: Pick<EtatMaitrise, 'niveau' | 'exercices_reussis'>): boolean {
+  const uneMaitrise = etat.exercices_reussis.some(estDeMaitrise)
+  return etat.niveau === 3 ? uneMaitrise : etat.exercices_reussis.length >= 2 && uneMaitrise
+}
+
+/** Exercices faits, super exercice pas encore reussi : c'est lui qui reste a passer. */
+export function attendEpreuve(etat: EtatMaitrise, epreuve: Epreuve): boolean {
+  return etat.niveau < 4 && epreuve.existe && !epreuve.reussie && exercicesFaits(etat)
+}
+
+/** Acquise, mais le niveau 5 demande encore le super exercice sans faute. */
+export function viseSansFaute(etat: EtatMaitrise, epreuve: Epreuve): boolean {
+  return etat.niveau === 4 && epreuve.existe && !epreuve.sansFaute
 }
 
 /** Calendrier des controles applicable a cette competence. */
@@ -84,6 +124,20 @@ export interface Evolution {
   vientDEtreAcquise: boolean
   /** Un controle vient d'avoir lieu (niveau 4 au depart). */
   controle: 'reussi' | 'rate' | null
+  /** Les exercices sont faits : le super exercice reste a reussir. */
+  attendEpreuve: boolean
+}
+
+/** Etat acquis (niveau 4), avec le premier controle a J+3. */
+function acquise(etat: EtatMaitrise, maintenant: Date): EtatMaitrise {
+  return {
+    ...etat,
+    niveau: 4,
+    controles_reussis: 0,
+    prochain_controle: dansJours(CONTROLES_JOURS[0], maintenant),
+    // Reacquise par le travail : le calendrier normal reprend.
+    valide_par_test: false,
+  }
 }
 
 /**
@@ -98,9 +152,11 @@ export function apresReponse(
   exerciseId: string,
   juste: boolean,
   maintenant: Date,
+  epreuve: Epreuve = SANS_EPREUVE,
 ): Evolution {
+  const rien = { vientDEtreAcquise: false, controle: null, attendEpreuve: false } as const
   // Niveau 5 : plus de controle, l'etat ne bouge plus.
-  if (avant.niveau === 5) return { etat: avant, vientDEtreAcquise: false, controle: null }
+  if (avant.niveau === 5) return { ...rien, etat: avant }
 
   if (avant.niveau === 4) {
     if (!juste) {
@@ -112,26 +168,30 @@ export function apresReponse(
           controles_reussis: 0,
           prochain_controle: null,
         },
-        vientDEtreAcquise: false,
+        ...rien,
         controle: 'rate',
       }
     }
     const jours = calendrier(avant)
     const reussis = avant.controles_reussis + 1
     if (reussis >= jours.length) {
+      // Controles faits : le niveau 5 attend encore le super exercice sans
+      // faute, s'il existe. Plus de controle programme en attendant ; une
+      // erreur sur la competence la rouvre toujours.
+      const niveau = epreuve.existe && !epreuve.sansFaute ? 4 : 5
       return {
-        etat: { ...avant, niveau: 5, controles_reussis: reussis, prochain_controle: null },
-        vientDEtreAcquise: false,
+        ...rien,
+        etat: { ...avant, niveau, controles_reussis: reussis, prochain_controle: null },
         controle: 'reussi',
       }
     }
     return {
+      ...rien,
       etat: {
         ...avant,
         controles_reussis: reussis,
         prochain_controle: dansJours(jours[reussis], maintenant),
       },
-      vientDEtreAcquise: false,
       controle: 'reussi',
     }
   }
@@ -139,40 +199,50 @@ export function apresReponse(
   // Niveaux 0 a 3 : la competence s'apprend. Une erreur ne fait pas
   // redescendre : elle se lit dans la fenetre des tentatives (redescente vers
   // les prerequis, lib/dag.ts).
-  if (!juste) return { etat: avant, vientDEtreAcquise: false, controle: null }
+  if (!juste) return { ...rien, etat: avant, attendEpreuve: attendEpreuve(avant, epreuve) }
 
   const exercices_reussis = avant.exercices_reussis.includes(exerciseId)
     ? avant.exercices_reussis
     : [...avant.exercices_reussis, exerciseId]
-  const uneMaitrise = exercices_reussis.some(estDeMaitrise)
+  const faits = exercicesFaits({ niveau: avant.niveau, exercices_reussis })
 
-  const acquise =
-    avant.niveau === 3
-      ? // Rouverte : un exercice de maitrise reussi suffit a la remonter.
-        estDeMaitrise(exerciseId)
-      : exercices_reussis.length >= 2 && uneMaitrise
+  if (faits && (!epreuve.existe || epreuve.reussie)) {
+    return { ...rien, etat: acquise({ ...avant, exercices_reussis }, maintenant), vientDEtreAcquise: true }
+  }
 
-  if (acquise) {
-    return {
-      etat: {
-        niveau: 4,
-        exercices_reussis,
-        controles_reussis: 0,
-        prochain_controle: dansJours(CONTROLES_JOURS[0], maintenant),
-        // Reacquise par le travail : le calendrier normal reprend.
-        valide_par_test: false,
-      },
-      vientDEtreAcquise: true,
-      controle: null,
+  // Exercices faits, super exercice a passer : la competence attend au
+  // niveau 3, juste sous l'acquisition.
+  const niveau: Niveau =
+    avant.niveau === 3 || faits ? 3 : (Math.min(2, exercices_reussis.length) as Niveau)
+  const etat = { ...avant, niveau, exercices_reussis }
+  return { ...rien, etat, attendEpreuve: attendEpreuve(etat, epreuve) }
+}
+
+/**
+ * Fait evoluer le niveau apres un super exercice dont la competence est la
+ * porteuse. Reussi, il la fait passer au niveau 4 si les exercices sont
+ * faits ; sans faute, il ouvre le niveau 5 si les controles sont faits.
+ * Un super exercice rate ne fait rien redescendre : il melange plusieurs
+ * competences, son echec ne prouve pas que celle-ci est perdue.
+ */
+export function apresEpreuve(
+  avant: EtatMaitrise,
+  passage: { reussie: boolean; sansFaute: boolean },
+  maintenant: Date,
+): Evolution {
+  const rien = { vientDEtreAcquise: false, controle: null, attendEpreuve: false } as const
+  if (avant.niveau === 5) return { ...rien, etat: avant }
+  if (avant.niveau === 4) {
+    const controlesFaits = avant.controles_reussis >= calendrier(avant).length
+    if (passage.sansFaute && controlesFaits) {
+      return { ...rien, etat: { ...avant, niveau: 5, prochain_controle: null } }
     }
+    return { ...rien, etat: avant }
   }
-
-  const niveau: Niveau = avant.niveau === 3 ? 3 : (Math.min(2, exercices_reussis.length) as Niveau)
-  return {
-    etat: { ...avant, niveau, exercices_reussis },
-    vientDEtreAcquise: false,
-    controle: null,
+  if (passage.reussie && exercicesFaits(avant)) {
+    return { ...rien, etat: acquise(avant, maintenant), vientDEtreAcquise: true }
   }
+  return { ...rien, etat: avant, attendEpreuve: !passage.reussie && exercicesFaits(avant) }
 }
 
 /** Libelle court d'un niveau, pour l'ecran. */

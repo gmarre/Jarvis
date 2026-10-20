@@ -1,11 +1,13 @@
 import { useCallback, useEffect, useMemo, useRef, useState, type ReactNode } from 'react'
 
+import { getSuperForSkill } from '@/content'
 import { RepositoryError, repository, useMockData, type Catalog, type Session } from '@/data'
 import { needsParentalConsent } from '@/lib/age'
-import { applyAttempt, nextReviewDate } from '@/lib/dag'
+import { applyAttempt, applySuper, nextReviewDate } from '@/lib/dag'
 import { apresDefi } from '@/lib/defis'
 import { newId } from '@/lib/id'
 import { atMinutes } from '@/lib/schedule'
+import { epreuveDe } from '@/lib/super'
 import type { PublicExercise } from '@/types/content'
 import type { Profile, SkillProgress } from '@/types/domain'
 import {
@@ -197,6 +199,7 @@ export function SessionProvider({ children }: { children: ReactNode }) {
           controle: null,
           niveau: 0,
           prochainControle: null,
+          attendEpreuve: false,
           shouldDescend: false,
           descendTo: [],
         }
@@ -205,7 +208,18 @@ export function SessionProvider({ children }: { children: ReactNode }) {
       // Le calcul se fait avant setSession, pas dans son updater : React ne
       // garantit pas qu'un updater tourne avant le retour de la fonction
       // appelante, et l'ecran d'exercice a besoin du verdict tout de suite.
-      const applied = applyAttempt(current.progress, exercise.skill_id, exercise.id, correction.isCorrect)
+      const epreuve = epreuveDe(
+        getSuperForSkill(exercise.skill_id).map((sx) => sx.id),
+        current.superAttempts,
+      )
+      const applied = applyAttempt(
+        current.progress,
+        exercise.skill_id,
+        exercise.id,
+        correction.isCorrect,
+        new Date(),
+        epreuve,
+      )
 
       const attempt = {
         id: newId(),
@@ -233,6 +247,7 @@ export function SessionProvider({ children }: { children: ReactNode }) {
         controle: applied.controle,
         niveau: applied.progress.niveau,
         prochainControle: applied.progress.prochain_controle,
+        attendEpreuve: applied.attendEpreuve,
         shouldDescend: applied.shouldDescend,
         descendTo: applied.descendTo,
       }
@@ -276,11 +291,26 @@ export function SessionProvider({ children }: { children: ReactNode }) {
   const enregistrerSuper = useCallback<SessionValue['enregistrerSuper']>(
     (attempt) => {
       const current = sessionRef.current
-      if (!current) return
-      const suivante = { ...current, superAttempts: [attempt, ...current.superAttempts] }
+      if (!current) return { niveauAvant: 0, niveauApres: 0, justMastered: false }
+      const effet = applySuper(current.progress, attempt.skill_id, {
+        reussie: attempt.reussi,
+        sansFaute: attempt.reussi && attempt.score === attempt.total,
+      })
+      const change = effet.progress.niveau !== effet.niveauAvant
+      const suivante = {
+        ...current,
+        superAttempts: [attempt, ...current.superAttempts],
+        progress: change ? { ...current.progress, [attempt.skill_id]: effet.progress } : current.progress,
+      }
       sessionRef.current = suivante
       setSession(suivante)
       ecrire(() => repository.saveSuperAttempt(attempt), 'Ton super exercice')
+      if (change) ecrire(() => repository.saveProgress(effet.progress), 'Ta progression')
+      return {
+        niveauAvant: effet.niveauAvant,
+        niveauApres: effet.progress.niveau,
+        justMastered: effet.justMastered,
+      }
     },
     [ecrire],
   )
