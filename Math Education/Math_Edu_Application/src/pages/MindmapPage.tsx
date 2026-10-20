@@ -21,6 +21,9 @@ import { useAuthenticatedSession } from '@/state/session'
 // espacee. Quand l'eleve declare l'avoir revue, chaque competence rattachee
 // passe a l'echeance Leitner suivante (J+1, J+3, J+7, J+21).
 
+/** Cle locale : l'astuce de depliage a deja ete vue sur cet appareil. */
+const ASTUCE_CARTE = 'racine.astuceCarte.vue'
+
 export default function MindmapPage() {
   const { mindmapId = '' } = useParams()
   const navigate = useNavigate()
@@ -28,6 +31,25 @@ export default function MindmapPage() {
 
   const mindmap = getMindmap(mindmapId)
   const [reviewed, setReviewed] = useState(false)
+  const [toutDeplie, setToutDeplie] = useState(false)
+  // Astuce montree a la premiere carte ouverte (sprint 2, point 5) : beaucoup
+  // d'eleves ne devinaient pas que les ronds se deplient. Memorisee sur cet
+  // appareil seulement ; si le stockage est indisponible, elle reste visible.
+  const [astuceVue, setAstuceVue] = useState(() => {
+    try {
+      return window.localStorage.getItem(ASTUCE_CARTE) === '1'
+    } catch {
+      return false
+    }
+  })
+  const fermerAstuce = () => {
+    setAstuceVue(true)
+    try {
+      window.localStorage.setItem(ASTUCE_CARTE, '1')
+    } catch {
+      // sans importance : l'astuce reviendra a la prochaine carte
+    }
+  }
 
   const linkedSkills = useMemo(
     () =>
@@ -78,15 +100,39 @@ export default function MindmapPage() {
 
       <div className="flex flex-1 flex-col lg:flex-row">
         <div className="flex-1 p-4 sm:p-6">
-          <div className="h-[420px] overflow-hidden rounded-panel border border-line bg-surface sm:h-[540px] lg:h-full lg:min-h-[560px]">
+          <div className="mb-3 flex justify-end">
+            <Button variant="secondary" size="sm" onClick={() => setToutDeplie((v) => !v)}>
+              {toutDeplie ? 'Replier' : 'Tout déplier'}
+            </Button>
+          </div>
+          <div
+            className="relative h-[420px] overflow-hidden rounded-panel border border-line bg-surface sm:h-[540px] lg:h-full lg:min-h-[560px]"
+            onPointerDown={astuceVue ? undefined : fermerAstuce}
+          >
             <MindmapView
               markdown={mindmap.markdown}
               title={mindmap.title}
+              toutDeplie={toutDeplie}
               className="h-full w-full p-2"
             />
+            {!astuceVue && (
+              <div className="pointer-events-none absolute inset-x-3 top-3 flex justify-center">
+                <p className="pointer-events-auto flex items-center gap-2 rounded-card border border-accent-100 bg-accent-50 px-3.5 py-2.5 text-[12.5px] font-medium leading-snug text-accent-700 shadow-card">
+                  Touche un rond pour déplier une branche.
+                  <button
+                    type="button"
+                    onClick={fermerAstuce}
+                    aria-label="Fermer l'astuce"
+                    className="-my-2 -mr-2 grid h-11 w-11 shrink-0 place-items-center rounded-[10px] hover:bg-accent-100"
+                  >
+                    <IconClose size={14} />
+                  </button>
+                </p>
+              </div>
+            )}
           </div>
           <p className="mt-3 text-center text-[11.5px] text-ink-faint">
-            Clique sur un cercle pour déplier ou replier une branche.
+            Touche un rond pour déplier ou replier une branche.
           </p>
         </div>
 

@@ -26,9 +26,11 @@ interface MindmapViewProps {
   markdown: string
   title?: string
   className?: string
+  /** Toutes les branches ouvertes (bouton « Tout déplier »), sinon deux niveaux. */
+  toutDeplie?: boolean
 }
 
-export function MindmapView({ markdown, title, className }: MindmapViewProps) {
+export function MindmapView({ markdown, title, className, toutDeplie = false }: MindmapViewProps) {
   const svgRef = useRef<SVGSVGElement | null>(null)
 
   useEffect(() => {
@@ -47,7 +49,7 @@ export function MindmapView({ markdown, title, className }: MindmapViewProps) {
         paddingX: 14,
         // Deux niveaux ouverts a l'arrivee : la carte doit tenir d'un coup
         // d'oeil, l'eleve deplie ce qui l'interesse.
-        initialExpandLevel: 2,
+        initialExpandLevel: toutDeplie ? -1 : 2,
         maxWidth: 320,
         color: (node) =>
           BRANCH_COLORS[(node.state?.depth ?? 0) % BRANCH_COLORS.length],
@@ -65,7 +67,7 @@ export function MindmapView({ markdown, title, className }: MindmapViewProps) {
       window.removeEventListener('resize', handleResize)
       markmap.destroy()
     }
-  }, [markdown, title])
+  }, [markdown, title, toutDeplie])
 
   return (
     <div className={className}>
