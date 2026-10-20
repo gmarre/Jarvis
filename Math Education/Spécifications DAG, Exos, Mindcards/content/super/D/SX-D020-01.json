@@ -1,0 +1,143 @@
+{
+  "id": "SX-D020-01",
+  "skill_id": "D020",
+  "skill_ids": [
+    "D020",
+    "B041"
+  ],
+  "school_level": "CM1",
+  "title": "La commande de la coopérative",
+  "contexte": "La coopérative de l'école Jean-Moulin commande des fournitures pour les 3 classes du cycle 3, soit 74 élèves. Voici les prix du catalogue :\nun paquet de 10 crayons à papier : 4,80 € ;\nun carton de 10 ramettes de papier : 37,90 € ;\nune gomme : 0,45 € ;\nun cahier : 3 €.\n\nLa directrice commande 40 cahiers, 10 gommes, 1 paquet de crayons et 1 carton de ramettes. Les crayons seront partagés entre les classes, et les ramettes serviront à la photocopieuse. La livraison est prévue le 12 septembre.",
+  "image": null,
+  "duree_estimee_min": 12,
+  "questions": [
+    {
+      "key": "q1",
+      "skill_id": "D020",
+      "statement": "Pour trouver le prix d'une seule ramette de papier, de quelles informations as-tu besoin ?",
+      "type": "qcm",
+      "choices": [
+        {
+          "key": "a",
+          "text": "Le prix du carton (37,90 €) et le nombre d'élèves (74)",
+          "misconception": "Le nombre d'élèves ne dit pas combien de ramettes contient un carton."
+        },
+        {
+          "key": "b",
+          "text": "Le prix du carton (37,90 €) seulement",
+          "misconception": "37,90 € est le prix d'un carton de 10 ramettes, pas d'une seule ramette."
+        },
+        {
+          "key": "c",
+          "text": "Le prix du carton (37,90 €) et le nombre de ramettes dans un carton (10)",
+          "misconception": null
+        }
+      ],
+      "answer": {
+        "value": "c"
+      },
+      "points": 1,
+      "solution_steps": [
+        "Un carton de 10 ramettes coûte 37,90 € : une ramette coûte le dixième de ce prix.",
+        "Il faut **le prix du carton et le nombre de ramettes qu'il contient**. Le nombre d'élèves ne sert pas."
+      ],
+      "hint": "Relis la ligne du catalogue qui parle des ramettes."
+    },
+    {
+      "key": "q2",
+      "skill_id": "B041",
+      "statement": "Combien coûtent les 40 cahiers ?",
+      "type": "numerique",
+      "answer": {
+        "value": 120,
+        "unit": "€",
+        "accepted": [
+          "120 euros"
+        ]
+      },
+      "points": 2,
+      "solution_steps": [
+        "Un cahier coûte 3 €, et la directrice en commande 40 : on calcule 3 × 40.",
+        "3 × 4 = 12, donc 3 × 40 = 120 : 12 dizaines.",
+        "Les 40 cahiers coûtent **120 €**."
+      ],
+      "hint": "Calcule 3 × 4, puis pense aux dizaines."
+    },
+    {
+      "key": "q3",
+      "skill_id": "D020",
+      "statement": "Combien coûtent les 10 gommes ?",
+      "type": "numerique",
+      "answer": {
+        "value": 4.5,
+        "unit": "€",
+        "accepted": [
+          "4,50 €",
+          "4,50 euros",
+          "4 € 50",
+          "4 euros 50",
+          "4€50"
+        ]
+      },
+      "points": 2,
+      "solution_steps": [
+        "On calcule 0,45 × 10.",
+        "Multiplier par 10 : chaque chiffre prend une valeur 10 fois plus grande. Les 4 dixièmes deviennent 4 unités, les 5 centièmes deviennent 5 dixièmes.",
+        "0,45 × 10 = 4,5 : les 10 gommes coûtent **4,50 €**."
+      ],
+      "hint": "Que devient le chiffre des dixièmes quand on multiplie par 10 ?"
+    },
+    {
+      "key": "q4",
+      "skill_id": "D020",
+      "statement": "Combien coûte une ramette de papier ?",
+      "type": "numerique",
+      "answer": {
+        "value": 3.79,
+        "unit": "€",
+        "accepted": [
+          "3,79 €",
+          "3,79 euros",
+          "3 € 79",
+          "3 euros 79",
+          "3€79"
+        ]
+      },
+      "points": 3,
+      "solution_steps": [
+        "Une ramette coûte le dixième du prix du carton : 37,90 ÷ 10.",
+        "Diviser par 10 : les 3 dizaines deviennent 3 unités, les 7 unités deviennent 7 dixièmes, les 9 dixièmes deviennent 9 centièmes.",
+        "37,90 ÷ 10 = 3,79 : une ramette coûte **3,79 €**."
+      ],
+      "hint": "Que devient le chiffre des unités quand on divise par 10 ?"
+    },
+    {
+      "key": "q5",
+      "skill_id": "D020",
+      "statement": "Combien coûte un crayon à papier ?",
+      "type": "numerique",
+      "answer": {
+        "value": 0.48,
+        "unit": "€",
+        "accepted": [
+          "0,48 €",
+          "0,48 euros",
+          "0 € 48",
+          "0 euros 48",
+          "0€48",
+          "48 centimes",
+          "48 c"
+        ]
+      },
+      "points": 4,
+      "solution_steps": [
+        "Un paquet de 10 crayons coûte 4,80 € : un crayon coûte 4,80 ÷ 10.",
+        "Les 4 unités deviennent 4 dixièmes, les 8 dixièmes deviennent 8 centièmes. Il ne reste aucune unité : on écrit 0 au rang des unités.",
+        "4,80 ÷ 10 = 0,48 : un crayon coûte **0,48 €**, soit 48 centimes."
+      ],
+      "hint": "Que devient le chiffre des unités quand on divise par 10 ?"
+    }
+  ],
+  "review_status": "brouillon",
+  "programme_ref": "Cycle 3, Cours moyen première année, Le calcul mental : « Diviser un nombre décimal par 10 »"
+}

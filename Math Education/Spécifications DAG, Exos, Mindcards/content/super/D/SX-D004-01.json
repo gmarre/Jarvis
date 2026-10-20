@@ -1,0 +1,129 @@
+{
+  "id": "SX-D004-01",
+  "skill_id": "D004",
+  "skill_ids": [
+    "D004",
+    "D017",
+    "B038"
+  ],
+  "school_level": "CM1",
+  "title": "La balade à vélo le long du canal",
+  "contexte": "Dimanche, la famille Martin, 3 adultes et 6 enfants, fait une balade à vélo le long du canal. Le départ est à 9 h 30.\n\nLe matin, la famille roule 12,75 km jusqu'au lac. L'après-midi, elle rentre par un autre chemin, plus court de 3,8 km.\n\nAu lac, la location d'un pédalo coûte 7 € par personne, et toute la famille monte dans les pédalos. Le papa paie avec un billet de 100 €.\n\nAvant de partir, la maman a acheté au marché du pain à 1,85 € et du fromage à 7,40 €. Elle a payé avec un billet de 20 €.\n\nLéa, la plus jeune, part avec sa gourde pleine : elle contient 1,5 L d'eau. Léa boit 0,75 L le matin et 0,6 L l'après-midi, et la gourde n'est jamais remplie en route.",
+  "image": null,
+  "duree_estimee_min": 15,
+  "questions": [
+    {
+      "key": "q1",
+      "skill_id": "D004",
+      "statement": "Quel calcul donne la longueur du chemin de l'après-midi ?",
+      "type": "qcm",
+      "choices": [
+        {
+          "key": "a",
+          "text": "12,75 + 3,8",
+          "misconception": "L'élève lit « 3,8 km » sans voir « plus court » : le chemin de l'après-midi est plus court, il faut soustraire."
+        },
+        {
+          "key": "b",
+          "text": "12,75 − 3,8",
+          "misconception": null
+        },
+        {
+          "key": "c",
+          "text": "Aucun calcul : le chemin mesure 3,8 km",
+          "misconception": "3,8 km n'est pas la longueur du chemin : c'est l'écart entre le chemin du matin et celui de l'après-midi."
+        }
+      ],
+      "answer": {
+        "value": "b"
+      },
+      "points": 1,
+      "solution_steps": [
+        "« Plus court de 3,8 km » veut dire : 3,8 km de moins que le chemin du matin.",
+        "On soustrait : **12,75 − 3,8**. Le départ à 9 h 30 et le pédalo ne servent pas ici."
+      ],
+      "hint": "Relis la phrase qui parle de l'après-midi."
+    },
+    {
+      "key": "q2",
+      "skill_id": "D004",
+      "statement": "Quelle est la longueur du chemin de l'après-midi ?",
+      "type": "numerique",
+      "answer": {
+        "value": 8.95,
+        "unit": "km"
+      },
+      "points": 3,
+      "solution_steps": [
+        "On pose 12,75 − 3,8 en alignant les virgules, et on complète 3,8 par un zéro : 12,75 − 3,80.",
+        "Centièmes : 5 − 0 = 5. Dixièmes : 7 − 8, c'est impossible ; on casse 1 unité en 10 dixièmes : 17 − 8 = 9.",
+        "Unités : il reste 11 unités ; 11 − 3 = 8.",
+        "Le chemin de l'après-midi mesure **8,95 km**. Vérification : 8,95 + 3,8 = 12,75."
+      ],
+      "hint": "Pose la soustraction en alignant les virgules."
+    },
+    {
+      "key": "q3",
+      "skill_id": "B038",
+      "statement": "Combien d'argent rend-on au papa pour les pédalos ?",
+      "type": "numerique",
+      "answer": {
+        "value": 37,
+        "unit": "€",
+        "accepted": [
+          "37 euros"
+        ]
+      },
+      "points": 2,
+      "solution_steps": [
+        "La famille compte 3 adultes et 6 enfants : 3 + 6 = 9 personnes.",
+        "Les pédalos coûtent 9 × 7 = 63 €.",
+        "Le papa donne un billet de 100 €. On lui rend 100 − 63 = 37, soit **37 €**."
+      ],
+      "hint": "Combien de personnes montent dans les pédalos ?"
+    },
+    {
+      "key": "q4",
+      "skill_id": "D017",
+      "statement": "Combien d'argent rend-on à la maman au marché ?",
+      "type": "numerique",
+      "answer": {
+        "value": 10.75,
+        "unit": "€",
+        "accepted": [
+          "10,75 €",
+          "10,75 euros",
+          "10 € 75",
+          "10 euros 75",
+          "10€75"
+        ]
+      },
+      "points": 2,
+      "solution_steps": [
+        "Le pain et le fromage coûtent 1,85 + 7,40 = 9,25 (en euros).",
+        "La maman paie avec 20 € : on pose 20,00 − 9,25.",
+        "On lui rend **10,75 €**. Vérification : 10,75 + 9,25 = 20."
+      ],
+      "hint": "Calcule d'abord ce que coûtent le pain et le fromage ensemble."
+    },
+    {
+      "key": "q5",
+      "skill_id": "D004",
+      "statement": "Quelle quantité d'eau reste-t-il dans la gourde de Léa le soir ?",
+      "type": "numerique",
+      "answer": {
+        "value": 0.15,
+        "unit": "L"
+      },
+      "points": 4,
+      "solution_steps": [
+        "Léa boit 0,75 L puis 0,6 L : 0,75 + 0,60 = 1,35 (en litres).",
+        "Il reste 1,50 − 1,35 = 0,15 (en litres).",
+        "Le soir, il reste **0,15 L** d'eau dans la gourde. On peut aussi soustraire en deux fois : 1,50 − 0,75 = 0,75, puis 0,75 − 0,60 = 0,15."
+      ],
+      "hint": "Complète par des zéros pour que tous les nombres aient deux chiffres après la virgule."
+    }
+  ],
+  "review_status": "brouillon",
+  "programme_ref": "Cycle 3, Cours moyen première année, Les quatre opérations : « Poser en colonnes et effectuer des additions et des soustractions de nombres décimaux »"
+}

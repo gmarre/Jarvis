@@ -2,7 +2,7 @@
   "metadata": {
     "version": "1.0",
     "scope": "Super exercices, CP a 3e",
-    "total_super": 109
+    "total_super": 129
   },
   "super": [
     {
@@ -9153,6 +9153,2691 @@
       ],
       "review_status": "relu_agent",
       "programme_ref": "Cycle 4, classe de 4e, Nombres et calculs, Nombres rationnels, Objectifs d'apprentissage : « Résoudre des problèmes mobilisant les opérations sur les fractions : addition, soustraction, multiplication, division, inverse. »"
+    },
+    {
+      "id": "SX-D001-01",
+      "skill_id": "D001",
+      "skill_ids": [
+        "D001",
+        "A009",
+        "D018",
+        "C027"
+      ],
+      "school_level": "CM1",
+      "title": "Le carnet de l'entraîneur",
+      "contexte": "Jeudi, les 28 élèves de CM1 de l'école Jules-Ferry participent à la journée d'athlétisme. Elle se termine par une remise de médailles à 16 h 30.\n\nAu lancer de balle, l'entraîneur note les distances en mètres, mais pas toujours de la même façon. Dans son carnet, on lit :\nTim : 26,4 m ;\nNour : $24 + \\frac{6}{10} + \\frac{3}{100}$ m ;\nElio : 27 m et 8 centièmes de mètre ;\nMaëlle : $\\frac{2509}{100}$ m.\n\nLe record de l'école au lancer de balle est de 31,25 m. Il date de 2019.",
+      "image": null,
+      "duree_estimee_min": 15,
+      "questions": [
+        {
+          "key": "q1",
+          "skill_id": "A009",
+          "statement": "Dans la distance de Tim, quel est le chiffre des dizaines ?",
+          "type": "qcm",
+          "choices": [
+            {
+              "key": "a",
+              "text": "6",
+              "misconception": "L'élève donne le chiffre des unités, celui qui est juste avant la virgule."
+            },
+            {
+              "key": "b",
+              "text": "2",
+              "misconception": null
+            },
+            {
+              "key": "c",
+              "text": "4",
+              "misconception": "L'élève confond dizaines et dixièmes : le 4, juste après la virgule, est le chiffre des dixièmes."
+            }
+          ],
+          "answer": {
+            "value": "b"
+          },
+          "points": 1,
+          "solution_steps": [
+            "Dans 26,4, la virgule se place juste après le chiffre des unités : 6 est le chiffre des unités.",
+            "Le chiffre juste à gauche des unités est celui des dizaines : **2**. Tim a lancé à 2 dizaines de mètres, 6 mètres et 4 dixièmes de mètre.",
+            "Attention : le 4 est le chiffre des **dixièmes**, pas des dizaines."
+          ],
+          "hint": "Rappelle-toi l'ordre des rangs : dizaines, unités, puis dixièmes après la virgule."
+        },
+        {
+          "key": "q2",
+          "skill_id": "D018",
+          "statement": "Combien de centièmes de mètre y a-t-il en tout dans la distance de Nour ?",
+          "type": "numerique",
+          "answer": {
+            "value": 2463,
+            "unit": "centièmes"
+          },
+          "points": 2,
+          "solution_steps": [
+            "1 m = 100 centièmes de mètre, donc 24 m font 2 400 centièmes.",
+            "1 dixième = 10 centièmes, donc 6 dixièmes font 60 centièmes.",
+            "En tout : 2 400 + 60 + 3 = 2 463 centièmes de mètre. On peut l'écrire $\\frac{2463}{100}$ m."
+          ],
+          "hint": "Combien de centièmes y a-t-il dans 1 mètre ? Et dans 1 dixième de mètre ?"
+        },
+        {
+          "key": "q3",
+          "skill_id": "D001",
+          "statement": "Écris la distance d'Elio avec une virgule, en mètres.",
+          "type": "texte",
+          "answer": {
+            "value": "27,08",
+            "accepted": [
+              "27,08 m",
+              "27,08 mètres",
+              "27,080",
+              "27,080 m"
+            ]
+          },
+          "points": 3,
+          "solution_steps": [
+            "Elio a lancé 27 m et 8 centièmes de mètre : 27 unités, 0 dixième et 8 centièmes.",
+            "Le chiffre des dixièmes vient juste après la virgule : il n'y a aucun dixième, on écrit 0 pour garder sa place. Les centièmes viennent ensuite.",
+            "La distance d'Elio s'écrit **27,08 m**.",
+            "Attention : 27,8 m voudrait dire 27 m et 8 **dixièmes**, soit 80 centièmes : bien plus que 8 centièmes."
+          ],
+          "hint": "Combien de dixièmes y a-t-il dans la distance d'Elio ?"
+        },
+        {
+          "key": "q4",
+          "skill_id": "C027",
+          "statement": "Écris la distance de Maëlle, $\\frac{2509}{100}$ m, sous la forme d'un entier plus une fraction inférieure à 1.",
+          "type": "texte",
+          "answer": {
+            "value": "25 + 9/100",
+            "accepted": [
+              "9/100 + 25",
+              "25 et 9/100",
+              "25 + 9/100 m",
+              "25 m + 9/100 m",
+              "25 m et 9/100 m"
+            ]
+          },
+          "points": 2,
+          "solution_steps": [
+            "$\\frac{2509}{100}$, ce sont 2 509 centièmes. Un mètre fait 100 centièmes, et 25 × 100 = 2 500.",
+            "2 509 centièmes = 2 500 centièmes + 9 centièmes, soit 25 m et $\\frac{9}{100}$ m.",
+            "Donc $\\frac{2509}{100} = 25 + \\frac{9}{100}$, et $\\frac{9}{100}$ est bien inférieure à 1."
+          ],
+          "hint": "Combien de mètres entiers y a-t-il dans 2 509 centièmes de mètre ?"
+        },
+        {
+          "key": "q5",
+          "skill_id": "D001",
+          "statement": "L'entraîneur veut écrire le record de l'école sous la forme d'une fraction décimale. Écris-le sous la forme numérateur/dénominateur.",
+          "type": "texte",
+          "answer": {
+            "value": "3125/100",
+            "accepted": [
+              "3 125/100",
+              "3125/100 m",
+              "3 125/100 m"
+            ]
+          },
+          "points": 4,
+          "solution_steps": [
+            "31,25 m, c'est 31 unités, 2 dixièmes et 5 centièmes : $31 + \\frac{2}{10} + \\frac{5}{100}$.",
+            "En centièmes : 31 unités font 3 100 centièmes, 2 dixièmes font 20 centièmes, donc 3 100 + 20 + 5 = 3 125 centièmes.",
+            "Le record s'écrit $\\frac{3125}{100}$ m.",
+            "Attention : la virgule n'est pas une barre de fraction. 31,25, c'est plus de 31 unités."
+          ],
+          "hint": "Combien de centièmes y a-t-il dans une unité ?"
+        }
+      ],
+      "review_status": "brouillon",
+      "programme_ref": "Cycle 3, Cours moyen première année, Les nombres décimaux : « Passer d'une écriture sous forme d'une fraction décimale ou d'une somme de fractions décimales à une écriture à virgule et réciproquement »"
+    },
+    {
+      "id": "SX-D003-01",
+      "skill_id": "D003",
+      "skill_ids": [
+        "D003",
+        "D001",
+        "B037"
+      ],
+      "school_level": "CM1",
+      "title": "La pesée des cartables",
+      "contexte": "Lundi, l'infirmière de l'école pèse les cartables des CM1. La classe compte 27 élèves. L'infirmière conseille qu'un cartable de CM1 ne dépasse pas 3,5 kg.\n\nLundi, elle pèse 6 cartables :\nLéo : 3,6 kg ;\nAna : 3,45 kg ;\nTom : 3 kg et 8 centièmes de kilogramme ;\nZoé : 3,15 kg ;\nNils : $\\frac{37}{10}$ kg ;\nInès : 3,5 kg.\n\nMardi, elle pèsera 9 autres cartables, puis, jeudi, tous les cartables qui restent. Léo, qui mesure 1,38 m, est le plus grand de la classe. Les cartables sont pesés avec leurs livres et leurs cahiers.",
+      "image": null,
+      "duree_estimee_min": 15,
+      "questions": [
+        {
+          "key": "q1",
+          "skill_id": "D001",
+          "statement": "Comment s'écrit la masse du cartable de Tom avec une virgule ?",
+          "type": "qcm",
+          "choices": [
+            {
+              "key": "a",
+              "text": "3,8 kg",
+              "misconception": "L'élève écrit le 8 juste après la virgule, au rang des dixièmes. Or Tom a 8 centièmes et aucun dixième."
+            },
+            {
+              "key": "b",
+              "text": "3,08 kg",
+              "misconception": null
+            },
+            {
+              "key": "c",
+              "text": "30,8 kg",
+              "misconception": "L'élève place le 0 avant la virgule : 30,8 kg ferait plus de 30 kg, bien trop lourd pour un cartable."
+            }
+          ],
+          "answer": {
+            "value": "b"
+          },
+          "points": 1,
+          "solution_steps": [
+            "Tom : 3 kg et 8 centièmes de kilogramme, soit 3 unités, 0 dixième et 8 centièmes.",
+            "Le 0 garde la place des dixièmes : on écrit **3,08 kg**."
+          ],
+          "hint": "Combien de dixièmes de kilogramme y a-t-il dans la masse du cartable de Tom ?"
+        },
+        {
+          "key": "q2",
+          "skill_id": "B037",
+          "statement": "Combien de cartables l'infirmière pèsera-t-elle jeudi ?",
+          "type": "numerique",
+          "answer": {
+            "value": 12,
+            "unit": "cartables"
+          },
+          "points": 2,
+          "solution_steps": [
+            "La classe compte 27 élèves, donc 27 cartables.",
+            "Lundi, 6 cartables sont pesés : 27 − 6 = 21 cartables restent.",
+            "Mardi, 9 autres : 21 − 9 = 12.",
+            "Jeudi, l'infirmière pèsera **12 cartables**."
+          ],
+          "hint": "Combien de cartables restent à peser après lundi ?"
+        },
+        {
+          "key": "q3",
+          "skill_id": "D003",
+          "statement": "Combien des 6 cartables pesés lundi dépassent la masse conseillée ?",
+          "type": "numerique",
+          "answer": {
+            "value": 2,
+            "unit": "cartables"
+          },
+          "points": 3,
+          "solution_steps": [
+            "On compare chaque masse à 3,5 kg : d'abord la partie entière, puis les dixièmes, puis les centièmes.",
+            "Léo : 3,6 > 3,5, car 6 dixièmes, c'est plus que 5 dixièmes : son cartable dépasse.",
+            "Nils : $\\frac{37}{10}$ kg, c'est 3,7 kg, et 3,7 > 3,5 : son cartable dépasse.",
+            "Ana : 3,45 < 3,50, car 45 centièmes, c'est moins que 50 centièmes. Tom (3,08 kg) et Zoé (3,15 kg) non plus.",
+            "Inès : 3,5 kg, c'est exactement la masse conseillée : son cartable ne la dépasse pas.",
+            "**2 cartables** dépassent la masse conseillée : ceux de Léo et de Nils."
+          ],
+          "hint": "Écris 3,5 kg avec deux chiffres après la virgule pour comparer plus facilement."
+        },
+        {
+          "key": "q4",
+          "skill_id": "D003",
+          "statement": "La masse du cartable de Tom s'écrit 3,08 kg. Range les cartables d'Ana, de Tom, de Zoé et de Léo du plus léger au plus lourd.",
+          "type": "qcm",
+          "choices": [
+            {
+              "key": "a",
+              "text": "Léo, Tom, Zoé, Ana",
+              "misconception": "L'élève compare les chiffres écrits après la virgule comme des entiers (6, 8, 15, 45). Or 3,6 = 3,60 : 60 centièmes, c'est plus que 45 centièmes."
+            },
+            {
+              "key": "b",
+              "text": "Zoé, Ana, Léo, Tom",
+              "misconception": "L'élève lit la masse du cartable de Tom comme 3,8 kg, en oubliant qu'il n'y a aucun dixième."
+            },
+            {
+              "key": "c",
+              "text": "Tom, Zoé, Ana, Léo",
+              "misconception": null
+            },
+            {
+              "key": "d",
+              "text": "Léo, Ana, Zoé, Tom",
+              "misconception": "C'est le rangement du plus lourd au plus léger : l'ordre est inversé."
+            }
+          ],
+          "answer": {
+            "value": "c"
+          },
+          "points": 4,
+          "solution_steps": [
+            "Les quatre masses ont la même partie entière, 3 : on compare les dixièmes.",
+            "Tom : 3,08 (0 dixième) ; Zoé : 3,15 (1 dixième) ; Ana : 3,45 (4 dixièmes) ; Léo : 3,6 (6 dixièmes).",
+            "Du plus léger au plus lourd : **Tom, Zoé, Ana, Léo**, car 3,08 < 3,15 < 3,45 < 3,6."
+          ],
+          "hint": "Écris toutes les masses avec deux chiffres après la virgule."
+        },
+        {
+          "key": "q5",
+          "skill_id": "D003",
+          "statement": "Quel est le cartable le plus lourd des 6 cartables pesés lundi ?",
+          "type": "qcm",
+          "choices": [
+            {
+              "key": "a",
+              "text": "Celui de Nils",
+              "misconception": null
+            },
+            {
+              "key": "b",
+              "text": "Celui de Léo",
+              "misconception": "L'élève laisse de côté la masse écrite avec une fraction : $\\frac{37}{10}$ kg, c'est 3,7 kg, plus que 3,6 kg."
+            },
+            {
+              "key": "c",
+              "text": "Celui d'Ana",
+              "misconception": "L'élève croit que 3,45 est le plus grand parce que 45 est le plus grand nombre écrit après une virgule."
+            }
+          ],
+          "answer": {
+            "value": "a"
+          },
+          "points": 3,
+          "solution_steps": [
+            "La masse du cartable de Nils est écrite avec une fraction : $\\frac{37}{10}$ kg, ce sont 37 dixièmes de kilogramme, soit 3 kg et 7 dixièmes : 3,7 kg.",
+            "Toutes les masses ont pour partie entière 3. On compare les dixièmes : Nils en a 7, c'est le plus grand ; Léo n'en a que 6.",
+            "Le cartable le plus lourd est **celui de Nils**."
+          ],
+          "hint": "Écris d'abord les six masses de la même façon, avec une virgule."
+        }
+      ],
+      "review_status": "brouillon",
+      "programme_ref": "Cycle 3, Cours moyen première année, Les nombres décimaux : « Comparer, encadrer, intercaler, ordonner, par ordre croissant ou décroissant, des nombres décimaux donnés par leur écriture à virgule en utilisant les symboles =, < et > »"
+    },
+    {
+      "id": "SX-D004-01",
+      "skill_id": "D004",
+      "skill_ids": [
+        "D004",
+        "D017",
+        "B038"
+      ],
+      "school_level": "CM1",
+      "title": "La balade à vélo le long du canal",
+      "contexte": "Dimanche, la famille Martin, 3 adultes et 6 enfants, fait une balade à vélo le long du canal. Le départ est à 9 h 30.\n\nLe matin, la famille roule 12,75 km jusqu'au lac. L'après-midi, elle rentre par un autre chemin, plus court de 3,8 km.\n\nAu lac, la location d'un pédalo coûte 7 € par personne, et toute la famille monte dans les pédalos. Le papa paie avec un billet de 100 €.\n\nAvant de partir, la maman a acheté au marché du pain à 1,85 € et du fromage à 7,40 €. Elle a payé avec un billet de 20 €.\n\nLéa, la plus jeune, part avec sa gourde pleine : elle contient 1,5 L d'eau. Léa boit 0,75 L le matin et 0,6 L l'après-midi, et la gourde n'est jamais remplie en route.",
+      "image": null,
+      "duree_estimee_min": 15,
+      "questions": [
+        {
+          "key": "q1",
+          "skill_id": "D004",
+          "statement": "Quel calcul donne la longueur du chemin de l'après-midi ?",
+          "type": "qcm",
+          "choices": [
+            {
+              "key": "a",
+              "text": "12,75 + 3,8",
+              "misconception": "L'élève lit « 3,8 km » sans voir « plus court » : le chemin de l'après-midi est plus court, il faut soustraire."
+            },
+            {
+              "key": "b",
+              "text": "12,75 − 3,8",
+              "misconception": null
+            },
+            {
+              "key": "c",
+              "text": "Aucun calcul : le chemin mesure 3,8 km",
+              "misconception": "3,8 km n'est pas la longueur du chemin : c'est l'écart entre le chemin du matin et celui de l'après-midi."
+            }
+          ],
+          "answer": {
+            "value": "b"
+          },
+          "points": 1,
+          "solution_steps": [
+            "« Plus court de 3,8 km » veut dire : 3,8 km de moins que le chemin du matin.",
+            "On soustrait : **12,75 − 3,8**. Le départ à 9 h 30 et le pédalo ne servent pas ici."
+          ],
+          "hint": "Relis la phrase qui parle de l'après-midi."
+        },
+        {
+          "key": "q2",
+          "skill_id": "D004",
+          "statement": "Quelle est la longueur du chemin de l'après-midi ?",
+          "type": "numerique",
+          "answer": {
+            "value": 8.95,
+            "unit": "km"
+          },
+          "points": 3,
+          "solution_steps": [
+            "On pose 12,75 − 3,8 en alignant les virgules, et on complète 3,8 par un zéro : 12,75 − 3,80.",
+            "Centièmes : 5 − 0 = 5. Dixièmes : 7 − 8, c'est impossible ; on casse 1 unité en 10 dixièmes : 17 − 8 = 9.",
+            "Unités : il reste 11 unités ; 11 − 3 = 8.",
+            "Le chemin de l'après-midi mesure **8,95 km**. Vérification : 8,95 + 3,8 = 12,75."
+          ],
+          "hint": "Pose la soustraction en alignant les virgules."
+        },
+        {
+          "key": "q3",
+          "skill_id": "B038",
+          "statement": "Combien d'argent rend-on au papa pour les pédalos ?",
+          "type": "numerique",
+          "answer": {
+            "value": 37,
+            "unit": "€",
+            "accepted": [
+              "37 euros"
+            ]
+          },
+          "points": 2,
+          "solution_steps": [
+            "La famille compte 3 adultes et 6 enfants : 3 + 6 = 9 personnes.",
+            "Les pédalos coûtent 9 × 7 = 63 €.",
+            "Le papa donne un billet de 100 €. On lui rend 100 − 63 = 37, soit **37 €**."
+          ],
+          "hint": "Combien de personnes montent dans les pédalos ?"
+        },
+        {
+          "key": "q4",
+          "skill_id": "D017",
+          "statement": "Combien d'argent rend-on à la maman au marché ?",
+          "type": "numerique",
+          "answer": {
+            "value": 10.75,
+            "unit": "€",
+            "accepted": [
+              "10,75 €",
+              "10,75 euros",
+              "10 € 75",
+              "10 euros 75",
+              "10€75"
+            ]
+          },
+          "points": 2,
+          "solution_steps": [
+            "Le pain et le fromage coûtent 1,85 + 7,40 = 9,25 (en euros).",
+            "La maman paie avec 20 € : on pose 20,00 − 9,25.",
+            "On lui rend **10,75 €**. Vérification : 10,75 + 9,25 = 20."
+          ],
+          "hint": "Calcule d'abord ce que coûtent le pain et le fromage ensemble."
+        },
+        {
+          "key": "q5",
+          "skill_id": "D004",
+          "statement": "Quelle quantité d'eau reste-t-il dans la gourde de Léa le soir ?",
+          "type": "numerique",
+          "answer": {
+            "value": 0.15,
+            "unit": "L"
+          },
+          "points": 4,
+          "solution_steps": [
+            "Léa boit 0,75 L puis 0,6 L : 0,75 + 0,60 = 1,35 (en litres).",
+            "Il reste 1,50 − 1,35 = 0,15 (en litres).",
+            "Le soir, il reste **0,15 L** d'eau dans la gourde. On peut aussi soustraire en deux fois : 1,50 − 0,75 = 0,75, puis 0,75 − 0,60 = 0,15."
+          ],
+          "hint": "Complète par des zéros pour que tous les nombres aient deux chiffres après la virgule."
+        }
+      ],
+      "review_status": "brouillon",
+      "programme_ref": "Cycle 3, Cours moyen première année, Les quatre opérations : « Poser en colonnes et effectuer des additions et des soustractions de nombres décimaux »"
+    },
+    {
+      "id": "SX-D006-01",
+      "skill_id": "D006",
+      "skill_ids": [
+        "D006",
+        "B017",
+        "P010"
+      ],
+      "school_level": "6e",
+      "title": "Le nouveau parquet de Camille",
+      "contexte": "Camille, 12 ans, refait le sol de sa chambre avec son père. La chambre est un rectangle de 3,6 m de long et de 2,85 m de large. La hauteur sous plafond est de 2,5 m.\n\nIls choisissent un parquet à 24,50 € le mètre carré. Pour avoir un peu de marge en cas de chutes, ils en achètent 10,5 m².\n\nIls posent aussi des plinthes, de fines planches de bois fixées en bas des murs, tout autour de la pièce, sauf devant la porte, qui mesure 0,8 m de large. Les plinthes coûtent 3,20 € le mètre.\n\nLe magasin de bricolage est à 7 km de chez eux, et la livraison est gratuite le samedi.",
+      "image": null,
+      "duree_estimee_min": 18,
+      "questions": [
+        {
+          "key": "q1",
+          "skill_id": "D006",
+          "statement": "Quelles dimensions faut-il pour calculer l'aire du sol de la chambre ?",
+          "type": "qcm",
+          "choices": [
+            {
+              "key": "a",
+              "text": "3,6 m et 2,85 m",
+              "misconception": null
+            },
+            {
+              "key": "b",
+              "text": "3,6 m et 2,5 m",
+              "misconception": "L'élève prend la hauteur sous plafond : elle sert pour les murs, pas pour le sol."
+            },
+            {
+              "key": "c",
+              "text": "2,85 m et 0,8 m",
+              "misconception": "La largeur de la porte sert pour les plinthes, pas pour l'aire du sol."
+            }
+          ],
+          "answer": {
+            "value": "a"
+          },
+          "points": 1,
+          "solution_steps": [
+            "Le sol est un rectangle : son aire se calcule avec sa longueur, 3,6 m, et sa largeur, 2,85 m.",
+            "La hauteur sous plafond et la largeur de la porte ne servent pas pour l'aire du sol."
+          ],
+          "hint": "Le sol est un rectangle : quelles sont ses deux dimensions ?"
+        },
+        {
+          "key": "q2",
+          "skill_id": "B017",
+          "statement": "Sans poser l'opération, quel est l'ordre de grandeur de l'aire du sol ?",
+          "type": "qcm",
+          "choices": [
+            {
+              "key": "a",
+              "text": "Environ 6 m²",
+              "misconception": "L'élève additionne la longueur et la largeur au lieu de les multiplier."
+            },
+            {
+              "key": "b",
+              "text": "Environ 100 m²",
+              "misconception": "L'élève oublie une virgule et calcule comme avec 36 × 3 : 100 m², c'est l'aire d'un grand appartement, pas d'une chambre."
+            },
+            {
+              "key": "c",
+              "text": "Environ 12 m²",
+              "misconception": null
+            }
+          ],
+          "answer": {
+            "value": "c"
+          },
+          "points": 2,
+          "solution_steps": [
+            "On arrondit : 3,6 m est proche de 4 m, et 2,85 m est proche de 3 m.",
+            "4 × 3 = 12 : l'aire du sol est d'**environ 12 m²**, ce qui est vraisemblable pour une chambre."
+          ],
+          "hint": "Arrondis chaque dimension au nombre entier le plus proche."
+        },
+        {
+          "key": "q3",
+          "skill_id": "D006",
+          "statement": "Quelle est l'aire exacte du sol de la chambre ?",
+          "type": "numerique",
+          "answer": {
+            "value": 10.26,
+            "unit": "m²"
+          },
+          "points": 3,
+          "solution_steps": [
+            "On calcule 3,6 × 2,85 en se ramenant à des entiers : 36 × 285 = 10 260.",
+            "3,6 a un chiffre après la virgule et 2,85 en a deux : le produit en a trois. 10 260 millièmes, c'est 10,260 = 10,26.",
+            "L'aire du sol est **10,26 m²**, cohérente avec l'ordre de grandeur de 12 m²."
+          ],
+          "hint": "Calcule d'abord le produit sans les virgules."
+        },
+        {
+          "key": "q4",
+          "skill_id": "P010",
+          "statement": "Quelle longueur de plinthes faut-il ?",
+          "type": "numerique",
+          "answer": {
+            "value": 12.1,
+            "unit": "m"
+          },
+          "points": 2,
+          "solution_steps": [
+            "Le tour de la chambre : 3,6 + 2,85 + 3,6 + 2,85 = 12,9 (en mètres).",
+            "Pas de plinthe devant la porte : 12,9 − 0,8 = 12,1.",
+            "Il faut **12,1 m** de plinthes."
+          ],
+          "hint": "Fais le tour de la pièce, puis pense à la porte."
+        },
+        {
+          "key": "q5",
+          "skill_id": "D006",
+          "statement": "Combien coûte le parquet acheté ?",
+          "type": "numerique",
+          "answer": {
+            "value": 257.25,
+            "unit": "€",
+            "accepted": [
+              "257,25 €",
+              "257,25 euros",
+              "257 € 25",
+              "257 euros 25",
+              "257€25"
+            ]
+          },
+          "points": 4,
+          "solution_steps": [
+            "Ils achètent 10,5 m² à 24,50 € le mètre carré : on calcule 10,5 × 24,5.",
+            "Ordre de grandeur : 10 × 25 = 250.",
+            "Sans les virgules : 105 × 245 = 25 725. Chaque facteur a un chiffre après la virgule : le produit en a deux. 10,5 × 24,5 = 257,25.",
+            "Le parquet coûte **257,25 €**, proche de l'ordre de grandeur de 250 €."
+          ],
+          "hint": "Commence par un ordre de grandeur du prix."
+        }
+      ],
+      "review_status": "brouillon",
+      "programme_ref": "Cycle 3, classe de 6e, Les nombres entiers et décimaux : « Calculer le produit de deux nombres décimaux »"
+    },
+    {
+      "id": "SX-D007-01",
+      "skill_id": "D007",
+      "skill_ids": [
+        "D007",
+        "D021",
+        "B008"
+      ],
+      "school_level": "CM2",
+      "title": "Le pique-nique au bord de la rivière",
+      "contexte": "Samedi, quatre amis, Léon, Maya, Sami et Jade, pique-niquent au bord de la rivière. Le grand frère de Maya, 17 ans, les accompagne, mais il apporte son propre repas et ne participe pas aux frais.\n\nLes quatre amis ont fait les courses ensemble. Ils ont acheté 3 baguettes à 1,15 € l'une, un melon, des tomates et des jus de fruits. Le ticket de caisse indique un total de 23,40 €. Les quatre amis se partagent ce total en parts égales.\n\nJade a apporté une barquette de 75 fraises, à partager équitablement entre les quatre amis, sans couper de fraise. Les fraises qui restent seront pour le grand frère.\n\nPour un jeu, Sami coupe une corde de 9 m en 8 morceaux de même longueur.",
+      "image": null,
+      "duree_estimee_min": 15,
+      "questions": [
+        {
+          "key": "q1",
+          "skill_id": "D007",
+          "statement": "Entre combien de personnes le total du ticket de caisse est-il partagé ?",
+          "type": "qcm",
+          "choices": [
+            {
+              "key": "a",
+              "text": "5",
+              "misconception": "L'élève compte le grand frère de Maya ; or il ne participe pas aux frais."
+            },
+            {
+              "key": "b",
+              "text": "4",
+              "misconception": null
+            },
+            {
+              "key": "c",
+              "text": "3",
+              "misconception": "L'élève prend le nombre de baguettes, qui ne dit pas combien de personnes paient."
+            }
+          ],
+          "answer": {
+            "value": "b"
+          },
+          "points": 1,
+          "solution_steps": [
+            "Le texte dit : « Les quatre amis se partagent ce total en parts égales. » Le grand frère ne participe pas aux frais.",
+            "Le total est partagé entre **4** personnes."
+          ],
+          "hint": "Relis la phrase qui parle du grand frère de Maya."
+        },
+        {
+          "key": "q2",
+          "skill_id": "D021",
+          "statement": "Combien coûtent les 3 baguettes ?",
+          "type": "numerique",
+          "answer": {
+            "value": 3.45,
+            "unit": "€",
+            "accepted": [
+              "3,45 €",
+              "3,45 euros",
+              "3 € 45",
+              "3 euros 45",
+              "3€45"
+            ]
+          },
+          "points": 2,
+          "solution_steps": [
+            "On calcule 1,15 × 3 comme avec des entiers : 115 × 3 = 345.",
+            "1,15, ce sont 115 centièmes : le produit compte 345 centièmes, soit 3,45.",
+            "Les 3 baguettes coûtent **3,45 €**."
+          ],
+          "hint": "Calcule comme si 1,15 n'avait pas de virgule, puis pense aux centièmes."
+        },
+        {
+          "key": "q3",
+          "skill_id": "B008",
+          "statement": "Combien de fraises chaque ami reçoit-il ?",
+          "type": "numerique",
+          "answer": {
+            "value": 18,
+            "unit": "fraises"
+          },
+          "points": 2,
+          "solution_steps": [
+            "On partage 75 fraises entre 4 amis, sans couper de fraise : division euclidienne de 75 par 4.",
+            "75 = 4 × 18 + 3 : le quotient est 18 et le reste 3.",
+            "Chaque ami reçoit **18 fraises**, et les 3 fraises qui restent sont pour le grand frère."
+          ],
+          "hint": "Pose la division euclidienne de 75 par 4."
+        },
+        {
+          "key": "q4",
+          "skill_id": "D007",
+          "statement": "Combien chaque ami paie-t-il pour les courses ?",
+          "type": "numerique",
+          "answer": {
+            "value": 5.85,
+            "unit": "€",
+            "accepted": [
+              "5,85 €",
+              "5,85 euros",
+              "5 € 85",
+              "5 euros 85",
+              "5€85"
+            ]
+          },
+          "points": 3,
+          "solution_steps": [
+            "On partage 23,40 € en 4 parts égales : on pose 23,40 ÷ 4.",
+            "23 unités : 5 unités chacun (4 × 5 = 20), il reste 3 unités, soit 30 dixièmes. On écrit la virgule au quotient.",
+            "30 + 4 = 34 dixièmes : 8 dixièmes chacun (4 × 8 = 32), il reste 2 dixièmes, soit 20 centièmes.",
+            "20 centièmes : 5 centièmes chacun (4 × 5 = 20), il reste 0.",
+            "Chacun paie **5,85 €**. Vérification : 5,85 × 4 = 23,40."
+          ],
+          "hint": "Quand il reste des unités, change-les en dixièmes et continue le partage."
+        },
+        {
+          "key": "q5",
+          "skill_id": "D007",
+          "statement": "Quelle est la longueur de chaque morceau de corde ?",
+          "type": "numerique",
+          "answer": {
+            "value": 1.125,
+            "unit": "m"
+          },
+          "points": 4,
+          "solution_steps": [
+            "On partage 9 m en 8 : 9 ÷ 8. 9 unités : 1 unité chacun, il reste 1 unité, soit 10 dixièmes.",
+            "10 dixièmes : 1 dixième chacun, il reste 2 dixièmes, soit 20 centièmes.",
+            "20 centièmes : 2 centièmes chacun (8 × 2 = 16), il reste 4 centièmes, soit 40 millièmes.",
+            "40 millièmes : 5 millièmes chacun (8 × 5 = 40), il reste 0.",
+            "Chaque morceau mesure **1,125 m**. Vérification : 1,125 × 8 = 9."
+          ],
+          "hint": "Continue la division après la virgule jusqu'à ce que le reste soit nul."
+        }
+      ],
+      "review_status": "brouillon",
+      "programme_ref": "Cycle 3, Cours moyen deuxième année, Les quatre opérations : « Poser et effectuer des divisions décimales avec un dividende décimal et un diviseur à un chiffre »"
+    },
+    {
+      "id": "SX-D008-01",
+      "skill_id": "D008",
+      "skill_ids": [
+        "D008",
+        "D012",
+        "B039"
+      ],
+      "school_level": "CM1",
+      "title": "La randonnée au Lac Bleu",
+      "contexte": "Dimanche, la famille Roux part en randonnée depuis le parking du col, à 1 250 m d'altitude. Le départ est prévu à 9 heures.\n\nUn panneau indique les distances à parcourir depuis le parking :\ncascade : 2,35 km ;\nrefuge : 3,6 km ;\nLac Bleu : 7,85 km.\n\nLe chemin passe par la cascade, puis par le refuge, avant d'arriver au Lac Bleu. La famille marche environ 4 km en une heure.\n\nLe grand-père accompagne la famille jusqu'au refuge, puis il redescend seul au parking par le même chemin, à la même allure. Les autres pique-niquent au bord du lac.",
+      "image": null,
+      "duree_estimee_min": 15,
+      "questions": [
+        {
+          "key": "q1",
+          "skill_id": "D012",
+          "statement": "Entre quels nombres entiers qui se suivent se trouve la distance du parking au Lac Bleu ?",
+          "type": "qcm",
+          "choices": [
+            {
+              "key": "a",
+              "text": "7 et 85",
+              "misconception": "L'élève sépare les deux morceaux du nombre. Or 85 ne suit pas 7, et la partie après la virgule compte des centièmes : moins d'une unité."
+            },
+            {
+              "key": "b",
+              "text": "785 et 786",
+              "misconception": "L'élève oublie la virgule et lit 785."
+            },
+            {
+              "key": "c",
+              "text": "7 et 8",
+              "misconception": null
+            }
+          ],
+          "answer": {
+            "value": "c"
+          },
+          "points": 1,
+          "solution_steps": [
+            "7,85 km, c'est 7 km et 85 centièmes de kilomètre : plus que 7 km, mais moins que 8 km.",
+            "On écrit 7 < 7,85 < 8 : la distance se trouve entre **7 et 8**."
+          ],
+          "hint": "Ce qui est écrit après la virgule vaut-il plus ou moins qu'une unité ?"
+        },
+        {
+          "key": "q2",
+          "skill_id": "D008",
+          "statement": "Quelle est la partie entière de la distance du parking au refuge ?",
+          "type": "numerique",
+          "answer": {
+            "value": 3,
+            "unit": "km"
+          },
+          "points": 2,
+          "solution_steps": [
+            "3,6 km, c'est 3 km et 6 dixièmes : 3 < 3,6 < 4.",
+            "La partie entière, c'est le nombre écrit avant la virgule : **3**.",
+            "Attention : l'arrondi à l'unité serait 4, car 6 dixièmes, c'est plus que la moitié d'une unité. Couper n'est pas arrondir."
+          ],
+          "hint": "Encadre 3,6 entre deux nombres entiers qui se suivent."
+        },
+        {
+          "key": "q3",
+          "skill_id": "D008",
+          "statement": "Quel est l'arrondi à l'unité de la distance du parking au Lac Bleu ?",
+          "type": "numerique",
+          "answer": {
+            "value": 8,
+            "unit": "km"
+          },
+          "points": 3,
+          "solution_steps": [
+            "7 < 7,85 < 8.",
+            "7,85 a 8 dixièmes : c'est plus que la moitié d'une unité, 5 dixièmes. 7,85 est plus près de 8 que de 7.",
+            "L'arrondi à l'unité est **8**. Attention : la partie entière est 7, mais l'arrondi est 8."
+          ],
+          "hint": "Regarde le chiffre des dixièmes."
+        },
+        {
+          "key": "q4",
+          "skill_id": "B039",
+          "statement": "Pour prévoir la durée de marche du grand-père, aller et retour entre le parking et le refuge, on arrondit à l'unité la distance du parking au refuge. Combien d'heures de marche doit-il prévoir ?",
+          "type": "numerique",
+          "answer": {
+            "value": 2,
+            "unit": "h"
+          },
+          "points": 2,
+          "solution_steps": [
+            "La distance du parking au refuge, 3,6 km, arrondie à l'unité, donne 4 km : 3,6 est plus près de 4 que de 3.",
+            "Aller et retour : 4 + 4 = 8, soit 8 km.",
+            "À environ 4 km en une heure : 8 ÷ 4 = 2. Le grand-père doit prévoir **2 heures** de marche."
+          ],
+          "hint": "Compte la distance de l'aller et celle du retour."
+        },
+        {
+          "key": "q5",
+          "skill_id": "D008",
+          "statement": "Entre le refuge et le Lac Bleu, un panneau abîmé indique la distance du parking au pont. On ne lit plus le nombre, mais il est écrit dessous : « partie entière 4, arrondi à l'unité 5 ». Laquelle de ces distances peut-elle être ?",
+          "type": "qcm",
+          "choices": [
+            {
+              "key": "a",
+              "text": "4,38 km",
+              "misconception": "4,38 a bien pour partie entière 4, mais 3 dixièmes, c'est moins que la moitié d'une unité : son arrondi est 4, pas 5."
+            },
+            {
+              "key": "b",
+              "text": "5,25 km",
+              "misconception": "5,25 a bien pour arrondi 5, mais sa partie entière est 5, pas 4."
+            },
+            {
+              "key": "c",
+              "text": "3,96 km",
+              "misconception": "L'élève prend les nombres un rang trop bas : 3,96 a pour partie entière 3 et pour arrondi 4."
+            },
+            {
+              "key": "d",
+              "text": "4,74 km",
+              "misconception": null
+            }
+          ],
+          "answer": {
+            "value": "d"
+          },
+          "points": 4,
+          "solution_steps": [
+            "Partie entière 4 : le nombre s'écrit 4 virgule quelque chose ; il est au moins égal à 4 et plus petit que 5.",
+            "Arrondi 5 : le nombre est plus près de 5 que de 4, donc son chiffre des dixièmes est 5 ou plus.",
+            "Seul **4,74 km** convient : 4 < 4,74 < 5, et 7 dixièmes, c'est plus que la moitié d'une unité."
+          ],
+          "hint": "Pour chaque distance, cherche sa partie entière, puis son arrondi à l'unité."
+        }
+      ],
+      "review_status": "brouillon",
+      "programme_ref": "Cycle 3, Cours moyen première année, Les nombres décimaux : « Savoir donner la partie entière et l'arrondi à l'entier d'un nombre décimal »"
+    },
+    {
+      "id": "SX-D009-01",
+      "skill_id": "D009",
+      "skill_ids": [
+        "D009",
+        "D022",
+        "B008"
+      ],
+      "school_level": "6e",
+      "title": "Le 60 mètres au chronomètre",
+      "contexte": "Au stade, les 26 élèves de 6e B courent le 60 m. Le professeur d'EPS utilise un chronomètre électronique qui affiche les temps au millième de seconde. La piste compte 4 couloirs : les élèves courent par séries de 4, et la dernière série peut être incomplète.\n\nVoici les temps de la première série :\nAyoub : 9,384 s ;\nClara : 9,438 s ;\nRémi : 10,052 s ;\nSofia : 9,349 s.\n\nLe professeur recopie les temps dans son carnet, arrondis au dixième de seconde. Le record du collège sur 60 m est de 8,2 s, et la séance se termine à 11 h 55.",
+      "image": null,
+      "duree_estimee_min": 15,
+      "questions": [
+        {
+          "key": "q1",
+          "skill_id": "D022",
+          "statement": "Quel est le chiffre des centièmes dans le temps de Clara ?",
+          "type": "qcm",
+          "choices": [
+            {
+              "key": "a",
+              "text": "4",
+              "misconception": "L'élève donne le chiffre des dixièmes, juste après la virgule."
+            },
+            {
+              "key": "b",
+              "text": "8",
+              "misconception": "L'élève donne le dernier chiffre : 8 est le chiffre des millièmes."
+            },
+            {
+              "key": "c",
+              "text": "3",
+              "misconception": null
+            }
+          ],
+          "answer": {
+            "value": "c"
+          },
+          "points": 1,
+          "solution_steps": [
+            "9,438 : 9 unités, 4 dixièmes, 3 centièmes et 8 millièmes.",
+            "Le chiffre des centièmes est **3**."
+          ],
+          "hint": "Nomme le rang de chaque chiffre écrit après la virgule."
+        },
+        {
+          "key": "q2",
+          "skill_id": "B008",
+          "statement": "Combien de séries faut-il pour que tous les élèves courent ?",
+          "type": "numerique",
+          "answer": {
+            "value": 7,
+            "unit": "séries"
+          },
+          "points": 2,
+          "solution_steps": [
+            "26 élèves, 4 par série : on pose la division euclidienne de 26 par 4.",
+            "26 = 4 × 6 + 2 : 6 séries complètes, et il reste 2 élèves.",
+            "Ces 2 élèves forment une dernière série, incomplète : il faut **7 séries**."
+          ],
+          "hint": "Que deviennent les élèves qui restent après les séries complètes ?"
+        },
+        {
+          "key": "q3",
+          "skill_id": "D009",
+          "statement": "Quel temps le professeur recopie-t-il pour Rémi ?",
+          "type": "numerique",
+          "answer": {
+            "value": 10.1,
+            "unit": "s"
+          },
+          "points": 2,
+          "solution_steps": [
+            "Au dixième : 10,0 < 10,052 < 10,1.",
+            "On regarde le chiffre juste après les dixièmes, celui des centièmes : 5. De 5 à 9, on prend la valeur du dessus.",
+            "Le professeur recopie **10,1 s** pour Rémi."
+          ],
+          "hint": "Encadre le temps de Rémi entre deux nombres à un chiffre après la virgule qui se suivent."
+        },
+        {
+          "key": "q4",
+          "skill_id": "D009",
+          "statement": "Dans le carnet, quels élèves de la première série ont le même temps ?",
+          "type": "qcm",
+          "choices": [
+            {
+              "key": "a",
+              "text": "Ayoub et Sofia",
+              "misconception": "L'élève coupe au lieu d'arrondir : il garde 9,3 pour Ayoub comme pour Sofia. Or 9,384 a 8 centièmes : il s'arrondit à 9,4."
+            },
+            {
+              "key": "b",
+              "text": "Ayoub et Clara",
+              "misconception": null
+            },
+            {
+              "key": "c",
+              "text": "Ayoub, Clara et Sofia",
+              "misconception": "L'élève arrondit en deux fois : 9,349 donne 9,35, puis 9,4. Il faut regarder directement le chiffre des centièmes de 9,349, qui est 4 : 9,3."
+            },
+            {
+              "key": "d",
+              "text": "Aucun élève",
+              "misconception": "L'élève compare les temps affichés par le chronomètre, et non les temps arrondis au dixième."
+            }
+          ],
+          "answer": {
+            "value": "b"
+          },
+          "points": 3,
+          "solution_steps": [
+            "Ayoub : 9,3 < 9,384 < 9,4 ; 8 centièmes, donc 9,4.",
+            "Clara : 9,4 < 9,438 < 9,5 ; 3 centièmes, donc 9,4.",
+            "Sofia : 9,3 < 9,349 < 9,4 ; 4 centièmes, donc 9,3. Rémi : 10,1.",
+            "**Ayoub et Clara** ont le même temps dans le carnet : 9,4 s."
+          ],
+          "hint": "Arrondis au dixième le temps de chaque élève."
+        },
+        {
+          "key": "q5",
+          "skill_id": "D009",
+          "statement": "Pour départager les élèves, le professeur décide d'arrondir les temps au centième. Quel temps note-t-il pour Sofia ?",
+          "type": "numerique",
+          "answer": {
+            "value": 9.35,
+            "unit": "s"
+          },
+          "points": 4,
+          "solution_steps": [
+            "Au centième : 9,34 < 9,349 < 9,35.",
+            "On regarde le chiffre des millièmes : 9. De 5 à 9, on prend la valeur du dessus.",
+            "Le professeur note **9,35 s** pour Sofia.",
+            "Attention : arrondi au dixième, le temps de Sofia est 9,3 s ; arrondi au centième, c'est 9,35 s. On arrondit toujours le nombre de départ, jamais un arrondi."
+          ],
+          "hint": "Encadre le temps de Sofia entre deux nombres à deux chiffres après la virgule qui se suivent."
+        }
+      ],
+      "review_status": "brouillon",
+      "programme_ref": "Cycle 3, classe de 6e, Les nombres entiers et décimaux : « Donner la valeur arrondie à l'unité, au dixième ou au centième, d'un nombre décimal »"
+    },
+    {
+      "id": "SX-D012-01",
+      "skill_id": "D012",
+      "skill_ids": [
+        "D012",
+        "D003",
+        "B037"
+      ],
+      "school_level": "CM1",
+      "title": "Le concours de citrouilles",
+      "contexte": "Au potager de l'école, les CM1 organisent un concours de citrouilles. Au printemps, ils avaient planté 42 graines de citrouille. 9 graines n'ont pas germé, et les limaces ont mangé 6 jeunes plants. Tous les autres plants ont grandi.\n\nLe jour du concours, le jury pèse les quatre plus belles citrouilles :\ncelle d'Ana : 8,6 kg ;\ncelle de Tom : 8,45 kg ;\ncelle de Yasmine : 9,07 kg ;\ncelle de Rayan : 8,7 kg.\n\nLa citrouille de Malo arrive en retard. Elle pèse plus que celle d'Ana, mais moins que celle de Rayan.\n\nLe gagnant recevra un livre sur le jardinage. La remise du prix a lieu le 18 octobre, à 16 heures.",
+      "image": null,
+      "duree_estimee_min": 12,
+      "questions": [
+        {
+          "key": "q1",
+          "skill_id": "B037",
+          "statement": "Combien de plants de citrouille ont pu grandir ?",
+          "type": "numerique",
+          "answer": {
+            "value": 27,
+            "unit": "plants"
+          },
+          "points": 2,
+          "solution_steps": [
+            "Sur 42 graines, 9 n'ont pas germé : 42 − 9 = 33 plants.",
+            "Les limaces en ont mangé 6 : 33 − 6 = 27.",
+            "**27 plants** ont pu grandir. Les masses des citrouilles ne servent pas ici."
+          ],
+          "hint": "Commence par compter les graines qui ont germé."
+        },
+        {
+          "key": "q2",
+          "skill_id": "D003",
+          "statement": "Quelle est la plus légère des quatre citrouilles pesées par le jury ?",
+          "type": "qcm",
+          "choices": [
+            {
+              "key": "a",
+              "text": "Celle d'Ana",
+              "misconception": "L'élève croit que 8,45 est plus grand que 8,6 parce que 45 est plus grand que 6. Or 8,6 = 8,60 : 60 centièmes, c'est plus que 45 centièmes."
+            },
+            {
+              "key": "b",
+              "text": "Celle de Yasmine",
+              "misconception": "L'élève regarde le 07, écrit après la virgule, sans voir que la partie entière, 9, est la plus grande."
+            },
+            {
+              "key": "c",
+              "text": "Celle de Tom",
+              "misconception": null
+            }
+          ],
+          "answer": {
+            "value": "c"
+          },
+          "points": 2,
+          "solution_steps": [
+            "La citrouille de Yasmine pèse plus de 9 kg : c'est la plus lourde. Les trois autres ont pour partie entière 8.",
+            "On compare les dixièmes : Tom 4, Ana 6, Rayan 7.",
+            "La plus légère est **celle de Tom**, 8,45 kg."
+          ],
+          "hint": "Compare d'abord les parties entières, puis les dixièmes."
+        },
+        {
+          "key": "q3",
+          "skill_id": "D012",
+          "statement": "Encadre la masse de la citrouille de Tom par deux nombres à un chiffre après la virgule qui se suivent.",
+          "type": "qcm",
+          "choices": [
+            {
+              "key": "a",
+              "text": "8 < 8,45 < 9",
+              "misconception": "L'encadrement est juste, mais par deux nombres entiers : la question demande deux nombres à un chiffre après la virgule."
+            },
+            {
+              "key": "b",
+              "text": "8,4 < 8,45 < 8,5",
+              "misconception": null
+            },
+            {
+              "key": "c",
+              "text": "8,4 < 8,45 < 8,6",
+              "misconception": "8,4 et 8,6 ne se suivent pas : 8,5 se trouve entre eux."
+            }
+          ],
+          "answer": {
+            "value": "b"
+          },
+          "points": 3,
+          "solution_steps": [
+            "8,45 kg, c'est 8 kg, 4 dixièmes et 5 centièmes : plus que 8,4 et moins que 8,5.",
+            "8,4 et 8,5 ont un chiffre après la virgule et se suivent : **8,4 < 8,45 < 8,5**."
+          ],
+          "hint": "Compte de dixième en dixième à partir de 8 : 8,1 ; 8,2… Où se place la masse de la citrouille de Tom ?"
+        },
+        {
+          "key": "q4",
+          "skill_id": "D012",
+          "statement": "Laquelle de ces masses peut être celle de la citrouille de Malo ?",
+          "type": "qcm",
+          "choices": [
+            {
+              "key": "a",
+              "text": "8,65 kg",
+              "misconception": null
+            },
+            {
+              "key": "b",
+              "text": "8,56 kg",
+              "misconception": "8,56 est plus petit que 8,6 = 8,60 : la citrouille de Malo serait plus légère que celle d'Ana."
+            },
+            {
+              "key": "c",
+              "text": "8,7 kg",
+              "misconception": "8,7 kg, c'est exactement la masse de la citrouille de Rayan ; or celle de Malo pèse moins."
+            },
+            {
+              "key": "d",
+              "text": "8,07 kg",
+              "misconception": "L'élève lit 8,07 comme 8,7. Or 8,07 n'a aucun dixième : c'est moins que 8,6."
+            }
+          ],
+          "answer": {
+            "value": "a"
+          },
+          "points": 4,
+          "solution_steps": [
+            "La citrouille de Malo pèse plus que 8,6 kg et moins que 8,7 kg. On écrit 8,6 = 8,60 et 8,7 = 8,70.",
+            "8,65 convient : 8,60 < 8,65 < 8,70. La citrouille de Malo peut peser **8,65 kg**.",
+            "8,56 et 8,07 sont plus petits que 8,60, et 8,7 n'est pas plus petit que 8,7 : ces masses ne conviennent pas."
+          ],
+          "hint": "Écris les masses des citrouilles d'Ana et de Rayan avec deux chiffres après la virgule."
+        }
+      ],
+      "review_status": "brouillon",
+      "programme_ref": "Cycle 3, Cours moyen première année, Les nombres décimaux : « Comparer, encadrer, intercaler, ordonner, par ordre croissant ou décroissant, des nombres décimaux donnés par leur écriture à virgule en utilisant les symboles =, < et > »"
+    },
+    {
+      "id": "SX-D014-01",
+      "skill_id": "D014",
+      "skill_ids": [
+        "D014",
+        "P015"
+      ],
+      "school_level": "CM1",
+      "title": "Les crêpes de la kermesse",
+      "contexte": "Pour la kermesse de l'école, la classe de CM1 de M. Petit prépare une pâte à crêpes. La kermesse ouvre à 14 heures, et la classe compte 25 élèves.\n\nLa recette, prévue pour 30 crêpes, indique :\nfarine : 0,6 kg ;\nlait : 1,2 L ;\nsucre : 0,08 kg ;\narôme de fleur d'oranger : 4 cL ;\n4 œufs.\n\nLa balance de la classe affiche les masses en grammes. Le verre doseur est gradué en centilitres. Pour l'arôme, on utilise une cuillère à café qui contient 5 mL.",
+      "image": null,
+      "duree_estimee_min": 12,
+      "questions": [
+        {
+          "key": "q1",
+          "skill_id": "D014",
+          "statement": "Dans quelle unité faut-il exprimer la masse de farine pour la peser sur la balance de la classe ?",
+          "type": "qcm",
+          "choices": [
+            {
+              "key": "a",
+              "text": "En kilogrammes",
+              "misconception": "La recette donne la farine en kilogrammes, mais la balance de la classe affiche des grammes : il faut convertir."
+            },
+            {
+              "key": "b",
+              "text": "En grammes",
+              "misconception": null
+            },
+            {
+              "key": "c",
+              "text": "En centilitres",
+              "misconception": "Le centilitre mesure une contenance, celle d'un liquide comme le lait ; la farine se pèse."
+            }
+          ],
+          "answer": {
+            "value": "b"
+          },
+          "points": 1,
+          "solution_steps": [
+            "Le texte dit : « La balance de la classe affiche les masses en grammes. »",
+            "Il faut donc exprimer la masse de farine **en grammes**."
+          ],
+          "hint": "Relis la phrase qui parle de la balance."
+        },
+        {
+          "key": "q2",
+          "skill_id": "D014",
+          "statement": "Quelle masse de farine faut-il, en grammes ?",
+          "type": "numerique",
+          "answer": {
+            "value": 600,
+            "unit": "g"
+          },
+          "points": 2,
+          "solution_steps": [
+            "1 kg = 1 000 g.",
+            "0,6 kg, ce sont 6 dixièmes de kilogramme. Un dixième de kilogramme, c'est 1 000 ÷ 10 = 100, soit 100 g.",
+            "6 dixièmes : 6 × 100 = 600. Il faut **600 g** de farine.",
+            "Contrôle : l'unité est plus petite, le nombre est plus grand."
+          ],
+          "hint": "Combien de grammes y a-t-il dans 1 kg ?"
+        },
+        {
+          "key": "q3",
+          "skill_id": "P015",
+          "statement": "Combien de cuillères à café d'arôme de fleur d'oranger faut-il ?",
+          "type": "numerique",
+          "answer": {
+            "value": 8,
+            "unit": "cuillères"
+          },
+          "points": 2,
+          "solution_steps": [
+            "1 cL = 10 mL, donc 4 cL = 40 mL.",
+            "Une cuillère contient 5 mL : 40 ÷ 5 = 8.",
+            "Il faut **8 cuillères à café** d'arôme."
+          ],
+          "hint": "Combien de millilitres y a-t-il dans 1 cL ?"
+        },
+        {
+          "key": "q4",
+          "skill_id": "D014",
+          "statement": "Quelle quantité de lait faut-il, en centilitres ?",
+          "type": "numerique",
+          "answer": {
+            "value": 120,
+            "unit": "cL"
+          },
+          "points": 3,
+          "solution_steps": [
+            "1 L = 100 cL.",
+            "1,2 L, c'est 1 L et 2 dixièmes de litre. Un dixième de litre, c'est 100 ÷ 10 = 10, soit 10 cL : 2 dixièmes font 20 cL.",
+            "1,2 L = 100 cL + 20 cL. Il faut **120 cL** de lait."
+          ],
+          "hint": "Combien de centilitres y a-t-il dans 1 L ?"
+        },
+        {
+          "key": "q5",
+          "skill_id": "D014",
+          "statement": "Quelle masse de sucre faut-il, en grammes ?",
+          "type": "numerique",
+          "answer": {
+            "value": 80,
+            "unit": "g"
+          },
+          "points": 4,
+          "solution_steps": [
+            "0,08 kg, c'est 0 dixième et 8 centièmes de kilogramme.",
+            "1 kg = 1 000 g, et 100 × 10 = 1 000 : un centième de kilogramme, c'est 10 g. Donc 8 centièmes font 8 × 10 = 80, soit 80 g.",
+            "Il faut **80 g** de sucre.",
+            "Attention : 800 g correspondrait à 0,8 kg, 8 dixièmes de kilogramme. Ici, le 0 indique qu'il n'y a aucun dixième."
+          ],
+          "hint": "Que vaut le chiffre 8 dans 0,08 : des dixièmes ou des centièmes ?"
+        }
+      ],
+      "review_status": "brouillon",
+      "programme_ref": "Cycle 3, Cours moyen première année, Grandeurs et mesures : « Les longueurs, les masses et les contenances permettent de nourrir le travail mené sur les fractions et les nombres décimaux. »"
+    },
+    {
+      "id": "SX-D016-01",
+      "skill_id": "D016",
+      "skill_ids": [
+        "D016",
+        "P003"
+      ],
+      "school_level": "CE1",
+      "title": "Le vide-grenier de Léna",
+      "contexte": "Samedi, Léna va au vide-grenier de son quartier avec son grand frère Malo. Le vide-grenier ferme à 17 heures.\n\nDans son porte-monnaie, Léna a un billet de 5 €, 6 pièces de 2 € et 2 pièces de 1 €. Malo, lui, a un billet de 20 €.\n\nSur un stand, Léna regarde trois objets. Les prix sont écrits de façons différentes :\nle livre de contes coûte 3 € et 40 centimes ;\nla petite voiture coûte 3,04 € ;\nle puzzle coûte 290 centimes.\n\nRappel : 100 centimes font 1 €.",
+      "image": null,
+      "duree_estimee_min": 8,
+      "questions": [
+        {
+          "key": "q1",
+          "skill_id": "P003",
+          "statement": "Combien d'euros Léna a-t-elle dans son porte-monnaie ?",
+          "type": "numerique",
+          "answer": {
+            "value": 19,
+            "unit": "€",
+            "accepted": [
+              "19 euros"
+            ]
+          },
+          "points": 2,
+          "solution_steps": [
+            "Le billet de 5 € : 5 €.",
+            "Les 6 pièces de 2 € : 2 + 2 + 2 + 2 + 2 + 2 = 12 €.",
+            "Les 2 pièces de 1 € : 1 + 1 = 2 €.",
+            "En tout : 5 + 12 + 2 = 19. Léna a **19 €**. Le billet de Malo n'est pas à elle : il ne compte pas."
+          ],
+          "hint": "Compte la valeur des pièces, pas seulement leur nombre."
+        },
+        {
+          "key": "q2",
+          "skill_id": "D016",
+          "statement": "Écris le prix du livre de contes en euros, avec une virgule.",
+          "type": "texte",
+          "answer": {
+            "value": "3,40",
+            "accepted": [
+              "3,4",
+              "3,40 €",
+              "3,40 euros",
+              "3,4 €",
+              "3,4 euros"
+            ]
+          },
+          "points": 3,
+          "solution_steps": [
+            "100 centimes font 1 € : les centimes s'écrivent après la virgule, avec deux chiffres.",
+            "Le livre coûte 3 € et 40 centimes : on écrit 3 avant la virgule et 40 après.",
+            "Le livre coûte **3,40 €**.",
+            "Attention : 3,04 €, c'est 3 € et 4 centimes. C'est le prix de la petite voiture."
+          ],
+          "hint": "Après la virgule, on écrit les centimes avec deux chiffres."
+        },
+        {
+          "key": "q3",
+          "skill_id": "D016",
+          "statement": "Range les trois objets du moins cher au plus cher.",
+          "type": "qcm",
+          "choices": [
+            {
+              "key": "a",
+              "text": "La voiture, le livre, le puzzle",
+              "misconception": "L'élève prend 290 centimes pour 290 €. Or 290 centimes, c'est 2 € et 90 centimes : moins de 3 €."
+            },
+            {
+              "key": "b",
+              "text": "Le puzzle, la voiture, le livre",
+              "misconception": null
+            },
+            {
+              "key": "c",
+              "text": "On ne peut pas les ranger : le livre et la voiture ont le même prix",
+              "misconception": "L'élève écrit 3 € et 40 centimes « 3,04 € ». Or 40 centimes s'écrivent 40 après la virgule : le livre coûte 3,40 €, plus que la voiture."
+            },
+            {
+              "key": "d",
+              "text": "Le livre, la voiture, le puzzle",
+              "misconception": "C'est l'ordre du plus cher au moins cher : le rangement est à l'envers."
+            }
+          ],
+          "answer": {
+            "value": "b"
+          },
+          "points": 4,
+          "solution_steps": [
+            "On écrit tous les prix en centimes. Le livre, 3 € et 40 centimes : 300 + 40 = 340 centimes.",
+            "La voiture, 3,04 €, c'est 3 € et 4 centimes : 300 + 4 = 304 centimes.",
+            "Le puzzle coûte 290 centimes.",
+            "290 < 304 < 340 : du moins cher au plus cher, **le puzzle, la voiture, le livre**."
+          ],
+          "hint": "Écris les trois prix de la même façon, par exemple en centimes."
+        }
+      ],
+      "review_status": "brouillon",
+      "programme_ref": "Cycle 2, Cours élémentaire première année, La monnaie : « L'élève sait ordonner quatre prix dans l'ordre croissant ou décroissant, quelles que soient les écritures de ces prix. »"
+    },
+    {
+      "id": "SX-D017-01",
+      "skill_id": "D017",
+      "skill_ids": [
+        "D017",
+        "D016",
+        "P003"
+      ],
+      "school_level": "CE2",
+      "title": "Les courses pour l'anniversaire de Lucie",
+      "contexte": "Mercredi, Hugo et son papa préparent l'anniversaire de Lucie, la petite sœur de Hugo, qui fête ses 7 ans. Le magasin ouvre à 9 heures.\n\nAvant de partir, le papa compte l'argent de son portefeuille : un billet de 20 €, 2 billets de 5 € et 7 pièces de 2 €.\n\nAu magasin, ils achètent :\nun sachet de ballons à 2,65 € ;\ndes bougies à 1,80 € ;\nun gâteau au chocolat à 13,90 €.\n\nHugo voulait un ballon géant à 6,50 €, mais son papa a dit non.\n\nÀ la caisse, le papa paie d'abord le gâteau, seul, avec le billet de 20 €. Il paie ensuite les ballons et les bougies avec des pièces.",
+      "image": null,
+      "duree_estimee_min": 12,
+      "questions": [
+        {
+          "key": "q1",
+          "skill_id": "D016",
+          "statement": "Le papa paie les bougies avec des pièces. Quelle somme est égale au prix des bougies ?",
+          "type": "qcm",
+          "choices": [
+            {
+              "key": "a",
+              "text": "1 € et 8 centimes",
+              "misconception": "L'élève ne lit que le 8. Or 1 € et 8 centimes s'écrirait 1,08 € ; 1,80 €, c'est 1 € et 80 centimes."
+            },
+            {
+              "key": "b",
+              "text": "18 €",
+              "misconception": "L'élève oublie la virgule : des bougies à 18 € coûteraient plus cher que le gâteau."
+            },
+            {
+              "key": "c",
+              "text": "1 € et 80 centimes",
+              "misconception": null
+            }
+          ],
+          "answer": {
+            "value": "c"
+          },
+          "points": 1,
+          "solution_steps": [
+            "Dans 1,80 €, le chiffre avant la virgule compte les euros : 1 €.",
+            "Les deux chiffres après la virgule comptent les centimes : 80 centimes.",
+            "Les bougies coûtent **1 € et 80 centimes**."
+          ],
+          "hint": "Après la virgule, on lit les centimes."
+        },
+        {
+          "key": "q2",
+          "skill_id": "P003",
+          "statement": "Combien d'euros le papa a-t-il dans son portefeuille avant de partir ?",
+          "type": "numerique",
+          "answer": {
+            "value": 44,
+            "unit": "€",
+            "accepted": [
+              "44 euros"
+            ]
+          },
+          "points": 2,
+          "solution_steps": [
+            "Le billet de 20 € : 20 €. Les 2 billets de 5 € : 5 + 5 = 10 €.",
+            "Les 7 pièces de 2 € : 2 + 2 + 2 + 2 + 2 + 2 + 2 = 14 €.",
+            "En tout : 20 + 10 + 14 = 44. Le papa a **44 €**."
+          ],
+          "hint": "Compte la valeur de chaque billet et de chaque pièce."
+        },
+        {
+          "key": "q3",
+          "skill_id": "D017",
+          "statement": "Combien coûtent en tout les ballons, les bougies et le gâteau ?",
+          "type": "numerique",
+          "answer": {
+            "value": 18.35,
+            "unit": "€",
+            "accepted": [
+              "18,35 €",
+              "18,35 euros",
+              "18 € 35",
+              "18 euros 35",
+              "18€35"
+            ]
+          },
+          "points": 3,
+          "solution_steps": [
+            "On pose l'addition des trois prix en alignant les virgules : centimes sous centimes, euros sous euros.",
+            "Centimes : 5 + 0 + 0 = 5. Dizaines de centimes : 6 + 8 + 9 = 23 ; on écrit 3 et on retient 2 €.",
+            "Euros : 2 + 1 + 3 + 2 = 8. Dizaines d'euros : 1.",
+            "Les achats coûtent **18,35 €** en tout. Le ballon géant n'a pas été acheté : il ne compte pas."
+          ],
+          "hint": "Pose l'addition des trois prix, virgule sous virgule."
+        },
+        {
+          "key": "q4",
+          "skill_id": "D017",
+          "statement": "Combien d'argent rend-on au papa quand il paie le gâteau ?",
+          "type": "numerique",
+          "answer": {
+            "value": 6.1,
+            "unit": "€",
+            "accepted": [
+              "6,10 €",
+              "6,10 euros",
+              "6 € 10",
+              "6 euros 10",
+              "6€10"
+            ]
+          },
+          "points": 4,
+          "solution_steps": [
+            "Le papa paie le gâteau seul, avec le billet de 20 €. On écrit 20 € avec deux chiffres de centimes, 20,00 €, et on pose la soustraction de 13,90 €.",
+            "Centimes : 0 − 0 = 0. Dizaines de centimes : 0 − 9, c'est impossible ; on casse 1 € en 10 dizaines de centimes : 10 − 9 = 1.",
+            "Euros : il reste 19 € ; 19 − 13 = 6.",
+            "On rend **6,10 €** au papa. Vérification : 13,90 + 6,10 = 20."
+          ],
+          "hint": "Écris 20 € avec deux chiffres de centimes avant de poser la soustraction."
+        }
+      ],
+      "review_status": "brouillon",
+      "programme_ref": "Cycle 2, Cours élémentaire deuxième année, La monnaie : « Les techniques posées rencontrées au CE1 pour l'addition et la soustraction des nombres entiers sont étendues au CE2 aux montants en euro utilisant l'écriture à virgule. »"
+    },
+    {
+      "id": "SX-D018-01",
+      "skill_id": "D018",
+      "skill_ids": [
+        "D018",
+        "C001",
+        "C006",
+        "C012"
+      ],
+      "school_level": "CM1",
+      "title": "La fresque de la classe",
+      "contexte": "Les 25 élèves de CM1 peignent une fresque sur un grand panneau carré. Le panneau est partagé en 10 bandes égales, et chaque bande est partagée en 10 carreaux égaux. Chaque équipe peint sa partie d'une seule couleur, sans jamais repeindre un carreau déjà peint.\n\nL'équipe de Lou peint en bleu 4 bandes entières et 7 carreaux d'une autre bande.\nL'équipe de Sami peint en jaune $\\frac{24}{100}$ du panneau.\nL'équipe de Nina peint en vert $\\frac{2}{10}$ du panneau.\nLe reste du panneau est laissé blanc. La peinture sèche en 2 heures.\n\nDans la classe voisine, les élèves ont peint deux panneaux identiques à celui-ci. Ils ont recouvert en tout $\\frac{158}{100}$ de panneau.",
+      "image": null,
+      "duree_estimee_min": 15,
+      "questions": [
+        {
+          "key": "q1",
+          "skill_id": "C001",
+          "statement": "Quelle fraction du panneau représente un carreau ?",
+          "type": "qcm",
+          "choices": [
+            {
+              "key": "a",
+              "text": "$\\frac{1}{10}$",
+              "misconception": "$\\frac{1}{10}$ du panneau, c'est une bande entière, pas un carreau."
+            },
+            {
+              "key": "b",
+              "text": "$\\frac{1}{20}$",
+              "misconception": "L'élève additionne les 10 bandes et les 10 carreaux. Or le panneau compte 10 bandes de 10 carreaux, soit 100 carreaux."
+            },
+            {
+              "key": "c",
+              "text": "$\\frac{1}{100}$",
+              "misconception": null
+            }
+          ],
+          "answer": {
+            "value": "c"
+          },
+          "points": 1,
+          "solution_steps": [
+            "Le panneau a 10 bandes de 10 carreaux : 10 × 10 = 100 carreaux égaux.",
+            "Un carreau est donc $\\frac{1}{100}$ du panneau : **un centième**."
+          ],
+          "hint": "Combien de carreaux égaux y a-t-il dans tout le panneau ?"
+        },
+        {
+          "key": "q2",
+          "skill_id": "D018",
+          "statement": "Quelle fraction du panneau l'équipe de Lou a-t-elle peinte ? Écris-la sous la forme d'une seule fraction de dénominateur 100.",
+          "type": "texte",
+          "answer": {
+            "value": "47/100",
+            "accepted": [
+              "47 / 100",
+              "47/100 du panneau"
+            ]
+          },
+          "points": 2,
+          "solution_steps": [
+            "Une bande, c'est 10 carreaux, soit $\\frac{10}{100}$ du panneau : 4 bandes font 40 carreaux.",
+            "Avec les 7 carreaux de plus : 40 + 7 = 47 carreaux.",
+            "L'équipe de Lou a peint $\\frac{47}{100}$ du panneau, c'est-à-dire 4 dixièmes et 7 centièmes."
+          ],
+          "hint": "Combien de carreaux y a-t-il dans une bande ?"
+        },
+        {
+          "key": "q3",
+          "skill_id": "C006",
+          "statement": "Combien de carreaux l'équipe de Nina a-t-elle peints ?",
+          "type": "numerique",
+          "answer": {
+            "value": 20,
+            "unit": "carreaux"
+          },
+          "points": 2,
+          "solution_steps": [
+            "$\\frac{2}{10}$ du panneau, ce sont 2 bandes sur 10.",
+            "Une bande compte 10 carreaux : 2 bandes font 20 carreaux.",
+            "$\\frac{2}{10} = \\frac{20}{100}$ : l'équipe de Nina a peint **20 carreaux**."
+          ],
+          "hint": "Que représente $\\frac{1}{10}$ du panneau : une bande ou un carreau ?"
+        },
+        {
+          "key": "q4",
+          "skill_id": "C012",
+          "statement": "On admet que les équipes de Lou et de Nina ont peint ensemble 67 carreaux. Quelle fraction du panneau est peinte en tout ? Écris-la sous la forme d'une seule fraction de dénominateur 100.",
+          "type": "texte",
+          "answer": {
+            "value": "91/100",
+            "accepted": [
+              "91 / 100",
+              "91/100 du panneau"
+            ]
+          },
+          "points": 3,
+          "solution_steps": [
+            "Un carreau est $\\frac{1}{100}$ du panneau : les 67 carreaux des équipes de Lou et de Nina font $\\frac{67}{100}$ du panneau.",
+            "L'équipe de Sami a peint $\\frac{24}{100}$ du panneau. Les deux fractions ont le dénominateur 100 : on additionne les numérateurs, 67 + 24 = 91.",
+            "Le panneau est peint sur $\\frac{91}{100}$. Il reste $\\frac{9}{100}$ de blanc."
+          ],
+          "hint": "Écris d'abord la part des équipes de Lou et de Nina en centièmes du panneau."
+        },
+        {
+          "key": "q5",
+          "skill_id": "D018",
+          "statement": "La classe voisine a recouvert $\\frac{158}{100}$ de panneau. À quoi cela correspond-il ?",
+          "type": "qcm",
+          "choices": [
+            {
+              "key": "a",
+              "text": "1 panneau entier, 5 bandes et 8 carreaux",
+              "misconception": null
+            },
+            {
+              "key": "b",
+              "text": "15 panneaux entiers et 8 carreaux",
+              "misconception": "L'élève coupe 158 en 15 et 8. Or 15 panneaux font 1 500 carreaux, bien plus que 158 carreaux."
+            },
+            {
+              "key": "c",
+              "text": "1 panneau entier et 58 bandes",
+              "misconception": "L'élève oublie qu'une bande vaut 10 carreaux : 58 carreaux font 5 bandes et 8 carreaux, pas 58 bandes."
+            },
+            {
+              "key": "d",
+              "text": "158 bandes",
+              "misconception": "Une bande, c'est un dixième du panneau, pas un centième : 158 centièmes ne font pas 158 bandes."
+            }
+          ],
+          "answer": {
+            "value": "a"
+          },
+          "points": 4,
+          "solution_steps": [
+            "$\\frac{158}{100}$, ce sont 158 centièmes de panneau, soit 158 carreaux.",
+            "Un panneau entier compte 100 carreaux : 158 = 100 + 58. Il y a 1 panneau entier et 58 carreaux.",
+            "58 carreaux, ce sont 5 bandes de 10 carreaux et 8 carreaux : 58 = 50 + 8.",
+            "Donc $\\frac{158}{100} = 1 + \\frac{5}{10} + \\frac{8}{100}$ : **1 panneau entier, 5 bandes et 8 carreaux**."
+          ],
+          "hint": "Combien de carreaux y a-t-il dans un panneau entier ?"
+        }
+      ],
+      "review_status": "brouillon",
+      "programme_ref": "Cycle 3, Cours moyen première année, Les nombres décimaux : « Connaître et utiliser les relations entre unités simples, dixièmes et centièmes »"
+    },
+    {
+      "id": "SX-D019-01",
+      "skill_id": "D019",
+      "skill_ids": [
+        "D019",
+        "A028",
+        "C030"
+      ],
+      "school_level": "CM1",
+      "title": "Le sentier de la forêt",
+      "contexte": "La classe de CM1 part en sortie dans la forêt. Le sentier botanique, long de 4 km, part du parking. À l'entrée, un panneau montre le sentier sous la forme d'une demi-droite graduée en kilomètres : le parking est au 0, et chaque kilomètre est partagé en 10 parts égales.\n\nLa figure reproduit une partie de ce panneau, à partir du kilomètre 1. Les grandes graduations marquent les kilomètres entiers, mais seul le nombre 1 est écrit. Trois points sont marqués : F pour la fontaine, C pour la cabane du garde forestier et B pour la buvette.\n\nLe car repart à 16 h 15. La classe compte 23 élèves, accompagnés de 2 adultes.",
+      "image": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 380 96\" width=\"380\" height=\"96\" font-family=\"system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif\" role=\"img\"><title>Demi-droite graduée avec trois points</title><rect width=\"100%\" height=\"100%\" fill=\"#ffffff\"/><line x1=\"50.0\" y1=\"54.0\" x2=\"352.0\" y2=\"54.0\" stroke=\"#334155\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M352.0,54.0 l-9,-5 v10 z\" fill=\"#334155\"/><line x1=\"20\" y1=\"54\" x2=\"50\" y2=\"54\" stroke=\"#334155\" stroke-width=\"2\" stroke-dasharray=\"4 4\"/><line x1=\"50.0\" y1=\"45.0\" x2=\"50.0\" y2=\"63.0\" stroke=\"#334155\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><line x1=\"64.4\" y1=\"49.0\" x2=\"64.4\" y2=\"59.0\" stroke=\"#334155\" stroke-width=\"1.2\" stroke-linecap=\"round\"/><line x1=\"78.8\" y1=\"49.0\" x2=\"78.8\" y2=\"59.0\" stroke=\"#334155\" stroke-width=\"1.2\" stroke-linecap=\"round\"/><line x1=\"93.2\" y1=\"49.0\" x2=\"93.2\" y2=\"59.0\" stroke=\"#334155\" stroke-width=\"1.2\" stroke-linecap=\"round\"/><line x1=\"107.6\" y1=\"49.0\" x2=\"107.6\" y2=\"59.0\" stroke=\"#334155\" stroke-width=\"1.2\" stroke-linecap=\"round\"/><line x1=\"122.0\" y1=\"49.0\" x2=\"122.0\" y2=\"59.0\" stroke=\"#334155\" stroke-width=\"1.2\" stroke-linecap=\"round\"/><line x1=\"136.4\" y1=\"49.0\" x2=\"136.4\" y2=\"59.0\" stroke=\"#334155\" stroke-width=\"1.2\" stroke-linecap=\"round\"/><line x1=\"150.8\" y1=\"49.0\" x2=\"150.8\" y2=\"59.0\" stroke=\"#334155\" stroke-width=\"1.2\" stroke-linecap=\"round\"/><line x1=\"165.2\" y1=\"49.0\" x2=\"165.2\" y2=\"59.0\" stroke=\"#334155\" stroke-width=\"1.2\" stroke-linecap=\"round\"/><line x1=\"179.6\" y1=\"49.0\" x2=\"179.6\" y2=\"59.0\" stroke=\"#334155\" stroke-width=\"1.2\" stroke-linecap=\"round\"/><line x1=\"194.0\" y1=\"45.0\" x2=\"194.0\" y2=\"63.0\" stroke=\"#334155\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><line x1=\"208.4\" y1=\"49.0\" x2=\"208.4\" y2=\"59.0\" stroke=\"#334155\" stroke-width=\"1.2\" stroke-linecap=\"round\"/><line x1=\"222.8\" y1=\"49.0\" x2=\"222.8\" y2=\"59.0\" stroke=\"#334155\" stroke-width=\"1.2\" stroke-linecap=\"round\"/><line x1=\"237.2\" y1=\"49.0\" x2=\"237.2\" y2=\"59.0\" stroke=\"#334155\" stroke-width=\"1.2\" stroke-linecap=\"round\"/><line x1=\"251.6\" y1=\"49.0\" x2=\"251.6\" y2=\"59.0\" stroke=\"#334155\" stroke-width=\"1.2\" stroke-linecap=\"round\"/><line x1=\"266.0\" y1=\"49.0\" x2=\"266.0\" y2=\"59.0\" stroke=\"#334155\" stroke-width=\"1.2\" stroke-linecap=\"round\"/><line x1=\"280.4\" y1=\"49.0\" x2=\"280.4\" y2=\"59.0\" stroke=\"#334155\" stroke-width=\"1.2\" stroke-linecap=\"round\"/><line x1=\"294.8\" y1=\"49.0\" x2=\"294.8\" y2=\"59.0\" stroke=\"#334155\" stroke-width=\"1.2\" stroke-linecap=\"round\"/><line x1=\"309.2\" y1=\"49.0\" x2=\"309.2\" y2=\"59.0\" stroke=\"#334155\" stroke-width=\"1.2\" stroke-linecap=\"round\"/><line x1=\"323.6\" y1=\"49.0\" x2=\"323.6\" y2=\"59.0\" stroke=\"#334155\" stroke-width=\"1.2\" stroke-linecap=\"round\"/><line x1=\"338.0\" y1=\"45.0\" x2=\"338.0\" y2=\"63.0\" stroke=\"#334155\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><text x=\"50.0\" y=\"82.0\" font-size=\"13\" text-anchor=\"middle\" fill=\"#334155\">1</text><circle cx=\"107.6\" cy=\"54.0\" r=\"4.5\" fill=\"#2563eb\"/><text x=\"107.6\" y=\"38.0\" font-size=\"15\" text-anchor=\"middle\" fill=\"#2563eb\" font-weight=\"600\">F</text><circle cx=\"294.8\" cy=\"54.0\" r=\"4.5\" fill=\"#2563eb\"/><text x=\"294.8\" y=\"38.0\" font-size=\"15\" text-anchor=\"middle\" fill=\"#2563eb\" font-weight=\"600\">C</text><circle cx=\"338.0\" cy=\"54.0\" r=\"4.5\" fill=\"#2563eb\"/><text x=\"338.0\" y=\"38.0\" font-size=\"15\" text-anchor=\"middle\" fill=\"#2563eb\" font-weight=\"600\">B</text></svg>",
+      "duree_estimee_min": 15,
+      "questions": [
+        {
+          "key": "q1",
+          "skill_id": "A028",
+          "statement": "À combien de kilomètres du parking se trouve la buvette (point B) ?",
+          "type": "numerique",
+          "answer": {
+            "value": 3,
+            "unit": "km"
+          },
+          "points": 1,
+          "solution_steps": [
+            "Les grandes graduations marquent les kilomètres entiers. La première, où est écrit 1, est à 1 km du parking.",
+            "En avançant de grande graduation en grande graduation : 2, puis 3. Le point B est sur celle de 3.",
+            "La buvette est à **3 km** du parking."
+          ],
+          "hint": "Repère les grandes graduations : chacune marque un kilomètre entier."
+        },
+        {
+          "key": "q2",
+          "skill_id": "D019",
+          "statement": "À quelle distance du parking se trouve la cabane (point C) ? Écris-la avec une virgule, en kilomètres.",
+          "type": "texte",
+          "answer": {
+            "value": "2,7",
+            "accepted": [
+              "2,7 km",
+              "2,70",
+              "2,70 km",
+              "2,7 kilomètres"
+            ]
+          },
+          "points": 2,
+          "solution_steps": [
+            "Chaque kilomètre est partagé en 10 parts égales : une petite graduation vaut un dixième de kilomètre.",
+            "Le point C est 7 petites graduations après la grande graduation 2 : 2 km et 7 dixièmes.",
+            "La cabane est à **2,7 km** du parking."
+          ],
+          "hint": "Que vaut une petite graduation ?"
+        },
+        {
+          "key": "q3",
+          "skill_id": "C030",
+          "statement": "Repère la fontaine (point F) par une fraction décimale de dénominateur 10.",
+          "type": "texte",
+          "answer": {
+            "value": "14/10",
+            "accepted": [
+              "14 / 10",
+              "14/10 km",
+              "14/10 de km"
+            ]
+          },
+          "points": 2,
+          "solution_steps": [
+            "Le point F est 4 petites graduations après 1 : 1 km et 4 dixièmes.",
+            "1 km, ce sont 10 dixièmes : 10 + 4 = 14 dixièmes.",
+            "La fontaine est repérée par $\\frac{14}{10}$."
+          ],
+          "hint": "Combien de dixièmes de kilomètre y a-t-il dans 1 km ?"
+        },
+        {
+          "key": "q4",
+          "skill_id": "D019",
+          "statement": "Un banc, qui n'est pas dessiné, se trouve 12 petites graduations après la grande graduation où est écrit le nombre 1. À quelle distance du parking est-il, en kilomètres ?",
+          "type": "numerique",
+          "answer": {
+            "value": 2.2,
+            "unit": "km"
+          },
+          "points": 3,
+          "solution_steps": [
+            "Une petite graduation vaut un dixième de kilomètre : 12 petites graduations font 12 dixièmes de kilomètre, soit 1 km et 2 dixièmes.",
+            "On part de la grande graduation 1, à 1 km du parking : 1 km plus 1 km et 2 dixièmes, cela fait 2 km et 2 dixièmes.",
+            "Le banc est à **2,2 km** du parking. Vérification de dixième en dixième : 10 petites graduations mènent de 1 à 2, et 2 de plus mènent à 2,2."
+          ],
+          "hint": "Compte de dixième en dixième à partir de la grande graduation 1."
+        },
+        {
+          "key": "q5",
+          "skill_id": "D019",
+          "statement": "Le refuge, qui n'est pas dessiné, se trouve à 2,35 km du parking. Entre quelles graduations de la figure se trouve-t-il, sans aucune autre graduation entre elles ?",
+          "type": "qcm",
+          "choices": [
+            {
+              "key": "a",
+              "text": "Entre 2 et 3",
+              "misconception": "Le refuge est bien entre 2 et 3, mais il y a 9 petites graduations entre elles. On cherche deux graduations sans aucune autre graduation entre elles."
+            },
+            {
+              "key": "b",
+              "text": "Entre 2,3 et 2,4",
+              "misconception": null
+            },
+            {
+              "key": "c",
+              "text": "Entre 2,2 et 2,3",
+              "misconception": "L'élève croit que 2,35 est plus petit que 2,3. Or 2,3 = 2,30, et 35 centièmes, c'est plus que 30 centièmes."
+            }
+          ],
+          "answer": {
+            "value": "b"
+          },
+          "points": 4,
+          "solution_steps": [
+            "2,35 km, c'est 2 km, 3 dixièmes et 5 centièmes.",
+            "2,3 = 2,30 et 2,4 = 2,40 : 2,30 < 2,35 < 2,40.",
+            "Le refuge se trouve **entre les graduations 2,3 et 2,4**, au milieu de ce petit intervalle."
+          ],
+          "hint": "Écris 2,35 km en kilomètres, dixièmes et centièmes."
+        }
+      ],
+      "review_status": "brouillon",
+      "programme_ref": "Cycle 3, Cours moyen première année, Les nombres décimaux : « Placer un nombre décimal en écriture à virgule sur une demi-droite graduée et repérer un point d'une demi-droite graduée par un nombre décimal »"
+    },
+    {
+      "id": "SX-D020-01",
+      "skill_id": "D020",
+      "skill_ids": [
+        "D020",
+        "B041"
+      ],
+      "school_level": "CM1",
+      "title": "La commande de la coopérative",
+      "contexte": "La coopérative de l'école Jean-Moulin commande des fournitures pour les 3 classes du cycle 3, soit 74 élèves. Voici les prix du catalogue :\nun paquet de 10 crayons à papier : 4,80 € ;\nun carton de 10 ramettes de papier : 37,90 € ;\nune gomme : 0,45 € ;\nun cahier : 3 €.\n\nLa directrice commande 40 cahiers, 10 gommes, 1 paquet de crayons et 1 carton de ramettes. Les crayons seront partagés entre les classes, et les ramettes serviront à la photocopieuse. La livraison est prévue le 12 septembre.",
+      "image": null,
+      "duree_estimee_min": 12,
+      "questions": [
+        {
+          "key": "q1",
+          "skill_id": "D020",
+          "statement": "Pour trouver le prix d'une seule ramette de papier, de quelles informations as-tu besoin ?",
+          "type": "qcm",
+          "choices": [
+            {
+              "key": "a",
+              "text": "Le prix du carton (37,90 €) et le nombre d'élèves (74)",
+              "misconception": "Le nombre d'élèves ne dit pas combien de ramettes contient un carton."
+            },
+            {
+              "key": "b",
+              "text": "Le prix du carton (37,90 €) seulement",
+              "misconception": "37,90 € est le prix d'un carton de 10 ramettes, pas d'une seule ramette."
+            },
+            {
+              "key": "c",
+              "text": "Le prix du carton (37,90 €) et le nombre de ramettes dans un carton (10)",
+              "misconception": null
+            }
+          ],
+          "answer": {
+            "value": "c"
+          },
+          "points": 1,
+          "solution_steps": [
+            "Un carton de 10 ramettes coûte 37,90 € : une ramette coûte le dixième de ce prix.",
+            "Il faut **le prix du carton et le nombre de ramettes qu'il contient**. Le nombre d'élèves ne sert pas."
+          ],
+          "hint": "Relis la ligne du catalogue qui parle des ramettes."
+        },
+        {
+          "key": "q2",
+          "skill_id": "B041",
+          "statement": "Combien coûtent les 40 cahiers ?",
+          "type": "numerique",
+          "answer": {
+            "value": 120,
+            "unit": "€",
+            "accepted": [
+              "120 euros"
+            ]
+          },
+          "points": 2,
+          "solution_steps": [
+            "Un cahier coûte 3 €, et la directrice en commande 40 : on calcule 3 × 40.",
+            "3 × 4 = 12, donc 3 × 40 = 120 : 12 dizaines.",
+            "Les 40 cahiers coûtent **120 €**."
+          ],
+          "hint": "Calcule 3 × 4, puis pense aux dizaines."
+        },
+        {
+          "key": "q3",
+          "skill_id": "D020",
+          "statement": "Combien coûtent les 10 gommes ?",
+          "type": "numerique",
+          "answer": {
+            "value": 4.5,
+            "unit": "€",
+            "accepted": [
+              "4,50 €",
+              "4,50 euros",
+              "4 € 50",
+              "4 euros 50",
+              "4€50"
+            ]
+          },
+          "points": 2,
+          "solution_steps": [
+            "On calcule 0,45 × 10.",
+            "Multiplier par 10 : chaque chiffre prend une valeur 10 fois plus grande. Les 4 dixièmes deviennent 4 unités, les 5 centièmes deviennent 5 dixièmes.",
+            "0,45 × 10 = 4,5 : les 10 gommes coûtent **4,50 €**."
+          ],
+          "hint": "Que devient le chiffre des dixièmes quand on multiplie par 10 ?"
+        },
+        {
+          "key": "q4",
+          "skill_id": "D020",
+          "statement": "Combien coûte une ramette de papier ?",
+          "type": "numerique",
+          "answer": {
+            "value": 3.79,
+            "unit": "€",
+            "accepted": [
+              "3,79 €",
+              "3,79 euros",
+              "3 € 79",
+              "3 euros 79",
+              "3€79"
+            ]
+          },
+          "points": 3,
+          "solution_steps": [
+            "Une ramette coûte le dixième du prix du carton : 37,90 ÷ 10.",
+            "Diviser par 10 : les 3 dizaines deviennent 3 unités, les 7 unités deviennent 7 dixièmes, les 9 dixièmes deviennent 9 centièmes.",
+            "37,90 ÷ 10 = 3,79 : une ramette coûte **3,79 €**."
+          ],
+          "hint": "Que devient le chiffre des unités quand on divise par 10 ?"
+        },
+        {
+          "key": "q5",
+          "skill_id": "D020",
+          "statement": "Combien coûte un crayon à papier ?",
+          "type": "numerique",
+          "answer": {
+            "value": 0.48,
+            "unit": "€",
+            "accepted": [
+              "0,48 €",
+              "0,48 euros",
+              "0 € 48",
+              "0 euros 48",
+              "0€48",
+              "48 centimes",
+              "48 c"
+            ]
+          },
+          "points": 4,
+          "solution_steps": [
+            "Un paquet de 10 crayons coûte 4,80 € : un crayon coûte 4,80 ÷ 10.",
+            "Les 4 unités deviennent 4 dixièmes, les 8 dixièmes deviennent 8 centièmes. Il ne reste aucune unité : on écrit 0 au rang des unités.",
+            "4,80 ÷ 10 = 0,48 : un crayon coûte **0,48 €**, soit 48 centimes."
+          ],
+          "hint": "Que devient le chiffre des unités quand on divise par 10 ?"
+        }
+      ],
+      "review_status": "brouillon",
+      "programme_ref": "Cycle 3, Cours moyen première année, Le calcul mental : « Diviser un nombre décimal par 10 »"
+    },
+    {
+      "id": "SX-D021-01",
+      "skill_id": "D021",
+      "skill_ids": [
+        "D021",
+        "B007"
+      ],
+      "school_level": "CM1",
+      "title": "Deux jours de randonnée dans le Vercors",
+      "contexte": "Le club de randonnée de Mathis organise une sortie de 2 jours dans le Vercors, avec 8 randonneurs et une guide. Le minibus part à 7 h 30 devant la mairie. La guide apporte son propre matériel et sa propre nourriture.\n\nPour chaque randonneur, il faut prévoir :\n1,75 L d'eau par jour ;\nla location d'une paire de raquettes, à 26 € pour les 2 jours ;\nun sac de couchage de 1,38 kg.\n\nPour le pique-nique du premier jour, le club achète 9 baguettes à 1,15 € l'une. Le sommet visé culmine à 1 989 m.",
+      "image": null,
+      "duree_estimee_min": 15,
+      "questions": [
+        {
+          "key": "q1",
+          "skill_id": "D021",
+          "statement": "Pour calculer la quantité d'eau à prévoir pour le premier jour, par quel nombre faut-il multiplier 1,75 L ?",
+          "type": "qcm",
+          "choices": [
+            {
+              "key": "a",
+              "text": "Par 9",
+              "misconception": "L'élève compte la guide ; or elle apporte son propre matériel."
+            },
+            {
+              "key": "b",
+              "text": "Par 2",
+              "misconception": "2, c'est le nombre de jours : la question porte sur le premier jour seulement."
+            },
+            {
+              "key": "c",
+              "text": "Par 8",
+              "misconception": null
+            }
+          ],
+          "answer": {
+            "value": "c"
+          },
+          "points": 1,
+          "solution_steps": [
+            "Il faut 1,75 L par randonneur et par jour. La guide apporte son propre matériel : elle ne compte pas.",
+            "Pour le premier jour, on multiplie 1,75 L par le nombre de randonneurs : **8**."
+          ],
+          "hint": "Relis la phrase qui parle de la guide."
+        },
+        {
+          "key": "q2",
+          "skill_id": "B007",
+          "statement": "Combien coûte la location des raquettes pour tous les randonneurs ?",
+          "type": "numerique",
+          "answer": {
+            "value": 208,
+            "unit": "€",
+            "accepted": [
+              "208 euros"
+            ]
+          },
+          "points": 2,
+          "solution_steps": [
+            "Chaque randonneur loue des raquettes à 26 € pour les 2 jours : on calcule 26 × 8.",
+            "6 × 8 = 48 : on écrit 8 et on retient 4. 2 × 8 = 16, et 16 + 4 = 20.",
+            "26 × 8 = 208 : la location coûte **208 €**."
+          ],
+          "hint": "Le prix de 26 € vaut déjà pour les 2 jours."
+        },
+        {
+          "key": "q3",
+          "skill_id": "D021",
+          "statement": "Quelle quantité d'eau faut-il prévoir pour le premier jour ?",
+          "type": "numerique",
+          "answer": {
+            "value": 14,
+            "unit": "L"
+          },
+          "points": 3,
+          "solution_steps": [
+            "On calcule d'abord sans la virgule : 175 × 8 = 1 400.",
+            "1,75, ce sont 175 centièmes : le produit compte 1 400 centièmes, soit 14,00.",
+            "1,75 × 8 = 14 : il faut **14 L** d'eau pour le premier jour."
+          ],
+          "hint": "Calcule comme si 1,75 n'avait pas de virgule, puis pense aux centièmes."
+        },
+        {
+          "key": "q4",
+          "skill_id": "D021",
+          "statement": "Combien coûtent les 9 baguettes ?",
+          "type": "numerique",
+          "answer": {
+            "value": 10.35,
+            "unit": "€",
+            "accepted": [
+              "10,35 €",
+              "10,35 euros",
+              "10 € 35",
+              "10 euros 35",
+              "10€35"
+            ]
+          },
+          "points": 2,
+          "solution_steps": [
+            "Sans la virgule : 115 × 9 = 1 035.",
+            "1,15, ce sont 115 centièmes : le produit compte 1 035 centièmes, soit 10,35.",
+            "Les 9 baguettes coûtent **10,35 €**."
+          ],
+          "hint": "Calcule comme avec des entiers, puis place la virgule."
+        },
+        {
+          "key": "q5",
+          "skill_id": "D021",
+          "statement": "Quelle est la masse totale des sacs de couchage des randonneurs ?",
+          "type": "numerique",
+          "answer": {
+            "value": 11.04,
+            "unit": "kg"
+          },
+          "points": 4,
+          "solution_steps": [
+            "Sans la virgule : 138 × 8 = 1 104.",
+            "1,38, ce sont 138 centièmes : le produit compte 1 104 centièmes, soit 11,04.",
+            "Les sacs de couchage pèsent **11,04 kg** en tout. Attention : 1 104 centièmes ne s'écrivent pas 11,4 ; le 0 garde la place des dixièmes."
+          ],
+          "hint": "Combien de centièmes de kilogramme pèse un sac de couchage ?"
+        }
+      ],
+      "review_status": "brouillon",
+      "programme_ref": "Cycle 3, Cours moyen première année, Les quatre opérations : « Poser et effectuer des multiplications d'un nombre décimal par un nombre entier inférieur à 10 »"
+    },
+    {
+      "id": "SX-D022-01",
+      "skill_id": "D022",
+      "skill_ids": [
+        "D022",
+        "C006"
+      ],
+      "school_level": "CM2",
+      "title": "Les bébés de la maternité",
+      "contexte": "Cette nuit, quatre bébés sont nés à la maternité de la ville. La sage-femme a noté leurs masses, en kilogrammes, de façons différentes :\nLéa : 3 unités et 205 millièmes ;\nNoah : 3,25 ;\nInès : $3 + \\frac{4}{10} + \\frac{7}{1000}$ ;\nMalik : 2,986.\n\nRappel : 1 gramme, c'est un millième de kilogramme. En France, un bébé pèse en moyenne 3,3 kg à la naissance.\n\nLa maternité compte 24 chambres. Les visites commencent à 14 heures, et le papa de Malik est arrivé le premier. Les quatre bébés et leurs mamans se portent bien.",
+      "image": null,
+      "duree_estimee_min": 15,
+      "questions": [
+        {
+          "key": "q1",
+          "skill_id": "D022",
+          "statement": "Dans la masse de Malik, quel est le chiffre des millièmes ?",
+          "type": "qcm",
+          "choices": [
+            {
+              "key": "a",
+              "text": "9",
+              "misconception": "9 est le chiffre des dixièmes, juste après la virgule."
+            },
+            {
+              "key": "b",
+              "text": "6",
+              "misconception": null
+            },
+            {
+              "key": "c",
+              "text": "8",
+              "misconception": "8 est le chiffre des centièmes, le deuxième après la virgule."
+            },
+            {
+              "key": "d",
+              "text": "2",
+              "misconception": "2 est le chiffre des unités, avant la virgule."
+            }
+          ],
+          "answer": {
+            "value": "b"
+          },
+          "points": 1,
+          "solution_steps": [
+            "2,986 : 2 unités, 9 dixièmes, 8 centièmes et 6 millièmes.",
+            "Le chiffre des millièmes est **6**, le troisième après la virgule."
+          ],
+          "hint": "Après la virgule viennent les dixièmes, puis les centièmes, puis les millièmes."
+        },
+        {
+          "key": "q2",
+          "skill_id": "D022",
+          "statement": "Écris la masse de Léa avec une virgule, en kilogrammes.",
+          "type": "texte",
+          "answer": {
+            "value": "3,205",
+            "accepted": [
+              "3,205 kg",
+              "3,205 kilogrammes",
+              "3,2050",
+              "3,2050 kg"
+            ]
+          },
+          "points": 2,
+          "solution_steps": [
+            "1 dixième = 100 millièmes et 1 centième = 10 millièmes : 205 millièmes, ce sont 2 dixièmes, 0 centième et 5 millièmes.",
+            "Les millièmes occupent le troisième rang après la virgule.",
+            "La masse de Léa s'écrit **3,205 kg**."
+          ],
+          "hint": "Combien de chiffres faut-il après la virgule pour écrire des millièmes ?"
+        },
+        {
+          "key": "q3",
+          "skill_id": "C006",
+          "statement": "La masse de Noah s'écrit aussi $3 + \\frac{25}{100}$ kg. Écris $\\frac{25}{100}$ sous la forme d'une fraction égale de dénominateur 1 000.",
+          "type": "texte",
+          "answer": {
+            "value": "250/1000",
+            "accepted": [
+              "250 / 1000",
+              "250/1 000",
+              "250 / 1 000"
+            ]
+          },
+          "points": 2,
+          "solution_steps": [
+            "Pour passer du dénominateur 100 au dénominateur 1 000, on multiplie par 10.",
+            "On multiplie aussi le numérateur par 10 : 25 × 10 = 250.",
+            "$\\frac{25}{100} = \\frac{250}{1000}$ : 25 centièmes, ce sont 250 millièmes."
+          ],
+          "hint": "Par quel nombre faut-il multiplier 100 pour obtenir 1 000 ?"
+        },
+        {
+          "key": "q4",
+          "skill_id": "D022",
+          "statement": "Écris la masse d'Inès avec une virgule, en kilogrammes.",
+          "type": "texte",
+          "answer": {
+            "value": "3,407",
+            "accepted": [
+              "3,407 kg",
+              "3,407 kilogrammes",
+              "3,4070",
+              "3,4070 kg"
+            ]
+          },
+          "points": 3,
+          "solution_steps": [
+            "Inès : 3 unités, 4 dixièmes, 0 centième et 7 millièmes.",
+            "Il n'y a aucun centième : on écrit 0 pour garder sa place.",
+            "La masse d'Inès s'écrit **3,407 kg**. Attention : 3,47 kg voudrait dire 7 centièmes, pas 7 millièmes."
+          ],
+          "hint": "Combien de centièmes y a-t-il dans la masse d'Inès ?"
+        },
+        {
+          "key": "q5",
+          "skill_id": "D022",
+          "statement": "Range les quatre bébés du plus léger au plus lourd.",
+          "type": "qcm",
+          "choices": [
+            {
+              "key": "a",
+              "text": "Malik, Noah, Léa, Inès",
+              "misconception": "L'élève compare les chiffres après la virgule comme des entiers (25, 205, 407). Or 3,25 = 3,250 : 250 millièmes, c'est plus que 205 millièmes."
+            },
+            {
+              "key": "b",
+              "text": "Noah, Léa, Inès, Malik",
+              "misconception": "L'élève oublie les parties entières et ne compare que ce qui est écrit après la virgule (25, 205, 407, 986)."
+            },
+            {
+              "key": "c",
+              "text": "Inès, Noah, Léa, Malik",
+              "misconception": "C'est le rangement du plus lourd au plus léger : l'ordre est inversé."
+            },
+            {
+              "key": "d",
+              "text": "Malik, Léa, Noah, Inès",
+              "misconception": null
+            }
+          ],
+          "answer": {
+            "value": "d"
+          },
+          "points": 4,
+          "solution_steps": [
+            "Malik a pour partie entière 2 : il est le plus léger. Les trois autres ont pour partie entière 3.",
+            "On écrit les trois masses avec trois chiffres après la virgule : Léa 3,205 ; Noah 3,250 ; Inès 3,407.",
+            "205 millièmes < 250 millièmes < 407 millièmes : du plus léger au plus lourd, **Malik, Léa, Noah, Inès**."
+          ],
+          "hint": "Écris toutes les masses avec une virgule et trois chiffres après la virgule."
+        }
+      ],
+      "review_status": "brouillon",
+      "programme_ref": "Cycle 3, Cours moyen deuxième année, Les nombres décimaux : « Connaître et utiliser les relations entre unités simples, dixièmes, centièmes et millièmes »"
+    },
+    {
+      "id": "SX-D023-01",
+      "skill_id": "D023",
+      "skill_ids": [
+        "D023",
+        "B041"
+      ],
+      "school_level": "CM2",
+      "title": "Le 14 Juillet au village",
+      "contexte": "Le comité des fêtes du village prépare le 14 Juillet. Il attend environ 2 500 personnes, et le feu d'artifice durera 18 minutes.\n\nVoici ses dépenses et ses recettes :\nil achète 1 000 gobelets réutilisables, à 0,35 € l'un ;\nil loue 100 chaises, à 6 € l'une ;\nil vend 100 tickets de tombola, tous au même prix, qui lui rapportent en tout 150 € ;\nil achète 1 000 bracelets lumineux identiques pour les enfants, pour 380 € en tout.\n\nLes gobelets seront lavés et resservis l'an prochain.",
+      "image": null,
+      "duree_estimee_min": 12,
+      "questions": [
+        {
+          "key": "q1",
+          "skill_id": "D023",
+          "statement": "Quel calcul donne le prix d'un ticket de tombola ?",
+          "type": "qcm",
+          "choices": [
+            {
+              "key": "a",
+              "text": "150 ÷ 100",
+              "misconception": null
+            },
+            {
+              "key": "b",
+              "text": "150 × 100",
+              "misconception": "L'élève multiplie : un ticket coûterait 15 000 €, c'est absurde. Les 150 € sont rapportés par les 100 tickets ensemble."
+            },
+            {
+              "key": "c",
+              "text": "2 500 ÷ 100",
+              "misconception": "Le nombre de personnes attendues ne dit rien du prix d'un ticket."
+            }
+          ],
+          "answer": {
+            "value": "a"
+          },
+          "points": 1,
+          "solution_steps": [
+            "Les 100 tickets rapportent 150 € en tout, et ils ont tous le même prix : un ticket rapporte le centième de 150 €.",
+            "On calcule **150 ÷ 100**. Le nombre de personnes attendues ne sert pas."
+          ],
+          "hint": "Combien de tickets ont rapporté les 150 € ?"
+        },
+        {
+          "key": "q2",
+          "skill_id": "B041",
+          "statement": "Combien coûte la location des chaises ?",
+          "type": "numerique",
+          "answer": {
+            "value": 600,
+            "unit": "€",
+            "accepted": [
+              "600 euros"
+            ]
+          },
+          "points": 2,
+          "solution_steps": [
+            "100 chaises à 6 € l'une : 6 × 100 = 600.",
+            "Les 6 unités deviennent 6 centaines. La location coûte **600 €**."
+          ],
+          "hint": "Que devient le chiffre des unités quand on multiplie par 100 ?"
+        },
+        {
+          "key": "q3",
+          "skill_id": "D023",
+          "statement": "Combien coûtent les 1 000 gobelets ?",
+          "type": "numerique",
+          "answer": {
+            "value": 350,
+            "unit": "€",
+            "accepted": [
+              "350 euros"
+            ]
+          },
+          "points": 2,
+          "solution_steps": [
+            "On calcule 0,35 × 1 000.",
+            "Multiplier par 1 000 : les 3 dixièmes deviennent 3 centaines, les 5 centièmes deviennent 5 dizaines.",
+            "Le rang des unités est vide : on le complète par un zéro. 0,35 × 1 000 = 350 : les gobelets coûtent **350 €**."
+          ],
+          "hint": "Que devient le chiffre des dixièmes quand on multiplie par 1 000 ?"
+        },
+        {
+          "key": "q4",
+          "skill_id": "D023",
+          "statement": "Combien rapporte un ticket de tombola ?",
+          "type": "numerique",
+          "answer": {
+            "value": 1.5,
+            "unit": "€",
+            "accepted": [
+              "1,50 €",
+              "1,50 euros",
+              "1 € 50",
+              "1 euros 50",
+              "1€50"
+            ]
+          },
+          "points": 3,
+          "solution_steps": [
+            "On calcule 150 ÷ 100.",
+            "Diviser par 100 : la centaine devient une unité, les 5 dizaines deviennent 5 dixièmes.",
+            "150 ÷ 100 = 1,5 : un ticket rapporte **1,50 €**."
+          ],
+          "hint": "Que devient le chiffre des centaines quand on divise par 100 ?"
+        },
+        {
+          "key": "q5",
+          "skill_id": "D023",
+          "statement": "Combien coûte un bracelet lumineux ?",
+          "type": "numerique",
+          "answer": {
+            "value": 0.38,
+            "unit": "€",
+            "accepted": [
+              "0,38 €",
+              "0,38 euros",
+              "0 € 38",
+              "0 euros 38",
+              "0€38",
+              "38 centimes",
+              "38 c"
+            ]
+          },
+          "points": 4,
+          "solution_steps": [
+            "Les 1 000 bracelets coûtent 380 € : un bracelet coûte 380 ÷ 1 000.",
+            "Diviser par 1 000 : les 3 centaines deviennent 3 dixièmes, les 8 dizaines deviennent 8 centièmes.",
+            "Il ne reste aucune unité : on écrit 0 au rang des unités. 380 ÷ 1 000 = 0,38 : un bracelet coûte **0,38 €**, soit 38 centimes."
+          ],
+          "hint": "Que devient le chiffre des centaines quand on divise par 1 000 ?"
+        }
+      ],
+      "review_status": "brouillon",
+      "programme_ref": "Cycle 3, Cours moyen deuxième année, Le calcul mental : « Diviser un nombre décimal par 10, 100 ou 1 000 »"
+    },
+    {
+      "id": "SX-D024-01",
+      "skill_id": "D024",
+      "skill_ids": [
+        "D024",
+        "D021",
+        "B008"
+      ],
+      "school_level": "CM2",
+      "title": "La classe de mer de Mme Diallo",
+      "contexte": "Les trois classes de CM2 de l'école, 74 élèves en tout, partent en classe de mer sur une île. La classe de Mme Diallo compte 26 élèves ; elle part avec 2 accompagnateurs.\n\nPour la classe de Mme Diallo :\nle billet de bateau coûte 14,65 € par élève, et les accompagnateurs voyagent gratuitement ;\nau restaurant, les tables ont 6 places, et les 26 élèves et les 2 accompagnateurs mangent ensemble ;\nsur l'île, le car fait 3 trajets de 18,75 km ;\nchaque élève reçoit un kit de pêche à pied de 0,375 kg.\n\nLe bateau met 30 minutes pour rejoindre l'île.",
+      "image": null,
+      "duree_estimee_min": 15,
+      "questions": [
+        {
+          "key": "q1",
+          "skill_id": "D024",
+          "statement": "Combien de billets de bateau Mme Diallo doit-elle payer ?",
+          "type": "qcm",
+          "choices": [
+            {
+              "key": "a",
+              "text": "74",
+              "misconception": "74 est le nombre d'élèves des trois classes ; la question porte sur la seule classe de Mme Diallo."
+            },
+            {
+              "key": "b",
+              "text": "28",
+              "misconception": "L'élève compte les 2 accompagnateurs ; or ils voyagent gratuitement."
+            },
+            {
+              "key": "c",
+              "text": "26",
+              "misconception": null
+            }
+          ],
+          "answer": {
+            "value": "c"
+          },
+          "points": 1,
+          "solution_steps": [
+            "Seuls les élèves paient leur billet : les accompagnateurs voyagent gratuitement.",
+            "La classe de Mme Diallo compte 26 élèves : il faut payer **26 billets**."
+          ],
+          "hint": "Relis la phrase qui parle des accompagnateurs."
+        },
+        {
+          "key": "q2",
+          "skill_id": "B008",
+          "statement": "Combien de tables faut-il au minimum au restaurant ?",
+          "type": "numerique",
+          "answer": {
+            "value": 5,
+            "unit": "tables"
+          },
+          "points": 2,
+          "solution_steps": [
+            "Il y a 26 + 2 = 28 personnes, et 6 places par table : division euclidienne de 28 par 6.",
+            "28 = 6 × 4 + 4 : 4 tables complètes, et il reste 4 personnes.",
+            "Il faut une table de plus pour elles : **5 tables** au minimum."
+          ],
+          "hint": "Que fais-tu des personnes qui restent après les tables complètes ?"
+        },
+        {
+          "key": "q3",
+          "skill_id": "D021",
+          "statement": "Quelle distance le car parcourt-il en tout ?",
+          "type": "numerique",
+          "answer": {
+            "value": 56.25,
+            "unit": "km"
+          },
+          "points": 2,
+          "solution_steps": [
+            "Sans la virgule : 1 875 × 3 = 5 625.",
+            "18,75, ce sont 1 875 centièmes : le produit compte 5 625 centièmes, soit 56,25.",
+            "Le car parcourt **56,25 km**."
+          ],
+          "hint": "Calcule comme avec des entiers, puis place la virgule."
+        },
+        {
+          "key": "q4",
+          "skill_id": "D024",
+          "statement": "Combien coûtent les billets de bateau de la classe ?",
+          "type": "numerique",
+          "answer": {
+            "value": 380.9,
+            "unit": "€",
+            "accepted": [
+              "380,90 €",
+              "380,90 euros",
+              "380 € 90",
+              "380 euros 90",
+              "380€90"
+            ]
+          },
+          "points": 3,
+          "solution_steps": [
+            "On pose 1 465 × 26 : 1 465 × 6 = 8 790 et 1 465 × 20 = 29 300.",
+            "8 790 + 29 300 = 38 090.",
+            "14,65, ce sont 1 465 centièmes : le produit compte 38 090 centièmes, soit 380,90.",
+            "Les billets coûtent **380,90 €**. Contrôle : 15 × 26 = 390, le résultat est plausible."
+          ],
+          "hint": "Pose la multiplication sans la virgule, puis place-la."
+        },
+        {
+          "key": "q5",
+          "skill_id": "D024",
+          "statement": "Quelle est la masse totale des kits de pêche à pied de la classe ?",
+          "type": "numerique",
+          "answer": {
+            "value": 9.75,
+            "unit": "kg"
+          },
+          "points": 4,
+          "solution_steps": [
+            "On pose 375 × 26 : 375 × 6 = 2 250 et 375 × 20 = 7 500.",
+            "2 250 + 7 500 = 9 750.",
+            "0,375, ce sont 375 millièmes : le produit compte 9 750 millièmes, soit 9,750 = 9,75.",
+            "Les kits pèsent **9,75 kg** en tout. Contrôle : un kit pèse moins de 0,5 kg, et 0,5 × 26 = 13 ; 9,75 kg est plausible."
+          ],
+          "hint": "Combien de millièmes de kilogramme pèse un kit ?"
+        }
+      ],
+      "review_status": "brouillon",
+      "programme_ref": "Cycle 3, Cours moyen deuxième année, Les quatre opérations : « Poser et effectuer la multiplication d'un nombre décimal par un nombre entier »"
+    },
+    {
+      "id": "SX-D025-01",
+      "skill_id": "D025",
+      "skill_ids": [
+        "D025",
+        "D023",
+        "B041"
+      ],
+      "school_level": "6e",
+      "title": "L'atelier bijoux du marché de Noël",
+      "contexte": "Pour le marché de Noël du collège, le 12 décembre à 17 h, les 28 élèves de 6e B fabriquent des colliers et des bracelets.\n\nVoici ce qu'ils savent du matériel :\nune perle en bois pèse 0,1 g ;\nune paillette dorée pèse 0,001 g ;\nle fil élastique coûte 0,01 € le centimètre ;\nun sachet de 100 perles en verre identiques pèse 72,5 g.\n\nInès fabrique 8 colliers de 30 perles en bois chacun. Pour tous les bracelets de la classe, il faut en tout 2 350 cm de fil élastique et 4 600 paillettes.\n\nLes bijoux seront vendus 4 € pièce.",
+      "image": null,
+      "duree_estimee_min": 15,
+      "questions": [
+        {
+          "key": "q1",
+          "skill_id": "B041",
+          "statement": "Combien de perles en bois Inès utilise-t-elle en tout ?",
+          "type": "numerique",
+          "answer": {
+            "value": 240,
+            "unit": "perles"
+          },
+          "points": 1,
+          "solution_steps": [
+            "Inès fabrique 8 colliers de 30 perles : on calcule 8 × 30.",
+            "8 × 3 = 24, donc 8 × 30 = 240 : 24 dizaines. Inès utilise **240 perles** en bois."
+          ],
+          "hint": "Calcule 8 × 3, puis pense aux dizaines."
+        },
+        {
+          "key": "q2",
+          "skill_id": "D023",
+          "statement": "Quelle est la masse d'une perle en verre ?",
+          "type": "numerique",
+          "answer": {
+            "value": 0.725,
+            "unit": "g"
+          },
+          "points": 2,
+          "solution_steps": [
+            "Un sachet de 100 perles identiques pèse 72,5 g : une perle pèse 72,5 ÷ 100.",
+            "Diviser par 100 : les 7 dizaines deviennent 7 dixièmes, les 2 unités deviennent 2 centièmes, les 5 dixièmes deviennent 5 millièmes.",
+            "Il ne reste aucune unité : on écrit 0 au rang des unités. 72,5 ÷ 100 = 0,725 : une perle en verre pèse **0,725 g**."
+          ],
+          "hint": "Que devient le chiffre des dizaines quand on divise par 100 ?"
+        },
+        {
+          "key": "q3",
+          "skill_id": "D025",
+          "statement": "Combien coûte le fil élastique de tous les bracelets ?",
+          "type": "numerique",
+          "answer": {
+            "value": 23.5,
+            "unit": "€",
+            "accepted": [
+              "23,50 €",
+              "23,50 euros",
+              "23 € 50",
+              "23 euros 50",
+              "23€50"
+            ]
+          },
+          "points": 3,
+          "solution_steps": [
+            "Le fil coûte 0,01 € le centimètre, et il en faut 2 350 cm : on calcule 2 350 × 0,01.",
+            "Multiplier par 0,01, c'est prendre un centième, donc diviser par 100.",
+            "2 350 ÷ 100 = 23,5 : le fil coûte **23,50 €**."
+          ],
+          "hint": "Multiplier par 0,01, c'est prendre une certaine fraction du nombre : laquelle ?"
+        },
+        {
+          "key": "q4",
+          "skill_id": "D025",
+          "statement": "Quelle est la masse des 4 600 paillettes ?",
+          "type": "numerique",
+          "answer": {
+            "value": 4.6,
+            "unit": "g"
+          },
+          "points": 4,
+          "solution_steps": [
+            "On calcule 4 600 × 0,001.",
+            "Multiplier par 0,001, c'est prendre un millième, donc diviser par 1 000.",
+            "4 600 ÷ 1 000 = 4,6 : les paillettes pèsent **4,6 g**.",
+            "Contrôle : multiplier par un nombre plus petit que 1 donne un résultat plus petit que 4 600."
+          ],
+          "hint": "0,001, c'est un millième."
+        },
+        {
+          "key": "q5",
+          "skill_id": "D025",
+          "statement": "Un collier d'Inès compte 30 perles en bois : il en contient $30 \\times 0{,}1$ g. Lequel de ces calculs donne le même résultat ?",
+          "type": "qcm",
+          "choices": [
+            {
+              "key": "a",
+              "text": "$30 \\times 10$",
+              "misconception": "L'élève confond multiplier par 0,1 et multiplier par 10. Or 0,1 est plus petit que 1 : le résultat est plus petit que 30."
+            },
+            {
+              "key": "b",
+              "text": "$30 \\div 100$",
+              "misconception": "0,1 est un dixième, pas un centième : on divise par 10, pas par 100."
+            },
+            {
+              "key": "c",
+              "text": "$30 \\div 10$",
+              "misconception": null
+            },
+            {
+              "key": "d",
+              "text": "$30 + 0{,}1$",
+              "misconception": "L'élève remplace la multiplication par une addition. Or on répète 30 fois la masse d'une perle."
+            }
+          ],
+          "answer": {
+            "value": "c"
+          },
+          "points": 3,
+          "solution_steps": [
+            "0,1 = $\\frac{1}{10}$ : multiplier par 0,1, c'est prendre un dixième.",
+            "Donc $30 \\times 0{,}1 = 30 \\div 10 = 3$ : le bon calcul est **$30 \\div 10$**, et un collier contient 3 g de perles en bois."
+          ],
+          "hint": "Multiplier par 0,1, c'est prendre une certaine fraction du nombre : laquelle ?"
+        }
+      ],
+      "review_status": "brouillon",
+      "programme_ref": "Cycle 3, classe de 6e, Les nombres entiers et décimaux : « Multiplier un nombre entier ou un nombre décimal par 0,1, par 0,01, et par 0,001 »"
+    },
+    {
+      "id": "SX-D026-01",
+      "skill_id": "D026",
+      "skill_ids": [
+        "D026",
+        "B040",
+        "D007"
+      ],
+      "school_level": "5e",
+      "title": "Le jus de pomme du club nature",
+      "contexte": "Le club nature du collège, qui compte 21 élèves, récolte les pommes du verger. Cette année, les élèves ont cueilli 456 pommes, rangées dans des cagettes de 24 pommes chacune, toutes pleines.\n\nIls pressent une partie des pommes et obtiennent 37,8 L de jus. Ils le versent dans des bouteilles de 0,75 L ; le jus qui reste après la dernière bouteille pleine est bu au goûter.\n\nIls ont acheté 6 rouleaux d'étiquettes identiques pour 13,80 € en tout. Un rouleau mesure 9 m, et chaque étiquette occupe 0,12 m de rouleau.\n\nLe pressoir a été prêté par un parent d'élève, et la vente a lieu le samedi 18 octobre.",
+      "image": null,
+      "duree_estimee_min": 18,
+      "questions": [
+        {
+          "key": "q1",
+          "skill_id": "D026",
+          "statement": "Quel calcul donne le nombre de bouteilles que l'on peut remplir avec le jus ?",
+          "type": "qcm",
+          "choices": [
+            {
+              "key": "a",
+              "text": "$37{,}8 \\times 0{,}75$",
+              "misconception": "L'élève multiplie. On cherche combien de fois 0,75 L est contenu dans 37,8 L : c'est une division."
+            },
+            {
+              "key": "b",
+              "text": "$37{,}8 \\div 0{,}75$",
+              "misconception": null
+            },
+            {
+              "key": "c",
+              "text": "$0{,}75 \\div 37{,}8$",
+              "misconception": "L'élève inverse le dividende et le diviseur : le résultat serait plus petit que 1, alors qu'on remplit de nombreuses bouteilles."
+            }
+          ],
+          "answer": {
+            "value": "b"
+          },
+          "points": 1,
+          "solution_steps": [
+            "On cherche combien de bouteilles de 0,75 L on remplit avec 37,8 L : combien de fois 0,75 est contenu dans 37,8.",
+            "C'est une division : $37{,}8 \\div 0{,}75$."
+          ],
+          "hint": "Relis la phrase qui parle des bouteilles."
+        },
+        {
+          "key": "q2",
+          "skill_id": "B040",
+          "statement": "Combien de cagettes les élèves ont-ils remplies ?",
+          "type": "numerique",
+          "answer": {
+            "value": 19,
+            "unit": "cagettes"
+          },
+          "points": 2,
+          "solution_steps": [
+            "456 pommes rangées par 24 : on pose la division euclidienne de 456 par 24.",
+            "24 × 10 = 240 et 24 × 20 = 480 : le quotient est compris entre 10 et 20.",
+            "24 × 19 = 456 : le reste est 0. Les élèves ont rempli **19 cagettes**."
+          ],
+          "hint": "Encadre 456 entre deux multiples de 24."
+        },
+        {
+          "key": "q3",
+          "skill_id": "D007",
+          "statement": "Combien coûte un rouleau d'étiquettes ?",
+          "type": "numerique",
+          "answer": {
+            "value": 2.3,
+            "unit": "€",
+            "accepted": [
+              "2,30 €",
+              "2,30 euros",
+              "2 € 30",
+              "2 euros 30",
+              "2€30"
+            ]
+          },
+          "points": 2,
+          "solution_steps": [
+            "6 rouleaux coûtent 13,80 € : on pose 13,80 ÷ 6, c'est-à-dire 13,8 ÷ 6.",
+            "13 unités : 2 unités chacun (6 × 2 = 12), il reste 1 unité, soit 10 dixièmes ; avec les 8 dixièmes, cela fait 18 dixièmes.",
+            "18 dixièmes : 3 dixièmes chacun (6 × 3 = 18), il reste 0.",
+            "Un rouleau coûte **2,30 €**."
+          ],
+          "hint": "Pose la division de 13,8 par 6."
+        },
+        {
+          "key": "q4",
+          "skill_id": "D026",
+          "statement": "Combien d'étiquettes peut-on découper dans un rouleau ?",
+          "type": "numerique",
+          "answer": {
+            "value": 75,
+            "unit": "étiquettes"
+          },
+          "points": 3,
+          "solution_steps": [
+            "On calcule 9 ÷ 0,12. On multiplie le dividende et le diviseur par 100 pour que le diviseur devienne un entier : 9 ÷ 0,12 = 900 ÷ 12.",
+            "900 ÷ 12 = 75, car 12 × 75 = 900.",
+            "On découpe **75 étiquettes** dans un rouleau. Diviser par 0,12, plus petit que 1, donne bien un résultat plus grand que 9."
+          ],
+          "hint": "Par quel nombre faut-il multiplier 0,12 pour obtenir un entier ?"
+        },
+        {
+          "key": "q5",
+          "skill_id": "D026",
+          "statement": "Combien de bouteilles pleines les élèves remplissent-ils ?",
+          "type": "numerique",
+          "answer": {
+            "value": 50,
+            "unit": "bouteilles"
+          },
+          "points": 4,
+          "solution_steps": [
+            "On calcule 37,8 ÷ 0,75. Le diviseur a deux chiffres après la virgule : on multiplie les deux nombres par 100. 37,8 ÷ 0,75 = 3 780 ÷ 75.",
+            "3 780 = 75 × 50 + 30 : on remplit 50 bouteilles, et il reste 30 centièmes de litre, soit 0,3 L.",
+            "Une bouteille de plus ne serait pas pleine : les élèves remplissent **50 bouteilles**, et 0,3 L de jus est bu au goûter.",
+            "Vérification : 0,75 × 5 = 3,75, donc 50 bouteilles contiennent 3,75 × 10 = 37,5 L, et 37,5 + 0,3 = 37,8."
+          ],
+          "hint": "La dernière bouteille est-elle pleine ?"
+        }
+      ],
+      "review_status": "brouillon",
+      "programme_ref": "Cycle 4, classe de 5e, Nombres et calculs, Opérations, Objectifs d'apprentissage : « Diviser par un nombre décimal. »"
     },
     {
       "id": "SX-P001-01",

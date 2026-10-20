@@ -1,0 +1,136 @@
+{
+  "id": "SX-D007-01",
+  "skill_id": "D007",
+  "skill_ids": [
+    "D007",
+    "D021",
+    "B008"
+  ],
+  "school_level": "CM2",
+  "title": "Le pique-nique au bord de la rivière",
+  "contexte": "Samedi, quatre amis, Léon, Maya, Sami et Jade, pique-niquent au bord de la rivière. Le grand frère de Maya, 17 ans, les accompagne, mais il apporte son propre repas et ne participe pas aux frais.\n\nLes quatre amis ont fait les courses ensemble. Ils ont acheté 3 baguettes à 1,15 € l'une, un melon, des tomates et des jus de fruits. Le ticket de caisse indique un total de 23,40 €. Les quatre amis se partagent ce total en parts égales.\n\nJade a apporté une barquette de 75 fraises, à partager équitablement entre les quatre amis, sans couper de fraise. Les fraises qui restent seront pour le grand frère.\n\nPour un jeu, Sami coupe une corde de 9 m en 8 morceaux de même longueur.",
+  "image": null,
+  "duree_estimee_min": 15,
+  "questions": [
+    {
+      "key": "q1",
+      "skill_id": "D007",
+      "statement": "Entre combien de personnes le total du ticket de caisse est-il partagé ?",
+      "type": "qcm",
+      "choices": [
+        {
+          "key": "a",
+          "text": "5",
+          "misconception": "L'élève compte le grand frère de Maya ; or il ne participe pas aux frais."
+        },
+        {
+          "key": "b",
+          "text": "4",
+          "misconception": null
+        },
+        {
+          "key": "c",
+          "text": "3",
+          "misconception": "L'élève prend le nombre de baguettes, qui ne dit pas combien de personnes paient."
+        }
+      ],
+      "answer": {
+        "value": "b"
+      },
+      "points": 1,
+      "solution_steps": [
+        "Le texte dit : « Les quatre amis se partagent ce total en parts égales. » Le grand frère ne participe pas aux frais.",
+        "Le total est partagé entre **4** personnes."
+      ],
+      "hint": "Relis la phrase qui parle du grand frère de Maya."
+    },
+    {
+      "key": "q2",
+      "skill_id": "D021",
+      "statement": "Combien coûtent les 3 baguettes ?",
+      "type": "numerique",
+      "answer": {
+        "value": 3.45,
+        "unit": "€",
+        "accepted": [
+          "3,45 €",
+          "3,45 euros",
+          "3 € 45",
+          "3 euros 45",
+          "3€45"
+        ]
+      },
+      "points": 2,
+      "solution_steps": [
+        "On calcule 1,15 × 3 comme avec des entiers : 115 × 3 = 345.",
+        "1,15, ce sont 115 centièmes : le produit compte 345 centièmes, soit 3,45.",
+        "Les 3 baguettes coûtent **3,45 €**."
+      ],
+      "hint": "Calcule comme si 1,15 n'avait pas de virgule, puis pense aux centièmes."
+    },
+    {
+      "key": "q3",
+      "skill_id": "B008",
+      "statement": "Combien de fraises chaque ami reçoit-il ?",
+      "type": "numerique",
+      "answer": {
+        "value": 18,
+        "unit": "fraises"
+      },
+      "points": 2,
+      "solution_steps": [
+        "On partage 75 fraises entre 4 amis, sans couper de fraise : division euclidienne de 75 par 4.",
+        "75 = 4 × 18 + 3 : le quotient est 18 et le reste 3.",
+        "Chaque ami reçoit **18 fraises**, et les 3 fraises qui restent sont pour le grand frère."
+      ],
+      "hint": "Pose la division euclidienne de 75 par 4."
+    },
+    {
+      "key": "q4",
+      "skill_id": "D007",
+      "statement": "Combien chaque ami paie-t-il pour les courses ?",
+      "type": "numerique",
+      "answer": {
+        "value": 5.85,
+        "unit": "€",
+        "accepted": [
+          "5,85 €",
+          "5,85 euros",
+          "5 € 85",
+          "5 euros 85",
+          "5€85"
+        ]
+      },
+      "points": 3,
+      "solution_steps": [
+        "On partage 23,40 € en 4 parts égales : on pose 23,40 ÷ 4.",
+        "23 unités : 5 unités chacun (4 × 5 = 20), il reste 3 unités, soit 30 dixièmes. On écrit la virgule au quotient.",
+        "30 + 4 = 34 dixièmes : 8 dixièmes chacun (4 × 8 = 32), il reste 2 dixièmes, soit 20 centièmes.",
+        "20 centièmes : 5 centièmes chacun (4 × 5 = 20), il reste 0.",
+        "Chacun paie **5,85 €**. Vérification : 5,85 × 4 = 23,40."
+      ],
+      "hint": "Quand il reste des unités, change-les en dixièmes et continue le partage."
+    },
+    {
+      "key": "q5",
+      "skill_id": "D007",
+      "statement": "Quelle est la longueur de chaque morceau de corde ?",
+      "type": "numerique",
+      "answer": {
+        "value": 1.125,
+        "unit": "m"
+      },
+      "points": 4,
+      "solution_steps": [
+        "On partage 9 m en 8 : 9 ÷ 8. 9 unités : 1 unité chacun, il reste 1 unité, soit 10 dixièmes.",
+        "10 dixièmes : 1 dixième chacun, il reste 2 dixièmes, soit 20 centièmes.",
+        "20 centièmes : 2 centièmes chacun (8 × 2 = 16), il reste 4 centièmes, soit 40 millièmes.",
+        "40 millièmes : 5 millièmes chacun (8 × 5 = 40), il reste 0.",
+        "Chaque morceau mesure **1,125 m**. Vérification : 1,125 × 8 = 9."
+      ],
+      "hint": "Continue la division après la virgule jusqu'à ce que le reste soit nul."
+    }
+  ],
+  "review_status": "brouillon",
+  "programme_ref": "Cycle 3, Cours moyen deuxième année, Les quatre opérations : « Poser et effectuer des divisions décimales avec un dividende décimal et un diviseur à un chiffre »"
+}

@@ -1,0 +1,157 @@
+{
+  "id": "SX-D022-01",
+  "skill_id": "D022",
+  "skill_ids": [
+    "D022",
+    "C006"
+  ],
+  "school_level": "CM2",
+  "title": "Les bébés de la maternité",
+  "contexte": "Cette nuit, quatre bébés sont nés à la maternité de la ville. La sage-femme a noté leurs masses, en kilogrammes, de façons différentes :\nLéa : 3 unités et 205 millièmes ;\nNoah : 3,25 ;\nInès : $3 + \\frac{4}{10} + \\frac{7}{1000}$ ;\nMalik : 2,986.\n\nRappel : 1 gramme, c'est un millième de kilogramme. En France, un bébé pèse en moyenne 3,3 kg à la naissance.\n\nLa maternité compte 24 chambres. Les visites commencent à 14 heures, et le papa de Malik est arrivé le premier. Les quatre bébés et leurs mamans se portent bien.",
+  "image": null,
+  "duree_estimee_min": 15,
+  "questions": [
+    {
+      "key": "q1",
+      "skill_id": "D022",
+      "statement": "Dans la masse de Malik, quel est le chiffre des millièmes ?",
+      "type": "qcm",
+      "choices": [
+        {
+          "key": "a",
+          "text": "9",
+          "misconception": "9 est le chiffre des dixièmes, juste après la virgule."
+        },
+        {
+          "key": "b",
+          "text": "6",
+          "misconception": null
+        },
+        {
+          "key": "c",
+          "text": "8",
+          "misconception": "8 est le chiffre des centièmes, le deuxième après la virgule."
+        },
+        {
+          "key": "d",
+          "text": "2",
+          "misconception": "2 est le chiffre des unités, avant la virgule."
+        }
+      ],
+      "answer": {
+        "value": "b"
+      },
+      "points": 1,
+      "solution_steps": [
+        "2,986 : 2 unités, 9 dixièmes, 8 centièmes et 6 millièmes.",
+        "Le chiffre des millièmes est **6**, le troisième après la virgule."
+      ],
+      "hint": "Après la virgule viennent les dixièmes, puis les centièmes, puis les millièmes."
+    },
+    {
+      "key": "q2",
+      "skill_id": "D022",
+      "statement": "Écris la masse de Léa avec une virgule, en kilogrammes.",
+      "type": "texte",
+      "answer": {
+        "value": "3,205",
+        "accepted": [
+          "3,205 kg",
+          "3,205 kilogrammes",
+          "3,2050",
+          "3,2050 kg"
+        ]
+      },
+      "points": 2,
+      "solution_steps": [
+        "1 dixième = 100 millièmes et 1 centième = 10 millièmes : 205 millièmes, ce sont 2 dixièmes, 0 centième et 5 millièmes.",
+        "Les millièmes occupent le troisième rang après la virgule.",
+        "La masse de Léa s'écrit **3,205 kg**."
+      ],
+      "hint": "Combien de chiffres faut-il après la virgule pour écrire des millièmes ?"
+    },
+    {
+      "key": "q3",
+      "skill_id": "C006",
+      "statement": "La masse de Noah s'écrit aussi $3 + \\frac{25}{100}$ kg. Écris $\\frac{25}{100}$ sous la forme d'une fraction égale de dénominateur 1 000.",
+      "type": "texte",
+      "answer": {
+        "value": "250/1000",
+        "accepted": [
+          "250 / 1000",
+          "250/1 000",
+          "250 / 1 000"
+        ]
+      },
+      "points": 2,
+      "solution_steps": [
+        "Pour passer du dénominateur 100 au dénominateur 1 000, on multiplie par 10.",
+        "On multiplie aussi le numérateur par 10 : 25 × 10 = 250.",
+        "$\\frac{25}{100} = \\frac{250}{1000}$ : 25 centièmes, ce sont 250 millièmes."
+      ],
+      "hint": "Par quel nombre faut-il multiplier 100 pour obtenir 1 000 ?"
+    },
+    {
+      "key": "q4",
+      "skill_id": "D022",
+      "statement": "Écris la masse d'Inès avec une virgule, en kilogrammes.",
+      "type": "texte",
+      "answer": {
+        "value": "3,407",
+        "accepted": [
+          "3,407 kg",
+          "3,407 kilogrammes",
+          "3,4070",
+          "3,4070 kg"
+        ]
+      },
+      "points": 3,
+      "solution_steps": [
+        "Inès : 3 unités, 4 dixièmes, 0 centième et 7 millièmes.",
+        "Il n'y a aucun centième : on écrit 0 pour garder sa place.",
+        "La masse d'Inès s'écrit **3,407 kg**. Attention : 3,47 kg voudrait dire 7 centièmes, pas 7 millièmes."
+      ],
+      "hint": "Combien de centièmes y a-t-il dans la masse d'Inès ?"
+    },
+    {
+      "key": "q5",
+      "skill_id": "D022",
+      "statement": "Range les quatre bébés du plus léger au plus lourd.",
+      "type": "qcm",
+      "choices": [
+        {
+          "key": "a",
+          "text": "Malik, Noah, Léa, Inès",
+          "misconception": "L'élève compare les chiffres après la virgule comme des entiers (25, 205, 407). Or 3,25 = 3,250 : 250 millièmes, c'est plus que 205 millièmes."
+        },
+        {
+          "key": "b",
+          "text": "Noah, Léa, Inès, Malik",
+          "misconception": "L'élève oublie les parties entières et ne compare que ce qui est écrit après la virgule (25, 205, 407, 986)."
+        },
+        {
+          "key": "c",
+          "text": "Inès, Noah, Léa, Malik",
+          "misconception": "C'est le rangement du plus lourd au plus léger : l'ordre est inversé."
+        },
+        {
+          "key": "d",
+          "text": "Malik, Léa, Noah, Inès",
+          "misconception": null
+        }
+      ],
+      "answer": {
+        "value": "d"
+      },
+      "points": 4,
+      "solution_steps": [
+        "Malik a pour partie entière 2 : il est le plus léger. Les trois autres ont pour partie entière 3.",
+        "On écrit les trois masses avec trois chiffres après la virgule : Léa 3,205 ; Noah 3,250 ; Inès 3,407.",
+        "205 millièmes < 250 millièmes < 407 millièmes : du plus léger au plus lourd, **Malik, Léa, Noah, Inès**."
+      ],
+      "hint": "Écris toutes les masses avec une virgule et trois chiffres après la virgule."
+    }
+  ],
+  "review_status": "brouillon",
+  "programme_ref": "Cycle 3, Cours moyen deuxième année, Les nombres décimaux : « Connaître et utiliser les relations entre unités simples, dixièmes, centièmes et millièmes »"
+}

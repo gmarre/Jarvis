@@ -1,0 +1,127 @@
+{
+  "id": "SX-D024-01",
+  "skill_id": "D024",
+  "skill_ids": [
+    "D024",
+    "D021",
+    "B008"
+  ],
+  "school_level": "CM2",
+  "title": "La classe de mer de Mme Diallo",
+  "contexte": "Les trois classes de CM2 de l'école, 74 élèves en tout, partent en classe de mer sur une île. La classe de Mme Diallo compte 26 élèves ; elle part avec 2 accompagnateurs.\n\nPour la classe de Mme Diallo :\nle billet de bateau coûte 14,65 € par élève, et les accompagnateurs voyagent gratuitement ;\nau restaurant, les tables ont 6 places, et les 26 élèves et les 2 accompagnateurs mangent ensemble ;\nsur l'île, le car fait 3 trajets de 18,75 km ;\nchaque élève reçoit un kit de pêche à pied de 0,375 kg.\n\nLe bateau met 30 minutes pour rejoindre l'île.",
+  "image": null,
+  "duree_estimee_min": 15,
+  "questions": [
+    {
+      "key": "q1",
+      "skill_id": "D024",
+      "statement": "Combien de billets de bateau Mme Diallo doit-elle payer ?",
+      "type": "qcm",
+      "choices": [
+        {
+          "key": "a",
+          "text": "74",
+          "misconception": "74 est le nombre d'élèves des trois classes ; la question porte sur la seule classe de Mme Diallo."
+        },
+        {
+          "key": "b",
+          "text": "28",
+          "misconception": "L'élève compte les 2 accompagnateurs ; or ils voyagent gratuitement."
+        },
+        {
+          "key": "c",
+          "text": "26",
+          "misconception": null
+        }
+      ],
+      "answer": {
+        "value": "c"
+      },
+      "points": 1,
+      "solution_steps": [
+        "Seuls les élèves paient leur billet : les accompagnateurs voyagent gratuitement.",
+        "La classe de Mme Diallo compte 26 élèves : il faut payer **26 billets**."
+      ],
+      "hint": "Relis la phrase qui parle des accompagnateurs."
+    },
+    {
+      "key": "q2",
+      "skill_id": "B008",
+      "statement": "Combien de tables faut-il au minimum au restaurant ?",
+      "type": "numerique",
+      "answer": {
+        "value": 5,
+        "unit": "tables"
+      },
+      "points": 2,
+      "solution_steps": [
+        "Il y a 26 + 2 = 28 personnes, et 6 places par table : division euclidienne de 28 par 6.",
+        "28 = 6 × 4 + 4 : 4 tables complètes, et il reste 4 personnes.",
+        "Il faut une table de plus pour elles : **5 tables** au minimum."
+      ],
+      "hint": "Que fais-tu des personnes qui restent après les tables complètes ?"
+    },
+    {
+      "key": "q3",
+      "skill_id": "D021",
+      "statement": "Quelle distance le car parcourt-il en tout ?",
+      "type": "numerique",
+      "answer": {
+        "value": 56.25,
+        "unit": "km"
+      },
+      "points": 2,
+      "solution_steps": [
+        "Sans la virgule : 1 875 × 3 = 5 625.",
+        "18,75, ce sont 1 875 centièmes : le produit compte 5 625 centièmes, soit 56,25.",
+        "Le car parcourt **56,25 km**."
+      ],
+      "hint": "Calcule comme avec des entiers, puis place la virgule."
+    },
+    {
+      "key": "q4",
+      "skill_id": "D024",
+      "statement": "Combien coûtent les billets de bateau de la classe ?",
+      "type": "numerique",
+      "answer": {
+        "value": 380.9,
+        "unit": "€",
+        "accepted": [
+          "380,90 €",
+          "380,90 euros",
+          "380 € 90",
+          "380 euros 90",
+          "380€90"
+        ]
+      },
+      "points": 3,
+      "solution_steps": [
+        "On pose 1 465 × 26 : 1 465 × 6 = 8 790 et 1 465 × 20 = 29 300.",
+        "8 790 + 29 300 = 38 090.",
+        "14,65, ce sont 1 465 centièmes : le produit compte 38 090 centièmes, soit 380,90.",
+        "Les billets coûtent **380,90 €**. Contrôle : 15 × 26 = 390, le résultat est plausible."
+      ],
+      "hint": "Pose la multiplication sans la virgule, puis place-la."
+    },
+    {
+      "key": "q5",
+      "skill_id": "D024",
+      "statement": "Quelle est la masse totale des kits de pêche à pied de la classe ?",
+      "type": "numerique",
+      "answer": {
+        "value": 9.75,
+        "unit": "kg"
+      },
+      "points": 4,
+      "solution_steps": [
+        "On pose 375 × 26 : 375 × 6 = 2 250 et 375 × 20 = 7 500.",
+        "2 250 + 7 500 = 9 750.",
+        "0,375, ce sont 375 millièmes : le produit compte 9 750 millièmes, soit 9,750 = 9,75.",
+        "Les kits pèsent **9,75 kg** en tout. Contrôle : un kit pèse moins de 0,5 kg, et 0,5 × 26 = 13 ; 9,75 kg est plausible."
+      ],
+      "hint": "Combien de millièmes de kilogramme pèse un kit ?"
+    }
+  ],
+  "review_status": "brouillon",
+  "programme_ref": "Cycle 3, Cours moyen deuxième année, Les quatre opérations : « Poser et effectuer la multiplication d'un nombre décimal par un nombre entier »"
+}

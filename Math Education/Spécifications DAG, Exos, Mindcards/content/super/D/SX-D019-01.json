@@ -1,0 +1,128 @@
+{
+  "id": "SX-D019-01",
+  "skill_id": "D019",
+  "skill_ids": [
+    "D019",
+    "A028",
+    "C030"
+  ],
+  "school_level": "CM1",
+  "title": "Le sentier de la forêt",
+  "contexte": "La classe de CM1 part en sortie dans la forêt. Le sentier botanique, long de 4 km, part du parking. À l'entrée, un panneau montre le sentier sous la forme d'une demi-droite graduée en kilomètres : le parking est au 0, et chaque kilomètre est partagé en 10 parts égales.\n\nLa figure reproduit une partie de ce panneau, à partir du kilomètre 1. Les grandes graduations marquent les kilomètres entiers, mais seul le nombre 1 est écrit. Trois points sont marqués : F pour la fontaine, C pour la cabane du garde forestier et B pour la buvette.\n\nLe car repart à 16 h 15. La classe compte 23 élèves, accompagnés de 2 adultes.",
+  "image": "figures/SX-D019-01",
+  "duree_estimee_min": 15,
+  "questions": [
+    {
+      "key": "q1",
+      "skill_id": "A028",
+      "statement": "À combien de kilomètres du parking se trouve la buvette (point B) ?",
+      "type": "numerique",
+      "answer": {
+        "value": 3,
+        "unit": "km"
+      },
+      "points": 1,
+      "solution_steps": [
+        "Les grandes graduations marquent les kilomètres entiers. La première, où est écrit 1, est à 1 km du parking.",
+        "En avançant de grande graduation en grande graduation : 2, puis 3. Le point B est sur celle de 3.",
+        "La buvette est à **3 km** du parking."
+      ],
+      "hint": "Repère les grandes graduations : chacune marque un kilomètre entier."
+    },
+    {
+      "key": "q2",
+      "skill_id": "D019",
+      "statement": "À quelle distance du parking se trouve la cabane (point C) ? Écris-la avec une virgule, en kilomètres.",
+      "type": "texte",
+      "answer": {
+        "value": "2,7",
+        "accepted": [
+          "2,7 km",
+          "2,70",
+          "2,70 km",
+          "2,7 kilomètres"
+        ]
+      },
+      "points": 2,
+      "solution_steps": [
+        "Chaque kilomètre est partagé en 10 parts égales : une petite graduation vaut un dixième de kilomètre.",
+        "Le point C est 7 petites graduations après la grande graduation 2 : 2 km et 7 dixièmes.",
+        "La cabane est à **2,7 km** du parking."
+      ],
+      "hint": "Que vaut une petite graduation ?"
+    },
+    {
+      "key": "q3",
+      "skill_id": "C030",
+      "statement": "Repère la fontaine (point F) par une fraction décimale de dénominateur 10.",
+      "type": "texte",
+      "answer": {
+        "value": "14/10",
+        "accepted": [
+          "14 / 10",
+          "14/10 km",
+          "14/10 de km"
+        ]
+      },
+      "points": 2,
+      "solution_steps": [
+        "Le point F est 4 petites graduations après 1 : 1 km et 4 dixièmes.",
+        "1 km, ce sont 10 dixièmes : 10 + 4 = 14 dixièmes.",
+        "La fontaine est repérée par $\\frac{14}{10}$."
+      ],
+      "hint": "Combien de dixièmes de kilomètre y a-t-il dans 1 km ?"
+    },
+    {
+      "key": "q4",
+      "skill_id": "D019",
+      "statement": "Un banc, qui n'est pas dessiné, se trouve 12 petites graduations après la grande graduation où est écrit le nombre 1. À quelle distance du parking est-il, en kilomètres ?",
+      "type": "numerique",
+      "answer": {
+        "value": 2.2,
+        "unit": "km"
+      },
+      "points": 3,
+      "solution_steps": [
+        "Une petite graduation vaut un dixième de kilomètre : 12 petites graduations font 12 dixièmes de kilomètre, soit 1 km et 2 dixièmes.",
+        "On part de la grande graduation 1, à 1 km du parking : 1 km plus 1 km et 2 dixièmes, cela fait 2 km et 2 dixièmes.",
+        "Le banc est à **2,2 km** du parking. Vérification de dixième en dixième : 10 petites graduations mènent de 1 à 2, et 2 de plus mènent à 2,2."
+      ],
+      "hint": "Compte de dixième en dixième à partir de la grande graduation 1."
+    },
+    {
+      "key": "q5",
+      "skill_id": "D019",
+      "statement": "Le refuge, qui n'est pas dessiné, se trouve à 2,35 km du parking. Entre quelles graduations de la figure se trouve-t-il, sans aucune autre graduation entre elles ?",
+      "type": "qcm",
+      "choices": [
+        {
+          "key": "a",
+          "text": "Entre 2 et 3",
+          "misconception": "Le refuge est bien entre 2 et 3, mais il y a 9 petites graduations entre elles. On cherche deux graduations sans aucune autre graduation entre elles."
+        },
+        {
+          "key": "b",
+          "text": "Entre 2,3 et 2,4",
+          "misconception": null
+        },
+        {
+          "key": "c",
+          "text": "Entre 2,2 et 2,3",
+          "misconception": "L'élève croit que 2,35 est plus petit que 2,3. Or 2,3 = 2,30, et 35 centièmes, c'est plus que 30 centièmes."
+        }
+      ],
+      "answer": {
+        "value": "b"
+      },
+      "points": 4,
+      "solution_steps": [
+        "2,35 km, c'est 2 km, 3 dixièmes et 5 centièmes.",
+        "2,3 = 2,30 et 2,4 = 2,40 : 2,30 < 2,35 < 2,40.",
+        "Le refuge se trouve **entre les graduations 2,3 et 2,4**, au milieu de ce petit intervalle."
+      ],
+      "hint": "Écris 2,35 km en kilomètres, dixièmes et centièmes."
+    }
+  ],
+  "review_status": "brouillon",
+  "programme_ref": "Cycle 3, Cours moyen première année, Les nombres décimaux : « Placer un nombre décimal en écriture à virgule sur une demi-droite graduée et repérer un point d'une demi-droite graduée par un nombre décimal »"
+}

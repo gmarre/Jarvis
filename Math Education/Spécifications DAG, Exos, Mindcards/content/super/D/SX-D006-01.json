@@ -1,0 +1,141 @@
+{
+  "id": "SX-D006-01",
+  "skill_id": "D006",
+  "skill_ids": [
+    "D006",
+    "B017",
+    "P010"
+  ],
+  "school_level": "6e",
+  "title": "Le nouveau parquet de Camille",
+  "contexte": "Camille, 12 ans, refait le sol de sa chambre avec son père. La chambre est un rectangle de 3,6 m de long et de 2,85 m de large. La hauteur sous plafond est de 2,5 m.\n\nIls choisissent un parquet à 24,50 € le mètre carré. Pour avoir un peu de marge en cas de chutes, ils en achètent 10,5 m².\n\nIls posent aussi des plinthes, de fines planches de bois fixées en bas des murs, tout autour de la pièce, sauf devant la porte, qui mesure 0,8 m de large. Les plinthes coûtent 3,20 € le mètre.\n\nLe magasin de bricolage est à 7 km de chez eux, et la livraison est gratuite le samedi.",
+  "image": null,
+  "duree_estimee_min": 18,
+  "questions": [
+    {
+      "key": "q1",
+      "skill_id": "D006",
+      "statement": "Quelles dimensions faut-il pour calculer l'aire du sol de la chambre ?",
+      "type": "qcm",
+      "choices": [
+        {
+          "key": "a",
+          "text": "3,6 m et 2,85 m",
+          "misconception": null
+        },
+        {
+          "key": "b",
+          "text": "3,6 m et 2,5 m",
+          "misconception": "L'élève prend la hauteur sous plafond : elle sert pour les murs, pas pour le sol."
+        },
+        {
+          "key": "c",
+          "text": "2,85 m et 0,8 m",
+          "misconception": "La largeur de la porte sert pour les plinthes, pas pour l'aire du sol."
+        }
+      ],
+      "answer": {
+        "value": "a"
+      },
+      "points": 1,
+      "solution_steps": [
+        "Le sol est un rectangle : son aire se calcule avec sa longueur, 3,6 m, et sa largeur, 2,85 m.",
+        "La hauteur sous plafond et la largeur de la porte ne servent pas pour l'aire du sol."
+      ],
+      "hint": "Le sol est un rectangle : quelles sont ses deux dimensions ?"
+    },
+    {
+      "key": "q2",
+      "skill_id": "B017",
+      "statement": "Sans poser l'opération, quel est l'ordre de grandeur de l'aire du sol ?",
+      "type": "qcm",
+      "choices": [
+        {
+          "key": "a",
+          "text": "Environ 6 m²",
+          "misconception": "L'élève additionne la longueur et la largeur au lieu de les multiplier."
+        },
+        {
+          "key": "b",
+          "text": "Environ 100 m²",
+          "misconception": "L'élève oublie une virgule et calcule comme avec 36 × 3 : 100 m², c'est l'aire d'un grand appartement, pas d'une chambre."
+        },
+        {
+          "key": "c",
+          "text": "Environ 12 m²",
+          "misconception": null
+        }
+      ],
+      "answer": {
+        "value": "c"
+      },
+      "points": 2,
+      "solution_steps": [
+        "On arrondit : 3,6 m est proche de 4 m, et 2,85 m est proche de 3 m.",
+        "4 × 3 = 12 : l'aire du sol est d'**environ 12 m²**, ce qui est vraisemblable pour une chambre."
+      ],
+      "hint": "Arrondis chaque dimension au nombre entier le plus proche."
+    },
+    {
+      "key": "q3",
+      "skill_id": "D006",
+      "statement": "Quelle est l'aire exacte du sol de la chambre ?",
+      "type": "numerique",
+      "answer": {
+        "value": 10.26,
+        "unit": "m²"
+      },
+      "points": 3,
+      "solution_steps": [
+        "On calcule 3,6 × 2,85 en se ramenant à des entiers : 36 × 285 = 10 260.",
+        "3,6 a un chiffre après la virgule et 2,85 en a deux : le produit en a trois. 10 260 millièmes, c'est 10,260 = 10,26.",
+        "L'aire du sol est **10,26 m²**, cohérente avec l'ordre de grandeur de 12 m²."
+      ],
+      "hint": "Calcule d'abord le produit sans les virgules."
+    },
+    {
+      "key": "q4",
+      "skill_id": "P010",
+      "statement": "Quelle longueur de plinthes faut-il ?",
+      "type": "numerique",
+      "answer": {
+        "value": 12.1,
+        "unit": "m"
+      },
+      "points": 2,
+      "solution_steps": [
+        "Le tour de la chambre : 3,6 + 2,85 + 3,6 + 2,85 = 12,9 (en mètres).",
+        "Pas de plinthe devant la porte : 12,9 − 0,8 = 12,1.",
+        "Il faut **12,1 m** de plinthes."
+      ],
+      "hint": "Fais le tour de la pièce, puis pense à la porte."
+    },
+    {
+      "key": "q5",
+      "skill_id": "D006",
+      "statement": "Combien coûte le parquet acheté ?",
+      "type": "numerique",
+      "answer": {
+        "value": 257.25,
+        "unit": "€",
+        "accepted": [
+          "257,25 €",
+          "257,25 euros",
+          "257 € 25",
+          "257 euros 25",
+          "257€25"
+        ]
+      },
+      "points": 4,
+      "solution_steps": [
+        "Ils achètent 10,5 m² à 24,50 € le mètre carré : on calcule 10,5 × 24,5.",
+        "Ordre de grandeur : 10 × 25 = 250.",
+        "Sans les virgules : 105 × 245 = 25 725. Chaque facteur a un chiffre après la virgule : le produit en a deux. 10,5 × 24,5 = 257,25.",
+        "Le parquet coûte **257,25 €**, proche de l'ordre de grandeur de 250 €."
+      ],
+      "hint": "Commence par un ordre de grandeur du prix."
+    }
+  ],
+  "review_status": "brouillon",
+  "programme_ref": "Cycle 3, classe de 6e, Les nombres entiers et décimaux : « Calculer le produit de deux nombres décimaux »"
+}

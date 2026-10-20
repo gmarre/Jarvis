@@ -1,0 +1,137 @@
+{
+  "id": "SX-D001-01",
+  "skill_id": "D001",
+  "skill_ids": [
+    "D001",
+    "A009",
+    "D018",
+    "C027"
+  ],
+  "school_level": "CM1",
+  "title": "Le carnet de l'entraîneur",
+  "contexte": "Jeudi, les 28 élèves de CM1 de l'école Jules-Ferry participent à la journée d'athlétisme. Elle se termine par une remise de médailles à 16 h 30.\n\nAu lancer de balle, l'entraîneur note les distances en mètres, mais pas toujours de la même façon. Dans son carnet, on lit :\nTim : 26,4 m ;\nNour : $24 + \\frac{6}{10} + \\frac{3}{100}$ m ;\nElio : 27 m et 8 centièmes de mètre ;\nMaëlle : $\\frac{2509}{100}$ m.\n\nLe record de l'école au lancer de balle est de 31,25 m. Il date de 2019.",
+  "image": null,
+  "duree_estimee_min": 15,
+  "questions": [
+    {
+      "key": "q1",
+      "skill_id": "A009",
+      "statement": "Dans la distance de Tim, quel est le chiffre des dizaines ?",
+      "type": "qcm",
+      "choices": [
+        {
+          "key": "a",
+          "text": "6",
+          "misconception": "L'élève donne le chiffre des unités, celui qui est juste avant la virgule."
+        },
+        {
+          "key": "b",
+          "text": "2",
+          "misconception": null
+        },
+        {
+          "key": "c",
+          "text": "4",
+          "misconception": "L'élève confond dizaines et dixièmes : le 4, juste après la virgule, est le chiffre des dixièmes."
+        }
+      ],
+      "answer": {
+        "value": "b"
+      },
+      "points": 1,
+      "solution_steps": [
+        "Dans 26,4, la virgule se place juste après le chiffre des unités : 6 est le chiffre des unités.",
+        "Le chiffre juste à gauche des unités est celui des dizaines : **2**. Tim a lancé à 2 dizaines de mètres, 6 mètres et 4 dixièmes de mètre.",
+        "Attention : le 4 est le chiffre des **dixièmes**, pas des dizaines."
+      ],
+      "hint": "Rappelle-toi l'ordre des rangs : dizaines, unités, puis dixièmes après la virgule."
+    },
+    {
+      "key": "q2",
+      "skill_id": "D018",
+      "statement": "Combien de centièmes de mètre y a-t-il en tout dans la distance de Nour ?",
+      "type": "numerique",
+      "answer": {
+        "value": 2463,
+        "unit": "centièmes"
+      },
+      "points": 2,
+      "solution_steps": [
+        "1 m = 100 centièmes de mètre, donc 24 m font 2 400 centièmes.",
+        "1 dixième = 10 centièmes, donc 6 dixièmes font 60 centièmes.",
+        "En tout : 2 400 + 60 + 3 = 2 463 centièmes de mètre. On peut l'écrire $\\frac{2463}{100}$ m."
+      ],
+      "hint": "Combien de centièmes y a-t-il dans 1 mètre ? Et dans 1 dixième de mètre ?"
+    },
+    {
+      "key": "q3",
+      "skill_id": "D001",
+      "statement": "Écris la distance d'Elio avec une virgule, en mètres.",
+      "type": "texte",
+      "answer": {
+        "value": "27,08",
+        "accepted": [
+          "27,08 m",
+          "27,08 mètres",
+          "27,080",
+          "27,080 m"
+        ]
+      },
+      "points": 3,
+      "solution_steps": [
+        "Elio a lancé 27 m et 8 centièmes de mètre : 27 unités, 0 dixième et 8 centièmes.",
+        "Le chiffre des dixièmes vient juste après la virgule : il n'y a aucun dixième, on écrit 0 pour garder sa place. Les centièmes viennent ensuite.",
+        "La distance d'Elio s'écrit **27,08 m**.",
+        "Attention : 27,8 m voudrait dire 27 m et 8 **dixièmes**, soit 80 centièmes : bien plus que 8 centièmes."
+      ],
+      "hint": "Combien de dixièmes y a-t-il dans la distance d'Elio ?"
+    },
+    {
+      "key": "q4",
+      "skill_id": "C027",
+      "statement": "Écris la distance de Maëlle, $\\frac{2509}{100}$ m, sous la forme d'un entier plus une fraction inférieure à 1.",
+      "type": "texte",
+      "answer": {
+        "value": "25 + 9/100",
+        "accepted": [
+          "9/100 + 25",
+          "25 et 9/100",
+          "25 + 9/100 m",
+          "25 m + 9/100 m",
+          "25 m et 9/100 m"
+        ]
+      },
+      "points": 2,
+      "solution_steps": [
+        "$\\frac{2509}{100}$, ce sont 2 509 centièmes. Un mètre fait 100 centièmes, et 25 × 100 = 2 500.",
+        "2 509 centièmes = 2 500 centièmes + 9 centièmes, soit 25 m et $\\frac{9}{100}$ m.",
+        "Donc $\\frac{2509}{100} = 25 + \\frac{9}{100}$, et $\\frac{9}{100}$ est bien inférieure à 1."
+      ],
+      "hint": "Combien de mètres entiers y a-t-il dans 2 509 centièmes de mètre ?"
+    },
+    {
+      "key": "q5",
+      "skill_id": "D001",
+      "statement": "L'entraîneur veut écrire le record de l'école sous la forme d'une fraction décimale. Écris-le sous la forme numérateur/dénominateur.",
+      "type": "texte",
+      "answer": {
+        "value": "3125/100",
+        "accepted": [
+          "3 125/100",
+          "3125/100 m",
+          "3 125/100 m"
+        ]
+      },
+      "points": 4,
+      "solution_steps": [
+        "31,25 m, c'est 31 unités, 2 dixièmes et 5 centièmes : $31 + \\frac{2}{10} + \\frac{5}{100}$.",
+        "En centièmes : 31 unités font 3 100 centièmes, 2 dixièmes font 20 centièmes, donc 3 100 + 20 + 5 = 3 125 centièmes.",
+        "Le record s'écrit $\\frac{3125}{100}$ m.",
+        "Attention : la virgule n'est pas une barre de fraction. 31,25, c'est plus de 31 unités."
+      ],
+      "hint": "Combien de centièmes y a-t-il dans une unité ?"
+    }
+  ],
+  "review_status": "brouillon",
+  "programme_ref": "Cycle 3, Cours moyen première année, Les nombres décimaux : « Passer d'une écriture sous forme d'une fraction décimale ou d'une somme de fractions décimales à une écriture à virgule et réciproquement »"
+}

@@ -1,0 +1,130 @@
+{
+  "id": "SX-D025-01",
+  "skill_id": "D025",
+  "skill_ids": [
+    "D025",
+    "D023",
+    "B041"
+  ],
+  "school_level": "6e",
+  "title": "L'atelier bijoux du marché de Noël",
+  "contexte": "Pour le marché de Noël du collège, le 12 décembre à 17 h, les 28 élèves de 6e B fabriquent des colliers et des bracelets.\n\nVoici ce qu'ils savent du matériel :\nune perle en bois pèse 0,1 g ;\nune paillette dorée pèse 0,001 g ;\nle fil élastique coûte 0,01 € le centimètre ;\nun sachet de 100 perles en verre identiques pèse 72,5 g.\n\nInès fabrique 8 colliers de 30 perles en bois chacun. Pour tous les bracelets de la classe, il faut en tout 2 350 cm de fil élastique et 4 600 paillettes.\n\nLes bijoux seront vendus 4 € pièce.",
+  "image": null,
+  "duree_estimee_min": 15,
+  "questions": [
+    {
+      "key": "q1",
+      "skill_id": "B041",
+      "statement": "Combien de perles en bois Inès utilise-t-elle en tout ?",
+      "type": "numerique",
+      "answer": {
+        "value": 240,
+        "unit": "perles"
+      },
+      "points": 1,
+      "solution_steps": [
+        "Inès fabrique 8 colliers de 30 perles : on calcule 8 × 30.",
+        "8 × 3 = 24, donc 8 × 30 = 240 : 24 dizaines. Inès utilise **240 perles** en bois."
+      ],
+      "hint": "Calcule 8 × 3, puis pense aux dizaines."
+    },
+    {
+      "key": "q2",
+      "skill_id": "D023",
+      "statement": "Quelle est la masse d'une perle en verre ?",
+      "type": "numerique",
+      "answer": {
+        "value": 0.725,
+        "unit": "g"
+      },
+      "points": 2,
+      "solution_steps": [
+        "Un sachet de 100 perles identiques pèse 72,5 g : une perle pèse 72,5 ÷ 100.",
+        "Diviser par 100 : les 7 dizaines deviennent 7 dixièmes, les 2 unités deviennent 2 centièmes, les 5 dixièmes deviennent 5 millièmes.",
+        "Il ne reste aucune unité : on écrit 0 au rang des unités. 72,5 ÷ 100 = 0,725 : une perle en verre pèse **0,725 g**."
+      ],
+      "hint": "Que devient le chiffre des dizaines quand on divise par 100 ?"
+    },
+    {
+      "key": "q3",
+      "skill_id": "D025",
+      "statement": "Combien coûte le fil élastique de tous les bracelets ?",
+      "type": "numerique",
+      "answer": {
+        "value": 23.5,
+        "unit": "€",
+        "accepted": [
+          "23,50 €",
+          "23,50 euros",
+          "23 € 50",
+          "23 euros 50",
+          "23€50"
+        ]
+      },
+      "points": 3,
+      "solution_steps": [
+        "Le fil coûte 0,01 € le centimètre, et il en faut 2 350 cm : on calcule 2 350 × 0,01.",
+        "Multiplier par 0,01, c'est prendre un centième, donc diviser par 100.",
+        "2 350 ÷ 100 = 23,5 : le fil coûte **23,50 €**."
+      ],
+      "hint": "Multiplier par 0,01, c'est prendre une certaine fraction du nombre : laquelle ?"
+    },
+    {
+      "key": "q4",
+      "skill_id": "D025",
+      "statement": "Quelle est la masse des 4 600 paillettes ?",
+      "type": "numerique",
+      "answer": {
+        "value": 4.6,
+        "unit": "g"
+      },
+      "points": 4,
+      "solution_steps": [
+        "On calcule 4 600 × 0,001.",
+        "Multiplier par 0,001, c'est prendre un millième, donc diviser par 1 000.",
+        "4 600 ÷ 1 000 = 4,6 : les paillettes pèsent **4,6 g**.",
+        "Contrôle : multiplier par un nombre plus petit que 1 donne un résultat plus petit que 4 600."
+      ],
+      "hint": "0,001, c'est un millième."
+    },
+    {
+      "key": "q5",
+      "skill_id": "D025",
+      "statement": "Un collier d'Inès compte 30 perles en bois : il en contient $30 \\times 0{,}1$ g. Lequel de ces calculs donne le même résultat ?",
+      "type": "qcm",
+      "choices": [
+        {
+          "key": "a",
+          "text": "$30 \\times 10$",
+          "misconception": "L'élève confond multiplier par 0,1 et multiplier par 10. Or 0,1 est plus petit que 1 : le résultat est plus petit que 30."
+        },
+        {
+          "key": "b",
+          "text": "$30 \\div 100$",
+          "misconception": "0,1 est un dixième, pas un centième : on divise par 10, pas par 100."
+        },
+        {
+          "key": "c",
+          "text": "$30 \\div 10$",
+          "misconception": null
+        },
+        {
+          "key": "d",
+          "text": "$30 + 0{,}1$",
+          "misconception": "L'élève remplace la multiplication par une addition. Or on répète 30 fois la masse d'une perle."
+        }
+      ],
+      "answer": {
+        "value": "c"
+      },
+      "points": 3,
+      "solution_steps": [
+        "0,1 = $\\frac{1}{10}$ : multiplier par 0,1, c'est prendre un dixième.",
+        "Donc $30 \\times 0{,}1 = 30 \\div 10 = 3$ : le bon calcul est **$30 \\div 10$**, et un collier contient 3 g de perles en bois."
+      ],
+      "hint": "Multiplier par 0,1, c'est prendre une certaine fraction du nombre : laquelle ?"
+    }
+  ],
+  "review_status": "brouillon",
+  "programme_ref": "Cycle 3, classe de 6e, Les nombres entiers et décimaux : « Multiplier un nombre entier ou un nombre décimal par 0,1, par 0,01, et par 0,001 »"
+}

@@ -1,0 +1,159 @@
+{
+  "id": "SX-D003-01",
+  "skill_id": "D003",
+  "skill_ids": [
+    "D003",
+    "D001",
+    "B037"
+  ],
+  "school_level": "CM1",
+  "title": "La pesée des cartables",
+  "contexte": "Lundi, l'infirmière de l'école pèse les cartables des CM1. La classe compte 27 élèves. L'infirmière conseille qu'un cartable de CM1 ne dépasse pas 3,5 kg.\n\nLundi, elle pèse 6 cartables :\nLéo : 3,6 kg ;\nAna : 3,45 kg ;\nTom : 3 kg et 8 centièmes de kilogramme ;\nZoé : 3,15 kg ;\nNils : $\\frac{37}{10}$ kg ;\nInès : 3,5 kg.\n\nMardi, elle pèsera 9 autres cartables, puis, jeudi, tous les cartables qui restent. Léo, qui mesure 1,38 m, est le plus grand de la classe. Les cartables sont pesés avec leurs livres et leurs cahiers.",
+  "image": null,
+  "duree_estimee_min": 15,
+  "questions": [
+    {
+      "key": "q1",
+      "skill_id": "D001",
+      "statement": "Comment s'écrit la masse du cartable de Tom avec une virgule ?",
+      "type": "qcm",
+      "choices": [
+        {
+          "key": "a",
+          "text": "3,8 kg",
+          "misconception": "L'élève écrit le 8 juste après la virgule, au rang des dixièmes. Or Tom a 8 centièmes et aucun dixième."
+        },
+        {
+          "key": "b",
+          "text": "3,08 kg",
+          "misconception": null
+        },
+        {
+          "key": "c",
+          "text": "30,8 kg",
+          "misconception": "L'élève place le 0 avant la virgule : 30,8 kg ferait plus de 30 kg, bien trop lourd pour un cartable."
+        }
+      ],
+      "answer": {
+        "value": "b"
+      },
+      "points": 1,
+      "solution_steps": [
+        "Tom : 3 kg et 8 centièmes de kilogramme, soit 3 unités, 0 dixième et 8 centièmes.",
+        "Le 0 garde la place des dixièmes : on écrit **3,08 kg**."
+      ],
+      "hint": "Combien de dixièmes de kilogramme y a-t-il dans la masse du cartable de Tom ?"
+    },
+    {
+      "key": "q2",
+      "skill_id": "B037",
+      "statement": "Combien de cartables l'infirmière pèsera-t-elle jeudi ?",
+      "type": "numerique",
+      "answer": {
+        "value": 12,
+        "unit": "cartables"
+      },
+      "points": 2,
+      "solution_steps": [
+        "La classe compte 27 élèves, donc 27 cartables.",
+        "Lundi, 6 cartables sont pesés : 27 − 6 = 21 cartables restent.",
+        "Mardi, 9 autres : 21 − 9 = 12.",
+        "Jeudi, l'infirmière pèsera **12 cartables**."
+      ],
+      "hint": "Combien de cartables restent à peser après lundi ?"
+    },
+    {
+      "key": "q3",
+      "skill_id": "D003",
+      "statement": "Combien des 6 cartables pesés lundi dépassent la masse conseillée ?",
+      "type": "numerique",
+      "answer": {
+        "value": 2,
+        "unit": "cartables"
+      },
+      "points": 3,
+      "solution_steps": [
+        "On compare chaque masse à 3,5 kg : d'abord la partie entière, puis les dixièmes, puis les centièmes.",
+        "Léo : 3,6 > 3,5, car 6 dixièmes, c'est plus que 5 dixièmes : son cartable dépasse.",
+        "Nils : $\\frac{37}{10}$ kg, c'est 3,7 kg, et 3,7 > 3,5 : son cartable dépasse.",
+        "Ana : 3,45 < 3,50, car 45 centièmes, c'est moins que 50 centièmes. Tom (3,08 kg) et Zoé (3,15 kg) non plus.",
+        "Inès : 3,5 kg, c'est exactement la masse conseillée : son cartable ne la dépasse pas.",
+        "**2 cartables** dépassent la masse conseillée : ceux de Léo et de Nils."
+      ],
+      "hint": "Écris 3,5 kg avec deux chiffres après la virgule pour comparer plus facilement."
+    },
+    {
+      "key": "q4",
+      "skill_id": "D003",
+      "statement": "La masse du cartable de Tom s'écrit 3,08 kg. Range les cartables d'Ana, de Tom, de Zoé et de Léo du plus léger au plus lourd.",
+      "type": "qcm",
+      "choices": [
+        {
+          "key": "a",
+          "text": "Léo, Tom, Zoé, Ana",
+          "misconception": "L'élève compare les chiffres écrits après la virgule comme des entiers (6, 8, 15, 45). Or 3,6 = 3,60 : 60 centièmes, c'est plus que 45 centièmes."
+        },
+        {
+          "key": "b",
+          "text": "Zoé, Ana, Léo, Tom",
+          "misconception": "L'élève lit la masse du cartable de Tom comme 3,8 kg, en oubliant qu'il n'y a aucun dixième."
+        },
+        {
+          "key": "c",
+          "text": "Tom, Zoé, Ana, Léo",
+          "misconception": null
+        },
+        {
+          "key": "d",
+          "text": "Léo, Ana, Zoé, Tom",
+          "misconception": "C'est le rangement du plus lourd au plus léger : l'ordre est inversé."
+        }
+      ],
+      "answer": {
+        "value": "c"
+      },
+      "points": 4,
+      "solution_steps": [
+        "Les quatre masses ont la même partie entière, 3 : on compare les dixièmes.",
+        "Tom : 3,08 (0 dixième) ; Zoé : 3,15 (1 dixième) ; Ana : 3,45 (4 dixièmes) ; Léo : 3,6 (6 dixièmes).",
+        "Du plus léger au plus lourd : **Tom, Zoé, Ana, Léo**, car 3,08 < 3,15 < 3,45 < 3,6."
+      ],
+      "hint": "Écris toutes les masses avec deux chiffres après la virgule."
+    },
+    {
+      "key": "q5",
+      "skill_id": "D003",
+      "statement": "Quel est le cartable le plus lourd des 6 cartables pesés lundi ?",
+      "type": "qcm",
+      "choices": [
+        {
+          "key": "a",
+          "text": "Celui de Nils",
+          "misconception": null
+        },
+        {
+          "key": "b",
+          "text": "Celui de Léo",
+          "misconception": "L'élève laisse de côté la masse écrite avec une fraction : $\\frac{37}{10}$ kg, c'est 3,7 kg, plus que 3,6 kg."
+        },
+        {
+          "key": "c",
+          "text": "Celui d'Ana",
+          "misconception": "L'élève croit que 3,45 est le plus grand parce que 45 est le plus grand nombre écrit après une virgule."
+        }
+      ],
+      "answer": {
+        "value": "a"
+      },
+      "points": 3,
+      "solution_steps": [
+        "La masse du cartable de Nils est écrite avec une fraction : $\\frac{37}{10}$ kg, ce sont 37 dixièmes de kilogramme, soit 3 kg et 7 dixièmes : 3,7 kg.",
+        "Toutes les masses ont pour partie entière 3. On compare les dixièmes : Nils en a 7, c'est le plus grand ; Léo n'en a que 6.",
+        "Le cartable le plus lourd est **celui de Nils**."
+      ],
+      "hint": "Écris d'abord les six masses de la même façon, avec une virgule."
+    }
+  ],
+  "review_status": "brouillon",
+  "programme_ref": "Cycle 3, Cours moyen première année, Les nombres décimaux : « Comparer, encadrer, intercaler, ordonner, par ordre croissant ou décroissant, des nombres décimaux donnés par leur écriture à virgule en utilisant les symboles =, < et > »"
+}

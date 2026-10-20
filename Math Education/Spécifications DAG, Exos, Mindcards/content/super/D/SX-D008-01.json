@@ -1,0 +1,139 @@
+{
+  "id": "SX-D008-01",
+  "skill_id": "D008",
+  "skill_ids": [
+    "D008",
+    "D012",
+    "B039"
+  ],
+  "school_level": "CM1",
+  "title": "La randonnée au Lac Bleu",
+  "contexte": "Dimanche, la famille Roux part en randonnée depuis le parking du col, à 1 250 m d'altitude. Le départ est prévu à 9 heures.\n\nUn panneau indique les distances à parcourir depuis le parking :\ncascade : 2,35 km ;\nrefuge : 3,6 km ;\nLac Bleu : 7,85 km.\n\nLe chemin passe par la cascade, puis par le refuge, avant d'arriver au Lac Bleu. La famille marche environ 4 km en une heure.\n\nLe grand-père accompagne la famille jusqu'au refuge, puis il redescend seul au parking par le même chemin, à la même allure. Les autres pique-niquent au bord du lac.",
+  "image": null,
+  "duree_estimee_min": 15,
+  "questions": [
+    {
+      "key": "q1",
+      "skill_id": "D012",
+      "statement": "Entre quels nombres entiers qui se suivent se trouve la distance du parking au Lac Bleu ?",
+      "type": "qcm",
+      "choices": [
+        {
+          "key": "a",
+          "text": "7 et 85",
+          "misconception": "L'élève sépare les deux morceaux du nombre. Or 85 ne suit pas 7, et la partie après la virgule compte des centièmes : moins d'une unité."
+        },
+        {
+          "key": "b",
+          "text": "785 et 786",
+          "misconception": "L'élève oublie la virgule et lit 785."
+        },
+        {
+          "key": "c",
+          "text": "7 et 8",
+          "misconception": null
+        }
+      ],
+      "answer": {
+        "value": "c"
+      },
+      "points": 1,
+      "solution_steps": [
+        "7,85 km, c'est 7 km et 85 centièmes de kilomètre : plus que 7 km, mais moins que 8 km.",
+        "On écrit 7 < 7,85 < 8 : la distance se trouve entre **7 et 8**."
+      ],
+      "hint": "Ce qui est écrit après la virgule vaut-il plus ou moins qu'une unité ?"
+    },
+    {
+      "key": "q2",
+      "skill_id": "D008",
+      "statement": "Quelle est la partie entière de la distance du parking au refuge ?",
+      "type": "numerique",
+      "answer": {
+        "value": 3,
+        "unit": "km"
+      },
+      "points": 2,
+      "solution_steps": [
+        "3,6 km, c'est 3 km et 6 dixièmes : 3 < 3,6 < 4.",
+        "La partie entière, c'est le nombre écrit avant la virgule : **3**.",
+        "Attention : l'arrondi à l'unité serait 4, car 6 dixièmes, c'est plus que la moitié d'une unité. Couper n'est pas arrondir."
+      ],
+      "hint": "Encadre 3,6 entre deux nombres entiers qui se suivent."
+    },
+    {
+      "key": "q3",
+      "skill_id": "D008",
+      "statement": "Quel est l'arrondi à l'unité de la distance du parking au Lac Bleu ?",
+      "type": "numerique",
+      "answer": {
+        "value": 8,
+        "unit": "km"
+      },
+      "points": 3,
+      "solution_steps": [
+        "7 < 7,85 < 8.",
+        "7,85 a 8 dixièmes : c'est plus que la moitié d'une unité, 5 dixièmes. 7,85 est plus près de 8 que de 7.",
+        "L'arrondi à l'unité est **8**. Attention : la partie entière est 7, mais l'arrondi est 8."
+      ],
+      "hint": "Regarde le chiffre des dixièmes."
+    },
+    {
+      "key": "q4",
+      "skill_id": "B039",
+      "statement": "Pour prévoir la durée de marche du grand-père, aller et retour entre le parking et le refuge, on arrondit à l'unité la distance du parking au refuge. Combien d'heures de marche doit-il prévoir ?",
+      "type": "numerique",
+      "answer": {
+        "value": 2,
+        "unit": "h"
+      },
+      "points": 2,
+      "solution_steps": [
+        "La distance du parking au refuge, 3,6 km, arrondie à l'unité, donne 4 km : 3,6 est plus près de 4 que de 3.",
+        "Aller et retour : 4 + 4 = 8, soit 8 km.",
+        "À environ 4 km en une heure : 8 ÷ 4 = 2. Le grand-père doit prévoir **2 heures** de marche."
+      ],
+      "hint": "Compte la distance de l'aller et celle du retour."
+    },
+    {
+      "key": "q5",
+      "skill_id": "D008",
+      "statement": "Entre le refuge et le Lac Bleu, un panneau abîmé indique la distance du parking au pont. On ne lit plus le nombre, mais il est écrit dessous : « partie entière 4, arrondi à l'unité 5 ». Laquelle de ces distances peut-elle être ?",
+      "type": "qcm",
+      "choices": [
+        {
+          "key": "a",
+          "text": "4,38 km",
+          "misconception": "4,38 a bien pour partie entière 4, mais 3 dixièmes, c'est moins que la moitié d'une unité : son arrondi est 4, pas 5."
+        },
+        {
+          "key": "b",
+          "text": "5,25 km",
+          "misconception": "5,25 a bien pour arrondi 5, mais sa partie entière est 5, pas 4."
+        },
+        {
+          "key": "c",
+          "text": "3,96 km",
+          "misconception": "L'élève prend les nombres un rang trop bas : 3,96 a pour partie entière 3 et pour arrondi 4."
+        },
+        {
+          "key": "d",
+          "text": "4,74 km",
+          "misconception": null
+        }
+      ],
+      "answer": {
+        "value": "d"
+      },
+      "points": 4,
+      "solution_steps": [
+        "Partie entière 4 : le nombre s'écrit 4 virgule quelque chose ; il est au moins égal à 4 et plus petit que 5.",
+        "Arrondi 5 : le nombre est plus près de 5 que de 4, donc son chiffre des dixièmes est 5 ou plus.",
+        "Seul **4,74 km** convient : 4 < 4,74 < 5, et 7 dixièmes, c'est plus que la moitié d'une unité."
+      ],
+      "hint": "Pour chaque distance, cherche sa partie entière, puis son arrondi à l'unité."
+    }
+  ],
+  "review_status": "brouillon",
+  "programme_ref": "Cycle 3, Cours moyen première année, Les nombres décimaux : « Savoir donner la partie entière et l'arrondi à l'entier d'un nombre décimal »"
+}

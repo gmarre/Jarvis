@@ -1,0 +1,138 @@
+{
+  "id": "SX-D023-01",
+  "skill_id": "D023",
+  "skill_ids": [
+    "D023",
+    "B041"
+  ],
+  "school_level": "CM2",
+  "title": "Le 14 Juillet au village",
+  "contexte": "Le comité des fêtes du village prépare le 14 Juillet. Il attend environ 2 500 personnes, et le feu d'artifice durera 18 minutes.\n\nVoici ses dépenses et ses recettes :\nil achète 1 000 gobelets réutilisables, à 0,35 € l'un ;\nil loue 100 chaises, à 6 € l'une ;\nil vend 100 tickets de tombola, tous au même prix, qui lui rapportent en tout 150 € ;\nil achète 1 000 bracelets lumineux identiques pour les enfants, pour 380 € en tout.\n\nLes gobelets seront lavés et resservis l'an prochain.",
+  "image": null,
+  "duree_estimee_min": 12,
+  "questions": [
+    {
+      "key": "q1",
+      "skill_id": "D023",
+      "statement": "Quel calcul donne le prix d'un ticket de tombola ?",
+      "type": "qcm",
+      "choices": [
+        {
+          "key": "a",
+          "text": "150 ÷ 100",
+          "misconception": null
+        },
+        {
+          "key": "b",
+          "text": "150 × 100",
+          "misconception": "L'élève multiplie : un ticket coûterait 15 000 €, c'est absurde. Les 150 € sont rapportés par les 100 tickets ensemble."
+        },
+        {
+          "key": "c",
+          "text": "2 500 ÷ 100",
+          "misconception": "Le nombre de personnes attendues ne dit rien du prix d'un ticket."
+        }
+      ],
+      "answer": {
+        "value": "a"
+      },
+      "points": 1,
+      "solution_steps": [
+        "Les 100 tickets rapportent 150 € en tout, et ils ont tous le même prix : un ticket rapporte le centième de 150 €.",
+        "On calcule **150 ÷ 100**. Le nombre de personnes attendues ne sert pas."
+      ],
+      "hint": "Combien de tickets ont rapporté les 150 € ?"
+    },
+    {
+      "key": "q2",
+      "skill_id": "B041",
+      "statement": "Combien coûte la location des chaises ?",
+      "type": "numerique",
+      "answer": {
+        "value": 600,
+        "unit": "€",
+        "accepted": [
+          "600 euros"
+        ]
+      },
+      "points": 2,
+      "solution_steps": [
+        "100 chaises à 6 € l'une : 6 × 100 = 600.",
+        "Les 6 unités deviennent 6 centaines. La location coûte **600 €**."
+      ],
+      "hint": "Que devient le chiffre des unités quand on multiplie par 100 ?"
+    },
+    {
+      "key": "q3",
+      "skill_id": "D023",
+      "statement": "Combien coûtent les 1 000 gobelets ?",
+      "type": "numerique",
+      "answer": {
+        "value": 350,
+        "unit": "€",
+        "accepted": [
+          "350 euros"
+        ]
+      },
+      "points": 2,
+      "solution_steps": [
+        "On calcule 0,35 × 1 000.",
+        "Multiplier par 1 000 : les 3 dixièmes deviennent 3 centaines, les 5 centièmes deviennent 5 dizaines.",
+        "Le rang des unités est vide : on le complète par un zéro. 0,35 × 1 000 = 350 : les gobelets coûtent **350 €**."
+      ],
+      "hint": "Que devient le chiffre des dixièmes quand on multiplie par 1 000 ?"
+    },
+    {
+      "key": "q4",
+      "skill_id": "D023",
+      "statement": "Combien rapporte un ticket de tombola ?",
+      "type": "numerique",
+      "answer": {
+        "value": 1.5,
+        "unit": "€",
+        "accepted": [
+          "1,50 €",
+          "1,50 euros",
+          "1 € 50",
+          "1 euros 50",
+          "1€50"
+        ]
+      },
+      "points": 3,
+      "solution_steps": [
+        "On calcule 150 ÷ 100.",
+        "Diviser par 100 : la centaine devient une unité, les 5 dizaines deviennent 5 dixièmes.",
+        "150 ÷ 100 = 1,5 : un ticket rapporte **1,50 €**."
+      ],
+      "hint": "Que devient le chiffre des centaines quand on divise par 100 ?"
+    },
+    {
+      "key": "q5",
+      "skill_id": "D023",
+      "statement": "Combien coûte un bracelet lumineux ?",
+      "type": "numerique",
+      "answer": {
+        "value": 0.38,
+        "unit": "€",
+        "accepted": [
+          "0,38 €",
+          "0,38 euros",
+          "0 € 38",
+          "0 euros 38",
+          "0€38",
+          "38 centimes",
+          "38 c"
+        ]
+      },
+      "points": 4,
+      "solution_steps": [
+        "Les 1 000 bracelets coûtent 380 € : un bracelet coûte 380 ÷ 1 000.",
+        "Diviser par 1 000 : les 3 centaines deviennent 3 dixièmes, les 8 dizaines deviennent 8 centièmes.",
+        "Il ne reste aucune unité : on écrit 0 au rang des unités. 380 ÷ 1 000 = 0,38 : un bracelet coûte **0,38 €**, soit 38 centimes."
+      ],
+      "hint": "Que devient le chiffre des centaines quand on divise par 1 000 ?"
+    }
+  ],
+  "review_status": "brouillon",
+  "programme_ref": "Cycle 3, Cours moyen deuxième année, Le calcul mental : « Diviser un nombre décimal par 10, 100 ou 1 000 »"
+}

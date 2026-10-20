@@ -1,0 +1,138 @@
+{
+  "id": "SX-D012-01",
+  "skill_id": "D012",
+  "skill_ids": [
+    "D012",
+    "D003",
+    "B037"
+  ],
+  "school_level": "CM1",
+  "title": "Le concours de citrouilles",
+  "contexte": "Au potager de l'école, les CM1 organisent un concours de citrouilles. Au printemps, ils avaient planté 42 graines de citrouille. 9 graines n'ont pas germé, et les limaces ont mangé 6 jeunes plants. Tous les autres plants ont grandi.\n\nLe jour du concours, le jury pèse les quatre plus belles citrouilles :\ncelle d'Ana : 8,6 kg ;\ncelle de Tom : 8,45 kg ;\ncelle de Yasmine : 9,07 kg ;\ncelle de Rayan : 8,7 kg.\n\nLa citrouille de Malo arrive en retard. Elle pèse plus que celle d'Ana, mais moins que celle de Rayan.\n\nLe gagnant recevra un livre sur le jardinage. La remise du prix a lieu le 18 octobre, à 16 heures.",
+  "image": null,
+  "duree_estimee_min": 12,
+  "questions": [
+    {
+      "key": "q1",
+      "skill_id": "B037",
+      "statement": "Combien de plants de citrouille ont pu grandir ?",
+      "type": "numerique",
+      "answer": {
+        "value": 27,
+        "unit": "plants"
+      },
+      "points": 2,
+      "solution_steps": [
+        "Sur 42 graines, 9 n'ont pas germé : 42 − 9 = 33 plants.",
+        "Les limaces en ont mangé 6 : 33 − 6 = 27.",
+        "**27 plants** ont pu grandir. Les masses des citrouilles ne servent pas ici."
+      ],
+      "hint": "Commence par compter les graines qui ont germé."
+    },
+    {
+      "key": "q2",
+      "skill_id": "D003",
+      "statement": "Quelle est la plus légère des quatre citrouilles pesées par le jury ?",
+      "type": "qcm",
+      "choices": [
+        {
+          "key": "a",
+          "text": "Celle d'Ana",
+          "misconception": "L'élève croit que 8,45 est plus grand que 8,6 parce que 45 est plus grand que 6. Or 8,6 = 8,60 : 60 centièmes, c'est plus que 45 centièmes."
+        },
+        {
+          "key": "b",
+          "text": "Celle de Yasmine",
+          "misconception": "L'élève regarde le 07, écrit après la virgule, sans voir que la partie entière, 9, est la plus grande."
+        },
+        {
+          "key": "c",
+          "text": "Celle de Tom",
+          "misconception": null
+        }
+      ],
+      "answer": {
+        "value": "c"
+      },
+      "points": 2,
+      "solution_steps": [
+        "La citrouille de Yasmine pèse plus de 9 kg : c'est la plus lourde. Les trois autres ont pour partie entière 8.",
+        "On compare les dixièmes : Tom 4, Ana 6, Rayan 7.",
+        "La plus légère est **celle de Tom**, 8,45 kg."
+      ],
+      "hint": "Compare d'abord les parties entières, puis les dixièmes."
+    },
+    {
+      "key": "q3",
+      "skill_id": "D012",
+      "statement": "Encadre la masse de la citrouille de Tom par deux nombres à un chiffre après la virgule qui se suivent.",
+      "type": "qcm",
+      "choices": [
+        {
+          "key": "a",
+          "text": "8 < 8,45 < 9",
+          "misconception": "L'encadrement est juste, mais par deux nombres entiers : la question demande deux nombres à un chiffre après la virgule."
+        },
+        {
+          "key": "b",
+          "text": "8,4 < 8,45 < 8,5",
+          "misconception": null
+        },
+        {
+          "key": "c",
+          "text": "8,4 < 8,45 < 8,6",
+          "misconception": "8,4 et 8,6 ne se suivent pas : 8,5 se trouve entre eux."
+        }
+      ],
+      "answer": {
+        "value": "b"
+      },
+      "points": 3,
+      "solution_steps": [
+        "8,45 kg, c'est 8 kg, 4 dixièmes et 5 centièmes : plus que 8,4 et moins que 8,5.",
+        "8,4 et 8,5 ont un chiffre après la virgule et se suivent : **8,4 < 8,45 < 8,5**."
+      ],
+      "hint": "Compte de dixième en dixième à partir de 8 : 8,1 ; 8,2… Où se place la masse de la citrouille de Tom ?"
+    },
+    {
+      "key": "q4",
+      "skill_id": "D012",
+      "statement": "Laquelle de ces masses peut être celle de la citrouille de Malo ?",
+      "type": "qcm",
+      "choices": [
+        {
+          "key": "a",
+          "text": "8,65 kg",
+          "misconception": null
+        },
+        {
+          "key": "b",
+          "text": "8,56 kg",
+          "misconception": "8,56 est plus petit que 8,6 = 8,60 : la citrouille de Malo serait plus légère que celle d'Ana."
+        },
+        {
+          "key": "c",
+          "text": "8,7 kg",
+          "misconception": "8,7 kg, c'est exactement la masse de la citrouille de Rayan ; or celle de Malo pèse moins."
+        },
+        {
+          "key": "d",
+          "text": "8,07 kg",
+          "misconception": "L'élève lit 8,07 comme 8,7. Or 8,07 n'a aucun dixième : c'est moins que 8,6."
+        }
+      ],
+      "answer": {
+        "value": "a"
+      },
+      "points": 4,
+      "solution_steps": [
+        "La citrouille de Malo pèse plus que 8,6 kg et moins que 8,7 kg. On écrit 8,6 = 8,60 et 8,7 = 8,70.",
+        "8,65 convient : 8,60 < 8,65 < 8,70. La citrouille de Malo peut peser **8,65 kg**.",
+        "8,56 et 8,07 sont plus petits que 8,60, et 8,7 n'est pas plus petit que 8,7 : ces masses ne conviennent pas."
+      ],
+      "hint": "Écris les masses des citrouilles d'Ana et de Rayan avec deux chiffres après la virgule."
+    }
+  ],
+  "review_status": "brouillon",
+  "programme_ref": "Cycle 3, Cours moyen première année, Les nombres décimaux : « Comparer, encadrer, intercaler, ordonner, par ordre croissant ou décroissant, des nombres décimaux donnés par leur écriture à virgule en utilisant les symboles =, < et > »"
+}

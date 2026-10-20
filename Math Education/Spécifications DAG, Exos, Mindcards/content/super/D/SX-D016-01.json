@@ -1,0 +1,101 @@
+{
+  "id": "SX-D016-01",
+  "skill_id": "D016",
+  "skill_ids": [
+    "D016",
+    "P003"
+  ],
+  "school_level": "CE1",
+  "title": "Le vide-grenier de Léna",
+  "contexte": "Samedi, Léna va au vide-grenier de son quartier avec son grand frère Malo. Le vide-grenier ferme à 17 heures.\n\nDans son porte-monnaie, Léna a un billet de 5 €, 6 pièces de 2 € et 2 pièces de 1 €. Malo, lui, a un billet de 20 €.\n\nSur un stand, Léna regarde trois objets. Les prix sont écrits de façons différentes :\nle livre de contes coûte 3 € et 40 centimes ;\nla petite voiture coûte 3,04 € ;\nle puzzle coûte 290 centimes.\n\nRappel : 100 centimes font 1 €.",
+  "image": null,
+  "duree_estimee_min": 8,
+  "questions": [
+    {
+      "key": "q1",
+      "skill_id": "P003",
+      "statement": "Combien d'euros Léna a-t-elle dans son porte-monnaie ?",
+      "type": "numerique",
+      "answer": {
+        "value": 19,
+        "unit": "€",
+        "accepted": [
+          "19 euros"
+        ]
+      },
+      "points": 2,
+      "solution_steps": [
+        "Le billet de 5 € : 5 €.",
+        "Les 6 pièces de 2 € : 2 + 2 + 2 + 2 + 2 + 2 = 12 €.",
+        "Les 2 pièces de 1 € : 1 + 1 = 2 €.",
+        "En tout : 5 + 12 + 2 = 19. Léna a **19 €**. Le billet de Malo n'est pas à elle : il ne compte pas."
+      ],
+      "hint": "Compte la valeur des pièces, pas seulement leur nombre."
+    },
+    {
+      "key": "q2",
+      "skill_id": "D016",
+      "statement": "Écris le prix du livre de contes en euros, avec une virgule.",
+      "type": "texte",
+      "answer": {
+        "value": "3,40",
+        "accepted": [
+          "3,4",
+          "3,40 €",
+          "3,40 euros",
+          "3,4 €",
+          "3,4 euros"
+        ]
+      },
+      "points": 3,
+      "solution_steps": [
+        "100 centimes font 1 € : les centimes s'écrivent après la virgule, avec deux chiffres.",
+        "Le livre coûte 3 € et 40 centimes : on écrit 3 avant la virgule et 40 après.",
+        "Le livre coûte **3,40 €**.",
+        "Attention : 3,04 €, c'est 3 € et 4 centimes. C'est le prix de la petite voiture."
+      ],
+      "hint": "Après la virgule, on écrit les centimes avec deux chiffres."
+    },
+    {
+      "key": "q3",
+      "skill_id": "D016",
+      "statement": "Range les trois objets du moins cher au plus cher.",
+      "type": "qcm",
+      "choices": [
+        {
+          "key": "a",
+          "text": "La voiture, le livre, le puzzle",
+          "misconception": "L'élève prend 290 centimes pour 290 €. Or 290 centimes, c'est 2 € et 90 centimes : moins de 3 €."
+        },
+        {
+          "key": "b",
+          "text": "Le puzzle, la voiture, le livre",
+          "misconception": null
+        },
+        {
+          "key": "c",
+          "text": "On ne peut pas les ranger : le livre et la voiture ont le même prix",
+          "misconception": "L'élève écrit 3 € et 40 centimes « 3,04 € ». Or 40 centimes s'écrivent 40 après la virgule : le livre coûte 3,40 €, plus que la voiture."
+        },
+        {
+          "key": "d",
+          "text": "Le livre, la voiture, le puzzle",
+          "misconception": "C'est l'ordre du plus cher au moins cher : le rangement est à l'envers."
+        }
+      ],
+      "answer": {
+        "value": "b"
+      },
+      "points": 4,
+      "solution_steps": [
+        "On écrit tous les prix en centimes. Le livre, 3 € et 40 centimes : 300 + 40 = 340 centimes.",
+        "La voiture, 3,04 €, c'est 3 € et 4 centimes : 300 + 4 = 304 centimes.",
+        "Le puzzle coûte 290 centimes.",
+        "290 < 304 < 340 : du moins cher au plus cher, **le puzzle, la voiture, le livre**."
+      ],
+      "hint": "Écris les trois prix de la même façon, par exemple en centimes."
+    }
+  ],
+  "review_status": "brouillon",
+  "programme_ref": "Cycle 2, Cours élémentaire première année, La monnaie : « L'élève sait ordonner quatre prix dans l'ordre croissant ou décroissant, quelles que soient les écritures de ces prix. »"
+}

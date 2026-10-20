@@ -1,0 +1,147 @@
+{
+  "id": "SX-D018-01",
+  "skill_id": "D018",
+  "skill_ids": [
+    "D018",
+    "C001",
+    "C006",
+    "C012"
+  ],
+  "school_level": "CM1",
+  "title": "La fresque de la classe",
+  "contexte": "Les 25 élèves de CM1 peignent une fresque sur un grand panneau carré. Le panneau est partagé en 10 bandes égales, et chaque bande est partagée en 10 carreaux égaux. Chaque équipe peint sa partie d'une seule couleur, sans jamais repeindre un carreau déjà peint.\n\nL'équipe de Lou peint en bleu 4 bandes entières et 7 carreaux d'une autre bande.\nL'équipe de Sami peint en jaune $\\frac{24}{100}$ du panneau.\nL'équipe de Nina peint en vert $\\frac{2}{10}$ du panneau.\nLe reste du panneau est laissé blanc. La peinture sèche en 2 heures.\n\nDans la classe voisine, les élèves ont peint deux panneaux identiques à celui-ci. Ils ont recouvert en tout $\\frac{158}{100}$ de panneau.",
+  "image": null,
+  "duree_estimee_min": 15,
+  "questions": [
+    {
+      "key": "q1",
+      "skill_id": "C001",
+      "statement": "Quelle fraction du panneau représente un carreau ?",
+      "type": "qcm",
+      "choices": [
+        {
+          "key": "a",
+          "text": "$\\frac{1}{10}$",
+          "misconception": "$\\frac{1}{10}$ du panneau, c'est une bande entière, pas un carreau."
+        },
+        {
+          "key": "b",
+          "text": "$\\frac{1}{20}$",
+          "misconception": "L'élève additionne les 10 bandes et les 10 carreaux. Or le panneau compte 10 bandes de 10 carreaux, soit 100 carreaux."
+        },
+        {
+          "key": "c",
+          "text": "$\\frac{1}{100}$",
+          "misconception": null
+        }
+      ],
+      "answer": {
+        "value": "c"
+      },
+      "points": 1,
+      "solution_steps": [
+        "Le panneau a 10 bandes de 10 carreaux : 10 × 10 = 100 carreaux égaux.",
+        "Un carreau est donc $\\frac{1}{100}$ du panneau : **un centième**."
+      ],
+      "hint": "Combien de carreaux égaux y a-t-il dans tout le panneau ?"
+    },
+    {
+      "key": "q2",
+      "skill_id": "D018",
+      "statement": "Quelle fraction du panneau l'équipe de Lou a-t-elle peinte ? Écris-la sous la forme d'une seule fraction de dénominateur 100.",
+      "type": "texte",
+      "answer": {
+        "value": "47/100",
+        "accepted": [
+          "47 / 100",
+          "47/100 du panneau"
+        ]
+      },
+      "points": 2,
+      "solution_steps": [
+        "Une bande, c'est 10 carreaux, soit $\\frac{10}{100}$ du panneau : 4 bandes font 40 carreaux.",
+        "Avec les 7 carreaux de plus : 40 + 7 = 47 carreaux.",
+        "L'équipe de Lou a peint $\\frac{47}{100}$ du panneau, c'est-à-dire 4 dixièmes et 7 centièmes."
+      ],
+      "hint": "Combien de carreaux y a-t-il dans une bande ?"
+    },
+    {
+      "key": "q3",
+      "skill_id": "C006",
+      "statement": "Combien de carreaux l'équipe de Nina a-t-elle peints ?",
+      "type": "numerique",
+      "answer": {
+        "value": 20,
+        "unit": "carreaux"
+      },
+      "points": 2,
+      "solution_steps": [
+        "$\\frac{2}{10}$ du panneau, ce sont 2 bandes sur 10.",
+        "Une bande compte 10 carreaux : 2 bandes font 20 carreaux.",
+        "$\\frac{2}{10} = \\frac{20}{100}$ : l'équipe de Nina a peint **20 carreaux**."
+      ],
+      "hint": "Que représente $\\frac{1}{10}$ du panneau : une bande ou un carreau ?"
+    },
+    {
+      "key": "q4",
+      "skill_id": "C012",
+      "statement": "On admet que les équipes de Lou et de Nina ont peint ensemble 67 carreaux. Quelle fraction du panneau est peinte en tout ? Écris-la sous la forme d'une seule fraction de dénominateur 100.",
+      "type": "texte",
+      "answer": {
+        "value": "91/100",
+        "accepted": [
+          "91 / 100",
+          "91/100 du panneau"
+        ]
+      },
+      "points": 3,
+      "solution_steps": [
+        "Un carreau est $\\frac{1}{100}$ du panneau : les 67 carreaux des équipes de Lou et de Nina font $\\frac{67}{100}$ du panneau.",
+        "L'équipe de Sami a peint $\\frac{24}{100}$ du panneau. Les deux fractions ont le dénominateur 100 : on additionne les numérateurs, 67 + 24 = 91.",
+        "Le panneau est peint sur $\\frac{91}{100}$. Il reste $\\frac{9}{100}$ de blanc."
+      ],
+      "hint": "Écris d'abord la part des équipes de Lou et de Nina en centièmes du panneau."
+    },
+    {
+      "key": "q5",
+      "skill_id": "D018",
+      "statement": "La classe voisine a recouvert $\\frac{158}{100}$ de panneau. À quoi cela correspond-il ?",
+      "type": "qcm",
+      "choices": [
+        {
+          "key": "a",
+          "text": "1 panneau entier, 5 bandes et 8 carreaux",
+          "misconception": null
+        },
+        {
+          "key": "b",
+          "text": "15 panneaux entiers et 8 carreaux",
+          "misconception": "L'élève coupe 158 en 15 et 8. Or 15 panneaux font 1 500 carreaux, bien plus que 158 carreaux."
+        },
+        {
+          "key": "c",
+          "text": "1 panneau entier et 58 bandes",
+          "misconception": "L'élève oublie qu'une bande vaut 10 carreaux : 58 carreaux font 5 bandes et 8 carreaux, pas 58 bandes."
+        },
+        {
+          "key": "d",
+          "text": "158 bandes",
+          "misconception": "Une bande, c'est un dixième du panneau, pas un centième : 158 centièmes ne font pas 158 bandes."
+        }
+      ],
+      "answer": {
+        "value": "a"
+      },
+      "points": 4,
+      "solution_steps": [
+        "$\\frac{158}{100}$, ce sont 158 centièmes de panneau, soit 158 carreaux.",
+        "Un panneau entier compte 100 carreaux : 158 = 100 + 58. Il y a 1 panneau entier et 58 carreaux.",
+        "58 carreaux, ce sont 5 bandes de 10 carreaux et 8 carreaux : 58 = 50 + 8.",
+        "Donc $\\frac{158}{100} = 1 + \\frac{5}{10} + \\frac{8}{100}$ : **1 panneau entier, 5 bandes et 8 carreaux**."
+      ],
+      "hint": "Combien de carreaux y a-t-il dans un panneau entier ?"
+    }
+  ],
+  "review_status": "brouillon",
+  "programme_ref": "Cycle 3, Cours moyen première année, Les nombres décimaux : « Connaître et utiliser les relations entre unités simples, dixièmes et centièmes »"
+}

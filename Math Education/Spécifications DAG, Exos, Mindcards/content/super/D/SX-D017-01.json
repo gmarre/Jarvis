@@ -1,0 +1,121 @@
+{
+  "id": "SX-D017-01",
+  "skill_id": "D017",
+  "skill_ids": [
+    "D017",
+    "D016",
+    "P003"
+  ],
+  "school_level": "CE2",
+  "title": "Les courses pour l'anniversaire de Lucie",
+  "contexte": "Mercredi, Hugo et son papa préparent l'anniversaire de Lucie, la petite sœur de Hugo, qui fête ses 7 ans. Le magasin ouvre à 9 heures.\n\nAvant de partir, le papa compte l'argent de son portefeuille : un billet de 20 €, 2 billets de 5 € et 7 pièces de 2 €.\n\nAu magasin, ils achètent :\nun sachet de ballons à 2,65 € ;\ndes bougies à 1,80 € ;\nun gâteau au chocolat à 13,90 €.\n\nHugo voulait un ballon géant à 6,50 €, mais son papa a dit non.\n\nÀ la caisse, le papa paie d'abord le gâteau, seul, avec le billet de 20 €. Il paie ensuite les ballons et les bougies avec des pièces.",
+  "image": null,
+  "duree_estimee_min": 12,
+  "questions": [
+    {
+      "key": "q1",
+      "skill_id": "D016",
+      "statement": "Le papa paie les bougies avec des pièces. Quelle somme est égale au prix des bougies ?",
+      "type": "qcm",
+      "choices": [
+        {
+          "key": "a",
+          "text": "1 € et 8 centimes",
+          "misconception": "L'élève ne lit que le 8. Or 1 € et 8 centimes s'écrirait 1,08 € ; 1,80 €, c'est 1 € et 80 centimes."
+        },
+        {
+          "key": "b",
+          "text": "18 €",
+          "misconception": "L'élève oublie la virgule : des bougies à 18 € coûteraient plus cher que le gâteau."
+        },
+        {
+          "key": "c",
+          "text": "1 € et 80 centimes",
+          "misconception": null
+        }
+      ],
+      "answer": {
+        "value": "c"
+      },
+      "points": 1,
+      "solution_steps": [
+        "Dans 1,80 €, le chiffre avant la virgule compte les euros : 1 €.",
+        "Les deux chiffres après la virgule comptent les centimes : 80 centimes.",
+        "Les bougies coûtent **1 € et 80 centimes**."
+      ],
+      "hint": "Après la virgule, on lit les centimes."
+    },
+    {
+      "key": "q2",
+      "skill_id": "P003",
+      "statement": "Combien d'euros le papa a-t-il dans son portefeuille avant de partir ?",
+      "type": "numerique",
+      "answer": {
+        "value": 44,
+        "unit": "€",
+        "accepted": [
+          "44 euros"
+        ]
+      },
+      "points": 2,
+      "solution_steps": [
+        "Le billet de 20 € : 20 €. Les 2 billets de 5 € : 5 + 5 = 10 €.",
+        "Les 7 pièces de 2 € : 2 + 2 + 2 + 2 + 2 + 2 + 2 = 14 €.",
+        "En tout : 20 + 10 + 14 = 44. Le papa a **44 €**."
+      ],
+      "hint": "Compte la valeur de chaque billet et de chaque pièce."
+    },
+    {
+      "key": "q3",
+      "skill_id": "D017",
+      "statement": "Combien coûtent en tout les ballons, les bougies et le gâteau ?",
+      "type": "numerique",
+      "answer": {
+        "value": 18.35,
+        "unit": "€",
+        "accepted": [
+          "18,35 €",
+          "18,35 euros",
+          "18 € 35",
+          "18 euros 35",
+          "18€35"
+        ]
+      },
+      "points": 3,
+      "solution_steps": [
+        "On pose l'addition des trois prix en alignant les virgules : centimes sous centimes, euros sous euros.",
+        "Centimes : 5 + 0 + 0 = 5. Dizaines de centimes : 6 + 8 + 9 = 23 ; on écrit 3 et on retient 2 €.",
+        "Euros : 2 + 1 + 3 + 2 = 8. Dizaines d'euros : 1.",
+        "Les achats coûtent **18,35 €** en tout. Le ballon géant n'a pas été acheté : il ne compte pas."
+      ],
+      "hint": "Pose l'addition des trois prix, virgule sous virgule."
+    },
+    {
+      "key": "q4",
+      "skill_id": "D017",
+      "statement": "Combien d'argent rend-on au papa quand il paie le gâteau ?",
+      "type": "numerique",
+      "answer": {
+        "value": 6.1,
+        "unit": "€",
+        "accepted": [
+          "6,10 €",
+          "6,10 euros",
+          "6 € 10",
+          "6 euros 10",
+          "6€10"
+        ]
+      },
+      "points": 4,
+      "solution_steps": [
+        "Le papa paie le gâteau seul, avec le billet de 20 €. On écrit 20 € avec deux chiffres de centimes, 20,00 €, et on pose la soustraction de 13,90 €.",
+        "Centimes : 0 − 0 = 0. Dizaines de centimes : 0 − 9, c'est impossible ; on casse 1 € en 10 dizaines de centimes : 10 − 9 = 1.",
+        "Euros : il reste 19 € ; 19 − 13 = 6.",
+        "On rend **6,10 €** au papa. Vérification : 13,90 + 6,10 = 20."
+      ],
+      "hint": "Écris 20 € avec deux chiffres de centimes avant de poser la soustraction."
+    }
+  ],
+  "review_status": "brouillon",
+  "programme_ref": "Cycle 2, Cours élémentaire deuxième année, La monnaie : « Les techniques posées rencontrées au CE1 pour l'addition et la soustraction des nombres entiers sont étendues au CE2 aux montants en euro utilisant l'écriture à virgule. »"
+}

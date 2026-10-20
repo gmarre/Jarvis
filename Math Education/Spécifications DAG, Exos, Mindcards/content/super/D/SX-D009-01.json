@@ -1,0 +1,141 @@
+{
+  "id": "SX-D009-01",
+  "skill_id": "D009",
+  "skill_ids": [
+    "D009",
+    "D022",
+    "B008"
+  ],
+  "school_level": "6e",
+  "title": "Le 60 mètres au chronomètre",
+  "contexte": "Au stade, les 26 élèves de 6e B courent le 60 m. Le professeur d'EPS utilise un chronomètre électronique qui affiche les temps au millième de seconde. La piste compte 4 couloirs : les élèves courent par séries de 4, et la dernière série peut être incomplète.\n\nVoici les temps de la première série :\nAyoub : 9,384 s ;\nClara : 9,438 s ;\nRémi : 10,052 s ;\nSofia : 9,349 s.\n\nLe professeur recopie les temps dans son carnet, arrondis au dixième de seconde. Le record du collège sur 60 m est de 8,2 s, et la séance se termine à 11 h 55.",
+  "image": null,
+  "duree_estimee_min": 15,
+  "questions": [
+    {
+      "key": "q1",
+      "skill_id": "D022",
+      "statement": "Quel est le chiffre des centièmes dans le temps de Clara ?",
+      "type": "qcm",
+      "choices": [
+        {
+          "key": "a",
+          "text": "4",
+          "misconception": "L'élève donne le chiffre des dixièmes, juste après la virgule."
+        },
+        {
+          "key": "b",
+          "text": "8",
+          "misconception": "L'élève donne le dernier chiffre : 8 est le chiffre des millièmes."
+        },
+        {
+          "key": "c",
+          "text": "3",
+          "misconception": null
+        }
+      ],
+      "answer": {
+        "value": "c"
+      },
+      "points": 1,
+      "solution_steps": [
+        "9,438 : 9 unités, 4 dixièmes, 3 centièmes et 8 millièmes.",
+        "Le chiffre des centièmes est **3**."
+      ],
+      "hint": "Nomme le rang de chaque chiffre écrit après la virgule."
+    },
+    {
+      "key": "q2",
+      "skill_id": "B008",
+      "statement": "Combien de séries faut-il pour que tous les élèves courent ?",
+      "type": "numerique",
+      "answer": {
+        "value": 7,
+        "unit": "séries"
+      },
+      "points": 2,
+      "solution_steps": [
+        "26 élèves, 4 par série : on pose la division euclidienne de 26 par 4.",
+        "26 = 4 × 6 + 2 : 6 séries complètes, et il reste 2 élèves.",
+        "Ces 2 élèves forment une dernière série, incomplète : il faut **7 séries**."
+      ],
+      "hint": "Que deviennent les élèves qui restent après les séries complètes ?"
+    },
+    {
+      "key": "q3",
+      "skill_id": "D009",
+      "statement": "Quel temps le professeur recopie-t-il pour Rémi ?",
+      "type": "numerique",
+      "answer": {
+        "value": 10.1,
+        "unit": "s"
+      },
+      "points": 2,
+      "solution_steps": [
+        "Au dixième : 10,0 < 10,052 < 10,1.",
+        "On regarde le chiffre juste après les dixièmes, celui des centièmes : 5. De 5 à 9, on prend la valeur du dessus.",
+        "Le professeur recopie **10,1 s** pour Rémi."
+      ],
+      "hint": "Encadre le temps de Rémi entre deux nombres à un chiffre après la virgule qui se suivent."
+    },
+    {
+      "key": "q4",
+      "skill_id": "D009",
+      "statement": "Dans le carnet, quels élèves de la première série ont le même temps ?",
+      "type": "qcm",
+      "choices": [
+        {
+          "key": "a",
+          "text": "Ayoub et Sofia",
+          "misconception": "L'élève coupe au lieu d'arrondir : il garde 9,3 pour Ayoub comme pour Sofia. Or 9,384 a 8 centièmes : il s'arrondit à 9,4."
+        },
+        {
+          "key": "b",
+          "text": "Ayoub et Clara",
+          "misconception": null
+        },
+        {
+          "key": "c",
+          "text": "Ayoub, Clara et Sofia",
+          "misconception": "L'élève arrondit en deux fois : 9,349 donne 9,35, puis 9,4. Il faut regarder directement le chiffre des centièmes de 9,349, qui est 4 : 9,3."
+        },
+        {
+          "key": "d",
+          "text": "Aucun élève",
+          "misconception": "L'élève compare les temps affichés par le chronomètre, et non les temps arrondis au dixième."
+        }
+      ],
+      "answer": {
+        "value": "b"
+      },
+      "points": 3,
+      "solution_steps": [
+        "Ayoub : 9,3 < 9,384 < 9,4 ; 8 centièmes, donc 9,4.",
+        "Clara : 9,4 < 9,438 < 9,5 ; 3 centièmes, donc 9,4.",
+        "Sofia : 9,3 < 9,349 < 9,4 ; 4 centièmes, donc 9,3. Rémi : 10,1.",
+        "**Ayoub et Clara** ont le même temps dans le carnet : 9,4 s."
+      ],
+      "hint": "Arrondis au dixième le temps de chaque élève."
+    },
+    {
+      "key": "q5",
+      "skill_id": "D009",
+      "statement": "Pour départager les élèves, le professeur décide d'arrondir les temps au centième. Quel temps note-t-il pour Sofia ?",
+      "type": "numerique",
+      "answer": {
+        "value": 9.35,
+        "unit": "s"
+      },
+      "points": 4,
+      "solution_steps": [
+        "Au centième : 9,34 < 9,349 < 9,35.",
+        "On regarde le chiffre des millièmes : 9. De 5 à 9, on prend la valeur du dessus.",
+        "Le professeur note **9,35 s** pour Sofia.",
+        "Attention : arrondi au dixième, le temps de Sofia est 9,3 s ; arrondi au centième, c'est 9,35 s. On arrondit toujours le nombre de départ, jamais un arrondi."
+      ],
+      "hint": "Encadre le temps de Sofia entre deux nombres à deux chiffres après la virgule qui se suivent."
+    }
+  ],
+  "review_status": "brouillon",
+  "programme_ref": "Cycle 3, classe de 6e, Les nombres entiers et décimaux : « Donner la valeur arrondie à l'unité, au dixième ou au centième, d'un nombre décimal »"
+}

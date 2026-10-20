@@ -1,0 +1,127 @@
+{
+  "id": "SX-D026-01",
+  "skill_id": "D026",
+  "skill_ids": [
+    "D026",
+    "B040",
+    "D007"
+  ],
+  "school_level": "5e",
+  "title": "Le jus de pomme du club nature",
+  "contexte": "Le club nature du collège, qui compte 21 élèves, récolte les pommes du verger. Cette année, les élèves ont cueilli 456 pommes, rangées dans des cagettes de 24 pommes chacune, toutes pleines.\n\nIls pressent une partie des pommes et obtiennent 37,8 L de jus. Ils le versent dans des bouteilles de 0,75 L ; le jus qui reste après la dernière bouteille pleine est bu au goûter.\n\nIls ont acheté 6 rouleaux d'étiquettes identiques pour 13,80 € en tout. Un rouleau mesure 9 m, et chaque étiquette occupe 0,12 m de rouleau.\n\nLe pressoir a été prêté par un parent d'élève, et la vente a lieu le samedi 18 octobre.",
+  "image": null,
+  "duree_estimee_min": 18,
+  "questions": [
+    {
+      "key": "q1",
+      "skill_id": "D026",
+      "statement": "Quel calcul donne le nombre de bouteilles que l'on peut remplir avec le jus ?",
+      "type": "qcm",
+      "choices": [
+        {
+          "key": "a",
+          "text": "$37{,}8 \\times 0{,}75$",
+          "misconception": "L'élève multiplie. On cherche combien de fois 0,75 L est contenu dans 37,8 L : c'est une division."
+        },
+        {
+          "key": "b",
+          "text": "$37{,}8 \\div 0{,}75$",
+          "misconception": null
+        },
+        {
+          "key": "c",
+          "text": "$0{,}75 \\div 37{,}8$",
+          "misconception": "L'élève inverse le dividende et le diviseur : le résultat serait plus petit que 1, alors qu'on remplit de nombreuses bouteilles."
+        }
+      ],
+      "answer": {
+        "value": "b"
+      },
+      "points": 1,
+      "solution_steps": [
+        "On cherche combien de bouteilles de 0,75 L on remplit avec 37,8 L : combien de fois 0,75 est contenu dans 37,8.",
+        "C'est une division : $37{,}8 \\div 0{,}75$."
+      ],
+      "hint": "Relis la phrase qui parle des bouteilles."
+    },
+    {
+      "key": "q2",
+      "skill_id": "B040",
+      "statement": "Combien de cagettes les élèves ont-ils remplies ?",
+      "type": "numerique",
+      "answer": {
+        "value": 19,
+        "unit": "cagettes"
+      },
+      "points": 2,
+      "solution_steps": [
+        "456 pommes rangées par 24 : on pose la division euclidienne de 456 par 24.",
+        "24 × 10 = 240 et 24 × 20 = 480 : le quotient est compris entre 10 et 20.",
+        "24 × 19 = 456 : le reste est 0. Les élèves ont rempli **19 cagettes**."
+      ],
+      "hint": "Encadre 456 entre deux multiples de 24."
+    },
+    {
+      "key": "q3",
+      "skill_id": "D007",
+      "statement": "Combien coûte un rouleau d'étiquettes ?",
+      "type": "numerique",
+      "answer": {
+        "value": 2.3,
+        "unit": "€",
+        "accepted": [
+          "2,30 €",
+          "2,30 euros",
+          "2 € 30",
+          "2 euros 30",
+          "2€30"
+        ]
+      },
+      "points": 2,
+      "solution_steps": [
+        "6 rouleaux coûtent 13,80 € : on pose 13,80 ÷ 6, c'est-à-dire 13,8 ÷ 6.",
+        "13 unités : 2 unités chacun (6 × 2 = 12), il reste 1 unité, soit 10 dixièmes ; avec les 8 dixièmes, cela fait 18 dixièmes.",
+        "18 dixièmes : 3 dixièmes chacun (6 × 3 = 18), il reste 0.",
+        "Un rouleau coûte **2,30 €**."
+      ],
+      "hint": "Pose la division de 13,8 par 6."
+    },
+    {
+      "key": "q4",
+      "skill_id": "D026",
+      "statement": "Combien d'étiquettes peut-on découper dans un rouleau ?",
+      "type": "numerique",
+      "answer": {
+        "value": 75,
+        "unit": "étiquettes"
+      },
+      "points": 3,
+      "solution_steps": [
+        "On calcule 9 ÷ 0,12. On multiplie le dividende et le diviseur par 100 pour que le diviseur devienne un entier : 9 ÷ 0,12 = 900 ÷ 12.",
+        "900 ÷ 12 = 75, car 12 × 75 = 900.",
+        "On découpe **75 étiquettes** dans un rouleau. Diviser par 0,12, plus petit que 1, donne bien un résultat plus grand que 9."
+      ],
+      "hint": "Par quel nombre faut-il multiplier 0,12 pour obtenir un entier ?"
+    },
+    {
+      "key": "q5",
+      "skill_id": "D026",
+      "statement": "Combien de bouteilles pleines les élèves remplissent-ils ?",
+      "type": "numerique",
+      "answer": {
+        "value": 50,
+        "unit": "bouteilles"
+      },
+      "points": 4,
+      "solution_steps": [
+        "On calcule 37,8 ÷ 0,75. Le diviseur a deux chiffres après la virgule : on multiplie les deux nombres par 100. 37,8 ÷ 0,75 = 3 780 ÷ 75.",
+        "3 780 = 75 × 50 + 30 : on remplit 50 bouteilles, et il reste 30 centièmes de litre, soit 0,3 L.",
+        "Une bouteille de plus ne serait pas pleine : les élèves remplissent **50 bouteilles**, et 0,3 L de jus est bu au goûter.",
+        "Vérification : 0,75 × 5 = 3,75, donc 50 bouteilles contiennent 3,75 × 10 = 37,5 L, et 37,5 + 0,3 = 37,8."
+      ],
+      "hint": "La dernière bouteille est-elle pleine ?"
+    }
+  ],
+  "review_status": "brouillon",
+  "programme_ref": "Cycle 4, classe de 5e, Nombres et calculs, Opérations, Objectifs d'apprentissage : « Diviser par un nombre décimal. »"
+}
