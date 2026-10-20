@@ -1,0 +1,95 @@
+{
+  "id": "SX-A026-01",
+  "skill_id": "A026",
+  "skill_ids": [
+    "A026",
+    "A013",
+    "B039"
+  ],
+  "school_level": "CM2",
+  "title": "La journée sportive",
+  "contexte": "Pour la journée sportive, les 30 élèves de la classe de CM2 de l'école Jules-Verne seront répartis en équipes. Toutes les équipes auront le même nombre d'élèves, et chaque élève sera dans une équipe. Le directeur veut au moins deux équipes, et au moins deux élèves dans chaque équipe.\n\nPour les jeux, il a prévu 3 ballons et 18 chasubles. Le car partira de l'école à 8 h 15 et la journée finira à 16 h. Le transport coûte 245 € pour toute la classe.",
+  "image": null,
+  "duree_estimee_min": 15,
+  "questions": [
+    {
+      "key": "q1",
+      "skill_id": "A013",
+      "statement": "Lina propose de faire des équipes de 4 élèves. Vrai ou faux : c'est possible en respectant les règles du directeur.",
+      "type": "vrai_faux",
+      "answer": {
+        "value": false
+      },
+      "points": 1,
+      "solution_steps": [
+        "Pour faire des équipes de 4 élèves, 4 doit être un diviseur de 30 : 30 doit être dans la table de 4.",
+        "4 × 7 = 28 et 4 × 8 = 32 : 30 n'est pas dans la table de 4. Avec des équipes de 4, il resterait 2 élèves sans équipe.",
+        "C'est **faux**. Le nombre de ballons ne compte pas ici."
+      ],
+      "hint": null
+    },
+    {
+      "key": "q2",
+      "skill_id": "B039",
+      "statement": "Le directeur choisit des équipes de 5 élèves. Combien d'équipes y aura-t-il ?",
+      "type": "numerique",
+      "answer": {
+        "value": 6,
+        "unit": "équipes"
+      },
+      "points": 2,
+      "solution_steps": [
+        "On partage 30 élèves en équipes de 5 : 30 ÷ 5.",
+        "5 × 6 = 30, donc 30 ÷ 5 = 6.",
+        "Il y aura **6 équipes** de 5 élèves."
+      ],
+      "hint": null
+    },
+    {
+      "key": "q3",
+      "skill_id": "A026",
+      "statement": "Quels nombres d'élèves par équipe le directeur peut-il choisir en respectant ses règles ? Écris-les du plus petit au plus grand, séparés par des virgules.",
+      "type": "texte",
+      "answer": {
+        "value": "2, 3, 5, 6, 10, 15",
+        "accepted": [
+          "2,3,5,6,10,15",
+          "2 ; 3 ; 5 ; 6 ; 10 ; 15",
+          "2;3;5;6;10;15",
+          "2 3 5 6 10 15",
+          "2, 3, 5, 6, 10 et 15",
+          "2 ; 3 ; 5 ; 6 ; 10 et 15",
+          "2,3,5,6,10 et 15",
+          "2-3-5-6-10-15",
+          "2 - 3 - 5 - 6 - 10 - 15"
+        ]
+      },
+      "points": 3,
+      "solution_steps": [
+        "Le nombre d'élèves par équipe doit être un diviseur de 30 : toutes les équipes sont complètes et égales.",
+        "Les produits égaux à 30 sont 1 × 30 ; 2 × 15 ; 3 × 10 ; 5 × 6. Les diviseurs de 30 sont donc 1, 2, 3, 5, 6, 10, 15 et 30.",
+        "Les règles écartent 1 (une équipe doit avoir au moins deux élèves) et 30 (il n'y aurait qu'une seule équipe).",
+        "Le directeur peut choisir **2, 3, 5, 6, 10 ou 15** élèves par équipe."
+      ],
+      "hint": "Cherche toutes les façons d'écrire 30 comme un produit de deux nombres."
+    },
+    {
+      "key": "q4",
+      "skill_id": "A026",
+      "statement": "Le matin de la journée sportive, 10 élèves sont à la piscine : seuls 20 élèves participent aux premiers jeux. Les règles ne changent pas. Combien de nombres d'élèves par équipe le directeur peut-il choisir pour ces premiers jeux ?",
+      "type": "numerique",
+      "answer": {
+        "value": 4
+      },
+      "points": 3,
+      "solution_steps": [
+        "On cherche les produits égaux à 20 : 1 × 20 ; 2 × 10 ; 4 × 5. 20 n'est ni dans la table de 3, ni dans celles de 6, 7, 8 ou 9.",
+        "Les diviseurs de 20 sont 1, 2, 4, 5, 10 et 20. Les règles écartent 1 et 20.",
+        "Il reste des équipes de 2, 4, 5 ou 10 élèves : **4 choix**."
+      ],
+      "hint": "Cherche toutes les façons d'écrire 20 comme un produit de deux nombres."
+    }
+  ],
+  "review_status": "relu_agent",
+  "programme_ref": "Cycle 3, Cours moyen deuxième année, Les nombres entiers : « Déterminer tous les diviseurs d'un nombre entier inférieur ou égal à 30 »"
+}

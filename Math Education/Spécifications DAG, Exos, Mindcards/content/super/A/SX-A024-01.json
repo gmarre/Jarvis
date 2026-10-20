@@ -1,0 +1,127 @@
+{
+  "id": "SX-A024-01",
+  "skill_id": "A024",
+  "skill_ids": [
+    "A024",
+    "A026",
+    "B039",
+    "B040"
+  ],
+  "school_level": "3e",
+  "title": "Les photos de classe",
+  "contexte": "Le photographe du collège prépare les photos de classe. Sa règle : les élèves d'une classe se placent en rangées complètes, qui comptent toutes le même nombre d'élèves. Il veut au moins deux rangées, et au moins deux élèves par rangée.\n\nLes effectifs des classes de troisième :\n3e A : 30 élèves\n3e B : 23 élèves\n3e C : 25 élèves\n3e D : 31 élèves\n\nIl photographie aussi les 84 élèves de l'association sportive, placés en rangées de 12.\n\nPour l'exposition de fin d'année, il affichera 16 portraits sur un panneau, en lignes complètes qui comptent toutes le même nombre de portraits, avec au moins deux lignes et au moins deux portraits par ligne.\n\nChaque photo est vendue 9 €. La séance a lieu dans le gymnase et commence à 13 h 30.",
+  "image": null,
+  "duree_estimee_min": 15,
+  "questions": [
+    {
+      "key": "q1",
+      "skill_id": "B039",
+      "statement": "Le photographe place la 3e A en rangées de 6 élèves. Combien de rangées obtient-il ?",
+      "type": "numerique",
+      "answer": {
+        "value": 5,
+        "unit": "rangées"
+      },
+      "points": 1,
+      "solution_steps": [
+        "La 3e A compte 30 élèves, placés en rangées de 6.",
+        "30 ÷ 6 = 5, car 6 × 5 = 30.",
+        "Il obtient **5 rangées**."
+      ],
+      "hint": null
+    },
+    {
+      "key": "q2",
+      "skill_id": "B040",
+      "statement": "Combien de rangées forment les élèves de l'association sportive ?",
+      "type": "numerique",
+      "answer": {
+        "value": 7,
+        "unit": "rangées"
+      },
+      "points": 2,
+      "solution_steps": [
+        "84 élèves en rangées de 12 : on divise 84 par 12.",
+        "12 × 7 = 84, donc 84 ÷ 12 = 7.",
+        "Les élèves de l'association forment **7 rangées** de 12."
+      ],
+      "hint": null
+    },
+    {
+      "key": "q3",
+      "skill_id": "A026",
+      "statement": "Pour le panneau de l'exposition, combien de nombres de lignes différents le photographe peut-il choisir ?",
+      "type": "numerique",
+      "answer": {
+        "value": 3
+      },
+      "points": 2,
+      "solution_steps": [
+        "Le nombre de lignes doit être un diviseur de 16 : les lignes sont complètes et égales.",
+        "Les produits égaux à 16 sont 1 × 16 ; 2 × 8 ; 4 × 4. Les diviseurs de 16 sont donc 1, 2, 4, 8 et 16.",
+        "La règle écarte 1 ligne (il en faut au moins deux) et 16 lignes (il n'y aurait qu'un portrait par ligne).",
+        "Il reste 2, 4 et 8 lignes : **3 choix**."
+      ],
+      "hint": "Le nombre de lignes doit diviser le nombre de portraits."
+    },
+    {
+      "key": "q4",
+      "skill_id": "A024",
+      "statement": "Quelles classes de troisième le photographe ne peut-il pas placer en respectant sa règle ?",
+      "type": "qcm",
+      "choices": [
+        {
+          "key": "a",
+          "text": "La 3e B seulement",
+          "misconception": "L'élève reconnaît que 23 est premier, mais pas 31. Or 31 n'a pas d'autre diviseur que 1 et lui-même : il est premier aussi."
+        },
+        {
+          "key": "b",
+          "text": "La 3e B, la 3e C et la 3e D",
+          "misconception": "L'élève croit que 25 est premier parce qu'il est impair. Or 25 = 5 × 5 : 5 rangées de 5 élèves conviennent."
+        },
+        {
+          "key": "c",
+          "text": "La 3e B et la 3e D",
+          "misconception": null
+        },
+        {
+          "key": "d",
+          "text": "La 3e C et la 3e D",
+          "misconception": "L'élève écarte les effectifs qui finissent par 1 ou par 5 sans chercher de diviseur : 25 = 5 × 5 se place, alors que 23 ne se place pas."
+        }
+      ],
+      "answer": {
+        "value": "c"
+      },
+      "points": 3,
+      "solution_steps": [
+        "Une classe se place selon la règle si son effectif est un produit de deux entiers au moins égaux à 2 : nombre de rangées × élèves par rangée.",
+        "C'est impossible exactement quand l'effectif est un nombre premier : ses seuls diviseurs sont 1 et lui-même.",
+        "30 = 5 × 6 et 25 = 5 × 5 ne sont pas premiers. Les seuls diviseurs de 23 sont 1 et 23, ceux de 31 sont 1 et 31 : aucune division par 2, 3, 4, 5… ne tombe juste. 23 et 31 sont premiers.",
+        "Le photographe ne peut placer ni la **3e B** (23 élèves) ni la **3e D** (31 élèves)."
+      ],
+      "hint": "Pour chaque classe, cherche si l'effectif s'écrit comme un produit de deux entiers au moins égaux à 2."
+    },
+    {
+      "key": "q5",
+      "skill_id": "A024",
+      "statement": "La chorale du collège compte plus de 44 élèves et moins de 52. Le photographe ne peut pas la placer en respectant sa règle. Combien d'élèves compte la chorale ?",
+      "type": "numerique",
+      "answer": {
+        "value": 47,
+        "unit": "élèves"
+      },
+      "points": 3,
+      "solution_steps": [
+        "Le photographe ne peut pas placer la chorale : son effectif n'a pas d'autre diviseur que 1 et lui-même, c'est un nombre premier.",
+        "On teste les nombres de 45 à 51 : 45 = 5 × 9 ; 46 = 2 × 23 ; 48 = 6 × 8 ; 49 = 7 × 7 ; 50 = 5 × 10 ; 51 = 3 × 17 (la somme de ses chiffres, 6, est divisible par 3).",
+        "47 n'est divisible ni par 2, ni par 3, ni par 5, ni par 7 : ses seuls diviseurs sont 1 et 47. C'est le seul nombre premier entre 44 et 52.",
+        "La chorale compte **47 élèves**."
+      ],
+      "hint": "Pour chaque effectif possible, cherche s'il s'écrit comme un produit de deux entiers au moins égaux à 2."
+    }
+  ],
+  "review_status": "relu_agent",
+  "programme_ref": "Cycle 4, programme de 2020 commun aux trois classes, Thème A, Nombres et calculs : « Déterminer les nombres premiers inférieurs ou égaux à 100. »"
+}

@@ -1,0 +1,137 @@
+{
+  "id": "SX-A029-01",
+  "skill_id": "A029",
+  "skill_ids": [
+    "A029",
+    "P024",
+    "D021"
+  ],
+  "school_level": "5e",
+  "title": "Les maquettes de la fête de la science",
+  "contexte": "Pour la fête de la science, les élèves de 5e construisent des maquettes avec des petits cubes de bois de 1 cm d'arête.\n\nLe groupe de Nina construit un grand carré à plat, d'une seule couche, de 12 petits cubes de côté. Il le pose ensuite sur une plaque carrée de 15 cm de côté.\n\nLe groupe d'Hugo construit un grand cube plein, de 6 petits cubes d'arête.\n\nLe groupe de Sam construit un autre grand cube plein, avec exactement 512 petits cubes.\n\nLes petits cubes sont vendus en sachets de 100, à 4,50 € le sachet. La fête de la science a lieu en octobre et dure 3 jours.",
+  "image": null,
+  "duree_estimee_min": 15,
+  "questions": [
+    {
+      "key": "q1",
+      "skill_id": "A029",
+      "statement": "Quelle écriture donne le nombre de petits cubes du grand carré du groupe de Nina ?",
+      "type": "qcm",
+      "choices": [
+        {
+          "key": "a",
+          "text": "$12 \\times 2$",
+          "misconception": "L'élève multiplie par l'exposant : « 12 au carré » n'est pas le double de 12, c'est 12 × 12."
+        },
+        {
+          "key": "b",
+          "text": "$12^3$",
+          "misconception": "Le carré de Nina n'a qu'une couche : $12^3$ compterait 12 couches de 12 rangées de 12 cubes."
+        },
+        {
+          "key": "c",
+          "text": "$12^2$",
+          "misconception": null
+        },
+        {
+          "key": "d",
+          "text": "$4 \\times 12$",
+          "misconception": "4 × 12 compte les cubes le long des quatre côtés (en comptant deux fois les coins), pas tous les cubes du carré."
+        }
+      ],
+      "answer": {
+        "value": "c"
+      },
+      "points": 1,
+      "solution_steps": [
+        "Le grand carré a 12 rangées de 12 petits cubes : il en contient 12 × 12.",
+        "Un produit d'un nombre par lui-même s'écrit avec un carré : on écrit $12^2$, qu'on lit « 12 au carré ».",
+        "La bonne écriture est $12^2$ ; elle vaut 144."
+      ],
+      "hint": null
+    },
+    {
+      "key": "q2",
+      "skill_id": "P024",
+      "statement": "Quelle aire de la plaque reste visible autour du grand carré de Nina, en cm² ?",
+      "type": "numerique",
+      "answer": {
+        "value": 81,
+        "unit": "cm²"
+      },
+      "points": 2,
+      "solution_steps": [
+        "Chaque petit cube a 1 cm d'arête : le grand carré de Nina mesure 12 cm de côté. Son aire : 12 × 12 = 144 cm².",
+        "La plaque mesure 15 cm de côté. Son aire : 15 × 15 = 225 cm².",
+        "Aire visible : 225 − 144 = 81, soit **81 cm²**.",
+        "Attention : 15 − 12 = 3 cm est l'écart entre les côtés, pas une aire."
+      ],
+      "hint": "Calcule l'aire de la plaque et celle du grand carré."
+    },
+    {
+      "key": "q3",
+      "skill_id": "A029",
+      "statement": "Combien de petits cubes faut-il pour le grand cube du groupe d'Hugo ?",
+      "type": "numerique",
+      "answer": {
+        "value": 216,
+        "unit": "cubes",
+        "accepted": [
+          "216 petits cubes"
+        ]
+      },
+      "points": 3,
+      "solution_steps": [
+        "Le grand cube a 6 couches ; chaque couche est un carré de 6 rangées de 6 cubes, soit $6^2 = 36$ cubes.",
+        "6 couches de 36 cubes : $6^3 = 6 \\times 6 \\times 6 = 216$.",
+        "Il faut **216 petits cubes**.",
+        "Attention : $6^3$ n'est pas 6 × 3, qui vaut 18."
+      ],
+      "hint": "Compte d'abord les cubes d'une couche."
+    },
+    {
+      "key": "q4",
+      "skill_id": "D021",
+      "statement": "Le groupe de Sam achète juste assez de sachets pour avoir ses 512 petits cubes. Combien dépense-t-il ?",
+      "type": "numerique",
+      "answer": {
+        "value": 27,
+        "unit": "€",
+        "accepted": [
+          "27,00",
+          "27,00 €",
+          "27 euros"
+        ]
+      },
+      "points": 2,
+      "solution_steps": [
+        "5 sachets donnent 500 petits cubes : ce n'est pas assez pour 512. Il faut 6 sachets, soit 600 cubes.",
+        "6 sachets à 4,50 € : 6 × 4,50 = 27.",
+        "Le groupe de Sam dépense **27 €**."
+      ],
+      "hint": "Combien de sachets faut-il pour avoir au moins 512 cubes ?"
+    },
+    {
+      "key": "q5",
+      "skill_id": "A029",
+      "statement": "Combien de petits cubes mesure l'arête du grand cube de Sam ?",
+      "type": "numerique",
+      "answer": {
+        "value": 8,
+        "unit": "cubes",
+        "accepted": [
+          "8 petits cubes"
+        ]
+      },
+      "points": 3,
+      "solution_steps": [
+        "On cherche un entier qui, multiplié trois fois par lui-même, donne 512 : 512 est le cube de cet entier.",
+        "On essaie : $7^3 = 343$, trop petit ; $8^3 = 8 \\times 8 \\times 8 = 512$.",
+        "512 = $8^3$ : l'arête du grand cube de Sam mesure **8 petits cubes**."
+      ],
+      "hint": "Calcule les cubes de quelques entiers et compare-les à 512."
+    }
+  ],
+  "review_status": "relu_agent",
+  "programme_ref": "Cycle 4, classe de 5e, Nombres et calculs, Puissances, Objectifs d'apprentissage : « Découvrir la notion de puissance d'un nombre et sa notation dans le cas du carré et du cube. »"
+}

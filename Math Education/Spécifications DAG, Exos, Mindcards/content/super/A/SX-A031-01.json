@@ -1,0 +1,85 @@
+{
+  "id": "SX-A031-01",
+  "skill_id": "A031",
+  "skill_ids": [
+    "A031",
+    "A029",
+    "D006"
+  ],
+  "school_level": "4e",
+  "title": "La chaîne du club de basket",
+  "contexte": "Pour financer un tournoi, le club de basket lance une chaîne de messages. Le lundi, la présidente envoie l'appel à 3 personnes. Le mardi, chacune de ces personnes l'envoie à 3 nouvelles personnes, et ainsi de suite : chaque jour, le nombre de nouvelles personnes contactées est multiplié par 3. On numérote les jours : le lundi est le jour 1, le mardi le jour 2, et ainsi de suite.\n\nPendant ce temps, l'équipe teste une nouvelle balle. Lâchée d'une hauteur de 1 m, elle remonte, après chaque rebond, à 0,6 fois la hauteur d'où elle est tombée.\n\nLe club compte 48 licenciés, et le tournoi aura lieu dans 5 semaines.",
+  "image": null,
+  "duree_estimee_min": 15,
+  "questions": [
+    {
+      "key": "q1",
+      "skill_id": "A029",
+      "statement": "Combien de nouvelles personnes sont contactées le mardi ?",
+      "type": "numerique",
+      "answer": {
+        "value": 9,
+        "unit": "personnes"
+      },
+      "points": 1,
+      "solution_steps": [
+        "Le lundi, 3 personnes reçoivent l'appel. Le mardi, chacune l'envoie à 3 nouvelles personnes : 3 × 3 = 9.",
+        "**9 personnes** sont contactées le mardi, soit $3^2$."
+      ],
+      "hint": null
+    },
+    {
+      "key": "q2",
+      "skill_id": "A031",
+      "statement": "Combien de nouvelles personnes sont contactées le vendredi ?",
+      "type": "numerique",
+      "answer": {
+        "value": 243,
+        "unit": "personnes"
+      },
+      "points": 3,
+      "solution_steps": [
+        "Le jour 1, il y a 3 nouvelles personnes ; chaque jour, ce nombre est multiplié par 3.",
+        "Le vendredi est le jour 5 : on obtient un produit de 5 facteurs égaux à 3, c'est-à-dire $3^5$.",
+        "$3^5 = 3 \\times 3 \\times 3 \\times 3 \\times 3 = 243$.",
+        "**243 personnes** sont contactées le vendredi. Attention : $3^5$ n'est pas 3 × 5, qui vaut 15."
+      ],
+      "hint": "Le lundi est le jour 1 : quel est le numéro du vendredi ?"
+    },
+    {
+      "key": "q3",
+      "skill_id": "D006",
+      "statement": "Quelle hauteur la balle atteint-elle après son troisième rebond, en mètres ?",
+      "type": "numerique",
+      "answer": {
+        "value": 0.216,
+        "unit": "m"
+      },
+      "points": 2,
+      "solution_steps": [
+        "Après le premier rebond : 1 × 0,6 = 0,6 m. Après le deuxième : 0,6 × 0,6 = 0,36 m. Après le troisième : 0,36 × 0,6 = 0,216 m.",
+        "C'est $0{,}6^3 = 0{,}216$.",
+        "La balle remonte à **0,216 m**, un peu plus de 21 cm."
+      ],
+      "hint": "Multiplie la hauteur par 0,6 à chaque rebond."
+    },
+    {
+      "key": "q4",
+      "skill_id": "A031",
+      "statement": "Quel est le numéro du premier jour où plus de 2 000 nouvelles personnes sont contactées ?",
+      "type": "numerique",
+      "answer": {
+        "value": 7
+      },
+      "points": 3,
+      "solution_steps": [
+        "Le jour 5, $3^5 = 243$ nouvelles personnes sont contactées.",
+        "Le jour 6 : $3^6 = 243 \\times 3 = 729$. Le jour 7 : $3^7 = 729 \\times 3 = 2\\,187$.",
+        "729 ne dépasse pas 2 000, mais 2 187 le dépasse : c'est le **jour 7**, le dimanche."
+      ],
+      "hint": "Le jour 2, il y a $3^2$ nouvelles personnes ; continue jour après jour."
+    }
+  ],
+  "review_status": "relu_agent",
+  "programme_ref": "Cycle 4, classe de 4e, Nombres et calculs, Puissances, Objectifs d'apprentissage : « Définir les puissances d'exposant positif d'un nombre a. »"
+}

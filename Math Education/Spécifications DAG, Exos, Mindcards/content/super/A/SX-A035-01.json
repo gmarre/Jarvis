@@ -1,0 +1,124 @@
+{
+  "id": "SX-A035-01",
+  "skill_id": "A035",
+  "skill_ids": [
+    "A035",
+    "A034",
+    "B042"
+  ],
+  "school_level": "4e",
+  "title": "Les pelouses de M. Diaz",
+  "contexte": "M. Diaz, paysagiste, va poser du gazon en rouleaux sur trois pelouses carrées :\nla pelouse A, d'aire 81 m² ;\nla pelouse B, d'aire 40 m² ;\nla pelouse C, d'aire 138 m².\n\nIl doit aussi entourer la pelouse B d'une bordure en bois. La bordure est vendue en éléments droits de 1 m de long, qu'on ne peut pas couper. Sur chaque côté de la pelouse, il pose des éléments entiers bout à bout, jusqu'à couvrir tout le côté, quitte à dépasser un peu.\n\nLe gazon est livré un mardi matin, et M. Diaz travaille avec 3 ouvriers. Il n'a pas de calculatrice sur le chantier.",
+  "image": null,
+  "duree_estimee_min": 15,
+  "questions": [
+    {
+      "key": "q1",
+      "skill_id": "B042",
+      "statement": "Quelle aire de gazon M. Diaz doit-il poser en tout, en m² ?",
+      "type": "numerique",
+      "answer": {
+        "value": 259,
+        "unit": "m²"
+      },
+      "points": 1,
+      "solution_steps": [
+        "On additionne les aires des trois pelouses : 81 + 40 + 138 = 259.",
+        "Il doit poser **259 m²** de gazon."
+      ],
+      "hint": null
+    },
+    {
+      "key": "q2",
+      "skill_id": "A034",
+      "statement": "Quelle est la longueur du côté de la pelouse A ?",
+      "type": "numerique",
+      "answer": {
+        "value": 9,
+        "unit": "m"
+      },
+      "points": 2,
+      "solution_steps": [
+        "Le côté d'un carré d'aire 81 m² est $\\sqrt{81}$ m.",
+        "$\\sqrt{81} = 9$, car $9^2 = 81$ et 9 est positif.",
+        "Le côté de la pelouse A mesure **9 m**."
+      ],
+      "hint": null
+    },
+    {
+      "key": "q3",
+      "skill_id": "A035",
+      "statement": "Entre quels nombres entiers consécutifs se trouve la longueur, en mètres, du côté de la pelouse C ?",
+      "type": "qcm",
+      "choices": [
+        {
+          "key": "a",
+          "text": "Entre 11 et 12",
+          "misconception": null
+        },
+        {
+          "key": "b",
+          "text": "Entre 69 et 70",
+          "misconception": "L'élève prend la moitié de 138 : or 69 × 69 est bien plus grand que 138."
+        },
+        {
+          "key": "c",
+          "text": "Entre 138 et 139",
+          "misconception": "L'élève encadre l'aire au lieu du côté : il faut encadrer $\\sqrt{138}$, pas 138."
+        },
+        {
+          "key": "d",
+          "text": "Entre 12 et 13",
+          "misconception": "L'élève se trompe de carré : $12^2 = 144$ dépasse déjà 138, donc le côté est plus petit que 12."
+        }
+      ],
+      "answer": {
+        "value": "a"
+      },
+      "points": 2,
+      "solution_steps": [
+        "Le côté de la pelouse C mesure $\\sqrt{138}$ m.",
+        "On situe 138 entre deux carrés d'entiers qui se suivent : $11^2 = 121$ et $12^2 = 144$, et 121 < 138 < 144.",
+        "Donc $11 < \\sqrt{138} < 12$ : le côté est entre **11 m et 12 m**."
+      ],
+      "hint": "Cherche les carrés d'entiers qui encadrent 138."
+    },
+    {
+      "key": "q4",
+      "skill_id": "A035",
+      "statement": "De quel nombre entier la longueur, en mètres, du côté de la pelouse B est-elle la plus proche ?",
+      "type": "numerique",
+      "answer": {
+        "value": 6,
+        "unit": "m"
+      },
+      "points": 2,
+      "solution_steps": [
+        "$6^2 = 36$ et $7^2 = 49$ : 36 < 40 < 49, donc $6 < \\sqrt{40} < 7$.",
+        "40 est plus proche de 36 (écart de 4) que de 49 (écart de 9) : $\\sqrt{40}$ est plus proche de 6.",
+        "Le côté de la pelouse B est proche de **6 m**."
+      ],
+      "hint": null
+    },
+    {
+      "key": "q5",
+      "skill_id": "A035",
+      "statement": "Combien d'éléments de bordure M. Diaz doit-il acheter pour entourer la pelouse B ?",
+      "type": "numerique",
+      "answer": {
+        "value": 28,
+        "unit": "éléments"
+      },
+      "points": 3,
+      "solution_steps": [
+        "Chaque côté de la pelouse B mesure $\\sqrt{40}$ m, et $6 < \\sqrt{40} < 7$.",
+        "6 éléments de 1 m ne couvrent que 6 m, moins que le côté : il en faut 7 par côté.",
+        "Pour les 4 côtés : 4 × 7 = 28 éléments.",
+        "Attention : l'entier le plus proche, 6, ne suffit pas ici ; c'est l'entier juste au-dessus qui compte. Avec 4 × 6 = 24 éléments, chaque côté resterait incomplet."
+      ],
+      "hint": "Encadre d'abord la longueur d'un côté de la pelouse B entre deux entiers."
+    }
+  ],
+  "review_status": "relu_agent",
+  "programme_ref": "Cycle 4, classe de 4e, Nombres et calculs, Racine carrée, Objectifs d'apprentissage : « Encadrer la racine carrée d'un entier par deux nombres entiers consécutifs. »"
+}

@@ -1,0 +1,143 @@
+{
+  "id": "SX-A022-01",
+  "skill_id": "A022",
+  "skill_ids": [
+    "A022",
+    "A018",
+    "B004"
+  ],
+  "school_level": "5e",
+  "title": "Le tir de précision",
+  "contexte": "Le mercredi, six enfants du club de pétanque s'entraînent au « tir de précision ». Une ligne est tracée au sol, à 6 m du cercle de lancer. Chaque enfant lance une boule, puis l'animateur mesure l'écart entre la boule et la ligne, en centimètres : l'écart est positif si la boule a dépassé la ligne, et négatif si elle s'est arrêtée avant.\n\nLes écarts relevés :\nInès : −14\nNoé : 9\nMila : −9\nYanis : 31\nLou : −3,5\nAdam : −26\n\nUne boule pèse 650 g, et la séance a commencé à 15 h.\n\nLe vainqueur est l'enfant dont la boule s'est arrêtée le plus près de la ligne, c'est-à-dire celui dont l'écart a la plus petite distance à zéro.",
+  "image": null,
+  "duree_estimee_min": 15,
+  "questions": [
+    {
+      "key": "q1",
+      "skill_id": "A018",
+      "statement": "Combien d'enfants ont lancé leur boule trop court, sans atteindre la ligne ?",
+      "type": "numerique",
+      "answer": {
+        "value": 4,
+        "unit": "enfants"
+      },
+      "points": 1,
+      "solution_steps": [
+        "Une boule arrêtée avant la ligne a un écart négatif.",
+        "Les écarts négatifs sont ceux d'Inès (−14), de Mila (−9), de Lou (−3,5) et d'Adam (−26).",
+        "**4 enfants** ont lancé trop court. Noé (9) et Yanis (31) ont dépassé la ligne."
+      ],
+      "hint": "Relis ce que signifie un écart négatif."
+    },
+    {
+      "key": "q2",
+      "skill_id": "A022",
+      "statement": "Quelle est la distance à zéro de l'écart d'Inès ? C'est le nombre de centimètres entre sa boule et la ligne.",
+      "type": "numerique",
+      "answer": {
+        "value": 14,
+        "unit": "cm"
+      },
+      "points": 2,
+      "solution_steps": [
+        "L'écart d'Inès est −14.",
+        "La distance à zéro d'un nombre relatif, c'est ce nombre sans son signe : la distance à zéro de −14 est 14.",
+        "La boule d'Inès s'est arrêtée à **14 cm** de la ligne, avant elle.",
+        "Attention : une distance n'est jamais négative."
+      ],
+      "hint": "Une distance est toujours positive."
+    },
+    {
+      "key": "q3",
+      "skill_id": "A022",
+      "statement": "Deux enfants ont des écarts qui ont la même distance à zéro. Lesquels ?",
+      "type": "qcm",
+      "choices": [
+        {
+          "key": "a",
+          "text": "Inès et Adam",
+          "misconception": "L'élève choisit deux écarts de même signe : les deux boules sont avant la ligne, mais l'une à 14 cm et l'autre à 26 cm."
+        },
+        {
+          "key": "b",
+          "text": "Noé et Mila",
+          "misconception": null
+        },
+        {
+          "key": "c",
+          "text": "Noé et Yanis",
+          "misconception": "L'élève choisit deux écarts positifs : les deux boules ont dépassé la ligne, mais l'une de 9 cm, l'autre de 31 cm."
+        }
+      ],
+      "answer": {
+        "value": "b"
+      },
+      "points": 2,
+      "solution_steps": [
+        "Les écarts de Noé (9) et de Mila (−9) sont des nombres opposés : ils ont la même distance à zéro, 9.",
+        "Les deux boules sont à 9 cm de la ligne : celle de Noé après la ligne, celle de Mila avant.",
+        "Deux nombres de même signe, comme −14 et −26, ne sont pas pour autant à la même distance de zéro."
+      ],
+      "hint": null
+    },
+    {
+      "key": "q4",
+      "skill_id": "B004",
+      "statement": "De combien de centimètres la boule de Yanis est-elle plus éloignée de la ligne que celle d'Adam ?",
+      "type": "numerique",
+      "answer": {
+        "value": 5,
+        "unit": "cm"
+      },
+      "points": 2,
+      "solution_steps": [
+        "La boule de Yanis est à 31 cm de la ligne (la distance à zéro de 31) ; celle d'Adam à 26 cm (la distance à zéro de −26).",
+        "On compare les deux distances : 31 − 26 = 5.",
+        "La boule de Yanis est **5 cm** plus loin de la ligne que celle d'Adam.",
+        "Attention : 31 + 26 = 57 cm est l'écart entre les deux boules, de part et d'autre de la ligne, pas la différence de leurs distances à la ligne."
+      ],
+      "hint": "Compare les distances des deux boules à la ligne, sans leur signe."
+    },
+    {
+      "key": "q5",
+      "skill_id": "A022",
+      "statement": "Qui est le vainqueur ?",
+      "type": "qcm",
+      "choices": [
+        {
+          "key": "a",
+          "text": "Adam",
+          "misconception": "L'élève prend le plus petit nombre, −26. Or la boule d'Adam est à 26 cm de la ligne, l'une des plus éloignées : c'est la distance à zéro qui compte, pas le nombre."
+        },
+        {
+          "key": "b",
+          "text": "Noé",
+          "misconception": "L'élève ne regarde que les boules qui ont dépassé la ligne et prend la plus proche, à 9 cm. Il oublie Lou, dont la boule s'est arrêtée avant la ligne, mais plus près."
+        },
+        {
+          "key": "c",
+          "text": "Lou",
+          "misconception": null
+        },
+        {
+          "key": "d",
+          "text": "Yanis",
+          "misconception": "L'élève prend le plus grand écart, 31. Or plus la distance à zéro est grande, plus la boule est loin de la ligne."
+        }
+      ],
+      "answer": {
+        "value": "c"
+      },
+      "points": 3,
+      "solution_steps": [
+        "Le vainqueur a l'écart dont la distance à zéro est la plus petite.",
+        "Distances à zéro : Inès 14 ; Noé 9 ; Mila 9 ; Yanis 31 ; Lou 3,5 ; Adam 26.",
+        "La plus petite est 3,5 : **Lou** a gagné, sa boule s'est arrêtée à 3,5 cm de la ligne.",
+        "Le signe dit seulement de quel côté de la ligne est la boule : avant ou après."
+      ],
+      "hint": "Pour chaque enfant, écris la distance à zéro de son écart."
+    }
+  ],
+  "review_status": "relu_agent",
+  "programme_ref": "Cycle 4, classe de 5e, Nombres et calculs, Nombres relatifs, Objectifs d'apprentissage : « Définir l'opposé et la valeur absolue d'un nombre. »"
+}

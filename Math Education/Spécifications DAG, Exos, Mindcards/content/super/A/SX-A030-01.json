@@ -1,0 +1,122 @@
+{
+  "id": "SX-A030-01",
+  "skill_id": "A030",
+  "skill_ids": [
+    "A030",
+    "A029",
+    "P024"
+  ],
+  "school_level": "5e",
+  "title": "Le spectacle de danse",
+  "contexte": "Pour le spectacle de fin d'année du collège, Mme Benali, professeure d'EPS, prépare plusieurs tableaux de danse. Dans chaque tableau, les danseurs forment un carré plein : il y a autant de rangées que de danseurs dans chaque rangée.\n\nLe grand final réunit 11 rangées de danseurs. Chaque danseur occupe au sol une case carrée de 1 m de côté, et les cases se touchent.\nLes 100 élèves de 5e dansent un tableau tous ensemble.\nLes 90 élèves de 4e voudraient eux aussi danser tous ensemble.\nLe club théâtre compte 70 élèves : ils forment le plus grand carré plein possible, et ceux qui restent tiennent les rideaux.\n\nLa scène est un rectangle de 15 m sur 12 m. Le spectacle commence à 20 h, et le billet coûte 5 €.",
+  "image": null,
+  "duree_estimee_min": 15,
+  "questions": [
+    {
+      "key": "q1",
+      "skill_id": "A029",
+      "statement": "Quel calcul donne le nombre de danseurs du grand final ?",
+      "type": "qcm",
+      "choices": [
+        {
+          "key": "a",
+          "text": "11 × 2",
+          "misconception": "« 11 au carré » n'est pas le double de 11 : il y a 11 rangées de 11 danseurs, pas 2 rangées."
+        },
+        {
+          "key": "b",
+          "text": "11 × 11",
+          "misconception": null
+        },
+        {
+          "key": "c",
+          "text": "11 × 11 × 11",
+          "misconception": "Ce serait le cube de 11 : un carré plein n'a qu'une couche de danseurs."
+        },
+        {
+          "key": "d",
+          "text": "4 × 11",
+          "misconception": "4 × 11 compte les danseurs du tour du carré (en comptant deux fois les coins), pas tous les danseurs."
+        }
+      ],
+      "answer": {
+        "value": "b"
+      },
+      "points": 1,
+      "solution_steps": [
+        "Le grand final a 11 rangées, et chaque rangée compte autant de danseurs qu'il y a de rangées : 11.",
+        "11 rangées de 11 danseurs : 11 × 11, c'est-à-dire $11^2$, qui vaut 121."
+      ],
+      "hint": null
+    },
+    {
+      "key": "q2",
+      "skill_id": "A030",
+      "statement": "Combien de rangées forment les élèves de 5e ?",
+      "type": "numerique",
+      "answer": {
+        "value": 10,
+        "unit": "rangées"
+      },
+      "points": 2,
+      "solution_steps": [
+        "Les 100 élèves forment un carré plein : on cherche l'entier dont le carré vaut 100.",
+        "$10^2 = 100$ : ils forment **10 rangées** de 10 élèves.",
+        "Attention : la moitié de 100 ne convient pas ; on cherche le nombre qui, multiplié par lui-même, donne 100."
+      ],
+      "hint": null
+    },
+    {
+      "key": "q3",
+      "skill_id": "A030",
+      "statement": "Vrai ou faux : les 90 élèves de 4e peuvent former un carré plein.",
+      "type": "vrai_faux",
+      "answer": {
+        "value": false
+      },
+      "points": 2,
+      "solution_steps": [
+        "Pour former un carré plein, 90 doit être le carré d'un entier.",
+        "$9^2 = 81$ et $10^2 = 100$ : 90 est entre deux carrés d'entiers qui se suivent, ce n'est le carré d'aucun entier.",
+        "C'est **faux**. 90 se termine par 0 comme 100, mais cela ne suffit pas."
+      ],
+      "hint": "Cite les carrés des entiers proches de 90."
+    },
+    {
+      "key": "q4",
+      "skill_id": "A030",
+      "statement": "Combien d'élèves du club théâtre tiendront les rideaux ?",
+      "type": "numerique",
+      "answer": {
+        "value": 6,
+        "unit": "élèves"
+      },
+      "points": 3,
+      "solution_steps": [
+        "On cherche le plus grand carré d'entier qui ne dépasse pas 70 : $8^2 = 64$ convient, $9^2 = 81$ dépasse 70.",
+        "64 élèves dansent, en 8 rangées de 8.",
+        "70 − 64 = 6 : **6 élèves** tiennent les rideaux."
+      ],
+      "hint": "Quel est le plus grand carré d'entier inférieur à 70 ?"
+    },
+    {
+      "key": "q5",
+      "skill_id": "P024",
+      "statement": "Le carré des danseurs du grand final mesure 11 m de côté. Quelle aire de la scène reste libre autour de lui, en m² ?",
+      "type": "numerique",
+      "answer": {
+        "value": 59,
+        "unit": "m²"
+      },
+      "points": 2,
+      "solution_steps": [
+        "Aire de la scène, un rectangle de 15 m sur 12 m : 15 × 12 = 180 m².",
+        "Aire du carré des danseurs : 11 × 11 = 121 m².",
+        "Aire libre : 180 − 121 = 59, soit **59 m²**."
+      ],
+      "hint": null
+    }
+  ],
+  "review_status": "relu_agent",
+  "programme_ref": "Cycle 4, classe de 5e, Nombres et calculs, Puissances, Objectifs d'apprentissage : « Connaitre les carrés des entiers de 0 à 12. »"
+}

@@ -1,0 +1,93 @@
+{
+  "id": "SX-A032-01",
+  "skill_id": "A032",
+  "skill_ids": [
+    "A032",
+    "D024",
+    "D023"
+  ],
+  "school_level": "4e",
+  "title": "La visite du parc éolien",
+  "contexte": "La classe de 4e visite un parc éolien. Le guide donne quelques chiffres :\nle parc compte 12 éoliennes ;\nchaque éolienne a une puissance de 2,5 MW (mégawatts) ;\nchaque pale mesure 45 m de long ;\nen un an, le parc produit environ 60 GWh (gigawattheures) d'électricité ;\nun foyer consomme en moyenne 5 000 kWh (kilowattheures) d'électricité par an.\n\nPour comparer, le guide montre une ampoule LED, d'une puissance de 10 W (watts).\n\nLa visite coûte 3 € par élève, et le car est parti du collège à 8 h 15.",
+  "image": null,
+  "duree_estimee_min": 15,
+  "questions": [
+    {
+      "key": "q1",
+      "skill_id": "D024",
+      "statement": "Quelle est la puissance totale des éoliennes du parc, en MW ?",
+      "type": "numerique",
+      "answer": {
+        "value": 30,
+        "unit": "MW",
+        "accepted": [
+          "30 mégawatts"
+        ]
+      },
+      "points": 1,
+      "solution_steps": [
+        "Le parc compte 12 éoliennes de 2,5 MW chacune : 12 × 2,5.",
+        "12 × 2,5 = 30.",
+        "La puissance totale est de **30 MW**."
+      ],
+      "hint": null
+    },
+    {
+      "key": "q2",
+      "skill_id": "A032",
+      "statement": "Quelle est la puissance d'une éolienne, en watts ? Écris le nombre en chiffres.",
+      "type": "numerique",
+      "answer": {
+        "value": 2500000,
+        "unit": "W",
+        "accepted": [
+          "2 500 000 watts"
+        ]
+      },
+      "points": 2,
+      "solution_steps": [
+        "Le préfixe méga signifie $10^6$, un million : 1 MW = 1 000 000 W.",
+        "2,5 MW = 2,5 × 1 000 000 W = 2 500 000 W.",
+        "Une éolienne a une puissance de **2 500 000 W**."
+      ],
+      "hint": "Que signifie le préfixe méga ?"
+    },
+    {
+      "key": "q3",
+      "skill_id": "A032",
+      "statement": "Combien de foyers la production du parc peut-elle alimenter en électricité pendant un an ?",
+      "type": "numerique",
+      "answer": {
+        "value": 12000,
+        "unit": "foyers"
+      },
+      "points": 3,
+      "solution_steps": [
+        "Giga signifie $10^9$ et kilo $10^3$ : 1 GWh = 1 000 000 000 Wh = 1 000 000 kWh.",
+        "60 GWh = 60 × 1 000 000 kWh = 60 000 000 kWh.",
+        "Chaque foyer consomme 5 000 kWh : 60 000 000 ÷ 5 000 = 60 000 ÷ 5 = 12 000.",
+        "Le parc peut alimenter **12 000 foyers**. Attention : convertir les deux quantités dans la même unité avant de diviser."
+      ],
+      "hint": "Écris d'abord la production du parc en kWh."
+    },
+    {
+      "key": "q4",
+      "skill_id": "D023",
+      "statement": "Combien d'ampoules LED comme celle du guide, allumées en même temps, auraient une puissance totale d'un mégawatt ?",
+      "type": "numerique",
+      "answer": {
+        "value": 100000,
+        "unit": "ampoules"
+      },
+      "points": 2,
+      "solution_steps": [
+        "Un mégawatt, c'est 1 000 000 W.",
+        "Chaque ampoule a une puissance de 10 W : 1 000 000 ÷ 10 = 100 000.",
+        "Il faudrait **100 000 ampoules**."
+      ],
+      "hint": null
+    }
+  ],
+  "review_status": "relu_agent",
+  "programme_ref": "Cycle 4, Nombres et calculs, présentation commune aux trois classes : « On introduit en fonction des besoins les préfixes des puissances de dix de nano à giga. »"
+}

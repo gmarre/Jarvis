@@ -1,0 +1,111 @@
+{
+  "id": "SX-A027-01",
+  "skill_id": "A027",
+  "skill_ids": [
+    "A027",
+    "A026",
+    "B039"
+  ],
+  "school_level": "CM2",
+  "title": "Le goûter au bord du lac",
+  "contexte": "Pendant la classe verte, Mme Lebrun prépare le goûter. Elle a 12 crêpes et 28 clémentines. Elle veut faire des assiettes identiques : chaque assiette aura le même nombre de crêpes et le même nombre de clémentines, et elle veut tout utiliser.\n\nAprès le goûter, la classe se promène au bord du lac. Au ponton, un petit train part toutes les 8 minutes et une navette en bateau toutes les 10 minutes. À 15 h, ils partent ensemble.\n\nLa classe compte 25 élèves, et la classe verte dure 5 jours.",
+  "image": null,
+  "duree_estimee_min": 15,
+  "questions": [
+    {
+      "key": "q1",
+      "skill_id": "A026",
+      "statement": "Mme Lebrun pense d'abord à partager seulement les 12 crêpes en assiettes égales, sans qu'il en reste. Lequel de ces nombres d'assiettes convient ?",
+      "type": "qcm",
+      "choices": [
+        {
+          "key": "a",
+          "text": "5",
+          "misconception": "12 n'est pas dans la table de 5 : 5 × 2 = 10, il resterait 2 crêpes."
+        },
+        {
+          "key": "b",
+          "text": "8",
+          "misconception": "12 n'est pas dans la table de 8 : 8 × 1 = 8, il resterait 4 crêpes."
+        },
+        {
+          "key": "c",
+          "text": "6",
+          "misconception": null
+        },
+        {
+          "key": "d",
+          "text": "7",
+          "misconception": "12 n'est pas dans la table de 7 : 7 × 1 = 7, il resterait 5 crêpes."
+        }
+      ],
+      "answer": {
+        "value": "c"
+      },
+      "points": 1,
+      "solution_steps": [
+        "Le nombre d'assiettes doit être un diviseur de 12 : 12 doit être dans sa table.",
+        "12 = 6 × 2 : avec 6 assiettes, chacune reçoit 2 crêpes.",
+        "12 n'est ni dans la table de 5, ni dans celle de 7, ni dans celle de 8 : **6 assiettes** conviennent."
+      ],
+      "hint": null
+    },
+    {
+      "key": "q2",
+      "skill_id": "A027",
+      "statement": "Quel est le plus grand nombre d'assiettes que Mme Lebrun peut préparer en utilisant toutes les crêpes et toutes les clémentines ?",
+      "type": "numerique",
+      "answer": {
+        "value": 4,
+        "unit": "assiettes"
+      },
+      "points": 3,
+      "solution_steps": [
+        "Le nombre d'assiettes doit être à la fois un diviseur de 12 (pour les crêpes) et un diviseur de 28 (pour les clémentines).",
+        "Diviseurs de 12 : 1, 2, 3, 4, 6, 12. Diviseurs de 28 : 1, 2, 4, 7, 14, 28.",
+        "Les diviseurs communs sont 1, 2 et 4 : le plus grand est **4 assiettes**, avec 3 crêpes et 7 clémentines sur chacune."
+      ],
+      "hint": "Écris les diviseurs de 12, puis ceux de 28."
+    },
+    {
+      "key": "q3",
+      "skill_id": "B039",
+      "statement": "Si Mme Lebrun prépare 2 assiettes, combien de clémentines y aura-t-il sur chaque assiette ?",
+      "type": "numerique",
+      "answer": {
+        "value": 14,
+        "unit": "clémentines"
+      },
+      "points": 2,
+      "solution_steps": [
+        "On partage 28 clémentines en 2 assiettes : 28 ÷ 2.",
+        "2 × 14 = 28, donc 28 ÷ 2 = 14.",
+        "Il y aura **14 clémentines** sur chaque assiette."
+      ],
+      "hint": null
+    },
+    {
+      "key": "q4",
+      "skill_id": "A027",
+      "statement": "Le petit train et la navette partent ensemble du ponton à 15 h. Dans combien de minutes repartiront-ils ensemble pour la première fois ?",
+      "type": "numerique",
+      "answer": {
+        "value": 40,
+        "unit": "minutes",
+        "accepted": [
+          "40 min"
+        ]
+      },
+      "points": 3,
+      "solution_steps": [
+        "Le petit train repart 8, 16, 24, 32, 40… minutes après 15 h : aux multiples de 8.",
+        "La navette repart 10, 20, 30, 40… minutes après 15 h : aux multiples de 10.",
+        "Le plus petit multiple commun à 8 et à 10, sans compter 0, est 40 : 8 × 5 = 40 et 10 × 4 = 40.",
+        "Ils repartiront ensemble dans **40 minutes**. Attention : 8 × 10 = 80 est aussi un multiple commun, mais pas le plus petit."
+      ],
+      "hint": "Écris les premiers multiples de 8 et ceux de 10."
+    }
+  ],
+  "review_status": "relu_agent",
+  "programme_ref": "Cycle 3, Cours moyen deuxième année, Les nombres entiers : « Déterminer les diviseurs communs à deux nombres entiers inférieurs ou égaux à 30 »"
+}

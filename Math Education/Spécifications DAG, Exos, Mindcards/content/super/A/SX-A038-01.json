@@ -1,0 +1,124 @@
+{
+  "id": "SX-A038-01",
+  "skill_id": "A038",
+  "skill_ids": [
+    "A038",
+    "D023"
+  ],
+  "school_level": "3e",
+  "title": "L'exposé de Yasmine",
+  "contexte": "Pour un exposé sur le corps humain, Yasmine a relevé des données dans plusieurs livres :\nen un an, le cœur d'un adulte bat environ 37 000 000 fois ;\nune bactérie de l'intestin mesure environ 0,000 002 5 m ;\nle corps d'un adulte contient environ $25 \\times 10^{12}$ globules rouges ;\nun cheveu pousse d'environ 0,35 mm par jour.\n\nSon professeur lui demande d'écrire les très grands et les très petits nombres en notation scientifique, pour que la classe puisse les comparer. Son exposé doit durer 10 minutes, et sa classe compte 28 élèves.",
+  "image": null,
+  "duree_estimee_min": 15,
+  "questions": [
+    {
+      "key": "q1",
+      "skill_id": "A038",
+      "statement": "Pourquoi l'écriture $25 \\times 10^{12}$ n'est-elle pas une notation scientifique ?",
+      "type": "qcm",
+      "choices": [
+        {
+          "key": "a",
+          "text": "Parce que 25 n'est pas compris entre 1 et 10",
+          "misconception": null
+        },
+        {
+          "key": "b",
+          "text": "Parce que l'exposant 12 est trop grand",
+          "misconception": "L'exposant peut être aussi grand qu'on veut : c'est le facteur devant la puissance de 10 qui doit être compris entre 1 (inclus) et 10 (exclu)."
+        },
+        {
+          "key": "c",
+          "text": "Parce qu'il faudrait écrire le nombre avec tous ses chiffres",
+          "misconception": "La notation scientifique sert justement à ne pas écrire tous les chiffres d'un très grand nombre."
+        }
+      ],
+      "answer": {
+        "value": "a"
+      },
+      "points": 1,
+      "solution_steps": [
+        "Dans une notation scientifique $a \\times 10^n$, le nombre a doit être compris entre 1 (inclus) et 10 (exclu).",
+        "Ici, a = 25, plus grand que 10 : ce n'est **pas une notation scientifique**, même si l'écriture est juste."
+      ],
+      "hint": null
+    },
+    {
+      "key": "q2",
+      "skill_id": "A038",
+      "statement": "Écris en notation scientifique le nombre de battements du cœur en un an (tape ^ pour l'exposant).",
+      "type": "texte",
+      "answer": {
+        "value": "3,7 × 10⁷",
+        "accepted": [
+          "3,7 × 10^7",
+          "3,7 x 10^7",
+          "3,7*10^7",
+          "3,7 fois 10^7",
+          "3,7.10^7",
+          "3,7 × 10 puissance 7",
+          "3,7 fois 10 puissance 7"
+        ]
+      },
+      "points": 2,
+      "solution_steps": [
+        "On place la virgule après le premier chiffre : 3,7, et l'on a bien 1 ≤ 3,7 < 10.",
+        "Pour passer de 3,7 à 37 000 000, la virgule se décale de 7 rangs vers la droite : on multiplie par $10^7$.",
+        "37 000 000 = $3{,}7 \\times 10^7$."
+      ],
+      "hint": "Le nombre devant la puissance de 10 doit être compris entre 1 et 10."
+    },
+    {
+      "key": "q3",
+      "skill_id": "A038",
+      "statement": "On écrit la taille de la bactérie en notation scientifique : 0,000 002 5 m = $2{,}5 \\times 10^n$ m. Que vaut n ?",
+      "type": "numerique",
+      "answer": {
+        "value": -6
+      },
+      "points": 3,
+      "solution_steps": [
+        "Pour passer de 0,000 002 5 à 2,5, on décale la virgule de 6 rangs vers la droite : on multiplie par $10^6$.",
+        "Pour revenir de 2,5 au nombre de départ, on divise donc par $10^6$, c'est-à-dire qu'on multiplie par $10^{-6}$.",
+        "0,000 002 5 = $2{,}5 \\times 10^{-6}$ : n = **−6**.",
+        "Attention : n = 6 donnerait 2 500 000, un nombre plus grand que 1."
+      ],
+      "hint": "Le nombre de départ est plus petit que 1 : l'exposant est-il positif ou négatif ?"
+    },
+    {
+      "key": "q4",
+      "skill_id": "A038",
+      "statement": "On corrige l'écriture du nombre de globules rouges pour en faire une notation scientifique : $25 \\times 10^{12} = 2{,}5 \\times 10^n$. Que vaut n ?",
+      "type": "numerique",
+      "answer": {
+        "value": 13
+      },
+      "points": 2,
+      "solution_steps": [
+        "25 = 2,5 × 10.",
+        "Donc $25 \\times 10^{12} = 2{,}5 \\times 10 \\times 10^{12} = 2{,}5 \\times 10^{13}$.",
+        "n = **13** : le facteur devant est divisé par 10, l'exposant augmente de 1 pour compenser."
+      ],
+      "hint": "Écris 25 comme un produit de 2,5 par une puissance de 10."
+    },
+    {
+      "key": "q5",
+      "skill_id": "D023",
+      "statement": "De combien de mètres un cheveu pousse-t-il en un jour ? Donne l'écriture décimale.",
+      "type": "numerique",
+      "answer": {
+        "value": 0.00035,
+        "unit": "m"
+      },
+      "points": 2,
+      "solution_steps": [
+        "Milli signifie un millième : 1 mm = 0,001 m. Pour passer des millimètres aux mètres, on divise par 1 000.",
+        "0,35 ÷ 1 000 = 0,000 35.",
+        "Un cheveu pousse d'environ **0,000 35 m** par jour, soit $3{,}5 \\times 10^{-4}$ m."
+      ],
+      "hint": null
+    }
+  ],
+  "review_status": "relu_agent",
+  "programme_ref": "Cycle 4, classe de 3e, Nombres et calculs, Puissances, Objectifs d'apprentissage : « Déterminer la notation scientifique d'un nombre. »"
+}

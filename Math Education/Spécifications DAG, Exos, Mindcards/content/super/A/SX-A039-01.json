@@ -1,0 +1,135 @@
+{
+  "id": "SX-A039-01",
+  "skill_id": "A039",
+  "skill_ids": [
+    "A039",
+    "B023",
+    "D026"
+  ],
+  "school_level": "3e",
+  "title": "La sonde vers Mars",
+  "contexte": "Une agence spatiale envoie une sonde vers Mars. Le jour du lancement :\nla distance entre la Terre et Mars est d'environ $7{,}8 \\times 10^7$ km ;\nla distance entre la Terre et la Lune est d'environ $3{,}9 \\times 10^5$ km ;\nles signaux radio parcourent $3 \\times 10^5$ km par seconde ;\nla sonde voyage à une vitesse moyenne de $2{,}5 \\times 10^4$ km par heure.\n\nLa mémoire de la sonde peut stocker $4{,}8 \\times 10^{11}$ octets, et chaque photo qu'elle prend occupe $1{,}2 \\times 10^7$ octets.\n\nLa sonde pèse 1 035 kg, et le lancement a lieu à 6 h 40.",
+  "image": null,
+  "duree_estimee_min": 15,
+  "questions": [
+    {
+      "key": "q1",
+      "skill_id": "A039",
+      "statement": "Pour calculer le temps que met un signal radio pour aller de la Terre à Mars, de quelles données as-tu besoin ?",
+      "type": "qcm",
+      "choices": [
+        {
+          "key": "a",
+          "text": "La distance Terre–Mars et la vitesse de la sonde",
+          "misconception": "La vitesse de la sonde sert pour son propre voyage, pas pour un signal radio, bien plus rapide."
+        },
+        {
+          "key": "b",
+          "text": "La distance Terre–Mars et la vitesse des signaux radio",
+          "misconception": null
+        },
+        {
+          "key": "c",
+          "text": "La distance Terre–Lune et la vitesse des signaux radio",
+          "misconception": "Le signal va jusqu'à Mars, pas jusqu'à la Lune."
+        }
+      ],
+      "answer": {
+        "value": "b"
+      },
+      "points": 1,
+      "solution_steps": [
+        "Un temps de trajet se calcule avec la distance parcourue et la vitesse de ce qui se déplace.",
+        "Le signal va de la Terre à Mars : il faut la **distance Terre–Mars et la vitesse des signaux radio**.",
+        "La vitesse de la sonde et la distance Terre–Lune ne servent pas ici."
+      ],
+      "hint": "Qu'est-ce qui se déplace, et jusqu'où ?"
+    },
+    {
+      "key": "q2",
+      "skill_id": "A039",
+      "statement": "Combien de secondes un signal radio met-il pour aller de la Terre à Mars ?",
+      "type": "numerique",
+      "answer": {
+        "value": 260,
+        "unit": "s",
+        "accepted": [
+          "2,6 × 10^2",
+          "2,6 × 10^2 s",
+          "2,6 x 10^2",
+          "2,6*10^2"
+        ]
+      },
+      "points": 3,
+      "solution_steps": [
+        "Durée = distance ÷ vitesse : $(7{,}8 \\times 10^7) \\div (3 \\times 10^5)$ secondes.",
+        "On divise les facteurs, 7,8 ÷ 3 = 2,6, puis les puissances de 10 : $10^7 \\div 10^5 = 10^2$.",
+        "Durée : $2{,}6 \\times 10^2 = 260$ secondes.",
+        "Attention : dans une division, on soustrait les exposants ; on ne les additionne pas."
+      ],
+      "hint": "Durée = distance ÷ vitesse."
+    },
+    {
+      "key": "q3",
+      "skill_id": "B023",
+      "statement": "Combien de photos la mémoire de la sonde peut-elle stocker ? Le résultat s'écrit $4 \\times 10^n$ : que vaut n ?",
+      "type": "numerique",
+      "answer": {
+        "value": 4
+      },
+      "points": 2,
+      "solution_steps": [
+        "Nombre de photos : $(4{,}8 \\times 10^{11}) \\div (1{,}2 \\times 10^7)$.",
+        "4,8 ÷ 1,2 = 4 et $10^{11} \\div 10^7 = 10^{11-7} = 10^4$.",
+        "La mémoire peut stocker $4 \\times 10^4$ photos, soit 40 000 : n = **4**."
+      ],
+      "hint": null
+    },
+    {
+      "key": "q4",
+      "skill_id": "D026",
+      "statement": "On suppose que la sonde va en ligne droite jusqu'à Mars, à sa vitesse moyenne. Combien d'heures dure son voyage ?",
+      "type": "numerique",
+      "answer": {
+        "value": 3120,
+        "unit": "h",
+        "accepted": [
+          "3,12 × 10^3",
+          "3,12 × 10^3 h",
+          "3,12 x 10^3"
+        ]
+      },
+      "points": 2,
+      "solution_steps": [
+        "Durée = distance ÷ vitesse : $(7{,}8 \\times 10^7) \\div (2{,}5 \\times 10^4)$ heures.",
+        "7,8 ÷ 2,5 = 78 ÷ 25 = 3,12 : on multiplie les deux nombres par 10 pour diviser par un entier.",
+        "$10^7 \\div 10^4 = 10^3$ : la durée est $3{,}12 \\times 10^3 = 3\\,120$ heures."
+      ],
+      "hint": "Divise d'abord 7,8 par 2,5."
+    },
+    {
+      "key": "q5",
+      "skill_id": "A039",
+      "statement": "Combien de fois la distance entre la Terre et Mars est-elle plus grande que la distance entre la Terre et la Lune ?",
+      "type": "numerique",
+      "answer": {
+        "value": 200,
+        "unit": "fois",
+        "accepted": [
+          "2 × 10^2",
+          "2 x 10^2",
+          "2*10^2"
+        ]
+      },
+      "points": 3,
+      "solution_steps": [
+        "On divise la distance Terre–Mars par la distance Terre–Lune : $(7{,}8 \\times 10^7) \\div (3{,}9 \\times 10^5)$.",
+        "7,8 ÷ 3,9 = 2 et $10^7 \\div 10^5 = 10^2$.",
+        "$2 \\times 10^2 = 200$ : la distance Terre–Mars est **200 fois** plus grande."
+      ],
+      "hint": null
+    }
+  ],
+  "review_status": "relu_agent",
+  "programme_ref": "Cycle 4, classe de 3e, Nombres et calculs, Puissances, Objectifs d'apprentissage : « Résoudre des problèmes notamment en utilisant la notation scientifique. »"
+}

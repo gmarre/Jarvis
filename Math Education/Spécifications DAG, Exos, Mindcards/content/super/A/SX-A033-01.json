@@ -1,0 +1,104 @@
+{
+  "id": "SX-A033-01",
+  "skill_id": "A033",
+  "skill_ids": [
+    "A033",
+    "A029",
+    "B022"
+  ],
+  "school_level": "4e",
+  "title": "L'escape game de Nolan",
+  "contexte": "Pour son anniversaire, Nolan et ses amis font un escape game. Ils ont 60 minutes pour sortir de la salle, et la partie coûte 25 € par joueur.\n\nPremière énigme : un coffre est fermé par un cadenas à 4 molettes. Chaque molette porte les voyelles A, E, I, O et U. Un code est une suite de 4 voyelles, une par molette.\n\nDeuxième énigme : un panneau porte 9 interrupteurs. Chacun peut être en haut ou en bas. Une seule position des 9 interrupteurs ouvre la porte.\n\nTroisième énigme : dans un tiroir, une boîte en forme de cube de 10 cm d'arête est remplie de petits dés de 1 cm d'arête, sans espace entre eux.",
+  "image": null,
+  "duree_estimee_min": 15,
+  "questions": [
+    {
+      "key": "q1",
+      "skill_id": "A029",
+      "statement": "Combien de petits dés la boîte du tiroir contient-elle ?",
+      "type": "numerique",
+      "answer": {
+        "value": 1000,
+        "unit": "dés"
+      },
+      "points": 1,
+      "solution_steps": [
+        "La boîte a 10 couches de 10 rangées de 10 dés : $10^3$ dés.",
+        "$10^3 = 10 \\times 10 \\times 10 = 1\\,000$.",
+        "Elle contient **1 000 dés**. Attention : $10^3$ n'est pas 10 × 3, qui vaut 30."
+      ],
+      "hint": null
+    },
+    {
+      "key": "q2",
+      "skill_id": "A033",
+      "statement": "Combien de codes différents le cadenas du coffre permet-il de former ?",
+      "type": "numerique",
+      "answer": {
+        "value": 625,
+        "unit": "codes"
+      },
+      "points": 3,
+      "solution_steps": [
+        "Chaque molette peut prendre 5 positions : les voyelles A, E, I, O et U.",
+        "Pour chaque voyelle de la première molette, il y a 5 choix pour la deuxième, puis 5 pour la troisième et 5 pour la quatrième : 5 × 5 × 5 × 5 codes.",
+        "$5^4 = 625$ : le cadenas permet **625 codes**.",
+        "Attention : 5 × 4 = 20 compte les voyelles des 4 molettes, pas les codes."
+      ],
+      "hint": "Compte les voyelles d'une molette."
+    },
+    {
+      "key": "q3",
+      "skill_id": "A033",
+      "statement": "Combien de positions différentes les 9 interrupteurs du panneau peuvent-ils prendre ?",
+      "type": "numerique",
+      "answer": {
+        "value": 512,
+        "unit": "positions"
+      },
+      "points": 2,
+      "solution_steps": [
+        "Chaque interrupteur a 2 positions : en haut ou en bas.",
+        "Pour 9 interrupteurs : un produit de 9 facteurs égaux à 2, soit $2^9$.",
+        "$2^9 = 512$ : il y a **512 positions**.",
+        "Attention : 2 × 9 = 18 ne compte que les positions des interrupteurs pris un par un."
+      ],
+      "hint": null
+    },
+    {
+      "key": "q4",
+      "skill_id": "B022",
+      "statement": "Un robot essaie $10^2$ codes par seconde. Pendant $10^3$ secondes, il essaie $10^2 \\times 10^3$ codes. Ce nombre s'écrit $10^n$ : que vaut n ?",
+      "type": "numerique",
+      "answer": {
+        "value": 5
+      },
+      "points": 2,
+      "solution_steps": [
+        "$10^2 \\times 10^3 = (10 \\times 10) \\times (10 \\times 10 \\times 10)$ : c'est un produit de 2 + 3 = 5 facteurs égaux à 10.",
+        "$10^2 \\times 10^3 = 10^5$ : n = **5**.",
+        "Attention : on additionne les exposants, on ne les multiplie pas ; $10^6$ serait faux."
+      ],
+      "hint": null
+    },
+    {
+      "key": "q5",
+      "skill_id": "A033",
+      "statement": "Le maître du jeu veut un nouveau cadenas, dont les molettes portent les mêmes voyelles que celles du coffre, et qui permette plus de 10 000 codes différents. Combien de molettes faut-il au minimum ?",
+      "type": "numerique",
+      "answer": {
+        "value": 6,
+        "unit": "molettes"
+      },
+      "points": 3,
+      "solution_steps": [
+        "Avec 5 molettes : $5^5 = 3\\,125$ codes ; avec 6 molettes : $5^6 = 15\\,625$ codes.",
+        "3 125 ne dépasse pas 10 000, alors que 15 625 le dépasse.",
+        "Il faut au minimum **6 molettes**."
+      ],
+      "hint": "Chaque molette de plus multiplie le nombre de codes par 5."
+    }
+  ],
+  "review_status": "relu_agent",
+  "programme_ref": "Cycle 4, classe de 4e, Nombres et calculs, Puissances, Objectifs d'apprentissage : « Résoudre des problèmes faisant intervenir des puissances. »"
+}

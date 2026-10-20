@@ -1,0 +1,108 @@
+{
+  "id": "SX-A040-01",
+  "skill_id": "A040",
+  "skill_ids": [
+    "A040",
+    "A035",
+    "P024"
+  ],
+  "school_level": "3e",
+  "title": "Le nouveau parc",
+  "contexte": "La commune aménage un nouveau parc. Le plan prévoit :\nune pelouse carrée d'aire 1 600 m², que l'on entourera d'une clôture ;\nun bassin carré d'aire 56 m² ;\nun terrain de jeux rectangulaire de 12 m sur 8,5 m ;\nun bac à sable carré d'aire 10 m².\n\nLe terrain a été acheté 280 000 €. Le parc sera ouvert tous les jours de 8 h à 21 h, et un gardien y travaillera à plein temps. Pour préparer les commandes de matériaux, l'architecte a besoin des dimensions de chaque aménagement.",
+  "image": null,
+  "duree_estimee_min": 15,
+  "questions": [
+    {
+      "key": "q1",
+      "skill_id": "P024",
+      "statement": "Quelle est l'aire du terrain de jeux, en m² ?",
+      "type": "numerique",
+      "answer": {
+        "value": 102,
+        "unit": "m²"
+      },
+      "points": 1,
+      "solution_steps": [
+        "Le terrain de jeux est un rectangle : son aire est longueur × largeur.",
+        "12 × 8,5 = 102 : son aire est **102 m²**."
+      ],
+      "hint": null
+    },
+    {
+      "key": "q2",
+      "skill_id": "A035",
+      "statement": "Sans calculatrice : entre quels nombres entiers consécutifs se trouve la longueur, en mètres, du côté du bassin ?",
+      "type": "qcm",
+      "choices": [
+        {
+          "key": "a",
+          "text": "Entre 28 et 29",
+          "misconception": "L'élève divise l'aire par 2 : or 28 × 28 = 784, bien plus que 56."
+        },
+        {
+          "key": "b",
+          "text": "Entre 6 et 7",
+          "misconception": "$6^2 = 36$ et $7^2 = 49$ sont tous deux plus petits que 56 : le côté dépasse 7."
+        },
+        {
+          "key": "c",
+          "text": "Entre 7 et 8",
+          "misconception": null
+        },
+        {
+          "key": "d",
+          "text": "Entre 14 et 15",
+          "misconception": "L'élève divise l'aire par 4, comme pour passer du périmètre au côté : 56 ÷ 4 = 14. Or l'aire n'est pas un périmètre."
+        }
+      ],
+      "answer": {
+        "value": "c"
+      },
+      "points": 2,
+      "solution_steps": [
+        "Le côté du bassin mesure $\\sqrt{56}$ m.",
+        "$7^2 = 49$ et $8^2 = 64$, et 49 < 56 < 64.",
+        "Donc $7 < \\sqrt{56} < 8$ : le côté est entre **7 m et 8 m**."
+      ],
+      "hint": null
+    },
+    {
+      "key": "q3",
+      "skill_id": "A040",
+      "statement": "Quelle longueur de clôture faut-il pour entourer la pelouse ?",
+      "type": "numerique",
+      "answer": {
+        "value": 160,
+        "unit": "m"
+      },
+      "points": 3,
+      "solution_steps": [
+        "Le côté de la pelouse est $\\sqrt{1\\,600} = 40$ m, car $40^2 = 1\\,600$.",
+        "La clôture fait le tour du carré : 4 × 40 = 160 m.",
+        "Il faut **160 m** de clôture. Attention : 1 600 ÷ 4 = 400 ne donne pas le périmètre d'un carré d'aire 1 600 m²."
+      ],
+      "hint": "Trouve d'abord la longueur du côté de la pelouse."
+    },
+    {
+      "key": "q4",
+      "skill_id": "A040",
+      "statement": "À la calculatrice, quelle est la longueur du côté du bac à sable, arrondie au centième de mètre ?",
+      "type": "numerique",
+      "answer": {
+        "value": 3.16,
+        "unit": "m",
+        "tolerance": 0.005
+      },
+      "points": 3,
+      "solution_steps": [
+        "Le côté du bac à sable mesure $\\sqrt{10}$ m.",
+        "Contrôle : $3^2 = 9$ et $4^2 = 16$, donc $3 < \\sqrt{10} < 4$.",
+        "La calculatrice affiche $\\sqrt{10} \\approx 3{,}162\\,277$. Au centième : 3,16, car le chiffre des millièmes, 2, est inférieur à 5.",
+        "Le côté mesure environ **3,16 m**. Attention : 10 ÷ 2 = 5 ou 10 ÷ 4 = 2,5 ne donnent pas le côté."
+      ],
+      "hint": "Vérifie ton résultat avec un encadrement par deux entiers."
+    }
+  ],
+  "review_status": "relu_agent",
+  "programme_ref": "Cycle 4, classe de 3e, Nombres et calculs, Racine carrée, Objectifs d'apprentissage : « Résoudre des problèmes utilisant la racine carrée. »"
+}

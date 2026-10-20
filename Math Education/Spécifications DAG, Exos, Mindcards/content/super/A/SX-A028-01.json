@@ -1,0 +1,104 @@
+{
+  "id": "SX-A028-01",
+  "skill_id": "A028",
+  "skill_ids": [
+    "A028",
+    "B006"
+  ],
+  "school_level": "CM1",
+  "title": "La course solidaire",
+  "contexte": "Les élèves de CM1 participent à une course solidaire. Le parcours mesure 8 000 m. Sur le plan, il est représenté par une demi-droite graduée : le départ est en 0, et chaque nombre repère une distance au départ, en mètres. Seuls deux nombres sont écrits sur le plan.\n\nLe point R marque le stand de ravitaillement. Les points Q, P et S sont des places où des photographes peuvent se mettre.\n\nPour chaque tranche de 1 000 m parcourue, le parrain de Tom donne 3 € à l'association. La course part à 10 h, et 126 élèves sont inscrits.",
+  "image": "figures/SX-A028-01",
+  "duree_estimee_min": 15,
+  "questions": [
+    {
+      "key": "q1",
+      "skill_id": "A028",
+      "statement": "Sur le plan, quelle distance sépare deux traits de graduation voisins ?",
+      "type": "numerique",
+      "answer": {
+        "value": 500,
+        "unit": "m"
+      },
+      "points": 1,
+      "solution_steps": [
+        "Entre 0 et 2 000, on compte 4 intervalles entre deux traits voisins.",
+        "4 intervalles égaux pour 2 000 m : chacun vaut 500 m, car 4 × 500 = 2 000.",
+        "Deux traits voisins sont séparés par **500 m**. Les grands traits sont tous les 1 000 m."
+      ],
+      "hint": "Compte les intervalles entre 0 et 2 000."
+    },
+    {
+      "key": "q2",
+      "skill_id": "A028",
+      "statement": "On admet que deux traits de graduation voisins sont séparés de 500 m. Quel nombre repère le point R, c'est-à-dire à quelle distance du départ se trouve le stand de ravitaillement ?",
+      "type": "numerique",
+      "answer": {
+        "value": 3500,
+        "unit": "m"
+      },
+      "points": 3,
+      "solution_steps": [
+        "Les grands traits sont tous les 1 000 m : 0 ; 1 000 ; 2 000 ; 3 000 ; 4 000…",
+        "Le point R est sur le petit trait entre 3 000 et 4 000 : 500 m après 3 000.",
+        "3 000 + 500 = 3 500 : le stand est à **3 500 m** du départ."
+      ],
+      "hint": "Repère d'abord les grands traits de 1 000 en 1 000."
+    },
+    {
+      "key": "q3",
+      "skill_id": "B006",
+      "statement": "Tom court tout le parcours. Combien d'euros son parrain donne-t-il à l'association ?",
+      "type": "numerique",
+      "answer": {
+        "value": 24,
+        "unit": "€",
+        "accepted": [
+          "24 euros"
+        ]
+      },
+      "points": 2,
+      "solution_steps": [
+        "Le parcours mesure 8 000 m, soit 8 tranches de 1 000 m.",
+        "Pour chaque tranche, le parrain donne 3 € : 8 × 3 = 24.",
+        "Le parrain donne **24 €**."
+      ],
+      "hint": null
+    },
+    {
+      "key": "q4",
+      "skill_id": "A028",
+      "statement": "On admet que deux traits de graduation voisins sont séparés de 500 m. Un photographe veut se placer à 5 500 m du départ. Quel point du plan repère cette place ?",
+      "type": "qcm",
+      "choices": [
+        {
+          "key": "a",
+          "text": "Le point Q",
+          "misconception": "Q repère 4 500 : l'élève s'est décalé d'un trait vers le départ, par exemple en comptant les traits au lieu des intervalles."
+        },
+        {
+          "key": "b",
+          "text": "Le point P",
+          "misconception": null
+        },
+        {
+          "key": "c",
+          "text": "Le point S",
+          "misconception": "S repère 6 500 : l'élève s'est décalé d'un trait vers l'arrivée."
+        }
+      ],
+      "answer": {
+        "value": "b"
+      },
+      "points": 3,
+      "solution_steps": [
+        "5 500, c'est 5 000 + 500 : on va jusqu'au grand trait 5 000, puis on avance d'un petit intervalle de 500 m.",
+        "Le point placé au milieu, entre 5 000 et 6 000, est P.",
+        "Le photographe se place en **P**. Q repère 4 500 et S repère 6 500."
+      ],
+      "hint": null
+    }
+  ],
+  "review_status": "relu_agent",
+  "programme_ref": "Cycle 3, Cours moyen première année, Les nombres entiers : « Savoir placer des nombres et repérer des points sur une demi-droite graduée »"
+}

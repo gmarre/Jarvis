@@ -1,0 +1,119 @@
+{
+  "id": "SX-A037-01",
+  "skill_id": "A037",
+  "skill_ids": [
+    "A037",
+    "D025",
+    "D023"
+  ],
+  "school_level": "3e",
+  "title": "Au microscope",
+  "contexte": "En SVT, la classe de 3e observe au microscope. Le professeur a noté au tableau quelques tailles :\nl'épaisseur d'un cheveu : 0,08 mm ;\nla longueur d'une cellule de la peau d'un oignon : 300 µm (micromètres) ;\nle diamètre d'un globule rouge : 8 µm ;\nla longueur du virus de la grippe : 100 nm (nanomètres).\n\nLe microscope du laboratoire grossit 400 fois ; il a coûté 350 €. Les élèves travaillent par deux, et chaque binôme dessine ce qu'il observe. La séance de travaux pratiques dure une heure, et le professeur passe voir chaque binôme.",
+  "image": null,
+  "duree_estimee_min": 15,
+  "questions": [
+    {
+      "key": "q1",
+      "skill_id": "A037",
+      "statement": "Lequel de ces quatre objets est le plus petit ?",
+      "type": "qcm",
+      "choices": [
+        {
+          "key": "a",
+          "text": "Le globule rouge, car 8 est le plus petit nombre",
+          "misconception": "L'élève compare les nombres sans regarder les unités : 8 µm, c'est 8 000 nm, bien plus que 100 nm."
+        },
+        {
+          "key": "b",
+          "text": "Le cheveu, car 0,08 est plus petit que 1",
+          "misconception": "0,08 mm = 80 µm : c'est plus que 8 µm et bien plus que 100 nm."
+        },
+        {
+          "key": "c",
+          "text": "Le virus de la grippe",
+          "misconception": null
+        }
+      ],
+      "answer": {
+        "value": "c"
+      },
+      "points": 1,
+      "solution_steps": [
+        "On compare dans une même unité. Le micromètre vaut mille nanomètres : 1 µm = 1 000 nm.",
+        "Globule rouge : 8 µm = 8 000 nm. Cellule d'oignon : 300 µm. Cheveu : 0,08 mm = 80 µm.",
+        "Le virus, 100 nm, soit 0,1 µm, est **le plus petit**."
+      ],
+      "hint": "Compare les quatre tailles dans la même unité."
+    },
+    {
+      "key": "q2",
+      "skill_id": "A037",
+      "statement": "Quel est le diamètre d'un globule rouge, en mètres ? Donne l'écriture décimale.",
+      "type": "numerique",
+      "answer": {
+        "value": 8e-06,
+        "unit": "m"
+      },
+      "points": 3,
+      "solution_steps": [
+        "Le préfixe micro signifie $10^{-6}$ : 1 µm = $10^{-6}$ m = 0,000 001 m.",
+        "8 µm = $8 \\times 10^{-6}$ m = 0,000 008 m.",
+        "Un globule rouge mesure **0,000 008 m** de diamètre : le chiffre 8 est au sixième rang après la virgule."
+      ],
+      "hint": "Que signifie le préfixe micro ?"
+    },
+    {
+      "key": "q3",
+      "skill_id": "D025",
+      "statement": "Quelle est la longueur de la cellule d'oignon, en millimètres ?",
+      "type": "numerique",
+      "answer": {
+        "value": 0.3,
+        "unit": "mm"
+      },
+      "points": 2,
+      "solution_steps": [
+        "Un millimètre contient 1 000 micromètres : 1 µm = 0,001 mm.",
+        "300 µm = 300 × 0,001 mm = 0,3 mm.",
+        "La cellule mesure **0,3 mm** de long."
+      ],
+      "hint": null
+    },
+    {
+      "key": "q4",
+      "skill_id": "D023",
+      "statement": "Combien de virus de la grippe faudrait-il aligner, bout à bout, pour couvrir le diamètre d'un globule rouge ?",
+      "type": "numerique",
+      "answer": {
+        "value": 80,
+        "unit": "virus"
+      },
+      "points": 2,
+      "solution_steps": [
+        "On écrit les deux tailles dans la même unité : 8 µm = 8 × 1 000 nm = 8 000 nm.",
+        "8 000 ÷ 100 = 80.",
+        "Il faudrait **80 virus** alignés."
+      ],
+      "hint": "Écris le diamètre du globule rouge en nanomètres."
+    },
+    {
+      "key": "q5",
+      "skill_id": "A037",
+      "statement": "La longueur du virus de la grippe, en mètres, s'écrit $10^n$. Que vaut n ?",
+      "type": "numerique",
+      "answer": {
+        "value": -7
+      },
+      "points": 3,
+      "solution_steps": [
+        "Nano signifie $10^{-9}$ : 1 nm = $10^{-9}$ m = 0,000 000 001 m.",
+        "100 nm = 100 × 0,000 000 001 m = 0,000 000 1 m.",
+        "Dans 0,000 000 1, le chiffre 1 est au septième rang après la virgule : c'est $10^{-7}$. Donc n = **−7**.",
+        "Attention : $10^{-9}$ m est la taille de 1 nm, pas de 100 nm."
+      ],
+      "hint": "Écris d'abord 100 nm en mètres, en écriture décimale."
+    }
+  ],
+  "review_status": "relu_agent",
+  "programme_ref": "Cycle 4, Nombres et calculs, présentation commune aux trois classes : « On introduit en fonction des besoins les préfixes des puissances de dix de nano à giga. On fait le lien avec les conversions. »"
+}

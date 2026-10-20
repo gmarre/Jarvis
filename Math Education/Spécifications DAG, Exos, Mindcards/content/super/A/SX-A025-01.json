@@ -1,0 +1,146 @@
+{
+  "id": "SX-A025-01",
+  "skill_id": "A025",
+  "skill_ids": [
+    "A025",
+    "A029",
+    "A015",
+    "B040"
+  ],
+  "school_level": "3e",
+  "title": "Les boîtes du chocolatier",
+  "contexte": "Pour la fête du village, un chocolatier a fabriqué 420 chocolats. Il veut les ranger dans des boîtes toutes du même modèle, toutes pleines, sans qu'il reste de chocolat. Il hésite entre quatre modèles :\n« Carré » : 6 rangées de 6 chocolats ;\n« Cube » : 3 étages de 3 rangées de 3 chocolats ;\n« Ruban » : une seule rangée de 12 chocolats ;\n« Duo » : 2 rangées de 7 chocolats.\n\nUne boîte vide coûte 0,80 €. La fête a lieu le 14 juillet, sur la place de la mairie, et le chocolatier y tiendra son stand toute la journée.",
+  "image": null,
+  "duree_estimee_min": 15,
+  "questions": [
+    {
+      "key": "q1",
+      "skill_id": "A029",
+      "statement": "Combien de chocolats contient une boîte « Cube » pleine ?",
+      "type": "numerique",
+      "answer": {
+        "value": 27,
+        "unit": "chocolats"
+      },
+      "points": 1,
+      "solution_steps": [
+        "Une boîte « Cube » a 3 étages de 3 rangées de 3 chocolats : $3^3 = 3 \\times 3 \\times 3$.",
+        "3 × 3 = 9, puis 9 × 3 = 27.",
+        "Elle contient **27 chocolats**. Attention : $3^3$ n'est pas 3 × 3, qui vaut 9."
+      ],
+      "hint": null
+    },
+    {
+      "key": "q2",
+      "skill_id": "A015",
+      "statement": "Le chocolatier affirme : « 420 est divisible par 9. » A-t-il raison ?",
+      "type": "vrai_faux",
+      "answer": {
+        "value": false
+      },
+      "points": 2,
+      "solution_steps": [
+        "Somme des chiffres de 420 : 4 + 2 + 0 = 6.",
+        "6 est divisible par 3 : 420 est divisible par 3.",
+        "Mais 6 n'est pas divisible par 9 : 420 n'est **pas** divisible par 9. Pour être divisible par 9, la somme des chiffres doit être divisible par 9, pas seulement par 3. Le chocolatier a tort."
+      ],
+      "hint": "Rappelle-toi le critère de divisibilité par 9."
+    },
+    {
+      "key": "q3",
+      "skill_id": "A025",
+      "statement": "Quelle est la décomposition de 420 en produit de facteurs premiers ?",
+      "type": "qcm",
+      "choices": [
+        {
+          "key": "a",
+          "text": "$4 \\times 3 \\times 5 \\times 7$",
+          "misconception": "4 n'est pas premier (4 = 2 × 2) : la décomposition n'est pas terminée."
+        },
+        {
+          "key": "b",
+          "text": "$2 \\times 3 \\times 5 \\times 7$",
+          "misconception": "L'élève a oublié un facteur 2 : ce produit vaut 210, la moitié de 420."
+        },
+        {
+          "key": "c",
+          "text": "$2^2 \\times 3 \\times 5 \\times 7$",
+          "misconception": null
+        },
+        {
+          "key": "d",
+          "text": "$2^2 \\times 3 \\times 35$",
+          "misconception": "35 n'est pas premier : 35 = 5 × 7."
+        }
+      ],
+      "answer": {
+        "value": "c"
+      },
+      "points": 3,
+      "solution_steps": [
+        "On divise par les nombres premiers dans l'ordre : 420 ÷ 2 = 210 ; 210 ÷ 2 = 105 ; 105 ÷ 3 = 35 ; 35 ÷ 5 = 7 ; 7 est premier.",
+        "Donc 420 = 2 × 2 × 3 × 5 × 7, soit $2^2 \\times 3 \\times 5 \\times 7$.",
+        "Vérification : 4 × 3 = 12 ; 12 × 5 = 60 ; 60 × 7 = 420."
+      ],
+      "hint": "Divise 420 par 2 tant que c'est possible, puis par 3, par 5, par 7."
+    },
+    {
+      "key": "q4",
+      "skill_id": "A025",
+      "statement": "On admet que 420 = 2 × 2 × 3 × 5 × 7. À l'aide de cette décomposition, sans poser de division : quels modèles permettent de ranger tous les chocolats dans des boîtes pleines ?",
+      "type": "qcm",
+      "choices": [
+        {
+          "key": "a",
+          "text": "« Ruban » et « Duo »",
+          "misconception": null
+        },
+        {
+          "key": "b",
+          "text": "« Carré » et « Ruban »",
+          "misconception": "L'élève voit que 6 divise 420 et en déduit que $6^2$ aussi. Or 36 = 2 × 2 × 3 × 3 demande deux facteurs 3, et 420 n'en a qu'un."
+        },
+        {
+          "key": "c",
+          "text": "« Cube » et « Duo »",
+          "misconception": "27 = 3 × 3 × 3 demande trois facteurs 3, et 420 n'en a qu'un : 27 ne divise pas 420."
+        },
+        {
+          "key": "d",
+          "text": "Les quatre modèles",
+          "misconception": "L'élève pense qu'un nombre pair terminé par 0 se divise par tout. Ni 36 ni 27 ne divisent 420."
+        }
+      ],
+      "answer": {
+        "value": "a"
+      },
+      "points": 3,
+      "solution_steps": [
+        "Un modèle convient si son nombre de chocolats est un diviseur de 420 = 2 × 2 × 3 × 5 × 7 : ses facteurs premiers doivent se trouver dans cette décomposition, autant de fois au plus.",
+        "« Ruban » : 12 = 2 × 2 × 3, il convient. « Duo » : 14 = 2 × 7, il convient.",
+        "« Carré » : 36 = 2 × 2 × 3 × 3 demande deux facteurs 3. « Cube » : 27 = 3 × 3 × 3 en demande trois. Or 420 n'a qu'un facteur 3 : ces deux modèles ne conviennent pas.",
+        "Les modèles qui conviennent sont **« Ruban » et « Duo »**."
+      ],
+      "hint": null
+    },
+    {
+      "key": "q5",
+      "skill_id": "B040",
+      "statement": "Le chocolatier choisit le modèle « Duo ». Combien de boîtes remplit-il ?",
+      "type": "numerique",
+      "answer": {
+        "value": 30,
+        "unit": "boîtes"
+      },
+      "points": 2,
+      "solution_steps": [
+        "Une boîte « Duo » contient 2 × 7 = 14 chocolats.",
+        "420 ÷ 14 = 30, car 14 × 30 = 420.",
+        "Il remplit **30 boîtes**."
+      ],
+      "hint": "Commence par compter les chocolats d'une boîte « Duo »."
+    }
+  ],
+  "review_status": "relu_agent",
+  "programme_ref": "Cycle 4, programme de 2020 commun aux trois classes, Thème A, Nombres et calculs : « Décomposer un nombre entier en produit de facteurs premiers (à la main ou à l'aide d'un logiciel). »"
+}

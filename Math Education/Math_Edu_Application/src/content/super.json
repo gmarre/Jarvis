@@ -2,7 +2,7 @@
   "metadata": {
     "version": "1.0",
     "scope": "Super exercices, CP a 3e",
-    "total_super": 89
+    "total_super": 109
   },
   "super": [
     {
@@ -1974,6 +1974,2466 @@
       ],
       "review_status": "relu_agent",
       "programme_ref": "Cycle 4, classe de 5e, Espace et géométrie, Repérage sur une droite et dans le plan, Objectifs d'apprentissage : « Dans le plan muni d'un repère orthogonal : - lire les coordonnées d'un point donné ; - placer un point de coordonnées données. »"
+    },
+    {
+      "id": "SX-A021-01",
+      "skill_id": "A021",
+      "skill_ids": [
+        "A021",
+        "A018",
+        "B013"
+      ],
+      "school_level": "5e",
+      "title": "Le drone de Sami",
+      "contexte": "Pendant les vacances, Léna et son frère Sami partent en mer avec un moniteur. Celui-ci explique comment on repère une altitude par rapport au niveau de la mer : au-dessus de la mer, l'altitude est positive ; au-dessous, elle est négative ; au niveau de la mer, elle vaut 0.\n\nLeur bateau, long de 11 m, est ancré juste au-dessus d'une épave. Le sommet du mât est à l'altitude 14,5 m. L'épave repose au fond, à l'altitude −23 m. Pendant sa plongée, Léna fait une pause sur un palier, à l'altitude −6,5 m.\n\nDepuis le pont, Sami pilote un drone. Il le fait d'abord monter à l'altitude opposée de celle du palier, puis à l'altitude opposée de celle de l'épave.\n\nUne mouette est posée sur l'eau, à côté du bateau. L'eau est à 18 °C.",
+      "image": null,
+      "duree_estimee_min": 15,
+      "questions": [
+        {
+          "key": "q1",
+          "skill_id": "A018",
+          "statement": "Parmi ces paires d'altitudes, laquelle correspond à deux endroits situés tous les deux sous le niveau de la mer ?",
+          "type": "qcm",
+          "choices": [
+            {
+              "key": "a",
+              "text": "14,5 m et 18 m",
+              "misconception": "L'élève prend des nombres positifs du texte : 14,5 m est au-dessus de la mer (le sommet du mât), et 18 n'est pas une altitude, c'est la température de l'eau en °C."
+            },
+            {
+              "key": "b",
+              "text": "−6,5 m et −23 m",
+              "misconception": null
+            },
+            {
+              "key": "c",
+              "text": "0 m et −6,5 m",
+              "misconception": "L'altitude 0 est celle du niveau de la mer lui-même, là où la mouette est posée : ce point n'est pas sous la mer."
+            },
+            {
+              "key": "d",
+              "text": "11 m et −23 m",
+              "misconception": "11 m est la longueur du bateau, pas une altitude. Seul −23 m est sous la mer."
+            }
+          ],
+          "answer": {
+            "value": "b"
+          },
+          "points": 1,
+          "solution_steps": [
+            "Sous le niveau de la mer, une altitude est négative : on cherche deux altitudes négatives.",
+            "Le texte en donne deux : le palier, à −6,5 m, et l'épave, à −23 m.",
+            "14,5 m est positive (le sommet du mât est au-dessus de la mer), 0 m est le niveau de la mer lui-même, 11 m est la longueur du bateau et 18 °C la température de l'eau."
+          ],
+          "hint": "Relis la phrase du moniteur sur le signe d'une altitude."
+        },
+        {
+          "key": "q2",
+          "skill_id": "A021",
+          "statement": "Quelle est l'altitude du drone quand Sami le fait monter à l'altitude opposée de celle du palier ?",
+          "type": "numerique",
+          "answer": {
+            "value": 6.5,
+            "unit": "m",
+            "accepted": [
+              "+6,5",
+              "+6,5 m",
+              "6,5 mètres"
+            ]
+          },
+          "points": 2,
+          "solution_steps": [
+            "Le palier est à l'altitude −6,5 m.",
+            "Deux nombres opposés ont la même distance à zéro et des signes contraires : l'opposé de −6,5 est 6,5.",
+            "Le drone est à l'altitude **6,5 m** : au-dessus de la mer, à la même distance de la surface que le palier, mais de l'autre côté."
+          ],
+          "hint": "L'opposé d'un nombre a la même distance à zéro, mais le signe contraire."
+        },
+        {
+          "key": "q3",
+          "skill_id": "A021",
+          "statement": "Sami affirme : « Si je place le drone à l'altitude opposée de celle de la mouette, il sera exactement au niveau de la mer, comme la mouette. » Sami a-t-il raison ?",
+          "type": "vrai_faux",
+          "answer": {
+            "value": true
+          },
+          "points": 2,
+          "solution_steps": [
+            "La mouette est posée sur l'eau : son altitude est 0.",
+            "L'opposé de 0 est 0 : c'est le seul nombre égal à son opposé, car sa distance à zéro est nulle.",
+            "Le drone serait à l'altitude 0, au niveau de la mer : Sami a **raison**."
+          ],
+          "hint": "Quelle est l'altitude de la mouette ?"
+        },
+        {
+          "key": "q4",
+          "skill_id": "B013",
+          "statement": "Sami fait monter le drone à l'altitude opposée de celle de l'épave. Quelle distance verticale sépare alors le drone de l'épave ?",
+          "type": "numerique",
+          "answer": {
+            "value": 46,
+            "unit": "m"
+          },
+          "points": 2,
+          "solution_steps": [
+            "L'épave est à l'altitude −23 m : elle est 23 m sous le niveau de la mer.",
+            "Le drone est à l'altitude opposée, 23 m : il est 23 m au-dessus du niveau de la mer.",
+            "De l'épave jusqu'au niveau de la mer, il y a 23 m ; du niveau de la mer jusqu'au drone, 23 m de plus : 23 + 23 = 46.",
+            "**46 m** séparent le drone de l'épave."
+          ],
+          "hint": "Passe par le niveau de la mer : combien de mètres en dessous, combien au-dessus ?"
+        },
+        {
+          "key": "q5",
+          "skill_id": "A021",
+          "statement": "Plus tard, le drone vole à l'altitude 9,8 m. Ce nombre est l'opposé de l'altitude de Léna à cet instant. Quelle est l'altitude de Léna ?",
+          "type": "numerique",
+          "answer": {
+            "value": -9.8,
+            "unit": "m",
+            "accepted": [
+              "-9,8",
+              "−9,8",
+              "(-9,8)",
+              "-9,8 m"
+            ]
+          },
+          "points": 3,
+          "solution_steps": [
+            "L'altitude du drone, 9,8 m, est l'opposé de l'altitude de Léna : l'altitude de Léna est donc l'opposé de 9,8.",
+            "L'opposé de 9,8 est −9,8 : même distance à zéro, signe contraire.",
+            "Léna est à l'altitude **−9,8 m**, sous le niveau de la mer, ce qui est logique pendant sa plongée.",
+            "Attention : répondre 9,8 placerait Léna au-dessus de la mer, à la même altitude que le drone."
+          ],
+          "hint": "Si l'opposé d'un nombre est positif, ce nombre est-il positif ou négatif ?"
+        }
+      ],
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 4, classe de 5e, Nombres et calculs, Nombres relatifs, Objectifs d'apprentissage : « Définir l'opposé et la valeur absolue d'un nombre. »"
+    },
+    {
+      "id": "SX-A022-01",
+      "skill_id": "A022",
+      "skill_ids": [
+        "A022",
+        "A018",
+        "B004"
+      ],
+      "school_level": "5e",
+      "title": "Le tir de précision",
+      "contexte": "Le mercredi, six enfants du club de pétanque s'entraînent au « tir de précision ». Une ligne est tracée au sol, à 6 m du cercle de lancer. Chaque enfant lance une boule, puis l'animateur mesure l'écart entre la boule et la ligne, en centimètres : l'écart est positif si la boule a dépassé la ligne, et négatif si elle s'est arrêtée avant.\n\nLes écarts relevés :\nInès : −14\nNoé : 9\nMila : −9\nYanis : 31\nLou : −3,5\nAdam : −26\n\nUne boule pèse 650 g, et la séance a commencé à 15 h.\n\nLe vainqueur est l'enfant dont la boule s'est arrêtée le plus près de la ligne, c'est-à-dire celui dont l'écart a la plus petite distance à zéro.",
+      "image": null,
+      "duree_estimee_min": 15,
+      "questions": [
+        {
+          "key": "q1",
+          "skill_id": "A018",
+          "statement": "Combien d'enfants ont lancé leur boule trop court, sans atteindre la ligne ?",
+          "type": "numerique",
+          "answer": {
+            "value": 4,
+            "unit": "enfants"
+          },
+          "points": 1,
+          "solution_steps": [
+            "Une boule arrêtée avant la ligne a un écart négatif.",
+            "Les écarts négatifs sont ceux d'Inès (−14), de Mila (−9), de Lou (−3,5) et d'Adam (−26).",
+            "**4 enfants** ont lancé trop court. Noé (9) et Yanis (31) ont dépassé la ligne."
+          ],
+          "hint": "Relis ce que signifie un écart négatif."
+        },
+        {
+          "key": "q2",
+          "skill_id": "A022",
+          "statement": "Quelle est la distance à zéro de l'écart d'Inès ? C'est le nombre de centimètres entre sa boule et la ligne.",
+          "type": "numerique",
+          "answer": {
+            "value": 14,
+            "unit": "cm"
+          },
+          "points": 2,
+          "solution_steps": [
+            "L'écart d'Inès est −14.",
+            "La distance à zéro d'un nombre relatif, c'est ce nombre sans son signe : la distance à zéro de −14 est 14.",
+            "La boule d'Inès s'est arrêtée à **14 cm** de la ligne, avant elle.",
+            "Attention : une distance n'est jamais négative."
+          ],
+          "hint": "Une distance est toujours positive."
+        },
+        {
+          "key": "q3",
+          "skill_id": "A022",
+          "statement": "Deux enfants ont des écarts qui ont la même distance à zéro. Lesquels ?",
+          "type": "qcm",
+          "choices": [
+            {
+              "key": "a",
+              "text": "Inès et Adam",
+              "misconception": "L'élève choisit deux écarts de même signe : les deux boules sont avant la ligne, mais l'une à 14 cm et l'autre à 26 cm."
+            },
+            {
+              "key": "b",
+              "text": "Noé et Mila",
+              "misconception": null
+            },
+            {
+              "key": "c",
+              "text": "Noé et Yanis",
+              "misconception": "L'élève choisit deux écarts positifs : les deux boules ont dépassé la ligne, mais l'une de 9 cm, l'autre de 31 cm."
+            }
+          ],
+          "answer": {
+            "value": "b"
+          },
+          "points": 2,
+          "solution_steps": [
+            "Les écarts de Noé (9) et de Mila (−9) sont des nombres opposés : ils ont la même distance à zéro, 9.",
+            "Les deux boules sont à 9 cm de la ligne : celle de Noé après la ligne, celle de Mila avant.",
+            "Deux nombres de même signe, comme −14 et −26, ne sont pas pour autant à la même distance de zéro."
+          ],
+          "hint": null
+        },
+        {
+          "key": "q4",
+          "skill_id": "B004",
+          "statement": "De combien de centimètres la boule de Yanis est-elle plus éloignée de la ligne que celle d'Adam ?",
+          "type": "numerique",
+          "answer": {
+            "value": 5,
+            "unit": "cm"
+          },
+          "points": 2,
+          "solution_steps": [
+            "La boule de Yanis est à 31 cm de la ligne (la distance à zéro de 31) ; celle d'Adam à 26 cm (la distance à zéro de −26).",
+            "On compare les deux distances : 31 − 26 = 5.",
+            "La boule de Yanis est **5 cm** plus loin de la ligne que celle d'Adam.",
+            "Attention : 31 + 26 = 57 cm est l'écart entre les deux boules, de part et d'autre de la ligne, pas la différence de leurs distances à la ligne."
+          ],
+          "hint": "Compare les distances des deux boules à la ligne, sans leur signe."
+        },
+        {
+          "key": "q5",
+          "skill_id": "A022",
+          "statement": "Qui est le vainqueur ?",
+          "type": "qcm",
+          "choices": [
+            {
+              "key": "a",
+              "text": "Adam",
+              "misconception": "L'élève prend le plus petit nombre, −26. Or la boule d'Adam est à 26 cm de la ligne, l'une des plus éloignées : c'est la distance à zéro qui compte, pas le nombre."
+            },
+            {
+              "key": "b",
+              "text": "Noé",
+              "misconception": "L'élève ne regarde que les boules qui ont dépassé la ligne et prend la plus proche, à 9 cm. Il oublie Lou, dont la boule s'est arrêtée avant la ligne, mais plus près."
+            },
+            {
+              "key": "c",
+              "text": "Lou",
+              "misconception": null
+            },
+            {
+              "key": "d",
+              "text": "Yanis",
+              "misconception": "L'élève prend le plus grand écart, 31. Or plus la distance à zéro est grande, plus la boule est loin de la ligne."
+            }
+          ],
+          "answer": {
+            "value": "c"
+          },
+          "points": 3,
+          "solution_steps": [
+            "Le vainqueur a l'écart dont la distance à zéro est la plus petite.",
+            "Distances à zéro : Inès 14 ; Noé 9 ; Mila 9 ; Yanis 31 ; Lou 3,5 ; Adam 26.",
+            "La plus petite est 3,5 : **Lou** a gagné, sa boule s'est arrêtée à 3,5 cm de la ligne.",
+            "Le signe dit seulement de quel côté de la ligne est la boule : avant ou après."
+          ],
+          "hint": "Pour chaque enfant, écris la distance à zéro de son écart."
+        }
+      ],
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 4, classe de 5e, Nombres et calculs, Nombres relatifs, Objectifs d'apprentissage : « Définir l'opposé et la valeur absolue d'un nombre. »"
+    },
+    {
+      "id": "SX-A023-01",
+      "skill_id": "A023",
+      "skill_ids": [
+        "A023",
+        "A018",
+        "D003"
+      ],
+      "school_level": "5e",
+      "title": "La météo du collège",
+      "contexte": "Au collège, le club météo relève chaque matin, à 7 h, la température dans la cour. Voici ses relevés d'une semaine de janvier, en degrés Celsius :\nlundi : −3,5\nmardi : −0,5\nmercredi : 1,2\njeudi : −3,25\nvendredi : 0\nsamedi : −2\ndimanche : 0,75\n\nLe club compte 17 élèves, et leur thermomètre a coûté 39 €. Le mercredi après-midi, le thermomètre a affiché 8,5 °C, la température la plus haute de la semaine.\n\nLes élèves veulent ranger les températures du matin et repérer le matin le plus froid.",
+      "image": null,
+      "duree_estimee_min": 15,
+      "questions": [
+        {
+          "key": "q1",
+          "skill_id": "A018",
+          "statement": "Que signifie le relevé du samedi, −2 ?",
+          "type": "qcm",
+          "choices": [
+            {
+              "key": "a",
+              "text": "Samedi à 7 h, il faisait 2 degrés au-dessous de zéro",
+              "misconception": null
+            },
+            {
+              "key": "b",
+              "text": "Samedi à 7 h, il faisait 2 degrés au-dessus de zéro",
+              "misconception": "L'élève ne lit pas le signe : −2 est un nombre négatif, au-dessous de zéro."
+            },
+            {
+              "key": "c",
+              "text": "Samedi, la température a baissé de 2 degrés pendant la matinée",
+              "misconception": "Les relevés sont des températures mesurées à 7 h, pas des variations au cours de la matinée."
+            }
+          ],
+          "answer": {
+            "value": "a"
+          },
+          "points": 1,
+          "solution_steps": [
+            "Le relevé du samedi est une température, mesurée à 7 h.",
+            "Le signe moins indique une température au-dessous de zéro : samedi matin, il faisait **2 degrés au-dessous de zéro**."
+          ],
+          "hint": "Relis à quoi correspondent les nombres de la liste des relevés."
+        },
+        {
+          "key": "q2",
+          "skill_id": "D003",
+          "statement": "On compare les températures de lundi et de jeudi sans leur signe, c'est-à-dire les nombres 3,5 et 3,25. Lequel est le plus grand ?",
+          "type": "qcm",
+          "choices": [
+            {
+              "key": "a",
+              "text": "3,25, car 25 est plus grand que 5",
+              "misconception": "L'élève compare les parties décimales comme des nombres entiers. Or 3,5 = 3,50 : 50 centièmes, c'est plus que 25 centièmes."
+            },
+            {
+              "key": "b",
+              "text": "Ils sont égaux, car ils ont la même partie entière, 3",
+              "misconception": "La partie entière ne suffit pas : à partie entière égale, on compare les dixièmes."
+            },
+            {
+              "key": "c",
+              "text": "3,5, car 5 dixièmes, c'est plus que 2 dixièmes",
+              "misconception": null
+            }
+          ],
+          "answer": {
+            "value": "c"
+          },
+          "points": 2,
+          "solution_steps": [
+            "Les deux nombres ont la même partie entière, 3 : on compare les chiffres des dixièmes.",
+            "3,5 a 5 dixièmes, 3,25 en a 2 : 3,5 > 3,25.",
+            "On peut aussi écrire 3,5 = 3,50 et comparer 50 centièmes à 25 centièmes."
+          ],
+          "hint": "Compare d'abord les chiffres des dixièmes."
+        },
+        {
+          "key": "q3",
+          "skill_id": "A023",
+          "statement": "Quel matin a-t-il fait le plus froid ?",
+          "type": "qcm",
+          "choices": [
+            {
+              "key": "a",
+              "text": "Jeudi, avec −3,25",
+              "misconception": "L'élève croit que −3,25 est plus petit que −3,5 parce qu'il compare 25 et 5. Or −3,25 est plus près de zéro que −3,5 : il faisait moins froid."
+            },
+            {
+              "key": "b",
+              "text": "Lundi, avec −3,5",
+              "misconception": null
+            },
+            {
+              "key": "c",
+              "text": "Vendredi, avec 0",
+              "misconception": "L'élève croit que 0 est le plus petit nombre possible. Les nombres négatifs sont plus petits que 0."
+            },
+            {
+              "key": "d",
+              "text": "Mardi, avec −0,5",
+              "misconception": "L'élève prend le nombre négatif qui a la plus petite distance à zéro. Or, de deux nombres négatifs, le plus petit est le plus éloigné de zéro."
+            }
+          ],
+          "answer": {
+            "value": "b"
+          },
+          "points": 2,
+          "solution_steps": [
+            "Le matin le plus froid est celui de la plus petite température. Les plus petites sont négatives : −3,5 ; −0,5 ; −3,25 et −2.",
+            "De deux nombres négatifs, le plus petit est le plus éloigné de zéro. Les distances à zéro sont 3,5 ; 0,5 ; 3,25 et 2, et la plus grande est 3,5.",
+            "Le plus petit nombre est −3,5 : c'est **lundi** qu'il a fait le plus froid."
+          ],
+          "hint": null
+        },
+        {
+          "key": "q4",
+          "skill_id": "A023",
+          "statement": "Quel est le rangement des sept températures relevées le matin dans l'ordre croissant ?",
+          "type": "qcm",
+          "choices": [
+            {
+              "key": "a",
+              "text": "−3,5 < −3,25 < −2 < −0,5 < 0 < 0,75 < 1,2",
+              "misconception": null
+            },
+            {
+              "key": "b",
+              "text": "0 < −0,5 < 0,75 < 1,2 < −2 < −3,25 < −3,5",
+              "misconception": "L'élève range les nombres selon leur distance à zéro, sans tenir compte du signe."
+            },
+            {
+              "key": "c",
+              "text": "−0,5 < −2 < −3,25 < −3,5 < 0 < 0,75 < 1,2",
+              "misconception": "L'élève range les nombres négatifs comme s'ils étaient positifs : il croit que −0,5 est plus petit que −3,5 parce que 0,5 est plus petit que 3,5."
+            },
+            {
+              "key": "d",
+              "text": "−3,25 < −3,5 < −2 < −0,5 < 0 < 0,75 < 1,2",
+              "misconception": "L'élève compare −3,25 et −3,5 en lisant 25 et 5 : il croit que −3,25 est le plus petit. Or 3,25 < 3,5, donc −3,25 > −3,5."
+            }
+          ],
+          "answer": {
+            "value": "a"
+          },
+          "points": 3,
+          "solution_steps": [
+            "On place d'abord les nombres négatifs, puis 0, puis les nombres positifs.",
+            "Pour les négatifs, le plus petit est le plus éloigné de zéro. Distances à zéro : 3,5 > 3,25 > 2 > 0,5, donc −3,5 < −3,25 < −2 < −0,5.",
+            "Pour les positifs : 0,75 < 1,2, car 0 unité, c'est moins que 1 unité.",
+            "Rangement : −3,5 < −3,25 < −2 < −0,5 < 0 < 0,75 < 1,2."
+          ],
+          "hint": "Imagine les sept températures sur un thermomètre."
+        },
+        {
+          "key": "q5",
+          "skill_id": "A023",
+          "statement": "Le lundi suivant, à 7 h, il fait plus froid que le jeudi de cette semaine, mais moins froid que le lundi de cette semaine. Quelle température a-t-on pu relever ?",
+          "type": "qcm",
+          "choices": [
+            {
+              "key": "a",
+              "text": "−3,2",
+              "misconception": "L'élève croit que −3,2 < −3,25 en comparant 2 et 25. Or −3,2 > −3,25 : il ferait moins froid que jeudi."
+            },
+            {
+              "key": "b",
+              "text": "−3,6",
+              "misconception": "L'élève croit que −3,6 > −3,5 parce que 6 > 5. Or −3,6 est plus loin de zéro : il ferait plus froid que lundi."
+            },
+            {
+              "key": "c",
+              "text": "3,4",
+              "misconception": "L'élève oublie le signe : 3,4 est bien entre 3,25 et 3,5, mais une température positive est plus chaude que les deux."
+            },
+            {
+              "key": "d",
+              "text": "−3,4",
+              "misconception": null
+            }
+          ],
+          "answer": {
+            "value": "d"
+          },
+          "points": 3,
+          "solution_steps": [
+            "« Plus froid que jeudi » : la température est plus petite que −3,25. « Moins froid que lundi » : elle est plus grande que −3,5.",
+            "On cherche donc un nombre compris entre −3,5 et −3,25.",
+            "−3,4 convient : il est négatif, et sa distance à zéro, 3,4, est entre 3,25 et 3,5. Donc −3,5 < −3,4 < −3,25.",
+            "−3,2 est plus grand que −3,25, −3,6 est plus petit que −3,5, et 3,4 est positif."
+          ],
+          "hint": "Écris l'encadrement avec les températures de lundi et de jeudi."
+        }
+      ],
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 4, classe de 5e, Nombres et calculs, Nombres relatifs, Objectifs d'apprentissage : « Comparer et ranger dans l'ordre croissant et décroissant des nombres décimaux relatifs. »"
+    },
+    {
+      "id": "SX-A024-01",
+      "skill_id": "A024",
+      "skill_ids": [
+        "A024",
+        "A026",
+        "B039",
+        "B040"
+      ],
+      "school_level": "3e",
+      "title": "Les photos de classe",
+      "contexte": "Le photographe du collège prépare les photos de classe. Sa règle : les élèves d'une classe se placent en rangées complètes, qui comptent toutes le même nombre d'élèves. Il veut au moins deux rangées, et au moins deux élèves par rangée.\n\nLes effectifs des classes de troisième :\n3e A : 30 élèves\n3e B : 23 élèves\n3e C : 25 élèves\n3e D : 31 élèves\n\nIl photographie aussi les 84 élèves de l'association sportive, placés en rangées de 12.\n\nPour l'exposition de fin d'année, il affichera 16 portraits sur un panneau, en lignes complètes qui comptent toutes le même nombre de portraits, avec au moins deux lignes et au moins deux portraits par ligne.\n\nChaque photo est vendue 9 €. La séance a lieu dans le gymnase et commence à 13 h 30.",
+      "image": null,
+      "duree_estimee_min": 15,
+      "questions": [
+        {
+          "key": "q1",
+          "skill_id": "B039",
+          "statement": "Le photographe place la 3e A en rangées de 6 élèves. Combien de rangées obtient-il ?",
+          "type": "numerique",
+          "answer": {
+            "value": 5,
+            "unit": "rangées"
+          },
+          "points": 1,
+          "solution_steps": [
+            "La 3e A compte 30 élèves, placés en rangées de 6.",
+            "30 ÷ 6 = 5, car 6 × 5 = 30.",
+            "Il obtient **5 rangées**."
+          ],
+          "hint": null
+        },
+        {
+          "key": "q2",
+          "skill_id": "B040",
+          "statement": "Combien de rangées forment les élèves de l'association sportive ?",
+          "type": "numerique",
+          "answer": {
+            "value": 7,
+            "unit": "rangées"
+          },
+          "points": 2,
+          "solution_steps": [
+            "84 élèves en rangées de 12 : on divise 84 par 12.",
+            "12 × 7 = 84, donc 84 ÷ 12 = 7.",
+            "Les élèves de l'association forment **7 rangées** de 12."
+          ],
+          "hint": null
+        },
+        {
+          "key": "q3",
+          "skill_id": "A026",
+          "statement": "Pour le panneau de l'exposition, combien de nombres de lignes différents le photographe peut-il choisir ?",
+          "type": "numerique",
+          "answer": {
+            "value": 3
+          },
+          "points": 2,
+          "solution_steps": [
+            "Le nombre de lignes doit être un diviseur de 16 : les lignes sont complètes et égales.",
+            "Les produits égaux à 16 sont 1 × 16 ; 2 × 8 ; 4 × 4. Les diviseurs de 16 sont donc 1, 2, 4, 8 et 16.",
+            "La règle écarte 1 ligne (il en faut au moins deux) et 16 lignes (il n'y aurait qu'un portrait par ligne).",
+            "Il reste 2, 4 et 8 lignes : **3 choix**."
+          ],
+          "hint": "Le nombre de lignes doit diviser le nombre de portraits."
+        },
+        {
+          "key": "q4",
+          "skill_id": "A024",
+          "statement": "Quelles classes de troisième le photographe ne peut-il pas placer en respectant sa règle ?",
+          "type": "qcm",
+          "choices": [
+            {
+              "key": "a",
+              "text": "La 3e B seulement",
+              "misconception": "L'élève reconnaît que 23 est premier, mais pas 31. Or 31 n'a pas d'autre diviseur que 1 et lui-même : il est premier aussi."
+            },
+            {
+              "key": "b",
+              "text": "La 3e B, la 3e C et la 3e D",
+              "misconception": "L'élève croit que 25 est premier parce qu'il est impair. Or 25 = 5 × 5 : 5 rangées de 5 élèves conviennent."
+            },
+            {
+              "key": "c",
+              "text": "La 3e B et la 3e D",
+              "misconception": null
+            },
+            {
+              "key": "d",
+              "text": "La 3e C et la 3e D",
+              "misconception": "L'élève écarte les effectifs qui finissent par 1 ou par 5 sans chercher de diviseur : 25 = 5 × 5 se place, alors que 23 ne se place pas."
+            }
+          ],
+          "answer": {
+            "value": "c"
+          },
+          "points": 3,
+          "solution_steps": [
+            "Une classe se place selon la règle si son effectif est un produit de deux entiers au moins égaux à 2 : nombre de rangées × élèves par rangée.",
+            "C'est impossible exactement quand l'effectif est un nombre premier : ses seuls diviseurs sont 1 et lui-même.",
+            "30 = 5 × 6 et 25 = 5 × 5 ne sont pas premiers. Les seuls diviseurs de 23 sont 1 et 23, ceux de 31 sont 1 et 31 : aucune division par 2, 3, 4, 5… ne tombe juste. 23 et 31 sont premiers.",
+            "Le photographe ne peut placer ni la **3e B** (23 élèves) ni la **3e D** (31 élèves)."
+          ],
+          "hint": "Pour chaque classe, cherche si l'effectif s'écrit comme un produit de deux entiers au moins égaux à 2."
+        },
+        {
+          "key": "q5",
+          "skill_id": "A024",
+          "statement": "La chorale du collège compte plus de 44 élèves et moins de 52. Le photographe ne peut pas la placer en respectant sa règle. Combien d'élèves compte la chorale ?",
+          "type": "numerique",
+          "answer": {
+            "value": 47,
+            "unit": "élèves"
+          },
+          "points": 3,
+          "solution_steps": [
+            "Le photographe ne peut pas placer la chorale : son effectif n'a pas d'autre diviseur que 1 et lui-même, c'est un nombre premier.",
+            "On teste les nombres de 45 à 51 : 45 = 5 × 9 ; 46 = 2 × 23 ; 48 = 6 × 8 ; 49 = 7 × 7 ; 50 = 5 × 10 ; 51 = 3 × 17 (la somme de ses chiffres, 6, est divisible par 3).",
+            "47 n'est divisible ni par 2, ni par 3, ni par 5, ni par 7 : ses seuls diviseurs sont 1 et 47. C'est le seul nombre premier entre 44 et 52.",
+            "La chorale compte **47 élèves**."
+          ],
+          "hint": "Pour chaque effectif possible, cherche s'il s'écrit comme un produit de deux entiers au moins égaux à 2."
+        }
+      ],
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 4, programme de 2020 commun aux trois classes, Thème A, Nombres et calculs : « Déterminer les nombres premiers inférieurs ou égaux à 100. »"
+    },
+    {
+      "id": "SX-A025-01",
+      "skill_id": "A025",
+      "skill_ids": [
+        "A025",
+        "A029",
+        "A015",
+        "B040"
+      ],
+      "school_level": "3e",
+      "title": "Les boîtes du chocolatier",
+      "contexte": "Pour la fête du village, un chocolatier a fabriqué 420 chocolats. Il veut les ranger dans des boîtes toutes du même modèle, toutes pleines, sans qu'il reste de chocolat. Il hésite entre quatre modèles :\n« Carré » : 6 rangées de 6 chocolats ;\n« Cube » : 3 étages de 3 rangées de 3 chocolats ;\n« Ruban » : une seule rangée de 12 chocolats ;\n« Duo » : 2 rangées de 7 chocolats.\n\nUne boîte vide coûte 0,80 €. La fête a lieu le 14 juillet, sur la place de la mairie, et le chocolatier y tiendra son stand toute la journée.",
+      "image": null,
+      "duree_estimee_min": 15,
+      "questions": [
+        {
+          "key": "q1",
+          "skill_id": "A029",
+          "statement": "Combien de chocolats contient une boîte « Cube » pleine ?",
+          "type": "numerique",
+          "answer": {
+            "value": 27,
+            "unit": "chocolats"
+          },
+          "points": 1,
+          "solution_steps": [
+            "Une boîte « Cube » a 3 étages de 3 rangées de 3 chocolats : $3^3 = 3 \\times 3 \\times 3$.",
+            "3 × 3 = 9, puis 9 × 3 = 27.",
+            "Elle contient **27 chocolats**. Attention : $3^3$ n'est pas 3 × 3, qui vaut 9."
+          ],
+          "hint": null
+        },
+        {
+          "key": "q2",
+          "skill_id": "A015",
+          "statement": "Le chocolatier affirme : « 420 est divisible par 9. » A-t-il raison ?",
+          "type": "vrai_faux",
+          "answer": {
+            "value": false
+          },
+          "points": 2,
+          "solution_steps": [
+            "Somme des chiffres de 420 : 4 + 2 + 0 = 6.",
+            "6 est divisible par 3 : 420 est divisible par 3.",
+            "Mais 6 n'est pas divisible par 9 : 420 n'est **pas** divisible par 9. Pour être divisible par 9, la somme des chiffres doit être divisible par 9, pas seulement par 3. Le chocolatier a tort."
+          ],
+          "hint": "Rappelle-toi le critère de divisibilité par 9."
+        },
+        {
+          "key": "q3",
+          "skill_id": "A025",
+          "statement": "Quelle est la décomposition de 420 en produit de facteurs premiers ?",
+          "type": "qcm",
+          "choices": [
+            {
+              "key": "a",
+              "text": "$4 \\times 3 \\times 5 \\times 7$",
+              "misconception": "4 n'est pas premier (4 = 2 × 2) : la décomposition n'est pas terminée."
+            },
+            {
+              "key": "b",
+              "text": "$2 \\times 3 \\times 5 \\times 7$",
+              "misconception": "L'élève a oublié un facteur 2 : ce produit vaut 210, la moitié de 420."
+            },
+            {
+              "key": "c",
+              "text": "$2^2 \\times 3 \\times 5 \\times 7$",
+              "misconception": null
+            },
+            {
+              "key": "d",
+              "text": "$2^2 \\times 3 \\times 35$",
+              "misconception": "35 n'est pas premier : 35 = 5 × 7."
+            }
+          ],
+          "answer": {
+            "value": "c"
+          },
+          "points": 3,
+          "solution_steps": [
+            "On divise par les nombres premiers dans l'ordre : 420 ÷ 2 = 210 ; 210 ÷ 2 = 105 ; 105 ÷ 3 = 35 ; 35 ÷ 5 = 7 ; 7 est premier.",
+            "Donc 420 = 2 × 2 × 3 × 5 × 7, soit $2^2 \\times 3 \\times 5 \\times 7$.",
+            "Vérification : 4 × 3 = 12 ; 12 × 5 = 60 ; 60 × 7 = 420."
+          ],
+          "hint": "Divise 420 par 2 tant que c'est possible, puis par 3, par 5, par 7."
+        },
+        {
+          "key": "q4",
+          "skill_id": "A025",
+          "statement": "On admet que 420 = 2 × 2 × 3 × 5 × 7. À l'aide de cette décomposition, sans poser de division : quels modèles permettent de ranger tous les chocolats dans des boîtes pleines ?",
+          "type": "qcm",
+          "choices": [
+            {
+              "key": "a",
+              "text": "« Ruban » et « Duo »",
+              "misconception": null
+            },
+            {
+              "key": "b",
+              "text": "« Carré » et « Ruban »",
+              "misconception": "L'élève voit que 6 divise 420 et en déduit que $6^2$ aussi. Or 36 = 2 × 2 × 3 × 3 demande deux facteurs 3, et 420 n'en a qu'un."
+            },
+            {
+              "key": "c",
+              "text": "« Cube » et « Duo »",
+              "misconception": "27 = 3 × 3 × 3 demande trois facteurs 3, et 420 n'en a qu'un : 27 ne divise pas 420."
+            },
+            {
+              "key": "d",
+              "text": "Les quatre modèles",
+              "misconception": "L'élève pense qu'un nombre pair terminé par 0 se divise par tout. Ni 36 ni 27 ne divisent 420."
+            }
+          ],
+          "answer": {
+            "value": "a"
+          },
+          "points": 3,
+          "solution_steps": [
+            "Un modèle convient si son nombre de chocolats est un diviseur de 420 = 2 × 2 × 3 × 5 × 7 : ses facteurs premiers doivent se trouver dans cette décomposition, autant de fois au plus.",
+            "« Ruban » : 12 = 2 × 2 × 3, il convient. « Duo » : 14 = 2 × 7, il convient.",
+            "« Carré » : 36 = 2 × 2 × 3 × 3 demande deux facteurs 3. « Cube » : 27 = 3 × 3 × 3 en demande trois. Or 420 n'a qu'un facteur 3 : ces deux modèles ne conviennent pas.",
+            "Les modèles qui conviennent sont **« Ruban » et « Duo »**."
+          ],
+          "hint": null
+        },
+        {
+          "key": "q5",
+          "skill_id": "B040",
+          "statement": "Le chocolatier choisit le modèle « Duo ». Combien de boîtes remplit-il ?",
+          "type": "numerique",
+          "answer": {
+            "value": 30,
+            "unit": "boîtes"
+          },
+          "points": 2,
+          "solution_steps": [
+            "Une boîte « Duo » contient 2 × 7 = 14 chocolats.",
+            "420 ÷ 14 = 30, car 14 × 30 = 420.",
+            "Il remplit **30 boîtes**."
+          ],
+          "hint": "Commence par compter les chocolats d'une boîte « Duo »."
+        }
+      ],
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 4, programme de 2020 commun aux trois classes, Thème A, Nombres et calculs : « Décomposer un nombre entier en produit de facteurs premiers (à la main ou à l'aide d'un logiciel). »"
+    },
+    {
+      "id": "SX-A026-01",
+      "skill_id": "A026",
+      "skill_ids": [
+        "A026",
+        "A013",
+        "B039"
+      ],
+      "school_level": "CM2",
+      "title": "La journée sportive",
+      "contexte": "Pour la journée sportive, les 30 élèves de la classe de CM2 de l'école Jules-Verne seront répartis en équipes. Toutes les équipes auront le même nombre d'élèves, et chaque élève sera dans une équipe. Le directeur veut au moins deux équipes, et au moins deux élèves dans chaque équipe.\n\nPour les jeux, il a prévu 3 ballons et 18 chasubles. Le car partira de l'école à 8 h 15 et la journée finira à 16 h. Le transport coûte 245 € pour toute la classe.",
+      "image": null,
+      "duree_estimee_min": 15,
+      "questions": [
+        {
+          "key": "q1",
+          "skill_id": "A013",
+          "statement": "Lina propose de faire des équipes de 4 élèves. Vrai ou faux : c'est possible en respectant les règles du directeur.",
+          "type": "vrai_faux",
+          "answer": {
+            "value": false
+          },
+          "points": 1,
+          "solution_steps": [
+            "Pour faire des équipes de 4 élèves, 4 doit être un diviseur de 30 : 30 doit être dans la table de 4.",
+            "4 × 7 = 28 et 4 × 8 = 32 : 30 n'est pas dans la table de 4. Avec des équipes de 4, il resterait 2 élèves sans équipe.",
+            "C'est **faux**. Le nombre de ballons ne compte pas ici."
+          ],
+          "hint": null
+        },
+        {
+          "key": "q2",
+          "skill_id": "B039",
+          "statement": "Le directeur choisit des équipes de 5 élèves. Combien d'équipes y aura-t-il ?",
+          "type": "numerique",
+          "answer": {
+            "value": 6,
+            "unit": "équipes"
+          },
+          "points": 2,
+          "solution_steps": [
+            "On partage 30 élèves en équipes de 5 : 30 ÷ 5.",
+            "5 × 6 = 30, donc 30 ÷ 5 = 6.",
+            "Il y aura **6 équipes** de 5 élèves."
+          ],
+          "hint": null
+        },
+        {
+          "key": "q3",
+          "skill_id": "A026",
+          "statement": "Quels nombres d'élèves par équipe le directeur peut-il choisir en respectant ses règles ? Écris-les du plus petit au plus grand, séparés par des virgules.",
+          "type": "texte",
+          "answer": {
+            "value": "2, 3, 5, 6, 10, 15",
+            "accepted": [
+              "2,3,5,6,10,15",
+              "2 ; 3 ; 5 ; 6 ; 10 ; 15",
+              "2;3;5;6;10;15",
+              "2 3 5 6 10 15",
+              "2, 3, 5, 6, 10 et 15",
+              "2 ; 3 ; 5 ; 6 ; 10 et 15",
+              "2,3,5,6,10 et 15",
+              "2-3-5-6-10-15",
+              "2 - 3 - 5 - 6 - 10 - 15"
+            ]
+          },
+          "points": 3,
+          "solution_steps": [
+            "Le nombre d'élèves par équipe doit être un diviseur de 30 : toutes les équipes sont complètes et égales.",
+            "Les produits égaux à 30 sont 1 × 30 ; 2 × 15 ; 3 × 10 ; 5 × 6. Les diviseurs de 30 sont donc 1, 2, 3, 5, 6, 10, 15 et 30.",
+            "Les règles écartent 1 (une équipe doit avoir au moins deux élèves) et 30 (il n'y aurait qu'une seule équipe).",
+            "Le directeur peut choisir **2, 3, 5, 6, 10 ou 15** élèves par équipe."
+          ],
+          "hint": "Cherche toutes les façons d'écrire 30 comme un produit de deux nombres."
+        },
+        {
+          "key": "q4",
+          "skill_id": "A026",
+          "statement": "Le matin de la journée sportive, 10 élèves sont à la piscine : seuls 20 élèves participent aux premiers jeux. Les règles ne changent pas. Combien de nombres d'élèves par équipe le directeur peut-il choisir pour ces premiers jeux ?",
+          "type": "numerique",
+          "answer": {
+            "value": 4
+          },
+          "points": 3,
+          "solution_steps": [
+            "On cherche les produits égaux à 20 : 1 × 20 ; 2 × 10 ; 4 × 5. 20 n'est ni dans la table de 3, ni dans celles de 6, 7, 8 ou 9.",
+            "Les diviseurs de 20 sont 1, 2, 4, 5, 10 et 20. Les règles écartent 1 et 20.",
+            "Il reste des équipes de 2, 4, 5 ou 10 élèves : **4 choix**."
+          ],
+          "hint": "Cherche toutes les façons d'écrire 20 comme un produit de deux nombres."
+        }
+      ],
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 3, Cours moyen deuxième année, Les nombres entiers : « Déterminer tous les diviseurs d'un nombre entier inférieur ou égal à 30 »"
+    },
+    {
+      "id": "SX-A027-01",
+      "skill_id": "A027",
+      "skill_ids": [
+        "A027",
+        "A026",
+        "B039"
+      ],
+      "school_level": "CM2",
+      "title": "Le goûter au bord du lac",
+      "contexte": "Pendant la classe verte, Mme Lebrun prépare le goûter. Elle a 12 crêpes et 28 clémentines. Elle veut faire des assiettes identiques : chaque assiette aura le même nombre de crêpes et le même nombre de clémentines, et elle veut tout utiliser.\n\nAprès le goûter, la classe se promène au bord du lac. Au ponton, un petit train part toutes les 8 minutes et une navette en bateau toutes les 10 minutes. À 15 h, ils partent ensemble.\n\nLa classe compte 25 élèves, et la classe verte dure 5 jours.",
+      "image": null,
+      "duree_estimee_min": 15,
+      "questions": [
+        {
+          "key": "q1",
+          "skill_id": "A026",
+          "statement": "Mme Lebrun pense d'abord à partager seulement les 12 crêpes en assiettes égales, sans qu'il en reste. Lequel de ces nombres d'assiettes convient ?",
+          "type": "qcm",
+          "choices": [
+            {
+              "key": "a",
+              "text": "5",
+              "misconception": "12 n'est pas dans la table de 5 : 5 × 2 = 10, il resterait 2 crêpes."
+            },
+            {
+              "key": "b",
+              "text": "8",
+              "misconception": "12 n'est pas dans la table de 8 : 8 × 1 = 8, il resterait 4 crêpes."
+            },
+            {
+              "key": "c",
+              "text": "6",
+              "misconception": null
+            },
+            {
+              "key": "d",
+              "text": "7",
+              "misconception": "12 n'est pas dans la table de 7 : 7 × 1 = 7, il resterait 5 crêpes."
+            }
+          ],
+          "answer": {
+            "value": "c"
+          },
+          "points": 1,
+          "solution_steps": [
+            "Le nombre d'assiettes doit être un diviseur de 12 : 12 doit être dans sa table.",
+            "12 = 6 × 2 : avec 6 assiettes, chacune reçoit 2 crêpes.",
+            "12 n'est ni dans la table de 5, ni dans celle de 7, ni dans celle de 8 : **6 assiettes** conviennent."
+          ],
+          "hint": null
+        },
+        {
+          "key": "q2",
+          "skill_id": "A027",
+          "statement": "Quel est le plus grand nombre d'assiettes que Mme Lebrun peut préparer en utilisant toutes les crêpes et toutes les clémentines ?",
+          "type": "numerique",
+          "answer": {
+            "value": 4,
+            "unit": "assiettes"
+          },
+          "points": 3,
+          "solution_steps": [
+            "Le nombre d'assiettes doit être à la fois un diviseur de 12 (pour les crêpes) et un diviseur de 28 (pour les clémentines).",
+            "Diviseurs de 12 : 1, 2, 3, 4, 6, 12. Diviseurs de 28 : 1, 2, 4, 7, 14, 28.",
+            "Les diviseurs communs sont 1, 2 et 4 : le plus grand est **4 assiettes**, avec 3 crêpes et 7 clémentines sur chacune."
+          ],
+          "hint": "Écris les diviseurs de 12, puis ceux de 28."
+        },
+        {
+          "key": "q3",
+          "skill_id": "B039",
+          "statement": "Si Mme Lebrun prépare 2 assiettes, combien de clémentines y aura-t-il sur chaque assiette ?",
+          "type": "numerique",
+          "answer": {
+            "value": 14,
+            "unit": "clémentines"
+          },
+          "points": 2,
+          "solution_steps": [
+            "On partage 28 clémentines en 2 assiettes : 28 ÷ 2.",
+            "2 × 14 = 28, donc 28 ÷ 2 = 14.",
+            "Il y aura **14 clémentines** sur chaque assiette."
+          ],
+          "hint": null
+        },
+        {
+          "key": "q4",
+          "skill_id": "A027",
+          "statement": "Le petit train et la navette partent ensemble du ponton à 15 h. Dans combien de minutes repartiront-ils ensemble pour la première fois ?",
+          "type": "numerique",
+          "answer": {
+            "value": 40,
+            "unit": "minutes",
+            "accepted": [
+              "40 min"
+            ]
+          },
+          "points": 3,
+          "solution_steps": [
+            "Le petit train repart 8, 16, 24, 32, 40… minutes après 15 h : aux multiples de 8.",
+            "La navette repart 10, 20, 30, 40… minutes après 15 h : aux multiples de 10.",
+            "Le plus petit multiple commun à 8 et à 10, sans compter 0, est 40 : 8 × 5 = 40 et 10 × 4 = 40.",
+            "Ils repartiront ensemble dans **40 minutes**. Attention : 8 × 10 = 80 est aussi un multiple commun, mais pas le plus petit."
+          ],
+          "hint": "Écris les premiers multiples de 8 et ceux de 10."
+        }
+      ],
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 3, Cours moyen deuxième année, Les nombres entiers : « Déterminer les diviseurs communs à deux nombres entiers inférieurs ou égaux à 30 »"
+    },
+    {
+      "id": "SX-A028-01",
+      "skill_id": "A028",
+      "skill_ids": [
+        "A028",
+        "B006"
+      ],
+      "school_level": "CM1",
+      "title": "La course solidaire",
+      "contexte": "Les élèves de CM1 participent à une course solidaire. Le parcours mesure 8 000 m. Sur le plan, il est représenté par une demi-droite graduée : le départ est en 0, et chaque nombre repère une distance au départ, en mètres. Seuls deux nombres sont écrits sur le plan.\n\nLe point R marque le stand de ravitaillement. Les points Q, P et S sont des places où des photographes peuvent se mettre.\n\nPour chaque tranche de 1 000 m parcourue, le parrain de Tom donne 3 € à l'association. La course part à 10 h, et 126 élèves sont inscrits.",
+      "image": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 380 96\" width=\"380\" height=\"96\" font-family=\"system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif\" role=\"img\"><title>Plan du parcours : demi-droite graduée avec les points R, Q, P et S</title><rect width=\"100%\" height=\"100%\" fill=\"#ffffff\"/><line x1=\"28.0\" y1=\"54.0\" x2=\"352.0\" y2=\"54.0\" stroke=\"#334155\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M352.0,54.0 l-9,-5 v10 z\" fill=\"#334155\"/><line x1=\"28.0\" y1=\"45.0\" x2=\"28.0\" y2=\"63.0\" stroke=\"#334155\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><line x1=\"47.4\" y1=\"49.0\" x2=\"47.4\" y2=\"59.0\" stroke=\"#334155\" stroke-width=\"1.2\" stroke-linecap=\"round\"/><line x1=\"66.8\" y1=\"45.0\" x2=\"66.8\" y2=\"63.0\" stroke=\"#334155\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><line x1=\"86.1\" y1=\"49.0\" x2=\"86.1\" y2=\"59.0\" stroke=\"#334155\" stroke-width=\"1.2\" stroke-linecap=\"round\"/><line x1=\"105.5\" y1=\"45.0\" x2=\"105.5\" y2=\"63.0\" stroke=\"#334155\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><line x1=\"124.9\" y1=\"49.0\" x2=\"124.9\" y2=\"59.0\" stroke=\"#334155\" stroke-width=\"1.2\" stroke-linecap=\"round\"/><line x1=\"144.2\" y1=\"45.0\" x2=\"144.2\" y2=\"63.0\" stroke=\"#334155\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><line x1=\"163.6\" y1=\"49.0\" x2=\"163.6\" y2=\"59.0\" stroke=\"#334155\" stroke-width=\"1.2\" stroke-linecap=\"round\"/><line x1=\"183.0\" y1=\"45.0\" x2=\"183.0\" y2=\"63.0\" stroke=\"#334155\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><line x1=\"202.4\" y1=\"49.0\" x2=\"202.4\" y2=\"59.0\" stroke=\"#334155\" stroke-width=\"1.2\" stroke-linecap=\"round\"/><line x1=\"221.8\" y1=\"45.0\" x2=\"221.8\" y2=\"63.0\" stroke=\"#334155\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><line x1=\"241.1\" y1=\"49.0\" x2=\"241.1\" y2=\"59.0\" stroke=\"#334155\" stroke-width=\"1.2\" stroke-linecap=\"round\"/><line x1=\"260.5\" y1=\"45.0\" x2=\"260.5\" y2=\"63.0\" stroke=\"#334155\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><line x1=\"279.9\" y1=\"49.0\" x2=\"279.9\" y2=\"59.0\" stroke=\"#334155\" stroke-width=\"1.2\" stroke-linecap=\"round\"/><line x1=\"299.2\" y1=\"45.0\" x2=\"299.2\" y2=\"63.0\" stroke=\"#334155\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><line x1=\"318.6\" y1=\"49.0\" x2=\"318.6\" y2=\"59.0\" stroke=\"#334155\" stroke-width=\"1.2\" stroke-linecap=\"round\"/><line x1=\"338.0\" y1=\"45.0\" x2=\"338.0\" y2=\"63.0\" stroke=\"#334155\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><text x=\"28.0\" y=\"82.0\" font-size=\"13\" text-anchor=\"middle\" fill=\"#334155\">0</text><text x=\"105.5\" y=\"82.0\" font-size=\"13\" text-anchor=\"middle\" fill=\"#334155\">2 000</text><circle cx=\"163.6\" cy=\"54.0\" r=\"4.5\" fill=\"#2563eb\"/><text x=\"163.6\" y=\"38.0\" font-size=\"15\" text-anchor=\"middle\" fill=\"#2563eb\" font-weight=\"600\">R</text><circle cx=\"202.4\" cy=\"54.0\" r=\"4.5\" fill=\"#2563eb\"/><text x=\"202.4\" y=\"38.0\" font-size=\"15\" text-anchor=\"middle\" fill=\"#2563eb\" font-weight=\"600\">Q</text><circle cx=\"241.1\" cy=\"54.0\" r=\"4.5\" fill=\"#2563eb\"/><text x=\"241.1\" y=\"38.0\" font-size=\"15\" text-anchor=\"middle\" fill=\"#2563eb\" font-weight=\"600\">P</text><circle cx=\"279.9\" cy=\"54.0\" r=\"4.5\" fill=\"#2563eb\"/><text x=\"279.9\" y=\"38.0\" font-size=\"15\" text-anchor=\"middle\" fill=\"#2563eb\" font-weight=\"600\">S</text></svg>",
+      "duree_estimee_min": 15,
+      "questions": [
+        {
+          "key": "q1",
+          "skill_id": "A028",
+          "statement": "Sur le plan, quelle distance sépare deux traits de graduation voisins ?",
+          "type": "numerique",
+          "answer": {
+            "value": 500,
+            "unit": "m"
+          },
+          "points": 1,
+          "solution_steps": [
+            "Entre 0 et 2 000, on compte 4 intervalles entre deux traits voisins.",
+            "4 intervalles égaux pour 2 000 m : chacun vaut 500 m, car 4 × 500 = 2 000.",
+            "Deux traits voisins sont séparés par **500 m**. Les grands traits sont tous les 1 000 m."
+          ],
+          "hint": "Compte les intervalles entre 0 et 2 000."
+        },
+        {
+          "key": "q2",
+          "skill_id": "A028",
+          "statement": "On admet que deux traits de graduation voisins sont séparés de 500 m. Quel nombre repère le point R, c'est-à-dire à quelle distance du départ se trouve le stand de ravitaillement ?",
+          "type": "numerique",
+          "answer": {
+            "value": 3500,
+            "unit": "m"
+          },
+          "points": 3,
+          "solution_steps": [
+            "Les grands traits sont tous les 1 000 m : 0 ; 1 000 ; 2 000 ; 3 000 ; 4 000…",
+            "Le point R est sur le petit trait entre 3 000 et 4 000 : 500 m après 3 000.",
+            "3 000 + 500 = 3 500 : le stand est à **3 500 m** du départ."
+          ],
+          "hint": "Repère d'abord les grands traits de 1 000 en 1 000."
+        },
+        {
+          "key": "q3",
+          "skill_id": "B006",
+          "statement": "Tom court tout le parcours. Combien d'euros son parrain donne-t-il à l'association ?",
+          "type": "numerique",
+          "answer": {
+            "value": 24,
+            "unit": "€",
+            "accepted": [
+              "24 euros"
+            ]
+          },
+          "points": 2,
+          "solution_steps": [
+            "Le parcours mesure 8 000 m, soit 8 tranches de 1 000 m.",
+            "Pour chaque tranche, le parrain donne 3 € : 8 × 3 = 24.",
+            "Le parrain donne **24 €**."
+          ],
+          "hint": null
+        },
+        {
+          "key": "q4",
+          "skill_id": "A028",
+          "statement": "On admet que deux traits de graduation voisins sont séparés de 500 m. Un photographe veut se placer à 5 500 m du départ. Quel point du plan repère cette place ?",
+          "type": "qcm",
+          "choices": [
+            {
+              "key": "a",
+              "text": "Le point Q",
+              "misconception": "Q repère 4 500 : l'élève s'est décalé d'un trait vers le départ, par exemple en comptant les traits au lieu des intervalles."
+            },
+            {
+              "key": "b",
+              "text": "Le point P",
+              "misconception": null
+            },
+            {
+              "key": "c",
+              "text": "Le point S",
+              "misconception": "S repère 6 500 : l'élève s'est décalé d'un trait vers l'arrivée."
+            }
+          ],
+          "answer": {
+            "value": "b"
+          },
+          "points": 3,
+          "solution_steps": [
+            "5 500, c'est 5 000 + 500 : on va jusqu'au grand trait 5 000, puis on avance d'un petit intervalle de 500 m.",
+            "Le point placé au milieu, entre 5 000 et 6 000, est P.",
+            "Le photographe se place en **P**. Q repère 4 500 et S repère 6 500."
+          ],
+          "hint": null
+        }
+      ],
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 3, Cours moyen première année, Les nombres entiers : « Savoir placer des nombres et repérer des points sur une demi-droite graduée »"
+    },
+    {
+      "id": "SX-A029-01",
+      "skill_id": "A029",
+      "skill_ids": [
+        "A029",
+        "P024",
+        "D021"
+      ],
+      "school_level": "5e",
+      "title": "Les maquettes de la fête de la science",
+      "contexte": "Pour la fête de la science, les élèves de 5e construisent des maquettes avec des petits cubes de bois de 1 cm d'arête.\n\nLe groupe de Nina construit un grand carré à plat, d'une seule couche, de 12 petits cubes de côté. Il le pose ensuite sur une plaque carrée de 15 cm de côté.\n\nLe groupe d'Hugo construit un grand cube plein, de 6 petits cubes d'arête.\n\nLe groupe de Sam construit un autre grand cube plein, avec exactement 512 petits cubes.\n\nLes petits cubes sont vendus en sachets de 100, à 4,50 € le sachet. La fête de la science a lieu en octobre et dure 3 jours.",
+      "image": null,
+      "duree_estimee_min": 15,
+      "questions": [
+        {
+          "key": "q1",
+          "skill_id": "A029",
+          "statement": "Quelle écriture donne le nombre de petits cubes du grand carré du groupe de Nina ?",
+          "type": "qcm",
+          "choices": [
+            {
+              "key": "a",
+              "text": "$12 \\times 2$",
+              "misconception": "L'élève multiplie par l'exposant : « 12 au carré » n'est pas le double de 12, c'est 12 × 12."
+            },
+            {
+              "key": "b",
+              "text": "$12^3$",
+              "misconception": "Le carré de Nina n'a qu'une couche : $12^3$ compterait 12 couches de 12 rangées de 12 cubes."
+            },
+            {
+              "key": "c",
+              "text": "$12^2$",
+              "misconception": null
+            },
+            {
+              "key": "d",
+              "text": "$4 \\times 12$",
+              "misconception": "4 × 12 compte les cubes le long des quatre côtés (en comptant deux fois les coins), pas tous les cubes du carré."
+            }
+          ],
+          "answer": {
+            "value": "c"
+          },
+          "points": 1,
+          "solution_steps": [
+            "Le grand carré a 12 rangées de 12 petits cubes : il en contient 12 × 12.",
+            "Un produit d'un nombre par lui-même s'écrit avec un carré : on écrit $12^2$, qu'on lit « 12 au carré ».",
+            "La bonne écriture est $12^2$ ; elle vaut 144."
+          ],
+          "hint": null
+        },
+        {
+          "key": "q2",
+          "skill_id": "P024",
+          "statement": "Quelle aire de la plaque reste visible autour du grand carré de Nina, en cm² ?",
+          "type": "numerique",
+          "answer": {
+            "value": 81,
+            "unit": "cm²"
+          },
+          "points": 2,
+          "solution_steps": [
+            "Chaque petit cube a 1 cm d'arête : le grand carré de Nina mesure 12 cm de côté. Son aire : 12 × 12 = 144 cm².",
+            "La plaque mesure 15 cm de côté. Son aire : 15 × 15 = 225 cm².",
+            "Aire visible : 225 − 144 = 81, soit **81 cm²**.",
+            "Attention : 15 − 12 = 3 cm est l'écart entre les côtés, pas une aire."
+          ],
+          "hint": "Calcule l'aire de la plaque et celle du grand carré."
+        },
+        {
+          "key": "q3",
+          "skill_id": "A029",
+          "statement": "Combien de petits cubes faut-il pour le grand cube du groupe d'Hugo ?",
+          "type": "numerique",
+          "answer": {
+            "value": 216,
+            "unit": "cubes",
+            "accepted": [
+              "216 petits cubes"
+            ]
+          },
+          "points": 3,
+          "solution_steps": [
+            "Le grand cube a 6 couches ; chaque couche est un carré de 6 rangées de 6 cubes, soit $6^2 = 36$ cubes.",
+            "6 couches de 36 cubes : $6^3 = 6 \\times 6 \\times 6 = 216$.",
+            "Il faut **216 petits cubes**.",
+            "Attention : $6^3$ n'est pas 6 × 3, qui vaut 18."
+          ],
+          "hint": "Compte d'abord les cubes d'une couche."
+        },
+        {
+          "key": "q4",
+          "skill_id": "D021",
+          "statement": "Le groupe de Sam achète juste assez de sachets pour avoir ses 512 petits cubes. Combien dépense-t-il ?",
+          "type": "numerique",
+          "answer": {
+            "value": 27,
+            "unit": "€",
+            "accepted": [
+              "27,00",
+              "27,00 €",
+              "27 euros"
+            ]
+          },
+          "points": 2,
+          "solution_steps": [
+            "5 sachets donnent 500 petits cubes : ce n'est pas assez pour 512. Il faut 6 sachets, soit 600 cubes.",
+            "6 sachets à 4,50 € : 6 × 4,50 = 27.",
+            "Le groupe de Sam dépense **27 €**."
+          ],
+          "hint": "Combien de sachets faut-il pour avoir au moins 512 cubes ?"
+        },
+        {
+          "key": "q5",
+          "skill_id": "A029",
+          "statement": "Combien de petits cubes mesure l'arête du grand cube de Sam ?",
+          "type": "numerique",
+          "answer": {
+            "value": 8,
+            "unit": "cubes",
+            "accepted": [
+              "8 petits cubes"
+            ]
+          },
+          "points": 3,
+          "solution_steps": [
+            "On cherche un entier qui, multiplié trois fois par lui-même, donne 512 : 512 est le cube de cet entier.",
+            "On essaie : $7^3 = 343$, trop petit ; $8^3 = 8 \\times 8 \\times 8 = 512$.",
+            "512 = $8^3$ : l'arête du grand cube de Sam mesure **8 petits cubes**."
+          ],
+          "hint": "Calcule les cubes de quelques entiers et compare-les à 512."
+        }
+      ],
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 4, classe de 5e, Nombres et calculs, Puissances, Objectifs d'apprentissage : « Découvrir la notion de puissance d'un nombre et sa notation dans le cas du carré et du cube. »"
+    },
+    {
+      "id": "SX-A030-01",
+      "skill_id": "A030",
+      "skill_ids": [
+        "A030",
+        "A029",
+        "P024"
+      ],
+      "school_level": "5e",
+      "title": "Le spectacle de danse",
+      "contexte": "Pour le spectacle de fin d'année du collège, Mme Benali, professeure d'EPS, prépare plusieurs tableaux de danse. Dans chaque tableau, les danseurs forment un carré plein : il y a autant de rangées que de danseurs dans chaque rangée.\n\nLe grand final réunit 11 rangées de danseurs. Chaque danseur occupe au sol une case carrée de 1 m de côté, et les cases se touchent.\nLes 100 élèves de 5e dansent un tableau tous ensemble.\nLes 90 élèves de 4e voudraient eux aussi danser tous ensemble.\nLe club théâtre compte 70 élèves : ils forment le plus grand carré plein possible, et ceux qui restent tiennent les rideaux.\n\nLa scène est un rectangle de 15 m sur 12 m. Le spectacle commence à 20 h, et le billet coûte 5 €.",
+      "image": null,
+      "duree_estimee_min": 15,
+      "questions": [
+        {
+          "key": "q1",
+          "skill_id": "A029",
+          "statement": "Quel calcul donne le nombre de danseurs du grand final ?",
+          "type": "qcm",
+          "choices": [
+            {
+              "key": "a",
+              "text": "11 × 2",
+              "misconception": "« 11 au carré » n'est pas le double de 11 : il y a 11 rangées de 11 danseurs, pas 2 rangées."
+            },
+            {
+              "key": "b",
+              "text": "11 × 11",
+              "misconception": null
+            },
+            {
+              "key": "c",
+              "text": "11 × 11 × 11",
+              "misconception": "Ce serait le cube de 11 : un carré plein n'a qu'une couche de danseurs."
+            },
+            {
+              "key": "d",
+              "text": "4 × 11",
+              "misconception": "4 × 11 compte les danseurs du tour du carré (en comptant deux fois les coins), pas tous les danseurs."
+            }
+          ],
+          "answer": {
+            "value": "b"
+          },
+          "points": 1,
+          "solution_steps": [
+            "Le grand final a 11 rangées, et chaque rangée compte autant de danseurs qu'il y a de rangées : 11.",
+            "11 rangées de 11 danseurs : 11 × 11, c'est-à-dire $11^2$, qui vaut 121."
+          ],
+          "hint": null
+        },
+        {
+          "key": "q2",
+          "skill_id": "A030",
+          "statement": "Combien de rangées forment les élèves de 5e ?",
+          "type": "numerique",
+          "answer": {
+            "value": 10,
+            "unit": "rangées"
+          },
+          "points": 2,
+          "solution_steps": [
+            "Les 100 élèves forment un carré plein : on cherche l'entier dont le carré vaut 100.",
+            "$10^2 = 100$ : ils forment **10 rangées** de 10 élèves.",
+            "Attention : la moitié de 100 ne convient pas ; on cherche le nombre qui, multiplié par lui-même, donne 100."
+          ],
+          "hint": null
+        },
+        {
+          "key": "q3",
+          "skill_id": "A030",
+          "statement": "Vrai ou faux : les 90 élèves de 4e peuvent former un carré plein.",
+          "type": "vrai_faux",
+          "answer": {
+            "value": false
+          },
+          "points": 2,
+          "solution_steps": [
+            "Pour former un carré plein, 90 doit être le carré d'un entier.",
+            "$9^2 = 81$ et $10^2 = 100$ : 90 est entre deux carrés d'entiers qui se suivent, ce n'est le carré d'aucun entier.",
+            "C'est **faux**. 90 se termine par 0 comme 100, mais cela ne suffit pas."
+          ],
+          "hint": "Cite les carrés des entiers proches de 90."
+        },
+        {
+          "key": "q4",
+          "skill_id": "A030",
+          "statement": "Combien d'élèves du club théâtre tiendront les rideaux ?",
+          "type": "numerique",
+          "answer": {
+            "value": 6,
+            "unit": "élèves"
+          },
+          "points": 3,
+          "solution_steps": [
+            "On cherche le plus grand carré d'entier qui ne dépasse pas 70 : $8^2 = 64$ convient, $9^2 = 81$ dépasse 70.",
+            "64 élèves dansent, en 8 rangées de 8.",
+            "70 − 64 = 6 : **6 élèves** tiennent les rideaux."
+          ],
+          "hint": "Quel est le plus grand carré d'entier inférieur à 70 ?"
+        },
+        {
+          "key": "q5",
+          "skill_id": "P024",
+          "statement": "Le carré des danseurs du grand final mesure 11 m de côté. Quelle aire de la scène reste libre autour de lui, en m² ?",
+          "type": "numerique",
+          "answer": {
+            "value": 59,
+            "unit": "m²"
+          },
+          "points": 2,
+          "solution_steps": [
+            "Aire de la scène, un rectangle de 15 m sur 12 m : 15 × 12 = 180 m².",
+            "Aire du carré des danseurs : 11 × 11 = 121 m².",
+            "Aire libre : 180 − 121 = 59, soit **59 m²**."
+          ],
+          "hint": null
+        }
+      ],
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 4, classe de 5e, Nombres et calculs, Puissances, Objectifs d'apprentissage : « Connaitre les carrés des entiers de 0 à 12. »"
+    },
+    {
+      "id": "SX-A031-01",
+      "skill_id": "A031",
+      "skill_ids": [
+        "A031",
+        "A029",
+        "D006"
+      ],
+      "school_level": "4e",
+      "title": "La chaîne du club de basket",
+      "contexte": "Pour financer un tournoi, le club de basket lance une chaîne de messages. Le lundi, la présidente envoie l'appel à 3 personnes. Le mardi, chacune de ces personnes l'envoie à 3 nouvelles personnes, et ainsi de suite : chaque jour, le nombre de nouvelles personnes contactées est multiplié par 3. On numérote les jours : le lundi est le jour 1, le mardi le jour 2, et ainsi de suite.\n\nPendant ce temps, l'équipe teste une nouvelle balle. Lâchée d'une hauteur de 1 m, elle remonte, après chaque rebond, à 0,6 fois la hauteur d'où elle est tombée.\n\nLe club compte 48 licenciés, et le tournoi aura lieu dans 5 semaines.",
+      "image": null,
+      "duree_estimee_min": 15,
+      "questions": [
+        {
+          "key": "q1",
+          "skill_id": "A029",
+          "statement": "Combien de nouvelles personnes sont contactées le mardi ?",
+          "type": "numerique",
+          "answer": {
+            "value": 9,
+            "unit": "personnes"
+          },
+          "points": 1,
+          "solution_steps": [
+            "Le lundi, 3 personnes reçoivent l'appel. Le mardi, chacune l'envoie à 3 nouvelles personnes : 3 × 3 = 9.",
+            "**9 personnes** sont contactées le mardi, soit $3^2$."
+          ],
+          "hint": null
+        },
+        {
+          "key": "q2",
+          "skill_id": "A031",
+          "statement": "Combien de nouvelles personnes sont contactées le vendredi ?",
+          "type": "numerique",
+          "answer": {
+            "value": 243,
+            "unit": "personnes"
+          },
+          "points": 3,
+          "solution_steps": [
+            "Le jour 1, il y a 3 nouvelles personnes ; chaque jour, ce nombre est multiplié par 3.",
+            "Le vendredi est le jour 5 : on obtient un produit de 5 facteurs égaux à 3, c'est-à-dire $3^5$.",
+            "$3^5 = 3 \\times 3 \\times 3 \\times 3 \\times 3 = 243$.",
+            "**243 personnes** sont contactées le vendredi. Attention : $3^5$ n'est pas 3 × 5, qui vaut 15."
+          ],
+          "hint": "Le lundi est le jour 1 : quel est le numéro du vendredi ?"
+        },
+        {
+          "key": "q3",
+          "skill_id": "D006",
+          "statement": "Quelle hauteur la balle atteint-elle après son troisième rebond, en mètres ?",
+          "type": "numerique",
+          "answer": {
+            "value": 0.216,
+            "unit": "m"
+          },
+          "points": 2,
+          "solution_steps": [
+            "Après le premier rebond : 1 × 0,6 = 0,6 m. Après le deuxième : 0,6 × 0,6 = 0,36 m. Après le troisième : 0,36 × 0,6 = 0,216 m.",
+            "C'est $0{,}6^3 = 0{,}216$.",
+            "La balle remonte à **0,216 m**, un peu plus de 21 cm."
+          ],
+          "hint": "Multiplie la hauteur par 0,6 à chaque rebond."
+        },
+        {
+          "key": "q4",
+          "skill_id": "A031",
+          "statement": "Quel est le numéro du premier jour où plus de 2 000 nouvelles personnes sont contactées ?",
+          "type": "numerique",
+          "answer": {
+            "value": 7
+          },
+          "points": 3,
+          "solution_steps": [
+            "Le jour 5, $3^5 = 243$ nouvelles personnes sont contactées.",
+            "Le jour 6 : $3^6 = 243 \\times 3 = 729$. Le jour 7 : $3^7 = 729 \\times 3 = 2\\,187$.",
+            "729 ne dépasse pas 2 000, mais 2 187 le dépasse : c'est le **jour 7**, le dimanche."
+          ],
+          "hint": "Le jour 2, il y a $3^2$ nouvelles personnes ; continue jour après jour."
+        }
+      ],
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 4, classe de 4e, Nombres et calculs, Puissances, Objectifs d'apprentissage : « Définir les puissances d'exposant positif d'un nombre a. »"
+    },
+    {
+      "id": "SX-A032-01",
+      "skill_id": "A032",
+      "skill_ids": [
+        "A032",
+        "D024",
+        "D023"
+      ],
+      "school_level": "4e",
+      "title": "La visite du parc éolien",
+      "contexte": "La classe de 4e visite un parc éolien. Le guide donne quelques chiffres :\nle parc compte 12 éoliennes ;\nchaque éolienne a une puissance de 2,5 MW (mégawatts) ;\nchaque pale mesure 45 m de long ;\nen un an, le parc produit environ 60 GWh (gigawattheures) d'électricité ;\nun foyer consomme en moyenne 5 000 kWh (kilowattheures) d'électricité par an.\n\nPour comparer, le guide montre une ampoule LED, d'une puissance de 10 W (watts).\n\nLa visite coûte 3 € par élève, et le car est parti du collège à 8 h 15.",
+      "image": null,
+      "duree_estimee_min": 15,
+      "questions": [
+        {
+          "key": "q1",
+          "skill_id": "D024",
+          "statement": "Quelle est la puissance totale des éoliennes du parc, en MW ?",
+          "type": "numerique",
+          "answer": {
+            "value": 30,
+            "unit": "MW",
+            "accepted": [
+              "30 mégawatts"
+            ]
+          },
+          "points": 1,
+          "solution_steps": [
+            "Le parc compte 12 éoliennes de 2,5 MW chacune : 12 × 2,5.",
+            "12 × 2,5 = 30.",
+            "La puissance totale est de **30 MW**."
+          ],
+          "hint": null
+        },
+        {
+          "key": "q2",
+          "skill_id": "A032",
+          "statement": "Quelle est la puissance d'une éolienne, en watts ? Écris le nombre en chiffres.",
+          "type": "numerique",
+          "answer": {
+            "value": 2500000,
+            "unit": "W",
+            "accepted": [
+              "2 500 000 watts"
+            ]
+          },
+          "points": 2,
+          "solution_steps": [
+            "Le préfixe méga signifie $10^6$, un million : 1 MW = 1 000 000 W.",
+            "2,5 MW = 2,5 × 1 000 000 W = 2 500 000 W.",
+            "Une éolienne a une puissance de **2 500 000 W**."
+          ],
+          "hint": "Que signifie le préfixe méga ?"
+        },
+        {
+          "key": "q3",
+          "skill_id": "A032",
+          "statement": "Combien de foyers la production du parc peut-elle alimenter en électricité pendant un an ?",
+          "type": "numerique",
+          "answer": {
+            "value": 12000,
+            "unit": "foyers"
+          },
+          "points": 3,
+          "solution_steps": [
+            "Giga signifie $10^9$ et kilo $10^3$ : 1 GWh = 1 000 000 000 Wh = 1 000 000 kWh.",
+            "60 GWh = 60 × 1 000 000 kWh = 60 000 000 kWh.",
+            "Chaque foyer consomme 5 000 kWh : 60 000 000 ÷ 5 000 = 60 000 ÷ 5 = 12 000.",
+            "Le parc peut alimenter **12 000 foyers**. Attention : convertir les deux quantités dans la même unité avant de diviser."
+          ],
+          "hint": "Écris d'abord la production du parc en kWh."
+        },
+        {
+          "key": "q4",
+          "skill_id": "D023",
+          "statement": "Combien d'ampoules LED comme celle du guide, allumées en même temps, auraient une puissance totale d'un mégawatt ?",
+          "type": "numerique",
+          "answer": {
+            "value": 100000,
+            "unit": "ampoules"
+          },
+          "points": 2,
+          "solution_steps": [
+            "Un mégawatt, c'est 1 000 000 W.",
+            "Chaque ampoule a une puissance de 10 W : 1 000 000 ÷ 10 = 100 000.",
+            "Il faudrait **100 000 ampoules**."
+          ],
+          "hint": null
+        }
+      ],
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 4, Nombres et calculs, présentation commune aux trois classes : « On introduit en fonction des besoins les préfixes des puissances de dix de nano à giga. »"
+    },
+    {
+      "id": "SX-A033-01",
+      "skill_id": "A033",
+      "skill_ids": [
+        "A033",
+        "A029",
+        "B022"
+      ],
+      "school_level": "4e",
+      "title": "L'escape game de Nolan",
+      "contexte": "Pour son anniversaire, Nolan et ses amis font un escape game. Ils ont 60 minutes pour sortir de la salle, et la partie coûte 25 € par joueur.\n\nPremière énigme : un coffre est fermé par un cadenas à 4 molettes. Chaque molette porte les voyelles A, E, I, O et U. Un code est une suite de 4 voyelles, une par molette.\n\nDeuxième énigme : un panneau porte 9 interrupteurs. Chacun peut être en haut ou en bas. Une seule position des 9 interrupteurs ouvre la porte.\n\nTroisième énigme : dans un tiroir, une boîte en forme de cube de 10 cm d'arête est remplie de petits dés de 1 cm d'arête, sans espace entre eux.",
+      "image": null,
+      "duree_estimee_min": 15,
+      "questions": [
+        {
+          "key": "q1",
+          "skill_id": "A029",
+          "statement": "Combien de petits dés la boîte du tiroir contient-elle ?",
+          "type": "numerique",
+          "answer": {
+            "value": 1000,
+            "unit": "dés"
+          },
+          "points": 1,
+          "solution_steps": [
+            "La boîte a 10 couches de 10 rangées de 10 dés : $10^3$ dés.",
+            "$10^3 = 10 \\times 10 \\times 10 = 1\\,000$.",
+            "Elle contient **1 000 dés**. Attention : $10^3$ n'est pas 10 × 3, qui vaut 30."
+          ],
+          "hint": null
+        },
+        {
+          "key": "q2",
+          "skill_id": "A033",
+          "statement": "Combien de codes différents le cadenas du coffre permet-il de former ?",
+          "type": "numerique",
+          "answer": {
+            "value": 625,
+            "unit": "codes"
+          },
+          "points": 3,
+          "solution_steps": [
+            "Chaque molette peut prendre 5 positions : les voyelles A, E, I, O et U.",
+            "Pour chaque voyelle de la première molette, il y a 5 choix pour la deuxième, puis 5 pour la troisième et 5 pour la quatrième : 5 × 5 × 5 × 5 codes.",
+            "$5^4 = 625$ : le cadenas permet **625 codes**.",
+            "Attention : 5 × 4 = 20 compte les voyelles des 4 molettes, pas les codes."
+          ],
+          "hint": "Compte les voyelles d'une molette."
+        },
+        {
+          "key": "q3",
+          "skill_id": "A033",
+          "statement": "Combien de positions différentes les 9 interrupteurs du panneau peuvent-ils prendre ?",
+          "type": "numerique",
+          "answer": {
+            "value": 512,
+            "unit": "positions"
+          },
+          "points": 2,
+          "solution_steps": [
+            "Chaque interrupteur a 2 positions : en haut ou en bas.",
+            "Pour 9 interrupteurs : un produit de 9 facteurs égaux à 2, soit $2^9$.",
+            "$2^9 = 512$ : il y a **512 positions**.",
+            "Attention : 2 × 9 = 18 ne compte que les positions des interrupteurs pris un par un."
+          ],
+          "hint": null
+        },
+        {
+          "key": "q4",
+          "skill_id": "B022",
+          "statement": "Un robot essaie $10^2$ codes par seconde. Pendant $10^3$ secondes, il essaie $10^2 \\times 10^3$ codes. Ce nombre s'écrit $10^n$ : que vaut n ?",
+          "type": "numerique",
+          "answer": {
+            "value": 5
+          },
+          "points": 2,
+          "solution_steps": [
+            "$10^2 \\times 10^3 = (10 \\times 10) \\times (10 \\times 10 \\times 10)$ : c'est un produit de 2 + 3 = 5 facteurs égaux à 10.",
+            "$10^2 \\times 10^3 = 10^5$ : n = **5**.",
+            "Attention : on additionne les exposants, on ne les multiplie pas ; $10^6$ serait faux."
+          ],
+          "hint": null
+        },
+        {
+          "key": "q5",
+          "skill_id": "A033",
+          "statement": "Le maître du jeu veut un nouveau cadenas, dont les molettes portent les mêmes voyelles que celles du coffre, et qui permette plus de 10 000 codes différents. Combien de molettes faut-il au minimum ?",
+          "type": "numerique",
+          "answer": {
+            "value": 6,
+            "unit": "molettes"
+          },
+          "points": 3,
+          "solution_steps": [
+            "Avec 5 molettes : $5^5 = 3\\,125$ codes ; avec 6 molettes : $5^6 = 15\\,625$ codes.",
+            "3 125 ne dépasse pas 10 000, alors que 15 625 le dépasse.",
+            "Il faut au minimum **6 molettes**."
+          ],
+          "hint": "Chaque molette de plus multiplie le nombre de codes par 5."
+        }
+      ],
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 4, classe de 4e, Nombres et calculs, Puissances, Objectifs d'apprentissage : « Résoudre des problèmes faisant intervenir des puissances. »"
+    },
+    {
+      "id": "SX-A034-01",
+      "skill_id": "A034",
+      "skill_ids": [
+        "A034",
+        "P024",
+        "D024"
+      ],
+      "school_level": "4e",
+      "title": "Le jardin partagé",
+      "contexte": "Le jardin partagé du quartier compte trois parcelles carrées :\nla parcelle des Lilas, d'aire 49 m² ;\nla parcelle des Roses, d'aire 100 m² ;\nla parcelle des Iris, d'aire 25 m².\nUne quatrième parcelle, celle des Tulipes, est un rectangle de 8 m sur 6 m.\n\nLes jardiniers veulent entourer la parcelle des Lilas d'un grillage, vendu 4,50 € le mètre.\n\nLe jardin ouvre de 9 h à 19 h, et 17 familles y cultivent une parcelle. Chaque famille verse une cotisation pour l'entretien des outils.",
+      "image": null,
+      "duree_estimee_min": 15,
+      "questions": [
+        {
+          "key": "q1",
+          "skill_id": "P024",
+          "statement": "Quelle est l'aire de la parcelle des Tulipes, en m² ?",
+          "type": "numerique",
+          "answer": {
+            "value": 48,
+            "unit": "m²"
+          },
+          "points": 1,
+          "solution_steps": [
+            "La parcelle des Tulipes est un rectangle : son aire est longueur × largeur.",
+            "8 × 6 = 48 : son aire est **48 m²**."
+          ],
+          "hint": null
+        },
+        {
+          "key": "q2",
+          "skill_id": "A034",
+          "statement": "Quelle est la longueur du côté de la parcelle des Roses ?",
+          "type": "numerique",
+          "answer": {
+            "value": 10,
+            "unit": "m"
+          },
+          "points": 2,
+          "solution_steps": [
+            "Le côté d'un carré d'aire 100 m² est le nombre positif dont le carré vaut 100 : la racine carrée de 100.",
+            "$\\sqrt{100} = 10$, car $10^2 = 100$ et 10 est positif.",
+            "Le côté mesure **10 m**. Attention : 100 ÷ 2 = 50 ou 100 ÷ 4 = 25 ne donnent pas le côté."
+          ],
+          "hint": "Quel nombre, multiplié par lui-même, donne 100 ?"
+        },
+        {
+          "key": "q3",
+          "skill_id": "D024",
+          "statement": "Combien coûte le grillage pour entourer la parcelle des Lilas ?",
+          "type": "numerique",
+          "answer": {
+            "value": 126,
+            "unit": "€",
+            "accepted": [
+              "126,00",
+              "126,00 €",
+              "126 euros"
+            ]
+          },
+          "points": 2,
+          "solution_steps": [
+            "Côté de la parcelle des Lilas : $\\sqrt{49} = 7$ m, car $7^2 = 49$.",
+            "Le grillage fait le tour du carré : 4 × 7 = 28 m.",
+            "Prix : 28 × 4,50 = 126.",
+            "Le grillage coûte **126 €**."
+          ],
+          "hint": "Commence par la longueur du côté de la parcelle des Lilas."
+        },
+        {
+          "key": "q4",
+          "skill_id": "A034",
+          "statement": "Léo affirme : « Si l'on réunissait les parcelles des Lilas et des Iris en une seule parcelle carrée de même aire, son côté serait la somme des côtés des deux parcelles. » A-t-il raison ?",
+          "type": "vrai_faux",
+          "answer": {
+            "value": false
+          },
+          "points": 3,
+          "solution_steps": [
+            "Les côtés sont $\\sqrt{49} = 7$ m et $\\sqrt{25} = 5$ m. Leur somme : 7 + 5 = 12 m.",
+            "Un carré de 12 m de côté a une aire de $12^2 = 144$ m², alors que les deux parcelles réunies font 49 + 25 = 74 m².",
+            "Léo a **tort** : la racine carrée d'une somme n'est pas la somme des racines carrées. Le côté cherché est $\\sqrt{74}$ m."
+          ],
+          "hint": "Calcule l'aire d'un carré dont le côté serait la somme des deux côtés."
+        },
+        {
+          "key": "q5",
+          "skill_id": "A034",
+          "statement": "Une nouvelle parcelle carrée aura un côté de $\\sqrt{60}$ m. Quelle sera son aire, en m² ?",
+          "type": "numerique",
+          "answer": {
+            "value": 60,
+            "unit": "m²"
+          },
+          "points": 2,
+          "solution_steps": [
+            "L'aire d'un carré est côté × côté : $\\sqrt{60} \\times \\sqrt{60}$.",
+            "Par définition, $\\sqrt{60}$ est le nombre positif dont le carré vaut 60 : $(\\sqrt{60})^2 = 60$.",
+            "La parcelle aura une aire de **60 m²**, sans avoir besoin de calculer $\\sqrt{60}$."
+          ],
+          "hint": null
+        }
+      ],
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 4, classe de 4e, Nombres et calculs, Racine carrée, Objectifs d'apprentissage : « Comprendre et connaitre la définition de la racine carrée d'un nombre positif. »"
+    },
+    {
+      "id": "SX-A035-01",
+      "skill_id": "A035",
+      "skill_ids": [
+        "A035",
+        "A034",
+        "B042"
+      ],
+      "school_level": "4e",
+      "title": "Les pelouses de M. Diaz",
+      "contexte": "M. Diaz, paysagiste, va poser du gazon en rouleaux sur trois pelouses carrées :\nla pelouse A, d'aire 81 m² ;\nla pelouse B, d'aire 40 m² ;\nla pelouse C, d'aire 138 m².\n\nIl doit aussi entourer la pelouse B d'une bordure en bois. La bordure est vendue en éléments droits de 1 m de long, qu'on ne peut pas couper. Sur chaque côté de la pelouse, il pose des éléments entiers bout à bout, jusqu'à couvrir tout le côté, quitte à dépasser un peu.\n\nLe gazon est livré un mardi matin, et M. Diaz travaille avec 3 ouvriers. Il n'a pas de calculatrice sur le chantier.",
+      "image": null,
+      "duree_estimee_min": 15,
+      "questions": [
+        {
+          "key": "q1",
+          "skill_id": "B042",
+          "statement": "Quelle aire de gazon M. Diaz doit-il poser en tout, en m² ?",
+          "type": "numerique",
+          "answer": {
+            "value": 259,
+            "unit": "m²"
+          },
+          "points": 1,
+          "solution_steps": [
+            "On additionne les aires des trois pelouses : 81 + 40 + 138 = 259.",
+            "Il doit poser **259 m²** de gazon."
+          ],
+          "hint": null
+        },
+        {
+          "key": "q2",
+          "skill_id": "A034",
+          "statement": "Quelle est la longueur du côté de la pelouse A ?",
+          "type": "numerique",
+          "answer": {
+            "value": 9,
+            "unit": "m"
+          },
+          "points": 2,
+          "solution_steps": [
+            "Le côté d'un carré d'aire 81 m² est $\\sqrt{81}$ m.",
+            "$\\sqrt{81} = 9$, car $9^2 = 81$ et 9 est positif.",
+            "Le côté de la pelouse A mesure **9 m**."
+          ],
+          "hint": null
+        },
+        {
+          "key": "q3",
+          "skill_id": "A035",
+          "statement": "Entre quels nombres entiers consécutifs se trouve la longueur, en mètres, du côté de la pelouse C ?",
+          "type": "qcm",
+          "choices": [
+            {
+              "key": "a",
+              "text": "Entre 11 et 12",
+              "misconception": null
+            },
+            {
+              "key": "b",
+              "text": "Entre 69 et 70",
+              "misconception": "L'élève prend la moitié de 138 : or 69 × 69 est bien plus grand que 138."
+            },
+            {
+              "key": "c",
+              "text": "Entre 138 et 139",
+              "misconception": "L'élève encadre l'aire au lieu du côté : il faut encadrer $\\sqrt{138}$, pas 138."
+            },
+            {
+              "key": "d",
+              "text": "Entre 12 et 13",
+              "misconception": "L'élève se trompe de carré : $12^2 = 144$ dépasse déjà 138, donc le côté est plus petit que 12."
+            }
+          ],
+          "answer": {
+            "value": "a"
+          },
+          "points": 2,
+          "solution_steps": [
+            "Le côté de la pelouse C mesure $\\sqrt{138}$ m.",
+            "On situe 138 entre deux carrés d'entiers qui se suivent : $11^2 = 121$ et $12^2 = 144$, et 121 < 138 < 144.",
+            "Donc $11 < \\sqrt{138} < 12$ : le côté est entre **11 m et 12 m**."
+          ],
+          "hint": "Cherche les carrés d'entiers qui encadrent 138."
+        },
+        {
+          "key": "q4",
+          "skill_id": "A035",
+          "statement": "De quel nombre entier la longueur, en mètres, du côté de la pelouse B est-elle la plus proche ?",
+          "type": "numerique",
+          "answer": {
+            "value": 6,
+            "unit": "m"
+          },
+          "points": 2,
+          "solution_steps": [
+            "$6^2 = 36$ et $7^2 = 49$ : 36 < 40 < 49, donc $6 < \\sqrt{40} < 7$.",
+            "40 est plus proche de 36 (écart de 4) que de 49 (écart de 9) : $\\sqrt{40}$ est plus proche de 6.",
+            "Le côté de la pelouse B est proche de **6 m**."
+          ],
+          "hint": null
+        },
+        {
+          "key": "q5",
+          "skill_id": "A035",
+          "statement": "Combien d'éléments de bordure M. Diaz doit-il acheter pour entourer la pelouse B ?",
+          "type": "numerique",
+          "answer": {
+            "value": 28,
+            "unit": "éléments"
+          },
+          "points": 3,
+          "solution_steps": [
+            "Chaque côté de la pelouse B mesure $\\sqrt{40}$ m, et $6 < \\sqrt{40} < 7$.",
+            "6 éléments de 1 m ne couvrent que 6 m, moins que le côté : il en faut 7 par côté.",
+            "Pour les 4 côtés : 4 × 7 = 28 éléments.",
+            "Attention : l'entier le plus proche, 6, ne suffit pas ici ; c'est l'entier juste au-dessus qui compte. Avec 4 × 6 = 24 éléments, chaque côté resterait incomplet."
+          ],
+          "hint": "Encadre d'abord la longueur d'un côté de la pelouse B entre deux entiers."
+        }
+      ],
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 4, classe de 4e, Nombres et calculs, Racine carrée, Objectifs d'apprentissage : « Encadrer la racine carrée d'un entier par deux nombres entiers consécutifs. »"
+    },
+    {
+      "id": "SX-A036-01",
+      "skill_id": "A036",
+      "skill_ids": [
+        "A036",
+        "C031",
+        "C018"
+      ],
+      "school_level": "3e",
+      "title": "Les réductions de l'affiche",
+      "contexte": "En stage d'observation chez un imprimeur, Hugo réduit une affiche avec le copieur grand format de l'atelier. L'affiche mesure 80 cm de large et 120 cm de haut ; elle a coûté 12 €.\n\nAvec le réglage « moitié », chaque longueur de la copie est la moitié de celle de l'original : elle est multipliée par $2^{-1}$. Hugo peut copier l'affiche, puis copier la copie obtenue, et ainsi de suite. Après 4 copies successives au réglage « moitié », les longueurs de l'affiche ont été multipliées par $2^{-4}$.\n\nAvec le réglage « cinquième », chaque longueur de la copie est multipliée par $5^{-1}$.\n\nLe copieur imprime 30 pages par minute.",
+      "image": null,
+      "duree_estimee_min": 15,
+      "questions": [
+        {
+          "key": "q1",
+          "skill_id": "A036",
+          "statement": "Hugo veut connaître la largeur de l'affiche après 4 copies successives au réglage « moitié ». De quelles données a-t-il besoin ?",
+          "type": "qcm",
+          "choices": [
+            {
+              "key": "a",
+              "text": "120 cm et $2^{-4}$",
+              "misconception": "120 cm est la hauteur de l'affiche, pas sa largeur."
+            },
+            {
+              "key": "b",
+              "text": "80 cm et $2^{-4}$",
+              "misconception": null
+            },
+            {
+              "key": "c",
+              "text": "80 cm et $5^{-1}$",
+              "misconception": "$5^{-1}$ est le nombre du réglage « cinquième », pas celui du réglage « moitié »."
+            },
+            {
+              "key": "d",
+              "text": "80 cm et 30 pages par minute",
+              "misconception": "Le nombre de pages par minute dit la vitesse du copieur, pas la taille des copies."
+            }
+          ],
+          "answer": {
+            "value": "b"
+          },
+          "points": 1,
+          "solution_steps": [
+            "La largeur de l'affiche est 80 cm ; 120 cm est sa hauteur.",
+            "Après 4 copies successives au réglage « moitié », les longueurs sont multipliées par $2^{-4}$.",
+            "Il lui faut donc **80 cm et $2^{-4}$** : la largeur de la copie est $80 \\times 2^{-4}$ cm."
+          ],
+          "hint": "Relis la phrase qui donne les dimensions de l'affiche."
+        },
+        {
+          "key": "q2",
+          "skill_id": "A036",
+          "statement": "Écris $2^{-4}$ sans puissance, sous la forme d'une fraction numérateur/dénominateur ou d'un nombre décimal.",
+          "type": "texte",
+          "answer": {
+            "value": "1/16",
+            "accepted": [
+              "2/32",
+              "3/48",
+              "4/64",
+              "5/80",
+              "6/96",
+              "7/112",
+              "8/128",
+              "9/144",
+              "10/160",
+              "11/176",
+              "12/192",
+              "0,0625",
+              "1 / 16",
+              "un seizième",
+              "1 sur 16"
+            ]
+          },
+          "points": 3,
+          "solution_steps": [
+            "Par définition, $2^{-4}$ est l'inverse de $2^4$ : $2^{-4} = \\frac{1}{2^4}$.",
+            "$2^4 = 2 \\times 2 \\times 2 \\times 2 = 16$.",
+            "Donc $2^{-4} = \\frac{1}{16}$, soit 0,0625.",
+            "Attention : un exposant négatif ne donne pas un nombre négatif ; $2^{-4}$ n'est ni −16 ni −8."
+          ],
+          "hint": "Un exposant négatif indique un inverse."
+        },
+        {
+          "key": "q3",
+          "skill_id": "C031",
+          "statement": "Hugo fait 3 copies successives de l'affiche au réglage « moitié ». Quelle est alors la hauteur de la copie, en centimètres ?",
+          "type": "numerique",
+          "answer": {
+            "value": 15,
+            "unit": "cm"
+          },
+          "points": 2,
+          "solution_steps": [
+            "Après 3 copies successives, les longueurs sont multipliées par $2^{-3} = \\frac{1}{2^3} = \\frac{1}{8}$.",
+            "Hauteur : $120 \\times \\frac{1}{8} = \\frac{120}{8} = 15$.",
+            "La copie mesure **15 cm** de haut."
+          ],
+          "hint": "La hauteur de l'affiche est multipliée par $2^{-3}$."
+        },
+        {
+          "key": "q4",
+          "skill_id": "C018",
+          "statement": "Hugo copie l'affiche une seule fois, au réglage « cinquième ». Quelle est la hauteur de la copie, en centimètres ?",
+          "type": "numerique",
+          "answer": {
+            "value": 24,
+            "unit": "cm"
+          },
+          "points": 2,
+          "solution_steps": [
+            "$5^{-1}$ est l'inverse de 5 : le nombre qui, multiplié par 5, donne 1. Donc $5^{-1} = \\frac{1}{5}$.",
+            "Hauteur de la copie : $120 \\times \\frac{1}{5} = \\frac{120}{5} = 24$.",
+            "La copie mesure **24 cm** de haut. Attention : $5^{-1}$ n'est pas −5, l'opposé de 5 ; une longueur multipliée par −5 n'aurait pas de sens."
+          ],
+          "hint": "Quel est l'inverse de 5 ?"
+        },
+        {
+          "key": "q5",
+          "skill_id": "A036",
+          "statement": "Après plusieurs copies successives au réglage « moitié », les longueurs de l'affiche ont été multipliées par $\\frac{1}{64}$. On écrit ce nombre sous la forme $2^n$. Que vaut n ?",
+          "type": "numerique",
+          "answer": {
+            "value": -6
+          },
+          "points": 3,
+          "solution_steps": [
+            "$64 = 2^6$, car 2 × 2 × 2 × 2 × 2 × 2 = 64.",
+            "$\\frac{1}{64} = \\frac{1}{2^6} = 2^{-6}$ : l'inverse de $2^6$ s'écrit avec l'exposant opposé.",
+            "n = **−6** : Hugo a fait 6 copies successives.",
+            "Attention : n = 6 donnerait $2^6 = 64$, un agrandissement, pas une réduction."
+          ],
+          "hint": "Écris d'abord 64 comme une puissance de 2."
+        }
+      ],
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 4, classe de 3e, Nombres et calculs, Puissances, Objectifs d'apprentissage : « Définir les puissances d'exposant négatif d'un nombre. »"
+    },
+    {
+      "id": "SX-A037-01",
+      "skill_id": "A037",
+      "skill_ids": [
+        "A037",
+        "D025",
+        "D023"
+      ],
+      "school_level": "3e",
+      "title": "Au microscope",
+      "contexte": "En SVT, la classe de 3e observe au microscope. Le professeur a noté au tableau quelques tailles :\nl'épaisseur d'un cheveu : 0,08 mm ;\nla longueur d'une cellule de la peau d'un oignon : 300 µm (micromètres) ;\nle diamètre d'un globule rouge : 8 µm ;\nla longueur du virus de la grippe : 100 nm (nanomètres).\n\nLe microscope du laboratoire grossit 400 fois ; il a coûté 350 €. Les élèves travaillent par deux, et chaque binôme dessine ce qu'il observe. La séance de travaux pratiques dure une heure, et le professeur passe voir chaque binôme.",
+      "image": null,
+      "duree_estimee_min": 15,
+      "questions": [
+        {
+          "key": "q1",
+          "skill_id": "A037",
+          "statement": "Lequel de ces quatre objets est le plus petit ?",
+          "type": "qcm",
+          "choices": [
+            {
+              "key": "a",
+              "text": "Le globule rouge, car 8 est le plus petit nombre",
+              "misconception": "L'élève compare les nombres sans regarder les unités : 8 µm, c'est 8 000 nm, bien plus que 100 nm."
+            },
+            {
+              "key": "b",
+              "text": "Le cheveu, car 0,08 est plus petit que 1",
+              "misconception": "0,08 mm = 80 µm : c'est plus que 8 µm et bien plus que 100 nm."
+            },
+            {
+              "key": "c",
+              "text": "Le virus de la grippe",
+              "misconception": null
+            }
+          ],
+          "answer": {
+            "value": "c"
+          },
+          "points": 1,
+          "solution_steps": [
+            "On compare dans une même unité. Le micromètre vaut mille nanomètres : 1 µm = 1 000 nm.",
+            "Globule rouge : 8 µm = 8 000 nm. Cellule d'oignon : 300 µm. Cheveu : 0,08 mm = 80 µm.",
+            "Le virus, 100 nm, soit 0,1 µm, est **le plus petit**."
+          ],
+          "hint": "Compare les quatre tailles dans la même unité."
+        },
+        {
+          "key": "q2",
+          "skill_id": "A037",
+          "statement": "Quel est le diamètre d'un globule rouge, en mètres ? Donne l'écriture décimale.",
+          "type": "numerique",
+          "answer": {
+            "value": 8e-06,
+            "unit": "m"
+          },
+          "points": 3,
+          "solution_steps": [
+            "Le préfixe micro signifie $10^{-6}$ : 1 µm = $10^{-6}$ m = 0,000 001 m.",
+            "8 µm = $8 \\times 10^{-6}$ m = 0,000 008 m.",
+            "Un globule rouge mesure **0,000 008 m** de diamètre : le chiffre 8 est au sixième rang après la virgule."
+          ],
+          "hint": "Que signifie le préfixe micro ?"
+        },
+        {
+          "key": "q3",
+          "skill_id": "D025",
+          "statement": "Quelle est la longueur de la cellule d'oignon, en millimètres ?",
+          "type": "numerique",
+          "answer": {
+            "value": 0.3,
+            "unit": "mm"
+          },
+          "points": 2,
+          "solution_steps": [
+            "Un millimètre contient 1 000 micromètres : 1 µm = 0,001 mm.",
+            "300 µm = 300 × 0,001 mm = 0,3 mm.",
+            "La cellule mesure **0,3 mm** de long."
+          ],
+          "hint": null
+        },
+        {
+          "key": "q4",
+          "skill_id": "D023",
+          "statement": "Combien de virus de la grippe faudrait-il aligner, bout à bout, pour couvrir le diamètre d'un globule rouge ?",
+          "type": "numerique",
+          "answer": {
+            "value": 80,
+            "unit": "virus"
+          },
+          "points": 2,
+          "solution_steps": [
+            "On écrit les deux tailles dans la même unité : 8 µm = 8 × 1 000 nm = 8 000 nm.",
+            "8 000 ÷ 100 = 80.",
+            "Il faudrait **80 virus** alignés."
+          ],
+          "hint": "Écris le diamètre du globule rouge en nanomètres."
+        },
+        {
+          "key": "q5",
+          "skill_id": "A037",
+          "statement": "La longueur du virus de la grippe, en mètres, s'écrit $10^n$. Que vaut n ?",
+          "type": "numerique",
+          "answer": {
+            "value": -7
+          },
+          "points": 3,
+          "solution_steps": [
+            "Nano signifie $10^{-9}$ : 1 nm = $10^{-9}$ m = 0,000 000 001 m.",
+            "100 nm = 100 × 0,000 000 001 m = 0,000 000 1 m.",
+            "Dans 0,000 000 1, le chiffre 1 est au septième rang après la virgule : c'est $10^{-7}$. Donc n = **−7**.",
+            "Attention : $10^{-9}$ m est la taille de 1 nm, pas de 100 nm."
+          ],
+          "hint": "Écris d'abord 100 nm en mètres, en écriture décimale."
+        }
+      ],
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 4, Nombres et calculs, présentation commune aux trois classes : « On introduit en fonction des besoins les préfixes des puissances de dix de nano à giga. On fait le lien avec les conversions. »"
+    },
+    {
+      "id": "SX-A038-01",
+      "skill_id": "A038",
+      "skill_ids": [
+        "A038",
+        "D023"
+      ],
+      "school_level": "3e",
+      "title": "L'exposé de Yasmine",
+      "contexte": "Pour un exposé sur le corps humain, Yasmine a relevé des données dans plusieurs livres :\nen un an, le cœur d'un adulte bat environ 37 000 000 fois ;\nune bactérie de l'intestin mesure environ 0,000 002 5 m ;\nle corps d'un adulte contient environ $25 \\times 10^{12}$ globules rouges ;\nun cheveu pousse d'environ 0,35 mm par jour.\n\nSon professeur lui demande d'écrire les très grands et les très petits nombres en notation scientifique, pour que la classe puisse les comparer. Son exposé doit durer 10 minutes, et sa classe compte 28 élèves.",
+      "image": null,
+      "duree_estimee_min": 15,
+      "questions": [
+        {
+          "key": "q1",
+          "skill_id": "A038",
+          "statement": "Pourquoi l'écriture $25 \\times 10^{12}$ n'est-elle pas une notation scientifique ?",
+          "type": "qcm",
+          "choices": [
+            {
+              "key": "a",
+              "text": "Parce que 25 n'est pas compris entre 1 et 10",
+              "misconception": null
+            },
+            {
+              "key": "b",
+              "text": "Parce que l'exposant 12 est trop grand",
+              "misconception": "L'exposant peut être aussi grand qu'on veut : c'est le facteur devant la puissance de 10 qui doit être compris entre 1 (inclus) et 10 (exclu)."
+            },
+            {
+              "key": "c",
+              "text": "Parce qu'il faudrait écrire le nombre avec tous ses chiffres",
+              "misconception": "La notation scientifique sert justement à ne pas écrire tous les chiffres d'un très grand nombre."
+            }
+          ],
+          "answer": {
+            "value": "a"
+          },
+          "points": 1,
+          "solution_steps": [
+            "Dans une notation scientifique $a \\times 10^n$, le nombre a doit être compris entre 1 (inclus) et 10 (exclu).",
+            "Ici, a = 25, plus grand que 10 : ce n'est **pas une notation scientifique**, même si l'écriture est juste."
+          ],
+          "hint": null
+        },
+        {
+          "key": "q2",
+          "skill_id": "A038",
+          "statement": "Écris en notation scientifique le nombre de battements du cœur en un an (tape ^ pour l'exposant).",
+          "type": "texte",
+          "answer": {
+            "value": "3,7 × 10⁷",
+            "accepted": [
+              "3,7 × 10^7",
+              "3,7 x 10^7",
+              "3,7*10^7",
+              "3,7 fois 10^7",
+              "3,7.10^7",
+              "3,7 × 10 puissance 7",
+              "3,7 fois 10 puissance 7"
+            ]
+          },
+          "points": 2,
+          "solution_steps": [
+            "On place la virgule après le premier chiffre : 3,7, et l'on a bien 1 ≤ 3,7 < 10.",
+            "Pour passer de 3,7 à 37 000 000, la virgule se décale de 7 rangs vers la droite : on multiplie par $10^7$.",
+            "37 000 000 = $3{,}7 \\times 10^7$."
+          ],
+          "hint": "Le nombre devant la puissance de 10 doit être compris entre 1 et 10."
+        },
+        {
+          "key": "q3",
+          "skill_id": "A038",
+          "statement": "On écrit la taille de la bactérie en notation scientifique : 0,000 002 5 m = $2{,}5 \\times 10^n$ m. Que vaut n ?",
+          "type": "numerique",
+          "answer": {
+            "value": -6
+          },
+          "points": 3,
+          "solution_steps": [
+            "Pour passer de 0,000 002 5 à 2,5, on décale la virgule de 6 rangs vers la droite : on multiplie par $10^6$.",
+            "Pour revenir de 2,5 au nombre de départ, on divise donc par $10^6$, c'est-à-dire qu'on multiplie par $10^{-6}$.",
+            "0,000 002 5 = $2{,}5 \\times 10^{-6}$ : n = **−6**.",
+            "Attention : n = 6 donnerait 2 500 000, un nombre plus grand que 1."
+          ],
+          "hint": "Le nombre de départ est plus petit que 1 : l'exposant est-il positif ou négatif ?"
+        },
+        {
+          "key": "q4",
+          "skill_id": "A038",
+          "statement": "On corrige l'écriture du nombre de globules rouges pour en faire une notation scientifique : $25 \\times 10^{12} = 2{,}5 \\times 10^n$. Que vaut n ?",
+          "type": "numerique",
+          "answer": {
+            "value": 13
+          },
+          "points": 2,
+          "solution_steps": [
+            "25 = 2,5 × 10.",
+            "Donc $25 \\times 10^{12} = 2{,}5 \\times 10 \\times 10^{12} = 2{,}5 \\times 10^{13}$.",
+            "n = **13** : le facteur devant est divisé par 10, l'exposant augmente de 1 pour compenser."
+          ],
+          "hint": "Écris 25 comme un produit de 2,5 par une puissance de 10."
+        },
+        {
+          "key": "q5",
+          "skill_id": "D023",
+          "statement": "De combien de mètres un cheveu pousse-t-il en un jour ? Donne l'écriture décimale.",
+          "type": "numerique",
+          "answer": {
+            "value": 0.00035,
+            "unit": "m"
+          },
+          "points": 2,
+          "solution_steps": [
+            "Milli signifie un millième : 1 mm = 0,001 m. Pour passer des millimètres aux mètres, on divise par 1 000.",
+            "0,35 ÷ 1 000 = 0,000 35.",
+            "Un cheveu pousse d'environ **0,000 35 m** par jour, soit $3{,}5 \\times 10^{-4}$ m."
+          ],
+          "hint": null
+        }
+      ],
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 4, classe de 3e, Nombres et calculs, Puissances, Objectifs d'apprentissage : « Déterminer la notation scientifique d'un nombre. »"
+    },
+    {
+      "id": "SX-A039-01",
+      "skill_id": "A039",
+      "skill_ids": [
+        "A039",
+        "B023",
+        "D026"
+      ],
+      "school_level": "3e",
+      "title": "La sonde vers Mars",
+      "contexte": "Une agence spatiale envoie une sonde vers Mars. Le jour du lancement :\nla distance entre la Terre et Mars est d'environ $7{,}8 \\times 10^7$ km ;\nla distance entre la Terre et la Lune est d'environ $3{,}9 \\times 10^5$ km ;\nles signaux radio parcourent $3 \\times 10^5$ km par seconde ;\nla sonde voyage à une vitesse moyenne de $2{,}5 \\times 10^4$ km par heure.\n\nLa mémoire de la sonde peut stocker $4{,}8 \\times 10^{11}$ octets, et chaque photo qu'elle prend occupe $1{,}2 \\times 10^7$ octets.\n\nLa sonde pèse 1 035 kg, et le lancement a lieu à 6 h 40.",
+      "image": null,
+      "duree_estimee_min": 15,
+      "questions": [
+        {
+          "key": "q1",
+          "skill_id": "A039",
+          "statement": "Pour calculer le temps que met un signal radio pour aller de la Terre à Mars, de quelles données as-tu besoin ?",
+          "type": "qcm",
+          "choices": [
+            {
+              "key": "a",
+              "text": "La distance Terre–Mars et la vitesse de la sonde",
+              "misconception": "La vitesse de la sonde sert pour son propre voyage, pas pour un signal radio, bien plus rapide."
+            },
+            {
+              "key": "b",
+              "text": "La distance Terre–Mars et la vitesse des signaux radio",
+              "misconception": null
+            },
+            {
+              "key": "c",
+              "text": "La distance Terre–Lune et la vitesse des signaux radio",
+              "misconception": "Le signal va jusqu'à Mars, pas jusqu'à la Lune."
+            }
+          ],
+          "answer": {
+            "value": "b"
+          },
+          "points": 1,
+          "solution_steps": [
+            "Un temps de trajet se calcule avec la distance parcourue et la vitesse de ce qui se déplace.",
+            "Le signal va de la Terre à Mars : il faut la **distance Terre–Mars et la vitesse des signaux radio**.",
+            "La vitesse de la sonde et la distance Terre–Lune ne servent pas ici."
+          ],
+          "hint": "Qu'est-ce qui se déplace, et jusqu'où ?"
+        },
+        {
+          "key": "q2",
+          "skill_id": "A039",
+          "statement": "Combien de secondes un signal radio met-il pour aller de la Terre à Mars ?",
+          "type": "numerique",
+          "answer": {
+            "value": 260,
+            "unit": "s",
+            "accepted": [
+              "2,6 × 10^2",
+              "2,6 × 10^2 s",
+              "2,6 x 10^2",
+              "2,6*10^2"
+            ]
+          },
+          "points": 3,
+          "solution_steps": [
+            "Durée = distance ÷ vitesse : $(7{,}8 \\times 10^7) \\div (3 \\times 10^5)$ secondes.",
+            "On divise les facteurs, 7,8 ÷ 3 = 2,6, puis les puissances de 10 : $10^7 \\div 10^5 = 10^2$.",
+            "Durée : $2{,}6 \\times 10^2 = 260$ secondes.",
+            "Attention : dans une division, on soustrait les exposants ; on ne les additionne pas."
+          ],
+          "hint": "Durée = distance ÷ vitesse."
+        },
+        {
+          "key": "q3",
+          "skill_id": "B023",
+          "statement": "Combien de photos la mémoire de la sonde peut-elle stocker ? Le résultat s'écrit $4 \\times 10^n$ : que vaut n ?",
+          "type": "numerique",
+          "answer": {
+            "value": 4
+          },
+          "points": 2,
+          "solution_steps": [
+            "Nombre de photos : $(4{,}8 \\times 10^{11}) \\div (1{,}2 \\times 10^7)$.",
+            "4,8 ÷ 1,2 = 4 et $10^{11} \\div 10^7 = 10^{11-7} = 10^4$.",
+            "La mémoire peut stocker $4 \\times 10^4$ photos, soit 40 000 : n = **4**."
+          ],
+          "hint": null
+        },
+        {
+          "key": "q4",
+          "skill_id": "D026",
+          "statement": "On suppose que la sonde va en ligne droite jusqu'à Mars, à sa vitesse moyenne. Combien d'heures dure son voyage ?",
+          "type": "numerique",
+          "answer": {
+            "value": 3120,
+            "unit": "h",
+            "accepted": [
+              "3,12 × 10^3",
+              "3,12 × 10^3 h",
+              "3,12 x 10^3"
+            ]
+          },
+          "points": 2,
+          "solution_steps": [
+            "Durée = distance ÷ vitesse : $(7{,}8 \\times 10^7) \\div (2{,}5 \\times 10^4)$ heures.",
+            "7,8 ÷ 2,5 = 78 ÷ 25 = 3,12 : on multiplie les deux nombres par 10 pour diviser par un entier.",
+            "$10^7 \\div 10^4 = 10^3$ : la durée est $3{,}12 \\times 10^3 = 3\\,120$ heures."
+          ],
+          "hint": "Divise d'abord 7,8 par 2,5."
+        },
+        {
+          "key": "q5",
+          "skill_id": "A039",
+          "statement": "Combien de fois la distance entre la Terre et Mars est-elle plus grande que la distance entre la Terre et la Lune ?",
+          "type": "numerique",
+          "answer": {
+            "value": 200,
+            "unit": "fois",
+            "accepted": [
+              "2 × 10^2",
+              "2 x 10^2",
+              "2*10^2"
+            ]
+          },
+          "points": 3,
+          "solution_steps": [
+            "On divise la distance Terre–Mars par la distance Terre–Lune : $(7{,}8 \\times 10^7) \\div (3{,}9 \\times 10^5)$.",
+            "7,8 ÷ 3,9 = 2 et $10^7 \\div 10^5 = 10^2$.",
+            "$2 \\times 10^2 = 200$ : la distance Terre–Mars est **200 fois** plus grande."
+          ],
+          "hint": null
+        }
+      ],
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 4, classe de 3e, Nombres et calculs, Puissances, Objectifs d'apprentissage : « Résoudre des problèmes notamment en utilisant la notation scientifique. »"
+    },
+    {
+      "id": "SX-A040-01",
+      "skill_id": "A040",
+      "skill_ids": [
+        "A040",
+        "A035",
+        "P024"
+      ],
+      "school_level": "3e",
+      "title": "Le nouveau parc",
+      "contexte": "La commune aménage un nouveau parc. Le plan prévoit :\nune pelouse carrée d'aire 1 600 m², que l'on entourera d'une clôture ;\nun bassin carré d'aire 56 m² ;\nun terrain de jeux rectangulaire de 12 m sur 8,5 m ;\nun bac à sable carré d'aire 10 m².\n\nLe terrain a été acheté 280 000 €. Le parc sera ouvert tous les jours de 8 h à 21 h, et un gardien y travaillera à plein temps. Pour préparer les commandes de matériaux, l'architecte a besoin des dimensions de chaque aménagement.",
+      "image": null,
+      "duree_estimee_min": 15,
+      "questions": [
+        {
+          "key": "q1",
+          "skill_id": "P024",
+          "statement": "Quelle est l'aire du terrain de jeux, en m² ?",
+          "type": "numerique",
+          "answer": {
+            "value": 102,
+            "unit": "m²"
+          },
+          "points": 1,
+          "solution_steps": [
+            "Le terrain de jeux est un rectangle : son aire est longueur × largeur.",
+            "12 × 8,5 = 102 : son aire est **102 m²**."
+          ],
+          "hint": null
+        },
+        {
+          "key": "q2",
+          "skill_id": "A035",
+          "statement": "Sans calculatrice : entre quels nombres entiers consécutifs se trouve la longueur, en mètres, du côté du bassin ?",
+          "type": "qcm",
+          "choices": [
+            {
+              "key": "a",
+              "text": "Entre 28 et 29",
+              "misconception": "L'élève divise l'aire par 2 : or 28 × 28 = 784, bien plus que 56."
+            },
+            {
+              "key": "b",
+              "text": "Entre 6 et 7",
+              "misconception": "$6^2 = 36$ et $7^2 = 49$ sont tous deux plus petits que 56 : le côté dépasse 7."
+            },
+            {
+              "key": "c",
+              "text": "Entre 7 et 8",
+              "misconception": null
+            },
+            {
+              "key": "d",
+              "text": "Entre 14 et 15",
+              "misconception": "L'élève divise l'aire par 4, comme pour passer du périmètre au côté : 56 ÷ 4 = 14. Or l'aire n'est pas un périmètre."
+            }
+          ],
+          "answer": {
+            "value": "c"
+          },
+          "points": 2,
+          "solution_steps": [
+            "Le côté du bassin mesure $\\sqrt{56}$ m.",
+            "$7^2 = 49$ et $8^2 = 64$, et 49 < 56 < 64.",
+            "Donc $7 < \\sqrt{56} < 8$ : le côté est entre **7 m et 8 m**."
+          ],
+          "hint": null
+        },
+        {
+          "key": "q3",
+          "skill_id": "A040",
+          "statement": "Quelle longueur de clôture faut-il pour entourer la pelouse ?",
+          "type": "numerique",
+          "answer": {
+            "value": 160,
+            "unit": "m"
+          },
+          "points": 3,
+          "solution_steps": [
+            "Le côté de la pelouse est $\\sqrt{1\\,600} = 40$ m, car $40^2 = 1\\,600$.",
+            "La clôture fait le tour du carré : 4 × 40 = 160 m.",
+            "Il faut **160 m** de clôture. Attention : 1 600 ÷ 4 = 400 ne donne pas le périmètre d'un carré d'aire 1 600 m²."
+          ],
+          "hint": "Trouve d'abord la longueur du côté de la pelouse."
+        },
+        {
+          "key": "q4",
+          "skill_id": "A040",
+          "statement": "À la calculatrice, quelle est la longueur du côté du bac à sable, arrondie au centième de mètre ?",
+          "type": "numerique",
+          "answer": {
+            "value": 3.16,
+            "unit": "m",
+            "tolerance": 0.005
+          },
+          "points": 3,
+          "solution_steps": [
+            "Le côté du bac à sable mesure $\\sqrt{10}$ m.",
+            "Contrôle : $3^2 = 9$ et $4^2 = 16$, donc $3 < \\sqrt{10} < 4$.",
+            "La calculatrice affiche $\\sqrt{10} \\approx 3{,}162\\,277$. Au centième : 3,16, car le chiffre des millièmes, 2, est inférieur à 5.",
+            "Le côté mesure environ **3,16 m**. Attention : 10 ÷ 2 = 5 ou 10 ÷ 4 = 2,5 ne donnent pas le côté."
+          ],
+          "hint": "Vérifie ton résultat avec un encadrement par deux entiers."
+        }
+      ],
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 4, classe de 3e, Nombres et calculs, Racine carrée, Objectifs d'apprentissage : « Résoudre des problèmes utilisant la racine carrée. »"
     },
     {
       "id": "SX-B001-01",

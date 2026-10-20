@@ -1,0 +1,141 @@
+{
+  "id": "SX-A036-01",
+  "skill_id": "A036",
+  "skill_ids": [
+    "A036",
+    "C031",
+    "C018"
+  ],
+  "school_level": "3e",
+  "title": "Les réductions de l'affiche",
+  "contexte": "En stage d'observation chez un imprimeur, Hugo réduit une affiche avec le copieur grand format de l'atelier. L'affiche mesure 80 cm de large et 120 cm de haut ; elle a coûté 12 €.\n\nAvec le réglage « moitié », chaque longueur de la copie est la moitié de celle de l'original : elle est multipliée par $2^{-1}$. Hugo peut copier l'affiche, puis copier la copie obtenue, et ainsi de suite. Après 4 copies successives au réglage « moitié », les longueurs de l'affiche ont été multipliées par $2^{-4}$.\n\nAvec le réglage « cinquième », chaque longueur de la copie est multipliée par $5^{-1}$.\n\nLe copieur imprime 30 pages par minute.",
+  "image": null,
+  "duree_estimee_min": 15,
+  "questions": [
+    {
+      "key": "q1",
+      "skill_id": "A036",
+      "statement": "Hugo veut connaître la largeur de l'affiche après 4 copies successives au réglage « moitié ». De quelles données a-t-il besoin ?",
+      "type": "qcm",
+      "choices": [
+        {
+          "key": "a",
+          "text": "120 cm et $2^{-4}$",
+          "misconception": "120 cm est la hauteur de l'affiche, pas sa largeur."
+        },
+        {
+          "key": "b",
+          "text": "80 cm et $2^{-4}$",
+          "misconception": null
+        },
+        {
+          "key": "c",
+          "text": "80 cm et $5^{-1}$",
+          "misconception": "$5^{-1}$ est le nombre du réglage « cinquième », pas celui du réglage « moitié »."
+        },
+        {
+          "key": "d",
+          "text": "80 cm et 30 pages par minute",
+          "misconception": "Le nombre de pages par minute dit la vitesse du copieur, pas la taille des copies."
+        }
+      ],
+      "answer": {
+        "value": "b"
+      },
+      "points": 1,
+      "solution_steps": [
+        "La largeur de l'affiche est 80 cm ; 120 cm est sa hauteur.",
+        "Après 4 copies successives au réglage « moitié », les longueurs sont multipliées par $2^{-4}$.",
+        "Il lui faut donc **80 cm et $2^{-4}$** : la largeur de la copie est $80 \\times 2^{-4}$ cm."
+      ],
+      "hint": "Relis la phrase qui donne les dimensions de l'affiche."
+    },
+    {
+      "key": "q2",
+      "skill_id": "A036",
+      "statement": "Écris $2^{-4}$ sans puissance, sous la forme d'une fraction numérateur/dénominateur ou d'un nombre décimal.",
+      "type": "texte",
+      "answer": {
+        "value": "1/16",
+        "accepted": [
+          "2/32",
+          "3/48",
+          "4/64",
+          "5/80",
+          "6/96",
+          "7/112",
+          "8/128",
+          "9/144",
+          "10/160",
+          "11/176",
+          "12/192",
+          "0,0625",
+          "1 / 16",
+          "un seizième",
+          "1 sur 16"
+        ]
+      },
+      "points": 3,
+      "solution_steps": [
+        "Par définition, $2^{-4}$ est l'inverse de $2^4$ : $2^{-4} = \\frac{1}{2^4}$.",
+        "$2^4 = 2 \\times 2 \\times 2 \\times 2 = 16$.",
+        "Donc $2^{-4} = \\frac{1}{16}$, soit 0,0625.",
+        "Attention : un exposant négatif ne donne pas un nombre négatif ; $2^{-4}$ n'est ni −16 ni −8."
+      ],
+      "hint": "Un exposant négatif indique un inverse."
+    },
+    {
+      "key": "q3",
+      "skill_id": "C031",
+      "statement": "Hugo fait 3 copies successives de l'affiche au réglage « moitié ». Quelle est alors la hauteur de la copie, en centimètres ?",
+      "type": "numerique",
+      "answer": {
+        "value": 15,
+        "unit": "cm"
+      },
+      "points": 2,
+      "solution_steps": [
+        "Après 3 copies successives, les longueurs sont multipliées par $2^{-3} = \\frac{1}{2^3} = \\frac{1}{8}$.",
+        "Hauteur : $120 \\times \\frac{1}{8} = \\frac{120}{8} = 15$.",
+        "La copie mesure **15 cm** de haut."
+      ],
+      "hint": "La hauteur de l'affiche est multipliée par $2^{-3}$."
+    },
+    {
+      "key": "q4",
+      "skill_id": "C018",
+      "statement": "Hugo copie l'affiche une seule fois, au réglage « cinquième ». Quelle est la hauteur de la copie, en centimètres ?",
+      "type": "numerique",
+      "answer": {
+        "value": 24,
+        "unit": "cm"
+      },
+      "points": 2,
+      "solution_steps": [
+        "$5^{-1}$ est l'inverse de 5 : le nombre qui, multiplié par 5, donne 1. Donc $5^{-1} = \\frac{1}{5}$.",
+        "Hauteur de la copie : $120 \\times \\frac{1}{5} = \\frac{120}{5} = 24$.",
+        "La copie mesure **24 cm** de haut. Attention : $5^{-1}$ n'est pas −5, l'opposé de 5 ; une longueur multipliée par −5 n'aurait pas de sens."
+      ],
+      "hint": "Quel est l'inverse de 5 ?"
+    },
+    {
+      "key": "q5",
+      "skill_id": "A036",
+      "statement": "Après plusieurs copies successives au réglage « moitié », les longueurs de l'affiche ont été multipliées par $\\frac{1}{64}$. On écrit ce nombre sous la forme $2^n$. Que vaut n ?",
+      "type": "numerique",
+      "answer": {
+        "value": -6
+      },
+      "points": 3,
+      "solution_steps": [
+        "$64 = 2^6$, car 2 × 2 × 2 × 2 × 2 × 2 = 64.",
+        "$\\frac{1}{64} = \\frac{1}{2^6} = 2^{-6}$ : l'inverse de $2^6$ s'écrit avec l'exposant opposé.",
+        "n = **−6** : Hugo a fait 6 copies successives.",
+        "Attention : n = 6 donnerait $2^6 = 64$, un agrandissement, pas une réduction."
+      ],
+      "hint": "Écris d'abord 64 comme une puissance de 2."
+    }
+  ],
+  "review_status": "relu_agent",
+  "programme_ref": "Cycle 4, classe de 3e, Nombres et calculs, Puissances, Objectifs d'apprentissage : « Définir les puissances d'exposant négatif d'un nombre. »"
+}

@@ -1,0 +1,136 @@
+{
+  "id": "SX-A021-01",
+  "skill_id": "A021",
+  "skill_ids": [
+    "A021",
+    "A018",
+    "B013"
+  ],
+  "school_level": "5e",
+  "title": "Le drone de Sami",
+  "contexte": "Pendant les vacances, Léna et son frère Sami partent en mer avec un moniteur. Celui-ci explique comment on repère une altitude par rapport au niveau de la mer : au-dessus de la mer, l'altitude est positive ; au-dessous, elle est négative ; au niveau de la mer, elle vaut 0.\n\nLeur bateau, long de 11 m, est ancré juste au-dessus d'une épave. Le sommet du mât est à l'altitude 14,5 m. L'épave repose au fond, à l'altitude −23 m. Pendant sa plongée, Léna fait une pause sur un palier, à l'altitude −6,5 m.\n\nDepuis le pont, Sami pilote un drone. Il le fait d'abord monter à l'altitude opposée de celle du palier, puis à l'altitude opposée de celle de l'épave.\n\nUne mouette est posée sur l'eau, à côté du bateau. L'eau est à 18 °C.",
+  "image": null,
+  "duree_estimee_min": 15,
+  "questions": [
+    {
+      "key": "q1",
+      "skill_id": "A018",
+      "statement": "Parmi ces paires d'altitudes, laquelle correspond à deux endroits situés tous les deux sous le niveau de la mer ?",
+      "type": "qcm",
+      "choices": [
+        {
+          "key": "a",
+          "text": "14,5 m et 18 m",
+          "misconception": "L'élève prend des nombres positifs du texte : 14,5 m est au-dessus de la mer (le sommet du mât), et 18 n'est pas une altitude, c'est la température de l'eau en °C."
+        },
+        {
+          "key": "b",
+          "text": "−6,5 m et −23 m",
+          "misconception": null
+        },
+        {
+          "key": "c",
+          "text": "0 m et −6,5 m",
+          "misconception": "L'altitude 0 est celle du niveau de la mer lui-même, là où la mouette est posée : ce point n'est pas sous la mer."
+        },
+        {
+          "key": "d",
+          "text": "11 m et −23 m",
+          "misconception": "11 m est la longueur du bateau, pas une altitude. Seul −23 m est sous la mer."
+        }
+      ],
+      "answer": {
+        "value": "b"
+      },
+      "points": 1,
+      "solution_steps": [
+        "Sous le niveau de la mer, une altitude est négative : on cherche deux altitudes négatives.",
+        "Le texte en donne deux : le palier, à −6,5 m, et l'épave, à −23 m.",
+        "14,5 m est positive (le sommet du mât est au-dessus de la mer), 0 m est le niveau de la mer lui-même, 11 m est la longueur du bateau et 18 °C la température de l'eau."
+      ],
+      "hint": "Relis la phrase du moniteur sur le signe d'une altitude."
+    },
+    {
+      "key": "q2",
+      "skill_id": "A021",
+      "statement": "Quelle est l'altitude du drone quand Sami le fait monter à l'altitude opposée de celle du palier ?",
+      "type": "numerique",
+      "answer": {
+        "value": 6.5,
+        "unit": "m",
+        "accepted": [
+          "+6,5",
+          "+6,5 m",
+          "6,5 mètres"
+        ]
+      },
+      "points": 2,
+      "solution_steps": [
+        "Le palier est à l'altitude −6,5 m.",
+        "Deux nombres opposés ont la même distance à zéro et des signes contraires : l'opposé de −6,5 est 6,5.",
+        "Le drone est à l'altitude **6,5 m** : au-dessus de la mer, à la même distance de la surface que le palier, mais de l'autre côté."
+      ],
+      "hint": "L'opposé d'un nombre a la même distance à zéro, mais le signe contraire."
+    },
+    {
+      "key": "q3",
+      "skill_id": "A021",
+      "statement": "Sami affirme : « Si je place le drone à l'altitude opposée de celle de la mouette, il sera exactement au niveau de la mer, comme la mouette. » Sami a-t-il raison ?",
+      "type": "vrai_faux",
+      "answer": {
+        "value": true
+      },
+      "points": 2,
+      "solution_steps": [
+        "La mouette est posée sur l'eau : son altitude est 0.",
+        "L'opposé de 0 est 0 : c'est le seul nombre égal à son opposé, car sa distance à zéro est nulle.",
+        "Le drone serait à l'altitude 0, au niveau de la mer : Sami a **raison**."
+      ],
+      "hint": "Quelle est l'altitude de la mouette ?"
+    },
+    {
+      "key": "q4",
+      "skill_id": "B013",
+      "statement": "Sami fait monter le drone à l'altitude opposée de celle de l'épave. Quelle distance verticale sépare alors le drone de l'épave ?",
+      "type": "numerique",
+      "answer": {
+        "value": 46,
+        "unit": "m"
+      },
+      "points": 2,
+      "solution_steps": [
+        "L'épave est à l'altitude −23 m : elle est 23 m sous le niveau de la mer.",
+        "Le drone est à l'altitude opposée, 23 m : il est 23 m au-dessus du niveau de la mer.",
+        "De l'épave jusqu'au niveau de la mer, il y a 23 m ; du niveau de la mer jusqu'au drone, 23 m de plus : 23 + 23 = 46.",
+        "**46 m** séparent le drone de l'épave."
+      ],
+      "hint": "Passe par le niveau de la mer : combien de mètres en dessous, combien au-dessus ?"
+    },
+    {
+      "key": "q5",
+      "skill_id": "A021",
+      "statement": "Plus tard, le drone vole à l'altitude 9,8 m. Ce nombre est l'opposé de l'altitude de Léna à cet instant. Quelle est l'altitude de Léna ?",
+      "type": "numerique",
+      "answer": {
+        "value": -9.8,
+        "unit": "m",
+        "accepted": [
+          "-9,8",
+          "−9,8",
+          "(-9,8)",
+          "-9,8 m"
+        ]
+      },
+      "points": 3,
+      "solution_steps": [
+        "L'altitude du drone, 9,8 m, est l'opposé de l'altitude de Léna : l'altitude de Léna est donc l'opposé de 9,8.",
+        "L'opposé de 9,8 est −9,8 : même distance à zéro, signe contraire.",
+        "Léna est à l'altitude **−9,8 m**, sous le niveau de la mer, ce qui est logique pendant sa plongée.",
+        "Attention : répondre 9,8 placerait Léna au-dessus de la mer, à la même altitude que le drone."
+      ],
+      "hint": "Si l'opposé d'un nombre est positif, ce nombre est-il positif ou négatif ?"
+    }
+  ],
+  "review_status": "relu_agent",
+  "programme_ref": "Cycle 4, classe de 5e, Nombres et calculs, Nombres relatifs, Objectifs d'apprentissage : « Définir l'opposé et la valeur absolue d'un nombre. »"
+}

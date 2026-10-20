@@ -1,0 +1,199 @@
+{
+  "id": "SX-A023-01",
+  "skill_id": "A023",
+  "skill_ids": [
+    "A023",
+    "A018",
+    "D003"
+  ],
+  "school_level": "5e",
+  "title": "La météo du collège",
+  "contexte": "Au collège, le club météo relève chaque matin, à 7 h, la température dans la cour. Voici ses relevés d'une semaine de janvier, en degrés Celsius :\nlundi : −3,5\nmardi : −0,5\nmercredi : 1,2\njeudi : −3,25\nvendredi : 0\nsamedi : −2\ndimanche : 0,75\n\nLe club compte 17 élèves, et leur thermomètre a coûté 39 €. Le mercredi après-midi, le thermomètre a affiché 8,5 °C, la température la plus haute de la semaine.\n\nLes élèves veulent ranger les températures du matin et repérer le matin le plus froid.",
+  "image": null,
+  "duree_estimee_min": 15,
+  "questions": [
+    {
+      "key": "q1",
+      "skill_id": "A018",
+      "statement": "Que signifie le relevé du samedi, −2 ?",
+      "type": "qcm",
+      "choices": [
+        {
+          "key": "a",
+          "text": "Samedi à 7 h, il faisait 2 degrés au-dessous de zéro",
+          "misconception": null
+        },
+        {
+          "key": "b",
+          "text": "Samedi à 7 h, il faisait 2 degrés au-dessus de zéro",
+          "misconception": "L'élève ne lit pas le signe : −2 est un nombre négatif, au-dessous de zéro."
+        },
+        {
+          "key": "c",
+          "text": "Samedi, la température a baissé de 2 degrés pendant la matinée",
+          "misconception": "Les relevés sont des températures mesurées à 7 h, pas des variations au cours de la matinée."
+        }
+      ],
+      "answer": {
+        "value": "a"
+      },
+      "points": 1,
+      "solution_steps": [
+        "Le relevé du samedi est une température, mesurée à 7 h.",
+        "Le signe moins indique une température au-dessous de zéro : samedi matin, il faisait **2 degrés au-dessous de zéro**."
+      ],
+      "hint": "Relis à quoi correspondent les nombres de la liste des relevés."
+    },
+    {
+      "key": "q2",
+      "skill_id": "D003",
+      "statement": "On compare les températures de lundi et de jeudi sans leur signe, c'est-à-dire les nombres 3,5 et 3,25. Lequel est le plus grand ?",
+      "type": "qcm",
+      "choices": [
+        {
+          "key": "a",
+          "text": "3,25, car 25 est plus grand que 5",
+          "misconception": "L'élève compare les parties décimales comme des nombres entiers. Or 3,5 = 3,50 : 50 centièmes, c'est plus que 25 centièmes."
+        },
+        {
+          "key": "b",
+          "text": "Ils sont égaux, car ils ont la même partie entière, 3",
+          "misconception": "La partie entière ne suffit pas : à partie entière égale, on compare les dixièmes."
+        },
+        {
+          "key": "c",
+          "text": "3,5, car 5 dixièmes, c'est plus que 2 dixièmes",
+          "misconception": null
+        }
+      ],
+      "answer": {
+        "value": "c"
+      },
+      "points": 2,
+      "solution_steps": [
+        "Les deux nombres ont la même partie entière, 3 : on compare les chiffres des dixièmes.",
+        "3,5 a 5 dixièmes, 3,25 en a 2 : 3,5 > 3,25.",
+        "On peut aussi écrire 3,5 = 3,50 et comparer 50 centièmes à 25 centièmes."
+      ],
+      "hint": "Compare d'abord les chiffres des dixièmes."
+    },
+    {
+      "key": "q3",
+      "skill_id": "A023",
+      "statement": "Quel matin a-t-il fait le plus froid ?",
+      "type": "qcm",
+      "choices": [
+        {
+          "key": "a",
+          "text": "Jeudi, avec −3,25",
+          "misconception": "L'élève croit que −3,25 est plus petit que −3,5 parce qu'il compare 25 et 5. Or −3,25 est plus près de zéro que −3,5 : il faisait moins froid."
+        },
+        {
+          "key": "b",
+          "text": "Lundi, avec −3,5",
+          "misconception": null
+        },
+        {
+          "key": "c",
+          "text": "Vendredi, avec 0",
+          "misconception": "L'élève croit que 0 est le plus petit nombre possible. Les nombres négatifs sont plus petits que 0."
+        },
+        {
+          "key": "d",
+          "text": "Mardi, avec −0,5",
+          "misconception": "L'élève prend le nombre négatif qui a la plus petite distance à zéro. Or, de deux nombres négatifs, le plus petit est le plus éloigné de zéro."
+        }
+      ],
+      "answer": {
+        "value": "b"
+      },
+      "points": 2,
+      "solution_steps": [
+        "Le matin le plus froid est celui de la plus petite température. Les plus petites sont négatives : −3,5 ; −0,5 ; −3,25 et −2.",
+        "De deux nombres négatifs, le plus petit est le plus éloigné de zéro. Les distances à zéro sont 3,5 ; 0,5 ; 3,25 et 2, et la plus grande est 3,5.",
+        "Le plus petit nombre est −3,5 : c'est **lundi** qu'il a fait le plus froid."
+      ],
+      "hint": null
+    },
+    {
+      "key": "q4",
+      "skill_id": "A023",
+      "statement": "Quel est le rangement des sept températures relevées le matin dans l'ordre croissant ?",
+      "type": "qcm",
+      "choices": [
+        {
+          "key": "a",
+          "text": "−3,5 < −3,25 < −2 < −0,5 < 0 < 0,75 < 1,2",
+          "misconception": null
+        },
+        {
+          "key": "b",
+          "text": "0 < −0,5 < 0,75 < 1,2 < −2 < −3,25 < −3,5",
+          "misconception": "L'élève range les nombres selon leur distance à zéro, sans tenir compte du signe."
+        },
+        {
+          "key": "c",
+          "text": "−0,5 < −2 < −3,25 < −3,5 < 0 < 0,75 < 1,2",
+          "misconception": "L'élève range les nombres négatifs comme s'ils étaient positifs : il croit que −0,5 est plus petit que −3,5 parce que 0,5 est plus petit que 3,5."
+        },
+        {
+          "key": "d",
+          "text": "−3,25 < −3,5 < −2 < −0,5 < 0 < 0,75 < 1,2",
+          "misconception": "L'élève compare −3,25 et −3,5 en lisant 25 et 5 : il croit que −3,25 est le plus petit. Or 3,25 < 3,5, donc −3,25 > −3,5."
+        }
+      ],
+      "answer": {
+        "value": "a"
+      },
+      "points": 3,
+      "solution_steps": [
+        "On place d'abord les nombres négatifs, puis 0, puis les nombres positifs.",
+        "Pour les négatifs, le plus petit est le plus éloigné de zéro. Distances à zéro : 3,5 > 3,25 > 2 > 0,5, donc −3,5 < −3,25 < −2 < −0,5.",
+        "Pour les positifs : 0,75 < 1,2, car 0 unité, c'est moins que 1 unité.",
+        "Rangement : −3,5 < −3,25 < −2 < −0,5 < 0 < 0,75 < 1,2."
+      ],
+      "hint": "Imagine les sept températures sur un thermomètre."
+    },
+    {
+      "key": "q5",
+      "skill_id": "A023",
+      "statement": "Le lundi suivant, à 7 h, il fait plus froid que le jeudi de cette semaine, mais moins froid que le lundi de cette semaine. Quelle température a-t-on pu relever ?",
+      "type": "qcm",
+      "choices": [
+        {
+          "key": "a",
+          "text": "−3,2",
+          "misconception": "L'élève croit que −3,2 < −3,25 en comparant 2 et 25. Or −3,2 > −3,25 : il ferait moins froid que jeudi."
+        },
+        {
+          "key": "b",
+          "text": "−3,6",
+          "misconception": "L'élève croit que −3,6 > −3,5 parce que 6 > 5. Or −3,6 est plus loin de zéro : il ferait plus froid que lundi."
+        },
+        {
+          "key": "c",
+          "text": "3,4",
+          "misconception": "L'élève oublie le signe : 3,4 est bien entre 3,25 et 3,5, mais une température positive est plus chaude que les deux."
+        },
+        {
+          "key": "d",
+          "text": "−3,4",
+          "misconception": null
+        }
+      ],
+      "answer": {
+        "value": "d"
+      },
+      "points": 3,
+      "solution_steps": [
+        "« Plus froid que jeudi » : la température est plus petite que −3,25. « Moins froid que lundi » : elle est plus grande que −3,5.",
+        "On cherche donc un nombre compris entre −3,5 et −3,25.",
+        "−3,4 convient : il est négatif, et sa distance à zéro, 3,4, est entre 3,25 et 3,5. Donc −3,5 < −3,4 < −3,25.",
+        "−3,2 est plus grand que −3,25, −3,6 est plus petit que −3,5, et 3,4 est positif."
+      ],
+      "hint": "Écris l'encadrement avec les températures de lundi et de jeudi."
+    }
+  ],
+  "review_status": "relu_agent",
+  "programme_ref": "Cycle 4, classe de 5e, Nombres et calculs, Nombres relatifs, Objectifs d'apprentissage : « Comparer et ranger dans l'ordre croissant et décroissant des nombres décimaux relatifs. »"
+}

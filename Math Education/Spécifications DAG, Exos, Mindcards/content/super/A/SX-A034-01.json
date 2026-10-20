@@ -1,0 +1,107 @@
+{
+  "id": "SX-A034-01",
+  "skill_id": "A034",
+  "skill_ids": [
+    "A034",
+    "P024",
+    "D024"
+  ],
+  "school_level": "4e",
+  "title": "Le jardin partagé",
+  "contexte": "Le jardin partagé du quartier compte trois parcelles carrées :\nla parcelle des Lilas, d'aire 49 m² ;\nla parcelle des Roses, d'aire 100 m² ;\nla parcelle des Iris, d'aire 25 m².\nUne quatrième parcelle, celle des Tulipes, est un rectangle de 8 m sur 6 m.\n\nLes jardiniers veulent entourer la parcelle des Lilas d'un grillage, vendu 4,50 € le mètre.\n\nLe jardin ouvre de 9 h à 19 h, et 17 familles y cultivent une parcelle. Chaque famille verse une cotisation pour l'entretien des outils.",
+  "image": null,
+  "duree_estimee_min": 15,
+  "questions": [
+    {
+      "key": "q1",
+      "skill_id": "P024",
+      "statement": "Quelle est l'aire de la parcelle des Tulipes, en m² ?",
+      "type": "numerique",
+      "answer": {
+        "value": 48,
+        "unit": "m²"
+      },
+      "points": 1,
+      "solution_steps": [
+        "La parcelle des Tulipes est un rectangle : son aire est longueur × largeur.",
+        "8 × 6 = 48 : son aire est **48 m²**."
+      ],
+      "hint": null
+    },
+    {
+      "key": "q2",
+      "skill_id": "A034",
+      "statement": "Quelle est la longueur du côté de la parcelle des Roses ?",
+      "type": "numerique",
+      "answer": {
+        "value": 10,
+        "unit": "m"
+      },
+      "points": 2,
+      "solution_steps": [
+        "Le côté d'un carré d'aire 100 m² est le nombre positif dont le carré vaut 100 : la racine carrée de 100.",
+        "$\\sqrt{100} = 10$, car $10^2 = 100$ et 10 est positif.",
+        "Le côté mesure **10 m**. Attention : 100 ÷ 2 = 50 ou 100 ÷ 4 = 25 ne donnent pas le côté."
+      ],
+      "hint": "Quel nombre, multiplié par lui-même, donne 100 ?"
+    },
+    {
+      "key": "q3",
+      "skill_id": "D024",
+      "statement": "Combien coûte le grillage pour entourer la parcelle des Lilas ?",
+      "type": "numerique",
+      "answer": {
+        "value": 126,
+        "unit": "€",
+        "accepted": [
+          "126,00",
+          "126,00 €",
+          "126 euros"
+        ]
+      },
+      "points": 2,
+      "solution_steps": [
+        "Côté de la parcelle des Lilas : $\\sqrt{49} = 7$ m, car $7^2 = 49$.",
+        "Le grillage fait le tour du carré : 4 × 7 = 28 m.",
+        "Prix : 28 × 4,50 = 126.",
+        "Le grillage coûte **126 €**."
+      ],
+      "hint": "Commence par la longueur du côté de la parcelle des Lilas."
+    },
+    {
+      "key": "q4",
+      "skill_id": "A034",
+      "statement": "Léo affirme : « Si l'on réunissait les parcelles des Lilas et des Iris en une seule parcelle carrée de même aire, son côté serait la somme des côtés des deux parcelles. » A-t-il raison ?",
+      "type": "vrai_faux",
+      "answer": {
+        "value": false
+      },
+      "points": 3,
+      "solution_steps": [
+        "Les côtés sont $\\sqrt{49} = 7$ m et $\\sqrt{25} = 5$ m. Leur somme : 7 + 5 = 12 m.",
+        "Un carré de 12 m de côté a une aire de $12^2 = 144$ m², alors que les deux parcelles réunies font 49 + 25 = 74 m².",
+        "Léo a **tort** : la racine carrée d'une somme n'est pas la somme des racines carrées. Le côté cherché est $\\sqrt{74}$ m."
+      ],
+      "hint": "Calcule l'aire d'un carré dont le côté serait la somme des deux côtés."
+    },
+    {
+      "key": "q5",
+      "skill_id": "A034",
+      "statement": "Une nouvelle parcelle carrée aura un côté de $\\sqrt{60}$ m. Quelle sera son aire, en m² ?",
+      "type": "numerique",
+      "answer": {
+        "value": 60,
+        "unit": "m²"
+      },
+      "points": 2,
+      "solution_steps": [
+        "L'aire d'un carré est côté × côté : $\\sqrt{60} \\times \\sqrt{60}$.",
+        "Par définition, $\\sqrt{60}$ est le nombre positif dont le carré vaut 60 : $(\\sqrt{60})^2 = 60$.",
+        "La parcelle aura une aire de **60 m²**, sans avoir besoin de calculer $\\sqrt{60}$."
+      ],
+      "hint": null
+    }
+  ],
+  "review_status": "relu_agent",
+  "programme_ref": "Cycle 4, classe de 4e, Nombres et calculs, Racine carrée, Objectifs d'apprentissage : « Comprendre et connaitre la définition de la racine carrée d'un nombre positif. »"
+}
