@@ -50,8 +50,8 @@ function renderInline(text: string, keyPrefix: string): ReactNode[] {
     }
 
     if (chunk.startsWith('**') && chunk.endsWith('**')) {
-      // Le gras peut contenir une formule : « **$rac{5}{6}$** » au verso
-      // d'une carte defi (releve par le redacteur du lot pilote).
+      // Le gras peut contenir une formule (fraction en gras au verso
+      // d'une carte defi, releve par le redacteur du lot pilote).
       return (
         <strong key={key} className="font-semibold text-ink">
           {renderInline(chunk.slice(2, -2), key)}
