@@ -130,6 +130,7 @@ verifier "Cartes defi" 09_cartes_defi.sql
 verifier "Super exercices" 10_super_exercices.sql
 verifier "Rythme et rappels" 11_rythme_rappels.sql
 verifier "Professeur v1" 12_professeur.sql
+verifier "Espace parent" 13_espace_parent.sql
 
 echo
 if [ "$echec" -ne 0 ]; then

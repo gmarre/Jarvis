@@ -48,6 +48,7 @@ const FICHIERS_DE_TEST = [
   ['Super exercices', '10_super_exercices.sql'],
   ['Rythme et rappels', '11_rythme_rappels.sql'],
   ['Professeur v1', '12_professeur.sql'],
+  ['Espace parent', '13_espace_parent.sql'],
 ]
 
 /**
