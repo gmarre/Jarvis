@@ -17,7 +17,7 @@ import {
   skills,
 } from '@/content'
 import type { Skill } from '@/types/content'
-import { apresEpreuve, apresReponse, SANS_EPREUVE, type Epreuve, type EtatMaitrise } from './maitrise'
+import { apresPassageSuper, apresTentative, SANS_EPREUVE, type Epreuve } from './maitrise'
 import type { SkillProgress, SkillStatus } from '@/types/domain'
 
 /** Etat de progression de l'eleve, indexe par competence. */
@@ -259,56 +259,33 @@ export function applyAttempt(
   epreuve: Epreuve = SANS_EPREUVE,
 ): AttemptOutcome {
   const skill = requireSkill(skillId)
-  const { out_of: outOf } = skill.mastery_threshold
   const base = { ...emptyProgress(skillId), ...progress[skillId] }
-
-  const evolution = apresReponse(etatDe(base), exerciseId, isCorrect, now, epreuve)
-  const etat = evolution.etat
-
-  const recent = [...base.recent, isCorrect].slice(-outOf)
-  const score = recent.filter(Boolean).length
-  const updated_at = now.toISOString()
-
-  const acquise = etat.niveau >= 4
-  const next: SkillProgress = {
-    ...base,
-    ...etat,
-    status: acquise ? 'mastered' : 'in_progress',
-    recent,
-    score,
-    attempts: recent.length,
-    updated_at,
-    // La carte mentale entre en relecture espacee a l'acquisition (J+1).
-    ...(evolution.vientDEtreAcquise
-      ? { review_box: 1, next_review_at: nextReviewDate(1, now).toISOString() }
-      : {}),
-  }
-
-  // Fenetre pleine sans la moindre reussite, competence pas encore acquise :
-  // s'acharner n'apporte rien, le blocage est en amont. On ne renvoie jamais
-  // vers un prerequis sans exercice : il n'y aurait rien a y faire.
-  const noSuccessAtAll = !acquise && recent.length >= outOf && score === 0
-  const unmasteredPrerequisites = skill.prerequisites.filter((id) => !isCleared(progress, id))
-  const canDescend = noSuccessAtAll && unmasteredPrerequisites.length > 0
-
+  // Meme calcul que le serveur (supabase/functions/_shared/maitrise.ts).
+  const r = apresTentative(base, skill.mastery_threshold.out_of, exerciseId, isCorrect, now, epreuve)
+  const next = r.ligne as SkillProgress
+  const descente = descenteVers(progress, skillId, next)
   return {
     progress: next,
-    justMastered: evolution.vientDEtreAcquise,
-    controle: evolution.controle,
-    attendEpreuve: evolution.attendEpreuve,
-    shouldDescend: canDescend,
-    descendTo: canDescend ? unmasteredPrerequisites : [],
+    justMastered: r.vientDEtreAcquise,
+    controle: r.controle,
+    attendEpreuve: r.attendEpreuve,
+    shouldDescend: descente.length > 0,
+    descendTo: descente,
   }
 }
 
-function etatDe(ligne: SkillProgress): EtatMaitrise {
-  return {
-    niveau: ligne.niveau,
-    exercices_reussis: ligne.exercices_reussis,
-    controles_reussis: ligne.controles_reussis,
-    prochain_controle: ligne.prochain_controle,
-    valide_par_test: ligne.valide_par_test,
-  }
+/**
+ * Prerequis vers lesquels redescendre : fenetre pleine sans la moindre
+ * reussite, competence pas encore acquise. S'acharner n'apporte rien, le
+ * blocage est en amont. On ne renvoie jamais vers un prerequis sans exercice.
+ * Calcule aussi apres une reponse enregistree par le serveur.
+ */
+export function descenteVers(progress: ProgressMap, skillId: string, ligne: SkillProgress): string[] {
+  const skill = requireSkill(skillId)
+  const outOf = skill.mastery_threshold.out_of
+  const aucuneReussite = ligne.niveau < 4 && ligne.recent.length >= outOf && ligne.score === 0
+  if (!aucuneReussite) return []
+  return skill.prerequisites.filter((id) => !isCleared(progress, id))
 }
 
 export interface EpreuveOutcome {
@@ -330,18 +307,8 @@ export function applySuper(
   now: Date = new Date(),
 ): EpreuveOutcome {
   const base = { ...emptyProgress(skillId), ...progress[skillId] }
-  const evolution = apresEpreuve(etatDe(base), passage, now)
-  const etat = evolution.etat
-  const next: SkillProgress = {
-    ...base,
-    ...etat,
-    status: etat.niveau >= 4 ? 'mastered' : base.attempts > 0 ? 'in_progress' : base.status,
-    updated_at: now.toISOString(),
-    ...(evolution.vientDEtreAcquise
-      ? { review_box: 1, next_review_at: nextReviewDate(1, now).toISOString() }
-      : {}),
-  }
-  return { progress: next, justMastered: evolution.vientDEtreAcquise, niveauAvant: base.niveau }
+  const r = apresPassageSuper(base, passage, now)
+  return { progress: r.ligne as SkillProgress, justMastered: r.vientDEtreAcquise, niveauAvant: base.niveau }
 }
 
 /** Echeances de revision espacee, methode de Leitner : J+1, J+3, J+7, J+21. */
