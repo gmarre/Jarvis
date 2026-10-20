@@ -55,13 +55,51 @@ export interface Correction {
 // des codes plutot qu'avec les caracteres eux-memes, invisibles a la relecture.
 const DIACRITIQUES = new RegExp(`[${String.fromCharCode(0x300)}-${String.fromCharCode(0x36f)}]`, 'g')
 
+// Exposants (etape 6, puissances) : « 10³ », « 10⁻³ », « 10^3 », « 10**3 »,
+// « 10 puissance 3 » s'ecrivent tous « 10^3 ». Un exposant ne se lit comme tel
+// qu'apres un chiffre ou une parenthese : apres une lettre, « cm² » reste une
+// unite (« cm2 »). Sans cette regle, « 10³ » devenait « 103 » et etait accepte
+// pour la reponse 103. Les exposants Unicode sont ecrits par leur code.
+const CHIFFRES_EXPOSANTS = [0x2070, 0xb9, 0xb2, 0xb3, 0x2074, 0x2075, 0x2076, 0x2077, 0x2078, 0x2079].map(
+  (code) => String.fromCharCode(code),
+)
+const MOINS_EXPOSANT = String.fromCharCode(0x207b)
+const EXPOSANT = new RegExp(`(?<=[\\d)])(${MOINS_EXPOSANT}?[${CHIFFRES_EXPOSANTS.join('')}]+)`, 'g')
+
+function exposantsEnClair(value: string): string {
+  return value
+    .replace(EXPOSANT, (bloc) =>
+      '^' +
+      [...bloc]
+        .map((c) => (c === MOINS_EXPOSANT ? '-' : String(CHIFFRES_EXPOSANTS.indexOf(c))))
+        .join(''),
+    )
+    .replace(/\*\*/g, '^')
+    .replace(/(\d)\s*puissance\s*/g, '$1^')
+    .replace(/\^\s*\(\s*(-?\d+)\s*\)/g, '^$1')
+    .replace(/\^\s+/g, '^')
+}
+
+/**
+ * Signes de multiplication : « 3,2 × 10^4 », « 3,2 x 10^4 », « 3,2*10^4 »,
+ * « 3,2·10^4 » s'ecrivent tous avec ×. La lettre x n'est lue comme un signe
+ * qu'entre deux nombres, pour ne pas toucher a une inconnue (etape 7).
+ * Rien n'est calcule : « 2^5 » n'est pas 32, sinon un eleve repondrait
+ * « Calcule 2⁵ » en recopiant l'enonce.
+ */
+function multiplicationsEnClair(value: string): string {
+  return value
+    .replace(/[*\u00B7\u2219\u22C5]/g, '\u00D7')
+    .replace(/(?<=\d)\s*x\s*(?=\d)/g, '\u00D7')
+}
+
 /** Minuscules, sans accents, espaces unifiees, virgule decimale unifiee. */
 function normalize(value: string): string {
-  return value
+  return multiplicationsEnClair(exposantsEnClair(value
     .trim()
     .toLowerCase()
     .normalize('NFD')
-    .replace(DIACRITIQUES, '')
+    .replace(DIACRITIQUES, '')))
     // cm² et cm2 s'equivalent : l'exposant se tape rarement au clavier.
     .replace(/\u00B2/g, '2')
     .replace(/\u00B3/g, '3')
@@ -108,22 +146,37 @@ function normalizeLoose(value: string): string {
 }
 
 function toNumber(value: string): number | null {
-  const cleaned = normalize(value)
+  let cleaned = normalize(value)
     .replace(/\s/g, '')
     // « (-3) » : la parenthese d'un relatif ecrit comme dans un calcul.
     .replace(/^\(([+-]?\d+(?:\.\d+)?)\)$/, '$1')
+    // « 3 ÷ 4 » se lit comme la fraction 3/4 (etape 6).
+    .replace(/\u00F7/g, '/')
   if (cleaned === '') return null
+
+  // « −(5/2) » et « (−5)/2 » : le signe devant la fraction, ou un terme entre
+  // parentheses, comme dans un calcul ecrit (etape 6, fractions relatives).
+  let signe = 1
+  const entoure = cleaned.match(/^-\((.+)\)$/)
+  if (entoure) {
+    signe = -1
+    cleaned = entoure[1]
+  }
+  cleaned = cleaned.replace(/\(([+-]?\d+(?:\.\d+)?)\)/g, '$1')
 
   // Fraction saisie telle quelle : 3/4.
   const fraction = cleaned.match(/^(-?\d+(?:\.\d+)?)\/(-?\d+(?:\.\d+)?)$/)
   if (fraction) {
     const denominator = Number(fraction[2])
     if (denominator === 0) return null
-    return Number(fraction[1]) / denominator
+    return (signe * Number(fraction[1])) / denominator
   }
 
+  // « 1e3 » : Number() lit la notation exponentielle de JavaScript, qu'aucun
+  // eleve n'ecrit ; on ne l'accepte pas.
+  if (/e/.test(cleaned)) return null
   const parsed = Number(cleaned)
-  return Number.isFinite(parsed) ? parsed : null
+  return Number.isFinite(parsed) ? signe * parsed : null
 }
 
 /**

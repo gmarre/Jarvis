@@ -375,3 +375,62 @@ describe('formatExpected, nombres relatifs', () => {
   })
 })
 
+describe('checkAnswer, puissances et notation scientifique (etape 6)', () => {
+  const sup = (...codes: number[]) => String.fromCharCode(...codes)
+  const trois = sup(0xb3)
+  const moinsTrois = sup(0x207b, 0xb3)
+
+  it('ne lit plus « 10³ » comme 103', () => {
+    const cent3: Exercise = { ...byType('numerique'), answer: { value: 103 } }
+    expect(checkAnswer(cent3, `10${trois}`).isCorrect).toBe(false)
+    expect(checkAnswer(cent3, '103').isCorrect).toBe(true)
+  })
+
+  it('ne calcule pas une puissance : « 2^5 » ne vaut pas 32', () => {
+    const trenteDeux: Exercise = { ...byType('numerique'), answer: { value: 32 } }
+    expect(checkAnswer(trenteDeux, '2^5').isCorrect).toBe(false)
+  })
+
+  it('reconnait les ecritures d une puissance attendue en texte', () => {
+    const puissance: Exercise = { ...byType('numerique'), type: 'texte', answer: { value: '10^-3' } }
+    for (const saisie of ['10^-3', `10${moinsTrois}`, '10^(-3)', '10 puissance -3', '10**-3', '10 ^ -3']) {
+      expect(checkAnswer(puissance, saisie).isCorrect).toBe(true)
+    }
+    expect(checkAnswer(puissance, '10^3').isCorrect).toBe(false)
+  })
+
+  it('reconnait une notation scientifique ecrite de plusieurs facons', () => {
+    const scientifique: Exercise = { ...byType('numerique'), type: 'texte', answer: { value: '3,2 \u00D7 10^4' } }
+    for (const saisie of ['3,2 \u00D7 10^4', '3,2x10^4', '3.2 x 10^4', '3,2*10^4', `3,2 \u00D7 10${sup(0x2074)}`]) {
+      expect(checkAnswer(scientifique, saisie).isCorrect).toBe(true)
+    }
+    expect(checkAnswer(scientifique, '32000').isCorrect).toBe(false)
+    expect(checkAnswer(scientifique, '32 \u00D7 10^3').isCorrect).toBe(false)
+  })
+
+  it('garde les unites d aire et de volume', () => {
+    const aire: Exercise = { ...byType('numerique'), answer: { value: 12, unit: 'cm' + sup(0xb2) } }
+    expect(checkAnswer(aire, '12 cm' + sup(0xb2)).isCorrect).toBe(true)
+    expect(checkAnswer(aire, '12 cm2').isCorrect).toBe(true)
+  })
+})
+
+describe('checkAnswer, fractions relatives et signe de division (etape 6)', () => {
+  const moinsCinqDemis: Exercise = { ...byType('numerique'), answer: { value: '-5/2' } }
+
+  it.each(['-5/2', '(-5)/2', '-(5/2)', '5/-2', '-2,5', '\u2212(5/2)'])('accepte « %s »', (saisie) => {
+    expect(checkAnswer(moinsCinqDemis, saisie).isCorrect).toBe(true)
+  })
+
+  it('refuse le signe oublie et la notation exponentielle de JavaScript', () => {
+    expect(checkAnswer(moinsCinqDemis, '5/2').isCorrect).toBe(false)
+    const mille: Exercise = { ...byType('numerique'), answer: { value: 1000 } }
+    expect(checkAnswer(mille, '1e3').isCorrect).toBe(false)
+  })
+
+  it('lit le signe \u00F7 comme une barre de fraction', () => {
+    const troisQuarts: Exercise = { ...byType('numerique'), answer: { value: '3/4' } }
+    expect(checkAnswer(troisQuarts, '3\u00F74').isCorrect).toBe(true)
+  })
+})
+
