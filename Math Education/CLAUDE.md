@@ -81,7 +81,7 @@ Ce qui est faux ou absent aujourd'hui (repris dans le backlog §6) :
 - Le fichier Google `client_secret_*.json` n'est jamais commité.
 - **Migrations : jamais par l'outil MCP `apply_migration` (refusé par Gauthier).** Créer le fichier numéroté suivant dans `supabase/migrations/` (rejouable : `if not exists`, `create or replace`, `drop policy if exists`), puis Gauthier le colle dans le SQL Editor. Ne jamais modifier une migration déjà appliquée (dernière appliquée : 0016, le 20 octobre 2026).
 - Les outils MCP Supabase `deploy_edge_function`, `get_edge_function` et `execute_sql` en lecture sont acceptés.
-- **Migrations 0017 et 0018 écrites, à appliquer par Gauthier** (0018 : vérifier ensuite les professeurs, sinon leurs créneaux disparaissent du catalogue des élèves), puis `supabase/cron/rappels.sql` (secret `CRON_SECRET` à créer, mode d'emploi en tête du fichier). Tant que 0017 n'est pas appliquée, la carte « Mon rythme » de `/profil` échoue à l'enregistrement (bandeau d'erreur).
+- **Migrations 0017, 0018 et 0019 écrites, à appliquer par Gauthier dans l'ordre** (0018 : vérifier ensuite les professeurs, sinon leurs créneaux disparaissent du catalogue des élèves), puis `supabase/cron/rappels.sql` (secret `CRON_SECRET` à créer, mode d'emploi en tête du fichier). Tant que 0017 n'est pas appliquée, la carte « Mon rythme » de `/profil` échoue à l'enregistrement (bandeau d'erreur).
 - Ne pas contourner un refus du classifieur de sécurité.
 
 **Avant chaque commit :** `cd Math_Edu_Application && npm test && npm run lint && npm run build` (lint à zéro avertissement). Après une migration : **`npm run test:sql`** (PGlite, Postgres en WebAssembly, sans Docker : Gauthier ne veut pas de Docker Desktop). `supabase/tests/run.sh` reste pour qui a Docker.
@@ -127,7 +127,7 @@ Ce qui est faux ou absent aujourd'hui (repris dans le backlog §6) :
   - Le générateur refuse une figure qui trompe l'œil : angle codé droit qui ne l'est pas, angle presque droit, points presque alignés, longueurs codées égales qui ne le sont pas.
   - L'app affiche la figure en `<img>` data URI, donc aucun script ne peut s'exécuter.
 
-### 4.2 Base (`supabase/migrations/0001` à `0018`, chaque fichier explique son objet)
+### 4.2 Base (`supabase/migrations/0001` à `0019`, chaque fichier explique son objet)
 
 **Tables :**
 - `profiles` (rôle, niveau, email parent, consentement, préférences) ;
@@ -142,7 +142,7 @@ Ce qui est faux ou absent aujourd'hui (repris dans le backlog §6) :
 
 **Colonnes protégées du client** (trigger) : `role` (choisi une seule fois, `role_choisi_le`, 0010), `consentement_parental_at`, `email`, `cree_le`, `abonnement` ; pour un mineur, `date_naissance` (0011). Un changement de parent ou une date sous 15 ans remet le consentement à zéro.
 
-**Edge Functions :** `rappel-revision` (`verify_jwt: false`, version 1 : rappels de travail par email, migration 0017 ; secrets `RESEND_*`, `APP_URL`, `CRON_SECRET`) ; `corriger` (`verify_jwt: true`, version 13 : formes réduite, développée, factorisée complète, équation (« x = 7 » refusé), inégalité (« => »), solutions (« S = {…} »), crochets, « P = 6x », unité après une expression ; questions de super exercices `SX-…#qN`, lecture des expressions algébriques (`answer.forme`), signe moins typographique, °C, « +8 °C », « 7,7° » pour des °C, puissances et notation scientifique reconnues sans calcul, fractions relatives, « ÷ », « fois », « cm^2 », « n = 13 », écritures du signe d'une fraction sans réduction ni double signe, tolérance incluse, espaces de milliers au corrigé) ; `accord-parental` (`verify_jwt: false`, le parent n'a pas de compte ; secrets `RESEND_API_KEY`, `RESEND_FROM`, `APP_URL`).
+**Edge Functions :** `rapport-hebdo` (`verify_jwt: false`, v1, résumé hebdomadaire au parent, secret `CRON_SECRET`) ; `supprimer-compte` (`verify_jwt: true`, v1, suppression définitive, mot SUPPRIMER) ; `rappel-revision` (`verify_jwt: false`, version 1 : rappels de travail par email, migration 0017 ; secrets `RESEND_*`, `APP_URL`, `CRON_SECRET`) ; `corriger` (`verify_jwt: true`, version 13 : formes réduite, développée, factorisée complète, équation (« x = 7 » refusé), inégalité (« => »), solutions (« S = {…} »), crochets, « P = 6x », unité après une expression ; questions de super exercices `SX-…#qN`, lecture des expressions algébriques (`answer.forme`), signe moins typographique, °C, « +8 °C », « 7,7° » pour des °C, puissances et notation scientifique reconnues sans calcul, fractions relatives, « ÷ », « fois », « cm^2 », « n = 13 », écritures du signe d'une fraction sans réduction ni double signe, tolérance incluse, espaces de milliers au corrigé) ; `accord-parental` (`verify_jwt: false`, le parent n'a pas de compte ; secrets `RESEND_API_KEY`, `RESEND_FROM`, `APP_URL`).
 
 **Fonctions d'autorisation** en `security definer`, pour éviter la récursion RLS : `peut_lire_eleve`, `est_prof_de`, `est_parent_de`, `role_actuel`, `nb_places_prises`. Aucune n'est appelable par `anon`.
 
@@ -366,6 +366,9 @@ Décisions prises en route : la page publique du parent est `/accord/:jeton` (co
 **Contenu :** étape 7 du §7.
 
 ### Sprint 4 : Parents
+
+**Avancement au 21 octobre 2026 :** migration **0019** écrite (à appliquer), tests SQL 140 à 148 ; points 1 (rattachement par l'adresse du consentement, suivi par enfant sur `/parent`), 2 (résumé du dimanche, fonction `rapport-hebdo`, Cron dans `supabase/cron/rappels.sql`, désinscription `/rapport/:jeton`), 3 (exercices, réponses et corrigés pour le parent, `/parent/revision/:skillId`, fonction SQL `corriges_pour_parent`) et 4 (export JSON et suppression définitive, fonction `supprimer-compte`, pour soi ou pour un enfant rattaché ; « Supprimer mon compte » rétabli dans `/profil`) **codés**. Refus du consentement : toujours « en attente », sans blocage (décision du 19 octobre).
+
 
 1. **Espace parent :** rattachement à un ou plusieurs enfants (le consentement du sprint 1 crée le lien), et suivi de leur progression.
    - **Refus du consentement par le parent** : aujourd'hui le compte reste utilisable « en attente ». Décider avec Gauthier s'il faut le bloquer, le supprimer après un délai, ou relancer le parent (décision du 19 octobre 2026 : ne pas bloquer pour l'instant).
