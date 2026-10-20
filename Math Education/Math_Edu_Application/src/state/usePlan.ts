@@ -14,6 +14,7 @@ import {
   type ProgressMap,
 } from '@/lib/dag'
 import { startOfDay } from '@/lib/format'
+import { prioriteDesChemins, proposerChemins, type Chemin } from '@/lib/chemins'
 import { useSession } from './session'
 import type { Mindmap, Skill } from '@/types/content'
 import type { SkillProgress } from '@/types/domain'
@@ -52,6 +53,13 @@ export interface DailyPlan {
   /** Vrai tant que le test de positionnement n'a pas ete passe. */
   needsPlacement: boolean
   totalMinutes: number
+  /** Chemins proposes pour la classe de l'eleve (lib/chemins.ts). */
+  chemins: Chemin[]
+  /**
+   * Chemin choisi qui porte la priorite du jour, ou null : sans choix, la
+   * priorite vient de l'objectif du test de positionnement.
+   */
+  cheminActif: Chemin | null
 }
 
 function collectReviews(progress: ProgressMap, now: Date): ReviewItem[] {
@@ -102,6 +110,8 @@ export function useDailyPlan(): DailyPlan {
       blockedOnMissingContent: false,
       needsPlacement: true,
       totalMinutes: 0,
+      chemins: [],
+      cheminActif: null,
     }
 
     if (!session) return empty
@@ -121,8 +131,20 @@ export function useDailyPlan(): DailyPlan {
       return { ...empty, overall, perDomain, reviews, needsPlacement: true }
     }
 
-    const objectifId = objectifSkillId as string
-    const priorityId = findPrimaryRootGap(progress, objectifId)
+    // Chemins proposes pour la classe declaree ; a defaut, celle de l'objectif.
+    const classe = session.profile.niveau_scolaire ?? getSkill(objectifSkillId as string)?.school_level
+    const chemins = classe ? proposerChemins(progress, classe) : []
+    const choisis = session.profile.chemins_choisis ?? []
+    const prioriteChemin = prioriteDesChemins(chemins, choisis)
+    const cheminActif = prioriteChemin
+      ? chemins.find((c) => choisis.includes(c.id) && c.priorite === prioriteChemin) ?? null
+      : null
+
+    // L'objectif devient le bout du chemin actif, s'il y en a un.
+    const objectifId = cheminActif
+      ? cheminActif.etapes[cheminActif.etapes.length - 1].skill.id
+      : (objectifSkillId as string)
+    const priorityId = prioriteChemin ?? findPrimaryRootGap(progress, objectifId)
     const priority = priorityId ? requireSkill(priorityId) : null
     const allRootGaps = findRootGaps(progress, objectifId)
     const priorityExercises = priorityId ? getExercisesForSkill(priorityId) : []
@@ -142,7 +164,7 @@ export function useDailyPlan(): DailyPlan {
       priorityUnlocks: priorityId ? unlockCount(priorityId) : 0,
       reviews,
       objectif: getSkill(objectifId) ?? null,
-      path: buildPathToTarget(progress, objectifId),
+      path: cheminActif ? cheminActif.etapes : buildPathToTarget(progress, objectifId),
       rootGaps: allRootGaps.map((id) => getSkill(id)).filter((s): s is Skill => Boolean(s)),
       overall,
       perDomain,
@@ -150,6 +172,8 @@ export function useDailyPlan(): DailyPlan {
       blockedOnMissingContent: priority === null && allRootGaps.length > 0,
       needsPlacement: false,
       totalMinutes: Math.max(1, Math.round((priorityDurationS + reviewSeconds) / 60)),
+      chemins,
+      cheminActif,
     }
   }, [session])
 }

@@ -1,7 +1,8 @@
 import { useMemo, useState } from 'react'
 import { useNavigate } from 'react-router-dom'
 
-import { domains, getSkill } from '@/content'
+import { domains, getSkill, skills } from '@/content'
+import type { Chemin } from '@/lib/chemins'
 import { cn } from '@/lib/cn'
 import { domainProgress, statusOf } from '@/lib/dag'
 import { AppShell, PageBody, PageHeader } from '@/components/layout/AppShell'
@@ -18,15 +19,21 @@ import { useBookings } from '@/state/useBookings'
 import { useDailyPlan } from '@/state/usePlan'
 
 // Ecran "Mon parcours". Il porte les deux lectures du DAG :
-//  - le chemin racine -> objectif (variante B), vue par defaut ;
-//  - le graphe complet d'un domaine (variante A), a un clic.
+//  - les chemins proposes pour la classe de l'eleve, qu'il choisit, puis le
+//    chemin du jour (vue par defaut, sprint 2 point 6) ;
+//  - le graphe complet d'un domaine (variante A), au bouton « Le graphe ».
 // Meme donnee, deux niveaux de lecture selon le public.
 
 type View = 'chemin' | 'graphe'
 
 export default function PathPage() {
-  const { session } = useAuthenticatedSession()
+  const { session, updateProfile } = useAuthenticatedSession()
   const plan = useDailyPlan()
+  const choisis = session.profile.chemins_choisis ?? []
+  const basculerChemin = (id: string) =>
+    updateProfile({
+      chemins_choisis: choisis.includes(id) ? choisis.filter((c) => c !== id) : [...choisis, id],
+    })
   const { next: nextBooking } = useBookings()
   const navigate = useNavigate()
 
@@ -62,7 +69,7 @@ export default function PathPage() {
           <Card tone="dashed" className="py-12">
             <EmptyState
               title="Ton graphe n'existe pas encore"
-              description="Le test de positionnement place ta frontière de maîtrise sur les 26 compétences du contenu pilote. C'est lui qui construit ce parcours."
+              description="Le test de positionnement place ta frontière de maîtrise dans le graphe des compétences. C'est lui qui construit ce parcours."
               action={
                 <ButtonLink to="/test" size="lg">
                   Faire le test
@@ -79,17 +86,10 @@ export default function PathPage() {
     <AppShell>
       <PageBody>
         <PageHeader
-          title={view === 'chemin' ? "Le chemin jusqu'à ton objectif" : domain?.name}
+          title={view === 'chemin' ? 'Mon parcours' : domain?.name}
           subtitle={
             view === 'chemin' ? (
-              plan.objectif ? (
-                <>
-                  Objectif de <Level value={plan.objectif.school_level} /> :{' '}
-                  {plan.objectif.label.toLowerCase()}. Voici ce qui manque, dans l'ordre.
-                </>
-              ) : (
-                'Aucun objectif défini.'
-              )
+              'Choisis un ou plusieurs chemins : ton travail du jour en tiendra compte.'
             ) : (
               <>
                 {domain?.skills.length} compétences · {domainProgress(session.progress, domainId).mastered}{' '}
@@ -103,6 +103,26 @@ export default function PathPage() {
         {view === 'chemin' ? (
           <div className="grid grid-cols-1 gap-5 lg:grid-cols-[minmax(0,1fr)_320px]">
             <div>
+              <CheminsProposes
+                chemins={plan.chemins}
+                choisis={choisis}
+                onBasculer={basculerChemin}
+              />
+              <h2 className="mb-1 mt-7 font-display text-[19px] font-medium text-ink">
+                Ton chemin du jour
+              </h2>
+              <p className="mb-4 text-[13px] leading-relaxed text-ink-subtle">
+                {plan.cheminActif ? (
+                  <>Sur le chemin « {plan.cheminActif.titre} ». Voici ce qui manque, dans l'ordre.</>
+                ) : plan.objectif ? (
+                  <>
+                    Vers l'objectif de ton test (<Level value={plan.objectif.school_level} /> :{' '}
+                    {plan.objectif.label.toLowerCase()}). Voici ce qui manque, dans l'ordre.
+                  </>
+                ) : (
+                  'Aucun objectif défini.'
+                )}
+              </p>
               <DagPath path={plan.path} onStart={startSkill} />
               <GraphHint onOpen={() => setView('graphe')} />
             </div>
@@ -240,9 +260,73 @@ function DomainSummary() {
         ))}
       </div>
       <p className="mt-5 border-t border-divider pt-4 text-[11.5px] leading-relaxed text-ink-faint">
-        Le contenu pilote couvre 26 compétences sur les 414 du DAG complet. Les autres domaines
-        arrivent au fil des livraisons de contenu.
+        Le contenu couvre aujourd'hui {skills.length} compétences, du CP au début du collège. Le
+        reste du collège arrive au fil des livraisons de contenu.
       </p>
     </Card>
+  )
+}
+
+/**
+ * Les chemins proposes pour la classe de l'eleve. Un clic choisit ou retire un
+ * chemin ; le choix est enregistre dans le profil (migration 0012).
+ */
+function CheminsProposes({
+  chemins,
+  choisis,
+  onBasculer,
+}: {
+  chemins: Chemin[]
+  choisis: string[]
+  onBasculer: (id: string) => void
+}) {
+  if (chemins.length === 0) {
+    return (
+      <Card tone="flat">
+        <p className="text-[13px] leading-relaxed text-ink-subtle">
+          Tout est acquis jusqu'à ta classe dans le contenu disponible. Bravo !
+        </p>
+      </Card>
+    )
+  }
+  return (
+    <section aria-labelledby="chemins-titre">
+      <h2 id="chemins-titre" className="mb-3 font-display text-[19px] font-medium text-ink">
+        Chemins proposés
+      </h2>
+      <ul className="grid grid-cols-1 gap-3 sm:grid-cols-2">
+        {chemins.map((chemin) => {
+          const choisi = choisis.includes(chemin.id)
+          return (
+            <li key={chemin.id}>
+              <button
+                type="button"
+                aria-pressed={choisi}
+                onClick={() => onBasculer(chemin.id)}
+                className={cn(
+                  'flex h-full min-h-[44px] w-full flex-col items-start gap-1.5 rounded-card border p-4 text-left transition',
+                  choisi
+                    ? 'border-accent bg-accent-50'
+                    : 'border-line bg-surface hover:border-accent-200',
+                )}
+              >
+                <span className="flex w-full items-start justify-between gap-3">
+                  <span className="text-[14px] font-semibold leading-snug text-ink">{chemin.titre}</span>
+                  <span
+                    className={cn(
+                      'shrink-0 rounded-full px-2.5 py-1 text-[11px] font-semibold',
+                      choisi ? 'bg-accent text-white' : 'bg-muted text-ink-muted',
+                    )}
+                  >
+                    {choisi ? 'Choisi' : 'Choisir'}
+                  </span>
+                </span>
+                <span className="text-[12.5px] leading-relaxed text-ink-subtle">{chemin.description}</span>
+              </button>
+            </li>
+          )
+        })}
+      </ul>
+    </section>
   )
 }

@@ -225,6 +225,7 @@ function buildLeaProfile(now: Date): Profile {
       actif: true,
       jour_renouvellement: 12,
     },
+    chemins_choisis: [],
   }
 }
 
@@ -245,6 +246,7 @@ export const profMarcProfile: Profile = {
   resume_hebdo_parent: false,
   rappels_revision: true,
   abonnement: null,
+  chemins_choisis: [],
 }
 
 export interface MockSnapshot {

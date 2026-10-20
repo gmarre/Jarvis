@@ -101,6 +101,7 @@ function profileFromSignUp(input: SignUpInput): Profile {
     resume_hebdo_parent: false,
     rappels_revision: true,
     abonnement: null,
+    chemins_choisis: [],
   }
 }
 

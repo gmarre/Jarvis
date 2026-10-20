@@ -165,6 +165,7 @@ describe('isProfileComplete', () => {
     resume_hebdo_parent: false,
     rappels_revision: true,
     abonnement: null,
+    chemins_choisis: [],
   }
 
   it('accepte un eleve renseigne', () => {

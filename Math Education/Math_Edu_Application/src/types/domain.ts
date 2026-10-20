@@ -29,6 +29,8 @@ export interface Profile {
   resume_hebdo_parent: boolean
   rappels_revision: boolean
   abonnement: Abonnement | null
+  /** Chemins de /parcours choisis (lettres de domaine), migration 0012. */
+  chemins_choisis: string[]
 }
 
 /** Ce qu'un mineur ne change qu'avec l'accord de son parent (migration 0011). */

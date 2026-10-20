@@ -33,7 +33,7 @@ const MIGRATIONS = join(ICI, '..', 'migrations')
 
 // Meme liste que run.sh : ces refus prouvent que les gardes fonctionnent.
 const REFUS_ATTENDUS =
-  /Creneau complet|violates row-level security|ne se modifie pas depuis le client|se confirme par le lien|duplicate key value|permission denied for function publier_contenu|Publication reservee au serveur|invalide_avec_commentaire|accord du parent/
+  /Creneau complet|violates row-level security|ne se modifie pas depuis le client|se confirme par le lien|duplicate key value|permission denied for function publier_contenu|Publication reservee au serveur|invalide_avec_commentaire|accord du parent|profiles_chemins_choisis_format/
 
 const FICHIERS_DE_TEST = [
   ['Triggers, capacite des creneaux, cascades', '01_triggers_et_capacite.sql'],
@@ -42,6 +42,7 @@ const FICHIERS_DE_TEST = [
   ['Droits d execution des fonctions', '04_droits_fonctions.sql'],
   ['Recette du contenu', '05_recette.sql'],
   ['Accord parental et regles des mineurs', '06_accord_parental.sql'],
+  ['Chemins choisis', '07_chemins.sql'],
 ]
 
 /**

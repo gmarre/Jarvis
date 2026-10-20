@@ -63,6 +63,7 @@ interface LigneProfil {
   rappels_revision: boolean
   abonnement: Profile['abonnement']
   cree_le: string
+  chemins_choisis?: string[] | null
 }
 
 function versProfil(ligne: LigneProfil): Profile {
@@ -84,6 +85,8 @@ function versProfil(ligne: LigneProfil): Profile {
     resume_hebdo_parent: ligne.resume_hebdo_parent,
     rappels_revision: ligne.rappels_revision,
     abonnement: ligne.abonnement,
+    // Absente tant que la migration 0012 n'est pas appliquee.
+    chemins_choisis: ligne.chemins_choisis ?? [],
   }
 }
 
@@ -410,6 +413,7 @@ export const supabaseRepository: DataRepository = {
       'partage_progression_prof',
       'resume_hebdo_parent',
       'rappels_revision',
+      'chemins_choisis',
     ] as const
 
     for (const champ of autorisees) {

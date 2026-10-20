@@ -92,7 +92,7 @@ export function ancestorsOf(skillId: string): string[] {
  * Tri topologique d'un ensemble de competences : un prerequis apparait toujours
  * avant ce qu'il debloque. A egalite, on suit l'ordre du cursus scolaire.
  */
-function topologicalOrder(ids: string[]): string[] {
+export function topologicalOrder(ids: string[]): string[] {
   const inSet = new Set(ids)
   const visited = new Set<string>()
   const ordered: string[] = []
@@ -111,7 +111,7 @@ function topologicalOrder(ids: string[]): string[] {
   return ordered
 }
 
-function byCursus(a: string, b: string): number {
+export function byCursus(a: string, b: string): number {
   const skillA = getSkill(a)
   const skillB = getSkill(b)
   if (!skillA || !skillB) return 0
