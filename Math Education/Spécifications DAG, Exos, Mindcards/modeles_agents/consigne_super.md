@@ -70,6 +70,9 @@ Toutes celles de la consigne des rédacteurs d'exercices s'appliquent : `Spécif
 - **Les indices s'affichent** à la demande : aucun ne donne la réponse ni n'élimine une proposition (« Relis la phrase qui parle du chocolat. » plutôt que « Pense au quart »).
 - **Deux questions d'un même exercice n'ont pas la même réponse.**
 - **Barème** : la question qui porte la compétence vaut le plus de points.
+- **Aucun calcul de corrigé hors chaîne** : 0,35 × 60 (D024), 900 ÷ 75 (B040), 603 × 10 sont sortis de la chaîne dans les lots P2 et A1 ; passe par les quarts, les dixièmes, les tables.
+- **Questions au niveau de la classe** : pas d'« écris 187 en chiffres » en 5e, sauf une question de lecture à 1 point.
+- **Compter de vrais mots** dans les contextes : ni « ● », ni « : », ni « ; ».
 - **CP et CE1** : 3 questions, 5 à 10 minutes, contexte de 80 à 120 mots, phrases courtes, nombres dans le champ de la classe.
 
 ## Compétences sans super exercice
