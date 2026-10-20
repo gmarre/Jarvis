@@ -81,7 +81,7 @@ Ce qui est faux ou absent aujourd'hui (repris dans le backlog §6) :
 - Le fichier Google `client_secret_*.json` n'est jamais commité.
 - **Migrations : jamais par l'outil MCP `apply_migration` (refusé par Gauthier).** Créer le fichier numéroté suivant dans `supabase/migrations/` (rejouable : `if not exists`, `create or replace`, `drop policy if exists`), puis Gauthier le colle dans le SQL Editor. Ne jamais modifier une migration déjà appliquée (dernière appliquée : 0016, le 20 octobre 2026).
 - Les outils MCP Supabase `deploy_edge_function`, `get_edge_function` et `execute_sql` en lecture sont acceptés.
-- **Migration 0017 écrite, à appliquer par Gauthier**, puis `supabase/cron/rappels.sql` (secret `CRON_SECRET` à créer, mode d'emploi en tête du fichier). Tant que 0017 n'est pas appliquée, la carte « Mon rythme » de `/profil` échoue à l'enregistrement (bandeau d'erreur).
+- **Migrations 0017 et 0018 écrites, à appliquer par Gauthier** (0018 : vérifier ensuite les professeurs, sinon leurs créneaux disparaissent du catalogue des élèves), puis `supabase/cron/rappels.sql` (secret `CRON_SECRET` à créer, mode d'emploi en tête du fichier). Tant que 0017 n'est pas appliquée, la carte « Mon rythme » de `/profil` échoue à l'enregistrement (bandeau d'erreur).
 - Ne pas contourner un refus du classifieur de sécurité.
 
 **Avant chaque commit :** `cd Math_Edu_Application && npm test && npm run lint && npm run build` (lint à zéro avertissement). Après une migration : **`npm run test:sql`** (PGlite, Postgres en WebAssembly, sans Docker : Gauthier ne veut pas de Docker Desktop). `supabase/tests/run.sh` reste pour qui a Docker.
@@ -127,7 +127,7 @@ Ce qui est faux ou absent aujourd'hui (repris dans le backlog §6) :
   - Le générateur refuse une figure qui trompe l'œil : angle codé droit qui ne l'est pas, angle presque droit, points presque alignés, longueurs codées égales qui ne le sont pas.
   - L'app affiche la figure en `<img>` data URI, donc aucun script ne peut s'exécuter.
 
-### 4.2 Base (`supabase/migrations/0001` à `0017`, chaque fichier explique son objet)
+### 4.2 Base (`supabase/migrations/0001` à `0018`, chaque fichier explique son objet)
 
 **Tables :**
 - `profiles` (rôle, niveau, email parent, consentement, préférences) ;
@@ -337,6 +337,9 @@ Décisions prises en route : la page publique du parent est `/accord/:jeton` (co
 **Contenu :** **étape 6 du §7 fusionnée et publiée le 20 octobre 2026** : 26 compétences, 156 exercices, 7 cartes, tous relus et contre-relus par agents (bilan dans `QUALITY.md`). Liens ajoutés en relecture : A034 ← B049 (et A032 ← A031 seul). A025 réécrite avec les puissances. A038 n'est plus en évaluation partielle (la notation scientifique se tape) ; seule C035 l'est encore. Prochaine étape de contenu : 7 (calcul littéral, domaine F).
 
 ### Sprint 3 : Professeur v1
+
+**Avancement au 21 octobre 2026 (lancé sur décision de Gauthier : « continuer à coder le reste en suivant les sprints ») :** migration **0018** écrite (à appliquer, puis vérifier chaque professeur : `update teachers set verifie_le = now() where id = (select id from profiles where email = '...');`), tests SQL 120 à 130 ; points 1 (offres, `/prof/cours`), 2 (agenda semaine ou mois avec inscrits, `/prof/agenda`), 3 (profil public, `/profil` du prof et `/profs/:id`), 4 (graphe d'un élève qui partage, `/prof/eleves/:id`, et « Que travailler ensemble ? », `lib/suggestions.ts`), 5 en version 1 (lien Jitsi imprévisible par séance, table `seances_visio`, sans page « Séance » temps réel : choix de l'avis critique, à confirmer par Gauthier) et 6 (vérification : `verifie_le`, protégée du client ; un professeur non vérifié est caché des élèves) **codés**. Restent : photo du profil (stockage de fichiers), page « Séance » en temps réel si Gauthier la veut.
+
 
 1. **Offres de cours :** le professeur crée des types de cours, chacun avec :
    - un titre ;
