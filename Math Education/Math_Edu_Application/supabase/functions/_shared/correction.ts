@@ -592,9 +592,22 @@ function monome(n: Noeud): string | null {
   )
 }
 
-/** Forme reduite (ou developpee) : une somme de monomes distincts, sans parenthese. */
-function formeReduite(n: Noeud, texte: string): boolean {
-  if (texte.includes('(')) return false
+/**
+ * Une somme ecrite a plat : aucune somme entre parentheses derriere un signe
+ * (« x − (3 − x) », « −(x − 3) », « x + (2 + x) »). Le controle porte sur
+ * l'expression lue et non sur le texte : « (x + 9) » ou « (−24)x² » sont des
+ * ecritures reduites (releve en relecture de l'etape 7, lot L3).
+ */
+function aPlat(n: Noeud): boolean {
+  const somme = (e: Noeud) => e.t === '+' || e.t === '-'
+  if (n.t === 'neg') return !somme(n.e) && aPlat(n.e)
+  if (n.t === '+' || n.t === '-') return !somme(n.d) && aPlat(n.g) && aPlat(n.d)
+  return true
+}
+
+/** Forme reduite (ou developpee) : une somme a plat de monomes distincts. */
+function formeReduite(n: Noeud): boolean {
+  if (!aPlat(n)) return false
   const vus = new Set<string>()
   for (const { n: terme } of termes(n)) {
     const signature = monome(terme)
@@ -652,14 +665,32 @@ function encoreFactorisable(f: Noeud): boolean {
   return nonNuls.reduce(pgcd) > 1 || c[0] === 0
 }
 
-/** Forme factorisee : un produit (ou une puissance) dont un facteur contient une lettre, factorise completement. */
+/** Une somme de monomes distincts (ou un seul terme) : « x + 3 − 5 » ne l'est pas. */
+function termesReduits(n: Noeud): boolean {
+  const vus = new Set<string>()
+  for (const { n: terme } of termes(n)) {
+    const signature = monome(terme)
+    if (signature === null || vus.has(signature)) return false
+    vus.add(signature)
+  }
+  return true
+}
+
+/**
+ * Forme factorisee : un produit (ou une puissance) dont un facteur contient
+ * une lettre, factorise completement, chaque facteur reduit. Un facteur 1 ne
+ * compte pas : « 1(16x² − 9) » n'est pas une factorisation (releve par les
+ * redacteurs de l'etape 7), pas plus que « (x + 3 − 5)(x + 3 + 5) ».
+ */
 function formeFactorisee(n: Noeud): boolean {
   let e = n
   while (e.t === 'neg') e = e.e
-  if (e.t === '^') return lettresDe(e.g).size > 0 && !encoreFactorisable(e.g)
+  const reduit = (f: Noeud) => termesReduits(f)
+  if (e.t === '^') return lettresDe(e.g).size > 0 && reduit(e.g) && !encoreFactorisable(e.g)
   if (e.t !== '*') return false
-  const fs = facteurs(e)
-  return fs.some((f) => lettresDe(f).size > 0) && !fs.some(encoreFactorisable)
+  const fs = facteurs(e).filter((f) => !(f.t === 'num' && f.v === 1))
+  if (fs.length < 2 && !(fs.length === 1 && fs[0].t === '^')) return false
+  return fs.some((f) => lettresDe(f).size > 0) && fs.every(reduit) && !fs.some(encoreFactorisable)
 }
 
 const OPERATEURS_INEGALITE: [string[], string][] = [
@@ -710,6 +741,13 @@ function lireSolutions(texte: string): number[] | null {
   return valeurs.sort((a, b) => a - b)
 }
 
+/** Une equation deja resolue : une lettre seule d'un cote, un nombre de l'autre. */
+function resolue(g: Noeud, d: Noeud): boolean {
+  const seule = (n: Noeud) => n.t === 'var'
+  const nombre = (n: Noeud) => lettresDe(n).size === 0
+  return (seule(g) && nombre(d)) || (seule(d) && nombre(g))
+}
+
 /**
  * « 2x + 4 € » pour une expression en euros : l'unite attendue, tapee a la fin,
  * est retiree avant la lecture (releve par les redacteurs de l'etape 7). Une
@@ -750,6 +788,10 @@ function algebreJuste(forme: FormeAttendue, attendu: string, raw: string, variab
     const membres = [ag, ad, bg, bd].map((m) => lireExpression(m, variables))
     if (membres.some((m) => m === null)) return false
     const [g1, d1, g2, d2] = membres as Noeud[]
+    // « x = 7 » a la meme difference que « x + 5 = 12 » : c'est la solution,
+    // pas l'equation demandee (releve par les redacteurs de l'etape 7). Une
+    // ecriture resolue n'est acceptee que si l'attendu l'est aussi.
+    if (resolue(g1, d1) && !resolue(g2, d2)) return false
     const ecart1: Noeud = { t: '-', g: g1, d: d1 }
     const ecart2: Noeud = { t: '-', g: g2, d: d2 }
     // Meme equation, ou membres echanges : 42 = 3x + 15 vaut 3x + 15 = 42.
@@ -773,7 +815,7 @@ function algebreJuste(forme: FormeAttendue, attendu: string, raw: string, variab
   }
 
   if (!equivalentes(a, b, variables)) return false
-  if (forme === 'reduite' || forme === 'developpee') return formeReduite(a, donne)
+  if (forme === 'reduite' || forme === 'developpee') return formeReduite(a)
   if (forme === 'factorisee') return formeFactorisee(a)
   return true
 }

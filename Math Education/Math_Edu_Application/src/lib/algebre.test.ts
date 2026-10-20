@@ -41,6 +41,13 @@ describe('forme reduite', () => {
     tousFaux(carre, ['6x×x-2x', '6x2-2x', '6x^2+2x'])
   })
 
+  it('des parentheses inutiles ne font pas refuser (releve du lot L3)', () => {
+    tousJustes(exo('x + 9', 'reduite'), ['(x+9)', '(9 + x)'])
+    tousJustes(exo('−24x²', 'reduite'), ['(-24)x²', '-24x^(2)', '(−24x²)'])
+    tousFaux(exo('−x + 3', 'reduite'), ['-(x-3)', '0 - (x - 3)'])
+    tousFaux(exo('2x − 3', 'reduite'), ['x - (3 - x)', 'x + (x - 3)'])
+  })
+
   it('decimaux et autre lettre', () => {
     tousJustes(exo('2,5x + 1', 'reduite'), ['1+2,5x', '2,50x+1', '2.5x+1'])
     const n = exo('2n + 1', 'reduite', { variables: ['n'] })
@@ -107,6 +114,10 @@ describe('equation', () => {
   it('refuse la solution seule et une autre equation', () => {
     tousFaux(e, ['x = 7', '41 = 3 × 9 + x', '41 + x = 3 × 9 + x', '41 + x'])
   })
+  it('refuse la solution ecrite comme une equation (x = 7 pour x + 5 = 12)', () => {
+    tousFaux(exo('x + 5 = 12', 'equation'), ['x = 7', '7 = x'])
+    tousJustes(exo('x + 5 = 12', 'equation'), ['5 + x = 12', '12 = x + 5'])
+  })
   const m = exo('3x + 15 = 42', 'equation')
   it('3x + 15 = 42', () => {
     tousJustes(m, ['15+3x=42', '42=3x+15', '3*x+15=42'])
@@ -170,6 +181,12 @@ describe('factorisation complete (etape 7, releve des redacteurs)', () => {
     tousFaux(exo('3x(2x − 3)', 'factorisee'), ['3(2x² − 3x)', 'x(6x-9)', '6x²-9x'])
     tousJustes(exo('2(x + 3)', 'factorisee'), ['2(x+3)', '(3+x)×2'])
     tousFaux(exo('2(x + 3)', 'factorisee'), ['1(2x+6)', '(2x+6)'])
+  })
+  it('refuse un facteur 1 et des facteurs non reduits (releve du lot L5)', () => {
+    tousFaux(exo('(4x − 3)(4x + 3)', 'factorisee'), ['1(16x² − 9)', '1*(16x^2-9)'])
+    tousFaux(exo('(x − 2)(3x + 4)', 'factorisee'), ['(x − 2)(5x + 1 − 2x + 3)'])
+    tousFaux(exo('(x − 2)(x + 8)', 'factorisee'), ['(x + 3 − 5)(x + 3 + 5)'])
+    tousJustes(exo('(x − 2)(x + 8)', 'factorisee'), ['(x+8)(x-2)', '1(x-2)(x+8)'])
   })
   it('garde les identites remarquables et les carres', () => {
     tousJustes(exo('(2x − 3)(2x + 3)', 'factorisee'), ['(2x+3)(2x-3)'])
