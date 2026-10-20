@@ -43,6 +43,8 @@ import type {
   SkillProgress,
   Teacher,
   CourseOffer,
+  CorrigeParent,
+  Enfant,
   Inscrit,
 } from '@/types/domain'
 
@@ -194,6 +196,11 @@ function erreur(operation: string, cause: PostgrestError | Error | null): Reposi
  */
 async function appelerAccord<T>(corps: Record<string, unknown>): Promise<T> {
   return appelerFonction<T>('accord-parental', corps)
+}
+
+/** Meme contrat pour `rapport-hebdo` et `supprimer-compte` (migration 0019). */
+async function appelerParent<T>(nom: string, corps: Record<string, unknown>): Promise<T> {
+  return appelerFonction<T>(nom, corps)
 }
 
 /** Meme contrat pour `rappel-revision` (migration 0017). */
@@ -802,6 +809,88 @@ export const supabaseRepository: DataRepository = {
   async desactiverRappel() {
     await appelerRappel({ action: 'desactiver' })
     return this.getRappel()
+  },
+
+  async rattacherEnfants() {
+    const db = requireSupabase()
+    const { data, error } = await db.rpc('rattacher_mes_enfants')
+    if (error) {
+      if (error.code === 'PGRST202' || error.code === '42883') return 0
+      throw erreur('Rattachement des enfants', error)
+    }
+    return (data as number) ?? 0
+  },
+
+  async getEnfants() {
+    const db = requireSupabase()
+    const { data, error } = await db.rpc('mes_enfants')
+    if (error) {
+      if (error.code === 'PGRST202' || error.code === '42883') return []
+      throw erreur('Lecture des enfants', error)
+    }
+    return (data ?? []) as Enfant[]
+  },
+
+  async reglerRapport(lienId, actif) {
+    const db = requireSupabase()
+    const { data, error } = await db.rpc('regler_rapport_hebdo', { lien: lienId, actif })
+    if (error) throw erreur('Réglage du résumé hebdomadaire', error)
+    if (!data) throw new RepositoryError('Ce lien ne vous est pas rattaché.', undefined, true)
+  },
+
+  async getTentativesEleve(eleveId) {
+    const db = requireSupabase()
+    const { data, error } = await db
+      .from('exercise_attempts')
+      .select('*')
+      .eq('user_id', eleveId)
+      .order('created_at', { ascending: false })
+      .limit(500)
+    if (error) throw erreur('Lecture des réponses', error)
+    return (data ?? []) as ExerciseAttempt[]
+  },
+
+  async getCorrigesParent(skillId) {
+    const db = requireSupabase()
+    const { data, error } = await db.rpc('corriges_pour_parent', { competence: skillId })
+    if (error) throw erreur('Lecture des corrigés', error)
+    return (data ?? []) as CorrigeParent[]
+  },
+
+  async exporterDonnees(eleveId) {
+    const db = requireSupabase()
+    // La RLS ne rend que ce que le demandeur a le droit de lire : lui-meme, ou
+    // son enfant rattache.
+    const tables = [
+      'profiles',
+      'skill_progress',
+      'exercise_attempts',
+      'placement_results',
+      'flashcard_progress',
+      'super_attempts',
+    ] as const
+    const resultats = await Promise.all(
+      tables.map((t) => db.from(t).select('*').eq(t === 'profiles' ? 'id' : 'user_id', eleveId)),
+    )
+    const export_: Record<string, unknown> = { exporte_le: new Date().toISOString() }
+    tables.forEach((t, i) => {
+      export_[t] = resultats[i].error ? { erreur: resultats[i].error.message } : resultats[i].data
+    })
+    return export_
+  },
+
+  async supprimerCompte(eleveId) {
+    await appelerParent('supprimer-compte', eleveId
+      ? { action: 'enfant', eleve_id: eleveId, confirmation: 'SUPPRIMER' }
+      : { action: 'moi', confirmation: 'SUPPRIMER' })
+  },
+
+  async lireLienRapport(jeton) {
+    return appelerParent<{ actif: boolean; prenom: string }>('rapport-hebdo', { action: 'lire', jeton })
+  },
+
+  async desinscrireRapport(jeton) {
+    return appelerParent<{ actif: boolean; prenom: string }>('rapport-hebdo', { action: 'desinscrire', jeton })
   },
 
   async lireLienRappel(jeton) {

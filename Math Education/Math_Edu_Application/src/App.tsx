@@ -32,6 +32,8 @@ const RappelPage = lazy(() => import('@/pages/RappelPage'))
 const TeacherAgendaPage = lazy(() => import('@/pages/TeacherAgendaPage'))
 const StudentGraphPage = lazy(() => import('@/pages/StudentGraphPage'))
 const TeacherPublicPage = lazy(() => import('@/pages/TeacherPublicPage'))
+const ParentRevisionPage = lazy(() => import('@/pages/ParentRevisionPage'))
+const RapportPage = lazy(() => import('@/pages/RapportPage'))
 
 /** Accueil propre a chaque role. */
 function homeFor(role: UserRole): string {
@@ -93,6 +95,7 @@ export default function App() {
         {/* Ouverte par le parent depuis son email, sans compte : le jeton suffit. */}
         <Route path="/accord/:jeton" element={<AccordPage />} />
         <Route path="/rappels/:jeton" element={<RappelPage />} />
+        <Route path="/rapport/:jeton" element={<RapportPage />} />
 
         {/* Espace eleve */}
         <Route
@@ -217,6 +220,14 @@ export default function App() {
           element={
             <RequireAuth roles={PARENT}>
               <ParentPage />
+            </RequireAuth>
+          }
+        />
+        <Route
+          path="/parent/revision/:skillId"
+          element={
+            <RequireAuth roles={PARENT}>
+              <ParentRevisionPage />
             </RequireAuth>
           }
         />

@@ -586,6 +586,61 @@ export const mockRepository: DataRepository = {
     return wait(null)
   },
 
+  // Espace parent : en demonstration, aucun enfant n'est rattache.
+  async rattacherEnfants() {
+    exigerSession()
+    return wait(0)
+  },
+
+  async getEnfants() {
+    exigerSession()
+    return wait([])
+  },
+
+  async reglerRapport() {
+    throw new RepositoryError('Aucun enfant rattaché en mode démonstration.', undefined, true)
+  },
+
+  async getTentativesEleve(eleveId) {
+    const session = exigerSession()
+    return wait(eleveId === session.profile.id ? session.attempts : [])
+  },
+
+  async getCorrigesParent() {
+    exigerSession()
+    return wait([])
+  },
+
+  async exporterDonnees(eleveId) {
+    const session = exigerSession()
+    if (eleveId !== session.profile.id) return wait({})
+    return wait({
+      exporte_le: new Date().toISOString(),
+      profiles: [session.profile],
+      skill_progress: Object.values(session.progress),
+      exercise_attempts: session.attempts,
+      placement_results: session.placement ? [session.placement] : [],
+      flashcard_progress: Object.values(session.defis),
+      super_attempts: session.superAttempts,
+    })
+  },
+
+  async supprimerCompte() {
+    exigerSession()
+    // Demonstration : rien n'est stocke hors du navigateur ; on repart de zero.
+    courante = null
+    persister()
+    await wait(undefined)
+  },
+
+  async lireLienRapport() {
+    throw new RepositoryError("Aucun lien n'est envoyé en mode démonstration.", undefined, true)
+  },
+
+  async desinscrireRapport() {
+    throw new RepositoryError("Aucun lien n'est envoyé en mode démonstration.", undefined, true)
+  },
+
   async lireLienRappel() {
     throw new RepositoryError("Aucun lien n'est envoyé en mode démonstration.", undefined, true)
   },

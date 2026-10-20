@@ -22,6 +22,8 @@ import type {
   Booking,
   AccordPublic,
   CourseOffer,
+  CorrigeParent,
+  Enfant,
   Inscrit,
   NewCourseOffer,
   ProfilProf,
@@ -215,6 +217,25 @@ export interface DataRepository {
   /** Change l'heure ou met en pause jusqu'a une date (null : reprendre). */
   reglerRappel(reglage: { heure?: string; pause_jusqu_au?: string | null }): Promise<Rappel>
   desactiverRappel(): Promise<Rappel | null>
+  // --- Espace parent (migration 0019) --------------------------------------
+
+  /** Rattache au compte parent les enfants dont il a confirme le consentement. Rend leur nombre. */
+  rattacherEnfants(): Promise<number>
+  getEnfants(): Promise<Enfant[]>
+  /** Active ou coupe le resume hebdomadaire d'un enfant. */
+  reglerRapport(lienId: string, actif: boolean): Promise<void>
+  /** Reponses aux exercices d'un eleve lisible (soi, son enfant, son eleve qui partage). */
+  getTentativesEleve(eleveId: string): Promise<ExerciseAttempt[]>
+  /** Reponses et corriges des exercices d'une competence, pour un parent rattache. */
+  getCorrigesParent(skillId: string): Promise<CorrigeParent[]>
+  /** Toutes les donnees d'un eleve lisible, pour l'export RGPD. */
+  exporterDonnees(eleveId: string): Promise<Record<string, unknown>>
+  /** Suppression definitive : son propre compte, ou celui d'un enfant rattache. */
+  supprimerCompte(eleveId?: string): Promise<void>
+  /** Lien de desinscription du resume hebdomadaire (sans compte). */
+  lireLienRapport(jeton: string): Promise<{ actif: boolean; prenom: string }>
+  desinscrireRapport(jeton: string): Promise<{ actif: boolean; prenom: string }>
+
   /** Page publique /rappels/:jeton : lit le rappel vise. Sans session. */
   lireLienRappel(jeton: string): Promise<RappelPublic>
   /** Page publique : accepte les rappels, ou ne plus les recevoir. Rend l'etat final. */

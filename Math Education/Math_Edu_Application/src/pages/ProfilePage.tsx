@@ -16,6 +16,8 @@ import { Avatar, EmptyState, Level, Notice } from '@/components/ui/Misc'
 import { ProgressBar } from '@/components/ui/Progress'
 import { IconCheck } from '@/components/ui/icons'
 import { useAuthenticatedSession } from '@/state/session'
+import { repository, RepositoryError } from '@/data'
+import { telechargerJson } from '@/lib/telecharger'
 import { useDailyPlan } from '@/state/usePlan'
 import { SCHOOL_LEVELS, type SchoolLevel } from '@/types/content'
 
@@ -498,43 +500,62 @@ function DataRights() {
   const [confirming, setConfirming] = useState(false)
   const [exported, setExported] = useState(false)
 
-  const exportData = () => {
-    const payload = {
-      exporte_le: new Date().toISOString(),
-      profil: session.profile,
-      progression: session.progress,
-      positionnement: session.placement,
-      tentatives: session.attempts,
-      reservations: session.bookings,
+  const [mot, setMot] = useState('')
+  const [erreur, setErreur] = useState<string | null>(null)
+  const [enCours, setEnCours] = useState(false)
+
+  // Export RGPD : tout ce que la base garde sur le compte (sprint 4), plus
+  // les reservations de la session.
+  const exportData = async () => {
+    setErreur(null)
+    try {
+      const donnees = await repository.exporterDonnees(session.profile.id)
+      telechargerJson(`racine-mes-donnees-${new Date().toISOString().slice(0, 10)}.json`, {
+        ...donnees,
+        reservations: session.bookings,
+      })
+      setExported(true)
+      window.setTimeout(() => setExported(false), 4000)
+    } catch (cause) {
+      setErreur(cause instanceof RepositoryError ? cause.message : 'L’export a échoué.')
     }
-
-    const url = URL.createObjectURL(
-      new Blob([JSON.stringify(payload, null, 2)], { type: 'application/json' }),
-    )
-    const link = document.createElement('a')
-    link.href = url
-    link.download = `racine-mes-donnees-${new Date().toISOString().slice(0, 10)}.json`
-    link.click()
-    URL.revokeObjectURL(url)
-
-    setExported(true)
-    window.setTimeout(() => setExported(false), 4000)
   }
 
-  const deleteAccount = () => {
-    void signOut()
-    navigate('/connexion')
+  // Suppression definitive (fonction supprimer-compte) : le compte, son
+  // profil et tout ce qui en depend, en cascade.
+  const deleteAccount = async () => {
+    setEnCours(true)
+    setErreur(null)
+    try {
+      await repository.supprimerCompte()
+      await signOut()
+      navigate('/connexion')
+    } catch (cause) {
+      setErreur(cause instanceof RepositoryError ? cause.message : 'La suppression a échoué.')
+      setEnCours(false)
+    }
   }
 
   return (
     <div className="mt-4 border-t border-divider pt-4">
       <div className="flex flex-wrap gap-2.5">
-        <Button variant="secondary" size="sm" onClick={exportData}>
+        <Button variant="secondary" size="sm" onClick={() => void exportData()}>
           {exported ? 'Fichier téléchargé' : 'Exporter mes données'}
         </Button>
-        {!isDemo ? null : confirming ? (
+        {confirming ? (
           <>
-            <Button size="sm" onClick={deleteAccount} className="bg-wrong-600 hover:bg-wrong-600">
+            <TextInput
+              aria-label="Tape SUPPRIMER pour confirmer"
+              value={mot}
+              onChange={(e) => setMot(e.target.value)}
+              className="max-w-[160px]"
+            />
+            <Button
+              size="sm"
+              disabled={mot !== 'SUPPRIMER' || enCours}
+              onClick={() => void deleteAccount()}
+              className="bg-wrong-600 hover:bg-wrong-600"
+            >
               Confirmer la suppression
             </Button>
             <Button variant="ghost" size="sm" onClick={() => setConfirming(false)}>
@@ -549,8 +570,14 @@ function DataRights() {
       </div>
       {confirming && (
         <p role="alert" className="mt-2.5 text-[11.5px] leading-relaxed text-wrong-600">
-          Cette action efface définitivement ta progression, tes tentatives et tes réservations.
-          Elle est irréversible. Pense à exporter tes données avant.
+          Cette action efface définitivement ton compte, ta progression, tes tentatives et tes réservations.
+          Elle est irréversible. Pense à exporter tes données avant. Tape SUPPRIMER pour confirmer.
+          {isDemo && ' (Mode démonstration : la session locale est effacée.)'}
+        </p>
+      )}
+      {erreur && (
+        <p role="alert" className="mt-2 text-[11.5px] text-wrong-600">
+          {erreur}
         </p>
       )}
     </div>

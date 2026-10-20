@@ -1,6 +1,6 @@
 -- =============================================================================
--- Cron des rappels de travail (sprint 2, point 8). A coller APRES la
--- migration 0017, dans Supabase : SQL Editor -> New query -> Run. Rejouable.
+-- Cron des rappels de travail (sprint 2) et du rapport hebdomadaire (sprint 4). A coller APRES les
+-- migrations 0017 et 0019, dans Supabase : SQL Editor -> New query -> Run. Rejouable.
 --
 -- Pas une migration : pg_cron n'existe pas dans les tests (PGlite), et
 -- l'appel porte un secret qui ne doit pas etre dans le depot.
@@ -42,6 +42,33 @@ select cron.schedule(
   $job$
   select net.http_post(
     url := 'https://crazwnfjyzaxirbmwnkn.supabase.co/functions/v1/rappel-revision',
+    headers := jsonb_build_object(
+      'Content-Type', 'application/json',
+      'x-cron-secret', (select decrypted_secret from vault.decrypted_secrets where name = 'rappels_cron_secret')
+    ),
+    body := '{"action": "envoyer"}'::jsonb
+  );
+  $job$
+);
+
+-- -----------------------------------------------------------------------------
+-- Rapport hebdomadaire au parent (migration 0019, fonction rapport-hebdo) :
+-- le dimanche a 16 h UTC (17 h ou 18 h a Paris), meme secret.
+-- -----------------------------------------------------------------------------
+
+do $$
+begin
+  if exists (select 1 from cron.job where jobname = 'rapport-hebdo') then
+    perform cron.unschedule('rapport-hebdo');
+  end if;
+end $$;
+
+select cron.schedule(
+  'rapport-hebdo',
+  '0 16 * * 0',
+  $job$
+  select net.http_post(
+    url := 'https://crazwnfjyzaxirbmwnkn.supabase.co/functions/v1/rapport-hebdo',
     headers := jsonb_build_object(
       'Content-Type', 'application/json',
       'x-cron-secret', (select decrypted_secret from vault.decrypted_secrets where name = 'rappels_cron_secret')

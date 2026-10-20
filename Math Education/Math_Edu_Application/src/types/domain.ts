@@ -49,6 +49,23 @@ export interface Rappel {
   pause_jusqu_au: string | null
 }
 
+/** Un enfant rattache au compte parent (migration 0019, mes_enfants). */
+export interface Enfant {
+  lien_id: string
+  eleve_id: string
+  prenom: string
+  niveau_scolaire: string | null
+  rapport_hebdo: boolean
+}
+
+/** Reponse et corrige d'un exercice, rendus au seul parent rattache (corriges_pour_parent). */
+export interface CorrigeParent {
+  exercise_id: string
+  answer: { value: string | number | boolean; unit?: string | null; accepted?: (string | number)[] }
+  solution_steps: string[]
+  misconceptions: Record<string, string | null>
+}
+
 /** Ce que voit le parent (ou le destinataire) sur /rappels/:jeton, sans compte. */
 export interface RappelPublic {
   prenom: string
