@@ -1000,6 +1000,10 @@ def check_defis(dag: dict, defis: dict) -> None:
     comme_exos = _defis_comme_exercices(defis)
     check_notations(dag, comme_exos)
     check_caracteres_controle(comme_exos)
+    # Champ numerique par classe et vocabulaire (negatifs avant la 5e) : trou
+    # releve par le relecteur du lot pilote des cartes defi.
+    check_champ_numerique(dag, comme_exos)
+    check_vocabulaire_proportionnalite(dag, comme_exos, None)
 
 
 # ---------------------------------------------------------------------------
@@ -1071,6 +1075,8 @@ def check_super(dag: dict, sup: dict) -> None:
     comme_exos = _super_comme_exercices(sup)
     check_notations(dag, comme_exos)
     check_caracteres_controle(comme_exos)
+    check_champ_numerique(dag, comme_exos)
+    check_vocabulaire_proportionnalite(dag, comme_exos, None)
 
 
 def main() -> int:
