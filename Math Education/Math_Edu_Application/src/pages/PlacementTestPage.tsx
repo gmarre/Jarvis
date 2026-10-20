@@ -27,6 +27,7 @@ import { useAuthenticatedSession } from '@/state/session'
 import type { Skill } from '@/types/content'
 import type { PlacementResult } from '@/types/domain'
 import { COULEURS } from '@/lib/couleurs'
+import { valideeParLeTest } from '@/lib/maitrise'
 
 // Ecran 2 des maquettes : 1d (test en cours) et 1e (resultat).
 //
@@ -60,6 +61,7 @@ export default function PlacementTestPage() {
 
   const finish = useCallback((finalState: PlacementState) => {
     const progress: ProgressMap = {}
+    const maintenant = new Date()
     for (const skill of allSkills) {
       const isMastered = finalState.mastered.includes(skill.id)
       progress[skill.id] = isMastered
@@ -69,7 +71,9 @@ export default function PlacementTestPage() {
             score: skill.mastery_threshold.required,
             attempts: skill.mastery_threshold.out_of,
             review_box: 1,
-            updated_at: new Date().toISOString(),
+            updated_at: maintenant.toISOString(),
+            // Validee par le test : niveau 4, controles plus espaces (J+14, J+45).
+            ...valideeParLeTest(maintenant),
           }
         : emptyProgress(skill.id)
     }

@@ -89,6 +89,13 @@ function buildProgress(now: Date): ProgressMap {
         // la prochaine revision dans le futur pour ne pas polluer le rappel.
         next_review_at: box ? today.toISOString() : nextReviewDate(4, now).toISOString(),
         updated_at: addDays(now, -3).toISOString(),
+        // Acquise par le travail ; un controle est du aujourd'hui pour les
+        // cartes du jour, pour que la demonstration montre la file « A reviser ».
+        niveau: 4,
+        exercices_reussis: [],
+        controles_reussis: box ? 0 : 1,
+        prochain_controle: box ? today.toISOString() : addDays(now, 10).toISOString(),
+        valide_par_test: false,
       }
       continue
     }
@@ -103,6 +110,11 @@ function buildProgress(now: Date): ProgressMap {
         review_box: 0,
         next_review_at: null,
         updated_at: addDays(now, -1).toISOString(),
+        niveau: started.some(Boolean) ? 1 : 0,
+        exercices_reussis: [],
+        controles_reussis: 0,
+        prochain_controle: null,
+        valide_par_test: false,
       }
       continue
     }

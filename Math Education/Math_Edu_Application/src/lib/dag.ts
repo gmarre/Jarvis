@@ -17,6 +17,7 @@ import {
   skills,
 } from '@/content'
 import type { Skill } from '@/types/content'
+import { apresReponse, type EtatMaitrise } from './maitrise'
 import type { SkillProgress, SkillStatus } from '@/types/domain'
 
 /** Etat de progression de l'eleve, indexe par competence. */
@@ -72,6 +73,11 @@ export function emptyProgress(skillId: string): SkillProgress {
     next_review_at: null,
     review_box: 0,
     updated_at: null,
+    niveau: 0,
+    exercices_reussis: [],
+    controles_reussis: 0,
+    prochain_controle: null,
+    valide_par_test: false,
   }
 }
 
@@ -220,8 +226,10 @@ function pickAcquiredAnchor(progress: ProgressMap, skillId: string): string | nu
 
 export interface AttemptOutcome {
   progress: SkillProgress
-  /** La competence vient d'etre maitrisee par cette tentative. */
+  /** La competence vient d'etre acquise (niveau 4) par cette reponse. */
   justMastered: boolean
+  /** Cette reponse etait un controle d'une competence acquise. */
+  controle: 'reussi' | 'rate' | null
   /**
    * L'eleve echoue de facon repetee : l'application doit lui reproposer les
    * prerequis plutot que s'acharner. C'est la regle 3 du moteur.
@@ -232,77 +240,65 @@ export interface AttemptOutcome {
 }
 
 /**
- * Applique une tentative d'exercice a la progression d'une competence.
+ * Applique la reponse a un exercice a la progression d'une competence.
  *
- * Modele de maitrise : une fenetre reellement glissante sur les `out_of`
- * dernieres tentatives. Des que `required` reussites y figurent, la competence
- * est maitrisee.
- *
- * Le glissement compte : avec une fenetre fixe remise a zero, un eleve qui
- * repond juste, faux, juste sur un seuil de 2 sur 3 ne validerait pas, alors
- * qu'il a bien 2 reussites sur ses 3 derniers essais. C'est incomprehensible
- * pour lui comme pour le professeur.
+ * Depuis le sprint 2 (20 octobre 2026), la maitrise suit le niveau sur 5 de
+ * lib/maitrise.ts : acquise quand deux exercices differents sont reussis, dont
+ * un de niveau maitrise, puis controlee a J+3, J+10 et J+30. La fenetre des
+ * dernieres tentatives (`recent`, `mastery_threshold.out_of`) ne sert plus
+ * qu'a reperer l'echec repete qui fait redescendre vers les prerequis.
  */
 export function applyAttempt(
   progress: ProgressMap,
   skillId: string,
+  exerciseId: string,
   isCorrect: boolean,
   now: Date = new Date(),
 ): AttemptOutcome {
   const skill = requireSkill(skillId)
-  const { required, out_of: outOf } = skill.mastery_threshold
-  const base = progress[skillId] ?? emptyProgress(skillId)
+  const { out_of: outOf } = skill.mastery_threshold
+  const base = { ...emptyProgress(skillId), ...progress[skillId] }
 
-  if (base.status === 'mastered') {
-    // Une competence deja maitrisee ne se "demaitrise" pas sur un exercice de
-    // revision : on garde l'etat, la revision espacee s'en charge.
-    return { progress: base, justMastered: false, shouldDescend: false, descendTo: [] }
+  const avant: EtatMaitrise = {
+    niveau: base.niveau,
+    exercices_reussis: base.exercices_reussis,
+    controles_reussis: base.controles_reussis,
+    prochain_controle: base.prochain_controle,
+    valide_par_test: base.valide_par_test,
   }
+  const evolution = apresReponse(avant, exerciseId, isCorrect, now)
+  const etat = evolution.etat
 
   const recent = [...base.recent, isCorrect].slice(-outOf)
   const score = recent.filter(Boolean).length
-  const attempts = recent.length
   const updated_at = now.toISOString()
 
-  if (score >= required) {
-    return {
-      progress: {
-        ...base,
-        status: 'mastered',
-        recent,
-        score,
-        attempts,
-        review_box: 1,
-        next_review_at: nextReviewDate(1, now).toISOString(),
-        updated_at,
-      },
-      justMastered: true,
-      shouldDescend: false,
-      descendTo: [],
-    }
+  const acquise = etat.niveau >= 4
+  const next: SkillProgress = {
+    ...base,
+    ...etat,
+    status: acquise ? 'mastered' : 'in_progress',
+    recent,
+    score,
+    attempts: recent.length,
+    updated_at,
+    // La carte mentale entre en relecture espacee a l'acquisition (J+1).
+    ...(evolution.vientDEtreAcquise
+      ? { review_box: 1, next_review_at: nextReviewDate(1, now).toISOString() }
+      : {}),
   }
 
-  // Fenetre pleine sans la moindre reussite : s'acharner n'apporte rien, le
-  // blocage est en amont.
-  const noSuccessAtAll = attempts >= outOf && score === 0
-  // On ne renvoie jamais vers un prerequis sans exercice : il n'y aurait rien a y faire.
+  // Fenetre pleine sans la moindre reussite, competence pas encore acquise :
+  // s'acharner n'apporte rien, le blocage est en amont. On ne renvoie jamais
+  // vers un prerequis sans exercice : il n'y aurait rien a y faire.
+  const noSuccessAtAll = !acquise && recent.length >= outOf && score === 0
   const unmasteredPrerequisites = skill.prerequisites.filter((id) => !isCleared(progress, id))
-
-  // On ne propose de redescendre que s'il existe reellement un prerequis a
-  // retravailler. Quand tous sont acquis, il n'y a nulle part ou aller : la
-  // competence est simplement difficile, on la repropose telle quelle.
   const canDescend = noSuccessAtAll && unmasteredPrerequisites.length > 0
 
   return {
-    progress: {
-      ...base,
-      status: 'in_progress',
-      recent,
-      score,
-      attempts,
-      updated_at,
-    },
-    justMastered: false,
+    progress: next,
+    justMastered: evolution.vientDEtreAcquise,
+    controle: evolution.controle,
     shouldDescend: canDescend,
     descendTo: canDescend ? unmasteredPrerequisites : [],
   }

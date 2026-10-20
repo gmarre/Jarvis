@@ -90,7 +90,16 @@ function versProfil(ligne: LigneProfil): Profile {
   }
 }
 
-type LigneProgression = SkillProgress & { user_id: string }
+type LigneProgression = Omit<
+  SkillProgress,
+  'niveau' | 'exercices_reussis' | 'controles_reussis' | 'prochain_controle' | 'valide_par_test'
+> &
+  Partial<
+    Pick<
+      SkillProgress,
+      'niveau' | 'exercices_reussis' | 'controles_reussis' | 'prochain_controle' | 'valide_par_test'
+    >
+  > & { user_id: string }
 
 function versProgression(lignes: LigneProgression[]): ProgressMap {
   const carte: ProgressMap = {}
@@ -108,6 +117,13 @@ function versProgression(lignes: LigneProgression[]): ProgressMap {
       next_review_at: ligne.next_review_at,
       review_box: ligne.review_box,
       updated_at: ligne.updated_at,
+      // Colonnes de la migration 0013 ; avant elle, une competence maitrisee
+      // est lue au niveau 4, sans controle prevu.
+      niveau: ligne.niveau ?? (ligne.status === 'mastered' ? 4 : ligne.score > 0 ? 1 : 0),
+      exercices_reussis: ligne.exercices_reussis ?? [],
+      controles_reussis: ligne.controles_reussis ?? 0,
+      prochain_controle: ligne.prochain_controle ?? null,
+      valide_par_test: ligne.valide_par_test ?? false,
     }
   }
   return carte

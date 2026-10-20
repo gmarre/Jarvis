@@ -20,10 +20,15 @@ import type { Mindmap, Skill } from '@/types/content'
 import type { SkillProgress } from '@/types/domain'
 
 export interface ReviewItem {
+  /**
+   * « controle » : un exercice de la competence acquise est du (niveau sur 5,
+   * lib/maitrise.ts) ; « carte » : la carte mentale est a relire (Leitner).
+   */
+  kind: 'controle' | 'carte'
   skill: Skill
   mindmap: Mindmap | undefined
   progress: SkillProgress
-  /** "J+3" : ou en est la carte dans le rythme de revision espacee. */
+  /** "J+3" pour une carte, "Contrôle" pour un exercice. */
   label: string
   /** En retard sur son echeance : a traiter en premier. */
   overdue: boolean
@@ -64,27 +69,44 @@ export interface DailyPlan {
 
 function collectReviews(progress: ProgressMap, now: Date): ReviewItem[] {
   const today = startOfDay(now).getTime()
+  const du = (iso: string | null) => iso !== null && startOfDay(new Date(iso)).getTime() <= today
+  const enRetard = (iso: string) => startOfDay(new Date(iso)).getTime() < today
+  const items: ReviewItem[] = []
 
-  return Object.values(progress)
-    .filter((entry) => entry.status === 'mastered' && entry.next_review_at)
-    .filter((entry) => startOfDay(new Date(entry.next_review_at as string)).getTime() <= today)
-    .map((entry) => {
-      const skill = getSkill(entry.skill_id)
-      if (!skill) return null
-      return {
+  for (const entry of Object.values(progress)) {
+    const skill = getSkill(entry.skill_id)
+    if (!skill) continue
+    const mindmap = getMindmap(skill.mindmap_id)
+    // Controle d'une competence acquise : un exercice, jamais une simple lecture.
+    if (entry.niveau === 4 && du(entry.prochain_controle)) {
+      items.push({
+        kind: 'controle',
         skill,
-        mindmap: getMindmap(skill.mindmap_id),
+        mindmap,
+        progress: entry,
+        label: 'Contrôle',
+        overdue: enRetard(entry.prochain_controle as string),
+      })
+    }
+    if (entry.status === 'mastered' && du(entry.next_review_at)) {
+      items.push({
+        kind: 'carte',
+        skill,
+        mindmap,
         progress: entry,
         label: reviewLabel(entry.review_box),
-        overdue:
-          startOfDay(new Date(entry.next_review_at as string)).getTime() < today,
-      }
-    })
-    .filter((item): item is ReviewItem => item !== null)
-    .sort((a, b) => {
-      if (a.overdue !== b.overdue) return a.overdue ? -1 : 1
-      return a.progress.review_box - b.progress.review_box
-    })
+        overdue: enRetard(entry.next_review_at as string),
+      })
+    }
+  }
+
+  // Les controles d'abord (ils peuvent rouvrir une competence), puis les
+  // retards, puis les cartes les moins avancees.
+  return items.sort((a, b) => {
+    if (a.kind !== b.kind) return a.kind === 'controle' ? -1 : 1
+    if (a.overdue !== b.overdue) return a.overdue ? -1 : 1
+    return a.progress.review_box - b.progress.review_box
+  })
 }
 
 /**
@@ -153,9 +175,9 @@ export function useDailyPlan(): DailyPlan {
       0,
     )
 
-    // Une carte mentale se relit en 2 minutes environ : suffisant pour annoncer
-    // une duree honnete a l'eleve sans sur-promettre.
-    const reviewSeconds = reviews.length * 120
+    // Une carte mentale se relit en 2 minutes environ, un controle se fait en 2
+    // a 3 minutes : de quoi annoncer une duree honnete sans sur-promettre.
+    const reviewSeconds = reviews.reduce((t, r) => t + (r.kind === 'controle' ? 150 : 120), 0)
 
     return {
       priority,

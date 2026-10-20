@@ -4,7 +4,8 @@ import { Link, Navigate, useNavigate, useParams } from 'react-router-dom'
 import { getExercisesForSkill, getSkill } from '@/content'
 import { cn } from '@/lib/cn'
 import { exerciseLevelLabel } from '@/lib/exercise'
-import { formatDuration } from '@/lib/format'
+import { formatDateLong, formatDuration } from '@/lib/format'
+import { controleDu, exerciceDeControle } from '@/lib/maitrise'
 import { AnswerInput } from '@/components/exercise/AnswerInput'
 import { ExerciseFigure } from '@/components/exercise/ExerciseFigure'
 import { RecettePanel } from '@/components/recette/RecettePanel'
@@ -29,13 +30,46 @@ import { useAuthenticatedSession, type AnswerResult } from '@/state/session'
 
 type Phase = 'question' | 'correction' | 'bilan'
 
+/**
+ * La seance est rejouee par une cle : « Consolider maintenant » apres un
+ * controle rate repart d'une seance neuve (toute la banque), sur la meme
+ * adresse, que React Router ne remonterait pas de lui-meme.
+ */
 export default function ExercisePage() {
   const { skillId = '' } = useParams()
+  const [seance, setSeance] = useState(0)
+  return (
+    <ExerciseSession
+      key={`${skillId}-${seance}`}
+      skillId={skillId}
+      onReprendre={() => setSeance((n) => n + 1)}
+    />
+  )
+}
+
+function ExerciseSession({ skillId, onReprendre }: { skillId: string; onReprendre: () => void }) {
   const navigate = useNavigate()
-  const { answerExercise } = useAuthenticatedSession()
+  const { answerExercise, session } = useAuthenticatedSession()
 
   const skill = getSkill(skillId)
-  const exercises = useMemo(() => getExercisesForSkill(skillId), [skillId])
+  // Controle d'une competence acquise (niveau 4, echeance passee) : un seul
+  // exercice, fige a l'ouverture de l'ecran. Sinon, toute la banque.
+  const [modeControle] = useState(() => {
+    const entree = session.progress[skillId]
+    return entree !== undefined && controleDu(entree, new Date())
+  })
+  const exercises = useMemo(() => {
+    const tous = getExercisesForSkill(skillId)
+    if (!modeControle) return tous
+    const choisi = exerciceDeControle(
+      tous,
+      session.attempts.filter((a) => a.skill_id === skillId),
+    )
+    return choisi ? [choisi] : tous
+    // Les tentatives changent a chaque reponse : la liste, elle, reste celle de
+    // l'ouverture de l'ecran.
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [skillId, modeControle])
 
   const [index, setIndex] = useState(0)
   const [answer, setAnswer] = useState('')
@@ -48,6 +82,8 @@ export default function ExercisePage() {
   const [score, setScore] = useState({ correct: 0, total: 0 })
   const [masteredDuringSession, setMasteredDuringSession] = useState(false)
   const [descendTo, setDescendTo] = useState<string[]>([])
+  /** Dernier resultat utile au bilan : controle et niveau atteint. */
+  const [dernier, setDernier] = useState<AnswerResult | null>(null)
   const startedAt = useRef(Date.now())
 
   const exercise = exercises[index]
@@ -99,12 +135,15 @@ export default function ExercisePage() {
       total: current.total + 1,
     }))
     if (outcome.justMastered) setMasteredDuringSession(true)
+    setDernier(outcome)
     if (outcome.shouldDescend) setDescendTo(outcome.descendTo)
     setPhase('correction')
   }
 
   const next = () => {
-    if (index + 1 >= exercises.length) {
+    // Une competence qui vient d'etre acquise termine la seance : une erreur
+    // juste apres la rouvrirait avant meme son premier controle (J+3).
+    if (index + 1 >= exercises.length || result?.justMastered) {
       setPhase('bilan')
       return
     }
@@ -123,6 +162,8 @@ export default function ExercisePage() {
         mastered={masteredDuringSession}
         descendTo={descendTo}
         mindmapId={skill.mindmap_id}
+        dernier={dernier}
+        onReprendre={onReprendre}
       />
     )
   }
@@ -211,7 +252,7 @@ export default function ExercisePage() {
             result={result}
             solutionSteps={result.solutionSteps}
             onNext={next}
-            isLast={index + 1 >= exercises.length}
+            isLast={index + 1 >= exercises.length || result.justMastered}
           />
         )}
       </Card>
@@ -309,7 +350,8 @@ function CorrectionPanel({
           )}
           {result.justMastered && (
             <p className="mt-1.5 text-[12.5px] font-medium leading-relaxed text-mastered-700">
-              Compétence acquise. Elle passe en révision espacée, tu la reverras dans un jour.
+              Compétence acquise : niveau 4 sur 5. Un premier contrôle dans 3 jours vérifiera
+              qu'elle tient.
             </p>
           )}
         </div>
@@ -347,12 +389,16 @@ function SessionSummary({
   mastered,
   descendTo,
   mindmapId,
+  dernier,
+  onReprendre,
 }: {
   skillLabel: string
   score: { correct: number; total: number }
   mastered: boolean
   descendTo: string[]
   mindmapId: string | null
+  dernier: AnswerResult | null
+  onReprendre: () => void
 }) {
   const navigate = useNavigate()
   const prerequisite = descendTo[0] ? getSkill(descendTo[0]) : null
@@ -360,8 +406,14 @@ function SessionSummary({
   return (
     <FocusFrame title={skillLabel} onQuit={() => navigate('/travail')}>
       <Card className="animate-fade-up p-7 text-center sm:p-9">
-        <Badge tone={mastered ? 'mastered' : 'accent'} className="mb-4">
-          {mastered ? 'Compétence acquise' : 'Séance terminée'}
+        <Badge tone={mastered || dernier?.controle === 'reussi' ? 'mastered' : 'accent'} className="mb-4">
+          {dernier?.controle === 'reussi'
+            ? 'Contrôle réussi'
+            : dernier?.controle === 'rate'
+              ? 'À consolider'
+              : mastered
+                ? 'Compétence acquise'
+                : 'Séance terminée'}
         </Badge>
 
         <h1 className="font-display text-[24px] font-medium leading-snug text-ink sm:text-[28px]">
@@ -370,10 +422,23 @@ function SessionSummary({
         <p className="mx-auto mt-3 max-w-[420px] text-[13.5px] leading-relaxed text-ink-subtle">
           {score.correct} bonne{score.correct > 1 ? 's' : ''} réponse
           {score.correct > 1 ? 's' : ''} sur {score.total}.{' '}
-          {mastered
-            ? 'Le seuil de maîtrise est atteint : la compétence passe au vert et débloque la suite.'
-            : "Ce n'est pas encore solide, on y revient bientôt."}
+          {dernier?.controle === 'reussi'
+            ? dernier.niveau === 5
+              ? 'Complètement acquise : niveau 5 sur 5, plus besoin de contrôle.'
+              : `C'est toujours acquis. Prochain contrôle le ${
+                  dernier.prochainControle ? formatDateLong(dernier.prochainControle) : 'bientôt'
+                }.`
+            : dernier?.controle === 'rate'
+              ? 'Cette compétence a besoin d’être consolidée : elle revient dans ton travail, un exercice de maîtrise réussi la validera de nouveau.'
+              : mastered
+                ? 'Niveau 4 sur 5 : la compétence passe au vert et débloque la suite. Un premier contrôle dans 3 jours vérifiera qu’elle tient.'
+                : "Ce n'est pas encore solide, on y revient bientôt."}
         </p>
+        {dernier?.controle === 'rate' && (
+          <Button size="sm" className="mt-4" onClick={onReprendre}>
+            Consolider maintenant
+          </Button>
+        )}
 
         {prerequisite && (
           <div className="mt-6 rounded-card border border-accent-100 bg-accent-50 p-4 text-left">

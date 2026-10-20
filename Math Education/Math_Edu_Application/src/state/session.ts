@@ -20,6 +20,12 @@ export type SessionStatus = 'loading' | 'anonymous' | 'authenticated'
 
 export interface AnswerResult extends Correction {
   justMastered: boolean
+  /** Cette reponse etait un controle d'une competence acquise. */
+  controle: 'reussi' | 'rate' | null
+  /** Niveau de maitrise apres la reponse (0 a 5). */
+  niveau: number
+  /** Date du prochain controle apres la reponse, null si aucun. */
+  prochainControle: string | null
   /** L'eleve echoue de facon repetee : on lui reproposera les prerequis. */
   shouldDescend: boolean
   descendTo: string[]

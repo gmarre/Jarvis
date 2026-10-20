@@ -190,13 +190,21 @@ export function SessionProvider({ children }: { children: ReactNode }) {
       const correction = await repository.corriger(exercise.id, raw)
       const current = sessionRef.current
       if (!current) {
-        return { ...correction, justMastered: false, shouldDescend: false, descendTo: [] }
+        return {
+          ...correction,
+          justMastered: false,
+          controle: null,
+          niveau: 0,
+          prochainControle: null,
+          shouldDescend: false,
+          descendTo: [],
+        }
       }
 
       // Le calcul se fait avant setSession, pas dans son updater : React ne
       // garantit pas qu'un updater tourne avant le retour de la fonction
       // appelante, et l'ecran d'exercice a besoin du verdict tout de suite.
-      const applied = applyAttempt(current.progress, exercise.skill_id, correction.isCorrect)
+      const applied = applyAttempt(current.progress, exercise.skill_id, exercise.id, correction.isCorrect)
 
       const attempt = {
         id: newId(),
@@ -221,6 +229,9 @@ export function SessionProvider({ children }: { children: ReactNode }) {
       return {
         ...correction,
         justMastered: applied.justMastered,
+        controle: applied.controle,
+        niveau: applied.progress.niveau,
+        prochainControle: applied.progress.prochain_controle,
         shouldDescend: applied.shouldDescend,
         descendTo: applied.descendTo,
       }

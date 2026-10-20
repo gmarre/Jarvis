@@ -86,11 +86,24 @@ export interface SkillProgress {
   score: number
   /** Taille de la fenetre courante. Derive de `recent`. */
   attempts: number
-  /** Echeance de revision espacee (Leitner), null si rien a reviser. */
+  /**
+   * Echeance de relecture de la carte mentale (Leitner), null si rien a
+   * revoir. Distincte des controles de la competence (`prochain_controle`).
+   */
   next_review_at: string | null
-  /** Rang Leitner : 0 = jamais revise, puis J+1, J+3, J+7, J+21. */
+  /** Rang Leitner de la carte : 0 = jamais revue, puis J+1, J+3, J+7, J+21. */
   review_box: number
   updated_at: string | null
+  /** Niveau de maitrise de 0 a 5 (lib/maitrise.ts, migration 0013). */
+  niveau: 0 | 1 | 2 | 3 | 4 | 5
+  /** Exercices differents reussis depuis la derniere ouverture. */
+  exercices_reussis: string[]
+  /** Controles reussis d'affilee au niveau 4. */
+  controles_reussis: number
+  /** Date du prochain controle de la competence, null si aucun. */
+  prochain_controle: string | null
+  /** Acquise par le test d'entree : controles plus espaces. */
+  valide_par_test: boolean
 }
 
 /** Table `exercise_attempts`. */

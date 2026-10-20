@@ -75,7 +75,7 @@ describe('competence sans exercice', () => {
 
   it("ne sert pas de point de chute quand l'eleve echoue", () => {
     // X3 echouee : son seul prerequis direct est vide, il n'y a nulle part ou redescendre.
-    const resultat = applyAttempt(progression(['X1']), 'X3', false)
+    const resultat = applyAttempt(progression(['X1']), 'X3', 'EX-X3-D-01', false)
     expect(resultat.descendTo).not.toContain('X2')
   })
 })

@@ -56,55 +56,56 @@ describe('statusOf', () => {
 describe('applyAttempt', () => {
   const skill = skillWithPrerequisites()
   const base = masteredMap(skill.prerequisites)
-  const { required, out_of: outOf } = skill.mastery_threshold
+  const { out_of: outOf } = skill.mastery_threshold
+  const exos = getExercisesForSkill(skill.id).map((e) => e.id)
+  const maitrise = exos.find((id) => /-M-/.test(id)) as string
+  const autre = exos.find((id) => !/-M-/.test(id)) as string
 
-  it('atteint la maitrise au seuil et ouvre la revision espacee', () => {
-    let progress = base
-    let mastered = false
+  it('acquiert la competence avec deux exercices differents dont un de maitrise', () => {
+    const premier = applyAttempt(base, skill.id, autre, true)
+    expect(premier.justMastered).toBe(false)
+    expect(premier.progress.niveau).toBe(1)
+    const progress = { ...base, [skill.id]: premier.progress }
+    const second = applyAttempt(progress, skill.id, maitrise, true)
 
-    for (let i = 0; i < required; i += 1) {
-      const applied = applyAttempt(progress, skill.id, true)
-      progress = { ...progress, [skill.id]: applied.progress }
-      mastered = mastered || applied.justMastered
-    }
-
-    expect(mastered).toBe(true)
-    expect(progress[skill.id].status).toBe('mastered')
-    expect(progress[skill.id].review_box).toBe(1)
-    expect(progress[skill.id].next_review_at).not.toBeNull()
+    expect(second.justMastered).toBe(true)
+    expect(second.progress.status).toBe('mastered')
+    expect(second.progress.niveau).toBe(4)
+    expect(second.progress.prochain_controle).not.toBeNull()
+    // La carte mentale entre en relecture espacee.
+    expect(second.progress.review_box).toBe(1)
+    expect(second.progress.next_review_at).not.toBeNull()
   })
 
-  it('valide sur une fenetre reellement glissante', () => {
-    // Juste, faux, juste doit valider un seuil de 2 sur 3 : c'est le sens de la
-    // fenetre glissante, et c'est ce qu'un eleve comprend de son propre score.
-    if (required !== 2 || outOf !== 3) return
-
-    let progress = base
-    let mastered = false
-    for (const correct of [true, false, true]) {
-      const applied = applyAttempt(progress, skill.id, correct)
-      progress = { ...progress, [skill.id]: applied.progress }
-      mastered = mastered || applied.justMastered
-    }
-
-    expect(mastered).toBe(true)
+  it('ne valide pas avec le meme exercice reussi deux fois', () => {
+    const premier = applyAttempt(base, skill.id, maitrise, true)
+    const second = applyAttempt({ ...base, [skill.id]: premier.progress }, skill.id, maitrise, true)
+    expect(second.justMastered).toBe(false)
+    expect(second.progress.status).toBe('in_progress')
   })
 
-  it('ne demaitrise pas une competence acquise sur un exercice de revision', () => {
-    const progress = masteredMap([skill.id])
-    const applied = applyAttempt(progress, skill.id, false)
+  it('un controle rate rouvre une competence acquise', () => {
+    const acquise = applyAttempt(
+      { ...base, [skill.id]: applyAttempt(base, skill.id, autre, true).progress },
+      skill.id,
+      maitrise,
+      true,
+    ).progress
+    const rate = applyAttempt({ ...base, [skill.id]: acquise }, skill.id, autre, false)
 
-    expect(applied.progress.status).toBe('mastered')
-    expect(applied.shouldDescend).toBe(false)
+    expect(rate.controle).toBe('rate')
+    expect(rate.progress.niveau).toBe(3)
+    expect(rate.progress.status).toBe('in_progress')
+    expect(rate.shouldDescend).toBe(false)
   })
 
   it('propose de redescendre apres une fenetre pleine sans aucune reussite', () => {
     let progress: ProgressMap = {}
-    let outcome = applyAttempt(progress, skill.id, false)
+    let outcome = applyAttempt(progress, skill.id, autre, false)
 
     for (let i = 1; i < outOf; i += 1) {
       progress = { ...progress, [skill.id]: outcome.progress }
-      outcome = applyAttempt(progress, skill.id, false)
+      outcome = applyAttempt(progress, skill.id, autre, false)
     }
 
     expect(outcome.shouldDescend).toBe(true)
@@ -114,11 +115,11 @@ describe('applyAttempt', () => {
   it('ne propose pas de redescendre quand tous les prerequis sont acquis', () => {
     // Il n'y a nulle part ou aller : la competence est juste difficile.
     let progress = base
-    let outcome = applyAttempt(progress, skill.id, false)
+    let outcome = applyAttempt(progress, skill.id, autre, false)
 
     for (let i = 1; i < outOf; i += 1) {
       progress = { ...progress, [skill.id]: outcome.progress }
-      outcome = applyAttempt(progress, skill.id, false)
+      outcome = applyAttempt(progress, skill.id, autre, false)
     }
 
     expect(outcome.shouldDescend).toBe(false)

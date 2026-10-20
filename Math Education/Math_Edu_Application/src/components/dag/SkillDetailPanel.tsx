@@ -7,6 +7,7 @@ import { Badge, StatusBadge } from '@/components/ui/Badge'
 import { Button, ButtonLink } from '@/components/ui/Button'
 import { Level } from '@/components/ui/Misc'
 import type { Skill } from '@/types/content'
+import { NiveauMaitrise } from '@/components/ui/NiveauMaitrise'
 
 // Panneau de detail d'une competence (maquette 1i, colonne de droite).
 // Il repond a la seule question qui compte pour l'eleve : pourquoi celle-la, et
@@ -58,11 +59,12 @@ export function SkillDetailPanel({
 
       <dl className="mb-5 flex flex-col gap-2.5">
         <DetailRow
-          label="Réussite"
+          label="Maîtrise"
           value={
-            entry && entry.attempts > 0
-              ? `${entry.score} sur ${entry.attempts} essais`
-              : `Seuil : ${skill.mastery_threshold.required} sur ${skill.mastery_threshold.out_of}`
+            <span className="inline-flex items-center gap-2">
+              <NiveauMaitrise niveau={entry?.niveau ?? 0} />
+              {entry?.niveau ?? 0} / 5
+            </span>
           }
           tone={status === 'mastered' ? 'text-mastered' : 'text-progress'}
         />
@@ -146,7 +148,7 @@ function DetailRow({
   last,
 }: {
   label: string
-  value: string
+  value: React.ReactNode
   tone: string
   last?: boolean
 }) {

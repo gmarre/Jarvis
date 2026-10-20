@@ -44,7 +44,11 @@ export default function WorkspacePage() {
                 ? 'Tes révisions sont à jour. Les exercices de ta prochaine compétence arrivent très bientôt.'
                 : plan.isDayDone
                   ? "Tout est à jour. Repasse demain, ou prends de l'avance."
-                  : `${plan.totalMinutes} minutes aujourd'hui : ${describePlan(plan.priorityExerciseCount, plan.reviews.length)}.`
+                  : `${plan.totalMinutes} minutes aujourd'hui : ${describePlan(
+                      plan.priorityExerciseCount,
+                      plan.reviews.filter((r) => r.kind === 'controle').length,
+                      plan.reviews.filter((r) => r.kind === 'carte').length,
+                    )}.`
           }
           actions={
             <Link
@@ -90,15 +94,19 @@ export default function WorkspacePage() {
   )
 }
 
-function describePlan(exerciseCount: number, reviewCount: number): string {
+function describePlan(exerciseCount: number, controleCount: number, carteCount: number): string {
   const parts: string[] = []
   if (exerciseCount > 0) {
     parts.push(exerciseCount === 1 ? '1 exercice ciblé' : `${exerciseCount} exercices ciblés`)
   }
-  if (reviewCount > 0) {
-    parts.push(reviewCount === 1 ? '1 carte à revoir' : `${reviewCount} cartes à revoir`)
+  if (controleCount > 0) {
+    parts.push(controleCount === 1 ? '1 contrôle' : `${controleCount} contrôles`)
   }
-  return parts.length > 0 ? parts.join(' et ') : 'rien de prévu'
+  if (carteCount > 0) {
+    parts.push(carteCount === 1 ? '1 carte à revoir' : `${carteCount} cartes à revoir`)
+  }
+  if (parts.length === 0) return 'rien de prévu'
+  return parts.length === 1 ? parts[0] : `${parts.slice(0, -1).join(', ')} et ${parts[parts.length - 1]}`
 }
 
 /** Carte sombre "priorite du jour" : le seul appel a l'action qui compte. */
@@ -228,7 +236,7 @@ function ReviewList({ reviews }: { reviews: ReviewItem[] }) {
       <CardTitle
         action={
           <span className="text-xs font-semibold text-accent">
-            {reviews.length} carte{reviews.length > 1 ? 's' : ''}
+            {reviews.length} à faire
           </span>
         }
       >
@@ -237,14 +245,20 @@ function ReviewList({ reviews }: { reviews: ReviewItem[] }) {
 
       {reviews.length === 0 ? (
         <p className="rounded-card border border-divider bg-canvas p-5 text-center text-[13px] leading-relaxed text-ink-subtle">
-          Aucune carte à revoir. La prochaine échéance arrive demain.
+          Rien à réviser aujourd'hui.
         </p>
       ) : (
         <ul className="flex flex-col gap-2.5">
           {reviews.map((item) => (
-            <li key={item.skill.id}>
+            <li key={`${item.kind}-${item.skill.id}`}>
               <Link
-                to={item.mindmap ? `/cartes/${item.mindmap.id}` : '/cartes'}
+                to={
+                  item.kind === 'controle'
+                    ? `/exercice/${item.skill.id}`
+                    : item.mindmap
+                      ? `/cartes/${item.mindmap.id}`
+                      : '/cartes'
+                }
                 className="flex min-h-[56px] items-center gap-3 rounded-xl border border-divider px-3.5 py-3 transition hover:border-line hover:bg-canvas"
               >
                 <span
@@ -259,11 +273,13 @@ function ReviewList({ reviews }: { reviews: ReviewItem[] }) {
                     {item.skill.label}
                   </span>
                   <span className="block text-[11.5px] leading-relaxed text-ink-faint">
-                    {item.mindmap ? item.mindmap.title : 'Carte mentale'} · {item.label}
+                    {item.kind === 'controle'
+                      ? 'Contrôle : un exercice pour vérifier que c’est toujours acquis'
+                      : `${item.mindmap ? item.mindmap.title : 'Carte mentale'} · ${item.label}`}
                   </span>
                 </span>
                 <span className="hidden shrink-0 rounded-[9px] bg-muted px-3 py-1.5 text-xs font-semibold text-ink-muted sm:block">
-                  Revoir
+                  {item.kind === 'controle' ? 'Vérifier' : 'Revoir'}
                 </span>
                 <IconChevronRight size={16} className="shrink-0 text-locked-200 sm:hidden" />
               </Link>
@@ -273,8 +289,10 @@ function ReviewList({ reviews }: { reviews: ReviewItem[] }) {
       )}
 
       <div className="mt-4 flex flex-wrap items-center justify-between gap-3 border-t border-divider pt-4">
-        <p className="text-[12.5px] leading-snug text-ink-subtle">Rythme : J+1 · J+3 · J+7 · J+21</p>
-        {first?.mindmap && (
+        <p className="text-[12.5px] leading-snug text-ink-subtle">
+          Contrôles à J+3, J+10, J+30 · cartes à J+1, J+3, J+7, J+21
+        </p>
+        {first?.kind === 'carte' && first.mindmap && (
           <Link
             to={`/cartes/${first.mindmap.id}`}
             className="inline-flex items-center gap-1.5 text-[12.5px] font-semibold text-accent hover:text-accent-600"
