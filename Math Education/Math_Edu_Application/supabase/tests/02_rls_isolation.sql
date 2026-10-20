@@ -98,8 +98,25 @@ select 'TEST 18 aucun creneau ouvert par un eleve' as test,
        ((select count(*) from availability_slots
          where prof_id = '55555555-5555-5555-5555-555555555555') = 0) as ok;
 
-\echo '--- Le catalogue de creneaux reste visible de tous ---'
-select 'TEST 19 catalogue visible de tout compte connecte' as test,
+\echo '--- Le catalogue d un professeur non verifie est cache (migration 0018) ---'
+select 'TEST 19 catalogue d un professeur non verifie cache des eleves' as test,
+       count(*) as vus, (count(*) = 0) as ok
+from availability_slots;
+
+-- Le professeur ne peut pas se verifier lui-meme : le trigger remet la valeur.
+set request.jwt.claim.sub = '11111111-1111-1111-1111-111111111111';
+update teachers set verifie_le = now() where id = '11111111-1111-1111-1111-111111111111';
+select 'TEST 19a un professeur ne se verifie pas lui-meme' as test,
+       ((select verifie_le from teachers where id = '11111111-1111-1111-1111-111111111111') is null) as ok;
+
+-- Verification par l'administrateur (SQL Editor, hors JWT) : le catalogue apparait.
+reset role;
+set request.jwt.claim.role = 'service_role';
+update teachers set verifie_le = now() where id = '11111111-1111-1111-1111-111111111111';
+set request.jwt.claim.role = 'authenticated';
+set request.jwt.claim.sub = '55555555-5555-5555-5555-555555555555';
+set role authenticated;
+select 'TEST 19b catalogue d un professeur verifie visible de tout compte connecte' as test,
        count(*) as vus, (count(*) >= 1) as ok
 from availability_slots;
 
