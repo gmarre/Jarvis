@@ -12,7 +12,7 @@ import { Badge } from '@/components/ui/Badge'
 import { Button, ButtonLink } from '@/components/ui/Button'
 import { Card } from '@/components/ui/Card'
 import { RichText } from '@/components/ui/RichText'
-import { IconCheck, IconClose } from '@/components/ui/icons'
+import { IconCheck, IconClose, IconHint } from '@/components/ui/icons'
 import { useAuthenticatedSession } from '@/state/session'
 import { questionCommeExercice, type SuperExercise } from '@/types/content'
 
@@ -43,6 +43,8 @@ function SuperEpreuve({ sx }: { sx: SuperExercise }) {
   const [enCorrection, setEnCorrection] = useState(false)
   const [erreur, setErreur] = useState<string | null>(null)
   const [resultats, setResultats] = useState<ResultatQuestion[] | null>(null)
+  /** Indices deplies, par question : ils restent ouverts quand on revient en arriere. */
+  const [indices, setIndices] = useState<Record<string, boolean>>({})
   const debut = useRef(Date.now())
 
   const porteuse = getSkill(sx.skill_id)
@@ -261,6 +263,26 @@ function SuperEpreuve({ sx }: { sx: SuperExercise }) {
           disabled={enCorrection}
           onSubmit={() => (derniere ? undefined : setIndex((i) => i + 1))}
         />
+
+        {q.hint && (
+          <div className="mt-5">
+            {indices[q.key] ? (
+              <div className="flex items-start gap-3 rounded-card border border-progress-200 bg-progress-50 p-4">
+                <IconHint size={18} className="mt-px shrink-0 text-progress-700" />
+                <RichText className="text-[13px] leading-relaxed text-progress-900">{q.hint}</RichText>
+              </div>
+            ) : (
+              <button
+                type="button"
+                onClick={() => setIndices((v) => ({ ...v, [q.key]: true }))}
+                className="inline-flex items-center gap-2 text-[13px] font-semibold text-ink-subtle underline underline-offset-4 hover:text-ink"
+              >
+                <IconHint size={16} />
+                Un coup de pouce
+              </button>
+            )}
+          </div>
+        )}
       </Card>
 
       {erreur && (
