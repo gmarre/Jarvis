@@ -1073,6 +1073,9 @@ def check_super(dag: dict, sup: dict) -> None:
         err(f"Super exercices : metadata.total_super = {sup['metadata']['total_super']} "
             f"mais {len(sup['super'])} presents")
     comme_exos = _super_comme_exercices(sup)
+    # La figure d'un super exercice se controle comme celle d'un exercice
+    # (trou releve par le redacteur du lot P2).
+    check_images({"exercises": [{"id": x["id"], "image": x.get("image")} for x in sup["super"]]})
     check_notations(dag, comme_exos)
     check_caracteres_controle(comme_exos)
     check_champ_numerique(dag, comme_exos)
