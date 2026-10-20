@@ -20,7 +20,7 @@ L'élève lit le recto, cherche de tête, retourne la carte, dit lui-même s'il 
    - Respecte le champ numérique par classe (`scripts\validate_content.py`, `check_champ_numerique`) et les notations contrôlées.
    - Les tables de multiplication s'arrêtent à 10.
 4. **De tête, en 30 secondes.** Pas de calcul posé, pas de figure nécessaire.
-5. **Aucune carte ne donne la réponse d'un exercice ni d'un test de la même compétence.** Applique la règle par zone, puis relis à la main : « Un élève qui a lu cette carte a-t-il la réponse d'un exercice ? »
+5. **Aucune carte ne donne la réponse d'un exercice ni d'un test de la même compétence**, y compris en reprenant leur question avec d'autres nombres quand la réponse n'en dépend pas (règle, oui ou non conceptuel ; leçon du lot B). Applique la règle par zone, puis relis à la main : « Un élève qui a lu cette carte a-t-il la réponse d'un exercice ? »
 6. **Clarté pour un élève de la classe.**
    - Le vocabulaire est celui du niveau.
    - Le verso donne la réponse d'abord, en gras, puis le pourquoi en une phrase.
