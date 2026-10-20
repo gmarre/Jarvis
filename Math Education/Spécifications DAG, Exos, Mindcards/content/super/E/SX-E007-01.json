@@ -1,0 +1,130 @@
+{
+  "id": "SX-E007-01",
+  "skill_id": "E007",
+  "skill_ids": [
+    "E007",
+    "P027"
+  ],
+  "school_level": "5e",
+  "title": "À vélo jusqu'à la mer",
+  "contexte": "Pendant les vacances, Sami, ses parents et sa sœur suivent à vélo une véloroute qui longe un fleuve jusqu'à la mer. Leurs vélos chargés pèsent chacun environ 25 kg, et ils partent chaque matin à 9 h.\n\nLe premier jour, ils parcourent 72 km en 4 h de route, sans compter les pauses.\n\nLe deuxième jour, ils roulent pendant 2 h 30 min, à la vitesse moyenne de 16 km/h. À midi, ils font une pause déjeuner de 1 h 15 min.\n\nLe troisième jour, il leur reste 54 km à parcourir jusqu'à la mer. Ils roulent à la vitesse moyenne de 12 km/h.",
+  "image": null,
+  "duree_estimee_min": 15,
+  "questions": [
+    {
+      "key": "q1",
+      "skill_id": "E007",
+      "statement": "Que signifie « rouler à la vitesse moyenne de 16 km/h » ?",
+      "type": "qcm",
+      "choices": [
+        {
+          "key": "a",
+          "text": "Parcourir 16 km en tout.",
+          "misconception": "L'élève prend la vitesse pour une distance totale : 16 km/h, c'est 16 km en 1 h, et la distance totale dépend de la durée."
+        },
+        {
+          "key": "b",
+          "text": "Parcourir, en moyenne, 16 km en 1 h.",
+          "misconception": null
+        },
+        {
+          "key": "c",
+          "text": "Rouler pendant 16 h.",
+          "misconception": "L'élève prend la vitesse pour une durée. Les durées s'écrivent en h ; km/h est une vitesse."
+        }
+      ],
+      "answer": {
+        "value": "b"
+      },
+      "points": 1,
+      "solution_steps": [
+        "16 km/h se lit « 16 kilomètres par heure » : en moyenne, on parcourt 16 km en 1 h.",
+        "C'est le coefficient qui fait passer de la durée (en h) à la distance (en km)."
+      ],
+      "hint": "Que veut dire « par heure » ?"
+    },
+    {
+      "key": "q2",
+      "skill_id": "E007",
+      "statement": "Quelle est la vitesse moyenne de la famille le premier jour ?",
+      "type": "numerique",
+      "answer": {
+        "value": 18,
+        "unit": "km/h",
+        "accepted": [
+          "18 kilomètres par heure",
+          "18 km par heure"
+        ]
+      },
+      "points": 2,
+      "solution_steps": [
+        "La vitesse moyenne est la distance divisée par la durée : 72 km en 4 h.",
+        "72 ÷ 4 = 18.",
+        "Leur vitesse moyenne est de **18 km/h**."
+      ],
+      "hint": "Quelle distance parcourent-ils, en moyenne, en 1 h ?"
+    },
+    {
+      "key": "q3",
+      "skill_id": "P027",
+      "statement": "Écris la durée de la pause déjeuner en heures, avec un nombre décimal.",
+      "type": "numerique",
+      "answer": {
+        "value": 1.25,
+        "unit": "h"
+      },
+      "points": 2,
+      "solution_steps": [
+        "1 h = 60 min, donc 15 min, c'est le quart d'une heure : 60 ÷ 4 = 15.",
+        "Un quart d'heure s'écrit 0,25 h. Donc 1 h 15 min = 1,25 h.",
+        "Attention : 1 h 15 min ne s'écrit pas 1,15 h, car une heure compte 60 minutes, et non 100."
+      ],
+      "hint": "Quelle fraction d'une heure représentent 15 minutes ?"
+    },
+    {
+      "key": "q4",
+      "skill_id": "E007",
+      "statement": "Quelle distance la famille parcourt-elle le deuxième jour ?",
+      "type": "numerique",
+      "answer": {
+        "value": 40,
+        "unit": "km"
+      },
+      "points": 2,
+      "solution_steps": [
+        "2 h 30 min = 2,5 h, car 30 min, c'est la moitié d'une heure.",
+        "Distance = vitesse × durée : 16 × 2,5 = 40.",
+        "Ils parcourent **40 km** le deuxième jour.",
+        "Attention : 2 h 30 min n'est pas 2,3 h."
+      ],
+      "hint": "Écris d'abord la durée de route en heures, avec un nombre décimal."
+    },
+    {
+      "key": "q5",
+      "skill_id": "E007",
+      "statement": "Combien de temps de route leur faut-il le troisième jour pour atteindre la mer ?",
+      "type": "numerique",
+      "answer": {
+        "value": 4.5,
+        "unit": "h",
+        "accepted": [
+          "4 h 30",
+          "4 h 30 min",
+          "4h30",
+          "4 heures 30",
+          "4 heures et demie",
+          "4 h et demie"
+        ]
+      },
+      "points": 3,
+      "solution_steps": [
+        "À 12 km/h, ils parcourent 12 km en 1 h. En 4 h, ils parcourent 4 × 12 = 48 km.",
+        "Il reste 54 − 48 = 6 km : c'est la moitié de 12 km, qu'ils parcourent en une demi-heure.",
+        "Il leur faut 4 h et une demi-heure, soit **4,5 h**, c'est-à-dire 4 h 30 min de route. Vérification : 12 × 4,5 = 54."
+      ],
+      "hint": "Combien de kilomètres parcourent-ils en 1 h ?"
+    }
+  ],
+  "review_status": "brouillon",
+  "programme_ref": "Cycle 4, classe de 5e, Proportionnalité : « Utiliser un coefficient de proportionnalité dans des contextes concrets (prix unitaire, vitesse moyenne, échelle, etc.). »"
+}

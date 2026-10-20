@@ -1,0 +1,147 @@
+{
+  "id": "SX-E030-01",
+  "skill_id": "E030",
+  "skill_ids": [
+    "E030",
+    "D007",
+    "D021"
+  ],
+  "school_level": "6e",
+  "title": "Les courses de la fête des voisins",
+  "contexte": "Lisa et son père font les courses au marché pour la fête des voisins de leur immeuble, qui réunira 35 personnes. Ils comparent trois marchands.\n\nChez Paul, les fraises sont vendues en barquettes : la barquette de 3 kg coûte 11,40 € et la caisse de 7 kg coûte 26,60 €.\n\nChez Nadia, un client paie 11,70 € pour 3 kg de fraises, et un autre client paie 14,80 € pour 4 kg.\n\nChez Hugo, qui livre à domicile, on paie 4 € de livraison par commande, puis 6,50 € par kilogramme de cerises.\n\nLisa achète aussi 7 bouteilles de jus de pomme identiques, pour 12,25 € en tout.",
+  "image": null,
+  "duree_estimee_min": 15,
+  "questions": [
+    {
+      "key": "q1",
+      "skill_id": "E030",
+      "statement": "Chez quel marchand paie-t-on une somme fixe par commande, quelle que soit la masse achetée ?",
+      "type": "qcm",
+      "choices": [
+        {
+          "key": "a",
+          "text": "Chez Paul",
+          "misconception": "Chez Paul, on paie une barquette ou une caisse : il n'y a pas de somme fixe en plus."
+        },
+        {
+          "key": "b",
+          "text": "Chez Nadia",
+          "misconception": "Chez Nadia, le texte donne deux prix payés, sans somme fixe."
+        },
+        {
+          "key": "c",
+          "text": "Chez Hugo",
+          "misconception": null
+        }
+      ],
+      "answer": {
+        "value": "c"
+      },
+      "points": 1,
+      "solution_steps": [
+        "Chez Hugo, on paie « 4 € de livraison par commande » : cette somme ne dépend pas de la masse de cerises.",
+        "Chez Paul et chez Nadia, le texte ne parle d'aucune somme fixe."
+      ],
+      "hint": "Relis ce que chaque marchand fait payer."
+    },
+    {
+      "key": "q2",
+      "skill_id": "D007",
+      "statement": "Combien coûte une bouteille de jus de pomme ?",
+      "type": "numerique",
+      "answer": {
+        "value": 1.75,
+        "unit": "€",
+        "accepted": [
+          "1 € 75",
+          "1 euro 75"
+        ]
+      },
+      "points": 2,
+      "solution_steps": [
+        "Les 7 bouteilles sont identiques : on partage 12,25 € en 7 parts égales, on calcule 12,25 ÷ 7.",
+        "En 12 unités, il y a 1 fois 7, reste 5 unités, soit 50 dixièmes ; avec les 2 dixièmes, cela fait 52 dixièmes, où il y a 7 fois 7, reste 3 dixièmes, soit 30 centièmes ; avec les 5 centièmes, cela fait 35 centièmes, où il y a exactement 5 fois 7.",
+        "12,25 ÷ 7 = 1,75 : une bouteille coûte **1,75 €**. Vérification : 7 × 1,75 = 12,25."
+      ],
+      "hint": "Pose la division de 12,25 par 7."
+    },
+    {
+      "key": "q3",
+      "skill_id": "E030",
+      "statement": "Vrai ou faux : chez Paul, pour ces deux achats, le prix payé est proportionnel à la masse de fraises.",
+      "type": "vrai_faux",
+      "answer": {
+        "value": true
+      },
+      "points": 2,
+      "solution_steps": [
+        "On calcule le prix d'un kilogramme dans chaque cas.",
+        "Barquette : 11,40 ÷ 3 = 3,80, soit 3,80 € le kilo. Caisse : 26,60 ÷ 7 = 3,80, soit 3,80 € le kilo.",
+        "Le prix au kilo est le même : c'est **vrai**, pour ces deux achats le prix est proportionnel à la masse."
+      ],
+      "hint": "Calcule le prix d'un kilogramme dans chaque cas."
+    },
+    {
+      "key": "q4",
+      "skill_id": "D021",
+      "statement": "Chez Hugo, combien paie-t-on pour une commande de 3 kg de cerises, livraison comprise ?",
+      "type": "numerique",
+      "answer": {
+        "value": 23.5,
+        "unit": "€",
+        "accepted": [
+          "23 € 50",
+          "23 euros 50"
+        ]
+      },
+      "points": 2,
+      "solution_steps": [
+        "Les cerises : 3 × 6,50 = 19,50 €.",
+        "On ajoute la livraison, payée une seule fois par commande : 19,50 + 4 = 23,50.",
+        "La commande coûte **23,50 €**.",
+        "Attention : la livraison ne se paie pas pour chaque kilogramme."
+      ],
+      "hint": "N'oublie pas ce qui se paie une seule fois."
+    },
+    {
+      "key": "q5",
+      "skill_id": "E030",
+      "statement": "Chez Nadia, le prix payé est-il proportionnel à la masse de fraises ?",
+      "type": "qcm",
+      "choices": [
+        {
+          "key": "a",
+          "text": "Oui, car plus on achète de fraises, plus on paie.",
+          "misconception": "Payer plus quand on achète plus ne suffit pas : il faut que le prix d'un kilogramme reste le même."
+        },
+        {
+          "key": "b",
+          "text": "Oui, car 4 kg coûtent plus cher que 3 kg.",
+          "misconception": "C'est vrai que 4 kg coûtent plus cher, mais cela ne prouve pas la proportionnalité : il faut comparer le prix au kilo."
+        },
+        {
+          "key": "c",
+          "text": "Non : le prix d'un kilogramme n'est pas le même pour les deux clients.",
+          "misconception": null
+        },
+        {
+          "key": "d",
+          "text": "On ne peut pas savoir sans connaître le prix affiché pour 1 kg.",
+          "misconception": "On peut calculer le prix d'un kilogramme pour chaque client : 11,70 ÷ 3 et 14,80 ÷ 4."
+        }
+      ],
+      "answer": {
+        "value": "c"
+      },
+      "points": 3,
+      "solution_steps": [
+        "Pour 3 kg : 11,70 ÷ 3 = 3,90, soit 3,90 € le kilo.",
+        "Pour 4 kg : 14,80 ÷ 4 = 3,70, soit 3,70 € le kilo.",
+        "Le prix au kilo n'est pas le même : **non**, le prix payé chez Nadia n'est pas proportionnel à la masse."
+      ],
+      "hint": "Calcule le prix d'un kilogramme pour chacun des deux clients."
+    }
+  ],
+  "review_status": "brouillon",
+  "programme_ref": "Cycle 3, classe de 6e, La proportionnalité : « Identifier si une situation relève du « modèle » de la proportionnalité »"
+}

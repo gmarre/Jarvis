@@ -1,0 +1,123 @@
+{
+  "id": "SX-E027-01",
+  "skill_id": "E027",
+  "skill_ids": [
+    "E027",
+    "B008"
+  ],
+  "school_level": "CM1",
+  "title": "Le spectacle du club de théâtre",
+  "contexte": "Le club de théâtre de la ville compte 31 membres. Son spectacle de fin d'année aura lieu le samedi 14 juin, à 20 h, et durera 90 minutes.\n\nPour les costumes, la costumière sait qu'il faut 10 m de tissu pour coudre 4 costumes de pirate identiques. Le metteur en scène veut 16 costumes de pirate.\n\nPour le maquillage, il faut 5 pots de fard pour maquiller 6 comédiens. Le soir du spectacle, 30 comédiens monteront sur scène, et ils seront tous maquillés.\n\nLe club a payé 84 € pour 28 badges identiques, qu'il distribuera à l'entrée.\n\nDans la salle, les chaises sont rangées par rangées de 8 chaises. Le club attend 150 spectateurs.",
+  "image": null,
+  "duree_estimee_min": 15,
+  "questions": [
+    {
+      "key": "q1",
+      "skill_id": "E027",
+      "statement": "Pour savoir combien de tissu acheter, de quelles informations la costumière a-t-elle besoin ?",
+      "type": "qcm",
+      "choices": [
+        {
+          "key": "a",
+          "text": "10 m pour 4 costumes, et les 31 membres du club",
+          "misconception": "L'élève prend le nombre de membres. Or le metteur en scène veut 16 costumes, pas un par membre."
+        },
+        {
+          "key": "b",
+          "text": "10 m pour 4 costumes, et les 30 comédiens",
+          "misconception": "Les 30 comédiens sont ceux qu'on maquille. Le nombre de costumes de pirate voulus est 16."
+        },
+        {
+          "key": "c",
+          "text": "10 m pour 4 costumes, et les 16 costumes voulus",
+          "misconception": null
+        }
+      ],
+      "answer": {
+        "value": "c"
+      },
+      "points": 1,
+      "solution_steps": [
+        "La costumière cherche le tissu des costumes de pirate : elle a besoin de ce qu'il faut pour 4 costumes (10 m), et du nombre de costumes voulus (16).",
+        "Le nombre de membres (31) et le nombre de comédiens maquillés (30) ne servent pas ici."
+      ],
+      "hint": "Relis la phrase qui parle du tissu et celle qui parle des costumes voulus."
+    },
+    {
+      "key": "q2",
+      "skill_id": "E027",
+      "statement": "Combien de mètres de tissu faut-il pour coudre les 16 costumes de pirate ?",
+      "type": "numerique",
+      "answer": {
+        "value": 40,
+        "unit": "m"
+      },
+      "points": 2,
+      "solution_steps": [
+        "16 costumes, c'est 4 fois plus que 4 costumes, car 4 × 4 = 16.",
+        "Il faut donc 4 fois plus de tissu : 10 × 4 = 40.",
+        "Il faut **40 m** de tissu : « 4 fois plus de costumes, donc 4 fois plus de tissu ».",
+        "Attention : ajouter 12 m parce qu'on ajoute 12 costumes (10 + 12 = 22 m) est faux."
+      ],
+      "hint": "Combien de fois 4 costumes faut-il pour faire 16 costumes ?"
+    },
+    {
+      "key": "q3",
+      "skill_id": "E027",
+      "statement": "Le club veut commander 7 badges de plus, au même prix. Combien vont coûter ces 7 badges ?",
+      "type": "numerique",
+      "answer": {
+        "value": 21,
+        "unit": "€"
+      },
+      "points": 2,
+      "solution_steps": [
+        "7 badges, c'est 4 fois moins que 28 badges, car 7 × 4 = 28.",
+        "Ils coûtent donc 4 fois moins cher : 84 ÷ 4 = 21, car 4 × 21 = 84.",
+        "Les 7 badges coûtent **21 €**. Il est inutile de chercher le prix d'un seul badge."
+      ],
+      "hint": "Combien de fois 7 badges y a-t-il dans 28 badges ?"
+    },
+    {
+      "key": "q4",
+      "skill_id": "B008",
+      "statement": "Combien de rangées de chaises faut-il, au minimum, pour asseoir les 150 spectateurs ?",
+      "type": "numerique",
+      "answer": {
+        "value": 19,
+        "unit": "rangées"
+      },
+      "points": 2,
+      "solution_steps": [
+        "Chaque rangée compte 8 chaises : on pose la division euclidienne de 150 par 8.",
+        "150 = 8 × 18 + 6 : le quotient est 18 et le reste est 6.",
+        "18 rangées donnent 144 places : il manque 6 places. Il faut donc une rangée de plus.",
+        "Il faut au minimum **19 rangées**."
+      ],
+      "hint": "Pose la division euclidienne, puis regarde le reste."
+    },
+    {
+      "key": "q5",
+      "skill_id": "E027",
+      "statement": "Combien de pots de fard faut-il pour maquiller les 30 comédiens ?",
+      "type": "numerique",
+      "answer": {
+        "value": 25,
+        "unit": "pots",
+        "accepted": [
+          "25 pots de fard"
+        ]
+      },
+      "points": 3,
+      "solution_steps": [
+        "30 comédiens, c'est 5 fois plus que 6 comédiens, car 6 × 5 = 30.",
+        "Il faut donc 5 fois plus de pots : 5 × 5 = 25.",
+        "Il faut **25 pots** de fard : « 5 fois plus de comédiens, donc 5 fois plus de pots ».",
+        "On ne peut pas partager 5 pots en 6 parts égales de pots entiers : chercher ce qu'il faut pour 1 comédien n'aide pas ici."
+      ],
+      "hint": "Combien de fois 6 comédiens faut-il pour faire 30 comédiens ?"
+    }
+  ],
+  "review_status": "brouillon",
+  "programme_ref": "Cycle 3, Cours moyen première année, La proportionnalité : « des raisonnements fondés sur la propriété de la linéarité pour la multiplication »"
+}

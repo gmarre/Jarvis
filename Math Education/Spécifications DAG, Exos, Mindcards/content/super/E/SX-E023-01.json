@@ -1,0 +1,162 @@
+{
+  "id": "SX-E023-01",
+  "skill_id": "E023",
+  "skill_ids": [
+    "E023",
+    "A020",
+    "E034"
+  ],
+  "school_level": "5e",
+  "title": "L'exposition du club photo",
+  "contexte": "Le club photo du collège compte 14 membres. Pour son exposition de mai, il veut faire imprimer ses meilleures photos et compare trois boutiques. Pour chacune, il représente dans un repère le prix payé, en euros, en ordonnée, selon le nombre de photos imprimées, en abscisse.\n\nBoutique Flash : les points (20 ; 8), (30 ; 12) et (50 ; 20) sont alignés sur une droite qui passe par l'origine du repère.\n\nBoutique Pixel : les points (20 ; 9), (30 ; 11) et (50 ; 15) sont alignés sur une droite qui ne passe pas par l'origine du repère.\n\nBoutique Image : les points (20 ; 7), (30 ; 10) et (50 ; 19) ne sont pas alignés.",
+  "image": null,
+  "duree_estimee_min": 18,
+  "questions": [
+    {
+      "key": "q1",
+      "skill_id": "A020",
+      "statement": "Que représente le point (30 ; 11) de la boutique Pixel ?",
+      "type": "qcm",
+      "choices": [
+        {
+          "key": "a",
+          "text": "30 photos coûtent 11 €.",
+          "misconception": null
+        },
+        {
+          "key": "b",
+          "text": "11 photos coûtent 30 €.",
+          "misconception": "L'élève inverse l'abscisse et l'ordonnée : la première coordonnée est le nombre de photos, la seconde le prix."
+        },
+        {
+          "key": "c",
+          "text": "Une photo coûte 11 €, et on en imprime 30.",
+          "misconception": "11 € est le prix de toutes les photos ensemble, pas le prix d'une seule photo."
+        }
+      ],
+      "answer": {
+        "value": "a"
+      },
+      "points": 1,
+      "solution_steps": [
+        "Dans un point (abscisse ; ordonnée), on lit d'abord l'abscisse, puis l'ordonnée.",
+        "Ici, l'abscisse est le nombre de photos (30) et l'ordonnée le prix en euros (11) : 30 photos coûtent 11 € chez Pixel."
+      ],
+      "hint": "Qu'y a-t-il en abscisse, et qu'y a-t-il en ordonnée ?"
+    },
+    {
+      "key": "q2",
+      "skill_id": "E034",
+      "statement": "Chez Flash, par quel nombre multiplie-t-on le nombre de photos pour obtenir le prix, en euros ?",
+      "type": "numerique",
+      "answer": {
+        "value": 0.4,
+        "accepted": [
+          "0,40"
+        ]
+      },
+      "points": 2,
+      "solution_steps": [
+        "Chez Flash, 20 photos coûtent 8 € : on cherche le nombre qui, multiplié par 20, donne 8.",
+        "Diviser par 20, c'est diviser par 2 puis par 10 : 8 ÷ 2 = 4, puis 4 ÷ 10 = 0,4. Vérification : 30 × 0,4 = 12 et 50 × 0,4 = 20.",
+        "Le coefficient est **0,4** : une photo coûte 0,40 €."
+      ],
+      "hint": "Quel nombre, multiplié par 20, donne 8 ?"
+    },
+    {
+      "key": "q3",
+      "skill_id": "E023",
+      "statement": "Dans quelle boutique le prix payé est-il proportionnel au nombre de photos ?",
+      "type": "qcm",
+      "choices": [
+        {
+          "key": "a",
+          "text": "Pixel, car ses points sont alignés.",
+          "misconception": "Des points alignés ne suffisent pas : la droite doit aussi passer par l'origine du repère."
+        },
+        {
+          "key": "b",
+          "text": "Image, car le prix augmente avec le nombre de photos.",
+          "misconception": "Un prix qui augmente ne suffit pas : chez Image, les points ne sont même pas alignés."
+        },
+        {
+          "key": "c",
+          "text": "Les trois, car le prix augmente toujours avec le nombre de photos.",
+          "misconception": "Un prix qui augmente ne suffit pas : il faut des points alignés sur une droite qui passe par l'origine."
+        },
+        {
+          "key": "d",
+          "text": "Flash, car ses points sont alignés sur une droite qui passe par l'origine.",
+          "misconception": null
+        }
+      ],
+      "answer": {
+        "value": "d"
+      },
+      "points": 3,
+      "solution_steps": [
+        "Une situation est de proportionnalité quand ses points sont alignés sur une droite qui passe par l'origine du repère.",
+        "Chez Pixel, les points sont alignés, mais la droite ne passe pas par l'origine : non. Chez Image, les points ne sont pas alignés : non.",
+        "Seule la boutique **Flash** pratique un prix proportionnel au nombre de photos."
+      ],
+      "hint": "Rappelle-toi la condition pour qu'un graphique traduise une proportionnalité."
+    },
+    {
+      "key": "q4",
+      "skill_id": "E023",
+      "statement": "Chez Flash, quel est le prix de 80 photos ? C'est l'ordonnée du point d'abscisse 80 de la droite de Flash.",
+      "type": "numerique",
+      "answer": {
+        "value": 32,
+        "unit": "€"
+      },
+      "points": 2,
+      "solution_steps": [
+        "80 photos, c'est 4 fois plus que 20 photos, qui coûtent 8 €.",
+        "Le prix est donc 4 fois plus grand : 8 × 4 = 32. On peut aussi calculer 80 × 0,4 = 32.",
+        "80 photos coûtent **32 €** chez Flash : le point (80 ; 32) est sur la droite."
+      ],
+      "hint": "Cherche une relation entre 80 et l'une des abscisses connues."
+    },
+    {
+      "key": "q5",
+      "skill_id": "E023",
+      "statement": "La droite de la boutique Pixel coupe l'axe des ordonnées au point (0 ; 5). Que représentent ces 5 € ?",
+      "type": "qcm",
+      "choices": [
+        {
+          "key": "a",
+          "text": "Le prix d'une photo.",
+          "misconception": "Pour une photo, il faudrait lire l'ordonnée du point d'abscisse 1. Le point (0 ; 5) correspond à 0 photo."
+        },
+        {
+          "key": "b",
+          "text": "Une somme fixe, payée quel que soit le nombre de photos, qui empêche la proportionnalité.",
+          "misconception": null
+        },
+        {
+          "key": "c",
+          "text": "Le prix de 5 photos.",
+          "misconception": "L'élève lit l'ordonnée comme un nombre de photos. Or le nombre de photos est l'abscisse, ici 0."
+        },
+        {
+          "key": "d",
+          "text": "Rien : c'est une erreur du graphique.",
+          "misconception": "Ce n'est pas une erreur : les trois points de Pixel sont alignés avec (0 ; 5). Ce sont des frais fixes."
+        }
+      ],
+      "answer": {
+        "value": "b"
+      },
+      "points": 3,
+      "solution_steps": [
+        "Le point (0 ; 5) dit que, pour 0 photo, le prix serait de 5 €.",
+        "C'est une somme fixe, payée quel que soit le nombre de photos : 5 + 20 × 0,2 = 9, 5 + 30 × 0,2 = 11, 5 + 50 × 0,2 = 15.",
+        "Ces frais fixes expliquent que la droite ne passe pas par l'origine : le prix chez Pixel n'est pas proportionnel au nombre de photos."
+      ],
+      "hint": "Relis ce que représentent l'abscisse et l'ordonnée dans ce repère."
+    }
+  ],
+  "review_status": "brouillon",
+  "programme_ref": "Cycle 4, classe de 5e, Proportionnalité : « Reconnaitre graphiquement qu'un nuage de points est ou n'est pas associé à une situation de proportionnalité entre données discrètes. »"
+}

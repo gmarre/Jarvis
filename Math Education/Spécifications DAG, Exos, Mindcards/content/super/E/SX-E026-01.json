@@ -1,0 +1,142 @@
+{
+  "id": "SX-E026-01",
+  "skill_id": "E026",
+  "skill_ids": [
+    "E026",
+    "B043",
+    "B005"
+  ],
+  "school_level": "CM1",
+  "title": "La kermesse de l'école des Platanes",
+  "contexte": "Samedi, l'école des Platanes organise sa kermesse, de 10 heures à 17 heures. M. Diallo, le directeur, a 48 ans.\n\nAu stand du goûter, un gâteau entier coûte 24 €. Une part de gâteau coûte 8 fois moins cher qu'un gâteau entier.\n\nPour le goûter, on a posé une pile de 80 assiettes en carton, toutes identiques. Cette pile mesure 32 cm de haut.\n\nAu stand du manège, chaque enfant paie 8 € pour sa carte, une seule fois, puis 2 € pour chaque tour de manège. Ainsi, pour 7 tours de manège, un enfant paie 22 € en tout.",
+  "image": null,
+  "duree_estimee_min": 12,
+  "questions": [
+    {
+      "key": "q1",
+      "skill_id": "E026",
+      "statement": "Au stand du manège, quelle somme un enfant paie-t-il une seule fois, quel que soit le nombre de tours ?",
+      "type": "qcm",
+      "choices": [
+        {
+          "key": "a",
+          "text": "2 €, le prix d'un tour",
+          "misconception": "L'élève confond : les 2 € se paient à chaque tour de manège, pas une seule fois."
+        },
+        {
+          "key": "b",
+          "text": "8 €, le prix de la carte",
+          "misconception": null
+        },
+        {
+          "key": "c",
+          "text": "22 €, le prix de 7 tours",
+          "misconception": "22 € est le prix total pour 7 tours : il comprend la carte et les 7 tours."
+        }
+      ],
+      "answer": {
+        "value": "b"
+      },
+      "points": 1,
+      "solution_steps": [
+        "Le texte dit : « 8 € pour sa carte, une seule fois, puis 2 € pour chaque tour de manège ».",
+        "La carte, 8 €, se paie une seule fois. Les 2 € se paient à chaque tour."
+      ],
+      "hint": "Relis la phrase qui parle du manège."
+    },
+    {
+      "key": "q2",
+      "skill_id": "B043",
+      "statement": "Combien coûte une part de gâteau ?",
+      "type": "numerique",
+      "answer": {
+        "value": 3,
+        "unit": "€"
+      },
+      "points": 2,
+      "solution_steps": [
+        "Une part coûte 8 fois moins cher qu'un gâteau entier, qui coûte 24 €.",
+        "« 8 fois moins » se traduit par une division : 24 ÷ 8 = 3, car 8 × 3 = 24.",
+        "Une part de gâteau coûte **3 €**.",
+        "Attention : « 8 fois moins » n'est pas « 8 de moins » : 24 − 8 = 16 € serait faux."
+      ],
+      "hint": "Quelle opération traduit « fois moins » ?"
+    },
+    {
+      "key": "q3",
+      "skill_id": "E026",
+      "statement": "Lina prend 4 fois moins d'assiettes que la pile entière, et elle les empile. Vrai ou faux : sa pile mesure 8 cm de haut.",
+      "type": "vrai_faux",
+      "answer": {
+        "value": true
+      },
+      "points": 2,
+      "solution_steps": [
+        "Toutes les assiettes sont identiques : chaque assiette ajoute la même épaisseur à la pile.",
+        "Lina prend 4 fois moins d'assiettes : 80 ÷ 4 = 20 assiettes.",
+        "Sa pile est donc 4 fois moins haute : 32 ÷ 4 = 8, soit 8 cm.",
+        "C'est **vrai** : 4 fois moins d'assiettes identiques, donc une pile 4 fois moins haute."
+      ],
+      "hint": "Les assiettes ont-elles toutes la même épaisseur ?"
+    },
+    {
+      "key": "q4",
+      "skill_id": "B005",
+      "statement": "Combien un enfant paie-t-il en tout pour 14 tours de manège ?",
+      "type": "numerique",
+      "answer": {
+        "value": 36,
+        "unit": "€"
+      },
+      "points": 2,
+      "solution_steps": [
+        "L'enfant paie sa carte une seule fois : 8 €.",
+        "Il paie 2 € pour chacun des 14 tours : 14 × 2 = 28 €.",
+        "En tout : 8 + 28 = 36. L'enfant paie **36 €**.",
+        "Attention : 2 × 22 = 44 € compterait la carte deux fois."
+      ],
+      "hint": "Que paie-t-on une seule fois, et que paie-t-on à chaque tour ?"
+    },
+    {
+      "key": "q5",
+      "skill_id": "E026",
+      "statement": "Pour 7 tours de manège, un enfant paie 22 €. S'il fait deux fois plus de tours, paie-t-il deux fois plus ?",
+      "type": "qcm",
+      "choices": [
+        {
+          "key": "a",
+          "text": "Oui : deux fois plus de tours, donc deux fois plus cher.",
+          "misconception": "L'élève croit que tout est proportionnel. Mais la carte se paie une seule fois : elle ne double pas."
+        },
+        {
+          "key": "b",
+          "text": "Oui, car chaque tour coûte toujours 2 €.",
+          "misconception": "Chaque tour coûte bien 2 €, mais les 8 € de la carte s'ajoutent une seule fois : le prix total ne double pas."
+        },
+        {
+          "key": "c",
+          "text": "Non : la carte se paie une seule fois, elle ne double pas quand le nombre de tours double.",
+          "misconception": null
+        },
+        {
+          "key": "d",
+          "text": "Non, car plus on fait de tours, moins on paie.",
+          "misconception": "Le prix total augmente quand on fait plus de tours. Il ne double pas, mais il ne baisse pas."
+        }
+      ],
+      "answer": {
+        "value": "c"
+      },
+      "points": 3,
+      "solution_steps": [
+        "Deux fois plus de tours que 7 tours, c'est 14 tours.",
+        "Pour 14 tours : 8 € pour la carte et 14 × 2 = 28 € de tours, soit 36 € en tout.",
+        "Deux fois 22 €, ce serait 22 × 2 = 44 €. Or 36 € n'est pas 44 €.",
+        "**Non** : la carte se paie une seule fois, elle ne double pas. Le prix payé n'est pas proportionnel au nombre de tours."
+      ],
+      "hint": "Calcule le prix pour deux fois plus de tours, puis compare-le au double de 22 €."
+    }
+  ],
+  "review_status": "brouillon",
+  "programme_ref": "Cycle 3, Cours moyen première année, La proportionnalité : « Identifier une situation de proportionnalité »"
+}

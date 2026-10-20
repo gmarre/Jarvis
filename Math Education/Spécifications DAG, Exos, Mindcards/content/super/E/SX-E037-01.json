@@ -1,0 +1,127 @@
+{
+  "id": "SX-E037-01",
+  "skill_id": "E037",
+  "skill_ids": [
+    "E037",
+    "D024"
+  ],
+  "school_level": "5e",
+  "title": "La sortie au parc d'attractions",
+  "contexte": "Le mardi 12 juin, les 26 élèves de la 5e C partent au parc d'attractions. Le car quitte le collège à 8 h.\n\nLe billet d'entrée coûte 38 € par élève. Le foyer du collège paie 35 % du prix de chaque billet.\n\nLa location du car coûte 640 €, mais le transporteur accorde au collège une remise de 15 %.\n\nLe repas de midi coûte 4,75 € par élève.\n\nPour aider à financer la sortie, la classe a organisé une vente de gâteaux. Elle espérait récolter 250 €, et elle a récolté 110 % de cet objectif.",
+  "image": null,
+  "duree_estimee_min": 18,
+  "questions": [
+    {
+      "key": "q1",
+      "skill_id": "E037",
+      "statement": "Sur quel montant faut-il calculer la remise du transporteur ?",
+      "type": "qcm",
+      "choices": [
+        {
+          "key": "a",
+          "text": "38 €, le prix d'un billet",
+          "misconception": "Le pourcentage du billet (35 %) est payé par le foyer : la remise du transporteur porte sur la location du car."
+        },
+        {
+          "key": "b",
+          "text": "250 €, l'objectif de la vente",
+          "misconception": "250 € est l'objectif de la vente de gâteaux : il ne concerne pas le transporteur."
+        },
+        {
+          "key": "c",
+          "text": "640 €, la location du car",
+          "misconception": null
+        }
+      ],
+      "answer": {
+        "value": "c"
+      },
+      "points": 1,
+      "solution_steps": [
+        "La remise de 15 % est accordée sur la location du car, qui coûte 640 €.",
+        "Le prix d'un billet (38 €) et l'objectif de la vente (250 €) concernent d'autres pourcentages."
+      ],
+      "hint": "Relis la phrase qui parle du transporteur."
+    },
+    {
+      "key": "q2",
+      "skill_id": "E037",
+      "statement": "Quelle somme la vente de gâteaux a-t-elle rapportée ?",
+      "type": "numerique",
+      "answer": {
+        "value": 275,
+        "unit": "€"
+      },
+      "points": 2,
+      "solution_steps": [
+        "110 %, c'est 100 % et 10 %.",
+        "100 % de 250 €, c'est 250 € ; 10 % de 250 €, c'est 250 ÷ 10 = 25 €.",
+        "110 % de 250 €, c'est 250 + 25 = 275. La vente a rapporté **275 €**, plus que l'objectif."
+      ],
+      "hint": "110 %, c'est 100 % et combien ?"
+    },
+    {
+      "key": "q3",
+      "skill_id": "D024",
+      "statement": "Combien coûtent les repas de midi de toute la classe ?",
+      "type": "numerique",
+      "answer": {
+        "value": 123.5,
+        "unit": "€",
+        "accepted": [
+          "123 € 50",
+          "123 euros 50"
+        ]
+      },
+      "points": 2,
+      "solution_steps": [
+        "On calcule 26 × 4,75 : on pose 26 × 475, puis on place la virgule.",
+        "26 × 475 = 12 350. Le facteur 4,75 a deux chiffres après la virgule : 26 × 4,75 = 123,50.",
+        "Les repas coûtent **123,50 €**. Ordre de grandeur : 26 × 5 = 130, c'est cohérent."
+      ],
+      "hint": "Pose la multiplication, puis place la virgule."
+    },
+    {
+      "key": "q4",
+      "skill_id": "E037",
+      "statement": "Quelle somme le foyer paie-t-il pour le billet d'un élève ?",
+      "type": "numerique",
+      "answer": {
+        "value": 13.3,
+        "unit": "€",
+        "accepted": [
+          "13 € 30",
+          "13 euros 30"
+        ]
+      },
+      "points": 3,
+      "solution_steps": [
+        "35 %, c'est 3 fois 10 %, plus 5 %, la moitié de 10 %.",
+        "10 % de 38 €, c'est 38 ÷ 10 = 3,80 €. Donc 30 %, c'est 3,80 × 3 = 11,40 €.",
+        "5 %, c'est la moitié de 10 % : 3,80 ÷ 2 = 1,90 €.",
+        "35 % de 38 €, c'est 11,40 + 1,90 = 13,30. Le foyer paie **13,30 €** par billet."
+      ],
+      "hint": "Commence par calculer 10 % du prix du billet."
+    },
+    {
+      "key": "q5",
+      "skill_id": "E037",
+      "statement": "Après la remise, combien le collège paie-t-il pour la location du car ?",
+      "type": "numerique",
+      "answer": {
+        "value": 544,
+        "unit": "€"
+      },
+      "points": 3,
+      "solution_steps": [
+        "15 %, c'est 10 % plus 5 %, la moitié de 10 %.",
+        "10 % de 640 €, c'est 64 € ; 5 %, c'est 64 ÷ 2 = 32 €. La remise vaut 64 + 32 = 96 €.",
+        "Le collège paie 640 − 96 = 544. La location coûte **544 €** après la remise.",
+        "Attention : 96 € est la remise, pas le prix payé."
+      ],
+      "hint": "Calcule d'abord la remise, puis retire-la du prix."
+    }
+  ],
+  "review_status": "brouillon",
+  "programme_ref": "Cycle 4, classe de 5e, Nombres rationnels, Automatismes : « Prendre 1 %, 10 % ou 50 % d'un nombre, en lien avec la proportionnalité. »"
+}

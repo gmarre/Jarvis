@@ -1,0 +1,131 @@
+{
+  "id": "SX-E029-01",
+  "skill_id": "E029",
+  "skill_ids": [
+    "E029",
+    "D017"
+  ],
+  "school_level": "CM2",
+  "title": "La semaine à la montagne",
+  "contexte": "La classe de CM2 de l'école Pasteur, 26 élèves, part une semaine à la montagne. Le car quitte l'école à 7 h 20.\n\nAu magasin de location, toutes les paires de skis ont le même prix : 6 paires de skis coûtent 324 € pour la semaine.\n\nAu chalet, la cuisinière prépare du chocolat chaud. Pour 8 bols, elle utilise 6 cuillerées de cacao. Ce soir, 20 élèves ont demandé un bol de chocolat.\n\nÀ la boutique du village, Jules a 20 €. Il achète un livre à 7,85 € et un porte-clés à 4,50 €.",
+  "image": null,
+  "duree_estimee_min": 15,
+  "questions": [
+    {
+      "key": "q1",
+      "skill_id": "E029",
+      "statement": "Que dit le texte sur le prix des skis ?",
+      "type": "qcm",
+      "choices": [
+        {
+          "key": "a",
+          "text": "Chaque paire de skis coûte 324 €.",
+          "misconception": "L'élève lit trop vite : 324 € est le prix de 6 paires ensemble, pas d'une seule paire."
+        },
+        {
+          "key": "b",
+          "text": "6 paires de skis coûtent 324 € en tout, pour la semaine.",
+          "misconception": null
+        },
+        {
+          "key": "c",
+          "text": "6 paires de skis coûtent 324 € par jour.",
+          "misconception": "Le texte dit « pour la semaine » : 324 € est le prix de la semaine entière."
+        }
+      ],
+      "answer": {
+        "value": "b"
+      },
+      "points": 1,
+      "solution_steps": [
+        "Le texte dit : « 6 paires de skis coûtent 324 € pour la semaine ».",
+        "324 € est donc le prix de 6 paires ensemble, pour toute la semaine."
+      ],
+      "hint": "Relis la phrase qui parle du magasin de location."
+    },
+    {
+      "key": "q2",
+      "skill_id": "E029",
+      "statement": "Combien coûte la location de 8 paires de skis pour la semaine ?",
+      "type": "numerique",
+      "answer": {
+        "value": 432,
+        "unit": "€"
+      },
+      "points": 2,
+      "solution_steps": [
+        "On ne passe pas de 6 paires à 8 paires par un nombre entier de fois : on s'arrête d'abord à 2 paires.",
+        "2 paires, c'est 3 fois moins que 6 paires : 324 ÷ 3 = 108 €.",
+        "8 paires, c'est 4 fois plus que 2 paires : 108 × 4 = 432 €.",
+        "8 paires coûtent **432 €**. Autre chemin : 8 paires, c'est 6 paires et 2 paires, et 324 + 108 = 432."
+      ],
+      "hint": "Cherche d'abord le prix de 2 paires."
+    },
+    {
+      "key": "q3",
+      "skill_id": "E029",
+      "statement": "Combien de cuillerées de cacao faut-il pour préparer les 20 bols demandés ce soir ?",
+      "type": "numerique",
+      "answer": {
+        "value": 15,
+        "unit": "cuillerées",
+        "accepted": [
+          "15 cuillères",
+          "15 cuilleres"
+        ]
+      },
+      "points": 2,
+      "solution_steps": [
+        "On ne passe pas de 8 bols à 20 bols par un nombre entier de fois : on s'arrête d'abord à 4 bols.",
+        "4 bols, c'est 2 fois moins que 8 bols : 6 ÷ 2 = 3 cuillerées.",
+        "20 bols, c'est 5 fois plus que 4 bols : 3 × 5 = 15 cuillerées.",
+        "Il faut **15 cuillerées** de cacao. Autre chemin : 20 bols, c'est 8 bols, encore 8 bols et 4 bols, et 6 + 6 + 3 = 15."
+      ],
+      "hint": "Cherche d'abord ce qu'il faut pour 4 bols."
+    },
+    {
+      "key": "q4",
+      "skill_id": "D017",
+      "statement": "Combien d'argent reste-t-il à Jules après ses achats ?",
+      "type": "numerique",
+      "answer": {
+        "value": 7.65,
+        "unit": "€",
+        "accepted": [
+          "7 € 65",
+          "7 euros 65"
+        ]
+      },
+      "points": 2,
+      "solution_steps": [
+        "Prix des deux achats : 7,85 + 4,50 = 12,35 €.",
+        "Il reste : 20 − 12,35 = 7,65.",
+        "Il reste **7,65 €** à Jules. Vérification : 7,65 + 12,35 = 20."
+      ],
+      "hint": "Calcule d'abord le prix total des deux achats."
+    },
+    {
+      "key": "q5",
+      "skill_id": "E029",
+      "statement": "Avec 756 €, combien de paires de skis peut-on louer pour la semaine, en dépensant exactement cette somme ?",
+      "type": "numerique",
+      "answer": {
+        "value": 14,
+        "unit": "paires",
+        "accepted": [
+          "14 paires de skis"
+        ]
+      },
+      "points": 3,
+      "solution_steps": [
+        "2 paires coûtent 3 fois moins que 6 paires : 324 ÷ 3 = 108 €.",
+        "On cherche combien de fois 108 € il y a dans 756 € : 108, 216, 324, 432, 540, 648, 756. Cela fait 7 fois.",
+        "On peut donc louer 7 fois 2 paires : 7 × 2 = 14 paires.",
+        "On peut louer **14 paires**. Vérification : 756 €, c'est 324 + 324 + 108, soit 6 paires, 6 paires et 2 paires."
+      ],
+      "hint": "Combien coûtent 2 paires ? Combien de fois cette somme y a-t-il dans 756 € ?"
+    }
+  ],
+  "review_status": "brouillon",
+  "programme_ref": "Cycle 3, Cours moyen deuxième année, La proportionnalité : « les savoir-faire développés se consolident et s'enrichissent à travers la résolution de problèmes nécessitant plusieurs étapes »"
+}

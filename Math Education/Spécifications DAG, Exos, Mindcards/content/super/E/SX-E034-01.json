@@ -1,0 +1,134 @@
+{
+  "id": "SX-E034-01",
+  "skill_id": "E034",
+  "skill_ids": [
+    "E034",
+    "C032",
+    "E006",
+    "D006"
+  ],
+  "school_level": "5e",
+  "title": "Lina repeint sa chambre",
+  "contexte": "Pendant les vacances de printemps, Lina, 12 ans, repeint sa chambre avec son père.\n\nLa peinture choisie est vendue en pots de 3 L, à 38 € le pot. Sur le pot, on lit : « 3 L de peinture couvrent 20 m² de mur. » L'aire couverte est proportionnelle au volume de peinture utilisé.\n\nLes murs à peindre ont une aire totale de 30 m² ; la porte et la fenêtre ne sont pas peintes.\n\nPour finir, il faut poser 6,5 m de plinthes en bois, vendues 2,40 € le mètre.\n\nSur le plan de l'appartement, 1 cm représente 25 cm en réalité, et la chambre y mesure 14 cm de long.",
+  "image": null,
+  "duree_estimee_min": 18,
+  "questions": [
+    {
+      "key": "q1",
+      "skill_id": "E034",
+      "statement": "Quelle information ne sert pas pour calculer le volume de peinture nécessaire ?",
+      "type": "qcm",
+      "choices": [
+        {
+          "key": "a",
+          "text": "3 L de peinture couvrent 20 m²",
+          "misconception": "Cette information est indispensable : elle relie le volume de peinture à l'aire couverte."
+        },
+        {
+          "key": "b",
+          "text": "Les murs ont une aire de 30 m²",
+          "misconception": "Cette information est indispensable : c'est l'aire qu'il faut couvrir."
+        },
+        {
+          "key": "c",
+          "text": "Un pot coûte 38 €",
+          "misconception": null
+        }
+      ],
+      "answer": {
+        "value": "c"
+      },
+      "points": 1,
+      "solution_steps": [
+        "Pour le volume de peinture, il faut savoir ce que couvrent 3 L (20 m²) et l'aire des murs à peindre (30 m²).",
+        "Le prix d'un pot ne dit rien sur la quantité de peinture nécessaire."
+      ],
+      "hint": null
+    },
+    {
+      "key": "q2",
+      "skill_id": "C032",
+      "statement": "Par quel nombre multiplie-t-on un volume de peinture, en litres, pour obtenir l'aire couverte, en m² ? Écris-le sous la forme numérateur/dénominateur.",
+      "type": "texte",
+      "answer": {
+        "value": "20/3",
+        "accepted": [
+          "40/6",
+          "60/9",
+          "80/12"
+        ]
+      },
+      "points": 2,
+      "solution_steps": [
+        "Le coefficient est le nombre qui, multiplié par 3, donne 20 : c'est le quotient $20 \\div 3$.",
+        "La division de 20 par 3 ne s'arrête pas : le quotient exact s'écrit $\\frac{20}{3}$.",
+        "Le coefficient de proportionnalité est $\\frac{20}{3}$. Vérification : $3 \\times \\frac{20}{3} = \\frac{60}{3} = 20$."
+      ],
+      "hint": "Cherche le nombre qui, multiplié par 3, donne 20."
+    },
+    {
+      "key": "q3",
+      "skill_id": "E006",
+      "statement": "Quelle est la longueur réelle de la chambre, en mètres ?",
+      "type": "numerique",
+      "answer": {
+        "value": 3.5,
+        "unit": "m",
+        "accepted": [
+          "3 m 50",
+          "3 m 50 cm",
+          "3m50",
+          "350 cm"
+        ]
+      },
+      "points": 2,
+      "solution_steps": [
+        "1 cm sur le plan représente 25 cm en réalité : 14 cm représentent 14 × 25 = 350 cm.",
+        "350 cm = 3,50 m, car 1 m = 100 cm.",
+        "La chambre mesure **3,5 m** de long."
+      ],
+      "hint": "Calcule d'abord la longueur réelle en centimètres."
+    },
+    {
+      "key": "q4",
+      "skill_id": "D006",
+      "statement": "Combien coûtent les plinthes ?",
+      "type": "numerique",
+      "answer": {
+        "value": 15.6,
+        "unit": "€",
+        "accepted": [
+          "15 € 60",
+          "15 euros 60"
+        ]
+      },
+      "points": 2,
+      "solution_steps": [
+        "On calcule 6,5 × 2,40. Ordre de grandeur : 7 × 2 = 14.",
+        "On calcule 65 × 240 = 15 600, puis on place la virgule : 6,5 a un chiffre après la virgule et 2,40 en a deux, soit trois en tout. 6,5 × 2,40 = 15,600.",
+        "Les plinthes coûtent **15,60 €**, proche de l'ordre de grandeur 14."
+      ],
+      "hint": "Fais d'abord un ordre de grandeur, puis calcule le produit de deux décimaux."
+    },
+    {
+      "key": "q5",
+      "skill_id": "E034",
+      "statement": "Quel volume de peinture faut-il pour couvrir les murs de la chambre ?",
+      "type": "numerique",
+      "answer": {
+        "value": 4.5,
+        "unit": "L"
+      },
+      "points": 3,
+      "solution_steps": [
+        "Pour passer de l'aire (en m²) au volume (en L), on multiplie par le coefficient $\\frac{3}{20}$, car 20 m² demandent 3 L.",
+        "$30 \\times \\frac{3}{20} = \\frac{90}{20} = \\frac{9}{2} = 4{,}5$.",
+        "Il faut **4,5 L** de peinture.",
+        "Autre chemin : 30 m², c'est 20 m² et 10 m², la moitié de 20 m². Il faut 3 L et 1,5 L, soit 4,5 L."
+      ],
+      "hint": "Combien de litres faut-il pour 20 m² ? Et pour la moitié de 20 m² ?"
+    }
+  ],
+  "review_status": "brouillon",
+  "programme_ref": "Cycle 4, classe de 5e, Proportionnalité : « Utiliser un coefficient de proportionnalité dans des contextes concrets (prix unitaire, vitesse moyenne, échelle, etc.). »"
+}

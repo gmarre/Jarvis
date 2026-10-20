@@ -1,0 +1,122 @@
+{
+  "id": "SX-E003-01",
+  "skill_id": "E003",
+  "skill_ids": [
+    "E003",
+    "D024"
+  ],
+  "school_level": "6e",
+  "title": "Le jus de pommes de la ferme",
+  "contexte": "La classe de 6e B, 27 élèves, visite la ferme des Tilleuls. Le fermier y presse des pommes pour faire du jus, avec un pressoir acheté en 1998. Le volume de jus obtenu est proportionnel à la masse de pommes pressées.\n\nLe fermier a commencé un tableau de proportionnalité. Il y manque trois valeurs, notées **A**, **B** et **C** :\n\nMasse de pommes (kg) : 20 ; 30 ; 50 ; 10 ; 70\nVolume de jus (L) : 14 ; 21 ; **A** ; **B** ; **C**\n\nÀ la fin de la visite, la classe achète 15 bouteilles de jus d'un litre, vendues 2,30 € la bouteille.",
+  "image": null,
+  "duree_estimee_min": 15,
+  "questions": [
+    {
+      "key": "q1",
+      "skill_id": "E003",
+      "statement": "Dans le tableau du fermier, que représente le nombre 21 ?",
+      "type": "qcm",
+      "choices": [
+        {
+          "key": "a",
+          "text": "Une masse de 21 kg de pommes",
+          "misconception": "L'élève lit la mauvaise ligne : 21 est sur la ligne du volume de jus, pas sur celle des masses."
+        },
+        {
+          "key": "b",
+          "text": "Le volume de jus, en litres, obtenu avec 30 kg de pommes",
+          "misconception": null
+        },
+        {
+          "key": "c",
+          "text": "Le prix d'un litre de jus, en euros",
+          "misconception": "Le tableau ne parle pas de prix : sa seconde ligne donne des volumes de jus, en litres."
+        }
+      ],
+      "answer": {
+        "value": "b"
+      },
+      "points": 1,
+      "solution_steps": [
+        "Le nombre 21 est sur la ligne « Volume de jus (L) », dans la colonne de 30 kg.",
+        "Il représente donc le volume de jus, en litres, obtenu avec 30 kg de pommes."
+      ],
+      "hint": "Regarde sur quelle ligne et dans quelle colonne se trouve ce nombre."
+    },
+    {
+      "key": "q2",
+      "skill_id": "E003",
+      "statement": "Quel volume de jus faut-il écrire à la place de **A** ?",
+      "type": "numerique",
+      "answer": {
+        "value": 35,
+        "unit": "L"
+      },
+      "points": 2,
+      "solution_steps": [
+        "50 kg, c'est 20 kg et 30 kg : 20 + 30 = 50.",
+        "On additionne donc les volumes de ces deux colonnes : 14 + 21 = 35.",
+        "**A** vaut **35 L**."
+      ],
+      "hint": "Peux-tu obtenir 50 kg avec deux colonnes déjà remplies ?"
+    },
+    {
+      "key": "q3",
+      "skill_id": "E003",
+      "statement": "Quel volume de jus faut-il écrire à la place de **B** ?",
+      "type": "numerique",
+      "answer": {
+        "value": 7,
+        "unit": "L"
+      },
+      "points": 2,
+      "solution_steps": [
+        "10 kg, c'est la moitié de 20 kg.",
+        "Le volume de jus est donc la moitié de 14 L : 14 ÷ 2 = 7.",
+        "**B** vaut **7 L**."
+      ],
+      "hint": "Quelle relation y a-t-il entre 10 kg et 20 kg ?"
+    },
+    {
+      "key": "q4",
+      "skill_id": "D024",
+      "statement": "Combien la classe paie-t-elle pour ses 15 bouteilles de jus ?",
+      "type": "numerique",
+      "answer": {
+        "value": 34.5,
+        "unit": "€",
+        "accepted": [
+          "34 € 50",
+          "34 euros 50"
+        ]
+      },
+      "points": 2,
+      "solution_steps": [
+        "On calcule 15 × 2,30 : on pose 15 × 230, puis on place la virgule.",
+        "15 × 230 = 3 450. Le facteur 2,30 a deux chiffres après la virgule : 15 × 2,30 = 34,50.",
+        "La classe paie **34,50 €**."
+      ],
+      "hint": "Pose la multiplication, puis place la virgule."
+    },
+    {
+      "key": "q5",
+      "skill_id": "E003",
+      "statement": "Quel volume de jus faut-il écrire à la place de **C** ?",
+      "type": "numerique",
+      "answer": {
+        "value": 49,
+        "unit": "L"
+      },
+      "points": 3,
+      "solution_steps": [
+        "70 kg, c'est 20 kg, encore 20 kg et 30 kg : 20 + 20 + 30 = 70.",
+        "On additionne donc les volumes correspondants : 14 + 14 + 21 = 49.",
+        "**C** vaut **49 L**.",
+        "Autre chemin : 70 kg, c'est 7 fois 10 kg, et 10 kg donnent la moitié de 14 L, soit 7 L ; 7 × 7 = 49."
+      ],
+      "hint": "Cherche comment obtenir 70 kg à partir des masses déjà accompagnées de leur volume."
+    }
+  ],
+  "review_status": "brouillon",
+  "programme_ref": "Cycle 3, classe de 6e, La proportionnalité : « La recherche de données manquantes dans un tableau s'appuie sur le sens de la proportionnalité »"
+}

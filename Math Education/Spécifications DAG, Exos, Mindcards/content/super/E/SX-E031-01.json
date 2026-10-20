@@ -1,0 +1,147 @@
+{
+  "id": "SX-E031-01",
+  "skill_id": "E031",
+  "skill_ids": [
+    "E031",
+    "D024"
+  ],
+  "school_level": "6e",
+  "title": "Le spectacle du club de danse",
+  "contexte": "Le club de danse de Mia compte 32 danseuses. Son spectacle de fin d'année a lieu le samedi 21 juin, à 20 h.\n\nPour les costumes, la costumière achète un tissu vendu au mètre : 9 m de ce tissu coûtent 21,60 €.\n\nPour le buffet d'après le spectacle, une recette de salade de riz pour 8 personnes demande 600 g de riz.\n\nLes places du spectacle sont vendues 8,50 € chacune, et 143 places ont été vendues. La recette servira à acheter de nouveaux miroirs pour la salle de danse.",
+  "image": null,
+  "duree_estimee_min": 15,
+  "questions": [
+    {
+      "key": "q1",
+      "skill_id": "E031",
+      "statement": "La costumière veut connaître le prix de 4 m de tissu. Quelle donnée du texte doit-elle utiliser ?",
+      "type": "qcm",
+      "choices": [
+        {
+          "key": "a",
+          "text": "9 m de tissu coûtent 21,60 €",
+          "misconception": null
+        },
+        {
+          "key": "b",
+          "text": "Une place coûte 8,50 €",
+          "misconception": "L'élève prend un prix au hasard : 8,50 € est le prix d'une place, pas celui du tissu."
+        },
+        {
+          "key": "c",
+          "text": "600 g de riz pour 8 personnes",
+          "misconception": "Cette donnée concerne la salade de riz du buffet, pas le tissu."
+        }
+      ],
+      "answer": {
+        "value": "a"
+      },
+      "points": 1,
+      "solution_steps": [
+        "Le prix du tissu se calcule à partir de ce que coûtent 9 m de ce tissu : 21,60 €.",
+        "Le prix d'une place et la recette de riz parlent d'autre chose."
+      ],
+      "hint": "Relis la phrase qui parle du tissu."
+    },
+    {
+      "key": "q2",
+      "skill_id": "E031",
+      "statement": "Combien coûtent 4 m de ce tissu ?",
+      "type": "numerique",
+      "answer": {
+        "value": 9.6,
+        "unit": "€",
+        "accepted": [
+          "9 € 60",
+          "9 euros 60"
+        ]
+      },
+      "points": 2,
+      "solution_steps": [
+        "On ne passe pas de 9 m à 4 m par un nombre entier de fois : on passe par l'unité.",
+        "Pour 1 m : 21,60 € ÷ 9 = 2,40 €.",
+        "Pour 4 m : 2,40 € × 4 = 9,60 €.",
+        "4 m de tissu coûtent **9,60 €**."
+      ],
+      "hint": "Cherche d'abord le prix d'un mètre."
+    },
+    {
+      "key": "q3",
+      "skill_id": "E031",
+      "statement": "Pour préparer la salade de riz pour 24 personnes, trois parents raisonnent. Quel raisonnement est faux ?",
+      "type": "qcm",
+      "choices": [
+        {
+          "key": "a",
+          "text": "24 personnes, c'est 3 fois plus que 8 personnes : il faut 3 fois plus de riz.",
+          "misconception": "Ce raisonnement est juste : c'est la linéarité multiplicative, bien adaptée ici puisque 24 = 3 × 8."
+        },
+        {
+          "key": "b",
+          "text": "On divise 600 g par 8 pour avoir la masse de riz pour 1 personne, puis on multiplie le résultat par 24.",
+          "misconception": "Ce raisonnement est juste : c'est le passage par l'unité. Il est plus long ici, mais il donne la bonne masse."
+        },
+        {
+          "key": "c",
+          "text": "24 personnes, c'est 16 personnes de plus que 8 : il faut 16 g de riz de plus.",
+          "misconception": null
+        }
+      ],
+      "answer": {
+        "value": "c"
+      },
+      "points": 2,
+      "solution_steps": [
+        "Le raisonnement a est juste : 24 = 3 × 8, donc il faut 3 fois plus de riz.",
+        "Le raisonnement b est juste : c'est le passage par l'unité.",
+        "Le raisonnement c est faux : en proportionnalité, on n'ajoute pas le même nombre aux deux grandeurs. Il faut en réalité 600 × 3 = 1 800 g de riz, et non 616 g."
+      ],
+      "hint": "Pour chaque raisonnement, demande-toi s'il donnerait la même masse que les autres."
+    },
+    {
+      "key": "q4",
+      "skill_id": "D024",
+      "statement": "Quelle somme la vente des places a-t-elle rapportée au club ?",
+      "type": "numerique",
+      "answer": {
+        "value": 1215.5,
+        "unit": "€",
+        "accepted": [
+          "1 215,50",
+          "1 215,50 €",
+          "1 215,5 €"
+        ]
+      },
+      "points": 2,
+      "solution_steps": [
+        "On calcule 143 × 8,50 : on pose 143 × 850, puis on place la virgule.",
+        "143 × 850 = 121 550. Le facteur 8,50 a deux chiffres après la virgule : 143 × 8,50 = 1 215,50.",
+        "La vente a rapporté **1 215,50 €**. Ordre de grandeur : 140 × 9 = 1 260, c'est cohérent."
+      ],
+      "hint": "Pose la multiplication, puis place la virgule."
+    },
+    {
+      "key": "q5",
+      "skill_id": "E031",
+      "statement": "Quelle masse de riz faut-il pour préparer la salade pour 10 personnes ?",
+      "type": "numerique",
+      "answer": {
+        "value": 750,
+        "unit": "g",
+        "accepted": [
+          "0,75 kg"
+        ]
+      },
+      "points": 3,
+      "solution_steps": [
+        "On ne passe pas de 8 personnes à 10 personnes par un nombre entier de fois : on passe par l'unité.",
+        "Pour 1 personne : 600 g ÷ 8 = 75 g.",
+        "Pour 10 personnes : 75 g × 10 = 750 g.",
+        "Il faut **750 g** de riz. Autre chemin : 2 personnes, c'est 4 fois moins que 8, soit 150 g ; 10 personnes, c'est 8 et 2 personnes, soit 600 + 150 = 750 g."
+      ],
+      "hint": "Cherche d'abord la masse de riz pour une personne."
+    }
+  ],
+  "review_status": "brouillon",
+  "programme_ref": "Cycle 3, classe de 6e, La proportionnalité : « Résoudre un problème de proportionnalité en choisissant une procédure adaptée : propriété de linéarité pour la multiplication ou l'addition, retour à l'unité »"
+}

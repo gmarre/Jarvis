@@ -1,0 +1,119 @@
+{
+  "id": "SX-E032-01",
+  "skill_id": "E032",
+  "skill_ids": [
+    "E032",
+    "D001"
+  ],
+  "school_level": "6e",
+  "title": "L'enquête du journal du collège",
+  "contexte": "Le journal du collège Victor-Hugo a mené une enquête sur le sport préféré des élèves de 6e. Le collège compte 540 élèves, mais seuls 80 élèves de 6e ont été interrogés, le mardi 3 mars, pendant la récréation de 10 h. Chaque élève interrogé a choisi un seul sport.\n\nVoici les résultats publiés :\nle football : 35 % des élèves interrogés ;\nla natation : un quart des élèves interrogés ;\nla danse : $\\frac{2}{10}$ des élèves interrogés ;\nle judo : $\\frac{15}{100}$ des élèves interrogés ;\nles autres sports : tous les autres élèves interrogés.",
+  "image": null,
+  "duree_estimee_min": 15,
+  "questions": [
+    {
+      "key": "q1",
+      "skill_id": "E032",
+      "statement": "Que signifie « 35 % des élèves interrogés ont choisi le football » ?",
+      "type": "qcm",
+      "choices": [
+        {
+          "key": "a",
+          "text": "35 élèves interrogés ont choisi le football.",
+          "misconception": "L'élève lit 35 % comme 35 élèves. Ce serait vrai seulement si 100 élèves avaient été interrogés : il y en a 80."
+        },
+        {
+          "key": "b",
+          "text": "35 des 540 élèves du collège ont choisi le football.",
+          "misconception": "L'élève prend le nombre d'élèves du collège : seuls les élèves interrogés comptent, et 35 % n'est pas un nombre d'élèves."
+        },
+        {
+          "key": "c",
+          "text": "Pour 100 élèves interrogés, 35 ont choisi le football, en proportion.",
+          "misconception": null
+        }
+      ],
+      "answer": {
+        "value": "c"
+      },
+      "points": 1,
+      "solution_steps": [
+        "35 % se lit « 35 pour cent » : 35 pour 100.",
+        "Cela veut dire que, sur 100 élèves interrogés, 35 ont choisi le football, en proportion. Or 80 élèves seulement ont été interrogés."
+      ],
+      "hint": "Que veut dire « pour cent » ?"
+    },
+    {
+      "key": "q2",
+      "skill_id": "D001",
+      "statement": "Écris la part des élèves interrogés qui ont choisi le judo sous la forme d'un nombre à virgule.",
+      "type": "texte",
+      "answer": {
+        "value": "0,15",
+        "accepted": []
+      },
+      "points": 2,
+      "solution_steps": [
+        "$\\frac{15}{100}$, ce sont 15 centièmes, c'est-à-dire 1 dixième et 5 centièmes.",
+        "Avec une virgule : 0,15. La part du judo est **0,15**."
+      ],
+      "hint": "Combien de centièmes y a-t-il dans cette fraction ?"
+    },
+    {
+      "key": "q3",
+      "skill_id": "E032",
+      "statement": "Écris 35 % sous la forme d'une fraction de dénominateur 100. Écris ta réponse sous la forme numérateur/dénominateur.",
+      "type": "texte",
+      "answer": {
+        "value": "35/100",
+        "accepted": []
+      },
+      "points": 2,
+      "solution_steps": [
+        "Le symbole % se lit « pour cent », c'est-à-dire « sur 100 ».",
+        "35 % = $\\frac{35}{100}$."
+      ],
+      "hint": "Que veut dire « pour cent » ?"
+    },
+    {
+      "key": "q4",
+      "skill_id": "E032",
+      "statement": "Vrai ou faux : 25 élèves interrogés ont choisi la natation.",
+      "type": "vrai_faux",
+      "answer": {
+        "value": false
+      },
+      "points": 2,
+      "solution_steps": [
+        "La natation a été choisie par un quart des élèves interrogés, c'est-à-dire 25 %.",
+        "Mais 80 élèves seulement ont été interrogés : un quart de 80, c'est 80 ÷ 4 = 20 élèves.",
+        "C'est **faux** : 25 % n'est pas 25 élèves, sauf si 100 élèves sont interrogés. Ici, 20 élèves ont choisi la natation."
+      ],
+      "hint": "Combien d'élèves ont été interrogés ?"
+    },
+    {
+      "key": "q5",
+      "skill_id": "E032",
+      "statement": "Quel pourcentage des élèves interrogés a choisi un autre sport que les quatre cités ?",
+      "type": "numerique",
+      "answer": {
+        "value": 5,
+        "unit": "%",
+        "accepted": [
+          "5 pour cent"
+        ]
+      },
+      "points": 3,
+      "solution_steps": [
+        "On écrit chaque part en pourcentage. Football : 35 %. Natation : un quart, soit 25 %.",
+        "Danse : $\\frac{2}{10} = \\frac{20}{100}$, soit 20 %. Judo : $\\frac{15}{100}$, soit 15 %.",
+        "Les quatre sports cités : 35 + 25 + 20 + 15 = 95, soit 95 %.",
+        "Tous les élèves interrogés font 100 % : 100 − 95 = 5. **5 %** des élèves interrogés ont choisi un autre sport.",
+        "Attention : $\\frac{2}{10}$ vaut 20 %, et non 2 %."
+      ],
+      "hint": "Écris chaque part en pourcentage, puis pense que tous les élèves interrogés font 100 %."
+    }
+  ],
+  "review_status": "brouillon",
+  "programme_ref": "Cycle 3, classe de 6e, Les nombres entiers et décimaux : « Associer et utiliser différentes écritures d'un nombre décimal : écriture à virgule, fraction, nombre mixte, pourcentage »"
+}

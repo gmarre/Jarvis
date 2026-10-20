@@ -1,0 +1,150 @@
+{
+  "id": "SX-E036-01",
+  "skill_id": "E036",
+  "skill_ids": [
+    "E036",
+    "C032"
+  ],
+  "school_level": "5e",
+  "title": "L'élection des délégués",
+  "contexte": "Le jeudi 2 octobre, à 10 h, les élèves de 5e du collège Jules-Ferry élisent leurs délégués. Chaque votant vote pour un seul candidat. Pour être élu dès le premier tour, un candidat doit obtenir plus de 50 % des voix des votants.\n\nEn 5e B, la classe compte 28 élèves, mais 1 élève est absent : il y a 27 votants. Léa obtient 6 voix, Tom 13 voix et Sofia 8 voix.\n\nEn 5e A, il y a 24 votants. Jules obtient 15 voix et Inès 9 voix.",
+  "image": null,
+  "duree_estimee_min": 18,
+  "questions": [
+    {
+      "key": "q1",
+      "skill_id": "E036",
+      "statement": "Dans la classe de Léa, sur quel nombre faut-il calculer le pourcentage des voix de chaque candidat ?",
+      "type": "qcm",
+      "choices": [
+        {
+          "key": "a",
+          "text": "28, le nombre d'élèves de la classe",
+          "misconception": "L'élève oublie l'absent : seuls les 27 votants se partagent les voix."
+        },
+        {
+          "key": "b",
+          "text": "100",
+          "misconception": "L'élève croit qu'on calcule toujours sur 100 : on calcule d'abord sur le nombre de votants, puis on ramène sur 100."
+        },
+        {
+          "key": "c",
+          "text": "27, le nombre de votants",
+          "misconception": null
+        }
+      ],
+      "answer": {
+        "value": "c"
+      },
+      "points": 1,
+      "solution_steps": [
+        "Les voix se partagent entre les votants : dans la classe de Léa, il y a 27 votants.",
+        "L'élève absent n'a pas voté : le tout est 27, et non 28."
+      ],
+      "hint": "Qui a voté ?"
+    },
+    {
+      "key": "q2",
+      "skill_id": "C032",
+      "statement": "Quelle fraction des voix de sa classe Tom a-t-il obtenue ? Écris-la sous la forme numérateur/dénominateur.",
+      "type": "texte",
+      "answer": {
+        "value": "13/27",
+        "accepted": [
+          "26/54",
+          "39/81"
+        ]
+      },
+      "points": 2,
+      "solution_steps": [
+        "Tom a obtenu 13 voix sur 27 votants.",
+        "Sa part des voix est le quotient $13 \\div 27$, qui s'écrit $\\frac{13}{27}$."
+      ],
+      "hint": "Quelle est la partie, et quel est le tout ?"
+    },
+    {
+      "key": "q3",
+      "skill_id": "E036",
+      "statement": "Quel pourcentage des voix de sa classe Léa a-t-elle obtenu ? Donne la valeur arrondie à l'unité.",
+      "type": "numerique",
+      "answer": {
+        "value": 22,
+        "unit": "%",
+        "accepted": [
+          "22 pour cent"
+        ]
+      },
+      "points": 3,
+      "solution_steps": [
+        "Léa a obtenu 6 voix sur 27 : la proportion est $\\frac{6}{27}$.",
+        "$6 = 2 \\times 3$ et $27 = 9 \\times 3$, donc $\\frac{6}{27} = \\frac{2 \\times 3}{9 \\times 3} = \\frac{2}{9}$.",
+        "On pose la division $2 \\div 9$ : elle ne s'arrête pas, on obtient 0,222… On arrondit au centième : 0,22.",
+        "On multiplie par 100 : $0{,}22 \\times 100 = 22$. Léa a obtenu environ **22 %** des voix.",
+        "Attention : calculer sur 28 élèves compterait l'absent."
+      ],
+      "hint": "Divise le nombre de voix par le nombre de votants, puis multiplie par 100."
+    },
+    {
+      "key": "q4",
+      "skill_id": "E036",
+      "statement": "Quel pourcentage des voix de sa classe Jules a-t-il obtenu ?",
+      "type": "numerique",
+      "answer": {
+        "value": 62.5,
+        "unit": "%",
+        "accepted": [
+          "62,5 pour cent"
+        ]
+      },
+      "points": 2,
+      "solution_steps": [
+        "Jules a obtenu 15 voix sur 24 votants : la proportion est $\\frac{15}{24}$.",
+        "$15 = 5 \\times 3$ et $24 = 8 \\times 3$, donc $\\frac{15}{24} = \\frac{5}{8}$.",
+        "On pose la division $5 \\div 8 = 0{,}625$, puis on multiplie par 100 : $0{,}625 \\times 100 = 62{,}5$.",
+        "Jules a obtenu **62,5 %** des voix."
+      ],
+      "hint": "Divise le nombre de voix par le nombre de votants, puis multiplie par 100."
+    },
+    {
+      "key": "q5",
+      "skill_id": "E036",
+      "statement": "Dans quelle classe un candidat est-il élu dès le premier tour ?",
+      "type": "qcm",
+      "choices": [
+        {
+          "key": "a",
+          "text": "En 5e B : Tom, qui a le plus de voix.",
+          "misconception": "Avoir le plus de voix ne suffit pas : il faut plus de 50 % des voix des votants. Tom a 13 voix sur 27, moins de la moitié."
+        },
+        {
+          "key": "b",
+          "text": "En 5e A : Jules, qui a plus de 50 % des voix des votants.",
+          "misconception": null
+        },
+        {
+          "key": "c",
+          "text": "Dans les deux classes.",
+          "misconception": "En 5e B, Tom a 13 voix sur 27 : la moitié de 27 voix, c'est 13,5 voix. Tom a moins de 50 % des voix, il n'est pas élu au premier tour."
+        },
+        {
+          "key": "d",
+          "text": "Dans aucune des deux classes.",
+          "misconception": "En 5e A, Jules a 15 voix sur 24 : c'est plus que la moitié, 12 voix. Il est élu dès le premier tour."
+        }
+      ],
+      "answer": {
+        "value": "b"
+      },
+      "points": 3,
+      "solution_steps": [
+        "Plus de 50 % des voix, c'est plus de la moitié des voix des votants.",
+        "En 5e B, la moitié de 27 voix, c'est 13,5 voix : Tom, en tête, n'en a que 13. Personne n'est élu au premier tour.",
+        "En 5e A, la moitié de 24 voix, c'est 12 voix : Jules en a 15, soit 62,5 %. Il est élu dès le premier tour.",
+        "Réponse : **en 5e A seulement**."
+      ],
+      "hint": "Compare les voix de chaque candidat en tête avec la moitié des voix des votants."
+    }
+  ],
+  "review_status": "brouillon",
+  "programme_ref": "Cycle 4, classe de 5e, Proportionnalité, Automatismes : « Calculer le pourcentage de voix de chaque candidat. »"
+}

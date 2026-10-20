@@ -1,0 +1,144 @@
+{
+  "id": "SX-E033-01",
+  "skill_id": "E033",
+  "skill_ids": [
+    "E033",
+    "C006"
+  ],
+  "school_level": "6e",
+  "title": "Le club de tir à l'arc",
+  "contexte": "Le club de tir à l'arc de Montval, créé en 1987, s'entraîne chaque mercredi pendant 1 h 30. Les cibles sont placées à 30 m des archers.\n\nMercredi, Chloé a tiré 25 flèches : 18 ont atteint la cible.\nMalo a tiré 50 flèches : 41 ont atteint la cible.\nSacha a tiré 20 flèches : 16 ont atteint la cible.\n\nPendant la semaine de stage, Inès a tiré 200 flèches, dont 154 ont atteint la cible.\n\nLe club compte 20 membres, dont 7 filles.",
+  "image": null,
+  "duree_estimee_min": 15,
+  "questions": [
+    {
+      "key": "q1",
+      "skill_id": "E033",
+      "statement": "Pour calculer le pourcentage des flèches de Chloé qui ont atteint la cible, quels nombres faut-il utiliser ?",
+      "type": "qcm",
+      "choices": [
+        {
+          "key": "a",
+          "text": "18 et 100",
+          "misconception": "L'élève croit qu'on calcule toujours sur 100 : or Chloé a tiré 25 flèches. On ramène sur 100 ensuite."
+        },
+        {
+          "key": "b",
+          "text": "18 et 25",
+          "misconception": null
+        },
+        {
+          "key": "c",
+          "text": "25 et 30",
+          "misconception": "30 m est la distance entre les archers et les cibles : elle ne dit rien du nombre de flèches."
+        }
+      ],
+      "answer": {
+        "value": "b"
+      },
+      "points": 1,
+      "solution_steps": [
+        "La proportion, c'est la partie sur le tout : 18 flèches dans la cible sur 25 flèches tirées.",
+        "On ramène ensuite cette proportion sur 100. La distance de tir (30 m) ne sert pas."
+      ],
+      "hint": "Quelle est la partie, et quel est le tout ?"
+    },
+    {
+      "key": "q2",
+      "skill_id": "C006",
+      "statement": "Écris la proportion des flèches d'Inès qui ont atteint la cible sous la forme d'une fraction de dénominateur 100. Écris ta réponse sous la forme numérateur/dénominateur.",
+      "type": "texte",
+      "answer": {
+        "value": "77/100",
+        "accepted": []
+      },
+      "points": 2,
+      "solution_steps": [
+        "La proportion est $\\frac{154}{200}$ : 154 flèches dans la cible sur 200 tirées.",
+        "200 = 100 × 2 : on divise le numérateur et le dénominateur par 2. $\\frac{154}{200} = \\frac{77}{100}$."
+      ],
+      "hint": "Par quel nombre faut-il diviser 200 pour obtenir 100 ?"
+    },
+    {
+      "key": "q3",
+      "skill_id": "E033",
+      "statement": "Quel pourcentage des flèches de Chloé a atteint la cible ?",
+      "type": "numerique",
+      "answer": {
+        "value": 72,
+        "unit": "%",
+        "accepted": [
+          "72 pour cent"
+        ]
+      },
+      "points": 2,
+      "solution_steps": [
+        "La proportion est $\\frac{18}{25}$.",
+        "25 × 4 = 100 : on multiplie le numérateur et le dénominateur par 4. $\\frac{18}{25} = \\frac{72}{100}$.",
+        "**72 %** des flèches de Chloé ont atteint la cible."
+      ],
+      "hint": "Par quel nombre faut-il multiplier 25 pour obtenir 100 ?"
+    },
+    {
+      "key": "q4",
+      "skill_id": "E033",
+      "statement": "Quel pourcentage des membres du club sont des filles ?",
+      "type": "numerique",
+      "answer": {
+        "value": 35,
+        "unit": "%",
+        "accepted": [
+          "35 pour cent"
+        ]
+      },
+      "points": 2,
+      "solution_steps": [
+        "La proportion est $\\frac{7}{20}$ : 7 filles sur 20 membres.",
+        "20 × 5 = 100 : $\\frac{7}{20} = \\frac{35}{100}$.",
+        "**35 %** des membres du club sont des filles."
+      ],
+      "hint": "Par quel nombre faut-il multiplier 20 pour obtenir 100 ?"
+    },
+    {
+      "key": "q5",
+      "skill_id": "E033",
+      "statement": "Sacha a manqué moins de flèches que Malo. Il affirme : « Mon pourcentage de flèches dans la cible est meilleur que celui de Malo. » A-t-il raison ?",
+      "type": "qcm",
+      "choices": [
+        {
+          "key": "a",
+          "text": "Oui : il a manqué moins de flèches que Malo.",
+          "misconception": "L'élève compare les flèches manquées. Mais Sacha a tiré 20 flèches et Malo 50 : il faut comparer les proportions."
+        },
+        {
+          "key": "b",
+          "text": "On ne peut pas savoir : ils n'ont pas tiré le même nombre de flèches.",
+          "misconception": "On peut comparer : on ramène chaque proportion sur 100, c'est le rôle du pourcentage."
+        },
+        {
+          "key": "c",
+          "text": "Oui : Sacha a 80 % de réussite et Malo 41 %.",
+          "misconception": "L'élève lit 41 sur 50 comme 41 %. Or 50 × 2 = 100 : 41 sur 50, c'est 82 sur 100, soit 82 %."
+        },
+        {
+          "key": "d",
+          "text": "Non : Sacha a 80 % de réussite et Malo 82 %.",
+          "misconception": null
+        }
+      ],
+      "answer": {
+        "value": "d"
+      },
+      "points": 3,
+      "solution_steps": [
+        "Sacha : $\\frac{16}{20} = \\frac{80}{100}$, soit 80 %.",
+        "Malo : $\\frac{41}{50} = \\frac{82}{100}$, soit 82 %.",
+        "82 % est plus que 80 % : Malo a le meilleur pourcentage. Sacha **n'a pas raison**.",
+        "On ne compare pas les flèches manquées : les deux archers n'ont pas tiré le même nombre de flèches."
+      ],
+      "hint": "Ramène chaque proportion sur 100 avant de comparer."
+    }
+  ],
+  "review_status": "brouillon",
+  "programme_ref": "Cycle 3, classe de 6e, Les fractions, Pourcentages : « Calculer une proportion (rapport entre une partie et le tout) et l'exprimer sous forme de pourcentage dans des cas simples »"
+}

@@ -1,0 +1,141 @@
+{
+  "id": "SX-E035-01",
+  "skill_id": "E035",
+  "skill_ids": [
+    "E035",
+    "D007"
+  ],
+  "school_level": "5e",
+  "title": "La location de vélos",
+  "contexte": "Cet été, la famille de Yanis part en vacances au bord de l'océan, à 600 km de chez elle. Sur place, elle veut louer des vélos et compare trois loueurs. Chaque loueur affiche le prix à payer pour un vélo, selon la durée de location. Le casque est prêté gratuitement.\n\nDurée de location (jours) : 1 ; 4 ; 7 ; 10.\nLoueur A, prix (€) : 11 ; 44 ; 77 ; 110.\nLoueur B, prix (€) : 20 ; 56 ; 92 ; 128.\nLoueur C, prix (€) : 13 ; 52 ; 87,50 ; 130.",
+  "image": null,
+  "duree_estimee_min": 15,
+  "questions": [
+    {
+      "key": "q1",
+      "skill_id": "E035",
+      "statement": "Combien coûte une location de 7 jours chez le loueur B ?",
+      "type": "qcm",
+      "choices": [
+        {
+          "key": "a",
+          "text": "77 €",
+          "misconception": "L'élève lit la ligne du loueur A au lieu de celle du loueur B."
+        },
+        {
+          "key": "b",
+          "text": "56 €",
+          "misconception": "L'élève lit la colonne de 4 jours au lieu de celle de 7 jours."
+        },
+        {
+          "key": "c",
+          "text": "92 €",
+          "misconception": null
+        }
+      ],
+      "answer": {
+        "value": "c"
+      },
+      "points": 1,
+      "solution_steps": [
+        "On lit la ligne du loueur B, dans la colonne de 7 jours : 92 €."
+      ],
+      "hint": "Repère la bonne ligne, puis la bonne colonne."
+    },
+    {
+      "key": "q2",
+      "skill_id": "D007",
+      "statement": "Chez le loueur C, quel est le prix payé divisé par la durée, pour 7 jours ?",
+      "type": "numerique",
+      "answer": {
+        "value": 12.5,
+        "unit": "€",
+        "accepted": [
+          "12 € 50",
+          "12,50 € par jour",
+          "12,5 € par jour"
+        ]
+      },
+      "points": 2,
+      "solution_steps": [
+        "Pour 7 jours, le loueur C affiche 87,50 € : on calcule 87,50 ÷ 7.",
+        "En 87 unités, il y a 12 fois 7, reste 3 unités, soit 30 dixièmes ; avec les 5 dixièmes, cela fait 35 dixièmes, où il y a exactement 5 fois 7.",
+        "Le quotient vaut 12,5 : cela fait **12,50 €** par jour."
+      ],
+      "hint": "Pose la division de 87,50 par 7."
+    },
+    {
+      "key": "q3",
+      "skill_id": "E035",
+      "statement": "Le tableau du loueur A est-il un tableau de proportionnalité ?",
+      "type": "qcm",
+      "choices": [
+        {
+          "key": "a",
+          "text": "Oui, car le prix augmente quand la durée augmente.",
+          "misconception": "Un prix qui augmente avec la durée ne suffit pas : il faut que le quotient prix ÷ durée soit le même dans toutes les colonnes."
+        },
+        {
+          "key": "b",
+          "text": "Non, car 77 € n'est pas le double de 44 €.",
+          "misconception": "7 jours n'est pas le double de 4 jours : on ne peut pas attendre un prix double. Il faut comparer les quotients prix ÷ durée."
+        },
+        {
+          "key": "c",
+          "text": "Oui : dans chaque colonne, le prix divisé par la durée vaut 11.",
+          "misconception": null
+        },
+        {
+          "key": "d",
+          "text": "On ne peut pas savoir sans le prix pour 2 jours.",
+          "misconception": "Les colonnes du tableau suffisent : si tous les quotients prix ÷ durée sont égaux, c'est un tableau de proportionnalité."
+        }
+      ],
+      "answer": {
+        "value": "c"
+      },
+      "points": 3,
+      "solution_steps": [
+        "On calcule le quotient prix ÷ durée de chaque colonne du loueur A.",
+        "$11 \\div 1 = 11$ ; $44 \\div 4 = 11$ ; $77 \\div 7 = 11$ ; $110 \\div 10 = 11$.",
+        "Les quotients sont tous égaux à 11 : **oui**, c'est un tableau de proportionnalité, de coefficient 11."
+      ],
+      "hint": "Calcule le prix divisé par la durée dans chaque colonne."
+    },
+    {
+      "key": "q4",
+      "skill_id": "E035",
+      "statement": "Vrai ou faux : le tableau du loueur B est un tableau de proportionnalité.",
+      "type": "vrai_faux",
+      "answer": {
+        "value": false
+      },
+      "points": 2,
+      "solution_steps": [
+        "Pour 1 jour : 20 ÷ 1 = 20. Pour 4 jours : 56 ÷ 4 = 14.",
+        "Les quotients ne sont pas égaux : une seule colonne différente suffit pour dire non.",
+        "C'est **faux** : le tableau du loueur B n'est pas un tableau de proportionnalité."
+      ],
+      "hint": "Calcule le prix divisé par la durée dans chaque colonne."
+    },
+    {
+      "key": "q5",
+      "skill_id": "E035",
+      "statement": "Chez le loueur C, le prix d'une des colonnes ne suit pas la même règle que les autres. Quel prix faudrait-il afficher dans cette colonne pour que le tableau soit un tableau de proportionnalité ?",
+      "type": "numerique",
+      "answer": {
+        "value": 91,
+        "unit": "€"
+      },
+      "points": 3,
+      "solution_steps": [
+        "Quotients prix ÷ durée du loueur C : 13 ÷ 1 = 13 ; 52 ÷ 4 = 13 ; 87,50 ÷ 7 = 12,5 ; 130 ÷ 10 = 13.",
+        "La colonne de 7 jours est la seule différente : pour un coefficient 13, il faudrait 7 × 13 = 91.",
+        "Il faudrait afficher **91 €** pour 7 jours."
+      ],
+      "hint": "Calcule le prix divisé par la durée dans chaque colonne, et repère celle qui ne va pas."
+    }
+  ],
+  "review_status": "brouillon",
+  "programme_ref": "Cycle 4, classe de 5e, Proportionnalité : « Reconnaitre une situation de proportionnalité à partir d'un tableau ou d'un graphique. »"
+}

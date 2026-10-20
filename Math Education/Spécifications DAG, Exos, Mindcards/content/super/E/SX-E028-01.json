@@ -1,0 +1,127 @@
+{
+  "id": "SX-E028-01",
+  "skill_id": "E028",
+  "skill_ids": [
+    "E028",
+    "D017"
+  ],
+  "school_level": "CM2",
+  "title": "Au marché de producteurs",
+  "contexte": "Chaque samedi matin, le marché de producteurs de Saint-Aubin accueille 14 stands, de 7 h 30 à 13 h.\n\nAu stand de M. Petit, toutes les pommes de terre sont vendues au même prix au kilogramme. Une cliente a payé 9,60 € pour 6 kg, et un client a payé 14,40 € pour 9 kg.\n\nAu stand voisin, un pot de miel coûte 6,85 € et une boîte d'œufs coûte 3,20 €.\n\nPaul fait les courses pour sa famille de 5 personnes. Dans son porte-monnaie, il a un billet de 50 €.",
+  "image": null,
+  "duree_estimee_min": 15,
+  "questions": [
+    {
+      "key": "q1",
+      "skill_id": "E028",
+      "statement": "Quelle information ne sert pas pour calculer un prix de pommes de terre chez M. Petit ?",
+      "type": "qcm",
+      "choices": [
+        {
+          "key": "a",
+          "text": "6 kg coûtent 9,60 €",
+          "misconception": "C'est l'un des deux achats connus : il sert à calculer d'autres prix."
+        },
+        {
+          "key": "b",
+          "text": "9 kg coûtent 14,40 €",
+          "misconception": "C'est l'un des deux achats connus : il sert à calculer d'autres prix."
+        },
+        {
+          "key": "c",
+          "text": "Le marché accueille 14 stands",
+          "misconception": null
+        }
+      ],
+      "answer": {
+        "value": "c"
+      },
+      "points": 1,
+      "solution_steps": [
+        "Pour les pommes de terre, on utilise les deux achats connus : 6 kg pour 9,60 € et 9 kg pour 14,40 €.",
+        "Le nombre de stands du marché ne dit rien sur le prix des pommes de terre."
+      ],
+      "hint": null
+    },
+    {
+      "key": "q2",
+      "skill_id": "E028",
+      "statement": "Combien coûtent 15 kg de pommes de terre chez M. Petit ?",
+      "type": "numerique",
+      "answer": {
+        "value": 24,
+        "unit": "€"
+      },
+      "points": 2,
+      "solution_steps": [
+        "15 kg, c'est 6 kg et 9 kg : 6 + 9 = 15.",
+        "Le prix de 15 kg est donc la somme des deux prix : 9,60 + 14,40 = 24.",
+        "15 kg coûtent **24 €**.",
+        "On ajoute les masses entre elles et les prix entre eux."
+      ],
+      "hint": "Peux-tu obtenir 15 kg à partir des deux achats connus ?"
+    },
+    {
+      "key": "q3",
+      "skill_id": "E028",
+      "statement": "Combien coûtent 3 kg de pommes de terre chez M. Petit ?",
+      "type": "numerique",
+      "answer": {
+        "value": 4.8,
+        "unit": "€",
+        "accepted": [
+          "4 € 80",
+          "4 euros 80"
+        ]
+      },
+      "points": 2,
+      "solution_steps": [
+        "3 kg, c'est la différence entre 9 kg et 6 kg : 9 − 6 = 3.",
+        "Le prix de 3 kg est donc la différence des deux prix : 14,40 − 9,60 = 4,80.",
+        "3 kg coûtent **4,80 €**."
+      ],
+      "hint": "Peux-tu obtenir 3 kg en comparant les deux achats connus ?"
+    },
+    {
+      "key": "q4",
+      "skill_id": "D017",
+      "statement": "Paul achète un pot de miel et une boîte d'œufs. Il paie avec son billet de 50 €. Combien le marchand lui rend-il ?",
+      "type": "numerique",
+      "answer": {
+        "value": 39.95,
+        "unit": "€",
+        "accepted": [
+          "39 € 95",
+          "39 euros 95"
+        ]
+      },
+      "points": 2,
+      "solution_steps": [
+        "Prix des deux achats : 6,85 + 3,20 = 10,05 €.",
+        "Le marchand rend : 50 − 10,05 = 39,95.",
+        "Le marchand rend **39,95 €** à Paul. Vérification : 39,95 + 10,05 = 50."
+      ],
+      "hint": "Calcule d'abord le prix total des deux achats."
+    },
+    {
+      "key": "q5",
+      "skill_id": "E028",
+      "statement": "Une autre cliente paie 33,60 € de pommes de terre chez M. Petit. Quelle masse de pommes de terre a-t-elle achetée ?",
+      "type": "numerique",
+      "answer": {
+        "value": 21,
+        "unit": "kg"
+      },
+      "points": 3,
+      "solution_steps": [
+        "On cherche à obtenir 33,60 € en additionnant les prix connus.",
+        "9,60 + 9,60 + 14,40 = 33,60 : c'est le prix de 6 kg, encore 6 kg et 9 kg.",
+        "La masse achetée est donc 6 + 6 + 9 = 21. Elle a acheté **21 kg** de pommes de terre.",
+        "Vérification : 21 kg, c'est aussi 15 kg et 6 kg, et 24 + 9,60 = 33,60."
+      ],
+      "hint": "Essaie d'obtenir 33,60 € en ajoutant plusieurs fois les prix connus."
+    }
+  ],
+  "review_status": "brouillon",
+  "programme_ref": "Cycle 3, Cours moyen deuxième année, La proportionnalité : « Seuls des raisonnements fondés sur les propriétés de linéarité pour la multiplication et pour l'addition sont attendus »"
+}

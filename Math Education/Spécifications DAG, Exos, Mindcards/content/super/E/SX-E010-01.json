@@ -1,0 +1,119 @@
+{
+  "id": "SX-E010-01",
+  "skill_id": "E010",
+  "skill_ids": [
+    "E010",
+    "E032",
+    "C031"
+  ],
+  "school_level": "6e",
+  "title": "Les soldes au magasin de sport",
+  "contexte": "Du 8 au 28 janvier, le magasin de sport du centre-ville fait ses soldes. Lucas, 13 ans, y va avec sa mère.\n\nLes raquettes de tennis, vendues 60 € avant les soldes, ont une remise de 30 %.\nLes ballons de basket, vendus 32 € avant les soldes, ont une remise de 25 %.\nLes gourdes, à 12,50 €, sont vendues sans remise.\n\nLe vendeur explique que le magasin a reçu 380 ballons de football cet hiver, et que 15 % de ces ballons sont déjà vendus.\n\nAu rayon alimentation, l'étiquette d'une barre de céréales de 40 g indique : 35 % de sucres.",
+  "image": null,
+  "duree_estimee_min": 15,
+  "questions": [
+    {
+      "key": "q1",
+      "skill_id": "E032",
+      "statement": "Que signifie « une remise de 30 % » sur le prix d'une raquette ?",
+      "type": "qcm",
+      "choices": [
+        {
+          "key": "a",
+          "text": "On retire 30 € au prix.",
+          "misconception": "L'élève lit 30 % comme 30 €. Or 30 % est une part du prix : 30 pour 100, et non une somme fixe."
+        },
+        {
+          "key": "b",
+          "text": "On retire 3 € au prix.",
+          "misconception": "L'élève confond 30 % avec le dixième de 30. Or 30 % est une part du prix, $\\frac{30}{100}$ du prix."
+        },
+        {
+          "key": "c",
+          "text": "On retire $\\frac{30}{100}$ du prix.",
+          "misconception": null
+        }
+      ],
+      "answer": {
+        "value": "c"
+      },
+      "points": 1,
+      "solution_steps": [
+        "30 % se lit « 30 pour cent » : 30 pour 100, c'est-à-dire $\\frac{30}{100}$.",
+        "Une remise de 30 % retire donc $\\frac{30}{100}$ du prix : 30 € pour chaque tranche de 100 € de prix."
+      ],
+      "hint": "Que veut dire « pour cent » ?"
+    },
+    {
+      "key": "q2",
+      "skill_id": "E010",
+      "statement": "Quel est le montant de la remise sur une raquette de tennis ?",
+      "type": "numerique",
+      "answer": {
+        "value": 18,
+        "unit": "€"
+      },
+      "points": 2,
+      "solution_steps": [
+        "La remise vaut 30 % de 60 €, c'est-à-dire $\\frac{30}{100}$ de 60 €.",
+        "On divise par 100 puis on multiplie par 30 : 60 ÷ 100 = 0,6 puis 0,6 × 30 = 18.",
+        "La remise est de **18 €**. Le prix payé sera 60 − 18 = 42 €, mais la question porte sur la remise."
+      ],
+      "hint": "Calcule 30 % de 60 €."
+    },
+    {
+      "key": "q3",
+      "skill_id": "E010",
+      "statement": "Combien de ballons de football le magasin a-t-il déjà vendus ?",
+      "type": "numerique",
+      "answer": {
+        "value": 57,
+        "unit": "ballons"
+      },
+      "points": 2,
+      "solution_steps": [
+        "On calcule 15 % de 380 ballons, c'est-à-dire $\\frac{15}{100}$ de 380.",
+        "380 ÷ 100 = 3,8 puis 3,8 × 15 = 57.",
+        "Le magasin a déjà vendu **57 ballons** de football."
+      ],
+      "hint": "Divise d'abord le nombre de ballons par 100."
+    },
+    {
+      "key": "q4",
+      "skill_id": "C031",
+      "statement": "Sur l'étiquette, 35 % de sucres signifie $\\frac{35}{100}$ de la masse de la barre. Quelle masse de sucres contient la barre de 40 g ?",
+      "type": "numerique",
+      "answer": {
+        "value": 14,
+        "unit": "g"
+      },
+      "points": 2,
+      "solution_steps": [
+        "On calcule le produit $40 \\times \\frac{35}{100}$ : on multiplie le numérateur par 40 et on garde le dénominateur.",
+        "$40 \\times \\frac{35}{100} = \\frac{1400}{100} = 14$.",
+        "La barre contient **14 g** de sucres."
+      ],
+      "hint": "Multiplie 40 par la fraction $\\frac{35}{100}$."
+    },
+    {
+      "key": "q5",
+      "skill_id": "E010",
+      "statement": "Pendant les soldes, quel prix paie-t-on pour un ballon de basket ?",
+      "type": "numerique",
+      "answer": {
+        "value": 24,
+        "unit": "€"
+      },
+      "points": 3,
+      "solution_steps": [
+        "La remise vaut 25 % de 32 €. 25 %, c'est le quart : 32 ÷ 4 = 8. La remise est de 8 €.",
+        "Le prix payé est le prix avant les soldes moins la remise : 32 − 8 = 24.",
+        "On paie **24 €** pour un ballon de basket.",
+        "Attention : 8 € est la remise, pas le prix payé."
+      ],
+      "hint": "Calcule d'abord la remise, puis retire-la du prix."
+    }
+  ],
+  "review_status": "brouillon",
+  "programme_ref": "Cycle 3, classe de 6e, Les fractions, Pourcentages : « Appliquer un pourcentage à une grandeur ou à un nombre »"
+}
