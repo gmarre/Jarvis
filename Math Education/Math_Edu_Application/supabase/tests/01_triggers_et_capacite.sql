@@ -30,6 +30,11 @@ select 'TEST 3 compte Google : role par defaut eleve, prenom depuis given_name' 
 -- que d'inserer, sinon le doublon interrompt le script.
 insert into teachers (id, nom_court) values ('11111111-1111-1111-1111-111111111111', 'M. Marc')
 on conflict (id) do update set nom_court = excluded.nom_court;
+-- Verifie par l'administrateur (migration 0018) : sinon ses creneaux sont
+-- caches des eleves et ne se reservent pas (0020).
+set request.jwt.claim.role = 'service_role';
+update teachers set verifie_le = now() where id = '11111111-1111-1111-1111-111111111111';
+set request.jwt.claim.role = 'authenticated';
 insert into availability_slots (id, prof_id, start_at, capacite)
 values ('aaaaaaaa-aaaa-aaaa-aaaa-aaaaaaaaaaaa',
         '11111111-1111-1111-1111-111111111111', now() + interval '2 days', 3);

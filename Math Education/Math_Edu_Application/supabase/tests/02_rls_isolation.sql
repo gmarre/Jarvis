@@ -99,6 +99,12 @@ select 'TEST 18 aucun creneau ouvert par un eleve' as test,
          where prof_id = '55555555-5555-5555-5555-555555555555') = 0) as ok;
 
 \echo '--- Le catalogue d un professeur non verifie est cache (migration 0018) ---'
+-- Verification retiree par l'administrateur pour le test (01 l'avait posee).
+reset role;
+set request.jwt.claim.role = 'service_role';
+update teachers set verifie_le = null where id = '11111111-1111-1111-1111-111111111111';
+set request.jwt.claim.role = 'authenticated';
+set role authenticated;
 select 'TEST 19 catalogue d un professeur non verifie cache des eleves' as test,
        count(*) as vus, (count(*) = 0) as ok
 from availability_slots;

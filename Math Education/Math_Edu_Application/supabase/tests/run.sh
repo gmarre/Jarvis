@@ -72,7 +72,7 @@ done
 
 # Les tests attendent certains refus : ce sont eux qui prouvent que les gardes
 # fonctionnent. Tout autre ERROR est un vrai probleme.
-REFUS_ATTENDUS='Creneau complet|violates row-level security|ne se modifie pas depuis le client|se confirme par le lien|duplicate key value|permission denied for function publier_contenu|Publication reservee au serveur|invalide_avec_commentaire|accord du parent|profiles_chemins_choisis_format|skill_progress_niveau_borne|flashcard_progress_box_check|super_attempts_score_borne|profiles_rythme_jours_borne|profiles_jours_travail_valides|rappels_heure_plage|permission denied for table rappels|course_offers_valides|permission denied for table seances_visio'
+REFUS_ATTENDUS='Creneau complet|violates row-level security|ne se modifie pas depuis le client|se confirme par le lien|duplicate key value|permission denied for function publier_contenu|Publication reservee au serveur|invalide_avec_commentaire|accord du parent|profiles_chemins_choisis_format|skill_progress_niveau_borne|flashcard_progress_box_check|super_attempts_score_borne|profiles_rythme_jours_borne|profiles_jours_travail_valides|rappels_heure_plage|permission denied for table rappels|course_offers_valides|permission denied for table seances_visio|Professeur inconnu|permission denied for table messages_suivi'
 
 verifier() {
   local titre="$1" fichier="$2"
@@ -131,6 +131,7 @@ verifier "Super exercices" 10_super_exercices.sql
 verifier "Rythme et rappels" 11_rythme_rappels.sql
 verifier "Professeur v1" 12_professeur.sql
 verifier "Espace parent" 13_espace_parent.sql
+verifier "Suivi" 14_suivi.sql
 
 echo
 if [ "$echec" -ne 0 ]; then
