@@ -2,9 +2,1367 @@
   "metadata": {
     "version": "1.0",
     "scope": "Cartes defi, CP a 3e",
-    "total_flashcards": 461
+    "total_flashcards": 655
   },
   "flashcards": [
+    {
+      "id": "FC-B001-01",
+      "skill_id": "B001",
+      "recto": "Que veut dire additionner ?",
+      "verso": "**Réunir deux quantités, ou en ajouter une** : on compte ensuite tout ensemble.",
+      "review_status": "relu_agent"
+    },
+    {
+      "id": "FC-B001-02",
+      "skill_id": "B001",
+      "recto": "Dans une addition, l'ordre des deux nombres compte-t-il ?",
+      "verso": "**Non** : $3 + 50$ et $50 + 3$ font tous les deux 53 ; on peut commencer par le plus grand nombre.",
+      "review_status": "relu_agent"
+    },
+    {
+      "id": "FC-B001-03",
+      "skill_id": "B001",
+      "recto": "Que devient un nombre quand on lui ajoute 0 ?",
+      "verso": "**Il ne change pas** : ajouter zéro, c'est ne rien ajouter.",
+      "review_status": "relu_agent"
+    },
+    {
+      "id": "FC-B001-04",
+      "skill_id": "B001",
+      "recto": "Combien faut-il ajouter à 8 pour arriver à 10 ?",
+      "verso": "**2** : $8 + 2 = 10$ ; les compléments à dix se connaissent par cœur, ils servent à passer la dizaine.",
+      "review_status": "relu_agent"
+    },
+    {
+      "id": "FC-B001-05",
+      "skill_id": "B001",
+      "recto": "Combien font $52 + 6$ ?",
+      "verso": "**58** : on ajoute les unités entre elles, et les cinq dizaines ne bougent pas.",
+      "review_status": "relu_agent"
+    },
+    {
+      "id": "FC-B001-06",
+      "skill_id": "B001",
+      "recto": "Pour $64 + 4$, Noé compte « 64, 65, 66, 67 ». Vrai ou faux : il trouve le bon résultat.",
+      "verso": "**Faux** : le nombre de départ n'est pas un pas. Après 64, on avance de quatre pas : 65, 66, 67, 68, donc $64 + 4 = 68$.",
+      "review_status": "relu_agent"
+    },
+    {
+      "id": "FC-B002-01",
+      "skill_id": "B002",
+      "recto": "Comment place-t-on les nombres dans une addition posée ?",
+      "verso": "**Unités sous unités, dizaines sous dizaines** : on n'ajoute ainsi que des chiffres de même valeur.",
+      "review_status": "relu_agent"
+    },
+    {
+      "id": "FC-B002-02",
+      "skill_id": "B002",
+      "recto": "Dans une addition posée, par quelle colonne commence-t-on ?",
+      "verso": "**Par celle des unités, à droite** : une retenue peut partir des unités vers les dizaines.",
+      "review_status": "relu_agent"
+    },
+    {
+      "id": "FC-B002-03",
+      "skill_id": "B002",
+      "recto": "Addition posée : la colonne des unités donne 14. Quel chiffre écrit-on sous cette colonne ?",
+      "verso": "**4** : quatorze unités, c'est une dizaine et quatre unités ; on écrit les unités et on retient la dizaine.",
+      "review_status": "relu_agent"
+    },
+    {
+      "id": "FC-B002-04",
+      "skill_id": "B002",
+      "recto": "Combien font $27 + 45$ ?",
+      "verso": "**72** : les unités font douze, on écrit 2 et on retient une dizaine ; les dizaines font alors sept.",
+      "review_status": "relu_agent"
+    },
+    {
+      "id": "FC-B002-05",
+      "skill_id": "B002",
+      "recto": "Vrai ou faux : $28 + 64 = 82$.",
+      "verso": "**Faux** : la retenue a été oubliée. Les unités font douze : on écrit deux et on retient une dizaine, donc $28 + 64 = 92$.",
+      "review_status": "relu_agent"
+    },
+    {
+      "id": "FC-B003-01",
+      "skill_id": "B003",
+      "recto": "Que veut dire soustraire ?",
+      "verso": "**Enlever une quantité, ou chercher ce qui manque** : il reste moins qu'au départ, ou autant si on enlève 0.",
+      "review_status": "relu_agent"
+    },
+    {
+      "id": "FC-B003-02",
+      "skill_id": "B003",
+      "recto": "Dans une soustraction, peut-on échanger les deux nombres ?",
+      "verso": "**Non** : dans $36 - 12$, on retire 12 de 36 ; retirer 36 de 12 est impossible.",
+      "review_status": "relu_agent"
+    },
+    {
+      "id": "FC-B003-03",
+      "skill_id": "B003",
+      "recto": "Combien font $86 - 34$ ?",
+      "verso": "**52** : aux unités, six moins quatre ; aux dizaines, huit moins trois.",
+      "review_status": "relu_agent"
+    },
+    {
+      "id": "FC-B003-04",
+      "skill_id": "B003",
+      "recto": "Comment vérifier le résultat d'une soustraction ?",
+      "verso": "**Par une addition** : $69 - 25 = 44$ est juste, car $44 + 25 = 69$ ; la soustraction défait l'addition.",
+      "review_status": "relu_agent"
+    },
+    {
+      "id": "FC-B003-05",
+      "skill_id": "B003",
+      "recto": "Vrai ou faux : $58 - 3 = 28$.",
+      "verso": "**Faux** : le 3 a été enlevé aux dizaines, alors qu'il compte des unités. On l'enlève aux unités : $58 - 3 = 55$.",
+      "review_status": "relu_agent"
+    },
+    {
+      "id": "FC-B004-01",
+      "skill_id": "B004",
+      "recto": "Soustraction posée, méthode par cassage : aux unités, le chiffre du haut est trop petit. Que fait-on ?",
+      "verso": "**On casse une dizaine du haut en dix unités** : on a dix unités de plus en haut, et une dizaine de moins.",
+      "review_status": "relu_agent"
+    },
+    {
+      "id": "FC-B004-02",
+      "skill_id": "B004",
+      "recto": "Soustraction posée, méthode par compensation : qu'ajoute-t-on aux deux nombres ?",
+      "verso": "**Dix** : dix unités en haut, une dizaine en bas ; l'écart entre les deux nombres ne change pas.",
+      "review_status": "relu_agent"
+    },
+    {
+      "id": "FC-B004-03",
+      "skill_id": "B004",
+      "recto": "Combien font $82 - 47$ ?",
+      "verso": "**35** : on casse une dizaine, douze moins sept font cinq ; puis sept dizaines moins quatre font trois.",
+      "review_status": "relu_agent"
+    },
+    {
+      "id": "FC-B004-04",
+      "skill_id": "B004",
+      "recto": "Comment vérifier que $641 - 285 = 356$ ?",
+      "verso": "**Par une addition** : $356 + 285$ doit redonner 641, car la soustraction défait l'addition.",
+      "review_status": "relu_agent"
+    },
+    {
+      "id": "FC-B004-05",
+      "skill_id": "B004",
+      "recto": "Vrai ou faux : $92 - 47 = 55$.",
+      "verso": "**Faux** : on ne peut pas enlever sept de deux, on casse une dizaine. Douze moins sept font cinq, puis huit dizaines moins quatre font quatre : $92 - 47 = 45$.",
+      "review_status": "relu_agent"
+    },
+    {
+      "id": "FC-B005-01",
+      "skill_id": "B005",
+      "recto": "Comment se lit le signe $\\times$ ?",
+      "verso": "**Fois** : par exemple, on lit « deux fois cinq ».",
+      "review_status": "relu_agent"
+    },
+    {
+      "id": "FC-B005-02",
+      "skill_id": "B005",
+      "recto": "Que remplace une multiplication ?",
+      "verso": "**Une addition répétée du même nombre** : $2 + 2 + 2 + 2 + 2 = 5 \\times 2 = 10$.",
+      "review_status": "relu_agent"
+    },
+    {
+      "id": "FC-B005-03",
+      "skill_id": "B005",
+      "recto": "Dans une multiplication, l'ordre des deux nombres compte-t-il ?",
+      "verso": "**Non** : 2 rangées de 5, c'est autant que 5 rangées de 2 ; $2 \\times 5 = 5 \\times 2$.",
+      "review_status": "relu_agent"
+    },
+    {
+      "id": "FC-B005-04",
+      "skill_id": "B005",
+      "recto": "Que devient un nombre multiplié par 1 ?",
+      "verso": "**Il ne change pas** : on le prend une seule fois.",
+      "review_status": "relu_agent"
+    },
+    {
+      "id": "FC-B005-05",
+      "skill_id": "B005",
+      "recto": "Combien font $5 \\times 5$ ?",
+      "verso": "**25** : cinq fois le nombre 5, c'est $5 + 5 + 5 + 5 + 5$.",
+      "review_status": "relu_agent"
+    },
+    {
+      "id": "FC-B005-06",
+      "skill_id": "B005",
+      "recto": "Vrai ou faux : $2 \\times 5 = 7$.",
+      "verso": "**Faux** : on a ajouté au lieu de multiplier. Deux fois cinq, c'est $5 + 5 = 10$.",
+      "review_status": "relu_agent"
+    },
+    {
+      "id": "FC-B006-01",
+      "skill_id": "B006",
+      "recto": "Multiplier par 2, c'est prendre quoi ?",
+      "verso": "**Le double** : $2 \\times 8 = 8 + 8 = 16$.",
+      "review_status": "relu_agent"
+    },
+    {
+      "id": "FC-B006-02",
+      "skill_id": "B006",
+      "recto": "Combien font $9 \\times 9$ ?",
+      "verso": "**81** : à connaître par cœur ; s'il est oublié, on part de $9 \\times 10 = 90$ et on enlève un 9.",
+      "review_status": "relu_agent"
+    },
+    {
+      "id": "FC-B006-03",
+      "skill_id": "B006",
+      "recto": "Combien font $8 \\times 8$ ?",
+      "verso": "**64** : à connaître par cœur ; c'est le double de $8 \\times 4 = 32$.",
+      "review_status": "relu_agent"
+    },
+    {
+      "id": "FC-B006-04",
+      "skill_id": "B006",
+      "recto": "Complète : $3 \\times \\ldots = 27$.",
+      "verso": "**9** : une table se connaît dans les deux sens, et trois fois neuf font vingt-sept.",
+      "review_status": "relu_agent"
+    },
+    {
+      "id": "FC-B006-05",
+      "skill_id": "B006",
+      "recto": "Vrai ou faux : $5 \\times 9 = 40$.",
+      "verso": "**Faux** : 40 est le résultat voisin, cinq fois huit. En ajoutant encore 5, on trouve $5 \\times 9 = 45$.",
+      "review_status": "relu_agent"
+    },
+    {
+      "id": "FC-B007-01",
+      "skill_id": "B007",
+      "recto": "Multiplication posée : quel nombre place-t-on en dessous ?",
+      "verso": "**Celui qui a le moins de chiffres** : on a ainsi moins de lignes à calculer.",
+      "review_status": "relu_agent"
+    },
+    {
+      "id": "FC-B007-02",
+      "skill_id": "B007",
+      "recto": "Multiplication posée par un nombre à deux chiffres : qu'écrit-on d'abord sur la deuxième ligne ?",
+      "verso": "**Un 0 aux unités** : cette ligne compte des dizaines, car on multiplie par le chiffre des dizaines.",
+      "review_status": "relu_agent"
+    },
+    {
+      "id": "FC-B007-03",
+      "skill_id": "B007",
+      "recto": "Multiplication posée : à quel moment ajoute-t-on la retenue ?",
+      "verso": "**Après avoir multiplié le chiffre suivant** : on multiplie d'abord, puis on ajoute la retenue au résultat.",
+      "review_status": "relu_agent"
+    },
+    {
+      "id": "FC-B007-04",
+      "skill_id": "B007",
+      "recto": "Combien font $21 \\times 4$ ?",
+      "verso": "**84** : quatre fois une unité, puis quatre fois deux dizaines.",
+      "review_status": "relu_agent"
+    },
+    {
+      "id": "FC-B007-05",
+      "skill_id": "B007",
+      "recto": "Vrai ou faux : $35 \\times 21 = 105$.",
+      "verso": "**Faux** : la deuxième ligne compte des dizaines, $35 \\times 20 = 700$ et non 70. Donc $35 \\times 21 = 35 + 700 = 735$.",
+      "review_status": "relu_agent"
+    },
+    {
+      "id": "FC-B007-06",
+      "skill_id": "B007",
+      "recto": "Vrai ou faux : $26 \\times 3 = 98$.",
+      "verso": "**Faux** : la retenue s'ajoute après la multiplication. Trois fois deux dizaines font six, plus la retenue : sept. Donc $26 \\times 3 = 78$.",
+      "review_status": "relu_agent"
+    },
+    {
+      "id": "FC-B008-01",
+      "skill_id": "B008",
+      "recto": "Division euclidienne de 34 par 9 : $34 = (9 \\times 3) + 7$. Comment s'appelle 3 ?",
+      "verso": "**Le quotient** : c'est le nombre de fois que 9 tient dans 34 ; 7 est le reste.",
+      "review_status": "relu_agent"
+    },
+    {
+      "id": "FC-B008-02",
+      "skill_id": "B008",
+      "recto": "Division euclidienne : que doit toujours vérifier le reste ?",
+      "verso": "**Il est plus petit que le diviseur** : sinon, on pourrait encore faire une part de plus.",
+      "review_status": "relu_agent"
+    },
+    {
+      "id": "FC-B008-03",
+      "skill_id": "B008",
+      "recto": "Comment vérifier une division euclidienne ?",
+      "verso": "**On multiplie le diviseur par le quotient, puis on ajoute le reste** : on doit retrouver le dividende.",
+      "review_status": "relu_agent"
+    },
+    {
+      "id": "FC-B008-04",
+      "skill_id": "B008",
+      "recto": "Division euclidienne de 52 par 7 : quel est le quotient, quel est le reste ?",
+      "verso": "**Quotient 7, reste 3** : $(7 \\times 7) + 3 = 52$, et le reste est plus petit que 7.",
+      "review_status": "relu_agent"
+    },
+    {
+      "id": "FC-B008-05",
+      "skill_id": "B008",
+      "recto": "27 élèves montent dans des voitures de 4 places. Combien de voitures faut-il ?",
+      "verso": "**7** : six voitures pleines ne suffisent pas, trois élèves restent ; il faut une voiture de plus.",
+      "review_status": "relu_agent"
+    },
+    {
+      "id": "FC-B008-06",
+      "skill_id": "B008",
+      "recto": "Vrai ou faux : la division euclidienne de 927 par 9 a pour quotient 13.",
+      "verso": "**Faux** : deux dizaines ne suffisent pas pour neuf parts, on écrit un zéro aux dizaines du quotient. Le quotient est 103, car $9 \\times 103 = 927$.",
+      "review_status": "relu_agent"
+    },
+    {
+      "id": "FC-B011-01",
+      "skill_id": "B011",
+      "recto": "Dans un calcul sans parenthèses, quelles opérations fait-on en premier ?",
+      "verso": "**Les multiplications et les divisions** : on fait ensuite les additions et les soustractions.",
+      "review_status": "relu_agent"
+    },
+    {
+      "id": "FC-B011-02",
+      "skill_id": "B011",
+      "recto": "À priorité égale, dans quel sens calcule-t-on ?",
+      "verso": "**De gauche à droite** : $17 - 9 + 1 = 8 + 1 = 9$.",
+      "review_status": "relu_agent"
+    },
+    {
+      "id": "FC-B011-03",
+      "skill_id": "B011",
+      "recto": "Comment s'appelle un calcul dont la dernière opération est une multiplication ?",
+      "verso": "**Un produit** : c'est la dernière opération effectuée qui donne son nom au calcul.",
+      "review_status": "relu_agent"
+    },
+    {
+      "id": "FC-B011-04",
+      "skill_id": "B011",
+      "recto": "Dans un produit, comment s'appellent les nombres multipliés ?",
+      "verso": "**Les facteurs** : dans une somme, les nombres ajoutés s'appellent les termes.",
+      "review_status": "relu_agent"
+    },
+    {
+      "id": "FC-B011-05",
+      "skill_id": "B011",
+      "recto": "Calcule $13 + 7 \\times 9$.",
+      "verso": "**76** : la multiplication passe avant ; sept fois neuf font 63, puis on ajoute 13.",
+      "review_status": "relu_agent"
+    },
+    {
+      "id": "FC-B011-06",
+      "skill_id": "B011",
+      "recto": "Vrai ou faux : $9 + 8 \\times 9 = 153$.",
+      "verso": "**Faux** : on a calculé de gauche à droite. La multiplication passe avant : $9 + 72 = 81$.",
+      "review_status": "relu_agent"
+    },
+    {
+      "id": "FC-B012-01",
+      "skill_id": "B012",
+      "recto": "Dans un calcul avec des parenthèses, que calcule-t-on d'abord ?",
+      "verso": "**Ce qui est entre les parenthèses** : son résultat remplace ensuite toute la parenthèse.",
+      "review_status": "relu_agent"
+    },
+    {
+      "id": "FC-B012-02",
+      "skill_id": "B012",
+      "recto": "Calcule $(5 + 2) \\times 3$.",
+      "verso": "**21** : d'abord $5 + 2 = 7$, puis $7 \\times 3 = 21$.",
+      "review_status": "relu_agent"
+    },
+    {
+      "id": "FC-B012-03",
+      "skill_id": "B012",
+      "recto": "Calcule $70 - (17 + 3)$.",
+      "verso": "**50** : d'abord $17 + 3 = 20$, puis $70 - 20 = 50$.",
+      "review_status": "relu_agent"
+    },
+    {
+      "id": "FC-B012-04",
+      "skill_id": "B012",
+      "recto": "Vrai ou faux : $90 - (50 - 20) = 20$.",
+      "verso": "**Faux** : on a enlevé 50 puis 20 sans tenir compte des parenthèses. D'abord $50 - 20 = 30$, puis $90 - 30 = 60$.",
+      "review_status": "relu_agent"
+    },
+    {
+      "id": "FC-B012-05",
+      "skill_id": "B012",
+      "recto": "Vrai ou faux : $(2 + 7) \\times 3 = 23$.",
+      "verso": "**Faux** : la parenthèse regroupe 2 et 7. On calcule $2 + 7 = 9$, puis $9 \\times 3 = 27$.",
+      "review_status": "relu_agent"
+    },
+    {
+      "id": "FC-B013-01",
+      "skill_id": "B013",
+      "recto": "Pour ajouter 9 de tête, quel est le moyen rapide ?",
+      "verso": "**Ajouter dix, puis enlever un** : ajouter dix est facile, et neuf, c'est un de moins que dix.",
+      "review_status": "relu_agent"
+    },
+    {
+      "id": "FC-B013-02",
+      "skill_id": "B013",
+      "recto": "Combien font $45 + 9$ ?",
+      "verso": "**54** : on ajoute dix, on arrive à 55, puis on enlève un.",
+      "review_status": "relu_agent"
+    },
+    {
+      "id": "FC-B013-03",
+      "skill_id": "B013",
+      "recto": "Pour calculer $67 + 5$ de tête, par quelle dizaine passe-t-on ?",
+      "verso": "**70** : de 67 à 70, il faut trois ; il reste deux à ajouter, donc 72.",
+      "review_status": "relu_agent"
+    },
+    {
+      "id": "FC-B013-04",
+      "skill_id": "B013",
+      "recto": "Pour ajouter de tête deux nombres comme $35 + 42$, que regroupe-t-on ?",
+      "verso": "**Les dizaines ensemble, puis les unités ensemble** : sept dizaines et sept unités, donc 77.",
+      "review_status": "relu_agent"
+    },
+    {
+      "id": "FC-B013-05",
+      "skill_id": "B013",
+      "recto": "Combien font $52 + 30$ ?",
+      "verso": "**82** : on ajoute trois dizaines aux cinq dizaines de 52.",
+      "review_status": "relu_agent"
+    },
+    {
+      "id": "FC-B013-06",
+      "skill_id": "B013",
+      "recto": "Pour calculer $35 + 9$, vrai ou faux : on peut écrire $35 + 5 = 40 + 4 = 44$.",
+      "verso": "**Faux** : $35 + 5$ vaut 40, pas 44 ; le signe = relie deux écritures égales. On écrit $35 + 5 = 40$, puis $40 + 4 = 44$.",
+      "review_status": "relu_agent"
+    },
+    {
+      "id": "FC-B014-01",
+      "skill_id": "B014",
+      "recto": "Pour calculer $90 - 30$ de tête, que compte-t-on ?",
+      "verso": "**Des dizaines** : neuf dizaines moins trois dizaines, il reste six dizaines, soit 60.",
+      "review_status": "relu_agent"
+    },
+    {
+      "id": "FC-B014-02",
+      "skill_id": "B014",
+      "recto": "Pour calculer $50 - 6$, que fait-on d'une dizaine ?",
+      "verso": "**On la casse en dix unités** : quatre dizaines et dix unités ; dix moins six font quatre, donc 44.",
+      "review_status": "relu_agent"
+    },
+    {
+      "id": "FC-B014-03",
+      "skill_id": "B014",
+      "recto": "Combien font $90 - 7$ ?",
+      "verso": "**83** : on casse une dizaine ; dix moins sept font trois, et il reste huit dizaines.",
+      "review_status": "relu_agent"
+    },
+    {
+      "id": "FC-B014-04",
+      "skill_id": "B014",
+      "recto": "Combien font $76 - 30$ ?",
+      "verso": "**46** : on enlève trois dizaines aux sept dizaines ; les six unités ne bougent pas.",
+      "review_status": "relu_agent"
+    },
+    {
+      "id": "FC-B014-05",
+      "skill_id": "B014",
+      "recto": "Vrai ou faux : $50 - 3 = 53$.",
+      "verso": "**Faux** : aux unités, on a calculé trois moins zéro au lieu de casser une dizaine. Dix moins trois font sept, il reste quatre dizaines : 47.",
+      "review_status": "relu_agent"
+    },
+    {
+      "id": "FC-B015-01",
+      "skill_id": "B015",
+      "recto": "Quand on multiplie par 10, que devient chaque unité ?",
+      "verso": "**Une dizaine** : et chaque dizaine devient une centaine.",
+      "review_status": "relu_agent"
+    },
+    {
+      "id": "FC-B015-02",
+      "skill_id": "B015",
+      "recto": "Combien font $10 \\times 24$ ?",
+      "verso": "**240** : vingt-quatre unités deviennent vingt-quatre dizaines.",
+      "review_status": "relu_agent"
+    },
+    {
+      "id": "FC-B015-03",
+      "skill_id": "B015",
+      "recto": "Combien font $52 \\times 10$ ?",
+      "verso": "**520** : les deux unités deviennent deux dizaines, les cinq dizaines deviennent cinq centaines.",
+      "review_status": "relu_agent"
+    },
+    {
+      "id": "FC-B015-04",
+      "skill_id": "B015",
+      "recto": "Après une multiplication par dix, quel est toujours le chiffre des unités ?",
+      "verso": "**Zéro** : les unités sont toutes devenues des dizaines, il ne reste aucune unité.",
+      "review_status": "relu_agent"
+    },
+    {
+      "id": "FC-B015-05",
+      "skill_id": "B015",
+      "recto": "Vrai ou faux : $36 \\times 10 = 46$.",
+      "verso": "**Faux** : on a ajouté 10 au lieu de multiplier. Trente-six unités deviennent trente-six dizaines : 360.",
+      "review_status": "relu_agent"
+    },
+    {
+      "id": "FC-B016-01",
+      "skill_id": "B016",
+      "recto": "Pour diviser par 4 de tête, que fait-on ?",
+      "verso": "**On prend la moitié, puis encore la moitié** : deux moitiés de suite divisent par 4, car deux fois deux font quatre.",
+      "review_status": "relu_agent"
+    },
+    {
+      "id": "FC-B016-02",
+      "skill_id": "B016",
+      "recto": "Pour diviser par 8 de tête, combien de fois prend-on la moitié ?",
+      "verso": "**Trois fois** : car deux fois deux fois deux font huit.",
+      "review_status": "relu_agent"
+    },
+    {
+      "id": "FC-B016-03",
+      "skill_id": "B016",
+      "recto": "Combien font $96 \\div 4$ ?",
+      "verso": "**24** : la moitié de 96 est 48, la moitié de 48 est 24.",
+      "review_status": "relu_agent"
+    },
+    {
+      "id": "FC-B016-04",
+      "skill_id": "B016",
+      "recto": "Combien font $200 \\div 8$ ?",
+      "verso": "**25** : trois moitiés de suite : 100, puis 50, puis 25.",
+      "review_status": "relu_agent"
+    },
+    {
+      "id": "FC-B016-05",
+      "skill_id": "B016",
+      "recto": "Pour $160 \\div 8$, vrai ou faux : on prend deux moitiés, 80 puis 40.",
+      "verso": "**Faux** : deux moitiés divisent seulement par quatre. Il faut une troisième moitié : $160 \\div 8 = 20$.",
+      "review_status": "relu_agent"
+    },
+    {
+      "id": "FC-B017-01",
+      "skill_id": "B017",
+      "recto": "Comment appelle-t-on le résultat d'un calcul fait avec des nombres arrondis ?",
+      "verso": "**Un ordre de grandeur** : un résultat approché, qui sert à repérer une erreur.",
+      "review_status": "relu_agent"
+    },
+    {
+      "id": "FC-B017-02",
+      "skill_id": "B017",
+      "recto": "En arrondissant à la centaine, quel ordre de grandeur pour $612 + 289$ ?",
+      "verso": "**900** : 612 est proche de 600, 289 de 300, et $600 + 300 = 900$.",
+      "review_status": "relu_agent"
+    },
+    {
+      "id": "FC-B017-03",
+      "skill_id": "B017",
+      "recto": "En arrondissant à la dizaine, quel ordre de grandeur pour $39 \\times 51$ ?",
+      "verso": "**2 000** : environ $40 \\times 50 = 2\\,000$, car quatre fois cinq font vingt, et dix fois dix font cent.",
+      "review_status": "relu_agent"
+    },
+    {
+      "id": "FC-B017-04",
+      "skill_id": "B017",
+      "recto": "Un ordre de grandeur remplace-t-il le calcul exact ?",
+      "verso": "**Non** : il sert à contrôler ; un résultat très loin de l'ordre de grandeur est sûrement faux.",
+      "review_status": "relu_agent"
+    },
+    {
+      "id": "FC-B017-05",
+      "skill_id": "B017",
+      "recto": "Arrondi à la centaine, vrai ou faux : 691 devient 600.",
+      "verso": "**Faux** : 691 est plus proche de 700 que de 600 ; on prend la centaine la plus proche.",
+      "review_status": "relu_agent"
+    },
+    {
+      "id": "FC-B017-06",
+      "skill_id": "B017",
+      "recto": "Vrai ou faux : $53 \\times 18 = 9\\,540$ peut être juste.",
+      "verso": "**Faux** : environ $50 \\times 20 = 1\\,000$ ; le résultat est proche de 1 000, pas de 10 000.",
+      "review_status": "relu_agent"
+    },
+    {
+      "id": "FC-B022-01",
+      "skill_id": "B022",
+      "recto": "Pour multiplier deux puissances d'un même nombre, que fait-on des exposants ?",
+      "verso": "**On les ajoute** : les facteurs se mettent bout à bout, on compte combien il y en a en tout.",
+      "review_status": "relu_agent"
+    },
+    {
+      "id": "FC-B022-02",
+      "skill_id": "B022",
+      "recto": "$9^5 \\times 9^6$ s'écrit $9^n$. Que vaut n ?",
+      "verso": "**11** : cinq facteurs 9, puis six autres, soit onze facteurs 9.",
+      "review_status": "relu_agent"
+    },
+    {
+      "id": "FC-B022-03",
+      "skill_id": "B022",
+      "recto": "Écris $10^8 \\times 10^{13}$ sous la forme d'une puissance de 10 : quel exposant ?",
+      "verso": "**21** : on ajoute les exposants ; huit facteurs 10 mis bout à bout avec treize autres font vingt et un facteurs 10.",
+      "review_status": "relu_agent"
+    },
+    {
+      "id": "FC-B022-04",
+      "skill_id": "B022",
+      "recto": "Quel exposant a un nombre écrit seul, comme 8 ?",
+      "verso": "**1** : c'est un seul facteur 8, donc $8 = 8^1$.",
+      "review_status": "relu_agent"
+    },
+    {
+      "id": "FC-B022-05",
+      "skill_id": "B022",
+      "recto": "Vrai ou faux : $9^5 \\times 9^4 = 9^{20}$.",
+      "verso": "**Faux** : on ne multiplie pas les exposants. Cinq facteurs 9 et quatre facteurs 9 font neuf facteurs : $9^9$.",
+      "review_status": "relu_agent"
+    },
+    {
+      "id": "FC-B022-06",
+      "skill_id": "B022",
+      "recto": "Vrai ou faux : $6^5 \\times 6^9 = 36^{14}$.",
+      "verso": "**Faux** : le nombre répété reste 6 ; il y a quatorze facteurs 6, donc $6^{14}$.",
+      "review_status": "relu_agent"
+    },
+    {
+      "id": "FC-B023-01",
+      "skill_id": "B023",
+      "recto": "Pour diviser deux puissances d'un même nombre, que fait-on des exposants ?",
+      "verso": "**On les soustrait** : exposant du nombre divisé moins exposant du diviseur, car les facteurs communs se simplifient.",
+      "review_status": "relu_agent"
+    },
+    {
+      "id": "FC-B023-02",
+      "skill_id": "B023",
+      "recto": "$9^{11} \\div 9^{5}$ s'écrit $9^n$. Que vaut n ?",
+      "verso": "**6** : cinq facteurs 9 se simplifient, il en reste six.",
+      "review_status": "relu_agent"
+    },
+    {
+      "id": "FC-B023-03",
+      "skill_id": "B023",
+      "recto": "Écris $10^{-1} \\times 10^{9}$ sous la forme d'une puissance de 10 : quel exposant ?",
+      "verso": "**8** : on ajoute les exposants, $-1 + 9 = 8$.",
+      "review_status": "relu_agent"
+    },
+    {
+      "id": "FC-B023-04",
+      "skill_id": "B023",
+      "recto": "Que vaut $9^{6} \\div 9^{6}$ ?",
+      "verso": "**1** : un nombre non nul divisé par lui-même donne 1 ; la règle donne $9^{0}$, et $9^{0} = 1$.",
+      "review_status": "relu_agent"
+    },
+    {
+      "id": "FC-B023-05",
+      "skill_id": "B023",
+      "recto": "Vrai ou faux : $11^{18} \\div 11^{9} = 11^{2}$.",
+      "verso": "**Faux** : on ne divise pas les exposants, on les soustrait : $18 - 9 = 9$, donc $11^{9}$.",
+      "review_status": "relu_agent"
+    },
+    {
+      "id": "FC-B023-06",
+      "skill_id": "B023",
+      "recto": "Vrai ou faux : $10^{-1} \\div 10^{-9} = 10^{-10}$.",
+      "verso": "**Faux** : soustraire $-9$, c'est ajouter 9 : $-1 - (-9) = 8$, donc $10^{8}$.",
+      "review_status": "relu_agent"
+    },
+    {
+      "id": "FC-B036-01",
+      "skill_id": "B036",
+      "recto": "Que veut dire « partager équitablement » ?",
+      "verso": "**Donner autant à chacun** : toutes les parts sont égales.",
+      "review_status": "relu_agent"
+    },
+    {
+      "id": "FC-B036-02",
+      "skill_id": "B036",
+      "recto": "On range 20 billes par sacs de 5. Que cherche-t-on ?",
+      "verso": "**Le nombre de sacs** : on sait déjà ce que contient un sac, on cherche combien de parts on peut faire.",
+      "review_status": "relu_agent"
+    },
+    {
+      "id": "FC-B036-03",
+      "skill_id": "B036",
+      "recto": "On partage 24 images entre 3 enfants, autant chacun. Combien chacun en a-t-il ?",
+      "verso": "**8** : on les distribue une à une, et $8 + 8 + 8 = 24$.",
+      "review_status": "relu_agent"
+    },
+    {
+      "id": "FC-B036-04",
+      "skill_id": "B036",
+      "recto": "Combien d'équipes de 5 peut-on faire avec 35 enfants ?",
+      "verso": "**7** : on fait des groupes de 5 et on les compte ; sept groupes de 5 font 35 enfants.",
+      "review_status": "relu_agent"
+    },
+    {
+      "id": "FC-B036-05",
+      "skill_id": "B036",
+      "recto": "On range 40 crayons par pots de 5. Vrai ou faux : il faut 5 pots.",
+      "verso": "**Faux** : 5, c'est ce que contient un pot. On fait des groupes de 5 et on les compte : il faut 8 pots.",
+      "review_status": "relu_agent"
+    },
+    {
+      "id": "FC-B037-01",
+      "skill_id": "B037",
+      "recto": "Problème en deux étapes : comment s'appelle le résultat de la première étape ?",
+      "verso": "**Le résultat intermédiaire** : il répond à une question cachée, et il sert à la deuxième étape.",
+      "review_status": "relu_agent"
+    },
+    {
+      "id": "FC-B037-02",
+      "skill_id": "B037",
+      "recto": "Dans la phrase réponse d'un problème, que faut-il écrire avec le nombre trouvé ?",
+      "verso": "**L'unité** : elle dit ce que compte le nombre, par exemple des billes ou des euros.",
+      "review_status": "relu_agent"
+    },
+    {
+      "id": "FC-B037-03",
+      "skill_id": "B037",
+      "recto": "16 enfants sont dans le bus. 3 descendent, puis 7 montent. Combien sont-ils ?",
+      "verso": "**20** : après le premier arrêt, il en reste 13 ; avec les sept qui montent, cela fait 20.",
+      "review_status": "relu_agent"
+    },
+    {
+      "id": "FC-B037-04",
+      "skill_id": "B037",
+      "recto": "30 crayons : 12 rouges, 10 bleus, les autres verts. Combien de verts ?",
+      "verso": "**8** : d'abord les crayons qui ne sont pas verts, 22 ; puis $30 - 22 = 8$.",
+      "review_status": "relu_agent"
+    },
+    {
+      "id": "FC-B037-05",
+      "skill_id": "B037",
+      "recto": "Léo a 10 billes. Il en perd 4, puis en gagne 6. Vrai ou faux : il en a 20.",
+      "verso": "**Faux** : on a tout ajouté. Les billes perdues s'enlèvent : il lui en reste 6, puis 12 avec les six gagnées.",
+      "review_status": "relu_agent"
+    },
+    {
+      "id": "FC-B038-01",
+      "skill_id": "B038",
+      "recto": "Problème : « 4 paquets de 7 ». Quelle opération donne le total ?",
+      "verso": "**Une multiplication** : 7 se répète 4 fois, $4 \\times 7 = 28$.",
+      "review_status": "relu_agent"
+    },
+    {
+      "id": "FC-B038-02",
+      "skill_id": "B038",
+      "recto": "Lina a 40 €. Elle achète 3 cahiers à 5 €. Combien lui reste-t-il ?",
+      "verso": "**25 €** : les cahiers coûtent $3 \\times 5 = 15$ €, puis $40 - 15 = 25$ €.",
+      "review_status": "relu_agent"
+    },
+    {
+      "id": "FC-B038-03",
+      "skill_id": "B038",
+      "recto": "Deux chemins de calcul justes pour un même problème donnent-ils le même résultat ?",
+      "verso": "**Oui** : on peut grouper les calculs autrement, la quantité cherchée ne change pas.",
+      "review_status": "relu_agent"
+    },
+    {
+      "id": "FC-B038-04",
+      "skill_id": "B038",
+      "recto": "Ema a 26 €. Elle achète 3 livres à 5 €. Vrai ou faux : il lui reste 18 €.",
+      "verso": "**Faux** : elle paie trois fois 5 €, soit 15 €, et non 3 € puis 5 € ; il lui reste $26 - 15 = 11$ €.",
+      "review_status": "relu_agent"
+    },
+    {
+      "id": "FC-B038-05",
+      "skill_id": "B038",
+      "recto": "3 boîtes de 9 œufs, on en casse 5. Vrai ou faux : il reste 27 œufs.",
+      "verso": "**Faux** : 27, c'est le total avant la casse ; il reste $27 - 5 = 22$ œufs.",
+      "review_status": "relu_agent"
+    },
+    {
+      "id": "FC-B039-01",
+      "skill_id": "B039",
+      "recto": "Comment se lit le signe $\\div$ ?",
+      "verso": "**Divisé par** : $20 \\div 4$ se lit « vingt divisé par quatre ».",
+      "review_status": "relu_agent"
+    },
+    {
+      "id": "FC-B039-02",
+      "skill_id": "B039",
+      "recto": "Quelle opération la division défait-elle ?",
+      "verso": "**La multiplication** : comme $6 \\times 8 = 48$, on a $48 \\div 6 = 8$.",
+      "review_status": "relu_agent"
+    },
+    {
+      "id": "FC-B039-03",
+      "skill_id": "B039",
+      "recto": "Combien font $56 \\div 7$ ?",
+      "verso": "**8** : car $7 \\times 8 = 56$.",
+      "review_status": "relu_agent"
+    },
+    {
+      "id": "FC-B039-04",
+      "skill_id": "B039",
+      "recto": "Combien font $72 \\div 8$ ?",
+      "verso": "**9** : on cherche dans la table de 8 le nombre qui donne 72 ; huit fois neuf font 72.",
+      "review_status": "relu_agent"
+    },
+    {
+      "id": "FC-B039-05",
+      "skill_id": "B039",
+      "recto": "Un partage et un groupement s'écrivent-ils avec la même opération ?",
+      "verso": "**Oui, une division** : « 18 images pour 3 enfants » et « 18 images par paquets de 3 » s'écrivent $18 \\div 3$.",
+      "review_status": "relu_agent"
+    },
+    {
+      "id": "FC-B039-06",
+      "skill_id": "B039",
+      "recto": "Vrai ou faux : comme $4 \\times 7 = 28$, alors $4 \\div 7 = 28$.",
+      "verso": "**Faux** : la division part du résultat de la multiplication : $28 \\div 4 = 7$ et $28 \\div 7 = 4$.",
+      "review_status": "relu_agent"
+    },
+    {
+      "id": "FC-B040-01",
+      "skill_id": "B040",
+      "recto": "Division par 29 : par quel nombre rond le remplacer pour estimer un chiffre du quotient ?",
+      "verso": "**30** : 29 est proche de 30 ; on cherche combien de fois 30 tient, puis on vérifie avec 29.",
+      "review_status": "relu_agent"
+    },
+    {
+      "id": "FC-B040-02",
+      "skill_id": "B040",
+      "recto": "Division posée : la multiplication d'essai dépasse le nombre à partager. Que fait-on du chiffre essayé ?",
+      "verso": "**On le diminue de 1** : le résultat dépasse, donc le chiffre était trop grand.",
+      "review_status": "relu_agent"
+    },
+    {
+      "id": "FC-B040-03",
+      "skill_id": "B040",
+      "recto": "Division euclidienne de 100 par 16 : quel est le quotient, quel est le reste ?",
+      "verso": "**Quotient 6, reste 4** : $(16 \\times 6) + 4 = 100$, et 4 est plus petit que 16.",
+      "review_status": "relu_agent"
+    },
+    {
+      "id": "FC-B040-04",
+      "skill_id": "B040",
+      "recto": "Dans une division par 25, le reste peut-il valoir 25 ?",
+      "verso": "**Non** : le reste est toujours plus petit que le diviseur ; avec 25 de reste, on ferait encore une part.",
+      "review_status": "relu_agent"
+    },
+    {
+      "id": "FC-B040-05",
+      "skill_id": "B040",
+      "recto": "150 élèves, des cars de 40 places. Vrai ou faux : il faut 3 cars.",
+      "verso": "**Faux** : $150 = (40 \\times 3) + 30$ ; trois cars pleins, et un quatrième pour les 30 élèves qui restent.",
+      "review_status": "relu_agent"
+    },
+    {
+      "id": "FC-B041-01",
+      "skill_id": "B041",
+      "recto": "Quand on multiplie par 100, que devient chaque unité ?",
+      "verso": "**Une centaine** : et chaque dizaine devient un millier.",
+      "review_status": "relu_agent"
+    },
+    {
+      "id": "FC-B041-02",
+      "skill_id": "B041",
+      "recto": "Combien font $38 \\times 100$ ?",
+      "verso": "**3 800** : trente-huit unités deviennent trente-huit centaines.",
+      "review_status": "relu_agent"
+    },
+    {
+      "id": "FC-B041-03",
+      "skill_id": "B041",
+      "recto": "Comment calculer $4 \\times 60$ de tête ?",
+      "verso": "**Avec la table, en dizaines** : 60, c'est six dizaines ; quatre fois six font vingt-quatre dizaines, soit 240.",
+      "review_status": "relu_agent"
+    },
+    {
+      "id": "FC-B041-04",
+      "skill_id": "B041",
+      "recto": "Combien font $9 \\times 30$ ?",
+      "verso": "**270** : neuf fois trois dizaines font vingt-sept dizaines.",
+      "review_status": "relu_agent"
+    },
+    {
+      "id": "FC-B041-05",
+      "skill_id": "B041",
+      "recto": "Vrai ou faux : $4 \\times 70 = 28$.",
+      "verso": "**Faux** : 70, ce sont sept dizaines ; quatre fois sept dizaines font vingt-huit dizaines, soit 280.",
+      "review_status": "relu_agent"
+    },
+    {
+      "id": "FC-B041-06",
+      "skill_id": "B041",
+      "recto": "Vrai ou faux : $27 \\times 100 = 270$.",
+      "verso": "**Faux** : 270, c'est vingt-sept fois dix. Multiplier par 100 change chaque unité en centaine : 2 700.",
+      "review_status": "relu_agent"
+    },
+    {
+      "id": "FC-B042-01",
+      "skill_id": "B042",
+      "recto": "Addition posée de nombres à trois chiffres : comment aligne-t-on les nombres ?",
+      "verso": "**Unités sous unités, dizaines sous dizaines, centaines sous centaines** : on n'ajoute que des chiffres de même valeur.",
+      "review_status": "relu_agent"
+    },
+    {
+      "id": "FC-B042-02",
+      "skill_id": "B042",
+      "recto": "Addition posée : la colonne des dizaines donne 14. Qu'écrit-on, que retient-on ?",
+      "verso": "**On écrit 4 et on retient une centaine** : quatorze dizaines, c'est une centaine et quatre dizaines.",
+      "review_status": "relu_agent"
+    },
+    {
+      "id": "FC-B042-03",
+      "skill_id": "B042",
+      "recto": "Combien font $250 + 380$ ?",
+      "verso": "**630** : cinq dizaines et huit dizaines font treize dizaines ; on retient une centaine, d'où six centaines.",
+      "review_status": "relu_agent"
+    },
+    {
+      "id": "FC-B042-04",
+      "skill_id": "B042",
+      "recto": "Vrai ou faux : en posant $512 + 7$, on trouve 582.",
+      "verso": "**Faux** : le 7 a été placé sous les dizaines. Unités sous unités : $512 + 7 = 519$.",
+      "review_status": "relu_agent"
+    },
+    {
+      "id": "FC-B042-05",
+      "skill_id": "B042",
+      "recto": "Vrai ou faux : $148 + 235 = 373$.",
+      "verso": "**Faux** : la retenue a été oubliée. Les unités font treize : on écrit trois et on retient une dizaine, d'où $148 + 235 = 383$.",
+      "review_status": "relu_agent"
+    },
+    {
+      "id": "FC-B043-01",
+      "skill_id": "B043",
+      "recto": "« 4 fois plus » : quelle opération fait-on ?",
+      "verso": "**Une multiplication par 4** : on prend quatre fois la quantité.",
+      "review_status": "relu_agent"
+    },
+    {
+      "id": "FC-B043-02",
+      "skill_id": "B043",
+      "recto": "« 3 fois moins » : quelle opération fait-on ?",
+      "verso": "**Une division par 3** : on partage la quantité en trois parts égales et on en garde une.",
+      "review_status": "relu_agent"
+    },
+    {
+      "id": "FC-B043-03",
+      "skill_id": "B043",
+      "recto": "Une corde mesure 8 m. Une autre est 3 fois plus longue. Combien mesure-t-elle ?",
+      "verso": "**24 m** : 3 fois plus, c'est $8 \\times 3 = 24$.",
+      "review_status": "relu_agent"
+    },
+    {
+      "id": "FC-B043-04",
+      "skill_id": "B043",
+      "recto": "Combien fait 5 fois moins que 45 ?",
+      "verso": "**9** : 5 fois moins, c'est $45 \\div 5 = 9$.",
+      "review_status": "relu_agent"
+    },
+    {
+      "id": "FC-B043-05",
+      "skill_id": "B043",
+      "recto": "Vrai ou faux : 2 fois plus que 7, c'est 9.",
+      "verso": "**Faux** : 9, c'est « 2 de plus ». 2 fois plus que 7, c'est $7 \\times 2 = 14$.",
+      "review_status": "relu_agent"
+    },
+    {
+      "id": "FC-B043-06",
+      "skill_id": "B043",
+      "recto": "Paul a 27 cartes, c'est 3 fois plus que Zoé. Vrai ou faux : Zoé en a 81.",
+      "verso": "**Faux** : c'est Paul qui en a le plus. Zoé en a 3 fois moins : $27 \\div 3 = 9$ cartes.",
+      "review_status": "relu_agent"
+    },
+    {
+      "id": "FC-B044-01",
+      "skill_id": "B044",
+      "recto": "Deux relatifs de même signe : comment calcule-t-on leur somme ?",
+      "verso": "**On ajoute leurs distances à zéro et on garde leur signe** : $(-2) + (-9) = -11$.",
+      "review_status": "relu_agent"
+    },
+    {
+      "id": "FC-B044-02",
+      "skill_id": "B044",
+      "recto": "Deux relatifs de signes contraires : quel signe a leur somme ?",
+      "verso": "**Celui du nombre le plus éloigné de zéro** : on soustrait les distances à zéro ; si elles sont égales, la somme vaut 0.",
+      "review_status": "relu_agent"
+    },
+    {
+      "id": "FC-B044-03",
+      "skill_id": "B044",
+      "recto": "Calcule $(-11) + (+6)$.",
+      "verso": "**−5** : signes contraires ; 11 est plus loin de zéro que 6, on calcule $11 - 6 = 5$ et on garde le signe de $-11$.",
+      "review_status": "relu_agent"
+    },
+    {
+      "id": "FC-B044-04",
+      "skill_id": "B044",
+      "recto": "Calcule $(-0{,}5) + (-2{,}5)$.",
+      "verso": "**−3** : même signe, on ajoute les distances à zéro, $0{,}5 + 2{,}5 = 3$, et on garde le signe −.",
+      "review_status": "relu_agent"
+    },
+    {
+      "id": "FC-B044-05",
+      "skill_id": "B044",
+      "recto": "Que vaut la somme de deux nombres opposés ?",
+      "verso": "**0** : par exemple $(-3{,}7) + (+3{,}7) = 0$ ; on recule puis on avance de la même longueur.",
+      "review_status": "relu_agent"
+    },
+    {
+      "id": "FC-B044-06",
+      "skill_id": "B044",
+      "recto": "Vrai ou faux : $(-3) + (+10) = -13$.",
+      "verso": "**Faux** : les signes sont contraires, on soustrait les distances à zéro, $10 - 3 = 7$ ; +10 l'emporte, la somme vaut 7.",
+      "review_status": "relu_agent"
+    },
+    {
+      "id": "FC-B045-01",
+      "skill_id": "B045",
+      "recto": "Soustraire un nombre relatif, c'est ajouter quoi ?",
+      "verso": "**Son opposé** : $(+4) - (-7) = (+4) + (+7) = 11$.",
+      "review_status": "relu_agent"
+    },
+    {
+      "id": "FC-B045-02",
+      "skill_id": "B045",
+      "recto": "Calcule $(-4) - (+8)$.",
+      "verso": "**−12** : on ajoute l'opposé de +8 : $(-4) + (-8) = -12$.",
+      "review_status": "relu_agent"
+    },
+    {
+      "id": "FC-B045-03",
+      "skill_id": "B045",
+      "recto": "Calcule $(-4) - (-11)$.",
+      "verso": "**7** : soustraire −11, c'est ajouter 11 : $(-4) + (+11) = 7$.",
+      "review_status": "relu_agent"
+    },
+    {
+      "id": "FC-B045-04",
+      "skill_id": "B045",
+      "recto": "Comment calcule-t-on l'écart entre deux températures ?",
+      "verso": "**La plus grande moins la plus petite** : de −2 °C à 9 °C, l'écart vaut $9 - (-2) = 11$ degrés.",
+      "review_status": "relu_agent"
+    },
+    {
+      "id": "FC-B045-05",
+      "skill_id": "B045",
+      "recto": "Vrai ou faux : $(-8) - (+6) = (-8) + (+6)$.",
+      "verso": "**Faux** : on ajoute l'opposé de +6, qui est −6 : $(-8) - (+6) = (-8) + (-6) = -14$.",
+      "review_status": "relu_agent"
+    },
+    {
+      "id": "FC-B045-06",
+      "skill_id": "B045",
+      "recto": "De −11 °C à 4 °C, vrai ou faux : la température a augmenté de 7 degrés.",
+      "verso": "**Faux** : on ne soustrait pas les distances à zéro. L'écart vaut $4 - (-11) = 15$ degrés.",
+      "review_status": "relu_agent"
+    },
+    {
+      "id": "FC-B046-01",
+      "skill_id": "B046",
+      "recto": "Dans l'écriture simplifiée $-4 + 9 - 1$, à quel terme appartient chaque signe ?",
+      "verso": "**Au terme qui le suit** : les termes sont −4, +9 et −1.",
+      "review_status": "relu_agent"
+    },
+    {
+      "id": "FC-B046-02",
+      "skill_id": "B046",
+      "recto": "Quelle est l'écriture simplifiée de $(-6) + (-2)$ ?",
+      "verso": "**−6 − 2** : on supprime le signe + d'addition et les parenthèses, chaque nombre garde son signe.",
+      "review_status": "relu_agent"
+    },
+    {
+      "id": "FC-B046-03",
+      "skill_id": "B046",
+      "recto": "Dans l'écriture simplifiée, par quel signe remplace-t-on « moins un nombre négatif » ?",
+      "verso": "**Par un signe +** : soustraire un négatif, c'est ajouter son opposé ; « − (−7) » devient « + 7 ».",
+      "review_status": "relu_agent"
+    },
+    {
+      "id": "FC-B046-04",
+      "skill_id": "B046",
+      "recto": "Écris $-3 - 9$ comme une somme de deux relatifs entre parenthèses.",
+      "verso": "**(−3) + (−9)** : dans l'écriture simplifiée, chaque signe appartient au terme qui le suit ; les termes sont −3 et −9, on les relie par un signe +.",
+      "review_status": "relu_agent"
+    },
+    {
+      "id": "FC-B046-05",
+      "skill_id": "B046",
+      "recto": "Vrai ou faux : $(-2) - (+6)$ s'écrit simplement $-2 + 6$.",
+      "verso": "**Faux** : soustraire +6, c'est ajouter −6 ; on écrit $-2 - 6$.",
+      "review_status": "relu_agent"
+    },
+    {
+      "id": "FC-B047-01",
+      "skill_id": "B047",
+      "recto": "Pour calculer une longue somme de relatifs, que regroupe-t-on ?",
+      "verso": "**Les termes positifs ensemble, les termes négatifs ensemble** : puis on ajoute les deux résultats.",
+      "review_status": "relu_agent"
+    },
+    {
+      "id": "FC-B047-02",
+      "skill_id": "B047",
+      "recto": "Calcule de tête $-9 + 15 + 9 - 3$.",
+      "verso": "**12** : −9 et +9 sont opposés, ils s'annulent ; il reste $15 - 3 = 12$.",
+      "review_status": "relu_agent"
+    },
+    {
+      "id": "FC-B047-03",
+      "skill_id": "B047",
+      "recto": "Calcule $-15 + 13 - 2 + 3$.",
+      "verso": "**−1** : les positifs font 16, les négatifs −17, et $16 - 17 = -1$.",
+      "review_status": "relu_agent"
+    },
+    {
+      "id": "FC-B047-04",
+      "skill_id": "B047",
+      "recto": "Vrai ou faux : dans $10 - (-2) + 3$, on peut écrire $10 - 2 + 3$.",
+      "verso": "**Faux** : $-(-2)$ devient $+2$ ; on écrit $10 + 2 + 3$, qui vaut 15.",
+      "review_status": "relu_agent"
+    },
+    {
+      "id": "FC-B047-05",
+      "skill_id": "B047",
+      "recto": "Vrai ou faux : $-10 + 10 = -20$.",
+      "verso": "**Faux** : −10 et +10 sont opposés, leur somme est nulle : $-10 + 10 = 0$.",
+      "review_status": "relu_agent"
+    },
+    {
+      "id": "FC-B048-01",
+      "skill_id": "B048",
+      "recto": "Comment calcule-t-on une variation de température ?",
+      "verso": "**Arrivée moins départ** : si le résultat est négatif, la température a baissé.",
+      "review_status": "relu_agent"
+    },
+    {
+      "id": "FC-B048-02",
+      "skill_id": "B048",
+      "recto": "Un plongeur est à −20 m. Il remonte de 8 m. À quelle altitude est-il ?",
+      "verso": "**−12 m** : remonter s'ajoute, $(-20) + (+8) = -12$.",
+      "review_status": "relu_agent"
+    },
+    {
+      "id": "FC-B048-03",
+      "skill_id": "B048",
+      "recto": "De −3 °C à 8 °C, de combien de degrés la température a-t-elle augmenté ?",
+      "verso": "**11 degrés** : arrivée moins départ, $8 - (-3) = 11$.",
+      "review_status": "relu_agent"
+    },
+    {
+      "id": "FC-B048-04",
+      "skill_id": "B048",
+      "recto": "Une température varie de −5 degrés. Que s'est-il passé ?",
+      "verso": "**Elle a baissé de 5 degrés** : une variation négative est une baisse.",
+      "review_status": "relu_agent"
+    },
+    {
+      "id": "FC-B048-05",
+      "skill_id": "B048",
+      "recto": "De −13 °C à 3 °C, vrai ou faux : l'écart est de 10 degrés.",
+      "verso": "**Faux** : on ne soustrait pas les distances à zéro ; l'écart vaut $3 - (-13) = 16$ degrés.",
+      "review_status": "relu_agent"
+    },
+    {
+      "id": "FC-B048-06",
+      "skill_id": "B048",
+      "recto": "Un compte est à −30 €. On dépose 50 €. Vrai ou faux : le solde est de 80 €.",
+      "verso": "**Faux** : à −30 €, on doit 30 € à la banque ; $(-30) + (+50) = 20$, le solde est de 20 €.",
+      "review_status": "relu_agent"
+    },
+    {
+      "id": "FC-B049-01",
+      "skill_id": "B049",
+      "recto": "Deux facteurs de même signe : quel est le signe de leur produit ?",
+      "verso": "**Positif** : $(-3) \\times (-7) = 21$, comme $3 \\times 7 = 21$.",
+      "review_status": "relu_agent"
+    },
+    {
+      "id": "FC-B049-02",
+      "skill_id": "B049",
+      "recto": "Deux facteurs de signes contraires : quel est le signe de leur produit ?",
+      "verso": "**Négatif** : par exemple $3 \\times (-5) = -15$.",
+      "review_status": "relu_agent"
+    },
+    {
+      "id": "FC-B049-03",
+      "skill_id": "B049",
+      "recto": "Pourquoi $2 \\times (-7)$ est-il négatif ?",
+      "verso": "**C'est une addition répétée de −7** : $(-7) + (-7) = -14$.",
+      "review_status": "relu_agent"
+    },
+    {
+      "id": "FC-B049-04",
+      "skill_id": "B049",
+      "recto": "Calcule $(-6) \\times (-8)$.",
+      "verso": "**48** : même signe, produit positif ; $6 \\times 8 = 48$.",
+      "review_status": "relu_agent"
+    },
+    {
+      "id": "FC-B049-05",
+      "skill_id": "B049",
+      "recto": "Calcule $(-0{,}25) \\times 4$.",
+      "verso": "**−1** : signes contraires, produit négatif ; $0{,}25 \\times 4 = 1$.",
+      "review_status": "relu_agent"
+    },
+    {
+      "id": "FC-B049-06",
+      "skill_id": "B049",
+      "recto": "Vrai ou faux : $(-9) \\times (-2) = -18$.",
+      "verso": "**Faux** : « deux négatifs donnent un négatif » vaut pour une somme, pas pour un produit. Deux facteurs de même signe donnent un produit positif : 18.",
+      "review_status": "relu_agent"
+    },
+    {
+      "id": "FC-B050-01",
+      "skill_id": "B050",
+      "recto": "Quelle règle des signes suit un quotient de relatifs ?",
+      "verso": "**La même que le produit** : même signe, quotient positif ; signes contraires, quotient négatif.",
+      "review_status": "relu_agent"
+    },
+    {
+      "id": "FC-B050-02",
+      "skill_id": "B050",
+      "recto": "Calcule $(-42) \\div 6$.",
+      "verso": "**−7** : signes contraires, quotient négatif ; $42 \\div 6 = 7$.",
+      "review_status": "relu_agent"
+    },
+    {
+      "id": "FC-B050-03",
+      "skill_id": "B050",
+      "recto": "Calcule $(-4{,}8) \\div (-2)$.",
+      "verso": "**2,4** : même signe, quotient positif ; $4{,}8 \\div 2 = 2{,}4$.",
+      "review_status": "relu_agent"
+    },
+    {
+      "id": "FC-B050-04",
+      "skill_id": "B050",
+      "recto": "Peut-on calculer $(-5) \\div 0$ ?",
+      "verso": "**Non** : on ne divise jamais par zéro ; aucun nombre multiplié par 0 ne donne −5.",
+      "review_status": "relu_agent"
+    },
+    {
+      "id": "FC-B050-05",
+      "skill_id": "B050",
+      "recto": "Complète : $(-3) \\times \\ldots = 24$.",
+      "verso": "**−8** : le facteur manquant est $24 \\div (-3) = -8$.",
+      "review_status": "relu_agent"
+    },
+    {
+      "id": "FC-B050-06",
+      "skill_id": "B050",
+      "recto": "Vrai ou faux : $(-30) \\div (-5) = -6$.",
+      "verso": "**Faux** : le quotient de deux négatifs est positif ; $(-30) \\div (-5) = 6$.",
+      "review_status": "relu_agent"
+    },
+    {
+      "id": "FC-B051-01",
+      "skill_id": "B051",
+      "recto": "Avec des relatifs, les priorités opératoires changent-elles ?",
+      "verso": "**Non** : parenthèses, puis multiplications et divisions, puis additions et soustractions ; la règle des signes vaut pour chaque produit.",
+      "review_status": "relu_agent"
+    },
+    {
+      "id": "FC-B051-02",
+      "skill_id": "B051",
+      "recto": "Calcule $-8 + 7 \\times (-1)$.",
+      "verso": "**−15** : la multiplication passe avant, $7 \\times (-1) = -7$, puis $-8 + (-7) = -15$.",
+      "review_status": "relu_agent"
+    },
+    {
+      "id": "FC-B051-03",
+      "skill_id": "B051",
+      "recto": "Un produit a quatre facteurs négatifs et aucun nul. Quel est son signe ?",
+      "verso": "**Il est positif** : les facteurs négatifs se regroupent deux par deux, et chaque paire donne un produit positif.",
+      "review_status": "relu_agent"
+    },
+    {
+      "id": "FC-B051-04",
+      "skill_id": "B051",
+      "recto": "Comment nomme-t-on le calcul $(-7 + 16) \\times (-4)$ ?",
+      "verso": "**Un produit** : la parenthèse passe avant, la dernière opération est la multiplication.",
+      "review_status": "relu_agent"
+    },
+    {
+      "id": "FC-B051-05",
+      "skill_id": "B051",
+      "recto": "Vrai ou faux : $-9 + (-7) = 16$.",
+      "verso": "**Faux** : c'est une somme, pas un produit ; deux négatifs s'ajoutent : $-9 + (-7) = -16$.",
+      "review_status": "relu_agent"
+    },
+    {
+      "id": "FC-B051-06",
+      "skill_id": "B051",
+      "recto": "Programme : choisir −7, multiplier par 4, ajouter 11. Quel résultat ?",
+      "verso": "**−17** : $(-7) \\times 4 + 11 = -28 + 11 = -17$.",
+      "review_status": "relu_agent"
+    },
+    {
+      "id": "FC-B052-01",
+      "skill_id": "B052",
+      "recto": "Dans un calcul, quand calcule-t-on les carrés et les cubes ?",
+      "verso": "**Après les parenthèses, avant les multiplications** : viennent ensuite les additions et les soustractions.",
+      "review_status": "relu_agent"
+    },
+    {
+      "id": "FC-B052-02",
+      "skill_id": "B052",
+      "recto": "Dans $12 \\times 11^2$, sur quoi porte l'exposant ?",
+      "verso": "**Seulement sur 11** : l'exposant porte sur le nombre écrit juste devant lui ; on calcule $11^2$ avant de multiplier par 12.",
+      "review_status": "relu_agent"
+    },
+    {
+      "id": "FC-B052-03",
+      "skill_id": "B052",
+      "recto": "Calcule $30^2 - 20^2$.",
+      "verso": "**500** : les carrés passent avant la soustraction ; $900 - 400 = 500$.",
+      "review_status": "relu_agent"
+    },
+    {
+      "id": "FC-B052-04",
+      "skill_id": "B052",
+      "recto": "Calcule $(17 + 13)^2$.",
+      "verso": "**900** : d'abord la parenthèse, 30 ; puis son carré, trente fois trente.",
+      "review_status": "relu_agent"
+    },
+    {
+      "id": "FC-B052-05",
+      "skill_id": "B052",
+      "recto": "Vrai ou faux : $2 \\times 30^2 = 3\\,600$.",
+      "verso": "**Faux** : le carré ne porte que sur 30 ; $2 \\times 900 = 1\\,800$. C'est $(2 \\times 30)^2$ qui vaut 3 600.",
+      "review_status": "relu_agent"
+    },
+    {
+      "id": "FC-B052-06",
+      "skill_id": "B052",
+      "recto": "Vrai ou faux : $60^2 = 120$.",
+      "verso": "**Faux** : l'exposant n'est pas un facteur ; $60^2 = 60 \\times 60 = 3\\,600$.",
+      "review_status": "relu_agent"
+    },
+    {
+      "id": "FC-B053-01",
+      "skill_id": "B053",
+      "recto": "Pour multiplier deux puissances de même exposant, que fait-on ?",
+      "verso": "**On multiplie les nombres et on garde l'exposant** : les facteurs se regroupent par paires.",
+      "review_status": "relu_agent"
+    },
+    {
+      "id": "FC-B053-02",
+      "skill_id": "B053",
+      "recto": "$40^{11} \\times 25^{11}$ s'écrit $a^{11}$. Que vaut a ?",
+      "verso": "**1 000** : chaque 40 se regroupe avec un 25, et $40 \\times 25 = 1\\,000$.",
+      "review_status": "relu_agent"
+    },
+    {
+      "id": "FC-B053-03",
+      "skill_id": "B053",
+      "recto": "Calcule $0{,}5^{15} \\times 2^{15}$.",
+      "verso": "**1** : on regroupe par paires, $0{,}5 \\times 2 = 1$, et un produit de facteurs égaux à 1 vaut 1.",
+      "review_status": "relu_agent"
+    },
+    {
+      "id": "FC-B053-04",
+      "skill_id": "B053",
+      "recto": "Peut-on écrire $5^{8} \\times 7^{11}$ comme une seule puissance de 35 ?",
+      "verso": "**Non** : les exposants doivent être égaux ; ici, seuls huit facteurs 7 trouvent un partenaire 5, trois facteurs 7 restent seuls.",
+      "review_status": "relu_agent"
+    },
+    {
+      "id": "FC-B053-05",
+      "skill_id": "B053",
+      "recto": "Vrai ou faux : $12^{11} \\times 5^{11} = 60^{22}$.",
+      "verso": "**Faux** : on n'ajoute pas les exposants ; onze paires de facteurs $12 \\times 5$ donnent $60^{11}$.",
+      "review_status": "relu_agent"
+    },
     {
       "id": "FC-C001-01",
       "skill_id": "C001",

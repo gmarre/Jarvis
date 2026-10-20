@@ -1,0 +1,37 @@
+[
+  {
+    "id": "FC-B012-01",
+    "skill_id": "B012",
+    "recto": "Dans un calcul avec des parenthèses, que calcule-t-on d'abord ?",
+    "verso": "**Ce qui est entre les parenthèses** : son résultat remplace ensuite toute la parenthèse.",
+    "review_status": "relu_agent"
+  },
+  {
+    "id": "FC-B012-02",
+    "skill_id": "B012",
+    "recto": "Calcule $(5 + 2) \\times 3$.",
+    "verso": "**21** : d'abord $5 + 2 = 7$, puis $7 \\times 3 = 21$.",
+    "review_status": "relu_agent"
+  },
+  {
+    "id": "FC-B012-03",
+    "skill_id": "B012",
+    "recto": "Calcule $70 - (17 + 3)$.",
+    "verso": "**50** : d'abord $17 + 3 = 20$, puis $70 - 20 = 50$.",
+    "review_status": "relu_agent"
+  },
+  {
+    "id": "FC-B012-04",
+    "skill_id": "B012",
+    "recto": "Vrai ou faux : $90 - (50 - 20) = 20$.",
+    "verso": "**Faux** : on a enlevé 50 puis 20 sans tenir compte des parenthèses. D'abord $50 - 20 = 30$, puis $90 - 30 = 60$.",
+    "review_status": "relu_agent"
+  },
+  {
+    "id": "FC-B012-05",
+    "skill_id": "B012",
+    "recto": "Vrai ou faux : $(2 + 7) \\times 3 = 23$.",
+    "verso": "**Faux** : la parenthèse regroupe 2 et 7. On calcule $2 + 7 = 9$, puis $9 \\times 3 = 27$.",
+    "review_status": "relu_agent"
+  }
+]
