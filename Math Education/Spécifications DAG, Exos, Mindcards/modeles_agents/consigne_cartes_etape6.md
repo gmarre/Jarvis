@@ -46,6 +46,12 @@ Ton rôle (R1 ou R2) t'est indiqué dans ton message de lancement. Les cartes co
   - les tables de multiplication apprises s'arrêtent à 10 : jamais « dans la table de 12 » ni « de 15 », écris « 36 = 12 × 3 » ;
   - aucune opération hors de la chaîne de la branche, par exemple une division décimale par un nombre à deux chiffres avant D026, ou la règle des signes avant B049 ;
   - le mot « puissance » au sens physique (watts) est banni des cartes de puissances.
+- **Leçons de la relecture de l'étape 7** (14 % de cartes bloquantes) :
+  - 0 est à la fois positif et négatif : toute règle « si a est positif / négatif » dit « strictement » quand le cas 0 est à part ;
+  - un grand nombre est calculable dans la chaîne ou justifié sur la ligne (« car 361 = 19² ») : sans A034, l'élève ne reconnaît que les carrés de 0 à 12 ;
+  - les notations canoniques (2n, 2n + 1, le 2 de 2ab, les identités) sont exemptées du contrôle des couples ;
+  - le contrôle des couples porte aussi sur les textes d'erreur (`misconception`) affichés à l'élève ;
+  - une ligne « Erreur à éviter » décrit une vraie erreur, jamais une démarche juste mais superflue.
 
 ## Vérifications obligatoires
 Python : `C:\Users\MARRE\AppData\Local\Temp\claude\c--Users-MARRE-Documents-Jarvis\ea40d22e-4298-472f-ad2f-ecce13c7b8cb\scratchpad\venv\Scripts\python.exe`, avec `PYTHONIOENCODING=utf-8`.
