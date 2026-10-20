@@ -1,0 +1,44 @@
+[
+  {
+    "id": "FC-G002-01",
+    "skill_id": "G002",
+    "recto": "Quand le robot tourne d'un quart de tour, change-t-il de case ?",
+    "verso": "**Non** : il tourne sur place ; seule la direction de sa flèche change.",
+    "review_status": "relu_agent"
+  },
+  {
+    "id": "FC-G002-02",
+    "skill_id": "G002",
+    "recto": "Le robot recule. Sa flèche change-t-elle de direction ?",
+    "verso": "**Non** : reculer, c'est aller en arrière sans se tourner ; la flèche garde sa direction.",
+    "review_status": "relu_agent"
+  },
+  {
+    "id": "FC-G002-03",
+    "skill_id": "G002",
+    "recto": "Le robot avance de 5 cases. Compte-t-on la case d'où il part ?",
+    "verso": "**Non** : on compte seulement les cases où il arrive ; en comptant la case de départ, on s'arrête une case trop tôt.",
+    "review_status": "relu_agent"
+  },
+  {
+    "id": "FC-G002-04",
+    "skill_id": "G002",
+    "recto": "Le robot regarde vers la droite de ta feuille. Il tourne à droite. Vers où regarde-t-il ?",
+    "verso": "**Vers le bas de ta feuille** : il fait un quart de tour vers sa droite à lui.",
+    "review_status": "relu_agent"
+  },
+  {
+    "id": "FC-G002-05",
+    "skill_id": "G002",
+    "recto": "Le robot regarde vers la gauche de ta feuille. Il tourne à droite. Vers où regarde-t-il ?",
+    "verso": "**Vers le haut de ta feuille** : quand il regarde vers la gauche, sa droite à lui est vers le haut de la feuille.",
+    "review_status": "relu_agent"
+  },
+  {
+    "id": "FC-G002-06",
+    "skill_id": "G002",
+    "recto": "Robot tourné vers le bas de ta feuille. Vrai ou faux : sa droite est du côté de ta main droite.",
+    "verso": "**Faux** : il te fait face, donc sa droite est du côté de ta main gauche ; il faut se mettre à sa place.",
+    "review_status": "relu_agent"
+  }
+]
