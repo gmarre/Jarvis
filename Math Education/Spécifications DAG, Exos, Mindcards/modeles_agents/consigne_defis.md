@@ -42,6 +42,7 @@ Ton fichier est un tableau JSON de cartes :
 2. **Les notations contrôlées par le validateur** : ², ³ seulement sous A029 ; les autres exposants sous A031 ; l'exposant négatif sous A036 ; √ sous A034 ; les symboles < et > à partir de A006. Le validateur les vérifie sur le recto et le verso.
 3. **Aucune carte ne donne la réponse d'un exercice ni d'un test de la même compétence.** Pas de couple de données repris d'un énoncé, d'une réponse, d'une proposition, d'un corrigé, d'un indice ou d'un `validation_test`. Une fraction compte pour une seule donnée. Compare chaque carte à chaque exercice de la compétence.
 3 bis. **Pas de question d'exercice ou de test reprise avec d'autres nombres quand la réponse n'en dépend pas** (« Pourquoi écrit-on 7 − (−6) avec des parenthèses ? » contre le test « Pourquoi écrit-on 4 − (−3)… ? » ; « 9 − 6 et 6 − 9 donnent-ils le même résultat ? ») : la carte donne alors la réponse. Leçon de la relecture du lot B.
+3 ter. **Les carrés à savoir (0 à 12) et les tables jusqu'à 10 valent aussi pour les encadrements** : pas de √200 ni de √168 à encadrer de tête (leçon du lot A).
 4. **Chaque égalité est juste.** Recalcule-la avec un script (Fraction).
 5. **Le piège reprend une erreur classique réelle** : celles des descriptions des compétences, des `misconception` des QCM et des consignes de rédaction (`_travail\brief_etape5.md`, `brief_etape6.md`). Le verso dit pourquoi c'est faux.
 6. **Recto et verso différents.** Le recto ne contient jamais sa propre réponse.
