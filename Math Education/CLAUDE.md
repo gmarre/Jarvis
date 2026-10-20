@@ -19,7 +19,7 @@ Application web d'apprentissage adaptatif des mathématiques, CP à Terminale à
 
 ---
 
-## 2. État au 19 octobre 2026
+## 2. État au 20 octobre 2026
 
 ### 2.1 Contenu (étape 5 fusionnée le 19 octobre 2026)
 
@@ -78,7 +78,7 @@ Ce qui est faux ou absent aujourd'hui (repris dans le backlog §6) :
 **Sécurité et opérations**
 - `SUPABASE_SERVICE_ROLE_KEY` : jamais affichée, jamais préfixée `VITE_`, lue seulement par les scripts locaux depuis `.env.local`.
 - Le fichier Google `client_secret_*.json` n'est jamais commité.
-- **Migrations : jamais par l'outil MCP `apply_migration` (refusé par Gauthier).** Créer le fichier numéroté suivant dans `supabase/migrations/` (rejouable : `if not exists`, `create or replace`, `drop policy if exists`), puis Gauthier le colle dans le SQL Editor. Ne jamais modifier une migration déjà appliquée (dernière appliquée : 0011, le 19 octobre 2026).
+- **Migrations : jamais par l'outil MCP `apply_migration` (refusé par Gauthier).** Créer le fichier numéroté suivant dans `supabase/migrations/` (rejouable : `if not exists`, `create or replace`, `drop policy if exists`), puis Gauthier le colle dans le SQL Editor. Ne jamais modifier une migration déjà appliquée (dernière appliquée : 0012, le 20 octobre 2026).
 - Les outils MCP Supabase `deploy_edge_function`, `get_edge_function` et `execute_sql` en lecture sont acceptés.
 - Ne pas contourner un refus du classifieur de sécurité.
 
@@ -125,7 +125,7 @@ Ce qui est faux ou absent aujourd'hui (repris dans le backlog §6) :
   - Le générateur refuse une figure qui trompe l'œil : angle codé droit qui ne l'est pas, angle presque droit, points presque alignés, longueurs codées égales qui ne le sont pas.
   - L'app affiche la figure en `<img>` data URI, donc aucun script ne peut s'exécuter.
 
-### 4.2 Base (`supabase/migrations/0001` à `0011`, chaque fichier explique son objet)
+### 4.2 Base (`supabase/migrations/0001` à `0012`, chaque fichier explique son objet)
 
 **Tables :**
 - `profiles` (rôle, niveau, email parent, consentement, préférences) ;
@@ -140,7 +140,7 @@ Ce qui est faux ou absent aujourd'hui (repris dans le backlog §6) :
 
 **Colonnes protégées du client** (trigger) : `role` (choisi une seule fois, `role_choisi_le`, 0010), `consentement_parental_at`, `email`, `cree_le`, `abonnement` ; pour un mineur, `date_naissance` (0011). Un changement de parent ou une date sous 15 ans remet le consentement à zéro.
 
-**Edge Functions :** `corriger` (`verify_jwt: true`, version 6 : signe moins typographique et °C) ; `accord-parental` (`verify_jwt: false`, le parent n'a pas de compte ; secrets `RESEND_API_KEY`, `RESEND_FROM`, `APP_URL`).
+**Edge Functions :** `corriger` (`verify_jwt: true`, version 9 : signe moins typographique, °C, « +8 °C », puissances et notation scientifique reconnues sans calcul, fractions relatives, « ÷ ») ; `accord-parental` (`verify_jwt: false`, le parent n'a pas de compte ; secrets `RESEND_API_KEY`, `RESEND_FROM`, `APP_URL`).
 
 **Fonctions d'autorisation** en `security definer`, pour éviter la récursion RLS : `peut_lire_eleve`, `est_prof_de`, `est_parent_de`, `role_actuel`, `nb_places_prises`. Aucune n'est appelable par `anon`.
 
@@ -218,8 +218,7 @@ Contrôle : un appel avec la clé anonyme doit répondre **401 « Connexion requ
 
 ### Sprint 1 : Compte, profil, style graphique et mobile (priorité absolue)
 
-**Avancement au 19 octobre 2026 (soir)** : points 1, 2, 3, 5, 6, 7, 8 et 10 faits et commités (palette bleu du logo validée par Gauthier, photo sur l'écran de connexion) ; migrations 0010 et 0011 appliquées ; « Confirm email » activé ; `accord-parental` déployée ; tests SQL verts sous PGlite.
-**Reste :** point 4 (capture de la fenêtre de reconnexion, toujours absente : `captures/Fenetre_co.jpg` est la photo de connexion) ; Gauthier pose le secret `RESEND_API_KEY` (Supabase, Edge Functions, Secrets), puis test de bout en bout du consentement avec son propre email (sans domaine, Resend n'écrit qu'au titulaire du compte).
+**Sprint 1 clos le 20 octobre 2026.** Tous les points faits et commités ; migrations 0010 et 0011 appliquées ; « Confirm email » activé ; `accord-parental` déployée ; secret `RESEND_API_KEY` posé par Gauthier (test de bout en bout du consentement avec sa propre adresse encore à faire ensemble). Point 4 : la demande d'origine (« Connexion au serveur quand en arrière ») visait l'**image de fond de l'écran de connexion** (`captures/Fenetre_co.jpg`), en place.
 Décisions prises en route : la page publique du parent est `/accord/:jeton` (consentement et modifications), pas `/consentement/:token` ; les pastilles de QCM gardent leur lettre d'origine (11 corrigés citent « la proposition c »).
 
 **Application**
@@ -268,6 +267,30 @@ Décisions prises en route : la page publique du parent est `/accord/:jeton` (co
 
 ### Sprint 2 : Pédagogie de l'élève
 
+**Avancement au 20 octobre 2026 :**
+- fait et commité : point 1 (correction du test de positionnement à la fin, sans nouvelle fonction serveur : la correction rendue après chaque réponse est conservée), point 3 en partie (série de jours réelle, `lib/serie.ts`), point 5 (astuce et « Tout déplier »), point 6 (chemins proposés, `lib/chemins.ts`, migration 0012 appliquée) ;
+- aussi : bouton « ± » sur la saisie numérique à partir de la 5e (le pavé de l'iPhone n'a pas de signe moins) ;
+- **prochain point de code : le point 2 (maîtrise sur 5), table validée ci-dessous**, avec le scénario d'horloge du point 3 ;
+- restent ensuite : point 4 (cartes défi), point 7 (super exercices), point 8 (étude engagement) ;
+- limite connue : un élève très en retard voit des chemins très longs (jusqu'à 90 compétences) ; n'afficher que les prochaines étapes.
+
+**Table de maîtrise validée par Gauthier le 20 octobre 2026 :**
+
+| Niveau | Sens | Ce que fait l'application |
+|---|---|---|
+| 0 | Pas encore travaillée | Dans le plan si c'est une lacune |
+| 1 | Un exercice réussi | Dans le plan de travail |
+| 2 | Deux exercices différents réussis, aucun de niveau maîtrise | Dans le plan de travail |
+| 3 | Rouverte après un contrôle raté | Dans le plan ; un exercice de maîtrise réussi la remonte à 4 |
+| 4 | Acquise (2 exercices différents réussis, dont 1 de maîtrise) | Contrôles à J+3, J+10, J+30 ; 3 contrôles réussis d'affilée la font passer à 5 |
+| 5 | Complètement acquise | Plus aucun contrôle |
+
+- Un contrôle : un exercice de la compétence non fait récemment, de niveau entraînement ou maîtrise ; il apparaît dans « À réviser » avec les cartes.
+- Contrôle raté : descente à 3, la compétence revient dans le plan.
+- Validée par le test d'entrée : niveau 4, contrôles plus espacés (J+14, puis J+45) ; un contrôle réussi ne change rien de visible, un raté rouvre (niveau 3).
+- Reprise des progressions existantes : « maîtrisée » devient 4 avec un contrôle à J+3 ; « en cours » devient 1 ou 2 selon les réussites.
+- L'élève voit son niveau sur 5 (5 petits ronds) par compétence.
+
 1. **Correction du test de positionnement :** à la fin du test (pas pendant, pour ne pas casser le rythme), l'élève revoit chaque question, sa réponse, la bonne réponse et le corrigé. Il faut une fonction serveur qui rend les clés **après** le test seulement.
 2. **Maîtrise exigeante et notée sur 5** (méthode validée par Gauthier le 19 octobre 2026). Aujourd'hui une compétence est maîtrisée avec 3 réussites sur les 4 dernières tentatives (`mastery_threshold`).
    - **Règle d'acquisition :** au moins 2 exercices différents réussis, dont un de niveau maîtrise.
@@ -297,7 +320,7 @@ Décisions prises en route : la page publique du parent est `/accord/:jeton` (co
    Les chemins sont calculés depuis le DAG (lacunes et objectifs de la classe), pas écrits à la main.
 7. **« Super exercices » (problèmes transverses de 15 à 20 min) :** ils bloquent l'accès au niveau supérieur et demandent plusieurs domaines à la fois. Jamais proposés pendant le test d'entrée.
    - **Volume** (décision de Gauthier) : **au minimum 1 par classe et par domaine, et viser 4 à 5**.
-   - **Interprétation retenue :** « 1 par classe par compétence » est compris comme par classe et par domaine. Un super exercice par compétence ferait plus de 750 problèmes longs, hors de portée ; le confirmer avec Gauthier au lancement.
+   - **Décision de Gauthier (20 octobre 2026) : commencer par un super exercice par compétence**, compléter ensuite. Avancer par domaine et par classe, pas tout d'un coup.
    - **Ce qu'ils travaillent en priorité :** la **compréhension des énoncés** (texte long, données à trier, informations inutiles) et la **convergence des notions** (plusieurs compétences de domaines différents dans un même problème). C'est là que les élèves échouent le plus.
    - **Contenu :** rédigés et relus par agents, comme les exercices ; une consigne propre est à écrire, avec un barème par étape.
    - **Application :** un type d'exercice « super exercice » à plusieurs questions enchaînées, une page d'examen, et le blocage du niveau supérieur tant qu'il n'est pas réussi.
@@ -305,7 +328,7 @@ Décisions prises en route : la page publique du parent est `/accord/:jeton` (co
    - **Garde-fou :** pas de mécanique manipulatrice sur des mineurs (pas de perte punitive, pas de notifications nocturnes), conformément aux recommandations CNIL pour les mineurs.
    - Rappels : emails d'abord, notifications PWA ensuite.
 
-**Contenu :** étape 6 du §7.
+**Contenu :** étape 6 du §7 : cartographe fait le 20 octobre 2026 (26 compétences : A029 à A040, B022, B023, B052, B053, C013, C015, C017, C018, C033 à C037, D026 ; `_travail/etape6_dag_C.*`), **9 arbitrages validés par Gauthier** (puissances, racine et notation scientifique en A ; numérotation gardée ; découpage proposé ; x² = a à l'étape 7 ; liens proposés, dont C008 ← A025 déjà en place, et retrait des arêtes redondantes C007 ← B006, C007 ← B039, C011 ← B006 ; 2 évaluations partielles ; correction des puissances faite ; 3 petites cartes gardées ; validateur : séparer l'exposant de l'unité d'aire, ajouter √ et l'exposant négatif aux notations contrôlées). Prochaine action : rédacteurs.
 
 ### Sprint 3 : Professeur v1
 
@@ -439,11 +462,11 @@ Toute nouvelle lettre exige une migration qui élargit les contraintes `A-P`, et
 
 **Réponses du 19 octobre 2026 (soir)** : palette du logo validée ; refus du parent : on ne bloque pas pour l'instant (sprint 4) ; 13 arbitrages de l'étape 5 validés ; pas de Docker Desktop (tests SQL sous PGlite).
 
+**Réponses du 20 octobre 2026** : sprint 1 clos (le point 4 visait l'image de fond de la connexion) ; Resend configuré ; table de maîtrise validée (sprint 2) ; super exercices : un par compétence pour commencer ; 9 arbitrages de l'étape 6 validés ; tranche pilote complétée au sprint 2.
+
 **Questions encore ouvertes :**
-- la capture du point 1 ;
-- la table niveau de maîtrise → intervalle de révision (sprint 2) ;
-- l'interprétation du volume de super exercices (sprint 2) ;
-- les hypothèses du business plan, une fois proposées.
+- les hypothèses du business plan, une fois proposées ;
+- le programme du CP emploie `<` et `>` alors que le DAG les introduit au CE1 (A006) : à trancher avec la reprise du domaine A.
 
 ---
 
