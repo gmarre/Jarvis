@@ -1,0 +1,172 @@
+[
+  {
+    "id": "EX-A029-D-01",
+    "skill_id": "A029",
+    "level": "decouverte",
+    "type": "qcm",
+    "statement": "Sur ce quadrillage, un carré est colorié.\n\nQuelle écriture donne le nombre de carreaux de ce carré ?",
+    "image": "figures/EX-A029-D-01",
+    "choices": [
+      {
+        "key": "a",
+        "text": "8 × 2",
+        "misconception": "L'élève lit « au carré » comme « multiplié par 2 » : il calcule le double du côté, 16, au lieu du produit du côté par lui-même."
+      },
+      {
+        "key": "b",
+        "text": "4 × 8",
+        "misconception": "L'élève fait le tour du carré, quatre côtés de 8 carreaux : il mesure le périmètre, pas le nombre de carreaux qui remplissent le carré."
+      },
+      {
+        "key": "c",
+        "text": "8²",
+        "misconception": null
+      }
+    ],
+    "answer": {
+      "value": "c"
+    },
+    "solution_steps": [
+      "On compte les carreaux le long d'un côté du carré colorié : il y en a 8.",
+      "Le carré est fait de 8 rangées de 8 carreaux : il contient 8 × 8 = 64 carreaux.",
+      "Le produit d'un nombre par lui-même s'appelle le carré de ce nombre. On écrit 8 × 8 = 8², et on lit « 8 au carré ». La bonne réponse est c.",
+      "Pièges : 8 × 2 = 16 est le double de 8, pas son carré ; 4 × 8 = 32 fait le tour du carré, il ne remplit pas sa surface."
+    ],
+    "hint": "Compte les carreaux sur un côté, puis le nombre de rangées.",
+    "estimated_duration_s": 60,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, 5e : découvrir la notion de puissance d'un nombre et sa notation dans le cas du carré et du cube."
+  },
+  {
+    "id": "EX-A029-D-02",
+    "skill_id": "A029",
+    "level": "decouverte",
+    "type": "numerique",
+    "statement": "Ce grand cube est rempli de petits cubes identiques, même à l'intérieur.\n\nCombien de petits cubes contient-il ?",
+    "image": "figures/EX-A029-D-02",
+    "answer": {
+      "value": 27,
+      "accepted": [
+        "27 cubes",
+        "27 petits cubes"
+      ]
+    },
+    "solution_steps": [
+      "Sur une arête du grand cube, on compte 3 petits cubes.",
+      "Une couche contient 3 rangées de 3 cubes : 3 × 3 = 9 cubes. Le grand cube a 3 couches : 3 × 9 = 27 cubes.",
+      "En tout : 3 × 3 × 3 = 27. Ce produit de trois facteurs égaux à 3 s'appelle le cube de 3 et s'écrit 3³ (« 3 au cube ») : c'est le volume du grand cube, compté en petits cubes.",
+      "Pièges : 9 ne compte qu'une face ; 19 ne compte que les cubes visibles ; 3³ n'est pas 3 × 3 : il faut trois facteurs égaux à 3."
+    ],
+    "hint": "Compte les petits cubes sur une arête, puis raisonne couche par couche.",
+    "estimated_duration_s": 90,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, 5e : découvrir la notion de puissance d'un nombre et sa notation dans le cas du carré et du cube."
+  },
+  {
+    "id": "EX-A029-E-01",
+    "skill_id": "A029",
+    "level": "entrainement",
+    "type": "qcm",
+    "statement": "Lou lit à voix haute : « 9 au cube ».\n\nQuel calcul correspond à 9³ ?",
+    "image": null,
+    "choices": [
+      {
+        "key": "a",
+        "text": "9 × 3",
+        "misconception": "L'élève multiplie le nombre par l'exposant : 9 × 3 = 27. Or l'exposant 3 indique le nombre de facteurs égaux à 9."
+      },
+      {
+        "key": "b",
+        "text": "9 × 9 × 9",
+        "misconception": null
+      },
+      {
+        "key": "c",
+        "text": "9 × 9",
+        "misconception": "L'élève confond le cube et le carré : 9 × 9 = 9², avec deux facteurs seulement."
+      },
+      {
+        "key": "d",
+        "text": "3 × 3 × 3 × 3 × 3 × 3 × 3 × 3 × 3",
+        "misconception": "L'élève inverse les rôles du nombre et de l'exposant : il écrit neuf facteurs égaux à 3 au lieu de trois facteurs égaux à 9."
+      }
+    ],
+    "answer": {
+      "value": "b"
+    },
+    "solution_steps": [
+      "« Au cube » veut dire : le produit de trois facteurs égaux au nombre.",
+      "9³ = 9 × 9 × 9 = 81 × 9 = 729. La bonne réponse est b.",
+      "Le petit 3 écrit en haut, l'exposant, compte les facteurs : il ne multiplie pas 9.",
+      "Pièges : 9 × 9 est le carré de 9 ; 9 × 3 multiplie par l'exposant ; neuf facteurs égaux à 3, c'est échanger 9 et 3."
+    ],
+    "hint": "Combien de facteurs égaux à 9 l'exposant 3 annonce-t-il ?",
+    "estimated_duration_s": 60,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, 5e : découvrir la notion de puissance d'un nombre et sa notation dans le cas du carré et du cube."
+  },
+  {
+    "id": "EX-A029-E-02",
+    "skill_id": "A029",
+    "level": "entrainement",
+    "type": "numerique",
+    "statement": "Un carreau de faïence carré mesure 15 cm de côté.\n\nSon aire, en cm², est égale à 15². Combien vaut-elle ?",
+    "image": null,
+    "answer": {
+      "value": 225,
+      "unit": "cm²"
+    },
+    "solution_steps": [
+      "15² est le carré de 15 : le produit de 15 par lui-même. C'est l'aire d'un carré de 15 cm de côté.",
+      "15² = 15 × 15 = 225 (on peut calculer 15 × 10 + 15 × 5 = 150 + 75).",
+      "L'aire du carreau est 225 cm².",
+      "Piège : 15 × 2 = 30 est le double de 15, obtenu en multipliant par l'exposant. Le carré d'un nombre est le produit de ce nombre par lui-même."
+    ],
+    "hint": "15² = 15 × 15. Pour calculer, décompose 15 en 10 + 5.",
+    "estimated_duration_s": 90,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, 5e : découvrir la notion de puissance d'un nombre et sa notation dans le cas du carré et du cube."
+  },
+  {
+    "id": "EX-A029-M-01",
+    "skill_id": "A029",
+    "level": "maitrise",
+    "type": "numerique",
+    "statement": "343 est le cube d'un nombre entier : 343 = …³.\n\nQuel est ce nombre entier ?",
+    "image": null,
+    "answer": {
+      "value": 7
+    },
+    "solution_steps": [
+      "On cherche un entier a tel que a × a × a = 343.",
+      "On essaie : 6 × 6 × 6 = 216, trop petit ; 7 × 7 × 7 = 49 × 7 = 343. Le chiffre des unités aide : 343 finit par 3, comme 7 × 7 × 7.",
+      "Donc 343 = 7³ : le nombre cherché est 7.",
+      "Piège : diviser 343 par 3, c'est confondre le cube avec le triple ; on obtient environ 114, dont le cube est bien plus grand que 343."
+    ],
+    "hint": "Calcule les cubes de 4, 5, 6… jusqu'à tomber sur 343.",
+    "estimated_duration_s": 120,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, 5e : savoir écrire un nombre sous la forme d'une puissance 2 ou 3."
+  },
+  {
+    "id": "EX-A029-M-02",
+    "skill_id": "A029",
+    "level": "maitrise",
+    "type": "vrai_faux",
+    "statement": "Vrai ou faux : 64 est le carré d'un entier et le cube d'un entier.",
+    "image": null,
+    "answer": {
+      "value": true
+    },
+    "solution_steps": [
+      "64 = 8 × 8 = 8² : 64 est le carré de 8.",
+      "64 = 4 × 4 × 4 = 16 × 4 = 4³ : 64 est également le cube de 4.",
+      "L'affirmation est **vraie**.",
+      "Piège : le cube de 8 n'est pas 64 (8³ = 512) ; le nombre dont 64 est le cube n'est pas celui dont il est le carré."
+    ],
+    "hint": "Cherche un entier qui, multiplié par lui-même, donne 64, puis un entier dont le cube vaut 64.",
+    "estimated_duration_s": 120,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, 5e : savoir écrire un nombre sous la forme d'une puissance 2 ou 3."
+  }
+]

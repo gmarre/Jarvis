@@ -1,0 +1,144 @@
+[
+  {
+    "id": "EX-B022-D-01",
+    "skill_id": "B022",
+    "level": "decouverte",
+    "type": "numerique",
+    "statement": "On écrit 3² × 3⁵ = (3 × 3) × (3 × 3 × 3 × 3 × 3) = 3ⁿ.\n\nQue vaut n ?",
+    "image": null,
+    "answer": {
+      "value": 7
+    },
+    "solution_steps": [
+      "3² est un produit de 2 facteurs égaux à 3, et 3⁵ un produit de 5 facteurs égaux à 3.",
+      "Mis bout à bout, cela fait 2 + 5 = 7 facteurs égaux à 3 : 3² × 3⁵ = 3⁷.",
+      "n = 7. Pour multiplier deux puissances d'un même nombre, on ajoute les exposants : ils comptent les facteurs.",
+      "Piège : multiplier les exposants (2 × 5 = 10) ne compte pas les facteurs."
+    ],
+    "hint": "Compte les facteurs 3 dans l'écriture développée.",
+    "estimated_duration_s": 60,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, 4e : multiplier des puissances d'exposant entier naturel d'un même nombre entre elles."
+  },
+  {
+    "id": "EX-B022-D-02",
+    "skill_id": "B022",
+    "level": "decouverte",
+    "type": "qcm",
+    "statement": "Quelle écriture est égale à 7³ × 7⁵ ?",
+    "image": null,
+    "choices": [
+      {
+        "key": "a",
+        "text": "7¹⁵",
+        "misconception": "L'élève multiplie les exposants (3 × 5 = 15). Or on compte les facteurs : 3 facteurs 7, puis 5 facteurs 7, soit 8 facteurs."
+      },
+      {
+        "key": "b",
+        "text": "49⁸",
+        "misconception": "L'élève ajoute bien les exposants, mais multiplie en plus les nombres 7 entre eux (7 × 7 = 49). Or le nombre répété reste 7."
+      },
+      {
+        "key": "c",
+        "text": "7⁸",
+        "misconception": null
+      }
+    ],
+    "answer": {
+      "value": "c"
+    },
+    "solution_steps": [
+      "7³ × 7⁵ = (7 × 7 × 7) × (7 × 7 × 7 × 7 × 7).",
+      "Il y a 3 + 5 = 8 facteurs égaux à 7 : 7³ × 7⁵ = 7⁸. La bonne réponse est c.",
+      "Pièges : 7¹⁵ multiplie les exposants ; 49⁸ multiplie en plus les nombres 7, qui sont déjà comptés dans les facteurs."
+    ],
+    "hint": "Écris les deux puissances sous forme de produits, puis compte les facteurs 7.",
+    "estimated_duration_s": 60,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, 4e : multiplier des puissances d'exposant entier naturel d'un même nombre entre elles."
+  },
+  {
+    "id": "EX-B022-E-01",
+    "skill_id": "B022",
+    "level": "entrainement",
+    "type": "numerique",
+    "statement": "Une galaxie compte environ 10¹¹ étoiles, et l'Univers observable environ 10¹² galaxies.\n\nLe nombre total d'étoiles s'écrit 10ⁿ. Que vaut n ?",
+    "image": null,
+    "answer": {
+      "value": 23
+    },
+    "solution_steps": [
+      "Il y a 10¹² galaxies de 10¹¹ étoiles chacune : le nombre d'étoiles est le produit 10¹¹ × 10¹².",
+      "10¹¹ est un produit de 11 facteurs 10, et 10¹² un produit de 12 facteurs 10 : en tout, 11 + 12 = 23 facteurs.",
+      "10¹¹ × 10¹² = 10²³, donc n = 23.",
+      "Pièges : 11 × 12 = 132 multiplie les exposants ; 100²³ multiplie en plus les nombres 10 entre eux."
+    ],
+    "hint": "Chaque galaxie apporte 10¹¹ étoiles : quelle opération faut-il faire ?",
+    "estimated_duration_s": 90,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, 4e : multiplier des puissances d'exposant entier naturel d'un même nombre entre elles."
+  },
+  {
+    "id": "EX-B022-E-02",
+    "skill_id": "B022",
+    "level": "entrainement",
+    "type": "numerique",
+    "statement": "Calcule (−2)³ × (−2)⁴ et donne la valeur du résultat.",
+    "image": null,
+    "answer": {
+      "value": -128
+    },
+    "solution_steps": [
+      "(−2)³ × (−2)⁴ compte 3 + 4 = 7 facteurs égaux à −2 : c'est (−2)⁷.",
+      "On calcule : (−2)² = 4 ; (−2)⁴ = 4 × 4 = 16 ; (−2)⁶ = 16 × 4 = 64 ; (−2)⁷ = 64 × (−2) = −128.",
+      "Le résultat vaut −128. Contrôle : (−2)³ = −8, (−2)⁴ = 16, et (−8) × 16 = −128.",
+      "Pièges : 128 oublie le signe ; multiplier les exposants donne (−2)¹² = 4 096."
+    ],
+    "hint": "Regroupe d'abord en une seule puissance de −2.",
+    "estimated_duration_s": 120,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, 4e : multiplier des puissances d'exposant entier naturel d'un même nombre entre elles."
+  },
+  {
+    "id": "EX-B022-M-01",
+    "skill_id": "B022",
+    "level": "maitrise",
+    "type": "vrai_faux",
+    "statement": "Vrai ou faux : 2³ × 3² = 6⁵.",
+    "image": null,
+    "answer": {
+      "value": false
+    },
+    "solution_steps": [
+      "2³ × 3² = 8 × 9 = 72.",
+      "6⁵ = 6 × 6 × 6 × 6 × 6 = 7 776.",
+      "72 n'est pas égal à 7 776 : l'égalité est **fausse**.",
+      "On n'ajoute les exposants que pour des puissances d'un même nombre, comme 2³ × 2² = 2⁵. Ici, les nombres 2 et 3 sont différents."
+    ],
+    "hint": "Calcule les deux membres.",
+    "estimated_duration_s": 90,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, 4e : multiplier des puissances d'exposant entier naturel d'un même nombre entre elles."
+  },
+  {
+    "id": "EX-B022-M-02",
+    "skill_id": "B022",
+    "level": "maitrise",
+    "type": "numerique",
+    "statement": "Trouve n pour que 6ⁿ × 6 × 6³ = 6¹⁰.",
+    "image": null,
+    "answer": {
+      "value": 6
+    },
+    "solution_steps": [
+      "Le 6 tout seul est un facteur 6 : il s'écrit 6¹.",
+      "Sans 6ⁿ, il y a déjà 1 + 3 = 4 facteurs égaux à 6. Il en faut 10 en tout : il en manque 10 − 4 = 6.",
+      "Donc n = 6. Vérification : 6⁶ × 6¹ × 6³ compte 6 + 1 + 3 = 10 facteurs, c'est 6¹⁰.",
+      "Piège : oublier le facteur 6 tout seul donne 10 − 3 = 7."
+    ],
+    "hint": "Combien de facteurs 6 y a-t-il déjà, sans compter 6ⁿ ?",
+    "estimated_duration_s": 120,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, 4e : multiplier des puissances d'exposant entier naturel d'un même nombre entre elles."
+  }
+]

@@ -1,0 +1,179 @@
+[
+  {
+    "id": "EX-D026-D-01",
+    "skill_id": "D026",
+    "level": "decouverte",
+    "type": "numerique",
+    "statement": "Un ruban de 4,5 m est coupé en morceaux de 0,9 m.\n\nOn multiplie les deux nombres par 10 : $4{,}5 \\div 0{,}9 = 45 \\div 9$. Combien obtient-on de morceaux ?",
+    "image": null,
+    "answer": {
+      "value": 5,
+      "accepted": [
+        "5 morceaux"
+      ]
+    },
+    "solution_steps": [
+      "On cherche combien de fois 0,9 m entre dans 4,5 m : c'est la division $4{,}5 \\div 0{,}9$.",
+      "On ne change pas un quotient en multipliant le dividende et le diviseur par un même nombre. Par 10, le diviseur devient entier : $4{,}5 \\div 0{,}9 = 45 \\div 9$.",
+      "$45 \\div 9 = 5$, car $9 \\times 5 = 45$. On obtient **5 morceaux**.",
+      "Vérification : $5 \\times 0{,}9 = 4{,}5$. Les 5 morceaux font bien 4,5 m."
+    ],
+    "hint": "Dans la table de 9, quel nombre donne 45 ?",
+    "estimated_duration_s": 60,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, classe de 5e, Nombres et calculs, Opérations : « Diviser par un nombre décimal. »"
+  },
+  {
+    "id": "EX-D026-D-02",
+    "skill_id": "D026",
+    "level": "decouverte",
+    "type": "qcm",
+    "statement": "Par quel calcul plus simple peut-on remplacer $3{,}6 \\div 0{,}04$ sans changer le résultat ?",
+    "image": null,
+    "choices": [
+      {
+        "key": "a",
+        "text": "$3{,}6 \\div 4$",
+        "misconception": "L'élève multiplie seulement le diviseur par 100 pour le rendre entier et oublie de multiplier aussi le dividende : le quotient change."
+      },
+      {
+        "key": "b",
+        "text": "$36 \\div 4$",
+        "misconception": "L'élève retire les deux virgules. Mais 3,6 a été multiplié par 10 et 0,04 par 100 : ce n'est pas le même nombre, le quotient change."
+      },
+      {
+        "key": "c",
+        "text": "$360 \\div 4$",
+        "misconception": null
+      }
+    ],
+    "answer": {
+      "value": "c"
+    },
+    "solution_steps": [
+      "Pour rendre le diviseur 0,04 entier, il faut le multiplier par 100 : $0{,}04 \\times 100 = 4$.",
+      "On multiplie le dividende par le **même** nombre : $3{,}6 \\times 100 = 360$. Le quotient ne change pas : $3{,}6 \\div 0{,}04 = 360 \\div 4$.",
+      "D'ailleurs $360 \\div 4 = 90$, alors que $3{,}6 \\div 4 = 0{,}9$ et $36 \\div 4 = 9$ : les deux autres calculs ne donnent pas le même résultat."
+    ],
+    "hint": "Le dividende et le diviseur doivent être multipliés par le même nombre.",
+    "estimated_duration_s": 75,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, classe de 5e, Nombres et calculs, Opérations : « Multiplier et diviser par 10, 100, 1 000. »"
+  },
+  {
+    "id": "EX-D026-E-01",
+    "skill_id": "D026",
+    "level": "entrainement",
+    "type": "numerique",
+    "statement": "Calcule $2{,}73 \\div 0{,}7$.",
+    "image": null,
+    "answer": {
+      "value": 3.9
+    },
+    "solution_steps": [
+      "On multiplie le dividende et le diviseur par 10 pour que le diviseur soit entier : $2{,}73 \\div 0{,}7 = 27{,}3 \\div 7$.",
+      "On pose la division de 27,3 par 7 : en 27, il y a 3 fois 7, il reste 6 ; on abaisse le 3 en plaçant la virgule au quotient ; en 63, il y a 9 fois 7, il reste 0.",
+      "$27{,}3 \\div 7 = 3{,}9$, donc $2{,}73 \\div 0{,}7 = 3{,}9$.",
+      "Contrôle : $4 \\times 0{,}7 = 2{,}8$, un peu plus que 2,73 : le quotient est un peu moins de 4."
+    ],
+    "hint": "Par combien faut-il multiplier 0,7 pour obtenir un nombre entier ?",
+    "estimated_duration_s": 90,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, classe de 5e, Nombres et calculs, Opérations : « Diviser par un nombre décimal. »"
+  },
+  {
+    "id": "EX-D026-E-02",
+    "skill_id": "D026",
+    "level": "entrainement",
+    "type": "vrai_faux",
+    "statement": "Léo affirme : « Une division donne toujours un résultat plus petit que le nombre divisé. Donc $12 \\div 0{,}75$ est plus petit que 12. »\n\nLéo a-t-il raison ?",
+    "image": null,
+    "answer": {
+      "value": false
+    },
+    "solution_steps": [
+      "Diviser 12 par 0,75, c'est chercher combien de fois 0,75 entre dans 12.",
+      "0,75 est plus petit que 1 : il entre dans 12 plus de 12 fois. Le quotient est donc plus grand que 12.",
+      "Calcul : $12 \\div 0{,}75 = 1\\,200 \\div 75 = 16$, et 16 est plus grand que 12. Léo a **tort**.",
+      "Diviser par un nombre plus grand que 1 donne un résultat plus petit que le nombre divisé ; diviser par un nombre plus petit que 1 donne un résultat plus grand."
+    ],
+    "hint": "0,75 est-il plus grand ou plus petit que 1 ?",
+    "estimated_duration_s": 75,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, classe de 5e, Nombres et calculs, Opérations : « Diviser par un nombre décimal. »"
+  },
+  {
+    "id": "EX-D026-M-01",
+    "skill_id": "D026",
+    "level": "maitrise",
+    "type": "numerique",
+    "statement": "Au marché, Nora paie 5,04 € pour 2,4 kg de pommes.\n\nQuel est le prix d'un kilogramme de pommes ?",
+    "image": null,
+    "answer": {
+      "value": 2.1,
+      "unit": "€",
+      "accepted": [
+        "2,10 €",
+        "2,1 €",
+        "2,10",
+        "2,10 €/kg",
+        "2,1 €/kg",
+        "2,10 € le kg",
+        "2,1 € le kg"
+      ]
+    },
+    "solution_steps": [
+      "Le prix d'un kilogramme s'obtient en divisant le prix payé par la masse : $5{,}04 \\div 2{,}4$.",
+      "On multiplie le dividende et le diviseur par 10 : $5{,}04 \\div 2{,}4 = 50{,}4 \\div 24$.",
+      "On pose la division : en 50, il y a 2 fois 24, il reste 2 ; on abaisse le 4 en plaçant la virgule au quotient ; en 24, il y a 1 fois 24, il reste 0. Donc $50{,}4 \\div 24 = 2{,}1$.",
+      "Un kilogramme coûte 2,10 €. Contrôle : 2 kg coûteraient $2 \\times 2{,}1 = 4{,}2$ €, un peu moins que 5,04 € pour un peu plus de 2 kg : c'est cohérent."
+    ],
+    "hint": "Divise le prix par la masse, puis rends le diviseur entier.",
+    "estimated_duration_s": 120,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, classe de 5e, Nombres et calculs, Opérations : « Diviser par un nombre décimal. »"
+  },
+  {
+    "id": "EX-D026-M-02",
+    "skill_id": "D026",
+    "level": "maitrise",
+    "type": "qcm",
+    "statement": "Avec 6 L d'eau, combien peut-on remplir de gourdes de 0,75 L ?",
+    "image": null,
+    "choices": [
+      {
+        "key": "a",
+        "text": "80",
+        "misconception": "L'élève multiplie 6 par 100 mais 0,75 par 10 seulement : $600 \\div 7{,}5 = 80$. Le dividende et le diviseur n'ont pas été multipliés par le même nombre."
+      },
+      {
+        "key": "b",
+        "text": "8",
+        "misconception": null
+      },
+      {
+        "key": "c",
+        "text": "0,8",
+        "misconception": "L'élève multiplie seulement le diviseur par 10 et calcule $6 \\div 7{,}5 = 0{,}8$ : moins d'une gourde avec 6 L, alors qu'une gourde contient moins d'un litre."
+      },
+      {
+        "key": "d",
+        "text": "4,5",
+        "misconception": "L'élève multiplie au lieu de diviser, $6 \\times 0{,}75 = 4{,}5$, parce qu'il croit que le résultat doit être plus petit que 6."
+      }
+    ],
+    "answer": {
+      "value": "b"
+    },
+    "solution_steps": [
+      "On cherche combien de fois 0,75 L entre dans 6 L : $6 \\div 0{,}75$.",
+      "On multiplie le dividende et le diviseur par 100 : $6 \\div 0{,}75 = 600 \\div 75 = 8$.",
+      "On peut remplir **8 gourdes**. Contrôle : $8 \\times 0{,}75 = 6$.",
+      "Une gourde contient moins d'un litre : on en remplit donc plus de 6, ce qui écarte 0,8 et 4,5."
+    ],
+    "hint": "Une gourde contient moins d'un litre : en remplit-on plus ou moins de 6 ?",
+    "estimated_duration_s": 90,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, classe de 5e, Nombres et calculs, Opérations : « Diviser par un nombre décimal. »"
+  }
+]

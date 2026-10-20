@@ -1,0 +1,176 @@
+[
+  {
+    "id": "EX-C015-D-01",
+    "skill_id": "C015",
+    "level": "decouverte",
+    "type": "numerique",
+    "statement": "Pour multiplier deux fractions, on multiplie les numérateurs entre eux et les dénominateurs entre eux.\n\nComplète : $\\frac{3}{7} \\times \\frac{2}{5} = \\frac{\\ldots}{35}$",
+    "image": null,
+    "answer": {
+      "value": 6,
+      "accepted": [
+        "6/35"
+      ]
+    },
+    "solution_steps": [
+      "Dénominateurs : $7 \\times 5 = 35$, c'est bien le dénominateur écrit.",
+      "Numérateurs : $3 \\times 2 = 6$. Donc $\\frac{3}{7} \\times \\frac{2}{5} = \\frac{6}{35}$ : le nombre manquant est **6**.",
+      "Pour multiplier, on ne cherche pas de dénominateur commun, contrairement à l'addition : on multiplie directement."
+    ],
+    "hint": "Le numérateur du produit est le produit des numérateurs.",
+    "estimated_duration_s": 45,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, classe de 4e, Nombres et calculs, Nombres rationnels : « Calculer le produit de nombres rationnels. »"
+  },
+  {
+    "id": "EX-C015-D-02",
+    "skill_id": "C015",
+    "level": "decouverte",
+    "type": "qcm",
+    "statement": "Combien vaut $3 \\times \\frac{5}{8}$ ?",
+    "image": null,
+    "choices": [
+      {
+        "key": "a",
+        "text": "$\\frac{15}{24}$",
+        "misconception": "L'élève multiplie le numérateur et le dénominateur par 3. Mais $\\frac{15}{24}$ est égal à $\\frac{5}{8}$ : il a écrit une fraction égale, pas le triple."
+      },
+      {
+        "key": "b",
+        "text": "$\\frac{5}{24}$",
+        "misconception": "L'élève multiplie le dénominateur au lieu du numérateur : il obtient le tiers de $\\frac{5}{8}$, pas le triple."
+      },
+      {
+        "key": "c",
+        "text": "$\\frac{15}{8}$",
+        "misconception": null
+      }
+    ],
+    "answer": {
+      "value": "c"
+    },
+    "solution_steps": [
+      "Un entier est une fraction de dénominateur 1 : $3 = \\frac{3}{1}$.",
+      "$\\frac{3}{1} \\times \\frac{5}{8} = \\frac{3 \\times 5}{1 \\times 8} = \\frac{15}{8}$.",
+      "Autre façon de voir : $3 \\times \\frac{5}{8} = \\frac{5}{8} + \\frac{5}{8} + \\frac{5}{8} = \\frac{15}{8}$. Le dénominateur ne change pas."
+    ],
+    "hint": "Écris 3 comme une fraction de dénominateur 1.",
+    "estimated_duration_s": 60,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, classe de 4e, Nombres et calculs, Nombres rationnels : « Calculer le produit de nombres rationnels. »"
+  },
+  {
+    "id": "EX-C015-E-01",
+    "skill_id": "C015",
+    "level": "entrainement",
+    "type": "texte",
+    "statement": "Calcule $-\\frac{4}{9} \\times \\frac{3}{5}$.\n\nÉcris le résultat sous la forme numérateur/dénominateur, avec son signe.",
+    "image": null,
+    "answer": {
+      "value": "−12/45",
+      "accepted": [
+        "-4/15",
+        "12/-45",
+        "4/-15",
+        "(-12)/45",
+        "(-4)/15",
+        "-(12/45)",
+        "-(4/15)"
+      ]
+    },
+    "solution_steps": [
+      "Signe : un négatif multiplié par un positif donne un négatif.",
+      "On multiplie les numérateurs et les dénominateurs : $\\frac{4 \\times 3}{9 \\times 5} = \\frac{12}{45}$. Le produit vaut donc $-\\frac{12}{45}$.",
+      "On peut simplifier par 3 : $-\\frac{12}{45} = -\\frac{4}{15}$. Ou simplifier avant de calculer, puisque $9 = 3 \\times 3$ : $\\frac{4 \\times 3}{3 \\times 3 \\times 5} = \\frac{4}{15}$.",
+      "Les deux écritures sont justes : la simplification n'est pas obligatoire."
+    ],
+    "hint": "Commence par le signe, puis multiplie les numérateurs et les dénominateurs.",
+    "estimated_duration_s": 90,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, classe de 4e, Nombres et calculs, Nombres rationnels : « Calculer le produit de nombres rationnels. »"
+  },
+  {
+    "id": "EX-C015-E-02",
+    "skill_id": "C015",
+    "level": "entrainement",
+    "type": "vrai_faux",
+    "statement": "Mehdi calcule $\\frac{2}{3} \\times \\frac{5}{6}$. Il réduit au même dénominateur, puis multiplie les numérateurs :\n\n$\\frac{2}{3} \\times \\frac{5}{6} = \\frac{4}{6} \\times \\frac{5}{6} = \\frac{20}{6}$\n\nMehdi a-t-il raison ?",
+    "image": null,
+    "answer": {
+      "value": false
+    },
+    "solution_steps": [
+      "Pour multiplier, on ne réduit pas au même dénominateur : on multiplie les numérateurs entre eux **et** les dénominateurs entre eux.",
+      "$\\frac{2}{3} \\times \\frac{5}{6} = \\frac{2 \\times 5}{3 \\times 6} = \\frac{10}{18}$, qui se simplifie en $\\frac{5}{9}$.",
+      "Mehdi a gardé le dénominateur 6 comme pour une addition. Son résultat $\\frac{20}{6}$ est plus grand que 3, alors que le produit de deux nombres plus petits que 1 est plus petit que 1. Il a **tort**.",
+      "S'il avait aussi multiplié les dénominateurs, il aurait trouvé $\\frac{4}{6} \\times \\frac{5}{6} = \\frac{20}{36} = \\frac{5}{9}$ : juste, mais inutilement long."
+    ],
+    "hint": "Pour multiplier deux fractions, que fait-on des dénominateurs ?",
+    "estimated_duration_s": 75,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, classe de 4e, Nombres et calculs, Nombres rationnels : « Calculer le produit de nombres rationnels. »"
+  },
+  {
+    "id": "EX-C015-M-01",
+    "skill_id": "C015",
+    "level": "maitrise",
+    "type": "texte",
+    "statement": "Calcule $\\frac{14}{15} \\times \\left(-\\frac{5}{8}\\right) \\times \\frac{6}{7}$ en simplifiant avant de multiplier.\n\nÉcris le résultat simplifié au maximum, sous la forme numérateur/dénominateur, avec son signe.",
+    "image": null,
+    "answer": {
+      "value": "−1/2",
+      "accepted": [
+        "-0,5"
+      ]
+    },
+    "solution_steps": [
+      "Signe : un seul facteur est négatif, le produit est négatif.",
+      "On écrit tout sur une seule barre, sans calculer : $\\frac{14 \\times 5 \\times 6}{15 \\times 8 \\times 7}$.",
+      "On simplifie par paires : $14 = 7 \\times 2$, on simplifie par 7 avec le 7 du bas ; $15 = 5 \\times 3$, on simplifie par 5 avec le 5 du haut ; $6 = 3 \\times 2$, on simplifie par 3 avec le 3 restant en bas.",
+      "Il reste $\\frac{2 \\times 2}{8} = \\frac{4}{8} = \\frac{1}{2}$. Le produit vaut $-\\frac{1}{2}$.",
+      "Sans simplifier, on trouve $-\\frac{420}{840}$ : c'est égal, mais il resterait à le simplifier au maximum, ce qui est bien plus lourd."
+    ],
+    "hint": "Cherche un facteur commun à un numérateur et à un dénominateur, par exemple 14 et 7.",
+    "estimated_duration_s": 150,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, classe de 4e, Nombres et calculs, Nombres rationnels : « Simplifier une fraction. »"
+  },
+  {
+    "id": "EX-C015-M-02",
+    "skill_id": "C015",
+    "level": "maitrise",
+    "type": "qcm",
+    "statement": "Par quelle fraction faut-il multiplier $\\frac{3}{4}$ pour obtenir $-\\frac{9}{20}$ ?",
+    "image": null,
+    "choices": [
+      {
+        "key": "a",
+        "text": "$\\frac{3}{5}$",
+        "misconception": "L'élève trouve bien 3 × 3 = 9 et 4 × 5 = 20, mais oublie la règle des signes : $\\frac{3}{4}$ est positif, donc pour obtenir un produit négatif, l'autre facteur doit être négatif."
+      },
+      {
+        "key": "b",
+        "text": "$-\\frac{3}{5}$",
+        "misconception": null
+      },
+      {
+        "key": "c",
+        "text": "$-\\frac{27}{80}$",
+        "misconception": "L'élève multiplie les deux fractions de l'énoncé, $\\frac{3}{4} \\times \\left(-\\frac{9}{20}\\right) = -\\frac{27}{80}$, au lieu de chercher le facteur manquant."
+      }
+    ],
+    "answer": {
+      "value": "b"
+    },
+    "solution_steps": [
+      "On cherche une fraction telle que $\\frac{3}{4} \\times \\ldots = -\\frac{9}{20}$.",
+      "Signe : $\\frac{3}{4}$ est positif et le produit est négatif, donc le facteur cherché est négatif.",
+      "Numérateurs : $3 \\times 3 = 9$. Dénominateurs : $4 \\times 5 = 20$. Le facteur est $-\\frac{3}{5}$.",
+      "Vérification : $\\frac{3}{4} \\times \\left(-\\frac{3}{5}\\right) = -\\frac{9}{20}$."
+    ],
+    "hint": "Par quel nombre multiplier 3 pour obtenir 9, et 4 pour obtenir 20 ? Pense au signe.",
+    "estimated_duration_s": 120,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, classe de 4e, Nombres et calculs, Nombres rationnels : « Calculer le produit de nombres rationnels. »"
+  }
+]

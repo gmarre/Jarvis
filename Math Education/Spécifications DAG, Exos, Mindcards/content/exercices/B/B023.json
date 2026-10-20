@@ -1,0 +1,161 @@
+[
+  {
+    "id": "EX-B023-D-01",
+    "skill_id": "B023",
+    "level": "decouverte",
+    "type": "numerique",
+    "statement": "En écrivant tous les facteurs :\n\n$3^6 \\div 3^2 = \\frac{3 \\times 3 \\times 3 \\times 3 \\times 3 \\times 3}{3 \\times 3}$\n\nCe quotient s'écrit $3^n$. Que vaut $n$ ?",
+    "image": null,
+    "answer": {
+      "value": 4
+    },
+    "solution_steps": [
+      "On simplifie la fraction par $3 \\times 3$ : les deux facteurs 3 du dénominateur s'éliminent avec deux facteurs 3 du numérateur.",
+      "Il reste $6 - 2 = 4$ facteurs 3 au numérateur : $3^6 \\div 3^2 = 3 \\times 3 \\times 3 \\times 3 = 3^4$.",
+      "Donc $n = 4$. Pour diviser deux puissances d'un même nombre, on soustrait les exposants ; on ne les divise pas (6 divisé par 2 donnerait 3, ce qui est faux)."
+    ],
+    "hint": "Combien de facteurs 3 reste-t-il après simplification ?",
+    "estimated_duration_s": 45,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, classe de 3e, Nombres et calculs, Puissances : « Multiplier et diviser des puissances. »"
+  },
+  {
+    "id": "EX-B023-D-02",
+    "skill_id": "B023",
+    "level": "decouverte",
+    "type": "qcm",
+    "statement": "Écris $7^{6} \\times 7^{-2}$ sous la forme d'une seule puissance de 7.",
+    "image": null,
+    "choices": [
+      {
+        "key": "a",
+        "text": "$7^{-12}$",
+        "misconception": "L'élève multiplie les exposants : $6 \\times (-2) = -12$. Pour un produit de puissances d'un même nombre, on additionne les exposants."
+      },
+      {
+        "key": "b",
+        "text": "$7^{8}$",
+        "misconception": "L'élève soustrait l'exposant au lieu de l'ajouter : $6 - (-2) = 8$. C'est la règle du quotient, pas celle du produit."
+      },
+      {
+        "key": "c",
+        "text": "$7^{4}$",
+        "misconception": null
+      },
+      {
+        "key": "d",
+        "text": "$14^{4}$",
+        "misconception": "L'élève additionne les bases, $7 + 7 = 14$ : la base 7 ne change pas."
+      }
+    ],
+    "answer": {
+      "value": "c"
+    },
+    "solution_steps": [
+      "$7^{-2} = \\frac{1}{7^2}$ : multiplier par $7^{-2}$, c'est diviser par $7^2$.",
+      "$7^{6} \\div 7^{2} = 7^{6-2} = 7^{4}$ : on retire deux facteurs 7.",
+      "C'est la même chose que d'ajouter les exposants : $6 + (-2) = 4$. La bonne réponse est c."
+    ],
+    "hint": "Multiplier par $7^{-2}$, c'est diviser par quel nombre ?",
+    "estimated_duration_s": 45,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, classe de 3e, Nombres et calculs, Puissances : « Multiplier et diviser des puissances. »"
+  },
+  {
+    "id": "EX-B023-E-01",
+    "skill_id": "B023",
+    "level": "entrainement",
+    "type": "numerique",
+    "statement": "Le quotient $5^3 \\div 5^7$ s'écrit $5^n$. Que vaut $n$ ?",
+    "image": null,
+    "answer": {
+      "value": -4
+    },
+    "solution_steps": [
+      "On soustrait les exposants : $5^3 \\div 5^7 = 5^{3-7} = 5^{-4}$.",
+      "Vérification par les facteurs : $\\frac{5 \\times 5 \\times 5}{5 \\times 5 \\times 5 \\times 5 \\times 5 \\times 5 \\times 5}$. Après simplification, il reste $\\frac{1}{5 \\times 5 \\times 5 \\times 5} = \\frac{1}{5^4} = 5^{-4}$.",
+      "Donc $n = -4$ : le dénominateur a plus de facteurs que le numérateur, l'exposant est négatif. Attention à l'ordre : c'est $3 - 7$, pas $7 - 3$."
+    ],
+    "hint": "Soustrais l'exposant du diviseur à celui du nombre divisé, dans cet ordre.",
+    "estimated_duration_s": 50,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, classe de 3e, Nombres et calculs, Puissances : « Multiplier et diviser des puissances. »"
+  },
+  {
+    "id": "EX-B023-E-02",
+    "skill_id": "B023",
+    "level": "entrainement",
+    "type": "vrai_faux",
+    "statement": "Sami écrit : $2^8 \\div 2^2 = 2^4$.\n\nA-t-il raison ?",
+    "image": null,
+    "answer": {
+      "value": false
+    },
+    "solution_steps": [
+      "Pour diviser deux puissances de 2, on soustrait les exposants : $2^8 \\div 2^2 = 2^{8-2} = 2^6$.",
+      "Sami a divisé les exposants (8 divisé par 2 donne 4). Vérification par les valeurs : $2^8 = 256$, $2^2 = 4$ et $256 \\div 4 = 64 = 2^6$, alors que $2^4 = 16$.",
+      "Sami a **tort**."
+    ],
+    "hint": "Calcule $2^8$ et $2^2$, puis leur quotient.",
+    "estimated_duration_s": 50,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, classe de 3e, Nombres et calculs, Puissances : « Multiplier et diviser des puissances. »"
+  },
+  {
+    "id": "EX-B023-M-01",
+    "skill_id": "B023",
+    "level": "maitrise",
+    "type": "numerique",
+    "statement": "Le calcul $10^3 \\times 10^{-5} \\div 10^{-4}$ s'écrit $10^n$. Que vaut $n$ ?",
+    "image": null,
+    "answer": {
+      "value": 2
+    },
+    "solution_steps": [
+      "On calcule de gauche à droite. Produit : $10^3 \\times 10^{-5} = 10^{3 + (-5)} = 10^{-2}$.",
+      "Quotient : $10^{-2} \\div 10^{-4} = 10^{-2 - (-4)} = 10^{-2 + 4} = 10^{2}$. Soustraire $-4$, c'est ajouter 4.",
+      "Donc $n = 2$. L'erreur fréquente donne $-2 - 4 = -6$ : on oublie que l'on soustrait un nombre négatif."
+    ],
+    "hint": "Soustraire un nombre négatif, c'est ajouter son opposé.",
+    "estimated_duration_s": 90,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, classe de 3e, Nombres et calculs, Puissances : « Multiplier et diviser des puissances. »"
+  },
+  {
+    "id": "EX-B023-M-02",
+    "skill_id": "B023",
+    "level": "maitrise",
+    "type": "qcm",
+    "statement": "Écris $2^5 \\times 5^5 \\div 10^3$ sous la forme d'une seule puissance de 10.",
+    "image": null,
+    "choices": [
+      {
+        "key": "a",
+        "text": "$10^{7}$",
+        "misconception": "L'élève additionne les exposants dans $2^5 \\times 5^5$ et trouve $10^{10}$, puis $10^{10} \\div 10^3 = 10^7$ : additionner les exposants ne vaut que pour une même base. Ici l'exposant est le même, on multiplie les bases : $2^5 \\times 5^5 = 10^5$."
+      },
+      {
+        "key": "b",
+        "text": "$10^{2}$",
+        "misconception": null
+      },
+      {
+        "key": "c",
+        "text": "$10^{22}$",
+        "misconception": "L'élève multiplie les exposants : $2^5 \\times 5^5$ deviendrait $10^{25}$, puis $10^{25} \\div 10^3 = 10^{22}$. Or $2^5 \\times 5^5 = (2 \\times 5)^5 = 10^5$."
+      }
+    ],
+    "answer": {
+      "value": "b"
+    },
+    "solution_steps": [
+      "$2^5$ et $5^5$ ont le même exposant : $2^5 \\times 5^5 = (2 \\times 5)^5 = 10^5$, car on regroupe chaque facteur 2 avec un facteur 5.",
+      "$10^5 \\div 10^3 = 10^{5-3} = 10^2$.",
+      "Vérification : $2^5 = 32$, $5^5 = 3\\,125$, $32 \\times 3\\,125 = 100\\,000$, et $100\\,000 \\div 1\\,000 = 100 = 10^2$. La bonne réponse est b."
+    ],
+    "hint": "Regroupe chaque facteur 2 avec un facteur 5 : que donne $2 \\times 5$ ?",
+    "estimated_duration_s": 90,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, classe de 3e, Nombres et calculs, Puissances : « Multiplier et diviser des puissances. »"
+  }
+]

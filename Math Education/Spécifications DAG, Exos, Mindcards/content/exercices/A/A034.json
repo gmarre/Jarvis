@@ -1,0 +1,168 @@
+[
+  {
+    "id": "EX-A034-D-01",
+    "skill_id": "A034",
+    "level": "decouverte",
+    "type": "numerique",
+    "statement": "La racine carrée de 64, notée $\\sqrt{64}$, est le nombre positif dont le carré vaut 64.\n\nCombien vaut $\\sqrt{64}$ ?",
+    "image": null,
+    "answer": {
+      "value": 8
+    },
+    "solution_steps": [
+      "On cherche un nombre positif qui, multiplié par lui-même, donne 64.",
+      "Dans la table de 8 : 8 × 8 = 64, donc $8^2 = 64$.",
+      "8 est positif et son carré vaut 64 : $\\sqrt{64} = 8$.",
+      "Piège : 32 est la moitié de 64, pas sa racine carrée. 32 × 32 = 1 024, bien plus que 64."
+    ],
+    "hint": "Quel nombre multiplié par lui-même donne 64 ?",
+    "estimated_duration_s": 30,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, classe de 4e, Nombres et calculs, Racine carrée : « Comprendre et connaitre la définition de la racine carrée d'un nombre positif. »"
+  },
+  {
+    "id": "EX-A034-D-02",
+    "skill_id": "A034",
+    "level": "decouverte",
+    "type": "qcm",
+    "statement": "Un carreau carré a une aire de 144 cm².\n\nQuelle est la longueur de son côté ?",
+    "image": null,
+    "choices": [
+      {
+        "key": "a",
+        "text": "72 cm",
+        "misconception": "L'élève divise l'aire par 2. Un carré de 72 cm de côté aurait une aire de 72 × 72 = 5 184 cm²."
+      },
+      {
+        "key": "b",
+        "text": "36 cm",
+        "misconception": "L'élève divise l'aire par 4, comme pour retrouver le côté à partir du périmètre. C'est le périmètre qu'on divise par 4, pas l'aire."
+      },
+      {
+        "key": "c",
+        "text": "12 cm",
+        "misconception": null
+      }
+    ],
+    "answer": {
+      "value": "c"
+    },
+    "solution_steps": [
+      "L'aire d'un carré est côté × côté. On cherche donc un nombre positif dont le carré vaut 144.",
+      "12 × 12 = 144, donc $12^2 = 144$ et $\\sqrt{144} = 12$.",
+      "Le côté du carreau mesure **12 cm** : c'est la racine carrée de son aire. La bonne réponse est c.",
+      "Contrôle : un carré de 12 cm de côté a bien une aire de 12 × 12 = 144 cm²."
+    ],
+    "hint": "L'aire d'un carré, c'est côté × côté. Quel nombre multiplié par lui-même donne 144 ?",
+    "estimated_duration_s": 45,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, classe de 4e, Nombres et calculs, Racine carrée : « Comprendre et connaitre la définition de la racine carrée d'un nombre positif. »"
+  },
+  {
+    "id": "EX-A034-E-01",
+    "skill_id": "A034",
+    "level": "entrainement",
+    "type": "vrai_faux",
+    "statement": "Max affirme : « $\\sqrt{9} + \\sqrt{16} = \\sqrt{25}$, puisque 9 + 16 = 25. »\n\nA-t-il raison ?",
+    "image": null,
+    "answer": {
+      "value": false
+    },
+    "solution_steps": [
+      "On calcule chaque racine carrée séparément. $\\sqrt{9} = 3$ car $3^2 = 9$, et $\\sqrt{16} = 4$ car $4^2 = 16$.",
+      "Le membre de gauche vaut donc 3 + 4 = 7.",
+      "Le membre de droite vaut $\\sqrt{25} = 5$, car $5^2 = 25$.",
+      "7 n'est pas égal à 5 : Max a **tort**. La racine carrée d'une somme n'est pas la somme des racines carrées."
+    ],
+    "hint": "Calcule chaque racine carrée, puis compare les deux côtés.",
+    "estimated_duration_s": 45,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, classe de 4e, Nombres et calculs, Racine carrée : « Comprendre et connaitre la définition de la racine carrée d'un nombre positif. »"
+  },
+  {
+    "id": "EX-A034-E-02",
+    "skill_id": "A034",
+    "level": "entrainement",
+    "type": "numerique",
+    "statement": "Un carré a un côté de $\\sqrt{13}$ cm.\n\nQuelle est son aire ?",
+    "image": null,
+    "answer": {
+      "value": 13,
+      "unit": "cm²"
+    },
+    "solution_steps": [
+      "L'aire d'un carré est côté × côté : ici, $\\sqrt{13} \\times \\sqrt{13}$, c'est-à-dire $(\\sqrt{13})^2$.",
+      "Par définition, $\\sqrt{13}$ est le nombre positif dont le carré vaut 13. Donc $(\\sqrt{13})^2 = 13$, sans rien calculer.",
+      "L'aire du carré est **13 cm²**.",
+      "Piège : 13 n'est pas un carré parfait, mais la question ne demande pas de calculer $\\sqrt{13}$ : élever une racine carrée au carré redonne le nombre de départ."
+    ],
+    "hint": "Que vaut le carré de la racine carrée d'un nombre ? Reviens à la définition.",
+    "estimated_duration_s": 45,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, classe de 4e, Nombres et calculs, Racine carrée : « Comprendre et connaitre la définition de la racine carrée d'un nombre positif. »"
+  },
+  {
+    "id": "EX-A034-M-01",
+    "skill_id": "A034",
+    "level": "maitrise",
+    "type": "qcm",
+    "statement": "Une seule de ces écritures ne désigne aucun nombre. Laquelle ?",
+    "image": null,
+    "choices": [
+      {
+        "key": "a",
+        "text": "$\\sqrt{0}$",
+        "misconception": "L'élève croit que 0 n'a pas de racine carrée. Or $0^2 = 0$ et 0 n'est pas négatif : $\\sqrt{0} = 0$."
+      },
+      {
+        "key": "b",
+        "text": "$\\sqrt{-16}$",
+        "misconception": null
+      },
+      {
+        "key": "c",
+        "text": "$-\\sqrt{16}$",
+        "misconception": "L'élève voit un signe moins et croit qu'il est sous la racine. Ici, on calcule d'abord $\\sqrt{16} = 4$, puis on prend l'opposé : cette écriture désigne le nombre −4."
+      },
+      {
+        "key": "d",
+        "text": "$\\sqrt{2}$",
+        "misconception": "L'élève croit qu'une racine carrée n'existe que pour un carré parfait. $\\sqrt{2}$ existe : c'est le côté d'un carré d'aire 2, compris entre 1 et 2 ; il n'est simplement pas entier."
+      }
+    ],
+    "answer": {
+      "value": "b"
+    },
+    "solution_steps": [
+      "La racine carrée d'un nombre a est le nombre positif dont le carré vaut a. Elle n'existe que si a est positif ou nul.",
+      "$\\sqrt{0} = 0$, car $0^2 = 0$. $\\sqrt{2}$ existe : c'est la longueur du côté d'un carré d'aire 2, même si ce n'est pas un entier.",
+      "$-\\sqrt{16}$ est l'opposé de $\\sqrt{16} = 4$ : il désigne −4. Le signe moins est devant la racine, pas dessous.",
+      "Dans $\\sqrt{-16}$, le nombre sous la racine est négatif. Un carré n'est jamais négatif : aucun nombre n'a pour carré −16. Cette écriture ne désigne aucun nombre. La bonne réponse est b."
+    ],
+    "hint": "Un carré peut-il être négatif ? Regarde bien où est placé chaque signe moins.",
+    "estimated_duration_s": 60,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, classe de 4e, Nombres et calculs, Racine carrée : « Comprendre et connaitre la définition de la racine carrée d'un nombre positif. »"
+  },
+  {
+    "id": "EX-A034-M-02",
+    "skill_id": "A034",
+    "level": "maitrise",
+    "type": "numerique",
+    "statement": "Quel nombre a pour racine carrée 15 ?",
+    "image": null,
+    "answer": {
+      "value": 225
+    },
+    "solution_steps": [
+      "On cherche un nombre a tel que $\\sqrt{a} = 15$. Par définition, cela veut dire que 15 est le nombre positif dont le carré vaut a.",
+      "Donc a est le carré de 15 : a = 15 × 15 = 225.",
+      "Le nombre cherché est **225** : $\\sqrt{225} = 15$, car $15^2 = 225$ et 15 est positif.",
+      "Piège : la racine carrée n'est pas la moitié. Répondre 30, c'est penser que 15 est la moitié du nombre cherché ; or 15 × 15 = 225, pas 30."
+    ],
+    "hint": "Si 15 est la racine carrée du nombre cherché, que vaut le carré de 15 ?",
+    "estimated_duration_s": 45,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, classe de 4e, Nombres et calculs, Racine carrée : « Comprendre et connaitre la définition de la racine carrée d'un nombre positif. »"
+  }
+]

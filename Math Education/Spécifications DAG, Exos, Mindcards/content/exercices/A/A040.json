@@ -1,0 +1,177 @@
+[
+  {
+    "id": "EX-A040-D-01",
+    "skill_id": "A040",
+    "level": "decouverte",
+    "type": "numerique",
+    "statement": "Une place carrée a une aire de 3 600 m².\n\nQuelle est la longueur de son côté ?",
+    "image": null,
+    "answer": {
+      "value": 60,
+      "unit": "m"
+    },
+    "solution_steps": [
+      "L'aire d'un carré est côté × côté. Le côté est donc le nombre positif dont le carré vaut 3 600 : c'est $\\sqrt{3\\,600}$.",
+      "On connaît $6^2 = 36$. Or 60 × 60 = 3 600, donc $60^2 = 3\\,600$ et $\\sqrt{3\\,600} = 60$.",
+      "Le côté de la place mesure **60 m**.",
+      "Piège : diviser l'aire par 4 (900 m) ou par 2 (1 800 m) donne un carré d'aire bien trop grande : 900 × 900 = 810 000 m²."
+    ],
+    "hint": "Quel nombre multiplié par lui-même donne 3 600 ? Pense à 6 × 6.",
+    "estimated_duration_s": 45,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, classe de 3e, Nombres et calculs, Racine carrée : « Résoudre des problèmes utilisant la racine carrée. »"
+  },
+  {
+    "id": "EX-A040-D-02",
+    "skill_id": "A040",
+    "level": "decouverte",
+    "type": "qcm",
+    "statement": "Une dalle carrée a une aire de 40 cm².\n\nÀ la calculatrice, quelle est la longueur de son côté, arrondie au dixième ?",
+    "image": null,
+    "choices": [
+      {
+        "key": "a",
+        "text": "6,3 cm",
+        "misconception": null
+      },
+      {
+        "key": "b",
+        "text": "20 cm",
+        "misconception": "L'élève divise l'aire par 2. Un carré de 20 cm de côté aurait une aire de 20 × 20 = 400 cm²."
+      },
+      {
+        "key": "c",
+        "text": "6,4 cm",
+        "misconception": "L'élève arrondit au dixième supérieur sans regarder le chiffre des centièmes : 6,32… s'arrondit à 6,3, car 2 est inférieur à 5. D'ailleurs 6,4 × 6,4 = 40,96, plus loin de 40 que 6,3 × 6,3 = 39,69."
+      }
+    ],
+    "answer": {
+      "value": "a"
+    },
+    "solution_steps": [
+      "Le côté est le nombre positif dont le carré vaut 40 : c'est $\\sqrt{40}$.",
+      "40 n'est pas un carré parfait : $6^2 = 36$ et $7^2 = 49$, donc le côté est entre 6 cm et 7 cm. Cela écarte 20 cm et 10 cm.",
+      "La calculatrice donne $\\sqrt{40} \\approx 6{,}324$. Au dixième, on regarde le chiffre des centièmes : 2 est inférieur à 5, on garde 6,3 et non 6,4. Le côté mesure environ **6,3 cm**. La bonne réponse est a."
+    ],
+    "hint": "Le côté est la racine carrée de l'aire. Entre quels entiers se trouve-t-il ?",
+    "estimated_duration_s": 45,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, classe de 3e, Nombres et calculs, Racine carrée : « Résoudre des problèmes utilisant la racine carrée. »"
+  },
+  {
+    "id": "EX-A040-E-01",
+    "skill_id": "A040",
+    "level": "entrainement",
+    "type": "numerique",
+    "statement": "Un potager carré a une aire de 75 m².\n\nÀ la calculatrice, donne la longueur de son côté, arrondie au centième.",
+    "image": null,
+    "answer": {
+      "value": 8.66,
+      "unit": "m",
+      "tolerance": 0.005
+    },
+    "solution_steps": [
+      "Le côté du potager est le nombre positif dont le carré vaut 75 : c'est $\\sqrt{75}$.",
+      "On contrôle d'abord l'ordre de grandeur : $8^2 = 64$ et $9^2 = 81$, donc le côté est entre 8 m et 9 m.",
+      "La calculatrice donne $\\sqrt{75} \\approx 8{,}6602$. Au centième, on regarde le chiffre des millièmes : 0 est inférieur à 5, on garde 8,66.",
+      "Le côté mesure environ **8,66 m**, ce qui est bien entre 8 m et 9 m."
+    ],
+    "hint": "Le côté est la racine carrée de l'aire. Vérifie que ton résultat est entre 8 et 9.",
+    "estimated_duration_s": 60,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, classe de 3e, Nombres et calculs, Racine carrée : « Résoudre des problèmes utilisant la racine carrée. »"
+  },
+  {
+    "id": "EX-A040-E-02",
+    "skill_id": "A040",
+    "level": "entrainement",
+    "type": "numerique",
+    "statement": "Un enclos carré a une aire de 1 225 m². On veut le clôturer sur tout son tour.\n\nQuelle longueur de clôture faut-il ?",
+    "image": null,
+    "answer": {
+      "value": 140,
+      "unit": "m"
+    },
+    "solution_steps": [
+      "La clôture fait le tour de l'enclos : sa longueur est le périmètre du carré, soit 4 × côté. Il faut d'abord trouver le côté.",
+      "Le côté est le nombre positif dont le carré vaut 1 225 : c'est $\\sqrt{1\\,225}$. La calculatrice donne 35, et en effet 35 × 35 = 1 225.",
+      "Le périmètre vaut 4 × 35 = 140 m. Il faut **140 m** de clôture.",
+      "Piège : 1 225 ÷ 4 = 306,25 confond aire et périmètre ; et 35 m n'est que la longueur d'un côté."
+    ],
+    "hint": "Pour connaître le tour de l'enclos, il faut d'abord la longueur d'un côté.",
+    "estimated_duration_s": 75,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, classe de 3e, Nombres et calculs, Racine carrée : « Résoudre des problèmes utilisant la racine carrée. »"
+  },
+  {
+    "id": "EX-A040-M-01",
+    "skill_id": "A040",
+    "level": "maitrise",
+    "type": "numerique",
+    "statement": "On veut dessiner un carré dont l'aire est le double de celle d'un carré de 6 cm de côté.\n\nQuelle doit être la longueur de son côté, arrondie au millimètre ?",
+    "image": null,
+    "answer": {
+      "value": 8.5,
+      "unit": "cm",
+      "tolerance": 0.05,
+      "accepted": [
+        "85 mm",
+        "85 millimètres"
+      ]
+    },
+    "solution_steps": [
+      "Le carré de 6 cm de côté a une aire de 6 × 6 = 36 cm². Le nouveau carré doit avoir une aire de 2 × 36 = 72 cm².",
+      "Son côté est le nombre positif dont le carré vaut 72 : c'est $\\sqrt{72}$. Contrôle : $8^2 = 64$ et $9^2 = 81$, donc le côté est entre 8 cm et 9 cm.",
+      "La calculatrice donne $\\sqrt{72} \\approx 8{,}485$. Au millimètre, c'est-à-dire au dixième de centimètre : le chiffre des centièmes est 8, on arrondit à 8,5 cm.",
+      "Le côté doit mesurer environ **8,5 cm**.",
+      "Piège : doubler le côté (12 cm) donne un carré d'aire 144 cm², quatre fois plus grande et non deux fois."
+    ],
+    "hint": "Calcule d'abord l'aire du nouveau carré. Doubler l'aire, est-ce doubler le côté ?",
+    "estimated_duration_s": 90,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, classe de 3e, Nombres et calculs, Racine carrée : « Résoudre des problèmes utilisant la racine carrée. »"
+  },
+  {
+    "id": "EX-A040-M-02",
+    "skill_id": "A040",
+    "level": "maitrise",
+    "type": "qcm",
+    "statement": "Une piscine carrée a une aire de 90 m².\n\nSans calculatrice, quelle est la seule valeur possible pour la longueur approchée de son côté ?",
+    "image": null,
+    "choices": [
+      {
+        "key": "a",
+        "text": "45 m",
+        "misconception": "L'élève divise l'aire par 2. Un carré de 45 m de côté aurait une aire de 45 × 45 = 2 025 m²."
+      },
+      {
+        "key": "b",
+        "text": "22,5 m",
+        "misconception": "L'élève divise l'aire par 4, comme on le ferait avec un périmètre. Un côté de 22,5 m donnerait une aire de plus de 500 m²."
+      },
+      {
+        "key": "c",
+        "text": "10,5 m",
+        "misconception": "L'élève sent que le côté est voisin de 10 mais ne contrôle pas par le carré : un côté de plus de 10 m donne une aire de plus de 100 m², donc plus que 90 m²."
+      },
+      {
+        "key": "d",
+        "text": "9,5 m",
+        "misconception": null
+      }
+    ],
+    "answer": {
+      "value": "d"
+    },
+    "solution_steps": [
+      "Le côté est le nombre positif dont le carré vaut 90 : c'est $\\sqrt{90}$.",
+      "On encadre 90 par deux carrés parfaits consécutifs : $9^2 = 81$ et $10^2 = 100$. Donc $9 < \\sqrt{90} < 10$ : le côté est entre 9 m et 10 m.",
+      "Parmi les propositions, seule 9,5 m est entre 9 m et 10 m. La bonne réponse est d.",
+      "La calculatrice le confirme : $\\sqrt{90} \\approx 9{,}49$, soit environ 9,5 m."
+    ],
+    "hint": "Entre quels carrés parfaits se trouve 90 ? Le côté est donc entre quels entiers ?",
+    "estimated_duration_s": 60,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, classe de 3e, Nombres et calculs, Racine carrée : « Résoudre des problèmes utilisant la racine carrée. »"
+  }
+]

@@ -1,0 +1,170 @@
+[
+  {
+    "id": "EX-B052-D-01",
+    "skill_id": "B052",
+    "level": "decouverte",
+    "type": "numerique",
+    "statement": "Pour calculer 1 + 6 × 3², on commence par la puissance, puis le produit, puis la somme.\n\nQuel est le résultat ?",
+    "image": null,
+    "answer": {
+      "value": 55
+    },
+    "solution_steps": [
+      "La puissance d'abord : 3² = 3 × 3 = 9. L'expression devient 1 + 6 × 9.",
+      "Le produit ensuite : 6 × 9 = 54. Il reste 1 + 54.",
+      "La somme enfin : 1 + 54 = 55.",
+      "Pièges : commencer par 1 + 6 = 7 donne 7 × 9 = 63 ; élever 6 × 3 au carré donne 1 + 18² = 325 ; lire 3² comme 3 × 2 donne 1 + 36 = 37."
+    ],
+    "hint": "Calcule d'abord 3².",
+    "estimated_duration_s": 60,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, 5e : calculer la valeur numérique d'expressions contenant des puissances simples, additions, soustractions et produits."
+  },
+  {
+    "id": "EX-B052-D-02",
+    "skill_id": "B052",
+    "level": "decouverte",
+    "type": "qcm",
+    "statement": "Noé commence le calcul de 5 × 2³.\n\nQuelle première étape est juste ?",
+    "image": null,
+    "choices": [
+      {
+        "key": "a",
+        "text": "5 × 2³ = 10³",
+        "misconception": "L'élève applique le cube à tout ce qui le précède, comme si l'on avait écrit (5 × 2)³. Or l'exposant ne porte que sur le 2."
+      },
+      {
+        "key": "b",
+        "text": "5 × 2³ = 5 × 6",
+        "misconception": "L'élève multiplie 2 par l'exposant : 2 × 3 = 6. Or 2³ = 2 × 2 × 2 = 8."
+      },
+      {
+        "key": "c",
+        "text": "5 × 2³ = 5 × 8",
+        "misconception": null
+      }
+    ],
+    "answer": {
+      "value": "c"
+    },
+    "solution_steps": [
+      "Dans 5 × 2³, l'exposant 3 porte seulement sur le nombre écrit juste devant lui, le 2.",
+      "On calcule d'abord la puissance : 2³ = 2 × 2 × 2 = 8. Donc 5 × 2³ = 5 × 8 = 40. La bonne réponse est c.",
+      "Pièges : 10³ = 1 000 est la valeur de (5 × 2)³, une autre expression ; 5 × 6 vient de 2³ lu comme 2 × 3."
+    ],
+    "hint": "Sur quel nombre porte le petit 3 ?",
+    "estimated_duration_s": 60,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, 5e : calculer la valeur numérique d'expressions contenant des puissances simples, additions, soustractions et produits."
+  },
+  {
+    "id": "EX-B052-E-01",
+    "skill_id": "B052",
+    "level": "entrainement",
+    "type": "numerique",
+    "statement": "Calcule 2 × 7² − 3³.",
+    "image": null,
+    "answer": {
+      "value": 71
+    },
+    "solution_steps": [
+      "Les puissances d'abord : 7² = 7 × 7 = 49 et 3³ = 3 × 3 × 3 = 27.",
+      "Le produit ensuite : 2 × 49 = 98.",
+      "La différence enfin : 98 − 27 = 71.",
+      "Pièges : (2 × 7)² − 27 = 196 − 27 = 169 applique le carré au produit ; lire 7² comme 14 et 3³ comme 9 donne 2 × 14 − 9 = 19."
+    ],
+    "hint": "Remplace d'abord 7² et 3³ par leur valeur.",
+    "estimated_duration_s": 90,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, 5e : calculer la valeur numérique d'expressions contenant des puissances simples, additions, soustractions et produits."
+  },
+  {
+    "id": "EX-B052-E-02",
+    "skill_id": "B052",
+    "level": "entrainement",
+    "type": "vrai_faux",
+    "statement": "Vrai ou faux : (3 + 4)² = 3² + 4².",
+    "image": null,
+    "answer": {
+      "value": false
+    },
+    "solution_steps": [
+      "À gauche, la parenthèse d'abord : 3 + 4 = 7, puis 7² = 49.",
+      "À droite, les puissances d'abord : 3² + 4² = 9 + 16 = 25.",
+      "49 n'est pas égal à 25 : l'égalité est **fausse**.",
+      "Piège : le carré d'une somme n'est pas la somme des carrés. (3 + 4)² veut dire (3 + 4) × (3 + 4)."
+    ],
+    "hint": "Calcule chaque membre séparément.",
+    "estimated_duration_s": 60,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, 5e : calculer la valeur numérique d'expressions contenant des puissances simples, additions, soustractions et produits."
+  },
+  {
+    "id": "EX-B052-M-01",
+    "skill_id": "B052",
+    "level": "maitrise",
+    "type": "qcm",
+    "statement": "Une seule de ces expressions vaut 100.\n\nLaquelle ?",
+    "image": null,
+    "choices": [
+      {
+        "key": "a",
+        "text": "2 + 3² × 4",
+        "misconception": "L'élève applique le carré à tout ce qui le précède : (2 + 3)² = 25, puis 25 × 4 = 100. Or le carré ne porte que sur 3 : 2 + 9 × 4 = 38."
+      },
+      {
+        "key": "b",
+        "text": "(2 + 3)² × 4",
+        "misconception": null
+      },
+      {
+        "key": "c",
+        "text": "2 × 5²",
+        "misconception": "L'élève applique le carré au produit, comme dans (2 × 5)² = 100. Or le carré ne porte que sur 5 : 2 × 25 = 50."
+      },
+      {
+        "key": "d",
+        "text": "90 + 5²",
+        "misconception": "L'élève lit 5² comme 5 × 2 = 10 et trouve 90 + 10 = 100. Or 5² = 25, donc 90 + 25 = 115."
+      }
+    ],
+    "answer": {
+      "value": "b"
+    },
+    "solution_steps": [
+      "On calcule chaque expression dans l'ordre des priorités : parenthèses, puis puissances, puis produits, puis sommes.",
+      "a : 2 + 9 × 4 = 2 + 36 = 38. c : 2 × 25 = 50. d : 90 + 25 = 115.",
+      "b : (2 + 3)² × 4 = 5² × 4 = 25 × 4 = 100. La bonne réponse est b.",
+      "Les autres propositions ne valent 100 qu'avec une erreur : carré appliqué à la somme (a), carré appliqué au produit (c), 5² lu comme 5 × 2 (d)."
+    ],
+    "hint": "Calcule les quatre expressions, en commençant par les parenthèses puis les puissances.",
+    "estimated_duration_s": 150,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, 5e : calculer la valeur numérique d'expressions contenant des puissances simples, additions, soustractions et produits."
+  },
+  {
+    "id": "EX-B052-M-02",
+    "skill_id": "B052",
+    "level": "maitrise",
+    "type": "numerique",
+    "statement": "Une boîte cubique de 6 cm d'arête se remplit de cubes de 1 cm d'arête. On a déjà rangé 4 couches complètes.\n\nCombien de cubes faut-il pour finir ?",
+    "image": null,
+    "answer": {
+      "value": 72,
+      "accepted": [
+        "72 cubes",
+        "72 petits cubes"
+      ]
+    },
+    "solution_steps": [
+      "Une couche complète est un carré de 6 cubes sur 6 : 6² = 36 cubes.",
+      "La boîte pleine contient 6 couches : 6³ = 6 × 6 × 6 = 216 cubes.",
+      "Déjà rangés : 4 × 6² = 4 × 36 = 144 cubes. Il en manque 6³ − 4 × 6² = 216 − 144 = 72.",
+      "Autre façon : il reste 6 − 4 = 2 couches, soit 2 × 36 = 72 cubes. Pièges : 144 est le nombre de cubes déjà rangés, pas ceux qui manquent ; 216 − 4 × 6 = 192 compte une couche comme une seule rangée de 6."
+    ],
+    "hint": "Combien de cubes dans une couche ? Combien de couches dans la boîte pleine ?",
+    "estimated_duration_s": 150,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, 5e : calculer la valeur numérique d'expressions contenant des puissances simples, additions, soustractions et produits."
+  }
+]

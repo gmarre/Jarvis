@@ -1,0 +1,172 @@
+[
+  {
+    "id": "EX-A037-D-01",
+    "skill_id": "A037",
+    "level": "decouverte",
+    "type": "numerique",
+    "statement": "On sait que $10^{-1} = 0{,}1$ et $10^{-2} = 0{,}01$.\n\nQuelle est l'écriture décimale de $10^{-6}$ ?",
+    "image": null,
+    "answer": {
+      "value": 1e-06
+    },
+    "solution_steps": [
+      "$10^{-6}$ est l'inverse de $10^6 = 1\\,000\\,000$ : c'est un millionième.",
+      "Le chiffre 1 de $10^{-n}$ est au n-ième rang après la virgule : $10^{-1} = 0{,}1$ (premier rang), $10^{-2} = 0{,}01$ (deuxième rang), et ainsi de suite.",
+      "Donc $10^{-6} = 0{,}000\\,001$ : cinq zéros après la virgule, puis le 1 au sixième rang."
+    ],
+    "hint": "Dans $10^{-2} = 0{,}01$, à quel rang après la virgule se trouve le chiffre 1 ?",
+    "estimated_duration_s": 45,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, classe de 3e, Nombres et calculs, Puissances : « Définir les puissances d'exposant négatif d'un nombre. »"
+  },
+  {
+    "id": "EX-A037-D-02",
+    "skill_id": "A037",
+    "level": "decouverte",
+    "type": "qcm",
+    "statement": "Le préfixe kilo signifie $10^{3}$. Combien de mètres vaut un millimètre ?",
+    "image": null,
+    "choices": [
+      {
+        "key": "a",
+        "text": "$10^{3}$ m",
+        "misconception": "L'élève confond milli et kilo : $10^{3}$ m, c'est un kilomètre. Le préfixe milli désigne un millième, pas mille."
+      },
+      {
+        "key": "b",
+        "text": "$10^{-2}$ m",
+        "misconception": "L'élève confond le millimètre avec le centimètre : un centième de mètre, c'est 1 cm, soit $10^{-2}$ m."
+      },
+      {
+        "key": "c",
+        "text": "$10^{-3}$ m",
+        "misconception": null
+      },
+      {
+        "key": "d",
+        "text": "$-1\\,000$ m",
+        "misconception": "L'élève croit qu'un exposant négatif donne un nombre négatif. Une longueur n'est jamais négative : $10^{-3}$ est un petit nombre positif."
+      }
+    ],
+    "answer": {
+      "value": "c"
+    },
+    "solution_steps": [
+      "Milli signifie « un millième » : 1 mm est la millième partie d'un mètre, donc 1 mm = 0,001 m.",
+      "$0{,}001 = \\frac{1}{1\\,000} = \\frac{1}{10^3} = 10^{-3}$.",
+      "Donc 1 mm = $10^{-3}$ m. Kilo et milli se répondent : 1 km = $10^{3}$ m et 1 mm = $10^{-3}$ m. La bonne réponse est c."
+    ],
+    "hint": "Combien de millimètres y a-t-il dans un mètre ?",
+    "estimated_duration_s": 40,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, classe de 3e, Nombres et calculs, Puissances : « Définir les puissances d'exposant négatif d'un nombre. » ; Cycle 4, Nombres et calculs, présentation commune aux trois classes : « On introduit en fonction des besoins les préfixes des puissances de dix de nano à giga. On fait le lien avec les conversions. »"
+  },
+  {
+    "id": "EX-A037-E-01",
+    "skill_id": "A037",
+    "level": "entrainement",
+    "type": "numerique",
+    "statement": "Écris $62 \\times 10^{-3}$ sous forme décimale.",
+    "image": null,
+    "answer": {
+      "value": 0.062
+    },
+    "solution_steps": [
+      "$10^{-3} = 0{,}001$ : multiplier par $10^{-3}$, c'est multiplier par 0,001, donc diviser par 1 000.",
+      "$62 \\div 1\\,000$ : la virgule recule de 3 rangs vers la gauche, $62 \\to 6{,}2 \\to 0{,}62 \\to 0{,}062$.",
+      "Donc $62 \\times 10^{-3} = 0{,}062$. Le résultat est plus petit que 62, normal puisque $10^{-3}$ est plus petit que 1."
+    ],
+    "hint": "Multiplier par $10^{-3}$, c'est diviser par quel nombre ?",
+    "estimated_duration_s": 45,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, classe de 3e, Nombres et calculs, Puissances : « Définir les puissances d'exposant négatif d'un nombre. »"
+  },
+  {
+    "id": "EX-A037-E-02",
+    "skill_id": "A037",
+    "level": "entrainement",
+    "type": "vrai_faux",
+    "statement": "Un virus mesure environ 0,000 000 1 m. Nadia affirme : « C'est $10^{-7}$ m. »\n\nA-t-elle raison ?",
+    "image": null,
+    "answer": {
+      "value": true
+    },
+    "solution_steps": [
+      "Dans 0,000 000 1, il y a six zéros après la virgule, puis le chiffre 1, au septième rang.",
+      "Le chiffre 1 de $10^{-n}$ est au n-ième rang après la virgule : ici n = 7, donc 0,000 000 1 = $10^{-7}$.",
+      "Compter les zéros donnerait 6, et c'est l'erreur à éviter : $10^{-6} = 0{,}000\\,001$ n'a que cinq zéros après la virgule. Nadia a **raison**."
+    ],
+    "hint": "À quel rang après la virgule se trouve le chiffre 1 ?",
+    "estimated_duration_s": 50,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, classe de 3e, Nombres et calculs, Puissances : « Définir les puissances d'exposant négatif d'un nombre. »"
+  },
+  {
+    "id": "EX-A037-M-01",
+    "skill_id": "A037",
+    "level": "maitrise",
+    "type": "numerique",
+    "statement": "Le flash d'un appareil photo dure 250 µs (microsecondes). Combien de millisecondes cela fait-il ?",
+    "image": null,
+    "answer": {
+      "value": 0.25,
+      "unit": "ms",
+      "accepted": [
+        "0,25 milliseconde",
+        "0,25 millisecondes"
+      ]
+    },
+    "solution_steps": [
+      "Micro signifie $10^{-6}$ : 1 µs = 0,000 001 s. Milli signifie $10^{-3}$ : 1 ms = 0,001 s.",
+      "$0{,}001 = 1\\,000 \\times 0{,}000\\,001$ : une milliseconde contient 1 000 microsecondes.",
+      "Donc 250 µs = $250 \\div 1\\,000$ ms = 0,25 ms.",
+      "Vérification en secondes : $250 \\times 10^{-6} = 0{,}000\\,25$ s et $0{,}25 \\times 10^{-3} = 0{,}000\\,25$ s."
+    ],
+    "hint": "Combien de microsecondes y a-t-il dans une milliseconde ?",
+    "estimated_duration_s": 90,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, classe de 3e, Nombres et calculs, Puissances : « Définir les puissances d'exposant négatif d'un nombre. » ; Cycle 4, Nombres et calculs, présentation commune aux trois classes : « On introduit en fonction des besoins les préfixes des puissances de dix de nano à giga. On fait le lien avec les conversions. »"
+  },
+  {
+    "id": "EX-A037-M-02",
+    "skill_id": "A037",
+    "level": "maitrise",
+    "type": "qcm",
+    "statement": "Le diamètre d'une molécule d'ADN est d'environ 2 nm (nanomètres). Quelle est cette longueur en mètres ?",
+    "image": null,
+    "choices": [
+      {
+        "key": "a",
+        "text": "0,000 000 02 m",
+        "misconception": "L'élève écrit un zéro de moins : le chiffre 2 est alors au huitième rang, et 0,000 000 02 m = 2 × 10⁻⁸ m."
+      },
+      {
+        "key": "b",
+        "text": "0,000 000 002 m",
+        "misconception": null
+      },
+      {
+        "key": "c",
+        "text": "0,000 002 m",
+        "misconception": "L'élève confond nano et micro : 0,000 002 m = 2 µm = 2 × 10⁻⁶ m."
+      },
+      {
+        "key": "d",
+        "text": "2 000 000 000 m",
+        "misconception": "L'élève oublie le signe de l'exposant : nano signifie 10⁻⁹, pas 10⁹ (giga). Une molécule ne mesure pas deux millions de kilomètres."
+      }
+    ],
+    "answer": {
+      "value": "b"
+    },
+    "solution_steps": [
+      "Nano signifie $10^{-9}$ : 1 nm = $10^{-9}$ m = 0,000 000 001 m, le chiffre 1 étant au neuvième rang après la virgule.",
+      "2 nm = 2 × 0,000 000 001 m = 0,000 000 002 m : le chiffre 2 est au neuvième rang.",
+      "Vérification : 0,000 000 02 m = $2 \\times 10^{-8}$ m et 0,000 002 m = $2 \\times 10^{-6}$ m. La bonne réponse est b."
+    ],
+    "hint": "Nano signifie $10^{-9}$ : à quel rang après la virgule se trouve le chiffre 1 de $10^{-9}$ ?",
+    "estimated_duration_s": 60,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, classe de 3e, Nombres et calculs, Puissances : « Définir les puissances d'exposant négatif d'un nombre. » ; Cycle 4, Nombres et calculs, présentation commune aux trois classes : « On introduit en fonction des besoins les préfixes des puissances de dix de nano à giga. On fait le lien avec les conversions. »"
+  }
+]

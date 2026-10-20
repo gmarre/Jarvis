@@ -1,0 +1,170 @@
+[
+  {
+    "id": "EX-A031-D-01",
+    "skill_id": "A031",
+    "level": "decouverte",
+    "type": "numerique",
+    "statement": "On plie une feuille en deux, 6 pliages de suite. À chaque pliage, le nombre d'épaisseurs double.\n\nCombien d'épaisseurs obtient-on ?",
+    "image": null,
+    "answer": {
+      "value": 64,
+      "accepted": [
+        "64 épaisseurs"
+      ]
+    },
+    "solution_steps": [
+      "Au départ, 1 épaisseur. Chaque pliage multiplie le nombre d'épaisseurs par 2.",
+      "Après 6 pliages : 2 × 2 × 2 × 2 × 2 × 2, produit de 6 facteurs égaux à 2, qui s'écrit 2⁶ (« 2 exposant 6 » ou « 2 puissance 6 »).",
+      "2⁶ = 4 × 4 × 4 = 16 × 4 = 64 épaisseurs.",
+      "Pièges : 2 × 6 = 12 multiplie par l'exposant ; 6² = 36 échange le nombre et l'exposant."
+    ],
+    "hint": "Écris le nombre d'épaisseurs après 1, 2, puis 3 pliages, et observe.",
+    "estimated_duration_s": 90,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, 4e : définir les puissances d'exposant positif d'un nombre a."
+  },
+  {
+    "id": "EX-A031-D-02",
+    "skill_id": "A031",
+    "level": "decouverte",
+    "type": "qcm",
+    "statement": "Quelle écriture est égale à 4 × 4 × 4 × 4 × 4 ?",
+    "image": null,
+    "choices": [
+      {
+        "key": "a",
+        "text": "4⁵",
+        "misconception": null
+      },
+      {
+        "key": "b",
+        "text": "5⁴",
+        "misconception": "L'élève échange le nombre et l'exposant : 5⁴ est le produit de quatre facteurs égaux à 5."
+      },
+      {
+        "key": "c",
+        "text": "4 × 5",
+        "misconception": "L'élève confond produit répété et somme répétée : 4 × 5 = 4 + 4 + 4 + 4 + 4 = 20, alors que 4 × 4 × 4 × 4 × 4 = 1 024."
+      }
+    ],
+    "answer": {
+      "value": "a"
+    },
+    "solution_steps": [
+      "On compte les facteurs : il y en a 5, tous égaux à 4.",
+      "Un produit de 5 facteurs égaux à 4 s'écrit 4⁵ : le nombre répété en bas, le nombre de facteurs en exposant. La bonne réponse est a.",
+      "Pièges : 5⁴ = 5 × 5 × 5 × 5 échange les rôles ; 4 × 5 = 20 est une somme répétée (4 + 4 + 4 + 4 + 4), pas un produit répété."
+    ],
+    "hint": "Quel nombre est répété, et combien de facteurs comptes-tu ?",
+    "estimated_duration_s": 45,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, 4e : définir les puissances d'exposant positif d'un nombre a."
+  },
+  {
+    "id": "EX-A031-E-01",
+    "skill_id": "A031",
+    "level": "entrainement",
+    "type": "qcm",
+    "statement": "Combien vaut (−3)³ ?",
+    "image": null,
+    "choices": [
+      {
+        "key": "a",
+        "text": "−9",
+        "misconception": "L'élève multiplie le nombre par l'exposant : (−3) × 3 = −9. Or (−3)³ est le produit de trois facteurs égaux à −3."
+      },
+      {
+        "key": "b",
+        "text": "27",
+        "misconception": "L'élève calcule 3 × 3 × 3 = 27 sans s'occuper du signe. Or (−3) × (−3) = 9, puis 9 × (−3) est négatif."
+      },
+      {
+        "key": "c",
+        "text": "−27",
+        "misconception": null
+      },
+      {
+        "key": "d",
+        "text": "9",
+        "misconception": "L'élève ne prend que deux facteurs, (−3) × (−3) = 9, comme pour un carré."
+      }
+    ],
+    "answer": {
+      "value": "c"
+    },
+    "solution_steps": [
+      "(−3)³ = (−3) × (−3) × (−3) : trois facteurs égaux à −3.",
+      "(−3) × (−3) = 9 : deux facteurs négatifs donnent un produit positif.",
+      "9 × (−3) = −27 : un facteur positif et un facteur négatif donnent un produit négatif. Donc (−3)³ = −27. La bonne réponse est c.",
+      "Pièges : 27 oublie le signe ; −9 multiplie par l'exposant ; 9 ne compte que deux facteurs."
+    ],
+    "hint": "Écris les trois facteurs, puis multiplie-les deux par deux.",
+    "estimated_duration_s": 60,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, 4e : définir les puissances d'exposant positif d'un nombre a."
+  },
+  {
+    "id": "EX-A031-E-02",
+    "skill_id": "A031",
+    "level": "entrainement",
+    "type": "numerique",
+    "statement": "Calcule 0,5⁴ et donne le résultat en écriture décimale.",
+    "image": null,
+    "answer": {
+      "value": 0.0625
+    },
+    "solution_steps": [
+      "0,5⁴ = 0,5 × 0,5 × 0,5 × 0,5 : quatre facteurs égaux à 0,5.",
+      "0,5 × 0,5 = 0,25 ; 0,25 × 0,5 = 0,125 ; 0,125 × 0,5 = 0,0625.",
+      "0,5⁴ = 0,0625. Contrôle : chaque facteur 0,5 prend la moitié, donc le résultat diminue à chaque étape.",
+      "Pièges : 0,5 × 4 = 2 multiplie par l'exposant ; 0,625 vient de 25 × 25 = 625 avec la virgule mal placée, alors que 0,25 × 0,25 a quatre chiffres après la virgule."
+    ],
+    "hint": "Multiplie 0,5 par lui-même, puis continue facteur par facteur.",
+    "estimated_duration_s": 90,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, 4e : définir les puissances d'exposant positif d'un nombre a."
+  },
+  {
+    "id": "EX-A031-M-01",
+    "skill_id": "A031",
+    "level": "maitrise",
+    "type": "vrai_faux",
+    "statement": "Vrai ou faux : −2⁴ = (−2)⁴.",
+    "image": null,
+    "answer": {
+      "value": false
+    },
+    "solution_steps": [
+      "Dans (−2)⁴, l'exposant porte sur −2, parenthèse comprise : (−2) × (−2) × (−2) × (−2) = 4 × 4 = 16.",
+      "Dans −2⁴, l'exposant porte seulement sur 2 : −2⁴ = −(2 × 2 × 2 × 2) = −16.",
+      "16 et −16 ne sont pas égaux : l'égalité est **fausse**.",
+      "Piège : sans parenthèse, le signe moins n'est pas élevé à la puissance. De même, (−5)² = 25 mais −5² = −25."
+    ],
+    "hint": "Sur quoi porte l'exposant quand il n'y a pas de parenthèse ?",
+    "estimated_duration_s": 90,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, 4e : définir les puissances d'exposant positif d'un nombre a."
+  },
+  {
+    "id": "EX-A031-M-02",
+    "skill_id": "A031",
+    "level": "maitrise",
+    "type": "numerique",
+    "statement": "Une bactérie se divise en deux toutes les heures : 1 bactérie donne 2 bactéries, puis 4, puis 8…\n\nAu bout de combien d'heures en compte-t-on 1 024 ?",
+    "image": null,
+    "answer": {
+      "value": 10,
+      "unit": "h"
+    },
+    "solution_steps": [
+      "Après n heures, le nombre de bactéries est 2 × 2 × … × 2, avec n facteurs : c'est 2ⁿ.",
+      "On cherche n tel que 2ⁿ = 1 024. On continue la liste : 2⁴ = 16 ; 2⁵ = 32 ; 2⁶ = 64 ; 2⁷ = 128 ; 2⁸ = 256 ; 2⁹ = 512 ; 2¹⁰ = 1 024.",
+      "Il faut 10 heures.",
+      "Pièges : 1 024 ÷ 2 = 512 ne compte pas les heures ; les 4 chiffres de 1 024 ne donnent pas l'exposant."
+    ],
+    "hint": "Continue la liste 2, 4, 8, 16… en comptant les heures.",
+    "estimated_duration_s": 120,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, 4e : définir les puissances d'exposant positif d'un nombre a."
+  }
+]

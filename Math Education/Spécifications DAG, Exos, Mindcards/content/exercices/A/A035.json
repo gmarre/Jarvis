@@ -1,0 +1,169 @@
+[
+  {
+    "id": "EX-A035-D-01",
+    "skill_id": "A035",
+    "level": "decouverte",
+    "type": "numerique",
+    "statement": "$\\sqrt{20}$ est compris entre deux nombres entiers consécutifs.\n\nQuel est le plus petit de ces deux entiers ?",
+    "image": null,
+    "answer": {
+      "value": 4
+    },
+    "solution_steps": [
+      "On situe 20 entre deux carrés parfaits qui se suivent : $4^2 = 16$ et $5^2 = 25$, donc 16 < 20 < 25.",
+      "Plus un nombre positif est grand, plus sa racine carrée est grande. Donc $\\sqrt{16} < \\sqrt{20} < \\sqrt{25}$, c'est-à-dire $4 < \\sqrt{20} < 5$.",
+      "Le plus petit des deux entiers est **4**.",
+      "Piège : encadrer 20 entre 20 et 21, ou prendre sa moitié 10, ne dit rien de sa racine carrée : 10 × 10 = 100, bien plus que 20."
+    ],
+    "hint": "Entre quels carrés parfaits se trouve 20 ?",
+    "estimated_duration_s": 45,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, classe de 4e, Nombres et calculs, Racine carrée : « Encadrer la racine carrée d'un entier par deux nombres entiers consécutifs. »"
+  },
+  {
+    "id": "EX-A035-D-02",
+    "skill_id": "A035",
+    "level": "decouverte",
+    "type": "qcm",
+    "statement": "Entre quels entiers consécutifs se trouve $\\sqrt{60}$ ?",
+    "image": null,
+    "choices": [
+      {
+        "key": "a",
+        "text": "30 et 31",
+        "misconception": "L'élève confond la racine carrée et la moitié : 60 ÷ 2 = 30. Or 30 × 30 = 900, bien plus que 60."
+      },
+      {
+        "key": "b",
+        "text": "6 et 7",
+        "misconception": "L'élève se fie au premier chiffre de 60. Mais $7^2 = 49$ est plus petit que 60 : $\\sqrt{60}$ est plus grand que 7."
+      },
+      {
+        "key": "c",
+        "text": "60 et 61",
+        "misconception": "L'élève encadre 60 au lieu d'encadrer sa racine carrée."
+      },
+      {
+        "key": "d",
+        "text": "7 et 8",
+        "misconception": null
+      }
+    ],
+    "answer": {
+      "value": "d"
+    },
+    "solution_steps": [
+      "On cherche les deux carrés parfaits consécutifs qui entourent 60 : $7^2 = 49$ et $8^2 = 64$.",
+      "49 < 60 < 64, donc $\\sqrt{49} < \\sqrt{60} < \\sqrt{64}$, c'est-à-dire $7 < \\sqrt{60} < 8$.",
+      "$\\sqrt{60}$ se trouve entre **7 et 8**. La bonne réponse est d."
+    ],
+    "hint": "Récite les carrés : 36, 49, 64… Entre lesquels se place 60 ?",
+    "estimated_duration_s": 45,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, classe de 4e, Nombres et calculs, Racine carrée : « Encadrer la racine carrée d'un entier par deux nombres entiers consécutifs. »"
+  },
+  {
+    "id": "EX-A035-E-01",
+    "skill_id": "A035",
+    "level": "entrainement",
+    "type": "numerique",
+    "statement": "Quel est l'entier juste au-dessus de $\\sqrt{95}$ ?",
+    "image": null,
+    "answer": {
+      "value": 10
+    },
+    "solution_steps": [
+      "On situe 95 entre deux carrés parfaits consécutifs : $9^2 = 81$ et $10^2 = 100$, donc 81 < 95 < 100.",
+      "On en déduit $9 < \\sqrt{95} < 10$.",
+      "L'entier juste au-dessus de $\\sqrt{95}$ est **10**.",
+      "Piège : 95 ÷ 2 = 47,5 n'a rien à voir avec la racine carrée, et 96 est l'entier juste au-dessus de 95, pas de $\\sqrt{95}$."
+    ],
+    "hint": "Quel est le premier carré parfait plus grand que 95 ?",
+    "estimated_duration_s": 45,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, classe de 4e, Nombres et calculs, Racine carrée : « Encadrer la racine carrée d'un entier par deux nombres entiers consécutifs. »"
+  },
+  {
+    "id": "EX-A035-E-02",
+    "skill_id": "A035",
+    "level": "entrainement",
+    "type": "vrai_faux",
+    "statement": "Sans calculatrice : $\\sqrt{50}$ est plus proche de 7 que de 8.\n\nVrai ou faux ?",
+    "image": null,
+    "answer": {
+      "value": true
+    },
+    "solution_steps": [
+      "On encadre 50 par deux carrés parfaits consécutifs : $7^2 = 49$ et $8^2 = 64$. Donc $7 < \\sqrt{50} < 8$.",
+      "50 est tout près de 49 (1 de plus) et loin de 64 (14 de moins). $\\sqrt{50}$ est donc à peine plus grand que $\\sqrt{49} = 7$.",
+      "C'est **vrai** : $\\sqrt{50}$ est plus proche de 7 que de 8. La calculatrice le confirme : $\\sqrt{50} \\approx 7{,}07$."
+    ],
+    "hint": "50 est-il plus proche de $7^2$ ou de $8^2$ ?",
+    "estimated_duration_s": 45,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, classe de 4e, Nombres et calculs, Racine carrée : « Encadrer la racine carrée d'un entier par deux nombres entiers consécutifs. »"
+  },
+  {
+    "id": "EX-A035-M-01",
+    "skill_id": "A035",
+    "level": "maitrise",
+    "type": "numerique",
+    "statement": "Sans calculatrice, quel est l'entier le plus proche de $\\sqrt{140}$ ?",
+    "image": null,
+    "answer": {
+      "value": 12
+    },
+    "solution_steps": [
+      "On encadre 140 par deux carrés parfaits consécutifs : $11^2 = 121$ et $12^2 = 144$. Donc $11 < \\sqrt{140} < 12$.",
+      "140 est à 4 de 144 et à 19 de 121 : il est bien plus proche de 144.",
+      "$\\sqrt{140}$ est donc juste en dessous de $\\sqrt{144} = 12$. L'entier le plus proche est **12**.",
+      "Piège : 11 est l'entier juste en dessous de $\\sqrt{140}$, mais ce n'est pas le plus proche. La calculatrice donne $\\sqrt{140} \\approx 11{,}8$."
+    ],
+    "hint": "Encadre d'abord 140 entre deux carrés parfaits, puis regarde duquel il est le plus proche.",
+    "estimated_duration_s": 60,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, classe de 4e, Nombres et calculs, Racine carrée : « Encadrer la racine carrée d'un entier par deux nombres entiers consécutifs. »"
+  },
+  {
+    "id": "EX-A035-M-02",
+    "skill_id": "A035",
+    "level": "maitrise",
+    "type": "qcm",
+    "statement": "On sait que $\\sqrt{n}$ est compris entre 8 et 9.\n\nQuelle valeur le nombre n peut-il prendre ?",
+    "image": null,
+    "choices": [
+      {
+        "key": "a",
+        "text": "75",
+        "misconception": null
+      },
+      {
+        "key": "b",
+        "text": "17",
+        "misconception": "L'élève additionne les deux bornes : 8 + 9 = 17. Mais $\\sqrt{17}$ est entre 4 et 5, car 16 < 17 < 25."
+      },
+      {
+        "key": "c",
+        "text": "8,5",
+        "misconception": "L'élève place n entre 8 et 9, au lieu d'y placer $\\sqrt{n}$. Or $\\sqrt{8{,}5}$ est entre 2 et 3."
+      },
+      {
+        "key": "d",
+        "text": "85",
+        "misconception": "L'élève cherche un nombre « entre 80 et 90 » sans le comparer aux carrés. Or $9^2 = 81$ et 85 > 81 : $\\sqrt{85}$ est plus grand que 9."
+      }
+    ],
+    "answer": {
+      "value": "a"
+    },
+    "solution_steps": [
+      "Si $8 < \\sqrt{n} < 9$, alors en élevant au carré : $8^2 < n < 9^2$, c'est-à-dire 64 < n < 81.",
+      "75 est entre 64 et 81 : il convient. 17 et 8,5 sont plus petits que 64, et 85 est plus grand que 81.",
+      "La bonne réponse est a : $\\sqrt{75}$ est bien compris entre 8 et 9."
+    ],
+    "hint": "Quels sont les carrés de 8 et de 9 ?",
+    "estimated_duration_s": 60,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, classe de 4e, Nombres et calculs, Racine carrée : « Encadrer la racine carrée d'un entier par deux nombres entiers consécutifs. »"
+  }
+]

@@ -1,0 +1,172 @@
+[
+  {
+    "id": "EX-C013-D-01",
+    "skill_id": "C013",
+    "level": "decouverte",
+    "type": "numerique",
+    "statement": "Pour calculer $\\frac{1}{3} + \\frac{2}{9}$, on écrit d'abord $\\frac{1}{3}$ avec le dénominateur 9.\n\nComplète : $\\frac{1}{3} + \\frac{2}{9} = \\frac{\\ldots}{9}$",
+    "image": null,
+    "answer": {
+      "value": 5,
+      "accepted": [
+        "5/9"
+      ]
+    },
+    "solution_steps": [
+      "Les deux fractions n'ont pas le même dénominateur : on ne peut pas encore les additionner. Comme 9 = 3 × 3, on multiplie le numérateur et le dénominateur de $\\frac{1}{3}$ par 3 : $\\frac{1}{3} = \\frac{1 \\times 3}{3 \\times 3} = \\frac{3}{9}$.",
+      "Les deux fractions sont maintenant des neuvièmes : $\\frac{3}{9} + \\frac{2}{9} = \\frac{3 + 2}{9} = \\frac{5}{9}$. On additionne les numérateurs et on garde le dénominateur 9.",
+      "Le nombre manquant est **5**.",
+      "Attention : additionner aussi les dénominateurs donnerait $\\frac{3}{12}$, plus petit que $\\frac{1}{3} = \\frac{4}{12}$. Une somme de deux fractions ne peut pas être plus petite que l'une d'elles."
+    ],
+    "hint": "Combien de neuvièmes y a-t-il dans un tiers ?",
+    "estimated_duration_s": 60,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, classe de 5e, Nombres et calculs, Nombres rationnels : « Additionner et soustraire des fractions de dénominateurs quelconques. »"
+  },
+  {
+    "id": "EX-C013-D-02",
+    "skill_id": "C013",
+    "level": "decouverte",
+    "type": "qcm",
+    "statement": "Un pot contient $\\frac{1}{2}$ litre de lait. On y verse $\\frac{1}{5}$ de litre en plus.\n\nQuelle quantité de lait le pot contient-il ?",
+    "image": null,
+    "choices": [
+      {
+        "key": "a",
+        "text": "$\\frac{2}{7}$ de litre",
+        "misconception": "L'élève additionne les numérateurs entre eux et les dénominateurs entre eux : 1 + 1 = 2 et 2 + 5 = 7. Or $\\frac{2}{7}$ est moins que la moitié d'un litre (2 est moins que la moitié de 7) : après avoir ajouté du lait, il y en aurait moins qu'au départ."
+      },
+      {
+        "key": "b",
+        "text": "$\\frac{7}{10}$ de litre",
+        "misconception": null
+      },
+      {
+        "key": "c",
+        "text": "$\\frac{2}{10}$ de litre",
+        "misconception": "L'élève trouve le bon dénominateur commun, 10, mais garde les numérateurs 1 et 1 sans les multiplier : il oublie que $\\frac{1}{2} = \\frac{5}{10}$ et $\\frac{1}{5} = \\frac{2}{10}$."
+      }
+    ],
+    "answer": {
+      "value": "b"
+    },
+    "solution_steps": [
+      "Le pot contient $\\frac{1}{2} + \\frac{1}{5}$ litre. Les dénominateurs 2 et 5 sont différents : on cherche un dénominateur commun, un multiple de 2 et de 5. Le plus petit est 10.",
+      "$\\frac{1}{2} = \\frac{1 \\times 5}{2 \\times 5} = \\frac{5}{10}$ et $\\frac{1}{5} = \\frac{1 \\times 2}{5 \\times 2} = \\frac{2}{10}$.",
+      "$\\frac{5}{10} + \\frac{2}{10} = \\frac{7}{10}$ : le pot contient $\\frac{7}{10}$ de litre.",
+      "Contrôle : $\\frac{7}{10}$ est plus grand que $\\frac{1}{2} = \\frac{5}{10}$, ce qui est normal puisqu'on a ajouté du lait."
+    ],
+    "hint": "Écris les deux fractions avec le dénominateur 10.",
+    "estimated_duration_s": 75,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, classe de 5e, Nombres et calculs, Nombres rationnels : « Additionner et soustraire des fractions de dénominateurs quelconques. »"
+  },
+  {
+    "id": "EX-C013-E-01",
+    "skill_id": "C013",
+    "level": "entrainement",
+    "type": "texte",
+    "statement": "Calcule $\\frac{7}{10} - \\frac{1}{4}$.\n\nÉcris ta réponse sous la forme numérateur/dénominateur.",
+    "image": null,
+    "answer": {
+      "value": "9/20",
+      "accepted": [
+        "18/40",
+        "0,45",
+        "neuf vingtièmes"
+      ]
+    },
+    "solution_steps": [
+      "Les dénominateurs 10 et 4 sont différents. On cherche un multiple commun à 10 et à 4 : 20 convient, car 20 = 10 × 2 = 4 × 5.",
+      "$\\frac{7}{10} = \\frac{14}{20}$ et $\\frac{1}{4} = \\frac{5}{20}$.",
+      "$\\frac{14}{20} - \\frac{5}{20} = \\frac{9}{20}$ : on soustrait les numérateurs et on garde le dénominateur.",
+      "Avec le dénominateur 40 (10 × 4), on trouve $\\frac{28}{40} - \\frac{10}{40} = \\frac{18}{40}$, qui est égal à $\\frac{9}{20}$ : cette réponse est juste aussi."
+    ],
+    "hint": "Cherche un nombre qui est à la fois dans la table de 10 et dans la table de 4.",
+    "estimated_duration_s": 90,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, classe de 5e, Nombres et calculs, Nombres rationnels : « Additionner et soustraire des fractions de dénominateurs quelconques. »"
+  },
+  {
+    "id": "EX-C013-E-02",
+    "skill_id": "C013",
+    "level": "entrainement",
+    "type": "vrai_faux",
+    "statement": "Sami calcule $4 - \\frac{2}{7}$. Il écrit : $4 - \\frac{2}{7} = \\frac{2}{7}$, car 4 − 2 = 2.\n\nSami a-t-il raison ?",
+    "image": null,
+    "answer": {
+      "value": false
+    },
+    "solution_steps": [
+      "Sami a retiré 2 au nombre entier 4 : il mélange des unités et des septièmes. On ne soustrait que des fractions de même dénominateur.",
+      "On écrit 4 avec le dénominateur 7 : 4 unités font 4 × 7 = 28 septièmes, donc $4 = \\frac{28}{7}$.",
+      "$\\frac{28}{7} - \\frac{2}{7} = \\frac{26}{7}$. L'égalité de Sami est donc **fausse**.",
+      "Contrôle : on enlève à 4 moins d'une unité, il reste plus de 3. Or $\\frac{2}{7}$ est plus petit que 1, c'est impossible. Et $\\frac{26}{7} = 3 + \\frac{5}{7}$ est bien entre 3 et 4."
+    ],
+    "hint": "Combien de septièmes y a-t-il dans 4 unités ?",
+    "estimated_duration_s": 75,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, classe de 5e, Nombres et calculs, Nombres rationnels : « Additionner et soustraire des fractions de dénominateurs quelconques. »"
+  },
+  {
+    "id": "EX-C013-M-01",
+    "skill_id": "C013",
+    "level": "maitrise",
+    "type": "texte",
+    "statement": "Complète : $\\frac{3}{8} + \\ldots = \\frac{5}{6}$\n\nÉcris la fraction manquante sous la forme numérateur/dénominateur.",
+    "image": null,
+    "answer": {
+      "value": "11/24",
+      "accepted": [
+        "22/48"
+      ]
+    },
+    "solution_steps": [
+      "Le nombre manquant est ce qu'il faut ajouter à $\\frac{3}{8}$ pour obtenir $\\frac{5}{6}$ : c'est la différence $\\frac{5}{6} - \\frac{3}{8}$.",
+      "Un multiple commun à 6 et à 8 : 24, car 24 = 6 × 4 = 8 × 3. Donc $\\frac{5}{6} = \\frac{20}{24}$ et $\\frac{3}{8} = \\frac{9}{24}$.",
+      "$\\frac{20}{24} - \\frac{9}{24} = \\frac{11}{24}$.",
+      "Vérification : $\\frac{9}{24} + \\frac{11}{24} = \\frac{20}{24} = \\frac{5}{6}$."
+    ],
+    "hint": "Pour trouver ce qu'il faut ajouter, fais une soustraction.",
+    "estimated_duration_s": 120,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, classe de 5e, Nombres et calculs, Nombres rationnels : « Additionner et soustraire des fractions de dénominateurs quelconques. »"
+  },
+  {
+    "id": "EX-C013-M-02",
+    "skill_id": "C013",
+    "level": "maitrise",
+    "type": "qcm",
+    "statement": "Combien vaut $3 - \\frac{3}{4} - \\frac{1}{2}$ ?",
+    "image": null,
+    "choices": [
+      {
+        "key": "a",
+        "text": "$\\frac{7}{4}$",
+        "misconception": null
+      },
+      {
+        "key": "b",
+        "text": "$\\frac{11}{4}$",
+        "misconception": "L'élève calcule d'abord $\\frac{3}{4} - \\frac{1}{2} = \\frac{1}{4}$, puis $3 - \\frac{1}{4} = \\frac{11}{4}$ : il commence par la droite. Une suite de soustractions se calcule de gauche à droite."
+      },
+      {
+        "key": "c",
+        "text": "$\\frac{8}{4}$",
+        "misconception": "L'élève trouve bien $3 - \\frac{3}{4} = \\frac{9}{4}$, mais écrit $\\frac{1}{2}$ en quarts sans multiplier le numérateur : $\\frac{1}{4}$ au lieu de $\\frac{2}{4}$. Il obtient $\\frac{9}{4} - \\frac{1}{4} = \\frac{8}{4}$."
+      }
+    ],
+    "answer": {
+      "value": "a"
+    },
+    "solution_steps": [
+      "On calcule de gauche à droite, en écrivant tout en quarts : $3 = \\frac{12}{4}$ et $\\frac{1}{2} = \\frac{2}{4}$.",
+      "$\\frac{12}{4} - \\frac{3}{4} = \\frac{9}{4}$, puis $\\frac{9}{4} - \\frac{2}{4} = \\frac{7}{4}$.",
+      "Contrôle : on retire à 3 un peu plus d'une unité, car $\\frac{3}{4} + \\frac{2}{4} = \\frac{5}{4}$ dépasse 1. Le résultat est un peu moins de 2 : $\\frac{7}{4} = 1 + \\frac{3}{4}$."
+    ],
+    "hint": "Écris 3 et $\\frac{1}{2}$ en quarts, puis calcule de gauche à droite.",
+    "estimated_duration_s": 120,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, classe de 5e, Nombres et calculs, Nombres rationnels : « Additionner et soustraire des fractions de dénominateurs quelconques. »"
+  }
+]

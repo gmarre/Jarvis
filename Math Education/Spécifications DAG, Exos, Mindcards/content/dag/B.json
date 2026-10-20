@@ -527,6 +527,76 @@
     ]
   },
   {
+    "id": "B022",
+    "domain": "B",
+    "domain_name": "Calcul numérique",
+    "label": "Multiplier des puissances d'un même nombre",
+    "description": "Calculer le produit de deux puissances d'un même nombre en revenant à la définition : 2³ × 2⁴ = (2 × 2 × 2) × (2 × 2 × 2 × 2) = 2⁷, donc aᵐ × aⁿ = aᵐ⁺ⁿ, que l'élève retrouve plutôt qu'il ne récite ; avec des puissances de 10 (10⁵ × 10³ = 10⁸) et des bases négatives ((−3)² × (−3) = (−3)³). L'erreur type est de multiplier les exposants (2³ × 2⁴ = 2¹²) ou les bases (2³ × 2⁴ = 4⁷). Réponse : l'exposant du résultat (un nombre) ou sa valeur ; QCM entre écritures. Figure : aucune.",
+    "prerequisites": [
+      "A031"
+    ],
+    "difficulty": 5,
+    "school_level": "4e",
+    "validation_test": "Écris 5² × 5⁶ sous la forme 5ⁿ : que vaut n ? Même question pour 10⁴ × 10 × 10² avec 10ⁿ.",
+    "mastery_threshold": {
+      "required": 3,
+      "out_of": 4
+    },
+    "exercise_ids": [
+      "EX-B022-D-01",
+      "EX-B022-D-02",
+      "EX-B022-E-01",
+      "EX-B022-E-02",
+      "EX-B022-M-01",
+      "EX-B022-M-02"
+    ],
+    "mindmap_id": "MM-B-07",
+    "programme_ref": [
+      {
+        "source": "Cycle 4, classe de 4e, Nombres et calculs, Puissances, Objectifs d'apprentissage",
+        "quote": "Multiplier des puissances d'exposant entier naturel d'un même nombre entre elles."
+      }
+    ]
+  },
+  {
+    "id": "B023",
+    "domain": "B",
+    "domain_name": "Calcul numérique",
+    "label": "Multiplier et diviser des puissances",
+    "description": "Calculer le produit et le quotient de puissances d'un même nombre, avec des exposants positifs ou négatifs, en revenant à la définition : 2⁵ ÷ 2³ = (2 × 2 × 2 × 2 × 2) ÷ (2 × 2 × 2) = 2², donc aᵐ ÷ aⁿ = aᵐ⁻ⁿ ; 10⁴ × 10⁻⁶ = 10⁻² ; 10³ ÷ 10⁻² = 10⁵ ; et combiner avec les puissances de même exposant ((2 × 5)³ = 2³ × 5³). L'erreur type est de diviser les exposants (2⁶ ÷ 2² = 2³) ou de se tromper de signe en soustrayant un exposant négatif. Réponse : l'exposant du résultat (un relatif) ou sa valeur ; QCM entre écritures. Figure : aucune.",
+    "prerequisites": [
+      "B022",
+      "B053",
+      "A036"
+    ],
+    "difficulty": 6,
+    "school_level": "3e",
+    "validation_test": "Écris sous la forme 10ⁿ et donne n : 10⁵ ÷ 10², puis 10³ × 10⁻⁷, puis 10⁻¹ ÷ 10⁻⁵.",
+    "mastery_threshold": {
+      "required": 3,
+      "out_of": 4
+    },
+    "exercise_ids": [
+      "EX-B023-D-01",
+      "EX-B023-D-02",
+      "EX-B023-E-01",
+      "EX-B023-E-02",
+      "EX-B023-M-01",
+      "EX-B023-M-02"
+    ],
+    "mindmap_id": "MM-B-07",
+    "programme_ref": [
+      {
+        "source": "Cycle 4, classe de 3e, Nombres et calculs, Puissances, Objectifs d'apprentissage",
+        "quote": "Multiplier et diviser des puissances."
+      },
+      {
+        "source": "Cycle 4, classe de 3e, Nombres et calculs, Puissances, Automatismes",
+        "quote": "Multiplication de puissances de même exposant positif de deux nombres."
+      }
+    ]
+  },
+  {
     "id": "B036",
     "domain": "B",
     "domain_name": "Calcul numérique",
@@ -1102,6 +1172,75 @@
       {
         "source": "Cycle 4, classe de 4e, Nombres et calculs, Opérations sur les nombres relatifs, Automatismes",
         "quote": "Manipulation de sommes et différences de nombre relatifs."
+      }
+    ]
+  },
+  {
+    "id": "B052",
+    "domain": "B",
+    "domain_name": "Calcul numérique",
+    "label": "Calculer une expression avec des carrés et des cubes",
+    "description": "Calculer une expression numérique qui mêle carrés ou cubes, additions, soustractions et produits, en calculant les puissances avant les produits, et les produits avant les sommes : 3 + 2 × 5² = 3 + 2 × 25 = 53 ; 2 × 3² = 18 alors que (2 × 3)² = 36 ; 10³ − 4² = 984. L'erreur type est d'appliquer le carré à tout ce qui le précède (2 × 3² = 36) ou de calculer de gauche à droite. Nombres positifs ; les puissances de relatifs sont en 4e, la valeur d'une expression avec une lettre à l'étape 7. Réponse : un nombre. Figure : aucune.",
+    "prerequisites": [
+      "A029",
+      "B011"
+    ],
+    "difficulty": 5,
+    "school_level": "5e",
+    "validation_test": "Calcule 4 + 3 × 2², puis (4 + 3) × 2², puis 5² − 2³.",
+    "mastery_threshold": {
+      "required": 3,
+      "out_of": 4
+    },
+    "exercise_ids": [
+      "EX-B052-D-01",
+      "EX-B052-D-02",
+      "EX-B052-E-01",
+      "EX-B052-E-02",
+      "EX-B052-M-01",
+      "EX-B052-M-02"
+    ],
+    "mindmap_id": "MM-B-07",
+    "programme_ref": [
+      {
+        "source": "Cycle 4, classe de 5e, Nombres et calculs, Puissances, Objectifs d'apprentissage",
+        "quote": "Calculer la valeur numérique d'expressions contenant des puissances simples, additions, soustractions et produits."
+      },
+      {
+        "source": "Cycle 4, classe de 5e, Nombres et calculs, Opérations, Objectifs d'apprentissage",
+        "quote": "Connaitre et utiliser les priorités opératoires."
+      }
+    ]
+  },
+  {
+    "id": "B053",
+    "domain": "B",
+    "domain_name": "Calcul numérique",
+    "label": "Multiplier des puissances de même exposant",
+    "description": "Calculer le produit de deux puissances de même exposant de deux nombres en revenant à la définition : 2³ × 5³ = (2 × 5) × (2 × 5) × (2 × 5) = 10³, donc aⁿ × bⁿ = (a × b)ⁿ ; s'en servir pour calculer mentalement (4² × 25² = 100² = 10 000 ; 0,5⁴ × 2⁴ = 1). L'erreur type est d'additionner les exposants (2³ × 5³ = 10⁶) ou de confondre avec le produit de puissances d'un même nombre. Réponse : un nombre (la valeur, la base ou l'exposant du résultat) ; QCM entre écritures. Figure : aucune.",
+    "prerequisites": [
+      "A031"
+    ],
+    "difficulty": 5,
+    "school_level": "4e",
+    "validation_test": "Calcule sans calculatrice 2⁵ × 5⁵. Écris 3⁴ × 2⁴ sous la forme a⁴ : que vaut a ?",
+    "mastery_threshold": {
+      "required": 3,
+      "out_of": 4
+    },
+    "exercise_ids": [
+      "EX-B053-D-01",
+      "EX-B053-D-02",
+      "EX-B053-E-01",
+      "EX-B053-E-02",
+      "EX-B053-M-01",
+      "EX-B053-M-02"
+    ],
+    "mindmap_id": "MM-B-07",
+    "programme_ref": [
+      {
+        "source": "Cycle 4, classe de 4e, Nombres et calculs, Puissances, Objectifs d'apprentissage",
+        "quote": "Multiplier des puissances d'un même exposant entier naturel de deux nombres entre elles."
       }
     ]
   }

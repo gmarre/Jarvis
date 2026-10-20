@@ -1,0 +1,178 @@
+[
+  {
+    "id": "EX-A033-D-01",
+    "skill_id": "A033",
+    "level": "decouverte",
+    "type": "numerique",
+    "statement": "On fait 7 lancers de pièce à la suite et on note la suite des résultats. Chaque lancer donne pile ou face.\n\nCombien de suites différentes peut-on obtenir ?",
+    "image": null,
+    "answer": {
+      "value": 128,
+      "unit": "suites"
+    },
+    "solution_steps": [
+      "Au premier lancer, il y a 2 résultats possibles. Pour chacun d'eux, le deuxième lancer en donne encore 2 : cela fait 2 × 2 = 4 suites de deux lancers.",
+      "Chaque nouveau lancer multiplie le nombre de suites par 2. Pour 7 lancers, on multiplie 7 facteurs égaux à 2 : $2 \\times 2 \\times 2 \\times 2 \\times 2 \\times 2 \\times 2 = 2^{7}$.",
+      "$2^{7} = 128$. On peut obtenir **128** suites différentes.",
+      "Piège : répondre 2 × 7 = 14, c'est ajouter 2 suites à chaque lancer au lieu de doubler leur nombre."
+    ],
+    "hint": "Combien de suites pour 1 lancer ? pour 2 lancers ? pour 3 lancers ?",
+    "estimated_duration_s": 75,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, classe de 4e, Nombres et calculs, Puissances : « Résoudre des problèmes faisant intervenir des puissances. »"
+  },
+  {
+    "id": "EX-A033-D-02",
+    "skill_id": "A033",
+    "level": "decouverte",
+    "type": "qcm",
+    "statement": "Le nombre de bactéries d'une culture est multiplié par 3 chaque heure.\n\nPar combien est-il multiplié au bout de 4 heures ?",
+    "image": null,
+    "choices": [
+      {
+        "key": "a",
+        "text": "12",
+        "misconception": "L'élève multiplie le facteur par le nombre d'heures : 3 × 4 = 12. Or chaque heure multiplie par 3 le nombre déjà obtenu : il faut 3 × 3 × 3 × 3."
+      },
+      {
+        "key": "b",
+        "text": "81",
+        "misconception": null
+      },
+      {
+        "key": "c",
+        "text": "64",
+        "misconception": "L'élève inverse la base et l'exposant : il calcule $4^{3} = 64$ au lieu de $3^{4}$."
+      },
+      {
+        "key": "d",
+        "text": "27",
+        "misconception": "L'élève compte une multiplication de moins : $3^{3} = 27$ correspond à 3 heures. Au bout de 4 heures, il y a eu 4 multiplications par 3."
+      }
+    ],
+    "answer": {
+      "value": "b"
+    },
+    "solution_steps": [
+      "Après 1 heure, le nombre est multiplié par 3. Après 2 heures, il a subi deux multiplications par 3 : il est multiplié par 3 × 3 = 9 en tout.",
+      "Au bout de 4 heures, il y a eu 4 multiplications par 3 : $3 \\times 3 \\times 3 \\times 3 = 3^{4}$.",
+      "$3^{4} = 81$. Le nombre de bactéries est multiplié par **81**. La bonne réponse est b."
+    ],
+    "hint": "Par combien est-il multiplié au bout de 2 heures ?",
+    "estimated_duration_s": 45,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, classe de 4e, Nombres et calculs, Puissances : « Résoudre des problèmes faisant intervenir des puissances. »"
+  },
+  {
+    "id": "EX-A033-E-01",
+    "skill_id": "A033",
+    "level": "entrainement",
+    "type": "numerique",
+    "statement": "Combien de petits cubes de 1 cm d'arête faut-il pour remplir une caisse en forme de cube de 1 m d'arête ?",
+    "image": null,
+    "answer": {
+      "value": 1000000,
+      "unit": "cubes",
+      "accepted": [
+        "1 000 000"
+      ]
+    },
+    "solution_steps": [
+      "On met les longueurs dans la même unité : 1 m = 100 cm. La caisse est un cube de 100 cm d'arête.",
+      "Sur une arête, on aligne 100 petits cubes. Une couche au fond de la caisse en contient 100 × 100 = 10 000.",
+      "Il faut 100 couches pour remplir la hauteur : $100 \\times 100 \\times 100 = 100^{3}$ petits cubes.",
+      "$100^{3} = 1\\,000\\,000$ : il faut **un million** de petits cubes. Le volume de la caisse est $1\\,000\\,000$ cm³.",
+      "Piège : 100 cubes ne remplissent qu'une rangée, et 10 000 qu'une couche."
+    ],
+    "hint": "Combien de centimètres mesure l'arête de la caisse ? Combien de petits cubes tiennent dans une couche ?",
+    "estimated_duration_s": 90,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, classe de 4e, Nombres et calculs, Puissances : « Résoudre des problèmes faisant intervenir des puissances. »"
+  },
+  {
+    "id": "EX-A033-E-02",
+    "skill_id": "A033",
+    "level": "entrainement",
+    "type": "numerique",
+    "statement": "Une plateforme héberge $10^{4}$ films de 1 Go chacun. Un gigaoctet vaut $10^{9}$ octets.\n\nLa place occupée par ces films s'écrit $10^{n}$ octets. Que vaut n ?",
+    "image": null,
+    "answer": {
+      "value": 13
+    },
+    "solution_steps": [
+      "La place totale est le nombre de films multiplié par la taille d'un film : $10^{4} \\times 10^{9}$ octets.",
+      "$10^{4}$ est un produit de 4 facteurs 10, et $10^{9}$ un produit de 9 facteurs 10. Ensemble, cela fait 4 + 9 = 13 facteurs 10.",
+      "Donc $10^{4} \\times 10^{9} = 10^{13}$ : on additionne les exposants. **n = 13**.",
+      "Piège : multiplier les exposants (4 × 9 = 36) reviendrait à compter 36 facteurs 10 alors qu'il n'y en a que 13."
+    ],
+    "hint": "Combien de facteurs 10 y a-t-il dans chacune des deux puissances ?",
+    "estimated_duration_s": 60,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, classe de 4e, Nombres et calculs, Puissances : « Résoudre des problèmes faisant intervenir des puissances. »"
+  },
+  {
+    "id": "EX-A033-M-01",
+    "skill_id": "A033",
+    "level": "maitrise",
+    "type": "numerique",
+    "statement": "Un tournoi d'échecs à élimination directe réunit 256 joueurs. À chaque tour, les joueurs s'affrontent deux par deux et chaque perdant est éliminé.\n\nCombien de tours faut-il pour désigner le vainqueur ?",
+    "image": null,
+    "answer": {
+      "value": 8,
+      "unit": "tours"
+    },
+    "solution_steps": [
+      "À chaque tour, la moitié des joueurs est éliminée : le nombre de joueurs est divisé par 2.",
+      "On fait le chemin à l'envers : en partant du vainqueur seul, chaque tour remonté double le nombre de joueurs. Après n tours remontés, il y a $2^{n}$ joueurs.",
+      "On cherche n tel que $2^{n} = 256$ : $2^{7} = 128$ et $2^{8} = 256$. Donc n = 8.",
+      "Vérification : 256 → 128 → 64 → 32 → 16 → 8 → 4 → 2 → 1, soit **8 tours**."
+    ],
+    "hint": "Combien reste-t-il de joueurs après le premier tour ? après le deuxième ?",
+    "estimated_duration_s": 90,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, classe de 4e, Nombres et calculs, Puissances : « Résoudre des problèmes faisant intervenir des puissances. »"
+  },
+  {
+    "id": "EX-A033-M-02",
+    "skill_id": "A033",
+    "level": "maitrise",
+    "type": "qcm",
+    "statement": "La lumière parcourt environ $3 \\times 10^{5}$ km par seconde. Une année dure environ $3 \\times 10^{7}$ secondes.\n\nQuelle distance la lumière parcourt-elle en une année ?",
+    "image": null,
+    "choices": [
+      {
+        "key": "a",
+        "text": "$6 \\times 10^{12}$ km",
+        "misconception": "L'élève additionne les facteurs 3 et 3 au lieu de les multiplier. Le calcul est un produit : 3 × 3 = 9."
+      },
+      {
+        "key": "b",
+        "text": "$9 \\times 10^{35}$ km",
+        "misconception": "L'élève multiplie les exposants (5 × 7 = 35). Or $10^{5} \\times 10^{7}$ contient 5 + 7 = 12 facteurs 10."
+      },
+      {
+        "key": "c",
+        "text": "$9 \\times 10^{12}$ km",
+        "misconception": null
+      },
+      {
+        "key": "d",
+        "text": "$3 \\times 10^{12}$ km",
+        "misconception": "L'élève multiplie les puissances de 10 mais oublie de multiplier les facteurs 3 entre eux : il n'en garde qu'un."
+      }
+    ],
+    "answer": {
+      "value": "c"
+    },
+    "solution_steps": [
+      "Distance = vitesse × durée : $(3 \\times 10^{5}) \\times (3 \\times 10^{7})$ km.",
+      "Dans un produit, on peut regrouper les facteurs : $(3 \\times 3) \\times (10^{5} \\times 10^{7})$.",
+      "$3 \\times 3 = 9$, et $10^{5} \\times 10^{7} = 10^{12}$, car 5 facteurs 10 suivis de 7 facteurs 10 font 12 facteurs 10.",
+      "La lumière parcourt environ $9 \\times 10^{12}$ km en une année, soit 9 000 milliards de kilomètres. La bonne réponse est c."
+    ],
+    "hint": "Regroupe les deux facteurs 3 d'un côté, les deux puissances de 10 de l'autre.",
+    "estimated_duration_s": 90,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, classe de 4e, Nombres et calculs, Puissances : « Résoudre des problèmes faisant intervenir des puissances. »"
+  }
+]

@@ -1,0 +1,180 @@
+[
+  {
+    "id": "EX-B053-D-01",
+    "skill_id": "B053",
+    "level": "decouverte",
+    "type": "numerique",
+    "statement": "On veut calculer $2^{4} \\times 5^{4}$ sans calculatrice. On écrit :\n\n$2^{4} \\times 5^{4} = (2 \\times 2 \\times 2 \\times 2) \\times (5 \\times 5 \\times 5 \\times 5)$\n\nRegroupe chaque 2 avec un 5. Combien vaut ce produit ?",
+    "image": null,
+    "answer": {
+      "value": 10000,
+      "accepted": [
+        "10 000"
+      ]
+    },
+    "solution_steps": [
+      "Dans un produit, on peut changer l'ordre des facteurs et les regrouper comme on veut : le résultat ne change pas.",
+      "On forme quatre paires « un 2 et un 5 » : $(2 \\times 5) \\times (2 \\times 5) \\times (2 \\times 5) \\times (2 \\times 5)$.",
+      "Chaque paire vaut $2 \\times 5 = 10$ : il reste $10 \\times 10 \\times 10 \\times 10$, c'est-à-dire $10^{4}$.",
+      "$10^{4} = 10\\,000$. Donc $2^{4} \\times 5^{4} = 10^{4} = 10\\,000$ : on a multiplié les bases, 2 × 5 = 10, et gardé l'exposant 4.",
+      "Contrôle : $2^{4} = 16$ et $5^{4} = 625$, et $16 \\times 625 = 10\\,000$."
+    ],
+    "hint": "Combien vaut le produit d'un 2 et d'un 5 ? Combien de paires peux-tu former ?",
+    "estimated_duration_s": 60,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, classe de 4e, Nombres et calculs, Puissances : « Multiplier des puissances d'un même exposant entier naturel de deux nombres entre elles. »"
+  },
+  {
+    "id": "EX-B053-D-02",
+    "skill_id": "B053",
+    "level": "decouverte",
+    "type": "qcm",
+    "statement": "Quelle écriture est égale à $3^{3} \\times 4^{3}$ ?",
+    "image": null,
+    "choices": [
+      {
+        "key": "a",
+        "text": "$7^{3}$",
+        "misconception": "L'élève additionne les bases au lieu de les multiplier : 3 + 4 = 7. Or $3^{3} \\times 4^{3}$ est un produit de six facteurs, qui se regroupent en trois paires 3 × 4 = 12, pas 7."
+      },
+      {
+        "key": "b",
+        "text": "$12^{6}$",
+        "misconception": "L'élève multiplie bien les bases, mais additionne aussi les exposants (3 + 3 = 6). Or les six facteurs forment trois paires 3 × 4 : on obtient trois facteurs 12, donc l'exposant reste 3."
+      },
+      {
+        "key": "c",
+        "text": "$12^{3}$",
+        "misconception": null
+      },
+      {
+        "key": "d",
+        "text": "$12^{9}$",
+        "misconception": "L'élève multiplie les bases et multiplie aussi les exposants (3 × 3 = 9). Le produit ne contient pourtant que six facteurs, regroupés en trois paires."
+      }
+    ],
+    "answer": {
+      "value": "c"
+    },
+    "solution_steps": [
+      "On revient à la définition : $3^{3} \\times 4^{3} = (3 \\times 3 \\times 3) \\times (4 \\times 4 \\times 4)$.",
+      "On regroupe chaque 3 avec un 4 : $(3 \\times 4) \\times (3 \\times 4) \\times (3 \\times 4) = 12 \\times 12 \\times 12$.",
+      "Trois facteurs égaux à 12 : c'est $12^{3}$. On multiplie les bases et on garde l'exposant commun.",
+      "Contrôle : $3^{3} \\times 4^{3} = 27 \\times 64 = 1\\,728$ et $12^{3} = 1\\,728$. La bonne réponse est c."
+    ],
+    "hint": "Écris chaque puissance comme un produit, puis regroupe un 3 avec un 4.",
+    "estimated_duration_s": 45,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, classe de 4e, Nombres et calculs, Puissances : « Multiplier des puissances d'un même exposant entier naturel de deux nombres entre elles. »"
+  },
+  {
+    "id": "EX-B053-E-01",
+    "skill_id": "B053",
+    "level": "entrainement",
+    "type": "numerique",
+    "statement": "Calcule $25^{3} \\times 4^{3}$ sans calculatrice.",
+    "image": null,
+    "answer": {
+      "value": 1000000,
+      "accepted": [
+        "1 000 000"
+      ]
+    },
+    "solution_steps": [
+      "Calculer $25^{3}$ puis $4^{3}$ séparément serait long. Les deux puissances ont le même exposant 3 : on peut regrouper les facteurs deux par deux.",
+      "$25^{3} \\times 4^{3} = (25 \\times 25 \\times 25) \\times (4 \\times 4 \\times 4) = (25 \\times 4) \\times (25 \\times 4) \\times (25 \\times 4)$.",
+      "$25 \\times 4 = 100$, donc le produit vaut $100 \\times 100 \\times 100 = 100^{3}$.",
+      "$100^{3} = 1\\,000\\,000$ (un million).",
+      "Contrôle : $25^{3} = 15\\,625$ et $4^{3} = 64$ ; $15\\,625 \\times 64 = 1\\,000\\,000$."
+    ],
+    "hint": "Combien vaut 25 × 4 ?",
+    "estimated_duration_s": 75,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, classe de 4e, Nombres et calculs, Puissances : « Multiplier des puissances d'un même exposant entier naturel de deux nombres entre elles. »"
+  },
+  {
+    "id": "EX-B053-E-02",
+    "skill_id": "B053",
+    "level": "entrainement",
+    "type": "vrai_faux",
+    "statement": "Léa écrit : « $2^{3} \\times 7^{3} = 14^{6}$, car 2 × 7 = 14 et 3 + 3 = 6. »\n\nA-t-elle raison ?",
+    "image": null,
+    "answer": {
+      "value": false
+    },
+    "solution_steps": [
+      "On revient à la définition : $2^{3} \\times 7^{3} = (2 \\times 2 \\times 2) \\times (7 \\times 7 \\times 7)$. Ce produit contient six facteurs.",
+      "On regroupe chaque 2 avec un 7 : $(2 \\times 7) \\times (2 \\times 7) \\times (2 \\times 7) = 14 \\times 14 \\times 14 = 14^{3}$.",
+      "Les six facteurs ne donnent que **trois** facteurs 14 : l'exposant reste 3. Léa a raison de multiplier les bases, mais elle a tort d'additionner les exposants.",
+      "Donc $2^{3} \\times 7^{3} = 14^{3}$, et non $14^{6}$. Léa a **tort**."
+    ],
+    "hint": "Écris les six facteurs, puis regroupe-les par paires : combien de facteurs 14 obtiens-tu ?",
+    "estimated_duration_s": 60,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, classe de 4e, Nombres et calculs, Puissances : « Multiplier des puissances d'un même exposant entier naturel de deux nombres entre elles. »"
+  },
+  {
+    "id": "EX-B053-M-01",
+    "skill_id": "B053",
+    "level": "maitrise",
+    "type": "numerique",
+    "statement": "Calcule $0{,}25^{3} \\times 8^{3}$ sans calculatrice.",
+    "image": null,
+    "answer": {
+      "value": 8
+    },
+    "solution_steps": [
+      "Calculer $0{,}25^{3}$ directement donne un nombre à six décimales. Les deux puissances ont le même exposant 3 : on regroupe plutôt les facteurs par paires.",
+      "$0{,}25^{3} \\times 8^{3} = (0{,}25 \\times 8) \\times (0{,}25 \\times 8) \\times (0{,}25 \\times 8) = (0{,}25 \\times 8)^{3}$.",
+      "$0{,}25 \\times 8 = 2$ (un quart de 8). Le produit vaut donc $2^{3} = 2 \\times 2 \\times 2 = 8$.",
+      "Contrôle : $0{,}25^{3} = 0{,}015625$ et $8^{3} = 512$ ; $0{,}015625 \\times 512 = 8$."
+    ],
+    "hint": "Quel nombre obtiens-tu en multipliant 0,25 par 8 ?",
+    "estimated_duration_s": 90,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, classe de 4e, Nombres et calculs, Puissances : « Multiplier des puissances d'un même exposant entier naturel de deux nombres entre elles. »"
+  },
+  {
+    "id": "EX-B053-M-02",
+    "skill_id": "B053",
+    "level": "maitrise",
+    "type": "qcm",
+    "statement": "Les exposants de $2^{5} \\times 3^{4}$ ne sont pas égaux.\n\nQuelle écriture est pourtant égale à ce produit ?",
+    "image": null,
+    "choices": [
+      {
+        "key": "a",
+        "text": "$6^{9}$",
+        "misconception": "L'élève multiplie les bases et additionne les exposants (5 + 4 = 9), comme s'il y avait neuf facteurs 6. Or on ne peut former que quatre paires 2 × 3."
+      },
+      {
+        "key": "b",
+        "text": "$2 \\times 6^{4}$",
+        "misconception": null
+      },
+      {
+        "key": "c",
+        "text": "$6^{5}$",
+        "misconception": "L'élève multiplie les bases et garde le plus grand exposant, comme s'il y avait cinq facteurs 3. Il n'y en a que quatre : un facteur 2 reste sans partenaire."
+      },
+      {
+        "key": "d",
+        "text": "$6^{20}$",
+        "misconception": "L'élève multiplie les bases et multiplie aussi les exposants (5 × 4 = 20). Le produit ne contient pourtant que neuf facteurs."
+      }
+    ],
+    "answer": {
+      "value": "b"
+    },
+    "solution_steps": [
+      "On revient à la définition : $2^{5}$ compte cinq facteurs 2, et $3^{4}$ compte quatre facteurs 3.",
+      "On forme autant de paires $2 \\times 3 = 6$ que possible : quatre paires, qui donnent $6^{4}$. Il reste un facteur 2 tout seul.",
+      "Donc $2^{5} \\times 3^{4} = 2 \\times (2 \\times 3)^{4} = 2 \\times 6^{4}$. La règle « on multiplie les bases » ne s'applique qu'aux facteurs qui ont un partenaire.",
+      "Contrôle : $2^{5} \\times 3^{4} = 32 \\times 81 = 2\\,592$ et $2 \\times 6^{4} = 2 \\times 1\\,296 = 2\\,592$. La bonne réponse est b."
+    ],
+    "hint": "Combien de paires « un 2 et un 3 » peux-tu former ? Que reste-t-il ?",
+    "estimated_duration_s": 90,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, classe de 4e, Nombres et calculs, Puissances : « Multiplier des puissances d'un même exposant entier naturel de deux nombres entre elles. »"
+  }
+]

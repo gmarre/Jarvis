@@ -1,6 +1,6 @@
 # Fiche de relecture — synthèse
 
-> 170 compétences, 1036 exercices. Généré depuis `content/`, ne pas éditer à la main.  
+> 196 compétences, 1192 exercices. Généré depuis `content/`, ne pas éditer à la main.  
 > Objectif : juger le **fond** et la **coordination**. Le détail complet, énoncés et corrigés, est dans `RELECTURE_DETAIL.md`.
 
 ✅ Aucune anomalie de coordination détectée.
@@ -159,28 +159,54 @@ C'est la lecture qui compte pour juger la coordination : la difficulté doit mon
 | 146 | `A021` Opposé d'un nombre relatif | 5e | 4 | 6 | 17 |  |
 | 147 | `A022` Valeur absolue : la distance à zéro | 5e | 4 | 6 | 17 |  |
 | 148 | `A023` Comparer et ranger des décimaux relatifs | 5e | 4 | 6 | 24 |  |
-| 149 | `B011` Priorités opératoires | 5e | 4 | 6 | 12 |  |
-| 150 | `B044` Additionner deux décimaux relatifs | 5e | 4 | 6 | 21 |  |
-| 151 | `C011` Réduction au même dénominateur | 5e | 4 | 6 | 19 |  |
-| 152 | `C010` Comparer fractions de dénominateurs dif… | 5e | 4 | 6 | 16 |  |
-| 153 | `A017` Problèmes de multiples et de diviseurs … | 5e | 5 | 6 | 30 |  |
-| 154 | `B045` Soustraire deux décimaux relatifs | 5e | 5 | 6 | 19 |  |
-| 155 | `B046` Sommes de relatifs : parenthèses et écr… | 5e | 5 | 6 | 16 |  |
-| 156 | `B047` Enchaîner additions et soustractions de… | 5e | 5 | 6 | 18 |  |
-| 157 | `B048` Problèmes d'addition et de soustraction… | 5e | 5 | 6 | 29 |  |
-| 158 | `E034` Coefficient de proportionnalité | 5e | 5 | 6 | 48 |  |
-| 159 | `E007` Vitesse moyenne | 5e | 5 | 6 | 24 |  |
-| 160 | `E035` Reconnaître un tableau de proportionnal… | 5e | 5 | 6 | 47 |  |
-| 161 | `E023` Proportionnalité et graphique | 5e | 5 | 6 | 53 |  |
-| 162 | `E036` Calculer un pourcentage dans le cas gén… | 5e | 5 | 6 | 31 |  |
-| 163 | `E037` Pourcentages par linéarité : 1 %, 10 %,… | 5e | 5 | 6 | 29 |  |
-| 164 | `B049` Multiplier deux décimaux relatifs | 4e | 5 | 6 | 12 |  |
-| 165 | `B050` Diviser deux décimaux relatifs | 4e | 5 | 6 | 11 |  |
-| 166 | `B051` Enchaînements d'opérations avec des rel… | 4e | 5 | 6 | 13 |  |
-| 167 | `C007` Simplification de fraction | 4e | 5 | 6 | 13 |  |
-| 168 | `A024` Reconnaître un nombre premier | 3e | 5 | 6 | 22 |  |
-| 169 | `A025` Décomposer un entier en produit de fact… | 3e | 5 | 6 | 19 |  |
-| 170 | `C008` Fraction irréductible | 3e | 6 | 6 | 11 |  |
+| 149 | `A029` Carré et cube d'un nombre : les notatio… | 5e | 4 | 6 | 18 |  |
+| 150 | `A030` Carrés des entiers de 0 à 12 : les conn… | 5e | 4 | 6 | 15 |  |
+| 151 | `B011` Priorités opératoires | 5e | 4 | 6 | 12 |  |
+| 152 | `B044` Additionner deux décimaux relatifs | 5e | 4 | 6 | 21 |  |
+| 153 | `C011` Réduction au même dénominateur | 5e | 4 | 6 | 19 |  |
+| 154 | `C010` Comparer fractions de dénominateurs dif… | 5e | 4 | 6 | 16 |  |
+| 155 | `C013` Additionner et soustraire des fractions… | 5e | 4 | 6 | 14 |  |
+| 156 | `A017` Problèmes de multiples et de diviseurs … | 5e | 5 | 6 | 30 |  |
+| 157 | `B045` Soustraire deux décimaux relatifs | 5e | 5 | 6 | 19 |  |
+| 158 | `B046` Sommes de relatifs : parenthèses et écr… | 5e | 5 | 6 | 16 |  |
+| 159 | `B047` Enchaîner additions et soustractions de… | 5e | 5 | 6 | 18 |  |
+| 160 | `B048` Problèmes d'addition et de soustraction… | 5e | 5 | 6 | 29 |  |
+| 161 | `B052` Calculer une expression avec des carrés… | 5e | 5 | 6 | 15 |  |
+| 162 | `C033` Problèmes d'addition et de soustraction… | 5e | 5 | 6 | 29 |  |
+| 163 | `D026` Diviser par un nombre décimal | 5e | 5 | 6 | 17 |  |
+| 164 | `E034` Coefficient de proportionnalité | 5e | 5 | 6 | 48 |  |
+| 165 | `E007` Vitesse moyenne | 5e | 5 | 6 | 24 |  |
+| 166 | `E035` Reconnaître un tableau de proportionnal… | 5e | 5 | 6 | 47 |  |
+| 167 | `E023` Proportionnalité et graphique | 5e | 5 | 6 | 53 |  |
+| 168 | `E036` Calculer un pourcentage dans le cas gén… | 5e | 5 | 6 | 31 |  |
+| 169 | `E037` Pourcentages par linéarité : 1 %, 10 %,… | 5e | 5 | 6 | 29 |  |
+| 170 | `B049` Multiplier deux décimaux relatifs | 4e | 5 | 6 | 12 |  |
+| 171 | `A031` Puissances d'exposant entier positif d'… | 4e | 5 | 6 | 14 |  |
+| 172 | `A032` Puissances de 10 d'exposant positif ; p… | 4e | 5 | 6 | 19 |  |
+| 173 | `A034` Racine carrée d'un nombre positif | 4e | 5 | 6 | 14 |  |
+| 174 | `A035` Encadrer une racine carrée entre deux e… | 4e | 5 | 6 | 13 |  |
+| 175 | `B022` Multiplier des puissances d'un même nom… | 4e | 5 | 6 | 14 |  |
+| 176 | `A033` Problèmes faisant intervenir des puissa… | 4e | 5 | 6 | 26 |  |
+| 177 | `B050` Diviser deux décimaux relatifs | 4e | 5 | 6 | 11 |  |
+| 178 | `B051` Enchaînements d'opérations avec des rel… | 4e | 5 | 6 | 13 |  |
+| 179 | `B053` Multiplier des puissances de même expos… | 4e | 5 | 6 | 12 |  |
+| 180 | `C007` Simplification de fraction | 4e | 5 | 6 | 13 |  |
+| 181 | `C034` Nombres rationnels : quotients de relat… | 4e | 5 | 6 | 19 |  |
+| 182 | `C015` Multiplier des nombres rationnels | 4e | 5 | 6 | 14 |  |
+| 183 | `C018` Inverse d'un nombre | 4e | 5 | 6 | 12 |  |
+| 184 | `C017` Diviser des fractions | 4e | 5 | 6 | 11 |  |
+| 185 | `C035` Fraction d'une fraction, d'un nombre, d… | 4e | 5 | 6 | 27 |  |
+| 186 | `C036` Enchaîner des opérations avec des fract… | 4e | 6 | 6 | 7 |  |
+| 187 | `C037` Problèmes mobilisant les opérations sur… | 4e | 6 | 6 | 24 |  |
+| 188 | `A024` Reconnaître un nombre premier | 3e | 5 | 6 | 22 |  |
+| 189 | `A025` Décomposer un entier en produit de fact… | 3e | 5 | 6 | 19 |  |
+| 190 | `A036` Puissances d'exposant négatif | 3e | 6 | 6 | 11 |  |
+| 191 | `A037` Puissances de 10 d'exposant négatif ; p… | 3e | 6 | 6 | 14 |  |
+| 192 | `A038` Notation scientifique d'un nombre | 3e | 6 | 6 | 18 |  |
+| 193 | `A040` Problèmes utilisant la racine carrée | 3e | 6 | 6 | 24 |  |
+| 194 | `B023` Multiplier et diviser des puissances | 3e | 6 | 6 | 11 |  |
+| 195 | `A039` Problèmes avec la notation scientifique | 3e | 6 | 6 | 24 |  |
+| 196 | `C008` Fraction irréductible | 3e | 6 | 6 | 11 |  |
 
 ## 2. Par chapitre
 
@@ -547,6 +573,18 @@ Le chapitre est l'unité qu'un exercice bilan validerait.
 | `A016` Multiple, diviseur, divisible : l… | Employer les trois formulations équivalentes « a est un multiple de b », … | 6 |
 | `A017` Problèmes de multiples et de divi… | Résoudre des problèmes où il faut chercher un multiple commun (deux phéno… | 6 |
 
+### `MM-A-06` · Carrés, cubes et puissances (5e-4e)
+
+5 compétences, 30 exercices, niveaux 5e, 4e.
+
+| Compétence | Ce que l'élève doit savoir faire | Exos |
+|---|---|--:|
+| `A029` Carré et cube d'un nombre : les n… | Savoir que le carré d'un nombre est le produit de ce nombre par lui-même,… | 6 |
+| `A030` Carrés des entiers de 0 à 12 : le… | Connaître par cœur les carrés des entiers de 0 à 12 (0, 1, 4, 9, …, 121, … | 6 |
+| `A031` Puissances d'exposant entier posi… | Savoir que, pour un nombre a et un entier positif n, aⁿ est le produit de… | 6 |
+| `A032` Puissances de 10 d'exposant posit… | Savoir que 10ⁿ s'écrit 1 suivi de n zéros (10⁶ = 1 000 000), passer d'une… | 6 |
+| `A033` Problèmes faisant intervenir des … | Résoudre un problème où une puissance modélise un produit itéré : un déno… | 6 |
+
 ### `MM-B-05` · Additionner et soustraire des relatifs (5e)
 
 5 compétences, 30 exercices, niveaux 5e.
@@ -570,6 +608,17 @@ Le chapitre est l'unité qu'un exercice bilan validerait.
 | `B050` Diviser deux décimaux relatifs | Calculer le quotient de deux nombres relatifs quand il est décimal, avec … | 6 |
 | `B051` Enchaînements d'opérations avec d… | Calculer une expression qui enchaîne les quatre opérations sur des relati… | 6 |
 
+### `MM-B-07` · Calculer avec des puissances (5e-3e)
+
+4 compétences, 24 exercices, niveaux 5e, 4e, 3e.
+
+| Compétence | Ce que l'élève doit savoir faire | Exos |
+|---|---|--:|
+| `B052` Calculer une expression avec des … | Calculer une expression numérique qui mêle carrés ou cubes, additions, so… | 6 |
+| `B022` Multiplier des puissances d'un mê… | Calculer le produit de deux puissances d'un même nombre en revenant à la … | 6 |
+| `B053` Multiplier des puissances de même… | Calculer le produit de deux puissances de même exposant de deux nombres e… | 6 |
+| `B023` Multiplier et diviser des puissan… | Calculer le produit et le quotient de puissances d'un même nombre, avec d… | 6 |
+
 ### `MM-C-03` · Opérer sur les fractions (5e-3e)
 
 4 compétences, 24 exercices, niveaux 5e, 4e, 3e.
@@ -580,6 +629,23 @@ Le chapitre est l'unité qu'un exercice bilan validerait.
 | `C010` Comparer fractions de dénominateu… | Comparer deux fractions de dénominateurs différents | 6 |
 | `C007` Simplification de fraction | Simplifier une fraction par un facteur commun au numérateur et au dénomin… | 6 |
 | `C008` Fraction irréductible | Mettre une fraction sous forme irréductible | 6 |
+
+### `MM-C-05` · Additionner et soustraire des fractions (5e)
+
+2 compétences, 12 exercices, niveaux 5e.
+
+| Compétence | Ce que l'élève doit savoir faire | Exos |
+|---|---|--:|
+| `C013` Additionner et soustraire des fra… | Calculer la somme ou la différence de deux fractions positives dont les d… | 6 |
+| `C033` Problèmes d'addition et de soustr… | Résoudre un problème où des parts d'un même tout s'ajoutent ou se retranc… | 6 |
+
+### `MM-D-05` · Diviser par un nombre décimal (5e)
+
+1 compétences, 6 exercices, niveaux 5e.
+
+| Compétence | Ce que l'élève doit savoir faire | Exos |
+|---|---|--:|
+| `D026` Diviser par un nombre décimal | Calculer le quotient d'un entier ou d'un décimal par un décimal non entie… | 6 |
 
 ### `MM-E-04` · Coefficient, vitesse et graphique (5e)
 
@@ -592,6 +658,30 @@ Le chapitre est l'unité qu'un exercice bilan validerait.
 | `E035` Reconnaître un tableau de proport… | Décider si un tableau de valeurs traduit une situation de proportionnalit… | 6 |
 | `E023` Proportionnalité et graphique | Représenter une situation de proportionnalité par des points dans un repè… | 6 |
 
+### `MM-A-07` · La racine carrée (4e-3e)
+
+3 compétences, 18 exercices, niveaux 4e, 3e.
+
+| Compétence | Ce que l'élève doit savoir faire | Exos |
+|---|---|--:|
+| `A034` Racine carrée d'un nombre positif | Savoir que la racine carrée d'un nombre positif a, notée √a, est le nombr… | 6 |
+| `A035` Encadrer une racine carrée entre … | Encadrer la racine carrée d'un entier qui n'est pas un carré parfait par … | 6 |
+| `A040` Problèmes utilisant la racine car… | Résoudre un problème où l'on connaît l'aire d'un carré et où l'on cherche… | 6 |
+
+### `MM-C-06` · Nombres rationnels : produit, inverse, quotient, problèmes (4e)
+
+7 compétences, 42 exercices, niveaux 4e.
+
+| Compétence | Ce que l'élève doit savoir faire | Exos |
+|---|---|--:|
+| `C034` Nombres rationnels : quotients de… | Savoir qu'un nombre rationnel est le quotient de deux entiers relatifs, e… | 6 |
+| `C015` Multiplier des nombres rationnels | Calculer le produit de deux ou trois fractions, positives ou négatives, e… | 6 |
+| `C018` Inverse d'un nombre | Savoir que deux nombres sont inverses quand leur produit vaut 1, noter 1/… | 6 |
+| `C017` Diviser des fractions | Savoir que diviser par un nombre non nul revient à multiplier par son inv… | 6 |
+| `C035` Fraction d'une fraction, d'un nom… | Savoir que prendre une fraction d'un nombre ou d'une quantité revient à m… | 6 |
+| `C036` Enchaîner des opérations avec des… | Calculer une expression qui enchaîne plusieurs opérations sur des fractio… | 6 |
+| `C037` Problèmes mobilisant les opératio… | Résoudre un problème en plusieurs étapes qui mobilise addition, soustract… | 6 |
+
 ### `MM-A-05` · Nombres premiers et décomposition (3e)
 
 2 compétences, 12 exercices, niveaux 3e.
@@ -600,6 +690,17 @@ Le chapitre est l'unité qu'un exercice bilan validerait.
 |---|---|--:|
 | `A024` Reconnaître un nombre premier | Savoir qu'un nombre premier est un entier qui a exactement deux diviseurs… | 6 |
 | `A025` Décomposer un entier en produit d… | Écrire un entier jusqu'à 1 000 comme produit de nombres premiers, en divi… | 6 |
+
+### `MM-A-08` · Exposants négatifs et notation scientifique (3e)
+
+4 compétences, 24 exercices, niveaux 3e.
+
+| Compétence | Ce que l'élève doit savoir faire | Exos |
+|---|---|--:|
+| `A036` Puissances d'exposant négatif | Savoir que, pour un nombre a non nul et un entier positif n, a⁻ⁿ est l'in… | 6 |
+| `A037` Puissances de 10 d'exposant négat… | Savoir que 10⁻ⁿ = 0,0…01, le chiffre 1 étant au n-ième rang après la virg… | 6 |
+| `A038` Notation scientifique d'un nombre | Écrire un nombre décimal positif sous la forme a × 10ⁿ, avec a décimal, 1… | 6 |
+| `A039` Problèmes avec la notation scient… | Résoudre un problème issu des sciences ou de la vie courante en calculant… | 6 |
 
 ## 4. Les exercices, une ligne chacun
 
@@ -2557,6 +2658,32 @@ Le chapitre est l'unité qu'un exercice bilan validerait.
 | M | vrai | Vrai ou faux : de deux nombres relatifs, le plus grand est toujours celui qui a la plus gra… | faux |
 | M | nume | Je suis un nombre entier négatif. Je suis plus grand que −4,5, et ma distance à zéro est pl… | -4 |
 
+**`A029` · Carré et cube d'un nombre : les notations a² et a³** — diff. 4, seuil 3/4  
+*Savoir que le carré d'un nombre est le produit de ce nombre par lui-même, noté a² (l'aire d'un carré de côté a), et que son cube est le produit de trois facteurs égaux à ce nombre, noté a³ (le volume d'un cube d'arête a) : 7² = 7 × 7 = 49 ; 4³ = 4 × 4 × 4 = 64 ; 10³ = 1 000 ; lire « 5 au carré », « 2 au cube » ; écrire un nombre sous la forme d'un carré ou d'un cube quand c'est possible (64 = 8² = 4³ ; 1 000 = 10³). Nombres entiers. L'erreur type est de multiplier par l'exposant (7² = 14, 4³ = 12). Réponse : un nombre ; pour écrire un nombre sous forme de carré ou de cube, l'élève donne la base (125 = …³ : il tape 5) ou choisit l'écriture (QCM), jamais une puissance tapée. Figure utile : quadrillage (carré de 5 carreaux de côté) ou cubes (cube de 3 cubes d'arête).*
+> « Découvrir la notion de puissance d'un nombre et sa notation dans le cas du carré et du cube. »
+
+| | Type | Demandé | Réponse |
+|---|---|---|---|
+| D | qcm | Sur ce quadrillage, un carré est colorié. Quelle écriture donne le nombre de carreaux de ce… | c) 8² |
+| D | nume | Ce grand cube est rempli de petits cubes identiques, même à l'intérieur. Combien de petits … | 27 |
+| E | qcm | Lou lit à voix haute : « 9 au cube ». Quel calcul correspond à 9³ ? | b) 9 × 9 × 9 |
+| E | nume | Un carreau de faïence carré mesure 15 cm de côté. Son aire, en cm², est égale à 15². Combie… | 225 |
+| M | nume | 343 est le cube d'un nombre entier : 343 = …³. Quel est ce nombre entier ? | 7 |
+| M | vrai | Vrai ou faux : 64 est le carré d'un entier et le cube d'un entier. | vrai |
+
+**`A030` · Carrés des entiers de 0 à 12 : les connaître, les reconnaître** — diff. 4, seuil 3/4  
+*Connaître par cœur les carrés des entiers de 0 à 12 (0, 1, 4, 9, …, 121, 144) et s'en servir dans les deux sens : donner 11² sans poser de calcul, dire quel entier a pour carré 64, reconnaître parmi 36, 48, 81, 90 et 100 les carrés d'entiers (36, 81 et 100). C'est ce qui prépare la racine carrée (4e). L'erreur type est de confondre carré et double (8² = 16) ou de croire que 90 est un carré parce qu'il finit par 0 comme 100. Réponse : un nombre, un QCM ou un vrai/faux. Figure : aucune.*
+> « Connaitre les carrés des entiers de 0 à 12. »
+
+| | Type | Demandé | Réponse |
+|---|---|---|---|
+| D | nume | Une grille de sudoku est un carré de 9 cases sur 9 cases. Combien de cases contient-elle ? | 81 |
+| D | qcm | Quel entier a pour carré 16 ? | b) 4 |
+| E | qcm | Un seul de ces nombres n'est pas le carré d'un entier. Lequel ? | d) 60 |
+| E | nume | Le carré d'un nombre entier est compris entre 90 et 110. Quel est ce nombre entier ? | 10 |
+| M | vrai | Vrai ou faux : entre 60 et 90, il y a exactement deux carrés d'entiers. | vrai |
+| M | nume | Je suis un entier compris entre 0 et 12. Mon carré se termine par 6 et dépasse 20. Qui suis… | 6 |
+
 **`B011` · Priorités opératoires** — diff. 4, seuil 3/4  
 *Calculer une expression qui mêle les quatre opérations sur des nombres positifs, avec ou sans parenthèses, en effectuant d'abord les calculs entre parenthèses, puis les multiplications et les divisions, puis les additions et les soustractions, de gauche à droite à priorité égale : 7 + 3 × 5 = 22 ; 20 − 8 ÷ 4 = 18. Nommer le calcul (somme, différence, produit, quotient) d'après la dernière opération effectuée, distinguer termes et facteurs. L'erreur type est de calculer de gauche à droite sans tenir compte des priorités (7 + 3 × 5 = 50). Figure : aucune.*
 > « Connaitre et utiliser les priorités opératoires. »
@@ -2608,6 +2735,19 @@ Le chapitre est l'unité qu'un exercice bilan validerait.
 | E | text | Quelle est la plus grande de ces trois fractions ? 13/20, 7/10, 3/5 Écris-la sous la forme … | 7/10 |
 | M | text | Range ces trois fractions de la plus petite à la plus grande : 3/4, 7/18, 5/6 Écris-les sép… | 7/18, 3/4, 5/6 |
 | M | qcm | Au club de Lina, 14 adhérents sur 20 sont des filles. Au club de Malo, 9 adhérents sur 12 s… | b) Au club de Malo |
+
+**`C013` · Additionner et soustraire des fractions de dénominateurs différents** — diff. 4, seuil 3/4  
+*Calculer la somme ou la différence de deux fractions positives dont les dénominateurs sont différents, en les réduisant d'abord au même dénominateur : 2/5 + 1/4 = 8/20 + 5/20 = 13/20 ; 4/7 − 2/21 = 12/21 − 2/21 = 10/21 ; y compris quand l'un des termes est un entier, écrit alors comme une fraction (3 + 2/5 = 15/5 + 2/5 = 17/5 ; 1 − 2/3 = 1/3). Le résultat n'est pas simplifié : la simplification est un objectif de 4e. L'erreur type est d'additionner les numérateurs entre eux et les dénominateurs entre eux (2/5 + 1/4 = 3/9). Les fractions de nombres relatifs arrivent en 4e. Réponse : une fraction tapée « 13/20 », comparée par sa valeur (une fraction égale est acceptée). Figure : aucune.*
+> « Additionner et soustraire des fractions de dénominateurs quelconques. »
+
+| | Type | Demandé | Réponse |
+|---|---|---|---|
+| D | nume | Pour calculer 1/3 + 2/9, on écrit d'abord 1/3 avec le dénominateur 9. Complète : 1/3 + 2/9 … | 5 |
+| D | qcm | Un pot contient 1/2 litre de lait. On y verse 1/5 de litre en plus. Quelle quantité de lait… | b) 7/10 de litre |
+| E | text | Calcule 7/10 - 1/4. Écris ta réponse sous la forme numérateur/dénominateur. | 9/20 |
+| E | vrai | Sami calcule 4 - 2/7. Il écrit : 4 - 2/7 = 2/7, car 4 − 2 = 2. Sami a-t-il raison ? | faux |
+| M | text | Complète : 3/8 + … = 5/6 Écris la fraction manquante sous la forme numérateur/dénominateur. | 11/24 |
+| M | qcm | Combien vaut 3 - 3/4 - 1/2 ? | a) 7/4 |
 
 **`A017` · Problèmes de multiples et de diviseurs communs** — diff. 5, seuil 3/4  
 *Résoudre des problèmes où il faut chercher un multiple commun (deux phénomènes périodiques qui se reproduisent ensemble : deux bus qui repassent toutes les 12 et toutes les 18 minutes, deux engrenages) ou un diviseur commun (répartir 84 billes et 60 calots en paquets identiques, sans reste, le plus grand nombre de paquets possible), avec des nombres jusqu'à quelques centaines, en listant les multiples ou les diviseurs. Les mots PGCD et PPCM ne sont pas employés : ils ne figurent pas au programme. Figure : aucune.*
@@ -2673,6 +2813,45 @@ Le chapitre est l'unité qu'un exercice bilan validerait.
 | E | nume | Le compte bancaire de Sami est à −45 € : il doit 45 € à sa banque. Il dépose 120 €, puis pa… | -15 |
 | M | nume | Un spéléologue entre dans une grotte et descend de 140 m. Il se trouve alors à l'altitude −… | 55 |
 | M | qcm | Entre ce matin et ce soir, la température a varié de −6,5 degrés. Ce soir, il fait −2 °C. Q… | a) 4,5 degrés |
+
+**`B052` · Calculer une expression avec des carrés et des cubes** — diff. 5, seuil 3/4  
+*Calculer une expression numérique qui mêle carrés ou cubes, additions, soustractions et produits, en calculant les puissances avant les produits, et les produits avant les sommes : 3 + 2 × 5² = 3 + 2 × 25 = 53 ; 2 × 3² = 18 alors que (2 × 3)² = 36 ; 10³ − 4² = 984. L'erreur type est d'appliquer le carré à tout ce qui le précède (2 × 3² = 36) ou de calculer de gauche à droite. Nombres positifs ; les puissances de relatifs sont en 4e, la valeur d'une expression avec une lettre à l'étape 7. Réponse : un nombre. Figure : aucune.*
+> « Calculer la valeur numérique d'expressions contenant des puissances simples, additions, soustractions et produits. »
+
+| | Type | Demandé | Réponse |
+|---|---|---|---|
+| D | nume | Pour calculer 1 + 6 × 3², on commence par la puissance, puis le produit, puis la somme. Que… | 55 |
+| D | qcm | Noé commence le calcul de 5 × 2³. Quelle première étape est juste ? | c) 5 × 2³ = 5 × 8 |
+| E | nume | Calcule 2 × 7² − 3³. | 71 |
+| E | vrai | Vrai ou faux : (3 + 4)² = 3² + 4². | faux |
+| M | qcm | Une seule de ces expressions vaut 100. Laquelle ? | b) (2 + 3)² × 4 |
+| M | nume | Une boîte cubique de 6 cm d'arête se remplit de cubes de 1 cm d'arête. On a déjà rangé 4 co… | 72 |
+
+**`C033` · Problèmes d'addition et de soustraction de fractions** — diff. 5, seuil 3/4  
+*Résoudre un problème où des parts d'un même tout s'ajoutent ou se retranchent : quelle part représentent deux parts ensemble, quelle part reste-t-il, de combien une part dépasse l'autre. Exemple : un jardin est planté pour 1/3 en légumes et pour 1/4 en fleurs ; la partie plantée représente 7/12 du jardin, il en reste 5/12. Savoir que le tout vaut 1. L'erreur type est d'oublier de retrancher du tout (répondre 7/12 à « quelle part reste-t-il ? »). Les parts sont des fractions du même tout ; prendre une fraction d'une quantité relève de C004, et la fraction d'un reste de la 4e (C037). Réponse : une fraction, comparée par sa valeur. Figure : aucune.*
+> « Résoudre des problèmes avec des additions et soustractions de fractions. »
+
+| | Type | Demandé | Réponse |
+|---|---|---|---|
+| D | nume | Lors d'une randonnée, un groupe parcourt 1/2 du trajet le premier jour et 1/3 du trajet le … | 5 |
+| D | qcm | Ana mange 1/4 d'une pizza et Max en mange 1/6. Quelle part de la pizza reste-t-il ? | c) 7/12 |
+| E | text | Un réservoir est rempli aux 7/8. On en vide 1/3 de sa capacité. Quelle fraction du réservoi… | 13/24 |
+| E | vrai | Dans un club, chacun pratique un seul sport : 1/2 des membres font du tennis, 2/5 du footba… | vrai |
+| M | text | Inès consacre 3/10 de son budget de vacances au logement, 1/4 à la nourriture et le reste a… | 1/5 |
+| M | qcm | Hugo lit 2/9 d'un livre lundi, puis une partie mardi. Il lui reste 1/3 du livre à lire. Que… | d) 4/9 |
+
+**`D026` · Diviser par un nombre décimal** — diff. 5, seuil 3/4  
+*Calculer le quotient d'un entier ou d'un décimal par un décimal non entier en se ramenant à un diviseur entier : on ne change pas un quotient en multipliant le dividende et le diviseur par un même nombre (7,2 ÷ 1,5 = 72 ÷ 15 = 4,8 ; 6 ÷ 0,25 = 600 ÷ 25 = 24), puis on pose la division ou on calcule mentalement ; savoir que diviser par un nombre plus petit que 1 donne un résultat plus grand que le dividende (3 ÷ 0,5 = 6). L'erreur type est de multiplier seulement le diviseur par 10 (7,2 ÷ 1,5 devient 7,2 ÷ 15). Quotients décimaux exacts, ou arrondis au rang demandé. Réponse : un nombre décimal. Figure : aucune.*
+> « Diviser par un nombre décimal. »
+
+| | Type | Demandé | Réponse |
+|---|---|---|---|
+| D | nume | Un ruban de 4,5 m est coupé en morceaux de 0,9 m. On multiplie les deux nombres par 10 : 4{… | 5 |
+| D | qcm | Par quel calcul plus simple peut-on remplacer 3{,}6 ÷ 0{,}04 sans changer le résultat ? | c) 360 ÷ 4 |
+| E | nume | Calcule 2{,}73 ÷ 0{,}7. | 3.9 |
+| E | vrai | Léo affirme : « Une division donne toujours un résultat plus petit que le nombre divisé. Do… | faux |
+| M | nume | Au marché, Nora paie 5,04 € pour 2,4 kg de pommes. Quel est le prix d'un kilogramme de pomm… | 2.1 |
+| M | qcm | Avec 6 L d'eau, combien peut-on remplir de gourdes de 0,75 L ? | b) 8 |
 
 **`E034` · Coefficient de proportionnalité** — diff. 5, seuil 3/4  
 *Trouver le nombre par lequel on multiplie une grandeur pour obtenir l'autre (prix unitaire, vitesse, échelle), éventuellement décimal ou écrit sous forme de fraction, et l'utiliser pour compléter un tableau ou résoudre un problème. Une échelle peut alors s'écrire comme un coefficient (1 cm pour 25 000 cm).*
@@ -2767,6 +2946,84 @@ Le chapitre est l'unité qu'un exercice bilan validerait.
 | M | nume | Calcule (-0{,}4) × (-0{,}5). | 0.2 |
 | M | qcm | On sait que (-5) × 4 = -20 et que (-5) × 4 + (-5) × (-4) = (-5) × (4 + (-4)). Que vaut (-5)… | c) 20 |
 
+**`A031` · Puissances d'exposant entier positif d'un nombre** — diff. 5, seuil 3/4  
+*Savoir que, pour un nombre a et un entier positif n, aⁿ est le produit de n facteurs égaux à a (a¹ = a), lire « 2 exposant 5 » ou « 2 puissance 5 », et calculer une puissance d'un entier, d'un décimal ou d'un relatif : 2⁵ = 32 ; 0,1³ = 0,001 ; (−2)³ = −8 ; (−3)⁴ = 81, en distinguant (−3)² = 9 de −3² = −9 ; écrire un produit de facteurs égaux sous forme de puissance (7 × 7 × 7 × 7 = 7⁴). L'erreur type est de multiplier la base par l'exposant (2⁵ = 10) ou de se tromper de signe sur la puissance d'un négatif. Réponse : un nombre ; pour écrire un produit sous forme de puissance, l'élève donne l'exposant ou la base, ou choisit l'écriture (QCM), jamais une puissance tapée. Figure : aucune.*
+> « Définir les puissances d'exposant positif d'un nombre a. »
+
+| | Type | Demandé | Réponse |
+|---|---|---|---|
+| D | nume | On plie une feuille en deux, 6 pliages de suite. À chaque pliage, le nombre d'épaisseurs do… | 64 |
+| D | qcm | Quelle écriture est égale à 4 × 4 × 4 × 4 × 4 ? | a) 4⁵ |
+| E | qcm | Combien vaut (−3)³ ? | c) −27 |
+| E | nume | Calcule 0,5⁴ et donne le résultat en écriture décimale. | 0.0625 |
+| M | vrai | Vrai ou faux : −2⁴ = (−2)⁴. | faux |
+| M | nume | Une bactérie se divise en deux toutes les heures : 1 bactérie donne 2 bactéries, puis 4, pu… | 10 |
+
+**`A032` · Puissances de 10 d'exposant positif ; préfixes kilo, méga, giga** — diff. 5, seuil 3/4  
+*Savoir que 10ⁿ s'écrit 1 suivi de n zéros (10⁶ = 1 000 000), passer d'une écriture à l'autre, lire un grand nombre écrit avec une puissance de 10 (3 × 10⁸ m/s ; 7,2 × 10⁹ habitants) et compléter 1 200 = 1,2 × 10³ ; connaître les préfixes kilo (10³), méga (10⁶) et giga (10⁹) et s'en servir pour convertir (5 Go = 5 × 10⁹ octets ; 2,4 MW = 2 400 000 W). L'erreur type est de confondre l'exposant avec le nombre de chiffres (écrire 10⁶ avec six chiffres). Les exposants négatifs et les préfixes milli, micro et nano sont en 3e. Réponse : un nombre (les espaces entre les milliers sont acceptés) ou l'exposant ; jamais une puissance tapée. Figure : aucune.*
+> « Définir les puissances d'exposant positif d'un nombre a. »
+
+| | Type | Demandé | Réponse |
+|---|---|---|---|
+| D | nume | 10⁵ est le produit de 5 facteurs égaux à 10. Écris ce nombre en chiffres. | 100000 |
+| D | qcm | Un milliard s'écrit 1 000 000 000. Quelle écriture est égale à un milliard ? | b) 10⁹ |
+| E | nume | Une clé USB a une capacité de 16 Go (gigaoctets). Combien d'octets peut-elle contenir ? Écr… | 16000000000 |
+| E | nume | La France compte environ 68 000 000 habitants. Complète : 68 000 000 = 6,8 × 10ⁿ. Que vaut … | 7 |
+| M | vrai | Une éolienne produit au plus 2 MW (mégawatts). Vrai ou faux : 2 MW, c'est la même chose que… | vrai |
+| M | qcm | La Terre est à environ 150 000 000 km du Soleil. Quelle écriture donne cette distance en mè… | c) 1,5 × 10¹¹ m |
+
+**`A034` · Racine carrée d'un nombre positif** — diff. 5, seuil 3/4  
+*Savoir que la racine carrée d'un nombre positif a, notée √a, est le nombre positif dont le carré est a (√49 = 7 car 7² = 49 et 7 est positif ; √0 = 0 ; √1 = 1), que (√a)² = a, que √a est la longueur du côté d'un carré d'aire a, et qu'un nombre négatif n'a pas de racine carrée ; donner sans calcul la racine carrée d'un carré parfait jusqu'à 144. L'erreur type est de diviser par 2 (√16 = 8) ou de donner −7 pour √49. Réponse : un nombre, jamais une racine tapée ; QCM ou vrai/faux pour les cas sans racine. Figure utile : geometrie, carré dont l'aire est écrite et le côté demandé.*
+> « Comprendre et connaitre la définition de la racine carrée d'un nombre positif. »
+
+| | Type | Demandé | Réponse |
+|---|---|---|---|
+| D | nume | La racine carrée de 64, notée \sqrt{64}, est le nombre positif dont le carré vaut 64. Combi… | 8 |
+| D | qcm | Un carreau carré a une aire de 144 cm². Quelle est la longueur de son côté ? | c) 12 cm |
+| E | vrai | Max affirme : « \sqrt{9} + \sqrt{16} = \sqrt{25}, puisque 9 + 16 = 25. » A-t-il raison ? | faux |
+| E | nume | Un carré a un côté de \sqrt{13} cm. Quelle est son aire ? | 13 |
+| M | qcm | Une seule de ces écritures ne désigne aucun nombre. Laquelle ? | b) \sqrt{-16} |
+| M | nume | Quel nombre a pour racine carrée 15 ? | 225 |
+
+**`A035` · Encadrer une racine carrée entre deux entiers consécutifs** — diff. 5, seuil 3/4  
+*Encadrer la racine carrée d'un entier qui n'est pas un carré parfait par deux entiers consécutifs, en situant l'entier entre deux carrés parfaits : 25 < 30 < 36, donc 5 < √30 < 6 ; √70 est entre 8 et 9 ; dire de quel entier √a est le plus proche (√80 est proche de 9, car 80 est proche de 81). L'erreur type est d'encadrer a au lieu de √a (√30 entre 30 et 31) ou de prendre la moitié (√30 proche de 15). Réponse : un nombre (l'entier juste en dessous, puis l'entier juste au-dessus, en deux questions) ou un QCM entre encadrements. Figure : aucune (une droite graduée portant √30 donnerait la réponse).*
+> « Encadrer la racine carrée d'un entier par deux nombres entiers consécutifs. »
+
+| | Type | Demandé | Réponse |
+|---|---|---|---|
+| D | nume | \sqrt{20} est compris entre deux nombres entiers consécutifs. Quel est le plus petit de ces… | 4 |
+| D | qcm | Entre quels entiers consécutifs se trouve \sqrt{60} ? | d) 7 et 8 |
+| E | nume | Quel est l'entier juste au-dessus de \sqrt{95} ? | 10 |
+| E | vrai | Sans calculatrice : \sqrt{50} est plus proche de 7 que de 8. Vrai ou faux ? | vrai |
+| M | nume | Sans calculatrice, quel est l'entier le plus proche de \sqrt{140} ? | 12 |
+| M | qcm | On sait que \sqrt{n} est compris entre 8 et 9. Quelle valeur le nombre n peut-il prendre ? | a) 75 |
+
+**`B022` · Multiplier des puissances d'un même nombre** — diff. 5, seuil 3/4  
+*Calculer le produit de deux puissances d'un même nombre en revenant à la définition : 2³ × 2⁴ = (2 × 2 × 2) × (2 × 2 × 2 × 2) = 2⁷, donc aᵐ × aⁿ = aᵐ⁺ⁿ, que l'élève retrouve plutôt qu'il ne récite ; avec des puissances de 10 (10⁵ × 10³ = 10⁸) et des bases négatives ((−3)² × (−3) = (−3)³). L'erreur type est de multiplier les exposants (2³ × 2⁴ = 2¹²) ou les bases (2³ × 2⁴ = 4⁷). Réponse : l'exposant du résultat (un nombre) ou sa valeur ; QCM entre écritures. Figure : aucune.*
+> « Multiplier des puissances d'exposant entier naturel d'un même nombre entre elles. »
+
+| | Type | Demandé | Réponse |
+|---|---|---|---|
+| D | nume | On écrit 3² × 3⁵ = (3 × 3) × (3 × 3 × 3 × 3 × 3) = 3ⁿ. Que vaut n ? | 7 |
+| D | qcm | Quelle écriture est égale à 7³ × 7⁵ ? | c) 7⁸ |
+| E | nume | Une galaxie compte environ 10¹¹ étoiles, et l'Univers observable environ 10¹² galaxies. Le … | 23 |
+| E | nume | Calcule (−2)³ × (−2)⁴ et donne la valeur du résultat. | -128 |
+| M | vrai | Vrai ou faux : 2³ × 3² = 6⁵. | faux |
+| M | nume | Trouve n pour que 6ⁿ × 6 × 6³ = 6¹⁰. | 6 |
+
+**`A033` · Problèmes faisant intervenir des puissances** — diff. 5, seuil 3/4  
+*Résoudre un problème où une puissance modélise un produit itéré : un dénombrement répété (codes de 4 chiffres : 10⁴ = 10 000 ; chemins dans un arbre à trois étages de 2 branches : 2³ = 8), un doublement répété (une population de bactéries double chaque heure : 2⁶ = 64 fois plus après 6 h), une aire ou un volume (un cube de 10 cm d'arête a un volume de 10³ = 1 000 cm³), un grand nombre exprimé avec une puissance de 10 (une année-lumière vaut environ 9,5 × 10¹² km). L'erreur type est de multiplier par le nombre d'étapes au lieu d'élever à sa puissance (2 × 6 = 12 au lieu de 2⁶). Réponse : un nombre ou un exposant. Figure : aucune.*
+> « Résoudre des problèmes faisant intervenir des puissances. »
+
+| | Type | Demandé | Réponse |
+|---|---|---|---|
+| D | nume | On fait 7 lancers de pièce à la suite et on note la suite des résultats. Chaque lancer donn… | 128 |
+| D | qcm | Le nombre de bactéries d'une culture est multiplié par 3 chaque heure. Par combien est-il m… | b) 81 |
+| E | nume | Combien de petits cubes de 1 cm d'arête faut-il pour remplir une caisse en forme de cube de… | 1000000 |
+| E | nume | Une plateforme héberge 10^{4} films de 1 Go chacun. Un gigaoctet vaut 10^{9} octets. La pla… | 13 |
+| M | nume | Un tournoi d'échecs à élimination directe réunit 256 joueurs. À chaque tour, les joueurs s'… | 8 |
+| M | qcm | La lumière parcourt environ 3 × 10^{5} km par seconde. Une année dure environ 3 × 10^{7} se… | c) 9 × 10^{12} km |
+
 **`B050` · Diviser deux décimaux relatifs** — diff. 5, seuil 3/4  
 *Calculer le quotient de deux nombres relatifs quand il est décimal, avec la même règle des signes que pour le produit : (−36) ÷ (−9) = 4 ; (−7,5) ÷ 3 = −2,5 ; savoir que diviser, c'est trouver le facteur manquant d'une multiplication à trou ((−4) × ... = 20 se complète par 20 ÷ (−4) = −5), et qu'on ne divise jamais par zéro. Diviseur entier, pour rester dans ce que l'élève sait poser ; les quotients non décimaux et l'écriture fractionnaire des relatifs sont à l'étape 6. Figure : aucune.*
 > « Diviser deux nombres relatifs. »
@@ -2793,6 +3050,19 @@ Le chapitre est l'unité qu'un exercice bilan validerait.
 | M | nume | Programme de calcul : choisir un nombre ; lui soustraire 5 ; multiplier le résultat par le … | 36 |
 | M | qcm | Quelle phrase décrit l'expression (-6) + 18 ÷ (-3) ? | a) C'est une somme ; elle vaut −1… |
 
+**`B053` · Multiplier des puissances de même exposant** — diff. 5, seuil 3/4  
+*Calculer le produit de deux puissances de même exposant de deux nombres en revenant à la définition : 2³ × 5³ = (2 × 5) × (2 × 5) × (2 × 5) = 10³, donc aⁿ × bⁿ = (a × b)ⁿ ; s'en servir pour calculer mentalement (4² × 25² = 100² = 10 000 ; 0,5⁴ × 2⁴ = 1). L'erreur type est d'additionner les exposants (2³ × 5³ = 10⁶) ou de confondre avec le produit de puissances d'un même nombre. Réponse : un nombre (la valeur, la base ou l'exposant du résultat) ; QCM entre écritures. Figure : aucune.*
+> « Multiplier des puissances d'un même exposant entier naturel de deux nombres entre elles. »
+
+| | Type | Demandé | Réponse |
+|---|---|---|---|
+| D | nume | On veut calculer 2^{4} × 5^{4} sans calculatrice. On écrit : 2^{4} × 5^{4} = (2 × 2 × 2 × 2… | 10000 |
+| D | qcm | Quelle écriture est égale à 3^{3} × 4^{3} ? | c) 12^{3} |
+| E | nume | Calcule 25^{3} × 4^{3} sans calculatrice. | 1000000 |
+| E | vrai | Léa écrit : « 2^{3} × 7^{3} = 14^{6}, car 2 × 7 = 14 et 3 + 3 = 6. » A-t-elle raison ? | faux |
+| M | nume | Calcule 0{,}25^{3} × 8^{3} sans calculatrice. | 8 |
+| M | qcm | Les exposants de 2^{5} × 3^{4} ne sont pas égaux. Quelle écriture est pourtant égale à ce p… | b) 2 × 6^{4} |
+
 **`C007` · Simplification de fraction** — diff. 5, seuil 3/4  
 *Simplifier une fraction par un facteur commun au numérateur et au dénominateur*
 > « Simplifier une fraction. »
@@ -2805,6 +3075,97 @@ Le chapitre est l'unité qu'un exercice bilan validerait.
 | E | nume | On simplifie 56/72 et on obtient une fraction de dénominateur 9. Quel est son numérateur ? | 7 |
 | M | qcm | Peut-on simplifier l'écriture 4 + 2/4 en barrant les deux 4 ? | a) Non, car le 4 du haut est dans… |
 | M | qcm | Laquelle de ces égalités, écrites pour simplifier 18/27, est juste ? | d) 18/27 = 6/9 |
+
+**`C034` · Nombres rationnels : quotients de relatifs et opposé** — diff. 5, seuil 3/4  
+*Savoir qu'un nombre rationnel est le quotient de deux entiers relatifs, et écrire un quotient de relatifs sous forme fractionnaire avec la règle des signes : (−3)/4 = 3/(−4) = −3/4 ; (−6)/(−8) = 6/8 ; exprimer l'opposé d'un nombre rationnel (l'opposé de 2/5 est −2/5, celui de −7/3 est 7/3) ; lire ou placer sur une droite graduée un rationnel négatif simple (−3/4, −5/2) ; reconnaître qu'un décimal relatif est rationnel (−0,25 = −1/4) et qu'un rationnel n'est pas toujours décimal (1/3). L'erreur type est de croire que −3/4 et 3/(−4) sont opposés, ou que (−6)/(−8) est négatif. Réponse : une fraction tapée avec son signe, devant le numérateur ou le dénominateur, signe moins typographique ou trait d'union du clavier, ou un QCM entre écritures. Figure utile : droite_graduee au format fraction, points lettrés sur des quarts ou des tiers négatifs.*
+> « Définir la notion de nombre rationnel : le quotient de deux nombres entiers relatifs. »
+
+| | Type | Demandé | Réponse |
+|---|---|---|---|
+| D | vrai | La nuit, la température baisse régulièrement de 5 °C en 3 heures. Sa variation par heure es… | vrai |
+| D | qcm | Le quotient de −9 par −4 est un nombre rationnel. Quelle écriture lui est égale ? | a) 9/4 |
+| E | text | La droite est graduée régulièrement. Quel nombre repère le point A ? Écris-le sous la forme… | −4/3 |
+| E | text | Le nombre décimal −0,6 est aussi un nombre rationnel. Écris-le sous la forme d'une fraction… | −6/10 |
+| M | qcm | Lequel de ces nombres rationnels n'est pas un nombre décimal ? | c) -14/6 |
+| M | text | Quel est l'opposé de 3/-7 ? Écris-le sous la forme numérateur/dénominateur, avec un dénomin… | 3/7 |
+
+**`C015` · Multiplier des nombres rationnels** — diff. 5, seuil 3/4  
+*Calculer le produit de deux ou trois fractions, positives ou négatives, en multipliant les numérateurs entre eux et les dénominateurs entre eux (2/3 × 5/7 = 10/21), avec la règle des signes (−3/4 × 2/5 = −6/20), un entier vu comme une fraction (6 × 2/9 = 12/9), et en simplifiant avant ou après le calcul quand c'est possible (4/9 × 3/8 = 12/72 = 1/6). L'erreur type est de réduire au même dénominateur avant de multiplier, ou de multiplier aussi le dénominateur par l'entier (6 × 2/9 = 12/54). La simplification du résultat n'est pas exigée. Réponse : une fraction, comparée par sa valeur. Figure : aucune.*
+> « Calculer le produit de nombres rationnels. »
+
+| | Type | Demandé | Réponse |
+|---|---|---|---|
+| D | nume | Pour multiplier deux fractions, on multiplie les numérateurs entre eux et les dénominateurs… | 6 |
+| D | qcm | Combien vaut 3 × 5/8 ? | c) 15/8 |
+| E | text | Calcule -4/9 × 3/5. Écris le résultat sous la forme numérateur/dénominateur, avec son signe. | −12/45 |
+| E | vrai | Mehdi calcule 2/3 × 5/6. Il réduit au même dénominateur, puis multiplie les numérateurs : 2… | faux |
+| M | text | Calcule 14/15 × \left(-5/8\right) × 6/7 en simplifiant avant de multiplier. Écris le résult… | −1/2 |
+| M | qcm | Par quelle fraction faut-il multiplier 3/4 pour obtenir -9/20 ? | b) -3/5 |
+
+**`C018` · Inverse d'un nombre** — diff. 5, seuil 3/4  
+*Savoir que deux nombres sont inverses quand leur produit vaut 1, noter 1/a l'inverse d'un nombre a non nul, et le déterminer : l'inverse de 5 est 1/5, celui de 3/7 est 7/3, celui de −2/9 est −9/2, celui de 0,25 est 4 ; savoir que 0 n'a pas d'inverse. Ne pas confondre inverse et opposé (l'inverse de −2 est −1/2, son opposé est 2). L'erreur type est de changer le signe au lieu de renverser la fraction. La notation avec un exposant négatif attend les puissances de 3e. Réponse : une fraction ou un décimal, comparé par sa valeur ; QCM pour distinguer inverse et opposé. Figure : aucune.*
+> « Définir l'inverse d'un nombre et connaitre sa notation. »
+
+| | Type | Demandé | Réponse |
+|---|---|---|---|
+| D | text | Deux nombres sont inverses quand leur produit vaut 1. Quel est l'inverse de 5/8 ? Écris ta … | 8/5 |
+| D | qcm | Quel est l'inverse de -3 ? | b) -1/3 |
+| E | nume | Quel est l'inverse de 0{,}2 ? | 5 |
+| E | text | Quel est l'inverse de -7/4 ? Écris ta réponse sous la forme numérateur/dénominateur, avec s… | −4/7 |
+| M | vrai | Tom affirme : « L'inverse de 1 + 1/2 est 1 + 2, soit 3. » A-t-il raison ? | faux |
+| M | qcm | Laquelle de ces affirmations est vraie ? | c) L'inverse de 0,4 est 2,5. |
+
+**`C017` · Diviser des fractions** — diff. 5, seuil 3/4  
+*Savoir que diviser par un nombre non nul revient à multiplier par son inverse, et calculer un quotient de fractions positives ou négatives : 3/4 ÷ 2/5 = 3/4 × 5/2 = 15/8 ; 6 ÷ 3/4 = 6 × 4/3 = 8 ; (−2/3) ÷ 4 = −2/12 ; un quotient écrit en étage, dont le numérateur et le dénominateur sont des fractions, se calcule de la même façon. L'erreur type est d'inverser le dividende au lieu du diviseur. Réponse : une fraction, comparée par sa valeur. Figure : aucune.*
+> « Diviser des fractions. »
+
+| | Type | Demandé | Réponse |
+|---|---|---|---|
+| D | qcm | Diviser par un nombre non nul, c'est multiplier par son inverse. Quel calcul est égal à 2/9… | c) 2/9 × 4/5 |
+| D | text | Calcule 4/5 ÷ 3/7. Écris ta réponse sous la forme numérateur/dénominateur. | 28/15 |
+| E | nume | Calcule 9/4 ÷ 3/8. | 6 |
+| E | text | Calcule -5/6 ÷ 10/9. Écris ta réponse sous la forme numérateur/dénominateur, avec son signe. | −3/4 |
+| M | nume | Calcule \dfrac{14/5}{7/10}. | 4 |
+| M | text | Par quel nombre faut-il multiplier 2/3 pour obtenir 8/15 ? Écris ta réponse sous la forme n… | 4/5 |
+
+**`C035` · Fraction d'une fraction, d'un nombre, d'une quantité** — diff. 5, seuil 3/4  
+*Savoir que prendre une fraction d'un nombre ou d'une quantité revient à multiplier par cette fraction (les 3/4 de 18 €, c'est 3/4 × 18 = 13,5 €), et calculer une fraction d'une fraction : les 2/3 des 3/4 d'un terrain, c'est 2/3 × 3/4 = 6/12 = 1/2 du terrain ; représenter cette situation sur un rectangle partagé dans les deux sens. L'erreur type est d'additionner les deux fractions (2/3 + 3/4). Représenter ne se fait pas à l'écran : l'élève lit ou choisit la représentation (QCM sur figure), il ne colorie pas. Réponse : une fraction ou un nombre, comparé par sa valeur. Figure utile : quadrillage, rectangle partagé en colonnes et en lignes, avec deux formes de couleurs différentes (la fraction de la fraction, et le reste de la première fraction).*
+> « Calculer et représenter la fraction d'une fraction, d'un nombre, d'une quantité. »
+
+| | Type | Demandé | Réponse |
+|---|---|---|---|
+| D | qcm | Ce rectangle représente un potager partagé en carreaux égaux. La partie colorée est plantée… | b) les 2/3 des 4/5 du potager |
+| D | text | Il reste les 3/4 d'une tarte. Paul mange la moitié de ce qui reste. Quelle fraction de la t… | 3/8 |
+| E | nume | Un pull coûte 36 €. Pendant les soldes, on le paie les 5/8 de son prix. Combien coûte le pu… | 22.5 |
+| E | vrai | Les 5/6 des 3/10 d'une somme d'argent représentent le quart de cette somme. | vrai |
+| M | text | Les 3/4 d'un champ sont cultivés. Le tiers de la partie cultivée est en blé, et la moitié d… | 1/8 |
+| M | nume | Une bibliothèque contient 480 livres. Les 3/8 des livres sont des romans, et les 2/9 des ro… | 40 |
+
+**`C036` · Enchaîner des opérations avec des fractions** — diff. 6, seuil 3/4  
+*Calculer une expression qui enchaîne plusieurs opérations sur des fractions positives ou négatives, en respectant les priorités : 1/2 + 3/4 × 2/3 = 1/2 + 1/2 = 1 ; (1/2 + 3/4) × 2/3 = 5/4 × 2/3 = 5/6 ; 2 − 5/3 ÷ 5/6 = 2 − 2 = 0 ; un calcul dont le résultat est négatif (1/3 − 3/4 = −5/12). L'erreur type est de calculer de gauche à droite sans respecter les priorités. Réponse : une fraction, comparée par sa valeur. Figure : aucune.*
+> « Calculer la valeur d'expressions comportant plusieurs opérations avec des fractions. »
+
+| | Type | Demandé | Réponse |
+|---|---|---|---|
+| D | qcm | Combien vaut 1/5 + 3/5 × 2/3 ? | a) 3/5 |
+| D | text | Calcule \left(1/2 + 1/6\right) × 9/4. Écris ta réponse sous la forme numérateur/dénominateu… | 3/2 |
+| E | nume | Calcule 5/6 ÷ 5/12 - 9/4 × 4/3. | -1 |
+| E | text | Calcule 2/5 - 5/6 × 3/4. Écris ta réponse sous la forme numérateur/dénominateur, avec son s… | −9/40 |
+| M | vrai | Zoé écrit : 1 - 1/5 × 5/8 = 4/5 × 5/8 = 1/2. Son calcul est-il juste ? | faux |
+| M | nume | Calcule \dfrac{1/2 + 1/3}{1/2 - 1/3}. | 5 |
+
+**`C037` · Problèmes mobilisant les opérations sur les fractions** — diff. 6, seuil 3/4  
+*Résoudre un problème en plusieurs étapes qui mobilise addition, soustraction, multiplication, division ou inverse de fractions : une part d'un reste (Léa dépense 1/3 de son argent, puis 1/4 de ce qui lui reste : elle a dépensé 1/3 + 1/4 × 2/3 = 1/2 de son argent), un nombre de parts (avec 12 L, on remplit 12 ÷ 3/4 = 16 bouteilles de 3/4 L), une quantité retrouvée à partir de sa fraction (les 2/5 d'une somme valent 30 €, la somme vaut 75 €). L'erreur type est de prendre la fraction du reste comme une fraction du tout. Réponse : une fraction ou un nombre, comparé par sa valeur. Figure : aucune.*
+> « Résoudre des problèmes mobilisant les opérations sur les fractions : addition, soustraction, multiplication, division, inverse. »
+
+| | Type | Demandé | Réponse |
+|---|---|---|---|
+| D | nume | Un jardinier répartit 15 kg de graines dans des sachets de 3/8 kg chacun. Combien de sachet… | 40 |
+| D | qcm | Noé lit les 2/5 d'un livre samedi, puis la moitié de ce qui reste dimanche. Quelle fraction… | b) 3/10 |
+| E | text | Sur un trajet, Maya fait 1/6 du chemin à pied, puis les 3/5 du reste en bus, et finit à vél… | 1/3 |
+| E | nume | Les 5/8 du prix d'un vélo représentent 140 €. Quel est le prix du vélo ? | 224 |
+| M | nume | Le robinet A remplit 1/10 d'une cuve en une minute, le robinet B en remplit 1/15. Ouverts e… | 6 |
+| M | qcm | Inès dépense les 3/5 de sa cagnotte, puis le quart de ce qui reste. Il lui reste alors 45 €… | a) 150 € |
 
 ### ── 3e ──
 
@@ -2822,7 +3183,7 @@ Le chapitre est l'unité qu'un exercice bilan validerait.
 | M | qcm | Dans le nombre 4■, le chiffre des unités est caché. Ce nombre est premier. Quel peut être l… | b) 7 |
 
 **`A025` · Décomposer un entier en produit de facteurs premiers** — diff. 5, seuil 3/4  
-*Écrire un entier jusqu'à 1 000 comme produit de nombres premiers, en divisant successivement par 2, 3, 5, 7… (126 = 2 × 3 × 3 × 7), savoir que cette décomposition est unique à l'ordre des facteurs près, et s'en servir pour trouver des diviseurs d'un nombre. En attendant les puissances (étape 6), la décomposition s'écrit en produit sans puissances : un facteur répété est écrit autant de fois qu'il apparaît (60 = 2 × 2 × 3 × 5), jamais avec un exposant. L'erreur type est de s'arrêter sur un facteur non premier (60 = 4 × 15). Écrire la décomposition en saisie libre ne se fait pas à l'écran : l'élève choisit la bonne décomposition parmi des produits dont certains contiennent un facteur non premier, ou répond par un nombre (combien de fois le facteur 2, le plus grand facteur premier). Figure : aucune.*
+*Écrire un entier jusqu'à 1 000 comme produit de nombres premiers, en divisant successivement par 2, 3, 5, 7… (90 = 2 × 3² × 5), savoir que cette décomposition est unique à l'ordre des facteurs près, et s'en servir pour trouver des diviseurs d'un nombre. Un facteur répété s'écrit avec un exposant (60 = 2² × 3 × 5) ou autant de fois qu'il apparaît (60 = 2 × 2 × 3 × 5) : les deux écritures sont justes. L'erreur type est de s'arrêter sur un facteur non premier (60 = 4 × 15). Écrire la décomposition en saisie libre ne se fait pas à l'écran (l'ordre des facteurs varie) : l'élève choisit la bonne décomposition parmi des produits dont certains contiennent un facteur non premier, ou répond par un nombre (l'exposant du facteur 2, le plus grand facteur premier). Figure : aucune.*
 > « Factoriser un nombre entier positif : 60 = 2² × 3 × 5. »
 
 | | Type | Demandé | Réponse |
@@ -2833,6 +3194,84 @@ Le chapitre est l'unité qu'un exercice bilan validerait.
 | E | qcm | Quelle est la décomposition de 180 en produit de facteurs premiers ? | a) 2 × 2 × 3 × 3 × 5 |
 | M | qcm | La décomposition de 270 en produit de facteurs premiers est 2 × 3 × 3 × 3 × 5. Sans poser d… | b) 45 |
 | M | nume | On décompose 1 000 en produit de facteurs premiers. Combien de facteurs ce produit contient… | 6 |
+
+**`A036` · Puissances d'exposant négatif** — diff. 6, seuil 3/4  
+*Savoir que, pour un nombre a non nul et un entier positif n, a⁻ⁿ est l'inverse de aⁿ (a⁻ⁿ = 1/aⁿ) et que a⁰ = 1 ; calculer 2⁻³ = 1/8 = 0,125 ; 5⁻¹ = 1/5 ; (−4)⁻² = 1/16 ; reconnaître que a⁻¹ est l'inverse de a. L'erreur type est de croire qu'un exposant négatif donne un nombre négatif (2⁻³ = −8). Réponse : une fraction ou un décimal, comparé par sa valeur ; jamais une puissance tapée. Figure : aucune.*
+> « Définir les puissances d'exposant négatif d'un nombre. »
+
+| | Type | Demandé | Réponse |
+|---|---|---|---|
+| D | nume | Quand l'exposant baisse de 1, on divise par 5 : 5^2 = 25, 5^1 = 5, 5^0 = 1, 5^{-1} = … En c… | 0.04 |
+| D | qcm | Que vaut 6^{-1} ? | b) 1/6 |
+| E | text | Écris 3^{-4} sans puissance, sous la forme d'une fraction numérateur/dénominateur. | 1/81 |
+| E | vrai | Tom affirme : « 8^0 = 0, car on ne multiplie aucun 8. » A-t-il raison ? | faux |
+| M | nume | Trouve l'entier n tel que 2^n = 1/32. | -5 |
+| M | qcm | Que vaut (-2)^{-3} ? | c) -1/8 |
+
+**`A037` · Puissances de 10 d'exposant négatif ; préfixes milli, micro, nano** — diff. 6, seuil 3/4  
+*Savoir que 10⁻ⁿ = 0,0…01, le chiffre 1 étant au n-ième rang après la virgule (10⁻³ = 0,001 ; 10⁻⁶ = 0,000 001), passer d'une écriture à l'autre, multiplier un décimal par 10⁻ⁿ (4,5 × 10⁻² = 0,045), et connaître les préfixes milli (10⁻³), micro (10⁻⁶) et nano (10⁻⁹), avec kilo, méga et giga, pour convertir (250 nm = 250 × 10⁻⁹ m ; 3 ms = 0,003 s). L'erreur type est d'écrire un zéro de trop ou de moins (10⁻³ = 0,0001). Réponse : un nombre décimal ou l'exposant (un relatif) ; jamais une puissance tapée. Figure : aucune.*
+> « Définir les puissances d'exposant négatif d'un nombre. »
+
+| | Type | Demandé | Réponse |
+|---|---|---|---|
+| D | nume | On sait que 10^{-1} = 0{,}1 et 10^{-2} = 0{,}01. Quelle est l'écriture décimale de 10^{-6} ? | 1e-06 |
+| D | qcm | Le préfixe kilo signifie 10^{3}. Combien de mètres vaut un millimètre ? | c) 10^{-3} m |
+| E | nume | Écris 62 × 10^{-3} sous forme décimale. | 0.062 |
+| E | vrai | Un virus mesure environ 0,000 000 1 m. Nadia affirme : « C'est 10^{-7} m. » A-t-elle raison… | vrai |
+| M | nume | Le flash d'un appareil photo dure 250 µs (microsecondes). Combien de millisecondes cela fai… | 0.25 |
+| M | qcm | Le diamètre d'une molécule d'ADN est d'environ 2 nm (nanomètres). Quelle est cette longueur… | b) 0,000 000 002 m |
+
+**`A038` · Notation scientifique d'un nombre** — diff. 6, seuil 3/4  
+*Écrire un nombre décimal positif sous la forme a × 10ⁿ, avec a décimal, 1 ≤ a < 10, et n entier relatif : 32 000 = 3,2 × 10⁴ ; 0,000 45 = 4,5 × 10⁻⁴ ; reconnaître une écriture qui n'est pas scientifique (32 × 10³ ; 0,32 × 10⁵) et la corriger ; passer de la notation scientifique à l'écriture décimale (6,02 × 10⁵ = 602 000). L'erreur type est de se tromper de sens sur l'exposant (0,000 45 = 4,5 × 10⁴) ou de garder un facteur hors de l'intervalle (45 × 10⁻⁵). Réponse : l'écriture a × 10ⁿ tapée (texte : la correction lit le signe ×, la lettre x, « fois » et l'exposant tapé de plusieurs façons), ou choisie (QCM), ou le facteur a, l'exposant n, l'écriture décimale (un nombre). Figure : aucune.*
+> « Déterminer la notation scientifique d'un nombre. »
+
+| | Type | Demandé | Réponse |
+|---|---|---|---|
+| D | qcm | Dans la notation scientifique a × 10^n, le nombre a est compris entre 1 (inclus) et 10 (exc… | b) 4{,}7 × 10^{4} |
+| D | nume | Écris 3{,}05 × 10^{4} en écriture décimale. | 30500 |
+| E | nume | On écrit 0,000 62 en notation scientifique : 0{,}000 62 = 6{,}2 × 10^n. Que vaut n ? | -4 |
+| E | vrai | Jade affirme : « La notation scientifique de 2 800 000 est 28 × 10^{5}. » A-t-elle raison ? | faux |
+| M | nume | L'écriture 0{,}36 × 10^{-2} n'est pas une notation scientifique. On la corrige : 0{,}36 × 1… | -3 |
+| M | text | La distance moyenne entre la Terre et le Soleil est de 149 600 000 km. Écris ce nombre en n… | 1,496 × 10⁸ |
+
+**`A040` · Problèmes utilisant la racine carrée** — diff. 6, seuil 3/4  
+*Résoudre un problème où l'on connaît l'aire d'un carré et où l'on cherche la longueur de son côté (un champ carré de 2 500 m² a un côté de √2 500 = 50 m ; une dalle carrée de 30 cm² a un côté de √30 ≈ 5,5 cm), en donnant la valeur exacte quand l'aire est un carré parfait, une valeur approchée au dixième ou au centième à la calculatrice sinon, et en contrôlant par l'encadrement (5 < √30 < 6). L'erreur type est de diviser l'aire par 2 ou par 4 (confusion avec le périmètre). Le théorème de Pythagore viendra avec la géométrie (étape 8). Réponse : un nombre, avec une tolérance posée dans answer.tolerance pour une valeur approchée. Figure utile : geometrie, carré dont l'aire est écrite et le côté demandé.*
+> « Résoudre des problèmes utilisant la racine carrée. »
+
+| | Type | Demandé | Réponse |
+|---|---|---|---|
+| D | nume | Une place carrée a une aire de 3 600 m². Quelle est la longueur de son côté ? | 60 |
+| D | qcm | Une dalle carrée a une aire de 40 cm². À la calculatrice, quelle est la longueur de son côt… | a) 6,3 cm |
+| E | nume | Un potager carré a une aire de 75 m². À la calculatrice, donne la longueur de son côté, arr… | 8.66 |
+| E | nume | Un enclos carré a une aire de 1 225 m². On veut le clôturer sur tout son tour. Quelle longu… | 140 |
+| M | nume | On veut dessiner un carré dont l'aire est le double de celle d'un carré de 6 cm de côté. Qu… | 8.5 |
+| M | qcm | Une piscine carrée a une aire de 90 m². Sans calculatrice, quelle est la seule valeur possi… | d) 9,5 m |
+
+**`B023` · Multiplier et diviser des puissances** — diff. 6, seuil 3/4  
+*Calculer le produit et le quotient de puissances d'un même nombre, avec des exposants positifs ou négatifs, en revenant à la définition : 2⁵ ÷ 2³ = (2 × 2 × 2 × 2 × 2) ÷ (2 × 2 × 2) = 2², donc aᵐ ÷ aⁿ = aᵐ⁻ⁿ ; 10⁴ × 10⁻⁶ = 10⁻² ; 10³ ÷ 10⁻² = 10⁵ ; et combiner avec les puissances de même exposant ((2 × 5)³ = 2³ × 5³). L'erreur type est de diviser les exposants (2⁶ ÷ 2² = 2³) ou de se tromper de signe en soustrayant un exposant négatif. Réponse : l'exposant du résultat (un relatif) ou sa valeur ; QCM entre écritures. Figure : aucune.*
+> « Multiplier et diviser des puissances. »
+
+| | Type | Demandé | Réponse |
+|---|---|---|---|
+| D | nume | En écrivant tous les facteurs : 3^6 ÷ 3^2 = 3 × 3 × 3 × 3 × 3 × 3/3 × 3 Ce quotient s'écrit… | 4 |
+| D | qcm | Écris 7^{6} × 7^{-2} sous la forme d'une seule puissance de 7. | c) 7^{4} |
+| E | nume | Le quotient 5^3 ÷ 5^7 s'écrit 5^n. Que vaut n ? | -4 |
+| E | vrai | Sami écrit : 2^8 ÷ 2^2 = 2^4. A-t-il raison ? | faux |
+| M | nume | Le calcul 10^3 × 10^{-5} ÷ 10^{-4} s'écrit 10^n. Que vaut n ? | 2 |
+| M | qcm | Écris 2^5 × 5^5 ÷ 10^3 sous la forme d'une seule puissance de 10. | b) 10^{2} |
+
+**`A039` · Problèmes avec la notation scientifique** — diff. 6, seuil 3/4  
+*Résoudre un problème issu des sciences ou de la vie courante en calculant avec des nombres en notation scientifique : produit ou quotient des facteurs, puis des puissances de 10 ((3 × 10⁵) × (2 × 10³) = 6 × 10⁸ ; un disque de 4,8 × 10¹¹ octets contient (4,8 × 10¹¹) ÷ (1,2 × 10⁶) = 4 × 10⁵ photos de 1,2 Mo ; la lumière parcourt 1,5 × 10⁸ km en (1,5 × 10⁸) ÷ (3 × 10⁵) = 0,5 × 10³ = 500 s), comparer deux ordres de grandeur (un atome, 10⁻¹⁰ m, et une bactérie, 10⁻⁶ m : la bactérie est 10⁴ fois plus grande), ramener un résultat en notation scientifique (0,5 × 10³ = 5 × 10²). L'erreur type est d'additionner les facteurs ou de multiplier les exposants. Réponse : un nombre, l'exposant d'un ordre de grandeur, ou un QCM entre écritures. Figure : aucune.*
+> « Résoudre des problèmes notamment en utilisant la notation scientifique. »
+
+| | Type | Demandé | Réponse |
+|---|---|---|---|
+| D | nume | Une goutte d'eau contient environ 1{,}5 × 10^{21} molécules. Combien de molécules contienne… | 24 |
+| D | qcm | Un écran compte 2 × 10^{3} lignes de 4 × 10^{3} pixels chacune. Combien de pixels a-t-il en… | d) 8 × 10^{6} |
+| E | nume | Une bactérie a une masse d'environ 2 × 10^{-12} g. Quelle est la masse, en grammes, de 4{,}… | 0.009 |
+| E | qcm | Un globule rouge mesure environ 10^{-5} m, un atome environ 10^{-10} m. Combien de fois le … | b) 10^{5} fois |
+| M | nume | Un signal radio parcourt 3 × 10^{5} km par seconde. Une sonde près de Saturne est à 1{,}2 ×… | 4000 |
+| M | vrai | Une super-colonie compte 6 × 10^{7} fourmis de 5 × 10^{-3} g chacune. Léa affirme : « Leur … | vrai |
 
 **`C008` · Fraction irréductible** — diff. 6, seuil 3/4  
 *Mettre une fraction sous forme irréductible*

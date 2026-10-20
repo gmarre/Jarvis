@@ -1,0 +1,169 @@
+[
+  {
+    "id": "EX-A030-D-01",
+    "skill_id": "A030",
+    "level": "decouverte",
+    "type": "numerique",
+    "statement": "Une grille de sudoku est un carré de 9 cases sur 9 cases.\n\nCombien de cases contient-elle ?",
+    "image": null,
+    "answer": {
+      "value": 81,
+      "accepted": [
+        "81 cases"
+      ]
+    },
+    "solution_steps": [
+      "La grille a 9 rangées de 9 cases : le nombre de cases est 9 × 9, le carré de 9, noté 9².",
+      "9² = 81 : c'est un carré à connaître par cœur, comme ceux de tous les entiers de 0 à 12.",
+      "La grille contient 81 cases.",
+      "Piège : 9 × 2 = 18 est le double de 9, pas son carré."
+    ],
+    "hint": "9 rangées de 9 cases : quel produit faut-il calculer ?",
+    "estimated_duration_s": 45,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, 5e : connaitre les carrés des entiers de 0 à 12."
+  },
+  {
+    "id": "EX-A030-D-02",
+    "skill_id": "A030",
+    "level": "decouverte",
+    "type": "qcm",
+    "statement": "Quel entier a pour carré 16 ?",
+    "image": null,
+    "choices": [
+      {
+        "key": "a",
+        "text": "8",
+        "misconception": "L'élève confond carré et double : il prend la moitié de 16. Or 8² = 8 × 8 = 64."
+      },
+      {
+        "key": "b",
+        "text": "4",
+        "misconception": null
+      },
+      {
+        "key": "c",
+        "text": "256",
+        "misconception": "L'élève calcule le carré de 16 (16 × 16 = 256) au lieu de chercher le nombre dont le carré est 16."
+      }
+    ],
+    "answer": {
+      "value": "b"
+    },
+    "solution_steps": [
+      "On cherche un entier qui, multiplié par lui-même, donne 16.",
+      "4 × 4 = 16, donc 4² = 16 : l'entier cherché est 4. La bonne réponse est b.",
+      "Pièges : 8 est la moitié de 16 (8 × 2 = 16, mais 8 × 8 = 64) ; 256 est le carré de 16, c'est la question inverse."
+    ],
+    "hint": "Quel nombre, multiplié par lui-même, donne 16 ?",
+    "estimated_duration_s": 45,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, 5e : connaitre les carrés des entiers de 0 à 12."
+  },
+  {
+    "id": "EX-A030-E-01",
+    "skill_id": "A030",
+    "level": "entrainement",
+    "type": "qcm",
+    "statement": "Un seul de ces nombres n'est pas le carré d'un entier.\n\nLequel ?",
+    "image": null,
+    "choices": [
+      {
+        "key": "a",
+        "text": "144",
+        "misconception": "L'élève ne connaît ses carrés que jusqu'à 10 × 10 = 100. Or 144 = 12 × 12."
+      },
+      {
+        "key": "b",
+        "text": "1",
+        "misconception": "L'élève pense que 1 ne peut pas être un carré. Or 1 × 1 = 1, donc 1 = 1²."
+      },
+      {
+        "key": "c",
+        "text": "0",
+        "misconception": "L'élève pense que 0 n'est le carré d'aucun nombre. Or 0 × 0 = 0, donc 0 = 0²."
+      },
+      {
+        "key": "d",
+        "text": "60",
+        "misconception": null
+      }
+    ],
+    "answer": {
+      "value": "d"
+    },
+    "solution_steps": [
+      "Les carrés des entiers de 0 à 12 : 0 ; 1 ; 4 ; 9 ; 16 ; 25 ; 36 ; 49 ; 64 ; 81 ; 100 ; 121 ; 144.",
+      "0 = 0², 1 = 1² et 144 = 12² sont des carrés d'entiers.",
+      "60 est entre 49 = 7² et 64 = 8² : aucun entier n'a pour carré 60. La bonne réponse est d.",
+      "Piège : 60 = 6 × 10 est le produit de deux nombres, mais pas d'un nombre par lui-même."
+    ],
+    "hint": "Récite les carrés de 0 × 0 à 12 × 12.",
+    "estimated_duration_s": 60,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, 5e : connaitre les carrés des entiers de 0 à 12."
+  },
+  {
+    "id": "EX-A030-E-02",
+    "skill_id": "A030",
+    "level": "entrainement",
+    "type": "numerique",
+    "statement": "Le carré d'un nombre entier est compris entre 90 et 110.\n\nQuel est ce nombre entier ?",
+    "image": null,
+    "answer": {
+      "value": 10
+    },
+    "solution_steps": [
+      "On cherche parmi les carrés connus celui qui est entre 90 et 110 : 9² = 81 est trop petit, 11² = 121 est trop grand.",
+      "10² = 100 est entre 90 et 110 : c'est le seul.",
+      "Le nombre entier est 10.",
+      "Piège : répondre 100, c'est donner le carré au lieu du nombre dont on prend le carré."
+    ],
+    "hint": "Écris la liste des carrés de 0 à 12 et cherche celui qui convient.",
+    "estimated_duration_s": 60,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, 5e : connaitre les carrés des entiers de 0 à 12."
+  },
+  {
+    "id": "EX-A030-M-01",
+    "skill_id": "A030",
+    "level": "maitrise",
+    "type": "vrai_faux",
+    "statement": "Vrai ou faux : entre 60 et 90, il y a exactement deux carrés d'entiers.",
+    "image": null,
+    "answer": {
+      "value": true
+    },
+    "solution_steps": [
+      "Les carrés autour de 60 et 90 : 7² = 49 ; 8² = 64 ; 9² = 81 ; 10² = 100.",
+      "49 est plus petit que 60 et 100 est plus grand que 90 : seuls 64 et 81 sont entre 60 et 90.",
+      "Il y en a exactement deux : l'affirmation est **vraie**.",
+      "Piège : 70, 80 ou 90 ne sont pas des carrés, même s'ils finissent par 0 comme 100."
+    ],
+    "hint": "Écris les carrés de 7, 8, 9 et 10.",
+    "estimated_duration_s": 60,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, 5e : connaitre les carrés des entiers de 0 à 12."
+  },
+  {
+    "id": "EX-A030-M-02",
+    "skill_id": "A030",
+    "level": "maitrise",
+    "type": "numerique",
+    "statement": "Je suis un entier compris entre 0 et 12. Mon carré se termine par 6 et dépasse 20.\n\nQui suis-je ?",
+    "image": null,
+    "answer": {
+      "value": 6
+    },
+    "solution_steps": [
+      "Parmi les carrés des entiers de 0 à 12, deux se terminent par 6 : 4² = 16 et 6² = 36. Les autres se terminent par 0, 1, 4, 5 ou 9.",
+      "16 ne dépasse pas 20 ; 36 dépasse 20.",
+      "Je suis 6.",
+      "Pièges : répondre 36, qui est mon carré ; ou 4, dont le carré se termine bien par 6 mais ne vaut que 16."
+    ],
+    "hint": "Écris les carrés de 0 à 12 et regarde leur dernier chiffre.",
+    "estimated_duration_s": 90,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, 5e : connaitre les carrés des entiers de 0 à 12."
+  }
+]

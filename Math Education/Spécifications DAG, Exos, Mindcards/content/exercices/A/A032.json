@@ -1,0 +1,171 @@
+[
+  {
+    "id": "EX-A032-D-01",
+    "skill_id": "A032",
+    "level": "decouverte",
+    "type": "numerique",
+    "statement": "10⁵ est le produit de 5 facteurs égaux à 10.\n\nÉcris ce nombre en chiffres.",
+    "image": null,
+    "answer": {
+      "value": 100000
+    },
+    "solution_steps": [
+      "10⁵ = 10 × 10 × 10 × 10 × 10.",
+      "Chaque facteur 10 ajoute un zéro : 10 ; 100 ; 1 000 ; 10 000 ; 100 000.",
+      "10⁵ = 100 000 : un 1 suivi de 5 zéros. L'exposant compte les zéros, pas les chiffres (100 000 a 6 chiffres).",
+      "Pièges : 10 × 5 = 50 multiplie par l'exposant ; 10 000 n'a que 4 zéros."
+    ],
+    "hint": "Multiplie 10 par 10, puis le résultat par 10, et continue jusqu'à 5 facteurs.",
+    "estimated_duration_s": 45,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, 4e : définir les puissances d'exposant positif d'un nombre a."
+  },
+  {
+    "id": "EX-A032-D-02",
+    "skill_id": "A032",
+    "level": "decouverte",
+    "type": "qcm",
+    "statement": "Un milliard s'écrit 1 000 000 000.\n\nQuelle écriture est égale à un milliard ?",
+    "image": null,
+    "choices": [
+      {
+        "key": "a",
+        "text": "10¹⁰",
+        "misconception": "L'élève compte les chiffres de 1 000 000 000 (il y en a 10) au lieu des zéros (il y en a 9)."
+      },
+      {
+        "key": "b",
+        "text": "10⁹",
+        "misconception": null
+      },
+      {
+        "key": "c",
+        "text": "10 × 9",
+        "misconception": "L'élève pense « 10, avec neuf zéros » et écrit 10 × 9, qui vaut 90 : multiplier par 9 n'est pas multiplier 9 facteurs égaux à 10."
+      }
+    ],
+    "answer": {
+      "value": "b"
+    },
+    "solution_steps": [
+      "1 000 000 000 est un 1 suivi de 9 zéros.",
+      "1 000 000 000 = 10 × 10 × 10 × 10 × 10 × 10 × 10 × 10 × 10 : 9 facteurs égaux à 10, donc 10⁹. La bonne réponse est b.",
+      "Pièges : 10¹⁰ = 10 000 000 000 vient des 10 chiffres comptés au lieu des 9 zéros ; 10 × 9 = 90."
+    ],
+    "hint": "Combien de facteurs 10 faut-il multiplier pour obtenir 1 000 000 000 ?",
+    "estimated_duration_s": 45,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, 4e : définir les puissances d'exposant positif d'un nombre a."
+  },
+  {
+    "id": "EX-A032-E-01",
+    "skill_id": "A032",
+    "level": "entrainement",
+    "type": "numerique",
+    "statement": "Une clé USB a une capacité de 16 Go (gigaoctets).\n\nCombien d'octets peut-elle contenir ? Écris le nombre en chiffres.",
+    "image": null,
+    "answer": {
+      "value": 16000000000,
+      "accepted": [
+        "16 000 000 000 octets",
+        "16 milliards",
+        "16 milliards d'octets"
+      ]
+    },
+    "solution_steps": [
+      "Le préfixe giga veut dire 10⁹ = 1 000 000 000, un milliard. Donc 1 Go = 1 000 000 000 octets.",
+      "16 Go = 16 × 1 000 000 000 octets = 16 000 000 000 octets, soit 16 × 10⁹ octets.",
+      "Multiplier par 1 000 000 000, c'est écrire 9 zéros après 16.",
+      "Pièges : 16 000 000 confond giga (10⁹) et méga (10⁶) ; 16 000 confond avec kilo (10³)."
+    ],
+    "hint": "Kilo vaut 10³, méga vaut 10⁶ : et giga ?",
+    "estimated_duration_s": 90,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4 : on introduit en fonction des besoins les préfixes des puissances de dix de nano à giga."
+  },
+  {
+    "id": "EX-A032-E-02",
+    "skill_id": "A032",
+    "level": "entrainement",
+    "type": "numerique",
+    "statement": "La France compte environ 68 000 000 habitants.\n\nComplète : 68 000 000 = 6,8 × 10ⁿ. Que vaut n ?",
+    "image": null,
+    "answer": {
+      "value": 7
+    },
+    "solution_steps": [
+      "On multiplie 6,8 par 10 jusqu'à obtenir 68 000 000, en comptant les multiplications.",
+      "6,8 ; 68 ; 680 ; 6 800 ; 68 000 ; 680 000 ; 6 800 000 ; 68 000 000 : il a fallu 7 multiplications par 10.",
+      "Donc 68 000 000 = 6,8 × 10⁷, et n = 7.",
+      "Piège : compter les 6 zéros de 68 000 000 donne 6 ; mais le 8 de 6,8 doit également changer de rang, et 6,8 × 10⁶ = 6 800 000."
+    ],
+    "hint": "Multiplie 6,8 par 10, puis par 10, jusqu'à atteindre 68 000 000, et compte les multiplications.",
+    "estimated_duration_s": 90,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, 4e : multiplier et diviser par 10, 100, 1 000 ; savoir compléter 1 200 = 1,2 × …"
+  },
+  {
+    "id": "EX-A032-M-01",
+    "skill_id": "A032",
+    "level": "maitrise",
+    "type": "vrai_faux",
+    "statement": "Une éolienne produit au plus 2 MW (mégawatts).\n\nVrai ou faux : 2 MW, c'est la même chose que 2 000 kW (kilowatts).",
+    "image": null,
+    "answer": {
+      "value": true
+    },
+    "solution_steps": [
+      "Méga veut dire 10⁶ = 1 000 000 : 2 MW = 2 × 1 000 000 W = 2 000 000 W.",
+      "Kilo veut dire 10³ = 1 000 : 2 000 kW = 2 000 × 1 000 W = 2 000 000 W.",
+      "Les deux valent 2 000 000 W : c'est **vrai**. Un mégawatt vaut 1 000 kilowatts.",
+      "Pièges : croire que méga et kilo ne diffèrent que d'un zéro ; ou écrire 2 MW = 2 000 000 kW, en oubliant que kilo vaut déjà 1 000."
+    ],
+    "hint": "Convertis 2 MW et 2 000 kW en watts.",
+    "estimated_duration_s": 120,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4 : on introduit en fonction des besoins les préfixes des puissances de dix de nano à giga."
+  },
+  {
+    "id": "EX-A032-M-02",
+    "skill_id": "A032",
+    "level": "maitrise",
+    "type": "qcm",
+    "statement": "La Terre est à environ 150 000 000 km du Soleil.\n\nQuelle écriture donne cette distance en mètres ?",
+    "image": null,
+    "choices": [
+      {
+        "key": "a",
+        "text": "1,5 × 10⁸ m",
+        "misconception": "L'élève écrit bien 150 000 000 = 1,5 × 10⁸, mais oublie la conversion : c'est la distance en kilomètres, pas en mètres."
+      },
+      {
+        "key": "b",
+        "text": "1,5 × 10¹⁰ m",
+        "misconception": "L'élève prend pour exposant les 7 zéros de 150 000 000, puis ajoute les 3 zéros des mètres : il oublie que le 5 de 1,5 doit également changer de rang."
+      },
+      {
+        "key": "c",
+        "text": "1,5 × 10¹¹ m",
+        "misconception": null
+      },
+      {
+        "key": "d",
+        "text": "1,5 × 10¹² m",
+        "misconception": "L'élève prend pour exposant le nombre de chiffres de 150 000 000 (9), puis ajoute 3 pour les mètres."
+      }
+    ],
+    "answer": {
+      "value": "c"
+    },
+    "solution_steps": [
+      "1 km = 1 000 m : 150 000 000 km = 150 000 000 × 1 000 m = 150 000 000 000 m.",
+      "150 000 000 000 = 1,5 × 100 000 000 000, et 100 000 000 000 est un 1 suivi de 11 zéros : c'est 10¹¹.",
+      "La distance est 1,5 × 10¹¹ m. La bonne réponse est c.",
+      "Pièges : 10⁸ oublie la conversion en mètres ; 10¹⁰ compte les zéros sans faire changer de rang le 5 ; 10¹² compte les chiffres."
+    ],
+    "hint": "Convertis d'abord en mètres, puis compte de combien de rangs il faut décaler 1,5.",
+    "estimated_duration_s": 150,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4 : on introduit en fonction des besoins les préfixes des puissances de dix de nano à giga."
+  }
+]

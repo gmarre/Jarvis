@@ -1,0 +1,184 @@
+[
+  {
+    "id": "EX-C035-D-01",
+    "skill_id": "C035",
+    "level": "decouverte",
+    "type": "qcm",
+    "statement": "Ce rectangle représente un potager partagé en carreaux égaux. La partie colorée est plantée : carottes dans la zone A, radis dans la zone B.\n\nQuelle phrase décrit la zone A ?",
+    "image": "figures/EX-C035-D-01",
+    "choices": [
+      {
+        "key": "a",
+        "text": "les $\\frac{2}{3}$ du potager",
+        "misconception": "L'élève voit que A occupe 2 lignes sur 3 et oublie que seules 4 colonnes sur 5 sont plantées : A représente les 2/3 de la partie plantée, pas du potager entier. Les 2/3 du potager feraient 10 carreaux sur 15, A n'en a que 8."
+      },
+      {
+        "key": "b",
+        "text": "les $\\frac{2}{3}$ des $\\frac{4}{5}$ du potager",
+        "misconception": null
+      },
+      {
+        "key": "c",
+        "text": "le tiers des $\\frac{4}{5}$ du potager",
+        "misconception": "L'élève confond les deux zones : c'est la zone B qui occupe 1 ligne sur 3 de la partie plantée. A en occupe 2 sur 3."
+      },
+      {
+        "key": "d",
+        "text": "les $\\frac{2}{3}$ plus les $\\frac{4}{5}$ du potager",
+        "misconception": "L'élève additionne les deux fractions au lieu de prendre une fraction d'une fraction. 2/3 + 4/5 dépasse 1 : ce serait plus que le potager entier."
+      }
+    ],
+    "answer": {
+      "value": "b"
+    },
+    "solution_steps": [
+      "On lit d'abord la partie plantée, A et B ensemble : elle occupe 4 colonnes sur les 5 du potager. La partie plantée représente donc les $\\frac{4}{5}$ du potager.",
+      "Dans cette partie plantée, la zone A occupe 2 lignes sur 3 : A représente les $\\frac{2}{3}$ de la partie plantée.",
+      "La zone A est donc « les $\\frac{2}{3}$ des $\\frac{4}{5}$ du potager ». La bonne réponse est b.",
+      "Vérification : prendre une fraction d'une fraction, c'est multiplier. $\\frac{2}{3} \\times \\frac{4}{5} = \\frac{8}{15}$, et la zone A compte bien 8 carreaux sur les 15 du potager."
+    ],
+    "hint": "Commence par la partie plantée : combien de colonnes occupe-t-elle sur 5 ? Puis regarde la place de A dans cette partie.",
+    "estimated_duration_s": 90,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, classe de 4e, Nombres et calculs, Nombres rationnels : « Calculer et représenter la fraction d'une fraction, d'un nombre, d'une quantité. »"
+  },
+  {
+    "id": "EX-C035-D-02",
+    "skill_id": "C035",
+    "level": "decouverte",
+    "type": "texte",
+    "statement": "Il reste les $\\frac{3}{4}$ d'une tarte. Paul mange la moitié de ce qui reste.\n\nQuelle fraction de la tarte entière Paul a-t-il mangée ? Écris ta réponse sous la forme numérateur/dénominateur.",
+    "image": null,
+    "answer": {
+      "value": "3/8",
+      "accepted": [
+        "6/16",
+        "9/24",
+        "12/32",
+        "15/40",
+        "18/48",
+        "21/56",
+        "0,375",
+        "trois huitiemes",
+        "3 huitiemes",
+        "trois huitieme"
+      ]
+    },
+    "solution_steps": [
+      "Paul mange la moitié des $\\frac{3}{4}$ de la tarte. Prendre la moitié, c'est prendre $\\frac{1}{2}$, et prendre une fraction d'une quantité, c'est multiplier par cette fraction.",
+      "On calcule $\\frac{1}{2} \\times \\frac{3}{4}$ : on multiplie les numérateurs entre eux et les dénominateurs entre eux. $\\frac{1}{2} \\times \\frac{3}{4} = \\frac{1 \\times 3}{2 \\times 4} = \\frac{3}{8}$.",
+      "Paul a mangé $\\frac{3}{8}$ de la tarte entière. On le voit aussi en coupant chaque quart en deux : la tarte fait 8 huitièmes, il en restait 6, Paul en mange la moitié, soit 3 huitièmes.",
+      "Piège : la moitié porte sur ce qui reste, pas sur la tarte entière. Paul mange moins que la moitié de la tarte, puisqu'il n'en restait que les $\\frac{3}{4}$."
+    ],
+    "hint": "La moitié de quelque chose, c'est $\\frac{1}{2}$ de cette chose. Que fait-on pour prendre une fraction d'une fraction ?",
+    "estimated_duration_s": 75,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, classe de 4e, Nombres et calculs, Nombres rationnels : « Calculer et représenter la fraction d'une fraction, d'un nombre, d'une quantité. »"
+  },
+  {
+    "id": "EX-C035-E-01",
+    "skill_id": "C035",
+    "level": "entrainement",
+    "type": "numerique",
+    "statement": "Un pull coûte 36 €. Pendant les soldes, on le paie les $\\frac{5}{8}$ de son prix.\n\nCombien coûte le pull en solde ?",
+    "image": null,
+    "answer": {
+      "value": 22.5,
+      "unit": "€",
+      "accepted": [
+        "22,50 €",
+        "22,5 euros",
+        "22,50 euros"
+      ]
+    },
+    "solution_steps": [
+      "Payer les $\\frac{5}{8}$ du prix, c'est prendre les $\\frac{5}{8}$ de 36 €. Prendre une fraction d'un nombre revient à multiplier ce nombre par la fraction : $\\frac{5}{8} \\times 36$.",
+      "$\\frac{5}{8} \\times 36 = \\frac{5 \\times 36}{8} = \\frac{180}{8}$.",
+      "On écrit ce quotient en écriture décimale : $180 \\div 8 = 22{,}5$.",
+      "Le pull coûte **22,50 €** en solde. Contrôle : un huitième de 36 €, c'est 4,50 € ; cinq huitièmes, c'est 5 × 4,50 € = 22,50 €, moins que 36 €."
+    ],
+    "hint": "Prendre les $\\frac{5}{8}$ de 36, c'est multiplier 36 par $\\frac{5}{8}$.",
+    "estimated_duration_s": 75,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, classe de 4e, Nombres et calculs, Nombres rationnels : « Savoir que prendre la fraction d'un nombre revient à multiplier la fraction par ce nombre. »"
+  },
+  {
+    "id": "EX-C035-E-02",
+    "skill_id": "C035",
+    "level": "entrainement",
+    "type": "vrai_faux",
+    "statement": "Les $\\frac{5}{6}$ des $\\frac{3}{10}$ d'une somme d'argent représentent le quart de cette somme.",
+    "image": null,
+    "answer": {
+      "value": true
+    },
+    "solution_steps": [
+      "Prendre les $\\frac{5}{6}$ des $\\frac{3}{10}$, c'est multiplier : $\\frac{5}{6} \\times \\frac{3}{10}$.",
+      "$\\frac{5}{6} \\times \\frac{3}{10} = \\frac{5 \\times 3}{6 \\times 10} = \\frac{15}{60}$.",
+      "$60 = 15 \\times 4$ : on divise le numérateur et le dénominateur par 15, $\\frac{15}{60} = \\frac{1}{4}$.",
+      "C'est bien le quart de la somme : l'affirmation est **vraie**."
+    ],
+    "hint": "Calcule le produit des deux fractions, puis simplifie-le.",
+    "estimated_duration_s": 75,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, classe de 4e, Nombres et calculs, Nombres rationnels : « Calculer et représenter la fraction d'une fraction, d'un nombre, d'une quantité. »"
+  },
+  {
+    "id": "EX-C035-M-01",
+    "skill_id": "C035",
+    "level": "maitrise",
+    "type": "texte",
+    "statement": "Les $\\frac{3}{4}$ d'un champ sont cultivés. Le tiers de la partie cultivée est en blé, et la moitié du blé est déjà moissonnée.\n\nQuelle fraction du champ est moissonnée ? Écris ta réponse sous la forme numérateur/dénominateur.",
+    "image": null,
+    "answer": {
+      "value": "1/8",
+      "accepted": [
+        "2/16",
+        "3/24",
+        "4/32",
+        "5/40",
+        "6/48",
+        "7/56",
+        "0,125",
+        "un huitieme",
+        "1 huitieme"
+      ]
+    },
+    "solution_steps": [
+      "Le blé occupe le tiers des $\\frac{3}{4}$ du champ : $\\frac{1}{3} \\times \\frac{3}{4} = \\frac{3}{12} = \\frac{1}{4}$ du champ.",
+      "La partie moissonnée est la moitié du blé : $\\frac{1}{2} \\times \\frac{1}{4} = \\frac{1}{8}$ du champ.",
+      "On peut aussi tout écrire en un seul produit : $\\frac{1}{2} \\times \\frac{1}{3} \\times \\frac{3}{4} = \\frac{3}{24} = \\frac{1}{8}$.",
+      "La partie moissonnée représente $\\frac{1}{8}$ du champ. Piège : chaque fraction se prend de la partie précédente, pas du champ entier ; la moitié du champ serait bien plus que le blé, qui n'en fait que le quart."
+    ],
+    "hint": "Cherche d'abord quelle fraction du champ entier est en blé.",
+    "estimated_duration_s": 120,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, classe de 4e, Nombres et calculs, Nombres rationnels : « Calculer et représenter la fraction d'une fraction, d'un nombre, d'une quantité. »"
+  },
+  {
+    "id": "EX-C035-M-02",
+    "skill_id": "C035",
+    "level": "maitrise",
+    "type": "numerique",
+    "statement": "Une bibliothèque contient 480 livres. Les $\\frac{3}{8}$ des livres sont des romans, et les $\\frac{2}{9}$ des romans sont des romans policiers.\n\nCombien y a-t-il de romans policiers ?",
+    "image": null,
+    "answer": {
+      "value": 40,
+      "accepted": [
+        "40 livres",
+        "40 romans",
+        "40 romans policiers"
+      ]
+    },
+    "solution_steps": [
+      "Les romans sont les $\\frac{3}{8}$ de 480 : $\\frac{3}{8} \\times 480 = \\frac{3 \\times 480}{8} = \\frac{1440}{8} = 180$ romans.",
+      "Les romans policiers sont les $\\frac{2}{9}$ des romans, pas des 480 livres : $\\frac{2}{9} \\times 180 = \\frac{360}{9} = 40$.",
+      "Autre méthode : les romans policiers sont les $\\frac{2}{9}$ des $\\frac{3}{8}$ des livres, $\\frac{2}{9} \\times \\frac{3}{8} = \\frac{6}{72} = \\frac{1}{12}$ des livres, et $\\frac{1}{12} \\times 480 = 40$.",
+      "Il y a **40** romans policiers."
+    ],
+    "hint": "Calcule d'abord le nombre de romans.",
+    "estimated_duration_s": 120,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, classe de 4e, Nombres et calculs, Nombres rationnels : « Calculer et représenter la fraction d'une fraction, d'un nombre, d'une quantité. »"
+  }
+]

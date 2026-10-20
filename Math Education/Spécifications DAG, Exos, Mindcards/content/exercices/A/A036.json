@@ -1,0 +1,167 @@
+[
+  {
+    "id": "EX-A036-D-01",
+    "skill_id": "A036",
+    "level": "decouverte",
+    "type": "numerique",
+    "statement": "Quand l'exposant baisse de 1, on divise par 5 :\n\n$5^2 = 25$, $5^1 = 5$, $5^0 = 1$, $5^{-1} = \\dots$\n\nEn continuant, quelle est l'écriture décimale de $5^{-2}$ ?",
+    "image": null,
+    "answer": {
+      "value": 0.04
+    },
+    "solution_steps": [
+      "Quand l'exposant baisse de 1, on enlève un facteur 5, donc on divise par 5 : $25 \\div 5 = 5$, puis $5 \\div 5 = 1$. C'est pour cela que $5^0 = 1$.",
+      "On continue : $5^{-1} = 1 \\div 5 = 0{,}2$. C'est l'inverse de 5.",
+      "Puis $5^{-2} = 0{,}2 \\div 5 = 0{,}04$.",
+      "Vérification : $5^{-2}$ est l'inverse de $5^2 = 25$, et $\\frac{1}{25} = 0{,}04$. Un exposant négatif ne donne pas un nombre négatif : $5^{-2}$ est un petit nombre positif."
+    ],
+    "hint": "À partir de $5^0 = 1$, divise par 5, puis encore par 5.",
+    "estimated_duration_s": 60,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, classe de 3e, Nombres et calculs, Puissances : « Définir les puissances d'exposant négatif d'un nombre. »"
+  },
+  {
+    "id": "EX-A036-D-02",
+    "skill_id": "A036",
+    "level": "decouverte",
+    "type": "qcm",
+    "statement": "Que vaut $6^{-1}$ ?",
+    "image": null,
+    "choices": [
+      {
+        "key": "a",
+        "text": "$-6$",
+        "misconception": "L'élève croit qu'un exposant négatif rend le nombre négatif. Or $6^{-1}$ est l'inverse de 6, pas son opposé."
+      },
+      {
+        "key": "b",
+        "text": "$\\frac{1}{6}$",
+        "misconception": null
+      },
+      {
+        "key": "c",
+        "text": "5",
+        "misconception": "L'élève lit l'exposant comme une soustraction : $6 - 1 = 5$. Un exposant n'indique jamais une opération entre la base et lui."
+      }
+    ],
+    "answer": {
+      "value": "b"
+    },
+    "solution_steps": [
+      "Par définition, $a^{-1}$ est l'inverse de $a$ : $a^{-1} = \\frac{1}{a^1} = \\frac{1}{a}$.",
+      "Donc $6^{-1} = \\frac{1}{6}$. Vérification : $6 \\times \\frac{1}{6} = 1$, et deux nombres inverses ont pour produit 1.",
+      "L'opposé de 6 est $-6$, car $6 + (-6) = 0$. Inverse et opposé sont deux notions différentes. La bonne réponse est b."
+    ],
+    "hint": "Quel nombre, multiplié par 6, donne 1 ?",
+    "estimated_duration_s": 40,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, classe de 3e, Nombres et calculs, Puissances : « Définir les puissances d'exposant négatif d'un nombre. »"
+  },
+  {
+    "id": "EX-A036-E-01",
+    "skill_id": "A036",
+    "level": "entrainement",
+    "type": "texte",
+    "statement": "Écris $3^{-4}$ sans puissance, sous la forme d'une fraction numérateur/dénominateur.",
+    "image": null,
+    "answer": {
+      "value": "1/81",
+      "accepted": [
+        "1 sur 81",
+        "un quatre-vingt-unième"
+      ]
+    },
+    "solution_steps": [
+      "Un exposant négatif désigne un inverse : $3^{-4} = \\frac{1}{3^4}$.",
+      "$3^4 = 3 \\times 3 \\times 3 \\times 3 = 9 \\times 9 = 81$.",
+      "Donc $3^{-4} = \\frac{1}{81}$. Ce nombre est positif et plus petit que 1 : ce n'est ni $-81$, ni $-12$."
+    ],
+    "hint": "Commence par calculer $3^4$.",
+    "estimated_duration_s": 60,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, classe de 3e, Nombres et calculs, Puissances : « Définir les puissances d'exposant négatif d'un nombre. »"
+  },
+  {
+    "id": "EX-A036-E-02",
+    "skill_id": "A036",
+    "level": "entrainement",
+    "type": "vrai_faux",
+    "statement": "Tom affirme : « $8^0 = 0$, car on ne multiplie aucun 8. »\n\nA-t-il raison ?",
+    "image": null,
+    "answer": {
+      "value": false
+    },
+    "solution_steps": [
+      "Partons de $8^2 = 64$ et de $8^1 = 8$ : quand l'exposant baisse de 1, on divise par 8.",
+      "Donc $8^0 = 8 \\div 8 = 1$.",
+      "Pour tout nombre $a$ non nul, $a^0 = 1$. Tom a **tort**."
+    ],
+    "hint": "Écris $8^2$, puis $8^1$ : par quoi divise-t-on quand l'exposant baisse de 1 ?",
+    "estimated_duration_s": 45,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, classe de 3e, Nombres et calculs, Puissances : « Définir les puissances d'exposant négatif d'un nombre. »"
+  },
+  {
+    "id": "EX-A036-M-01",
+    "skill_id": "A036",
+    "level": "maitrise",
+    "type": "numerique",
+    "statement": "Trouve l'entier $n$ tel que $2^n = \\frac{1}{32}$.",
+    "image": null,
+    "answer": {
+      "value": -5
+    },
+    "solution_steps": [
+      "On cherche d'abord quelle puissance de 2 vaut 32 : $2 \\times 2 \\times 2 \\times 2 \\times 2 = 32$, donc $2^5 = 32$.",
+      "$\\frac{1}{32}$ est l'inverse de $2^5$, et l'inverse de $2^5$ s'écrit $2^{-5}$.",
+      "Donc $n = -5$. Le nombre $\\frac{1}{32}$ est positif, mais l'exposant est négatif : le signe de l'exposant indique l'inverse, pas le signe du résultat."
+    ],
+    "hint": "Quelle puissance de 2 est égale à 32 ?",
+    "estimated_duration_s": 75,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, classe de 3e, Nombres et calculs, Puissances : « Définir les puissances d'exposant négatif d'un nombre. »"
+  },
+  {
+    "id": "EX-A036-M-02",
+    "skill_id": "A036",
+    "level": "maitrise",
+    "type": "qcm",
+    "statement": "Que vaut $(-2)^{-3}$ ?",
+    "image": null,
+    "choices": [
+      {
+        "key": "a",
+        "text": "$\\frac{1}{8}$",
+        "misconception": "L'élève prend bien l'inverse, mais oublie que $(-2)^3$ est négatif : trois facteurs négatifs donnent un produit négatif, $(-2)^3 = -8$."
+      },
+      {
+        "key": "b",
+        "text": "$-8$",
+        "misconception": "L'élève calcule $(-2)^3 = -8$ et oublie que l'exposant est négatif : il faut encore prendre l'inverse de $-8$."
+      },
+      {
+        "key": "c",
+        "text": "$-\\frac{1}{8}$",
+        "misconception": null
+      },
+      {
+        "key": "d",
+        "text": "6",
+        "misconception": "L'élève multiplie la base par l'exposant : $(-2) \\times (-3) = 6$. Une puissance est un produit de facteurs égaux, pas le produit de la base par l'exposant."
+      }
+    ],
+    "answer": {
+      "value": "c"
+    },
+    "solution_steps": [
+      "Par définition, $(-2)^{-3} = \\frac{1}{(-2)^3}$ : c'est l'inverse de $(-2)^3$.",
+      "$(-2)^3 = (-2) \\times (-2) \\times (-2) = 4 \\times (-2) = -8$ : trois facteurs négatifs, le produit est négatif.",
+      "L'inverse de $-8$ est $-\\frac{1}{8}$, car $(-8) \\times \\left(-\\frac{1}{8}\\right) = 1$.",
+      "Les deux signes moins n'ont pas le même rôle : celui de la base donne le signe du résultat, celui de l'exposant indique l'inverse. La bonne réponse est c."
+    ],
+    "hint": "Calcule d'abord $(-2)^3$, puis prends son inverse.",
+    "estimated_duration_s": 75,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, classe de 3e, Nombres et calculs, Puissances : « Définir les puissances d'exposant négatif d'un nombre. »"
+  }
+]

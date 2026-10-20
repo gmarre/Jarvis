@@ -1,0 +1,153 @@
+[
+  {
+    "id": "EX-A038-D-01",
+    "skill_id": "A038",
+    "level": "decouverte",
+    "type": "qcm",
+    "statement": "Dans la notation scientifique $a \\times 10^n$, le nombre $a$ est compris entre 1 (inclus) et 10 (exclu).\n\nQuelle est la notation scientifique de 47 000 ?",
+    "image": null,
+    "choices": [
+      {
+        "key": "a",
+        "text": "$47 \\times 10^{3}$",
+        "misconception": "L'écriture vaut bien 47 000, mais 47 n'est pas compris entre 1 et 10 : ce n'est pas une notation scientifique."
+      },
+      {
+        "key": "b",
+        "text": "$4{,}7 \\times 10^{4}$",
+        "misconception": null
+      },
+      {
+        "key": "c",
+        "text": "$0{,}47 \\times 10^{5}$",
+        "misconception": "L'écriture vaut bien 47 000, mais 0,47 est plus petit que 1 : ce n'est pas une notation scientifique."
+      },
+      {
+        "key": "d",
+        "text": "$4{,}7 \\times 10^{3}$",
+        "misconception": "L'élève prend pour exposant le nombre de zéros de 47 000, soit 3. Or $4{,}7 \\times 10^{3} = 4\\,700$ : il faut compter de combien de rangs la virgule se déplace."
+      }
+    ],
+    "answer": {
+      "value": "b"
+    },
+    "solution_steps": [
+      "Le nombre $a$ doit avoir un seul chiffre non nul avant la virgule : ici $a = 4{,}7$.",
+      "Pour passer de 4,7 à 47 000, la virgule avance de 4 rangs vers la droite : on multiplie par $10\\,000 = 10^4$.",
+      "Donc $47\\,000 = 4{,}7 \\times 10^{4}$. Les écritures a et c valent aussi 47 000, mais leur facteur n'est pas entre 1 et 10. La bonne réponse est b."
+    ],
+    "hint": "Quel nombre compris entre 1 et 10 s'écrit avec les chiffres 4 et 7 ?",
+    "estimated_duration_s": 50,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, classe de 3e, Nombres et calculs, Puissances : « Déterminer la notation scientifique d'un nombre. »"
+  },
+  {
+    "id": "EX-A038-D-02",
+    "skill_id": "A038",
+    "level": "decouverte",
+    "type": "numerique",
+    "statement": "Écris $3{,}05 \\times 10^{4}$ en écriture décimale.",
+    "image": null,
+    "answer": {
+      "value": 30500
+    },
+    "solution_steps": [
+      "$10^4 = 10\\,000$ : multiplier par $10^4$, c'est multiplier par 10 000.",
+      "La virgule avance de 4 rangs vers la droite, en complétant par des zéros : $3{,}05 \\to 30{,}5 \\to 305 \\to 3\\,050 \\to 30\\,500$.",
+      "Donc $3{,}05 \\times 10^{4} = 30\\,500$."
+    ],
+    "hint": "Multiplier par $10^4$, c'est multiplier par 10 000.",
+    "estimated_duration_s": 40,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, classe de 3e, Nombres et calculs, Puissances : « Déterminer la notation scientifique d'un nombre. »"
+  },
+  {
+    "id": "EX-A038-E-01",
+    "skill_id": "A038",
+    "level": "entrainement",
+    "type": "numerique",
+    "statement": "On écrit 0,000 62 en notation scientifique : $0{,}000\\,62 = 6{,}2 \\times 10^n$.\n\nQue vaut $n$ ?",
+    "image": null,
+    "answer": {
+      "value": -4
+    },
+    "solution_steps": [
+      "Pour passer de 6,2 à 0,000 62, la virgule recule de 4 rangs vers la gauche : $6{,}2 \\to 0{,}62 \\to 0{,}062 \\to 0{,}006\\,2 \\to 0{,}000\\,62$.",
+      "Reculer de 4 rangs, c'est diviser par 10 000, donc multiplier par $10^{-4}$.",
+      "Donc $n = -4$. Le nombre est plus petit que 1 : l'exposant est négatif."
+    ],
+    "hint": "De combien de rangs, et dans quel sens, la virgule se déplace-t-elle entre 6,2 et 0,000 62 ?",
+    "estimated_duration_s": 50,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, classe de 3e, Nombres et calculs, Puissances : « Déterminer la notation scientifique d'un nombre. »"
+  },
+  {
+    "id": "EX-A038-E-02",
+    "skill_id": "A038",
+    "level": "entrainement",
+    "type": "vrai_faux",
+    "statement": "Jade affirme : « La notation scientifique de 2 800 000 est $28 \\times 10^{5}$. »\n\nA-t-elle raison ?",
+    "image": null,
+    "answer": {
+      "value": false
+    },
+    "solution_steps": [
+      "L'égalité est juste : $28 \\times 10^{5} = 28 \\times 100\\,000 = 2\\,800\\,000$.",
+      "Mais dans une notation scientifique, le facteur doit être compris entre 1 (inclus) et 10 (exclu). Or 28 est plus grand que 10.",
+      "La notation scientifique est $2{,}8 \\times 10^{6}$, car $2{,}8 \\times 1\\,000\\,000 = 2\\,800\\,000$. Jade a **tort**."
+    ],
+    "hint": "Le facteur 28 est-il compris entre 1 et 10 ?",
+    "estimated_duration_s": 45,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, classe de 3e, Nombres et calculs, Puissances : « Déterminer la notation scientifique d'un nombre. »"
+  },
+  {
+    "id": "EX-A038-M-01",
+    "skill_id": "A038",
+    "level": "maitrise",
+    "type": "numerique",
+    "statement": "L'écriture $0{,}36 \\times 10^{-2}$ n'est pas une notation scientifique. On la corrige : $0{,}36 \\times 10^{-2} = 3{,}6 \\times 10^n$.\n\nQue vaut $n$ ?",
+    "image": null,
+    "answer": {
+      "value": -3
+    },
+    "solution_steps": [
+      "On revient à l'écriture décimale : multiplier par $10^{-2}$, c'est diviser par 100, donc $0{,}36 \\times 10^{-2} = 0{,}003\\,6$.",
+      "Dans 0,003 6, le premier chiffre non nul, 3, est au troisième rang après la virgule : $0{,}003\\,6 = 3{,}6 \\times 0{,}001 = 3{,}6 \\times 10^{-3}$.",
+      "Donc $n = -3$. Le facteur a été multiplié par 10 (de 0,36 à 3,6) : pour garder la même valeur, la puissance de 10 doit être divisée par 10, et l'exposant baisse de 1."
+    ],
+    "hint": "Écris d'abord $0{,}36 \\times 10^{-2}$ en écriture décimale.",
+    "estimated_duration_s": 90,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, classe de 3e, Nombres et calculs, Puissances : « Déterminer la notation scientifique d'un nombre. »"
+  },
+  {
+    "id": "EX-A038-M-02",
+    "skill_id": "A038",
+    "level": "maitrise",
+    "type": "texte",
+    "statement": "La distance moyenne entre la Terre et le Soleil est de 149 600 000 km.\n\nÉcris ce nombre en notation scientifique (tape ^ pour l'exposant).",
+    "image": null,
+    "answer": {
+      "value": "1,496 × 10⁸",
+      "accepted": [
+        "1,496 × 10⁸ km",
+        "1,496.10^8",
+        "1,496.10^8 km",
+        "1,496 fois 10^8",
+        "1,496 fois 10^8 km",
+        "1,496 × 10^8 kilomètres",
+        "1,496 fois 10^8 kilomètres"
+      ]
+    },
+    "solution_steps": [
+      "Le facteur doit avoir un seul chiffre non nul avant la virgule : on place la virgule après le 1, ce qui donne 1,496 (les zéros de la fin, placés après la virgule, ne servent plus).",
+      "De 1,496 à 149 600 000, la virgule avance de 8 rangs vers la droite : on multiplie par $100\\,000\\,000 = 10^8$.",
+      "Donc $149\\,600\\,000 = 1{,}496 \\times 10^{8}$ km."
+    ],
+    "hint": "Place la virgule juste après le premier chiffre, puis compte de combien de rangs elle s'est déplacée.",
+    "estimated_duration_s": 90,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, classe de 3e, Nombres et calculs, Puissances : « Déterminer la notation scientifique d'un nombre. »"
+  }
+]

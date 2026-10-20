@@ -1,0 +1,180 @@
+[
+  {
+    "id": "EX-C033-D-01",
+    "skill_id": "C033",
+    "level": "decouverte",
+    "type": "numerique",
+    "statement": "Lors d'une randonnée, un groupe parcourt $\\frac{1}{2}$ du trajet le premier jour et $\\frac{1}{3}$ du trajet le deuxième jour.\n\nQuelle fraction du trajet a-t-il parcourue ? Complète : $\\frac{\\ldots}{6}$",
+    "image": null,
+    "answer": {
+      "value": 5,
+      "accepted": [
+        "5/6"
+      ]
+    },
+    "solution_steps": [
+      "Les deux parts sont des fractions du même trajet : on les additionne, $\\frac{1}{2} + \\frac{1}{3}$.",
+      "En sixièmes : $\\frac{1}{2} = \\frac{3}{6}$ et $\\frac{1}{3} = \\frac{2}{6}$.",
+      "$\\frac{3}{6} + \\frac{2}{6} = \\frac{5}{6}$ : le groupe a parcouru $\\frac{5}{6}$ du trajet. Le nombre manquant est **5**.",
+      "Le trajet entier vaut $\\frac{6}{6}$, c'est-à-dire 1 : il reste $\\frac{1}{6}$ du trajet, que le groupe n'a pas encore fait."
+    ],
+    "hint": "Écris $\\frac{1}{2}$ et $\\frac{1}{3}$ en sixièmes.",
+    "estimated_duration_s": 75,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, classe de 5e, Nombres et calculs, Nombres rationnels : « Résoudre des problèmes avec des additions et soustractions de fractions. »"
+  },
+  {
+    "id": "EX-C033-D-02",
+    "skill_id": "C033",
+    "level": "decouverte",
+    "type": "qcm",
+    "statement": "Ana mange $\\frac{1}{4}$ d'une pizza et Max en mange $\\frac{1}{6}$.\n\nQuelle part de la pizza reste-t-il ?",
+    "image": null,
+    "choices": [
+      {
+        "key": "a",
+        "text": "$\\frac{5}{12}$",
+        "misconception": "L'élève calcule la part mangée, $\\frac{1}{4} + \\frac{1}{6} = \\frac{5}{12}$, et s'arrête : il oublie de la retrancher de la pizza entière, qui vaut 1."
+      },
+      {
+        "key": "b",
+        "text": "$\\frac{8}{10}$",
+        "misconception": "L'élève additionne numérateurs et dénominateurs, $\\frac{1}{4} + \\frac{1}{6} = \\frac{2}{10}$, puis retranche de 1 : $1 - \\frac{2}{10} = \\frac{8}{10}$. L'erreur est dans la somme."
+      },
+      {
+        "key": "c",
+        "text": "$\\frac{7}{12}$",
+        "misconception": null
+      }
+    ],
+    "answer": {
+      "value": "c"
+    },
+    "solution_steps": [
+      "Part mangée : $\\frac{1}{4} + \\frac{1}{6} = \\frac{3}{12} + \\frac{2}{12} = \\frac{5}{12}$ de la pizza.",
+      "La pizza entière vaut 1, soit $\\frac{12}{12}$.",
+      "Il reste $\\frac{12}{12} - \\frac{5}{12} = \\frac{7}{12}$ de la pizza.",
+      "Contrôle : $\\frac{5}{12} + \\frac{7}{12} = \\frac{12}{12}$ : la part mangée et le reste font bien la pizza entière."
+    ],
+    "hint": "Calcule d'abord la part mangée, puis compare-la à la pizza entière.",
+    "estimated_duration_s": 90,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, classe de 5e, Nombres et calculs, Nombres rationnels : « Résoudre des problèmes avec des additions et soustractions de fractions. »"
+  },
+  {
+    "id": "EX-C033-E-01",
+    "skill_id": "C033",
+    "level": "entrainement",
+    "type": "texte",
+    "statement": "Un réservoir est rempli aux $\\frac{7}{8}$. On en vide $\\frac{1}{3}$ de sa capacité.\n\nQuelle fraction du réservoir reste remplie ? Réponds sous la forme numérateur/dénominateur.",
+    "image": null,
+    "answer": {
+      "value": "13/24",
+      "accepted": [
+        "26/48"
+      ]
+    },
+    "solution_steps": [
+      "Les deux fractions sont des parts de la même capacité : on retranche, $\\frac{7}{8} - \\frac{1}{3}$.",
+      "Un multiple commun à 8 et à 3 : 24. Donc $\\frac{7}{8} = \\frac{21}{24}$ et $\\frac{1}{3} = \\frac{8}{24}$.",
+      "$\\frac{21}{24} - \\frac{8}{24} = \\frac{13}{24}$ : le réservoir est rempli aux $\\frac{13}{24}$ de sa capacité.",
+      "Contrôle : $\\frac{13}{24}$ est un peu plus que la moitié, $\\frac{12}{24}$. C'est vraisemblable : il était presque plein et on en a vidé un tiers."
+    ],
+    "hint": "Écris les deux fractions avec le dénominateur 24.",
+    "estimated_duration_s": 100,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, classe de 5e, Nombres et calculs, Nombres rationnels : « Résoudre des problèmes avec des additions et soustractions de fractions. »"
+  },
+  {
+    "id": "EX-C033-E-02",
+    "skill_id": "C033",
+    "level": "entrainement",
+    "type": "vrai_faux",
+    "statement": "Dans un club, chacun pratique un seul sport : $\\frac{1}{2}$ des membres font du tennis, $\\frac{2}{5}$ du football, les autres de la natation.\n\nVrai ou faux : $\\frac{1}{10}$ des membres font de la natation.",
+    "image": null,
+    "answer": {
+      "value": true
+    },
+    "solution_steps": [
+      "Tennis et football ensemble : $\\frac{1}{2} + \\frac{2}{5} = \\frac{5}{10} + \\frac{4}{10} = \\frac{9}{10}$ des membres.",
+      "Tous les membres du club représentent 1, soit $\\frac{10}{10}$.",
+      "Natation : $\\frac{10}{10} - \\frac{9}{10} = \\frac{1}{10}$. La phrase est **vraie**.",
+      "« Chacun pratique un seul sport » compte : sans cette précision, un même membre pourrait être compté deux fois."
+    ],
+    "hint": "Calcule d'abord la part des membres qui font du tennis ou du football.",
+    "estimated_duration_s": 90,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, classe de 5e, Nombres et calculs, Nombres rationnels : « Résoudre des problèmes avec des additions et soustractions de fractions. »"
+  },
+  {
+    "id": "EX-C033-M-01",
+    "skill_id": "C033",
+    "level": "maitrise",
+    "type": "texte",
+    "statement": "Inès consacre $\\frac{3}{10}$ de son budget de vacances au logement, $\\frac{1}{4}$ à la nourriture et le reste aux loisirs.\n\nDe quelle fraction du budget la part des loisirs dépasse-t-elle celle de la nourriture ? Réponds sous la forme numérateur/dénominateur.",
+    "image": null,
+    "answer": {
+      "value": "1/5",
+      "accepted": [
+        "4/20",
+        "2/10",
+        "8/40",
+        "0,2",
+        "un cinquième"
+      ]
+    },
+    "solution_steps": [
+      "Logement et nourriture : $\\frac{3}{10} + \\frac{1}{4} = \\frac{6}{20} + \\frac{5}{20} = \\frac{11}{20}$ du budget.",
+      "Loisirs : le budget entier vaut $\\frac{20}{20}$, donc $\\frac{20}{20} - \\frac{11}{20} = \\frac{9}{20}$ du budget.",
+      "Nourriture : $\\frac{1}{4} = \\frac{5}{20}$. Écart : $\\frac{9}{20} - \\frac{5}{20} = \\frac{4}{20}$, c'est-à-dire $\\frac{1}{5}$ du budget.",
+      "Attention à la question : on ne demande pas la part des loisirs ($\\frac{9}{20}$), mais ce qu'elle a de plus que celle de la nourriture."
+    ],
+    "hint": "Calcule d'abord la part des loisirs.",
+    "estimated_duration_s": 150,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, classe de 5e, Nombres et calculs, Nombres rationnels : « Résoudre des problèmes avec des additions et soustractions de fractions. »"
+  },
+  {
+    "id": "EX-C033-M-02",
+    "skill_id": "C033",
+    "level": "maitrise",
+    "type": "qcm",
+    "statement": "Hugo lit $\\frac{2}{9}$ d'un livre lundi, puis une partie mardi. Il lui reste $\\frac{1}{3}$ du livre à lire.\n\nQuelle fraction du livre a-t-il lue mardi ?",
+    "image": null,
+    "choices": [
+      {
+        "key": "a",
+        "text": "$\\frac{5}{9}$",
+        "misconception": "L'élève additionne les deux fractions de l'énoncé, $\\frac{2}{9} + \\frac{1}{3} = \\frac{5}{9}$, et s'arrête : c'est la part lue lundi plus la part restante, pas la part lue mardi. Il faut encore la retrancher du livre entier."
+      },
+      {
+        "key": "b",
+        "text": "$\\frac{9}{12}$",
+        "misconception": "L'élève additionne numérateurs et dénominateurs, $\\frac{2}{9} + \\frac{1}{3} = \\frac{3}{12}$, puis retranche de 1 : $1 - \\frac{3}{12} = \\frac{9}{12}$. L'erreur est dans la somme."
+      },
+      {
+        "key": "c",
+        "text": "$\\frac{1}{9}$",
+        "misconception": "L'élève fait la différence des deux fractions de l'énoncé, $\\frac{1}{3} - \\frac{2}{9} = \\frac{1}{9}$, sans se demander ce qu'elle représente : le livre entier, qui vaut 1, n'intervient pas dans son calcul."
+      },
+      {
+        "key": "d",
+        "text": "$\\frac{4}{9}$",
+        "misconception": null
+      }
+    ],
+    "answer": {
+      "value": "d"
+    },
+    "solution_steps": [
+      "Le livre entier vaut 1 : la part lue lundi, la part lue mardi et la part restante forment le livre entier.",
+      "Lundi et le reste ensemble : $\\frac{2}{9} + \\frac{1}{3} = \\frac{2}{9} + \\frac{3}{9} = \\frac{5}{9}$ du livre.",
+      "Mardi : $\\frac{9}{9} - \\frac{5}{9} = \\frac{4}{9}$ du livre.",
+      "Vérification : $\\frac{2}{9} + \\frac{4}{9} + \\frac{3}{9} = \\frac{9}{9}$, le livre entier."
+    ],
+    "hint": "Lundi, mardi et la part restante font le livre entier.",
+    "estimated_duration_s": 120,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, classe de 5e, Nombres et calculs, Nombres rationnels : « Résoudre des problèmes avec des additions et soustractions de fractions. »"
+  }
+]

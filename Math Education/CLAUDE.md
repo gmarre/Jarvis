@@ -19,25 +19,25 @@ Application web d'apprentissage adaptatif des mathématiques, CP à Terminale à
 
 ---
 
-## 2. État au 20 octobre 2026
+## 2. État au 21 octobre 2026
 
-### 2.1 Contenu (étape 5 fusionnée le 19 octobre 2026)
+### 2.1 Contenu (étape 6 fusionnée le 21 octobre 2026)
 
-**170 compétences, 1 036 exercices (dont 281 avec figure), 35 cartes mentales**, tous en `relu_agent` (relus par agents), en attente de la recette de Marius.
+**196 compétences, 1 192 exercices (dont 285 avec figure), 42 cartes mentales**, tous en `relu_agent` (relus par agents), en attente de la recette de Marius.
 
 | Domaine | Compétences | Classes couvertes |
 |---|---|---|
-| A Numération | 28 | CP à 3e (relatifs, repère, arithmétique du cycle 4) |
-| B Calcul | 31 | CP à 4e (opérations sur les relatifs, priorités) |
-| C Fractions | 18 | CE1 à 3e (cycle 4 très partiel : 4 compétences) |
-| D Décimaux | 19 | CE1 à 6e |
+| A Numération | 40 | CP à 3e (relatifs, repère, arithmétique, puissances, racine carrée, notation scientifique) |
+| B Calcul | 35 | CP à 3e (opérations sur les relatifs, priorités, calcul avec des puissances) |
+| C Fractions | 27 | CE1 à 4e (cycle 4 complet : opérations, inverse, quotient, problèmes) |
+| D Décimaux | 20 | CE1 à 5e (division par un décimal) |
 | E Proportionnalité, pourcentages | 17 | CM1 à 5e |
 | G Espace et géométrie | 30 | CP à 6e |
 | P Grandeurs et mesures | 27 | CP à 6e |
 
-**Constat :** le **cycle 3 (CM1 à 6e) et le cycle 2 sont couverts ; le cycle 4 (5e, 4e, 3e) commence** (étape 5 : relatifs et arithmétique). Plan pour aller au bout de la 3e : §7.
+**Constat :** le **cycle 3 (CM1 à 6e) et le cycle 2 sont couverts ; le cycle 4 (5e, 4e, 3e) avance** (étape 5 : relatifs et arithmétique ; étape 6 : fractions, puissances, racine carrée, notation scientifique). Plan pour aller au bout de la 3e : §7.
 
-Étapes faites (bilans détaillés dans `Spécifications DAG, Exos, Mindcards/QUALITY.md`) : tranche pilote A et C ; 1 calcul ; 2 décimaux ; 3 proportionnalité ; 4a grandeurs et mesures ; figures (reprise de 30 exercices) ; 4b géométrie ; 5 relatifs et arithmétique (5e à 3e).
+Étapes faites (bilans détaillés dans `Spécifications DAG, Exos, Mindcards/QUALITY.md`) : tranche pilote A et C ; 1 calcul ; 2 décimaux ; 3 proportionnalité ; 4a grandeurs et mesures ; figures (reprise de 30 exercices) ; 4b géométrie ; 5 relatifs et arithmétique (5e à 3e) ; 6 fractions du cycle 4, puissances, racine carrée, notation scientifique (5e à 3e).
 
 Restes connus sur le contenu :
 - tranche pilote **complétée le 20 octobre 2026** : plus aucune compétence sous 6 exercices (bilan dans `QUALITY.md`) ; EX-C030-D-01, E-03, M-02 demandent encore une fraction en `numerique` (à passer en `texte`) ;
@@ -140,7 +140,7 @@ Ce qui est faux ou absent aujourd'hui (repris dans le backlog §6) :
 
 **Colonnes protégées du client** (trigger) : `role` (choisi une seule fois, `role_choisi_le`, 0010), `consentement_parental_at`, `email`, `cree_le`, `abonnement` ; pour un mineur, `date_naissance` (0011). Un changement de parent ou une date sous 15 ans remet le consentement à zéro.
 
-**Edge Functions :** `corriger` (`verify_jwt: true`, version 9 : signe moins typographique, °C, « +8 °C », puissances et notation scientifique reconnues sans calcul, fractions relatives, « ÷ ») ; `accord-parental` (`verify_jwt: false`, le parent n'a pas de compte ; secrets `RESEND_API_KEY`, `RESEND_FROM`, `APP_URL`).
+**Edge Functions :** `corriger` (`verify_jwt: true`, version 10 : signe moins typographique, °C, « +8 °C », puissances et notation scientifique reconnues sans calcul, fractions relatives, « ÷ », « fois », « cm^2 », « n = 13 », écritures du signe d'une fraction sans réduction ni double signe, tolérance incluse, espaces de milliers au corrigé) ; `accord-parental` (`verify_jwt: false`, le parent n'a pas de compte ; secrets `RESEND_API_KEY`, `RESEND_FROM`, `APP_URL`).
 
 **Fonctions d'autorisation** en `security definer`, pour éviter la récursion RLS : `peut_lire_eleve`, `est_prof_de`, `est_parent_de`, `role_actuel`, `nb_places_prises`. Aucune n'est appelable par `anon`.
 
@@ -328,7 +328,7 @@ Décisions prises en route : la page publique du parent est `/accord/:jeton` (co
    - **Garde-fou :** pas de mécanique manipulatrice sur des mineurs (pas de perte punitive, pas de notifications nocturnes), conformément aux recommandations CNIL pour les mineurs.
    - Rappels : emails d'abord, notifications PWA ensuite.
 
-**Contenu :** étape 6 du §7 : cartographe fait le 20 octobre 2026 (26 compétences : A029 à A040, B022, B023, B052, B053, C013, C015, C017, C018, C033 à C037, D026 ; `_travail/etape6_dag_C.*`), **9 arbitrages validés par Gauthier** (puissances, racine et notation scientifique en A ; numérotation gardée ; découpage proposé ; x² = a à l'étape 7 ; liens proposés, dont C008 ← A025 déjà en place, et retrait des arêtes redondantes C007 ← B006, C007 ← B039, C011 ← B006 ; 2 évaluations partielles ; correction des puissances faite ; 3 petites cartes gardées ; validateur : séparer l'exposant de l'unité d'aire, ajouter √ et l'exposant négatif aux notations contrôlées). Prochaine action : rédacteurs.
+**Contenu :** **étape 6 du §7 fusionnée et publiée le 21 octobre 2026** : 26 compétences, 156 exercices, 7 cartes, tous relus et contre-relus par agents (bilan dans `QUALITY.md`). Liens ajoutés en relecture : A034 ← B049 (et A032 ← A031 seul). A025 réécrite avec les puissances. A038 n'est plus en évaluation partielle (la notation scientifique se tape) ; seule C035 l'est encore. Prochaine étape de contenu : 7 (calcul littéral, domaine F).
 
 ### Sprint 3 : Professeur v1
 
@@ -435,7 +435,7 @@ Toute nouvelle lettre exige une migration qui élargit les contraintes `A-P`, et
 | 10 | Statistiques (moyenne, médiane, étendue, diagrammes) et probabilités | K, L | diagrammes en barres et circulaires, arbres |
 | 11 | Super exercices de fin de cycle (CM2, 6e, 3e) et cartes défi pour tout le collège | transverse | aucun |
 
-**Attendus de 5e sans nœud après l'étape 5** (relevés par le cartographe) : diviser par un décimal, traduire un programme de calcul en une seule expression, distributivité simple sur des exemples numériques. À placer à l'étape 6 ou 7.
+**Attendus de 5e sans nœud après l'étape 6** : traduire un programme de calcul en une seule expression, distributivité simple sur des exemples numériques ; à placer à l'étape 7 (diviser par un décimal : D026, étape 6). x² = a est aussi renvoyé à l'étape 7.
 
 **Arbitrages déjà pris, à reconduire :**
 - algorithmique et programmation (Scratch) : hors évaluation, sauf un nœud de lecture si le programme l'impose ;

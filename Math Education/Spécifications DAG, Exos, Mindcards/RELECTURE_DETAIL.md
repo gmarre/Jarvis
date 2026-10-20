@@ -11772,6 +11772,166 @@ Je suis un nombre entier négatif. Je suis plus grand que −4,5, et ma distance
 
 ---
 
+## `A029` · Carré et cube d'un nombre : les notations a² et a³ — 5e, difficulté 4
+
+*Savoir que le carré d'un nombre est le produit de ce nombre par lui-même, noté a² (l'aire d'un carré de côté a), et que son cube est le produit de trois facteurs égaux à ce nombre, noté a³ (le volume d'un cube d'arête a) : 7² = 7 × 7 = 49 ; 4³ = 4 × 4 × 4 = 64 ; 10³ = 1 000 ; lire « 5 au carré », « 2 au cube » ; écrire un nombre sous la forme d'un carré ou d'un cube quand c'est possible (64 = 8² = 4³ ; 1 000 = 10³). Nombres entiers. L'erreur type est de multiplier par l'exposant (7² = 14, 4³ = 12). Réponse : un nombre ; pour écrire un nombre sous forme de carré ou de cube, l'élève donne la base (125 = …³ : il tape 5) ou choisit l'écriture (QCM), jamais une puissance tapée. Figure utile : quadrillage (carré de 5 carreaux de côté) ou cubes (cube de 3 cubes d'arête).*
+
+> « Découvrir la notion de puissance d'un nombre et sa notation dans le cas du carré et du cube. » — *Cycle 4, classe de 5e, Nombres et calculs, Puissances, Objectifs d'apprentissage*
+> « Connaitre le cube de 10. » — *Cycle 4, classe de 5e, Nombres et calculs, Puissances, Objectifs d'apprentissage*
+> « Savoir écrire un nombre sous la forme d'une puissance 2 ou 3. » — *Cycle 4, classe de 5e, Nombres et calculs, Puissances, Objectifs d'apprentissage*
+> « Connaitre les unités d'aires et de volume. » — *Cycle 4, classe de 5e, Nombres et calculs, Puissances, Automatismes*
+
+**EX-A029-D-01** — decouverte, qcm, 60 s
+
+Sur ce quadrillage, un carré est colorié. Quelle écriture donne le nombre de carreaux de ce carré ?
+
+- **a.** 8 × 2
+  <br>*Erreur visée :* L'élève lit « au carré » comme « multiplié par 2 » : il calcule le double du côté, 16, au lieu du produit du côté par lui-même.
+- **b.** 4 × 8
+  <br>*Erreur visée :* L'élève fait le tour du carré, quatre côtés de 8 carreaux : il mesure le périmètre, pas le nombre de carreaux qui remplissent le carré.
+- **c.** 8² ✅
+
+*Corrigé.* (1) On compte les carreaux le long d'un côté du carré colorié : il y en a 8. (2) Le carré est fait de 8 rangées de 8 carreaux : il contient 8 × 8 = 64 carreaux. (3) Le produit d'un nombre par lui-même s'appelle le carré de ce nombre. On écrit 8 × 8 = 8², et on lit « 8 au carré ». La bonne réponse est c. (4) Pièges : 8 × 2 = 16 est le double de 8, pas son carré ; 4 × 8 = 32 fait le tour du carré, il ne remplit pas sa surface.
+
+*Indice.* Compte les carreaux sur un côté, puis le nombre de rangées.
+
+**EX-A029-D-02** — decouverte, numerique, 90 s
+
+Ce grand cube est rempli de petits cubes identiques, même à l'intérieur. Combien de petits cubes contient-il ?
+
+**Réponse :** 27
+
+*Corrigé.* (1) Sur une arête du grand cube, on compte 3 petits cubes. (2) Une couche contient 3 rangées de 3 cubes : 3 × 3 = 9 cubes. Le grand cube a 3 couches : 3 × 9 = 27 cubes. (3) En tout : 3 × 3 × 3 = 27. Ce produit de trois facteurs égaux à 3 s'appelle le cube de 3 et s'écrit 3³ (« 3 au cube ») : c'est le volume du grand cube, compté en petits cubes. (4) Pièges : 9 ne compte qu'une face ; 19 ne compte que les cubes visibles ; 3³ n'est pas 3 × 3 : il faut trois facteurs égaux à 3.
+
+*Indice.* Compte les petits cubes sur une arête, puis raisonne couche par couche.
+
+**EX-A029-E-01** — entrainement, qcm, 60 s
+
+Lou lit à voix haute : « 9 au cube ». Quel calcul correspond à 9³ ?
+
+- **a.** 9 × 3
+  <br>*Erreur visée :* L'élève multiplie le nombre par l'exposant : 9 × 3 = 27. Or l'exposant 3 indique le nombre de facteurs égaux à 9.
+- **b.** 9 × 9 × 9 ✅
+- **c.** 9 × 9
+  <br>*Erreur visée :* L'élève confond le cube et le carré : 9 × 9 = 9², avec deux facteurs seulement.
+- **d.** 3 × 3 × 3 × 3 × 3 × 3 × 3 × 3 × 3
+  <br>*Erreur visée :* L'élève inverse les rôles du nombre et de l'exposant : il écrit neuf facteurs égaux à 3 au lieu de trois facteurs égaux à 9.
+
+*Corrigé.* (1) « Au cube » veut dire : le produit de trois facteurs égaux au nombre. (2) 9³ = 9 × 9 × 9 = 81 × 9 = 729. La bonne réponse est b. (3) Le petit 3 écrit en haut, l'exposant, compte les facteurs : il ne multiplie pas 9. (4) Pièges : 9 × 9 est le carré de 9 ; 9 × 3 multiplie par l'exposant ; neuf facteurs égaux à 3, c'est échanger 9 et 3.
+
+*Indice.* Combien de facteurs égaux à 9 l'exposant 3 annonce-t-il ?
+
+**EX-A029-E-02** — entrainement, numerique, 90 s
+
+Un carreau de faïence carré mesure 15 cm de côté. Son aire, en cm², est égale à 15². Combien vaut-elle ?
+
+**Réponse :** 225
+
+*Corrigé.* (1) 15² est le carré de 15 : le produit de 15 par lui-même. C'est l'aire d'un carré de 15 cm de côté. (2) 15² = 15 × 15 = 225 (on peut calculer 15 × 10 + 15 × 5 = 150 + 75). (3) L'aire du carreau est 225 cm². (4) Piège : 15 × 2 = 30 est le double de 15, obtenu en multipliant par l'exposant. Le carré d'un nombre est le produit de ce nombre par lui-même.
+
+*Indice.* 15² = 15 × 15. Pour calculer, décompose 15 en 10 + 5.
+
+**EX-A029-M-01** — maitrise, numerique, 120 s
+
+343 est le cube d'un nombre entier : 343 = …³. Quel est ce nombre entier ?
+
+**Réponse :** 7
+
+*Corrigé.* (1) On cherche un entier a tel que a × a × a = 343. (2) On essaie : 6 × 6 × 6 = 216, trop petit ; 7 × 7 × 7 = 49 × 7 = 343. Le chiffre des unités aide : 343 finit par 3, comme 7 × 7 × 7. (3) Donc 343 = 7³ : le nombre cherché est 7. (4) Piège : diviser 343 par 3, c'est confondre le cube avec le triple ; on obtient environ 114, dont le cube est bien plus grand que 343.
+
+*Indice.* Calcule les cubes de 4, 5, 6… jusqu'à tomber sur 343.
+
+**EX-A029-M-02** — maitrise, vrai_faux, 120 s
+
+Vrai ou faux : 64 est le carré d'un entier et le cube d'un entier.
+
+**Réponse :** True
+
+*Corrigé.* (1) 64 = 8 × 8 = 8² : 64 est le carré de 8. (2) 64 = 4 × 4 × 4 = 16 × 4 = 4³ : 64 est également le cube de 4. (3) L'affirmation est vraie. (4) Piège : le cube de 8 n'est pas 64 (8³ = 512) ; le nombre dont 64 est le cube n'est pas celui dont il est le carré.
+
+*Indice.* Cherche un entier qui, multiplié par lui-même, donne 64, puis un entier dont le cube vaut 64.
+
+---
+
+## `A030` · Carrés des entiers de 0 à 12 : les connaître, les reconnaître — 5e, difficulté 4
+
+*Connaître par cœur les carrés des entiers de 0 à 12 (0, 1, 4, 9, …, 121, 144) et s'en servir dans les deux sens : donner 11² sans poser de calcul, dire quel entier a pour carré 64, reconnaître parmi 36, 48, 81, 90 et 100 les carrés d'entiers (36, 81 et 100). C'est ce qui prépare la racine carrée (4e). L'erreur type est de confondre carré et double (8² = 16) ou de croire que 90 est un carré parce qu'il finit par 0 comme 100. Réponse : un nombre, un QCM ou un vrai/faux. Figure : aucune.*
+
+> « Connaitre les carrés des entiers de 0 à 12. » — *Cycle 4, classe de 5e, Nombres et calculs, Puissances, Objectifs d'apprentissage*
+> « Entretenir les tables de multiplications. » — *Cycle 4, classe de 5e, Nombres et calculs, Puissances, Automatismes*
+
+**EX-A030-D-01** — decouverte, numerique, 45 s
+
+Une grille de sudoku est un carré de 9 cases sur 9 cases. Combien de cases contient-elle ?
+
+**Réponse :** 81
+
+*Corrigé.* (1) La grille a 9 rangées de 9 cases : le nombre de cases est 9 × 9, le carré de 9, noté 9². (2) 9² = 81 : c'est un carré à connaître par cœur, comme ceux de tous les entiers de 0 à 12. (3) La grille contient 81 cases. (4) Piège : 9 × 2 = 18 est le double de 9, pas son carré.
+
+*Indice.* 9 rangées de 9 cases : quel produit faut-il calculer ?
+
+**EX-A030-D-02** — decouverte, qcm, 45 s
+
+Quel entier a pour carré 16 ?
+
+- **a.** 8
+  <br>*Erreur visée :* L'élève confond carré et double : il prend la moitié de 16. Or 8² = 8 × 8 = 64.
+- **b.** 4 ✅
+- **c.** 256
+  <br>*Erreur visée :* L'élève calcule le carré de 16 (16 × 16 = 256) au lieu de chercher le nombre dont le carré est 16.
+
+*Corrigé.* (1) On cherche un entier qui, multiplié par lui-même, donne 16. (2) 4 × 4 = 16, donc 4² = 16 : l'entier cherché est 4. La bonne réponse est b. (3) Pièges : 8 est la moitié de 16 (8 × 2 = 16, mais 8 × 8 = 64) ; 256 est le carré de 16, c'est la question inverse.
+
+*Indice.* Quel nombre, multiplié par lui-même, donne 16 ?
+
+**EX-A030-E-01** — entrainement, qcm, 60 s
+
+Un seul de ces nombres n'est pas le carré d'un entier. Lequel ?
+
+- **a.** 144
+  <br>*Erreur visée :* L'élève ne connaît ses carrés que jusqu'à 10 × 10 = 100. Or 144 = 12 × 12.
+- **b.** 1
+  <br>*Erreur visée :* L'élève pense que 1 ne peut pas être un carré. Or 1 × 1 = 1, donc 1 = 1².
+- **c.** 0
+  <br>*Erreur visée :* L'élève pense que 0 n'est le carré d'aucun nombre. Or 0 × 0 = 0, donc 0 = 0².
+- **d.** 60 ✅
+
+*Corrigé.* (1) Les carrés des entiers de 0 à 12 : 0 ; 1 ; 4 ; 9 ; 16 ; 25 ; 36 ; 49 ; 64 ; 81 ; 100 ; 121 ; 144. (2) 0 = 0², 1 = 1² et 144 = 12² sont des carrés d'entiers. (3) 60 est entre 49 = 7² et 64 = 8² : aucun entier n'a pour carré 60. La bonne réponse est d. (4) Piège : 60 = 6 × 10 est le produit de deux nombres, mais pas d'un nombre par lui-même.
+
+*Indice.* Récite les carrés de 0 × 0 à 12 × 12.
+
+**EX-A030-E-02** — entrainement, numerique, 60 s
+
+Le carré d'un nombre entier est compris entre 90 et 110. Quel est ce nombre entier ?
+
+**Réponse :** 10
+
+*Corrigé.* (1) On cherche parmi les carrés connus celui qui est entre 90 et 110 : 9² = 81 est trop petit, 11² = 121 est trop grand. (2) 10² = 100 est entre 90 et 110 : c'est le seul. (3) Le nombre entier est 10. (4) Piège : répondre 100, c'est donner le carré au lieu du nombre dont on prend le carré.
+
+*Indice.* Écris la liste des carrés de 0 à 12 et cherche celui qui convient.
+
+**EX-A030-M-01** — maitrise, vrai_faux, 60 s
+
+Vrai ou faux : entre 60 et 90, il y a exactement deux carrés d'entiers.
+
+**Réponse :** True
+
+*Corrigé.* (1) Les carrés autour de 60 et 90 : 7² = 49 ; 8² = 64 ; 9² = 81 ; 10² = 100. (2) 49 est plus petit que 60 et 100 est plus grand que 90 : seuls 64 et 81 sont entre 60 et 90. (3) Il y en a exactement deux : l'affirmation est vraie. (4) Piège : 70, 80 ou 90 ne sont pas des carrés, même s'ils finissent par 0 comme 100.
+
+*Indice.* Écris les carrés de 7, 8, 9 et 10.
+
+**EX-A030-M-02** — maitrise, numerique, 90 s
+
+Je suis un entier compris entre 0 et 12. Mon carré se termine par 6 et dépasse 20. Qui suis-je ?
+
+**Réponse :** 6
+
+*Corrigé.* (1) Parmi les carrés des entiers de 0 à 12, deux se terminent par 6 : 4² = 16 et 6² = 36. Les autres se terminent par 0, 1, 4, 5 ou 9. (2) 16 ne dépasse pas 20 ; 36 dépasse 20. (3) Je suis 6. (4) Pièges : répondre 36, qui est mon carré ; ou 4, dont le carré se termine bien par 6 mais ne vaut que 16.
+
+*Indice.* Écris les carrés de 0 à 12 et regarde leur dernier chiffre.
+
+---
+
 ## `B011` · Priorités opératoires — 5e, difficulté 4
 
 *Calculer une expression qui mêle les quatre opérations sur des nombres positifs, avec ou sans parenthèses, en effectuant d'abord les calculs entre parenthèses, puis les multiplications et les divisions, puis les additions et les soustractions, de gauche à droite à priorité égale : 7 + 3 × 5 = 22 ; 20 − 8 ÷ 4 = 18. Nommer le calcul (somme, différence, produit, quotient) d'après la dernière opération effectuée, distinguer termes et facteurs. L'erreur type est de calculer de gauche à droite sans tenir compte des priorités (7 + 3 × 5 = 50). Figure : aucune.*
@@ -12087,6 +12247,84 @@ Au club de Lina, 14 adhérents sur 20 sont des filles. Au club de Malo, 9 adhér
 *Corrigé.* (1) La part des filles est une fraction : 14/20 au club de Lina, 9/12 au club de Malo. (2) On cherche un dénominateur commun. Multiples de 20 : 20, 40, 60… 60 est aussi dans la table de 12 : 20 × 3 = 60 et 12 × 5 = 60. (3) 14/20 = 14 × 3/20 × 3 = 42/60 et 9/12 = 9 × 5/12 × 5 = 45/60. (4) 45 > 42 : la part des filles est plus grande au club de Malo, même s'il y a moins de filles.
 
 *Indice.* Écris la part des filles de chaque club sous forme de fraction, puis compare ces deux fractions.
+
+---
+
+## `C013` · Additionner et soustraire des fractions de dénominateurs différents — 5e, difficulté 4
+
+*Calculer la somme ou la différence de deux fractions positives dont les dénominateurs sont différents, en les réduisant d'abord au même dénominateur : 2/5 + 1/4 = 8/20 + 5/20 = 13/20 ; 4/7 − 2/21 = 12/21 − 2/21 = 10/21 ; y compris quand l'un des termes est un entier, écrit alors comme une fraction (3 + 2/5 = 15/5 + 2/5 = 17/5 ; 1 − 2/3 = 1/3). Le résultat n'est pas simplifié : la simplification est un objectif de 4e. L'erreur type est d'additionner les numérateurs entre eux et les dénominateurs entre eux (2/5 + 1/4 = 3/9). Les fractions de nombres relatifs arrivent en 4e. Réponse : une fraction tapée « 13/20 », comparée par sa valeur (une fraction égale est acceptée). Figure : aucune.*
+
+> « Additionner et soustraire des fractions de dénominateurs quelconques. » — *Cycle 4, classe de 5e, Nombres et calculs, Nombres rationnels, Objectifs d'apprentissage*
+> « Addition et soustraction de fractions simples » — *Cycle 4, classe de 5e, Nombres et calculs, Nombres rationnels, Automatismes*
+> « Écrire une fraction sous la forme d'une somme d'un nombre entier et d'une fraction inférieure à 1 » — *Cycle 4, classe de 5e, Nombres et calculs, Nombres rationnels, Automatismes*
+
+**EX-C013-D-01** — decouverte, numerique, 60 s
+
+Pour calculer 1/3 + 2/9, on écrit d'abord 1/3 avec le dénominateur 9. Complète : 1/3 + 2/9 = …/9
+
+**Réponse :** 5
+
+*Corrigé.* (1) Les deux fractions n'ont pas le même dénominateur : on ne peut pas encore les additionner. Comme 9 = 3 × 3, on multiplie le numérateur et le dénominateur de 1/3 par 3 : 1/3 = 1 × 3/3 × 3 = 3/9. (2) Les deux fractions sont maintenant des neuvièmes : 3/9 + 2/9 = 3 + 2/9 = 5/9. On additionne les numérateurs et on garde le dénominateur 9. (3) Le nombre manquant est 5. (4) Attention : additionner aussi les dénominateurs donnerait 3/12, plus petit que 1/3 = 4/12. Une somme de deux fractions ne peut pas être plus petite que l'une d'elles.
+
+*Indice.* Combien de neuvièmes y a-t-il dans un tiers ?
+
+**EX-C013-D-02** — decouverte, qcm, 75 s
+
+Un pot contient 1/2 litre de lait. On y verse 1/5 de litre en plus. Quelle quantité de lait le pot contient-il ?
+
+- **a.** 2/7 de litre
+  <br>*Erreur visée :* L'élève additionne les numérateurs entre eux et les dénominateurs entre eux : 1 + 1 = 2 et 2 + 5 = 7. Or 2/7 est moins que la moitié d'un litre (2 est moins que la moitié de 7) : après avoir ajouté du lait, il y en aurait moins qu'au départ.
+- **b.** 7/10 de litre ✅
+- **c.** 2/10 de litre
+  <br>*Erreur visée :* L'élève trouve le bon dénominateur commun, 10, mais garde les numérateurs 1 et 1 sans les multiplier : il oublie que 1/2 = 5/10 et 1/5 = 2/10.
+
+*Corrigé.* (1) Le pot contient 1/2 + 1/5 litre. Les dénominateurs 2 et 5 sont différents : on cherche un dénominateur commun, un multiple de 2 et de 5. Le plus petit est 10. (2) 1/2 = 1 × 5/2 × 5 = 5/10 et 1/5 = 1 × 2/5 × 2 = 2/10. (3) 5/10 + 2/10 = 7/10 : le pot contient 7/10 de litre. (4) Contrôle : 7/10 est plus grand que 1/2 = 5/10, ce qui est normal puisqu'on a ajouté du lait.
+
+*Indice.* Écris les deux fractions avec le dénominateur 10.
+
+**EX-C013-E-01** — entrainement, texte, 90 s
+
+Calcule 7/10 - 1/4. Écris ta réponse sous la forme numérateur/dénominateur.
+
+**Réponse :** 9/20
+
+*Corrigé.* (1) Les dénominateurs 10 et 4 sont différents. On cherche un multiple commun à 10 et à 4 : 20 convient, car 20 = 10 × 2 = 4 × 5. (2) 7/10 = 14/20 et 1/4 = 5/20. (3) 14/20 - 5/20 = 9/20 : on soustrait les numérateurs et on garde le dénominateur. (4) Avec le dénominateur 40 (10 × 4), on trouve 28/40 - 10/40 = 18/40, qui est égal à 9/20 : cette réponse est juste aussi.
+
+*Indice.* Cherche un nombre qui est à la fois dans la table de 10 et dans la table de 4.
+
+**EX-C013-E-02** — entrainement, vrai_faux, 75 s
+
+Sami calcule 4 - 2/7. Il écrit : 4 - 2/7 = 2/7, car 4 − 2 = 2. Sami a-t-il raison ?
+
+**Réponse :** False
+
+*Corrigé.* (1) Sami a retiré 2 au nombre entier 4 : il mélange des unités et des septièmes. On ne soustrait que des fractions de même dénominateur. (2) On écrit 4 avec le dénominateur 7 : 4 unités font 4 × 7 = 28 septièmes, donc 4 = 28/7. (3) 28/7 - 2/7 = 26/7. L'égalité de Sami est donc fausse. (4) Contrôle : on enlève à 4 moins d'une unité, il reste plus de 3. Or 2/7 est plus petit que 1, c'est impossible. Et 26/7 = 3 + 5/7 est bien entre 3 et 4.
+
+*Indice.* Combien de septièmes y a-t-il dans 4 unités ?
+
+**EX-C013-M-01** — maitrise, texte, 120 s
+
+Complète : 3/8 + … = 5/6 Écris la fraction manquante sous la forme numérateur/dénominateur.
+
+**Réponse :** 11/24
+
+*Corrigé.* (1) Le nombre manquant est ce qu'il faut ajouter à 3/8 pour obtenir 5/6 : c'est la différence 5/6 - 3/8. (2) Un multiple commun à 6 et à 8 : 24, car 24 = 6 × 4 = 8 × 3. Donc 5/6 = 20/24 et 3/8 = 9/24. (3) 20/24 - 9/24 = 11/24. (4) Vérification : 9/24 + 11/24 = 20/24 = 5/6.
+
+*Indice.* Pour trouver ce qu'il faut ajouter, fais une soustraction.
+
+**EX-C013-M-02** — maitrise, qcm, 120 s
+
+Combien vaut 3 - 3/4 - 1/2 ?
+
+- **a.** 7/4 ✅
+- **b.** 11/4
+  <br>*Erreur visée :* L'élève calcule d'abord 3/4 - 1/2 = 1/4, puis 3 - 1/4 = 11/4 : il commence par la droite. Une suite de soustractions se calcule de gauche à droite.
+- **c.** 8/4
+  <br>*Erreur visée :* L'élève trouve bien 3 - 3/4 = 9/4, mais écrit 1/2 en quarts sans multiplier le numérateur : 1/4 au lieu de 2/4. Il obtient 9/4 - 1/4 = 8/4.
+
+*Corrigé.* (1) On calcule de gauche à droite, en écrivant tout en quarts : 3 = 12/4 et 1/2 = 2/4. (2) 12/4 - 3/4 = 9/4, puis 9/4 - 2/4 = 7/4. (3) Contrôle : on retire à 3 un peu plus d'une unité, car 3/4 + 2/4 = 5/4 dépasse 1. Le résultat est un peu moins de 2 : 7/4 = 1 + 3/4.
+
+*Indice.* Écris 3 et 1/2 en quarts, puis calcule de gauche à droite.
 
 ---
 
@@ -12487,6 +12725,243 @@ Entre ce matin et ce soir, la température a varié de −6,5 degrés. Ce soir, 
 *Corrigé.* (1) La variation est négative : entre ce matin et ce soir, la température a baissé de 6,5 degrés. Le matin était donc plus chaud que le soir. (2) Pour retrouver la température du matin, on fait le chemin à l'envers : à partir de −2 °C, on remonte de 6,5 degrés. Cela s'écrit -2 + 6{,}5. (3) -2 + 6{,}5 = 4{,}5 : signes contraires, on soustrait les distances à zéro, 6{,}5 - 2 = 4{,}5, et on garde le signe de +6{,}5, le plus éloigné de zéro. (4) Ce matin, il faisait 4,5 °C. Vérification : 4{,}5 + (-6{,}5) = -2. La bonne réponse est a.
 
 *Indice.* Une variation négative, est-ce une hausse ou une baisse ? Fais ensuite le chemin à l'envers.
+
+---
+
+## `B052` · Calculer une expression avec des carrés et des cubes — 5e, difficulté 5
+
+*Calculer une expression numérique qui mêle carrés ou cubes, additions, soustractions et produits, en calculant les puissances avant les produits, et les produits avant les sommes : 3 + 2 × 5² = 3 + 2 × 25 = 53 ; 2 × 3² = 18 alors que (2 × 3)² = 36 ; 10³ − 4² = 984. L'erreur type est d'appliquer le carré à tout ce qui le précède (2 × 3² = 36) ou de calculer de gauche à droite. Nombres positifs ; les puissances de relatifs sont en 4e, la valeur d'une expression avec une lettre à l'étape 7. Réponse : un nombre. Figure : aucune.*
+
+> « Calculer la valeur numérique d'expressions contenant des puissances simples, additions, soustractions et produits. » — *Cycle 4, classe de 5e, Nombres et calculs, Puissances, Objectifs d'apprentissage*
+> « Connaitre et utiliser les priorités opératoires. » — *Cycle 4, classe de 5e, Nombres et calculs, Opérations, Objectifs d'apprentissage*
+
+**EX-B052-D-01** — decouverte, numerique, 60 s
+
+Pour calculer 1 + 6 × 3², on commence par la puissance, puis le produit, puis la somme. Quel est le résultat ?
+
+**Réponse :** 55
+
+*Corrigé.* (1) La puissance d'abord : 3² = 3 × 3 = 9. L'expression devient 1 + 6 × 9. (2) Le produit ensuite : 6 × 9 = 54. Il reste 1 + 54. (3) La somme enfin : 1 + 54 = 55. (4) Pièges : commencer par 1 + 6 = 7 donne 7 × 9 = 63 ; élever 6 × 3 au carré donne 1 + 18² = 325 ; lire 3² comme 3 × 2 donne 1 + 36 = 37.
+
+*Indice.* Calcule d'abord 3².
+
+**EX-B052-D-02** — decouverte, qcm, 60 s
+
+Noé commence le calcul de 5 × 2³. Quelle première étape est juste ?
+
+- **a.** 5 × 2³ = 10³
+  <br>*Erreur visée :* L'élève applique le cube à tout ce qui le précède, comme si l'on avait écrit (5 × 2)³. Or l'exposant ne porte que sur le 2.
+- **b.** 5 × 2³ = 5 × 6
+  <br>*Erreur visée :* L'élève multiplie 2 par l'exposant : 2 × 3 = 6. Or 2³ = 2 × 2 × 2 = 8.
+- **c.** 5 × 2³ = 5 × 8 ✅
+
+*Corrigé.* (1) Dans 5 × 2³, l'exposant 3 porte seulement sur le nombre écrit juste devant lui, le 2. (2) On calcule d'abord la puissance : 2³ = 2 × 2 × 2 = 8. Donc 5 × 2³ = 5 × 8 = 40. La bonne réponse est c. (3) Pièges : 10³ = 1 000 est la valeur de (5 × 2)³, une autre expression ; 5 × 6 vient de 2³ lu comme 2 × 3.
+
+*Indice.* Sur quel nombre porte le petit 3 ?
+
+**EX-B052-E-01** — entrainement, numerique, 90 s
+
+Calcule 2 × 7² − 3³.
+
+**Réponse :** 71
+
+*Corrigé.* (1) Les puissances d'abord : 7² = 7 × 7 = 49 et 3³ = 3 × 3 × 3 = 27. (2) Le produit ensuite : 2 × 49 = 98. (3) La différence enfin : 98 − 27 = 71. (4) Pièges : (2 × 7)² − 27 = 196 − 27 = 169 applique le carré au produit ; lire 7² comme 14 et 3³ comme 9 donne 2 × 14 − 9 = 19.
+
+*Indice.* Remplace d'abord 7² et 3³ par leur valeur.
+
+**EX-B052-E-02** — entrainement, vrai_faux, 60 s
+
+Vrai ou faux : (3 + 4)² = 3² + 4².
+
+**Réponse :** False
+
+*Corrigé.* (1) À gauche, la parenthèse d'abord : 3 + 4 = 7, puis 7² = 49. (2) À droite, les puissances d'abord : 3² + 4² = 9 + 16 = 25. (3) 49 n'est pas égal à 25 : l'égalité est fausse. (4) Piège : le carré d'une somme n'est pas la somme des carrés. (3 + 4)² veut dire (3 + 4) × (3 + 4).
+
+*Indice.* Calcule chaque membre séparément.
+
+**EX-B052-M-01** — maitrise, qcm, 150 s
+
+Une seule de ces expressions vaut 100. Laquelle ?
+
+- **a.** 2 + 3² × 4
+  <br>*Erreur visée :* L'élève applique le carré à tout ce qui le précède : (2 + 3)² = 25, puis 25 × 4 = 100. Or le carré ne porte que sur 3 : 2 + 9 × 4 = 38.
+- **b.** (2 + 3)² × 4 ✅
+- **c.** 2 × 5²
+  <br>*Erreur visée :* L'élève applique le carré au produit, comme dans (2 × 5)² = 100. Or le carré ne porte que sur 5 : 2 × 25 = 50.
+- **d.** 90 + 5²
+  <br>*Erreur visée :* L'élève lit 5² comme 5 × 2 = 10 et trouve 90 + 10 = 100. Or 5² = 25, donc 90 + 25 = 115.
+
+*Corrigé.* (1) On calcule chaque expression dans l'ordre des priorités : parenthèses, puis puissances, puis produits, puis sommes. (2) a : 2 + 9 × 4 = 2 + 36 = 38. c : 2 × 25 = 50. d : 90 + 25 = 115. (3) b : (2 + 3)² × 4 = 5² × 4 = 25 × 4 = 100. La bonne réponse est b. (4) Les autres propositions ne valent 100 qu'avec une erreur : carré appliqué à la somme (a), carré appliqué au produit (c), 5² lu comme 5 × 2 (d).
+
+*Indice.* Calcule les quatre expressions, en commençant par les parenthèses puis les puissances.
+
+**EX-B052-M-02** — maitrise, numerique, 150 s
+
+Une boîte cubique de 6 cm d'arête se remplit de cubes de 1 cm d'arête. On a déjà rangé 4 couches complètes. Combien de cubes faut-il pour finir ?
+
+**Réponse :** 72
+
+*Corrigé.* (1) Une couche complète est un carré de 6 cubes sur 6 : 6² = 36 cubes. (2) La boîte pleine contient 6 couches : 6³ = 6 × 6 × 6 = 216 cubes. (3) Déjà rangés : 4 × 6² = 4 × 36 = 144 cubes. Il en manque 6³ − 4 × 6² = 216 − 144 = 72. (4) Autre façon : il reste 6 − 4 = 2 couches, soit 2 × 36 = 72 cubes. Pièges : 144 est le nombre de cubes déjà rangés, pas ceux qui manquent ; 216 − 4 × 6 = 192 compte une couche comme une seule rangée de 6.
+
+*Indice.* Combien de cubes dans une couche ? Combien de couches dans la boîte pleine ?
+
+---
+
+## `C033` · Problèmes d'addition et de soustraction de fractions — 5e, difficulté 5
+
+*Résoudre un problème où des parts d'un même tout s'ajoutent ou se retranchent : quelle part représentent deux parts ensemble, quelle part reste-t-il, de combien une part dépasse l'autre. Exemple : un jardin est planté pour 1/3 en légumes et pour 1/4 en fleurs ; la partie plantée représente 7/12 du jardin, il en reste 5/12. Savoir que le tout vaut 1. L'erreur type est d'oublier de retrancher du tout (répondre 7/12 à « quelle part reste-t-il ? »). Les parts sont des fractions du même tout ; prendre une fraction d'une quantité relève de C004, et la fraction d'un reste de la 4e (C037). Réponse : une fraction, comparée par sa valeur. Figure : aucune.*
+
+> « Résoudre des problèmes avec des additions et soustractions de fractions. » — *Cycle 4, classe de 5e, Nombres et calculs, Nombres rationnels, Objectifs d'apprentissage*
+> « Additionner et soustraire des fractions de dénominateurs quelconques. » — *Cycle 4, classe de 5e, Nombres et calculs, Nombres rationnels, Objectifs d'apprentissage*
+
+**EX-C033-D-01** — decouverte, numerique, 75 s
+
+Lors d'une randonnée, un groupe parcourt 1/2 du trajet le premier jour et 1/3 du trajet le deuxième jour. Quelle fraction du trajet a-t-il parcourue ? Complète : …/6
+
+**Réponse :** 5
+
+*Corrigé.* (1) Les deux parts sont des fractions du même trajet : on les additionne, 1/2 + 1/3. (2) En sixièmes : 1/2 = 3/6 et 1/3 = 2/6. (3) 3/6 + 2/6 = 5/6 : le groupe a parcouru 5/6 du trajet. Le nombre manquant est 5. (4) Le trajet entier vaut 6/6, c'est-à-dire 1 : il reste 1/6 du trajet, que le groupe n'a pas encore fait.
+
+*Indice.* Écris 1/2 et 1/3 en sixièmes.
+
+**EX-C033-D-02** — decouverte, qcm, 90 s
+
+Ana mange 1/4 d'une pizza et Max en mange 1/6. Quelle part de la pizza reste-t-il ?
+
+- **a.** 5/12
+  <br>*Erreur visée :* L'élève calcule la part mangée, 1/4 + 1/6 = 5/12, et s'arrête : il oublie de la retrancher de la pizza entière, qui vaut 1.
+- **b.** 8/10
+  <br>*Erreur visée :* L'élève additionne numérateurs et dénominateurs, 1/4 + 1/6 = 2/10, puis retranche de 1 : 1 - 2/10 = 8/10. L'erreur est dans la somme.
+- **c.** 7/12 ✅
+
+*Corrigé.* (1) Part mangée : 1/4 + 1/6 = 3/12 + 2/12 = 5/12 de la pizza. (2) La pizza entière vaut 1, soit 12/12. (3) Il reste 12/12 - 5/12 = 7/12 de la pizza. (4) Contrôle : 5/12 + 7/12 = 12/12 : la part mangée et le reste font bien la pizza entière.
+
+*Indice.* Calcule d'abord la part mangée, puis compare-la à la pizza entière.
+
+**EX-C033-E-01** — entrainement, texte, 100 s
+
+Un réservoir est rempli aux 7/8. On en vide 1/3 de sa capacité. Quelle fraction du réservoir reste remplie ? Réponds sous la forme numérateur/dénominateur.
+
+**Réponse :** 13/24
+
+*Corrigé.* (1) Les deux fractions sont des parts de la même capacité : on retranche, 7/8 - 1/3. (2) Un multiple commun à 8 et à 3 : 24. Donc 7/8 = 21/24 et 1/3 = 8/24. (3) 21/24 - 8/24 = 13/24 : le réservoir est rempli aux 13/24 de sa capacité. (4) Contrôle : 13/24 est un peu plus que la moitié, 12/24. C'est vraisemblable : il était presque plein et on en a vidé un tiers.
+
+*Indice.* Écris les deux fractions avec le dénominateur 24.
+
+**EX-C033-E-02** — entrainement, vrai_faux, 90 s
+
+Dans un club, chacun pratique un seul sport : 1/2 des membres font du tennis, 2/5 du football, les autres de la natation. Vrai ou faux : 1/10 des membres font de la natation.
+
+**Réponse :** True
+
+*Corrigé.* (1) Tennis et football ensemble : 1/2 + 2/5 = 5/10 + 4/10 = 9/10 des membres. (2) Tous les membres du club représentent 1, soit 10/10. (3) Natation : 10/10 - 9/10 = 1/10. La phrase est vraie. (4) « Chacun pratique un seul sport » compte : sans cette précision, un même membre pourrait être compté deux fois.
+
+*Indice.* Calcule d'abord la part des membres qui font du tennis ou du football.
+
+**EX-C033-M-01** — maitrise, texte, 150 s
+
+Inès consacre 3/10 de son budget de vacances au logement, 1/4 à la nourriture et le reste aux loisirs. De quelle fraction du budget la part des loisirs dépasse-t-elle celle de la nourriture ? Réponds sous la forme numérateur/dénominateur.
+
+**Réponse :** 1/5
+
+*Corrigé.* (1) Logement et nourriture : 3/10 + 1/4 = 6/20 + 5/20 = 11/20 du budget. (2) Loisirs : le budget entier vaut 20/20, donc 20/20 - 11/20 = 9/20 du budget. (3) Nourriture : 1/4 = 5/20. Écart : 9/20 - 5/20 = 4/20, c'est-à-dire 1/5 du budget. (4) Attention à la question : on ne demande pas la part des loisirs (9/20), mais ce qu'elle a de plus que celle de la nourriture.
+
+*Indice.* Calcule d'abord la part des loisirs.
+
+**EX-C033-M-02** — maitrise, qcm, 120 s
+
+Hugo lit 2/9 d'un livre lundi, puis une partie mardi. Il lui reste 1/3 du livre à lire. Quelle fraction du livre a-t-il lue mardi ?
+
+- **a.** 5/9
+  <br>*Erreur visée :* L'élève additionne les deux fractions de l'énoncé, 2/9 + 1/3 = 5/9, et s'arrête : c'est la part lue lundi plus la part restante, pas la part lue mardi. Il faut encore la retrancher du livre entier.
+- **b.** 9/12
+  <br>*Erreur visée :* L'élève additionne numérateurs et dénominateurs, 2/9 + 1/3 = 3/12, puis retranche de 1 : 1 - 3/12 = 9/12. L'erreur est dans la somme.
+- **c.** 1/9
+  <br>*Erreur visée :* L'élève fait la différence des deux fractions de l'énoncé, 1/3 - 2/9 = 1/9, sans se demander ce qu'elle représente : le livre entier, qui vaut 1, n'intervient pas dans son calcul.
+- **d.** 4/9 ✅
+
+*Corrigé.* (1) Le livre entier vaut 1 : la part lue lundi, la part lue mardi et la part restante forment le livre entier. (2) Lundi et le reste ensemble : 2/9 + 1/3 = 2/9 + 3/9 = 5/9 du livre. (3) Mardi : 9/9 - 5/9 = 4/9 du livre. (4) Vérification : 2/9 + 4/9 + 3/9 = 9/9, le livre entier.
+
+*Indice.* Lundi, mardi et la part restante font le livre entier.
+
+---
+
+## `D026` · Diviser par un nombre décimal — 5e, difficulté 5
+
+*Calculer le quotient d'un entier ou d'un décimal par un décimal non entier en se ramenant à un diviseur entier : on ne change pas un quotient en multipliant le dividende et le diviseur par un même nombre (7,2 ÷ 1,5 = 72 ÷ 15 = 4,8 ; 6 ÷ 0,25 = 600 ÷ 25 = 24), puis on pose la division ou on calcule mentalement ; savoir que diviser par un nombre plus petit que 1 donne un résultat plus grand que le dividende (3 ÷ 0,5 = 6). L'erreur type est de multiplier seulement le diviseur par 10 (7,2 ÷ 1,5 devient 7,2 ÷ 15). Quotients décimaux exacts, ou arrondis au rang demandé. Réponse : un nombre décimal. Figure : aucune.*
+
+> « Diviser par un nombre décimal. » — *Cycle 4, classe de 5e, Nombres et calculs, Opérations, Objectifs d'apprentissage*
+> « Multiplier et diviser par 10, 100, 1 000. » — *Cycle 4, classe de 5e, Nombres et calculs, Opérations, Automatismes*
+
+**EX-D026-D-01** — decouverte, numerique, 60 s
+
+Un ruban de 4,5 m est coupé en morceaux de 0,9 m. On multiplie les deux nombres par 10 : 4{,}5 ÷ 0{,}9 = 45 ÷ 9. Combien obtient-on de morceaux ?
+
+**Réponse :** 5
+
+*Corrigé.* (1) On cherche combien de fois 0,9 m entre dans 4,5 m : c'est la division 4{,}5 ÷ 0{,}9. (2) On ne change pas un quotient en multipliant le dividende et le diviseur par un même nombre. Par 10, le diviseur devient entier : 4{,}5 ÷ 0{,}9 = 45 ÷ 9. (3) 45 ÷ 9 = 5, car 9 × 5 = 45. On obtient 5 morceaux. (4) Vérification : 5 × 0{,}9 = 4{,}5. Les 5 morceaux font bien 4,5 m.
+
+*Indice.* Dans la table de 9, quel nombre donne 45 ?
+
+**EX-D026-D-02** — decouverte, qcm, 75 s
+
+Par quel calcul plus simple peut-on remplacer 3{,}6 ÷ 0{,}04 sans changer le résultat ?
+
+- **a.** 3{,}6 ÷ 4
+  <br>*Erreur visée :* L'élève multiplie seulement le diviseur par 100 pour le rendre entier et oublie de multiplier aussi le dividende : le quotient change.
+- **b.** 36 ÷ 4
+  <br>*Erreur visée :* L'élève retire les deux virgules. Mais 3,6 a été multiplié par 10 et 0,04 par 100 : ce n'est pas le même nombre, le quotient change.
+- **c.** 360 ÷ 4 ✅
+
+*Corrigé.* (1) Pour rendre le diviseur 0,04 entier, il faut le multiplier par 100 : 0{,}04 × 100 = 4. (2) On multiplie le dividende par le même nombre : 3{,}6 × 100 = 360. Le quotient ne change pas : 3{,}6 ÷ 0{,}04 = 360 ÷ 4. (3) D'ailleurs 360 ÷ 4 = 90, alors que 3{,}6 ÷ 4 = 0{,}9 et 36 ÷ 4 = 9 : les deux autres calculs ne donnent pas le même résultat.
+
+*Indice.* Le dividende et le diviseur doivent être multipliés par le même nombre.
+
+**EX-D026-E-01** — entrainement, numerique, 90 s
+
+Calcule 2{,}73 ÷ 0{,}7.
+
+**Réponse :** 3.9
+
+*Corrigé.* (1) On multiplie le dividende et le diviseur par 10 pour que le diviseur soit entier : 2{,}73 ÷ 0{,}7 = 27{,}3 ÷ 7. (2) On pose la division de 27,3 par 7 : en 27, il y a 3 fois 7, il reste 6 ; on abaisse le 3 en plaçant la virgule au quotient ; en 63, il y a 9 fois 7, il reste 0. (3) 27{,}3 ÷ 7 = 3{,}9, donc 2{,}73 ÷ 0{,}7 = 3{,}9. (4) Contrôle : 4 × 0{,}7 = 2{,}8, un peu plus que 2,73 : le quotient est un peu moins de 4.
+
+*Indice.* Par combien faut-il multiplier 0,7 pour obtenir un nombre entier ?
+
+**EX-D026-E-02** — entrainement, vrai_faux, 75 s
+
+Léo affirme : « Une division donne toujours un résultat plus petit que le nombre divisé. Donc 12 ÷ 0{,}75 est plus petit que 12. » Léo a-t-il raison ?
+
+**Réponse :** False
+
+*Corrigé.* (1) Diviser 12 par 0,75, c'est chercher combien de fois 0,75 entre dans 12. (2) 0,75 est plus petit que 1 : il entre dans 12 plus de 12 fois. Le quotient est donc plus grand que 12. (3) Calcul : 12 ÷ 0{,}75 = 1 200 ÷ 75 = 16, et 16 est plus grand que 12. Léo a tort. (4) Diviser par un nombre plus grand que 1 donne un résultat plus petit que le nombre divisé ; diviser par un nombre plus petit que 1 donne un résultat plus grand.
+
+*Indice.* 0,75 est-il plus grand ou plus petit que 1 ?
+
+**EX-D026-M-01** — maitrise, numerique, 120 s
+
+Au marché, Nora paie 5,04 € pour 2,4 kg de pommes. Quel est le prix d'un kilogramme de pommes ?
+
+**Réponse :** 2.1
+
+*Corrigé.* (1) Le prix d'un kilogramme s'obtient en divisant le prix payé par la masse : 5{,}04 ÷ 2{,}4. (2) On multiplie le dividende et le diviseur par 10 : 5{,}04 ÷ 2{,}4 = 50{,}4 ÷ 24. (3) On pose la division : en 50, il y a 2 fois 24, il reste 2 ; on abaisse le 4 en plaçant la virgule au quotient ; en 24, il y a 1 fois 24, il reste 0. Donc 50{,}4 ÷ 24 = 2{,}1. (4) Un kilogramme coûte 2,10 €. Contrôle : 2 kg coûteraient 2 × 2{,}1 = 4{,}2 €, un peu moins que 5,04 € pour un peu plus de 2 kg : c'est cohérent.
+
+*Indice.* Divise le prix par la masse, puis rends le diviseur entier.
+
+**EX-D026-M-02** — maitrise, qcm, 90 s
+
+Avec 6 L d'eau, combien peut-on remplir de gourdes de 0,75 L ?
+
+- **a.** 80
+  <br>*Erreur visée :* L'élève multiplie 6 par 100 mais 0,75 par 10 seulement : 600 ÷ 7{,}5 = 80. Le dividende et le diviseur n'ont pas été multipliés par le même nombre.
+- **b.** 8 ✅
+- **c.** 0,8
+  <br>*Erreur visée :* L'élève multiplie seulement le diviseur par 10 et calcule 6 ÷ 7{,}5 = 0{,}8 : moins d'une gourde avec 6 L, alors qu'une gourde contient moins d'un litre.
+- **d.** 4,5
+  <br>*Erreur visée :* L'élève multiplie au lieu de diviser, 6 × 0{,}75 = 4{,}5, parce qu'il croit que le résultat doit être plus petit que 6.
+
+*Corrigé.* (1) On cherche combien de fois 0,75 L entre dans 6 L : 6 ÷ 0{,}75. (2) On multiplie le dividende et le diviseur par 100 : 6 ÷ 0{,}75 = 600 ÷ 75 = 8. (3) On peut remplir 8 gourdes. Contrôle : 8 × 0{,}75 = 6. (4) Une gourde contient moins d'un litre : on en remplit donc plus de 6, ce qui écarte 0,8 et 4,5.
+
+*Indice.* Une gourde contient moins d'un litre : en remplit-on plus ou moins de 6 ?
 
 ---
 
@@ -13039,6 +13514,480 @@ On sait que (-5) × 4 = -20 et que (-5) × 4 + (-5) × (-4) = (-5) × (4 + (-4))
 
 ---
 
+## `A031` · Puissances d'exposant entier positif d'un nombre — 4e, difficulté 5
+
+*Savoir que, pour un nombre a et un entier positif n, aⁿ est le produit de n facteurs égaux à a (a¹ = a), lire « 2 exposant 5 » ou « 2 puissance 5 », et calculer une puissance d'un entier, d'un décimal ou d'un relatif : 2⁵ = 32 ; 0,1³ = 0,001 ; (−2)³ = −8 ; (−3)⁴ = 81, en distinguant (−3)² = 9 de −3² = −9 ; écrire un produit de facteurs égaux sous forme de puissance (7 × 7 × 7 × 7 = 7⁴). L'erreur type est de multiplier la base par l'exposant (2⁵ = 10) ou de se tromper de signe sur la puissance d'un négatif. Réponse : un nombre ; pour écrire un produit sous forme de puissance, l'élève donne l'exposant ou la base, ou choisit l'écriture (QCM), jamais une puissance tapée. Figure : aucune.*
+
+> « Définir les puissances d'exposant positif d'un nombre a. » — *Cycle 4, classe de 4e, Nombres et calculs, Puissances, Objectifs d'apprentissage*
+> « L'apprentissage des puissances se fonde sur des situations mathématiques illustrant, par exemple, un produit itéré » — *Cycle 4, Nombres et calculs, présentation commune aux trois classes*
+
+**EX-A031-D-01** — decouverte, numerique, 90 s
+
+On plie une feuille en deux, 6 pliages de suite. À chaque pliage, le nombre d'épaisseurs double. Combien d'épaisseurs obtient-on ?
+
+**Réponse :** 64
+
+*Corrigé.* (1) Au départ, 1 épaisseur. Chaque pliage multiplie le nombre d'épaisseurs par 2. (2) Après 6 pliages : 2 × 2 × 2 × 2 × 2 × 2, produit de 6 facteurs égaux à 2, qui s'écrit 2⁶ (« 2 exposant 6 » ou « 2 puissance 6 »). (3) 2⁶ = 4 × 4 × 4 = 16 × 4 = 64 épaisseurs. (4) Pièges : 2 × 6 = 12 multiplie par l'exposant ; 6² = 36 échange le nombre et l'exposant.
+
+*Indice.* Écris le nombre d'épaisseurs après 1, 2, puis 3 pliages, et observe.
+
+**EX-A031-D-02** — decouverte, qcm, 45 s
+
+Quelle écriture est égale à 4 × 4 × 4 × 4 × 4 ?
+
+- **a.** 4⁵ ✅
+- **b.** 5⁴
+  <br>*Erreur visée :* L'élève échange le nombre et l'exposant : 5⁴ est le produit de quatre facteurs égaux à 5.
+- **c.** 4 × 5
+  <br>*Erreur visée :* L'élève confond produit répété et somme répétée : 4 × 5 = 4 + 4 + 4 + 4 + 4 = 20, alors que 4 × 4 × 4 × 4 × 4 = 1 024.
+
+*Corrigé.* (1) On compte les facteurs : il y en a 5, tous égaux à 4. (2) Un produit de 5 facteurs égaux à 4 s'écrit 4⁵ : le nombre répété en bas, le nombre de facteurs en exposant. La bonne réponse est a. (3) Pièges : 5⁴ = 5 × 5 × 5 × 5 échange les rôles ; 4 × 5 = 20 est une somme répétée (4 + 4 + 4 + 4 + 4), pas un produit répété.
+
+*Indice.* Quel nombre est répété, et combien de facteurs comptes-tu ?
+
+**EX-A031-E-01** — entrainement, qcm, 60 s
+
+Combien vaut (−3)³ ?
+
+- **a.** −9
+  <br>*Erreur visée :* L'élève multiplie le nombre par l'exposant : (−3) × 3 = −9. Or (−3)³ est le produit de trois facteurs égaux à −3.
+- **b.** 27
+  <br>*Erreur visée :* L'élève calcule 3 × 3 × 3 = 27 sans s'occuper du signe. Or (−3) × (−3) = 9, puis 9 × (−3) est négatif.
+- **c.** −27 ✅
+- **d.** 9
+  <br>*Erreur visée :* L'élève ne prend que deux facteurs, (−3) × (−3) = 9, comme pour un carré.
+
+*Corrigé.* (1) (−3)³ = (−3) × (−3) × (−3) : trois facteurs égaux à −3. (2) (−3) × (−3) = 9 : deux facteurs négatifs donnent un produit positif. (3) 9 × (−3) = −27 : un facteur positif et un facteur négatif donnent un produit négatif. Donc (−3)³ = −27. La bonne réponse est c. (4) Pièges : 27 oublie le signe ; −9 multiplie par l'exposant ; 9 ne compte que deux facteurs.
+
+*Indice.* Écris les trois facteurs, puis multiplie-les deux par deux.
+
+**EX-A031-E-02** — entrainement, numerique, 90 s
+
+Calcule 0,5⁴ et donne le résultat en écriture décimale.
+
+**Réponse :** 0.0625
+
+*Corrigé.* (1) 0,5⁴ = 0,5 × 0,5 × 0,5 × 0,5 : quatre facteurs égaux à 0,5. (2) 0,5 × 0,5 = 0,25 ; 0,25 × 0,5 = 0,125 ; 0,125 × 0,5 = 0,0625. (3) 0,5⁴ = 0,0625. Contrôle : chaque facteur 0,5 prend la moitié, donc le résultat diminue à chaque étape. (4) Pièges : 0,5 × 4 = 2 multiplie par l'exposant ; 0,625 vient de 25 × 25 = 625 avec la virgule mal placée, alors que 0,25 × 0,25 a quatre chiffres après la virgule.
+
+*Indice.* Multiplie 0,5 par lui-même, puis continue facteur par facteur.
+
+**EX-A031-M-01** — maitrise, vrai_faux, 90 s
+
+Vrai ou faux : −2⁴ = (−2)⁴.
+
+**Réponse :** False
+
+*Corrigé.* (1) Dans (−2)⁴, l'exposant porte sur −2, parenthèse comprise : (−2) × (−2) × (−2) × (−2) = 4 × 4 = 16. (2) Dans −2⁴, l'exposant porte seulement sur 2 : −2⁴ = −(2 × 2 × 2 × 2) = −16. (3) 16 et −16 ne sont pas égaux : l'égalité est fausse. (4) Piège : sans parenthèse, le signe moins n'est pas élevé à la puissance. De même, (−5)² = 25 mais −5² = −25.
+
+*Indice.* Sur quoi porte l'exposant quand il n'y a pas de parenthèse ?
+
+**EX-A031-M-02** — maitrise, numerique, 120 s
+
+Une bactérie se divise en deux toutes les heures : 1 bactérie donne 2 bactéries, puis 4, puis 8… Au bout de combien d'heures en compte-t-on 1 024 ?
+
+**Réponse :** 10
+
+*Corrigé.* (1) Après n heures, le nombre de bactéries est 2 × 2 × … × 2, avec n facteurs : c'est 2ⁿ. (2) On cherche n tel que 2ⁿ = 1 024. On continue la liste : 2⁴ = 16 ; 2⁵ = 32 ; 2⁶ = 64 ; 2⁷ = 128 ; 2⁸ = 256 ; 2⁹ = 512 ; 2¹⁰ = 1 024. (3) Il faut 10 heures. (4) Pièges : 1 024 ÷ 2 = 512 ne compte pas les heures ; les 4 chiffres de 1 024 ne donnent pas l'exposant.
+
+*Indice.* Continue la liste 2, 4, 8, 16… en comptant les heures.
+
+---
+
+## `A032` · Puissances de 10 d'exposant positif ; préfixes kilo, méga, giga — 4e, difficulté 5
+
+*Savoir que 10ⁿ s'écrit 1 suivi de n zéros (10⁶ = 1 000 000), passer d'une écriture à l'autre, lire un grand nombre écrit avec une puissance de 10 (3 × 10⁸ m/s ; 7,2 × 10⁹ habitants) et compléter 1 200 = 1,2 × 10³ ; connaître les préfixes kilo (10³), méga (10⁶) et giga (10⁹) et s'en servir pour convertir (5 Go = 5 × 10⁹ octets ; 2,4 MW = 2 400 000 W). L'erreur type est de confondre l'exposant avec le nombre de chiffres (écrire 10⁶ avec six chiffres). Les exposants négatifs et les préfixes milli, micro et nano sont en 3e. Réponse : un nombre (les espaces entre les milliers sont acceptés) ou l'exposant ; jamais une puissance tapée. Figure : aucune.*
+
+> « Définir les puissances d'exposant positif d'un nombre a. » — *Cycle 4, classe de 4e, Nombres et calculs, Puissances, Objectifs d'apprentissage*
+> « 10² = 100 » — *Cycle 4, classe de 4e, Nombres et calculs, Puissances, Automatismes*
+> « Multiplier et diviser par 10, 100, 1 000 ; savoir compléter 1 200 = 1,2 × … » — *Cycle 4, classe de 4e, Nombres et calculs, Puissances, Automatismes*
+> « On introduit en fonction des besoins les préfixes des puissances de dix de nano à giga. » — *Cycle 4, Nombres et calculs, présentation commune aux trois classes*
+
+**EX-A032-D-01** — decouverte, numerique, 45 s
+
+10⁵ est le produit de 5 facteurs égaux à 10. Écris ce nombre en chiffres.
+
+**Réponse :** 100000
+
+*Corrigé.* (1) 10⁵ = 10 × 10 × 10 × 10 × 10. (2) Chaque facteur 10 ajoute un zéro : 10 ; 100 ; 1 000 ; 10 000 ; 100 000. (3) 10⁵ = 100 000 : un 1 suivi de 5 zéros. L'exposant compte les zéros, pas les chiffres (100 000 a 6 chiffres). (4) Pièges : 10 × 5 = 50 multiplie par l'exposant ; 10 000 n'a que 4 zéros.
+
+*Indice.* Multiplie 10 par 10, puis le résultat par 10, et continue jusqu'à 5 facteurs.
+
+**EX-A032-D-02** — decouverte, qcm, 45 s
+
+Un milliard s'écrit 1 000 000 000. Quelle écriture est égale à un milliard ?
+
+- **a.** 10¹⁰
+  <br>*Erreur visée :* L'élève compte les chiffres de 1 000 000 000 (il y en a 10) au lieu des zéros (il y en a 9).
+- **b.** 10⁹ ✅
+- **c.** 10 × 9
+  <br>*Erreur visée :* L'élève pense « 10, avec neuf zéros » et écrit 10 × 9, qui vaut 90 : multiplier par 9 n'est pas multiplier 9 facteurs égaux à 10.
+
+*Corrigé.* (1) 1 000 000 000 est un 1 suivi de 9 zéros. (2) 1 000 000 000 = 10 × 10 × 10 × 10 × 10 × 10 × 10 × 10 × 10 : 9 facteurs égaux à 10, donc 10⁹. La bonne réponse est b. (3) Pièges : 10¹⁰ = 10 000 000 000 vient des 10 chiffres comptés au lieu des 9 zéros ; 10 × 9 = 90.
+
+*Indice.* Combien de facteurs 10 faut-il multiplier pour obtenir 1 000 000 000 ?
+
+**EX-A032-E-01** — entrainement, numerique, 90 s
+
+Une clé USB a une capacité de 16 Go (gigaoctets). Combien d'octets peut-elle contenir ? Écris le nombre en chiffres.
+
+**Réponse :** 16000000000
+
+*Corrigé.* (1) Le préfixe giga veut dire 10⁹ = 1 000 000 000, un milliard. Donc 1 Go = 1 000 000 000 octets. (2) 16 Go = 16 × 1 000 000 000 octets = 16 000 000 000 octets, soit 16 × 10⁹ octets. (3) Multiplier par 1 000 000 000, c'est écrire 9 zéros après 16. (4) Pièges : 16 000 000 confond giga (10⁹) et méga (10⁶) ; 16 000 confond avec kilo (10³).
+
+*Indice.* Kilo vaut 10³, méga vaut 10⁶ : et giga ?
+
+**EX-A032-E-02** — entrainement, numerique, 90 s
+
+La France compte environ 68 000 000 habitants. Complète : 68 000 000 = 6,8 × 10ⁿ. Que vaut n ?
+
+**Réponse :** 7
+
+*Corrigé.* (1) On multiplie 6,8 par 10 jusqu'à obtenir 68 000 000, en comptant les multiplications. (2) 6,8 ; 68 ; 680 ; 6 800 ; 68 000 ; 680 000 ; 6 800 000 ; 68 000 000 : il a fallu 7 multiplications par 10. (3) Donc 68 000 000 = 6,8 × 10⁷, et n = 7. (4) Piège : compter les 6 zéros de 68 000 000 donne 6 ; mais le 8 de 6,8 doit également changer de rang, et 6,8 × 10⁶ = 6 800 000.
+
+*Indice.* Multiplie 6,8 par 10, puis par 10, jusqu'à atteindre 68 000 000, et compte les multiplications.
+
+**EX-A032-M-01** — maitrise, vrai_faux, 120 s
+
+Une éolienne produit au plus 2 MW (mégawatts). Vrai ou faux : 2 MW, c'est la même chose que 2 000 kW (kilowatts).
+
+**Réponse :** True
+
+*Corrigé.* (1) Méga veut dire 10⁶ = 1 000 000 : 2 MW = 2 × 1 000 000 W = 2 000 000 W. (2) Kilo veut dire 10³ = 1 000 : 2 000 kW = 2 000 × 1 000 W = 2 000 000 W. (3) Les deux valent 2 000 000 W : c'est vrai. Un mégawatt vaut 1 000 kilowatts. (4) Pièges : croire que méga et kilo ne diffèrent que d'un zéro ; ou écrire 2 MW = 2 000 000 kW, en oubliant que kilo vaut déjà 1 000.
+
+*Indice.* Convertis 2 MW et 2 000 kW en watts.
+
+**EX-A032-M-02** — maitrise, qcm, 150 s
+
+La Terre est à environ 150 000 000 km du Soleil. Quelle écriture donne cette distance en mètres ?
+
+- **a.** 1,5 × 10⁸ m
+  <br>*Erreur visée :* L'élève écrit bien 150 000 000 = 1,5 × 10⁸, mais oublie la conversion : c'est la distance en kilomètres, pas en mètres.
+- **b.** 1,5 × 10¹⁰ m
+  <br>*Erreur visée :* L'élève prend pour exposant les 7 zéros de 150 000 000, puis ajoute les 3 zéros des mètres : il oublie que le 5 de 1,5 doit également changer de rang.
+- **c.** 1,5 × 10¹¹ m ✅
+- **d.** 1,5 × 10¹² m
+  <br>*Erreur visée :* L'élève prend pour exposant le nombre de chiffres de 150 000 000 (9), puis ajoute 3 pour les mètres.
+
+*Corrigé.* (1) 1 km = 1 000 m : 150 000 000 km = 150 000 000 × 1 000 m = 150 000 000 000 m. (2) 150 000 000 000 = 1,5 × 100 000 000 000, et 100 000 000 000 est un 1 suivi de 11 zéros : c'est 10¹¹. (3) La distance est 1,5 × 10¹¹ m. La bonne réponse est c. (4) Pièges : 10⁸ oublie la conversion en mètres ; 10¹⁰ compte les zéros sans faire changer de rang le 5 ; 10¹² compte les chiffres.
+
+*Indice.* Convertis d'abord en mètres, puis compte de combien de rangs il faut décaler 1,5.
+
+---
+
+## `A034` · Racine carrée d'un nombre positif — 4e, difficulté 5
+
+*Savoir que la racine carrée d'un nombre positif a, notée √a, est le nombre positif dont le carré est a (√49 = 7 car 7² = 49 et 7 est positif ; √0 = 0 ; √1 = 1), que (√a)² = a, que √a est la longueur du côté d'un carré d'aire a, et qu'un nombre négatif n'a pas de racine carrée ; donner sans calcul la racine carrée d'un carré parfait jusqu'à 144. L'erreur type est de diviser par 2 (√16 = 8) ou de donner −7 pour √49. Réponse : un nombre, jamais une racine tapée ; QCM ou vrai/faux pour les cas sans racine. Figure utile : geometrie, carré dont l'aire est écrite et le côté demandé.*
+
+> « Comprendre et connaitre la définition de la racine carrée d'un nombre positif. » — *Cycle 4, classe de 4e, Nombres et calculs, Racine carrée, Objectifs d'apprentissage*
+> « Donner les carrés des nombres entiers compris entre 0 et 12. » — *Cycle 4, classe de 4e, Nombres et calculs, Racine carrée, Automatismes*
+> « Connaitre et reconnaitre les carrés parfaits des entiers de 0 à 12. » — *Cycle 4, classe de 4e, Nombres et calculs, Puissances, Automatismes*
+> « La racine carrée est introduite, en lien avec des situations géométriques (longueur du côté d'un carré d'aire donnée, théorème de Pythagore). » — *Cycle 4, Nombres et calculs, présentation commune aux trois classes*
+
+**EX-A034-D-01** — decouverte, numerique, 30 s
+
+La racine carrée de 64, notée \sqrt{64}, est le nombre positif dont le carré vaut 64. Combien vaut \sqrt{64} ?
+
+**Réponse :** 8
+
+*Corrigé.* (1) On cherche un nombre positif qui, multiplié par lui-même, donne 64. (2) Dans la table de 8 : 8 × 8 = 64, donc 8^2 = 64. (3) 8 est positif et son carré vaut 64 : \sqrt{64} = 8. (4) Piège : 32 est la moitié de 64, pas sa racine carrée. 32 × 32 = 1 024, bien plus que 64.
+
+*Indice.* Quel nombre multiplié par lui-même donne 64 ?
+
+**EX-A034-D-02** — decouverte, qcm, 45 s
+
+Un carreau carré a une aire de 144 cm². Quelle est la longueur de son côté ?
+
+- **a.** 72 cm
+  <br>*Erreur visée :* L'élève divise l'aire par 2. Un carré de 72 cm de côté aurait une aire de 72 × 72 = 5 184 cm².
+- **b.** 36 cm
+  <br>*Erreur visée :* L'élève divise l'aire par 4, comme pour retrouver le côté à partir du périmètre. C'est le périmètre qu'on divise par 4, pas l'aire.
+- **c.** 12 cm ✅
+
+*Corrigé.* (1) L'aire d'un carré est côté × côté. On cherche donc un nombre positif dont le carré vaut 144. (2) 12 × 12 = 144, donc 12^2 = 144 et \sqrt{144} = 12. (3) Le côté du carreau mesure 12 cm : c'est la racine carrée de son aire. La bonne réponse est c. (4) Contrôle : un carré de 12 cm de côté a bien une aire de 12 × 12 = 144 cm².
+
+*Indice.* L'aire d'un carré, c'est côté × côté. Quel nombre multiplié par lui-même donne 144 ?
+
+**EX-A034-E-01** — entrainement, vrai_faux, 45 s
+
+Max affirme : « \sqrt{9} + \sqrt{16} = \sqrt{25}, puisque 9 + 16 = 25. » A-t-il raison ?
+
+**Réponse :** False
+
+*Corrigé.* (1) On calcule chaque racine carrée séparément. \sqrt{9} = 3 car 3^2 = 9, et \sqrt{16} = 4 car 4^2 = 16. (2) Le membre de gauche vaut donc 3 + 4 = 7. (3) Le membre de droite vaut \sqrt{25} = 5, car 5^2 = 25. (4) 7 n'est pas égal à 5 : Max a tort. La racine carrée d'une somme n'est pas la somme des racines carrées.
+
+*Indice.* Calcule chaque racine carrée, puis compare les deux côtés.
+
+**EX-A034-E-02** — entrainement, numerique, 45 s
+
+Un carré a un côté de \sqrt{13} cm. Quelle est son aire ?
+
+**Réponse :** 13
+
+*Corrigé.* (1) L'aire d'un carré est côté × côté : ici, \sqrt{13} × \sqrt{13}, c'est-à-dire (\sqrt{13})^2. (2) Par définition, \sqrt{13} est le nombre positif dont le carré vaut 13. Donc (\sqrt{13})^2 = 13, sans rien calculer. (3) L'aire du carré est 13 cm². (4) Piège : 13 n'est pas un carré parfait, mais la question ne demande pas de calculer \sqrt{13} : élever une racine carrée au carré redonne le nombre de départ.
+
+*Indice.* Que vaut le carré de la racine carrée d'un nombre ? Reviens à la définition.
+
+**EX-A034-M-01** — maitrise, qcm, 60 s
+
+Une seule de ces écritures ne désigne aucun nombre. Laquelle ?
+
+- **a.** \sqrt{0}
+  <br>*Erreur visée :* L'élève croit que 0 n'a pas de racine carrée. Or 0^2 = 0 et 0 n'est pas négatif : \sqrt{0} = 0.
+- **b.** \sqrt{-16} ✅
+- **c.** -\sqrt{16}
+  <br>*Erreur visée :* L'élève voit un signe moins et croit qu'il est sous la racine. Ici, on calcule d'abord \sqrt{16} = 4, puis on prend l'opposé : cette écriture désigne le nombre −4.
+- **d.** \sqrt{2}
+  <br>*Erreur visée :* L'élève croit qu'une racine carrée n'existe que pour un carré parfait. \sqrt{2} existe : c'est le côté d'un carré d'aire 2, compris entre 1 et 2 ; il n'est simplement pas entier.
+
+*Corrigé.* (1) La racine carrée d'un nombre a est le nombre positif dont le carré vaut a. Elle n'existe que si a est positif ou nul. (2) \sqrt{0} = 0, car 0^2 = 0. \sqrt{2} existe : c'est la longueur du côté d'un carré d'aire 2, même si ce n'est pas un entier. (3) -\sqrt{16} est l'opposé de \sqrt{16} = 4 : il désigne −4. Le signe moins est devant la racine, pas dessous. (4) Dans \sqrt{-16}, le nombre sous la racine est négatif. Un carré n'est jamais négatif : aucun nombre n'a pour carré −16. Cette écriture ne désigne aucun nombre. La bonne réponse est b.
+
+*Indice.* Un carré peut-il être négatif ? Regarde bien où est placé chaque signe moins.
+
+**EX-A034-M-02** — maitrise, numerique, 45 s
+
+Quel nombre a pour racine carrée 15 ?
+
+**Réponse :** 225
+
+*Corrigé.* (1) On cherche un nombre a tel que \sqrt{a} = 15. Par définition, cela veut dire que 15 est le nombre positif dont le carré vaut a. (2) Donc a est le carré de 15 : a = 15 × 15 = 225. (3) Le nombre cherché est 225 : \sqrt{225} = 15, car 15^2 = 225 et 15 est positif. (4) Piège : la racine carrée n'est pas la moitié. Répondre 30, c'est penser que 15 est la moitié du nombre cherché ; or 15 × 15 = 225, pas 30.
+
+*Indice.* Si 15 est la racine carrée du nombre cherché, que vaut le carré de 15 ?
+
+---
+
+## `A035` · Encadrer une racine carrée entre deux entiers consécutifs — 4e, difficulté 5
+
+*Encadrer la racine carrée d'un entier qui n'est pas un carré parfait par deux entiers consécutifs, en situant l'entier entre deux carrés parfaits : 25 < 30 < 36, donc 5 < √30 < 6 ; √70 est entre 8 et 9 ; dire de quel entier √a est le plus proche (√80 est proche de 9, car 80 est proche de 81). L'erreur type est d'encadrer a au lieu de √a (√30 entre 30 et 31) ou de prendre la moitié (√30 proche de 15). Réponse : un nombre (l'entier juste en dessous, puis l'entier juste au-dessus, en deux questions) ou un QCM entre encadrements. Figure : aucune (une droite graduée portant √30 donnerait la réponse).*
+
+> « Encadrer la racine carrée d'un entier par deux nombres entiers consécutifs. » — *Cycle 4, classe de 4e, Nombres et calculs, Racine carrée, Objectifs d'apprentissage*
+
+**EX-A035-D-01** — decouverte, numerique, 45 s
+
+\sqrt{20} est compris entre deux nombres entiers consécutifs. Quel est le plus petit de ces deux entiers ?
+
+**Réponse :** 4
+
+*Corrigé.* (1) On situe 20 entre deux carrés parfaits qui se suivent : 4^2 = 16 et 5^2 = 25, donc 16 < 20 < 25. (2) Plus un nombre positif est grand, plus sa racine carrée est grande. Donc \sqrt{16} < \sqrt{20} < \sqrt{25}, c'est-à-dire 4 < \sqrt{20} < 5. (3) Le plus petit des deux entiers est 4. (4) Piège : encadrer 20 entre 20 et 21, ou prendre sa moitié 10, ne dit rien de sa racine carrée : 10 × 10 = 100, bien plus que 20.
+
+*Indice.* Entre quels carrés parfaits se trouve 20 ?
+
+**EX-A035-D-02** — decouverte, qcm, 45 s
+
+Entre quels entiers consécutifs se trouve \sqrt{60} ?
+
+- **a.** 30 et 31
+  <br>*Erreur visée :* L'élève confond la racine carrée et la moitié : 60 ÷ 2 = 30. Or 30 × 30 = 900, bien plus que 60.
+- **b.** 6 et 7
+  <br>*Erreur visée :* L'élève se fie au premier chiffre de 60. Mais 7^2 = 49 est plus petit que 60 : \sqrt{60} est plus grand que 7.
+- **c.** 60 et 61
+  <br>*Erreur visée :* L'élève encadre 60 au lieu d'encadrer sa racine carrée.
+- **d.** 7 et 8 ✅
+
+*Corrigé.* (1) On cherche les deux carrés parfaits consécutifs qui entourent 60 : 7^2 = 49 et 8^2 = 64. (2) 49 < 60 < 64, donc \sqrt{49} < \sqrt{60} < \sqrt{64}, c'est-à-dire 7 < \sqrt{60} < 8. (3) \sqrt{60} se trouve entre 7 et 8. La bonne réponse est d.
+
+*Indice.* Récite les carrés : 36, 49, 64… Entre lesquels se place 60 ?
+
+**EX-A035-E-01** — entrainement, numerique, 45 s
+
+Quel est l'entier juste au-dessus de \sqrt{95} ?
+
+**Réponse :** 10
+
+*Corrigé.* (1) On situe 95 entre deux carrés parfaits consécutifs : 9^2 = 81 et 10^2 = 100, donc 81 < 95 < 100. (2) On en déduit 9 < \sqrt{95} < 10. (3) L'entier juste au-dessus de \sqrt{95} est 10. (4) Piège : 95 ÷ 2 = 47,5 n'a rien à voir avec la racine carrée, et 96 est l'entier juste au-dessus de 95, pas de \sqrt{95}.
+
+*Indice.* Quel est le premier carré parfait plus grand que 95 ?
+
+**EX-A035-E-02** — entrainement, vrai_faux, 45 s
+
+Sans calculatrice : \sqrt{50} est plus proche de 7 que de 8. Vrai ou faux ?
+
+**Réponse :** True
+
+*Corrigé.* (1) On encadre 50 par deux carrés parfaits consécutifs : 7^2 = 49 et 8^2 = 64. Donc 7 < \sqrt{50} < 8. (2) 50 est tout près de 49 (1 de plus) et loin de 64 (14 de moins). \sqrt{50} est donc à peine plus grand que \sqrt{49} = 7. (3) C'est vrai : \sqrt{50} est plus proche de 7 que de 8. La calculatrice le confirme : \sqrt{50} \approx 7{,}07.
+
+*Indice.* 50 est-il plus proche de 7^2 ou de 8^2 ?
+
+**EX-A035-M-01** — maitrise, numerique, 60 s
+
+Sans calculatrice, quel est l'entier le plus proche de \sqrt{140} ?
+
+**Réponse :** 12
+
+*Corrigé.* (1) On encadre 140 par deux carrés parfaits consécutifs : 11^2 = 121 et 12^2 = 144. Donc 11 < \sqrt{140} < 12. (2) 140 est à 4 de 144 et à 19 de 121 : il est bien plus proche de 144. (3) \sqrt{140} est donc juste en dessous de \sqrt{144} = 12. L'entier le plus proche est 12. (4) Piège : 11 est l'entier juste en dessous de \sqrt{140}, mais ce n'est pas le plus proche. La calculatrice donne \sqrt{140} \approx 11{,}8.
+
+*Indice.* Encadre d'abord 140 entre deux carrés parfaits, puis regarde duquel il est le plus proche.
+
+**EX-A035-M-02** — maitrise, qcm, 60 s
+
+On sait que \sqrt{n} est compris entre 8 et 9. Quelle valeur le nombre n peut-il prendre ?
+
+- **a.** 75 ✅
+- **b.** 17
+  <br>*Erreur visée :* L'élève additionne les deux bornes : 8 + 9 = 17. Mais \sqrt{17} est entre 4 et 5, car 16 < 17 < 25.
+- **c.** 8,5
+  <br>*Erreur visée :* L'élève place n entre 8 et 9, au lieu d'y placer \sqrt{n}. Or \sqrt{8{,}5} est entre 2 et 3.
+- **d.** 85
+  <br>*Erreur visée :* L'élève cherche un nombre « entre 80 et 90 » sans le comparer aux carrés. Or 9^2 = 81 et 85 > 81 : \sqrt{85} est plus grand que 9.
+
+*Corrigé.* (1) Si 8 < \sqrt{n} < 9, alors en élevant au carré : 8^2 < n < 9^2, c'est-à-dire 64 < n < 81. (2) 75 est entre 64 et 81 : il convient. 17 et 8,5 sont plus petits que 64, et 85 est plus grand que 81. (3) La bonne réponse est a : \sqrt{75} est bien compris entre 8 et 9.
+
+*Indice.* Quels sont les carrés de 8 et de 9 ?
+
+---
+
+## `B022` · Multiplier des puissances d'un même nombre — 4e, difficulté 5
+
+*Calculer le produit de deux puissances d'un même nombre en revenant à la définition : 2³ × 2⁴ = (2 × 2 × 2) × (2 × 2 × 2 × 2) = 2⁷, donc aᵐ × aⁿ = aᵐ⁺ⁿ, que l'élève retrouve plutôt qu'il ne récite ; avec des puissances de 10 (10⁵ × 10³ = 10⁸) et des bases négatives ((−3)² × (−3) = (−3)³). L'erreur type est de multiplier les exposants (2³ × 2⁴ = 2¹²) ou les bases (2³ × 2⁴ = 4⁷). Réponse : l'exposant du résultat (un nombre) ou sa valeur ; QCM entre écritures. Figure : aucune.*
+
+> « Multiplier des puissances d'exposant entier naturel d'un même nombre entre elles. » — *Cycle 4, classe de 4e, Nombres et calculs, Puissances, Objectifs d'apprentissage*
+
+**EX-B022-D-01** — decouverte, numerique, 60 s
+
+On écrit 3² × 3⁵ = (3 × 3) × (3 × 3 × 3 × 3 × 3) = 3ⁿ. Que vaut n ?
+
+**Réponse :** 7
+
+*Corrigé.* (1) 3² est un produit de 2 facteurs égaux à 3, et 3⁵ un produit de 5 facteurs égaux à 3. (2) Mis bout à bout, cela fait 2 + 5 = 7 facteurs égaux à 3 : 3² × 3⁵ = 3⁷. (3) n = 7. Pour multiplier deux puissances d'un même nombre, on ajoute les exposants : ils comptent les facteurs. (4) Piège : multiplier les exposants (2 × 5 = 10) ne compte pas les facteurs.
+
+*Indice.* Compte les facteurs 3 dans l'écriture développée.
+
+**EX-B022-D-02** — decouverte, qcm, 60 s
+
+Quelle écriture est égale à 7³ × 7⁵ ?
+
+- **a.** 7¹⁵
+  <br>*Erreur visée :* L'élève multiplie les exposants (3 × 5 = 15). Or on compte les facteurs : 3 facteurs 7, puis 5 facteurs 7, soit 8 facteurs.
+- **b.** 49⁸
+  <br>*Erreur visée :* L'élève ajoute bien les exposants, mais multiplie en plus les nombres 7 entre eux (7 × 7 = 49). Or le nombre répété reste 7.
+- **c.** 7⁸ ✅
+
+*Corrigé.* (1) 7³ × 7⁵ = (7 × 7 × 7) × (7 × 7 × 7 × 7 × 7). (2) Il y a 3 + 5 = 8 facteurs égaux à 7 : 7³ × 7⁵ = 7⁸. La bonne réponse est c. (3) Pièges : 7¹⁵ multiplie les exposants ; 49⁸ multiplie en plus les nombres 7, qui sont déjà comptés dans les facteurs.
+
+*Indice.* Écris les deux puissances sous forme de produits, puis compte les facteurs 7.
+
+**EX-B022-E-01** — entrainement, numerique, 90 s
+
+Une galaxie compte environ 10¹¹ étoiles, et l'Univers observable environ 10¹² galaxies. Le nombre total d'étoiles s'écrit 10ⁿ. Que vaut n ?
+
+**Réponse :** 23
+
+*Corrigé.* (1) Il y a 10¹² galaxies de 10¹¹ étoiles chacune : le nombre d'étoiles est le produit 10¹¹ × 10¹². (2) 10¹¹ est un produit de 11 facteurs 10, et 10¹² un produit de 12 facteurs 10 : en tout, 11 + 12 = 23 facteurs. (3) 10¹¹ × 10¹² = 10²³, donc n = 23. (4) Pièges : 11 × 12 = 132 multiplie les exposants ; 100²³ multiplie en plus les nombres 10 entre eux.
+
+*Indice.* Chaque galaxie apporte 10¹¹ étoiles : quelle opération faut-il faire ?
+
+**EX-B022-E-02** — entrainement, numerique, 120 s
+
+Calcule (−2)³ × (−2)⁴ et donne la valeur du résultat.
+
+**Réponse :** -128
+
+*Corrigé.* (1) (−2)³ × (−2)⁴ compte 3 + 4 = 7 facteurs égaux à −2 : c'est (−2)⁷. (2) On calcule : (−2)² = 4 ; (−2)⁴ = 4 × 4 = 16 ; (−2)⁶ = 16 × 4 = 64 ; (−2)⁷ = 64 × (−2) = −128. (3) Le résultat vaut −128. Contrôle : (−2)³ = −8, (−2)⁴ = 16, et (−8) × 16 = −128. (4) Pièges : 128 oublie le signe ; multiplier les exposants donne (−2)¹² = 4 096.
+
+*Indice.* Regroupe d'abord en une seule puissance de −2.
+
+**EX-B022-M-01** — maitrise, vrai_faux, 90 s
+
+Vrai ou faux : 2³ × 3² = 6⁵.
+
+**Réponse :** False
+
+*Corrigé.* (1) 2³ × 3² = 8 × 9 = 72. (2) 6⁵ = 6 × 6 × 6 × 6 × 6 = 7 776. (3) 72 n'est pas égal à 7 776 : l'égalité est fausse. (4) On n'ajoute les exposants que pour des puissances d'un même nombre, comme 2³ × 2² = 2⁵. Ici, les nombres 2 et 3 sont différents.
+
+*Indice.* Calcule les deux membres.
+
+**EX-B022-M-02** — maitrise, numerique, 120 s
+
+Trouve n pour que 6ⁿ × 6 × 6³ = 6¹⁰.
+
+**Réponse :** 6
+
+*Corrigé.* (1) Le 6 tout seul est un facteur 6 : il s'écrit 6¹. (2) Sans 6ⁿ, il y a déjà 1 + 3 = 4 facteurs égaux à 6. Il en faut 10 en tout : il en manque 10 − 4 = 6. (3) Donc n = 6. Vérification : 6⁶ × 6¹ × 6³ compte 6 + 1 + 3 = 10 facteurs, c'est 6¹⁰. (4) Piège : oublier le facteur 6 tout seul donne 10 − 3 = 7.
+
+*Indice.* Combien de facteurs 6 y a-t-il déjà, sans compter 6ⁿ ?
+
+---
+
+## `A033` · Problèmes faisant intervenir des puissances — 4e, difficulté 5
+
+*Résoudre un problème où une puissance modélise un produit itéré : un dénombrement répété (codes de 4 chiffres : 10⁴ = 10 000 ; chemins dans un arbre à trois étages de 2 branches : 2³ = 8), un doublement répété (une population de bactéries double chaque heure : 2⁶ = 64 fois plus après 6 h), une aire ou un volume (un cube de 10 cm d'arête a un volume de 10³ = 1 000 cm³), un grand nombre exprimé avec une puissance de 10 (une année-lumière vaut environ 9,5 × 10¹² km). L'erreur type est de multiplier par le nombre d'étapes au lieu d'élever à sa puissance (2 × 6 = 12 au lieu de 2⁶). Réponse : un nombre ou un exposant. Figure : aucune.*
+
+> « Résoudre des problèmes faisant intervenir des puissances. » — *Cycle 4, classe de 4e, Nombres et calculs, Puissances, Objectifs d'apprentissage*
+> « L'apprentissage des puissances se fonde sur des situations mathématiques illustrant, par exemple, un produit itéré, comme le comptage de situations répétitives, etc. » — *Cycle 4, Nombres et calculs, présentation commune aux trois classes*
+
+**EX-A033-D-01** — decouverte, numerique, 75 s
+
+On fait 7 lancers de pièce à la suite et on note la suite des résultats. Chaque lancer donne pile ou face. Combien de suites différentes peut-on obtenir ?
+
+**Réponse :** 128
+
+*Corrigé.* (1) Au premier lancer, il y a 2 résultats possibles. Pour chacun d'eux, le deuxième lancer en donne encore 2 : cela fait 2 × 2 = 4 suites de deux lancers. (2) Chaque nouveau lancer multiplie le nombre de suites par 2. Pour 7 lancers, on multiplie 7 facteurs égaux à 2 : 2 × 2 × 2 × 2 × 2 × 2 × 2 = 2^{7}. (3) 2^{7} = 128. On peut obtenir 128 suites différentes. (4) Piège : répondre 2 × 7 = 14, c'est ajouter 2 suites à chaque lancer au lieu de doubler leur nombre.
+
+*Indice.* Combien de suites pour 1 lancer ? pour 2 lancers ? pour 3 lancers ?
+
+**EX-A033-D-02** — decouverte, qcm, 45 s
+
+Le nombre de bactéries d'une culture est multiplié par 3 chaque heure. Par combien est-il multiplié au bout de 4 heures ?
+
+- **a.** 12
+  <br>*Erreur visée :* L'élève multiplie le facteur par le nombre d'heures : 3 × 4 = 12. Or chaque heure multiplie par 3 le nombre déjà obtenu : il faut 3 × 3 × 3 × 3.
+- **b.** 81 ✅
+- **c.** 64
+  <br>*Erreur visée :* L'élève inverse la base et l'exposant : il calcule 4^{3} = 64 au lieu de 3^{4}.
+- **d.** 27
+  <br>*Erreur visée :* L'élève compte une multiplication de moins : 3^{3} = 27 correspond à 3 heures. Au bout de 4 heures, il y a eu 4 multiplications par 3.
+
+*Corrigé.* (1) Après 1 heure, le nombre est multiplié par 3. Après 2 heures, il a subi deux multiplications par 3 : il est multiplié par 3 × 3 = 9 en tout. (2) Au bout de 4 heures, il y a eu 4 multiplications par 3 : 3 × 3 × 3 × 3 = 3^{4}. (3) 3^{4} = 81. Le nombre de bactéries est multiplié par 81. La bonne réponse est b.
+
+*Indice.* Par combien est-il multiplié au bout de 2 heures ?
+
+**EX-A033-E-01** — entrainement, numerique, 90 s
+
+Combien de petits cubes de 1 cm d'arête faut-il pour remplir une caisse en forme de cube de 1 m d'arête ?
+
+**Réponse :** 1000000
+
+*Corrigé.* (1) On met les longueurs dans la même unité : 1 m = 100 cm. La caisse est un cube de 100 cm d'arête. (2) Sur une arête, on aligne 100 petits cubes. Une couche au fond de la caisse en contient 100 × 100 = 10 000. (3) Il faut 100 couches pour remplir la hauteur : 100 × 100 × 100 = 100^{3} petits cubes. (4) 100^{3} = 1 000 000 : il faut un million de petits cubes. Le volume de la caisse est 1 000 000 cm³. (5) Piège : 100 cubes ne remplissent qu'une rangée, et 10 000 qu'une couche.
+
+*Indice.* Combien de centimètres mesure l'arête de la caisse ? Combien de petits cubes tiennent dans une couche ?
+
+**EX-A033-E-02** — entrainement, numerique, 60 s
+
+Une plateforme héberge 10^{4} films de 1 Go chacun. Un gigaoctet vaut 10^{9} octets. La place occupée par ces films s'écrit 10^{n} octets. Que vaut n ?
+
+**Réponse :** 13
+
+*Corrigé.* (1) La place totale est le nombre de films multiplié par la taille d'un film : 10^{4} × 10^{9} octets. (2) 10^{4} est un produit de 4 facteurs 10, et 10^{9} un produit de 9 facteurs 10. Ensemble, cela fait 4 + 9 = 13 facteurs 10. (3) Donc 10^{4} × 10^{9} = 10^{13} : on additionne les exposants. n = 13. (4) Piège : multiplier les exposants (4 × 9 = 36) reviendrait à compter 36 facteurs 10 alors qu'il n'y en a que 13.
+
+*Indice.* Combien de facteurs 10 y a-t-il dans chacune des deux puissances ?
+
+**EX-A033-M-01** — maitrise, numerique, 90 s
+
+Un tournoi d'échecs à élimination directe réunit 256 joueurs. À chaque tour, les joueurs s'affrontent deux par deux et chaque perdant est éliminé. Combien de tours faut-il pour désigner le vainqueur ?
+
+**Réponse :** 8
+
+*Corrigé.* (1) À chaque tour, la moitié des joueurs est éliminée : le nombre de joueurs est divisé par 2. (2) On fait le chemin à l'envers : en partant du vainqueur seul, chaque tour remonté double le nombre de joueurs. Après n tours remontés, il y a 2^{n} joueurs. (3) On cherche n tel que 2^{n} = 256 : 2^{7} = 128 et 2^{8} = 256. Donc n = 8. (4) Vérification : 256 → 128 → 64 → 32 → 16 → 8 → 4 → 2 → 1, soit 8 tours.
+
+*Indice.* Combien reste-t-il de joueurs après le premier tour ? après le deuxième ?
+
+**EX-A033-M-02** — maitrise, qcm, 90 s
+
+La lumière parcourt environ 3 × 10^{5} km par seconde. Une année dure environ 3 × 10^{7} secondes. Quelle distance la lumière parcourt-elle en une année ?
+
+- **a.** 6 × 10^{12} km
+  <br>*Erreur visée :* L'élève additionne les facteurs 3 et 3 au lieu de les multiplier. Le calcul est un produit : 3 × 3 = 9.
+- **b.** 9 × 10^{35} km
+  <br>*Erreur visée :* L'élève multiplie les exposants (5 × 7 = 35). Or 10^{5} × 10^{7} contient 5 + 7 = 12 facteurs 10.
+- **c.** 9 × 10^{12} km ✅
+- **d.** 3 × 10^{12} km
+  <br>*Erreur visée :* L'élève multiplie les puissances de 10 mais oublie de multiplier les facteurs 3 entre eux : il n'en garde qu'un.
+
+*Corrigé.* (1) Distance = vitesse × durée : (3 × 10^{5}) × (3 × 10^{7}) km. (2) Dans un produit, on peut regrouper les facteurs : (3 × 3) × (10^{5} × 10^{7}). (3) 3 × 3 = 9, et 10^{5} × 10^{7} = 10^{12}, car 5 facteurs 10 suivis de 7 facteurs 10 font 12 facteurs 10. (4) La lumière parcourt environ 9 × 10^{12} km en une année, soit 9 000 milliards de kilomètres. La bonne réponse est c.
+
+*Indice.* Regroupe les deux facteurs 3 d'un côté, les deux puissances de 10 de l'autre.
+
+---
+
 ## `B050` · Diviser deux décimaux relatifs — 4e, difficulté 5
 
 *Calculer le quotient de deux nombres relatifs quand il est décimal, avec la même règle des signes que pour le produit : (−36) ÷ (−9) = 4 ; (−7,5) ÷ 3 = −2,5 ; savoir que diviser, c'est trouver le facteur manquant d'une multiplication à trou ((−4) × ... = 20 se complète par 20 ÷ (−4) = −5), et qu'on ne divise jamais par zéro. Diviseur entier, pour rester dans ce que l'élève sait poser ; les quotients non décimaux et l'écriture fractionnaire des relatifs sont à l'étape 6. Figure : aucune.*
@@ -13194,6 +14143,86 @@ Quelle phrase décrit l'expression (-6) + 18 ÷ (-3) ?
 
 ---
 
+## `B053` · Multiplier des puissances de même exposant — 4e, difficulté 5
+
+*Calculer le produit de deux puissances de même exposant de deux nombres en revenant à la définition : 2³ × 5³ = (2 × 5) × (2 × 5) × (2 × 5) = 10³, donc aⁿ × bⁿ = (a × b)ⁿ ; s'en servir pour calculer mentalement (4² × 25² = 100² = 10 000 ; 0,5⁴ × 2⁴ = 1). L'erreur type est d'additionner les exposants (2³ × 5³ = 10⁶) ou de confondre avec le produit de puissances d'un même nombre. Réponse : un nombre (la valeur, la base ou l'exposant du résultat) ; QCM entre écritures. Figure : aucune.*
+
+> « Multiplier des puissances d'un même exposant entier naturel de deux nombres entre elles. » — *Cycle 4, classe de 4e, Nombres et calculs, Puissances, Objectifs d'apprentissage*
+
+**EX-B053-D-01** — decouverte, numerique, 60 s
+
+On veut calculer 2^{4} × 5^{4} sans calculatrice. On écrit : 2^{4} × 5^{4} = (2 × 2 × 2 × 2) × (5 × 5 × 5 × 5) Regroupe chaque 2 avec un 5. Combien vaut ce produit ?
+
+**Réponse :** 10000
+
+*Corrigé.* (1) Dans un produit, on peut changer l'ordre des facteurs et les regrouper comme on veut : le résultat ne change pas. (2) On forme quatre paires « un 2 et un 5 » : (2 × 5) × (2 × 5) × (2 × 5) × (2 × 5). (3) Chaque paire vaut 2 × 5 = 10 : il reste 10 × 10 × 10 × 10, c'est-à-dire 10^{4}. (4) 10^{4} = 10 000. Donc 2^{4} × 5^{4} = 10^{4} = 10 000 : on a multiplié les bases, 2 × 5 = 10, et gardé l'exposant 4. (5) Contrôle : 2^{4} = 16 et 5^{4} = 625, et 16 × 625 = 10 000.
+
+*Indice.* Combien vaut le produit d'un 2 et d'un 5 ? Combien de paires peux-tu former ?
+
+**EX-B053-D-02** — decouverte, qcm, 45 s
+
+Quelle écriture est égale à 3^{3} × 4^{3} ?
+
+- **a.** 7^{3}
+  <br>*Erreur visée :* L'élève additionne les bases au lieu de les multiplier : 3 + 4 = 7. Or 3^{3} × 4^{3} est un produit de six facteurs, qui se regroupent en trois paires 3 × 4 = 12, pas 7.
+- **b.** 12^{6}
+  <br>*Erreur visée :* L'élève multiplie bien les bases, mais additionne aussi les exposants (3 + 3 = 6). Or les six facteurs forment trois paires 3 × 4 : on obtient trois facteurs 12, donc l'exposant reste 3.
+- **c.** 12^{3} ✅
+- **d.** 12^{9}
+  <br>*Erreur visée :* L'élève multiplie les bases et multiplie aussi les exposants (3 × 3 = 9). Le produit ne contient pourtant que six facteurs, regroupés en trois paires.
+
+*Corrigé.* (1) On revient à la définition : 3^{3} × 4^{3} = (3 × 3 × 3) × (4 × 4 × 4). (2) On regroupe chaque 3 avec un 4 : (3 × 4) × (3 × 4) × (3 × 4) = 12 × 12 × 12. (3) Trois facteurs égaux à 12 : c'est 12^{3}. On multiplie les bases et on garde l'exposant commun. (4) Contrôle : 3^{3} × 4^{3} = 27 × 64 = 1 728 et 12^{3} = 1 728. La bonne réponse est c.
+
+*Indice.* Écris chaque puissance comme un produit, puis regroupe un 3 avec un 4.
+
+**EX-B053-E-01** — entrainement, numerique, 75 s
+
+Calcule 25^{3} × 4^{3} sans calculatrice.
+
+**Réponse :** 1000000
+
+*Corrigé.* (1) Calculer 25^{3} puis 4^{3} séparément serait long. Les deux puissances ont le même exposant 3 : on peut regrouper les facteurs deux par deux. (2) 25^{3} × 4^{3} = (25 × 25 × 25) × (4 × 4 × 4) = (25 × 4) × (25 × 4) × (25 × 4). (3) 25 × 4 = 100, donc le produit vaut 100 × 100 × 100 = 100^{3}. (4) 100^{3} = 1 000 000 (un million). (5) Contrôle : 25^{3} = 15 625 et 4^{3} = 64 ; 15 625 × 64 = 1 000 000.
+
+*Indice.* Combien vaut 25 × 4 ?
+
+**EX-B053-E-02** — entrainement, vrai_faux, 60 s
+
+Léa écrit : « 2^{3} × 7^{3} = 14^{6}, car 2 × 7 = 14 et 3 + 3 = 6. » A-t-elle raison ?
+
+**Réponse :** False
+
+*Corrigé.* (1) On revient à la définition : 2^{3} × 7^{3} = (2 × 2 × 2) × (7 × 7 × 7). Ce produit contient six facteurs. (2) On regroupe chaque 2 avec un 7 : (2 × 7) × (2 × 7) × (2 × 7) = 14 × 14 × 14 = 14^{3}. (3) Les six facteurs ne donnent que trois facteurs 14 : l'exposant reste 3. Léa a raison de multiplier les bases, mais elle a tort d'additionner les exposants. (4) Donc 2^{3} × 7^{3} = 14^{3}, et non 14^{6}. Léa a tort.
+
+*Indice.* Écris les six facteurs, puis regroupe-les par paires : combien de facteurs 14 obtiens-tu ?
+
+**EX-B053-M-01** — maitrise, numerique, 90 s
+
+Calcule 0{,}25^{3} × 8^{3} sans calculatrice.
+
+**Réponse :** 8
+
+*Corrigé.* (1) Calculer 0{,}25^{3} directement donne un nombre à six décimales. Les deux puissances ont le même exposant 3 : on regroupe plutôt les facteurs par paires. (2) 0{,}25^{3} × 8^{3} = (0{,}25 × 8) × (0{,}25 × 8) × (0{,}25 × 8) = (0{,}25 × 8)^{3}. (3) 0{,}25 × 8 = 2 (un quart de 8). Le produit vaut donc 2^{3} = 2 × 2 × 2 = 8. (4) Contrôle : 0{,}25^{3} = 0{,}015625 et 8^{3} = 512 ; 0{,}015625 × 512 = 8.
+
+*Indice.* Quel nombre obtiens-tu en multipliant 0,25 par 8 ?
+
+**EX-B053-M-02** — maitrise, qcm, 90 s
+
+Les exposants de 2^{5} × 3^{4} ne sont pas égaux. Quelle écriture est pourtant égale à ce produit ?
+
+- **a.** 6^{9}
+  <br>*Erreur visée :* L'élève multiplie les bases et additionne les exposants (5 + 4 = 9), comme s'il y avait neuf facteurs 6. Or on ne peut former que quatre paires 2 × 3.
+- **b.** 2 × 6^{4} ✅
+- **c.** 6^{5}
+  <br>*Erreur visée :* L'élève multiplie les bases et garde le plus grand exposant, comme s'il y avait cinq facteurs 3. Il n'y en a que quatre : un facteur 2 reste sans partenaire.
+- **d.** 6^{20}
+  <br>*Erreur visée :* L'élève multiplie les bases et multiplie aussi les exposants (5 × 4 = 20). Le produit ne contient pourtant que neuf facteurs.
+
+*Corrigé.* (1) On revient à la définition : 2^{5} compte cinq facteurs 2, et 3^{4} compte quatre facteurs 3. (2) On forme autant de paires 2 × 3 = 6 que possible : quatre paires, qui donnent 6^{4}. Il reste un facteur 2 tout seul. (3) Donc 2^{5} × 3^{4} = 2 × (2 × 3)^{4} = 2 × 6^{4}. La règle « on multiplie les bases » ne s'applique qu'aux facteurs qui ont un partenaire. (4) Contrôle : 2^{5} × 3^{4} = 32 × 81 = 2 592 et 2 × 6^{4} = 2 × 1 296 = 2 592. La bonne réponse est b.
+
+*Indice.* Combien de paires « un 2 et un 3 » peux-tu former ? Que reste-t-il ?
+
+---
+
 ## `C007` · Simplification de fraction — 4e, difficulté 5
 
 *Simplifier une fraction par un facteur commun au numérateur et au dénominateur*
@@ -13274,6 +14303,537 @@ Laquelle de ces égalités, écrites pour simplifier 18/27, est juste ?
 *Corrigé.* (1) Simplifier, c'est diviser le numérateur et le dénominateur par le même nombre. On vérifie chaque égalité avec cette règle. (2) 18 et 27 sont dans la table de 3 : 18 ÷ 3 = 6 et 27 ÷ 3 = 9. Donc 18/27 = 6/9 : l'égalité d est juste. (3) Égalité a : 18 a été divisé par 2, mais 27 par 3. Deux diviseurs différents changent la valeur : 9/9 = 1. (4) Égalité b : on a barré des chiffres. Cela ne correspond à aucune division, et 8/7 est plus grand que 1. (5) Égalité c : on a retiré 3 en haut et en bas. Une soustraction ne garde pas la valeur : 15/24 = 5/8. (6) Remarque : 6/9 se simplifie encore par 3 en 2/3. L'égalité d est juste quand même : on peut simplifier en plusieurs fois.
 
 *Indice.* Pour chaque égalité, demande-toi : a-t-on divisé le haut et le bas par le même nombre ?
+
+---
+
+## `C034` · Nombres rationnels : quotients de relatifs et opposé — 4e, difficulté 5
+
+*Savoir qu'un nombre rationnel est le quotient de deux entiers relatifs, et écrire un quotient de relatifs sous forme fractionnaire avec la règle des signes : (−3)/4 = 3/(−4) = −3/4 ; (−6)/(−8) = 6/8 ; exprimer l'opposé d'un nombre rationnel (l'opposé de 2/5 est −2/5, celui de −7/3 est 7/3) ; lire ou placer sur une droite graduée un rationnel négatif simple (−3/4, −5/2) ; reconnaître qu'un décimal relatif est rationnel (−0,25 = −1/4) et qu'un rationnel n'est pas toujours décimal (1/3). L'erreur type est de croire que −3/4 et 3/(−4) sont opposés, ou que (−6)/(−8) est négatif. Réponse : une fraction tapée avec son signe, devant le numérateur ou le dénominateur, signe moins typographique ou trait d'union du clavier, ou un QCM entre écritures. Figure utile : droite_graduee au format fraction, points lettrés sur des quarts ou des tiers négatifs.*
+
+> « Définir la notion de nombre rationnel : le quotient de deux nombres entiers relatifs. » — *Cycle 4, classe de 4e, Nombres et calculs, Nombres rationnels, Objectifs d'apprentissage*
+> « Exprimer l'opposé d'un nombre rationnel. » — *Cycle 4, classe de 4e, Nombres et calculs, Nombres rationnels, Objectifs d'apprentissage*
+> « La conception du nombre fraction abordée au cycle 3 est étendue aux nombres relatifs en écriture fractionnaire » — *Cycle 4, Nombres et calculs, présentation commune aux trois classes*
+
+**EX-C034-D-01** — decouverte, vrai_faux, 60 s
+
+La nuit, la température baisse régulièrement de 5 °C en 3 heures. Sa variation par heure est (-5) ÷ 3. Vrai ou faux : cette variation est égale à -5/3 °C par heure.
+
+**Réponse :** True
+
+*Corrigé.* (1) Un quotient de deux entiers relatifs s'écrit comme une fraction : (-5) ÷ 3 = -5/3. (2) Un négatif divisé par un positif donne un négatif : -5/3 = -5/3. La phrase est vraie. (3) Ce nombre n'est pas décimal : la division de 5 par 3 donne 1,666… sans jamais s'arrêter. L'écriture fractionnaire est la seule écriture exacte : c'est un nombre rationnel. (4) Contrôle : en 3 heures, 3 × -5/3 = -5 : la température a bien baissé de 5 °C.
+
+*Indice.* Une fraction est un quotient : comment écrire (-5) ÷ 3 avec une barre de fraction ?
+
+**EX-C034-D-02** — decouverte, qcm, 60 s
+
+Le quotient de −9 par −4 est un nombre rationnel. Quelle écriture lui est égale ?
+
+- **a.** 9/4 ✅
+- **b.** 9/-4
+  <br>*Erreur visée :* L'élève supprime un seul des deux signes moins. Or 9/-4 est négatif, alors que le quotient de deux nombres négatifs est positif.
+- **c.** -9/4
+  <br>*Erreur visée :* L'élève applique la règle de l'addition, « deux négatifs donnent un négatif ». Pour un quotient comme pour un produit, deux nombres de même signe donnent un résultat positif.
+
+*Corrigé.* (1) Le quotient de −9 par −4 s'écrit -9/-4. (2) Règle des signes : le quotient de deux nombres négatifs est positif, comme (-36) ÷ (-9) = 4. (3) Donc -9/-4 = 9/4. Contrôle : 9/4 = 2{,}25 et (-4) × 2{,}25 = -9. (4) 9/-4 et -9/4 sont égaux entre eux, et négatifs tous les deux : c'est l'opposé de la bonne réponse.
+
+*Indice.* Quel est le signe du quotient de deux nombres négatifs ?
+
+**EX-C034-E-01** — entrainement, texte, 75 s
+
+La droite est graduée régulièrement. Quel nombre repère le point A ? Écris-le sous la forme numérateur/dénominateur, avec son signe.
+
+**Réponse :** −4/3
+
+*Corrigé.* (1) Entre 0 et 1, l'unité est partagée en 3 petits intervalles égaux : chacun vaut 1/3. (2) Le point A est à gauche de 0 : le nombre qui le repère est négatif. (3) De 0 jusqu'à A, on compte 4 petits intervalles : A est à 4/3 de 0, du côté des négatifs. Il est repéré par -4/3. (4) Contrôle : -4/3 = -1 - 1/3, entre −2 et −1, juste à gauche de −1 : c'est bien là qu'est A.
+
+*Indice.* Compte les petits intervalles de 0 jusqu'à A. Combien vaut chacun ?
+
+**EX-C034-E-02** — entrainement, texte, 60 s
+
+Le nombre décimal −0,6 est aussi un nombre rationnel. Écris-le sous la forme d'une fraction, numérateur/dénominateur, avec son signe.
+
+**Réponse :** −6/10
+
+*Corrigé.* (1) 0,6 se lit « six dixièmes » : 0{,}6 = 6/10. (2) −0,6 est l'opposé de 0,6 : -0{,}6 = -6/10, le quotient des entiers relatifs −6 et 10. (3) Toute fraction égale convient aussi, par exemple -3/5, en divisant 6 et 10 par 2. (4) Contrôle : (-6) ÷ 10 = -0{,}6.
+
+*Indice.* Comment lit-on 0,6 ? Combien de dixièmes ?
+
+**EX-C034-M-01** — maitrise, qcm, 120 s
+
+Lequel de ces nombres rationnels n'est pas un nombre décimal ?
+
+- **a.** 3/-8
+  <br>*Erreur visée :* L'élève croit qu'une fraction dont le dénominateur n'est pas 10, 100 ou 1 000 n'est pas décimale. Pourtant la division de 3 par 8 s'arrête : 3/-8 = -0{,}375.
+- **b.** -9/-6
+  <br>*Erreur visée :* L'élève voit le dénominateur 6, de la table de 3, et pense au tiers, qui n'est pas décimal. Mais la division de 9 par 6 s'arrête : -9/-6 = 1{,}5.
+- **c.** -14/6 ✅
+
+*Corrigé.* (1) Un nombre rationnel est décimal quand la division du numérateur par le dénominateur s'arrête. On pose les trois divisions, en laissant les signes de côté. (2) 3 ÷ 8 = 0{,}375 : la division s'arrête, donc 3/-8 = -0{,}375 est décimal. (3) 9 ÷ 6 = 1{,}5 : la division s'arrête, donc -9/-6 = 1{,}5 est décimal. (4) 14 ÷ 6 donne 2,333… : le reste 2 revient sans fin, la division ne s'arrête jamais. -14/6 n'est pas un nombre décimal.
+
+*Indice.* Pose les trois divisions : lesquelles s'arrêtent ?
+
+**EX-C034-M-02** — maitrise, texte, 90 s
+
+Quel est l'opposé de 3/-7 ? Écris-le sous la forme numérateur/dénominateur, avec un dénominateur positif.
+
+**Réponse :** 3/7
+
+*Corrigé.* (1) D'abord le signe de 3/-7 : un positif divisé par un négatif donne un négatif, donc 3/-7 = -3/7. (2) L'opposé d'un nombre négatif est positif : l'opposé de -3/7 est 3/7. (3) Contrôle : un nombre et son opposé ont pour somme 0, et -3/7 + 3/7 = 0. (4) Le piège : répondre -3/7 en ajoutant un signe moins devant. Mais -3/7 est égal à 3/-7 : c'est le même nombre, pas son opposé.
+
+*Indice.* Quel est le signe de 3/-7 ? Et celui de son opposé ?
+
+---
+
+## `C015` · Multiplier des nombres rationnels — 4e, difficulté 5
+
+*Calculer le produit de deux ou trois fractions, positives ou négatives, en multipliant les numérateurs entre eux et les dénominateurs entre eux (2/3 × 5/7 = 10/21), avec la règle des signes (−3/4 × 2/5 = −6/20), un entier vu comme une fraction (6 × 2/9 = 12/9), et en simplifiant avant ou après le calcul quand c'est possible (4/9 × 3/8 = 12/72 = 1/6). L'erreur type est de réduire au même dénominateur avant de multiplier, ou de multiplier aussi le dénominateur par l'entier (6 × 2/9 = 12/54). La simplification du résultat n'est pas exigée. Réponse : une fraction, comparée par sa valeur. Figure : aucune.*
+
+> « Calculer le produit de nombres rationnels. » — *Cycle 4, classe de 4e, Nombres et calculs, Nombres rationnels, Objectifs d'apprentissage*
+> « Simplifier une fraction. » — *Cycle 4, classe de 4e, Nombres et calculs, Nombres rationnels, Objectifs d'apprentissage*
+
+**EX-C015-D-01** — decouverte, numerique, 45 s
+
+Pour multiplier deux fractions, on multiplie les numérateurs entre eux et les dénominateurs entre eux. Complète : 3/7 × 2/5 = …/35
+
+**Réponse :** 6
+
+*Corrigé.* (1) Dénominateurs : 7 × 5 = 35, c'est bien le dénominateur écrit. (2) Numérateurs : 3 × 2 = 6. Donc 3/7 × 2/5 = 6/35 : le nombre manquant est 6. (3) Pour multiplier, on ne cherche pas de dénominateur commun, contrairement à l'addition : on multiplie directement.
+
+*Indice.* Le numérateur du produit est le produit des numérateurs.
+
+**EX-C015-D-02** — decouverte, qcm, 60 s
+
+Combien vaut 3 × 5/8 ?
+
+- **a.** 15/24
+  <br>*Erreur visée :* L'élève multiplie le numérateur et le dénominateur par 3. Mais 15/24 est égal à 5/8 : il a écrit une fraction égale, pas le triple.
+- **b.** 5/24
+  <br>*Erreur visée :* L'élève multiplie le dénominateur au lieu du numérateur : il obtient le tiers de 5/8, pas le triple.
+- **c.** 15/8 ✅
+
+*Corrigé.* (1) Un entier est une fraction de dénominateur 1 : 3 = 3/1. (2) 3/1 × 5/8 = 3 × 5/1 × 8 = 15/8. (3) Autre façon de voir : 3 × 5/8 = 5/8 + 5/8 + 5/8 = 15/8. Le dénominateur ne change pas.
+
+*Indice.* Écris 3 comme une fraction de dénominateur 1.
+
+**EX-C015-E-01** — entrainement, texte, 90 s
+
+Calcule -4/9 × 3/5. Écris le résultat sous la forme numérateur/dénominateur, avec son signe.
+
+**Réponse :** −12/45
+
+*Corrigé.* (1) Signe : un négatif multiplié par un positif donne un négatif. (2) On multiplie les numérateurs et les dénominateurs : 4 × 3/9 × 5 = 12/45. Le produit vaut donc -12/45. (3) On peut simplifier par 3 : -12/45 = -4/15. Ou simplifier avant de calculer, puisque 9 = 3 × 3 : 4 × 3/3 × 3 × 5 = 4/15. (4) Les deux écritures sont justes : la simplification n'est pas obligatoire.
+
+*Indice.* Commence par le signe, puis multiplie les numérateurs et les dénominateurs.
+
+**EX-C015-E-02** — entrainement, vrai_faux, 75 s
+
+Mehdi calcule 2/3 × 5/6. Il réduit au même dénominateur, puis multiplie les numérateurs : 2/3 × 5/6 = 4/6 × 5/6 = 20/6 Mehdi a-t-il raison ?
+
+**Réponse :** False
+
+*Corrigé.* (1) Pour multiplier, on ne réduit pas au même dénominateur : on multiplie les numérateurs entre eux et les dénominateurs entre eux. (2) 2/3 × 5/6 = 2 × 5/3 × 6 = 10/18, qui se simplifie en 5/9. (3) Mehdi a gardé le dénominateur 6 comme pour une addition. Son résultat 20/6 est plus grand que 3, alors que le produit de deux nombres plus petits que 1 est plus petit que 1. Il a tort. (4) S'il avait aussi multiplié les dénominateurs, il aurait trouvé 4/6 × 5/6 = 20/36 = 5/9 : juste, mais inutilement long.
+
+*Indice.* Pour multiplier deux fractions, que fait-on des dénominateurs ?
+
+**EX-C015-M-01** — maitrise, texte, 150 s
+
+Calcule 14/15 × \left(-5/8\right) × 6/7 en simplifiant avant de multiplier. Écris le résultat simplifié au maximum, sous la forme numérateur/dénominateur, avec son signe.
+
+**Réponse :** −1/2
+
+*Corrigé.* (1) Signe : un seul facteur est négatif, le produit est négatif. (2) On écrit tout sur une seule barre, sans calculer : 14 × 5 × 6/15 × 8 × 7. (3) On simplifie par paires : 14 = 7 × 2, on simplifie par 7 avec le 7 du bas ; 15 = 5 × 3, on simplifie par 5 avec le 5 du haut ; 6 = 3 × 2, on simplifie par 3 avec le 3 restant en bas. (4) Il reste 2 × 2/8 = 4/8 = 1/2. Le produit vaut -1/2. (5) Sans simplifier, on trouve -420/840 : c'est égal, mais il resterait à le simplifier au maximum, ce qui est bien plus lourd.
+
+*Indice.* Cherche un facteur commun à un numérateur et à un dénominateur, par exemple 14 et 7.
+
+**EX-C015-M-02** — maitrise, qcm, 120 s
+
+Par quelle fraction faut-il multiplier 3/4 pour obtenir -9/20 ?
+
+- **a.** 3/5
+  <br>*Erreur visée :* L'élève trouve bien 3 × 3 = 9 et 4 × 5 = 20, mais oublie la règle des signes : 3/4 est positif, donc pour obtenir un produit négatif, l'autre facteur doit être négatif.
+- **b.** -3/5 ✅
+- **c.** -27/80
+  <br>*Erreur visée :* L'élève multiplie les deux fractions de l'énoncé, 3/4 × \left(-9/20\right) = -27/80, au lieu de chercher le facteur manquant.
+
+*Corrigé.* (1) On cherche une fraction telle que 3/4 × … = -9/20. (2) Signe : 3/4 est positif et le produit est négatif, donc le facteur cherché est négatif. (3) Numérateurs : 3 × 3 = 9. Dénominateurs : 4 × 5 = 20. Le facteur est -3/5. (4) Vérification : 3/4 × \left(-3/5\right) = -9/20.
+
+*Indice.* Par quel nombre multiplier 3 pour obtenir 9, et 4 pour obtenir 20 ? Pense au signe.
+
+---
+
+## `C018` · Inverse d'un nombre — 4e, difficulté 5
+
+*Savoir que deux nombres sont inverses quand leur produit vaut 1, noter 1/a l'inverse d'un nombre a non nul, et le déterminer : l'inverse de 5 est 1/5, celui de 3/7 est 7/3, celui de −2/9 est −9/2, celui de 0,25 est 4 ; savoir que 0 n'a pas d'inverse. Ne pas confondre inverse et opposé (l'inverse de −2 est −1/2, son opposé est 2). L'erreur type est de changer le signe au lieu de renverser la fraction. La notation avec un exposant négatif attend les puissances de 3e. Réponse : une fraction ou un décimal, comparé par sa valeur ; QCM pour distinguer inverse et opposé. Figure : aucune.*
+
+> « Définir l'inverse d'un nombre et connaitre sa notation. » — *Cycle 4, classe de 4e, Nombres et calculs, Nombres rationnels, Objectifs d'apprentissage*
+> « Déterminer l'inverse d'une fraction. » — *Cycle 4, classe de 4e, Nombres et calculs, Nombres rationnels, Objectifs d'apprentissage*
+
+**EX-C018-D-01** — decouverte, texte, 45 s
+
+Deux nombres sont inverses quand leur produit vaut 1. Quel est l'inverse de 5/8 ? Écris ta réponse sous la forme numérateur/dénominateur.
+
+**Réponse :** 8/5
+
+*Corrigé.* (1) On cherche le nombre qui, multiplié par 5/8, donne 1. (2) Si l'on renverse la fraction, on obtient 8/5, et 5/8 × 8/5 = 40/40 = 1. (3) L'inverse de 5/8 est donc 8/5. L'inverse d'un nombre a non nul se note 1/a ; pour une fraction, on échange le numérateur et le dénominateur.
+
+*Indice.* Essaie de multiplier 5/8 par la fraction renversée.
+
+**EX-C018-D-02** — decouverte, qcm, 45 s
+
+Quel est l'inverse de -3 ?
+
+- **a.** 3
+  <br>*Erreur visée :* L'élève confond inverse et opposé : 3 est l'opposé de −3, leur somme vaut 0. Leur produit vaut −9, pas 1.
+- **b.** -1/3 ✅
+- **c.** 1/3
+  <br>*Erreur visée :* L'élève renverse bien le nombre mais perd le signe : (−3) × 1/3 = −1, pas 1. Un nombre et son inverse ont le même signe.
+
+*Corrigé.* (1) L'inverse de -3 est le nombre qui, multiplié par -3, donne 1. (2) (-3) × \left(-1/3\right) = 3/3 = 1 : deux facteurs négatifs donnent un produit positif. (3) L'inverse de -3 est donc -1/3 : un nombre et son inverse ont toujours le même signe. La bonne réponse est b. (4) À ne pas confondre : l'opposé de −3 est 3, car −3 + 3 = 0. L'opposé se rapporte à la somme 0, l'inverse au produit 1.
+
+*Indice.* Multiplie −3 par chaque proposition : laquelle donne 1 ?
+
+**EX-C018-E-01** — entrainement, numerique, 60 s
+
+Quel est l'inverse de 0{,}2 ?
+
+**Réponse :** 5
+
+*Corrigé.* (1) On écrit d'abord 0,2 sous forme de fraction : 0{,}2 = 2/10 = 1/5. (2) L'inverse de 1/5 s'obtient en renversant la fraction : 5/1 = 5. (3) Vérification : 0{,}2 × 5 = 1. L'inverse de 0,2 est 5. (4) Piège : l'inverse n'est pas l'opposé −0,2, ni 0,8 (ce qu'il faut ajouter à 0,2 pour faire 1).
+
+*Indice.* Écris 0,2 sous forme de fraction.
+
+**EX-C018-E-02** — entrainement, texte, 60 s
+
+Quel est l'inverse de -7/4 ? Écris ta réponse sous la forme numérateur/dénominateur, avec son signe.
+
+**Réponse :** −4/7
+
+*Corrigé.* (1) Pour une fraction, l'inverse s'obtient en échangeant le numérateur et le dénominateur : 7 et 4 échangent leur place. (2) Le signe ne change pas : un nombre et son inverse ont le même signe, puisque leur produit vaut 1, qui est positif. (3) L'inverse de -7/4 est -4/7. Vérification : \left(-7/4\right) × \left(-4/7\right) = 28/28 = 1.
+
+*Indice.* Le produit d'un nombre et de son inverse vaut 1 : quel doit être le signe de l'inverse ?
+
+**EX-C018-M-01** — maitrise, vrai_faux, 90 s
+
+Tom affirme : « L'inverse de 1 + 1/2 est 1 + 2, soit 3. » A-t-il raison ?
+
+**Réponse :** False
+
+*Corrigé.* (1) On calcule d'abord le nombre : 1 + 1/2 = 2/2 + 1/2 = 3/2. (2) Son inverse est 2/3, car 3/2 × 2/3 = 1. (3) Tom a pris l'inverse de chaque terme de la somme. Or 3/2 × 3 = 9/2, qui ne vaut pas 1 : 3 n'est pas l'inverse. L'affirmation est fausse. (4) On ne prend jamais l'inverse terme par terme : on calcule d'abord le nombre, puis on cherche son inverse.
+
+*Indice.* Calcule d'abord 1 + 1/2 sous forme d'une seule fraction.
+
+**EX-C018-M-02** — maitrise, qcm, 90 s
+
+Laquelle de ces affirmations est vraie ?
+
+- **a.** L'inverse de 0,4 est −0,4.
+  <br>*Erreur visée :* L'élève confond inverse et opposé : −0,4 est l'opposé de 0,4 (leur somme vaut 0) ; leur produit vaut −0,16.
+- **b.** L'inverse de 0,4 est 0,6.
+  <br>*Erreur visée :* L'élève cherche ce qu'il faut ajouter pour faire 1 : 0,4 + 0,6 = 1. L'inverse se définit par le produit, et 0,4 × 0,6 = 0,24.
+- **c.** L'inverse de 0,4 est 2,5. ✅
+- **d.** L'inverse de 0 est 0.
+  <br>*Erreur visée :* L'élève croit que tout nombre a un inverse, et que 0 est son propre inverse ; or 0 × 0 = 0. Aucun nombre multiplié par 0 ne donne 1.
+
+*Corrigé.* (1) On écrit 0,4 sous forme de fraction : 0{,}4 = 4/10 = 2/5. Son inverse est 5/2 = 2{,}5. (2) Vérification : 0{,}4 × 2{,}5 = 1. L'affirmation c est vraie. (3) Affirmation a : -0{,}4 est l'opposé de 0,4 ; 0{,}4 × (-0{,}4) = -0{,}16, pas 1. (4) Affirmation b : 0{,}4 + 0{,}6 = 1, mais c'est une somme ; 0{,}4 × 0{,}6 = 0{,}24. (5) Affirmation d : 0 multiplié par n'importe quel nombre donne 0, jamais 1. Zéro n'a pas d'inverse.
+
+*Indice.* Pour chaque affirmation, multiplie les deux nombres : le produit vaut-il 1 ?
+
+---
+
+## `C017` · Diviser des fractions — 4e, difficulté 5
+
+*Savoir que diviser par un nombre non nul revient à multiplier par son inverse, et calculer un quotient de fractions positives ou négatives : 3/4 ÷ 2/5 = 3/4 × 5/2 = 15/8 ; 6 ÷ 3/4 = 6 × 4/3 = 8 ; (−2/3) ÷ 4 = −2/12 ; un quotient écrit en étage, dont le numérateur et le dénominateur sont des fractions, se calcule de la même façon. L'erreur type est d'inverser le dividende au lieu du diviseur. Réponse : une fraction, comparée par sa valeur. Figure : aucune.*
+
+> « Diviser des fractions. » — *Cycle 4, classe de 4e, Nombres et calculs, Nombres rationnels, Objectifs d'apprentissage*
+> « Déterminer l'inverse d'une fraction. » — *Cycle 4, classe de 4e, Nombres et calculs, Nombres rationnels, Objectifs d'apprentissage*
+
+**EX-C017-D-01** — decouverte, qcm, 45 s
+
+Diviser par un nombre non nul, c'est multiplier par son inverse. Quel calcul est égal à 2/9 ÷ 5/4 ?
+
+- **a.** 9/2 × 5/4
+  <br>*Erreur visée :* L'élève inverse le dividende 2/9 au lieu du diviseur 5/4. Seul le nombre par lequel on divise est remplacé par son inverse.
+- **b.** 9/2 × 4/5
+  <br>*Erreur visée :* L'élève inverse les deux fractions. Le dividende 2/9 ne change pas : on n'inverse que le diviseur.
+- **c.** 2/9 × 4/5 ✅
+
+*Corrigé.* (1) Le diviseur est 5/4, le nombre qui suit le signe ÷. Son inverse est 4/5. (2) On garde le dividende 2/9 tel quel, et l'on multiplie par l'inverse du diviseur : 2/9 ÷ 5/4 = 2/9 × 4/5. La bonne réponse est c. (3) Le calcul donne 8/45.
+
+*Indice.* Quel nombre est le diviseur ? C'est lui seul que l'on remplace par son inverse.
+
+**EX-C017-D-02** — decouverte, texte, 60 s
+
+Calcule 4/5 ÷ 3/7. Écris ta réponse sous la forme numérateur/dénominateur.
+
+**Réponse :** 28/15
+
+*Corrigé.* (1) Diviser par 3/7, c'est multiplier par son inverse 7/3. (2) 4/5 ÷ 3/7 = 4/5 × 7/3 = 4 × 7/5 × 3 = 28/15. (3) Le résultat est 28/15. Il est plus grand que 4/5, ce qui est normal : on divise par un nombre plus petit que 1.
+
+*Indice.* Remplace la division par une multiplication par l'inverse de 3/7.
+
+**EX-C017-E-01** — entrainement, numerique, 60 s
+
+Calcule 9/4 ÷ 3/8.
+
+**Réponse :** 6
+
+*Corrigé.* (1) Diviser par 3/8, c'est multiplier par 8/3 : 9/4 ÷ 3/8 = 9/4 × 8/3. (2) 9/4 × 8/3 = 9 × 8/4 × 3 = 72/12. (3) 72 ÷ 12 = 6 : le résultat est 6. (4) On pouvait simplifier avant de multiplier : 9 × 8/4 × 3 = 3 × 3 × 2 × 4/4 × 3 = 3 × 2 = 6.
+
+*Indice.* Multiplie par l'inverse du diviseur, puis simplifie.
+
+**EX-C017-E-02** — entrainement, texte, 75 s
+
+Calcule -5/6 ÷ 10/9. Écris ta réponse sous la forme numérateur/dénominateur, avec son signe.
+
+**Réponse :** −3/4
+
+*Corrigé.* (1) Diviser par 10/9, c'est multiplier par 9/10 : -5/6 ÷ 10/9 = -5/6 × 9/10. (2) Le signe : un facteur négatif et un facteur positif donnent un produit négatif. (3) 5/6 × 9/10 = 45/60 ; 45 = 15 × 3 et 60 = 15 × 4, donc 45/60 = 3/4. (4) Le résultat est -3/4.
+
+*Indice.* Commence par le signe du résultat, puis multiplie par l'inverse de 10/9.
+
+**EX-C017-M-01** — maitrise, numerique, 90 s
+
+Calcule \dfrac{14/5}{7/10}.
+
+**Réponse :** 4
+
+*Corrigé.* (1) Une fraction dont le numérateur et le dénominateur sont des fractions est un quotient : \dfrac{14/5}{7/10} = 14/5 ÷ 7/10. Le diviseur est la fraction du bas. (2) Diviser par 7/10, c'est multiplier par 10/7 : 14/5 × 10/7 = 140/35. (3) 140 ÷ 35 = 4 : le résultat est 4. (4) Piège : inverser la fraction du haut donne 5/14 × 7/10 = 35/140, soit un quart, l'inverse du bon résultat.
+
+*Indice.* Le trait principal est un signe de division : quelle fraction est le diviseur ?
+
+**EX-C017-M-02** — maitrise, texte, 120 s
+
+Par quel nombre faut-il multiplier 2/3 pour obtenir 8/15 ? Écris ta réponse sous la forme numérateur/dénominateur.
+
+**Réponse :** 4/5
+
+*Corrigé.* (1) On cherche le nombre qui, multiplié par 2/3, donne 8/15. Ce nombre est le quotient 8/15 ÷ 2/3, comme 3 × 4 = 12 donne 4 = 12 ÷ 3. (2) 8/15 ÷ 2/3 = 8/15 × 3/2 = 24/30. (3) 24 et 30 sont dans la table de 6 : 24/30 = 4/5. (4) Vérification : 2/3 × 4/5 = 8/15. Le nombre cherché est 4/5.
+
+*Indice.* Si 3 × … = 12, on trouve le nombre manquant par 12 ÷ 3. Fais de même avec les fractions.
+
+---
+
+## `C035` · Fraction d'une fraction, d'un nombre, d'une quantité — 4e, difficulté 5
+
+*Savoir que prendre une fraction d'un nombre ou d'une quantité revient à multiplier par cette fraction (les 3/4 de 18 €, c'est 3/4 × 18 = 13,5 €), et calculer une fraction d'une fraction : les 2/3 des 3/4 d'un terrain, c'est 2/3 × 3/4 = 6/12 = 1/2 du terrain ; représenter cette situation sur un rectangle partagé dans les deux sens. L'erreur type est d'additionner les deux fractions (2/3 + 3/4). Représenter ne se fait pas à l'écran : l'élève lit ou choisit la représentation (QCM sur figure), il ne colorie pas. Réponse : une fraction ou un nombre, comparé par sa valeur. Figure utile : quadrillage, rectangle partagé en colonnes et en lignes, avec deux formes de couleurs différentes (la fraction de la fraction, et le reste de la première fraction).*
+
+> « Calculer et représenter la fraction d'une fraction, d'un nombre, d'une quantité. » — *Cycle 4, classe de 4e, Nombres et calculs, Nombres rationnels, Objectifs d'apprentissage*
+> « Savoir que prendre la fraction d'un nombre revient à multiplier la fraction par ce nombre. » — *Cycle 4, classe de 4e, Nombres et calculs, Nombres rationnels, Automatismes*
+
+**EX-C035-D-01** — decouverte, qcm, 90 s
+
+Ce rectangle représente un potager partagé en carreaux égaux. La partie colorée est plantée : carottes dans la zone A, radis dans la zone B. Quelle phrase décrit la zone A ?
+
+- **a.** les 2/3 du potager
+  <br>*Erreur visée :* L'élève voit que A occupe 2 lignes sur 3 et oublie que seules 4 colonnes sur 5 sont plantées : A représente les 2/3 de la partie plantée, pas du potager entier. Les 2/3 du potager feraient 10 carreaux sur 15, A n'en a que 8.
+- **b.** les 2/3 des 4/5 du potager ✅
+- **c.** le tiers des 4/5 du potager
+  <br>*Erreur visée :* L'élève confond les deux zones : c'est la zone B qui occupe 1 ligne sur 3 de la partie plantée. A en occupe 2 sur 3.
+- **d.** les 2/3 plus les 4/5 du potager
+  <br>*Erreur visée :* L'élève additionne les deux fractions au lieu de prendre une fraction d'une fraction. 2/3 + 4/5 dépasse 1 : ce serait plus que le potager entier.
+
+*Corrigé.* (1) On lit d'abord la partie plantée, A et B ensemble : elle occupe 4 colonnes sur les 5 du potager. La partie plantée représente donc les 4/5 du potager. (2) Dans cette partie plantée, la zone A occupe 2 lignes sur 3 : A représente les 2/3 de la partie plantée. (3) La zone A est donc « les 2/3 des 4/5 du potager ». La bonne réponse est b. (4) Vérification : prendre une fraction d'une fraction, c'est multiplier. 2/3 × 4/5 = 8/15, et la zone A compte bien 8 carreaux sur les 15 du potager.
+
+*Indice.* Commence par la partie plantée : combien de colonnes occupe-t-elle sur 5 ? Puis regarde la place de A dans cette partie.
+
+**EX-C035-D-02** — decouverte, texte, 75 s
+
+Il reste les 3/4 d'une tarte. Paul mange la moitié de ce qui reste. Quelle fraction de la tarte entière Paul a-t-il mangée ? Écris ta réponse sous la forme numérateur/dénominateur.
+
+**Réponse :** 3/8
+
+*Corrigé.* (1) Paul mange la moitié des 3/4 de la tarte. Prendre la moitié, c'est prendre 1/2, et prendre une fraction d'une quantité, c'est multiplier par cette fraction. (2) On calcule 1/2 × 3/4 : on multiplie les numérateurs entre eux et les dénominateurs entre eux. 1/2 × 3/4 = 1 × 3/2 × 4 = 3/8. (3) Paul a mangé 3/8 de la tarte entière. On le voit aussi en coupant chaque quart en deux : la tarte fait 8 huitièmes, il en restait 6, Paul en mange la moitié, soit 3 huitièmes. (4) Piège : la moitié porte sur ce qui reste, pas sur la tarte entière. Paul mange moins que la moitié de la tarte, puisqu'il n'en restait que les 3/4.
+
+*Indice.* La moitié de quelque chose, c'est 1/2 de cette chose. Que fait-on pour prendre une fraction d'une fraction ?
+
+**EX-C035-E-01** — entrainement, numerique, 75 s
+
+Un pull coûte 36 €. Pendant les soldes, on le paie les 5/8 de son prix. Combien coûte le pull en solde ?
+
+**Réponse :** 22.5
+
+*Corrigé.* (1) Payer les 5/8 du prix, c'est prendre les 5/8 de 36 €. Prendre une fraction d'un nombre revient à multiplier ce nombre par la fraction : 5/8 × 36. (2) 5/8 × 36 = 5 × 36/8 = 180/8. (3) On écrit ce quotient en écriture décimale : 180 ÷ 8 = 22{,}5. (4) Le pull coûte 22,50 € en solde. Contrôle : un huitième de 36 €, c'est 4,50 € ; cinq huitièmes, c'est 5 × 4,50 € = 22,50 €, moins que 36 €.
+
+*Indice.* Prendre les 5/8 de 36, c'est multiplier 36 par 5/8.
+
+**EX-C035-E-02** — entrainement, vrai_faux, 75 s
+
+Les 5/6 des 3/10 d'une somme d'argent représentent le quart de cette somme.
+
+**Réponse :** True
+
+*Corrigé.* (1) Prendre les 5/6 des 3/10, c'est multiplier : 5/6 × 3/10. (2) 5/6 × 3/10 = 5 × 3/6 × 10 = 15/60. (3) 60 = 15 × 4 : on divise le numérateur et le dénominateur par 15, 15/60 = 1/4. (4) C'est bien le quart de la somme : l'affirmation est vraie.
+
+*Indice.* Calcule le produit des deux fractions, puis simplifie-le.
+
+**EX-C035-M-01** — maitrise, texte, 120 s
+
+Les 3/4 d'un champ sont cultivés. Le tiers de la partie cultivée est en blé, et la moitié du blé est déjà moissonnée. Quelle fraction du champ est moissonnée ? Écris ta réponse sous la forme numérateur/dénominateur.
+
+**Réponse :** 1/8
+
+*Corrigé.* (1) Le blé occupe le tiers des 3/4 du champ : 1/3 × 3/4 = 3/12 = 1/4 du champ. (2) La partie moissonnée est la moitié du blé : 1/2 × 1/4 = 1/8 du champ. (3) On peut aussi tout écrire en un seul produit : 1/2 × 1/3 × 3/4 = 3/24 = 1/8. (4) La partie moissonnée représente 1/8 du champ. Piège : chaque fraction se prend de la partie précédente, pas du champ entier ; la moitié du champ serait bien plus que le blé, qui n'en fait que le quart.
+
+*Indice.* Cherche d'abord quelle fraction du champ entier est en blé.
+
+**EX-C035-M-02** — maitrise, numerique, 120 s
+
+Une bibliothèque contient 480 livres. Les 3/8 des livres sont des romans, et les 2/9 des romans sont des romans policiers. Combien y a-t-il de romans policiers ?
+
+**Réponse :** 40
+
+*Corrigé.* (1) Les romans sont les 3/8 de 480 : 3/8 × 480 = 3 × 480/8 = 1440/8 = 180 romans. (2) Les romans policiers sont les 2/9 des romans, pas des 480 livres : 2/9 × 180 = 360/9 = 40. (3) Autre méthode : les romans policiers sont les 2/9 des 3/8 des livres, 2/9 × 3/8 = 6/72 = 1/12 des livres, et 1/12 × 480 = 40. (4) Il y a 40 romans policiers.
+
+*Indice.* Calcule d'abord le nombre de romans.
+
+---
+
+## `C036` · Enchaîner des opérations avec des fractions — 4e, difficulté 6
+
+*Calculer une expression qui enchaîne plusieurs opérations sur des fractions positives ou négatives, en respectant les priorités : 1/2 + 3/4 × 2/3 = 1/2 + 1/2 = 1 ; (1/2 + 3/4) × 2/3 = 5/4 × 2/3 = 5/6 ; 2 − 5/3 ÷ 5/6 = 2 − 2 = 0 ; un calcul dont le résultat est négatif (1/3 − 3/4 = −5/12). L'erreur type est de calculer de gauche à droite sans respecter les priorités. Réponse : une fraction, comparée par sa valeur. Figure : aucune.*
+
+> « Calculer la valeur d'expressions comportant plusieurs opérations avec des fractions. » — *Cycle 4, classe de 4e, Nombres et calculs, Nombres rationnels, Objectifs d'apprentissage*
+> « Addition et soustraction de fractions de dénominateurs quelconques mais simples. » — *Cycle 4, classe de 4e, Nombres et calculs, Nombres rationnels, Automatismes*
+
+**EX-C036-D-01** — decouverte, qcm, 60 s
+
+Combien vaut 1/5 + 3/5 × 2/3 ?
+
+- **a.** 3/5 ✅
+- **b.** 8/15
+  <br>*Erreur visée :* L'élève calcule de gauche à droite : (1/5 + 3/5) × 2/3 = 4/5 × 2/3 = 8/15. La multiplication passe avant l'addition.
+- **c.** 3/10
+  <br>*Erreur visée :* L'élève fait bien la multiplication d'abord (2/5), puis additionne numérateurs et dénominateurs : 1/5 + 2/5 n'est pas 3/10, on garde le dénominateur 5.
+
+*Corrigé.* (1) La multiplication est prioritaire sur l'addition : on la calcule en premier. (2) 3/5 × 2/3 = 6/15 = 2/5. (3) Puis 1/5 + 2/5 = 3/5 : les dénominateurs sont égaux, on additionne les numérateurs. La bonne réponse est a.
+
+*Indice.* Quelle opération calcule-t-on en premier ?
+
+**EX-C036-D-02** — decouverte, texte, 90 s
+
+Calcule \left(1/2 + 1/6\right) × 9/4. Écris ta réponse sous la forme numérateur/dénominateur.
+
+**Réponse :** 3/2
+
+*Corrigé.* (1) Les parenthèses se calculent en premier. On réduit au même dénominateur 6 : 1/2 + 1/6 = 3/6 + 1/6 = 4/6. (2) On multiplie ensuite : 4/6 × 9/4 = 36/24. (3) 36 = 12 × 3 et 24 = 12 × 2 : 36/24 = 3/2. Le résultat est 3/2.
+
+*Indice.* Commence par la parenthèse : quel dénominateur commun pour 1/2 et 1/6 ?
+
+**EX-C036-E-01** — entrainement, numerique, 90 s
+
+Calcule 5/6 ÷ 5/12 - 9/4 × 4/3.
+
+**Réponse :** -1
+
+*Corrigé.* (1) La division et la multiplication sont prioritaires sur la soustraction : on calcule les deux avant de soustraire. (2) 5/6 ÷ 5/12 = 5/6 × 12/5 = 60/30 = 2. (3) 9/4 × 4/3 = 36/12 = 3. (4) Il reste 2 − 3 = −1. Le résultat est −1.
+
+*Indice.* Calcule séparément le quotient et le produit, puis soustrais.
+
+**EX-C036-E-02** — entrainement, texte, 120 s
+
+Calcule 2/5 - 5/6 × 3/4. Écris ta réponse sous la forme numérateur/dénominateur, avec son signe.
+
+**Réponse :** −9/40
+
+*Corrigé.* (1) La multiplication passe avant la soustraction : 5/6 × 3/4 = 15/24 = 5/8. (2) On soustrait ensuite, au dénominateur commun 40 : 2/5 - 5/8 = 16/40 - 25/40. (3) 16 - 25 = -9 : le résultat est -9/40. Il est négatif, car on retire 5/8, qui est plus grand que 2/5.
+
+*Indice.* Fais d'abord la multiplication. Le résultat peut être négatif.
+
+**EX-C036-M-01** — maitrise, vrai_faux, 90 s
+
+Zoé écrit : 1 - 1/5 × 5/8 = 4/5 × 5/8 = 1/2. Son calcul est-il juste ?
+
+**Réponse :** False
+
+*Corrigé.* (1) Zoé a d'abord calculé 1 − 1/5 : elle a fait la soustraction avant la multiplication. (2) La multiplication est prioritaire : 1/5 × 5/8 = 5/40 = 1/8. (3) Puis 1 - 1/8 = 8/8 - 1/8 = 7/8. (4) Le bon résultat est 7/8, pas 1/2 : le calcul de Zoé est faux.
+
+*Indice.* Dans ce calcul, quelle opération est prioritaire ?
+
+**EX-C036-M-02** — maitrise, numerique, 120 s
+
+Calcule \dfrac{1/2 + 1/3}{1/2 - 1/3}.
+
+**Réponse :** 5
+
+*Corrigé.* (1) Le trait principal est une division : on calcule le numérateur et le dénominateur séparément, comme s'ils étaient entre parenthèses. (2) En haut : 1/2 + 1/3 = 3/6 + 2/6 = 5/6. En bas : 1/2 - 1/3 = 3/6 - 2/6 = 1/6. (3) On divise : 5/6 ÷ 1/6 = 5/6 × 6/1 = 30/6 = 5. (4) Le résultat est 5. Piège : on ne peut pas barrer 1/2 et 1/3 en haut et en bas, ce sont des termes d'une somme et d'une différence, pas des facteurs.
+
+*Indice.* Calcule d'abord le haut, puis le bas, chacun en une seule fraction.
+
+---
+
+## `C037` · Problèmes mobilisant les opérations sur les fractions — 4e, difficulté 6
+
+*Résoudre un problème en plusieurs étapes qui mobilise addition, soustraction, multiplication, division ou inverse de fractions : une part d'un reste (Léa dépense 1/3 de son argent, puis 1/4 de ce qui lui reste : elle a dépensé 1/3 + 1/4 × 2/3 = 1/2 de son argent), un nombre de parts (avec 12 L, on remplit 12 ÷ 3/4 = 16 bouteilles de 3/4 L), une quantité retrouvée à partir de sa fraction (les 2/5 d'une somme valent 30 €, la somme vaut 75 €). L'erreur type est de prendre la fraction du reste comme une fraction du tout. Réponse : une fraction ou un nombre, comparé par sa valeur. Figure : aucune.*
+
+> « Résoudre des problèmes mobilisant les opérations sur les fractions : addition, soustraction, multiplication, division, inverse. » — *Cycle 4, classe de 4e, Nombres et calculs, Nombres rationnels, Objectifs d'apprentissage*
+
+**EX-C037-D-01** — decouverte, numerique, 75 s
+
+Un jardinier répartit 15 kg de graines dans des sachets de 3/8 kg chacun. Combien de sachets remplit-il ?
+
+**Réponse :** 40
+
+*Corrigé.* (1) Pour savoir combien de fois 3/8 kg tient dans 15 kg, on divise : 15 ÷ 3/8. (2) Diviser par 3/8, c'est multiplier par 8/3 : 15 × 8/3 = 120/3 = 40. (3) Il remplit 40 sachets. Vérification : 40 × 3/8 = 120/8 = 15 kg.
+
+*Indice.* On cherche combien de fois 3/8 kg tient dans 15 kg : quelle opération ?
+
+**EX-C037-D-02** — decouverte, qcm, 75 s
+
+Noé lit les 2/5 d'un livre samedi, puis la moitié de ce qui reste dimanche. Quelle fraction du livre lit-il dimanche ?
+
+- **a.** 1/5
+  <br>*Erreur visée :* L'élève prend la moitié de ce qui a été lu samedi : 1/2 × 2/5 = 1/5. La moitié porte sur ce qui reste, 3/5 du livre.
+- **b.** 3/10 ✅
+- **c.** 1/2
+  <br>*Erreur visée :* L'élève prend la fraction du reste comme une fraction du livre entier : la moitié du reste n'est pas la moitié du livre.
+
+*Corrigé.* (1) Après samedi, il reste 1 - 2/5 = 3/5 du livre. (2) Dimanche, Noé lit la moitié de ce reste : 1/2 × 3/5 = 3/10 du livre. (3) La bonne réponse est b. La moitié porte sur le reste, 3/5, pas sur le livre entier.
+
+*Indice.* Quelle fraction du livre reste-t-il après samedi ?
+
+**EX-C037-E-01** — entrainement, texte, 120 s
+
+Sur un trajet, Maya fait 1/6 du chemin à pied, puis les 3/5 du reste en bus, et finit à vélo. Quelle fraction du trajet fait-elle à vélo ? Écris ta réponse sous la forme numérateur/dénominateur.
+
+**Réponse :** 1/3
+
+*Corrigé.* (1) Après la marche, il reste 1 - 1/6 = 5/6 du trajet. (2) Le bus couvre les 3/5 de ce reste : 3/5 × 5/6 = 15/30 = 1/2 du trajet. (3) Le vélo couvre ce qui reste : 5/6 - 1/2 = 5/6 - 3/6 = 2/6 = 1/3 du trajet. (4) Maya fait 1/3 du trajet à vélo. Vérification : 1/6 + 1/2 + 1/3 = 1/6 + 3/6 + 2/6 = 1.
+
+*Indice.* Quelle fraction du trajet reste-t-il après la marche ?
+
+**EX-C037-E-02** — entrainement, numerique, 90 s
+
+Les 5/8 du prix d'un vélo représentent 140 €. Quel est le prix du vélo ?
+
+**Réponse :** 224
+
+*Corrigé.* (1) Les 5/8 du prix valent 140 € : le prix multiplié par 5/8 donne 140. Le prix est donc le quotient 140 ÷ 5/8. (2) 140 ÷ 5/8 = 140 × 8/5 = 1120/5 = 224. (3) Autre méthode : 5 huitièmes valent 140 €, donc un huitième vaut 140 ÷ 5 = 28 €, et 8 huitièmes valent 8 × 28 = 224 €. (4) Le vélo coûte 224 €. Vérification : 5/8 × 224 = 140.
+
+*Indice.* Combien vaut un huitième du prix ?
+
+**EX-C037-M-01** — maitrise, numerique, 150 s
+
+Le robinet A remplit 1/10 d'une cuve en une minute, le robinet B en remplit 1/15. Ouverts ensemble, en combien de minutes remplissent-ils la cuve ?
+
+**Réponse :** 6
+
+*Corrigé.* (1) En une minute, les deux robinets ensemble remplissent 1/10 + 1/15 de la cuve. (2) Au dénominateur commun 30 : 3/30 + 2/30 = 5/30 = 1/6 de la cuve par minute. (3) Il faut donc autant de minutes que de fois 1/6 dans la cuve entière : 1 ÷ 1/6 = 6, l'inverse de 1/6. (4) Ils remplissent la cuve en 6 minutes. Vérification : 6 × 1/6 = 1. Contrôle : seul, le robinet A remplirait la cuve en 10 minutes (10 × 1/10 = 1) ; à deux, il faut moins de temps, et 6 est bien plus petit que 10. Additionner les durées, 10 + 15 = 25 minutes, donnerait plus de temps qu'avec A seul.
+
+*Indice.* Quelle fraction de la cuve les deux robinets remplissent-ils ensemble en une minute ?
+
+**EX-C037-M-02** — maitrise, qcm, 150 s
+
+Inès dépense les 3/5 de sa cagnotte, puis le quart de ce qui reste. Il lui reste alors 45 €. Combien contenait sa cagnotte au départ ?
+
+- **a.** 150 € ✅
+- **b.** 300 €
+  <br>*Erreur visée :* L'élève prend le quart de la cagnotte entière au lieu du quart du reste : il reste alors 1 − 3/5 − 1/4 = 3/20, et 45 € ÷ 3/20 = 300 €.
+- **c.** 112,50 €
+  <br>*Erreur visée :* L'élève oublie la seconde dépense : il croit que les 45 € sont les 2/5 de la cagnotte, et 45 € ÷ 2/5 = 112,50 €.
+
+*Corrigé.* (1) Après la première dépense, il reste 1 - 3/5 = 2/5 de la cagnotte. (2) Inès dépense le quart de ce reste et en garde les 3/4 : 3/4 × 2/5 = 6/20 = 3/10 de la cagnotte. (3) Les 3/10 de la cagnotte valent 45 € : la cagnotte vaut 45 ÷ 3/10 = 45 × 10/3 = 150 €. (4) La bonne réponse est a. Vérification : 3/5 de 150 € font 90 €, il reste 60 € ; le quart de 60 € fait 15 €, il reste 45 €.
+
+*Indice.* Quelle fraction de la cagnotte reste-t-il après la première dépense ? Puis après la seconde ?
 
 ---
 
@@ -13358,7 +14918,7 @@ Dans le nombre 4■, le chiffre des unités est caché. Ce nombre est premier. Q
 
 ## `A025` · Décomposer un entier en produit de facteurs premiers — 3e, difficulté 5
 
-*Écrire un entier jusqu'à 1 000 comme produit de nombres premiers, en divisant successivement par 2, 3, 5, 7… (126 = 2 × 3 × 3 × 7), savoir que cette décomposition est unique à l'ordre des facteurs près, et s'en servir pour trouver des diviseurs d'un nombre. En attendant les puissances (étape 6), la décomposition s'écrit en produit sans puissances : un facteur répété est écrit autant de fois qu'il apparaît (60 = 2 × 2 × 3 × 5), jamais avec un exposant. L'erreur type est de s'arrêter sur un facteur non premier (60 = 4 × 15). Écrire la décomposition en saisie libre ne se fait pas à l'écran : l'élève choisit la bonne décomposition parmi des produits dont certains contiennent un facteur non premier, ou répond par un nombre (combien de fois le facteur 2, le plus grand facteur premier). Figure : aucune.*
+*Écrire un entier jusqu'à 1 000 comme produit de nombres premiers, en divisant successivement par 2, 3, 5, 7… (90 = 2 × 3² × 5), savoir que cette décomposition est unique à l'ordre des facteurs près, et s'en servir pour trouver des diviseurs d'un nombre. Un facteur répété s'écrit avec un exposant (60 = 2² × 3 × 5) ou autant de fois qu'il apparaît (60 = 2 × 2 × 3 × 5) : les deux écritures sont justes. L'erreur type est de s'arrêter sur un facteur non premier (60 = 4 × 15). Écrire la décomposition en saisie libre ne se fait pas à l'écran (l'ordre des facteurs varie) : l'élève choisit la bonne décomposition parmi des produits dont certains contiennent un facteur non premier, ou répond par un nombre (l'exposant du facteur 2, le plus grand facteur premier). Figure : aucune.*
 
 > « Factoriser un nombre entier positif : 60 = 2² × 3 × 5. » — *Cycle 4, classe de 3e, Nombres et calculs, Multiples et diviseurs, Automatismes*
 > « Appliquer les critères de divisibilité par 2, 3, 5, 9. » — *Cycle 4, classe de 3e, Nombres et calculs, Multiples et diviseurs, Automatismes*
@@ -13435,6 +14995,480 @@ On décompose 1 000 en produit de facteurs premiers. Combien de facteurs ce prod
 *Corrigé.* (1) 1 000 = 10 × 10 × 10, mais 10 n'est pas premier : 10 = 2 × 5. (2) Chaque 10 donne un facteur 2 et un facteur 5. Donc 1 000 = 2 × 2 × 2 × 5 × 5 × 5. (3) Vérification : 2 × 2 × 2 = 8, 5 × 5 × 5 = 125, et 8 × 125 = 1 000. (4) Le produit contient 6 facteurs : trois fois 2 et trois fois 5. Répondre 3 reviendrait à s'arrêter à 10 × 10 × 10, qui n'est pas une décomposition en facteurs premiers.
 
 *Indice.* Écris d'abord 1 000 comme produit de 10, puis décompose chaque 10.
+
+---
+
+## `A036` · Puissances d'exposant négatif — 3e, difficulté 6
+
+*Savoir que, pour un nombre a non nul et un entier positif n, a⁻ⁿ est l'inverse de aⁿ (a⁻ⁿ = 1/aⁿ) et que a⁰ = 1 ; calculer 2⁻³ = 1/8 = 0,125 ; 5⁻¹ = 1/5 ; (−4)⁻² = 1/16 ; reconnaître que a⁻¹ est l'inverse de a. L'erreur type est de croire qu'un exposant négatif donne un nombre négatif (2⁻³ = −8). Réponse : une fraction ou un décimal, comparé par sa valeur ; jamais une puissance tapée. Figure : aucune.*
+
+> « Définir les puissances d'exposant négatif d'un nombre. » — *Cycle 4, classe de 3e, Nombres et calculs, Puissances, Objectifs d'apprentissage*
+> « Multiplication de puissances d'exposant positif d'un nombre. » — *Cycle 4, classe de 3e, Nombres et calculs, Puissances, Automatismes*
+
+**EX-A036-D-01** — decouverte, numerique, 60 s
+
+Quand l'exposant baisse de 1, on divise par 5 : 5^2 = 25, 5^1 = 5, 5^0 = 1, 5^{-1} = … En continuant, quelle est l'écriture décimale de 5^{-2} ?
+
+**Réponse :** 0.04
+
+*Corrigé.* (1) Quand l'exposant baisse de 1, on enlève un facteur 5, donc on divise par 5 : 25 ÷ 5 = 5, puis 5 ÷ 5 = 1. C'est pour cela que 5^0 = 1. (2) On continue : 5^{-1} = 1 ÷ 5 = 0{,}2. C'est l'inverse de 5. (3) Puis 5^{-2} = 0{,}2 ÷ 5 = 0{,}04. (4) Vérification : 5^{-2} est l'inverse de 5^2 = 25, et 1/25 = 0{,}04. Un exposant négatif ne donne pas un nombre négatif : 5^{-2} est un petit nombre positif.
+
+*Indice.* À partir de 5^0 = 1, divise par 5, puis encore par 5.
+
+**EX-A036-D-02** — decouverte, qcm, 40 s
+
+Que vaut 6^{-1} ?
+
+- **a.** -6
+  <br>*Erreur visée :* L'élève croit qu'un exposant négatif rend le nombre négatif. Or 6^{-1} est l'inverse de 6, pas son opposé.
+- **b.** 1/6 ✅
+- **c.** 5
+  <br>*Erreur visée :* L'élève lit l'exposant comme une soustraction : 6 - 1 = 5. Un exposant n'indique jamais une opération entre la base et lui.
+
+*Corrigé.* (1) Par définition, a^{-1} est l'inverse de a : a^{-1} = 1/a^1 = 1/a. (2) Donc 6^{-1} = 1/6. Vérification : 6 × 1/6 = 1, et deux nombres inverses ont pour produit 1. (3) L'opposé de 6 est -6, car 6 + (-6) = 0. Inverse et opposé sont deux notions différentes. La bonne réponse est b.
+
+*Indice.* Quel nombre, multiplié par 6, donne 1 ?
+
+**EX-A036-E-01** — entrainement, texte, 60 s
+
+Écris 3^{-4} sans puissance, sous la forme d'une fraction numérateur/dénominateur.
+
+**Réponse :** 1/81
+
+*Corrigé.* (1) Un exposant négatif désigne un inverse : 3^{-4} = 1/3^4. (2) 3^4 = 3 × 3 × 3 × 3 = 9 × 9 = 81. (3) Donc 3^{-4} = 1/81. Ce nombre est positif et plus petit que 1 : ce n'est ni -81, ni -12.
+
+*Indice.* Commence par calculer 3^4.
+
+**EX-A036-E-02** — entrainement, vrai_faux, 45 s
+
+Tom affirme : « 8^0 = 0, car on ne multiplie aucun 8. » A-t-il raison ?
+
+**Réponse :** False
+
+*Corrigé.* (1) Partons de 8^2 = 64 et de 8^1 = 8 : quand l'exposant baisse de 1, on divise par 8. (2) Donc 8^0 = 8 ÷ 8 = 1. (3) Pour tout nombre a non nul, a^0 = 1. Tom a tort.
+
+*Indice.* Écris 8^2, puis 8^1 : par quoi divise-t-on quand l'exposant baisse de 1 ?
+
+**EX-A036-M-01** — maitrise, numerique, 75 s
+
+Trouve l'entier n tel que 2^n = 1/32.
+
+**Réponse :** -5
+
+*Corrigé.* (1) On cherche d'abord quelle puissance de 2 vaut 32 : 2 × 2 × 2 × 2 × 2 = 32, donc 2^5 = 32. (2) 1/32 est l'inverse de 2^5, et l'inverse de 2^5 s'écrit 2^{-5}. (3) Donc n = -5. Le nombre 1/32 est positif, mais l'exposant est négatif : le signe de l'exposant indique l'inverse, pas le signe du résultat.
+
+*Indice.* Quelle puissance de 2 est égale à 32 ?
+
+**EX-A036-M-02** — maitrise, qcm, 75 s
+
+Que vaut (-2)^{-3} ?
+
+- **a.** 1/8
+  <br>*Erreur visée :* L'élève prend bien l'inverse, mais oublie que (-2)^3 est négatif : trois facteurs négatifs donnent un produit négatif, (-2)^3 = -8.
+- **b.** -8
+  <br>*Erreur visée :* L'élève calcule (-2)^3 = -8 et oublie que l'exposant est négatif : il faut encore prendre l'inverse de -8.
+- **c.** -1/8 ✅
+- **d.** 6
+  <br>*Erreur visée :* L'élève multiplie la base par l'exposant : (-2) × (-3) = 6. Une puissance est un produit de facteurs égaux, pas le produit de la base par l'exposant.
+
+*Corrigé.* (1) Par définition, (-2)^{-3} = 1/(-2)^3 : c'est l'inverse de (-2)^3. (2) (-2)^3 = (-2) × (-2) × (-2) = 4 × (-2) = -8 : trois facteurs négatifs, le produit est négatif. (3) L'inverse de -8 est -1/8, car (-8) × \left(-1/8\right) = 1. (4) Les deux signes moins n'ont pas le même rôle : celui de la base donne le signe du résultat, celui de l'exposant indique l'inverse. La bonne réponse est c.
+
+*Indice.* Calcule d'abord (-2)^3, puis prends son inverse.
+
+---
+
+## `A037` · Puissances de 10 d'exposant négatif ; préfixes milli, micro, nano — 3e, difficulté 6
+
+*Savoir que 10⁻ⁿ = 0,0…01, le chiffre 1 étant au n-ième rang après la virgule (10⁻³ = 0,001 ; 10⁻⁶ = 0,000 001), passer d'une écriture à l'autre, multiplier un décimal par 10⁻ⁿ (4,5 × 10⁻² = 0,045), et connaître les préfixes milli (10⁻³), micro (10⁻⁶) et nano (10⁻⁹), avec kilo, méga et giga, pour convertir (250 nm = 250 × 10⁻⁹ m ; 3 ms = 0,003 s). L'erreur type est d'écrire un zéro de trop ou de moins (10⁻³ = 0,0001). Réponse : un nombre décimal ou l'exposant (un relatif) ; jamais une puissance tapée. Figure : aucune.*
+
+> « Définir les puissances d'exposant négatif d'un nombre. » — *Cycle 4, classe de 3e, Nombres et calculs, Puissances, Objectifs d'apprentissage*
+> « Les sciences de l'atome, la microbiologie, les sciences chimiques, les nanotechnologies fournissent des situations propices à côtoyer les exposants négatifs. » — *Cycle 4, Nombres et calculs, présentation commune aux trois classes*
+> « On introduit en fonction des besoins les préfixes des puissances de dix de nano à giga. On fait le lien avec les conversions. » — *Cycle 4, Nombres et calculs, présentation commune aux trois classes*
+
+**EX-A037-D-01** — decouverte, numerique, 45 s
+
+On sait que 10^{-1} = 0{,}1 et 10^{-2} = 0{,}01. Quelle est l'écriture décimale de 10^{-6} ?
+
+**Réponse :** 1e-06
+
+*Corrigé.* (1) 10^{-6} est l'inverse de 10^6 = 1 000 000 : c'est un millionième. (2) Le chiffre 1 de 10^{-n} est au n-ième rang après la virgule : 10^{-1} = 0{,}1 (premier rang), 10^{-2} = 0{,}01 (deuxième rang), et ainsi de suite. (3) Donc 10^{-6} = 0{,}000 001 : cinq zéros après la virgule, puis le 1 au sixième rang.
+
+*Indice.* Dans 10^{-2} = 0{,}01, à quel rang après la virgule se trouve le chiffre 1 ?
+
+**EX-A037-D-02** — decouverte, qcm, 40 s
+
+Le préfixe kilo signifie 10^{3}. Combien de mètres vaut un millimètre ?
+
+- **a.** 10^{3} m
+  <br>*Erreur visée :* L'élève confond milli et kilo : 10^{3} m, c'est un kilomètre. Le préfixe milli désigne un millième, pas mille.
+- **b.** 10^{-2} m
+  <br>*Erreur visée :* L'élève confond le millimètre avec le centimètre : un centième de mètre, c'est 1 cm, soit 10^{-2} m.
+- **c.** 10^{-3} m ✅
+- **d.** -1 000 m
+  <br>*Erreur visée :* L'élève croit qu'un exposant négatif donne un nombre négatif. Une longueur n'est jamais négative : 10^{-3} est un petit nombre positif.
+
+*Corrigé.* (1) Milli signifie « un millième » : 1 mm est la millième partie d'un mètre, donc 1 mm = 0,001 m. (2) 0{,}001 = 1/1 000 = 1/10^3 = 10^{-3}. (3) Donc 1 mm = 10^{-3} m. Kilo et milli se répondent : 1 km = 10^{3} m et 1 mm = 10^{-3} m. La bonne réponse est c.
+
+*Indice.* Combien de millimètres y a-t-il dans un mètre ?
+
+**EX-A037-E-01** — entrainement, numerique, 45 s
+
+Écris 62 × 10^{-3} sous forme décimale.
+
+**Réponse :** 0.062
+
+*Corrigé.* (1) 10^{-3} = 0{,}001 : multiplier par 10^{-3}, c'est multiplier par 0,001, donc diviser par 1 000. (2) 62 ÷ 1 000 : la virgule recule de 3 rangs vers la gauche, 62 \to 6{,}2 \to 0{,}62 \to 0{,}062. (3) Donc 62 × 10^{-3} = 0{,}062. Le résultat est plus petit que 62, normal puisque 10^{-3} est plus petit que 1.
+
+*Indice.* Multiplier par 10^{-3}, c'est diviser par quel nombre ?
+
+**EX-A037-E-02** — entrainement, vrai_faux, 50 s
+
+Un virus mesure environ 0,000 000 1 m. Nadia affirme : « C'est 10^{-7} m. » A-t-elle raison ?
+
+**Réponse :** True
+
+*Corrigé.* (1) Dans 0,000 000 1, il y a six zéros après la virgule, puis le chiffre 1, au septième rang. (2) Le chiffre 1 de 10^{-n} est au n-ième rang après la virgule : ici n = 7, donc 0,000 000 1 = 10^{-7}. (3) Compter les zéros donnerait 6, et c'est l'erreur à éviter : 10^{-6} = 0{,}000 001 n'a que cinq zéros après la virgule. Nadia a raison.
+
+*Indice.* À quel rang après la virgule se trouve le chiffre 1 ?
+
+**EX-A037-M-01** — maitrise, numerique, 90 s
+
+Le flash d'un appareil photo dure 250 µs (microsecondes). Combien de millisecondes cela fait-il ?
+
+**Réponse :** 0.25
+
+*Corrigé.* (1) Micro signifie 10^{-6} : 1 µs = 0,000 001 s. Milli signifie 10^{-3} : 1 ms = 0,001 s. (2) 0{,}001 = 1 000 × 0{,}000 001 : une milliseconde contient 1 000 microsecondes. (3) Donc 250 µs = 250 ÷ 1 000 ms = 0,25 ms. (4) Vérification en secondes : 250 × 10^{-6} = 0{,}000 25 s et 0{,}25 × 10^{-3} = 0{,}000 25 s.
+
+*Indice.* Combien de microsecondes y a-t-il dans une milliseconde ?
+
+**EX-A037-M-02** — maitrise, qcm, 60 s
+
+Le diamètre d'une molécule d'ADN est d'environ 2 nm (nanomètres). Quelle est cette longueur en mètres ?
+
+- **a.** 0,000 000 02 m
+  <br>*Erreur visée :* L'élève écrit un zéro de moins : le chiffre 2 est alors au huitième rang, et 0,000 000 02 m = 2 × 10⁻⁸ m.
+- **b.** 0,000 000 002 m ✅
+- **c.** 0,000 002 m
+  <br>*Erreur visée :* L'élève confond nano et micro : 0,000 002 m = 2 µm = 2 × 10⁻⁶ m.
+- **d.** 2 000 000 000 m
+  <br>*Erreur visée :* L'élève oublie le signe de l'exposant : nano signifie 10⁻⁹, pas 10⁹ (giga). Une molécule ne mesure pas deux millions de kilomètres.
+
+*Corrigé.* (1) Nano signifie 10^{-9} : 1 nm = 10^{-9} m = 0,000 000 001 m, le chiffre 1 étant au neuvième rang après la virgule. (2) 2 nm = 2 × 0,000 000 001 m = 0,000 000 002 m : le chiffre 2 est au neuvième rang. (3) Vérification : 0,000 000 02 m = 2 × 10^{-8} m et 0,000 002 m = 2 × 10^{-6} m. La bonne réponse est b.
+
+*Indice.* Nano signifie 10^{-9} : à quel rang après la virgule se trouve le chiffre 1 de 10^{-9} ?
+
+---
+
+## `A038` · Notation scientifique d'un nombre — 3e, difficulté 6
+
+*Écrire un nombre décimal positif sous la forme a × 10ⁿ, avec a décimal, 1 ≤ a < 10, et n entier relatif : 32 000 = 3,2 × 10⁴ ; 0,000 45 = 4,5 × 10⁻⁴ ; reconnaître une écriture qui n'est pas scientifique (32 × 10³ ; 0,32 × 10⁵) et la corriger ; passer de la notation scientifique à l'écriture décimale (6,02 × 10⁵ = 602 000). L'erreur type est de se tromper de sens sur l'exposant (0,000 45 = 4,5 × 10⁴) ou de garder un facteur hors de l'intervalle (45 × 10⁻⁵). Réponse : l'écriture a × 10ⁿ tapée (texte : la correction lit le signe ×, la lettre x, « fois » et l'exposant tapé de plusieurs façons), ou choisie (QCM), ou le facteur a, l'exposant n, l'écriture décimale (un nombre). Figure : aucune.*
+
+> « Déterminer la notation scientifique d'un nombre. » — *Cycle 4, classe de 3e, Nombres et calculs, Puissances, Objectifs d'apprentissage*
+
+**EX-A038-D-01** — decouverte, qcm, 50 s
+
+Dans la notation scientifique a × 10^n, le nombre a est compris entre 1 (inclus) et 10 (exclu). Quelle est la notation scientifique de 47 000 ?
+
+- **a.** 47 × 10^{3}
+  <br>*Erreur visée :* L'écriture vaut bien 47 000, mais 47 n'est pas compris entre 1 et 10 : ce n'est pas une notation scientifique.
+- **b.** 4{,}7 × 10^{4} ✅
+- **c.** 0{,}47 × 10^{5}
+  <br>*Erreur visée :* L'écriture vaut bien 47 000, mais 0,47 est plus petit que 1 : ce n'est pas une notation scientifique.
+- **d.** 4{,}7 × 10^{3}
+  <br>*Erreur visée :* L'élève prend pour exposant le nombre de zéros de 47 000, soit 3. Or 4{,}7 × 10^{3} = 4 700 : il faut compter de combien de rangs la virgule se déplace.
+
+*Corrigé.* (1) Le nombre a doit avoir un seul chiffre non nul avant la virgule : ici a = 4{,}7. (2) Pour passer de 4,7 à 47 000, la virgule avance de 4 rangs vers la droite : on multiplie par 10 000 = 10^4. (3) Donc 47 000 = 4{,}7 × 10^{4}. Les écritures a et c valent aussi 47 000, mais leur facteur n'est pas entre 1 et 10. La bonne réponse est b.
+
+*Indice.* Quel nombre compris entre 1 et 10 s'écrit avec les chiffres 4 et 7 ?
+
+**EX-A038-D-02** — decouverte, numerique, 40 s
+
+Écris 3{,}05 × 10^{4} en écriture décimale.
+
+**Réponse :** 30500
+
+*Corrigé.* (1) 10^4 = 10 000 : multiplier par 10^4, c'est multiplier par 10 000. (2) La virgule avance de 4 rangs vers la droite, en complétant par des zéros : 3{,}05 \to 30{,}5 \to 305 \to 3 050 \to 30 500. (3) Donc 3{,}05 × 10^{4} = 30 500.
+
+*Indice.* Multiplier par 10^4, c'est multiplier par 10 000.
+
+**EX-A038-E-01** — entrainement, numerique, 50 s
+
+On écrit 0,000 62 en notation scientifique : 0{,}000 62 = 6{,}2 × 10^n. Que vaut n ?
+
+**Réponse :** -4
+
+*Corrigé.* (1) Pour passer de 6,2 à 0,000 62, la virgule recule de 4 rangs vers la gauche : 6{,}2 \to 0{,}62 \to 0{,}062 \to 0{,}006 2 \to 0{,}000 62. (2) Reculer de 4 rangs, c'est diviser par 10 000, donc multiplier par 10^{-4}. (3) Donc n = -4. Le nombre est plus petit que 1 : l'exposant est négatif.
+
+*Indice.* De combien de rangs, et dans quel sens, la virgule se déplace-t-elle entre 6,2 et 0,000 62 ?
+
+**EX-A038-E-02** — entrainement, vrai_faux, 45 s
+
+Jade affirme : « La notation scientifique de 2 800 000 est 28 × 10^{5}. » A-t-elle raison ?
+
+**Réponse :** False
+
+*Corrigé.* (1) L'égalité est juste : 28 × 10^{5} = 28 × 100 000 = 2 800 000. (2) Mais dans une notation scientifique, le facteur doit être compris entre 1 (inclus) et 10 (exclu). Or 28 est plus grand que 10. (3) La notation scientifique est 2{,}8 × 10^{6}, car 2{,}8 × 1 000 000 = 2 800 000. Jade a tort.
+
+*Indice.* Le facteur 28 est-il compris entre 1 et 10 ?
+
+**EX-A038-M-01** — maitrise, numerique, 90 s
+
+L'écriture 0{,}36 × 10^{-2} n'est pas une notation scientifique. On la corrige : 0{,}36 × 10^{-2} = 3{,}6 × 10^n. Que vaut n ?
+
+**Réponse :** -3
+
+*Corrigé.* (1) On revient à l'écriture décimale : multiplier par 10^{-2}, c'est diviser par 100, donc 0{,}36 × 10^{-2} = 0{,}003 6. (2) Dans 0,003 6, le premier chiffre non nul, 3, est au troisième rang après la virgule : 0{,}003 6 = 3{,}6 × 0{,}001 = 3{,}6 × 10^{-3}. (3) Donc n = -3. Le facteur a été multiplié par 10 (de 0,36 à 3,6) : pour garder la même valeur, la puissance de 10 doit être divisée par 10, et l'exposant baisse de 1.
+
+*Indice.* Écris d'abord 0{,}36 × 10^{-2} en écriture décimale.
+
+**EX-A038-M-02** — maitrise, texte, 90 s
+
+La distance moyenne entre la Terre et le Soleil est de 149 600 000 km. Écris ce nombre en notation scientifique (tape ^ pour l'exposant).
+
+**Réponse :** 1,496 × 10⁸
+
+*Corrigé.* (1) Le facteur doit avoir un seul chiffre non nul avant la virgule : on place la virgule après le 1, ce qui donne 1,496 (les zéros de la fin, placés après la virgule, ne servent plus). (2) De 1,496 à 149 600 000, la virgule avance de 8 rangs vers la droite : on multiplie par 100 000 000 = 10^8. (3) Donc 149 600 000 = 1{,}496 × 10^{8} km.
+
+*Indice.* Place la virgule juste après le premier chiffre, puis compte de combien de rangs elle s'est déplacée.
+
+---
+
+## `A040` · Problèmes utilisant la racine carrée — 3e, difficulté 6
+
+*Résoudre un problème où l'on connaît l'aire d'un carré et où l'on cherche la longueur de son côté (un champ carré de 2 500 m² a un côté de √2 500 = 50 m ; une dalle carrée de 30 cm² a un côté de √30 ≈ 5,5 cm), en donnant la valeur exacte quand l'aire est un carré parfait, une valeur approchée au dixième ou au centième à la calculatrice sinon, et en contrôlant par l'encadrement (5 < √30 < 6). L'erreur type est de diviser l'aire par 2 ou par 4 (confusion avec le périmètre). Le théorème de Pythagore viendra avec la géométrie (étape 8). Réponse : un nombre, avec une tolérance posée dans answer.tolerance pour une valeur approchée. Figure utile : geometrie, carré dont l'aire est écrite et le côté demandé.*
+
+> « Résoudre des problèmes utilisant la racine carrée. » — *Cycle 4, classe de 3e, Nombres et calculs, Racine carrée, Objectifs d'apprentissage*
+> « Donner les carrés des nombres entiers compris entre 0 et 12. » — *Cycle 4, classe de 3e, Nombres et calculs, Racine carrée, Automatismes*
+
+**EX-A040-D-01** — decouverte, numerique, 45 s
+
+Une place carrée a une aire de 3 600 m². Quelle est la longueur de son côté ?
+
+**Réponse :** 60
+
+*Corrigé.* (1) L'aire d'un carré est côté × côté. Le côté est donc le nombre positif dont le carré vaut 3 600 : c'est \sqrt{3 600}. (2) On connaît 6^2 = 36. Or 60 × 60 = 3 600, donc 60^2 = 3 600 et \sqrt{3 600} = 60. (3) Le côté de la place mesure 60 m. (4) Piège : diviser l'aire par 4 (900 m) ou par 2 (1 800 m) donne un carré d'aire bien trop grande : 900 × 900 = 810 000 m².
+
+*Indice.* Quel nombre multiplié par lui-même donne 3 600 ? Pense à 6 × 6.
+
+**EX-A040-D-02** — decouverte, qcm, 45 s
+
+Une dalle carrée a une aire de 40 cm². À la calculatrice, quelle est la longueur de son côté, arrondie au dixième ?
+
+- **a.** 6,3 cm ✅
+- **b.** 20 cm
+  <br>*Erreur visée :* L'élève divise l'aire par 2. Un carré de 20 cm de côté aurait une aire de 20 × 20 = 400 cm².
+- **c.** 6,4 cm
+  <br>*Erreur visée :* L'élève arrondit au dixième supérieur sans regarder le chiffre des centièmes : 6,32… s'arrondit à 6,3, car 2 est inférieur à 5. D'ailleurs 6,4 × 6,4 = 40,96, plus loin de 40 que 6,3 × 6,3 = 39,69.
+
+*Corrigé.* (1) Le côté est le nombre positif dont le carré vaut 40 : c'est \sqrt{40}. (2) 40 n'est pas un carré parfait : 6^2 = 36 et 7^2 = 49, donc le côté est entre 6 cm et 7 cm. Cela écarte 20 cm et 10 cm. (3) La calculatrice donne \sqrt{40} \approx 6{,}324. Au dixième, on regarde le chiffre des centièmes : 2 est inférieur à 5, on garde 6,3 et non 6,4. Le côté mesure environ 6,3 cm. La bonne réponse est a.
+
+*Indice.* Le côté est la racine carrée de l'aire. Entre quels entiers se trouve-t-il ?
+
+**EX-A040-E-01** — entrainement, numerique, 60 s
+
+Un potager carré a une aire de 75 m². À la calculatrice, donne la longueur de son côté, arrondie au centième.
+
+**Réponse :** 8.66
+
+*Corrigé.* (1) Le côté du potager est le nombre positif dont le carré vaut 75 : c'est \sqrt{75}. (2) On contrôle d'abord l'ordre de grandeur : 8^2 = 64 et 9^2 = 81, donc le côté est entre 8 m et 9 m. (3) La calculatrice donne \sqrt{75} \approx 8{,}6602. Au centième, on regarde le chiffre des millièmes : 0 est inférieur à 5, on garde 8,66. (4) Le côté mesure environ 8,66 m, ce qui est bien entre 8 m et 9 m.
+
+*Indice.* Le côté est la racine carrée de l'aire. Vérifie que ton résultat est entre 8 et 9.
+
+**EX-A040-E-02** — entrainement, numerique, 75 s
+
+Un enclos carré a une aire de 1 225 m². On veut le clôturer sur tout son tour. Quelle longueur de clôture faut-il ?
+
+**Réponse :** 140
+
+*Corrigé.* (1) La clôture fait le tour de l'enclos : sa longueur est le périmètre du carré, soit 4 × côté. Il faut d'abord trouver le côté. (2) Le côté est le nombre positif dont le carré vaut 1 225 : c'est \sqrt{1 225}. La calculatrice donne 35, et en effet 35 × 35 = 1 225. (3) Le périmètre vaut 4 × 35 = 140 m. Il faut 140 m de clôture. (4) Piège : 1 225 ÷ 4 = 306,25 confond aire et périmètre ; et 35 m n'est que la longueur d'un côté.
+
+*Indice.* Pour connaître le tour de l'enclos, il faut d'abord la longueur d'un côté.
+
+**EX-A040-M-01** — maitrise, numerique, 90 s
+
+On veut dessiner un carré dont l'aire est le double de celle d'un carré de 6 cm de côté. Quelle doit être la longueur de son côté, arrondie au millimètre ?
+
+**Réponse :** 8.5
+
+*Corrigé.* (1) Le carré de 6 cm de côté a une aire de 6 × 6 = 36 cm². Le nouveau carré doit avoir une aire de 2 × 36 = 72 cm². (2) Son côté est le nombre positif dont le carré vaut 72 : c'est \sqrt{72}. Contrôle : 8^2 = 64 et 9^2 = 81, donc le côté est entre 8 cm et 9 cm. (3) La calculatrice donne \sqrt{72} \approx 8{,}485. Au millimètre, c'est-à-dire au dixième de centimètre : le chiffre des centièmes est 8, on arrondit à 8,5 cm. (4) Le côté doit mesurer environ 8,5 cm. (5) Piège : doubler le côté (12 cm) donne un carré d'aire 144 cm², quatre fois plus grande et non deux fois.
+
+*Indice.* Calcule d'abord l'aire du nouveau carré. Doubler l'aire, est-ce doubler le côté ?
+
+**EX-A040-M-02** — maitrise, qcm, 60 s
+
+Une piscine carrée a une aire de 90 m². Sans calculatrice, quelle est la seule valeur possible pour la longueur approchée de son côté ?
+
+- **a.** 45 m
+  <br>*Erreur visée :* L'élève divise l'aire par 2. Un carré de 45 m de côté aurait une aire de 45 × 45 = 2 025 m².
+- **b.** 22,5 m
+  <br>*Erreur visée :* L'élève divise l'aire par 4, comme on le ferait avec un périmètre. Un côté de 22,5 m donnerait une aire de plus de 500 m².
+- **c.** 10,5 m
+  <br>*Erreur visée :* L'élève sent que le côté est voisin de 10 mais ne contrôle pas par le carré : un côté de plus de 10 m donne une aire de plus de 100 m², donc plus que 90 m².
+- **d.** 9,5 m ✅
+
+*Corrigé.* (1) Le côté est le nombre positif dont le carré vaut 90 : c'est \sqrt{90}. (2) On encadre 90 par deux carrés parfaits consécutifs : 9^2 = 81 et 10^2 = 100. Donc 9 < \sqrt{90} < 10 : le côté est entre 9 m et 10 m. (3) Parmi les propositions, seule 9,5 m est entre 9 m et 10 m. La bonne réponse est d. (4) La calculatrice le confirme : \sqrt{90} \approx 9{,}49, soit environ 9,5 m.
+
+*Indice.* Entre quels carrés parfaits se trouve 90 ? Le côté est donc entre quels entiers ?
+
+---
+
+## `B023` · Multiplier et diviser des puissances — 3e, difficulté 6
+
+*Calculer le produit et le quotient de puissances d'un même nombre, avec des exposants positifs ou négatifs, en revenant à la définition : 2⁵ ÷ 2³ = (2 × 2 × 2 × 2 × 2) ÷ (2 × 2 × 2) = 2², donc aᵐ ÷ aⁿ = aᵐ⁻ⁿ ; 10⁴ × 10⁻⁶ = 10⁻² ; 10³ ÷ 10⁻² = 10⁵ ; et combiner avec les puissances de même exposant ((2 × 5)³ = 2³ × 5³). L'erreur type est de diviser les exposants (2⁶ ÷ 2² = 2³) ou de se tromper de signe en soustrayant un exposant négatif. Réponse : l'exposant du résultat (un relatif) ou sa valeur ; QCM entre écritures. Figure : aucune.*
+
+> « Multiplier et diviser des puissances. » — *Cycle 4, classe de 3e, Nombres et calculs, Puissances, Objectifs d'apprentissage*
+> « Multiplication de puissances de même exposant positif de deux nombres. » — *Cycle 4, classe de 3e, Nombres et calculs, Puissances, Automatismes*
+
+**EX-B023-D-01** — decouverte, numerique, 45 s
+
+En écrivant tous les facteurs : 3^6 ÷ 3^2 = 3 × 3 × 3 × 3 × 3 × 3/3 × 3 Ce quotient s'écrit 3^n. Que vaut n ?
+
+**Réponse :** 4
+
+*Corrigé.* (1) On simplifie la fraction par 3 × 3 : les deux facteurs 3 du dénominateur s'éliminent avec deux facteurs 3 du numérateur. (2) Il reste 6 - 2 = 4 facteurs 3 au numérateur : 3^6 ÷ 3^2 = 3 × 3 × 3 × 3 = 3^4. (3) Donc n = 4. Pour diviser deux puissances d'un même nombre, on soustrait les exposants ; on ne les divise pas (6 divisé par 2 donnerait 3, ce qui est faux).
+
+*Indice.* Combien de facteurs 3 reste-t-il après simplification ?
+
+**EX-B023-D-02** — decouverte, qcm, 45 s
+
+Écris 7^{6} × 7^{-2} sous la forme d'une seule puissance de 7.
+
+- **a.** 7^{-12}
+  <br>*Erreur visée :* L'élève multiplie les exposants : 6 × (-2) = -12. Pour un produit de puissances d'un même nombre, on additionne les exposants.
+- **b.** 7^{8}
+  <br>*Erreur visée :* L'élève soustrait l'exposant au lieu de l'ajouter : 6 - (-2) = 8. C'est la règle du quotient, pas celle du produit.
+- **c.** 7^{4} ✅
+- **d.** 14^{4}
+  <br>*Erreur visée :* L'élève additionne les bases, 7 + 7 = 14 : la base 7 ne change pas.
+
+*Corrigé.* (1) 7^{-2} = 1/7^2 : multiplier par 7^{-2}, c'est diviser par 7^2. (2) 7^{6} ÷ 7^{2} = 7^{6-2} = 7^{4} : on retire deux facteurs 7. (3) C'est la même chose que d'ajouter les exposants : 6 + (-2) = 4. La bonne réponse est c.
+
+*Indice.* Multiplier par 7^{-2}, c'est diviser par quel nombre ?
+
+**EX-B023-E-01** — entrainement, numerique, 50 s
+
+Le quotient 5^3 ÷ 5^7 s'écrit 5^n. Que vaut n ?
+
+**Réponse :** -4
+
+*Corrigé.* (1) On soustrait les exposants : 5^3 ÷ 5^7 = 5^{3-7} = 5^{-4}. (2) Vérification par les facteurs : 5 × 5 × 5/5 × 5 × 5 × 5 × 5 × 5 × 5. Après simplification, il reste 1/5 × 5 × 5 × 5 = 1/5^4 = 5^{-4}. (3) Donc n = -4 : le dénominateur a plus de facteurs que le numérateur, l'exposant est négatif. Attention à l'ordre : c'est 3 - 7, pas 7 - 3.
+
+*Indice.* Soustrais l'exposant du diviseur à celui du nombre divisé, dans cet ordre.
+
+**EX-B023-E-02** — entrainement, vrai_faux, 50 s
+
+Sami écrit : 2^8 ÷ 2^2 = 2^4. A-t-il raison ?
+
+**Réponse :** False
+
+*Corrigé.* (1) Pour diviser deux puissances de 2, on soustrait les exposants : 2^8 ÷ 2^2 = 2^{8-2} = 2^6. (2) Sami a divisé les exposants (8 divisé par 2 donne 4). Vérification par les valeurs : 2^8 = 256, 2^2 = 4 et 256 ÷ 4 = 64 = 2^6, alors que 2^4 = 16. (3) Sami a tort.
+
+*Indice.* Calcule 2^8 et 2^2, puis leur quotient.
+
+**EX-B023-M-01** — maitrise, numerique, 90 s
+
+Le calcul 10^3 × 10^{-5} ÷ 10^{-4} s'écrit 10^n. Que vaut n ?
+
+**Réponse :** 2
+
+*Corrigé.* (1) On calcule de gauche à droite. Produit : 10^3 × 10^{-5} = 10^{3 + (-5)} = 10^{-2}. (2) Quotient : 10^{-2} ÷ 10^{-4} = 10^{-2 - (-4)} = 10^{-2 + 4} = 10^{2}. Soustraire -4, c'est ajouter 4. (3) Donc n = 2. L'erreur fréquente donne -2 - 4 = -6 : on oublie que l'on soustrait un nombre négatif.
+
+*Indice.* Soustraire un nombre négatif, c'est ajouter son opposé.
+
+**EX-B023-M-02** — maitrise, qcm, 90 s
+
+Écris 2^5 × 5^5 ÷ 10^3 sous la forme d'une seule puissance de 10.
+
+- **a.** 10^{7}
+  <br>*Erreur visée :* L'élève additionne les exposants dans 2^5 × 5^5 et trouve 10^{10}, puis 10^{10} ÷ 10^3 = 10^7 : additionner les exposants ne vaut que pour une même base. Ici l'exposant est le même, on multiplie les bases : 2^5 × 5^5 = 10^5.
+- **b.** 10^{2} ✅
+- **c.** 10^{22}
+  <br>*Erreur visée :* L'élève multiplie les exposants : 2^5 × 5^5 deviendrait 10^{25}, puis 10^{25} ÷ 10^3 = 10^{22}. Or 2^5 × 5^5 = (2 × 5)^5 = 10^5.
+
+*Corrigé.* (1) 2^5 et 5^5 ont le même exposant : 2^5 × 5^5 = (2 × 5)^5 = 10^5, car on regroupe chaque facteur 2 avec un facteur 5. (2) 10^5 ÷ 10^3 = 10^{5-3} = 10^2. (3) Vérification : 2^5 = 32, 5^5 = 3 125, 32 × 3 125 = 100 000, et 100 000 ÷ 1 000 = 100 = 10^2. La bonne réponse est b.
+
+*Indice.* Regroupe chaque facteur 2 avec un facteur 5 : que donne 2 × 5 ?
+
+---
+
+## `A039` · Problèmes avec la notation scientifique — 3e, difficulté 6
+
+*Résoudre un problème issu des sciences ou de la vie courante en calculant avec des nombres en notation scientifique : produit ou quotient des facteurs, puis des puissances de 10 ((3 × 10⁵) × (2 × 10³) = 6 × 10⁸ ; un disque de 4,8 × 10¹¹ octets contient (4,8 × 10¹¹) ÷ (1,2 × 10⁶) = 4 × 10⁵ photos de 1,2 Mo ; la lumière parcourt 1,5 × 10⁸ km en (1,5 × 10⁸) ÷ (3 × 10⁵) = 0,5 × 10³ = 500 s), comparer deux ordres de grandeur (un atome, 10⁻¹⁰ m, et une bactérie, 10⁻⁶ m : la bactérie est 10⁴ fois plus grande), ramener un résultat en notation scientifique (0,5 × 10³ = 5 × 10²). L'erreur type est d'additionner les facteurs ou de multiplier les exposants. Réponse : un nombre, l'exposant d'un ordre de grandeur, ou un QCM entre écritures. Figure : aucune.*
+
+> « Résoudre des problèmes notamment en utilisant la notation scientifique. » — *Cycle 4, classe de 3e, Nombres et calculs, Puissances, Objectifs d'apprentissage*
+> « Ce travail est mené en lien avec les unités, les ordres de grandeur, dans les autres disciplines, en particulier la physique-chimie. » — *Cycle 4, Nombres et calculs, présentation commune aux trois classes*
+
+**EX-A039-D-01** — decouverte, numerique, 45 s
+
+Une goutte d'eau contient environ 1{,}5 × 10^{21} molécules. Combien de molécules contiennent 1 000 gouttes, soit environ 50 mL ? Le résultat s'écrit 1{,}5 × 10^n : que vaut n ?
+
+**Réponse :** 24
+
+*Corrigé.* (1) 1 000 gouttes contiennent 1 000 × (1{,}5 × 10^{21}) molécules. (2) 1 000 = 10^{3}, donc le produit vaut 1{,}5 × 10^{3} × 10^{21} = 1{,}5 × 10^{3+21} = 1{,}5 × 10^{24}. (3) Donc n = 24. Le facteur 1,5 ne change pas : seule la puissance de 10 est multipliée par 10^3, et on additionne les exposants.
+
+*Indice.* Écris 1 000 comme une puissance de 10.
+
+**EX-A039-D-02** — decouverte, qcm, 50 s
+
+Un écran compte 2 × 10^{3} lignes de 4 × 10^{3} pixels chacune. Combien de pixels a-t-il en tout ?
+
+- **a.** 6 × 10^{6}
+  <br>*Erreur visée :* L'élève additionne les facteurs, 2 + 4 = 6, au lieu de les multiplier.
+- **b.** 8 × 10^{9}
+  <br>*Erreur visée :* L'élève multiplie les exposants, 3 × 3 = 9 : pour multiplier deux puissances de 10, on additionne les exposants.
+- **c.** 8 × 10^{3}
+  <br>*Erreur visée :* L'élève garde l'exposant commun, 3, sans l'ajouter à lui-même : or 10^{3} × 10^{3} = 10^{6}.
+- **d.** 8 × 10^{6} ✅
+
+*Corrigé.* (1) Le nombre de pixels est le produit (2 × 10^{3}) × (4 × 10^{3}). (2) On regroupe les facteurs d'un côté, les puissances de 10 de l'autre : (2 × 4) × (10^{3} × 10^{3}) = 8 × 10^{6}. (3) Vérification : 2 000 lignes de 4 000 pixels font 8 000 000 pixels. La bonne réponse est d.
+
+*Indice.* Multiplie les facteurs entre eux, puis les puissances de 10 entre elles.
+
+**EX-A039-E-01** — entrainement, numerique, 75 s
+
+Une bactérie a une masse d'environ 2 × 10^{-12} g. Quelle est la masse, en grammes, de 4{,}5 × 10^{9} bactéries ? Donne l'écriture décimale.
+
+**Réponse :** 0.009
+
+*Corrigé.* (1) Masse totale : (4{,}5 × 10^{9}) × (2 × 10^{-12}) = (4{,}5 × 2) × (10^{9} × 10^{-12}). (2) 4{,}5 × 2 = 9 et 10^{9} × 10^{-12} = 10^{9 + (-12)} = 10^{-3} : la masse est 9 × 10^{-3} g. (3) 10^{-3} = 0{,}001, donc 9 × 10^{-3} = 0{,}009 g : moins d'un centigramme pour des milliards de bactéries.
+
+*Indice.* Regroupe les facteurs d'un côté, les puissances de 10 de l'autre.
+
+**EX-A039-E-02** — entrainement, qcm, 60 s
+
+Un globule rouge mesure environ 10^{-5} m, un atome environ 10^{-10} m. Combien de fois le globule rouge est-il plus grand que l'atome ?
+
+- **a.** 10^{2} fois
+  <br>*Erreur visée :* L'élève divise les exposants : (-10) ÷ (-5) = 2. Pour diviser deux puissances de 10, on soustrait les exposants.
+- **b.** 10^{5} fois ✅
+- **c.** 10^{-15} fois
+  <br>*Erreur visée :* L'élève multiplie les deux longueurs au lieu de les diviser : 10^{-5} × 10^{-10} = 10^{-15}.
+- **d.** 10^{-5} fois
+  <br>*Erreur visée :* L'élève fait le quotient à l'envers, 10^{-10} ÷ 10^{-5} = 10^{-5} : il compare l'atome au globule. Un « nombre de fois plus grand » doit dépasser 1.
+
+*Corrigé.* (1) « Combien de fois plus grand » se calcule par un quotient : la grande longueur divisée par la petite, 10^{-5} ÷ 10^{-10}. (2) 10^{-5} ÷ 10^{-10} = 10^{-5 - (-10)} = 10^{-5 + 10} = 10^{5}. (3) Le globule rouge est 10^5 = 100 000 fois plus grand que l'atome. La bonne réponse est b.
+
+*Indice.* Divise la plus grande longueur par la plus petite.
+
+**EX-A039-M-01** — maitrise, numerique, 120 s
+
+Un signal radio parcourt 3 × 10^{5} km par seconde. Une sonde près de Saturne est à 1{,}2 × 10^{9} km de la Terre. Combien de secondes met son signal pour nous parvenir ?
+
+**Réponse :** 4000
+
+*Corrigé.* (1) En une seconde, le signal parcourt 3 × 10^{5} km : la durée est le quotient (1{,}2 × 10^{9}) ÷ (3 × 10^{5}). (2) Facteurs : 1{,}2 ÷ 3 = 0{,}4. Puissances de 10 : 10^{9} ÷ 10^{5} = 10^{4}. (3) 0{,}4 × 10^{4} n'est pas une notation scientifique : 0{,}4 = 4 × 10^{-1}, donc 0{,}4 × 10^{4} = 4 × 10^{3}. (4) 4 × 10^{3} = 4 000 : le signal met 4 000 secondes, un peu plus d'une heure.
+
+*Indice.* Combien de fois la distance parcourue en une seconde est-elle contenue dans la distance de la sonde ?
+
+**EX-A039-M-02** — maitrise, vrai_faux, 90 s
+
+Une super-colonie compte 6 × 10^{7} fourmis de 5 × 10^{-3} g chacune. Léa affirme : « Leur masse totale est 3 × 10^{5} g. » A-t-elle raison ?
+
+**Réponse :** True
+
+*Corrigé.* (1) Masse totale : (6 × 10^{7}) × (5 × 10^{-3}) = (6 × 5) × (10^{7} × 10^{-3}). (2) 6 × 5 = 30 et 10^{7} × 10^{-3} = 10^{7 + (-3)} = 10^{4} : la masse est 30 × 10^{4} g. (3) 30 = 3 × 10, donc 30 × 10^{4} = 3 × 10^{1} × 10^{4} = 3 × 10^{5} g, soit 300 000 g, c'est-à-dire 300 kg. (4) Léa a raison.
+
+*Indice.* Multiplie les facteurs, puis les puissances de 10, et vérifie que le facteur obtenu est compris entre 1 et 10.
 
 ---
 

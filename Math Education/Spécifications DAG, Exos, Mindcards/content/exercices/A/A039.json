@@ -1,0 +1,179 @@
+[
+  {
+    "id": "EX-A039-D-01",
+    "skill_id": "A039",
+    "level": "decouverte",
+    "type": "numerique",
+    "statement": "Une goutte d'eau contient environ $1{,}5 \\times 10^{21}$ molécules. Combien de molécules contiennent 1 000 gouttes, soit environ 50 mL ?\n\nLe résultat s'écrit $1{,}5 \\times 10^n$ : que vaut $n$ ?",
+    "image": null,
+    "answer": {
+      "value": 24
+    },
+    "solution_steps": [
+      "1 000 gouttes contiennent $1\\,000 \\times (1{,}5 \\times 10^{21})$ molécules.",
+      "$1\\,000 = 10^{3}$, donc le produit vaut $1{,}5 \\times 10^{3} \\times 10^{21} = 1{,}5 \\times 10^{3+21} = 1{,}5 \\times 10^{24}$.",
+      "Donc $n = 24$. Le facteur 1,5 ne change pas : seule la puissance de 10 est multipliée par $10^3$, et on additionne les exposants."
+    ],
+    "hint": "Écris 1 000 comme une puissance de 10.",
+    "estimated_duration_s": 45,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, classe de 3e, Nombres et calculs, Puissances : « Résoudre des problèmes notamment en utilisant la notation scientifique. »"
+  },
+  {
+    "id": "EX-A039-D-02",
+    "skill_id": "A039",
+    "level": "decouverte",
+    "type": "qcm",
+    "statement": "Un écran compte $2 \\times 10^{3}$ lignes de $4 \\times 10^{3}$ pixels chacune. Combien de pixels a-t-il en tout ?",
+    "image": null,
+    "choices": [
+      {
+        "key": "a",
+        "text": "$6 \\times 10^{6}$",
+        "misconception": "L'élève additionne les facteurs, $2 + 4 = 6$, au lieu de les multiplier."
+      },
+      {
+        "key": "b",
+        "text": "$8 \\times 10^{9}$",
+        "misconception": "L'élève multiplie les exposants, $3 \\times 3 = 9$ : pour multiplier deux puissances de 10, on additionne les exposants."
+      },
+      {
+        "key": "c",
+        "text": "$8 \\times 10^{3}$",
+        "misconception": "L'élève garde l'exposant commun, 3, sans l'ajouter à lui-même : or $10^{3} \\times 10^{3} = 10^{6}$."
+      },
+      {
+        "key": "d",
+        "text": "$8 \\times 10^{6}$",
+        "misconception": null
+      }
+    ],
+    "answer": {
+      "value": "d"
+    },
+    "solution_steps": [
+      "Le nombre de pixels est le produit $(2 \\times 10^{3}) \\times (4 \\times 10^{3})$.",
+      "On regroupe les facteurs d'un côté, les puissances de 10 de l'autre : $(2 \\times 4) \\times (10^{3} \\times 10^{3}) = 8 \\times 10^{6}$.",
+      "Vérification : 2 000 lignes de 4 000 pixels font 8 000 000 pixels. La bonne réponse est d."
+    ],
+    "hint": "Multiplie les facteurs entre eux, puis les puissances de 10 entre elles.",
+    "estimated_duration_s": 50,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, classe de 3e, Nombres et calculs, Puissances : « Résoudre des problèmes notamment en utilisant la notation scientifique. »"
+  },
+  {
+    "id": "EX-A039-E-01",
+    "skill_id": "A039",
+    "level": "entrainement",
+    "type": "numerique",
+    "statement": "Une bactérie a une masse d'environ $2 \\times 10^{-12}$ g. Quelle est la masse, en grammes, de $4{,}5 \\times 10^{9}$ bactéries ? Donne l'écriture décimale.",
+    "image": null,
+    "answer": {
+      "value": 0.009,
+      "unit": "g",
+      "accepted": [
+        "9 × 10^-3",
+        "9 × 10^-3 g",
+        "9 × 10^-3 grammes"
+      ]
+    },
+    "solution_steps": [
+      "Masse totale : $(4{,}5 \\times 10^{9}) \\times (2 \\times 10^{-12}) = (4{,}5 \\times 2) \\times (10^{9} \\times 10^{-12})$.",
+      "$4{,}5 \\times 2 = 9$ et $10^{9} \\times 10^{-12} = 10^{9 + (-12)} = 10^{-3}$ : la masse est $9 \\times 10^{-3}$ g.",
+      "$10^{-3} = 0{,}001$, donc $9 \\times 10^{-3} = 0{,}009$ g : moins d'un centigramme pour des milliards de bactéries."
+    ],
+    "hint": "Regroupe les facteurs d'un côté, les puissances de 10 de l'autre.",
+    "estimated_duration_s": 75,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, classe de 3e, Nombres et calculs, Puissances : « Résoudre des problèmes notamment en utilisant la notation scientifique. »"
+  },
+  {
+    "id": "EX-A039-E-02",
+    "skill_id": "A039",
+    "level": "entrainement",
+    "type": "qcm",
+    "statement": "Un globule rouge mesure environ $10^{-5}$ m, un atome environ $10^{-10}$ m. Combien de fois le globule rouge est-il plus grand que l'atome ?",
+    "image": null,
+    "choices": [
+      {
+        "key": "a",
+        "text": "$10^{2}$ fois",
+        "misconception": "L'élève divise les exposants : $(-10) \\div (-5) = 2$. Pour diviser deux puissances de 10, on soustrait les exposants."
+      },
+      {
+        "key": "b",
+        "text": "$10^{5}$ fois",
+        "misconception": null
+      },
+      {
+        "key": "c",
+        "text": "$10^{-15}$ fois",
+        "misconception": "L'élève multiplie les deux longueurs au lieu de les diviser : $10^{-5} \\times 10^{-10} = 10^{-15}$."
+      },
+      {
+        "key": "d",
+        "text": "$10^{-5}$ fois",
+        "misconception": "L'élève fait le quotient à l'envers, $10^{-10} \\div 10^{-5} = 10^{-5}$ : il compare l'atome au globule. Un « nombre de fois plus grand » doit dépasser 1."
+      }
+    ],
+    "answer": {
+      "value": "b"
+    },
+    "solution_steps": [
+      "« Combien de fois plus grand » se calcule par un quotient : la grande longueur divisée par la petite, $10^{-5} \\div 10^{-10}$.",
+      "$10^{-5} \\div 10^{-10} = 10^{-5 - (-10)} = 10^{-5 + 10} = 10^{5}$.",
+      "Le globule rouge est $10^5 = 100\\,000$ fois plus grand que l'atome. La bonne réponse est b."
+    ],
+    "hint": "Divise la plus grande longueur par la plus petite.",
+    "estimated_duration_s": 60,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, classe de 3e, Nombres et calculs, Puissances : « Résoudre des problèmes notamment en utilisant la notation scientifique. »"
+  },
+  {
+    "id": "EX-A039-M-01",
+    "skill_id": "A039",
+    "level": "maitrise",
+    "type": "numerique",
+    "statement": "Un signal radio parcourt $3 \\times 10^{5}$ km par seconde. Une sonde près de Saturne est à $1{,}2 \\times 10^{9}$ km de la Terre. Combien de secondes met son signal pour nous parvenir ?",
+    "image": null,
+    "answer": {
+      "value": 4000,
+      "unit": "s",
+      "accepted": [
+        "4 × 10^3",
+        "4 × 10^3 s"
+      ]
+    },
+    "solution_steps": [
+      "En une seconde, le signal parcourt $3 \\times 10^{5}$ km : la durée est le quotient $(1{,}2 \\times 10^{9}) \\div (3 \\times 10^{5})$.",
+      "Facteurs : $1{,}2 \\div 3 = 0{,}4$. Puissances de 10 : $10^{9} \\div 10^{5} = 10^{4}$.",
+      "$0{,}4 \\times 10^{4}$ n'est pas une notation scientifique : $0{,}4 = 4 \\times 10^{-1}$, donc $0{,}4 \\times 10^{4} = 4 \\times 10^{3}$.",
+      "$4 \\times 10^{3} = 4\\,000$ : le signal met 4 000 secondes, un peu plus d'une heure."
+    ],
+    "hint": "Combien de fois la distance parcourue en une seconde est-elle contenue dans la distance de la sonde ?",
+    "estimated_duration_s": 120,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, classe de 3e, Nombres et calculs, Puissances : « Résoudre des problèmes notamment en utilisant la notation scientifique. »"
+  },
+  {
+    "id": "EX-A039-M-02",
+    "skill_id": "A039",
+    "level": "maitrise",
+    "type": "vrai_faux",
+    "statement": "Une super-colonie compte $6 \\times 10^{7}$ fourmis de $5 \\times 10^{-3}$ g chacune. Léa affirme : « Leur masse totale est $3 \\times 10^{5}$ g. »\n\nA-t-elle raison ?",
+    "image": null,
+    "answer": {
+      "value": true
+    },
+    "solution_steps": [
+      "Masse totale : $(6 \\times 10^{7}) \\times (5 \\times 10^{-3}) = (6 \\times 5) \\times (10^{7} \\times 10^{-3})$.",
+      "$6 \\times 5 = 30$ et $10^{7} \\times 10^{-3} = 10^{7 + (-3)} = 10^{4}$ : la masse est $30 \\times 10^{4}$ g.",
+      "$30 = 3 \\times 10$, donc $30 \\times 10^{4} = 3 \\times 10^{1} \\times 10^{4} = 3 \\times 10^{5}$ g, soit 300 000 g, c'est-à-dire 300 kg.",
+      "Léa a **raison**."
+    ],
+    "hint": "Multiplie les facteurs, puis les puissances de 10, et vérifie que le facteur obtenu est compris entre 1 et 10.",
+    "estimated_duration_s": 90,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, classe de 3e, Nombres et calculs, Puissances : « Résoudre des problèmes notamment en utilisant la notation scientifique. »"
+  }
+]
