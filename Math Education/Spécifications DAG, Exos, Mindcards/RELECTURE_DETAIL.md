@@ -5795,6 +5795,168 @@ Pour la classe verte, le car coûte 2 950 € et l'hébergement 3 980 €. Le bu
 
 ---
 
+## `B056` · Calcul mental : distributivité de la multiplication sur l'addition — CM1, difficulté 3
+
+*Calculer mentalement un produit en décomposant un facteur en une somme et en multipliant chaque terme : 7 × 34 = 7 × 30 + 7 × 4 = 210 + 28 = 238 ; 13 × 7 = 10 × 7 + 3 × 7 = 91 ; 12 × 25 = 10 × 25 + 2 × 25 = 300 ; 6 × 105 = 6 × 100 + 6 × 5 = 630 ; reconnaître, parmi plusieurs décompositions, celle qui donne le bon produit. L'erreur type est de ne multiplier qu'un des termes (7 × 34 = 7 × 30 + 4 = 214). Nombres entiers, décomposition en somme seulement : la différence (25 × 98 = 25 × 100 − 25 × 2) et le sens « factoriser » (13 × 7 + 13 × 3 = 13 × 10) sont du 5e (B055) ; le facteur décomposé a au plus trois chiffres. Réponse : un nombre, ou le nombre manquant d'une décomposition (7 × 34 = 7 × 30 + 7 × …), ou QCM entre décompositions. Figure utile : geometrie, rectangle partagé en deux (largeur 7, longueur 30 + 4), aire écrite dans chaque partie.*
+
+> « Utiliser la distributivité de la multiplication par rapport à l'addition dans des cas simples » — *Cycle 3, Cours moyen première année, Le calcul mental*
+> « L'élève sait verbaliser « 13 fois 7, c'est 10 fois 7 plus 3 fois 7. » » — *Cycle 2, Cours élémentaire première année, Le calcul mental*
+
+**EX-B056-D-01** — decouverte, numerique, 60 s
+
+Un paquet contient 13 biscuits. Combien de biscuits y a-t-il dans 6 paquets ? Pour calculer 6 × 13, Lina décompose 13 en 10 + 3.
+
+**Réponse :** 78
+
+*Corrigé.* (1) 13, c'est 10 + 3 : six paquets de 13 biscuits, c'est six paquets de 10 biscuits et six paquets de 3 biscuits. (2) 6 × 10 = 60 et 6 × 3 = 18. (3) On ajoute les deux résultats : 60 + 18 = 78. Il y a 78 biscuits. (4) Les deux morceaux de 13 sont multipliés par 6. Écrire 6 × 10 + 3 = 63 oublierait 5 paquets de 3 biscuits.
+
+*Indice.* Combien de biscuits dans 6 paquets de 10 ? Et dans 6 paquets de 3 ?
+
+**EX-B056-D-02** — decouverte, qcm, 60 s
+
+Quel calcul donne le même résultat que 4 × 32 ?
+
+- **a.** 4 × 30 + 2
+  <br>*Erreur visée :* L'élève décompose 32 en 30 + 2 mais ne multiplie que 30 par 4 : il oublie de multiplier le 2. Ce calcul donne 122 au lieu de 128.
+- **b.** 4 × 30 + 4 × 2 ✅
+- **c.** 4 × 3 + 4 × 2
+  <br>*Erreur visée :* L'élève prend le chiffre des dizaines, 3, pour le nombre 3 alors qu'il vaut 30. Ce calcul donne 20 au lieu de 128.
+- **d.** 4 × 30 × 2
+  <br>*Erreur visée :* L'élève multiplie les deux morceaux entre eux au lieu de les ajouter. Ce calcul donne 240 au lieu de 128.
+
+*Corrigé.* (1) 32, c'est 30 + 2. Multiplier 32 par 4, c'est multiplier 30 par 4 et 2 par 4, puis ajouter les deux résultats. (2) 4 × 30 + 4 × 2 = 120 + 8 = 128. (3) Vérification par l'addition : 32 + 32 = 64, 64 + 64 = 128. C'est la réponse b. (4) Dans la proposition a, le 2 n'est pas multiplié par 4 : elle donne 122.
+
+*Indice.* Écris 32 comme une somme de dizaines et d'unités. Chaque morceau doit être multiplié par 4.
+
+**EX-B056-E-01** — entrainement, numerique, 90 s
+
+Noé calcule 7 × 63 en décomposant 63. Il écrit : 7 × 63 = … + 21 Quel nombre a-t-il effacé ?
+
+**Réponse :** 420
+
+*Corrigé.* (1) 63, c'est 60 + 3. Donc 7 × 63 = 7 × 60 + 7 × 3. (2) 7 × 3 = 21 : c'est le 21 de l'égalité. Le nombre effacé est donc 7 × 60. (3) 7 × 60 = 420 : 7 fois 6 dizaines, c'est 42 dizaines. (4) Le nombre effacé est 420, et 7 × 63 = 420 + 21 = 441.
+
+*Indice.* D'où vient le 21 ? Quel morceau de 63, multiplié par 7, donne 21 ?
+
+**EX-B056-E-02** — entrainement, vrai_faux, 60 s
+
+Pour calculer 4 × 205, Tom écrit : 4 × 200 + 5 = 805 Tom a-t-il trouvé le bon résultat ?
+
+**Réponse :** False
+
+*Corrigé.* (1) 205, c'est 200 + 5. Il faut multiplier les deux morceaux par 4 : 4 × 200 + 4 × 5. (2) 4 × 200 = 800 et 4 × 5 = 20, donc 4 × 205 = 800 + 20 = 820. (3) Tom a multiplié 200 par 4 mais pas le 5 : son résultat, 805, est faux.
+
+*Indice.* Tom a-t-il multiplié chaque morceau de 205 par 4 ?
+
+**EX-B056-M-01** — maitrise, numerique, 90 s
+
+Un livre de contes a 108 pages. La bibliothèque en possède 9 exemplaires. Combien de pages en tout ? Calcule de tête en décomposant 108.
+
+**Réponse :** 972
+
+*Corrigé.* (1) 108, c'est 100 + 8. (2) 9 × 100 = 900 et 9 × 8 = 72. (3) 900 + 72 = 972 : il y a 972 pages. (4) Le chiffre des dizaines de 108 est 0 : il n'y a que deux morceaux à multiplier. Écrire 9 × 100 + 8 = 908 oublierait de multiplier le 8.
+
+*Indice.* 108 = 100 + 8. Multiplie chaque morceau par 9.
+
+**EX-B056-M-02** — maitrise, qcm, 120 s
+
+Un seul de ces calculs ne donne pas 8 × 26. Lequel ?
+
+- **a.** 8 × 20 + 8 × 6
+  <br>*Erreur visée :* Ce calcul donne bien 8 × 26 (160 + 48 = 208). L'élève qui le choisit ne reconnaît pas la décomposition de 26 en 20 + 6.
+- **b.** 20 × 8 + 6 × 8
+  <br>*Erreur visée :* L'élève croit que l'ordre des facteurs compte. Or 20 × 8 = 8 × 20 et 6 × 8 = 8 × 6 : ce calcul donne bien 208.
+- **c.** 8 × 20 + 6 ✅
+- **d.** 8 × 10 + 8 × 10 + 8 × 6
+  <br>*Erreur visée :* L'élève croit qu'on ne peut décomposer 26 qu'en dizaines et unités. Or 26 = 10 + 10 + 6 convient : 80 + 80 + 48 = 208.
+
+*Corrigé.* (1) 8 × 26 : on multiplie chaque morceau de 26 par 8, puis on ajoute. 8 × 20 = 160 et 8 × 6 = 48, donc 8 × 26 = 160 + 48 = 208. (2) Les calculs a, b et d multiplient bien tous les morceaux de 26 par 8 : 26, c'est 20 + 6, ou 10 + 10 + 6, et l'ordre d'une multiplication ne compte pas (20 × 8 = 8 × 20). (3) Le calcul c ne multiplie pas le 6 : 8 × 20 + 6 = 166. C'est c qui ne donne pas 8 × 26.
+
+*Indice.* Pour chaque calcul, vérifie que tous les morceaux de 26 sont multipliés par 8.
+
+---
+
+## `B057` · Programme de calcul : l'exécuter — CM1, difficulté 3
+
+*Appliquer à un nombre entier donné un programme de calcul de deux instructions, dans l'ordre, en partant à chaque étape du résultat de l'étape précédente : « choisir un nombre ; ajouter 2 ; multiplier le résultat par 4 » donne 36 en partant de 7 (7 + 2 = 9, puis 9 × 4 = 36) ; appliquer le même programme à plusieurs nombres et compléter un tableau des nombres de départ et d'arrivée ; comparer les résultats de deux programmes pour un même nombre. L'erreur type est d'appliquer chaque instruction au nombre de départ (7 + 2 = 9 et 7 × 4 = 28) ou d'inverser l'ordre des instructions (7 × 4 + 2 = 30). Nombres entiers, instructions en mots (ajouter, retirer, multiplier par, prendre le double) ; le programme de trois instructions et l'écriture d'un programme sont B058 (CM2), sa traduction en une seule expression B054 (5e). Réponse : un nombre (le résultat, ou une case du tableau). Figure : aucune.*
+
+> « Exécuter un programme de calcul » — *Cycle 3, Cours moyen première année, Algèbre*
+> « Il exécute également des programmes de calcul comme le suivant : » — *Cycle 3, Cours moyen première année, Initiation à la pensée informatique*
+
+**EX-B057-D-01** — decouverte, numerique, 60 s
+
+Voici un programme de calcul : - choisir un nombre ; - ajouter 3 ; - multiplier le résultat par 5. Inès choisit 4. Quel nombre obtient-elle ?
+
+**Réponse :** 35
+
+*Corrigé.* (1) On suit les instructions dans l'ordre, chacune sur le résultat de la précédente. (2) Ajouter 3 : 4 + 3 = 7. (3) Multiplier le résultat par 5 : 7 × 5 = 35. Inès obtient 35. (4) Multiplier 4 par 5 (20) oublierait la première instruction.
+
+*Indice.* Fais d'abord 4 + 3. C'est ce résultat qu'on multiplie par 5.
+
+**EX-B057-D-02** — decouverte, qcm, 60 s
+
+Programme de calcul : - choisir un nombre ; - multiplier par 2 ; - ajouter 7. On choisit 8. Quel nombre obtient-on ?
+
+- **a.** 15
+  <br>*Erreur visée :* L'élève applique la dernière instruction au nombre de départ : 8 + 7 = 15. Il oublie « multiplier par 2 ».
+- **b.** 30
+  <br>*Erreur visée :* L'élève fait les instructions dans le désordre : il ajoute 7 d'abord (8 + 7 = 15), puis multiplie par 2 (le double de 15 : 30).
+- **c.** 23 ✅
+- **d.** 16
+  <br>*Erreur visée :* L'élève s'arrête après la première instruction : 8 × 2 = 16. Il oublie d'ajouter 7.
+
+*Corrigé.* (1) Multiplier par 2 : 8 × 2 = 16. (2) Ajouter 7 au résultat : 16 + 7 = 23. On obtient 23. (3) L'ordre compte : en ajoutant 7 d'abord, on trouverait 15, puis le double de 15, 15 + 15 = 30 : un autre nombre.
+
+*Indice.* Fais les instructions dans l'ordre, en partant à chaque fois du résultat précédent.
+
+**EX-B057-E-01** — entrainement, numerique, 90 s
+
+Programme : choisir un nombre ; retirer 4 ; multiplier le résultat par 6. En choisissant 9, on obtient 30. Quel nombre obtient-on en choisissant 12 ?
+
+**Réponse :** 48
+
+*Corrigé.* (1) On vérifie avec 9 : 9 - 4 = 5, puis 5 × 6 = 30. Le programme est bien compris. (2) Avec 12 : 12 - 4 = 8. (3) Puis 8 × 6 = 48. On obtient 48. (4) Retirer 4 vient en premier : on ne multiplie pas 12 par 6.
+
+*Indice.* Refais le calcul avec 9 pour voir comment marche le programme, puis pars de 12.
+
+**EX-B057-E-02** — entrainement, vrai_faux, 120 s
+
+Programme A : ajouter 6, puis multiplier par 3. Programme B : multiplier par 3, puis ajouter 6. Lou choisit 5 pour les deux. Elle dit : « J'obtiens le même nombre. » A-t-elle raison ?
+
+**Réponse :** False
+
+*Corrigé.* (1) Programme A : 5 + 6 = 11, puis 11 × 3 = 11 + 11 + 11 = 33. (2) Programme B : 5 × 3 = 15, puis 15 + 6 = 21. (3) 33 et 21 sont différents : Lou a tort. (4) Les deux programmes ont les mêmes instructions, mais pas dans le même ordre, et l'ordre change le résultat.
+
+*Indice.* Fais les deux programmes avec 5, l'un après l'autre.
+
+**EX-B057-M-01** — maitrise, numerique, 90 s
+
+Programme : choisir un nombre ; ajouter 9 ; multiplier le résultat par 8. Malo choisit 0. Il dit : « 0 multiplié par un nombre, ça fait 0. » Quel nombre obtient-il vraiment ?
+
+**Réponse :** 72
+
+*Corrigé.* (1) On suit l'ordre des instructions. Ajouter 9 : 0 + 9 = 9. (2) Multiplier le résultat par 8 : on ne multiplie pas 0, mais 9. 9 × 8 = 72. (3) Malo obtient 72. Sa phrase est juste, mais elle ne sert pas ici : après la première instruction, il n'y a plus de 0.
+
+*Indice.* Quel est le résultat de la première instruction ? C'est lui qu'on multiplie par 8.
+
+**EX-B057-M-02** — maitrise, qcm, 120 s
+
+Programme : choisir un nombre ; retirer 6 ; multiplier le résultat par 7. Quel nombre faut-il choisir pour obtenir 56 ?
+
+- **a.** 14 ✅
+- **b.** 8
+  <br>*Erreur visée :* L'élève trouve le nombre à multiplier par 7 (8, car 8 × 7 = 56) et oublie qu'on a retiré 6 avant : en partant de 8, on obtient 2 × 7 = 14.
+- **c.** 62
+  <br>*Erreur visée :* L'élève défait « retirer 6 » en ajoutant 6 à 56, mais oublie de défaire « multiplier par 7 » : en partant de 62, on obtient 56 × 7, bien plus que 56.
+- **d.** 50
+  <br>*Erreur visée :* L'élève applique « retirer 6 » à 56 au lieu de la défaire : en partant de 50, on obtient 44 × 7, bien plus que 56.
+
+*Corrigé.* (1) On essaie chaque proposition avec le programme. (2) Avec 14 : 14 - 6 = 8, puis 8 × 7 = 56. C'est le bon nombre. (3) Avec 8 : 8 - 6 = 2, puis 2 × 7 = 14. Avec 62 ou 50, il reste 56 ou 44 après « retirer 6 », et multiplier par 7 donne bien plus que 56. (4) Il faut choisir 14. Autre façon : pour obtenir 56 en multipliant par 7, il faut avoir 8 (8 × 7 = 56) ; et on obtient 8 en retirant 6 à 14.
+
+*Indice.* Essaie chaque nombre proposé avec le programme.
+
+---
+
 ## `C004` · Fraction d'une quantité — CM1, difficulté 3
 
 *Calculer une fraction unitaire d'une quantité ou d'une grandeur*
@@ -6995,6 +7157,173 @@ Un club de foot paie 492 € pour 36 maillots identiques. Combien paierait-il po
 *Corrigé.* (1) 9 maillots, c'est 4 fois moins que 36 maillots, car 9 × 4 = 36. (2) 4 fois moins de maillots, donc 4 fois moins cher : on calcule 492 ÷ 4. (3) On pose la division : en 4 centaines, 1 fois 4, reste 0 ; en 9 dizaines, 2 fois 4, reste 1 ; en 12 unités, 3 fois 4, reste 0. Donc 492 ÷ 4 = 123. (4) 9 maillots coûtent 123 €. Pas besoin du prix d'un maillot, qui demanderait de diviser par 36.
 
 *Indice.* 36 maillots, c'est combien de fois 9 maillots ?
+
+---
+
+## `F069` · Nombre inconnu : égalité à trous, symbole, problème algébrique — CM1, difficulté 3
+
+*Trouver un nombre inconnu dans une égalité entre deux calculs, en sachant que le signe = relie deux écritures d'un même nombre et pas seulement un calcul à son résultat : 178 − … = 6 × 8 se complète en calculant 6 × 8 = 48, puis 178 − 48 = 130 ; 25 + … = 4 × 10 ; … × 5 = 60 − 15 ; dire si une égalité est vraie (3 × 4 = 2 × 6 est vraie ; 5 + 3 = 8 + 2 est fausse). Représenter un nombre inconnu par un symbole pour traduire un problème algébrique, puis trouver sa valeur : ▲ + ▲ + 5 = 17 donne ▲ = 6 ; une balance équilibrée (3 boîtes identiques et 2 kg d'un côté, 14 kg de l'autre : une boîte pèse 4 kg) ; un schéma en barre (Léo a 3 fois plus de billes que Tom, à eux deux ils en ont 48 : 4 parts égales, Tom en a 12). L'erreur type est de lire = comme « donne » et de répondre le résultat d'un des calculs (48 au lieu de 130), ou de faire l'opération de l'énoncé au lieu de l'opération inverse (▲ + 5 = 17 donne 22). Nombres entiers ; le symbole est un dessin (▲, ■, ?) ou un mot ; une lettre seulement comme nom, sans calcul littéral (« Ce n'est qu'au cycle 4 que les lettres seront introduites de manière formelle », 6e) ; l'équation écrite avec x et résolue par l'opération inverse est F023 (5e). Réponse : un nombre (la valeur du symbole ou le nombre manquant), vrai/faux, ou QCM entre écritures d'un problème. Figure utile : schéma en barre, qu'aucun générateur ne dessine (l'énoncé le décrit en mots en attendant).*
+
+> « Trouver le nombre manquant dans une égalité à trous » — *Cycle 3, Cours moyen première année, Algèbre*
+> « Déterminer la valeur d'un nombre inconnu en utilisant un symbole ou une lettre pour le représenter » — *Cycle 3, Cours moyen première année, Algèbre*
+> « Résoudre des problèmes algébriques » — *Cycle 3, Cours moyen première année, Algèbre*
+> « Il peut être placé entre deux expressions qui sont égales, ce qui conduit notamment à faire poindre la notion d'équation, comme dans l'égalité à compléter suivante : « 178 – … = 6 × 8 ». » — *Cycle 3, Cours moyen première année, Algèbre*
+> « Des relations faisant intervenir des nombres inconnus peuvent aussi être représentées par des schémas en barre dans le cadre de la résolution de problèmes. » — *Cycle 3, Cours moyen première année, Algèbre*
+
+**EX-F069-D-01** — decouverte, numerique, 90 s
+
+Le signe = veut dire : les deux côtés valent le même nombre. Complète : 95 − … = 6 × 7 Commence par calculer 6 × 7.
+
+**Réponse :** 53
+
+*Corrigé.* (1) Côté droit : 6 × 7 = 42. (2) Le côté gauche doit valoir 42 aussi : 95 moins le nombre manquant doit donner 42. (3) Le nombre manquant est l'écart entre 95 et 42 : 95 - 42 = 53. (4) Vérification : 95 - 53 = 42 et 6 × 7 = 42. Le nombre manquant est 53. Écrire 42 dans le trou, ce serait lire = comme « ça donne ».
+
+*Indice.* Combien doit valoir 95 − … ? Regarde le côté droit.
+
+**EX-F069-D-02** — decouverte, vrai_faux, 60 s
+
+Cette égalité est-elle vraie ? 4 × 6 = 30 − 6
+
+**Réponse :** True
+
+*Corrigé.* (1) Le signe = ne veut pas dire « ça donne » : il dit que les deux côtés valent le même nombre. (2) Côté gauche : 4 × 6 = 24. Côté droit : 30 - 6 = 24. (3) Les deux côtés valent 24 : l'égalité est vraie. (4) Ne lire que le début, « 4 × 6 = 30 », ferait croire à une erreur.
+
+*Indice.* Calcule chaque côté du signe =, puis compare.
+
+**EX-F069-E-01** — entrainement, numerique, 90 s
+
+Le ▲ représente toujours le même nombre. ▲ + ▲ + ▲ + 6 = 30 Que vaut ▲ ?
+
+**Réponse :** 8
+
+*Corrigé.* (1) Trois ▲ et 6 font 30. Sans le 6, il reste 30 - 6 = 24 : les trois ▲ font 24. (2) On cherche le nombre qui, pris trois fois, fait 24 : 3 × 8 = 24, donc 24 ÷ 3 = 8. (3) Vérification : 8 + 8 + 8 + 6 = 30. ▲ vaut 8. (4) Ajouter 6 à 30 au lieu de l'enlever, ce serait refaire l'opération de l'énoncé au lieu de la défaire.
+
+*Indice.* Combien font les trois ▲, sans le 6 ?
+
+**EX-F069-E-02** — entrainement, qcm, 90 s
+
+Une balance est en équilibre. À gauche : 4 sacs identiques et 3 kg. À droite : 23 kg. ■ est la masse d'un sac. Quelle écriture traduit la balance ?
+
+- **a.** ■ + 4 + 3 = 23
+  <br>*Erreur visée :* L'élève lit « 4 sacs » comme 4 kg : il écrit un seul sac et ajoute 4.
+- **b.** ■ + ■ + ■ + ■ + 3 = 23 ✅
+- **c.** ■ + ■ + ■ + ■ = 23 + 3
+  <br>*Erreur visée :* L'élève met les 3 kg à droite alors qu'ils sont à gauche avec les sacs : cette balance ne serait plus la même.
+- **d.** ■ + 3 = 23
+  <br>*Erreur visée :* L'élève n'écrit qu'un sac : il oublie que les 4 sacs sont sur le plateau.
+
+*Corrigé.* (1) Chaque sac pèse ■. Les quatre sacs : ■ + ■ + ■ + ■. (2) Avec les 3 kg posés à gauche : ■ + ■ + ■ + ■ + 3. (3) La balance est en équilibre : la gauche pèse autant que la droite, 23 kg. L'écriture est ■ + ■ + ■ + ■ + 3 = 23, réponse b. (4) On peut en déduire la masse d'un sac : 23 - 3 = 20, et 20 ÷ 4 = 5. Un sac pèse 5 kg.
+
+*Indice.* Écris un ■ pour chaque sac, puis ajoute ce qui est posé avec eux.
+
+**EX-F069-M-01** — maitrise, numerique, 120 s
+
+Emma a 4 fois plus de cartes que Noé. À eux deux, ils ont 35 cartes. Combien de cartes Noé a-t-il ?
+
+**Réponse :** 7
+
+*Corrigé.* (1) Noé a une part. Emma a 4 fois plus : 4 parts de la même taille. (2) À eux deux : 1 + 4 = 5 parts égales, qui font 35 cartes. (3) Une part : 35 ÷ 5 = 7. Noé a 7 cartes, et Emma 4 × 7 = 28. (4) Vérification : 7 + 28 = 35, et 28 est bien 4 fois 7. Diviser 35 par 4 oublierait la part de Noé.
+
+*Indice.* Dessine une barre pour les cartes de Noé, puis les barres d'Emma. Combien de barres égales en tout ?
+
+**EX-F069-M-02** — maitrise, qcm, 90 s
+
+Quel nombre manque ? … − 36 = 7 × 8
+
+- **a.** 20
+  <br>*Erreur visée :* L'élève refait la soustraction de l'énoncé au lieu de la défaire : 56 − 36 = 20.
+- **b.** 56
+  <br>*Erreur visée :* L'élève lit = comme « ça donne » : il écrit dans le trou le résultat du côté droit, 7 × 8 = 56.
+- **c.** 92 ✅
+- **d.** 82
+  <br>*Erreur visée :* L'élève défait bien la soustraction en ajoutant 36 à 56, mais oublie la retenue : 56 + 36 fait 92, pas 82.
+
+*Corrigé.* (1) Côté droit : 7 × 8 = 56. (2) Le côté gauche doit valoir 56 : on cherche le nombre auquel on retire 36 pour obtenir 56. (3) Pour défaire « retirer 36 », on ajoute 36 : 56 + 36 = 92. Le nombre manquant est 92, réponse c. (4) Vérification : 92 - 36 = 56 et 7 × 8 = 56. Choisir 20, ce serait refaire la soustraction au lieu de la défaire.
+
+*Indice.* Calcule d'abord le côté droit, puis cherche le nombre de départ.
+
+---
+
+## `F070` · Suites de nombres et de motifs : trouver la règle, poursuivre — CM1, difficulté 3
+
+*Repérer la régularité d'une suite de nombres et la formuler comme une règle de calcul (« on ajoute 5 », « on ajoute 5 puis on retire 2 », « on double ») pour trouver les termes suivants : 80 ; 85 ; 83 ; 88 ; 86 ; … se poursuit par 91 puis 89 ; 1 ; 2 ; 6 ; 7 ; 11 ; 12 ; … par 16 puis 17 ; 3 ; 6 ; 12 ; 24 ; … par 48. Pour une suite de motifs évolutive dessinée étape par étape (carreaux coloriés, jetons), repérer ce qui s'ajoute d'une étape à la suivante et donner le nombre d'éléments des étapes suivantes (4, 7, 10 carreaux aux étapes 1, 2, 3 : 13 à l'étape 4, 16 à l'étape 5). L'erreur type est de ne regarder que les deux derniers termes (1 ; 2 ; 6 ; 7 ; 11 ; 12 poursuivi par 13) ou de se tromper d'étape en recomptant tout le motif. Termes proches seulement (une à trois étapes plus loin) ; l'étape éloignée et la relation entre le numéro de l'étape et le nombre d'éléments sont F071 (CM2). Réponse : un nombre (terme suivant, nombre d'éléments), ou QCM entre règles. Figure nécessaire pour les motifs : quadrillage, chaque étape en cases coloriées, son numéro écrit sous le motif ; aucune pour les suites de nombres.*
+
+> « Identifier et formuler une règle de calcul pour poursuivre une suite de nombres » — *Cycle 3, Cours moyen première année, Algèbre*
+> « Identifier des régularités et poursuivre une suite de motifs évolutive » — *Cycle 3, Cours moyen première année, Algèbre*
+> « Dans le cadre de l'initiation à la pensée algébrique, l'élève continue de travailler sur des suites évolutives qui s'appuient sur des algorithmes plus en plus complexes comme « 80 ; 85 ; 83 ; 88 ; 86 ; 91 ; 89 ; 94 ; 92, etc. » » — *Cycle 3, Cours moyen première année, Initiation à la pensée informatique*
+> « Dans la suite évolutive « 1, 2, 4, 7, 11, 16… », quel est le onzième nombre ? » — *Cycle 2, Cours élémentaire première année, Les nombres entiers*
+
+**EX-F070-D-01** — decouverte, vrai_faux, 60 s
+
+12 ; 18 ; 24 ; 30 ; … Nina dit : « Dans cette suite, on ajoute toujours 6. Le nombre suivant est 36. » A-t-elle raison ?
+
+**Réponse :** True
+
+*Corrigé.* (1) On regarde chaque passage : 12 + 6 = 18, 18 + 6 = 24, 24 + 6 = 30. La règle est bien « on ajoute 6 ». (2) Le nombre suivant : 30 + 6 = 36. Nina a raison. (3) On reconnaît les nombres de la table de 6.
+
+*Indice.* Combien faut-il ajouter à 12 pour obtenir 18 ? Et à 18 pour obtenir 24 ?
+
+**EX-F070-D-02** — decouverte, numerique, 90 s
+
+Voici les étapes 1, 2 et 3 d'un motif de carreaux. Combien de carreaux faudra-t-il à l'étape 4 ?
+
+**Réponse :** 9
+
+*Corrigé.* (1) On compte les carreaux : 3 à l'étape 1, 5 à l'étape 2, 7 à l'étape 3. (2) D'une étape à la suivante, on ajoute 2 carreaux : un en haut de la colonne, un au bout de la ligne. (3) Étape 4 : 7 + 2 = 9 carreaux. (4) Inutile de recompter tout le motif : on part de l'étape 3 et on ajoute ce qui change.
+
+*Indice.* Qu'est-ce qui s'ajoute entre l'étape 1 et l'étape 2 ? Entre l'étape 2 et l'étape 3 ?
+
+**EX-F070-E-01** — entrainement, qcm, 90 s
+
+Quelle règle permet de poursuivre cette suite ? 20 ; 30 ; 27 ; 37 ; 34 ; 44 ; …
+
+- **a.** On ajoute 7.
+  <br>*Erreur visée :* L'élève ne regarde qu'un nombre sur deux : 20, 27 et 34 augmentent bien de 7, mais 30 n'est pas 20 + 7.
+- **b.** On ajoute 10.
+  <br>*Erreur visée :* L'élève ne regarde que le premier passage : 20 + 10 = 30, mais 30 + 10 ne fait pas 27.
+- **c.** On ajoute 10, puis on retire 3, et on recommence. ✅
+- **d.** On retire 3.
+  <br>*Erreur visée :* L'élève ne regarde que le passage de 30 à 27 : 27 − 3 ne fait pas 37.
+
+*Corrigé.* (1) On regarde chaque passage : 20 + 10 = 30 ; 30 - 3 = 27 ; 27 + 10 = 37 ; 37 - 3 = 34 ; 34 + 10 = 44. (2) Les passages alternent : on ajoute 10, puis on retire 3. C'est la règle c. (3) Le nombre suivant serait 44 - 3 = 41. (4) Une règle doit marcher pour tous les passages, pas seulement pour deux nombres.
+
+*Indice.* Écris ce qui se passe entre chaque nombre et le suivant.
+
+**EX-F070-E-02** — entrainement, numerique, 90 s
+
+Voici le début d'une suite : 4 ; 7 ; 13 ; 16 ; 22 ; 25 ; … Quel est le 8e nombre de la suite ?
+
+**Réponse :** 34
+
+*Corrigé.* (1) Les passages : 4 + 3 = 7 ; 7 + 6 = 13 ; 13 + 3 = 16 ; 16 + 6 = 22 ; 22 + 3 = 25. (2) La règle : on ajoute 3, puis 6, et on recommence. (3) Le dernier passage ajoutait 3, le suivant ajoute 6 : le 7e nombre est 25 + 6 = 31. (4) Puis on ajoute 3 : le 8e nombre est 31 + 3 = 34.
+
+*Indice.* Écris ce qu'on ajoute à chaque passage. Le 7e nombre vient juste après 25.
+
+**EX-F070-M-01** — maitrise, numerique, 120 s
+
+Voici les étapes 1, 2 et 3 d'un escalier de carreaux. Combien de carreaux faudra-t-il à l'étape 5 ?
+
+**Réponse :** 15
+
+*Corrigé.* (1) On compte : 1 carreau à l'étape 1, 3 à l'étape 2, 6 à l'étape 3. (2) À chaque étape, on ajoute à droite une colonne plus haute d'un carreau que la précédente : on ajoute 2, puis 3. (3) Étape 4 : une colonne de 4 carreaux, 6 + 4 = 10. Étape 5 : une colonne de 5 carreaux, 10 + 5 = 15. (4) Il y a 15 carreaux. On n'ajoute pas toujours le même nombre : ajouter 3 à chaque étape donnerait 12.
+
+*Indice.* Regarde la colonne qui s'ajoute à chaque étape. Combien de carreaux aura la suivante ?
+
+**EX-F070-M-02** — maitrise, qcm, 90 s
+
+Quel nombre vient ensuite ? 2 ; 3 ; 5 ; 8 ; 12 ; …
+
+- **a.** 16
+  <br>*Erreur visée :* L'élève ne regarde que les deux derniers nombres : de 8 à 12 on ajoute 4, et il ajoute 4 une nouvelle fois.
+- **b.** 17 ✅
+- **c.** 24
+  <br>*Erreur visée :* L'élève double le dernier nombre, comme si la suite doublait : mais 3 n'est pas le double de 2.
+- **d.** 20
+  <br>*Erreur visée :* L'élève ajoute les deux derniers nombres (8 + 12 = 20) : mais 5 + 8 ne fait pas 12.
+
+*Corrigé.* (1) Les passages : 2 + 1 = 3 ; 3 + 2 = 5 ; 5 + 3 = 8 ; 8 + 4 = 12. (2) On ajoute 1, puis 2, puis 3, puis 4 : ce qu'on ajoute grandit de 1 à chaque passage. (3) Le passage suivant ajoute 5 : 12 + 5 = 17. Réponse b.
+
+*Indice.* Écris ce qu'on ajoute à chaque passage. Que remarques-tu ?
 
 ---
 
@@ -8297,6 +8626,94 @@ Un pâtissier a 20 éclairs et 30 tartelettes. Il prépare des paquets contenant
 
 ---
 
+## `B058` · Programme de calcul : le produire, l'exécuter jusqu'à trois instructions — CM2, difficulté 4
+
+*Exécuter un programme de calcul de trois instructions (« choisir un nombre entier ; ajouter 2 ; multiplier le résultat par 4 ; retirer 3 » donne 33 en partant de 7) et produire un programme : écrire en instructions le calcul qui répond à une situation (tee-shirts à 12 € et livraison à 5 € : « multiplier le nombre de tee-shirts par 12, puis ajouter 5 », soit 41 € pour 3 tee-shirts) ; compléter l'instruction manquante d'un programme connaissant un nombre de départ et le nombre obtenu (2 donne 11 avec « multiplier par … ; ajouter 1 » : multiplier par 5) ; choisir, parmi plusieurs programmes, celui qui correspond à un tableau de départs et d'arrivées. L'erreur type est d'écrire les instructions dans le mauvais ordre (ajouter 5 puis multiplier par 12) ou de valider un programme sur un seul nombre du tableau. Nombres entiers ; le nombre de départ peut être désigné par un mot ou un symbole (« le nombre de tee-shirts »), sans calcul littéral ; traduire le programme en une seule expression avec parenthèses est B054 (5e). Réponse : un nombre (résultat, nombre manquant d'une instruction), ou QCM entre programmes. Figure : aucune.*
+
+> « Exécuter ou produire un programme de calcul » — *Cycle 3, Cours moyen deuxième année, Algèbre*
+> « Il exécute également des programmes de calcul ayant jusqu'à trois instructions comme le suivant : » — *Cycle 3, Cours moyen deuxième année, Initiation à la pensée informatique*
+> « le prix à payer, en euro, peut s'écrire (N × 12) + 5, où N est le nombre de tee-shirts achetés. » — *Cycle 3, Cours moyen deuxième année, Algèbre*
+
+**EX-B058-D-01** — decouverte, numerique, 60 s
+
+Programme de calcul : - choisir un nombre ; - ajouter 4 ; - multiplier le résultat par 6 ; - retirer 10. Quel nombre obtient-on en choisissant 5 ?
+
+**Réponse :** 44
+
+*Corrigé.* (1) Ajouter 4 : 5 + 4 = 9. (2) Multiplier le résultat par 6 : 9 × 6 = 54. (3) Retirer 10 : 54 - 10 = 44. On obtient 44. (4) Chaque instruction part du résultat de la précédente.
+
+*Indice.* Écris le résultat après chaque instruction.
+
+**EX-B058-D-02** — decouverte, qcm, 60 s
+
+Programme : choisir un nombre ; retirer 3 ; multiplier le résultat par 5 ; ajouter 9. Quel nombre obtient-on en choisissant 11 ?
+
+- **a.** 40
+  <br>*Erreur visée :* L'élève s'arrête après la deuxième instruction : 11 − 3 = 8, puis 8 × 5 = 40. Il oublie d'ajouter 9.
+- **b.** 20
+  <br>*Erreur visée :* L'élève applique la dernière instruction au nombre de départ : 11 + 9 = 20.
+- **c.** 61
+  <br>*Erreur visée :* L'élève commence par la multiplication : 11 × 5 = 55, puis 55 − 3 = 52 et 52 + 9 = 61.
+- **d.** 49 ✅
+
+*Corrigé.* (1) Retirer 3 : 11 - 3 = 8. (2) Multiplier le résultat par 5 : 8 × 5 = 40. (3) Ajouter 9 : 40 + 9 = 49. Réponse d.
+
+*Indice.* Fais les trois instructions dans l'ordre.
+
+**EX-B058-E-01** — entrainement, numerique, 120 s
+
+Programme : choisir un nombre ; ajouter 2 ; multiplier le résultat par … ; retirer 1. En choisissant 5, on obtient 48. Par quel nombre faut-il multiplier ?
+
+**Réponse :** 7
+
+*Corrigé.* (1) Ajouter 2 : 5 + 2 = 7. (2) La dernière instruction retire 1 et donne 48 : avant de retirer 1, on avait 48 + 1 = 49. (3) Il faut donc que 7 multiplié par le nombre manquant donne 49 : 7 × 7 = 49, soit 49 ÷ 7 = 7. (4) Le nombre manquant est 7. Vérification : 5 + 2 = 7, 7 × 7 = 49, 49 - 1 = 48.
+
+*Indice.* Calcule d'abord 5 + 2. Puis cherche quel nombre on avait juste avant de retirer 1.
+
+**EX-B058-E-02** — entrainement, qcm, 90 s
+
+Une salle de sport demande 15 € d'inscription, puis 9 € par mois. Quel programme donne le prix à payer à partir du nombre de mois ?
+
+- **a.** Ajouter 15 au nombre de mois, puis multiplier le résultat par 9.
+  <br>*Erreur visée :* L'élève écrit les instructions dans l'ordre où il lit les nombres : l'inscription serait alors payée 9 fois.
+- **b.** Multiplier le nombre de mois par 15, puis ajouter 9.
+  <br>*Erreur visée :* L'élève échange les deux prix : il fait payer l'inscription chaque mois et le mois une seule fois.
+- **c.** Multiplier le nombre de mois par 9, puis ajouter 15. ✅
+- **d.** Multiplier le nombre de mois par 24.
+  <br>*Erreur visée :* L'élève ajoute les deux prix, 15 + 9 = 24, et les fait payer chaque mois : l'inscription serait payée chaque mois.
+
+*Corrigé.* (1) Chaque mois coûte 9 € : on multiplie le nombre de mois par 9. (2) L'inscription ne se paie qu'une fois : on ajoute 15 € à la fin. (3) Le programme est : multiplier le nombre de mois par 9, puis ajouter 15. Réponse c. (4) Exemple pour 4 mois : 4 × 9 = 36, puis 36 + 15 = 51 €. Avec le programme a, l'inscription serait payée 9 fois.
+
+*Indice.* Qu'est-ce qui se paie chaque mois ? Qu'est-ce qui ne se paie qu'une fois ?
+
+**EX-B058-M-01** — maitrise, qcm, 120 s
+
+Un programme transforme 3 en 10, 5 en 16 et 8 en 25. Quel est ce programme ?
+
+- **a.** Ajouter 7.
+  <br>*Erreur visée :* L'élève vérifie seulement le premier nombre : 3 + 7 = 10, mais 5 + 7 = 12, pas 16.
+- **b.** Multiplier par 2, puis ajouter 4.
+  <br>*Erreur visée :* L'élève vérifie seulement le premier nombre : 3 × 2 + 4 = 10, mais 5 × 2 + 4 = 14, pas 16.
+- **c.** Multiplier par 4, puis retirer 2.
+  <br>*Erreur visée :* L'élève vérifie seulement le premier nombre : 3 × 4 − 2 = 10, mais 5 × 4 − 2 = 18, pas 16.
+- **d.** Multiplier par 3, puis ajouter 1. ✅
+
+*Corrigé.* (1) Un programme doit marcher pour les trois nombres, pas seulement pour le premier. (2) Les quatre programmes transforment bien 3 en 10. On essaie avec 5 : a donne 12, b donne 14, c donne 18, d donne 5 × 3 + 1 = 16. (3) On vérifie d avec 8 : 8 × 3 = 24, puis 24 + 1 = 25. C'est juste. (4) Le programme est d : multiplier par 3, puis ajouter 1.
+
+*Indice.* Essaie chaque programme avec 5, puis avec 8.
+
+**EX-B058-M-02** — maitrise, numerique, 120 s
+
+Sortie au musée : l'entrée coûte 9 € par élève et le car 40 €. Une aide de la mairie fait baisser le total de 25 €. Combien la classe paie-t-elle pour 8 élèves ?
+
+**Réponse :** 87
+
+*Corrigé.* (1) Programme : multiplier le nombre d'élèves par 9 ; ajouter 40 ; retirer 25. (2) Pour 8 élèves : 8 × 9 = 72 €. (3) 72 + 40 = 112 €, puis 112 - 25 = 87 €. (4) La classe paie 87 €. Le car s'ajoute une seule fois et l'aide se retire une seule fois : seule l'entrée dépend du nombre d'élèves.
+
+*Indice.* Écris le programme : que fait-on d'abord avec le nombre d'élèves ?
+
+---
+
 ## `C031` · Produit d'un entier par une fraction — CM2, difficulté 4
 
 *Calculer le produit d'un entier et d'une fraction*
@@ -8856,6 +9273,88 @@ Un fleuriste vend 12 roses pour 18 €. Combien coûtent 28 roses ?
 *Corrigé.* (1) On ne passe pas de 12 à 28 roses en multipliant par un nombre entier : on passe par 4 roses. (2) 4 roses, c'est 3 fois moins que 12 roses : elles coûtent 3 fois moins, 18 ÷ 3 = 6 €. (3) 28 roses, c'est 7 fois plus que 4 roses : elles coûtent 7 fois plus, 6 × 7 = 42 €. (4) 28 roses coûtent 42 €. Autre chemin : 28 roses, c'est 12 roses, 12 roses et 4 roses, donc 18 + 18 + 6 = 42 €.
 
 *Indice.* Cherche d'abord le prix de 4 roses.
+
+---
+
+## `F071` · Motif évolutif : nombre d'éléments à une étape donnée — CM2, difficulté 4
+
+*Trouver le nombre d'éléments d'une suite de motifs évolutive à une étape donnée, même éloignée, sans dessiner les étapes intermédiaires, en repérant la structure du motif : un motif de 4, 7, 10 carreaux aux étapes 1, 2, 3 se compose d'un carreau de départ et de 3 carreaux par étape, donc 3 × 10 + 1 = 31 carreaux à l'étape 10 et 3 × 50 + 1 = 151 à l'étape 50 ; exprimer en mots la relation entre le numéro de l'étape et le nombre d'éléments (« trois fois le numéro de l'étape, plus un ») et choisir le calcul qui la traduit ; trouver l'étape qui a un nombre d'éléments donné (61 carreaux : 61 − 1 = 60, 60 ÷ 3 = 20, étape 20). L'erreur type est la proportionnalité abusive (10 carreaux à l'étape 3, donc 100 à l'étape 30, au lieu de 91) ou l'oubli de l'élément de départ (3 × 10 = 30). Nombres entiers ; la relation reste en mots ou en calcul sur un nombre, la formule 3n + 1 avec une lettre est F003 (5e). Réponse : un nombre (nombre d'éléments, numéro d'étape), ou QCM entre relations écrites en mots. Figure nécessaire : quadrillage, les trois premières étapes en cases coloriées, le numéro de chacune écrit sous le motif.*
+
+> « Trouver le nombre d'éléments pour une étape donnée dans une suite de motifs évolutive » — *Cycle 3, Cours moyen deuxième année, Algèbre*
+> « amenés à identifier et à généraliser des structures, notamment dans le cadre de suites de motifs ou de suites de nombres ou de symboles en exprimant la relation entre deux éléments consécutifs ou entre le rang d'un élément et la valeur associée. » — *Cycle 3, Cours moyen deuxième année, Algèbre*
+> « il peut utiliser des logiciels de programmation par blocs ou un tableur pour déterminer des termes éloignés. » — *Cycle 3, Cours moyen deuxième année, Initiation à la pensée informatique*
+
+**EX-F071-D-01** — decouverte, numerique, 90 s
+
+Voici les étapes 1, 2 et 3 d'un motif. À chaque étape, on ajoute 2 carreaux. Combien de carreaux aura le motif à l'étape 10 ?
+
+**Réponse :** 23
+
+*Corrigé.* (1) On compte : 5 carreaux à l'étape 1, 7 à l'étape 2, 9 à l'étape 3. (2) La colonne de gauche, 3 carreaux, ne change jamais. Les deux rangées ont chacune autant de carreaux que le numéro de l'étape. (3) À l'étape 10 : deux rangées de 10, soit 2 × 10 = 20, plus la colonne de 3 : 20 + 3 = 23 carreaux. (4) Autre façon : de l'étape 3 à l'étape 10, il y a 7 étapes de plus, donc 7 × 2 = 14 carreaux de plus, et 9 + 14 = 23. (5) Attention : 5 × 10 = 50 serait faux, le motif de l'étape 10 n'est pas 10 fois celui de l'étape 1.
+
+*Indice.* Qu'est-ce qui reste pareil d'une étape à l'autre ? Qu'est-ce qui grandit ?
+
+**EX-F071-D-02** — decouverte, qcm, 120 s
+
+Voici les étapes 1, 2 et 3 d'un motif de carreaux. Quelle phrase donne le nombre de carreaux à n'importe quelle étape ?
+
+- **a.** Le numéro de l'étape, plus 4.
+  <br>*Erreur visée :* L'élève vérifie seulement l'étape 1 : 1 + 4 = 5. À l'étape 2, la phrase donne 6 au lieu de 8.
+- **b.** Trois fois le numéro de l'étape, plus 2. ✅
+- **c.** Cinq fois le numéro de l'étape.
+  <br>*Erreur visée :* L'élève part des 5 carreaux de l'étape 1 et croit le motif proportionnel : à l'étape 2, la phrase donne 10 au lieu de 8.
+- **d.** Deux fois le numéro de l'étape, plus 3.
+  <br>*Erreur visée :* L'élève vérifie seulement l'étape 1 : 2 × 1 + 3 = 5. À l'étape 2, la phrase donne 7 au lieu de 8.
+
+*Corrigé.* (1) On compte : 5, 8 et 11 carreaux. (2) Chaque étape a 3 rangées d'autant de carreaux que son numéro, plus 2 carreaux aux bouts, un à gauche et un à droite. (3) Trois fois le numéro, plus 2 : étape 1, 3 × 1 + 2 = 5 ; étape 2, 3 × 2 + 2 = 8 ; étape 3, 3 × 3 + 2 = 11. La phrase marche pour les trois étapes. (4) Les phrases a, c et d ne marchent qu'à l'étape 1. Réponse b.
+
+*Indice.* Vérifie chaque phrase à l'étape 2, pas seulement à l'étape 1.
+
+**EX-F071-E-01** — entrainement, numerique, 120 s
+
+Voici les étapes 1, 2 et 3 d'un motif de carreaux. Combien de carreaux aura le motif à l'étape 20 ?
+
+**Réponse :** 82
+
+*Corrigé.* (1) On compte : 6, 10 et 14 carreaux. À chaque étape, on ajoute une colonne de 4 carreaux. (2) Les 2 carreaux du haut, à gauche, ne changent pas. Dessous, il y a autant de colonnes de 4 carreaux que le numéro de l'étape. (3) À l'étape 20 : 4 × 20 = 80 carreaux pour les colonnes, plus les 2 du haut : 80 + 2 = 82. (4) Attention : l'étape 20 n'a pas 20 fois les carreaux de l'étape 1 (6 × 20 = 120 serait faux).
+
+*Indice.* Qu'est-ce qui s'ajoute à chaque étape ? Qu'est-ce qui ne change pas ?
+
+**EX-F071-E-02** — entrainement, vrai_faux, 90 s
+
+Voici les étapes 1, 2 et 3 d'un motif de carreaux. Lina dit : « À l'étape 30, il y aura 62 carreaux. » A-t-elle raison ?
+
+**Réponse :** True
+
+*Corrigé.* (1) On compte : 4, 6 et 8 carreaux. Chaque étape a 2 rangées, et chaque rangée a un carreau de plus que le numéro de l'étape. (2) À l'étape 30 : 2 rangées de 31 carreaux, soit 31 + 31 = 62 carreaux. Lina a raison. (3) Un piège à éviter : l'étape 3 a 8 carreaux, mais l'étape 30 n'en a pas 10 fois plus (8 × 10 = 80), car le carreau de plus de chaque rangée ne se multiplie pas.
+
+*Indice.* Combien de carreaux dans chaque rangée à l'étape 30 ?
+
+**EX-F071-M-01** — maitrise, numerique, 150 s
+
+Voici les étapes 1, 2 et 3 d'une échelle de carreaux. À quelle étape l'échelle aura-t-elle 102 carreaux ?
+
+**Réponse :** 20
+
+*Corrigé.* (1) On compte : 7, 12 et 17 carreaux. À chaque étape, on ajoute 5 carreaux : 2 en haut de chaque montant et un barreau. (2) Les 2 carreaux du bas des montants sont là dès le départ : chaque étape compte 5 carreaux par numéro, plus 2. Étape 1 : 5 × 1 + 2 = 7 ; étape 3 : 5 × 3 + 2 = 17. (3) Pour 102 carreaux : on enlève les 2 du départ, 102 - 2 = 100, puis on cherche combien de fois 5 font 100 : 5 × 20 = 100, donc 100 ÷ 5 = 20. (4) C'est l'étape 20. Vérification : 5 × 20 + 2 = 102.
+
+*Indice.* Combien de carreaux s'ajoutent à chaque étape ? Combien y en a-t-il en plus au départ ?
+
+**EX-F071-M-02** — maitrise, qcm, 150 s
+
+Voici les étapes 1, 2 et 3 d'un cadre de carreaux. Combien de carreaux aura le cadre à l'étape 30 ?
+
+- **a.** 160
+  <br>*Erreur visée :* L'élève croit le motif proportionnel : l'étape 3 a 16 carreaux, il multiplie par 10 pour l'étape 30. Mais les 4 coins ne se multiplient pas.
+- **b.** 120
+  <br>*Erreur visée :* L'élève voit qu'on ajoute 4 carreaux par étape et calcule 4 × 30, mais il oublie les 4 coins.
+- **c.** 128
+  <br>*Erreur visée :* L'élève part des 8 carreaux de l'étape 1 et ajoute 4 carreaux 30 fois au lieu de 29 : il compte un passage de trop (8 + 120 = 128).
+- **d.** 124 ✅
+
+*Corrigé.* (1) On compte : 8, 12 et 16 carreaux. On ajoute 4 carreaux à chaque étape. (2) Chaque cadre a 4 coins, et sur chacun de ses 4 côtés, entre les coins, autant de carreaux que le numéro de l'étape. (3) À l'étape 30 : 4 × 30 = 120 carreaux sur les côtés, plus les 4 coins : 120 + 4 = 124. Réponse d.
+
+*Indice.* Sépare les coins du reste du cadre.
 
 ---
 

@@ -1,0 +1,195 @@
+[
+  {
+    "id": "EX-F071-D-01",
+    "skill_id": "F071",
+    "level": "decouverte",
+    "type": "numerique",
+    "statement": "Voici les étapes 1, 2 et 3 d'un motif. À chaque étape, on ajoute 2 carreaux.\n\nCombien de carreaux aura le motif à l'étape 10 ?",
+    "image": "figures/EX-F071-D-01",
+    "answer": {
+      "value": 23,
+      "unit": "carreaux",
+      "accepted": [
+        "23 carreaux",
+        "23 carreau"
+      ]
+    },
+    "solution_steps": [
+      "On compte : 5 carreaux à l'étape 1, 7 à l'étape 2, 9 à l'étape 3.",
+      "La colonne de gauche, 3 carreaux, ne change jamais. Les deux rangées ont chacune autant de carreaux que le numéro de l'étape.",
+      "À l'étape 10 : deux rangées de 10, soit $2 \\times 10 = 20$, plus la colonne de 3 : $20 + 3 = 23$ carreaux.",
+      "Autre façon : de l'étape 3 à l'étape 10, il y a 7 étapes de plus, donc $7 \\times 2 = 14$ carreaux de plus, et $9 + 14 = 23$.",
+      "Attention : $5 \\times 10 = 50$ serait faux, le motif de l'étape 10 n'est pas 10 fois celui de l'étape 1."
+    ],
+    "hint": "Qu'est-ce qui reste pareil d'une étape à l'autre ? Qu'est-ce qui grandit ?",
+    "estimated_duration_s": 90,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 3, CM2, Algèbre : « Trouver le nombre d'éléments pour une étape donnée dans une suite de motifs évolutive »"
+  },
+  {
+    "id": "EX-F071-D-02",
+    "skill_id": "F071",
+    "level": "decouverte",
+    "type": "qcm",
+    "statement": "Voici les étapes 1, 2 et 3 d'un motif de carreaux.\n\nQuelle phrase donne le nombre de carreaux à n'importe quelle étape ?",
+    "image": "figures/EX-F071-D-02",
+    "choices": [
+      {
+        "key": "a",
+        "text": "Le numéro de l'étape, plus 4.",
+        "misconception": "L'élève vérifie seulement l'étape 1 : 1 + 4 = 5. À l'étape 2, la phrase donne 6 au lieu de 8."
+      },
+      {
+        "key": "b",
+        "text": "Trois fois le numéro de l'étape, plus 2.",
+        "misconception": null
+      },
+      {
+        "key": "c",
+        "text": "Cinq fois le numéro de l'étape.",
+        "misconception": "L'élève part des 5 carreaux de l'étape 1 et croit le motif proportionnel : à l'étape 2, la phrase donne 10 au lieu de 8."
+      },
+      {
+        "key": "d",
+        "text": "Deux fois le numéro de l'étape, plus 3.",
+        "misconception": "L'élève vérifie seulement l'étape 1 : 2 × 1 + 3 = 5. À l'étape 2, la phrase donne 7 au lieu de 8."
+      }
+    ],
+    "answer": {
+      "value": "b"
+    },
+    "solution_steps": [
+      "On compte : 5, 8 et 11 carreaux.",
+      "Chaque étape a 3 rangées d'autant de carreaux que son numéro, plus 2 carreaux aux bouts, un à gauche et un à droite.",
+      "Trois fois le numéro, plus 2 : étape 1, $3 \\times 1 + 2 = 5$ ; étape 2, $3 \\times 2 + 2 = 8$ ; étape 3, $3 \\times 3 + 2 = 11$. La phrase marche pour les trois étapes.",
+      "Les phrases a, c et d ne marchent qu'à l'étape 1. Réponse **b**."
+    ],
+    "hint": "Vérifie chaque phrase à l'étape 2, pas seulement à l'étape 1.",
+    "estimated_duration_s": 120,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 3, CM2, Algèbre : « en exprimant la relation entre deux éléments consécutifs ou entre le rang d'un élément et la valeur associée »"
+  },
+  {
+    "id": "EX-F071-E-01",
+    "skill_id": "F071",
+    "level": "entrainement",
+    "type": "numerique",
+    "statement": "Voici les étapes 1, 2 et 3 d'un motif de carreaux.\n\nCombien de carreaux aura le motif à l'étape 20 ?",
+    "image": "figures/EX-F071-E-01",
+    "answer": {
+      "value": 82,
+      "unit": "carreaux",
+      "accepted": [
+        "82 carreaux",
+        "82 carreau"
+      ]
+    },
+    "solution_steps": [
+      "On compte : 6, 10 et 14 carreaux. À chaque étape, on ajoute une colonne de 4 carreaux.",
+      "Les 2 carreaux du haut, à gauche, ne changent pas. Dessous, il y a autant de colonnes de 4 carreaux que le numéro de l'étape.",
+      "À l'étape 20 : $4 \\times 20 = 80$ carreaux pour les colonnes, plus les 2 du haut : $80 + 2 = 82$.",
+      "Attention : l'étape 20 n'a pas 20 fois les carreaux de l'étape 1 ($6 \\times 20 = 120$ serait faux)."
+    ],
+    "hint": "Qu'est-ce qui s'ajoute à chaque étape ? Qu'est-ce qui ne change pas ?",
+    "estimated_duration_s": 120,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 3, CM2, Algèbre : « Trouver le nombre d'éléments pour une étape donnée dans une suite de motifs évolutive »"
+  },
+  {
+    "id": "EX-F071-E-02",
+    "skill_id": "F071",
+    "level": "entrainement",
+    "type": "vrai_faux",
+    "statement": "Voici les étapes 1, 2 et 3 d'un motif de carreaux.\n\nLina dit : « À l'étape 30, il y aura 62 carreaux. » A-t-elle raison ?",
+    "image": "figures/EX-F071-E-02",
+    "answer": {
+      "value": true
+    },
+    "solution_steps": [
+      "On compte : 4, 6 et 8 carreaux. Chaque étape a 2 rangées, et chaque rangée a un carreau de plus que le numéro de l'étape.",
+      "À l'étape 30 : 2 rangées de 31 carreaux, soit $31 + 31 = 62$ carreaux. Lina a **raison**.",
+      "Un piège à éviter : l'étape 3 a 8 carreaux, mais l'étape 30 n'en a pas 10 fois plus ($8 \\times 10 = 80$), car le carreau de plus de chaque rangée ne se multiplie pas."
+    ],
+    "hint": "Combien de carreaux dans chaque rangée à l'étape 30 ?",
+    "estimated_duration_s": 90,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 3, CM2, Algèbre : « Trouver le nombre d'éléments pour une étape donnée dans une suite de motifs évolutive »"
+  },
+  {
+    "id": "EX-F071-M-01",
+    "skill_id": "F071",
+    "level": "maitrise",
+    "type": "numerique",
+    "statement": "Voici les étapes 1, 2 et 3 d'une échelle de carreaux.\n\nÀ quelle étape l'échelle aura-t-elle 102 carreaux ?",
+    "image": "figures/EX-F071-M-01",
+    "answer": {
+      "value": 20,
+      "accepted": [
+        "étape 20",
+        "l'étape 20",
+        "à l'étape 20",
+        "20e",
+        "20e étape",
+        "la 20e",
+        "la 20e étape",
+        "à la 20e étape",
+        "20ème",
+        "20ème étape",
+        "la 20ème étape",
+        "à la 20ème étape"
+      ]
+    },
+    "solution_steps": [
+      "On compte : 7, 12 et 17 carreaux. À chaque étape, on ajoute 5 carreaux : 2 en haut de chaque montant et un barreau.",
+      "Les 2 carreaux du bas des montants sont là dès le départ : chaque étape compte 5 carreaux par numéro, plus 2. Étape 1 : $5 \\times 1 + 2 = 7$ ; étape 3 : $5 \\times 3 + 2 = 17$.",
+      "Pour 102 carreaux : on enlève les 2 du départ, $102 - 2 = 100$, puis on cherche combien de fois 5 font 100 : $5 \\times 20 = 100$, donc $100 \\div 5 = 20$.",
+      "C'est l'étape **20**. Vérification : $5 \\times 20 + 2 = 102$."
+    ],
+    "hint": "Combien de carreaux s'ajoutent à chaque étape ? Combien y en a-t-il en plus au départ ?",
+    "estimated_duration_s": 150,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 3, CM2, Algèbre : « Trouver le nombre d'éléments pour une étape donnée dans une suite de motifs évolutive »"
+  },
+  {
+    "id": "EX-F071-M-02",
+    "skill_id": "F071",
+    "level": "maitrise",
+    "type": "qcm",
+    "statement": "Voici les étapes 1, 2 et 3 d'un cadre de carreaux.\n\nCombien de carreaux aura le cadre à l'étape 30 ?",
+    "image": "figures/EX-F071-M-02",
+    "choices": [
+      {
+        "key": "a",
+        "text": "160",
+        "misconception": "L'élève croit le motif proportionnel : l'étape 3 a 16 carreaux, il multiplie par 10 pour l'étape 30. Mais les 4 coins ne se multiplient pas."
+      },
+      {
+        "key": "b",
+        "text": "120",
+        "misconception": "L'élève voit qu'on ajoute 4 carreaux par étape et calcule 4 × 30, mais il oublie les 4 coins."
+      },
+      {
+        "key": "c",
+        "text": "128",
+        "misconception": "L'élève part des 8 carreaux de l'étape 1 et ajoute 4 carreaux 30 fois au lieu de 29 : il compte un passage de trop (8 + 120 = 128)."
+      },
+      {
+        "key": "d",
+        "text": "124",
+        "misconception": null
+      }
+    ],
+    "answer": {
+      "value": "d"
+    },
+    "solution_steps": [
+      "On compte : 8, 12 et 16 carreaux. On ajoute 4 carreaux à chaque étape.",
+      "Chaque cadre a 4 coins, et sur chacun de ses 4 côtés, entre les coins, autant de carreaux que le numéro de l'étape.",
+      "À l'étape 30 : $4 \\times 30 = 120$ carreaux sur les côtés, plus les 4 coins : $120 + 4 = 124$. Réponse **d**."
+    ],
+    "hint": "Sépare les coins du reste du cadre.",
+    "estimated_duration_s": 150,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 3, CM2, Algèbre : « Trouver le nombre d'éléments pour une étape donnée dans une suite de motifs évolutive »"
+  }
+]

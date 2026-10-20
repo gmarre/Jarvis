@@ -1,0 +1,207 @@
+[
+  {
+    "id": "EX-B058-D-01",
+    "skill_id": "B058",
+    "level": "decouverte",
+    "type": "numerique",
+    "statement": "Programme de calcul :\n\n- choisir un nombre ;\n- ajouter 4 ;\n- multiplier le résultat par 6 ;\n- retirer 10.\n\nQuel nombre obtient-on en choisissant 5 ?",
+    "image": null,
+    "answer": {
+      "value": 44
+    },
+    "solution_steps": [
+      "Ajouter 4 : $5 + 4 = 9$.",
+      "Multiplier le résultat par 6 : $9 \\times 6 = 54$.",
+      "Retirer 10 : $54 - 10 = 44$. On obtient **44**.",
+      "Chaque instruction part du résultat de la précédente."
+    ],
+    "hint": "Écris le résultat après chaque instruction.",
+    "estimated_duration_s": 60,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 3, CM2, Algèbre : « Exécuter ou produire un programme de calcul »"
+  },
+  {
+    "id": "EX-B058-D-02",
+    "skill_id": "B058",
+    "level": "decouverte",
+    "type": "qcm",
+    "statement": "Programme : choisir un nombre ; retirer 3 ; multiplier le résultat par 5 ; ajouter 9.\n\nQuel nombre obtient-on en choisissant 11 ?",
+    "image": null,
+    "choices": [
+      {
+        "key": "a",
+        "text": "40",
+        "misconception": "L'élève s'arrête après la deuxième instruction : 11 − 3 = 8, puis 8 × 5 = 40. Il oublie d'ajouter 9."
+      },
+      {
+        "key": "b",
+        "text": "20",
+        "misconception": "L'élève applique la dernière instruction au nombre de départ : 11 + 9 = 20."
+      },
+      {
+        "key": "c",
+        "text": "61",
+        "misconception": "L'élève commence par la multiplication : 11 × 5 = 55, puis 55 − 3 = 52 et 52 + 9 = 61."
+      },
+      {
+        "key": "d",
+        "text": "49",
+        "misconception": null
+      }
+    ],
+    "answer": {
+      "value": "d"
+    },
+    "solution_steps": [
+      "Retirer 3 : $11 - 3 = 8$.",
+      "Multiplier le résultat par 5 : $8 \\times 5 = 40$.",
+      "Ajouter 9 : $40 + 9 = 49$. Réponse **d**."
+    ],
+    "hint": "Fais les trois instructions dans l'ordre.",
+    "estimated_duration_s": 60,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 3, CM2, Algèbre : « Exécuter ou produire un programme de calcul »"
+  },
+  {
+    "id": "EX-B058-E-01",
+    "skill_id": "B058",
+    "level": "entrainement",
+    "type": "numerique",
+    "statement": "Programme : choisir un nombre ; ajouter 2 ; multiplier le résultat par … ; retirer 1.\n\nEn choisissant 5, on obtient 48. Par quel nombre faut-il multiplier ?",
+    "image": null,
+    "answer": {
+      "value": 7,
+      "accepted": [
+        "par 7",
+        "× 7",
+        "x 7",
+        "fois 7",
+        "multiplier par 7",
+        "multiplie par 7"
+      ]
+    },
+    "solution_steps": [
+      "Ajouter 2 : $5 + 2 = 7$.",
+      "La dernière instruction retire 1 et donne 48 : avant de retirer 1, on avait $48 + 1 = 49$.",
+      "Il faut donc que 7 multiplié par le nombre manquant donne 49 : $7 \\times 7 = 49$, soit $49 \\div 7 = 7$.",
+      "Le nombre manquant est **7**. Vérification : $5 + 2 = 7$, $7 \\times 7 = 49$, $49 - 1 = 48$."
+    ],
+    "hint": "Calcule d'abord 5 + 2. Puis cherche quel nombre on avait juste avant de retirer 1.",
+    "estimated_duration_s": 120,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 3, CM2, Algèbre : « Exécuter ou produire un programme de calcul »"
+  },
+  {
+    "id": "EX-B058-E-02",
+    "skill_id": "B058",
+    "level": "entrainement",
+    "type": "qcm",
+    "statement": "Une salle de sport demande 15 € d'inscription, puis 9 € par mois.\n\nQuel programme donne le prix à payer à partir du nombre de mois ?",
+    "image": null,
+    "choices": [
+      {
+        "key": "a",
+        "text": "Ajouter 15 au nombre de mois, puis multiplier le résultat par 9.",
+        "misconception": "L'élève écrit les instructions dans l'ordre où il lit les nombres : l'inscription serait alors payée 9 fois."
+      },
+      {
+        "key": "b",
+        "text": "Multiplier le nombre de mois par 15, puis ajouter 9.",
+        "misconception": "L'élève échange les deux prix : il fait payer l'inscription chaque mois et le mois une seule fois."
+      },
+      {
+        "key": "c",
+        "text": "Multiplier le nombre de mois par 9, puis ajouter 15.",
+        "misconception": null
+      },
+      {
+        "key": "d",
+        "text": "Multiplier le nombre de mois par 24.",
+        "misconception": "L'élève ajoute les deux prix, 15 + 9 = 24, et les fait payer chaque mois : l'inscription serait payée chaque mois."
+      }
+    ],
+    "answer": {
+      "value": "c"
+    },
+    "solution_steps": [
+      "Chaque mois coûte 9 € : on multiplie le nombre de mois par 9.",
+      "L'inscription ne se paie qu'une fois : on ajoute 15 € à la fin.",
+      "Le programme est : multiplier le nombre de mois par 9, puis ajouter 15. Réponse **c**.",
+      "Exemple pour 4 mois : $4 \\times 9 = 36$, puis $36 + 15 = 51$ €. Avec le programme a, l'inscription serait payée 9 fois."
+    ],
+    "hint": "Qu'est-ce qui se paie chaque mois ? Qu'est-ce qui ne se paie qu'une fois ?",
+    "estimated_duration_s": 90,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 3, CM2, Algèbre : « Exécuter ou produire un programme de calcul »"
+  },
+  {
+    "id": "EX-B058-M-01",
+    "skill_id": "B058",
+    "level": "maitrise",
+    "type": "qcm",
+    "statement": "Un programme transforme 3 en 10, 5 en 16 et 8 en 25.\n\nQuel est ce programme ?",
+    "image": null,
+    "choices": [
+      {
+        "key": "a",
+        "text": "Ajouter 7.",
+        "misconception": "L'élève vérifie seulement le premier nombre : 3 + 7 = 10, mais 5 + 7 = 12, pas 16."
+      },
+      {
+        "key": "b",
+        "text": "Multiplier par 2, puis ajouter 4.",
+        "misconception": "L'élève vérifie seulement le premier nombre : 3 × 2 + 4 = 10, mais 5 × 2 + 4 = 14, pas 16."
+      },
+      {
+        "key": "c",
+        "text": "Multiplier par 4, puis retirer 2.",
+        "misconception": "L'élève vérifie seulement le premier nombre : 3 × 4 − 2 = 10, mais 5 × 4 − 2 = 18, pas 16."
+      },
+      {
+        "key": "d",
+        "text": "Multiplier par 3, puis ajouter 1.",
+        "misconception": null
+      }
+    ],
+    "answer": {
+      "value": "d"
+    },
+    "solution_steps": [
+      "Un programme doit marcher pour les trois nombres, pas seulement pour le premier.",
+      "Les quatre programmes transforment bien 3 en 10. On essaie avec 5 : a donne 12, b donne 14, c donne 18, d donne $5 \\times 3 + 1 = 16$.",
+      "On vérifie d avec 8 : $8 \\times 3 = 24$, puis $24 + 1 = 25$. C'est juste.",
+      "Le programme est **d** : multiplier par 3, puis ajouter 1."
+    ],
+    "hint": "Essaie chaque programme avec 5, puis avec 8.",
+    "estimated_duration_s": 120,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 3, CM2, Algèbre : « Exécuter ou produire un programme de calcul »"
+  },
+  {
+    "id": "EX-B058-M-02",
+    "skill_id": "B058",
+    "level": "maitrise",
+    "type": "numerique",
+    "statement": "Sortie au musée : l'entrée coûte 9 € par élève et le car 40 €. Une aide de la mairie fait baisser le total de 25 €.\n\nCombien la classe paie-t-elle pour 8 élèves ?",
+    "image": null,
+    "answer": {
+      "value": 87,
+      "unit": "€",
+      "accepted": [
+        "87 €",
+        "87€",
+        "87 euros"
+      ]
+    },
+    "solution_steps": [
+      "Programme : multiplier le nombre d'élèves par 9 ; ajouter 40 ; retirer 25.",
+      "Pour 8 élèves : $8 \\times 9 = 72$ €.",
+      "$72 + 40 = 112$ €, puis $112 - 25 = 87$ €.",
+      "La classe paie **87 €**. Le car s'ajoute une seule fois et l'aide se retire une seule fois : seule l'entrée dépend du nombre d'élèves."
+    ],
+    "hint": "Écris le programme : que fait-on d'abord avec le nombre d'élèves ?",
+    "estimated_duration_s": 120,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 3, CM2, Algèbre : « Exécuter ou produire un programme de calcul »"
+  }
+]

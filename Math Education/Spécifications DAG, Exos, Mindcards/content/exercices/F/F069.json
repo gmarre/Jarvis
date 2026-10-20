@@ -1,0 +1,181 @@
+[
+  {
+    "id": "EX-F069-D-01",
+    "skill_id": "F069",
+    "level": "decouverte",
+    "type": "numerique",
+    "statement": "Le signe = veut dire : les deux côtés valent le même nombre.\n\nComplète : 95 − … = 6 × 7\n\nCommence par calculer 6 × 7.",
+    "image": null,
+    "answer": {
+      "value": 53
+    },
+    "solution_steps": [
+      "Côté droit : $6 \\times 7 = 42$.",
+      "Le côté gauche doit valoir 42 aussi : 95 moins le nombre manquant doit donner 42.",
+      "Le nombre manquant est l'écart entre 95 et 42 : $95 - 42 = 53$.",
+      "Vérification : $95 - 53 = 42$ et $6 \\times 7 = 42$. Le nombre manquant est **53**. Écrire 42 dans le trou, ce serait lire = comme « ça donne »."
+    ],
+    "hint": "Combien doit valoir 95 − … ? Regarde le côté droit.",
+    "estimated_duration_s": 90,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 3, CM1, Algèbre : « Trouver le nombre manquant dans une égalité à trous »"
+  },
+  {
+    "id": "EX-F069-D-02",
+    "skill_id": "F069",
+    "level": "decouverte",
+    "type": "vrai_faux",
+    "statement": "Cette égalité est-elle vraie ?\n\n4 × 6 = 30 − 6",
+    "image": null,
+    "answer": {
+      "value": true
+    },
+    "solution_steps": [
+      "Le signe = ne veut pas dire « ça donne » : il dit que les deux côtés valent le même nombre.",
+      "Côté gauche : $4 \\times 6 = 24$. Côté droit : $30 - 6 = 24$.",
+      "Les deux côtés valent 24 : l'égalité est **vraie**.",
+      "Ne lire que le début, « 4 × 6 = 30 », ferait croire à une erreur."
+    ],
+    "hint": "Calcule chaque côté du signe =, puis compare.",
+    "estimated_duration_s": 60,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 3, CM1, Algèbre : le signe = « peut être placé entre deux expressions qui sont égales »"
+  },
+  {
+    "id": "EX-F069-E-01",
+    "skill_id": "F069",
+    "level": "entrainement",
+    "type": "numerique",
+    "statement": "Le ▲ représente toujours le même nombre.\n\n▲ + ▲ + ▲ + 6 = 30\n\nQue vaut ▲ ?",
+    "image": null,
+    "answer": {
+      "value": 8,
+      "accepted": [
+        "▲ = 8",
+        "▲=8"
+      ]
+    },
+    "solution_steps": [
+      "Trois ▲ et 6 font 30. Sans le 6, il reste $30 - 6 = 24$ : les trois ▲ font 24.",
+      "On cherche le nombre qui, pris trois fois, fait 24 : $3 \\times 8 = 24$, donc $24 \\div 3 = 8$.",
+      "Vérification : $8 + 8 + 8 + 6 = 30$. ▲ vaut **8**.",
+      "Ajouter 6 à 30 au lieu de l'enlever, ce serait refaire l'opération de l'énoncé au lieu de la défaire."
+    ],
+    "hint": "Combien font les trois ▲, sans le 6 ?",
+    "estimated_duration_s": 90,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 3, CM1, Algèbre : « Déterminer la valeur d'un nombre inconnu en utilisant un symbole ou une lettre pour le représenter »"
+  },
+  {
+    "id": "EX-F069-E-02",
+    "skill_id": "F069",
+    "level": "entrainement",
+    "type": "qcm",
+    "statement": "Une balance est en équilibre. À gauche : 4 sacs identiques et 3 kg. À droite : 23 kg.\n\n■ est la masse d'un sac. Quelle écriture traduit la balance ?",
+    "image": null,
+    "choices": [
+      {
+        "key": "a",
+        "text": "■ + 4 + 3 = 23",
+        "misconception": "L'élève lit « 4 sacs » comme 4 kg : il écrit un seul sac et ajoute 4."
+      },
+      {
+        "key": "b",
+        "text": "■ + ■ + ■ + ■ + 3 = 23",
+        "misconception": null
+      },
+      {
+        "key": "c",
+        "text": "■ + ■ + ■ + ■ = 23 + 3",
+        "misconception": "L'élève met les 3 kg à droite alors qu'ils sont à gauche avec les sacs : cette balance ne serait plus la même."
+      },
+      {
+        "key": "d",
+        "text": "■ + 3 = 23",
+        "misconception": "L'élève n'écrit qu'un sac : il oublie que les 4 sacs sont sur le plateau."
+      }
+    ],
+    "answer": {
+      "value": "b"
+    },
+    "solution_steps": [
+      "Chaque sac pèse ■. Les quatre sacs : ■ + ■ + ■ + ■.",
+      "Avec les 3 kg posés à gauche : ■ + ■ + ■ + ■ + 3.",
+      "La balance est en équilibre : la gauche pèse autant que la droite, 23 kg. L'écriture est ■ + ■ + ■ + ■ + 3 = 23, réponse **b**.",
+      "On peut en déduire la masse d'un sac : $23 - 3 = 20$, et $20 \\div 4 = 5$. Un sac pèse 5 kg."
+    ],
+    "hint": "Écris un ■ pour chaque sac, puis ajoute ce qui est posé avec eux.",
+    "estimated_duration_s": 90,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 3, CM1, Algèbre : « Résoudre des problèmes algébriques »"
+  },
+  {
+    "id": "EX-F069-M-01",
+    "skill_id": "F069",
+    "level": "maitrise",
+    "type": "numerique",
+    "statement": "Emma a 4 fois plus de cartes que Noé. À eux deux, ils ont 35 cartes.\n\nCombien de cartes Noé a-t-il ?",
+    "image": null,
+    "answer": {
+      "value": 7,
+      "unit": "cartes",
+      "accepted": [
+        "7 cartes",
+        "7 carte"
+      ]
+    },
+    "solution_steps": [
+      "Noé a une part. Emma a 4 fois plus : 4 parts de la même taille.",
+      "À eux deux : $1 + 4 = 5$ parts égales, qui font 35 cartes.",
+      "Une part : $35 \\div 5 = 7$. Noé a **7 cartes**, et Emma $4 \\times 7 = 28$.",
+      "Vérification : $7 + 28 = 35$, et 28 est bien 4 fois 7. Diviser 35 par 4 oublierait la part de Noé."
+    ],
+    "hint": "Dessine une barre pour les cartes de Noé, puis les barres d'Emma. Combien de barres égales en tout ?",
+    "estimated_duration_s": 120,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 3, CM1, Algèbre : « Résoudre des problèmes algébriques »"
+  },
+  {
+    "id": "EX-F069-M-02",
+    "skill_id": "F069",
+    "level": "maitrise",
+    "type": "qcm",
+    "statement": "Quel nombre manque ?\n\n… − 36 = 7 × 8",
+    "image": null,
+    "choices": [
+      {
+        "key": "a",
+        "text": "20",
+        "misconception": "L'élève refait la soustraction de l'énoncé au lieu de la défaire : 56 − 36 = 20."
+      },
+      {
+        "key": "b",
+        "text": "56",
+        "misconception": "L'élève lit = comme « ça donne » : il écrit dans le trou le résultat du côté droit, 7 × 8 = 56."
+      },
+      {
+        "key": "c",
+        "text": "92",
+        "misconception": null
+      },
+      {
+        "key": "d",
+        "text": "82",
+        "misconception": "L'élève défait bien la soustraction en ajoutant 36 à 56, mais oublie la retenue : 56 + 36 fait 92, pas 82."
+      }
+    ],
+    "answer": {
+      "value": "c"
+    },
+    "solution_steps": [
+      "Côté droit : $7 \\times 8 = 56$.",
+      "Le côté gauche doit valoir 56 : on cherche le nombre auquel on retire 36 pour obtenir 56.",
+      "Pour défaire « retirer 36 », on ajoute 36 : $56 + 36 = 92$. Le nombre manquant est **92**, réponse **c**.",
+      "Vérification : $92 - 36 = 56$ et $7 \\times 8 = 56$. Choisir 20, ce serait refaire la soustraction au lieu de la défaire."
+    ],
+    "hint": "Calcule d'abord le côté droit, puis cherche le nombre de départ.",
+    "estimated_duration_s": 90,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 3, CM1, Algèbre : « Trouver le nombre manquant dans une égalité à trous »"
+  }
+]

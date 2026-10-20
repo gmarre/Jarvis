@@ -1,0 +1,180 @@
+[
+  {
+    "id": "EX-F070-D-01",
+    "skill_id": "F070",
+    "level": "decouverte",
+    "type": "vrai_faux",
+    "statement": "12 ; 18 ; 24 ; 30 ; …\n\nNina dit : « Dans cette suite, on ajoute toujours 6. Le nombre suivant est 36. » A-t-elle raison ?",
+    "image": null,
+    "answer": {
+      "value": true
+    },
+    "solution_steps": [
+      "On regarde chaque passage : $12 + 6 = 18$, $18 + 6 = 24$, $24 + 6 = 30$. La règle est bien « on ajoute 6 ».",
+      "Le nombre suivant : $30 + 6 = 36$. Nina a **raison**.",
+      "On reconnaît les nombres de la table de 6."
+    ],
+    "hint": "Combien faut-il ajouter à 12 pour obtenir 18 ? Et à 18 pour obtenir 24 ?",
+    "estimated_duration_s": 60,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 3, CM1, Algèbre : « Identifier et formuler une règle de calcul pour poursuivre une suite de nombres »"
+  },
+  {
+    "id": "EX-F070-D-02",
+    "skill_id": "F070",
+    "level": "decouverte",
+    "type": "numerique",
+    "statement": "Voici les étapes 1, 2 et 3 d'un motif de carreaux.\n\nCombien de carreaux faudra-t-il à l'étape 4 ?",
+    "image": "figures/EX-F070-D-02",
+    "answer": {
+      "value": 9,
+      "unit": "carreaux",
+      "accepted": [
+        "9 carreaux",
+        "9 carreau"
+      ]
+    },
+    "solution_steps": [
+      "On compte les carreaux : 3 à l'étape 1, 5 à l'étape 2, 7 à l'étape 3.",
+      "D'une étape à la suivante, on ajoute 2 carreaux : un en haut de la colonne, un au bout de la ligne.",
+      "Étape 4 : $7 + 2 = 9$ carreaux.",
+      "Inutile de recompter tout le motif : on part de l'étape 3 et on ajoute ce qui change."
+    ],
+    "hint": "Qu'est-ce qui s'ajoute entre l'étape 1 et l'étape 2 ? Entre l'étape 2 et l'étape 3 ?",
+    "estimated_duration_s": 90,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 3, CM1, Algèbre : « Identifier des régularités et poursuivre une suite de motifs évolutive »"
+  },
+  {
+    "id": "EX-F070-E-01",
+    "skill_id": "F070",
+    "level": "entrainement",
+    "type": "qcm",
+    "statement": "Quelle règle permet de poursuivre cette suite ?\n\n20 ; 30 ; 27 ; 37 ; 34 ; 44 ; …",
+    "image": null,
+    "choices": [
+      {
+        "key": "a",
+        "text": "On ajoute 7.",
+        "misconception": "L'élève ne regarde qu'un nombre sur deux : 20, 27 et 34 augmentent bien de 7, mais 30 n'est pas 20 + 7."
+      },
+      {
+        "key": "b",
+        "text": "On ajoute 10.",
+        "misconception": "L'élève ne regarde que le premier passage : 20 + 10 = 30, mais 30 + 10 ne fait pas 27."
+      },
+      {
+        "key": "c",
+        "text": "On ajoute 10, puis on retire 3, et on recommence.",
+        "misconception": null
+      },
+      {
+        "key": "d",
+        "text": "On retire 3.",
+        "misconception": "L'élève ne regarde que le passage de 30 à 27 : 27 − 3 ne fait pas 37."
+      }
+    ],
+    "answer": {
+      "value": "c"
+    },
+    "solution_steps": [
+      "On regarde chaque passage : $20 + 10 = 30$ ; $30 - 3 = 27$ ; $27 + 10 = 37$ ; $37 - 3 = 34$ ; $34 + 10 = 44$.",
+      "Les passages alternent : on ajoute 10, puis on retire 3. C'est la règle **c**.",
+      "Le nombre suivant serait $44 - 3 = 41$.",
+      "Une règle doit marcher pour tous les passages, pas seulement pour deux nombres."
+    ],
+    "hint": "Écris ce qui se passe entre chaque nombre et le suivant.",
+    "estimated_duration_s": 90,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 3, CM1, Algèbre : « Identifier et formuler une règle de calcul pour poursuivre une suite de nombres »"
+  },
+  {
+    "id": "EX-F070-E-02",
+    "skill_id": "F070",
+    "level": "entrainement",
+    "type": "numerique",
+    "statement": "Voici le début d'une suite :\n\n4 ; 7 ; 13 ; 16 ; 22 ; 25 ; …\n\nQuel est le 8e nombre de la suite ?",
+    "image": null,
+    "answer": {
+      "value": 34
+    },
+    "solution_steps": [
+      "Les passages : $4 + 3 = 7$ ; $7 + 6 = 13$ ; $13 + 3 = 16$ ; $16 + 6 = 22$ ; $22 + 3 = 25$.",
+      "La règle : on ajoute 3, puis 6, et on recommence.",
+      "Le dernier passage ajoutait 3, le suivant ajoute 6 : le 7e nombre est $25 + 6 = 31$.",
+      "Puis on ajoute 3 : le 8e nombre est $31 + 3 = 34$."
+    ],
+    "hint": "Écris ce qu'on ajoute à chaque passage. Le 7e nombre vient juste après 25.",
+    "estimated_duration_s": 90,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 3, CM1, Algèbre : « Identifier et formuler une règle de calcul pour poursuivre une suite de nombres »"
+  },
+  {
+    "id": "EX-F070-M-01",
+    "skill_id": "F070",
+    "level": "maitrise",
+    "type": "numerique",
+    "statement": "Voici les étapes 1, 2 et 3 d'un escalier de carreaux.\n\nCombien de carreaux faudra-t-il à l'étape 5 ?",
+    "image": "figures/EX-F070-M-01",
+    "answer": {
+      "value": 15,
+      "unit": "carreaux",
+      "accepted": [
+        "15 carreaux",
+        "15 carreau"
+      ]
+    },
+    "solution_steps": [
+      "On compte : 1 carreau à l'étape 1, 3 à l'étape 2, 6 à l'étape 3.",
+      "À chaque étape, on ajoute à droite une colonne plus haute d'un carreau que la précédente : on ajoute 2, puis 3.",
+      "Étape 4 : une colonne de 4 carreaux, $6 + 4 = 10$. Étape 5 : une colonne de 5 carreaux, $10 + 5 = 15$.",
+      "Il y a **15 carreaux**. On n'ajoute pas toujours le même nombre : ajouter 3 à chaque étape donnerait 12."
+    ],
+    "hint": "Regarde la colonne qui s'ajoute à chaque étape. Combien de carreaux aura la suivante ?",
+    "estimated_duration_s": 120,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 3, CM1, Algèbre : « Identifier des régularités et poursuivre une suite de motifs évolutive »"
+  },
+  {
+    "id": "EX-F070-M-02",
+    "skill_id": "F070",
+    "level": "maitrise",
+    "type": "qcm",
+    "statement": "Quel nombre vient ensuite ?\n\n2 ; 3 ; 5 ; 8 ; 12 ; …",
+    "image": null,
+    "choices": [
+      {
+        "key": "a",
+        "text": "16",
+        "misconception": "L'élève ne regarde que les deux derniers nombres : de 8 à 12 on ajoute 4, et il ajoute 4 une nouvelle fois."
+      },
+      {
+        "key": "b",
+        "text": "17",
+        "misconception": null
+      },
+      {
+        "key": "c",
+        "text": "24",
+        "misconception": "L'élève double le dernier nombre, comme si la suite doublait : mais 3 n'est pas le double de 2."
+      },
+      {
+        "key": "d",
+        "text": "20",
+        "misconception": "L'élève ajoute les deux derniers nombres (8 + 12 = 20) : mais 5 + 8 ne fait pas 12."
+      }
+    ],
+    "answer": {
+      "value": "b"
+    },
+    "solution_steps": [
+      "Les passages : $2 + 1 = 3$ ; $3 + 2 = 5$ ; $5 + 3 = 8$ ; $8 + 4 = 12$.",
+      "On ajoute 1, puis 2, puis 3, puis 4 : ce qu'on ajoute grandit de 1 à chaque passage.",
+      "Le passage suivant ajoute 5 : $12 + 5 = 17$. Réponse **b**."
+    ],
+    "hint": "Écris ce qu'on ajoute à chaque passage. Que remarques-tu ?",
+    "estimated_duration_s": 90,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 3, CM1, Algèbre : « Identifier et formuler une règle de calcul pour poursuivre une suite de nombres »"
+  }
+]

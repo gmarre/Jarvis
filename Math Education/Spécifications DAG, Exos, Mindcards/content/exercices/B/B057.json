@@ -1,0 +1,170 @@
+[
+  {
+    "id": "EX-B057-D-01",
+    "skill_id": "B057",
+    "level": "decouverte",
+    "type": "numerique",
+    "statement": "Voici un programme de calcul :\n\n- choisir un nombre ;\n- ajouter 3 ;\n- multiplier le résultat par 5.\n\nInès choisit 4. Quel nombre obtient-elle ?",
+    "image": null,
+    "answer": {
+      "value": 35
+    },
+    "solution_steps": [
+      "On suit les instructions dans l'ordre, chacune sur le résultat de la précédente.",
+      "Ajouter 3 : $4 + 3 = 7$.",
+      "Multiplier le résultat par 5 : $7 \\times 5 = 35$. Inès obtient **35**.",
+      "Multiplier 4 par 5 (20) oublierait la première instruction."
+    ],
+    "hint": "Fais d'abord 4 + 3. C'est ce résultat qu'on multiplie par 5.",
+    "estimated_duration_s": 60,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 3, CM1, Algèbre : « Exécuter un programme de calcul »"
+  },
+  {
+    "id": "EX-B057-D-02",
+    "skill_id": "B057",
+    "level": "decouverte",
+    "type": "qcm",
+    "statement": "Programme de calcul :\n\n- choisir un nombre ;\n- multiplier par 2 ;\n- ajouter 7.\n\nOn choisit 8. Quel nombre obtient-on ?",
+    "image": null,
+    "choices": [
+      {
+        "key": "a",
+        "text": "15",
+        "misconception": "L'élève applique la dernière instruction au nombre de départ : 8 + 7 = 15. Il oublie « multiplier par 2 »."
+      },
+      {
+        "key": "b",
+        "text": "30",
+        "misconception": "L'élève fait les instructions dans le désordre : il ajoute 7 d'abord (8 + 7 = 15), puis multiplie par 2 (le double de 15 : 30)."
+      },
+      {
+        "key": "c",
+        "text": "23",
+        "misconception": null
+      },
+      {
+        "key": "d",
+        "text": "16",
+        "misconception": "L'élève s'arrête après la première instruction : 8 × 2 = 16. Il oublie d'ajouter 7."
+      }
+    ],
+    "answer": {
+      "value": "c"
+    },
+    "solution_steps": [
+      "Multiplier par 2 : $8 \\times 2 = 16$.",
+      "Ajouter 7 au résultat : $16 + 7 = 23$. On obtient **23**.",
+      "L'ordre compte : en ajoutant 7 d'abord, on trouverait 15, puis le double de 15, $15 + 15 = 30$ : un autre nombre."
+    ],
+    "hint": "Fais les instructions dans l'ordre, en partant à chaque fois du résultat précédent.",
+    "estimated_duration_s": 60,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 3, CM1, Algèbre : « Exécuter un programme de calcul »"
+  },
+  {
+    "id": "EX-B057-E-01",
+    "skill_id": "B057",
+    "level": "entrainement",
+    "type": "numerique",
+    "statement": "Programme : choisir un nombre ; retirer 4 ; multiplier le résultat par 6.\n\nEn choisissant 9, on obtient 30. Quel nombre obtient-on en choisissant 12 ?",
+    "image": null,
+    "answer": {
+      "value": 48
+    },
+    "solution_steps": [
+      "On vérifie avec 9 : $9 - 4 = 5$, puis $5 \\times 6 = 30$. Le programme est bien compris.",
+      "Avec 12 : $12 - 4 = 8$.",
+      "Puis $8 \\times 6 = 48$. On obtient **48**.",
+      "Retirer 4 vient en premier : on ne multiplie pas 12 par 6."
+    ],
+    "hint": "Refais le calcul avec 9 pour voir comment marche le programme, puis pars de 12.",
+    "estimated_duration_s": 90,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 3, CM1, Algèbre : « Exécuter un programme de calcul »"
+  },
+  {
+    "id": "EX-B057-E-02",
+    "skill_id": "B057",
+    "level": "entrainement",
+    "type": "vrai_faux",
+    "statement": "Programme A : ajouter 6, puis multiplier par 3.\n\nProgramme B : multiplier par 3, puis ajouter 6.\n\nLou choisit 5 pour les deux. Elle dit : « J'obtiens le même nombre. » A-t-elle raison ?",
+    "image": null,
+    "answer": {
+      "value": false
+    },
+    "solution_steps": [
+      "Programme A : $5 + 6 = 11$, puis $11 \\times 3 = 11 + 11 + 11 = 33$.",
+      "Programme B : $5 \\times 3 = 15$, puis $15 + 6 = 21$.",
+      "33 et 21 sont différents : Lou a **tort**.",
+      "Les deux programmes ont les mêmes instructions, mais pas dans le même ordre, et l'ordre change le résultat."
+    ],
+    "hint": "Fais les deux programmes avec 5, l'un après l'autre.",
+    "estimated_duration_s": 120,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 3, CM1, Algèbre : « Exécuter un programme de calcul »"
+  },
+  {
+    "id": "EX-B057-M-01",
+    "skill_id": "B057",
+    "level": "maitrise",
+    "type": "numerique",
+    "statement": "Programme : choisir un nombre ; ajouter 9 ; multiplier le résultat par 8.\n\nMalo choisit 0. Il dit : « 0 multiplié par un nombre, ça fait 0. » Quel nombre obtient-il vraiment ?",
+    "image": null,
+    "answer": {
+      "value": 72
+    },
+    "solution_steps": [
+      "On suit l'ordre des instructions. Ajouter 9 : $0 + 9 = 9$.",
+      "Multiplier le résultat par 8 : on ne multiplie pas 0, mais 9. $9 \\times 8 = 72$.",
+      "Malo obtient **72**. Sa phrase est juste, mais elle ne sert pas ici : après la première instruction, il n'y a plus de 0."
+    ],
+    "hint": "Quel est le résultat de la première instruction ? C'est lui qu'on multiplie par 8.",
+    "estimated_duration_s": 90,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 3, CM1, Algèbre : « Exécuter un programme de calcul »"
+  },
+  {
+    "id": "EX-B057-M-02",
+    "skill_id": "B057",
+    "level": "maitrise",
+    "type": "qcm",
+    "statement": "Programme : choisir un nombre ; retirer 6 ; multiplier le résultat par 7.\n\nQuel nombre faut-il choisir pour obtenir 56 ?",
+    "image": null,
+    "choices": [
+      {
+        "key": "a",
+        "text": "14",
+        "misconception": null
+      },
+      {
+        "key": "b",
+        "text": "8",
+        "misconception": "L'élève trouve le nombre à multiplier par 7 (8, car 8 × 7 = 56) et oublie qu'on a retiré 6 avant : en partant de 8, on obtient 2 × 7 = 14."
+      },
+      {
+        "key": "c",
+        "text": "62",
+        "misconception": "L'élève défait « retirer 6 » en ajoutant 6 à 56, mais oublie de défaire « multiplier par 7 » : en partant de 62, on obtient 56 × 7, bien plus que 56."
+      },
+      {
+        "key": "d",
+        "text": "50",
+        "misconception": "L'élève applique « retirer 6 » à 56 au lieu de la défaire : en partant de 50, on obtient 44 × 7, bien plus que 56."
+      }
+    ],
+    "answer": {
+      "value": "a"
+    },
+    "solution_steps": [
+      "On essaie chaque proposition avec le programme.",
+      "Avec 14 : $14 - 6 = 8$, puis $8 \\times 7 = 56$. C'est le bon nombre.",
+      "Avec 8 : $8 - 6 = 2$, puis $2 \\times 7 = 14$. Avec 62 ou 50, il reste 56 ou 44 après « retirer 6 », et multiplier par 7 donne bien plus que 56.",
+      "Il faut choisir **14**. Autre façon : pour obtenir 56 en multipliant par 7, il faut avoir 8 ($8 \\times 7 = 56$) ; et on obtient 8 en retirant 6 à 14."
+    ],
+    "hint": "Essaie chaque nombre proposé avec le programme.",
+    "estimated_duration_s": 120,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 3, CM1, Algèbre : « Exécuter un programme de calcul »"
+  }
+]

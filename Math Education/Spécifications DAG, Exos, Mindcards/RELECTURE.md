@@ -1,6 +1,6 @@
 # Fiche de relecture — synthèse
 
-> 221 compétences, 1342 exercices. Généré depuis `content/`, ne pas éditer à la main.  
+> 227 compétences, 1378 exercices. Généré depuis `content/`, ne pas éditer à la main.  
 > Objectif : juger le **fond** et la **coordination**. Le détail complet, énoncés et corrigés, est dans `RELECTURE_DETAIL.md`.
 
 ⚠ **1 compétence(s) à regarder**, signalées dans la colonne *Signal* et détaillées en §3.
@@ -84,156 +84,160 @@ C'est la lecture qui compte pour juger la coordination : la difficulté doit mon
 | 71 | `B008` Division euclidienne posée (diviseur à … | CM1 | 3 | 6 | 20 |  |
 | 72 | `B012` Calcul avec parenthèses | CM1 | 3 | 6 | 15 |  |
 | 73 | `B017` Estimer le résultat d'une opération | CM1 | 3 | 6 | 20 |  |
-| 74 | `C004` Fraction d'une quantité | CM1 | 3 | 6 | 17 |  |
-| 75 | `C027` Fraction supérieure à 1 | CM1 | 3 | 8 | 15 |  |
-| 76 | `C029` Encadrer une fraction | CM1 | 3 | 7 | 14 |  |
-| 77 | `C030` Fraction sur une demi-droite graduée | CM1 | 3 | 7 | 15 |  |
-| 78 | `D018` Fractions décimales : dixièmes et centi… | CM1 | 3 | 6 | 22 |  |
-| 79 | `D001` Écriture à virgule d'un nombre décimal | CM1 | 3 | 6 | 16 |  |
-| 80 | `D003` Comparer et ranger des nombres décimaux | CM1 | 3 | 6 | 28 |  |
-| 81 | `D004` Additionner et soustraire des décimaux … | CM1 | 3 | 6 | 20 |  |
-| 82 | `D012` Encadrer et intercaler des nombres déci… | CM1 | 3 | 6 | 24 |  |
-| 83 | `D008` Partie entière et arrondi à l'unité | CM1 | 3 | 6 | 19 |  |
-| 84 | `D019` Décimal sur une demi-droite graduée | CM1 | 3 | 6 | 11 |  |
-| 85 | `D020` Calcul mental : multiplier et diviser u… | CM1 | 3 | 6 | 19 |  |
-| 86 | `D021` Multiplier un décimal par un entier inf… | CM1 | 3 | 6 | 17 |  |
-| 87 | `E026` Reconnaître une situation de proportion… | CM1 | 3 | 6 | 27 |  |
-| 88 | `E027` Résoudre par linéarité multiplicative (… | CM1 | 3 | 6 | 17 |  |
-| 89 | `G015` Comparer des angles | CM1 | 3 | 6 | 17 |  |
-| 90 | `G016` Droites perpendiculaires et droites par… | CM1 | 3 | 6 | 13 |  |
-| 91 | `G017` Triangles particuliers : rectangle, iso… | CM1 | 3 | 6 | 14 |  |
-| 92 | `G018` Carré, rectangle, losange : définitions… | CM1 | 3 | 6 | 13 |  |
-| 93 | `G019` Solides en perspective ; le prisme droit | CM1 | 3 | 6 | 8 |  |
-| 94 | `G020` Assemblages de cubes : dénombrer, cubes… | CM1 | 3 | 6 | 22 |  |
-| 95 | `G021` Lire un programme de construction | CM1 | 3 | 6 | 29 |  |
-| 96 | `P015` Unités de mesure du milli au kilo : lon… | CM1 | 3 | 6 | 26 |  |
-| 97 | `P016` Problèmes de périmètre : retrouver un c… | CM1 | 3 | 6 | 28 |  |
-| 98 | `P017` L'aire : comparer des surfaces et mesur… | CM1 | 3 | 7 | 18 |  |
-| 99 | `D014` Convertir des mesures écrites avec une … | CM1 | 4 | 6 | 20 |  |
-| 100 | `A026` Tous les diviseurs d'un entier | CM2 | 3 | 7 | 17 |  |
-| 101 | `B016` Calcul mental : diviser par 2, 4 ou 8 | CM2 | 3 | 6 | 16 |  |
-| 102 | `G023` Trapèze, pentagone, hexagone : reconnaî… | CM2 | 3 | 6 | 14 |  |
-| 103 | `P020` Durées en heures, minutes et secondes | CM2 | 3 | 6 | 26 |  |
-| 104 | `A027` Diviseurs et multiples communs | CM2 | 4 | 8 | 22 |  |
-| 105 | `C031` Produit d'un entier par une fraction | CM2 | 4 | 7 | 10 |  |
-| 106 | `D022` Décimaux jusqu'aux millièmes | CM2 | 4 | 6 | 14 |  |
-| 107 | `D007` Division décimale par un entier à un ch… | CM2 | 4 | 6 | 17 |  |
-| 108 | `D023` Calcul mental : multiplier et diviser u… | CM2 | 4 | 6 | 13 |  |
-| 109 | `D024` Multiplier un décimal par un entier (po… | CM2 | 4 | 6 | 20 |  |
-| 110 | `E028` Résoudre par linéarité additive | CM2 | 4 | 6 | 22 |  |
-| 111 | `E029` Problèmes de proportionnalité en plusie… | CM2 | 4 | 6 | 18 |  |
-| 112 | `G022` Le degré : l'angle droit mesure 90° | CM2 | 4 | 6 | 11 |  |
-| 113 | `G024` Symétrique d'une figure sur quadrillage… | CM2 | 4 | 6 | 19 |  |
-| 114 | `P018` Aire d'un carré ou d'un rectangle (cour… | CM2 | 4 | 6 | 29 |  |
-| 115 | `P019` Unités d'aire : cm², dm², m² et convers… | CM2 | 4 | 6 | 24 |  |
-| 116 | `B040` Division euclidienne par un nombre à de… | 6e | 4 | 6 | 18 |  |
-| 117 | `C032` Fraction comme quotient | 6e | 4 | 7 | 16 |  |
-| 118 | `D009` Arrondir au dixième ou au centième | 6e | 4 | 6 | 17 |  |
-| 119 | `D025` Multiplier par 0,1 ; 0,01 ; 0,001 | 6e | 4 | 6 | 19 |  |
-| 120 | `E030` Grandeurs proportionnelles : définition… | 6e | 4 | 6 | 31 |  |
-| 121 | `E031` Passage par l'unité et choix de la proc… | 6e | 4 | 6 | 24 |  |
-| 122 | `E003` Tableau de proportionnalité : représent… | 6e | 4 | 6 | 51 |  |
-| 123 | `E032` Pourcentage : définition et écritures | 6e | 4 | 6 | 31 |  |
-| 124 | `E010` Appliquer un pourcentage à une grandeur… | 6e | 4 | 6 | 25 |  |
-| 125 | `E033` Exprimer une proportion en pourcentage … | 6e | 4 | 6 | 24 |  |
-| 126 | `G025` Mesurer un angle avec un rapporteur | 6e | 4 | 6 | 13 |  |
-| 127 | `G026` Angles plat, adjacents, supplémentaires… | 6e | 4 | 6 | 15 |  |
-| 128 | `G028` Distances : milieu d'un segment, cercle… | 6e | 4 | 6 | 17 |  |
-| 129 | `P021` Convertir des longueurs vers et depuis … | 6e | 4 | 6 | 20 |  |
-| 130 | `P022` Périmètre du carré et du rectangle : fo… | 6e | 4 | 6 | 26 |  |
-| 131 | `P024` Aire du carré et du rectangle : formules | 6e | 4 | 6 | 28 |  |
-| 132 | `P025` Conversions d'aires avec des nombres dé… | 6e | 4 | 6 | 20 |  |
-| 133 | `P026` Volume : le centimètre cube et le dénom… | 6e | 4 | 6 | 35 |  |
-| 134 | `P027` Convertir des durées : système décimal … | 6e | 4 | 6 | 18 |  |
-| 135 | `D006` Multiplier deux nombres décimaux | 6e | 5 | 6 | 22 |  |
-| 136 | `E006` Échelle d'un plan : premiers problèmes | 6e | 5 | 6 | 36 |  |
-| 137 | `G027` Somme des angles d'un triangle | 6e | 5 | 6 | 11 |  |
-| 138 | `G029` La médiatrice d'un segment | 6e | 5 | 6 | 13 |  |
-| 139 | `G030` Symétrie axiale : symétrique d'un point… | 6e | 5 | 6 | 21 |  |
-| 140 | `P023` Périmètre d'un disque | 6e | 5 | 6 | 34 |  |
-| 141 | `A015` Critères de divisibilité par 3 et par 9 | 5e | 4 | 6 | 28 |  |
-| 142 | `A016` Multiple, diviseur, divisible : le lien… | 5e | 4 | 6 | 27 |  |
-| 143 | `A018` Nombres relatifs : positifs, négatifs, … | 5e | 4 | 6 | 22 |  |
-| 144 | `A019` Droite graduée : lire et placer un nomb… | 5e | 4 | 6 | 12 |  |
-| 145 | `A020` Repère du plan : lire et placer un point | 5e | 4 | 6 | 12 |  |
-| 146 | `A021` Opposé d'un nombre relatif | 5e | 4 | 6 | 17 |  |
-| 147 | `A022` Valeur absolue : la distance à zéro | 5e | 4 | 6 | 17 |  |
-| 148 | `A023` Comparer et ranger des décimaux relatifs | 5e | 4 | 6 | 24 |  |
-| 149 | `A029` Carré et cube d'un nombre : les notatio… | 5e | 4 | 6 | 18 |  |
-| 150 | `A030` Carrés des entiers de 0 à 12 : les conn… | 5e | 4 | 6 | 15 |  |
-| 151 | `B011` Priorités opératoires | 5e | 4 | 6 | 12 |  |
-| 152 | `B044` Additionner deux décimaux relatifs | 5e | 4 | 6 | 21 |  |
-| 153 | `C011` Réduction au même dénominateur | 5e | 4 | 6 | 19 |  |
-| 154 | `C010` Comparer fractions de dénominateurs dif… | 5e | 4 | 6 | 16 |  |
-| 155 | `C013` Additionner et soustraire des fractions… | 5e | 4 | 6 | 14 |  |
-| 156 | `A017` Problèmes de multiples et de diviseurs … | 5e | 5 | 6 | 30 |  |
-| 157 | `B045` Soustraire deux décimaux relatifs | 5e | 5 | 6 | 19 |  |
-| 158 | `B046` Sommes de relatifs : parenthèses et écr… | 5e | 5 | 6 | 16 |  |
-| 159 | `B047` Enchaîner additions et soustractions de… | 5e | 5 | 6 | 18 |  |
-| 160 | `B048` Problèmes d'addition et de soustraction… | 5e | 5 | 6 | 29 |  |
-| 161 | `B052` Calculer une expression avec des carrés… | 5e | 5 | 6 | 15 |  |
-| 162 | `B054` Traduire un programme de calcul en une … | 5e | 5 | 6 | 27 |  |
-| 163 | `B055` Distributivité simple sur des exemples … | 5e | 5 | 6 | 17 |  |
-| 164 | `C033` Problèmes d'addition et de soustraction… | 5e | 5 | 6 | 29 |  |
-| 165 | `D026` Diviser par un nombre décimal | 5e | 5 | 6 | 17 |  |
-| 166 | `E034` Coefficient de proportionnalité | 5e | 5 | 6 | 48 |  |
-| 167 | `E007` Vitesse moyenne | 5e | 5 | 6 | 24 |  |
-| 168 | `E035` Reconnaître un tableau de proportionnal… | 5e | 5 | 6 | 47 |  |
-| 169 | `E023` Proportionnalité et graphique | 5e | 5 | 6 | 53 |  |
-| 170 | `E036` Calculer un pourcentage dans le cas gén… | 5e | 5 | 6 | 31 |  |
-| 171 | `E037` Pourcentages par linéarité : 1 %, 10 %,… | 5e | 5 | 6 | 29 |  |
-| 172 | `F003` Produire une formule : écrire une expre… | 5e | 5 | 6 | 21 |  |
-| 173 | `F002` Calculer la valeur d'une expression lit… | 5e | 5 | 6 | 15 |  |
-| 174 | `F022` Tester une égalité ; réfuter par un con… | 5e | 5 | 6 | 26 |  |
-| 175 | `F023` Équations ax = c et x + b = c : modélis… | 5e | 5 | 6 | 25 |  |
-| 176 | `F061` Somme ou produit : la nature d'une expr… | 5e | 5 | 6 | 14 |  |
-| 177 | `F010` Réduire une expression de la forme ax +… | 5e | 5 | 6 | 14 |  |
-| 178 | `F012` Distributivité simple : développer et f… | 5e | 5 | 6 | 18 | ⚠ |
-| 179 | `F062` Démontrer une propriété générale par le… | 5e | 5 | 6 | 26 |  |
-| 180 | `B049` Multiplier deux décimaux relatifs | 4e | 5 | 6 | 12 |  |
-| 181 | `A031` Puissances d'exposant entier positif d'… | 4e | 5 | 6 | 14 |  |
-| 182 | `A032` Puissances de 10 d'exposant positif ; p… | 4e | 5 | 6 | 19 |  |
-| 183 | `A034` Racine carrée d'un nombre positif | 4e | 5 | 6 | 14 |  |
-| 184 | `A035` Encadrer une racine carrée entre deux e… | 4e | 5 | 6 | 13 |  |
-| 185 | `B022` Multiplier des puissances d'un même nom… | 4e | 5 | 6 | 14 |  |
-| 186 | `A033` Problèmes faisant intervenir des puissa… | 4e | 5 | 6 | 26 |  |
-| 187 | `B050` Diviser deux décimaux relatifs | 4e | 5 | 6 | 11 |  |
-| 188 | `B051` Enchaînements d'opérations avec des rel… | 4e | 5 | 6 | 13 |  |
-| 189 | `B053` Multiplier des puissances de même expos… | 4e | 5 | 6 | 12 |  |
-| 190 | `C007` Simplification de fraction | 4e | 5 | 6 | 13 |  |
-| 191 | `C034` Nombres rationnels : quotients de relat… | 4e | 5 | 6 | 19 |  |
-| 192 | `C015` Multiplier des nombres rationnels | 4e | 5 | 6 | 14 |  |
-| 193 | `C018` Inverse d'un nombre | 4e | 5 | 6 | 12 |  |
-| 194 | `C017` Diviser des fractions | 4e | 5 | 6 | 11 |  |
-| 195 | `C035` Fraction d'une fraction, d'un nombre, d… | 4e | 5 | 6 | 27 |  |
-| 196 | `F006` Écrire et réduire des produits : 3x, x²… | 4e | 5 | 6 | 17 |  |
-| 197 | `F014` Distributivité simple avec des relatifs… | 4e | 5 | 6 | 12 |  |
-| 198 | `F063` Tester si un nombre vérifie une égalité… | 4e | 5 | 6 | 14 |  |
-| 199 | `F024` Résoudre une équation ax + b = c | 4e | 5 | 6 | 12 |  |
-| 200 | `F064` Programme de calcul : l'appliquer à un … | 4e | 5 | 6 | 29 |  |
-| 201 | `C036` Enchaîner des opérations avec des fract… | 4e | 6 | 6 | 7 |  |
-| 202 | `C037` Problèmes mobilisant les opérations sur… | 4e | 6 | 6 | 24 |  |
-| 203 | `F025` Résoudre une équation ax + b = cx + d | 4e | 6 | 6 | 10 |  |
-| 204 | `F065` Démontrer avec le calcul littéral (4e) … | 4e | 6 | 6 | 24 |  |
-| 205 | `F066` Mettre un problème en équation et le ré… | 4e | 6 | 6 | 30 |  |
-| 206 | `A024` Reconnaître un nombre premier | 3e | 5 | 6 | 22 |  |
-| 207 | `A025` Décomposer un entier en produit de fact… | 3e | 5 | 6 | 19 |  |
-| 208 | `A036` Puissances d'exposant négatif | 3e | 6 | 6 | 11 |  |
-| 209 | `A037` Puissances de 10 d'exposant négatif ; p… | 3e | 6 | 6 | 14 |  |
-| 210 | `A038` Notation scientifique d'un nombre | 3e | 6 | 6 | 18 |  |
-| 211 | `A040` Problèmes utilisant la racine carrée | 3e | 6 | 6 | 24 |  |
-| 212 | `B023` Multiplier et diviser des puissances | 3e | 6 | 6 | 11 |  |
-| 213 | `A039` Problèmes avec la notation scientifique | 3e | 6 | 6 | 24 |  |
-| 214 | `C008` Fraction irréductible | 3e | 6 | 6 | 11 |  |
-| 215 | `F013` Double distributivité : développer et r… | 3e | 6 | 6 | 18 |  |
-| 216 | `F020` Développer avec les identités remarquab… | 3e | 6 | 6 | 17 |  |
-| 217 | `F021` Factoriser avec les identités remarquab… | 3e | 6 | 6 | 13 |  |
-| 218 | `F031` Résoudre une inéquation ax ⩾ b | 3e | 6 | 6 | 15 |  |
-| 219 | `F067` Factoriser par un facteur commun appare… | 3e | 6 | 6 | 14 |  |
-| 220 | `F027` Résoudre une équation produit nul | 3e | 6 | 6 | 14 |  |
-| 221 | `F068` Résoudre une équation x² = a | 3e | 6 | 6 | 16 |  |
-
-**Sans exercice (6)** : `B056` Calcul mental : distributivité de la multiplication sur l'addition, `B057` Programme de calcul : l'exécuter, `B058` Programme de calcul : le produire, l'exécuter jusqu'à trois instructions, `F069` Nombre inconnu : égalité à trous, symbole, problème algébrique, `F070` Suites de nombres et de motifs : trouver la règle, poursuivre, `F071` Motif évolutif : nombre d'éléments à une étape donnée
+| 74 | `B056` Calcul mental : distributivité de la mu… | CM1 | 3 | 6 | 20 |  |
+| 75 | `B057` Programme de calcul : l'exécuter | CM1 | 3 | 6 | 29 |  |
+| 76 | `C004` Fraction d'une quantité | CM1 | 3 | 6 | 17 |  |
+| 77 | `C027` Fraction supérieure à 1 | CM1 | 3 | 8 | 15 |  |
+| 78 | `C029` Encadrer une fraction | CM1 | 3 | 7 | 14 |  |
+| 79 | `C030` Fraction sur une demi-droite graduée | CM1 | 3 | 7 | 15 |  |
+| 80 | `D018` Fractions décimales : dixièmes et centi… | CM1 | 3 | 6 | 22 |  |
+| 81 | `D001` Écriture à virgule d'un nombre décimal | CM1 | 3 | 6 | 16 |  |
+| 82 | `D003` Comparer et ranger des nombres décimaux | CM1 | 3 | 6 | 28 |  |
+| 83 | `D004` Additionner et soustraire des décimaux … | CM1 | 3 | 6 | 20 |  |
+| 84 | `D012` Encadrer et intercaler des nombres déci… | CM1 | 3 | 6 | 24 |  |
+| 85 | `D008` Partie entière et arrondi à l'unité | CM1 | 3 | 6 | 19 |  |
+| 86 | `D019` Décimal sur une demi-droite graduée | CM1 | 3 | 6 | 11 |  |
+| 87 | `D020` Calcul mental : multiplier et diviser u… | CM1 | 3 | 6 | 19 |  |
+| 88 | `D021` Multiplier un décimal par un entier inf… | CM1 | 3 | 6 | 17 |  |
+| 89 | `E026` Reconnaître une situation de proportion… | CM1 | 3 | 6 | 27 |  |
+| 90 | `E027` Résoudre par linéarité multiplicative (… | CM1 | 3 | 6 | 17 |  |
+| 91 | `F069` Nombre inconnu : égalité à trous, symbo… | CM1 | 3 | 6 | 21 |  |
+| 92 | `F070` Suites de nombres et de motifs : trouve… | CM1 | 3 | 6 | 22 |  |
+| 93 | `G015` Comparer des angles | CM1 | 3 | 6 | 17 |  |
+| 94 | `G016` Droites perpendiculaires et droites par… | CM1 | 3 | 6 | 13 |  |
+| 95 | `G017` Triangles particuliers : rectangle, iso… | CM1 | 3 | 6 | 14 |  |
+| 96 | `G018` Carré, rectangle, losange : définitions… | CM1 | 3 | 6 | 13 |  |
+| 97 | `G019` Solides en perspective ; le prisme droit | CM1 | 3 | 6 | 8 |  |
+| 98 | `G020` Assemblages de cubes : dénombrer, cubes… | CM1 | 3 | 6 | 22 |  |
+| 99 | `G021` Lire un programme de construction | CM1 | 3 | 6 | 29 |  |
+| 100 | `P015` Unités de mesure du milli au kilo : lon… | CM1 | 3 | 6 | 26 |  |
+| 101 | `P016` Problèmes de périmètre : retrouver un c… | CM1 | 3 | 6 | 28 |  |
+| 102 | `P017` L'aire : comparer des surfaces et mesur… | CM1 | 3 | 7 | 18 |  |
+| 103 | `D014` Convertir des mesures écrites avec une … | CM1 | 4 | 6 | 20 |  |
+| 104 | `A026` Tous les diviseurs d'un entier | CM2 | 3 | 7 | 17 |  |
+| 105 | `B016` Calcul mental : diviser par 2, 4 ou 8 | CM2 | 3 | 6 | 16 |  |
+| 106 | `G023` Trapèze, pentagone, hexagone : reconnaî… | CM2 | 3 | 6 | 14 |  |
+| 107 | `P020` Durées en heures, minutes et secondes | CM2 | 3 | 6 | 26 |  |
+| 108 | `A027` Diviseurs et multiples communs | CM2 | 4 | 8 | 22 |  |
+| 109 | `B058` Programme de calcul : le produire, l'ex… | CM2 | 4 | 6 | 27 |  |
+| 110 | `C031` Produit d'un entier par une fraction | CM2 | 4 | 7 | 10 |  |
+| 111 | `D022` Décimaux jusqu'aux millièmes | CM2 | 4 | 6 | 14 |  |
+| 112 | `D007` Division décimale par un entier à un ch… | CM2 | 4 | 6 | 17 |  |
+| 113 | `D023` Calcul mental : multiplier et diviser u… | CM2 | 4 | 6 | 13 |  |
+| 114 | `D024` Multiplier un décimal par un entier (po… | CM2 | 4 | 6 | 20 |  |
+| 115 | `E028` Résoudre par linéarité additive | CM2 | 4 | 6 | 22 |  |
+| 116 | `E029` Problèmes de proportionnalité en plusie… | CM2 | 4 | 6 | 18 |  |
+| 117 | `F071` Motif évolutif : nombre d'éléments à un… | CM2 | 4 | 6 | 23 |  |
+| 118 | `G022` Le degré : l'angle droit mesure 90° | CM2 | 4 | 6 | 11 |  |
+| 119 | `G024` Symétrique d'une figure sur quadrillage… | CM2 | 4 | 6 | 19 |  |
+| 120 | `P018` Aire d'un carré ou d'un rectangle (cour… | CM2 | 4 | 6 | 29 |  |
+| 121 | `P019` Unités d'aire : cm², dm², m² et convers… | CM2 | 4 | 6 | 24 |  |
+| 122 | `B040` Division euclidienne par un nombre à de… | 6e | 4 | 6 | 18 |  |
+| 123 | `C032` Fraction comme quotient | 6e | 4 | 7 | 16 |  |
+| 124 | `D009` Arrondir au dixième ou au centième | 6e | 4 | 6 | 17 |  |
+| 125 | `D025` Multiplier par 0,1 ; 0,01 ; 0,001 | 6e | 4 | 6 | 19 |  |
+| 126 | `E030` Grandeurs proportionnelles : définition… | 6e | 4 | 6 | 31 |  |
+| 127 | `E031` Passage par l'unité et choix de la proc… | 6e | 4 | 6 | 24 |  |
+| 128 | `E003` Tableau de proportionnalité : représent… | 6e | 4 | 6 | 51 |  |
+| 129 | `E032` Pourcentage : définition et écritures | 6e | 4 | 6 | 31 |  |
+| 130 | `E010` Appliquer un pourcentage à une grandeur… | 6e | 4 | 6 | 25 |  |
+| 131 | `E033` Exprimer une proportion en pourcentage … | 6e | 4 | 6 | 24 |  |
+| 132 | `G025` Mesurer un angle avec un rapporteur | 6e | 4 | 6 | 13 |  |
+| 133 | `G026` Angles plat, adjacents, supplémentaires… | 6e | 4 | 6 | 15 |  |
+| 134 | `G028` Distances : milieu d'un segment, cercle… | 6e | 4 | 6 | 17 |  |
+| 135 | `P021` Convertir des longueurs vers et depuis … | 6e | 4 | 6 | 20 |  |
+| 136 | `P022` Périmètre du carré et du rectangle : fo… | 6e | 4 | 6 | 26 |  |
+| 137 | `P024` Aire du carré et du rectangle : formules | 6e | 4 | 6 | 28 |  |
+| 138 | `P025` Conversions d'aires avec des nombres dé… | 6e | 4 | 6 | 20 |  |
+| 139 | `P026` Volume : le centimètre cube et le dénom… | 6e | 4 | 6 | 35 |  |
+| 140 | `P027` Convertir des durées : système décimal … | 6e | 4 | 6 | 18 |  |
+| 141 | `D006` Multiplier deux nombres décimaux | 6e | 5 | 6 | 22 |  |
+| 142 | `E006` Échelle d'un plan : premiers problèmes | 6e | 5 | 6 | 36 |  |
+| 143 | `G027` Somme des angles d'un triangle | 6e | 5 | 6 | 11 |  |
+| 144 | `G029` La médiatrice d'un segment | 6e | 5 | 6 | 13 |  |
+| 145 | `G030` Symétrie axiale : symétrique d'un point… | 6e | 5 | 6 | 21 |  |
+| 146 | `P023` Périmètre d'un disque | 6e | 5 | 6 | 34 |  |
+| 147 | `A015` Critères de divisibilité par 3 et par 9 | 5e | 4 | 6 | 28 |  |
+| 148 | `A016` Multiple, diviseur, divisible : le lien… | 5e | 4 | 6 | 27 |  |
+| 149 | `A018` Nombres relatifs : positifs, négatifs, … | 5e | 4 | 6 | 22 |  |
+| 150 | `A019` Droite graduée : lire et placer un nomb… | 5e | 4 | 6 | 12 |  |
+| 151 | `A020` Repère du plan : lire et placer un point | 5e | 4 | 6 | 12 |  |
+| 152 | `A021` Opposé d'un nombre relatif | 5e | 4 | 6 | 17 |  |
+| 153 | `A022` Valeur absolue : la distance à zéro | 5e | 4 | 6 | 17 |  |
+| 154 | `A023` Comparer et ranger des décimaux relatifs | 5e | 4 | 6 | 24 |  |
+| 155 | `A029` Carré et cube d'un nombre : les notatio… | 5e | 4 | 6 | 18 |  |
+| 156 | `A030` Carrés des entiers de 0 à 12 : les conn… | 5e | 4 | 6 | 15 |  |
+| 157 | `B011` Priorités opératoires | 5e | 4 | 6 | 12 |  |
+| 158 | `B044` Additionner deux décimaux relatifs | 5e | 4 | 6 | 21 |  |
+| 159 | `C011` Réduction au même dénominateur | 5e | 4 | 6 | 19 |  |
+| 160 | `C010` Comparer fractions de dénominateurs dif… | 5e | 4 | 6 | 16 |  |
+| 161 | `C013` Additionner et soustraire des fractions… | 5e | 4 | 6 | 14 |  |
+| 162 | `A017` Problèmes de multiples et de diviseurs … | 5e | 5 | 6 | 30 |  |
+| 163 | `B045` Soustraire deux décimaux relatifs | 5e | 5 | 6 | 19 |  |
+| 164 | `B046` Sommes de relatifs : parenthèses et écr… | 5e | 5 | 6 | 16 |  |
+| 165 | `B047` Enchaîner additions et soustractions de… | 5e | 5 | 6 | 18 |  |
+| 166 | `B048` Problèmes d'addition et de soustraction… | 5e | 5 | 6 | 29 |  |
+| 167 | `B052` Calculer une expression avec des carrés… | 5e | 5 | 6 | 15 |  |
+| 168 | `B054` Traduire un programme de calcul en une … | 5e | 5 | 6 | 27 |  |
+| 169 | `B055` Distributivité simple sur des exemples … | 5e | 5 | 6 | 17 |  |
+| 170 | `C033` Problèmes d'addition et de soustraction… | 5e | 5 | 6 | 29 |  |
+| 171 | `D026` Diviser par un nombre décimal | 5e | 5 | 6 | 17 |  |
+| 172 | `E034` Coefficient de proportionnalité | 5e | 5 | 6 | 48 |  |
+| 173 | `E007` Vitesse moyenne | 5e | 5 | 6 | 24 |  |
+| 174 | `E035` Reconnaître un tableau de proportionnal… | 5e | 5 | 6 | 47 |  |
+| 175 | `E023` Proportionnalité et graphique | 5e | 5 | 6 | 53 |  |
+| 176 | `E036` Calculer un pourcentage dans le cas gén… | 5e | 5 | 6 | 31 |  |
+| 177 | `E037` Pourcentages par linéarité : 1 %, 10 %,… | 5e | 5 | 6 | 29 |  |
+| 178 | `F003` Produire une formule : écrire une expre… | 5e | 5 | 6 | 21 |  |
+| 179 | `F002` Calculer la valeur d'une expression lit… | 5e | 5 | 6 | 15 |  |
+| 180 | `F022` Tester une égalité ; réfuter par un con… | 5e | 5 | 6 | 26 |  |
+| 181 | `F023` Équations ax = c et x + b = c : modélis… | 5e | 5 | 6 | 25 |  |
+| 182 | `F061` Somme ou produit : la nature d'une expr… | 5e | 5 | 6 | 14 |  |
+| 183 | `F010` Réduire une expression de la forme ax +… | 5e | 5 | 6 | 14 |  |
+| 184 | `F012` Distributivité simple : développer et f… | 5e | 5 | 6 | 18 | ⚠ |
+| 185 | `F062` Démontrer une propriété générale par le… | 5e | 5 | 6 | 26 |  |
+| 186 | `B049` Multiplier deux décimaux relatifs | 4e | 5 | 6 | 12 |  |
+| 187 | `A031` Puissances d'exposant entier positif d'… | 4e | 5 | 6 | 14 |  |
+| 188 | `A032` Puissances de 10 d'exposant positif ; p… | 4e | 5 | 6 | 19 |  |
+| 189 | `A034` Racine carrée d'un nombre positif | 4e | 5 | 6 | 14 |  |
+| 190 | `A035` Encadrer une racine carrée entre deux e… | 4e | 5 | 6 | 13 |  |
+| 191 | `B022` Multiplier des puissances d'un même nom… | 4e | 5 | 6 | 14 |  |
+| 192 | `A033` Problèmes faisant intervenir des puissa… | 4e | 5 | 6 | 26 |  |
+| 193 | `B050` Diviser deux décimaux relatifs | 4e | 5 | 6 | 11 |  |
+| 194 | `B051` Enchaînements d'opérations avec des rel… | 4e | 5 | 6 | 13 |  |
+| 195 | `B053` Multiplier des puissances de même expos… | 4e | 5 | 6 | 12 |  |
+| 196 | `C007` Simplification de fraction | 4e | 5 | 6 | 13 |  |
+| 197 | `C034` Nombres rationnels : quotients de relat… | 4e | 5 | 6 | 19 |  |
+| 198 | `C015` Multiplier des nombres rationnels | 4e | 5 | 6 | 14 |  |
+| 199 | `C018` Inverse d'un nombre | 4e | 5 | 6 | 12 |  |
+| 200 | `C017` Diviser des fractions | 4e | 5 | 6 | 11 |  |
+| 201 | `C035` Fraction d'une fraction, d'un nombre, d… | 4e | 5 | 6 | 27 |  |
+| 202 | `F006` Écrire et réduire des produits : 3x, x²… | 4e | 5 | 6 | 17 |  |
+| 203 | `F014` Distributivité simple avec des relatifs… | 4e | 5 | 6 | 12 |  |
+| 204 | `F063` Tester si un nombre vérifie une égalité… | 4e | 5 | 6 | 14 |  |
+| 205 | `F024` Résoudre une équation ax + b = c | 4e | 5 | 6 | 12 |  |
+| 206 | `F064` Programme de calcul : l'appliquer à un … | 4e | 5 | 6 | 29 |  |
+| 207 | `C036` Enchaîner des opérations avec des fract… | 4e | 6 | 6 | 7 |  |
+| 208 | `C037` Problèmes mobilisant les opérations sur… | 4e | 6 | 6 | 24 |  |
+| 209 | `F025` Résoudre une équation ax + b = cx + d | 4e | 6 | 6 | 10 |  |
+| 210 | `F065` Démontrer avec le calcul littéral (4e) … | 4e | 6 | 6 | 24 |  |
+| 211 | `F066` Mettre un problème en équation et le ré… | 4e | 6 | 6 | 30 |  |
+| 212 | `A024` Reconnaître un nombre premier | 3e | 5 | 6 | 22 |  |
+| 213 | `A025` Décomposer un entier en produit de fact… | 3e | 5 | 6 | 19 |  |
+| 214 | `A036` Puissances d'exposant négatif | 3e | 6 | 6 | 11 |  |
+| 215 | `A037` Puissances de 10 d'exposant négatif ; p… | 3e | 6 | 6 | 14 |  |
+| 216 | `A038` Notation scientifique d'un nombre | 3e | 6 | 6 | 18 |  |
+| 217 | `A040` Problèmes utilisant la racine carrée | 3e | 6 | 6 | 24 |  |
+| 218 | `B023` Multiplier et diviser des puissances | 3e | 6 | 6 | 11 |  |
+| 219 | `A039` Problèmes avec la notation scientifique | 3e | 6 | 6 | 24 |  |
+| 220 | `C008` Fraction irréductible | 3e | 6 | 6 | 11 |  |
+| 221 | `F013` Double distributivité : développer et r… | 3e | 6 | 6 | 18 |  |
+| 222 | `F020` Développer avec les identités remarquab… | 3e | 6 | 6 | 17 |  |
+| 223 | `F021` Factoriser avec les identités remarquab… | 3e | 6 | 6 | 13 |  |
+| 224 | `F031` Résoudre une inéquation ax ⩾ b | 3e | 6 | 6 | 15 |  |
+| 225 | `F067` Factoriser par un facteur commun appare… | 3e | 6 | 6 | 14 |  |
+| 226 | `F027` Résoudre une équation produit nul | 3e | 6 | 6 | 14 |  |
+| 227 | `F068` Résoudre une équation x² = a | 3e | 6 | 6 | 16 |  |
 
 ## 2. Par chapitre
 
@@ -1698,6 +1702,32 @@ Le chapitre est l'unité qu'un exercice bilan validerait.
 | M | vrai | Noé a posé 412 × 19 et a trouvé 4 120. Vrai ou faux : sans refaire le calcul, on peut affir… | vrai |
 | M | qcm | Pour la classe verte, le car coûte 2 950 € et l'hébergement 3 980 €. Le budget est de 9 000… | b) Il reste environ 2 000 €. |
 
+**`B056` · Calcul mental : distributivité de la multiplication sur l'addition** — diff. 3, seuil 3/4  
+*Calculer mentalement un produit en décomposant un facteur en une somme et en multipliant chaque terme : 7 × 34 = 7 × 30 + 7 × 4 = 210 + 28 = 238 ; 13 × 7 = 10 × 7 + 3 × 7 = 91 ; 12 × 25 = 10 × 25 + 2 × 25 = 300 ; 6 × 105 = 6 × 100 + 6 × 5 = 630 ; reconnaître, parmi plusieurs décompositions, celle qui donne le bon produit. L'erreur type est de ne multiplier qu'un des termes (7 × 34 = 7 × 30 + 4 = 214). Nombres entiers, décomposition en somme seulement : la différence (25 × 98 = 25 × 100 − 25 × 2) et le sens « factoriser » (13 × 7 + 13 × 3 = 13 × 10) sont du 5e (B055) ; le facteur décomposé a au plus trois chiffres. Réponse : un nombre, ou le nombre manquant d'une décomposition (7 × 34 = 7 × 30 + 7 × …), ou QCM entre décompositions. Figure utile : geometrie, rectangle partagé en deux (largeur 7, longueur 30 + 4), aire écrite dans chaque partie.*
+> « Utiliser la distributivité de la multiplication par rapport à l'addition dans des cas simples »
+
+| | Type | Demandé | Réponse |
+|---|---|---|---|
+| D | nume | Un paquet contient 13 biscuits. Combien de biscuits y a-t-il dans 6 paquets ? Pour calculer… | 78 |
+| D | qcm | Quel calcul donne le même résultat que 4 × 32 ? | b) 4 × 30 + 4 × 2 |
+| E | nume | Noé calcule 7 × 63 en décomposant 63. Il écrit : 7 × 63 = … + 21 Quel nombre a-t-il effacé ? | 420 |
+| E | vrai | Pour calculer 4 × 205, Tom écrit : 4 × 200 + 5 = 805 Tom a-t-il trouvé le bon résultat ? | faux |
+| M | nume | Un livre de contes a 108 pages. La bibliothèque en possède 9 exemplaires. Combien de pages … | 972 |
+| M | qcm | Un seul de ces calculs ne donne pas 8 × 26. Lequel ? | c) 8 × 20 + 6 |
+
+**`B057` · Programme de calcul : l'exécuter** — diff. 3, seuil 3/4  
+*Appliquer à un nombre entier donné un programme de calcul de deux instructions, dans l'ordre, en partant à chaque étape du résultat de l'étape précédente : « choisir un nombre ; ajouter 2 ; multiplier le résultat par 4 » donne 36 en partant de 7 (7 + 2 = 9, puis 9 × 4 = 36) ; appliquer le même programme à plusieurs nombres et compléter un tableau des nombres de départ et d'arrivée ; comparer les résultats de deux programmes pour un même nombre. L'erreur type est d'appliquer chaque instruction au nombre de départ (7 + 2 = 9 et 7 × 4 = 28) ou d'inverser l'ordre des instructions (7 × 4 + 2 = 30). Nombres entiers, instructions en mots (ajouter, retirer, multiplier par, prendre le double) ; le programme de trois instructions et l'écriture d'un programme sont B058 (CM2), sa traduction en une seule expression B054 (5e). Réponse : un nombre (le résultat, ou une case du tableau). Figure : aucune.*
+> « Exécuter un programme de calcul »
+
+| | Type | Demandé | Réponse |
+|---|---|---|---|
+| D | nume | Voici un programme de calcul : - choisir un nombre ; - ajouter 3 ; - multiplier le résultat… | 35 |
+| D | qcm | Programme de calcul : - choisir un nombre ; - multiplier par 2 ; - ajouter 7. On choisit 8.… | c) 23 |
+| E | nume | Programme : choisir un nombre ; retirer 4 ; multiplier le résultat par 6. En choisissant 9,… | 48 |
+| E | vrai | Programme A : ajouter 6, puis multiplier par 3. Programme B : multiplier par 3, puis ajoute… | faux |
+| M | nume | Programme : choisir un nombre ; ajouter 9 ; multiplier le résultat par 8. Malo choisit 0. I… | 72 |
+| M | qcm | Programme : choisir un nombre ; retirer 6 ; multiplier le résultat par 7. Quel nombre faut-… | a) 14 |
+
 **`C004` · Fraction d'une quantité** — diff. 3, seuil 3/4  
 *Calculer une fraction unitaire d'une quantité ou d'une grandeur*
 > « au CM1, les fractions acquièrent également le statut d'opérateur multiplicatif pour le cas particulier des fractions unitaires ; les élèves apprennen… »
@@ -1896,6 +1926,32 @@ Le chapitre est l'unité qu'un exercice bilan validerait.
 | E | vrai | 8 tickets de bus coûtent 14 €. Malo dit : « 32 tickets coûtent 56 €. » A-t-il raison ? | vrai |
 | M | qcm | Un boulanger fait 14 pains avec 6 kg de farine. Combien de farine lui faut-il pour faire 42… | c) 18 kg |
 | M | nume | Un club de foot paie 492 € pour 36 maillots identiques. Combien paierait-il pour 9 de ces m… | 123 |
+
+**`F069` · Nombre inconnu : égalité à trous, symbole, problème algébrique** — diff. 3, seuil 3/4  
+*Trouver un nombre inconnu dans une égalité entre deux calculs, en sachant que le signe = relie deux écritures d'un même nombre et pas seulement un calcul à son résultat : 178 − … = 6 × 8 se complète en calculant 6 × 8 = 48, puis 178 − 48 = 130 ; 25 + … = 4 × 10 ; … × 5 = 60 − 15 ; dire si une égalité est vraie (3 × 4 = 2 × 6 est vraie ; 5 + 3 = 8 + 2 est fausse). Représenter un nombre inconnu par un symbole pour traduire un problème algébrique, puis trouver sa valeur : ▲ + ▲ + 5 = 17 donne ▲ = 6 ; une balance équilibrée (3 boîtes identiques et 2 kg d'un côté, 14 kg de l'autre : une boîte pèse 4 kg) ; un schéma en barre (Léo a 3 fois plus de billes que Tom, à eux deux ils en ont 48 : 4 parts égales, Tom en a 12). L'erreur type est de lire = comme « donne » et de répondre le résultat d'un des calculs (48 au lieu de 130), ou de faire l'opération de l'énoncé au lieu de l'opération inverse (▲ + 5 = 17 donne 22). Nombres entiers ; le symbole est un dessin (▲, ■, ?) ou un mot ; une lettre seulement comme nom, sans calcul littéral (« Ce n'est qu'au cycle 4 que les lettres seront introduites de manière formelle », 6e) ; l'équation écrite avec x et résolue par l'opération inverse est F023 (5e). Réponse : un nombre (la valeur du symbole ou le nombre manquant), vrai/faux, ou QCM entre écritures d'un problème. Figure utile : schéma en barre, qu'aucun générateur ne dessine (l'énoncé le décrit en mots en attendant).*
+> « Trouver le nombre manquant dans une égalité à trous »
+
+| | Type | Demandé | Réponse |
+|---|---|---|---|
+| D | nume | Le signe = veut dire : les deux côtés valent le même nombre. Complète : 95 − … = 6 × 7 Comm… | 53 |
+| D | vrai | Cette égalité est-elle vraie ? 4 × 6 = 30 − 6 | vrai |
+| E | nume | Le ▲ représente toujours le même nombre. ▲ + ▲ + ▲ + 6 = 30 Que vaut ▲ ? | 8 |
+| E | qcm | Une balance est en équilibre. À gauche : 4 sacs identiques et 3 kg. À droite : 23 kg. ■ est… | b) ■ + ■ + ■ + ■ + 3 = 23 |
+| M | nume | Emma a 4 fois plus de cartes que Noé. À eux deux, ils ont 35 cartes. Combien de cartes Noé … | 7 |
+| M | qcm | Quel nombre manque ? … − 36 = 7 × 8 | c) 92 |
+
+**`F070` · Suites de nombres et de motifs : trouver la règle, poursuivre** — diff. 3, seuil 3/4  
+*Repérer la régularité d'une suite de nombres et la formuler comme une règle de calcul (« on ajoute 5 », « on ajoute 5 puis on retire 2 », « on double ») pour trouver les termes suivants : 80 ; 85 ; 83 ; 88 ; 86 ; … se poursuit par 91 puis 89 ; 1 ; 2 ; 6 ; 7 ; 11 ; 12 ; … par 16 puis 17 ; 3 ; 6 ; 12 ; 24 ; … par 48. Pour une suite de motifs évolutive dessinée étape par étape (carreaux coloriés, jetons), repérer ce qui s'ajoute d'une étape à la suivante et donner le nombre d'éléments des étapes suivantes (4, 7, 10 carreaux aux étapes 1, 2, 3 : 13 à l'étape 4, 16 à l'étape 5). L'erreur type est de ne regarder que les deux derniers termes (1 ; 2 ; 6 ; 7 ; 11 ; 12 poursuivi par 13) ou de se tromper d'étape en recomptant tout le motif. Termes proches seulement (une à trois étapes plus loin) ; l'étape éloignée et la relation entre le numéro de l'étape et le nombre d'éléments sont F071 (CM2). Réponse : un nombre (terme suivant, nombre d'éléments), ou QCM entre règles. Figure nécessaire pour les motifs : quadrillage, chaque étape en cases coloriées, son numéro écrit sous le motif ; aucune pour les suites de nombres.*
+> « Identifier et formuler une règle de calcul pour poursuivre une suite de nombres »
+
+| | Type | Demandé | Réponse |
+|---|---|---|---|
+| D | vrai | 12 ; 18 ; 24 ; 30 ; … Nina dit : « Dans cette suite, on ajoute toujours 6. Le nombre suivan… | vrai |
+| D | nume | Voici les étapes 1, 2 et 3 d'un motif de carreaux. Combien de carreaux faudra-t-il à l'étap… | 9 |
+| E | qcm | Quelle règle permet de poursuivre cette suite ? 20 ; 30 ; 27 ; 37 ; 34 ; 44 ; … | c) On ajoute 10, puis on retire 3… |
+| E | nume | Voici le début d'une suite : 4 ; 7 ; 13 ; 16 ; 22 ; 25 ; … Quel est le 8e nombre de la suit… | 34 |
+| M | nume | Voici les étapes 1, 2 et 3 d'un escalier de carreaux. Combien de carreaux faudra-t-il à l'é… | 15 |
+| M | qcm | Quel nombre vient ensuite ? 2 ; 3 ; 5 ; 8 ; 12 ; … | b) 17 |
 
 **`G015` · Comparer des angles** — diff. 3, seuil 3/4  
 *Nommer un angle par son sommet et deux points de ses côtés (l'angle ABC a pour sommet B), et comparer des angles saillants : lequel est le plus grand, sans mesure, par superposition ou par comparaison à l'angle droit. Piège à travailler : la longueur des côtés dessinés ne dit rien de la grandeur de l'angle. Figure nécessaire : angles lettrés, côtés de longueurs différentes, angles superposés ou de même sommet, arc de marquage.*
@@ -2111,6 +2167,19 @@ Le chapitre est l'unité qu'un exercice bilan validerait.
 | M | nume | Un bus part toutes les 12 minutes, un autre toutes les 8 minutes. Ils partent ensemble à 9 … | 24 |
 | M | nume | Un pâtissier a 20 éclairs et 30 tartelettes. Il prépare des paquets contenant tous le même … | 10 |
 
+**`B058` · Programme de calcul : le produire, l'exécuter jusqu'à trois instructions** — diff. 4, seuil 3/4  
+*Exécuter un programme de calcul de trois instructions (« choisir un nombre entier ; ajouter 2 ; multiplier le résultat par 4 ; retirer 3 » donne 33 en partant de 7) et produire un programme : écrire en instructions le calcul qui répond à une situation (tee-shirts à 12 € et livraison à 5 € : « multiplier le nombre de tee-shirts par 12, puis ajouter 5 », soit 41 € pour 3 tee-shirts) ; compléter l'instruction manquante d'un programme connaissant un nombre de départ et le nombre obtenu (2 donne 11 avec « multiplier par … ; ajouter 1 » : multiplier par 5) ; choisir, parmi plusieurs programmes, celui qui correspond à un tableau de départs et d'arrivées. L'erreur type est d'écrire les instructions dans le mauvais ordre (ajouter 5 puis multiplier par 12) ou de valider un programme sur un seul nombre du tableau. Nombres entiers ; le nombre de départ peut être désigné par un mot ou un symbole (« le nombre de tee-shirts »), sans calcul littéral ; traduire le programme en une seule expression avec parenthèses est B054 (5e). Réponse : un nombre (résultat, nombre manquant d'une instruction), ou QCM entre programmes. Figure : aucune.*
+> « Exécuter ou produire un programme de calcul »
+
+| | Type | Demandé | Réponse |
+|---|---|---|---|
+| D | nume | Programme de calcul : - choisir un nombre ; - ajouter 4 ; - multiplier le résultat par 6 ; … | 44 |
+| D | qcm | Programme : choisir un nombre ; retirer 3 ; multiplier le résultat par 5 ; ajouter 9. Quel … | d) 49 |
+| E | nume | Programme : choisir un nombre ; ajouter 2 ; multiplier le résultat par … ; retirer 1. En ch… | 7 |
+| E | qcm | Une salle de sport demande 15 € d'inscription, puis 9 € par mois. Quel programme donne le p… | c) Multiplier le nombre de mois p… |
+| M | qcm | Un programme transforme 3 en 10, 5 en 16 et 8 en 25. Quel est ce programme ? | d) Multiplier par 3, puis ajouter… |
+| M | nume | Sortie au musée : l'entrée coûte 9 € par élève et le car 40 €. Une aide de la mairie fait b… | 87 |
+
 **`C031` · Produit d'un entier par une fraction** — diff. 4, seuil 3/4  
 *Calculer le produit d'un entier et d'une fraction*
 > « Calculer le produit d'un entier et d'une fraction »
@@ -2202,6 +2271,19 @@ Le chapitre est l'unité qu'un exercice bilan validerait.
 | E | vrai | 15 kg de pommes donnent 9 litres de jus. Malik dit : « Avec 25 kg, j'aurai 19 litres, car j… | faux |
 | M | nume | Avec 21 €, Hugo achète 6 carnets identiques. Combien de ces carnets peut-il acheter avec 35… | 10 |
 | M | qcm | Un fleuriste vend 12 roses pour 18 €. Combien coûtent 28 roses ? | c) 42 € |
+
+**`F071` · Motif évolutif : nombre d'éléments à une étape donnée** — diff. 4, seuil 3/4  
+*Trouver le nombre d'éléments d'une suite de motifs évolutive à une étape donnée, même éloignée, sans dessiner les étapes intermédiaires, en repérant la structure du motif : un motif de 4, 7, 10 carreaux aux étapes 1, 2, 3 se compose d'un carreau de départ et de 3 carreaux par étape, donc 3 × 10 + 1 = 31 carreaux à l'étape 10 et 3 × 50 + 1 = 151 à l'étape 50 ; exprimer en mots la relation entre le numéro de l'étape et le nombre d'éléments (« trois fois le numéro de l'étape, plus un ») et choisir le calcul qui la traduit ; trouver l'étape qui a un nombre d'éléments donné (61 carreaux : 61 − 1 = 60, 60 ÷ 3 = 20, étape 20). L'erreur type est la proportionnalité abusive (10 carreaux à l'étape 3, donc 100 à l'étape 30, au lieu de 91) ou l'oubli de l'élément de départ (3 × 10 = 30). Nombres entiers ; la relation reste en mots ou en calcul sur un nombre, la formule 3n + 1 avec une lettre est F003 (5e). Réponse : un nombre (nombre d'éléments, numéro d'étape), ou QCM entre relations écrites en mots. Figure nécessaire : quadrillage, les trois premières étapes en cases coloriées, le numéro de chacune écrit sous le motif.*
+> « Trouver le nombre d'éléments pour une étape donnée dans une suite de motifs évolutive »
+
+| | Type | Demandé | Réponse |
+|---|---|---|---|
+| D | nume | Voici les étapes 1, 2 et 3 d'un motif. À chaque étape, on ajoute 2 carreaux. Combien de car… | 23 |
+| D | qcm | Voici les étapes 1, 2 et 3 d'un motif de carreaux. Quelle phrase donne le nombre de carreau… | b) Trois fois le numéro de l'étap… |
+| E | nume | Voici les étapes 1, 2 et 3 d'un motif de carreaux. Combien de carreaux aura le motif à l'ét… | 82 |
+| E | vrai | Voici les étapes 1, 2 et 3 d'un motif de carreaux. Lina dit : « À l'étape 30, il y aura 62 … | vrai |
+| M | nume | Voici les étapes 1, 2 et 3 d'une échelle de carreaux. À quelle étape l'échelle aura-t-elle … | 20 |
+| M | qcm | Voici les étapes 1, 2 et 3 d'un cadre de carreaux. Combien de carreaux aura le cadre à l'ét… | d) 124 |
 
 **`G022` · Le degré : l'angle droit mesure 90°** — diff. 4, seuil 3/4  
 *Savoir qu'un angle droit mesure 90° et en déduire, sans rapporteur, la mesure d'angles obtenus à partir d'angles connus : la moitié d'un angle droit (45°), la somme de deux angles donnés, un multiple d'un angle donné (trois angles de 30° forment un angle droit). Angles saillants. Construire par pliage ne s'évalue pas à l'écran. Figure utile : angles avec leur mesure écrite, angle droit partagé, codage des angles égaux.*

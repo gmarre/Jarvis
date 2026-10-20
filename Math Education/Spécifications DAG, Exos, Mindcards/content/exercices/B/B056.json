@@ -1,0 +1,180 @@
+[
+  {
+    "id": "EX-B056-D-01",
+    "skill_id": "B056",
+    "level": "decouverte",
+    "type": "numerique",
+    "statement": "Un paquet contient 13 biscuits. Combien de biscuits y a-t-il dans 6 paquets ?\n\nPour calculer 6 × 13, Lina décompose 13 en 10 + 3.",
+    "image": null,
+    "answer": {
+      "value": 78,
+      "unit": "biscuits",
+      "accepted": [
+        "78 biscuits",
+        "78 biscuit"
+      ]
+    },
+    "solution_steps": [
+      "13, c'est 10 + 3 : six paquets de 13 biscuits, c'est six paquets de 10 biscuits et six paquets de 3 biscuits.",
+      "$6 \\times 10 = 60$ et $6 \\times 3 = 18$.",
+      "On ajoute les deux résultats : $60 + 18 = 78$. Il y a **78 biscuits**.",
+      "Les deux morceaux de 13 sont multipliés par 6. Écrire $6 \\times 10 + 3 = 63$ oublierait 5 paquets de 3 biscuits."
+    ],
+    "hint": "Combien de biscuits dans 6 paquets de 10 ? Et dans 6 paquets de 3 ?",
+    "estimated_duration_s": 60,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 3, CM1, Le calcul mental : « Utiliser la distributivité de la multiplication par rapport à l'addition dans des cas simples »"
+  },
+  {
+    "id": "EX-B056-D-02",
+    "skill_id": "B056",
+    "level": "decouverte",
+    "type": "qcm",
+    "statement": "Quel calcul donne le même résultat que 4 × 32 ?",
+    "image": null,
+    "choices": [
+      {
+        "key": "a",
+        "text": "4 × 30 + 2",
+        "misconception": "L'élève décompose 32 en 30 + 2 mais ne multiplie que 30 par 4 : il oublie de multiplier le 2. Ce calcul donne 122 au lieu de 128."
+      },
+      {
+        "key": "b",
+        "text": "4 × 30 + 4 × 2",
+        "misconception": null
+      },
+      {
+        "key": "c",
+        "text": "4 × 3 + 4 × 2",
+        "misconception": "L'élève prend le chiffre des dizaines, 3, pour le nombre 3 alors qu'il vaut 30. Ce calcul donne 20 au lieu de 128."
+      },
+      {
+        "key": "d",
+        "text": "4 × 30 × 2",
+        "misconception": "L'élève multiplie les deux morceaux entre eux au lieu de les ajouter. Ce calcul donne 240 au lieu de 128."
+      }
+    ],
+    "answer": {
+      "value": "b"
+    },
+    "solution_steps": [
+      "32, c'est 30 + 2. Multiplier 32 par 4, c'est multiplier 30 par 4 et 2 par 4, puis ajouter les deux résultats.",
+      "$4 \\times 30 + 4 \\times 2 = 120 + 8 = 128$.",
+      "Vérification par l'addition : $32 + 32 = 64$, $64 + 64 = 128$. C'est la réponse **b**.",
+      "Dans la proposition a, le 2 n'est pas multiplié par 4 : elle donne 122."
+    ],
+    "hint": "Écris 32 comme une somme de dizaines et d'unités. Chaque morceau doit être multiplié par 4.",
+    "estimated_duration_s": 60,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 3, CM1, Le calcul mental : « Utiliser la distributivité de la multiplication par rapport à l'addition dans des cas simples »"
+  },
+  {
+    "id": "EX-B056-E-01",
+    "skill_id": "B056",
+    "level": "entrainement",
+    "type": "numerique",
+    "statement": "Noé calcule 7 × 63 en décomposant 63. Il écrit :\n\n7 × 63 = … + 21\n\nQuel nombre a-t-il effacé ?",
+    "image": null,
+    "answer": {
+      "value": 420
+    },
+    "solution_steps": [
+      "63, c'est 60 + 3. Donc $7 \\times 63 = 7 \\times 60 + 7 \\times 3$.",
+      "$7 \\times 3 = 21$ : c'est le 21 de l'égalité. Le nombre effacé est donc $7 \\times 60$.",
+      "$7 \\times 60 = 420$ : 7 fois 6 dizaines, c'est 42 dizaines.",
+      "Le nombre effacé est **420**, et $7 \\times 63 = 420 + 21 = 441$."
+    ],
+    "hint": "D'où vient le 21 ? Quel morceau de 63, multiplié par 7, donne 21 ?",
+    "estimated_duration_s": 90,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 3, CM1, Le calcul mental : « Utiliser la distributivité de la multiplication par rapport à l'addition dans des cas simples »"
+  },
+  {
+    "id": "EX-B056-E-02",
+    "skill_id": "B056",
+    "level": "entrainement",
+    "type": "vrai_faux",
+    "statement": "Pour calculer 4 × 205, Tom écrit :\n\n4 × 200 + 5 = 805\n\nTom a-t-il trouvé le bon résultat ?",
+    "image": null,
+    "answer": {
+      "value": false
+    },
+    "solution_steps": [
+      "205, c'est 200 + 5. Il faut multiplier les deux morceaux par 4 : $4 \\times 200 + 4 \\times 5$.",
+      "$4 \\times 200 = 800$ et $4 \\times 5 = 20$, donc $4 \\times 205 = 800 + 20 = 820$.",
+      "Tom a multiplié 200 par 4 mais pas le 5 : son résultat, 805, est **faux**."
+    ],
+    "hint": "Tom a-t-il multiplié chaque morceau de 205 par 4 ?",
+    "estimated_duration_s": 60,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 3, CM1, Le calcul mental : « Utiliser la distributivité de la multiplication par rapport à l'addition dans des cas simples »"
+  },
+  {
+    "id": "EX-B056-M-01",
+    "skill_id": "B056",
+    "level": "maitrise",
+    "type": "numerique",
+    "statement": "Un livre de contes a 108 pages. La bibliothèque en possède 9 exemplaires.\n\nCombien de pages en tout ? Calcule de tête en décomposant 108.",
+    "image": null,
+    "answer": {
+      "value": 972,
+      "unit": "pages",
+      "accepted": [
+        "972 pages",
+        "972 page"
+      ]
+    },
+    "solution_steps": [
+      "108, c'est 100 + 8.",
+      "$9 \\times 100 = 900$ et $9 \\times 8 = 72$.",
+      "$900 + 72 = 972$ : il y a **972 pages**.",
+      "Le chiffre des dizaines de 108 est 0 : il n'y a que deux morceaux à multiplier. Écrire $9 \\times 100 + 8 = 908$ oublierait de multiplier le 8."
+    ],
+    "hint": "108 = 100 + 8. Multiplie chaque morceau par 9.",
+    "estimated_duration_s": 90,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 3, CM1, Le calcul mental : « Utiliser la distributivité de la multiplication par rapport à l'addition dans des cas simples »"
+  },
+  {
+    "id": "EX-B056-M-02",
+    "skill_id": "B056",
+    "level": "maitrise",
+    "type": "qcm",
+    "statement": "Un seul de ces calculs ne donne pas 8 × 26. Lequel ?",
+    "image": null,
+    "choices": [
+      {
+        "key": "a",
+        "text": "8 × 20 + 8 × 6",
+        "misconception": "Ce calcul donne bien 8 × 26 (160 + 48 = 208). L'élève qui le choisit ne reconnaît pas la décomposition de 26 en 20 + 6."
+      },
+      {
+        "key": "b",
+        "text": "20 × 8 + 6 × 8",
+        "misconception": "L'élève croit que l'ordre des facteurs compte. Or 20 × 8 = 8 × 20 et 6 × 8 = 8 × 6 : ce calcul donne bien 208."
+      },
+      {
+        "key": "c",
+        "text": "8 × 20 + 6",
+        "misconception": null
+      },
+      {
+        "key": "d",
+        "text": "8 × 10 + 8 × 10 + 8 × 6",
+        "misconception": "L'élève croit qu'on ne peut décomposer 26 qu'en dizaines et unités. Or 26 = 10 + 10 + 6 convient : 80 + 80 + 48 = 208."
+      }
+    ],
+    "answer": {
+      "value": "c"
+    },
+    "solution_steps": [
+      "$8 \\times 26$ : on multiplie chaque morceau de 26 par 8, puis on ajoute. $8 \\times 20 = 160$ et $8 \\times 6 = 48$, donc $8 \\times 26 = 160 + 48 = 208$.",
+      "Les calculs a, b et d multiplient bien tous les morceaux de 26 par 8 : 26, c'est 20 + 6, ou 10 + 10 + 6, et l'ordre d'une multiplication ne compte pas ($20 \\times 8 = 8 \\times 20$).",
+      "Le calcul c ne multiplie pas le 6 : $8 \\times 20 + 6 = 166$. C'est **c** qui ne donne pas $8 \\times 26$."
+    ],
+    "hint": "Pour chaque calcul, vérifie que tous les morceaux de 26 sont multipliés par 8.",
+    "estimated_duration_s": 120,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 3, CM1, Le calcul mental : « Utiliser la distributivité de la multiplication par rapport à l'addition dans des cas simples »"
+  }
+]

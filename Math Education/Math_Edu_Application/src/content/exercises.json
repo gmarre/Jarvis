@@ -3,7 +3,7 @@
     "version": "1.0",
     "scope": "Tranche pilote CP a 4e : 69 exercices, 3 par competence (1 decouverte, 1 entrainement, 1 maitrise) sur les 23 competences des domaines A et C. La cible finale de la roadmap est de 5 exercices par niveau, soit 15 par competence.",
     "updated_at": "2026-07-28",
-    "total_exercises": 1342,
+    "total_exercises": 1378,
     "review_status": "relu_agent"
   },
   "exercises": [
@@ -12977,6 +12977,557 @@
       "estimated_duration_s": 75,
       "review_status": "relu_agent",
       "programme_ref": "Cycle 4, classe de 5e, Nombres et calculs, Opérations : « Connaitre et utiliser la distributivité simple sur des exemples numériques. »"
+    },
+    {
+      "id": "EX-B056-D-01",
+      "skill_id": "B056",
+      "level": "decouverte",
+      "type": "numerique",
+      "statement": "Un paquet contient 13 biscuits. Combien de biscuits y a-t-il dans 6 paquets ?\n\nPour calculer 6 × 13, Lina décompose 13 en 10 + 3.",
+      "image": null,
+      "answer": {
+        "value": 78,
+        "unit": "biscuits",
+        "accepted": [
+          "78 biscuits",
+          "78 biscuit"
+        ]
+      },
+      "solution_steps": [
+        "13, c'est 10 + 3 : six paquets de 13 biscuits, c'est six paquets de 10 biscuits et six paquets de 3 biscuits.",
+        "$6 \\times 10 = 60$ et $6 \\times 3 = 18$.",
+        "On ajoute les deux résultats : $60 + 18 = 78$. Il y a **78 biscuits**.",
+        "Les deux morceaux de 13 sont multipliés par 6. Écrire $6 \\times 10 + 3 = 63$ oublierait 5 paquets de 3 biscuits."
+      ],
+      "hint": "Combien de biscuits dans 6 paquets de 10 ? Et dans 6 paquets de 3 ?",
+      "estimated_duration_s": 60,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 3, CM1, Le calcul mental : « Utiliser la distributivité de la multiplication par rapport à l'addition dans des cas simples »"
+    },
+    {
+      "id": "EX-B056-D-02",
+      "skill_id": "B056",
+      "level": "decouverte",
+      "type": "qcm",
+      "statement": "Quel calcul donne le même résultat que 4 × 32 ?",
+      "image": null,
+      "choices": [
+        {
+          "key": "a",
+          "text": "4 × 30 + 2",
+          "misconception": "L'élève décompose 32 en 30 + 2 mais ne multiplie que 30 par 4 : il oublie de multiplier le 2. Ce calcul donne 122 au lieu de 128."
+        },
+        {
+          "key": "b",
+          "text": "4 × 30 + 4 × 2",
+          "misconception": null
+        },
+        {
+          "key": "c",
+          "text": "4 × 3 + 4 × 2",
+          "misconception": "L'élève prend le chiffre des dizaines, 3, pour le nombre 3 alors qu'il vaut 30. Ce calcul donne 20 au lieu de 128."
+        },
+        {
+          "key": "d",
+          "text": "4 × 30 × 2",
+          "misconception": "L'élève multiplie les deux morceaux entre eux au lieu de les ajouter. Ce calcul donne 240 au lieu de 128."
+        }
+      ],
+      "answer": {
+        "value": "b"
+      },
+      "solution_steps": [
+        "32, c'est 30 + 2. Multiplier 32 par 4, c'est multiplier 30 par 4 et 2 par 4, puis ajouter les deux résultats.",
+        "$4 \\times 30 + 4 \\times 2 = 120 + 8 = 128$.",
+        "Vérification par l'addition : $32 + 32 = 64$, $64 + 64 = 128$. C'est la réponse **b**.",
+        "Dans la proposition a, le 2 n'est pas multiplié par 4 : elle donne 122."
+      ],
+      "hint": "Écris 32 comme une somme de dizaines et d'unités. Chaque morceau doit être multiplié par 4.",
+      "estimated_duration_s": 60,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 3, CM1, Le calcul mental : « Utiliser la distributivité de la multiplication par rapport à l'addition dans des cas simples »"
+    },
+    {
+      "id": "EX-B056-E-01",
+      "skill_id": "B056",
+      "level": "entrainement",
+      "type": "numerique",
+      "statement": "Noé calcule 7 × 63 en décomposant 63. Il écrit :\n\n7 × 63 = … + 21\n\nQuel nombre a-t-il effacé ?",
+      "image": null,
+      "answer": {
+        "value": 420
+      },
+      "solution_steps": [
+        "63, c'est 60 + 3. Donc $7 \\times 63 = 7 \\times 60 + 7 \\times 3$.",
+        "$7 \\times 3 = 21$ : c'est le 21 de l'égalité. Le nombre effacé est donc $7 \\times 60$.",
+        "$7 \\times 60 = 420$ : 7 fois 6 dizaines, c'est 42 dizaines.",
+        "Le nombre effacé est **420**, et $7 \\times 63 = 420 + 21 = 441$."
+      ],
+      "hint": "D'où vient le 21 ? Quel morceau de 63, multiplié par 7, donne 21 ?",
+      "estimated_duration_s": 90,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 3, CM1, Le calcul mental : « Utiliser la distributivité de la multiplication par rapport à l'addition dans des cas simples »"
+    },
+    {
+      "id": "EX-B056-E-02",
+      "skill_id": "B056",
+      "level": "entrainement",
+      "type": "vrai_faux",
+      "statement": "Pour calculer 4 × 205, Tom écrit :\n\n4 × 200 + 5 = 805\n\nTom a-t-il trouvé le bon résultat ?",
+      "image": null,
+      "answer": {
+        "value": false
+      },
+      "solution_steps": [
+        "205, c'est 200 + 5. Il faut multiplier les deux morceaux par 4 : $4 \\times 200 + 4 \\times 5$.",
+        "$4 \\times 200 = 800$ et $4 \\times 5 = 20$, donc $4 \\times 205 = 800 + 20 = 820$.",
+        "Tom a multiplié 200 par 4 mais pas le 5 : son résultat, 805, est **faux**."
+      ],
+      "hint": "Tom a-t-il multiplié chaque morceau de 205 par 4 ?",
+      "estimated_duration_s": 60,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 3, CM1, Le calcul mental : « Utiliser la distributivité de la multiplication par rapport à l'addition dans des cas simples »"
+    },
+    {
+      "id": "EX-B056-M-01",
+      "skill_id": "B056",
+      "level": "maitrise",
+      "type": "numerique",
+      "statement": "Un livre de contes a 108 pages. La bibliothèque en possède 9 exemplaires.\n\nCombien de pages en tout ? Calcule de tête en décomposant 108.",
+      "image": null,
+      "answer": {
+        "value": 972,
+        "unit": "pages",
+        "accepted": [
+          "972 pages",
+          "972 page"
+        ]
+      },
+      "solution_steps": [
+        "108, c'est 100 + 8.",
+        "$9 \\times 100 = 900$ et $9 \\times 8 = 72$.",
+        "$900 + 72 = 972$ : il y a **972 pages**.",
+        "Le chiffre des dizaines de 108 est 0 : il n'y a que deux morceaux à multiplier. Écrire $9 \\times 100 + 8 = 908$ oublierait de multiplier le 8."
+      ],
+      "hint": "108 = 100 + 8. Multiplie chaque morceau par 9.",
+      "estimated_duration_s": 90,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 3, CM1, Le calcul mental : « Utiliser la distributivité de la multiplication par rapport à l'addition dans des cas simples »"
+    },
+    {
+      "id": "EX-B056-M-02",
+      "skill_id": "B056",
+      "level": "maitrise",
+      "type": "qcm",
+      "statement": "Un seul de ces calculs ne donne pas 8 × 26. Lequel ?",
+      "image": null,
+      "choices": [
+        {
+          "key": "a",
+          "text": "8 × 20 + 8 × 6",
+          "misconception": "Ce calcul donne bien 8 × 26 (160 + 48 = 208). L'élève qui le choisit ne reconnaît pas la décomposition de 26 en 20 + 6."
+        },
+        {
+          "key": "b",
+          "text": "20 × 8 + 6 × 8",
+          "misconception": "L'élève croit que l'ordre des facteurs compte. Or 20 × 8 = 8 × 20 et 6 × 8 = 8 × 6 : ce calcul donne bien 208."
+        },
+        {
+          "key": "c",
+          "text": "8 × 20 + 6",
+          "misconception": null
+        },
+        {
+          "key": "d",
+          "text": "8 × 10 + 8 × 10 + 8 × 6",
+          "misconception": "L'élève croit qu'on ne peut décomposer 26 qu'en dizaines et unités. Or 26 = 10 + 10 + 6 convient : 80 + 80 + 48 = 208."
+        }
+      ],
+      "answer": {
+        "value": "c"
+      },
+      "solution_steps": [
+        "$8 \\times 26$ : on multiplie chaque morceau de 26 par 8, puis on ajoute. $8 \\times 20 = 160$ et $8 \\times 6 = 48$, donc $8 \\times 26 = 160 + 48 = 208$.",
+        "Les calculs a, b et d multiplient bien tous les morceaux de 26 par 8 : 26, c'est 20 + 6, ou 10 + 10 + 6, et l'ordre d'une multiplication ne compte pas ($20 \\times 8 = 8 \\times 20$).",
+        "Le calcul c ne multiplie pas le 6 : $8 \\times 20 + 6 = 166$. C'est **c** qui ne donne pas $8 \\times 26$."
+      ],
+      "hint": "Pour chaque calcul, vérifie que tous les morceaux de 26 sont multipliés par 8.",
+      "estimated_duration_s": 120,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 3, CM1, Le calcul mental : « Utiliser la distributivité de la multiplication par rapport à l'addition dans des cas simples »"
+    },
+    {
+      "id": "EX-B057-D-01",
+      "skill_id": "B057",
+      "level": "decouverte",
+      "type": "numerique",
+      "statement": "Voici un programme de calcul :\n\n- choisir un nombre ;\n- ajouter 3 ;\n- multiplier le résultat par 5.\n\nInès choisit 4. Quel nombre obtient-elle ?",
+      "image": null,
+      "answer": {
+        "value": 35
+      },
+      "solution_steps": [
+        "On suit les instructions dans l'ordre, chacune sur le résultat de la précédente.",
+        "Ajouter 3 : $4 + 3 = 7$.",
+        "Multiplier le résultat par 5 : $7 \\times 5 = 35$. Inès obtient **35**.",
+        "Multiplier 4 par 5 (20) oublierait la première instruction."
+      ],
+      "hint": "Fais d'abord 4 + 3. C'est ce résultat qu'on multiplie par 5.",
+      "estimated_duration_s": 60,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 3, CM1, Algèbre : « Exécuter un programme de calcul »"
+    },
+    {
+      "id": "EX-B057-D-02",
+      "skill_id": "B057",
+      "level": "decouverte",
+      "type": "qcm",
+      "statement": "Programme de calcul :\n\n- choisir un nombre ;\n- multiplier par 2 ;\n- ajouter 7.\n\nOn choisit 8. Quel nombre obtient-on ?",
+      "image": null,
+      "choices": [
+        {
+          "key": "a",
+          "text": "15",
+          "misconception": "L'élève applique la dernière instruction au nombre de départ : 8 + 7 = 15. Il oublie « multiplier par 2 »."
+        },
+        {
+          "key": "b",
+          "text": "30",
+          "misconception": "L'élève fait les instructions dans le désordre : il ajoute 7 d'abord (8 + 7 = 15), puis multiplie par 2 (le double de 15 : 30)."
+        },
+        {
+          "key": "c",
+          "text": "23",
+          "misconception": null
+        },
+        {
+          "key": "d",
+          "text": "16",
+          "misconception": "L'élève s'arrête après la première instruction : 8 × 2 = 16. Il oublie d'ajouter 7."
+        }
+      ],
+      "answer": {
+        "value": "c"
+      },
+      "solution_steps": [
+        "Multiplier par 2 : $8 \\times 2 = 16$.",
+        "Ajouter 7 au résultat : $16 + 7 = 23$. On obtient **23**.",
+        "L'ordre compte : en ajoutant 7 d'abord, on trouverait 15, puis le double de 15, $15 + 15 = 30$ : un autre nombre."
+      ],
+      "hint": "Fais les instructions dans l'ordre, en partant à chaque fois du résultat précédent.",
+      "estimated_duration_s": 60,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 3, CM1, Algèbre : « Exécuter un programme de calcul »"
+    },
+    {
+      "id": "EX-B057-E-01",
+      "skill_id": "B057",
+      "level": "entrainement",
+      "type": "numerique",
+      "statement": "Programme : choisir un nombre ; retirer 4 ; multiplier le résultat par 6.\n\nEn choisissant 9, on obtient 30. Quel nombre obtient-on en choisissant 12 ?",
+      "image": null,
+      "answer": {
+        "value": 48
+      },
+      "solution_steps": [
+        "On vérifie avec 9 : $9 - 4 = 5$, puis $5 \\times 6 = 30$. Le programme est bien compris.",
+        "Avec 12 : $12 - 4 = 8$.",
+        "Puis $8 \\times 6 = 48$. On obtient **48**.",
+        "Retirer 4 vient en premier : on ne multiplie pas 12 par 6."
+      ],
+      "hint": "Refais le calcul avec 9 pour voir comment marche le programme, puis pars de 12.",
+      "estimated_duration_s": 90,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 3, CM1, Algèbre : « Exécuter un programme de calcul »"
+    },
+    {
+      "id": "EX-B057-E-02",
+      "skill_id": "B057",
+      "level": "entrainement",
+      "type": "vrai_faux",
+      "statement": "Programme A : ajouter 6, puis multiplier par 3.\n\nProgramme B : multiplier par 3, puis ajouter 6.\n\nLou choisit 5 pour les deux. Elle dit : « J'obtiens le même nombre. » A-t-elle raison ?",
+      "image": null,
+      "answer": {
+        "value": false
+      },
+      "solution_steps": [
+        "Programme A : $5 + 6 = 11$, puis $11 \\times 3 = 11 + 11 + 11 = 33$.",
+        "Programme B : $5 \\times 3 = 15$, puis $15 + 6 = 21$.",
+        "33 et 21 sont différents : Lou a **tort**.",
+        "Les deux programmes ont les mêmes instructions, mais pas dans le même ordre, et l'ordre change le résultat."
+      ],
+      "hint": "Fais les deux programmes avec 5, l'un après l'autre.",
+      "estimated_duration_s": 120,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 3, CM1, Algèbre : « Exécuter un programme de calcul »"
+    },
+    {
+      "id": "EX-B057-M-01",
+      "skill_id": "B057",
+      "level": "maitrise",
+      "type": "numerique",
+      "statement": "Programme : choisir un nombre ; ajouter 9 ; multiplier le résultat par 8.\n\nMalo choisit 0. Il dit : « 0 multiplié par un nombre, ça fait 0. » Quel nombre obtient-il vraiment ?",
+      "image": null,
+      "answer": {
+        "value": 72
+      },
+      "solution_steps": [
+        "On suit l'ordre des instructions. Ajouter 9 : $0 + 9 = 9$.",
+        "Multiplier le résultat par 8 : on ne multiplie pas 0, mais 9. $9 \\times 8 = 72$.",
+        "Malo obtient **72**. Sa phrase est juste, mais elle ne sert pas ici : après la première instruction, il n'y a plus de 0."
+      ],
+      "hint": "Quel est le résultat de la première instruction ? C'est lui qu'on multiplie par 8.",
+      "estimated_duration_s": 90,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 3, CM1, Algèbre : « Exécuter un programme de calcul »"
+    },
+    {
+      "id": "EX-B057-M-02",
+      "skill_id": "B057",
+      "level": "maitrise",
+      "type": "qcm",
+      "statement": "Programme : choisir un nombre ; retirer 6 ; multiplier le résultat par 7.\n\nQuel nombre faut-il choisir pour obtenir 56 ?",
+      "image": null,
+      "choices": [
+        {
+          "key": "a",
+          "text": "14",
+          "misconception": null
+        },
+        {
+          "key": "b",
+          "text": "8",
+          "misconception": "L'élève trouve le nombre à multiplier par 7 (8, car 8 × 7 = 56) et oublie qu'on a retiré 6 avant : en partant de 8, on obtient 2 × 7 = 14."
+        },
+        {
+          "key": "c",
+          "text": "62",
+          "misconception": "L'élève défait « retirer 6 » en ajoutant 6 à 56, mais oublie de défaire « multiplier par 7 » : en partant de 62, on obtient 56 × 7, bien plus que 56."
+        },
+        {
+          "key": "d",
+          "text": "50",
+          "misconception": "L'élève applique « retirer 6 » à 56 au lieu de la défaire : en partant de 50, on obtient 44 × 7, bien plus que 56."
+        }
+      ],
+      "answer": {
+        "value": "a"
+      },
+      "solution_steps": [
+        "On essaie chaque proposition avec le programme.",
+        "Avec 14 : $14 - 6 = 8$, puis $8 \\times 7 = 56$. C'est le bon nombre.",
+        "Avec 8 : $8 - 6 = 2$, puis $2 \\times 7 = 14$. Avec 62 ou 50, il reste 56 ou 44 après « retirer 6 », et multiplier par 7 donne bien plus que 56.",
+        "Il faut choisir **14**. Autre façon : pour obtenir 56 en multipliant par 7, il faut avoir 8 ($8 \\times 7 = 56$) ; et on obtient 8 en retirant 6 à 14."
+      ],
+      "hint": "Essaie chaque nombre proposé avec le programme.",
+      "estimated_duration_s": 120,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 3, CM1, Algèbre : « Exécuter un programme de calcul »"
+    },
+    {
+      "id": "EX-B058-D-01",
+      "skill_id": "B058",
+      "level": "decouverte",
+      "type": "numerique",
+      "statement": "Programme de calcul :\n\n- choisir un nombre ;\n- ajouter 4 ;\n- multiplier le résultat par 6 ;\n- retirer 10.\n\nQuel nombre obtient-on en choisissant 5 ?",
+      "image": null,
+      "answer": {
+        "value": 44
+      },
+      "solution_steps": [
+        "Ajouter 4 : $5 + 4 = 9$.",
+        "Multiplier le résultat par 6 : $9 \\times 6 = 54$.",
+        "Retirer 10 : $54 - 10 = 44$. On obtient **44**.",
+        "Chaque instruction part du résultat de la précédente."
+      ],
+      "hint": "Écris le résultat après chaque instruction.",
+      "estimated_duration_s": 60,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 3, CM2, Algèbre : « Exécuter ou produire un programme de calcul »"
+    },
+    {
+      "id": "EX-B058-D-02",
+      "skill_id": "B058",
+      "level": "decouverte",
+      "type": "qcm",
+      "statement": "Programme : choisir un nombre ; retirer 3 ; multiplier le résultat par 5 ; ajouter 9.\n\nQuel nombre obtient-on en choisissant 11 ?",
+      "image": null,
+      "choices": [
+        {
+          "key": "a",
+          "text": "40",
+          "misconception": "L'élève s'arrête après la deuxième instruction : 11 − 3 = 8, puis 8 × 5 = 40. Il oublie d'ajouter 9."
+        },
+        {
+          "key": "b",
+          "text": "20",
+          "misconception": "L'élève applique la dernière instruction au nombre de départ : 11 + 9 = 20."
+        },
+        {
+          "key": "c",
+          "text": "61",
+          "misconception": "L'élève commence par la multiplication : 11 × 5 = 55, puis 55 − 3 = 52 et 52 + 9 = 61."
+        },
+        {
+          "key": "d",
+          "text": "49",
+          "misconception": null
+        }
+      ],
+      "answer": {
+        "value": "d"
+      },
+      "solution_steps": [
+        "Retirer 3 : $11 - 3 = 8$.",
+        "Multiplier le résultat par 5 : $8 \\times 5 = 40$.",
+        "Ajouter 9 : $40 + 9 = 49$. Réponse **d**."
+      ],
+      "hint": "Fais les trois instructions dans l'ordre.",
+      "estimated_duration_s": 60,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 3, CM2, Algèbre : « Exécuter ou produire un programme de calcul »"
+    },
+    {
+      "id": "EX-B058-E-01",
+      "skill_id": "B058",
+      "level": "entrainement",
+      "type": "numerique",
+      "statement": "Programme : choisir un nombre ; ajouter 2 ; multiplier le résultat par … ; retirer 1.\n\nEn choisissant 5, on obtient 48. Par quel nombre faut-il multiplier ?",
+      "image": null,
+      "answer": {
+        "value": 7,
+        "accepted": [
+          "par 7",
+          "× 7",
+          "x 7",
+          "fois 7",
+          "multiplier par 7",
+          "multiplie par 7"
+        ]
+      },
+      "solution_steps": [
+        "Ajouter 2 : $5 + 2 = 7$.",
+        "La dernière instruction retire 1 et donne 48 : avant de retirer 1, on avait $48 + 1 = 49$.",
+        "Il faut donc que 7 multiplié par le nombre manquant donne 49 : $7 \\times 7 = 49$, soit $49 \\div 7 = 7$.",
+        "Le nombre manquant est **7**. Vérification : $5 + 2 = 7$, $7 \\times 7 = 49$, $49 - 1 = 48$."
+      ],
+      "hint": "Calcule d'abord 5 + 2. Puis cherche quel nombre on avait juste avant de retirer 1.",
+      "estimated_duration_s": 120,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 3, CM2, Algèbre : « Exécuter ou produire un programme de calcul »"
+    },
+    {
+      "id": "EX-B058-E-02",
+      "skill_id": "B058",
+      "level": "entrainement",
+      "type": "qcm",
+      "statement": "Une salle de sport demande 15 € d'inscription, puis 9 € par mois.\n\nQuel programme donne le prix à payer à partir du nombre de mois ?",
+      "image": null,
+      "choices": [
+        {
+          "key": "a",
+          "text": "Ajouter 15 au nombre de mois, puis multiplier le résultat par 9.",
+          "misconception": "L'élève écrit les instructions dans l'ordre où il lit les nombres : l'inscription serait alors payée 9 fois."
+        },
+        {
+          "key": "b",
+          "text": "Multiplier le nombre de mois par 15, puis ajouter 9.",
+          "misconception": "L'élève échange les deux prix : il fait payer l'inscription chaque mois et le mois une seule fois."
+        },
+        {
+          "key": "c",
+          "text": "Multiplier le nombre de mois par 9, puis ajouter 15.",
+          "misconception": null
+        },
+        {
+          "key": "d",
+          "text": "Multiplier le nombre de mois par 24.",
+          "misconception": "L'élève ajoute les deux prix, 15 + 9 = 24, et les fait payer chaque mois : l'inscription serait payée chaque mois."
+        }
+      ],
+      "answer": {
+        "value": "c"
+      },
+      "solution_steps": [
+        "Chaque mois coûte 9 € : on multiplie le nombre de mois par 9.",
+        "L'inscription ne se paie qu'une fois : on ajoute 15 € à la fin.",
+        "Le programme est : multiplier le nombre de mois par 9, puis ajouter 15. Réponse **c**.",
+        "Exemple pour 4 mois : $4 \\times 9 = 36$, puis $36 + 15 = 51$ €. Avec le programme a, l'inscription serait payée 9 fois."
+      ],
+      "hint": "Qu'est-ce qui se paie chaque mois ? Qu'est-ce qui ne se paie qu'une fois ?",
+      "estimated_duration_s": 90,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 3, CM2, Algèbre : « Exécuter ou produire un programme de calcul »"
+    },
+    {
+      "id": "EX-B058-M-01",
+      "skill_id": "B058",
+      "level": "maitrise",
+      "type": "qcm",
+      "statement": "Un programme transforme 3 en 10, 5 en 16 et 8 en 25.\n\nQuel est ce programme ?",
+      "image": null,
+      "choices": [
+        {
+          "key": "a",
+          "text": "Ajouter 7.",
+          "misconception": "L'élève vérifie seulement le premier nombre : 3 + 7 = 10, mais 5 + 7 = 12, pas 16."
+        },
+        {
+          "key": "b",
+          "text": "Multiplier par 2, puis ajouter 4.",
+          "misconception": "L'élève vérifie seulement le premier nombre : 3 × 2 + 4 = 10, mais 5 × 2 + 4 = 14, pas 16."
+        },
+        {
+          "key": "c",
+          "text": "Multiplier par 4, puis retirer 2.",
+          "misconception": "L'élève vérifie seulement le premier nombre : 3 × 4 − 2 = 10, mais 5 × 4 − 2 = 18, pas 16."
+        },
+        {
+          "key": "d",
+          "text": "Multiplier par 3, puis ajouter 1.",
+          "misconception": null
+        }
+      ],
+      "answer": {
+        "value": "d"
+      },
+      "solution_steps": [
+        "Un programme doit marcher pour les trois nombres, pas seulement pour le premier.",
+        "Les quatre programmes transforment bien 3 en 10. On essaie avec 5 : a donne 12, b donne 14, c donne 18, d donne $5 \\times 3 + 1 = 16$.",
+        "On vérifie d avec 8 : $8 \\times 3 = 24$, puis $24 + 1 = 25$. C'est juste.",
+        "Le programme est **d** : multiplier par 3, puis ajouter 1."
+      ],
+      "hint": "Essaie chaque programme avec 5, puis avec 8.",
+      "estimated_duration_s": 120,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 3, CM2, Algèbre : « Exécuter ou produire un programme de calcul »"
+    },
+    {
+      "id": "EX-B058-M-02",
+      "skill_id": "B058",
+      "level": "maitrise",
+      "type": "numerique",
+      "statement": "Sortie au musée : l'entrée coûte 9 € par élève et le car 40 €. Une aide de la mairie fait baisser le total de 25 €.\n\nCombien la classe paie-t-elle pour 8 élèves ?",
+      "image": null,
+      "answer": {
+        "value": 87,
+        "unit": "€",
+        "accepted": [
+          "87 €",
+          "87€",
+          "87 euros"
+        ]
+      },
+      "solution_steps": [
+        "Programme : multiplier le nombre d'élèves par 9 ; ajouter 40 ; retirer 25.",
+        "Pour 8 élèves : $8 \\times 9 = 72$ €.",
+        "$72 + 40 = 112$ €, puis $112 - 25 = 87$ €.",
+        "La classe paie **87 €**. Le car s'ajoute une seule fois et l'aide se retire une seule fois : seule l'entrée dépend du nombre d'élèves."
+      ],
+      "hint": "Écris le programme : que fait-on d'abord avec le nombre d'élèves ?",
+      "estimated_duration_s": 120,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 3, CM2, Algèbre : « Exécuter ou produire un programme de calcul »"
     },
     {
       "id": "EX-C001-D-01",
@@ -28402,6 +28953,556 @@
       "estimated_duration_s": 70,
       "review_status": "relu_agent",
       "programme_ref": "Cycle 4, classe de 3e, Nombres et calculs, Racine carrée : « Résoudre analytiquement et graphiquement des équations de la forme 𝑥2 = a. »"
+    },
+    {
+      "id": "EX-F069-D-01",
+      "skill_id": "F069",
+      "level": "decouverte",
+      "type": "numerique",
+      "statement": "Le signe = veut dire : les deux côtés valent le même nombre.\n\nComplète : 95 − … = 6 × 7\n\nCommence par calculer 6 × 7.",
+      "image": null,
+      "answer": {
+        "value": 53
+      },
+      "solution_steps": [
+        "Côté droit : $6 \\times 7 = 42$.",
+        "Le côté gauche doit valoir 42 aussi : 95 moins le nombre manquant doit donner 42.",
+        "Le nombre manquant est l'écart entre 95 et 42 : $95 - 42 = 53$.",
+        "Vérification : $95 - 53 = 42$ et $6 \\times 7 = 42$. Le nombre manquant est **53**. Écrire 42 dans le trou, ce serait lire = comme « ça donne »."
+      ],
+      "hint": "Combien doit valoir 95 − … ? Regarde le côté droit.",
+      "estimated_duration_s": 90,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 3, CM1, Algèbre : « Trouver le nombre manquant dans une égalité à trous »"
+    },
+    {
+      "id": "EX-F069-D-02",
+      "skill_id": "F069",
+      "level": "decouverte",
+      "type": "vrai_faux",
+      "statement": "Cette égalité est-elle vraie ?\n\n4 × 6 = 30 − 6",
+      "image": null,
+      "answer": {
+        "value": true
+      },
+      "solution_steps": [
+        "Le signe = ne veut pas dire « ça donne » : il dit que les deux côtés valent le même nombre.",
+        "Côté gauche : $4 \\times 6 = 24$. Côté droit : $30 - 6 = 24$.",
+        "Les deux côtés valent 24 : l'égalité est **vraie**.",
+        "Ne lire que le début, « 4 × 6 = 30 », ferait croire à une erreur."
+      ],
+      "hint": "Calcule chaque côté du signe =, puis compare.",
+      "estimated_duration_s": 60,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 3, CM1, Algèbre : le signe = « peut être placé entre deux expressions qui sont égales »"
+    },
+    {
+      "id": "EX-F069-E-01",
+      "skill_id": "F069",
+      "level": "entrainement",
+      "type": "numerique",
+      "statement": "Le ▲ représente toujours le même nombre.\n\n▲ + ▲ + ▲ + 6 = 30\n\nQue vaut ▲ ?",
+      "image": null,
+      "answer": {
+        "value": 8,
+        "accepted": [
+          "▲ = 8",
+          "▲=8"
+        ]
+      },
+      "solution_steps": [
+        "Trois ▲ et 6 font 30. Sans le 6, il reste $30 - 6 = 24$ : les trois ▲ font 24.",
+        "On cherche le nombre qui, pris trois fois, fait 24 : $3 \\times 8 = 24$, donc $24 \\div 3 = 8$.",
+        "Vérification : $8 + 8 + 8 + 6 = 30$. ▲ vaut **8**.",
+        "Ajouter 6 à 30 au lieu de l'enlever, ce serait refaire l'opération de l'énoncé au lieu de la défaire."
+      ],
+      "hint": "Combien font les trois ▲, sans le 6 ?",
+      "estimated_duration_s": 90,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 3, CM1, Algèbre : « Déterminer la valeur d'un nombre inconnu en utilisant un symbole ou une lettre pour le représenter »"
+    },
+    {
+      "id": "EX-F069-E-02",
+      "skill_id": "F069",
+      "level": "entrainement",
+      "type": "qcm",
+      "statement": "Une balance est en équilibre. À gauche : 4 sacs identiques et 3 kg. À droite : 23 kg.\n\n■ est la masse d'un sac. Quelle écriture traduit la balance ?",
+      "image": null,
+      "choices": [
+        {
+          "key": "a",
+          "text": "■ + 4 + 3 = 23",
+          "misconception": "L'élève lit « 4 sacs » comme 4 kg : il écrit un seul sac et ajoute 4."
+        },
+        {
+          "key": "b",
+          "text": "■ + ■ + ■ + ■ + 3 = 23",
+          "misconception": null
+        },
+        {
+          "key": "c",
+          "text": "■ + ■ + ■ + ■ = 23 + 3",
+          "misconception": "L'élève met les 3 kg à droite alors qu'ils sont à gauche avec les sacs : cette balance ne serait plus la même."
+        },
+        {
+          "key": "d",
+          "text": "■ + 3 = 23",
+          "misconception": "L'élève n'écrit qu'un sac : il oublie que les 4 sacs sont sur le plateau."
+        }
+      ],
+      "answer": {
+        "value": "b"
+      },
+      "solution_steps": [
+        "Chaque sac pèse ■. Les quatre sacs : ■ + ■ + ■ + ■.",
+        "Avec les 3 kg posés à gauche : ■ + ■ + ■ + ■ + 3.",
+        "La balance est en équilibre : la gauche pèse autant que la droite, 23 kg. L'écriture est ■ + ■ + ■ + ■ + 3 = 23, réponse **b**.",
+        "On peut en déduire la masse d'un sac : $23 - 3 = 20$, et $20 \\div 4 = 5$. Un sac pèse 5 kg."
+      ],
+      "hint": "Écris un ■ pour chaque sac, puis ajoute ce qui est posé avec eux.",
+      "estimated_duration_s": 90,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 3, CM1, Algèbre : « Résoudre des problèmes algébriques »"
+    },
+    {
+      "id": "EX-F069-M-01",
+      "skill_id": "F069",
+      "level": "maitrise",
+      "type": "numerique",
+      "statement": "Emma a 4 fois plus de cartes que Noé. À eux deux, ils ont 35 cartes.\n\nCombien de cartes Noé a-t-il ?",
+      "image": null,
+      "answer": {
+        "value": 7,
+        "unit": "cartes",
+        "accepted": [
+          "7 cartes",
+          "7 carte"
+        ]
+      },
+      "solution_steps": [
+        "Noé a une part. Emma a 4 fois plus : 4 parts de la même taille.",
+        "À eux deux : $1 + 4 = 5$ parts égales, qui font 35 cartes.",
+        "Une part : $35 \\div 5 = 7$. Noé a **7 cartes**, et Emma $4 \\times 7 = 28$.",
+        "Vérification : $7 + 28 = 35$, et 28 est bien 4 fois 7. Diviser 35 par 4 oublierait la part de Noé."
+      ],
+      "hint": "Dessine une barre pour les cartes de Noé, puis les barres d'Emma. Combien de barres égales en tout ?",
+      "estimated_duration_s": 120,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 3, CM1, Algèbre : « Résoudre des problèmes algébriques »"
+    },
+    {
+      "id": "EX-F069-M-02",
+      "skill_id": "F069",
+      "level": "maitrise",
+      "type": "qcm",
+      "statement": "Quel nombre manque ?\n\n… − 36 = 7 × 8",
+      "image": null,
+      "choices": [
+        {
+          "key": "a",
+          "text": "20",
+          "misconception": "L'élève refait la soustraction de l'énoncé au lieu de la défaire : 56 − 36 = 20."
+        },
+        {
+          "key": "b",
+          "text": "56",
+          "misconception": "L'élève lit = comme « ça donne » : il écrit dans le trou le résultat du côté droit, 7 × 8 = 56."
+        },
+        {
+          "key": "c",
+          "text": "92",
+          "misconception": null
+        },
+        {
+          "key": "d",
+          "text": "82",
+          "misconception": "L'élève défait bien la soustraction en ajoutant 36 à 56, mais oublie la retenue : 56 + 36 fait 92, pas 82."
+        }
+      ],
+      "answer": {
+        "value": "c"
+      },
+      "solution_steps": [
+        "Côté droit : $7 \\times 8 = 56$.",
+        "Le côté gauche doit valoir 56 : on cherche le nombre auquel on retire 36 pour obtenir 56.",
+        "Pour défaire « retirer 36 », on ajoute 36 : $56 + 36 = 92$. Le nombre manquant est **92**, réponse **c**.",
+        "Vérification : $92 - 36 = 56$ et $7 \\times 8 = 56$. Choisir 20, ce serait refaire la soustraction au lieu de la défaire."
+      ],
+      "hint": "Calcule d'abord le côté droit, puis cherche le nombre de départ.",
+      "estimated_duration_s": 90,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 3, CM1, Algèbre : « Trouver le nombre manquant dans une égalité à trous »"
+    },
+    {
+      "id": "EX-F070-D-01",
+      "skill_id": "F070",
+      "level": "decouverte",
+      "type": "vrai_faux",
+      "statement": "12 ; 18 ; 24 ; 30 ; …\n\nNina dit : « Dans cette suite, on ajoute toujours 6. Le nombre suivant est 36. » A-t-elle raison ?",
+      "image": null,
+      "answer": {
+        "value": true
+      },
+      "solution_steps": [
+        "On regarde chaque passage : $12 + 6 = 18$, $18 + 6 = 24$, $24 + 6 = 30$. La règle est bien « on ajoute 6 ».",
+        "Le nombre suivant : $30 + 6 = 36$. Nina a **raison**.",
+        "On reconnaît les nombres de la table de 6."
+      ],
+      "hint": "Combien faut-il ajouter à 12 pour obtenir 18 ? Et à 18 pour obtenir 24 ?",
+      "estimated_duration_s": 60,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 3, CM1, Algèbre : « Identifier et formuler une règle de calcul pour poursuivre une suite de nombres »"
+    },
+    {
+      "id": "EX-F070-D-02",
+      "skill_id": "F070",
+      "level": "decouverte",
+      "type": "numerique",
+      "statement": "Voici les étapes 1, 2 et 3 d'un motif de carreaux.\n\nCombien de carreaux faudra-t-il à l'étape 4 ?",
+      "image": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 380 184\" width=\"380\" height=\"184\" font-family=\"system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif\" role=\"img\"><title>Quadrillage : trois motifs de carreaux coloriés, numérotés 1, 2 et 3</title><rect width=\"100%\" height=\"100%\" fill=\"#ffffff\"/><rect x=\"36\" y=\"80\" width=\"22\" height=\"22\" fill=\"#93c5fd\"/><rect x=\"36\" y=\"102\" width=\"22\" height=\"22\" fill=\"#93c5fd\"/><rect x=\"58\" y=\"102\" width=\"22\" height=\"22\" fill=\"#93c5fd\"/><rect x=\"124\" y=\"58\" width=\"22\" height=\"22\" fill=\"#fde68a\"/><rect x=\"124\" y=\"80\" width=\"22\" height=\"22\" fill=\"#fde68a\"/><rect x=\"124\" y=\"102\" width=\"22\" height=\"22\" fill=\"#fde68a\"/><rect x=\"146\" y=\"102\" width=\"22\" height=\"22\" fill=\"#fde68a\"/><rect x=\"168\" y=\"102\" width=\"22\" height=\"22\" fill=\"#fde68a\"/><rect x=\"234\" y=\"36\" width=\"22\" height=\"22\" fill=\"#bbf7d0\"/><rect x=\"234\" y=\"58\" width=\"22\" height=\"22\" fill=\"#bbf7d0\"/><rect x=\"234\" y=\"80\" width=\"22\" height=\"22\" fill=\"#bbf7d0\"/><rect x=\"234\" y=\"102\" width=\"22\" height=\"22\" fill=\"#bbf7d0\"/><rect x=\"256\" y=\"102\" width=\"22\" height=\"22\" fill=\"#bbf7d0\"/><rect x=\"278\" y=\"102\" width=\"22\" height=\"22\" fill=\"#bbf7d0\"/><rect x=\"300\" y=\"102\" width=\"22\" height=\"22\" fill=\"#bbf7d0\"/><line x1=\"14.0\" y1=\"14.0\" x2=\"14.0\" y2=\"146.0\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"36.0\" y1=\"14.0\" x2=\"36.0\" y2=\"146.0\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"58.0\" y1=\"14.0\" x2=\"58.0\" y2=\"146.0\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"80.0\" y1=\"14.0\" x2=\"80.0\" y2=\"146.0\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"102.0\" y1=\"14.0\" x2=\"102.0\" y2=\"146.0\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"124.0\" y1=\"14.0\" x2=\"124.0\" y2=\"146.0\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"146.0\" y1=\"14.0\" x2=\"146.0\" y2=\"146.0\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"168.0\" y1=\"14.0\" x2=\"168.0\" y2=\"146.0\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"190.0\" y1=\"14.0\" x2=\"190.0\" y2=\"146.0\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"212.0\" y1=\"14.0\" x2=\"212.0\" y2=\"146.0\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"234.0\" y1=\"14.0\" x2=\"234.0\" y2=\"146.0\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"256.0\" y1=\"14.0\" x2=\"256.0\" y2=\"146.0\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"278.0\" y1=\"14.0\" x2=\"278.0\" y2=\"146.0\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"300.0\" y1=\"14.0\" x2=\"300.0\" y2=\"146.0\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"322.0\" y1=\"14.0\" x2=\"322.0\" y2=\"146.0\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"344.0\" y1=\"14.0\" x2=\"344.0\" y2=\"146.0\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"366.0\" y1=\"14.0\" x2=\"366.0\" y2=\"146.0\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"14.0\" y1=\"14.0\" x2=\"366.0\" y2=\"14.0\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"14.0\" y1=\"36.0\" x2=\"366.0\" y2=\"36.0\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"14.0\" y1=\"58.0\" x2=\"366.0\" y2=\"58.0\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"14.0\" y1=\"80.0\" x2=\"366.0\" y2=\"80.0\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"14.0\" y1=\"102.0\" x2=\"366.0\" y2=\"102.0\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"14.0\" y1=\"124.0\" x2=\"366.0\" y2=\"124.0\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"14.0\" y1=\"146.0\" x2=\"366.0\" y2=\"146.0\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-linecap=\"round\"/><text x=\"47.0\" y=\"140.0\" font-size=\"13\" text-anchor=\"middle\" fill=\"#334155\" font-weight=\"600\">1</text><text x=\"157.0\" y=\"140.0\" font-size=\"13\" text-anchor=\"middle\" fill=\"#334155\" font-weight=\"600\">2</text><text x=\"267.0\" y=\"140.0\" font-size=\"13\" text-anchor=\"middle\" fill=\"#334155\" font-weight=\"600\">3</text><text x=\"190.0\" y=\"174.0\" font-size=\"13\" text-anchor=\"middle\" fill=\"#334155\">Sous chaque motif, le numéro de son étape</text></svg>",
+      "answer": {
+        "value": 9,
+        "unit": "carreaux",
+        "accepted": [
+          "9 carreaux",
+          "9 carreau"
+        ]
+      },
+      "solution_steps": [
+        "On compte les carreaux : 3 à l'étape 1, 5 à l'étape 2, 7 à l'étape 3.",
+        "D'une étape à la suivante, on ajoute 2 carreaux : un en haut de la colonne, un au bout de la ligne.",
+        "Étape 4 : $7 + 2 = 9$ carreaux.",
+        "Inutile de recompter tout le motif : on part de l'étape 3 et on ajoute ce qui change."
+      ],
+      "hint": "Qu'est-ce qui s'ajoute entre l'étape 1 et l'étape 2 ? Entre l'étape 2 et l'étape 3 ?",
+      "estimated_duration_s": 90,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 3, CM1, Algèbre : « Identifier des régularités et poursuivre une suite de motifs évolutive »"
+    },
+    {
+      "id": "EX-F070-E-01",
+      "skill_id": "F070",
+      "level": "entrainement",
+      "type": "qcm",
+      "statement": "Quelle règle permet de poursuivre cette suite ?\n\n20 ; 30 ; 27 ; 37 ; 34 ; 44 ; …",
+      "image": null,
+      "choices": [
+        {
+          "key": "a",
+          "text": "On ajoute 7.",
+          "misconception": "L'élève ne regarde qu'un nombre sur deux : 20, 27 et 34 augmentent bien de 7, mais 30 n'est pas 20 + 7."
+        },
+        {
+          "key": "b",
+          "text": "On ajoute 10.",
+          "misconception": "L'élève ne regarde que le premier passage : 20 + 10 = 30, mais 30 + 10 ne fait pas 27."
+        },
+        {
+          "key": "c",
+          "text": "On ajoute 10, puis on retire 3, et on recommence.",
+          "misconception": null
+        },
+        {
+          "key": "d",
+          "text": "On retire 3.",
+          "misconception": "L'élève ne regarde que le passage de 30 à 27 : 27 − 3 ne fait pas 37."
+        }
+      ],
+      "answer": {
+        "value": "c"
+      },
+      "solution_steps": [
+        "On regarde chaque passage : $20 + 10 = 30$ ; $30 - 3 = 27$ ; $27 + 10 = 37$ ; $37 - 3 = 34$ ; $34 + 10 = 44$.",
+        "Les passages alternent : on ajoute 10, puis on retire 3. C'est la règle **c**.",
+        "Le nombre suivant serait $44 - 3 = 41$.",
+        "Une règle doit marcher pour tous les passages, pas seulement pour deux nombres."
+      ],
+      "hint": "Écris ce qui se passe entre chaque nombre et le suivant.",
+      "estimated_duration_s": 90,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 3, CM1, Algèbre : « Identifier et formuler une règle de calcul pour poursuivre une suite de nombres »"
+    },
+    {
+      "id": "EX-F070-E-02",
+      "skill_id": "F070",
+      "level": "entrainement",
+      "type": "numerique",
+      "statement": "Voici le début d'une suite :\n\n4 ; 7 ; 13 ; 16 ; 22 ; 25 ; …\n\nQuel est le 8e nombre de la suite ?",
+      "image": null,
+      "answer": {
+        "value": 34
+      },
+      "solution_steps": [
+        "Les passages : $4 + 3 = 7$ ; $7 + 6 = 13$ ; $13 + 3 = 16$ ; $16 + 6 = 22$ ; $22 + 3 = 25$.",
+        "La règle : on ajoute 3, puis 6, et on recommence.",
+        "Le dernier passage ajoutait 3, le suivant ajoute 6 : le 7e nombre est $25 + 6 = 31$.",
+        "Puis on ajoute 3 : le 8e nombre est $31 + 3 = 34$."
+      ],
+      "hint": "Écris ce qu'on ajoute à chaque passage. Le 7e nombre vient juste après 25.",
+      "estimated_duration_s": 90,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 3, CM1, Algèbre : « Identifier et formuler une règle de calcul pour poursuivre une suite de nombres »"
+    },
+    {
+      "id": "EX-F070-M-01",
+      "skill_id": "F070",
+      "level": "maitrise",
+      "type": "numerique",
+      "statement": "Voici les étapes 1, 2 et 3 d'un escalier de carreaux.\n\nCombien de carreaux faudra-t-il à l'étape 5 ?",
+      "image": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 380 162\" width=\"380\" height=\"162\" font-family=\"system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif\" role=\"img\"><title>Quadrillage : trois motifs de carreaux coloriés, numérotés 1, 2 et 3</title><rect width=\"100%\" height=\"100%\" fill=\"#ffffff\"/><rect x=\"36\" y=\"80\" width=\"22\" height=\"22\" fill=\"#93c5fd\"/><rect x=\"102\" y=\"80\" width=\"22\" height=\"22\" fill=\"#fde68a\"/><rect x=\"124\" y=\"58\" width=\"22\" height=\"22\" fill=\"#fde68a\"/><rect x=\"124\" y=\"80\" width=\"22\" height=\"22\" fill=\"#fde68a\"/><rect x=\"190\" y=\"80\" width=\"22\" height=\"22\" fill=\"#bbf7d0\"/><rect x=\"212\" y=\"58\" width=\"22\" height=\"22\" fill=\"#bbf7d0\"/><rect x=\"212\" y=\"80\" width=\"22\" height=\"22\" fill=\"#bbf7d0\"/><rect x=\"234\" y=\"36\" width=\"22\" height=\"22\" fill=\"#bbf7d0\"/><rect x=\"234\" y=\"58\" width=\"22\" height=\"22\" fill=\"#bbf7d0\"/><rect x=\"234\" y=\"80\" width=\"22\" height=\"22\" fill=\"#bbf7d0\"/><line x1=\"14.0\" y1=\"14.0\" x2=\"14.0\" y2=\"124.0\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"36.0\" y1=\"14.0\" x2=\"36.0\" y2=\"124.0\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"58.0\" y1=\"14.0\" x2=\"58.0\" y2=\"124.0\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"80.0\" y1=\"14.0\" x2=\"80.0\" y2=\"124.0\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"102.0\" y1=\"14.0\" x2=\"102.0\" y2=\"124.0\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"124.0\" y1=\"14.0\" x2=\"124.0\" y2=\"124.0\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"146.0\" y1=\"14.0\" x2=\"146.0\" y2=\"124.0\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"168.0\" y1=\"14.0\" x2=\"168.0\" y2=\"124.0\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"190.0\" y1=\"14.0\" x2=\"190.0\" y2=\"124.0\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"212.0\" y1=\"14.0\" x2=\"212.0\" y2=\"124.0\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"234.0\" y1=\"14.0\" x2=\"234.0\" y2=\"124.0\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"256.0\" y1=\"14.0\" x2=\"256.0\" y2=\"124.0\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"278.0\" y1=\"14.0\" x2=\"278.0\" y2=\"124.0\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"300.0\" y1=\"14.0\" x2=\"300.0\" y2=\"124.0\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"322.0\" y1=\"14.0\" x2=\"322.0\" y2=\"124.0\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"344.0\" y1=\"14.0\" x2=\"344.0\" y2=\"124.0\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"366.0\" y1=\"14.0\" x2=\"366.0\" y2=\"124.0\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"14.0\" y1=\"14.0\" x2=\"366.0\" y2=\"14.0\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"14.0\" y1=\"36.0\" x2=\"366.0\" y2=\"36.0\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"14.0\" y1=\"58.0\" x2=\"366.0\" y2=\"58.0\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"14.0\" y1=\"80.0\" x2=\"366.0\" y2=\"80.0\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"14.0\" y1=\"102.0\" x2=\"366.0\" y2=\"102.0\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"14.0\" y1=\"124.0\" x2=\"366.0\" y2=\"124.0\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-linecap=\"round\"/><text x=\"47.0\" y=\"118.0\" font-size=\"13\" text-anchor=\"middle\" fill=\"#334155\" font-weight=\"600\">1</text><text x=\"113.0\" y=\"118.0\" font-size=\"13\" text-anchor=\"middle\" fill=\"#334155\" font-weight=\"600\">2</text><text x=\"223.0\" y=\"118.0\" font-size=\"13\" text-anchor=\"middle\" fill=\"#334155\" font-weight=\"600\">3</text><text x=\"190.0\" y=\"152.0\" font-size=\"13\" text-anchor=\"middle\" fill=\"#334155\">Sous chaque motif, le numéro de son étape</text></svg>",
+      "answer": {
+        "value": 15,
+        "unit": "carreaux",
+        "accepted": [
+          "15 carreaux",
+          "15 carreau"
+        ]
+      },
+      "solution_steps": [
+        "On compte : 1 carreau à l'étape 1, 3 à l'étape 2, 6 à l'étape 3.",
+        "À chaque étape, on ajoute à droite une colonne plus haute d'un carreau que la précédente : on ajoute 2, puis 3.",
+        "Étape 4 : une colonne de 4 carreaux, $6 + 4 = 10$. Étape 5 : une colonne de 5 carreaux, $10 + 5 = 15$.",
+        "Il y a **15 carreaux**. On n'ajoute pas toujours le même nombre : ajouter 3 à chaque étape donnerait 12."
+      ],
+      "hint": "Regarde la colonne qui s'ajoute à chaque étape. Combien de carreaux aura la suivante ?",
+      "estimated_duration_s": 120,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 3, CM1, Algèbre : « Identifier des régularités et poursuivre une suite de motifs évolutive »"
+    },
+    {
+      "id": "EX-F070-M-02",
+      "skill_id": "F070",
+      "level": "maitrise",
+      "type": "qcm",
+      "statement": "Quel nombre vient ensuite ?\n\n2 ; 3 ; 5 ; 8 ; 12 ; …",
+      "image": null,
+      "choices": [
+        {
+          "key": "a",
+          "text": "16",
+          "misconception": "L'élève ne regarde que les deux derniers nombres : de 8 à 12 on ajoute 4, et il ajoute 4 une nouvelle fois."
+        },
+        {
+          "key": "b",
+          "text": "17",
+          "misconception": null
+        },
+        {
+          "key": "c",
+          "text": "24",
+          "misconception": "L'élève double le dernier nombre, comme si la suite doublait : mais 3 n'est pas le double de 2."
+        },
+        {
+          "key": "d",
+          "text": "20",
+          "misconception": "L'élève ajoute les deux derniers nombres (8 + 12 = 20) : mais 5 + 8 ne fait pas 12."
+        }
+      ],
+      "answer": {
+        "value": "b"
+      },
+      "solution_steps": [
+        "Les passages : $2 + 1 = 3$ ; $3 + 2 = 5$ ; $5 + 3 = 8$ ; $8 + 4 = 12$.",
+        "On ajoute 1, puis 2, puis 3, puis 4 : ce qu'on ajoute grandit de 1 à chaque passage.",
+        "Le passage suivant ajoute 5 : $12 + 5 = 17$. Réponse **b**."
+      ],
+      "hint": "Écris ce qu'on ajoute à chaque passage. Que remarques-tu ?",
+      "estimated_duration_s": 90,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 3, CM1, Algèbre : « Identifier et formuler une règle de calcul pour poursuivre une suite de nombres »"
+    },
+    {
+      "id": "EX-F071-D-01",
+      "skill_id": "F071",
+      "level": "decouverte",
+      "type": "numerique",
+      "statement": "Voici les étapes 1, 2 et 3 d'un motif. À chaque étape, on ajoute 2 carreaux.\n\nCombien de carreaux aura le motif à l'étape 10 ?",
+      "image": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 380 162\" width=\"380\" height=\"162\" font-family=\"system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif\" role=\"img\"><title>Quadrillage : trois motifs de carreaux coloriés, numérotés 1, 2 et 3</title><rect width=\"100%\" height=\"100%\" fill=\"#ffffff\"/><rect x=\"36\" y=\"36\" width=\"22\" height=\"22\" fill=\"#93c5fd\"/><rect x=\"36\" y=\"58\" width=\"22\" height=\"22\" fill=\"#93c5fd\"/><rect x=\"36\" y=\"80\" width=\"22\" height=\"22\" fill=\"#93c5fd\"/><rect x=\"58\" y=\"36\" width=\"22\" height=\"22\" fill=\"#93c5fd\"/><rect x=\"58\" y=\"80\" width=\"22\" height=\"22\" fill=\"#93c5fd\"/><rect x=\"124\" y=\"36\" width=\"22\" height=\"22\" fill=\"#fde68a\"/><rect x=\"124\" y=\"58\" width=\"22\" height=\"22\" fill=\"#fde68a\"/><rect x=\"124\" y=\"80\" width=\"22\" height=\"22\" fill=\"#fde68a\"/><rect x=\"146\" y=\"36\" width=\"22\" height=\"22\" fill=\"#fde68a\"/><rect x=\"146\" y=\"80\" width=\"22\" height=\"22\" fill=\"#fde68a\"/><rect x=\"168\" y=\"36\" width=\"22\" height=\"22\" fill=\"#fde68a\"/><rect x=\"168\" y=\"80\" width=\"22\" height=\"22\" fill=\"#fde68a\"/><rect x=\"234\" y=\"36\" width=\"22\" height=\"22\" fill=\"#bbf7d0\"/><rect x=\"234\" y=\"58\" width=\"22\" height=\"22\" fill=\"#bbf7d0\"/><rect x=\"234\" y=\"80\" width=\"22\" height=\"22\" fill=\"#bbf7d0\"/><rect x=\"256\" y=\"36\" width=\"22\" height=\"22\" fill=\"#bbf7d0\"/><rect x=\"256\" y=\"80\" width=\"22\" height=\"22\" fill=\"#bbf7d0\"/><rect x=\"278\" y=\"36\" width=\"22\" height=\"22\" fill=\"#bbf7d0\"/><rect x=\"278\" y=\"80\" width=\"22\" height=\"22\" fill=\"#bbf7d0\"/><rect x=\"300\" y=\"36\" width=\"22\" height=\"22\" fill=\"#bbf7d0\"/><rect x=\"300\" y=\"80\" width=\"22\" height=\"22\" fill=\"#bbf7d0\"/><line x1=\"14.0\" y1=\"14.0\" x2=\"14.0\" y2=\"124.0\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"36.0\" y1=\"14.0\" x2=\"36.0\" y2=\"124.0\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"58.0\" y1=\"14.0\" x2=\"58.0\" y2=\"124.0\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"80.0\" y1=\"14.0\" x2=\"80.0\" y2=\"124.0\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"102.0\" y1=\"14.0\" x2=\"102.0\" y2=\"124.0\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"124.0\" y1=\"14.0\" x2=\"124.0\" y2=\"124.0\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"146.0\" y1=\"14.0\" x2=\"146.0\" y2=\"124.0\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"168.0\" y1=\"14.0\" x2=\"168.0\" y2=\"124.0\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"190.0\" y1=\"14.0\" x2=\"190.0\" y2=\"124.0\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"212.0\" y1=\"14.0\" x2=\"212.0\" y2=\"124.0\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"234.0\" y1=\"14.0\" x2=\"234.0\" y2=\"124.0\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"256.0\" y1=\"14.0\" x2=\"256.0\" y2=\"124.0\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"278.0\" y1=\"14.0\" x2=\"278.0\" y2=\"124.0\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"300.0\" y1=\"14.0\" x2=\"300.0\" y2=\"124.0\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"322.0\" y1=\"14.0\" x2=\"322.0\" y2=\"124.0\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"344.0\" y1=\"14.0\" x2=\"344.0\" y2=\"124.0\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"366.0\" y1=\"14.0\" x2=\"366.0\" y2=\"124.0\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"14.0\" y1=\"14.0\" x2=\"366.0\" y2=\"14.0\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"14.0\" y1=\"36.0\" x2=\"366.0\" y2=\"36.0\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"14.0\" y1=\"58.0\" x2=\"366.0\" y2=\"58.0\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"14.0\" y1=\"80.0\" x2=\"366.0\" y2=\"80.0\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"14.0\" y1=\"102.0\" x2=\"366.0\" y2=\"102.0\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"14.0\" y1=\"124.0\" x2=\"366.0\" y2=\"124.0\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-linecap=\"round\"/><text x=\"47.0\" y=\"118.0\" font-size=\"13\" text-anchor=\"middle\" fill=\"#334155\" font-weight=\"600\">1</text><text x=\"157.0\" y=\"118.0\" font-size=\"13\" text-anchor=\"middle\" fill=\"#334155\" font-weight=\"600\">2</text><text x=\"267.0\" y=\"118.0\" font-size=\"13\" text-anchor=\"middle\" fill=\"#334155\" font-weight=\"600\">3</text><text x=\"190.0\" y=\"152.0\" font-size=\"13\" text-anchor=\"middle\" fill=\"#334155\">Sous chaque motif, le numéro de son étape</text></svg>",
+      "answer": {
+        "value": 23,
+        "unit": "carreaux",
+        "accepted": [
+          "23 carreaux",
+          "23 carreau"
+        ]
+      },
+      "solution_steps": [
+        "On compte : 5 carreaux à l'étape 1, 7 à l'étape 2, 9 à l'étape 3.",
+        "La colonne de gauche, 3 carreaux, ne change jamais. Les deux rangées ont chacune autant de carreaux que le numéro de l'étape.",
+        "À l'étape 10 : deux rangées de 10, soit $2 \\times 10 = 20$, plus la colonne de 3 : $20 + 3 = 23$ carreaux.",
+        "Autre façon : de l'étape 3 à l'étape 10, il y a 7 étapes de plus, donc $7 \\times 2 = 14$ carreaux de plus, et $9 + 14 = 23$.",
+        "Attention : $5 \\times 10 = 50$ serait faux, le motif de l'étape 10 n'est pas 10 fois celui de l'étape 1."
+      ],
+      "hint": "Qu'est-ce qui reste pareil d'une étape à l'autre ? Qu'est-ce qui grandit ?",
+      "estimated_duration_s": 90,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 3, CM2, Algèbre : « Trouver le nombre d'éléments pour une étape donnée dans une suite de motifs évolutive »"
+    },
+    {
+      "id": "EX-F071-D-02",
+      "skill_id": "F071",
+      "level": "decouverte",
+      "type": "qcm",
+      "statement": "Voici les étapes 1, 2 et 3 d'un motif de carreaux.\n\nQuelle phrase donne le nombre de carreaux à n'importe quelle étape ?",
+      "image": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 380 162\" width=\"380\" height=\"162\" font-family=\"system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif\" role=\"img\"><title>Quadrillage : trois motifs de carreaux coloriés, numérotés 1, 2 et 3</title><rect width=\"100%\" height=\"100%\" fill=\"#ffffff\"/><rect x=\"14\" y=\"58\" width=\"22\" height=\"22\" fill=\"#93c5fd\"/><rect x=\"36\" y=\"36\" width=\"22\" height=\"22\" fill=\"#93c5fd\"/><rect x=\"36\" y=\"58\" width=\"22\" height=\"22\" fill=\"#93c5fd\"/><rect x=\"36\" y=\"80\" width=\"22\" height=\"22\" fill=\"#93c5fd\"/><rect x=\"58\" y=\"58\" width=\"22\" height=\"22\" fill=\"#93c5fd\"/><rect x=\"124\" y=\"58\" width=\"22\" height=\"22\" fill=\"#fde68a\"/><rect x=\"146\" y=\"36\" width=\"22\" height=\"22\" fill=\"#fde68a\"/><rect x=\"146\" y=\"58\" width=\"22\" height=\"22\" fill=\"#fde68a\"/><rect x=\"146\" y=\"80\" width=\"22\" height=\"22\" fill=\"#fde68a\"/><rect x=\"168\" y=\"36\" width=\"22\" height=\"22\" fill=\"#fde68a\"/><rect x=\"168\" y=\"58\" width=\"22\" height=\"22\" fill=\"#fde68a\"/><rect x=\"168\" y=\"80\" width=\"22\" height=\"22\" fill=\"#fde68a\"/><rect x=\"190\" y=\"58\" width=\"22\" height=\"22\" fill=\"#fde68a\"/><rect x=\"256\" y=\"58\" width=\"22\" height=\"22\" fill=\"#bbf7d0\"/><rect x=\"278\" y=\"36\" width=\"22\" height=\"22\" fill=\"#bbf7d0\"/><rect x=\"278\" y=\"58\" width=\"22\" height=\"22\" fill=\"#bbf7d0\"/><rect x=\"278\" y=\"80\" width=\"22\" height=\"22\" fill=\"#bbf7d0\"/><rect x=\"300\" y=\"36\" width=\"22\" height=\"22\" fill=\"#bbf7d0\"/><rect x=\"300\" y=\"58\" width=\"22\" height=\"22\" fill=\"#bbf7d0\"/><rect x=\"300\" y=\"80\" width=\"22\" height=\"22\" fill=\"#bbf7d0\"/><rect x=\"322\" y=\"36\" width=\"22\" height=\"22\" fill=\"#bbf7d0\"/><rect x=\"322\" y=\"58\" width=\"22\" height=\"22\" fill=\"#bbf7d0\"/><rect x=\"322\" y=\"80\" width=\"22\" height=\"22\" fill=\"#bbf7d0\"/><rect x=\"344\" y=\"58\" width=\"22\" height=\"22\" fill=\"#bbf7d0\"/><line x1=\"14.0\" y1=\"14.0\" x2=\"14.0\" y2=\"124.0\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"36.0\" y1=\"14.0\" x2=\"36.0\" y2=\"124.0\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"58.0\" y1=\"14.0\" x2=\"58.0\" y2=\"124.0\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"80.0\" y1=\"14.0\" x2=\"80.0\" y2=\"124.0\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"102.0\" y1=\"14.0\" x2=\"102.0\" y2=\"124.0\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"124.0\" y1=\"14.0\" x2=\"124.0\" y2=\"124.0\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"146.0\" y1=\"14.0\" x2=\"146.0\" y2=\"124.0\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"168.0\" y1=\"14.0\" x2=\"168.0\" y2=\"124.0\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"190.0\" y1=\"14.0\" x2=\"190.0\" y2=\"124.0\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"212.0\" y1=\"14.0\" x2=\"212.0\" y2=\"124.0\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"234.0\" y1=\"14.0\" x2=\"234.0\" y2=\"124.0\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"256.0\" y1=\"14.0\" x2=\"256.0\" y2=\"124.0\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"278.0\" y1=\"14.0\" x2=\"278.0\" y2=\"124.0\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"300.0\" y1=\"14.0\" x2=\"300.0\" y2=\"124.0\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"322.0\" y1=\"14.0\" x2=\"322.0\" y2=\"124.0\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"344.0\" y1=\"14.0\" x2=\"344.0\" y2=\"124.0\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"366.0\" y1=\"14.0\" x2=\"366.0\" y2=\"124.0\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"14.0\" y1=\"14.0\" x2=\"366.0\" y2=\"14.0\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"14.0\" y1=\"36.0\" x2=\"366.0\" y2=\"36.0\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"14.0\" y1=\"58.0\" x2=\"366.0\" y2=\"58.0\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"14.0\" y1=\"80.0\" x2=\"366.0\" y2=\"80.0\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"14.0\" y1=\"102.0\" x2=\"366.0\" y2=\"102.0\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"14.0\" y1=\"124.0\" x2=\"366.0\" y2=\"124.0\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-linecap=\"round\"/><text x=\"47.0\" y=\"118.0\" font-size=\"13\" text-anchor=\"middle\" fill=\"#334155\" font-weight=\"600\">1</text><text x=\"157.0\" y=\"118.0\" font-size=\"13\" text-anchor=\"middle\" fill=\"#334155\" font-weight=\"600\">2</text><text x=\"311.0\" y=\"118.0\" font-size=\"13\" text-anchor=\"middle\" fill=\"#334155\" font-weight=\"600\">3</text><text x=\"190.0\" y=\"152.0\" font-size=\"13\" text-anchor=\"middle\" fill=\"#334155\">Sous chaque motif, le numéro de son étape</text></svg>",
+      "choices": [
+        {
+          "key": "a",
+          "text": "Le numéro de l'étape, plus 4.",
+          "misconception": "L'élève vérifie seulement l'étape 1 : 1 + 4 = 5. À l'étape 2, la phrase donne 6 au lieu de 8."
+        },
+        {
+          "key": "b",
+          "text": "Trois fois le numéro de l'étape, plus 2.",
+          "misconception": null
+        },
+        {
+          "key": "c",
+          "text": "Cinq fois le numéro de l'étape.",
+          "misconception": "L'élève part des 5 carreaux de l'étape 1 et croit le motif proportionnel : à l'étape 2, la phrase donne 10 au lieu de 8."
+        },
+        {
+          "key": "d",
+          "text": "Deux fois le numéro de l'étape, plus 3.",
+          "misconception": "L'élève vérifie seulement l'étape 1 : 2 × 1 + 3 = 5. À l'étape 2, la phrase donne 7 au lieu de 8."
+        }
+      ],
+      "answer": {
+        "value": "b"
+      },
+      "solution_steps": [
+        "On compte : 5, 8 et 11 carreaux.",
+        "Chaque étape a 3 rangées d'autant de carreaux que son numéro, plus 2 carreaux aux bouts, un à gauche et un à droite.",
+        "Trois fois le numéro, plus 2 : étape 1, $3 \\times 1 + 2 = 5$ ; étape 2, $3 \\times 2 + 2 = 8$ ; étape 3, $3 \\times 3 + 2 = 11$. La phrase marche pour les trois étapes.",
+        "Les phrases a, c et d ne marchent qu'à l'étape 1. Réponse **b**."
+      ],
+      "hint": "Vérifie chaque phrase à l'étape 2, pas seulement à l'étape 1.",
+      "estimated_duration_s": 120,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 3, CM2, Algèbre : « en exprimant la relation entre deux éléments consécutifs ou entre le rang d'un élément et la valeur associée »"
+    },
+    {
+      "id": "EX-F071-E-01",
+      "skill_id": "F071",
+      "level": "entrainement",
+      "type": "numerique",
+      "statement": "Voici les étapes 1, 2 et 3 d'un motif de carreaux.\n\nCombien de carreaux aura le motif à l'étape 20 ?",
+      "image": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 380 228\" width=\"380\" height=\"228\" font-family=\"system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif\" role=\"img\"><title>Quadrillage : trois motifs de carreaux coloriés, numérotés 1, 2 et 3</title><rect width=\"100%\" height=\"100%\" fill=\"#ffffff\"/><rect x=\"36\" y=\"36\" width=\"22\" height=\"22\" fill=\"#93c5fd\"/><rect x=\"36\" y=\"58\" width=\"22\" height=\"22\" fill=\"#93c5fd\"/><rect x=\"36\" y=\"80\" width=\"22\" height=\"22\" fill=\"#93c5fd\"/><rect x=\"36\" y=\"102\" width=\"22\" height=\"22\" fill=\"#93c5fd\"/><rect x=\"36\" y=\"124\" width=\"22\" height=\"22\" fill=\"#93c5fd\"/><rect x=\"36\" y=\"146\" width=\"22\" height=\"22\" fill=\"#93c5fd\"/><rect x=\"102\" y=\"36\" width=\"22\" height=\"22\" fill=\"#fde68a\"/><rect x=\"102\" y=\"58\" width=\"22\" height=\"22\" fill=\"#fde68a\"/><rect x=\"102\" y=\"80\" width=\"22\" height=\"22\" fill=\"#fde68a\"/><rect x=\"102\" y=\"102\" width=\"22\" height=\"22\" fill=\"#fde68a\"/><rect x=\"102\" y=\"124\" width=\"22\" height=\"22\" fill=\"#fde68a\"/><rect x=\"102\" y=\"146\" width=\"22\" height=\"22\" fill=\"#fde68a\"/><rect x=\"124\" y=\"80\" width=\"22\" height=\"22\" fill=\"#fde68a\"/><rect x=\"124\" y=\"102\" width=\"22\" height=\"22\" fill=\"#fde68a\"/><rect x=\"124\" y=\"124\" width=\"22\" height=\"22\" fill=\"#fde68a\"/><rect x=\"124\" y=\"146\" width=\"22\" height=\"22\" fill=\"#fde68a\"/><rect x=\"190\" y=\"36\" width=\"22\" height=\"22\" fill=\"#bbf7d0\"/><rect x=\"190\" y=\"58\" width=\"22\" height=\"22\" fill=\"#bbf7d0\"/><rect x=\"190\" y=\"80\" width=\"22\" height=\"22\" fill=\"#bbf7d0\"/><rect x=\"190\" y=\"102\" width=\"22\" height=\"22\" fill=\"#bbf7d0\"/><rect x=\"190\" y=\"124\" width=\"22\" height=\"22\" fill=\"#bbf7d0\"/><rect x=\"190\" y=\"146\" width=\"22\" height=\"22\" fill=\"#bbf7d0\"/><rect x=\"212\" y=\"80\" width=\"22\" height=\"22\" fill=\"#bbf7d0\"/><rect x=\"212\" y=\"102\" width=\"22\" height=\"22\" fill=\"#bbf7d0\"/><rect x=\"212\" y=\"124\" width=\"22\" height=\"22\" fill=\"#bbf7d0\"/><rect x=\"212\" y=\"146\" width=\"22\" height=\"22\" fill=\"#bbf7d0\"/><rect x=\"234\" y=\"80\" width=\"22\" height=\"22\" fill=\"#bbf7d0\"/><rect x=\"234\" y=\"102\" width=\"22\" height=\"22\" fill=\"#bbf7d0\"/><rect x=\"234\" y=\"124\" width=\"22\" height=\"22\" fill=\"#bbf7d0\"/><rect x=\"234\" y=\"146\" width=\"22\" height=\"22\" fill=\"#bbf7d0\"/><line x1=\"14.0\" y1=\"14.0\" x2=\"14.0\" y2=\"190.0\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"36.0\" y1=\"14.0\" x2=\"36.0\" y2=\"190.0\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"58.0\" y1=\"14.0\" x2=\"58.0\" y2=\"190.0\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"80.0\" y1=\"14.0\" x2=\"80.0\" y2=\"190.0\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"102.0\" y1=\"14.0\" x2=\"102.0\" y2=\"190.0\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"124.0\" y1=\"14.0\" x2=\"124.0\" y2=\"190.0\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"146.0\" y1=\"14.0\" x2=\"146.0\" y2=\"190.0\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"168.0\" y1=\"14.0\" x2=\"168.0\" y2=\"190.0\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"190.0\" y1=\"14.0\" x2=\"190.0\" y2=\"190.0\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"212.0\" y1=\"14.0\" x2=\"212.0\" y2=\"190.0\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"234.0\" y1=\"14.0\" x2=\"234.0\" y2=\"190.0\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"256.0\" y1=\"14.0\" x2=\"256.0\" y2=\"190.0\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"278.0\" y1=\"14.0\" x2=\"278.0\" y2=\"190.0\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"300.0\" y1=\"14.0\" x2=\"300.0\" y2=\"190.0\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"322.0\" y1=\"14.0\" x2=\"322.0\" y2=\"190.0\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"344.0\" y1=\"14.0\" x2=\"344.0\" y2=\"190.0\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"366.0\" y1=\"14.0\" x2=\"366.0\" y2=\"190.0\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"14.0\" y1=\"14.0\" x2=\"366.0\" y2=\"14.0\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"14.0\" y1=\"36.0\" x2=\"366.0\" y2=\"36.0\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"14.0\" y1=\"58.0\" x2=\"366.0\" y2=\"58.0\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"14.0\" y1=\"80.0\" x2=\"366.0\" y2=\"80.0\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"14.0\" y1=\"102.0\" x2=\"366.0\" y2=\"102.0\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"14.0\" y1=\"124.0\" x2=\"366.0\" y2=\"124.0\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"14.0\" y1=\"146.0\" x2=\"366.0\" y2=\"146.0\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"14.0\" y1=\"168.0\" x2=\"366.0\" y2=\"168.0\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"14.0\" y1=\"190.0\" x2=\"366.0\" y2=\"190.0\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-linecap=\"round\"/><text x=\"47.0\" y=\"184.0\" font-size=\"13\" text-anchor=\"middle\" fill=\"#334155\" font-weight=\"600\">1</text><text x=\"113.0\" y=\"184.0\" font-size=\"13\" text-anchor=\"middle\" fill=\"#334155\" font-weight=\"600\">2</text><text x=\"223.0\" y=\"184.0\" font-size=\"13\" text-anchor=\"middle\" fill=\"#334155\" font-weight=\"600\">3</text><text x=\"190.0\" y=\"218.0\" font-size=\"13\" text-anchor=\"middle\" fill=\"#334155\">Sous chaque motif, le numéro de son étape</text></svg>",
+      "answer": {
+        "value": 82,
+        "unit": "carreaux",
+        "accepted": [
+          "82 carreaux",
+          "82 carreau"
+        ]
+      },
+      "solution_steps": [
+        "On compte : 6, 10 et 14 carreaux. À chaque étape, on ajoute une colonne de 4 carreaux.",
+        "Les 2 carreaux du haut, à gauche, ne changent pas. Dessous, il y a autant de colonnes de 4 carreaux que le numéro de l'étape.",
+        "À l'étape 20 : $4 \\times 20 = 80$ carreaux pour les colonnes, plus les 2 du haut : $80 + 2 = 82$.",
+        "Attention : l'étape 20 n'a pas 20 fois les carreaux de l'étape 1 ($6 \\times 20 = 120$ serait faux)."
+      ],
+      "hint": "Qu'est-ce qui s'ajoute à chaque étape ? Qu'est-ce qui ne change pas ?",
+      "estimated_duration_s": 120,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 3, CM2, Algèbre : « Trouver le nombre d'éléments pour une étape donnée dans une suite de motifs évolutive »"
+    },
+    {
+      "id": "EX-F071-E-02",
+      "skill_id": "F071",
+      "level": "entrainement",
+      "type": "vrai_faux",
+      "statement": "Voici les étapes 1, 2 et 3 d'un motif de carreaux.\n\nLina dit : « À l'étape 30, il y aura 62 carreaux. » A-t-elle raison ?",
+      "image": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 380 140\" width=\"380\" height=\"140\" font-family=\"system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif\" role=\"img\"><title>Quadrillage : trois motifs de carreaux coloriés, numérotés 1, 2 et 3</title><rect width=\"100%\" height=\"100%\" fill=\"#ffffff\"/><rect x=\"36\" y=\"36\" width=\"22\" height=\"22\" fill=\"#93c5fd\"/><rect x=\"36\" y=\"58\" width=\"22\" height=\"22\" fill=\"#93c5fd\"/><rect x=\"58\" y=\"36\" width=\"22\" height=\"22\" fill=\"#93c5fd\"/><rect x=\"58\" y=\"58\" width=\"22\" height=\"22\" fill=\"#93c5fd\"/><rect x=\"124\" y=\"36\" width=\"22\" height=\"22\" fill=\"#fde68a\"/><rect x=\"124\" y=\"58\" width=\"22\" height=\"22\" fill=\"#fde68a\"/><rect x=\"146\" y=\"36\" width=\"22\" height=\"22\" fill=\"#fde68a\"/><rect x=\"146\" y=\"58\" width=\"22\" height=\"22\" fill=\"#fde68a\"/><rect x=\"168\" y=\"36\" width=\"22\" height=\"22\" fill=\"#fde68a\"/><rect x=\"168\" y=\"58\" width=\"22\" height=\"22\" fill=\"#fde68a\"/><rect x=\"234\" y=\"36\" width=\"22\" height=\"22\" fill=\"#bbf7d0\"/><rect x=\"234\" y=\"58\" width=\"22\" height=\"22\" fill=\"#bbf7d0\"/><rect x=\"256\" y=\"36\" width=\"22\" height=\"22\" fill=\"#bbf7d0\"/><rect x=\"256\" y=\"58\" width=\"22\" height=\"22\" fill=\"#bbf7d0\"/><rect x=\"278\" y=\"36\" width=\"22\" height=\"22\" fill=\"#bbf7d0\"/><rect x=\"278\" y=\"58\" width=\"22\" height=\"22\" fill=\"#bbf7d0\"/><rect x=\"300\" y=\"36\" width=\"22\" height=\"22\" fill=\"#bbf7d0\"/><rect x=\"300\" y=\"58\" width=\"22\" height=\"22\" fill=\"#bbf7d0\"/><line x1=\"14.0\" y1=\"14.0\" x2=\"14.0\" y2=\"102.0\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"36.0\" y1=\"14.0\" x2=\"36.0\" y2=\"102.0\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"58.0\" y1=\"14.0\" x2=\"58.0\" y2=\"102.0\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"80.0\" y1=\"14.0\" x2=\"80.0\" y2=\"102.0\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"102.0\" y1=\"14.0\" x2=\"102.0\" y2=\"102.0\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"124.0\" y1=\"14.0\" x2=\"124.0\" y2=\"102.0\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"146.0\" y1=\"14.0\" x2=\"146.0\" y2=\"102.0\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"168.0\" y1=\"14.0\" x2=\"168.0\" y2=\"102.0\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"190.0\" y1=\"14.0\" x2=\"190.0\" y2=\"102.0\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"212.0\" y1=\"14.0\" x2=\"212.0\" y2=\"102.0\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"234.0\" y1=\"14.0\" x2=\"234.0\" y2=\"102.0\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"256.0\" y1=\"14.0\" x2=\"256.0\" y2=\"102.0\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"278.0\" y1=\"14.0\" x2=\"278.0\" y2=\"102.0\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"300.0\" y1=\"14.0\" x2=\"300.0\" y2=\"102.0\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"322.0\" y1=\"14.0\" x2=\"322.0\" y2=\"102.0\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"344.0\" y1=\"14.0\" x2=\"344.0\" y2=\"102.0\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"366.0\" y1=\"14.0\" x2=\"366.0\" y2=\"102.0\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"14.0\" y1=\"14.0\" x2=\"366.0\" y2=\"14.0\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"14.0\" y1=\"36.0\" x2=\"366.0\" y2=\"36.0\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"14.0\" y1=\"58.0\" x2=\"366.0\" y2=\"58.0\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"14.0\" y1=\"80.0\" x2=\"366.0\" y2=\"80.0\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"14.0\" y1=\"102.0\" x2=\"366.0\" y2=\"102.0\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-linecap=\"round\"/><text x=\"47.0\" y=\"96.0\" font-size=\"13\" text-anchor=\"middle\" fill=\"#334155\" font-weight=\"600\">1</text><text x=\"157.0\" y=\"96.0\" font-size=\"13\" text-anchor=\"middle\" fill=\"#334155\" font-weight=\"600\">2</text><text x=\"267.0\" y=\"96.0\" font-size=\"13\" text-anchor=\"middle\" fill=\"#334155\" font-weight=\"600\">3</text><text x=\"190.0\" y=\"130.0\" font-size=\"13\" text-anchor=\"middle\" fill=\"#334155\">Sous chaque motif, le numéro de son étape</text></svg>",
+      "answer": {
+        "value": true
+      },
+      "solution_steps": [
+        "On compte : 4, 6 et 8 carreaux. Chaque étape a 2 rangées, et chaque rangée a un carreau de plus que le numéro de l'étape.",
+        "À l'étape 30 : 2 rangées de 31 carreaux, soit $31 + 31 = 62$ carreaux. Lina a **raison**.",
+        "Un piège à éviter : l'étape 3 a 8 carreaux, mais l'étape 30 n'en a pas 10 fois plus ($8 \\times 10 = 80$), car le carreau de plus de chaque rangée ne se multiplie pas."
+      ],
+      "hint": "Combien de carreaux dans chaque rangée à l'étape 30 ?",
+      "estimated_duration_s": 90,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 3, CM2, Algèbre : « Trouver le nombre d'éléments pour une étape donnée dans une suite de motifs évolutive »"
+    },
+    {
+      "id": "EX-F071-M-01",
+      "skill_id": "F071",
+      "level": "maitrise",
+      "type": "numerique",
+      "statement": "Voici les étapes 1, 2 et 3 d'une échelle de carreaux.\n\nÀ quelle étape l'échelle aura-t-elle 102 carreaux ?",
+      "image": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 380 250\" width=\"380\" height=\"250\" font-family=\"system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif\" role=\"img\"><title>Quadrillage : trois motifs de carreaux coloriés, numérotés 1, 2 et 3</title><rect width=\"100%\" height=\"100%\" fill=\"#ffffff\"/><rect x=\"36\" y=\"124\" width=\"22\" height=\"22\" fill=\"#93c5fd\"/><rect x=\"36\" y=\"146\" width=\"22\" height=\"22\" fill=\"#93c5fd\"/><rect x=\"36\" y=\"168\" width=\"22\" height=\"22\" fill=\"#93c5fd\"/><rect x=\"58\" y=\"146\" width=\"22\" height=\"22\" fill=\"#93c5fd\"/><rect x=\"80\" y=\"124\" width=\"22\" height=\"22\" fill=\"#93c5fd\"/><rect x=\"80\" y=\"146\" width=\"22\" height=\"22\" fill=\"#93c5fd\"/><rect x=\"80\" y=\"168\" width=\"22\" height=\"22\" fill=\"#93c5fd\"/><rect x=\"146\" y=\"80\" width=\"22\" height=\"22\" fill=\"#fde68a\"/><rect x=\"146\" y=\"102\" width=\"22\" height=\"22\" fill=\"#fde68a\"/><rect x=\"146\" y=\"124\" width=\"22\" height=\"22\" fill=\"#fde68a\"/><rect x=\"146\" y=\"146\" width=\"22\" height=\"22\" fill=\"#fde68a\"/><rect x=\"146\" y=\"168\" width=\"22\" height=\"22\" fill=\"#fde68a\"/><rect x=\"168\" y=\"102\" width=\"22\" height=\"22\" fill=\"#fde68a\"/><rect x=\"168\" y=\"146\" width=\"22\" height=\"22\" fill=\"#fde68a\"/><rect x=\"190\" y=\"80\" width=\"22\" height=\"22\" fill=\"#fde68a\"/><rect x=\"190\" y=\"102\" width=\"22\" height=\"22\" fill=\"#fde68a\"/><rect x=\"190\" y=\"124\" width=\"22\" height=\"22\" fill=\"#fde68a\"/><rect x=\"190\" y=\"146\" width=\"22\" height=\"22\" fill=\"#fde68a\"/><rect x=\"190\" y=\"168\" width=\"22\" height=\"22\" fill=\"#fde68a\"/><rect x=\"256\" y=\"36\" width=\"22\" height=\"22\" fill=\"#bbf7d0\"/><rect x=\"256\" y=\"58\" width=\"22\" height=\"22\" fill=\"#bbf7d0\"/><rect x=\"256\" y=\"80\" width=\"22\" height=\"22\" fill=\"#bbf7d0\"/><rect x=\"256\" y=\"102\" width=\"22\" height=\"22\" fill=\"#bbf7d0\"/><rect x=\"256\" y=\"124\" width=\"22\" height=\"22\" fill=\"#bbf7d0\"/><rect x=\"256\" y=\"146\" width=\"22\" height=\"22\" fill=\"#bbf7d0\"/><rect x=\"256\" y=\"168\" width=\"22\" height=\"22\" fill=\"#bbf7d0\"/><rect x=\"278\" y=\"58\" width=\"22\" height=\"22\" fill=\"#bbf7d0\"/><rect x=\"278\" y=\"102\" width=\"22\" height=\"22\" fill=\"#bbf7d0\"/><rect x=\"278\" y=\"146\" width=\"22\" height=\"22\" fill=\"#bbf7d0\"/><rect x=\"300\" y=\"36\" width=\"22\" height=\"22\" fill=\"#bbf7d0\"/><rect x=\"300\" y=\"58\" width=\"22\" height=\"22\" fill=\"#bbf7d0\"/><rect x=\"300\" y=\"80\" width=\"22\" height=\"22\" fill=\"#bbf7d0\"/><rect x=\"300\" y=\"102\" width=\"22\" height=\"22\" fill=\"#bbf7d0\"/><rect x=\"300\" y=\"124\" width=\"22\" height=\"22\" fill=\"#bbf7d0\"/><rect x=\"300\" y=\"146\" width=\"22\" height=\"22\" fill=\"#bbf7d0\"/><rect x=\"300\" y=\"168\" width=\"22\" height=\"22\" fill=\"#bbf7d0\"/><line x1=\"14.0\" y1=\"14.0\" x2=\"14.0\" y2=\"212.0\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"36.0\" y1=\"14.0\" x2=\"36.0\" y2=\"212.0\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"58.0\" y1=\"14.0\" x2=\"58.0\" y2=\"212.0\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"80.0\" y1=\"14.0\" x2=\"80.0\" y2=\"212.0\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"102.0\" y1=\"14.0\" x2=\"102.0\" y2=\"212.0\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"124.0\" y1=\"14.0\" x2=\"124.0\" y2=\"212.0\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"146.0\" y1=\"14.0\" x2=\"146.0\" y2=\"212.0\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"168.0\" y1=\"14.0\" x2=\"168.0\" y2=\"212.0\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"190.0\" y1=\"14.0\" x2=\"190.0\" y2=\"212.0\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"212.0\" y1=\"14.0\" x2=\"212.0\" y2=\"212.0\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"234.0\" y1=\"14.0\" x2=\"234.0\" y2=\"212.0\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"256.0\" y1=\"14.0\" x2=\"256.0\" y2=\"212.0\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"278.0\" y1=\"14.0\" x2=\"278.0\" y2=\"212.0\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"300.0\" y1=\"14.0\" x2=\"300.0\" y2=\"212.0\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"322.0\" y1=\"14.0\" x2=\"322.0\" y2=\"212.0\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"344.0\" y1=\"14.0\" x2=\"344.0\" y2=\"212.0\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"366.0\" y1=\"14.0\" x2=\"366.0\" y2=\"212.0\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"14.0\" y1=\"14.0\" x2=\"366.0\" y2=\"14.0\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"14.0\" y1=\"36.0\" x2=\"366.0\" y2=\"36.0\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"14.0\" y1=\"58.0\" x2=\"366.0\" y2=\"58.0\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"14.0\" y1=\"80.0\" x2=\"366.0\" y2=\"80.0\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"14.0\" y1=\"102.0\" x2=\"366.0\" y2=\"102.0\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"14.0\" y1=\"124.0\" x2=\"366.0\" y2=\"124.0\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"14.0\" y1=\"146.0\" x2=\"366.0\" y2=\"146.0\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"14.0\" y1=\"168.0\" x2=\"366.0\" y2=\"168.0\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"14.0\" y1=\"190.0\" x2=\"366.0\" y2=\"190.0\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"14.0\" y1=\"212.0\" x2=\"366.0\" y2=\"212.0\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-linecap=\"round\"/><text x=\"69.0\" y=\"206.0\" font-size=\"13\" text-anchor=\"middle\" fill=\"#334155\" font-weight=\"600\">1</text><text x=\"179.0\" y=\"206.0\" font-size=\"13\" text-anchor=\"middle\" fill=\"#334155\" font-weight=\"600\">2</text><text x=\"289.0\" y=\"206.0\" font-size=\"13\" text-anchor=\"middle\" fill=\"#334155\" font-weight=\"600\">3</text><text x=\"190.0\" y=\"240.0\" font-size=\"13\" text-anchor=\"middle\" fill=\"#334155\">Sous chaque motif, le numéro de son étape</text></svg>",
+      "answer": {
+        "value": 20,
+        "accepted": [
+          "étape 20",
+          "l'étape 20",
+          "à l'étape 20",
+          "20e",
+          "20e étape",
+          "la 20e",
+          "la 20e étape",
+          "à la 20e étape",
+          "20ème",
+          "20ème étape",
+          "la 20ème étape",
+          "à la 20ème étape"
+        ]
+      },
+      "solution_steps": [
+        "On compte : 7, 12 et 17 carreaux. À chaque étape, on ajoute 5 carreaux : 2 en haut de chaque montant et un barreau.",
+        "Les 2 carreaux du bas des montants sont là dès le départ : chaque étape compte 5 carreaux par numéro, plus 2. Étape 1 : $5 \\times 1 + 2 = 7$ ; étape 3 : $5 \\times 3 + 2 = 17$.",
+        "Pour 102 carreaux : on enlève les 2 du départ, $102 - 2 = 100$, puis on cherche combien de fois 5 font 100 : $5 \\times 20 = 100$, donc $100 \\div 5 = 20$.",
+        "C'est l'étape **20**. Vérification : $5 \\times 20 + 2 = 102$."
+      ],
+      "hint": "Combien de carreaux s'ajoutent à chaque étape ? Combien y en a-t-il en plus au départ ?",
+      "estimated_duration_s": 150,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 3, CM2, Algèbre : « Trouver le nombre d'éléments pour une étape donnée dans une suite de motifs évolutive »"
+    },
+    {
+      "id": "EX-F071-M-02",
+      "skill_id": "F071",
+      "level": "maitrise",
+      "type": "qcm",
+      "statement": "Voici les étapes 1, 2 et 3 d'un cadre de carreaux.\n\nCombien de carreaux aura le cadre à l'étape 30 ?",
+      "image": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 380 206\" width=\"380\" height=\"206\" font-family=\"system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif\" role=\"img\"><title>Quadrillage : trois motifs de carreaux coloriés, numérotés 1, 2 et 3</title><rect width=\"100%\" height=\"100%\" fill=\"#ffffff\"/><rect x=\"14\" y=\"80\" width=\"22\" height=\"22\" fill=\"#93c5fd\"/><rect x=\"14\" y=\"102\" width=\"22\" height=\"22\" fill=\"#93c5fd\"/><rect x=\"14\" y=\"124\" width=\"22\" height=\"22\" fill=\"#93c5fd\"/><rect x=\"36\" y=\"80\" width=\"22\" height=\"22\" fill=\"#93c5fd\"/><rect x=\"36\" y=\"124\" width=\"22\" height=\"22\" fill=\"#93c5fd\"/><rect x=\"58\" y=\"80\" width=\"22\" height=\"22\" fill=\"#93c5fd\"/><rect x=\"58\" y=\"102\" width=\"22\" height=\"22\" fill=\"#93c5fd\"/><rect x=\"58\" y=\"124\" width=\"22\" height=\"22\" fill=\"#93c5fd\"/><rect x=\"124\" y=\"58\" width=\"22\" height=\"22\" fill=\"#fde68a\"/><rect x=\"124\" y=\"80\" width=\"22\" height=\"22\" fill=\"#fde68a\"/><rect x=\"124\" y=\"102\" width=\"22\" height=\"22\" fill=\"#fde68a\"/><rect x=\"124\" y=\"124\" width=\"22\" height=\"22\" fill=\"#fde68a\"/><rect x=\"146\" y=\"58\" width=\"22\" height=\"22\" fill=\"#fde68a\"/><rect x=\"146\" y=\"124\" width=\"22\" height=\"22\" fill=\"#fde68a\"/><rect x=\"168\" y=\"58\" width=\"22\" height=\"22\" fill=\"#fde68a\"/><rect x=\"168\" y=\"124\" width=\"22\" height=\"22\" fill=\"#fde68a\"/><rect x=\"190\" y=\"58\" width=\"22\" height=\"22\" fill=\"#fde68a\"/><rect x=\"190\" y=\"80\" width=\"22\" height=\"22\" fill=\"#fde68a\"/><rect x=\"190\" y=\"102\" width=\"22\" height=\"22\" fill=\"#fde68a\"/><rect x=\"190\" y=\"124\" width=\"22\" height=\"22\" fill=\"#fde68a\"/><rect x=\"256\" y=\"36\" width=\"22\" height=\"22\" fill=\"#bbf7d0\"/><rect x=\"256\" y=\"58\" width=\"22\" height=\"22\" fill=\"#bbf7d0\"/><rect x=\"256\" y=\"80\" width=\"22\" height=\"22\" fill=\"#bbf7d0\"/><rect x=\"256\" y=\"102\" width=\"22\" height=\"22\" fill=\"#bbf7d0\"/><rect x=\"256\" y=\"124\" width=\"22\" height=\"22\" fill=\"#bbf7d0\"/><rect x=\"278\" y=\"36\" width=\"22\" height=\"22\" fill=\"#bbf7d0\"/><rect x=\"278\" y=\"124\" width=\"22\" height=\"22\" fill=\"#bbf7d0\"/><rect x=\"300\" y=\"36\" width=\"22\" height=\"22\" fill=\"#bbf7d0\"/><rect x=\"300\" y=\"124\" width=\"22\" height=\"22\" fill=\"#bbf7d0\"/><rect x=\"322\" y=\"36\" width=\"22\" height=\"22\" fill=\"#bbf7d0\"/><rect x=\"322\" y=\"124\" width=\"22\" height=\"22\" fill=\"#bbf7d0\"/><rect x=\"344\" y=\"36\" width=\"22\" height=\"22\" fill=\"#bbf7d0\"/><rect x=\"344\" y=\"58\" width=\"22\" height=\"22\" fill=\"#bbf7d0\"/><rect x=\"344\" y=\"80\" width=\"22\" height=\"22\" fill=\"#bbf7d0\"/><rect x=\"344\" y=\"102\" width=\"22\" height=\"22\" fill=\"#bbf7d0\"/><rect x=\"344\" y=\"124\" width=\"22\" height=\"22\" fill=\"#bbf7d0\"/><line x1=\"14.0\" y1=\"14.0\" x2=\"14.0\" y2=\"168.0\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"36.0\" y1=\"14.0\" x2=\"36.0\" y2=\"168.0\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"58.0\" y1=\"14.0\" x2=\"58.0\" y2=\"168.0\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"80.0\" y1=\"14.0\" x2=\"80.0\" y2=\"168.0\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"102.0\" y1=\"14.0\" x2=\"102.0\" y2=\"168.0\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"124.0\" y1=\"14.0\" x2=\"124.0\" y2=\"168.0\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"146.0\" y1=\"14.0\" x2=\"146.0\" y2=\"168.0\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"168.0\" y1=\"14.0\" x2=\"168.0\" y2=\"168.0\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"190.0\" y1=\"14.0\" x2=\"190.0\" y2=\"168.0\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"212.0\" y1=\"14.0\" x2=\"212.0\" y2=\"168.0\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"234.0\" y1=\"14.0\" x2=\"234.0\" y2=\"168.0\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"256.0\" y1=\"14.0\" x2=\"256.0\" y2=\"168.0\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"278.0\" y1=\"14.0\" x2=\"278.0\" y2=\"168.0\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"300.0\" y1=\"14.0\" x2=\"300.0\" y2=\"168.0\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"322.0\" y1=\"14.0\" x2=\"322.0\" y2=\"168.0\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"344.0\" y1=\"14.0\" x2=\"344.0\" y2=\"168.0\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"366.0\" y1=\"14.0\" x2=\"366.0\" y2=\"168.0\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"14.0\" y1=\"14.0\" x2=\"366.0\" y2=\"14.0\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"14.0\" y1=\"36.0\" x2=\"366.0\" y2=\"36.0\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"14.0\" y1=\"58.0\" x2=\"366.0\" y2=\"58.0\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"14.0\" y1=\"80.0\" x2=\"366.0\" y2=\"80.0\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"14.0\" y1=\"102.0\" x2=\"366.0\" y2=\"102.0\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"14.0\" y1=\"124.0\" x2=\"366.0\" y2=\"124.0\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"14.0\" y1=\"146.0\" x2=\"366.0\" y2=\"146.0\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"14.0\" y1=\"168.0\" x2=\"366.0\" y2=\"168.0\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-linecap=\"round\"/><text x=\"47.0\" y=\"162.0\" font-size=\"13\" text-anchor=\"middle\" fill=\"#334155\" font-weight=\"600\">1</text><text x=\"157.0\" y=\"162.0\" font-size=\"13\" text-anchor=\"middle\" fill=\"#334155\" font-weight=\"600\">2</text><text x=\"311.0\" y=\"162.0\" font-size=\"13\" text-anchor=\"middle\" fill=\"#334155\" font-weight=\"600\">3</text><text x=\"190.0\" y=\"196.0\" font-size=\"13\" text-anchor=\"middle\" fill=\"#334155\">Sous chaque motif, le numéro de son étape</text></svg>",
+      "choices": [
+        {
+          "key": "a",
+          "text": "160",
+          "misconception": "L'élève croit le motif proportionnel : l'étape 3 a 16 carreaux, il multiplie par 10 pour l'étape 30. Mais les 4 coins ne se multiplient pas."
+        },
+        {
+          "key": "b",
+          "text": "120",
+          "misconception": "L'élève voit qu'on ajoute 4 carreaux par étape et calcule 4 × 30, mais il oublie les 4 coins."
+        },
+        {
+          "key": "c",
+          "text": "128",
+          "misconception": "L'élève part des 8 carreaux de l'étape 1 et ajoute 4 carreaux 30 fois au lieu de 29 : il compte un passage de trop (8 + 120 = 128)."
+        },
+        {
+          "key": "d",
+          "text": "124",
+          "misconception": null
+        }
+      ],
+      "answer": {
+        "value": "d"
+      },
+      "solution_steps": [
+        "On compte : 8, 12 et 16 carreaux. On ajoute 4 carreaux à chaque étape.",
+        "Chaque cadre a 4 coins, et sur chacun de ses 4 côtés, entre les coins, autant de carreaux que le numéro de l'étape.",
+        "À l'étape 30 : $4 \\times 30 = 120$ carreaux sur les côtés, plus les 4 coins : $120 + 4 = 124$. Réponse **d**."
+      ],
+      "hint": "Sépare les coins du reste du cadre.",
+      "estimated_duration_s": 150,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 3, CM2, Algèbre : « Trouver le nombre d'éléments pour une étape donnée dans une suite de motifs évolutive »"
     },
     {
       "id": "EX-G001-D-01",
