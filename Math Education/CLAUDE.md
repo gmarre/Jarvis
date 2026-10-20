@@ -19,25 +19,26 @@ Application web d'apprentissage adaptatif des mathématiques, CP à Terminale à
 
 ---
 
-## 2. État au 20 octobre 2026
+## 2. État au 21 octobre 2026
 
-### 2.1 Contenu (étape 6 fusionnée le 20 octobre 2026)
+### 2.1 Contenu (étape 7 fusionnée et publiée le 21 octobre 2026)
 
-**196 compétences, 1 192 exercices (dont 285 avec figure), 42 cartes mentales, 1 074 cartes défi, 193 super exercices**, tous en `relu_agent` (relus par agents), en attente de la recette de Marius.
+**227 compétences, 1 342 exercices (dont 290 avec figure), 42 cartes mentales, 1 074 cartes défi, 193 super exercices**, tous en `relu_agent` (relus par agents), en attente de la recette de Marius. En cours : cartes mentales de l'étape 7 (MM-B-08, MM-F-01 à 06), exercices du complément cycle 3 (B056 à B058, F069 à F071), puis cartes défi et super exercices des 31 nouvelles compétences.
 
 | Domaine | Compétences | Classes couvertes |
 |---|---|---|
 | A Numération | 40 | CP à 3e (relatifs, repère, arithmétique, puissances, racine carrée, notation scientifique) |
-| B Calcul | 35 | CP à 3e (opérations sur les relatifs, priorités, calcul avec des puissances) |
+| B Calcul | 40 | CP à 3e (opérations sur les relatifs, priorités, calcul avec des puissances, programme de calcul, distributivité) |
 | C Fractions | 27 | CE1 à 4e (cycle 4 complet : opérations, inverse, quotient, problèmes) |
 | D Décimaux | 20 | CE1 à 5e (division par un décimal) |
 | E Proportionnalité, pourcentages | 17 | CM1 à 5e |
+| F Algèbre | 26 | CM1 à 3e (pensée algébrique du cycle 3, calcul littéral, équations, inéquations) |
 | G Espace et géométrie | 30 | CP à 6e |
 | P Grandeurs et mesures | 27 | CP à 6e |
 
 **Constat :** le **cycle 3 (CM1 à 6e) et le cycle 2 sont couverts ; le cycle 4 (5e, 4e, 3e) avance** (étape 5 : relatifs et arithmétique ; étape 6 : fractions, puissances, racine carrée, notation scientifique). Plan pour aller au bout de la 3e : §7.
 
-Étapes faites (bilans détaillés dans `Spécifications DAG, Exos, Mindcards/QUALITY.md`) : tranche pilote A et C ; 1 calcul ; 2 décimaux ; 3 proportionnalité ; 4a grandeurs et mesures ; figures (reprise de 30 exercices) ; 4b géométrie ; 5 relatifs et arithmétique (5e à 3e) ; 6 fractions du cycle 4, puissances, racine carrée, notation scientifique (5e à 3e).
+Étapes faites (bilans détaillés dans `Spécifications DAG, Exos, Mindcards/QUALITY.md`) : tranche pilote A et C ; 1 calcul ; 2 décimaux ; 3 proportionnalité ; 4a grandeurs et mesures ; figures (reprise de 30 exercices) ; 4b géométrie ; 5 relatifs et arithmétique (5e à 3e) ; 6 fractions du cycle 4, puissances, racine carrée, notation scientifique (5e à 3e) ; 7 calcul littéral, équations, inéquations (5e à 3e, exercices). DAG seul pour l'instant : 7 bis, pensée algébrique du cycle 3 (6 compétences).
 
 Restes connus sur le contenu :
 - tranche pilote **complétée le 20 octobre 2026** : plus aucune compétence sous 6 exercices (bilan dans `QUALITY.md`) ; EX-C030-D-01, E-03, M-02 demandent encore une fraction en `numerique` (à passer en `texte`) ;
@@ -80,6 +81,7 @@ Ce qui est faux ou absent aujourd'hui (repris dans le backlog §6) :
 - Le fichier Google `client_secret_*.json` n'est jamais commité.
 - **Migrations : jamais par l'outil MCP `apply_migration` (refusé par Gauthier).** Créer le fichier numéroté suivant dans `supabase/migrations/` (rejouable : `if not exists`, `create or replace`, `drop policy if exists`), puis Gauthier le colle dans le SQL Editor. Ne jamais modifier une migration déjà appliquée (dernière appliquée : 0016, le 20 octobre 2026).
 - Les outils MCP Supabase `deploy_edge_function`, `get_edge_function` et `execute_sql` en lecture sont acceptés.
+- **Migration 0017 écrite, à appliquer par Gauthier**, puis `supabase/cron/rappels.sql` (secret `CRON_SECRET` à créer, mode d'emploi en tête du fichier). Tant que 0017 n'est pas appliquée, la carte « Mon rythme » de `/profil` échoue à l'enregistrement (bandeau d'erreur).
 - Ne pas contourner un refus du classifieur de sécurité.
 
 **Avant chaque commit :** `cd Math_Edu_Application && npm test && npm run lint && npm run build` (lint à zéro avertissement). Après une migration : **`npm run test:sql`** (PGlite, Postgres en WebAssembly, sans Docker : Gauthier ne veut pas de Docker Desktop). `supabase/tests/run.sh` reste pour qui a Docker.
@@ -125,7 +127,7 @@ Ce qui est faux ou absent aujourd'hui (repris dans le backlog §6) :
   - Le générateur refuse une figure qui trompe l'œil : angle codé droit qui ne l'est pas, angle presque droit, points presque alignés, longueurs codées égales qui ne le sont pas.
   - L'app affiche la figure en `<img>` data URI, donc aucun script ne peut s'exécuter.
 
-### 4.2 Base (`supabase/migrations/0001` à `0016`, chaque fichier explique son objet)
+### 4.2 Base (`supabase/migrations/0001` à `0017`, chaque fichier explique son objet)
 
 **Tables :**
 - `profiles` (rôle, niveau, email parent, consentement, préférences) ;
@@ -140,7 +142,7 @@ Ce qui est faux ou absent aujourd'hui (repris dans le backlog §6) :
 
 **Colonnes protégées du client** (trigger) : `role` (choisi une seule fois, `role_choisi_le`, 0010), `consentement_parental_at`, `email`, `cree_le`, `abonnement` ; pour un mineur, `date_naissance` (0011). Un changement de parent ou une date sous 15 ans remet le consentement à zéro.
 
-**Edge Functions :** `corriger` (`verify_jwt: true`, version 12 : questions de super exercices `SX-…#qN`, lecture des expressions algébriques (`answer.forme`), signe moins typographique, °C, « +8 °C », « 7,7° » pour des °C, puissances et notation scientifique reconnues sans calcul, fractions relatives, « ÷ », « fois », « cm^2 », « n = 13 », écritures du signe d'une fraction sans réduction ni double signe, tolérance incluse, espaces de milliers au corrigé) ; `accord-parental` (`verify_jwt: false`, le parent n'a pas de compte ; secrets `RESEND_API_KEY`, `RESEND_FROM`, `APP_URL`).
+**Edge Functions :** `rappel-revision` (`verify_jwt: false`, version 1 : rappels de travail par email, migration 0017 ; secrets `RESEND_*`, `APP_URL`, `CRON_SECRET`) ; `corriger` (`verify_jwt: true`, version 13 : formes réduite, développée, factorisée complète, équation (« x = 7 » refusé), inégalité (« => »), solutions (« S = {…} »), crochets, « P = 6x », unité après une expression ; questions de super exercices `SX-…#qN`, lecture des expressions algébriques (`answer.forme`), signe moins typographique, °C, « +8 °C », « 7,7° » pour des °C, puissances et notation scientifique reconnues sans calcul, fractions relatives, « ÷ », « fois », « cm^2 », « n = 13 », écritures du signe d'une fraction sans réduction ni double signe, tolérance incluse, espaces de milliers au corrigé) ; `accord-parental` (`verify_jwt: false`, le parent n'a pas de compte ; secrets `RESEND_API_KEY`, `RESEND_FROM`, `APP_URL`).
 
 **Fonctions d'autorisation** en `security definer`, pour éviter la récursion RLS : `peut_lire_eleve`, `est_prof_de`, `est_parent_de`, `role_actuel`, `nb_places_prises`. Aucune n'est appelable par `anon`.
 
@@ -273,7 +275,7 @@ Décisions prises en route : la page publique du parent est `/accord/:jeton` (co
 - aussi : bouton « ± » sur la saisie numérique à partir de la 5e (le pavé de l'iPhone n'a pas de signe moins) ;
 - **point 4 (cartes défi), code fait le 20 octobre 2026** : contenu `content/flashcards/` (schéma `flashcards.schema.json`, `scripts/merge_defis.py`, consigne `modeles_agents/consigne_defis.md`), migration **0014** (`content_flashcards`, `flashcard_progress`, publication), écran `/defi/:skillId` (recto, retourner, « je savais » ou non), révision espacée par carte J+1, J+3, J+7, J+14, J+30 (`lib/defis.ts`), cartes dues dans « À réviser ». **Contenu fait le 20 octobre 2026 : 1 074 cartes défi pour les 196 compétences**, relues et contre-relues (bilan dans `QUALITY.md`), publiées le 20 octobre 2026 ;
 - **point 7 (super exercices), code fait le 20 octobre 2026** : contenu `content/super/` (schéma `super.schema.json`, `scripts/merge_super.py`, consigne `modeles_agents/consigne_super.md`), migration **0016** (`content_super` lisible, `content_super_keys` serveur seulement, `super_attempts`), correction d'une question `SX-…#q2` par `corriger`, page d'examen `/super/:id` (énoncé visible, copie rendue d'un bloc, réussite à 70 % des points), proposé une fois la compétence acquise. **Règle du super exercice (décision de Gauthier du 20 octobre 2026, codée le 21 octobre, `lib/maitrise.ts` : `apresEpreuve`, `attendEpreuve`, `viseSansFaute`) : il fait passer au niveau 4, le sans-faute compte pour le 5 ; un super exercice raté ne fait rien redescendre ; compétences sans super exercice (A001, G001, G004) : table d'origine ; progressions déjà au niveau 4 : gardées.** **Contenu fait le 20 octobre 2026 : 193 super exercices, un par compétence** (sauf A001, G001 et G004, sans prérequis), 46 figures, relus par lot (bilan dans `QUALITY.md`), publiés le 20 octobre 2026 ;
-- **point 8 (engagement), fait le 20 octobre 2026** : note `Management de Projet/Etude_engagement.md` (28 sources) ; faits : série qui pardonne un jour manqué et « N jours sur les 7 derniers », bilan avec le niveau avant et après, fin de journée qui invite à s'arrêter, interrupteurs de rappels et de résumé masqués tant qu'ils n'envoient rien, rappels désactivés par défaut (migration **0015**). Restent, à arbitrer (§8) : rythme choisi par l'élève (2 à 5 jours) et rappel par email au parent ;
+- **point 8 (engagement), fait le 20 octobre 2026** : note `Management de Projet/Etude_engagement.md` (28 sources) ; faits : série qui pardonne un jour manqué et « N jours sur les 7 derniers », bilan avec le niveau avant et après, fin de journée qui invite à s'arrêter, interrupteurs de rappels et de résumé masqués tant qu'ils n'envoient rien, rappels désactivés par défaut (migration **0015**). **Fait le 21 octobre 2026 (décision de Gauthier du 20) : rythme choisi par l'élève** (carte « Mon rythme » de `/profil`, « N séances sur 3 cette semaine » dans `/travail`) **et rappels par email** (fonction `rappel-revision`, migration 0017, Cron `supabase/cron/rappels.sql`, page `/rappels/:jeton` du parent ; avant 15 ans le parent accepte, ensuite l'élève active lui-même ; 1 par jour, 3 par semaine, arrêt après 2 sans effet) ;
 - limite connue : un élève très en retard voit des chemins très longs (jusqu'à 90 compétences) ; n'afficher que les prochaines étapes.
 
 **Table de maîtrise validée par Gauthier le 20 octobre 2026 :**
@@ -330,7 +332,7 @@ Décisions prises en route : la page publique du parent est `/accord/:jeton` (co
    - **Garde-fou :** pas de mécanique manipulatrice sur des mineurs (pas de perte punitive, pas de notifications nocturnes), conformément aux recommandations CNIL pour les mineurs.
    - Rappels : emails d'abord, notifications PWA ensuite.
 
-**Contenu, étape 7 (calcul littéral, domaine F)** : cartographe fait le 20 octobre 2026 (25 compétences : B054, B055, F002, F003, F006, F010, F012 à F014, F020 à F025, F027, F031, F061 à F068 ; `_travail/etape7_dag_F.*`) ; **7 points à arbitrer par Gauthier** (§8). La correction des expressions (S1 à S5 du cartographe) est faite : `answer.forme` (`expression`, `reduite`, `developpee`, `factorisee`, `meme_calcul`, `equation`, `inegalite`, `solutions`), 29 tests dans `src/lib/algebre.test.ts` ; déployée dans `corriger` (version 11).
+**Contenu, étape 7 (calcul littéral, domaine F)** : DAG fusionné le 20 octobre 2026 (25 compétences : B054, B055, F002, F003, F006, F010, F012 à F014, F020 à F025, F027, F031, F061 à F068) ; **150 exercices rédigés, relus, corrigés, fusionnés et publiés le 21 octobre 2026** (6 lots, consigne `_travail/brief_etape7.md`, relecture `_travail/brief_relecture_etape7.md`) ; liens ajoutés en relecture : B054 ← D004, B055 ← B007 (B055 ← B041 retiré). Complément cycle 3 (étape 7 bis) : B056, B057, B058, F069, F070, F071, liens B055 ← B056, B054 ← B058, F003 ← F071, F023 ← F069. Restent : cartes mentales (en rédaction), exercices du cycle 3 (en rédaction), cartes défi et super exercices des 31 compétences. La correction des expressions (S1 à S5 du cartographe) est faite : `answer.forme` (`expression`, `reduite`, `developpee`, `factorisee`, `meme_calcul`, `equation`, `inegalite`, `solutions`), 29 tests dans `src/lib/algebre.test.ts` ; déployée dans `corriger` (version 11).
 
 **Contenu :** **étape 6 du §7 fusionnée et publiée le 20 octobre 2026** : 26 compétences, 156 exercices, 7 cartes, tous relus et contre-relus par agents (bilan dans `QUALITY.md`). Liens ajoutés en relecture : A034 ← B049 (et A032 ← A031 seul). A025 réécrite avec les puissances. A038 n'est plus en évaluation partielle (la notation scientifique se tape) ; seule C035 l'est encore. Prochaine étape de contenu : 7 (calcul littéral, domaine F).
 
@@ -477,6 +479,9 @@ Toute nouvelle lettre exige une migration qui élargit les contraintes `A-P`, et
 6. Migrations 0014 à 0016 appliquées, contenu publié : un défi (`/defi/<compétence>`), retourner, « je savais » ou non, la carte revient le lendemain dans « À réviser » ; un super exercice (`/super/<id>`) rendu, score et corrigés, passage enregistré ; en relire quelques-uns avec figure sur téléphone (G011, G021, C034).
 7. Correction algébrique en ligne (`corriger` version 12) : « 5 + 3x » accepté pour 3x + 5 quand la forme est réduite, « (x+3)(x-3) » pour une factorisation, « x >= -4 », « ±7 ».
 8. Écrans d'engagement : série qui pardonne, bilan « niveau 2 → 4 », fin de journée.
+9. Règle du super exercice : une compétence aux exercices réussis reste à 3, le super exercice réussi la passe à 4 (bilan de /super), le bouton du panneau de /parcours change de libellé ; un super exercice sans faute après les contrôles donne 5.
+10. Rythme et rappels (après la migration 0017 et le Cron) : choisir 3 jours dans /profil, voir « N séances sur 3 » dans /travail ; compte de moins de 15 ans : « Demander à mon parent », email reçu, /rappels/:jeton accepte puis « Ne plus recevoir » ; compte de 15 ans et plus : activation directe, rappel reçu un jour choisi sans séance.
+11. Étape 7 sur un vrai compte : saisir « 5 + 3x », « (x+3)(x-3) », « P = 6x », « S = {-4 ; 2} » dans les exercices F, au téléphone compris.
 
 **Réponses du 20 octobre 2026 (soir)** :
 - **Étape 7 : Gauthier délègue** (« suivre tes propres recommandations, prendre les initiatives, consigner tous les choix »). Choix du chef de projet, le 20 octobre 2026 :
