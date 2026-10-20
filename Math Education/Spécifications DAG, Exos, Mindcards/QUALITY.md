@@ -1005,7 +1005,7 @@ résultat des tables jusqu'à 10).
 
 ### Ce que les cartes ont appris
 
-1. **Les cartes mentales cachaient des notions hors chaîne.** Sept prérequis
+1. **Les cartes mentales cachaient des notions hors chaîne.** Six prérequis
    ajoutés au DAG, que les cartes mentales, des exercices ou des descriptions
    employaient déjà : C010 ← C027, C029 ← A012, G022 ← A012, G008 ← B036,
    E034 ← E006, A006 ← A008. La consigne dit maintenant qu'une notion prise dans

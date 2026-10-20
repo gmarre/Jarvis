@@ -63,6 +63,15 @@ Toutes celles de la consigne des rédacteurs d'exercices s'appliquent : `Spécif
 4. **Énoncé autonome et réaliste** : des grandeurs vraisemblables, et des unités partout.
 5. **Pas de reprise d'un exercice ni d'un test de validation** des compétences mobilisées : aucun couple de données ne doit être repris.
 
+## Leçons du pilote (8 super exercices, relus et contre-relus)
+- **Aucune cascade, vérifiée question par question** : si une question a besoin d'un résultat précédent (même « le nombre d'enfants » de q1), son énoncé le redonne. Le pilote en a raté une en croyant n'en avoir qu'une.
+- **Une seule réponse défendable** : pense aux lectures malignes de l'énoncé (une tarte restante qu'on resservirait) et ferme-les dans le contexte.
+- **Écritures justes acceptées** : toute fraction égale quand la fiche dit « comparée par sa valeur » (le dénominateur produit des dénominateurs, 44/96, est la méthode d'un élève sur deux), et l'unité tapée avec une fraction en `texte` (« 17/12 L », « 10/3 mètres ») dans `accepted`. Indulgence sur le format quand l'écriture n'est pas la compétence évaluée (« 6 + 3/4 » pour 27/4) ; refus quand l'énoncé l'impose et qu'elle l'est.
+- **Les indices s'affichent** à la demande : aucun ne donne la réponse ni n'élimine une proposition (« Relis la phrase qui parle du chocolat. » plutôt que « Pense au quart »).
+- **Deux questions d'un même exercice n'ont pas la même réponse.**
+- **Barème** : la question qui porte la compétence vaut le plus de points.
+- **CP et CE1** : 3 questions, 5 à 10 minutes, contexte de 80 à 120 mots, phrases courtes, nombres dans le champ de la classe.
+
 ## À lire avant d'écrire
 - Pour la porteuse et chaque compétence mobilisée : sa fiche (`content\dag\<domaine>.json`), ses exercices (`content\exercices\<domaine>\<id>.json`) et sa carte mentale (`content\cartes\`), pour le vocabulaire et les erreurs classiques.
 - Le schéma `schemas\super.schema.json`.
