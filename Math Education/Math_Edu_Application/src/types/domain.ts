@@ -31,6 +31,31 @@ export interface Profile {
   abonnement: Abonnement | null
   /** Chemins de /parcours choisis (lettres de domaine), migration 0012. */
   chemins_choisis: string[]
+  /** Seances visees par semaine, 2 a 5 (migration 0017). */
+  rythme_jours: number
+  /** Jours de travail choisis, 1 lundi a 7 dimanche ; les rappels ne partent que ces jours-la. */
+  jours_travail: number[]
+}
+
+/** Rappel de travail par email (migration 0017), ecrit par le serveur seul. */
+export interface Rappel {
+  destinataire: string
+  /** Avant 15 ans, le rappel va au parent, qui l'a accepte. */
+  pour_parent: boolean
+  /** « 17:00 ». */
+  heure: string
+  etat: 'en_attente' | 'actif' | 'arrete'
+  motif_arret: 'eleve' | 'desinscription' | 'sans_effet' | 'refus' | null
+  pause_jusqu_au: string | null
+}
+
+/** Ce que voit le parent (ou le destinataire) sur /rappels/:jeton, sans compte. */
+export interface RappelPublic {
+  prenom: string
+  etat: 'en_attente' | 'actif' | 'arrete' | 'expire'
+  heure: string
+  /** Lien d'accord envoye au parent, plutot que lien de desinscription d'un rappel. */
+  accord: boolean
 }
 
 /** Ce qu'un mineur ne change qu'avec l'accord de son parent (migration 0011). */

@@ -4,7 +4,7 @@ import { Link, useNavigate } from 'react-router-dom'
 import { cn } from '@/lib/cn'
 import { formatDuration, formatEuros, formatHour, formatWeekday, initials } from '@/lib/format'
 import { AppShell, PageBody, PageHeader, StreakCard } from '@/components/layout/AppShell'
-import { serieDeJours } from '@/lib/serie'
+import { seancesCetteSemaine, serieDeJours } from '@/lib/serie'
 import { Badge } from '@/components/ui/Badge'
 import { Button, ButtonLink } from '@/components/ui/Button'
 import { Card, CardTitle, SectionLabel } from '@/components/ui/Card'
@@ -31,10 +31,21 @@ export default function WorkspacePage() {
     () => serieDeJours(session.attempts.map((a) => a.created_at)),
     [session.attempts],
   )
+  const faites = useMemo(
+    () => seancesCetteSemaine(session.attempts.map((a) => a.created_at)),
+    [session.attempts],
+  )
 
   return (
     <AppShell
-      railBottom={<StreakCard days={serie.jours} today={serie.aujourdhui} surSept={serie.surSept} />}
+      railBottom={
+        <StreakCard
+          days={serie.jours}
+          today={serie.aujourdhui}
+          surSept={serie.surSept}
+          semaine={{ faites, visees: profile.rythme_jours }}
+        />
+      }
     >
       <PageBody>
         <PageHeader

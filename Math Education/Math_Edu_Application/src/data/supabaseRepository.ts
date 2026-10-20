@@ -38,6 +38,8 @@ import type {
   SuperAttempt,
   PlacementResult,
   Profile,
+  Rappel,
+  RappelPublic,
   SkillProgress,
   Teacher,
 } from '@/types/domain'
@@ -67,6 +69,8 @@ interface LigneProfil {
   abonnement: Profile['abonnement']
   cree_le: string
   chemins_choisis?: string[] | null
+  rythme_jours?: number | null
+  jours_travail?: number[] | null
 }
 
 function versProfil(ligne: LigneProfil): Profile {
@@ -90,6 +94,9 @@ function versProfil(ligne: LigneProfil): Profile {
     abonnement: ligne.abonnement,
     // Absente tant que la migration 0012 n'est pas appliquee.
     chemins_choisis: ligne.chemins_choisis ?? [],
+    // Absentes tant que la migration 0017 n'est pas appliquee.
+    rythme_jours: ligne.rythme_jours ?? 3,
+    jours_travail: ligne.jours_travail ?? [],
   }
 }
 
@@ -184,8 +191,17 @@ function erreur(operation: string, cause: PostgrestError | Error | null): Reposi
  * c'est la fonction qui sait pourquoi elle refuse (trop d'envois, lien expire).
  */
 async function appelerAccord<T>(corps: Record<string, unknown>): Promise<T> {
+  return appelerFonction<T>('accord-parental', corps)
+}
+
+/** Meme contrat pour `rappel-revision` (migration 0017). */
+async function appelerRappel<T>(corps: Record<string, unknown>): Promise<T> {
+  return appelerFonction<T>('rappel-revision', corps)
+}
+
+async function appelerFonction<T>(nom: string, corps: Record<string, unknown>): Promise<T> {
   const db = requireSupabase()
-  const { data, error } = await db.functions.invoke<T>('accord-parental', { body: corps })
+  const { data, error } = await db.functions.invoke<T>(nom, { body: corps })
   if (error) {
     let message = "Le serveur n'a pas répondu. Vérifie ta connexion et réessaie."
     let refus = false
@@ -465,6 +481,8 @@ export const supabaseRepository: DataRepository = {
       'resume_hebdo_parent',
       'rappels_revision',
       'chemins_choisis',
+      'rythme_jours',
+      'jours_travail',
     ] as const
 
     for (const champ of autorisees) {
@@ -692,6 +710,50 @@ export const supabaseRepository: DataRepository = {
 
   async repondreAccord(jeton, reponse) {
     const { etat } = await appelerAccord<{ etat: AccordPublic['etat'] }>({ action: reponse, jeton })
+    return etat
+  },
+
+  async getRappel() {
+    const db = requireSupabase()
+    // Colonnes nommees : les empreintes de jeton ne sont pas lisibles (0017).
+    const { data, error } = await db
+      .from('rappels')
+      .select('destinataire, pour_parent, heure, etat, motif_arret, pause_jusqu_au')
+      .maybeSingle()
+    if (error) {
+      // Migration 0017 pas encore appliquee : pas de rappel, rien a afficher.
+      if (error.code === '42P01' || error.code === 'PGRST205') return null
+      throw erreur('Lecture du rappel', error)
+    }
+    if (!data) return null
+    return { ...(data as Rappel), heure: String(data.heure).slice(0, 5) }
+  },
+
+  async activerRappel(heure) {
+    await appelerRappel({ action: 'activer', heure })
+    const rappel = await this.getRappel()
+    if (!rappel) throw new RepositoryError('Le rappel n’a pas été enregistré.')
+    return rappel
+  },
+
+  async reglerRappel(reglage) {
+    await appelerRappel({ action: 'regler', ...reglage })
+    const rappel = await this.getRappel()
+    if (!rappel) throw new RepositoryError('Aucun rappel à régler.', undefined, true)
+    return rappel
+  },
+
+  async desactiverRappel() {
+    await appelerRappel({ action: 'desactiver' })
+    return this.getRappel()
+  },
+
+  async lireLienRappel(jeton) {
+    return appelerRappel<RappelPublic>({ action: 'lire', jeton })
+  },
+
+  async repondreLienRappel(jeton, reponse) {
+    const { etat } = await appelerRappel<{ etat: RappelPublic['etat'] }>({ action: reponse, jeton })
     return etat
   },
 

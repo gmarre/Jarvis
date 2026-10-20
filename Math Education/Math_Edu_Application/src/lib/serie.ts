@@ -56,3 +56,18 @@ export function serieDeJours(dates: string[], maintenant: Date = new Date()): Se
   }
   return { jours: n, aujourdhui, surSept }
 }
+
+/**
+ * Seances de la semaine en cours (lundi a aujourd'hui), pour « 2 séances sur 3
+ * cette semaine » (rythme choisi par l'eleve, etude engagement, point 2). Une
+ * seance = un jour avec au moins une reponse.
+ */
+export function seancesCetteSemaine(dates: string[], maintenant: Date = new Date()): number {
+  const auj = startOfDay(maintenant)
+  // getDay : 0 dimanche ; on compte depuis le lundi.
+  const lundi = addDays(auj, -((auj.getDay() + 6) % 7))
+  const jours = new Set(dates.map((d) => startOfDay(new Date(d)).getTime()))
+  let n = 0
+  for (let j = lundi; j.getTime() <= auj.getTime(); j = addDays(j, 1)) if (jours.has(j.getTime())) n += 1
+  return n
+}

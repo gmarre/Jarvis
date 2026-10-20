@@ -238,6 +238,8 @@ function buildLeaProfile(now: Date): Profile {
       jour_renouvellement: 12,
     },
     chemins_choisis: [],
+    rythme_jours: 3,
+    jours_travail: [],
   }
 }
 
@@ -259,6 +261,8 @@ export const profMarcProfile: Profile = {
   rappels_revision: false,
   abonnement: null,
   chemins_choisis: [],
+  rythme_jours: 3,
+  jours_travail: [],
 }
 
 export interface MockSnapshot {

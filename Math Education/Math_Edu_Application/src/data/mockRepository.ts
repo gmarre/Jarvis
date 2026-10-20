@@ -38,6 +38,7 @@ import type {
   ContentReview,
   ModificationEnAttente,
   Profile,
+  Rappel,
 } from '@/types/domain'
 
 const STORAGE_KEY = 'racine.session.v2'
@@ -101,6 +102,9 @@ function contenu(): Promise<void> {
  */
 const COMPTES_DEMO = ['lea.d@email.fr', 'marc.b@email.fr'] as const
 
+/** Rappel simule du mode demonstration (aucun email ne part). */
+let rappelMock: Rappel | null = null
+
 function profileFromSignUp(input: SignUpInput): Profile {
   const now = new Date().toISOString()
   return {
@@ -123,6 +127,8 @@ function profileFromSignUp(input: SignUpInput): Profile {
     rappels_revision: false,
     abonnement: null,
     chemins_choisis: [],
+    rythme_jours: 3,
+    jours_travail: [],
   }
 }
 
@@ -483,6 +489,53 @@ export const mockRepository: DataRepository = {
   },
 
   async lireAccord() {
+    throw new RepositoryError("Aucun lien n'est envoyé en mode démonstration.", undefined, true)
+  },
+
+  // Rappels : en demonstration, aucun email ne part ; l'etat est simule pour
+  // montrer l'ecran, et l'ecran dit que rien n'est envoye (mode demo).
+  async getRappel() {
+    exigerSession()
+    return wait(rappelMock)
+  },
+
+  async activerRappel(heure) {
+    const session = exigerSession()
+    if (session.profile.jours_travail.length === 0) {
+      throw new RepositoryError('Choisis d’abord tes jours de travail : le rappel ne part que ces jours-là.', undefined, true)
+    }
+    const naissance = session.profile.date_naissance
+    const age = naissance ? ageFrom(naissance) : null
+    const pourParent = age !== null && age < MINIMUM_AGE_WITHOUT_CONSENT
+    rappelMock = {
+      destinataire: pourParent ? (session.profile.email_parent ?? '') : session.profile.email,
+      pour_parent: pourParent,
+      heure,
+      etat: pourParent ? 'en_attente' : 'actif',
+      motif_arret: null,
+      pause_jusqu_au: null,
+    }
+    return wait(rappelMock)
+  },
+
+  async reglerRappel(reglage) {
+    exigerSession()
+    if (!rappelMock) throw new RepositoryError('Aucun rappel à régler.', undefined, true)
+    rappelMock = { ...rappelMock, ...reglage }
+    return wait(rappelMock)
+  },
+
+  async desactiverRappel() {
+    exigerSession()
+    if (rappelMock) rappelMock = { ...rappelMock, etat: 'arrete', motif_arret: 'eleve' }
+    return wait(rappelMock)
+  },
+
+  async lireLienRappel() {
+    throw new RepositoryError("Aucun lien n'est envoyé en mode démonstration.", undefined, true)
+  },
+
+  async repondreLienRappel() {
     throw new RepositoryError("Aucun lien n'est envoyé en mode démonstration.", undefined, true)
   },
 

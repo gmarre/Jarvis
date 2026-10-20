@@ -28,6 +28,7 @@ const SubscriptionPage = lazy(() => import('@/pages/SubscriptionPage'))
 const WelcomePage = lazy(() => import('@/pages/WelcomePage'))
 const RecettePage = lazy(() => import('@/pages/RecettePage'))
 const AccordPage = lazy(() => import('@/pages/AccordPage'))
+const RappelPage = lazy(() => import('@/pages/RappelPage'))
 
 /** Accueil propre a chaque role. */
 function homeFor(role: UserRole): string {
@@ -88,6 +89,7 @@ export default function App() {
         <Route path="/bienvenue" element={<WelcomePage />} />
         {/* Ouverte par le parent depuis son email, sans compte : le jeton suffit. */}
         <Route path="/accord/:jeton" element={<AccordPage />} />
+        <Route path="/rappels/:jeton" element={<RappelPage />} />
 
         {/* Espace eleve */}
         <Route

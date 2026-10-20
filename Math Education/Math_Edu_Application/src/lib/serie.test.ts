@@ -1,6 +1,6 @@
 import { describe, expect, it } from 'vitest'
 
-import { serieDeJours } from './serie'
+import { seancesCetteSemaine, serieDeJours } from './serie'
 
 // Horloge fixee : mardi 20 octobre 2026, 18 h (heure locale).
 const MAINTENANT = new Date(2026, 9, 20, 18, 0)
@@ -43,5 +43,22 @@ describe('serieDeJours', () => {
   it('traverse un changement de mois', () => {
     const dates = [new Date(2026, 10, 1, 9).toISOString(), new Date(2026, 9, 31, 9).toISOString()]
     expect(serieDeJours(dates, new Date(2026, 10, 1, 20))).toMatchObject({ jours: 2, aujourdhui: true })
+  })
+})
+
+describe('seancesCetteSemaine', () => {
+  // Jeudi 22 octobre 2026, midi : la semaine part du lundi 19.
+  const JEUDI = new Date(2026, 9, 22, 12, 0)
+  it('compte les jours travailles depuis lundi, une fois chacun', () => {
+    const dates = [
+      new Date(2026, 9, 18, 10).toISOString(), // dimanche d'avant : hors semaine
+      new Date(2026, 9, 19, 9).toISOString(),
+      new Date(2026, 9, 19, 18).toISOString(), // meme jour
+      new Date(2026, 9, 21, 17).toISOString(),
+    ]
+    expect(seancesCetteSemaine(dates, JEUDI)).toBe(2)
+  })
+  it('lundi matin, rien encore', () => {
+    expect(seancesCetteSemaine([], new Date(2026, 9, 19, 8))).toBe(0)
   })
 })

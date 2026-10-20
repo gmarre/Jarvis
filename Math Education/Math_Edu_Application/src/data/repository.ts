@@ -30,6 +30,8 @@ import type {
   NewContentReview,
   PlacementResult,
   Profile,
+  Rappel,
+  RappelPublic,
   Recette,
   SkillProgress,
   Teacher,
@@ -180,6 +182,23 @@ export interface DataRepository {
   lireAccord(jeton: string): Promise<AccordPublic>
   /** Page publique du parent : accepte ou refuse. Rend l'etat final. */
   repondreAccord(jeton: string, reponse: 'confirmer' | 'refuser'): Promise<AccordPublic['etat']>
+
+  // --- Rappels par email (migration 0017, fonction rappel-revision) -------
+
+  /** Etat du rappel de l'eleve, null s'il n'en a jamais demande. */
+  getRappel(): Promise<Rappel | null>
+  /**
+   * Active le rappel a cette heure. A 15 ans et plus, il part vers l'eleve
+   * tout de suite ; avant, une demande d'accord part chez le parent.
+   */
+  activerRappel(heure: string): Promise<Rappel>
+  /** Change l'heure ou met en pause jusqu'a une date (null : reprendre). */
+  reglerRappel(reglage: { heure?: string; pause_jusqu_au?: string | null }): Promise<Rappel>
+  desactiverRappel(): Promise<Rappel | null>
+  /** Page publique /rappels/:jeton : lit le rappel vise. Sans session. */
+  lireLienRappel(jeton: string): Promise<RappelPublic>
+  /** Page publique : accepte les rappels, ou ne plus les recevoir. Rend l'etat final. */
+  repondreLienRappel(jeton: string, reponse: 'confirmer' | 'desinscrire'): Promise<RappelPublic['etat']>
 
   // --- Lectures -----------------------------------------------------------
 

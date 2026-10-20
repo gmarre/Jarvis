@@ -166,6 +166,8 @@ describe('isProfileComplete', () => {
     rappels_revision: true,
     abonnement: null,
     chemins_choisis: [],
+    rythme_jours: 3,
+    jours_travail: [],
   }
 
   it('accepte un eleve renseigne', () => {

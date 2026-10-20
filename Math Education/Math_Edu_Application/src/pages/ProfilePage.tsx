@@ -5,6 +5,7 @@ import { formatDateLong, formatEuros, initials } from '@/lib/format'
 import { ageFrom, estMineur, needsParentalConsent } from '@/lib/age'
 import { ConnexionCard } from '@/components/compte/ConnexionCard'
 import { ConsentementNotice } from '@/components/compte/ConsentementNotice'
+import { RythmeCard } from '@/components/compte/RythmeCard'
 import type { ModificationEnAttente } from '@/types/domain'
 import { AppShell, PageBody, PageHeader } from '@/components/layout/AppShell'
 import { Button, ButtonLink } from '@/components/ui/Button'
@@ -355,6 +356,8 @@ export default function ProfilePage() {
           <div className="flex flex-col gap-5">
             {isStudent && <SubscriptionCard abonnement={profile.abonnement} />}
 
+            {isStudent && <RythmeCard />}
+
             <ConnexionCard onDemandeEnvoyee={relireEnAttente} />
 
             <Card>
@@ -365,9 +368,9 @@ export default function ProfilePage() {
                   checked={profile.partage_progression_prof}
                   onChange={(value) => updateProfile({ partage_progression_prof: value })}
                 />
-                {/* « Résumé hebdo au parent » et « Rappels de révision » reviendront
-                    avec leur envoi (sprint 4 et rappels par email) : un reglage
-                    qui n'envoie rien est un texte mensonger (regle 2). */}
+                {/* « Résumé hebdo au parent » reviendra avec son envoi (sprint 4) :
+                    un reglage qui n'envoie rien est un texte mensonger (regle 2).
+                    Les rappels par email sont dans la carte « Mon rythme ». */}
               </div>
 
               <p className="mt-4 text-[11px] leading-relaxed text-ink-faint">

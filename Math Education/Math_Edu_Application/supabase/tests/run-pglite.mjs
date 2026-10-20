@@ -33,7 +33,7 @@ const MIGRATIONS = join(ICI, '..', 'migrations')
 
 // Meme liste que run.sh : ces refus prouvent que les gardes fonctionnent.
 const REFUS_ATTENDUS =
-  /Creneau complet|violates row-level security|ne se modifie pas depuis le client|se confirme par le lien|duplicate key value|permission denied for function publier_contenu|Publication reservee au serveur|invalide_avec_commentaire|accord du parent|profiles_chemins_choisis_format|skill_progress_niveau_borne|flashcard_progress_box_check|super_attempts_score_borne/
+  /Creneau complet|violates row-level security|ne se modifie pas depuis le client|se confirme par le lien|duplicate key value|permission denied for function publier_contenu|Publication reservee au serveur|invalide_avec_commentaire|accord du parent|profiles_chemins_choisis_format|skill_progress_niveau_borne|flashcard_progress_box_check|super_attempts_score_borne|profiles_rythme_jours_borne|profiles_jours_travail_valides|rappels_heure_plage|permission denied for table rappels/
 
 const FICHIERS_DE_TEST = [
   ['Triggers, capacite des creneaux, cascades', '01_triggers_et_capacite.sql'],
@@ -46,6 +46,7 @@ const FICHIERS_DE_TEST = [
   ['Niveau de maitrise', '08_niveau_maitrise.sql'],
   ['Cartes defi', '09_cartes_defi.sql'],
   ['Super exercices', '10_super_exercices.sql'],
+  ['Rythme et rappels', '11_rythme_rappels.sql'],
 ]
 
 /**

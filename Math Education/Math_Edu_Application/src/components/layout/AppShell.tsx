@@ -198,11 +198,14 @@ export function StreakCard({
   days,
   today,
   surSept,
+  semaine,
 }: {
   days: number
   today: boolean
   /** Jours travailles sur les 7 derniers (lib/serie.ts). */
   surSept?: number
+  /** Seances faites cette semaine et seances visees (rythme choisi, migration 0017). */
+  semaine?: { faites: number; visees: number }
 }) {
   // Une serie pardonne un jour manque (lib/serie.ts) : on parle de jours de
   // travail, pas de jours « de suite ».
@@ -224,6 +227,12 @@ export function StreakCard({
       {surSept !== undefined && surSept > 0 && (
         <p className="mt-1.5 text-[11.5px] font-medium leading-relaxed text-ink-muted">
           {surSept} jour{surSept > 1 ? 's' : ''} sur les 7 derniers
+        </p>
+      )}
+      {semaine && (
+        <p className="mt-1.5 text-[11.5px] font-medium leading-relaxed text-ink-muted">
+          {Math.min(semaine.faites, semaine.visees)} séance{semaine.faites > 1 ? 's' : ''} sur {semaine.visees}{' '}
+          cette semaine
         </p>
       )}
     </div>
