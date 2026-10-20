@@ -1068,7 +1068,7 @@
     "prerequisites": [
       "B044",
       "D006",
-      "B011"
+      "B055"
     ],
     "difficulty": 5,
     "school_level": "4e",
@@ -1142,7 +1142,8 @@
     "description": "Calculer une expression qui enchaîne les quatre opérations sur des relatifs en respectant les priorités : −5 + 3 × (−4) = −17 ; (−2) × (6 − 9) = 6 ; trouver le signe d'un produit de plusieurs facteurs d'après le nombre de facteurs négatifs ; appliquer un programme de calcul à un nombre négatif (choisir −3, le multiplier par −2, ajouter 5 : on obtient 11), et nommer un calcul (somme, produit, quotient) d'après sa dernière opération. L'erreur type est d'appliquer la règle des signes du produit à une somme (−5 + (−12) = 17). Figure : aucune.",
     "prerequisites": [
       "B050",
-      "B047"
+      "B047",
+      "B054"
     ],
     "difficulty": 5,
     "school_level": "4e",
@@ -1241,6 +1242,62 @@
       {
         "source": "Cycle 4, classe de 4e, Nombres et calculs, Puissances, Objectifs d'apprentissage",
         "quote": "Multiplier des puissances d'un même exposant entier naturel de deux nombres entre elles."
+      }
+    ]
+  },
+  {
+    "id": "B054",
+    "domain": "B",
+    "domain_name": "Calcul numérique",
+    "label": "Traduire un programme de calcul en une seule expression numérique",
+    "description": "Écrire en une seule expression, avec les parenthèses nécessaires, une suite d'opérations donnée en phrases, un programme de calcul ou un problème, puis la calculer : « choisir 7, ajouter 5, multiplier le résultat par 3, retrancher 4 » s'écrit (7 + 5) × 3 − 4 = 32 ; 3 cahiers à 2,50 € et 2 stylos à 1,20 € coûtent 3 × 2,50 + 2 × 1,20 = 9,90 € ; reconnaître, parmi plusieurs expressions, celle qui traduit le programme. L'erreur type est d'oublier les parenthèses (7 + 5 × 3 − 4 = 18) ou d'écrire une suite d'égalités fausses (7 + 5 = 12 × 3 = 36 − 4). Nombres positifs ; la lettre arrive avec F003, le programme appliqué à un nombre négatif avec B051. Réponse : QCM entre expressions, ou la valeur de l'expression (un nombre) ; écrire l'expression au clavier attend la saisie des expressions numériques (section 5 du compte rendu). En attendant la saisie des expressions : QCM. Figure : aucune.",
+    "prerequisites": [
+      "B011",
+      "D024"
+    ],
+    "difficulty": 5,
+    "school_level": "5e",
+    "validation_test": "Écris en une seule expression le programme « choisir 9 ; soustraire 4 ; multiplier le résultat par 6 », puis calcule-la. Laquelle de ces expressions traduit « le double de la somme de 8 et de 3 » : 2 × 8 + 3 ; 2 × (8 + 3) ; (2 + 8) × 3 ?",
+    "mastery_threshold": {
+      "required": 3,
+      "out_of": 4
+    },
+    "exercise_ids": [],
+    "mindmap_id": null,
+    "programme_ref": [
+      {
+        "source": "Cycle 4, classe de 5e, Nombres et calculs, Opérations, Objectifs d'apprentissage",
+        "quote": "Traduire un problème, une succession donnée d'opérations, un programme de calcul, en une seule expression, en faisant appel ou non à des parenthèses."
+      },
+      {
+        "source": "Cycle 4, classe de 5e, Nombres et calculs, Opérations, Objectifs d'apprentissage",
+        "quote": "Enchainer des opérations."
+      }
+    ]
+  },
+  {
+    "id": "B055",
+    "domain": "B",
+    "domain_name": "Calcul numérique",
+    "label": "Distributivité simple sur des exemples numériques",
+    "description": "Savoir que multiplier une somme ou une différence par un nombre revient à multiplier chacun de ses termes par ce nombre, k × (a + b) = k × a + k × b et k × (a − b) = k × a − k × b, et s'en servir dans les deux sens pour calculer mentalement : 7 × 102 = 7 × 100 + 7 × 2 = 714 ; 25 × 98 = 25 × 100 − 25 × 2 = 2 450 ; 13 × 7 + 13 × 3 = 13 × (7 + 3) = 130 ; voir l'égalité sur l'aire d'un rectangle partagé en deux (6 × (4 + 3) = 6 × 4 + 6 × 3 = 42). L'erreur type est de ne multiplier que le premier terme (7 × 102 = 7 × 100 + 2). Nombres entiers positifs ; la même règle avec des lettres est F012. Réponse : un nombre, ou le nombre manquant d'une égalité (7 × 102 = 7 × 100 + 7 × …), ou QCM entre écritures. Figure utile : geometrie, rectangle partagé en deux, longueurs écrites.",
+    "prerequisites": [
+      "B011",
+      "B041"
+    ],
+    "difficulty": 5,
+    "school_level": "5e",
+    "validation_test": "Calcule 8 × 105 en écrivant 105 = 100 + 5, puis 15 × 99. Complète : 12 × 37 + 12 × 63 = 12 × … = … .",
+    "mastery_threshold": {
+      "required": 3,
+      "out_of": 4
+    },
+    "exercise_ids": [],
+    "mindmap_id": null,
+    "programme_ref": [
+      {
+        "source": "Cycle 4, classe de 5e, Nombres et calculs, Opérations, Objectifs d'apprentissage",
+        "quote": "Connaitre et utiliser la distributivité simple sur des exemples numériques."
       }
     ]
   }

@@ -1,0 +1,697 @@
+[
+  {
+    "id": "F002",
+    "domain": "F",
+    "domain_name": "Algèbre",
+    "label": "Calculer la valeur d'une expression littérale par substitution",
+    "description": "Remplacer la lettre par un nombre positif donné et calculer en respectant les priorités, y compris avec un carré : pour x = 4, 3x + 5 = 3 × 4 + 5 = 17 ; 2x² = 2 × 4² = 32 ; x(x + 1) = 4 × 5 = 20 ; pour x = 2,5, 4x − 1 = 9 ; une formule de géométrie (aire L × l pour L = 7,5 et l = 4 : 30). Savoir rétablir le signe × sous-entendu. L'erreur type est de juxtaposer les chiffres (3x vaut 34 pour x = 4) ou de calculer (2x)² au lieu de 2x² (64 au lieu de 32). Nombres positifs entiers ou décimaux ; la valeur pour un nombre négatif est en 4e (F063). Réponse : un nombre. Figure : aucune.",
+    "prerequisites": [
+      "F003",
+      "B052",
+      "D006"
+    ],
+    "difficulty": 5,
+    "school_level": "5e",
+    "validation_test": "Calcule 5x − 3 pour x = 6, puis 3x² pour x = 5, puis 2(x + 1,5) pour x = 0,5.",
+    "mastery_threshold": {
+      "required": 3,
+      "out_of": 4
+    },
+    "exercise_ids": [],
+    "mindmap_id": null,
+    "programme_ref": [
+      {
+        "source": "Cycle 4, classe de 5e, Nombres et calculs, Calcul littéral et algébrique, Objectifs d'apprentissage",
+        "quote": "Calculer la valeur d'une expression littérale par substitution."
+      },
+      {
+        "source": "Cycle 4, classe de 5e, Nombres et calculs, Puissances, Objectifs d'apprentissage",
+        "quote": "Calculer la valeur d'une expression littérale contenant une puissance simple."
+      }
+    ]
+  },
+  {
+    "id": "F003",
+    "domain": "F",
+    "domain_name": "Algèbre",
+    "label": "Produire une formule : écrire une expression littérale",
+    "description": "Utiliser une lettre pour désigner un nombre quelconque et écrire une expression littérale : le double de n (2 × n, noté 2n : le signe × se sous-entend devant une lettre ou une parenthèse), le triple, le successeur n + 1, le prédécesseur n − 1, le carré n × n = n² ; une formule de géométrie (périmètre d'un rectangle 2 × (L + l), aire L × l, périmètre d'un carré 4 × c) ; le nombre d'éléments à l'étape n d'un motif (3n + 1 allumettes) ; traduire une phrase en expression et une expression en phrase (« le triple de x, augmenté de 5 » : 3x + 5). L'erreur type est de confondre 2n et n² (le double et le carré), et d'oublier les parenthèses (2 × L + l au lieu de 2 × (L + l)). Réponse : QCM entre expressions, ou la valeur de la formule pour une valeur donnée (un nombre) ; écrire la formule au clavier attend la saisie des expressions (section 5). En attendant la saisie des expressions : QCM. Figure utile : geometrie, rectangle dont les côtés sont marqués x et x + 3.",
+    "prerequisites": [
+      "B054",
+      "P022",
+      "A029"
+    ],
+    "difficulty": 5,
+    "school_level": "5e",
+    "validation_test": "On note n un nombre entier. Écris le successeur de n, puis le carré de n. Quelle expression donne le périmètre d'un rectangle de longueur a et de largeur 4 : a + 4 ; 2 × a + 4 ; 2 × (a + 4) ?",
+    "mastery_threshold": {
+      "required": 3,
+      "out_of": 4
+    },
+    "exercise_ids": [],
+    "mindmap_id": null,
+    "programme_ref": [
+      {
+        "source": "Cycle 4, classe de 5e, Nombres et calculs, Calcul littéral et algébrique, Objectifs d'apprentissage",
+        "quote": "Produire des formules (double, triple, carré, successeur, prédécesseur, aire, périmètre, etc.)."
+      },
+      {
+        "source": "Cycle 4, Nombres et calculs, présentation commune aux trois classes",
+        "quote": "Au cycle 3, les élèves ont été exposés à différents usages de la lettre en mathématiques, notamment comme symbole d'une unité, comme désignation d'un objet mathématique (exemple : le point A, le nombre π, le volume V, etc.) ou encore comme variable dans des formules."
+      }
+    ]
+  },
+  {
+    "id": "F006",
+    "domain": "F",
+    "domain_name": "Algèbre",
+    "label": "Écrire et réduire des produits : 3x, x², 3x × 2x = 6x²",
+    "description": "Écrire un produit sans le signe × (3 × x = 3x ; x × 3 = 3x ; 1 × x = x) et le rétablir pour calculer ; distinguer x + x = 2x et x × x = x² ; réduire un produit de nombres et de lettres en multipliant les nombres entre eux et les lettres entre elles : 3x × 2x = 6x² ; −4 × 5x = −20x ; (−3x) × (−2x) = 6x² ; 2x × x = 2x² ; réduire une somme de termes en x² et en x : 3x² + 2x − x² + 5x = 2x² + 7x. L'erreur type est d'écrire x + x = x², 3x × 2x = 6x ou 3x × 2x = 5x², et d'additionner x² et x. Réponse : QCM entre écritures réduites, vrai/faux, ou le coefficient (un nombre) ; écrire la forme réduite au clavier attend la saisie des expressions (section 5). En attendant la saisie des expressions : QCM ou coefficient. Figure : aucune.",
+    "prerequisites": [
+      "F010",
+      "B049"
+    ],
+    "difficulty": 5,
+    "school_level": "4e",
+    "validation_test": "Réduis 4x × 3x, puis (−2) × 7x, puis 5x² + 3x − 2x² − x. Vrai ou faux : x + x = x² ?",
+    "mastery_threshold": {
+      "required": 3,
+      "out_of": 4
+    },
+    "exercise_ids": [],
+    "mindmap_id": null,
+    "programme_ref": [
+      {
+        "source": "Cycle 4, classe de 4e, Nombres et calculs, Calcul littéral et algébrique, Automatismes",
+        "quote": "Écrire 3 × 𝑥 sous la forme 3𝑥 et savoir que 3𝑥 c'est 3 × 𝑥."
+      },
+      {
+        "source": "Cycle 4, classe de 4e, Nombres et calculs, Calcul littéral et algébrique, Automatismes",
+        "quote": "Connaitre et utiliser : 1 × 𝑥 = 𝑥 ; 𝑥 + 𝑥 = 2𝑥 ; 𝑥 × 𝑥 = 𝑥² ; 3𝑥 + 2𝑥 = 5𝑥 ; 3𝑥 × 2𝑥 = 6𝑥²."
+      }
+    ]
+  },
+  {
+    "id": "F010",
+    "domain": "F",
+    "domain_name": "Algèbre",
+    "label": "Réduire une expression de la forme ax + b",
+    "description": "Regrouper les termes en x entre eux et les nombres entre eux pour écrire une somme sous la forme ax + b, avec des coefficients décimaux, éventuellement négatifs après regroupement : 3x + 5 + 2x − 1 = 5x + 4 ; 4,5x + 2 − 1,5x = 3x + 2 ; x + x = 2x ; 1x s'écrit x ; 2x + 7 − 5x = −3x + 7. Savoir que 3x + 5 ne se réduit pas : 3x et 5 ne sont pas des termes semblables. L'erreur type est d'additionner un terme en x et un nombre (3x + 5 = 8x), ou de perdre le signe d'une soustraction en regroupant. Les produits (3x × 2x) et les termes en x² sont en 4e (F006). Réponse : QCM entre formes réduites, ou deux nombres (le coefficient de x, puis le terme constant) ; écrire la forme réduite au clavier attend la saisie des expressions (section 5). En attendant la saisie des expressions : QCM ou deux nombres. Figure : aucune.",
+    "prerequisites": [
+      "F061",
+      "B047"
+    ],
+    "difficulty": 5,
+    "school_level": "5e",
+    "validation_test": "Réduis 6x + 4 + 3x − 1, puis 2,5x + 7 − 0,5x, puis 4x + 9 − 6x.",
+    "mastery_threshold": {
+      "required": 3,
+      "out_of": 4
+    },
+    "exercise_ids": [],
+    "mindmap_id": null,
+    "programme_ref": [
+      {
+        "source": "Cycle 4, classe de 5e, Nombres et calculs, Calcul littéral et algébrique, Objectifs d'apprentissage",
+        "quote": "Réduire une expression littérale de la forme a𝑥 + b, où a et b sont des nombres décimaux."
+      }
+    ]
+  },
+  {
+    "id": "F012",
+    "domain": "F",
+    "domain_name": "Algèbre",
+    "label": "Distributivité simple : développer et factoriser k(a + b)",
+    "description": "Utiliser k(a + b) = ka + kb et k(a − b) = ka − kb avec un nombre k entier positif, dans les deux sens : développer 3(x + 4) = 3x + 12 et 2(3x − 5) = 6x − 10, puis réduire (3(x + 2) + 4x = 7x + 6) ; factoriser par un facteur commun lisible dans les tables, 5x + 15 = 5(x + 3) et 6x − 4 = 2(3x − 2) ; vérifier un résultat en développant. L'erreur type est de ne multiplier que le premier terme (3(x + 4) = 3x + 4) ou d'oublier le 1 en factorisant (5x + 5 = 5(x + 1), pas 5x). Coefficient négatif et facteur x en 4e (F014). Réponse : QCM entre écritures, ou un nombre manquant (3(x + 4) = 3x + …) ; écrire la forme développée ou factorisée au clavier attend la saisie des expressions avec contrainte de forme (section 5). En attendant la saisie des expressions : QCM ou nombre manquant. Figure utile : geometrie, rectangle de largeur 3 partagé en deux rectangles de longueurs x et 4.",
+    "prerequisites": [
+      "B055",
+      "F010",
+      "A016"
+    ],
+    "difficulty": 5,
+    "school_level": "5e",
+    "validation_test": "Développe 4(x + 3), puis 5(2x − 1). Complète : 7x + 21 = 7(x + …).",
+    "mastery_threshold": {
+      "required": 3,
+      "out_of": 4
+    },
+    "exercise_ids": [],
+    "mindmap_id": null,
+    "programme_ref": [
+      {
+        "source": "Cycle 4, classe de 5e, Nombres et calculs, Calcul littéral et algébrique, Objectifs d'apprentissage",
+        "quote": "Exploiter les relations k(a + b) = ka + kb ou k(a – b) = ka – kb pour factoriser, ou développer une expression littérale."
+      }
+    ]
+  },
+  {
+    "id": "F013",
+    "domain": "F",
+    "domain_name": "Algèbre",
+    "label": "Double distributivité : développer et réduire (a + b)(c + d)",
+    "description": "Développer un produit de deux sommes en multipliant chaque terme de la première par chaque terme de la seconde, puis réduire : (x + 3)(x + 5) = x² + 5x + 3x + 15 = x² + 8x + 15 ; (2x − 1)(x + 4) = 2x² + 7x − 4 ; enchaîner avec l'opposé d'une expression, −(5 − 4x) = −5 + 4x, et simplifier : (x + 1)(x + 2) − (x² + 4) = 3x − 2. L'erreur type est de ne multiplier que les premiers et les derniers termes ((x + 3)(x + 5) = x² + 15), ou de ne pas changer tous les signes d'une parenthèse précédée de −. Réponse : QCM entre formes développées, ou un coefficient (coefficient de x, terme constant : des nombres) ; écrire la forme développée réduite au clavier attend la saisie des expressions avec contrainte de forme (section 5). En attendant la saisie des expressions : QCM ou coefficients. Figure utile : geometrie, rectangle de côtés x + 3 et x + 5 partagé en quatre rectangles.",
+    "prerequisites": [
+      "F014"
+    ],
+    "difficulty": 6,
+    "school_level": "3e",
+    "validation_test": "Développe et réduis (x + 4)(x + 2), puis (3x − 2)(x + 5). Simplifie 6 − (2x − 7).",
+    "mastery_threshold": {
+      "required": 3,
+      "out_of": 4
+    },
+    "exercise_ids": [],
+    "mindmap_id": null,
+    "programme_ref": [
+      {
+        "source": "Cycle 4, classe de 3e, Nombres et calculs, Calcul littéral et algébrique, Objectifs d'apprentissage",
+        "quote": "Utiliser la double distributivité pour développer et factoriser des expressions dont le facteur est apparent."
+      },
+      {
+        "source": "Cycle 4, classe de 3e, Nombres et calculs, Calcul littéral et algébrique, Automatismes",
+        "quote": "Prendre l'opposé d'une expression : savoir que – (5 – 4𝑥) = –5 + 4𝑥."
+      },
+      {
+        "source": "Cycle 4, classe de 3e, Nombres et calculs, Calcul littéral et algébrique, Automatismes",
+        "quote": "Simplifier des expressions littérales."
+      },
+      {
+        "source": "Cycle 4, classe de 3e, Nombres et calculs, Calcul littéral et algébrique, Automatismes",
+        "quote": "Développer et factoriser une expression simple."
+      }
+    ]
+  },
+  {
+    "id": "F014",
+    "domain": "F",
+    "domain_name": "Algèbre",
+    "label": "Distributivité simple avec des relatifs et des lettres : développer, factoriser",
+    "description": "Développer et réduire k(a + b) quand k est négatif ou contient la lettre, et factoriser par un facteur commun numérique ou littéral : −3(2x − 5) = −6x + 15 ; x(x + 4) = x² + 4x ; 2x(3x − 1) = 6x² − 2x ; 5 − 2(x − 4) = 5 − 2x + 8 = −2x + 13 ; −(x − 3) = −1 × (x − 3) = −x + 3 ; factoriser x² + 5x = x(x + 5) et 6x² − 9x = 3x(2x − 3). L'erreur type est l'erreur de signe sur le second terme (−3(2x − 5) = −6x − 15) ou de ne distribuer qu'au premier terme. Réponse : QCM entre écritures, ou un coefficient manquant (un nombre) ; écrire la forme développée ou factorisée au clavier attend la saisie des expressions avec contrainte de forme (section 5). En attendant la saisie des expressions : QCM ou coefficient. Figure utile : geometrie, rectangle de côtés x et x + 4 partagé en un carré et un rectangle.",
+    "prerequisites": [
+      "F012",
+      "F006"
+    ],
+    "difficulty": 5,
+    "school_level": "4e",
+    "validation_test": "Développe et réduis −4(3x − 2), puis 7 − 3(x + 1). Factorise x² − 6x.",
+    "mastery_threshold": {
+      "required": 3,
+      "out_of": 4
+    },
+    "exercise_ids": [],
+    "mindmap_id": null,
+    "programme_ref": [
+      {
+        "source": "Cycle 4, classe de 4e, Nombres et calculs, Calcul littéral et algébrique, Objectifs d'apprentissage",
+        "quote": "Connaitre et utiliser la distributivité simple pour développer et factoriser une expression algébrique."
+      }
+    ]
+  },
+  {
+    "id": "F020",
+    "domain": "F",
+    "domain_name": "Algèbre",
+    "label": "Développer avec les identités remarquables",
+    "description": "Connaître et utiliser (a + b)² = a² + 2ab + b², (a − b)² = a² − 2ab + b² et (a + b)(a − b) = a² − b² pour développer sans passer par la double distributivité : (x + 3)² = x² + 6x + 9 ; (2x − 5)² = 4x² − 20x + 25 ; (x − 4)(x + 4) = x² − 16 ; calcul mental : 101² = 10 201, 99 × 101 = 9 999. Savoir retrouver une identité par la double distributivité (F013). L'erreur type est d'oublier le double produit ((x + 3)² = x² + 9) ou de mal élever un produit au carré ((2x)² = 2x²). Réponse : QCM entre formes développées, un coefficient (un nombre), ou une valeur numérique (101² : un nombre) ; écrire la forme développée au clavier attend la saisie des expressions (section 5). En attendant la saisie des expressions : QCM, coefficient ou valeur. Figure utile : geometrie, carré de côté a + b partagé en deux carrés et deux rectangles.",
+    "prerequisites": [
+      "F013"
+    ],
+    "difficulty": 6,
+    "school_level": "3e",
+    "validation_test": "Développe (x + 7)², puis (3x − 1)², puis (x + 6)(x − 6). Calcule 49 × 51 sans poser l'opération.",
+    "mastery_threshold": {
+      "required": 3,
+      "out_of": 4
+    },
+    "exercise_ids": [],
+    "mindmap_id": null,
+    "programme_ref": [
+      {
+        "source": "Cycle 4, classe de 3e, Nombres et calculs, Calcul littéral et algébrique, Objectifs d'apprentissage",
+        "quote": "Manipuler les trois identités remarquables pour développer et factoriser"
+      },
+      {
+        "source": "Cycle 4, classe de 3e, Nombres et calculs, Calcul littéral et algébrique, Automatismes",
+        "quote": "Développer et factoriser une expression simple."
+      }
+    ]
+  },
+  {
+    "id": "F021",
+    "domain": "F",
+    "domain_name": "Algèbre",
+    "label": "Factoriser avec les identités remarquables",
+    "description": "Reconnaître dans une somme le développement d'une identité remarquable et l'écrire sous forme de produit : x² − 9 = (x − 3)(x + 3) ; 4x² − 25 = (2x − 5)(2x + 5) ; x² + 10x + 25 = (x + 5)² ; 9x² − 12x + 4 = (3x − 2)² ; repérer les carrés (9 = 3², 4x² = (2x)²) et vérifier le double produit (2 × 3x × 2 = 12x). L'erreur type est de factoriser x² + 9 en (x + 3)(x − 3), ou x² + 6x + 4 en (x + 2)² sans vérifier le double produit. Réponse : QCM entre formes factorisées, vrai/faux, ou un nombre manquant (x² − 49 = (x − …)(x + …)) ; écrire la forme factorisée au clavier attend la saisie des expressions avec contrainte de forme (section 5). En attendant la saisie des expressions : QCM ou nombre manquant. Figure : aucune.",
+    "prerequisites": [
+      "F020",
+      "A030"
+    ],
+    "difficulty": 6,
+    "school_level": "3e",
+    "validation_test": "Factorise x² − 64, puis x² − 14x + 49. Vrai ou faux : 25x² + 10x + 1 = (5x + 1)² ?",
+    "mastery_threshold": {
+      "required": 3,
+      "out_of": 4
+    },
+    "exercise_ids": [],
+    "mindmap_id": null,
+    "programme_ref": [
+      {
+        "source": "Cycle 4, classe de 3e, Nombres et calculs, Calcul littéral et algébrique, Objectifs d'apprentissage",
+        "quote": "Manipuler les trois identités remarquables pour développer et factoriser"
+      }
+    ]
+  },
+  {
+    "id": "F022",
+    "domain": "F",
+    "domain_name": "Algèbre",
+    "label": "Tester une égalité ; réfuter par un contre-exemple",
+    "description": "Pour une égalité entre deux expressions qui contiennent une lettre, calculer chaque membre pour une valeur donnée et dire si l'égalité est vraie ou fausse pour cette valeur : 2(x + 3) = 2x + 6 est vraie pour x = 1 (8 = 8) ; 3x + 4 = 5x est vraie pour x = 2 (10 = 10) mais fausse pour x = 0 (4 et 0). Savoir qu'une égalité vraie pour quelques valeurs ne l'est pas forcément pour toutes, et qu'un seul contre-exemple suffit à montrer qu'une affirmation est fausse (« n² est toujours plus grand que n » : faux pour n = 1). L'erreur type est de conclure qu'une égalité est toujours vraie après un ou deux essais réussis. Réponse : vrai/faux, la valeur de chaque membre (un nombre), ou QCM pour choisir un contre-exemple. Figure : aucune.",
+    "prerequisites": [
+      "F002"
+    ],
+    "difficulty": 5,
+    "school_level": "5e",
+    "validation_test": "L'égalité 4x + 1 = 3x + 5 est-elle vraie pour x = 4 ? Pour x = 2 ? Léo affirme : « 2n + 1 est toujours un multiple de 3 ». Trouve un nombre n qui montre qu'il a tort.",
+    "mastery_threshold": {
+      "required": 3,
+      "out_of": 4
+    },
+    "exercise_ids": [],
+    "mindmap_id": null,
+    "programme_ref": [
+      {
+        "source": "Cycle 4, classe de 5e, Nombres et calculs, Calcul littéral et algébrique, Objectifs d'apprentissage",
+        "quote": "Tester si une égalité entre expressions algébriques comportant une variable est vraie ou fausse."
+      },
+      {
+        "source": "Cycle 4, classe de 5e, Nombres et calculs, Calcul littéral et algébrique, Objectifs d'apprentissage",
+        "quote": "Utiliser un contre-exemple pour démontrer qu'une assertion est fausse."
+      }
+    ]
+  },
+  {
+    "id": "F023",
+    "domain": "F",
+    "domain_name": "Algèbre",
+    "label": "Équations ax = c et x + b = c : modéliser, résoudre par l'opération inverse",
+    "description": "Donner à la lettre le statut d'inconnue : traduire un problème « à trou » par une équation du type x + b = c ou ax = c (« Léa a 15 billes ; combien doit-elle en gagner pour en avoir 42 ? » : x + 15 = 42 ; « 6 cahiers identiques coûtent 15 € » : 6x = 15), puis la résoudre par l'opération inverse : x = 42 − 15 = 27 ; x = 15 ÷ 6 = 2,5 ; 3x = 7 donne x = 7/3 ; x + 9 = 4 donne x = −5 ; 1,5x = 6 donne x = 4 ; vérifier la solution en remplaçant x (F022). L'erreur type est d'appliquer l'opération de l'énoncé au lieu de l'opération inverse (x + 15 = 42 donne x = 57) ou de diviser dans le mauvais sens (6x = 15 donne x = 6/15). Réponse : la solution, un nombre (« x = 27 » est accepté) ; l'équation qui modélise un problème se choisit (QCM) en attendant la saisie des équations (section 5). En attendant la saisie des expressions : QCM pour l'équation. Figure : aucune.",
+    "prerequisites": [
+      "F022",
+      "D026",
+      "C032",
+      "B045"
+    ],
+    "difficulty": 5,
+    "school_level": "5e",
+    "validation_test": "Résous x + 18 = 50, puis 4x = 26, puis x + 12 = 7. Un paquet de 8 croissants coûte 9,60 € : quelle équation permet de trouver le prix x d'un croissant ?",
+    "mastery_threshold": {
+      "required": 3,
+      "out_of": 4
+    },
+    "exercise_ids": [],
+    "mindmap_id": null,
+    "programme_ref": [
+      {
+        "source": "Cycle 4, classe de 5e, Nombres et calculs, Calcul littéral et algébrique, Objectifs d'apprentissage",
+        "quote": "Résoudre des équations du type a𝑥 = c ou 𝑥 + b = c par des méthodes arithmétiques s'appuyant sur les opérations inverses."
+      },
+      {
+        "source": "Cycle 4, classe de 5e, Nombres et calculs, Calcul littéral et algébrique, Objectifs d'apprentissage",
+        "quote": "Modéliser des problèmes relevant des opérations à trous par des équations du type a𝑥 = c ou 𝑥 + b = c ."
+      },
+      {
+        "source": "Cycle 4, classe de 5e, Nombres et calculs, Calcul littéral et algébrique, Objectifs d'apprentissage",
+        "quote": "Donner à la lettre le statut d'inconnue."
+      },
+      {
+        "source": "Cycle 4, classe de 5e, Nombres et calculs, Nombres relatifs, Automatismes",
+        "quote": "Savoir que pour compléter une addition à trou, on utilise une soustraction : 2 + ... = 7 se complète en calculant 7 – 2."
+      }
+    ]
+  },
+  {
+    "id": "F024",
+    "domain": "F",
+    "domain_name": "Algèbre",
+    "label": "Résoudre une équation ax + b = c",
+    "description": "Résoudre une équation du type ax + b = c par étapes équivalentes : retrancher (ou ajouter) un même nombre aux deux membres, puis diviser les deux membres par un même nombre non nul : 3x + 5 = 17 donne 3x = 12, puis x = 4 ; −2x + 7 = 15 donne −2x = 8, puis x = −4 ; 6x − 1 = 3 donne x = 4/6 = 2/3 ; 0,5x + 3 = 7 donne x = 8 ; vérifier la solution en remplaçant x (F063). L'erreur type est de diviser un seul terme (3x + 5 = 17 donne x + 5 = 17/3), ou de se tromper de signe (−2x = 8 donne x = 4). Réponse : la solution, un nombre ou une fraction (« x = 4 » et « 2/3 » sont acceptés). Figure : aucune.",
+    "prerequisites": [
+      "F023",
+      "F063",
+      "C034",
+      "C007"
+    ],
+    "difficulty": 5,
+    "school_level": "4e",
+    "validation_test": "Résous 4x + 3 = 23, puis −5x + 2 = 17, puis 3x − 4 = 1.",
+    "mastery_threshold": {
+      "required": 3,
+      "out_of": 4
+    },
+    "exercise_ids": [],
+    "mindmap_id": null,
+    "programme_ref": [
+      {
+        "source": "Cycle 4, classe de 4e, Nombres et calculs, Calcul littéral et algébrique, Objectifs d'apprentissage",
+        "quote": "Résoudre une équation du premier degré du type a𝑥 + b = c."
+      },
+      {
+        "source": "Cycle 4, classe de 4e, Nombres et calculs, Calcul littéral et algébrique, Automatismes",
+        "quote": "Résoudre des équations du type a𝑥 = c et 𝑥 + b = c, où a, b et c sont des nombres."
+      }
+    ]
+  },
+  {
+    "id": "F025",
+    "domain": "F",
+    "domain_name": "Algèbre",
+    "label": "Résoudre une équation ax + b = cx + d",
+    "description": "Résoudre une équation dont l'inconnue figure dans les deux membres, éventuellement après avoir développé : regrouper les termes en x dans un membre et les nombres dans l'autre, en ajoutant ou retranchant un même terme aux deux membres, puis diviser : 5x − 3 = 2x + 9 donne 3x = 12, puis x = 4 ; 3(x − 2) = x + 4 donne 3x − 6 = x + 4, 2x = 10, x = 5 ; 2x + 7 = 5x − 1 donne x = 8/3. L'erreur type est de « passer » un terme sans changer son signe (5x − 3 = 2x + 9 donne 7x = 12) ou de développer seulement le premier terme. Réponse : la solution, un nombre ou une fraction. Figure : aucune.",
+    "prerequisites": [
+      "F024",
+      "F014"
+    ],
+    "difficulty": 6,
+    "school_level": "4e",
+    "validation_test": "Résous 7x + 2 = 3x + 18, puis 4(x + 1) = x − 8, puis 6 − x = 2x + 1.",
+    "mastery_threshold": {
+      "required": 3,
+      "out_of": 4
+    },
+    "exercise_ids": [],
+    "mindmap_id": null,
+    "programme_ref": [
+      {
+        "source": "Cycle 4, classe de 4e, Nombres et calculs, Calcul littéral et algébrique, Objectifs d'apprentissage",
+        "quote": "Mettre en équation un problème et le résoudre à l'aide d'une équation du premier degré du type a𝑥 + b = c𝑥 + d."
+      }
+    ]
+  },
+  {
+    "id": "F027",
+    "domain": "F",
+    "domain_name": "Algèbre",
+    "label": "Résoudre une équation produit nul",
+    "description": "Savoir qu'un produit est nul si et seulement si l'un au moins de ses facteurs est nul, et résoudre une équation écrite, ou mise après factorisation, sous la forme d'un produit nul : (x − 3)(2x + 5) = 0 a deux solutions, 3 et −5/2 ; x(x − 4) = 0 a pour solutions 0 et 4 ; x² − 9 = 0 s'écrit (x − 3)(x + 3) = 0 ; vérifier les solutions trouvées (analyse, puis synthèse). L'erreur type est de développer au lieu d'utiliser le produit nul, d'oublier une solution (0 dans x(x − 4) = 0) ou de résoudre x − 3 = 0 en x = −3. Réponse : les solutions demandées une par une (la plus petite, puis la plus grande : nombres ou fractions), ou leur nombre ; QCM pour l'ensemble des solutions ; la liste tapée en une fois attend la saisie des listes de solutions (section 5). Figure : aucune.",
+    "prerequisites": [
+      "F024",
+      "F067",
+      "F021"
+    ],
+    "difficulty": 6,
+    "school_level": "3e",
+    "validation_test": "Résous (x + 4)(3x − 6) = 0 : donne la plus petite solution, puis la plus grande. Combien de solutions a l'équation x(2x + 1) = 0 ?",
+    "mastery_threshold": {
+      "required": 3,
+      "out_of": 4
+    },
+    "exercise_ids": [],
+    "mindmap_id": null,
+    "programme_ref": [
+      {
+        "source": "Cycle 4, classe de 3e, Nombres et calculs, Calcul littéral et algébrique, Objectifs d'apprentissage",
+        "quote": "Résoudre une équation produit nul."
+      },
+      {
+        "source": "Cycle 4, classe de 3e, Nombres et calculs, Calcul littéral et algébrique, Objectifs d'apprentissage",
+        "quote": "Pratiquer un raisonnement par analyse-synthèse dans le cadre d'une résolution d'équation."
+      }
+    ]
+  },
+  {
+    "id": "F031",
+    "domain": "F",
+    "domain_name": "Algèbre",
+    "label": "Résoudre une inéquation ax ⩾ b",
+    "description": "Savoir qu'une inéquation a en général une infinité de solutions, tester si un nombre en est solution, et résoudre ax ⩾ b, ax > b, ax ⩽ b ou ax < b en divisant les deux membres par a : le sens de l'inégalité est conservé si a est positif (3x ⩾ 12 donne x ⩾ 4) et changé si a est négatif (−2x ⩾ 6 donne x ⩽ −3), ce qu'on vérifie sur un exemple (−2 × (−4) = 8 et 8 ⩾ 6 : −4 est bien solution) ; solution fractionnaire (3x < 7 donne x < 7/3). L'erreur type est de garder le sens de l'inégalité en divisant par un nombre négatif, ou de confondre ⩾ et >. La résolution graphique relève de l'étape 9. Réponse : QCM entre inégalités solutions, vrai/faux (tel nombre est-il solution ?), ou un nombre (le plus petit entier solution) ; écrire l'inégalité « x ⩾ 4 » au clavier attend la saisie des inégalités (section 5). En attendant la saisie des expressions : QCM, vrai/faux ou nombre. Figure : aucune.",
+    "prerequisites": [
+      "F024",
+      "A023"
+    ],
+    "difficulty": 6,
+    "school_level": "3e",
+    "validation_test": "Le nombre 5 est-il solution de 4x ⩾ 18 ? Résous 5x > 35, puis −3x ⩽ 12 : choisis l'inégalité qui donne les solutions.",
+    "mastery_threshold": {
+      "required": 3,
+      "out_of": 4
+    },
+    "exercise_ids": [],
+    "mindmap_id": null,
+    "programme_ref": [
+      {
+        "source": "Cycle 4, classe de 3e, Nombres et calculs, Calcul littéral et algébrique, Objectifs d'apprentissage",
+        "quote": "Résoudre analytiquement et graphiquement une inéquation du premier degré du type a𝑥 ⩾ b."
+      }
+    ]
+  },
+  {
+    "id": "F061",
+    "domain": "F",
+    "domain_name": "Algèbre",
+    "label": "Somme ou produit : la nature d'une expression littérale",
+    "description": "Dire si une expression littérale est une somme (ou une différence) ou un produit d'après la dernière opération à effectuer, et nommer ses termes ou ses facteurs : 3x + 2 est une somme de deux termes, 3x et 2 ; 5(x + 4) est un produit de deux facteurs, 5 et x + 4 ; 2x − 7 est une différence ; 3x est un produit. Savoir que développer transforme un produit en somme et que factoriser transforme une somme en produit (F012). L'erreur type est de se fier à la première opération lue (5(x + 4) jugé « somme » parce qu'il contient +). Réponse : QCM (somme, différence, produit), vrai/faux, ou le nombre de termes. Figure : aucune.",
+    "prerequisites": [
+      "F003"
+    ],
+    "difficulty": 5,
+    "school_level": "5e",
+    "validation_test": "Les expressions 4(x − 1), 4x − 1 et 2 + 3y sont-elles des sommes, des différences ou des produits ? Combien de termes a l'expression 5x + 2 − x ?",
+    "mastery_threshold": {
+      "required": 3,
+      "out_of": 4
+    },
+    "exercise_ids": [],
+    "mindmap_id": null,
+    "programme_ref": [
+      {
+        "source": "Cycle 4, classe de 5e, Nombres et calculs, Calcul littéral et algébrique, Objectifs d'apprentissage",
+        "quote": "Déterminer si une expression littérale est une somme ou un produit."
+      },
+      {
+        "source": "Cycle 4, classe de 5e, Nombres et calculs, Opérations, Objectifs d'apprentissage",
+        "quote": "Nommer un calcul, distinguer sommes et produits, termes et facteurs."
+      }
+    ]
+  },
+  {
+    "id": "F062",
+    "domain": "F",
+    "domain_name": "Algèbre",
+    "label": "Démontrer une propriété générale par le calcul littéral (5e)",
+    "description": "Distinguer vérifier sur des exemples et démontrer : traduire une propriété avec une lettre, transformer l'expression (réduire, développer, factoriser) et conclure pour tous les nombres. Exemples : la somme de trois entiers consécutifs, n + (n + 1) + (n + 2) = 3n + 3 = 3(n + 1), est un multiple de 3 ; le programme « choisir un nombre, ajouter 4, multiplier par 2, retrancher 8 » donne toujours le double du nombre choisi, car 2(n + 4) − 8 = 2n + 8 − 8 = 2n. L'erreur type est de croire que trois exemples réussis prouvent la propriété. Rédiger une démonstration ne se fait pas à l'écran : l'élève complète une étape (un coefficient, un nombre manquant), remet des étapes dans l'ordre (QCM), choisit la bonne conclusion, ou dit si une suite d'exemples prouve la propriété (vrai/faux). Réponse : nombre manquant, QCM ou vrai/faux. Figure : aucune.",
+    "prerequisites": [
+      "F012",
+      "F022"
+    ],
+    "difficulty": 5,
+    "school_level": "5e",
+    "validation_test": "Programme : choisir un nombre n ; ajouter 5 ; multiplier par 3 ; retrancher le triple du nombre choisi. Complète : 3(n + 5) − 3n = … . Trois essais réussis suffisent-ils à démontrer que le résultat est toujours le même ?",
+    "mastery_threshold": {
+      "required": 3,
+      "out_of": 4
+    },
+    "exercise_ids": [],
+    "mindmap_id": null,
+    "programme_ref": [
+      {
+        "source": "Cycle 4, classe de 5e, Nombres et calculs, Calcul littéral et algébrique, Objectifs d'apprentissage",
+        "quote": "Démontrer une propriété générale par le calcul littéral."
+      },
+      {
+        "source": "Cycle 4, Nombres et calculs, présentation commune aux trois classes",
+        "quote": "Son objectif principal est de permettre la généralisation, la démonstration et la modélisation."
+      }
+    ]
+  },
+  {
+    "id": "F063",
+    "domain": "F",
+    "domain_name": "Algèbre",
+    "label": "Tester si un nombre vérifie une égalité ; valeur pour un nombre relatif",
+    "description": "Calculer la valeur d'une expression pour un nombre relatif, en mettant le nombre négatif entre parenthèses : pour x = −3, 2x + 7 = 2 × (−3) + 7 = 1 ; x² = (−3)² = 9 ; 2x² − 5x + 1 = 18 + 15 + 1 = 34 ; puis tester si un nombre vérifie une égalité en calculant séparément les deux membres : −2 est-il solution de 3x + 7 = x + 3 ? 3 × (−2) + 7 = 1 et −2 + 3 = 1, donc oui. L'erreur type est d'écrire −3² = −9 pour x² avec x = −3, ou d'oublier un signe dans un produit. Réponse : un nombre, ou vrai/faux (le nombre est-il solution ?). Figure : aucune.",
+    "prerequisites": [
+      "F022",
+      "B051",
+      "A031"
+    ],
+    "difficulty": 5,
+    "school_level": "4e",
+    "validation_test": "Calcule 4x − 9 pour x = −2, puis x² + 3x pour x = −5. Le nombre −1 est-il solution de 5x + 8 = 2x + 5 ?",
+    "mastery_threshold": {
+      "required": 3,
+      "out_of": 4
+    },
+    "exercise_ids": [],
+    "mindmap_id": null,
+    "programme_ref": [
+      {
+        "source": "Cycle 4, classe de 4e, Nombres et calculs, Calcul littéral et algébrique, Automatismes",
+        "quote": "Tester si un nombre vérifie une égalité."
+      },
+      {
+        "source": "Cycle 4, classe de 4e, Nombres et calculs, Calcul littéral et algébrique, Automatismes",
+        "quote": "Donner la valeur d'expressions numériques simples."
+      }
+    ]
+  },
+  {
+    "id": "F064",
+    "domain": "F",
+    "domain_name": "Algèbre",
+    "label": "Programme de calcul : l'appliquer à un nombre, à une lettre, le remonter",
+    "description": "Appliquer un programme de calcul de deux à quatre étapes à un nombre, y compris négatif, puis à une lettre en écrivant l'expression obtenue et en la réduisant ; retrouver le nombre de départ à partir du résultat en remontant le programme avec les opérations inverses, dans l'ordre inverse. Exemple : « choisir un nombre, le multiplier par 3, ajouter 5, multiplier le résultat par 2 » donne 34 pour 4, −8 pour −3, et 2(3x + 5) = 6x + 10 pour x ; un résultat de 46 vient de 6 (46 ÷ 2 = 23, 23 − 5 = 18, 18 ÷ 3 = 6). Nommer l'expression obtenue (somme, produit). L'erreur type est de remonter avec les mêmes opérations ou dans le même ordre, ou d'oublier les parenthèses (3x + 5 × 2). Réponse : un nombre (résultat, nombre de départ) ; l'expression en x se choisit (QCM) ou se donne par ses coefficients en attendant la saisie des expressions (section 5). En attendant la saisie des expressions : QCM ou coefficients. Figure : aucune.",
+    "prerequisites": [
+      "F014",
+      "F063"
+    ],
+    "difficulty": 5,
+    "school_level": "4e",
+    "validation_test": "Programme : choisir un nombre ; soustraire 2 ; multiplier par 4 ; ajouter 3. Quel résultat obtient-on pour −1 ? Quel nombre faut-il choisir pour obtenir 31 ? Quelle expression obtient-on en choisissant x ?",
+    "mastery_threshold": {
+      "required": 3,
+      "out_of": 4
+    },
+    "exercise_ids": [],
+    "mindmap_id": null,
+    "programme_ref": [
+      {
+        "source": "Cycle 4, classe de 4e, Proportionnalité, fonctions, Fonctions, Objectifs d'apprentissage",
+        "quote": "Savoir appliquer un programme de calcul à deux (plusieurs) étapes à un nombre simple puis à une variable."
+      },
+      {
+        "source": "Cycle 4, classe de 4e, Proportionnalité, fonctions, Fonctions, Objectifs d'apprentissage",
+        "quote": "Savoir retrouver le nombre de départ après avoir remonté un programme de calcul simple."
+      },
+      {
+        "source": "Cycle 4, classe de 4e, Nombres et calculs, Opérations sur les nombres relatifs, Objectifs d'apprentissage",
+        "quote": "Utiliser le vocabulaire (somme, quotient, etc.) à partir d'un enchainement d'opérations dans un programme de calcul et inversement."
+      }
+    ]
+  },
+  {
+    "id": "F065",
+    "domain": "F",
+    "domain_name": "Algèbre",
+    "label": "Démontrer avec le calcul littéral (4e) : pairs, impairs, formules",
+    "description": "Écrire un nombre pair 2n et un nombre impair 2n + 1 (n entier), et démontrer une propriété générale en transformant une expression avec la distributivité et les relatifs : la somme de deux impairs consécutifs, (2n + 1) + (2n + 3) = 4n + 4 = 4(n + 1), est un multiple de 4 ; le carré d'un nombre pair est pair, car (2n)² = 4n² = 2 × 2n² ; deux programmes de calcul donnent toujours le même résultat. Produire une formule (aire d'une figure composée) et tester sa vraisemblance en remplaçant la lettre par un nombre. L'erreur type est de noter de la même façon deux nombres différents (deux pairs écrits 2n et 2n), ou de conclure sur des exemples. Rédiger une démonstration ne se fait pas à l'écran : l'élève complète une étape (coefficient, nombre manquant), choisit l'expression d'un nombre pair ou impair (QCM), remet des étapes dans l'ordre ou choisit la bonne conclusion. Réponse : nombre manquant, QCM ou vrai/faux. Figure : aucune.",
+    "prerequisites": [
+      "F062",
+      "F014"
+    ],
+    "difficulty": 6,
+    "school_level": "4e",
+    "validation_test": "Vrai ou faux : 2n + 1 désigne un nombre impair quand n est un entier ? Complète : (2n + 1) + (2n + 5) = 4n + … = 2(2n + …), donc la somme de ces deux impairs est paire.",
+    "mastery_threshold": {
+      "required": 3,
+      "out_of": 4
+    },
+    "exercise_ids": [],
+    "mindmap_id": null,
+    "programme_ref": [
+      {
+        "source": "Cycle 4, classe de 4e, Nombres et calculs, Calcul littéral et algébrique, Objectifs d'apprentissage",
+        "quote": "Utiliser le calcul algébrique pour produire des démonstrations."
+      },
+      {
+        "source": "Cycle 4, classe de 4e, Nombres et calculs, Calcul littéral et algébrique, Objectifs d'apprentissage",
+        "quote": "Produire des formules et tester leur vraisemblance : aires de formes géométriques simples, nombres pairs/impairs, etc."
+      }
+    ]
+  },
+  {
+    "id": "F066",
+    "domain": "F",
+    "domain_name": "Algèbre",
+    "label": "Mettre un problème en équation et le résoudre",
+    "description": "Choisir l'inconnue et dire ce qu'elle représente, traduire l'énoncé par une équation du premier degré (du type ax + b = c ou ax + b = cx + d), la résoudre, vérifier la solution dans l'énoncé et répondre par une phrase. Exemples : deux forfaits, 15 € plus 0,50 € par séance et 25 € plus 0,25 € par séance, coûtent autant pour x séances quand 15 + 0,5x = 25 + 0,25x, soit x = 40 ; un rectangle dont la longueur dépasse la largeur x de 3 cm et dont le périmètre vaut 34 cm : 2(x + x + 3) = 34, x = 7, et la longueur vaut 10 cm ; quel nombre choisir pour que deux programmes de calcul donnent le même résultat. L'erreur type est de mal choisir l'inconnue ou de répondre par la valeur de x quand la question porte sur une autre grandeur (la longueur). Réponse : un nombre (la grandeur demandée) ; l'équation se choisit (QCM) en attendant la saisie des équations (section 5). En attendant la saisie des expressions : QCM pour l'équation. Figure : aucune.",
+    "prerequisites": [
+      "F025",
+      "F064"
+    ],
+    "difficulty": 6,
+    "school_level": "4e",
+    "validation_test": "Un père a 41 ans et son fils 9 ans. Dans combien d'années le père aura-t-il le triple de l'âge de son fils ? Choisis l'équation qui traduit le problème, puis résous-la.",
+    "mastery_threshold": {
+      "required": 3,
+      "out_of": 4
+    },
+    "exercise_ids": [],
+    "mindmap_id": null,
+    "programme_ref": [
+      {
+        "source": "Cycle 4, classe de 4e, Nombres et calculs, Calcul littéral et algébrique, Objectifs d'apprentissage",
+        "quote": "Mettre en équation un problème et le résoudre à l'aide d'une équation du premier degré du type a𝑥 + b = c𝑥 + d."
+      },
+      {
+        "source": "Cycle 4, Nombres et calculs, présentation commune aux trois classes",
+        "quote": "Il doit ainsi être intégré à la résolution de problèmes concrets ou internes aux mathématiques, qui en justifient l'usage et en renforcent la pertinence."
+      }
+    ]
+  },
+  {
+    "id": "F067",
+    "domain": "F",
+    "domain_name": "Algèbre",
+    "label": "Factoriser par un facteur commun apparent ; simplifier un produit ou un quotient",
+    "description": "Repérer un facteur commun qui est lui-même une expression et factoriser : (x + 2)(3x − 1) + (x + 2)(x + 5) = (x + 2)(4x + 4) ; (2x + 1)(x − 3) − (2x + 1)(4 − x) = (2x + 1)(2x − 7), en mettant le second facteur entre parenthèses avant de le réduire ; simplifier un produit ou un quotient par des facteurs communs, jamais par des termes, quand le dénominateur n'est pas nul : 6x(x + 1) ÷ (3(x + 1)) = 2x ; 12x ÷ 4x = 3 ; (x + 6)/6 ne se simplifie pas. L'erreur type est de simplifier des termes ((x + 6)/6 = x + 1) ou d'oublier les parenthèses du second facteur. Réponse : QCM entre écritures factorisées ou simplifiées, vrai/faux pour une simplification, ou un coefficient (un nombre) ; écrire la forme factorisée au clavier attend la saisie des expressions avec contrainte de forme (section 5). En attendant la saisie des expressions : QCM ou coefficient. Figure : aucune.",
+    "prerequisites": [
+      "F013",
+      "C007"
+    ],
+    "difficulty": 6,
+    "school_level": "3e",
+    "validation_test": "Factorise (x + 5)(2x + 1) + (x + 5)(x − 4). Vrai ou faux : (x + 9)/9 = x + 1 ? Simplifie 15x ÷ 5x pour x non nul.",
+    "mastery_threshold": {
+      "required": 3,
+      "out_of": 4
+    },
+    "exercise_ids": [],
+    "mindmap_id": null,
+    "programme_ref": [
+      {
+        "source": "Cycle 4, classe de 3e, Nombres et calculs, Calcul littéral et algébrique, Objectifs d'apprentissage",
+        "quote": "Simplifier des expressions produits ou des rapports comportant des facteurs communs."
+      },
+      {
+        "source": "Cycle 4, classe de 3e, Nombres et calculs, Calcul littéral et algébrique, Objectifs d'apprentissage",
+        "quote": "Utiliser la double distributivité pour développer et factoriser des expressions dont le facteur est apparent."
+      },
+      {
+        "source": "Cycle 4, classe de 3e, Nombres et calculs, Calcul littéral et algébrique, Automatismes",
+        "quote": "Développer et factoriser une expression simple."
+      }
+    ]
+  },
+  {
+    "id": "F068",
+    "domain": "F",
+    "domain_name": "Algèbre",
+    "label": "Résoudre une équation x² = a",
+    "description": "Résoudre x² = a par le calcul : si a est positif, deux solutions, √a et −√a (x² = 49 donne 7 et −7 ; x² = 5 donne √5 ≈ 2,24 et −√5 ≈ −2,24) ; si a = 0, une seule solution, 0 ; si a est négatif, aucune solution, car un carré n'est jamais négatif ; s'y ramener (2x² − 8 = 10 donne x² = 9, donc x = 3 ou x = −3). La résolution graphique, avec la courbe de la fonction carré, relève de l'étape 9. L'erreur type est d'oublier la solution négative, ou de donner une racine d'un nombre négatif comme solution de x² = −4. Réponse : le nombre de solutions (un nombre ou QCM), puis chaque solution demandée à part (un nombre ; valeur approchée avec une tolérance et le rang d'arrondi dit dans l'énoncé) ; une solution exacte comme √5 se choisit (QCM) en attendant la saisie des racines (section 5). Figure : aucune.",
+    "prerequisites": [
+      "A040",
+      "F024"
+    ],
+    "difficulty": 6,
+    "school_level": "3e",
+    "validation_test": "Combien de solutions a l'équation x² = 36 ? Donne la solution négative. Quelle est la solution positive de x² = 7, arrondie au centième ? L'équation x² = −16 a-t-elle une solution ?",
+    "mastery_threshold": {
+      "required": 3,
+      "out_of": 4
+    },
+    "exercise_ids": [],
+    "mindmap_id": null,
+    "programme_ref": [
+      {
+        "source": "Cycle 4, classe de 3e, Nombres et calculs, Racine carrée, Objectifs d'apprentissage",
+        "quote": "Résoudre analytiquement et graphiquement des équations de la forme 𝑥2 = a."
+      },
+      {
+        "source": "Cycle 4, classe de 3e, Nombres et calculs, Racine carrée, Automatismes",
+        "quote": "Donner les carrés des nombres entiers compris entre 0 et 12."
+      }
+    ]
+  }
+]
