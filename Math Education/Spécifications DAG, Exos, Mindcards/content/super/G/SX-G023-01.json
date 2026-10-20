@@ -1,0 +1,123 @@
+{
+  "id": "SX-G023-01",
+  "skill_id": "G023",
+  "skill_ids": [
+    "G023",
+    "B001"
+  ],
+  "school_level": "CM2",
+  "title": "Le parcours de la cour",
+  "contexte": "Dans la cour, la maîtresse a peint un parcours de cinq dalles, numérotées de 1 à 5. Le dessin les montre sur un quadrillage ; les codages indiquent les angles droits.\n\nRègle du jeu : sur chaque dalle où il pose le pied, un élève gagne des étoiles.\nSur un trapèze, il gagne 10 étoiles.\nSur un hexagone, il gagne 20 étoiles.\nSur un pentagone, il gagne 30 étoiles.\nSur une autre dalle, il gagne 5 étoiles.\n\nLa partie dure 15 minutes et la classe compte 26 élèves.",
+  "image": "figures/SX-G023-01",
+  "duree_estimee_min": 12,
+  "questions": [
+    {
+      "key": "q1",
+      "skill_id": "G023",
+      "statement": "Combien d'étoiles un élève gagne-t-il sur une dalle qui a 6 côtés ?",
+      "type": "qcm",
+      "choices": [
+        {
+          "key": "a",
+          "text": "10 étoiles",
+          "misconception": "L'élève prend la première ligne de la règle : 10 étoiles, c'est pour un trapèze, qui a 4 côtés."
+        },
+        {
+          "key": "b",
+          "text": "20 étoiles",
+          "misconception": null
+        },
+        {
+          "key": "c",
+          "text": "30 étoiles",
+          "misconception": "L'élève confond hexagone et pentagone : le pentagone a 5 côtés, et c'est lui qui rapporte 30 étoiles."
+        }
+      ],
+      "answer": {
+        "value": "b"
+      },
+      "points": 1,
+      "solution_steps": [
+        "Un polygone à 6 côtés est un hexagone.",
+        "La règle dit : « Sur un hexagone, il gagne 20 étoiles ». La réponse est **20 étoiles**."
+      ],
+      "hint": "Quel est le nom d'un polygone à 6 côtés ?"
+    },
+    {
+      "key": "q2",
+      "skill_id": "G023",
+      "statement": "Quelle dalle est un trapèze rectangle ?",
+      "type": "qcm",
+      "choices": [
+        {
+          "key": "a",
+          "text": "La dalle 1",
+          "misconception": null
+        },
+        {
+          "key": "b",
+          "text": "La dalle 3",
+          "misconception": "La dalle 3 est un trapèze : ses côtés du haut et du bas sont parallèles. Mais elle n'a aucun angle droit, ce n'est pas un trapèze rectangle."
+        },
+        {
+          "key": "c",
+          "text": "La dalle 4",
+          "misconception": "L'élève voit un côté horizontal et pense au trapèze. Mais la dalle 4 n'a pas d'angle droit, et ses côtés du haut et du bas ne sont pas parallèles."
+        }
+      ],
+      "answer": {
+        "value": "a"
+      },
+      "points": 2,
+      "solution_steps": [
+        "Un trapèze rectangle est un quadrilatère qui a deux côtés opposés parallèles et deux angles droits.",
+        "La dalle 1 a deux côtés horizontaux, sur des lignes du quadrillage : ils sont parallèles. Ses deux angles de gauche sont codés droits.",
+        "C'est **la dalle 1**."
+      ],
+      "hint": "Cherche un quadrilatère qui a des angles droits codés, puis vérifie ses côtés parallèles."
+    },
+    {
+      "key": "q3",
+      "skill_id": "B001",
+      "statement": "Sami pose le pied sur les dalles 2, 3 et 5. Combien d'étoiles gagne-t-il ?",
+      "type": "numerique",
+      "answer": {
+        "value": 60,
+        "unit": "étoiles",
+        "accepted": [
+          "60 étoiles",
+          "soixante"
+        ]
+      },
+      "points": 2,
+      "solution_steps": [
+        "La dalle 2 a 6 côtés : c'est un hexagone, 20 étoiles.",
+        "La dalle 3 a ses côtés du haut et du bas sur des lignes du quadrillage : ils sont parallèles, c'est un trapèze, 10 étoiles.",
+        "La dalle 5 a 5 côtés : c'est un pentagone, 30 étoiles.",
+        "20 + 10 + 30 = 60 : Sami gagne **60 étoiles**.",
+        "Attention : prendre la dalle 3 pour une « autre dalle » donne 20 + 5 + 30 = 55."
+      ],
+      "hint": "Donne d'abord le nom de chaque dalle, puis lis la règle."
+    },
+    {
+      "key": "q4",
+      "skill_id": "G023",
+      "statement": "Lou dit : « La dalle 4 est un trapèze. »\n\nA-t-elle raison ?",
+      "type": "vrai_faux",
+      "answer": {
+        "value": false
+      },
+      "points": 3,
+      "solution_steps": [
+        "Un trapèze est un quadrilatère qui a deux côtés opposés parallèles.",
+        "Le côté du haut de la dalle 4 suit une ligne du quadrillage : il est horizontal.",
+        "Le côté du bas descend de 1 carreau quand il avance de 5 carreaux vers la droite : il n'est pas horizontal. Ces deux côtés finiraient par se couper.",
+        "Les deux autres côtés ne sont pas parallèles non plus : quand on avance de 1 carreau vers la droite, celui de gauche monte de 1 carreau, et celui de droite descend de 2 carreaux.",
+        "La dalle 4 n'a aucun couple de côtés parallèles : Lou **a tort**, ce n'est pas un trapèze."
+      ],
+      "hint": "Compte les carreaux pour comparer la direction des côtés opposés de la dalle 4."
+    }
+  ],
+  "review_status": "brouillon",
+  "programme_ref": "Cycle 3, Cours moyen deuxième année, Espace et géométrie, La géométrie plane : « Reconnaître et nommer les figures suivantes en s'appuyant sur leur définition : triangle, triangle rectangle, triangle isocèle, triangle équilatéral, quadrilatère, carré, rectangle, losange, trapèze, trapèze rectangle, pentagone et hexagone »"
+}

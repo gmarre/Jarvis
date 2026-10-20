@@ -1,0 +1,158 @@
+{
+  "id": "SX-G030-01",
+  "skill_id": "G030",
+  "skill_ids": [
+    "G030",
+    "D021"
+  ],
+  "school_level": "6e",
+  "title": "Le reflet de la tente",
+  "contexte": "Au bord d'un lac très calme, Tom photographie sa tente et son reflet dans l'eau. Sur le dessin, la droite (d) représente la surface de l'eau, et le côté d'un carreau représente 1 m. Le reflet d'un point est son symétrique par rapport à la droite (d).\n\nLa tente est le triangle RST ; son reflet est le triangle R'S'T'. Les longueurs écrites sont en mètres.\n\nUne lanterne est accrochée au point M ; les points A, B et C sont trois positions possibles pour son reflet.\n\nTom a acheté 6 sardines à 0,85 € l'une ; sa tente pèse 2,3 kg.\n\nLe soir, une chauve-souris vole à 3,4 m au-dessus de l'eau.",
+  "image": "figures/SX-G030-01",
+  "duree_estimee_min": 15,
+  "questions": [
+    {
+      "key": "q1",
+      "skill_id": "G030",
+      "statement": "D'après le texte, que représente la droite (d) ?",
+      "type": "qcm",
+      "choices": [
+        {
+          "key": "a",
+          "text": "Le sol sous la tente",
+          "misconception": "L'élève devine d'après le dessin : le texte dit que (d) est la surface de l'eau."
+        },
+        {
+          "key": "b",
+          "text": "La surface de l'eau",
+          "misconception": null
+        },
+        {
+          "key": "c",
+          "text": "La corde de la lanterne",
+          "misconception": "L'élève associe la droite à un objet de l'énoncé au hasard : aucune corde n'est dessinée."
+        }
+      ],
+      "answer": {
+        "value": "b"
+      },
+      "points": 1,
+      "solution_steps": [
+        "Le texte dit : « la droite (d) représente la surface de l'eau ».",
+        "C'est l'axe de la symétrie : le reflet d'un point est son symétrique par rapport à (d)."
+      ],
+      "hint": "Relis la première phrase du texte."
+    },
+    {
+      "key": "q2",
+      "skill_id": "G030",
+      "statement": "Quel est le périmètre du reflet R'S'T', en mètres ?",
+      "type": "numerique",
+      "answer": {
+        "value": 7.8,
+        "unit": "m",
+        "accepted": [
+          "7,8 m",
+          "7,80 m",
+          "7,8 mètres",
+          "7 m 80 cm",
+          "780 cm"
+        ]
+      },
+      "points": 2,
+      "solution_steps": [
+        "La symétrie conserve les longueurs : R'S' = RS = 3,6 m et S'T' = ST = 2,3 m. R'T' est écrit : 1,9 m.",
+        "Périmètre : 3,6 + 2,3 + 1,9 = 7,8.",
+        "Le périmètre du reflet est **7,8 m**. Attention : 3,6 + 1,9 = 5,5 n'additionne que deux côtés ; les longueurs de [R'S'] et de [S'T'] se lisent sur la tente."
+      ],
+      "hint": "Toutes les longueurs ne sont pas écrites sur le reflet : où trouver celles qui manquent ?"
+    },
+    {
+      "key": "q3",
+      "skill_id": "D021",
+      "statement": "Combien Tom a-t-il payé ses sardines, en euros ?",
+      "type": "numerique",
+      "answer": {
+        "value": 5.1,
+        "unit": "€",
+        "accepted": [
+          "5,10",
+          "5,1 €",
+          "5,10 €",
+          "5,10€",
+          "5,1 euros",
+          "5,10 euros",
+          "5 € 10"
+        ]
+      },
+      "points": 2,
+      "solution_steps": [
+        "Tom achète 6 sardines à 0,85 € : on calcule 0,85 × 6.",
+        "85 × 6 = 510 ; il y a deux chiffres après la virgule dans 0,85, donc 0,85 × 6 = 5,10.",
+        "Tom a payé **5,10 €**."
+      ],
+      "hint": null
+    },
+    {
+      "key": "q4",
+      "skill_id": "G030",
+      "statement": "Quel point est le reflet de la lanterne M ?",
+      "type": "qcm",
+      "choices": [
+        {
+          "key": "a",
+          "text": "Le point A",
+          "misconception": "L'élève descend à la verticale de M, mais ne compte pas : A est à 3 carreaux de (d), alors que M en est à 2."
+        },
+        {
+          "key": "b",
+          "text": "Le point B",
+          "misconception": "L'élève reporte bien la distance à (d), mais se décale sur le côté : le segment [MB] ne coupe pas (d) à angle droit."
+        },
+        {
+          "key": "c",
+          "text": "Le point C",
+          "misconception": null
+        }
+      ],
+      "answer": {
+        "value": "c"
+      },
+      "points": 3,
+      "solution_steps": [
+        "La droite (d) est la médiatrice du segment qui joint M à son reflet : ce segment coupe (d) à angle droit, en son milieu.",
+        "(d) est horizontale : le reflet de M est sur la ligne verticale qui passe par M, ce qui élimine B.",
+        "M est à 2 carreaux au-dessus de (d) : son reflet est à 2 carreaux en dessous. A est à 3 carreaux, C à 2 carreaux.",
+        "Le reflet de la lanterne est **le point C**."
+      ],
+      "hint": "Compte les carreaux entre M et la droite (d)."
+    },
+    {
+      "key": "q5",
+      "skill_id": "G030",
+      "statement": "À quelle distance de son reflet se trouve la chauve-souris, en mètres ?",
+      "type": "numerique",
+      "answer": {
+        "value": 6.8,
+        "unit": "m",
+        "accepted": [
+          "6,8 m",
+          "6,80 m",
+          "6,8 mètres",
+          "6 m 80 cm",
+          "680 cm"
+        ]
+      },
+      "points": 3,
+      "solution_steps": [
+        "La surface de l'eau (d) est la médiatrice du segment qui joint la chauve-souris à son reflet : elle le coupe en son milieu.",
+        "La chauve-souris est à 3,4 m de l'eau, donc son reflet est à 3,4 m sous l'eau.",
+        "3,4 × 2 = 6,8. La chauve-souris est à **6,8 m** de son reflet.",
+        "Attention : 3,4 m est la distance à l'eau, c'est-à-dire la moitié seulement."
+      ],
+      "hint": "Où est le reflet de la chauve-souris par rapport à l'eau ?"
+    }
+  ],
+  "review_status": "brouillon",
+  "programme_ref": "Cycle 3, classe de 6e, Espace et géométrie, Étude de configurations planes, Symétrie axiale : « Connaître la définition du symétrique d'un point par rapport à une droite »"
+}

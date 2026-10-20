@@ -1,0 +1,162 @@
+{
+  "id": "SX-G028-01",
+  "skill_id": "G028",
+  "skill_ids": [
+    "G028",
+    "D007",
+    "D021"
+  ],
+  "school_level": "6e",
+  "title": "Les chèvres de M. Dupré",
+  "contexte": "M. Dupré attache ses deux chèvres dans un pré.\n\nBiquette est attachée au piquet P par une corde de 3 m : elle peut aller partout à 3 m ou moins du point P, mais pas plus loin. Noisette est attachée de la même façon au piquet Q, par une corde de 2,5 m.\n\nSur le plan, les longueurs écrites sont les distances réelles. Un chou est planté en chacun des points R, S et T.\n\nM. Dupré pose un seau d'eau au milieu du segment [PQ].\n\nIl refait aussi la barrière du pré : 25,2 m de barrière, en 6 panneaux de même longueur.\n\nIl a 15 chèvres en tout ; il a acheté le pré en 2019.",
+  "image": "figures/SX-G028-01",
+  "duree_estimee_min": 15,
+  "questions": [
+    {
+      "key": "q1",
+      "skill_id": "G028",
+      "statement": "Comment s'appelle l'ensemble des points où Biquette peut aller ?",
+      "type": "qcm",
+      "choices": [
+        {
+          "key": "a",
+          "text": "Le cercle de centre P et de rayon 3 m",
+          "misconception": "L'élève confond cercle et disque : le cercle ne contient que les points à 3 m exactement, alors que Biquette peut aussi s'approcher du piquet."
+        },
+        {
+          "key": "b",
+          "text": "Le disque de centre P et de rayon 3 m",
+          "misconception": null
+        },
+        {
+          "key": "c",
+          "text": "Le segment [PQ]",
+          "misconception": "L'élève prend la seule ligne qui part de P : Biquette ne reste pas sur le segment qui va vers Noisette."
+        }
+      ],
+      "answer": {
+        "value": "b"
+      },
+      "points": 1,
+      "solution_steps": [
+        "Biquette peut aller partout à 3 m ou moins du point P : sur le bord, à 3 m exactement, et aussi à l'intérieur.",
+        "Les points à une distance de P inférieure ou égale à 3 m forment **le disque de centre P et de rayon 3 m**. Le cercle n'en est que le bord."
+      ],
+      "hint": "Biquette reste-t-elle seulement sur le bord ?"
+    },
+    {
+      "key": "q2",
+      "skill_id": "G028",
+      "statement": "Combien de choux Biquette peut-elle atteindre ?",
+      "type": "numerique",
+      "answer": {
+        "value": 2,
+        "unit": "choux",
+        "accepted": [
+          "2 choux",
+          "deux",
+          "deux choux"
+        ]
+      },
+      "points": 2,
+      "solution_steps": [
+        "Biquette atteint un chou s'il est à 3 m ou moins du piquet P.",
+        "PR = 2,4 m : 2,4 est plus petit que 3, Biquette atteint le chou R.",
+        "PS = 3 m : le chou S est juste sur le bord, à 3 m, Biquette l'atteint.",
+        "PT = 3,2 m : 3,2 est plus grand que 3, Biquette ne l'atteint pas.",
+        "Biquette peut atteindre **2 choux**, R et S."
+      ],
+      "hint": "Compare chaque distance écrite à la longueur de la corde."
+    },
+    {
+      "key": "q3",
+      "skill_id": "D007",
+      "statement": "Combien de mètres mesure un panneau de la barrière ?",
+      "type": "numerique",
+      "answer": {
+        "value": 4.2,
+        "unit": "m",
+        "accepted": [
+          "4,2 m",
+          "4,20 m",
+          "4,2 mètres",
+          "4 m 20 cm",
+          "420 cm"
+        ]
+      },
+      "points": 2,
+      "solution_steps": [
+        "On partage 25,2 m en 6 panneaux de même longueur : on calcule 25,2 ÷ 6.",
+        "On pose la division : en 25, il y a 4 fois 6 (6 × 4 = 24), reste 1. On abaisse le 2 des dixièmes et on écrit la virgule au quotient : en 12, il y a 2 fois 6, reste 0.",
+        "25,2 ÷ 6 = 4,2. Un panneau mesure **4,2 m**. Vérification : 6 × 4,2 = 25,2."
+      ],
+      "hint": "Pose la division, et place la virgule au quotient quand tu abaisses le chiffre des dixièmes."
+    },
+    {
+      "key": "q4",
+      "skill_id": "D021",
+      "statement": "Quelle est la plus grande distance entre deux points de la zone où Noisette peut aller ?",
+      "type": "numerique",
+      "answer": {
+        "value": 5,
+        "unit": "m",
+        "accepted": [
+          "5 m",
+          "5 mètres",
+          "5,0 m",
+          "500 cm",
+          "500 centimètres"
+        ]
+      },
+      "points": 2,
+      "solution_steps": [
+        "Noisette peut aller dans le disque de centre Q et de rayon 2,5 m.",
+        "Les deux points les plus éloignés de ce disque sont les deux bouts d'un diamètre, et un diamètre mesure deux fois le rayon.",
+        "2,5 × 2 = 5. La plus grande distance est **5 m**.",
+        "Attention : 2,5 m est la distance du piquet au bord, pas d'un bord à l'autre."
+      ],
+      "hint": "Quel segment du disque est le plus long ?"
+    },
+    {
+      "key": "q5",
+      "skill_id": "G028",
+      "statement": "Quelle chèvre peut boire au seau ?",
+      "type": "qcm",
+      "choices": [
+        {
+          "key": "a",
+          "text": "Biquette seulement",
+          "misconception": null
+        },
+        {
+          "key": "b",
+          "text": "Noisette seulement",
+          "misconception": "L'élève compare 2,5 m et 3 m sans calculer la distance au seau, ou inverse les deux chèvres."
+        },
+        {
+          "key": "c",
+          "text": "Les deux chèvres",
+          "misconception": "L'élève pense que le milieu est forcément à portée des deux : il est à 2,7 m de Q, plus loin que la corde de Noisette."
+        },
+        {
+          "key": "d",
+          "text": "Aucune des deux",
+          "misconception": "L'élève compare la longueur totale 5,4 m aux cordes, au lieu de la distance de chaque piquet au milieu."
+        }
+      ],
+      "answer": {
+        "value": "a"
+      },
+      "points": 4,
+      "solution_steps": [
+        "Le seau est au milieu du segment [PQ], qui mesure 5,4 m : il est à 5,4 ÷ 2 = 2,7 m de P et à 2,7 m de Q.",
+        "Biquette : 2,7 m est moins que sa corde de 3 m, elle atteint le seau.",
+        "Noisette : 2,7 m est plus que sa corde de 2,5 m, elle ne l'atteint pas.",
+        "**Seule Biquette** peut boire au seau."
+      ],
+      "hint": "À quelle distance de chaque piquet est le milieu du segment [PQ] ?"
+    }
+  ],
+  "review_status": "brouillon",
+  "programme_ref": "Cycle 3, classe de 6e, Espace et géométrie, Étude de configurations planes, Cercles et disques : « Résoudre des problèmes mettant en jeu des distances à un point »"
+}

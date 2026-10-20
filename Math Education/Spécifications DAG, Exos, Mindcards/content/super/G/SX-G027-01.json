@@ -1,0 +1,142 @@
+{
+  "id": "SX-G027-01",
+  "skill_id": "G027",
+  "skill_ids": [
+    "G027",
+    "G017",
+    "B004"
+  ],
+  "school_level": "6e",
+  "title": "La cabane dans les arbres",
+  "contexte": "Malo et sa sœur construisent une cabane dans les arbres. Le dessin montre trois pièces de bois, vues de face, avec leurs codages et la mesure de quelques angles :\nle triangle ABC forme le toit ;\nle triangle DEF est l'équerre qui soutient le plancher ;\nle triangle GHI décore la porte.\n\nPour le toit, ils ont acheté une planche de 500 cm ; ils en ont déjà découpé 236 cm.\n\nLa cabane est à 3 m du sol, et leur père a mis 2 jours à monter le plancher.",
+  "image": "figures/SX-G027-01",
+  "duree_estimee_min": 15,
+  "questions": [
+    {
+      "key": "q1",
+      "skill_id": "G017",
+      "statement": "Quel est le nom précis du triangle DEF ?",
+      "type": "qcm",
+      "choices": [
+        {
+          "key": "a",
+          "text": "Un triangle isocèle",
+          "misconception": "Aucun codage ne montre deux côtés de même longueur dans le triangle DEF."
+        },
+        {
+          "key": "b",
+          "text": "Un triangle rectangle",
+          "misconception": null
+        },
+        {
+          "key": "c",
+          "text": "Un triangle équilatéral",
+          "misconception": "Un triangle équilatéral a ses trois côtés codés égaux et trois angles de 60° : DEF a un angle droit."
+        }
+      ],
+      "answer": {
+        "value": "b"
+      },
+      "points": 1,
+      "solution_steps": [
+        "Le petit carré en E code un angle droit.",
+        "Un triangle qui a un angle droit est un **triangle rectangle**. Aucun codage ne montre deux côtés de même longueur."
+      ],
+      "hint": "Quel codage vois-tu au sommet E ?"
+    },
+    {
+      "key": "q2",
+      "skill_id": "G027",
+      "statement": "Combien de degrés mesure l'angle $\\widehat{EDF}$ ?",
+      "type": "numerique",
+      "answer": {
+        "value": 42,
+        "unit": "°",
+        "accepted": [
+          "42°",
+          "42 °",
+          "42 degrés",
+          "42 degré"
+        ]
+      },
+      "points": 2,
+      "solution_steps": [
+        "La somme des angles d'un triangle est 180°.",
+        "Dans le triangle DEF, l'angle en E est droit (90°) et l'angle en F mesure 48° : 90 + 48 = 138.",
+        "180 − 138 = 42 : l'angle $\\widehat{EDF}$ mesure **42°**. On peut aussi dire que les deux angles aigus d'un triangle rectangle font 90° ensemble : 90 − 48 = 42."
+      ],
+      "hint": "Combien mesure l'angle en E ? Que vaut la somme des trois angles ?"
+    },
+    {
+      "key": "q3",
+      "skill_id": "B004",
+      "statement": "Quelle longueur de planche leur reste-t-il, en centimètres ?",
+      "type": "numerique",
+      "answer": {
+        "value": 264,
+        "unit": "cm",
+        "accepted": [
+          "264 cm",
+          "264 centimètres"
+        ]
+      },
+      "points": 2,
+      "solution_steps": [
+        "Ils avaient 500 cm et en ont découpé 236 cm : on calcule 500 − 236.",
+        "En colonnes : 0 − 6 impossible, on casse une centaine du 500 en 4 centaines, 9 dizaines et 10 unités. 10 − 6 = 4, 9 − 3 = 6, 4 − 2 = 2.",
+        "500 − 236 = 264. Il leur reste **264 cm**. Vérification : 236 + 264 = 500."
+      ],
+      "hint": null
+    },
+    {
+      "key": "q4",
+      "skill_id": "G027",
+      "statement": "Combien de degrés mesure l'angle $\\widehat{GHI}$ ?",
+      "type": "numerique",
+      "answer": {
+        "value": 60,
+        "unit": "°",
+        "accepted": [
+          "60°",
+          "60 °",
+          "60 degrés",
+          "60 degré"
+        ]
+      },
+      "points": 2,
+      "solution_steps": [
+        "Les trois côtés du triangle GHI portent le même codage : il est équilatéral.",
+        "Ses trois angles ont donc la même mesure, et leur somme est 180° : 180 ÷ 3 = 60.",
+        "L'angle $\\widehat{GHI}$ mesure **60°**."
+      ],
+      "hint": "Lis le codage des côtés du triangle GHI."
+    },
+    {
+      "key": "q5",
+      "skill_id": "G027",
+      "statement": "Combien de degrés mesure l'angle $\\widehat{BAC}$ du toit ?",
+      "type": "numerique",
+      "answer": {
+        "value": 110,
+        "unit": "°",
+        "accepted": [
+          "110°",
+          "110 °",
+          "110 degrés",
+          "110 degré"
+        ]
+      },
+      "points": 4,
+      "solution_steps": [
+        "Les côtés [AB] et [AC] portent le même codage : le triangle ABC est isocèle en A.",
+        "Dans un triangle isocèle, les deux angles à la base ont la même mesure : $\\widehat{ACB}$ mesure aussi 35°.",
+        "35 + 35 = 70, et la somme des angles est 180° : 180 − 70 = 110.",
+        "L'angle $\\widehat{BAC}$ mesure **110°**.",
+        "Attention : 180 − 35 = 145 oublie le deuxième angle de 35°, que seul le codage révèle."
+      ],
+      "hint": "Le toit a deux côtés codés égaux : que peux-tu dire de ses angles à la base ?"
+    }
+  ],
+  "review_status": "brouillon",
+  "programme_ref": "Cycle 3, classe de 6e, Espace et géométrie, Étude de configurations planes, Triangles : « Connaître et utiliser les propriétés angulaires des triangles particuliers : triangle rectangle, triangle isocèle, triangle équilatéral »"
+}

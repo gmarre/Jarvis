@@ -1,0 +1,166 @@
+{
+  "id": "SX-G021-01",
+  "skill_id": "G021",
+  "skill_ids": [
+    "G021",
+    "B005"
+  ],
+  "school_level": "CM1",
+  "title": "Le logo du club de dessin",
+  "contexte": "Zoé, présidente du club de dessin, a écrit le programme de construction du logo du club :\n1. Trace un carré EFGH de côté 3 cm.\n2. Place le point I, milieu du segment [EF].\n3. Trace le cercle de centre I qui passe par le point E.\n\nQuatre membres du club ont suivi ce programme sur du papier quadrillé, où le côté d'un carreau mesure 1 cm. Leurs dessins sont numérotés de 1 à 4 ; un seul est juste.\n\nLe club compte 24 membres et se réunit le mercredi à 14 heures.\n\nPour finir, Zoé repassera au feutre doré le contour du carré du logo, et seulement lui.",
+  "image": "figures/SX-G021-01",
+  "duree_estimee_min": 15,
+  "questions": [
+    {
+      "key": "q1",
+      "skill_id": "G021",
+      "statement": "D'après le programme, quel point est le centre du cercle ?",
+      "type": "qcm",
+      "choices": [
+        {
+          "key": "a",
+          "text": "Le point E",
+          "misconception": "L'élève confond le centre du cercle et le point par lequel il passe : E est sur le cercle."
+        },
+        {
+          "key": "b",
+          "text": "Le point I, milieu du segment [EF]",
+          "misconception": null
+        },
+        {
+          "key": "c",
+          "text": "Le point F",
+          "misconception": "L'élève prend un sommet du carré au hasard : F n'est pas cité comme centre dans le programme."
+        }
+      ],
+      "answer": {
+        "value": "b"
+      },
+      "points": 1,
+      "solution_steps": [
+        "L'étape 3 dit : « Trace le cercle de centre I qui passe par le point E ».",
+        "Le centre est **le point I**, milieu du segment [EF]. Le point E est un point du cercle, pas son centre."
+      ],
+      "hint": "Relis l'étape 3 du programme."
+    },
+    {
+      "key": "q2",
+      "skill_id": "G021",
+      "statement": "Quel dessin suit exactement le programme ?",
+      "type": "qcm",
+      "choices": [
+        {
+          "key": "a",
+          "text": "Le dessin 1",
+          "misconception": "L'élève vérifie le milieu et le cercle, mais pas l'étape 1 : le quadrilatère a des côtés de 3 et 2 carreaux, ce n'est pas un carré."
+        },
+        {
+          "key": "b",
+          "text": "Le dessin 2",
+          "misconception": "L'élève voit un carré, un point I au milieu et un cercle, sans vérifier le centre : le cercle du dessin 2 a pour centre E."
+        },
+        {
+          "key": "c",
+          "text": "Le dessin 3",
+          "misconception": null
+        },
+        {
+          "key": "d",
+          "text": "Le dessin 4",
+          "misconception": "L'élève ne compte pas les carreaux : le point I du dessin 4 n'est pas à égale distance de E et de F."
+        }
+      ],
+      "answer": {
+        "value": "c"
+      },
+      "points": 2,
+      "solution_steps": [
+        "Étape 1 : un carré de 3 carreaux de côté. Le dessin 1 a des côtés de 3 et 2 carreaux : ce n'est pas un carré.",
+        "Étape 2 : I au milieu du segment [EF], à un carreau et demi de E et de F. Dans le dessin 4, I est à 1 carreau de E et à 2 carreaux de F : ce n'est pas le milieu.",
+        "Étape 3 : le cercle a pour centre I et passe par E. Dans le dessin 2, le cercle a pour centre E et passe par I.",
+        "Le dessin 3 respecte les trois étapes : c'est **le dessin 3**."
+      ],
+      "hint": "Vérifie les trois étapes, l'une après l'autre, sur chaque dessin."
+    },
+    {
+      "key": "q3",
+      "skill_id": "B005",
+      "statement": "Quelle longueur de contour Zoé repassera-t-elle au feutre doré ?",
+      "type": "numerique",
+      "answer": {
+        "value": 12,
+        "unit": "cm",
+        "accepted": [
+          "12 cm",
+          "12 centimètres"
+        ]
+      },
+      "points": 2,
+      "solution_steps": [
+        "Zoé repasse seulement le contour du carré EFGH. D'après le programme, son côté mesure 3 cm.",
+        "Un carré a 4 côtés de même longueur : 4 × 3 = 12.",
+        "Zoé repassera **12 cm** de contour. Le cercle n'est pas repassé."
+      ],
+      "hint": "Combien de côtés a le carré, et combien mesure chacun ?"
+    },
+    {
+      "key": "q4",
+      "skill_id": "G021",
+      "statement": "À quelle étape du programme le dessin 4 ne suit-il pas le programme ? Donne le numéro de l'étape.",
+      "type": "numerique",
+      "answer": {
+        "value": 2,
+        "accepted": [
+          "étape 2",
+          "l'étape 2",
+          "la 2",
+          "la deuxième",
+          "deuxième",
+          "deux",
+          "la deuxième étape",
+          "2e",
+          "2e étape",
+          "la seconde",
+          "seconde"
+        ]
+      },
+      "points": 2,
+      "solution_steps": [
+        "Étape 1 : le dessin 4 a un carré de 3 carreaux de côté. C'est juste.",
+        "Étape 2 : le point I doit être le milieu du segment [EF], à un carreau et demi de E et de F. Or il est à 1 carreau de E et à 2 carreaux de F.",
+        "L'erreur est à l'**étape 2**. L'étape 3 est ensuite bien suivie : le cercle a pour centre ce point I et passe par E."
+      ],
+      "hint": "Vérifie les trois étapes du programme, l'une après l'autre, sur le dessin 4."
+    },
+    {
+      "key": "q5",
+      "skill_id": "G021",
+      "statement": "À quelle étape du programme le dessin 2 ne suit-il pas le programme ? Donne le numéro de l'étape.",
+      "type": "numerique",
+      "answer": {
+        "value": 3,
+        "accepted": [
+          "étape 3",
+          "l'étape 3",
+          "la 3",
+          "la troisième",
+          "troisième",
+          "trois",
+          "la troisième étape",
+          "3e",
+          "3e étape"
+        ]
+      },
+      "points": 3,
+      "solution_steps": [
+        "Étape 1 : le dessin 2 a un carré de 3 carreaux de côté. C'est juste.",
+        "Étape 2 : I est au milieu du segment [EF], à un carreau et demi de E et de F. C'est juste.",
+        "Étape 3 : le cercle doit avoir pour centre I et passer par E. Dans le dessin 2, le centre du cercle est E, et le cercle passe par I : centre et point sont échangés.",
+        "L'erreur est à l'**étape 3**."
+      ],
+      "hint": "Vérifie les trois étapes du programme, l'une après l'autre, sur le dessin 2."
+    }
+  ],
+  "review_status": "brouillon",
+  "programme_ref": "Cycle 3, Cours moyen première année, Espace et géométrie, La géométrie plane : « Construire une figure géométrique composée de segments, de droites, de polygones usuels et de cercles. »"
+}

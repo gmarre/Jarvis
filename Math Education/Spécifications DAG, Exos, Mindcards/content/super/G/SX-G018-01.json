@@ -1,0 +1,167 @@
+{
+  "id": "SX-G018-01",
+  "skill_id": "G018",
+  "skill_ids": [
+    "G018",
+    "B001"
+  ],
+  "school_level": "CM1",
+  "title": "Le vitrail de la bibliothèque",
+  "contexte": "Pour la nouvelle bibliothèque de l'école, un artisan prépare un vitrail. Il découpe quatre pièces de verre, numérotées de 1 à 4 sur le dessin. Les codages montrent les angles droits et les côtés de même longueur ; les longueurs écrites sont en centimètres.\n\nIl choisit la couleur de chaque pièce selon sa forme :\nune pièce qui est un carré sera **bleue** ;\nune pièce qui est un losange, sans être un carré, sera **jaune** ;\nune pièce qui est un rectangle, sans être un carré, sera **rouge**.\n\nIl entoure ensuite chaque pièce d'un fil de plomb.\n\nLe vitrail a coûté 480 € et sera posé le 15 juin.",
+  "image": "figures/SX-G018-01",
+  "duree_estimee_min": 15,
+  "questions": [
+    {
+      "key": "q1",
+      "skill_id": "G018",
+      "statement": "De quelle couleur sera une pièce qui est un rectangle, sans être un carré ?",
+      "type": "qcm",
+      "choices": [
+        {
+          "key": "a",
+          "text": "Bleue",
+          "misconception": "L'élève lit trop vite : le bleu est réservé aux carrés."
+        },
+        {
+          "key": "b",
+          "text": "Jaune",
+          "misconception": "L'élève confond les règles : le jaune est pour les losanges qui ne sont pas des carrés."
+        },
+        {
+          "key": "c",
+          "text": "Rouge",
+          "misconception": null
+        }
+      ],
+      "answer": {
+        "value": "c"
+      },
+      "points": 1,
+      "solution_steps": [
+        "La règle de l'artisan dit : « une pièce qui est un rectangle, sans être un carré, sera rouge ».",
+        "Une telle pièce sera **rouge**."
+      ],
+      "hint": "Relis les trois règles de couleur."
+    },
+    {
+      "key": "q2",
+      "skill_id": "G018",
+      "statement": "Combien de pièces seront bleues ?",
+      "type": "numerique",
+      "answer": {
+        "value": 2,
+        "unit": "pièces",
+        "accepted": [
+          "2 pièces",
+          "deux",
+          "deux pièces"
+        ]
+      },
+      "points": 2,
+      "solution_steps": [
+        "Une pièce bleue est un carré : quatre côtés de même longueur et quatre angles droits.",
+        "La pièce 4 a quatre côtés codés égaux et quatre angles droits : c'est un carré.",
+        "La pièce 1 aussi : ses quatre côtés portent le même codage et ses quatre angles sont droits. Elle est posée sur la pointe, mais un carré tourné reste un carré.",
+        "La pièce 2 n'a pas d'angle droit, la pièce 3 n'a pas ses quatre côtés égaux (21 cm et 13 cm).",
+        "**2 pièces** seront bleues : les pièces 1 et 4."
+      ],
+      "hint": "Pour chaque pièce, lis les codages : côtés et angles."
+    },
+    {
+      "key": "q3",
+      "skill_id": "G018",
+      "statement": "Quelle pièce sera jaune ?",
+      "type": "qcm",
+      "choices": [
+        {
+          "key": "a",
+          "text": "La pièce 1",
+          "misconception": "L'élève voit un losange parce que la pièce est posée sur la pointe. Mais elle a quatre angles droits : c'est un carré, donc elle sera bleue."
+        },
+        {
+          "key": "b",
+          "text": "La pièce 2",
+          "misconception": null
+        },
+        {
+          "key": "c",
+          "text": "La pièce 4",
+          "misconception": "La pièce 4 est bien un losange, mais elle a quatre angles droits : c'est un carré, elle sera bleue."
+        }
+      ],
+      "answer": {
+        "value": "b"
+      },
+      "points": 2,
+      "solution_steps": [
+        "Une pièce jaune est un losange qui n'est pas un carré : quatre côtés de même longueur, mais pas d'angle droit.",
+        "La pièce 2 a ses quatre côtés codés égaux et aucun angle droit codé ; ses angles se voient aigus et obtus.",
+        "C'est **la pièce 2**."
+      ],
+      "hint": "Quelles pièces ont quatre côtés de même longueur ? Lesquelles ont des angles droits ?"
+    },
+    {
+      "key": "q4",
+      "skill_id": "B001",
+      "statement": "Quelle longueur de fil de plomb faut-il pour entourer la pièce 3 ?",
+      "type": "numerique",
+      "answer": {
+        "value": 68,
+        "unit": "cm",
+        "accepted": [
+          "68 cm",
+          "68 centimètres"
+        ]
+      },
+      "points": 2,
+      "solution_steps": [
+        "La pièce 3 a quatre angles droits : c'est un rectangle. Ses côtés opposés ont la même longueur.",
+        "Deux côtés mesurent 21 cm et les deux autres 13 cm.",
+        "21 + 13 + 21 + 13 = 68. Il faut **68 cm** de fil.",
+        "Attention : 21 + 13 = 34 ne fait que la moitié du tour."
+      ],
+      "hint": "Seules deux longueurs sont écrites : que sais-tu des côtés opposés d'un rectangle ?"
+    },
+    {
+      "key": "q5",
+      "skill_id": "G018",
+      "statement": "Léa dit : « La pièce 1 est à la fois un rectangle et un losange. » Qui a raison ?",
+      "type": "qcm",
+      "choices": [
+        {
+          "key": "a",
+          "text": "Léa a raison : la pièce 1 a quatre angles droits et quatre côtés de même longueur.",
+          "misconception": null
+        },
+        {
+          "key": "b",
+          "text": "Léa a tort : posée sur la pointe, la pièce 1 n'est ni un rectangle ni un losange.",
+          "misconception": "L'élève juge la forme à son orientation. Une figure tournée garde ses côtés et ses angles : la pièce 1 reste un carré."
+        },
+        {
+          "key": "c",
+          "text": "Léa a tort : la pièce 1 est un losange, mais pas un rectangle.",
+          "misconception": "L'élève reconnaît le losange à sa position, mais oublie de lire les angles droits codés : quatre angles droits font un rectangle."
+        },
+        {
+          "key": "d",
+          "text": "Léa a tort : un carré ne peut pas être un rectangle.",
+          "misconception": "L'élève garde l'idée du CP, où carré et rectangle étaient deux familles séparées. Avec la définition, un carré a quatre angles droits : c'est un rectangle particulier."
+        }
+      ],
+      "answer": {
+        "value": "a"
+      },
+      "points": 3,
+      "solution_steps": [
+        "Un rectangle est un quadrilatère qui a quatre angles droits. La pièce 1 en a quatre : c'est un rectangle.",
+        "Un losange est un quadrilatère qui a quatre côtés de même longueur. La pièce 1 en a quatre : c'est un losange.",
+        "La pièce 1 est un carré, et un carré est à la fois un rectangle et un losange. **Léa a raison.**",
+        "La position de la pièce, posée sur la pointe, ne change rien à ses côtés ni à ses angles."
+      ],
+      "hint": "Relis la définition du rectangle, puis celle du losange, et vérifie chacune sur la pièce 1."
+    }
+  ],
+  "review_status": "brouillon",
+  "programme_ref": "Cycle 3, Cours moyen première année, Espace et géométrie, La géométrie plane : « Connaître les propriétés de parallélisme des côtés opposés, des égalités de longueurs et d'angles pour les figures usuelles : triangle rectangle, triangle isocèle, triangle équilatéral, carré, rectangle et losange. »"
+}

@@ -1,0 +1,151 @@
+{
+  "id": "SX-G017-01",
+  "skill_id": "G017",
+  "skill_ids": [
+    "G017",
+    "B001"
+  ],
+  "school_level": "CM1",
+  "title": "Les massifs du jardin public",
+  "contexte": "Au jardin public, le jardinier Paul a dessiné le plan de trois massifs de fleurs en forme de triangle : EFG, KLM et RST. Sur le plan, les longueurs sont écrites en mètres. Les codages montrent les côtés de même longueur et les angles droits.\n\nPaul a commandé 150 bulbes de tulipes, livrés le mardi 4 avril.\n\nIl veut poser une bordure en bois tout autour du massif RST et tout autour du massif EFG. Le massif KLM, lui, sera entouré d'une haie.\n\nLe jardin ouvre à 8 heures et ferme à 19 heures.",
+  "image": "figures/SX-G017-01",
+  "duree_estimee_min": 15,
+  "questions": [
+    {
+      "key": "q1",
+      "skill_id": "G017",
+      "statement": "Quel massif a la forme d'un triangle rectangle ?",
+      "type": "qcm",
+      "choices": [
+        {
+          "key": "a",
+          "text": "Le massif EFG",
+          "misconception": "L'élève choisit le triangle qui « a l'air régulier » : EFG a trois côtés de même longueur, mais aucun angle droit."
+        },
+        {
+          "key": "b",
+          "text": "Le massif KLM",
+          "misconception": null
+        },
+        {
+          "key": "c",
+          "text": "Le massif RST",
+          "misconception": "L'élève confond les codages : les traits sur RS et RT disent que ces côtés ont la même longueur, ils ne codent pas un angle droit."
+        }
+      ],
+      "answer": {
+        "value": "b"
+      },
+      "points": 1,
+      "solution_steps": [
+        "Un triangle rectangle a un angle droit. Sur le plan, l'angle droit est codé par un petit carré.",
+        "Le petit carré est au sommet L du triangle KLM : **le massif KLM** est un triangle rectangle."
+      ],
+      "hint": "Cherche le codage de l'angle droit."
+    },
+    {
+      "key": "q2",
+      "skill_id": "G017",
+      "statement": "Quel est le nom précis du triangle RST ?",
+      "type": "texte",
+      "answer": {
+        "value": "isocèle",
+        "accepted": [
+          "triangle isocèle",
+          "un triangle isocèle",
+          "isocèle en R",
+          "triangle isocèle en R",
+          "un triangle isocèle en R",
+          "il est isocèle",
+          "RST est isocèle",
+          "RST est un triangle isocèle",
+          "c'est un triangle isocèle"
+        ]
+      },
+      "points": 2,
+      "solution_steps": [
+        "Les côtés RS et RT portent le même codage (deux traits) : ils ont la même longueur.",
+        "Le troisième côté, ST, est plus court : 8 m contre 10 m. Le triangle n'est donc pas équilatéral.",
+        "Un triangle qui a deux côtés de même longueur est un triangle **isocèle** (ici, isocèle en R)."
+      ],
+      "hint": "Lis le codage des côtés du triangle RST."
+    },
+    {
+      "key": "q3",
+      "skill_id": "B001",
+      "statement": "Quelle longueur de bordure faut-il pour faire le tour du massif RST ?",
+      "type": "numerique",
+      "answer": {
+        "value": 28,
+        "unit": "m",
+        "accepted": [
+          "28 m",
+          "28 mètres"
+        ]
+      },
+      "points": 2,
+      "solution_steps": [
+        "Le tour du massif, c'est RS + RT + ST.",
+        "RT mesure 10 m. RS n'est pas écrit, mais il porte le même codage que RT : RS mesure aussi 10 m. ST mesure 8 m.",
+        "10 + 10 + 8 = 28. Il faut **28 m** de bordure.",
+        "Attention : 10 + 8 = 18 oublie le côté RS, dont la longueur ne se lit que par le codage."
+      ],
+      "hint": "Tous les côtés n'ont pas leur longueur écrite : regarde les codages."
+    },
+    {
+      "key": "q4",
+      "skill_id": "G017",
+      "statement": "Quelle longueur de bordure faut-il pour faire le tour du massif EFG ?",
+      "type": "numerique",
+      "answer": {
+        "value": 33,
+        "unit": "m",
+        "accepted": [
+          "33 m",
+          "33 mètres"
+        ]
+      },
+      "points": 3,
+      "solution_steps": [
+        "Les trois côtés du triangle EFG portent le même codage : ils ont la même longueur. EFG est équilatéral.",
+        "GE mesure 11 m, donc EF et FG mesurent aussi 11 m.",
+        "11 + 11 + 11 = 33. Il faut **33 m** de bordure.",
+        "Attention : la seule longueur écrite, 11 m, ne mesure qu'un côté."
+      ],
+      "hint": "Combien de côtés du triangle EFG portent le même codage ?"
+    },
+    {
+      "key": "q5",
+      "skill_id": "G017",
+      "statement": "Dans le massif RST, quel angle a la même grandeur que l'angle RST ?",
+      "type": "texte",
+      "answer": {
+        "value": "RTS",
+        "accepted": [
+          "STR",
+          "l'angle RTS",
+          "l'angle STR",
+          "angle RTS",
+          "angle STR",
+          "T",
+          "l'angle T",
+          "angle T",
+          "l'angle en T",
+          "angle en T",
+          "l'angle de sommet T",
+          "angle de sommet T"
+        ]
+      },
+      "points": 3,
+      "solution_steps": [
+        "L'angle RST a pour sommet S.",
+        "RST est isocèle en R : ses côtés RS et RT ont la même longueur. Dans un triangle isocèle, les deux angles qui touchent le troisième côté, ST, ont la même grandeur.",
+        "Ces deux angles sont l'angle de sommet S et l'angle de sommet T. L'angle de même grandeur que RST est **l'angle RTS** (de sommet T).",
+        "L'angle SRT, de sommet R, est le seul qui puisse être différent des deux autres."
+      ],
+      "hint": "Repère le sommet de l'angle RST, puis le côté qui n'a pas de codage."
+    }
+  ],
+  "review_status": "brouillon",
+  "programme_ref": "Cycle 3, Cours moyen première année, Espace et géométrie, La géométrie plane : « Reconnaître et nommer les figures suivantes en faisant référence à leur définition : triangle, triangle rectangle, triangle isocèle, triangle équilatéral, quadrilatère, carré, rectangle et losange »"
+}

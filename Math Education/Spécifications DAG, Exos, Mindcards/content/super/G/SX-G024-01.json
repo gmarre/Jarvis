@@ -1,0 +1,126 @@
+{
+  "id": "SX-G024-01",
+  "skill_id": "G024",
+  "skill_ids": [
+    "G024",
+    "B001"
+  ],
+  "school_level": "CM2",
+  "title": "La mosaïque de la cantine",
+  "contexte": "Léo et Zoé décorent un mur de la cantine avec une mosaïque, dessinée sur un quadrillage. L'axe en pointillés suit une diagonale des carreaux.\n\nLéo a colorié son motif en bleu. Zoé doit colorier en jaune le symétrique du motif de Léo par rapport à l'axe ; elle a déjà colorié une case. Une case déjà bleue reste bleue.\n\nLéo a déjà travaillé 34 minutes sur la mosaïque, et Zoé 12 minutes.\n\nUn crochet est fixé au point M. Un second crochet doit être fixé au symétrique du point M par rapport à l'axe.\n\nLa mosaïque mesure 2 m de large et sera finie vendredi.",
+  "image": "figures/SX-G024-01",
+  "duree_estimee_min": 12,
+  "questions": [
+    {
+      "key": "q1",
+      "skill_id": "G024",
+      "statement": "Pour savoir où fixer le second crochet, de quoi as-tu besoin ?",
+      "type": "qcm",
+      "choices": [
+        {
+          "key": "a",
+          "text": "Du point M et de l'axe",
+          "misconception": null
+        },
+        {
+          "key": "b",
+          "text": "Du point M et de la largeur de la mosaïque",
+          "misconception": "L'élève prend une mesure de l'énoncé : la largeur de la mosaïque ne dit pas où est le symétrique de M."
+        },
+        {
+          "key": "c",
+          "text": "Du motif de Léo et de l'axe",
+          "misconception": "L'élève mélange les deux consignes : le motif concerne les cases à colorier, pas le crochet."
+        }
+      ],
+      "answer": {
+        "value": "a"
+      },
+      "points": 1,
+      "solution_steps": [
+        "Le second crochet est au symétrique du point M par rapport à l'axe.",
+        "Il faut donc le point M et l'axe. La largeur de la mosaïque et le motif de Léo ne servent pas pour le crochet."
+      ],
+      "hint": "Relis la phrase qui parle du second crochet."
+    },
+    {
+      "key": "q2",
+      "skill_id": "G024",
+      "statement": "À quel point faut-il fixer le second crochet ?",
+      "type": "qcm",
+      "choices": [
+        {
+          "key": "a",
+          "text": "Au point A",
+          "misconception": "L'élève est bien sur la bonne diagonale, mais s'arrête trop tôt : A est à 1 carreau de l'axe, alors que M en est à 2."
+        },
+        {
+          "key": "b",
+          "text": "Au point B",
+          "misconception": "L'élève va trop loin : B est à 3 carreaux de l'axe, alors que M en est à 2."
+        },
+        {
+          "key": "c",
+          "text": "Au point C",
+          "misconception": null
+        }
+      ],
+      "answer": {
+        "value": "c"
+      },
+      "points": 2,
+      "solution_steps": [
+        "Le symétrique de M est sur la droite qui passe par M et coupe l'axe à angle droit : sur le quadrillage, elle suit l'autre diagonale des carreaux.",
+        "De M jusqu'à l'axe, on traverse 2 carreaux en diagonale. Le symétrique est de l'autre côté, à 2 carreaux en diagonale de l'axe.",
+        "A est à 1 carreau de l'axe, B à 3 carreaux. Le second crochet va **au point C**."
+      ],
+      "hint": "Compte les carreaux traversés en diagonale de M jusqu'à l'axe."
+    },
+    {
+      "key": "q3",
+      "skill_id": "B001",
+      "statement": "Combien de minutes Léo et Zoé ont-ils déjà travaillé sur la mosaïque, à eux deux ?",
+      "type": "numerique",
+      "answer": {
+        "value": 46,
+        "unit": "min",
+        "accepted": [
+          "46 min",
+          "46 minutes",
+          "46 mn"
+        ]
+      },
+      "points": 2,
+      "solution_steps": [
+        "Léo a travaillé 34 minutes et Zoé 12 minutes.",
+        "34 + 12 = 46 : ils ont déjà travaillé **46 minutes**."
+      ],
+      "hint": null
+    },
+    {
+      "key": "q4",
+      "skill_id": "G024",
+      "statement": "Combien de cases Zoé doit-elle encore colorier en jaune ?",
+      "type": "numerique",
+      "answer": {
+        "value": 3,
+        "unit": "cases",
+        "accepted": [
+          "3 cases",
+          "trois",
+          "trois cases"
+        ]
+      },
+      "points": 3,
+      "solution_steps": [
+        "Le motif de Léo compte 5 cases bleues. L'axe traverse l'une d'elles en diagonale : cette case est sa propre symétrique, elle reste bleue.",
+        "Les 4 autres cases bleues ont chacune une symétrique de l'autre côté de l'axe, qu'il faut colorier en jaune.",
+        "Parmi ces 4 cases, Zoé en a déjà colorié 1, bien placée : les 3 autres sont encore vides.",
+        "Zoé doit encore colorier **3 cases**. Oublier que la case traversée par l'axe est déjà à sa place donne 4."
+      ],
+      "hint": "Pour chaque case bleue, cherche où est sa symétrique, puis regarde si elle est déjà coloriée."
+    }
+  ],
+  "review_status": "brouillon",
+  "programme_ref": "Cycle 3, Cours moyen deuxième année, Espace et géométrie, La géométrie plane : « Construire, sur papier quadrillé, la figure symétrique d'une figure donnée par rapport à une droite verticale, horizontale ou une diagonale du quadrillage »"
+}

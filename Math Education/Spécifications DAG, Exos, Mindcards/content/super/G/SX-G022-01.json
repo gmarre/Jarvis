@@ -1,0 +1,118 @@
+{
+  "id": "SX-G022-01",
+  "skill_id": "G022",
+  "skill_ids": [
+    "G022",
+    "B016"
+  ],
+  "school_level": "CM2",
+  "title": "Le jardin de Mamie Rose",
+  "contexte": "Mamie Rose aménage deux coins de son jardin, bordés de murets droits. Le dessin les montre vus de dessus, avec leurs codages :\nle coin des tulipes a pour sommet le point O ;\nle coin des roses a pour sommet le point P.\n\nPour arroser, Mamie Rose a acheté un tuyau de 96 m. Elle le coupe en 8 morceaux de même longueur.\n\nMamie Rose a 72 ans, et son jardin mesure 25 m de long. Elle y passe tous ses après-midi, de mars à octobre, avec son chat Pompon.",
+  "image": "figures/SX-G022-01",
+  "duree_estimee_min": 12,
+  "questions": [
+    {
+      "key": "q1",
+      "skill_id": "B016",
+      "statement": "Pour trouver la longueur d'un morceau de tuyau, de quelles informations as-tu besoin ?",
+      "type": "qcm",
+      "choices": [
+        {
+          "key": "a",
+          "text": "La longueur du tuyau (96 m) et le nombre de morceaux (8)",
+          "misconception": null
+        },
+        {
+          "key": "b",
+          "text": "La longueur du jardin (25 m) et le nombre de morceaux (8)",
+          "misconception": "L'élève prend une longueur de l'énoncé sans vérifier ce qu'elle mesure : c'est le tuyau que l'on coupe, pas le jardin."
+        },
+        {
+          "key": "c",
+          "text": "La longueur du tuyau (96 m) et l'âge de Mamie Rose (72 ans)",
+          "misconception": "L'élève prend le deuxième nombre qu'il voit : l'âge de Mamie Rose n'a rien à voir avec le tuyau."
+        }
+      ],
+      "answer": {
+        "value": "a"
+      },
+      "points": 1,
+      "solution_steps": [
+        "On partage le tuyau en morceaux de même longueur : il faut la longueur du tuyau, 96 m, et le nombre de morceaux, 8.",
+        "La longueur du jardin et l'âge de Mamie Rose ne servent pas."
+      ],
+      "hint": "Relis la phrase qui parle du tuyau."
+    },
+    {
+      "key": "q2",
+      "skill_id": "G022",
+      "statement": "Combien de degrés mesure l'angle EPG ?",
+      "type": "numerique",
+      "answer": {
+        "value": 45,
+        "unit": "°",
+        "accepted": [
+          "45°",
+          "45 °",
+          "45 degrés",
+          "45 degré"
+        ]
+      },
+      "points": 2,
+      "solution_steps": [
+        "Le codage en P montre que l'angle EPF est droit : il mesure 90°.",
+        "Les angles EPG et GPF portent le même arc : ils ont la même mesure. Le segment [PG] partage l'angle droit en deux angles égaux.",
+        "90 ÷ 2 = 45 : l'angle EPG mesure **45°**."
+      ],
+      "hint": "Que dit le codage en P ? Et les deux arcs ?"
+    },
+    {
+      "key": "q3",
+      "skill_id": "B016",
+      "statement": "Combien mesure un morceau de tuyau ?",
+      "type": "numerique",
+      "answer": {
+        "value": 12,
+        "unit": "m",
+        "accepted": [
+          "12 m",
+          "12 mètres"
+        ]
+      },
+      "points": 2,
+      "solution_steps": [
+        "On partage 96 m en 8 morceaux égaux : on calcule 96 ÷ 8.",
+        "Diviser par 8, c'est prendre la moitié trois fois de suite : 96 ÷ 2 = 48, 48 ÷ 2 = 24, 24 ÷ 2 = 12.",
+        "Un morceau mesure **12 m**."
+      ],
+      "hint": "Pour diviser par 8, prends la moitié, puis encore la moitié, puis encore la moitié."
+    },
+    {
+      "key": "q4",
+      "skill_id": "G022",
+      "statement": "Combien de degrés mesure l'angle BOD ?",
+      "type": "numerique",
+      "answer": {
+        "value": 60,
+        "unit": "°",
+        "accepted": [
+          "60°",
+          "60 °",
+          "60 degrés",
+          "60 degré"
+        ]
+      },
+      "points": 4,
+      "solution_steps": [
+        "Le codage en O montre que l'angle AOD est droit : il mesure 90°.",
+        "Les angles AOB, BOC et COD portent le même double arc : ils ont la même mesure. L'angle droit est partagé en trois angles égaux.",
+        "90 ÷ 3 = 30 : chacun mesure 30°.",
+        "L'angle BOD est formé des angles BOC et COD : 30 + 30 = 60. Il mesure **60°**.",
+        "Attention : 30° est la mesure d'un seul des trois angles, et 45° serait la moitié de l'angle droit, alors qu'il est partagé en trois."
+      ],
+      "hint": "En combien d'angles égaux l'angle droit AOD est-il partagé ? De combien de ces angles l'angle BOD est-il formé ?"
+    }
+  ],
+  "review_status": "brouillon",
+  "programme_ref": "Cycle 3, Cours moyen deuxième année, Grandeurs et mesures, Les angles : « Construire un angle égal à la somme de deux angles donnés ou un angle multiple d'un angle donné »"
+}

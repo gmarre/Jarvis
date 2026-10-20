@@ -1,0 +1,152 @@
+{
+  "id": "SX-G016-01",
+  "skill_id": "G016",
+  "skill_ids": [
+    "G016",
+    "B036"
+  ],
+  "school_level": "CM1",
+  "title": "Le plan du nouveau quartier",
+  "contexte": "La mairie de Valbourg prépare un nouveau quartier. Sur le plan, dessiné sur un quadrillage, chaque droite représente une rue :\n(d) est l'avenue des Tilleuls ;\n(e) est la rue du Moulin ;\n(f) est la rue de la Gare ;\n(g) est la rue des Écoles ;\n(h) est le chemin des Vignes ;\n(k) est la rue des Lilas.\n\nLe point P marque la poste. Le quartier comptera 240 habitants.\n\nLe maire a pris trois décisions.\n**Les arbres.** 36 arbres seront partagés également entre toutes les rues parallèles à l'avenue des Tilleuls, avenue comprise. Les autres rues n'auront pas d'arbres.\n**La piste cyclable.** Elle partira de la poste et suivra une rue perpendiculaire à l'avenue des Tilleuls.\n**Les travaux.** Ils commenceront en mars et dureront 8 mois.",
+  "image": "figures/SX-G016-01",
+  "duree_estimee_min": 15,
+  "questions": [
+    {
+      "key": "q1",
+      "skill_id": "B036",
+      "statement": "Pour savoir combien d'arbres recevra chaque rue, de quelles informations as-tu besoin ?",
+      "type": "qcm",
+      "choices": [
+        {
+          "key": "a",
+          "text": "Le nombre d'arbres (36) et le nombre d'habitants (240)",
+          "misconception": "L'élève prend un nombre de l'énoncé sans lire la règle : les habitants ne reçoivent pas d'arbres, ce sont les rues qui se les partagent."
+        },
+        {
+          "key": "b",
+          "text": "Le nombre d'arbres (36) et le nombre de rues parallèles à l'avenue, avenue comprise",
+          "misconception": null
+        },
+        {
+          "key": "c",
+          "text": "Le nombre d'arbres (36) et le nombre de toutes les rues du plan",
+          "misconception": "L'élève partage entre toutes les rues, alors que l'énoncé dit que les rues qui ne sont pas parallèles à l'avenue n'auront pas d'arbres."
+        }
+      ],
+      "answer": {
+        "value": "b"
+      },
+      "points": 1,
+      "solution_steps": [
+        "Les arbres sont partagés également entre les rues parallèles à l'avenue, avenue comprise.",
+        "Il faut donc le nombre d'arbres, 36, et le nombre de ces rues, que l'on compte sur le plan.",
+        "Le nombre d'habitants (240) et la durée des travaux ne servent pas pour les arbres."
+      ],
+      "hint": "Relis la phrase qui parle des arbres."
+    },
+    {
+      "key": "q2",
+      "skill_id": "G016",
+      "statement": "Quelle rue la piste cyclable suivra-t-elle ?",
+      "type": "qcm",
+      "choices": [
+        {
+          "key": "a",
+          "text": "La rue du Moulin (e)",
+          "misconception": "L'élève voit que (e) passe par la poste, mais (e) est parallèle à l'avenue : elle ne la coupe jamais, elle ne peut pas lui être perpendiculaire."
+        },
+        {
+          "key": "b",
+          "text": "Le chemin des Vignes (h)",
+          "misconception": "L'élève voit que (h) passe par la poste, mais (h) n'est pas perpendiculaire à l'avenue : elle ne fait d'angle droit avec aucune autre rue."
+        },
+        {
+          "key": "c",
+          "text": "La rue de la Gare (f)",
+          "misconception": null
+        },
+        {
+          "key": "d",
+          "text": "La rue des Écoles (g)",
+          "misconception": "L'élève croit qu'une droite verticale est perpendiculaire à toutes les autres. Or (g) ne fait pas d'angle droit avec l'avenue, qui est penchée, et elle ne passe pas par la poste."
+        }
+      ],
+      "answer": {
+        "value": "c"
+      },
+      "points": 2,
+      "solution_steps": [
+        "La piste part de la poste : la rue doit passer par le point P. Trois rues passent par P : (e), (f) et (h).",
+        "Elle doit aussi être perpendiculaire à l'avenue (d), c'est-à-dire la couper en formant un angle droit.",
+        "Sur le quadrillage, (d) avance de 2 carreaux vers la droite quand elle descend de 1 carreau. (f) monte de 2 carreaux quand elle avance de 1 carreau vers la droite : elle fait un angle droit avec (d). Le coin d'une feuille posé à leur croisement le confirme.",
+        "(e) ne coupe pas (d) : elle lui est parallèle. (h) coupe (f) en P sans faire d'angle droit avec (d).",
+        "La piste suivra **la rue de la Gare (f)**."
+      ],
+      "hint": "Cherche d'abord les rues qui passent par la poste, puis vérifie l'angle droit avec le coin d'une feuille."
+    },
+    {
+      "key": "q3",
+      "skill_id": "G016",
+      "statement": "Malo dit : « La rue des Écoles (g) est perpendiculaire à l'avenue des Tilleuls (d). »\n\nA-t-il raison ?",
+      "type": "vrai_faux",
+      "answer": {
+        "value": false
+      },
+      "points": 2,
+      "solution_steps": [
+        "(g) est verticale, mais l'avenue (d) est penchée : elle descend de 1 carreau quand elle avance de 2 carreaux.",
+        "Au croisement de (g) et de (d), le coin d'une feuille ne s'ajuste pas : l'angle n'est pas droit.",
+        "Malo **a tort**. Une droite verticale n'est perpendiculaire qu'à une droite horizontale ; ici, l'avenue n'est pas horizontale."
+      ],
+      "hint": "Pose le coin d'une feuille à l'endroit où (g) coupe (d)."
+    },
+    {
+      "key": "q4",
+      "skill_id": "B036",
+      "statement": "Combien d'arbres seront plantés le long de chaque rue parallèle à l'avenue des Tilleuls, avenue comprise ?",
+      "type": "numerique",
+      "answer": {
+        "value": 12,
+        "unit": "arbres",
+        "accepted": [
+          "12 arbres",
+          "douze"
+        ]
+      },
+      "points": 2,
+      "solution_steps": [
+        "Sur le quadrillage, (e) et (k) ont la même direction que (d) : elles avancent de 2 carreaux vers la droite quand elles descendent de 1 carreau, et ne coupent jamais (d). Ce sont les rues parallèles à l'avenue.",
+        "Le chemin des Vignes (h) ne coupe pas (d) sur le plan, mais il n'a pas la même direction : il descend de 1 carreau tous les 4 carreaux. Prolongé, il finirait par couper l'avenue. Il n'est pas parallèle à (d).",
+        "Les arbres vont donc à 3 rues : (d), (e) et (k). On partage 36 arbres en 3 parts égales : 12 + 12 + 12 = 36.",
+        "Chaque rue recevra **12 arbres**. Compter aussi (h) donnerait 4 rues et 9 arbres ; oublier l'avenue donnerait 2 rues et 18 arbres."
+      ],
+      "hint": "Compte d'abord les rues qui ont exactement la même direction que l'avenue sur le quadrillage."
+    },
+    {
+      "key": "q5",
+      "skill_id": "G016",
+      "statement": "Combien de rues du plan sont perpendiculaires à la rue de la Gare (f) ?",
+      "type": "numerique",
+      "answer": {
+        "value": 3,
+        "unit": "rues",
+        "accepted": [
+          "3 rues",
+          "trois",
+          "trois rues"
+        ]
+      },
+      "points": 3,
+      "solution_steps": [
+        "Une rue perpendiculaire à (f) la coupe en formant un angle droit.",
+        "(f) coupe (d), (e) et (k). À chacun de ces croisements, le coin d'une feuille s'ajuste : (d), (e) et (k) sont perpendiculaires à (f).",
+        "On pouvait le prévoir : (f) est perpendiculaire à l'avenue (d), et (e) et (k) sont parallèles à (d) ; elles font donc aussi un angle droit avec (f).",
+        "(h) coupe (f) en P sans angle droit, et (g) ne coupe pas (f) sur le plan, sans lui être parallèle.",
+        "**3 rues** sont perpendiculaires à la rue de la Gare."
+      ],
+      "hint": "Regarde chaque endroit où une rue coupe (f), et vérifie l'angle avec le coin d'une feuille."
+    }
+  ],
+  "review_status": "brouillon",
+  "programme_ref": "Cycle 3, Cours moyen première année, Espace et géométrie, La géométrie plane : « Reconnaître et utiliser la notion de perpendicularité »"
+}

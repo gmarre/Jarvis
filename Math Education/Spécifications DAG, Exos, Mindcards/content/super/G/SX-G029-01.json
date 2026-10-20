@@ -1,0 +1,143 @@
+{
+  "id": "SX-G029-01",
+  "skill_id": "G029",
+  "skill_ids": [
+    "G029",
+    "D007"
+  ],
+  "school_level": "6e",
+  "title": "L'antenne des trois villages",
+  "contexte": "Trois villages, R, S et T, veulent installer une antenne de téléphone à la même distance de chacun d'eux. La route droite qui relie R et S mesure 8,6 km. La droite (d) et la droite (e) sont tracées avec leurs codages. Les points A, B et C sont trois emplacements possibles pour l'antenne ; les côtés du triangle RST sont des routes droites.\n\nL'emplacement B est à 6,1 km du village R. Un cycliste part du village R, va jusqu'à l'emplacement B en ligne droite, puis rejoint le village S en ligne droite.\n\nUn car part du village R, suit la route droite vers S, et s'arrête au point I.\n\nLe village R compte 1 240 habitants, le village S en compte 860.",
+  "image": "figures/SX-G029-01",
+  "duree_estimee_min": 15,
+  "questions": [
+    {
+      "key": "q1",
+      "skill_id": "G029",
+      "statement": "D'après le texte, où l'antenne doit-elle être installée ?",
+      "type": "qcm",
+      "choices": [
+        {
+          "key": "a",
+          "text": "À la même distance des trois villages",
+          "misconception": null
+        },
+        {
+          "key": "b",
+          "text": "Au milieu de la route qui relie R et S",
+          "misconception": "L'élève pense au milieu d'un segment : ce point est à la même distance de R et de S, mais pas forcément de T."
+        },
+        {
+          "key": "c",
+          "text": "Plus près du village qui a le plus d'habitants",
+          "misconception": "L'élève utilise une donnée qui ne sert pas : le texte ne parle pas des habitants pour l'antenne."
+        }
+      ],
+      "answer": {
+        "value": "a"
+      },
+      "points": 1,
+      "solution_steps": [
+        "Le texte dit : « une antenne de téléphone à la même distance de chacun d'eux ».",
+        "L'antenne doit être **à la même distance des trois villages**. Le nombre d'habitants ne compte pas."
+      ],
+      "hint": "Relis la première phrase."
+    },
+    {
+      "key": "q2",
+      "skill_id": "G029",
+      "statement": "Quelle distance le cycliste parcourt-il, en kilomètres ?",
+      "type": "numerique",
+      "answer": {
+        "value": 12.2,
+        "unit": "km",
+        "accepted": [
+          "12,2 km",
+          "12,2 kilomètres",
+          "12,20 km"
+        ]
+      },
+      "points": 2,
+      "solution_steps": [
+        "Le codage montre que (d) coupe le segment [RS] en son milieu I et à angle droit : (d) est la médiatrice de [RS].",
+        "B est sur (d) : il est à la même distance de R et de S. Donc BS = BR = 6,1 km.",
+        "Le cycliste parcourt RB + BS = 6,1 + 6,1 = 12,2.",
+        "Il parcourt **12,2 km**. Attention : 6,1 km n'est que la première partie du trajet."
+      ],
+      "hint": "Que représente la droite (d) pour le segment [RS] ? Qu'en déduis-tu pour BS ?"
+    },
+    {
+      "key": "q3",
+      "skill_id": "D007",
+      "statement": "Quelle distance le car parcourt-il, en kilomètres ?",
+      "type": "numerique",
+      "answer": {
+        "value": 4.3,
+        "unit": "km",
+        "accepted": [
+          "4,3 km",
+          "4,30 km",
+          "4,3 kilomètres"
+        ]
+      },
+      "points": 2,
+      "solution_steps": [
+        "Le codage montre que RI = IS : I est le milieu du segment [RS], qui mesure 8,6 km.",
+        "8,6 ÷ 2 = 4,3 : la moitié de 8 unités est 4 unités, la moitié de 6 dixièmes est 3 dixièmes.",
+        "Le car parcourt **4,3 km**."
+      ],
+      "hint": "Lis le codage des segments [RI] et [IS]."
+    },
+    {
+      "key": "q4",
+      "skill_id": "G029",
+      "statement": "Quel emplacement est à la même distance des trois villages ?",
+      "type": "qcm",
+      "choices": [
+        {
+          "key": "a",
+          "text": "Le point A",
+          "misconception": "A est sur (e), la médiatrice de [ST] : il est à la même distance de S et de T, mais pas de R, car il n'est pas sur (d)."
+        },
+        {
+          "key": "b",
+          "text": "Le point B",
+          "misconception": "B est sur (d), la médiatrice de [RS] : il est à la même distance de R et de S, mais il n'est pas sur (e), donc pas à la même distance de T."
+        },
+        {
+          "key": "c",
+          "text": "Le point C",
+          "misconception": null
+        }
+      ],
+      "answer": {
+        "value": "c"
+      },
+      "points": 3,
+      "solution_steps": [
+        "Un point à la même distance de R et de S est sur la médiatrice de [RS], c'est-à-dire sur (d).",
+        "Un point à la même distance de S et de T est sur la médiatrice de [ST] : le codage montre que c'est (e).",
+        "Le point cherché est sur les deux droites à la fois : c'est leur point d'intersection, **le point C**. C'est le centre du cercle qui passe par R, S et T."
+      ],
+      "hint": "Quelle droite contient les points à la même distance de R et de S ? Et de S et de T ?"
+    },
+    {
+      "key": "q5",
+      "skill_id": "G029",
+      "statement": "Yanis dit : « L'emplacement A est à la même distance du village S et du village T. »\n\nA-t-il raison ?",
+      "type": "vrai_faux",
+      "answer": {
+        "value": true
+      },
+      "points": 3,
+      "solution_steps": [
+        "Le codage de la droite (e) montre qu'elle coupe le segment [ST] en son milieu et à angle droit : (e) est la médiatrice de [ST].",
+        "Tout point de la médiatrice d'un segment est à la même distance des deux extrémités de ce segment.",
+        "A est sur (e) : il est à la même distance de S et de T. Yanis **a raison**."
+      ],
+      "hint": "Sur quelle droite est le point A ? Que montre son codage ?"
+    }
+  ],
+  "review_status": "brouillon",
+  "programme_ref": "Cycle 3, classe de 6e, Espace et géométrie, Étude de configurations planes, Médiatrice d'un segment : « Comprendre et utiliser la propriété caractéristique de la médiatrice d'un segment »"
+}

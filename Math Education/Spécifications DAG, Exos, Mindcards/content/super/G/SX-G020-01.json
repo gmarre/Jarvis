@@ -1,0 +1,138 @@
+{
+  "id": "SX-G020-01",
+  "skill_id": "G020",
+  "skill_ids": [
+    "G020",
+    "B006"
+  ],
+  "school_level": "CM1",
+  "title": "Les caisses de la fête du village",
+  "contexte": "Pour la fête du village, Inès empile des caisses de jus de fruits. Toutes les caisses sont des cubes identiques. Le dessin montre l'empilement : il compte trois rangées, la rangée du fond, celle du milieu et celle de devant, et aucune caisse ne manque à l'intérieur. Une rangée va de la gauche vers la droite.\n\nChaque caisse contient 6 bouteilles. Une bouteille est vendue 2 €, et 120 personnes sont attendues à la fête, qui commence à 15 heures.\n\nInès voudrait finalement que l'empilement ait la forme d'un pavé de 4 étages, en ajoutant des caisses, sans déplacer ni enlever celles qui sont déjà posées.",
+  "image": "figures/SX-G020-01",
+  "duree_estimee_min": 15,
+  "questions": [
+    {
+      "key": "q1",
+      "skill_id": "B006",
+      "statement": "Pour savoir combien de bouteilles contiennent les caisses de l'étage du haut, de quelles informations as-tu besoin ?",
+      "type": "qcm",
+      "choices": [
+        {
+          "key": "a",
+          "text": "Le prix d'une bouteille et le nombre de caisses de l'étage du haut",
+          "misconception": "L'élève prend un nombre de l'énoncé sans se demander ce qu'il mesure : le prix sert à calculer une somme d'argent, pas un nombre de bouteilles."
+        },
+        {
+          "key": "b",
+          "text": "Le nombre de caisses de l'étage du haut et le nombre de bouteilles dans une caisse",
+          "misconception": null
+        },
+        {
+          "key": "c",
+          "text": "Le nombre de personnes attendues et le nombre de bouteilles dans une caisse",
+          "misconception": "L'élève prend une donnée qui ne concerne pas les caisses : le nombre de personnes n'aide pas à compter les bouteilles."
+        }
+      ],
+      "answer": {
+        "value": "b"
+      },
+      "points": 1,
+      "solution_steps": [
+        "Il faut savoir combien il y a de caisses à l'étage du haut : on le lit sur le dessin.",
+        "Il faut aussi savoir combien de bouteilles contient une caisse : 6.",
+        "Le prix d'une bouteille et le nombre de personnes attendues ne servent pas."
+      ],
+      "hint": "Relis la phrase qui parle des bouteilles."
+    },
+    {
+      "key": "q2",
+      "skill_id": "G020",
+      "statement": "Combien de caisses compte la rangée du milieu ?",
+      "type": "numerique",
+      "answer": {
+        "value": 9,
+        "unit": "caisses",
+        "accepted": [
+          "9 caisses",
+          "neuf",
+          "neuf caisses"
+        ]
+      },
+      "points": 2,
+      "solution_steps": [
+        "La rangée du milieu a 3 piles, une à gauche, une au milieu, une à droite.",
+        "Chaque pile a 3 caisses : celle du haut se voit, celles du dessous sont cachées en partie par la rangée de devant, mais elles portent la caisse du haut.",
+        "3 × 3 = 9 : la rangée du milieu compte **9 caisses**.",
+        "Attention : ne compter que les caisses qu'on voit en entier donne moins de 9."
+      ],
+      "hint": "Regarde la hauteur d'une pile de la rangée du milieu."
+    },
+    {
+      "key": "q3",
+      "skill_id": "B006",
+      "statement": "Combien de bouteilles contiennent, en tout, les caisses de l'étage du haut ?",
+      "type": "numerique",
+      "answer": {
+        "value": 18,
+        "unit": "bouteilles",
+        "accepted": [
+          "18 bouteilles",
+          "dix-huit"
+        ]
+      },
+      "points": 2,
+      "solution_steps": [
+        "L'étage du haut est le 4e étage. Seules les 3 piles de la rangée du fond montent jusque-là : il compte 3 caisses.",
+        "Chaque caisse contient 6 bouteilles : 3 × 6 = 18.",
+        "Les caisses de l'étage du haut contiennent **18 bouteilles**."
+      ],
+      "hint": "Combien de caisses y a-t-il tout en haut de l'empilement ?"
+    },
+    {
+      "key": "q4",
+      "skill_id": "G020",
+      "statement": "Combien de caisses compte l'empilement, en tout ?",
+      "type": "numerique",
+      "answer": {
+        "value": 24,
+        "unit": "caisses",
+        "accepted": [
+          "24 caisses",
+          "vingt-quatre"
+        ]
+      },
+      "points": 3,
+      "solution_steps": [
+        "On compte colonne par colonne, de l'avant vers l'arrière : une colonne a 1 caisse devant, 3 au milieu et 4 au fond, soit 1 + 3 + 4 = 8 caisses.",
+        "Il y a 3 colonnes pareilles : 3 × 8 = 24.",
+        "L'empilement compte **24 caisses**, en comptant celles qu'on ne voit pas : elles portent les caisses visibles, et aucune ne manque à l'intérieur.",
+        "Attention : ne compter que les caisses dont on voit l'avant donne bien moins."
+      ],
+      "hint": "Compte d'abord les caisses d'une seule colonne, de l'avant vers l'arrière."
+    },
+    {
+      "key": "q5",
+      "skill_id": "G020",
+      "statement": "Combien de caisses Inès doit-elle ajouter, au minimum, pour obtenir un pavé de 4 étages ?",
+      "type": "numerique",
+      "answer": {
+        "value": 12,
+        "unit": "caisses",
+        "accepted": [
+          "12 caisses",
+          "douze"
+        ]
+      },
+      "points": 3,
+      "solution_steps": [
+        "Dans un pavé de 4 étages, chaque pile a 4 caisses.",
+        "Il manque 0 caisse aux piles du fond, 1 caisse à chaque pile du milieu et 3 caisses à chaque pile de devant.",
+        "Pour une colonne : 0 + 1 + 3 = 4 caisses. Pour les 3 colonnes : 3 × 4 = 12.",
+        "Inès doit ajouter **12 caisses**."
+      ],
+      "hint": "Pile par pile, combien de caisses manque-t-il pour atteindre 4 étages ?"
+    }
+  ],
+  "review_status": "brouillon",
+  "programme_ref": "Cycle 3, Cours moyen première année, Espace et géométrie, Le repérage dans l'espace : « Résoudre des problèmes portant sur des assemblages de cubes »"
+}

@@ -1,0 +1,135 @@
+{
+  "id": "SX-G026-01",
+  "skill_id": "G026",
+  "skill_ids": [
+    "G026",
+    "B004"
+  ],
+  "school_level": "6e",
+  "title": "Les allées du parc",
+  "contexte": "Dans le parc de la ville, l'allée des Chênes, représentée par la droite (AB), et l'allée des Pins, représentée par la droite (CD), sont rectilignes. Elles se croisent à la fontaine O.\n\nLe chemin des Roses, représenté par la demi-droite [OE), part de la fontaine. Sur le plan, ses codages montrent qu'il partage l'angle $\\widehat{BOD}$ en deux angles de même mesure.\n\nLa mairie dispose de 750 € pour fleurir le parc ; elle a déjà payé 386 € de rosiers.\n\nLa fontaine a été construite en 1998.",
+  "image": "figures/SX-G026-01",
+  "duree_estimee_min": 15,
+  "questions": [
+    {
+      "key": "q1",
+      "skill_id": "G026",
+      "statement": "Pour l'angle $\\widehat{BOD}$, que représente le chemin des Roses ?",
+      "type": "qcm",
+      "choices": [
+        {
+          "key": "a",
+          "text": "Sa bissectrice",
+          "misconception": null
+        },
+        {
+          "key": "b",
+          "text": "Un côté de cet angle",
+          "misconception": "Les côtés de $\\widehat{BOD}$ sont [OB) et [OD) ; le chemin des Roses passe entre les deux."
+        },
+        {
+          "key": "c",
+          "text": "Un angle plat",
+          "misconception": "L'élève confond une demi-droite et un angle : un angle plat mesure 180°, il est formé de deux demi-droites."
+        }
+      ],
+      "answer": {
+        "value": "a"
+      },
+      "points": 1,
+      "solution_steps": [
+        "Le chemin des Roses part du sommet O et partage l'angle $\\widehat{BOD}$ en deux angles de même mesure.",
+        "C'est la définition de la **bissectrice** de l'angle $\\widehat{BOD}$."
+      ],
+      "hint": "Relis la phrase qui parle du chemin des Roses."
+    },
+    {
+      "key": "q2",
+      "skill_id": "G026",
+      "statement": "Combien de degrés mesure l'angle $\\widehat{AOC}$ ?",
+      "type": "numerique",
+      "answer": {
+        "value": 116,
+        "unit": "°",
+        "accepted": [
+          "116°",
+          "116 °",
+          "116 degrés",
+          "116 degré"
+        ]
+      },
+      "points": 2,
+      "solution_steps": [
+        "Les points A, O et B sont alignés : l'angle $\\widehat{AOB}$ est plat, il mesure 180°.",
+        "Les angles $\\widehat{AOC}$ et $\\widehat{COB}$ sont adjacents et forment cet angle plat : ils sont supplémentaires.",
+        "180 − 64 = 116 : l'angle $\\widehat{AOC}$ mesure **116°**.",
+        "Attention : 64° est la mesure de $\\widehat{BOC}$, et l'angle $\\widehat{AOC}$ est obtus."
+      ],
+      "hint": "Que forment ensemble les angles $\\widehat{AOC}$ et $\\widehat{COB}$ ?"
+    },
+    {
+      "key": "q3",
+      "skill_id": "B004",
+      "statement": "Combien d'euros reste-t-il à la mairie pour fleurir le parc ?",
+      "type": "numerique",
+      "answer": {
+        "value": 364,
+        "unit": "€",
+        "accepted": [
+          "364 €",
+          "364 euros",
+          "364€"
+        ]
+      },
+      "points": 2,
+      "solution_steps": [
+        "La mairie avait 750 € et a déjà payé 386 € : on calcule 750 − 386.",
+        "En colonnes : 0 − 6 impossible, on prend une dizaine : 10 − 6 = 4 ; puis 4 − 8 impossible, on prend une centaine : 14 − 8 = 6 ; enfin 6 − 3 = 3.",
+        "750 − 386 = 364. Il reste **364 €**. Vérification : 386 + 364 = 750."
+      ],
+      "hint": null
+    },
+    {
+      "key": "q4",
+      "skill_id": "G026",
+      "statement": "Léna dit : « Les angles $\\widehat{AOD}$ et $\\widehat{BOC}$ ont la même mesure. »\n\nA-t-elle raison ?",
+      "type": "vrai_faux",
+      "answer": {
+        "value": true
+      },
+      "points": 2,
+      "solution_steps": [
+        "Les droites (AB) et (CD) se coupent en O. Les angles $\\widehat{AOD}$ et $\\widehat{BOC}$ ont le même sommet, et leurs côtés se prolongent l'un l'autre : ils sont opposés par le sommet.",
+        "Deux angles opposés par le sommet ont la même mesure. Léna **a raison** : $\\widehat{AOD}$ mesure aussi 64°."
+      ],
+      "hint": "Regarde comment sont placés les côtés de ces deux angles."
+    },
+    {
+      "key": "q5",
+      "skill_id": "G026",
+      "statement": "Combien de degrés mesure l'angle $\\widehat{AOE}$ ?",
+      "type": "numerique",
+      "answer": {
+        "value": 122,
+        "unit": "°",
+        "accepted": [
+          "122°",
+          "122 °",
+          "122 degrés",
+          "122 degré"
+        ]
+      },
+      "points": 4,
+      "solution_steps": [
+        "Les angles $\\widehat{BOD}$ et $\\widehat{BOC}$ sont supplémentaires, car C, O et D sont alignés : $\\widehat{BOD}$ mesure 180 − 64 = 116°.",
+        "[OE) est la bissectrice de $\\widehat{BOD}$ : $\\widehat{BOE}$ mesure 116 ÷ 2 = 58°.",
+        "Les points A, O et B sont alignés : $\\widehat{AOE}$ et $\\widehat{EOB}$ sont supplémentaires. 180 − 58 = 122.",
+        "L'angle $\\widehat{AOE}$ mesure **122°**.",
+        "Attention : 58° est la mesure de $\\widehat{BOE}$, l'autre côté du chemin des Roses."
+      ],
+      "hint": "Commence par la mesure de $\\widehat{BOD}$, puis celle de $\\widehat{BOE}$."
+    }
+  ],
+  "review_status": "brouillon",
+  "programme_ref": "Cycle 3, classe de 6e, Espace et géométrie, Étude de configurations planes, Bissectrice d'un angle saillant : « Utiliser la définition de la bissectrice d'un angle pour effectuer des constructions et résoudre des problèmes »"
+}

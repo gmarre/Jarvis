@@ -1,0 +1,151 @@
+{
+  "id": "SX-G025-01",
+  "skill_id": "G025",
+  "skill_ids": [
+    "G025",
+    "G022",
+    "B016"
+  ],
+  "school_level": "6e",
+  "title": "Le projecteur du théâtre",
+  "contexte": "Pour le spectacle de fin d'année, Hugo règle un projecteur. Sur la figure, un rapporteur est posé sur l'angle $\\widehat{AOB}$ formé par le support [OA) et le projecteur [OB).\n\nLe régisseur donne ses consignes :\npour la scène d'ouverture, l'angle $\\widehat{AOB}$ doit mesurer le tiers d'un angle droit ;\npour le final, il doit être obtus.\n\nLe spectacle compte 4 actes de même durée, 96 minutes en tout.\n\nLa salle compte 240 places, et le spectacle commence à 20 h. Les élèves de toutes les classes de l'école y participent.",
+  "image": "figures/SX-G025-01",
+  "duree_estimee_min": 15,
+  "questions": [
+    {
+      "key": "q1",
+      "skill_id": "G022",
+      "statement": "Pour la scène d'ouverture, quel angle le régisseur demande-t-il ?",
+      "type": "qcm",
+      "choices": [
+        {
+          "key": "a",
+          "text": "Un angle obtus",
+          "misconception": "L'élève lit la mauvaise consigne : l'angle obtus est pour le final."
+        },
+        {
+          "key": "b",
+          "text": "Le tiers d'un angle droit",
+          "misconception": null
+        },
+        {
+          "key": "c",
+          "text": "La moitié d'un angle droit",
+          "misconception": "L'élève confond le tiers et la moitié : le régisseur parle du tiers."
+        }
+      ],
+      "answer": {
+        "value": "b"
+      },
+      "points": 1,
+      "solution_steps": [
+        "La consigne dit : « pour la scène d'ouverture, l'angle doit mesurer le tiers d'un angle droit ».",
+        "La réponse est **le tiers d'un angle droit**. L'angle obtus est demandé pour le final."
+      ],
+      "hint": "Relis la consigne de la scène d'ouverture."
+    },
+    {
+      "key": "q2",
+      "skill_id": "G022",
+      "statement": "Combien de degrés mesure l'angle demandé pour la scène d'ouverture ?",
+      "type": "numerique",
+      "answer": {
+        "value": 30,
+        "unit": "°",
+        "accepted": [
+          "30°",
+          "30 °",
+          "30 degrés",
+          "30 degré"
+        ]
+      },
+      "points": 2,
+      "solution_steps": [
+        "Un angle droit mesure 90°.",
+        "Le tiers de 90°, c'est 90 ÷ 3 = 30, car 3 × 30 = 90.",
+        "L'angle demandé mesure **30°**. La moitié d'un angle droit mesurerait 45°."
+      ],
+      "hint": "Combien de degrés mesure un angle droit ?"
+    },
+    {
+      "key": "q3",
+      "skill_id": "B016",
+      "statement": "Combien de minutes dure chaque acte ?",
+      "type": "numerique",
+      "answer": {
+        "value": 24,
+        "unit": "min",
+        "accepted": [
+          "24 min",
+          "24 minutes"
+        ]
+      },
+      "points": 2,
+      "solution_steps": [
+        "On partage 96 minutes en 4 actes de même durée : 96 ÷ 4.",
+        "Diviser par 4, c'est prendre la moitié deux fois : 96 ÷ 2 = 48, puis 48 ÷ 2 = 24.",
+        "Chaque acte dure **24 minutes**."
+      ],
+      "hint": "Pour diviser par 4, prends la moitié de la moitié."
+    },
+    {
+      "key": "q4",
+      "skill_id": "G025",
+      "statement": "Le réglage montré sur la figure convient-il pour le final ?",
+      "type": "qcm",
+      "choices": [
+        {
+          "key": "a",
+          "text": "Non, car l'angle est aigu",
+          "misconception": "L'élève lit la graduation noire, qui donne un petit nombre, et conclut à un angle aigu sans regarder l'ouverture de l'angle."
+        },
+        {
+          "key": "b",
+          "text": "Non, car l'angle est droit",
+          "misconception": "L'élève ne compare pas : le côté [OB) ne passe pas par la graduation 90."
+        },
+        {
+          "key": "c",
+          "text": "Oui, car l'angle est obtus",
+          "misconception": null
+        }
+      ],
+      "answer": {
+        "value": "c"
+      },
+      "points": 2,
+      "solution_steps": [
+        "Pour le final, l'angle doit être obtus, c'est-à-dire plus grand qu'un angle droit.",
+        "Sur la figure, l'ouverture entre [OA) et [OB) dépasse nettement l'angle droit, qui irait jusqu'à la graduation 90.",
+        "L'angle est obtus : **oui, il convient pour le final**."
+      ],
+      "hint": "Compare l'angle de la figure à un angle droit."
+    },
+    {
+      "key": "q5",
+      "skill_id": "G025",
+      "statement": "Quelle est la mesure de l'angle $\\widehat{AOB}$ sur la figure, en degrés ?",
+      "type": "numerique",
+      "answer": {
+        "value": 140,
+        "unit": "°",
+        "accepted": [
+          "140°",
+          "140 °",
+          "140 degrés",
+          "140 degré"
+        ]
+      },
+      "points": 3,
+      "solution_steps": [
+        "Le côté [OA) passe par le 0 de gauche du rapporteur : il faut lire la graduation qui commence à 0 de ce côté, celle des nombres rouges, à l'intérieur.",
+        "Le côté [OB) passe par la graduation rouge 140.",
+        "L'angle $\\widehat{AOB}$ mesure **140°**. Vérification : il est obtus, sa mesure dépasse bien 90°.",
+        "Attention : la graduation noire donne 40, la mesure d'un angle aigu, ce qui ne correspond pas à l'ouverture dessinée."
+      ],
+      "hint": "Par quel 0 passe le côté [OA) ? Lis la graduation qui part de ce 0."
+    }
+  ],
+  "review_status": "brouillon",
+  "programme_ref": "Cycle 3, classe de 6e, Espace et géométrie, Étude de configurations planes, Angles : « Mesurer un angle »"
+}

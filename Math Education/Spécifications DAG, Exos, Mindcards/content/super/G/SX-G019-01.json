@@ -1,0 +1,146 @@
+{
+  "id": "SX-G019-01",
+  "skill_id": "G019",
+  "skill_ids": [
+    "G019",
+    "B001"
+  ],
+  "school_level": "CM1",
+  "title": "Les boîtes de la chocolaterie",
+  "contexte": "La chocolaterie Cacao et Compagnie vend ses chocolats dans quatre boîtes, A, B, C et D, dessinées en perspective : les arêtes cachées sont en pointillés.\n\nLa boîte A contient 23 chocolats, la boîte B en contient 40, la boîte C en contient 14 et la boîte D en contient 31.\n\nLe chocolatier colle une étiquette dorée sur chaque face rectangulaire de ses boîtes. Il ferme chaque boîte avec un ruban.\n\nLa boutique ouvre à 10 heures ; le chocolat noir coûte 48 € le kilo.\n\nPour les fêtes, il prépare une nouvelle boîte : un prisme droit dont les deux bases sont des pentagones.",
+  "image": "figures/SX-G019-01",
+  "duree_estimee_min": 15,
+  "questions": [
+    {
+      "key": "q1",
+      "skill_id": "G019",
+      "statement": "Quelle boîte a la forme d'une pyramide ?",
+      "type": "qcm",
+      "choices": [
+        {
+          "key": "a",
+          "text": "La boîte A",
+          "misconception": "L'élève voit des triangles et pense à une pyramide. Mais la boîte A a deux bases triangulaires reliées par des rectangles : c'est un prisme droit."
+        },
+        {
+          "key": "b",
+          "text": "La boîte B",
+          "misconception": "La boîte B n'a que des faces rectangulaires : c'est un pavé."
+        },
+        {
+          "key": "c",
+          "text": "La boîte C",
+          "misconception": null
+        },
+        {
+          "key": "d",
+          "text": "La boîte D",
+          "misconception": "La boîte D a deux bases à six côtés reliées par des rectangles : c'est un prisme droit, pas une pyramide."
+        }
+      ],
+      "answer": {
+        "value": "c"
+      },
+      "points": 1,
+      "solution_steps": [
+        "Une pyramide a des faces en triangle qui se rejoignent toutes en un même sommet, en haut ; sa base est un polygone.",
+        "La boîte C a une base carrée et quatre faces en triangle qui se rejoignent au sommet : c'est **la boîte C**."
+      ],
+      "hint": "Cherche la boîte dont les faces se rejoignent toutes en un seul point."
+    },
+    {
+      "key": "q2",
+      "skill_id": "G019",
+      "statement": "Combien d'arêtes a la boîte A ?",
+      "type": "numerique",
+      "answer": {
+        "value": 9,
+        "unit": "arêtes",
+        "accepted": [
+          "9 arêtes",
+          "neuf",
+          "neuf arêtes"
+        ]
+      },
+      "points": 2,
+      "solution_steps": [
+        "La boîte A est un prisme droit à bases triangulaires.",
+        "Chaque base est un triangle : 3 arêtes en bas et 3 arêtes en haut.",
+        "Les faces rectangulaires sont reliées par 3 arêtes debout.",
+        "3 + 3 + 3 = 9 : la boîte A a **9 arêtes**. L'une d'elles est cachée : elle est dessinée en pointillés.",
+        "Attention : ne compter que les arêtes en trait plein donne 8."
+      ],
+      "hint": "Compte les arêtes d'une base, puis celles qui relient les deux bases."
+    },
+    {
+      "key": "q3",
+      "skill_id": "B001",
+      "statement": "Combien y a-t-il de chocolats, en tout, dans les boîtes qui ont au moins une face en forme de triangle ?",
+      "type": "numerique",
+      "answer": {
+        "value": 37,
+        "unit": "chocolats",
+        "accepted": [
+          "37 chocolats"
+        ]
+      },
+      "points": 2,
+      "solution_steps": [
+        "La boîte A (prisme à bases triangulaires) a deux faces en triangle. La boîte C (pyramide) a quatre faces en triangle.",
+        "La boîte B (pavé) n'a que des rectangles ; la boîte D a des bases à six côtés et des faces rectangulaires.",
+        "On additionne les chocolats des boîtes A et C : 23 + 14 = 37.",
+        "Il y a **37 chocolats**."
+      ],
+      "hint": "Pour chaque boîte, regarde la forme de ses faces, y compris celles du dessous."
+    },
+    {
+      "key": "q4",
+      "skill_id": "G019",
+      "statement": "Combien de faces rectangulaires a la boîte D ?",
+      "type": "numerique",
+      "answer": {
+        "value": 6,
+        "unit": "faces",
+        "accepted": [
+          "6 faces",
+          "six",
+          "six faces",
+          "6 faces rectangulaires"
+        ]
+      },
+      "points": 3,
+      "solution_steps": [
+        "La boîte D est un prisme droit : ses deux bases sont des hexagones, et ses autres faces sont des rectangles.",
+        "Il y a une face rectangulaire pour chaque côté de la base. Un hexagone a 6 côtés.",
+        "La boîte D a **6 faces rectangulaires**, même si on n'en voit pas toutes sur le dessin.",
+        "Attention : ne compter que les faces visibles donne moins de 6 ; compter aussi les deux bases donne 8 faces, mais elles ne sont pas rectangulaires."
+      ],
+      "hint": "Combien de côtés a la base de la boîte D ?"
+    },
+    {
+      "key": "q5",
+      "skill_id": "G019",
+      "statement": "Combien de faces aura la nouvelle boîte, en tout ?",
+      "type": "numerique",
+      "answer": {
+        "value": 7,
+        "unit": "faces",
+        "accepted": [
+          "7 faces",
+          "sept",
+          "sept faces"
+        ]
+      },
+      "points": 3,
+      "solution_steps": [
+        "La nouvelle boîte est un prisme droit : deux bases identiques, et une face rectangulaire pour chaque côté de la base.",
+        "Ses bases sont des pentagones : un pentagone a 5 côtés, donc la boîte a 5 faces rectangulaires.",
+        "En tout : 5 faces rectangulaires + 2 bases = 7 faces.",
+        "La nouvelle boîte aura **7 faces**. Oublier les deux bases donne 5."
+      ],
+      "hint": "Fais comme pour la boîte D : combien de côtés a une base ?"
+    }
+  ],
+  "review_status": "brouillon",
+  "programme_ref": "Cycle 3, Cours moyen première année, Espace et géométrie, Les solides : « Connaître la nature des faces d'un prisme droit »"
+}

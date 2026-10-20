@@ -1,0 +1,126 @@
+{
+  "type": "geometrie",
+  "params": {
+    "colonnes": 12,
+    "lignes": 10,
+    "points": {
+      "R": [
+        1,
+        "17/2"
+      ],
+      "S": [
+        "48/5",
+        "17/2"
+      ],
+      "T": [
+        4,
+        "3/2"
+      ],
+      "I": [
+        "53/10",
+        "17/2"
+      ],
+      "_d": [
+        "53/10",
+        0
+      ],
+      "_e1": [
+        "41/5",
+        "97/25"
+      ],
+      "_e2": [
+        "27/5",
+        "153/25"
+      ],
+      "_J": [
+        "34/5",
+        5
+      ],
+      "A": [
+        "171/20",
+        "18/5"
+      ],
+      "B": [
+        "53/10",
+        "4.1733"
+      ],
+      "C": [
+        "53/10",
+        "31/5"
+      ]
+    },
+    "etiquettes": {
+      "I": "haut_gauche",
+      "R": "bas",
+      "S": "bas",
+      "T": "haut",
+      "B": "droite",
+      "C": "gauche",
+      "A": "haut_gauche"
+    },
+    "elements": [
+      {
+        "polygone": [
+          "R",
+          "S",
+          "T"
+        ]
+      },
+      {
+        "droite": [
+          "I",
+          "_d"
+        ],
+        "nom": "(d)"
+      },
+      {
+        "angle_droit": [
+          "S",
+          "I",
+          "_d"
+        ]
+      },
+      {
+        "codage": [
+          [
+            "R",
+            "I"
+          ],
+          [
+            "I",
+            "S"
+          ]
+        ],
+        "marque": 1
+      },
+      {
+        "droite": [
+          "_e2",
+          "_e1"
+        ],
+        "nom": "(e)"
+      },
+      {
+        "angle_droit": [
+          "T",
+          "_J",
+          "_e1"
+        ]
+      },
+      {
+        "codage": [
+          [
+            "S",
+            "_J"
+          ],
+          [
+            "_J",
+            "T"
+          ]
+        ],
+        "marque": 2
+      }
+    ]
+  },
+  "alt": "Triangle RST, deux droites (d) et (e) codées, et des points A, B, C, I"
+}
