@@ -81,7 +81,7 @@ Ce qui est faux ou absent aujourd'hui (repris dans le backlog §6) :
 - Le fichier Google `client_secret_*.json` n'est jamais commité.
 - **Migrations : jamais par l'outil MCP `apply_migration` (refusé par Gauthier).** Créer le fichier numéroté suivant dans `supabase/migrations/` (rejouable : `if not exists`, `create or replace`, `drop policy if exists`), puis Gauthier le colle dans le SQL Editor. Ne jamais modifier une migration déjà appliquée (dernière appliquée : 0016, le 20 octobre 2026).
 - Les outils MCP Supabase `deploy_edge_function`, `get_edge_function` et `execute_sql` en lecture sont acceptés.
-- **Migrations 0017, 0018 et 0019 écrites, à appliquer par Gauthier dans l'ordre** (0018 : vérifier ensuite les professeurs, sinon leurs créneaux disparaissent du catalogue des élèves), puis `supabase/cron/rappels.sql` (secret `CRON_SECRET` à créer, mode d'emploi en tête du fichier). Tant que 0017 n'est pas appliquée, la carte « Mon rythme » de `/profil` échoue à l'enregistrement (bandeau d'erreur).
+- **Migrations 0017 à 0020 écrites, à appliquer par Gauthier dans l'ordre** (0018 : vérifier ensuite les professeurs, sinon leurs créneaux disparaissent du catalogue des élèves), puis `supabase/cron/rappels.sql` (secret `CRON_SECRET` à créer, mode d'emploi en tête du fichier). Tant que 0017 n'est pas appliquée, la carte « Mon rythme » de `/profil` échoue à l'enregistrement (bandeau d'erreur).
 - Ne pas contourner un refus du classifieur de sécurité.
 
 **Avant chaque commit :** `cd Math_Edu_Application && npm test && npm run lint && npm run build` (lint à zéro avertissement). Après une migration : **`npm run test:sql`** (PGlite, Postgres en WebAssembly, sans Docker : Gauthier ne veut pas de Docker Desktop). `supabase/tests/run.sh` reste pour qui a Docker.
@@ -127,7 +127,7 @@ Ce qui est faux ou absent aujourd'hui (repris dans le backlog §6) :
   - Le générateur refuse une figure qui trompe l'œil : angle codé droit qui ne l'est pas, angle presque droit, points presque alignés, longueurs codées égales qui ne le sont pas.
   - L'app affiche la figure en `<img>` data URI, donc aucun script ne peut s'exécuter.
 
-### 4.2 Base (`supabase/migrations/0001` à `0019`, chaque fichier explique son objet)
+### 4.2 Base (`supabase/migrations/0001` à `0020`, chaque fichier explique son objet)
 
 **Tables :**
 - `profiles` (rôle, niveau, email parent, consentement, préférences) ;
@@ -379,6 +379,9 @@ Décisions prises en route : la page publique du parent est `/accord/:jeton` (co
 **Contenu :** étape 8 du §7.
 
 ### Sprint 5 : Relation de suivi professeur, élève et parent (offre d'abonnement supérieure)
+
+**Avancement au 21 octobre 2026 :** migration **0020** écrite (à appliquer), tests SQL 160 à 171 ; points 1 (suivi demandé par l'élève depuis `/profs/:id`, accepté ou refusé sur `/prof/eleves`, suivis de l'élève sur `/mes-profs`), 2 (messagerie `/suivi/:id` à trois, le parent lit et écrit, signalement, archive ; l'administrateur lit les messages signalés dans le SQL Editor : `select * from messages_suivi where signale_le is not null`) et 3 (créneaux réservés aux élèves suivis ; le cours individuel se demande dans le fil) **codés**. Point 4 : propositions ci-dessous, **à soumettre à Gauthier**, rien codé.
+
 
 1. Rubriques **« Mes élèves »** (professeur) et **« Mes professeurs »** (élève), créées quand le professeur accepte un suivi.
 2. **Messagerie sécurisée sur le site :** questions de cours et d'exercices. **Le parent voit tous les échanges et peut écrire au professeur** : c'est la protection contre les abus, dans les deux sens. Pas de pièce jointe libre au début ; signalement et archivage.
