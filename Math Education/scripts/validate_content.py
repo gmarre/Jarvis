@@ -488,8 +488,18 @@ NOTATIONS = {
     # Unites d'aire et de volume (etape 4a, domaine P) : cm² arrive avec l'aire
     # mesuree au CM1 (P017), cm³ avec le volume en 6e (P026). Dans une formule
     # KaTeX, ^2 et ^3 sur une unite comptent aussi.
-    "P017": (re.compile(r"²|(?:mm|cm|dm|km|m)\^\{?2"), "les unites d'aire (²)"),
-    "P026": (re.compile(r"³|(?:mm|cm|dm|m)\^\{?3"), "les unites de volume (³)"),
+    # Un exposant apres une lettre d'unite (cm², m³) est une unite d'aire ou de
+    # volume ; apres un nombre ou une parenthese (5², (−2)³), c'est une puissance
+    # (etape 6, regles ci-dessous). Separes le 20 octobre 2026.
+    "P017": (re.compile(r"(?:mm|cm|dm|km|hm|dam|m)²|(?:mm|cm|dm|km|m)\^\{?2"), "les unites d'aire (²)"),
+    "P026": (re.compile(r"(?:mm|cm|dm|km|m)³|(?:mm|cm|dm|m)\^\{?3"), "les unites de volume (³)"),
+    # Puissances (etape 6) : le carre et le cube d'un nombre arrivent en 5e
+    # (A029), les autres exposants en 4e (A031), l'exposant negatif en 3e
+    # (A036), la racine carree en 4e (A034).
+    "A029": (re.compile(r"(?<=[\d)])[²³]|(?<=[\d)}])\^\{?[23](?!\d)"), "un carre ou un cube (a², a³)"),
+    "A031": (re.compile(r"(?<=[\d)])[⁰¹⁴⁵⁶⁷⁸⁹]|(?<=[\d)}])\^\{?(?:[4-9]|1\d|[01](?![\d.]))"), "un exposant autre que 2 et 3"),
+    "A036": (re.compile(r"⁻|(?<=[\d)}])\^\{?-"), "un exposant negatif"),
+    "A034": (re.compile(r"√|\\sqrt"), "la racine carree (√)"),
     # Le degre (symbole DEG) est introduit au CM2 a partir de l'angle droit (G022,
     # etape 4b). Ecrit par son code : invisible a la relecture sinon.
     # « °C » (temperature, etape 5) n'est pas un angle : le motif l'exclut.
