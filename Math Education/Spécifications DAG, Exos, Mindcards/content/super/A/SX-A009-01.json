@@ -1,0 +1,91 @@
+{
+  "id": "SX-A009-01",
+  "skill_id": "A009",
+  "skill_ids": [
+    "A009",
+    "B005"
+  ],
+  "school_level": "CE2",
+  "title": "L'atelier colliers",
+  "contexte": "Mme Leroy prépare un atelier colliers pour les 24 élèves de sa classe de CE2. L'atelier aura lieu jeudi, à 14 heures.\n\nAu magasin, les perles sont vendues en boîtes de 1 000 perles, en sachets de 100 perles, en tubes de 10 perles, ou à l'unité.\n\nMme Leroy achète 2 boîtes, 13 sachets, 7 tubes et 9 perles seules.\n\nLes fermoirs sont vendus par paquets de 5 ; elle prend 5 paquets.\n\nDans la réserve du magasin, il reste 6 038 perles dorées. Le vendeur veut les ranger dans des tubes de 10 perles, tous pleins ; il gardera les perles en trop dans une coupelle.",
+  "image": null,
+  "duree_estimee_min": 13,
+  "questions": [
+    {
+      "key": "q1",
+      "skill_id": "A009",
+      "statement": "Dans le nombre de perles dorées de la réserve, quel est le chiffre des centaines ?",
+      "type": "numerique",
+      "answer": {
+        "value": 0,
+        "accepted": [
+          "zéro",
+          "zero"
+        ]
+      },
+      "points": 2,
+      "solution_steps": [
+        "La réserve contient 6 038 perles dorées.",
+        "Dans 6 038 : 6 est le chiffre des milliers, 0 celui des centaines, 3 celui des dizaines, 8 celui des unités.",
+        "Le chiffre des centaines est **0**. Attention : 60 est le nombre de centaines, pas le chiffre des centaines."
+      ],
+      "hint": "Nomme le rang de chaque chiffre, en partant des unités."
+    },
+    {
+      "key": "q2",
+      "skill_id": "B005",
+      "statement": "Combien de fermoirs Mme Leroy achète-t-elle ?",
+      "type": "numerique",
+      "answer": {
+        "value": 25,
+        "unit": "fermoirs"
+      },
+      "points": 2,
+      "solution_steps": [
+        "Elle prend 5 paquets de 5 fermoirs : on calcule 5 × 5.",
+        "5 × 5 = 25.",
+        "Mme Leroy achète **25 fermoirs**, un de plus que le nombre d'élèves."
+      ],
+      "hint": "Combien de fois prend-elle 5 fermoirs ?"
+    },
+    {
+      "key": "q3",
+      "skill_id": "A009",
+      "statement": "Combien de perles Mme Leroy achète-t-elle en tout ?",
+      "type": "numerique",
+      "answer": {
+        "value": 3379,
+        "unit": "perles"
+      },
+      "points": 3,
+      "solution_steps": [
+        "2 boîtes de 1 000 perles : 2 milliers.",
+        "13 sachets de 100 perles : 13 centaines, c'est-à-dire 1 millier et 3 centaines.",
+        "7 tubes de 10 perles : 7 dizaines. Et 9 perles seules : 9 unités.",
+        "En tout : 3 milliers, 3 centaines, 7 dizaines et 9 unités. Mme Leroy achète **3 379 perles**.",
+        "Attention : 2 379 serait faux, car les 13 centaines contiennent un millier."
+      ],
+      "hint": "Dix sachets de 100 perles font autant qu'une boîte."
+    },
+    {
+      "key": "q4",
+      "skill_id": "A009",
+      "statement": "Combien de tubes pleins le vendeur peut-il remplir avec les perles dorées ?",
+      "type": "numerique",
+      "answer": {
+        "value": 603,
+        "unit": "tubes"
+      },
+      "points": 4,
+      "solution_steps": [
+        "Un tube contient 10 perles : on cherche le nombre de dizaines de 6 038.",
+        "6 038, c'est 603 dizaines et 8 unités : 603 dizaines font 6 030 perles, et il reste 8 perles.",
+        "Le vendeur remplit **603 tubes**, et 8 perles vont dans la coupelle.",
+        "Attention : 3 est le chiffre des dizaines, mais le nombre de dizaines est 603."
+      ],
+      "hint": "Un tube plein contient une dizaine de perles."
+    }
+  ],
+  "review_status": "relu_agent",
+  "programme_ref": "Cycle 2, Cours élémentaire deuxième année, Les nombres entiers : « décomposition du type : (4 × 1 000) + (6 × 100) + (3 × 10) + (5 × 1) »"
+}

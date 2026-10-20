@@ -1,0 +1,90 @@
+{
+  "id": "SX-A012-01",
+  "skill_id": "A012",
+  "skill_ids": [
+    "A012",
+    "B006"
+  ],
+  "school_level": "CM1",
+  "title": "Le spectacle de fin d'année",
+  "contexte": "Pour le spectacle de fin d'année, l'école installe des chaises dans le préau. Le spectacle commence à 18 heures, et l'entrée coûte 3 euros.\n\nLe directeur dispose de 84 chaises. Il veut les placer en rangées qui ont toutes le même nombre de chaises, sans aucune chaise en trop. Il hésite entre des rangées de 5, de 7, de 8 ou de 9 chaises.\n\nLes élèves de CM1 ont cuisiné des biscuits pour l'entracte : 5 plateaux de 8 biscuits.\n\nLe directeur se souvient du spectacle de l'an dernier : les spectateurs remplissaient exactement des rangées de 9 chaises, et ils étaient plus de 150, mais moins de 160.",
+  "image": null,
+  "duree_estimee_min": 12,
+  "questions": [
+    {
+      "key": "q1",
+      "skill_id": "B006",
+      "statement": "Combien de biscuits les élèves ont-ils cuisinés ?",
+      "type": "numerique",
+      "answer": {
+        "value": 40,
+        "unit": "biscuits"
+      },
+      "points": 2,
+      "solution_steps": [
+        "5 plateaux de 8 biscuits : on calcule 5 × 8.",
+        "5 × 8 = 40 (table de 8 ou table de 5).",
+        "Les élèves ont cuisiné **40 biscuits**."
+      ],
+      "hint": "Combien de fois y a-t-il 8 biscuits ?"
+    },
+    {
+      "key": "q2",
+      "skill_id": "A012",
+      "statement": "Quelle longueur de rangée permet au directeur d'utiliser toutes ses chaises, sans chaise en trop ?",
+      "type": "qcm",
+      "choices": [
+        {
+          "key": "a",
+          "text": "Des rangées de 5 chaises",
+          "misconception": "84 se termine par 4 : ce n'est pas un multiple de 5 (5 × 16 = 80, il resterait 4 chaises)."
+        },
+        {
+          "key": "b",
+          "text": "Des rangées de 7 chaises",
+          "misconception": null
+        },
+        {
+          "key": "c",
+          "text": "Des rangées de 8 chaises",
+          "misconception": "8 × 10 = 80 et 8 × 11 = 88 : 84 n'est pas un multiple de 8, il resterait 4 chaises."
+        },
+        {
+          "key": "d",
+          "text": "Des rangées de 9 chaises",
+          "misconception": "9 × 9 = 81 et 9 × 10 = 90 : 84 n'est pas un multiple de 9, il resterait 3 chaises."
+        }
+      ],
+      "answer": {
+        "value": "b"
+      },
+      "points": 3,
+      "solution_steps": [
+        "Il faut que 84 soit un multiple du nombre de chaises par rangée.",
+        "84 se termine par 4 : ce n'est pas un multiple de 5. 8 × 10 = 80 et 8 × 11 = 88 : 84 n'est pas un multiple de 8. 9 × 9 = 81 et 9 × 10 = 90 : 84 n'est pas un multiple de 9.",
+        "7 × 12 = 84 : 84 est un multiple de 7. Le directeur fait **des rangées de 7 chaises**, 12 rangées."
+      ],
+      "hint": "Pour chaque nombre, compte de ce nombre en ce nombre, au-delà de sa table : tombes-tu juste sur 84 ?"
+    },
+    {
+      "key": "q3",
+      "skill_id": "A012",
+      "statement": "Combien y avait-il de spectateurs l'an dernier ?",
+      "type": "numerique",
+      "answer": {
+        "value": 153,
+        "unit": "spectateurs"
+      },
+      "points": 4,
+      "solution_steps": [
+        "Les spectateurs remplissaient exactement des rangées de 9 : leur nombre est un multiple de 9.",
+        "On compte de 9 en 9 à partir de 9 × 10 = 90 : 99, 108, 117, 126, 135, 144, 153, 162.",
+        "144 est plus petit que 150, et 162 est plus grand que 160 : le seul multiple de 9 entre 150 et 160 est 153.",
+        "Il y avait **153 spectateurs**, en 17 rangées de 9."
+      ],
+      "hint": "Compte de 9 en 9 et arrête-toi près de 150."
+    }
+  ],
+  "review_status": "relu_agent",
+  "programme_ref": "Cycle 3, Cours moyen première année, Les nombres entiers : « Savoir déterminer si un nombre entier donné est un multiple d'un nombre entier inférieur ou égal à 10 »"
+}

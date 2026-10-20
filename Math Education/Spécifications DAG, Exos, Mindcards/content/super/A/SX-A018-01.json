@@ -1,0 +1,100 @@
+{
+  "id": "SX-A018-01",
+  "skill_id": "A018",
+  "skill_ids": [
+    "A018",
+    "P003"
+  ],
+  "school_level": "5e",
+  "title": "Le carnet météo de Zoé",
+  "contexte": "Pendant les vacances d'hiver, Zoé séjourne dans une station de ski située à 1 850 mètres d'altitude. Chaque matin à 8 heures, elle note dans son carnet la température affichée au thermomètre du chalet :\nlundi, 6 degrés sous zéro ;\nmardi, 0 degré ;\nmercredi, 2 degrés au-dessus de zéro ;\njeudi, 9 degrés sous zéro ;\nvendredi, 1,2 degré sous zéro.\n\nLe forfait de ski pour la journée coûte 33 €. Zoé paie avec 2 billets de 20 €.\n\nSa cousine Léa passe ses vacances au bord de la mer Morte, dont la surface se trouve à environ 430 mètres sous le niveau de la mer.",
+  "image": null,
+  "duree_estimee_min": 12,
+  "questions": [
+    {
+      "key": "q1",
+      "skill_id": "P003",
+      "statement": "Combien d'argent la caisse rend-elle à Zoé ?",
+      "type": "numerique",
+      "answer": {
+        "value": 7,
+        "unit": "€"
+      },
+      "points": 2,
+      "solution_steps": [
+        "Zoé donne 2 billets de 20 € : 20 + 20 = 40 €.",
+        "Le forfait coûte 33 € : la caisse rend 40 − 33 = 7 €.",
+        "La caisse rend **7 €** à Zoé."
+      ],
+      "hint": "Calcule d'abord la somme que Zoé donne."
+    },
+    {
+      "key": "q2",
+      "skill_id": "A018",
+      "statement": "Quels jours la température était-elle strictement négative ?",
+      "type": "qcm",
+      "choices": [
+        {
+          "key": "a",
+          "text": "Lundi, jeudi et vendredi",
+          "misconception": null
+        },
+        {
+          "key": "b",
+          "text": "Lundi, mardi, jeudi et vendredi",
+          "misconception": "0 n'est pas strictement négatif : il est à la fois positif et négatif, mais ni strictement positif ni strictement négatif."
+        },
+        {
+          "key": "c",
+          "text": "Lundi et jeudi seulement",
+          "misconception": "1,2 degré sous zéro s'écrit −1,2 °C : un nombre décimal peut aussi être négatif."
+        }
+      ],
+      "answer": {
+        "value": "a"
+      },
+      "points": 3,
+      "solution_steps": [
+        "En nombres relatifs : lundi −6 °C, mardi 0 °C, mercredi +2 °C, jeudi −9 °C, vendredi −1,2 °C.",
+        "Un nombre strictement négatif est inférieur à zéro, sans être zéro : −6, −9 et −1,2.",
+        "La température était strictement négative **lundi, jeudi et vendredi**."
+      ],
+      "hint": "Écris chaque température avec un nombre relatif."
+    },
+    {
+      "key": "q3",
+      "skill_id": "A018",
+      "statement": "Zoé écrit dans son carnet : « Mardi, la température était positive. » Vrai ou faux : Zoé a raison.",
+      "type": "vrai_faux",
+      "answer": {
+        "value": true
+      },
+      "points": 3,
+      "solution_steps": [
+        "Mardi, il faisait 0 °C.",
+        "Zéro est à la fois positif et négatif : il n'est pas strictement positif, mais il est positif.",
+        "C'est **vrai** : la température de mardi était positive."
+      ],
+      "hint": "Relis ce que l'on sait du nombre zéro."
+    },
+    {
+      "key": "q4",
+      "skill_id": "A018",
+      "statement": "Écris avec un nombre relatif l'altitude de la surface de la mer Morte, en mètres.",
+      "type": "numerique",
+      "answer": {
+        "value": -430,
+        "unit": "m"
+      },
+      "points": 4,
+      "solution_steps": [
+        "L'altitude se mesure à partir du niveau de la mer, qui correspond à 0 m.",
+        "La surface de la mer Morte est sous le niveau de la mer : son altitude est un nombre négatif.",
+        "Son altitude est **−430 m**. Écrire 430 m désignerait un lieu au-dessus du niveau de la mer."
+      ],
+      "hint": "Une altitude sous le niveau de la mer est comme une température sous zéro."
+    }
+  ],
+  "review_status": "relu_agent",
+  "programme_ref": "Cycle 4, classe de 5e, Nombres et calculs, Nombres relatifs, Objectifs d'apprentissage : « Définir les nombres relatifs. »"
+}

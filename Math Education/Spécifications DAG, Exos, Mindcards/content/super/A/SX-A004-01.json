@@ -1,0 +1,110 @@
+{
+  "id": "SX-A004-01",
+  "skill_id": "A004",
+  "skill_ids": [
+    "A004",
+    "A003"
+  ],
+  "school_level": "CE1",
+  "title": "Le jeu de piste des CE1",
+  "contexte": "Mercredi, les CE1 font un jeu de piste dans le parc. Les équipes ont 4 enfants et partent à 14 heures.\n\nÀ la balise rouge, un grand panneau indique la distance jusqu'au château : 708 mètres. Chaque équipe doit lire ce nombre à voix haute.\n\nÀ la balise verte, un sac contient 3 sachets de 100 perles, 7 sachets de 10 perles et 2 perles seules. L'équipe doit trouver le nombre de perles du sac.\n\nÀ la balise bleue, une pancarte donne la hauteur du vieux chêne, en centimètres : 970. Il faut aussi lire ce nombre à voix haute.\n\nL'équipe la plus rapide gagne le goûter.",
+  "image": null,
+  "duree_estimee_min": 8,
+  "questions": [
+    {
+      "key": "q1",
+      "skill_id": "A003",
+      "statement": "Combien de perles y a-t-il dans le sac de la balise verte ?",
+      "type": "numerique",
+      "answer": {
+        "value": 372,
+        "unit": "perles"
+      },
+      "points": 2,
+      "solution_steps": [
+        "3 sachets de 100 perles : 3 centaines. 7 sachets de 10 perles : 7 dizaines. Et 2 perles seules : 2 unités.",
+        "3 centaines, 7 dizaines et 2 unités, c'est le nombre 372.",
+        "Il y a **372 perles** dans le sac."
+      ],
+      "hint": "Un sachet de 100 perles, c'est une centaine."
+    },
+    {
+      "key": "q2",
+      "skill_id": "A004",
+      "statement": "Comment lit-on la distance écrite sur le panneau de la balise rouge ?",
+      "type": "qcm",
+      "choices": [
+        {
+          "key": "a",
+          "text": "sept-cent-huit",
+          "misconception": null
+        },
+        {
+          "key": "b",
+          "text": "soixante-dix-huit",
+          "misconception": "L'élève oublie le zéro et lit 78. Or 708 a 7 centaines."
+        },
+        {
+          "key": "c",
+          "text": "sept-cent-quatre-vingts",
+          "misconception": "L'élève confond 708 et 780 : dans 708, le 0 est le chiffre des dizaines, et 8 est le chiffre des unités."
+        },
+        {
+          "key": "d",
+          "text": "sept-zéro-huit",
+          "misconception": "L'élève lit les chiffres un par un, au lieu de lire le nombre."
+        }
+      ],
+      "answer": {
+        "value": "a"
+      },
+      "points": 3,
+      "solution_steps": [
+        "708, c'est 7 centaines, 0 dizaine et 8 unités.",
+        "7 centaines se lisent « sept-cent » ; il n'y a pas de dizaine, puis 8 unités : « huit ».",
+        "On lit **sept-cent-huit**."
+      ],
+      "hint": "Regarde le chiffre des centaines, puis celui des dizaines."
+    },
+    {
+      "key": "q3",
+      "skill_id": "A004",
+      "statement": "Comment lit-on la hauteur du vieux chêne ?",
+      "type": "qcm",
+      "choices": [
+        {
+          "key": "a",
+          "text": "neuf-cent-sept",
+          "misconception": "L'élève confond 970 et 907 : dans 970, le 7 est le chiffre des dizaines."
+        },
+        {
+          "key": "b",
+          "text": "quatre-vingt-dix-sept",
+          "misconception": "L'élève oublie le zéro et lit 97. Or 970 a 9 centaines."
+        },
+        {
+          "key": "c",
+          "text": "neuf-cent-soixante-dix",
+          "misconception": null
+        },
+        {
+          "key": "d",
+          "text": "neuf-cent-dix-sept",
+          "misconception": "L'élève confond « soixante-dix » et « dix-sept » : 7 dizaines se lisent soixante-dix."
+        }
+      ],
+      "answer": {
+        "value": "c"
+      },
+      "points": 4,
+      "solution_steps": [
+        "970, c'est 9 centaines, 7 dizaines et 0 unité.",
+        "9 centaines se lisent « neuf-cent ». 7 dizaines, c'est soixante-dix.",
+        "On lit **neuf-cent-soixante-dix**."
+      ],
+      "hint": "Cherche comment se dit le nombre de 7 dizaines."
+    }
+  ],
+  "review_status": "relu_agent",
+  "programme_ref": "Cycle 2, Cours élémentaire première année, Les nombres entiers : « Il sait également lire un nombre écrit en chiffres et l'écrire en lettres. »"
+}

@@ -1,0 +1,101 @@
+{
+  "id": "SX-A008-01",
+  "skill_id": "A008",
+  "skill_ids": [
+    "A008",
+    "A004"
+  ],
+  "school_level": "CE1",
+  "title": "Les numéros de la rue des Tilleuls",
+  "contexte": "Dans la rue des Tilleuls, les immeubles portent des numéros qui se suivent, de 95 à 104. M. Diallo, le gardien, doit coller un numéro neuf sur la porte de chaque immeuble.\n\nIl achète des chiffres autocollants au magasin de bricolage, qui ouvre à 9 heures. Pour écrire un numéro, il colle les chiffres un par un : pour le numéro 97, il colle un 9, puis un 7.\n\nCe matin, M. Diallo a aussi rangé 30 sacs de sable dans la cave. Il doit enfin lire à voix haute, à son voisin, le numéro du dernier immeuble.",
+  "image": null,
+  "duree_estimee_min": 10,
+  "questions": [
+    {
+      "key": "q1",
+      "skill_id": "A004",
+      "statement": "Comment M. Diallo lit-il le numéro du dernier immeuble ?",
+      "type": "qcm",
+      "choices": [
+        {
+          "key": "a",
+          "text": "cent-quarante",
+          "misconception": "L'élève confond 104 et 140 : dans 104, le 0 est le chiffre des dizaines."
+        },
+        {
+          "key": "b",
+          "text": "cent-quatre",
+          "misconception": null
+        },
+        {
+          "key": "c",
+          "text": "quatorze",
+          "misconception": "L'élève oublie le zéro et lit 14. Or 104 a 1 centaine."
+        },
+        {
+          "key": "d",
+          "text": "un-zéro-quatre",
+          "misconception": "L'élève lit les chiffres un par un, au lieu de lire le nombre."
+        }
+      ],
+      "answer": {
+        "value": "b"
+      },
+      "points": 2,
+      "solution_steps": [
+        "Le dernier immeuble porte le numéro 104 : 1 centaine, 0 dizaine et 4 unités.",
+        "1 centaine se lit « cent » ; il n'y a pas de dizaine, puis 4 unités : « quatre ».",
+        "M. Diallo lit **cent-quatre**."
+      ],
+      "hint": "Relis la phrase qui donne les numéros de la rue."
+    },
+    {
+      "key": "q2",
+      "skill_id": "A008",
+      "statement": "Combien d'autocollants « 9 » M. Diallo doit-il coller en tout ?",
+      "type": "numerique",
+      "answer": {
+        "value": 6,
+        "unit": "autocollants",
+        "accepted": [
+          "6 autocollant",
+          "six",
+          "6 chiffres"
+        ]
+      },
+      "points": 3,
+      "solution_steps": [
+        "Les numéros sont 95, 96, 97, 98, 99, 100, 101, 102, 103 et 104.",
+        "95, 96, 97 et 98 ont chacun un chiffre 9 : cela fait 4 autocollants « 9 ».",
+        "99 s'écrit avec deux chiffres 9 : 2 autocollants de plus. De 100 à 104, aucun 9.",
+        "En tout : 4 et 2, M. Diallo colle **6 autocollants « 9 »**."
+      ],
+      "hint": "Écris tous les numéros de la rue, puis regarde chacun de leurs chiffres."
+    },
+    {
+      "key": "q3",
+      "skill_id": "A008",
+      "statement": "Combien de chiffres autocollants M. Diallo doit-il coller en tout ?",
+      "type": "numerique",
+      "answer": {
+        "value": 25,
+        "unit": "autocollants",
+        "accepted": [
+          "25 chiffres",
+          "25 autocollant",
+          "vingt-cinq"
+        ]
+      },
+      "points": 4,
+      "solution_steps": [
+        "De 95 à 99, il y a 5 numéros, et chacun s'écrit avec 2 chiffres : 2, 4, 6, 8, 10. Cela fait 10 chiffres.",
+        "De 100 à 104, il y a 5 numéros, et chacun s'écrit avec 3 chiffres : 3, 6, 9, 12, 15. Cela fait 15 chiffres.",
+        "En tout : 10 et 15 font 25. M. Diallo colle **25 chiffres**.",
+        "Attention : il y a 10 immeubles, mais un numéro a plusieurs chiffres. Les 30 sacs de sable ne servent pas ici."
+      ],
+      "hint": "Un numéro n'a pas toujours le même nombre de chiffres que les autres."
+    }
+  ],
+  "review_status": "relu_agent",
+  "programme_ref": "Cycle 2, Cours élémentaire première année, Les nombres entiers : « Connaitre la valeur des chiffres en fonction de leur position dans un nombre. »"
+}

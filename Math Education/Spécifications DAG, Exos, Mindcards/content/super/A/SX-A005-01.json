@@ -1,0 +1,91 @@
+{
+  "id": "SX-A005-01",
+  "skill_id": "A005",
+  "skill_ids": [
+    "A005",
+    "A004"
+  ],
+  "school_level": "CE1",
+  "title": "La commande de Mamie",
+  "contexte": "Mamie organise la kermesse du village, qui aura lieu le 14 juin à partir de 10 heures. Au téléphone, elle dicte sa commande à son petit-fils Hugo, qui a 8 ans. Hugo écrit tous les nombres en chiffres.\n\nMamie dit : « Il faut **trois-cent-quatre-vingt-dix-sept** gobelets et **six-cent-quinze** serviettes. Pour les ballons, on verra demain. »\n\nHugo regarde ensuite le carton de pailles déjà livré. Sur l'étiquette, il est écrit : 560 pailles. Il lit ce nombre à voix haute à Mamie, pour qu'elle sache combien de pailles il reste à commander.",
+  "image": null,
+  "duree_estimee_min": 8,
+  "questions": [
+    {
+      "key": "q1",
+      "skill_id": "A004",
+      "statement": "Comment Hugo lit-il le nombre de pailles écrit sur l'étiquette ?",
+      "type": "qcm",
+      "choices": [
+        {
+          "key": "a",
+          "text": "cinq-cent-six",
+          "misconception": "L'élève confond 560 et 506 : dans 560, le 6 est le chiffre des dizaines."
+        },
+        {
+          "key": "b",
+          "text": "cinquante-six",
+          "misconception": "L'élève oublie le zéro et lit 56. Or 560 a 5 centaines."
+        },
+        {
+          "key": "c",
+          "text": "cinq-cent-soixante",
+          "misconception": null
+        },
+        {
+          "key": "d",
+          "text": "cinq-six-zéro",
+          "misconception": "L'élève lit les chiffres un par un, au lieu de lire le nombre."
+        }
+      ],
+      "answer": {
+        "value": "c"
+      },
+      "points": 2,
+      "solution_steps": [
+        "560, c'est 5 centaines, 6 dizaines et 0 unité.",
+        "5 centaines se lisent « cinq-cent », 6 dizaines se lisent « soixante ».",
+        "Hugo lit **cinq-cent-soixante**."
+      ],
+      "hint": "Regarde bien la place du 6 dans le nombre."
+    },
+    {
+      "key": "q2",
+      "skill_id": "A005",
+      "statement": "Combien de serviettes Hugo doit-il commander ? Écris le nombre en chiffres.",
+      "type": "numerique",
+      "answer": {
+        "value": 615,
+        "unit": "serviettes"
+      },
+      "points": 3,
+      "solution_steps": [
+        "« Six-cent », ce sont 6 centaines.",
+        "« Quinze », c'est 1 dizaine et 5 unités.",
+        "6 centaines, 1 dizaine et 5 unités : Hugo écrit **615**.",
+        "Attention : écrire 600 puis 15 à la suite donnerait un nombre de cinq chiffres, beaucoup trop grand."
+      ],
+      "hint": "Écris d'abord le chiffre des centaines."
+    },
+    {
+      "key": "q3",
+      "skill_id": "A005",
+      "statement": "Combien de gobelets Hugo doit-il commander ? Écris le nombre en chiffres.",
+      "type": "numerique",
+      "answer": {
+        "value": 397,
+        "unit": "gobelets"
+      },
+      "points": 4,
+      "solution_steps": [
+        "« Trois-cent », ce sont 3 centaines.",
+        "« Quatre-vingt-dix-sept », c'est quatre-vingts et dix-sept : 8 dizaines, puis 1 dizaine et 7 unités, soit 9 dizaines et 7 unités.",
+        "3 centaines, 9 dizaines et 7 unités : Hugo écrit **397**.",
+        "Attention : 387 serait faux, car « dix-sept » contient une dizaine."
+      ],
+      "hint": "Quatre-vingt-dix-sept, c'est quatre-vingts et encore dix-sept."
+    }
+  ],
+  "review_status": "relu_agent",
+  "programme_ref": "Cycle 2, Cours élémentaire première année, Les nombres entiers : « L'élève sait écrire en chiffres un nombre dicté. »"
+}

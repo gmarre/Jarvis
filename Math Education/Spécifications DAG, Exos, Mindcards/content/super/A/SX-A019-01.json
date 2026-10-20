@@ -1,0 +1,114 @@
+{
+  "id": "SX-A019-01",
+  "skill_id": "A019",
+  "skill_ids": [
+    "A019",
+    "A018",
+    "D019"
+  ],
+  "school_level": "5e",
+  "title": "Les températures de l'exposé",
+  "contexte": "Pour un exposé sur l'hiver en Europe, Inès a relevé la température de cinq villes un matin de janvier, à 7 heures, heure de Paris. Elle les a placées sur une échelle verticale graduée en degrés Celsius, représentée sur la figure : chaque ville y est un point.\n\nDans son cahier, elle a noté :\nle point A représente Prague ;\nle point B représente Moscou ;\nle point C représente Rome ;\nle point D représente Berlin ;\nle point E représente Paris.\n\nÀ ce moment-là, il était déjà 9 heures à Moscou.",
+  "image": "figures/SX-A019-01",
+  "duree_estimee_min": 13,
+  "questions": [
+    {
+      "key": "q1",
+      "skill_id": "A018",
+      "statement": "Dans combien de ces cinq villes la température était-elle strictement négative ?",
+      "type": "numerique",
+      "answer": {
+        "value": 3,
+        "unit": "villes",
+        "accepted": [
+          "trois",
+          "3 ville"
+        ]
+      },
+      "points": 2,
+      "solution_steps": [
+        "Une température strictement négative est représentée par un point situé sous le 0 de l'échelle.",
+        "Les points A, B et D sont sous le 0 ; les points C et E sont au-dessus.",
+        "La température était strictement négative dans **3 villes** : Prague, Moscou et Berlin."
+      ],
+      "hint": "Repère la graduation 0 sur l'échelle."
+    },
+    {
+      "key": "q2",
+      "skill_id": "D019",
+      "statement": "Quelle température faisait-il à Paris, en °C ?",
+      "type": "numerique",
+      "answer": {
+        "value": 0.5,
+        "unit": "°C",
+        "accepted": [
+          "0,5",
+          "+0,5",
+          "+0,5 °C"
+        ]
+      },
+      "points": 2,
+      "solution_steps": [
+        "Entre les graduations 0 et 2, il y a 4 intervalles : chaque petite graduation vaut 2 ÷ 4 = 0,5.",
+        "Le point E, Paris, est 1 petite graduation au-dessus de 0 : il est à 0,5.",
+        "Il faisait **0,5 °C** à Paris."
+      ],
+      "hint": "Compte les intervalles entre 0 et 2 pour trouver la valeur d'une petite graduation."
+    },
+    {
+      "key": "q3",
+      "skill_id": "A019",
+      "statement": "Quelle température faisait-il à Moscou, en °C ?",
+      "type": "numerique",
+      "answer": {
+        "value": -5.5,
+        "unit": "°C",
+        "accepted": [
+          "-5,5"
+        ]
+      },
+      "points": 3,
+      "solution_steps": [
+        "Chaque petite graduation vaut 0,5 (4 intervalles entre 0 et 2).",
+        "Le point B, Moscou, est 11 petites graduations sous 0 : 11 × 0,5 = 5,5 sous zéro.",
+        "Il faisait **−5,5 °C** à Moscou : un point sous le 0 a une abscisse négative."
+      ],
+      "hint": "Sous le 0, les nombres sont négatifs."
+    },
+    {
+      "key": "q4",
+      "skill_id": "A019",
+      "statement": "Dans quelle ville faisait-il −3,5 °C ?",
+      "type": "qcm",
+      "choices": [
+        {
+          "key": "a",
+          "text": "Prague",
+          "misconception": "Le point A est à −2,5 : l'élève place −3,5 entre −3 et −2. Or, sous zéro, −3,5 est entre −4 et −3."
+        },
+        {
+          "key": "b",
+          "text": "Rome",
+          "misconception": "Le point C est à +3,5 : l'élève oublie le signe moins, il place −3,5 au-dessus de zéro."
+        },
+        {
+          "key": "c",
+          "text": "Berlin",
+          "misconception": null
+        }
+      ],
+      "answer": {
+        "value": "c"
+      },
+      "points": 4,
+      "solution_steps": [
+        "Chaque petite graduation vaut 0,5. −3,5 est 7 petites graduations sous 0.",
+        "Sous zéro, −3,5 est entre −4 et −3 : plus bas que −3, plus haut que −4.",
+        "Le point situé à −3,5 est D : il faisait −3,5 °C à **Berlin**."
+      ],
+      "hint": "Sous zéro, plus on descend, plus le nombre est petit."
+    }
+  ],
+  "review_status": "relu_agent",
+  "programme_ref": "Cycle 4, classe de 5e, Nombres et calculs, Nombres relatifs, Objectifs d'apprentissage : « Lire l'abscisse d'un nombre relatif sur une droite graduée et placer un nombre relatif d'abscisse donnée. »"
+}

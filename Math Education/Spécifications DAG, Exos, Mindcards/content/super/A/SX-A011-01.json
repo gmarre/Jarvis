@@ -1,0 +1,111 @@
+{
+  "id": "SX-A011-01",
+  "skill_id": "A011",
+  "skill_ids": [
+    "A011",
+    "A004"
+  ],
+  "school_level": "CE1",
+  "title": "La visite du musée",
+  "contexte": "Mardi, la classe de CE1 de Mme Garnier visite le musée de la ville. La classe compte 23 élèves, et le car part à 9 heures.\n\nAu musée, chaque salle porte un numéro. Les salles aux numéros **pairs** sont à gauche du grand couloir ; celles aux numéros **impairs** sont à droite.\n\nLe guide annonce le programme :\nd'abord la salle des dinosaures, numéro 314 ;\npuis la salle des volcans, numéro 427 ;\nenfin la salle des planètes, numéro 530.\n\nÀ la boutique, des cartes postales portent les numéros de 761 à 770. Mme Garnier achète une carte pour chaque numéro pair.",
+  "image": null,
+  "duree_estimee_min": 8,
+  "questions": [
+    {
+      "key": "q1",
+      "skill_id": "A004",
+      "statement": "Comment le guide lit-il le numéro de la salle des planètes ?",
+      "type": "qcm",
+      "choices": [
+        {
+          "key": "a",
+          "text": "cinq-cent-trois",
+          "misconception": "L'élève confond 530 et 503 : dans 530, le 3 est le chiffre des dizaines."
+        },
+        {
+          "key": "b",
+          "text": "cinquante-trois",
+          "misconception": "L'élève oublie le zéro et lit 53. Or 530 a 5 centaines."
+        },
+        {
+          "key": "c",
+          "text": "cinq-cent-trente",
+          "misconception": null
+        },
+        {
+          "key": "d",
+          "text": "cinq-trois-zéro",
+          "misconception": "L'élève lit les chiffres un par un, au lieu de lire le nombre."
+        }
+      ],
+      "answer": {
+        "value": "c"
+      },
+      "points": 2,
+      "solution_steps": [
+        "La salle des planètes porte le numéro 530 : 5 centaines, 3 dizaines et 0 unité.",
+        "5 centaines se lisent « cinq-cent », 3 dizaines se lisent « trente ».",
+        "Le guide lit **cinq-cent-trente**."
+      ],
+      "hint": "Regarde bien la place du 3 dans le nombre."
+    },
+    {
+      "key": "q2",
+      "skill_id": "A011",
+      "statement": "Quelles salles du programme sont à gauche du grand couloir ?",
+      "type": "qcm",
+      "choices": [
+        {
+          "key": "a",
+          "text": "La salle des dinosaures et celle des planètes",
+          "misconception": null
+        },
+        {
+          "key": "b",
+          "text": "La salle des dinosaures seulement",
+          "misconception": "L'élève croit qu'un nombre terminé par 0 n'est pas pair. Or 530 se termine par 0 : il est pair."
+        },
+        {
+          "key": "c",
+          "text": "La salle des volcans seulement",
+          "misconception": "L'élève inverse les côtés : à gauche, ce sont les numéros pairs, et 427 est impair."
+        }
+      ],
+      "answer": {
+        "value": "a"
+      },
+      "points": 3,
+      "solution_steps": [
+        "À gauche, ce sont les salles aux numéros pairs. Un nombre est pair quand son chiffre des unités est 0, 2, 4, 6 ou 8.",
+        "314 se termine par 4 : pair. 427 se termine par 7 : impair. 530 se termine par 0 : pair.",
+        "À gauche du couloir : **la salle des dinosaures et celle des planètes**."
+      ],
+      "hint": "Regarde le dernier chiffre de chaque numéro."
+    },
+    {
+      "key": "q3",
+      "skill_id": "A011",
+      "statement": "Combien de cartes postales Mme Garnier achète-t-elle ?",
+      "type": "numerique",
+      "answer": {
+        "value": 5,
+        "unit": "cartes",
+        "accepted": [
+          "cinq",
+          "5 carte",
+          "5 cartes postales"
+        ]
+      },
+      "points": 4,
+      "solution_steps": [
+        "Les numéros vont de 761 à 770 : 761, 762, 763, 764, 765, 766, 767, 768, 769, 770.",
+        "Les numéros pairs se terminent par 0, 2, 4, 6 ou 8 : 762, 764, 766, 768 et 770.",
+        "Mme Garnier achète **5 cartes**. Attention à ne pas oublier 770 : il se termine par 0, il est pair.",
+        "Le nombre d'élèves de la classe ne sert pas ici."
+      ],
+      "hint": "Écris tous les numéros, puis regarde le dernier chiffre de chacun."
+    }
+  ],
+  "review_status": "relu_agent",
+  "programme_ref": "Cycle 2, Cours élémentaire première année, Les quatre opérations : « L'élève sait dire si un nombre est pair ou impair. »"
+}

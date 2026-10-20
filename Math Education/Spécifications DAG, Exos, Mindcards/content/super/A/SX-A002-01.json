@@ -1,0 +1,76 @@
+{
+  "id": "SX-A002-01",
+  "skill_id": "A002",
+  "skill_ids": [
+    "A002",
+    "A001"
+  ],
+  "school_level": "CP",
+  "title": "Le stand de Lou au vide-grenier",
+  "contexte": "Dimanche, Lou et son papa tiennent un stand au vide-grenier du village. Lou a 7 ans. Le stand ouvre à 8 heures. Beaucoup de familles passent devant le stand.\n\nLou vend ses billes. Elle les a rangées dans des sachets de 10 billes. Elle a rempli 6 sachets. Il lui reste aussi 8 billes seules.\n\nLou vend aussi ses petites voitures. Chaque rond montre une voiture :\n● ● ● ● ● ● ● ● ●\n\nPapa vend une grande boîte de livres. Sur la pancarte, il a écrit le prix en lettres : **soixante-quinze euros**.",
+  "image": null,
+  "duree_estimee_min": 8,
+  "questions": [
+    {
+      "key": "q1",
+      "skill_id": "A001",
+      "statement": "Combien de petites voitures Lou vend-elle ?",
+      "type": "numerique",
+      "answer": {
+        "value": 9,
+        "unit": "voitures",
+        "accepted": [
+          "neuf",
+          "neuf voitures",
+          "9 voiture",
+          "9 petites voitures"
+        ]
+      },
+      "points": 2,
+      "solution_steps": [
+        "On compte les ronds un par un, en montrant chaque rond une seule fois : un, deux, trois, quatre, cinq, six, sept, huit, neuf.",
+        "Le dernier nombre dit donne le nombre de voitures : Lou vend **9 voitures**.",
+        "L'âge de Lou et l'heure d'ouverture ne servent pas ici."
+      ],
+      "hint": "Montre chaque rond du doigt en comptant, sans en sauter."
+    },
+    {
+      "key": "q2",
+      "skill_id": "A002",
+      "statement": "Combien de billes Lou a-t-elle en tout ?",
+      "type": "numerique",
+      "answer": {
+        "value": 68,
+        "unit": "billes"
+      },
+      "points": 3,
+      "solution_steps": [
+        "Un sachet contient 10 billes : c'est une dizaine de billes.",
+        "6 sachets, ce sont 6 dizaines : 60 billes.",
+        "Il faut ajouter les 8 billes seules : 60 et 8, cela fait 68.",
+        "Lou a **68 billes**. Attention : 6 et 8 font 14, mais ce serait compter chaque sachet comme une seule bille."
+      ],
+      "hint": "Un sachet plein, c'est une dizaine de billes."
+    },
+    {
+      "key": "q3",
+      "skill_id": "A002",
+      "statement": "Papa écrit aussi le prix de la boîte de livres en chiffres, sur une étiquette. Quel nombre écrit-il ?",
+      "type": "numerique",
+      "answer": {
+        "value": 75,
+        "unit": "€"
+      },
+      "points": 4,
+      "solution_steps": [
+        "« Soixante-quinze », c'est soixante, puis quinze.",
+        "Soixante, ce sont 6 dizaines : 60. Quinze, c'est 1 dizaine et 5 unités.",
+        "6 dizaines et 1 dizaine font 7 dizaines, avec 5 unités : le nombre est 75.",
+        "Papa écrit **75**. Attention : écrire 60 puis 15 à la suite donnerait un nombre bien trop grand."
+      ],
+      "hint": "Cherche d'abord comment s'écrit soixante."
+    }
+  ],
+  "review_status": "relu_agent",
+  "programme_ref": "Cycle 2, Cours préparatoire, Les nombres entiers : « Les connaissances et les savoir-faire attendus concernent les nombres entiers jusqu'à cent. »"
+}

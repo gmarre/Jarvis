@@ -1,0 +1,85 @@
+{
+  "id": "SX-A003-01",
+  "skill_id": "A003",
+  "skill_ids": [
+    "A003",
+    "A002"
+  ],
+  "school_level": "CE1",
+  "title": "La livraison de la bibliothèque",
+  "contexte": "Lundi, la bibliothèque de l'école reçoit une livraison. Le camion arrive à 10 heures.\n\nLe livreur dépose 2 cartons de 100 livres, 14 piles de 10 livres et 5 livres seuls.\n\nLa directrice compte les élèves qui viendront emprunter ces livres. Elle écrit au tableau : **quatre-vingt-seize élèves**.\n\nPour fêter les nouveaux livres, trois classes ont compté les pages lues en une semaine :\nles CP ont lu 409 pages ;\nles CE1 ont lu 490 pages ;\nles CE2 ont lu 399 pages.\n\nLa classe qui a lu le plus de pages choisira les premiers livres.",
+  "image": null,
+  "duree_estimee_min": 10,
+  "questions": [
+    {
+      "key": "q1",
+      "skill_id": "A002",
+      "statement": "Écris en chiffres le nombre d'élèves qui viendront emprunter les livres.",
+      "type": "numerique",
+      "answer": {
+        "value": 96,
+        "unit": "élèves"
+      },
+      "points": 2,
+      "solution_steps": [
+        "« Quatre-vingt-seize », c'est quatre-vingts, puis seize.",
+        "Quatre-vingts s'écrit 80, et seize s'écrit 16 : 80 et 16, cela fait 96.",
+        "Il y aura **96 élèves**."
+      ],
+      "hint": "Commence par écrire quatre-vingts en chiffres."
+    },
+    {
+      "key": "q2",
+      "skill_id": "A003",
+      "statement": "Combien de livres le livreur dépose-t-il en tout ?",
+      "type": "numerique",
+      "answer": {
+        "value": 345,
+        "unit": "livres"
+      },
+      "points": 3,
+      "solution_steps": [
+        "2 cartons de 100 livres : 2 centaines, soit 200 livres.",
+        "14 piles de 10 livres : 14 dizaines. 10 dizaines font 1 centaine, donc 14 dizaines font 1 centaine et 4 dizaines, soit 140 livres.",
+        "En tout : 2 centaines, 1 centaine, 4 dizaines et 5 unités, c'est-à-dire 3 centaines, 4 dizaines et 5 unités.",
+        "Le livreur dépose **345 livres**. Attention : 245 serait faux, car les 14 dizaines contiennent une centaine."
+      ],
+      "hint": "Dix piles de 10 livres font déjà 100 livres."
+    },
+    {
+      "key": "q3",
+      "skill_id": "A003",
+      "statement": "Quelle classe choisira les premiers livres ?",
+      "type": "qcm",
+      "choices": [
+        {
+          "key": "a",
+          "text": "Les CP",
+          "misconception": "L'élève compare les chiffres des unités : 9 est plus grand que 0. Mais il faut comparer d'abord les centaines, puis les dizaines : 409 a 0 dizaine, 490 en a 9."
+        },
+        {
+          "key": "b",
+          "text": "Les CE1",
+          "misconception": null
+        },
+        {
+          "key": "c",
+          "text": "Les CE2",
+          "misconception": "L'élève voit beaucoup de 9 dans 399. Mais 399 n'a que 3 centaines, alors que 490 en a 4."
+        }
+      ],
+      "answer": {
+        "value": "b"
+      },
+      "points": 4,
+      "solution_steps": [
+        "On compare d'abord les chiffres des centaines : 409 et 490 ont 4 centaines, 399 n'en a que 3. Les CE2 ont donc lu le moins de pages des trois.",
+        "Entre 409 et 490, les centaines sont égales : on compare les dizaines. 409 a 0 dizaine, 490 en a 9.",
+        "490 est le plus grand des trois nombres : **les CE1** choisiront les premiers livres."
+      ],
+      "hint": "Compare d'abord les chiffres des centaines."
+    }
+  ],
+  "review_status": "relu_agent",
+  "programme_ref": "Cycle 2, Cours élémentaire première année, Les nombres entiers : « Les connaissances et savoir-faire attendus concernent les nombres jusqu'à mille. »"
+}

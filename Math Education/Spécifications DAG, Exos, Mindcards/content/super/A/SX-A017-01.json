@@ -1,0 +1,111 @@
+{
+  "id": "SX-A017-01",
+  "skill_id": "A017",
+  "skill_ids": [
+    "A017",
+    "A027",
+    "B008"
+  ],
+  "school_level": "5e",
+  "title": "Le marché de Noël",
+  "contexte": "Le marché de Noël de la ville ouvre le 1er décembre, de 10 heures à 19 heures. Mme Morel, la boulangère, y tient un stand de 4 mètres de long.\n\nElle a préparé 90 sablés et 126 macarons. Elle veut composer des paniers garnis tous identiques : chaque panier contient le même nombre de sablés et le même nombre de macarons, et elle utilise tous ses biscuits. Elle veut faire le plus de paniers possible.\n\nPour venir au marché, deux navettes partent de la place de la mairie : la navette du parking toutes les 14 minutes, la navette de la gare toutes les 21 minutes. Ce matin, elles sont parties ensemble à 10 h.",
+  "image": null,
+  "duree_estimee_min": 15,
+  "questions": [
+    {
+      "key": "q1",
+      "skill_id": "A027",
+      "statement": "Lequel de ces nombres est un multiple commun à 14 et à 21 ?",
+      "type": "qcm",
+      "choices": [
+        {
+          "key": "a",
+          "text": "7",
+          "misconception": "7 est un diviseur commun de 14 et de 21, pas un multiple commun."
+        },
+        {
+          "key": "b",
+          "text": "35",
+          "misconception": "35 = 14 + 21, mais ce n'est pas un multiple de 14 : 14 × 2 = 28 et 14 × 3 = 42."
+        },
+        {
+          "key": "c",
+          "text": "63",
+          "misconception": "63 = 21 × 3 est un multiple de 21, mais pas de 14 : 63 est impair."
+        },
+        {
+          "key": "d",
+          "text": "84",
+          "misconception": null
+        }
+      ],
+      "answer": {
+        "value": "d"
+      },
+      "points": 2,
+      "solution_steps": [
+        "Un multiple commun à 14 et à 21 est à la fois dans la table de 14 et dans celle de 21.",
+        "84 = 14 × 6 et 84 = 21 × 4 : 84 est un multiple commun.",
+        "7 est un diviseur commun ; 35 et 63 ne sont pas des multiples de 14. La réponse est **84**."
+      ],
+      "hint": "Vérifie chaque nombre dans la table de 14, puis dans celle de 21."
+    },
+    {
+      "key": "q2",
+      "skill_id": "B008",
+      "statement": "Avant de penser aux paniers, Mme Morel avait prévu des sachets de 8 macarons. Combien de sachets pleins aurait-elle pu remplir avec ses 126 macarons ?",
+      "type": "numerique",
+      "answer": {
+        "value": 15,
+        "unit": "sachets"
+      },
+      "points": 2,
+      "solution_steps": [
+        "On pose la division euclidienne de 126 par 8.",
+        "12 dizaines divisées par 8 : 1 dizaine, reste 4 dizaines. 46 unités divisées par 8 : 5 unités, reste 6.",
+        "126 = 8 × 15 + 6 : elle aurait rempli **15 sachets**, et 6 macarons seraient restés."
+      ],
+      "hint": "Pose la division de 126 par 8."
+    },
+    {
+      "key": "q3",
+      "skill_id": "A017",
+      "statement": "À quelle heure les deux navettes repartiront-elles ensemble pour la première fois ? Donne l'heure en heures et minutes.",
+      "type": "texte",
+      "answer": {
+        "value": "10 h 42",
+        "accepted": [
+          "10h42",
+          "10 h 42 min",
+          "10 heures 42"
+        ]
+      },
+      "points": 3,
+      "solution_steps": [
+        "Les départs de la navette du parking ont lieu toutes les 14 minutes : 14, 28, 42, 56… minutes après 10 h.",
+        "Ceux de la navette de la gare toutes les 21 minutes : 21, 42, 63… minutes après 10 h.",
+        "Le plus petit multiple commun à 14 et à 21 est 42 : elles repartent ensemble 42 minutes après 10 h, à **10 h 42**."
+      ],
+      "hint": "Écris les premiers multiples de 14 et de 21."
+    },
+    {
+      "key": "q4",
+      "skill_id": "A017",
+      "statement": "Combien de paniers garnis Mme Morel peut-elle préparer, au maximum ?",
+      "type": "numerique",
+      "answer": {
+        "value": 18,
+        "unit": "paniers"
+      },
+      "points": 4,
+      "solution_steps": [
+        "Le nombre de paniers doit être un diviseur de 90 (sablés) et de 126 (macarons) : un diviseur commun.",
+        "Diviseurs de 90 : 1, 2, 3, 5, 6, 9, 10, 15, 18, 30, 45, 90. Parmi eux, 1, 2, 3, 6, 9 et 18 divisent aussi 126 (126 = 18 × 7), mais pas 5, 10, 15, 30, 45 ni 90.",
+        "Le plus grand diviseur commun est 18 : Mme Morel prépare **18 paniers**, avec 5 sablés et 7 macarons chacun."
+      ],
+      "hint": "Cherche les diviseurs de 90, puis garde ceux qui divisent aussi 126."
+    }
+  ],
+  "review_status": "relu_agent",
+  "programme_ref": "Cycle 4, classe de 5e, Nombres et calculs, Opérations, Objectifs d'apprentissage : « Utiliser les notions de multiples et diviseurs. »"
+}

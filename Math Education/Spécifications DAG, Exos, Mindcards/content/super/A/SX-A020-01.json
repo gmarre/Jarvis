@@ -1,0 +1,124 @@
+{
+  "id": "SX-A020-01",
+  "skill_id": "A020",
+  "skill_ids": [
+    "A020",
+    "B015"
+  ],
+  "school_level": "5e",
+  "title": "La chasse au trésor de Malik",
+  "contexte": "Pour l'anniversaire de sa sœur, qui a 12 ans, Malik organise une chasse au trésor sur une petite île. Il a dessiné le plan de l'île dans un repère, représenté sur la figure : l'origine O est le ponton où accoste le bateau, et une graduation du plan représente 10 mètres sur le terrain.\n\nSur le plan, chaque lieu est marqué par un point :\nA, la cabane ;\nB, le puits ;\nC, le phare ;\nD, la grotte ;\nE, le vieux chêne.\n\nLe dernier message de la chasse dit : « Le trésor est enterré au point de coordonnées (−4 ; 2). » La traversée en bateau dure 25 minutes.",
+  "image": "figures/SX-A020-01",
+  "duree_estimee_min": 13,
+  "questions": [
+    {
+      "key": "q1",
+      "skill_id": "B015",
+      "statement": "Le puits est sur l'axe des abscisses. Quelle distance, en mètres, sépare le ponton du puits sur le terrain ?",
+      "type": "numerique",
+      "answer": {
+        "value": 50,
+        "unit": "m"
+      },
+      "points": 2,
+      "solution_steps": [
+        "Sur le plan, le puits B est sur l'axe des abscisses, à 5 graduations de l'origine O (son abscisse est −5).",
+        "Une graduation représente 10 m : 5 × 10 = 50.",
+        "Le puits est à **50 m** du ponton. Une distance est toujours positive, même si l'abscisse est négative."
+      ],
+      "hint": "Compte les graduations entre O et le point B."
+    },
+    {
+      "key": "q2",
+      "skill_id": "A020",
+      "statement": "Quelle est l'ordonnée du point E, le vieux chêne ?",
+      "type": "numerique",
+      "answer": {
+        "value": -4,
+        "accepted": [
+          "-4"
+        ]
+      },
+      "points": 3,
+      "solution_steps": [
+        "L'ordonnée se lit sur l'axe vertical.",
+        "Le point E est 4 graduations sous l'axe des abscisses.",
+        "L'ordonnée de E est **−4**. Son abscisse, lue sur l'axe horizontal, est 2."
+      ],
+      "hint": "L'ordonnée est la deuxième coordonnée, lue sur l'axe vertical."
+    },
+    {
+      "key": "q3",
+      "skill_id": "A020",
+      "statement": "Quelles sont les coordonnées du point D, la grotte ?",
+      "type": "qcm",
+      "choices": [
+        {
+          "key": "a",
+          "text": "(−4 ; −2)",
+          "misconception": "L'élève inverse abscisse et ordonnée : l'abscisse, lue sur l'axe horizontal, s'écrit en premier."
+        },
+        {
+          "key": "b",
+          "text": "(−2 ; −4)",
+          "misconception": null
+        },
+        {
+          "key": "c",
+          "text": "(2 ; −4)",
+          "misconception": "L'élève oublie le signe de l'abscisse : D est à gauche de l'axe vertical, son abscisse est négative."
+        },
+        {
+          "key": "d",
+          "text": "(−2 ; 4)",
+          "misconception": "L'élève oublie le signe de l'ordonnée : D est sous l'axe horizontal, son ordonnée est négative."
+        }
+      ],
+      "answer": {
+        "value": "b"
+      },
+      "points": 3,
+      "solution_steps": [
+        "On lit d'abord l'abscisse, sur l'axe horizontal : D est 2 graduations à gauche de O, abscisse −2.",
+        "Puis l'ordonnée, sur l'axe vertical : D est 4 graduations sous O, ordonnée −4.",
+        "Les coordonnées de D sont **(−2 ; −4)**."
+      ],
+      "hint": "L'abscisse s'écrit en premier."
+    },
+    {
+      "key": "q4",
+      "skill_id": "A020",
+      "statement": "À quel lieu du plan le trésor est-il enterré ?",
+      "type": "qcm",
+      "choices": [
+        {
+          "key": "a",
+          "text": "La cabane",
+          "misconception": null
+        },
+        {
+          "key": "b",
+          "text": "Le vieux chêne",
+          "misconception": "Le point E a pour coordonnées (2 ; −4) : l'élève inverse abscisse et ordonnée."
+        },
+        {
+          "key": "c",
+          "text": "Le phare",
+          "misconception": "Le point C a pour coordonnées (4 ; 2) : l'élève oublie le signe moins de l'abscisse."
+        }
+      ],
+      "answer": {
+        "value": "a"
+      },
+      "points": 4,
+      "solution_steps": [
+        "Le point de coordonnées (−4 ; 2) a pour abscisse −4 et pour ordonnée 2.",
+        "On part de O, on va de 4 graduations vers la gauche, puis de 2 graduations vers le haut : on arrive au point A.",
+        "Le trésor est enterré à **la cabane**."
+      ],
+      "hint": "Commence par te déplacer sur l'axe horizontal."
+    }
+  ],
+  "review_status": "relu_agent",
+  "programme_ref": "Cycle 4, classe de 5e, Espace et géométrie, Repérage sur une droite et dans le plan, Objectifs d'apprentissage : « Dans le plan muni d'un repère orthogonal : - lire les coordonnées d'un point donné ; - placer un point de coordonnées données. »"
+}

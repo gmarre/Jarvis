@@ -1,0 +1,105 @@
+{
+  "id": "SX-A014-01",
+  "skill_id": "A014",
+  "skill_ids": [
+    "A014",
+    "B006"
+  ],
+  "school_level": "CM1",
+  "title": "La tombola de l'école",
+  "contexte": "Pour la tombola de l'école, chaque ticket porte un numéro. Le tirage aura lieu vendredi à 17 heures, et un ticket coûte 2 euros. Voici la règle des lots :\nun ticket dont le numéro est un multiple de 10 gagne un livre ;\nun ticket dont le numéro est un multiple de 5, mais pas de 10, gagne un stylo ;\nles autres tickets ne gagnent rien.\n\nLéo a acheté les tickets 2 345, 2 350 et 2 352. Sa sœur Inès a acheté les tickets 4 170, 4 171 et 4 175.\n\nPour préparer les lots, la maîtresse a reçu 3 boîtes de 9 stylos.",
+  "image": null,
+  "duree_estimee_min": 12,
+  "questions": [
+    {
+      "key": "q1",
+      "skill_id": "B006",
+      "statement": "Combien de stylos la maîtresse a-t-elle reçus ?",
+      "type": "numerique",
+      "answer": {
+        "value": 27,
+        "unit": "stylos"
+      },
+      "points": 2,
+      "solution_steps": [
+        "3 boîtes de 9 stylos : on calcule 3 × 9.",
+        "3 × 9 = 27.",
+        "La maîtresse a reçu **27 stylos**."
+      ],
+      "hint": "Combien de fois y a-t-il 9 stylos ?"
+    },
+    {
+      "key": "q2",
+      "skill_id": "A014",
+      "statement": "Quel lot gagne le ticket 2 345 ?",
+      "type": "qcm",
+      "choices": [
+        {
+          "key": "a",
+          "text": "Un livre",
+          "misconception": "2 345 se termine par 5, pas par 0 : ce n'est pas un multiple de 10."
+        },
+        {
+          "key": "b",
+          "text": "Un stylo",
+          "misconception": null
+        },
+        {
+          "key": "c",
+          "text": "Rien",
+          "misconception": "L'élève croit qu'un nombre impair ne peut pas être un multiple de 5. Or 2 345 se termine par 5 : c'est un multiple de 5."
+        }
+      ],
+      "answer": {
+        "value": "b"
+      },
+      "points": 2,
+      "solution_steps": [
+        "2 345 se termine par 5 : c'est un multiple de 5.",
+        "Il ne se termine pas par 0 : ce n'est pas un multiple de 10.",
+        "C'est un multiple de 5, mais pas de 10 : le ticket 2 345 gagne **un stylo**."
+      ],
+      "hint": "Regarde le chiffre des unités du numéro."
+    },
+    {
+      "key": "q3",
+      "skill_id": "A014",
+      "statement": "Combien de tickets de Léo et d'Inès gagnent un lot ?",
+      "type": "numerique",
+      "answer": {
+        "value": 4,
+        "unit": "tickets",
+        "accepted": [
+          "quatre",
+          "4 ticket"
+        ]
+      },
+      "points": 4,
+      "solution_steps": [
+        "Un ticket gagne un lot quand son numéro est un multiple de 5 (qu'il soit aussi un multiple de 10 ou non) : son chiffre des unités est 0 ou 5.",
+        "Léo : 2 345 (se termine par 5) gagne, 2 350 (par 0) gagne, 2 352 (par 2) ne gagne rien.",
+        "Inès : 4 170 (par 0) gagne, 4 171 (par 1) ne gagne rien, 4 175 (par 5) gagne.",
+        "En tout, **4 tickets** gagnent un lot : deux livres et deux stylos."
+      ],
+      "hint": "Un ticket qui gagne un livre gagne aussi un lot."
+    },
+    {
+      "key": "q4",
+      "skill_id": "A014",
+      "statement": "Inès affirme : « Mon ticket 4 170 est à la fois un multiple de 2 et un multiple de 5. » Vrai ou faux : Inès a raison.",
+      "type": "vrai_faux",
+      "answer": {
+        "value": true
+      },
+      "points": 3,
+      "solution_steps": [
+        "4 170 se termine par 0.",
+        "Un nombre qui se termine par 0 est pair : c'est un multiple de 2. Il est aussi un multiple de 5.",
+        "C'est **vrai** : 4 170 est un multiple de 10, donc à la fois de 2 et de 5."
+      ],
+      "hint": "Regarde le chiffre des unités de 4 170."
+    }
+  ],
+  "review_status": "relu_agent",
+  "programme_ref": "Cycle 3, Cours moyen première année, Les nombres entiers : « Savoir reconnaître les multiples de 2, de 5 et de 10 à partir de leur écriture chiffrée »"
+}

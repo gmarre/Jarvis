@@ -1,0 +1,114 @@
+{
+  "id": "SX-A016-01",
+  "skill_id": "A016",
+  "skill_ids": [
+    "A016",
+    "B040",
+    "A026"
+  ],
+  "school_level": "5e",
+  "title": "La fête du foyer",
+  "contexte": "Le foyer du collège organise sa fête de fin d'année le 27 juin, à 19 heures. Le billet coûte 5 euros.\n\nLes élèves ont vendu 476 billets. Dans la salle, les chaises sont installées en rangées de 28 chaises, et chaque spectateur doit avoir une chaise.\n\nLes 20 élèves du club théâtre vont jouer une scène. Pour la répétition, leur professeur veut les répartir en groupes de même taille, avec au moins 2 groupes et au moins 2 élèves par groupe.\n\nPour le final, les 49 choristes de la chorale se placeront en rangées égales, avec au moins 2 rangées et au moins 2 choristes par rangée.\n\nEnfin, le trésorier range les 185 lots de la tombola dans des cartons de 12 lots.",
+  "image": null,
+  "duree_estimee_min": 15,
+  "questions": [
+    {
+      "key": "q1",
+      "skill_id": "B040",
+      "statement": "Combien de rangées de 28 chaises faut-il installer pour que chacun des 476 spectateurs ait une chaise ?",
+      "type": "numerique",
+      "answer": {
+        "value": 17,
+        "unit": "rangées"
+      },
+      "points": 3,
+      "solution_steps": [
+        "On pose la division euclidienne de 476 par 28.",
+        "47 dizaines divisées par 28 : 1 dizaine, reste 19 dizaines. 196 unités divisées par 28 : 7 unités, car 28 × 7 = 196, reste 0.",
+        "476 = 28 × 17 + 0 : il faut **17 rangées**, toutes pleines."
+      ],
+      "hint": "Pose la division de 476 par 28."
+    },
+    {
+      "key": "q2",
+      "skill_id": "A026",
+      "statement": "Pour la répétition, combien de nombres d'élèves par groupe le professeur peut-il choisir ?",
+      "type": "numerique",
+      "answer": {
+        "value": 4,
+        "accepted": [
+          "quatre",
+          "4 nombres",
+          "4 possibilités",
+          "4 façons",
+          "4 choix"
+        ]
+      },
+      "points": 2,
+      "solution_steps": [
+        "Le nombre d'élèves par groupe doit être un diviseur de 20.",
+        "Diviseurs de 20 : 1, 2, 4, 5, 10 et 20.",
+        "1 est exclu (au moins 2 élèves par groupe), 20 aussi (un seul groupe). Restent 2, 4, 5 et 10.",
+        "Le professeur a **4 choix possibles**."
+      ],
+      "hint": "Écris tous les diviseurs de 20, puis relis les conditions."
+    },
+    {
+      "key": "q3",
+      "skill_id": "A016",
+      "statement": "Le trésorier pose la division euclidienne : $185 = 12 \\times 15 + 5$. Quelle phrase est juste ?",
+      "type": "qcm",
+      "choices": [
+        {
+          "key": "a",
+          "text": "185 est divisible par 12.",
+          "misconception": "L'élève oublie le reste : il vaut 5, il n'est pas nul, donc 185 n'est pas divisible par 12."
+        },
+        {
+          "key": "b",
+          "text": "12 est un diviseur de 185.",
+          "misconception": "Le reste de la division de 185 par 12 n'est pas nul : 12 n'est pas un diviseur de 185."
+        },
+        {
+          "key": "c",
+          "text": "185 n'est pas un multiple de 12.",
+          "misconception": null
+        },
+        {
+          "key": "d",
+          "text": "185 est un multiple de 15.",
+          "misconception": "L'élève lit le quotient comme un diviseur. Or 15 × 12 = 180 et 15 × 13 = 195 : 185 n'est pas un multiple de 15."
+        }
+      ],
+      "answer": {
+        "value": "c"
+      },
+      "points": 3,
+      "solution_steps": [
+        "Dans la division euclidienne de 185 par 12, le reste est 5 : il n'est pas nul.",
+        "185 n'est donc pas divisible par 12 : 185 n'est pas un multiple de 12, et 12 n'est pas un diviseur de 185.",
+        "La phrase juste est **« 185 n'est pas un multiple de 12 »** : un carton restera incomplet."
+      ],
+      "hint": "Regarde le reste de la division."
+    },
+    {
+      "key": "q4",
+      "skill_id": "A016",
+      "statement": "Pour le final, combien de choristes y aura-t-il dans chaque rangée ?",
+      "type": "numerique",
+      "answer": {
+        "value": 7,
+        "unit": "choristes"
+      },
+      "points": 4,
+      "solution_steps": [
+        "Il faut écrire 49 comme un produit de deux entiers différents de 1 : le nombre de rangées fois le nombre de choristes par rangée.",
+        "Avec les tables : 49 = 7 × 7. 49 n'est pas un multiple de 2, 3, 4, 5, 6, 8 ni 9.",
+        "La seule possibilité est 7 rangées de **7 choristes**."
+      ],
+      "hint": "Cherche 49 dans les tables de multiplication."
+    }
+  ],
+  "review_status": "relu_agent",
+  "programme_ref": "Cycle 4, classe de 5e, Nombres et calculs, Opérations, Objectifs d'apprentissage : « Utiliser les notions de multiples et diviseurs. »"
+}

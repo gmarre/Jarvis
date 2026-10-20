@@ -1,0 +1,126 @@
+{
+  "id": "SX-A015-01",
+  "skill_id": "A015",
+  "skill_ids": [
+    "A015",
+    "A014",
+    "B008"
+  ],
+  "school_level": "5e",
+  "title": "Les sachets de la kermesse",
+  "contexte": "Pour la kermesse du collège, le samedi 14 juin à 10 heures, les 28 élèves de 5e B préparent des sachets de bonbons. Ils ont reçu trois cartons :\n1 458 caramels ;\n2 044 guimauves ;\n987 réglisses.\n\nPour chaque sorte de bonbons, ils veulent faire des sachets qui contiennent tous le même nombre de bonbons, sans qu'il en reste. Avant de choisir la taille des sachets, ils utilisent les critères de divisibilité pour savoir ce qui est possible, sans poser de division. Ils poseront ensuite les divisions utiles.\n\nUn quatrième carton, de sucettes, est arrivé avec une étiquette tachée : on lit « 6 ■83 sucettes », le chiffre des centaines est effacé. Le livreur assure que ce nombre est divisible par 9.",
+  "image": null,
+  "duree_estimee_min": 15,
+  "questions": [
+    {
+      "key": "q1",
+      "skill_id": "A014",
+      "statement": "Quels bonbons peut-on répartir en sachets de 2, sans reste ?",
+      "type": "qcm",
+      "choices": [
+        {
+          "key": "a",
+          "text": "Les caramels et les guimauves",
+          "misconception": null
+        },
+        {
+          "key": "b",
+          "text": "Les trois sortes de bonbons",
+          "misconception": "L'élève applique la somme des chiffres au critère de 2 : 9 + 8 + 7 = 24 est pair, mais 987 se termine par 7, il est impair."
+        },
+        {
+          "key": "c",
+          "text": "Les guimauves seulement",
+          "misconception": "L'élève regarde le premier chiffre du nombre (2 dans 2 044, 1 dans 1 458). Pour 2, c'est le chiffre des unités qui compte : 1 458 se termine par 8."
+        }
+      ],
+      "answer": {
+        "value": "a"
+      },
+      "points": 2,
+      "solution_steps": [
+        "Un nombre est divisible par 2 quand son chiffre des unités est pair.",
+        "1 458 se termine par 8 : oui. 2 044 se termine par 4 : oui. 987 se termine par 7 : non.",
+        "On peut répartir en sachets de 2 **les caramels et les guimauves**."
+      ],
+      "hint": "Le critère de divisibilité par 2 ne regarde qu'un seul chiffre."
+    },
+    {
+      "key": "q2",
+      "skill_id": "A015",
+      "statement": "Quels bonbons peut-on répartir en sachets de 9, sans reste ?",
+      "type": "qcm",
+      "choices": [
+        {
+          "key": "a",
+          "text": "Les caramels et les réglisses",
+          "misconception": "C'est le critère de divisibilité par 3 : la somme 24 est divisible par 3, mais pas par 9. 987 est divisible par 3, pas par 9."
+        },
+        {
+          "key": "b",
+          "text": "Les caramels seulement",
+          "misconception": null
+        },
+        {
+          "key": "c",
+          "text": "Aucune",
+          "misconception": "L'élève regarde le dernier chiffre : aucun nombre ne se termine par 9. Le critère de 9 porte sur la somme des chiffres, pas sur le dernier chiffre."
+        },
+        {
+          "key": "d",
+          "text": "Les réglisses seulement",
+          "misconception": "L'élève voit le chiffre 9 dans 987. Mais la somme 9 + 8 + 7 = 24 n'est pas divisible par 9."
+        }
+      ],
+      "answer": {
+        "value": "b"
+      },
+      "points": 3,
+      "solution_steps": [
+        "Un nombre est divisible par 9 quand la somme de ses chiffres est divisible par 9.",
+        "Caramels : 1 + 4 + 5 + 8 = 18, divisible par 9. Guimauves : 2 + 0 + 4 + 4 = 10, non. Réglisses : 9 + 8 + 7 = 24, non (24 est divisible par 3, mais pas par 9).",
+        "Seuls **les caramels** peuvent être répartis en sachets de 9."
+      ],
+      "hint": "Calcule la somme des chiffres de chaque nombre."
+    },
+    {
+      "key": "q3",
+      "skill_id": "B008",
+      "statement": "Les élèves mettent les caramels en sachets de 6. Combien de sachets pleins obtiennent-ils ?",
+      "type": "numerique",
+      "answer": {
+        "value": 243,
+        "unit": "sachets"
+      },
+      "points": 3,
+      "solution_steps": [
+        "On pose la division euclidienne de 1 458 par 6.",
+        "14 centaines divisées par 6 : 2 centaines, reste 2 centaines. 25 dizaines divisées par 6 : 4 dizaines, reste 1 dizaine. 18 unités divisées par 6 : 3 unités, reste 0.",
+        "1 458 = 6 × 243 + 0 : les élèves obtiennent **243 sachets**, sans caramel en trop."
+      ],
+      "hint": "Pose la division et commence par les centaines."
+    },
+    {
+      "key": "q4",
+      "skill_id": "A015",
+      "statement": "Quel est le chiffre effacé sur l'étiquette des sucettes ?",
+      "type": "numerique",
+      "answer": {
+        "value": 1,
+        "accepted": [
+          "un"
+        ]
+      },
+      "points": 4,
+      "solution_steps": [
+        "Le nombre est divisible par 9 : la somme de ses chiffres doit être divisible par 9.",
+        "Chiffres connus : 6 + 8 + 3 = 17. Il faut ajouter un chiffre (de 0 à 9) pour obtenir un multiple de 9.",
+        "Le seul multiple de 9 entre 17 et 26 est 18 : le chiffre effacé est **1**. Le nombre est 6 183.",
+        "Attention : avec 4, la somme vaut 21, divisible par 3 mais pas par 9."
+      ],
+      "hint": "Additionne les chiffres que l'on voit."
+    }
+  ],
+  "review_status": "relu_agent",
+  "programme_ref": "Cycle 4, classe de 5e, Nombres et calculs, Opérations, Objectifs d'apprentissage : « Connaitre les critères de divisibilité par 3 et par 9. »"
+}

@@ -1,0 +1,85 @@
+{
+  "id": "SX-A006-01",
+  "skill_id": "A006",
+  "skill_ids": [
+    "A006",
+    "A005",
+    "A008"
+  ],
+  "school_level": "CE1",
+  "title": "Le concours de bouchons",
+  "contexte": "L'école de Lina participe à un concours de bouchons en plastique. Il dure 3 semaines, et chaque classe range ses bouchons dans un grand carton. Les bouchons serviront à fabriquer des bancs pour la cour.\n\nÀ la fin du concours, chaque classe annonce son total :\nles CE1 ont rassemblé **six-cent-quatre** bouchons ;\nles CE2 ont rassemblé 640 bouchons ;\nles CM1 ont rassemblé 598 bouchons ;\nles CM2 ont rassemblé 603 bouchons.\n\nLa classe gagnante visitera l'usine de recyclage, à 25 kilomètres de l'école. Le car partira à 8 heures.",
+  "image": null,
+  "duree_estimee_min": 8,
+  "questions": [
+    {
+      "key": "q1",
+      "skill_id": "A005",
+      "statement": "Écris en chiffres le nombre de bouchons rassemblés par les CE1.",
+      "type": "numerique",
+      "answer": {
+        "value": 604,
+        "unit": "bouchons"
+      },
+      "points": 2,
+      "solution_steps": [
+        "« Six-cent », ce sont 6 centaines. « Quatre », ce sont 4 unités.",
+        "Il n'y a pas de dizaine : on écrit un 0 au rang des dizaines.",
+        "Les CE1 ont rassemblé **604 bouchons**."
+      ],
+      "hint": "Pense au rang des dizaines."
+    },
+    {
+      "key": "q2",
+      "skill_id": "A008",
+      "statement": "Dans le nombre de bouchons des CE2, quel est le chiffre des dizaines ?",
+      "type": "numerique",
+      "answer": {
+        "value": 4
+      },
+      "points": 2,
+      "solution_steps": [
+        "Les CE2 ont rassemblé 640 bouchons.",
+        "Dans 640 : 6 est le chiffre des centaines, 4 celui des dizaines, 0 celui des unités.",
+        "Le chiffre des dizaines est **4**. Attention : 64 est le nombre de dizaines, pas le chiffre des dizaines."
+      ],
+      "hint": "Le chiffre des dizaines est le deuxième en partant de la droite."
+    },
+    {
+      "key": "q3",
+      "skill_id": "A006",
+      "statement": "Quelle écriture est juste ?",
+      "type": "qcm",
+      "choices": [
+        {
+          "key": "a",
+          "text": "$598 > 603$",
+          "misconception": "L'élève compare les chiffres des dizaines ou des unités (9 et 8 sont grands) avant ceux des centaines. Or 598 a 5 centaines et 603 en a 6 : 598 est plus petit."
+        },
+        {
+          "key": "b",
+          "text": "$640 < 603$",
+          "misconception": "L'élève compare les chiffres des unités : 0 est plus petit que 3. Mais à centaines égales, on compare d'abord les dizaines : 4 dizaines contre 0."
+        },
+        {
+          "key": "c",
+          "text": "$603 > 598$",
+          "misconception": null
+        }
+      ],
+      "answer": {
+        "value": "c"
+      },
+      "points": 4,
+      "solution_steps": [
+        "Pour comparer deux nombres de trois chiffres, on compare d'abord les centaines.",
+        "603 a 6 centaines et 598 en a 5 : 603 est plus grand, donc $603 > 598$ est juste, et $598 > 603$ est faux.",
+        "640 et 603 ont 6 centaines ; on compare les dizaines : 4 contre 0. 640 est plus grand, donc $640 < 603$ est faux.",
+        "La seule écriture juste est **$603 > 598$**."
+      ],
+      "hint": "Commence par comparer les chiffres des centaines."
+    }
+  ],
+  "review_status": "relu_agent",
+  "programme_ref": "Cycle 2, Cours élémentaire première année, Les nombres entiers : « Comparer, encadrer, intercaler des nombres entiers en utilisant les symboles (=, <, >). »"
+}

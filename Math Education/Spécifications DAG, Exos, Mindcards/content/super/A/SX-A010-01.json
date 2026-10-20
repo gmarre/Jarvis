@@ -1,0 +1,107 @@
+{
+  "id": "SX-A010-01",
+  "skill_id": "A010",
+  "skill_ids": [
+    "A010",
+    "B036"
+  ],
+  "school_level": "CE2",
+  "title": "La fête de la médiathèque",
+  "contexte": "La médiathèque de Saint-Paul fête ses 20 ans. Samedi, elle ouvre à 10 heures et ferme à 18 heures.\n\nLe bibliothécaire, M. Faure, affiche le nombre de livres prêtés cette année : 8 406 livres.\n\nPour la fête, un livreur apporte des livres neufs : 6 caisses de 1 000 livres, 4 paquets de 10 livres et 8 livres seuls.\n\nM. Faure a aussi reçu 28 affiches. Il les partage en parts égales entre les 4 salles de la médiathèque.\n\nLes visiteurs pourront goûter des crêpes, vendues 2 euros la crêpe.",
+  "image": null,
+  "duree_estimee_min": 13,
+  "questions": [
+    {
+      "key": "q1",
+      "skill_id": "B036",
+      "statement": "Combien d'affiches chaque salle reçoit-elle ?",
+      "type": "numerique",
+      "answer": {
+        "value": 7,
+        "unit": "affiches"
+      },
+      "points": 2,
+      "solution_steps": [
+        "On partage 28 affiches en 4 parts égales : on cherche combien de fois 4 il y a dans 28.",
+        "4 × 7 = 28.",
+        "Chaque salle reçoit **7 affiches**."
+      ],
+      "hint": "Distribue les affiches une par une entre les 4 salles, ou cherche dans la table de 4."
+    },
+    {
+      "key": "q2",
+      "skill_id": "A010",
+      "statement": "Décompose le nombre de livres prêtés cette année sous la forme d'une somme, comme $2\\,873 = 2\\,000 + 800 + 70 + 3$. Écris seulement la somme.",
+      "type": "texte",
+      "answer": {
+        "value": "8000 + 400 + 6",
+        "accepted": [
+          "8 000 + 400 + 6",
+          "8000 + 400 + 0 + 6",
+          "8 000 + 400 + 0 + 6",
+          "8000 + 6 + 400",
+          "400 + 8000 + 6",
+          "400 + 6 + 8000",
+          "6 + 400 + 8000",
+          "6 + 8000 + 400",
+          "8 406 = 8 000 + 400 + 6",
+          "8406 = 8000 + 400 + 6",
+          "8000 + 400 + 6 = 8406",
+          "8406 = 8000 + 400 + 0 + 6",
+          "8000 + 400 + 0 + 6 = 8406"
+        ]
+      },
+      "points": 3,
+      "solution_steps": [
+        "8 406 : 8 est le chiffre des milliers, 4 celui des centaines, 0 celui des dizaines, 6 celui des unités.",
+        "8 milliers valent 8 000, 4 centaines valent 400, 6 unités valent 6. Il n'y a pas de dizaine.",
+        "$8\\,406 = 8\\,000 + 400 + 6$."
+      ],
+      "hint": "Cherche ce que vaut chaque chiffre, selon son rang."
+    },
+    {
+      "key": "q3",
+      "skill_id": "A010",
+      "statement": "Combien de livres neufs le livreur apporte-t-il ?",
+      "type": "numerique",
+      "answer": {
+        "value": 6048,
+        "unit": "livres"
+      },
+      "points": 3,
+      "solution_steps": [
+        "6 caisses de 1 000 livres : $6 \\times 1\\,000 = 6\\,000$.",
+        "4 paquets de 10 livres : $4 \\times 10 = 40$. Et 8 livres seuls.",
+        "$6\\,000 + 40 + 8 = 6\\,048$ : le livreur apporte **6 048 livres**.",
+        "Attention : il n'y a aucune centaine, il faut écrire un 0 au rang des centaines. 648 serait faux."
+      ],
+      "hint": "Pense au rang qui n'a rien."
+    },
+    {
+      "key": "q4",
+      "skill_id": "A010",
+      "statement": "M. Faure écrit le nombre de livres prêtés d'une autre façon :\n\n$8\\,406 = 7\\,000 + \\ldots + 6$\n\nQuel nombre manque ?",
+      "type": "numerique",
+      "answer": {
+        "value": 1400,
+        "accepted": [
+          "1 400",
+          "1000 + 400",
+          "1 000 + 400",
+          "400 + 1000",
+          "400 + 1 000"
+        ]
+      },
+      "points": 4,
+      "solution_steps": [
+        "8 406 = 8 000 + 400 + 6. Ici, on n'a écrit que 7 000 : il manque 1 000 pour arriver à 8 000.",
+        "Il manque donc 1 000 et les 400 : $1\\,000 + 400 = 1\\,400$.",
+        "Vérification : $7\\,000 + 1\\,400 + 6 = 8\\,406$. Le nombre qui manque est **1 400**.",
+        "Attention : 400 serait faux, car 7 000 + 400 + 6 = 7 406."
+      ],
+      "hint": "Compare 7 000 au nombre de milliers de 8 406."
+    }
+  ],
+  "review_status": "relu_agent",
+  "programme_ref": "Cycle 2, Cours élémentaire deuxième année, Les nombres entiers : « décomposition additive sous la forme 4 000 + 600 + 30 + 5 »"
+}

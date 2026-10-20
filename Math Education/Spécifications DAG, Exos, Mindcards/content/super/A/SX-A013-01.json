@@ -1,0 +1,90 @@
+{
+  "id": "SX-A013-01",
+  "skill_id": "A013",
+  "skill_ids": [
+    "A013",
+    "B039"
+  ],
+  "school_level": "CM1",
+  "title": "Le tournoi du centre de loisirs",
+  "contexte": "Mercredi, le centre de loisirs organise un grand tournoi de jeux. 56 enfants sont inscrits ; ils ont de 10 à 12 ans. Le tournoi commence à 14 heures et dure 2 heures.\n\nL'animatrice, Samia, veut former des équipes qui ont toutes le même nombre d'enfants, sans aucun enfant seul.\n\nPour l'eau, elle répartit 48 gourdes en parts égales dans 6 caisses.\n\nPour les récompenses, elle a acheté 72 médailles. Elle veut les ranger dans des boîtes identiques, toutes pleines. Chaque boîte contient moins de 10 médailles, et Samia veut utiliser le moins de boîtes possible.",
+  "image": null,
+  "duree_estimee_min": 12,
+  "questions": [
+    {
+      "key": "q1",
+      "skill_id": "B039",
+      "statement": "Combien de gourdes Samia met-elle dans chaque caisse ?",
+      "type": "numerique",
+      "answer": {
+        "value": 8,
+        "unit": "gourdes"
+      },
+      "points": 2,
+      "solution_steps": [
+        "On partage 48 gourdes en 6 parts égales : on calcule 48 ÷ 6.",
+        "6 × 8 = 48, donc 48 ÷ 6 = 8.",
+        "Samia met **8 gourdes** dans chaque caisse."
+      ],
+      "hint": "Cherche 48 dans la table de 6."
+    },
+    {
+      "key": "q2",
+      "skill_id": "A013",
+      "statement": "Samia hésite sur le nombre d'enfants par équipe. Lequel de ces nombres est un diviseur de 56 ?",
+      "type": "qcm",
+      "choices": [
+        {
+          "key": "a",
+          "text": "3",
+          "misconception": "3 × 18 = 54 et 3 × 19 = 57 : 56 n'est pas dans la table de 3, il resterait 2 enfants."
+        },
+        {
+          "key": "b",
+          "text": "5",
+          "misconception": "56 ne se termine ni par 0 ni par 5 : ce n'est pas un multiple de 5, donc 5 n'en est pas un diviseur."
+        },
+        {
+          "key": "c",
+          "text": "6",
+          "misconception": "6 × 9 = 54 : il resterait 2 enfants. 56 est pair, mais cela ne suffit pas pour être divisible par 6."
+        },
+        {
+          "key": "d",
+          "text": "7",
+          "misconception": null
+        }
+      ],
+      "answer": {
+        "value": "d"
+      },
+      "points": 3,
+      "solution_steps": [
+        "Un nombre est un diviseur de 56 quand on peut partager 56 en parts de ce nombre, sans reste.",
+        "3 × 18 = 54 et 3 × 19 = 57 : 3 n'est pas un diviseur de 56. 56 ne se termine ni par 0 ni par 5 : 5 n'en est pas un. 6 × 9 = 54 : il resterait 2 enfants.",
+        "7 × 8 = 56 : **7** est un diviseur de 56. Samia peut faire 8 équipes de 7 enfants."
+      ],
+      "hint": "Pour chaque nombre, cherche si 56 est dans sa table."
+    },
+    {
+      "key": "q3",
+      "skill_id": "A013",
+      "statement": "Combien de médailles Samia met-elle dans chaque boîte ?",
+      "type": "numerique",
+      "answer": {
+        "value": 9,
+        "unit": "médailles"
+      },
+      "points": 4,
+      "solution_steps": [
+        "Le nombre de médailles par boîte doit être un diviseur de 72, plus petit que 10.",
+        "Diviseurs de 72 plus petits que 10 : 1, 2 (72 = 2 × 36), 3 (72 = 3 × 24), 4 (72 = 4 × 18), 6 (72 = 6 × 12), 8 (72 = 8 × 9) et 9 (72 = 9 × 8). 72 ne se termine ni par 0 ni par 5 : 5 n'en est pas un diviseur. 7 × 10 = 70 et 7 × 11 = 77 : 7 non plus.",
+        "Pour utiliser le moins de boîtes possible, il faut mettre le plus de médailles possible dans chaque boîte : le plus grand de ces diviseurs, 9.",
+        "Samia met **9 médailles** par boîte, dans 8 boîtes."
+      ],
+      "hint": "Liste les diviseurs de 72 qui sont plus petits que 10."
+    }
+  ],
+  "review_status": "relu_agent",
+  "programme_ref": "Cycle 3, Cours moyen première année, Les nombres entiers : « Savoir déterminer si un nombre entier inférieur ou égal à 10 est un diviseur d'un nombre entier donné »"
+}
