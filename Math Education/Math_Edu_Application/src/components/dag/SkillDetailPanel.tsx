@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom'
 
-import { getExercisesForSkill, getFlashcardsForSkill, getMindmap, getSkill } from '@/content'
+import { getExercisesForSkill, getFlashcardsForSkill, getMindmap, getSkill, getSuperForSkill } from '@/content'
 import { cn } from '@/lib/cn'
 import { statusOf, unlockCount, type ProgressMap } from '@/lib/dag'
 import { Badge, StatusBadge } from '@/components/ui/Badge'
@@ -126,6 +126,13 @@ export function SkillDetailPanel({
       {mindmap && (
         <ButtonLink to={`/cartes/${mindmap.id}`} variant="secondary" fullWidth>
           Voir la carte mentale
+        </ButtonLink>
+      )}
+
+      {/* Epreuve finale : proposee une fois la competence acquise (niveau 4). */}
+      {getSuperForSkill(skill.id)[0] && (entry?.niveau ?? 0) >= 4 && (
+        <ButtonLink to={`/super/${getSuperForSkill(skill.id)[0].id}`} fullWidth className="mt-2.5">
+          Super exercice : l'épreuve finale
         </ButtonLink>
       )}
 

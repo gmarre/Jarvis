@@ -35,6 +35,7 @@ import type {
   ExerciseAttempt,
   FlashcardProgress,
   ModificationEnAttente,
+  SuperAttempt,
   PlacementResult,
   Profile,
   SkillProgress,
@@ -213,7 +214,7 @@ async function chargerSession(userId: string): Promise<Session | null> {
   // fois connecte, et toute session rendue doit le trouver installe (le moteur
   // et versProgression le lisent). Il ne se charge qu'une fois par appareil et
   // par publication, voir content/chargement.ts.
-  const [, profil, progression, tentatives, positionnement, reservations, defis] = await Promise.all([
+  const [, profil, progression, tentatives, positionnement, reservations, defis, passages] = await Promise.all([
     assurerContenu(() => chargerContenuSupabase(db)).catch((cause: unknown) => {
       throw erreur('Lecture du contenu', cause instanceof Error ? cause : null)
     }),
@@ -234,6 +235,12 @@ async function chargerSession(userId: string): Promise<Session | null> {
       .maybeSingle(),
     db.from('bookings').select('*').eq('eleve_id', userId),
     db.from('flashcard_progress').select('*').eq('user_id', userId),
+    db
+      .from('super_attempts')
+      .select('*')
+      .eq('user_id', userId)
+      .order('created_at', { ascending: false })
+      .limit(100),
   ])
 
   if (profil.error) throw erreur('Lecture du profil', profil.error)
@@ -248,6 +255,9 @@ async function chargerSession(userId: string): Promise<Session | null> {
   // sans cartes defi. Toute autre erreur remonte.
   const tableAbsente = defis.error && ['42P01', 'PGRST205'].includes(defis.error.code ?? '')
   if (defis.error && !tableAbsente) throw erreur('Lecture des cartes defi', defis.error)
+  // Idem pour les super exercices avant la migration 0016.
+  const passagesAbsents = passages.error && ['42P01', 'PGRST205'].includes(passages.error.code ?? '')
+  if (passages.error && !passagesAbsents) throw erreur('Lecture des super exercices', passages.error)
 
   const placement: PlacementResult | null = positionnement.data
     ? {
@@ -268,6 +278,7 @@ async function chargerSession(userId: string): Promise<Session | null> {
     bookings: (reservations.data ?? []) as Booking[],
     attempts: (tentatives.data ?? []) as ExerciseAttempt[],
     defis: versDefis(tableAbsente ? [] : ((defis.data ?? []) as FlashcardProgress[])),
+    superAttempts: passagesAbsents ? [] : ((passages.data ?? []) as SuperAttempt[]),
   }
 }
 
@@ -519,6 +530,15 @@ export const supabaseRepository: DataRepository = {
       .upsert({ ...progress, user_id: utilisateur.user.id }, { onConflict: 'user_id,card_id' })
 
     if (error) throw erreur('Enregistrement de la carte defi', error)
+  },
+
+  async saveSuperAttempt(attempt: SuperAttempt) {
+    const db = requireSupabase()
+    const { data: utilisateur } = await db.auth.getUser()
+    if (!utilisateur.user) throw new RepositoryError('Aucune session ouverte')
+
+    const { error } = await db.from('super_attempts').insert({ ...attempt, user_id: utilisateur.user.id })
+    if (error) throw erreur('Enregistrement du super exercice', error)
   },
 
   async savePlacement(result: PlacementResult, progress: SkillProgress[]) {

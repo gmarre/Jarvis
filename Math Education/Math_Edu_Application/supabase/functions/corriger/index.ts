@@ -21,7 +21,12 @@
 
 import { createClient } from 'npm:@supabase/supabase-js@2'
 
-import { checkAnswer, versExerciceACorriger, type LigneACorriger } from '../_shared/correction.ts'
+import {
+  checkAnswer,
+  versExerciceACorriger,
+  type ExerciceACorriger,
+  type LigneACorriger,
+} from '../_shared/correction.ts'
 
 const CORS = {
   'Access-Control-Allow-Origin': '*',
@@ -30,6 +35,8 @@ const CORS = {
 }
 
 const ID_EXERCICE = /^EX-[A-P][0-9]{3}-[DEM]-[0-9]{2}$/
+/** Question d'un super exercice (migration 0016) : « SX-C012-01#q2 ». */
+const ID_QUESTION_SUPER = /^(SX-[A-P][0-9]{3}-[0-9]{2})#(q[1-6])$/
 /** Aucune reponse legitime n'approche cette longueur. */
 const LONGUEUR_MAX = 200
 
@@ -45,6 +52,46 @@ const admin = createClient(
   Deno.env.get('SUPABASE_SERVICE_ROLE_KEY') ?? '',
   { auth: { persistSession: false, autoRefreshToken: false } },
 )
+
+interface QuestionPublique {
+  key: string
+  type: LigneACorriger['type']
+  choices?: { key: string; text: string }[]
+}
+
+interface CleDeQuestion {
+  key: string
+  answer: NonNullable<LigneACorriger['content_exercise_keys']>['answer']
+  solution_steps: string[]
+  misconceptions: Record<string, string | null>
+}
+
+/**
+ * Recompose une question de super exercice comme un exercice : partie lisible
+ * (type, propositions) et cle (reponse, corrige, misconceptions), lues dans
+ * deux tables comme pour les exercices.
+ */
+async function questionDeSuper(
+  superId: string,
+  cle: string,
+): Promise<ExerciceACorriger | { statut: number; erreur: string }> {
+  const [publique, cles] = await Promise.all([
+    admin.from('content_super').select('questions').eq('id', superId).maybeSingle(),
+    admin.from('content_super_keys').select('questions').eq('super_id', superId).maybeSingle(),
+  ])
+  if (publique.error || cles.error) {
+    return { statut: 500, erreur: `Lecture du super exercice : ${(publique.error ?? cles.error)?.message}` }
+  }
+  const q = ((publique.data?.questions ?? []) as QuestionPublique[]).find((x) => x.key === cle)
+  const k = ((cles.data?.questions ?? []) as CleDeQuestion[]).find((x) => x.key === cle)
+  if (!q || !k) return { statut: 404, erreur: 'Question inconnue' }
+  const exercice = versExerciceACorriger({
+    type: q.type,
+    choices: q.choices ?? null,
+    content_exercise_keys: { answer: k.answer, solution_steps: k.solution_steps, misconceptions: k.misconceptions },
+  })
+  return exercice ?? { statut: 500, erreur: `Cle absente pour ${superId}#${cle}` }
+}
 
 Deno.serve(async (requete) => {
   if (requete.method === 'OPTIONS') return new Response('ok', { headers: CORS })
@@ -64,11 +111,18 @@ Deno.serve(async (requete) => {
   }
 
   const { exercise_id: id, reponse } = corps
-  if (typeof id !== 'string' || !ID_EXERCICE.test(id)) {
+  const question = typeof id === 'string' ? ID_QUESTION_SUPER.exec(id) : null
+  if (typeof id !== 'string' || (!ID_EXERCICE.test(id) && !question)) {
     return repondre(400, { erreur: 'exercise_id invalide' })
   }
   if (typeof reponse !== 'string' || reponse.length > LONGUEUR_MAX) {
     return repondre(400, { erreur: 'reponse invalide' })
+  }
+
+  if (question) {
+    const exercice = await questionDeSuper(question[1], question[2])
+    if ('erreur' in exercice) return repondre(exercice.statut, { erreur: exercice.erreur })
+    return repondre(200, checkAnswer(exercice, reponse))
   }
 
   const { data, error } = await admin

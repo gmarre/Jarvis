@@ -173,6 +173,101 @@ export interface FlashcardsBank {
   flashcards: Flashcard[]
 }
 
+/**
+ * Question d'un super exercice, partie lisible (sprint 2, point 7). La reponse
+ * et le corrige restent cote serveur, comme pour un exercice.
+ */
+export interface SuperQuestion {
+  /** q1 a q6. L'identifiant corrige est « <id du super exercice>#<key> ». */
+  key: string
+  /** Competence evaluee par cette question. */
+  skill_id: string
+  statement: string
+  type: Exercise['type']
+  /** Bareme de la question, 1 a 4 points. */
+  points: number
+  hint?: string | null
+  answer_unit?: string | null
+  choices?: { key: string; text: string }[]
+}
+
+/** Super exercice, partie lisible : un probleme long porte par une competence. */
+export interface SuperExercise {
+  id: string
+  /** Competence porteuse : le super exercice est son epreuve finale. */
+  skill_id: string
+  /** Competences mobilisees, porteuse comprise. */
+  skill_ids: string[]
+  school_level: SchoolLevel
+  title: string
+  /** Enonce commun, avec des donnees a trier (dont des inutiles). */
+  contexte: string
+  image: string | null
+  duree_estimee_min: number
+  questions: SuperQuestion[]
+  review_status: ReviewStatus
+  programme_ref: string | null
+}
+
+/** Question complete, telle que dans le contenu Git (reponse comprise). */
+export interface SuperQuestionComplete extends Omit<SuperQuestion, 'answer_unit' | 'choices'> {
+  choices?: ExerciseChoice[]
+  answer: Exercise['answer']
+  solution_steps: string[]
+}
+
+export interface SuperExerciseComplet extends Omit<SuperExercise, 'questions'> {
+  questions: SuperQuestionComplete[]
+}
+
+export interface SuperBank {
+  metadata: { version: string; scope?: string; updated_at?: string; total_super: number }
+  super: SuperExerciseComplet[]
+}
+
+/** Retire d'un super exercice complet les reponses, corriges et misconceptions. */
+export function toPublicSuper(complet: SuperExerciseComplet): SuperExercise {
+  return {
+    ...complet,
+    questions: complet.questions.map((q) => ({
+      key: q.key,
+      skill_id: q.skill_id,
+      statement: q.statement,
+      type: q.type,
+      points: q.points,
+      hint: q.hint ?? null,
+      answer_unit: q.answer.unit ?? null,
+      ...(q.choices ? { choices: q.choices.map(({ key, text }) => ({ key, text })) } : {}),
+    })),
+  }
+}
+
+/** Identifiant corrige d'une question : « SX-C012-01#q2 ». */
+export function idQuestionSuper(superId: string, key: string): string {
+  return `${superId}#${key}`
+}
+
+/**
+ * Une question vue comme un exercice : la saisie (AnswerInput) et la
+ * correction (repository.corriger) la traitent sans cas particulier.
+ */
+export function questionCommeExercice(sx: SuperExercise, q: SuperQuestion): PublicExercise {
+  return {
+    id: idQuestionSuper(sx.id, q.key),
+    skill_id: q.skill_id,
+    level: 'maitrise',
+    type: q.type,
+    statement: q.statement,
+    image: null,
+    ...(q.choices ? { choices: q.choices } : {}),
+    hint: q.hint ?? null,
+    answer_unit: q.answer_unit ?? null,
+    estimated_duration_s: 0,
+    review_status: sx.review_status,
+    programme_ref: sx.programme_ref,
+  }
+}
+
 export interface MindmapsBank {
   metadata: {
     version: string

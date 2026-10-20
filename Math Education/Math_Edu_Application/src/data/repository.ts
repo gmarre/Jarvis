@@ -26,6 +26,7 @@ import type {
   ExerciseAttempt,
   FlashcardProgress,
   ModificationEnAttente,
+  SuperAttempt,
   NewContentReview,
   PlacementResult,
   Profile,
@@ -47,6 +48,8 @@ export interface Session {
   attempts: ExerciseAttempt[]
   /** Revision espacee des cartes defi, par identifiant de carte (migration 0014). */
   defis: DefiProgressMap
+  /** Passages des super exercices, du plus recent au plus ancien (migration 0016). */
+  superAttempts: SuperAttempt[]
 }
 
 /**
@@ -144,6 +147,8 @@ export interface DataRepository {
   saveProgress(progress: SkillProgress): Promise<void>
   /** Carte defi retournee : sa boite et sa prochaine echeance. */
   saveDefi(progress: FlashcardProgress): Promise<void>
+  /** Super exercice rendu : le passage, score et reponses compris. */
+  saveSuperAttempt(attempt: SuperAttempt): Promise<void>
   /** Cloture du positionnement : le resultat, et la progression initiale en lot. */
   savePlacement(result: PlacementResult, progress: SkillProgress[]): Promise<void>
   createBooking(slotId: string, skillId: string | null): Promise<Booking>

@@ -28,8 +28,11 @@ import type {
   PublicExercise,
   Skill,
   SkillsDag,
+  SuperBank,
+  SuperExercise,
+  SuperExerciseComplet,
 } from '@/types/content'
-import { toPublicExercise } from '@/types/content'
+import { toPublicExercise, toPublicSuper } from '@/types/content'
 import { contenuInstalle, installerContenu, type ContenuPedagogique } from './index'
 
 // =============================================================================
@@ -75,30 +78,37 @@ const DEMONSTRATION_POSSIBLE =
   !import.meta.env.VITE_SUPABASE_ANON_KEY
 
 /** Contenu local complet : les exercices y gardent reponse et corrige. */
-export interface ContenuLocal extends Omit<ContenuPedagogique, 'exercises'> {
+export interface ContenuLocal extends Omit<ContenuPedagogique, 'exercises' | 'superExercises'> {
   exercises: Exercise[]
+  superExercises: SuperExerciseComplet[]
 }
 
 /** Ce qu'on installe a partir du contenu local : sans les reponses, comme en production. */
 export function versContenuPublic(local: ContenuLocal): ContenuPedagogique {
-  return { ...local, exercises: local.exercises.map(toPublicExercise) }
+  return {
+    ...local,
+    exercises: local.exercises.map(toPublicExercise),
+    superExercises: local.superExercises.map(toPublicSuper),
+  }
 }
 
 export async function chargerContenuLocal(): Promise<ContenuLocal> {
   if (!DEMONSTRATION_POSSIBLE) {
     throw new Error('Contenu local absent de cette construction : il se lit dans la base.')
   }
-  const [dag, banque, cartes, defis] = await Promise.all([
+  const [dag, banque, cartes, defis, sup] = await Promise.all([
     import('./skills_dag.json'),
     import('./exercises.json'),
     import('./mindmaps.json'),
     import('./flashcards.json'),
+    import('./super.json'),
   ])
   return {
     skills: (dag.default as unknown as SkillsDag).skills,
     exercises: (banque.default as unknown as ExercisesBank).exercises,
     mindmaps: (cartes.default as unknown as MindmapsBank).mindmaps,
     flashcards: (defis.default as unknown as FlashcardsBank).flashcards,
+    superExercises: (sup.default as unknown as SuperBank).super,
   }
 }
 
@@ -124,6 +134,8 @@ interface Publication {
   nb_mindmaps: number
   /** Colonne de la migration 0014 : absente avant elle. */
   nb_flashcards?: number
+  /** Colonne de la migration 0016 : absente avant elle. */
+  nb_super?: number
 }
 
 interface Cache {
@@ -245,13 +257,17 @@ export async function chargerContenuSupabase(db: SupabaseClient): Promise<Conten
   if (enCache) return enCache
 
   const nbDefis = publication.nb_flashcards ?? 0
-  const [skills, lignesExercices, mindmaps, defis] = await Promise.all([
+  const nbSuper = publication.nb_super ?? 0
+  const [skills, lignesExercices, mindmaps, defis, sup] = await Promise.all([
     lireTable<Skill>(db, 'content_skills', 'id', publication.nb_skills),
     lireTable<LigneExercice>(db, 'content_exercises', 'id', publication.nb_exercises),
     lireTable<Mindmap>(db, 'content_mindmaps', 'id', publication.nb_mindmaps),
     nbDefis > 0
       ? lireTable<Flashcard>(db, 'content_flashcards', 'id', nbDefis)
       : Promise.resolve([] as Flashcard[]),
+    nbSuper > 0
+      ? lireTable<SuperExercise>(db, 'content_super', 'id', nbSuper)
+      : Promise.resolve([] as SuperExercise[]),
   ])
 
   // Une publication arrivee entre deux lectures melangerait deux versions du
@@ -260,7 +276,8 @@ export async function chargerContenuSupabase(db: SupabaseClient): Promise<Conten
     skills.length !== publication.nb_skills ||
     lignesExercices.length !== publication.nb_exercises ||
     mindmaps.length !== publication.nb_mindmaps ||
-    defis.length !== nbDefis
+    defis.length !== nbDefis ||
+    sup.length !== nbSuper
   ) {
     throw new Error('Contenu en cours de publication : recharge la page dans un instant.')
   }
@@ -270,6 +287,7 @@ export async function chargerContenuSupabase(db: SupabaseClient): Promise<Conten
     exercises: lignesExercices.map(versExercice),
     mindmaps,
     flashcards: defis,
+    superExercises: sup,
   }
 
   ecrireCache(publication.id, contenu)

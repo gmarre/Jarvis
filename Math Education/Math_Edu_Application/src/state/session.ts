@@ -10,6 +10,7 @@ import type {
   ModificationEnAttente,
   PlacementResult,
   Profile,
+  SuperAttempt,
 } from '@/types/domain'
 
 // Contrat de la session et hooks d'acces. Separe du provider pour que ce
@@ -88,6 +89,8 @@ export interface SessionValue {
   reviewSkill: (skillId: string) => void
   /** Carte defi retournee : l'eleve dit s'il savait (lib/defis.ts). */
   reviserDefi: (carte: Flashcard, savait: boolean) => void
+  /** Super exercice rendu : enregistre le passage (score, reponses). */
+  enregistrerSuper: (attempt: SuperAttempt) => void
   /** Cloture le test de positionnement. */
   completePlacement: (result: PlacementResult, progress: ProgressMap) => void
   bookSlot: (slotId: string, skillId: string | null) => void

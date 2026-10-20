@@ -1,7 +1,7 @@
 import { useEffect, useMemo, useRef, useState } from 'react'
 import { Link, Navigate, useNavigate, useParams } from 'react-router-dom'
 
-import { countUnlockedBy, getExercisesForSkill, getFlashcardsForSkill, getSkill } from '@/content'
+import { countUnlockedBy, getExercisesForSkill, getFlashcardsForSkill, getSkill, getSuperForSkill } from '@/content'
 import { cn } from '@/lib/cn'
 import { exerciseLevelLabel } from '@/lib/exercise'
 import { formatDateLong, formatDuration } from '@/lib/format'
@@ -165,6 +165,7 @@ function ExerciseSession({ skillId, onReprendre }: { skillId: string; onReprendr
         descendTo={descendTo}
         mindmapId={skill.mindmap_id}
         defiSkillId={getFlashcardsForSkill(skill.id).length > 0 ? skill.id : null}
+        superId={getSuperForSkill(skill.id)[0]?.id ?? null}
         niveauAvant={niveauAvant}
         niveauApres={(session.progress[skillId]?.niveau ?? niveauAvant) as Niveau}
         debloque={countUnlockedBy(skill.id)}
@@ -307,7 +308,13 @@ function CorrectionPanel({
               result.isCorrect ? 'text-mastered-900' : 'text-progress-900',
             )}
           >
-            {result.isCorrect ? "C'est juste." : `Pas encore. La réponse était : ${result.expected}`}
+            {result.isCorrect ? (
+              "C'est juste."
+            ) : (
+              <>
+                Pas encore. La réponse était : <RichText as="inline">{result.expected}</RichText>
+              </>
+            )}
           </p>
           {result.misconception && (
             <p className="mt-1.5 text-[12.5px] leading-relaxed text-progress-900/80">
@@ -356,6 +363,7 @@ function SessionSummary({
   descendTo,
   mindmapId,
   defiSkillId,
+  superId,
   niveauAvant,
   niveauApres,
   debloque,
@@ -369,6 +377,8 @@ function SessionSummary({
   mindmapId: string | null
   /** Competence dont les cartes defi sont a proposer ensuite, ou null. */
   defiSkillId: string | null
+  /** Super exercice de la competence, propose une fois celle-ci acquise. */
+  superId: string | null
   niveauAvant: Niveau
   niveauApres: Niveau
   /** Competences debloquees en cascade une fois celle-ci acquise. */
@@ -449,6 +459,19 @@ function SessionSummary({
             >
               Travailler ce prérequis
             </Button>
+          </div>
+        )}
+
+        {superId && niveauApres >= 4 && !prerequisite && (
+          <div className="mt-6 rounded-card border border-mastered-200 bg-mastered-50 p-4 text-left">
+            <p className="text-[12.5px] font-semibold text-mastered-900">L'épreuve finale t'attend</p>
+            <p className="mt-1.5 text-[12.5px] leading-relaxed text-mastered-900/80">
+              Un problème long qui fait travailler cette compétence avec d'autres. Prévois 15 minutes et
+              un brouillon.
+            </p>
+            <ButtonLink to={`/super/${superId}`} size="sm" className="mt-3">
+              Faire le super exercice
+            </ButtonLink>
           </div>
         )}
 

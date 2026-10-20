@@ -1,0 +1,127 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://math-education.fr/schemas/super.schema.json",
+  "title": "MATH EDUCATION - Super exercices",
+  "description": "Problemes transverses de 10 a 20 minutes (sprint 2, point 7). Un long enonce, avec des donnees a trier (dont des informations inutiles), puis plusieurs questions enchainees qui mobilisent des competences de domaines differents. Bareme par question. Les reponses et corriges restent cote serveur, comme pour les exercices.",
+  "type": "object",
+  "required": ["metadata", "super"],
+  "additionalProperties": false,
+
+  "properties": {
+    "metadata": {
+      "type": "object",
+      "required": ["version", "total_super"],
+      "additionalProperties": false,
+      "properties": {
+        "version": { "type": "string", "pattern": "^\\d+\\.\\d+(\\.\\d+)?$" },
+        "scope": { "type": "string" },
+        "updated_at": { "type": "string", "format": "date" },
+        "total_super": { "type": "integer", "minimum": 0 }
+      }
+    },
+    "super": {
+      "type": "array",
+      "items": { "$ref": "#/$defs/super" }
+    }
+  },
+
+  "$defs": {
+    "super": {
+      "type": "object",
+      "required": ["id", "skill_id", "skill_ids", "school_level", "title", "contexte", "duree_estimee_min", "questions", "review_status"],
+      "additionalProperties": false,
+      "properties": {
+        "id": {
+          "type": "string",
+          "pattern": "^SX-[A-P][0-9]{3}-[0-9]{2}$",
+          "description": "SX - competence porteuse - numero. Ex. SX-C012-01."
+        },
+        "skill_id": {
+          "type": "string",
+          "pattern": "^[A-P][0-9]{3}$",
+          "description": "Competence porteuse : celle dont le super exercice est l'epreuve finale."
+        },
+        "skill_ids": {
+          "type": "array",
+          "minItems": 2,
+          "uniqueItems": true,
+          "items": { "type": "string", "pattern": "^[A-P][0-9]{3}$" },
+          "description": "Toutes les competences mobilisees, porteuse comprise, toutes dans sa chaine de prerequis ou elle-meme."
+        },
+        "school_level": { "type": "string" },
+        "title": { "type": "string", "minLength": 1, "maxLength": 80 },
+        "contexte": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 2000,
+          "description": "Enonce long commun a toutes les questions : situation, donnees utiles et inutiles. Markdown et KaTeX."
+        },
+        "image": {
+          "type": ["string", "null"],
+          "description": "Figure facultative, comme pour un exercice (figures/<nom>)."
+        },
+        "duree_estimee_min": { "type": "integer", "minimum": 5, "maximum": 25 },
+        "questions": {
+          "type": "array",
+          "minItems": 3,
+          "maxItems": 6,
+          "items": { "$ref": "#/$defs/question" }
+        },
+        "review_status": {
+          "type": "string",
+          "enum": ["brouillon", "relu_agent", "relu_humain", "valide"]
+        },
+        "programme_ref": { "type": ["string", "null"] }
+      }
+    },
+
+    "question": {
+      "type": "object",
+      "required": ["key", "skill_id", "statement", "type", "answer", "points", "solution_steps"],
+      "additionalProperties": false,
+      "properties": {
+        "key": { "type": "string", "pattern": "^q[1-6]$" },
+        "skill_id": {
+          "type": "string",
+          "pattern": "^[A-P][0-9]{3}$",
+          "description": "Competence que cette question evalue (une de skill_ids)."
+        },
+        "statement": { "type": "string", "minLength": 1, "maxLength": 400 },
+        "type": { "type": "string", "enum": ["numerique", "qcm", "texte", "vrai_faux"] },
+        "choices": {
+          "type": "array",
+          "minItems": 2,
+          "maxItems": 5,
+          "items": {
+            "type": "object",
+            "required": ["key", "text", "misconception"],
+            "additionalProperties": false,
+            "properties": {
+              "key": { "type": "string", "pattern": "^[a-e]$" },
+              "text": { "type": "string", "minLength": 1 },
+              "misconception": { "type": ["string", "null"] }
+            }
+          }
+        },
+        "answer": {
+          "type": "object",
+          "required": ["value"],
+          "additionalProperties": false,
+          "properties": {
+            "value": { "type": ["string", "number", "boolean"] },
+            "accepted": { "type": "array", "items": { "type": ["string", "number"] } },
+            "tolerance": { "type": "number", "minimum": 0 },
+            "unit": { "type": ["string", "null"] }
+          }
+        },
+        "points": { "type": "integer", "minimum": 1, "maximum": 4 },
+        "solution_steps": {
+          "type": "array",
+          "minItems": 1,
+          "items": { "type": "string", "minLength": 1 }
+        },
+        "hint": { "type": ["string", "null"] }
+      }
+    }
+  }
+}

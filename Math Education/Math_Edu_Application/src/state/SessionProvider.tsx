@@ -273,6 +273,18 @@ export function SessionProvider({ children }: { children: ReactNode }) {
     [ecrire],
   )
 
+  const enregistrerSuper = useCallback<SessionValue['enregistrerSuper']>(
+    (attempt) => {
+      const current = sessionRef.current
+      if (!current) return
+      const suivante = { ...current, superAttempts: [attempt, ...current.superAttempts] }
+      sessionRef.current = suivante
+      setSession(suivante)
+      ecrire(() => repository.saveSuperAttempt(attempt), 'Ton super exercice')
+    },
+    [ecrire],
+  )
+
   const completePlacement = useCallback<SessionValue['completePlacement']>(
     (result, progress) => {
       const current = session
@@ -434,6 +446,7 @@ export function SessionProvider({ children }: { children: ReactNode }) {
       corriger,
       reviewSkill,
       reviserDefi,
+      enregistrerSuper,
       completePlacement,
       bookSlot,
       cancelBooking,
@@ -465,6 +478,7 @@ export function SessionProvider({ children }: { children: ReactNode }) {
       corriger,
       reviewSkill,
       reviserDefi,
+      enregistrerSuper,
       completePlacement,
       bookSlot,
       cancelBooking,

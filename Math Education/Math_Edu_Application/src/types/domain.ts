@@ -71,6 +71,19 @@ export interface Abonnement {
  */
 export type SkillStatus = 'locked' | 'available' | 'in_progress' | 'mastered'
 
+/** Table `super_attempts` (migration 0016) : un passage d'un super exercice. */
+export interface SuperAttempt {
+  id: string
+  super_id: string
+  skill_id: string
+  score: number
+  total: number
+  reussi: boolean
+  reponses: Record<string, { reponse: string; juste: boolean }>
+  duree_s: number
+  created_at: string
+}
+
 /** Table `flashcard_progress` (migration 0014) : revision espacee d'une carte defi. */
 export interface FlashcardProgress {
   card_id: string

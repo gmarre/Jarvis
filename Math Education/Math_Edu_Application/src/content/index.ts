@@ -18,7 +18,7 @@
 // session ouverte. Le repository garantit que le contenu est installe avant de
 // rendre une session.
 
-import type { Flashcard, Mindmap, PublicExercise, SchoolLevel, Skill } from '@/types/content'
+import type { Flashcard, Mindmap, PublicExercise, SchoolLevel, Skill, SuperExercise } from '@/types/content'
 import { SCHOOL_LEVELS } from '@/types/content'
 
 export interface ContenuPedagogique {
@@ -27,6 +27,8 @@ export interface ContenuPedagogique {
   mindmaps: Mindmap[]
   /** Cartes defi (migration 0014). Absentes d'un ancien cache : liste vide. */
   flashcards: Flashcard[]
+  /** Super exercices, partie lisible (migration 0016). Absents d'un ancien cache : liste vide. */
+  superExercises: SuperExercise[]
 }
 
 export interface Domain {
@@ -39,6 +41,7 @@ export const skills: Skill[] = []
 export const exercises: PublicExercise[] = []
 export const mindmaps: Mindmap[] = []
 export const flashcards: Flashcard[] = []
+export const superExercises: SuperExercise[] = []
 /** Domaines reellement presents dans le contenu, dans l'ordre alphabetique. */
 export const domains: Domain[] = []
 
@@ -46,6 +49,8 @@ const skillById = new Map<string, Skill>()
 const exerciseById = new Map<string, PublicExercise>()
 const mindmapById = new Map<string, Mindmap>()
 const flashcardsBySkill = new Map<string, Flashcard[]>()
+const superById = new Map<string, SuperExercise>()
+const superBySkill = new Map<string, SuperExercise[]>()
 /** Competences qui dependent d'une competence donnee (arcs sortants du DAG). */
 const dependentsBySkill = new Map<string, string[]>()
 
@@ -69,6 +74,7 @@ export function installerContenu(contenu: ContenuPedagogique) {
   remplacer(exercises, contenu.exercises)
   remplacer(mindmaps, contenu.mindmaps)
   remplacer(flashcards, contenu.flashcards ?? [])
+  remplacer(superExercises, contenu.superExercises ?? [])
 
   skillById.clear()
   for (const skill of skills) skillById.set(skill.id, skill)
@@ -76,6 +82,14 @@ export function installerContenu(contenu: ContenuPedagogique) {
   for (const exercise of exercises) exerciseById.set(exercise.id, exercise)
   mindmapById.clear()
   for (const mindmap of mindmaps) mindmapById.set(mindmap.id, mindmap)
+  superById.clear()
+  superBySkill.clear()
+  for (const sx of [...superExercises].sort((a, b) => a.id.localeCompare(b.id))) {
+    superById.set(sx.id, sx)
+    const liste = superBySkill.get(sx.skill_id)
+    if (liste) liste.push(sx)
+    else superBySkill.set(sx.skill_id, [sx])
+  }
   flashcardsBySkill.clear()
   for (const carte of [...flashcards].sort((a, b) => a.id.localeCompare(b.id))) {
     const liste = flashcardsBySkill.get(carte.skill_id)
@@ -133,6 +147,15 @@ export function getMindmap(id: string | null | undefined): Mindmap | undefined {
 /** Cartes defi d'une competence, dans l'ordre de leur numero. */
 export function getFlashcardsForSkill(skillId: string): Flashcard[] {
   return flashcardsBySkill.get(skillId) ?? []
+}
+
+/** Super exercices portes par une competence (son epreuve finale). */
+export function getSuperForSkill(skillId: string): SuperExercise[] {
+  return superBySkill.get(skillId) ?? []
+}
+
+export function getSuper(id: string): SuperExercise | undefined {
+  return superById.get(id)
 }
 
 /** Exercices d'une competence, du plus simple au plus exigeant. */

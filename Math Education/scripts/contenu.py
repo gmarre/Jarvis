@@ -17,6 +17,8 @@ Disposition, sous `Specifications DAG, Exos, Mindcards/content/` :
     cartes/<id>.json              une carte par fichier
     flashcards/_metadata.json     metadonnees des cartes defi (sprint 2, point 4)
     flashcards/<domaine>/<id>.json cartes defi d'une competence, par numero
+    super/_metadata.json          metadonnees des super exercices (sprint 2, point 7)
+    super/<domaine>/<id>.json     un super exercice par fichier
 
 `charger()` rend les trois structures dans la forme historique (un dict
 `{"metadata", "skills"}`, `{"metadata", "exercises"}`, `{"metadata",
@@ -25,7 +27,8 @@ Disposition, sous `Specifications DAG, Exos, Mindcards/content/` :
 devenus orphelins. `exporter_app()` assemble les fichiers que
 l'application importe en mode demonstration.
 
-Les cartes defi ont leurs propres fonctions (`charger_defis`, `ecrire_defis`) :
+Les cartes defi et les super exercices ont leurs propres fonctions
+(`charger_defis`, `ecrire_defis`, `charger_super`, `ecrire_super`) :
 `charger()` garde sa forme a trois elements, que toutes les fusions emploient.
 
 Usage en ligne de commande :
@@ -244,6 +247,39 @@ def ecrire_defis(defis: dict, racine: Path = CONTENT) -> None:
             d.rmdir()
 
 
+SUPER_VIDES = {"metadata": {"version": "1.0", "scope": "Super exercices, CP a 3e", "total_super": 0},
+               "super": []}
+
+
+def charger_super(racine: Path = CONTENT) -> dict:
+    """Super exercices, dans la forme {"metadata", "super"} ; vide si le dossier n'existe pas."""
+    dossier = Path(racine) / "super"
+    if not (dossier / "_metadata.json").is_file():
+        return json.loads(json.dumps(SUPER_VIDES))
+    liste = [_lire(f) for f in sorted(dossier.glob("*/*.json"))]
+    liste.sort(key=lambda x: x["id"])
+    return {"metadata": _lire(dossier / "_metadata.json"), "super": liste}
+
+
+def ecrire_super(sup: dict, racine: Path = CONTENT) -> None:
+    """Ecrit un super exercice par fichier, et supprime les fichiers orphelins."""
+    dossier = Path(racine) / "super"
+    sup["metadata"]["total_super"] = len(sup["super"])
+    attendus: set[Path] = set()
+    _ecrire_json(dossier / "_metadata.json", sup["metadata"])
+    attendus.add((dossier / "_metadata.json").resolve())
+    for x in sup["super"]:
+        chemin = dossier / x["skill_id"][0] / f"{x['id']}.json"
+        _ecrire_json(chemin, x)
+        attendus.add(chemin.resolve())
+    for f in dossier.glob("*/*.json"):
+        if f.resolve() not in attendus:
+            f.unlink()
+    for d in dossier.glob("*"):
+        if d.is_dir() and not any(d.iterdir()):
+            d.rmdir()
+
+
 def exporter_app(dag: dict, exercices: dict, cartes: dict, dest: Path = APP_CONTENT,
                  defis: dict | None = None) -> None:
     """Les fichiers assembles que l'application importe en mode demonstration."""
@@ -254,6 +290,9 @@ def exporter_app(dag: dict, exercices: dict, cartes: dict, dest: Path = APP_CONT
     defis = defis if defis is not None else charger_defis()
     defis["metadata"]["total_flashcards"] = len(defis["flashcards"])
     _ecrire_json(Path(dest) / "flashcards.json", defis)
+    sup = charger_super()
+    sup["metadata"]["total_super"] = len(sup["super"])
+    _ecrire_json(Path(dest) / "super.json", {**sup, "super": avec_figures(sup["super"])})
 
 
 def main() -> int:
@@ -265,8 +304,9 @@ def main() -> int:
     if commande == "stats":
         dag, exos, cartes = charger()
         defis = charger_defis()
+        sup = charger_super()
         print(f"{len(dag['skills'])} competences, {len(exos['exercises'])} exercices, {len(cartes['mindmaps'])} cartes, "
-              f"{len(defis['flashcards'])} cartes defi")
+              f"{len(defis['flashcards'])} cartes defi, {len(sup['super'])} super exercices")
         for d in dag["metadata"]["domains"]:
             print(f"  {d['id']} {d['name']} : {d['count']}")
         return 0

@@ -94,9 +94,11 @@ def main() -> int:
 
     dag, exos, cartes = contenu.charger()
     defis = contenu.charger_defis()
+    sup = contenu.charger_super()
     # Les figures sont dessinees ici : la base recoit le SVG, pas la description.
     payload = {"skills": dag["skills"], "exercises": contenu.avec_figures(exos["exercises"]),
-               "mindmaps": cartes["mindmaps"], "flashcards": defis["flashcards"]}
+               "mindmaps": cartes["mindmaps"], "flashcards": defis["flashcards"],
+               "super": contenu.avec_figures(sup["super"])}
     taille = len(json.dumps(payload, ensure_ascii=False).encode("utf-8"))
 
     # 2. Une publication = un commit.
@@ -111,7 +113,8 @@ def main() -> int:
         commit += "-dirty"
 
     print(f"Contenu : {len(payload['skills'])} competences, {len(payload['exercises'])} exercices, "
-          f"{len(payload['mindmaps'])} cartes, {len(payload['flashcards'])} cartes defi "
+          f"{len(payload['mindmaps'])} cartes, {len(payload['flashcards'])} cartes defi, "
+          f"{len(payload['super'])} super exercices "
           f"({taille / 1024:.0f} ko), commit {commit}")
 
     if not appliquer:
@@ -140,12 +143,17 @@ def main() -> int:
     # compte que s'il y a des cartes a publier.
     if payload["flashcards"]:
         tables.append("content_flashcards")
+    # Idem pour les super exercices (migration 0016).
+    if payload["super"]:
+        tables += ["content_super", "content_super_keys"]
     comptes = {t: compter(url, cle, t) for t in tables}
     print("En base :", comptes)
     attendus = {"content_skills": len(payload["skills"]), "content_exercises": len(payload["exercises"]),
                 "content_exercise_keys": len(payload["exercises"]), "content_mindmaps": len(payload["mindmaps"])}
     if payload["flashcards"]:
         attendus["content_flashcards"] = len(payload["flashcards"])
+    if payload["super"]:
+        attendus["content_super"] = attendus["content_super_keys"] = len(payload["super"])
     if comptes != attendus:
         print("ECART entre le contenu et la base :", attendus)
         return 1

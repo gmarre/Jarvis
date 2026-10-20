@@ -1002,6 +1002,77 @@ def check_defis(dag: dict, defis: dict) -> None:
     check_caracteres_controle(comme_exos)
 
 
+# ---------------------------------------------------------------------------
+#  Super exercices (sprint 2, point 7)
+# ---------------------------------------------------------------------------
+# Un super exercice est l'epreuve finale d'une competence porteuse : toutes
+# les competences mobilisees doivent etre dans sa chaine de prerequis (sinon on
+# evalue ce qui n'a pas ete appris), et chaque question se controle comme un
+# exercice (notations enseignees, caracteres de controle).
+
+def _super_comme_exercices(sup: dict) -> dict:
+    exos = []
+    for x in sup["super"]:
+        for q in x["questions"]:
+            exos.append({
+                "id": f"{x['id']}#{q['key']}", "skill_id": x["skill_id"],
+                "statement": x["contexte"] + "\n\n" + q["statement"],
+                "answer": q["answer"], "choices": q.get("choices", []),
+                "solution_steps": q["solution_steps"], "hint": q.get("hint"),
+            })
+    return {"exercises": exos}
+
+
+def check_super(dag: dict, sup: dict) -> None:
+    skills = {s["id"]: s for s in dag["skills"]}
+    graph = nx.DiGraph()
+    for s in dag["skills"]:
+        graph.add_node(s["id"])
+        for p in s["prerequisites"]:
+            if p in skills:
+                graph.add_edge(p, s["id"])
+    vus: set[str] = set()
+    for x in sup["super"]:
+        if x["id"] in vus:
+            err(f"Super exercice en double : {x['id']}")
+        vus.add(x["id"])
+        porteuse = x["skill_id"]
+        if porteuse not in skills:
+            err(f"Super exercice : {x['id']} vise {porteuse}, absente du DAG")
+            continue
+        if not x["id"].startswith(f"SX-{porteuse}-"):
+            err(f"Super exercice : {x['id']} ne porte pas l'identifiant de sa competence {porteuse}")
+        if x["school_level"] != skills[porteuse]["school_level"]:
+            err(f"Super exercice : {x['id']} est en {x['school_level']}, sa competence en {skills[porteuse]['school_level']}")
+        chaine = nx.ancestors(graph, porteuse) | {porteuse}
+        if porteuse not in x["skill_ids"]:
+            err(f"Super exercice : {x['id']} ne liste pas sa competence porteuse dans skill_ids")
+        hors = [sid for sid in x["skill_ids"] if sid not in chaine]
+        if hors:
+            err(f"Super exercice : {x['id']} mobilise {', '.join(hors)}, hors de la chaine de {porteuse}")
+        domaines = {sid[0] for sid in x["skill_ids"] if sid in skills}
+        if len(domaines) < 2:
+            warn(f"Super exercice : {x['id']} ne mobilise qu'un domaine ({''.join(domaines)}) ; viser au moins deux")
+        cles = [q["key"] for q in x["questions"]]
+        if cles != [f"q{i}" for i in range(1, len(cles) + 1)]:
+            err(f"Super exercice : {x['id']} a des questions mal numerotees ({', '.join(cles)})")
+        for q in x["questions"]:
+            if q["skill_id"] not in x["skill_ids"]:
+                err(f"Super exercice : {x['id']}#{q['key']} evalue {q['skill_id']}, absente de skill_ids")
+            if q["type"] == "qcm":
+                lettres = [c["key"] for c in q.get("choices", [])]
+                if str(q["answer"]["value"]) not in lettres:
+                    err(f"Super exercice : {x['id']}#{q['key']} a une reponse hors des propositions")
+            elif q.get("choices"):
+                err(f"Super exercice : {x['id']}#{q['key']} a des propositions sans etre un QCM")
+    if sup["metadata"]["total_super"] != len(sup["super"]):
+        err(f"Super exercices : metadata.total_super = {sup['metadata']['total_super']} "
+            f"mais {len(sup['super'])} presents")
+    comme_exos = _super_comme_exercices(sup)
+    check_notations(dag, comme_exos)
+    check_caracteres_controle(comme_exos)
+
+
 def main() -> int:
     print("Validation du contenu MATH EDUCATION\n")
 
@@ -1010,6 +1081,7 @@ def main() -> int:
     try:
         dag, exercises, mindmaps = contenu.charger(CONTENT_DIR)
         defis = contenu.charger_defis(CONTENT_DIR)
+        sup = contenu.charger_super(CONTENT_DIR)
     except contenu.ContenuInvalide as exc:
         print(f"Contenu illisible : {exc}", file=sys.stderr)
         return 1
@@ -1023,6 +1095,8 @@ def main() -> int:
     print("  mindmaps              controle")
     validate_schema(defis, SCHEMA_DIR / "flashcards.schema.json", "Cartes defi")
     print("  flashcards            controle")
+    validate_schema(sup, SCHEMA_DIR / "super.schema.json", "Super exercices")
+    print("  super                 controle")
 
     print("\nGraphe")
     check_dag(dag, exercises, mindmaps)
@@ -1030,6 +1104,10 @@ def main() -> int:
     err_avant = len(errors)
     check_defis(dag, defis)
     print(f"  cartes defi ({len(defis['flashcards'])})   {'OK' if len(errors) == err_avant else 'ANOMALIES'}")
+
+    err_avant = len(errors)
+    check_super(dag, sup)
+    print(f"  super exercices ({len(sup['super'])})   {'OK' if len(errors) == err_avant else 'ANOMALIES'}")
 
     print("\nConformite au programme")
     err_avant = len(errors)

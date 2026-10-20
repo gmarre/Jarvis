@@ -22,7 +22,7 @@ import { assurerContenu, chargerContenuLocal, versContenuPublic } from '@/conten
 import { checkAnswer } from '@/lib/exercise'
 import { MINIMUM_AGE_WITHOUT_CONSENT, ageFrom, estMineur } from '@/lib/age'
 import { verifierValeur } from '../../supabase/functions/_shared/accord'
-import type { Exercise } from '@/types/content'
+import { idQuestionSuper, type Exercise } from '@/types/content'
 import {
   RepositoryError,
   type Catalog,
@@ -62,6 +62,27 @@ const banqueComplete = new Map<string, Exercise>()
 async function chargerDemonstration() {
   const local = await chargerContenuLocal()
   for (const exercise of local.exercises) banqueComplete.set(exercise.id, exercise)
+  // Les questions des super exercices se corrigent comme des exercices, sous
+  // l'identifiant « SX-...#q1 », comme le fait l'Edge Function.
+  for (const sx of local.superExercises) {
+    for (const q of sx.questions) {
+      banqueComplete.set(idQuestionSuper(sx.id, q.key), {
+        id: idQuestionSuper(sx.id, q.key),
+        skill_id: q.skill_id,
+        level: 'maitrise',
+        type: q.type,
+        statement: q.statement,
+        image: null,
+        ...(q.choices ? { choices: q.choices } : {}),
+        answer: q.answer,
+        solution_steps: q.solution_steps,
+        hint: q.hint ?? null,
+        estimated_duration_s: 0,
+        review_status: sx.review_status,
+        programme_ref: sx.programme_ref,
+      })
+    }
+  }
   return versContenuPublic(local)
 }
 
@@ -115,6 +136,7 @@ function reviveSession(raw: string): Session | null {
       attempts: parsed.attempts ?? [],
       bookings: parsed.bookings ?? [],
       defis: parsed.defis ?? {},
+      superAttempts: parsed.superAttempts ?? [],
     }
   } catch {
     return null
@@ -211,7 +233,7 @@ export const mockRepository: DataRepository = {
         ? buildNewAccountSnapshot(profMarcProfile)
         : buildLeaSnapshot()
 
-    courante = { ...snapshot, attempts: [], defis: {} }
+    courante = { ...snapshot, attempts: [], defis: {}, superAttempts: [] }
     persister()
     notifier()
     return wait(courante)
@@ -219,7 +241,7 @@ export const mockRepository: DataRepository = {
 
   async signUp(input) {
     await contenu()
-    courante = { ...buildNewAccountSnapshot(profileFromSignUp(input)), attempts: [], defis: {} }
+    courante = { ...buildNewAccountSnapshot(profileFromSignUp(input)), attempts: [], defis: {}, superAttempts: [] }
     persister()
     notifier()
     return wait(courante)
@@ -297,6 +319,13 @@ export const mockRepository: DataRepository = {
   async saveDefi(progress) {
     const session = exigerSession()
     courante = { ...session, defis: { ...session.defis, [progress.card_id]: progress } }
+    persister()
+    await wait(undefined)
+  },
+
+  async saveSuperAttempt(attempt) {
+    const session = exigerSession()
+    courante = { ...session, superAttempts: [attempt, ...session.superAttempts] }
     persister()
     await wait(undefined)
   },

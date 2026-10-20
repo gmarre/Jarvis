@@ -72,7 +72,7 @@ done
 
 # Les tests attendent certains refus : ce sont eux qui prouvent que les gardes
 # fonctionnent. Tout autre ERROR est un vrai probleme.
-REFUS_ATTENDUS='Creneau complet|violates row-level security|ne se modifie pas depuis le client|se confirme par le lien|duplicate key value|permission denied for function publier_contenu|Publication reservee au serveur|invalide_avec_commentaire|accord du parent|profiles_chemins_choisis_format|skill_progress_niveau_borne|flashcard_progress_box_check'
+REFUS_ATTENDUS='Creneau complet|violates row-level security|ne se modifie pas depuis le client|se confirme par le lien|duplicate key value|permission denied for function publier_contenu|Publication reservee au serveur|invalide_avec_commentaire|accord du parent|profiles_chemins_choisis_format|skill_progress_niveau_borne|flashcard_progress_box_check|super_attempts_score_borne'
 
 verifier() {
   local titre="$1" fichier="$2"
@@ -127,6 +127,7 @@ verifier "Accord parental et regles des mineurs" 06_accord_parental.sql
 verifier "Chemins choisis" 07_chemins.sql
 verifier "Niveau de maitrise" 08_niveau_maitrise.sql
 verifier "Cartes defi" 09_cartes_defi.sql
+verifier "Super exercices" 10_super_exercices.sql
 
 echo
 if [ "$echec" -ne 0 ]; then

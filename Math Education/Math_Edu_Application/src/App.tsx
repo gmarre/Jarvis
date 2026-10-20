@@ -18,6 +18,7 @@ const MindmapPage = lazy(() => import('@/pages/MindmapPage'))
 const MindmapListPage = lazy(() => import('@/pages/MindmapListPage'))
 const ExercisePage = lazy(() => import('@/pages/ExercisePage'))
 const DefiPage = lazy(() => import('@/pages/DefiPage'))
+const SuperPage = lazy(() => import('@/pages/SuperPage'))
 const PlacementTestPage = lazy(() => import('@/pages/PlacementTestPage'))
 const ProfilePage = lazy(() => import('@/pages/ProfilePage'))
 const SchedulePage = lazy(() => import('@/pages/SchedulePage'))
@@ -126,6 +127,14 @@ export default function App() {
           element={
             <RequireAuth roles={ELEVE}>
               <DefiPage />
+            </RequireAuth>
+          }
+        />
+        <Route
+          path="/super/:superId"
+          element={
+            <RequireAuth roles={ELEVE}>
+              <SuperPage />
             </RequireAuth>
           }
         />

@@ -48,6 +48,7 @@ installerContenu({
   exercises: [exercice('X1'), exercice('X3')],
   mindmaps: [],
   flashcards: [],
+  superExercises: [],
 })
 
 function progression(maitrisees: string[]): ProgressMap {
