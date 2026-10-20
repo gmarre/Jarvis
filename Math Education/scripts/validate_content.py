@@ -496,10 +496,19 @@ NOTATIONS = {
     # Puissances (etape 6) : le carre et le cube d'un nombre arrivent en 5e
     # (A029), les autres exposants en 4e (A031), l'exposant negatif en 3e
     # (A036), la racine carree en 4e (A034).
-    "A029": (re.compile(r"(?<=[\d)])[²³]|(?<=[\d)}])\^\{?[23](?!\d)"), "un carre ou un cube (a², a³)"),
+    # Etape 7 (calcul litteral) : x² et x^{2} apres une lettre isolee sont aussi
+    # un carre. « m » est exclu, pris par l'unite d'aire (P017) : la consigne de
+    # l'etape 7 interdit m comme inconnue. Une lettre collee a une autre (cm²,
+    # km²) reste une unite.
+    "A029": (re.compile(r"(?<=[\d)])[²³]|(?<=[\d)}])\^\{?[23](?!\d)"
+                        r"|(?<![A-Za-z\\])[a-ln-z](?:[²³]|\^\{?[23](?!\d))"), "un carre ou un cube (a², a³)"),
     "A031": (re.compile(r"(?<=[\d)])[⁰¹⁴⁵⁶⁷⁸⁹]|(?<=[\d)}])\^\{?(?:[4-9]|1\d|[01](?![\d.]))"), "un exposant autre que 2 et 3"),
     "A036": (re.compile(r"⁻|(?<=[\d)}])\^\{?-"), "un exposant negatif"),
     "A034": (re.compile(r"√|\\sqrt"), "la racine carree (√)"),
+    # Inegalites larges (etape 7) : ⩽ et ⩾ arrivent avec les inequations de 3e
+    # (F031) ; A006 ne couvre que < et >. Commandes KaTeX \le, \leq, \leqslant
+    # et leurs pendants ; \left n'est pas une inegalite.
+    "F031": (re.compile(r"[≤≥⩽⩾]|\\[lg]e(?:q(?:slant)?)?(?![a-zA-Z])"), "les symboles ⩽ et ⩾"),
     # Le degre (symbole DEG) est introduit au CM2 a partir de l'angle droit (G022,
     # etape 4b). Ecrit par son code : invisible a la relecture sinon.
     # « °C » (temperature, etape 5) n'est pas un angle : le motif l'exclut.
