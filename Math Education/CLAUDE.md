@@ -19,11 +19,11 @@ Application web d'apprentissage adaptatif des mathématiques, CP à Terminale à
 
 ---
 
-## 2. État au 21 octobre 2026
+## 2. État au 20 octobre 2026
 
-### 2.1 Contenu (étape 6 fusionnée le 21 octobre 2026)
+### 2.1 Contenu (étape 6 fusionnée le 20 octobre 2026)
 
-**196 compétences, 1 192 exercices (dont 285 avec figure), 42 cartes mentales**, tous en `relu_agent` (relus par agents), en attente de la recette de Marius.
+**196 compétences, 1 192 exercices (dont 285 avec figure), 42 cartes mentales, 1 074 cartes défi, 193 super exercices**, tous en `relu_agent` (relus par agents), en attente de la recette de Marius.
 
 | Domaine | Compétences | Classes couvertes |
 |---|---|---|
@@ -78,7 +78,7 @@ Ce qui est faux ou absent aujourd'hui (repris dans le backlog §6) :
 **Sécurité et opérations**
 - `SUPABASE_SERVICE_ROLE_KEY` : jamais affichée, jamais préfixée `VITE_`, lue seulement par les scripts locaux depuis `.env.local`.
 - Le fichier Google `client_secret_*.json` n'est jamais commité.
-- **Migrations : jamais par l'outil MCP `apply_migration` (refusé par Gauthier).** Créer le fichier numéroté suivant dans `supabase/migrations/` (rejouable : `if not exists`, `create or replace`, `drop policy if exists`), puis Gauthier le colle dans le SQL Editor. Ne jamais modifier une migration déjà appliquée (dernière appliquée : 0016, le 21 octobre 2026).
+- **Migrations : jamais par l'outil MCP `apply_migration` (refusé par Gauthier).** Créer le fichier numéroté suivant dans `supabase/migrations/` (rejouable : `if not exists`, `create or replace`, `drop policy if exists`), puis Gauthier le colle dans le SQL Editor. Ne jamais modifier une migration déjà appliquée (dernière appliquée : 0016, le 20 octobre 2026).
 - Les outils MCP Supabase `deploy_edge_function`, `get_edge_function` et `execute_sql` en lecture sont acceptés.
 - Ne pas contourner un refus du classifieur de sécurité.
 
@@ -140,7 +140,7 @@ Ce qui est faux ou absent aujourd'hui (repris dans le backlog §6) :
 
 **Colonnes protégées du client** (trigger) : `role` (choisi une seule fois, `role_choisi_le`, 0010), `consentement_parental_at`, `email`, `cree_le`, `abonnement` ; pour un mineur, `date_naissance` (0011). Un changement de parent ou une date sous 15 ans remet le consentement à zéro.
 
-**Edge Functions :** `corriger` (`verify_jwt: true`, version 11 : questions de super exercices `SX-…#qN`, lecture des expressions algébriques (`answer.forme`), signe moins typographique, °C, « +8 °C », puissances et notation scientifique reconnues sans calcul, fractions relatives, « ÷ », « fois », « cm^2 », « n = 13 », écritures du signe d'une fraction sans réduction ni double signe, tolérance incluse, espaces de milliers au corrigé) ; `accord-parental` (`verify_jwt: false`, le parent n'a pas de compte ; secrets `RESEND_API_KEY`, `RESEND_FROM`, `APP_URL`).
+**Edge Functions :** `corriger` (`verify_jwt: true`, version 12 : questions de super exercices `SX-…#qN`, lecture des expressions algébriques (`answer.forme`), signe moins typographique, °C, « +8 °C », « 7,7° » pour des °C, puissances et notation scientifique reconnues sans calcul, fractions relatives, « ÷ », « fois », « cm^2 », « n = 13 », écritures du signe d'une fraction sans réduction ni double signe, tolérance incluse, espaces de milliers au corrigé) ; `accord-parental` (`verify_jwt: false`, le parent n'a pas de compte ; secrets `RESEND_API_KEY`, `RESEND_FROM`, `APP_URL`).
 
 **Fonctions d'autorisation** en `security definer`, pour éviter la récursion RLS : `peut_lire_eleve`, `est_prof_de`, `est_parent_de`, `role_actuel`, `nb_places_prises`. Aucune n'est appelable par `anon`.
 
@@ -267,13 +267,13 @@ Décisions prises en route : la page publique du parent est `/accord/:jeton` (co
 
 ### Sprint 2 : Pédagogie de l'élève
 
-**Avancement au 21 octobre 2026 :**
+**Avancement au 20 octobre 2026 :**
 - fait et commité : point 2 (maîtrise sur 5, `lib/maitrise.ts`, migration 0013 appliquée, scénario d'horloge en tests) ;
 - fait et commité : point 1 (correction du test de positionnement à la fin, sans nouvelle fonction serveur : la correction rendue après chaque réponse est conservée), point 3 en partie (série de jours réelle, `lib/serie.ts`), point 5 (astuce et « Tout déplier »), point 6 (chemins proposés, `lib/chemins.ts`, migration 0012 appliquée) ;
 - aussi : bouton « ± » sur la saisie numérique à partir de la 5e (le pavé de l'iPhone n'a pas de signe moins) ;
-- **point 4 (cartes défi), code fait le 21 octobre 2026** : contenu `content/flashcards/` (schéma `flashcards.schema.json`, `scripts/merge_defis.py`, consigne `modeles_agents/consigne_defis.md`), migration **0014** (`content_flashcards`, `flashcard_progress`, publication), écran `/defi/:skillId` (recto, retourner, « je savais » ou non), révision espacée par carte J+1, J+3, J+7, J+14, J+30 (`lib/defis.ts`), cartes dues dans « À réviser ». **Contenu fait le 21 octobre 2026 : 1 074 cartes défi pour les 196 compétences**, relues et contre-relues (bilan dans `QUALITY.md`), publiées le 21 octobre 2026 ;
-- **point 7 (super exercices), code fait le 21 octobre 2026** : contenu `content/super/` (schéma `super.schema.json`, `scripts/merge_super.py`, consigne `modeles_agents/consigne_super.md`), migration **0016** (`content_super` lisible, `content_super_keys` serveur seulement, `super_attempts`), correction d'une question `SX-…#q2` par `corriger`, page d'examen `/super/:id` (énoncé visible, copie rendue d'un bloc, réussite à 70 % des points), proposé une fois la compétence acquise. **Aucun blocage pour l'instant : la règle « bloque le niveau supérieur » est à trancher (§8).** Contenu : pilote de 8 super exercices (domaine C, CM1 à 4e) relu et fusionné le 21 octobre 2026 ; la suite (un par compétence) est en rédaction par domaine ;
-- **point 8 (engagement), fait le 21 octobre 2026** : note `Management de Projet/Etude_engagement.md` (28 sources) ; faits : série qui pardonne un jour manqué et « N jours sur les 7 derniers », bilan avec le niveau avant et après, fin de journée qui invite à s'arrêter, interrupteurs de rappels et de résumé masqués tant qu'ils n'envoient rien, rappels désactivés par défaut (migration **0015**). Restent, à arbitrer (§8) : rythme choisi par l'élève (2 à 5 jours) et rappel par email au parent ;
+- **point 4 (cartes défi), code fait le 20 octobre 2026** : contenu `content/flashcards/` (schéma `flashcards.schema.json`, `scripts/merge_defis.py`, consigne `modeles_agents/consigne_defis.md`), migration **0014** (`content_flashcards`, `flashcard_progress`, publication), écran `/defi/:skillId` (recto, retourner, « je savais » ou non), révision espacée par carte J+1, J+3, J+7, J+14, J+30 (`lib/defis.ts`), cartes dues dans « À réviser ». **Contenu fait le 20 octobre 2026 : 1 074 cartes défi pour les 196 compétences**, relues et contre-relues (bilan dans `QUALITY.md`), publiées le 20 octobre 2026 ;
+- **point 7 (super exercices), code fait le 20 octobre 2026** : contenu `content/super/` (schéma `super.schema.json`, `scripts/merge_super.py`, consigne `modeles_agents/consigne_super.md`), migration **0016** (`content_super` lisible, `content_super_keys` serveur seulement, `super_attempts`), correction d'une question `SX-…#q2` par `corriger`, page d'examen `/super/:id` (énoncé visible, copie rendue d'un bloc, réussite à 70 % des points), proposé une fois la compétence acquise. **Aucun blocage pour l'instant : la règle « bloque le niveau supérieur » est à trancher (§8).** **Contenu fait le 20 octobre 2026 : 193 super exercices, un par compétence** (sauf A001, G001 et G004, sans prérequis), 46 figures, relus par lot (bilan dans `QUALITY.md`), publiés le 20 octobre 2026 ;
+- **point 8 (engagement), fait le 20 octobre 2026** : note `Management de Projet/Etude_engagement.md` (28 sources) ; faits : série qui pardonne un jour manqué et « N jours sur les 7 derniers », bilan avec le niveau avant et après, fin de journée qui invite à s'arrêter, interrupteurs de rappels et de résumé masqués tant qu'ils n'envoient rien, rappels désactivés par défaut (migration **0015**). Restent, à arbitrer (§8) : rythme choisi par l'élève (2 à 5 jours) et rappel par email au parent ;
 - limite connue : un élève très en retard voit des chemins très longs (jusqu'à 90 compétences) ; n'afficher que les prochaines étapes.
 
 **Table de maîtrise validée par Gauthier le 20 octobre 2026 :**
@@ -330,9 +330,9 @@ Décisions prises en route : la page publique du parent est `/accord/:jeton` (co
    - **Garde-fou :** pas de mécanique manipulatrice sur des mineurs (pas de perte punitive, pas de notifications nocturnes), conformément aux recommandations CNIL pour les mineurs.
    - Rappels : emails d'abord, notifications PWA ensuite.
 
-**Contenu, étape 7 (calcul littéral, domaine F)** : cartographe fait le 21 octobre 2026 (25 compétences : B054, B055, F002, F003, F006, F010, F012 à F014, F020 à F025, F027, F031, F061 à F068 ; `_travail/etape7_dag_F.*`) ; **7 points à arbitrer par Gauthier** (§8). La correction des expressions (S1 à S5 du cartographe) est faite : `answer.forme` (`expression`, `reduite`, `developpee`, `factorisee`, `meme_calcul`, `equation`, `inegalite`, `solutions`), 29 tests dans `src/lib/algebre.test.ts` ; à déployer dans `corriger` avec la prochaine publication.
+**Contenu, étape 7 (calcul littéral, domaine F)** : cartographe fait le 20 octobre 2026 (25 compétences : B054, B055, F002, F003, F006, F010, F012 à F014, F020 à F025, F027, F031, F061 à F068 ; `_travail/etape7_dag_F.*`) ; **7 points à arbitrer par Gauthier** (§8). La correction des expressions (S1 à S5 du cartographe) est faite : `answer.forme` (`expression`, `reduite`, `developpee`, `factorisee`, `meme_calcul`, `equation`, `inegalite`, `solutions`), 29 tests dans `src/lib/algebre.test.ts` ; déployée dans `corriger` (version 11).
 
-**Contenu :** **étape 6 du §7 fusionnée et publiée le 21 octobre 2026** : 26 compétences, 156 exercices, 7 cartes, tous relus et contre-relus par agents (bilan dans `QUALITY.md`). Liens ajoutés en relecture : A034 ← B049 (et A032 ← A031 seul). A025 réécrite avec les puissances. A038 n'est plus en évaluation partielle (la notation scientifique se tape) ; seule C035 l'est encore. Prochaine étape de contenu : 7 (calcul littéral, domaine F).
+**Contenu :** **étape 6 du §7 fusionnée et publiée le 20 octobre 2026** : 26 compétences, 156 exercices, 7 cartes, tous relus et contre-relus par agents (bilan dans `QUALITY.md`). Liens ajoutés en relecture : A034 ← B049 (et A032 ← A031 seul). A025 réécrite avec les puissances. A038 n'est plus en évaluation partielle (la notation scientifique se tape) ; seule C035 l'est encore. Prochaine étape de contenu : 7 (calcul littéral, domaine F).
 
 ### Sprint 3 : Professeur v1
 
@@ -468,17 +468,17 @@ Toute nouvelle lettre exige une migration qui élargit les contraintes `A-P`, et
 
 **Réponses du 20 octobre 2026** : sprint 1 clos (le point 4 visait l'image de fond de la connexion) ; Resend configuré ; table de maîtrise validée (sprint 2) ; super exercices : un par compétence pour commencer ; 9 arbitrages de l'étape 6 validés ; tranche pilote complétée au sprint 2.
 
-**Tests à faire avec Gauthier, gardés pour plus tard (demande du 21 octobre 2026) :**
+**Tests à faire avec Gauthier, gardés pour plus tard (demande du 20 octobre 2026) :**
 1. Consentement parental de bout en bout : création d'un compte de moins de 15 ans, email Resend reçu sur l'adresse de Gauthier, accord puis refus, modification de date de naissance soumise à accord.
-2. Correction en ligne (`corriger` version 10) sur un vrai compte : « n = 13 », « 1,496 fois 10^8 », « 225 cm^2 », « 6/(-10) » acceptés ; « -3/-7 » refusé pour 3/7 ; espaces de milliers dans le corrigé.
+2. Correction en ligne (`corriger` version 12) sur un vrai compte : « 7,7° » pour une température en °C, « n = 13 », « 1,496 fois 10^8 », « 225 cm^2 », « 6/(-10) » acceptés ; « -3/-7 » refusé pour 3/7 ; espaces de milliers dans le corrigé.
 3. Maîtrise sur 5 (migration 0013) : 5 ronds visibles, contrôle proposé dans « À réviser », contrôle raté qui rouvre la compétence.
 4. Passage manuel complet sur téléphone (iPhone compris) : bouton « ± », saisie d'une fraction en texte, cartes mentales de l'étape 6.
 5. Recette de Marius : exemples inhabituels des cartes de puissances (√16 900 = 130, 10¹⁴), convention « 0 est positif et négatif ».
-6. Migrations 0014 à 0016 appliquées, contenu publié : un défi (`/defi/<compétence>`), retourner, « je savais » ou non, la carte revient le lendemain dans « À réviser » ; un super exercice (`/super/<id>`) rendu, score et corrigés, passage enregistré.
-7. Correction algébrique en ligne (après redéploiement de `corriger`) : « 5 + 3x » accepté pour 3x + 5 quand la forme est réduite, « (x+3)(x-3) » pour une factorisation, « x >= -4 », « ±7 ».
+6. Migrations 0014 à 0016 appliquées, contenu publié : un défi (`/defi/<compétence>`), retourner, « je savais » ou non, la carte revient le lendemain dans « À réviser » ; un super exercice (`/super/<id>`) rendu, score et corrigés, passage enregistré ; en relire quelques-uns avec figure sur téléphone (G011, G021, C034).
+7. Correction algébrique en ligne (`corriger` version 12) : « 5 + 3x » accepté pour 3x + 5 quand la forme est réduite, « (x+3)(x-3) » pour une factorisation, « x >= -4 », « ±7 ».
 8. Écrans d'engagement : série qui pardonne, bilan « niveau 2 → 4 », fin de journée.
 
-**À arbitrer par Gauthier (21 octobre 2026) :**
+**À arbitrer par Gauthier (20 octobre 2026) :**
 - **Étape 7, 7 points** (détail et recommandations dans `_travail/etape7_dag_F.md`, section 10) : 1. programme de calcul (B054) et distributivité numérique (B055) en B ; 2. numérotation F (garder les identifiants du v1, ou renuméroter maintenant, gratuit) ; 3. un petit complément cycle 3 (pensée algébrique du CM1 à la 6e, absente du DAG) ; 4. découpage (double distributivité en 3e, x² = a en F, deux cartes courtes) ; 5. ordre de rédaction (les 9 nœuds directs et 2 partiels tout de suite, les nœuds d'expressions maintenant que la correction est prête) ; 6. liens B049 ← B055 et B051 ← B054 (retrait de B049 ← B011) ; 7. validateur : contrôler x² après une lettre et ajouter ≤ ≥ ⩽ ⩾ à partir de F031.
 - **Super exercices : que bloquent-ils ?** Recommandation : la réussite du super exercice fait passer la compétence porteuse au niveau 5 (complètement acquise, plus de contrôle), sans bloquer le reste du graphe ; option plus stricte : bloquer les compétences de la classe suivante qui en dépendent.
 - **Engagement :** rythme choisi par l'élève (migration, coût moyen) et rappel par email au parent (Edge Function, Cron, coût gros) : à lancer ou à repousser au sprint 4.
