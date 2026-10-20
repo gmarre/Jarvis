@@ -365,16 +365,9 @@ export default function ProfilePage() {
                   checked={profile.partage_progression_prof}
                   onChange={(value) => updateProfile({ partage_progression_prof: value })}
                 />
-                <Toggle
-                  label="Envoyer un résumé hebdo au parent"
-                  checked={profile.resume_hebdo_parent}
-                  onChange={(value) => updateProfile({ resume_hebdo_parent: value })}
-                />
-                <Toggle
-                  label="Rappels de révision"
-                  checked={profile.rappels_revision}
-                  onChange={(value) => updateProfile({ rappels_revision: value })}
-                />
+                {/* « Résumé hebdo au parent » et « Rappels de révision » reviendront
+                    avec leur envoi (sprint 4 et rappels par email) : un reglage
+                    qui n'envoie rien est un texte mensonger (regle 2). */}
               </div>
 
               <p className="mt-4 text-[11px] leading-relaxed text-ink-faint">

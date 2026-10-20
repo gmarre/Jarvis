@@ -1,11 +1,11 @@
 import { useEffect, useMemo, useRef, useState } from 'react'
 import { Link, Navigate, useNavigate, useParams } from 'react-router-dom'
 
-import { getExercisesForSkill, getFlashcardsForSkill, getSkill } from '@/content'
+import { countUnlockedBy, getExercisesForSkill, getFlashcardsForSkill, getSkill } from '@/content'
 import { cn } from '@/lib/cn'
 import { exerciseLevelLabel } from '@/lib/exercise'
 import { formatDateLong, formatDuration } from '@/lib/format'
-import { controleDu, exerciceDeControle } from '@/lib/maitrise'
+import { controleDu, exerciceDeControle, type Niveau } from '@/lib/maitrise'
 import { AnswerInput } from '@/components/exercise/AnswerInput'
 import { ExerciseFigure } from '@/components/exercise/ExerciseFigure'
 import { RecettePanel } from '@/components/recette/RecettePanel'
@@ -14,6 +14,7 @@ import { Badge } from '@/components/ui/Badge'
 import { Button, ButtonLink } from '@/components/ui/Button'
 import { Card } from '@/components/ui/Card'
 import { EmptyState, Level } from '@/components/ui/Misc'
+import { NiveauMaitrise } from '@/components/ui/NiveauMaitrise'
 import { RichText } from '@/components/ui/RichText'
 import { IconCheck, IconClose, IconHint } from '@/components/ui/icons'
 import { useAuthenticatedSession, type AnswerResult } from '@/state/session'
@@ -57,6 +58,8 @@ function ExerciseSession({ skillId, onReprendre }: { skillId: string; onReprendr
     const entree = session.progress[skillId]
     return entree !== undefined && controleDu(entree, new Date())
   })
+  /** Niveau a l'ouverture, pour montrer au bilan ce que la seance a change. */
+  const [niveauAvant] = useState<Niveau>(() => (session.progress[skillId]?.niveau ?? 0) as Niveau)
   const exercises = useMemo(() => {
     const tous = getExercisesForSkill(skillId)
     if (!modeControle) return tous
@@ -162,6 +165,9 @@ function ExerciseSession({ skillId, onReprendre }: { skillId: string; onReprendr
         descendTo={descendTo}
         mindmapId={skill.mindmap_id}
         defiSkillId={getFlashcardsForSkill(skill.id).length > 0 ? skill.id : null}
+        niveauAvant={niveauAvant}
+        niveauApres={(session.progress[skillId]?.niveau ?? niveauAvant) as Niveau}
+        debloque={countUnlockedBy(skill.id)}
         dernier={dernier}
         onReprendre={onReprendre}
       />
@@ -350,6 +356,9 @@ function SessionSummary({
   descendTo,
   mindmapId,
   defiSkillId,
+  niveauAvant,
+  niveauApres,
+  debloque,
   dernier,
   onReprendre,
 }: {
@@ -360,6 +369,10 @@ function SessionSummary({
   mindmapId: string | null
   /** Competence dont les cartes defi sont a proposer ensuite, ou null. */
   defiSkillId: string | null
+  niveauAvant: Niveau
+  niveauApres: Niveau
+  /** Competences debloquees en cascade une fois celle-ci acquise. */
+  debloque: number
   dernier: AnswerResult | null
   onReprendre: () => void
 }) {
@@ -382,6 +395,23 @@ function SessionSummary({
         <h1 className="font-display text-[24px] font-medium leading-snug text-ink sm:text-[28px]">
           {skillLabel}
         </h1>
+
+        {/* Ce qui compte d'abord : la competence, pas le score (etude
+            engagement, sprint 2 point 8). */}
+        <div className="mx-auto mt-4 flex flex-wrap items-center justify-center gap-2.5 text-[13px] font-semibold text-ink">
+          <NiveauMaitrise niveau={niveauApres} />
+          <span>
+            {niveauApres === niveauAvant
+              ? `Niveau ${niveauApres} sur 5`
+              : `Niveau ${niveauAvant} → ${niveauApres} sur 5`}
+          </span>
+        </div>
+        {mastered && debloque > 0 && (
+          <p className="mt-1.5 text-[12.5px] font-medium text-mastered-700">
+            Elle ouvre la voie à {debloque} compétence{debloque > 1 ? 's' : ''}.
+          </p>
+        )}
+
         <p className="mx-auto mt-3 max-w-[420px] text-[13.5px] leading-relaxed text-ink-subtle">
           {score.correct} bonne{score.correct > 1 ? 's' : ''} réponse
           {score.correct > 1 ? 's' : ''} sur {score.total}.{' '}
@@ -394,7 +424,7 @@ function SessionSummary({
             : dernier?.controle === 'rate'
               ? 'Cette compétence a besoin d’être consolidée : elle revient dans ton travail, un exercice de maîtrise réussi la validera de nouveau.'
               : mastered
-                ? 'Niveau 4 sur 5 : la compétence passe au vert et débloque la suite. Un premier contrôle dans 3 jours vérifiera qu’elle tient.'
+                ? 'La compétence passe au vert. Un premier contrôle dans 3 jours vérifiera qu’elle tient : la retrouver après quelques jours, c’est ce qui la fixe.'
                 : "Ce n'est pas encore solide, on y revient bientôt."}
         </p>
         {dernier?.controle === 'rate' && (

@@ -30,7 +30,8 @@ export function FocusFrame({
         <button
           type="button"
           onClick={onQuit}
-          aria-label="Quitter"
+          aria-label="Quitter : tes réponses sont déjà enregistrées"
+          title="Quitter : tes réponses sont déjà enregistrées"
           className="grid h-10 w-10 shrink-0 place-items-center rounded-[10px] border border-line text-ink-muted transition hover:bg-muted"
         >
           <IconClose size={17} />

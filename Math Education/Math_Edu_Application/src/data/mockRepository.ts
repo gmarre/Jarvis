@@ -99,7 +99,7 @@ function profileFromSignUp(input: SignUpInput): Profile {
     cree_le: now,
     partage_progression_prof: true,
     resume_hebdo_parent: false,
-    rappels_revision: true,
+    rappels_revision: false,
     abonnement: null,
     chemins_choisis: [],
   }

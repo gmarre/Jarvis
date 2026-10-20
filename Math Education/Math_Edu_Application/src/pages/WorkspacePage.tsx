@@ -33,7 +33,9 @@ export default function WorkspacePage() {
   )
 
   return (
-    <AppShell railBottom={<StreakCard days={serie.jours} today={serie.aujourdhui} />}>
+    <AppShell
+      railBottom={<StreakCard days={serie.jours} today={serie.aujourdhui} surSept={serie.surSept} />}
+    >
       <PageBody>
         <PageHeader
           title={`Bonjour ${profile.prenom}`}
@@ -214,21 +216,21 @@ function ContentComingSoon({ nextSkill }: { nextSkill: Skill | null }) {
 }
 
 /** Etat vide de la maquette 1h : la journee est faite. */
+/**
+ * Plan du jour fini : l'ecran invite a s'arreter (etude engagement, sprint 2
+ * point 8 ; code de conception adapte a l'age, standards 5 et 13). Continuer
+ * reste possible, en lien discret, sans reproche ni recompense.
+ */
 function DayDone() {
   return (
     <Card tone="flat" className="py-10">
       <EmptyState
         tone="mastered"
-        title="Rien à réviser aujourd'hui"
-        description="Tes cartes sont à jour et ton exercice du jour est fait. Prochaine révision : demain matin."
-        action={
-          <ButtonLink to="/parcours" variant="secondary" size="lg">
-            Prendre de l'avance
-          </ButtonLink>
-        }
+        title="C'est fini pour aujourd'hui"
+        description="Tes révisions sont à jour et ton exercice du jour est fait. Tu peux t'arrêter là : la suite t'attend demain matin."
         secondaryAction={
           <Link to="/parcours" className="text-[13px] font-semibold text-accent">
-            Voir mon parcours
+            Prendre de l'avance sur mon parcours
           </Link>
         }
       />

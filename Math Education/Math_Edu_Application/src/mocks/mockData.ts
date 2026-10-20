@@ -256,7 +256,7 @@ export const profMarcProfile: Profile = {
   cree_le: '2026-01-08T09:00:00.000Z',
   partage_progression_prof: true,
   resume_hebdo_parent: false,
-  rappels_revision: true,
+  rappels_revision: false,
   abonnement: null,
   chemins_choisis: [],
 }

@@ -3,9 +3,11 @@ import { libelleNiveau, type Niveau } from '@/lib/maitrise'
 
 // Niveau de maitrise sur 5, en cinq ronds (sprint 2, point 2). Le texte
 // accessible dit le niveau et son sens : la couleur seule ne suffit pas.
+// Pas de rouge pour le niveau 3 (competence rouverte) : il ne doit pas se
+// lire comme une retrogradation (etude engagement, sprint 2 point 8).
 
 export function NiveauMaitrise({ niveau, className }: { niveau: Niveau; className?: string }) {
-  const teinte = niveau >= 4 ? 'bg-mastered' : niveau === 3 ? 'bg-wrong' : 'bg-progress'
+  const teinte = niveau >= 4 ? 'bg-mastered' : 'bg-progress'
   return (
     <span
       role="img"

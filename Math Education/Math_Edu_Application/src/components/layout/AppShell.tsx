@@ -194,8 +194,20 @@ export function AppShell({ children, railTop, railBottom }: AppShellProps) {
  * calculee depuis les tentatives (lib/serie.ts). Le texte encourage sans
  * jamais menacer : pas de « tu vas perdre ta serie ».
  */
-export function StreakCard({ days, today }: { days: number; today: boolean }) {
-  const titre = days === 0 ? 'Pas encore de série' : days === 1 ? '1 jour de suite' : `${days} jours de suite`
+export function StreakCard({
+  days,
+  today,
+  surSept,
+}: {
+  days: number
+  today: boolean
+  /** Jours travailles sur les 7 derniers (lib/serie.ts). */
+  surSept?: number
+}) {
+  // Une serie pardonne un jour manque (lib/serie.ts) : on parle de jours de
+  // travail, pas de jours « de suite ».
+  const titre =
+    days === 0 ? 'Pas encore de série' : days === 1 ? '1 jour de travail' : `${days} jours de travail`
   const message =
     days === 0
       ? 'Un exercice aujourd’hui lance ta série.'
@@ -209,6 +221,11 @@ export function StreakCard({ days, today }: { days: number; today: boolean }) {
         {titre}
       </div>
       <p className="text-[11.5px] leading-relaxed text-ink-subtle">{message}</p>
+      {surSept !== undefined && surSept > 0 && (
+        <p className="mt-1.5 text-[11.5px] font-medium leading-relaxed text-ink-muted">
+          {surSept} jour{surSept > 1 ? 's' : ''} sur les 7 derniers
+        </p>
+      )}
     </div>
   )
 }

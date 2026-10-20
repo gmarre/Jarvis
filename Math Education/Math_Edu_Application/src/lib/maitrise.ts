@@ -181,7 +181,7 @@ export function libelleNiveau(niveau: Niveau): string {
     'Pas encore travaillée',
     'Un exercice réussi',
     'Deux exercices réussis',
-    'À retravailler',
+    'À consolider',
     'Acquise',
     'Complètement acquise',
   ][niveau]
