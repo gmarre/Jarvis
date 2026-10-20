@@ -2,6 +2,7 @@ import { useMemo } from 'react'
 
 import { cn } from '@/lib/cn'
 import { melanger } from '@/lib/melange'
+import { basculerSigne, proposeLeSigne } from '@/lib/saisie'
 import { RichText } from '@/components/ui/RichText'
 import type { PublicExercise } from '@/types/content'
 
@@ -148,6 +149,18 @@ export function AnswerInput({
           </span>
         )}
       </div>
+      {exercise.type === 'numerique' && proposeLeSigne(exercise.skill_id) && (
+        <button
+          type="button"
+          disabled={disabled}
+          onClick={() => onChange(basculerSigne(value))}
+          aria-label="Ajouter ou retirer le signe moins"
+          className="mt-2.5 inline-flex min-h-[44px] items-center gap-2 rounded-[10px] border border-line bg-surface px-4 text-[15px] font-semibold text-ink-muted transition hover:bg-muted"
+        >
+          <span aria-hidden className="font-mono text-[18px]">±</span>
+          Signe moins
+        </button>
+      )}
     </div>
   )
 }
