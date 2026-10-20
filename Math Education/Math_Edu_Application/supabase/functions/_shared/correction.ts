@@ -306,6 +306,20 @@ function matchesAccepted(exercise: ExerciceACorriger, raw: string): boolean {
   return accepted.some((value) => normalizeLoose(String(value)) === normalizeLoose(raw))
 }
 
+/**
+ * Espace fine insecable (U+202F) entre les tranches de trois chiffres de la
+ * partie entiere, comme dans les enonces : « 1 000 000 » plutot que
+ * « 1000000 » (releve en redaction, etape 6). Ecrite par son code.
+ */
+function milliers(nombre: string): string {
+  const [entiere, decimale] = nombre.split('.')
+  const signe = entiere.startsWith('-') ? '-' : ''
+  const chiffres = entiere.replace('-', '')
+  if (chiffres.length < 4) return nombre
+  const groupe = chiffres.replace(/\B(?=(\d{3})+(?!\d))/g, String.fromCharCode(0x202f))
+  return signe + groupe + (decimale !== undefined ? `.${decimale}` : '')
+}
+
 /** Reponse attendue en clair, pour l'ecran de correction. */
 export function formatExpected(exercise: ExerciceACorriger): string {
   const value = exercise.answer.value
@@ -330,7 +344,7 @@ export function formatExpected(exercise: ExerciceACorriger): string {
   // relatifs (etape 5). Ecrit par son code, invisible a la relecture.
   const shown =
     typeof value === 'number'
-      ? nombre.replace('.', ',').replace(/^-/, String.fromCharCode(0x2212))
+      ? milliers(nombre).replace('.', ',').replace(/^-/, String.fromCharCode(0x2212))
       : nombre
   // Le degre se colle au nombre (« 120° »), toutes les autres unites
   // s'en separent par une espace (« 12 cm »).

@@ -434,3 +434,14 @@ describe('checkAnswer, fractions relatives et signe de division (etape 6)', () =
   })
 })
 
+describe('formatExpected, grands nombres', () => {
+  it('separe les milliers par une espace fine', () => {
+    const fine = String.fromCharCode(0x202f)
+    const base = byType('numerique')
+    expect(formatExpected({ ...base, answer: { value: 1000000 } })).toBe(`1${fine}000${fine}000`)
+    expect(formatExpected({ ...base, answer: { value: 2024.5 } })).toBe(`2${fine}024,5`)
+    expect(formatExpected({ ...base, answer: { value: -12345 } })).toBe(`${String.fromCharCode(0x2212)}12${fine}345`)
+    expect(formatExpected({ ...base, answer: { value: 999 } })).toBe('999')
+  })
+})
+
