@@ -163,3 +163,25 @@ describe('mode numerique inchange', () => {
     expect(checkAnswer(texte, '3x+5').isCorrect).toBe(true)
   })
 })
+
+describe('factorisation complete (etape 7, releve des redacteurs)', () => {
+  it('refuse un facteur qui se factorise encore', () => {
+    tousJustes(exo('3x(2x − 3)', 'factorisee'), ['3x(2x-3)', 'x×3×(2x-3)', '(2x-3)*3x'])
+    tousFaux(exo('3x(2x − 3)', 'factorisee'), ['3(2x² − 3x)', 'x(6x-9)', '6x²-9x'])
+    tousJustes(exo('2(x + 3)', 'factorisee'), ['2(x+3)', '(3+x)×2'])
+    tousFaux(exo('2(x + 3)', 'factorisee'), ['1(2x+6)', '(2x+6)'])
+  })
+  it('garde les identites remarquables et les carres', () => {
+    tousJustes(exo('(2x − 3)(2x + 3)', 'factorisee'), ['(2x+3)(2x-3)'])
+    tousJustes(exo('(x + 5)²', 'factorisee'), ['(5+x)^2'])
+    tousFaux(exo('4(x + 1)²', 'factorisee'), ['(2x+2)^2'])
+  })
+})
+
+describe('unite tapee apres une expression', () => {
+  it('l unite attendue est retiree, une autre unite refusee', () => {
+    const e = exo('2x + 4', 'expression', { unit: '€' })
+    tousJustes(e, ['2x + 4 €', '2x+4', '4 + 2x euros'])
+    tousFaux(e, ['2x + 4 cm', '2x €'])
+  })
+})

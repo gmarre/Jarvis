@@ -604,13 +604,62 @@ function formeReduite(n: Noeud, texte: string): boolean {
   return true
 }
 
-/** Forme factorisee : un produit (ou une puissance) dont un facteur contient une lettre. */
+/**
+ * Coefficients entiers d'un polynome d'une lettre (degre 6 au plus), du terme
+ * constant au plus haut degre, ou null s'ils ne sont pas tous entiers. Calcules
+ * par interpolation en 0, 1, ..., 6 (systeme de Vandermonde).
+ */
+function coefficientsEntiers(n: Noeud, lettre: string): number[] | null {
+  const taille = 7
+  const lignes = Array.from({ length: taille }, (_, k) => {
+    const ligne = Array.from({ length: taille }, (_, j) => k ** j)
+    ligne.push(evaluer(n, { [lettre]: k }))
+    return ligne
+  })
+  for (let c = 0; c < taille; c++) {
+    let pivot = c
+    for (let l = c + 1; l < taille; l++) if (Math.abs(lignes[l][c]) > Math.abs(lignes[pivot][c])) pivot = l
+    ;[lignes[c], lignes[pivot]] = [lignes[pivot], lignes[c]]
+    for (let l = 0; l < taille; l++) {
+      if (l === c) continue
+      const r = lignes[l][c] / lignes[c][c]
+      for (let j = c; j <= taille; j++) lignes[l][j] -= r * lignes[c][j]
+    }
+  }
+  const coefficients = lignes.map((ligne, c) => ligne[taille] / ligne[c])
+  if (coefficients.some((x) => !Number.isFinite(x) || Math.abs(x - Math.round(x)) > 1e-6)) return null
+  return coefficients.map((x) => Math.round(x))
+}
+
+function pgcd(a: number, b: number): number {
+  return b === 0 ? Math.abs(a) : pgcd(b, a % b)
+}
+
+/**
+ * Un facteur a plusieurs termes qui se factorise encore : ses coefficients ont
+ * un diviseur commun (2x + 6), ou la lettre est commune a tous ses termes
+ * (2x² − 3x). « Factoriser » au college veut la factorisation complete :
+ * « 3(2x² − 3x) » et « 1(2x + 6) » ne sont pas acceptes (releve par les
+ * redacteurs de l'etape 7).
+ */
+function encoreFactorisable(f: Noeud): boolean {
+  const lettres = [...lettresDe(f)]
+  if (lettres.length !== 1) return false
+  const c = coefficientsEntiers(f, lettres[0])
+  if (!c) return false
+  const nonNuls = c.filter((x) => x !== 0)
+  if (nonNuls.length < 2) return false
+  return nonNuls.reduce(pgcd) > 1 || c[0] === 0
+}
+
+/** Forme factorisee : un produit (ou une puissance) dont un facteur contient une lettre, factorise completement. */
 function formeFactorisee(n: Noeud): boolean {
   let e = n
   while (e.t === 'neg') e = e.e
-  if (e.t === '^') return lettresDe(e.g).size > 0
+  if (e.t === '^') return lettresDe(e.g).size > 0 && !encoreFactorisable(e.g)
   if (e.t !== '*') return false
-  return facteurs(e).some((f) => lettresDe(f).size > 0)
+  const fs = facteurs(e)
+  return fs.some((f) => lettresDe(f).size > 0) && !fs.some(encoreFactorisable)
 }
 
 const OPERATEURS_INEGALITE: [string[], string][] = [
@@ -659,6 +708,21 @@ function lireSolutions(texte: string): number[] | null {
     if (double) valeurs.push(-v)
   }
   return valeurs.sort((a, b) => a - b)
+}
+
+/**
+ * « 2x + 4 € » pour une expression en euros : l'unite attendue, tapee a la fin,
+ * est retiree avant la lecture (releve par les redacteurs de l'etape 7). Une
+ * autre unite reste, et l'expression devient illisible : refusee.
+ */
+function sansUnite(raw: string, unit: string | null | undefined): string {
+  if (!unit) return raw
+  const texte = texteAlgebrique(raw)
+  const formes = [...formesUnite(unit)].sort((a, b) => b.length - a.length)
+  for (const forme of formes) {
+    if (forme && texte.endsWith(forme) && texte.length > forme.length) return texte.slice(0, -forme.length)
+  }
+  return raw
 }
 
 /** La saisie `raw` repond-elle a l'attendu `attendu`, sous la forme demandee ? */
@@ -745,8 +809,9 @@ function estJuste(exercise: ExerciceACorriger, raw: string): boolean {
       const forme = exercise.answer.forme
       if (forme) {
         const variables = exercise.answer.variables ?? ['x']
+        const saisie = sansUnite(raw, exercise.answer.unit)
         return [expectedValue, ...(exercise.answer.accepted ?? [])].some((attendu) =>
-          algebreJuste(forme, String(attendu), raw, variables, exercise.answer.tolerance ?? 0),
+          algebreJuste(forme, String(attendu), saisie, variables, exercise.answer.tolerance ?? 0),
         )
       }
       if (
