@@ -1,0 +1,85 @@
+{
+  "id": "SX-C002-01",
+  "skill_id": "C002",
+  "skill_ids": [
+    "C002",
+    "C001",
+    "A001"
+  ],
+  "school_level": "CE1",
+  "title": "La banderole de la kermesse",
+  "contexte": "Samedi, c'est la kermesse de l'école. Le stand des jeux ouvre l'après-midi.\n\nLina et Hugo peignent une grande banderole. Elle est partagée en parts égales : on la voit sur l'image.\n\nLina a déjà peint en bleu les parts coloriées.\n\nHugo va peindre 2 autres parts en rouge, juste à côté des parts bleues.\n\nEnsuite, les enfants colleront des étoiles sur les parts qui seront encore blanches.\n\nHugo a apporté 4 pinceaux dans son sac. La maîtresse prête un grand pot de colle.",
+  "image": "figures/SX-C002-01",
+  "duree_estimee_min": 8,
+  "questions": [
+    {
+      "key": "q1",
+      "skill_id": "A001",
+      "statement": "Sur l'image, combien de parts de la banderole sont encore blanches ?",
+      "type": "numerique",
+      "answer": {
+        "value": 7,
+        "unit": "parts"
+      },
+      "points": 2,
+      "solution_steps": [
+        "Les parts blanches sont celles qui ne sont pas coloriées.",
+        "On les compte une par une : 1, 2, 3, 4, 5, 6, 7.",
+        "**7 parts** sont encore blanches."
+      ],
+      "hint": "Regarde les parts qui ne sont pas coloriées."
+    },
+    {
+      "key": "q2",
+      "skill_id": "C001",
+      "statement": "Quelle fraction de la banderole Lina a-t-elle peinte en bleu ?",
+      "type": "qcm",
+      "choices": [
+        {
+          "key": "a",
+          "text": "$\\frac{1}{10}$",
+          "misconception": "L'élève écrit une seule part. Lina en a peint 3 : c'est 3 dixièmes."
+        },
+        {
+          "key": "b",
+          "text": "$\\frac{3}{10}$",
+          "misconception": null
+        },
+        {
+          "key": "c",
+          "text": "$\\frac{7}{10}$",
+          "misconception": "L'élève compte les parts blanches au lieu des parts peintes par Lina."
+        }
+      ],
+      "answer": {
+        "value": "b"
+      },
+      "points": 3,
+      "solution_steps": [
+        "On compte toutes les parts : la banderole a 10 parts égales. Chaque part est un dixième de la banderole.",
+        "Lina a peint 3 parts.",
+        "Elle a peint $\\frac{3}{10}$ de la banderole."
+      ],
+      "hint": "Compte toutes les parts, puis les parts coloriées."
+    },
+    {
+      "key": "q3",
+      "skill_id": "C002",
+      "statement": "Hugo a fini de peindre. On écrit la fraction de la banderole qui est peinte, en bleu ou en rouge. Quel est le numérateur de cette fraction ?",
+      "type": "numerique",
+      "answer": {
+        "value": 5
+      },
+      "points": 4,
+      "solution_steps": [
+        "Le numérateur est le nombre de parts peintes.",
+        "Lina a peint 3 parts, Hugo en peint 2 autres. On compte à partir de 3 : 4, 5.",
+        "5 parts sont peintes sur 10 : la fraction est $\\frac{5}{10}$, et son numérateur est **5**.",
+        "Attention : 10 est le nombre total de parts, ce n'est pas le numérateur."
+      ],
+      "hint": "Le numérateur compte des parts : lesquelles ?"
+    }
+  ],
+  "review_status": "brouillon",
+  "programme_ref": "Cycle 2, Cours élémentaire première année, Les fractions : « le numérateur le nombre de parts coloriées »"
+}

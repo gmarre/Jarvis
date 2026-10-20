@@ -1,0 +1,97 @@
+{
+  "id": "SX-C018-01",
+  "skill_id": "C018",
+  "skill_ids": [
+    "C018",
+    "C015",
+    "D006"
+  ],
+  "school_level": "4e",
+  "title": "Le mémo des inverses",
+  "contexte": "Au club de maths du collège, Yasmine et Hugo jouent au « mémo des inverses ». 14 cartes sont posées face cachée. À son tour, un joueur retourne deux cartes. Si les deux nombres sont inverses l'un de l'autre, c'est-à-dire si leur produit vaut 1, il gagne la paire et marque 2 points ; sinon, il les repose. La partie dure 20 minutes.\n\nVoici les nombres écrits sur les 14 cartes, une seule fois chacun :\n$\\frac{3}{8}$ ; $-4$ ; $0{,}25$ ; $-\\frac{2}{7}$ ; $1{,}25$ ; $\\frac{8}{3}$ ; $0$ ; $-10$ ; $\\frac{2}{7}$ ; $0{,}8$ ; $1$ ; $-\\frac{7}{2}$ ; $4$ ; $-0{,}1$.",
+  "image": null,
+  "duree_estimee_min": 15,
+  "questions": [
+    {
+      "key": "q1",
+      "skill_id": "C015",
+      "statement": "Hugo retourne les cartes $\\frac{2}{7}$ et $-\\frac{7}{2}$. Quel est le produit de ces deux nombres ?",
+      "type": "numerique",
+      "answer": {
+        "value": -1
+      },
+      "points": 2,
+      "solution_steps": [
+        "$\\frac{2}{7} \\times \\left(-\\frac{7}{2}\\right) = -\\frac{2 \\times 7}{7 \\times 2} = -\\frac{14}{14} = -1$.",
+        "Un nombre positif multiplié par un nombre négatif donne un nombre négatif.",
+        "Le produit vaut **−1**, pas 1 : Hugo ne gagne pas la paire. $\\frac{2}{7}$ et $-\\frac{7}{2}$ ne sont pas inverses."
+      ],
+      "hint": "Attention au signe du produit."
+    },
+    {
+      "key": "q2",
+      "skill_id": "D006",
+      "statement": "Yasmine retourne les cartes 1,25 et 0,8. Calcule leur produit.",
+      "type": "numerique",
+      "answer": {
+        "value": 1
+      },
+      "points": 2,
+      "solution_steps": [
+        "On calcule d'abord 125 × 8 = 1 000.",
+        "1,25 a deux chiffres après la virgule, 0,8 en a un : le produit en a trois. 1,25 × 0,8 = 1,000 = 1.",
+        "Le produit vaut **1** : 1,25 et 0,8 sont inverses, Yasmine gagne la paire."
+      ],
+      "hint": "Multiplie sans les virgules, puis place la virgule."
+    },
+    {
+      "key": "q3",
+      "skill_id": "C018",
+      "statement": "Quel nombre faudrait-il écrire sur une nouvelle carte pour que la carte $-4$ forme une paire ? Écris-le sous la forme numérateur/dénominateur, avec son signe.",
+      "type": "texte",
+      "answer": {
+        "value": "−1/4",
+        "accepted": [
+          "-1/4",
+          "- 1/4",
+          "1/-4",
+          "(-1)/4",
+          "1/(-4)",
+          "-(1/4)",
+          "-2/8",
+          "-0,25",
+          "-0.25",
+          "−0,25"
+        ]
+      },
+      "points": 3,
+      "solution_steps": [
+        "L'inverse de $-4$ est le nombre qui, multiplié par $-4$, donne 1 : c'est $\\frac{1}{-4}$, c'est-à-dire $-\\frac{1}{4}$.",
+        "Vérification : $(-4) \\times \\left(-\\frac{1}{4}\\right) = \\frac{4}{4} = 1$.",
+        "Attention : l'inverse garde le signe. L'opposé de −4 est 4, et 0,25 donnerait un produit égal à −1.",
+        "Il faut écrire $-\\frac{1}{4}$ sur la nouvelle carte."
+      ],
+      "hint": "Deux nombres inverses ont un produit égal à 1."
+    },
+    {
+      "key": "q4",
+      "skill_id": "C018",
+      "statement": "Combien de paires peut-on gagner en tout avec ces 14 cartes ?",
+      "type": "numerique",
+      "answer": {
+        "value": 5,
+        "unit": "paires"
+      },
+      "points": 4,
+      "solution_steps": [
+        "On cherche l'inverse de chaque carte parmi les autres cartes.",
+        "$\\frac{3}{8}$ et $\\frac{8}{3}$ ; $0{,}25$ et $4$ ; $-\\frac{2}{7}$ et $-\\frac{7}{2}$ ; $1{,}25$ et $0{,}8$ ; $-10$ et $-0{,}1$ : 5 paires.",
+        "Restent seules : $-4$ (son inverse $-\\frac{1}{4}$ n'est pas dans le jeu), $\\frac{2}{7}$ (son inverse $\\frac{7}{2}$ n'y est pas), $0$ (il n'a pas d'inverse) et $1$ (il est son propre inverse, mais il n'y a qu'une carte 1).",
+        "On peut gagner **5 paires**."
+      ],
+      "hint": "Pour chaque carte, cherche le nombre qui donne 1 quand on le multiplie par elle."
+    }
+  ],
+  "review_status": "brouillon",
+  "programme_ref": "Cycle 4, classe de 4e, Nombres et calculs, Nombres rationnels, Objectifs d'apprentissage : « Définir l'inverse d'un nombre et connaitre sa notation. »"
+}

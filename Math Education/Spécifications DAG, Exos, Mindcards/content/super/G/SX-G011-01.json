@@ -1,0 +1,120 @@
+{
+  "id": "SX-G011-01",
+  "skill_id": "G011",
+  "skill_ids": [
+    "G011",
+    "A002"
+  ],
+  "school_level": "CE2",
+  "title": "Les dés d'Inès",
+  "contexte": "Pour la kermesse, Inès fabrique des dés en carton. Pour un dé, elle découpe un assemblage de six carrés pareils, puis elle le plie et colle les bords.\n\nSur le quadrillage, elle a dessiné quatre assemblages : A, B, C et D. L'assemblage D est un patron de cube : Inès a déjà écrit un nombre sur chacune de ses faces, sans suivre les règles des vrais dés.\n\nElle a fabriqué 47 dés. Elle les range dans des boîtes de 10 dés, et chaque boîte coûte 3 euros. La kermesse a lieu un samedi de juin.",
+  "image": "figures/SX-G011-01",
+  "duree_estimee_min": 15,
+  "questions": [
+    {
+      "key": "q1",
+      "skill_id": "G011",
+      "statement": "Sur le dessin du patron D, quel nombre est écrit sur la face accrochée à la face 3 ?",
+      "type": "numerique",
+      "answer": {
+        "value": 1,
+        "accepted": [
+          "un",
+          "le 1",
+          "la face 1",
+          "face 1",
+          "le nombre 1"
+        ]
+      },
+      "points": 1,
+      "solution_steps": [
+        "Sur le quadrillage, la face 3 est le carré en haut à gauche du patron D.",
+        "Un seul carré touche la face 3 par un côté : celui qui porte le nombre **1**. Les faces 2, 4, 5 et 6 ne la touchent pas sur le dessin."
+      ],
+      "hint": null
+    },
+    {
+      "key": "q2",
+      "skill_id": "G011",
+      "statement": "Parmi les assemblages A, B et C, lequel est un patron de cube ?",
+      "type": "qcm",
+      "choices": [
+        {
+          "key": "a",
+          "text": "L'assemblage A",
+          "misconception": "L'élève compte 6 carrés et s'arrête là : en pliant A, deux faces se superposent."
+        },
+        {
+          "key": "b",
+          "text": "L'assemblage B",
+          "misconception": "L'élève reconnaît une rangée de 4 carrés avec 2 carrés accrochés, comme dans un patron, sans regarder leur place : les deux carrés accrochés du même côté tombent tous les deux sur le dessus du cube."
+        },
+        {
+          "key": "c",
+          "text": "L'assemblage C",
+          "misconception": null
+        }
+      ],
+      "answer": {
+        "value": "c"
+      },
+      "points": 3,
+      "solution_steps": [
+        "Les trois assemblages ont 6 carrés pareils : il faut regarder comment ils sont placés.",
+        "A : deux rangées de 3 carrés. En pliant, les carrés de la rangée du bas viennent se poser sur des faces déjà prises : des faces se superposent, et le cube ne peut pas se fermer.",
+        "B : la rangée de 4 carrés fait le tour du cube. Les deux autres carrés sont accrochés du même côté de la rangée : en pliant, ils tombent tous les deux sur le dessus, et il n'y a pas de dessous.",
+        "C : la rangée de 4 carrés fait le tour du cube. Un carré est accroché au-dessus de la rangée, l'autre au-dessous : l'un ferme le dessus, l'autre le dessous. **L'assemblage C** est un patron de cube."
+      ],
+      "hint": "Imagine le pliage : deux faces ne doivent jamais tomber au même endroit."
+    },
+    {
+      "key": "q3",
+      "skill_id": "A002",
+      "statement": "Combien de boîtes faut-il à Inès pour ranger tous ses dés ?",
+      "type": "numerique",
+      "answer": {
+        "value": 5,
+        "unit": "boîtes",
+        "accepted": [
+          "cinq",
+          "cinq boîtes",
+          "5 boites"
+        ]
+      },
+      "points": 3,
+      "solution_steps": [
+        "47, c'est 4 dizaines et 7 unités : 4 boîtes de 10 dés sont pleines.",
+        "Il reste 7 dés : il faut une boîte de plus pour eux, même si elle n'est pas pleine.",
+        "Il faut **5 boîtes**. Répondre 4 oublie les 7 dés qui restent."
+      ],
+      "hint": "Que fait Inès des dés qui ne remplissent pas une boîte entière ?"
+    },
+    {
+      "key": "q4",
+      "skill_id": "G011",
+      "statement": "Inès plie le patron D. Quel nombre sera sur la face opposée à la face 3, de l'autre côté du dé ?",
+      "type": "numerique",
+      "answer": {
+        "value": 6,
+        "accepted": [
+          "six",
+          "le 6",
+          "la face 6",
+          "face 6",
+          "le nombre 6"
+        ]
+      },
+      "points": 4,
+      "solution_steps": [
+        "Pose la face 6 au sol : c'est le dessous du dé.",
+        "Les faces 2 et 4, collées de chaque côté de la face 6, se relèvent : ce sont deux côtés du dé, face à face.",
+        "La face 5, collée à la face 4, et la face 1, collée à la face 2, se relèvent à leur tour : elles ferment l'avant et l'arrière.",
+        "Il reste la face 3, collée à la face 1 (à sa gauche sur le dessin) : quand la face 1 est relevée, la face 3 se rabat pour faire le dessus du dé. Le dessus est opposé au dessous : la face opposée à la face 3 porte le nombre **6**.",
+        "Attention : la face 1 touche la face 3, et deux faces qui se touchent ne sont jamais opposées. Sur un vrai dé, 3 serait opposé à 4, mais Inès n'a pas suivi cette règle."
+      ],
+      "hint": "Pose une face au sol, puis relève les autres une par une."
+    }
+  ],
+  "review_status": "brouillon",
+  "programme_ref": "Cycle 2, Cours élémentaire deuxième année, Espace et géométrie, Les solides : « L'élève sait dire si un assemblage de polygones est ou non un patron d'un cube en argumentant sur le nombre de faces, la nature des faces et la position des faces les unes par rapport aux autres. »"
+}

@@ -1,0 +1,108 @@
+{
+  "id": "SX-C029-01",
+  "skill_id": "C029",
+  "skill_ids": [
+    "C029",
+    "A012",
+    "B008"
+  ],
+  "school_level": "CM1",
+  "title": "Le spectacle du club théâtre",
+  "contexte": "Le club théâtre de l'école joue son spectacle de fin d'année devant 180 spectateurs. Le club compte 12 élèves. Mme Martin, qui l'anime, prépare tout.\n\n**Les affiches.** Une grande feuille cartonnée donne 8 affiches. Il faut 35 affiches, c'est-à-dire $\\frac{35}{8}$ de feuille.\n\n**Les décors.** Un pot de peinture permet de peindre 3 panneaux. Les élèves veulent peindre 17 panneaux : il leur faut $\\frac{17}{3}$ de pot. Mme Martin a 5 pots de peinture dans le placard.\n\n**La salle.** Les spectateurs s'assoient sur des bancs de 7 places. Personne ne reste debout.",
+  "image": null,
+  "duree_estimee_min": 15,
+  "questions": [
+    {
+      "key": "q1",
+      "skill_id": "B008",
+      "statement": "Combien de bancs faut-il installer, au minimum, pour que tous les spectateurs soient assis ?",
+      "type": "numerique",
+      "answer": {
+        "value": 26,
+        "unit": "bancs"
+      },
+      "points": 3,
+      "solution_steps": [
+        "On cherche combien de fois 7 places tiennent dans 180 : on pose la division euclidienne de 180 par 7.",
+        "180 = 7 × 25 + 5 : 25 bancs complets, et il reste 5 spectateurs.",
+        "Ces 5 spectateurs ont besoin d'un banc de plus : 25 + 1 = 26.",
+        "Il faut **26 bancs**. Attention : 25 bancs laisseraient 5 personnes debout."
+      ],
+      "hint": "Que faire des spectateurs qui restent après les bancs complets ?"
+    },
+    {
+      "key": "q2",
+      "skill_id": "A012",
+      "statement": "Mme Martin compte les affiches de 8 en 8. Quel est le plus grand multiple de 8 inférieur à 35 ?",
+      "type": "numerique",
+      "answer": {
+        "value": 32
+      },
+      "points": 2,
+      "solution_steps": [
+        "Les multiples de 8 : 8 ; 16 ; 24 ; 32 ; 40…",
+        "32 < 35 < 40.",
+        "Le plus grand multiple de 8 inférieur à 35 est **32**."
+      ],
+      "hint": "Récite la table de 8."
+    },
+    {
+      "key": "q3",
+      "skill_id": "C029",
+      "statement": "Encadre $\\frac{35}{8}$ par deux nombres entiers consécutifs. Écris ta réponse sous la forme entier < fraction < entier.",
+      "type": "texte",
+      "answer": {
+        "value": "4 < 35/8 < 5",
+        "accepted": [
+          "4<35/8<5",
+          "4 < 35 / 8 < 5",
+          "4< 35/8 <5",
+          "4 <35/8< 5",
+          "4 < \\frac{35}{8} < 5"
+        ]
+      },
+      "points": 4,
+      "solution_steps": [
+        "On écrit les entiers proches en huitièmes : 4 = $\\frac{32}{8}$ et 5 = $\\frac{40}{8}$.",
+        "32 < 35 < 40, donc $\\frac{32}{8} < \\frac{35}{8} < \\frac{40}{8}$.",
+        "Donc 4 < $\\frac{35}{8}$ < 5 : il faut un peu plus de 4 feuilles, et Mme Martin doit en prendre 5."
+      ],
+      "hint": "Écris des nombres entiers sous forme de huitièmes."
+    },
+    {
+      "key": "q4",
+      "skill_id": "C029",
+      "statement": "Mme Martin a-t-elle assez de peinture dans le placard pour les décors ?",
+      "type": "qcm",
+      "choices": [
+        {
+          "key": "a",
+          "text": "Oui, car dans 17, il y a 5 fois 3 : il faut 5 pots.",
+          "misconception": "L'élève garde le quotient et oublie le reste : 17 = 3 × 5 + 2, il reste 2 panneaux à peindre."
+        },
+        {
+          "key": "b",
+          "text": "Oui, car $\\frac{17}{3}$ est plus petit que 5.",
+          "misconception": "L'élève se trompe d'encadrement : 5 = $\\frac{15}{3}$, et $\\frac{17}{3}$ est plus grand."
+        },
+        {
+          "key": "c",
+          "text": "Non, car $\\frac{17}{3}$ est entre 5 et 6 : il faut un 6e pot.",
+          "misconception": null
+        }
+      ],
+      "answer": {
+        "value": "c"
+      },
+      "points": 3,
+      "solution_steps": [
+        "Il faut $\\frac{17}{3}$ de pot. On encadre : 5 = $\\frac{15}{3}$ et 6 = $\\frac{18}{3}$.",
+        "15 < 17 < 18, donc 5 < $\\frac{17}{3}$ < 6 : il faut plus de 5 pots.",
+        "Avec 5 pots, on peint 15 panneaux seulement. Il manque de la peinture : il faut un 6e pot."
+      ],
+      "hint": "Relis ce que permet de faire un pot de peinture."
+    }
+  ],
+  "review_status": "brouillon",
+  "programme_ref": "Cycle 3, Cours moyen première année, Les fractions : « Savoir encadrer une fraction par deux nombres entiers consécutifs »"
+}

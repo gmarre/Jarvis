@@ -1,0 +1,107 @@
+{
+  "id": "SX-G006-01",
+  "skill_id": "G006",
+  "skill_ids": [
+    "G006",
+    "A001",
+    "G004"
+  ],
+  "school_level": "CP",
+  "title": "Le jardin de Malo",
+  "contexte": "Malo dessine le plan de son jardin sur du papier quadrillé.\n\nIl veut un bac à sable en forme de **carré**. Il a déjà tracé un côté du bac : le côté KL. Les deux autres sommets du bac seront sur des points marqués.\n\nDans le jardin, Malo veut trois pommiers bien alignés. Il a déjà dessiné deux pommiers, aux points P et R. Le troisième pommier ira sur un des points S, T ou U.\n\nLe jardin a 2 portails. Malo a 8 ans. Il pose 3 pots de fleurs devant la maison.",
+  "image": "figures/SX-G006-01",
+  "duree_estimee_min": 8,
+  "questions": [
+    {
+      "key": "q1",
+      "skill_id": "A001",
+      "statement": "Combien de carreaux mesure le côté KL du bac à sable ?",
+      "type": "numerique",
+      "answer": {
+        "value": 4,
+        "unit": "carreaux",
+        "accepted": [
+          "quatre",
+          "quatre carreaux",
+          "4 cases",
+          "4 carreau"
+        ]
+      },
+      "points": 2,
+      "solution_steps": [
+        "Le côté KL suit une ligne du quadrillage. On compte les carreaux de K jusqu'à L, sans compter les points.",
+        "On compte : 1, 2, 3, 4. Le côté KL mesure **4 carreaux**."
+      ],
+      "hint": "Compte les carreaux, pas les traits."
+    },
+    {
+      "key": "q2",
+      "skill_id": "G004",
+      "statement": "Sur quel point Malo doit-il dessiner le troisième pommier pour que les trois pommiers soient alignés ?",
+      "type": "qcm",
+      "choices": [
+        {
+          "key": "a",
+          "text": "Au point T",
+          "misconception": "L'élève prend le point le plus haut près de R, sans vérifier qu'il est sur la droite qui passe par P et R : T est trop à gauche."
+        },
+        {
+          "key": "b",
+          "text": "Au point U",
+          "misconception": "L'élève prend le point le plus proche de R, mais U n'est pas sur la droite qui passe par P et R."
+        },
+        {
+          "key": "c",
+          "text": "Au point S",
+          "misconception": null
+        }
+      ],
+      "answer": {
+        "value": "c"
+      },
+      "points": 3,
+      "solution_steps": [
+        "Trois points sont alignés quand une même droite passe par les trois. On peut poser une règle sur P et R.",
+        "En allant de P à R, on avance de 2 carreaux vers la droite et de 3 carreaux vers le haut. En recommençant depuis R, on arrive au point S.",
+        "Le troisième pommier va au **point S**. Les points T et U sont à côté de la droite qui passe par P et R."
+      ],
+      "hint": "Pose le bord d'une feuille sur les points P et R, et prolonge."
+    },
+    {
+      "key": "q3",
+      "skill_id": "G006",
+      "statement": "Le côté KL mesure 4 carreaux. Quels sont les deux autres sommets du bac à sable carré ?",
+      "type": "qcm",
+      "choices": [
+        {
+          "key": "a",
+          "text": "E et F",
+          "misconception": "L'élève ferme la figure avec les points les plus proches : les côtés qui montent ne mesurent que 2 carreaux, la figure est un rectangle, pas un carré."
+        },
+        {
+          "key": "b",
+          "text": "M et N",
+          "misconception": null
+        },
+        {
+          "key": "c",
+          "text": "M et F",
+          "misconception": "L'élève prend un point à la bonne hauteur et un autre trop bas : la figure n'a plus ses quatre côtés de même longueur."
+        }
+      ],
+      "answer": {
+        "value": "b"
+      },
+      "points": 4,
+      "solution_steps": [
+        "Dans un carré, les quatre côtés ont la même longueur. Le côté KL mesure 4 carreaux.",
+        "Les côtés qui partent de K et de L montent tout droit, en suivant le quadrillage : ils mesurent 4 carreaux, comme KL.",
+        "En montant de 4 carreaux depuis K, on arrive en M ; depuis L, on arrive en N. Les autres sommets sont **M et N**.",
+        "Avec E et F, les côtés qui montent ne mesurent que 2 carreaux : on obtient un rectangle, pas un carré."
+      ],
+      "hint": "Les quatre côtés d'un carré ont le même nombre de carreaux."
+    }
+  ],
+  "review_status": "brouillon",
+  "programme_ref": "Cycle 2, Cours préparatoire, Espace et géométrie, La géométrie plane : « L'élève sait compléter un rectangle dont deux côtés consécutifs sont déjà tracés, et compléter un carré dont un côté est déjà tracé. »"
+}

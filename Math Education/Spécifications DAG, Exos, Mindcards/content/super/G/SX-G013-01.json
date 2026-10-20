@@ -1,0 +1,127 @@
+{
+  "id": "SX-G013-01",
+  "skill_id": "G013",
+  "skill_ids": [
+    "G013",
+    "B005"
+  ],
+  "school_level": "CE2",
+  "title": "Les biscuits de Jules",
+  "contexte": "Jules prépare des biscuits ronds pour la fête de l'école. Le dessin montre un grand biscuit vu de dessus : son bord est un cercle de centre O. Sur le dessin, un carreau représente 1 cm.\n\nJules a décoré ce biscuit avec trois traits de chocolat : le segment [MN], le segment [RS] et le segment [OT].\n\nÀ côté, il a dessiné des cercles de décoration, numérotés 1, 2 et 3.\n\nJules fait de plus des petits biscuits ronds, de rayon 2 cm. Il en pose 5 sur une plaque, en ligne droite : chaque biscuit touche le suivant. La plaque mesure 45 cm de long. Les biscuits cuisent pendant 12 minutes.",
+  "image": "figures/SX-G013-01",
+  "duree_estimee_min": 15,
+  "questions": [
+    {
+      "key": "q1",
+      "skill_id": "G013",
+      "statement": "Lequel des traits de chocolat est un rayon du grand biscuit ?",
+      "type": "qcm",
+      "choices": [
+        {
+          "key": "a",
+          "text": "Le segment [MN]",
+          "misconception": "L'élève confond rayon et diamètre : le segment [MN] passe par le centre et va d'un bord à l'autre, c'est un diamètre."
+        },
+        {
+          "key": "b",
+          "text": "Le segment [RS]",
+          "misconception": "Le segment [RS] relie deux points du cercle, mais il ne part pas du centre O."
+        },
+        {
+          "key": "c",
+          "text": "Le segment [OT]",
+          "misconception": null
+        }
+      ],
+      "answer": {
+        "value": "c"
+      },
+      "points": 2,
+      "solution_steps": [
+        "Un rayon relie le centre du cercle à un point du cercle.",
+        "Le segment [OT] part du centre O et s'arrête sur le bord : c'est **un rayon**.",
+        "Le segment [MN] traverse le cercle en passant par O : c'est un diamètre. Le segment [RS] va d'un bord à l'autre sans passer par O."
+      ],
+      "hint": null
+    },
+    {
+      "key": "q2",
+      "skill_id": "G013",
+      "statement": "Combien de centimètres mesure le diamètre du grand biscuit dessiné ?",
+      "type": "numerique",
+      "answer": {
+        "value": 8,
+        "unit": "cm",
+        "accepted": [
+          "8 centimètres",
+          "huit centimètres"
+        ]
+      },
+      "points": 3,
+      "solution_steps": [
+        "Le diamètre traverse le cercle en passant par le centre : c'est le segment [MN].",
+        "Il suit une rangée du quadrillage. On compte les carreaux de M à N : il y en a 8.",
+        "Un carreau représente 1 cm : le diamètre mesure **8 cm**. C'est 2 fois le rayon : le segment [OT] mesure 4 carreaux."
+      ],
+      "hint": "Quel segment traverse tout le biscuit en passant par O ?"
+    },
+    {
+      "key": "q3",
+      "skill_id": "B005",
+      "statement": "Quelle longueur occupe la rangée des 5 petits biscuits sur la plaque ?",
+      "type": "numerique",
+      "answer": {
+        "value": 20,
+        "unit": "cm",
+        "accepted": [
+          "20 centimètres",
+          "vingt centimètres"
+        ]
+      },
+      "points": 3,
+      "solution_steps": [
+        "Chaque petit biscuit occupe, dans la rangée, la longueur de son diamètre.",
+        "Le diamètre mesure 2 fois le rayon : $2 \\times 2 = 4$, soit 4 cm.",
+        "5 biscuits de 4 cm, qui se touchent : $5 \\times 4 = 20$. La rangée occupe **20 cm**.",
+        "Attention : $5 \\times 2 = 10$ ne compte que le rayon de chaque biscuit."
+      ],
+      "hint": "Quelle longueur prend un petit biscuit dans la rangée ?"
+    },
+    {
+      "key": "q4",
+      "skill_id": "G013",
+      "statement": "Jules veut tracer le cercle de centre P et de rayon 2 cm. Lequel des cercles 1, 2 et 3 convient ?",
+      "type": "qcm",
+      "choices": [
+        {
+          "key": "a",
+          "text": "Le cercle 1",
+          "misconception": "Le cercle 1 a bien un rayon de 2 cm, mais son centre est Q, pas P."
+        },
+        {
+          "key": "b",
+          "text": "Le cercle 2",
+          "misconception": null
+        },
+        {
+          "key": "c",
+          "text": "Le cercle 3",
+          "misconception": "L'élève confond rayon et diamètre : le cercle 3 a pour centre P, mais c'est son diamètre qui mesure 2 cm ; son rayon mesure 1 cm."
+        }
+      ],
+      "answer": {
+        "value": "b"
+      },
+      "points": 4,
+      "solution_steps": [
+        "Il faut deux conditions : le centre est P, et le rayon mesure 2 cm, soit 2 carreaux.",
+        "Le cercle 1 a pour centre Q : il ne convient pas, même si son rayon mesure 2 carreaux.",
+        "Les cercles 2 et 3 ont pour centre P. Le cercle 3 a un rayon de 1 carreau : c'est son diamètre qui mesure 2 cm.",
+        "Le cercle 2 a pour centre P et un rayon de 2 carreaux : c'est **le cercle 2**."
+      ],
+      "hint": "Vérifie d'abord le centre, puis le rayon."
+    }
+  ],
+  "review_status": "brouillon",
+  "programme_ref": "Cycle 2, Cours élémentaire deuxième année, Espace et géométrie, La géométrie plane : « disque, cercle, centre, rayon, diamètre »"
+}

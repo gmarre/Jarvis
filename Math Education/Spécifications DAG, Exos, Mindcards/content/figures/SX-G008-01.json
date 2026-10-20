@@ -1,0 +1,81 @@
+{
+  "type": "geometrie",
+  "params": {
+    "colonnes": 12,
+    "lignes": 10,
+    "fond": "quadrille",
+    "points": {
+      "K": [
+        3,
+        1
+      ],
+      "L": [
+        3,
+        9
+      ],
+      "S": [
+        3,
+        5
+      ],
+      "T": [
+        3,
+        7
+      ],
+      "O": [
+        6,
+        5
+      ]
+    },
+    "etiquettes": {
+      "K": "gauche",
+      "L": "gauche",
+      "S": "gauche",
+      "T": "gauche",
+      "O": "droite"
+    },
+    "elements": [
+      {
+        "segment": [
+          "K",
+          "L"
+        ]
+      },
+      {
+        "cercle": "O",
+        "passe_par": "T"
+      },
+      {
+        "cercle": "S",
+        "passe_par": "O",
+        "couleur": "accent"
+      },
+      {
+        "cercle": "O",
+        "passe_par": "S"
+      },
+      {
+        "texte": "1",
+        "position": [
+          "8.9",
+          "2.1"
+        ]
+      },
+      {
+        "texte": "2",
+        "position": [
+          "0.5",
+          "2.4"
+        ],
+        "couleur": "accent"
+      },
+      {
+        "texte": "3",
+        "position": [
+          "7.7",
+          "6.7"
+        ]
+      }
+    ]
+  },
+  "alt": "Figure de géométrie avec un segment, des points et trois cercles numérotés"
+}

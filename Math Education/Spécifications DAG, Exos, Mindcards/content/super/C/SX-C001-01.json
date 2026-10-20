@@ -1,0 +1,100 @@
+{
+  "id": "SX-C001-01",
+  "skill_id": "C001",
+  "skill_ids": [
+    "C001",
+    "A001"
+  ],
+  "school_level": "CE1",
+  "title": "Le goûter chez Mamie Lucie",
+  "contexte": "Mercredi après-midi, Mamie Lucie garde Nina, Malo et Sami. Elle a 7 petits-enfants en tout. Le chat Caramel dort sur le canapé.\n\nPour le goûter, Mamie coupe une tarte aux fraises en 8 parts égales. Nina mange 3 parts de la tarte.\n\nSur l'image, on voit la tablette de chocolat de Sami. Elle est partagée en morceaux égaux. Les morceaux coloriés sont ceux que Sami a mangés.\n\nMalo coupe sa pomme en 2 morceaux : un gros morceau et un petit morceau. Il donne le petit morceau à Nina.",
+  "image": "figures/SX-C001-01",
+  "duree_estimee_min": 8,
+  "questions": [
+    {
+      "key": "q1",
+      "skill_id": "A001",
+      "statement": "Combien de morceaux de chocolat reste-t-il sur la tablette de Sami ?",
+      "type": "numerique",
+      "answer": {
+        "value": 6,
+        "unit": "morceaux"
+      },
+      "points": 2,
+      "solution_steps": [
+        "Les morceaux coloriés ont été mangés. Ceux qui restent sont les morceaux blancs.",
+        "On compte les morceaux blancs un par un : 1, 2, 3, 4, 5, 6.",
+        "Il reste **6 morceaux** de chocolat."
+      ],
+      "hint": "Regarde bien quels morceaux ont été mangés."
+    },
+    {
+      "key": "q2",
+      "skill_id": "C001",
+      "statement": "Quelle fraction de la tarte Nina a-t-elle mangée ?",
+      "type": "qcm",
+      "choices": [
+        {
+          "key": "a",
+          "text": "$\\frac{1}{8}$",
+          "misconception": "L'élève compte une seule part. Or Nina mange 3 parts : c'est 3 huitièmes de la tarte."
+        },
+        {
+          "key": "b",
+          "text": "$\\frac{5}{8}$",
+          "misconception": "L'élève écrit les parts qui restent dans le plat, pas celles que Nina a mangées."
+        },
+        {
+          "key": "c",
+          "text": "$\\frac{3}{8}$",
+          "misconception": null
+        }
+      ],
+      "answer": {
+        "value": "c"
+      },
+      "points": 3,
+      "solution_steps": [
+        "La tarte est partagée en 8 parts égales : chaque part est un huitième de la tarte.",
+        "Nina mange 3 parts : 3 huitièmes, c'est $\\frac{3}{8}$ de la tarte.",
+        "Le chat, les 7 petits-enfants et la pomme ne servent pas pour cette question."
+      ],
+      "hint": "Relis la phrase qui parle de la tarte."
+    },
+    {
+      "key": "q3",
+      "skill_id": "C001",
+      "statement": "Malo dit : « J'ai donné la moitié de ma pomme à Nina. » A-t-il raison ?",
+      "type": "qcm",
+      "choices": [
+        {
+          "key": "a",
+          "text": "Oui, car il a coupé sa pomme en 2 morceaux.",
+          "misconception": "L'élève compte les morceaux sans regarder leur taille. Pour une moitié, les 2 morceaux doivent être égaux."
+        },
+        {
+          "key": "b",
+          "text": "Non, car les 2 morceaux ne sont pas égaux.",
+          "misconception": null
+        },
+        {
+          "key": "c",
+          "text": "Non, car il fallait donner le gros morceau.",
+          "misconception": "L'élève croit que la moitié est le plus gros morceau. Aucun des 2 morceaux n'est une moitié, car ils ne sont pas égaux."
+        }
+      ],
+      "answer": {
+        "value": "b"
+      },
+      "points": 4,
+      "solution_steps": [
+        "Une moitié, c'est une part quand on partage en 2 parts **égales**.",
+        "Malo a coupé un gros morceau et un petit morceau : les 2 morceaux ne sont pas égaux.",
+        "Le petit morceau n'est donc pas la moitié de la pomme : Malo a tort."
+      ],
+      "hint": "Relis comment Malo coupe sa pomme."
+    }
+  ],
+  "review_status": "brouillon",
+  "programme_ref": "Cycle 2, Cours élémentaire première année, Les fractions : « Les fractions rencontrées au CE1 sont les fractions d'un tout. Elles sont, par nature, inférieures ou égales à 1. »"
+}

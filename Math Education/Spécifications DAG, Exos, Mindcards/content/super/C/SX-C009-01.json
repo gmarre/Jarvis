@@ -1,0 +1,107 @@
+{
+  "id": "SX-C009-01",
+  "skill_id": "C009",
+  "skill_ids": [
+    "C009",
+    "A006"
+  ],
+  "school_level": "CE1",
+  "title": "Le jeu de piste du parc",
+  "contexte": "Samedi, quatre équipes font le même jeu de piste dans le parc. Le parcours est partagé en 10 étapes de même longueur. Une équipe s'arrête toujours à la fin d'une étape. Le jeu commence à 14 heures.\n\nÀ 15 heures :\nles Rouges ont parcouru $\\frac{7}{10}$ du parcours ;\nles Verts ont parcouru $\\frac{9}{10}$ du parcours ;\nles Bleus ont parcouru $\\frac{4}{10}$ du parcours ;\nles Jaunes ont fait plus d'étapes que les Rouges, mais moins que les Verts.\n\nÀ chaque étape, les équipes gagnent des points. À 15 heures, les Rouges ont 254 points, les Verts 245 points, les Bleus 199 points et les Jaunes 230 points.",
+  "image": null,
+  "duree_estimee_min": 10,
+  "questions": [
+    {
+      "key": "q1",
+      "skill_id": "A006",
+      "statement": "À 15 heures, quelle équipe a le plus de points ?",
+      "type": "qcm",
+      "choices": [
+        {
+          "key": "a",
+          "text": "Les Verts",
+          "misconception": "L'élève confond 245 et 254, ou compare d'abord les unités. Il faut comparer les centaines, puis les dizaines : 5 dizaines dans 254, 4 dans 245."
+        },
+        {
+          "key": "b",
+          "text": "Les Bleus",
+          "misconception": "L'élève est attiré par les deux 9 de 199. Mais 199 n'a qu'une centaine, les autres nombres en ont 2."
+        },
+        {
+          "key": "c",
+          "text": "Les Rouges",
+          "misconception": null
+        }
+      ],
+      "answer": {
+        "value": "c"
+      },
+      "points": 2,
+      "solution_steps": [
+        "On compare les points : 254 ; 245 ; 199 ; 230.",
+        "199 n'a qu'une centaine, les autres en ont 2 : on compare leurs dizaines. 254 a 5 dizaines, 245 en a 4, 230 en a 3.",
+        "254 > 245 > 230 > 199 : ce sont **les Rouges** qui ont le plus de points."
+      ],
+      "hint": "Compare d'abord les centaines, puis les dizaines."
+    },
+    {
+      "key": "q2",
+      "skill_id": "C009",
+      "statement": "Compare la partie du parcours faite par les Bleus et celle faite par les Rouges. Quelle écriture est juste ?",
+      "type": "qcm",
+      "choices": [
+        {
+          "key": "a",
+          "text": "$\\frac{4}{10} < \\frac{7}{10}$",
+          "misconception": null
+        },
+        {
+          "key": "b",
+          "text": "$\\frac{4}{10} > \\frac{7}{10}$",
+          "misconception": "L'élève se trompe de sens : les Bleus ont fait 4 étapes, les Rouges 7, donc les Bleus ont fait moins."
+        },
+        {
+          "key": "c",
+          "text": "$\\frac{4}{10} = \\frac{7}{10}$",
+          "misconception": "L'élève croit que deux fractions de même dénominateur sont égales. Le dénominateur est le même, mais pas le nombre d'étapes faites."
+        }
+      ],
+      "answer": {
+        "value": "a"
+      },
+      "points": 3,
+      "solution_steps": [
+        "Les deux fractions ont le même dénominateur, 10 : le parcours est partagé de la même façon.",
+        "Les Bleus ont fait 4 étapes sur 10, les Rouges 7 étapes sur 10. Le numérateur compte les étapes faites.",
+        "4 < 7, donc $\\frac{4}{10} < \\frac{7}{10}$."
+      ],
+      "hint": "Que compte le numérateur ici ?"
+    },
+    {
+      "key": "q3",
+      "skill_id": "C009",
+      "statement": "Quelle fraction du parcours les Jaunes ont-ils parcourue à 15 heures ? Écris-la sous la forme numérateur/dénominateur.",
+      "type": "texte",
+      "answer": {
+        "value": "8/10",
+        "accepted": [
+          "8 / 10",
+          "8 dixièmes",
+          "huit dixièmes",
+          "4/5",
+          "8/10 du parcours"
+        ]
+      },
+      "points": 4,
+      "solution_steps": [
+        "Toutes les fractions ont le dénominateur 10 : le numérateur compte les étapes faites.",
+        "Les Rouges ont fait 7 étapes, les Verts 9 étapes.",
+        "Les Jaunes ont fait plus de 7 étapes et moins de 9, en étapes entières : 8 étapes.",
+        "Ils ont parcouru $\\frac{8}{10}$ du parcours. Leurs points (230) ne servent pas ici."
+      ],
+      "hint": "Relis la phrase qui parle des Jaunes."
+    }
+  ],
+  "review_status": "brouillon",
+  "programme_ref": "Cycle 2, Cours élémentaire première année, Les fractions : « Comparer des fractions ayant le même dénominateur. »"
+}

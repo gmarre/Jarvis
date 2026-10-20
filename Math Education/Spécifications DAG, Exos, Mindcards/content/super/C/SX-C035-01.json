@@ -1,0 +1,109 @@
+{
+  "id": "SX-C035-01",
+  "skill_id": "C035",
+  "skill_ids": [
+    "C035",
+    "C015",
+    "P018"
+  ],
+  "school_level": "4e",
+  "title": "La ferme pédagogique",
+  "contexte": "La ferme pédagogique de Mme Garnier accueille environ 1 200 élèves par an. Son terrain est un rectangle de 80 m de long et 45 m de large.\n\nLes $\\frac{4}{5}$ du terrain sont des prés ; le reste est la partie bâtie.\nLes $\\frac{5}{8}$ des prés sont réservés aux chèvres.\nLa grange occupe les $\\frac{3}{4}$ de la partie bâtie.\nLe poulailler, installé dans les prés, est un rectangle de 12 m sur 9 m.\n\nPour l'hiver, Mme Garnier a acheté 54 bottes de foin : les $\\frac{4}{9}$ de ces bottes sont pour les chèvres.",
+  "image": null,
+  "duree_estimee_min": 18,
+  "questions": [
+    {
+      "key": "q1",
+      "skill_id": "P018",
+      "statement": "Quelle est l'aire du poulailler ?",
+      "type": "numerique",
+      "answer": {
+        "value": 108,
+        "unit": "m²"
+      },
+      "points": 2,
+      "solution_steps": [
+        "Le poulailler est un rectangle de 12 m sur 9 m : on le recouvre de 9 rangées de 12 carrés de 1 m de côté.",
+        "12 × 9 = 108.",
+        "L'aire du poulailler est **108 m²**. Attention : 42 m serait son périmètre."
+      ],
+      "hint": "Relis les dimensions du poulailler."
+    },
+    {
+      "key": "q2",
+      "skill_id": "C035",
+      "statement": "Combien de bottes de foin sont pour les chèvres ?",
+      "type": "numerique",
+      "answer": {
+        "value": 24,
+        "unit": "bottes"
+      },
+      "points": 3,
+      "solution_steps": [
+        "Prendre les $\\frac{4}{9}$ de 54, c'est multiplier 54 par $\\frac{4}{9}$.",
+        "$\\frac{4}{9} \\times 54 = \\frac{4 \\times 54}{9} = \\frac{216}{9} = 24$, ou : un neuvième de 54 vaut 6, et 4 × 6 = 24.",
+        "**24 bottes** sont pour les chèvres."
+      ],
+      "hint": "Que vaut un neuvième des bottes ?"
+    },
+    {
+      "key": "q3",
+      "skill_id": "C015",
+      "statement": "Quelle fraction du terrain est réservée aux chèvres ? Écris-la sous la forme numérateur/dénominateur.",
+      "type": "texte",
+      "answer": {
+        "value": "1/2",
+        "accepted": [
+          "2/4",
+          "3/6",
+          "4/8",
+          "5/10",
+          "6/12",
+          "7/14",
+          "8/16",
+          "9/18",
+          "10/20",
+          "11/22",
+          "12/24",
+          "13/26",
+          "14/28",
+          "15/30",
+          "16/32",
+          "17/34",
+          "18/36",
+          "19/38",
+          "20/40",
+          "0,5",
+          "1/2 du terrain"
+        ]
+      },
+      "points": 3,
+      "solution_steps": [
+        "Les chèvres ont les $\\frac{5}{8}$ des $\\frac{4}{5}$ du terrain : c'est un produit.",
+        "$\\frac{5}{8} \\times \\frac{4}{5} = \\frac{20}{40} = \\frac{1}{2}$.",
+        "Les chèvres disposent de la moitié du terrain. Attention : additionner les deux fractions n'a pas de sens ici."
+      ],
+      "hint": "Les chèvres ont une fraction d'une fraction du terrain."
+    },
+    {
+      "key": "q4",
+      "skill_id": "C035",
+      "statement": "Quelle est l'aire de la grange ?",
+      "type": "numerique",
+      "answer": {
+        "value": 540,
+        "unit": "m²"
+      },
+      "points": 4,
+      "solution_steps": [
+        "Aire du terrain : 80 × 45 = 3 600 m².",
+        "La partie bâtie est ce qui n'est pas en prés : $1 - \\frac{4}{5} = \\frac{1}{5}$ du terrain.",
+        "La grange occupe les $\\frac{3}{4}$ de la partie bâtie : $\\frac{3}{4} \\times \\frac{1}{5} = \\frac{3}{20}$ du terrain.",
+        "$\\frac{3}{20} \\times 3600 = 540$ : la grange occupe **540 m²**."
+      ],
+      "hint": "Commence par la fraction du terrain occupée par la partie bâtie."
+    }
+  ],
+  "review_status": "brouillon",
+  "programme_ref": "Cycle 4, classe de 4e, Nombres et calculs, Nombres rationnels, Objectifs d'apprentissage : « Calculer et représenter la fraction d'une fraction, d'un nombre, d'une quantité. »"
+}

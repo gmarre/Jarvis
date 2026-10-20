@@ -1,0 +1,98 @@
+{
+  "id": "SX-G007-01",
+  "skill_id": "G007",
+  "skill_ids": [
+    "G007",
+    "A002"
+  ],
+  "school_level": "CE1",
+  "title": "Les solides en pailles",
+  "contexte": "La classe de CE1 fabrique des solides avec des pailles et des boules de pâte à modeler. Chaque paille forme une arête du solide. Chaque boule forme un sommet : on y pique les pailles.\n\nNora fabrique le solide A. Hugo fabrique le solide B. Les arêtes cachées sont dessinées en pointillés.\n\nLa maîtresse a acheté les pailles en paquets de 10. Elle a 6 paquets, et 2 pailles toutes seules. Il faut 58 pailles pour tous les solides de la classe.\n\nLa classe compte 24 élèves, et l'atelier dure 45 minutes. Les boules de pâte sont rouges ou jaunes.",
+  "image": "figures/SX-G007-01",
+  "duree_estimee_min": 10,
+  "questions": [
+    {
+      "key": "q1",
+      "skill_id": "G007",
+      "statement": "Sur le dessin du solide B, combien d'arêtes sont dessinées en pointillés ?",
+      "type": "numerique",
+      "answer": {
+        "value": 3,
+        "unit": "arêtes",
+        "accepted": [
+          "trois",
+          "trois arêtes",
+          "3 aretes",
+          "3 traits",
+          "3 pointillés"
+        ]
+      },
+      "points": 1,
+      "solution_steps": [
+        "Le texte dit que les arêtes cachées sont dessinées en pointillés.",
+        "Sur le solide B, on compte les traits en pointillés : 2 sur la base, et 1 qui monte vers le sommet du haut.",
+        "Il y a **3 arêtes** en pointillés. Le solide A, celui de Nora, ne sert pas ici."
+      ],
+      "hint": null
+    },
+    {
+      "key": "q2",
+      "skill_id": "A002",
+      "statement": "La maîtresse a-t-elle assez de pailles pour tous les solides de la classe ?",
+      "type": "qcm",
+      "choices": [
+        {
+          "key": "a",
+          "text": "Oui : elle a 62 pailles.",
+          "misconception": null
+        },
+        {
+          "key": "b",
+          "text": "Non : elle n'a que 8 pailles.",
+          "misconception": "L'élève ajoute 6 et 2 sans voir que chaque paquet contient 10 pailles."
+        },
+        {
+          "key": "c",
+          "text": "Non : elle n'a que 26 pailles.",
+          "misconception": "L'élève inverse les dizaines et les unités : 6 paquets de 10, ce sont 6 dizaines, pas 6 unités."
+        }
+      ],
+      "answer": {
+        "value": "a"
+      },
+      "points": 3,
+      "solution_steps": [
+        "6 paquets de 10 pailles, c'est 6 dizaines : 60 pailles. Avec les 2 pailles seules, cela fait 62 pailles.",
+        "Il faut 58 pailles. 62 est plus grand que 58 : 6 dizaines, c'est plus que 5 dizaines.",
+        "**Oui**, la maîtresse a assez de pailles : elle en a 62."
+      ],
+      "hint": "Combien de pailles y a-t-il dans 6 paquets de 10 ?"
+    },
+    {
+      "key": "q3",
+      "skill_id": "G007",
+      "statement": "Combien de pailles Hugo utilise-t-il pour fabriquer son solide ?",
+      "type": "numerique",
+      "answer": {
+        "value": 8,
+        "unit": "pailles",
+        "accepted": [
+          "huit",
+          "huit pailles",
+          "8 arêtes",
+          "huit arêtes"
+        ]
+      },
+      "points": 4,
+      "solution_steps": [
+        "Le solide B est une pyramide à base carrée. Il faut une paille par arête : on compte ses arêtes.",
+        "La base carrée a 4 arêtes, dont 2 cachées, en pointillés.",
+        "Du sommet du haut, 4 arêtes descendent vers les 4 coins de la base, dont 1 cachée.",
+        "4 arêtes en bas et 4 qui montent : Hugo utilise **8 pailles**. Compter seulement les traits pleins donnerait 5 ; compter les sommets donnerait le même nombre, 5."
+      ],
+      "hint": "N'oublie pas les arêtes en pointillés."
+    }
+  ],
+  "review_status": "brouillon",
+  "programme_ref": "Cycle 2, Cours élémentaire première année, Espace et géométrie, Les solides : « Un pavé, un cube ou une pyramide à base carrée lui étant donné, l'élève sait le nommer, décrire ses faces (carrés, rectangles, triangles) et donner le nombre de ses arêtes et de ses sommets. »"
+}

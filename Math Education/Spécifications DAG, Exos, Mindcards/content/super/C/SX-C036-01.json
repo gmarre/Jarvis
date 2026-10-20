@@ -1,0 +1,124 @@
+{
+  "id": "SX-C036-01",
+  "skill_id": "C036",
+  "skill_ids": [
+    "C036",
+    "B011",
+    "C015",
+    "C017"
+  ],
+  "school_level": "4e",
+  "title": "La cuve du club jardinage",
+  "contexte": "Le club jardinage du collège récupère l'eau de pluie dans une cuve de 600 litres. Le club compte 18 élèves et se réunit le lundi et le mercredi.\n\nLundi matin, la cuve est remplie aux $\\frac{3}{5}$.\nLundi, les élèves utilisent les $\\frac{3}{4}$ de l'eau présente dans la cuve pour arroser les tomates.\nMardi, un orage apporte de quoi remplir $\\frac{7}{10}$ de la cuve.\nUn arrosoir plein contient $\\frac{1}{50}$ de la cuve.\nMercredi, les élèves remplissent 12 arrosoirs avec l'eau de la cuve.\n\nAucune autre eau n'entre dans la cuve ni n'en sort.",
+  "image": null,
+  "duree_estimee_min": 18,
+  "questions": [
+    {
+      "key": "q1",
+      "skill_id": "B011",
+      "statement": "Quelle expression donne la fraction de la cuve remplie mardi soir ?",
+      "type": "qcm",
+      "choices": [
+        {
+          "key": "a",
+          "text": "$\\left(\\frac{3}{5} - \\frac{3}{4}\\right) \\times \\frac{3}{5} + \\frac{7}{10}$",
+          "misconception": "Les parenthèses changent l'ordre des calculs : on soustrairait $\\frac{3}{4}$ avant de multiplier, ce qui ne correspond pas à la situation."
+        },
+        {
+          "key": "b",
+          "text": "$\\frac{3}{5} - \\frac{3}{4} + \\frac{7}{10}$",
+          "misconception": "L'élève retire les $\\frac{3}{4}$ de la cuve entière, alors qu'on retire les $\\frac{3}{4}$ de l'eau présente."
+        },
+        {
+          "key": "c",
+          "text": "$\\frac{3}{5} - \\frac{3}{4} \\times \\frac{3}{5} + \\frac{7}{10}$",
+          "misconception": null
+        },
+        {
+          "key": "d",
+          "text": "$\\frac{3}{5} \\times \\frac{3}{4} + \\frac{7}{10}$",
+          "misconception": "Cette expression garde l'eau utilisée lundi au lieu de l'eau qui reste."
+        }
+      ],
+      "answer": {
+        "value": "c"
+      },
+      "points": 2,
+      "solution_steps": [
+        "Lundi, on retire les $\\frac{3}{4}$ de l'eau présente, c'est-à-dire $\\frac{3}{4} \\times \\frac{3}{5}$ de la cuve.",
+        "Mardi, on ajoute $\\frac{7}{10}$ de la cuve.",
+        "L'expression est $\\frac{3}{5} - \\frac{3}{4} \\times \\frac{3}{5} + \\frac{7}{10}$ : la multiplication est prioritaire, pas besoin de parenthèses."
+      ],
+      "hint": "Relis de quoi les élèves prennent les trois quarts."
+    },
+    {
+      "key": "q2",
+      "skill_id": "C017",
+      "statement": "Lundi matin, combien d'arrosoirs pleins aurait-on pu remplir avec toute l'eau de la cuve ?",
+      "type": "numerique",
+      "answer": {
+        "value": 30,
+        "unit": "arrosoirs"
+      },
+      "points": 3,
+      "solution_steps": [
+        "On cherche combien de fois $\\frac{1}{50}$ de cuve tient dans $\\frac{3}{5}$ de cuve : $\\frac{3}{5} \\div \\frac{1}{50}$.",
+        "$\\frac{3}{5} \\div \\frac{1}{50} = \\frac{3}{5} \\times \\frac{50}{1} = \\frac{150}{5} = 30$.",
+        "On aurait pu remplir **30 arrosoirs**."
+      ],
+      "hint": "Diviser par une fraction, c'est multiplier par son inverse."
+    },
+    {
+      "key": "q3",
+      "skill_id": "C015",
+      "statement": "Quelle fraction de la cuve les 12 arrosoirs remplis mercredi représentent-ils ? Écris-la sous la forme numérateur/dénominateur.",
+      "type": "texte",
+      "answer": {
+        "value": "6/25",
+        "accepted": [
+          "12/50",
+          "18/75",
+          "24/100",
+          "0,24",
+          "6/25 de la cuve"
+        ]
+      },
+      "points": 2,
+      "solution_steps": [
+        "Chaque arrosoir contient $\\frac{1}{50}$ de la cuve.",
+        "$12 \\times \\frac{1}{50} = \\frac{12}{50} = \\frac{6}{25}$.",
+        "Les 12 arrosoirs représentent $\\frac{6}{25}$ de la cuve."
+      ],
+      "hint": null
+    },
+    {
+      "key": "q4",
+      "skill_id": "C036",
+      "statement": "Quelle fraction de la cuve est remplie mardi soir ? Écris-la sous la forme numérateur/dénominateur.",
+      "type": "texte",
+      "answer": {
+        "value": "17/20",
+        "accepted": [
+          "34/40",
+          "51/60",
+          "68/80",
+          "85/100",
+          "170/200",
+          "850/1000",
+          "0,85",
+          "17/20 de la cuve"
+        ]
+      },
+      "points": 4,
+      "solution_steps": [
+        "On calcule $\\frac{3}{5} - \\frac{3}{4} \\times \\frac{3}{5} + \\frac{7}{10}$, en commençant par la multiplication.",
+        "$\\frac{3}{4} \\times \\frac{3}{5} = \\frac{9}{20}$.",
+        "$\\frac{3}{5} - \\frac{9}{20} + \\frac{7}{10} = \\frac{12}{20} - \\frac{9}{20} + \\frac{14}{20} = \\frac{17}{20}$.",
+        "Mardi soir, la cuve est remplie aux $\\frac{17}{20}$. Calculer de gauche à droite donnerait $\\frac{61}{100}$, une erreur de priorité."
+      ],
+      "hint": "Quelle opération fait-on en premier ?"
+    }
+  ],
+  "review_status": "brouillon",
+  "programme_ref": "Cycle 4, classe de 4e, Nombres et calculs, Nombres rationnels, Objectifs d'apprentissage : « Calculer la valeur d'expressions comportant plusieurs opérations avec des fractions. »"
+}

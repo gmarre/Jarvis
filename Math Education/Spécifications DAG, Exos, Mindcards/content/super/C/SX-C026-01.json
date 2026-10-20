@@ -1,0 +1,93 @@
+{
+  "id": "SX-C026-01",
+  "skill_id": "C026",
+  "skill_ids": [
+    "C026",
+    "A001"
+  ],
+  "school_level": "CE1",
+  "title": "Les galettes de la classe de découverte",
+  "contexte": "Les CE1 partent trois jours en classe de découverte à la ferme. La ferme a 10 vaches et un âne.\n\nPour le goûter, chaque groupe d'enfants reçoit une galette. Toutes les galettes ont la même taille. Chaque groupe partage sa galette en parts égales : une part pour chaque enfant.\n\nLe groupe des Renards compte 4 enfants.\nLe groupe des Hiboux compte 8 enfants.\nLe groupe des Castors compte 5 enfants.\n\nSur l'image, on voit la galette du groupe des Écureuils, déjà coupée.",
+  "image": "figures/SX-C026-01",
+  "duree_estimee_min": 8,
+  "questions": [
+    {
+      "key": "q1",
+      "skill_id": "A001",
+      "statement": "Combien d'enfants y a-t-il dans le groupe des Écureuils ?",
+      "type": "numerique",
+      "answer": {
+        "value": 6,
+        "unit": "enfants"
+      },
+      "points": 2,
+      "solution_steps": [
+        "Chaque enfant reçoit une part : il y a autant d'enfants que de parts dans la galette.",
+        "On compte les parts de la galette des Écureuils : 1, 2, 3, 4, 5, 6.",
+        "Le groupe des Écureuils compte **6 enfants**."
+      ],
+      "hint": "Relis comment chaque groupe partage sa galette."
+    },
+    {
+      "key": "q2",
+      "skill_id": "C026",
+      "statement": "Qui a la plus grosse part de galette : un Renard ou un Hibou ?",
+      "type": "qcm",
+      "choices": [
+        {
+          "key": "a",
+          "text": "Un Hibou, car son groupe a plus d'enfants.",
+          "misconception": "L'élève croit que plus il y a de parts, plus elles sont grosses. C'est le contraire : 8 parts sont plus petites que 4 parts."
+        },
+        {
+          "key": "b",
+          "text": "Un Renard, car sa galette est coupée en moins de parts.",
+          "misconception": null
+        },
+        {
+          "key": "c",
+          "text": "Ils ont des parts de même taille.",
+          "misconception": "L'élève pense qu'une part vaut toujours une part. Mais la galette des Hiboux est coupée en 8, celle des Renards en 4 : les parts ne sont pas pareilles."
+        }
+      ],
+      "answer": {
+        "value": "b"
+      },
+      "points": 3,
+      "solution_steps": [
+        "Un Renard reçoit $\\frac{1}{4}$ de la galette, un Hibou $\\frac{1}{8}$ de la galette.",
+        "Les galettes ont la même taille. Celle des Hiboux est coupée en plus de parts : chaque part est plus petite.",
+        "C'est **un Renard** qui a la plus grosse part."
+      ],
+      "hint": "Pense à la taille des parts quand on coupe une galette en beaucoup de parts."
+    },
+    {
+      "key": "q3",
+      "skill_id": "C026",
+      "statement": "Range les parts d'un Renard, d'un Hibou et d'un Castor, de la plus petite à la plus grande. Écris les fractions de galette avec une barre, séparées par des virgules.",
+      "type": "texte",
+      "answer": {
+        "value": "1/8, 1/5, 1/4",
+        "accepted": [
+          "1/8,1/5,1/4",
+          "1/8 ; 1/5 ; 1/4",
+          "1/8;1/5;1/4",
+          "1/8 1/5 1/4",
+          "1/8, 1/5 et 1/4",
+          "1 / 8, 1 / 5, 1 / 4",
+          "1/8, 1/5,1/4"
+        ]
+      },
+      "points": 4,
+      "solution_steps": [
+        "Un Renard reçoit $\\frac{1}{4}$, un Hibou $\\frac{1}{8}$ et un Castor $\\frac{1}{5}$ de la galette.",
+        "Les galettes ont la même taille : plus on coupe de parts, plus chaque part est petite.",
+        "Les Hiboux coupent en 8, les Castors en 5, les Renards en 4.",
+        "De la plus petite à la plus grande : $\\frac{1}{8}$, $\\frac{1}{5}$, $\\frac{1}{4}$."
+      ],
+      "hint": "Commence par écrire la part de chaque enfant."
+    }
+  ],
+  "review_status": "brouillon",
+  "programme_ref": "Cycle 2, Cours élémentaire première année, Les fractions : « Comparer des fractions dont le numérateur est 1. »"
+}

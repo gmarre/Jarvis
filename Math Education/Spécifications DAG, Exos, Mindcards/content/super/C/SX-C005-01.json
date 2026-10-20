@@ -1,0 +1,114 @@
+{
+  "id": "SX-C005-01",
+  "skill_id": "C005",
+  "skill_ids": [
+    "C005",
+    "C006",
+    "B005"
+  ],
+  "school_level": "CE2",
+  "title": "La course de relais",
+  "contexte": "Dans la cour, les CE2 font une course de relais : 7 équipes de 3 coureurs. La course commence à 10 heures.\n\nSur l'image, la piste va du départ, repéré par 0, jusqu'à l'arrivée, repérée par 1. Elle est partagée en parts égales.\n\nLe premier coureur de chaque équipe court du départ jusqu'au point A, où il passe le témoin. Le deuxième coureur court de A jusqu'au point B. Le troisième coureur court de B jusqu'à l'arrivée.\n\nLe maître se place au point C pour prendre des photos.",
+  "image": "figures/SX-C005-01",
+  "duree_estimee_min": 12,
+  "questions": [
+    {
+      "key": "q1",
+      "skill_id": "B005",
+      "statement": "Combien d'enfants courent dans cette course ?",
+      "type": "numerique",
+      "answer": {
+        "value": 21,
+        "unit": "enfants"
+      },
+      "points": 2,
+      "solution_steps": [
+        "Il y a 7 équipes de 3 coureurs.",
+        "7 × 3 = 21.",
+        "**21 enfants** courent."
+      ],
+      "hint": "Relis la première phrase."
+    },
+    {
+      "key": "q2",
+      "skill_id": "C005",
+      "statement": "Quelle fraction repère le point A ? Écris-la sous la forme numérateur/dénominateur.",
+      "type": "texte",
+      "answer": {
+        "value": "3/8",
+        "accepted": [
+          "3 / 8",
+          "3 huitièmes",
+          "trois huitièmes",
+          "3/8 de la piste"
+        ]
+      },
+      "points": 3,
+      "solution_steps": [
+        "De 0 à 1, on compte les intervalles égaux : il y en a 8. Chaque intervalle est $\\frac{1}{8}$ de la piste.",
+        "Le point A est au bout du 3e intervalle après 0.",
+        "Le point A repère $\\frac{3}{8}$."
+      ],
+      "hint": "Compte les intervalles, pas les traits."
+    },
+    {
+      "key": "q3",
+      "skill_id": "C006",
+      "statement": "Le maître dit : « Je suis au milieu de la piste. » A-t-il raison ?",
+      "type": "qcm",
+      "choices": [
+        {
+          "key": "a",
+          "text": "Non, car le point C n'est pas repéré par $\\frac{1}{2}$ : sa fraction s'écrit avec d'autres nombres.",
+          "misconception": "L'élève croit qu'une fraction écrite avec d'autres nombres repère un autre point. Le point C repère $\\frac{4}{8}$, et $\\frac{4}{8} = \\frac{1}{2}$ : c'est le même endroit de la piste."
+        },
+        {
+          "key": "b",
+          "text": "Oui, car la fraction qui repère le point C est égale à $\\frac{1}{2}$.",
+          "misconception": null
+        },
+        {
+          "key": "c",
+          "text": "Non, car le point C est sur la 4e graduation : il repère $\\frac{1}{4}$.",
+          "misconception": "L'élève confond « 4 intervalles » et « un quart ». Un quart serait 2 intervalles sur 8."
+        }
+      ],
+      "answer": {
+        "value": "b"
+      },
+      "points": 3,
+      "solution_steps": [
+        "Le point C est au bout du 4e intervalle sur 8 : il repère $\\frac{4}{8}$.",
+        "4 huitièmes, c'est la moitié de 8 huitièmes : $\\frac{4}{8} = \\frac{1 \\times 4}{2 \\times 4} = \\frac{1}{2}$.",
+        "Le point C est au milieu de la piste : le maître a raison."
+      ],
+      "hint": "Où se trouve le point C entre 0 et 1 ?"
+    },
+    {
+      "key": "q4",
+      "skill_id": "C005",
+      "statement": "Quelle fraction de la piste le troisième coureur parcourt-il ? Écris-la sous la forme numérateur/dénominateur.",
+      "type": "texte",
+      "answer": {
+        "value": "2/8",
+        "accepted": [
+          "2 / 8",
+          "1/4",
+          "2 huitièmes",
+          "deux huitièmes",
+          "2/8 de la piste"
+        ]
+      },
+      "points": 4,
+      "solution_steps": [
+        "Le troisième coureur court du point B jusqu'à l'arrivée, repérée par 1.",
+        "Chaque intervalle est $\\frac{1}{8}$ de la piste. Le point B repère $\\frac{6}{8}$.",
+        "De B jusqu'à 1, on compte les intervalles : il y en a 2.",
+        "Le troisième coureur parcourt $\\frac{2}{8}$ de la piste. Attention : $\\frac{6}{8}$ est la place de B, pas la longueur courue."
+      ],
+      "hint": "Compte les intervalles entre B et l'arrivée."
+    }
+  ],
+  "review_status": "brouillon",
+  "programme_ref": "Cycle 2, Principes : « Au CE2, le partage d'une unité de longueur en fractions de cette unité permet de positionner des fractions sur une bande-unité graduée. »"
+}

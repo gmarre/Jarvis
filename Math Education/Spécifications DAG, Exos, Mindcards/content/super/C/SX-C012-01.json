@@ -1,0 +1,81 @@
+{
+  "id": "SX-C012-01",
+  "skill_id": "C012",
+  "skill_ids": [
+    "C012",
+    "B004"
+  ],
+  "school_level": "CE1",
+  "title": "La fresque du préau",
+  "contexte": "Les CE1 de l'école Jules-Verne peignent une fresque sur le mur du préau. Le mur est partagé en 10 parts égales. La classe compte 24 élèves, et chacun a apporté un vieux tee-shirt pour peindre.\n\nLundi, il pleut : la classe peint seulement $\\frac{1}{10}$ du mur.\nMardi, elle peint $\\frac{4}{10}$ du mur.\nJeudi, elle peindra tout le reste du mur.\n\nUne fête aura lieu devant la fresque terminée. Pour l'annoncer, l'école a imprimé 450 invitations. Les élèves en ont déjà distribué 186.",
+  "image": null,
+  "duree_estimee_min": 10,
+  "questions": [
+    {
+      "key": "q1",
+      "skill_id": "B004",
+      "statement": "Combien d'invitations reste-t-il à distribuer ?",
+      "type": "numerique",
+      "answer": {
+        "value": 264,
+        "unit": "invitations"
+      },
+      "points": 2,
+      "solution_steps": [
+        "On cherche ce qui reste : 450 − 186. On pose la soustraction en colonnes.",
+        "Unités : 0 − 6 ne se fait pas. On casse une dizaine : 10 − 6 = 4, il reste 4 dizaines en haut.",
+        "Dizaines : 4 − 8 ne se fait pas. On casse une centaine : 14 − 8 = 6, il reste 3 centaines en haut.",
+        "Centaines : 3 − 1 = 2. Il reste **264 invitations** à distribuer."
+      ],
+      "hint": "Pose la soustraction en colonnes."
+    },
+    {
+      "key": "q2",
+      "skill_id": "C012",
+      "statement": "Quelle fraction du mur la classe a-t-elle peinte de plus mardi que lundi ? Écris-la sous la forme numérateur/dénominateur.",
+      "type": "texte",
+      "answer": {
+        "value": "3/10",
+        "accepted": [
+          "3 / 10",
+          "3 dixièmes",
+          "trois dixièmes",
+          "3/10 du mur"
+        ]
+      },
+      "points": 3,
+      "solution_steps": [
+        "On cherche l'écart entre mardi et lundi : $\\frac{4}{10} - \\frac{1}{10}$.",
+        "Les dénominateurs sont les mêmes : on soustrait les numérateurs et on garde le dénominateur.",
+        "$\\frac{4}{10} - \\frac{1}{10} = \\frac{3}{10}$ : mardi, la classe a peint $\\frac{3}{10}$ du mur de plus que lundi."
+      ],
+      "hint": "Relis ce que la classe peint lundi, puis mardi."
+    },
+    {
+      "key": "q3",
+      "skill_id": "C012",
+      "statement": "Quelle fraction du mur la classe doit-elle peindre jeudi pour finir la fresque ? Écris-la sous la forme numérateur/dénominateur.",
+      "type": "texte",
+      "answer": {
+        "value": "5/10",
+        "accepted": [
+          "5 / 10",
+          "5 dixièmes",
+          "cinq dixièmes",
+          "1/2",
+          "5/10 du mur"
+        ]
+      },
+      "points": 4,
+      "solution_steps": [
+        "Le mur entier, ce sont 10 parts sur 10 : $\\frac{10}{10}$.",
+        "Lundi et mardi, la classe a peint $\\frac{1}{10} + \\frac{4}{10} = \\frac{5}{10}$ du mur.",
+        "Il reste $\\frac{10}{10} - \\frac{5}{10} = \\frac{5}{10}$ du mur.",
+        "Jeudi, la classe peint $\\frac{5}{10}$ du mur. Les invitations et le nombre d'élèves ne servent pas ici."
+      ],
+      "hint": "Le mur entier s'écrit aussi avec le dénominateur 10."
+    }
+  ],
+  "review_status": "brouillon",
+  "programme_ref": "Cycle 2, Cours élémentaire première année, Les fractions : « Additionner et soustraire des fractions de même dénominateur. »"
+}

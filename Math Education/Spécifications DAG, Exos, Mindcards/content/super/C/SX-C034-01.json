@@ -1,0 +1,125 @@
+{
+  "id": "SX-C034-01",
+  "skill_id": "C034",
+  "skill_ids": [
+    "C034",
+    "A019",
+    "B050"
+  ],
+  "school_level": "4e",
+  "title": "Le baptême de plongée",
+  "contexte": "Maëlys fait un baptême de plongée avec son moniteur, au large de Marseille. Le bateau est ancré à 300 m de la côte. Le moniteur repère les positions par des nombres relatifs, en mètres : la surface de l'eau est à 0, et sous l'eau les nombres sont négatifs.\n\nL'image montre la droite graduée du moniteur, avec deux repères : le rocher R et le poisson P.\n\nPendant la descente, Maëlys descend de 10 m en 4 minutes, à vitesse régulière.\nTom, un autre élève, descend de 8 m en 3 minutes, lui aussi à vitesse régulière.\n\nLa plongée dure 25 minutes en tout.",
+  "image": "figures/SX-C034-01",
+  "duree_estimee_min": 18,
+  "questions": [
+    {
+      "key": "q1",
+      "skill_id": "A019",
+      "statement": "Quel nombre repère le rocher R ?",
+      "type": "numerique",
+      "answer": {
+        "value": -4.5,
+        "unit": "m",
+        "accepted": [
+          "-9/2",
+          "−9/2"
+        ]
+      },
+      "points": 2,
+      "solution_steps": [
+        "Entre deux nombres entiers, l'unité est partagée en 4 : chaque petit intervalle vaut 0,25 m.",
+        "Sous 0, on compte vers le bas : R est 2 petits intervalles sous −4.",
+        "R est repéré par **−4,5**, entre −5 et −4."
+      ],
+      "hint": "Repère d'abord les graduations écrites, puis compte vers le bas."
+    },
+    {
+      "key": "q2",
+      "skill_id": "B050",
+      "statement": "Pendant la descente, de combien de mètres la position de Maëlys varie-t-elle chaque minute ? Donne un nombre relatif.",
+      "type": "numerique",
+      "answer": {
+        "value": -2.5,
+        "unit": "m",
+        "accepted": [
+          "-5/2",
+          "−5/2"
+        ]
+      },
+      "points": 3,
+      "solution_steps": [
+        "En 4 minutes, la position de Maëlys varie de −10 m : elle descend.",
+        "Chaque minute : (−10) ÷ 4 = −2,5. Un négatif divisé par un positif donne un négatif.",
+        "Sa position varie de **−2,5 m** par minute."
+      ],
+      "hint": "Une descente se traduit par un nombre négatif."
+    },
+    {
+      "key": "q3",
+      "skill_id": "C034",
+      "statement": "Quel nombre repère le poisson P ? Écris-le sous la forme numérateur/dénominateur, avec son signe.",
+      "type": "texte",
+      "answer": {
+        "value": "−7/4",
+        "accepted": [
+          "-7/4",
+          "- 7/4",
+          "7/-4",
+          "(-7)/4",
+          "7/(-4)",
+          "-(7/4)",
+          "-14/8",
+          "14/-8",
+          "-21/12"
+        ]
+      },
+      "points": 3,
+      "solution_steps": [
+        "Chaque petit intervalle vaut $\\frac{1}{4}$ de mètre.",
+        "De 0 jusqu'à P, en descendant, on compte 7 petits intervalles : P est entre −2 et −1.",
+        "P est repéré par $-\\frac{7}{4}$, qui peut aussi s'écrire $\\frac{-7}{4}$ ou $\\frac{7}{-4}$."
+      ],
+      "hint": "Compte les quarts depuis 0."
+    },
+    {
+      "key": "q4",
+      "skill_id": "C034",
+      "statement": "Pour la descente de Tom, le moniteur note la variation par minute $\\frac{-8}{3}$ m. Tom, lui, écrit $\\frac{8}{-3}$ m. Quelle affirmation est juste ?",
+      "type": "qcm",
+      "choices": [
+        {
+          "key": "a",
+          "text": "Les deux écritures sont opposées : l'une des deux est fausse.",
+          "misconception": "L'élève croit que déplacer le signe moins donne l'opposé. Or $\\frac{-8}{3}$ et $\\frac{8}{-3}$ sont tous deux négatifs, et égaux."
+        },
+        {
+          "key": "b",
+          "text": "Tom s'est trompé : un dénominateur ne peut pas être négatif.",
+          "misconception": "Un dénominateur peut être négatif, pourvu qu'il ne soit pas nul : $\\frac{8}{-3}$ est un nombre rationnel."
+        },
+        {
+          "key": "c",
+          "text": "Les deux écritures sont égales, et ce nombre n'est pas un nombre décimal.",
+          "misconception": null
+        },
+        {
+          "key": "d",
+          "text": "Les deux écritures sont égales, et ce nombre vaut exactement −2,66.",
+          "misconception": "L'élève arrête la division trop tôt : la division de 8 par 3 ne s'arrête jamais, et −2,66 n'en est qu'une valeur approchée."
+        }
+      ],
+      "answer": {
+        "value": "c"
+      },
+      "points": 4,
+      "solution_steps": [
+        "Un quotient de deux nombres de signes contraires est négatif : $\\frac{-8}{3}$ et $\\frac{8}{-3}$ valent tous deux $-\\frac{8}{3}$.",
+        "Les deux écritures sont donc égales.",
+        "$\\frac{8}{3}$ n'est pas un nombre décimal : la division de 8 par 3 donne 2,666… et ne s'arrête jamais. C'est un nombre rationnel, quotient de deux entiers."
+      ],
+      "hint": null
+    }
+  ],
+  "review_status": "brouillon",
+  "programme_ref": "Cycle 4, classe de 4e, Nombres et calculs, Nombres rationnels, Objectifs d'apprentissage : « Définir la notion de nombre rationnel : le quotient de deux nombres entiers relatifs. »"
+}

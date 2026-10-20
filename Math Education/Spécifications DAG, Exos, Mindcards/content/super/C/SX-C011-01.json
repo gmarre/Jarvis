@@ -1,0 +1,117 @@
+{
+  "id": "SX-C011-01",
+  "skill_id": "C011",
+  "skill_ids": [
+    "C011",
+    "A027"
+  ],
+  "school_level": "5e",
+  "title": "La lecture à voix haute",
+  "contexte": "Pendant le trimestre, la classe de 5e B lit à voix haute un roman aux élèves de CM2 de l'école voisine. Le roman compte 15 chapitres, et la classe 26 élèves. Les séances ont lieu le jeudi.\n\nTrois lecteurs se sont partagé la lecture :\nInès a lu $\\frac{4}{9}$ du roman ;\nBastien a lu $\\frac{1}{6}$ du roman ;\nChloé a lu $\\frac{1}{4}$ du roman.\n\nLe reste du roman sera lu en janvier par d'autres élèves, qui se sont déjà inscrits auprès du professeur de français.",
+  "image": null,
+  "duree_estimee_min": 15,
+  "questions": [
+    {
+      "key": "q1",
+      "skill_id": "A027",
+      "statement": "Lequel de ces nombres peut servir de dénominateur commun aux fractions lues par Inès et par Bastien ?",
+      "type": "qcm",
+      "choices": [
+        {
+          "key": "a",
+          "text": "3",
+          "misconception": "3 est un diviseur commun à 9 et à 6, pas un multiple commun : on ne peut pas écrire $\\frac{4}{9}$ avec le dénominateur 3."
+        },
+        {
+          "key": "b",
+          "text": "15",
+          "misconception": "L'élève additionne les dénominateurs 9 et 6 : 15 n'est un multiple ni de 9, ni de 6."
+        },
+        {
+          "key": "c",
+          "text": "36",
+          "misconception": null
+        },
+        {
+          "key": "d",
+          "text": "24",
+          "misconception": "24 est un multiple de 6 (6 × 4), mais pas de 9."
+        }
+      ],
+      "answer": {
+        "value": "c"
+      },
+      "points": 2,
+      "solution_steps": [
+        "Un dénominateur commun à $\\frac{4}{9}$ et $\\frac{1}{6}$ est un multiple commun à 9 et à 6.",
+        "36 = 9 × 4 et 36 = 6 × 6 : 36 convient.",
+        "3 divise 9 et 6 (c'est un diviseur commun) ; 15 n'est un multiple ni de 9 ni de 6 ; 24 est un multiple de 6, pas de 9."
+      ],
+      "hint": "Un dénominateur commun doit être dans les deux tables."
+    },
+    {
+      "key": "q2",
+      "skill_id": "C011",
+      "statement": "On écrit la fraction lue par Inès avec le dénominateur 18. Quel est alors son numérateur ?",
+      "type": "numerique",
+      "answer": {
+        "value": 8
+      },
+      "points": 3,
+      "solution_steps": [
+        "18 = 9 × 2 : on multiplie le dénominateur 9 par 2.",
+        "On multiplie aussi le numérateur par 2 : $\\frac{4}{9} = \\frac{4 \\times 2}{9 \\times 2} = \\frac{8}{18}$.",
+        "Le numérateur est **8**."
+      ],
+      "hint": "Par combien faut-il multiplier 9 pour obtenir 18 ?"
+    },
+    {
+      "key": "q3",
+      "skill_id": "C011",
+      "statement": "Quelle fraction du roman Inès et Bastien ont-ils lue à eux deux ? Écris-la sous la forme numérateur/dénominateur.",
+      "type": "texte",
+      "answer": {
+        "value": "11/18",
+        "accepted": [
+          "22/36",
+          "33/54",
+          "44/72",
+          "11/18 du roman"
+        ]
+      },
+      "points": 3,
+      "solution_steps": [
+        "On calcule $\\frac{4}{9} + \\frac{1}{6}$ : il faut un dénominateur commun, multiple de 9 et de 6. Le plus petit est 18.",
+        "$\\frac{4}{9} = \\frac{8}{18}$ et $\\frac{1}{6} = \\frac{1 \\times 3}{6 \\times 3} = \\frac{3}{18}$.",
+        "$\\frac{8}{18} + \\frac{3}{18} = \\frac{11}{18}$ : à eux deux, ils ont lu $\\frac{11}{18}$ du roman."
+      ],
+      "hint": "Écris les deux fractions avec un même dénominateur."
+    },
+    {
+      "key": "q4",
+      "skill_id": "C011",
+      "statement": "Quelle fraction du roman reste-t-il à lire en janvier ? Écris-la sous la forme numérateur/dénominateur.",
+      "type": "texte",
+      "answer": {
+        "value": "5/36",
+        "accepted": [
+          "10/72",
+          "15/108",
+          "20/144",
+          "30/216",
+          "5/36 du roman"
+        ]
+      },
+      "points": 4,
+      "solution_steps": [
+        "Il faut un dénominateur commun à 9, 6 et 4. Les multiples de 9 : 9 ; 18 ; 27 ; 36. Le premier qui est aussi multiple de 6 et de 4 est 36.",
+        "$\\frac{4}{9} = \\frac{16}{36}$ ; $\\frac{1}{6} = \\frac{6}{36}$ ; $\\frac{1}{4} = \\frac{9}{36}$.",
+        "Les trois lecteurs ont lu $\\frac{16}{36} + \\frac{6}{36} + \\frac{9}{36} = \\frac{31}{36}$ du roman.",
+        "Le roman entier vaut $\\frac{36}{36}$ : il reste $\\frac{36}{36} - \\frac{31}{36} = \\frac{5}{36}$ du roman à lire en janvier."
+      ],
+      "hint": "Le roman entier peut s'écrire avec le même dénominateur que les trois fractions."
+    }
+  ],
+  "review_status": "brouillon",
+  "programme_ref": "Cycle 4, Nombres rationnels : « Trouver un dénominateur commun à deux fractions pour les additionner, les soustraire ou les comparer. »"
+}

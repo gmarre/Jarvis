@@ -1,0 +1,105 @@
+{
+  "id": "SX-G008-01",
+  "skill_id": "G008",
+  "skill_ids": [
+    "G008",
+    "B036"
+  ],
+  "school_level": "CE1",
+  "title": "La lanterne de la kermesse",
+  "contexte": "Pour la kermesse, Léa installe une guirlande. Elle tend une corde entre deux poteaux. Sur le plan, la corde est le segment [KL]. La vraie corde mesure 16 mètres, et les poteaux mesurent 3 mètres de haut.\n\nLéa accroche une lanterne au milieu de la corde.\n\nAu sol, un piquet est planté au point O. Léa veut tracer à la craie le cercle de centre O qui passe juste sous la lanterne. Sur le plan, trois cercles sont tracés, avec les numéros 1, 2 et 3.\n\nLa kermesse commence à 14 heures.",
+  "image": "figures/SX-G008-01",
+  "duree_estimee_min": 10,
+  "questions": [
+    {
+      "key": "q1",
+      "skill_id": "G008",
+      "statement": "Pour savoir à quelle distance du poteau K accrocher la lanterne, de quelle donnée Léa a-t-elle besoin ?",
+      "type": "qcm",
+      "choices": [
+        {
+          "key": "a",
+          "text": "La hauteur des poteaux",
+          "misconception": "La hauteur des poteaux ne dit rien de l'endroit où se trouve le milieu de la corde."
+        },
+        {
+          "key": "b",
+          "text": "La longueur de la corde",
+          "misconception": null
+        },
+        {
+          "key": "c",
+          "text": "L'heure de la kermesse",
+          "misconception": "L'heure n'est pas une longueur : elle ne sert pas à placer la lanterne."
+        }
+      ],
+      "answer": {
+        "value": "b"
+      },
+      "points": 1,
+      "solution_steps": [
+        "La lanterne est au milieu de la corde : il faut partager la longueur de la corde en deux.",
+        "La donnée utile est **la longueur de la corde**, 16 mètres. La hauteur des poteaux et l'heure ne servent pas."
+      ],
+      "hint": null
+    },
+    {
+      "key": "q2",
+      "skill_id": "B036",
+      "statement": "À combien de mètres du poteau K Léa accroche-t-elle la lanterne ?",
+      "type": "numerique",
+      "answer": {
+        "value": 8,
+        "unit": "m",
+        "accepted": [
+          "huit mètres",
+          "8 metres",
+          "huit"
+        ]
+      },
+      "points": 3,
+      "solution_steps": [
+        "Le milieu partage la corde en deux parties de même longueur.",
+        "On partage 16 mètres en 2 parts égales : 8 + 8 = 16, donc chaque part mesure 8 mètres.",
+        "La lanterne est à **8 mètres** du poteau K. Attention : sur le plan, elle est à 4 carreaux de K, mais la question porte sur la vraie corde."
+      ],
+      "hint": "Partage la longueur de la vraie corde en deux parts égales."
+    },
+    {
+      "key": "q3",
+      "skill_id": "G008",
+      "statement": "Quel cercle Léa doit-elle tracer ?",
+      "type": "qcm",
+      "choices": [
+        {
+          "key": "a",
+          "text": "Le cercle 1",
+          "misconception": "Le cercle 1 a bien pour centre O, mais il passe par T, qui n'est pas le milieu du segment [KL]."
+        },
+        {
+          "key": "b",
+          "text": "Le cercle 2",
+          "misconception": "L'élève échange le centre et le point de passage : le cercle 2 a pour centre S et passe par O."
+        },
+        {
+          "key": "c",
+          "text": "Le cercle 3",
+          "misconception": null
+        }
+      ],
+      "answer": {
+        "value": "c"
+      },
+      "points": 4,
+      "solution_steps": [
+        "Sur le plan, le segment [KL] mesure 8 carreaux. Son milieu est à 4 carreaux de K et à 4 carreaux de L : c'est le point S. Le point T n'est pas au milieu.",
+        "Le cercle cherché a pour centre O et passe par S.",
+        "Le cercle 3 a pour centre O et passe par S : c'est **le cercle 3**.",
+        "Le cercle 1 a pour centre O mais passe par T ; le cercle 2 passe par O, mais son centre est S."
+      ],
+      "hint": "Trouve d'abord le milieu du segment [KL] sur le plan."
+    }
+  ],
+  "review_status": "brouillon",
+  "programme_ref": "Cycle 2, Cours élémentaire première année, Espace et géométrie, La géométrie plane : « L'élève sait tracer un cercle avec un compas. Il sait tracer le cercle de centre un point donné et passant par un autre point donné. »"
+}

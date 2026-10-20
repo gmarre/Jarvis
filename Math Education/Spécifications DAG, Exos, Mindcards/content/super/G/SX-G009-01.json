@@ -1,0 +1,92 @@
+{
+  "id": "SX-G009-01",
+  "skill_id": "G009",
+  "skill_ids": [
+    "G009",
+    "B001"
+  ],
+  "school_level": "CE1",
+  "title": "Le champ de M. Petit",
+  "contexte": "M. Petit a un champ. Le dessin montre le champ vu d'avion : c'est la figure EFGH.\n\nLes côtés du champ mesurent :\nEF : 52 mètres ;\nFG : 34 mètres ;\nGH : 31 mètres ;\nHE : 40 mètres.\n\nM. Petit veut poser une clôture le long des côtés EF et FG, au bord de la route.\n\nDans le champ, il y a 12 pommiers et 3 vaches. Pour vérifier les coins du champ sur le dessin, M. Petit pose le coin d'une feuille de papier.",
+  "image": "figures/SX-G009-01",
+  "duree_estimee_min": 10,
+  "questions": [
+    {
+      "key": "q1",
+      "skill_id": "B001",
+      "statement": "Quelle longueur de clôture M. Petit doit-il poser ?",
+      "type": "numerique",
+      "answer": {
+        "value": 86,
+        "unit": "m",
+        "accepted": [
+          "86 mètres",
+          "86 metres"
+        ]
+      },
+      "points": 2,
+      "solution_steps": [
+        "La clôture longe les côtés EF et FG seulement : 52 mètres et 34 mètres. Les autres côtés ne servent pas.",
+        "52 + 34 : 2 unités + 4 unités = 6 unités ; 5 dizaines + 3 dizaines = 8 dizaines.",
+        "52 + 34 = 86. M. Petit pose **86 mètres** de clôture."
+      ],
+      "hint": "Relis la phrase qui parle de la clôture."
+    },
+    {
+      "key": "q2",
+      "skill_id": "G009",
+      "statement": "Combien d'angles droits a le champ ?",
+      "type": "numerique",
+      "answer": {
+        "value": 2,
+        "unit": "angles droits",
+        "accepted": [
+          "deux",
+          "deux angles droits",
+          "2 angles",
+          "deux angles"
+        ]
+      },
+      "points": 3,
+      "solution_steps": [
+        "On regarde les 4 coins du champ, un par un, en posant le coin d'une feuille.",
+        "En F et en G, le coin de la feuille colle exactement aux deux côtés : ce sont des angles droits.",
+        "En E, l'angle est plus petit qu'un angle droit ; en H, il est plus grand.",
+        "Le champ a **2 angles droits**."
+      ],
+      "hint": "Pose le coin d'une feuille sur chaque coin du champ."
+    },
+    {
+      "key": "q3",
+      "skill_id": "G009",
+      "statement": "Un des angles du champ est obtus. Quel est son sommet ?",
+      "type": "texte",
+      "answer": {
+        "value": "H",
+        "accepted": [
+          "le sommet H",
+          "sommet H",
+          "le point H",
+          "point H",
+          "le angle H",
+          "angle H",
+          "le H",
+          "c'est H",
+          "c'est le H",
+          "en H",
+          "le coin H",
+          "l'angle H"
+        ]
+      },
+      "points": 4,
+      "solution_steps": [
+        "Un angle obtus est plus grand qu'un angle droit : le coin de la feuille tient à l'intérieur, et il reste de la place.",
+        "En F et en G, les angles sont droits. En E, l'angle est aigu : le coin de la feuille dépasse.",
+        "En H, l'angle est plus ouvert qu'un angle droit : le sommet de l'angle obtus est **H**."
+      ],
+      "hint": null
+    }
+  ],
+  "review_status": "brouillon",
+  "programme_ref": "Cycle 2, Cours élémentaire première année, Espace et géométrie, La géométrie plane : « L'élève sait dire qu'un angle n'est pas droit sans équerre quand il n'y a aucun doute. Il sait alors dire si l'angle est aigu (plus petit qu'un angle droit) ou obtus (plus grand qu'un angle droit). »"
+}

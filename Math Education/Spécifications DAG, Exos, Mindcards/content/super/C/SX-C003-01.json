@@ -1,0 +1,84 @@
+{
+  "id": "SX-C003-01",
+  "skill_id": "C003",
+  "skill_ids": [
+    "C003",
+    "A001"
+  ],
+  "school_level": "CE1",
+  "title": "La fête des voisins",
+  "contexte": "Dimanche, c'est la fête des voisins dans l'immeuble de Yanis. 9 familles sont venues.\n\nMme Benali apporte une quiche, coupée en 6 parts égales.\n\nM. Durand apporte une tarte de la même taille que la quiche. Elle est coupée en 8 parts égales.\n\nYanis apporte un gâteau au chocolat. On le voit sur l'image : il est coupé en parts égales, et les parts coloriées sont déjà mangées.\n\nPendant ce temps, les enfants jouent au ballon dans la cour, et les parents installent les tables.",
+  "image": "figures/SX-C003-01",
+  "duree_estimee_min": 8,
+  "questions": [
+    {
+      "key": "q1",
+      "skill_id": "A001",
+      "statement": "Combien de parts du gâteau de Yanis restent à manger ?",
+      "type": "numerique",
+      "answer": {
+        "value": 3,
+        "unit": "parts"
+      },
+      "points": 2,
+      "solution_steps": [
+        "Les parts coloriées sont déjà mangées : il reste les parts blanches.",
+        "On compte les parts blanches : 1, 2, 3.",
+        "Il reste **3 parts** à manger."
+      ],
+      "hint": "Regarde les parts qui ne sont pas coloriées."
+    },
+    {
+      "key": "q2",
+      "skill_id": "C003",
+      "statement": "On écrit la fraction du gâteau de Yanis qui est déjà mangée. Quel est le dénominateur de cette fraction ?",
+      "type": "numerique",
+      "answer": {
+        "value": 5
+      },
+      "points": 3,
+      "solution_steps": [
+        "Le dénominateur est le nombre total de parts égales du gâteau.",
+        "On compte toutes les parts, coloriées ou non : 1, 2, 3, 4, 5.",
+        "Le gâteau est partagé en 5 parts : la fraction mangée est $\\frac{2}{5}$, son dénominateur est **5**."
+      ],
+      "hint": "Le dénominateur compte des parts : lesquelles ?"
+    },
+    {
+      "key": "q3",
+      "skill_id": "C003",
+      "statement": "Léo hésite entre une part de quiche et une part de tarte. Il veut la plus grosse part. Que doit-il choisir ?",
+      "type": "qcm",
+      "choices": [
+        {
+          "key": "a",
+          "text": "Une part de quiche, car la quiche est coupée en moins de parts.",
+          "misconception": null
+        },
+        {
+          "key": "b",
+          "text": "Une part de tarte, car la tarte est coupée en plus de parts.",
+          "misconception": "L'élève croit que plus il y a de parts, plus elles sont grosses. C'est le contraire : la tarte coupée en 8 a des parts plus petites."
+        },
+        {
+          "key": "c",
+          "text": "C'est pareil, car il prend une part à chaque fois.",
+          "misconception": "L'élève oublie que la taille d'une part dépend du nombre de parts : couper en 8 donne des parts plus petites que couper en 6."
+        }
+      ],
+      "answer": {
+        "value": "a"
+      },
+      "points": 4,
+      "solution_steps": [
+        "La quiche et la tarte ont la même taille.",
+        "Une part de quiche, c'est $\\frac{1}{6}$ de la quiche ; une part de tarte, c'est $\\frac{1}{8}$ de la tarte.",
+        "Le dénominateur dit en combien de parts on coupe : plus il y a de parts, plus chaque part est petite.",
+        "Léo doit choisir **une part de quiche**."
+      ],
+      "hint": "Imagine la quiche et la tarte posées côte à côte."
+    }
+  ],
+  "review_status": "brouillon",
+  "programme_ref": "Cycle 2, Cours élémentaire première année, Les fractions : « le dénominateur indique le nombre total de parts égales »"
+}

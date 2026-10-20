@@ -1,0 +1,99 @@
+{
+  "id": "SX-G014-01",
+  "skill_id": "G014",
+  "skill_ids": [
+    "G014",
+    "A002",
+    "B001"
+  ],
+  "school_level": "CE2",
+  "title": "La mosaïque de la fenêtre",
+  "contexte": "Pour la fête du printemps, la classe de CE2 décore les vitres avec des mosaïques de carreaux de couleur. Chaque motif doit être symétrique par rapport à un axe.\n\nSur la vitre de la fenêtre, l'axe est la droite en pointillés. Les carreaux bleus sont déjà collés, à gauche de l'axe. À droite, Sami a commencé : il a collé les carreaux jaunes. Il n'a pas fini, et les cases qui portent une lettre sont vides.\n\nSur la vitre de la porte, Lina a fait un autre motif symétrique. À gauche de son axe, il y a 21 carreaux, et aucun carreau ne touche l'axe.\n\nUne boîte contient 50 carreaux. La classe compte 27 élèves.",
+  "image": "figures/SX-G014-01",
+  "duree_estimee_min": 15,
+  "questions": [
+    {
+      "key": "q1",
+      "skill_id": "A002",
+      "statement": "Sur la vitre de la fenêtre, combien de carreaux bleus sont déjà collés à gauche de l'axe ?",
+      "type": "numerique",
+      "answer": {
+        "value": 11,
+        "unit": "carreaux",
+        "accepted": [
+          "onze",
+          "onze carreaux",
+          "11 carreaux bleus"
+        ]
+      },
+      "points": 1,
+      "solution_steps": [
+        "On compte seulement les cases bleues, à gauche de l'axe, ligne par ligne, sans en oublier.",
+        "Il y a **11 carreaux bleus**. Quand le motif sera fini, il y aura donc 11 carreaux jaunes : un jumeau pour chaque carreau bleu."
+      ],
+      "hint": null
+    },
+    {
+      "key": "q2",
+      "skill_id": "B001",
+      "statement": "Quand le motif de Lina sera fini, combien de carreaux y aura-t-il en tout sur la vitre de la porte ?",
+      "type": "numerique",
+      "answer": {
+        "value": 42,
+        "unit": "carreaux",
+        "accepted": [
+          "42 carreaux",
+          "quarante-deux"
+        ]
+      },
+      "points": 3,
+      "solution_steps": [
+        "Dans un motif symétrique, chaque carreau à gauche de l'axe a son carreau jumeau à droite. Aucun carreau ne touche l'axe : aucun n'est son propre jumeau.",
+        "Il y a donc autant de carreaux à droite qu'à gauche : 21 à gauche et 21 à droite.",
+        "21 + 21 : 1 unité + 1 unité = 2 unités ; 2 dizaines + 2 dizaines = 4 dizaines. 21 + 21 = 42.",
+        "Le motif de Lina compte **42 carreaux**."
+      ],
+      "hint": "Combien de carreaux y a-t-il de l'autre côté de l'axe ?"
+    },
+    {
+      "key": "q3",
+      "skill_id": "G014",
+      "statement": "Quelles cases lettrées Sami doit-il remplir pour que le motif de la fenêtre soit symétrique ? Écris leurs lettres.",
+      "type": "texte",
+      "answer": {
+        "value": "B, E",
+        "accepted": [
+          "B et E",
+          "B, E",
+          "B ; E",
+          "B E",
+          "BE",
+          "B-E",
+          "les cases B et E",
+          "la case B et la case E",
+          "B et la case E",
+          "E et B",
+          "E, B",
+          "E ; B",
+          "E B",
+          "EB",
+          "E-B",
+          "les cases E et B",
+          "la case E et la case B",
+          "E et la case B"
+        ]
+      },
+      "points": 4,
+      "solution_steps": [
+        "Chaque carreau bleu a son jumeau de l'autre côté de l'axe, sur la même ligne, à la même distance de l'axe.",
+        "Le carreau bleu qui touche l'axe sur la 5e ligne a son jumeau juste de l'autre côté de l'axe : c'est la case B.",
+        "Sur la 6e ligne, le carreau bleu est à 1 carreau de l'axe : son jumeau est à 1 carreau de l'axe, à droite : c'est la case E.",
+        "Vérification : il y a 11 carreaux bleus, et Sami a déjà collé 9 carreaux jaunes : il en manque bien 2.",
+        "Sami doit remplir les **cases B et E**. Les cases A et C sont obtenues en faisant glisser le motif au lieu de le retourner ; la case D n'a pas de carreau bleu en face."
+      ],
+      "hint": "Pour chaque case lettrée, regarde la case qui lui fait face de l'autre côté de l'axe."
+    }
+  ],
+  "review_status": "brouillon",
+  "programme_ref": "Cycle 2, Cours élémentaire deuxième année, Espace et géométrie, La géométrie plane : « Compléter, sur une feuille quadrillée ou pointée, une figure simple pour la rendre symétrique par rapport à un axe donné. »"
+}

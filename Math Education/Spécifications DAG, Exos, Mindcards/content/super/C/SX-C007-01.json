@@ -1,0 +1,123 @@
+{
+  "id": "SX-C007-01",
+  "skill_id": "C007",
+  "skill_ids": [
+    "C007",
+    "A015",
+    "A027"
+  ],
+  "school_level": "4e",
+  "title": "Le sondage de la cantine",
+  "contexte": "Le conseil de la vie collégienne a fait un sondage sur le nouveau menu végétarien de la cantine. Le collège compte 512 élèves, et le sondage a duré deux semaines.\n\nEn 6e, 84 élèves ont répondu, et 63 d'entre eux aiment le menu.\nEn 5e, 72 élèves ont répondu, et 45 aiment le menu.\nEn 4e, 70 élèves ont répondu, et 42 aiment le menu.\nEn 3e, 75 élèves ont répondu, et 45 aiment le menu.\n\nPour l'affiche, chaque résultat sera écrit comme une fraction des élèves qui ont répondu, simplifiée au maximum.",
+  "image": null,
+  "duree_estimee_min": 15,
+  "questions": [
+    {
+      "key": "q1",
+      "skill_id": "A015",
+      "statement": "Sans poser de division, comment peut-on savoir que 45 et 72 sont tous les deux divisibles par 9 ?",
+      "type": "qcm",
+      "choices": [
+        {
+          "key": "a",
+          "text": "Ils sont tous les deux divisibles par 3.",
+          "misconception": "Un nombre divisible par 3 n'est pas toujours divisible par 9 : 12 est divisible par 3, pas par 9."
+        },
+        {
+          "key": "b",
+          "text": "La somme de leurs chiffres est divisible par 9 : 4 + 5 = 9 et 7 + 2 = 9.",
+          "misconception": null
+        },
+        {
+          "key": "c",
+          "text": "Leur chiffre des unités est dans la table de 9.",
+          "misconception": "L'élève regarde le dernier chiffre, comme pour 2, 5 ou 10. Ce n'est pas le critère de 9, et ni 5 ni 2 ne sont dans la table de 9."
+        }
+      ],
+      "answer": {
+        "value": "b"
+      },
+      "points": 2,
+      "solution_steps": [
+        "Critère de divisibilité par 9 : un entier est divisible par 9 quand la somme de ses chiffres est divisible par 9.",
+        "4 + 5 = 9 et 7 + 2 = 9 : 45 et 72 sont divisibles par 9."
+      ],
+      "hint": "Quel est le critère de divisibilité par 9 ?"
+    },
+    {
+      "key": "q2",
+      "skill_id": "C007",
+      "statement": "Simplifie au maximum la fraction des élèves de 5e qui aiment le menu. Écris-la sous la forme numérateur/dénominateur.",
+      "type": "texte",
+      "answer": {
+        "value": "5/8",
+        "accepted": [
+          "5 / 8"
+        ]
+      },
+      "points": 3,
+      "solution_steps": [
+        "En 5e, la fraction est $\\frac{45}{72}$.",
+        "45 et 72 sont dans la table de 9 : 45 = 9 × 5 et 72 = 9 × 8.",
+        "$\\frac{45}{72} = \\frac{9 \\times 5}{9 \\times 8} = \\frac{5}{8}$. 5 et 8 n'ont plus de diviseur commun autre que 1 : on ne peut pas aller plus loin."
+      ],
+      "hint": "Cherche une table de multiplication qui contient 45 et 72."
+    },
+    {
+      "key": "q3",
+      "skill_id": "A027",
+      "statement": "Quel est le plus grand nombre qui divise à la fois 63 et 84 ?",
+      "type": "numerique",
+      "answer": {
+        "value": 21
+      },
+      "points": 3,
+      "solution_steps": [
+        "Diviseurs de 63 : 1 ; 3 ; 7 ; 9 ; 21 ; 63.",
+        "Parmi eux, ceux qui divisent 84 : 1 ; 3 ; 7 ; 21, car 84 = 21 × 4.",
+        "Le plus grand diviseur commun à 63 et 84 est **21**. D'où $\\frac{63}{84} = \\frac{21 \\times 3}{21 \\times 4} = \\frac{3}{4}$."
+      ],
+      "hint": "Liste les diviseurs de 63, puis garde ceux qui divisent 84."
+    },
+    {
+      "key": "q4",
+      "skill_id": "C007",
+      "statement": "Sur l'affiche, le conseil écrit : « En 4e et en 3e, la même part des élèves qui ont répondu aime le menu. » A-t-il raison ?",
+      "type": "qcm",
+      "choices": [
+        {
+          "key": "a",
+          "text": "Non, car 42 et 45 sont différents.",
+          "misconception": "L'élève compare les nombres d'élèves qui aiment le menu, sans les rapporter au nombre d'élèves qui ont répondu."
+        },
+        {
+          "key": "b",
+          "text": "Non : $\\frac{42}{70} = \\frac{6}{10}$ et $\\frac{45}{75} = \\frac{9}{15}$, ce ne sont pas les mêmes fractions.",
+          "misconception": "L'élève s'arrête avant la fin : $\\frac{6}{10}$ et $\\frac{9}{15}$ se simplifient encore, toutes les deux en $\\frac{3}{5}$."
+        },
+        {
+          "key": "c",
+          "text": "Oui : les deux fractions se simplifient en $\\frac{3}{5}$.",
+          "misconception": null
+        },
+        {
+          "key": "d",
+          "text": "Non, car en 3e, plus d'élèves ont répondu.",
+          "misconception": "Le nombre d'élèves qui ont répondu ne suffit pas : il faut comparer les fractions."
+        }
+      ],
+      "answer": {
+        "value": "c"
+      },
+      "points": 4,
+      "solution_steps": [
+        "En 4e : $\\frac{42}{70} = \\frac{14 \\times 3}{14 \\times 5} = \\frac{3}{5}$.",
+        "En 3e : $\\frac{45}{75} = \\frac{15 \\times 3}{15 \\times 5} = \\frac{3}{5}$.",
+        "Les deux fractions simplifiées au maximum sont égales : le conseil a raison, même si les nombres d'élèves sont différents."
+      ],
+      "hint": "Simplifie au maximum chacune des deux fractions."
+    }
+  ],
+  "review_status": "brouillon",
+  "programme_ref": "Cycle 4, Quatrième, Nombres rationnels, Objectifs d'apprentissage : « Simplifier une fraction. »"
+}

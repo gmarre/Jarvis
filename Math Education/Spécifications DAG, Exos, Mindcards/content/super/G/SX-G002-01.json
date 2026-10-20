@@ -1,0 +1,99 @@
+{
+  "id": "SX-G002-01",
+  "skill_id": "G002",
+  "skill_ids": [
+    "G002",
+    "G001",
+    "A001"
+  ],
+  "school_level": "CP",
+  "title": "Le robot de la cour",
+  "contexte": "Dans la cour, la maîtresse a peint un grand tapis quadrillé. Lou et Sam jouent avec un petit robot. Le robot regarde vers la pointe du triangle.\n\nSur le tapis, les cases jaunes sont des fleurs. Les cases bleues sont des flaques. Six cases portent une lettre.\n\nLou cache un trésor sous la lettre qui est entre la lettre A et la lettre C.\n\nSam donne ce programme au robot :\navance de 2 cases ;\ntourne à droite ;\navance de 3 cases ;\ntourne à gauche ;\navance de 1 case.\n\nLa récréation dure 15 minutes. Lou a 6 ans.",
+  "image": "figures/SX-G002-01",
+  "duree_estimee_min": 8,
+  "questions": [
+    {
+      "key": "q1",
+      "skill_id": "G001",
+      "statement": "Sous quelle lettre Lou cache-t-elle le trésor ?",
+      "type": "texte",
+      "answer": {
+        "value": "G",
+        "accepted": [
+          "la lettre G",
+          "lettre G",
+          "la case G",
+          "case G",
+          "le G",
+          "c'est G",
+          "c'est le G",
+          "sous la lettre G",
+          "sous la case G",
+          "sous G",
+          "sous le G"
+        ]
+      },
+      "points": 2,
+      "solution_steps": [
+        "Sur le tapis, on cherche la lettre A et la lettre C : elles sont sur la même ligne, en bas du tapis.",
+        "Entre les deux, sur cette ligne, il y a la lettre G : A est d'un côté, C est de l'autre côté.",
+        "Lou cache le trésor sous la **lettre G**. Attention : ce n'est pas la lettre B, qui suit A dans l'alphabet mais n'est pas entre A et C sur le tapis."
+      ],
+      "hint": "Pose un doigt sur la lettre A et un doigt sur la lettre C."
+    },
+    {
+      "key": "q2",
+      "skill_id": "A001",
+      "statement": "Combien y a-t-il de fleurs sur le tapis ?",
+      "type": "numerique",
+      "answer": {
+        "value": 7,
+        "unit": "fleurs",
+        "accepted": [
+          "sept",
+          "sept fleurs",
+          "7 cases"
+        ]
+      },
+      "points": 2,
+      "solution_steps": [
+        "Les fleurs sont les cases **jaunes**. Les cases bleues sont des flaques : on ne les compte pas.",
+        "On compte les cases jaunes une par une, sans en oublier : 1, 2, 3, 4, 5, 6, 7.",
+        "Il y a **7 fleurs**. En comptant les fleurs et les flaques, on trouve 10 cases coloriées : c'est trop."
+      ],
+      "hint": "Relis la phrase qui parle des fleurs."
+    },
+    {
+      "key": "q3",
+      "skill_id": "G002",
+      "statement": "Sur quelle lettre le robot arrive-t-il avec le programme de Sam ?",
+      "type": "texte",
+      "answer": {
+        "value": "D",
+        "accepted": [
+          "la lettre D",
+          "lettre D",
+          "la case D",
+          "case D",
+          "le D",
+          "c'est D",
+          "c'est le D",
+          "sur la lettre D",
+          "sur la case D",
+          "sur D",
+          "sur le D"
+        ]
+      },
+      "points": 4,
+      "solution_steps": [
+        "Au départ, le robot regarde vers la gauche du tapis. Il avance de 2 cases vers la gauche.",
+        "Il tourne à **sa** droite : quand on regarde vers la gauche du tapis, sa droite est vers le haut du tapis. Il avance de 3 cases vers le haut.",
+        "Il tourne à **sa** gauche : il regarde vers le haut, sa gauche est vers la gauche du tapis. Il avance de 1 case.",
+        "Le robot arrive sur la **lettre D**. Attention : tourner vers la droite du tapis au premier virage mène vers la lettre F ; tourner du mauvais côté aux deux virages mène vers la lettre C."
+      ],
+      "hint": "Avant chaque virage, regarde de quel côté le robot regarde."
+    }
+  ],
+  "review_status": "brouillon",
+  "programme_ref": "Cycle 2, Cours préparatoire, Espace et géométrie, Le repérage dans l'espace : « L'élève comprend et utilise les instructions suivantes : avancer, reculer, tourner à droite, tourner à gauche, monter, descendre. »"
+}

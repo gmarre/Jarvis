@@ -1,0 +1,127 @@
+{
+  "id": "SX-G012-01",
+  "skill_id": "G012",
+  "skill_ids": [
+    "G012",
+    "B036"
+  ],
+  "school_level": "CE2",
+  "title": "Les massifs du parc",
+  "contexte": "Au parc de la ville, le jardinier a dessiné le plan de quatre massifs de fleurs. Chaque massif porte un numéro. Sur le plan, il a codé les angles droits et les côtés de même longueur. Le plan n'est pas en vraie grandeur.\n\nAutour du massif 1, il pose une bordure en bois qui fait tout le tour du massif : elle mesure 28 mètres en tout.\n\nDans le massif 2, il plante 35 tulipes rouges. Le massif 4 recevra des rosiers.\n\nLe parc ouvre à 9 heures. On y trouve 3 fontaines et 46 bancs.",
+  "image": "figures/SX-G012-01",
+  "duree_estimee_min": 15,
+  "questions": [
+    {
+      "key": "q1",
+      "skill_id": "G012",
+      "statement": "Comment s'appelle le polygone qui forme le massif 4 ?",
+      "type": "texte",
+      "answer": {
+        "value": "hexagone",
+        "accepted": [
+          "un hexagone",
+          "l'hexagone",
+          "c'est un hexagone",
+          "hexagones"
+        ]
+      },
+      "points": 2,
+      "solution_steps": [
+        "On compte les côtés du massif 4 en faisant le tour : il en a 6, et 6 sommets.",
+        "Un polygone qui a 6 côtés est un **hexagone**, même si ses côtés n'ont pas tous la même longueur."
+      ],
+      "hint": "Compte ses côtés."
+    },
+    {
+      "key": "q2",
+      "skill_id": "B036",
+      "statement": "Combien de mètres mesure un côté du massif 1 ?",
+      "type": "numerique",
+      "answer": {
+        "value": 7,
+        "unit": "m",
+        "accepted": [
+          "7 mètres",
+          "7 metres",
+          "sept mètres"
+        ]
+      },
+      "points": 3,
+      "solution_steps": [
+        "Le codage montre que les 4 côtés du massif 1 ont la même longueur.",
+        "La bordure fait le tour : elle est partagée en 4 côtés égaux. On partage 28 mètres en 4 parts égales.",
+        "7 + 7 + 7 + 7 = 28 : chaque côté mesure **7 mètres**. Partager en 2 donnerait 14 : c'est oublier que le tour compte 4 côtés."
+      ],
+      "hint": "Combien de côtés compte la bordure, et comment sont-ils ?"
+    },
+    {
+      "key": "q3",
+      "skill_id": "G012",
+      "statement": "Quel massif est un carré ?",
+      "type": "qcm",
+      "choices": [
+        {
+          "key": "a",
+          "text": "Le massif 1",
+          "misconception": "L'élève voit 4 côtés de même longueur et s'arrête là : le massif 1 n'a aucun angle droit, c'est un losange."
+        },
+        {
+          "key": "b",
+          "text": "Le massif 2",
+          "misconception": null
+        },
+        {
+          "key": "c",
+          "text": "Le massif 3",
+          "misconception": "Le massif 3 a 4 angles droits, mais ses côtés ne sont pas tous codés de la même façon : c'est un rectangle."
+        }
+      ],
+      "answer": {
+        "value": "b"
+      },
+      "points": 4,
+      "solution_steps": [
+        "Un carré a 4 côtés de même longueur **et** 4 angles droits : il faut lire les deux codages.",
+        "Le massif 1 a 4 côtés de même longueur, mais aucun angle droit : c'est un losange.",
+        "Le massif 3 a 4 angles droits, mais ses côtés ne sont pas tous codés pareils : c'est un rectangle.",
+        "Le massif 2 a 4 côtés codés de même longueur et 4 angles droits : **le massif 2** est un carré, même s'il est penché."
+      ],
+      "hint": "Lis les codages de chaque massif : petits carrés et petits traits."
+    },
+    {
+      "key": "q4",
+      "skill_id": "G012",
+      "statement": "Le massif 3 n'est pas un losange. Pourquoi ?",
+      "type": "qcm",
+      "choices": [
+        {
+          "key": "a",
+          "text": "Ses quatre côtés n'ont pas tous la même longueur.",
+          "misconception": null
+        },
+        {
+          "key": "b",
+          "text": "Il n'est pas posé sur une pointe.",
+          "misconception": "La position ne compte pas : un losange peut être dessiné dans n'importe quel sens."
+        },
+        {
+          "key": "c",
+          "text": "Il n'a pas quatre sommets.",
+          "misconception": "Faux : le massif 3 a bien quatre sommets, c'est un quadrilatère."
+        }
+      ],
+      "answer": {
+        "value": "a"
+      },
+      "points": 3,
+      "solution_steps": [
+        "Un losange est un quadrilatère qui a ses 4 côtés de même longueur.",
+        "Sur le massif 3, deux côtés portent un trait et deux côtés portent deux traits : ils n'ont pas tous la même longueur.",
+        "Le massif 3 n'est pas un losange car **ses quatre côtés n'ont pas tous la même longueur**."
+      ],
+      "hint": null
+    }
+  ],
+  "review_status": "brouillon",
+  "programme_ref": "Cycle 2, Cours élémentaire deuxième année, Espace et géométrie, La géométrie plane : « Reconnaitre, nommer et décrire le carré, le rectangle, le triangle, le triangle rectangle et le losange. »"
+}

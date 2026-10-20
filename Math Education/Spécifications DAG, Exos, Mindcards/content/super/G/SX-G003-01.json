@@ -1,0 +1,96 @@
+{
+  "id": "SX-G003-01",
+  "skill_id": "G003",
+  "skill_ids": [
+    "G003",
+    "A001"
+  ],
+  "school_level": "CP",
+  "title": "Le tableau de Zoé",
+  "contexte": "Zoé fait un tableau avec des formes en papier de couleur. Elle colle chaque forme sur une grande feuille blanche, puis elle écrit une lettre sur la forme.\n\nZoé colle une maison, la niche de son chien, un sapin, le soleil et un cerf-volant. Le cerf-volant vole dans le ciel : il est posé sur une pointe.\n\nZoé a 6 ans. Elle a commencé son tableau à 10 heures. Dans sa boîte, il lui reste 9 gommettes en forme d'étoile. Elle montre son tableau à sa grand-mère, qui le trouve très beau.",
+  "image": "figures/SX-G003-01",
+  "duree_estimee_min": 8,
+  "questions": [
+    {
+      "key": "q1",
+      "skill_id": "A001",
+      "statement": "Combien de formes Zoé a-t-elle collées sur son tableau ?",
+      "type": "numerique",
+      "answer": {
+        "value": 7,
+        "unit": "formes",
+        "accepted": [
+          "sept",
+          "sept formes"
+        ]
+      },
+      "points": 2,
+      "solution_steps": [
+        "On compte les formes du dessin, pas les objets : la maison est faite de plusieurs formes.",
+        "La maison : le mur (A), le toit (B) et la porte (C), soit 3 formes. Puis le cerf-volant (D), le soleil (E), la niche (F) et le sapin (G).",
+        "On compte : 1, 2, 3, 4, 5, 6, 7. Zoé a collé **7 formes**. En comptant les objets cités, on trouverait 5 : c'est faux, car la maison compte 3 formes."
+      ],
+      "hint": "Relis la phrase qui dit ce que Zoé écrit sur chaque forme."
+    },
+    {
+      "key": "q2",
+      "skill_id": "G003",
+      "statement": "Combien de sommets a la forme F ?",
+      "type": "numerique",
+      "answer": {
+        "value": 5,
+        "unit": "sommets",
+        "accepted": [
+          "cinq",
+          "cinq sommets"
+        ]
+      },
+      "points": 3,
+      "solution_steps": [
+        "Un sommet est un coin de la forme, là où deux côtés se touchent.",
+        "La forme F ressemble à une petite maison : deux coins en bas, deux coins sur les côtés, et la pointe en haut.",
+        "On compte : 1, 2, 3, 4, 5. La forme F a **5 sommets** (et 5 côtés). Ce n'est ni un carré, ni un rectangle, ni un triangle."
+      ],
+      "hint": "Pose ton doigt sur chaque coin de la forme F, en faisant le tour."
+    },
+    {
+      "key": "q3",
+      "skill_id": "G003",
+      "statement": "Quelles formes sont des carrés ? Écris leurs lettres.",
+      "type": "texte",
+      "answer": {
+        "value": "A, D",
+        "accepted": [
+          "A et D",
+          "A, D",
+          "A ; D",
+          "A D",
+          "AD",
+          "A-D",
+          "les formes A et D",
+          "la forme A et la forme D",
+          "A et la forme D",
+          "D et A",
+          "D, A",
+          "D ; A",
+          "D A",
+          "DA",
+          "D-A",
+          "les formes D et A",
+          "la forme D et la forme A",
+          "D et la forme A"
+        ]
+      },
+      "points": 4,
+      "solution_steps": [
+        "Un carré a 4 côtés de même longueur et 4 coins pareils.",
+        "La forme A (le mur) est un carré. La forme D (le cerf-volant) est un carré posé sur une pointe : tourné, c'est toujours un carré.",
+        "La forme C (la porte) a 4 côtés, mais deux côtés sont longs et deux sont courts : c'est un rectangle, pas un carré.",
+        "Les carrés sont les **formes A et D**."
+      ],
+      "hint": "Regarde toutes les formes qui ont 4 côtés, même celles qui sont penchées."
+    }
+  ],
+  "review_status": "brouillon",
+  "programme_ref": "Cycle 2, Cours préparatoire, Espace et géométrie, La géométrie plane : « Nommer le disque, le carré, le rectangle et le triangle. »"
+}

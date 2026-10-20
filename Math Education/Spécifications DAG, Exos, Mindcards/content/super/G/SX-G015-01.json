@@ -1,0 +1,124 @@
+{
+  "id": "SX-G015-01",
+  "skill_id": "G015",
+  "skill_ids": [
+    "G015",
+    "G009",
+    "B036"
+  ],
+  "school_level": "CM1",
+  "title": "Les éventails de la fête",
+  "contexte": "Pour la fête de l'école, Nina, Lili et Paul fabriquent des éventails en papier plié. Ouvert, chaque éventail forme un angle. Le dessin montre les trois éventails ouverts, vus de face, avec le prénom de leur auteur.\n\nLes éventails n'ont pas la même taille : celui de Nina est le plus grand, celui de Paul est le plus petit.\n\nPour son éventail, Nina prend une bande de papier de 48 cm. Elle la plie en accordéon, en bandes toutes pareilles, de 4 cm chacune. La bande de Paul mesure 30 cm.\n\nLe concours du plus bel éventail commence à 15 heures. Le gagnant recevra un livre.",
+  "image": "figures/SX-G015-01",
+  "duree_estimee_min": 15,
+  "questions": [
+    {
+      "key": "q1",
+      "skill_id": "G015",
+      "statement": "L'éventail de Paul forme un angle. Écris le nom de cet angle avec trois lettres.",
+      "type": "texte",
+      "answer": {
+        "value": "HKL",
+        "accepted": [
+          "LKH",
+          "l'angle HKL",
+          "angle HKL",
+          "l'angle LKH",
+          "angle LKH",
+          "H K L",
+          "L K H"
+        ]
+      },
+      "points": 2,
+      "solution_steps": [
+        "Le nom d'un angle s'écrit avec trois lettres : un point d'un côté, le sommet, un point de l'autre côté. Le sommet est **au milieu**.",
+        "L'éventail de Paul a pour sommet K, et ses côtés passent par H et par L.",
+        "L'angle s'appelle **HKL** (ou LKH). Écrire KHL mettrait H au milieu : ce serait un autre angle, de sommet H."
+      ],
+      "hint": "Quelle lettre est au sommet de l'éventail de Paul ?"
+    },
+    {
+      "key": "q2",
+      "skill_id": "B036",
+      "statement": "En combien de bandes Nina plie-t-elle sa bande de papier ?",
+      "type": "numerique",
+      "answer": {
+        "value": 12,
+        "unit": "bandes",
+        "accepted": [
+          "douze",
+          "12 bandes",
+          "douze bandes"
+        ]
+      },
+      "points": 2,
+      "solution_steps": [
+        "On cherche combien de bandes de 4 cm on peut faire avec 48 cm : c'est un partage en groupes de 4 cm.",
+        "40 cm font 10 bandes de 4 cm ; les 8 cm qui restent font 2 bandes de plus. 10 + 2 = 12.",
+        "Nina plie sa bande en **12 bandes**. La bande de Paul (30 cm) ne sert pas ici."
+      ],
+      "hint": null
+    },
+    {
+      "key": "q3",
+      "skill_id": "G009",
+      "statement": "Comment est l'angle de l'éventail de Nina ?",
+      "type": "qcm",
+      "choices": [
+        {
+          "key": "a",
+          "text": "Aigu",
+          "misconception": null
+        },
+        {
+          "key": "b",
+          "text": "Droit",
+          "misconception": "Cet angle est nettement plus petit que le coin d'une feuille : il n'est pas droit."
+        },
+        {
+          "key": "c",
+          "text": "Obtus",
+          "misconception": "L'élève juge l'angle à la longueur de ses côtés : l'éventail de Nina est grand, mais il est peu ouvert."
+        }
+      ],
+      "answer": {
+        "value": "a"
+      },
+      "points": 3,
+      "solution_steps": [
+        "On compare l'angle à un angle droit, par exemple le coin d'une feuille posé sur le sommet de l'éventail.",
+        "L'angle de l'éventail de Nina est plus petit qu'un angle droit : il est **aigu**.",
+        "La grande taille de l'éventail ne change rien : la longueur des côtés ne dit pas si un angle est grand."
+      ],
+      "hint": "Pose le coin d'une feuille sur le sommet de l'éventail de Nina."
+    },
+    {
+      "key": "q4",
+      "skill_id": "G015",
+      "statement": "Range les trois éventails, du moins ouvert au plus ouvert. Écris les prénoms dans l'ordre, séparés par des virgules.",
+      "type": "texte",
+      "answer": {
+        "value": "Nina, Lili, Paul",
+        "accepted": [
+          "Nina Lili Paul",
+          "Nina, Lili et Paul",
+          "Nina puis Lili puis Paul",
+          "Nina ; Lili ; Paul",
+          "Nina - Lili - Paul",
+          "Nina, Lili, puis Paul",
+          "Nina < Lili < Paul"
+        ]
+      },
+      "points": 4,
+      "solution_steps": [
+        "La grandeur d'un angle, c'est son ouverture, pas la longueur de ses côtés.",
+        "L'éventail de Paul est plus ouvert qu'un angle droit : c'est le plus ouvert, même s'il est le plus petit.",
+        "Ceux de Nina et de Lili sont moins ouverts qu'un angle droit. En reportant l'angle de Lili sur celui de Nina (papier calque), il dépasse : Lili est plus ouvert que Nina.",
+        "Du moins ouvert au plus ouvert : **Nina, Lili, Paul**. Ranger par taille donnerait l'ordre inverse : c'est le piège."
+      ],
+      "hint": "Compare l'ouverture des angles, pas la longueur des côtés."
+    }
+  ],
+  "review_status": "brouillon",
+  "programme_ref": "Cycle 3, Cours moyen première année, Grandeurs et mesures, Les angles : « Comparer des angles »"
+}

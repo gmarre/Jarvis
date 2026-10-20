@@ -1,0 +1,106 @@
+{
+  "id": "SX-G010-01",
+  "skill_id": "G010",
+  "skill_ids": [
+    "G010",
+    "B001"
+  ],
+  "school_level": "CE1",
+  "title": "Les parcelles du jardin partagé",
+  "contexte": "Le jardin partagé de l'école est découpé en quatre parcelles. Le plan montre chaque parcelle avec un numéro. Les longueurs écrites sur le plan sont en mètres, et les angles droits y sont codés.\n\nLes élèves de CE1 s'occupent du jardin le mardi. Il y a 26 élèves dans la classe.\n\nLe jardinier, M. Ali, apporte 5 sacs de terreau. Il veut semer des radis dans la parcelle qui est un triangle rectangle. Il veut de plus poser une bordure de bois autour de la parcelle 1.\n\nTom, un élève, regarde le plan et dit : « La parcelle 2 est un carré. »",
+  "image": "figures/SX-G010-01",
+  "duree_estimee_min": 10,
+  "questions": [
+    {
+      "key": "q1",
+      "skill_id": "G010",
+      "statement": "Dans quelle parcelle M. Ali sème-t-il les radis ?",
+      "type": "qcm",
+      "choices": [
+        {
+          "key": "a",
+          "text": "La parcelle 4",
+          "misconception": "La parcelle 4 est un triangle, mais aucun de ses angles n'est droit."
+        },
+        {
+          "key": "b",
+          "text": "La parcelle 3",
+          "misconception": null
+        },
+        {
+          "key": "c",
+          "text": "La parcelle 1",
+          "misconception": "La parcelle 1 a des angles droits, mais elle a 4 côtés : ce n'est pas un triangle."
+        }
+      ],
+      "answer": {
+        "value": "b"
+      },
+      "points": 2,
+      "solution_steps": [
+        "Un triangle rectangle est un triangle qui a un angle droit.",
+        "Les parcelles 3 et 4 sont des triangles. Seule la parcelle 3 a un angle droit, codé par un petit carré.",
+        "M. Ali sème les radis dans **la parcelle 3**."
+      ],
+      "hint": null
+    },
+    {
+      "key": "q2",
+      "skill_id": "B001",
+      "statement": "La parcelle 1 est un rectangle. M. Ali pose d'abord la bordure le long des deux côtés où aucune longueur n'est écrite. Quelle longueur de bordure lui faut-il pour ces deux côtés ?",
+      "type": "numerique",
+      "answer": {
+        "value": 37,
+        "unit": "m",
+        "accepted": [
+          "37 mètres",
+          "37 metres"
+        ]
+      },
+      "points": 3,
+      "solution_steps": [
+        "Dans un rectangle, les côtés opposés ont la même longueur.",
+        "Le côté d'en face du côté de 24 m mesure donc 24 m ; le côté d'en face du côté de 13 m mesure 13 m.",
+        "24 + 13 : 4 unités + 3 unités = 7 unités ; 2 dizaines + 1 dizaine = 3 dizaines. 24 + 13 = 37.",
+        "Il faut **37 mètres** de bordure pour ces deux côtés."
+      ],
+      "hint": "Que sais-tu des côtés d'en face dans un rectangle ?"
+    },
+    {
+      "key": "q3",
+      "skill_id": "G010",
+      "statement": "Pourquoi Tom a-t-il tort ?",
+      "type": "qcm",
+      "choices": [
+        {
+          "key": "a",
+          "text": "Ses quatre côtés n'ont pas la même longueur.",
+          "misconception": "Faux : les quatre côtés de la parcelle 2 mesurent tous 9 m. Le défaut est ailleurs."
+        },
+        {
+          "key": "b",
+          "text": "Elle est posée sur une pointe.",
+          "misconception": "Un carré posé sur une pointe reste un carré : la position ne compte pas."
+        },
+        {
+          "key": "c",
+          "text": "Ses angles ne sont pas droits.",
+          "misconception": null
+        }
+      ],
+      "answer": {
+        "value": "c"
+      },
+      "points": 4,
+      "solution_steps": [
+        "Un carré a 4 côtés de même longueur **et** 4 angles droits.",
+        "La parcelle 2 a bien 4 côtés de 9 m, tous de même longueur.",
+        "Mais ses angles ne sont pas droits : deux sont plus petits qu'un angle droit, deux sont plus grands. Aucun angle droit n'est codé.",
+        "Tom a tort parce que **les angles de la parcelle 2 ne sont pas droits**."
+      ],
+      "hint": "Un carré doit avoir deux propriétés. Vérifie-les une par une."
+    }
+  ],
+  "review_status": "brouillon",
+  "programme_ref": "Cycle 2, Cours élémentaire première année, Espace et géométrie, La géométrie plane : « Connaitre les propriétés des angles et des égalités de longueur pour les carrés et les rectangles. »"
+}

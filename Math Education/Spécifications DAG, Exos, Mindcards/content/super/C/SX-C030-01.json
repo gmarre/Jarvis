@@ -1,0 +1,107 @@
+{
+  "id": "SX-C030-01",
+  "skill_id": "C030",
+  "skill_ids": [
+    "C030",
+    "C012",
+    "B006"
+  ],
+  "school_level": "CM1",
+  "title": "Le jeu du saut de grenouille",
+  "contexte": "En classe, Lucas et Maya jouent au « saut de grenouille ». Le plateau est la demi-droite graduée de l'image, et chaque pion part de 0. À chaque tour, le joueur tire une carte qui indique la longueur de son saut, en unités. Le premier pion qui atteint 4 a gagné. La boîte du jeu contient 5 paquets de 8 cartes.\n\nLucas a tiré trois cartes : $\\frac{2}{3}$, puis $\\frac{4}{3}$, puis $\\frac{2}{3}$. Son pion a avancé de la longueur de ses trois sauts.\n\nLe pion de Maya est sur le point M.\n\nSur le plateau, la case « recule » est au point R.",
+  "image": "figures/SX-C030-01",
+  "duree_estimee_min": 15,
+  "questions": [
+    {
+      "key": "q1",
+      "skill_id": "B006",
+      "statement": "Combien de cartes la boîte du jeu contient-elle ?",
+      "type": "numerique",
+      "answer": {
+        "value": 40,
+        "unit": "cartes"
+      },
+      "points": 2,
+      "solution_steps": [
+        "Il y a 5 paquets de 8 cartes.",
+        "5 × 8 = 40.",
+        "La boîte contient **40 cartes**."
+      ],
+      "hint": "Relis la phrase qui parle de la boîte."
+    },
+    {
+      "key": "q2",
+      "skill_id": "C012",
+      "statement": "Après ses trois sauts, quel nombre repère la position du pion de Lucas ? Écris-le sous la forme numérateur/dénominateur.",
+      "type": "texte",
+      "answer": {
+        "value": "8/3",
+        "accepted": [
+          "16/6",
+          "24/9",
+          "8 tiers",
+          "huit tiers",
+          "2 + 2/3",
+          "2 et 2/3"
+        ]
+      },
+      "points": 3,
+      "solution_steps": [
+        "Le pion part de 0 et avance de $\\frac{2}{3}$, puis $\\frac{4}{3}$, puis $\\frac{2}{3}$.",
+        "Les fractions ont le même dénominateur : $\\frac{2}{3} + \\frac{4}{3} + \\frac{2}{3} = \\frac{8}{3}$.",
+        "Le pion de Lucas est repéré par $\\frac{8}{3}$, c'est-à-dire 2 + $\\frac{2}{3}$."
+      ],
+      "hint": "Additionne les trois sauts."
+    },
+    {
+      "key": "q3",
+      "skill_id": "C030",
+      "statement": "Quel nombre repère le point M ? Écris-le sous la forme numérateur/dénominateur.",
+      "type": "texte",
+      "answer": {
+        "value": "7/3",
+        "accepted": [
+          "14/6",
+          "21/9",
+          "7 tiers",
+          "sept tiers",
+          "2 + 1/3",
+          "2 et 1/3"
+        ]
+      },
+      "points": 3,
+      "solution_steps": [
+        "Entre 0 et 1, l'unité est partagée en 3 intervalles égaux : chaque intervalle vaut $\\frac{1}{3}$.",
+        "De 0 jusqu'au point M, on compte 7 intervalles.",
+        "Le point M est repéré par $\\frac{7}{3}$."
+      ],
+      "hint": "Compte les intervalles depuis 0, pas les traits."
+    },
+    {
+      "key": "q4",
+      "skill_id": "C030",
+      "statement": "Repère le point R par la somme d'un nombre entier et d'une fraction inférieure à 1. Écris ta réponse sous la forme d'un entier plus une fraction.",
+      "type": "texte",
+      "answer": {
+        "value": "3 + 1/3",
+        "accepted": [
+          "3+1/3",
+          "1/3 + 3",
+          "3 + 1 / 3",
+          "3 et 1/3",
+          "3 plus 1/3"
+        ]
+      },
+      "points": 4,
+      "solution_steps": [
+        "Chaque unité est partagée en 3 intervalles égaux de $\\frac{1}{3}$.",
+        "Le point R est après la graduation 3 (3 unités depuis 0), à 1 intervalle de plus.",
+        "Le point R est repéré par 3 + $\\frac{1}{3}$, qui s'écrit aussi $\\frac{10}{3}$.",
+        "La forme demandée est un entier plus une fraction inférieure à 1 : 3 + $\\frac{1}{3}$."
+      ],
+      "hint": "Repère d'abord le nombre entier juste avant R."
+    }
+  ],
+  "review_status": "brouillon",
+  "programme_ref": "Cycle 3, Cours moyen première année, Les fractions : « Savoir repérer un point d'une demi-droite graduée par une fraction ou par la somme d'un nombre entier et d'une fraction »"
+}

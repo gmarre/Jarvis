@@ -1,0 +1,104 @@
+{
+  "id": "SX-G005-01",
+  "skill_id": "G005",
+  "skill_ids": [
+    "G005",
+    "A001"
+  ],
+  "school_level": "CP",
+  "title": "L'étagère de l'épicerie",
+  "contexte": "Léna aide son papa à l'épicerie. Sur l'étagère du haut, elle range quatre objets : une boîte de thé ronde, un dé en bois, un paquet de riz et un chapeau de fête pointu.\n\nLe dessin montre la forme de chaque objet. Chaque forme porte une lettre. Les objets ne sont pas dessinés dans l'ordre où ils sont cités.\n\nLe paquet de riz coûte 2 euros. L'épicerie ouvre à 8 heures. Léna a 7 ans, et elle aime ranger les boîtes.",
+  "image": "figures/SX-G005-01",
+  "duree_estimee_min": 8,
+  "questions": [
+    {
+      "key": "q1",
+      "skill_id": "G005",
+      "statement": "Quelle lettre porte la forme de la boîte de thé ronde ?",
+      "type": "texte",
+      "answer": {
+        "value": "C",
+        "accepted": [
+          "la lettre C",
+          "lettre C",
+          "la forme C",
+          "forme C",
+          "le solide C",
+          "solide C",
+          "le C",
+          "c'est C",
+          "c'est le C"
+        ]
+      },
+      "points": 2,
+      "solution_steps": [
+        "Une boîte de thé ronde a un fond rond, un couvercle rond, et un bord qui monte tout droit.",
+        "C'est la forme d'un **cylindre**. Sur le dessin, le cylindre porte la **lettre C**.",
+        "Attention : le solide A a un fond rond comme le cylindre, mais il se termine en pointe : c'est un cône, comme le chapeau de fête."
+      ],
+      "hint": "Imagine la boîte de thé posée sur la table, et cherche sa forme."
+    },
+    {
+      "key": "q2",
+      "skill_id": "A001",
+      "statement": "Léna colle une étiquette de prix sur chaque face du paquet de riz. Combien d'étiquettes colle-t-elle ?",
+      "type": "numerique",
+      "answer": {
+        "value": 6,
+        "unit": "étiquettes",
+        "accepted": [
+          "six",
+          "six étiquettes",
+          "6 etiquettes"
+        ]
+      },
+      "points": 3,
+      "solution_steps": [
+        "Le paquet de riz a la forme d'un **pavé** : c'est le solide B.",
+        "Sur le dessin, on voit 3 faces : devant, dessus, sur le côté. Les 3 autres sont cachées : derrière, dessous, de l'autre côté.",
+        "On compte toutes les faces : 1, 2, 3, 4, 5, 6. Léna colle **6 étiquettes**, une par face. Compter seulement les faces que l'on voit donnerait 3."
+      ],
+      "hint": "N'oublie pas les faces que l'on ne voit pas sur le dessin."
+    },
+    {
+      "key": "q3",
+      "skill_id": "G005",
+      "statement": "Léna décrit un objet : « Toutes ses faces sont plates. Ce sont des carrés, tous pareils. » Quel objet décrit-elle ?",
+      "type": "qcm",
+      "choices": [
+        {
+          "key": "a",
+          "text": "Le paquet de riz",
+          "misconception": "L'élève voit des faces plates, mais celles du pavé sont des rectangles, pas des carrés tous pareils."
+        },
+        {
+          "key": "b",
+          "text": "Le dé en bois",
+          "misconception": null
+        },
+        {
+          "key": "c",
+          "text": "La boîte de thé ronde",
+          "misconception": "Le cylindre a deux faces plates en forme de disque, et un bord arrondi : ses faces ne sont pas des carrés."
+        },
+        {
+          "key": "d",
+          "text": "Le chapeau de fête",
+          "misconception": "Le cône a un fond en disque et une pointe ; il n'a aucune face carrée."
+        }
+      ],
+      "answer": {
+        "value": "b"
+      },
+      "points": 4,
+      "solution_steps": [
+        "Toutes les faces plates : on écarte la boîte de thé et le chapeau, qui ont une partie arrondie.",
+        "Il reste le paquet de riz (un pavé) et le dé (un cube). Les faces du pavé sont des rectangles ; celles du cube sont des carrés tous pareils.",
+        "Léna décrit **le dé en bois** : c'est un cube."
+      ],
+      "hint": "Pour chaque objet, demande-toi d'abord si toutes ses faces sont plates."
+    }
+  ],
+  "review_status": "brouillon",
+  "programme_ref": "Cycle 2, Cours préparatoire, Espace et géométrie, Les solides : « Un cube ou un pavé lui étant donné, l'élève sait le nommer et le décrire en parlant de ses faces : nombre de faces et nature des faces (carré ou rectangle). »"
+}
