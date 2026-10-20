@@ -1,0 +1,180 @@
+[
+  {
+    "id": "EX-B054-D-01",
+    "skill_id": "B054",
+    "level": "decouverte",
+    "type": "qcm",
+    "statement": "Programme de calcul : choisir 6 ; ajouter 4 ; multiplier le résultat par 5.\n\nQuelle expression traduit ce programme en un seul calcul ?",
+    "image": null,
+    "choices": [
+      {
+        "key": "a",
+        "text": "$6 + 4 \\times 5$",
+        "misconception": "L'élève écrit les opérations dans l'ordre du programme, sans parenthèses. Mais la multiplication est prioritaire : ce calcul vaut 6 + 20 = 26, il multiplie seulement 4 par 5, et non le résultat 10."
+      },
+      {
+        "key": "b",
+        "text": "$(6 + 4) \\times 5$",
+        "misconception": null
+      },
+      {
+        "key": "c",
+        "text": "$6 \\times 5 + 4$",
+        "misconception": "L'élève multiplie le nombre choisi par 5 avant d'ajouter 4 : l'ordre des étapes est inversé. Ce calcul vaut 30 + 4 = 34."
+      },
+      {
+        "key": "d",
+        "text": "$6 + 4 = 10 \\times 5$",
+        "misconception": "L'élève enchaîne les étapes avec des signes = : cette ligne affirme que 6 + 4 est égal à 10 × 5, c'est-à-dire que 10 est égal à 50, ce qui est faux. Ce n'est pas une seule expression."
+      }
+    ],
+    "answer": {
+      "value": "b"
+    },
+    "solution_steps": [
+      "Le programme ajoute d'abord 4 à 6, puis multiplie **le résultat** par 5 : la somme 6 + 4 doit être calculée avant la multiplication.",
+      "Sans parenthèses, la multiplication passe avant l'addition. On met donc la somme entre parenthèses : $(6 + 4) \\times 5$.",
+      "Contrôle : le programme donne 6 + 4 = 10, puis 10 × 5 = 50 ; l'expression donne $(6 + 4) \\times 5 = 10 \\times 5 = 50$."
+    ],
+    "hint": "Quel calcul doit être fait avant la multiplication par 5 ?",
+    "estimated_duration_s": 60,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, classe de 5e, Nombres et calculs, Opérations : « Traduire un problème, une succession donnée d'opérations, un programme de calcul, en une seule expression, en faisant appel ou non à des parenthèses. »"
+  },
+  {
+    "id": "EX-B054-D-02",
+    "skill_id": "B054",
+    "level": "decouverte",
+    "type": "texte",
+    "statement": "Programme de calcul : choisir 7 ; le multiplier par 5 ; ajouter 6 au résultat.\n\nÉcris ce programme en une seule expression, sans effectuer le calcul.",
+    "image": null,
+    "answer": {
+      "value": "7 × 5 + 6",
+      "forme": "meme_calcul",
+      "variables": []
+    },
+    "solution_steps": [
+      "Première étape : multiplier 7 par 5, ce qui s'écrit 7 × 5.",
+      "Deuxième étape : ajouter 6 à ce résultat : 7 × 5 + 6.",
+      "Faut-il des parenthèses ? Non : la multiplication est prioritaire, elle est faite avant l'addition, comme dans le programme. L'écriture $(7 \\times 5) + 6$ est juste aussi, mais ses parenthèses sont inutiles.",
+      "Contrôle : 7 × 5 + 6 = 35 + 6 = 41, comme le programme (7 × 5 = 35, puis 35 + 6 = 41)."
+    ],
+    "hint": "Écris d'abord la multiplication, puis l'addition, dans un seul calcul.",
+    "estimated_duration_s": 60,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, classe de 5e, Nombres et calculs, Opérations : « Traduire un problème, une succession donnée d'opérations, un programme de calcul, en une seule expression, en faisant appel ou non à des parenthèses. »"
+  },
+  {
+    "id": "EX-B054-E-01",
+    "skill_id": "B054",
+    "level": "entrainement",
+    "type": "texte",
+    "statement": "Programme de calcul : choisir 13 ; soustraire 5 ; multiplier le résultat par 4 ; ajouter 7.\n\nÉcris ce programme en une seule expression, sans effectuer le calcul.",
+    "image": null,
+    "answer": {
+      "value": "(13 − 5) × 4 + 7",
+      "forme": "meme_calcul",
+      "variables": []
+    },
+    "solution_steps": [
+      "On soustrait d'abord 5 de 13 : 13 − 5. Puis on multiplie **ce résultat** par 4 : la différence doit être calculée avant la multiplication, on la met donc entre parenthèses : (13 − 5) × 4.",
+      "On ajoute enfin 7 : (13 − 5) × 4 + 7. Pas besoin d'autres parenthèses : la multiplication passe avant l'addition.",
+      "Contrôle : (13 − 5) × 4 + 7 = 8 × 4 + 7 = 32 + 7 = 39, comme le programme : 13 − 5 = 8, 8 × 4 = 32, 32 + 7 = 39.",
+      "Sans parenthèses, dans 13 − 5 × 4 + 7, on calculerait d'abord 5 × 4 : ce n'est plus le programme."
+    ],
+    "hint": "Quelle étape doit être faite avant la multiplication par 4 ? Protège-la.",
+    "estimated_duration_s": 90,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, classe de 5e, Nombres et calculs, Opérations : « Traduire un problème, une succession donnée d'opérations, un programme de calcul, en une seule expression, en faisant appel ou non à des parenthèses. »"
+  },
+  {
+    "id": "EX-B054-E-02",
+    "skill_id": "B054",
+    "level": "entrainement",
+    "type": "vrai_faux",
+    "statement": "Programme de calcul : choisir 12 ; ajouter 8 ; diviser le résultat par 4.\n\nNoa le traduit par l'expression $12 + 8 \\div 4$. A-t-il raison ?",
+    "image": null,
+    "answer": {
+      "value": false
+    },
+    "solution_steps": [
+      "Le programme donne 12 + 8 = 20, puis 20 ÷ 4 = 5.",
+      "Dans $12 + 8 \\div 4$, la division est prioritaire : on calcule 8 ÷ 4 = 2, puis 12 + 2 = 14. Ce n'est pas le résultat du programme : Noa a tort.",
+      "La division porte sur le résultat de l'addition : il faut des parenthèses, $(12 + 8) \\div 4$."
+    ],
+    "hint": "Calcule le programme, puis l'expression de Noa en respectant les priorités.",
+    "estimated_duration_s": 60,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, classe de 5e, Nombres et calculs, Opérations : « Traduire un problème, une succession donnée d'opérations, un programme de calcul, en une seule expression, en faisant appel ou non à des parenthèses. »"
+  },
+  {
+    "id": "EX-B054-M-01",
+    "skill_id": "B054",
+    "level": "maitrise",
+    "type": "texte",
+    "statement": "Sacha a 50 €. Il achète 2 bandes dessinées à 13,50 € chacune.\n\nÉcris en une seule expression le calcul de l'argent qui lui reste, sans effectuer le calcul.",
+    "image": null,
+    "answer": {
+      "value": "50 − 2 × 13,50",
+      "accepted": [
+        "50 − 13,50 − 13,50"
+      ],
+      "forme": "meme_calcul",
+      "variables": [],
+      "unit": "€"
+    },
+    "solution_steps": [
+      "Les 2 bandes dessinées coûtent 2 × 13,50 €.",
+      "Il reste 50 € moins cette dépense : 50 − 2 × 13,50. La multiplication est prioritaire : elle est faite avant la soustraction, sans parenthèses.",
+      "Calcul : 2 × 13,50 = 27, puis 50 − 27 = 23. Il reste 23 €.",
+      "L'écriture 50 − 13,50 − 13,50 est juste aussi. En revanche, (50 − 2) × 13,50 retirerait 2 € de 50 € avant de multiplier, ce qui n'a pas de sens ici."
+    ],
+    "hint": "Écris d'abord le prix des 2 bandes dessinées, puis retire-le de 50.",
+    "estimated_duration_s": 90,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, classe de 5e, Nombres et calculs, Opérations : « Traduire un problème, une succession donnée d'opérations, un programme de calcul, en une seule expression, en faisant appel ou non à des parenthèses. »"
+  },
+  {
+    "id": "EX-B054-M-02",
+    "skill_id": "B054",
+    "level": "maitrise",
+    "type": "qcm",
+    "statement": "Trois amis achètent une pizza à 15 € et une salade à 6 €. Ils partagent la dépense en parts égales.\n\nQuelle expression donne la part de chacun ?",
+    "image": null,
+    "choices": [
+      {
+        "key": "a",
+        "text": "$15 + 6 \\div 3$",
+        "misconception": "L'élève oublie les parenthèses : la division est prioritaire, seul le prix de la salade est partagé. Ce calcul vaut 15 + 2 = 17 €."
+      },
+      {
+        "key": "b",
+        "text": "$15 \\div 3 + 6$",
+        "misconception": "L'élève ne partage que la pizza : chacun paierait 5 + 6 = 11 €, et les trois parts feraient 33 €, plus que la dépense de 21 €."
+      },
+      {
+        "key": "c",
+        "text": "$3 \\div (15 + 6)$",
+        "misconception": "L'élève inverse la division : il divise 3 par la dépense au lieu de diviser la dépense par 3. Chacun paierait moins de 1 €."
+      },
+      {
+        "key": "d",
+        "text": "$(15 + 6) \\div 3$",
+        "misconception": null
+      }
+    ],
+    "answer": {
+      "value": "d"
+    },
+    "solution_steps": [
+      "La dépense totale est la somme 15 + 6.",
+      "C'est toute cette somme qu'on partage en 3 : elle doit être calculée avant la division, donc entre parenthèses : $(15 + 6) \\div 3$.",
+      "Calcul : 15 + 6 = 21, puis 21 ÷ 3 = 7. Chacun paie 7 €.",
+      "Contrôle : 3 × 7 = 21 €, c'est bien la dépense totale."
+    ],
+    "hint": "Qu'est-ce qui est partagé en trois : la pizza seule, ou toute la dépense ?",
+    "estimated_duration_s": 90,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, classe de 5e, Nombres et calculs, Opérations : « Traduire un problème, une succession donnée d'opérations, un programme de calcul, en une seule expression, en faisant appel ou non à des parenthèses. »"
+  }
+]

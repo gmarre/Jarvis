@@ -1,0 +1,166 @@
+[
+  {
+    "id": "EX-B055-D-01",
+    "skill_id": "B055",
+    "level": "decouverte",
+    "type": "qcm",
+    "statement": "Ce rectangle quadrillé est partagé en deux rectangles. Les longueurs sont données en carreaux.\n\nQuel calcul donne le nombre total de carreaux ?",
+    "image": "figures/EX-B055-D-01",
+    "choices": [
+      {
+        "key": "a",
+        "text": "$5 \\times 8 + 3$",
+        "misconception": "L'élève multiplie la première partie par 5 mais pas la seconde : il ne compte qu'une rangée du petit rectangle. Ce calcul vaut 43, pas 55."
+      },
+      {
+        "key": "b",
+        "text": "$5 \\times 8 \\times 3$",
+        "misconception": "L'élève multiplie toutes les longueurs écrites sur la figure. Ce calcul vaut 120, plus du double du nombre de carreaux."
+      },
+      {
+        "key": "c",
+        "text": "$5 \\times 8 + 5 \\times 3$",
+        "misconception": null
+      },
+      {
+        "key": "d",
+        "text": "$5 + 8 + 3$",
+        "misconception": "L'élève additionne les longueurs, comme pour faire le tour : il obtient 16, une longueur et non un nombre de carreaux."
+      }
+    ],
+    "answer": {
+      "value": "c"
+    },
+    "solution_steps": [
+      "Le grand rectangle a 5 rangées de 8 + 3 = 11 carreaux : il contient $5 \\times (8 + 3) = 5 \\times 11 = 55$ carreaux.",
+      "On peut aussi compter chaque partie : le rectangle de gauche contient $5 \\times 8 = 40$ carreaux, celui de droite $5 \\times 3 = 15$ carreaux. En tout : $5 \\times 8 + 5 \\times 3 = 40 + 15 = 55$.",
+      "Les deux calculs donnent le même nombre : $5 \\times (8 + 3) = 5 \\times 8 + 5 \\times 3$. Multiplier une somme par 5, c'est multiplier **chacun** de ses termes par 5."
+    ],
+    "hint": "Compte les carreaux du rectangle de gauche, puis ceux du rectangle de droite.",
+    "estimated_duration_s": 75,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, classe de 5e, Nombres et calculs, Opérations : « Connaitre et utiliser la distributivité simple sur des exemples numériques. »"
+  },
+  {
+    "id": "EX-B055-D-02",
+    "skill_id": "B055",
+    "level": "decouverte",
+    "type": "numerique",
+    "statement": "Pour calculer 9 × 104 de tête, Inès décompose 104 en 100 + 4 :\n\n$9 \\times 104 = 9 \\times 100 + 9 \\times 4$\n\nCombien vaut 9 × 104 ?",
+    "image": null,
+    "answer": {
+      "value": 936
+    },
+    "solution_steps": [
+      "9 × 100 = 900 et 9 × 4 = 36.",
+      "9 × 104 = 900 + 36 = 936.",
+      "Inès a multiplié 100 **et** 4 par 9 : comme 104 = 100 + 4, on a $9 \\times 104 = 9 \\times (100 + 4) = 9 \\times 100 + 9 \\times 4$.",
+      "Erreur à éviter : 9 × 100 + 4 = 904 oublie de multiplier 4 par 9."
+    ],
+    "hint": "Calcule 9 × 100, puis 9 × 4, puis additionne.",
+    "estimated_duration_s": 45,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, classe de 5e, Nombres et calculs, Opérations : « Connaitre et utiliser la distributivité simple sur des exemples numériques. »"
+  },
+  {
+    "id": "EX-B055-E-01",
+    "skill_id": "B055",
+    "level": "entrainement",
+    "type": "numerique",
+    "statement": "Calcule 8 × 97 de tête, en écrivant 97 = 100 − 3.",
+    "image": null,
+    "answer": {
+      "value": 776
+    },
+    "solution_steps": [
+      "97 = 100 − 3, donc $8 \\times 97 = 8 \\times (100 - 3)$.",
+      "On multiplie chacun des deux termes par 8 : $8 \\times (100 - 3) = 8 \\times 100 - 8 \\times 3 = 800 - 24$.",
+      "800 − 24 = 776.",
+      "Erreur à éviter : 800 − 3 = 797 ne multiplie pas 3 par 8. Contrôle : 8 × 97 est un peu moins que 8 × 100 = 800 ; il manque 8 × 3 = 24."
+    ],
+    "hint": "Multiplie 100 par 8, puis 3 par 8.",
+    "estimated_duration_s": 60,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, classe de 5e, Nombres et calculs, Opérations : « Connaitre et utiliser la distributivité simple sur des exemples numériques. »"
+  },
+  {
+    "id": "EX-B055-E-02",
+    "skill_id": "B055",
+    "level": "entrainement",
+    "type": "qcm",
+    "statement": "Quelle écriture permet de calculer facilement $17 \\times 6 + 17 \\times 4$ ?",
+    "image": null,
+    "choices": [
+      {
+        "key": "a",
+        "text": "$17 \\times 6 \\times 4$",
+        "misconception": "L'élève remplace le signe + par × et multiplie les trois nombres : 17 × 24 = 408, alors que 17 × 6 + 17 × 4 = 102 + 68 = 170."
+      },
+      {
+        "key": "b",
+        "text": "$17 \\times (6 + 4)$",
+        "misconception": null
+      },
+      {
+        "key": "c",
+        "text": "$(17 + 17) \\times (6 + 4)$",
+        "misconception": "L'élève additionne les deux 17 au lieu de ne garder qu'une fois le facteur commun : 34 × 10 = 340, le double du bon résultat."
+      }
+    ],
+    "answer": {
+      "value": "b"
+    },
+    "solution_steps": [
+      "Les deux produits ont un facteur commun, 17 : on a 6 paquets de 17, puis 4 paquets de 17, soit 6 + 4 = 10 paquets de 17.",
+      "Donc $17 \\times 6 + 17 \\times 4 = 17 \\times (6 + 4) = 17 \\times 10 = 170$.",
+      "Contrôle : 17 × 6 = 102 et 17 × 4 = 68 ; 102 + 68 = 170."
+    ],
+    "hint": "Quel facteur est commun aux deux produits ?",
+    "estimated_duration_s": 60,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, classe de 5e, Nombres et calculs, Opérations : « Connaitre et utiliser la distributivité simple sur des exemples numériques. »"
+  },
+  {
+    "id": "EX-B055-M-01",
+    "skill_id": "B055",
+    "level": "maitrise",
+    "type": "numerique",
+    "statement": "Une école commande 26 cahiers à 7 € et 26 classeurs à 3 €.\n\nCalcule de tête le montant de la commande.",
+    "image": null,
+    "answer": {
+      "value": 260,
+      "unit": "€"
+    },
+    "solution_steps": [
+      "La commande coûte 26 × 7 + 26 × 3 euros.",
+      "Les deux produits ont le facteur 26 en commun : $26 \\times 7 + 26 \\times 3 = 26 \\times (7 + 3) = 26 \\times 10$.",
+      "26 × 10 = 260 : la commande coûte 260 €.",
+      "Autre lecture : un cahier et un classeur coûtent ensemble 7 + 3 = 10 €, et l'école achète 26 de ces lots. Contrôle : 26 × 7 = 182, 26 × 3 = 78, 182 + 78 = 260."
+    ],
+    "hint": "Combien coûtent ensemble un cahier et un classeur ?",
+    "estimated_duration_s": 75,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, classe de 5e, Nombres et calculs, Opérations : « Connaitre et utiliser la distributivité simple sur des exemples numériques. »"
+  },
+  {
+    "id": "EX-B055-M-02",
+    "skill_id": "B055",
+    "level": "maitrise",
+    "type": "vrai_faux",
+    "statement": "Pour calculer 12 × 49, Lucas écrit :\n\n$12 \\times 49 = 12 \\times 50 - 1 = 599$\n\nA-t-il raison ?",
+    "image": null,
+    "answer": {
+      "value": false
+    },
+    "solution_steps": [
+      "49 = 50 − 1, donc $12 \\times 49 = 12 \\times (50 - 1)$.",
+      "Il faut multiplier **chacun** des deux termes par 12 : $12 \\times (50 - 1) = 12 \\times 50 - 12 \\times 1 = 600 - 12 = 588$.",
+      "Lucas a retiré 1 au lieu de retirer 12 × 1 = 12 : il a tort, 12 × 49 = 588.",
+      "Contrôle : 12 × 49, c'est 49 paquets de 12, donc un paquet de 12 de moins que 12 × 50 = 600."
+    ],
+    "hint": "Écris 49 = 50 − 1 et multiplie chaque terme par 12.",
+    "estimated_duration_s": 75,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, classe de 5e, Nombres et calculs, Opérations : « Connaitre et utiliser la distributivité simple sur des exemples numériques. »"
+  }
+]

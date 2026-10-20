@@ -1,0 +1,172 @@
+[
+  {
+    "id": "EX-F006-D-01",
+    "skill_id": "F006",
+    "level": "decouverte",
+    "type": "qcm",
+    "statement": "Un carré a pour côté $x$. Son périmètre s'écrit $x + x + x + x$ et son aire $x \\times x$. Quelle ligne est juste ?",
+    "image": null,
+    "choices": [
+      {
+        "key": "a",
+        "text": "$x + x = x^{2}$ et $x \\times x = 2x$",
+        "misconception": "L'élève inverse les deux écritures : il associe le 2 de « deux fois x » à l'exposant et le carré à la somme. Or x + x est le double de x, et x × x son carré."
+      },
+      {
+        "key": "b",
+        "text": "$x + x = 2x$ et $x \\times x = x^{2}$",
+        "misconception": null
+      },
+      {
+        "key": "c",
+        "text": "$x + x = 2x$ et $x \\times x = 2x$",
+        "misconception": "L'élève compte les x écrits (il y en a deux) sans regarder l'opération : il écrit 2x pour la somme comme pour le produit. Or x × x n'est pas x + x : pour x = 5, 5 × 5 = 25 et 5 + 5 = 10."
+      },
+      {
+        "key": "d",
+        "text": "$x + x = x^{2}$ et $x \\times x = x^{2}$",
+        "misconception": "L'élève écrit x² dès qu'il voit deux x, quelle que soit l'opération. Or x + x vaut 2x : pour x = 5, 5 + 5 = 10, pas 25."
+      }
+    ],
+    "answer": {
+      "value": "b"
+    },
+    "solution_steps": [
+      "Une somme de termes égaux se compte : $x + x$, c'est deux fois $x$, donc $x + x = 2 \\times x = 2x$. De même, le périmètre $x + x + x + x$ vaut $4x$.",
+      "Un produit d'un nombre par lui-même s'écrit avec un carré : $x \\times x = x^{2}$, comme $5 \\times 5 = 5^{2}$. L'aire du carré vaut donc $x^{2}$.",
+      "À retenir : $2x$ (on ajoute $x$ deux fois) et $x^{2}$ (on multiplie $x$ par lui-même) sont deux nombres différents. Pour $x = 5$ : $2x = 10$ mais $x^{2} = 25$."
+    ],
+    "hint": "Une somme de deux nombres égaux, c'est le double ; un produit d'un nombre par lui-même, c'est son carré.",
+    "estimated_duration_s": 45,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, classe de 4e, Nombres et calculs, Calcul littéral et algébrique, Automatismes : « Connaitre et utiliser : 1 × 𝑥 = 𝑥 ; 𝑥 + 𝑥 = 2𝑥 ; 𝑥 × 𝑥 = 𝑥² ; 3𝑥 + 2𝑥 = 5𝑥 ; 3𝑥 × 2𝑥 = 6𝑥². »"
+  },
+  {
+    "id": "EX-F006-D-02",
+    "skill_id": "F006",
+    "level": "decouverte",
+    "type": "numerique",
+    "statement": "Pour réduire $3x \\times 5x$, on range les facteurs : $3x \\times 5x = 3 \\times 5 \\times x \\times x$. Le résultat s'écrit un nombre fois $x^{2}$. Quel est ce nombre ?",
+    "image": null,
+    "answer": {
+      "value": 15
+    },
+    "solution_steps": [
+      "$3x$, c'est $3 \\times x$, et $5x$, c'est $5 \\times x$. Le produit $3x \\times 5x$ est donc $3 \\times x \\times 5 \\times x$.",
+      "Dans un produit, on peut changer l'ordre des facteurs : on regroupe les nombres d'un côté, les lettres de l'autre, $3 \\times 5 \\times x \\times x$.",
+      "Les nombres : $3 \\times 5 = 15$. Les lettres : $x \\times x = x^{2}$.",
+      "Donc $3x \\times 5x = 15x^{2}$ : le nombre cherché est 15. On multiplie les nombres, on n'additionne pas : $3 + 5 = 8$ serait le résultat de $3x + 5x = 8x$, qui est une somme."
+    ],
+    "hint": "Multiplie les nombres entre eux, puis les lettres entre elles.",
+    "estimated_duration_s": 40,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, classe de 4e, Nombres et calculs, Calcul littéral et algébrique, Automatismes : « Connaitre et utiliser : 1 × 𝑥 = 𝑥 ; 𝑥 + 𝑥 = 2𝑥 ; 𝑥 × 𝑥 = 𝑥² ; 3𝑥 + 2𝑥 = 5𝑥 ; 3𝑥 × 2𝑥 = 6𝑥². »"
+  },
+  {
+    "id": "EX-F006-E-01",
+    "skill_id": "F006",
+    "level": "entrainement",
+    "type": "texte",
+    "statement": "Réduis le produit $(-4x) \\times 6x$. Écris le résultat sans signe ×.",
+    "image": null,
+    "answer": {
+      "value": "−24x²",
+      "forme": "reduite"
+    },
+    "solution_steps": [
+      "On écrit tous les facteurs : $(-4x) \\times 6x = (-4) \\times x \\times 6 \\times x$.",
+      "On regroupe les nombres : $(-4) \\times 6 = -24$, négatif car un seul des deux facteurs est négatif.",
+      "On regroupe les lettres : $x \\times x = x^{2}$.",
+      "Donc $(-4x) \\times 6x = -24x^{2}$. Attention : $-24x$ oublierait le second $x$, et $2x^{2}$ viendrait d'une addition $-4 + 6$, alors qu'il s'agit d'un produit."
+    ],
+    "hint": "Sépare les nombres et les lettres, puis pense à la règle des signes.",
+    "estimated_duration_s": 60,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, classe de 4e, Nombres et calculs, Calcul littéral et algébrique, Automatismes : « Connaitre et utiliser : 1 × 𝑥 = 𝑥 ; 𝑥 + 𝑥 = 2𝑥 ; 𝑥 × 𝑥 = 𝑥² ; 3𝑥 + 2𝑥 = 5𝑥 ; 3𝑥 × 2𝑥 = 6𝑥². »"
+  },
+  {
+    "id": "EX-F006-E-02",
+    "skill_id": "F006",
+    "level": "entrainement",
+    "type": "vrai_faux",
+    "statement": "Inès réduit $4x \\times 2x$ et écrit : « $4x \\times 2x = 8x$ ». A-t-elle raison ?",
+    "image": null,
+    "answer": {
+      "value": false
+    },
+    "solution_steps": [
+      "$4x \\times 2x = 4 \\times x \\times 2 \\times x$ : le produit contient deux facteurs $x$.",
+      "Les nombres donnent $4 \\times 2 = 8$ et les deux lettres donnent $x \\times x = x^{2}$.",
+      "Donc $4x \\times 2x = 8x^{2}$, et non $8x$ : Inès a oublié que $x$ apparaît deux fois. C'est faux.",
+      "Pour comparer : $8x$ est le résultat de la somme $4x + 4x$, pas d'un produit de deux termes en $x$."
+    ],
+    "hint": "Combien de fois la lettre x apparaît-elle comme facteur dans ce produit ?",
+    "estimated_duration_s": 45,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, classe de 4e, Nombres et calculs, Calcul littéral et algébrique, Automatismes : « Connaitre et utiliser : 1 × 𝑥 = 𝑥 ; 𝑥 + 𝑥 = 2𝑥 ; 𝑥 × 𝑥 = 𝑥² ; 3𝑥 + 2𝑥 = 5𝑥 ; 3𝑥 × 2𝑥 = 6𝑥². »"
+  },
+  {
+    "id": "EX-F006-M-01",
+    "skill_id": "F006",
+    "level": "maitrise",
+    "type": "texte",
+    "statement": "Un rectangle mesure $5x$ de long et $2x$ de large. On y découpe un carré de côté $x$. Écris l'aire restante en fonction de $x$, sous forme réduite.",
+    "image": null,
+    "answer": {
+      "value": "9x²",
+      "forme": "reduite"
+    },
+    "solution_steps": [
+      "Aire du rectangle : longueur × largeur, soit $5x \\times 2x = 5 \\times 2 \\times x \\times x = 10x^{2}$.",
+      "Aire du carré : côté × côté, soit $x \\times x = x^{2}$.",
+      "Aire restante : $10x^{2} - x^{2}$. Ce sont deux termes en $x^{2}$ : $10x^{2} - 1x^{2} = 9x^{2}$, comme 10 objets moins 1 objet.",
+      "L'aire restante est $9x^{2}$. Attention : $10x^{2} - x^{2}$ ne fait pas $10$ ni $9$ tout court, on garde le $x^{2}$ commun."
+    ],
+    "hint": "Calcule l'aire du rectangle, puis celle du carré, et soustrais.",
+    "estimated_duration_s": 90,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, classe de 4e, Nombres et calculs, Calcul littéral et algébrique, Automatismes : « Connaitre et utiliser : 1 × 𝑥 = 𝑥 ; 𝑥 + 𝑥 = 2𝑥 ; 𝑥 × 𝑥 = 𝑥² ; 3𝑥 + 2𝑥 = 5𝑥 ; 3𝑥 × 2𝑥 = 6𝑥². »"
+  },
+  {
+    "id": "EX-F006-M-02",
+    "skill_id": "F006",
+    "level": "maitrise",
+    "type": "qcm",
+    "statement": "Quel facteur complète l'égalité $(-2x) \\times \\dots = 10x^{2}$ ?",
+    "image": null,
+    "choices": [
+      {
+        "key": "a",
+        "text": "$5x$",
+        "misconception": "L'élève trouve bien 5 et le x, mais oublie la règle des signes : (−2) × 5 = −10, donc (−2x) × 5x = −10x²."
+      },
+      {
+        "key": "b",
+        "text": "$-5$",
+        "misconception": "L'élève ne s'occupe que des nombres : (−2x) × (−5) = 10x, il manque un facteur x pour obtenir x²."
+      },
+      {
+        "key": "c",
+        "text": "$-5x$",
+        "misconception": null
+      },
+      {
+        "key": "d",
+        "text": "$-5x^{2}$",
+        "misconception": "L'élève recopie le x² du résultat dans le facteur : le produit (−2x) × (−5x²) contiendrait alors trois facteurs x, un de trop."
+      }
+    ],
+    "answer": {
+      "value": "c"
+    },
+    "solution_steps": [
+      "Le résultat $10x^{2}$ contient $x \\times x$ : le facteur $-2x$ apporte un $x$, il en faut donc un second dans le facteur cherché.",
+      "Côté nombres, on cherche le nombre qui, multiplié par $-2$, donne $10$ : $(-2) \\times (-5) = 10$, car le produit de deux négatifs est positif.",
+      "Le facteur cherché est $-5x$. Vérification : $(-2x) \\times (-5x) = (-2) \\times (-5) \\times x \\times x = 10x^{2}$."
+    ],
+    "hint": "Cherche d'abord le nombre, avec son signe, puis compte les lettres x.",
+    "estimated_duration_s": 60,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, classe de 4e, Nombres et calculs, Calcul littéral et algébrique, Automatismes : « Connaitre et utiliser : 1 × 𝑥 = 𝑥 ; 𝑥 + 𝑥 = 2𝑥 ; 𝑥 × 𝑥 = 𝑥² ; 3𝑥 + 2𝑥 = 5𝑥 ; 3𝑥 × 2𝑥 = 6𝑥². »"
+  }
+]

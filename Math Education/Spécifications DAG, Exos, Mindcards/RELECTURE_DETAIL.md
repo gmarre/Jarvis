@@ -1715,6 +1715,86 @@ Maé entend « six-cent-soixante-quatorze ». Elle écrit 664. Quel nombre aurai
 
 ---
 
+## `A008` · Identifier chiffre et nombre — CE1, difficulté 2
+
+*Distinguer un chiffre (0 à 9) d'un nombre*
+
+> « Connaitre la valeur des chiffres en fonction de leur position dans un nombre. » — *Cycle 2, Cours élémentaire première année, Les nombres entiers*
+> « La compréhension des aspects décimal (base dix) et positionnel (la valeur d'un chiffre dépend de sa position) étudiés au CP se renforce et s'étend. » — *Cycle 2, Cours élémentaire première année, Les nombres entiers*
+> « L'élève sait expliquer, en s'appuyant sur la numération, pourquoi 23 n'est pas le même nombre que 32 bien que les écritures des deux nombres soient composées des mêmes chiffres. » — *Cycle 2, Cours préparatoire, Les nombres entiers*
+
+**EX-A008-D-01** — decouverte, numerique, 30 s
+
+Combien y a-t-il de chiffres dans le nombre 407 ?
+
+**Réponse :** 3
+
+*Corrigé.* (1) On compte les symboles écrits : 4, 0, 7. (2) Il y a 3 chiffres. (3) Attention : 407 est un seul nombre, écrit avec 3 chiffres.
+
+*Indice.* Un chiffre est un symbole entre 0 et 9. Compte-les un par un.
+
+**EX-A008-D-02** — decouverte, qcm, 30 s
+
+Lequel de ces nombres s'écrit avec un seul chiffre ?
+
+- **a.** 10
+  <br>*Erreur visée :* L'élève croit que 10 est un chiffre, parce qu'on compte « jusqu'à 10 » sur ses doigts. Mais 10 s'écrit avec deux chiffres, 1 et 0 : les chiffres vont de 0 à 9.
+- **b.** 8 ✅
+- **c.** 80
+  <br>*Erreur visée :* L'élève ne compte pas le 0 comme un chiffre : il ne voit que le 8. Or 80 s'écrit avec deux chiffres, 8 et 0.
+
+*Corrigé.* (1) Les chiffres sont les dix signes 0 ; 1 ; 2 ; 3 ; 4 ; 5 ; 6 ; 7 ; 8 ; 9. Avec eux, on écrit tous les nombres. (2) 10 s'écrit avec deux chiffres : 1 et 0. 80 s'écrit aussi avec deux chiffres : 8 et 0. Le 0 est un chiffre comme les autres. (3) 8 s'écrit avec un seul chiffre : c'est à la fois un chiffre et un nombre. (4) Réponse : 8.
+
+*Indice.* Compte les signes qu'il faut écrire pour chaque nombre.
+
+**EX-A008-E-01** — entrainement, numerique, 35 s
+
+Dans le nombre 362, quel est le chiffre des dizaines ?
+
+**Réponse :** 6
+
+*Corrigé.* (1) On repère les rangs de droite à gauche : 2 unités, 6 dizaines, 3 centaines. (2) Le chiffre des dizaines est 6.
+
+*Indice.* Le rang des dizaines est le deuxième en partant de la droite.
+
+**EX-A008-E-02** — entrainement, numerique, 75 s
+
+Tom numérote les pages de son cahier, de 1 à 12. Combien de chiffres écrit-il en tout ?
+
+**Réponse :** 15
+
+*Corrigé.* (1) Attention : on ne compte pas les nombres (il y en a 12), mais les chiffres écrits. (2) De 1 à 9, chaque nombre s'écrit avec un seul chiffre : cela fait 9 chiffres. (3) 10, 11 et 12 s'écrivent chacun avec deux chiffres : 1 et 0, 1 et 1, 1 et 2. (4) On continue donc à compter de 2 en 2 à partir de 9 : 11, 13, 15. (5) Tom écrit 15 chiffres.
+
+*Indice.* De 1 à 9, un chiffre par page. Et pour les pages suivantes ?
+
+**EX-A008-M-01** — maitrise, vrai_faux, 75 s
+
+Le nombre 99 s'écrit avec plus de chiffres que le nombre 100.
+
+**Réponse :** False
+
+*Corrigé.* (1) On compte les chiffres de chacun : 99 s'écrit avec 2 chiffres, 100 s'écrit avec 3 chiffres. (2) Comme 2 chiffres, c'est moins que 3 chiffres, c'est 100 qui s'écrit avec le plus de chiffres. (3) L'affirmation est donc fausse. (4) Le piège : le chiffre 9 est plus grand que le chiffre 1, mais cela ne dit rien du nombre de chiffres utilisés pour écrire le nombre.
+
+*Indice.* Compte les chiffres de chaque nombre, un par un, sans regarder lequel des deux nombres est le plus grand.
+
+**EX-A008-M-02** — maitrise, qcm, 90 s
+
+Avec les chiffres 6, 0 et 2, chacun une seule fois, quel est le plus petit nombre de trois chiffres ?
+
+- **a.** 026
+  <br>*Erreur visée :* L'élève met le plus petit chiffre, 0, en premier. Mais 026 se lit vingt-six : c'est le nombre 26, qui s'écrit avec deux chiffres. Un nombre de trois chiffres ne commence pas par 0.
+- **b.** 260
+  <br>*Erreur visée :* L'élève met bien 2 en premier, puis croit que le 0 se place toujours à la fin, comme dans 10, 20 ou 30. Avec le 0 au rang des dizaines, on obtient un nombre plus petit.
+- **c.** 620
+  <br>*Erreur visée :* L'élève écrit les chiffres du plus grand au plus petit : il obtient le plus grand nombre au lieu du plus petit.
+- **d.** 206 ✅
+
+*Corrigé.* (1) Un nombre de trois chiffres ne commence jamais par 0 : 026 s'écrit simplement 26, qui n'a que deux chiffres. (2) Au rang des centaines, on met donc le plus petit chiffre qui n'est pas 0 : le 2. (3) Il reste 0 et 6. Au rang des dizaines, on met le plus petit : 0. Puis 6 aux unités. (4) Réponse : 206. Les autres nombres possibles, 260, 602 et 620, sont plus grands.
+
+*Indice.* Quel chiffre peut se mettre en premier ? Pas n'importe lequel.
+
+---
+
 ## `A006` · Comparer deux entiers — CE1, difficulté 2
 
 *Utiliser <, > et = pour comparer deux entiers*
@@ -1798,86 +1878,6 @@ Quel chiffre faut-il écrire dans la case pour que ce soit vrai ? 4\square 6 > 4
 *Corrigé.* (1) Les deux nombres ont 3 chiffres et le même chiffre des centaines, 4. (2) On compare donc les dizaines : le chiffre de la case contre le 8 de 486. (3) Avec un chiffre plus petit que 8 dans la case, le nombre est plus petit que 486. (4) Avec 8 dans la case, on obtient 486 : les deux nombres sont égaux, et 486 > 486 est faux. (5) Il faut un chiffre plus grand que 8 : seul 9 convient. En effet, 496 > 486.
 
 *Indice.* Essaie de mettre 8 dans la case. L'écriture est-elle vraie ?
-
----
-
-## `A008` · Identifier chiffre et nombre — CE1, difficulté 2
-
-*Distinguer un chiffre (0 à 9) d'un nombre*
-
-> « Connaitre la valeur des chiffres en fonction de leur position dans un nombre. » — *Cycle 2, Cours élémentaire première année, Les nombres entiers*
-> « La compréhension des aspects décimal (base dix) et positionnel (la valeur d'un chiffre dépend de sa position) étudiés au CP se renforce et s'étend. » — *Cycle 2, Cours élémentaire première année, Les nombres entiers*
-> « L'élève sait expliquer, en s'appuyant sur la numération, pourquoi 23 n'est pas le même nombre que 32 bien que les écritures des deux nombres soient composées des mêmes chiffres. » — *Cycle 2, Cours préparatoire, Les nombres entiers*
-
-**EX-A008-D-01** — decouverte, numerique, 30 s
-
-Combien y a-t-il de chiffres dans le nombre 407 ?
-
-**Réponse :** 3
-
-*Corrigé.* (1) On compte les symboles écrits : 4, 0, 7. (2) Il y a 3 chiffres. (3) Attention : 407 est un seul nombre, écrit avec 3 chiffres.
-
-*Indice.* Un chiffre est un symbole entre 0 et 9. Compte-les un par un.
-
-**EX-A008-D-02** — decouverte, qcm, 30 s
-
-Lequel de ces nombres s'écrit avec un seul chiffre ?
-
-- **a.** 10
-  <br>*Erreur visée :* L'élève croit que 10 est un chiffre, parce qu'on compte « jusqu'à 10 » sur ses doigts. Mais 10 s'écrit avec deux chiffres, 1 et 0 : les chiffres vont de 0 à 9.
-- **b.** 8 ✅
-- **c.** 80
-  <br>*Erreur visée :* L'élève ne compte pas le 0 comme un chiffre : il ne voit que le 8. Or 80 s'écrit avec deux chiffres, 8 et 0.
-
-*Corrigé.* (1) Les chiffres sont les dix signes 0 ; 1 ; 2 ; 3 ; 4 ; 5 ; 6 ; 7 ; 8 ; 9. Avec eux, on écrit tous les nombres. (2) 10 s'écrit avec deux chiffres : 1 et 0. 80 s'écrit aussi avec deux chiffres : 8 et 0. Le 0 est un chiffre comme les autres. (3) 8 s'écrit avec un seul chiffre : c'est à la fois un chiffre et un nombre. (4) Réponse : 8.
-
-*Indice.* Compte les signes qu'il faut écrire pour chaque nombre.
-
-**EX-A008-E-01** — entrainement, numerique, 35 s
-
-Dans le nombre 362, quel est le chiffre des dizaines ?
-
-**Réponse :** 6
-
-*Corrigé.* (1) On repère les rangs de droite à gauche : 2 unités, 6 dizaines, 3 centaines. (2) Le chiffre des dizaines est 6.
-
-*Indice.* Le rang des dizaines est le deuxième en partant de la droite.
-
-**EX-A008-E-02** — entrainement, numerique, 75 s
-
-Tom numérote les pages de son cahier, de 1 à 12. Combien de chiffres écrit-il en tout ?
-
-**Réponse :** 15
-
-*Corrigé.* (1) Attention : on ne compte pas les nombres (il y en a 12), mais les chiffres écrits. (2) De 1 à 9, chaque nombre s'écrit avec un seul chiffre : cela fait 9 chiffres. (3) 10, 11 et 12 s'écrivent chacun avec deux chiffres : 1 et 0, 1 et 1, 1 et 2. (4) On continue donc à compter de 2 en 2 à partir de 9 : 11, 13, 15. (5) Tom écrit 15 chiffres.
-
-*Indice.* De 1 à 9, un chiffre par page. Et pour les pages suivantes ?
-
-**EX-A008-M-01** — maitrise, vrai_faux, 75 s
-
-Le nombre 99 s'écrit avec plus de chiffres que le nombre 100.
-
-**Réponse :** False
-
-*Corrigé.* (1) On compte les chiffres de chacun : 99 s'écrit avec 2 chiffres, 100 s'écrit avec 3 chiffres. (2) Comme 2 chiffres, c'est moins que 3 chiffres, c'est 100 qui s'écrit avec le plus de chiffres. (3) L'affirmation est donc fausse. (4) Le piège : le chiffre 9 est plus grand que le chiffre 1, mais cela ne dit rien du nombre de chiffres utilisés pour écrire le nombre.
-
-*Indice.* Compte les chiffres de chaque nombre, un par un, sans regarder lequel des deux nombres est le plus grand.
-
-**EX-A008-M-02** — maitrise, qcm, 90 s
-
-Avec les chiffres 6, 0 et 2, chacun une seule fois, quel est le plus petit nombre de trois chiffres ?
-
-- **a.** 026
-  <br>*Erreur visée :* L'élève met le plus petit chiffre, 0, en premier. Mais 026 se lit vingt-six : c'est le nombre 26, qui s'écrit avec deux chiffres. Un nombre de trois chiffres ne commence pas par 0.
-- **b.** 260
-  <br>*Erreur visée :* L'élève met bien 2 en premier, puis croit que le 0 se place toujours à la fin, comme dans 10, 20 ou 30. Avec le 0 au rang des dizaines, on obtient un nombre plus petit.
-- **c.** 620
-  <br>*Erreur visée :* L'élève écrit les chiffres du plus grand au plus petit : il obtient le plus grand nombre au lieu du plus petit.
-- **d.** 206 ✅
-
-*Corrigé.* (1) Un nombre de trois chiffres ne commence jamais par 0 : 026 s'écrit simplement 26, qui n'a que deux chiffres. (2) Au rang des centaines, on met donc le plus petit chiffre qui n'est pas 0 : le 2. (3) Il reste 0 et 6. Au rang des dizaines, on met le plus petit : 0. Puis 6 aux unités. (4) Réponse : 206. Les autres nombres possibles, 260, 602 et 620, sont plus grands.
-
-*Indice.* Quel chiffre peut se mettre en premier ? Pas n'importe lequel.
 
 ---
 
@@ -12807,6 +12807,165 @@ Une boîte cubique de 6 cm d'arête se remplit de cubes de 1 cm d'arête. On a d
 
 ---
 
+## `B054` · Traduire un programme de calcul en une seule expression numérique — 5e, difficulté 5
+
+*Écrire en une seule expression, avec les parenthèses nécessaires, une suite d'opérations donnée en phrases, un programme de calcul ou un problème, puis la calculer : « choisir 7, ajouter 5, multiplier le résultat par 3, retrancher 4 » s'écrit (7 + 5) × 3 − 4 = 32 ; 3 cahiers à 2,50 € et 2 stylos à 1,20 € coûtent 3 × 2,50 + 2 × 1,20 = 9,90 € ; reconnaître, parmi plusieurs expressions, celle qui traduit le programme. L'erreur type est d'oublier les parenthèses (7 + 5 × 3 − 4 = 18) ou d'écrire une suite d'égalités fausses (7 + 5 = 12 × 3 = 36 − 4). Nombres positifs ; la lettre arrive avec F003, le programme appliqué à un nombre négatif avec B051. Réponse : QCM entre expressions, ou la valeur de l'expression (un nombre) ; écrire l'expression au clavier attend la saisie des expressions numériques (section 5 du compte rendu). En attendant la saisie des expressions : QCM. Figure : aucune.*
+
+> « Traduire un problème, une succession donnée d'opérations, un programme de calcul, en une seule expression, en faisant appel ou non à des parenthèses. » — *Cycle 4, classe de 5e, Nombres et calculs, Opérations, Objectifs d'apprentissage*
+> « Enchainer des opérations. » — *Cycle 4, classe de 5e, Nombres et calculs, Opérations, Objectifs d'apprentissage*
+
+**EX-B054-D-01** — decouverte, qcm, 60 s
+
+Programme de calcul : choisir 6 ; ajouter 4 ; multiplier le résultat par 5. Quelle expression traduit ce programme en un seul calcul ?
+
+- **a.** 6 + 4 × 5
+  <br>*Erreur visée :* L'élève écrit les opérations dans l'ordre du programme, sans parenthèses. Mais la multiplication est prioritaire : ce calcul vaut 6 + 20 = 26, il multiplie seulement 4 par 5, et non le résultat 10.
+- **b.** (6 + 4) × 5 ✅
+- **c.** 6 × 5 + 4
+  <br>*Erreur visée :* L'élève multiplie le nombre choisi par 5 avant d'ajouter 4 : l'ordre des étapes est inversé. Ce calcul vaut 30 + 4 = 34.
+- **d.** 6 + 4 = 10 × 5
+  <br>*Erreur visée :* L'élève enchaîne les étapes avec des signes = : cette ligne affirme que 6 + 4 est égal à 10 × 5, c'est-à-dire que 10 est égal à 50, ce qui est faux. Ce n'est pas une seule expression.
+
+*Corrigé.* (1) Le programme ajoute d'abord 4 à 6, puis multiplie le résultat par 5 : la somme 6 + 4 doit être calculée avant la multiplication. (2) Sans parenthèses, la multiplication passe avant l'addition. On met donc la somme entre parenthèses : (6 + 4) × 5. (3) Contrôle : le programme donne 6 + 4 = 10, puis 10 × 5 = 50 ; l'expression donne (6 + 4) × 5 = 10 × 5 = 50.
+
+*Indice.* Quel calcul doit être fait avant la multiplication par 5 ?
+
+**EX-B054-D-02** — decouverte, texte, 60 s
+
+Programme de calcul : choisir 7 ; le multiplier par 5 ; ajouter 6 au résultat. Écris ce programme en une seule expression, sans effectuer le calcul.
+
+**Réponse :** 7 × 5 + 6
+
+*Corrigé.* (1) Première étape : multiplier 7 par 5, ce qui s'écrit 7 × 5. (2) Deuxième étape : ajouter 6 à ce résultat : 7 × 5 + 6. (3) Faut-il des parenthèses ? Non : la multiplication est prioritaire, elle est faite avant l'addition, comme dans le programme. L'écriture (7 × 5) + 6 est juste aussi, mais ses parenthèses sont inutiles. (4) Contrôle : 7 × 5 + 6 = 35 + 6 = 41, comme le programme (7 × 5 = 35, puis 35 + 6 = 41).
+
+*Indice.* Écris d'abord la multiplication, puis l'addition, dans un seul calcul.
+
+**EX-B054-E-01** — entrainement, texte, 90 s
+
+Programme de calcul : choisir 13 ; soustraire 5 ; multiplier le résultat par 4 ; ajouter 7. Écris ce programme en une seule expression, sans effectuer le calcul.
+
+**Réponse :** (13 − 5) × 4 + 7
+
+*Corrigé.* (1) On soustrait d'abord 5 de 13 : 13 − 5. Puis on multiplie ce résultat par 4 : la différence doit être calculée avant la multiplication, on la met donc entre parenthèses : (13 − 5) × 4. (2) On ajoute enfin 7 : (13 − 5) × 4 + 7. Pas besoin d'autres parenthèses : la multiplication passe avant l'addition. (3) Contrôle : (13 − 5) × 4 + 7 = 8 × 4 + 7 = 32 + 7 = 39, comme le programme : 13 − 5 = 8, 8 × 4 = 32, 32 + 7 = 39. (4) Sans parenthèses, dans 13 − 5 × 4 + 7, on calculerait d'abord 5 × 4 : ce n'est plus le programme.
+
+*Indice.* Quelle étape doit être faite avant la multiplication par 4 ? Protège-la.
+
+**EX-B054-E-02** — entrainement, vrai_faux, 60 s
+
+Programme de calcul : choisir 12 ; ajouter 8 ; diviser le résultat par 4. Noa le traduit par l'expression 12 + 8 ÷ 4. A-t-il raison ?
+
+**Réponse :** False
+
+*Corrigé.* (1) Le programme donne 12 + 8 = 20, puis 20 ÷ 4 = 5. (2) Dans 12 + 8 ÷ 4, la division est prioritaire : on calcule 8 ÷ 4 = 2, puis 12 + 2 = 14. Ce n'est pas le résultat du programme : Noa a tort. (3) La division porte sur le résultat de l'addition : il faut des parenthèses, (12 + 8) ÷ 4.
+
+*Indice.* Calcule le programme, puis l'expression de Noa en respectant les priorités.
+
+**EX-B054-M-01** — maitrise, texte, 90 s
+
+Sacha a 50 €. Il achète 2 bandes dessinées à 13,50 € chacune. Écris en une seule expression le calcul de l'argent qui lui reste, sans effectuer le calcul.
+
+**Réponse :** 50 − 2 × 13,50
+
+*Corrigé.* (1) Les 2 bandes dessinées coûtent 2 × 13,50 €. (2) Il reste 50 € moins cette dépense : 50 − 2 × 13,50. La multiplication est prioritaire : elle est faite avant la soustraction, sans parenthèses. (3) Calcul : 2 × 13,50 = 27, puis 50 − 27 = 23. Il reste 23 €. (4) L'écriture 50 − 13,50 − 13,50 est juste aussi. En revanche, (50 − 2) × 13,50 retirerait 2 € de 50 € avant de multiplier, ce qui n'a pas de sens ici.
+
+*Indice.* Écris d'abord le prix des 2 bandes dessinées, puis retire-le de 50.
+
+**EX-B054-M-02** — maitrise, qcm, 90 s
+
+Trois amis achètent une pizza à 15 € et une salade à 6 €. Ils partagent la dépense en parts égales. Quelle expression donne la part de chacun ?
+
+- **a.** 15 + 6 ÷ 3
+  <br>*Erreur visée :* L'élève oublie les parenthèses : la division est prioritaire, seul le prix de la salade est partagé. Ce calcul vaut 15 + 2 = 17 €.
+- **b.** 15 ÷ 3 + 6
+  <br>*Erreur visée :* L'élève ne partage que la pizza : chacun paierait 5 + 6 = 11 €, et les trois parts feraient 33 €, plus que la dépense de 21 €.
+- **c.** 3 ÷ (15 + 6)
+  <br>*Erreur visée :* L'élève inverse la division : il divise 3 par la dépense au lieu de diviser la dépense par 3. Chacun paierait moins de 1 €.
+- **d.** (15 + 6) ÷ 3 ✅
+
+*Corrigé.* (1) La dépense totale est la somme 15 + 6. (2) C'est toute cette somme qu'on partage en 3 : elle doit être calculée avant la division, donc entre parenthèses : (15 + 6) ÷ 3. (3) Calcul : 15 + 6 = 21, puis 21 ÷ 3 = 7. Chacun paie 7 €. (4) Contrôle : 3 × 7 = 21 €, c'est bien la dépense totale.
+
+*Indice.* Qu'est-ce qui est partagé en trois : la pizza seule, ou toute la dépense ?
+
+---
+
+## `B055` · Distributivité simple sur des exemples numériques — 5e, difficulté 5
+
+*Savoir que multiplier une somme ou une différence par un nombre revient à multiplier chacun de ses termes par ce nombre, k × (a + b) = k × a + k × b et k × (a − b) = k × a − k × b, et s'en servir dans les deux sens pour calculer mentalement : 7 × 102 = 7 × 100 + 7 × 2 = 714 ; 25 × 98 = 25 × 100 − 25 × 2 = 2 450 ; 13 × 7 + 13 × 3 = 13 × (7 + 3) = 130 ; voir l'égalité sur l'aire d'un rectangle partagé en deux (6 × (4 + 3) = 6 × 4 + 6 × 3 = 42). L'erreur type est de ne multiplier que le premier terme (7 × 102 = 7 × 100 + 2). Nombres entiers positifs ; la même règle avec des lettres est F012. Réponse : un nombre, ou le nombre manquant d'une égalité (7 × 102 = 7 × 100 + 7 × …), ou QCM entre écritures. Figure utile : geometrie, rectangle partagé en deux, longueurs écrites.*
+
+> « Connaitre et utiliser la distributivité simple sur des exemples numériques. » — *Cycle 4, classe de 5e, Nombres et calculs, Opérations, Objectifs d'apprentissage*
+
+**EX-B055-D-01** — decouverte, qcm, 75 s
+
+Ce rectangle quadrillé est partagé en deux rectangles. Les longueurs sont données en carreaux. Quel calcul donne le nombre total de carreaux ?
+
+- **a.** 5 × 8 + 3
+  <br>*Erreur visée :* L'élève multiplie la première partie par 5 mais pas la seconde : il ne compte qu'une rangée du petit rectangle. Ce calcul vaut 43, pas 55.
+- **b.** 5 × 8 × 3
+  <br>*Erreur visée :* L'élève multiplie toutes les longueurs écrites sur la figure. Ce calcul vaut 120, plus du double du nombre de carreaux.
+- **c.** 5 × 8 + 5 × 3 ✅
+- **d.** 5 + 8 + 3
+  <br>*Erreur visée :* L'élève additionne les longueurs, comme pour faire le tour : il obtient 16, une longueur et non un nombre de carreaux.
+
+*Corrigé.* (1) Le grand rectangle a 5 rangées de 8 + 3 = 11 carreaux : il contient 5 × (8 + 3) = 5 × 11 = 55 carreaux. (2) On peut aussi compter chaque partie : le rectangle de gauche contient 5 × 8 = 40 carreaux, celui de droite 5 × 3 = 15 carreaux. En tout : 5 × 8 + 5 × 3 = 40 + 15 = 55. (3) Les deux calculs donnent le même nombre : 5 × (8 + 3) = 5 × 8 + 5 × 3. Multiplier une somme par 5, c'est multiplier chacun de ses termes par 5.
+
+*Indice.* Compte les carreaux du rectangle de gauche, puis ceux du rectangle de droite.
+
+**EX-B055-D-02** — decouverte, numerique, 45 s
+
+Pour calculer 9 × 104 de tête, Inès décompose 104 en 100 + 4 : 9 × 104 = 9 × 100 + 9 × 4 Combien vaut 9 × 104 ?
+
+**Réponse :** 936
+
+*Corrigé.* (1) 9 × 100 = 900 et 9 × 4 = 36. (2) 9 × 104 = 900 + 36 = 936. (3) Inès a multiplié 100 et 4 par 9 : comme 104 = 100 + 4, on a 9 × 104 = 9 × (100 + 4) = 9 × 100 + 9 × 4. (4) Erreur à éviter : 9 × 100 + 4 = 904 oublie de multiplier 4 par 9.
+
+*Indice.* Calcule 9 × 100, puis 9 × 4, puis additionne.
+
+**EX-B055-E-01** — entrainement, numerique, 60 s
+
+Calcule 8 × 97 de tête, en écrivant 97 = 100 − 3.
+
+**Réponse :** 776
+
+*Corrigé.* (1) 97 = 100 − 3, donc 8 × 97 = 8 × (100 - 3). (2) On multiplie chacun des deux termes par 8 : 8 × (100 - 3) = 8 × 100 - 8 × 3 = 800 - 24. (3) 800 − 24 = 776. (4) Erreur à éviter : 800 − 3 = 797 ne multiplie pas 3 par 8. Contrôle : 8 × 97 est un peu moins que 8 × 100 = 800 ; il manque 8 × 3 = 24.
+
+*Indice.* Multiplie 100 par 8, puis 3 par 8.
+
+**EX-B055-E-02** — entrainement, qcm, 60 s
+
+Quelle écriture permet de calculer facilement 17 × 6 + 17 × 4 ?
+
+- **a.** 17 × 6 × 4
+  <br>*Erreur visée :* L'élève remplace le signe + par × et multiplie les trois nombres : 17 × 24 = 408, alors que 17 × 6 + 17 × 4 = 102 + 68 = 170.
+- **b.** 17 × (6 + 4) ✅
+- **c.** (17 + 17) × (6 + 4)
+  <br>*Erreur visée :* L'élève additionne les deux 17 au lieu de ne garder qu'une fois le facteur commun : 34 × 10 = 340, le double du bon résultat.
+
+*Corrigé.* (1) Les deux produits ont un facteur commun, 17 : on a 6 paquets de 17, puis 4 paquets de 17, soit 6 + 4 = 10 paquets de 17. (2) Donc 17 × 6 + 17 × 4 = 17 × (6 + 4) = 17 × 10 = 170. (3) Contrôle : 17 × 6 = 102 et 17 × 4 = 68 ; 102 + 68 = 170.
+
+*Indice.* Quel facteur est commun aux deux produits ?
+
+**EX-B055-M-01** — maitrise, numerique, 75 s
+
+Une école commande 26 cahiers à 7 € et 26 classeurs à 3 €. Calcule de tête le montant de la commande.
+
+**Réponse :** 260
+
+*Corrigé.* (1) La commande coûte 26 × 7 + 26 × 3 euros. (2) Les deux produits ont le facteur 26 en commun : 26 × 7 + 26 × 3 = 26 × (7 + 3) = 26 × 10. (3) 26 × 10 = 260 : la commande coûte 260 €. (4) Autre lecture : un cahier et un classeur coûtent ensemble 7 + 3 = 10 €, et l'école achète 26 de ces lots. Contrôle : 26 × 7 = 182, 26 × 3 = 78, 182 + 78 = 260.
+
+*Indice.* Combien coûtent ensemble un cahier et un classeur ?
+
+**EX-B055-M-02** — maitrise, vrai_faux, 75 s
+
+Pour calculer 12 × 49, Lucas écrit : 12 × 49 = 12 × 50 - 1 = 599 A-t-il raison ?
+
+**Réponse :** False
+
+*Corrigé.* (1) 49 = 50 − 1, donc 12 × 49 = 12 × (50 - 1). (2) Il faut multiplier chacun des deux termes par 12 : 12 × (50 - 1) = 12 × 50 - 12 × 1 = 600 - 12 = 588. (3) Lucas a retiré 1 au lieu de retirer 12 × 1 = 12 : il a tort, 12 × 49 = 588. (4) Contrôle : 12 × 49, c'est 49 paquets de 12, donc un paquet de 12 de moins que 12 × 50 = 600.
+
+*Indice.* Écris 49 = 50 − 1 et multiplie chaque terme par 12.
+
+---
+
 ## `C033` · Problèmes d'addition et de soustraction de fractions — 5e, difficulté 5
 
 *Résoudre un problème où des parts d'un même tout s'ajoutent ou se retranchent : quelle part représentent deux parts ensemble, quelle part reste-t-il, de combien une part dépasse l'autre. Exemple : un jardin est planté pour 1/3 en légumes et pour 1/4 en fleurs ; la partie plantée représente 7/12 du jardin, il en reste 5/12. Savoir que le tout vaut 1. L'erreur type est d'oublier de retrancher du tout (répondre 7/12 à « quelle part reste-t-il ? »). Les parts sont des fractions du même tout ; prendre une fraction d'une quantité relève de C004, et la fraction d'un reste de la 4e (C037). Réponse : une fraction, comparée par sa valeur. Figure : aucune.*
@@ -13432,6 +13591,652 @@ On ne connaît pas le prix d'un vélo, mais on sait que 10 % de ce prix valent 1
 *Corrigé.* (1) On décompose 45 % : 4 fois 10 %, plus 5 %. Et 5 %, c'est la moitié de 10 %. (2) 4 fois 10 % : 4 × 12 = 48 €. 5 % : 12 ÷ 2 = 6 €. (3) 45 % du prix : 48 + 6 = 54 €. La bonne réponse est b. (4) On n'a pas eu besoin du prix du vélo. Il vaut 10 fois 12 €, soit 120 €, et on peut vérifier : 120 × 45/100 = 5 400/100 = 54.
 
 *Indice.* Écris 45 % avec des 10 % et la moitié de 10 %.
+
+---
+
+## `F003` · Produire une formule : écrire une expression littérale — 5e, difficulté 5
+
+*Utiliser une lettre pour désigner un nombre quelconque et écrire une expression littérale : le double de n (2 × n, noté 2n : le signe × se sous-entend devant une lettre ou une parenthèse), le triple, le successeur n + 1, le prédécesseur n − 1, le carré n × n = n² ; une formule de géométrie (périmètre d'un rectangle 2 × (L + l), aire L × l, périmètre d'un carré 4 × c) ; le nombre d'éléments à l'étape n d'un motif (3n + 1 allumettes) ; traduire une phrase en expression et une expression en phrase (« le triple de x, augmenté de 5 » : 3x + 5). L'erreur type est de confondre 2n et n² (le double et le carré), et d'oublier les parenthèses (2 × L + l au lieu de 2 × (L + l)). Réponse : QCM entre expressions, ou la valeur de la formule pour une valeur donnée (un nombre) ; écrire la formule au clavier attend la saisie des expressions (section 5). En attendant la saisie des expressions : QCM. Figure utile : geometrie, rectangle dont les côtés sont marqués x et x + 3.*
+
+> « Produire des formules (double, triple, carré, successeur, prédécesseur, aire, périmètre, etc.). » — *Cycle 4, classe de 5e, Nombres et calculs, Calcul littéral et algébrique, Objectifs d'apprentissage*
+> « Au cycle 3, les élèves ont été exposés à différents usages de la lettre en mathématiques, notamment comme symbole d'une unité, comme désignation d'un objet mathématique (exemple : le point A, le nombre π, le volume V, etc.) ou encore comme variable dans des formules. » — *Cycle 4, Nombres et calculs, présentation commune aux trois classes*
+
+**EX-F003-D-01** — decouverte, qcm, 60 s
+
+Une boîte contient x crayons. Lou a 2 boîtes pleines et 3 crayons en plus. Quelle expression donne le nombre de crayons de Lou ?
+
+- **a.** 5x
+  <br>*Erreur visée :* L'élève additionne 2 et 3 comme si les 3 crayons étaient 3 boîtes : 5x compte 5 boîtes pleines.
+- **b.** x^{2} + 3
+  <br>*Erreur visée :* L'élève confond le double et le carré : 2 boîtes de x crayons font x + x = 2x, et non x × x = x².
+- **c.** 2 + 3x
+  <br>*Erreur visée :* L'élève inverse les rôles de 2 et de 3 : 3x compterait 3 boîtes pleines, et 2 deux crayons seuls.
+- **d.** 2x + 3 ✅
+
+*Corrigé.* (1) Une boîte contient x crayons, donc 2 boîtes en contiennent 2 × x, qu'on écrit 2x : le signe × se sous-entend devant une lettre. (2) On ajoute les 3 crayons en plus : 2x + 3. (3) Contrôle avec 10 crayons par boîte : 2 × 10 + 3 = 23 crayons, soit bien 2 boîtes de 10 et 3 crayons.
+
+*Indice.* Combien de crayons y a-t-il dans 2 boîtes de x crayons ?
+
+**EX-F003-D-02** — decouverte, vrai_faux, 45 s
+
+On note c la longueur du côté d'un carré. Zoé affirme : « L'aire de ce carré s'écrit 2c. » A-t-elle raison ?
+
+**Réponse :** False
+
+*Corrigé.* (1) L'aire d'un carré de côté c est c × c, que l'on écrit c^{2} (« c au carré »). (2) 2c veut dire 2 × c, c'est-à-dire c + c : c'est le double de c, pas son carré. Zoé a tort. (3) Exemple : pour un côté de 5, l'aire est 5 × 5 = 25, alors que 2 × 5 = 10.
+
+*Indice.* Par quoi multiplie-t-on le côté pour obtenir l'aire d'un carré ?
+
+**EX-F003-E-01** — entrainement, qcm, 75 s
+
+On ne connaît pas la longueur x de ce rectangle. Quelle expression donne son périmètre ?
+
+- **a.** 7x
+  <br>*Erreur visée :* L'élève calcule l'aire (longueur × largeur) au lieu du périmètre, qui est la longueur du contour.
+- **b.** 2 × (x + 7) ✅
+- **c.** 2 × x + 7
+  <br>*Erreur visée :* L'élève oublie les parenthèses : il double la longueur mais ne compte la largeur qu'une fois, alors que le contour a deux largeurs.
+- **d.** x + 7
+  <br>*Erreur visée :* L'élève ne fait que la moitié du tour : une longueur et une largeur, au lieu de deux longueurs et deux largeurs.
+
+*Corrigé.* (1) Le périmètre est la longueur du contour : deux longueurs x et deux largeurs 7, soit x + 7 + x + 7. (2) x + 7 est un demi-tour ; on le double. On écrit 2 × (x + 7), avec des parenthèses pour doubler toute la somme. (3) Contrôle : si la longueur vaut 10, le contour mesure 10 + 7 + 10 + 7 = 34, et 2 × (10 + 7) = 2 × 17 = 34.
+
+*Indice.* Fais le tour du rectangle : combien de longueurs et combien de largeurs rencontres-tu ?
+
+**EX-F003-E-02** — entrainement, texte, 75 s
+
+Un taxi fait payer 4 € au départ, puis 2 € par kilomètre parcouru. Écris le prix, en euros, d'une course de x kilomètres.
+
+**Réponse :** 2x + 4
+
+*Corrigé.* (1) On paie 2 € pour chaque kilomètre : pour x kilomètres, 2 × x euros, qu'on écrit 2x. (2) On ajoute les 4 € du départ : le prix est 2x + 4 euros. (3) Contrôle : pour une course de 10 km, 2 × 10 + 4 = 24 €. Toute écriture égale est juste : 4 + 2x, 2 × x + 4. (4) Erreur à éviter : 4x + 2 inverse les rôles, comme si un kilomètre coûtait 4 €.
+
+*Indice.* Combien coûte une course de 3 kilomètres ? Fais le même calcul avec x.
+
+**EX-F003-M-01** — maitrise, texte, 120 s
+
+La longueur d'un rectangle est le double de sa largeur. On note x sa largeur. Écris une expression de son périmètre en fonction de x.
+
+**Réponse :** 2 × (2x + x)
+
+*Corrigé.* (1) La largeur vaut x ; la longueur est son double : 2x. (2) Le périmètre est le tour du rectangle : deux longueurs et deux largeurs, soit 2 × (2x + x). (3) On peut aussi écrire 2x + x + 2x + x. Ces écritures donnent toujours le même nombre : pour x = 5, 2 × (10 + 5) = 30 et 10 + 5 + 10 + 5 = 30. (4) Erreurs à éviter : 2x + x n'est qu'un demi-tour ; 2x × x est l'aire du rectangle, pas son périmètre.
+
+*Indice.* Écris d'abord la longueur en fonction de x.
+
+**EX-F003-M-02** — maitrise, qcm, 75 s
+
+On note n un nombre. Quelle phrase traduit l'expression 2(n + 5) ?
+
+- **a.** Le double de n, augmenté de 5
+  <br>*Erreur visée :* L'élève lit l'expression de gauche à droite sans voir les parenthèses : cette phrase s'écrit 2n + 5. Les parenthèses de 2(n + 5) disent qu'on double toute la somme.
+- **b.** Le carré de la somme de n et de 5
+  <br>*Erreur visée :* L'élève confond le double et le carré : le carré de la somme s'écrirait (n + 5)^{2}, alors que le 2 placé devant la parenthèse multiplie la somme par 2.
+- **c.** Le double de la somme de n et de 5 ✅
+- **d.** La somme de n et du double de 5
+  <br>*Erreur visée :* L'élève ne double que le 5 : cette phrase s'écrit n + 2 × 5, alors que 2(n + 5) double aussi n.
+
+*Corrigé.* (1) Dans 2(n + 5), le signe × est sous-entendu devant la parenthèse : c'est 2 × (n + 5). (2) On calcule d'abord la parenthèse, la somme de n et de 5, puis on la multiplie par 2 : c'est le double de cette somme. (3) Contrôle avec n = 3 : 2(3 + 5) = 2 × 8 = 16, alors que « le double de 3, augmenté de 5 » donne 6 + 5 = 11.
+
+*Indice.* Quelle opération fait-on en dernier dans 2(n + 5) ?
+
+---
+
+## `F002` · Calculer la valeur d'une expression littérale par substitution — 5e, difficulté 5
+
+*Remplacer la lettre par un nombre positif donné et calculer en respectant les priorités, y compris avec un carré : pour x = 4, 3x + 5 = 3 × 4 + 5 = 17 ; 2x² = 2 × 4² = 32 ; x(x + 1) = 4 × 5 = 20 ; pour x = 2,5, 4x − 1 = 9 ; une formule de géométrie (aire L × l pour L = 7,5 et l = 4 : 30). Savoir rétablir le signe × sous-entendu. L'erreur type est de juxtaposer les chiffres (3x vaut 34 pour x = 4) ou de calculer (2x)² au lieu de 2x² (64 au lieu de 32). Nombres positifs entiers ou décimaux ; la valeur pour un nombre négatif est en 4e (F063). Réponse : un nombre. Figure : aucune.*
+
+> « Calculer la valeur d'une expression littérale par substitution. » — *Cycle 4, classe de 5e, Nombres et calculs, Calcul littéral et algébrique, Objectifs d'apprentissage*
+> « Calculer la valeur d'une expression littérale contenant une puissance simple. » — *Cycle 4, classe de 5e, Nombres et calculs, Puissances, Objectifs d'apprentissage*
+
+**EX-F002-D-01** — decouverte, numerique, 45 s
+
+On veut calculer 4x + 7 pour x = 6. On remplace x par 6 : 4x devient 4 × 6. Quelle est la valeur de 4x + 7 ?
+
+**Réponse :** 31
+
+*Corrigé.* (1) 4x veut dire 4 × x. Pour x = 6 : 4 × 6 + 7. (2) La multiplication d'abord : 4 × 6 = 24, puis 24 + 7 = 31. (3) Erreur à éviter : écrire 46 à la place de 4x. Le signe × est sous-entendu entre 4 et x : il faut le rétablir quand on remplace x par un nombre.
+
+*Indice.* Rétablis le signe × entre 4 et x.
+
+**EX-F002-D-02** — decouverte, qcm, 45 s
+
+Quelle est la valeur de 2x^{2} pour x = 3 ?
+
+- **a.** 18 ✅
+- **b.** 36
+  <br>*Erreur visée :* L'élève calcule (2x)^{2} : il multiplie 2 par 3, puis élève 6 au carré. Mais dans 2x^{2}, le carré ne porte que sur x : 2 × 3^{2}.
+- **c.** 12
+  <br>*Erreur visée :* L'élève calcule 2 × 3 × 2 : il confond le carré de 3 avec le double de 3.
+
+*Corrigé.* (1) 2x^{2} veut dire 2 × x^{2} : le carré porte seulement sur x. (2) Pour x = 3 : 2 × 3^{2}. La puissance d'abord : 3^{2} = 9, puis 2 × 9 = 18. (3) (2x)^{2} serait différent : (2 × 3)^{2} = 6^{2} = 36.
+
+*Indice.* Le carré porte-t-il sur 2x ou seulement sur x ?
+
+**EX-F002-E-01** — entrainement, numerique, 75 s
+
+Calcule la valeur de x(x + 4) pour x = 0{,}5.
+
+**Réponse :** 2.25
+
+*Corrigé.* (1) x(x + 4) veut dire x × (x + 4). (2) Pour x = 0,5 : 0{,}5 × (0{,}5 + 4) = 0{,}5 × 4{,}5. (3) 0{,}5 × 4{,}5 = 2{,}25 : multiplier par 0,5, c'est prendre la moitié, et la moitié de 4,5 est 2,25. (4) Erreur à éviter : oublier la parenthèse, 0{,}5 × 0{,}5 + 4 = 4{,}25.
+
+*Indice.* Remplace chaque x par 0,5, sans oublier le signe × devant la parenthèse.
+
+**EX-F002-E-02** — entrainement, vrai_faux, 60 s
+
+Pour x = 1{,}5, Jade affirme que 3(x + 2) vaut 10,5. A-t-elle raison ?
+
+**Réponse :** True
+
+*Corrigé.* (1) 3(x + 2) veut dire 3 × (x + 2) : on calcule d'abord la parenthèse. (2) Pour x = 1,5 : 1{,}5 + 2 = 3{,}5, puis 3 × 3{,}5 = 10{,}5. (3) Jade a raison. Sans la parenthèse, on trouverait 3 × 1{,}5 + 2 = 6{,}5 : c'est l'erreur à éviter.
+
+*Indice.* Commence par la parenthèse.
+
+**EX-F002-M-01** — maitrise, numerique, 90 s
+
+Une location de vélo coûte 2{,}5t + 4 euros, où t est la durée en heures. Combien coûte une location de 3,5 heures ?
+
+**Réponse :** 12.75
+
+*Corrigé.* (1) On remplace t par 3,5, en rétablissant le signe × : 2{,}5 × 3{,}5 + 4. (2) 2{,}5 × 3{,}5 = 8{,}75 (25 × 35 = 875, et deux chiffres après la virgule en tout). (3) 8{,}75 + 4 = 12{,}75 : la location coûte 12,75 €. (4) Erreur à éviter : lire 2,5t comme un nombre collé ; t est remplacé par 3,5 et multiplié par 2,5.
+
+*Indice.* Remplace t par 3,5 et rétablis le signe ×.
+
+**EX-F002-M-02** — maitrise, qcm, 120 s
+
+Pour x = 4, laquelle de ces expressions a la plus grande valeur ?
+
+- **a.** 2x^{2} + 15
+  <br>*Erreur visée :* L'élève calcule (2x)^{2} + 15 = 8^{2} + 15 = 79 au lieu de 2 × 4^{2} + 15 = 47 : le carré ne porte que sur x.
+- **b.** 9x + 2
+  <br>*Erreur visée :* L'élève colle les chiffres : il lit 9x comme 94 et trouve 96. Il faut rétablir le signe × : 9 × 4 + 2 = 38.
+- **c.** (x + 3)^{2} ✅
+- **d.** x^{2} + 30
+  <br>*Erreur visée :* L'élève choisit l'expression où il voit le plus grand nombre écrit, 30, sans remplacer x. Pour x = 4, elle vaut 16 + 30 = 46.
+
+*Corrigé.* (1) On remplace x par 4 dans chaque expression, en respectant les priorités. (2) 2x^{2} + 15 = 2 × 4^{2} + 15 = 2 × 16 + 15 = 47 ; 9x + 2 = 9 × 4 + 2 = 38. (3) (x + 3)^{2} = (4 + 3)^{2} = 7^{2} = 49 ; x^{2} + 30 = 16 + 30 = 46. (4) La plus grande valeur est 49, celle de (x + 3)^{2}. Les valeurs sont proches : seul un calcul exact permet de trancher.
+
+*Indice.* Calcule les quatre valeurs une par une.
+
+---
+
+## `F022` · Tester une égalité ; réfuter par un contre-exemple — 5e, difficulté 5
+
+*Pour une égalité entre deux expressions qui contiennent une lettre, calculer chaque membre pour une valeur donnée et dire si l'égalité est vraie ou fausse pour cette valeur : 2(x + 3) = 2x + 6 est vraie pour x = 1 (8 = 8) ; 3x + 4 = 5x est vraie pour x = 2 (10 = 10) mais fausse pour x = 0 (4 et 0). Savoir qu'une égalité vraie pour quelques valeurs ne l'est pas forcément pour toutes, et qu'un seul contre-exemple suffit à montrer qu'une affirmation est fausse (« n² est toujours plus grand que n » : faux pour n = 1). L'erreur type est de conclure qu'une égalité est toujours vraie après un ou deux essais réussis. Réponse : vrai/faux, la valeur de chaque membre (un nombre), ou QCM pour choisir un contre-exemple. Figure : aucune.*
+
+> « Tester si une égalité entre expressions algébriques comportant une variable est vraie ou fausse. » — *Cycle 4, classe de 5e, Nombres et calculs, Calcul littéral et algébrique, Objectifs d'apprentissage*
+> « Utiliser un contre-exemple pour démontrer qu'une assertion est fausse. » — *Cycle 4, classe de 5e, Nombres et calculs, Calcul littéral et algébrique, Objectifs d'apprentissage*
+
+**EX-F022-D-01** — decouverte, numerique, 60 s
+
+Pour savoir si l'égalité 5x + 2 = 3x + 8 est vraie quand x = 3, on calcule ses deux membres séparément. Que vaut le membre de gauche, 5x + 2, pour x = 3 ?
+
+**Réponse :** 17
+
+*Corrigé.* (1) On remplace x par 3 en rétablissant le signe × caché : 5x veut dire 5 × x, et non le nombre 53. (2) On multiplie avant d'ajouter : 5 × 3 + 2 = 15 + 2 = 17. (3) On calcule de même le membre de droite : 3 × 3 + 8 = 9 + 8 = 17. (4) Les deux membres valent 17 : l'égalité est vraie pour x = 3.
+
+*Indice.* Remplace x par 3 et rétablis le signe × : 5x, c'est 5 × x.
+
+**EX-F022-D-02** — decouverte, vrai_faux, 60 s
+
+Affirmation : l'égalité 4x + 3 = 2x + 9 est vraie pour x = 3. Vrai ou faux ?
+
+**Réponse :** True
+
+*Corrigé.* (1) Membre de gauche pour x = 3 : 4 × 3 + 3 = 12 + 3 = 15. (2) Membre de droite pour x = 3 : 2 × 3 + 9 = 6 + 9 = 15. (3) Les deux membres sont égaux : l'affirmation est vraie. (4) Pour x = 2, elle serait fausse : 4 × 2 + 3 = 11 et 2 × 2 + 9 = 13. Une égalité qui contient une lettre peut être vraie pour une valeur et fausse pour une autre.
+
+*Indice.* Calcule chaque membre pour x = 3, puis compare les deux résultats.
+
+**EX-F022-E-01** — entrainement, qcm, 75 s
+
+Tom affirme : « Pour tout nombre entier n, 3n est plus grand que n + 5. » Quelle valeur de n montre qu'il a tort ?
+
+- **a.** n = 10
+  <br>*Erreur visée :* L'élève choisit une valeur pour laquelle l'affirmation marche : 3 × 10 = 30 est plus grand que 10 + 5 = 15. Un exemple qui marche ne montre pas que Tom a tort.
+- **b.** n = 3
+  <br>*Erreur visée :* L'élève lit 3n comme 3 + n : il trouve 6, plus petit que 3 + 5 = 8. Or 3n = 3 × 3 = 9, plus grand que 8 : pour n = 3, Tom a raison.
+- **c.** n = 2 ✅
+
+*Corrigé.* (1) Pour montrer qu'une affirmation « pour tout nombre » est fausse, un seul contre-exemple suffit : une valeur de n pour laquelle elle ne marche pas. (2) Pour n = 2 : 3n = 3 × 2 = 6 et n + 5 = 2 + 5 = 7. 6 n'est pas plus grand que 7 : Tom a tort. (3) Pour n = 10 (30 et 15) et pour n = 3 (9 et 8), l'affirmation est vraie : ces valeurs ne la contredisent pas. (4) La bonne réponse est c.
+
+*Indice.* Calcule 3n et n + 5 pour chaque valeur proposée, puis compare.
+
+**EX-F022-E-02** — entrainement, numerique, 75 s
+
+On veut vérifier que l'égalité 4x + 1 = 2x + 4 est vraie pour x = 1{,}5. Calcule ses deux membres pour cette valeur. Quelle valeur commune trouves-tu ?
+
+**Réponse :** 7
+
+*Corrigé.* (1) Membre de gauche : 4 × 1{,}5 + 1 = 6 + 1 = 7. (2) Membre de droite : 2 × 1{,}5 + 4 = 3 + 4 = 7. (3) Les deux membres valent 7 : l'égalité est vraie pour x = 1{,}5.
+
+*Indice.* Rétablis les signes × : 4x, c'est 4 × x. Combien font 4 fois 1,5 ?
+
+**EX-F022-M-01** — maitrise, vrai_faux, 90 s
+
+Inès teste l'égalité x^{2} + 6 = 5x : elle est vraie pour x = 2 et pour x = 3. Inès conclut qu'elle est vraie pour tous les nombres. A-t-elle raison ?
+
+**Réponse :** False
+
+*Corrigé.* (1) Les deux essais d'Inès sont justes : pour x = 2, 2^{2} + 6 = 10 et 5 × 2 = 10 ; pour x = 3, 3^{2} + 6 = 15 et 5 × 3 = 15. (2) Essayons x = 4 : 4^{2} + 6 = 16 + 6 = 22, mais 5 × 4 = 20. Les deux membres sont différents. (3) x = 4 est un contre-exemple : l'égalité n'est pas vraie pour tous les nombres. (4) Deux essais réussis ne démontrent pas qu'une égalité est toujours vraie ; un seul contre-exemple suffit à montrer qu'elle ne l'est pas. Inès a tort.
+
+*Indice.* Essaie une autre valeur que 2 et 3, par exemple 4.
+
+**EX-F022-M-02** — maitrise, numerique, 120 s
+
+Noé vérifie que n^{2} est plus petit que 4n + 6 pour tous les entiers n de 1 à 5. Il en conclut que c'est vrai pour tout entier positif n. Quel est le plus petit entier positif qui le contredit ?
+
+**Réponse :** 6
+
+*Corrigé.* (1) On continue les essais de Noé au-delà de 5, en calculant les deux expressions. (2) Pour n = 5 : 5^{2} = 25 et 4 × 5 + 6 = 26 ; 25 est bien plus petit que 26. (3) Pour n = 6 : 6^{2} = 36 et 4 × 6 + 6 = 30 ; 36 n'est pas plus petit que 30. (4) Le plus petit entier qui contredit Noé est 6 : cinq essais réussis ne suffisaient pas à démontrer sa conclusion.
+
+*Indice.* Continue les essais de Noé au-delà de 5 : calcule n^{2} et 4n + 6 pour chaque entier, l'un après l'autre.
+
+---
+
+## `F023` · Équations ax = c et x + b = c : modéliser, résoudre par l'opération inverse — 5e, difficulté 5
+
+*Donner à la lettre le statut d'inconnue : traduire un problème « à trou » par une équation du type x + b = c ou ax = c (« Léa a 15 billes ; combien doit-elle en gagner pour en avoir 42 ? » : x + 15 = 42 ; « 6 cahiers identiques coûtent 15 € » : 6x = 15), puis la résoudre par l'opération inverse : x = 42 − 15 = 27 ; x = 15 ÷ 6 = 2,5 ; 3x = 7 donne x = 7/3 ; x + 9 = 4 donne x = −5 ; 1,5x = 6 donne x = 4 ; vérifier la solution en remplaçant x (F022). L'erreur type est d'appliquer l'opération de l'énoncé au lieu de l'opération inverse (x + 15 = 42 donne x = 57) ou de diviser dans le mauvais sens (6x = 15 donne x = 6/15). Réponse : la solution, un nombre (« x = 27 » est accepté) ; l'équation qui modélise un problème se choisit (QCM) en attendant la saisie des équations (section 5). En attendant la saisie des expressions : QCM pour l'équation. Figure : aucune.*
+
+> « Résoudre des équations du type a𝑥 = c ou 𝑥 + b = c par des méthodes arithmétiques s'appuyant sur les opérations inverses. » — *Cycle 4, classe de 5e, Nombres et calculs, Calcul littéral et algébrique, Objectifs d'apprentissage*
+> « Modéliser des problèmes relevant des opérations à trous par des équations du type a𝑥 = c ou 𝑥 + b = c . » — *Cycle 4, classe de 5e, Nombres et calculs, Calcul littéral et algébrique, Objectifs d'apprentissage*
+> « Donner à la lettre le statut d'inconnue. » — *Cycle 4, classe de 5e, Nombres et calculs, Calcul littéral et algébrique, Objectifs d'apprentissage*
+> « Savoir que pour compléter une addition à trou, on utilise une soustraction : 2 + ... = 7 se complète en calculant 7 – 2. » — *Cycle 4, classe de 5e, Nombres et calculs, Nombres relatifs, Automatismes*
+
+**EX-F023-D-01** — decouverte, numerique, 45 s
+
+Lou avait x billes. Elle en gagne 17 et en a alors 45 : x + 17 = 45. Combien de billes Lou avait-elle au départ ?
+
+**Réponse :** 28
+
+*Corrigé.* (1) Pour retrouver x, on fait l'opération inverse de « ajouter 17 » : on enlève 17. (2) x = 45 - 17 = 28. (3) Vérification : 28 + 17 = 45. Lou avait 28 billes au départ. (4) Répondre 62, c'est ajouter 17 une seconde fois au lieu de l'enlever.
+
+*Indice.* Quelle opération défait « ajouter 17 » ?
+
+**EX-F023-D-02** — decouverte, qcm, 60 s
+
+Cinq places de cinéma identiques coûtent 42 euros en tout. Quelle équation permet de trouver le prix x d'une place, en euros ?
+
+- **a.** x + 5 = 42
+  <br>*Erreur visée :* L'élève traduit « cinq places » par une addition. Or 5 places identiques coûtent 5 fois le prix d'une place : 5 × x.
+- **b.** 42x = 5
+  <br>*Erreur visée :* L'élève inverse les rôles des nombres : c'est le prix d'une place qui est multiplié par 5, et c'est le total qui vaut 42.
+- **c.** x = 5 × 42
+  <br>*Erreur visée :* L'élève multiplie les deux nombres de l'énoncé : une place coûterait alors plus cher que les cinq places ensemble.
+- **d.** 5x = 42 ✅
+
+*Corrigé.* (1) Une place coûte x euros ; cinq places coûtent 5 × x, c'est-à-dire 5x euros. (2) Cette dépense vaut 42 euros : l'équation est 5x = 42. (3) On la résout par l'opération inverse : x = 42 ÷ 5 = 8{,}4, soit 8,40 euros la place. La bonne réponse est d.
+
+*Indice.* Cinq places identiques coûtent 5 fois le prix d'une place.
+
+**EX-F023-E-01** — entrainement, texte, 75 s
+
+Un ruban mesure le triple de la longueur x d'un crayon, soit 51 cm. Écris une équation qui traduit cette phrase.
+
+**Réponse :** 3x = 51
+
+*Corrigé.* (1) Le triple de x s'écrit 3 × x, c'est-à-dire 3x. (2) Ce triple vaut 51 : l'équation est 3x = 51. (3) On peut ensuite la résoudre par l'opération inverse : x = 51 ÷ 3 = 17, le crayon mesure 17 cm. Mais la question demandait l'équation, pas sa solution.
+
+*Indice.* Commence par écrire « le triple de x » avec la lettre x.
+
+**EX-F023-E-02** — entrainement, numerique, 90 s
+
+2,5 kg de pommes coûtent 9 euros. On note x le prix d'un kilogramme, en euros : 2{,}5x = 9. Résous cette équation.
+
+**Réponse :** 3.6
+
+*Corrigé.* (1) On cherche le nombre qui, multiplié par 2,5, donne 9 : on fait l'opération inverse, x = 9 ÷ 2{,}5. (2) Pour diviser par 2,5, on multiplie les deux nombres par 10 : 9 ÷ 2{,}5 = 90 ÷ 25 = 3{,}6. (3) Vérification : 2{,}5 × 3{,}6 = 9. Le kilogramme de pommes coûte 3,60 euros. (4) Soustraire (9 - 2{,}5 = 6{,}5) n'est pas l'opération inverse d'une multiplication.
+
+*Indice.* Quelle opération défait « multiplier par 2,5 » ?
+
+**EX-F023-M-01** — maitrise, numerique, 75 s
+
+Le matin, il faisait x °C. La température a monté de 7 degrés, et il fait 3 °C à midi : x + 7 = 3. Quelle température faisait-il le matin ?
+
+**Réponse :** -4
+
+*Corrigé.* (1) L'opération inverse de « ajouter 7 » est « soustraire 7 » : x = 3 - 7. (2) 3 - 7 = -4 : en partant de 3 et en descendant de 7, on passe sous zéro. (3) Vérification : -4 + 7 = 3. Il faisait −4 °C le matin. (4) Répondre 10, c'est appliquer l'opération de l'énoncé (3 + 7) au lieu de son inverse.
+
+*Indice.* Quelle opération défait « ajouter 7 » ? Le résultat peut être négatif.
+
+**EX-F023-M-02** — maitrise, texte, 90 s
+
+Sept amis se partagent 3 pizzas identiques à parts égales. On note x la part de chacun, en pizzas : 7x = 3. Donne la valeur exacte de x, sous forme de fraction.
+
+**Réponse :** 3/7
+
+*Corrigé.* (1) L'opération inverse de « multiplier par 7 » est « diviser par 7 » : x = 3 ÷ 7. (2) Le quotient de 3 par 7 s'écrit 3/7 : c'est sa valeur exacte, car la division décimale de 3 par 7 ne s'arrête pas. (3) Vérification : 7 × 3/7 = 3. (4) Chacun reçoit 3/7 de pizza, moins d'une pizza entière : normal, il y a moins de pizzas que d'amis. Répondre 7/3, c'est diviser dans le mauvais sens.
+
+*Indice.* On partage 3 pizzas en 7 : quel nombre divise-t-on par quel autre ?
+
+---
+
+## `F061` · Somme ou produit : la nature d'une expression littérale — 5e, difficulté 5
+
+*Dire si une expression littérale est une somme (ou une différence) ou un produit d'après la dernière opération à effectuer, et nommer ses termes ou ses facteurs : 3x + 2 est une somme de deux termes, 3x et 2 ; 5(x + 4) est un produit de deux facteurs, 5 et x + 4 ; 2x − 7 est une différence ; 3x est un produit. Savoir que développer transforme un produit en somme et que factoriser transforme une somme en produit (F012). L'erreur type est de se fier à la première opération lue (5(x + 4) jugé « somme » parce qu'il contient +). Réponse : QCM (somme, différence, produit), vrai/faux, ou le nombre de termes. Figure : aucune.*
+
+> « Déterminer si une expression littérale est une somme ou un produit. » — *Cycle 4, classe de 5e, Nombres et calculs, Calcul littéral et algébrique, Objectifs d'apprentissage*
+> « Nommer un calcul, distinguer sommes et produits, termes et facteurs. » — *Cycle 4, classe de 5e, Nombres et calculs, Opérations, Objectifs d'apprentissage*
+
+**EX-F061-D-01** — decouverte, qcm, 45 s
+
+Pour calculer 4x + 9 quand x vaut 2, on fait d'abord 4 × 2, puis on ajoute 9. Quelle est la nature de l'expression 4x + 9 ?
+
+- **a.** Un produit
+  <br>*Erreur visée :* L'élève voit le produit 4x écrit en premier. Mais la dernière opération effectuée est l'addition de 9 : c'est elle qui donne la nature de l'expression.
+- **b.** Une différence
+  <br>*Erreur visée :* L'élève confond les mots : une différence a pour dernière opération une soustraction, et il n'y a pas de soustraction dans 4x + 9.
+- **c.** Une somme ✅
+
+*Corrigé.* (1) La nature d'une expression est donnée par la dernière opération à effectuer. (2) Dans 4x + 9, on calcule d'abord le produit 4x (la multiplication est prioritaire), puis on ajoute 9 : la dernière opération est une addition. (3) 4x + 9 est donc une somme de deux termes, 4x et 9. Le terme 4x est lui-même un produit, de facteurs 4 et x.
+
+*Indice.* Quelle opération fait-on en dernier ?
+
+**EX-F061-D-02** — decouverte, qcm, 45 s
+
+Quelle phrase décrit l'expression 6(x + 2) ?
+
+- **a.** Une somme de deux termes : 6x et 2
+  <br>*Erreur visée :* L'élève lit 6x + 2 en oubliant la parenthèse : le 6 multiplie toute la somme x + 2, pas seulement x.
+- **b.** Un produit de deux facteurs : 6 et x + 2 ✅
+- **c.** Un produit de deux facteurs : 6 et x
+  <br>*Erreur visée :* L'élève voit bien un produit, mais oublie la parenthèse : le second facteur est toute la somme x + 2, pas seulement x.
+- **d.** Une somme de deux termes : x et 2
+  <br>*Erreur visée :* L'élève se fie au signe + qu'il voit. Mais la somme x + 2 est entre parenthèses : on la calcule d'abord, puis on la multiplie par 6.
+
+*Corrigé.* (1) Dans 6(x + 2), le signe × est sous-entendu : c'est 6 × (x + 2). (2) On calcule d'abord la parenthèse x + 2, puis on multiplie le résultat par 6 : la dernière opération est une multiplication. (3) 6(x + 2) est donc un produit de deux facteurs : 6 et x + 2. Le 6 multiplie toute la somme, pas seulement x.
+
+*Indice.* Par quoi commence-t-on le calcul : la parenthèse ou la multiplication ?
+
+**EX-F061-E-01** — entrainement, vrai_faux, 45 s
+
+Mehdi affirme : « Dans l'expression 8 + 3x, le nombre 3 est un facteur, pas un terme. » A-t-il raison ?
+
+**Réponse :** True
+
+*Corrigé.* (1) 8 + 3x est une somme : la dernière opération est l'addition. Ses deux termes sont 8 et 3x. (2) 3x veut dire 3 × x : c'est un produit, dont 3 et x sont les facteurs. (3) 3 est donc un facteur du terme 3x, et non un terme de la somme. Mehdi a raison.
+
+*Indice.* Quels sont les deux nombres qu'on additionne dans 8 + 3x ?
+
+**EX-F061-E-02** — entrainement, numerique, 60 s
+
+Combien de termes compte l'expression x^{2} + 2(x + 3) + 7 ?
+
+**Réponse :** 3
+
+*Corrigé.* (1) Les termes sont séparés par les additions et les soustractions faites en dernier, hors des parenthèses. (2) Hors des parenthèses, il y a deux additions : elles séparent trois termes, x^{2}, 2(x + 3) et 7. (3) Le signe + de la parenthèse x + 3 ne sépare pas deux termes de l'expression : il est à l'intérieur du terme 2(x + 3), qui est un produit. (4) Erreur à éviter : compter 4 termes en découpant la parenthèse.
+
+*Indice.* Ne compte pas les signes + qui sont à l'intérieur d'une parenthèse.
+
+**EX-F061-M-01** — maitrise, qcm, 75 s
+
+Une seule de ces expressions est un produit. Laquelle ?
+
+- **a.** 4 + 3(x + 2)
+  <br>*Erreur visée :* L'élève voit le produit 3(x + 2). Mais on l'ajoute ensuite à 4 : la dernière opération est une addition, c'est une somme.
+- **b.** x^{2} + 5x
+  <br>*Erreur visée :* L'élève voit deux produits, x × x et 5 × x. Mais on les additionne ensuite : c'est une somme de deux termes.
+- **c.** 9 - 2x
+  <br>*Erreur visée :* L'élève voit le produit 2x. Mais on le soustrait de 9 en dernier : c'est une différence.
+- **d.** (x + 1) × 5 ✅
+
+*Corrigé.* (1) Pour chaque expression, on cherche la dernière opération. (2) (x + 1) × 5 : on calcule la parenthèse, puis on multiplie par 5. La dernière opération est une multiplication : c'est un produit, de facteurs x + 1 et 5. (3) Les trois autres finissent par une addition ou une soustraction : 4 + 3(x + 2) et x^{2} + 5x sont des sommes, 9 - 2x est une différence.
+
+*Indice.* Repère, dans chaque expression, l'opération qu'on effectue en dernier.
+
+**EX-F061-M-02** — maitrise, qcm, 75 s
+
+Noé écrit (x + 3) × 2 et Lou écrit x + 3 × 2. Laquelle de ces deux expressions est un produit ?
+
+- **a.** Celle de Noé ✅
+- **b.** Celle de Lou
+  <br>*Erreur visée :* L'élève voit le produit 3 × 2 à la fin de l'expression de Lou. Mais ce produit est ensuite ajouté à x : la dernière opération est l'addition, c'est une somme.
+- **c.** Les deux, car chacune contient le signe ×
+  <br>*Erreur visée :* L'élève classe d'après les signes présents. Or la nature dépend de la dernière opération : dans x + 3 × 2, c'est l'addition.
+- **d.** Aucune, car chacune contient le signe +
+  <br>*Erreur visée :* L'élève classe d'après le signe +. Or dans (x + 3) × 2, la somme est entre parenthèses : elle est calculée d'abord, et la dernière opération est la multiplication.
+
+*Corrigé.* (1) Dans (x + 3) × 2, on calcule d'abord la parenthèse, puis on multiplie par 2 : la dernière opération est une multiplication. C'est un produit. (2) Dans x + 3 × 2, la multiplication est prioritaire : on calcule 3 × 2, puis on l'ajoute à x. La dernière opération est une addition : c'est une somme. (3) Les deux expressions contiennent les mêmes signes, mais pas dans le même ordre de calcul : c'est la dernière opération qui compte.
+
+*Indice.* Pour chaque expression, quelle opération fait-on en dernier ?
+
+---
+
+## `F010` · Réduire une expression de la forme ax + b — 5e, difficulté 5
+
+*Regrouper les termes en x entre eux et les nombres entre eux pour écrire une somme sous la forme ax + b, avec des coefficients décimaux, éventuellement négatifs après regroupement : 3x + 5 + 2x − 1 = 5x + 4 ; 4,5x + 2 − 1,5x = 3x + 2 ; x + x = 2x ; 1x s'écrit x ; 2x + 7 − 5x = −3x + 7. Savoir que 3x + 5 ne se réduit pas : 3x et 5 ne sont pas des termes semblables. L'erreur type est d'additionner un terme en x et un nombre (3x + 5 = 8x), ou de perdre le signe d'une soustraction en regroupant. Les produits (3x × 2x) et les termes en x² sont en 4e (F006). Réponse : QCM entre formes réduites, ou deux nombres (le coefficient de x, puis le terme constant) ; écrire la forme réduite au clavier attend la saisie des expressions (section 5). En attendant la saisie des expressions : QCM ou deux nombres. Figure : aucune.*
+
+> « Réduire une expression littérale de la forme a𝑥 + b, où a et b sont des nombres décimaux. » — *Cycle 4, classe de 5e, Nombres et calculs, Calcul littéral et algébrique, Objectifs d'apprentissage*
+
+**EX-F010-D-01** — decouverte, qcm, 60 s
+
+Un sac contient 4 paquets de x billes, 7 billes seules et 2 autres paquets de x billes. Le nombre de billes s'écrit 4x + 7 + 2x. Quelle est sa forme réduite ?
+
+- **a.** 13x
+  <br>*Erreur visée :* L'élève additionne tous les nombres, 4 + 7 + 2 = 13, comme si les 7 billes seules étaient des paquets. On ne peut pas ajouter des paquets de x billes et des billes seules.
+- **b.** 6x + 7 ✅
+- **c.** 6x^{2} + 7
+  <br>*Erreur visée :* L'élève croit que 4x + 2x donne des x^{2}. Or 4 paquets plus 2 paquets font 6 paquets : 4x + 2x = 6x ; x^{2} serait x × x.
+- **d.** 4x + 9
+  <br>*Erreur visée :* L'élève ajoute le 2 de 2x aux 7 billes seules, sans voir que 2x désigne 2 paquets de x billes, pas 2 billes.
+
+*Corrigé.* (1) On regroupe les termes de même nature : les paquets de x billes entre eux, les billes seules entre elles. (2) Paquets : 4x + 2x = 6x (4 paquets et 2 paquets font 6 paquets). (3) Billes seules : 7. On ne peut pas ajouter 7 à 6x : ce ne sont pas des termes semblables. (4) Forme réduite : 6x + 7. La bonne réponse est b.
+
+*Indice.* Regroupe d'un côté les paquets de x billes, de l'autre les billes seules.
+
+**EX-F010-D-02** — decouverte, texte, 60 s
+
+Réduis l'expression 5x + 3 + x + 6.
+
+**Réponse :** 6x + 9
+
+*Corrigé.* (1) Un x seul, c'est 1x : il compte pour un. (2) Termes en x : 5x + x = 5x + 1x = 6x. (3) Nombres : 3 + 6 = 9. (4) Forme réduite : 6x + 9. On ne peut pas aller plus loin : 6x et 9 ne sont pas des termes semblables.
+
+*Indice.* Regroupe les termes en x, puis les nombres. Combien de x représente x tout seul ?
+
+**EX-F010-E-01** — entrainement, texte, 75 s
+
+Réduis l'expression 3{,}5x + 8 - 1{,}2x + 4.
+
+**Réponse :** 2,3x + 12
+
+*Corrigé.* (1) Chaque terme garde le signe qui le précède : +3{,}5x, +8, -1{,}2x, +4. (2) Termes en x : 3{,}5x - 1{,}2x = 2{,}3x, car 3{,}5 - 1{,}2 = 2{,}3. (3) Nombres : 8 + 4 = 12. (4) Forme réduite : 2{,}3x + 12.
+
+*Indice.* Le signe − devant 1{,}2x reste attaché à ce terme quand tu regroupes.
+
+**EX-F010-E-02** — entrainement, numerique, 75 s
+
+Une fois réduite, l'expression 7x + 10 - 9x - 4 s'écrit ax + b. Quel est le nombre a, placé devant x ?
+
+**Réponse :** -2
+
+*Corrigé.* (1) Termes en x : 7x - 9x. On calcule 7 - 9 = -2 : en enlevant 9 à 7, on passe sous zéro. Donc 7x - 9x = -2x. (2) Nombres : 10 - 4 = 6. (3) Forme réduite : -2x + 6. Le nombre devant x est donc a = -2, avec son signe moins. (4) Répondre 2 oublie que le terme -9x l'emporte sur 7x.
+
+*Indice.* Regroupe 7x et -9x : combien vaut 7 - 9 ?
+
+**EX-F010-M-01** — maitrise, qcm, 75 s
+
+Quelle est la forme réduite de 9x - 4 - 3x + 2 ?
+
+- **a.** 12x - 2
+  <br>*Erreur visée :* L'élève ajoute 9x et 3x en oubliant le signe − devant 3x : il faut calculer 9x - 3x, pas 9x + 3x.
+- **b.** 6x - 6
+  <br>*Erreur visée :* L'élève perd le signe + devant 2 : il calcule -4 - 2 au lieu de -4 + 2 = -2.
+- **c.** 6x - 2 ✅
+- **d.** 4x
+  <br>*Erreur visée :* L'élève calcule 9 - 4 - 3 + 2 = 4 en mélangeant les termes en x et les nombres, puis colle le x au résultat.
+
+*Corrigé.* (1) Chaque terme garde le signe qui le précède : +9x, -4, -3x, +2. (2) Termes en x : 9x - 3x = 6x. (3) Nombres : -4 + 2 = -2. (4) Forme réduite : 6x - 2. La bonne réponse est c.
+
+*Indice.* Repère le signe placé devant chaque terme avant de regrouper.
+
+**EX-F010-M-02** — maitrise, texte, 90 s
+
+Les côtés d'un triangle mesurent 2x + 3, x + 5 et 4x - 1 (en cm). Écris l'expression réduite de son périmètre, sans l'unité.
+
+**Réponse :** 7x + 7
+
+*Corrigé.* (1) Le périmètre est la somme des trois côtés : 2x + 3 + x + 5 + 4x - 1. (2) Termes en x : 2x + x + 4x = 7x (le x seul compte pour un). (3) Nombres : 3 + 5 - 1 = 7. (4) Périmètre : 7x + 7 (en cm).
+
+*Indice.* Additionne les trois côtés, puis regroupe les termes en x et les nombres.
+
+---
+
+## `F012` · Distributivité simple : développer et factoriser k(a + b) — 5e, difficulté 5
+
+*Utiliser k(a + b) = ka + kb et k(a − b) = ka − kb avec un nombre k entier positif, dans les deux sens : développer 3(x + 4) = 3x + 12 et 2(3x − 5) = 6x − 10, puis réduire (3(x + 2) + 4x = 7x + 6) ; factoriser par un facteur commun lisible dans les tables, 5x + 15 = 5(x + 3) et 6x − 4 = 2(3x − 2) ; vérifier un résultat en développant. L'erreur type est de ne multiplier que le premier terme (3(x + 4) = 3x + 4) ou d'oublier le 1 en factorisant (5x + 5 = 5(x + 1), pas 5x). Coefficient négatif et facteur x en 4e (F014). Réponse : QCM entre écritures, ou un nombre manquant (3(x + 4) = 3x + …) ; écrire la forme développée ou factorisée au clavier attend la saisie des expressions avec contrainte de forme (section 5). En attendant la saisie des expressions : QCM ou nombre manquant. Figure utile : geometrie, rectangle de largeur 3 partagé en deux rectangles de longueurs x et 4.*
+
+> « Exploiter les relations k(a + b) = ka + kb ou k(a – b) = ka – kb pour factoriser, ou développer une expression littérale. » — *Cycle 4, classe de 5e, Nombres et calculs, Calcul littéral et algébrique, Objectifs d'apprentissage*
+
+**EX-F012-D-01** — decouverte, texte, 90 s
+
+Ce rectangle est partagé en deux rectangles (longueurs en cm). Écris son aire totale comme la somme des aires des deux parties, sans parenthèses et calculs faits.
+
+**Réponse :** 6x + 12
+
+*Corrigé.* (1) On lit la figure : la largeur commune est 6 ; les longueurs des deux parties sont x et 2, soit une longueur totale de x + 2. (2) Vu comme un seul rectangle, l'aire est 6 × (x + 2), qu'on écrit 6(x + 2). (3) Vu comme deux rectangles, l'aire est 6 × x + 6 × 2 = 6x + 12. (4) Les deux calculs donnent la même aire : 6(x + 2) = 6x + 12. Le 6 multiplie chacun des deux termes de la somme, x et 2.
+
+*Indice.* Calcule l'aire de chaque partie : largeur × longueur.
+
+**EX-F012-D-02** — decouverte, qcm, 60 s
+
+Sept élèves achètent chacun un livre à x euros et une affiche à 5 euros. La dépense totale est 7(x + 5) euros. Quelle écriture lui est égale ?
+
+- **a.** 7x + 5
+  <br>*Erreur visée :* L'élève ne multiplie que le premier terme : il compte 7 livres mais une seule affiche. Or chacun des 7 élèves achète une affiche : 7 × 5 = 35.
+- **b.** 7x + 12
+  <br>*Erreur visée :* L'élève additionne 7 et 5 au lieu de multiplier : 7 affiches à 5 euros coûtent 7 × 5 euros, pas 7 + 5.
+- **c.** 7x + 35 ✅
+
+*Corrigé.* (1) Chaque élève dépense x + 5 euros ; pour 7 élèves, 7(x + 5) euros. (2) Autre façon de compter : 7 livres coûtent 7x euros, et 7 affiches coûtent 7 × 5 = 35 euros. (3) Donc 7(x + 5) = 7x + 35 : le 7 multiplie chacun des deux termes. La bonne réponse est c.
+
+*Indice.* Combien coûtent les 7 livres ? Et les 7 affiches ?
+
+**EX-F012-E-01** — entrainement, numerique, 60 s
+
+Complète la factorisation : 6x + 42 = 6(x + …). Quel nombre manque ?
+
+**Réponse :** 7
+
+*Corrigé.* (1) Factoriser, c'est faire le chemin inverse du développement : on cherche ce que 6 multiplie. (2) 6x, c'est 6 × x ; et 42, c'est 6 × 7 (table de 6). (3) Donc 6x + 42 = 6 × x + 6 × 7 = 6(x + 7). (4) Vérification en développant : 6(x + 7) = 6x + 42. Le nombre manquant est 7, et non 42.
+
+*Indice.* Écris 42 comme un produit dont un des facteurs est 6.
+
+**EX-F012-E-02** — entrainement, texte, 90 s
+
+Développe puis réduis l'expression 4(2x + 3) + 5x.
+
+**Réponse :** 13x + 12
+
+*Corrigé.* (1) On développe d'abord : 4(2x + 3) = 4 × 2x + 4 × 3 = 8x + 12. (2) L'expression devient 8x + 12 + 5x. (3) On réduit : 8x + 5x = 13x, et il reste le nombre 12. (4) Résultat : 13x + 12. Le 4 multiplie les deux termes de la parenthèse : oublier de multiplier le 3 donnerait 13x + 3.
+
+*Indice.* Le 4 multiplie chacun des termes de la parenthèse ; ensuite seulement, regroupe les termes en x.
+
+**EX-F012-M-01** — maitrise, texte, 90 s
+
+Le périmètre d'un rectangle de longueur x et de largeur 3 s'écrit 2x + 6. Écris ce périmètre sous la forme d'un produit, avec des parenthèses.
+
+**Réponse :** 2(x + 3)
+
+*Corrigé.* (1) 2x, c'est 2 × x, et 6, c'est 2 × 3 : 2 est un facteur commun aux deux termes. (2) Donc 2x + 6 = 2 × x + 2 × 3 = 2(x + 3). (3) On retrouve la formule du périmètre : 2 fois la somme de la longueur et de la largeur. (4) Vérification en développant : 2(x + 3) = 2x + 6.
+
+*Indice.* Quel nombre divise à la fois 2x et 6 ?
+
+**EX-F012-M-02** — maitrise, qcm, 60 s
+
+Lina doit factoriser 9x + 9. Quelle est la bonne factorisation ?
+
+- **a.** 9(x + 9)
+  <br>*Erreur visée :* L'élève met 9 en facteur et recopie le 9 dans la parenthèse. En développant, 9(x + 9) = 9x + 81, pas 9x + 9.
+- **b.** 9(x + 1) ✅
+- **c.** 9x
+  <br>*Erreur visée :* L'élève croit que le 9 seul disparaît dans le facteur commun et oublie le 1 : 9 = 9 × 1. Or 9x n'est pas égal à 9x + 9 : pour x = 1, on trouve 9 et 18.
+- **d.** 18x
+  <br>*Erreur visée :* L'élève additionne 9x et 9 comme des termes semblables. Or 9 n'est pas un terme en x : 9x + 9 ne se réduit pas.
+
+*Corrigé.* (1) Le terme 9 s'écrit 9 × 1 : 9x + 9 = 9 × x + 9 × 1. (2) On met 9 en facteur : 9x + 9 = 9(x + 1). (3) Vérification en développant : 9(x + 1) = 9x + 9. La bonne réponse est b.
+
+*Indice.* Écris 9 comme un produit dont un des facteurs est 9.
+
+---
+
+## `F062` · Démontrer une propriété générale par le calcul littéral (5e) — 5e, difficulté 5
+
+*Distinguer vérifier sur des exemples et démontrer : traduire une propriété avec une lettre, transformer l'expression (réduire, développer, factoriser) et conclure pour tous les nombres. Exemples : la somme de trois entiers consécutifs, n + (n + 1) + (n + 2) = 3n + 3 = 3(n + 1), est un multiple de 3 ; le programme « choisir un nombre, ajouter 4, multiplier par 2, retrancher 8 » donne toujours le double du nombre choisi, car 2(n + 4) − 8 = 2n + 8 − 8 = 2n. L'erreur type est de croire que trois exemples réussis prouvent la propriété. Rédiger une démonstration ne se fait pas à l'écran : l'élève complète une étape (un coefficient, un nombre manquant), remet des étapes dans l'ordre (QCM), choisit la bonne conclusion, ou dit si une suite d'exemples prouve la propriété (vrai/faux). Réponse : nombre manquant, QCM ou vrai/faux. Figure : aucune.*
+
+> « Démontrer une propriété générale par le calcul littéral. » — *Cycle 4, classe de 5e, Nombres et calculs, Calcul littéral et algébrique, Objectifs d'apprentissage*
+> « Son objectif principal est de permettre la généralisation, la démonstration et la modélisation. » — *Cycle 4, Nombres et calculs, présentation commune aux trois classes*
+
+**EX-F062-D-01** — decouverte, vrai_faux, 90 s
+
+Programme : choisir un nombre, ajouter 7, multiplier par 2, retrancher 14. Avec 4, 6 et 10, Alex obtient chaque fois le double du nombre choisi. Ces trois essais démontrent-ils que c'est vrai pour tout nombre ?
+
+**Réponse :** False
+
+*Corrigé.* (1) Les essais d'Alex sont justes : 8 pour 4, 12 pour 6, 20 pour 10. Mais ils ne valent que pour ces trois nombres, et il en existe une infinité. (2) Pour démontrer, on note n le nombre choisi : le programme donne 2(n + 7) - 14. (3) On développe : 2(n + 7) - 14 = 2n + 14 - 14 = 2n. (4) Le résultat est 2n, le double de n, quel que soit n : la propriété est vraie, mais c'est le calcul avec la lettre qui la démontre, pas les essais. Réponse : faux.
+
+*Indice.* Trois exemples réussis prouvent-ils quelque chose pour un quatrième nombre que personne n'a essayé ?
+
+**EX-F062-D-02** — decouverte, numerique, 60 s
+
+Deux entiers consécutifs s'écrivent n et n + 1. Pour démontrer que leur somme est toujours impaire, on écrit : n + (n + 1) = 2n + …. Quel nombre manque ?
+
+**Réponse :** 1
+
+*Corrigé.* (1) On réduit : n + n = 2n, et il reste le nombre 1. Donc n + (n + 1) = 2n + 1. (2) 2n est le double d'un entier : c'est un nombre pair. (3) Un nombre pair plus 1 est impair : la somme de deux entiers consécutifs est impaire, pour tout entier n.
+
+*Indice.* Regroupe les deux termes en n, puis regarde ce qui reste.
+
+**EX-F062-E-01** — entrainement, qcm, 90 s
+
+On a démontré que, pour tout entier n, n + (n + 1) + (n + 2) + (n + 3) = 4n + 6. Quelle conclusion est juste ?
+
+- **a.** La somme de quatre entiers consécutifs est toujours un multiple de 4.
+  <br>*Erreur visée :* L'élève voit 4n et oublie le terme 6 : 4n + 6 n'est pas toujours un multiple de 4 (n = 1 donne 10).
+- **b.** La somme de quatre entiers consécutifs est toujours paire. ✅
+- **c.** La somme de quatre entiers consécutifs vaut toujours 10.
+  <br>*Erreur visée :* L'élève remplace n par 1 (1 + 2 + 3 + 4 = 10) et généralise un seul exemple ; or 4n + 6 change avec n (n = 2 donne 14).
+- **d.** On ne peut rien conclure sans essayer plusieurs valeurs de n.
+  <br>*Erreur visée :* L'élève croit que des essais sont nécessaires ; or le calcul avec la lettre vaut pour tous les entiers à la fois.
+
+*Corrigé.* (1) On factorise par 2 : 4n + 6 = 2 × 2n + 2 × 3 = 2(2n + 3). (2) La somme est le double de l'entier 2n + 3 : elle est paire, quel que soit n. (3) Contrôle avec n = 5 : 5 + 6 + 7 + 8 = 26, qui est pair mais n'est pas un multiple de 4. (4) La bonne réponse est b.
+
+*Indice.* Peux-tu écrire 4n + 6 comme 2 fois un entier ?
+
+**EX-F062-E-02** — entrainement, numerique, 90 s
+
+Programme : choisir un nombre, ajouter 9, multiplier par 4, retrancher le quadruple du nombre choisi. Avec le nombre n, on écrit : 4(n + 9) - 4n = 4n + … - 4n. Quel nombre manque ?
+
+**Réponse :** 36
+
+*Corrigé.* (1) Le programme s'écrit 4(n + 9) - 4n : on ajoute 9 à n, on multiplie le tout par 4, puis on retranche le quadruple de n. (2) On développe : 4(n + 9) = 4 × n + 4 × 9 = 4n + 36. Le nombre manquant est 36. (3) Donc 4(n + 9) - 4n = 4n + 36 - 4n = 36 : le résultat vaut 36 quel que soit n. (4) C'est ce calcul avec la lettre qui le démontre pour tous les nombres ; des essais ne le montreraient que pour les nombres essayés.
+
+*Indice.* Développe 4(n + 9) : le 4 multiplie chacun des deux termes de la parenthèse.
+
+**EX-F062-M-01** — maitrise, qcm, 90 s
+
+Quel raisonnement démontre que, pour tout entier n, 5n + 10 est un multiple de 5 ?
+
+- **a.** Pour n = 1, 2 et 3, on obtient 15, 20 et 25, qui sont des multiples de 5.
+  <br>*Erreur visée :* Trois exemples ne démontrent rien pour les autres entiers : il y en a une infinité.
+- **b.** L'expression 5n + 10 contient le nombre 5.
+  <br>*Erreur visée :* L'élève se fie à l'aspect de l'expression. Or 5n + 11 contient aussi le nombre 5 et n'est pas toujours un multiple de 5 (n = 1 donne 16).
+- **c.** 5n + 10 = 15n, et 15n est un multiple de 5.
+  <br>*Erreur visée :* L'élève additionne 5n et 10, qui ne sont pas des termes semblables : 5n + 10 ne se réduit pas en 15n.
+- **d.** 5n + 10 = 5(n + 2), et n + 2 est un entier. ✅
+
+*Corrigé.* (1) Démontrer, c'est raisonner pour tous les entiers à la fois : on transforme l'expression qui contient la lettre. (2) On factorise : 5n + 10 = 5 × n + 5 × 2 = 5(n + 2). (3) n + 2 est un entier, donc 5n + 10 est 5 fois un entier : c'est un multiple de 5, quel que soit n. La bonne réponse est d.
+
+*Indice.* Un exemple ne démontre rien pour les autres nombres. Lequel des raisonnements vaut pour tous les entiers ?
+
+**EX-F062-M-02** — maitrise, vrai_faux, 120 s
+
+Affirmation : pour tout entier n, 4(n + 2) + 2n + 4 est un multiple de 6. Maé écrit : 4(n + 2) + 2n + 4 = 4n + 8 + 2n + 4 = 6n + 12 = 6(n + 2), donc c'est 6 fois l'entier n + 2. Sa démonstration est-elle juste ?
+
+**Réponse :** True
+
+*Corrigé.* (1) On contrôle chaque étape. Développement : 4(n + 2) = 4n + 8 : juste. (2) Réduction : 4n + 2n = 6n et 8 + 4 = 12 : juste. (3) Factorisation : 6n + 12 = 6(n + 2) : juste, car 6 × 2 = 12. (4) n + 2 est un entier : l'expression vaut 6 fois un entier, donc c'est un multiple de 6 pour tout n. La démonstration est juste.
+
+*Indice.* Vérifie chaque égalité de la chaîne, l'une après l'autre.
 
 ---
 
@@ -14688,6 +15493,403 @@ Une bibliothèque contient 480 livres. Les 3/8 des livres sont des romans, et le
 
 ---
 
+## `F006` · Écrire et réduire des produits : 3x, x², 3x × 2x = 6x² — 4e, difficulté 5
+
+*Écrire un produit sans le signe × (3 × x = 3x ; x × 3 = 3x ; 1 × x = x) et le rétablir pour calculer ; distinguer x + x = 2x et x × x = x² ; réduire un produit de nombres et de lettres en multipliant les nombres entre eux et les lettres entre elles : 3x × 2x = 6x² ; −4 × 5x = −20x ; (−3x) × (−2x) = 6x² ; 2x × x = 2x² ; réduire une somme de termes en x² et en x : 3x² + 2x − x² + 5x = 2x² + 7x. L'erreur type est d'écrire x + x = x², 3x × 2x = 6x ou 3x × 2x = 5x², et d'additionner x² et x. Réponse : QCM entre écritures réduites, vrai/faux, ou le coefficient (un nombre) ; écrire la forme réduite au clavier attend la saisie des expressions (section 5). En attendant la saisie des expressions : QCM ou coefficient. Figure : aucune.*
+
+> « Écrire 3 × 𝑥 sous la forme 3𝑥 et savoir que 3𝑥 c'est 3 × 𝑥. » — *Cycle 4, classe de 4e, Nombres et calculs, Calcul littéral et algébrique, Automatismes*
+> « Connaitre et utiliser : 1 × 𝑥 = 𝑥 ; 𝑥 + 𝑥 = 2𝑥 ; 𝑥 × 𝑥 = 𝑥² ; 3𝑥 + 2𝑥 = 5𝑥 ; 3𝑥 × 2𝑥 = 6𝑥². » — *Cycle 4, classe de 4e, Nombres et calculs, Calcul littéral et algébrique, Automatismes*
+
+**EX-F006-D-01** — decouverte, qcm, 45 s
+
+Un carré a pour côté x. Son périmètre s'écrit x + x + x + x et son aire x × x. Quelle ligne est juste ?
+
+- **a.** x + x = x^{2} et x × x = 2x
+  <br>*Erreur visée :* L'élève inverse les deux écritures : il associe le 2 de « deux fois x » à l'exposant et le carré à la somme. Or x + x est le double de x, et x × x son carré.
+- **b.** x + x = 2x et x × x = x^{2} ✅
+- **c.** x + x = 2x et x × x = 2x
+  <br>*Erreur visée :* L'élève compte les x écrits (il y en a deux) sans regarder l'opération : il écrit 2x pour la somme comme pour le produit. Or x × x n'est pas x + x : pour x = 5, 5 × 5 = 25 et 5 + 5 = 10.
+- **d.** x + x = x^{2} et x × x = x^{2}
+  <br>*Erreur visée :* L'élève écrit x² dès qu'il voit deux x, quelle que soit l'opération. Or x + x vaut 2x : pour x = 5, 5 + 5 = 10, pas 25.
+
+*Corrigé.* (1) Une somme de termes égaux se compte : x + x, c'est deux fois x, donc x + x = 2 × x = 2x. De même, le périmètre x + x + x + x vaut 4x. (2) Un produit d'un nombre par lui-même s'écrit avec un carré : x × x = x^{2}, comme 5 × 5 = 5^{2}. L'aire du carré vaut donc x^{2}. (3) À retenir : 2x (on ajoute x deux fois) et x^{2} (on multiplie x par lui-même) sont deux nombres différents. Pour x = 5 : 2x = 10 mais x^{2} = 25.
+
+*Indice.* Une somme de deux nombres égaux, c'est le double ; un produit d'un nombre par lui-même, c'est son carré.
+
+**EX-F006-D-02** — decouverte, numerique, 40 s
+
+Pour réduire 3x × 5x, on range les facteurs : 3x × 5x = 3 × 5 × x × x. Le résultat s'écrit un nombre fois x^{2}. Quel est ce nombre ?
+
+**Réponse :** 15
+
+*Corrigé.* (1) 3x, c'est 3 × x, et 5x, c'est 5 × x. Le produit 3x × 5x est donc 3 × x × 5 × x. (2) Dans un produit, on peut changer l'ordre des facteurs : on regroupe les nombres d'un côté, les lettres de l'autre, 3 × 5 × x × x. (3) Les nombres : 3 × 5 = 15. Les lettres : x × x = x^{2}. (4) Donc 3x × 5x = 15x^{2} : le nombre cherché est 15. On multiplie les nombres, on n'additionne pas : 3 + 5 = 8 serait le résultat de 3x + 5x = 8x, qui est une somme.
+
+*Indice.* Multiplie les nombres entre eux, puis les lettres entre elles.
+
+**EX-F006-E-01** — entrainement, texte, 60 s
+
+Réduis le produit (-4x) × 6x. Écris le résultat sans signe ×.
+
+**Réponse :** −24x²
+
+*Corrigé.* (1) On écrit tous les facteurs : (-4x) × 6x = (-4) × x × 6 × x. (2) On regroupe les nombres : (-4) × 6 = -24, négatif car un seul des deux facteurs est négatif. (3) On regroupe les lettres : x × x = x^{2}. (4) Donc (-4x) × 6x = -24x^{2}. Attention : -24x oublierait le second x, et 2x^{2} viendrait d'une addition -4 + 6, alors qu'il s'agit d'un produit.
+
+*Indice.* Sépare les nombres et les lettres, puis pense à la règle des signes.
+
+**EX-F006-E-02** — entrainement, vrai_faux, 45 s
+
+Inès réduit 4x × 2x et écrit : « 4x × 2x = 8x ». A-t-elle raison ?
+
+**Réponse :** False
+
+*Corrigé.* (1) 4x × 2x = 4 × x × 2 × x : le produit contient deux facteurs x. (2) Les nombres donnent 4 × 2 = 8 et les deux lettres donnent x × x = x^{2}. (3) Donc 4x × 2x = 8x^{2}, et non 8x : Inès a oublié que x apparaît deux fois. C'est faux. (4) Pour comparer : 8x est le résultat de la somme 4x + 4x, pas d'un produit de deux termes en x.
+
+*Indice.* Combien de fois la lettre x apparaît-elle comme facteur dans ce produit ?
+
+**EX-F006-M-01** — maitrise, texte, 90 s
+
+Un rectangle mesure 5x de long et 2x de large. On y découpe un carré de côté x. Écris l'aire restante en fonction de x, sous forme réduite.
+
+**Réponse :** 9x²
+
+*Corrigé.* (1) Aire du rectangle : longueur × largeur, soit 5x × 2x = 5 × 2 × x × x = 10x^{2}. (2) Aire du carré : côté × côté, soit x × x = x^{2}. (3) Aire restante : 10x^{2} - x^{2}. Ce sont deux termes en x^{2} : 10x^{2} - 1x^{2} = 9x^{2}, comme 10 objets moins 1 objet. (4) L'aire restante est 9x^{2}. Attention : 10x^{2} - x^{2} ne fait pas 10 ni 9 tout court, on garde le x^{2} commun.
+
+*Indice.* Calcule l'aire du rectangle, puis celle du carré, et soustrais.
+
+**EX-F006-M-02** — maitrise, qcm, 60 s
+
+Quel facteur complète l'égalité (-2x) × … = 10x^{2} ?
+
+- **a.** 5x
+  <br>*Erreur visée :* L'élève trouve bien 5 et le x, mais oublie la règle des signes : (−2) × 5 = −10, donc (−2x) × 5x = −10x².
+- **b.** -5
+  <br>*Erreur visée :* L'élève ne s'occupe que des nombres : (−2x) × (−5) = 10x, il manque un facteur x pour obtenir x².
+- **c.** -5x ✅
+- **d.** -5x^{2}
+  <br>*Erreur visée :* L'élève recopie le x² du résultat dans le facteur : le produit (−2x) × (−5x²) contiendrait alors trois facteurs x, un de trop.
+
+*Corrigé.* (1) Le résultat 10x^{2} contient x × x : le facteur -2x apporte un x, il en faut donc un second dans le facteur cherché. (2) Côté nombres, on cherche le nombre qui, multiplié par -2, donne 10 : (-2) × (-5) = 10, car le produit de deux négatifs est positif. (3) Le facteur cherché est -5x. Vérification : (-2x) × (-5x) = (-2) × (-5) × x × x = 10x^{2}.
+
+*Indice.* Cherche d'abord le nombre, avec son signe, puis compte les lettres x.
+
+---
+
+## `F014` · Distributivité simple avec des relatifs et des lettres : développer, factoriser — 4e, difficulté 5
+
+*Développer et réduire k(a + b) quand k est négatif ou contient la lettre, et factoriser par un facteur commun numérique ou littéral : −3(2x − 5) = −6x + 15 ; x(x + 4) = x² + 4x ; 2x(3x − 1) = 6x² − 2x ; 5 − 2(x − 4) = 5 − 2x + 8 = −2x + 13 ; −(x − 3) = −1 × (x − 3) = −x + 3 ; factoriser x² + 5x = x(x + 5) et 6x² − 9x = 3x(2x − 3). L'erreur type est l'erreur de signe sur le second terme (−3(2x − 5) = −6x − 15) ou de ne distribuer qu'au premier terme. Réponse : QCM entre écritures, ou un coefficient manquant (un nombre) ; écrire la forme développée ou factorisée au clavier attend la saisie des expressions avec contrainte de forme (section 5). En attendant la saisie des expressions : QCM ou coefficient. Figure utile : geometrie, rectangle de côtés x et x + 4 partagé en un carré et un rectangle.*
+
+> « Connaitre et utiliser la distributivité simple pour développer et factoriser une expression algébrique. » — *Cycle 4, classe de 4e, Nombres et calculs, Calcul littéral et algébrique, Objectifs d'apprentissage*
+
+**EX-F014-D-01** — decouverte, qcm, 45 s
+
+On développe -3(x + 5) en multipliant -3 par chaque terme de la parenthèse. Quel résultat est juste ?
+
+- **a.** -3x - 15 ✅
+- **b.** -3x + 15
+  <br>*Erreur visée :* L'élève multiplie bien les deux termes, mais oublie le signe pour le second : (−3) × 5 vaut −15, pas 15.
+- **c.** -3x + 5
+  <br>*Erreur visée :* L'élève ne multiplie que le premier terme : il oublie de distribuer −3 au 5.
+- **d.** -3x - 5
+  <br>*Erreur visée :* L'élève distribue le signe moins au 5 mais pas le nombre 3 : il écrit −5 au lieu de (−3) × 5 = −15.
+
+*Corrigé.* (1) -3(x + 5) = (-3) × x + (-3) × 5 : le facteur -3 multiplie les deux termes. (2) (-3) × x = -3x et (-3) × 5 = -15. (3) Donc -3(x + 5) = -3x + (-15) = -3x - 15.
+
+*Indice.* Le nombre devant la parenthèse multiplie chacun des deux termes, avec son signe.
+
+**EX-F014-D-02** — decouverte, numerique, 40 s
+
+On développe : -5(x - 2) = -5x + … Quel nombre complète l'égalité ?
+
+**Réponse :** 10
+
+*Corrigé.* (1) On distribue -5 aux deux termes : -5(x - 2) = (-5) × x + (-5) × (-2). (2) (-5) × x = -5x. (3) (-5) × (-2) = 10 : le produit de deux nombres négatifs est positif. (4) Donc -5(x - 2) = -5x + 10 : le nombre cherché est 10.
+
+*Indice.* Le nombre −5 multiplie aussi le second terme de la parenthèse, avec son signe.
+
+**EX-F014-E-01** — entrainement, texte, 90 s
+
+Développe et réduis 6 - 2(3x - 4).
+
+**Réponse :** −6x + 14
+
+*Corrigé.* (1) La multiplication est prioritaire : on développe d'abord -2(3x - 4), sans toucher au 6. Calculer 6 - 2 = 4 d'abord serait faux. (2) -2(3x - 4) = (-2) × 3x + (-2) × (-4) = -6x + 8. (3) On remplace : 6 - 2(3x - 4) = 6 - 6x + 8. (4) On regroupe les nombres : 6 + 8 = 14. Résultat réduit : -6x + 14, qu'on peut écrire 14 - 6x.
+
+*Indice.* Le signe moins devant le 2 fait partie du facteur à distribuer : −2.
+
+**EX-F014-E-02** — entrainement, qcm, 75 s
+
+Laquelle de ces expressions est égale à 4x^{2} - 10x ?
+
+- **a.** 2x(2x - 10)
+  <br>*Erreur visée :* L'élève divise le premier terme par 2x mais recopie 10 tel quel : en développant, 2x × 10 donne 20x, pas 10x.
+- **b.** 2x(2x - 5) ✅
+- **c.** 2(2x - 5)
+  <br>*Erreur visée :* L'élève ne met que 2 en facteur et perd le x : 2(2x − 5) = 4x − 10, qui ne contient plus de x².
+- **d.** 2(2x^{2} - 5)
+  <br>*Erreur visée :* L'élève met 2 en facteur mais oublie le x du second terme : 2(2x² − 5) = 4x² − 10, et non 4x² − 10x.
+
+*Corrigé.* (1) On cherche un facteur commun aux deux termes : 4x^{2} = 2x × 2x et 10x = 2x × 5. (2) Le facteur commun est 2x : 4x^{2} - 10x = 2x × 2x - 2x × 5 = 2x(2x - 5). (3) Contrôle en développant : 2x(2x - 5) = 2x × 2x - 2x × 5 = 4x^{2} - 10x. C'est bien l'expression de départ.
+
+*Indice.* Écris chaque terme comme un produit, puis repère le facteur qu'ils ont en commun.
+
+**EX-F014-M-01** — maitrise, texte, 90 s
+
+Un rectangle a pour largeur x et pour aire x^{2} + 9x. Écris sa longueur en fonction de x.
+
+**Réponse :** x + 9
+
+*Corrigé.* (1) L'aire d'un rectangle est largeur × longueur : il faut écrire x^{2} + 9x sous la forme x × (…). (2) On factorise par x : x^{2} = x × x et 9x = x × 9, donc x^{2} + 9x = x(x + 9). (3) La largeur est x : la longueur est donc x + 9. (4) Contrôle : x(x + 9) = x^{2} + 9x. Attention, la longueur n'est pas 9x : x × 9x donnerait 9x^{2}.
+
+*Indice.* Aire = largeur × longueur : mets x en facteur dans l'aire.
+
+**EX-F014-M-02** — maitrise, numerique, 60 s
+
+On factorise en mettant -6 en facteur : -6x - 18 = -6(x + …). Quel nombre complète l'égalité ?
+
+**Réponse :** 3
+
+*Corrigé.* (1) Il faut que -6 fois le nombre cherché donne -18. (2) (-6) × 3 = -18 : le nombre cherché est 3, positif, car -6 porte déjà le signe moins. (3) Contrôle en développant : -6(x + 3) = -6x + (-6) × 3 = -6x - 18.
+
+*Indice.* Quel nombre, multiplié par −6, donne −18 ?
+
+---
+
+## `F063` · Tester si un nombre vérifie une égalité ; valeur pour un nombre relatif — 4e, difficulté 5
+
+*Calculer la valeur d'une expression pour un nombre relatif, en mettant le nombre négatif entre parenthèses : pour x = −3, 2x + 7 = 2 × (−3) + 7 = 1 ; x² = (−3)² = 9 ; 2x² − 5x + 1 = 18 + 15 + 1 = 34 ; puis tester si un nombre vérifie une égalité en calculant séparément les deux membres : −2 est-il solution de 3x + 7 = x + 3 ? 3 × (−2) + 7 = 1 et −2 + 3 = 1, donc oui. L'erreur type est d'écrire −3² = −9 pour x² avec x = −3, ou d'oublier un signe dans un produit. Réponse : un nombre, ou vrai/faux (le nombre est-il solution ?). Figure : aucune.*
+
+> « Tester si un nombre vérifie une égalité. » — *Cycle 4, classe de 4e, Nombres et calculs, Calcul littéral et algébrique, Automatismes*
+> « Donner la valeur d'expressions numériques simples. » — *Cycle 4, classe de 4e, Nombres et calculs, Calcul littéral et algébrique, Automatismes*
+
+**EX-F063-D-01** — decouverte, numerique, 45 s
+
+On calcule 3x - 5 pour x = -4. On remplace x par (-4), entre parenthèses : 3 × (-4) - 5. Quel est le résultat ?
+
+**Réponse :** -17
+
+*Corrigé.* (1) 3x signifie 3 × x : avec x = -4, on écrit 3 × (-4). Les parenthèses évitent de lire 3 - 4. (2) Le produit d'abord : 3 × (-4) = -12 (un seul facteur négatif, résultat négatif). (3) Puis la soustraction : -12 - 5 = -17. (4) Pour x = -4, l'expression 3x - 5 vaut −17.
+
+*Indice.* Calcule d'abord le produit, puis la soustraction.
+
+**EX-F063-D-02** — decouverte, qcm, 40 s
+
+Pour x = -7, on remplace x par (-7) dans x^{2}. Quelle valeur obtient-on ?
+
+- **a.** -49
+  <br>*Erreur visée :* L'élève écrit −7² sans parenthèses et calcule −(7 × 7). Or c'est (−7) × (−7) qu'il faut calculer, et deux négatifs donnent un positif.
+- **b.** -14
+  <br>*Erreur visée :* L'élève lit x² comme 2 × x : 2 × (−7) = −14. Or x² est x × x, le produit de x par lui-même.
+- **c.** 14
+  <br>*Erreur visée :* L'élève double le nombre au lieu de l'élever au carré, et perd en plus le signe : 2 × 7 = 14.
+- **d.** 49 ✅
+
+*Corrigé.* (1) x^{2} signifie x × x. Avec x = -7, on écrit (-7)^{2} = (-7) × (-7), avec les parenthèses. (2) Le produit de deux nombres négatifs est positif : (-7) × (-7) = 49. (3) Donc pour x = -7, x^{2} = 49. Sans parenthèses, -7^{2} se lirait -(7 × 7) = -49 : c'est un autre calcul.
+
+*Indice.* Écris le carré comme un produit de deux facteurs, avec les parenthèses.
+
+**EX-F063-E-01** — entrainement, numerique, 75 s
+
+Calcule 2x^{2} - 3x + 4 pour x = -2.
+
+**Réponse :** 18
+
+*Corrigé.* (1) On remplace chaque x par (-2) : 2 × (-2)^{2} - 3 × (-2) + 4. (2) La puissance d'abord : (-2)^{2} = (-2) × (-2) = 4, donc 2 × (-2)^{2} = 2 × 4 = 8. Attention, 2x^{2} n'est pas (2x)^{2} : seul x est au carré. (3) Le produit : 3 × (-2) = -6, et soustraire -6 revient à ajouter 6. (4) On termine : 8 + 6 + 4 = 18.
+
+*Indice.* Respecte les priorités : la puissance, puis les produits, puis les sommes.
+
+**EX-F063-E-02** — entrainement, vrai_faux, 60 s
+
+Vrai ou faux : le nombre −3 vérifie l'égalité 4x + 7 = x - 2.
+
+**Réponse :** True
+
+*Corrigé.* (1) Pour tester, on calcule séparément chaque membre en remplaçant x par (-3). (2) Membre de gauche : 4 × (-3) + 7 = -12 + 7 = -5. (3) Membre de droite : -3 - 2 = -5. (4) Les deux membres valent −5 : l'égalité est vraie pour x = -3. C'est vrai, −3 est solution de cette équation.
+
+*Indice.* Calcule le membre de gauche, puis celui de droite, et compare.
+
+**EX-F063-M-01** — maitrise, numerique, 120 s
+
+Un seul des nombres −2 ; −1 ; 0 ; 1 ; 2 vérifie l'égalité x^{2} + x = 2x + 6. Lequel ?
+
+**Réponse :** -2
+
+*Corrigé.* (1) On teste chaque nombre en calculant les deux membres séparément. (2) Pour x = -2 : à gauche (-2)^{2} + (-2) = 4 - 2 = 2 ; à droite 2 × (-2) + 6 = -4 + 6 = 2. Égalité vraie. (3) Pour x = -1 : 1 - 1 = 0 contre -2 + 6 = 4. Pour x = 0 : 0 contre 6. Pour x = 1 : 2 contre 8. Pour x = 2 : 6 contre 10. Égalités fausses. (4) Le nombre cherché dans la liste est −2. Remarque : (-2)^{2} vaut 4 et non −4, c'est souvent là que le test échoue. Le nombre 3, hors de la liste, vérifie aussi l'égalité : 9 + 3 = 12 et 6 + 6 = 12.
+
+*Indice.* Pour chaque nombre, calcule le membre de gauche et celui de droite.
+
+**EX-F063-M-02** — maitrise, qcm, 75 s
+
+Quelle est la valeur de -x^{2} + 5x pour x = -2 ?
+
+- **a.** -6
+  <br>*Erreur visée :* L'élève calcule (−x)² au lieu de −x² : il trouve 4 au lieu de −4, puis 4 − 10 = −6. Or le carré porte sur x seulement, le signe moins s'applique après.
+- **b.** 6
+  <br>*Erreur visée :* L'élève calcule bien −4 mais se trompe de signe sur le produit : 5 × (−2) = +10, d'où −4 + 10 = 6. Or un seul facteur négatif donne un produit négatif.
+- **c.** -14 ✅
+- **d.** 14
+  <br>*Erreur visée :* L'élève cumule les deux erreurs : il prend (−2)² = 4 sans l'opposé, et 5 × (−2) = 10, d'où 4 + 10 = 14.
+
+*Corrigé.* (1) On remplace x par (-2) : -(-2)^{2} + 5 × (-2). (2) -x^{2} est l'opposé de x^{2} : on calcule d'abord le carré, (-2)^{2} = 4, puis on prend l'opposé, -4. (3) 5 × (-2) = -10. (4) Donc -x^{2} + 5x = -4 + (-10) = -14.
+
+*Indice.* Dans −x², le carré se calcule avant de prendre l'opposé.
+
+---
+
+## `F024` · Résoudre une équation ax + b = c — 4e, difficulté 5
+
+*Résoudre une équation du type ax + b = c par étapes équivalentes : retrancher (ou ajouter) un même nombre aux deux membres, puis diviser les deux membres par un même nombre non nul : 3x + 5 = 17 donne 3x = 12, puis x = 4 ; −2x + 7 = 15 donne −2x = 8, puis x = −4 ; 6x − 1 = 3 donne x = 4/6 = 2/3 ; 0,5x + 3 = 7 donne x = 8 ; vérifier la solution en remplaçant x (F063). L'erreur type est de diviser un seul terme (3x + 5 = 17 donne x + 5 = 17/3), ou de se tromper de signe (−2x = 8 donne x = 4). Réponse : la solution, un nombre ou une fraction (« x = 4 » et « 2/3 » sont acceptés). Figure : aucune.*
+
+> « Résoudre une équation du premier degré du type a𝑥 + b = c. » — *Cycle 4, classe de 4e, Nombres et calculs, Calcul littéral et algébrique, Objectifs d'apprentissage*
+> « Résoudre des équations du type a𝑥 = c et 𝑥 + b = c, où a, b et c sont des nombres. » — *Cycle 4, classe de 4e, Nombres et calculs, Calcul littéral et algébrique, Automatismes*
+
+**EX-F024-D-01** — decouverte, numerique, 60 s
+
+Résous l'équation 5x + 8 = 43. Commence par retrancher un même nombre aux deux membres pour isoler 5x.
+
+**Réponse :** 7
+
+*Corrigé.* (1) On veut x seul. Le membre de gauche contient 5x plus 8 : on fait d'abord disparaître ce 8. (2) On retranche 8 aux deux membres, ce qui garde l'égalité : 5x + 8 - 8 = 43 - 8, soit 5x = 35. (3) 5x veut dire 5 × x : on divise les deux membres par 5, x = 35 ÷ 5 = 7. (4) Vérification : 5 × 7 + 8 = 35 + 8 = 43. La solution est 7.
+
+*Indice.* Quel nombre faut-il retrancher pour que 5x reste seul à gauche ?
+
+**EX-F024-D-02** — decouverte, qcm, 45 s
+
+Sami commence à résoudre 6x + 5 = 29 en faisant la même opération sur les deux membres. Quelle égalité peut-il obtenir sans erreur ?
+
+- **a.** 6x = 24 ✅
+- **b.** x + 5 = 29/6
+  <br>*Erreur visée :* L'élève divise par 6 le terme 6x et le membre de droite, mais pas le 5 : diviser tout le membre de gauche par 6 donnerait x + 5/6.
+- **c.** 6x = 34
+  <br>*Erreur visée :* L'élève ajoute 5 au lieu de le retrancher : pour faire disparaître « + 5 », il faut l'opération inverse, une soustraction.
+- **d.** x + 5 = 23
+  <br>*Erreur visée :* L'élève retranche 6 pour faire disparaître le coefficient, alors que 6x veut dire 6 × x : on divise par 6, on ne retranche pas 6.
+
+*Corrigé.* (1) Pour faire disparaître « + 5 », on retranche 5, et on le retranche aux deux membres pour garder l'égalité : 6x + 5 - 5 = 29 - 5, soit 6x = 24 : c'est la proposition a. (2) Ensuite, on divise les deux membres par 6 : x = 24 ÷ 6 = 4. Vérification : 6 × 4 + 5 = 29. (3) Les autres égalités n'ont pas 4 pour solution : 6x = 34 ajoute 5 au lieu de le retrancher ; x + 5 = 29/6 divise 6x mais pas le 5 ; x + 5 = 23 retranche 6 au lieu de diviser par 6. (4) On divise par 6 seulement quand 6x est seul dans son membre.
+
+*Indice.* Quelle opération fait disparaître « + 5 » ? Fais-la sur les deux membres.
+
+**EX-F024-E-01** — entrainement, numerique, 60 s
+
+Résous l'équation -3x + 4 = 25.
+
+**Réponse :** -7
+
+*Corrigé.* (1) On retranche 4 aux deux membres : -3x = 25 - 4, soit -3x = 21. (2) On divise les deux membres par -3, le coefficient avec son signe : x = 21 ÷ (-3) = -7. (3) Attention au signe : un positif divisé par un négatif donne un négatif. Répondre 7 reviendrait à oublier le signe de -3. (4) Vérification : -3 × (-7) + 4 = 21 + 4 = 25. La solution est −7.
+
+*Indice.* Isole d'abord -3x, puis divise par le coefficient sans oublier son signe.
+
+**EX-F024-E-02** — entrainement, texte, 75 s
+
+Résous l'équation 8x + 3 = 9. Donne la solution sous forme d'une fraction.
+
+**Réponse :** 3/4
+
+*Corrigé.* (1) On retranche 3 aux deux membres : 8x = 9 - 3, soit 8x = 6. (2) On divise les deux membres par 8 : x = 6 ÷ 8, ce qui s'écrit 6/8. (3) On simplifie par 2 : 6/8 = 3/4. La solution est 3/4, soit 0,75. (4) Vérification : 8 × 3/4 + 3 = 6 + 3 = 9.
+
+*Indice.* Le quotient de deux entiers peut s'écrire comme une fraction.
+
+**EX-F024-M-01** — maitrise, vrai_faux, 75 s
+
+Tom résout l'équation 9 - 4x = 21 et trouve x = -3. A-t-il raison ?
+
+**Réponse :** True
+
+*Corrigé.* (1) On vérifie en remplaçant x par -3 : 9 - 4 × (-3) = 9 + 12 = 21. On retrouve 21 : Tom a raison. (2) Résolution : on retranche 9 aux deux membres, -4x = 21 - 9, soit -4x = 12. Le terme en x est -4x : son coefficient est -4, pas 4. (3) On divise par -4 : x = 12 ÷ (-4) = -3. (4) Oublier le signe moins donnerait x = 3, qui ne convient pas : 9 - 4 × 3 = -3, et non 21. Réponse : vrai.
+
+*Indice.* Remplace x par la valeur de Tom et calcule le membre de gauche.
+
+**EX-F024-M-02** — maitrise, texte, 90 s
+
+Résous l'équation 1 = -6x - 7. Donne la solution sous forme d'une fraction.
+
+**Réponse :** −4/3
+
+*Corrigé.* (1) L'inconnue est dans le membre de droite : ce n'est pas gênant, 1 = -6x - 7 et -6x - 7 = 1 sont la même équation. (2) On ajoute 7 aux deux membres : 8 = -6x, soit -6x = 8. (3) On divise par -6 : x = 8/-6 = -8/6, puis on simplifie par 2 : x = -4/3. (4) Vérification : -6 × (-4/3) - 7 = 8 - 7 = 1. La solution est -4/3.
+
+*Indice.* Commence par isoler -6x, puis divise par -6 en gardant le signe.
+
+---
+
+## `F064` · Programme de calcul : l'appliquer à un nombre, à une lettre, le remonter — 4e, difficulté 5
+
+*Appliquer un programme de calcul de deux à quatre étapes à un nombre, y compris négatif, puis à une lettre en écrivant l'expression obtenue et en la réduisant ; retrouver le nombre de départ à partir du résultat en remontant le programme avec les opérations inverses, dans l'ordre inverse. Exemple : « choisir un nombre, le multiplier par 3, ajouter 5, multiplier le résultat par 2 » donne 34 pour 4, −8 pour −3, et 2(3x + 5) = 6x + 10 pour x ; un résultat de 46 vient de 6 (46 ÷ 2 = 23, 23 − 5 = 18, 18 ÷ 3 = 6). Nommer l'expression obtenue (somme, produit). L'erreur type est de remonter avec les mêmes opérations ou dans le même ordre, ou d'oublier les parenthèses (3x + 5 × 2). Réponse : un nombre (résultat, nombre de départ) ; l'expression en x se choisit (QCM) ou se donne par ses coefficients en attendant la saisie des expressions (section 5). En attendant la saisie des expressions : QCM ou coefficients. Figure : aucune.*
+
+> « Savoir appliquer un programme de calcul à deux (plusieurs) étapes à un nombre simple puis à une variable. » — *Cycle 4, classe de 4e, Proportionnalité, fonctions, Fonctions, Objectifs d'apprentissage*
+> « Savoir retrouver le nombre de départ après avoir remonté un programme de calcul simple. » — *Cycle 4, classe de 4e, Proportionnalité, fonctions, Fonctions, Objectifs d'apprentissage*
+> « Utiliser le vocabulaire (somme, quotient, etc.) à partir d'un enchainement d'opérations dans un programme de calcul et inversement. » — *Cycle 4, classe de 4e, Nombres et calculs, Opérations sur les nombres relatifs, Objectifs d'apprentissage*
+
+**EX-F064-D-01** — decouverte, numerique, 60 s
+
+Programme de calcul : choisir un nombre ; le multiplier par 2 ; soustraire 7 ; multiplier le résultat par 3. Quel résultat obtient-on en choisissant −5 ?
+
+**Réponse :** -51
+
+*Corrigé.* (1) On multiplie par 2 : (-5) × 2 = -10. (2) On soustrait 7 : -10 - 7 = -17. (3) On multiplie le résultat par 3 : (-17) × 3 = -51. (4) En une seule expression : ((-5) × 2 - 7) × 3 = -51. Le résultat est −51.
+
+*Indice.* Applique les étapes une par une, dans l'ordre.
+
+**EX-F064-D-02** — decouverte, qcm, 45 s
+
+Programme de calcul : choisir un nombre ; lui ajouter 6 ; multiplier le résultat par 5. Quelle expression donne le résultat quand on choisit x ?
+
+- **a.** 5(x + 6) ✅
+- **b.** 5x + 6
+  <br>*Erreur visée :* L'élève multiplie le nombre choisi par 5 avant d'ajouter 6 : il inverse l'ordre des étapes du programme.
+- **c.** x + 6 × 5
+  <br>*Erreur visée :* L'élève écrit les opérations dans l'ordre sans parenthèses : avec les priorités, seul 6 est multiplié par 5, pas le résultat x + 6.
+
+*Corrigé.* (1) On ajoute 6 au nombre choisi : on obtient x + 6. (2) On multiplie ce résultat, tout entier, par 5 : il faut des parenthèses, (x + 6) × 5, qu'on écrit 5(x + 6). (3) Cette expression est un produit : sa dernière opération est la multiplication par 5. Sans parenthèses, x + 6 × 5 serait une somme, où seul 6 est multiplié.
+
+*Indice.* Le résultat de l'addition est multiplié en entier : que faut-il écrire autour ?
+
+**EX-F064-E-01** — entrainement, numerique, 75 s
+
+Programme de calcul : choisir un nombre ; le multiplier par 4 ; ajouter 9 ; multiplier le résultat par 2. Lina obtient 50. Quel nombre a-t-elle choisi ?
+
+**Réponse :** 4
+
+*Corrigé.* (1) On remonte le programme en partant de la fin, avec les opérations inverses. (2) La dernière étape multiplie par 2 : on divise par 2, 50 ÷ 2 = 25. (3) L'étape d'avant ajoute 9 : on soustrait 9, 25 - 9 = 16. (4) La première étape multiplie par 4 : on divise par 4, 16 ÷ 4 = 4. (5) Contrôle : 4 × 4 = 16, 16 + 9 = 25, 25 × 2 = 50. Lina a choisi 4.
+
+*Indice.* Pars de 50 et défais les étapes, de la dernière à la première.
+
+**EX-F064-E-02** — entrainement, texte, 90 s
+
+Programme de calcul : choisir un nombre ; le multiplier par 5 ; soustraire 4 ; multiplier le résultat par 3. Écris, sous forme réduite, le résultat obtenu en choisissant x.
+
+**Réponse :** 15x − 12
+
+*Corrigé.* (1) Multiplier par 5 donne 5x ; soustraire 4 donne 5x - 4. (2) Multiplier le résultat par 3 : tout 5x - 4 est multiplié, d'où les parenthèses, 3(5x - 4). (3) On développe : 3(5x - 4) = 3 × 5x - 3 × 4 = 15x - 12. (4) Sans parenthèses, 5x - 4 × 3 ne multiplierait que le 4 : on obtiendrait 5x - 12, qui est faux.
+
+*Indice.* Écris d'abord l'expression avec des parenthèses, puis développe-la.
+
+**EX-F064-M-01** — maitrise, numerique, 90 s
+
+Programme de calcul : choisir un nombre ; soustraire 6 ; multiplier par −3 ; ajouter 10. Le résultat est 31. Quel nombre a-t-on choisi ?
+
+**Réponse :** -1
+
+*Corrigé.* (1) On remonte depuis 31, de la dernière étape à la première, avec les opérations inverses. (2) « Ajouter 10 » se défait en soustrayant 10 : 31 - 10 = 21. (3) « Multiplier par −3 » se défait en divisant par −3 : 21 ÷ (-3) = -7. (4) « Soustraire 6 » se défait en ajoutant 6 : -7 + 6 = -1. (5) Contrôle : -1 - 6 = -7, (-7) × (-3) = 21, 21 + 10 = 31. Le nombre choisi est −1.
+
+*Indice.* Chaque étape se défait par l'opération inverse, en partant de la dernière.
+
+**EX-F064-M-02** — maitrise, qcm, 90 s
+
+Programme de calcul : choisir un nombre ; lui ajouter 4 ; multiplier le résultat par 3 ; soustraire le triple du nombre choisi. Quelle expression réduite donne le résultat pour x ?
+
+- **a.** -2x + 12
+  <br>*Erreur visée :* L'élève oublie les parenthèses : x + 4 × 3 − 3x ne multiplie que le 4, d'où x + 12 − 3x = −2x + 12.
+- **b.** 12 ✅
+- **c.** 4
+  <br>*Erreur visée :* L'élève ne multiplie que x par 3 : 3x + 4 − 3x = 4. Or c'est tout le résultat x + 4 qui est multiplié par 3.
+- **d.** 6x + 12
+  <br>*Erreur visée :* L'élève ajoute le triple du nombre au lieu de le soustraire : 3x + 12 + 3x = 6x + 12.
+
+*Corrigé.* (1) On traduit étape par étape : x + 4, puis 3(x + 4), puis 3(x + 4) - 3x. (2) On développe : 3(x + 4) = 3x + 12, donc 3(x + 4) - 3x = 3x + 12 - 3x. (3) Les termes en x s'annulent : 3x - 3x = 0. Il reste 12. (4) Le résultat vaut 12 quel que soit le nombre choisi : l'expression en x le prouve pour tous les nombres, là où des essais ne montrent que quelques cas.
+
+*Indice.* Écris l'expression avec des parenthèses, développe, puis réduis.
+
+---
+
 ## `C036` · Enchaîner des opérations avec des fractions — 4e, difficulté 6
 
 *Calculer une expression qui enchaîne plusieurs opérations sur des fractions positives ou négatives, en respectant les priorités : 1/2 + 3/4 × 2/3 = 1/2 + 1/2 = 1 ; (1/2 + 3/4) × 2/3 = 5/4 × 2/3 = 5/6 ; 2 − 5/3 ÷ 5/6 = 2 − 2 = 0 ; un calcul dont le résultat est négatif (1/3 − 3/4 = −5/12). L'erreur type est de calculer de gauche à droite sans respecter les priorités. Réponse : une fraction, comparée par sa valeur. Figure : aucune.*
@@ -14834,6 +16036,242 @@ Inès dépense les 3/5 de sa cagnotte, puis le quart de ce qui reste. Il lui res
 *Corrigé.* (1) Après la première dépense, il reste 1 - 3/5 = 2/5 de la cagnotte. (2) Inès dépense le quart de ce reste et en garde les 3/4 : 3/4 × 2/5 = 6/20 = 3/10 de la cagnotte. (3) Les 3/10 de la cagnotte valent 45 € : la cagnotte vaut 45 ÷ 3/10 = 45 × 10/3 = 150 €. (4) La bonne réponse est a. Vérification : 3/5 de 150 € font 90 €, il reste 60 € ; le quart de 60 € fait 15 €, il reste 45 €.
 
 *Indice.* Quelle fraction de la cagnotte reste-t-il après la première dépense ? Puis après la seconde ?
+
+---
+
+## `F025` · Résoudre une équation ax + b = cx + d — 4e, difficulté 6
+
+*Résoudre une équation dont l'inconnue figure dans les deux membres, éventuellement après avoir développé : regrouper les termes en x dans un membre et les nombres dans l'autre, en ajoutant ou retranchant un même terme aux deux membres, puis diviser : 5x − 3 = 2x + 9 donne 3x = 12, puis x = 4 ; 3(x − 2) = x + 4 donne 3x − 6 = x + 4, 2x = 10, x = 5 ; 2x + 7 = 5x − 1 donne x = 8/3. L'erreur type est de « passer » un terme sans changer son signe (5x − 3 = 2x + 9 donne 7x = 12) ou de développer seulement le premier terme. Réponse : la solution, un nombre ou une fraction. Figure : aucune.*
+
+> « Mettre en équation un problème et le résoudre à l'aide d'une équation du premier degré du type a𝑥 + b = c𝑥 + d. » — *Cycle 4, classe de 4e, Nombres et calculs, Calcul littéral et algébrique, Objectifs d'apprentissage*
+
+**EX-F025-D-01** — decouverte, numerique, 75 s
+
+Résous l'équation 6x + 1 = 2x + 13. Commence par retrancher 2x aux deux membres.
+
+**Réponse :** 3
+
+*Corrigé.* (1) L'inconnue est dans les deux membres. On retranche 2x aux deux membres : 6x + 1 - 2x = 2x + 13 - 2x, soit 4x + 1 = 13. (2) On retranche 1 aux deux membres : 4x = 12. (3) On divise par 4 : x = 12 ÷ 4 = 3. (4) Vérification : 6 × 3 + 1 = 19 et 2 × 3 + 13 = 19. Les deux membres sont égaux : la solution est 3.
+
+*Indice.* Après avoir retranché 2x, il ne reste des x que dans un seul membre.
+
+**EX-F025-D-02** — decouverte, qcm, 45 s
+
+Pour résoudre 8x - 5 = 3x + 20, on retranche 3x aux deux membres. Quelle équation obtient-on ?
+
+- **a.** 11x - 5 = 20
+  <br>*Erreur visée :* L'élève « passe » 3x de l'autre côté sans changer son signe : il ajoute 3x à gauche (8x + 3x) au lieu de le retrancher.
+- **b.** 5x - 5 = 3x + 20
+  <br>*Erreur visée :* L'élève retranche 3x à gauche seulement : l'égalité n'est plus conservée.
+- **c.** 8x - 5 = 20
+  <br>*Erreur visée :* L'élève efface 3x à droite sans le retrancher à gauche : l'égalité n'est plus conservée.
+- **d.** 5x - 5 = 20 ✅
+
+*Corrigé.* (1) Retrancher 3x aux deux membres garde l'égalité : 8x - 5 - 3x = 3x + 20 - 3x. (2) À gauche, 8x - 3x = 5x ; à droite, 3x - 3x = 0. On obtient 5x - 5 = 20 : c'est la proposition d. (3) Suite : on ajoute 5, 5x = 25, puis on divise par 5, x = 5. Vérification : 8 × 5 - 5 = 35 et 3 × 5 + 20 = 35.
+
+*Indice.* Ce qu'on retranche à gauche, on le retranche aussi à droite.
+
+**EX-F025-E-01** — entrainement, numerique, 75 s
+
+Résous l'équation 3x - 7 = 5x + 9.
+
+**Réponse :** -8
+
+*Corrigé.* (1) On regroupe les termes en x : on retranche 5x aux deux membres, 3x - 7 - 5x = 9, soit -2x - 7 = 9. (2) On ajoute 7 aux deux membres : -2x = 16. (3) On divise par -2 : x = 16 ÷ (-2) = -8. (4) Vérification : 3 × (-8) - 7 = -31 et 5 × (-8) + 9 = -31. La solution est −8. (5) Autre chemin : retrancher 3x donne -7 = 2x + 9, puis 2x = -16 et x = -8. Même solution.
+
+*Indice.* Regroupe les termes en x dans un membre et les nombres dans l'autre, en faisant la même opération des deux côtés.
+
+**EX-F025-E-02** — entrainement, texte, 90 s
+
+Résous l'équation 4x + 9 = x + 2. Donne la solution sous forme d'une fraction.
+
+**Réponse :** −7/3
+
+*Corrigé.* (1) On retranche x aux deux membres : 4x - x = 3x, donc 3x + 9 = 2. (2) On retranche 9 aux deux membres : 3x = 2 - 9, soit 3x = -7. (3) On divise par 3 : x = -7/3 = -7/3. Ce quotient n'est pas décimal : on le laisse en fraction. (4) Vérification : 4 × (-7/3) + 9 = -28/3 + 27/3 = -1/3 et -7/3 + 2 = -7/3 + 6/3 = -1/3. La solution est -7/3.
+
+*Indice.* Combien reste-t-il de x à gauche quand on retire x aux deux membres ?
+
+**EX-F025-M-01** — maitrise, numerique, 120 s
+
+Résous l'équation 4 - 3(x + 2) = x + 6.
+
+**Réponse :** -2
+
+*Corrigé.* (1) On développe d'abord : -3(x + 2) = -3x - 6. Le -3 multiplie les deux termes de la parenthèse. (2) L'équation devient 4 - 3x - 6 = x + 6, soit -3x - 2 = x + 6. (3) On retranche x aux deux membres : -4x - 2 = 6, puis on ajoute 2 : -4x = 8. (4) On divise par -4 : x = 8 ÷ (-4) = -2. (5) Vérification : 4 - 3 × (-2 + 2) = 4 - 0 = 4 et -2 + 6 = 4. La solution est −2.
+
+*Indice.* Développe -3(x + 2) en multipliant les deux termes par -3, puis réduis le membre de gauche.
+
+**EX-F025-M-02** — maitrise, vrai_faux, 75 s
+
+Lina résout 2(x + 5) = 3x - 1. Elle écrit 2x + 5 = 3x - 1, puis trouve x = 6. Sa solution est-elle juste ?
+
+**Réponse :** False
+
+*Corrigé.* (1) On vérifie : pour x = 6, 2 × (6 + 5) = 22 et 3 × 6 - 1 = 17. Les deux membres sont différents : 6 n'est pas solution, Lina a tort. (2) Son erreur : en développant, elle n'a multiplié que x par 2. Or 2(x + 5) = 2x + 10. (3) Résolution : 2x + 10 = 3x - 1. On retranche 2x : 10 = x - 1, puis on ajoute 1 : x = 11. (4) Vérification : 2 × (11 + 5) = 32 et 3 × 11 - 1 = 32. La solution est 11. Réponse : faux.
+
+*Indice.* Remplace x par 6 dans chaque membre de l'équation de départ.
+
+---
+
+## `F065` · Démontrer avec le calcul littéral (4e) : pairs, impairs, formules — 4e, difficulté 6
+
+*Écrire un nombre pair 2n et un nombre impair 2n + 1 (n entier), et démontrer une propriété générale en transformant une expression avec la distributivité et les relatifs : la somme de deux impairs consécutifs, (2n + 1) + (2n + 3) = 4n + 4 = 4(n + 1), est un multiple de 4 ; le carré d'un nombre pair est pair, car (2n)² = 4n² = 2 × 2n² ; deux programmes de calcul donnent toujours le même résultat. Produire une formule (aire d'une figure composée) et tester sa vraisemblance en remplaçant la lettre par un nombre. L'erreur type est de noter de la même façon deux nombres différents (deux pairs écrits 2n et 2n), ou de conclure sur des exemples. Rédiger une démonstration ne se fait pas à l'écran : l'élève complète une étape (coefficient, nombre manquant), choisit l'expression d'un nombre pair ou impair (QCM), remet des étapes dans l'ordre ou choisit la bonne conclusion. Réponse : nombre manquant, QCM ou vrai/faux. Figure : aucune.*
+
+> « Utiliser le calcul algébrique pour produire des démonstrations. » — *Cycle 4, classe de 4e, Nombres et calculs, Calcul littéral et algébrique, Objectifs d'apprentissage*
+> « Produire des formules et tester leur vraisemblance : aires de formes géométriques simples, nombres pairs/impairs, etc. » — *Cycle 4, classe de 4e, Nombres et calculs, Calcul littéral et algébrique, Objectifs d'apprentissage*
+
+**EX-F065-D-01** — decouverte, qcm, 45 s
+
+n désigne un nombre entier quelconque. Quelle écriture désigne toujours un nombre pair ?
+
+- **a.** n + 2
+  <br>*Erreur visée :* L'élève pense qu'ajouter 2 rend un nombre pair. Mais n + 2 a la même parité que n : pour n = 5, on obtient 7, qui est impair.
+- **b.** 2n ✅
+- **c.** n^{2}
+  <br>*Erreur visée :* L'élève confond le double et le carré. Pour n = 3, le carré vaut 9, qui est impair.
+- **d.** 2n + 1
+  <br>*Erreur visée :* L'élève confond pair et impair : 2n + 1 suit le nombre pair 2n, il est toujours impair (pour n = 4, il vaut 9).
+
+*Corrigé.* (1) Un nombre pair est un nombre de la table de 2 : il s'écrit 2 × un entier (0, 2, 4, 6, 8…). (2) 2n veut dire 2 × n : quel que soit l'entier n, c'est le double d'un entier, donc un nombre pair. (3) Les autres écritures ne marchent pas toujours : pour n = 3, n + 2 vaut 5 et n^{2} vaut 9, deux nombres impairs. Et 2n + 1 suit le pair 2n : il est toujours impair. (4) La bonne réponse est b. À retenir : un pair s'écrit 2n, un impair s'écrit 2n + 1.
+
+*Indice.* Un nombre pair, c'est le double d'un entier. Quelle écriture est un double ?
+
+**EX-F065-D-02** — decouverte, numerique, 60 s
+
+Trois pairs consécutifs s'écrivent 2n, 2n + 2 et 2n + 4 (n entier). Complète : 2n + (2n + 2) + (2n + 4) = 6n + …
+
+**Réponse :** 6
+
+*Corrigé.* (1) Un exemple : pour n = 1, les trois nombres sont 2, 4 et 6, et leur somme vaut 12. (2) En général, on enlève les parenthèses (elles sont précédées de +) : 2n + (2n + 2) + (2n + 4) = 2n + 2n + 2 + 2n + 4. (3) On regroupe les termes en n : 2n + 2n + 2n = 6n, puis les nombres : 2 + 4 = 6. La somme vaut 6n + 6 : le nombre manquant est 6. (4) Contrôle avec n = 1 : 6 × 1 + 6 = 12, comme dans l'exemple. (5) On peut conclure : 6n + 6 = 6(n + 1). La somme de trois nombres pairs consécutifs est toujours un multiple de 6, pour tout entier n, et pas seulement pour n = 1.
+
+*Indice.* Enlève les parenthèses, puis regroupe d'un côté les termes en n, de l'autre les nombres.
+
+**EX-F065-E-01** — entrainement, texte, 120 s
+
+A : retrancher 3 à n, puis multiplier par 4. B : multiplier n par -2, ajouter 6, puis multiplier par -2. Écris le résultat de B, développé et réduit.
+
+**Réponse :** 4n − 12
+
+*Corrigé.* (1) Essai avec 5 : A donne (5 - 3) × 4 = 8 ; B donne 5 × (-2) = -10, puis -10 + 6 = -4, puis -4 × (-2) = 8. Même résultat, mais un essai ne prouve rien pour tous les nombres. (2) B avec la lettre : n × (-2) = -2n, puis -2n + 6, puis -2(-2n + 6). Les parenthèses sont indispensables : on multiplie tout le résultat par -2. (3) On développe : -2 × (-2n) = 4n et -2 × 6 = -12. Donc -2(-2n + 6) = 4n - 12. (4) A avec la lettre : 4(n - 3) = 4n - 12. Les deux expressions sont égales pour tout n : c'est la démonstration que A et B donnent toujours le même résultat.
+
+*Indice.* Écris le résultat de B avec des parenthèses, puis développe en faisant attention au signe de chaque produit.
+
+**EX-F065-E-02** — entrainement, vrai_faux, 75 s
+
+Inès additionne deux impairs consécutifs : 1 + 3 = 4, 5 + 7 = 12 et 9 + 11 = 20. Ces trois essais démontrent-ils qu'une telle somme est toujours un multiple de 4 ?
+
+**Réponse :** False
+
+*Corrigé.* (1) Les trois calculs sont justes, mais ils ne traitent que trois cas. Des exemples ne démontrent jamais une propriété pour tous les entiers. (2) Pour démontrer, on écrit deux impairs consécutifs avec une lettre : 2n + 1 et 2n + 3, où n est un entier. (3) Leur somme : (2n + 1) + (2n + 3) = 4n + 4 = 4(n + 1). C'est 4 fois un entier : la somme est toujours un multiple de 4. (4) La propriété est donc vraie, mais c'est ce calcul qui la démontre, pas les trois essais. Réponse : faux.
+
+*Indice.* Trois exemples peuvent-ils couvrir tous les entiers ?
+
+**EX-F065-M-01** — maitrise, qcm, 75 s
+
+n et p sont des entiers. Pour démontrer que « pair + impair » donne toujours un impair, quelle somme faut-il étudier ?
+
+- **a.** 2n + (2n + 1)
+  <br>*Erreur visée :* L'élève note les deux nombres avec la même lettre. Il ne traite alors que les cas où l'impair suit juste le pair (6 et 7), pas 6 et 11.
+- **b.** n + (n + 1)
+  <br>*Erreur visée :* L'élève écrit deux entiers consécutifs quelconques : rien ne dit lequel est pair, et les deux nombres doivent se suivre.
+- **c.** 2n + 2p
+  <br>*Erreur visée :* L'élève écrit deux nombres pairs : 2p n'est pas impair (pour p = 5, il vaut 10).
+- **d.** 2n + (2p + 1) ✅
+
+*Corrigé.* (1) Un pair s'écrit 2n et un impair 2p + 1. On prend deux lettres différentes, car les deux nombres n'ont aucun lien entre eux : 6 et 11 conviennent, avec n = 3 et p = 5. (2) Avec une seule lettre, 2n + (2n + 1) ne couvre que des nombres qui se suivent, comme 6 et 7 : ce ne serait pas une preuve pour tous les cas. (3) On calcule : 2n + (2p + 1) = 2n + 2p + 1 = 2(n + p) + 1. C'est un nombre pair plus 1 : la somme est toujours impaire. (4) La bonne réponse est d.
+
+*Indice.* Les deux nombres sont-ils forcément liés ? Faut-il une lettre ou deux ?
+
+**EX-F065-M-02** — maitrise, qcm, 90 s
+
+Un jardin carré de x m de côté contient un bassin carré de 2 m de côté. Quelle formule donne l'aire du jardin hors bassin, en m² ? Teste avec x = 10.
+
+- **a.** (x - 2)^{2}
+  <br>*Erreur visée :* L'élève retire 2 m au côté du jardin, comme si le bassin occupait une bande sur tout un bord. Pour x = 10, cela donne 64 m² au lieu de 96 m².
+- **b.** x^{2} - 2
+  <br>*Erreur visée :* L'élève retire le côté du bassin (2 m) au lieu de son aire (2 × 2 = 4 m²). Pour x = 10, cela donne 98 m².
+- **c.** x^{2} - 4 ✅
+- **d.** 2x - 4
+  <br>*Erreur visée :* L'élève confond le carré et le double : l'aire du jardin est x × x, pas 2x. Pour x = 10, cela donne 16 m².
+
+*Corrigé.* (1) Pour x = 10, le jardin a une aire de 10 × 10 = 100 m² et le bassin de 2 × 2 = 4 m². L'aire cherchée vaut 100 - 4 = 96 m². (2) On teste chaque formule avec 10 : (10 - 2)^{2} = 64 ; 10^{2} - 2 = 98 ; 10^{2} - 4 = 96 ; 2 × 10 - 4 = 16. Seule la formule c donne 96. (3) En général : l'aire du jardin est x × x = x^{2}, celle du bassin est 4 m², d'où x^{2} - 4. (4) Un test réussi rend une formule vraisemblable ; un seul test raté suffit à la rejeter. Ici, a, b et d sont rejetées. La bonne réponse est c.
+
+*Indice.* Calcule d'abord l'aire du jardin et celle du bassin pour un côté de 10 m.
+
+---
+
+## `F066` · Mettre un problème en équation et le résoudre — 4e, difficulté 6
+
+*Choisir l'inconnue et dire ce qu'elle représente, traduire l'énoncé par une équation du premier degré (du type ax + b = c ou ax + b = cx + d), la résoudre, vérifier la solution dans l'énoncé et répondre par une phrase. Exemples : deux forfaits, 15 € plus 0,50 € par séance et 25 € plus 0,25 € par séance, coûtent autant pour x séances quand 15 + 0,5x = 25 + 0,25x, soit x = 40 ; un rectangle dont la longueur dépasse la largeur x de 3 cm et dont le périmètre vaut 34 cm : 2(x + x + 3) = 34, x = 7, et la longueur vaut 10 cm ; quel nombre choisir pour que deux programmes de calcul donnent le même résultat. L'erreur type est de mal choisir l'inconnue ou de répondre par la valeur de x quand la question porte sur une autre grandeur (la longueur). Réponse : un nombre (la grandeur demandée) ; l'équation se choisit (QCM) en attendant la saisie des équations (section 5). En attendant la saisie des expressions : QCM pour l'équation. Figure : aucune.*
+
+> « Mettre en équation un problème et le résoudre à l'aide d'une équation du premier degré du type a𝑥 + b = c𝑥 + d. » — *Cycle 4, classe de 4e, Nombres et calculs, Calcul littéral et algébrique, Objectifs d'apprentissage*
+> « Il doit ainsi être intégré à la résolution de problèmes concrets ou internes aux mathématiques, qui en justifient l'usage et en renforcent la pertinence. » — *Cycle 4, Nombres et calculs, présentation commune aux trois classes*
+
+**EX-F066-D-01** — decouverte, qcm, 60 s
+
+Une séance coûte 9 €, ou 6 € avec une carte à 15 €. Quelle équation traduit « x séances coûtent autant avec ou sans carte » ?
+
+- **a.** 9 + x = 15 + 6 + x
+  <br>*Erreur visée :* L'élève additionne le prix d'une séance et le nombre de séances : x séances à 9 € coûtent 9 × x, pas 9 + x.
+- **b.** 9x = 15x + 6
+  <br>*Erreur visée :* L'élève attache x au prix de la carte, qui se paie une seule fois, au lieu du prix de chaque séance.
+- **c.** 9x = 15 + 6x ✅
+- **d.** 9x + 15 = 6x
+  <br>*Erreur visée :* L'élève place le prix de la carte du côté du tarif sans carte : la carte se paie seulement avec le tarif à 6 €.
+
+*Corrigé.* (1) Sans carte : x séances à 9 € coûtent 9 × x = 9x euros. (2) Avec la carte : 15 € une seule fois, plus 6 € par séance, soit 15 + 6x euros. (3) On paie autant quand 9x = 15 + 6x : c'est la proposition c. (4) Résolution : on retranche 6x, 3x = 15, donc x = 5. Vérification : 9 × 5 = 45 et 15 + 6 × 5 = 45. Pour 5 séances, les deux tarifs coûtent 45 €.
+
+*Indice.* Écris d'abord le prix payé sans carte pour x séances, puis le prix avec la carte.
+
+**EX-F066-D-02** — decouverte, numerique, 75 s
+
+Un rectangle a pour largeur x cm et pour longueur 2x cm. Son périmètre de 42 cm donne 2(x + 2x) = 42. Quelle est sa longueur ?
+
+**Réponse :** 14
+
+*Corrigé.* (1) On réduit : x + 2x = 3x, donc 2(x + 2x) = 2 × 3x = 6x, et l'équation devient 6x = 42. (2) On divise par 6 : x = 7. Attention, x est la largeur, pas la longueur demandée. (3) La longueur est le double de la largeur : 2 × 7 = 14 cm. (4) Vérification avec l'énoncé : le périmètre vaut 2 × (7 + 14) = 42 cm. La longueur mesure 14 cm.
+
+*Indice.* Résous l'équation, puis relis la question : que représente x ?
+
+**EX-F066-E-01** — entrainement, texte, 90 s
+
+Léo a 35 € et économise 5 € par semaine ; Mia a 89 € et dépense 4 € par semaine. Écris l'équation « après x semaines, ils ont la même somme ».
+
+**Réponse :** 35 + 5x = 89 − 4x
+
+*Corrigé.* (1) Au bout de x semaines, Léo a gagné 5x euros : il a 35 + 5x euros. (2) Mia a dépensé 4x euros : il lui reste 89 - 4x euros. Dépenser se traduit par une soustraction. (3) Ils ont la même somme quand 35 + 5x = 89 - 4x. (4) Résolution : on ajoute 4x, 35 + 9x = 89 ; on retranche 35, 9x = 54 ; donc x = 6. Au bout de 6 semaines, chacun a 65 € : 35 + 30 = 65 et 89 - 24 = 65.
+
+*Indice.* Écris la somme de Léo, puis celle de Mia, au bout de x semaines.
+
+**EX-F066-E-02** — entrainement, numerique, 120 s
+
+Programme A : multiplier par 4, puis retrancher 3. Programme B : ajouter 6, puis multiplier par 2. Quel nombre donner aux deux programmes pour obtenir le même résultat ?
+
+**Réponse :** 7.5
+
+*Corrigé.* (1) On note x le nombre choisi. A donne 4x - 3. B donne (x + 6) × 2, soit 2(x + 6) = 2x + 12 : les parenthèses sont nécessaires, car on multiplie tout le résultat. (2) Même résultat : 4x - 3 = 2x + 12. (3) On retranche 2x : 2x - 3 = 12 ; on ajoute 3 : 2x = 15 ; on divise par 2 : x = 7{,}5. (4) Vérification : A donne 4 × 7{,}5 - 3 = 27 et B donne (7{,}5 + 6) × 2 = 27. Il faut choisir 7,5.
+
+*Indice.* Écris le résultat de chaque programme pour un nombre x, sans oublier les parenthèses.
+
+**EX-F066-M-01** — maitrise, numerique, 120 s
+
+La cuve A contient 150 L et perd 4 L par minute. La cuve B contient 30 L et reçoit 6 L par minute. Quand elles contiennent autant d'eau, combien de litres contient chacune ?
+
+**Réponse :** 102
+
+*Corrigé.* (1) On choisit l'inconnue : x est le nombre de minutes écoulées. (2) Après x minutes, A contient 150 - 4x litres et B contient 30 + 6x litres. Même quantité : 150 - 4x = 30 + 6x. (3) On ajoute 4x : 150 = 30 + 10x ; on retranche 30 : 120 = 10x ; on divise par 10 : x = 12. (4) Attention : 12 est un nombre de minutes, pas la réponse. La question porte sur la quantité d'eau : 150 - 4 × 12 = 102 et 30 + 6 × 12 = 102. (5) Après 12 minutes, chaque cuve contient 102 L.
+
+*Indice.* Choisis comme inconnue le nombre de minutes, puis relis la question une fois l'équation résolue.
+
+**EX-F066-M-02** — maitrise, texte, 90 s
+
+Un triangle a trois côtés de x cm. Un pentagone a cinq côtés, chacun 4 cm plus court que ceux du triangle. Leurs périmètres sont égaux : écris l'équation.
+
+**Réponse :** 3x = 5(x − 4)
+
+*Corrigé.* (1) Périmètre du triangle : x + x + x = 3x. (2) Chaque côté du pentagone mesure x - 4 ; son périmètre est 5 × (x - 4) = 5(x - 4). Les parenthèses sont indispensables : 5x - 4 ne retrancherait 4 qu'une seule fois. (3) Même périmètre : 3x = 5(x - 4). (4) Résolution : 3x = 5x - 20 ; on retranche 5x, -2x = -20 ; donc x = 10. Les côtés mesurent 10 cm et 6 cm, et les deux périmètres valent 30 cm.
+
+*Indice.* Écris le périmètre de chaque figure en fonction de x.
 
 ---
 
@@ -15544,5 +16982,563 @@ Un collège compte 840 élèves, dont 315 demi-pensionnaires. Quelle fraction de
 *Corrigé.* (1) 315 élèves sur 840 sont demi-pensionnaires : la fraction est 315/840. (2) 315 et 840 se terminent par 5 et par 0 : on divise par 5. 315/840 = 63/168. (3) 63 et 168 sont dans la table de 3 (sommes des chiffres : 6 + 3 = 9 et 1 + 6 + 8 = 15) : on divise par 3. 63/168 = 21/56. (4) 21 et 56 sont dans la table de 7 : on divise par 7. 21/56 = 3/8. (5) 3 et 8 n'ont pas d'autre diviseur commun que 1 : 3/8 est irréductible. (6) Vérification : 3 × 105 = 315 et 8 × 105 = 840. On a divisé en tout par 5 × 3 × 7 = 105.
 
 *Indice.* Écris d'abord la fraction : élèves demi-pensionnaires sur élèves en tout. Puis simplifie en plusieurs étapes.
+
+---
+
+## `F013` · Double distributivité : développer et réduire (a + b)(c + d) — 3e, difficulté 6
+
+*Développer un produit de deux sommes en multipliant chaque terme de la première par chaque terme de la seconde, puis réduire : (x + 3)(x + 5) = x² + 5x + 3x + 15 = x² + 8x + 15 ; (2x − 1)(x + 4) = 2x² + 7x − 4 ; enchaîner avec l'opposé d'une expression, −(5 − 4x) = −5 + 4x, et simplifier : (x + 1)(x + 2) − (x² + 4) = 3x − 2. L'erreur type est de ne multiplier que les premiers et les derniers termes ((x + 3)(x + 5) = x² + 15), ou de ne pas changer tous les signes d'une parenthèse précédée de −. Réponse : QCM entre formes développées, ou un coefficient (coefficient de x, terme constant : des nombres) ; écrire la forme développée réduite au clavier attend la saisie des expressions avec contrainte de forme (section 5). En attendant la saisie des expressions : QCM ou coefficients. Figure utile : geometrie, rectangle de côtés x + 3 et x + 5 partagé en quatre rectangles.*
+
+> « Utiliser la double distributivité pour développer et factoriser des expressions dont le facteur est apparent. » — *Cycle 4, classe de 3e, Nombres et calculs, Calcul littéral et algébrique, Objectifs d'apprentissage*
+> « Prendre l'opposé d'une expression : savoir que – (5 – 4𝑥) = –5 + 4𝑥. » — *Cycle 4, classe de 3e, Nombres et calculs, Calcul littéral et algébrique, Automatismes*
+> « Simplifier des expressions littérales. » — *Cycle 4, classe de 3e, Nombres et calculs, Calcul littéral et algébrique, Automatismes*
+> « Développer et factoriser une expression simple. » — *Cycle 4, classe de 3e, Nombres et calculs, Calcul littéral et algébrique, Automatismes*
+
+**EX-F013-D-01** — decouverte, qcm, 90 s
+
+Le grand rectangle est partagé en quatre rectangles. Les longueurs sont écrites sur la figure, qui n'est pas à l'échelle. Quelle expression est égale à l'aire du grand rectangle ?
+
+- **a.** x^{2} + 12
+  <br>*Erreur visée :* L'élève ne multiplie que les premiers termes entre eux et les derniers entre eux : il compte le carré x^{2} et le petit rectangle de 6 sur 2, mais oublie les rectangles d'aire 6x et 2x.
+- **b.** x^{2} + 6x + 12
+  <br>*Erreur visée :* L'élève oublie le rectangle de côtés x et 2 : sur les quatre produits, il n'en compte que trois.
+- **c.** x^{2} + 8x + 12 ✅
+- **d.** 2x + 8
+  <br>*Erreur visée :* L'élève additionne les deux côtés, (x + 6) + (x + 2), au lieu de les multiplier : c'est la moitié du périmètre, pas l'aire.
+
+*Corrigé.* (1) Sur la figure, la largeur du grand rectangle est x + 6 et sa hauteur x + 2 : son aire est (x + 6)(x + 2). (2) On additionne les aires des quatre rectangles : x × x = x^{2}, 6 × x = 6x, x × 2 = 2x et 6 × 2 = 12. (3) Aire totale : x^{2} + 6x + 2x + 12. On réduit les termes en x : 6x + 2x = 8x, d'où x^{2} + 8x + 12. (4) C'est la double distributivité : chaque terme de x + 6 multiplie chaque terme de x + 2. Cela fait quatre produits, un par rectangle.
+
+*Indice.* Calcule l'aire de chacun des quatre rectangles, puis additionne-les.
+
+**EX-F013-D-02** — decouverte, numerique, 75 s
+
+Pour développer (x + 3)(x + 8), on multiplie chaque terme de la première parenthèse par chaque terme de la seconde : cela fait quatre produits. Après réduction, quel est le coefficient de x ?
+
+**Réponse :** 11
+
+*Corrigé.* (1) Les quatre produits : x × x = x^{2} ; x × 8 = 8x ; 3 × x = 3x ; 3 × 8 = 24. (2) (x + 3)(x + 8) = x^{2} + 8x + 3x + 24. (3) On réduit les termes en x : 8x + 3x = 11x. Donc (x + 3)(x + 8) = x^{2} + 11x + 24 : le coefficient de x est 11. (4) Le terme constant, 24, est le produit 3 × 8 ; le coefficient de x est la somme 3 + 8. Il ne faut pas confondre les deux.
+
+*Indice.* Écris les quatre produits, puis regroupe ceux qui contiennent x sans carré.
+
+**EX-F013-E-01** — entrainement, texte, 120 s
+
+Développe et réduis (2x + 3)(x - 4). Écris le résultat sans parenthèse.
+
+**Réponse :** 2x² − 5x − 12
+
+*Corrigé.* (1) Chaque terme de 2x + 3 multiplie chaque terme de x - 4 : 2x × x = 2x^{2} ; 2x × (-4) = -8x ; 3 × x = 3x ; 3 × (-4) = -12. (2) (2x + 3)(x - 4) = 2x^{2} - 8x + 3x - 12. (3) On réduit : -8x + 3x = -5x. Résultat : 2x^{2} - 5x - 12. (4) Contrôle avec x = 1 : (2 + 3) × (1 - 4) = 5 × (-3) = -15, et 2 - 5 - 12 = -15.
+
+*Indice.* Quatre produits à écrire. Le signe de -4 compte dans deux d'entre eux.
+
+**EX-F013-E-02** — entrainement, qcm, 90 s
+
+Développe et réduis (x - 5)(x - 3). Quelle expression obtiens-tu ?
+
+- **a.** x^{2} - 8x - 15
+  <br>*Erreur visée :* L'élève se trompe sur le signe du dernier produit : (-5) × (-3) est positif, il vaut 15 et non −15.
+- **b.** x^{2} + 15
+  <br>*Erreur visée :* L'élève ne multiplie que les premiers termes entre eux et les derniers entre eux : il oublie les produits x × (-3) et (-5) × x.
+- **c.** x^{2} - 2x + 15
+  <br>*Erreur visée :* L'élève oublie le signe moins de −3 dans le produit x × (-3) : il écrit 3x, et -5x + 3x donne -2x.
+- **d.** x^{2} - 8x + 15 ✅
+
+*Corrigé.* (1) Les quatre produits : x × x = x^{2} ; x × (-3) = -3x ; (-5) × x = -5x ; (-5) × (-3) = 15. (2) Le produit de deux nombres négatifs est positif : (-5) × (-3) = 15. (3) (x - 5)(x - 3) = x^{2} - 3x - 5x + 15 = x^{2} - 8x + 15. (4) Contrôle avec x = 2 : (2 - 5) × (2 - 3) = (-3) × (-1) = 3, et 4 - 16 + 15 = 3.
+
+*Indice.* Écris x - 5 comme x + (-5) et x - 3 comme x + (-3), puis fais les quatre produits.
+
+**EX-F013-M-01** — maitrise, texte, 150 s
+
+Simplifie l'expression (x + 6)(x - 1) - (x^{2} - 9). Écris-la réduite, sans parenthèse.
+
+**Réponse :** 5x + 3
+
+*Corrigé.* (1) On développe le produit : (x + 6)(x - 1) = x^{2} - x + 6x - 6 = x^{2} + 5x - 6. (2) La parenthèse est précédée d'un signe moins : on prend l'opposé de chacun de ses termes, -(x^{2} - 9) = -x^{2} + 9. (3) L'expression vaut x^{2} + 5x - 6 - x^{2} + 9. (4) On réduit : x^{2} - x^{2} = 0 et -6 + 9 = 3. Il reste 5x + 3. (5) Contrôle avec x = 2 : 8 × 1 - (4 - 9) = 8 + 5 = 13, et 5 × 2 + 3 = 13.
+
+*Indice.* Développe d'abord le produit. Devant -(x^{2} - 9), change le signe de chaque terme de la parenthèse.
+
+**EX-F013-M-02** — maitrise, numerique, 120 s
+
+Quel nombre faut-il écrire à la place des pointillés pour que l'égalité soit vraie pour tout nombre x ? (x + 3)(x + …) = x^{2} + 10x + 21
+
+**Réponse :** 7
+
+*Corrigé.* (1) En développant (x + 3)(x + …), le terme sans x est le produit de 3 par le nombre cherché. Il doit valoir 21 : 3 × 7 = 21, le nombre est 7. (2) On vérifie le terme en x : x × 7 + 3 × x = 7x + 3x = 10x. C'est bien 10x. (3) Donc (x + 3)(x + 7) = x^{2} + 7x + 3x + 21 = x^{2} + 10x + 21. (4) Les deux conditions doivent être vraies ensemble : le produit des deux nombres donne le terme constant, leur somme donne le coefficient de x.
+
+*Indice.* Développe (x + 3)(x + …) : le terme sans x est un produit. Lequel doit valoir 21 ?
+
+---
+
+## `F020` · Développer avec les identités remarquables — 3e, difficulté 6
+
+*Connaître et utiliser (a + b)² = a² + 2ab + b², (a − b)² = a² − 2ab + b² et (a + b)(a − b) = a² − b² pour développer sans passer par la double distributivité : (x + 3)² = x² + 6x + 9 ; (2x − 5)² = 4x² − 20x + 25 ; (x − 4)(x + 4) = x² − 16 ; calcul mental : 101² = 10 201, 99 × 101 = 9 999. Savoir retrouver une identité par la double distributivité (F013). L'erreur type est d'oublier le double produit ((x + 3)² = x² + 9) ou de mal élever un produit au carré ((2x)² = 2x²). Réponse : QCM entre formes développées, un coefficient (un nombre), ou une valeur numérique (101² : un nombre) ; écrire la forme développée au clavier attend la saisie des expressions (section 5). En attendant la saisie des expressions : QCM, coefficient ou valeur. Figure utile : geometrie, carré de côté a + b partagé en deux carrés et deux rectangles.*
+
+> « Manipuler les trois identités remarquables pour développer et factoriser » — *Cycle 4, classe de 3e, Nombres et calculs, Calcul littéral et algébrique, Objectifs d'apprentissage*
+> « Développer et factoriser une expression simple. » — *Cycle 4, classe de 3e, Nombres et calculs, Calcul littéral et algébrique, Automatismes*
+
+**EX-F020-D-01** — decouverte, qcm, 90 s
+
+Le grand carré est partagé en deux carrés et deux rectangles. La figure n'est pas à l'échelle. Quelle expression est égale à l'aire du grand carré ?
+
+- **a.** x^{2} + 16
+  <br>*Erreur visée :* L'élève élève chaque terme au carré, comme si (a + b)^{2} = a^{2} + b^{2} : il ne compte que les deux carrés et oublie les deux rectangles.
+- **b.** x^{2} + 8x + 16 ✅
+- **c.** x^{2} + 4x + 16
+  <br>*Erreur visée :* L'élève ne compte qu'un des deux rectangles de côtés x et 4 : le double produit vaut 2 × x × 4 = 8x.
+- **d.** 4x + 16
+  <br>*Erreur visée :* L'élève calcule le périmètre du grand carré, 4 × (x + 4), au lieu de son aire.
+
+*Corrigé.* (1) Le côté du grand carré mesure x + 4 : son aire est (x + 4)^{2}. (2) Les quatre morceaux : un carré d'aire x^{2}, un carré d'aire 4^{2} = 16, et deux rectangles d'aire 4 × x = 4x chacun. (3) Aire totale : x^{2} + 4x + 4x + 16 = x^{2} + 8x + 16. (4) C'est l'identité (a + b)^{2} = a^{2} + 2ab + b^{2} avec a = x et b = 4 : les deux rectangles forment le double produit 2ab = 8x.
+
+*Indice.* Calcule l'aire de chacun des quatre morceaux, puis additionne.
+
+**EX-F020-D-02** — decouverte, numerique, 75 s
+
+On développe (x - 9)^{2} avec l'identité (a - b)^{2} = a^{2} - 2ab + b^{2}. Quel nombre manque dans (x - 9)^{2} = x^{2} - … x + 81 ?
+
+**Réponse :** 18
+
+*Corrigé.* (1) Ici a = x et b = 9. (2) Le double produit : 2ab = 2 × x × 9 = 18x. (3) Donc (x - 9)^{2} = x^{2} - 18x + 81 : le nombre manquant est 18. (4) Contrôle avec x = 10 : (10 - 9)^{2} = 1, et 100 - 180 + 81 = 1.
+
+*Indice.* Le nombre manquant vient du double produit 2ab. Que valent a et b ici ?
+
+**EX-F020-E-01** — entrainement, texte, 120 s
+
+Développe et réduis (3x + 5)^{2} à l'aide d'une identité remarquable.
+
+**Réponse :** 9x² + 30x + 25
+
+*Corrigé.* (1) On utilise (a + b)^{2} = a^{2} + 2ab + b^{2} avec a = 3x et b = 5. (2) a^{2} = (3x)^{2} = 3x × 3x = 9x^{2} : le 3 est lui aussi élevé au carré. (3) 2ab = 2 × 3x × 5 = 30x et b^{2} = 25. (4) Donc (3x + 5)^{2} = 9x^{2} + 30x + 25. Contrôle avec x = 1 : 8^{2} = 64, et 9 + 30 + 25 = 64.
+
+*Indice.* Repère a et b. Attention : (3x)^{2} n'est pas 3x^{2}.
+
+**EX-F020-E-02** — entrainement, qcm, 75 s
+
+Quelle est la forme développée de (2x - 7)(2x + 7) ?
+
+- **a.** 4x^{2} - 49 ✅
+- **b.** 2x^{2} - 49
+  <br>*Erreur visée :* L'élève élève x au carré mais pas le coefficient 2 : (2x)^{2} = 2x × 2x = 4x^{2}, et non 2x^{2}.
+- **c.** 4x^{2} + 49
+  <br>*Erreur visée :* L'élève se trompe de signe : le dernier produit est (-7) × 7 = -49.
+- **d.** 4x^{2} - 28x + 49
+  <br>*Erreur visée :* L'élève confond avec (2x - 7)^{2}. Ici les deux facteurs sont différents : (a - b)(a + b) = a^{2} - b^{2}, et les deux produits en x s'annulent.
+
+*Corrigé.* (1) C'est l'identité (a - b)(a + b) = a^{2} - b^{2}, avec a = 2x et b = 7. (2) a^{2} = (2x)^{2} = 4x^{2} et b^{2} = 49. (3) Donc (2x - 7)(2x + 7) = 4x^{2} - 49. (4) Vérification par la double distributivité : 4x^{2} + 14x - 14x - 49 ; les deux termes en x s'annulent.
+
+*Indice.* Les deux parenthèses ne diffèrent que par un signe : quelle identité reconnais-tu ?
+
+**EX-F020-M-01** — maitrise, numerique, 90 s
+
+Sans poser la multiplication, calcule 98^{2} en écrivant 98 = 100 - 2 et en utilisant une identité remarquable.
+
+**Réponse :** 9604
+
+*Corrigé.* (1) 98^{2} = (100 - 2)^{2} : identité (a - b)^{2} = a^{2} - 2ab + b^{2} avec a = 100 et b = 2. (2) a^{2} = 10 000 ; 2ab = 2 × 100 × 2 = 400 ; b^{2} = 4. (3) 98^{2} = 10 000 - 400 + 4 = 9 604. (4) Erreur à éviter : 100^{2} - 2^{2} = 9 996, qui oublie le double produit.
+
+*Indice.* Repère a et b dans (100 - 2)^{2}, puis calcule de tête a^{2}, 2ab et b^{2}.
+
+**EX-F020-M-02** — maitrise, texte, 150 s
+
+Un carré a pour côté x + 5, un autre x - 5, avec x plus grand que 5. De combien l'aire du premier dépasse-t-elle celle du second ? Donne une expression réduite.
+
+**Réponse :** 20x
+
+*Corrigé.* (1) L'écart des aires est (x + 5)^{2} - (x - 5)^{2}. (2) (x + 5)^{2} = x^{2} + 10x + 25 et (x - 5)^{2} = x^{2} - 10x + 25. (3) On soustrait la seconde aire, écrite entre parenthèses, en changeant tous ses signes : x^{2} + 10x + 25 - x^{2} + 10x - 25. (4) On réduit : il reste 20x. Contrôle avec x = 6 : 121 - 1 = 120, et 20 × 6 = 120.
+
+*Indice.* Développe les deux carrés avec les identités, puis soustrais en gardant des parenthèses.
+
+---
+
+## `F021` · Factoriser avec les identités remarquables — 3e, difficulté 6
+
+*Reconnaître dans une somme le développement d'une identité remarquable et l'écrire sous forme de produit : x² − 9 = (x − 3)(x + 3) ; 4x² − 25 = (2x − 5)(2x + 5) ; x² + 10x + 25 = (x + 5)² ; 9x² − 12x + 4 = (3x − 2)² ; repérer les carrés (9 = 3², 4x² = (2x)²) et vérifier le double produit (2 × 3x × 2 = 12x). L'erreur type est de factoriser x² + 9 en (x + 3)(x − 3), ou x² + 6x + 4 en (x + 2)² sans vérifier le double produit. Réponse : QCM entre formes factorisées, vrai/faux, ou un nombre manquant (x² − 49 = (x − …)(x + …)) ; écrire la forme factorisée au clavier attend la saisie des expressions avec contrainte de forme (section 5). En attendant la saisie des expressions : QCM ou nombre manquant. Figure : aucune.*
+
+> « Manipuler les trois identités remarquables pour développer et factoriser » — *Cycle 4, classe de 3e, Nombres et calculs, Calcul littéral et algébrique, Objectifs d'apprentissage*
+
+**EX-F021-D-01** — decouverte, numerique, 60 s
+
+81 est le carré d'un nombre entier positif. Complète avec ce nombre, le même dans les deux parenthèses : x^{2} - 81 = (x - …)(x + …)
+
+**Réponse :** 9
+
+*Corrigé.* (1) 81 = 9^{2} : l'expression s'écrit x^{2} - 9^{2}, une différence de deux carrés. (2) Identité a^{2} - b^{2} = (a - b)(a + b) avec a = x et b = 9. (3) Donc x^{2} - 81 = (x - 9)(x + 9) : le nombre manquant est 9. (4) Contrôle en développant : (x - 9)(x + 9) = x^{2} + 9x - 9x - 81 = x^{2} - 81.
+
+*Indice.* Quel nombre, multiplié par lui-même, donne 81 ?
+
+**EX-F021-D-02** — decouverte, qcm, 75 s
+
+On veut factoriser x^{2} + 22x + 121. On remarque que 121 = 11^{2}. Quelle est la forme factorisée ?
+
+- **a.** x(x + 22) + 121
+  <br>*Erreur visée :* L'élève met x en facteur dans les deux premiers termes seulement : le résultat est une somme, pas un produit.
+- **b.** (x + 11)(x - 11)
+  <br>*Erreur visée :* L'élève applique l'identité a^{2} - b^{2} sans voir qu'il n'y a pas de différence : (x + 11)(x - 11) = x^{2} - 121.
+- **c.** (x + 11)^{2} ✅
+
+*Corrigé.* (1) On cherche la forme a^{2} + 2ab + b^{2} : x^{2} est le carré de x et 121 celui de 11, donc a = x et b = 11. (2) On vérifie le double produit : 2 × x × 11 = 22x. C'est bien le terme du milieu. (3) Donc x^{2} + 22x + 121 = (x + 11)^{2}. (4) Contrôle avec x = 1 : 1 + 22 + 121 = 144, et (1 + 11)^{2} = 144.
+
+*Indice.* Trois termes, dont deux carrés : quelle identité a trois termes ? Vérifie le double produit.
+
+**EX-F021-E-01** — entrainement, texte, 120 s
+
+Factorise 16x^{2} - 9 à l'aide d'une identité remarquable.
+
+**Réponse :** (4x − 3)(4x + 3)
+
+*Corrigé.* (1) 16x^{2} = (4x)^{2} et 9 = 3^{2} : c'est une différence de deux carrés, a^{2} - b^{2} avec a = 4x et b = 3. (2) a^{2} - b^{2} = (a - b)(a + b), donc 16x^{2} - 9 = (4x - 3)(4x + 3). (3) Contrôle en développant : (4x - 3)(4x + 3) = 16x^{2} + 12x - 12x - 9 = 16x^{2} - 9. (4) Erreur à éviter : (16x - 9)(16x + 9). On prend les nombres dont 16 et 9 sont les carrés, pas 16 et 9 eux-mêmes.
+
+*Indice.* De quoi 16x^{2} est-il le carré ? Et 9 ?
+
+**EX-F021-E-02** — entrainement, vrai_faux, 60 s
+
+Vrai ou faux : pour tout nombre x, x^{2} + 10x + 16 = (x + 4)^{2}.
+
+**Réponse :** False
+
+*Corrigé.* (1) 16 = 4^{2} : les deux carrés sont là, mais il faut vérifier le double produit. (2) (x + 4)^{2} = x^{2} + 2 × x × 4 + 16 = x^{2} + 8x + 16. (3) Le terme du milieu vaut 8x, pas 10x : l'égalité est fausse. (4) Contre-exemple avec x = 1 : 1 + 10 + 16 = 27, alors que (1 + 4)^{2} = 25.
+
+*Indice.* Développe (x + 4)^{2} et compare terme à terme.
+
+**EX-F021-M-01** — maitrise, qcm, 120 s
+
+Une seule de ces expressions ne peut pas se factoriser avec une identité remarquable. Laquelle ?
+
+- **a.** x^{2} - 1
+  <br>*Erreur visée :* L'élève ne voit pas que 1 = 1^{2} : x^{2} - 1 = (x - 1)(x + 1).
+- **b.** x^{2} + 25 ✅
+- **c.** 4x^{2} + 4x + 1
+  <br>*Erreur visée :* L'élève ne reconnaît pas 4x^{2} = (2x)^{2} : avec a = 2x et b = 1, le double produit vaut 4x, donc 4x^{2} + 4x + 1 = (2x + 1)^{2}.
+- **d.** x^{2} - 2x + 1
+  <br>*Erreur visée :* L'élève ne reconnaît pas l'identité (a - b)^{2} : 2 × x × 1 = 2x, donc x^{2} - 2x + 1 = (x - 1)^{2}.
+
+*Corrigé.* (1) x^{2} - 1 = x^{2} - 1^{2} = (x - 1)(x + 1). (2) x^{2} - 2x + 1 = (x - 1)^{2} et 4x^{2} + 4x + 1 = (2x + 1)^{2} : les doubles produits 2x et 4x sont les bons. (3) x^{2} + 25 est une somme de deux carrés. Aucune identité ne donne a^{2} + b^{2} : (x + 5)^{2} = x^{2} + 10x + 25 et (x - 5)(x + 5) = x^{2} - 25. (4) C'est donc x^{2} + 25 qui ne se factorise pas avec une identité remarquable.
+
+*Indice.* Pour chaque expression, cherche les carrés, puis regarde le signe ou le double produit.
+
+**EX-F021-M-02** — maitrise, texte, 150 s
+
+Factorise (x + 3)^{2} - 25, puis réduis chaque facteur.
+
+**Réponse :** (x − 2)(x + 8)
+
+*Corrigé.* (1) 25 = 5^{2} : l'expression est une différence de deux carrés, a^{2} - b^{2} avec a = x + 3 et b = 5. (2) a^{2} - b^{2} = (a - b)(a + b) : on obtient (x + 3 - 5)(x + 3 + 5). (3) On réduit chaque facteur : (x - 2)(x + 8). (4) Contrôle avec x = 0 : 3^{2} - 25 = -16, et (-2) × 8 = -16.
+
+*Indice.* Ici, a n'est pas x : c'est toute la parenthèse x + 3.
+
+---
+
+## `F031` · Résoudre une inéquation ax ⩾ b — 3e, difficulté 6
+
+*Savoir qu'une inéquation a en général une infinité de solutions, tester si un nombre en est solution, et résoudre ax ⩾ b, ax > b, ax ⩽ b ou ax < b en divisant les deux membres par a : le sens de l'inégalité est conservé si a est positif (3x ⩾ 12 donne x ⩾ 4) et changé si a est négatif (−2x ⩾ 6 donne x ⩽ −3), ce qu'on vérifie sur un exemple (−2 × (−4) = 8 et 8 ⩾ 6 : −4 est bien solution) ; solution fractionnaire (3x < 7 donne x < 7/3). L'erreur type est de garder le sens de l'inégalité en divisant par un nombre négatif, ou de confondre ⩾ et >. La résolution graphique relève de l'étape 9. Réponse : QCM entre inégalités solutions, vrai/faux (tel nombre est-il solution ?), ou un nombre (le plus petit entier solution) ; écrire l'inégalité « x ⩾ 4 » au clavier attend la saisie des inégalités (section 5). En attendant la saisie des expressions : QCM, vrai/faux ou nombre. Figure : aucune.*
+
+> « Résoudre analytiquement et graphiquement une inéquation du premier degré du type a𝑥 ⩾ b. » — *Cycle 4, classe de 3e, Nombres et calculs, Calcul littéral et algébrique, Objectifs d'apprentissage*
+
+**EX-F031-D-01** — decouverte, qcm, 45 s
+
+Quel nombre est solution de l'inéquation 2x > 9 ?
+
+- **a.** 4
+  <br>*Erreur visée :* L'élève arrondit 9 ÷ 2 = 4{,}5 à l'unité inférieure. Or 2 × 4 = 8, qui n'est pas supérieur à 9.
+- **b.** 5 ✅
+- **c.** 4,5
+  <br>*Erreur visée :* L'élève confond > et ≥slant : 2 × 4{,}5 = 9, et 9 n'est pas strictement supérieur à 9.
+- **d.** −6
+  <br>*Erreur visée :* L'élève compare les distances à zéro : il voit 12 plus grand que 9. Or 2 × (-6) = -12, et -12 < 9.
+
+*Corrigé.* (1) Un nombre est solution s'il rend l'inégalité vraie. On remplace x par chaque nombre. (2) 2 × 4 = 8 et 8 > 9 est faux. 2 × 4{,}5 = 9 et 9 > 9 est faux : 9 n'est pas strictement supérieur à 9. (3) 2 × (-6) = -12 et -12 > 9 est faux. 2 × 5 = 10 et 10 > 9 est vrai : 5 est solution. La bonne réponse est b. (4) 5 n'est pas la seule solution : 6, 7 ou 100 conviennent aussi. Une inéquation a en général une infinité de solutions, tous les nombres strictement supérieurs à 4,5.
+
+*Indice.* Remplace x par chaque nombre et compare le résultat à 9.
+
+**EX-F031-D-02** — decouverte, texte, 50 s
+
+Résous l'inéquation 6x ≥slant 42. Écris l'inégalité qui donne toutes les solutions (≥slant peut se taper >=).
+
+**Réponse :** x ⩾ 7
+
+*Corrigé.* (1) On divise les deux membres par 6, comme pour une équation. (2) 6 est positif : diviser par un nombre positif conserve le sens de l'inégalité. On obtient x ≥slant 7. (3) Vérification : 7 est solution car 6 × 7 = 42 et 42 ≥slant 42 ; 10 aussi (60 ≥slant 42) ; 5 ne l'est pas (30 < 42). (4) Les solutions sont tous les nombres supérieurs ou égaux à 7, pas seulement 7.
+
+*Indice.* Divise les deux membres par 6. Le nombre 6 est-il positif ?
+
+**EX-F031-E-01** — entrainement, qcm, 60 s
+
+Résous l'inéquation -5x < 30. Quelle inégalité donne toutes ses solutions ?
+
+- **a.** x < -6
+  <br>*Erreur visée :* L'élève garde le sens de l'inégalité en divisant par -5, qui est négatif. Or x = 0 est solution (0 < 30) et 0 < -6 est faux.
+- **b.** x > 6
+  <br>*Erreur visée :* L'élève change bien le sens, mais se trompe de signe : 30 ÷ (-5) = -6, pas 6. Or x = 0 est solution et 0 > 6 est faux.
+- **c.** x > -6 ✅
+- **d.** x > -1/6
+  <br>*Erreur visée :* L'élève divise dans le mauvais sens : -5 ÷ 30 = -1/6 au lieu de 30 ÷ (-5).
+
+*Corrigé.* (1) On divise les deux membres par -5 : 30 ÷ (-5) = -6. (2) -5 est négatif : diviser par un nombre négatif change le sens de l'inégalité. On obtient x > -6. (3) Vérification avec x = 0 : -5 × 0 = 0 et 0 < 30, vrai, et 0 > -6. Avec x = -10 : -5 × (-10) = 50 et 50 < 30 est faux, et -10 n'est pas supérieur à -6. (4) La bonne réponse est c.
+
+*Indice.* Teste un nombre simple, comme 0, dans l'inéquation de départ.
+
+**EX-F031-E-02** — entrainement, numerique, 45 s
+
+Quel est le plus petit nombre entier solution de l'inéquation 9x > 72 ?
+
+**Réponse :** 9
+
+*Corrigé.* (1) On divise les deux membres par 9, qui est positif : le sens est conservé. On obtient x > 8. (2) Les solutions sont les nombres strictement supérieurs à 8. Le nombre 8 lui-même n'est pas solution : 9 × 8 = 72 et 72 > 72 est faux. (3) Le plus petit entier strictement supérieur à 8 est 9. Vérification : 9 × 9 = 81 et 81 > 72.
+
+*Indice.* 8 est-il solution ? Regarde si l'inégalité est stricte.
+
+**EX-F031-M-01** — maitrise, numerique, 90 s
+
+Une association vend des gâteaux 2,40 € pièce. Elle veut récolter au moins 150 €. Combien de gâteaux doit-elle vendre au minimum ?
+
+**Réponse :** 63
+
+*Corrigé.* (1) On appelle x le nombre de gâteaux vendus. La recette est 2{,}4x euros, et on veut 2{,}4x ≥slant 150. (2) On divise par 2,4, qui est positif : le sens est conservé. 150 ÷ 2{,}4 = 62{,}5, donc x ≥slant 62{,}5. (3) Le nombre de gâteaux est entier : 62 ne suffit pas (62 × 2{,}4 = 148{,}8 €), 63 convient (63 × 2{,}4 = 151{,}2 €). (4) Il faut vendre au moins 63 gâteaux. Arrondir 62,5 à 62 donne une recette trop faible.
+
+*Indice.* Écris l'inéquation : recette ≥slant 150. Le nombre de gâteaux doit être entier.
+
+**EX-F031-M-02** — maitrise, texte, 75 s
+
+Résous l'inéquation -6x ≥slant 4. Écris l'inégalité qui donne toutes les solutions, sous forme fractionnaire (≤slant peut se taper <=).
+
+**Réponse :** x ⩽ −2/3
+
+*Corrigé.* (1) On divise les deux membres par -6 : 4 ÷ (-6) = -4/6 = -2/3. (2) -6 est négatif : le sens de l'inégalité change. On obtient x ≤slant -2/3. (3) Vérification avec x = -1, plus petit que -2/3 : -6 × (-1) = 6 et 6 ≥slant 4, vrai. Avec x = 0 : 0 ≥slant 4 est faux, et 0 est plus grand que -2/3. (4) Garder le sens donnerait x ≥slant -2/3, qui contient 0 : faux. Diviser -6 par 4 donnerait -3/2, la fraction inversée.
+
+*Indice.* Divise par -6. Que devient le sens de l'inégalité quand on divise par un nombre négatif ?
+
+---
+
+## `F067` · Factoriser par un facteur commun apparent ; simplifier un produit ou un quotient — 3e, difficulté 6
+
+*Repérer un facteur commun qui est lui-même une expression et factoriser : (x + 2)(3x − 1) + (x + 2)(x + 5) = (x + 2)(4x + 4) ; (2x + 1)(x − 3) − (2x + 1)(4 − x) = (2x + 1)(2x − 7), en mettant le second facteur entre parenthèses avant de le réduire ; simplifier un produit ou un quotient par des facteurs communs, jamais par des termes, quand le dénominateur n'est pas nul : 6x(x + 1) ÷ (3(x + 1)) = 2x ; 12x ÷ 4x = 3 ; (x + 6)/6 ne se simplifie pas. L'erreur type est de simplifier des termes ((x + 6)/6 = x + 1) ou d'oublier les parenthèses du second facteur. Réponse : QCM entre écritures factorisées ou simplifiées, vrai/faux pour une simplification, ou un coefficient (un nombre) ; écrire la forme factorisée au clavier attend la saisie des expressions avec contrainte de forme (section 5). En attendant la saisie des expressions : QCM ou coefficient. Figure : aucune.*
+
+> « Simplifier des expressions produits ou des rapports comportant des facteurs communs. » — *Cycle 4, classe de 3e, Nombres et calculs, Calcul littéral et algébrique, Objectifs d'apprentissage*
+> « Utiliser la double distributivité pour développer et factoriser des expressions dont le facteur est apparent. » — *Cycle 4, classe de 3e, Nombres et calculs, Calcul littéral et algébrique, Objectifs d'apprentissage*
+> « Développer et factoriser une expression simple. » — *Cycle 4, classe de 3e, Nombres et calculs, Calcul littéral et algébrique, Automatismes*
+
+**EX-F067-D-01** — decouverte, qcm, 90 s
+
+On donne A = (x + 3)(2x + 5) + (x + 3)(x - 1). Ses deux termes ont un facteur commun, (x + 3). Quelle est la forme factorisée de A ?
+
+- **a.** (x + 3)(2x + 5)(x - 1)
+  <br>*Erreur visée :* L'élève multiplie les deux facteurs restants. Or ka + kb = k(a + b) : une fois (x + 3) mis en facteur, les facteurs restants s'additionnent.
+- **b.** (x + 3)(3x + 6)
+  <br>*Erreur visée :* L'élève perd le signe moins de −1 : il calcule 5 + 1 au lieu de 5 - 1.
+- **c.** (x + 3)(3x + 4) ✅
+
+*Corrigé.* (1) A est une somme de deux produits qui ont le même facteur : A = (x + 3) × (2x + 5) + (x + 3) × (x - 1). (2) On utilise la distributivité dans l'autre sens, ka + kb = k(a + b), avec k = x + 3 : A = (x + 3)\left[(2x + 5) + (x - 1)\right]. (3) On réduit le second facteur : 2x + 5 + x - 1 = 3x + 4. Donc A = (x + 3)(3x + 4). (4) Contrôle avec x = 1 : 4 × 7 + 4 × 0 = 28, et 4 × 7 = 28.
+
+*Indice.* Écris A = (x + 3) × … + (x + 3) × … : que met-on dans la seconde parenthèse après factorisation ?
+
+**EX-F067-D-02** — decouverte, vrai_faux, 60 s
+
+Vrai ou faux : pour tout nombre x, 5x + 10/5 = x + 2.
+
+**Réponse :** True
+
+*Corrigé.* (1) On ne simplifie une fraction que par un facteur commun au numérateur et au dénominateur, jamais par un seul terme d'une somme. (2) Le numérateur se factorise par 5 : 5x + 10 = 5(x + 2). (3) Donc 5x + 10/5 = 5(x + 2)/5 = x + 2 : on simplifie par le facteur commun 5, la phrase est vraie. (4) Les deux termes sont divisés par 5. Ne diviser que 5x donnerait x + 10, ce qui est faux : pour x = 0, 10/5 = 2 et non 10.
+
+*Indice.* Le numérateur est une somme. Peux-tu l'écrire comme un produit dont un facteur est 5 ?
+
+**EX-F067-E-01** — entrainement, texte, 150 s
+
+Factorise B = (x - 2)(5x + 1) - (x - 2)(2x - 3). Réduis le second facteur.
+
+**Réponse :** (x − 2)(3x + 4)
+
+*Corrigé.* (1) Le facteur commun est (x - 2) : B = (x - 2)\left[(5x + 1) - (2x - 3)\right]. On garde les parenthèses : le signe moins porte sur tout 2x - 3. (2) (5x + 1) - (2x - 3) = 5x + 1 - 2x + 3 = 3x + 4. (3) Donc B = (x - 2)(3x + 4). (4) Contrôle avec x = 0 : (-2) × 1 - (-2) × (-3) = -2 - 6 = -8, et (-2) × 4 = -8.
+
+*Indice.* Mets (x - 2) en facteur, puis écris le reste entre crochets sans oublier les parenthèses de (2x - 3).
+
+**EX-F067-E-02** — entrainement, numerique, 90 s
+
+Pour x non nul et différent de -5, on considère le quotient 6x(x + 5)/2x(x + 5). Simplifie-le : quel nombre obtiens-tu ?
+
+**Réponse :** 3
+
+*Corrigé.* (1) Numérateur et dénominateur sont des produits. Ils ont deux facteurs communs, x et (x + 5), qui ne sont pas nuls ici. (2) 6x(x + 5)/2x(x + 5) = 6 × x × (x + 5)/2 × x × (x + 5) = 6/2 = 3. (3) Contrôle avec x = 1 : 6 × 1 × 6/2 × 1 × 6 = 36/12 = 3. (4) On a le droit de simplifier parce que x et x + 5 sont des facteurs du numérateur et du dénominateur, pas des termes d'une somme.
+
+*Indice.* Écris le numérateur et le dénominateur comme des produits de facteurs, puis cherche les facteurs communs.
+
+**EX-F067-M-01** — maitrise, qcm, 120 s
+
+Une seule de ces simplifications est juste pour toutes les valeurs de x qui n'annulent pas le dénominateur. Laquelle ?
+
+- **a.** x + 12/4 = x + 3
+  <br>*Erreur visée :* L'élève simplifie un terme du numérateur, 12, par le dénominateur. Or x + 12 est une somme : pour x = 4, le quotient vaut 4 et non 7.
+- **b.** 3x(x + 4)/3x = x + 4 ✅
+- **c.** \frac{x^{2} + 4}{x} = x + 4
+  <br>*Erreur visée :* L'élève simplifie x^{2} par x mais garde le 4 : il traite la somme comme un produit. Pour x = 2, le quotient vaut 4 et non 6.
+- **d.** 3x + 12/3 = x + 12
+  <br>*Erreur visée :* L'élève ne divise par 3 que le premier terme. Comme 3x + 12 = 3(x + 4), le quotient vaut x + 4.
+
+*Corrigé.* (1) On ne simplifie que par un facteur commun au numérateur et au dénominateur. (2) Dans 3x(x + 4)/3x, le numérateur est le produit de 3x par (x + 4) : on simplifie par 3x, non nul, et il reste x + 4. (3) Dans les trois autres, le numérateur est une somme : on ne peut pas y barrer un seul terme. Par exemple, 3x + 12/3 = 3(x + 4)/3 = x + 4, et non x + 12. (4) Un contre-exemple suffit à montrer qu'une égalité est fausse : pour x = 4, x + 12/4 vaut 4, mais x + 3 vaut 7.
+
+*Indice.* Pour chaque numérateur, demande-toi : est-ce un produit ou une somme ?
+
+**EX-F067-M-02** — maitrise, texte, 150 s
+
+Factorise C = (4x - 3)(x + 2) - (4x - 3). Réduis le second facteur.
+
+**Réponse :** (4x − 3)(x + 1)
+
+*Corrigé.* (1) Le second terme est (4x - 3) seul : il s'écrit (4x - 3) × 1. C'est ce facteur 1 qu'il ne faut pas oublier. (2) C = (4x - 3)(x + 2) - (4x - 3) × 1 = (4x - 3)\left[(x + 2) - 1\right]. (3) On réduit : x + 2 - 1 = x + 1. Donc C = (4x - 3)(x + 1). (4) Contrôle avec x = 1 : 1 × 3 - 1 = 2, et 1 × 2 = 2.
+
+*Indice.* Écris le second terme sous la forme d'un produit : (4x - 3) × …
+
+---
+
+## `F027` · Résoudre une équation produit nul — 3e, difficulté 6
+
+*Savoir qu'un produit est nul si et seulement si l'un au moins de ses facteurs est nul, et résoudre une équation écrite, ou mise après factorisation, sous la forme d'un produit nul : (x − 3)(2x + 5) = 0 a deux solutions, 3 et −5/2 ; x(x − 4) = 0 a pour solutions 0 et 4 ; x² − 9 = 0 s'écrit (x − 3)(x + 3) = 0 ; vérifier les solutions trouvées (analyse, puis synthèse). L'erreur type est de développer au lieu d'utiliser le produit nul, d'oublier une solution (0 dans x(x − 4) = 0) ou de résoudre x − 3 = 0 en x = −3. Réponse : les solutions demandées une par une (la plus petite, puis la plus grande : nombres ou fractions), ou leur nombre ; QCM pour l'ensemble des solutions ; la liste tapée en une fois attend la saisie des listes de solutions (section 5). Figure : aucune.*
+
+> « Résoudre une équation produit nul. » — *Cycle 4, classe de 3e, Nombres et calculs, Calcul littéral et algébrique, Objectifs d'apprentissage*
+> « Pratiquer un raisonnement par analyse-synthèse dans le cadre d'une résolution d'équation. » — *Cycle 4, classe de 3e, Nombres et calculs, Calcul littéral et algébrique, Objectifs d'apprentissage*
+
+**EX-F027-D-01** — decouverte, qcm, 40 s
+
+On multiplie deux nombres et le produit vaut 0. Que peut-on affirmer à coup sûr ?
+
+- **a.** Les deux nombres sont nuls.
+  <br>*Erreur visée :* L'élève croit qu'il faut deux facteurs nuls. Or 0 × 9 = 0 : un seul suffit.
+- **b.** L'un au moins des deux nombres est nul. ✅
+- **c.** Les deux nombres sont opposés.
+  <br>*Erreur visée :* L'élève confond avec la somme : deux opposés ont une somme nulle, 4 + (-4) = 0, mais leur produit 4 × (-4) = -16 n'est pas nul.
+- **d.** L'un des deux nombres vaut 1.
+  <br>*Erreur visée :* L'élève confond 0 et 1 : un facteur égal à 1 ne change pas l'autre, 1 × 6 = 6, il ne donne pas 0.
+
+*Corrigé.* (1) Si aucun des deux nombres n'est nul, leur produit n'est pas nul : par exemple 3 × (-2) = -6. (2) Un produit ne peut donc valoir 0 que si l'un au moins de ses facteurs vaut 0 : 0 × 7 = 0, (-5) × 0 = 0. (3) Les deux peuvent être nuls (0 × 0 = 0), mais ce n'est pas obligatoire : il suffit d'un seul. La bonne réponse est b. (4) C'est la règle du produit nul : un produit est nul si et seulement si l'un au moins de ses facteurs est nul.
+
+*Indice.* Écris plusieurs produits qui valent 0. Qu'ont-ils tous en commun ?
+
+**EX-F027-D-02** — decouverte, numerique, 40 s
+
+L'équation x(x - 7) = 0 a deux solutions. L'une d'elles est 7. Quelle est l'autre ?
+
+**Réponse :** 0
+
+*Corrigé.* (1) x(x - 7) est un produit de deux facteurs : x et x - 7. Il est nul si l'un au moins des facteurs est nul. (2) Premier facteur : x = 0. Second facteur : x - 7 = 0, donc x = 7. (3) L'autre solution est 0. Vérification : 0 × (0 - 7) = 0 × (-7) = 0. (4) Piège : le facteur x est un facteur comme les autres. L'oublier fait perdre la solution 0.
+
+*Indice.* Quels sont les deux facteurs du produit x(x - 7) ? Chacun peut valoir 0.
+
+**EX-F027-E-01** — entrainement, texte, 75 s
+
+Résous l'équation (2x - 3)(x + 5) = 0. Donne toutes ses solutions, séparées par un point-virgule.
+
+**Réponse :** −5 ; 3/2
+
+*Corrigé.* (1) C'est un produit nul : 2x - 3 = 0 ou x + 5 = 0. (2) 2x - 3 = 0 donne 2x = 3, puis x = 3/2 (on divise par 2, on ne retranche pas 2). (3) x + 5 = 0 donne x = -5 (on retranche 5 : le signe change par rapport au nombre écrit dans la parenthèse). (4) Vérification : (2 × 3/2 - 3)(3/2 + 5) = 0 × 13/2 = 0 et (2 × (-5) - 3)(-5 + 5) = (-13) × 0 = 0. (5) Les solutions sont -5 et 3/2 (soit 1,5).
+
+*Indice.* Écris deux petites équations, une par facteur, et résous chacune.
+
+**EX-F027-E-02** — entrainement, numerique, 75 s
+
+Résous l'équation 4x^{2} - 81 = 0 en factorisant d'abord le membre de gauche. Quelle est la solution négative ?
+
+**Réponse :** -4.5
+
+*Corrigé.* (1) 4x^{2} = (2x)^{2} et 81 = 9^{2} : on reconnaît a^{2} - b^{2} = (a - b)(a + b) avec a = 2x et b = 9. (2) Donc 4x^{2} - 81 = (2x - 9)(2x + 9), et l'équation devient (2x - 9)(2x + 9) = 0. (3) Produit nul : 2x - 9 = 0 donne x = 9/2 ; 2x + 9 = 0 donne 2x = -9, puis x = -9/2. (4) La solution négative est -9/2, soit −4,5. Vérification : 4 × (-4{,}5)^{2} - 81 = 4 × 20{,}25 - 81 = 81 - 81 = 0.
+
+*Indice.* 4x^{2} est le carré de quelle expression ? Et 81 ?
+
+**EX-F027-M-01** — maitrise, texte, 120 s
+
+Résous l'équation (x - 2)(3x + 1) - (x - 2)(x + 6) = 0 en commençant par factoriser. Donne toutes ses solutions, séparées par un point-virgule.
+
+**Réponse :** 2 ; 5/2
+
+*Corrigé.* (1) Le facteur (x - 2) est commun aux deux produits. On le met en facteur, en gardant le second facteur entre parenthèses : (x - 2)\big[(3x + 1) - (x + 6)\big]. (2) On réduit le crochet en changeant tous les signes de la parenthèse précédée de - : 3x + 1 - x - 6 = 2x - 5. (3) L'équation devient (x - 2)(2x - 5) = 0. Produit nul : x - 2 = 0 donne x = 2 ; 2x - 5 = 0 donne x = 5/2. (4) Vérification avec l'équation de départ, pour x = 5/2 : (1/2)(17/2) - (1/2)(17/2) = 0. Pour x = 2, chaque produit contient le facteur 0. (5) Les solutions sont 2 et 5/2 (soit 2,5). Développer au lieu de factoriser donne 2x^{2} - 9x + 10 = 0, que l'on ne sait pas résoudre directement.
+
+*Indice.* Quel facteur apparaît dans les deux produits ? Garde des parenthèses autour de (x + 6).
+
+**EX-F027-M-02** — maitrise, qcm, 90 s
+
+Quelle équation a pour solutions exactement -3 et 1/2 ?
+
+- **a.** (x - 3)(2x - 1) = 0
+  <br>*Erreur visée :* L'élève recopie le nombre -3 dans la parenthèse : x - 3 = 0 donne x = 3, pas -3.
+- **b.** (x + 3)(x - 2) = 0
+  <br>*Erreur visée :* L'élève confond 1/2 et 2 : x - 2 = 0 donne x = 2. Il faut 2x - 1 = 0 pour obtenir 1/2.
+- **c.** (x + 3)(2x - 1) = 0 ✅
+- **d.** (x + 3) + (2x - 1) = 0
+  <br>*Erreur visée :* L'élève applique la règle du produit nul à une somme. Or (x + 3) + (2x - 1) = 3x + 2, nul seulement pour x = -2/3.
+
+*Corrigé.* (1) On teste chaque proposition en résolvant son produit nul. (2) (x + 3)(2x - 1) = 0 : x + 3 = 0 donne x = -3 ; 2x - 1 = 0 donne x = 1/2. Ce sont bien les deux solutions voulues. (3) (x - 3)(2x - 1) = 0 a pour solutions 3 et 1/2 ; (x + 3)(x - 2) = 0 a pour solutions -3 et 2. (4) (x + 3) + (2x - 1) = 0 n'est pas un produit : elle s'écrit 3x + 2 = 0 et n'a qu'une solution, -2/3. La bonne réponse est c.
+
+*Indice.* Pour chaque équation, cherche quelle valeur de x annule chaque facteur.
+
+---
+
+## `F068` · Résoudre une équation x² = a — 3e, difficulté 6
+
+*Résoudre x² = a par le calcul : si a est positif, deux solutions, √a et −√a (x² = 49 donne 7 et −7 ; x² = 5 donne √5 ≈ 2,24 et −√5 ≈ −2,24) ; si a = 0, une seule solution, 0 ; si a est négatif, aucune solution, car un carré n'est jamais négatif ; s'y ramener (2x² − 8 = 10 donne x² = 9, donc x = 3 ou x = −3). La résolution graphique, avec la courbe de la fonction carré, relève de l'étape 9. L'erreur type est d'oublier la solution négative, ou de donner une racine d'un nombre négatif comme solution de x² = −4. Réponse : le nombre de solutions (un nombre ou QCM), puis chaque solution demandée à part (un nombre ; valeur approchée avec une tolérance et le rang d'arrondi dit dans l'énoncé) ; une solution exacte comme √5 se tape (« ±√5 », « racine de 5 ») ou se choisit (QCM). Figure : aucune.*
+
+> « Résoudre analytiquement et graphiquement des équations de la forme 𝑥2 = a. » — *Cycle 4, classe de 3e, Nombres et calculs, Racine carrée, Objectifs d'apprentissage*
+> « Donner les carrés des nombres entiers compris entre 0 et 12. » — *Cycle 4, classe de 3e, Nombres et calculs, Racine carrée, Automatismes*
+
+**EX-F068-D-01** — decouverte, qcm, 40 s
+
+Quels nombres x vérifient x^{2} = 64 ?
+
+- **a.** 8 seulement
+  <br>*Erreur visée :* L'élève oublie la solution négative : (-8)^{2} = 64 aussi.
+- **b.** 8 et −8 ✅
+- **c.** 32 seulement
+  <br>*Erreur visée :* L'élève confond le carré et le double : 32^{2} = 1 024, c'est 2 × 32 qui vaut 64.
+- **d.** 32 et −32
+  <br>*Erreur visée :* L'élève prend la moitié de 64 au lieu de la racine carrée : 32^{2} = 1 024, pas 64.
+
+*Corrigé.* (1) On cherche les nombres dont le carré vaut 64. On connaît 8^{2} = 64. (2) Un nombre négatif a aussi un carré positif : (-8)^{2} = (-8) × (-8) = 64. (3) Aucun autre nombre ne convient : les solutions sont \sqrt{64} = 8 et -\sqrt{64} = -8. La bonne réponse est b.
+
+*Indice.* Quel nombre positif a pour carré 64 ? Est-ce le seul nombre qui convient ?
+
+**EX-F068-D-02** — decouverte, numerique, 35 s
+
+Donne la solution négative de l'équation x^{2} = 121.
+
+**Réponse :** -11
+
+*Corrigé.* (1) 121 est un nombre positif, donc l'équation a deux solutions : \sqrt{121} et -\sqrt{121}. (2) 11^{2} = 121, donc \sqrt{121} = 11. (3) La solution négative est −11. Vérification : (-11)^{2} = (-11) × (-11) = 121.
+
+*Indice.* Quel entier a pour carré 121 ? Son opposé a le même carré.
+
+**EX-F068-E-01** — entrainement, texte, 70 s
+
+Résous x^{2} = 13. Donne les solutions arrondies au centième, séparées par un point-virgule.
+
+**Réponse :** −3,61 ; 3,61
+
+*Corrigé.* (1) 13 est positif : l'équation a deux solutions, \sqrt{13} et -\sqrt{13}. (2) Contrôle : 3^{2} = 9 et 4^{2} = 16, donc \sqrt{13} est entre 3 et 4. (3) La calculatrice donne \sqrt{13} \approx 3{,}6055. Au centième, le chiffre des millièmes est 5 : on arrondit à 3,61. (4) Les solutions sont environ 3,61 et −3,61. Diviser 13 par 2 (6,5) ne convient pas : 6{,}5^{2} = 42{,}25.
+
+*Indice.* Entre quels entiers consécutifs se trouve \sqrt{13} ? N'oublie pas la solution négative.
+
+**EX-F068-E-02** — entrainement, vrai_faux, 45 s
+
+Lina affirme : « L'équation x^{2} + 25 = 0 a deux solutions, 5 et -5. » A-t-elle raison ?
+
+**Réponse :** False
+
+*Corrigé.* (1) On se ramène à la forme x^{2} = a en retranchant 25 aux deux membres : x^{2} = -25. (2) Un carré n'est jamais négatif : 5^{2} = 25 et (-5)^{2} = 25, jamais -25. (3) L'équation n'a donc aucune solution : Lina a tort. Vérification : 5^{2} + 25 = 50, pas 0. (4) Pour comparer : x^{2} = 0 a une seule solution, 0, et x^{2} = 25 en a deux, 5 et -5.
+
+*Indice.* Remplace x par 5 dans x^{2} + 25 : obtiens-tu 0 ?
+
+**EX-F068-M-01** — maitrise, numerique, 90 s
+
+Je pense à un nombre négatif. J'élève ce nombre au carré, je multiplie le résultat par 3, puis j'ajoute 5 : j'obtiens 53. À quel nombre ai-je pensé ?
+
+**Réponse :** -4
+
+*Corrigé.* (1) On appelle x le nombre. Le programme donne 3x^{2} + 5, d'où l'équation 3x^{2} + 5 = 53. (2) On retranche 5 aux deux membres : 3x^{2} = 48. On divise par 3 : x^{2} = 16. (3) 16 est positif : x = 4 ou x = -4. Le nombre est négatif, c'est donc −4. (4) Vérification : (-4)^{2} = 16, 16 × 3 = 48, 48 + 5 = 53. Répondre -16 revient à oublier que l'on cherche x, pas x^{2}.
+
+*Indice.* Remonte le programme : enlève 5, divise par 3. Tu obtiens le carré du nombre.
+
+**EX-F068-M-02** — maitrise, texte, 70 s
+
+Résous 2x^{2} = 22. Donne les valeurs exactes des solutions, séparées par un point-virgule (√ peut s'écrire « racine de »).
+
+**Réponse :** √11 ; −√11
+
+*Corrigé.* (1) On divise les deux membres par 2 : x^{2} = 11. (2) 11 est positif mais n'est pas le carré d'un entier (3^{2} = 9, 4^{2} = 16) : les solutions s'écrivent avec une racine. (3) Les solutions exactes sont \sqrt{11} et -\sqrt{11}. Une valeur arrondie comme 3,32 n'est pas exacte : 3{,}32^{2} = 11{,}0224. (4) Piège : \sqrt{22} vient de l'oubli de la division par 2 ; vérification : 2 × (\sqrt{11})^{2} = 2 × 11 = 22.
+
+*Indice.* Commence par isoler x^{2}.
 
 ---

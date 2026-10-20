@@ -1,0 +1,199 @@
+[
+  {
+    "id": "EX-F003-D-01",
+    "skill_id": "F003",
+    "level": "decouverte",
+    "type": "qcm",
+    "statement": "Une boîte contient $x$ crayons. Lou a 2 boîtes pleines et 3 crayons en plus.\n\nQuelle expression donne le nombre de crayons de Lou ?",
+    "image": null,
+    "choices": [
+      {
+        "key": "a",
+        "text": "$5x$",
+        "misconception": "L'élève additionne 2 et 3 comme si les 3 crayons étaient 3 boîtes : 5x compte 5 boîtes pleines."
+      },
+      {
+        "key": "b",
+        "text": "$x^{2} + 3$",
+        "misconception": "L'élève confond le double et le carré : 2 boîtes de x crayons font x + x = 2x, et non x × x = x²."
+      },
+      {
+        "key": "c",
+        "text": "$2 + 3x$",
+        "misconception": "L'élève inverse les rôles de 2 et de 3 : 3x compterait 3 boîtes pleines, et 2 deux crayons seuls."
+      },
+      {
+        "key": "d",
+        "text": "$2x + 3$",
+        "misconception": null
+      }
+    ],
+    "answer": {
+      "value": "d"
+    },
+    "solution_steps": [
+      "Une boîte contient x crayons, donc 2 boîtes en contiennent $2 \\times x$, qu'on écrit $2x$ : le signe × se sous-entend devant une lettre.",
+      "On ajoute les 3 crayons en plus : $2x + 3$.",
+      "Contrôle avec 10 crayons par boîte : 2 × 10 + 3 = 23 crayons, soit bien 2 boîtes de 10 et 3 crayons."
+    ],
+    "hint": "Combien de crayons y a-t-il dans 2 boîtes de $x$ crayons ?",
+    "estimated_duration_s": 60,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, classe de 5e, Nombres et calculs, Calcul littéral et algébrique : « Produire des formules (double, triple, carré, successeur, prédécesseur, aire, périmètre, etc.). »"
+  },
+  {
+    "id": "EX-F003-D-02",
+    "skill_id": "F003",
+    "level": "decouverte",
+    "type": "vrai_faux",
+    "statement": "On note $c$ la longueur du côté d'un carré.\n\nZoé affirme : « L'aire de ce carré s'écrit $2c$. » A-t-elle raison ?",
+    "image": null,
+    "answer": {
+      "value": false
+    },
+    "solution_steps": [
+      "L'aire d'un carré de côté c est $c \\times c$, que l'on écrit $c^{2}$ (« c au carré »).",
+      "$2c$ veut dire $2 \\times c$, c'est-à-dire $c + c$ : c'est le double de c, pas son carré. Zoé a tort.",
+      "Exemple : pour un côté de 5, l'aire est 5 × 5 = 25, alors que 2 × 5 = 10."
+    ],
+    "hint": "Par quoi multiplie-t-on le côté pour obtenir l'aire d'un carré ?",
+    "estimated_duration_s": 45,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, classe de 5e, Nombres et calculs, Calcul littéral et algébrique : « Produire des formules (double, triple, carré, successeur, prédécesseur, aire, périmètre, etc.). »"
+  },
+  {
+    "id": "EX-F003-E-01",
+    "skill_id": "F003",
+    "level": "entrainement",
+    "type": "qcm",
+    "statement": "On ne connaît pas la longueur $x$ de ce rectangle.\n\nQuelle expression donne son périmètre ?",
+    "image": "figures/EX-F003-E-01",
+    "choices": [
+      {
+        "key": "a",
+        "text": "$7x$",
+        "misconception": "L'élève calcule l'aire (longueur × largeur) au lieu du périmètre, qui est la longueur du contour."
+      },
+      {
+        "key": "b",
+        "text": "$2 \\times (x + 7)$",
+        "misconception": null
+      },
+      {
+        "key": "c",
+        "text": "$2 \\times x + 7$",
+        "misconception": "L'élève oublie les parenthèses : il double la longueur mais ne compte la largeur qu'une fois, alors que le contour a deux largeurs."
+      },
+      {
+        "key": "d",
+        "text": "$x + 7$",
+        "misconception": "L'élève ne fait que la moitié du tour : une longueur et une largeur, au lieu de deux longueurs et deux largeurs."
+      }
+    ],
+    "answer": {
+      "value": "b"
+    },
+    "solution_steps": [
+      "Le périmètre est la longueur du contour : deux longueurs x et deux largeurs 7, soit $x + 7 + x + 7$.",
+      "$x + 7$ est un demi-tour ; on le double. On écrit $2 \\times (x + 7)$, avec des parenthèses pour doubler toute la somme.",
+      "Contrôle : si la longueur vaut 10, le contour mesure 10 + 7 + 10 + 7 = 34, et $2 \\times (10 + 7) = 2 \\times 17 = 34$."
+    ],
+    "hint": "Fais le tour du rectangle : combien de longueurs et combien de largeurs rencontres-tu ?",
+    "estimated_duration_s": 75,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, classe de 5e, Nombres et calculs, Calcul littéral et algébrique : « Produire des formules (double, triple, carré, successeur, prédécesseur, aire, périmètre, etc.). »"
+  },
+  {
+    "id": "EX-F003-E-02",
+    "skill_id": "F003",
+    "level": "entrainement",
+    "type": "texte",
+    "statement": "Un taxi fait payer 4 € au départ, puis 2 € par kilomètre parcouru.\n\nÉcris le prix, en euros, d'une course de $x$ kilomètres.",
+    "image": null,
+    "answer": {
+      "value": "2x + 4",
+      "forme": "expression",
+      "variables": [
+        "x"
+      ],
+      "unit": "€"
+    },
+    "solution_steps": [
+      "On paie 2 € pour chaque kilomètre : pour x kilomètres, $2 \\times x$ euros, qu'on écrit $2x$.",
+      "On ajoute les 4 € du départ : le prix est $2x + 4$ euros.",
+      "Contrôle : pour une course de 10 km, 2 × 10 + 4 = 24 €. Toute écriture égale est juste : $4 + 2x$, $2 \\times x + 4$.",
+      "Erreur à éviter : $4x + 2$ inverse les rôles, comme si un kilomètre coûtait 4 €."
+    ],
+    "hint": "Combien coûte une course de 3 kilomètres ? Fais le même calcul avec $x$.",
+    "estimated_duration_s": 75,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, classe de 5e, Nombres et calculs, Calcul littéral et algébrique : « Produire des formules (double, triple, carré, successeur, prédécesseur, aire, périmètre, etc.). »"
+  },
+  {
+    "id": "EX-F003-M-01",
+    "skill_id": "F003",
+    "level": "maitrise",
+    "type": "texte",
+    "statement": "La longueur d'un rectangle est le double de sa largeur. On note $x$ sa largeur.\n\nÉcris une expression de son périmètre en fonction de $x$.",
+    "image": null,
+    "answer": {
+      "value": "2 × (2x + x)",
+      "forme": "expression",
+      "variables": [
+        "x"
+      ]
+    },
+    "solution_steps": [
+      "La largeur vaut x ; la longueur est son double : $2x$.",
+      "Le périmètre est le tour du rectangle : deux longueurs et deux largeurs, soit $2 \\times (2x + x)$.",
+      "On peut aussi écrire $2x + x + 2x + x$. Ces écritures donnent toujours le même nombre : pour x = 5, $2 \\times (10 + 5) = 30$ et $10 + 5 + 10 + 5 = 30$.",
+      "Erreurs à éviter : $2x + x$ n'est qu'un demi-tour ; $2x \\times x$ est l'aire du rectangle, pas son périmètre."
+    ],
+    "hint": "Écris d'abord la longueur en fonction de $x$.",
+    "estimated_duration_s": 120,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, classe de 5e, Nombres et calculs, Calcul littéral et algébrique : « Produire des formules (double, triple, carré, successeur, prédécesseur, aire, périmètre, etc.). »"
+  },
+  {
+    "id": "EX-F003-M-02",
+    "skill_id": "F003",
+    "level": "maitrise",
+    "type": "qcm",
+    "statement": "On note $n$ un nombre.\n\nQuelle phrase traduit l'expression $2(n + 5)$ ?",
+    "image": null,
+    "choices": [
+      {
+        "key": "a",
+        "text": "Le double de $n$, augmenté de 5",
+        "misconception": "L'élève lit l'expression de gauche à droite sans voir les parenthèses : cette phrase s'écrit 2n + 5. Les parenthèses de 2(n + 5) disent qu'on double toute la somme."
+      },
+      {
+        "key": "b",
+        "text": "Le carré de la somme de $n$ et de 5",
+        "misconception": "L'élève confond le double et le carré : le carré de la somme s'écrirait $(n + 5)^{2}$, alors que le 2 placé devant la parenthèse multiplie la somme par 2."
+      },
+      {
+        "key": "c",
+        "text": "Le double de la somme de $n$ et de 5",
+        "misconception": null
+      },
+      {
+        "key": "d",
+        "text": "La somme de $n$ et du double de 5",
+        "misconception": "L'élève ne double que le 5 : cette phrase s'écrit $n + 2 \\times 5$, alors que $2(n + 5)$ double aussi n."
+      }
+    ],
+    "answer": {
+      "value": "c"
+    },
+    "solution_steps": [
+      "Dans $2(n + 5)$, le signe × est sous-entendu devant la parenthèse : c'est $2 \\times (n + 5)$.",
+      "On calcule d'abord la parenthèse, la somme de n et de 5, puis on la multiplie par 2 : c'est le double de cette somme.",
+      "Contrôle avec n = 3 : $2(3 + 5) = 2 \\times 8 = 16$, alors que « le double de 3, augmenté de 5 » donne 6 + 5 = 11."
+    ],
+    "hint": "Quelle opération fait-on en dernier dans $2(n + 5)$ ?",
+    "estimated_duration_s": 75,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, classe de 5e, Nombres et calculs, Calcul littéral et algébrique : « Produire des formules (double, triple, carré, successeur, prédécesseur, aire, périmètre, etc.). »"
+  }
+]

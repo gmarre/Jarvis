@@ -1,0 +1,158 @@
+[
+  {
+    "id": "EX-F066-D-01",
+    "skill_id": "F066",
+    "level": "decouverte",
+    "type": "qcm",
+    "statement": "Une séance coûte 9 €, ou 6 € avec une carte à 15 €. Quelle équation traduit « $x$ séances coûtent autant avec ou sans carte » ?",
+    "image": null,
+    "choices": [
+      {
+        "key": "a",
+        "text": "$9 + x = 15 + 6 + x$",
+        "misconception": "L'élève additionne le prix d'une séance et le nombre de séances : $x$ séances à 9 € coûtent $9 \\times x$, pas $9 + x$."
+      },
+      {
+        "key": "b",
+        "text": "$9x = 15x + 6$",
+        "misconception": "L'élève attache $x$ au prix de la carte, qui se paie une seule fois, au lieu du prix de chaque séance."
+      },
+      {
+        "key": "c",
+        "text": "$9x = 15 + 6x$",
+        "misconception": null
+      },
+      {
+        "key": "d",
+        "text": "$9x + 15 = 6x$",
+        "misconception": "L'élève place le prix de la carte du côté du tarif sans carte : la carte se paie seulement avec le tarif à 6 €."
+      }
+    ],
+    "answer": {
+      "value": "c"
+    },
+    "solution_steps": [
+      "Sans carte : $x$ séances à 9 € coûtent $9 \\times x = 9x$ euros.",
+      "Avec la carte : 15 € une seule fois, plus 6 € par séance, soit $15 + 6x$ euros.",
+      "On paie autant quand $9x = 15 + 6x$ : c'est la proposition c.",
+      "Résolution : on retranche $6x$, $3x = 15$, donc $x = 5$. Vérification : $9 \\times 5 = 45$ et $15 + 6 \\times 5 = 45$. Pour 5 séances, les deux tarifs coûtent 45 €."
+    ],
+    "hint": "Écris d'abord le prix payé sans carte pour $x$ séances, puis le prix avec la carte.",
+    "estimated_duration_s": 60,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, classe de 4e, Nombres et calculs, Calcul littéral et algébrique, Objectifs d'apprentissage : « Mettre en équation un problème et le résoudre à l'aide d'une équation du premier degré du type a𝑥 + b = c𝑥 + d. »"
+  },
+  {
+    "id": "EX-F066-D-02",
+    "skill_id": "F066",
+    "level": "decouverte",
+    "type": "numerique",
+    "statement": "Un rectangle a pour largeur $x$ cm et pour longueur $2x$ cm. Son périmètre de 42 cm donne $2(x + 2x) = 42$. Quelle est sa longueur ?",
+    "image": null,
+    "answer": {
+      "value": 14,
+      "unit": "cm"
+    },
+    "solution_steps": [
+      "On réduit : $x + 2x = 3x$, donc $2(x + 2x) = 2 \\times 3x = 6x$, et l'équation devient $6x = 42$.",
+      "On divise par 6 : $x = 7$. Attention, $x$ est la largeur, pas la longueur demandée.",
+      "La longueur est le double de la largeur : $2 \\times 7 = 14$ cm.",
+      "Vérification avec l'énoncé : le périmètre vaut $2 \\times (7 + 14) = 42$ cm. La longueur mesure 14 cm."
+    ],
+    "hint": "Résous l'équation, puis relis la question : que représente $x$ ?",
+    "estimated_duration_s": 75,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, classe de 4e, Nombres et calculs, Calcul littéral et algébrique, Objectifs d'apprentissage : « Mettre en équation un problème et le résoudre à l'aide d'une équation du premier degré du type a𝑥 + b = c𝑥 + d. »"
+  },
+  {
+    "id": "EX-F066-E-01",
+    "skill_id": "F066",
+    "level": "entrainement",
+    "type": "texte",
+    "statement": "Léo a 35 € et économise 5 € par semaine ; Mia a 89 € et dépense 4 € par semaine. Écris l'équation « après $x$ semaines, ils ont la même somme ».",
+    "image": null,
+    "answer": {
+      "value": "35 + 5x = 89 − 4x",
+      "forme": "equation"
+    },
+    "solution_steps": [
+      "Au bout de $x$ semaines, Léo a gagné $5x$ euros : il a $35 + 5x$ euros.",
+      "Mia a dépensé $4x$ euros : il lui reste $89 - 4x$ euros. Dépenser se traduit par une soustraction.",
+      "Ils ont la même somme quand $35 + 5x = 89 - 4x$.",
+      "Résolution : on ajoute $4x$, $35 + 9x = 89$ ; on retranche 35, $9x = 54$ ; donc $x = 6$. Au bout de 6 semaines, chacun a 65 € : $35 + 30 = 65$ et $89 - 24 = 65$."
+    ],
+    "hint": "Écris la somme de Léo, puis celle de Mia, au bout de $x$ semaines.",
+    "estimated_duration_s": 90,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, classe de 4e, Nombres et calculs, Calcul littéral et algébrique, Objectifs d'apprentissage : « Mettre en équation un problème et le résoudre à l'aide d'une équation du premier degré du type a𝑥 + b = c𝑥 + d. »"
+  },
+  {
+    "id": "EX-F066-E-02",
+    "skill_id": "F066",
+    "level": "entrainement",
+    "type": "numerique",
+    "statement": "Programme A : multiplier par 4, puis retrancher 3. Programme B : ajouter 6, puis multiplier par 2. Quel nombre donner aux deux programmes pour obtenir le même résultat ?",
+    "image": null,
+    "answer": {
+      "value": 7.5,
+      "accepted": [
+        "15/2"
+      ]
+    },
+    "solution_steps": [
+      "On note $x$ le nombre choisi. A donne $4x - 3$. B donne $(x + 6) \\times 2$, soit $2(x + 6) = 2x + 12$ : les parenthèses sont nécessaires, car on multiplie tout le résultat.",
+      "Même résultat : $4x - 3 = 2x + 12$.",
+      "On retranche $2x$ : $2x - 3 = 12$ ; on ajoute 3 : $2x = 15$ ; on divise par 2 : $x = 7{,}5$.",
+      "Vérification : A donne $4 \\times 7{,}5 - 3 = 27$ et B donne $(7{,}5 + 6) \\times 2 = 27$. Il faut choisir 7,5."
+    ],
+    "hint": "Écris le résultat de chaque programme pour un nombre $x$, sans oublier les parenthèses.",
+    "estimated_duration_s": 120,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, classe de 4e, Nombres et calculs, Calcul littéral et algébrique, Objectifs d'apprentissage : « Mettre en équation un problème et le résoudre à l'aide d'une équation du premier degré du type a𝑥 + b = c𝑥 + d. »"
+  },
+  {
+    "id": "EX-F066-M-01",
+    "skill_id": "F066",
+    "level": "maitrise",
+    "type": "numerique",
+    "statement": "La cuve A contient 150 L et perd 4 L par minute. La cuve B contient 30 L et reçoit 6 L par minute. Quand elles contiennent autant d'eau, combien de litres contient chacune ?",
+    "image": null,
+    "answer": {
+      "value": 102,
+      "unit": "L"
+    },
+    "solution_steps": [
+      "On choisit l'inconnue : $x$ est le nombre de minutes écoulées.",
+      "Après $x$ minutes, A contient $150 - 4x$ litres et B contient $30 + 6x$ litres. Même quantité : $150 - 4x = 30 + 6x$.",
+      "On ajoute $4x$ : $150 = 30 + 10x$ ; on retranche 30 : $120 = 10x$ ; on divise par 10 : $x = 12$.",
+      "Attention : 12 est un nombre de minutes, pas la réponse. La question porte sur la quantité d'eau : $150 - 4 \\times 12 = 102$ et $30 + 6 \\times 12 = 102$.",
+      "Après 12 minutes, chaque cuve contient 102 L."
+    ],
+    "hint": "Choisis comme inconnue le nombre de minutes, puis relis la question une fois l'équation résolue.",
+    "estimated_duration_s": 120,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, classe de 4e, Nombres et calculs, Calcul littéral et algébrique, Objectifs d'apprentissage : « Mettre en équation un problème et le résoudre à l'aide d'une équation du premier degré du type a𝑥 + b = c𝑥 + d. »"
+  },
+  {
+    "id": "EX-F066-M-02",
+    "skill_id": "F066",
+    "level": "maitrise",
+    "type": "texte",
+    "statement": "Un triangle a trois côtés de $x$ cm. Un pentagone a cinq côtés, chacun 4 cm plus court que ceux du triangle. Leurs périmètres sont égaux : écris l'équation.",
+    "image": null,
+    "answer": {
+      "value": "3x = 5(x − 4)",
+      "forme": "equation"
+    },
+    "solution_steps": [
+      "Périmètre du triangle : $x + x + x = 3x$.",
+      "Chaque côté du pentagone mesure $x - 4$ ; son périmètre est $5 \\times (x - 4) = 5(x - 4)$. Les parenthèses sont indispensables : $5x - 4$ ne retrancherait 4 qu'une seule fois.",
+      "Même périmètre : $3x = 5(x - 4)$.",
+      "Résolution : $3x = 5x - 20$ ; on retranche $5x$, $-2x = -20$ ; donc $x = 10$. Les côtés mesurent 10 cm et 6 cm, et les deux périmètres valent 30 cm."
+    ],
+    "hint": "Écris le périmètre de chaque figure en fonction de $x$.",
+    "estimated_duration_s": 90,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, classe de 4e, Nombres et calculs, Calcul littéral et algébrique, Objectifs d'apprentissage : « Mettre en équation un problème et le résoudre à l'aide d'une équation du premier degré du type a𝑥 + b = c𝑥 + d. »"
+  }
+]

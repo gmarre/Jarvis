@@ -1,0 +1,177 @@
+[
+  {
+    "id": "EX-F020-D-01",
+    "skill_id": "F020",
+    "level": "decouverte",
+    "type": "qcm",
+    "statement": "Le grand carré est partagé en deux carrés et deux rectangles. La figure n'est pas à l'échelle.\n\nQuelle expression est égale à l'aire du grand carré ?",
+    "image": "figures/EX-F020-D-01",
+    "choices": [
+      {
+        "key": "a",
+        "text": "$x^{2} + 16$",
+        "misconception": "L'élève élève chaque terme au carré, comme si $(a + b)^{2} = a^{2} + b^{2}$ : il ne compte que les deux carrés et oublie les deux rectangles."
+      },
+      {
+        "key": "b",
+        "text": "$x^{2} + 8x + 16$",
+        "misconception": null
+      },
+      {
+        "key": "c",
+        "text": "$x^{2} + 4x + 16$",
+        "misconception": "L'élève ne compte qu'un des deux rectangles de côtés $x$ et 4 : le double produit vaut $2 \\times x \\times 4 = 8x$."
+      },
+      {
+        "key": "d",
+        "text": "$4x + 16$",
+        "misconception": "L'élève calcule le périmètre du grand carré, $4 \\times (x + 4)$, au lieu de son aire."
+      }
+    ],
+    "answer": {
+      "value": "b"
+    },
+    "solution_steps": [
+      "Le côté du grand carré mesure $x + 4$ : son aire est $(x + 4)^{2}$.",
+      "Les quatre morceaux : un carré d'aire $x^{2}$, un carré d'aire $4^{2} = 16$, et deux rectangles d'aire $4 \\times x = 4x$ chacun.",
+      "Aire totale : $x^{2} + 4x + 4x + 16 = x^{2} + 8x + 16$.",
+      "C'est l'identité $(a + b)^{2} = a^{2} + 2ab + b^{2}$ avec $a = x$ et $b = 4$ : les deux rectangles forment le double produit $2ab = 8x$."
+    ],
+    "hint": "Calcule l'aire de chacun des quatre morceaux, puis additionne.",
+    "estimated_duration_s": 90,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, classe de 3e, Nombres et calculs, Calcul littéral et algébrique : « Manipuler les trois identités remarquables pour développer et factoriser »"
+  },
+  {
+    "id": "EX-F020-D-02",
+    "skill_id": "F020",
+    "level": "decouverte",
+    "type": "numerique",
+    "statement": "On développe $(x - 9)^{2}$ avec l'identité $(a - b)^{2} = a^{2} - 2ab + b^{2}$.\n\nQuel nombre manque dans $(x - 9)^{2} = x^{2} - \\ldots\\,x + 81$ ?",
+    "image": null,
+    "answer": {
+      "value": 18,
+      "accepted": [
+        "18x"
+      ]
+    },
+    "solution_steps": [
+      "Ici $a = x$ et $b = 9$.",
+      "Le double produit : $2ab = 2 \\times x \\times 9 = 18x$.",
+      "Donc $(x - 9)^{2} = x^{2} - 18x + 81$ : le nombre manquant est 18.",
+      "Contrôle avec $x = 10$ : $(10 - 9)^{2} = 1$, et $100 - 180 + 81 = 1$."
+    ],
+    "hint": "Le nombre manquant vient du double produit $2ab$. Que valent $a$ et $b$ ici ?",
+    "estimated_duration_s": 75,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, classe de 3e, Nombres et calculs, Calcul littéral et algébrique : « Manipuler les trois identités remarquables pour développer et factoriser »"
+  },
+  {
+    "id": "EX-F020-E-01",
+    "skill_id": "F020",
+    "level": "entrainement",
+    "type": "texte",
+    "statement": "Développe et réduis $(3x + 5)^{2}$ à l'aide d'une identité remarquable.",
+    "image": null,
+    "answer": {
+      "value": "9x² + 30x + 25",
+      "forme": "developpee"
+    },
+    "solution_steps": [
+      "On utilise $(a + b)^{2} = a^{2} + 2ab + b^{2}$ avec $a = 3x$ et $b = 5$.",
+      "$a^{2} = (3x)^{2} = 3x \\times 3x = 9x^{2}$ : le 3 est lui aussi élevé au carré.",
+      "$2ab = 2 \\times 3x \\times 5 = 30x$ et $b^{2} = 25$.",
+      "Donc $(3x + 5)^{2} = 9x^{2} + 30x + 25$. Contrôle avec $x = 1$ : $8^{2} = 64$, et $9 + 30 + 25 = 64$."
+    ],
+    "hint": "Repère $a$ et $b$. Attention : $(3x)^{2}$ n'est pas $3x^{2}$.",
+    "estimated_duration_s": 120,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, classe de 3e, Nombres et calculs, Calcul littéral et algébrique : « Manipuler les trois identités remarquables pour développer et factoriser »"
+  },
+  {
+    "id": "EX-F020-E-02",
+    "skill_id": "F020",
+    "level": "entrainement",
+    "type": "qcm",
+    "statement": "Quelle est la forme développée de $(2x - 7)(2x + 7)$ ?",
+    "image": null,
+    "choices": [
+      {
+        "key": "a",
+        "text": "$4x^{2} - 49$",
+        "misconception": null
+      },
+      {
+        "key": "b",
+        "text": "$2x^{2} - 49$",
+        "misconception": "L'élève élève $x$ au carré mais pas le coefficient 2 : $(2x)^{2} = 2x \\times 2x = 4x^{2}$, et non $2x^{2}$."
+      },
+      {
+        "key": "c",
+        "text": "$4x^{2} + 49$",
+        "misconception": "L'élève se trompe de signe : le dernier produit est $(-7) \\times 7 = -49$."
+      },
+      {
+        "key": "d",
+        "text": "$4x^{2} - 28x + 49$",
+        "misconception": "L'élève confond avec $(2x - 7)^{2}$. Ici les deux facteurs sont différents : $(a - b)(a + b) = a^{2} - b^{2}$, et les deux produits en $x$ s'annulent."
+      }
+    ],
+    "answer": {
+      "value": "a"
+    },
+    "solution_steps": [
+      "C'est l'identité $(a - b)(a + b) = a^{2} - b^{2}$, avec $a = 2x$ et $b = 7$.",
+      "$a^{2} = (2x)^{2} = 4x^{2}$ et $b^{2} = 49$.",
+      "Donc $(2x - 7)(2x + 7) = 4x^{2} - 49$.",
+      "Vérification par la double distributivité : $4x^{2} + 14x - 14x - 49$ ; les deux termes en $x$ s'annulent."
+    ],
+    "hint": "Les deux parenthèses ne diffèrent que par un signe : quelle identité reconnais-tu ?",
+    "estimated_duration_s": 75,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, classe de 3e, Nombres et calculs, Calcul littéral et algébrique : « Manipuler les trois identités remarquables pour développer et factoriser »"
+  },
+  {
+    "id": "EX-F020-M-01",
+    "skill_id": "F020",
+    "level": "maitrise",
+    "type": "numerique",
+    "statement": "Sans poser la multiplication, calcule $98^{2}$ en écrivant $98 = 100 - 2$ et en utilisant une identité remarquable.",
+    "image": null,
+    "answer": {
+      "value": 9604
+    },
+    "solution_steps": [
+      "$98^{2} = (100 - 2)^{2}$ : identité $(a - b)^{2} = a^{2} - 2ab + b^{2}$ avec $a = 100$ et $b = 2$.",
+      "$a^{2} = 10\\,000$ ; $2ab = 2 \\times 100 \\times 2 = 400$ ; $b^{2} = 4$.",
+      "$98^{2} = 10\\,000 - 400 + 4 = 9\\,604$.",
+      "Erreur à éviter : $100^{2} - 2^{2} = 9\\,996$, qui oublie le double produit."
+    ],
+    "hint": "Repère $a$ et $b$ dans $(100 - 2)^{2}$, puis calcule de tête $a^{2}$, $2ab$ et $b^{2}$.",
+    "estimated_duration_s": 90,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, classe de 3e, Nombres et calculs, Calcul littéral et algébrique : « Manipuler les trois identités remarquables pour développer et factoriser »"
+  },
+  {
+    "id": "EX-F020-M-02",
+    "skill_id": "F020",
+    "level": "maitrise",
+    "type": "texte",
+    "statement": "Un carré a pour côté $x + 5$, un autre $x - 5$, avec $x$ plus grand que 5.\n\nDe combien l'aire du premier dépasse-t-elle celle du second ? Donne une expression réduite.",
+    "image": null,
+    "answer": {
+      "value": "20x",
+      "forme": "reduite"
+    },
+    "solution_steps": [
+      "L'écart des aires est $(x + 5)^{2} - (x - 5)^{2}$.",
+      "$(x + 5)^{2} = x^{2} + 10x + 25$ et $(x - 5)^{2} = x^{2} - 10x + 25$.",
+      "On soustrait la seconde aire, écrite entre parenthèses, en changeant tous ses signes : $x^{2} + 10x + 25 - x^{2} + 10x - 25$.",
+      "On réduit : il reste $20x$. Contrôle avec $x = 6$ : $121 - 1 = 120$, et $20 \\times 6 = 120$."
+    ],
+    "hint": "Développe les deux carrés avec les identités, puis soustrais en gardant des parenthèses.",
+    "estimated_duration_s": 150,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, classe de 3e, Nombres et calculs, Calcul littéral et algébrique : « Manipuler les trois identités remarquables pour développer et factoriser »"
+  }
+]

@@ -1,0 +1,156 @@
+[
+  {
+    "id": "EX-F023-D-01",
+    "skill_id": "F023",
+    "level": "decouverte",
+    "type": "numerique",
+    "statement": "Lou avait $x$ billes. Elle en gagne 17 et en a alors 45 : $x + 17 = 45$. Combien de billes Lou avait-elle au départ ?",
+    "image": null,
+    "answer": {
+      "value": 28,
+      "accepted": [
+        "28 billes"
+      ]
+    },
+    "solution_steps": [
+      "Pour retrouver $x$, on fait l'opération inverse de « ajouter 17 » : on enlève 17.",
+      "$x = 45 - 17 = 28$.",
+      "Vérification : $28 + 17 = 45$. Lou avait 28 billes au départ.",
+      "Répondre 62, c'est ajouter 17 une seconde fois au lieu de l'enlever."
+    ],
+    "hint": "Quelle opération défait « ajouter 17 » ?",
+    "estimated_duration_s": 45,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, classe de 5e, Nombres et calculs, Calcul littéral et algébrique : « Résoudre des équations du type a𝑥 = c ou 𝑥 + b = c par des méthodes arithmétiques s'appuyant sur les opérations inverses. »"
+  },
+  {
+    "id": "EX-F023-D-02",
+    "skill_id": "F023",
+    "level": "decouverte",
+    "type": "qcm",
+    "statement": "Cinq places de cinéma identiques coûtent 42 euros en tout. Quelle équation permet de trouver le prix $x$ d'une place, en euros ?",
+    "image": null,
+    "choices": [
+      {
+        "key": "a",
+        "text": "$x + 5 = 42$",
+        "misconception": "L'élève traduit « cinq places » par une addition. Or 5 places identiques coûtent 5 fois le prix d'une place : $5 \\times x$."
+      },
+      {
+        "key": "b",
+        "text": "$42x = 5$",
+        "misconception": "L'élève inverse les rôles des nombres : c'est le prix d'une place qui est multiplié par 5, et c'est le total qui vaut 42."
+      },
+      {
+        "key": "c",
+        "text": "$x = 5 \\times 42$",
+        "misconception": "L'élève multiplie les deux nombres de l'énoncé : une place coûterait alors plus cher que les cinq places ensemble."
+      },
+      {
+        "key": "d",
+        "text": "$5x = 42$",
+        "misconception": null
+      }
+    ],
+    "answer": {
+      "value": "d"
+    },
+    "solution_steps": [
+      "Une place coûte $x$ euros ; cinq places coûtent $5 \\times x$, c'est-à-dire $5x$ euros.",
+      "Cette dépense vaut 42 euros : l'équation est $5x = 42$.",
+      "On la résout par l'opération inverse : $x = 42 \\div 5 = 8{,}4$, soit 8,40 euros la place. La bonne réponse est d."
+    ],
+    "hint": "Cinq places identiques coûtent 5 fois le prix d'une place.",
+    "estimated_duration_s": 60,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, classe de 5e, Nombres et calculs, Calcul littéral et algébrique : « Modéliser des problèmes relevant des opérations à trous par des équations du type a𝑥 = c ou 𝑥 + b = c . »"
+  },
+  {
+    "id": "EX-F023-E-01",
+    "skill_id": "F023",
+    "level": "entrainement",
+    "type": "texte",
+    "statement": "Un ruban mesure le triple de la longueur $x$ d'un crayon, soit 51 cm. Écris une équation qui traduit cette phrase.",
+    "image": null,
+    "answer": {
+      "value": "3x = 51",
+      "forme": "equation",
+      "unit": "cm"
+    },
+    "solution_steps": [
+      "Le triple de $x$ s'écrit $3 \\times x$, c'est-à-dire $3x$.",
+      "Ce triple vaut 51 : l'équation est $3x = 51$.",
+      "On peut ensuite la résoudre par l'opération inverse : $x = 51 \\div 3 = 17$, le crayon mesure 17 cm. Mais la question demandait l'équation, pas sa solution."
+    ],
+    "hint": "Commence par écrire « le triple de $x$ » avec la lettre $x$.",
+    "estimated_duration_s": 75,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, classe de 5e, Nombres et calculs, Calcul littéral et algébrique : « Modéliser des problèmes relevant des opérations à trous par des équations du type a𝑥 = c ou 𝑥 + b = c . »"
+  },
+  {
+    "id": "EX-F023-E-02",
+    "skill_id": "F023",
+    "level": "entrainement",
+    "type": "numerique",
+    "statement": "2,5 kg de pommes coûtent 9 euros. On note $x$ le prix d'un kilogramme, en euros : $2{,}5x = 9$. Résous cette équation.",
+    "image": null,
+    "answer": {
+      "value": 3.6,
+      "unit": "€"
+    },
+    "solution_steps": [
+      "On cherche le nombre qui, multiplié par 2,5, donne 9 : on fait l'opération inverse, $x = 9 \\div 2{,}5$.",
+      "Pour diviser par 2,5, on multiplie les deux nombres par 10 : $9 \\div 2{,}5 = 90 \\div 25 = 3{,}6$.",
+      "Vérification : $2{,}5 \\times 3{,}6 = 9$. Le kilogramme de pommes coûte 3,60 euros.",
+      "Soustraire ($9 - 2{,}5 = 6{,}5$) n'est pas l'opération inverse d'une multiplication."
+    ],
+    "hint": "Quelle opération défait « multiplier par 2,5 » ?",
+    "estimated_duration_s": 90,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, classe de 5e, Nombres et calculs, Calcul littéral et algébrique : « Résoudre des équations du type a𝑥 = c ou 𝑥 + b = c par des méthodes arithmétiques s'appuyant sur les opérations inverses. »"
+  },
+  {
+    "id": "EX-F023-M-01",
+    "skill_id": "F023",
+    "level": "maitrise",
+    "type": "numerique",
+    "statement": "Le matin, il faisait $x$ °C. La température a monté de 7 degrés, et il fait 3 °C à midi : $x + 7 = 3$. Quelle température faisait-il le matin ?",
+    "image": null,
+    "answer": {
+      "value": -4,
+      "unit": "°C"
+    },
+    "solution_steps": [
+      "L'opération inverse de « ajouter 7 » est « soustraire 7 » : $x = 3 - 7$.",
+      "$3 - 7 = -4$ : en partant de 3 et en descendant de 7, on passe sous zéro.",
+      "Vérification : $-4 + 7 = 3$. Il faisait −4 °C le matin.",
+      "Répondre 10, c'est appliquer l'opération de l'énoncé ($3 + 7$) au lieu de son inverse."
+    ],
+    "hint": "Quelle opération défait « ajouter 7 » ? Le résultat peut être négatif.",
+    "estimated_duration_s": 75,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, classe de 5e, Nombres et calculs, Calcul littéral et algébrique : « Résoudre des équations du type a𝑥 = c ou 𝑥 + b = c par des méthodes arithmétiques s'appuyant sur les opérations inverses. »"
+  },
+  {
+    "id": "EX-F023-M-02",
+    "skill_id": "F023",
+    "level": "maitrise",
+    "type": "texte",
+    "statement": "Sept amis se partagent 3 pizzas identiques à parts égales. On note $x$ la part de chacun, en pizzas : $7x = 3$. Donne la valeur exacte de $x$, sous forme de fraction.",
+    "image": null,
+    "answer": {
+      "value": "3/7",
+      "forme": "solutions"
+    },
+    "solution_steps": [
+      "L'opération inverse de « multiplier par 7 » est « diviser par 7 » : $x = 3 \\div 7$.",
+      "Le quotient de 3 par 7 s'écrit $\\frac{3}{7}$ : c'est sa valeur exacte, car la division décimale de 3 par 7 ne s'arrête pas.",
+      "Vérification : $7 \\times \\frac{3}{7} = 3$.",
+      "Chacun reçoit $\\frac{3}{7}$ de pizza, moins d'une pizza entière : normal, il y a moins de pizzas que d'amis. Répondre $\\frac{7}{3}$, c'est diviser dans le mauvais sens."
+    ],
+    "hint": "On partage 3 pizzas en 7 : quel nombre divise-t-on par quel autre ?",
+    "estimated_duration_s": 90,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, classe de 5e, Nombres et calculs, Calcul littéral et algébrique : « Résoudre des équations du type a𝑥 = c ou 𝑥 + b = c par des méthodes arithmétiques s'appuyant sur les opérations inverses. »"
+  }
+]

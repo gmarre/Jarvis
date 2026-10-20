@@ -1,0 +1,169 @@
+[
+  {
+    "id": "EX-F021-D-01",
+    "skill_id": "F021",
+    "level": "decouverte",
+    "type": "numerique",
+    "statement": "81 est le carré d'un nombre entier positif. Complète avec ce nombre, le même dans les deux parenthèses :\n\n$x^{2} - 81 = (x - \\ldots)(x + \\ldots)$",
+    "image": null,
+    "answer": {
+      "value": 9
+    },
+    "solution_steps": [
+      "$81 = 9^{2}$ : l'expression s'écrit $x^{2} - 9^{2}$, une différence de deux carrés.",
+      "Identité $a^{2} - b^{2} = (a - b)(a + b)$ avec $a = x$ et $b = 9$.",
+      "Donc $x^{2} - 81 = (x - 9)(x + 9)$ : le nombre manquant est 9.",
+      "Contrôle en développant : $(x - 9)(x + 9) = x^{2} + 9x - 9x - 81 = x^{2} - 81$."
+    ],
+    "hint": "Quel nombre, multiplié par lui-même, donne 81 ?",
+    "estimated_duration_s": 60,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, classe de 3e, Nombres et calculs, Calcul littéral et algébrique : « Manipuler les trois identités remarquables pour développer et factoriser »"
+  },
+  {
+    "id": "EX-F021-D-02",
+    "skill_id": "F021",
+    "level": "decouverte",
+    "type": "qcm",
+    "statement": "On veut factoriser $x^{2} + 22x + 121$. On remarque que $121 = 11^{2}$.\n\nQuelle est la forme factorisée ?",
+    "image": null,
+    "choices": [
+      {
+        "key": "a",
+        "text": "$x(x + 22) + 121$",
+        "misconception": "L'élève met $x$ en facteur dans les deux premiers termes seulement : le résultat est une somme, pas un produit."
+      },
+      {
+        "key": "b",
+        "text": "$(x + 11)(x - 11)$",
+        "misconception": "L'élève applique l'identité $a^{2} - b^{2}$ sans voir qu'il n'y a pas de différence : $(x + 11)(x - 11) = x^{2} - 121$."
+      },
+      {
+        "key": "c",
+        "text": "$(x + 11)^{2}$",
+        "misconception": null
+      }
+    ],
+    "answer": {
+      "value": "c"
+    },
+    "solution_steps": [
+      "On cherche la forme $a^{2} + 2ab + b^{2}$ : $x^{2}$ est le carré de $x$ et 121 celui de 11, donc $a = x$ et $b = 11$.",
+      "On vérifie le double produit : $2 \\times x \\times 11 = 22x$. C'est bien le terme du milieu.",
+      "Donc $x^{2} + 22x + 121 = (x + 11)^{2}$.",
+      "Contrôle avec $x = 1$ : $1 + 22 + 121 = 144$, et $(1 + 11)^{2} = 144$."
+    ],
+    "hint": "Trois termes, dont deux carrés : quelle identité a trois termes ? Vérifie le double produit.",
+    "estimated_duration_s": 75,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, classe de 3e, Nombres et calculs, Calcul littéral et algébrique : « Manipuler les trois identités remarquables pour développer et factoriser »"
+  },
+  {
+    "id": "EX-F021-E-01",
+    "skill_id": "F021",
+    "level": "entrainement",
+    "type": "texte",
+    "statement": "Factorise $16x^{2} - 9$ à l'aide d'une identité remarquable.",
+    "image": null,
+    "answer": {
+      "value": "(4x − 3)(4x + 3)",
+      "forme": "factorisee"
+    },
+    "solution_steps": [
+      "$16x^{2} = (4x)^{2}$ et $9 = 3^{2}$ : c'est une différence de deux carrés, $a^{2} - b^{2}$ avec $a = 4x$ et $b = 3$.",
+      "$a^{2} - b^{2} = (a - b)(a + b)$, donc $16x^{2} - 9 = (4x - 3)(4x + 3)$.",
+      "Contrôle en développant : $(4x - 3)(4x + 3) = 16x^{2} + 12x - 12x - 9 = 16x^{2} - 9$.",
+      "Erreur à éviter : $(16x - 9)(16x + 9)$. On prend les nombres dont 16 et 9 sont les carrés, pas 16 et 9 eux-mêmes."
+    ],
+    "hint": "De quoi $16x^{2}$ est-il le carré ? Et 9 ?",
+    "estimated_duration_s": 120,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, classe de 3e, Nombres et calculs, Calcul littéral et algébrique : « Manipuler les trois identités remarquables pour développer et factoriser »"
+  },
+  {
+    "id": "EX-F021-E-02",
+    "skill_id": "F021",
+    "level": "entrainement",
+    "type": "vrai_faux",
+    "statement": "Vrai ou faux : pour tout nombre $x$, $x^{2} + 10x + 16 = (x + 4)^{2}$.",
+    "image": null,
+    "answer": {
+      "value": false
+    },
+    "solution_steps": [
+      "$16 = 4^{2}$ : les deux carrés sont là, mais il faut vérifier le double produit.",
+      "$(x + 4)^{2} = x^{2} + 2 \\times x \\times 4 + 16 = x^{2} + 8x + 16$.",
+      "Le terme du milieu vaut $8x$, pas $10x$ : l'égalité est **fausse**.",
+      "Contre-exemple avec $x = 1$ : $1 + 10 + 16 = 27$, alors que $(1 + 4)^{2} = 25$."
+    ],
+    "hint": "Développe $(x + 4)^{2}$ et compare terme à terme.",
+    "estimated_duration_s": 60,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, classe de 3e, Nombres et calculs, Calcul littéral et algébrique : « Manipuler les trois identités remarquables pour développer et factoriser »"
+  },
+  {
+    "id": "EX-F021-M-01",
+    "skill_id": "F021",
+    "level": "maitrise",
+    "type": "qcm",
+    "statement": "Une seule de ces expressions ne peut pas se factoriser avec une identité remarquable. Laquelle ?",
+    "image": null,
+    "choices": [
+      {
+        "key": "a",
+        "text": "$x^{2} - 1$",
+        "misconception": "L'élève ne voit pas que $1 = 1^{2}$ : $x^{2} - 1 = (x - 1)(x + 1)$."
+      },
+      {
+        "key": "b",
+        "text": "$x^{2} + 25$",
+        "misconception": null
+      },
+      {
+        "key": "c",
+        "text": "$4x^{2} + 4x + 1$",
+        "misconception": "L'élève ne reconnaît pas $4x^{2} = (2x)^{2}$ : avec $a = 2x$ et $b = 1$, le double produit vaut $4x$, donc $4x^{2} + 4x + 1 = (2x + 1)^{2}$."
+      },
+      {
+        "key": "d",
+        "text": "$x^{2} - 2x + 1$",
+        "misconception": "L'élève ne reconnaît pas l'identité $(a - b)^{2}$ : $2 \\times x \\times 1 = 2x$, donc $x^{2} - 2x + 1 = (x - 1)^{2}$."
+      }
+    ],
+    "answer": {
+      "value": "b"
+    },
+    "solution_steps": [
+      "$x^{2} - 1 = x^{2} - 1^{2} = (x - 1)(x + 1)$.",
+      "$x^{2} - 2x + 1 = (x - 1)^{2}$ et $4x^{2} + 4x + 1 = (2x + 1)^{2}$ : les doubles produits $2x$ et $4x$ sont les bons.",
+      "$x^{2} + 25$ est une somme de deux carrés. Aucune identité ne donne $a^{2} + b^{2}$ : $(x + 5)^{2} = x^{2} + 10x + 25$ et $(x - 5)(x + 5) = x^{2} - 25$.",
+      "C'est donc $x^{2} + 25$ qui ne se factorise pas avec une identité remarquable."
+    ],
+    "hint": "Pour chaque expression, cherche les carrés, puis regarde le signe ou le double produit.",
+    "estimated_duration_s": 120,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, classe de 3e, Nombres et calculs, Calcul littéral et algébrique : « Manipuler les trois identités remarquables pour développer et factoriser »"
+  },
+  {
+    "id": "EX-F021-M-02",
+    "skill_id": "F021",
+    "level": "maitrise",
+    "type": "texte",
+    "statement": "Factorise $(x + 3)^{2} - 25$, puis réduis chaque facteur.",
+    "image": null,
+    "answer": {
+      "value": "(x − 2)(x + 8)",
+      "forme": "factorisee"
+    },
+    "solution_steps": [
+      "$25 = 5^{2}$ : l'expression est une différence de deux carrés, $a^{2} - b^{2}$ avec $a = x + 3$ et $b = 5$.",
+      "$a^{2} - b^{2} = (a - b)(a + b)$ : on obtient $(x + 3 - 5)(x + 3 + 5)$.",
+      "On réduit chaque facteur : $(x - 2)(x + 8)$.",
+      "Contrôle avec $x = 0$ : $3^{2} - 25 = -16$, et $(-2) \\times 8 = -16$."
+    ],
+    "hint": "Ici, $a$ n'est pas $x$ : c'est toute la parenthèse $x + 3$.",
+    "estimated_duration_s": 150,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, classe de 3e, Nombres et calculs, Calcul littéral et algébrique : « Manipuler les trois identités remarquables pour développer et factoriser »"
+  }
+]

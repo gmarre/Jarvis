@@ -1,0 +1,144 @@
+[
+  {
+    "id": "EX-F022-D-01",
+    "skill_id": "F022",
+    "level": "decouverte",
+    "type": "numerique",
+    "statement": "Pour savoir si l'égalité $5x + 2 = 3x + 8$ est vraie quand $x = 3$, on calcule ses deux membres séparément. Que vaut le membre de gauche, $5x + 2$, pour $x = 3$ ?",
+    "image": null,
+    "answer": {
+      "value": 17
+    },
+    "solution_steps": [
+      "On remplace $x$ par 3 en rétablissant le signe × caché : $5x$ veut dire $5 \\times x$, et non le nombre 53.",
+      "On multiplie avant d'ajouter : $5 \\times 3 + 2 = 15 + 2 = 17$.",
+      "On calcule de même le membre de droite : $3 \\times 3 + 8 = 9 + 8 = 17$.",
+      "Les deux membres valent 17 : l'égalité est vraie pour $x = 3$."
+    ],
+    "hint": "Remplace $x$ par 3 et rétablis le signe × : $5x$, c'est $5 \\times x$.",
+    "estimated_duration_s": 60,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, classe de 5e, Nombres et calculs, Calcul littéral et algébrique : « Tester si une égalité entre expressions algébriques comportant une variable est vraie ou fausse. »"
+  },
+  {
+    "id": "EX-F022-D-02",
+    "skill_id": "F022",
+    "level": "decouverte",
+    "type": "vrai_faux",
+    "statement": "Affirmation : l'égalité $4x + 3 = 2x + 9$ est vraie pour $x = 3$. Vrai ou faux ?",
+    "image": null,
+    "answer": {
+      "value": true
+    },
+    "solution_steps": [
+      "Membre de gauche pour $x = 3$ : $4 \\times 3 + 3 = 12 + 3 = 15$.",
+      "Membre de droite pour $x = 3$ : $2 \\times 3 + 9 = 6 + 9 = 15$.",
+      "Les deux membres sont égaux : l'affirmation est vraie.",
+      "Pour $x = 2$, elle serait fausse : $4 \\times 2 + 3 = 11$ et $2 \\times 2 + 9 = 13$. Une égalité qui contient une lettre peut être vraie pour une valeur et fausse pour une autre."
+    ],
+    "hint": "Calcule chaque membre pour $x = 3$, puis compare les deux résultats.",
+    "estimated_duration_s": 60,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, classe de 5e, Nombres et calculs, Calcul littéral et algébrique : « Tester si une égalité entre expressions algébriques comportant une variable est vraie ou fausse. »"
+  },
+  {
+    "id": "EX-F022-E-01",
+    "skill_id": "F022",
+    "level": "entrainement",
+    "type": "qcm",
+    "statement": "Tom affirme : « Pour tout nombre entier $n$, $3n$ est plus grand que $n + 5$. » Quelle valeur de $n$ montre qu'il a tort ?",
+    "image": null,
+    "choices": [
+      {
+        "key": "a",
+        "text": "$n = 10$",
+        "misconception": "L'élève choisit une valeur pour laquelle l'affirmation marche : $3 \\times 10 = 30$ est plus grand que $10 + 5 = 15$. Un exemple qui marche ne montre pas que Tom a tort."
+      },
+      {
+        "key": "b",
+        "text": "$n = 3$",
+        "misconception": "L'élève lit $3n$ comme $3 + n$ : il trouve 6, plus petit que $3 + 5 = 8$. Or $3n = 3 \\times 3 = 9$, plus grand que 8 : pour $n = 3$, Tom a raison."
+      },
+      {
+        "key": "c",
+        "text": "$n = 2$",
+        "misconception": null
+      }
+    ],
+    "answer": {
+      "value": "c"
+    },
+    "solution_steps": [
+      "Pour montrer qu'une affirmation « pour tout nombre » est fausse, un seul contre-exemple suffit : une valeur de $n$ pour laquelle elle ne marche pas.",
+      "Pour $n = 2$ : $3n = 3 \\times 2 = 6$ et $n + 5 = 2 + 5 = 7$. 6 n'est pas plus grand que 7 : Tom a tort.",
+      "Pour $n = 10$ (30 et 15) et pour $n = 3$ (9 et 8), l'affirmation est vraie : ces valeurs ne la contredisent pas.",
+      "La bonne réponse est c."
+    ],
+    "hint": "Calcule $3n$ et $n + 5$ pour chaque valeur proposée, puis compare.",
+    "estimated_duration_s": 75,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, classe de 5e, Nombres et calculs, Calcul littéral et algébrique : « Utiliser un contre-exemple pour démontrer qu'une assertion est fausse. »"
+  },
+  {
+    "id": "EX-F022-E-02",
+    "skill_id": "F022",
+    "level": "entrainement",
+    "type": "numerique",
+    "statement": "On veut vérifier que l'égalité $4x + 1 = 2x + 4$ est vraie pour $x = 1{,}5$. Calcule ses deux membres pour cette valeur. Quelle valeur commune trouves-tu ?",
+    "image": null,
+    "answer": {
+      "value": 7
+    },
+    "solution_steps": [
+      "Membre de gauche : $4 \\times 1{,}5 + 1 = 6 + 1 = 7$.",
+      "Membre de droite : $2 \\times 1{,}5 + 4 = 3 + 4 = 7$.",
+      "Les deux membres valent 7 : l'égalité est vraie pour $x = 1{,}5$."
+    ],
+    "hint": "Rétablis les signes × : $4x$, c'est $4 \\times x$. Combien font 4 fois 1,5 ?",
+    "estimated_duration_s": 75,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, classe de 5e, Nombres et calculs, Calcul littéral et algébrique : « Tester si une égalité entre expressions algébriques comportant une variable est vraie ou fausse. »"
+  },
+  {
+    "id": "EX-F022-M-01",
+    "skill_id": "F022",
+    "level": "maitrise",
+    "type": "vrai_faux",
+    "statement": "Inès teste l'égalité $x^{2} + 6 = 5x$ : elle est vraie pour $x = 2$ et pour $x = 3$. Inès conclut qu'elle est vraie pour tous les nombres. A-t-elle raison ?",
+    "image": null,
+    "answer": {
+      "value": false
+    },
+    "solution_steps": [
+      "Les deux essais d'Inès sont justes : pour $x = 2$, $2^{2} + 6 = 10$ et $5 \\times 2 = 10$ ; pour $x = 3$, $3^{2} + 6 = 15$ et $5 \\times 3 = 15$.",
+      "Essayons $x = 4$ : $4^{2} + 6 = 16 + 6 = 22$, mais $5 \\times 4 = 20$. Les deux membres sont différents.",
+      "$x = 4$ est un contre-exemple : l'égalité n'est pas vraie pour tous les nombres.",
+      "Deux essais réussis ne démontrent pas qu'une égalité est toujours vraie ; un seul contre-exemple suffit à montrer qu'elle ne l'est pas. Inès a tort."
+    ],
+    "hint": "Essaie une autre valeur que 2 et 3, par exemple 4.",
+    "estimated_duration_s": 90,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, classe de 5e, Nombres et calculs, Calcul littéral et algébrique : « Utiliser un contre-exemple pour démontrer qu'une assertion est fausse. »"
+  },
+  {
+    "id": "EX-F022-M-02",
+    "skill_id": "F022",
+    "level": "maitrise",
+    "type": "numerique",
+    "statement": "Noé vérifie que $n^{2}$ est plus petit que $4n + 6$ pour tous les entiers $n$ de 1 à 5. Il en conclut que c'est vrai pour tout entier positif $n$. Quel est le plus petit entier positif qui le contredit ?",
+    "image": null,
+    "answer": {
+      "value": 6
+    },
+    "solution_steps": [
+      "On continue les essais de Noé au-delà de 5, en calculant les deux expressions.",
+      "Pour $n = 5$ : $5^{2} = 25$ et $4 \\times 5 + 6 = 26$ ; 25 est bien plus petit que 26.",
+      "Pour $n = 6$ : $6^{2} = 36$ et $4 \\times 6 + 6 = 30$ ; 36 n'est pas plus petit que 30.",
+      "Le plus petit entier qui contredit Noé est 6 : cinq essais réussis ne suffisaient pas à démontrer sa conclusion."
+    ],
+    "hint": "Continue les essais de Noé au-delà de 5 : calcule $n^{2}$ et $4n + 6$ pour chaque entier, l'un après l'autre.",
+    "estimated_duration_s": 120,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, classe de 5e, Nombres et calculs, Calcul littéral et algébrique : « Utiliser un contre-exemple pour démontrer qu'une assertion est fausse. »"
+  }
+]

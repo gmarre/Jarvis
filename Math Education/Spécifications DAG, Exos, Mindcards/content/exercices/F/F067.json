@@ -1,0 +1,169 @@
+[
+  {
+    "id": "EX-F067-D-01",
+    "skill_id": "F067",
+    "level": "decouverte",
+    "type": "qcm",
+    "statement": "On donne $A = (x + 3)(2x + 5) + (x + 3)(x - 1)$. Ses deux termes ont un facteur commun, $(x + 3)$.\n\nQuelle est la forme factorisée de $A$ ?",
+    "image": null,
+    "choices": [
+      {
+        "key": "a",
+        "text": "$(x + 3)(2x + 5)(x - 1)$",
+        "misconception": "L'élève multiplie les deux facteurs restants. Or $ka + kb = k(a + b)$ : une fois $(x + 3)$ mis en facteur, les facteurs restants s'additionnent."
+      },
+      {
+        "key": "b",
+        "text": "$(x + 3)(3x + 6)$",
+        "misconception": "L'élève perd le signe moins de −1 : il calcule $5 + 1$ au lieu de $5 - 1$."
+      },
+      {
+        "key": "c",
+        "text": "$(x + 3)(3x + 4)$",
+        "misconception": null
+      }
+    ],
+    "answer": {
+      "value": "c"
+    },
+    "solution_steps": [
+      "$A$ est une somme de deux produits qui ont le même facteur : $A = (x + 3) \\times (2x + 5) + (x + 3) \\times (x - 1)$.",
+      "On utilise la distributivité dans l'autre sens, $ka + kb = k(a + b)$, avec $k = x + 3$ : $A = (x + 3)\\left[(2x + 5) + (x - 1)\\right]$.",
+      "On réduit le second facteur : $2x + 5 + x - 1 = 3x + 4$. Donc $A = (x + 3)(3x + 4)$.",
+      "Contrôle avec $x = 1$ : $4 \\times 7 + 4 \\times 0 = 28$, et $4 \\times 7 = 28$."
+    ],
+    "hint": "Écris $A = (x + 3) \\times \\ldots + (x + 3) \\times \\ldots$ : que met-on dans la seconde parenthèse après factorisation ?",
+    "estimated_duration_s": 90,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, classe de 3e, Nombres et calculs, Calcul littéral et algébrique : « Utiliser la double distributivité pour développer et factoriser des expressions dont le facteur est apparent. »"
+  },
+  {
+    "id": "EX-F067-D-02",
+    "skill_id": "F067",
+    "level": "decouverte",
+    "type": "vrai_faux",
+    "statement": "Vrai ou faux : pour tout nombre $x$, $\\frac{5x + 10}{5} = x + 2$.",
+    "image": null,
+    "answer": {
+      "value": true
+    },
+    "solution_steps": [
+      "On ne simplifie une fraction que par un facteur commun au numérateur et au dénominateur, jamais par un seul terme d'une somme.",
+      "Le numérateur se factorise par 5 : $5x + 10 = 5(x + 2)$.",
+      "Donc $\\frac{5x + 10}{5} = \\frac{5(x + 2)}{5} = x + 2$ : on simplifie par le facteur commun 5, la phrase est **vraie**.",
+      "Les deux termes sont divisés par 5. Ne diviser que $5x$ donnerait $x + 10$, ce qui est faux : pour $x = 0$, $\\frac{10}{5} = 2$ et non 10."
+    ],
+    "hint": "Le numérateur est une somme. Peux-tu l'écrire comme un produit dont un facteur est 5 ?",
+    "estimated_duration_s": 60,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, classe de 3e, Nombres et calculs, Calcul littéral et algébrique : « Simplifier des expressions produits ou des rapports comportant des facteurs communs. »"
+  },
+  {
+    "id": "EX-F067-E-01",
+    "skill_id": "F067",
+    "level": "entrainement",
+    "type": "texte",
+    "statement": "Factorise $B = (x - 2)(5x + 1) - (x - 2)(2x - 3)$.\n\nRéduis le second facteur.",
+    "image": null,
+    "answer": {
+      "value": "(x − 2)(3x + 4)",
+      "forme": "factorisee"
+    },
+    "solution_steps": [
+      "Le facteur commun est $(x - 2)$ : $B = (x - 2)\\left[(5x + 1) - (2x - 3)\\right]$. On garde les parenthèses : le signe moins porte sur tout $2x - 3$.",
+      "$(5x + 1) - (2x - 3) = 5x + 1 - 2x + 3 = 3x + 4$.",
+      "Donc $B = (x - 2)(3x + 4)$.",
+      "Contrôle avec $x = 0$ : $(-2) \\times 1 - (-2) \\times (-3) = -2 - 6 = -8$, et $(-2) \\times 4 = -8$."
+    ],
+    "hint": "Mets $(x - 2)$ en facteur, puis écris le reste entre crochets sans oublier les parenthèses de $(2x - 3)$.",
+    "estimated_duration_s": 150,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, classe de 3e, Nombres et calculs, Calcul littéral et algébrique : « Utiliser la double distributivité pour développer et factoriser des expressions dont le facteur est apparent. »"
+  },
+  {
+    "id": "EX-F067-E-02",
+    "skill_id": "F067",
+    "level": "entrainement",
+    "type": "numerique",
+    "statement": "Pour $x$ non nul et différent de $-5$, on considère le quotient $\\frac{6x(x + 5)}{2x(x + 5)}$.\n\nSimplifie-le : quel nombre obtiens-tu ?",
+    "image": null,
+    "answer": {
+      "value": 3
+    },
+    "solution_steps": [
+      "Numérateur et dénominateur sont des produits. Ils ont deux facteurs communs, $x$ et $(x + 5)$, qui ne sont pas nuls ici.",
+      "$\\frac{6x(x + 5)}{2x(x + 5)} = \\frac{6 \\times x \\times (x + 5)}{2 \\times x \\times (x + 5)} = \\frac{6}{2} = 3$.",
+      "Contrôle avec $x = 1$ : $\\frac{6 \\times 1 \\times 6}{2 \\times 1 \\times 6} = \\frac{36}{12} = 3$.",
+      "On a le droit de simplifier parce que $x$ et $x + 5$ sont des facteurs du numérateur et du dénominateur, pas des termes d'une somme."
+    ],
+    "hint": "Écris le numérateur et le dénominateur comme des produits de facteurs, puis cherche les facteurs communs.",
+    "estimated_duration_s": 90,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, classe de 3e, Nombres et calculs, Calcul littéral et algébrique : « Simplifier des expressions produits ou des rapports comportant des facteurs communs. »"
+  },
+  {
+    "id": "EX-F067-M-01",
+    "skill_id": "F067",
+    "level": "maitrise",
+    "type": "qcm",
+    "statement": "Une seule de ces simplifications est juste pour toutes les valeurs de $x$ qui n'annulent pas le dénominateur. Laquelle ?",
+    "image": null,
+    "choices": [
+      {
+        "key": "a",
+        "text": "$\\frac{x + 12}{4} = x + 3$",
+        "misconception": "L'élève simplifie un terme du numérateur, 12, par le dénominateur. Or $x + 12$ est une somme : pour $x = 4$, le quotient vaut 4 et non 7."
+      },
+      {
+        "key": "b",
+        "text": "$\\frac{3x(x + 4)}{3x} = x + 4$",
+        "misconception": null
+      },
+      {
+        "key": "c",
+        "text": "$\\frac{x^{2} + 4}{x} = x + 4$",
+        "misconception": "L'élève simplifie $x^{2}$ par $x$ mais garde le 4 : il traite la somme comme un produit. Pour $x = 2$, le quotient vaut 4 et non 6."
+      },
+      {
+        "key": "d",
+        "text": "$\\frac{3x + 12}{3} = x + 12$",
+        "misconception": "L'élève ne divise par 3 que le premier terme. Comme $3x + 12 = 3(x + 4)$, le quotient vaut $x + 4$."
+      }
+    ],
+    "answer": {
+      "value": "b"
+    },
+    "solution_steps": [
+      "On ne simplifie que par un facteur commun au numérateur et au dénominateur.",
+      "Dans $\\frac{3x(x + 4)}{3x}$, le numérateur est le produit de $3x$ par $(x + 4)$ : on simplifie par $3x$, non nul, et il reste $x + 4$.",
+      "Dans les trois autres, le numérateur est une somme : on ne peut pas y barrer un seul terme. Par exemple, $\\frac{3x + 12}{3} = \\frac{3(x + 4)}{3} = x + 4$, et non $x + 12$.",
+      "Un contre-exemple suffit à montrer qu'une égalité est fausse : pour $x = 4$, $\\frac{x + 12}{4}$ vaut 4, mais $x + 3$ vaut 7."
+    ],
+    "hint": "Pour chaque numérateur, demande-toi : est-ce un produit ou une somme ?",
+    "estimated_duration_s": 120,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, classe de 3e, Nombres et calculs, Calcul littéral et algébrique : « Simplifier des expressions produits ou des rapports comportant des facteurs communs. »"
+  },
+  {
+    "id": "EX-F067-M-02",
+    "skill_id": "F067",
+    "level": "maitrise",
+    "type": "texte",
+    "statement": "Factorise $C = (4x - 3)(x + 2) - (4x - 3)$.\n\nRéduis le second facteur.",
+    "image": null,
+    "answer": {
+      "value": "(4x − 3)(x + 1)",
+      "forme": "factorisee"
+    },
+    "solution_steps": [
+      "Le second terme est $(4x - 3)$ seul : il s'écrit $(4x - 3) \\times 1$. C'est ce facteur 1 qu'il ne faut pas oublier.",
+      "$C = (4x - 3)(x + 2) - (4x - 3) \\times 1 = (4x - 3)\\left[(x + 2) - 1\\right]$.",
+      "On réduit : $x + 2 - 1 = x + 1$. Donc $C = (4x - 3)(x + 1)$.",
+      "Contrôle avec $x = 1$ : $1 \\times 3 - 1 = 2$, et $1 \\times 2 = 2$."
+    ],
+    "hint": "Écris le second terme sous la forme d'un produit : $(4x - 3) \\times \\ldots$",
+    "estimated_duration_s": 150,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, classe de 3e, Nombres et calculs, Calcul littéral et algébrique : « Utiliser la double distributivité pour développer et factoriser des expressions dont le facteur est apparent. »"
+  }
+]

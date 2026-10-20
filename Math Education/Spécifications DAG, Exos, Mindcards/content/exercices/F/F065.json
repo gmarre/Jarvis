@@ -1,0 +1,199 @@
+[
+  {
+    "id": "EX-F065-D-01",
+    "skill_id": "F065",
+    "level": "decouverte",
+    "type": "qcm",
+    "statement": "$n$ désigne un nombre entier quelconque. Quelle écriture désigne toujours un nombre pair ?",
+    "image": null,
+    "choices": [
+      {
+        "key": "a",
+        "text": "$n + 2$",
+        "misconception": "L'élève pense qu'ajouter 2 rend un nombre pair. Mais $n + 2$ a la même parité que $n$ : pour $n = 5$, on obtient 7, qui est impair."
+      },
+      {
+        "key": "b",
+        "text": "$2n$",
+        "misconception": null
+      },
+      {
+        "key": "c",
+        "text": "$n^{2}$",
+        "misconception": "L'élève confond le double et le carré. Pour $n = 3$, le carré vaut 9, qui est impair."
+      },
+      {
+        "key": "d",
+        "text": "$2n + 1$",
+        "misconception": "L'élève confond pair et impair : $2n + 1$ suit le nombre pair $2n$, il est toujours impair (pour $n = 4$, il vaut 9)."
+      }
+    ],
+    "answer": {
+      "value": "b"
+    },
+    "solution_steps": [
+      "Un nombre pair est un nombre de la table de 2 : il s'écrit 2 × un entier (0, 2, 4, 6, 8…).",
+      "$2n$ veut dire $2 \\times n$ : quel que soit l'entier $n$, c'est le double d'un entier, donc un nombre pair.",
+      "Les autres écritures ne marchent pas toujours : pour $n = 3$, $n + 2$ vaut 5 et $n^{2}$ vaut 9, deux nombres impairs. Et $2n + 1$ suit le pair $2n$ : il est toujours impair.",
+      "La bonne réponse est b. À retenir : un pair s'écrit $2n$, un impair s'écrit $2n + 1$."
+    ],
+    "hint": "Un nombre pair, c'est le double d'un entier. Quelle écriture est un double ?",
+    "estimated_duration_s": 45,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, classe de 4e, Nombres et calculs, Calcul littéral et algébrique, Objectifs d'apprentissage : « Produire des formules et tester leur vraisemblance : aires de formes géométriques simples, nombres pairs/impairs, etc. »"
+  },
+  {
+    "id": "EX-F065-D-02",
+    "skill_id": "F065",
+    "level": "decouverte",
+    "type": "numerique",
+    "statement": "Trois pairs consécutifs s'écrivent $2n$, $2n + 2$ et $2n + 4$ ($n$ entier). Complète : $2n + (2n + 2) + (2n + 4) = 6n + \\ldots$",
+    "image": null,
+    "answer": {
+      "value": 6
+    },
+    "solution_steps": [
+      "Un exemple : pour $n = 1$, les trois nombres sont 2, 4 et 6, et leur somme vaut 12.",
+      "En général, on enlève les parenthèses (elles sont précédées de +) : $2n + (2n + 2) + (2n + 4) = 2n + 2n + 2 + 2n + 4$.",
+      "On regroupe les termes en $n$ : $2n + 2n + 2n = 6n$, puis les nombres : 2 + 4 = 6. La somme vaut $6n + 6$ : le nombre manquant est 6.",
+      "Contrôle avec $n = 1$ : $6 \\times 1 + 6 = 12$, comme dans l'exemple.",
+      "On peut conclure : $6n + 6 = 6(n + 1)$. La somme de trois nombres pairs consécutifs est toujours un multiple de 6, pour tout entier $n$, et pas seulement pour $n = 1$."
+    ],
+    "hint": "Enlève les parenthèses, puis regroupe d'un côté les termes en $n$, de l'autre les nombres.",
+    "estimated_duration_s": 60,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, classe de 4e, Nombres et calculs, Calcul littéral et algébrique, Objectifs d'apprentissage : « Utiliser le calcul algébrique pour produire des démonstrations. »"
+  },
+  {
+    "id": "EX-F065-E-01",
+    "skill_id": "F065",
+    "level": "entrainement",
+    "type": "texte",
+    "statement": "A : retrancher 3 à $n$, puis multiplier par 4. B : multiplier $n$ par $-2$, ajouter 6, puis multiplier par $-2$. Écris le résultat de B, développé et réduit.",
+    "image": null,
+    "answer": {
+      "value": "4n − 12",
+      "forme": "reduite",
+      "variables": [
+        "n"
+      ]
+    },
+    "solution_steps": [
+      "Essai avec 5 : A donne $(5 - 3) \\times 4 = 8$ ; B donne $5 \\times (-2) = -10$, puis $-10 + 6 = -4$, puis $-4 \\times (-2) = 8$. Même résultat, mais un essai ne prouve rien pour tous les nombres.",
+      "B avec la lettre : $n \\times (-2) = -2n$, puis $-2n + 6$, puis $-2(-2n + 6)$. Les parenthèses sont indispensables : on multiplie tout le résultat par $-2$.",
+      "On développe : $-2 \\times (-2n) = 4n$ et $-2 \\times 6 = -12$. Donc $-2(-2n + 6) = 4n - 12$.",
+      "A avec la lettre : $4(n - 3) = 4n - 12$. Les deux expressions sont égales pour tout $n$ : c'est la démonstration que A et B donnent toujours le même résultat."
+    ],
+    "hint": "Écris le résultat de B avec des parenthèses, puis développe en faisant attention au signe de chaque produit.",
+    "estimated_duration_s": 120,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, classe de 4e, Nombres et calculs, Calcul littéral et algébrique, Objectifs d'apprentissage : « Utiliser le calcul algébrique pour produire des démonstrations. »"
+  },
+  {
+    "id": "EX-F065-E-02",
+    "skill_id": "F065",
+    "level": "entrainement",
+    "type": "vrai_faux",
+    "statement": "Inès additionne deux impairs consécutifs : $1 + 3 = 4$, $5 + 7 = 12$ et $9 + 11 = 20$. Ces trois essais démontrent-ils qu'une telle somme est toujours un multiple de 4 ?",
+    "image": null,
+    "answer": {
+      "value": false
+    },
+    "solution_steps": [
+      "Les trois calculs sont justes, mais ils ne traitent que trois cas. Des exemples ne démontrent jamais une propriété pour tous les entiers.",
+      "Pour démontrer, on écrit deux impairs consécutifs avec une lettre : $2n + 1$ et $2n + 3$, où $n$ est un entier.",
+      "Leur somme : $(2n + 1) + (2n + 3) = 4n + 4 = 4(n + 1)$. C'est 4 fois un entier : la somme est toujours un multiple de 4.",
+      "La propriété est donc vraie, mais c'est ce calcul qui la démontre, pas les trois essais. Réponse : faux."
+    ],
+    "hint": "Trois exemples peuvent-ils couvrir tous les entiers ?",
+    "estimated_duration_s": 75,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, classe de 4e, Nombres et calculs, Calcul littéral et algébrique, Objectifs d'apprentissage : « Utiliser le calcul algébrique pour produire des démonstrations. »"
+  },
+  {
+    "id": "EX-F065-M-01",
+    "skill_id": "F065",
+    "level": "maitrise",
+    "type": "qcm",
+    "statement": "$n$ et $p$ sont des entiers. Pour démontrer que « pair + impair » donne toujours un impair, quelle somme faut-il étudier ?",
+    "image": null,
+    "choices": [
+      {
+        "key": "a",
+        "text": "$2n + (2n + 1)$",
+        "misconception": "L'élève note les deux nombres avec la même lettre. Il ne traite alors que les cas où l'impair suit juste le pair (6 et 7), pas 6 et 11."
+      },
+      {
+        "key": "b",
+        "text": "$n + (n + 1)$",
+        "misconception": "L'élève écrit deux entiers consécutifs quelconques : rien ne dit lequel est pair, et les deux nombres doivent se suivre."
+      },
+      {
+        "key": "c",
+        "text": "$2n + 2p$",
+        "misconception": "L'élève écrit deux nombres pairs : $2p$ n'est pas impair (pour $p = 5$, il vaut 10)."
+      },
+      {
+        "key": "d",
+        "text": "$2n + (2p + 1)$",
+        "misconception": null
+      }
+    ],
+    "answer": {
+      "value": "d"
+    },
+    "solution_steps": [
+      "Un pair s'écrit $2n$ et un impair $2p + 1$. On prend deux lettres différentes, car les deux nombres n'ont aucun lien entre eux : 6 et 11 conviennent, avec $n = 3$ et $p = 5$.",
+      "Avec une seule lettre, $2n + (2n + 1)$ ne couvre que des nombres qui se suivent, comme 6 et 7 : ce ne serait pas une preuve pour tous les cas.",
+      "On calcule : $2n + (2p + 1) = 2n + 2p + 1 = 2(n + p) + 1$. C'est un nombre pair plus 1 : la somme est toujours impaire.",
+      "La bonne réponse est d."
+    ],
+    "hint": "Les deux nombres sont-ils forcément liés ? Faut-il une lettre ou deux ?",
+    "estimated_duration_s": 75,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, classe de 4e, Nombres et calculs, Calcul littéral et algébrique, Objectifs d'apprentissage : « Utiliser le calcul algébrique pour produire des démonstrations. »"
+  },
+  {
+    "id": "EX-F065-M-02",
+    "skill_id": "F065",
+    "level": "maitrise",
+    "type": "qcm",
+    "statement": "Un jardin carré de $x$ m de côté contient un bassin carré de 2 m de côté. Quelle formule donne l'aire du jardin hors bassin, en m² ? Teste avec $x = 10$.",
+    "image": null,
+    "choices": [
+      {
+        "key": "a",
+        "text": "$(x - 2)^{2}$",
+        "misconception": "L'élève retire 2 m au côté du jardin, comme si le bassin occupait une bande sur tout un bord. Pour $x = 10$, cela donne 64 m² au lieu de 96 m²."
+      },
+      {
+        "key": "b",
+        "text": "$x^{2} - 2$",
+        "misconception": "L'élève retire le côté du bassin (2 m) au lieu de son aire ($2 \\times 2 = 4$ m²). Pour $x = 10$, cela donne 98 m²."
+      },
+      {
+        "key": "c",
+        "text": "$x^{2} - 4$",
+        "misconception": null
+      },
+      {
+        "key": "d",
+        "text": "$2x - 4$",
+        "misconception": "L'élève confond le carré et le double : l'aire du jardin est $x \\times x$, pas $2x$. Pour $x = 10$, cela donne 16 m²."
+      }
+    ],
+    "answer": {
+      "value": "c"
+    },
+    "solution_steps": [
+      "Pour $x = 10$, le jardin a une aire de $10 \\times 10 = 100$ m² et le bassin de $2 \\times 2 = 4$ m². L'aire cherchée vaut $100 - 4 = 96$ m².",
+      "On teste chaque formule avec 10 : $(10 - 2)^{2} = 64$ ; $10^{2} - 2 = 98$ ; $10^{2} - 4 = 96$ ; $2 \\times 10 - 4 = 16$. Seule la formule c donne 96.",
+      "En général : l'aire du jardin est $x \\times x = x^{2}$, celle du bassin est 4 m², d'où $x^{2} - 4$.",
+      "Un test réussi rend une formule vraisemblable ; un seul test raté suffit à la rejeter. Ici, a, b et d sont rejetées. La bonne réponse est c."
+    ],
+    "hint": "Calcule d'abord l'aire du jardin et celle du bassin pour un côté de 10 m.",
+    "estimated_duration_s": 90,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, classe de 4e, Nombres et calculs, Calcul littéral et algébrique, Objectifs d'apprentissage : « Produire des formules et tester leur vraisemblance : aires de formes géométriques simples, nombres pairs/impairs, etc. »"
+  }
+]

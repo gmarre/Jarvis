@@ -1,0 +1,168 @@
+[
+  {
+    "id": "EX-F012-D-01",
+    "skill_id": "F012",
+    "level": "decouverte",
+    "type": "texte",
+    "statement": "Ce rectangle est partagé en deux rectangles (longueurs en cm). Écris son aire totale comme la somme des aires des deux parties, sans parenthèses et calculs faits.",
+    "image": "figures/EX-F012-D-01",
+    "answer": {
+      "value": "6x + 12",
+      "forme": "developpee"
+    },
+    "solution_steps": [
+      "On lit la figure : la largeur commune est 6 ; les longueurs des deux parties sont $x$ et 2, soit une longueur totale de $x + 2$.",
+      "Vu comme un seul rectangle, l'aire est $6 \\times (x + 2)$, qu'on écrit $6(x + 2)$.",
+      "Vu comme deux rectangles, l'aire est $6 \\times x + 6 \\times 2 = 6x + 12$.",
+      "Les deux calculs donnent la même aire : $6(x + 2) = 6x + 12$. Le 6 multiplie chacun des deux termes de la somme, $x$ et 2."
+    ],
+    "hint": "Calcule l'aire de chaque partie : largeur × longueur.",
+    "estimated_duration_s": 90,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, classe de 5e, Nombres et calculs, Calcul littéral et algébrique : « Exploiter les relations k(a + b) = ka + kb ou k(a – b) = ka – kb pour factoriser, ou développer une expression littérale. »"
+  },
+  {
+    "id": "EX-F012-D-02",
+    "skill_id": "F012",
+    "level": "decouverte",
+    "type": "qcm",
+    "statement": "Sept élèves achètent chacun un livre à $x$ euros et une affiche à 5 euros. La dépense totale est $7(x + 5)$ euros. Quelle écriture lui est égale ?",
+    "image": null,
+    "choices": [
+      {
+        "key": "a",
+        "text": "$7x + 5$",
+        "misconception": "L'élève ne multiplie que le premier terme : il compte 7 livres mais une seule affiche. Or chacun des 7 élèves achète une affiche : $7 \\times 5 = 35$."
+      },
+      {
+        "key": "b",
+        "text": "$7x + 12$",
+        "misconception": "L'élève additionne 7 et 5 au lieu de multiplier : 7 affiches à 5 euros coûtent $7 \\times 5$ euros, pas $7 + 5$."
+      },
+      {
+        "key": "c",
+        "text": "$7x + 35$",
+        "misconception": null
+      }
+    ],
+    "answer": {
+      "value": "c"
+    },
+    "solution_steps": [
+      "Chaque élève dépense $x + 5$ euros ; pour 7 élèves, $7(x + 5)$ euros.",
+      "Autre façon de compter : 7 livres coûtent $7x$ euros, et 7 affiches coûtent $7 \\times 5 = 35$ euros.",
+      "Donc $7(x + 5) = 7x + 35$ : le 7 multiplie chacun des deux termes. La bonne réponse est c."
+    ],
+    "hint": "Combien coûtent les 7 livres ? Et les 7 affiches ?",
+    "estimated_duration_s": 60,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, classe de 5e, Nombres et calculs, Calcul littéral et algébrique : « Exploiter les relations k(a + b) = ka + kb ou k(a – b) = ka – kb pour factoriser, ou développer une expression littérale. »"
+  },
+  {
+    "id": "EX-F012-E-01",
+    "skill_id": "F012",
+    "level": "entrainement",
+    "type": "numerique",
+    "statement": "Complète la factorisation : $6x + 42 = 6(x + \\ldots)$. Quel nombre manque ?",
+    "image": null,
+    "answer": {
+      "value": 7
+    },
+    "solution_steps": [
+      "Factoriser, c'est faire le chemin inverse du développement : on cherche ce que 6 multiplie.",
+      "$6x$, c'est $6 \\times x$ ; et 42, c'est $6 \\times 7$ (table de 6).",
+      "Donc $6x + 42 = 6 \\times x + 6 \\times 7 = 6(x + 7)$.",
+      "Vérification en développant : $6(x + 7) = 6x + 42$. Le nombre manquant est 7, et non 42."
+    ],
+    "hint": "Écris 42 comme un produit dont un des facteurs est 6.",
+    "estimated_duration_s": 60,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, classe de 5e, Nombres et calculs, Calcul littéral et algébrique : « Exploiter les relations k(a + b) = ka + kb ou k(a – b) = ka – kb pour factoriser, ou développer une expression littérale. »"
+  },
+  {
+    "id": "EX-F012-E-02",
+    "skill_id": "F012",
+    "level": "entrainement",
+    "type": "texte",
+    "statement": "Développe puis réduis l'expression $4(2x + 3) + 5x$.",
+    "image": null,
+    "answer": {
+      "value": "13x + 12",
+      "forme": "developpee"
+    },
+    "solution_steps": [
+      "On développe d'abord : $4(2x + 3) = 4 \\times 2x + 4 \\times 3 = 8x + 12$.",
+      "L'expression devient $8x + 12 + 5x$.",
+      "On réduit : $8x + 5x = 13x$, et il reste le nombre 12.",
+      "Résultat : $13x + 12$. Le 4 multiplie les deux termes de la parenthèse : oublier de multiplier le 3 donnerait $13x + 3$."
+    ],
+    "hint": "Le 4 multiplie chacun des termes de la parenthèse ; ensuite seulement, regroupe les termes en $x$.",
+    "estimated_duration_s": 90,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, classe de 5e, Nombres et calculs, Calcul littéral et algébrique : « Exploiter les relations k(a + b) = ka + kb ou k(a – b) = ka – kb pour factoriser, ou développer une expression littérale. »"
+  },
+  {
+    "id": "EX-F012-M-01",
+    "skill_id": "F012",
+    "level": "maitrise",
+    "type": "texte",
+    "statement": "Le périmètre d'un rectangle de longueur $x$ et de largeur 3 s'écrit $2x + 6$. Écris ce périmètre sous la forme d'un produit, avec des parenthèses.",
+    "image": null,
+    "answer": {
+      "value": "2(x + 3)",
+      "forme": "factorisee"
+    },
+    "solution_steps": [
+      "$2x$, c'est $2 \\times x$, et 6, c'est $2 \\times 3$ : 2 est un facteur commun aux deux termes.",
+      "Donc $2x + 6 = 2 \\times x + 2 \\times 3 = 2(x + 3)$.",
+      "On retrouve la formule du périmètre : 2 fois la somme de la longueur et de la largeur.",
+      "Vérification en développant : $2(x + 3) = 2x + 6$."
+    ],
+    "hint": "Quel nombre divise à la fois $2x$ et 6 ?",
+    "estimated_duration_s": 90,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, classe de 5e, Nombres et calculs, Calcul littéral et algébrique : « Exploiter les relations k(a + b) = ka + kb ou k(a – b) = ka – kb pour factoriser, ou développer une expression littérale. »"
+  },
+  {
+    "id": "EX-F012-M-02",
+    "skill_id": "F012",
+    "level": "maitrise",
+    "type": "qcm",
+    "statement": "Lina doit factoriser $9x + 9$. Quelle est la bonne factorisation ?",
+    "image": null,
+    "choices": [
+      {
+        "key": "a",
+        "text": "$9(x + 9)$",
+        "misconception": "L'élève met 9 en facteur et recopie le 9 dans la parenthèse. En développant, $9(x + 9) = 9x + 81$, pas $9x + 9$."
+      },
+      {
+        "key": "b",
+        "text": "$9(x + 1)$",
+        "misconception": null
+      },
+      {
+        "key": "c",
+        "text": "$9x$",
+        "misconception": "L'élève croit que le 9 seul disparaît dans le facteur commun et oublie le 1 : $9 = 9 \\times 1$. Or $9x$ n'est pas égal à $9x + 9$ : pour $x = 1$, on trouve 9 et 18."
+      },
+      {
+        "key": "d",
+        "text": "$18x$",
+        "misconception": "L'élève additionne $9x$ et 9 comme des termes semblables. Or 9 n'est pas un terme en $x$ : $9x + 9$ ne se réduit pas."
+      }
+    ],
+    "answer": {
+      "value": "b"
+    },
+    "solution_steps": [
+      "Le terme 9 s'écrit $9 \\times 1$ : $9x + 9 = 9 \\times x + 9 \\times 1$.",
+      "On met 9 en facteur : $9x + 9 = 9(x + 1)$.",
+      "Vérification en développant : $9(x + 1) = 9x + 9$. La bonne réponse est b."
+    ],
+    "hint": "Écris 9 comme un produit dont un des facteurs est 9.",
+    "estimated_duration_s": 60,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, classe de 5e, Nombres et calculs, Calcul littéral et algébrique : « Exploiter les relations k(a + b) = ka + kb ou k(a – b) = ka – kb pour factoriser, ou développer une expression littérale. »"
+  }
+]

@@ -1,0 +1,177 @@
+[
+  {
+    "id": "EX-F031-D-01",
+    "skill_id": "F031",
+    "level": "decouverte",
+    "type": "qcm",
+    "statement": "Quel nombre est solution de l'inéquation $2x > 9$ ?",
+    "image": null,
+    "choices": [
+      {
+        "key": "a",
+        "text": "4",
+        "misconception": "L'élève arrondit $9 \\div 2 = 4{,}5$ à l'unité inférieure. Or $2 \\times 4 = 8$, qui n'est pas supérieur à 9."
+      },
+      {
+        "key": "b",
+        "text": "5",
+        "misconception": null
+      },
+      {
+        "key": "c",
+        "text": "4,5",
+        "misconception": "L'élève confond $>$ et $\\geqslant$ : $2 \\times 4{,}5 = 9$, et 9 n'est pas strictement supérieur à 9."
+      },
+      {
+        "key": "d",
+        "text": "−6",
+        "misconception": "L'élève compare les distances à zéro : il voit 12 plus grand que 9. Or $2 \\times (-6) = -12$, et $-12 < 9$."
+      }
+    ],
+    "answer": {
+      "value": "b"
+    },
+    "solution_steps": [
+      "Un nombre est solution s'il rend l'inégalité vraie. On remplace $x$ par chaque nombre.",
+      "$2 \\times 4 = 8$ et $8 > 9$ est faux. $2 \\times 4{,}5 = 9$ et $9 > 9$ est faux : 9 n'est pas strictement supérieur à 9.",
+      "$2 \\times (-6) = -12$ et $-12 > 9$ est faux. $2 \\times 5 = 10$ et $10 > 9$ est vrai : 5 est solution. La bonne réponse est b.",
+      "5 n'est pas la seule solution : 6, 7 ou 100 conviennent aussi. Une inéquation a en général une infinité de solutions, tous les nombres strictement supérieurs à 4,5."
+    ],
+    "hint": "Remplace $x$ par chaque nombre et compare le résultat à 9.",
+    "estimated_duration_s": 45,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, classe de 3e, Nombres et calculs, Calcul littéral et algébrique : « Résoudre analytiquement et graphiquement une inéquation du premier degré du type a𝑥 ⩾ b. »"
+  },
+  {
+    "id": "EX-F031-D-02",
+    "skill_id": "F031",
+    "level": "decouverte",
+    "type": "texte",
+    "statement": "Résous l'inéquation $6x \\geqslant 42$.\n\nÉcris l'inégalité qui donne toutes les solutions ($\\geqslant$ peut se taper >=).",
+    "image": null,
+    "answer": {
+      "value": "x ⩾ 7",
+      "forme": "inegalite"
+    },
+    "solution_steps": [
+      "On divise les deux membres par 6, comme pour une équation.",
+      "6 est positif : diviser par un nombre positif conserve le sens de l'inégalité. On obtient $x \\geqslant 7$.",
+      "Vérification : 7 est solution car $6 \\times 7 = 42$ et $42 \\geqslant 42$ ; 10 aussi ($60 \\geqslant 42$) ; 5 ne l'est pas ($30 < 42$).",
+      "Les solutions sont tous les nombres supérieurs ou égaux à 7, pas seulement 7."
+    ],
+    "hint": "Divise les deux membres par 6. Le nombre 6 est-il positif ?",
+    "estimated_duration_s": 50,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, classe de 3e, Nombres et calculs, Calcul littéral et algébrique : « Résoudre analytiquement et graphiquement une inéquation du premier degré du type a𝑥 ⩾ b. »"
+  },
+  {
+    "id": "EX-F031-E-01",
+    "skill_id": "F031",
+    "level": "entrainement",
+    "type": "qcm",
+    "statement": "Résous l'inéquation $-5x < 30$.\n\nQuelle inégalité donne toutes ses solutions ?",
+    "image": null,
+    "choices": [
+      {
+        "key": "a",
+        "text": "$x < -6$",
+        "misconception": "L'élève garde le sens de l'inégalité en divisant par $-5$, qui est négatif. Or $x = 0$ est solution ($0 < 30$) et $0 < -6$ est faux."
+      },
+      {
+        "key": "b",
+        "text": "$x > 6$",
+        "misconception": "L'élève change bien le sens, mais se trompe de signe : $30 \\div (-5) = -6$, pas 6. Or $x = 0$ est solution et $0 > 6$ est faux."
+      },
+      {
+        "key": "c",
+        "text": "$x > -6$",
+        "misconception": null
+      },
+      {
+        "key": "d",
+        "text": "$x > -\\frac{1}{6}$",
+        "misconception": "L'élève divise dans le mauvais sens : $-5 \\div 30 = -\\frac{1}{6}$ au lieu de $30 \\div (-5)$."
+      }
+    ],
+    "answer": {
+      "value": "c"
+    },
+    "solution_steps": [
+      "On divise les deux membres par $-5$ : $30 \\div (-5) = -6$.",
+      "$-5$ est négatif : diviser par un nombre négatif **change le sens** de l'inégalité. On obtient $x > -6$.",
+      "Vérification avec $x = 0$ : $-5 \\times 0 = 0$ et $0 < 30$, vrai, et $0 > -6$. Avec $x = -10$ : $-5 \\times (-10) = 50$ et $50 < 30$ est faux, et $-10$ n'est pas supérieur à $-6$.",
+      "La bonne réponse est c."
+    ],
+    "hint": "Teste un nombre simple, comme 0, dans l'inéquation de départ.",
+    "estimated_duration_s": 60,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, classe de 3e, Nombres et calculs, Calcul littéral et algébrique : « Résoudre analytiquement et graphiquement une inéquation du premier degré du type a𝑥 ⩾ b. »"
+  },
+  {
+    "id": "EX-F031-E-02",
+    "skill_id": "F031",
+    "level": "entrainement",
+    "type": "numerique",
+    "statement": "Quel est le plus petit nombre entier solution de l'inéquation $9x > 72$ ?",
+    "image": null,
+    "answer": {
+      "value": 9
+    },
+    "solution_steps": [
+      "On divise les deux membres par 9, qui est positif : le sens est conservé. On obtient $x > 8$.",
+      "Les solutions sont les nombres strictement supérieurs à 8. Le nombre 8 lui-même n'est pas solution : $9 \\times 8 = 72$ et $72 > 72$ est faux.",
+      "Le plus petit entier strictement supérieur à 8 est **9**. Vérification : $9 \\times 9 = 81$ et $81 > 72$."
+    ],
+    "hint": "8 est-il solution ? Regarde si l'inégalité est stricte.",
+    "estimated_duration_s": 45,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, classe de 3e, Nombres et calculs, Calcul littéral et algébrique : « Résoudre analytiquement et graphiquement une inéquation du premier degré du type a𝑥 ⩾ b. »"
+  },
+  {
+    "id": "EX-F031-M-01",
+    "skill_id": "F031",
+    "level": "maitrise",
+    "type": "numerique",
+    "statement": "Une association vend des gâteaux 2,40 € pièce. Elle veut récolter au moins 150 €.\n\nCombien de gâteaux doit-elle vendre au minimum ?",
+    "image": null,
+    "answer": {
+      "value": 63,
+      "accepted": [
+        "63 gâteaux",
+        "63 gateaux"
+      ]
+    },
+    "solution_steps": [
+      "On appelle $x$ le nombre de gâteaux vendus. La recette est $2{,}4x$ euros, et on veut $2{,}4x \\geqslant 150$.",
+      "On divise par 2,4, qui est positif : le sens est conservé. $150 \\div 2{,}4 = 62{,}5$, donc $x \\geqslant 62{,}5$.",
+      "Le nombre de gâteaux est entier : 62 ne suffit pas ($62 \\times 2{,}4 = 148{,}8$ €), 63 convient ($63 \\times 2{,}4 = 151{,}2$ €).",
+      "Il faut vendre au moins **63** gâteaux. Arrondir 62,5 à 62 donne une recette trop faible."
+    ],
+    "hint": "Écris l'inéquation : recette $\\geqslant$ 150. Le nombre de gâteaux doit être entier.",
+    "estimated_duration_s": 90,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, classe de 3e, Nombres et calculs, Calcul littéral et algébrique : « Résoudre analytiquement et graphiquement une inéquation du premier degré du type a𝑥 ⩾ b. »"
+  },
+  {
+    "id": "EX-F031-M-02",
+    "skill_id": "F031",
+    "level": "maitrise",
+    "type": "texte",
+    "statement": "Résous l'inéquation $-6x \\geqslant 4$.\n\nÉcris l'inégalité qui donne toutes les solutions, sous forme fractionnaire ($\\leqslant$ peut se taper <=).",
+    "image": null,
+    "answer": {
+      "value": "x ⩽ −2/3",
+      "forme": "inegalite"
+    },
+    "solution_steps": [
+      "On divise les deux membres par $-6$ : $4 \\div (-6) = -\\frac{4}{6} = -\\frac{2}{3}$.",
+      "$-6$ est négatif : le sens de l'inégalité change. On obtient $x \\leqslant -\\frac{2}{3}$.",
+      "Vérification avec $x = -1$, plus petit que $-\\frac{2}{3}$ : $-6 \\times (-1) = 6$ et $6 \\geqslant 4$, vrai. Avec $x = 0$ : $0 \\geqslant 4$ est faux, et 0 est plus grand que $-\\frac{2}{3}$.",
+      "Garder le sens donnerait $x \\geqslant -\\frac{2}{3}$, qui contient 0 : faux. Diviser $-6$ par 4 donnerait $-\\frac{3}{2}$, la fraction inversée."
+    ],
+    "hint": "Divise par $-6$. Que devient le sens de l'inégalité quand on divise par un nombre négatif ?",
+    "estimated_duration_s": 75,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, classe de 3e, Nombres et calculs, Calcul littéral et algébrique : « Résoudre analytiquement et graphiquement une inéquation du premier degré du type a𝑥 ⩾ b. »"
+  }
+]

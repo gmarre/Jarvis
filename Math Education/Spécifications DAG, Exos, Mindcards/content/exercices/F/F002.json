@@ -1,0 +1,165 @@
+[
+  {
+    "id": "EX-F002-D-01",
+    "skill_id": "F002",
+    "level": "decouverte",
+    "type": "numerique",
+    "statement": "On veut calculer $4x + 7$ pour $x = 6$. On remplace $x$ par 6 : $4x$ devient $4 \\times 6$.\n\nQuelle est la valeur de $4x + 7$ ?",
+    "image": null,
+    "answer": {
+      "value": 31
+    },
+    "solution_steps": [
+      "$4x$ veut dire $4 \\times x$. Pour x = 6 : $4 \\times 6 + 7$.",
+      "La multiplication d'abord : 4 × 6 = 24, puis 24 + 7 = 31.",
+      "Erreur à éviter : écrire 46 à la place de $4x$. Le signe × est sous-entendu entre 4 et x : il faut le rétablir quand on remplace x par un nombre."
+    ],
+    "hint": "Rétablis le signe × entre 4 et $x$.",
+    "estimated_duration_s": 45,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, classe de 5e, Nombres et calculs, Calcul littéral et algébrique : « Calculer la valeur d'une expression littérale par substitution. »"
+  },
+  {
+    "id": "EX-F002-D-02",
+    "skill_id": "F002",
+    "level": "decouverte",
+    "type": "qcm",
+    "statement": "Quelle est la valeur de $2x^{2}$ pour $x = 3$ ?",
+    "image": null,
+    "choices": [
+      {
+        "key": "a",
+        "text": "18",
+        "misconception": null
+      },
+      {
+        "key": "b",
+        "text": "36",
+        "misconception": "L'élève calcule $(2x)^{2}$ : il multiplie 2 par 3, puis élève 6 au carré. Mais dans $2x^{2}$, le carré ne porte que sur x : $2 \\times 3^{2}$."
+      },
+      {
+        "key": "c",
+        "text": "12",
+        "misconception": "L'élève calcule 2 × 3 × 2 : il confond le carré de 3 avec le double de 3."
+      }
+    ],
+    "answer": {
+      "value": "a"
+    },
+    "solution_steps": [
+      "$2x^{2}$ veut dire $2 \\times x^{2}$ : le carré porte seulement sur x.",
+      "Pour x = 3 : $2 \\times 3^{2}$. La puissance d'abord : $3^{2} = 9$, puis $2 \\times 9 = 18$.",
+      "$(2x)^{2}$ serait différent : $(2 \\times 3)^{2} = 6^{2} = 36$."
+    ],
+    "hint": "Le carré porte-t-il sur $2x$ ou seulement sur $x$ ?",
+    "estimated_duration_s": 45,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, classe de 5e, Nombres et calculs, Puissances : « Calculer la valeur d'une expression littérale contenant une puissance simple. »"
+  },
+  {
+    "id": "EX-F002-E-01",
+    "skill_id": "F002",
+    "level": "entrainement",
+    "type": "numerique",
+    "statement": "Calcule la valeur de $x(x + 4)$ pour $x = 0{,}5$.",
+    "image": null,
+    "answer": {
+      "value": 2.25
+    },
+    "solution_steps": [
+      "$x(x + 4)$ veut dire $x \\times (x + 4)$.",
+      "Pour x = 0,5 : $0{,}5 \\times (0{,}5 + 4) = 0{,}5 \\times 4{,}5$.",
+      "$0{,}5 \\times 4{,}5 = 2{,}25$ : multiplier par 0,5, c'est prendre la moitié, et la moitié de 4,5 est 2,25.",
+      "Erreur à éviter : oublier la parenthèse, $0{,}5 \\times 0{,}5 + 4 = 4{,}25$."
+    ],
+    "hint": "Remplace chaque $x$ par 0,5, sans oublier le signe × devant la parenthèse.",
+    "estimated_duration_s": 75,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, classe de 5e, Nombres et calculs, Calcul littéral et algébrique : « Calculer la valeur d'une expression littérale par substitution. »"
+  },
+  {
+    "id": "EX-F002-E-02",
+    "skill_id": "F002",
+    "level": "entrainement",
+    "type": "vrai_faux",
+    "statement": "Pour $x = 1{,}5$, Jade affirme que $3(x + 2)$ vaut 10,5.\n\nA-t-elle raison ?",
+    "image": null,
+    "answer": {
+      "value": true
+    },
+    "solution_steps": [
+      "$3(x + 2)$ veut dire $3 \\times (x + 2)$ : on calcule d'abord la parenthèse.",
+      "Pour x = 1,5 : $1{,}5 + 2 = 3{,}5$, puis $3 \\times 3{,}5 = 10{,}5$.",
+      "Jade a raison. Sans la parenthèse, on trouverait $3 \\times 1{,}5 + 2 = 6{,}5$ : c'est l'erreur à éviter."
+    ],
+    "hint": "Commence par la parenthèse.",
+    "estimated_duration_s": 60,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, classe de 5e, Nombres et calculs, Calcul littéral et algébrique : « Calculer la valeur d'une expression littérale par substitution. »"
+  },
+  {
+    "id": "EX-F002-M-01",
+    "skill_id": "F002",
+    "level": "maitrise",
+    "type": "numerique",
+    "statement": "Une location de vélo coûte $2{,}5t + 4$ euros, où $t$ est la durée en heures.\n\nCombien coûte une location de 3,5 heures ?",
+    "image": null,
+    "answer": {
+      "value": 12.75,
+      "unit": "€"
+    },
+    "solution_steps": [
+      "On remplace t par 3,5, en rétablissant le signe × : $2{,}5 \\times 3{,}5 + 4$.",
+      "$2{,}5 \\times 3{,}5 = 8{,}75$ (25 × 35 = 875, et deux chiffres après la virgule en tout).",
+      "$8{,}75 + 4 = 12{,}75$ : la location coûte 12,75 €.",
+      "Erreur à éviter : lire 2,5t comme un nombre collé ; t est remplacé par 3,5 et multiplié par 2,5."
+    ],
+    "hint": "Remplace $t$ par 3,5 et rétablis le signe ×.",
+    "estimated_duration_s": 90,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, classe de 5e, Nombres et calculs, Calcul littéral et algébrique : « Calculer la valeur d'une expression littérale par substitution. »"
+  },
+  {
+    "id": "EX-F002-M-02",
+    "skill_id": "F002",
+    "level": "maitrise",
+    "type": "qcm",
+    "statement": "Pour $x = 4$, laquelle de ces expressions a la plus grande valeur ?",
+    "image": null,
+    "choices": [
+      {
+        "key": "a",
+        "text": "$2x^{2} + 15$",
+        "misconception": "L'élève calcule $(2x)^{2} + 15 = 8^{2} + 15 = 79$ au lieu de $2 \\times 4^{2} + 15 = 47$ : le carré ne porte que sur x."
+      },
+      {
+        "key": "b",
+        "text": "$9x + 2$",
+        "misconception": "L'élève colle les chiffres : il lit 9x comme 94 et trouve 96. Il faut rétablir le signe × : $9 \\times 4 + 2 = 38$."
+      },
+      {
+        "key": "c",
+        "text": "$(x + 3)^{2}$",
+        "misconception": null
+      },
+      {
+        "key": "d",
+        "text": "$x^{2} + 30$",
+        "misconception": "L'élève choisit l'expression où il voit le plus grand nombre écrit, 30, sans remplacer x. Pour x = 4, elle vaut 16 + 30 = 46."
+      }
+    ],
+    "answer": {
+      "value": "c"
+    },
+    "solution_steps": [
+      "On remplace x par 4 dans chaque expression, en respectant les priorités.",
+      "$2x^{2} + 15 = 2 \\times 4^{2} + 15 = 2 \\times 16 + 15 = 47$ ; $9x + 2 = 9 \\times 4 + 2 = 38$.",
+      "$(x + 3)^{2} = (4 + 3)^{2} = 7^{2} = 49$ ; $x^{2} + 30 = 16 + 30 = 46$.",
+      "La plus grande valeur est 49, celle de $(x + 3)^{2}$. Les valeurs sont proches : seul un calcul exact permet de trancher."
+    ],
+    "hint": "Calcule les quatre valeurs une par une.",
+    "estimated_duration_s": 120,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, classe de 5e, Nombres et calculs, Puissances : « Calculer la valeur d'une expression littérale contenant une puissance simple. »"
+  }
+]

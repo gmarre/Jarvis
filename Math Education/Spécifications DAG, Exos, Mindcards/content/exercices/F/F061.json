@@ -1,0 +1,211 @@
+[
+  {
+    "id": "EX-F061-D-01",
+    "skill_id": "F061",
+    "level": "decouverte",
+    "type": "qcm",
+    "statement": "Pour calculer $4x + 9$ quand $x$ vaut 2, on fait d'abord 4 × 2, puis on ajoute 9.\n\nQuelle est la nature de l'expression $4x + 9$ ?",
+    "image": null,
+    "choices": [
+      {
+        "key": "a",
+        "text": "Un produit",
+        "misconception": "L'élève voit le produit 4x écrit en premier. Mais la dernière opération effectuée est l'addition de 9 : c'est elle qui donne la nature de l'expression."
+      },
+      {
+        "key": "b",
+        "text": "Une différence",
+        "misconception": "L'élève confond les mots : une différence a pour dernière opération une soustraction, et il n'y a pas de soustraction dans 4x + 9."
+      },
+      {
+        "key": "c",
+        "text": "Une somme",
+        "misconception": null
+      }
+    ],
+    "answer": {
+      "value": "c"
+    },
+    "solution_steps": [
+      "La nature d'une expression est donnée par la **dernière** opération à effectuer.",
+      "Dans $4x + 9$, on calcule d'abord le produit $4x$ (la multiplication est prioritaire), puis on ajoute 9 : la dernière opération est une addition.",
+      "$4x + 9$ est donc une somme de deux termes, $4x$ et 9. Le terme $4x$ est lui-même un produit, de facteurs 4 et x."
+    ],
+    "hint": "Quelle opération fait-on en dernier ?",
+    "estimated_duration_s": 45,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, classe de 5e, Nombres et calculs, Calcul littéral et algébrique : « Déterminer si une expression littérale est une somme ou un produit. »"
+  },
+  {
+    "id": "EX-F061-D-02",
+    "skill_id": "F061",
+    "level": "decouverte",
+    "type": "qcm",
+    "statement": "Quelle phrase décrit l'expression $6(x + 2)$ ?",
+    "image": null,
+    "choices": [
+      {
+        "key": "a",
+        "text": "Une somme de deux termes : $6x$ et 2",
+        "misconception": "L'élève lit 6x + 2 en oubliant la parenthèse : le 6 multiplie toute la somme x + 2, pas seulement x."
+      },
+      {
+        "key": "b",
+        "text": "Un produit de deux facteurs : 6 et $x + 2$",
+        "misconception": null
+      },
+      {
+        "key": "c",
+        "text": "Un produit de deux facteurs : 6 et $x$",
+        "misconception": "L'élève voit bien un produit, mais oublie la parenthèse : le second facteur est toute la somme x + 2, pas seulement x."
+      },
+      {
+        "key": "d",
+        "text": "Une somme de deux termes : $x$ et 2",
+        "misconception": "L'élève se fie au signe + qu'il voit. Mais la somme x + 2 est entre parenthèses : on la calcule d'abord, puis on la multiplie par 6."
+      }
+    ],
+    "answer": {
+      "value": "b"
+    },
+    "solution_steps": [
+      "Dans $6(x + 2)$, le signe × est sous-entendu : c'est $6 \\times (x + 2)$.",
+      "On calcule d'abord la parenthèse $x + 2$, puis on multiplie le résultat par 6 : la dernière opération est une multiplication.",
+      "$6(x + 2)$ est donc un produit de deux facteurs : 6 et $x + 2$. Le 6 multiplie toute la somme, pas seulement x."
+    ],
+    "hint": "Par quoi commence-t-on le calcul : la parenthèse ou la multiplication ?",
+    "estimated_duration_s": 45,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, classe de 5e, Nombres et calculs, Calcul littéral et algébrique : « Déterminer si une expression littérale est une somme ou un produit. »"
+  },
+  {
+    "id": "EX-F061-E-01",
+    "skill_id": "F061",
+    "level": "entrainement",
+    "type": "vrai_faux",
+    "statement": "Mehdi affirme : « Dans l'expression $8 + 3x$, le nombre 3 est un facteur, pas un terme. »\n\nA-t-il raison ?",
+    "image": null,
+    "answer": {
+      "value": true
+    },
+    "solution_steps": [
+      "$8 + 3x$ est une somme : la dernière opération est l'addition. Ses deux termes sont 8 et $3x$.",
+      "$3x$ veut dire $3 \\times x$ : c'est un produit, dont 3 et x sont les facteurs.",
+      "3 est donc un facteur du terme $3x$, et non un terme de la somme. Mehdi a raison."
+    ],
+    "hint": "Quels sont les deux nombres qu'on additionne dans $8 + 3x$ ?",
+    "estimated_duration_s": 45,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, classe de 5e, Nombres et calculs, Opérations : « Nommer un calcul, distinguer sommes et produits, termes et facteurs. »"
+  },
+  {
+    "id": "EX-F061-E-02",
+    "skill_id": "F061",
+    "level": "entrainement",
+    "type": "numerique",
+    "statement": "Combien de termes compte l'expression $x^{2} + 2(x + 3) + 7$ ?",
+    "image": null,
+    "answer": {
+      "value": 3,
+      "accepted": [
+        "trois",
+        "3 termes",
+        "trois termes"
+      ]
+    },
+    "solution_steps": [
+      "Les termes sont séparés par les additions et les soustractions faites en dernier, hors des parenthèses.",
+      "Hors des parenthèses, il y a deux additions : elles séparent trois termes, $x^{2}$, $2(x + 3)$ et 7.",
+      "Le signe + de la parenthèse $x + 3$ ne sépare pas deux termes de l'expression : il est à l'intérieur du terme $2(x + 3)$, qui est un produit.",
+      "Erreur à éviter : compter 4 termes en découpant la parenthèse."
+    ],
+    "hint": "Ne compte pas les signes + qui sont à l'intérieur d'une parenthèse.",
+    "estimated_duration_s": 60,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, classe de 5e, Nombres et calculs, Opérations : « Nommer un calcul, distinguer sommes et produits, termes et facteurs. »"
+  },
+  {
+    "id": "EX-F061-M-01",
+    "skill_id": "F061",
+    "level": "maitrise",
+    "type": "qcm",
+    "statement": "Une seule de ces expressions est un produit.\n\nLaquelle ?",
+    "image": null,
+    "choices": [
+      {
+        "key": "a",
+        "text": "$4 + 3(x + 2)$",
+        "misconception": "L'élève voit le produit 3(x + 2). Mais on l'ajoute ensuite à 4 : la dernière opération est une addition, c'est une somme."
+      },
+      {
+        "key": "b",
+        "text": "$x^{2} + 5x$",
+        "misconception": "L'élève voit deux produits, x × x et 5 × x. Mais on les additionne ensuite : c'est une somme de deux termes."
+      },
+      {
+        "key": "c",
+        "text": "$9 - 2x$",
+        "misconception": "L'élève voit le produit 2x. Mais on le soustrait de 9 en dernier : c'est une différence."
+      },
+      {
+        "key": "d",
+        "text": "$(x + 1) \\times 5$",
+        "misconception": null
+      }
+    ],
+    "answer": {
+      "value": "d"
+    },
+    "solution_steps": [
+      "Pour chaque expression, on cherche la dernière opération.",
+      "$(x + 1) \\times 5$ : on calcule la parenthèse, puis on multiplie par 5. La dernière opération est une multiplication : c'est un produit, de facteurs $x + 1$ et 5.",
+      "Les trois autres finissent par une addition ou une soustraction : $4 + 3(x + 2)$ et $x^{2} + 5x$ sont des sommes, $9 - 2x$ est une différence."
+    ],
+    "hint": "Repère, dans chaque expression, l'opération qu'on effectue en dernier.",
+    "estimated_duration_s": 75,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, classe de 5e, Nombres et calculs, Calcul littéral et algébrique : « Déterminer si une expression littérale est une somme ou un produit. »"
+  },
+  {
+    "id": "EX-F061-M-02",
+    "skill_id": "F061",
+    "level": "maitrise",
+    "type": "qcm",
+    "statement": "Noé écrit $(x + 3) \\times 2$ et Lou écrit $x + 3 \\times 2$.\n\nLaquelle de ces deux expressions est un produit ?",
+    "image": null,
+    "choices": [
+      {
+        "key": "a",
+        "text": "Celle de Noé",
+        "misconception": null
+      },
+      {
+        "key": "b",
+        "text": "Celle de Lou",
+        "misconception": "L'élève voit le produit 3 × 2 à la fin de l'expression de Lou. Mais ce produit est ensuite ajouté à x : la dernière opération est l'addition, c'est une somme."
+      },
+      {
+        "key": "c",
+        "text": "Les deux, car chacune contient le signe ×",
+        "misconception": "L'élève classe d'après les signes présents. Or la nature dépend de la dernière opération : dans x + 3 × 2, c'est l'addition."
+      },
+      {
+        "key": "d",
+        "text": "Aucune, car chacune contient le signe +",
+        "misconception": "L'élève classe d'après le signe +. Or dans (x + 3) × 2, la somme est entre parenthèses : elle est calculée d'abord, et la dernière opération est la multiplication."
+      }
+    ],
+    "answer": {
+      "value": "a"
+    },
+    "solution_steps": [
+      "Dans $(x + 3) \\times 2$, on calcule d'abord la parenthèse, puis on multiplie par 2 : la dernière opération est une multiplication. C'est un produit.",
+      "Dans $x + 3 \\times 2$, la multiplication est prioritaire : on calcule 3 × 2, puis on l'ajoute à x. La dernière opération est une addition : c'est une somme.",
+      "Les deux expressions contiennent les mêmes signes, mais pas dans le même ordre de calcul : c'est la dernière opération qui compte."
+    ],
+    "hint": "Pour chaque expression, quelle opération fait-on en dernier ?",
+    "estimated_duration_s": 75,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, classe de 5e, Nombres et calculs, Calcul littéral et algébrique : « Déterminer si une expression littérale est une somme ou un produit. »"
+  }
+]

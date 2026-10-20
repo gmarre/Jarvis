@@ -1,9 +1,9 @@
 # Fiche de relecture — synthèse
 
-> 196 compétences, 1192 exercices. Généré depuis `content/`, ne pas éditer à la main.  
+> 221 compétences, 1342 exercices. Généré depuis `content/`, ne pas éditer à la main.  
 > Objectif : juger le **fond** et la **coordination**. Le détail complet, énoncés et corrigés, est dans `RELECTURE_DETAIL.md`.
 
-✅ Aucune anomalie de coordination détectée.
+⚠ **1 compétence(s) à regarder**, signalées dans la colonne *Signal* et détaillées en §3.
 
 ## 1. Le parcours, dans l'ordre où l'élève le suit
 
@@ -33,8 +33,8 @@ C'est la lecture qui compte pour juger la coordination : la difficulté doit mon
 | 20 | `A003` Compter jusqu'à 1000 | CE1 | 2 | 6 | 8 |  |
 | 21 | `A004` Lire un entier | CE1 | 2 | 6 | 8 |  |
 | 22 | `A005` Écrire un entier | CE1 | 2 | 6 | 6 |  |
-| 23 | `A006` Comparer deux entiers | CE1 | 2 | 6 | 11 |  |
-| 24 | `A008` Identifier chiffre et nombre | CE1 | 2 | 6 | 14 |  |
+| 23 | `A008` Identifier chiffre et nombre | CE1 | 2 | 6 | 14 |  |
+| 24 | `A006` Comparer deux entiers | CE1 | 2 | 6 | 11 |  |
 | 25 | `A011` Pair / impair | CE1 | 2 | 6 | 12 |  |
 | 26 | `B005` Multiplication à un chiffre | CE1 | 2 | 7 | 17 |  |
 | 27 | `B015` Calcul mental : multiplier par 10 | CE1 | 2 | 6 | 16 |  |
@@ -172,41 +172,68 @@ C'est la lecture qui compte pour juger la coordination : la difficulté doit mon
 | 159 | `B047` Enchaîner additions et soustractions de… | 5e | 5 | 6 | 18 |  |
 | 160 | `B048` Problèmes d'addition et de soustraction… | 5e | 5 | 6 | 29 |  |
 | 161 | `B052` Calculer une expression avec des carrés… | 5e | 5 | 6 | 15 |  |
-| 162 | `C033` Problèmes d'addition et de soustraction… | 5e | 5 | 6 | 29 |  |
-| 163 | `D026` Diviser par un nombre décimal | 5e | 5 | 6 | 17 |  |
-| 164 | `E034` Coefficient de proportionnalité | 5e | 5 | 6 | 48 |  |
-| 165 | `E007` Vitesse moyenne | 5e | 5 | 6 | 24 |  |
-| 166 | `E035` Reconnaître un tableau de proportionnal… | 5e | 5 | 6 | 47 |  |
-| 167 | `E023` Proportionnalité et graphique | 5e | 5 | 6 | 53 |  |
-| 168 | `E036` Calculer un pourcentage dans le cas gén… | 5e | 5 | 6 | 31 |  |
-| 169 | `E037` Pourcentages par linéarité : 1 %, 10 %,… | 5e | 5 | 6 | 29 |  |
-| 170 | `B049` Multiplier deux décimaux relatifs | 4e | 5 | 6 | 12 |  |
-| 171 | `A031` Puissances d'exposant entier positif d'… | 4e | 5 | 6 | 14 |  |
-| 172 | `A032` Puissances de 10 d'exposant positif ; p… | 4e | 5 | 6 | 19 |  |
-| 173 | `A034` Racine carrée d'un nombre positif | 4e | 5 | 6 | 14 |  |
-| 174 | `A035` Encadrer une racine carrée entre deux e… | 4e | 5 | 6 | 13 |  |
-| 175 | `B022` Multiplier des puissances d'un même nom… | 4e | 5 | 6 | 14 |  |
-| 176 | `A033` Problèmes faisant intervenir des puissa… | 4e | 5 | 6 | 26 |  |
-| 177 | `B050` Diviser deux décimaux relatifs | 4e | 5 | 6 | 11 |  |
-| 178 | `B051` Enchaînements d'opérations avec des rel… | 4e | 5 | 6 | 13 |  |
-| 179 | `B053` Multiplier des puissances de même expos… | 4e | 5 | 6 | 12 |  |
-| 180 | `C007` Simplification de fraction | 4e | 5 | 6 | 13 |  |
-| 181 | `C034` Nombres rationnels : quotients de relat… | 4e | 5 | 6 | 19 |  |
-| 182 | `C015` Multiplier des nombres rationnels | 4e | 5 | 6 | 14 |  |
-| 183 | `C018` Inverse d'un nombre | 4e | 5 | 6 | 12 |  |
-| 184 | `C017` Diviser des fractions | 4e | 5 | 6 | 11 |  |
-| 185 | `C035` Fraction d'une fraction, d'un nombre, d… | 4e | 5 | 6 | 27 |  |
-| 186 | `C036` Enchaîner des opérations avec des fract… | 4e | 6 | 6 | 7 |  |
-| 187 | `C037` Problèmes mobilisant les opérations sur… | 4e | 6 | 6 | 24 |  |
-| 188 | `A024` Reconnaître un nombre premier | 3e | 5 | 6 | 22 |  |
-| 189 | `A025` Décomposer un entier en produit de fact… | 3e | 5 | 6 | 19 |  |
-| 190 | `A036` Puissances d'exposant négatif | 3e | 6 | 6 | 11 |  |
-| 191 | `A037` Puissances de 10 d'exposant négatif ; p… | 3e | 6 | 6 | 14 |  |
-| 192 | `A038` Notation scientifique d'un nombre | 3e | 6 | 6 | 18 |  |
-| 193 | `A040` Problèmes utilisant la racine carrée | 3e | 6 | 6 | 24 |  |
-| 194 | `B023` Multiplier et diviser des puissances | 3e | 6 | 6 | 11 |  |
-| 195 | `A039` Problèmes avec la notation scientifique | 3e | 6 | 6 | 24 |  |
-| 196 | `C008` Fraction irréductible | 3e | 6 | 6 | 11 |  |
+| 162 | `B054` Traduire un programme de calcul en une … | 5e | 5 | 6 | 27 |  |
+| 163 | `B055` Distributivité simple sur des exemples … | 5e | 5 | 6 | 17 |  |
+| 164 | `C033` Problèmes d'addition et de soustraction… | 5e | 5 | 6 | 29 |  |
+| 165 | `D026` Diviser par un nombre décimal | 5e | 5 | 6 | 17 |  |
+| 166 | `E034` Coefficient de proportionnalité | 5e | 5 | 6 | 48 |  |
+| 167 | `E007` Vitesse moyenne | 5e | 5 | 6 | 24 |  |
+| 168 | `E035` Reconnaître un tableau de proportionnal… | 5e | 5 | 6 | 47 |  |
+| 169 | `E023` Proportionnalité et graphique | 5e | 5 | 6 | 53 |  |
+| 170 | `E036` Calculer un pourcentage dans le cas gén… | 5e | 5 | 6 | 31 |  |
+| 171 | `E037` Pourcentages par linéarité : 1 %, 10 %,… | 5e | 5 | 6 | 29 |  |
+| 172 | `F003` Produire une formule : écrire une expre… | 5e | 5 | 6 | 21 |  |
+| 173 | `F002` Calculer la valeur d'une expression lit… | 5e | 5 | 6 | 15 |  |
+| 174 | `F022` Tester une égalité ; réfuter par un con… | 5e | 5 | 6 | 26 |  |
+| 175 | `F023` Équations ax = c et x + b = c : modélis… | 5e | 5 | 6 | 25 |  |
+| 176 | `F061` Somme ou produit : la nature d'une expr… | 5e | 5 | 6 | 14 |  |
+| 177 | `F010` Réduire une expression de la forme ax +… | 5e | 5 | 6 | 14 |  |
+| 178 | `F012` Distributivité simple : développer et f… | 5e | 5 | 6 | 18 | ⚠ |
+| 179 | `F062` Démontrer une propriété générale par le… | 5e | 5 | 6 | 26 |  |
+| 180 | `B049` Multiplier deux décimaux relatifs | 4e | 5 | 6 | 12 |  |
+| 181 | `A031` Puissances d'exposant entier positif d'… | 4e | 5 | 6 | 14 |  |
+| 182 | `A032` Puissances de 10 d'exposant positif ; p… | 4e | 5 | 6 | 19 |  |
+| 183 | `A034` Racine carrée d'un nombre positif | 4e | 5 | 6 | 14 |  |
+| 184 | `A035` Encadrer une racine carrée entre deux e… | 4e | 5 | 6 | 13 |  |
+| 185 | `B022` Multiplier des puissances d'un même nom… | 4e | 5 | 6 | 14 |  |
+| 186 | `A033` Problèmes faisant intervenir des puissa… | 4e | 5 | 6 | 26 |  |
+| 187 | `B050` Diviser deux décimaux relatifs | 4e | 5 | 6 | 11 |  |
+| 188 | `B051` Enchaînements d'opérations avec des rel… | 4e | 5 | 6 | 13 |  |
+| 189 | `B053` Multiplier des puissances de même expos… | 4e | 5 | 6 | 12 |  |
+| 190 | `C007` Simplification de fraction | 4e | 5 | 6 | 13 |  |
+| 191 | `C034` Nombres rationnels : quotients de relat… | 4e | 5 | 6 | 19 |  |
+| 192 | `C015` Multiplier des nombres rationnels | 4e | 5 | 6 | 14 |  |
+| 193 | `C018` Inverse d'un nombre | 4e | 5 | 6 | 12 |  |
+| 194 | `C017` Diviser des fractions | 4e | 5 | 6 | 11 |  |
+| 195 | `C035` Fraction d'une fraction, d'un nombre, d… | 4e | 5 | 6 | 27 |  |
+| 196 | `F006` Écrire et réduire des produits : 3x, x²… | 4e | 5 | 6 | 17 |  |
+| 197 | `F014` Distributivité simple avec des relatifs… | 4e | 5 | 6 | 12 |  |
+| 198 | `F063` Tester si un nombre vérifie une égalité… | 4e | 5 | 6 | 14 |  |
+| 199 | `F024` Résoudre une équation ax + b = c | 4e | 5 | 6 | 12 |  |
+| 200 | `F064` Programme de calcul : l'appliquer à un … | 4e | 5 | 6 | 29 |  |
+| 201 | `C036` Enchaîner des opérations avec des fract… | 4e | 6 | 6 | 7 |  |
+| 202 | `C037` Problèmes mobilisant les opérations sur… | 4e | 6 | 6 | 24 |  |
+| 203 | `F025` Résoudre une équation ax + b = cx + d | 4e | 6 | 6 | 10 |  |
+| 204 | `F065` Démontrer avec le calcul littéral (4e) … | 4e | 6 | 6 | 24 |  |
+| 205 | `F066` Mettre un problème en équation et le ré… | 4e | 6 | 6 | 30 |  |
+| 206 | `A024` Reconnaître un nombre premier | 3e | 5 | 6 | 22 |  |
+| 207 | `A025` Décomposer un entier en produit de fact… | 3e | 5 | 6 | 19 |  |
+| 208 | `A036` Puissances d'exposant négatif | 3e | 6 | 6 | 11 |  |
+| 209 | `A037` Puissances de 10 d'exposant négatif ; p… | 3e | 6 | 6 | 14 |  |
+| 210 | `A038` Notation scientifique d'un nombre | 3e | 6 | 6 | 18 |  |
+| 211 | `A040` Problèmes utilisant la racine carrée | 3e | 6 | 6 | 24 |  |
+| 212 | `B023` Multiplier et diviser des puissances | 3e | 6 | 6 | 11 |  |
+| 213 | `A039` Problèmes avec la notation scientifique | 3e | 6 | 6 | 24 |  |
+| 214 | `C008` Fraction irréductible | 3e | 6 | 6 | 11 |  |
+| 215 | `F013` Double distributivité : développer et r… | 3e | 6 | 6 | 18 |  |
+| 216 | `F020` Développer avec les identités remarquab… | 3e | 6 | 6 | 17 |  |
+| 217 | `F021` Factoriser avec les identités remarquab… | 3e | 6 | 6 | 13 |  |
+| 218 | `F031` Résoudre une inéquation ax ⩾ b | 3e | 6 | 6 | 15 |  |
+| 219 | `F067` Factoriser par un facteur commun appare… | 3e | 6 | 6 | 14 |  |
+| 220 | `F027` Résoudre une équation produit nul | 3e | 6 | 6 | 14 |  |
+| 221 | `F068` Résoudre une équation x² = a | 3e | 6 | 6 | 16 |  |
+
+**Sans exercice (6)** : `B056` Calcul mental : distributivité de la multiplication sur l'addition, `B057` Programme de calcul : l'exécuter, `B058` Programme de calcul : le produire, l'exécuter jusqu'à trois instructions, `F069` Nombre inconnu : égalité à trous, symbole, problème algébrique, `F070` Suites de nombres et de motifs : trouver la règle, poursuivre, `F071` Motif évolutif : nombre d'éléments à une étape donnée
 
 ## 2. Par chapitre
 
@@ -223,8 +250,8 @@ Le chapitre est l'unité qu'un exercice bilan validerait.
 | `A003` Compter jusqu'à 1000 | Lire, écrire et comparer les entiers jusqu'à 1000 | 6 |
 | `A004` Lire un entier | Lire à voix haute tout entier écrit en chiffres | 6 |
 | `A005` Écrire un entier | Transcrire en chiffres un entier énoncé à l'oral | 6 |
-| `A006` Comparer deux entiers | Utiliser <, > et = pour comparer deux entiers | 6 |
 | `A008` Identifier chiffre et nombre | Distinguer un chiffre (0 à 9) d'un nombre | 6 |
+| `A006` Comparer deux entiers | Utiliser <, > et = pour comparer deux entiers | 6 |
 | `A011` Pair / impair | Reconnaître si un entier est pair ou impair | 6 |
 | `A007` Ranger plusieurs entiers | Ordonner une liste d'entiers en ordre croissant ou décroissant | 6 |
 | `A009` Comprendre la valeur positionnelle | Identifier unités, dizaines, centaines et milliers | 6 |
@@ -702,6 +729,10 @@ Le chapitre est l'unité qu'un exercice bilan validerait.
 | `A038` Notation scientifique d'un nombre | Écrire un nombre décimal positif sous la forme a × 10ⁿ, avec a décimal, 1… | 6 |
 | `A039` Problèmes avec la notation scient… | Résoudre un problème issu des sciences ou de la vie courante en calculant… | 6 |
 
+## 3. Ce qui mérite ton oeil
+
+- **`F012` Distributivité simple : développer et factoriser k(a + b)** (5e) — maîtrise pas plus exigeante que découverte
+
 ## 4. Les exercices, une ligne chacun
 
 ### ── CP ──
@@ -994,19 +1025,6 @@ Le chapitre est l'unité qu'un exercice bilan validerait.
 | M | nume | Écris en chiffres : cinq-cent-quatre-vingt-dix. | 590 |
 | M | nume | Maé entend « six-cent-soixante-quatorze ». Elle écrit 664. Quel nombre aurait-elle dû écrir… | 674 |
 
-**`A006` · Comparer deux entiers** — diff. 2, seuil 3/4  
-*Utiliser <, > et = pour comparer deux entiers*
-> « Comparer, encadrer, intercaler des nombres entiers en utilisant les symboles (=, <, >). »
-
-| | Type | Demandé | Réponse |
-|---|---|---|---|
-| D | qcm | Quel est le plus grand de ces deux nombres : 45 et 54 ? | a) 54 |
-| D | vrai | Cette écriture est-elle vraie ? 71 > 69 | vrai |
-| E | qcm | Quel symbole faut-il placer entre 302 et 320 ? 302 … 320 | a) < |
-| E | qcm | Quel nombre est compris entre 650 et 700 ? | c) 690 |
-| M | qcm | Quel est le plus grand de ces deux nombres : 999 et 1 000 ? | a) 1 000 |
-| M | nume | Quel chiffre faut-il écrire dans la case pour que ce soit vrai ? 4\square 6 > 486 | 9 |
-
 **`A008` · Identifier chiffre et nombre** — diff. 2, seuil 3/4  
 *Distinguer un chiffre (0 à 9) d'un nombre*
 > « Connaitre la valeur des chiffres en fonction de leur position dans un nombre. »
@@ -1019,6 +1037,19 @@ Le chapitre est l'unité qu'un exercice bilan validerait.
 | E | nume | Tom numérote les pages de son cahier, de 1 à 12. Combien de chiffres écrit-il en tout ? | 15 |
 | M | vrai | Le nombre 99 s'écrit avec plus de chiffres que le nombre 100. | faux |
 | M | qcm | Avec les chiffres 6, 0 et 2, chacun une seule fois, quel est le plus petit nombre de trois … | d) 206 |
+
+**`A006` · Comparer deux entiers** — diff. 2, seuil 3/4  
+*Utiliser <, > et = pour comparer deux entiers*
+> « Comparer, encadrer, intercaler des nombres entiers en utilisant les symboles (=, <, >). »
+
+| | Type | Demandé | Réponse |
+|---|---|---|---|
+| D | qcm | Quel est le plus grand de ces deux nombres : 45 et 54 ? | a) 54 |
+| D | vrai | Cette écriture est-elle vraie ? 71 > 69 | vrai |
+| E | qcm | Quel symbole faut-il placer entre 302 et 320 ? 302 … 320 | a) < |
+| E | qcm | Quel nombre est compris entre 650 et 700 ? | c) 690 |
+| M | qcm | Quel est le plus grand de ces deux nombres : 999 et 1 000 ? | a) 1 000 |
+| M | nume | Quel chiffre faut-il écrire dans la case pour que ce soit vrai ? 4\square 6 > 486 | 9 |
 
 **`A011` · Pair / impair** — diff. 2, seuil 3/4  
 *Reconnaître si un entier est pair ou impair*
@@ -2827,6 +2858,32 @@ Le chapitre est l'unité qu'un exercice bilan validerait.
 | M | qcm | Une seule de ces expressions vaut 100. Laquelle ? | b) (2 + 3)² × 4 |
 | M | nume | Une boîte cubique de 6 cm d'arête se remplit de cubes de 1 cm d'arête. On a déjà rangé 4 co… | 72 |
 
+**`B054` · Traduire un programme de calcul en une seule expression numérique** — diff. 5, seuil 3/4  
+*Écrire en une seule expression, avec les parenthèses nécessaires, une suite d'opérations donnée en phrases, un programme de calcul ou un problème, puis la calculer : « choisir 7, ajouter 5, multiplier le résultat par 3, retrancher 4 » s'écrit (7 + 5) × 3 − 4 = 32 ; 3 cahiers à 2,50 € et 2 stylos à 1,20 € coûtent 3 × 2,50 + 2 × 1,20 = 9,90 € ; reconnaître, parmi plusieurs expressions, celle qui traduit le programme. L'erreur type est d'oublier les parenthèses (7 + 5 × 3 − 4 = 18) ou d'écrire une suite d'égalités fausses (7 + 5 = 12 × 3 = 36 − 4). Nombres positifs ; la lettre arrive avec F003, le programme appliqué à un nombre négatif avec B051. Réponse : QCM entre expressions, ou la valeur de l'expression (un nombre) ; écrire l'expression au clavier attend la saisie des expressions numériques (section 5 du compte rendu). En attendant la saisie des expressions : QCM. Figure : aucune.*
+> « Traduire un problème, une succession donnée d'opérations, un programme de calcul, en une seule expression, en faisant appel ou non à des parenthèses. »
+
+| | Type | Demandé | Réponse |
+|---|---|---|---|
+| D | qcm | Programme de calcul : choisir 6 ; ajouter 4 ; multiplier le résultat par 5. Quelle expressi… | b) (6 + 4) × 5 |
+| D | text | Programme de calcul : choisir 7 ; le multiplier par 5 ; ajouter 6 au résultat. Écris ce pro… | 7 × 5 + 6 |
+| E | text | Programme de calcul : choisir 13 ; soustraire 5 ; multiplier le résultat par 4 ; ajouter 7.… | (13 − 5) × 4 + 7 |
+| E | vrai | Programme de calcul : choisir 12 ; ajouter 8 ; diviser le résultat par 4. Noa le traduit pa… | faux |
+| M | text | Sacha a 50 €. Il achète 2 bandes dessinées à 13,50 € chacune. Écris en une seule expression… | 50 − 2 × 13,50 |
+| M | qcm | Trois amis achètent une pizza à 15 € et une salade à 6 €. Ils partagent la dépense en parts… | d) (15 + 6) ÷ 3 |
+
+**`B055` · Distributivité simple sur des exemples numériques** — diff. 5, seuil 3/4  
+*Savoir que multiplier une somme ou une différence par un nombre revient à multiplier chacun de ses termes par ce nombre, k × (a + b) = k × a + k × b et k × (a − b) = k × a − k × b, et s'en servir dans les deux sens pour calculer mentalement : 7 × 102 = 7 × 100 + 7 × 2 = 714 ; 25 × 98 = 25 × 100 − 25 × 2 = 2 450 ; 13 × 7 + 13 × 3 = 13 × (7 + 3) = 130 ; voir l'égalité sur l'aire d'un rectangle partagé en deux (6 × (4 + 3) = 6 × 4 + 6 × 3 = 42). L'erreur type est de ne multiplier que le premier terme (7 × 102 = 7 × 100 + 2). Nombres entiers positifs ; la même règle avec des lettres est F012. Réponse : un nombre, ou le nombre manquant d'une égalité (7 × 102 = 7 × 100 + 7 × …), ou QCM entre écritures. Figure utile : geometrie, rectangle partagé en deux, longueurs écrites.*
+> « Connaitre et utiliser la distributivité simple sur des exemples numériques. »
+
+| | Type | Demandé | Réponse |
+|---|---|---|---|
+| D | qcm | Ce rectangle quadrillé est partagé en deux rectangles. Les longueurs sont données en carrea… | c) 5 × 8 + 5 × 3 |
+| D | nume | Pour calculer 9 × 104 de tête, Inès décompose 104 en 100 + 4 : 9 × 104 = 9 × 100 + 9 × 4 Co… | 936 |
+| E | nume | Calcule 8 × 97 de tête, en écrivant 97 = 100 − 3. | 776 |
+| E | qcm | Quelle écriture permet de calculer facilement 17 × 6 + 17 × 4 ? | b) 17 × (6 + 4) |
+| M | nume | Une école commande 26 cahiers à 7 € et 26 classeurs à 3 €. Calcule de tête le montant de la… | 260 |
+| M | vrai | Pour calculer 12 × 49, Lucas écrit : 12 × 49 = 12 × 50 - 1 = 599 A-t-il raison ? | faux |
+
 **`C033` · Problèmes d'addition et de soustraction de fractions** — diff. 5, seuil 3/4  
 *Résoudre un problème où des parts d'un même tout s'ajoutent ou se retranchent : quelle part représentent deux parts ensemble, quelle part reste-t-il, de combien une part dépasse l'autre. Exemple : un jardin est planté pour 1/3 en légumes et pour 1/4 en fleurs ; la partie plantée représente 7/12 du jardin, il en reste 5/12. Savoir que le tout vaut 1. L'erreur type est d'oublier de retrancher du tout (répondre 7/12 à « quelle part reste-t-il ? »). Les parts sont des fractions du même tout ; prendre une fraction d'une quantité relève de C004, et la fraction d'un reste de la 4e (C037). Réponse : une fraction, comparée par sa valeur. Figure : aucune.*
 > « Résoudre des problèmes avec des additions et soustractions de fractions. »
@@ -2930,6 +2987,110 @@ Le chapitre est l'unité qu'un exercice bilan validerait.
 | E | vrai | Zoé calcule 51 % de 46 : « 50 % de 46, c'est 23 ; 1 % de 46, c'est 0,46 ; donc 51 % de 46, … | vrai |
 | M | nume | Une association s'était fixé un objectif de 350 € de dons. Elle a récolté 120 % de cet obje… | 420 |
 | M | qcm | On ne connaît pas le prix d'un vélo, mais on sait que 10 % de ce prix valent 12 €. Combien … | b) 54 € |
+
+**`F003` · Produire une formule : écrire une expression littérale** — diff. 5, seuil 3/4  
+*Utiliser une lettre pour désigner un nombre quelconque et écrire une expression littérale : le double de n (2 × n, noté 2n : le signe × se sous-entend devant une lettre ou une parenthèse), le triple, le successeur n + 1, le prédécesseur n − 1, le carré n × n = n² ; une formule de géométrie (périmètre d'un rectangle 2 × (L + l), aire L × l, périmètre d'un carré 4 × c) ; le nombre d'éléments à l'étape n d'un motif (3n + 1 allumettes) ; traduire une phrase en expression et une expression en phrase (« le triple de x, augmenté de 5 » : 3x + 5). L'erreur type est de confondre 2n et n² (le double et le carré), et d'oublier les parenthèses (2 × L + l au lieu de 2 × (L + l)). Réponse : QCM entre expressions, ou la valeur de la formule pour une valeur donnée (un nombre) ; écrire la formule au clavier attend la saisie des expressions (section 5). En attendant la saisie des expressions : QCM. Figure utile : geometrie, rectangle dont les côtés sont marqués x et x + 3.*
+> « Produire des formules (double, triple, carré, successeur, prédécesseur, aire, périmètre, etc.). »
+
+| | Type | Demandé | Réponse |
+|---|---|---|---|
+| D | qcm | Une boîte contient x crayons. Lou a 2 boîtes pleines et 3 crayons en plus. Quelle expressio… | d) 2x + 3 |
+| D | vrai | On note c la longueur du côté d'un carré. Zoé affirme : « L'aire de ce carré s'écrit 2c. » … | faux |
+| E | qcm | On ne connaît pas la longueur x de ce rectangle. Quelle expression donne son périmètre ? | b) 2 × (x + 7) |
+| E | text | Un taxi fait payer 4 € au départ, puis 2 € par kilomètre parcouru. Écris le prix, en euros,… | 2x + 4 |
+| M | text | La longueur d'un rectangle est le double de sa largeur. On note x sa largeur. Écris une exp… | 2 × (2x + x) |
+| M | qcm | On note n un nombre. Quelle phrase traduit l'expression 2(n + 5) ? | c) Le double de la somme de n et … |
+
+**`F002` · Calculer la valeur d'une expression littérale par substitution** — diff. 5, seuil 3/4  
+*Remplacer la lettre par un nombre positif donné et calculer en respectant les priorités, y compris avec un carré : pour x = 4, 3x + 5 = 3 × 4 + 5 = 17 ; 2x² = 2 × 4² = 32 ; x(x + 1) = 4 × 5 = 20 ; pour x = 2,5, 4x − 1 = 9 ; une formule de géométrie (aire L × l pour L = 7,5 et l = 4 : 30). Savoir rétablir le signe × sous-entendu. L'erreur type est de juxtaposer les chiffres (3x vaut 34 pour x = 4) ou de calculer (2x)² au lieu de 2x² (64 au lieu de 32). Nombres positifs entiers ou décimaux ; la valeur pour un nombre négatif est en 4e (F063). Réponse : un nombre. Figure : aucune.*
+> « Calculer la valeur d'une expression littérale par substitution. »
+
+| | Type | Demandé | Réponse |
+|---|---|---|---|
+| D | nume | On veut calculer 4x + 7 pour x = 6. On remplace x par 6 : 4x devient 4 × 6. Quelle est la v… | 31 |
+| D | qcm | Quelle est la valeur de 2x^{2} pour x = 3 ? | a) 18 |
+| E | nume | Calcule la valeur de x(x + 4) pour x = 0{,}5. | 2.25 |
+| E | vrai | Pour x = 1{,}5, Jade affirme que 3(x + 2) vaut 10,5. A-t-elle raison ? | vrai |
+| M | nume | Une location de vélo coûte 2{,}5t + 4 euros, où t est la durée en heures. Combien coûte une… | 12.75 |
+| M | qcm | Pour x = 4, laquelle de ces expressions a la plus grande valeur ? | c) (x + 3)^{2} |
+
+**`F022` · Tester une égalité ; réfuter par un contre-exemple** — diff. 5, seuil 3/4  
+*Pour une égalité entre deux expressions qui contiennent une lettre, calculer chaque membre pour une valeur donnée et dire si l'égalité est vraie ou fausse pour cette valeur : 2(x + 3) = 2x + 6 est vraie pour x = 1 (8 = 8) ; 3x + 4 = 5x est vraie pour x = 2 (10 = 10) mais fausse pour x = 0 (4 et 0). Savoir qu'une égalité vraie pour quelques valeurs ne l'est pas forcément pour toutes, et qu'un seul contre-exemple suffit à montrer qu'une affirmation est fausse (« n² est toujours plus grand que n » : faux pour n = 1). L'erreur type est de conclure qu'une égalité est toujours vraie après un ou deux essais réussis. Réponse : vrai/faux, la valeur de chaque membre (un nombre), ou QCM pour choisir un contre-exemple. Figure : aucune.*
+> « Tester si une égalité entre expressions algébriques comportant une variable est vraie ou fausse. »
+
+| | Type | Demandé | Réponse |
+|---|---|---|---|
+| D | nume | Pour savoir si l'égalité 5x + 2 = 3x + 8 est vraie quand x = 3, on calcule ses deux membres… | 17 |
+| D | vrai | Affirmation : l'égalité 4x + 3 = 2x + 9 est vraie pour x = 3. Vrai ou faux ? | vrai |
+| E | qcm | Tom affirme : « Pour tout nombre entier n, 3n est plus grand que n + 5. » Quelle valeur de … | c) n = 2 |
+| E | nume | On veut vérifier que l'égalité 4x + 1 = 2x + 4 est vraie pour x = 1{,}5. Calcule ses deux m… | 7 |
+| M | vrai | Inès teste l'égalité x^{2} + 6 = 5x : elle est vraie pour x = 2 et pour x = 3. Inès conclut… | faux |
+| M | nume | Noé vérifie que n^{2} est plus petit que 4n + 6 pour tous les entiers n de 1 à 5. Il en con… | 6 |
+
+**`F023` · Équations ax = c et x + b = c : modéliser, résoudre par l'opération inverse** — diff. 5, seuil 3/4  
+*Donner à la lettre le statut d'inconnue : traduire un problème « à trou » par une équation du type x + b = c ou ax = c (« Léa a 15 billes ; combien doit-elle en gagner pour en avoir 42 ? » : x + 15 = 42 ; « 6 cahiers identiques coûtent 15 € » : 6x = 15), puis la résoudre par l'opération inverse : x = 42 − 15 = 27 ; x = 15 ÷ 6 = 2,5 ; 3x = 7 donne x = 7/3 ; x + 9 = 4 donne x = −5 ; 1,5x = 6 donne x = 4 ; vérifier la solution en remplaçant x (F022). L'erreur type est d'appliquer l'opération de l'énoncé au lieu de l'opération inverse (x + 15 = 42 donne x = 57) ou de diviser dans le mauvais sens (6x = 15 donne x = 6/15). Réponse : la solution, un nombre (« x = 27 » est accepté) ; l'équation qui modélise un problème se choisit (QCM) en attendant la saisie des équations (section 5). En attendant la saisie des expressions : QCM pour l'équation. Figure : aucune.*
+> « Résoudre des équations du type a𝑥 = c ou 𝑥 + b = c par des méthodes arithmétiques s'appuyant sur les opérations inverses. »
+
+| | Type | Demandé | Réponse |
+|---|---|---|---|
+| D | nume | Lou avait x billes. Elle en gagne 17 et en a alors 45 : x + 17 = 45. Combien de billes Lou … | 28 |
+| D | qcm | Cinq places de cinéma identiques coûtent 42 euros en tout. Quelle équation permet de trouve… | d) 5x = 42 |
+| E | text | Un ruban mesure le triple de la longueur x d'un crayon, soit 51 cm. Écris une équation qui … | 3x = 51 |
+| E | nume | 2,5 kg de pommes coûtent 9 euros. On note x le prix d'un kilogramme, en euros : 2{,}5x = 9.… | 3.6 |
+| M | nume | Le matin, il faisait x °C. La température a monté de 7 degrés, et il fait 3 °C à midi : x +… | -4 |
+| M | text | Sept amis se partagent 3 pizzas identiques à parts égales. On note x la part de chacun, en … | 3/7 |
+
+**`F061` · Somme ou produit : la nature d'une expression littérale** — diff. 5, seuil 3/4  
+*Dire si une expression littérale est une somme (ou une différence) ou un produit d'après la dernière opération à effectuer, et nommer ses termes ou ses facteurs : 3x + 2 est une somme de deux termes, 3x et 2 ; 5(x + 4) est un produit de deux facteurs, 5 et x + 4 ; 2x − 7 est une différence ; 3x est un produit. Savoir que développer transforme un produit en somme et que factoriser transforme une somme en produit (F012). L'erreur type est de se fier à la première opération lue (5(x + 4) jugé « somme » parce qu'il contient +). Réponse : QCM (somme, différence, produit), vrai/faux, ou le nombre de termes. Figure : aucune.*
+> « Déterminer si une expression littérale est une somme ou un produit. »
+
+| | Type | Demandé | Réponse |
+|---|---|---|---|
+| D | qcm | Pour calculer 4x + 9 quand x vaut 2, on fait d'abord 4 × 2, puis on ajoute 9. Quelle est la… | c) Une somme |
+| D | qcm | Quelle phrase décrit l'expression 6(x + 2) ? | b) Un produit de deux facteurs : … |
+| E | vrai | Mehdi affirme : « Dans l'expression 8 + 3x, le nombre 3 est un facteur, pas un terme. » A-t… | vrai |
+| E | nume | Combien de termes compte l'expression x^{2} + 2(x + 3) + 7 ? | 3 |
+| M | qcm | Une seule de ces expressions est un produit. Laquelle ? | d) (x + 1) × 5 |
+| M | qcm | Noé écrit (x + 3) × 2 et Lou écrit x + 3 × 2. Laquelle de ces deux expressions est un produ… | a) Celle de Noé |
+
+**`F010` · Réduire une expression de la forme ax + b** — diff. 5, seuil 3/4  
+*Regrouper les termes en x entre eux et les nombres entre eux pour écrire une somme sous la forme ax + b, avec des coefficients décimaux, éventuellement négatifs après regroupement : 3x + 5 + 2x − 1 = 5x + 4 ; 4,5x + 2 − 1,5x = 3x + 2 ; x + x = 2x ; 1x s'écrit x ; 2x + 7 − 5x = −3x + 7. Savoir que 3x + 5 ne se réduit pas : 3x et 5 ne sont pas des termes semblables. L'erreur type est d'additionner un terme en x et un nombre (3x + 5 = 8x), ou de perdre le signe d'une soustraction en regroupant. Les produits (3x × 2x) et les termes en x² sont en 4e (F006). Réponse : QCM entre formes réduites, ou deux nombres (le coefficient de x, puis le terme constant) ; écrire la forme réduite au clavier attend la saisie des expressions (section 5). En attendant la saisie des expressions : QCM ou deux nombres. Figure : aucune.*
+> « Réduire une expression littérale de la forme a𝑥 + b, où a et b sont des nombres décimaux. »
+
+| | Type | Demandé | Réponse |
+|---|---|---|---|
+| D | qcm | Un sac contient 4 paquets de x billes, 7 billes seules et 2 autres paquets de x billes. Le … | b) 6x + 7 |
+| D | text | Réduis l'expression 5x + 3 + x + 6. | 6x + 9 |
+| E | text | Réduis l'expression 3{,}5x + 8 - 1{,}2x + 4. | 2,3x + 12 |
+| E | nume | Une fois réduite, l'expression 7x + 10 - 9x - 4 s'écrit ax + b. Quel est le nombre a, placé… | -2 |
+| M | qcm | Quelle est la forme réduite de 9x - 4 - 3x + 2 ? | c) 6x - 2 |
+| M | text | Les côtés d'un triangle mesurent 2x + 3, x + 5 et 4x - 1 (en cm). Écris l'expression réduit… | 7x + 7 |
+
+**`F012` · Distributivité simple : développer et factoriser k(a + b)** — diff. 5, seuil 3/4  ⚠  
+*Utiliser k(a + b) = ka + kb et k(a − b) = ka − kb avec un nombre k entier positif, dans les deux sens : développer 3(x + 4) = 3x + 12 et 2(3x − 5) = 6x − 10, puis réduire (3(x + 2) + 4x = 7x + 6) ; factoriser par un facteur commun lisible dans les tables, 5x + 15 = 5(x + 3) et 6x − 4 = 2(3x − 2) ; vérifier un résultat en développant. L'erreur type est de ne multiplier que le premier terme (3(x + 4) = 3x + 4) ou d'oublier le 1 en factorisant (5x + 5 = 5(x + 1), pas 5x). Coefficient négatif et facteur x en 4e (F014). Réponse : QCM entre écritures, ou un nombre manquant (3(x + 4) = 3x + …) ; écrire la forme développée ou factorisée au clavier attend la saisie des expressions avec contrainte de forme (section 5). En attendant la saisie des expressions : QCM ou nombre manquant. Figure utile : geometrie, rectangle de largeur 3 partagé en deux rectangles de longueurs x et 4.*
+> « Exploiter les relations k(a + b) = ka + kb ou k(a – b) = ka – kb pour factoriser, ou développer une expression littérale. »
+
+| | Type | Demandé | Réponse |
+|---|---|---|---|
+| D | text | Ce rectangle est partagé en deux rectangles (longueurs en cm). Écris son aire totale comme … | 6x + 12 |
+| D | qcm | Sept élèves achètent chacun un livre à x euros et une affiche à 5 euros. La dépense totale … | c) 7x + 35 |
+| E | nume | Complète la factorisation : 6x + 42 = 6(x + …). Quel nombre manque ? | 7 |
+| E | text | Développe puis réduis l'expression 4(2x + 3) + 5x. | 13x + 12 |
+| M | text | Le périmètre d'un rectangle de longueur x et de largeur 3 s'écrit 2x + 6. Écris ce périmètr… | 2(x + 3) |
+| M | qcm | Lina doit factoriser 9x + 9. Quelle est la bonne factorisation ? | b) 9(x + 1) |
+
+**`F062` · Démontrer une propriété générale par le calcul littéral (5e)** — diff. 5, seuil 3/4  
+*Distinguer vérifier sur des exemples et démontrer : traduire une propriété avec une lettre, transformer l'expression (réduire, développer, factoriser) et conclure pour tous les nombres. Exemples : la somme de trois entiers consécutifs, n + (n + 1) + (n + 2) = 3n + 3 = 3(n + 1), est un multiple de 3 ; le programme « choisir un nombre, ajouter 4, multiplier par 2, retrancher 8 » donne toujours le double du nombre choisi, car 2(n + 4) − 8 = 2n + 8 − 8 = 2n. L'erreur type est de croire que trois exemples réussis prouvent la propriété. Rédiger une démonstration ne se fait pas à l'écran : l'élève complète une étape (un coefficient, un nombre manquant), remet des étapes dans l'ordre (QCM), choisit la bonne conclusion, ou dit si une suite d'exemples prouve la propriété (vrai/faux). Réponse : nombre manquant, QCM ou vrai/faux. Figure : aucune.*
+> « Démontrer une propriété générale par le calcul littéral. »
+
+| | Type | Demandé | Réponse |
+|---|---|---|---|
+| D | vrai | Programme : choisir un nombre, ajouter 7, multiplier par 2, retrancher 14. Avec 4, 6 et 10,… | faux |
+| D | nume | Deux entiers consécutifs s'écrivent n et n + 1. Pour démontrer que leur somme est toujours … | 1 |
+| E | qcm | On a démontré que, pour tout entier n, n + (n + 1) + (n + 2) + (n + 3) = 4n + 6. Quelle con… | b) La somme de quatre entiers con… |
+| E | nume | Programme : choisir un nombre, ajouter 9, multiplier par 4, retrancher le quadruple du nomb… | 36 |
+| M | qcm | Quel raisonnement démontre que, pour tout entier n, 5n + 10 est un multiple de 5 ? | d) 5n + 10 = 5(n + 2), et n + 2 e… |
+| M | vrai | Affirmation : pour tout entier n, 4(n + 2) + 2n + 4 est un multiple de 6. Maé écrit : 4(n +… | vrai |
 
 ### ── 4e ──
 
@@ -3141,6 +3302,71 @@ Le chapitre est l'unité qu'un exercice bilan validerait.
 | M | text | Les 3/4 d'un champ sont cultivés. Le tiers de la partie cultivée est en blé, et la moitié d… | 1/8 |
 | M | nume | Une bibliothèque contient 480 livres. Les 3/8 des livres sont des romans, et les 2/9 des ro… | 40 |
 
+**`F006` · Écrire et réduire des produits : 3x, x², 3x × 2x = 6x²** — diff. 5, seuil 3/4  
+*Écrire un produit sans le signe × (3 × x = 3x ; x × 3 = 3x ; 1 × x = x) et le rétablir pour calculer ; distinguer x + x = 2x et x × x = x² ; réduire un produit de nombres et de lettres en multipliant les nombres entre eux et les lettres entre elles : 3x × 2x = 6x² ; −4 × 5x = −20x ; (−3x) × (−2x) = 6x² ; 2x × x = 2x² ; réduire une somme de termes en x² et en x : 3x² + 2x − x² + 5x = 2x² + 7x. L'erreur type est d'écrire x + x = x², 3x × 2x = 6x ou 3x × 2x = 5x², et d'additionner x² et x. Réponse : QCM entre écritures réduites, vrai/faux, ou le coefficient (un nombre) ; écrire la forme réduite au clavier attend la saisie des expressions (section 5). En attendant la saisie des expressions : QCM ou coefficient. Figure : aucune.*
+> « Écrire 3 × 𝑥 sous la forme 3𝑥 et savoir que 3𝑥 c'est 3 × 𝑥. »
+
+| | Type | Demandé | Réponse |
+|---|---|---|---|
+| D | qcm | Un carré a pour côté x. Son périmètre s'écrit x + x + x + x et son aire x × x. Quelle ligne… | b) x + x = 2x et x × x = x^{2} |
+| D | nume | Pour réduire 3x × 5x, on range les facteurs : 3x × 5x = 3 × 5 × x × x. Le résultat s'écrit … | 15 |
+| E | text | Réduis le produit (-4x) × 6x. Écris le résultat sans signe ×. | −24x² |
+| E | vrai | Inès réduit 4x × 2x et écrit : « 4x × 2x = 8x ». A-t-elle raison ? | faux |
+| M | text | Un rectangle mesure 5x de long et 2x de large. On y découpe un carré de côté x. Écris l'air… | 9x² |
+| M | qcm | Quel facteur complète l'égalité (-2x) × … = 10x^{2} ? | c) -5x |
+
+**`F014` · Distributivité simple avec des relatifs et des lettres : développer, factoriser** — diff. 5, seuil 3/4  
+*Développer et réduire k(a + b) quand k est négatif ou contient la lettre, et factoriser par un facteur commun numérique ou littéral : −3(2x − 5) = −6x + 15 ; x(x + 4) = x² + 4x ; 2x(3x − 1) = 6x² − 2x ; 5 − 2(x − 4) = 5 − 2x + 8 = −2x + 13 ; −(x − 3) = −1 × (x − 3) = −x + 3 ; factoriser x² + 5x = x(x + 5) et 6x² − 9x = 3x(2x − 3). L'erreur type est l'erreur de signe sur le second terme (−3(2x − 5) = −6x − 15) ou de ne distribuer qu'au premier terme. Réponse : QCM entre écritures, ou un coefficient manquant (un nombre) ; écrire la forme développée ou factorisée au clavier attend la saisie des expressions avec contrainte de forme (section 5). En attendant la saisie des expressions : QCM ou coefficient. Figure utile : geometrie, rectangle de côtés x et x + 4 partagé en un carré et un rectangle.*
+> « Connaitre et utiliser la distributivité simple pour développer et factoriser une expression algébrique. »
+
+| | Type | Demandé | Réponse |
+|---|---|---|---|
+| D | qcm | On développe -3(x + 5) en multipliant -3 par chaque terme de la parenthèse. Quel résultat e… | a) -3x - 15 |
+| D | nume | On développe : -5(x - 2) = -5x + … Quel nombre complète l'égalité ? | 10 |
+| E | text | Développe et réduis 6 - 2(3x - 4). | −6x + 14 |
+| E | qcm | Laquelle de ces expressions est égale à 4x^{2} - 10x ? | b) 2x(2x - 5) |
+| M | text | Un rectangle a pour largeur x et pour aire x^{2} + 9x. Écris sa longueur en fonction de x. | x + 9 |
+| M | nume | On factorise en mettant -6 en facteur : -6x - 18 = -6(x + …). Quel nombre complète l'égalit… | 3 |
+
+**`F063` · Tester si un nombre vérifie une égalité ; valeur pour un nombre relatif** — diff. 5, seuil 3/4  
+*Calculer la valeur d'une expression pour un nombre relatif, en mettant le nombre négatif entre parenthèses : pour x = −3, 2x + 7 = 2 × (−3) + 7 = 1 ; x² = (−3)² = 9 ; 2x² − 5x + 1 = 18 + 15 + 1 = 34 ; puis tester si un nombre vérifie une égalité en calculant séparément les deux membres : −2 est-il solution de 3x + 7 = x + 3 ? 3 × (−2) + 7 = 1 et −2 + 3 = 1, donc oui. L'erreur type est d'écrire −3² = −9 pour x² avec x = −3, ou d'oublier un signe dans un produit. Réponse : un nombre, ou vrai/faux (le nombre est-il solution ?). Figure : aucune.*
+> « Tester si un nombre vérifie une égalité. »
+
+| | Type | Demandé | Réponse |
+|---|---|---|---|
+| D | nume | On calcule 3x - 5 pour x = -4. On remplace x par (-4), entre parenthèses : 3 × (-4) - 5. Qu… | -17 |
+| D | qcm | Pour x = -7, on remplace x par (-7) dans x^{2}. Quelle valeur obtient-on ? | d) 49 |
+| E | nume | Calcule 2x^{2} - 3x + 4 pour x = -2. | 18 |
+| E | vrai | Vrai ou faux : le nombre −3 vérifie l'égalité 4x + 7 = x - 2. | vrai |
+| M | nume | Un seul des nombres −2 ; −1 ; 0 ; 1 ; 2 vérifie l'égalité x^{2} + x = 2x + 6. Lequel ? | -2 |
+| M | qcm | Quelle est la valeur de -x^{2} + 5x pour x = -2 ? | c) -14 |
+
+**`F024` · Résoudre une équation ax + b = c** — diff. 5, seuil 3/4  
+*Résoudre une équation du type ax + b = c par étapes équivalentes : retrancher (ou ajouter) un même nombre aux deux membres, puis diviser les deux membres par un même nombre non nul : 3x + 5 = 17 donne 3x = 12, puis x = 4 ; −2x + 7 = 15 donne −2x = 8, puis x = −4 ; 6x − 1 = 3 donne x = 4/6 = 2/3 ; 0,5x + 3 = 7 donne x = 8 ; vérifier la solution en remplaçant x (F063). L'erreur type est de diviser un seul terme (3x + 5 = 17 donne x + 5 = 17/3), ou de se tromper de signe (−2x = 8 donne x = 4). Réponse : la solution, un nombre ou une fraction (« x = 4 » et « 2/3 » sont acceptés). Figure : aucune.*
+> « Résoudre une équation du premier degré du type a𝑥 + b = c. »
+
+| | Type | Demandé | Réponse |
+|---|---|---|---|
+| D | nume | Résous l'équation 5x + 8 = 43. Commence par retrancher un même nombre aux deux membres pour… | 7 |
+| D | qcm | Sami commence à résoudre 6x + 5 = 29 en faisant la même opération sur les deux membres. Que… | a) 6x = 24 |
+| E | nume | Résous l'équation -3x + 4 = 25. | -7 |
+| E | text | Résous l'équation 8x + 3 = 9. Donne la solution sous forme d'une fraction. | 3/4 |
+| M | vrai | Tom résout l'équation 9 - 4x = 21 et trouve x = -3. A-t-il raison ? | vrai |
+| M | text | Résous l'équation 1 = -6x - 7. Donne la solution sous forme d'une fraction. | −4/3 |
+
+**`F064` · Programme de calcul : l'appliquer à un nombre, à une lettre, le remonter** — diff. 5, seuil 3/4  
+*Appliquer un programme de calcul de deux à quatre étapes à un nombre, y compris négatif, puis à une lettre en écrivant l'expression obtenue et en la réduisant ; retrouver le nombre de départ à partir du résultat en remontant le programme avec les opérations inverses, dans l'ordre inverse. Exemple : « choisir un nombre, le multiplier par 3, ajouter 5, multiplier le résultat par 2 » donne 34 pour 4, −8 pour −3, et 2(3x + 5) = 6x + 10 pour x ; un résultat de 46 vient de 6 (46 ÷ 2 = 23, 23 − 5 = 18, 18 ÷ 3 = 6). Nommer l'expression obtenue (somme, produit). L'erreur type est de remonter avec les mêmes opérations ou dans le même ordre, ou d'oublier les parenthèses (3x + 5 × 2). Réponse : un nombre (résultat, nombre de départ) ; l'expression en x se choisit (QCM) ou se donne par ses coefficients en attendant la saisie des expressions (section 5). En attendant la saisie des expressions : QCM ou coefficients. Figure : aucune.*
+> « Savoir appliquer un programme de calcul à deux (plusieurs) étapes à un nombre simple puis à une variable. »
+
+| | Type | Demandé | Réponse |
+|---|---|---|---|
+| D | nume | Programme de calcul : choisir un nombre ; le multiplier par 2 ; soustraire 7 ; multiplier l… | -51 |
+| D | qcm | Programme de calcul : choisir un nombre ; lui ajouter 6 ; multiplier le résultat par 5. Que… | a) 5(x + 6) |
+| E | nume | Programme de calcul : choisir un nombre ; le multiplier par 4 ; ajouter 9 ; multiplier le r… | 4 |
+| E | text | Programme de calcul : choisir un nombre ; le multiplier par 5 ; soustraire 4 ; multiplier l… | 15x − 12 |
+| M | nume | Programme de calcul : choisir un nombre ; soustraire 6 ; multiplier par −3 ; ajouter 10. Le… | -1 |
+| M | qcm | Programme de calcul : choisir un nombre ; lui ajouter 4 ; multiplier le résultat par 3 ; so… | b) 12 |
+
 **`C036` · Enchaîner des opérations avec des fractions** — diff. 6, seuil 3/4  
 *Calculer une expression qui enchaîne plusieurs opérations sur des fractions positives ou négatives, en respectant les priorités : 1/2 + 3/4 × 2/3 = 1/2 + 1/2 = 1 ; (1/2 + 3/4) × 2/3 = 5/4 × 2/3 = 5/6 ; 2 − 5/3 ÷ 5/6 = 2 − 2 = 0 ; un calcul dont le résultat est négatif (1/3 − 3/4 = −5/12). L'erreur type est de calculer de gauche à droite sans respecter les priorités. Réponse : une fraction, comparée par sa valeur. Figure : aucune.*
 > « Calculer la valeur d'expressions comportant plusieurs opérations avec des fractions. »
@@ -3166,6 +3392,45 @@ Le chapitre est l'unité qu'un exercice bilan validerait.
 | E | nume | Les 5/8 du prix d'un vélo représentent 140 €. Quel est le prix du vélo ? | 224 |
 | M | nume | Le robinet A remplit 1/10 d'une cuve en une minute, le robinet B en remplit 1/15. Ouverts e… | 6 |
 | M | qcm | Inès dépense les 3/5 de sa cagnotte, puis le quart de ce qui reste. Il lui reste alors 45 €… | a) 150 € |
+
+**`F025` · Résoudre une équation ax + b = cx + d** — diff. 6, seuil 3/4  
+*Résoudre une équation dont l'inconnue figure dans les deux membres, éventuellement après avoir développé : regrouper les termes en x dans un membre et les nombres dans l'autre, en ajoutant ou retranchant un même terme aux deux membres, puis diviser : 5x − 3 = 2x + 9 donne 3x = 12, puis x = 4 ; 3(x − 2) = x + 4 donne 3x − 6 = x + 4, 2x = 10, x = 5 ; 2x + 7 = 5x − 1 donne x = 8/3. L'erreur type est de « passer » un terme sans changer son signe (5x − 3 = 2x + 9 donne 7x = 12) ou de développer seulement le premier terme. Réponse : la solution, un nombre ou une fraction. Figure : aucune.*
+> « Mettre en équation un problème et le résoudre à l'aide d'une équation du premier degré du type a𝑥 + b = c𝑥 + d. »
+
+| | Type | Demandé | Réponse |
+|---|---|---|---|
+| D | nume | Résous l'équation 6x + 1 = 2x + 13. Commence par retrancher 2x aux deux membres. | 3 |
+| D | qcm | Pour résoudre 8x - 5 = 3x + 20, on retranche 3x aux deux membres. Quelle équation obtient-o… | d) 5x - 5 = 20 |
+| E | nume | Résous l'équation 3x - 7 = 5x + 9. | -8 |
+| E | text | Résous l'équation 4x + 9 = x + 2. Donne la solution sous forme d'une fraction. | −7/3 |
+| M | nume | Résous l'équation 4 - 3(x + 2) = x + 6. | -2 |
+| M | vrai | Lina résout 2(x + 5) = 3x - 1. Elle écrit 2x + 5 = 3x - 1, puis trouve x = 6. Sa solution e… | faux |
+
+**`F065` · Démontrer avec le calcul littéral (4e) : pairs, impairs, formules** — diff. 6, seuil 3/4  
+*Écrire un nombre pair 2n et un nombre impair 2n + 1 (n entier), et démontrer une propriété générale en transformant une expression avec la distributivité et les relatifs : la somme de deux impairs consécutifs, (2n + 1) + (2n + 3) = 4n + 4 = 4(n + 1), est un multiple de 4 ; le carré d'un nombre pair est pair, car (2n)² = 4n² = 2 × 2n² ; deux programmes de calcul donnent toujours le même résultat. Produire une formule (aire d'une figure composée) et tester sa vraisemblance en remplaçant la lettre par un nombre. L'erreur type est de noter de la même façon deux nombres différents (deux pairs écrits 2n et 2n), ou de conclure sur des exemples. Rédiger une démonstration ne se fait pas à l'écran : l'élève complète une étape (coefficient, nombre manquant), choisit l'expression d'un nombre pair ou impair (QCM), remet des étapes dans l'ordre ou choisit la bonne conclusion. Réponse : nombre manquant, QCM ou vrai/faux. Figure : aucune.*
+> « Utiliser le calcul algébrique pour produire des démonstrations. »
+
+| | Type | Demandé | Réponse |
+|---|---|---|---|
+| D | qcm | n désigne un nombre entier quelconque. Quelle écriture désigne toujours un nombre pair ? | b) 2n |
+| D | nume | Trois pairs consécutifs s'écrivent 2n, 2n + 2 et 2n + 4 (n entier). Complète : 2n + (2n + 2… | 6 |
+| E | text | A : retrancher 3 à n, puis multiplier par 4. B : multiplier n par -2, ajouter 6, puis multi… | 4n − 12 |
+| E | vrai | Inès additionne deux impairs consécutifs : 1 + 3 = 4, 5 + 7 = 12 et 9 + 11 = 20. Ces trois … | faux |
+| M | qcm | n et p sont des entiers. Pour démontrer que « pair + impair » donne toujours un impair, que… | d) 2n + (2p + 1) |
+| M | qcm | Un jardin carré de x m de côté contient un bassin carré de 2 m de côté. Quelle formule donn… | c) x^{2} - 4 |
+
+**`F066` · Mettre un problème en équation et le résoudre** — diff. 6, seuil 3/4  
+*Choisir l'inconnue et dire ce qu'elle représente, traduire l'énoncé par une équation du premier degré (du type ax + b = c ou ax + b = cx + d), la résoudre, vérifier la solution dans l'énoncé et répondre par une phrase. Exemples : deux forfaits, 15 € plus 0,50 € par séance et 25 € plus 0,25 € par séance, coûtent autant pour x séances quand 15 + 0,5x = 25 + 0,25x, soit x = 40 ; un rectangle dont la longueur dépasse la largeur x de 3 cm et dont le périmètre vaut 34 cm : 2(x + x + 3) = 34, x = 7, et la longueur vaut 10 cm ; quel nombre choisir pour que deux programmes de calcul donnent le même résultat. L'erreur type est de mal choisir l'inconnue ou de répondre par la valeur de x quand la question porte sur une autre grandeur (la longueur). Réponse : un nombre (la grandeur demandée) ; l'équation se choisit (QCM) en attendant la saisie des équations (section 5). En attendant la saisie des expressions : QCM pour l'équation. Figure : aucune.*
+> « Mettre en équation un problème et le résoudre à l'aide d'une équation du premier degré du type a𝑥 + b = c𝑥 + d. »
+
+| | Type | Demandé | Réponse |
+|---|---|---|---|
+| D | qcm | Une séance coûte 9 €, ou 6 € avec une carte à 15 €. Quelle équation traduit « x séances coû… | c) 9x = 15 + 6x |
+| D | nume | Un rectangle a pour largeur x cm et pour longueur 2x cm. Son périmètre de 42 cm donne 2(x +… | 14 |
+| E | text | Léo a 35 € et économise 5 € par semaine ; Mia a 89 € et dépense 4 € par semaine. Écris l'éq… | 35 + 5x = 89 − 4x |
+| E | nume | Programme A : multiplier par 4, puis retrancher 3. Programme B : ajouter 6, puis multiplier… | 7.5 |
+| M | nume | La cuve A contient 150 L et perd 4 L par minute. La cuve B contient 30 L et reçoit 6 L par … | 102 |
+| M | text | Un triangle a trois côtés de x cm. Un pentagone a cinq côtés, chacun 4 cm plus court que ce… | 3x = 5(x − 4) |
 
 ### ── 3e ──
 
@@ -3285,3 +3550,94 @@ Le chapitre est l'unité qu'un exercice bilan validerait.
 | E | text | Écris 162/180 sous forme irréductible. Écris ta réponse sous la forme numérateur/dénominate… | 9/10 |
 | M | qcm | Parmi ces fractions, laquelle est irréductible ? | a) 7/9 |
 | M | text | Un collège compte 840 élèves, dont 315 demi-pensionnaires. Quelle fraction des élèves est d… | 3/8 |
+
+**`F013` · Double distributivité : développer et réduire (a + b)(c + d)** — diff. 6, seuil 3/4  
+*Développer un produit de deux sommes en multipliant chaque terme de la première par chaque terme de la seconde, puis réduire : (x + 3)(x + 5) = x² + 5x + 3x + 15 = x² + 8x + 15 ; (2x − 1)(x + 4) = 2x² + 7x − 4 ; enchaîner avec l'opposé d'une expression, −(5 − 4x) = −5 + 4x, et simplifier : (x + 1)(x + 2) − (x² + 4) = 3x − 2. L'erreur type est de ne multiplier que les premiers et les derniers termes ((x + 3)(x + 5) = x² + 15), ou de ne pas changer tous les signes d'une parenthèse précédée de −. Réponse : QCM entre formes développées, ou un coefficient (coefficient de x, terme constant : des nombres) ; écrire la forme développée réduite au clavier attend la saisie des expressions avec contrainte de forme (section 5). En attendant la saisie des expressions : QCM ou coefficients. Figure utile : geometrie, rectangle de côtés x + 3 et x + 5 partagé en quatre rectangles.*
+> « Utiliser la double distributivité pour développer et factoriser des expressions dont le facteur est apparent. »
+
+| | Type | Demandé | Réponse |
+|---|---|---|---|
+| D | qcm | Le grand rectangle est partagé en quatre rectangles. Les longueurs sont écrites sur la figu… | c) x^{2} + 8x + 12 |
+| D | nume | Pour développer (x + 3)(x + 8), on multiplie chaque terme de la première parenthèse par cha… | 11 |
+| E | text | Développe et réduis (2x + 3)(x - 4). Écris le résultat sans parenthèse. | 2x² − 5x − 12 |
+| E | qcm | Développe et réduis (x - 5)(x - 3). Quelle expression obtiens-tu ? | d) x^{2} - 8x + 15 |
+| M | text | Simplifie l'expression (x + 6)(x - 1) - (x^{2} - 9). Écris-la réduite, sans parenthèse. | 5x + 3 |
+| M | nume | Quel nombre faut-il écrire à la place des pointillés pour que l'égalité soit vraie pour tou… | 7 |
+
+**`F020` · Développer avec les identités remarquables** — diff. 6, seuil 3/4  
+*Connaître et utiliser (a + b)² = a² + 2ab + b², (a − b)² = a² − 2ab + b² et (a + b)(a − b) = a² − b² pour développer sans passer par la double distributivité : (x + 3)² = x² + 6x + 9 ; (2x − 5)² = 4x² − 20x + 25 ; (x − 4)(x + 4) = x² − 16 ; calcul mental : 101² = 10 201, 99 × 101 = 9 999. Savoir retrouver une identité par la double distributivité (F013). L'erreur type est d'oublier le double produit ((x + 3)² = x² + 9) ou de mal élever un produit au carré ((2x)² = 2x²). Réponse : QCM entre formes développées, un coefficient (un nombre), ou une valeur numérique (101² : un nombre) ; écrire la forme développée au clavier attend la saisie des expressions (section 5). En attendant la saisie des expressions : QCM, coefficient ou valeur. Figure utile : geometrie, carré de côté a + b partagé en deux carrés et deux rectangles.*
+> « Manipuler les trois identités remarquables pour développer et factoriser »
+
+| | Type | Demandé | Réponse |
+|---|---|---|---|
+| D | qcm | Le grand carré est partagé en deux carrés et deux rectangles. La figure n'est pas à l'échel… | b) x^{2} + 8x + 16 |
+| D | nume | On développe (x - 9)^{2} avec l'identité (a - b)^{2} = a^{2} - 2ab + b^{2}. Quel nombre man… | 18 |
+| E | text | Développe et réduis (3x + 5)^{2} à l'aide d'une identité remarquable. | 9x² + 30x + 25 |
+| E | qcm | Quelle est la forme développée de (2x - 7)(2x + 7) ? | a) 4x^{2} - 49 |
+| M | nume | Sans poser la multiplication, calcule 98^{2} en écrivant 98 = 100 - 2 et en utilisant une i… | 9604 |
+| M | text | Un carré a pour côté x + 5, un autre x - 5, avec x plus grand que 5. De combien l'aire du p… | 20x |
+
+**`F021` · Factoriser avec les identités remarquables** — diff. 6, seuil 3/4  
+*Reconnaître dans une somme le développement d'une identité remarquable et l'écrire sous forme de produit : x² − 9 = (x − 3)(x + 3) ; 4x² − 25 = (2x − 5)(2x + 5) ; x² + 10x + 25 = (x + 5)² ; 9x² − 12x + 4 = (3x − 2)² ; repérer les carrés (9 = 3², 4x² = (2x)²) et vérifier le double produit (2 × 3x × 2 = 12x). L'erreur type est de factoriser x² + 9 en (x + 3)(x − 3), ou x² + 6x + 4 en (x + 2)² sans vérifier le double produit. Réponse : QCM entre formes factorisées, vrai/faux, ou un nombre manquant (x² − 49 = (x − …)(x + …)) ; écrire la forme factorisée au clavier attend la saisie des expressions avec contrainte de forme (section 5). En attendant la saisie des expressions : QCM ou nombre manquant. Figure : aucune.*
+> « Manipuler les trois identités remarquables pour développer et factoriser »
+
+| | Type | Demandé | Réponse |
+|---|---|---|---|
+| D | nume | 81 est le carré d'un nombre entier positif. Complète avec ce nombre, le même dans les deux … | 9 |
+| D | qcm | On veut factoriser x^{2} + 22x + 121. On remarque que 121 = 11^{2}. Quelle est la forme fac… | c) (x + 11)^{2} |
+| E | text | Factorise 16x^{2} - 9 à l'aide d'une identité remarquable. | (4x − 3)(4x + 3) |
+| E | vrai | Vrai ou faux : pour tout nombre x, x^{2} + 10x + 16 = (x + 4)^{2}. | faux |
+| M | qcm | Une seule de ces expressions ne peut pas se factoriser avec une identité remarquable. Laque… | b) x^{2} + 25 |
+| M | text | Factorise (x + 3)^{2} - 25, puis réduis chaque facteur. | (x − 2)(x + 8) |
+
+**`F031` · Résoudre une inéquation ax ⩾ b** — diff. 6, seuil 3/4  
+*Savoir qu'une inéquation a en général une infinité de solutions, tester si un nombre en est solution, et résoudre ax ⩾ b, ax > b, ax ⩽ b ou ax < b en divisant les deux membres par a : le sens de l'inégalité est conservé si a est positif (3x ⩾ 12 donne x ⩾ 4) et changé si a est négatif (−2x ⩾ 6 donne x ⩽ −3), ce qu'on vérifie sur un exemple (−2 × (−4) = 8 et 8 ⩾ 6 : −4 est bien solution) ; solution fractionnaire (3x < 7 donne x < 7/3). L'erreur type est de garder le sens de l'inégalité en divisant par un nombre négatif, ou de confondre ⩾ et >. La résolution graphique relève de l'étape 9. Réponse : QCM entre inégalités solutions, vrai/faux (tel nombre est-il solution ?), ou un nombre (le plus petit entier solution) ; écrire l'inégalité « x ⩾ 4 » au clavier attend la saisie des inégalités (section 5). En attendant la saisie des expressions : QCM, vrai/faux ou nombre. Figure : aucune.*
+> « Résoudre analytiquement et graphiquement une inéquation du premier degré du type a𝑥 ⩾ b. »
+
+| | Type | Demandé | Réponse |
+|---|---|---|---|
+| D | qcm | Quel nombre est solution de l'inéquation 2x > 9 ? | b) 5 |
+| D | text | Résous l'inéquation 6x ≥slant 42. Écris l'inégalité qui donne toutes les solutions (≥slant … | x ⩾ 7 |
+| E | qcm | Résous l'inéquation -5x < 30. Quelle inégalité donne toutes ses solutions ? | c) x > -6 |
+| E | nume | Quel est le plus petit nombre entier solution de l'inéquation 9x > 72 ? | 9 |
+| M | nume | Une association vend des gâteaux 2,40 € pièce. Elle veut récolter au moins 150 €. Combien d… | 63 |
+| M | text | Résous l'inéquation -6x ≥slant 4. Écris l'inégalité qui donne toutes les solutions, sous fo… | x ⩽ −2/3 |
+
+**`F067` · Factoriser par un facteur commun apparent ; simplifier un produit ou un quotient** — diff. 6, seuil 3/4  
+*Repérer un facteur commun qui est lui-même une expression et factoriser : (x + 2)(3x − 1) + (x + 2)(x + 5) = (x + 2)(4x + 4) ; (2x + 1)(x − 3) − (2x + 1)(4 − x) = (2x + 1)(2x − 7), en mettant le second facteur entre parenthèses avant de le réduire ; simplifier un produit ou un quotient par des facteurs communs, jamais par des termes, quand le dénominateur n'est pas nul : 6x(x + 1) ÷ (3(x + 1)) = 2x ; 12x ÷ 4x = 3 ; (x + 6)/6 ne se simplifie pas. L'erreur type est de simplifier des termes ((x + 6)/6 = x + 1) ou d'oublier les parenthèses du second facteur. Réponse : QCM entre écritures factorisées ou simplifiées, vrai/faux pour une simplification, ou un coefficient (un nombre) ; écrire la forme factorisée au clavier attend la saisie des expressions avec contrainte de forme (section 5). En attendant la saisie des expressions : QCM ou coefficient. Figure : aucune.*
+> « Simplifier des expressions produits ou des rapports comportant des facteurs communs. »
+
+| | Type | Demandé | Réponse |
+|---|---|---|---|
+| D | qcm | On donne A = (x + 3)(2x + 5) + (x + 3)(x - 1). Ses deux termes ont un facteur commun, (x + … | c) (x + 3)(3x + 4) |
+| D | vrai | Vrai ou faux : pour tout nombre x, 5x + 10/5 = x + 2. | vrai |
+| E | text | Factorise B = (x - 2)(5x + 1) - (x - 2)(2x - 3). Réduis le second facteur. | (x − 2)(3x + 4) |
+| E | nume | Pour x non nul et différent de -5, on considère le quotient 6x(x + 5)/2x(x + 5). Simplifie-… | 3 |
+| M | qcm | Une seule de ces simplifications est juste pour toutes les valeurs de x qui n'annulent pas … | b) 3x(x + 4)/3x = x + 4 |
+| M | text | Factorise C = (4x - 3)(x + 2) - (4x - 3). Réduis le second facteur. | (4x − 3)(x + 1) |
+
+**`F027` · Résoudre une équation produit nul** — diff. 6, seuil 3/4  
+*Savoir qu'un produit est nul si et seulement si l'un au moins de ses facteurs est nul, et résoudre une équation écrite, ou mise après factorisation, sous la forme d'un produit nul : (x − 3)(2x + 5) = 0 a deux solutions, 3 et −5/2 ; x(x − 4) = 0 a pour solutions 0 et 4 ; x² − 9 = 0 s'écrit (x − 3)(x + 3) = 0 ; vérifier les solutions trouvées (analyse, puis synthèse). L'erreur type est de développer au lieu d'utiliser le produit nul, d'oublier une solution (0 dans x(x − 4) = 0) ou de résoudre x − 3 = 0 en x = −3. Réponse : les solutions demandées une par une (la plus petite, puis la plus grande : nombres ou fractions), ou leur nombre ; QCM pour l'ensemble des solutions ; la liste tapée en une fois attend la saisie des listes de solutions (section 5). Figure : aucune.*
+> « Résoudre une équation produit nul. »
+
+| | Type | Demandé | Réponse |
+|---|---|---|---|
+| D | qcm | On multiplie deux nombres et le produit vaut 0. Que peut-on affirmer à coup sûr ? | b) L'un au moins des deux nombres… |
+| D | nume | L'équation x(x - 7) = 0 a deux solutions. L'une d'elles est 7. Quelle est l'autre ? | 0 |
+| E | text | Résous l'équation (2x - 3)(x + 5) = 0. Donne toutes ses solutions, séparées par un point-vi… | −5 ; 3/2 |
+| E | nume | Résous l'équation 4x^{2} - 81 = 0 en factorisant d'abord le membre de gauche. Quelle est la… | -4.5 |
+| M | text | Résous l'équation (x - 2)(3x + 1) - (x - 2)(x + 6) = 0 en commençant par factoriser. Donne … | 2 ; 5/2 |
+| M | qcm | Quelle équation a pour solutions exactement -3 et 1/2 ? | c) (x + 3)(2x - 1) = 0 |
+
+**`F068` · Résoudre une équation x² = a** — diff. 6, seuil 3/4  
+*Résoudre x² = a par le calcul : si a est positif, deux solutions, √a et −√a (x² = 49 donne 7 et −7 ; x² = 5 donne √5 ≈ 2,24 et −√5 ≈ −2,24) ; si a = 0, une seule solution, 0 ; si a est négatif, aucune solution, car un carré n'est jamais négatif ; s'y ramener (2x² − 8 = 10 donne x² = 9, donc x = 3 ou x = −3). La résolution graphique, avec la courbe de la fonction carré, relève de l'étape 9. L'erreur type est d'oublier la solution négative, ou de donner une racine d'un nombre négatif comme solution de x² = −4. Réponse : le nombre de solutions (un nombre ou QCM), puis chaque solution demandée à part (un nombre ; valeur approchée avec une tolérance et le rang d'arrondi dit dans l'énoncé) ; une solution exacte comme √5 se tape (« ±√5 », « racine de 5 ») ou se choisit (QCM). Figure : aucune.*
+> « Résoudre analytiquement et graphiquement des équations de la forme 𝑥2 = a. »
+
+| | Type | Demandé | Réponse |
+|---|---|---|---|
+| D | qcm | Quels nombres x vérifient x^{2} = 64 ? | b) 8 et −8 |
+| D | nume | Donne la solution négative de l'équation x^{2} = 121. | -11 |
+| E | text | Résous x^{2} = 13. Donne les solutions arrondies au centième, séparées par un point-virgule. | −3,61 ; 3,61 |
+| E | vrai | Lina affirme : « L'équation x^{2} + 25 = 0 a deux solutions, 5 et -5. » A-t-elle raison ? | faux |
+| M | nume | Je pense à un nombre négatif. J'élève ce nombre au carré, je multiplie le résultat par 3, p… | -4 |
+| M | text | Résous 2x^{2} = 22. Donne les valeurs exactes des solutions, séparées par un point-virgule … | √11 ; −√11 |

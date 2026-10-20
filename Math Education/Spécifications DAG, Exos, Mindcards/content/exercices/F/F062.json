@@ -1,0 +1,170 @@
+[
+  {
+    "id": "EX-F062-D-01",
+    "skill_id": "F062",
+    "level": "decouverte",
+    "type": "vrai_faux",
+    "statement": "Programme : choisir un nombre, ajouter 7, multiplier par 2, retrancher 14. Avec 4, 6 et 10, Alex obtient chaque fois le double du nombre choisi. Ces trois essais démontrent-ils que c'est vrai pour tout nombre ?",
+    "image": null,
+    "answer": {
+      "value": false
+    },
+    "solution_steps": [
+      "Les essais d'Alex sont justes : 8 pour 4, 12 pour 6, 20 pour 10. Mais ils ne valent que pour ces trois nombres, et il en existe une infinité.",
+      "Pour démontrer, on note $n$ le nombre choisi : le programme donne $2(n + 7) - 14$.",
+      "On développe : $2(n + 7) - 14 = 2n + 14 - 14 = 2n$.",
+      "Le résultat est $2n$, le double de $n$, quel que soit $n$ : la propriété est vraie, mais c'est le calcul avec la lettre qui la démontre, pas les essais. Réponse : faux."
+    ],
+    "hint": "Trois exemples réussis prouvent-ils quelque chose pour un quatrième nombre que personne n'a essayé ?",
+    "estimated_duration_s": 90,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, classe de 5e, Nombres et calculs, Calcul littéral et algébrique : « Démontrer une propriété générale par le calcul littéral. »"
+  },
+  {
+    "id": "EX-F062-D-02",
+    "skill_id": "F062",
+    "level": "decouverte",
+    "type": "numerique",
+    "statement": "Deux entiers consécutifs s'écrivent $n$ et $n + 1$. Pour démontrer que leur somme est toujours impaire, on écrit : $n + (n + 1) = 2n + \\ldots$. Quel nombre manque ?",
+    "image": null,
+    "answer": {
+      "value": 1
+    },
+    "solution_steps": [
+      "On réduit : $n + n = 2n$, et il reste le nombre 1. Donc $n + (n + 1) = 2n + 1$.",
+      "$2n$ est le double d'un entier : c'est un nombre pair.",
+      "Un nombre pair plus 1 est impair : la somme de deux entiers consécutifs est impaire, pour tout entier $n$."
+    ],
+    "hint": "Regroupe les deux termes en $n$, puis regarde ce qui reste.",
+    "estimated_duration_s": 60,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, classe de 5e, Nombres et calculs, Calcul littéral et algébrique : « Démontrer une propriété générale par le calcul littéral. »"
+  },
+  {
+    "id": "EX-F062-E-01",
+    "skill_id": "F062",
+    "level": "entrainement",
+    "type": "qcm",
+    "statement": "On a démontré que, pour tout entier $n$, $n + (n + 1) + (n + 2) + (n + 3) = 4n + 6$. Quelle conclusion est juste ?",
+    "image": null,
+    "choices": [
+      {
+        "key": "a",
+        "text": "La somme de quatre entiers consécutifs est toujours un multiple de 4.",
+        "misconception": "L'élève voit $4n$ et oublie le terme 6 : $4n + 6$ n'est pas toujours un multiple de 4 ($n = 1$ donne 10)."
+      },
+      {
+        "key": "b",
+        "text": "La somme de quatre entiers consécutifs est toujours paire.",
+        "misconception": null
+      },
+      {
+        "key": "c",
+        "text": "La somme de quatre entiers consécutifs vaut toujours 10.",
+        "misconception": "L'élève remplace $n$ par 1 (1 + 2 + 3 + 4 = 10) et généralise un seul exemple ; or $4n + 6$ change avec $n$ ($n = 2$ donne 14)."
+      },
+      {
+        "key": "d",
+        "text": "On ne peut rien conclure sans essayer plusieurs valeurs de $n$.",
+        "misconception": "L'élève croit que des essais sont nécessaires ; or le calcul avec la lettre vaut pour tous les entiers à la fois."
+      }
+    ],
+    "answer": {
+      "value": "b"
+    },
+    "solution_steps": [
+      "On factorise par 2 : $4n + 6 = 2 \\times 2n + 2 \\times 3 = 2(2n + 3)$.",
+      "La somme est le double de l'entier $2n + 3$ : elle est paire, quel que soit $n$.",
+      "Contrôle avec $n = 5$ : 5 + 6 + 7 + 8 = 26, qui est pair mais n'est pas un multiple de 4.",
+      "La bonne réponse est b."
+    ],
+    "hint": "Peux-tu écrire $4n + 6$ comme 2 fois un entier ?",
+    "estimated_duration_s": 90,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, classe de 5e, Nombres et calculs, Calcul littéral et algébrique : « Démontrer une propriété générale par le calcul littéral. »"
+  },
+  {
+    "id": "EX-F062-E-02",
+    "skill_id": "F062",
+    "level": "entrainement",
+    "type": "numerique",
+    "statement": "Programme : choisir un nombre, ajouter 9, multiplier par 4, retrancher le quadruple du nombre choisi. Avec le nombre $n$, on écrit : $4(n + 9) - 4n = 4n + \\ldots - 4n$. Quel nombre manque ?",
+    "image": null,
+    "answer": {
+      "value": 36
+    },
+    "solution_steps": [
+      "Le programme s'écrit $4(n + 9) - 4n$ : on ajoute 9 à $n$, on multiplie le tout par 4, puis on retranche le quadruple de $n$.",
+      "On développe : $4(n + 9) = 4 \\times n + 4 \\times 9 = 4n + 36$. Le nombre manquant est 36.",
+      "Donc $4(n + 9) - 4n = 4n + 36 - 4n = 36$ : le résultat vaut 36 quel que soit $n$.",
+      "C'est ce calcul avec la lettre qui le démontre pour tous les nombres ; des essais ne le montreraient que pour les nombres essayés."
+    ],
+    "hint": "Développe $4(n + 9)$ : le 4 multiplie chacun des deux termes de la parenthèse.",
+    "estimated_duration_s": 90,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, classe de 5e, Nombres et calculs, Calcul littéral et algébrique : « Démontrer une propriété générale par le calcul littéral. »"
+  },
+  {
+    "id": "EX-F062-M-01",
+    "skill_id": "F062",
+    "level": "maitrise",
+    "type": "qcm",
+    "statement": "Quel raisonnement démontre que, pour tout entier $n$, $5n + 10$ est un multiple de 5 ?",
+    "image": null,
+    "choices": [
+      {
+        "key": "a",
+        "text": "Pour $n = 1$, 2 et 3, on obtient 15, 20 et 25, qui sont des multiples de 5.",
+        "misconception": "Trois exemples ne démontrent rien pour les autres entiers : il y en a une infinité."
+      },
+      {
+        "key": "b",
+        "text": "L'expression $5n + 10$ contient le nombre 5.",
+        "misconception": "L'élève se fie à l'aspect de l'expression. Or $5n + 11$ contient aussi le nombre 5 et n'est pas toujours un multiple de 5 ($n = 1$ donne 16)."
+      },
+      {
+        "key": "c",
+        "text": "$5n + 10 = 15n$, et $15n$ est un multiple de 5.",
+        "misconception": "L'élève additionne $5n$ et 10, qui ne sont pas des termes semblables : $5n + 10$ ne se réduit pas en $15n$."
+      },
+      {
+        "key": "d",
+        "text": "$5n + 10 = 5(n + 2)$, et $n + 2$ est un entier.",
+        "misconception": null
+      }
+    ],
+    "answer": {
+      "value": "d"
+    },
+    "solution_steps": [
+      "Démontrer, c'est raisonner pour tous les entiers à la fois : on transforme l'expression qui contient la lettre.",
+      "On factorise : $5n + 10 = 5 \\times n + 5 \\times 2 = 5(n + 2)$.",
+      "$n + 2$ est un entier, donc $5n + 10$ est 5 fois un entier : c'est un multiple de 5, quel que soit $n$. La bonne réponse est d."
+    ],
+    "hint": "Un exemple ne démontre rien pour les autres nombres. Lequel des raisonnements vaut pour tous les entiers ?",
+    "estimated_duration_s": 90,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, classe de 5e, Nombres et calculs, Calcul littéral et algébrique : « Démontrer une propriété générale par le calcul littéral. »"
+  },
+  {
+    "id": "EX-F062-M-02",
+    "skill_id": "F062",
+    "level": "maitrise",
+    "type": "vrai_faux",
+    "statement": "Affirmation : pour tout entier $n$, $4(n + 2) + 2n + 4$ est un multiple de 6. Maé écrit : $4(n + 2) + 2n + 4 = 4n + 8 + 2n + 4 = 6n + 12 = 6(n + 2)$, donc c'est 6 fois l'entier $n + 2$. Sa démonstration est-elle juste ?",
+    "image": null,
+    "answer": {
+      "value": true
+    },
+    "solution_steps": [
+      "On contrôle chaque étape. Développement : $4(n + 2) = 4n + 8$ : juste.",
+      "Réduction : $4n + 2n = 6n$ et $8 + 4 = 12$ : juste.",
+      "Factorisation : $6n + 12 = 6(n + 2)$ : juste, car $6 \\times 2 = 12$.",
+      "$n + 2$ est un entier : l'expression vaut 6 fois un entier, donc c'est un multiple de 6 pour tout $n$. La démonstration est juste."
+    ],
+    "hint": "Vérifie chaque égalité de la chaîne, l'une après l'autre.",
+    "estimated_duration_s": 120,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, classe de 5e, Nombres et calculs, Calcul littéral et algébrique : « Démontrer une propriété générale par le calcul littéral. »"
+  }
+]

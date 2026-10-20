@@ -1,0 +1,152 @@
+[
+  {
+    "id": "EX-F024-D-01",
+    "skill_id": "F024",
+    "level": "decouverte",
+    "type": "numerique",
+    "statement": "Résous l'équation $5x + 8 = 43$. Commence par retrancher un même nombre aux deux membres pour isoler $5x$.",
+    "image": null,
+    "answer": {
+      "value": 7
+    },
+    "solution_steps": [
+      "On veut $x$ seul. Le membre de gauche contient $5x$ plus 8 : on fait d'abord disparaître ce 8.",
+      "On retranche 8 aux deux membres, ce qui garde l'égalité : $5x + 8 - 8 = 43 - 8$, soit $5x = 35$.",
+      "$5x$ veut dire $5 \\times x$ : on divise les deux membres par 5, $x = 35 \\div 5 = 7$.",
+      "Vérification : $5 \\times 7 + 8 = 35 + 8 = 43$. La solution est 7."
+    ],
+    "hint": "Quel nombre faut-il retrancher pour que $5x$ reste seul à gauche ?",
+    "estimated_duration_s": 60,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, classe de 4e, Nombres et calculs, Calcul littéral et algébrique, Objectifs d'apprentissage : « Résoudre une équation du premier degré du type a𝑥 + b = c. »"
+  },
+  {
+    "id": "EX-F024-D-02",
+    "skill_id": "F024",
+    "level": "decouverte",
+    "type": "qcm",
+    "statement": "Sami commence à résoudre $6x + 5 = 29$ en faisant la même opération sur les deux membres. Quelle égalité peut-il obtenir sans erreur ?",
+    "image": null,
+    "choices": [
+      {
+        "key": "a",
+        "text": "$6x = 24$",
+        "misconception": null
+      },
+      {
+        "key": "b",
+        "text": "$x + 5 = \\frac{29}{6}$",
+        "misconception": "L'élève divise par 6 le terme $6x$ et le membre de droite, mais pas le 5 : diviser tout le membre de gauche par 6 donnerait $x + \\frac{5}{6}$."
+      },
+      {
+        "key": "c",
+        "text": "$6x = 34$",
+        "misconception": "L'élève ajoute 5 au lieu de le retrancher : pour faire disparaître « + 5 », il faut l'opération inverse, une soustraction."
+      },
+      {
+        "key": "d",
+        "text": "$x + 5 = 23$",
+        "misconception": "L'élève retranche 6 pour faire disparaître le coefficient, alors que $6x$ veut dire $6 \\times x$ : on divise par 6, on ne retranche pas 6."
+      }
+    ],
+    "answer": {
+      "value": "a"
+    },
+    "solution_steps": [
+      "Pour faire disparaître « + 5 », on retranche 5, et on le retranche aux deux membres pour garder l'égalité : $6x + 5 - 5 = 29 - 5$, soit $6x = 24$ : c'est la proposition a.",
+      "Ensuite, on divise les deux membres par 6 : $x = 24 \\div 6 = 4$. Vérification : $6 \\times 4 + 5 = 29$.",
+      "Les autres égalités n'ont pas 4 pour solution : $6x = 34$ ajoute 5 au lieu de le retrancher ; $x + 5 = \\frac{29}{6}$ divise $6x$ mais pas le 5 ; $x + 5 = 23$ retranche 6 au lieu de diviser par 6.",
+      "On divise par 6 seulement quand $6x$ est seul dans son membre."
+    ],
+    "hint": "Quelle opération fait disparaître « + 5 » ? Fais-la sur les deux membres.",
+    "estimated_duration_s": 45,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, classe de 4e, Nombres et calculs, Calcul littéral et algébrique, Objectifs d'apprentissage : « Résoudre une équation du premier degré du type a𝑥 + b = c. »"
+  },
+  {
+    "id": "EX-F024-E-01",
+    "skill_id": "F024",
+    "level": "entrainement",
+    "type": "numerique",
+    "statement": "Résous l'équation $-3x + 4 = 25$.",
+    "image": null,
+    "answer": {
+      "value": -7
+    },
+    "solution_steps": [
+      "On retranche 4 aux deux membres : $-3x = 25 - 4$, soit $-3x = 21$.",
+      "On divise les deux membres par $-3$, le coefficient avec son signe : $x = 21 \\div (-3) = -7$.",
+      "Attention au signe : un positif divisé par un négatif donne un négatif. Répondre 7 reviendrait à oublier le signe de $-3$.",
+      "Vérification : $-3 \\times (-7) + 4 = 21 + 4 = 25$. La solution est −7."
+    ],
+    "hint": "Isole d'abord $-3x$, puis divise par le coefficient sans oublier son signe.",
+    "estimated_duration_s": 60,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, classe de 4e, Nombres et calculs, Calcul littéral et algébrique, Objectifs d'apprentissage : « Résoudre une équation du premier degré du type a𝑥 + b = c. »"
+  },
+  {
+    "id": "EX-F024-E-02",
+    "skill_id": "F024",
+    "level": "entrainement",
+    "type": "texte",
+    "statement": "Résous l'équation $8x + 3 = 9$. Donne la solution sous forme d'une fraction.",
+    "image": null,
+    "answer": {
+      "value": "3/4",
+      "forme": "solutions"
+    },
+    "solution_steps": [
+      "On retranche 3 aux deux membres : $8x = 9 - 3$, soit $8x = 6$.",
+      "On divise les deux membres par 8 : $x = 6 \\div 8$, ce qui s'écrit $\\frac{6}{8}$.",
+      "On simplifie par 2 : $\\frac{6}{8} = \\frac{3}{4}$. La solution est $\\frac{3}{4}$, soit 0,75.",
+      "Vérification : $8 \\times \\frac{3}{4} + 3 = 6 + 3 = 9$."
+    ],
+    "hint": "Le quotient de deux entiers peut s'écrire comme une fraction.",
+    "estimated_duration_s": 75,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, classe de 4e, Nombres et calculs, Calcul littéral et algébrique, Objectifs d'apprentissage : « Résoudre une équation du premier degré du type a𝑥 + b = c. »"
+  },
+  {
+    "id": "EX-F024-M-01",
+    "skill_id": "F024",
+    "level": "maitrise",
+    "type": "vrai_faux",
+    "statement": "Tom résout l'équation $9 - 4x = 21$ et trouve $x = -3$. A-t-il raison ?",
+    "image": null,
+    "answer": {
+      "value": true
+    },
+    "solution_steps": [
+      "On vérifie en remplaçant $x$ par $-3$ : $9 - 4 \\times (-3) = 9 + 12 = 21$. On retrouve 21 : Tom a raison.",
+      "Résolution : on retranche 9 aux deux membres, $-4x = 21 - 9$, soit $-4x = 12$. Le terme en $x$ est $-4x$ : son coefficient est $-4$, pas 4.",
+      "On divise par $-4$ : $x = 12 \\div (-4) = -3$.",
+      "Oublier le signe moins donnerait $x = 3$, qui ne convient pas : $9 - 4 \\times 3 = -3$, et non 21. Réponse : vrai."
+    ],
+    "hint": "Remplace $x$ par la valeur de Tom et calcule le membre de gauche.",
+    "estimated_duration_s": 75,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, classe de 4e, Nombres et calculs, Calcul littéral et algébrique, Objectifs d'apprentissage : « Résoudre une équation du premier degré du type a𝑥 + b = c. »"
+  },
+  {
+    "id": "EX-F024-M-02",
+    "skill_id": "F024",
+    "level": "maitrise",
+    "type": "texte",
+    "statement": "Résous l'équation $1 = -6x - 7$. Donne la solution sous forme d'une fraction.",
+    "image": null,
+    "answer": {
+      "value": "−4/3",
+      "forme": "solutions"
+    },
+    "solution_steps": [
+      "L'inconnue est dans le membre de droite : ce n'est pas gênant, $1 = -6x - 7$ et $-6x - 7 = 1$ sont la même équation.",
+      "On ajoute 7 aux deux membres : $8 = -6x$, soit $-6x = 8$.",
+      "On divise par $-6$ : $x = \\frac{8}{-6} = -\\frac{8}{6}$, puis on simplifie par 2 : $x = -\\frac{4}{3}$.",
+      "Vérification : $-6 \\times (-\\frac{4}{3}) - 7 = 8 - 7 = 1$. La solution est $-\\frac{4}{3}$."
+    ],
+    "hint": "Commence par isoler $-6x$, puis divise par $-6$ en gardant le signe.",
+    "estimated_duration_s": 90,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, classe de 4e, Nombres et calculs, Calcul littéral et algébrique, Objectifs d'apprentissage : « Résoudre une équation du premier degré du type a𝑥 + b = c. »"
+  }
+]

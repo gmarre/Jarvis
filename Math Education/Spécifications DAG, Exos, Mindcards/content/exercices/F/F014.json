@@ -1,0 +1,171 @@
+[
+  {
+    "id": "EX-F014-D-01",
+    "skill_id": "F014",
+    "level": "decouverte",
+    "type": "qcm",
+    "statement": "On développe $-3(x + 5)$ en multipliant $-3$ par chaque terme de la parenthèse. Quel résultat est juste ?",
+    "image": null,
+    "choices": [
+      {
+        "key": "a",
+        "text": "$-3x - 15$",
+        "misconception": null
+      },
+      {
+        "key": "b",
+        "text": "$-3x + 15$",
+        "misconception": "L'élève multiplie bien les deux termes, mais oublie le signe pour le second : (−3) × 5 vaut −15, pas 15."
+      },
+      {
+        "key": "c",
+        "text": "$-3x + 5$",
+        "misconception": "L'élève ne multiplie que le premier terme : il oublie de distribuer −3 au 5."
+      },
+      {
+        "key": "d",
+        "text": "$-3x - 5$",
+        "misconception": "L'élève distribue le signe moins au 5 mais pas le nombre 3 : il écrit −5 au lieu de (−3) × 5 = −15."
+      }
+    ],
+    "answer": {
+      "value": "a"
+    },
+    "solution_steps": [
+      "$-3(x + 5) = (-3) \\times x + (-3) \\times 5$ : le facteur $-3$ multiplie les deux termes.",
+      "$(-3) \\times x = -3x$ et $(-3) \\times 5 = -15$.",
+      "Donc $-3(x + 5) = -3x + (-15) = -3x - 15$."
+    ],
+    "hint": "Le nombre devant la parenthèse multiplie chacun des deux termes, avec son signe.",
+    "estimated_duration_s": 45,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, classe de 4e, Nombres et calculs, Calcul littéral et algébrique, Objectifs d'apprentissage : « Connaitre et utiliser la distributivité simple pour développer et factoriser une expression algébrique. »"
+  },
+  {
+    "id": "EX-F014-D-02",
+    "skill_id": "F014",
+    "level": "decouverte",
+    "type": "numerique",
+    "statement": "On développe : $-5(x - 2) = -5x + \\dots$ Quel nombre complète l'égalité ?",
+    "image": null,
+    "answer": {
+      "value": 10
+    },
+    "solution_steps": [
+      "On distribue $-5$ aux deux termes : $-5(x - 2) = (-5) \\times x + (-5) \\times (-2)$.",
+      "$(-5) \\times x = -5x$.",
+      "$(-5) \\times (-2) = 10$ : le produit de deux nombres négatifs est positif.",
+      "Donc $-5(x - 2) = -5x + 10$ : le nombre cherché est 10."
+    ],
+    "hint": "Le nombre −5 multiplie aussi le second terme de la parenthèse, avec son signe.",
+    "estimated_duration_s": 40,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, classe de 4e, Nombres et calculs, Calcul littéral et algébrique, Objectifs d'apprentissage : « Connaitre et utiliser la distributivité simple pour développer et factoriser une expression algébrique. »"
+  },
+  {
+    "id": "EX-F014-E-01",
+    "skill_id": "F014",
+    "level": "entrainement",
+    "type": "texte",
+    "statement": "Développe et réduis $6 - 2(3x - 4)$.",
+    "image": null,
+    "answer": {
+      "value": "−6x + 14",
+      "forme": "reduite"
+    },
+    "solution_steps": [
+      "La multiplication est prioritaire : on développe d'abord $-2(3x - 4)$, sans toucher au 6. Calculer $6 - 2 = 4$ d'abord serait faux.",
+      "$-2(3x - 4) = (-2) \\times 3x + (-2) \\times (-4) = -6x + 8$.",
+      "On remplace : $6 - 2(3x - 4) = 6 - 6x + 8$.",
+      "On regroupe les nombres : $6 + 8 = 14$. Résultat réduit : $-6x + 14$, qu'on peut écrire $14 - 6x$."
+    ],
+    "hint": "Le signe moins devant le 2 fait partie du facteur à distribuer : −2.",
+    "estimated_duration_s": 90,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, classe de 4e, Nombres et calculs, Calcul littéral et algébrique, Objectifs d'apprentissage : « Connaitre et utiliser la distributivité simple pour développer et factoriser une expression algébrique. »"
+  },
+  {
+    "id": "EX-F014-E-02",
+    "skill_id": "F014",
+    "level": "entrainement",
+    "type": "qcm",
+    "statement": "Laquelle de ces expressions est égale à $4x^{2} - 10x$ ?",
+    "image": null,
+    "choices": [
+      {
+        "key": "a",
+        "text": "$2x(2x - 10)$",
+        "misconception": "L'élève divise le premier terme par 2x mais recopie 10 tel quel : en développant, 2x × 10 donne 20x, pas 10x."
+      },
+      {
+        "key": "b",
+        "text": "$2x(2x - 5)$",
+        "misconception": null
+      },
+      {
+        "key": "c",
+        "text": "$2(2x - 5)$",
+        "misconception": "L'élève ne met que 2 en facteur et perd le x : 2(2x − 5) = 4x − 10, qui ne contient plus de x²."
+      },
+      {
+        "key": "d",
+        "text": "$2(2x^{2} - 5)$",
+        "misconception": "L'élève met 2 en facteur mais oublie le x du second terme : 2(2x² − 5) = 4x² − 10, et non 4x² − 10x."
+      }
+    ],
+    "answer": {
+      "value": "b"
+    },
+    "solution_steps": [
+      "On cherche un facteur commun aux deux termes : $4x^{2} = 2x \\times 2x$ et $10x = 2x \\times 5$.",
+      "Le facteur commun est $2x$ : $4x^{2} - 10x = 2x \\times 2x - 2x \\times 5 = 2x(2x - 5)$.",
+      "Contrôle en développant : $2x(2x - 5) = 2x \\times 2x - 2x \\times 5 = 4x^{2} - 10x$. C'est bien l'expression de départ."
+    ],
+    "hint": "Écris chaque terme comme un produit, puis repère le facteur qu'ils ont en commun.",
+    "estimated_duration_s": 75,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, classe de 4e, Nombres et calculs, Calcul littéral et algébrique, Objectifs d'apprentissage : « Connaitre et utiliser la distributivité simple pour développer et factoriser une expression algébrique. »"
+  },
+  {
+    "id": "EX-F014-M-01",
+    "skill_id": "F014",
+    "level": "maitrise",
+    "type": "texte",
+    "statement": "Un rectangle a pour largeur $x$ et pour aire $x^{2} + 9x$. Écris sa longueur en fonction de $x$.",
+    "image": null,
+    "answer": {
+      "value": "x + 9",
+      "forme": "reduite"
+    },
+    "solution_steps": [
+      "L'aire d'un rectangle est largeur × longueur : il faut écrire $x^{2} + 9x$ sous la forme $x \\times (\\dots)$.",
+      "On factorise par $x$ : $x^{2} = x \\times x$ et $9x = x \\times 9$, donc $x^{2} + 9x = x(x + 9)$.",
+      "La largeur est $x$ : la longueur est donc $x + 9$.",
+      "Contrôle : $x(x + 9) = x^{2} + 9x$. Attention, la longueur n'est pas $9x$ : $x \\times 9x$ donnerait $9x^{2}$."
+    ],
+    "hint": "Aire = largeur × longueur : mets x en facteur dans l'aire.",
+    "estimated_duration_s": 90,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, classe de 4e, Nombres et calculs, Calcul littéral et algébrique, Objectifs d'apprentissage : « Connaitre et utiliser la distributivité simple pour développer et factoriser une expression algébrique. »"
+  },
+  {
+    "id": "EX-F014-M-02",
+    "skill_id": "F014",
+    "level": "maitrise",
+    "type": "numerique",
+    "statement": "On factorise en mettant $-6$ en facteur : $-6x - 18 = -6(x + \\dots)$. Quel nombre complète l'égalité ?",
+    "image": null,
+    "answer": {
+      "value": 3
+    },
+    "solution_steps": [
+      "Il faut que $-6$ fois le nombre cherché donne $-18$.",
+      "$(-6) \\times 3 = -18$ : le nombre cherché est 3, positif, car $-6$ porte déjà le signe moins.",
+      "Contrôle en développant : $-6(x + 3) = -6x + (-6) \\times 3 = -6x - 18$."
+    ],
+    "hint": "Quel nombre, multiplié par −6, donne −18 ?",
+    "estimated_duration_s": 60,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, classe de 4e, Nombres et calculs, Calcul littéral et algébrique, Objectifs d'apprentissage : « Connaitre et utiliser la distributivité simple pour développer et factoriser une expression algébrique. »"
+  }
+]

@@ -1,0 +1,169 @@
+[
+  {
+    "id": "EX-F064-D-01",
+    "skill_id": "F064",
+    "level": "decouverte",
+    "type": "numerique",
+    "statement": "Programme de calcul : choisir un nombre ; le multiplier par 2 ; soustraire 7 ; multiplier le résultat par 3. Quel résultat obtient-on en choisissant −5 ?",
+    "image": null,
+    "answer": {
+      "value": -51
+    },
+    "solution_steps": [
+      "On multiplie par 2 : $(-5) \\times 2 = -10$.",
+      "On soustrait 7 : $-10 - 7 = -17$.",
+      "On multiplie le résultat par 3 : $(-17) \\times 3 = -51$.",
+      "En une seule expression : $((-5) \\times 2 - 7) \\times 3 = -51$. Le résultat est −51."
+    ],
+    "hint": "Applique les étapes une par une, dans l'ordre.",
+    "estimated_duration_s": 60,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, classe de 4e, Proportionnalité, fonctions, Fonctions, Objectifs d'apprentissage : « Savoir appliquer un programme de calcul à deux (plusieurs) étapes à un nombre simple puis à une variable. »"
+  },
+  {
+    "id": "EX-F064-D-02",
+    "skill_id": "F064",
+    "level": "decouverte",
+    "type": "qcm",
+    "statement": "Programme de calcul : choisir un nombre ; lui ajouter 6 ; multiplier le résultat par 5. Quelle expression donne le résultat quand on choisit $x$ ?",
+    "image": null,
+    "choices": [
+      {
+        "key": "a",
+        "text": "$5(x + 6)$",
+        "misconception": null
+      },
+      {
+        "key": "b",
+        "text": "$5x + 6$",
+        "misconception": "L'élève multiplie le nombre choisi par 5 avant d'ajouter 6 : il inverse l'ordre des étapes du programme."
+      },
+      {
+        "key": "c",
+        "text": "$x + 6 \\times 5$",
+        "misconception": "L'élève écrit les opérations dans l'ordre sans parenthèses : avec les priorités, seul 6 est multiplié par 5, pas le résultat x + 6."
+      }
+    ],
+    "answer": {
+      "value": "a"
+    },
+    "solution_steps": [
+      "On ajoute 6 au nombre choisi : on obtient $x + 6$.",
+      "On multiplie ce résultat, tout entier, par 5 : il faut des parenthèses, $(x + 6) \\times 5$, qu'on écrit $5(x + 6)$.",
+      "Cette expression est un produit : sa dernière opération est la multiplication par 5. Sans parenthèses, $x + 6 \\times 5$ serait une somme, où seul 6 est multiplié."
+    ],
+    "hint": "Le résultat de l'addition est multiplié en entier : que faut-il écrire autour ?",
+    "estimated_duration_s": 45,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, classe de 4e, Nombres et calculs, Opérations sur les nombres relatifs, Objectifs d'apprentissage : « Utiliser le vocabulaire (somme, quotient, etc.) à partir d'un enchainement d'opérations dans un programme de calcul et inversement. »"
+  },
+  {
+    "id": "EX-F064-E-01",
+    "skill_id": "F064",
+    "level": "entrainement",
+    "type": "numerique",
+    "statement": "Programme de calcul : choisir un nombre ; le multiplier par 4 ; ajouter 9 ; multiplier le résultat par 2. Lina obtient 50. Quel nombre a-t-elle choisi ?",
+    "image": null,
+    "answer": {
+      "value": 4
+    },
+    "solution_steps": [
+      "On remonte le programme en partant de la fin, avec les opérations inverses.",
+      "La dernière étape multiplie par 2 : on divise par 2, $50 \\div 2 = 25$.",
+      "L'étape d'avant ajoute 9 : on soustrait 9, $25 - 9 = 16$.",
+      "La première étape multiplie par 4 : on divise par 4, $16 \\div 4 = 4$.",
+      "Contrôle : $4 \\times 4 = 16$, $16 + 9 = 25$, $25 \\times 2 = 50$. Lina a choisi 4."
+    ],
+    "hint": "Pars de 50 et défais les étapes, de la dernière à la première.",
+    "estimated_duration_s": 75,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, classe de 4e, Proportionnalité, fonctions, Fonctions, Objectifs d'apprentissage : « Savoir retrouver le nombre de départ après avoir remonté un programme de calcul simple. »"
+  },
+  {
+    "id": "EX-F064-E-02",
+    "skill_id": "F064",
+    "level": "entrainement",
+    "type": "texte",
+    "statement": "Programme de calcul : choisir un nombre ; le multiplier par 5 ; soustraire 4 ; multiplier le résultat par 3. Écris, sous forme réduite, le résultat obtenu en choisissant $x$.",
+    "image": null,
+    "answer": {
+      "value": "15x − 12",
+      "forme": "reduite"
+    },
+    "solution_steps": [
+      "Multiplier par 5 donne $5x$ ; soustraire 4 donne $5x - 4$.",
+      "Multiplier le résultat par 3 : tout $5x - 4$ est multiplié, d'où les parenthèses, $3(5x - 4)$.",
+      "On développe : $3(5x - 4) = 3 \\times 5x - 3 \\times 4 = 15x - 12$.",
+      "Sans parenthèses, $5x - 4 \\times 3$ ne multiplierait que le 4 : on obtiendrait $5x - 12$, qui est faux."
+    ],
+    "hint": "Écris d'abord l'expression avec des parenthèses, puis développe-la.",
+    "estimated_duration_s": 90,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, classe de 4e, Proportionnalité, fonctions, Fonctions, Objectifs d'apprentissage : « Savoir appliquer un programme de calcul à deux (plusieurs) étapes à un nombre simple puis à une variable. »"
+  },
+  {
+    "id": "EX-F064-M-01",
+    "skill_id": "F064",
+    "level": "maitrise",
+    "type": "numerique",
+    "statement": "Programme de calcul : choisir un nombre ; soustraire 6 ; multiplier par −3 ; ajouter 10. Le résultat est 31. Quel nombre a-t-on choisi ?",
+    "image": null,
+    "answer": {
+      "value": -1
+    },
+    "solution_steps": [
+      "On remonte depuis 31, de la dernière étape à la première, avec les opérations inverses.",
+      "« Ajouter 10 » se défait en soustrayant 10 : $31 - 10 = 21$.",
+      "« Multiplier par −3 » se défait en divisant par −3 : $21 \\div (-3) = -7$.",
+      "« Soustraire 6 » se défait en ajoutant 6 : $-7 + 6 = -1$.",
+      "Contrôle : $-1 - 6 = -7$, $(-7) \\times (-3) = 21$, $21 + 10 = 31$. Le nombre choisi est −1."
+    ],
+    "hint": "Chaque étape se défait par l'opération inverse, en partant de la dernière.",
+    "estimated_duration_s": 90,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, classe de 4e, Proportionnalité, fonctions, Fonctions, Objectifs d'apprentissage : « Savoir retrouver le nombre de départ après avoir remonté un programme de calcul simple. »"
+  },
+  {
+    "id": "EX-F064-M-02",
+    "skill_id": "F064",
+    "level": "maitrise",
+    "type": "qcm",
+    "statement": "Programme de calcul : choisir un nombre ; lui ajouter 4 ; multiplier le résultat par 3 ; soustraire le triple du nombre choisi. Quelle expression réduite donne le résultat pour $x$ ?",
+    "image": null,
+    "choices": [
+      {
+        "key": "a",
+        "text": "$-2x + 12$",
+        "misconception": "L'élève oublie les parenthèses : x + 4 × 3 − 3x ne multiplie que le 4, d'où x + 12 − 3x = −2x + 12."
+      },
+      {
+        "key": "b",
+        "text": "$12$",
+        "misconception": null
+      },
+      {
+        "key": "c",
+        "text": "$4$",
+        "misconception": "L'élève ne multiplie que x par 3 : 3x + 4 − 3x = 4. Or c'est tout le résultat x + 4 qui est multiplié par 3."
+      },
+      {
+        "key": "d",
+        "text": "$6x + 12$",
+        "misconception": "L'élève ajoute le triple du nombre au lieu de le soustraire : 3x + 12 + 3x = 6x + 12."
+      }
+    ],
+    "answer": {
+      "value": "b"
+    },
+    "solution_steps": [
+      "On traduit étape par étape : $x + 4$, puis $3(x + 4)$, puis $3(x + 4) - 3x$.",
+      "On développe : $3(x + 4) = 3x + 12$, donc $3(x + 4) - 3x = 3x + 12 - 3x$.",
+      "Les termes en $x$ s'annulent : $3x - 3x = 0$. Il reste $12$.",
+      "Le résultat vaut 12 quel que soit le nombre choisi : l'expression en $x$ le prouve pour tous les nombres, là où des essais ne montrent que quelques cas."
+    ],
+    "hint": "Écris l'expression avec des parenthèses, développe, puis réduis.",
+    "estimated_duration_s": 90,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, classe de 4e, Proportionnalité, fonctions, Fonctions, Objectifs d'apprentissage : « Savoir appliquer un programme de calcul à deux (plusieurs) étapes à un nombre simple puis à une variable. »"
+  }
+]

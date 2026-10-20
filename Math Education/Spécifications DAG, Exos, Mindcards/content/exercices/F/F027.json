@@ -1,0 +1,176 @@
+[
+  {
+    "id": "EX-F027-D-01",
+    "skill_id": "F027",
+    "level": "decouverte",
+    "type": "qcm",
+    "statement": "On multiplie deux nombres et le produit vaut 0.\n\nQue peut-on affirmer à coup sûr ?",
+    "image": null,
+    "choices": [
+      {
+        "key": "a",
+        "text": "Les deux nombres sont nuls.",
+        "misconception": "L'élève croit qu'il faut deux facteurs nuls. Or $0 \\times 9 = 0$ : un seul suffit."
+      },
+      {
+        "key": "b",
+        "text": "L'un au moins des deux nombres est nul.",
+        "misconception": null
+      },
+      {
+        "key": "c",
+        "text": "Les deux nombres sont opposés.",
+        "misconception": "L'élève confond avec la somme : deux opposés ont une somme nulle, $4 + (-4) = 0$, mais leur produit $4 \\times (-4) = -16$ n'est pas nul."
+      },
+      {
+        "key": "d",
+        "text": "L'un des deux nombres vaut 1.",
+        "misconception": "L'élève confond 0 et 1 : un facteur égal à 1 ne change pas l'autre, $1 \\times 6 = 6$, il ne donne pas 0."
+      }
+    ],
+    "answer": {
+      "value": "b"
+    },
+    "solution_steps": [
+      "Si aucun des deux nombres n'est nul, leur produit n'est pas nul : par exemple $3 \\times (-2) = -6$.",
+      "Un produit ne peut donc valoir 0 que si l'un au moins de ses facteurs vaut 0 : $0 \\times 7 = 0$, $(-5) \\times 0 = 0$.",
+      "Les deux peuvent être nuls ($0 \\times 0 = 0$), mais ce n'est pas obligatoire : il suffit d'un seul. La bonne réponse est b.",
+      "C'est la règle du produit nul : un produit est nul si et seulement si l'un au moins de ses facteurs est nul."
+    ],
+    "hint": "Écris plusieurs produits qui valent 0. Qu'ont-ils tous en commun ?",
+    "estimated_duration_s": 40,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, classe de 3e, Nombres et calculs, Calcul littéral et algébrique : « Résoudre une équation produit nul. »"
+  },
+  {
+    "id": "EX-F027-D-02",
+    "skill_id": "F027",
+    "level": "decouverte",
+    "type": "numerique",
+    "statement": "L'équation $x(x - 7) = 0$ a deux solutions. L'une d'elles est 7.\n\nQuelle est l'autre ?",
+    "image": null,
+    "answer": {
+      "value": 0
+    },
+    "solution_steps": [
+      "$x(x - 7)$ est un produit de deux facteurs : $x$ et $x - 7$. Il est nul si l'un au moins des facteurs est nul.",
+      "Premier facteur : $x = 0$. Second facteur : $x - 7 = 0$, donc $x = 7$.",
+      "L'autre solution est **0**. Vérification : $0 \\times (0 - 7) = 0 \\times (-7) = 0$.",
+      "Piège : le facteur $x$ est un facteur comme les autres. L'oublier fait perdre la solution 0."
+    ],
+    "hint": "Quels sont les deux facteurs du produit $x(x - 7)$ ? Chacun peut valoir 0.",
+    "estimated_duration_s": 40,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, classe de 3e, Nombres et calculs, Calcul littéral et algébrique : « Résoudre une équation produit nul. »"
+  },
+  {
+    "id": "EX-F027-E-01",
+    "skill_id": "F027",
+    "level": "entrainement",
+    "type": "texte",
+    "statement": "Résous l'équation $(2x - 3)(x + 5) = 0$.\n\nDonne toutes ses solutions, séparées par un point-virgule.",
+    "image": null,
+    "answer": {
+      "value": "−5 ; 3/2",
+      "forme": "solutions"
+    },
+    "solution_steps": [
+      "C'est un produit nul : $2x - 3 = 0$ ou $x + 5 = 0$.",
+      "$2x - 3 = 0$ donne $2x = 3$, puis $x = \\frac{3}{2}$ (on divise par 2, on ne retranche pas 2).",
+      "$x + 5 = 0$ donne $x = -5$ (on retranche 5 : le signe change par rapport au nombre écrit dans la parenthèse).",
+      "Vérification : $(2 \\times \\frac{3}{2} - 3)(\\frac{3}{2} + 5) = 0 \\times \\frac{13}{2} = 0$ et $(2 \\times (-5) - 3)(-5 + 5) = (-13) \\times 0 = 0$.",
+      "Les solutions sont $-5$ et $\\frac{3}{2}$ (soit 1,5)."
+    ],
+    "hint": "Écris deux petites équations, une par facteur, et résous chacune.",
+    "estimated_duration_s": 75,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, classe de 3e, Nombres et calculs, Calcul littéral et algébrique : « Résoudre une équation produit nul. »"
+  },
+  {
+    "id": "EX-F027-E-02",
+    "skill_id": "F027",
+    "level": "entrainement",
+    "type": "numerique",
+    "statement": "Résous l'équation $4x^{2} - 81 = 0$ en factorisant d'abord le membre de gauche.\n\nQuelle est la solution négative ?",
+    "image": null,
+    "answer": {
+      "value": -4.5
+    },
+    "solution_steps": [
+      "$4x^{2} = (2x)^{2}$ et $81 = 9^{2}$ : on reconnaît $a^{2} - b^{2} = (a - b)(a + b)$ avec $a = 2x$ et $b = 9$.",
+      "Donc $4x^{2} - 81 = (2x - 9)(2x + 9)$, et l'équation devient $(2x - 9)(2x + 9) = 0$.",
+      "Produit nul : $2x - 9 = 0$ donne $x = \\frac{9}{2}$ ; $2x + 9 = 0$ donne $2x = -9$, puis $x = -\\frac{9}{2}$.",
+      "La solution négative est $-\\frac{9}{2}$, soit **−4,5**. Vérification : $4 \\times (-4{,}5)^{2} - 81 = 4 \\times 20{,}25 - 81 = 81 - 81 = 0$."
+    ],
+    "hint": "$4x^{2}$ est le carré de quelle expression ? Et 81 ?",
+    "estimated_duration_s": 75,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, classe de 3e, Nombres et calculs, Calcul littéral et algébrique : « Résoudre une équation produit nul. »"
+  },
+  {
+    "id": "EX-F027-M-01",
+    "skill_id": "F027",
+    "level": "maitrise",
+    "type": "texte",
+    "statement": "Résous l'équation $(x - 2)(3x + 1) - (x - 2)(x + 6) = 0$ en commençant par factoriser.\n\nDonne toutes ses solutions, séparées par un point-virgule.",
+    "image": null,
+    "answer": {
+      "value": "2 ; 5/2",
+      "forme": "solutions"
+    },
+    "solution_steps": [
+      "Le facteur $(x - 2)$ est commun aux deux produits. On le met en facteur, en gardant le second facteur entre parenthèses : $(x - 2)\\big[(3x + 1) - (x + 6)\\big]$.",
+      "On réduit le crochet en changeant tous les signes de la parenthèse précédée de $-$ : $3x + 1 - x - 6 = 2x - 5$.",
+      "L'équation devient $(x - 2)(2x - 5) = 0$. Produit nul : $x - 2 = 0$ donne $x = 2$ ; $2x - 5 = 0$ donne $x = \\frac{5}{2}$.",
+      "Vérification avec l'équation de départ, pour $x = \\frac{5}{2}$ : $(\\frac{1}{2})(\\frac{17}{2}) - (\\frac{1}{2})(\\frac{17}{2}) = 0$. Pour $x = 2$, chaque produit contient le facteur $0$.",
+      "Les solutions sont 2 et $\\frac{5}{2}$ (soit 2,5). Développer au lieu de factoriser donne $2x^{2} - 9x + 10 = 0$, que l'on ne sait pas résoudre directement."
+    ],
+    "hint": "Quel facteur apparaît dans les deux produits ? Garde des parenthèses autour de $(x + 6)$.",
+    "estimated_duration_s": 120,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, classe de 3e, Nombres et calculs, Calcul littéral et algébrique : « Pratiquer un raisonnement par analyse-synthèse dans le cadre d'une résolution d'équation. »"
+  },
+  {
+    "id": "EX-F027-M-02",
+    "skill_id": "F027",
+    "level": "maitrise",
+    "type": "qcm",
+    "statement": "Quelle équation a pour solutions exactement $-3$ et $\\frac{1}{2}$ ?",
+    "image": null,
+    "choices": [
+      {
+        "key": "a",
+        "text": "$(x - 3)(2x - 1) = 0$",
+        "misconception": "L'élève recopie le nombre $-3$ dans la parenthèse : $x - 3 = 0$ donne $x = 3$, pas $-3$."
+      },
+      {
+        "key": "b",
+        "text": "$(x + 3)(x - 2) = 0$",
+        "misconception": "L'élève confond $\\frac{1}{2}$ et 2 : $x - 2 = 0$ donne $x = 2$. Il faut $2x - 1 = 0$ pour obtenir $\\frac{1}{2}$."
+      },
+      {
+        "key": "c",
+        "text": "$(x + 3)(2x - 1) = 0$",
+        "misconception": null
+      },
+      {
+        "key": "d",
+        "text": "$(x + 3) + (2x - 1) = 0$",
+        "misconception": "L'élève applique la règle du produit nul à une somme. Or $(x + 3) + (2x - 1) = 3x + 2$, nul seulement pour $x = -\\frac{2}{3}$."
+      }
+    ],
+    "answer": {
+      "value": "c"
+    },
+    "solution_steps": [
+      "On teste chaque proposition en résolvant son produit nul.",
+      "$(x + 3)(2x - 1) = 0$ : $x + 3 = 0$ donne $x = -3$ ; $2x - 1 = 0$ donne $x = \\frac{1}{2}$. Ce sont bien les deux solutions voulues.",
+      "$(x - 3)(2x - 1) = 0$ a pour solutions 3 et $\\frac{1}{2}$ ; $(x + 3)(x - 2) = 0$ a pour solutions $-3$ et 2.",
+      "$(x + 3) + (2x - 1) = 0$ n'est pas un produit : elle s'écrit $3x + 2 = 0$ et n'a qu'une solution, $-\\frac{2}{3}$. La bonne réponse est c."
+    ],
+    "hint": "Pour chaque équation, cherche quelle valeur de $x$ annule chaque facteur.",
+    "estimated_duration_s": 90,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, classe de 3e, Nombres et calculs, Calcul littéral et algébrique : « Résoudre une équation produit nul. »"
+  }
+]
