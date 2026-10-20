@@ -80,6 +80,19 @@ function exposantsEnClair(value: string): string {
     .replace(/\^\s+/g, '^')
 }
 
+// Caracteres speciaux ecrits par leur code : l'outil de deploiement des Edge
+// Functions transforme les sequences d'echappement en caracteres invisibles a
+// la relecture.
+const car = (...codes: number[]) => String.fromCharCode(...codes)
+const FOIS = car(0xd7)
+const AUTRES_FOIS = new RegExp(`[*${car(0xb7, 0x2219, 0x22c5)}]`, 'g')
+const CARRE = new RegExp(car(0xb2), 'g')
+const CUBE = new RegExp(car(0xb3), 'g')
+const ESPACES_SPECIALES = new RegExp(`[${car(0xa0, 0x202f, 0x2009)}]`, 'g')
+const MOINS_VARIANTS = new RegExp(`[${car(0x2212, 0x2013, 0x2014, 0x2010, 0x2011, 0xfe63, 0xff0d)}]`, 'g')
+const DIVISE = new RegExp(car(0xf7), 'g')
+const EURO = car(0x20ac)
+
 /**
  * Signes de multiplication : « 3,2 × 10^4 », « 3,2 x 10^4 », « 3,2*10^4 »,
  * « 3,2·10^4 » s'ecrivent tous avec ×. La lettre x n'est lue comme un signe
@@ -89,10 +102,10 @@ function exposantsEnClair(value: string): string {
  */
 function multiplicationsEnClair(value: string): string {
   return value
-    .replace(/[*\u00B7\u2219\u22C5]/g, '\u00D7')
-    .replace(/(?<=\d)\s*x\s*(?=\d)/g, '\u00D7')
-    // \u00AB 1,496 fois 10^8 \u00BB : le mot, tape sur un telephone (relecture, etape 6).
-    .replace(/(?<=\d)\s*fois\s*(?=\d)/g, '\u00D7')
+    .replace(AUTRES_FOIS, FOIS)
+    .replace(/(?<=\d)\s*x\s*(?=\d)/g, FOIS)
+    // « 1,496 fois 10^8 » : le mot, tape sur un telephone (relecture, etape 6).
+    .replace(/(?<=\d)\s*fois\s*(?=\d)/g, FOIS)
 }
 
 /** Minuscules, sans accents, espaces unifiees, virgule decimale unifiee. */
@@ -103,16 +116,16 @@ function normalize(value: string): string {
     .normalize('NFD')
     .replace(DIACRITIQUES, '')))
     // cm² et cm2 s'equivalent : l'exposant se tape rarement au clavier.
-    .replace(/\u00B2/g, '2')
-    .replace(/\u00B3/g, '3')
+    .replace(CARRE, '2')
+    .replace(CUBE, '3')
     // Espaces insecables, frequents dans les grands nombres ecrits "1 024".
-    .replace(/[\u00A0\u202F\u2009]/g, ' ')
+    .replace(ESPACES_SPECIALES, ' ')
     .replace(/\s+/g, ' ')
     .replace(/,(?=\d)/g, '.')
     // Signe moins : le clavier d'un telephone ou un copier-coller donne souvent
     // le moins typographique (U+2212), un tiret demi-cadratin (U+2013) ou un
     // trait d'union insecable. Tous valent « - » (etape 5, nombres relatifs).
-    .replace(/[\u2212\u2013\u2014\u2010\u2011\uFE63\uFF0D]/g, '-')
+    .replace(MOINS_VARIANTS, '-')
     // Apostrophe typographique du clavier d'un telephone, et ponctuation
     // finale : « C’est le triangle ! » vaut « c'est le triangle » (releve en
     // relecture, etape 4a). La ponctuation interne n'est pas touchee.
@@ -153,7 +166,7 @@ function toNumber(value: string): number | null {
     // « (-3) » : la parenthese d'un relatif ecrit comme dans un calcul.
     .replace(/^\(([+-]?\d+(?:\.\d+)?)\)$/, '$1')
     // « 3 ÷ 4 » se lit comme la fraction 3/4 (etape 6).
-    .replace(/\u00F7/g, '/')
+    .replace(DIVISE, '/')
   if (cleaned === '') return null
 
   // « −(5/2) » et « (−5)/2 » : le signe devant la fraction, ou un terme entre
@@ -209,7 +222,7 @@ const NOMS_UNITES: Record<string, string[]> = {
   '°': ['degre'],
   // Temperatures (etape 5) : « -3 °C », « -3 degres », « -3 degres Celsius ».
   '°c': ['degre', 'degrecelsius', 'degrescelsius', 'c'],
-  '\u20ac': ['euro', 'eur'],
+  [EURO]: ['euro', 'eur'],
 }
 
 /** Toutes les ecritures acceptees d'une unite : symbole, nom, pluriel, carre ou cube. */
