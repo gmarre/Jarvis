@@ -75,6 +75,42 @@ describe('checkAnswer, normalisation des ecritures', () => {
     expect(checkAnswer(tolerant, '3,1').isCorrect).toBe(false)
   })
 
+  it('traite les deux bornes de la tolerance de la meme facon', () => {
+    const arrondi: Exercise = { ...fraction, answer: { value: 8.66, tolerance: 0.005 } }
+    expect(checkAnswer(arrondi, '8,655').isCorrect).toBe(true)
+    expect(checkAnswer(arrondi, '8,665').isCorrect).toBe(true)
+    expect(checkAnswer(arrondi, '8,67').isCorrect).toBe(false)
+  })
+
+  it('lit « fois » entre deux nombres et « cm^2 » comme unite', () => {
+    const scientifique: Exercise = { ...fraction, type: 'texte', answer: { value: '1,496 × 10^8' } }
+    expect(checkAnswer(scientifique, '1,496 fois 10 puissance 8').isCorrect).toBe(true)
+    expect(checkAnswer(scientifique, '14,96 fois 10^7').isCorrect).toBe(false)
+    const aire: Exercise = { ...fraction, answer: { value: 225, unit: 'cm²' } }
+    expect(checkAnswer(aire, '225 cm^2').isCorrect).toBe(true)
+    expect(checkAnswer(aire, '225 m^2').isCorrect).toBe(false)
+  })
+
+  it('accepte toutes les ecritures du signe d une fraction, sans la reduire', () => {
+    const negative: Exercise = { ...fraction, type: 'texte', answer: { value: '-3/5', accepted: ['-6/10'] } }
+    for (const saisie of ['3/(-5)', '(-3)/5', '-(3/5)', '3/-5', '−3/5', '6/(−10)', '(−6)/10']) {
+      expect(checkAnswer(negative, saisie).isCorrect).toBe(true)
+    }
+    for (const saisie of ['3/5', '-3/-5', '-12/20', '-5/3']) {
+      expect(checkAnswer(negative, saisie).isCorrect).toBe(false)
+    }
+    const positive: Exercise = { ...negative, answer: { value: '3/5' } }
+    expect(checkAnswer(positive, '-3/-5').isCorrect).toBe(true)
+  })
+
+  it('accepte « n = 13 » quand l enonce demande la valeur de n', () => {
+    const exposant: Exercise = { ...fraction, answer: { value: 13 } }
+    expect(checkAnswer(exposant, 'n = 13').isCorrect).toBe(true)
+    expect(checkAnswer(exposant, 'n=13').isCorrect).toBe(true)
+    expect(checkAnswer(exposant, 'n = 12').isCorrect).toBe(false)
+    expect(checkAnswer(exposant, '10 = 13').isCorrect).toBe(false)
+  })
+
   it('accepte les ecritures listees dans answer.accepted', () => {
     const alternatives: Exercise = {
       ...fraction,

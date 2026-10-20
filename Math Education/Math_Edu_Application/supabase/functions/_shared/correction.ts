@@ -91,6 +91,8 @@ function multiplicationsEnClair(value: string): string {
   return value
     .replace(/[*\u00B7\u2219\u22C5]/g, '\u00D7')
     .replace(/(?<=\d)\s*x\s*(?=\d)/g, '\u00D7')
+    // \u00AB 1,496 fois 10^8 \u00BB : le mot, tape sur un telephone (relecture, etape 6).
+    .replace(/(?<=\d)\s*fois\s*(?=\d)/g, '\u00D7')
 }
 
 /** Minuscules, sans accents, espaces unifiees, virgule decimale unifiee. */
@@ -225,6 +227,8 @@ function formesUnite(unit: string): Set<string> {
   // « 9 cm carrés », « 8 cm cube » : le symbole suivi du mot (releve en
   // relecture, lot figures).
   if (exposant) for (const suffixe of suffixes) formes.add(base + suffixe)
+  // « 225 cm^2 » : l'exposant tape comme dans une puissance (relecture, etape 6).
+  if (exposant) formes.add(`${base}^${exposant}`)
   return formes
 }
 
@@ -241,6 +245,28 @@ function nombreAvecUnite(raw: string, unit: string | null | undefined): number |
   return Number(morceaux[1])
 }
 
+/**
+ * Fraction ecrite avec son signe, ramenee a « -a/b » ou « a/b » sans etre
+ * reduite : « 6/(-10) », « (-6)/10 », « -(6/10) », « 6/-10 » valent tous
+ * « -6/10 », et « -3/-5 » vaut « 3/5 » (releve en relecture, etape 6). La
+ * forme demandee (irreductible ou non) reste exigee : 6/10 n'est pas 3/5.
+ */
+function fractionSignee(value: string): string | null {
+  let texte = normalizeLoose(value)
+  let signe = 1
+  const entoure = texte.match(/^-\((.+)\)$/)
+  if (entoure) {
+    signe = -1
+    texte = entoure[1]
+  }
+  texte = texte.replace(/\((-?\d+(?:\.\d+)?)\)/g, '$1')
+  const morceaux = texte.match(/^(-?)(\d+(?:\.\d+)?)\/(-?)(\d+(?:\.\d+)?)$/)
+  if (!morceaux) return null
+  if (morceaux[1]) signe = -signe
+  if (morceaux[3]) signe = -signe
+  return `${signe < 0 ? '-' : ''}${morceaux[2]}/${morceaux[4]}`
+}
+
 /** Le verdict seul : juste ou faux. */
 function estJuste(exercise: ExerciceACorriger, raw: string): boolean {
   const expectedValue = exercise.answer.value
@@ -254,19 +280,33 @@ function estJuste(exercise: ExerciceACorriger, raw: string): boolean {
       return (raw === 'true') === Boolean(expectedValue)
 
     case 'numerique': {
-      const given = toNumber(raw) ?? nombreAvecUnite(raw, exercise.answer.unit)
+      // « n = 13 » pour « Que vaut n ? » : l'eleve recopie la lettre de
+      // l'enonce (releve en relecture, etape 6). Seule une lettre isolee est
+      // retiree, l'egalite d'un calcul n'est pas lue.
+      const saisie = raw.replace(/^\s*[a-zA-Z]\s*=\s*/, '')
+      const given = toNumber(saisie) ?? nombreAvecUnite(saisie, exercise.answer.unit)
       const target = toNumber(String(expectedValue))
       if (given === null || target === null) return matchesAccepted(exercise, raw)
-      const tolerance = exercise.answer.tolerance ?? floatNoise(target)
+      // La tolerance du contenu est une borne incluse : le bruit des flottants
+      // s'y ajoute, sans quoi 8,655 sort de 8,66 ± 0,005 et 8,665 y entre.
+      const tolerance = (exercise.answer.tolerance ?? 0) + floatNoise(target)
       return Math.abs(given - target) <= tolerance || matchesAccepted(exercise, raw)
     }
 
     case 'texte':
-    default:
-      return (
+    default: {
+      if (
         normalizeLoose(raw) === normalizeLoose(String(expectedValue)) ||
         matchesAccepted(exercise, raw)
+      ) {
+        return true
+      }
+      const fraction = fractionSignee(raw)
+      if (fraction === null) return false
+      return [expectedValue, ...(exercise.answer.accepted ?? [])].some(
+        (attendue) => fractionSignee(String(attendue)) === fraction,
       )
+    }
   }
 }
 
