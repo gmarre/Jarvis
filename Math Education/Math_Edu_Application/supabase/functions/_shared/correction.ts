@@ -264,7 +264,10 @@ function fractionSignee(value: string): string | null {
   if (!morceaux) return null
   // « -3/-7 » n'est pas ramene a « 3/7 » : simplifier les deux signes est
   // souvent ce que l'exercice evalue (C034, relecture de l'etape 6).
-  if (morceaux[1] && morceaux[3]) return null
+  // Idem pour « -(-3/7) » et « -(3/-7) » : deux signes moins ne s'annulent
+  // jamais ici.
+  const signes = [entoure, morceaux[1], morceaux[3]].filter(Boolean).length
+  if (signes > 1) return null
   if (morceaux[1] || morceaux[3]) signe = -signe
   return `${signe < 0 ? '-' : ''}${morceaux[2]}/${morceaux[4]}`
 }

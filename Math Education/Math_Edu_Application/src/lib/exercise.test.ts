@@ -103,6 +103,8 @@ describe('checkAnswer, normalisation des ecritures', () => {
     // Les deux signes a simplifier sont souvent ce que l'exercice evalue.
     expect(checkAnswer(positive, '-3/-5').isCorrect).toBe(false)
     expect(checkAnswer(positive, '(-3)/(-5)').isCorrect).toBe(false)
+    expect(checkAnswer(positive, '-(-3/5)').isCorrect).toBe(false)
+    expect(checkAnswer(positive, '-(3/-5)').isCorrect).toBe(false)
   })
 
   it('accepte « n = 13 » quand l enonce demande la valeur de n', () => {
