@@ -1,0 +1,69 @@
+{
+  "id": "SX-B037-01",
+  "skill_id": "B037",
+  "skill_ids": [
+    "B037",
+    "A001",
+    "B003"
+  ],
+  "school_level": "CP",
+  "title": "La visite à la ferme",
+  "contexte": "Jeudi, la classe de CP visite une ferme. Il y a 22 élèves et 2 adultes.\n\nDans le poulailler, il y a 27 poules. Le matin, 7 poules sortent dans le pré. Plus tard, 3 de ces poules reviennent dans le poulailler.\n\nLe fermier a aussi 18 lapins. Il vend 5 lapins au marché.\n\nDans le pré, les enfants voient les vaches du fermier : Rosa, Bella, Lilas, Mimosa, Câline, Noisette, Praline et Caramel.\n\nÀ midi, les enfants pique-niquent sous un grand arbre, près de la mare.",
+  "image": null,
+  "duree_estimee_min": 10,
+  "questions": [
+    {
+      "key": "q1",
+      "skill_id": "A001",
+      "statement": "Combien de vaches les enfants voient-ils ?",
+      "type": "numerique",
+      "answer": {
+        "value": 8,
+        "unit": "vaches"
+      },
+      "points": 2,
+      "solution_steps": [
+        "On compte les noms des vaches, un par un : Rosa (1), Bella (2), Lilas (3), Mimosa (4), Câline (5), Noisette (6), Praline (7), Caramel (8).",
+        "Les enfants voient **8 vaches**."
+      ],
+      "hint": "Relis la phrase qui parle des vaches et compte les noms."
+    },
+    {
+      "key": "q2",
+      "skill_id": "B003",
+      "statement": "Combien de lapins reste-t-il au fermier ?",
+      "type": "numerique",
+      "answer": {
+        "value": 13,
+        "unit": "lapins"
+      },
+      "points": 3,
+      "solution_steps": [
+        "Le fermier avait 18 lapins. Il en vend 5 : on enlève 5.",
+        "18 − 5 = 13, car 13 + 5 = 18.",
+        "Il reste **13 lapins** au fermier."
+      ],
+      "hint": "Il vend des lapins : en a-t-il plus ou moins après ?"
+    },
+    {
+      "key": "q3",
+      "skill_id": "B037",
+      "statement": "Quand les 3 poules sont revenues, combien de poules y a-t-il dans le poulailler ?",
+      "type": "numerique",
+      "answer": {
+        "value": 23,
+        "unit": "poules"
+      },
+      "points": 4,
+      "solution_steps": [
+        "Étape 1 : 7 poules sortent. 27 − 7 = 20 poules restent dans le poulailler.",
+        "Étape 2 : 3 poules reviennent. 20 + 3 = 23.",
+        "Il y a **23 poules** dans le poulailler.",
+        "Attention : 20 est le nombre de poules après la sortie du matin. Il faut encore ajouter les poules qui reviennent."
+      ],
+      "hint": "Cherche d'abord combien de poules restent quand les 7 poules sont sorties."
+    }
+  ],
+  "review_status": "relu_agent",
+  "programme_ref": "Cycle 2, Cours préparatoire, La résolution de problèmes : « Résoudre des problèmes additifs en deux étapes (champ numérique inférieur ou égal à 30). »"
+}

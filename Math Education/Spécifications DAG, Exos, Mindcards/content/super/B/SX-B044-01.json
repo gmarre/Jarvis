@@ -1,0 +1,142 @@
+{
+  "id": "SX-B044-01",
+  "skill_id": "B044",
+  "skill_ids": [
+    "B044",
+    "A018",
+    "A022"
+  ],
+  "school_level": "5e",
+  "title": "Le club météo et sa sortie",
+  "contexte": "Le club météo du collège relève chaque jour la température au sommet de la station de ski voisine, à 2 300 m d'altitude.\n\nMardi, à 7 h, le thermomètre indique −8,4 °C. Entre 7 h et 13 h, la température monte de 5,9 degrés. Entre 13 h et 18 h, elle baisse de 3,7 degrés.\n\nMercredi, à 7 h, il fait −4,6 °C. Entre 7 h et 13 h, la température monte de 4,6 degrés.\n\nLe club a aussi un compte à la coopérative du collège. Avant sa sortie au planétarium, le solde du compte était de 37,50 €. La sortie coûte 52,80 € : son paiement s'inscrit sur le relevé du compte comme une opération de −52,80 €. Le club compte 14 membres.",
+  "image": null,
+  "duree_estimee_min": 15,
+  "questions": [
+    {
+      "key": "q1",
+      "skill_id": "A018",
+      "statement": "Mardi, entre 13 h et 18 h, la température varie. Quel nombre relatif représente cette variation ?",
+      "type": "qcm",
+      "choices": [
+        {
+          "key": "a",
+          "text": "+3,7",
+          "misconception": "L'élève oublie le signe : une baisse se représente par un nombre négatif."
+        },
+        {
+          "key": "b",
+          "text": "−3,7",
+          "misconception": null
+        },
+        {
+          "key": "c",
+          "text": "−8,4",
+          "misconception": "−8,4 °C est la température de mardi à 7 h, pas une variation."
+        },
+        {
+          "key": "d",
+          "text": "+5,9",
+          "misconception": "+5,9 est la variation entre 7 h et 13 h, pas entre 13 h et 18 h."
+        }
+      ],
+      "answer": {
+        "value": "b"
+      },
+      "points": 1,
+      "solution_steps": [
+        "Entre 13 h et 18 h, la température baisse de 3,7 degrés.",
+        "Une baisse se représente par un nombre négatif : la variation est **−3,7**."
+      ],
+      "hint": "Relis la phrase qui parle de 13 h et de 18 h."
+    },
+    {
+      "key": "q2",
+      "skill_id": "A022",
+      "statement": "Pour calculer la température de mardi à 13 h, on calcule (−8,4) + (+5,9). Lequel de ces deux nombres est le plus éloigné de zéro ?",
+      "type": "qcm",
+      "choices": [
+        {
+          "key": "a",
+          "text": "−8,4",
+          "misconception": null
+        },
+        {
+          "key": "b",
+          "text": "+5,9",
+          "misconception": "L'élève croit qu'un nombre positif est toujours plus loin de zéro. La distance à zéro de −8,4 est 8,4, et celle de +5,9 est 5,9."
+        },
+        {
+          "key": "c",
+          "text": "Ils sont à la même distance de zéro",
+          "misconception": "Leurs distances à zéro sont 8,4 et 5,9 : elles ne sont pas égales."
+        }
+      ],
+      "answer": {
+        "value": "a"
+      },
+      "points": 2,
+      "solution_steps": [
+        "La distance à zéro d'un nombre relatif est ce nombre sans son signe : 8,4 pour −8,4, et 5,9 pour +5,9.",
+        "8,4 est plus grand que 5,9 : c'est **−8,4** qui est le plus éloigné de zéro."
+      ],
+      "hint": "Compare les nombres sans leur signe."
+    },
+    {
+      "key": "q3",
+      "skill_id": "B044",
+      "statement": "Quelle température fait-il mardi à 13 h ?",
+      "type": "numerique",
+      "answer": {
+        "value": -2.5,
+        "unit": "°C"
+      },
+      "points": 3,
+      "solution_steps": [
+        "On part de −8,4 °C, et la température monte de 5,9 degrés : on calcule (−8,4) + (+5,9).",
+        "Les signes sont contraires : on soustrait les distances à zéro, 8,4 − 5,9 = 2,5.",
+        "On prend le signe du nombre le plus éloigné de zéro, −8,4 : le résultat est négatif.",
+        "(−8,4) + (+5,9) = −2,5 : il fait **−2,5 °C** mardi à 13 h.",
+        "Attention : ajouter les distances à zéro donnerait 14,3, une erreur de signes contraires."
+      ],
+      "hint": "Les deux nombres ont des signes contraires."
+    },
+    {
+      "key": "q4",
+      "skill_id": "B044",
+      "statement": "Quelle température fait-il mercredi à 13 h ?",
+      "type": "numerique",
+      "answer": {
+        "value": 0,
+        "unit": "°C"
+      },
+      "points": 3,
+      "solution_steps": [
+        "On part de −4,6 °C, et la température monte de 4,6 degrés : on calcule (−4,6) + (+4,6).",
+        "−4,6 et +4,6 sont deux nombres opposés : leur somme est nulle.",
+        "Il fait **0 °C** mercredi à 13 h."
+      ],
+      "hint": "Que remarques-tu sur les deux nombres à ajouter ?"
+    },
+    {
+      "key": "q5",
+      "skill_id": "B044",
+      "statement": "Quel est le solde du compte du club après le paiement de la sortie ?",
+      "type": "numerique",
+      "answer": {
+        "value": -15.3,
+        "unit": "€"
+      },
+      "points": 4,
+      "solution_steps": [
+        "On ajoute l'opération au solde : (+37,50) + (−52,80).",
+        "Signes contraires : on soustrait les distances à zéro, 52,80 − 37,50 = 15,30.",
+        "−52,80 est le plus éloigné de zéro : le résultat est négatif.",
+        "(+37,50) + (−52,80) = −15,30 : le solde est de **−15,30 €**. Le club doit 15,30 € à la coopérative.",
+        "Le nombre de membres ne sert pas ici."
+      ],
+      "hint": "Un solde peut devenir négatif."
+    }
+  ],
+  "review_status": "relu_agent",
+  "programme_ref": "Cycle 4, classe de 5e, Nombres et calculs, Nombres relatifs, Objectifs d'apprentissage : « Additionner deux nombres décimaux relatifs. »"
+}

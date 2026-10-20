@@ -1,0 +1,121 @@
+{
+  "id": "SX-B047-01",
+  "skill_id": "B047",
+  "skill_ids": [
+    "B047",
+    "A018",
+    "D004",
+    "A021"
+  ],
+  "school_level": "5e",
+  "title": "Le compte du club photo",
+  "contexte": "Le club photo du collège a un compte à la coopérative. Au 1er mars, le solde du compte était de −12,60 €. Le club compte 17 membres.\n\nEn mars, le relevé du compte indique ces opérations, dans l'ordre :\ncotisations des membres : +45 € ;\ntirages de photos : −27,80 € ;\nachat d'un trépied : −18,50 € ;\nvente de cartes postales : +15,50 € ;\nremboursement du trépied, rapporté au magasin car il était abîmé : +18,50 € ;\nachat de cadres : −9,40 €.\n\nL'exposition du club aura lieu en juin, dans le hall du collège.",
+  "image": null,
+  "duree_estimee_min": 15,
+  "questions": [
+    {
+      "key": "q1",
+      "skill_id": "A018",
+      "statement": "Au 1er mars, que signifie le solde de −12,60 € ?",
+      "type": "qcm",
+      "choices": [
+        {
+          "key": "a",
+          "text": "Le club avait 12,60 € sur son compte",
+          "misconception": "Un solde négatif n'est pas de l'argent disponible : c'est une dette."
+        },
+        {
+          "key": "b",
+          "text": "Le club devait 12,60 € à la coopérative",
+          "misconception": null
+        },
+        {
+          "key": "c",
+          "text": "Le club avait dépensé 12,60 € depuis le début de l'année",
+          "misconception": "Le solde dit ce que contient le compte à une date, pas ce que le club a dépensé."
+        }
+      ],
+      "answer": {
+        "value": "b"
+      },
+      "points": 1,
+      "solution_steps": [
+        "Un solde négatif signifie que le compte est en dessous de zéro.",
+        "Avec un solde de −12,60 €, **le club devait 12,60 € à la coopérative**."
+      ],
+      "hint": "Que veut dire un nombre négatif pour de l'argent ?"
+    },
+    {
+      "key": "q2",
+      "skill_id": "D004",
+      "statement": "Quel est le montant total des cotisations et de la vente de cartes postales ?",
+      "type": "numerique",
+      "answer": {
+        "value": 60.5,
+        "unit": "€"
+      },
+      "points": 2,
+      "solution_steps": [
+        "Cotisations : 45 € ; cartes postales : 15,50 €.",
+        "On pose 45,00 + 15,50 en alignant les virgules.",
+        "45,00 + 15,50 = 60,50 : le total est de **60,50 €**."
+      ],
+      "hint": "Écris 45 avec une virgule pour aligner les nombres."
+    },
+    {
+      "key": "q3",
+      "skill_id": "A021",
+      "statement": "Pour calculer le solde à la fin de mars, Noé barre les opérations −18,50 € et +18,50 €. Vrai ou faux : il a le droit de le faire.",
+      "type": "vrai_faux",
+      "answer": {
+        "value": true
+      },
+      "points": 2,
+      "solution_steps": [
+        "−18,50 et +18,50 sont deux nombres opposés : leur somme est nulle.",
+        "Les barrer tous les deux ne change pas le résultat : c'est **vrai**, Noé a le droit de le faire."
+      ],
+      "hint": "Que vaut la somme de deux nombres opposés ?"
+    },
+    {
+      "key": "q4",
+      "skill_id": "B047",
+      "statement": "Quel était le solde du compte juste après les trois premières opérations du relevé ?",
+      "type": "numerique",
+      "answer": {
+        "value": -13.9,
+        "unit": "€"
+      },
+      "points": 3,
+      "solution_steps": [
+        "On part du solde du 1er mars et on enchaîne les trois premières opérations : −12,60 + 45 − 27,80 − 18,50.",
+        "Terme positif : 45.",
+        "Termes négatifs : −12,60 − 27,80 − 18,50 = −58,90.",
+        "45 − 58,90 = −13,90 : le solde était de **−13,90 €**.",
+        "Attention : oublier le solde de départ donnerait −1,30 €."
+      ],
+      "hint": "N'oublie pas le solde du 1er mars."
+    },
+    {
+      "key": "q5",
+      "skill_id": "B047",
+      "statement": "Quel est le solde du compte à la fin du mois de mars ?",
+      "type": "numerique",
+      "answer": {
+        "value": 10.7,
+        "unit": "€"
+      },
+      "points": 4,
+      "solution_steps": [
+        "Solde final : −12,60 + 45 − 27,80 − 18,50 + 15,50 + 18,50 − 9,40.",
+        "−18,50 et +18,50 sont opposés : ils s'annulent.",
+        "Termes positifs : 45 + 15,50 = 60,50.",
+        "Termes négatifs : −12,60 − 27,80 − 9,40 = −49,80.",
+        "60,50 − 49,80 = 10,70 : le solde est de **10,70 €** à la fin de mars."
+      ],
+      "hint": "Regroupe les termes positifs et les termes négatifs, et cherche les opposés."
+    }
+  ],
+  "review_status": "relu_agent",
+  "programme_ref": "Cycle 4, classe de 5e, Nombres et calculs, Nombres relatifs, Objectifs d'apprentissage : « Enchainer additions et soustractions de décimaux relatifs. »"
+}

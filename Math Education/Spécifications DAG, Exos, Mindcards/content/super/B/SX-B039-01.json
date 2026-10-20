@@ -1,0 +1,104 @@
+{
+  "id": "SX-B039-01",
+  "skill_id": "B039",
+  "skill_ids": [
+    "B039",
+    "A002",
+    "B006"
+  ],
+  "school_level": "CE2",
+  "title": "La classe de découverte à la montagne",
+  "contexte": "La classe de CE2 de M. Petit part trois jours en classe de découverte à la montagne. Il y a 24 élèves et 3 adultes.\n\nAu chalet, les élèves dorment dans des chambres de 4 lits. Toutes les chambres des élèves sont pleines. Les adultes dorment dans une autre partie du chalet. En tout, le chalet compte 31 lits.\n\nLe premier soir, le cuisinier prépare des crêpes. Il remplit 8 plateaux, et il met 8 crêpes sur chaque plateau.\n\nPour la randonnée du deuxième jour, les 27 participants forment 9 équipes. M. Petit a acheté 45 barres de céréales. Il les partage entre les équipes : chaque équipe reçoit le même nombre de barres.\n\nLe car du retour arrive à l'école à 17 heures.",
+  "image": null,
+  "duree_estimee_min": 15,
+  "questions": [
+    {
+      "key": "q1",
+      "skill_id": "A002",
+      "statement": "Le chalet a-t-il assez de lits pour tous les élèves et tous les adultes ?",
+      "type": "qcm",
+      "choices": [
+        {
+          "key": "a",
+          "text": "Oui, et des lits restent libres",
+          "misconception": null
+        },
+        {
+          "key": "b",
+          "text": "Non, il manque des lits",
+          "misconception": "Il y a 24 + 3 = 27 personnes. L'élève compare 27 et 31 par les chiffres des unités : 7 est plus grand que 1. Mais 31 a 3 dizaines et 27 n'en a que 2 : 31 est plus grand que 27."
+        },
+        {
+          "key": "c",
+          "text": "Oui, et il ne reste aucun lit libre",
+          "misconception": "Il faudrait autant de lits que de personnes, soit 27 lits. Or le chalet compte 31 lits : ce n'est pas le même nombre."
+        }
+      ],
+      "answer": {
+        "value": "a"
+      },
+      "points": 2,
+      "solution_steps": [
+        "Personnes à loger : 24 élèves et 3 adultes, soit 24 + 3 = 27 personnes.",
+        "On compare 27 et 31 : 31 a 3 dizaines, 27 en a 2. 31 est plus grand que 27.",
+        "Il y a plus de lits que de personnes : il y a assez de lits, et des lits restent libres."
+      ],
+      "hint": "Compte d'abord toutes les personnes du séjour."
+    },
+    {
+      "key": "q2",
+      "skill_id": "B039",
+      "statement": "Combien de chambres les élèves occupent-ils ?",
+      "type": "numerique",
+      "answer": {
+        "value": 6,
+        "unit": "chambres"
+      },
+      "points": 3,
+      "solution_steps": [
+        "On range les 24 élèves par groupes de 4 : c'est la division 24 ÷ 4.",
+        "4 × 6 = 24, donc 24 ÷ 4 = 6.",
+        "Les élèves occupent **6 chambres**.",
+        "Attention : les 3 adultes dorment dans une autre partie du chalet, on ne les compte pas."
+      ],
+      "hint": "Combien de groupes de 4 peut-on faire avec les élèves ?"
+    },
+    {
+      "key": "q3",
+      "skill_id": "B006",
+      "statement": "Combien de crêpes le cuisinier prépare-t-il pour le premier soir ?",
+      "type": "numerique",
+      "answer": {
+        "value": 64,
+        "unit": "crêpes"
+      },
+      "points": 2,
+      "solution_steps": [
+        "8 plateaux de 8 crêpes : 8 × 8.",
+        "Dans la table de 8 : 8 × 8 = 64.",
+        "Le cuisinier prépare **64 crêpes**."
+      ],
+      "hint": null
+    },
+    {
+      "key": "q4",
+      "skill_id": "B039",
+      "statement": "Combien de barres de céréales chaque équipe reçoit-elle ?",
+      "type": "numerique",
+      "answer": {
+        "value": 5,
+        "unit": "barres"
+      },
+      "points": 4,
+      "solution_steps": [
+        "On partage 45 barres entre 9 équipes : c'est la division 45 ÷ 9.",
+        "On cherche le nombre qui, multiplié par 9, donne 45 : 9 × 5 = 45.",
+        "Donc 45 ÷ 9 = 5 : chaque équipe reçoit **5 barres**.",
+        "Attention : on partage entre les 9 équipes, pas entre les 27 participants."
+      ],
+      "hint": "Cherche dans la table de 9 le produit qui donne 45."
+    }
+  ],
+  "review_status": "relu_agent",
+  "programme_ref": "Cycle 2, Cours élémentaire deuxième année, Les quatre opérations : « Comprendre le sens de la division et utiliser le symbole « ÷ ». »"
+}

@@ -1,0 +1,124 @@
+{
+  "id": "SX-B045-01",
+  "skill_id": "B045",
+  "skill_ids": [
+    "B045",
+    "A018",
+    "D004"
+  ],
+  "school_level": "5e",
+  "title": "Le carnet de températures de Léna",
+  "contexte": "Léna habite près de Strasbourg. Pendant une semaine de février, elle note chaque jour dans son carnet la température la plus basse de la journée (la minimale) et la plus haute (la maximale). Son thermomètre est placé à 1,5 m du sol, à l'ombre.\n\nLundi : minimale −3,5 °C ; maximale 4,2 °C.\nMardi : minimale −7,8 °C ; maximale −1,4 °C.\nMercredi : minimale 0,6 °C ; maximale 6,1 °C.\n\nJeudi, Léna a oublié de noter la minimale. Elle sait seulement que la maximale était de 5,1 °C, et que la température est montée de 8,9 degrés entre la minimale et la maximale.\n\nL'écart entre la minimale et la maximale d'une journée s'appelle l'amplitude de la journée.",
+  "image": null,
+  "duree_estimee_min": 15,
+  "questions": [
+    {
+      "key": "q1",
+      "skill_id": "A018",
+      "statement": "Quel jour la température est-elle restée en dessous de zéro du matin au soir ?",
+      "type": "qcm",
+      "choices": [
+        {
+          "key": "a",
+          "text": "Lundi",
+          "misconception": "Lundi, la minimale est négative, mais la maximale, 4,2 °C, est positive : la température est passée au-dessus de zéro."
+        },
+        {
+          "key": "b",
+          "text": "Mardi",
+          "misconception": null
+        },
+        {
+          "key": "c",
+          "text": "Mercredi",
+          "misconception": "Mercredi, la minimale et la maximale sont toutes les deux positives : il n'a jamais fait moins de zéro."
+        }
+      ],
+      "answer": {
+        "value": "b"
+      },
+      "points": 1,
+      "solution_steps": [
+        "La température reste sous zéro toute la journée si même la maximale est négative.",
+        "Mardi, la maximale est −1,4 °C : elle est négative. C'est le seul jour dans ce cas.",
+        "Réponse : **mardi**."
+      ],
+      "hint": "Relis la minimale et la maximale de chaque jour."
+    },
+    {
+      "key": "q2",
+      "skill_id": "D004",
+      "statement": "De combien de degrés la maximale de mercredi dépasse-t-elle la maximale de lundi ?",
+      "type": "numerique",
+      "answer": {
+        "value": 1.9,
+        "unit": "°C"
+      },
+      "points": 2,
+      "solution_steps": [
+        "Les deux maximales sont positives : 6,1 °C et 4,2 °C.",
+        "On pose 6,1 − 4,2 en alignant les virgules : 61 dixièmes moins 42 dixièmes font 19 dixièmes.",
+        "6,1 − 4,2 = 1,9 : la maximale de mercredi dépasse celle de lundi de **1,9 degré**."
+      ],
+      "hint": "Aligne les virgules pour poser la soustraction."
+    },
+    {
+      "key": "q3",
+      "skill_id": "B045",
+      "statement": "Quelle est l'amplitude de la journée de lundi ?",
+      "type": "numerique",
+      "answer": {
+        "value": 7.7,
+        "unit": "°C"
+      },
+      "points": 3,
+      "solution_steps": [
+        "L'amplitude est l'écart entre la maximale et la minimale : maximale moins minimale.",
+        "4,2 − (−3,5) : soustraire −3,5, c'est ajouter son opposé, +3,5.",
+        "4,2 + 3,5 = 7,7.",
+        "L'amplitude de lundi est de **7,7 degrés**.",
+        "Attention : 4,2 − 3,5 = 0,7 oublie que la minimale est négative."
+      ],
+      "hint": "Soustraire un nombre, c'est ajouter son opposé."
+    },
+    {
+      "key": "q4",
+      "skill_id": "B045",
+      "statement": "De combien la minimale a-t-elle varié entre lundi et mardi ? Donne la variation avec son signe.",
+      "type": "numerique",
+      "answer": {
+        "value": -4.3,
+        "unit": "°C"
+      },
+      "points": 3,
+      "solution_steps": [
+        "Une variation se calcule : valeur d'arrivée moins valeur de départ.",
+        "(−7,8) − (−3,5) = (−7,8) + (+3,5).",
+        "Signes contraires : 7,8 − 3,5 = 4,3, et le signe est celui de −7,8.",
+        "La variation est de **−4,3 degrés** : la minimale a baissé de 4,3 degrés."
+      ],
+      "hint": "Valeur d'arrivée moins valeur de départ."
+    },
+    {
+      "key": "q5",
+      "skill_id": "B045",
+      "statement": "Quelle était la minimale de jeudi ?",
+      "type": "numerique",
+      "answer": {
+        "value": -3.8,
+        "unit": "°C"
+      },
+      "points": 4,
+      "solution_steps": [
+        "La minimale, augmentée de 8,9 degrés, donne la maximale : minimale + 8,9 = 5,1.",
+        "Pour compléter cette addition à trou, on soustrait : minimale = 5,1 − 8,9.",
+        "5,1 − 8,9 = 5,1 + (−8,9). Signes contraires : 8,9 − 5,1 = 3,8, et le signe est celui de −8,9.",
+        "La minimale de jeudi était de **−3,8 °C**.",
+        "Vérification : (−3,8) + 8,9 = 5,1."
+      ],
+      "hint": "Écris une addition à trou avec la minimale cherchée."
+    }
+  ],
+  "review_status": "relu_agent",
+  "programme_ref": "Cycle 4, classe de 5e, Nombres et calculs, Nombres relatifs, Objectifs d'apprentissage : « Soustraire deux nombres décimaux relatifs. »"
+}

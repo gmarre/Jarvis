@@ -1,0 +1,132 @@
+{
+  "id": "SX-B050-01",
+  "skill_id": "B050",
+  "skill_ids": [
+    "B050",
+    "B049",
+    "D007"
+  ],
+  "school_level": "4e",
+  "title": "Le suivi du glacier",
+  "contexte": "Des glaciologues suivent un glacier des Alpes, long d'environ 7 km. Dans leurs relevés, une diminution est notée par un nombre négatif.\n\nAu point de mesure A, situé à 2 650 m d'altitude, l'épaisseur de la glace a varié de −14,4 m entre 2016 et 2024, c'est-à-dire en 8 ans.\n\nLe front du glacier, c'est-à-dire son extrémité, recule régulièrement : la longueur du glacier varie de −9 m chaque année.\n\nPrès du glacier, une station météo a relevé 31,5 mm de pluie en 6 heures, lors d'un orage d'été.\n\nPour ralentir la fonte, une partie du glacier est couverte, l'été, de grandes bâches blanches.",
+  "image": null,
+  "duree_estimee_min": 15,
+  "questions": [
+    {
+      "key": "q1",
+      "skill_id": "B050",
+      "statement": "Quel calcul donne la variation moyenne de l'épaisseur de la glace en un an, au point A ?",
+      "type": "qcm",
+      "choices": [
+        {
+          "key": "a",
+          "text": "(−14,4) × 8",
+          "misconception": "Pour répartir une variation sur 8 ans, on divise par 8, on ne multiplie pas."
+        },
+        {
+          "key": "b",
+          "text": "(−14,4) ÷ 8",
+          "misconception": null
+        },
+        {
+          "key": "c",
+          "text": "8 ÷ (−14,4)",
+          "misconception": "On divise la variation par le nombre d'années, pas le nombre d'années par la variation."
+        },
+        {
+          "key": "d",
+          "text": "(−14,4) − 8",
+          "misconception": "Retirer 8 ne répartit pas la variation entre les 8 années."
+        }
+      ],
+      "answer": {
+        "value": "b"
+      },
+      "points": 1,
+      "solution_steps": [
+        "La variation de −14,4 m s'est faite en 8 ans.",
+        "Pour la variation moyenne en un an, on partage en 8 : **(−14,4) ÷ 8**."
+      ],
+      "hint": "Relis la phrase qui parle du point A."
+    },
+    {
+      "key": "q2",
+      "skill_id": "B050",
+      "statement": "Quelle a été la variation moyenne de l'épaisseur de la glace en un an, au point A ?",
+      "type": "numerique",
+      "answer": {
+        "value": -1.8,
+        "unit": "m"
+      },
+      "points": 3,
+      "solution_steps": [
+        "On calcule (−14,4) ÷ 8.",
+        "Un nombre négatif divisé par un nombre positif : le quotient est négatif.",
+        "14,4 ÷ 8 = 1,8, car 8 × 1,8 = 14,4.",
+        "La variation moyenne est de **−1,8 m** par an."
+      ],
+      "hint": "Décide du signe, puis divise les distances à zéro."
+    },
+    {
+      "key": "q3",
+      "skill_id": "B049",
+      "statement": "À ce rythme, de combien la longueur du glacier variera-t-elle en 7 ans ?",
+      "type": "numerique",
+      "answer": {
+        "value": -63,
+        "unit": "m"
+      },
+      "points": 2,
+      "solution_steps": [
+        "Chaque année, la longueur varie de −9 m. En 7 ans : 7 × (−9).",
+        "Un facteur positif, un facteur négatif : le produit est négatif. 7 × 9 = 63.",
+        "La longueur variera de **−63 m** : le glacier raccourcira de 63 m."
+      ],
+      "hint": null
+    },
+    {
+      "key": "q4",
+      "skill_id": "D007",
+      "statement": "Combien de millimètres de pluie sont tombés en moyenne par heure pendant l'orage ?",
+      "type": "numerique",
+      "answer": {
+        "value": 5.25,
+        "unit": "mm"
+      },
+      "points": 2,
+      "solution_steps": [
+        "31,5 mm en 6 heures : on pose la division 31,5 ÷ 6.",
+        "31 ÷ 6 : 5, reste 1. On abaisse le 5 des dixièmes : 15 dixièmes ÷ 6 = 2 dixièmes, reste 3 dixièmes.",
+        "On continue : 30 centièmes ÷ 6 = 5 centièmes, reste 0.",
+        "31,5 ÷ 6 = 5,25 : il est tombé en moyenne **5,25 mm** par heure."
+      ],
+      "hint": "Continue la division après la virgule jusqu'à un reste nul."
+    },
+    {
+      "key": "q5",
+      "skill_id": "B050",
+      "statement": "À ce rythme, en combien d'années la longueur du glacier aura-t-elle varié de −58,5 m ?",
+      "type": "numerique",
+      "answer": {
+        "value": 6.5,
+        "unit": "ans",
+        "accepted": [
+          "6,5 années",
+          "6 ans et demi",
+          "6 ans 1/2"
+        ]
+      },
+      "points": 4,
+      "solution_steps": [
+        "On cherche le nombre d'années qui, multiplié par −9, donne −58,5 : … × (−9) = −58,5.",
+        "Ce facteur manquant est le quotient (−58,5) ÷ (−9).",
+        "Deux nombres de même signe : le quotient est positif. 58,5 ÷ 9 = 6,5.",
+        "Il faudra **6,5 ans**, soit six ans et demi.",
+        "Vérification : 6,5 × (−9) = −58,5."
+      ],
+      "hint": "Écris une multiplication à trou."
+    }
+  ],
+  "review_status": "relu_agent",
+  "programme_ref": "Cycle 4, classe de 4e, Nombres et calculs, Opérations sur les nombres relatifs, Objectifs d'apprentissage : « Diviser deux nombres relatifs. »"
+}

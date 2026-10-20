@@ -1,0 +1,124 @@
+{
+  "id": "SX-B040-01",
+  "skill_id": "B040",
+  "skill_ids": [
+    "B040",
+    "A009",
+    "B007"
+  ],
+  "school_level": "6e",
+  "title": "Le cross du collège",
+  "contexte": "Chaque automne, le collège Jean-Moulin organise son cross au parc de la Vallée. Cette année, 734 élèves sont inscrits. Le parcours des élèves de sixième mesure 2 km, et celui des élèves de troisième mesure 3 km.\n\nPour aller au parc, les élèves prennent des cars de 63 places. Les professeurs, eux, s'y rendent à vélo.\n\nPour que la course reste sûre, les élèves partent par vagues de 48 coureurs. Toutes les vagues sont complètes, sauf la dernière.\n\nPour les ravitaillements, l'intendante a commandé 38 packs de 24 bouteilles d'eau.\n\nÀ l'arrivée, chaque coureur reçoit un diplôme.",
+  "image": null,
+  "duree_estimee_min": 20,
+  "questions": [
+    {
+      "key": "q1",
+      "skill_id": "B040",
+      "statement": "Pour savoir combien de cars il faut réserver, quelle division faut-il poser ?",
+      "type": "qcm",
+      "choices": [
+        {
+          "key": "a",
+          "text": "La division de 734 par 63",
+          "misconception": null
+        },
+        {
+          "key": "b",
+          "text": "La division de 734 par 48",
+          "misconception": "48 est le nombre de coureurs d'une vague, pas le nombre de places d'un car."
+        },
+        {
+          "key": "c",
+          "text": "La division de 63 par 734",
+          "misconception": "On répartit les 734 élèves dans des cars de 63 places : on divise 734 par 63, pas l'inverse."
+        }
+      ],
+      "answer": {
+        "value": "a"
+      },
+      "points": 1,
+      "solution_steps": [
+        "On range les 734 élèves dans des cars de 63 places : c'est un groupement, on divise 734 par 63.",
+        "Les vagues de 48 coureurs et les bouteilles ne servent pas pour cette question."
+      ],
+      "hint": "Relis la phrase qui parle des cars."
+    },
+    {
+      "key": "q2",
+      "skill_id": "A009",
+      "statement": "Pour poser la division de 734 par 48, on commence par les dizaines. Combien y a-t-il de dizaines en tout dans 734 ?",
+      "type": "numerique",
+      "answer": {
+        "value": 73,
+        "unit": "dizaines"
+      },
+      "points": 2,
+      "solution_steps": [
+        "734, c'est 7 centaines, 3 dizaines et 4 unités.",
+        "Une centaine vaut 10 dizaines : 7 centaines et 3 dizaines font 70 + 3 = 73 dizaines.",
+        "Il y a **73 dizaines** en tout dans 734.",
+        "Attention : 3 est le chiffre des dizaines, pas le nombre de dizaines en tout."
+      ],
+      "hint": "Une centaine, c'est combien de dizaines ?"
+    },
+    {
+      "key": "q3",
+      "skill_id": "B040",
+      "statement": "Combien de coureurs y a-t-il dans la dernière vague ?",
+      "type": "numerique",
+      "answer": {
+        "value": 14,
+        "unit": "coureurs"
+      },
+      "points": 3,
+      "solution_steps": [
+        "On pose la division euclidienne de 734 par 48.",
+        "7 centaines ne suffisent pas pour 48 parts : on prend les 73 dizaines. 48 va 1 fois dans 73 : 48 × 1 = 48, il reste 25 dizaines.",
+        "25 dizaines et 4 unités font 254 : 48 × 5 = 240, il reste 14.",
+        "Quotient 15, reste 14 : 734 = 48 × 15 + 14, et 14 est plus petit que 48.",
+        "15 vagues sont complètes ; la dernière vague compte **14 coureurs**."
+      ],
+      "hint": "Le reste de la division a un sens ici."
+    },
+    {
+      "key": "q4",
+      "skill_id": "B007",
+      "statement": "Combien de bouteilles d'eau l'intendante a-t-elle commandées ?",
+      "type": "numerique",
+      "answer": {
+        "value": 912,
+        "unit": "bouteilles"
+      },
+      "points": 2,
+      "solution_steps": [
+        "38 packs de 24 bouteilles : 38 × 24.",
+        "On pose : 38 × 4 = 152, puis 38 × 20 = 760 (on n'oublie pas le 0 des dizaines).",
+        "152 + 760 = 912.",
+        "L'intendante a commandé **912 bouteilles**."
+      ],
+      "hint": "Pose la multiplication : n'oublie pas le décalage pour le chiffre des dizaines."
+    },
+    {
+      "key": "q5",
+      "skill_id": "B040",
+      "statement": "Combien de cars faut-il réserver pour emmener tous les élèves ?",
+      "type": "numerique",
+      "answer": {
+        "value": 12,
+        "unit": "cars"
+      },
+      "points": 4,
+      "solution_steps": [
+        "On pose la division euclidienne de 734 par 63.",
+        "73 dizaines : 63 va 1 fois, 63 × 1 = 63, il reste 10 dizaines.",
+        "10 dizaines et 4 unités font 104 : 63 va 1 fois, il reste 41.",
+        "734 = 63 × 11 + 41 : 11 cars pleins emmènent 693 élèves, et 41 élèves n'ont pas de place.",
+        "Il faut un car de plus pour ces 41 élèves : il faut réserver **12 cars**."
+      ],
+      "hint": "Que faire des élèves qui restent quand les cars sont pleins ?"
+    }
+  ],
+  "review_status": "relu_agent",
+  "programme_ref": "Cycle 3, classe de 6e, Les nombres entiers et décimaux : « Résoudre des problèmes mettant en jeu des divisions euclidiennes »"
+}

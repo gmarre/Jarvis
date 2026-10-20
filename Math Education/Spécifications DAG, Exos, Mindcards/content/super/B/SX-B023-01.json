@@ -1,0 +1,123 @@
+{
+  "id": "SX-B023-01",
+  "skill_id": "B023",
+  "skill_ids": [
+    "B023",
+    "A036"
+  ],
+  "school_level": "3e",
+  "title": "L'infiniment petit",
+  "contexte": "Pour son exposé sur l'infiniment petit, Yanis relève des ordres de grandeur dans un livre de sciences. Les longueurs sont données en mètres.\n\nUne bactérie mesure environ 10⁻⁶ m de long.\nUn petit virus mesure environ 10⁻⁸ m.\nUn atome mesure environ 10⁻¹⁰ m.\nLe noyau d'un atome mesure environ 10⁻¹⁴ m.\n\nUne bactérie a une masse d'environ 10⁻¹⁵ kg. Dans de bonnes conditions, une colonie peut compter 10¹² bactéries.\n\nLe microscope du collège grossit jusqu'à 400 fois : il ne permet de voir que les bactéries.",
+  "image": null,
+  "duree_estimee_min": 15,
+  "questions": [
+    {
+      "key": "q1",
+      "skill_id": "A036",
+      "statement": "Lequel de ces objets est le plus petit ?",
+      "type": "qcm",
+      "choices": [
+        {
+          "key": "a",
+          "text": "La bactérie",
+          "misconception": "L'élève compare les exposants sans leur signe : 6 est plus petit que 14. Mais plus l'exposant négatif est loin de zéro, plus la puissance est petite : 10⁻⁶ est bien plus grand que 10⁻¹⁴."
+        },
+        {
+          "key": "b",
+          "text": "Le virus",
+          "misconception": "10⁻⁸ = 0,000 000 01 : c'est plus grand que 10⁻¹⁰ et que 10⁻¹⁴."
+        },
+        {
+          "key": "c",
+          "text": "L'atome",
+          "misconception": "Le noyau est à l'intérieur de l'atome, et 10⁻¹⁴ est plus petit que 10⁻¹⁰."
+        },
+        {
+          "key": "d",
+          "text": "Le noyau d'un atome",
+          "misconception": null
+        }
+      ],
+      "answer": {
+        "value": "d"
+      },
+      "points": 1,
+      "solution_steps": [
+        "10⁻ⁿ est l'inverse de 10ⁿ : plus n est grand, plus 10⁻ⁿ est petit.",
+        "Le plus grand exposant est dans 10⁻¹⁴ : c'est **le noyau d'un atome** qui est le plus petit."
+      ],
+      "hint": "10⁻ⁿ est l'inverse de 10ⁿ."
+    },
+    {
+      "key": "q2",
+      "skill_id": "A036",
+      "statement": "Écris sans puissance de 10 la longueur d'une bactérie, en mètres.",
+      "type": "numerique",
+      "answer": {
+        "value": 1e-06,
+        "unit": "m"
+      },
+      "points": 2,
+      "solution_steps": [
+        "10⁻⁶ est l'inverse de 10⁶ : 10⁻⁶ = 1 ÷ 1 000 000.",
+        "En écriture décimale : 0,000 001, le 1 au sixième rang après la virgule.",
+        "Une bactérie mesure environ **0,000 001 m**, un millionième de mètre."
+      ],
+      "hint": "Écris d'abord 10⁻¹, 10⁻² et 10⁻³ en écriture décimale, puis continue."
+    },
+    {
+      "key": "q3",
+      "skill_id": "B023",
+      "statement": "Combien de fois une bactérie est-elle plus longue qu'un petit virus ?",
+      "type": "numerique",
+      "answer": {
+        "value": 100,
+        "unit": "fois"
+      },
+      "points": 3,
+      "solution_steps": [
+        "On divise la longueur de la bactérie par celle du virus : 10⁻⁶ ÷ 10⁻⁸.",
+        "On soustrait les exposants : −6 − (−8) = −6 + 8 = 2.",
+        "10⁻⁶ ÷ 10⁻⁸ = 10² = 100 : une bactérie est **100 fois** plus longue qu'un petit virus.",
+        "Attention : soustraire −8, c'est ajouter 8 ; écrire −6 − 8 = −14 serait une erreur de signe."
+      ],
+      "hint": "Soustraire un nombre négatif, c'est ajouter son opposé."
+    },
+    {
+      "key": "q4",
+      "skill_id": "B023",
+      "statement": "La masse d'une colonie de 10¹² bactéries s'écrit 10ⁿ kg. Que vaut n ?",
+      "type": "numerique",
+      "answer": {
+        "value": -3
+      },
+      "points": 3,
+      "solution_steps": [
+        "La masse est 10¹² × 10⁻¹⁵ kg.",
+        "On ajoute les exposants : 12 + (−15) = −3.",
+        "10¹² × 10⁻¹⁵ = 10⁻³ : n = **−3**. La colonie a une masse de 0,001 kg, soit 1 g."
+      ],
+      "hint": "Multiplier des puissances de 10, c'est ajouter les exposants."
+    },
+    {
+      "key": "q5",
+      "skill_id": "B023",
+      "statement": "Combien de fois un atome est-il plus grand que son noyau ?",
+      "type": "numerique",
+      "answer": {
+        "value": 10000,
+        "unit": "fois"
+      },
+      "points": 4,
+      "solution_steps": [
+        "On divise la taille de l'atome par celle du noyau : 10⁻¹⁰ ÷ 10⁻¹⁴.",
+        "On soustrait les exposants : −10 − (−14) = −10 + 14 = 4.",
+        "10⁻¹⁰ ÷ 10⁻¹⁴ = 10⁴ = 10 000 : un atome est **10 000 fois** plus grand que son noyau.",
+        "Attention : soustraire les exposants dans l'autre sens, −14 − (−10) = −4, donnerait 10⁻⁴, un nombre plus petit que 1 : impossible, puisque l'atome contient le noyau."
+      ],
+      "hint": "Exposant du nombre divisé moins exposant du diviseur."
+    }
+  ],
+  "review_status": "relu_agent",
+  "programme_ref": "Cycle 4, classe de 3e, Nombres et calculs, Puissances, Objectifs d'apprentissage : « Multiplier et diviser des puissances. »"
+}

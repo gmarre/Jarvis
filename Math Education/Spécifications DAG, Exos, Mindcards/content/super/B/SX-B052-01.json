@@ -1,0 +1,110 @@
+{
+  "id": "SX-B052-01",
+  "skill_id": "B052",
+  "skill_ids": [
+    "B052",
+    "A029"
+  ],
+  "school_level": "5e",
+  "title": "Le jardin de M. Diallo",
+  "contexte": "M. Diallo aménage son jardin, qui mesure 25 m de long.\n\nIl pose une terrasse carrée de 8 m de côté. Au centre de la terrasse, il laisse un carré de 2 m de côté sans dalles, pour planter un olivier. Tout le reste de la terrasse est couvert de dalles.\n\nAu fond du jardin, il fabrique un bac à compost en bois, en forme de cube de 11 dm d'arête. Le bac n'a ni fond ni couvercle : seules ses faces latérales, sur les côtés, sont en bois. M. Diallo veut peindre l'extérieur de toutes ces faces.\n\nPour ses plantations, il a acheté 5 sacs de terreau de 40 litres.",
+  "image": null,
+  "duree_estimee_min": 15,
+  "questions": [
+    {
+      "key": "q1",
+      "skill_id": "B052",
+      "statement": "Quelle expression donne l'aire, en m², de la partie de la terrasse couverte de dalles ?",
+      "type": "qcm",
+      "choices": [
+        {
+          "key": "a",
+          "text": "8² − 2²",
+          "misconception": null
+        },
+        {
+          "key": "b",
+          "text": "(8 − 2)²",
+          "misconception": "L'élève retire le côté du petit carré au côté de la terrasse : on obtient l'aire d'un carré de 6 m de côté, pas celle de la terrasse privée du petit carré."
+        },
+        {
+          "key": "c",
+          "text": "8 × 2 − 2 × 2",
+          "misconception": "L'élève lit l'exposant comme un facteur : 8² = 8 × 8, pas 8 × 2."
+        },
+        {
+          "key": "d",
+          "text": "8² + 2²",
+          "misconception": "Le carré de l'olivier n'est pas couvert de dalles : on retire son aire, on ne l'ajoute pas."
+        }
+      ],
+      "answer": {
+        "value": "a"
+      },
+      "points": 1,
+      "solution_steps": [
+        "L'aire de la terrasse est celle d'un carré de 8 m de côté : 8² m².",
+        "On retire l'aire du carré de l'olivier, de 2 m de côté : 2² m².",
+        "L'aire couverte de dalles est **8² − 2²** m²."
+      ],
+      "hint": "Une partie de la terrasse n'est pas couverte de dalles."
+    },
+    {
+      "key": "q2",
+      "skill_id": "A029",
+      "statement": "Quel est le volume du bac à compost, en dm³ ?",
+      "type": "numerique",
+      "answer": {
+        "value": 1331,
+        "unit": "dm³"
+      },
+      "points": 2,
+      "solution_steps": [
+        "Le volume d'un cube d'arête 11 dm est 11³ dm³, le cube de 11.",
+        "11³ = 11 × 11 × 11 = 121 × 11 = 1 331.",
+        "Le bac a un volume de **1 331 dm³**.",
+        "Attention : 11³ n'est pas 11 × 3 = 33."
+      ],
+      "hint": "Le cube d'un nombre est le produit de trois facteurs égaux à ce nombre."
+    },
+    {
+      "key": "q3",
+      "skill_id": "B052",
+      "statement": "Quelle est l'aire, en m², de la partie de la terrasse couverte de dalles ?",
+      "type": "numerique",
+      "answer": {
+        "value": 60,
+        "unit": "m²"
+      },
+      "points": 3,
+      "solution_steps": [
+        "On calcule 8² − 2² : les puissances d'abord, puis la soustraction.",
+        "8² = 64 et 2² = 4.",
+        "64 − 4 = 60 : les dalles couvrent **60 m²**.",
+        "Attention : (8 − 2)² = 36 n'est pas le même calcul."
+      ],
+      "hint": "Calcule les carrés avant la soustraction."
+    },
+    {
+      "key": "q4",
+      "skill_id": "B052",
+      "statement": "Quelle est l'aire totale, en dm², des faces que M. Diallo va peindre ?",
+      "type": "numerique",
+      "answer": {
+        "value": 484,
+        "unit": "dm²"
+      },
+      "points": 4,
+      "solution_steps": [
+        "Un cube a 6 faces. Sans fond ni couvercle, il reste 6 − 2 = 4 faces latérales à peindre.",
+        "Chaque face est un carré de 11 dm de côté : son aire est 11² dm². L'aire totale est 4 × 11².",
+        "On calcule la puissance avant le produit : 11² = 121, puis 4 × 121 = 484.",
+        "M. Diallo va peindre **484 dm²**.",
+        "Attention : (4 × 11)² = 44² = 1 936 applique le carré à tout le produit, et 6 faces compteraient le fond et le couvercle, qui n'existent pas."
+      ],
+      "hint": "Le bac n'a ni fond ni couvercle en bois."
+    }
+  ],
+  "review_status": "relu_agent",
+  "programme_ref": "Cycle 4, classe de 5e, Nombres et calculs, Puissances, Objectifs d'apprentissage : « Calculer la valeur numérique d'expressions contenant des puissances simples, additions, soustractions et produits. »"
+}

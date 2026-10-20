@@ -1,0 +1,109 @@
+{
+  "id": "SX-B053-01",
+  "skill_id": "B053",
+  "skill_ids": [
+    "B053",
+    "A029"
+  ],
+  "school_level": "4e",
+  "title": "Le mur d'écrans du concert",
+  "contexte": "Pour un concert, une salle de spectacle installe un mur d'écrans en forme de carré. Le mur est formé de petits écrans carrés, tous identiques, posés côte à côte : il y a 20 petits écrans sur chaque côté du mur, donc 20² petits écrans en tout.\n\nChaque petit écran est lui-même un carré de lampes LED : il y a 50 LED sur chaque côté d'un petit écran, donc 50² LED par écran.\n\nUn petit écran mesure 48 cm de côté et pèse 7 kg. La salle peut accueillir 3 500 spectateurs.\n\nPour un festival en plein air, l'équipe technique construira un mur plus grand, lui aussi carré, avec les mêmes petits écrans : 40 petits écrans sur chaque côté.",
+  "image": null,
+  "duree_estimee_min": 15,
+  "questions": [
+    {
+      "key": "q1",
+      "skill_id": "B053",
+      "statement": "Combien de LED y a-t-il sur un côté du mur du concert ?",
+      "type": "qcm",
+      "choices": [
+        {
+          "key": "a",
+          "text": "70",
+          "misconception": "L'élève additionne 20 et 50 : or chacun des 20 écrans d'un côté apporte 50 LED, c'est 20 × 50."
+        },
+        {
+          "key": "b",
+          "text": "1 000",
+          "misconception": null
+        },
+        {
+          "key": "c",
+          "text": "400",
+          "misconception": "400 = 20², c'est le nombre de petits écrans du mur, pas le nombre de LED sur un côté."
+        },
+        {
+          "key": "d",
+          "text": "50",
+          "misconception": "50 LED, c'est le côté d'un seul petit écran."
+        }
+      ],
+      "answer": {
+        "value": "b"
+      },
+      "points": 1,
+      "solution_steps": [
+        "Un côté du mur aligne 20 petits écrans, et chacun a 50 LED sur son côté.",
+        "20 × 50 = 1 000 : il y a **1 000 LED** sur un côté du mur."
+      ],
+      "hint": "Combien de petits écrans y a-t-il le long d'un côté du mur ?"
+    },
+    {
+      "key": "q2",
+      "skill_id": "A029",
+      "statement": "Combien de LED contient un petit écran ?",
+      "type": "numerique",
+      "answer": {
+        "value": 2500,
+        "unit": "LED"
+      },
+      "points": 2,
+      "solution_steps": [
+        "Un petit écran contient 50² LED.",
+        "50² = 50 × 50 = 2 500.",
+        "Un petit écran contient **2 500 LED**.",
+        "Attention : 50² n'est pas 50 × 2 = 100."
+      ],
+      "hint": null
+    },
+    {
+      "key": "q3",
+      "skill_id": "B053",
+      "statement": "Combien de LED contient le mur du concert ? Calcule sans calculatrice.",
+      "type": "numerique",
+      "answer": {
+        "value": 1000000,
+        "unit": "LED"
+      },
+      "points": 3,
+      "solution_steps": [
+        "Le mur contient 20² écrans de 50² LED : 20² × 50².",
+        "On regroupe les facteurs par paires : 20² × 50² = (20 × 50)² = 1 000².",
+        "1 000² = 1 000 × 1 000 = 1 000 000.",
+        "Le mur contient **1 000 000 LED**. Vérification : 400 × 2 500 = 1 000 000."
+      ],
+      "hint": "Les deux puissances ont le même exposant."
+    },
+    {
+      "key": "q4",
+      "skill_id": "B053",
+      "statement": "Combien de LED contiendra le mur du festival ?",
+      "type": "numerique",
+      "answer": {
+        "value": 4000000,
+        "unit": "LED"
+      },
+      "points": 4,
+      "solution_steps": [
+        "Le mur du festival a 40 écrans sur chaque côté : 40² écrans, de 50² LED chacun.",
+        "40² × 50² = (40 × 50)² = 2 000².",
+        "2 000² = 2 000 × 2 000 = 4 000 000.",
+        "Le mur du festival contiendra **4 000 000 LED**.",
+        "Attention : on garde l'exposant 2 ; écrire 2 000⁴ en ajoutant les exposants serait faux."
+      ],
+      "hint": "Regroupe d'abord 40 et 50."
+    }
+  ],
+  "review_status": "relu_agent",
+  "programme_ref": "Cycle 4, classe de 4e, Nombres et calculs, Puissances, Objectifs d'apprentissage : « Multiplier des puissances d'un même exposant entier naturel de deux nombres entre elles. »"
+}

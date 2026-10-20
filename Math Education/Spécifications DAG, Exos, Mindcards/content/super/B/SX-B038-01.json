@@ -1,0 +1,86 @@
+{
+  "id": "SX-B038-01",
+  "skill_id": "B038",
+  "skill_ids": [
+    "B038",
+    "A002",
+    "B005"
+  ],
+  "school_level": "CE1",
+  "title": "Le stand de jus de la kermesse",
+  "contexte": "Samedi, c'est la kermesse de l'école. La classe de CE1 tient le stand des jus de fruits.\n\nUn gobelet de jus d'orange coûte 2 €. Un gobelet de jus de pomme coûte 3 €.\n\nLe matin, 36 personnes passent devant le stand. L'après-midi, 63 personnes passent devant le stand.\n\nLe matin, le stand vend 9 gobelets de jus d'orange.\n\nL'après-midi, Chloé achète 4 gobelets de jus de pomme pour sa famille. Avant cet achat, elle avait 25 € dans son porte-monnaie.\n\nLe stand ferme à 6 heures du soir.",
+  "image": null,
+  "duree_estimee_min": 10,
+  "questions": [
+    {
+      "key": "q1",
+      "skill_id": "A002",
+      "statement": "À quel moment de la journée passe-t-il le plus de personnes devant le stand ?",
+      "type": "qcm",
+      "choices": [
+        {
+          "key": "a",
+          "text": "Le matin",
+          "misconception": "L'élève compare les chiffres des unités : 6 est plus grand que 3. Mais 63 a 6 dizaines et 36 n'en a que 3 : 63 est plus grand que 36."
+        },
+        {
+          "key": "b",
+          "text": "L'après-midi",
+          "misconception": null
+        },
+        {
+          "key": "c",
+          "text": "Autant le matin que l'après-midi",
+          "misconception": "Les deux nombres ont les mêmes chiffres, 3 et 6, mais pas à la même place : 36 et 63 ne sont pas égaux."
+        }
+      ],
+      "answer": {
+        "value": "b"
+      },
+      "points": 2,
+      "solution_steps": [
+        "Le matin, 36 personnes passent ; l'après-midi, 63 personnes.",
+        "On compare les dizaines : 63 a 6 dizaines, 36 a 3 dizaines. 63 est plus grand que 36.",
+        "Il passe le plus de personnes **l'après-midi**."
+      ],
+      "hint": "Compare d'abord les chiffres des dizaines."
+    },
+    {
+      "key": "q2",
+      "skill_id": "B005",
+      "statement": "Combien d'argent rapportent les gobelets de jus d'orange vendus le matin ?",
+      "type": "numerique",
+      "answer": {
+        "value": 18,
+        "unit": "€"
+      },
+      "points": 3,
+      "solution_steps": [
+        "Le matin, le stand vend 9 gobelets de jus d'orange, à 2 € chacun.",
+        "9 fois 2 €, c'est 9 × 2 = 18.",
+        "Ils rapportent **18 €**."
+      ],
+      "hint": "Combien coûte un gobelet de jus d'orange ?"
+    },
+    {
+      "key": "q3",
+      "skill_id": "B038",
+      "statement": "Combien d'argent reste-t-il à Chloé après son achat ?",
+      "type": "numerique",
+      "answer": {
+        "value": 13,
+        "unit": "€"
+      },
+      "points": 4,
+      "solution_steps": [
+        "Étape 1 : le prix des 4 gobelets de jus de pomme, à 3 € chacun : 4 × 3 = 12 €.",
+        "Étape 2 : Chloé avait 25 €. Il lui reste 25 − 12 = 13 €.",
+        "Il reste **13 €** à Chloé.",
+        "Attention : 12 € est le prix des gobelets, pas l'argent qui reste."
+      ],
+      "hint": "Cherche d'abord combien coûtent les 4 gobelets de Chloé."
+    }
+  ],
+  "review_status": "relu_agent",
+  "programme_ref": "Cycle 2, Cours élémentaire première année, La résolution de problèmes : « Résoudre des problèmes mixtes en deux étapes (une étape additive et une étape multiplicative). »"
+}

@@ -1,0 +1,86 @@
+{
+  "id": "SX-B036-01",
+  "skill_id": "B036",
+  "skill_ids": [
+    "B036",
+    "A002"
+  ],
+  "school_level": "CP",
+  "title": "Le goûter d'anniversaire de Nina",
+  "contexte": "Aujourd'hui, Nina fête son anniversaire à l'école. Il y a 27 élèves dans sa classe.\n\nNina apporte 30 bonbons. Elle les partage entre les 5 tables de la classe. Chaque table reçoit le même nombre de bonbons.\n\nSon papa apporte des gâteaux : une boîte de 13 gâteaux et une boîte de 11 gâteaux. La maîtresse range tous les gâteaux sur des assiettes. Elle met 3 gâteaux sur chaque assiette. Il ne reste aucun gâteau.\n\nLes élèves mangent le goûter après la récréation. Ensuite, ils chantent une chanson pour Nina.",
+  "image": null,
+  "duree_estimee_min": 10,
+  "questions": [
+    {
+      "key": "q1",
+      "skill_id": "A002",
+      "statement": "Y a-t-il plus de bonbons ou plus d'élèves ?",
+      "type": "qcm",
+      "choices": [
+        {
+          "key": "a",
+          "text": "Plus de bonbons",
+          "misconception": null
+        },
+        {
+          "key": "b",
+          "text": "Plus d'élèves",
+          "misconception": "L'élève compare les chiffres des unités : 7 est plus grand que 0. Mais 30, c'est 3 dizaines, et 27 n'a que 2 dizaines : 30 est plus grand que 27."
+        },
+        {
+          "key": "c",
+          "text": "Autant de bonbons que d'élèves",
+          "misconception": "Il y a 30 bonbons et 27 élèves : ce n'est pas le même nombre."
+        }
+      ],
+      "answer": {
+        "value": "a"
+      },
+      "points": 2,
+      "solution_steps": [
+        "Il y a 30 bonbons et 27 élèves.",
+        "On compare d'abord les dizaines : 30 a 3 dizaines, 27 a 2 dizaines.",
+        "30 est plus grand que 27 : il y a **plus de bonbons** que d'élèves."
+      ],
+      "hint": "Compare d'abord les chiffres des dizaines."
+    },
+    {
+      "key": "q2",
+      "skill_id": "B036",
+      "statement": "Combien de bonbons chaque table reçoit-elle ?",
+      "type": "numerique",
+      "answer": {
+        "value": 6,
+        "unit": "bonbons"
+      },
+      "points": 3,
+      "solution_steps": [
+        "On partage les 30 bonbons entre les 5 tables, autant pour chaque table.",
+        "On distribue les bonbons un par un aux 5 tables, jusqu'au dernier. Chaque table en a 6 : 6 + 6 + 6 + 6 + 6 = 30.",
+        "Chaque table reçoit **6 bonbons**.",
+        "Attention : on partage entre les 5 tables, pas entre les 27 élèves."
+      ],
+      "hint": "Distribue les bonbons un par un aux 5 tables."
+    },
+    {
+      "key": "q3",
+      "skill_id": "B036",
+      "statement": "Combien d'assiettes la maîtresse remplit-elle ?",
+      "type": "numerique",
+      "answer": {
+        "value": 8,
+        "unit": "assiettes"
+      },
+      "points": 4,
+      "solution_steps": [
+        "D'abord, on compte tous les gâteaux : 13 + 11 = 24 gâteaux.",
+        "Ensuite, on fait des groupes de 3 gâteaux : 3 + 3 + 3 + 3 + 3 + 3 + 3 + 3 = 24. Il y a 8 groupes de 3.",
+        "La maîtresse remplit **8 assiettes**.",
+        "Attention : il faut compter les gâteaux des deux boîtes, pas ceux d'une seule boîte."
+      ],
+      "hint": "Commence par compter les gâteaux des deux boîtes."
+    }
+  ],
+  "review_status": "relu_agent",
+  "programme_ref": "Cycle 2, Cours préparatoire, La résolution de problèmes : « L'élève sait résoudre des problèmes consistant à rechercher la valeur d'une part dans un partage équitable »"
+}

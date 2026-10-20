@@ -1,0 +1,105 @@
+{
+  "id": "SX-B022-01",
+  "skill_id": "B022",
+  "skill_ids": [
+    "B022",
+    "A031"
+  ],
+  "school_level": "4e",
+  "title": "Le supercalculateur",
+  "contexte": "Un centre de recherche vient d'installer un supercalculateur. Il occupe une salle de 680 m² et consomme autant d'électricité qu'une ville de 20 000 habitants. Il effectue environ 10¹⁸ opérations par seconde.\n\nUn ordinateur portable ordinaire effectue environ 10⁹ opérations par seconde.\n\nUne journée dure 24 heures, c'est-à-dire 86 400 secondes, soit environ 10⁵ secondes. Pour calculer vite, les chercheurs utilisent souvent ces ordres de grandeur.\n\nLes chercheurs lancent sur le supercalculateur une simulation du climat. Elle tourne sans s'arrêter pendant environ quatre mois, soit environ 10⁷ secondes.",
+  "image": null,
+  "duree_estimee_min": 15,
+  "questions": [
+    {
+      "key": "q1",
+      "skill_id": "B022",
+      "statement": "Quel calcul donne, à peu près, le nombre d'opérations qu'un ordinateur portable effectue en une journée ?",
+      "type": "qcm",
+      "choices": [
+        {
+          "key": "a",
+          "text": "10⁹ + 10⁵",
+          "misconception": "Chaque seconde apporte 10⁹ opérations : pour 10⁵ secondes, on multiplie, on n'additionne pas."
+        },
+        {
+          "key": "b",
+          "text": "10⁹ × 10⁵",
+          "misconception": null
+        },
+        {
+          "key": "c",
+          "text": "10¹⁸ × 10⁵",
+          "misconception": "10¹⁸ est le nombre d'opérations par seconde du supercalculateur, pas du portable."
+        },
+        {
+          "key": "d",
+          "text": "10⁹ × 10⁷",
+          "misconception": "10⁷ secondes est la durée de la simulation, pas d'une journée."
+        }
+      ],
+      "answer": {
+        "value": "b"
+      },
+      "points": 1,
+      "solution_steps": [
+        "Le portable fait environ 10⁹ opérations chaque seconde, et une journée dure environ 10⁵ secondes.",
+        "Le nombre d'opérations en une journée est donc environ **10⁹ × 10⁵**."
+      ],
+      "hint": "Relis la phrase qui parle de l'ordinateur portable et celle qui parle d'une journée."
+    },
+    {
+      "key": "q2",
+      "skill_id": "A031",
+      "statement": "Écris en chiffres le nombre d'opérations qu'un ordinateur portable effectue en une seconde.",
+      "type": "numerique",
+      "answer": {
+        "value": 1000000000,
+        "unit": "opérations"
+      },
+      "points": 2,
+      "solution_steps": [
+        "10⁹ est le produit de 9 facteurs égaux à 10.",
+        "On écrit 1 suivi de 9 zéros : 10⁹ = 1 000 000 000.",
+        "Le portable effectue **1 000 000 000** opérations par seconde, un milliard."
+      ],
+      "hint": "Combien de facteurs 10 y a-t-il dans 10⁹ ?"
+    },
+    {
+      "key": "q3",
+      "skill_id": "B022",
+      "statement": "En une journée, un ordinateur portable effectue environ 10ⁿ opérations. Que vaut n ?",
+      "type": "numerique",
+      "answer": {
+        "value": 14
+      },
+      "points": 3,
+      "solution_steps": [
+        "On calcule 10⁹ × 10⁵.",
+        "10⁹, c'est 9 facteurs 10 ; 10⁵, c'est 5 facteurs 10. Mis bout à bout, cela fait 9 + 5 = 14 facteurs 10.",
+        "10⁹ × 10⁵ = 10¹⁴ : n = **14**.",
+        "Attention : on ajoute les exposants, on ne les multiplie pas (9 × 5 = 45 serait faux)."
+      ],
+      "hint": "Compte les facteurs 10 de chaque puissance."
+    },
+    {
+      "key": "q4",
+      "skill_id": "B022",
+      "statement": "Pendant la simulation du climat, le supercalculateur effectue environ 10ⁿ opérations. Que vaut n ?",
+      "type": "numerique",
+      "answer": {
+        "value": 25
+      },
+      "points": 4,
+      "solution_steps": [
+        "Le supercalculateur fait environ 10¹⁸ opérations par seconde, pendant environ 10⁷ secondes : 10¹⁸ × 10⁷.",
+        "18 facteurs 10 suivis de 7 facteurs 10 : 18 + 7 = 25 facteurs 10.",
+        "10¹⁸ × 10⁷ = 10²⁵ : n = **25**.",
+        "Attention : la durée de la simulation est 10⁷ secondes, pas une journée."
+      ],
+      "hint": "Repère d'abord les deux puissances de 10 à multiplier."
+    }
+  ],
+  "review_status": "relu_agent",
+  "programme_ref": "Cycle 4, classe de 4e, Nombres et calculs, Puissances, Objectifs d'apprentissage : « Multiplier des puissances d'exposant entier naturel d'un même nombre entre elles. »"
+}

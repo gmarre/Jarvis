@@ -1,0 +1,123 @@
+{
+  "id": "SX-B041-01",
+  "skill_id": "B041",
+  "skill_ids": [
+    "B041",
+    "A009"
+  ],
+  "school_level": "CE2",
+  "title": "La commande de fournitures",
+  "contexte": "Chaque année, la mairie de Belval commande les fournitures des écoles de la ville. Cette année, 2 735 élèves sont inscrits dans ces écoles.\n\nLes cahiers sont vendus par cartons de 100 cahiers. La mairie commande 36 cartons de cahiers.\n\nLes crayons de couleur sont vendus par boîtes de 60 crayons. La mairie commande 9 boîtes de crayons de couleur.\n\nLes gommes sont vendues par sachets. La mairie commande 8 sachets de 30 gommes et 5 sachets de 10 gommes.\n\nLa livraison arrivera fin août, avant la rentrée.",
+  "image": null,
+  "duree_estimee_min": 15,
+  "questions": [
+    {
+      "key": "q1",
+      "skill_id": "B041",
+      "statement": "Pour calculer le nombre de crayons de couleur commandés, de quelles informations as-tu besoin ?",
+      "type": "qcm",
+      "choices": [
+        {
+          "key": "a",
+          "text": "9 boîtes et 60 crayons par boîte",
+          "misconception": null
+        },
+        {
+          "key": "b",
+          "text": "9 boîtes et 2 735 élèves",
+          "misconception": "Le nombre d'élèves ne dit pas combien de crayons contient une boîte : il ne sert pas ici."
+        },
+        {
+          "key": "c",
+          "text": "36 cartons et 60 crayons par boîte",
+          "misconception": "Les 36 cartons sont des cartons de cahiers, pas de crayons."
+        },
+        {
+          "key": "d",
+          "text": "8 sachets et 60 crayons par boîte",
+          "misconception": "Les 8 sachets sont des sachets de gommes, pas de crayons."
+        }
+      ],
+      "answer": {
+        "value": "a"
+      },
+      "points": 1,
+      "solution_steps": [
+        "La phrase sur les crayons dit : boîtes de 60 crayons, et la mairie commande 9 boîtes.",
+        "Il faut donc 9 boîtes et 60 crayons par boîte. Le nombre d'élèves, les cartons de cahiers et les sachets de gommes ne servent pas ici."
+      ],
+      "hint": "Relis la phrase qui parle des crayons de couleur."
+    },
+    {
+      "key": "q2",
+      "skill_id": "A009",
+      "statement": "Dans le nombre d'élèves inscrits, quel est le chiffre des centaines ?",
+      "type": "numerique",
+      "answer": {
+        "value": 7
+      },
+      "points": 2,
+      "solution_steps": [
+        "2 735 : 2 milliers, 7 centaines, 3 dizaines et 5 unités.",
+        "Le chiffre des centaines est **7**.",
+        "Attention : 2 est le chiffre des milliers, et 27 est le nombre de centaines en tout, pas le chiffre des centaines."
+      ],
+      "hint": "Écris le nombre dans un tableau : milliers, centaines, dizaines, unités."
+    },
+    {
+      "key": "q3",
+      "skill_id": "B041",
+      "statement": "Combien de cahiers la mairie commande-t-elle ?",
+      "type": "numerique",
+      "answer": {
+        "value": 3600,
+        "unit": "cahiers"
+      },
+      "points": 2,
+      "solution_steps": [
+        "36 cartons de 100 cahiers : 36 × 100.",
+        "Multiplier par 100 : chaque unité devient une centaine. 36 unités deviennent 36 centaines, soit 3 600.",
+        "La mairie commande **3 600 cahiers**."
+      ],
+      "hint": null
+    },
+    {
+      "key": "q4",
+      "skill_id": "B041",
+      "statement": "Combien de crayons de couleur la mairie commande-t-elle ?",
+      "type": "numerique",
+      "answer": {
+        "value": 540,
+        "unit": "crayons"
+      },
+      "points": 3,
+      "solution_steps": [
+        "9 boîtes de 60 crayons : 9 × 60.",
+        "60, c'est 6 dizaines. 9 × 6 dizaines = 54 dizaines, car 9 × 6 = 54.",
+        "54 dizaines, c'est 540 : la mairie commande **540 crayons**.",
+        "Attention : 9 × 6 = 54 ne suffit pas, il faut des dizaines."
+      ],
+      "hint": "60, c'est 6 dizaines."
+    },
+    {
+      "key": "q5",
+      "skill_id": "B041",
+      "statement": "Combien de gommes la mairie commande-t-elle en tout ?",
+      "type": "numerique",
+      "answer": {
+        "value": 290,
+        "unit": "gommes"
+      },
+      "points": 4,
+      "solution_steps": [
+        "Les grands sachets : 8 × 30. 30, c'est 3 dizaines ; 8 × 3 dizaines = 24 dizaines, soit 240 gommes.",
+        "Les petits sachets : 5 × 10 = 50 gommes.",
+        "En tout : 240 + 50 = 290.",
+        "La mairie commande **290 gommes**."
+      ],
+      "hint": "Il y a deux sortes de sachets : calcule chacune, puis ajoute."
+    }
+  ],
+  "review_status": "relu_agent",
+  "programme_ref": "Cycle 2, Cours élémentaire deuxième année, Le calcul mental : « Multiplier un nombre inférieur à 10 par un nombre entier de dizaines. »"
+}

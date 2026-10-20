@@ -1,0 +1,121 @@
+{
+  "id": "SX-B048-01",
+  "skill_id": "B048",
+  "skill_ids": [
+    "B048",
+    "A018",
+    "D004"
+  ],
+  "school_level": "5e",
+  "title": "Une journée aux calanques",
+  "contexte": "La classe de 5e B passe une journée dans les calanques, près de Marseille. Les altitudes sont mesurées par rapport au niveau de la mer, qui est à l'altitude 0 m. Le bateau quitte le port à 9 h 30.\n\nLe sommet de la falaise est à 87,5 m d'altitude. Un phare est construit tout en haut de la falaise : le sommet du phare est à 112,3 m d'altitude.\n\nSous le bateau, une épave repose au fond de l'eau, à 32,8 m sous le niveau de la mer. Un plongeur descend jusqu'à l'épave. Il remonte ensuite de 28,3 m, puis s'arrête pour faire un palier de sécurité.\n\nUne deuxième plongeuse part de la surface. Elle descend de 18,4 m, remonte de 6,9 m, puis descend encore de 12,7 m pour observer un banc de poissons.",
+  "image": null,
+  "duree_estimee_min": 15,
+  "questions": [
+    {
+      "key": "q1",
+      "skill_id": "A018",
+      "statement": "Quelle est l'altitude de l'épave ?",
+      "type": "qcm",
+      "choices": [
+        {
+          "key": "a",
+          "text": "32,8 m",
+          "misconception": "L'épave est sous le niveau de la mer : son altitude est un nombre négatif."
+        },
+        {
+          "key": "b",
+          "text": "−32,8 m",
+          "misconception": null
+        },
+        {
+          "key": "c",
+          "text": "−87,5 m",
+          "misconception": "87,5 m est l'altitude du sommet de la falaise, qui n'a rien à voir avec l'épave."
+        }
+      ],
+      "answer": {
+        "value": "b"
+      },
+      "points": 1,
+      "solution_steps": [
+        "L'épave est à 32,8 m sous le niveau de la mer, qui est à l'altitude 0 m.",
+        "Une altitude sous le niveau de la mer est négative : l'épave est à l'altitude **−32,8 m**."
+      ],
+      "hint": "Relis la phrase qui parle de l'épave."
+    },
+    {
+      "key": "q2",
+      "skill_id": "D004",
+      "statement": "Quelle est la hauteur du phare, en mètres ?",
+      "type": "numerique",
+      "answer": {
+        "value": 24.8,
+        "unit": "m"
+      },
+      "points": 2,
+      "solution_steps": [
+        "Le phare va du sommet de la falaise (87,5 m) jusqu'à son propre sommet (112,3 m).",
+        "Sa hauteur est la différence : on pose 112,3 − 87,5 en alignant les virgules.",
+        "112,3 − 87,5 = 24,8 : le phare mesure **24,8 m** de haut.",
+        "Vérification : 87,5 + 24,8 = 112,3."
+      ],
+      "hint": "Le phare est posé sur la falaise."
+    },
+    {
+      "key": "q3",
+      "skill_id": "B048",
+      "statement": "À quelle altitude le plongeur fait-il son palier de sécurité ?",
+      "type": "numerique",
+      "answer": {
+        "value": -4.5,
+        "unit": "m"
+      },
+      "points": 3,
+      "solution_steps": [
+        "Le plongeur part de l'épave, à l'altitude −32,8 m, et remonte de 28,3 m : (−32,8) + (+28,3).",
+        "Signes contraires : 32,8 − 28,3 = 4,5, et le signe est celui de −32,8.",
+        "(−32,8) + (+28,3) = −4,5 : le palier est à l'altitude **−4,5 m**, soit 4,5 m sous la surface."
+      ],
+      "hint": "Remonter, c'est ajouter un nombre positif."
+    },
+    {
+      "key": "q4",
+      "skill_id": "B048",
+      "statement": "Quelle distance verticale sépare le sommet de la falaise et l'épave ?",
+      "type": "numerique",
+      "answer": {
+        "value": 120.3,
+        "unit": "m"
+      },
+      "points": 3,
+      "solution_steps": [
+        "La distance est l'écart entre les deux altitudes : la plus grande moins la plus petite.",
+        "87,5 − (−32,8) = 87,5 + 32,8.",
+        "87,5 + 32,8 = 120,3 : **120,3 m** séparent le sommet de la falaise et l'épave.",
+        "Attention : 87,5 − 32,8 = 54,7 oublie que l'épave est sous le niveau de la mer."
+      ],
+      "hint": "Un écart se calcule par une soustraction : la plus grande altitude moins la plus petite."
+    },
+    {
+      "key": "q5",
+      "skill_id": "B048",
+      "statement": "À quelle altitude se trouve la deuxième plongeuse quand elle observe le banc de poissons ?",
+      "type": "numerique",
+      "answer": {
+        "value": -24.2,
+        "unit": "m"
+      },
+      "points": 4,
+      "solution_steps": [
+        "Elle part de l'altitude 0 m. Descendre, c'est ajouter un négatif ; remonter, ajouter un positif.",
+        "0 + (−18,4) + (+6,9) + (−12,7) s'écrit −18,4 + 6,9 − 12,7.",
+        "Termes négatifs : −18,4 − 12,7 = −31,1.",
+        "−31,1 + 6,9 = −24,2 : elle est à l'altitude **−24,2 m**."
+      ],
+      "hint": "Écris chaque déplacement avec un signe."
+    }
+  ],
+  "review_status": "relu_agent",
+  "programme_ref": "Cycle 4, classe de 5e, Nombres et calculs, Nombres relatifs, Objectifs d'apprentissage : « Résoudre des problèmes mobilisant addition et soustraction de nombres décimaux relatifs. »"
+}

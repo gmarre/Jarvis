@@ -1,0 +1,108 @@
+{
+  "id": "SX-B049-01",
+  "skill_id": "B049",
+  "skill_ids": [
+    "B049",
+    "D021"
+  ],
+  "school_level": "4e",
+  "title": "Le quiz du club de sciences",
+  "contexte": "Au quiz de fin d'année du club de sciences, chaque équipe répond à 20 questions en 45 minutes.\n\nUne bonne réponse rapporte 2,5 points. Une mauvaise réponse fait varier le score de −1,25 point. Une question sans réponse rapporte 0 point.\n\nL'équipe de Léo a donné 9 bonnes réponses et 7 mauvaises réponses. Elle n'a pas répondu aux autres questions. Avant le joker, son score est de 13,75 points.\n\nÀ la fin du quiz, chaque équipe peut jouer un joker : il annule 3 de ses mauvaises réponses. Le nombre de mauvaises réponses de l'équipe varie alors de −3, et son score varie en conséquence.\n\nL'équipe gagnante reçoit 3 livres de sciences.",
+  "image": null,
+  "duree_estimee_min": 15,
+  "questions": [
+    {
+      "key": "q1",
+      "skill_id": "B049",
+      "statement": "Quel calcul donne la variation du score de l'équipe de Léo due à ses mauvaises réponses ?",
+      "type": "qcm",
+      "choices": [
+        {
+          "key": "a",
+          "text": "7 × (−1,25)",
+          "misconception": null
+        },
+        {
+          "key": "b",
+          "text": "7 + (−1,25)",
+          "misconception": "Chaque mauvaise réponse ajoute −1,25 : pour 7 mauvaises réponses, on ajoute 7 fois −1,25, c'est une multiplication."
+        },
+        {
+          "key": "c",
+          "text": "7 × 1,25",
+          "misconception": "Une mauvaise réponse fait baisser le score : la variation est négative."
+        },
+        {
+          "key": "d",
+          "text": "9 × (−1,25)",
+          "misconception": "9 est le nombre de bonnes réponses, pas de mauvaises."
+        }
+      ],
+      "answer": {
+        "value": "a"
+      },
+      "points": 1,
+      "solution_steps": [
+        "Chaque mauvaise réponse fait varier le score de −1,25. L'équipe en a 7.",
+        "La variation est (−1,25) + (−1,25) + … sept fois, c'est-à-dire **7 × (−1,25)**."
+      ],
+      "hint": "Relis la phrase qui parle des mauvaises réponses."
+    },
+    {
+      "key": "q2",
+      "skill_id": "D021",
+      "statement": "Combien de points les bonnes réponses ont-elles rapportés à l'équipe de Léo ?",
+      "type": "numerique",
+      "answer": {
+        "value": 22.5,
+        "unit": "points"
+      },
+      "points": 2,
+      "solution_steps": [
+        "9 bonnes réponses à 2,5 points : 9 × 2,5.",
+        "9 × 25 = 225 ; 2,5 a un chiffre après la virgule, le résultat aussi : 22,5.",
+        "Les bonnes réponses rapportent **22,5 points**."
+      ],
+      "hint": "Calcule 9 × 25, puis place la virgule."
+    },
+    {
+      "key": "q3",
+      "skill_id": "B049",
+      "statement": "De combien les mauvaises réponses ont-elles fait varier le score de l'équipe de Léo ?",
+      "type": "numerique",
+      "answer": {
+        "value": -8.75,
+        "unit": "points"
+      },
+      "points": 3,
+      "solution_steps": [
+        "La variation est 7 × (−1,25), une addition répétée : (−1,25) sept fois.",
+        "Un facteur positif et un facteur négatif : le produit est négatif.",
+        "7 × 1,25 = 8,75, donc 7 × (−1,25) = −8,75.",
+        "Les mauvaises réponses ont fait varier le score de **−8,75 points**."
+      ],
+      "hint": "Pense au signe avant de calculer."
+    },
+    {
+      "key": "q4",
+      "skill_id": "B049",
+      "statement": "Si l'équipe de Léo joue son joker, de combien son score varie-t-il ?",
+      "type": "numerique",
+      "answer": {
+        "value": 3.75,
+        "unit": "points"
+      },
+      "points": 4,
+      "solution_steps": [
+        "Le nombre de mauvaises réponses varie de −3, et chaque mauvaise réponse fait varier le score de −1,25.",
+        "La variation du score est le produit (−3) × (−1,25).",
+        "Deux facteurs de même signe : le produit est positif. 3 × 1,25 = 3,75.",
+        "(−3) × (−1,25) = 3,75 : le score augmente de **3,75 points**.",
+        "C'est logique : le joker efface 3 pénalités de 1,25 point. Trouver −3,75 serait appliquer la règle de l'addition au produit."
+      ],
+      "hint": "Quel est le signe du produit de deux nombres négatifs ?"
+    }
+  ],
+  "review_status": "relu_agent",
+  "programme_ref": "Cycle 4, classe de 4e, Nombres et calculs, Opérations sur les nombres relatifs, Objectifs d'apprentissage : « Multiplier deux nombres relatifs : d'abord dans le cas où un seul des facteurs est négatif, puis, grâce à la distributivité, dans le cas où les deux facteurs sont négatifs. »"
+}

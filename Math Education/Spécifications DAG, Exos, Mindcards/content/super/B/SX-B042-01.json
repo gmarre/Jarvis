@@ -1,0 +1,88 @@
+{
+  "id": "SX-B042-01",
+  "skill_id": "B042",
+  "skill_ids": [
+    "B042",
+    "A003",
+    "B002"
+  ],
+  "school_level": "CE1",
+  "title": "La collecte de bouchons",
+  "contexte": "L'école des Tilleuls collecte des bouchons en plastique pour une association. La collecte dure 3 semaines, en mai.\n\nÀ la fin, chaque classe compte ses bouchons.\nLa classe de CP a apporté 287 bouchons.\nLa classe de CE1 a apporté 278 bouchons.\nLa classe de CE2 a apporté 345 bouchons.\n\nLe gardien de l'école a aussi apporté des bouchons : 46 bouchons le lundi et 37 bouchons le mardi.\n\nAvec l'argent des bouchons, l'association achète du matériel pour des enfants handicapés.",
+  "image": null,
+  "duree_estimee_min": 10,
+  "questions": [
+    {
+      "key": "q1",
+      "skill_id": "A003",
+      "statement": "Quelle classe a apporté le plus de bouchons : la classe de CP ou la classe de CE1 ?",
+      "type": "qcm",
+      "choices": [
+        {
+          "key": "a",
+          "text": "La classe de CP",
+          "misconception": null
+        },
+        {
+          "key": "b",
+          "text": "La classe de CE1",
+          "misconception": "L'élève compare les chiffres des unités : 8 est plus grand que 7. Mais il faut comparer d'abord les centaines (2 et 2), puis les dizaines : 8 dizaines, c'est plus que 7 dizaines."
+        },
+        {
+          "key": "c",
+          "text": "Les deux classes ont apporté autant de bouchons",
+          "misconception": "287 et 278 ont les mêmes chiffres, mais pas à la même place : ce ne sont pas les mêmes nombres."
+        }
+      ],
+      "answer": {
+        "value": "a"
+      },
+      "points": 2,
+      "solution_steps": [
+        "La classe de CP a apporté 287 bouchons ; la classe de CE1 en a apporté 278.",
+        "Même chiffre des centaines : 2. On compare les dizaines : 8 dans 287, 7 dans 278.",
+        "287 est plus grand que 278 : c'est **la classe de CP** qui a apporté le plus de bouchons."
+      ],
+      "hint": "Compare d'abord les centaines, puis les dizaines."
+    },
+    {
+      "key": "q2",
+      "skill_id": "B002",
+      "statement": "Combien de bouchons le gardien a-t-il apportés en tout ?",
+      "type": "numerique",
+      "answer": {
+        "value": 83,
+        "unit": "bouchons"
+      },
+      "points": 3,
+      "solution_steps": [
+        "On pose 46 + 37 en colonnes, unités sous unités.",
+        "Unités : 6 + 7 = 13. On écrit 3 et on retient 1 dizaine.",
+        "Dizaines : 4 + 3 + 1 = 8.",
+        "Le gardien a apporté **83 bouchons**."
+      ],
+      "hint": "N'oublie pas la retenue."
+    },
+    {
+      "key": "q3",
+      "skill_id": "B042",
+      "statement": "Combien de bouchons les trois classes ont-elles apportés en tout ?",
+      "type": "numerique",
+      "answer": {
+        "value": 910,
+        "unit": "bouchons"
+      },
+      "points": 4,
+      "solution_steps": [
+        "On pose 287 + 278 + 345 en colonnes : unités sous unités, dizaines sous dizaines, centaines sous centaines.",
+        "Unités : 7 + 8 + 5 = 20. On écrit 0 et on retient 2 dizaines.",
+        "Dizaines : 8 + 7 + 4 + 2 = 21. On écrit 1 et on retient 2 centaines.",
+        "Centaines : 2 + 2 + 3 + 2 = 9.",
+        "Les trois classes ont apporté **910 bouchons**. Les bouchons du gardien ne comptent pas : il n'est pas une classe."
+      ],
+      "hint": "Pose l'addition en colonnes et pense aux retenues."
+    }
+  ],
+  "review_status": "relu_agent",
+  "programme_ref": "Cycle 2, Cours élémentaire première année, Les quatre opérations : « L'élève sait poser une addition de deux ou de trois nombres à un, deux ou trois chiffres (en positionnant les unités sous les unités, les dizaines sous les dizaines, les centaines sous les centaines) et en calculer le résultat. »"
+}

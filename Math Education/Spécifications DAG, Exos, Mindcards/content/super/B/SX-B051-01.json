@@ -1,0 +1,146 @@
+{
+  "id": "SX-B051-01",
+  "skill_id": "B051",
+  "skill_ids": [
+    "B051",
+    "D007"
+  ],
+  "school_level": "4e",
+  "title": "Les températures de Minneapolis",
+  "contexte": "Lucas correspond avec Emily, une élève de Minneapolis, aux États-Unis. Là-bas, les températures sont données en degrés Fahrenheit. Minneapolis compte environ 425 000 habitants.\n\nPour passer des degrés Fahrenheit aux degrés Celsius, Emily lui envoie ce programme de calcul :\nchoisir la température en degrés Fahrenheit ;\nlui soustraire 32 ;\nmultiplier le résultat par 5 ;\ndiviser le résultat par 9.\n\nMardi matin, le thermomètre d'Emily indiquait 14 degrés Fahrenheit. Mardi soir, il indiquait −13 degrés Fahrenheit.\n\nPendant la tempête de mercredi, il est tombé 37,6 cm de neige en 8 heures à Minneapolis.",
+  "image": null,
+  "duree_estimee_min": 15,
+  "questions": [
+    {
+      "key": "q1",
+      "skill_id": "B051",
+      "statement": "Quelle expression traduit le programme de calcul pour la température de mardi matin ?",
+      "type": "qcm",
+      "choices": [
+        {
+          "key": "a",
+          "text": "14 − 32 × 5 ÷ 9",
+          "misconception": "Sans parenthèses, la multiplication passe avant la soustraction : ce calcul ne retire pas 32 en premier."
+        },
+        {
+          "key": "b",
+          "text": "(14 − 32) × 5 ÷ 9",
+          "misconception": null
+        },
+        {
+          "key": "c",
+          "text": "(32 − 14) × 5 ÷ 9",
+          "misconception": "Le programme soustrait 32 au nombre choisi : on calcule 14 − 32, pas 32 − 14."
+        },
+        {
+          "key": "d",
+          "text": "14 × 5 − 32 ÷ 9",
+          "misconception": "Les étapes du programme ne sont pas dans cet ordre : on soustrait 32 d'abord."
+        }
+      ],
+      "answer": {
+        "value": "b"
+      },
+      "points": 1,
+      "solution_steps": [
+        "On choisit 14, on soustrait 32 : 14 − 32. Pour multiplier ce résultat par 5, il faut des parenthèses : (14 − 32) × 5.",
+        "Puis on divise par 9 : **(14 − 32) × 5 ÷ 9**."
+      ],
+      "hint": "Relis les étapes du programme, dans l'ordre."
+    },
+    {
+      "key": "q2",
+      "skill_id": "B051",
+      "statement": "Quelle température faisait-il mardi matin, en degrés Celsius ?",
+      "type": "numerique",
+      "answer": {
+        "value": -10,
+        "unit": "°C"
+      },
+      "points": 3,
+      "solution_steps": [
+        "On calcule (14 − 32) × 5 ÷ 9, en commençant par les parenthèses.",
+        "14 − 32 = −18.",
+        "(−18) × 5 = −90 : signes contraires, produit négatif.",
+        "(−90) ÷ 9 = −10 : il faisait **−10 °C** mardi matin."
+      ],
+      "hint": "Commence par le calcul entre parenthèses."
+    },
+    {
+      "key": "q3",
+      "skill_id": "B051",
+      "statement": "Quelle température faisait-il mardi soir, en degrés Celsius ?",
+      "type": "numerique",
+      "answer": {
+        "value": -25,
+        "unit": "°C"
+      },
+      "points": 4,
+      "solution_steps": [
+        "On applique le programme à −13 : (−13 − 32) × 5 ÷ 9.",
+        "−13 − 32 = −45 : on ajoute deux négatifs, la somme est négative.",
+        "(−45) × 5 = −225.",
+        "(−225) ÷ 9 = −25 : il faisait **−25 °C** mardi soir.",
+        "Attention : −13 − 32 ne vaut pas 45 ; la règle des signes du produit ne s'applique pas à une somme."
+      ],
+      "hint": "Le nombre choisi est négatif : écris-le entre parenthèses."
+    },
+    {
+      "key": "q4",
+      "skill_id": "B051",
+      "statement": "Comment s'appelle l'expression (−13 − 32) × 5 ÷ 9 ?",
+      "type": "qcm",
+      "choices": [
+        {
+          "key": "a",
+          "text": "Une différence",
+          "misconception": "La soustraction est faite en premier, entre parenthèses : ce n'est pas la dernière opération."
+        },
+        {
+          "key": "b",
+          "text": "Un produit",
+          "misconception": "Après la multiplication par 5, on divise encore par 9 : la multiplication n'est pas la dernière opération."
+        },
+        {
+          "key": "c",
+          "text": "Un quotient",
+          "misconception": null
+        },
+        {
+          "key": "d",
+          "text": "Une somme",
+          "misconception": "Aucune addition n'est faite en dernier dans cette expression."
+        }
+      ],
+      "answer": {
+        "value": "c"
+      },
+      "points": 2,
+      "solution_steps": [
+        "Le nom d'une expression vient de sa dernière opération.",
+        "On calcule d'abord la parenthèse, puis la multiplication par 5, et en dernier la division par 9.",
+        "La dernière opération est une division : c'est **un quotient**."
+      ],
+      "hint": "Quelle opération fait-on en dernier ?"
+    },
+    {
+      "key": "q5",
+      "skill_id": "D007",
+      "statement": "En moyenne, combien de centimètres de neige sont tombés par heure pendant la tempête de mercredi ?",
+      "type": "numerique",
+      "answer": {
+        "value": 4.7,
+        "unit": "cm"
+      },
+      "points": 2,
+      "solution_steps": [
+        "37,6 cm en 8 heures : on pose la division 37,6 ÷ 8.",
+        "37 ÷ 8 : 4, reste 5. On abaisse le 6 des dixièmes : 56 dixièmes ÷ 8 = 7 dixièmes, reste 0.",
+        "37,6 ÷ 8 = 4,7 : il est tombé en moyenne **4,7 cm** de neige par heure."
+      ],
+      "hint": null
+    }
+  ],
+  "review_status": "relu_agent",
+  "programme_ref": "Cycle 4, classe de 4e, Nombres et calculs, Opérations sur les nombres relatifs, Objectifs d'apprentissage : « Savoir calculer un enchainement d'opérations avec des nombres relatifs. »"
+}

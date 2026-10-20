@@ -2,9 +2,2260 @@
   "metadata": {
     "version": "1.0",
     "scope": "Super exercices, CP a 3e",
-    "total_super": 35
+    "total_super": 55
   },
   "super": [
+    {
+      "id": "SX-B022-01",
+      "skill_id": "B022",
+      "skill_ids": [
+        "B022",
+        "A031"
+      ],
+      "school_level": "4e",
+      "title": "Le supercalculateur",
+      "contexte": "Un centre de recherche vient d'installer un supercalculateur. Il occupe une salle de 680 m² et consomme autant d'électricité qu'une ville de 20 000 habitants. Il effectue environ 10¹⁸ opérations par seconde.\n\nUn ordinateur portable ordinaire effectue environ 10⁹ opérations par seconde.\n\nUne journée dure 24 heures, c'est-à-dire 86 400 secondes, soit environ 10⁵ secondes. Pour calculer vite, les chercheurs utilisent souvent ces ordres de grandeur.\n\nLes chercheurs lancent sur le supercalculateur une simulation du climat. Elle tourne sans s'arrêter pendant environ quatre mois, soit environ 10⁷ secondes.",
+      "image": null,
+      "duree_estimee_min": 15,
+      "questions": [
+        {
+          "key": "q1",
+          "skill_id": "B022",
+          "statement": "Quel calcul donne, à peu près, le nombre d'opérations qu'un ordinateur portable effectue en une journée ?",
+          "type": "qcm",
+          "choices": [
+            {
+              "key": "a",
+              "text": "10⁹ + 10⁵",
+              "misconception": "Chaque seconde apporte 10⁹ opérations : pour 10⁵ secondes, on multiplie, on n'additionne pas."
+            },
+            {
+              "key": "b",
+              "text": "10⁹ × 10⁵",
+              "misconception": null
+            },
+            {
+              "key": "c",
+              "text": "10¹⁸ × 10⁵",
+              "misconception": "10¹⁸ est le nombre d'opérations par seconde du supercalculateur, pas du portable."
+            },
+            {
+              "key": "d",
+              "text": "10⁹ × 10⁷",
+              "misconception": "10⁷ secondes est la durée de la simulation, pas d'une journée."
+            }
+          ],
+          "answer": {
+            "value": "b"
+          },
+          "points": 1,
+          "solution_steps": [
+            "Le portable fait environ 10⁹ opérations chaque seconde, et une journée dure environ 10⁵ secondes.",
+            "Le nombre d'opérations en une journée est donc environ **10⁹ × 10⁵**."
+          ],
+          "hint": "Relis la phrase qui parle de l'ordinateur portable et celle qui parle d'une journée."
+        },
+        {
+          "key": "q2",
+          "skill_id": "A031",
+          "statement": "Écris en chiffres le nombre d'opérations qu'un ordinateur portable effectue en une seconde.",
+          "type": "numerique",
+          "answer": {
+            "value": 1000000000,
+            "unit": "opérations"
+          },
+          "points": 2,
+          "solution_steps": [
+            "10⁹ est le produit de 9 facteurs égaux à 10.",
+            "On écrit 1 suivi de 9 zéros : 10⁹ = 1 000 000 000.",
+            "Le portable effectue **1 000 000 000** opérations par seconde, un milliard."
+          ],
+          "hint": "Combien de facteurs 10 y a-t-il dans 10⁹ ?"
+        },
+        {
+          "key": "q3",
+          "skill_id": "B022",
+          "statement": "En une journée, un ordinateur portable effectue environ 10ⁿ opérations. Que vaut n ?",
+          "type": "numerique",
+          "answer": {
+            "value": 14
+          },
+          "points": 3,
+          "solution_steps": [
+            "On calcule 10⁹ × 10⁵.",
+            "10⁹, c'est 9 facteurs 10 ; 10⁵, c'est 5 facteurs 10. Mis bout à bout, cela fait 9 + 5 = 14 facteurs 10.",
+            "10⁹ × 10⁵ = 10¹⁴ : n = **14**.",
+            "Attention : on ajoute les exposants, on ne les multiplie pas (9 × 5 = 45 serait faux)."
+          ],
+          "hint": "Compte les facteurs 10 de chaque puissance."
+        },
+        {
+          "key": "q4",
+          "skill_id": "B022",
+          "statement": "Pendant la simulation du climat, le supercalculateur effectue environ 10ⁿ opérations. Que vaut n ?",
+          "type": "numerique",
+          "answer": {
+            "value": 25
+          },
+          "points": 4,
+          "solution_steps": [
+            "Le supercalculateur fait environ 10¹⁸ opérations par seconde, pendant environ 10⁷ secondes : 10¹⁸ × 10⁷.",
+            "18 facteurs 10 suivis de 7 facteurs 10 : 18 + 7 = 25 facteurs 10.",
+            "10¹⁸ × 10⁷ = 10²⁵ : n = **25**.",
+            "Attention : la durée de la simulation est 10⁷ secondes, pas une journée."
+          ],
+          "hint": "Repère d'abord les deux puissances de 10 à multiplier."
+        }
+      ],
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 4, classe de 4e, Nombres et calculs, Puissances, Objectifs d'apprentissage : « Multiplier des puissances d'exposant entier naturel d'un même nombre entre elles. »"
+    },
+    {
+      "id": "SX-B023-01",
+      "skill_id": "B023",
+      "skill_ids": [
+        "B023",
+        "A036"
+      ],
+      "school_level": "3e",
+      "title": "L'infiniment petit",
+      "contexte": "Pour son exposé sur l'infiniment petit, Yanis relève des ordres de grandeur dans un livre de sciences. Les longueurs sont données en mètres.\n\nUne bactérie mesure environ 10⁻⁶ m de long.\nUn petit virus mesure environ 10⁻⁸ m.\nUn atome mesure environ 10⁻¹⁰ m.\nLe noyau d'un atome mesure environ 10⁻¹⁴ m.\n\nUne bactérie a une masse d'environ 10⁻¹⁵ kg. Dans de bonnes conditions, une colonie peut compter 10¹² bactéries.\n\nLe microscope du collège grossit jusqu'à 400 fois : il ne permet de voir que les bactéries.",
+      "image": null,
+      "duree_estimee_min": 15,
+      "questions": [
+        {
+          "key": "q1",
+          "skill_id": "A036",
+          "statement": "Lequel de ces objets est le plus petit ?",
+          "type": "qcm",
+          "choices": [
+            {
+              "key": "a",
+              "text": "La bactérie",
+              "misconception": "L'élève compare les exposants sans leur signe : 6 est plus petit que 14. Mais plus l'exposant négatif est loin de zéro, plus la puissance est petite : 10⁻⁶ est bien plus grand que 10⁻¹⁴."
+            },
+            {
+              "key": "b",
+              "text": "Le virus",
+              "misconception": "10⁻⁸ = 0,000 000 01 : c'est plus grand que 10⁻¹⁰ et que 10⁻¹⁴."
+            },
+            {
+              "key": "c",
+              "text": "L'atome",
+              "misconception": "Le noyau est à l'intérieur de l'atome, et 10⁻¹⁴ est plus petit que 10⁻¹⁰."
+            },
+            {
+              "key": "d",
+              "text": "Le noyau d'un atome",
+              "misconception": null
+            }
+          ],
+          "answer": {
+            "value": "d"
+          },
+          "points": 1,
+          "solution_steps": [
+            "10⁻ⁿ est l'inverse de 10ⁿ : plus n est grand, plus 10⁻ⁿ est petit.",
+            "Le plus grand exposant est dans 10⁻¹⁴ : c'est **le noyau d'un atome** qui est le plus petit."
+          ],
+          "hint": "10⁻ⁿ est l'inverse de 10ⁿ."
+        },
+        {
+          "key": "q2",
+          "skill_id": "A036",
+          "statement": "Écris sans puissance de 10 la longueur d'une bactérie, en mètres.",
+          "type": "numerique",
+          "answer": {
+            "value": 1e-06,
+            "unit": "m"
+          },
+          "points": 2,
+          "solution_steps": [
+            "10⁻⁶ est l'inverse de 10⁶ : 10⁻⁶ = 1 ÷ 1 000 000.",
+            "En écriture décimale : 0,000 001, le 1 au sixième rang après la virgule.",
+            "Une bactérie mesure environ **0,000 001 m**, un millionième de mètre."
+          ],
+          "hint": "Écris d'abord 10⁻¹, 10⁻² et 10⁻³ en écriture décimale, puis continue."
+        },
+        {
+          "key": "q3",
+          "skill_id": "B023",
+          "statement": "Combien de fois une bactérie est-elle plus longue qu'un petit virus ?",
+          "type": "numerique",
+          "answer": {
+            "value": 100,
+            "unit": "fois"
+          },
+          "points": 3,
+          "solution_steps": [
+            "On divise la longueur de la bactérie par celle du virus : 10⁻⁶ ÷ 10⁻⁸.",
+            "On soustrait les exposants : −6 − (−8) = −6 + 8 = 2.",
+            "10⁻⁶ ÷ 10⁻⁸ = 10² = 100 : une bactérie est **100 fois** plus longue qu'un petit virus.",
+            "Attention : soustraire −8, c'est ajouter 8 ; écrire −6 − 8 = −14 serait une erreur de signe."
+          ],
+          "hint": "Soustraire un nombre négatif, c'est ajouter son opposé."
+        },
+        {
+          "key": "q4",
+          "skill_id": "B023",
+          "statement": "La masse d'une colonie de 10¹² bactéries s'écrit 10ⁿ kg. Que vaut n ?",
+          "type": "numerique",
+          "answer": {
+            "value": -3
+          },
+          "points": 3,
+          "solution_steps": [
+            "La masse est 10¹² × 10⁻¹⁵ kg.",
+            "On ajoute les exposants : 12 + (−15) = −3.",
+            "10¹² × 10⁻¹⁵ = 10⁻³ : n = **−3**. La colonie a une masse de 0,001 kg, soit 1 g."
+          ],
+          "hint": "Multiplier des puissances de 10, c'est ajouter les exposants."
+        },
+        {
+          "key": "q5",
+          "skill_id": "B023",
+          "statement": "Combien de fois un atome est-il plus grand que son noyau ?",
+          "type": "numerique",
+          "answer": {
+            "value": 10000,
+            "unit": "fois"
+          },
+          "points": 4,
+          "solution_steps": [
+            "On divise la taille de l'atome par celle du noyau : 10⁻¹⁰ ÷ 10⁻¹⁴.",
+            "On soustrait les exposants : −10 − (−14) = −10 + 14 = 4.",
+            "10⁻¹⁰ ÷ 10⁻¹⁴ = 10⁴ = 10 000 : un atome est **10 000 fois** plus grand que son noyau.",
+            "Attention : soustraire les exposants dans l'autre sens, −14 − (−10) = −4, donnerait 10⁻⁴, un nombre plus petit que 1 : impossible, puisque l'atome contient le noyau."
+          ],
+          "hint": "Exposant du nombre divisé moins exposant du diviseur."
+        }
+      ],
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 4, classe de 3e, Nombres et calculs, Puissances, Objectifs d'apprentissage : « Multiplier et diviser des puissances. »"
+    },
+    {
+      "id": "SX-B036-01",
+      "skill_id": "B036",
+      "skill_ids": [
+        "B036",
+        "A002"
+      ],
+      "school_level": "CP",
+      "title": "Le goûter d'anniversaire de Nina",
+      "contexte": "Aujourd'hui, Nina fête son anniversaire à l'école. Il y a 27 élèves dans sa classe.\n\nNina apporte 30 bonbons. Elle les partage entre les 5 tables de la classe. Chaque table reçoit le même nombre de bonbons.\n\nSon papa apporte des gâteaux : une boîte de 13 gâteaux et une boîte de 11 gâteaux. La maîtresse range tous les gâteaux sur des assiettes. Elle met 3 gâteaux sur chaque assiette. Il ne reste aucun gâteau.\n\nLes élèves mangent le goûter après la récréation. Ensuite, ils chantent une chanson pour Nina.",
+      "image": null,
+      "duree_estimee_min": 10,
+      "questions": [
+        {
+          "key": "q1",
+          "skill_id": "A002",
+          "statement": "Y a-t-il plus de bonbons ou plus d'élèves ?",
+          "type": "qcm",
+          "choices": [
+            {
+              "key": "a",
+              "text": "Plus de bonbons",
+              "misconception": null
+            },
+            {
+              "key": "b",
+              "text": "Plus d'élèves",
+              "misconception": "L'élève compare les chiffres des unités : 7 est plus grand que 0. Mais 30, c'est 3 dizaines, et 27 n'a que 2 dizaines : 30 est plus grand que 27."
+            },
+            {
+              "key": "c",
+              "text": "Autant de bonbons que d'élèves",
+              "misconception": "Il y a 30 bonbons et 27 élèves : ce n'est pas le même nombre."
+            }
+          ],
+          "answer": {
+            "value": "a"
+          },
+          "points": 2,
+          "solution_steps": [
+            "Il y a 30 bonbons et 27 élèves.",
+            "On compare d'abord les dizaines : 30 a 3 dizaines, 27 a 2 dizaines.",
+            "30 est plus grand que 27 : il y a **plus de bonbons** que d'élèves."
+          ],
+          "hint": "Compare d'abord les chiffres des dizaines."
+        },
+        {
+          "key": "q2",
+          "skill_id": "B036",
+          "statement": "Combien de bonbons chaque table reçoit-elle ?",
+          "type": "numerique",
+          "answer": {
+            "value": 6,
+            "unit": "bonbons"
+          },
+          "points": 3,
+          "solution_steps": [
+            "On partage les 30 bonbons entre les 5 tables, autant pour chaque table.",
+            "On distribue les bonbons un par un aux 5 tables, jusqu'au dernier. Chaque table en a 6 : 6 + 6 + 6 + 6 + 6 = 30.",
+            "Chaque table reçoit **6 bonbons**.",
+            "Attention : on partage entre les 5 tables, pas entre les 27 élèves."
+          ],
+          "hint": "Distribue les bonbons un par un aux 5 tables."
+        },
+        {
+          "key": "q3",
+          "skill_id": "B036",
+          "statement": "Combien d'assiettes la maîtresse remplit-elle ?",
+          "type": "numerique",
+          "answer": {
+            "value": 8,
+            "unit": "assiettes"
+          },
+          "points": 4,
+          "solution_steps": [
+            "D'abord, on compte tous les gâteaux : 13 + 11 = 24 gâteaux.",
+            "Ensuite, on fait des groupes de 3 gâteaux : 3 + 3 + 3 + 3 + 3 + 3 + 3 + 3 = 24. Il y a 8 groupes de 3.",
+            "La maîtresse remplit **8 assiettes**.",
+            "Attention : il faut compter les gâteaux des deux boîtes, pas ceux d'une seule boîte."
+          ],
+          "hint": "Commence par compter les gâteaux des deux boîtes."
+        }
+      ],
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 2, Cours préparatoire, La résolution de problèmes : « L'élève sait résoudre des problèmes consistant à rechercher la valeur d'une part dans un partage équitable »"
+    },
+    {
+      "id": "SX-B037-01",
+      "skill_id": "B037",
+      "skill_ids": [
+        "B037",
+        "A001",
+        "B003"
+      ],
+      "school_level": "CP",
+      "title": "La visite à la ferme",
+      "contexte": "Jeudi, la classe de CP visite une ferme. Il y a 22 élèves et 2 adultes.\n\nDans le poulailler, il y a 27 poules. Le matin, 7 poules sortent dans le pré. Plus tard, 3 de ces poules reviennent dans le poulailler.\n\nLe fermier a aussi 18 lapins. Il vend 5 lapins au marché.\n\nDans le pré, les enfants voient les vaches du fermier : Rosa, Bella, Lilas, Mimosa, Câline, Noisette, Praline et Caramel.\n\nÀ midi, les enfants pique-niquent sous un grand arbre, près de la mare.",
+      "image": null,
+      "duree_estimee_min": 10,
+      "questions": [
+        {
+          "key": "q1",
+          "skill_id": "A001",
+          "statement": "Combien de vaches les enfants voient-ils ?",
+          "type": "numerique",
+          "answer": {
+            "value": 8,
+            "unit": "vaches"
+          },
+          "points": 2,
+          "solution_steps": [
+            "On compte les noms des vaches, un par un : Rosa (1), Bella (2), Lilas (3), Mimosa (4), Câline (5), Noisette (6), Praline (7), Caramel (8).",
+            "Les enfants voient **8 vaches**."
+          ],
+          "hint": "Relis la phrase qui parle des vaches et compte les noms."
+        },
+        {
+          "key": "q2",
+          "skill_id": "B003",
+          "statement": "Combien de lapins reste-t-il au fermier ?",
+          "type": "numerique",
+          "answer": {
+            "value": 13,
+            "unit": "lapins"
+          },
+          "points": 3,
+          "solution_steps": [
+            "Le fermier avait 18 lapins. Il en vend 5 : on enlève 5.",
+            "18 − 5 = 13, car 13 + 5 = 18.",
+            "Il reste **13 lapins** au fermier."
+          ],
+          "hint": "Il vend des lapins : en a-t-il plus ou moins après ?"
+        },
+        {
+          "key": "q3",
+          "skill_id": "B037",
+          "statement": "Quand les 3 poules sont revenues, combien de poules y a-t-il dans le poulailler ?",
+          "type": "numerique",
+          "answer": {
+            "value": 23,
+            "unit": "poules"
+          },
+          "points": 4,
+          "solution_steps": [
+            "Étape 1 : 7 poules sortent. 27 − 7 = 20 poules restent dans le poulailler.",
+            "Étape 2 : 3 poules reviennent. 20 + 3 = 23.",
+            "Il y a **23 poules** dans le poulailler.",
+            "Attention : 20 est le nombre de poules après la sortie du matin. Il faut encore ajouter les poules qui reviennent."
+          ],
+          "hint": "Cherche d'abord combien de poules restent quand les 7 poules sont sorties."
+        }
+      ],
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 2, Cours préparatoire, La résolution de problèmes : « Résoudre des problèmes additifs en deux étapes (champ numérique inférieur ou égal à 30). »"
+    },
+    {
+      "id": "SX-B038-01",
+      "skill_id": "B038",
+      "skill_ids": [
+        "B038",
+        "A002",
+        "B005"
+      ],
+      "school_level": "CE1",
+      "title": "Le stand de jus de la kermesse",
+      "contexte": "Samedi, c'est la kermesse de l'école. La classe de CE1 tient le stand des jus de fruits.\n\nUn gobelet de jus d'orange coûte 2 €. Un gobelet de jus de pomme coûte 3 €.\n\nLe matin, 36 personnes passent devant le stand. L'après-midi, 63 personnes passent devant le stand.\n\nLe matin, le stand vend 9 gobelets de jus d'orange.\n\nL'après-midi, Chloé achète 4 gobelets de jus de pomme pour sa famille. Avant cet achat, elle avait 25 € dans son porte-monnaie.\n\nLe stand ferme à 6 heures du soir.",
+      "image": null,
+      "duree_estimee_min": 10,
+      "questions": [
+        {
+          "key": "q1",
+          "skill_id": "A002",
+          "statement": "À quel moment de la journée passe-t-il le plus de personnes devant le stand ?",
+          "type": "qcm",
+          "choices": [
+            {
+              "key": "a",
+              "text": "Le matin",
+              "misconception": "L'élève compare les chiffres des unités : 6 est plus grand que 3. Mais 63 a 6 dizaines et 36 n'en a que 3 : 63 est plus grand que 36."
+            },
+            {
+              "key": "b",
+              "text": "L'après-midi",
+              "misconception": null
+            },
+            {
+              "key": "c",
+              "text": "Autant le matin que l'après-midi",
+              "misconception": "Les deux nombres ont les mêmes chiffres, 3 et 6, mais pas à la même place : 36 et 63 ne sont pas égaux."
+            }
+          ],
+          "answer": {
+            "value": "b"
+          },
+          "points": 2,
+          "solution_steps": [
+            "Le matin, 36 personnes passent ; l'après-midi, 63 personnes.",
+            "On compare les dizaines : 63 a 6 dizaines, 36 a 3 dizaines. 63 est plus grand que 36.",
+            "Il passe le plus de personnes **l'après-midi**."
+          ],
+          "hint": "Compare d'abord les chiffres des dizaines."
+        },
+        {
+          "key": "q2",
+          "skill_id": "B005",
+          "statement": "Combien d'argent rapportent les gobelets de jus d'orange vendus le matin ?",
+          "type": "numerique",
+          "answer": {
+            "value": 18,
+            "unit": "€"
+          },
+          "points": 3,
+          "solution_steps": [
+            "Le matin, le stand vend 9 gobelets de jus d'orange, à 2 € chacun.",
+            "9 fois 2 €, c'est 9 × 2 = 18.",
+            "Ils rapportent **18 €**."
+          ],
+          "hint": "Combien coûte un gobelet de jus d'orange ?"
+        },
+        {
+          "key": "q3",
+          "skill_id": "B038",
+          "statement": "Combien d'argent reste-t-il à Chloé après son achat ?",
+          "type": "numerique",
+          "answer": {
+            "value": 13,
+            "unit": "€"
+          },
+          "points": 4,
+          "solution_steps": [
+            "Étape 1 : le prix des 4 gobelets de jus de pomme, à 3 € chacun : 4 × 3 = 12 €.",
+            "Étape 2 : Chloé avait 25 €. Il lui reste 25 − 12 = 13 €.",
+            "Il reste **13 €** à Chloé.",
+            "Attention : 12 € est le prix des gobelets, pas l'argent qui reste."
+          ],
+          "hint": "Cherche d'abord combien coûtent les 4 gobelets de Chloé."
+        }
+      ],
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 2, Cours élémentaire première année, La résolution de problèmes : « Résoudre des problèmes mixtes en deux étapes (une étape additive et une étape multiplicative). »"
+    },
+    {
+      "id": "SX-B039-01",
+      "skill_id": "B039",
+      "skill_ids": [
+        "B039",
+        "A002",
+        "B006"
+      ],
+      "school_level": "CE2",
+      "title": "La classe de découverte à la montagne",
+      "contexte": "La classe de CE2 de M. Petit part trois jours en classe de découverte à la montagne. Il y a 24 élèves et 3 adultes.\n\nAu chalet, les élèves dorment dans des chambres de 4 lits. Toutes les chambres des élèves sont pleines. Les adultes dorment dans une autre partie du chalet. En tout, le chalet compte 31 lits.\n\nLe premier soir, le cuisinier prépare des crêpes. Il remplit 8 plateaux, et il met 8 crêpes sur chaque plateau.\n\nPour la randonnée du deuxième jour, les 27 participants forment 9 équipes. M. Petit a acheté 45 barres de céréales. Il les partage entre les équipes : chaque équipe reçoit le même nombre de barres.\n\nLe car du retour arrive à l'école à 17 heures.",
+      "image": null,
+      "duree_estimee_min": 15,
+      "questions": [
+        {
+          "key": "q1",
+          "skill_id": "A002",
+          "statement": "Le chalet a-t-il assez de lits pour tous les élèves et tous les adultes ?",
+          "type": "qcm",
+          "choices": [
+            {
+              "key": "a",
+              "text": "Oui, et des lits restent libres",
+              "misconception": null
+            },
+            {
+              "key": "b",
+              "text": "Non, il manque des lits",
+              "misconception": "Il y a 24 + 3 = 27 personnes. L'élève compare 27 et 31 par les chiffres des unités : 7 est plus grand que 1. Mais 31 a 3 dizaines et 27 n'en a que 2 : 31 est plus grand que 27."
+            },
+            {
+              "key": "c",
+              "text": "Oui, et il ne reste aucun lit libre",
+              "misconception": "Il faudrait autant de lits que de personnes, soit 27 lits. Or le chalet compte 31 lits : ce n'est pas le même nombre."
+            }
+          ],
+          "answer": {
+            "value": "a"
+          },
+          "points": 2,
+          "solution_steps": [
+            "Personnes à loger : 24 élèves et 3 adultes, soit 24 + 3 = 27 personnes.",
+            "On compare 27 et 31 : 31 a 3 dizaines, 27 en a 2. 31 est plus grand que 27.",
+            "Il y a plus de lits que de personnes : il y a assez de lits, et des lits restent libres."
+          ],
+          "hint": "Compte d'abord toutes les personnes du séjour."
+        },
+        {
+          "key": "q2",
+          "skill_id": "B039",
+          "statement": "Combien de chambres les élèves occupent-ils ?",
+          "type": "numerique",
+          "answer": {
+            "value": 6,
+            "unit": "chambres"
+          },
+          "points": 3,
+          "solution_steps": [
+            "On range les 24 élèves par groupes de 4 : c'est la division 24 ÷ 4.",
+            "4 × 6 = 24, donc 24 ÷ 4 = 6.",
+            "Les élèves occupent **6 chambres**.",
+            "Attention : les 3 adultes dorment dans une autre partie du chalet, on ne les compte pas."
+          ],
+          "hint": "Combien de groupes de 4 peut-on faire avec les élèves ?"
+        },
+        {
+          "key": "q3",
+          "skill_id": "B006",
+          "statement": "Combien de crêpes le cuisinier prépare-t-il pour le premier soir ?",
+          "type": "numerique",
+          "answer": {
+            "value": 64,
+            "unit": "crêpes"
+          },
+          "points": 2,
+          "solution_steps": [
+            "8 plateaux de 8 crêpes : 8 × 8.",
+            "Dans la table de 8 : 8 × 8 = 64.",
+            "Le cuisinier prépare **64 crêpes**."
+          ],
+          "hint": null
+        },
+        {
+          "key": "q4",
+          "skill_id": "B039",
+          "statement": "Combien de barres de céréales chaque équipe reçoit-elle ?",
+          "type": "numerique",
+          "answer": {
+            "value": 5,
+            "unit": "barres"
+          },
+          "points": 4,
+          "solution_steps": [
+            "On partage 45 barres entre 9 équipes : c'est la division 45 ÷ 9.",
+            "On cherche le nombre qui, multiplié par 9, donne 45 : 9 × 5 = 45.",
+            "Donc 45 ÷ 9 = 5 : chaque équipe reçoit **5 barres**.",
+            "Attention : on partage entre les 9 équipes, pas entre les 27 participants."
+          ],
+          "hint": "Cherche dans la table de 9 le produit qui donne 45."
+        }
+      ],
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 2, Cours élémentaire deuxième année, Les quatre opérations : « Comprendre le sens de la division et utiliser le symbole « ÷ ». »"
+    },
+    {
+      "id": "SX-B040-01",
+      "skill_id": "B040",
+      "skill_ids": [
+        "B040",
+        "A009",
+        "B007"
+      ],
+      "school_level": "6e",
+      "title": "Le cross du collège",
+      "contexte": "Chaque automne, le collège Jean-Moulin organise son cross au parc de la Vallée. Cette année, 734 élèves sont inscrits. Le parcours des élèves de sixième mesure 2 km, et celui des élèves de troisième mesure 3 km.\n\nPour aller au parc, les élèves prennent des cars de 63 places. Les professeurs, eux, s'y rendent à vélo.\n\nPour que la course reste sûre, les élèves partent par vagues de 48 coureurs. Toutes les vagues sont complètes, sauf la dernière.\n\nPour les ravitaillements, l'intendante a commandé 38 packs de 24 bouteilles d'eau.\n\nÀ l'arrivée, chaque coureur reçoit un diplôme.",
+      "image": null,
+      "duree_estimee_min": 20,
+      "questions": [
+        {
+          "key": "q1",
+          "skill_id": "B040",
+          "statement": "Pour savoir combien de cars il faut réserver, quelle division faut-il poser ?",
+          "type": "qcm",
+          "choices": [
+            {
+              "key": "a",
+              "text": "La division de 734 par 63",
+              "misconception": null
+            },
+            {
+              "key": "b",
+              "text": "La division de 734 par 48",
+              "misconception": "48 est le nombre de coureurs d'une vague, pas le nombre de places d'un car."
+            },
+            {
+              "key": "c",
+              "text": "La division de 63 par 734",
+              "misconception": "On répartit les 734 élèves dans des cars de 63 places : on divise 734 par 63, pas l'inverse."
+            }
+          ],
+          "answer": {
+            "value": "a"
+          },
+          "points": 1,
+          "solution_steps": [
+            "On range les 734 élèves dans des cars de 63 places : c'est un groupement, on divise 734 par 63.",
+            "Les vagues de 48 coureurs et les bouteilles ne servent pas pour cette question."
+          ],
+          "hint": "Relis la phrase qui parle des cars."
+        },
+        {
+          "key": "q2",
+          "skill_id": "A009",
+          "statement": "Pour poser la division de 734 par 48, on commence par les dizaines. Combien y a-t-il de dizaines en tout dans 734 ?",
+          "type": "numerique",
+          "answer": {
+            "value": 73,
+            "unit": "dizaines"
+          },
+          "points": 2,
+          "solution_steps": [
+            "734, c'est 7 centaines, 3 dizaines et 4 unités.",
+            "Une centaine vaut 10 dizaines : 7 centaines et 3 dizaines font 70 + 3 = 73 dizaines.",
+            "Il y a **73 dizaines** en tout dans 734.",
+            "Attention : 3 est le chiffre des dizaines, pas le nombre de dizaines en tout."
+          ],
+          "hint": "Une centaine, c'est combien de dizaines ?"
+        },
+        {
+          "key": "q3",
+          "skill_id": "B040",
+          "statement": "Combien de coureurs y a-t-il dans la dernière vague ?",
+          "type": "numerique",
+          "answer": {
+            "value": 14,
+            "unit": "coureurs"
+          },
+          "points": 3,
+          "solution_steps": [
+            "On pose la division euclidienne de 734 par 48.",
+            "7 centaines ne suffisent pas pour 48 parts : on prend les 73 dizaines. 48 va 1 fois dans 73 : 48 × 1 = 48, il reste 25 dizaines.",
+            "25 dizaines et 4 unités font 254 : 48 × 5 = 240, il reste 14.",
+            "Quotient 15, reste 14 : 734 = 48 × 15 + 14, et 14 est plus petit que 48.",
+            "15 vagues sont complètes ; la dernière vague compte **14 coureurs**."
+          ],
+          "hint": "Le reste de la division a un sens ici."
+        },
+        {
+          "key": "q4",
+          "skill_id": "B007",
+          "statement": "Combien de bouteilles d'eau l'intendante a-t-elle commandées ?",
+          "type": "numerique",
+          "answer": {
+            "value": 912,
+            "unit": "bouteilles"
+          },
+          "points": 2,
+          "solution_steps": [
+            "38 packs de 24 bouteilles : 38 × 24.",
+            "On pose : 38 × 4 = 152, puis 38 × 20 = 760 (on n'oublie pas le 0 des dizaines).",
+            "152 + 760 = 912.",
+            "L'intendante a commandé **912 bouteilles**."
+          ],
+          "hint": "Pose la multiplication : n'oublie pas le décalage pour le chiffre des dizaines."
+        },
+        {
+          "key": "q5",
+          "skill_id": "B040",
+          "statement": "Combien de cars faut-il réserver pour emmener tous les élèves ?",
+          "type": "numerique",
+          "answer": {
+            "value": 12,
+            "unit": "cars"
+          },
+          "points": 4,
+          "solution_steps": [
+            "On pose la division euclidienne de 734 par 63.",
+            "73 dizaines : 63 va 1 fois, 63 × 1 = 63, il reste 10 dizaines.",
+            "10 dizaines et 4 unités font 104 : 63 va 1 fois, il reste 41.",
+            "734 = 63 × 11 + 41 : 11 cars pleins emmènent 693 élèves, et 41 élèves n'ont pas de place.",
+            "Il faut un car de plus pour ces 41 élèves : il faut réserver **12 cars**."
+          ],
+          "hint": "Que faire des élèves qui restent quand les cars sont pleins ?"
+        }
+      ],
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 3, classe de 6e, Les nombres entiers et décimaux : « Résoudre des problèmes mettant en jeu des divisions euclidiennes »"
+    },
+    {
+      "id": "SX-B041-01",
+      "skill_id": "B041",
+      "skill_ids": [
+        "B041",
+        "A009"
+      ],
+      "school_level": "CE2",
+      "title": "La commande de fournitures",
+      "contexte": "Chaque année, la mairie de Belval commande les fournitures des écoles de la ville. Cette année, 2 735 élèves sont inscrits dans ces écoles.\n\nLes cahiers sont vendus par cartons de 100 cahiers. La mairie commande 36 cartons de cahiers.\n\nLes crayons de couleur sont vendus par boîtes de 60 crayons. La mairie commande 9 boîtes de crayons de couleur.\n\nLes gommes sont vendues par sachets. La mairie commande 8 sachets de 30 gommes et 5 sachets de 10 gommes.\n\nLa livraison arrivera fin août, avant la rentrée.",
+      "image": null,
+      "duree_estimee_min": 15,
+      "questions": [
+        {
+          "key": "q1",
+          "skill_id": "B041",
+          "statement": "Pour calculer le nombre de crayons de couleur commandés, de quelles informations as-tu besoin ?",
+          "type": "qcm",
+          "choices": [
+            {
+              "key": "a",
+              "text": "9 boîtes et 60 crayons par boîte",
+              "misconception": null
+            },
+            {
+              "key": "b",
+              "text": "9 boîtes et 2 735 élèves",
+              "misconception": "Le nombre d'élèves ne dit pas combien de crayons contient une boîte : il ne sert pas ici."
+            },
+            {
+              "key": "c",
+              "text": "36 cartons et 60 crayons par boîte",
+              "misconception": "Les 36 cartons sont des cartons de cahiers, pas de crayons."
+            },
+            {
+              "key": "d",
+              "text": "8 sachets et 60 crayons par boîte",
+              "misconception": "Les 8 sachets sont des sachets de gommes, pas de crayons."
+            }
+          ],
+          "answer": {
+            "value": "a"
+          },
+          "points": 1,
+          "solution_steps": [
+            "La phrase sur les crayons dit : boîtes de 60 crayons, et la mairie commande 9 boîtes.",
+            "Il faut donc 9 boîtes et 60 crayons par boîte. Le nombre d'élèves, les cartons de cahiers et les sachets de gommes ne servent pas ici."
+          ],
+          "hint": "Relis la phrase qui parle des crayons de couleur."
+        },
+        {
+          "key": "q2",
+          "skill_id": "A009",
+          "statement": "Dans le nombre d'élèves inscrits, quel est le chiffre des centaines ?",
+          "type": "numerique",
+          "answer": {
+            "value": 7
+          },
+          "points": 2,
+          "solution_steps": [
+            "2 735 : 2 milliers, 7 centaines, 3 dizaines et 5 unités.",
+            "Le chiffre des centaines est **7**.",
+            "Attention : 2 est le chiffre des milliers, et 27 est le nombre de centaines en tout, pas le chiffre des centaines."
+          ],
+          "hint": "Écris le nombre dans un tableau : milliers, centaines, dizaines, unités."
+        },
+        {
+          "key": "q3",
+          "skill_id": "B041",
+          "statement": "Combien de cahiers la mairie commande-t-elle ?",
+          "type": "numerique",
+          "answer": {
+            "value": 3600,
+            "unit": "cahiers"
+          },
+          "points": 2,
+          "solution_steps": [
+            "36 cartons de 100 cahiers : 36 × 100.",
+            "Multiplier par 100 : chaque unité devient une centaine. 36 unités deviennent 36 centaines, soit 3 600.",
+            "La mairie commande **3 600 cahiers**."
+          ],
+          "hint": null
+        },
+        {
+          "key": "q4",
+          "skill_id": "B041",
+          "statement": "Combien de crayons de couleur la mairie commande-t-elle ?",
+          "type": "numerique",
+          "answer": {
+            "value": 540,
+            "unit": "crayons"
+          },
+          "points": 3,
+          "solution_steps": [
+            "9 boîtes de 60 crayons : 9 × 60.",
+            "60, c'est 6 dizaines. 9 × 6 dizaines = 54 dizaines, car 9 × 6 = 54.",
+            "54 dizaines, c'est 540 : la mairie commande **540 crayons**.",
+            "Attention : 9 × 6 = 54 ne suffit pas, il faut des dizaines."
+          ],
+          "hint": "60, c'est 6 dizaines."
+        },
+        {
+          "key": "q5",
+          "skill_id": "B041",
+          "statement": "Combien de gommes la mairie commande-t-elle en tout ?",
+          "type": "numerique",
+          "answer": {
+            "value": 290,
+            "unit": "gommes"
+          },
+          "points": 4,
+          "solution_steps": [
+            "Les grands sachets : 8 × 30. 30, c'est 3 dizaines ; 8 × 3 dizaines = 24 dizaines, soit 240 gommes.",
+            "Les petits sachets : 5 × 10 = 50 gommes.",
+            "En tout : 240 + 50 = 290.",
+            "La mairie commande **290 gommes**."
+          ],
+          "hint": "Il y a deux sortes de sachets : calcule chacune, puis ajoute."
+        }
+      ],
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 2, Cours élémentaire deuxième année, Le calcul mental : « Multiplier un nombre inférieur à 10 par un nombre entier de dizaines. »"
+    },
+    {
+      "id": "SX-B042-01",
+      "skill_id": "B042",
+      "skill_ids": [
+        "B042",
+        "A003",
+        "B002"
+      ],
+      "school_level": "CE1",
+      "title": "La collecte de bouchons",
+      "contexte": "L'école des Tilleuls collecte des bouchons en plastique pour une association. La collecte dure 3 semaines, en mai.\n\nÀ la fin, chaque classe compte ses bouchons.\nLa classe de CP a apporté 287 bouchons.\nLa classe de CE1 a apporté 278 bouchons.\nLa classe de CE2 a apporté 345 bouchons.\n\nLe gardien de l'école a aussi apporté des bouchons : 46 bouchons le lundi et 37 bouchons le mardi.\n\nAvec l'argent des bouchons, l'association achète du matériel pour des enfants handicapés.",
+      "image": null,
+      "duree_estimee_min": 10,
+      "questions": [
+        {
+          "key": "q1",
+          "skill_id": "A003",
+          "statement": "Quelle classe a apporté le plus de bouchons : la classe de CP ou la classe de CE1 ?",
+          "type": "qcm",
+          "choices": [
+            {
+              "key": "a",
+              "text": "La classe de CP",
+              "misconception": null
+            },
+            {
+              "key": "b",
+              "text": "La classe de CE1",
+              "misconception": "L'élève compare les chiffres des unités : 8 est plus grand que 7. Mais il faut comparer d'abord les centaines (2 et 2), puis les dizaines : 8 dizaines, c'est plus que 7 dizaines."
+            },
+            {
+              "key": "c",
+              "text": "Les deux classes ont apporté autant de bouchons",
+              "misconception": "287 et 278 ont les mêmes chiffres, mais pas à la même place : ce ne sont pas les mêmes nombres."
+            }
+          ],
+          "answer": {
+            "value": "a"
+          },
+          "points": 2,
+          "solution_steps": [
+            "La classe de CP a apporté 287 bouchons ; la classe de CE1 en a apporté 278.",
+            "Même chiffre des centaines : 2. On compare les dizaines : 8 dans 287, 7 dans 278.",
+            "287 est plus grand que 278 : c'est **la classe de CP** qui a apporté le plus de bouchons."
+          ],
+          "hint": "Compare d'abord les centaines, puis les dizaines."
+        },
+        {
+          "key": "q2",
+          "skill_id": "B002",
+          "statement": "Combien de bouchons le gardien a-t-il apportés en tout ?",
+          "type": "numerique",
+          "answer": {
+            "value": 83,
+            "unit": "bouchons"
+          },
+          "points": 3,
+          "solution_steps": [
+            "On pose 46 + 37 en colonnes, unités sous unités.",
+            "Unités : 6 + 7 = 13. On écrit 3 et on retient 1 dizaine.",
+            "Dizaines : 4 + 3 + 1 = 8.",
+            "Le gardien a apporté **83 bouchons**."
+          ],
+          "hint": "N'oublie pas la retenue."
+        },
+        {
+          "key": "q3",
+          "skill_id": "B042",
+          "statement": "Combien de bouchons les trois classes ont-elles apportés en tout ?",
+          "type": "numerique",
+          "answer": {
+            "value": 910,
+            "unit": "bouchons"
+          },
+          "points": 4,
+          "solution_steps": [
+            "On pose 287 + 278 + 345 en colonnes : unités sous unités, dizaines sous dizaines, centaines sous centaines.",
+            "Unités : 7 + 8 + 5 = 20. On écrit 0 et on retient 2 dizaines.",
+            "Dizaines : 8 + 7 + 4 + 2 = 21. On écrit 1 et on retient 2 centaines.",
+            "Centaines : 2 + 2 + 3 + 2 = 9.",
+            "Les trois classes ont apporté **910 bouchons**. Les bouchons du gardien ne comptent pas : il n'est pas une classe."
+          ],
+          "hint": "Pose l'addition en colonnes et pense aux retenues."
+        }
+      ],
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 2, Cours élémentaire première année, Les quatre opérations : « L'élève sait poser une addition de deux ou de trois nombres à un, deux ou trois chiffres (en positionnant les unités sous les unités, les dizaines sous les dizaines, les centaines sous les centaines) et en calculer le résultat. »"
+    },
+    {
+      "id": "SX-B043-01",
+      "skill_id": "B043",
+      "skill_ids": [
+        "B043",
+        "A002"
+      ],
+      "school_level": "CE2",
+      "title": "Le bilan du potager",
+      "contexte": "Fin juin, la classe de CE2 de Mme Garnier fait le bilan de son potager.\n\nEn avril, Hugo a noté dans le carnet du potager le nombre de graines de haricots semées. Il l'a écrit en lettres : « quatre-vingt-seize ».\n\nLes pommes de terre récoltées pèsent 8 kg. Les courgettes pèsent 4 fois plus que les pommes de terre, et les carottes pèsent 4 kg de plus que les pommes de terre.\n\nLes élèves ont cueilli 54 radis. Ils ont cueilli 6 fois moins de salades que de radis.\n\nDans le potager de la classe de CM1, il y a 21 fraisiers : c'est 3 fois plus que dans le potager des CE2.\n\nToute la récolte sera vendue au marché de l'école, le dernier vendredi de juin.",
+      "image": null,
+      "duree_estimee_min": 15,
+      "questions": [
+        {
+          "key": "q1",
+          "skill_id": "A002",
+          "statement": "Combien de graines de haricots Hugo a-t-il notées dans le carnet ? Écris ce nombre en chiffres.",
+          "type": "numerique",
+          "answer": {
+            "value": 96,
+            "unit": "graines"
+          },
+          "points": 2,
+          "solution_steps": [
+            "« Quatre-vingt-seize », c'est quatre-vingts et seize : 80 + 16 = 96.",
+            "Hugo a noté **96 graines**.",
+            "Attention : on n'écrit pas 8016 ; quatre-vingts est 8 dizaines, et seize ajoute 1 dizaine et 6 unités."
+          ],
+          "hint": "Quatre-vingts, c'est combien de dizaines ?"
+        },
+        {
+          "key": "q2",
+          "skill_id": "B043",
+          "statement": "Combien pèsent les courgettes ?",
+          "type": "numerique",
+          "answer": {
+            "value": 32,
+            "unit": "kg"
+          },
+          "points": 3,
+          "solution_steps": [
+            "Les courgettes pèsent « 4 fois plus » que les pommes de terre : on multiplie par 4.",
+            "8 × 4 = 32.",
+            "Les courgettes pèsent **32 kg**.",
+            "Attention : « 4 kg de plus » concerne les carottes, et se traduit par une addition. « 4 fois plus » est une multiplication."
+          ],
+          "hint": "« Fois plus » ou « de plus » : relis bien la phrase sur les courgettes."
+        },
+        {
+          "key": "q3",
+          "skill_id": "B043",
+          "statement": "Combien de salades les élèves ont-ils cueillies ?",
+          "type": "numerique",
+          "answer": {
+            "value": 9,
+            "unit": "salades"
+          },
+          "points": 3,
+          "solution_steps": [
+            "Il y a « 6 fois moins » de salades que de radis : on divise le nombre de radis par 6.",
+            "54 ÷ 6 = 9, car 6 × 9 = 54.",
+            "Les élèves ont cueilli **9 salades**.",
+            "Attention : « 6 de moins » serait une soustraction ; « 6 fois moins » est une division."
+          ],
+          "hint": "« Fois moins » se traduit par une division."
+        },
+        {
+          "key": "q4",
+          "skill_id": "B043",
+          "statement": "Combien de fraisiers y a-t-il dans le potager des CE2 ?",
+          "type": "numerique",
+          "answer": {
+            "value": 7,
+            "unit": "fraisiers"
+          },
+          "points": 4,
+          "solution_steps": [
+            "Les CM1 ont 3 fois plus de fraisiers que les CE2 : les CE2 en ont donc 3 fois moins que les CM1.",
+            "21 ÷ 3 = 7, car 3 × 7 = 21.",
+            "Il y a **7 fraisiers** dans le potager des CE2.",
+            "Vérification : 3 fois 7, c'est bien 21. Multiplier 21 par 3 donnerait plus de fraisiers aux CE2, alors que ce sont les CM1 qui en ont le plus."
+          ],
+          "hint": "Quelle classe a le plus de fraisiers ?"
+        }
+      ],
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 2, Cours élémentaire deuxième année, La résolution de problèmes : « Résoudre des problèmes de comparaison multiplicative en une étape. »"
+    },
+    {
+      "id": "SX-B044-01",
+      "skill_id": "B044",
+      "skill_ids": [
+        "B044",
+        "A018",
+        "A022"
+      ],
+      "school_level": "5e",
+      "title": "Le club météo et sa sortie",
+      "contexte": "Le club météo du collège relève chaque jour la température au sommet de la station de ski voisine, à 2 300 m d'altitude.\n\nMardi, à 7 h, le thermomètre indique −8,4 °C. Entre 7 h et 13 h, la température monte de 5,9 degrés. Entre 13 h et 18 h, elle baisse de 3,7 degrés.\n\nMercredi, à 7 h, il fait −4,6 °C. Entre 7 h et 13 h, la température monte de 4,6 degrés.\n\nLe club a aussi un compte à la coopérative du collège. Avant sa sortie au planétarium, le solde du compte était de 37,50 €. La sortie coûte 52,80 € : son paiement s'inscrit sur le relevé du compte comme une opération de −52,80 €. Le club compte 14 membres.",
+      "image": null,
+      "duree_estimee_min": 15,
+      "questions": [
+        {
+          "key": "q1",
+          "skill_id": "A018",
+          "statement": "Mardi, entre 13 h et 18 h, la température varie. Quel nombre relatif représente cette variation ?",
+          "type": "qcm",
+          "choices": [
+            {
+              "key": "a",
+              "text": "+3,7",
+              "misconception": "L'élève oublie le signe : une baisse se représente par un nombre négatif."
+            },
+            {
+              "key": "b",
+              "text": "−3,7",
+              "misconception": null
+            },
+            {
+              "key": "c",
+              "text": "−8,4",
+              "misconception": "−8,4 °C est la température de mardi à 7 h, pas une variation."
+            },
+            {
+              "key": "d",
+              "text": "+5,9",
+              "misconception": "+5,9 est la variation entre 7 h et 13 h, pas entre 13 h et 18 h."
+            }
+          ],
+          "answer": {
+            "value": "b"
+          },
+          "points": 1,
+          "solution_steps": [
+            "Entre 13 h et 18 h, la température baisse de 3,7 degrés.",
+            "Une baisse se représente par un nombre négatif : la variation est **−3,7**."
+          ],
+          "hint": "Relis la phrase qui parle de 13 h et de 18 h."
+        },
+        {
+          "key": "q2",
+          "skill_id": "A022",
+          "statement": "Pour calculer la température de mardi à 13 h, on calcule (−8,4) + (+5,9). Lequel de ces deux nombres est le plus éloigné de zéro ?",
+          "type": "qcm",
+          "choices": [
+            {
+              "key": "a",
+              "text": "−8,4",
+              "misconception": null
+            },
+            {
+              "key": "b",
+              "text": "+5,9",
+              "misconception": "L'élève croit qu'un nombre positif est toujours plus loin de zéro. La distance à zéro de −8,4 est 8,4, et celle de +5,9 est 5,9."
+            },
+            {
+              "key": "c",
+              "text": "Ils sont à la même distance de zéro",
+              "misconception": "Leurs distances à zéro sont 8,4 et 5,9 : elles ne sont pas égales."
+            }
+          ],
+          "answer": {
+            "value": "a"
+          },
+          "points": 2,
+          "solution_steps": [
+            "La distance à zéro d'un nombre relatif est ce nombre sans son signe : 8,4 pour −8,4, et 5,9 pour +5,9.",
+            "8,4 est plus grand que 5,9 : c'est **−8,4** qui est le plus éloigné de zéro."
+          ],
+          "hint": "Compare les nombres sans leur signe."
+        },
+        {
+          "key": "q3",
+          "skill_id": "B044",
+          "statement": "Quelle température fait-il mardi à 13 h ?",
+          "type": "numerique",
+          "answer": {
+            "value": -2.5,
+            "unit": "°C"
+          },
+          "points": 3,
+          "solution_steps": [
+            "On part de −8,4 °C, et la température monte de 5,9 degrés : on calcule (−8,4) + (+5,9).",
+            "Les signes sont contraires : on soustrait les distances à zéro, 8,4 − 5,9 = 2,5.",
+            "On prend le signe du nombre le plus éloigné de zéro, −8,4 : le résultat est négatif.",
+            "(−8,4) + (+5,9) = −2,5 : il fait **−2,5 °C** mardi à 13 h.",
+            "Attention : ajouter les distances à zéro donnerait 14,3, une erreur de signes contraires."
+          ],
+          "hint": "Les deux nombres ont des signes contraires."
+        },
+        {
+          "key": "q4",
+          "skill_id": "B044",
+          "statement": "Quelle température fait-il mercredi à 13 h ?",
+          "type": "numerique",
+          "answer": {
+            "value": 0,
+            "unit": "°C"
+          },
+          "points": 3,
+          "solution_steps": [
+            "On part de −4,6 °C, et la température monte de 4,6 degrés : on calcule (−4,6) + (+4,6).",
+            "−4,6 et +4,6 sont deux nombres opposés : leur somme est nulle.",
+            "Il fait **0 °C** mercredi à 13 h."
+          ],
+          "hint": "Que remarques-tu sur les deux nombres à ajouter ?"
+        },
+        {
+          "key": "q5",
+          "skill_id": "B044",
+          "statement": "Quel est le solde du compte du club après le paiement de la sortie ?",
+          "type": "numerique",
+          "answer": {
+            "value": -15.3,
+            "unit": "€"
+          },
+          "points": 4,
+          "solution_steps": [
+            "On ajoute l'opération au solde : (+37,50) + (−52,80).",
+            "Signes contraires : on soustrait les distances à zéro, 52,80 − 37,50 = 15,30.",
+            "−52,80 est le plus éloigné de zéro : le résultat est négatif.",
+            "(+37,50) + (−52,80) = −15,30 : le solde est de **−15,30 €**. Le club doit 15,30 € à la coopérative.",
+            "Le nombre de membres ne sert pas ici."
+          ],
+          "hint": "Un solde peut devenir négatif."
+        }
+      ],
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 4, classe de 5e, Nombres et calculs, Nombres relatifs, Objectifs d'apprentissage : « Additionner deux nombres décimaux relatifs. »"
+    },
+    {
+      "id": "SX-B045-01",
+      "skill_id": "B045",
+      "skill_ids": [
+        "B045",
+        "A018",
+        "D004"
+      ],
+      "school_level": "5e",
+      "title": "Le carnet de températures de Léna",
+      "contexte": "Léna habite près de Strasbourg. Pendant une semaine de février, elle note chaque jour dans son carnet la température la plus basse de la journée (la minimale) et la plus haute (la maximale). Son thermomètre est placé à 1,5 m du sol, à l'ombre.\n\nLundi : minimale −3,5 °C ; maximale 4,2 °C.\nMardi : minimale −7,8 °C ; maximale −1,4 °C.\nMercredi : minimale 0,6 °C ; maximale 6,1 °C.\n\nJeudi, Léna a oublié de noter la minimale. Elle sait seulement que la maximale était de 5,1 °C, et que la température est montée de 8,9 degrés entre la minimale et la maximale.\n\nL'écart entre la minimale et la maximale d'une journée s'appelle l'amplitude de la journée.",
+      "image": null,
+      "duree_estimee_min": 15,
+      "questions": [
+        {
+          "key": "q1",
+          "skill_id": "A018",
+          "statement": "Quel jour la température est-elle restée en dessous de zéro du matin au soir ?",
+          "type": "qcm",
+          "choices": [
+            {
+              "key": "a",
+              "text": "Lundi",
+              "misconception": "Lundi, la minimale est négative, mais la maximale, 4,2 °C, est positive : la température est passée au-dessus de zéro."
+            },
+            {
+              "key": "b",
+              "text": "Mardi",
+              "misconception": null
+            },
+            {
+              "key": "c",
+              "text": "Mercredi",
+              "misconception": "Mercredi, la minimale et la maximale sont toutes les deux positives : il n'a jamais fait moins de zéro."
+            }
+          ],
+          "answer": {
+            "value": "b"
+          },
+          "points": 1,
+          "solution_steps": [
+            "La température reste sous zéro toute la journée si même la maximale est négative.",
+            "Mardi, la maximale est −1,4 °C : elle est négative. C'est le seul jour dans ce cas.",
+            "Réponse : **mardi**."
+          ],
+          "hint": "Relis la minimale et la maximale de chaque jour."
+        },
+        {
+          "key": "q2",
+          "skill_id": "D004",
+          "statement": "De combien de degrés la maximale de mercredi dépasse-t-elle la maximale de lundi ?",
+          "type": "numerique",
+          "answer": {
+            "value": 1.9,
+            "unit": "°C"
+          },
+          "points": 2,
+          "solution_steps": [
+            "Les deux maximales sont positives : 6,1 °C et 4,2 °C.",
+            "On pose 6,1 − 4,2 en alignant les virgules : 61 dixièmes moins 42 dixièmes font 19 dixièmes.",
+            "6,1 − 4,2 = 1,9 : la maximale de mercredi dépasse celle de lundi de **1,9 degré**."
+          ],
+          "hint": "Aligne les virgules pour poser la soustraction."
+        },
+        {
+          "key": "q3",
+          "skill_id": "B045",
+          "statement": "Quelle est l'amplitude de la journée de lundi ?",
+          "type": "numerique",
+          "answer": {
+            "value": 7.7,
+            "unit": "°C"
+          },
+          "points": 3,
+          "solution_steps": [
+            "L'amplitude est l'écart entre la maximale et la minimale : maximale moins minimale.",
+            "4,2 − (−3,5) : soustraire −3,5, c'est ajouter son opposé, +3,5.",
+            "4,2 + 3,5 = 7,7.",
+            "L'amplitude de lundi est de **7,7 degrés**.",
+            "Attention : 4,2 − 3,5 = 0,7 oublie que la minimale est négative."
+          ],
+          "hint": "Soustraire un nombre, c'est ajouter son opposé."
+        },
+        {
+          "key": "q4",
+          "skill_id": "B045",
+          "statement": "De combien la minimale a-t-elle varié entre lundi et mardi ? Donne la variation avec son signe.",
+          "type": "numerique",
+          "answer": {
+            "value": -4.3,
+            "unit": "°C"
+          },
+          "points": 3,
+          "solution_steps": [
+            "Une variation se calcule : valeur d'arrivée moins valeur de départ.",
+            "(−7,8) − (−3,5) = (−7,8) + (+3,5).",
+            "Signes contraires : 7,8 − 3,5 = 4,3, et le signe est celui de −7,8.",
+            "La variation est de **−4,3 degrés** : la minimale a baissé de 4,3 degrés."
+          ],
+          "hint": "Valeur d'arrivée moins valeur de départ."
+        },
+        {
+          "key": "q5",
+          "skill_id": "B045",
+          "statement": "Quelle était la minimale de jeudi ?",
+          "type": "numerique",
+          "answer": {
+            "value": -3.8,
+            "unit": "°C"
+          },
+          "points": 4,
+          "solution_steps": [
+            "La minimale, augmentée de 8,9 degrés, donne la maximale : minimale + 8,9 = 5,1.",
+            "Pour compléter cette addition à trou, on soustrait : minimale = 5,1 − 8,9.",
+            "5,1 − 8,9 = 5,1 + (−8,9). Signes contraires : 8,9 − 5,1 = 3,8, et le signe est celui de −8,9.",
+            "La minimale de jeudi était de **−3,8 °C**.",
+            "Vérification : (−3,8) + 8,9 = 5,1."
+          ],
+          "hint": "Écris une addition à trou avec la minimale cherchée."
+        }
+      ],
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 4, classe de 5e, Nombres et calculs, Nombres relatifs, Objectifs d'apprentissage : « Soustraire deux nombres décimaux relatifs. »"
+    },
+    {
+      "id": "SX-B046-01",
+      "skill_id": "B046",
+      "skill_ids": [
+        "B046",
+        "A021"
+      ],
+      "school_level": "5e",
+      "title": "La partie de « Thermomètre »",
+      "contexte": "Au club de jeux du collège, Inès, Malik et Zoé jouent à « Thermomètre ». Une partie dure 4 tours, et chaque joueur commence avec 0 point.\n\nÀ chaque tour, le joueur pioche une carte qui porte un nombre relatif. Si la carte est verte, on **ajoute** ce nombre au score. Si la carte est rouge, on **soustrait** ce nombre du score.\n\nInès a pioché, dans l'ordre :\nverte −2,5 ; rouge −4,5 ; verte +6 ; rouge +1.\n\nMalik a pioché, dans l'ordre :\nrouge −3 ; verte +2 ; rouge +5,5 ; verte −1.\n\nZoé a dû partir avant le dernier tour. Le gagnant choisira le jeu de la semaine suivante.",
+      "image": null,
+      "duree_estimee_min": 15,
+      "questions": [
+        {
+          "key": "q1",
+          "skill_id": "B046",
+          "statement": "Quel calcul donne le score d'Inès à la fin de la partie ?",
+          "type": "qcm",
+          "choices": [
+            {
+              "key": "a",
+              "text": "(−2,5) + (−4,5) + (+6) + (+1)",
+              "misconception": "L'élève ajoute toutes les cartes sans regarder leur couleur : les cartes rouges se soustraient."
+            },
+            {
+              "key": "b",
+              "text": "(−2,5) − (−4,5) + (+6) − (+1)",
+              "misconception": null
+            },
+            {
+              "key": "c",
+              "text": "(+2,5) − (+4,5) + (+6) − (+1)",
+              "misconception": "L'élève enlève le signe des nombres négatifs : chaque nombre garde le signe écrit sur la carte."
+            },
+            {
+              "key": "d",
+              "text": "(−2,5) − (−4,5) − (+6) + (+1)",
+              "misconception": "L'élève inverse les couleurs des deux dernières cartes : +6 est vert, +1 est rouge."
+            }
+          ],
+          "answer": {
+            "value": "b"
+          },
+          "points": 1,
+          "solution_steps": [
+            "Cartes vertes : on ajoute (−2,5) et (+6). Cartes rouges : on soustrait (−4,5) et (+1).",
+            "Le score d'Inès est (−2,5) − (−4,5) + (+6) − (+1)."
+          ],
+          "hint": "Relis la règle des cartes vertes et des cartes rouges."
+        },
+        {
+          "key": "q2",
+          "skill_id": "A021",
+          "statement": "La deuxième carte d'Inès est rouge et porte −4,5. Soustraire −4,5 revient à ajouter son opposé. Quel est l'opposé de −4,5 ?",
+          "type": "numerique",
+          "answer": {
+            "value": 4.5
+          },
+          "points": 2,
+          "solution_steps": [
+            "Deux nombres opposés ont la même distance à zéro et des signes contraires.",
+            "L'opposé de −4,5 est **4,5** (ou +4,5).",
+            "Ainsi, soustraire −4,5 revient à ajouter 4,5."
+          ],
+          "hint": "Un nombre et son opposé ont des signes contraires."
+        },
+        {
+          "key": "q3",
+          "skill_id": "B046",
+          "statement": "Quelle est l'écriture simplifiée du calcul du score d'Inès ?",
+          "type": "qcm",
+          "choices": [
+            {
+              "key": "a",
+              "text": "−2,5 + 4,5 + 6 − 1",
+              "misconception": null
+            },
+            {
+              "key": "b",
+              "text": "−2,5 − 4,5 + 6 − 1",
+              "misconception": "L'élève garde le signe − de la soustraction et oublie que soustraire −4,5, c'est ajouter 4,5."
+            },
+            {
+              "key": "c",
+              "text": "2,5 + 4,5 + 6 − 1",
+              "misconception": "L'élève perd le signe du premier terme : −2,5 commence l'écriture avec son signe."
+            },
+            {
+              "key": "d",
+              "text": "−2,5 + 4,5 + 6 + 1",
+              "misconception": "Soustraire +1, c'est ajouter −1 : on écrit − 1."
+            }
+          ],
+          "answer": {
+            "value": "a"
+          },
+          "points": 3,
+          "solution_steps": [
+            "On transforme chaque soustraction en addition de l'opposé : − (−4,5) devient + 4,5, et − (+1) devient − 1.",
+            "On supprime les parenthèses et les signes + d'addition : chaque signe est celui du terme qui le suit.",
+            "(−2,5) − (−4,5) + (+6) − (+1) s'écrit **−2,5 + 4,5 + 6 − 1**."
+          ],
+          "hint": "Commence par transformer les soustractions."
+        },
+        {
+          "key": "q4",
+          "skill_id": "B046",
+          "statement": "Malik écrit le début du calcul de son score ainsi : « 0 − −3 ». Vrai ou faux : cette écriture est correcte.",
+          "type": "vrai_faux",
+          "answer": {
+            "value": false
+          },
+          "points": 2,
+          "solution_steps": [
+            "Deux signes ne doivent jamais se suivre : les parenthèses sont indispensables.",
+            "On écrit 0 − (−3), ou, en écriture simplifiée, 0 + 3.",
+            "L'écriture « 0 − −3 » est donc **fausse**."
+          ],
+          "hint": "Regarde les deux signes qui se suivent."
+        },
+        {
+          "key": "q5",
+          "skill_id": "B046",
+          "statement": "Quel est le score d'Inès à la fin de la partie ?",
+          "type": "numerique",
+          "answer": {
+            "value": 7,
+            "unit": "points"
+          },
+          "points": 4,
+          "solution_steps": [
+            "Écriture simplifiée : −2,5 + 4,5 + 6 − 1.",
+            "On regroupe les termes positifs : 4,5 + 6 = 10,5.",
+            "Puis les termes négatifs : −2,5 − 1 = −3,5.",
+            "10,5 − 3,5 = 7 : Inès finit la partie avec **7 points**."
+          ],
+          "hint": "Regroupe les termes positifs, puis les termes négatifs."
+        }
+      ],
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 4, classe de 5e, Nombres et calculs, Nombres relatifs, Objectifs d'apprentissage : « Simplifier l'écriture de sommes comportant des parenthèses. »"
+    },
+    {
+      "id": "SX-B047-01",
+      "skill_id": "B047",
+      "skill_ids": [
+        "B047",
+        "A018",
+        "D004",
+        "A021"
+      ],
+      "school_level": "5e",
+      "title": "Le compte du club photo",
+      "contexte": "Le club photo du collège a un compte à la coopérative. Au 1er mars, le solde du compte était de −12,60 €. Le club compte 17 membres.\n\nEn mars, le relevé du compte indique ces opérations, dans l'ordre :\ncotisations des membres : +45 € ;\ntirages de photos : −27,80 € ;\nachat d'un trépied : −18,50 € ;\nvente de cartes postales : +15,50 € ;\nremboursement du trépied, rapporté au magasin car il était abîmé : +18,50 € ;\nachat de cadres : −9,40 €.\n\nL'exposition du club aura lieu en juin, dans le hall du collège.",
+      "image": null,
+      "duree_estimee_min": 15,
+      "questions": [
+        {
+          "key": "q1",
+          "skill_id": "A018",
+          "statement": "Au 1er mars, que signifie le solde de −12,60 € ?",
+          "type": "qcm",
+          "choices": [
+            {
+              "key": "a",
+              "text": "Le club avait 12,60 € sur son compte",
+              "misconception": "Un solde négatif n'est pas de l'argent disponible : c'est une dette."
+            },
+            {
+              "key": "b",
+              "text": "Le club devait 12,60 € à la coopérative",
+              "misconception": null
+            },
+            {
+              "key": "c",
+              "text": "Le club avait dépensé 12,60 € depuis le début de l'année",
+              "misconception": "Le solde dit ce que contient le compte à une date, pas ce que le club a dépensé."
+            }
+          ],
+          "answer": {
+            "value": "b"
+          },
+          "points": 1,
+          "solution_steps": [
+            "Un solde négatif signifie que le compte est en dessous de zéro.",
+            "Avec un solde de −12,60 €, **le club devait 12,60 € à la coopérative**."
+          ],
+          "hint": "Que veut dire un nombre négatif pour de l'argent ?"
+        },
+        {
+          "key": "q2",
+          "skill_id": "D004",
+          "statement": "Quel est le montant total des cotisations et de la vente de cartes postales ?",
+          "type": "numerique",
+          "answer": {
+            "value": 60.5,
+            "unit": "€"
+          },
+          "points": 2,
+          "solution_steps": [
+            "Cotisations : 45 € ; cartes postales : 15,50 €.",
+            "On pose 45,00 + 15,50 en alignant les virgules.",
+            "45,00 + 15,50 = 60,50 : le total est de **60,50 €**."
+          ],
+          "hint": "Écris 45 avec une virgule pour aligner les nombres."
+        },
+        {
+          "key": "q3",
+          "skill_id": "A021",
+          "statement": "Pour calculer le solde à la fin de mars, Noé barre les opérations −18,50 € et +18,50 €. Vrai ou faux : il a le droit de le faire.",
+          "type": "vrai_faux",
+          "answer": {
+            "value": true
+          },
+          "points": 2,
+          "solution_steps": [
+            "−18,50 et +18,50 sont deux nombres opposés : leur somme est nulle.",
+            "Les barrer tous les deux ne change pas le résultat : c'est **vrai**, Noé a le droit de le faire."
+          ],
+          "hint": "Que vaut la somme de deux nombres opposés ?"
+        },
+        {
+          "key": "q4",
+          "skill_id": "B047",
+          "statement": "Quel était le solde du compte juste après les trois premières opérations du relevé ?",
+          "type": "numerique",
+          "answer": {
+            "value": -13.9,
+            "unit": "€"
+          },
+          "points": 3,
+          "solution_steps": [
+            "On part du solde du 1er mars et on enchaîne les trois premières opérations : −12,60 + 45 − 27,80 − 18,50.",
+            "Terme positif : 45.",
+            "Termes négatifs : −12,60 − 27,80 − 18,50 = −58,90.",
+            "45 − 58,90 = −13,90 : le solde était de **−13,90 €**.",
+            "Attention : oublier le solde de départ donnerait −1,30 €."
+          ],
+          "hint": "N'oublie pas le solde du 1er mars."
+        },
+        {
+          "key": "q5",
+          "skill_id": "B047",
+          "statement": "Quel est le solde du compte à la fin du mois de mars ?",
+          "type": "numerique",
+          "answer": {
+            "value": 10.7,
+            "unit": "€"
+          },
+          "points": 4,
+          "solution_steps": [
+            "Solde final : −12,60 + 45 − 27,80 − 18,50 + 15,50 + 18,50 − 9,40.",
+            "−18,50 et +18,50 sont opposés : ils s'annulent.",
+            "Termes positifs : 45 + 15,50 = 60,50.",
+            "Termes négatifs : −12,60 − 27,80 − 9,40 = −49,80.",
+            "60,50 − 49,80 = 10,70 : le solde est de **10,70 €** à la fin de mars."
+          ],
+          "hint": "Regroupe les termes positifs et les termes négatifs, et cherche les opposés."
+        }
+      ],
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 4, classe de 5e, Nombres et calculs, Nombres relatifs, Objectifs d'apprentissage : « Enchainer additions et soustractions de décimaux relatifs. »"
+    },
+    {
+      "id": "SX-B048-01",
+      "skill_id": "B048",
+      "skill_ids": [
+        "B048",
+        "A018",
+        "D004"
+      ],
+      "school_level": "5e",
+      "title": "Une journée aux calanques",
+      "contexte": "La classe de 5e B passe une journée dans les calanques, près de Marseille. Les altitudes sont mesurées par rapport au niveau de la mer, qui est à l'altitude 0 m. Le bateau quitte le port à 9 h 30.\n\nLe sommet de la falaise est à 87,5 m d'altitude. Un phare est construit tout en haut de la falaise : le sommet du phare est à 112,3 m d'altitude.\n\nSous le bateau, une épave repose au fond de l'eau, à 32,8 m sous le niveau de la mer. Un plongeur descend jusqu'à l'épave. Il remonte ensuite de 28,3 m, puis s'arrête pour faire un palier de sécurité.\n\nUne deuxième plongeuse part de la surface. Elle descend de 18,4 m, remonte de 6,9 m, puis descend encore de 12,7 m pour observer un banc de poissons.",
+      "image": null,
+      "duree_estimee_min": 15,
+      "questions": [
+        {
+          "key": "q1",
+          "skill_id": "A018",
+          "statement": "Quelle est l'altitude de l'épave ?",
+          "type": "qcm",
+          "choices": [
+            {
+              "key": "a",
+              "text": "32,8 m",
+              "misconception": "L'épave est sous le niveau de la mer : son altitude est un nombre négatif."
+            },
+            {
+              "key": "b",
+              "text": "−32,8 m",
+              "misconception": null
+            },
+            {
+              "key": "c",
+              "text": "−87,5 m",
+              "misconception": "87,5 m est l'altitude du sommet de la falaise, qui n'a rien à voir avec l'épave."
+            }
+          ],
+          "answer": {
+            "value": "b"
+          },
+          "points": 1,
+          "solution_steps": [
+            "L'épave est à 32,8 m sous le niveau de la mer, qui est à l'altitude 0 m.",
+            "Une altitude sous le niveau de la mer est négative : l'épave est à l'altitude **−32,8 m**."
+          ],
+          "hint": "Relis la phrase qui parle de l'épave."
+        },
+        {
+          "key": "q2",
+          "skill_id": "D004",
+          "statement": "Quelle est la hauteur du phare, en mètres ?",
+          "type": "numerique",
+          "answer": {
+            "value": 24.8,
+            "unit": "m"
+          },
+          "points": 2,
+          "solution_steps": [
+            "Le phare va du sommet de la falaise (87,5 m) jusqu'à son propre sommet (112,3 m).",
+            "Sa hauteur est la différence : on pose 112,3 − 87,5 en alignant les virgules.",
+            "112,3 − 87,5 = 24,8 : le phare mesure **24,8 m** de haut.",
+            "Vérification : 87,5 + 24,8 = 112,3."
+          ],
+          "hint": "Le phare est posé sur la falaise."
+        },
+        {
+          "key": "q3",
+          "skill_id": "B048",
+          "statement": "À quelle altitude le plongeur fait-il son palier de sécurité ?",
+          "type": "numerique",
+          "answer": {
+            "value": -4.5,
+            "unit": "m"
+          },
+          "points": 3,
+          "solution_steps": [
+            "Le plongeur part de l'épave, à l'altitude −32,8 m, et remonte de 28,3 m : (−32,8) + (+28,3).",
+            "Signes contraires : 32,8 − 28,3 = 4,5, et le signe est celui de −32,8.",
+            "(−32,8) + (+28,3) = −4,5 : le palier est à l'altitude **−4,5 m**, soit 4,5 m sous la surface."
+          ],
+          "hint": "Remonter, c'est ajouter un nombre positif."
+        },
+        {
+          "key": "q4",
+          "skill_id": "B048",
+          "statement": "Quelle distance verticale sépare le sommet de la falaise et l'épave ?",
+          "type": "numerique",
+          "answer": {
+            "value": 120.3,
+            "unit": "m"
+          },
+          "points": 3,
+          "solution_steps": [
+            "La distance est l'écart entre les deux altitudes : la plus grande moins la plus petite.",
+            "87,5 − (−32,8) = 87,5 + 32,8.",
+            "87,5 + 32,8 = 120,3 : **120,3 m** séparent le sommet de la falaise et l'épave.",
+            "Attention : 87,5 − 32,8 = 54,7 oublie que l'épave est sous le niveau de la mer."
+          ],
+          "hint": "Un écart se calcule par une soustraction : la plus grande altitude moins la plus petite."
+        },
+        {
+          "key": "q5",
+          "skill_id": "B048",
+          "statement": "À quelle altitude se trouve la deuxième plongeuse quand elle observe le banc de poissons ?",
+          "type": "numerique",
+          "answer": {
+            "value": -24.2,
+            "unit": "m"
+          },
+          "points": 4,
+          "solution_steps": [
+            "Elle part de l'altitude 0 m. Descendre, c'est ajouter un négatif ; remonter, ajouter un positif.",
+            "0 + (−18,4) + (+6,9) + (−12,7) s'écrit −18,4 + 6,9 − 12,7.",
+            "Termes négatifs : −18,4 − 12,7 = −31,1.",
+            "−31,1 + 6,9 = −24,2 : elle est à l'altitude **−24,2 m**."
+          ],
+          "hint": "Écris chaque déplacement avec un signe."
+        }
+      ],
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 4, classe de 5e, Nombres et calculs, Nombres relatifs, Objectifs d'apprentissage : « Résoudre des problèmes mobilisant addition et soustraction de nombres décimaux relatifs. »"
+    },
+    {
+      "id": "SX-B049-01",
+      "skill_id": "B049",
+      "skill_ids": [
+        "B049",
+        "D021"
+      ],
+      "school_level": "4e",
+      "title": "Le quiz du club de sciences",
+      "contexte": "Au quiz de fin d'année du club de sciences, chaque équipe répond à 20 questions en 45 minutes.\n\nUne bonne réponse rapporte 2,5 points. Une mauvaise réponse fait varier le score de −1,25 point. Une question sans réponse rapporte 0 point.\n\nL'équipe de Léo a donné 9 bonnes réponses et 7 mauvaises réponses. Elle n'a pas répondu aux autres questions. Avant le joker, son score est de 13,75 points.\n\nÀ la fin du quiz, chaque équipe peut jouer un joker : il annule 3 de ses mauvaises réponses. Le nombre de mauvaises réponses de l'équipe varie alors de −3, et son score varie en conséquence.\n\nL'équipe gagnante reçoit 3 livres de sciences.",
+      "image": null,
+      "duree_estimee_min": 15,
+      "questions": [
+        {
+          "key": "q1",
+          "skill_id": "B049",
+          "statement": "Quel calcul donne la variation du score de l'équipe de Léo due à ses mauvaises réponses ?",
+          "type": "qcm",
+          "choices": [
+            {
+              "key": "a",
+              "text": "7 × (−1,25)",
+              "misconception": null
+            },
+            {
+              "key": "b",
+              "text": "7 + (−1,25)",
+              "misconception": "Chaque mauvaise réponse ajoute −1,25 : pour 7 mauvaises réponses, on ajoute 7 fois −1,25, c'est une multiplication."
+            },
+            {
+              "key": "c",
+              "text": "7 × 1,25",
+              "misconception": "Une mauvaise réponse fait baisser le score : la variation est négative."
+            },
+            {
+              "key": "d",
+              "text": "9 × (−1,25)",
+              "misconception": "9 est le nombre de bonnes réponses, pas de mauvaises."
+            }
+          ],
+          "answer": {
+            "value": "a"
+          },
+          "points": 1,
+          "solution_steps": [
+            "Chaque mauvaise réponse fait varier le score de −1,25. L'équipe en a 7.",
+            "La variation est (−1,25) + (−1,25) + … sept fois, c'est-à-dire **7 × (−1,25)**."
+          ],
+          "hint": "Relis la phrase qui parle des mauvaises réponses."
+        },
+        {
+          "key": "q2",
+          "skill_id": "D021",
+          "statement": "Combien de points les bonnes réponses ont-elles rapportés à l'équipe de Léo ?",
+          "type": "numerique",
+          "answer": {
+            "value": 22.5,
+            "unit": "points"
+          },
+          "points": 2,
+          "solution_steps": [
+            "9 bonnes réponses à 2,5 points : 9 × 2,5.",
+            "9 × 25 = 225 ; 2,5 a un chiffre après la virgule, le résultat aussi : 22,5.",
+            "Les bonnes réponses rapportent **22,5 points**."
+          ],
+          "hint": "Calcule 9 × 25, puis place la virgule."
+        },
+        {
+          "key": "q3",
+          "skill_id": "B049",
+          "statement": "De combien les mauvaises réponses ont-elles fait varier le score de l'équipe de Léo ?",
+          "type": "numerique",
+          "answer": {
+            "value": -8.75,
+            "unit": "points"
+          },
+          "points": 3,
+          "solution_steps": [
+            "La variation est 7 × (−1,25), une addition répétée : (−1,25) sept fois.",
+            "Un facteur positif et un facteur négatif : le produit est négatif.",
+            "7 × 1,25 = 8,75, donc 7 × (−1,25) = −8,75.",
+            "Les mauvaises réponses ont fait varier le score de **−8,75 points**."
+          ],
+          "hint": "Pense au signe avant de calculer."
+        },
+        {
+          "key": "q4",
+          "skill_id": "B049",
+          "statement": "Si l'équipe de Léo joue son joker, de combien son score varie-t-il ?",
+          "type": "numerique",
+          "answer": {
+            "value": 3.75,
+            "unit": "points"
+          },
+          "points": 4,
+          "solution_steps": [
+            "Le nombre de mauvaises réponses varie de −3, et chaque mauvaise réponse fait varier le score de −1,25.",
+            "La variation du score est le produit (−3) × (−1,25).",
+            "Deux facteurs de même signe : le produit est positif. 3 × 1,25 = 3,75.",
+            "(−3) × (−1,25) = 3,75 : le score augmente de **3,75 points**.",
+            "C'est logique : le joker efface 3 pénalités de 1,25 point. Trouver −3,75 serait appliquer la règle de l'addition au produit."
+          ],
+          "hint": "Quel est le signe du produit de deux nombres négatifs ?"
+        }
+      ],
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 4, classe de 4e, Nombres et calculs, Opérations sur les nombres relatifs, Objectifs d'apprentissage : « Multiplier deux nombres relatifs : d'abord dans le cas où un seul des facteurs est négatif, puis, grâce à la distributivité, dans le cas où les deux facteurs sont négatifs. »"
+    },
+    {
+      "id": "SX-B050-01",
+      "skill_id": "B050",
+      "skill_ids": [
+        "B050",
+        "B049",
+        "D007"
+      ],
+      "school_level": "4e",
+      "title": "Le suivi du glacier",
+      "contexte": "Des glaciologues suivent un glacier des Alpes, long d'environ 7 km. Dans leurs relevés, une diminution est notée par un nombre négatif.\n\nAu point de mesure A, situé à 2 650 m d'altitude, l'épaisseur de la glace a varié de −14,4 m entre 2016 et 2024, c'est-à-dire en 8 ans.\n\nLe front du glacier, c'est-à-dire son extrémité, recule régulièrement : la longueur du glacier varie de −9 m chaque année.\n\nPrès du glacier, une station météo a relevé 31,5 mm de pluie en 6 heures, lors d'un orage d'été.\n\nPour ralentir la fonte, une partie du glacier est couverte, l'été, de grandes bâches blanches.",
+      "image": null,
+      "duree_estimee_min": 15,
+      "questions": [
+        {
+          "key": "q1",
+          "skill_id": "B050",
+          "statement": "Quel calcul donne la variation moyenne de l'épaisseur de la glace en un an, au point A ?",
+          "type": "qcm",
+          "choices": [
+            {
+              "key": "a",
+              "text": "(−14,4) × 8",
+              "misconception": "Pour répartir une variation sur 8 ans, on divise par 8, on ne multiplie pas."
+            },
+            {
+              "key": "b",
+              "text": "(−14,4) ÷ 8",
+              "misconception": null
+            },
+            {
+              "key": "c",
+              "text": "8 ÷ (−14,4)",
+              "misconception": "On divise la variation par le nombre d'années, pas le nombre d'années par la variation."
+            },
+            {
+              "key": "d",
+              "text": "(−14,4) − 8",
+              "misconception": "Retirer 8 ne répartit pas la variation entre les 8 années."
+            }
+          ],
+          "answer": {
+            "value": "b"
+          },
+          "points": 1,
+          "solution_steps": [
+            "La variation de −14,4 m s'est faite en 8 ans.",
+            "Pour la variation moyenne en un an, on partage en 8 : **(−14,4) ÷ 8**."
+          ],
+          "hint": "Relis la phrase qui parle du point A."
+        },
+        {
+          "key": "q2",
+          "skill_id": "B050",
+          "statement": "Quelle a été la variation moyenne de l'épaisseur de la glace en un an, au point A ?",
+          "type": "numerique",
+          "answer": {
+            "value": -1.8,
+            "unit": "m"
+          },
+          "points": 3,
+          "solution_steps": [
+            "On calcule (−14,4) ÷ 8.",
+            "Un nombre négatif divisé par un nombre positif : le quotient est négatif.",
+            "14,4 ÷ 8 = 1,8, car 8 × 1,8 = 14,4.",
+            "La variation moyenne est de **−1,8 m** par an."
+          ],
+          "hint": "Décide du signe, puis divise les distances à zéro."
+        },
+        {
+          "key": "q3",
+          "skill_id": "B049",
+          "statement": "À ce rythme, de combien la longueur du glacier variera-t-elle en 7 ans ?",
+          "type": "numerique",
+          "answer": {
+            "value": -63,
+            "unit": "m"
+          },
+          "points": 2,
+          "solution_steps": [
+            "Chaque année, la longueur varie de −9 m. En 7 ans : 7 × (−9).",
+            "Un facteur positif, un facteur négatif : le produit est négatif. 7 × 9 = 63.",
+            "La longueur variera de **−63 m** : le glacier raccourcira de 63 m."
+          ],
+          "hint": null
+        },
+        {
+          "key": "q4",
+          "skill_id": "D007",
+          "statement": "Combien de millimètres de pluie sont tombés en moyenne par heure pendant l'orage ?",
+          "type": "numerique",
+          "answer": {
+            "value": 5.25,
+            "unit": "mm"
+          },
+          "points": 2,
+          "solution_steps": [
+            "31,5 mm en 6 heures : on pose la division 31,5 ÷ 6.",
+            "31 ÷ 6 : 5, reste 1. On abaisse le 5 des dixièmes : 15 dixièmes ÷ 6 = 2 dixièmes, reste 3 dixièmes.",
+            "On continue : 30 centièmes ÷ 6 = 5 centièmes, reste 0.",
+            "31,5 ÷ 6 = 5,25 : il est tombé en moyenne **5,25 mm** par heure."
+          ],
+          "hint": "Continue la division après la virgule jusqu'à un reste nul."
+        },
+        {
+          "key": "q5",
+          "skill_id": "B050",
+          "statement": "À ce rythme, en combien d'années la longueur du glacier aura-t-elle varié de −58,5 m ?",
+          "type": "numerique",
+          "answer": {
+            "value": 6.5,
+            "unit": "ans",
+            "accepted": [
+              "6,5 années",
+              "6 ans et demi",
+              "6 ans 1/2"
+            ]
+          },
+          "points": 4,
+          "solution_steps": [
+            "On cherche le nombre d'années qui, multiplié par −9, donne −58,5 : … × (−9) = −58,5.",
+            "Ce facteur manquant est le quotient (−58,5) ÷ (−9).",
+            "Deux nombres de même signe : le quotient est positif. 58,5 ÷ 9 = 6,5.",
+            "Il faudra **6,5 ans**, soit six ans et demi.",
+            "Vérification : 6,5 × (−9) = −58,5."
+          ],
+          "hint": "Écris une multiplication à trou."
+        }
+      ],
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 4, classe de 4e, Nombres et calculs, Opérations sur les nombres relatifs, Objectifs d'apprentissage : « Diviser deux nombres relatifs. »"
+    },
+    {
+      "id": "SX-B051-01",
+      "skill_id": "B051",
+      "skill_ids": [
+        "B051",
+        "D007"
+      ],
+      "school_level": "4e",
+      "title": "Les températures de Minneapolis",
+      "contexte": "Lucas correspond avec Emily, une élève de Minneapolis, aux États-Unis. Là-bas, les températures sont données en degrés Fahrenheit. Minneapolis compte environ 425 000 habitants.\n\nPour passer des degrés Fahrenheit aux degrés Celsius, Emily lui envoie ce programme de calcul :\nchoisir la température en degrés Fahrenheit ;\nlui soustraire 32 ;\nmultiplier le résultat par 5 ;\ndiviser le résultat par 9.\n\nMardi matin, le thermomètre d'Emily indiquait 14 degrés Fahrenheit. Mardi soir, il indiquait −13 degrés Fahrenheit.\n\nPendant la tempête de mercredi, il est tombé 37,6 cm de neige en 8 heures à Minneapolis.",
+      "image": null,
+      "duree_estimee_min": 15,
+      "questions": [
+        {
+          "key": "q1",
+          "skill_id": "B051",
+          "statement": "Quelle expression traduit le programme de calcul pour la température de mardi matin ?",
+          "type": "qcm",
+          "choices": [
+            {
+              "key": "a",
+              "text": "14 − 32 × 5 ÷ 9",
+              "misconception": "Sans parenthèses, la multiplication passe avant la soustraction : ce calcul ne retire pas 32 en premier."
+            },
+            {
+              "key": "b",
+              "text": "(14 − 32) × 5 ÷ 9",
+              "misconception": null
+            },
+            {
+              "key": "c",
+              "text": "(32 − 14) × 5 ÷ 9",
+              "misconception": "Le programme soustrait 32 au nombre choisi : on calcule 14 − 32, pas 32 − 14."
+            },
+            {
+              "key": "d",
+              "text": "14 × 5 − 32 ÷ 9",
+              "misconception": "Les étapes du programme ne sont pas dans cet ordre : on soustrait 32 d'abord."
+            }
+          ],
+          "answer": {
+            "value": "b"
+          },
+          "points": 1,
+          "solution_steps": [
+            "On choisit 14, on soustrait 32 : 14 − 32. Pour multiplier ce résultat par 5, il faut des parenthèses : (14 − 32) × 5.",
+            "Puis on divise par 9 : **(14 − 32) × 5 ÷ 9**."
+          ],
+          "hint": "Relis les étapes du programme, dans l'ordre."
+        },
+        {
+          "key": "q2",
+          "skill_id": "B051",
+          "statement": "Quelle température faisait-il mardi matin, en degrés Celsius ?",
+          "type": "numerique",
+          "answer": {
+            "value": -10,
+            "unit": "°C"
+          },
+          "points": 3,
+          "solution_steps": [
+            "On calcule (14 − 32) × 5 ÷ 9, en commençant par les parenthèses.",
+            "14 − 32 = −18.",
+            "(−18) × 5 = −90 : signes contraires, produit négatif.",
+            "(−90) ÷ 9 = −10 : il faisait **−10 °C** mardi matin."
+          ],
+          "hint": "Commence par le calcul entre parenthèses."
+        },
+        {
+          "key": "q3",
+          "skill_id": "B051",
+          "statement": "Quelle température faisait-il mardi soir, en degrés Celsius ?",
+          "type": "numerique",
+          "answer": {
+            "value": -25,
+            "unit": "°C"
+          },
+          "points": 4,
+          "solution_steps": [
+            "On applique le programme à −13 : (−13 − 32) × 5 ÷ 9.",
+            "−13 − 32 = −45 : on ajoute deux négatifs, la somme est négative.",
+            "(−45) × 5 = −225.",
+            "(−225) ÷ 9 = −25 : il faisait **−25 °C** mardi soir.",
+            "Attention : −13 − 32 ne vaut pas 45 ; la règle des signes du produit ne s'applique pas à une somme."
+          ],
+          "hint": "Le nombre choisi est négatif : écris-le entre parenthèses."
+        },
+        {
+          "key": "q4",
+          "skill_id": "B051",
+          "statement": "Comment s'appelle l'expression (−13 − 32) × 5 ÷ 9 ?",
+          "type": "qcm",
+          "choices": [
+            {
+              "key": "a",
+              "text": "Une différence",
+              "misconception": "La soustraction est faite en premier, entre parenthèses : ce n'est pas la dernière opération."
+            },
+            {
+              "key": "b",
+              "text": "Un produit",
+              "misconception": "Après la multiplication par 5, on divise encore par 9 : la multiplication n'est pas la dernière opération."
+            },
+            {
+              "key": "c",
+              "text": "Un quotient",
+              "misconception": null
+            },
+            {
+              "key": "d",
+              "text": "Une somme",
+              "misconception": "Aucune addition n'est faite en dernier dans cette expression."
+            }
+          ],
+          "answer": {
+            "value": "c"
+          },
+          "points": 2,
+          "solution_steps": [
+            "Le nom d'une expression vient de sa dernière opération.",
+            "On calcule d'abord la parenthèse, puis la multiplication par 5, et en dernier la division par 9.",
+            "La dernière opération est une division : c'est **un quotient**."
+          ],
+          "hint": "Quelle opération fait-on en dernier ?"
+        },
+        {
+          "key": "q5",
+          "skill_id": "D007",
+          "statement": "En moyenne, combien de centimètres de neige sont tombés par heure pendant la tempête de mercredi ?",
+          "type": "numerique",
+          "answer": {
+            "value": 4.7,
+            "unit": "cm"
+          },
+          "points": 2,
+          "solution_steps": [
+            "37,6 cm en 8 heures : on pose la division 37,6 ÷ 8.",
+            "37 ÷ 8 : 4, reste 5. On abaisse le 6 des dixièmes : 56 dixièmes ÷ 8 = 7 dixièmes, reste 0.",
+            "37,6 ÷ 8 = 4,7 : il est tombé en moyenne **4,7 cm** de neige par heure."
+          ],
+          "hint": null
+        }
+      ],
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 4, classe de 4e, Nombres et calculs, Opérations sur les nombres relatifs, Objectifs d'apprentissage : « Savoir calculer un enchainement d'opérations avec des nombres relatifs. »"
+    },
+    {
+      "id": "SX-B052-01",
+      "skill_id": "B052",
+      "skill_ids": [
+        "B052",
+        "A029"
+      ],
+      "school_level": "5e",
+      "title": "Le jardin de M. Diallo",
+      "contexte": "M. Diallo aménage son jardin, qui mesure 25 m de long.\n\nIl pose une terrasse carrée de 8 m de côté. Au centre de la terrasse, il laisse un carré de 2 m de côté sans dalles, pour planter un olivier. Tout le reste de la terrasse est couvert de dalles.\n\nAu fond du jardin, il fabrique un bac à compost en bois, en forme de cube de 11 dm d'arête. Le bac n'a ni fond ni couvercle : seules ses faces latérales, sur les côtés, sont en bois. M. Diallo veut peindre l'extérieur de toutes ces faces.\n\nPour ses plantations, il a acheté 5 sacs de terreau de 40 litres.",
+      "image": null,
+      "duree_estimee_min": 15,
+      "questions": [
+        {
+          "key": "q1",
+          "skill_id": "B052",
+          "statement": "Quelle expression donne l'aire, en m², de la partie de la terrasse couverte de dalles ?",
+          "type": "qcm",
+          "choices": [
+            {
+              "key": "a",
+              "text": "8² − 2²",
+              "misconception": null
+            },
+            {
+              "key": "b",
+              "text": "(8 − 2)²",
+              "misconception": "L'élève retire le côté du petit carré au côté de la terrasse : on obtient l'aire d'un carré de 6 m de côté, pas celle de la terrasse privée du petit carré."
+            },
+            {
+              "key": "c",
+              "text": "8 × 2 − 2 × 2",
+              "misconception": "L'élève lit l'exposant comme un facteur : 8² = 8 × 8, pas 8 × 2."
+            },
+            {
+              "key": "d",
+              "text": "8² + 2²",
+              "misconception": "Le carré de l'olivier n'est pas couvert de dalles : on retire son aire, on ne l'ajoute pas."
+            }
+          ],
+          "answer": {
+            "value": "a"
+          },
+          "points": 1,
+          "solution_steps": [
+            "L'aire de la terrasse est celle d'un carré de 8 m de côté : 8² m².",
+            "On retire l'aire du carré de l'olivier, de 2 m de côté : 2² m².",
+            "L'aire couverte de dalles est **8² − 2²** m²."
+          ],
+          "hint": "Une partie de la terrasse n'est pas couverte de dalles."
+        },
+        {
+          "key": "q2",
+          "skill_id": "A029",
+          "statement": "Quel est le volume du bac à compost, en dm³ ?",
+          "type": "numerique",
+          "answer": {
+            "value": 1331,
+            "unit": "dm³"
+          },
+          "points": 2,
+          "solution_steps": [
+            "Le volume d'un cube d'arête 11 dm est 11³ dm³, le cube de 11.",
+            "11³ = 11 × 11 × 11 = 121 × 11 = 1 331.",
+            "Le bac a un volume de **1 331 dm³**.",
+            "Attention : 11³ n'est pas 11 × 3 = 33."
+          ],
+          "hint": "Le cube d'un nombre est le produit de trois facteurs égaux à ce nombre."
+        },
+        {
+          "key": "q3",
+          "skill_id": "B052",
+          "statement": "Quelle est l'aire, en m², de la partie de la terrasse couverte de dalles ?",
+          "type": "numerique",
+          "answer": {
+            "value": 60,
+            "unit": "m²"
+          },
+          "points": 3,
+          "solution_steps": [
+            "On calcule 8² − 2² : les puissances d'abord, puis la soustraction.",
+            "8² = 64 et 2² = 4.",
+            "64 − 4 = 60 : les dalles couvrent **60 m²**.",
+            "Attention : (8 − 2)² = 36 n'est pas le même calcul."
+          ],
+          "hint": "Calcule les carrés avant la soustraction."
+        },
+        {
+          "key": "q4",
+          "skill_id": "B052",
+          "statement": "Quelle est l'aire totale, en dm², des faces que M. Diallo va peindre ?",
+          "type": "numerique",
+          "answer": {
+            "value": 484,
+            "unit": "dm²"
+          },
+          "points": 4,
+          "solution_steps": [
+            "Un cube a 6 faces. Sans fond ni couvercle, il reste 6 − 2 = 4 faces latérales à peindre.",
+            "Chaque face est un carré de 11 dm de côté : son aire est 11² dm². L'aire totale est 4 × 11².",
+            "On calcule la puissance avant le produit : 11² = 121, puis 4 × 121 = 484.",
+            "M. Diallo va peindre **484 dm²**.",
+            "Attention : (4 × 11)² = 44² = 1 936 applique le carré à tout le produit, et 6 faces compteraient le fond et le couvercle, qui n'existent pas."
+          ],
+          "hint": "Le bac n'a ni fond ni couvercle en bois."
+        }
+      ],
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 4, classe de 5e, Nombres et calculs, Puissances, Objectifs d'apprentissage : « Calculer la valeur numérique d'expressions contenant des puissances simples, additions, soustractions et produits. »"
+    },
+    {
+      "id": "SX-B053-01",
+      "skill_id": "B053",
+      "skill_ids": [
+        "B053",
+        "A029"
+      ],
+      "school_level": "4e",
+      "title": "Le mur d'écrans du concert",
+      "contexte": "Pour un concert, une salle de spectacle installe un mur d'écrans en forme de carré. Le mur est formé de petits écrans carrés, tous identiques, posés côte à côte : il y a 20 petits écrans sur chaque côté du mur, donc 20² petits écrans en tout.\n\nChaque petit écran est lui-même un carré de lampes LED : il y a 50 LED sur chaque côté d'un petit écran, donc 50² LED par écran.\n\nUn petit écran mesure 48 cm de côté et pèse 7 kg. La salle peut accueillir 3 500 spectateurs.\n\nPour un festival en plein air, l'équipe technique construira un mur plus grand, lui aussi carré, avec les mêmes petits écrans : 40 petits écrans sur chaque côté.",
+      "image": null,
+      "duree_estimee_min": 15,
+      "questions": [
+        {
+          "key": "q1",
+          "skill_id": "B053",
+          "statement": "Combien de LED y a-t-il sur un côté du mur du concert ?",
+          "type": "qcm",
+          "choices": [
+            {
+              "key": "a",
+              "text": "70",
+              "misconception": "L'élève additionne 20 et 50 : or chacun des 20 écrans d'un côté apporte 50 LED, c'est 20 × 50."
+            },
+            {
+              "key": "b",
+              "text": "1 000",
+              "misconception": null
+            },
+            {
+              "key": "c",
+              "text": "400",
+              "misconception": "400 = 20², c'est le nombre de petits écrans du mur, pas le nombre de LED sur un côté."
+            },
+            {
+              "key": "d",
+              "text": "50",
+              "misconception": "50 LED, c'est le côté d'un seul petit écran."
+            }
+          ],
+          "answer": {
+            "value": "b"
+          },
+          "points": 1,
+          "solution_steps": [
+            "Un côté du mur aligne 20 petits écrans, et chacun a 50 LED sur son côté.",
+            "20 × 50 = 1 000 : il y a **1 000 LED** sur un côté du mur."
+          ],
+          "hint": "Combien de petits écrans y a-t-il le long d'un côté du mur ?"
+        },
+        {
+          "key": "q2",
+          "skill_id": "A029",
+          "statement": "Combien de LED contient un petit écran ?",
+          "type": "numerique",
+          "answer": {
+            "value": 2500,
+            "unit": "LED"
+          },
+          "points": 2,
+          "solution_steps": [
+            "Un petit écran contient 50² LED.",
+            "50² = 50 × 50 = 2 500.",
+            "Un petit écran contient **2 500 LED**.",
+            "Attention : 50² n'est pas 50 × 2 = 100."
+          ],
+          "hint": null
+        },
+        {
+          "key": "q3",
+          "skill_id": "B053",
+          "statement": "Combien de LED contient le mur du concert ? Calcule sans calculatrice.",
+          "type": "numerique",
+          "answer": {
+            "value": 1000000,
+            "unit": "LED"
+          },
+          "points": 3,
+          "solution_steps": [
+            "Le mur contient 20² écrans de 50² LED : 20² × 50².",
+            "On regroupe les facteurs par paires : 20² × 50² = (20 × 50)² = 1 000².",
+            "1 000² = 1 000 × 1 000 = 1 000 000.",
+            "Le mur contient **1 000 000 LED**. Vérification : 400 × 2 500 = 1 000 000."
+          ],
+          "hint": "Les deux puissances ont le même exposant."
+        },
+        {
+          "key": "q4",
+          "skill_id": "B053",
+          "statement": "Combien de LED contiendra le mur du festival ?",
+          "type": "numerique",
+          "answer": {
+            "value": 4000000,
+            "unit": "LED"
+          },
+          "points": 4,
+          "solution_steps": [
+            "Le mur du festival a 40 écrans sur chaque côté : 40² écrans, de 50² LED chacun.",
+            "40² × 50² = (40 × 50)² = 2 000².",
+            "2 000² = 2 000 × 2 000 = 4 000 000.",
+            "Le mur du festival contiendra **4 000 000 LED**.",
+            "Attention : on garde l'exposant 2 ; écrire 2 000⁴ en ajoutant les exposants serait faux."
+          ],
+          "hint": "Regroupe d'abord 40 et 50."
+        }
+      ],
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 4, classe de 4e, Nombres et calculs, Puissances, Objectifs d'apprentissage : « Multiplier des puissances d'un même exposant entier naturel de deux nombres entre elles. »"
+    },
     {
       "id": "SX-C004-01",
       "skill_id": "C004",
