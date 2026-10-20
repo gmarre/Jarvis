@@ -72,6 +72,9 @@ Toutes celles de la consigne des rédacteurs d'exercices s'appliquent : `Spécif
 - **Barème** : la question qui porte la compétence vaut le plus de points.
 - **CP et CE1** : 3 questions, 5 à 10 minutes, contexte de 80 à 120 mots, phrases courtes, nombres dans le champ de la classe.
 
+## Compétences sans super exercice
+Une compétence dont la chaîne de prérequis compte moins d'une autre compétence (A001 compter, par exemple) ne peut pas faire converger deux notions : **ne lui écris pas de super exercice**, et liste-la dans ta réponse finale avec la raison. Le schéma exige au moins deux compétences dans `skill_ids`.
+
 ## À lire avant d'écrire
 - Pour la porteuse et chaque compétence mobilisée : sa fiche (`content\dag\<domaine>.json`), ses exercices (`content\exercices\<domaine>\<id>.json`) et sa carte mentale (`content\cartes\`), pour le vocabulaire et les erreurs classiques.
 - Le schéma `schemas\super.schema.json`.
