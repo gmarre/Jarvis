@@ -119,7 +119,18 @@
               "minimum": 0,
               "description": "Ecart tolere pour une reponse numerique approchee."
             },
-            "unit": { "type": ["string", "null"] }
+            "unit": { "type": ["string", "null"] },
+            "forme": {
+              "type": "string",
+              "enum": ["expression", "reduite", "developpee", "factorisee", "meme_calcul", "equation", "inegalite", "solutions"],
+              "description": "Reponse texte lue comme de l'algebre (etape 7, correction.ts) : expression (toute ecriture equivalente), reduite ou developpee (somme de termes distincts, sans parenthese), factorisee (un produit), meme_calcul (calcul numerique : memes nombres, meme valeur), equation (memes solutions), inegalite (x op k), solutions (liste en ordre libre, ±, aucune solution). Absent : comparaison du texte normalise."
+            },
+            "variables": {
+              "type": "array",
+              "uniqueItems": true,
+              "items": { "type": "string", "pattern": "^[a-z]$" },
+              "description": "Lettres de l'expression, par defaut [\"x\"]. Une autre lettre est refusee ; x absent de la liste se lit comme le signe fois."
+            }
           }
         },
 

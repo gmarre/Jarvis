@@ -3,6 +3,8 @@
 // Regle : on ne change pas ces types sans changer le schema en face, sinon le
 // contrat d'interface qui permet de travailler en parallele saute.
 
+import type { FormeAttendue } from '../../supabase/functions/_shared/correction'
+
 /** Niveaux scolaires, du CP a la Terminale, dans l'ordre du cursus. */
 export const SCHOOL_LEVELS = [
   'CP',
@@ -83,6 +85,10 @@ export interface ExerciseAnswer {
   /** Ecart tolere pour une reponse numerique approchee. */
   tolerance?: number
   unit?: string | null
+  /** Reponse texte lue comme de l'algebre (etape 7, correction.ts). */
+  forme?: FormeAttendue
+  /** Lettres de l'expression, par defaut ["x"]. */
+  variables?: string[]
 }
 
 export interface Exercise {

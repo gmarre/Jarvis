@@ -17,11 +17,25 @@ export interface ChoixACorriger {
   misconception: string | null
 }
 
+/** Reponse texte lue comme de l'algebre (etape 7). Voir « Algebre » plus bas. */
+export type FormeAttendue =
+  | 'expression'
+  | 'reduite'
+  | 'developpee'
+  | 'factorisee'
+  | 'meme_calcul'
+  | 'equation'
+  | 'inegalite'
+  | 'solutions'
+
 export interface ReponseAttendue {
   value: string | number | boolean
   accepted?: (string | number)[]
   tolerance?: number
   unit?: string | null
+  forme?: FormeAttendue
+  /** Lettres de l'expression, par defaut ["x"]. */
+  variables?: string[]
 }
 
 export interface ExerciceACorriger {
@@ -285,6 +299,420 @@ function fractionSignee(value: string): string | null {
   return `${signe < 0 ? '-' : ''}${morceaux[2]}/${morceaux[4]}`
 }
 
+// =============================================================================
+// Algebre (etape 7) : expressions, equations, inegalites, listes de solutions
+// =============================================================================
+//
+// Une reponse de type texte avec `answer.forme` est lue comme de l'algebre,
+// pas comme un texte : « 5 + 3x », « 3*x+5 » et « 3 × x + 5 » valent « 3x + 5 ».
+// Deux ecritures sont equivalentes si elles prennent la meme valeur en huit
+// valeurs de chaque lettre (exact pour les polynomes du college, de degre au
+// plus 5). La forme demandee (reduite, factorisee...) se controle ensuite sur
+// l'arbre de l'expression. Rien n'est jamais devine : « 3x2 » (x² ? x × 2 ?)
+// est refuse.
+
+type Noeud =
+  | { t: 'num'; v: number }
+  | { t: 'var'; nom: string }
+  | { t: 'neg'; e: Noeud }
+  | { t: 'racine'; e: Noeud }
+  | { t: '+' | '-' | '*' | '/' | '^'; g: Noeud; d: Noeud }
+
+const RACINE = car(0x221a)
+const PLUS_OU_MOINS = car(0xb1)
+const ENSEMBLE_VIDE = car(0x2205)
+const INFERIEUR_OU_EGAL = [car(0x2264), car(0x2a7d)]
+const SUPERIEUR_OU_EGAL = [car(0x2265), car(0x2a7e)]
+const EXPOSANT_PARTOUT = new RegExp(`${MOINS_EXPOSANT}?[${CHIFFRES_EXPOSANTS.join('')}]+`, 'g')
+
+/** Ecriture ramenee a l'ASCII, sans espace : * pour fois, ^ pour l'exposant, √ pour la racine. */
+function texteAlgebrique(raw: string): string {
+  return raw
+    .trim()
+    .toLowerCase()
+    .normalize('NFD')
+    .replace(DIACRITIQUES, '')
+    .replace(MOINS_VARIANTS, '-')
+    // En algebre, un exposant suit aussi une lettre : x² est un carre.
+    .replace(EXPOSANT_PARTOUT, (bloc) =>
+      '^' +
+      [...bloc].map((c) => (c === MOINS_EXPOSANT ? '-' : String(CHIFFRES_EXPOSANTS.indexOf(c)))).join(''),
+    )
+    .replace(/\*\*/g, '^')
+    .replace(AUTRES_FOIS, '*')
+    .replace(new RegExp(FOIS, 'g'), '*')
+    .replace(DIVISE, '/')
+    .replace(/racine\s*(carree\s*)?(de\s*)?/g, RACINE)
+    .replace(ESPACES_SPECIALES, ' ')
+    .replace(/\s+/g, '')
+    .replace(/(?<=\d),(?=\d)/g, '.')
+}
+
+/**
+ * Arbre d'une expression, ou null si l'ecriture n'est pas lisible. Une lettre
+ * absente de `variables` refuse l'ecriture, sauf x qui se lit alors comme le
+ * signe fois (calcul numerique : « (7 + 5) x 3 »).
+ */
+function lireExpression(texte: string, variables: string[]): Noeud | null {
+  const s = variables.includes('x') ? texte : texte.replace(/x/g, '*')
+  let i = 0
+  const voir = (): string | undefined => s[i]
+  const debutFacteur = (c: string | undefined) =>
+    c !== undefined && (/[\d(]/.test(c) || c === RACINE || variables.includes(c))
+
+  function primaire(): Noeud | null {
+    const c = voir()
+    if (c === undefined) return null
+    if (/\d/.test(c)) {
+      const m = /^\d+(?:\.\d+)?/.exec(s.slice(i)) as RegExpExecArray
+      i += m[0].length
+      return { t: 'num', v: Number(m[0]) }
+    }
+    if (c === '(') {
+      i += 1
+      const e = somme()
+      if (e === null || voir() !== ')') return null
+      i += 1
+      return e
+    }
+    if (c === RACINE) {
+      i += 1
+      const e = puissance()
+      return e ? { t: 'racine', e } : null
+    }
+    if (variables.includes(c)) {
+      i += 1
+      return { t: 'var', nom: c }
+    }
+    return null
+  }
+
+  function puissance(): Noeud | null {
+    const base = primaire()
+    if (!base || voir() !== '^') return base
+    i += 1
+    let negatif = false
+    if (voir() === '-') {
+      negatif = true
+      i += 1
+    }
+    const exposant = primaire()
+    if (!exposant) return null
+    return { t: '^', g: base, d: negatif ? { t: 'neg', e: exposant } : exposant }
+  }
+
+  function unaire(): Noeud | null {
+    if (voir() === '-') {
+      i += 1
+      const e = unaire()
+      return e ? { t: 'neg', e } : null
+    }
+    if (voir() === '+') {
+      i += 1
+      return unaire()
+    }
+    return puissance()
+  }
+
+  function produit(): Noeud | null {
+    let g = unaire()
+    while (g) {
+      const c = voir()
+      if (c === '*' || c === '/') {
+        i += 1
+        const d = unaire()
+        if (!d) return null
+        g = { t: c, g, d }
+      } else if (debutFacteur(c)) {
+        // « x2 », « (x+1)2 » : un chiffre colle apres une lettre ou une
+        // parenthese est ambigu. Refuse, jamais devine.
+        if (/\d/.test(c as string)) return null
+        const d = puissance()
+        if (!d) return null
+        g = { t: '*', g, d }
+      } else {
+        return g
+      }
+    }
+    return null
+  }
+
+  function somme(): Noeud | null {
+    let g = produit()
+    while (g && (voir() === '+' || voir() === '-')) {
+      const op = voir() as '+' | '-'
+      i += 1
+      const d = produit()
+      if (!d) return null
+      g = { t: op, g, d }
+    }
+    return g
+  }
+
+  const arbre = somme()
+  return arbre && i === s.length ? arbre : null
+}
+
+function evaluer(n: Noeud, valeurs: Record<string, number>): number {
+  switch (n.t) {
+    case 'num':
+      return n.v
+    case 'var':
+      return valeurs[n.nom]
+    case 'neg':
+      return -evaluer(n.e, valeurs)
+    case 'racine':
+      return Math.sqrt(evaluer(n.e, valeurs))
+    case '+':
+      return evaluer(n.g, valeurs) + evaluer(n.d, valeurs)
+    case '-':
+      return evaluer(n.g, valeurs) - evaluer(n.d, valeurs)
+    case '*':
+      return evaluer(n.g, valeurs) * evaluer(n.d, valeurs)
+    case '/':
+      return evaluer(n.g, valeurs) / evaluer(n.d, valeurs)
+    case '^':
+      return Math.pow(evaluer(n.g, valeurs), evaluer(n.d, valeurs))
+  }
+}
+
+function egaux(a: number, b: number, tolerance = 0): boolean {
+  return Math.abs(a - b) <= tolerance + 1e-9 * Math.max(1, Math.abs(a), Math.abs(b))
+}
+
+/** Valeurs d'essai : ni 0 ni 1 seuls, pour ne pas confondre x et x², ni 2x et x + 2. */
+const POINTS = [-3, -1.5, -0.5, 0.25, 1, 2, 3.5, 7]
+
+/** Meme valeur partout (au signe pres si `signe` vaut -1). */
+function equivalentes(a: Noeud, b: Noeud, variables: string[], signe = 1): boolean {
+  let essais = 0
+  for (let k = 0; k < POINTS.length; k++) {
+    const valeurs: Record<string, number> = {}
+    variables.forEach((v, j) => {
+      valeurs[v] = POINTS[(k + 3 * j) % POINTS.length] + 0.37 * j
+    })
+    const va = evaluer(a, valeurs)
+    const vb = signe * evaluer(b, valeurs)
+    if (!Number.isFinite(va) && !Number.isFinite(vb)) continue
+    if (!egaux(va, vb)) return false
+    essais += 1
+  }
+  return essais >= 4
+}
+
+function lettresDe(n: Noeud): Set<string> {
+  switch (n.t) {
+    case 'num':
+      return new Set()
+    case 'var':
+      return new Set([n.nom])
+    case 'neg':
+    case 'racine':
+      return lettresDe(n.e)
+    default:
+      return new Set([...lettresDe(n.g), ...lettresDe(n.d)])
+  }
+}
+
+function nombresDe(n: Noeud): number[] {
+  switch (n.t) {
+    case 'num':
+      return [n.v]
+    case 'var':
+      return []
+    case 'neg':
+    case 'racine':
+      return nombresDe(n.e)
+    default:
+      return [...nombresDe(n.g), ...nombresDe(n.d)]
+  }
+}
+
+/** Termes d'une somme, avec leur signe : 2x − (−3) donne [+2x, −(−3)]. */
+function termes(n: Noeud, signe = 1, sortie: { signe: number; n: Noeud }[] = []) {
+  if (n.t === '+') {
+    termes(n.g, signe, sortie)
+    termes(n.d, signe, sortie)
+  } else if (n.t === '-') {
+    termes(n.g, signe, sortie)
+    termes(n.d, -signe, sortie)
+  } else if (n.t === 'neg') {
+    termes(n.e, -signe, sortie)
+  } else {
+    sortie.push({ signe, n })
+  }
+  return sortie
+}
+
+/** Facteurs d'un produit ; le signe ne compte pas dans sa structure (−2x a pour facteurs 2 et x). */
+function facteurs(n: Noeud): Noeud[] {
+  if (n.t === 'neg') return facteurs(n.e)
+  return n.t === '*' ? [...facteurs(n.g), ...facteurs(n.d)] : [n]
+}
+
+const estNombre = (n: Noeud) => n.t === 'num' || (n.t === '/' && n.g.t === 'num' && n.d.t === 'num')
+
+/**
+ * Signature d'un monome reduit (« x^2 », « x^1*y^1 », « 1 » pour une
+ * constante), ou null : deux coefficients (3 × 2x), une lettre repetee (x × x),
+ * une parenthese.
+ */
+function monome(n: Noeud): string | null {
+  let coefficients = 0
+  const puissances = new Map<string, number>()
+  const ajouter = (lettre: string, exposant: number) => {
+    if (puissances.has(lettre)) return false
+    puissances.set(lettre, exposant)
+    return true
+  }
+  for (const f of facteurs(n)) {
+    if (estNombre(f)) {
+      coefficients += 1
+    } else if (f.t === 'var') {
+      if (!ajouter(f.nom, 1)) return null
+    } else if (f.t === '^' && f.g.t === 'var' && f.d.t === 'num' && Number.isInteger(f.d.v)) {
+      if (!ajouter(f.g.nom, f.d.v)) return null
+    } else if (f.t === '/' && f.d.t === 'num' && monome(f.g) !== null && monome(f.g) !== '1') {
+      // « x/2 », « 3x/4 » : un coefficient ecrit en diviseur.
+      coefficients += 1
+      for (const [lettre, exposant] of monome(f.g)!.split('*').map((p) => p.split('^'))) {
+        if (!ajouter(lettre, Number(exposant))) return null
+      }
+    } else {
+      return null
+    }
+  }
+  if (coefficients > 1) return null
+  return (
+    [...puissances.entries()]
+      .sort(([a], [b]) => a.localeCompare(b))
+      .map(([lettre, exposant]) => `${lettre}^${exposant}`)
+      .join('*') || '1'
+  )
+}
+
+/** Forme reduite (ou developpee) : une somme de monomes distincts, sans parenthese. */
+function formeReduite(n: Noeud, texte: string): boolean {
+  if (texte.includes('(')) return false
+  const vus = new Set<string>()
+  for (const { n: terme } of termes(n)) {
+    const signature = monome(terme)
+    if (signature === null || vus.has(signature)) return false
+    vus.add(signature)
+  }
+  return true
+}
+
+/** Forme factorisee : un produit (ou une puissance) dont un facteur contient une lettre. */
+function formeFactorisee(n: Noeud): boolean {
+  let e = n
+  while (e.t === 'neg') e = e.e
+  if (e.t === '^') return lettresDe(e.g).size > 0
+  if (e.t !== '*') return false
+  return facteurs(e).some((f) => lettresDe(f).size > 0)
+}
+
+const OPERATEURS_INEGALITE: [string[], string][] = [
+  [['>=', ...SUPERIEUR_OU_EGAL], '>='],
+  [['<=', ...INFERIEUR_OU_EGAL], '<='],
+  [['>'], '>'],
+  [['<'], '<'],
+]
+const SENS_INVERSE: Record<string, string> = { '>=': '<=', '<=': '>=', '>': '<', '<': '>' }
+
+/** « x ≥ 4 », « 4 <= x » : la lettre, le sens ramene a « lettre a gauche », la borne. */
+function lireInegalite(texte: string, variables: string[]): { lettre: string; op: string; borne: number } | null {
+  for (const [ecritures, op] of OPERATEURS_INEGALITE) {
+    for (const ecriture of ecritures) {
+      const morceaux = texte.split(ecriture)
+      if (morceaux.length !== 2) continue
+      const [g, d] = morceaux.map((m) => lireExpression(m, variables))
+      if (!g || !d) return null
+      if (g.t === 'var' && lettresDe(d).size === 0) return { lettre: g.nom, op, borne: evaluer(d, {}) }
+      if (d.t === 'var' && lettresDe(g).size === 0) return { lettre: d.nom, op: SENS_INVERSE[op], borne: evaluer(g, {}) }
+      return null
+    }
+  }
+  return null
+}
+
+/** « 3 ; -5/2 », « x = 3 ou x = -2,5 », « ±7 », « aucune solution » : les valeurs, triees. */
+function lireSolutions(texte: string): number[] | null {
+  if (/^(aucunesolution|pasdesolution|aucune|s=)?$/.test(texte.replace(ENSEMBLE_VIDE, '').replace(/[{}]/g, ''))) {
+    return texte.length > 0 ? [] : null
+  }
+  const valeurs: number[] = []
+  for (let morceau of texte.split(/;|et|ou|,/)) {
+    morceau = morceau.replace(/^[a-z]=/, '')
+    if (morceau === '') return null
+    let double = false
+    if (morceau.startsWith(PLUS_OU_MOINS)) {
+      double = true
+      morceau = morceau.slice(1)
+    }
+    const n = lireExpression(morceau, [])
+    if (!n) return null
+    const v = evaluer(n, {})
+    if (!Number.isFinite(v)) return null
+    valeurs.push(v)
+    if (double) valeurs.push(-v)
+  }
+  return valeurs.sort((a, b) => a - b)
+}
+
+/** La saisie `raw` repond-elle a l'attendu `attendu`, sous la forme demandee ? */
+function algebreJuste(forme: FormeAttendue, attendu: string, raw: string, variables: string[], tolerance: number): boolean {
+  const donne = texteAlgebrique(raw)
+  const voulu = texteAlgebrique(attendu)
+  if (donne === '') return false
+
+  if (forme === 'solutions') {
+    const a = lireSolutions(donne)
+    const b = lireSolutions(voulu)
+    return a !== null && b !== null && a.length === b.length && a.every((v, k) => egaux(v, b[k], tolerance))
+  }
+
+  if (forme === 'inegalite') {
+    const a = lireInegalite(donne, variables)
+    const b = lireInegalite(voulu, variables)
+    return a !== null && b !== null && a.lettre === b.lettre && a.op === b.op && egaux(a.borne, b.borne, tolerance)
+  }
+
+  if (forme === 'equation') {
+    const [ag, ad, ...resteA] = donne.split('=')
+    const [bg, bd, ...resteB] = voulu.split('=')
+    if (resteA.length || resteB.length || ad === undefined || bd === undefined) return false
+    const membres = [ag, ad, bg, bd].map((m) => lireExpression(m, variables))
+    if (membres.some((m) => m === null)) return false
+    const [g1, d1, g2, d2] = membres as Noeud[]
+    const ecart1: Noeud = { t: '-', g: g1, d: d1 }
+    const ecart2: Noeud = { t: '-', g: g2, d: d2 }
+    // Meme equation, ou membres echanges : 42 = 3x + 15 vaut 3x + 15 = 42.
+    return equivalentes(ecart1, ecart2, variables, 1) || equivalentes(ecart1, ecart2, variables, -1)
+  }
+
+  const a = lireExpression(donne, forme === 'meme_calcul' ? [] : variables)
+  const b = lireExpression(voulu, forme === 'meme_calcul' ? [] : variables)
+  if (!a || !b) return false
+
+  if (forme === 'meme_calcul') {
+    // Meme calcul : memes nombres, meme valeur, et un calcul (pas le resultat).
+    const na = nombresDe(a).sort((x, y) => x - y)
+    const nb = nombresDe(b).sort((x, y) => x - y)
+    return (
+      a.t !== 'num' &&
+      na.length === nb.length &&
+      na.every((v, k) => v === nb[k]) &&
+      egaux(evaluer(a, {}), evaluer(b, {}))
+    )
+  }
+
+  if (!equivalentes(a, b, variables)) return false
+  if (forme === 'reduite' || forme === 'developpee') return formeReduite(a, donne)
+  if (forme === 'factorisee') return formeFactorisee(a)
+  return true
+}
+
 /** Le verdict seul : juste ou faux. */
 function estJuste(exercise: ExerciceACorriger, raw: string): boolean {
   const expectedValue = exercise.answer.value
@@ -313,6 +741,13 @@ function estJuste(exercise: ExerciceACorriger, raw: string): boolean {
 
     case 'texte':
     default: {
+      const forme = exercise.answer.forme
+      if (forme) {
+        const variables = exercise.answer.variables ?? ['x']
+        return [expectedValue, ...(exercise.answer.accepted ?? [])].some((attendu) =>
+          algebreJuste(forme, String(attendu), raw, variables, exercise.answer.tolerance ?? 0),
+        )
+      }
       if (
         normalizeLoose(raw) === normalizeLoose(String(expectedValue)) ||
         matchesAccepted(exercise, raw)
