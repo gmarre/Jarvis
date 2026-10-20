@@ -248,7 +248,7 @@ function nombreAvecUnite(raw: string, unit: string | null | undefined): number |
 /**
  * Fraction ecrite avec son signe, ramenee a « -a/b » ou « a/b » sans etre
  * reduite : « 6/(-10) », « (-6)/10 », « -(6/10) », « 6/-10 » valent tous
- * « -6/10 », et « -3/-5 » vaut « 3/5 » (releve en relecture, etape 6). La
+ * « -6/10 » (releve en relecture, etape 6), mais « -3/-5 » ne vaut pas « 3/5 ». La
  * forme demandee (irreductible ou non) reste exigee : 6/10 n'est pas 3/5.
  */
 function fractionSignee(value: string): string | null {
@@ -262,8 +262,10 @@ function fractionSignee(value: string): string | null {
   texte = texte.replace(/\((-?\d+(?:\.\d+)?)\)/g, '$1')
   const morceaux = texte.match(/^(-?)(\d+(?:\.\d+)?)\/(-?)(\d+(?:\.\d+)?)$/)
   if (!morceaux) return null
-  if (morceaux[1]) signe = -signe
-  if (morceaux[3]) signe = -signe
+  // « -3/-7 » n'est pas ramene a « 3/7 » : simplifier les deux signes est
+  // souvent ce que l'exercice evalue (C034, relecture de l'etape 6).
+  if (morceaux[1] && morceaux[3]) return null
+  if (morceaux[1] || morceaux[3]) signe = -signe
   return `${signe < 0 ? '-' : ''}${morceaux[2]}/${morceaux[4]}`
 }
 
