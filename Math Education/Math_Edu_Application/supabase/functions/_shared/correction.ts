@@ -234,8 +234,9 @@ const NOMS_UNITES: Record<string, string[]> = {
   min: ['minute', 'mn'],
   h: ['heure'],
   '°': ['degre'],
-  // Temperatures (etape 5) : « -3 °C », « -3 degres », « -3 degres Celsius ».
-  '°c': ['degre', 'degrecelsius', 'degrescelsius', 'c'],
+  // Temperatures (etape 5) : « -3 °C », « -3 degres », « -3 degres Celsius »,
+  // et « 7,7° » sans le C (releve en relecture, super exercices B2).
+  '°c': ['degre', 'degrecelsius', 'degrescelsius', 'c', '°'],
   [EURO]: ['euro', 'eur'],
 }
 

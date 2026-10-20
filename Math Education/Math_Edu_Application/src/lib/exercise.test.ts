@@ -107,6 +107,13 @@ describe('checkAnswer, normalisation des ecritures', () => {
     expect(checkAnswer(positive, '-(3/-5)').isCorrect).toBe(false)
   })
 
+  it('accepte « 7,7° » pour une temperature en °C, mais pas une autre unite', () => {
+    const temperature: Exercise = { ...fraction, answer: { value: 7.7, unit: '°C' } }
+    expect(checkAnswer(temperature, '7,7°').isCorrect).toBe(true)
+    expect(checkAnswer(temperature, '7,7 °C').isCorrect).toBe(true)
+    expect(checkAnswer(temperature, '7,7 m').isCorrect).toBe(false)
+  })
+
   it('accepte « n = 13 » quand l enonce demande la valeur de n', () => {
     const exposant: Exercise = { ...fraction, answer: { value: 13 } }
     expect(checkAnswer(exposant, 'n = 13').isCorrect).toBe(true)
