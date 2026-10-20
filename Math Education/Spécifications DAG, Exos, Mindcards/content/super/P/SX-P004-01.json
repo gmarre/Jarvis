@@ -1,0 +1,94 @@
+{
+  "id": "SX-P004-01",
+  "skill_id": "P004",
+  "skill_ids": [
+    "P004",
+    "A001"
+  ],
+  "school_level": "CP",
+  "title": "La sortie au zoo",
+  "contexte": "Aujourd'hui, la classe de Léa part visiter le zoo. Il y a 21 élèves dans la classe.\n\nDans son sac à dos, Léa met une gourde, un cahier, une trousse, une pomme et une casquette.\n\nLe car part à l'heure montrée par l'horloge du dessin.\n\nAu zoo, les élèves pique-niquent à midi, près des girafes. Ensuite, ils vont voir les lions et les singes.\n\nLe car revient à l'école à 4 heures. Les parents attendent les enfants devant la grille de l'école.",
+  "image": "figures/SX-P004-01",
+  "duree_estimee_min": 8,
+  "questions": [
+    {
+      "key": "q1",
+      "skill_id": "A001",
+      "statement": "Combien d'objets Léa met-elle dans son sac à dos ?",
+      "type": "numerique",
+      "answer": {
+        "value": 5,
+        "unit": "objets",
+        "accepted": [
+          "5 objets",
+          "cinq",
+          "cinq objets"
+        ]
+      },
+      "points": 2,
+      "solution_steps": [
+        "On relit la phrase qui parle du sac et on compte chaque objet une seule fois : la gourde (1), le cahier (2), la trousse (3), la pomme (4), la casquette (5).",
+        "Léa met **5 objets** dans son sac."
+      ],
+      "hint": "Relis la phrase qui parle du sac à dos."
+    },
+    {
+      "key": "q2",
+      "skill_id": "P004",
+      "statement": "À quelle heure part le car ?",
+      "type": "texte",
+      "answer": {
+        "value": "11 heures",
+        "accepted": [
+          "11 h",
+          "11 h 00",
+          "11",
+          "onze heures",
+          "onze heure"
+        ]
+      },
+      "points": 3,
+      "solution_steps": [
+        "La grande aiguille est sur le 12 : c'est une heure juste.",
+        "La petite aiguille montre l'heure : elle est sur le 11.",
+        "Le car part à **11 heures**."
+      ],
+      "hint": "Regarde sur quel nombre est la petite aiguille."
+    },
+    {
+      "key": "q3",
+      "skill_id": "P004",
+      "statement": "Le car revient à 4 heures. Où sont alors les aiguilles de l'horloge ?",
+      "type": "qcm",
+      "choices": [
+        {
+          "key": "a",
+          "text": "La grande aiguille sur le 4, la petite aiguille sur le 12",
+          "misconception": "L'élève confond les deux aiguilles. C'est la petite aiguille qui montre l'heure ; la grande est sur le 12 pour une heure juste."
+        },
+        {
+          "key": "b",
+          "text": "La petite aiguille sur le 4, la grande aiguille sur le 12",
+          "misconception": null
+        },
+        {
+          "key": "c",
+          "text": "Les deux aiguilles sur le 4",
+          "misconception": "L'élève pense que les deux aiguilles montrent l'heure. Pour une heure juste, la grande aiguille est toujours sur le 12."
+        }
+      ],
+      "answer": {
+        "value": "b"
+      },
+      "points": 4,
+      "solution_steps": [
+        "Pour une heure juste, la grande aiguille est sur le 12.",
+        "La petite aiguille montre l'heure : pour 4 heures, elle est sur le 4.",
+        "À 4 heures : **petite aiguille sur le 4, grande aiguille sur le 12**."
+      ],
+      "hint": "Quelle aiguille montre l'heure ?"
+    }
+  ],
+  "review_status": "relu_agent",
+  "programme_ref": "Cycle 2, Cours préparatoire, Grandeurs et mesures, Le repérage dans le temps : « L'élève sait lire des heures entières (par exemple trois heures, neuf heures, mais aussi midi) montrées sur un cadran à aiguilles. »"
+}

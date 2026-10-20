@@ -1,0 +1,114 @@
+{
+  "id": "SX-P009-01",
+  "skill_id": "P009",
+  "skill_ids": [
+    "P009",
+    "B006",
+    "A007"
+  ],
+  "school_level": "CE2",
+  "title": "La cabane à oiseaux",
+  "contexte": "Samedi, Lucas aide son grand-père à fabriquer une cabane à oiseaux pour le jardin. Lucas a 8 ans ; son grand-père a 71 ans.\n\nIls utilisent une planche de bois qui mesure 1 m et 2 dm de long, et 18 mm d'épaisseur.\n\nPour assembler la cabane, il faut planter 6 clous dans chacune des 5 pièces de bois. Chaque clou mesure 4 cm et 5 mm de long. La boîte de clous en contient 50.\n\nGrand-père a aussi trois vis dans sa poche : une de 3 cm, une de 28 mm et une de 3 cm et 4 mm.\n\nPour tester, il plante un clou bien droit dans un morceau de la planche, jusqu'à la tête. La pointe ressort de l'autre côté.\n\nLa cabane sera accrochée dans le cerisier, à 2 m du sol.",
+  "image": null,
+  "duree_estimee_min": 15,
+  "questions": [
+    {
+      "key": "q1",
+      "skill_id": "B006",
+      "statement": "Combien de clous faut-il planter pour assembler la cabane ?",
+      "type": "numerique",
+      "answer": {
+        "value": 30,
+        "unit": "clous",
+        "accepted": [
+          "30 clous"
+        ]
+      },
+      "points": 2,
+      "solution_steps": [
+        "Il y a 5 pièces de bois, avec 6 clous dans chacune : c'est 5 fois 6 clous.",
+        "$5 \\times 6 = 30$.",
+        "Il faut **30 clous**. La boîte en contient 50 : ce nombre ne sert pas pour cette question."
+      ],
+      "hint": "Chaque pièce de bois reçoit le même nombre de clous."
+    },
+    {
+      "key": "q2",
+      "skill_id": "P009",
+      "statement": "Quelle est la longueur de la planche, en centimètres ?",
+      "type": "numerique",
+      "answer": {
+        "value": 120,
+        "unit": "cm",
+        "accepted": [
+          "120 cm",
+          "120 centimètres"
+        ]
+      },
+      "points": 3,
+      "solution_steps": [
+        "La planche mesure 1 m et 2 dm. On écrit chaque partie en centimètres.",
+        "1 m = 100 cm et 1 dm = 10 cm, donc 2 dm = 20 cm.",
+        "100 cm + 20 cm = 120 cm : la planche mesure **120 cm**."
+      ],
+      "hint": "Combien de centimètres y a-t-il dans 1 m ? Et dans 1 dm ?"
+    },
+    {
+      "key": "q3",
+      "skill_id": "A007",
+      "statement": "Range les trois vis de grand-père, de la plus courte à la plus longue.",
+      "type": "qcm",
+      "choices": [
+        {
+          "key": "a",
+          "text": "3 cm ; 3 cm et 4 mm ; 28 mm",
+          "misconception": "L'élève range les nombres écrits, 3, puis 3 et 4, puis 28, sans regarder les unités. Mais 3 cm, c'est 30 mm : plus que 28 mm."
+        },
+        {
+          "key": "b",
+          "text": "28 mm ; 3 cm ; 3 cm et 4 mm",
+          "misconception": null
+        },
+        {
+          "key": "c",
+          "text": "3 cm et 4 mm ; 28 mm ; 3 cm",
+          "misconception": "L'élève additionne 3 et 4 et lit 3 cm et 4 mm comme 7 mm. Mais 3 cm et 4 mm, c'est 30 mm + 4 mm = 34 mm."
+        }
+      ],
+      "answer": {
+        "value": "b"
+      },
+      "points": 2,
+      "solution_steps": [
+        "On écrit les trois longueurs dans la même unité, le millimètre : 1 cm = 10 mm.",
+        "3 cm = 30 mm ; 3 cm et 4 mm = 30 mm + 4 mm = 34 mm ; la troisième vis mesure 28 mm.",
+        "$28 < 30 < 34$ : de la plus courte à la plus longue, **28 mm ; 3 cm ; 3 cm et 4 mm**."
+      ],
+      "hint": "Écris les trois longueurs en millimètres."
+    },
+    {
+      "key": "q4",
+      "skill_id": "P009",
+      "statement": "De combien de millimètres la pointe du clou dépasse-t-elle de l'autre côté du morceau de planche ?",
+      "type": "numerique",
+      "answer": {
+        "value": 27,
+        "unit": "mm",
+        "accepted": [
+          "27 mm",
+          "27 millimètres"
+        ]
+      },
+      "points": 4,
+      "solution_steps": [
+        "Le clou mesure 4 cm et 5 mm ; la planche a 18 mm d'épaisseur. On écrit tout en millimètres.",
+        "1 cm = 10 mm, donc 4 cm = 40 mm, et 4 cm et 5 mm = 40 mm + 5 mm = 45 mm.",
+        "Le clou traverse les 18 mm de la planche : il dépasse de 45 − 18 = 27.",
+        "La pointe dépasse de **27 mm**."
+      ],
+      "hint": "Écris la longueur du clou en millimètres."
+    }
+  ],
+  "review_status": "relu_agent",
+  "programme_ref": "Cycle 2, Cours élémentaire deuxième année, Grandeurs et mesures, Les longueurs : « Connaitre et utiliser les unités mètre, décimètre, centimètre, millimètre, kilomètre et les symboles associés (m, dm, cm, mm, km). »"
+}

@@ -1,0 +1,103 @@
+{
+  "id": "SX-P001-01",
+  "skill_id": "P001",
+  "skill_ids": [
+    "P001",
+    "A002"
+  ],
+  "school_level": "CP",
+  "title": "La frise de la classe",
+  "contexte": "Dans la classe de Nina, il y a 24 élèves. Ce matin, ils préparent une grande frise pour le couloir de l'école.\n\nChaque élève découpe une bande de papier.\nLa bande de Hugo mesure 19 cm.\nLa bande de Lou mesure 21 cm.\n\nNina a découpé une bande rouge. Elle la pose sur sa règle pour la mesurer. Le dessin montre sa bande : c'est le segment AB.\n\nLa maîtresse a aussi apporté 6 pots de peinture pour décorer la frise. Les élèves colleront toutes les bandes avant la fête de l'école.",
+  "image": "figures/SX-P001-01",
+  "duree_estimee_min": 8,
+  "questions": [
+    {
+      "key": "q1",
+      "skill_id": "A002",
+      "statement": "Qui a la bande la plus longue : Hugo ou Lou ?",
+      "type": "qcm",
+      "choices": [
+        {
+          "key": "a",
+          "text": "Hugo",
+          "misconception": "L'élève compare les chiffres des unités : 9 est plus grand que 1. Mais il faut d'abord regarder les dizaines : 19 a 1 dizaine, 21 en a 2. Donc 21 est plus grand que 19."
+        },
+        {
+          "key": "b",
+          "text": "Lou",
+          "misconception": null
+        },
+        {
+          "key": "c",
+          "text": "Elles ont la même longueur",
+          "misconception": "L'élève voit deux nombres qui se ressemblent. Mais 19 et 21 sont deux nombres différents : 21 vient après 19."
+        }
+      ],
+      "answer": {
+        "value": "b"
+      },
+      "points": 2,
+      "solution_steps": [
+        "La bande de Hugo mesure 19 cm, celle de Lou 21 cm. Les deux longueurs sont en centimètres : on peut comparer les nombres 19 et 21.",
+        "19, c'est 1 dizaine et 9 unités. 21, c'est 2 dizaines et 1 unité. 21 a plus de dizaines : 21 est plus grand que 19.",
+        "La bande de **Lou** est la plus longue. Le nombre d'élèves et les pots de peinture ne servent pas ici."
+      ],
+      "hint": "Compare d'abord les dizaines des deux nombres."
+    },
+    {
+      "key": "q2",
+      "skill_id": "P001",
+      "statement": "Pour bien mesurer sa bande, en face de quel nombre de la règle Nina doit-elle placer le bout A ?",
+      "type": "qcm",
+      "choices": [
+        {
+          "key": "a",
+          "text": "En face du 0",
+          "misconception": null
+        },
+        {
+          "key": "b",
+          "text": "En face du 1",
+          "misconception": "L'élève commence au 1, comme quand on compte des objets. Mais sur une règle, le 1 est déjà à 1 cm du début : il faut partir du 0."
+        },
+        {
+          "key": "c",
+          "text": "Au bord de la règle, avant le 0",
+          "misconception": "L'élève aligne le bout de la bande avec le bord de la règle. Mais la graduation commence au trait du 0, un peu après le bord."
+        }
+      ],
+      "answer": {
+        "value": "a"
+      },
+      "points": 2,
+      "solution_steps": [
+        "Pour mesurer avec une règle graduée, on place le **0** de la règle en face d'un bout du segment.",
+        "On lit ensuite le nombre en face de l'autre bout : c'est la longueur en centimètres."
+      ],
+      "hint": "Pense à la façon dont on pose une règle pour mesurer."
+    },
+    {
+      "key": "q3",
+      "skill_id": "P001",
+      "statement": "Regarde le dessin. Combien de centimètres mesure la bande de Nina ?",
+      "type": "numerique",
+      "answer": {
+        "value": 9,
+        "unit": "cm",
+        "accepted": [
+          "9 cm",
+          "9 centimètres"
+        ]
+      },
+      "points": 4,
+      "solution_steps": [
+        "Sur le dessin, le bout A n'est pas en face du 0 : il est en face du 3. Le bout B est en face du 12.",
+        "On compte les centimètres de A à B : de 3 à 4, de 4 à 5, et ainsi de suite jusqu'à 12. Il y a 9 espaces d'un centimètre.",
+        "La bande de Nina mesure **9 cm**. Attention : lire 12 en face de B donnerait une mesure trop longue, car la bande ne commence pas au 0."
+      ],
+      "hint": "Regarde en face de quel nombre se trouve le bout A."
+    }
+  ],
+  "review_status": "relu_agent",
+  "programme_ref": "Cycle 2, Cours préparatoire, Grandeurs et mesures, Les longueurs : « Savoir mesurer la longueur d'un segment en utilisant une règle graduée. »"
+}

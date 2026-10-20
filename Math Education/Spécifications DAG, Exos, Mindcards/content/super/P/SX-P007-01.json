@@ -1,0 +1,90 @@
+{
+  "id": "SX-P007-01",
+  "skill_id": "P007",
+  "skill_ids": [
+    "P007",
+    "C001"
+  ],
+  "school_level": "CE1",
+  "title": "Mercredi à la piscine",
+  "contexte": "Mercredi, c'est l'après-midi. Zoé va à la piscine avec son grand frère Adam, qui a 11 ans.\n\nEn arrivant, Zoé regarde l'horloge du hall : le dessin la montre.\n\nSur le cadran de l'horloge, les nombres 12, 3, 6 et 9 partagent le tour en 4 parts égales.\n\nLe cours de natation de Zoé commence à quatre heures et demie. Adam, lui, nage dans le grand bassin.\n\nLa piscine ferme à 7 heures du soir. Les enfants doivent sortir de l'eau un peu avant.",
+  "image": "figures/SX-P007-01",
+  "duree_estimee_min": 10,
+  "questions": [
+    {
+      "key": "q1",
+      "skill_id": "C001",
+      "statement": "Quand la grande aiguille va du 12 au 3, quelle fraction du tour du cadran parcourt-elle ? Écris-la avec une barre.",
+      "type": "texte",
+      "answer": {
+        "value": "1/4",
+        "accepted": [
+          "1 / 4",
+          "un quart",
+          "1 quart",
+          "le quart",
+          "un quart de tour",
+          "1/4 de tour",
+          "3/12",
+          "15/60",
+          "2/8"
+        ]
+      },
+      "points": 2,
+      "solution_steps": [
+        "Les nombres 12, 3, 6 et 9 partagent le tour du cadran en 4 parts égales.",
+        "Du 12 au 3, la grande aiguille parcourt une de ces 4 parts.",
+        "C'est $\\frac{1}{4}$ du tour, un quart de tour : c'est pour cela qu'on parle de « quart d'heure »."
+      ],
+      "hint": "En combien de parts égales le tour est-il partagé ?"
+    },
+    {
+      "key": "q2",
+      "skill_id": "P007",
+      "statement": "À quelle heure ferme la piscine ? Écris-la comme sur une horloge digitale, de 0 h à 23 h.",
+      "type": "texte",
+      "answer": {
+        "value": "19 h",
+        "accepted": [
+          "19h",
+          "19 h 00",
+          "19:00",
+          "19 heures",
+          "dix-neuf heures"
+        ]
+      },
+      "points": 3,
+      "solution_steps": [
+        "7 heures du soir, c'est après midi : on continue à compter les heures après 12 h.",
+        "1 heure de l'après-midi, c'est 13 h ; 2 heures, 14 h ; et ainsi de suite : 15 h, 16 h, 17 h, 18 h, puis 19 h pour 7 heures du soir.",
+        "La piscine ferme à **19 h**."
+      ],
+      "hint": "Après midi, les heures continuent : 13 h, 14 h…"
+    },
+    {
+      "key": "q3",
+      "skill_id": "P007",
+      "statement": "Quelle heure indique l'horloge du hall ? Écris-la comme sur une horloge digitale, de 0 h à 23 h.",
+      "type": "texte",
+      "answer": {
+        "value": "16 h 15",
+        "accepted": [
+          "16h15",
+          "16:15",
+          "16 heures 15",
+          "16 h 15 min",
+          "16 heures 15 minutes"
+        ]
+      },
+      "points": 4,
+      "solution_steps": [
+        "La grande aiguille est sur le 3 : elle a fait un quart de tour depuis le 12. C'est « et quart ».",
+        "La petite aiguille est juste après le 4 : il est 4 heures et quart.",
+        "C'est l'après-midi : 4 heures et quart de l'après-midi s'écrit **16 h 15**."
+      ],
+      "hint": "Commence par la petite aiguille, puis regarde la grande."
+    }
+  ],
+  "review_status": "relu_agent",
+  "programme_ref": "Cycle 2, Cours élémentaire première année, Grandeurs et mesures, Le repérage dans le temps et les durées : « Lire l'heure sur une horloge à aiguilles (lorsque l'heure est donnée en heures entières, en heures et demi-heure ou en heures et quarts d'heure). »"
+}

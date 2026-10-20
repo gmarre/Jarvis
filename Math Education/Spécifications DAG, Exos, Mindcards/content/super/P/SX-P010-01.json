@@ -1,0 +1,91 @@
+{
+  "id": "SX-P010-01",
+  "skill_id": "P010",
+  "skill_ids": [
+    "P010",
+    "G012"
+  ],
+  "school_level": "CE2",
+  "title": "Le jardin de Mamie Rose",
+  "contexte": "Mamie Rose habite à la campagne, à 3 km du village. Ses 12 poules picorent partout dans le jardin. Pour protéger ses plantations, Mamie veut entourer deux parties du jardin avec du grillage.\n\nLe potager a la forme d'un rectangle. Il mesure 9 m de long et 4 m de large.\n\nLa mare a la forme d'un polygone. Ses côtés mesurent 3 m, 4 m, 2 m, 5 m et 4 m.\n\nLe grillage est vendu en rouleaux de 25 m. Un rouleau coûte 30 €.\n\nLe dimanche, ses petits-enfants viennent l'aider à poser le grillage.",
+  "image": null,
+  "duree_estimee_min": 10,
+  "questions": [
+    {
+      "key": "q1",
+      "skill_id": "G012",
+      "statement": "Quelle est la forme de la mare ?",
+      "type": "qcm",
+      "choices": [
+        {
+          "key": "a",
+          "text": "Un pentagone",
+          "misconception": null
+        },
+        {
+          "key": "b",
+          "text": "Un quadrilatère",
+          "misconception": "L'élève compte les longueurs différentes : 3, 4, 2 et 5. Mais 4 m est écrit deux fois : il y a cinq côtés. Un quadrilatère en a quatre."
+        },
+        {
+          "key": "c",
+          "text": "Un hexagone",
+          "misconception": "Un hexagone a six côtés. La mare n'en a que cinq."
+        }
+      ],
+      "answer": {
+        "value": "a"
+      },
+      "points": 2,
+      "solution_steps": [
+        "Le texte donne cinq longueurs pour la mare : 3 m, 4 m, 2 m, 5 m et 4 m. La mare a donc cinq côtés.",
+        "Un polygone à cinq côtés s'appelle un **pentagone**."
+      ],
+      "hint": "Compte les longueurs données pour la mare."
+    },
+    {
+      "key": "q2",
+      "skill_id": "P010",
+      "statement": "Quelle longueur de grillage faut-il pour faire le tour complet de la mare ?",
+      "type": "numerique",
+      "answer": {
+        "value": 18,
+        "unit": "m",
+        "accepted": [
+          "18 m",
+          "18 mètres"
+        ]
+      },
+      "points": 3,
+      "solution_steps": [
+        "Le tour de la mare, c'est son périmètre : la longueur de son contour.",
+        "On additionne les longueurs des cinq côtés : 3 + 4 + 2 + 5 + 4 = 18.",
+        "Il faut **18 m** de grillage pour la mare."
+      ],
+      "hint": "Additionne les longueurs de tous les côtés."
+    },
+    {
+      "key": "q3",
+      "skill_id": "P010",
+      "statement": "Quelle longueur de grillage faut-il pour faire le tour complet du potager ?",
+      "type": "numerique",
+      "answer": {
+        "value": 26,
+        "unit": "m",
+        "accepted": [
+          "26 m",
+          "26 mètres"
+        ]
+      },
+      "points": 4,
+      "solution_steps": [
+        "Le potager est un rectangle : ses côtés opposés ont la même longueur. Il a deux côtés de 9 m et deux côtés de 4 m.",
+        "Son périmètre est 9 + 4 + 9 + 4 = 26.",
+        "Il faut **26 m** de grillage. Attention : 9 + 4 = 13 ne fait que la moitié du tour."
+      ],
+      "hint": "Combien de côtés a un rectangle, et lesquels ont la même longueur ?"
+    }
+  ],
+  "review_status": "relu_agent",
+  "programme_ref": "Cycle 2, Cours élémentaire deuxième année, Grandeurs et mesures, Les longueurs : « L'élève sait que le périmètre d'une figure plane est la longueur de son contour. »"
+}

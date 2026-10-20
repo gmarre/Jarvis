@@ -1,0 +1,80 @@
+{
+  "id": "SX-P003-01",
+  "skill_id": "P003",
+  "skill_ids": [
+    "P003",
+    "B013"
+  ],
+  "school_level": "CP",
+  "title": "La brocante de Léo",
+  "contexte": "Samedi, Léo va à la brocante du quartier avec sa grande sœur Emma. Emma a 12 ans.\n\nLe dessin montre tout l'argent de Léo avant ses achats.\n\nSur un stand, Léo voit un livre à 8 € et une petite voiture à 5 €. Il achète ces deux objets.\n\nEmma achète un jeu de société à 34 €. Elle paie avec un billet de 50 €.\n\nAu stand voisin, un ballon de foot coûte 20 €. Léo ne l'achète pas : il en a déjà un.",
+  "image": "figures/SX-P003-01",
+  "duree_estimee_min": 10,
+  "questions": [
+    {
+      "key": "q1",
+      "skill_id": "B013",
+      "statement": "Combien Léo paie-t-il en tout pour le livre et la petite voiture ?",
+      "type": "numerique",
+      "answer": {
+        "value": 13,
+        "unit": "€",
+        "accepted": [
+          "13 €",
+          "13 euros"
+        ]
+      },
+      "points": 2,
+      "solution_steps": [
+        "Léo achète le livre à 8 € et la petite voiture à 5 € : on ajoute les deux prix.",
+        "8 + 5 : on passe par 10. 8 + 2 = 10, puis 10 + 3 = 13.",
+        "Léo paie **13 €**. Le ballon, que Léo n'achète pas, ne compte pas."
+      ],
+      "hint": "Pour ajouter 5 à 8, passe par 10."
+    },
+    {
+      "key": "q2",
+      "skill_id": "P003",
+      "statement": "Regarde le dessin. Avant ses achats, combien d'euros Léo a-t-il ?",
+      "type": "numerique",
+      "answer": {
+        "value": 39,
+        "unit": "€",
+        "accepted": [
+          "39 €",
+          "39 euros"
+        ]
+      },
+      "points": 3,
+      "solution_steps": [
+        "On compte la **valeur** des billets et des pièces, pas leur nombre.",
+        "Les billets d'abord : 20, puis 30, puis 35. Ensuite les pièces : 37, puis 38, puis 39.",
+        "Léo a **39 €**."
+      ],
+      "hint": "Commence par les billets, puis ajoute les pièces une à une."
+    },
+    {
+      "key": "q3",
+      "skill_id": "P003",
+      "statement": "Combien d'argent rend-on à Emma ?",
+      "type": "numerique",
+      "answer": {
+        "value": 16,
+        "unit": "€",
+        "accepted": [
+          "16 €",
+          "16 euros"
+        ]
+      },
+      "points": 4,
+      "solution_steps": [
+        "Emma donne 50 € pour un jeu à 34 € : on lui rend ce qu'il faut pour aller de 34 € à 50 €.",
+        "On avance de 34 jusqu'à 40 : cela fait 6. Puis de 40 jusqu'à 50 : cela fait 10.",
+        "6 et 10 font 16 : on rend **16 €** à Emma."
+      ],
+      "hint": "Avance de 34 jusqu'à 50, en passant par 40."
+    }
+  ],
+  "review_status": "relu_agent",
+  "programme_ref": "Cycle 2, Cours préparatoire, Grandeurs et mesures, La monnaie : « Simuler des achats en manipulant des pièces et des billets fictifs. Rendre la monnaie. »"
+}

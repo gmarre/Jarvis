@@ -1,0 +1,124 @@
+{
+  "id": "SX-P013-01",
+  "skill_id": "P013",
+  "skill_ids": [
+    "P013",
+    "P007",
+    "C001"
+  ],
+  "school_level": "CE2",
+  "title": "Le train de la classe verte",
+  "contexte": "Vendredi, la classe de Malik rentre de classe verte en train. C'est l'après-midi. Les 26 élèves attendent sur le quai de la gare avec leurs valises.\n\nL'horloge du quai est montrée sur le dessin.\n\nLe train a 8 wagons, tous pareils. 3 de ces wagons sont réservés pour la classe de Malik.\n\nLe train de la classe doit partir à 5 heures moins le quart de l'après-midi.\n\nSi la classe le manque, le train suivant part à 17 h 25.\n\nPendant le voyage, chaque élève recevra un goûter.",
+  "image": "figures/SX-P013-01",
+  "duree_estimee_min": 15,
+  "questions": [
+    {
+      "key": "q1",
+      "skill_id": "C001",
+      "statement": "Quelle fraction du train est réservée pour la classe de Malik ? Écris-la sous la forme numérateur/dénominateur.",
+      "type": "texte",
+      "answer": {
+        "value": "3/8",
+        "accepted": [
+          "3 / 8",
+          "trois huitièmes",
+          "3 huitièmes"
+        ]
+      },
+      "points": 2,
+      "solution_steps": [
+        "Le train est partagé en 8 wagons pareils : chaque wagon est un huitième du train.",
+        "La classe a 3 de ces 8 wagons.",
+        "Elle occupe $\\frac{3}{8}$ du train, trois huitièmes."
+      ],
+      "hint": "En combien de parts égales le train est-il partagé ?"
+    },
+    {
+      "key": "q2",
+      "skill_id": "P007",
+      "statement": "À quelle heure le train de la classe doit-il partir ? Écris-la comme sur un affichage digital, de 0 h à 23 h.",
+      "type": "texte",
+      "answer": {
+        "value": "16 h 45",
+        "accepted": [
+          "16h45",
+          "16:45",
+          "16 heures 45",
+          "16 h 45 min",
+          "16 heures 45 minutes"
+        ]
+      },
+      "points": 2,
+      "solution_steps": [
+        "« 5 heures moins le quart », c'est un quart d'heure avant 5 heures : 4 heures et trois quarts, soit 4 h 45.",
+        "C'est l'après-midi : 4 heures de l'après-midi, c'est 16 h.",
+        "Le train doit partir à **16 h 45**."
+      ],
+      "hint": "« Moins le quart » : un quart d'heure avant l'heure juste."
+    },
+    {
+      "key": "q3",
+      "skill_id": "P013",
+      "statement": "Quelle heure indique l'horloge du quai, à la minute près ? Écris-la comme sur un affichage digital, de 0 h à 23 h.",
+      "type": "texte",
+      "answer": {
+        "value": "16 h 37",
+        "accepted": [
+          "16h37",
+          "16:37",
+          "16 heures 37",
+          "16 h 37 min",
+          "16 heures 37 minutes"
+        ]
+      },
+      "points": 4,
+      "solution_steps": [
+        "La grande aiguille a dépassé le 7 de 2 petits traits. Jusqu'au 7, on compte de 5 en 5 : 5, 10, 15, 20, 25, 30, 35. Puis 2 petits traits de plus : 36, 37. Elle indique 37 minutes.",
+        "La petite aiguille est entre le 4 et le 5 : il est 4 heures passées, pas encore 5 heures.",
+        "C'est l'après-midi : il est **16 h 37**. Le train de la classe n'est pas encore parti."
+      ],
+      "hint": "Compte de 5 en 5 avec la grande aiguille, puis les petits traits."
+    },
+    {
+      "key": "q4",
+      "skill_id": "P013",
+      "statement": "Le train suivant part à 17 h 25. Où seront les aiguilles de l'horloge à ce moment-là ?",
+      "type": "qcm",
+      "choices": [
+        {
+          "key": "a",
+          "text": "Petite aiguille sur le 5 ; grande aiguille entre le 5 et le 6",
+          "misconception": "L'élève inverse les rôles des deux aiguilles. C'est la grande aiguille qui montre les minutes : pour 25 minutes, elle est sur le 5."
+        },
+        {
+          "key": "b",
+          "text": "Petite aiguille entre le 7 et le 8 ; grande aiguille sur le 5",
+          "misconception": "L'élève lit 17 h comme 7 heures, en gardant le dernier chiffre. Mais 17 h, c'est 5 heures de l'après-midi."
+        },
+        {
+          "key": "c",
+          "text": "Petite aiguille entre le 4 et le 5 ; grande aiguille sur le 5",
+          "misconception": "L'élève laisse la petite aiguille où elle est sur l'horloge du quai, entre le 4 et le 5. Mais à 17 h 25, il est 5 heures passées : la petite aiguille a dépassé le 5."
+        },
+        {
+          "key": "d",
+          "text": "Petite aiguille entre le 5 et le 6 ; grande aiguille sur le 5",
+          "misconception": null
+        }
+      ],
+      "answer": {
+        "value": "d"
+      },
+      "points": 3,
+      "solution_steps": [
+        "17 h, c'est 5 heures de l'après-midi : après midi, on compte 13 h, 14 h, 15 h, 16 h, 17 h.",
+        "25 minutes : la grande aiguille avance de 5 minutes d'un nombre au suivant ; 5, 10, 15, 20, 25 : elle est sur le 5.",
+        "À 5 heures et 25 minutes, la petite aiguille a dépassé le 5, sans atteindre le 6.",
+        "Donc : **petite aiguille entre le 5 et le 6, grande aiguille sur le 5**."
+      ],
+      "hint": "Quelle aiguille montre les minutes ? Et que vaut 17 h sur une horloge à aiguilles ?"
+    }
+  ],
+  "review_status": "relu_agent",
+  "programme_ref": "Cycle 2, Cours élémentaire deuxième année, Grandeurs et mesures, Le repérage dans le temps et les durées : « L'élève lit l'heure sur un cadran à aiguilles ou sur un affichage digital »"
+}

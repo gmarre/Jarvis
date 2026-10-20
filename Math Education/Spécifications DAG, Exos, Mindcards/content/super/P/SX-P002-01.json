@@ -1,0 +1,104 @@
+{
+  "id": "SX-P002-01",
+  "skill_id": "P002",
+  "skill_ids": [
+    "P002",
+    "B001"
+  ],
+  "school_level": "CP",
+  "title": "La course de petites voitures",
+  "contexte": "Pour la fête de l'école, la classe de Tom organise une course de petites voitures. La classe compte 23 élèves.\n\nChaque piste est faite de morceaux posés bout à bout.\nTom pose un morceau de 30 cm, puis un morceau de 60 cm.\nLa piste de Léa mesure 1 m.\nLa piste de Max mesure 80 cm.\n\nLes petites voitures sont rangées dans une boîte à chaussures. Chaque enfant choisit sa voiture préférée.\n\nLe gagnant de la course reçoit 3 billes.",
+  "image": null,
+  "duree_estimee_min": 8,
+  "questions": [
+    {
+      "key": "q1",
+      "skill_id": "B001",
+      "statement": "Combien de centimètres mesure la piste de Tom ?",
+      "type": "numerique",
+      "answer": {
+        "value": 90,
+        "unit": "cm",
+        "accepted": [
+          "90 cm",
+          "90 centimètres"
+        ]
+      },
+      "points": 3,
+      "solution_steps": [
+        "La piste de Tom est faite de deux morceaux posés bout à bout : on ajoute leurs longueurs.",
+        "30 + 60 : 3 dizaines et 6 dizaines, cela fait 9 dizaines. Donc 30 + 60 = 90.",
+        "La piste de Tom mesure **90 cm**."
+      ],
+      "hint": "Les deux morceaux sont posés bout à bout."
+    },
+    {
+      "key": "q2",
+      "skill_id": "P002",
+      "statement": "Une petite voiture de la course mesure à peu près :",
+      "type": "qcm",
+      "choices": [
+        {
+          "key": "a",
+          "text": "8 m",
+          "misconception": "L'élève ne regarde pas l'unité : 8 m, c'est plus long qu'une vraie voiture. Une petite voiture tient dans la main."
+        },
+        {
+          "key": "b",
+          "text": "8 cm",
+          "misconception": null
+        },
+        {
+          "key": "c",
+          "text": "80 cm",
+          "misconception": "80 cm, c'est presque 1 m, presque toute la piste de Léa. Une petite voiture tient dans la main : elle est bien plus petite."
+        }
+      ],
+      "answer": {
+        "value": "b"
+      },
+      "points": 2,
+      "solution_steps": [
+        "Une petite voiture tient dans la main : elle est plus petite qu'un crayon.",
+        "Le centimètre convient pour les petits objets. 80 cm, c'est presque 1 m ; 8 m, c'est plus long qu'une vraie voiture.",
+        "Une petite voiture mesure à peu près **8 cm**."
+      ],
+      "hint": "Pense à la taille de ta main."
+    },
+    {
+      "key": "q3",
+      "skill_id": "P002",
+      "statement": "Quelle piste est la plus longue : celle de Max ou celle de Léa ?",
+      "type": "qcm",
+      "choices": [
+        {
+          "key": "a",
+          "text": "La piste de Max",
+          "misconception": "L'élève compare 80 et 1 sans regarder les unités. Mais 1 m = 100 cm, et 100 cm, c'est plus long que 80 cm."
+        },
+        {
+          "key": "b",
+          "text": "On ne peut pas comparer des centimètres et des mètres",
+          "misconception": "On peut comparer : il suffit de savoir que 1 m = 100 cm. Les deux longueurs s'écrivent alors en centimètres."
+        },
+        {
+          "key": "c",
+          "text": "La piste de Léa",
+          "misconception": null
+        }
+      ],
+      "answer": {
+        "value": "c"
+      },
+      "points": 4,
+      "solution_steps": [
+        "La piste de Max mesure 80 cm, celle de Léa 1 m. Les unités ne sont pas les mêmes.",
+        "On sait que 1 m = 100 cm : la piste de Léa mesure 100 cm.",
+        "100 cm, c'est plus que 80 cm : la piste de **Léa** est la plus longue, même si 80 est un plus grand nombre que 1."
+      ],
+      "hint": "Écris les deux longueurs avec la même unité."
+    }
+  ],
+  "review_status": "relu_agent",
+  "programme_ref": "Cycle 2, Cours préparatoire, Grandeurs et mesures, Les longueurs : « Savoir qu'un mètre est égal à cent centimètres. »"
+}

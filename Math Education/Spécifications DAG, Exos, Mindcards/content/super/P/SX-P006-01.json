@@ -1,0 +1,103 @@
+{
+  "id": "SX-P006-01",
+  "skill_id": "P006",
+  "skill_ids": [
+    "P006",
+    "B042"
+  ],
+  "school_level": "CE1",
+  "title": "Le gâteau de Noé",
+  "contexte": "Dimanche, Noé prépare un gâteau au chocolat avec son papa, pour 8 personnes.\n\nDans le placard, il y a :\nun paquet de farine de 1 kg ;\nun paquet de sucre de 750 g ;\nune plaquette de beurre de 250 g ;\nun sac de pommes de 1 kg et 50 g.\n\nLa recette demande 300 g de farine, 150 g de sucre, 125 g de beurre et 4 œufs. Noé et son papa mélangent tout dans un grand saladier.\n\nLe gâteau cuit ensuite 35 minutes dans le four.",
+  "image": null,
+  "duree_estimee_min": 10,
+  "questions": [
+    {
+      "key": "q1",
+      "skill_id": "B042",
+      "statement": "Noé veut savoir quelle masse de farine, de sucre et de beurre il met dans le gâteau. Quelles masses doit-il additionner ?",
+      "type": "qcm",
+      "choices": [
+        {
+          "key": "a",
+          "text": "300 g ; 150 g ; 125 g",
+          "misconception": null
+        },
+        {
+          "key": "b",
+          "text": "1 kg ; 750 g ; 250 g",
+          "misconception": "L'élève prend les masses des paquets du placard. Mais Noé ne met pas les paquets entiers : il met les quantités de la recette."
+        },
+        {
+          "key": "c",
+          "text": "300 g ; 150 g ; 125 g ; 4",
+          "misconception": "L'élève ajoute aussi le nombre d'œufs. Mais 4 est un nombre d'œufs, pas une masse en grammes : on ne peut pas l'ajouter à des grammes."
+        }
+      ],
+      "answer": {
+        "value": "a"
+      },
+      "points": 2,
+      "solution_steps": [
+        "La question porte sur ce que Noé **met dans le gâteau** : ce sont les quantités de la recette.",
+        "Farine 300 g, sucre 150 g, beurre 125 g. Les paquets du placard et les œufs ne servent pas ici."
+      ],
+      "hint": "Relis la phrase qui parle de la recette."
+    },
+    {
+      "key": "q2",
+      "skill_id": "B042",
+      "statement": "Quelle masse de farine, de sucre et de beurre Noé met-il en tout dans le gâteau ?",
+      "type": "numerique",
+      "answer": {
+        "value": 575,
+        "unit": "g",
+        "accepted": [
+          "575 g",
+          "575 grammes"
+        ]
+      },
+      "points": 3,
+      "solution_steps": [
+        "On pose l'addition 300 + 150 + 125 en alignant les unités, les dizaines et les centaines.",
+        "Unités : 0 + 0 + 5 = 5. Dizaines : 0 + 5 + 2 = 7. Centaines : 3 + 1 + 1 = 5.",
+        "300 + 150 + 125 = 575 : Noé met **575 g** de farine, de sucre et de beurre."
+      ],
+      "hint": "Pose l'addition des trois masses de la recette."
+    },
+    {
+      "key": "q3",
+      "skill_id": "P006",
+      "statement": "Range les quatre paquets du placard, du plus léger au plus lourd.",
+      "type": "qcm",
+      "choices": [
+        {
+          "key": "a",
+          "text": "farine ; pommes ; beurre ; sucre",
+          "misconception": "L'élève range les nombres écrits sans regarder les unités : 1 pour la farine, 50 pour les pommes, puis 250 et 750. Mais 1 kg, c'est 1 000 g : plus que 750 g. Et 1 kg et 50 g, c'est encore plus que 1 kg."
+        },
+        {
+          "key": "b",
+          "text": "pommes ; beurre ; sucre ; farine",
+          "misconception": "L'élève lit 1 kg et 50 g comme 150 g. Mais 1 kg et 50 g, c'est 1 kg plus 50 g : plus lourd que le paquet de farine de 1 kg."
+        },
+        {
+          "key": "c",
+          "text": "beurre ; sucre ; farine ; pommes",
+          "misconception": null
+        }
+      ],
+      "answer": {
+        "value": "c"
+      },
+      "points": 4,
+      "solution_steps": [
+        "On compare dans la même unité. On sait que 1 kg = 1 000 g.",
+        "Beurre : 250 g. Sucre : 750 g. Farine : 1 kg, c'est 1 000 g. Pommes : 1 kg et 50 g, c'est 50 g de plus que la farine.",
+        "Du plus léger au plus lourd : **beurre, sucre, farine, pommes**."
+      ],
+      "hint": "Combien de grammes y a-t-il dans 1 kg ?"
+    }
+  ],
+  "review_status": "relu_agent",
+  "programme_ref": "Cycle 2, Cours élémentaire première année, Grandeurs et mesures, Les masses : « L'élève sait ordonner quatre masses exprimées en gramme ou en kilogramme. »"
+}

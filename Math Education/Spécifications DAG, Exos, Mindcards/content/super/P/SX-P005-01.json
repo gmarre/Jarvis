@@ -1,0 +1,110 @@
+{
+  "id": "SX-P005-01",
+  "skill_id": "P005",
+  "skill_ids": [
+    "P005",
+    "A006",
+    "B042"
+  ],
+  "school_level": "CE1",
+  "title": "La journée sportive",
+  "contexte": "Mercredi, l'école de Jade organise une journée sportive au stade, à 3 km de l'école. 64 élèves de CE1 y participent.\n\nPour la course de relais, chaque équipe court deux morceaux de piste : le premier mesure 260 m, le second 370 m.\n\nAu saut en longueur :\nJade saute 1 m et 72 cm ;\nMalo saute 168 cm ;\nInès saute 1 m et 9 cm.\n\nÀ la fin de la journée, l'équipe bleue a 245 points et l'équipe rouge 254 points. Le goûter est servi à 16 heures.",
+  "image": null,
+  "duree_estimee_min": 10,
+  "questions": [
+    {
+      "key": "q1",
+      "skill_id": "A006",
+      "statement": "Quelle équipe a le plus de points ?",
+      "type": "qcm",
+      "choices": [
+        {
+          "key": "a",
+          "text": "L'équipe bleue",
+          "misconception": "L'élève compare les chiffres des unités, 5 et 4. Mais les centaines sont les mêmes : il faut comparer les dizaines, 4 dans 245 et 5 dans 254."
+        },
+        {
+          "key": "b",
+          "text": "Les deux équipes sont à égalité",
+          "misconception": "245 et 254 s'écrivent avec les mêmes chiffres, mais dans un ordre différent : ce ne sont pas les mêmes nombres."
+        },
+        {
+          "key": "c",
+          "text": "L'équipe rouge",
+          "misconception": null
+        }
+      ],
+      "answer": {
+        "value": "c"
+      },
+      "points": 2,
+      "solution_steps": [
+        "On compare 245 et 254. Les deux nombres ont 2 centaines.",
+        "On compare les dizaines : 4 dizaines dans 245, 5 dizaines dans 254. Donc $254 > 245$.",
+        "L'**équipe rouge** a le plus de points."
+      ],
+      "hint": "Les centaines sont les mêmes : regarde le chiffre suivant."
+    },
+    {
+      "key": "q2",
+      "skill_id": "B042",
+      "statement": "Quelle longueur de piste court une équipe pendant le relais ?",
+      "type": "numerique",
+      "answer": {
+        "value": 630,
+        "unit": "m",
+        "accepted": [
+          "630 m",
+          "630 mètres"
+        ]
+      },
+      "points": 3,
+      "solution_steps": [
+        "Une équipe court les deux morceaux : on additionne 260 m et 370 m.",
+        "On pose l'addition. Unités : 0 + 0 = 0. Dizaines : 6 + 7 = 13, on écrit 3 et on retient 1 centaine. Centaines : 1 + 2 + 3 = 6.",
+        "260 + 370 = 630 : une équipe court **630 m**."
+      ],
+      "hint": "Pose l'addition en alignant les unités, les dizaines et les centaines."
+    },
+    {
+      "key": "q3",
+      "skill_id": "P005",
+      "statement": "Range les trois sauts, du plus long au plus court.",
+      "type": "qcm",
+      "choices": [
+        {
+          "key": "a",
+          "text": "Malo ; Jade ; Inès",
+          "misconception": "L'élève compare seulement les nombres écrits devant cm : 168, 72 et 9. Il oublie le mètre de Jade et d'Inès : 1 m et 72 cm, c'est 172 cm."
+        },
+        {
+          "key": "b",
+          "text": "Inès ; Jade ; Malo",
+          "misconception": "L'élève lit 1 m et 9 cm comme 190 cm. Mais 1 m et 9 cm, c'est 100 cm et 9 cm, soit 109 cm."
+        },
+        {
+          "key": "c",
+          "text": "Jade ; Inès ; Malo",
+          "misconception": "L'élève croit qu'une longueur écrite avec des mètres est toujours plus longue qu'une longueur écrite en centimètres. Mais 168 cm, c'est plus que 1 m et 9 cm, qui fait 109 cm."
+        },
+        {
+          "key": "d",
+          "text": "Jade ; Malo ; Inès",
+          "misconception": null
+        }
+      ],
+      "answer": {
+        "value": "d"
+      },
+      "points": 4,
+      "solution_steps": [
+        "Pour comparer, on écrit les trois sauts dans la même unité, le centimètre. On sait que 1 m = 100 cm.",
+        "Jade : 1 m et 72 cm, c'est 100 cm + 72 cm = 172 cm. Inès : 1 m et 9 cm, c'est 100 cm + 9 cm = 109 cm. Malo : 168 cm.",
+        "$172 > 168 > 109$ : du plus long au plus court, **Jade, Malo, Inès**."
+      ],
+      "hint": "Écris chaque saut en centimètres."
+    }
+  ],
+  "review_status": "relu_agent",
+  "programme_ref": "Cycle 2, Cours élémentaire première année, Grandeurs et mesures, Les longueurs : « Connaitre et utiliser les unités mètre, centimètre, kilomètre et les symboles associés (m, cm et km). »"
+}
