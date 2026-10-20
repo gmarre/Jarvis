@@ -21,6 +21,8 @@ import type { SupabaseClient } from '@supabase/supabase-js'
 import type {
   Exercise,
   ExercisesBank,
+  Flashcard,
+  FlashcardsBank,
   Mindmap,
   MindmapsBank,
   PublicExercise,
@@ -86,15 +88,17 @@ export async function chargerContenuLocal(): Promise<ContenuLocal> {
   if (!DEMONSTRATION_POSSIBLE) {
     throw new Error('Contenu local absent de cette construction : il se lit dans la base.')
   }
-  const [dag, banque, cartes] = await Promise.all([
+  const [dag, banque, cartes, defis] = await Promise.all([
     import('./skills_dag.json'),
     import('./exercises.json'),
     import('./mindmaps.json'),
+    import('./flashcards.json'),
   ])
   return {
     skills: (dag.default as unknown as SkillsDag).skills,
     exercises: (banque.default as unknown as ExercisesBank).exercises,
     mindmaps: (cartes.default as unknown as MindmapsBank).mindmaps,
+    flashcards: (defis.default as unknown as FlashcardsBank).flashcards,
   }
 }
 
@@ -105,18 +109,21 @@ export async function chargerContenuLocal(): Promise<ContenuLocal> {
 const PAGE = 1000
 
 /** Change si la forme du cache change : l'ancien est alors ignore. */
-const CLE_CACHE = 'racine.contenu.v2'
+const CLE_CACHE = 'racine.contenu.v3'
 /**
  * Caches des versions precedentes, a effacer. La v1 (phase 2) contenait les
- * reponses : la laisser sur l'appareil annulerait la phase 3.
+ * reponses : la laisser sur l'appareil annulerait la phase 3. La v2 n'avait
+ * pas les cartes defi.
  */
-const ANCIENS_CACHES = ['racine.contenu.v1']
+const ANCIENS_CACHES = ['racine.contenu.v1', 'racine.contenu.v2']
 
 interface Publication {
   id: number
   nb_skills: number
   nb_exercises: number
   nb_mindmaps: number
+  /** Colonne de la migration 0014 : absente avant elle. */
+  nb_flashcards?: number
 }
 
 interface Cache {
@@ -221,7 +228,9 @@ function versExercice(ligne: LigneExercice): PublicExercise {
 export async function chargerContenuSupabase(db: SupabaseClient): Promise<ContenuPedagogique> {
   const { data: publication, error } = await db
     .from('content_publications')
-    .select('id, nb_skills, nb_exercises, nb_mindmaps')
+    // « * » plutot qu'une liste : nb_flashcards n'existe qu'apres la migration
+    // 0014, et une colonne nommee absente ferait echouer toute la lecture.
+    .select('*')
     .order('id', { ascending: false })
     .limit(1)
     .maybeSingle<Publication>()
@@ -235,10 +244,14 @@ export async function chargerContenuSupabase(db: SupabaseClient): Promise<Conten
   const enCache = lireCache(publication.id)
   if (enCache) return enCache
 
-  const [skills, lignesExercices, mindmaps] = await Promise.all([
+  const nbDefis = publication.nb_flashcards ?? 0
+  const [skills, lignesExercices, mindmaps, defis] = await Promise.all([
     lireTable<Skill>(db, 'content_skills', 'id', publication.nb_skills),
     lireTable<LigneExercice>(db, 'content_exercises', 'id', publication.nb_exercises),
     lireTable<Mindmap>(db, 'content_mindmaps', 'id', publication.nb_mindmaps),
+    nbDefis > 0
+      ? lireTable<Flashcard>(db, 'content_flashcards', 'id', nbDefis)
+      : Promise.resolve([] as Flashcard[]),
   ])
 
   // Une publication arrivee entre deux lectures melangerait deux versions du
@@ -246,7 +259,8 @@ export async function chargerContenuSupabase(db: SupabaseClient): Promise<Conten
   if (
     skills.length !== publication.nb_skills ||
     lignesExercices.length !== publication.nb_exercises ||
-    mindmaps.length !== publication.nb_mindmaps
+    mindmaps.length !== publication.nb_mindmaps ||
+    defis.length !== nbDefis
   ) {
     throw new Error('Contenu en cours de publication : recharge la page dans un instant.')
   }
@@ -255,6 +269,7 @@ export async function chargerContenuSupabase(db: SupabaseClient): Promise<Conten
     skills: skills.map((skill) => ({ ...skill, programme_ref: skill.programme_ref ?? [] })),
     exercises: lignesExercices.map(versExercice),
     mindmaps,
+    flashcards: defis,
   }
 
   ecrireCache(publication.id, contenu)

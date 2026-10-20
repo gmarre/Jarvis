@@ -102,9 +102,10 @@ select 'TEST 39 un eleve ne modifie pas le contenu' as test,
 
 -- Migration 0009 : le domaine P est accepte partout, et aucune ancienne
 -- contrainte A-O n'a survecu (un drop if exists sur un mauvais nom ne dit rien).
+-- Au moins les 5 de la 0009 : la 0014 en ajoute trois.
 select 'TEST 50 plus aucune contrainte limitee aux domaines A a O' as test,
        (select count(*) from pg_constraint where pg_get_constraintdef(oid) like '%A-O%') as restantes,
        not exists (select 1 from pg_constraint where pg_get_constraintdef(oid) like '%A-O%')
-       and (select count(*) from pg_constraint where pg_get_constraintdef(oid) like '%A-P%') = 5 as ok;
+       and (select count(*) from pg_constraint where pg_get_constraintdef(oid) like '%A-P%') >= 5 as ok;
 
 select 'TEST FIN' as test, true as ok;

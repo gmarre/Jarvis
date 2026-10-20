@@ -4,6 +4,7 @@ import { domains, getExercisesForSkill, getMindmap, getSkill, requireSkill } fro
 import {
   buildPathToTarget,
   domainProgress,
+  emptyProgress,
   findPrimaryRootGap,
   findRootGaps,
   overallProgress,
@@ -15,6 +16,7 @@ import {
 } from '@/lib/dag'
 import { startOfDay } from '@/lib/format'
 import { prioriteDesChemins, proposerChemins, type Chemin } from '@/lib/chemins'
+import { defiDu, type DefiProgressMap } from '@/lib/defis'
 import { useSession } from './session'
 import type { Mindmap, Skill } from '@/types/content'
 import type { SkillProgress } from '@/types/domain'
@@ -22,9 +24,10 @@ import type { SkillProgress } from '@/types/domain'
 export interface ReviewItem {
   /**
    * « controle » : un exercice de la competence acquise est du (niveau sur 5,
-   * lib/maitrise.ts) ; « carte » : la carte mentale est a relire (Leitner).
+   * lib/maitrise.ts) ; « defi » : des cartes defi sont a retrouver de tete
+   * (lib/defis.ts) ; « carte » : la carte mentale est a relire (Leitner).
    */
-  kind: 'controle' | 'carte'
+  kind: 'controle' | 'defi' | 'carte'
   skill: Skill
   mindmap: Mindmap | undefined
   progress: SkillProgress
@@ -32,6 +35,8 @@ export interface ReviewItem {
   label: string
   /** En retard sur son echeance : a traiter en premier. */
   overdue: boolean
+  /** Nombre de cartes defi a revoir (kind « defi » seulement). */
+  cartesDefi?: number
 }
 
 export interface DailyPlan {
@@ -67,7 +72,9 @@ export interface DailyPlan {
   cheminActif: Chemin | null
 }
 
-function collectReviews(progress: ProgressMap, now: Date): ReviewItem[] {
+const ORDRE_DES_REVISIONS: Record<ReviewItem['kind'], number> = { controle: 0, defi: 1, carte: 2 }
+
+function collectReviews(progress: ProgressMap, defis: DefiProgressMap, now: Date): ReviewItem[] {
   const today = startOfDay(now).getTime()
   const du = (iso: string | null) => iso !== null && startOfDay(new Date(iso)).getTime() <= today
   const enRetard = (iso: string) => startOfDay(new Date(iso)).getTime() < today
@@ -100,10 +107,36 @@ function collectReviews(progress: ProgressMap, now: Date): ReviewItem[] {
     }
   }
 
+  // Cartes defi dues, regroupees par competence : une seule ligne par seance.
+  const parCompetence = new Map<string, { nombre: number; plusAncienne: number }>()
+  for (const p of Object.values(defis)) {
+    if (!defiDu(p, now)) continue
+    const echeance = new Date(p.next_review_at).getTime()
+    const deja = parCompetence.get(p.skill_id)
+    parCompetence.set(p.skill_id, {
+      nombre: (deja?.nombre ?? 0) + 1,
+      plusAncienne: Math.min(deja?.plusAncienne ?? echeance, echeance),
+    })
+  }
+  for (const [skillId, { nombre, plusAncienne }] of parCompetence) {
+    const skill = getSkill(skillId)
+    if (!skill) continue
+    items.push({
+      kind: 'defi',
+      skill,
+      mindmap: getMindmap(skill.mindmap_id),
+      progress: progress[skillId] ?? emptyProgress(skillId),
+      label: nombre === 1 ? '1 carte défi' : `${nombre} cartes défi`,
+      overdue: startOfDay(new Date(plusAncienne)).getTime() < today,
+      cartesDefi: nombre,
+    })
+  }
+
   // Les controles d'abord (ils peuvent rouvrir une competence), puis les
-  // retards, puis les cartes les moins avancees.
+  // cartes defi, puis les cartes mentales ; dans chaque groupe, les retards,
+  // puis les moins avancees.
   return items.sort((a, b) => {
-    if (a.kind !== b.kind) return a.kind === 'controle' ? -1 : 1
+    if (a.kind !== b.kind) return ORDRE_DES_REVISIONS[a.kind] - ORDRE_DES_REVISIONS[b.kind]
     if (a.overdue !== b.overdue) return a.overdue ? -1 : 1
     return a.progress.review_box - b.progress.review_box
   })
@@ -140,7 +173,7 @@ export function useDailyPlan(): DailyPlan {
 
     const { progress, objectifSkillId } = session
     const now = new Date()
-    const reviews = collectReviews(progress, now)
+    const reviews = collectReviews(progress, session.defis, now)
     const domainIds = domains.map((d) => d.id)
     const overall = overallProgress(progress, domainIds)
     const perDomain = domainIds
@@ -176,8 +209,12 @@ export function useDailyPlan(): DailyPlan {
     )
 
     // Une carte mentale se relit en 2 minutes environ, un controle se fait en 2
-    // a 3 minutes : de quoi annoncer une duree honnete sans sur-promettre.
-    const reviewSeconds = reviews.reduce((t, r) => t + (r.kind === 'controle' ? 150 : 120), 0)
+    // a 3 minutes, une carte defi en 20 secondes : de quoi annoncer une duree
+    // honnete sans sur-promettre.
+    const reviewSeconds = reviews.reduce(
+      (t, r) => t + (r.kind === 'controle' ? 150 : r.kind === 'defi' ? 20 * (r.cartesDefi ?? 1) : 120),
+      0,
+    )
 
     return {
       priority,

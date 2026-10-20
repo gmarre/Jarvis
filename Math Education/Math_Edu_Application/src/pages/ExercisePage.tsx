@@ -1,7 +1,7 @@
 import { useEffect, useMemo, useRef, useState } from 'react'
 import { Link, Navigate, useNavigate, useParams } from 'react-router-dom'
 
-import { getExercisesForSkill, getSkill } from '@/content'
+import { getExercisesForSkill, getFlashcardsForSkill, getSkill } from '@/content'
 import { cn } from '@/lib/cn'
 import { exerciseLevelLabel } from '@/lib/exercise'
 import { formatDateLong, formatDuration } from '@/lib/format'
@@ -9,12 +9,11 @@ import { controleDu, exerciceDeControle } from '@/lib/maitrise'
 import { AnswerInput } from '@/components/exercise/AnswerInput'
 import { ExerciseFigure } from '@/components/exercise/ExerciseFigure'
 import { RecettePanel } from '@/components/recette/RecettePanel'
-import { Wordmark } from '@/components/layout/AppShell'
+import { FocusFrame } from '@/components/layout/FocusFrame'
 import { Badge } from '@/components/ui/Badge'
 import { Button, ButtonLink } from '@/components/ui/Button'
 import { Card } from '@/components/ui/Card'
 import { EmptyState, Level } from '@/components/ui/Misc'
-import { StepProgress } from '@/components/ui/Progress'
 import { RichText } from '@/components/ui/RichText'
 import { IconCheck, IconClose, IconHint } from '@/components/ui/icons'
 import { useAuthenticatedSession, type AnswerResult } from '@/state/session'
@@ -162,6 +161,7 @@ function ExerciseSession({ skillId, onReprendre }: { skillId: string; onReprendr
         mastered={masteredDuringSession}
         descendTo={descendTo}
         mindmapId={skill.mindmap_id}
+        defiSkillId={getFlashcardsForSkill(skill.id).length > 0 ? skill.id : null}
         dernier={dernier}
         onReprendre={onReprendre}
       />
@@ -263,46 +263,6 @@ function ExerciseSession({ skillId, onReprendre }: { skillId: string; onReprendr
   )
 }
 
-/** Cadre plein ecran des modes concentres : test, exercice, carte mentale. */
-function FocusFrame({
-  title,
-  onQuit,
-  progress,
-  counter,
-  children,
-}: {
-  title: string
-  onQuit: () => void
-  progress?: { current: number; total: number }
-  counter?: string
-  children: React.ReactNode
-}) {
-  return (
-    <div className="flex min-h-full flex-col bg-canvas">
-      <header className="flex items-center gap-4 border-b border-divider bg-surface px-5 py-3.5 sm:px-8">
-        <Wordmark className="hidden text-base sm:block" />
-        <span className="truncate text-[13px] font-semibold text-ink sm:hidden">{title}</span>
-        {progress && <StepProgress current={progress.current} total={progress.total} />}
-        {counter && (
-          <span className="shrink-0 text-[12.5px] font-semibold text-ink-subtle">{counter}</span>
-        )}
-        <button
-          type="button"
-          onClick={onQuit}
-          aria-label="Quitter"
-          className="grid h-10 w-10 shrink-0 place-items-center rounded-[10px] border border-line text-ink-muted transition hover:bg-muted"
-        >
-          <IconClose size={17} />
-        </button>
-      </header>
-
-      <div className="flex flex-1 justify-center px-5 py-7 sm:px-8 sm:py-10">
-        <div className="w-full max-w-[680px]">{children}</div>
-      </div>
-    </div>
-  )
-}
-
 /** Correction : verdict, erreur de raisonnement, puis corrige detaille. */
 function CorrectionPanel({
   result,
@@ -389,6 +349,7 @@ function SessionSummary({
   mastered,
   descendTo,
   mindmapId,
+  defiSkillId,
   dernier,
   onReprendre,
 }: {
@@ -397,6 +358,8 @@ function SessionSummary({
   mastered: boolean
   descendTo: string[]
   mindmapId: string | null
+  /** Competence dont les cartes defi sont a proposer ensuite, ou null. */
+  defiSkillId: string | null
   dernier: AnswerResult | null
   onReprendre: () => void
 }) {
@@ -456,6 +419,18 @@ function SessionSummary({
             >
               Travailler ce prérequis
             </Button>
+          </div>
+        )}
+
+        {defiSkillId && !prerequisite && (
+          <div className="mt-6 rounded-card border border-accent-100 bg-accent-50 p-4 text-left">
+            <p className="text-[12.5px] font-semibold text-accent-700">Défi : retrouve-le de tête</p>
+            <p className="mt-1.5 text-[12.5px] leading-relaxed text-accent-700/80">
+              Quelques cartes question et réponse pour vérifier que l'essentiel tient en mémoire.
+            </p>
+            <ButtonLink to={`/defi/${defiSkillId}`} size="sm" className="mt-3">
+              Faire les cartes défi
+            </ButtonLink>
           </div>
         )}
 

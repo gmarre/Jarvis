@@ -71,6 +71,19 @@ export interface Abonnement {
  */
 export type SkillStatus = 'locked' | 'available' | 'in_progress' | 'mastered'
 
+/** Table `flashcard_progress` (migration 0014) : revision espacee d'une carte defi. */
+export interface FlashcardProgress {
+  card_id: string
+  skill_id: string
+  /** Boite de Leitner, 1 (demain) a 5 (dans un mois). Voir lib/defis.ts. */
+  box: number
+  next_review_at: string
+  reviews: number
+  /** Derniere reponse de l'eleve : « je savais » ou non. */
+  last_knew: boolean
+  updated_at: string
+}
+
 /** Table `skill_progress`. */
 export interface SkillProgress {
   skill_id: string

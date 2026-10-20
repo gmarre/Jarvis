@@ -47,6 +47,7 @@ installerContenu({
   skills: [competence('X1', []), competence('X2', ['X1']), competence('X3', ['X2'])],
   exercises: [exercice('X1'), exercice('X3')],
   mindmaps: [],
+  flashcards: [],
 })
 
 function progression(maitrisees: string[]): ProgressMap {

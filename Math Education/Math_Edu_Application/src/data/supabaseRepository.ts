@@ -15,6 +15,7 @@ import { FunctionsHttpError, type PostgrestError } from '@supabase/supabase-js'
 import { requireSupabase } from '@/lib/supabase'
 import { messageAuth } from '@/lib/authErreurs'
 import { emptyProgress, type ProgressMap } from '@/lib/dag'
+import type { DefiProgressMap } from '@/lib/defis'
 import type { Correction } from '@/lib/exercise'
 import { skills } from '@/content'
 import { assurerContenu, chargerContenuSupabase } from '@/content/chargement'
@@ -32,6 +33,7 @@ import type {
   Booking,
   ContentReview,
   ExerciseAttempt,
+  FlashcardProgress,
   ModificationEnAttente,
   PlacementResult,
   Profile,
@@ -211,7 +213,7 @@ async function chargerSession(userId: string): Promise<Session | null> {
   // fois connecte, et toute session rendue doit le trouver installe (le moteur
   // et versProgression le lisent). Il ne se charge qu'une fois par appareil et
   // par publication, voir content/chargement.ts.
-  const [, profil, progression, tentatives, positionnement, reservations] = await Promise.all([
+  const [, profil, progression, tentatives, positionnement, reservations, defis] = await Promise.all([
     assurerContenu(() => chargerContenuSupabase(db)).catch((cause: unknown) => {
       throw erreur('Lecture du contenu', cause instanceof Error ? cause : null)
     }),
@@ -231,6 +233,7 @@ async function chargerSession(userId: string): Promise<Session | null> {
       .limit(1)
       .maybeSingle(),
     db.from('bookings').select('*').eq('eleve_id', userId),
+    db.from('flashcard_progress').select('*').eq('user_id', userId),
   ])
 
   if (profil.error) throw erreur('Lecture du profil', profil.error)
@@ -241,6 +244,10 @@ async function chargerSession(userId: string): Promise<Session | null> {
   if (tentatives.error) throw erreur('Lecture des tentatives', tentatives.error)
   if (positionnement.error) throw erreur('Lecture du positionnement', positionnement.error)
   if (reservations.error) throw erreur('Lecture des reservations', reservations.error)
+  // Avant la migration 0014, la table n'existe pas : l'eleve garde sa session,
+  // sans cartes defi. Toute autre erreur remonte.
+  const tableAbsente = defis.error && ['42P01', 'PGRST205'].includes(defis.error.code ?? '')
+  if (defis.error && !tableAbsente) throw erreur('Lecture des cartes defi', defis.error)
 
   const placement: PlacementResult | null = positionnement.data
     ? {
@@ -260,7 +267,24 @@ async function chargerSession(userId: string): Promise<Session | null> {
     placement,
     bookings: (reservations.data ?? []) as Booking[],
     attempts: (tentatives.data ?? []) as ExerciseAttempt[],
+    defis: versDefis(tableAbsente ? [] : ((defis.data ?? []) as FlashcardProgress[])),
   }
+}
+
+function versDefis(lignes: FlashcardProgress[]): DefiProgressMap {
+  const parCarte: DefiProgressMap = {}
+  for (const ligne of lignes) {
+    parCarte[ligne.card_id] = {
+      card_id: ligne.card_id,
+      skill_id: ligne.skill_id,
+      box: ligne.box,
+      next_review_at: ligne.next_review_at,
+      reviews: ligne.reviews,
+      last_knew: ligne.last_knew,
+      updated_at: ligne.updated_at,
+    }
+  }
+  return parCarte
 }
 
 // =============================================================================
@@ -483,6 +507,18 @@ export const supabaseRepository: DataRepository = {
       .upsert({ ...progress, user_id: utilisateur.user.id }, { onConflict: 'user_id,skill_id' })
 
     if (error) throw erreur('Enregistrement de la revision', error)
+  },
+
+  async saveDefi(progress: FlashcardProgress) {
+    const db = requireSupabase()
+    const { data: utilisateur } = await db.auth.getUser()
+    if (!utilisateur.user) throw new RepositoryError('Aucune session ouverte')
+
+    const { error } = await db
+      .from('flashcard_progress')
+      .upsert({ ...progress, user_id: utilisateur.user.id }, { onConflict: 'user_id,card_id' })
+
+    if (error) throw erreur('Enregistrement de la carte defi', error)
   },
 
   async savePlacement(result: PlacementResult, progress: SkillProgress[]) {

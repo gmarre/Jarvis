@@ -48,6 +48,7 @@ export default function WorkspacePage() {
                       plan.priorityExerciseCount,
                       plan.reviews.filter((r) => r.kind === 'controle').length,
                       plan.reviews.filter((r) => r.kind === 'carte').length,
+                      plan.reviews.reduce((n, r) => n + (r.cartesDefi ?? 0), 0),
                     )}.`
           }
           actions={
@@ -94,13 +95,21 @@ export default function WorkspacePage() {
   )
 }
 
-function describePlan(exerciseCount: number, controleCount: number, carteCount: number): string {
+function describePlan(
+  exerciseCount: number,
+  controleCount: number,
+  carteCount: number,
+  defiCount = 0,
+): string {
   const parts: string[] = []
   if (exerciseCount > 0) {
     parts.push(exerciseCount === 1 ? '1 exercice ciblé' : `${exerciseCount} exercices ciblés`)
   }
   if (controleCount > 0) {
     parts.push(controleCount === 1 ? '1 contrôle' : `${controleCount} contrôles`)
+  }
+  if (defiCount > 0) {
+    parts.push(defiCount === 1 ? '1 carte défi' : `${defiCount} cartes défi`)
   }
   if (carteCount > 0) {
     parts.push(carteCount === 1 ? '1 carte à revoir' : `${carteCount} cartes à revoir`)
@@ -255,7 +264,9 @@ function ReviewList({ reviews }: { reviews: ReviewItem[] }) {
                 to={
                   item.kind === 'controle'
                     ? `/exercice/${item.skill.id}`
-                    : item.mindmap
+                    : item.kind === 'defi'
+                      ? `/defi/${item.skill.id}`
+                      : item.mindmap
                       ? `/cartes/${item.mindmap.id}`
                       : '/cartes'
                 }
@@ -275,11 +286,13 @@ function ReviewList({ reviews }: { reviews: ReviewItem[] }) {
                   <span className="block text-[11.5px] leading-relaxed text-ink-faint">
                     {item.kind === 'controle'
                       ? 'Contrôle : un exercice pour vérifier que c’est toujours acquis'
-                      : `${item.mindmap ? item.mindmap.title : 'Carte mentale'} · ${item.label}`}
+                      : item.kind === 'defi'
+                        ? `${item.label} : retrouve la réponse de tête`
+                        : `${item.mindmap ? item.mindmap.title : 'Carte mentale'} · ${item.label}`}
                   </span>
                 </span>
                 <span className="hidden shrink-0 rounded-[9px] bg-muted px-3 py-1.5 text-xs font-semibold text-ink-muted sm:block">
-                  {item.kind === 'controle' ? 'Vérifier' : 'Revoir'}
+                  {item.kind === 'controle' ? 'Vérifier' : item.kind === 'defi' ? 'Défier' : 'Revoir'}
                 </span>
                 <IconChevronRight size={16} className="shrink-0 text-locked-200 sm:hidden" />
               </Link>
@@ -290,7 +303,7 @@ function ReviewList({ reviews }: { reviews: ReviewItem[] }) {
 
       <div className="mt-4 flex flex-wrap items-center justify-between gap-3 border-t border-divider pt-4">
         <p className="text-[12.5px] leading-snug text-ink-subtle">
-          Contrôles à J+3, J+10, J+30 · cartes à J+1, J+3, J+7, J+21
+          Contrôles à J+3, J+10, J+30 · défis de J+1 à J+30 · cartes mentales à J+1, J+3, J+7, J+21
         </p>
         {first?.kind === 'carte' && first.mindmap && (
           <Link

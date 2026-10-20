@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom'
 
-import { getExercisesForSkill, getMindmap, getSkill } from '@/content'
+import { getExercisesForSkill, getFlashcardsForSkill, getMindmap, getSkill } from '@/content'
 import { cn } from '@/lib/cn'
 import { statusOf, unlockCount, type ProgressMap } from '@/lib/dag'
 import { Badge, StatusBadge } from '@/components/ui/Badge'
@@ -126,6 +126,12 @@ export function SkillDetailPanel({
       {mindmap && (
         <ButtonLink to={`/cartes/${mindmap.id}`} variant="secondary" fullWidth>
           Voir la carte mentale
+        </ButtonLink>
+      )}
+
+      {getFlashcardsForSkill(skill.id).length > 0 && status !== 'locked' && (
+        <ButtonLink to={`/defi/${skill.id}`} variant="secondary" fullWidth className="mt-2.5">
+          Cartes défi ({getFlashcardsForSkill(skill.id).length})
         </ButtonLink>
       )}
 

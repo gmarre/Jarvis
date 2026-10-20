@@ -149,6 +149,30 @@ export interface Mindmap {
   markdown: string
 }
 
+/**
+ * Carte defi, recto et verso (sprint 2, point 4). L'eleve s'auto-evalue : le
+ * verso n'est pas une reponse a proteger, il voyage avec le contenu public.
+ */
+export interface Flashcard {
+  id: string
+  skill_id: string
+  /** Question courte, Markdown et KaTeX. */
+  recto: string
+  /** Reponse, puis le pourquoi en une phrase. Markdown et KaTeX. */
+  verso: string
+  review_status: ReviewStatus
+}
+
+export interface FlashcardsBank {
+  metadata: {
+    version: string
+    scope?: string
+    updated_at?: string
+    total_flashcards: number
+  }
+  flashcards: Flashcard[]
+}
+
 export interface MindmapsBank {
   metadata: {
     version: string

@@ -15,13 +15,18 @@ Disposition, sous `Specifications DAG, Exos, Mindcards/content/` :
     exercices/<domaine>/<id>.json exercices d'une competence, D puis E puis M
     cartes/_metadata.json         metadonnees des cartes mentales
     cartes/<id>.json              une carte par fichier
+    flashcards/_metadata.json     metadonnees des cartes defi (sprint 2, point 4)
+    flashcards/<domaine>/<id>.json cartes defi d'une competence, par numero
 
 `charger()` rend les trois structures dans la forme historique (un dict
 `{"metadata", "skills"}`, `{"metadata", "exercises"}`, `{"metadata",
 "mindmaps"}`) : les controles et les fusions n'ont pas a connaitre le decoupage.
 `ecrire()` fait l'inverse, recalcule les compteurs et supprime les fichiers
-devenus orphelins. `exporter_app()` assemble les trois fichiers que
-l'application importe, en attendant que le contenu soit servi par la base.
+devenus orphelins. `exporter_app()` assemble les fichiers que
+l'application importe en mode demonstration.
+
+Les cartes defi ont leurs propres fonctions (`charger_defis`, `ecrire_defis`) :
+`charger()` garde sa forme a trois elements, que toutes les fusions emploient.
 
 Usage en ligne de commande :
     python scripts/contenu.py export-app     recopie le contenu dans l'application
@@ -198,12 +203,57 @@ def avec_figures(exercices: list[dict], racine: Path = CONTENT) -> list[dict]:
     return sortie
 
 
-def exporter_app(dag: dict, exercices: dict, cartes: dict, dest: Path = APP_CONTENT) -> None:
-    """Les trois fichiers assembles que l'application importe."""
+DEFIS_VIDES = {"metadata": {"version": "1.0", "scope": "Cartes defi, CP a 3e", "total_flashcards": 0},
+               "flashcards": []}
+
+
+def _tri_defis(defis: list[dict]) -> list[dict]:
+    return sorted(defis, key=lambda d: (d["skill_id"], d["id"]))
+
+
+def charger_defis(racine: Path = CONTENT) -> dict:
+    """Cartes defi, dans la forme {"metadata", "flashcards"} ; vide si le dossier n'existe pas."""
+    dossier = Path(racine) / "flashcards"
+    if not (dossier / "_metadata.json").is_file():
+        return json.loads(json.dumps(DEFIS_VIDES))
+    defis: list[dict] = []
+    for f in sorted(dossier.glob("*/*.json")):
+        defis.extend(_lire(f))
+    return {"metadata": _lire(dossier / "_metadata.json"), "flashcards": _tri_defis(defis)}
+
+
+def ecrire_defis(defis: dict, racine: Path = CONTENT) -> None:
+    """Ecrit les cartes defi par competence, et supprime les fichiers orphelins."""
+    dossier = Path(racine) / "flashcards"
+    defis["metadata"]["total_flashcards"] = len(defis["flashcards"])
+    attendus: set[Path] = set()
+    _ecrire_json(dossier / "_metadata.json", defis["metadata"])
+    attendus.add((dossier / "_metadata.json").resolve())
+    par_comp: dict[str, list[dict]] = {}
+    for d in _tri_defis(defis["flashcards"]):
+        par_comp.setdefault(d["skill_id"], []).append(d)
+    for sid, liste in par_comp.items():
+        chemin = dossier / sid[0] / f"{sid}.json"
+        _ecrire_json(chemin, liste)
+        attendus.add(chemin.resolve())
+    for f in dossier.glob("*/*.json"):
+        if f.resolve() not in attendus:
+            f.unlink()
+    for d in dossier.glob("*"):
+        if d.is_dir() and not any(d.iterdir()):
+            d.rmdir()
+
+
+def exporter_app(dag: dict, exercices: dict, cartes: dict, dest: Path = APP_CONTENT,
+                 defis: dict | None = None) -> None:
+    """Les fichiers assembles que l'application importe en mode demonstration."""
     recalculer_compteurs(dag, exercices, cartes)
     _ecrire_json(Path(dest) / "skills_dag.json", dag)
     _ecrire_json(Path(dest) / "exercises.json", {**exercices, "exercises": avec_figures(exercices["exercises"])})
     _ecrire_json(Path(dest) / "mindmaps.json", cartes)
+    defis = defis if defis is not None else charger_defis()
+    defis["metadata"]["total_flashcards"] = len(defis["flashcards"])
+    _ecrire_json(Path(dest) / "flashcards.json", defis)
 
 
 def main() -> int:
@@ -214,7 +264,9 @@ def main() -> int:
         return 0
     if commande == "stats":
         dag, exos, cartes = charger()
-        print(f"{len(dag['skills'])} competences, {len(exos['exercises'])} exercices, {len(cartes['mindmaps'])} cartes")
+        defis = charger_defis()
+        print(f"{len(dag['skills'])} competences, {len(exos['exercises'])} exercices, {len(cartes['mindmaps'])} cartes, "
+              f"{len(defis['flashcards'])} cartes defi")
         for d in dag["metadata"]["domains"]:
             print(f"  {d['id']} {d['name']} : {d['count']}")
         return 0

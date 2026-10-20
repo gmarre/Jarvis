@@ -961,6 +961,47 @@ def check_longueur_enonces(dag: dict, exercises: dict) -> None:
             warn(f"Enonce : {sid} ({niveau[sid]}) fait {moyenne:.0f} mots en moyenne, plafond {plafond}")
 
 
+# ---------------------------------------------------------------------------
+#  Cartes defi (sprint 2, point 4)
+# ---------------------------------------------------------------------------
+# Une carte defi se lit comme un exercice : le recto est l'enonce, le verso le
+# corrige. Les memes regles s'appliquent (notations enseignees, caracteres de
+# controle), en les faisant passer pour des exercices le temps du controle.
+
+def _defis_comme_exercices(defis: dict) -> dict:
+    return {"exercises": [
+        {"id": d["id"], "skill_id": d["skill_id"], "statement": d["recto"],
+         "answer": {"value": ""}, "solution_steps": [d["verso"]]}
+        for d in defis["flashcards"]
+    ]}
+
+
+def check_defis(dag: dict, defis: dict) -> None:
+    ids = {s["id"] for s in dag["skills"]}
+    vus: set[str] = set()
+    par_comp: dict[str, int] = {}
+    for d in defis["flashcards"]:
+        if d["id"] in vus:
+            err(f"Carte defi en double : {d['id']}")
+        vus.add(d["id"])
+        if d["skill_id"] not in ids:
+            err(f"Carte defi : {d['id']} vise {d['skill_id']}, absente du DAG")
+        if not d["id"].startswith(f"FC-{d['skill_id']}-"):
+            err(f"Carte defi : {d['id']} ne porte pas l'identifiant de sa competence {d['skill_id']}")
+        if d["recto"].strip() == d["verso"].strip():
+            err(f"Carte defi : {d['id']} a le meme texte au recto et au verso")
+        par_comp[d["skill_id"]] = par_comp.get(d["skill_id"], 0) + 1
+    for sid, n in sorted(par_comp.items()):
+        if n < 4 or n > 6:
+            warn(f"Cartes defi : {sid} en a {n}, la cible est de 4 a 6")
+    if defis["metadata"]["total_flashcards"] != len(defis["flashcards"]):
+        err(f"Cartes defi : metadata.total_flashcards = {defis['metadata']['total_flashcards']} "
+            f"mais {len(defis['flashcards'])} cartes presentes")
+    comme_exos = _defis_comme_exercices(defis)
+    check_notations(dag, comme_exos)
+    check_caracteres_controle(comme_exos)
+
+
 def main() -> int:
     print("Validation du contenu MATH EDUCATION\n")
 
@@ -968,6 +1009,7 @@ def main() -> int:
     # reassemble ici dans la forme que les controles connaissent.
     try:
         dag, exercises, mindmaps = contenu.charger(CONTENT_DIR)
+        defis = contenu.charger_defis(CONTENT_DIR)
     except contenu.ContenuInvalide as exc:
         print(f"Contenu illisible : {exc}", file=sys.stderr)
         return 1
@@ -979,9 +1021,15 @@ def main() -> int:
     print("  exercises             controle")
     validate_schema(mindmaps, SCHEMA_DIR / "mindmaps.schema.json", "Cartes")
     print("  mindmaps              controle")
+    validate_schema(defis, SCHEMA_DIR / "flashcards.schema.json", "Cartes defi")
+    print("  flashcards            controle")
 
     print("\nGraphe")
     check_dag(dag, exercises, mindmaps)
+
+    err_avant = len(errors)
+    check_defis(dag, defis)
+    print(f"  cartes defi ({len(defis['flashcards'])})   {'OK' if len(errors) == err_avant else 'ANOMALIES'}")
 
     print("\nConformite au programme")
     err_avant = len(errors)

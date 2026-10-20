@@ -3,7 +3,7 @@ import { createContext, useContext } from 'react'
 import type { Catalog, ProfileCompletion, Session, SignUpInput } from '@/data'
 import type { ProgressMap } from '@/lib/dag'
 import type { Correction } from '@/lib/exercise'
-import type { PublicExercise } from '@/types/content'
+import type { Flashcard, PublicExercise } from '@/types/content'
 import type {
   AccordPublic,
   ChampModifiable,
@@ -86,6 +86,8 @@ export interface SessionValue {
   corriger: (exerciseId: string, raw: string) => Promise<Correction>
   /** Marque une carte mentale comme revue : passe a l'echeance Leitner suivante. */
   reviewSkill: (skillId: string) => void
+  /** Carte defi retournee : l'eleve dit s'il savait (lib/defis.ts). */
+  reviserDefi: (carte: Flashcard, savait: boolean) => void
   /** Cloture le test de positionnement. */
   completePlacement: (result: PlacementResult, progress: ProgressMap) => void
   bookSlot: (slotId: string, skillId: string | null) => void

@@ -110,7 +110,12 @@ function reviveSession(raw: string): Session | null {
     const parsed = JSON.parse(raw) as Session
     if (!parsed?.profile?.id) return null
     // Une session persistee avant l'ajout d'un champ ne doit pas casser l'app.
-    return { ...parsed, attempts: parsed.attempts ?? [], bookings: parsed.bookings ?? [] }
+    return {
+      ...parsed,
+      attempts: parsed.attempts ?? [],
+      bookings: parsed.bookings ?? [],
+      defis: parsed.defis ?? {},
+    }
   } catch {
     return null
   }
@@ -206,7 +211,7 @@ export const mockRepository: DataRepository = {
         ? buildNewAccountSnapshot(profMarcProfile)
         : buildLeaSnapshot()
 
-    courante = { ...snapshot, attempts: [] }
+    courante = { ...snapshot, attempts: [], defis: {} }
     persister()
     notifier()
     return wait(courante)
@@ -214,7 +219,7 @@ export const mockRepository: DataRepository = {
 
   async signUp(input) {
     await contenu()
-    courante = { ...buildNewAccountSnapshot(profileFromSignUp(input)), attempts: [] }
+    courante = { ...buildNewAccountSnapshot(profileFromSignUp(input)), attempts: [], defis: {} }
     persister()
     notifier()
     return wait(courante)
@@ -285,6 +290,13 @@ export const mockRepository: DataRepository = {
       ...session,
       progress: { ...session.progress, [progress.skill_id]: progress },
     }
+    persister()
+    await wait(undefined)
+  },
+
+  async saveDefi(progress) {
+    const session = exigerSession()
+    courante = { ...session, defis: { ...session.defis, [progress.card_id]: progress } }
     persister()
     await wait(undefined)
   },

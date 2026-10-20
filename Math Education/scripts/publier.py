@@ -93,9 +93,10 @@ def main() -> int:
         return 1
 
     dag, exos, cartes = contenu.charger()
+    defis = contenu.charger_defis()
     # Les figures sont dessinees ici : la base recoit le SVG, pas la description.
     payload = {"skills": dag["skills"], "exercises": contenu.avec_figures(exos["exercises"]),
-               "mindmaps": cartes["mindmaps"]}
+               "mindmaps": cartes["mindmaps"], "flashcards": defis["flashcards"]}
     taille = len(json.dumps(payload, ensure_ascii=False).encode("utf-8"))
 
     # 2. Une publication = un commit.
@@ -110,7 +111,8 @@ def main() -> int:
         commit += "-dirty"
 
     print(f"Contenu : {len(payload['skills'])} competences, {len(payload['exercises'])} exercices, "
-          f"{len(payload['mindmaps'])} cartes ({taille / 1024:.0f} ko), commit {commit}")
+          f"{len(payload['mindmaps'])} cartes, {len(payload['flashcards'])} cartes defi "
+          f"({taille / 1024:.0f} ko), commit {commit}")
 
     if not appliquer:
         print("\nSimulation. Relancer avec --apply pour publier.")
@@ -133,11 +135,17 @@ def main() -> int:
     print("Publie :", resultat)
 
     # Controle independant : ce que la base contient vraiment.
-    comptes = {t: compter(url, cle, t) for t in
-               ("content_skills", "content_exercises", "content_exercise_keys", "content_mindmaps")}
+    tables = ["content_skills", "content_exercises", "content_exercise_keys", "content_mindmaps"]
+    # La table des cartes defi n'existe qu'apres la migration 0014 : on ne la
+    # compte que s'il y a des cartes a publier.
+    if payload["flashcards"]:
+        tables.append("content_flashcards")
+    comptes = {t: compter(url, cle, t) for t in tables}
     print("En base :", comptes)
     attendus = {"content_skills": len(payload["skills"]), "content_exercises": len(payload["exercises"]),
                 "content_exercise_keys": len(payload["exercises"]), "content_mindmaps": len(payload["mindmaps"])}
+    if payload["flashcards"]:
+        attendus["content_flashcards"] = len(payload["flashcards"])
     if comptes != attendus:
         print("ECART entre le contenu et la base :", attendus)
         return 1

@@ -3,6 +3,7 @@ import { useCallback, useEffect, useMemo, useRef, useState, type ReactNode } fro
 import { RepositoryError, repository, useMockData, type Catalog, type Session } from '@/data'
 import { needsParentalConsent } from '@/lib/age'
 import { applyAttempt, nextReviewDate } from '@/lib/dag'
+import { apresDefi } from '@/lib/defis'
 import { newId } from '@/lib/id'
 import { atMinutes } from '@/lib/schedule'
 import type { PublicExercise } from '@/types/content'
@@ -259,6 +260,19 @@ export function SessionProvider({ children }: { children: ReactNode }) {
     [session, ecrire],
   )
 
+  const reviserDefi = useCallback<SessionValue['reviserDefi']>(
+    (carte, savait) => {
+      const current = sessionRef.current
+      if (!current) return
+      const progress = apresDefi(current.defis[carte.id], carte, savait, new Date())
+      const suivante = { ...current, defis: { ...current.defis, [carte.id]: progress } }
+      sessionRef.current = suivante
+      setSession(suivante)
+      ecrire(() => repository.saveDefi(progress), 'Ta carte défi')
+    },
+    [ecrire],
+  )
+
   const completePlacement = useCallback<SessionValue['completePlacement']>(
     (result, progress) => {
       const current = session
@@ -419,6 +433,7 @@ export function SessionProvider({ children }: { children: ReactNode }) {
       answerExercise,
       corriger,
       reviewSkill,
+      reviserDefi,
       completePlacement,
       bookSlot,
       cancelBooking,
@@ -449,6 +464,7 @@ export function SessionProvider({ children }: { children: ReactNode }) {
       answerExercise,
       corriger,
       reviewSkill,
+      reviserDefi,
       completePlacement,
       bookSlot,
       cancelBooking,

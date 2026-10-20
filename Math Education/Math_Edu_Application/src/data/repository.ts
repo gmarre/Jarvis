@@ -15,6 +15,7 @@
 // le minimum et rend ce que le serveur a reellement enregistre.
 
 import type { ProgressMap } from '@/lib/dag'
+import type { DefiProgressMap } from '@/lib/defis'
 import type { Correction } from '@/lib/exercise'
 import type {
   AvailabilitySlot,
@@ -23,6 +24,7 @@ import type {
   ChampModifiable,
   ContentReview,
   ExerciseAttempt,
+  FlashcardProgress,
   ModificationEnAttente,
   NewContentReview,
   PlacementResult,
@@ -43,6 +45,8 @@ export interface Session {
   placement: PlacementResult | null
   bookings: Booking[]
   attempts: ExerciseAttempt[]
+  /** Revision espacee des cartes defi, par identifiant de carte (migration 0014). */
+  defis: DefiProgressMap
 }
 
 /**
@@ -138,6 +142,8 @@ export interface DataRepository {
   saveAttempt(attempt: ExerciseAttempt, progress: SkillProgress): Promise<void>
   /** Carte mentale revue : avance l'echeance de revision espacee. */
   saveProgress(progress: SkillProgress): Promise<void>
+  /** Carte defi retournee : sa boite et sa prochaine echeance. */
+  saveDefi(progress: FlashcardProgress): Promise<void>
   /** Cloture du positionnement : le resultat, et la progression initiale en lot. */
   savePlacement(result: PlacementResult, progress: SkillProgress[]): Promise<void>
   createBooking(slotId: string, skillId: string | null): Promise<Booking>

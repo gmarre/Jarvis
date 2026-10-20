@@ -18,13 +18,15 @@
 // session ouverte. Le repository garantit que le contenu est installe avant de
 // rendre une session.
 
-import type { Mindmap, PublicExercise, SchoolLevel, Skill } from '@/types/content'
+import type { Flashcard, Mindmap, PublicExercise, SchoolLevel, Skill } from '@/types/content'
 import { SCHOOL_LEVELS } from '@/types/content'
 
 export interface ContenuPedagogique {
   skills: Skill[]
   exercises: PublicExercise[]
   mindmaps: Mindmap[]
+  /** Cartes defi (migration 0014). Absentes d'un ancien cache : liste vide. */
+  flashcards: Flashcard[]
 }
 
 export interface Domain {
@@ -36,12 +38,14 @@ export interface Domain {
 export const skills: Skill[] = []
 export const exercises: PublicExercise[] = []
 export const mindmaps: Mindmap[] = []
+export const flashcards: Flashcard[] = []
 /** Domaines reellement presents dans le contenu, dans l'ordre alphabetique. */
 export const domains: Domain[] = []
 
 const skillById = new Map<string, Skill>()
 const exerciseById = new Map<string, PublicExercise>()
 const mindmapById = new Map<string, Mindmap>()
+const flashcardsBySkill = new Map<string, Flashcard[]>()
 /** Competences qui dependent d'une competence donnee (arcs sortants du DAG). */
 const dependentsBySkill = new Map<string, string[]>()
 
@@ -64,6 +68,7 @@ export function installerContenu(contenu: ContenuPedagogique) {
   remplacer(skills, [...contenu.skills].sort((a, b) => a.id.localeCompare(b.id)))
   remplacer(exercises, contenu.exercises)
   remplacer(mindmaps, contenu.mindmaps)
+  remplacer(flashcards, contenu.flashcards ?? [])
 
   skillById.clear()
   for (const skill of skills) skillById.set(skill.id, skill)
@@ -71,6 +76,12 @@ export function installerContenu(contenu: ContenuPedagogique) {
   for (const exercise of exercises) exerciseById.set(exercise.id, exercise)
   mindmapById.clear()
   for (const mindmap of mindmaps) mindmapById.set(mindmap.id, mindmap)
+  flashcardsBySkill.clear()
+  for (const carte of [...flashcards].sort((a, b) => a.id.localeCompare(b.id))) {
+    const liste = flashcardsBySkill.get(carte.skill_id)
+    if (liste) liste.push(carte)
+    else flashcardsBySkill.set(carte.skill_id, [carte])
+  }
 
   dependentsBySkill.clear()
   for (const skill of skills) {
@@ -117,6 +128,11 @@ export function getExercise(id: string): PublicExercise | undefined {
 
 export function getMindmap(id: string | null | undefined): Mindmap | undefined {
   return id ? mindmapById.get(id) : undefined
+}
+
+/** Cartes defi d'une competence, dans l'ordre de leur numero. */
+export function getFlashcardsForSkill(skillId: string): Flashcard[] {
+  return flashcardsBySkill.get(skillId) ?? []
 }
 
 /** Exercices d'une competence, du plus simple au plus exigeant. */
