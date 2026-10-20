@@ -21,6 +21,27 @@
     "programme_ref": "Cycle 2, CE1 : les connaissances et savoir-faire attendus concernent les nombres jusqu'à mille."
   },
   {
+    "id": "EX-A003-D-02",
+    "skill_id": "A003",
+    "level": "decouverte",
+    "type": "numerique",
+    "statement": "Écris en chiffres le nombre qui a 4 centaines, 1 dizaine et 9 unités.",
+    "image": null,
+    "answer": {
+      "value": 419
+    },
+    "solution_steps": [
+      "On écrit les chiffres de gauche à droite : centaines, puis dizaines, puis unités.",
+      "4 centaines : 4 au rang des centaines. 1 dizaine : 1 au rang des dizaines. 9 unités : 9 au rang des unités.",
+      "On obtient **419**.",
+      "Vérification : $400 + 10 + 9 = 419$."
+    ],
+    "hint": "Écris d'abord le chiffre des centaines, puis celui des dizaines, puis celui des unités.",
+    "estimated_duration_s": 35,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 2, CE1 : connaitre la valeur des chiffres en fonction de leur position dans un nombre."
+  },
+  {
     "id": "EX-A003-E-01",
     "skill_id": "A003",
     "level": "entrainement",
@@ -39,6 +60,28 @@
     "estimated_duration_s": 40,
     "review_status": "relu_agent",
     "programme_ref": "Cycle 2, CE1 : les nombres jusqu'à mille."
+  },
+  {
+    "id": "EX-A003-E-02",
+    "skill_id": "A003",
+    "level": "entrainement",
+    "type": "numerique",
+    "statement": "Quel nombre le point A repère-t-il sur cette demi-droite ?",
+    "image": "figures/EX-A003-E-02",
+    "answer": {
+      "value": 360
+    },
+    "solution_steps": [
+      "Entre 300 et 400, la figure montre 10 intervalles égaux.",
+      "Il faut 10 dizaines pour faire une centaine : chaque intervalle vaut donc 10. La demi-droite est graduée de dix en dix.",
+      "On part de 300 et on avance de dix en dix jusqu'au point A : 310, 320, 330, 340, 350, 360.",
+      "Le point A repère le nombre **360**.",
+      "Erreur à éviter : croire que chaque intervalle vaut 1. On répondrait 306, et on n'arriverait jamais à 400 au bout de la demi-droite."
+    ],
+    "hint": "Combien d'intervalles entre 300 et 400 ? Combien vaut chacun ?",
+    "estimated_duration_s": 50,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 2, CE1 : l'élève sait placer un nombre, ou déterminer le nombre correspondant à un point sur une demi-droite graduée de un en un, ou de dix en dix, ou de cent en cent."
   },
   {
     "id": "EX-A003-M-01",
@@ -60,5 +103,43 @@
     "estimated_duration_s": 45,
     "review_status": "relu_agent",
     "programme_ref": "Cycle 2, CE1 : les nombres jusqu'à mille."
+  },
+  {
+    "id": "EX-A003-M-02",
+    "skill_id": "A003",
+    "level": "maitrise",
+    "type": "qcm",
+    "statement": "Quel nombre a 5 centaines et 13 dizaines ?",
+    "image": null,
+    "choices": [
+      {
+        "key": "a",
+        "text": "513",
+        "misconception": "L'élève écrit 5 puis 13 côte à côte : il traite les 13 dizaines comme 13 unités."
+      },
+      {
+        "key": "b",
+        "text": "630",
+        "misconception": null
+      },
+      {
+        "key": "c",
+        "text": "530",
+        "misconception": "L'élève garde les 3 dizaines qui dépassent, mais oublie la centaine formée par 10 des 13 dizaines."
+      }
+    ],
+    "answer": {
+      "value": "b"
+    },
+    "solution_steps": [
+      "13 dizaines, c'est 10 dizaines et 3 dizaines.",
+      "10 dizaines font 1 centaine. Les 13 dizaines donnent donc 1 centaine et 3 dizaines.",
+      "Avec cette centaine de plus, on a 6 centaines, 3 dizaines et aucune unité.",
+      "Le nombre est **630**."
+    ],
+    "hint": "Combien de dizaines faut-il pour faire une centaine ?",
+    "estimated_duration_s": 60,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 2, CE1 : connaitre et utiliser la relation entre unités et dizaines, entre dizaines et centaines, entre unités et centaines."
   }
 ]

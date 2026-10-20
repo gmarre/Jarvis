@@ -1,6 +1,6 @@
 # Fiche de relecture — synthèse
 
-> 170 compétences, 967 exercices. Généré depuis `content/`, ne pas éditer à la main.  
+> 170 compétences, 1036 exercices. Généré depuis `content/`, ne pas éditer à la main.  
 > Objectif : juger le **fond** et la **coordination**. Le détail complet, énoncés et corrigés, est dans `RELECTURE_DETAIL.md`.
 
 ✅ Aucune anomalie de coordination détectée.
@@ -11,8 +11,8 @@ C'est la lecture qui compte pour juger la coordination : la difficulté doit mon
 
 | # | Compétence | Niv. | Diff. | Exos | Mots/énoncé | Signal |
 |--:|---|---|--:|--:|--:|---|
-| 1 | `A001` Compter jusqu'à 10 | CP | 1 | 3 | 12 |  |
-| 2 | `A002` Compter jusqu'à 100 | CP | 1 | 3 | 6 |  |
+| 1 | `A001` Compter jusqu'à 10 | CP | 1 | 6 | 11 |  |
+| 2 | `A002` Compter jusqu'à 100 | CP | 1 | 6 | 10 |  |
 | 3 | `B001` Addition simple | CP | 1 | 6 | 14 |  |
 | 4 | `B003` Soustraction simple | CP | 1 | 6 | 12 |  |
 | 5 | `G001` Se repérer : positions relatives et plan | CP | 1 | 6 | 14 |  |
@@ -30,21 +30,21 @@ C'est la lecture qui compte pour juger la coordination : la difficulté doit mon
 | 17 | `G002` Suivre et coder un déplacement sur un q… | CP | 2 | 6 | 15 |  |
 | 18 | `G006` Compléter un carré ou un rectangle sur … | CP | 2 | 6 | 15 |  |
 | 19 | `P003` La monnaie en euros entiers : valeur, c… | CP | 2 | 6 | 15 |  |
-| 20 | `A003` Compter jusqu'à 1000 | CE1 | 2 | 3 | 5 |  |
-| 21 | `A004` Lire un entier | CE1 | 2 | 3 | 6 |  |
-| 22 | `A005` Écrire un entier | CE1 | 2 | 3 | 5 |  |
-| 23 | `A006` Comparer deux entiers | CE1 | 2 | 3 | 13 |  |
-| 24 | `A008` Identifier chiffre et nombre | CE1 | 2 | 3 | 11 |  |
-| 25 | `A011` Pair / impair | CE1 | 2 | 3 | 11 |  |
+| 20 | `A003` Compter jusqu'à 1000 | CE1 | 2 | 6 | 8 |  |
+| 21 | `A004` Lire un entier | CE1 | 2 | 6 | 8 |  |
+| 22 | `A005` Écrire un entier | CE1 | 2 | 6 | 6 |  |
+| 23 | `A006` Comparer deux entiers | CE1 | 2 | 6 | 11 |  |
+| 24 | `A008` Identifier chiffre et nombre | CE1 | 2 | 6 | 14 |  |
+| 25 | `A011` Pair / impair | CE1 | 2 | 6 | 12 |  |
 | 26 | `B005` Multiplication à un chiffre | CE1 | 2 | 7 | 17 |  |
 | 27 | `B015` Calcul mental : multiplier par 10 | CE1 | 2 | 6 | 16 |  |
 | 28 | `B042` Addition posée de nombres à trois chiff… | CE1 | 2 | 6 | 11 |  |
 | 29 | `B004` Soustraction posée avec retenue | CE1 | 2 | 6 | 12 |  |
-| 30 | `C001` Fraction comme partage | CE1 | 2 | 3 | 19 |  |
-| 31 | `C002` Numérateur | CE1 | 2 | 3 | 17 |  |
-| 32 | `C003` Dénominateur | CE1 | 2 | 3 | 19 |  |
-| 33 | `C009` Comparer fractions de même dénominateur | CE1 | 2 | 3 | 20 |  |
-| 34 | `C012` Additionner des fractions de même dénom… | CE1 | 2 | 3 | 17 |  |
+| 30 | `C001` Fraction comme partage | CE1 | 2 | 6 | 15 |  |
+| 31 | `C002` Numérateur | CE1 | 2 | 6 | 15 |  |
+| 32 | `C003` Dénominateur | CE1 | 2 | 6 | 18 |  |
+| 33 | `C009` Comparer fractions de même dénominateur | CE1 | 2 | 6 | 20 |  |
+| 34 | `C012` Additionner des fractions de même dénom… | CE1 | 2 | 6 | 19 |  |
 | 35 | `C026` Comparer des fractions de numérateur 1 | CE1 | 2 | 7 | 19 |  |
 | 36 | `D016` Écrire une somme d'argent avec une virg… | CE1 | 2 | 6 | 17 |  |
 | 37 | `G007` Cube, pavé, pyramide : faces, arêtes et… | CE1 | 2 | 6 | 12 |  |
@@ -56,17 +56,17 @@ C'est la lecture qui compte pour juger la coordination : la difficulté doit mon
 | 43 | `P007` Lire l'heure : demi-heures et quarts d'… | CE1 | 2 | 6 | 15 |  |
 | 44 | `P008` Heures et minutes : unités de durée et … | CE1 | 2 | 6 | 20 |  |
 | 45 | `B038` Problèmes mixtes en deux étapes | CE1 | 3 | 6 | 19 |  |
-| 46 | `A007` Ranger plusieurs entiers | CE2 | 2 | 3 | 17 |  |
-| 47 | `A009` Comprendre la valeur positionnelle | CE2 | 2 | 3 | 12 |  |
+| 46 | `A007` Ranger plusieurs entiers | CE2 | 2 | 6 | 21 |  |
+| 47 | `A009` Comprendre la valeur positionnelle | CE2 | 2 | 6 | 14 |  |
 | 48 | `B006` Tables de multiplication | CE2 | 2 | 6 | 14 |  |
-| 49 | `C006` Fractions équivalentes | CE2 | 2 | 3 | 8 |  |
-| 50 | `C005` Fraction sur une droite graduée | CE2 | 2 | 3 | 25 |  |
+| 49 | `C006` Fractions équivalentes | CE2 | 2 | 6 | 15 |  |
+| 50 | `C005` Fraction sur une droite graduée | CE2 | 2 | 6 | 19 |  |
 | 51 | `G012` Losange, quadrilatère, polygones ; lire… | CE2 | 2 | 6 | 12 |  |
 | 52 | `G013` Le cercle : centre, rayon et diamètre | CE2 | 2 | 6 | 20 |  |
 | 53 | `G014` Axes de symétrie ; compléter une figure… | CE2 | 2 | 6 | 16 |  |
 | 54 | `P010` Périmètre d'un polygone : longueur du c… | CE2 | 2 | 6 | 25 |  |
 | 55 | `P013` Lire l'heure à la minute | CE2 | 2 | 6 | 15 |  |
-| 56 | `A010` Décomposer un entier | CE2 | 3 | 3 | 7 |  |
+| 56 | `A010` Décomposer un entier | CE2 | 3 | 6 | 7 |  |
 | 57 | `B039` Sens de la division et symbole ÷ | CE2 | 3 | 6 | 14 |  |
 | 58 | `B041` Calcul mental : multiplier par 100 et p… | CE2 | 3 | 6 | 14 |  |
 | 59 | `B007` Multiplication posée | CE2 | 3 | 6 | 18 |  |
@@ -84,7 +84,7 @@ C'est la lecture qui compte pour juger la coordination : la difficulté doit mon
 | 71 | `B008` Division euclidienne posée (diviseur à … | CM1 | 3 | 6 | 20 |  |
 | 72 | `B012` Calcul avec parenthèses | CM1 | 3 | 6 | 15 |  |
 | 73 | `B017` Estimer le résultat d'une opération | CM1 | 3 | 6 | 20 |  |
-| 74 | `C004` Fraction d'une quantité | CM1 | 3 | 3 | 13 |  |
+| 74 | `C004` Fraction d'une quantité | CM1 | 3 | 6 | 17 |  |
 | 75 | `C027` Fraction supérieure à 1 | CM1 | 3 | 8 | 15 |  |
 | 76 | `C029` Encadrer une fraction | CM1 | 3 | 7 | 14 |  |
 | 77 | `C030` Fraction sur une demi-droite graduée | CM1 | 3 | 7 | 15 |  |
@@ -161,8 +161,8 @@ C'est la lecture qui compte pour juger la coordination : la difficulté doit mon
 | 148 | `A023` Comparer et ranger des décimaux relatifs | 5e | 4 | 6 | 24 |  |
 | 149 | `B011` Priorités opératoires | 5e | 4 | 6 | 12 |  |
 | 150 | `B044` Additionner deux décimaux relatifs | 5e | 4 | 6 | 21 |  |
-| 151 | `C011` Réduction au même dénominateur | 5e | 4 | 3 | 14 |  |
-| 152 | `C010` Comparer fractions de dénominateurs dif… | 5e | 4 | 3 | 13 |  |
+| 151 | `C011` Réduction au même dénominateur | 5e | 4 | 6 | 19 |  |
+| 152 | `C010` Comparer fractions de dénominateurs dif… | 5e | 4 | 6 | 16 |  |
 | 153 | `A017` Problèmes de multiples et de diviseurs … | 5e | 5 | 6 | 30 |  |
 | 154 | `B045` Soustraire deux décimaux relatifs | 5e | 5 | 6 | 19 |  |
 | 155 | `B046` Sommes de relatifs : parenthèses et écr… | 5e | 5 | 6 | 16 |  |
@@ -177,10 +177,10 @@ C'est la lecture qui compte pour juger la coordination : la difficulté doit mon
 | 164 | `B049` Multiplier deux décimaux relatifs | 4e | 5 | 6 | 12 |  |
 | 165 | `B050` Diviser deux décimaux relatifs | 4e | 5 | 6 | 11 |  |
 | 166 | `B051` Enchaînements d'opérations avec des rel… | 4e | 5 | 6 | 13 |  |
-| 167 | `C007` Simplification de fraction | 4e | 5 | 3 | 11 |  |
+| 167 | `C007` Simplification de fraction | 4e | 5 | 6 | 13 |  |
 | 168 | `A024` Reconnaître un nombre premier | 3e | 5 | 6 | 22 |  |
 | 169 | `A025` Décomposer un entier en produit de fact… | 3e | 5 | 6 | 19 |  |
-| 170 | `C008` Fraction irréductible | 3e | 6 | 3 | 9 |  |
+| 170 | `C008` Fraction irréductible | 3e | 6 | 6 | 11 |  |
 
 ## 2. Par chapitre
 
@@ -188,21 +188,21 @@ Le chapitre est l'unité qu'un exercice bilan validerait.
 
 ### `MM-A-01` · Les nombres entiers (CP-CM1)
 
-12 compétences, 40 exercices, niveaux CP, CE1, CE2, CM1.
+12 compétences, 73 exercices, niveaux CP, CE1, CE2, CM1.
 
 | Compétence | Ce que l'élève doit savoir faire | Exos |
 |---|---|--:|
-| `A001` Compter jusqu'à 10 | Dénombrer et écrire les entiers de 0 à 10 | 3 |
-| `A002` Compter jusqu'à 100 | Lire, écrire et comparer les entiers jusqu'à 100 | 3 |
-| `A003` Compter jusqu'à 1000 | Lire, écrire et comparer les entiers jusqu'à 1000 | 3 |
-| `A004` Lire un entier | Lire à voix haute tout entier écrit en chiffres | 3 |
-| `A005` Écrire un entier | Transcrire en chiffres un entier énoncé à l'oral | 3 |
-| `A006` Comparer deux entiers | Utiliser <, > et = pour comparer deux entiers | 3 |
-| `A008` Identifier chiffre et nombre | Distinguer un chiffre (0 à 9) d'un nombre | 3 |
-| `A011` Pair / impair | Reconnaître si un entier est pair ou impair | 3 |
-| `A007` Ranger plusieurs entiers | Ordonner une liste d'entiers en ordre croissant ou décroissant | 3 |
-| `A009` Comprendre la valeur positionnelle | Identifier unités, dizaines, centaines et milliers | 3 |
-| `A010` Décomposer un entier | Écrire 5 827 = 5 000 + 800 + 20 + 7 | 3 |
+| `A001` Compter jusqu'à 10 | Dénombrer et écrire les entiers de 0 à 10 | 6 |
+| `A002` Compter jusqu'à 100 | Lire, écrire et comparer les entiers jusqu'à 100 | 6 |
+| `A003` Compter jusqu'à 1000 | Lire, écrire et comparer les entiers jusqu'à 1000 | 6 |
+| `A004` Lire un entier | Lire à voix haute tout entier écrit en chiffres | 6 |
+| `A005` Écrire un entier | Transcrire en chiffres un entier énoncé à l'oral | 6 |
+| `A006` Comparer deux entiers | Utiliser <, > et = pour comparer deux entiers | 6 |
+| `A008` Identifier chiffre et nombre | Distinguer un chiffre (0 à 9) d'un nombre | 6 |
+| `A011` Pair / impair | Reconnaître si un entier est pair ou impair | 6 |
+| `A007` Ranger plusieurs entiers | Ordonner une liste d'entiers en ordre croissant ou décroissant | 6 |
+| `A009` Comprendre la valeur positionnelle | Identifier unités, dizaines, centaines et milliers | 6 |
+| `A010` Décomposer un entier | Écrire 5 827 = 5 000 + 800 + 20 + 7 | 6 |
 | `A028` Entier sur une demi-droite graduée | Placer un entier sur une demi-droite graduée et repérer un point par son … | 7 |
 
 ### `MM-B-01` · Addition et soustraction (CP-CE1)
@@ -308,15 +308,15 @@ Le chapitre est l'unité qu'un exercice bilan validerait.
 
 ### `MM-C-01` · Découvrir les fractions (CE1)
 
-6 compétences, 22 exercices, niveaux CE1.
+6 compétences, 37 exercices, niveaux CE1.
 
 | Compétence | Ce que l'élève doit savoir faire | Exos |
 |---|---|--:|
-| `C001` Fraction comme partage | Comprendre une fraction comme le partage d'un tout en parts égales | 3 |
-| `C002` Numérateur | Identifier et comprendre le rôle du numérateur | 3 |
-| `C003` Dénominateur | Identifier et comprendre le rôle du dénominateur | 3 |
-| `C009` Comparer fractions de même dénomi… | Comparer deux fractions ayant le même dénominateur | 3 |
-| `C012` Additionner des fractions de même… | Additionner et soustraire deux fractions de même dénominateur | 3 |
+| `C001` Fraction comme partage | Comprendre une fraction comme le partage d'un tout en parts égales | 6 |
+| `C002` Numérateur | Identifier et comprendre le rôle du numérateur | 6 |
+| `C003` Dénominateur | Identifier et comprendre le rôle du dénominateur | 6 |
+| `C009` Comparer fractions de même dénomi… | Comparer deux fractions ayant le même dénominateur | 6 |
+| `C012` Additionner des fractions de même… | Additionner et soustraire deux fractions de même dénominateur | 6 |
 | `C026` Comparer des fractions de numérat… | Comparer deux fractions dont le numérateur est 1 | 7 |
 
 ### `MM-D-01` · De la monnaie à l'écriture à virgule (CE1-CM2)
@@ -332,13 +332,13 @@ Le chapitre est l'unité qu'un exercice bilan validerait.
 
 ### `MM-C-02` · Fractions égales, bande-unité, fraction d'une quantité (CE2-CM1)
 
-3 compétences, 9 exercices, niveaux CE2, CM1.
+3 compétences, 18 exercices, niveaux CE2, CM1.
 
 | Compétence | Ce que l'élève doit savoir faire | Exos |
 |---|---|--:|
-| `C006` Fractions équivalentes | Reconnaître et produire des fractions égales | 3 |
-| `C005` Fraction sur une droite graduée | Placer une fraction sur une bande-unité ou une demi-droite graduée | 3 |
-| `C004` Fraction d'une quantité | Calculer une fraction unitaire d'une quantité ou d'une grandeur | 3 |
+| `C006` Fractions équivalentes | Reconnaître et produire des fractions égales | 6 |
+| `C005` Fraction sur une droite graduée | Placer une fraction sur une bande-unité ou une demi-droite graduée | 6 |
+| `C004` Fraction d'une quantité | Calculer une fraction unitaire d'une quantité ou d'une grandeur | 6 |
 
 ### `MM-D-03` · Additionner, soustraire, convertir (CE2-CM2)
 
@@ -572,14 +572,14 @@ Le chapitre est l'unité qu'un exercice bilan validerait.
 
 ### `MM-C-03` · Opérer sur les fractions (5e-3e)
 
-4 compétences, 12 exercices, niveaux 5e, 4e, 3e.
+4 compétences, 24 exercices, niveaux 5e, 4e, 3e.
 
 | Compétence | Ce que l'élève doit savoir faire | Exos |
 |---|---|--:|
-| `C011` Réduction au même dénominateur | Trouver un dénominateur commun à deux fractions et les réduire | 3 |
-| `C010` Comparer fractions de dénominateu… | Comparer deux fractions de dénominateurs différents | 3 |
-| `C007` Simplification de fraction | Simplifier une fraction par un facteur commun au numérateur et au dénomin… | 3 |
-| `C008` Fraction irréductible | Mettre une fraction sous forme irréductible | 3 |
+| `C011` Réduction au même dénominateur | Trouver un dénominateur commun à deux fractions et les réduire | 6 |
+| `C010` Comparer fractions de dénominateu… | Comparer deux fractions de dénominateurs différents | 6 |
+| `C007` Simplification de fraction | Simplifier une fraction par un facteur commun au numérateur et au dénomin… | 6 |
+| `C008` Fraction irréductible | Mettre une fraction sous forme irréductible | 6 |
 
 ### `MM-E-04` · Coefficient, vitesse et graphique (5e)
 
@@ -605,25 +605,31 @@ Le chapitre est l'unité qu'un exercice bilan validerait.
 
 ### ── CP ──
 
-**`A001` · Compter jusqu'à 10** — diff. 1, seuil 2/3  
+**`A001` · Compter jusqu'à 10** — diff. 1, seuil 3/4  
 *Dénombrer et écrire les entiers de 0 à 10*
 > « Les connaissances et les savoir-faire attendus concernent les nombres entiers jusqu'à cent. »
 
 | | Type | Demandé | Réponse |
 |---|---|---|---|
 | D | nume | Compte les jetons : ● ● ● ● ● ● ● Combien y a-t-il de jetons ? | 7 |
+| D | qcm | Quelle rangée a cinq jetons ? | b) ● ● ● ● ● |
 | E | nume | Quel nombre vient juste après 8 ? | 9 |
+| E | nume | Compte seulement les ronds noirs : ● ○ ● ● ○ ● ○ ● ● ○ ● ○ ● Combien y en a-t-il ? | 8 |
 | M | vrai | Léa a 8 billes. Elle les recompte en commençant par une autre bille. Elle trouve encore 8 b… | vrai |
+| M | nume | Nina a compté jusqu'à sept. Il reste : ● ● ● Quel nombre dit-elle sur le dernier jeton ? | 10 |
 
-**`A002` · Compter jusqu'à 100** — diff. 1, seuil 2/3  
+**`A002` · Compter jusqu'à 100** — diff. 1, seuil 3/4  
 *Lire, écrire et comparer les entiers jusqu'à 100*
 > « Les connaissances et les savoir-faire attendus concernent les nombres entiers jusqu'à cent. »
 
 | | Type | Demandé | Réponse |
 |---|---|---|---|
 | D | nume | Écris en chiffres le nombre quarante-deux. | 42 |
+| D | nume | Lina a 5 boîtes de 10 œufs et 3 œufs seuls. Combien d'œufs a-t-elle ? | 53 |
 | E | nume | Quel nombre vient juste après 69 ? | 70 |
+| E | nume | Quel nombre est repéré par le point A ? | 57 |
 | M | qcm | Quel nombre s'écrit quatre-vingt-treize ? | a) 93 |
+| M | qcm | Léo a 4 paquets de 10 cartes et 12 cartes seules. Combien a-t-il de cartes ? | c) 52 |
 
 **`B001` · Addition simple** — diff. 1, seuil 3/4  
 *Additionner deux entiers sans retenue*
@@ -848,65 +854,83 @@ Le chapitre est l'unité qu'un exercice bilan validerait.
 
 ### ── CE1 ──
 
-**`A003` · Compter jusqu'à 1000** — diff. 2, seuil 2/3  
+**`A003` · Compter jusqu'à 1000** — diff. 2, seuil 3/4  
 *Lire, écrire et comparer les entiers jusqu'à 1000*
 > « Les connaissances et savoir-faire attendus concernent les nombres jusqu'à mille. »
 
 | | Type | Demandé | Réponse |
 |---|---|---|---|
 | D | nume | Écris en chiffres le nombre trois-cent-cinq. | 305 |
+| D | nume | Écris en chiffres le nombre qui a 4 centaines, 1 dizaine et 9 unités. | 419 |
 | E | nume | Quel nombre vient juste avant 700 ? | 699 |
+| E | nume | Quel nombre le point A repère-t-il sur cette demi-droite ? | 360 |
 | M | nume | Complète : 754 = 700 + 50 + … | 4 |
+| M | qcm | Quel nombre a 5 centaines et 13 dizaines ? | b) 630 |
 
-**`A004` · Lire un entier** — diff. 2, seuil 2/3  
+**`A004` · Lire un entier** — diff. 2, seuil 3/4  
 *Lire à voix haute tout entier écrit en chiffres*
 > « Il sait également lire un nombre écrit en chiffres et l'écrire en lettres. »
 
 | | Type | Demandé | Réponse |
 |---|---|---|---|
 | D | qcm | Comment lit-on le nombre 407 ? | a) quatre-cent-sept |
+| D | qcm | Comment lit-on le nombre 543 ? | b) cinq-cent-quarante-trois |
 | E | qcm | Comment lit-on le nombre 380 ? | a) trois-cent-quatre-vingts |
+| E | vrai | Hugo lit le nombre 472 : « quatre-cent-soixante-dix-deux ». A-t-il raison ? | faux |
 | M | qcm | Comment lit-on le nombre 190 ? | a) cent-quatre-vingt-dix |
+| M | qcm | Dans quel nombre entend-on « quatre-vingt » quand on le lit ? | d) 390 |
 
-**`A005` · Écrire un entier** — diff. 2, seuil 2/3  
+**`A005` · Écrire un entier** — diff. 2, seuil 3/4  
 *Transcrire en chiffres un entier énoncé à l'oral*
 > « L'élève sait écrire en chiffres un nombre dicté. »
 
 | | Type | Demandé | Réponse |
 |---|---|---|---|
 | D | nume | Écris en chiffres : deux-cent-six. | 206 |
+| D | qcm | Quel nombre s'écrit trois-cent-quatorze ? | b) 314 |
 | E | nume | Écris en chiffres : neuf-cent-quatre-vingt-dix-neuf. | 999 |
+| E | nume | Écris en chiffres : quatre-cent-quatre-vingt-quatre. | 484 |
 | M | nume | Écris en chiffres : cinq-cent-quatre-vingt-dix. | 590 |
+| M | nume | Maé entend « six-cent-soixante-quatorze ». Elle écrit 664. Quel nombre aurait-elle dû écrir… | 674 |
 
-**`A006` · Comparer deux entiers** — diff. 2, seuil 2/3  
+**`A006` · Comparer deux entiers** — diff. 2, seuil 3/4  
 *Utiliser <, > et = pour comparer deux entiers*
 > « Comparer, encadrer, intercaler des nombres entiers en utilisant les symboles (=, <, >). »
 
 | | Type | Demandé | Réponse |
 |---|---|---|---|
 | D | qcm | Quel est le plus grand de ces deux nombres : 45 et 54 ? | a) 54 |
+| D | vrai | Cette écriture est-elle vraie ? 71 > 69 | vrai |
 | E | qcm | Quel symbole faut-il placer entre 302 et 320 ? 302 … 320 | a) < |
+| E | qcm | Quel nombre est compris entre 650 et 700 ? | c) 690 |
 | M | qcm | Quel est le plus grand de ces deux nombres : 999 et 1 000 ? | a) 1 000 |
+| M | nume | Quel chiffre faut-il écrire dans la case pour que ce soit vrai ? 4\square 6 > 486 | 9 |
 
-**`A008` · Identifier chiffre et nombre** — diff. 2, seuil 2/3  
+**`A008` · Identifier chiffre et nombre** — diff. 2, seuil 3/4  
 *Distinguer un chiffre (0 à 9) d'un nombre*
 > « Connaitre la valeur des chiffres en fonction de leur position dans un nombre. »
 
 | | Type | Demandé | Réponse |
 |---|---|---|---|
 | D | nume | Combien y a-t-il de chiffres dans le nombre 407 ? | 3 |
+| D | qcm | Lequel de ces nombres s'écrit avec un seul chiffre ? | b) 8 |
 | E | nume | Dans le nombre 362, quel est le chiffre des dizaines ? | 6 |
+| E | nume | Tom numérote les pages de son cahier, de 1 à 12. Combien de chiffres écrit-il en tout ? | 15 |
 | M | vrai | Le nombre 99 s'écrit avec plus de chiffres que le nombre 100. | faux |
+| M | qcm | Avec les chiffres 6, 0 et 2, chacun une seule fois, quel est le plus petit nombre de trois … | d) 206 |
 
-**`A011` · Pair / impair** — diff. 2, seuil 2/3  
+**`A011` · Pair / impair** — diff. 2, seuil 3/4  
 *Reconnaître si un entier est pair ou impair*
 > « L'élève sait dire si un nombre est pair ou impair. »
 
 | | Type | Demandé | Réponse |
 |---|---|---|---|
 | D | qcm | Parmi ces nombres, lesquels sont pairs ? 13, 28, 45, 100 | a) 28 et 100 |
+| D | vrai | 17 enfants se mettent deux par deux. Chaque enfant trouve un camarade. | faux |
 | E | vrai | Le nombre 764 est un nombre pair. | vrai |
+| E | qcm | Lequel de ces nombres est impair ? | c) 873 |
 | M | text | Donne tous les nombres pairs strictement compris entre 767 et 778. Sépare-les par des virgu… | 768, 770, 772, 774, 776 |
+| M | nume | Avec les chiffres 6, 3 et 8, chacun une seule fois, on peut écrire six nombres de trois chi… | 4 |
 
 **`B005` · Multiplication à un chiffre** — diff. 2, seuil 3/4  
 *Multiplier par un chiffre (tables de 1 à 5)*
@@ -961,55 +985,70 @@ Le chapitre est l'unité qu'un exercice bilan validerait.
 | M | nume | Un camion transporte 503 caisses. Il en livre 268. Combien de caisses reste-t-il dans le ca… | 235 |
 | M | qcm | Le glacier a vendu 423 glaces en juillet et 186 en juin. Combien de glaces de plus en juill… | c) 237 |
 
-**`C001` · Fraction comme partage** — diff. 2, seuil 2/3  
+**`C001` · Fraction comme partage** — diff. 2, seuil 3/4  
 *Comprendre une fraction comme le partage d'un tout en parts égales*
 > « L'étude des fractions à l'école élémentaire, débutant dès le CE1, s'est appuyée sur des manipulations et des représentations variées. »
 
 | | Type | Demandé | Réponse |
 |---|---|---|---|
 | D | qcm | Un gâteau est partagé en 4 parts égales. Léa en prend 3. Quelle fraction du gâteau a-t-elle… | a) 3/4 |
+| D | qcm | Quelle fraction du disque est coloriée ? | b) 1/5 |
 | E | qcm | Une bande est partagée en 5 parts égales. On en colorie 2. Quelle fraction est coloriée ? | a) 2/5 |
+| E | text | Quelle fraction de la bande est coloriée ? Écris-la avec une barre. | 7/10 |
 | M | vrai | Un rectangle est découpé en 3 morceaux : un grand, deux petits. On prend le grand. A-t-on p… | faux |
+| M | qcm | Les trois bandes sont pareilles. Sur quelle bande a-t-on colorié 1/4 de la bande ? | c) La bande C |
 
-**`C002` · Numérateur** — diff. 2, seuil 2/3  
+**`C002` · Numérateur** — diff. 2, seuil 3/4  
 *Identifier et comprendre le rôle du numérateur*
 > « Connaître et utiliser les mots « dénominateur » et « numérateur ». »
 
 | | Type | Demandé | Réponse |
 |---|---|---|---|
 | D | nume | Dans la fraction 5/8, quel est le numérateur ? | 5 |
+| D | nume | Quel est le numérateur de la fraction coloriée du rectangle ? | 3 |
 | E | qcm | Que représente le numérateur d'une fraction ? | a) Le nombre de parts que l'on pr… |
+| E | qcm | Sur quelle bande la fraction coloriée a-t-elle pour numérateur 2 ? | b) La bande B |
 | M | nume | Une figure est partagée en 8 parts égales. 2 parts sont coloriées en vert, toutes les autre… | 6 |
+| M | qcm | Lina colorie une part blanche de plus sur ce disque. Quelle fraction du disque est alors co… | d) 4/5 |
 
-**`C003` · Dénominateur** — diff. 2, seuil 2/3  
+**`C003` · Dénominateur** — diff. 2, seuil 3/4  
 *Identifier et comprendre le rôle du dénominateur*
 > « Connaître et utiliser les mots « dénominateur » et « numérateur ». »
 
 | | Type | Demandé | Réponse |
 |---|---|---|---|
 | D | nume | Dans la fraction 5/8, quel est le dénominateur ? | 8 |
+| D | nume | Quel est le dénominateur de la fraction coloriée du disque ? | 4 |
 | E | nume | Une pizza est partagée en 6 parts égales. On en prend 1. La fraction prise s'écrit 1/…. Que… | 6 |
+| E | vrai | Léa dit : « Le dénominateur de la fraction coloriée de la bande est 6. » A-t-elle raison ? | faux |
 | M | qcm | On partage un même tout en 3 parts égales, ou en 8 parts égales. Dans quel cas une part est… | a) Quand on partage en 8 |
+| M | nume | Voici deux tablettes pareilles. Zoé mange la part coloriée. Quel est le dénominateur de la … | 5 |
 
-**`C009` · Comparer fractions de même dénominateur** — diff. 2, seuil 2/3  
+**`C009` · Comparer fractions de même dénominateur** — diff. 2, seuil 3/4  
 *Comparer deux fractions ayant le même dénominateur*
 > « Comparer des fractions ayant le même dénominateur. »
 
 | | Type | Demandé | Réponse |
 |---|---|---|---|
 | D | qcm | Lequel est le plus grand : 3/8 ou 5/8 ? | a) 5/8 |
+| D | text | Les bandes A et B sont pareilles. Quelle fraction coloriée est la plus grande ? Écris-la av… | 4/5 |
 | E | qcm | Tom a mangé 2/6 de sa tarte. Lisa a mangé 5/6 de sa tarte. Qui a mangé la plus grande part … | a) Lisa |
+| E | qcm | Compare 9/10 et 6/10. Quelle écriture est juste ? | c) 9/10 > 6/10 |
 | M | text | Range de la plus petite à la plus grande : 7/10, 2/10, 5/10. Écris-les avec une barre, sépa… | 2/10, 5/10, 7/10 |
+| M | nume | Léo, Inès et Sami ont des tablettes pareilles. Léo en mange 6/8, Inès 4/8. Sami mange plus … | 5 |
 
-**`C012` · Additionner des fractions de même dénominateur** — diff. 2, seuil 2/3  
+**`C012` · Additionner des fractions de même dénominateur** — diff. 2, seuil 3/4  
 *Additionner et soustraire deux fractions de même dénominateur*
 > « Additionner et soustraire des fractions de même dénominateur. »
 
 | | Type | Demandé | Réponse |
 |---|---|---|---|
 | D | text | Calcule 1/5 + 2/5. Écris ta réponse sous la forme numérateur/dénominateur. | 3/5 |
+| D | qcm | Léo a mangé la partie coloriée de la pizza, puis 2/4 de la pizza. Quelle fraction de la piz… | d) 3/4 |
 | E | text | Calcule 2/3 - 1/3. Écris ta réponse sous la forme numérateur/dénominateur. | 1/3 |
+| E | text | Il y a 7/8 d'une tarte. Tom mange 2/8 de la tarte. Quelle fraction de la tarte reste-t-il ?… | 5/8 |
 | M | text | Lucie a colorié les 3/10 d'une figure en bleu, et tout le reste en rouge. Quelle fraction d… | 7/10 |
+| M | qcm | Léa mange 1/8 d'un gâteau. Hugo mange 5/8 du même gâteau. Quelle fraction du gâteau reste-t… | b) 2/8 |
 
 **`C026` · Comparer des fractions de numérateur 1** — diff. 2, seuil 3/4  
 *Comparer deux fractions dont le numérateur est 1*
@@ -1157,25 +1196,31 @@ Le chapitre est l'unité qu'un exercice bilan validerait.
 
 ### ── CE2 ──
 
-**`A007` · Ranger plusieurs entiers** — diff. 2, seuil 2/3  
+**`A007` · Ranger plusieurs entiers** — diff. 2, seuil 3/4  
 *Ordonner une liste d'entiers en ordre croissant ou décroissant*
 > « Les connaissances et savoir-faire attendus concernent les nombres jusqu'à 10 000. »
 
 | | Type | Demandé | Réponse |
 |---|---|---|---|
 | D | text | Range ces nombres par ordre croissant : 45, 12, 78, 3. Sépare les nombres par des virgules. | 3, 12, 45, 78 |
+| D | qcm | Range ces scores par ordre croissant (du plus petit au plus grand) : 305, 53, 350, 35. Quel… | c) 35, 53, 305, 350 |
 | E | text | Range ces nombres par ordre décroissant : 1 204, 1 240, 1 024, 1 402. Sépare les nombres pa… | 1402, 1240, 1204, 1024 |
+| E | qcm | À la course d'orientation, les temps en secondes : Nina 1 392, Hugo 1 507, Malo 1 386, Lou … | b) Nina |
 | M | nume | Trouve un nombre entier qui se place entre 2 899 et 2 901. | 2900 |
+| M | nume | Ces trois nombres sont rangés par ordre croissant : 6 487, 6 4■2, 6 495. Quel chiffre est c… | 9 |
 
-**`A009` · Comprendre la valeur positionnelle** — diff. 2, seuil 2/3  
+**`A009` · Comprendre la valeur positionnelle** — diff. 2, seuil 3/4  
 *Identifier unités, dizaines, centaines et milliers*
 > « décomposition du type : (4 × 1 000) + (6 × 100) + (3 × 10) + (5 × 1) »
 
 | | Type | Demandé | Réponse |
 |---|---|---|---|
 | D | nume | Dans le nombre 3 847, quel est le chiffre des centaines ? | 8 |
+| D | qcm | Dans le nombre 7 052, que vaut le chiffre 5 ? | c) 5 dizaines |
 | E | nume | Dans le nombre 3 847, quel est le nombre de centaines ? | 38 |
+| E | nume | Un paquet de 1 000 feuilles est fait de liasses de 10 feuilles. Combien y a-t-il de liasses… | 100 |
 | M | qcm | Dans le nombre 6 304, quel est le nombre de dizaines ? | a) 630 |
+| M | qcm | Une collection contient 3 milliers, 15 centaines et 6 unités. Quel nombre représente-t-elle… | b) 4 506 |
 
 **`B006` · Tables de multiplication** — diff. 2, seuil 3/4  
 *Connaître les tables de 1 à 9 par cœur*
@@ -1190,25 +1235,31 @@ Le chapitre est l'unité qu'un exercice bilan validerait.
 | M | nume | Max colle 56 photos dans son album, en lignes de 7 photos. Combien de lignes remplit-il ? | 8 |
 | M | nume | Pour une fête, on installe 6 tables de 8 chaises et 7 tables de 3 chaises. Combien de chais… | 69 |
 
-**`C006` · Fractions équivalentes** — diff. 2, seuil 2/3  
+**`C006` · Fractions équivalentes** — diff. 2, seuil 3/4  
 *Reconnaître et produire des fractions égales*
 > « Au début du CE2, les élèves réinvestissent les fractions d'un tout étudiées au CE1 afin d'établir des égalités entre fractions. »
 
 | | Type | Demandé | Réponse |
 |---|---|---|---|
 | D | qcm | Quelle fraction est égale à 1/2 ? | a) 2/4 |
+| D | vrai | Les bandes A et B sont pareilles. La même fraction de bande est coloriée sur A et sur B. | vrai |
 | E | nume | Complète pour obtenir deux fractions égales : 2/3 = …/12 | 8 |
+| E | nume | Les bandes A et B sont pareilles. Combien de parts de la bande B faut-il colorier pour colo… | 6 |
 | M | qcm | Parmi ces fractions, laquelle n'est pas égale à 3/4 ? | a) 5/6 |
+| M | qcm | Tom mange 3/9 de la barre A. Léa mange 1/3 de la barre B, pareille. Qui a mangé le plus ? | c) Ils ont mangé autant |
 
-**`C005` · Fraction sur une droite graduée** — diff. 2, seuil 2/3  
+**`C005` · Fraction sur une droite graduée** — diff. 2, seuil 3/4  
 *Placer une fraction sur une bande-unité ou une demi-droite graduée*
 > « Au CE2, le partage d'une unité de longueur en fractions de cette unité permet de positionner des fractions sur une bande-unité graduée. »
 
 | | Type | Demandé | Réponse |
 |---|---|---|---|
 | D | nume | Une bande-unité va de 0 à 1. Elle est partagée en quarts, c'est-à-dire en 4 intervalles éga… | 3 |
+| D | text | Quelle fraction repère le point A ? Écris-la sous la forme numérateur/dénominateur. | 5/6 |
 | E | text | Une bande-unité va de 0 à 1. Elle est partagée en cinquièmes, c'est-à-dire en 5 intervalles… | 4/5 |
+| E | qcm | Quel point repère la fraction 4/9 ? | c) Le point C |
 | M | vrai | Sur une même bande-unité graduée, 1/2 et 3/6 se placent exactement au même endroit. | vrai |
+| M | text | Sur cette demi-droite, le nombre 1 n'est pas écrit. Quelle fraction repère le point A ? Écr… | 7/10 |
 
 **`G012` · Losange, quadrilatère, polygones ; lire une figure codée** — diff. 2, seuil 3/4  
 *Employer polygone, triangle, quadrilatère, pentagone, hexagone et diagonale ; savoir qu'un quadrilatère a quatre côtés et quatre sommets et qu'un losange a ses quatre côtés de même longueur ; nommer un carré, un rectangle, un losange, un triangle ou un triangle rectangle en lisant son codage (angles droits, segments de même longueur) et justifier qu'une figure n'est pas d'une nature donnée par la propriété qui manque. Figure nécessaire : polygones lettrés avec codage des angles droits et des longueurs égales, diagonales en option.*
@@ -1275,15 +1326,18 @@ Le chapitre est l'unité qu'un exercice bilan validerait.
 | M | text | C'est l'après-midi. Sur cette horloge, seuls quatre nombres sont écrits. Quelle heure indiq… | 16 h 52 |
 | M | qcm | Lis l'heure de l'horloge avec le mot « moins ». Que dis-tu ? | c) 7 h moins 20 |
 
-**`A010` · Décomposer un entier** — diff. 3, seuil 2/3  
+**`A010` · Décomposer un entier** — diff. 3, seuil 3/4  
 *Écrire 5 827 = 5 000 + 800 + 20 + 7*
 > « décomposition additive sous la forme 4 000 + 600 + 30 + 5 »
 
 | | Type | Demandé | Réponse |
 |---|---|---|---|
 | D | text | Décompose 6 304 sous la forme d'une somme. Exemple attendu : 5 827 = 5 000 + 800 + 20 + 7 | 6000 + 300 + 4 |
+| D | qcm | Quelle décomposition de 3 571 est juste ? | b) 3 000 + 500 + 70 + 1 |
 | E | nume | Complète : 4 635 = (4 × 1 000) + (… × 100) + (3 × 10) + (5 × 1) | 6 |
+| E | vrai | Lina écrit : « 8 000 + 70 + 500 + 9 = 8 759 ». A-t-elle raison ? | faux |
 | M | nume | Quel nombre s'écrit (2 × 1 000) + (7 × 10) + (9 × 1) ? | 2079 |
+| M | nume | Complète : 6 205 = 5 000 + … + 5 | 1200 |
 
 **`B039` · Sens de la division et symbole ÷** — diff. 3, seuil 3/4  
 *Comprendre la division comme l'opération inverse de la multiplication, l'écrire avec le symbole ÷ et calculer un quotient exact à l'aide des tables*
@@ -1512,15 +1566,18 @@ Le chapitre est l'unité qu'un exercice bilan validerait.
 | M | vrai | Noé a posé 412 × 19 et a trouvé 4 120. Vrai ou faux : sans refaire le calcul, on peut affir… | vrai |
 | M | qcm | Pour la classe verte, le car coûte 2 950 € et l'hébergement 3 980 €. Le budget est de 9 000… | b) Il reste environ 2 000 €. |
 
-**`C004` · Fraction d'une quantité** — diff. 3, seuil 2/3  
+**`C004` · Fraction d'une quantité** — diff. 3, seuil 3/4  
 *Calculer une fraction unitaire d'une quantité ou d'une grandeur*
 > « au CM1, les fractions acquièrent également le statut d'opérateur multiplicatif pour le cas particulier des fractions unitaires ; les élèves apprennen… »
 
 | | Type | Demandé | Réponse |
 |---|---|---|---|
 | D | nume | Calcule le tiers de 12 billes, c'est-à-dire 1/3 de 12. | 4 |
+| D | qcm | Un sac contient 30 bonbons. Combien de bonbons y a-t-il dans 1/5 du sac ? | d) 6 |
 | E | nume | Une piste mesure 100 mètres. Calcule 1/4 de cette longueur. | 25 |
+| E | nume | Une citerne contient 56 litres d'eau. On utilise le septième de cette eau pour arroser. Com… | 8 |
 | M | nume | Léa a dépensé le tiers de son argent de poche, soit 7 €. Combien d'euros avait-elle au dépa… | 21 |
+| M | nume | Dans une classe, 6 élèves font de la chorale : c'est le cinquième de la classe. Le tiers de… | 10 |
 
 **`C027` · Fraction supérieure à 1** — diff. 3, seuil 3/4  
 *Écrire une fraction supérieure à 1 comme la somme d'un entier et d'une fraction inférieure à 1, et réciproquement*
@@ -2526,25 +2583,31 @@ Le chapitre est l'unité qu'un exercice bilan validerait.
 | M | qcm | Sans calculer, laquelle de ces sommes est négative ? | a) (+3,7) + (−5,2) |
 | M | nume | Le compte de Sami affiche −12,35 € : il doit cet argent à la banque. Il dépose 8,70 €. Quel… | -3.65 |
 
-**`C011` · Réduction au même dénominateur** — diff. 4, seuil 2/3  
+**`C011` · Réduction au même dénominateur** — diff. 4, seuil 3/4  
 *Trouver un dénominateur commun à deux fractions et les réduire*
 > « Additionner et soustraire des fractions de dénominateurs quelconques. »
 
 | | Type | Demandé | Réponse |
 |---|---|---|---|
 | D | nume | Quel est le plus petit dénominateur commun à 1/4 et 2/3 ? | 12 |
+| D | qcm | Quel est le plus petit dénominateur commun à 5/6 et 2/9 ? | c) 18 |
 | E | text | Réduis 1/4 et 2/3 au même dénominateur. Écris les deux fractions obtenues, séparées par une… | 3/12, 8/12 |
+| E | text | Réduis 3/10 et 7/15 au plus petit dénominateur commun. Écris les deux fractions obtenues da… | 9/30, 14/30 |
 | M | text | Calcule 2/5 + 1/4. Écris ta réponse sous la forme numérateur/dénominateur. | 13/20 |
+| M | text | Dans un jardin, les légumes occupent 2/7 de la surface et les fleurs 1/3. Le reste est en p… | 8/21 |
 
-**`C010` · Comparer fractions de dénominateurs différents** — diff. 4, seuil 2/3  
+**`C010` · Comparer fractions de dénominateurs différents** — diff. 4, seuil 3/4  
 *Comparer deux fractions de dénominateurs différents*
 > « Comparer des fractions. »
 
 | | Type | Demandé | Réponse |
 |---|---|---|---|
 | D | qcm | Compare 2/3 et 3/5. | a) 2/3 > 3/5 |
+| D | qcm | Compare 5/6 et 7/10. | c) 5/6 > 7/10 |
 | E | qcm | Compare 8/12 et 8/21 sans calculer. | a) 8/12 > 8/21 |
+| E | text | Quelle est la plus grande de ces trois fractions ? 13/20, 7/10, 3/5 Écris-la sous la forme … | 7/10 |
 | M | text | Range ces trois fractions de la plus petite à la plus grande : 3/4, 7/18, 5/6 Écris-les sép… | 7/18, 3/4, 5/6 |
+| M | qcm | Au club de Lina, 14 adhérents sur 20 sont des filles. Au club de Malo, 9 adhérents sur 12 s… | b) Au club de Malo |
 
 **`A017` · Problèmes de multiples et de diviseurs communs** — diff. 5, seuil 3/4  
 *Résoudre des problèmes où il faut chercher un multiple commun (deux phénomènes périodiques qui se reproduisent ensemble : deux bus qui repassent toutes les 12 et toutes les 18 minutes, deux engrenages) ou un diviseur commun (répartir 84 billes et 60 calots en paquets identiques, sans reste, le plus grand nombre de paquets possible), avec des nombres jusqu'à quelques centaines, en listant les multiples ou les diviseurs. Les mots PGCD et PPCM ne sont pas employés : ils ne figurent pas au programme. Figure : aucune.*
@@ -2730,15 +2793,18 @@ Le chapitre est l'unité qu'un exercice bilan validerait.
 | M | nume | Programme de calcul : choisir un nombre ; lui soustraire 5 ; multiplier le résultat par le … | 36 |
 | M | qcm | Quelle phrase décrit l'expression (-6) + 18 ÷ (-3) ? | a) C'est une somme ; elle vaut −1… |
 
-**`C007` · Simplification de fraction** — diff. 5, seuil 2/3  
+**`C007` · Simplification de fraction** — diff. 5, seuil 3/4  
 *Simplifier une fraction par un facteur commun au numérateur et au dénominateur*
 > « Simplifier une fraction. »
 
 | | Type | Demandé | Réponse |
 |---|---|---|---|
 | D | text | Simplifie 12/18 au maximum. Écris ta réponse sous la forme numérateur/dénominateur. | 2/3 |
+| D | qcm | On veut simplifier 14/35. Par quel nombre peut-on diviser à la fois le numérateur et le dén… | c) 7 |
 | E | text | Simplifie 25/40 au maximum. Écris ta réponse sous la forme numérateur/dénominateur. | 5/8 |
+| E | nume | On simplifie 56/72 et on obtient une fraction de dénominateur 9. Quel est son numérateur ? | 7 |
 | M | qcm | Peut-on simplifier l'écriture 4 + 2/4 en barrant les deux 4 ? | a) Non, car le 4 du haut est dans… |
+| M | qcm | Laquelle de ces égalités, écrites pour simplifier 18/27, est juste ? | d) 18/27 = 6/9 |
 
 ### ── 3e ──
 
@@ -2768,12 +2834,15 @@ Le chapitre est l'unité qu'un exercice bilan validerait.
 | M | qcm | La décomposition de 270 en produit de facteurs premiers est 2 × 3 × 3 × 3 × 5. Sans poser d… | b) 45 |
 | M | nume | On décompose 1 000 en produit de facteurs premiers. Combien de facteurs ce produit contient… | 6 |
 
-**`C008` · Fraction irréductible** — diff. 6, seuil 2/3  
+**`C008` · Fraction irréductible** — diff. 6, seuil 3/4  
 *Mettre une fraction sous forme irréductible*
 > « Mettre une fraction sous forme irréductible. »
 
 | | Type | Demandé | Réponse |
 |---|---|---|---|
 | D | text | Rends 36/48 irréductible. Écris ta réponse sous la forme numérateur/dénominateur. | 3/4 |
+| D | vrai | La fraction 21/25 est irréductible. | vrai |
 | E | text | Rends 84/126 irréductible. Écris ta réponse sous la forme numérateur/dénominateur. | 2/3 |
+| E | text | Écris 162/180 sous forme irréductible. Écris ta réponse sous la forme numérateur/dénominate… | 9/10 |
 | M | qcm | Parmi ces fractions, laquelle est irréductible ? | a) 7/9 |
+| M | text | Un collège compte 840 élèves, dont 315 demi-pensionnaires. Quelle fraction des élèves est d… | 3/8 |

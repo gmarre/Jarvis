@@ -38,6 +38,34 @@
     "programme_ref": "Cycle 2, CE1 : comparer des fractions ayant le même dénominateur."
   },
   {
+    "id": "EX-C009-D-02",
+    "skill_id": "C009",
+    "level": "decouverte",
+    "type": "texte",
+    "statement": "Les bandes A et B sont pareilles.\n\nQuelle fraction coloriée est la plus grande ? Écris-la avec une barre.",
+    "image": "figures/EX-C009-D-02",
+    "answer": {
+      "value": "4/5",
+      "accepted": [
+        "4 / 5",
+        "4 cinquièmes",
+        "quatre cinquièmes",
+        "4 cinquieme",
+        "quatre cinquieme"
+      ]
+    },
+    "solution_steps": [
+      "Les deux bandes sont partagées en 5 parts égales : ce sont des cinquièmes. Le dénominateur est 5 pour les deux.",
+      "Bande A : 4 parts coloriées, c'est $\\frac{4}{5}$. Bande B : 2 parts coloriées, c'est $\\frac{2}{5}$. Le numérateur compte les parts coloriées.",
+      "Les parts ont toutes la même taille : il suffit de comparer les numérateurs. 4 parts, c'est plus que 2 parts.",
+      "La plus grande fraction coloriée est $\\frac{4}{5}$, celle de la bande A."
+    ],
+    "hint": "Compte les parts de chaque bande, puis les parts coloriées.",
+    "estimated_duration_s": 45,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 2, CE1 : comparer des fractions ayant le même dénominateur."
+  },
+  {
     "id": "EX-C009-E-01",
     "skill_id": "C009",
     "level": "entrainement",
@@ -77,6 +105,44 @@
     "programme_ref": "Cycle 2, CE1 : comparer des fractions ayant le même dénominateur."
   },
   {
+    "id": "EX-C009-E-02",
+    "skill_id": "C009",
+    "level": "entrainement",
+    "type": "qcm",
+    "statement": "Compare $\\frac{9}{10}$ et $\\frac{6}{10}$. Quelle écriture est juste ?",
+    "image": null,
+    "choices": [
+      {
+        "key": "a",
+        "text": "$\\frac{9}{10} < \\frac{6}{10}$",
+        "misconception": "L'élève confond les signes < et > : la pointe du signe doit être tournée vers la plus petite fraction. Ou bien il compare les parts qui restent, 1 et 4, au lieu des parts prises."
+      },
+      {
+        "key": "b",
+        "text": "$\\frac{9}{10} = \\frac{6}{10}$",
+        "misconception": "L'élève voit le même dénominateur et en conclut que les deux fractions sont égales."
+      },
+      {
+        "key": "c",
+        "text": "$\\frac{9}{10} > \\frac{6}{10}$",
+        "misconception": null
+      }
+    ],
+    "answer": {
+      "value": "c"
+    },
+    "solution_steps": [
+      "Les deux fractions ont le même dénominateur 10 : le tout est partagé en 10 parts égales, des dixièmes.",
+      "Le numérateur dit combien de parts on prend : 9 d'un côté, 6 de l'autre.",
+      "9 parts, c'est plus que 6 parts de la même taille : $\\frac{9}{10}$ est plus grand que $\\frac{6}{10}$.",
+      "On écrit $\\frac{9}{10} > \\frac{6}{10}$ : la pointe du signe est tournée vers la plus petite fraction."
+    ],
+    "hint": "Les parts ont la même taille. Compare le nombre de parts, puis vérifie le sens du signe.",
+    "estimated_duration_s": 50,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 2, CE1 : comparer des fractions ayant le même dénominateur."
+  },
+  {
     "id": "EX-C009-M-01",
     "skill_id": "C009",
     "level": "maitrise",
@@ -98,6 +164,37 @@
     ],
     "hint": "Même dénominateur : range simplement les numérateurs.",
     "estimated_duration_s": 60,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 2, CE1 : comparer des fractions ayant le même dénominateur."
+  },
+  {
+    "id": "EX-C009-M-02",
+    "skill_id": "C009",
+    "level": "maitrise",
+    "type": "numerique",
+    "statement": "Léo, Inès et Sami ont des tablettes pareilles. Léo en mange $\\frac{6}{8}$, Inès $\\frac{4}{8}$. Sami mange plus qu'Inès, mais moins que Léo.\n\nCombien de huitièmes mange Sami ?",
+    "image": null,
+    "answer": {
+      "value": 5,
+      "accepted": [
+        "5/8",
+        "5 / 8",
+        "5 huitièmes",
+        "cinq",
+        "cinq huitièmes",
+        "5 huitieme",
+        "cinq huitieme"
+      ]
+    },
+    "solution_steps": [
+      "Les trois tablettes sont pareilles et les fractions sont des huitièmes : les parts ont toutes la même taille.",
+      "Léo mange 6 huitièmes, Inès 4 huitièmes. Le dénominateur est le même : on compare les numérateurs.",
+      "Sami mange plus qu'Inès : plus de 4 huitièmes. Il mange moins que Léo : moins de 6 huitièmes.",
+      "Le seul nombre plus grand que 4 et plus petit que 6 est 5 : Sami mange **5 huitièmes**, c'est-à-dire $\\frac{5}{8}$ de sa tablette.",
+      "On peut l'écrire $\\frac{4}{8} < \\frac{5}{8} < \\frac{6}{8}$."
+    ],
+    "hint": "Le dénominateur est le même pour tous. Cherche un numérateur entre celui d'Inès et celui de Léo.",
+    "estimated_duration_s": 90,
     "review_status": "relu_agent",
     "programme_ref": "Cycle 2, CE1 : comparer des fractions ayant le même dénominateur."
   }

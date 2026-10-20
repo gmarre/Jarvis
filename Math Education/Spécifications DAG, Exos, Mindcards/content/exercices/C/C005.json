@@ -23,6 +23,32 @@
     "programme_ref": "Cycle 2, CE2 : positionner des fractions sur une bande-unité graduée."
   },
   {
+    "id": "EX-C005-D-02",
+    "skill_id": "C005",
+    "level": "decouverte",
+    "type": "texte",
+    "statement": "Quelle fraction repère le point A ? Écris-la sous la forme numérateur/dénominateur.",
+    "image": "figures/EX-C005-D-02",
+    "answer": {
+      "value": "5/6",
+      "accepted": [
+        "5 / 6",
+        "cinq sixièmes",
+        "5 sixièmes"
+      ]
+    },
+    "solution_steps": [
+      "Entre 0 et 1, on compte les intervalles égaux : il y en a 6. Chaque intervalle vaut $\\frac{1}{6}$.",
+      "Depuis 0, on avance de 5 intervalles pour arriver au point A.",
+      "Le point A repère $\\frac{5}{6}$.",
+      "On compte les intervalles, pas les traits : de 0 à 1, il y a 7 traits mais seulement 6 intervalles."
+    ],
+    "hint": "Compte les intervalles entre 0 et 1, puis ceux entre 0 et le point A.",
+    "estimated_duration_s": 45,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 2, CE2 : graduer une bande-unité en fractions de cette unité."
+  },
+  {
     "id": "EX-C005-E-01",
     "skill_id": "C005",
     "level": "entrainement",
@@ -46,6 +72,44 @@
     "programme_ref": "Cycle 2, CE2 : positionner des fractions sur une bande-unité graduée."
   },
   {
+    "id": "EX-C005-E-02",
+    "skill_id": "C005",
+    "level": "entrainement",
+    "type": "qcm",
+    "statement": "Quel point repère la fraction $\\frac{4}{9}$ ?",
+    "image": "figures/EX-C005-E-02",
+    "choices": [
+      {
+        "key": "a",
+        "text": "Le point A",
+        "misconception": "L'élève part de 1 au lieu de 0 : il recule de 4 intervalles depuis 1 et tombe sur $\\frac{5}{9}$."
+      },
+      {
+        "key": "b",
+        "text": "Le point B",
+        "misconception": "L'élève compte les traits au lieu des intervalles : il compte le trait de 0 comme le premier, et son 4e trait repère $\\frac{3}{9}$."
+      },
+      {
+        "key": "c",
+        "text": "Le point C",
+        "misconception": null
+      }
+    ],
+    "answer": {
+      "value": "c"
+    },
+    "solution_steps": [
+      "Entre 0 et 1, il y a 9 intervalles égaux : la demi-droite est graduée en neuvièmes.",
+      "$\\frac{4}{9}$ : on avance de 4 intervalles depuis 0.",
+      "On arrive au point C. Le point B est à 3 intervalles de 0, le point A à 5 intervalles.",
+      "La réponse est le point C."
+    ],
+    "hint": "Le dénominateur dit en combien d'intervalles l'unité est partagée ; le numérateur, combien d'intervalles on parcourt depuis 0.",
+    "estimated_duration_s": 60,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 2, CE2 : positionner des fractions sur une bande-unité graduée."
+  },
+  {
     "id": "EX-C005-M-01",
     "skill_id": "C005",
     "level": "maitrise",
@@ -65,5 +129,33 @@
     "estimated_duration_s": 75,
     "review_status": "relu_agent",
     "programme_ref": "Cycle 2, CE2 : positionnement de fractions égales au niveau de la même graduation."
+  },
+  {
+    "id": "EX-C005-M-02",
+    "skill_id": "C005",
+    "level": "maitrise",
+    "type": "texte",
+    "statement": "Sur cette demi-droite, le nombre 1 n'est pas écrit. Quelle fraction repère le point A ? Écris-la sous la forme numérateur/dénominateur.",
+    "image": "figures/EX-C005-M-02",
+    "answer": {
+      "value": "7/10",
+      "accepted": [
+        "7 / 10",
+        "sept dixièmes",
+        "7 dixièmes"
+      ]
+    },
+    "solution_steps": [
+      "De 0 à $\\frac{1}{2}$, on compte 5 intervalles égaux.",
+      "Une moitié fait 5 intervalles : l'unité entière, de 0 à 1, en fait deux fois plus, $2 \\times 5 = 10$. Chaque intervalle vaut donc $\\frac{1}{10}$.",
+      "De 0 au point A, on compte 7 intervalles.",
+      "Le point A repère $\\frac{7}{10}$.",
+      "Piège : un intervalle ne vaut pas $\\frac{1}{5}$. Les 5 intervalles mènent à $\\frac{1}{2}$, pas à 1.",
+      "Attention : le bout du dessin n'est pas 1, la demi-droite continue après 1."
+    ],
+    "hint": "Combien d'intervalles entre 0 et $\\frac{1}{2}$ ? Combien en faut-il alors entre 0 et 1 ?",
+    "estimated_duration_s": 90,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 2, CE2 : graduer une bande-unité en fractions de cette unité."
   }
 ]

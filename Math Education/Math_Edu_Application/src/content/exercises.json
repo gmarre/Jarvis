@@ -3,7 +3,7 @@
     "version": "1.0",
     "scope": "Tranche pilote CP a 4e : 69 exercices, 3 par competence (1 decouverte, 1 entrainement, 1 maitrise) sur les 23 competences des domaines A et C. La cible finale de la roadmap est de 5 exercices par niveau, soit 15 par competence.",
     "updated_at": "2026-07-28",
-    "total_exercises": 967,
+    "total_exercises": 1036,
     "review_status": "relu_agent"
   },
   "exercises": [
@@ -27,6 +27,44 @@
       "programme_ref": "Cycle 2, CP : les nombres entiers jusqu'à cent."
     },
     {
+      "id": "EX-A001-D-02",
+      "skill_id": "A001",
+      "level": "decouverte",
+      "type": "qcm",
+      "statement": "Quelle rangée a **cinq** jetons ?",
+      "image": null,
+      "choices": [
+        {
+          "key": "a",
+          "text": "● ● ● ●",
+          "misconception": "L'élève dit deux nombres en montrant le même jeton : il arrive à « cinq » au bout de la rangée alors qu'elle n'a que 4 jetons."
+        },
+        {
+          "key": "b",
+          "text": "● ● ● ● ●",
+          "misconception": null
+        },
+        {
+          "key": "c",
+          "text": "● ● ● ● ● ●",
+          "misconception": "L'élève saute un jeton en comptant : il dit « cinq » sur le dernier jeton alors que la rangée en a 6."
+        }
+      ],
+      "answer": {
+        "value": "b"
+      },
+      "solution_steps": [
+        "On compte chaque rangée en touchant chaque jeton une seule fois.",
+        "Première rangée : 1, 2, 3, 4. Elle a 4 jetons, il en manque un.",
+        "Deuxième rangée : 1, 2, 3, 4, 5. Elle a **cinq** jetons : c'est la bonne.",
+        "Troisième rangée : 1, 2, 3, 4, 5, 6. Elle a 6 jetons, un de trop."
+      ],
+      "hint": "Compte chaque rangée en posant ton doigt sur les jetons, un par un.",
+      "estimated_duration_s": 30,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 2, CP : construire des collections de cardinal donné."
+    },
+    {
       "id": "EX-A001-E-01",
       "skill_id": "A001",
       "level": "entrainement",
@@ -43,6 +81,34 @@
       "estimated_duration_s": 20,
       "review_status": "relu_agent",
       "programme_ref": "Cycle 2, CP : les nombres entiers jusqu'à cent."
+    },
+    {
+      "id": "EX-A001-E-02",
+      "skill_id": "A001",
+      "level": "entrainement",
+      "type": "numerique",
+      "statement": "Compte seulement les ronds noirs :\n\n● ○ ● ● ○ ● ○ ● ● ○ ● ○ ●\n\nCombien y en a-t-il ?",
+      "image": null,
+      "answer": {
+        "value": 8,
+        "accepted": [
+          "huit",
+          "8 ronds",
+          "8 ronds noirs",
+          "huit ronds",
+          "huit ronds noirs"
+        ]
+      },
+      "solution_steps": [
+        "On ne compte que les ronds noirs : on saute les ronds blancs sans dire de nombre.",
+        "On touche chaque rond noir une seule fois, de gauche à droite : 1, 2, 3, 4, 5, 6, 7, 8.",
+        "Le dernier nombre dit donne la quantité : il y a **8** ronds noirs.",
+        "Erreur à éviter : compter les ronds blancs avec les noirs. On trouverait trop de ronds."
+      ],
+      "hint": "Pose ton doigt sur chaque rond noir, un par un, et saute les ronds blancs.",
+      "estimated_duration_s": 45,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 2, CP : comparer et dénombrer des collections en les organisant."
     },
     {
       "id": "EX-A001-M-01",
@@ -66,6 +132,32 @@
       "programme_ref": "Cycle 2, CP : les nombres entiers jusqu'à cent."
     },
     {
+      "id": "EX-A001-M-02",
+      "skill_id": "A001",
+      "level": "maitrise",
+      "type": "numerique",
+      "statement": "Nina a compté jusqu'à **sept**. Il reste : ● ● ●\n\nQuel nombre dit-elle sur le dernier jeton ?",
+      "image": null,
+      "answer": {
+        "value": 10,
+        "accepted": [
+          "dix",
+          "dix jetons",
+          "10 jetons"
+        ]
+      },
+      "solution_steps": [
+        "Nina a déjà compté sept jetons : elle continue, sans repartir de 1.",
+        "On continue la suite des nombres à partir de sept, en touchant chaque jeton qui reste : huit, neuf, dix.",
+        "Le dernier nombre dit donne la quantité : Nina a **10** jetons en tout.",
+        "Erreur à éviter : répondre 3, c'est le nombre de jetons qui restent, pas le nombre dit à la fin."
+      ],
+      "hint": "Ne recommence pas à 1 : continue à compter après sept, un jeton à la fois.",
+      "estimated_duration_s": 60,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 2, CP : l'élève sait compter, à l'oral et à l'écrit, de un en un, de deux en deux et de dix en dix en partant de n'importe quel nombre."
+    },
+    {
       "id": "EX-A002-D-01",
       "skill_id": "A002",
       "level": "decouverte",
@@ -86,6 +178,32 @@
       "programme_ref": "Cycle 2, CP : à la fin du CP, l'élève maîtrise l'écriture en lettres des nombres jusqu'à cinquante."
     },
     {
+      "id": "EX-A002-D-02",
+      "skill_id": "A002",
+      "level": "decouverte",
+      "type": "numerique",
+      "statement": "Lina a 5 boîtes de 10 œufs et 3 œufs seuls.\n\nCombien d'œufs a-t-elle ?",
+      "image": null,
+      "answer": {
+        "value": 53,
+        "accepted": [
+          "53 œufs",
+          "53 oeufs"
+        ]
+      },
+      "solution_steps": [
+        "Chaque boîte contient 10 œufs : 5 boîtes, c'est 5 dizaines d'œufs.",
+        "On compte les boîtes de dix en dix : 10, 20, 30, 40, 50.",
+        "On continue avec les 3 œufs seuls, un par un : 51, 52, 53.",
+        "Lina a **53** œufs : 5 dizaines et 3 unités.",
+        "Erreur à éviter : répondre 8, en comptant chaque boîte comme un seul œuf."
+      ],
+      "hint": "Compte les boîtes de dix en dix, puis les œufs seuls un par un.",
+      "estimated_duration_s": 35,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 2, CP : connaitre la valeur des chiffres en fonction de leur position (unités, dizaines)."
+    },
+    {
       "id": "EX-A002-E-01",
       "skill_id": "A002",
       "level": "entrainement",
@@ -104,6 +222,27 @@
       "estimated_duration_s": 30,
       "review_status": "relu_agent",
       "programme_ref": "Cycle 2, CP : les nombres entiers jusqu'à cent."
+    },
+    {
+      "id": "EX-A002-E-02",
+      "skill_id": "A002",
+      "level": "entrainement",
+      "type": "numerique",
+      "statement": "Quel nombre est repéré par le point A ?",
+      "image": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 380 96\" width=\"380\" height=\"96\" font-family=\"system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif\" role=\"img\"><title>Demi-droite graduée avec un point A</title><rect width=\"100%\" height=\"100%\" fill=\"#ffffff\"/><line x1=\"50.0\" y1=\"54.0\" x2=\"352.0\" y2=\"54.0\" stroke=\"#334155\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M352.0,54.0 l-9,-5 v10 z\" fill=\"#334155\"/><line x1=\"20\" y1=\"54\" x2=\"50\" y2=\"54\" stroke=\"#334155\" stroke-width=\"2\" stroke-dasharray=\"4 4\"/><line x1=\"50.0\" y1=\"45.0\" x2=\"50.0\" y2=\"63.0\" stroke=\"#334155\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><line x1=\"78.8\" y1=\"45.0\" x2=\"78.8\" y2=\"63.0\" stroke=\"#334155\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><line x1=\"107.6\" y1=\"45.0\" x2=\"107.6\" y2=\"63.0\" stroke=\"#334155\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><line x1=\"136.4\" y1=\"45.0\" x2=\"136.4\" y2=\"63.0\" stroke=\"#334155\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><line x1=\"165.2\" y1=\"45.0\" x2=\"165.2\" y2=\"63.0\" stroke=\"#334155\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><line x1=\"194.0\" y1=\"45.0\" x2=\"194.0\" y2=\"63.0\" stroke=\"#334155\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><line x1=\"222.8\" y1=\"45.0\" x2=\"222.8\" y2=\"63.0\" stroke=\"#334155\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><line x1=\"251.6\" y1=\"45.0\" x2=\"251.6\" y2=\"63.0\" stroke=\"#334155\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><line x1=\"280.4\" y1=\"45.0\" x2=\"280.4\" y2=\"63.0\" stroke=\"#334155\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><line x1=\"309.2\" y1=\"45.0\" x2=\"309.2\" y2=\"63.0\" stroke=\"#334155\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><line x1=\"338.0\" y1=\"45.0\" x2=\"338.0\" y2=\"63.0\" stroke=\"#334155\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><text x=\"50.0\" y=\"82.0\" font-size=\"13\" text-anchor=\"middle\" fill=\"#334155\">50</text><text x=\"338.0\" y=\"82.0\" font-size=\"13\" text-anchor=\"middle\" fill=\"#334155\">60</text><circle cx=\"251.6\" cy=\"54.0\" r=\"4.5\" fill=\"#2563eb\"/><text x=\"251.6\" y=\"38.0\" font-size=\"15\" text-anchor=\"middle\" fill=\"#2563eb\" font-weight=\"600\">A</text></svg>",
+      "answer": {
+        "value": 57
+      },
+      "solution_steps": [
+        "La demi-droite est graduée de un en un : d'un trait au suivant, on avance de 1. De 50 à 60, il y a bien 10 pas.",
+        "On part du trait de 50 et on avance trait par trait jusqu'au point A : 51, 52, 53, 54, 55, 56, 57.",
+        "Le point A repère le nombre **57**.",
+        "Erreur à éviter : dire « 51 » sur le trait de 50. On compterait un trait de trop et on trouverait 58."
+      ],
+      "hint": "Pars du trait de 50 et avance d'un trait à la fois jusqu'au point A.",
+      "estimated_duration_s": 45,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 2, CP : savoir placer des nombres sur une demi-droite graduée de un en un."
     },
     {
       "id": "EX-A002-M-01",
@@ -143,6 +282,44 @@
       "programme_ref": "Cycle 2, CP : les nombres entiers jusqu'à cent."
     },
     {
+      "id": "EX-A002-M-02",
+      "skill_id": "A002",
+      "level": "maitrise",
+      "type": "qcm",
+      "statement": "Léo a 4 paquets de 10 cartes et 12 cartes seules.\n\nCombien a-t-il de cartes ?",
+      "image": null,
+      "choices": [
+        {
+          "key": "a",
+          "text": "16",
+          "misconception": "L'élève compte chaque paquet comme une seule carte : 4 et 12 font 16. Mais un paquet contient 10 cartes."
+        },
+        {
+          "key": "b",
+          "text": "42",
+          "misconception": "L'élève écrit 4 pour les dizaines et garde seulement le 2 de 12 : il oublie que les 12 cartes seules contiennent une dizaine de plus."
+        },
+        {
+          "key": "c",
+          "text": "52",
+          "misconception": null
+        }
+      ],
+      "answer": {
+        "value": "c"
+      },
+      "solution_steps": [
+        "Les 4 paquets de 10 font 4 dizaines.",
+        "Avec les 12 cartes seules, on peut faire un paquet de plus : 10 cartes, et il en reste 2.",
+        "Léo a donc 5 paquets de 10 et 2 cartes seules : 5 dizaines et 2 unités.",
+        "On compte de dix en dix, puis de un en un : 10, 20, 30, 40, 50, 51, 52. Léo a **52** cartes."
+      ],
+      "hint": "Avec les 12 cartes seules, peux-tu faire un nouveau paquet de 10 ?",
+      "estimated_duration_s": 60,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 2, CP : comparer et dénombrer des collections en les organisant."
+    },
+    {
       "id": "EX-A003-D-01",
       "skill_id": "A003",
       "level": "decouverte",
@@ -162,6 +339,27 @@
       "estimated_duration_s": 40,
       "review_status": "relu_agent",
       "programme_ref": "Cycle 2, CE1 : les connaissances et savoir-faire attendus concernent les nombres jusqu'à mille."
+    },
+    {
+      "id": "EX-A003-D-02",
+      "skill_id": "A003",
+      "level": "decouverte",
+      "type": "numerique",
+      "statement": "Écris en chiffres le nombre qui a 4 centaines, 1 dizaine et 9 unités.",
+      "image": null,
+      "answer": {
+        "value": 419
+      },
+      "solution_steps": [
+        "On écrit les chiffres de gauche à droite : centaines, puis dizaines, puis unités.",
+        "4 centaines : 4 au rang des centaines. 1 dizaine : 1 au rang des dizaines. 9 unités : 9 au rang des unités.",
+        "On obtient **419**.",
+        "Vérification : $400 + 10 + 9 = 419$."
+      ],
+      "hint": "Écris d'abord le chiffre des centaines, puis celui des dizaines, puis celui des unités.",
+      "estimated_duration_s": 35,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 2, CE1 : connaitre la valeur des chiffres en fonction de leur position dans un nombre."
     },
     {
       "id": "EX-A003-E-01",
@@ -184,6 +382,28 @@
       "programme_ref": "Cycle 2, CE1 : les nombres jusqu'à mille."
     },
     {
+      "id": "EX-A003-E-02",
+      "skill_id": "A003",
+      "level": "entrainement",
+      "type": "numerique",
+      "statement": "Quel nombre le point A repère-t-il sur cette demi-droite ?",
+      "image": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 380 96\" width=\"380\" height=\"96\" font-family=\"system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif\" role=\"img\"><title>Demi-droite graduée avec un point A</title><rect width=\"100%\" height=\"100%\" fill=\"#ffffff\"/><line x1=\"50.0\" y1=\"54.0\" x2=\"352.0\" y2=\"54.0\" stroke=\"#334155\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M352.0,54.0 l-9,-5 v10 z\" fill=\"#334155\"/><line x1=\"20\" y1=\"54\" x2=\"50\" y2=\"54\" stroke=\"#334155\" stroke-width=\"2\" stroke-dasharray=\"4 4\"/><line x1=\"50.0\" y1=\"45.0\" x2=\"50.0\" y2=\"63.0\" stroke=\"#334155\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><line x1=\"78.8\" y1=\"45.0\" x2=\"78.8\" y2=\"63.0\" stroke=\"#334155\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><line x1=\"107.6\" y1=\"45.0\" x2=\"107.6\" y2=\"63.0\" stroke=\"#334155\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><line x1=\"136.4\" y1=\"45.0\" x2=\"136.4\" y2=\"63.0\" stroke=\"#334155\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><line x1=\"165.2\" y1=\"45.0\" x2=\"165.2\" y2=\"63.0\" stroke=\"#334155\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><line x1=\"194.0\" y1=\"45.0\" x2=\"194.0\" y2=\"63.0\" stroke=\"#334155\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><line x1=\"222.8\" y1=\"45.0\" x2=\"222.8\" y2=\"63.0\" stroke=\"#334155\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><line x1=\"251.6\" y1=\"45.0\" x2=\"251.6\" y2=\"63.0\" stroke=\"#334155\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><line x1=\"280.4\" y1=\"45.0\" x2=\"280.4\" y2=\"63.0\" stroke=\"#334155\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><line x1=\"309.2\" y1=\"45.0\" x2=\"309.2\" y2=\"63.0\" stroke=\"#334155\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><line x1=\"338.0\" y1=\"45.0\" x2=\"338.0\" y2=\"63.0\" stroke=\"#334155\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><text x=\"50.0\" y=\"82.0\" font-size=\"13\" text-anchor=\"middle\" fill=\"#334155\">300</text><text x=\"338.0\" y=\"82.0\" font-size=\"13\" text-anchor=\"middle\" fill=\"#334155\">400</text><circle cx=\"222.8\" cy=\"54.0\" r=\"4.5\" fill=\"#2563eb\"/><text x=\"222.8\" y=\"38.0\" font-size=\"15\" text-anchor=\"middle\" fill=\"#2563eb\" font-weight=\"600\">A</text></svg>",
+      "answer": {
+        "value": 360
+      },
+      "solution_steps": [
+        "Entre 300 et 400, la figure montre 10 intervalles égaux.",
+        "Il faut 10 dizaines pour faire une centaine : chaque intervalle vaut donc 10. La demi-droite est graduée de dix en dix.",
+        "On part de 300 et on avance de dix en dix jusqu'au point A : 310, 320, 330, 340, 350, 360.",
+        "Le point A repère le nombre **360**.",
+        "Erreur à éviter : croire que chaque intervalle vaut 1. On répondrait 306, et on n'arriverait jamais à 400 au bout de la demi-droite."
+      ],
+      "hint": "Combien d'intervalles entre 300 et 400 ? Combien vaut chacun ?",
+      "estimated_duration_s": 50,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 2, CE1 : l'élève sait placer un nombre, ou déterminer le nombre correspondant à un point sur une demi-droite graduée de un en un, ou de dix en dix, ou de cent en cent."
+    },
+    {
       "id": "EX-A003-M-01",
       "skill_id": "A003",
       "level": "maitrise",
@@ -203,6 +423,44 @@
       "estimated_duration_s": 45,
       "review_status": "relu_agent",
       "programme_ref": "Cycle 2, CE1 : les nombres jusqu'à mille."
+    },
+    {
+      "id": "EX-A003-M-02",
+      "skill_id": "A003",
+      "level": "maitrise",
+      "type": "qcm",
+      "statement": "Quel nombre a 5 centaines et 13 dizaines ?",
+      "image": null,
+      "choices": [
+        {
+          "key": "a",
+          "text": "513",
+          "misconception": "L'élève écrit 5 puis 13 côte à côte : il traite les 13 dizaines comme 13 unités."
+        },
+        {
+          "key": "b",
+          "text": "630",
+          "misconception": null
+        },
+        {
+          "key": "c",
+          "text": "530",
+          "misconception": "L'élève garde les 3 dizaines qui dépassent, mais oublie la centaine formée par 10 des 13 dizaines."
+        }
+      ],
+      "answer": {
+        "value": "b"
+      },
+      "solution_steps": [
+        "13 dizaines, c'est 10 dizaines et 3 dizaines.",
+        "10 dizaines font 1 centaine. Les 13 dizaines donnent donc 1 centaine et 3 dizaines.",
+        "Avec cette centaine de plus, on a 6 centaines, 3 dizaines et aucune unité.",
+        "Le nombre est **630**."
+      ],
+      "hint": "Combien de dizaines faut-il pour faire une centaine ?",
+      "estimated_duration_s": 60,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 2, CE1 : connaitre et utiliser la relation entre unités et dizaines, entre dizaines et centaines, entre unités et centaines."
     },
     {
       "id": "EX-A004-D-01",
@@ -243,6 +501,44 @@
       "programme_ref": "Cycle 2, CE1 : les connaissances et savoir-faire attendus concernent les nombres jusqu'à mille."
     },
     {
+      "id": "EX-A004-D-02",
+      "skill_id": "A004",
+      "level": "decouverte",
+      "type": "qcm",
+      "statement": "Comment lit-on le nombre **543** ?",
+      "image": null,
+      "choices": [
+        {
+          "key": "a",
+          "text": "cinq-quatre-trois",
+          "misconception": "L'élève lit les chiffres un par un, sans tenir compte de leur rang."
+        },
+        {
+          "key": "b",
+          "text": "cinq-cent-quarante-trois",
+          "misconception": null
+        },
+        {
+          "key": "c",
+          "text": "cinq-cent-trente-quatre",
+          "misconception": "L'élève échange le chiffre des dizaines et celui des unités : il lit 534 au lieu de 543."
+        }
+      ],
+      "answer": {
+        "value": "b"
+      },
+      "solution_steps": [
+        "On repère les rangs : 5 centaines, 4 dizaines, 3 unités.",
+        "5 centaines se lit **cinq-cent**.",
+        "4 dizaines, c'est 40 : **quarante**. 3 unités : **trois**.",
+        "On lit « cinq-cent-quarante-trois »."
+      ],
+      "hint": "Quel chiffre est au rang des centaines ? Et au rang des dizaines ?",
+      "estimated_duration_s": 40,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 2, CE1 : il sait également lire un nombre écrit en chiffres et l'écrire en lettres."
+    },
+    {
       "id": "EX-A004-E-01",
       "skill_id": "A004",
       "level": "entrainement",
@@ -279,6 +575,27 @@
       "estimated_duration_s": 40,
       "review_status": "relu_agent",
       "programme_ref": "Cycle 2, CE1 : les nombres jusqu'à mille."
+    },
+    {
+      "id": "EX-A004-E-02",
+      "skill_id": "A004",
+      "level": "entrainement",
+      "type": "vrai_faux",
+      "statement": "Hugo lit le nombre 472 : « quatre-cent-soixante-dix-deux ».\n\nA-t-il raison ?",
+      "image": null,
+      "answer": {
+        "value": false
+      },
+      "solution_steps": [
+        "472, c'est 4 centaines, 7 dizaines et 2 unités.",
+        "4 centaines se lit **quatre-cent**.",
+        "72 ne se dit pas « soixante-dix-deux » : après soixante-dix, on dit soixante-et-onze, puis **soixante-douze**.",
+        "On lit « quatre-cent-soixante-douze ». Hugo a **tort**."
+      ],
+      "hint": "Récite la suite des nombres après soixante-dix. Comment dit-on 72 ?",
+      "estimated_duration_s": 45,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 2, CE1 : connaitre la suite écrite et la suite orale des nombres jusqu'à mille."
     },
     {
       "id": "EX-A004-M-01",
@@ -325,6 +642,50 @@
       "programme_ref": "Cycle 2, CE1 : les nombres jusqu'à mille."
     },
     {
+      "id": "EX-A004-M-02",
+      "skill_id": "A004",
+      "level": "maitrise",
+      "type": "qcm",
+      "statement": "Dans quel nombre entend-on « quatre-vingt » quand on le lit ?",
+      "image": null,
+      "choices": [
+        {
+          "key": "a",
+          "text": "420",
+          "misconception": "L'élève entend « quatre » et « vingt » dans quatre-cent-vingt, mais ils sont séparés par « cent » : ce n'est pas quatre-vingt."
+        },
+        {
+          "key": "b",
+          "text": "808",
+          "misconception": "L'élève voit 80 écrit au début du nombre sans regarder les rangs : le 8 est au rang des centaines, et 808 se lit huit-cent-huit."
+        },
+        {
+          "key": "c",
+          "text": "148",
+          "misconception": "L'élève associe quatre-vingt aux chiffres 4 et 8 qu'il voit dans le nombre, au lieu de le lire : 148 se lit cent-quarante-huit."
+        },
+        {
+          "key": "d",
+          "text": "390",
+          "misconception": null
+        }
+      ],
+      "answer": {
+        "value": "d"
+      },
+      "solution_steps": [
+        "On lit chaque nombre en entier, en repérant les rangs.",
+        "420 se lit quatre-cent-vingt : on entend « quatre » puis « vingt », mais séparés par « cent ».",
+        "808 se lit huit-cent-huit, et 148 se lit cent-quarante-huit.",
+        "390, c'est 3 centaines et 9 dizaines. 9 dizaines, c'est 90, qui se dit **quatre-vingt-dix**.",
+        "On lit « trois-cent-quatre-vingt-dix » : c'est **390**. Pourtant, il n'a ni 4 ni 8 dans son écriture."
+      ],
+      "hint": "Lis chaque nombre à voix basse, en entier. Ne regarde pas seulement ses chiffres.",
+      "estimated_duration_s": 60,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 2, CE1 : il sait également lire un nombre écrit en chiffres et l'écrire en lettres."
+    },
+    {
       "id": "EX-A005-D-01",
       "skill_id": "A005",
       "level": "decouverte",
@@ -342,6 +703,44 @@
       "estimated_duration_s": 35,
       "review_status": "relu_agent",
       "programme_ref": "Cycle 2, CE1 : les nombres jusqu'à mille."
+    },
+    {
+      "id": "EX-A005-D-02",
+      "skill_id": "A005",
+      "level": "decouverte",
+      "type": "qcm",
+      "statement": "Quel nombre s'écrit **trois-cent-quatorze** ?",
+      "image": null,
+      "choices": [
+        {
+          "key": "a",
+          "text": "30014",
+          "misconception": "L'élève écrit ce qu'il entend, morceau par morceau : 300 pour « trois-cent », puis 14 pour « quatorze », côte à côte."
+        },
+        {
+          "key": "b",
+          "text": "314",
+          "misconception": null
+        },
+        {
+          "key": "c",
+          "text": "340",
+          "misconception": "L'élève confond « quatorze » et « quarante » : il écrit 4 dizaines au lieu de 1 dizaine et 4 unités."
+        }
+      ],
+      "answer": {
+        "value": "b"
+      },
+      "solution_steps": [
+        "« Trois-cent » : 3 centaines.",
+        "« Quatorze » : 14, soit 1 dizaine et 4 unités.",
+        "On écrit chaque chiffre à sa place : 3 aux centaines, 1 aux dizaines, 4 aux unités.",
+        "On obtient **314**. On n'écrit pas 300 puis 14 côte à côte, et « quatorze » n'est pas « quarante »."
+      ],
+      "hint": "Combien de centaines, de dizaines et d'unités entends-tu ?",
+      "estimated_duration_s": 35,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 2, CE1 : l'élève sait écrire en chiffres un nombre dicté."
     },
     {
       "id": "EX-A005-E-01",
@@ -365,6 +764,27 @@
       "programme_ref": "Cycle 2, CE1 : les nombres jusqu'à mille."
     },
     {
+      "id": "EX-A005-E-02",
+      "skill_id": "A005",
+      "level": "entrainement",
+      "type": "numerique",
+      "statement": "Écris en chiffres : **quatre-cent-quatre-vingt-quatre**.",
+      "image": null,
+      "answer": {
+        "value": 484
+      },
+      "solution_steps": [
+        "« Quatre-cent » : 4 centaines.",
+        "« Quatre-vingt » désigne 80, soit 8 dizaines. Ce n'est pas 4 puis 20.",
+        "« Quatre » à la fin : 4 unités.",
+        "On obtient **484**."
+      ],
+      "hint": "« Quatre-vingt » est un seul nombre. Combien de dizaines fait-il ?",
+      "estimated_duration_s": 45,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 2, CE1 : connaitre et utiliser diverses représentations d'un nombre et passer de l'une à l'autre."
+    },
+    {
       "id": "EX-A005-M-01",
       "skill_id": "A005",
       "level": "maitrise",
@@ -384,6 +804,27 @@
       "estimated_duration_s": 75,
       "review_status": "relu_agent",
       "programme_ref": "Cycle 2, CE1 : les nombres jusqu'à mille."
+    },
+    {
+      "id": "EX-A005-M-02",
+      "skill_id": "A005",
+      "level": "maitrise",
+      "type": "numerique",
+      "statement": "Maé entend « six-cent-soixante-quatorze ». Elle écrit 664.\n\nQuel nombre aurait-elle dû écrire ?",
+      "image": null,
+      "answer": {
+        "value": 674
+      },
+      "solution_steps": [
+        "« Six-cent » : 6 centaines. Maé a bien écrit 6 au rang des centaines.",
+        "Après soixante-dix viennent soixante-et-onze, soixante-douze, soixante-treize, soixante-quatorze : « soixante-quatorze », c'est 74.",
+        "Il y a donc 7 dizaines et 4 unités, pas 6 dizaines. Maé a entendu « soixante » et écrit 6, puis seulement le 4 de « quatorze ».",
+        "Le nombre s'écrit **674**."
+      ],
+      "hint": "Comment s'écrit « soixante-quatorze » ? Récite la suite après soixante-dix.",
+      "estimated_duration_s": 75,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 2, CE1 : l'élève sait écrire en chiffres un nombre dicté."
     },
     {
       "id": "EX-A006-D-01",
@@ -421,6 +862,27 @@
       "estimated_duration_s": 35,
       "review_status": "relu_agent",
       "programme_ref": "Cycle 2, CE1 : comparer les entiers."
+    },
+    {
+      "id": "EX-A006-D-02",
+      "skill_id": "A006",
+      "level": "decouverte",
+      "type": "vrai_faux",
+      "statement": "Cette écriture est-elle vraie ?\n\n$71 > 69$",
+      "image": null,
+      "answer": {
+        "value": true
+      },
+      "solution_steps": [
+        "Les deux nombres ont deux chiffres : on compare d'abord les dizaines.",
+        "71 a 7 dizaines, 69 en a 6. 7 dizaines, c'est plus que 6 dizaines : 71 est le plus grand.",
+        "Le signe $>$ se lit « est plus grand que ». L'écriture $71 > 69$ est **vraie**.",
+        "Erreur à éviter : comparer les unités, 1 et 9. Le 9 de 69 est grand, mais ce sont les dizaines qui décident."
+      ],
+      "hint": "Compare d'abord les chiffres des dizaines.",
+      "estimated_duration_s": 35,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 2, CP : l'élève sait placer le symbole qui convient (= ou < ou >) entre deux nombres, par exemple entre 49 et 53."
     },
     {
       "id": "EX-A006-E-01",
@@ -461,6 +923,45 @@
       "programme_ref": "Cycle 2, CE1 : comparer les entiers jusqu'à mille."
     },
     {
+      "id": "EX-A006-E-02",
+      "skill_id": "A006",
+      "level": "entrainement",
+      "type": "qcm",
+      "statement": "Quel nombre est compris entre 650 et 700 ?",
+      "image": null,
+      "choices": [
+        {
+          "key": "a",
+          "text": "605",
+          "misconception": "L'élève voit 6 centaines comme dans 650 et s'arrête là, sans comparer les dizaines : 605 a 0 dizaine, il est plus petit que 650."
+        },
+        {
+          "key": "b",
+          "text": "710",
+          "misconception": "L'élève vérifie seulement que le nombre est plus grand que 650 et oublie la borne 700."
+        },
+        {
+          "key": "c",
+          "text": "690",
+          "misconception": null
+        }
+      ],
+      "answer": {
+        "value": "c"
+      },
+      "solution_steps": [
+        "Un nombre compris entre 650 et 700 est plus grand que 650 et plus petit que 700.",
+        "605 a 6 centaines comme 650, mais 0 dizaine contre 5 : il est plus petit que 650.",
+        "710 a 7 centaines et 1 dizaine : il est plus grand que 700.",
+        "690 a 6 centaines et 9 dizaines : il est plus grand que 650. Il est plus petit que 700, qui a 7 centaines.",
+        "La réponse est **690**. On peut écrire $650 < 690 < 700$."
+      ],
+      "hint": "Pour chaque nombre, compare d'abord les centaines, puis les dizaines.",
+      "estimated_duration_s": 50,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 2, CE1 : comprendre et savoir utiliser les expressions « égal à », « supérieur à », « inférieur à », « compris entre … et … »."
+    },
+    {
       "id": "EX-A006-M-01",
       "skill_id": "A006",
       "level": "maitrise",
@@ -498,6 +999,31 @@
       "programme_ref": "Cycle 2, CE1 : comparer les entiers jusqu'à mille."
     },
     {
+      "id": "EX-A006-M-02",
+      "skill_id": "A006",
+      "level": "maitrise",
+      "type": "numerique",
+      "statement": "Quel chiffre faut-il écrire dans la case pour que ce soit vrai ?\n\n$4\\square 6 > 486$",
+      "image": null,
+      "answer": {
+        "value": 9,
+        "accepted": [
+          "neuf"
+        ]
+      },
+      "solution_steps": [
+        "Les deux nombres ont 3 chiffres et le même chiffre des centaines, 4.",
+        "On compare donc les dizaines : le chiffre de la case contre le 8 de 486.",
+        "Avec un chiffre plus petit que 8 dans la case, le nombre est plus petit que 486.",
+        "Avec 8 dans la case, on obtient 486 : les deux nombres sont égaux, et $486 > 486$ est faux.",
+        "Il faut un chiffre plus grand que 8 : seul **9** convient. En effet, $496 > 486$."
+      ],
+      "hint": "Essaie de mettre 8 dans la case. L'écriture est-elle vraie ?",
+      "estimated_duration_s": 75,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 2, CE1 : comparer, encadrer, intercaler des nombres entiers en utilisant les symboles (=, <, >)."
+    },
+    {
       "id": "EX-A007-D-01",
       "skill_id": "A007",
       "level": "decouverte",
@@ -520,6 +1046,49 @@
       "estimated_duration_s": 50,
       "review_status": "relu_agent",
       "programme_ref": "Cycle 2, CE2 : les nombres jusqu'à 10 000."
+    },
+    {
+      "id": "EX-A007-D-02",
+      "skill_id": "A007",
+      "level": "decouverte",
+      "type": "qcm",
+      "statement": "Range ces scores par ordre **croissant** (du plus petit au plus grand) : 305, 53, 350, 35.\n\nQuel rangement est juste ?",
+      "image": null,
+      "choices": [
+        {
+          "key": "a",
+          "text": "350, 305, 53, 35",
+          "misconception": "L'élève range du plus grand au plus petit : c'est l'ordre décroissant. Croissant veut dire que les nombres augmentent."
+        },
+        {
+          "key": "b",
+          "text": "305, 35, 350, 53",
+          "misconception": "L'élève compare les nombres chiffre par chiffre en partant de la gauche, sans regarder combien de chiffres ils ont : 305, 35 et 350 commencent par 3, 53 par 5. Or un nombre de deux chiffres est plus petit qu'un nombre de trois chiffres."
+        },
+        {
+          "key": "c",
+          "text": "35, 53, 305, 350",
+          "misconception": null
+        },
+        {
+          "key": "d",
+          "text": "35, 53, 350, 305",
+          "misconception": "L'élève départage 305 et 350 par le chiffre des unités (0 est plus petit que 5). Il faut comparer d'abord les dizaines : 0 dizaine dans 305, 5 dizaines dans 350."
+        }
+      ],
+      "answer": {
+        "value": "c"
+      },
+      "solution_steps": [
+        "Ordre croissant : du plus petit au plus grand.",
+        "35 et 53 s'écrivent avec deux chiffres : ils sont plus petits que 305 et 350, qui en ont trois. Et $35 < 53$ (3 dizaines contre 5).",
+        "305 et 350 ont le même chiffre des centaines, 3. On compare les dizaines : 0 dans 305, 5 dans 350. Donc $305 < 350$.",
+        "Réponse : 35, 53, 305, 350."
+      ],
+      "hint": "Commence par compter les chiffres de chaque nombre.",
+      "estimated_duration_s": 50,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 2, CE2, Les nombres entiers : « Ordonner des nombres dans l'ordre croissant ou décroissant. »"
     },
     {
       "id": "EX-A007-E-01",
@@ -548,6 +1117,44 @@
       "programme_ref": "Cycle 2, CE2 : les nombres jusqu'à 10 000."
     },
     {
+      "id": "EX-A007-E-02",
+      "skill_id": "A007",
+      "level": "entrainement",
+      "type": "qcm",
+      "statement": "À la course d'orientation, les temps en secondes : Nina 1 392, Hugo 1 507, Malo 1 386, Lou 1 429.\n\nLe plus petit temps gagne. Qui est deuxième ?",
+      "image": null,
+      "choices": [
+        {
+          "key": "a",
+          "text": "Lou",
+          "misconception": "L'élève range les temps du plus grand au plus petit (Hugo, puis Lou) : il croit que le plus grand nombre gagne. Ici, le plus rapide met le moins de temps, il faut ranger par ordre croissant."
+        },
+        {
+          "key": "b",
+          "text": "Nina",
+          "misconception": null
+        },
+        {
+          "key": "c",
+          "text": "Malo",
+          "misconception": "L'élève départage 1 392 et 1 386 par le chiffre des unités (2 est plus petit que 6) et place Nina avant Malo. Il faut comparer d'abord les dizaines : 8 pour Malo, 9 pour Nina. Malo est en fait le premier."
+        }
+      ],
+      "answer": {
+        "value": "b"
+      },
+      "solution_steps": [
+        "Le plus rapide a le plus petit temps : on range les temps par ordre croissant.",
+        "Les quatre temps ont 1 millier. Centaines : 3 pour 1 392 et 1 386, 4 pour 1 429, 5 pour 1 507. Les deux plus petits temps sont donc 1 392 et 1 386.",
+        "Entre 1 386 et 1 392, on compare les dizaines : 8 contre 9, donc $1\\,386 < 1\\,392$.",
+        "Ordre croissant : Malo (1 386), Nina (1 392), Lou (1 429), Hugo (1 507). Malo gagne, **Nina** arrive deuxième."
+      ],
+      "hint": "Range d'abord les temps du plus petit au plus grand.",
+      "estimated_duration_s": 90,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 2, CE2, Les nombres entiers : « L'élève sait ordonner dans l'ordre croissant ou décroissant un ensemble pouvant aller jusqu'à cinq nombres »"
+    },
+    {
       "id": "EX-A007-M-01",
       "skill_id": "A007",
       "level": "maitrise",
@@ -567,6 +1174,27 @@
       "estimated_duration_s": 60,
       "review_status": "relu_agent",
       "programme_ref": "Cycle 2, CE2 : les nombres jusqu'à 10 000."
+    },
+    {
+      "id": "EX-A007-M-02",
+      "skill_id": "A007",
+      "level": "maitrise",
+      "type": "numerique",
+      "statement": "Ces trois nombres sont rangés par ordre croissant : 6 487, 6 4■2, 6 495.\n\nQuel chiffre est caché par ■ ?",
+      "image": null,
+      "answer": {
+        "value": 9
+      },
+      "solution_steps": [
+        "Les trois nombres ont 6 milliers et 4 centaines : tout se joue sur les dizaines et les unités.",
+        "6 4■2 doit être plus grand que 6 487. Avec 8 dizaines, on aurait 6 482, plus petit que 6 487 (2 unités contre 7) : il faut au moins 9 dizaines.",
+        "6 4■2 doit être plus petit que 6 495. Avec 9 dizaines, 6 492 est bien plus petit que 6 495 (2 unités contre 5).",
+        "Le chiffre caché est **9** : $6\\,487 < 6\\,492 < 6\\,495$."
+      ],
+      "hint": "Les milliers et les centaines sont les mêmes partout : compare les dizaines, puis les unités.",
+      "estimated_duration_s": 120,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 2, CE2, Les nombres entiers : « Comparer, encadrer, intercaler des nombres entiers en utilisant les symboles (=, <, >). »"
     },
     {
       "id": "EX-A008-D-01",
@@ -589,6 +1217,44 @@
       "programme_ref": "Cycle 2, CE1 : distinguer chiffre et nombre."
     },
     {
+      "id": "EX-A008-D-02",
+      "skill_id": "A008",
+      "level": "decouverte",
+      "type": "qcm",
+      "statement": "Lequel de ces nombres s'écrit avec **un seul** chiffre ?",
+      "image": null,
+      "choices": [
+        {
+          "key": "a",
+          "text": "10",
+          "misconception": "L'élève croit que 10 est un chiffre, parce qu'on compte « jusqu'à 10 » sur ses doigts. Mais 10 s'écrit avec deux chiffres, 1 et 0 : les chiffres vont de 0 à 9."
+        },
+        {
+          "key": "b",
+          "text": "8",
+          "misconception": null
+        },
+        {
+          "key": "c",
+          "text": "80",
+          "misconception": "L'élève ne compte pas le 0 comme un chiffre : il ne voit que le 8. Or 80 s'écrit avec deux chiffres, 8 et 0."
+        }
+      ],
+      "answer": {
+        "value": "b"
+      },
+      "solution_steps": [
+        "Les chiffres sont les dix signes 0 ; 1 ; 2 ; 3 ; 4 ; 5 ; 6 ; 7 ; 8 ; 9. Avec eux, on écrit tous les nombres.",
+        "10 s'écrit avec deux chiffres : 1 et 0. 80 s'écrit aussi avec deux chiffres : 8 et 0. Le 0 est un chiffre comme les autres.",
+        "8 s'écrit avec un seul chiffre : c'est à la fois un chiffre et un nombre.",
+        "Réponse : **8**."
+      ],
+      "hint": "Compte les signes qu'il faut écrire pour chaque nombre.",
+      "estimated_duration_s": 30,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 2, CE1, Les nombres entiers : « L'élève sait écrire en chiffres un nombre dicté. »"
+    },
+    {
       "id": "EX-A008-E-01",
       "skill_id": "A008",
       "level": "entrainement",
@@ -606,6 +1272,32 @@
       "estimated_duration_s": 35,
       "review_status": "relu_agent",
       "programme_ref": "Cycle 2, CE1 : distinguer chiffre et nombre."
+    },
+    {
+      "id": "EX-A008-E-02",
+      "skill_id": "A008",
+      "level": "entrainement",
+      "type": "numerique",
+      "statement": "Tom numérote les pages de son cahier, de 1 à 12.\n\nCombien de chiffres écrit-il en tout ?",
+      "image": null,
+      "answer": {
+        "value": 15,
+        "accepted": [
+          "15 chiffres",
+          "15 chiffre"
+        ]
+      },
+      "solution_steps": [
+        "Attention : on ne compte pas les nombres (il y en a 12), mais les chiffres écrits.",
+        "De 1 à 9, chaque nombre s'écrit avec un seul chiffre : cela fait 9 chiffres.",
+        "10, 11 et 12 s'écrivent chacun avec deux chiffres : 1 et 0, 1 et 1, 1 et 2.",
+        "On continue donc à compter de 2 en 2 à partir de 9 : 11, 13, 15.",
+        "Tom écrit **15** chiffres."
+      ],
+      "hint": "De 1 à 9, un chiffre par page. Et pour les pages suivantes ?",
+      "estimated_duration_s": 75,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 2, CE1, Les nombres entiers : « Connaitre la suite écrite et la suite orale des nombres jusqu'à mille. »"
     },
     {
       "id": "EX-A008-M-01",
@@ -629,6 +1321,49 @@
       "programme_ref": "Cycle 2, CE1 : distinguer chiffre et nombre."
     },
     {
+      "id": "EX-A008-M-02",
+      "skill_id": "A008",
+      "level": "maitrise",
+      "type": "qcm",
+      "statement": "Avec les chiffres 6, 0 et 2, chacun une seule fois, quel est le plus petit nombre de trois chiffres ?",
+      "image": null,
+      "choices": [
+        {
+          "key": "a",
+          "text": "026",
+          "misconception": "L'élève met le plus petit chiffre, 0, en premier. Mais 026 se lit vingt-six : c'est le nombre 26, qui s'écrit avec deux chiffres. Un nombre de trois chiffres ne commence pas par 0."
+        },
+        {
+          "key": "b",
+          "text": "260",
+          "misconception": "L'élève met bien 2 en premier, puis croit que le 0 se place toujours à la fin, comme dans 10, 20 ou 30. Avec le 0 au rang des dizaines, on obtient un nombre plus petit."
+        },
+        {
+          "key": "c",
+          "text": "620",
+          "misconception": "L'élève écrit les chiffres du plus grand au plus petit : il obtient le plus grand nombre au lieu du plus petit."
+        },
+        {
+          "key": "d",
+          "text": "206",
+          "misconception": null
+        }
+      ],
+      "answer": {
+        "value": "d"
+      },
+      "solution_steps": [
+        "Un nombre de trois chiffres ne commence jamais par 0 : 026 s'écrit simplement 26, qui n'a que deux chiffres.",
+        "Au rang des centaines, on met donc le plus petit chiffre qui n'est pas 0 : le 2.",
+        "Il reste 0 et 6. Au rang des dizaines, on met le plus petit : 0. Puis 6 aux unités.",
+        "Réponse : **206**. Les autres nombres possibles, 260, 602 et 620, sont plus grands."
+      ],
+      "hint": "Quel chiffre peut se mettre en premier ? Pas n'importe lequel.",
+      "estimated_duration_s": 90,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 2, CP, Les nombres entiers : « L'élève sait expliquer, en s'appuyant sur la numération, pourquoi 23 n'est pas le même nombre que 32 bien que les écritures des deux nombres soient composées des mêmes chiffres. »"
+    },
+    {
       "id": "EX-A009-D-01",
       "skill_id": "A009",
       "level": "decouverte",
@@ -646,6 +1381,43 @@
       "estimated_duration_s": 30,
       "review_status": "relu_agent",
       "programme_ref": "Cycle 2, CE2 : décomposition du type (4 × 1 000) + (6 × 100) + (3 × 10) + (5 × 1)."
+    },
+    {
+      "id": "EX-A009-D-02",
+      "skill_id": "A009",
+      "level": "decouverte",
+      "type": "qcm",
+      "statement": "Dans le nombre 7 052, que vaut le chiffre 5 ?",
+      "image": null,
+      "choices": [
+        {
+          "key": "a",
+          "text": "5 unités",
+          "misconception": "L'élève croit qu'un chiffre vaut toujours ce qu'il montre, quelle que soit sa place. Or la valeur d'un chiffre dépend de son rang."
+        },
+        {
+          "key": "b",
+          "text": "5 centaines",
+          "misconception": "L'élève compte les rangs depuis la gauche en sautant le 0 : 7 milliers, puis 5 centaines. Le 0 occupe pourtant un rang, celui des centaines."
+        },
+        {
+          "key": "c",
+          "text": "5 dizaines",
+          "misconception": null
+        }
+      ],
+      "answer": {
+        "value": "c"
+      },
+      "solution_steps": [
+        "On repère les rangs de droite à gauche : 2 unités, 5 dizaines, 0 centaine, 7 milliers.",
+        "Le 0 compte : il occupe le rang des centaines, où il n'y a rien.",
+        "Le chiffre 5 est au rang des dizaines : il vaut **5 dizaines**, c'est-à-dire 50."
+      ],
+      "hint": "Pars de la droite : le premier rang est celui des unités.",
+      "estimated_duration_s": 35,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 2, CE2, Les nombres entiers : « Connaitre la valeur des chiffres en fonction de leur position dans un nombre. »"
     },
     {
       "id": "EX-A009-E-01",
@@ -667,6 +1439,31 @@
       "estimated_duration_s": 75,
       "review_status": "relu_agent",
       "programme_ref": "Cycle 2, CE2 : unités de numération."
+    },
+    {
+      "id": "EX-A009-E-02",
+      "skill_id": "A009",
+      "level": "entrainement",
+      "type": "numerique",
+      "statement": "Un paquet de 1 000 feuilles est fait de liasses de 10 feuilles.\n\nCombien y a-t-il de liasses dans le paquet ?",
+      "image": null,
+      "answer": {
+        "value": 100,
+        "accepted": [
+          "100 liasses",
+          "100 liasse"
+        ]
+      },
+      "solution_steps": [
+        "Une liasse, c'est une dizaine de feuilles. On cherche combien de dizaines il y a dans 1 000.",
+        "1 000, c'est 10 centaines, et chaque centaine contient 10 dizaines.",
+        "Pour les 10 centaines, on compte les dizaines de 10 en 10 : 10, 20, 30, 40, 50, 60, 70, 80, 90, 100.",
+        "Il y a **100** liasses : 1 000, c'est 100 dizaines."
+      ],
+      "hint": "Une centaine, c'est combien de dizaines ? Et un millier, combien de centaines ?",
+      "estimated_duration_s": 60,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 2, CE2, Les nombres entiers : « Connaitre et utiliser les relations entre les unités de numération. »"
     },
     {
       "id": "EX-A009-M-01",
@@ -707,6 +1504,44 @@
       "programme_ref": "Cycle 2, CE2 : unités de numération."
     },
     {
+      "id": "EX-A009-M-02",
+      "skill_id": "A009",
+      "level": "maitrise",
+      "type": "qcm",
+      "statement": "Une collection contient 3 milliers, 15 centaines et 6 unités.\n\nQuel nombre représente-t-elle ?",
+      "image": null,
+      "choices": [
+        {
+          "key": "a",
+          "text": "3 156",
+          "misconception": "L'élève écrit côte à côte les nombres de l'énoncé (3, 15, 6) sans tenir compte des rangs : 15 centaines ne tiennent pas dans un seul rang, et le rang des dizaines, vide, a disparu."
+        },
+        {
+          "key": "b",
+          "text": "4 506",
+          "misconception": null
+        },
+        {
+          "key": "c",
+          "text": "3 506",
+          "misconception": "L'élève garde le 5 des 15 centaines mais oublie le millier qu'elles contiennent : 10 centaines font 1 millier."
+        }
+      ],
+      "answer": {
+        "value": "b"
+      },
+      "solution_steps": [
+        "15 centaines, c'est 10 centaines et 5 centaines. Or 10 centaines font 1 millier : 15 centaines, c'est 1 millier et 5 centaines.",
+        "Avec les 3 milliers, cela fait 4 milliers et 5 centaines.",
+        "Il n'y a aucune dizaine : on écrit 0 au rang des dizaines, puis 6 aux unités.",
+        "Le nombre est **4 506**."
+      ],
+      "hint": "Dix centaines font un millier.",
+      "estimated_duration_s": 120,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 2, CE2, Les nombres entiers : « Connaitre et utiliser les relations entre les unités de numération. »"
+    },
+    {
       "id": "EX-A010-D-01",
       "skill_id": "A010",
       "level": "decouverte",
@@ -732,6 +1567,43 @@
       "programme_ref": "Cycle 2, CE2 : décomposition additive sous la forme 4 000 + 600 + 30 + 5."
     },
     {
+      "id": "EX-A010-D-02",
+      "skill_id": "A010",
+      "level": "decouverte",
+      "type": "qcm",
+      "statement": "Quelle décomposition de 3 571 est juste ?",
+      "image": null,
+      "choices": [
+        {
+          "key": "a",
+          "text": "3 + 5 + 7 + 1",
+          "misconception": "L'élève additionne les chiffres sans tenir compte de leur rang. Cette somme vaut 16, pas 3 571."
+        },
+        {
+          "key": "b",
+          "text": "3 000 + 500 + 70 + 1",
+          "misconception": null
+        },
+        {
+          "key": "c",
+          "text": "3 000 + 500 + 7 + 1",
+          "misconception": "L'élève donne leur valeur aux milliers et aux centaines, puis recopie le 7 tel quel, alors qu'il est au rang des dizaines : il vaut 70. Cette somme vaut 3 508."
+        }
+      ],
+      "answer": {
+        "value": "b"
+      },
+      "solution_steps": [
+        "3 571 contient 3 milliers, 5 centaines, 7 dizaines et 1 unité.",
+        "3 milliers valent 3 000, 5 centaines valent 500, 7 dizaines valent 70, 1 unité vaut 1.",
+        "$3\\,571 = 3\\,000 + 500 + 70 + 1$."
+      ],
+      "hint": "Un chiffre ne vaut pas la même chose selon son rang.",
+      "estimated_duration_s": 45,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 2, CE2, Les nombres entiers : « décomposition additive sous la forme 4 000 + 600 + 30 + 5 »"
+    },
+    {
       "id": "EX-A010-E-01",
       "skill_id": "A010",
       "level": "entrainement",
@@ -752,6 +1624,27 @@
       "programme_ref": "Cycle 2, CE2 : décomposition du type (4 × 1 000) + (6 × 100) + (3 × 10) + (5 × 1)."
     },
     {
+      "id": "EX-A010-E-02",
+      "skill_id": "A010",
+      "level": "entrainement",
+      "type": "vrai_faux",
+      "statement": "Lina écrit : « $8\\,000 + 70 + 500 + 9 = 8\\,759$ ».\n\nA-t-elle raison ?",
+      "image": null,
+      "answer": {
+        "value": false
+      },
+      "solution_steps": [
+        "Les termes ne sont pas dans l'ordre des rangs : 70, ce sont 7 dizaines ; 500, ce sont 5 centaines.",
+        "On remet chaque terme à son rang : 8 milliers, 5 centaines, 7 dizaines, 9 unités.",
+        "$8\\,000 + 500 + 70 + 9 = 8\\,579$, et non 8 759 : Lina se trompe.",
+        "Le piège : recopier les chiffres dans l'ordre où ils apparaissent, sans regarder leur rang."
+      ],
+      "hint": "Range d'abord les termes du plus grand au plus petit.",
+      "estimated_duration_s": 50,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 2, CE2, Les nombres entiers : « décomposition additive sous la forme 4 000 + 600 + 30 + 5 »"
+    },
+    {
       "id": "EX-A010-M-01",
       "skill_id": "A010",
       "level": "maitrise",
@@ -770,6 +1663,32 @@
       "estimated_duration_s": 90,
       "review_status": "relu_agent",
       "programme_ref": "Cycle 2, CE2 : décomposition en unités de numération."
+    },
+    {
+      "id": "EX-A010-M-02",
+      "skill_id": "A010",
+      "level": "maitrise",
+      "type": "numerique",
+      "statement": "Complète : $6\\,205 = 5\\,000 + \\ldots + 5$",
+      "image": null,
+      "answer": {
+        "value": 1200,
+        "accepted": [
+          "1000 + 200",
+          "200 + 1000"
+        ]
+      },
+      "solution_steps": [
+        "Ce n'est pas la décomposition habituelle : elle commence par 5 000, pas par 6 000.",
+        "6 000, c'est 5 000 plus 1 000. Donc $6\\,205 = 5\\,000 + 1\\,000 + 200 + 5$.",
+        "On regroupe 1 000 et 200 : cela fait 1 200.",
+        "$6\\,205 = 5\\,000 + 1\\,200 + 5$. Le nombre manquant est **1 200**.",
+        "Le piège : répondre 200, en écrivant la décomposition habituelle sans voir qu'il manque un millier."
+      ],
+      "hint": "Combien manque-t-il à 5 000 pour faire 6 000 ?",
+      "estimated_duration_s": 120,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 2, CE2, Les nombres entiers : « décomposition additive sous la forme 4 000 + 600 + 30 + 5 »"
     },
     {
       "id": "EX-A011-D-01",
@@ -810,6 +1729,26 @@
       "programme_ref": "Cycle 2, CE1 : l'élève sait dire si un nombre est pair ou impair."
     },
     {
+      "id": "EX-A011-D-02",
+      "skill_id": "A011",
+      "level": "decouverte",
+      "type": "vrai_faux",
+      "statement": "17 enfants se mettent deux par deux. Chaque enfant trouve un camarade.",
+      "image": null,
+      "answer": {
+        "value": false
+      },
+      "solution_steps": [
+        "On forme des paires en comptant de 2 en 2 : 2, 4, 6, 8, 10, 12, 14, 16. Avec 8 paires, 16 enfants sont placés.",
+        "Il reste 1 enfant tout seul : 17 enfants ne se rangent pas tous par paires.",
+        "17 est un nombre **impair** : il se termine par 7. L'affirmation est **fausse**."
+      ],
+      "hint": "Compte les enfants de 2 en 2.",
+      "estimated_duration_s": 40,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 2, CE1, Les quatre opérations : « Connaitre la notion de parité d'un nombre. »"
+    },
+    {
       "id": "EX-A011-E-01",
       "skill_id": "A011",
       "level": "entrainement",
@@ -829,6 +1768,44 @@
       "estimated_duration_s": 30,
       "review_status": "relu_agent",
       "programme_ref": "Cycle 2, CE1 : l'élève sait dire si un nombre est pair ou impair."
+    },
+    {
+      "id": "EX-A011-E-02",
+      "skill_id": "A011",
+      "level": "entrainement",
+      "type": "qcm",
+      "statement": "Lequel de ces nombres est **impair** ?",
+      "image": null,
+      "choices": [
+        {
+          "key": "a",
+          "text": "742",
+          "misconception": "L'élève regarde le premier chiffre, 7, qui est impair. Mais c'est le chiffre des unités qui décide : 742 se termine par 2, il est pair."
+        },
+        {
+          "key": "b",
+          "text": "390",
+          "misconception": "L'élève regarde les chiffres 3 et 9, impairs, au lieu du chiffre des unités. 390 se termine par 0 : il est pair, comme 10, 20 ou 30."
+        },
+        {
+          "key": "c",
+          "text": "873",
+          "misconception": null
+        }
+      ],
+      "answer": {
+        "value": "c"
+      },
+      "solution_steps": [
+        "Pour savoir si un nombre est pair ou impair, on regarde seulement son chiffre des unités.",
+        "742 se termine par 2 : pair. 390 se termine par 0 : pair.",
+        "873 se termine par 3 : **impair**.",
+        "Les autres chiffres ne comptent pas : 742 commence par 7, et il est pair quand même."
+      ],
+      "hint": "Quel est le dernier chiffre de chaque nombre ?",
+      "estimated_duration_s": 40,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 2, CE1, Les quatre opérations : « L'élève sait dire si un nombre est pair ou impair. »"
     },
     {
       "id": "EX-A011-M-01",
@@ -855,6 +1832,32 @@
       "estimated_duration_s": 90,
       "review_status": "relu_agent",
       "programme_ref": "Cycle 2, CE1 : l'élève sait donner tous les nombres pairs compris en 767 et 778."
+    },
+    {
+      "id": "EX-A011-M-02",
+      "skill_id": "A011",
+      "level": "maitrise",
+      "type": "numerique",
+      "statement": "Avec les chiffres 6, 3 et 8, chacun une seule fois, on peut écrire six nombres de trois chiffres.\n\nCombien sont pairs ?",
+      "image": null,
+      "answer": {
+        "value": 4,
+        "accepted": [
+          "4 nombres",
+          "4 nombres pairs",
+          "4 nombre"
+        ]
+      },
+      "solution_steps": [
+        "Un nombre est pair quand son chiffre des unités est 0, 2, 4, 6 ou 8. Ici, il doit donc se terminer par 6 ou par 8.",
+        "Terminés par 6 : 386 et 836. Terminés par 8 : 368 et 638.",
+        "Les nombres terminés par 3, 683 et 863, sont impairs.",
+        "Il y a **4** nombres pairs."
+      ],
+      "hint": "Le chiffre des unités décide. Lesquels de 6, 3 et 8 peuvent aller à la fin ?",
+      "estimated_duration_s": 120,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 2, CE1, Les quatre opérations : « Connaitre la notion de parité d'un nombre. »"
     },
     {
       "id": "EX-A012-D-01",
@@ -9003,6 +10006,44 @@
       "programme_ref": "Cycle 2, CE1 : les fractions rencontrées au CE1 sont les fractions d'un tout."
     },
     {
+      "id": "EX-C001-D-02",
+      "skill_id": "C001",
+      "level": "decouverte",
+      "type": "qcm",
+      "statement": "Quelle fraction du disque est coloriée ?",
+      "image": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 180 180\" width=\"180\" height=\"180\" font-family=\"system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif\" role=\"img\"><title>Disque partagé en parts égales, certaines coloriées</title><rect width=\"100%\" height=\"100%\" fill=\"#ffffff\"/><path d=\"M90,90 L90.00,16.00 A74,74 0 0 1 160.38,67.13 Z\" fill=\"#93c5fd\" stroke=\"#334155\" stroke-width=\"1.6\"/><path d=\"M90,90 L160.38,67.13 A74,74 0 0 1 133.50,149.87 Z\" fill=\"#ffffff\" stroke=\"#334155\" stroke-width=\"1.6\"/><path d=\"M90,90 L133.50,149.87 A74,74 0 0 1 46.50,149.87 Z\" fill=\"#ffffff\" stroke=\"#334155\" stroke-width=\"1.6\"/><path d=\"M90,90 L46.50,149.87 A74,74 0 0 1 19.62,67.13 Z\" fill=\"#ffffff\" stroke=\"#334155\" stroke-width=\"1.6\"/><path d=\"M90,90 L19.62,67.13 A74,74 0 0 1 90.00,16.00 Z\" fill=\"#ffffff\" stroke=\"#334155\" stroke-width=\"1.6\"/></svg>",
+      "choices": [
+        {
+          "key": "a",
+          "text": "$\\frac{1}{4}$",
+          "misconception": "L'élève met en bas le nombre de parts blanches (4) au lieu du nombre total de parts du disque (5)."
+        },
+        {
+          "key": "b",
+          "text": "$\\frac{1}{5}$",
+          "misconception": null
+        },
+        {
+          "key": "c",
+          "text": "$\\frac{4}{5}$",
+          "misconception": "L'élève écrit la fraction de la partie blanche, celle qui n'est pas coloriée, au lieu de la partie coloriée."
+        }
+      ],
+      "answer": {
+        "value": "b"
+      },
+      "solution_steps": [
+        "On compte toutes les parts du disque : 5 parts égales. C'est le nombre du bas.",
+        "1 part est coloriée : c'est le nombre du haut.",
+        "La partie coloriée est $\\frac{1}{5}$ du disque : un cinquième.",
+        "Attention : en bas, on écrit toutes les parts, coloriées ou blanches."
+      ],
+      "hint": "Compte toutes les parts du disque, puis les parts coloriées.",
+      "estimated_duration_s": 45,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 2, CE1 : l'élève sait repérer une partie correspondant à une fraction comme 1/2, 1/3 ou 1/6."
+    },
+    {
       "id": "EX-C001-E-01",
       "skill_id": "C001",
       "level": "entrainement",
@@ -9041,6 +10082,32 @@
       "programme_ref": "Cycle 2, CE1 : l'élève sait qu'il peut représenter la fraction 2/5 par un tout partagé en 5 parts égales dont il colorie 2 parts."
     },
     {
+      "id": "EX-C001-E-02",
+      "skill_id": "C001",
+      "level": "entrainement",
+      "type": "texte",
+      "statement": "Quelle fraction de la bande est coloriée ? Écris-la avec une barre.",
+      "image": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 352 92\" width=\"352\" height=\"92\" font-family=\"system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif\" role=\"img\"><title>Bande partagée en parts égales, certaines coloriées</title><rect width=\"100%\" height=\"100%\" fill=\"#ffffff\"/><rect x=\"16.0\" y=\"16\" width=\"32.0\" height=\"60\" fill=\"#93c5fd\" stroke=\"#334155\" stroke-width=\"1.6\"/><rect x=\"48.0\" y=\"16\" width=\"32.0\" height=\"60\" fill=\"#93c5fd\" stroke=\"#334155\" stroke-width=\"1.6\"/><rect x=\"80.0\" y=\"16\" width=\"32.0\" height=\"60\" fill=\"#ffffff\" stroke=\"#334155\" stroke-width=\"1.6\"/><rect x=\"112.0\" y=\"16\" width=\"32.0\" height=\"60\" fill=\"#93c5fd\" stroke=\"#334155\" stroke-width=\"1.6\"/><rect x=\"144.0\" y=\"16\" width=\"32.0\" height=\"60\" fill=\"#93c5fd\" stroke=\"#334155\" stroke-width=\"1.6\"/><rect x=\"176.0\" y=\"16\" width=\"32.0\" height=\"60\" fill=\"#93c5fd\" stroke=\"#334155\" stroke-width=\"1.6\"/><rect x=\"208.0\" y=\"16\" width=\"32.0\" height=\"60\" fill=\"#ffffff\" stroke=\"#334155\" stroke-width=\"1.6\"/><rect x=\"240.0\" y=\"16\" width=\"32.0\" height=\"60\" fill=\"#93c5fd\" stroke=\"#334155\" stroke-width=\"1.6\"/><rect x=\"272.0\" y=\"16\" width=\"32.0\" height=\"60\" fill=\"#93c5fd\" stroke=\"#334155\" stroke-width=\"1.6\"/><rect x=\"304.0\" y=\"16\" width=\"32.0\" height=\"60\" fill=\"#ffffff\" stroke=\"#334155\" stroke-width=\"1.6\"/></svg>",
+      "answer": {
+        "value": "7/10",
+        "accepted": [
+          "7 / 10",
+          "sept dixièmes",
+          "7 dixièmes"
+        ]
+      },
+      "solution_steps": [
+        "On compte toutes les parts de la bande : 10 parts égales. En bas, on écrit 10.",
+        "On compte les parts coloriées une par une, même celles qui ne se touchent pas : 7. En haut, on écrit 7.",
+        "La fraction coloriée est $\\frac{7}{10}$ : sept dixièmes.",
+        "Les parts coloriées n'ont pas besoin d'être côte à côte : seul leur nombre compte."
+      ],
+      "hint": "Compte d'abord toutes les parts, puis seulement les parts coloriées.",
+      "estimated_duration_s": 60,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 2, CE1 : savoir interpréter, représenter, écrire et lire des fractions inférieures ou égales à 1."
+    },
+    {
       "id": "EX-C001-M-01",
       "skill_id": "C001",
       "level": "maitrise",
@@ -9062,6 +10129,44 @@
       "programme_ref": "Cycle 2, CE1 : partage d'un tout en parts égales."
     },
     {
+      "id": "EX-C001-M-02",
+      "skill_id": "C001",
+      "level": "maitrise",
+      "type": "qcm",
+      "statement": "Les trois bandes sont pareilles. Sur quelle bande a-t-on colorié $\\frac{1}{4}$ de la bande ?",
+      "image": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 354 176\" width=\"354\" height=\"176\" font-family=\"system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif\" role=\"img\"><title>Trois bandes pareilles, A, B et C, partagées en parts égales, avec des parts coloriées</title><rect width=\"100%\" height=\"100%\" fill=\"#ffffff\"/><rect x=\"40.0\" y=\"14\" width=\"60.0\" height=\"40\" fill=\"#93c5fd\" stroke=\"#334155\" stroke-width=\"1.6\"/><rect x=\"100.0\" y=\"14\" width=\"60.0\" height=\"40\" fill=\"#ffffff\" stroke=\"#334155\" stroke-width=\"1.6\"/><rect x=\"160.0\" y=\"14\" width=\"60.0\" height=\"40\" fill=\"#ffffff\" stroke=\"#334155\" stroke-width=\"1.6\"/><rect x=\"220.0\" y=\"14\" width=\"60.0\" height=\"40\" fill=\"#ffffff\" stroke=\"#334155\" stroke-width=\"1.6\"/><rect x=\"280.0\" y=\"14\" width=\"60.0\" height=\"40\" fill=\"#ffffff\" stroke=\"#334155\" stroke-width=\"1.6\"/><text x=\"22.0\" y=\"39.0\" font-size=\"15\" text-anchor=\"middle\" fill=\"#334155\" font-weight=\"600\">A</text><rect x=\"40.0\" y=\"68\" width=\"37.5\" height=\"40\" fill=\"#93c5fd\" stroke=\"#334155\" stroke-width=\"1.6\"/><rect x=\"77.5\" y=\"68\" width=\"37.5\" height=\"40\" fill=\"#93c5fd\" stroke=\"#334155\" stroke-width=\"1.6\"/><rect x=\"115.0\" y=\"68\" width=\"37.5\" height=\"40\" fill=\"#93c5fd\" stroke=\"#334155\" stroke-width=\"1.6\"/><rect x=\"152.5\" y=\"68\" width=\"37.5\" height=\"40\" fill=\"#93c5fd\" stroke=\"#334155\" stroke-width=\"1.6\"/><rect x=\"190.0\" y=\"68\" width=\"37.5\" height=\"40\" fill=\"#ffffff\" stroke=\"#334155\" stroke-width=\"1.6\"/><rect x=\"227.5\" y=\"68\" width=\"37.5\" height=\"40\" fill=\"#ffffff\" stroke=\"#334155\" stroke-width=\"1.6\"/><rect x=\"265.0\" y=\"68\" width=\"37.5\" height=\"40\" fill=\"#ffffff\" stroke=\"#334155\" stroke-width=\"1.6\"/><rect x=\"302.5\" y=\"68\" width=\"37.5\" height=\"40\" fill=\"#ffffff\" stroke=\"#334155\" stroke-width=\"1.6\"/><text x=\"22.0\" y=\"93.0\" font-size=\"15\" text-anchor=\"middle\" fill=\"#334155\" font-weight=\"600\">B</text><rect x=\"40.0\" y=\"122\" width=\"75.0\" height=\"40\" fill=\"#93c5fd\" stroke=\"#334155\" stroke-width=\"1.6\"/><rect x=\"115.0\" y=\"122\" width=\"75.0\" height=\"40\" fill=\"#ffffff\" stroke=\"#334155\" stroke-width=\"1.6\"/><rect x=\"190.0\" y=\"122\" width=\"75.0\" height=\"40\" fill=\"#ffffff\" stroke=\"#334155\" stroke-width=\"1.6\"/><rect x=\"265.0\" y=\"122\" width=\"75.0\" height=\"40\" fill=\"#ffffff\" stroke=\"#334155\" stroke-width=\"1.6\"/><text x=\"22.0\" y=\"147.0\" font-size=\"15\" text-anchor=\"middle\" fill=\"#334155\" font-weight=\"600\">C</text></svg>",
+      "choices": [
+        {
+          "key": "a",
+          "text": "La bande A",
+          "misconception": "L'élève voit 1 part coloriée et 4 parts blanches : il met en bas les parts blanches au lieu de toutes les parts. La bande A a 5 parts : elle est coloriée au cinquième."
+        },
+        {
+          "key": "b",
+          "text": "La bande B",
+          "misconception": "L'élève reconnaît le 4 de la fraction dans les 4 parts coloriées de la bande B, sans regarder en combien de parts elle est partagée (8). La bande B est coloriée à moitié."
+        },
+        {
+          "key": "c",
+          "text": "La bande C",
+          "misconception": null
+        }
+      ],
+      "answer": {
+        "value": "c"
+      },
+      "solution_steps": [
+        "$\\frac{1}{4}$, c'est 1 part quand la bande est partagée en 4 parts égales.",
+        "Bande A : 5 parts égales, 1 coloriée. C'est $\\frac{1}{5}$, un cinquième.",
+        "Bande B : 8 parts égales, 4 coloriées. C'est $\\frac{4}{8}$ : la moitié de la bande.",
+        "Bande C : 4 parts égales, 1 coloriée. C'est $\\frac{1}{4}$, un quart. La réponse est la bande C."
+      ],
+      "hint": "Pour chaque bande, compte toutes les parts, puis les parts coloriées.",
+      "estimated_duration_s": 90,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 2, CE1 : l'élève sait identifier les figures représentant une fraction donnée (le programme prend l'exemple de 1/4)."
+    },
+    {
       "id": "EX-C002-D-01",
       "skill_id": "C002",
       "level": "decouverte",
@@ -9080,6 +10185,26 @@
       "estimated_duration_s": 25,
       "review_status": "relu_agent",
       "programme_ref": "Cycle 2, CE1 : connaître et utiliser les mots « dénominateur » et « numérateur »."
+    },
+    {
+      "id": "EX-C002-D-02",
+      "skill_id": "C002",
+      "level": "decouverte",
+      "type": "numerique",
+      "statement": "Quel est le **numérateur** de la fraction coloriée du rectangle ?",
+      "image": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 272 152\" width=\"272\" height=\"152\" font-family=\"system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif\" role=\"img\"><title>Rectangle partagé en parts égales, certaines coloriées</title><rect width=\"100%\" height=\"100%\" fill=\"#ffffff\"/><rect x=\"16.0\" y=\"16\" width=\"30.0\" height=\"120\" fill=\"#93c5fd\" stroke=\"#334155\" stroke-width=\"1.6\"/><rect x=\"46.0\" y=\"16\" width=\"30.0\" height=\"120\" fill=\"#93c5fd\" stroke=\"#334155\" stroke-width=\"1.6\"/><rect x=\"76.0\" y=\"16\" width=\"30.0\" height=\"120\" fill=\"#93c5fd\" stroke=\"#334155\" stroke-width=\"1.6\"/><rect x=\"106.0\" y=\"16\" width=\"30.0\" height=\"120\" fill=\"#ffffff\" stroke=\"#334155\" stroke-width=\"1.6\"/><rect x=\"136.0\" y=\"16\" width=\"30.0\" height=\"120\" fill=\"#ffffff\" stroke=\"#334155\" stroke-width=\"1.6\"/><rect x=\"166.0\" y=\"16\" width=\"30.0\" height=\"120\" fill=\"#ffffff\" stroke=\"#334155\" stroke-width=\"1.6\"/><rect x=\"196.0\" y=\"16\" width=\"30.0\" height=\"120\" fill=\"#ffffff\" stroke=\"#334155\" stroke-width=\"1.6\"/><rect x=\"226.0\" y=\"16\" width=\"30.0\" height=\"120\" fill=\"#ffffff\" stroke=\"#334155\" stroke-width=\"1.6\"/></svg>",
+      "answer": {
+        "value": 3
+      },
+      "solution_steps": [
+        "Le rectangle est partagé en 8 parts égales : 8 s'écrit en bas, c'est le dénominateur.",
+        "3 parts sont coloriées : le numérateur, en haut, est **3**.",
+        "La fraction coloriée est $\\frac{3}{8}$. Le numérateur compte les parts coloriées."
+      ],
+      "hint": "Le numérateur compte les parts coloriées.",
+      "estimated_duration_s": 30,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 2, CE1 : il sait que le dénominateur indique le nombre total de parts égales et le numérateur le nombre de parts coloriées."
     },
     {
       "id": "EX-C002-E-01",
@@ -9119,6 +10244,45 @@
       "programme_ref": "Cycle 2, CE1 : le numérateur le nombre de parts coloriées."
     },
     {
+      "id": "EX-C002-E-02",
+      "skill_id": "C002",
+      "level": "entrainement",
+      "type": "qcm",
+      "statement": "Sur quelle bande la fraction coloriée a-t-elle pour numérateur 2 ?",
+      "image": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 354 176\" width=\"354\" height=\"176\" font-family=\"system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif\" role=\"img\"><title>Trois bandes pareilles, A, B et C, partagées en parts égales, avec des parts coloriées</title><rect width=\"100%\" height=\"100%\" fill=\"#ffffff\"/><rect x=\"40.0\" y=\"14\" width=\"100.0\" height=\"40\" fill=\"#93c5fd\" stroke=\"#334155\" stroke-width=\"1.6\"/><rect x=\"140.0\" y=\"14\" width=\"100.0\" height=\"40\" fill=\"#ffffff\" stroke=\"#334155\" stroke-width=\"1.6\"/><rect x=\"240.0\" y=\"14\" width=\"100.0\" height=\"40\" fill=\"#ffffff\" stroke=\"#334155\" stroke-width=\"1.6\"/><text x=\"22.0\" y=\"39.0\" font-size=\"15\" text-anchor=\"middle\" fill=\"#334155\" font-weight=\"600\">A</text><rect x=\"40.0\" y=\"68\" width=\"30.0\" height=\"40\" fill=\"#93c5fd\" stroke=\"#334155\" stroke-width=\"1.6\"/><rect x=\"70.0\" y=\"68\" width=\"30.0\" height=\"40\" fill=\"#93c5fd\" stroke=\"#334155\" stroke-width=\"1.6\"/><rect x=\"100.0\" y=\"68\" width=\"30.0\" height=\"40\" fill=\"#ffffff\" stroke=\"#334155\" stroke-width=\"1.6\"/><rect x=\"130.0\" y=\"68\" width=\"30.0\" height=\"40\" fill=\"#ffffff\" stroke=\"#334155\" stroke-width=\"1.6\"/><rect x=\"160.0\" y=\"68\" width=\"30.0\" height=\"40\" fill=\"#ffffff\" stroke=\"#334155\" stroke-width=\"1.6\"/><rect x=\"190.0\" y=\"68\" width=\"30.0\" height=\"40\" fill=\"#ffffff\" stroke=\"#334155\" stroke-width=\"1.6\"/><rect x=\"220.0\" y=\"68\" width=\"30.0\" height=\"40\" fill=\"#ffffff\" stroke=\"#334155\" stroke-width=\"1.6\"/><rect x=\"250.0\" y=\"68\" width=\"30.0\" height=\"40\" fill=\"#ffffff\" stroke=\"#334155\" stroke-width=\"1.6\"/><rect x=\"280.0\" y=\"68\" width=\"30.0\" height=\"40\" fill=\"#ffffff\" stroke=\"#334155\" stroke-width=\"1.6\"/><rect x=\"310.0\" y=\"68\" width=\"30.0\" height=\"40\" fill=\"#ffffff\" stroke=\"#334155\" stroke-width=\"1.6\"/><text x=\"22.0\" y=\"93.0\" font-size=\"15\" text-anchor=\"middle\" fill=\"#334155\" font-weight=\"600\">B</text><rect x=\"40.0\" y=\"122\" width=\"150.0\" height=\"40\" fill=\"#93c5fd\" stroke=\"#334155\" stroke-width=\"1.6\"/><rect x=\"190.0\" y=\"122\" width=\"150.0\" height=\"40\" fill=\"#ffffff\" stroke=\"#334155\" stroke-width=\"1.6\"/><text x=\"22.0\" y=\"147.0\" font-size=\"15\" text-anchor=\"middle\" fill=\"#334155\" font-weight=\"600\">C</text></svg>",
+      "choices": [
+        {
+          "key": "a",
+          "text": "La bande A",
+          "misconception": "L'élève compte les 2 parts blanches de la bande A au lieu de ses parts coloriées. Le numérateur compte les parts coloriées : ici 1."
+        },
+        {
+          "key": "b",
+          "text": "La bande B",
+          "misconception": null
+        },
+        {
+          "key": "c",
+          "text": "La bande C",
+          "misconception": "L'élève cherche un 2 n'importe où : la bande C est partagée en 2 parts, c'est son dénominateur. Son numérateur est 1."
+        }
+      ],
+      "answer": {
+        "value": "b"
+      },
+      "solution_steps": [
+        "Le numérateur compte les parts coloriées.",
+        "Bande A : 1 part coloriée sur 3. Fraction $\\frac{1}{3}$, numérateur 1.",
+        "Bande B : 2 parts coloriées sur 10. Fraction $\\frac{2}{10}$, numérateur 2.",
+        "Bande C : 1 part coloriée sur 2. Fraction $\\frac{1}{2}$ : son 2 est le dénominateur, pas le numérateur.",
+        "La réponse est la bande B."
+      ],
+      "hint": "Le numérateur compte les parts coloriées, pas toutes les parts.",
+      "estimated_duration_s": 50,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 2, CE1 : connaître et utiliser les mots « dénominateur » et « numérateur »."
+    },
+    {
       "id": "EX-C002-M-01",
       "skill_id": "C002",
       "level": "maitrise",
@@ -9138,6 +10302,49 @@
       "estimated_duration_s": 75,
       "review_status": "relu_agent",
       "programme_ref": "Cycle 2, CE1 : connaître et utiliser les mots « dénominateur » et « numérateur »."
+    },
+    {
+      "id": "EX-C002-M-02",
+      "skill_id": "C002",
+      "level": "maitrise",
+      "type": "qcm",
+      "statement": "Lina colorie une part blanche de plus sur ce disque. Quelle fraction du disque est alors coloriée ?",
+      "image": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 180 180\" width=\"180\" height=\"180\" font-family=\"system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif\" role=\"img\"><title>Disque partagé en parts égales, certaines coloriées</title><rect width=\"100%\" height=\"100%\" fill=\"#ffffff\"/><path d=\"M90,90 L90.00,16.00 A74,74 0 0 1 160.38,67.13 Z\" fill=\"#93c5fd\" stroke=\"#334155\" stroke-width=\"1.6\"/><path d=\"M90,90 L160.38,67.13 A74,74 0 0 1 133.50,149.87 Z\" fill=\"#93c5fd\" stroke=\"#334155\" stroke-width=\"1.6\"/><path d=\"M90,90 L133.50,149.87 A74,74 0 0 1 46.50,149.87 Z\" fill=\"#93c5fd\" stroke=\"#334155\" stroke-width=\"1.6\"/><path d=\"M90,90 L46.50,149.87 A74,74 0 0 1 19.62,67.13 Z\" fill=\"#ffffff\" stroke=\"#334155\" stroke-width=\"1.6\"/><path d=\"M90,90 L19.62,67.13 A74,74 0 0 1 90.00,16.00 Z\" fill=\"#ffffff\" stroke=\"#334155\" stroke-width=\"1.6\"/></svg>",
+      "choices": [
+        {
+          "key": "a",
+          "text": "$\\frac{4}{6}$",
+          "misconception": "L'élève croit que colorier une part ajoute une part au disque : il augmente le numérateur, et le dénominateur aussi. Le disque a toujours 5 parts."
+        },
+        {
+          "key": "b",
+          "text": "$\\frac{3}{6}$",
+          "misconception": "L'élève ajoute la part en bas au lieu de l'ajouter en haut : il confond le rôle du numérateur et celui du dénominateur."
+        },
+        {
+          "key": "c",
+          "text": "$\\frac{3}{5}$",
+          "misconception": "L'élève écrit la fraction coloriée d'avant : il ne voit pas que le numérateur change quand le nombre de parts coloriées change."
+        },
+        {
+          "key": "d",
+          "text": "$\\frac{4}{5}$",
+          "misconception": null
+        }
+      ],
+      "answer": {
+        "value": "d"
+      },
+      "solution_steps": [
+        "Sur la figure, 3 parts sur 5 sont coloriées : $\\frac{3}{5}$ du disque.",
+        "Lina colorie une part de plus. On compte les parts coloriées : 4. Le numérateur, qui compte les parts coloriées, devient 4.",
+        "Le disque est toujours partagé en 5 parts égales : le dénominateur ne change pas, il reste 5.",
+        "La fraction coloriée est $\\frac{4}{5}$."
+      ],
+      "hint": "Quand on colorie une part, qu'est-ce qui change : le nombre de parts coloriées, ou le nombre total de parts ?",
+      "estimated_duration_s": 80,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 2, CE1 : il sait que le dénominateur indique le nombre total de parts égales et le numérateur le nombre de parts coloriées."
     },
     {
       "id": "EX-C003-D-01",
@@ -9160,6 +10367,26 @@
       "programme_ref": "Cycle 2, CE1 : connaître et utiliser les mots « dénominateur » et « numérateur »."
     },
     {
+      "id": "EX-C003-D-02",
+      "skill_id": "C003",
+      "level": "decouverte",
+      "type": "numerique",
+      "statement": "Quel est le **dénominateur** de la fraction coloriée du disque ?",
+      "image": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 180 180\" width=\"180\" height=\"180\" font-family=\"system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif\" role=\"img\"><title>Disque partagé en parts égales, certaines coloriées</title><rect width=\"100%\" height=\"100%\" fill=\"#ffffff\"/><path d=\"M90,90 L90.00,16.00 A74,74 0 0 1 164.00,90.00 Z\" fill=\"#93c5fd\" stroke=\"#334155\" stroke-width=\"1.6\"/><path d=\"M90,90 L164.00,90.00 A74,74 0 0 1 90.00,164.00 Z\" fill=\"#ffffff\" stroke=\"#334155\" stroke-width=\"1.6\"/><path d=\"M90,90 L90.00,164.00 A74,74 0 0 1 16.00,90.00 Z\" fill=\"#ffffff\" stroke=\"#334155\" stroke-width=\"1.6\"/><path d=\"M90,90 L16.00,90.00 A74,74 0 0 1 90.00,16.00 Z\" fill=\"#ffffff\" stroke=\"#334155\" stroke-width=\"1.6\"/></svg>",
+      "answer": {
+        "value": 4
+      },
+      "solution_steps": [
+        "Le disque est partagé en 4 parts égales.",
+        "Le dénominateur, en bas, indique le nombre total de parts : **4**.",
+        "1 part est coloriée : c'est le numérateur. La fraction coloriée est $\\frac{1}{4}$, un quart du disque."
+      ],
+      "hint": "Le dénominateur compte toutes les parts, coloriées ou non.",
+      "estimated_duration_s": 30,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 2, CE1 : il sait que le dénominateur indique le nombre total de parts égales et le numérateur le nombre de parts coloriées."
+    },
+    {
       "id": "EX-C003-E-01",
       "skill_id": "C003",
       "level": "entrainement",
@@ -9178,6 +10405,26 @@
       "estimated_duration_s": 35,
       "review_status": "relu_agent",
       "programme_ref": "Cycle 2, CE1 : le dénominateur indique le nombre total de parts égales."
+    },
+    {
+      "id": "EX-C003-E-02",
+      "skill_id": "C003",
+      "level": "entrainement",
+      "type": "vrai_faux",
+      "statement": "Léa dit : « Le dénominateur de la fraction coloriée de la bande est 6. » A-t-elle raison ?",
+      "image": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 352 92\" width=\"352\" height=\"92\" font-family=\"system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif\" role=\"img\"><title>Bande partagée en parts égales, certaines coloriées</title><rect width=\"100%\" height=\"100%\" fill=\"#ffffff\"/><rect x=\"16.0\" y=\"16\" width=\"32.0\" height=\"60\" fill=\"#93c5fd\" stroke=\"#334155\" stroke-width=\"1.6\"/><rect x=\"48.0\" y=\"16\" width=\"32.0\" height=\"60\" fill=\"#93c5fd\" stroke=\"#334155\" stroke-width=\"1.6\"/><rect x=\"80.0\" y=\"16\" width=\"32.0\" height=\"60\" fill=\"#93c5fd\" stroke=\"#334155\" stroke-width=\"1.6\"/><rect x=\"112.0\" y=\"16\" width=\"32.0\" height=\"60\" fill=\"#93c5fd\" stroke=\"#334155\" stroke-width=\"1.6\"/><rect x=\"144.0\" y=\"16\" width=\"32.0\" height=\"60\" fill=\"#93c5fd\" stroke=\"#334155\" stroke-width=\"1.6\"/><rect x=\"176.0\" y=\"16\" width=\"32.0\" height=\"60\" fill=\"#93c5fd\" stroke=\"#334155\" stroke-width=\"1.6\"/><rect x=\"208.0\" y=\"16\" width=\"32.0\" height=\"60\" fill=\"#ffffff\" stroke=\"#334155\" stroke-width=\"1.6\"/><rect x=\"240.0\" y=\"16\" width=\"32.0\" height=\"60\" fill=\"#ffffff\" stroke=\"#334155\" stroke-width=\"1.6\"/><rect x=\"272.0\" y=\"16\" width=\"32.0\" height=\"60\" fill=\"#ffffff\" stroke=\"#334155\" stroke-width=\"1.6\"/><rect x=\"304.0\" y=\"16\" width=\"32.0\" height=\"60\" fill=\"#ffffff\" stroke=\"#334155\" stroke-width=\"1.6\"/></svg>",
+      "answer": {
+        "value": false
+      },
+      "solution_steps": [
+        "On compte toutes les parts de la bande : 10 parts égales. Le dénominateur est 10.",
+        "6 parts sont coloriées : 6 est le numérateur, le nombre du haut.",
+        "La fraction coloriée est $\\frac{6}{10}$. Léa confond le numérateur et le dénominateur : la réponse est **faux**."
+      ],
+      "hint": "Le dénominateur compte-t-il les parts coloriées, ou toutes les parts ?",
+      "estimated_duration_s": 45,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 2, CE1 : connaître et utiliser les mots « dénominateur » et « numérateur »."
     },
     {
       "id": "EX-C003-M-01",
@@ -9218,6 +10465,27 @@
       "programme_ref": "Cycle 2, CE1 : comparer des fractions dont le numérateur est 1."
     },
     {
+      "id": "EX-C003-M-02",
+      "skill_id": "C003",
+      "level": "maitrise",
+      "type": "numerique",
+      "statement": "Voici deux tablettes pareilles. Zoé mange la part coloriée. Quel est le dénominateur de la fraction d'**une** tablette qu'elle a mangée ?",
+      "image": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 354 122\" width=\"354\" height=\"122\" font-family=\"system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif\" role=\"img\"><title>Deux tablettes pareilles partagées en parts égales, une part coloriée</title><rect width=\"100%\" height=\"100%\" fill=\"#ffffff\"/><rect x=\"40.0\" y=\"14\" width=\"60.0\" height=\"40\" fill=\"#93c5fd\" stroke=\"#334155\" stroke-width=\"1.6\"/><rect x=\"100.0\" y=\"14\" width=\"60.0\" height=\"40\" fill=\"#ffffff\" stroke=\"#334155\" stroke-width=\"1.6\"/><rect x=\"160.0\" y=\"14\" width=\"60.0\" height=\"40\" fill=\"#ffffff\" stroke=\"#334155\" stroke-width=\"1.6\"/><rect x=\"220.0\" y=\"14\" width=\"60.0\" height=\"40\" fill=\"#ffffff\" stroke=\"#334155\" stroke-width=\"1.6\"/><rect x=\"280.0\" y=\"14\" width=\"60.0\" height=\"40\" fill=\"#ffffff\" stroke=\"#334155\" stroke-width=\"1.6\"/><rect x=\"40.0\" y=\"68\" width=\"60.0\" height=\"40\" fill=\"#ffffff\" stroke=\"#334155\" stroke-width=\"1.6\"/><rect x=\"100.0\" y=\"68\" width=\"60.0\" height=\"40\" fill=\"#ffffff\" stroke=\"#334155\" stroke-width=\"1.6\"/><rect x=\"160.0\" y=\"68\" width=\"60.0\" height=\"40\" fill=\"#ffffff\" stroke=\"#334155\" stroke-width=\"1.6\"/><rect x=\"220.0\" y=\"68\" width=\"60.0\" height=\"40\" fill=\"#ffffff\" stroke=\"#334155\" stroke-width=\"1.6\"/><rect x=\"280.0\" y=\"68\" width=\"60.0\" height=\"40\" fill=\"#ffffff\" stroke=\"#334155\" stroke-width=\"1.6\"/></svg>",
+      "answer": {
+        "value": 5
+      },
+      "solution_steps": [
+        "Le tout, ici, c'est **une** tablette, pas les deux.",
+        "Une tablette est partagée en 5 parts égales : le dénominateur est **5**.",
+        "Zoé a mangé 1 part : elle a mangé $\\frac{1}{5}$ d'une tablette.",
+        "En comptant les parts des deux tablettes ensemble, on trouve 10 : ce n'est pas le nombre de parts d'une tablette."
+      ],
+      "hint": "Compte seulement les parts d'une tablette.",
+      "estimated_duration_s": 80,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 2, CE1 : les fractions rencontrées au CE1 sont les fractions d'un tout."
+    },
+    {
       "id": "EX-C004-D-01",
       "skill_id": "C004",
       "level": "decouverte",
@@ -9236,6 +10504,49 @@
       "estimated_duration_s": 40,
       "review_status": "relu_agent",
       "programme_ref": "Cycle 3, CM1 : les élèves apprennent à calculer des fractions de quantités comme un tiers de 12 billes."
+    },
+    {
+      "id": "EX-C004-D-02",
+      "skill_id": "C004",
+      "level": "decouverte",
+      "type": "qcm",
+      "statement": "Un sac contient 30 bonbons. Combien de bonbons y a-t-il dans $\\frac{1}{5}$ du sac ?",
+      "image": null,
+      "choices": [
+        {
+          "key": "a",
+          "text": "150",
+          "misconception": "L'élève multiplie 30 par 5 au lieu de partager les bonbons en 5 parts égales."
+        },
+        {
+          "key": "b",
+          "text": "5",
+          "misconception": "L'élève donne le dénominateur : il lit le nombre de parts au lieu de calculer ce que contient une part."
+        },
+        {
+          "key": "c",
+          "text": "25",
+          "misconception": "L'élève enlève 5 bonbons au sac : il confond « un cinquième » avec « 5 de moins »."
+        },
+        {
+          "key": "d",
+          "text": "6",
+          "misconception": null
+        }
+      ],
+      "answer": {
+        "value": "d"
+      },
+      "solution_steps": [
+        "Prendre $\\frac{1}{5}$, c'est partager en 5 parts égales et en prendre une.",
+        "$30 \\div 5 = 6$.",
+        "$\\frac{1}{5}$ du sac, c'est **6** bonbons.",
+        "Vérification : 5 parts de 6 bonbons, $5 \\times 6 = 30$."
+      ],
+      "hint": "Partage les 30 bonbons en 5 tas égaux.",
+      "estimated_duration_s": 45,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 3, CM1 : déterminer une fraction d'une quantité ou d'une grandeur."
     },
     {
       "id": "EX-C004-E-01",
@@ -9257,6 +10568,27 @@
       "estimated_duration_s": 60,
       "review_status": "relu_agent",
       "programme_ref": "Cycle 3, CM1 : les fractions acquièrent le statut d'opérateur multiplicatif pour le cas particulier des fractions unitaires, comme un quart de 100 mètres."
+    },
+    {
+      "id": "EX-C004-E-02",
+      "skill_id": "C004",
+      "level": "entrainement",
+      "type": "numerique",
+      "statement": "Une citerne contient 56 litres d'eau. On utilise le **septième** de cette eau pour arroser.\n\nCombien de litres utilise-t-on ?",
+      "image": null,
+      "answer": {
+        "value": 8,
+        "unit": "L"
+      },
+      "solution_steps": [
+        "Le septième, c'est $\\frac{1}{7}$ : on partage les 56 litres en 7 parts égales.",
+        "Dans la table de 7 : $7 \\times 8 = 56$, donc $56 \\div 7 = 8$.",
+        "On utilise **8 litres** d'eau."
+      ],
+      "hint": "Le septième, c'est $\\frac{1}{7}$. Cherche 56 dans la table de 7.",
+      "estimated_duration_s": 70,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 3, CM1 : les fractions acquièrent le statut d'opérateur multiplicatif pour le cas particulier des fractions unitaires."
     },
     {
       "id": "EX-C004-M-01",
@@ -9282,6 +10614,29 @@
       "programme_ref": "Cycle 3, CM1 : déterminer une fraction d'une quantité ou d'une grandeur (fractions unitaires)."
     },
     {
+      "id": "EX-C004-M-02",
+      "skill_id": "C004",
+      "level": "maitrise",
+      "type": "numerique",
+      "statement": "Dans une classe, 6 élèves font de la chorale : c'est le **cinquième** de la classe. Le **tiers** de la classe fait du judo.\n\nCombien d'élèves font du judo ?",
+      "image": null,
+      "answer": {
+        "value": 10,
+        "unit": "élèves"
+      },
+      "solution_steps": [
+        "On ne connaît pas le nombre d'élèves de la classe : on le cherche d'abord.",
+        "Le cinquième de la classe vaut 6 élèves : la classe est faite de 5 parts de 6 élèves. $5 \\times 6 = 30$ : la classe compte 30 élèves.",
+        "Le tiers de la classe : $30 \\div 3 = 10$.",
+        "**10 élèves** font du judo.",
+        "Piège : $6 \\div 3$ donne le tiers des élèves de la chorale, pas le tiers de la classe."
+      ],
+      "hint": "Trouve d'abord combien d'élèves compte la classe.",
+      "estimated_duration_s": 160,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 3, CM1 : déterminer une fraction d'une quantité ou d'une grandeur."
+    },
+    {
       "id": "EX-C005-D-01",
       "skill_id": "C005",
       "level": "decouverte",
@@ -9303,6 +10658,32 @@
       "estimated_duration_s": 45,
       "review_status": "relu_agent",
       "programme_ref": "Cycle 2, CE2 : positionner des fractions sur une bande-unité graduée."
+    },
+    {
+      "id": "EX-C005-D-02",
+      "skill_id": "C005",
+      "level": "decouverte",
+      "type": "texte",
+      "statement": "Quelle fraction repère le point A ? Écris-la sous la forme numérateur/dénominateur.",
+      "image": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 380 96\" width=\"380\" height=\"96\" font-family=\"system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif\" role=\"img\"><title>Demi-droite graduée de 0 à 1, unité partagée en parts égales, avec un point A</title><rect width=\"100%\" height=\"100%\" fill=\"#ffffff\"/><line x1=\"28.0\" y1=\"54.0\" x2=\"352.0\" y2=\"54.0\" stroke=\"#334155\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M352.0,54.0 l-9,-5 v10 z\" fill=\"#334155\"/><line x1=\"28.0\" y1=\"45.0\" x2=\"28.0\" y2=\"63.0\" stroke=\"#334155\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><line x1=\"79.7\" y1=\"45.0\" x2=\"79.7\" y2=\"63.0\" stroke=\"#334155\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><line x1=\"131.3\" y1=\"45.0\" x2=\"131.3\" y2=\"63.0\" stroke=\"#334155\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><line x1=\"183.0\" y1=\"45.0\" x2=\"183.0\" y2=\"63.0\" stroke=\"#334155\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><line x1=\"234.7\" y1=\"45.0\" x2=\"234.7\" y2=\"63.0\" stroke=\"#334155\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><line x1=\"286.3\" y1=\"45.0\" x2=\"286.3\" y2=\"63.0\" stroke=\"#334155\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><line x1=\"338.0\" y1=\"45.0\" x2=\"338.0\" y2=\"63.0\" stroke=\"#334155\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><text x=\"28.0\" y=\"82.0\" font-size=\"13\" text-anchor=\"middle\" fill=\"#334155\">0</text><text x=\"338.0\" y=\"82.0\" font-size=\"13\" text-anchor=\"middle\" fill=\"#334155\">1</text><circle cx=\"286.3\" cy=\"54.0\" r=\"4.5\" fill=\"#2563eb\"/><text x=\"286.3\" y=\"38.0\" font-size=\"15\" text-anchor=\"middle\" fill=\"#2563eb\" font-weight=\"600\">A</text></svg>",
+      "answer": {
+        "value": "5/6",
+        "accepted": [
+          "5 / 6",
+          "cinq sixièmes",
+          "5 sixièmes"
+        ]
+      },
+      "solution_steps": [
+        "Entre 0 et 1, on compte les intervalles égaux : il y en a 6. Chaque intervalle vaut $\\frac{1}{6}$.",
+        "Depuis 0, on avance de 5 intervalles pour arriver au point A.",
+        "Le point A repère $\\frac{5}{6}$.",
+        "On compte les intervalles, pas les traits : de 0 à 1, il y a 7 traits mais seulement 6 intervalles."
+      ],
+      "hint": "Compte les intervalles entre 0 et 1, puis ceux entre 0 et le point A.",
+      "estimated_duration_s": 45,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 2, CE2 : graduer une bande-unité en fractions de cette unité."
     },
     {
       "id": "EX-C005-E-01",
@@ -9328,6 +10709,44 @@
       "programme_ref": "Cycle 2, CE2 : positionner des fractions sur une bande-unité graduée."
     },
     {
+      "id": "EX-C005-E-02",
+      "skill_id": "C005",
+      "level": "entrainement",
+      "type": "qcm",
+      "statement": "Quel point repère la fraction $\\frac{4}{9}$ ?",
+      "image": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 380 96\" width=\"380\" height=\"96\" font-family=\"system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif\" role=\"img\"><title>Demi-droite graduée de 0 à 1, unité partagée en parts égales, avec les points A, B et C</title><rect width=\"100%\" height=\"100%\" fill=\"#ffffff\"/><line x1=\"28.0\" y1=\"54.0\" x2=\"352.0\" y2=\"54.0\" stroke=\"#334155\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M352.0,54.0 l-9,-5 v10 z\" fill=\"#334155\"/><line x1=\"28.0\" y1=\"45.0\" x2=\"28.0\" y2=\"63.0\" stroke=\"#334155\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><line x1=\"62.4\" y1=\"45.0\" x2=\"62.4\" y2=\"63.0\" stroke=\"#334155\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><line x1=\"96.9\" y1=\"45.0\" x2=\"96.9\" y2=\"63.0\" stroke=\"#334155\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><line x1=\"131.3\" y1=\"45.0\" x2=\"131.3\" y2=\"63.0\" stroke=\"#334155\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><line x1=\"165.8\" y1=\"45.0\" x2=\"165.8\" y2=\"63.0\" stroke=\"#334155\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><line x1=\"200.2\" y1=\"45.0\" x2=\"200.2\" y2=\"63.0\" stroke=\"#334155\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><line x1=\"234.7\" y1=\"45.0\" x2=\"234.7\" y2=\"63.0\" stroke=\"#334155\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><line x1=\"269.1\" y1=\"45.0\" x2=\"269.1\" y2=\"63.0\" stroke=\"#334155\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><line x1=\"303.6\" y1=\"45.0\" x2=\"303.6\" y2=\"63.0\" stroke=\"#334155\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><line x1=\"338.0\" y1=\"45.0\" x2=\"338.0\" y2=\"63.0\" stroke=\"#334155\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><text x=\"28.0\" y=\"82.0\" font-size=\"13\" text-anchor=\"middle\" fill=\"#334155\">0</text><text x=\"338.0\" y=\"82.0\" font-size=\"13\" text-anchor=\"middle\" fill=\"#334155\">1</text><circle cx=\"200.2\" cy=\"54.0\" r=\"4.5\" fill=\"#2563eb\"/><text x=\"200.2\" y=\"38.0\" font-size=\"15\" text-anchor=\"middle\" fill=\"#2563eb\" font-weight=\"600\">A</text><circle cx=\"131.3\" cy=\"54.0\" r=\"4.5\" fill=\"#2563eb\"/><text x=\"131.3\" y=\"38.0\" font-size=\"15\" text-anchor=\"middle\" fill=\"#2563eb\" font-weight=\"600\">B</text><circle cx=\"165.8\" cy=\"54.0\" r=\"4.5\" fill=\"#2563eb\"/><text x=\"165.8\" y=\"38.0\" font-size=\"15\" text-anchor=\"middle\" fill=\"#2563eb\" font-weight=\"600\">C</text></svg>",
+      "choices": [
+        {
+          "key": "a",
+          "text": "Le point A",
+          "misconception": "L'élève part de 1 au lieu de 0 : il recule de 4 intervalles depuis 1 et tombe sur $\\frac{5}{9}$."
+        },
+        {
+          "key": "b",
+          "text": "Le point B",
+          "misconception": "L'élève compte les traits au lieu des intervalles : il compte le trait de 0 comme le premier, et son 4e trait repère $\\frac{3}{9}$."
+        },
+        {
+          "key": "c",
+          "text": "Le point C",
+          "misconception": null
+        }
+      ],
+      "answer": {
+        "value": "c"
+      },
+      "solution_steps": [
+        "Entre 0 et 1, il y a 9 intervalles égaux : la demi-droite est graduée en neuvièmes.",
+        "$\\frac{4}{9}$ : on avance de 4 intervalles depuis 0.",
+        "On arrive au point C. Le point B est à 3 intervalles de 0, le point A à 5 intervalles.",
+        "La réponse est le point C."
+      ],
+      "hint": "Le dénominateur dit en combien d'intervalles l'unité est partagée ; le numérateur, combien d'intervalles on parcourt depuis 0.",
+      "estimated_duration_s": 60,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 2, CE2 : positionner des fractions sur une bande-unité graduée."
+    },
+    {
       "id": "EX-C005-M-01",
       "skill_id": "C005",
       "level": "maitrise",
@@ -9347,6 +10766,34 @@
       "estimated_duration_s": 75,
       "review_status": "relu_agent",
       "programme_ref": "Cycle 2, CE2 : positionnement de fractions égales au niveau de la même graduation."
+    },
+    {
+      "id": "EX-C005-M-02",
+      "skill_id": "C005",
+      "level": "maitrise",
+      "type": "texte",
+      "statement": "Sur cette demi-droite, le nombre 1 n'est pas écrit. Quelle fraction repère le point A ? Écris-la sous la forme numérateur/dénominateur.",
+      "image": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 380 96\" width=\"380\" height=\"96\" font-family=\"system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif\" role=\"img\"><title>Demi-droite graduée en parts égales, où seuls 0 et un demi sont écrits, avec un point A</title><rect width=\"100%\" height=\"100%\" fill=\"#ffffff\"/><line x1=\"28.0\" y1=\"54.0\" x2=\"352.0\" y2=\"54.0\" stroke=\"#334155\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M352.0,54.0 l-9,-5 v10 z\" fill=\"#334155\"/><line x1=\"28.0\" y1=\"45.0\" x2=\"28.0\" y2=\"63.0\" stroke=\"#334155\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><line x1=\"53.8\" y1=\"45.0\" x2=\"53.8\" y2=\"63.0\" stroke=\"#334155\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><line x1=\"79.7\" y1=\"45.0\" x2=\"79.7\" y2=\"63.0\" stroke=\"#334155\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><line x1=\"105.5\" y1=\"45.0\" x2=\"105.5\" y2=\"63.0\" stroke=\"#334155\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><line x1=\"131.3\" y1=\"45.0\" x2=\"131.3\" y2=\"63.0\" stroke=\"#334155\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><line x1=\"157.2\" y1=\"45.0\" x2=\"157.2\" y2=\"63.0\" stroke=\"#334155\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><line x1=\"183.0\" y1=\"45.0\" x2=\"183.0\" y2=\"63.0\" stroke=\"#334155\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><line x1=\"208.8\" y1=\"45.0\" x2=\"208.8\" y2=\"63.0\" stroke=\"#334155\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><line x1=\"234.7\" y1=\"45.0\" x2=\"234.7\" y2=\"63.0\" stroke=\"#334155\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><line x1=\"260.5\" y1=\"45.0\" x2=\"260.5\" y2=\"63.0\" stroke=\"#334155\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><line x1=\"286.3\" y1=\"45.0\" x2=\"286.3\" y2=\"63.0\" stroke=\"#334155\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><line x1=\"312.2\" y1=\"45.0\" x2=\"312.2\" y2=\"63.0\" stroke=\"#334155\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><line x1=\"338.0\" y1=\"45.0\" x2=\"338.0\" y2=\"63.0\" stroke=\"#334155\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><text x=\"28.0\" y=\"82.0\" font-size=\"13\" text-anchor=\"middle\" fill=\"#334155\">0</text><text x=\"157.2\" y=\"82.0\" font-size=\"13\" text-anchor=\"middle\" fill=\"#334155\">1/2</text><circle cx=\"208.8\" cy=\"54.0\" r=\"4.5\" fill=\"#2563eb\"/><text x=\"208.8\" y=\"38.0\" font-size=\"15\" text-anchor=\"middle\" fill=\"#2563eb\" font-weight=\"600\">A</text></svg>",
+      "answer": {
+        "value": "7/10",
+        "accepted": [
+          "7 / 10",
+          "sept dixièmes",
+          "7 dixièmes"
+        ]
+      },
+      "solution_steps": [
+        "De 0 à $\\frac{1}{2}$, on compte 5 intervalles égaux.",
+        "Une moitié fait 5 intervalles : l'unité entière, de 0 à 1, en fait deux fois plus, $2 \\times 5 = 10$. Chaque intervalle vaut donc $\\frac{1}{10}$.",
+        "De 0 au point A, on compte 7 intervalles.",
+        "Le point A repère $\\frac{7}{10}$.",
+        "Piège : un intervalle ne vaut pas $\\frac{1}{5}$. Les 5 intervalles mènent à $\\frac{1}{2}$, pas à 1.",
+        "Attention : le bout du dessin n'est pas 1, la demi-droite continue après 1."
+      ],
+      "hint": "Combien d'intervalles entre 0 et $\\frac{1}{2}$ ? Combien en faut-il alors entre 0 et 1 ?",
+      "estimated_duration_s": 90,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 2, CE2 : graduer une bande-unité en fractions de cette unité."
     },
     {
       "id": "EX-C006-D-01",
@@ -9386,6 +10833,27 @@
       "programme_ref": "Cycle 2, CE2 : établir des égalités entre fractions."
     },
     {
+      "id": "EX-C006-D-02",
+      "skill_id": "C006",
+      "level": "decouverte",
+      "type": "vrai_faux",
+      "statement": "Les bandes A et B sont pareilles. La même fraction de bande est coloriée sur A et sur B.",
+      "image": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 354 122\" width=\"354\" height=\"122\" font-family=\"system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif\" role=\"img\"><title>Deux bandes pareilles, A et B, partagées en parts égales, avec des parts coloriées</title><rect width=\"100%\" height=\"100%\" fill=\"#ffffff\"/><rect x=\"40.0\" y=\"14\" width=\"75.0\" height=\"40\" fill=\"#93c5fd\" stroke=\"#334155\" stroke-width=\"1.6\"/><rect x=\"115.0\" y=\"14\" width=\"75.0\" height=\"40\" fill=\"#ffffff\" stroke=\"#334155\" stroke-width=\"1.6\"/><rect x=\"190.0\" y=\"14\" width=\"75.0\" height=\"40\" fill=\"#ffffff\" stroke=\"#334155\" stroke-width=\"1.6\"/><rect x=\"265.0\" y=\"14\" width=\"75.0\" height=\"40\" fill=\"#ffffff\" stroke=\"#334155\" stroke-width=\"1.6\"/><text x=\"22.0\" y=\"39.0\" font-size=\"15\" text-anchor=\"middle\" fill=\"#334155\" font-weight=\"600\">A</text><rect x=\"40.0\" y=\"68\" width=\"37.5\" height=\"40\" fill=\"#93c5fd\" stroke=\"#334155\" stroke-width=\"1.6\"/><rect x=\"77.5\" y=\"68\" width=\"37.5\" height=\"40\" fill=\"#93c5fd\" stroke=\"#334155\" stroke-width=\"1.6\"/><rect x=\"115.0\" y=\"68\" width=\"37.5\" height=\"40\" fill=\"#ffffff\" stroke=\"#334155\" stroke-width=\"1.6\"/><rect x=\"152.5\" y=\"68\" width=\"37.5\" height=\"40\" fill=\"#ffffff\" stroke=\"#334155\" stroke-width=\"1.6\"/><rect x=\"190.0\" y=\"68\" width=\"37.5\" height=\"40\" fill=\"#ffffff\" stroke=\"#334155\" stroke-width=\"1.6\"/><rect x=\"227.5\" y=\"68\" width=\"37.5\" height=\"40\" fill=\"#ffffff\" stroke=\"#334155\" stroke-width=\"1.6\"/><rect x=\"265.0\" y=\"68\" width=\"37.5\" height=\"40\" fill=\"#ffffff\" stroke=\"#334155\" stroke-width=\"1.6\"/><rect x=\"302.5\" y=\"68\" width=\"37.5\" height=\"40\" fill=\"#ffffff\" stroke=\"#334155\" stroke-width=\"1.6\"/><text x=\"22.0\" y=\"93.0\" font-size=\"15\" text-anchor=\"middle\" fill=\"#334155\" font-weight=\"600\">B</text></svg>",
+      "answer": {
+        "value": true
+      },
+      "solution_steps": [
+        "Bande A : 4 parts égales, 1 coloriée. C'est $\\frac{1}{4}$.",
+        "Bande B : 8 parts égales, 2 coloriées. C'est $\\frac{2}{8}$.",
+        "Sur la figure, les parties coloriées ont la même longueur : la part coloriée de A recouvre exactement 2 parts de B.",
+        "$\\frac{1}{4} = \\frac{2}{8}$ : l'affirmation est **vraie**. Les parts de B sont deux fois plus petites, et on en a colorié deux fois plus."
+      ],
+      "hint": "Compare la longueur coloriée sur A et sur B.",
+      "estimated_duration_s": 45,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 2, CE2 : savoir établir des égalités de fractions inférieures ou égales à 1."
+    },
+    {
       "id": "EX-C006-E-01",
       "skill_id": "C006",
       "level": "entrainement",
@@ -9404,6 +10872,31 @@
       "estimated_duration_s": 60,
       "review_status": "relu_agent",
       "programme_ref": "Cycle 2, CE2 : établir des égalités entre fractions."
+    },
+    {
+      "id": "EX-C006-E-02",
+      "skill_id": "C006",
+      "level": "entrainement",
+      "type": "numerique",
+      "statement": "Les bandes A et B sont pareilles. Combien de parts de la bande B faut-il colorier pour colorier la même longueur que sur A ?",
+      "image": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 354 122\" width=\"354\" height=\"122\" font-family=\"system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif\" role=\"img\"><title>Deux bandes pareilles, A et B, partagées en parts égales ; des parts de A sont coloriées</title><rect width=\"100%\" height=\"100%\" fill=\"#ffffff\"/><rect x=\"40.0\" y=\"14\" width=\"60.0\" height=\"40\" fill=\"#93c5fd\" stroke=\"#334155\" stroke-width=\"1.6\"/><rect x=\"100.0\" y=\"14\" width=\"60.0\" height=\"40\" fill=\"#93c5fd\" stroke=\"#334155\" stroke-width=\"1.6\"/><rect x=\"160.0\" y=\"14\" width=\"60.0\" height=\"40\" fill=\"#93c5fd\" stroke=\"#334155\" stroke-width=\"1.6\"/><rect x=\"220.0\" y=\"14\" width=\"60.0\" height=\"40\" fill=\"#ffffff\" stroke=\"#334155\" stroke-width=\"1.6\"/><rect x=\"280.0\" y=\"14\" width=\"60.0\" height=\"40\" fill=\"#ffffff\" stroke=\"#334155\" stroke-width=\"1.6\"/><text x=\"22.0\" y=\"39.0\" font-size=\"15\" text-anchor=\"middle\" fill=\"#334155\" font-weight=\"600\">A</text><rect x=\"40.0\" y=\"68\" width=\"30.0\" height=\"40\" fill=\"#ffffff\" stroke=\"#334155\" stroke-width=\"1.6\"/><rect x=\"70.0\" y=\"68\" width=\"30.0\" height=\"40\" fill=\"#ffffff\" stroke=\"#334155\" stroke-width=\"1.6\"/><rect x=\"100.0\" y=\"68\" width=\"30.0\" height=\"40\" fill=\"#ffffff\" stroke=\"#334155\" stroke-width=\"1.6\"/><rect x=\"130.0\" y=\"68\" width=\"30.0\" height=\"40\" fill=\"#ffffff\" stroke=\"#334155\" stroke-width=\"1.6\"/><rect x=\"160.0\" y=\"68\" width=\"30.0\" height=\"40\" fill=\"#ffffff\" stroke=\"#334155\" stroke-width=\"1.6\"/><rect x=\"190.0\" y=\"68\" width=\"30.0\" height=\"40\" fill=\"#ffffff\" stroke=\"#334155\" stroke-width=\"1.6\"/><rect x=\"220.0\" y=\"68\" width=\"30.0\" height=\"40\" fill=\"#ffffff\" stroke=\"#334155\" stroke-width=\"1.6\"/><rect x=\"250.0\" y=\"68\" width=\"30.0\" height=\"40\" fill=\"#ffffff\" stroke=\"#334155\" stroke-width=\"1.6\"/><rect x=\"280.0\" y=\"68\" width=\"30.0\" height=\"40\" fill=\"#ffffff\" stroke=\"#334155\" stroke-width=\"1.6\"/><rect x=\"310.0\" y=\"68\" width=\"30.0\" height=\"40\" fill=\"#ffffff\" stroke=\"#334155\" stroke-width=\"1.6\"/><text x=\"22.0\" y=\"93.0\" font-size=\"15\" text-anchor=\"middle\" fill=\"#334155\" font-weight=\"600\">B</text></svg>",
+      "answer": {
+        "value": 6,
+        "accepted": [
+          "6 parts"
+        ]
+      },
+      "solution_steps": [
+        "Bande A : 5 parts égales, 3 coloriées. C'est $\\frac{3}{5}$.",
+        "Bande B : 10 parts égales. Sur la figure, chaque part de A recouvre exactement 2 parts de B.",
+        "Pour 3 parts de A, il faut $3 \\times 2 = 6$ parts de B.",
+        "$\\frac{3}{5} = \\frac{3 \\times 2}{5 \\times 2} = \\frac{6}{10}$ : on colorie **6** parts.",
+        "Colorier 3 parts de B ne suffit pas : $\\frac{3}{10}$, c'est deux fois moins que $\\frac{3}{5}$."
+      ],
+      "hint": "Combien de parts de B tiennent sous une part de A ?",
+      "estimated_duration_s": 70,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 2, CE2 : savoir établir des égalités de fractions inférieures ou égales à 1."
     },
     {
       "id": "EX-C006-M-01",
@@ -9444,6 +10937,44 @@
       "programme_ref": "Cycle 2, CE2 : établir des égalités entre fractions."
     },
     {
+      "id": "EX-C006-M-02",
+      "skill_id": "C006",
+      "level": "maitrise",
+      "type": "qcm",
+      "statement": "Tom mange $\\frac{3}{9}$ de la barre A. Léa mange $\\frac{1}{3}$ de la barre B, pareille. Qui a mangé le plus ?",
+      "image": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 354 122\" width=\"354\" height=\"122\" font-family=\"system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif\" role=\"img\"><title>Deux barres pareilles, A et B, partagées en parts égales</title><rect width=\"100%\" height=\"100%\" fill=\"#ffffff\"/><rect x=\"40.0\" y=\"14\" width=\"33.3\" height=\"40\" fill=\"#ffffff\" stroke=\"#334155\" stroke-width=\"1.6\"/><rect x=\"73.3\" y=\"14\" width=\"33.3\" height=\"40\" fill=\"#ffffff\" stroke=\"#334155\" stroke-width=\"1.6\"/><rect x=\"106.7\" y=\"14\" width=\"33.3\" height=\"40\" fill=\"#ffffff\" stroke=\"#334155\" stroke-width=\"1.6\"/><rect x=\"140.0\" y=\"14\" width=\"33.3\" height=\"40\" fill=\"#ffffff\" stroke=\"#334155\" stroke-width=\"1.6\"/><rect x=\"173.3\" y=\"14\" width=\"33.3\" height=\"40\" fill=\"#ffffff\" stroke=\"#334155\" stroke-width=\"1.6\"/><rect x=\"206.7\" y=\"14\" width=\"33.3\" height=\"40\" fill=\"#ffffff\" stroke=\"#334155\" stroke-width=\"1.6\"/><rect x=\"240.0\" y=\"14\" width=\"33.3\" height=\"40\" fill=\"#ffffff\" stroke=\"#334155\" stroke-width=\"1.6\"/><rect x=\"273.3\" y=\"14\" width=\"33.3\" height=\"40\" fill=\"#ffffff\" stroke=\"#334155\" stroke-width=\"1.6\"/><rect x=\"306.7\" y=\"14\" width=\"33.3\" height=\"40\" fill=\"#ffffff\" stroke=\"#334155\" stroke-width=\"1.6\"/><text x=\"22.0\" y=\"39.0\" font-size=\"15\" text-anchor=\"middle\" fill=\"#334155\" font-weight=\"600\">A</text><rect x=\"40.0\" y=\"68\" width=\"100.0\" height=\"40\" fill=\"#ffffff\" stroke=\"#334155\" stroke-width=\"1.6\"/><rect x=\"140.0\" y=\"68\" width=\"100.0\" height=\"40\" fill=\"#ffffff\" stroke=\"#334155\" stroke-width=\"1.6\"/><rect x=\"240.0\" y=\"68\" width=\"100.0\" height=\"40\" fill=\"#ffffff\" stroke=\"#334155\" stroke-width=\"1.6\"/><text x=\"22.0\" y=\"93.0\" font-size=\"15\" text-anchor=\"middle\" fill=\"#334155\" font-weight=\"600\">B</text></svg>",
+      "choices": [
+        {
+          "key": "a",
+          "text": "Tom",
+          "misconception": "L'élève compare les numérateurs : 3 parts, c'est plus que 1 part. Il ne voit pas que les parts de Tom sont trois fois plus petites."
+        },
+        {
+          "key": "b",
+          "text": "Léa",
+          "misconception": "L'élève voit que la part de Léa est plus grosse (un tiers contre des neuvièmes) et conclut qu'elle a mangé plus, sans tenir compte du nombre de parts."
+        },
+        {
+          "key": "c",
+          "text": "Ils ont mangé autant",
+          "misconception": null
+        }
+      ],
+      "answer": {
+        "value": "c"
+      },
+      "solution_steps": [
+        "Une part de la barre B (un tiers) recouvre exactement 3 parts de la barre A (3 neuvièmes).",
+        "Léa a mangé la même longueur que 3 parts de A, autant que Tom.",
+        "$\\frac{1}{3} = \\frac{1 \\times 3}{3 \\times 3} = \\frac{3}{9}$ : des parts trois fois plus petites, trois fois plus de parts.",
+        "Ils ont mangé autant."
+      ],
+      "hint": "Combien de parts de A tiennent sous une part de B ?",
+      "estimated_duration_s": 120,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 2, CE2 : l'élève sait expliquer pourquoi six huitièmes d'un tout est égal à trois quarts de ce tout."
+    },
+    {
       "id": "EX-C007-D-01",
       "skill_id": "C007",
       "level": "decouverte",
@@ -9463,6 +10994,44 @@
         "La valeur n'a pas changé, seule l'écriture est plus simple."
       ],
       "hint": "Cherche un nombre qui divise à la fois 12 et 18.",
+      "estimated_duration_s": 60,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 4, 4e : simplifier une fraction."
+    },
+    {
+      "id": "EX-C007-D-02",
+      "skill_id": "C007",
+      "level": "decouverte",
+      "type": "qcm",
+      "statement": "On veut simplifier $\\frac{14}{35}$.\n\nPar quel nombre peut-on diviser à la fois le numérateur et le dénominateur ?",
+      "image": null,
+      "choices": [
+        {
+          "key": "a",
+          "text": "2",
+          "misconception": "L'élève ne regarde que le numérateur : 14 est pair, mais 35 est impair, donc 35 n'est pas divisible par 2."
+        },
+        {
+          "key": "b",
+          "text": "5",
+          "misconception": "L'élève ne regarde que le dénominateur : 35 se termine par 5, mais 14 n'est pas dans la table de 5."
+        },
+        {
+          "key": "c",
+          "text": "7",
+          "misconception": null
+        }
+      ],
+      "answer": {
+        "value": "c"
+      },
+      "solution_steps": [
+        "Pour simplifier, il faut un nombre qui divise **les deux** : le numérateur 14 et le dénominateur 35.",
+        "2 divise 14, mais pas 35, qui est impair. 5 divise 35, mais pas 14.",
+        "14 et 35 sont tous les deux dans la table de 7 : $14 = 2 \\times 7$ et $35 = 5 \\times 7$.",
+        "On divise les deux par 7 : $14 \\div 7 = 2$ et $35 \\div 7 = 5$. Donc $\\frac{14}{35} = \\frac{2}{5}$, et la valeur de la fraction n'a pas changé."
+      ],
+      "hint": "Cherche une table de multiplication qui contient à la fois 14 et 35.",
       "estimated_duration_s": 60,
       "review_status": "relu_agent",
       "programme_ref": "Cycle 4, 4e : simplifier une fraction."
@@ -9488,6 +11057,32 @@
       ],
       "hint": "Les deux nombres se terminent par 5 ou 0.",
       "estimated_duration_s": 60,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 4, 4e : simplifier une fraction."
+    },
+    {
+      "id": "EX-C007-E-02",
+      "skill_id": "C007",
+      "level": "entrainement",
+      "type": "numerique",
+      "statement": "On simplifie $\\frac{56}{72}$ et on obtient une fraction de dénominateur 9.\n\nQuel est son numérateur ?",
+      "image": null,
+      "answer": {
+        "value": 7,
+        "accepted": [
+          "7/9",
+          "7 / 9"
+        ]
+      },
+      "solution_steps": [
+        "Pour passer du dénominateur 72 au dénominateur 9, on a divisé par 8, car $72 \\div 8 = 9$.",
+        "Pour que la fraction garde sa valeur, on divise le numérateur par **le même nombre** : $56 \\div 8 = 7$.",
+        "$\\frac{56}{72} = \\frac{7}{9}$ : 56 et 72 sont bien tous les deux dans la table de 8.",
+        "Le numérateur est **7**.",
+        "Piège : diviser 56 par 9, comme si le dénominateur final servait de diviseur, ne marche pas : 56 n'est pas dans la table de 9."
+      ],
+      "hint": "Par combien a-t-on divisé 72 pour obtenir 9 ?",
+      "estimated_duration_s": 90,
       "review_status": "relu_agent",
       "programme_ref": "Cycle 4, 4e : simplifier une fraction."
     },
@@ -9530,6 +11125,51 @@
       "programme_ref": "Cycle 4, 4e : simplifier une fraction."
     },
     {
+      "id": "EX-C007-M-02",
+      "skill_id": "C007",
+      "level": "maitrise",
+      "type": "qcm",
+      "statement": "Laquelle de ces égalités, écrites pour simplifier $\\frac{18}{27}$, est juste ?",
+      "image": null,
+      "choices": [
+        {
+          "key": "a",
+          "text": "$\\frac{18}{27} = \\frac{9}{9}$",
+          "misconception": "L'élève divise le numérateur par 2 et le dénominateur par 3. Diviser par deux nombres différents change la valeur : 9/9 vaut 1, alors que 18/27 est plus petit que 1."
+        },
+        {
+          "key": "b",
+          "text": "$\\frac{18}{27} = \\frac{8}{7}$",
+          "misconception": "L'élève barre le chiffre 1 de 18 et le chiffre 2 de 27, comme s'il simplifiait des chiffres. On ne simplifie que par un nombre qui divise le numérateur et le dénominateur ; 8/7 est même plus grand que 1."
+        },
+        {
+          "key": "c",
+          "text": "$\\frac{18}{27} = \\frac{15}{24}$",
+          "misconception": "L'élève retire 3 en haut et en bas, comme s'il divisait par 3. Soustraire le même nombre change la valeur : 15/24 vaut 5/8, pas 2/3."
+        },
+        {
+          "key": "d",
+          "text": "$\\frac{18}{27} = \\frac{6}{9}$",
+          "misconception": null
+        }
+      ],
+      "answer": {
+        "value": "d"
+      },
+      "solution_steps": [
+        "Simplifier, c'est diviser le numérateur et le dénominateur **par le même nombre**. On vérifie chaque égalité avec cette règle.",
+        "18 et 27 sont dans la table de 3 : $18 \\div 3 = 6$ et $27 \\div 3 = 9$. Donc $\\frac{18}{27} = \\frac{6}{9}$ : l'égalité d est juste.",
+        "Égalité a : 18 a été divisé par 2, mais 27 par 3. Deux diviseurs différents changent la valeur : $\\frac{9}{9} = 1$.",
+        "Égalité b : on a barré des chiffres. Cela ne correspond à aucune division, et $\\frac{8}{7}$ est plus grand que 1.",
+        "Égalité c : on a retiré 3 en haut et en bas. Une soustraction ne garde pas la valeur : $\\frac{15}{24} = \\frac{5}{8}$.",
+        "Remarque : $\\frac{6}{9}$ se simplifie encore par 3 en $\\frac{2}{3}$. L'égalité d est juste quand même : on peut simplifier en plusieurs fois."
+      ],
+      "hint": "Pour chaque égalité, demande-toi : a-t-on divisé le haut et le bas par le même nombre ?",
+      "estimated_duration_s": 150,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 4, 4e : simplifier une fraction."
+    },
+    {
       "id": "EX-C008-D-01",
       "skill_id": "C008",
       "level": "decouverte",
@@ -9550,6 +11190,27 @@
       ],
       "hint": "Tu peux simplifier en plusieurs étapes : d'abord par 2, puis encore par 2, puis par 3.",
       "estimated_duration_s": 75,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 4, 3e : mettre une fraction sous forme irréductible."
+    },
+    {
+      "id": "EX-C008-D-02",
+      "skill_id": "C008",
+      "level": "decouverte",
+      "type": "vrai_faux",
+      "statement": "La fraction $\\frac{21}{25}$ est irréductible.",
+      "image": null,
+      "answer": {
+        "value": true
+      },
+      "solution_steps": [
+        "Une fraction est irréductible quand son numérateur et son dénominateur n'ont aucun diviseur commun autre que 1.",
+        "Diviseurs de 21 : 1, 3, 7 et 21. Diviseurs de 25 : 1, 5 et 25.",
+        "Le seul diviseur commun est 1 : on ne peut pas simplifier. L'affirmation est **vraie**.",
+        "Piège : ni 21 ni 25 n'est un nombre premier, et pourtant la fraction est irréductible. Ce qui compte, c'est un diviseur **commun** aux deux nombres."
+      ],
+      "hint": "Écris la liste des diviseurs de 21, puis celle de 25. Ont-elles un nombre en commun autre que 1 ?",
+      "estimated_duration_s": 60,
       "review_status": "relu_agent",
       "programme_ref": "Cycle 4, 3e : mettre une fraction sous forme irréductible."
     },
@@ -9575,6 +11236,31 @@
       ],
       "hint": "Procède par étapes successives : 2, puis 3, puis 7.",
       "estimated_duration_s": 150,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 4, 3e : rendre irréductible une fraction."
+    },
+    {
+      "id": "EX-C008-E-02",
+      "skill_id": "C008",
+      "level": "entrainement",
+      "type": "texte",
+      "statement": "Écris $\\frac{162}{180}$ sous forme irréductible.\n\nÉcris ta réponse sous la forme numérateur/dénominateur.",
+      "image": null,
+      "answer": {
+        "value": "9/10",
+        "accepted": [
+          "9 / 10"
+        ]
+      },
+      "solution_steps": [
+        "162 et 180 sont pairs : on divise par 2. $\\frac{162}{180} = \\frac{81}{90}$.",
+        "81 et 90 sont dans la table de 9 : $81 \\div 9 = 9$ et $90 \\div 9 = 10$. Donc $\\frac{81}{90} = \\frac{9}{10}$.",
+        "Diviseurs de 9 : 1, 3 et 9. Aucun ne divise 10, sauf 1 : $\\frac{9}{10}$ est irréductible.",
+        "On pouvait aussi diviser directement par 18, car $162 = 9 \\times 18$ et $180 = 10 \\times 18$.",
+        "Piège : s'arrêter à $\\frac{81}{90}$. Cette fraction est simplifiée, mais pas irréductible : 81 et 90 ont encore 9 comme diviseur commun."
+      ],
+      "hint": "Commence par diviser par 2. Ensuite, la somme des chiffres de chaque nombre te dit par quoi continuer.",
+      "estimated_duration_s": 120,
       "review_status": "relu_agent",
       "programme_ref": "Cycle 4, 3e : rendre irréductible une fraction."
     },
@@ -9623,6 +11309,32 @@
       "programme_ref": "Cycle 4, 3e : mettre une fraction sous forme irréductible."
     },
     {
+      "id": "EX-C008-M-02",
+      "skill_id": "C008",
+      "level": "maitrise",
+      "type": "texte",
+      "statement": "Un collège compte 840 élèves, dont 315 demi-pensionnaires.\n\nQuelle fraction des élèves est demi-pensionnaire ? Donne-la sous forme irréductible, avec une barre de fraction.",
+      "image": null,
+      "answer": {
+        "value": "3/8",
+        "accepted": [
+          "3 / 8"
+        ]
+      },
+      "solution_steps": [
+        "315 élèves sur 840 sont demi-pensionnaires : la fraction est $\\frac{315}{840}$.",
+        "315 et 840 se terminent par 5 et par 0 : on divise par 5. $\\frac{315}{840} = \\frac{63}{168}$.",
+        "63 et 168 sont dans la table de 3 (sommes des chiffres : $6 + 3 = 9$ et $1 + 6 + 8 = 15$) : on divise par 3. $\\frac{63}{168} = \\frac{21}{56}$.",
+        "21 et 56 sont dans la table de 7 : on divise par 7. $\\frac{21}{56} = \\frac{3}{8}$.",
+        "3 et 8 n'ont pas d'autre diviseur commun que 1 : $\\frac{3}{8}$ est irréductible.",
+        "Vérification : $3 \\times 105 = 315$ et $8 \\times 105 = 840$. On a divisé en tout par $5 \\times 3 \\times 7 = 105$."
+      ],
+      "hint": "Écris d'abord la fraction : élèves demi-pensionnaires sur élèves en tout. Puis simplifie en plusieurs étapes.",
+      "estimated_duration_s": 180,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 4, 3e : résoudre des problèmes faisant appel à des fractions."
+    },
+    {
       "id": "EX-C009-D-01",
       "skill_id": "C009",
       "level": "decouverte",
@@ -9657,6 +11369,34 @@
       ],
       "hint": "Les parts ont la même taille. Regarde seulement combien on en prend.",
       "estimated_duration_s": 40,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 2, CE1 : comparer des fractions ayant le même dénominateur."
+    },
+    {
+      "id": "EX-C009-D-02",
+      "skill_id": "C009",
+      "level": "decouverte",
+      "type": "texte",
+      "statement": "Les bandes A et B sont pareilles.\n\nQuelle fraction coloriée est la plus grande ? Écris-la avec une barre.",
+      "image": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 354 122\" width=\"354\" height=\"122\" font-family=\"system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif\" role=\"img\"><title>Deux bandes pareilles, A et B, partagées en parts égales, avec des parts coloriées</title><rect width=\"100%\" height=\"100%\" fill=\"#ffffff\"/><rect x=\"40.0\" y=\"14\" width=\"60.0\" height=\"40\" fill=\"#93c5fd\" stroke=\"#334155\" stroke-width=\"1.6\"/><rect x=\"100.0\" y=\"14\" width=\"60.0\" height=\"40\" fill=\"#93c5fd\" stroke=\"#334155\" stroke-width=\"1.6\"/><rect x=\"160.0\" y=\"14\" width=\"60.0\" height=\"40\" fill=\"#93c5fd\" stroke=\"#334155\" stroke-width=\"1.6\"/><rect x=\"220.0\" y=\"14\" width=\"60.0\" height=\"40\" fill=\"#93c5fd\" stroke=\"#334155\" stroke-width=\"1.6\"/><rect x=\"280.0\" y=\"14\" width=\"60.0\" height=\"40\" fill=\"#ffffff\" stroke=\"#334155\" stroke-width=\"1.6\"/><text x=\"22.0\" y=\"39.0\" font-size=\"15\" text-anchor=\"middle\" fill=\"#334155\" font-weight=\"600\">A</text><rect x=\"40.0\" y=\"68\" width=\"60.0\" height=\"40\" fill=\"#93c5fd\" stroke=\"#334155\" stroke-width=\"1.6\"/><rect x=\"100.0\" y=\"68\" width=\"60.0\" height=\"40\" fill=\"#93c5fd\" stroke=\"#334155\" stroke-width=\"1.6\"/><rect x=\"160.0\" y=\"68\" width=\"60.0\" height=\"40\" fill=\"#ffffff\" stroke=\"#334155\" stroke-width=\"1.6\"/><rect x=\"220.0\" y=\"68\" width=\"60.0\" height=\"40\" fill=\"#ffffff\" stroke=\"#334155\" stroke-width=\"1.6\"/><rect x=\"280.0\" y=\"68\" width=\"60.0\" height=\"40\" fill=\"#ffffff\" stroke=\"#334155\" stroke-width=\"1.6\"/><text x=\"22.0\" y=\"93.0\" font-size=\"15\" text-anchor=\"middle\" fill=\"#334155\" font-weight=\"600\">B</text></svg>",
+      "answer": {
+        "value": "4/5",
+        "accepted": [
+          "4 / 5",
+          "4 cinquièmes",
+          "quatre cinquièmes",
+          "4 cinquieme",
+          "quatre cinquieme"
+        ]
+      },
+      "solution_steps": [
+        "Les deux bandes sont partagées en 5 parts égales : ce sont des cinquièmes. Le dénominateur est 5 pour les deux.",
+        "Bande A : 4 parts coloriées, c'est $\\frac{4}{5}$. Bande B : 2 parts coloriées, c'est $\\frac{2}{5}$. Le numérateur compte les parts coloriées.",
+        "Les parts ont toutes la même taille : il suffit de comparer les numérateurs. 4 parts, c'est plus que 2 parts.",
+        "La plus grande fraction coloriée est $\\frac{4}{5}$, celle de la bande A."
+      ],
+      "hint": "Compte les parts de chaque bande, puis les parts coloriées.",
+      "estimated_duration_s": 45,
       "review_status": "relu_agent",
       "programme_ref": "Cycle 2, CE1 : comparer des fractions ayant le même dénominateur."
     },
@@ -9700,6 +11440,44 @@
       "programme_ref": "Cycle 2, CE1 : comparer des fractions ayant le même dénominateur."
     },
     {
+      "id": "EX-C009-E-02",
+      "skill_id": "C009",
+      "level": "entrainement",
+      "type": "qcm",
+      "statement": "Compare $\\frac{9}{10}$ et $\\frac{6}{10}$. Quelle écriture est juste ?",
+      "image": null,
+      "choices": [
+        {
+          "key": "a",
+          "text": "$\\frac{9}{10} < \\frac{6}{10}$",
+          "misconception": "L'élève confond les signes < et > : la pointe du signe doit être tournée vers la plus petite fraction. Ou bien il compare les parts qui restent, 1 et 4, au lieu des parts prises."
+        },
+        {
+          "key": "b",
+          "text": "$\\frac{9}{10} = \\frac{6}{10}$",
+          "misconception": "L'élève voit le même dénominateur et en conclut que les deux fractions sont égales."
+        },
+        {
+          "key": "c",
+          "text": "$\\frac{9}{10} > \\frac{6}{10}$",
+          "misconception": null
+        }
+      ],
+      "answer": {
+        "value": "c"
+      },
+      "solution_steps": [
+        "Les deux fractions ont le même dénominateur 10 : le tout est partagé en 10 parts égales, des dixièmes.",
+        "Le numérateur dit combien de parts on prend : 9 d'un côté, 6 de l'autre.",
+        "9 parts, c'est plus que 6 parts de la même taille : $\\frac{9}{10}$ est plus grand que $\\frac{6}{10}$.",
+        "On écrit $\\frac{9}{10} > \\frac{6}{10}$ : la pointe du signe est tournée vers la plus petite fraction."
+      ],
+      "hint": "Les parts ont la même taille. Compare le nombre de parts, puis vérifie le sens du signe.",
+      "estimated_duration_s": 50,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 2, CE1 : comparer des fractions ayant le même dénominateur."
+    },
+    {
       "id": "EX-C009-M-01",
       "skill_id": "C009",
       "level": "maitrise",
@@ -9721,6 +11499,37 @@
       ],
       "hint": "Même dénominateur : range simplement les numérateurs.",
       "estimated_duration_s": 60,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 2, CE1 : comparer des fractions ayant le même dénominateur."
+    },
+    {
+      "id": "EX-C009-M-02",
+      "skill_id": "C009",
+      "level": "maitrise",
+      "type": "numerique",
+      "statement": "Léo, Inès et Sami ont des tablettes pareilles. Léo en mange $\\frac{6}{8}$, Inès $\\frac{4}{8}$. Sami mange plus qu'Inès, mais moins que Léo.\n\nCombien de huitièmes mange Sami ?",
+      "image": null,
+      "answer": {
+        "value": 5,
+        "accepted": [
+          "5/8",
+          "5 / 8",
+          "5 huitièmes",
+          "cinq",
+          "cinq huitièmes",
+          "5 huitieme",
+          "cinq huitieme"
+        ]
+      },
+      "solution_steps": [
+        "Les trois tablettes sont pareilles et les fractions sont des huitièmes : les parts ont toutes la même taille.",
+        "Léo mange 6 huitièmes, Inès 4 huitièmes. Le dénominateur est le même : on compare les numérateurs.",
+        "Sami mange plus qu'Inès : plus de 4 huitièmes. Il mange moins que Léo : moins de 6 huitièmes.",
+        "Le seul nombre plus grand que 4 et plus petit que 6 est 5 : Sami mange **5 huitièmes**, c'est-à-dire $\\frac{5}{8}$ de sa tablette.",
+        "On peut l'écrire $\\frac{4}{8} < \\frac{5}{8} < \\frac{6}{8}$."
+      ],
+      "hint": "Le dénominateur est le même pour tous. Cherche un numérateur entre celui d'Inès et celui de Léo.",
+      "estimated_duration_s": 90,
       "review_status": "relu_agent",
       "programme_ref": "Cycle 2, CE1 : comparer des fractions ayant le même dénominateur."
     },
@@ -9757,6 +11566,44 @@
         "Comme $10 > 9$, on a $\\frac{2}{3} > \\frac{3}{5}$."
       ],
       "hint": "Réduis les deux fractions au même dénominateur avant de comparer.",
+      "estimated_duration_s": 90,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 4, 5e : comparer des fractions."
+    },
+    {
+      "id": "EX-C010-D-02",
+      "skill_id": "C010",
+      "level": "decouverte",
+      "type": "qcm",
+      "statement": "Compare $\\frac{5}{6}$ et $\\frac{7}{10}$.",
+      "image": null,
+      "choices": [
+        {
+          "key": "a",
+          "text": "$\\frac{5}{6} < \\frac{7}{10}$",
+          "misconception": "L'élève compare les nombres sans réduire au même dénominateur : 7 est plus grand que 5 et 10 plus grand que 6, il croit donc que 7/10 est la plus grande."
+        },
+        {
+          "key": "b",
+          "text": "On ne peut pas les comparer : les dénominateurs sont différents",
+          "misconception": "L'élève croit qu'une comparaison exige le même dénominateur dès le départ, sans penser qu'on peut en fabriquer un."
+        },
+        {
+          "key": "c",
+          "text": "$\\frac{5}{6} > \\frac{7}{10}$",
+          "misconception": null
+        }
+      ],
+      "answer": {
+        "value": "c"
+      },
+      "solution_steps": [
+        "Les dénominateurs sont différents : on cherche un nombre à la fois dans la table de 6 et dans la table de 10. Multiples de 10 : 10, 20, **30**… et $6 \\times 5 = 30$.",
+        "$\\frac{5}{6} = \\frac{5 \\times 5}{6 \\times 5} = \\frac{25}{30}$ et $\\frac{7}{10} = \\frac{7 \\times 3}{10 \\times 3} = \\frac{21}{30}$.",
+        "Les deux fractions sont alors des trentièmes : on compare les numérateurs, $25 > 21$.",
+        "Donc $\\frac{5}{6} > \\frac{7}{10}$."
+      ],
+      "hint": "Cherche un nombre qui est à la fois dans la table de 6 et dans la table de 10.",
       "estimated_duration_s": 90,
       "review_status": "relu_agent",
       "programme_ref": "Cycle 4, 5e : comparer des fractions."
@@ -9800,6 +11647,31 @@
       "programme_ref": "Cycle 4, 5e : comparer deux fractions : 8/12 et 8/21."
     },
     {
+      "id": "EX-C010-E-02",
+      "skill_id": "C010",
+      "level": "entrainement",
+      "type": "texte",
+      "statement": "Quelle est la plus grande de ces trois fractions ?\n\n$\\frac{13}{20}$, $\\frac{7}{10}$, $\\frac{3}{5}$\n\nÉcris-la sous la forme numérateur/dénominateur.",
+      "image": null,
+      "answer": {
+        "value": "7/10",
+        "accepted": [
+          "7 / 10"
+        ]
+      },
+      "solution_steps": [
+        "Les dénominateurs 20, 10 et 5 divisent tous 20 : on écrit les trois fractions en vingtièmes.",
+        "$\\frac{7}{10} = \\frac{7 \\times 2}{10 \\times 2} = \\frac{14}{20}$ et $\\frac{3}{5} = \\frac{3 \\times 4}{5 \\times 4} = \\frac{12}{20}$ ; $\\frac{13}{20}$ ne change pas.",
+        "On compare les numérateurs : $14 > 13 > 12$.",
+        "La plus grande est $\\frac{7}{10}$.",
+        "Piège : $\\frac{13}{20}$ s'écrit avec les plus grands nombres, mais ses parts sont des vingtièmes, deux fois plus petites que des dixièmes."
+      ],
+      "hint": "Écris les trois fractions avec le même dénominateur : lequel convient pour les trois ?",
+      "estimated_duration_s": 120,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 4, 5e : comparer des fractions."
+    },
+    {
       "id": "EX-C010-M-01",
       "skill_id": "C010",
       "level": "maitrise",
@@ -9827,6 +11699,44 @@
       "programme_ref": "Cycle 4, 5e : comparer des fractions (automatismes : 3/4 et 7/18)."
     },
     {
+      "id": "EX-C010-M-02",
+      "skill_id": "C010",
+      "level": "maitrise",
+      "type": "qcm",
+      "statement": "Au club de Lina, 14 adhérents sur 20 sont des filles. Au club de Malo, 9 adhérents sur 12 sont des filles.\n\nDans quel club la part des filles est-elle la plus grande ?",
+      "image": null,
+      "choices": [
+        {
+          "key": "a",
+          "text": "Au club de Lina",
+          "misconception": "L'élève compare le nombre de filles, 14 contre 9, sans tenir compte du nombre total d'adhérents : il compare des effectifs, pas des fractions."
+        },
+        {
+          "key": "b",
+          "text": "Au club de Malo",
+          "misconception": null
+        },
+        {
+          "key": "c",
+          "text": "On ne peut pas comparer : les clubs n'ont pas le même nombre d'adhérents",
+          "misconception": "L'élève croit que deux fractions de dénominateurs différents ne se comparent pas. Ce sont justement les fractions qui permettent de comparer des groupes de tailles différentes."
+        }
+      ],
+      "answer": {
+        "value": "b"
+      },
+      "solution_steps": [
+        "La part des filles est une fraction : $\\frac{14}{20}$ au club de Lina, $\\frac{9}{12}$ au club de Malo.",
+        "On cherche un dénominateur commun. Multiples de 20 : 20, 40, **60**… 60 est aussi dans la table de 12 : $20 \\times 3 = 60$ et $12 \\times 5 = 60$.",
+        "$\\frac{14}{20} = \\frac{14 \\times 3}{20 \\times 3} = \\frac{42}{60}$ et $\\frac{9}{12} = \\frac{9 \\times 5}{12 \\times 5} = \\frac{45}{60}$.",
+        "$45 > 42$ : la part des filles est plus grande au club de **Malo**, même s'il y a moins de filles."
+      ],
+      "hint": "Écris la part des filles de chaque club sous forme de fraction, puis compare ces deux fractions.",
+      "estimated_duration_s": 180,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 4, 5e : comparer des fractions."
+    },
+    {
       "id": "EX-C011-D-01",
       "skill_id": "C011",
       "level": "decouverte",
@@ -9846,6 +11756,49 @@
       "estimated_duration_s": 60,
       "review_status": "relu_agent",
       "programme_ref": "Cycle 4 : trouver un dénominateur commun à deux fractions pour les additionner, les soustraire ou les comparer."
+    },
+    {
+      "id": "EX-C011-D-02",
+      "skill_id": "C011",
+      "level": "decouverte",
+      "type": "qcm",
+      "statement": "Quel est le plus petit dénominateur commun à $\\frac{5}{6}$ et $\\frac{2}{9}$ ?",
+      "image": null,
+      "choices": [
+        {
+          "key": "a",
+          "text": "54",
+          "misconception": "L'élève multiplie les deux dénominateurs : 54 est bien un dénominateur commun, mais pas le plus petit, car 6 et 9 sont tous les deux dans la table de 3."
+        },
+        {
+          "key": "b",
+          "text": "15",
+          "misconception": "L'élève additionne les dénominateurs : 15 n'est même pas dans la table de 6."
+        },
+        {
+          "key": "c",
+          "text": "18",
+          "misconception": null
+        },
+        {
+          "key": "d",
+          "text": "9",
+          "misconception": "L'élève prend le plus grand dénominateur, comme si 9 était un multiple de 6 ; or 9 n'est pas dans la table de 6."
+        }
+      ],
+      "answer": {
+        "value": "c"
+      },
+      "solution_steps": [
+        "On cherche le plus petit nombre qui est à la fois dans la table de 6 et dans la table de 9.",
+        "Table de 6 : 6, 12, **18**, 24, 30, 36…",
+        "Table de 9 : 9, **18**, 27, 36…",
+        "Le plus petit commun est **18**. Le produit $6 \\times 9 = 54$ est aussi un dénominateur commun, mais il n'est pas le plus petit."
+      ],
+      "hint": "Écris les premiers multiples de 9, et cherche le premier qui est aussi dans la table de 6.",
+      "estimated_duration_s": 60,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 4, 5e : additionner et soustraire des fractions de dénominateurs quelconques."
     },
     {
       "id": "EX-C011-E-01",
@@ -9869,6 +11822,36 @@
       ],
       "hint": "Par combien faut-il multiplier 4 pour obtenir 12 ? Et 3 ?",
       "estimated_duration_s": 90,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 4, 5e : additionner et soustraire des fractions de dénominateurs quelconques."
+    },
+    {
+      "id": "EX-C011-E-02",
+      "skill_id": "C011",
+      "level": "entrainement",
+      "type": "texte",
+      "statement": "Réduis $\\frac{3}{10}$ et $\\frac{7}{15}$ au plus petit dénominateur commun.\n\nÉcris les deux fractions obtenues dans cet ordre, séparées par une virgule, sous la forme numérateur/dénominateur.",
+      "image": null,
+      "answer": {
+        "value": "9/30, 14/30",
+        "accepted": [
+          "9/30,14/30",
+          "9/30 ; 14/30",
+          "9/30;14/30",
+          "9/30 et 14/30",
+          "9/30 14/30",
+          "9 / 30, 14 / 30"
+        ]
+      },
+      "solution_steps": [
+        "Multiples de 15 : 15, **30**, 45… 30 est aussi dans la table de 10 : le plus petit dénominateur commun est 30.",
+        "$\\frac{3}{10} = \\frac{3 \\times 3}{10 \\times 3} = \\frac{9}{30}$.",
+        "$\\frac{7}{15} = \\frac{7 \\times 2}{15 \\times 2} = \\frac{14}{30}$.",
+        "On multiplie toujours le numérateur et le dénominateur par le même nombre : la valeur de chaque fraction ne change pas.",
+        "Piège : le produit $10 \\times 15 = 150$ est aussi un dénominateur commun, mais ce n'est pas le plus petit."
+      ],
+      "hint": "Cherche le premier multiple de 15 qui est aussi dans la table de 10.",
+      "estimated_duration_s": 120,
       "review_status": "relu_agent",
       "programme_ref": "Cycle 4, 5e : additionner et soustraire des fractions de dénominateurs quelconques."
     },
@@ -9898,6 +11881,31 @@
       "programme_ref": "Cycle 4, 5e : addition et soustraction de fractions simples, dont 2/5 + 1/4."
     },
     {
+      "id": "EX-C011-M-02",
+      "skill_id": "C011",
+      "level": "maitrise",
+      "type": "texte",
+      "statement": "Dans un jardin, les légumes occupent $\\frac{2}{7}$ de la surface et les fleurs $\\frac{1}{3}$. Le reste est en pelouse.\n\nQuelle fraction du jardin est en pelouse ? Écris-la sous la forme numérateur/dénominateur.",
+      "image": null,
+      "answer": {
+        "value": "8/21",
+        "accepted": [
+          "8 / 21"
+        ]
+      },
+      "solution_steps": [
+        "Légumes et fleurs ensemble : $\\frac{2}{7} + \\frac{1}{3}$. Les dénominateurs sont différents : il faut un dénominateur commun.",
+        "Table de 7 : 7, 14, **21**… 21 est aussi dans la table de 3 : le dénominateur commun est 21.",
+        "$\\frac{2}{7} = \\frac{6}{21}$ et $\\frac{1}{3} = \\frac{7}{21}$. Légumes et fleurs occupent donc $\\frac{6}{21} + \\frac{7}{21} = \\frac{13}{21}$ du jardin.",
+        "Le jardin entier vaut $\\frac{21}{21}$. La pelouse occupe le reste : $\\frac{21}{21} - \\frac{13}{21} = \\frac{8}{21}$.",
+        "Vérification : $\\frac{6}{21} + \\frac{7}{21} + \\frac{8}{21} = \\frac{21}{21} = 1$, tout le jardin."
+      ],
+      "hint": "Calcule d'abord la part occupée par les légumes et les fleurs ensemble. Le jardin entier, c'est 1.",
+      "estimated_duration_s": 180,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 4, 5e : résoudre des problèmes avec des additions et soustractions de fractions."
+    },
+    {
       "id": "EX-C012-D-01",
       "skill_id": "C012",
       "level": "decouverte",
@@ -9918,6 +11926,49 @@
       ],
       "hint": "Un cinquième plus deux cinquièmes, cela fait combien de cinquièmes ?",
       "estimated_duration_s": 45,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 2, CE1 : additionner et soustraire des fractions de même dénominateur."
+    },
+    {
+      "id": "EX-C012-D-02",
+      "skill_id": "C012",
+      "level": "decouverte",
+      "type": "qcm",
+      "statement": "Léo a mangé la partie coloriée de la pizza, puis $\\frac{2}{4}$ de la pizza.\n\nQuelle fraction de la pizza a-t-il mangée en tout ?",
+      "image": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 180 180\" width=\"180\" height=\"180\" font-family=\"system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif\" role=\"img\"><title>Pizza partagée en parts égales, dont une partie coloriée</title><rect width=\"100%\" height=\"100%\" fill=\"#ffffff\"/><path d=\"M90,90 L90.00,16.00 A74,74 0 0 1 164.00,90.00 Z\" fill=\"#93c5fd\" stroke=\"#334155\" stroke-width=\"1.6\"/><path d=\"M90,90 L164.00,90.00 A74,74 0 0 1 90.00,164.00 Z\" fill=\"#ffffff\" stroke=\"#334155\" stroke-width=\"1.6\"/><path d=\"M90,90 L90.00,164.00 A74,74 0 0 1 16.00,90.00 Z\" fill=\"#ffffff\" stroke=\"#334155\" stroke-width=\"1.6\"/><path d=\"M90,90 L16.00,90.00 A74,74 0 0 1 90.00,16.00 Z\" fill=\"#ffffff\" stroke=\"#334155\" stroke-width=\"1.6\"/></svg>",
+      "choices": [
+        {
+          "key": "a",
+          "text": "$\\frac{3}{8}$",
+          "misconception": "L'élève additionne les numérateurs et aussi les dénominateurs. Or ce sont des quarts de la même pizza : les parts gardent leur taille, le dénominateur ne change pas."
+        },
+        {
+          "key": "b",
+          "text": "$\\frac{1}{4}$",
+          "misconception": "L'élève ne lit que la figure : il oublie d'ajouter les deux quarts mangés ensuite."
+        },
+        {
+          "key": "c",
+          "text": "$\\frac{2}{4}$",
+          "misconception": "L'élève ne garde que la fraction écrite dans l'énoncé et oublie la partie coloriée de la figure."
+        },
+        {
+          "key": "d",
+          "text": "$\\frac{3}{4}$",
+          "misconception": null
+        }
+      ],
+      "answer": {
+        "value": "d"
+      },
+      "solution_steps": [
+        "On compte les parts de la pizza : 4 parts égales, des quarts. Une part est coloriée : Léo a d'abord mangé $\\frac{1}{4}$ de la pizza.",
+        "Il mange ensuite $\\frac{2}{4}$ : on ajoute des quarts à des quarts, $\\frac{1}{4} + \\frac{2}{4}$.",
+        "Un quart plus deux quarts, cela fait trois quarts : on additionne les numérateurs, $1 + 2 = 3$. Le dénominateur reste 4, car les parts gardent la même taille.",
+        "Léo a mangé $\\frac{3}{4}$ de la pizza en tout."
+      ],
+      "hint": "Écris d'abord la fraction coloriée. Puis ajoute des quarts à des quarts.",
+      "estimated_duration_s": 50,
       "review_status": "relu_agent",
       "programme_ref": "Cycle 2, CE1 : additionner et soustraire des fractions de même dénominateur."
     },
@@ -9946,6 +11997,35 @@
       "programme_ref": "Cycle 2, CE1 : l'élève sait calculer 2/3 - 1/3 ou 1/5 + 2/5."
     },
     {
+      "id": "EX-C012-E-02",
+      "skill_id": "C012",
+      "level": "entrainement",
+      "type": "texte",
+      "statement": "Il y a $\\frac{7}{8}$ d'une tarte. Tom mange $\\frac{2}{8}$ de la tarte.\n\nQuelle fraction de la tarte reste-t-il ? Écris-la avec une barre.",
+      "image": null,
+      "answer": {
+        "value": "5/8",
+        "accepted": [
+          "5 / 8",
+          "5 huitièmes",
+          "cinq huitièmes",
+          "5 huitieme",
+          "cinq huitieme"
+        ]
+      },
+      "solution_steps": [
+        "Les deux fractions sont des huitièmes de la même tarte : les parts ont la même taille.",
+        "Il y avait 7 parts, Tom en mange 2 : on soustrait les numérateurs, $7 - 2 = 5$.",
+        "Le dénominateur ne change pas : il reste 8, car la tarte est toujours partagée en 8 parts égales.",
+        "Il reste $\\frac{7}{8} - \\frac{2}{8} = \\frac{5}{8}$ de la tarte : sept huitièmes moins deux huitièmes, cela fait cinq huitièmes.",
+        "Piège : soustraire aussi les dénominateurs donnerait $8 - 8 = 0$ part dans le tout, ce qui n'a pas de sens."
+      ],
+      "hint": "Combien de huitièmes y avait-il, et combien Tom en mange-t-il ?",
+      "estimated_duration_s": 60,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 2, CE1 : additionner et soustraire des fractions de même dénominateur."
+    },
+    {
       "id": "EX-C012-M-01",
       "skill_id": "C012",
       "level": "maitrise",
@@ -9966,6 +12046,44 @@
       ],
       "hint": "Le tout vaut 10 dixièmes. Combien en reste-t-il après en avoir pris 3 ?",
       "estimated_duration_s": 90,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 2, CE1 : l'élève sait trouver le complément d'une fraction d'un tout par rapport à ce tout."
+    },
+    {
+      "id": "EX-C012-M-02",
+      "skill_id": "C012",
+      "level": "maitrise",
+      "type": "qcm",
+      "statement": "Léa mange $\\frac{1}{8}$ d'un gâteau. Hugo mange $\\frac{5}{8}$ du même gâteau.\n\nQuelle fraction du gâteau reste-t-il ?",
+      "image": null,
+      "choices": [
+        {
+          "key": "a",
+          "text": "$\\frac{6}{8}$",
+          "misconception": "L'élève calcule bien la part mangée, 1/8 + 5/8 = 6/8, mais s'arrête là : la question porte sur ce qui reste."
+        },
+        {
+          "key": "b",
+          "text": "$\\frac{2}{8}$",
+          "misconception": null
+        },
+        {
+          "key": "c",
+          "text": "$\\frac{4}{8}$",
+          "misconception": "L'élève soustrait les deux fractions de l'énoncé, 5/8 − 1/8 : il calcule combien Hugo a mangé de plus que Léa, pas ce qui reste."
+        }
+      ],
+      "answer": {
+        "value": "b"
+      },
+      "solution_steps": [
+        "Le gâteau entier est partagé en 8 parts égales : le tout vaut $\\frac{8}{8}$.",
+        "Léa et Hugo mangent dans le même gâteau. Ensemble : $\\frac{1}{8} + \\frac{5}{8} = \\frac{6}{8}$. On additionne les numérateurs, le dénominateur reste 8.",
+        "Ce qui reste, c'est le tout moins la part mangée : $\\frac{8}{8} - \\frac{6}{8} = \\frac{2}{8}$.",
+        "Il reste $\\frac{2}{8}$ du gâteau, deux parts."
+      ],
+      "hint": "Calcule d'abord la part mangée par les deux enfants. Le gâteau entier, c'est huit huitièmes.",
+      "estimated_duration_s": 100,
       "review_status": "relu_agent",
       "programme_ref": "Cycle 2, CE1 : l'élève sait trouver le complément d'une fraction d'un tout par rapport à ce tout."
     },

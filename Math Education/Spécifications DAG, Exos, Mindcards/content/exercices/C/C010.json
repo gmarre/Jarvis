@@ -37,6 +37,44 @@
     "programme_ref": "Cycle 4, 5e : comparer des fractions."
   },
   {
+    "id": "EX-C010-D-02",
+    "skill_id": "C010",
+    "level": "decouverte",
+    "type": "qcm",
+    "statement": "Compare $\\frac{5}{6}$ et $\\frac{7}{10}$.",
+    "image": null,
+    "choices": [
+      {
+        "key": "a",
+        "text": "$\\frac{5}{6} < \\frac{7}{10}$",
+        "misconception": "L'élève compare les nombres sans réduire au même dénominateur : 7 est plus grand que 5 et 10 plus grand que 6, il croit donc que 7/10 est la plus grande."
+      },
+      {
+        "key": "b",
+        "text": "On ne peut pas les comparer : les dénominateurs sont différents",
+        "misconception": "L'élève croit qu'une comparaison exige le même dénominateur dès le départ, sans penser qu'on peut en fabriquer un."
+      },
+      {
+        "key": "c",
+        "text": "$\\frac{5}{6} > \\frac{7}{10}$",
+        "misconception": null
+      }
+    ],
+    "answer": {
+      "value": "c"
+    },
+    "solution_steps": [
+      "Les dénominateurs sont différents : on cherche un nombre à la fois dans la table de 6 et dans la table de 10. Multiples de 10 : 10, 20, **30**… et $6 \\times 5 = 30$.",
+      "$\\frac{5}{6} = \\frac{5 \\times 5}{6 \\times 5} = \\frac{25}{30}$ et $\\frac{7}{10} = \\frac{7 \\times 3}{10 \\times 3} = \\frac{21}{30}$.",
+      "Les deux fractions sont alors des trentièmes : on compare les numérateurs, $25 > 21$.",
+      "Donc $\\frac{5}{6} > \\frac{7}{10}$."
+    ],
+    "hint": "Cherche un nombre qui est à la fois dans la table de 6 et dans la table de 10.",
+    "estimated_duration_s": 90,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, 5e : comparer des fractions."
+  },
+  {
     "id": "EX-C010-E-01",
     "skill_id": "C010",
     "level": "entrainement",
@@ -75,6 +113,31 @@
     "programme_ref": "Cycle 4, 5e : comparer deux fractions : 8/12 et 8/21."
   },
   {
+    "id": "EX-C010-E-02",
+    "skill_id": "C010",
+    "level": "entrainement",
+    "type": "texte",
+    "statement": "Quelle est la plus grande de ces trois fractions ?\n\n$\\frac{13}{20}$, $\\frac{7}{10}$, $\\frac{3}{5}$\n\nÉcris-la sous la forme numérateur/dénominateur.",
+    "image": null,
+    "answer": {
+      "value": "7/10",
+      "accepted": [
+        "7 / 10"
+      ]
+    },
+    "solution_steps": [
+      "Les dénominateurs 20, 10 et 5 divisent tous 20 : on écrit les trois fractions en vingtièmes.",
+      "$\\frac{7}{10} = \\frac{7 \\times 2}{10 \\times 2} = \\frac{14}{20}$ et $\\frac{3}{5} = \\frac{3 \\times 4}{5 \\times 4} = \\frac{12}{20}$ ; $\\frac{13}{20}$ ne change pas.",
+      "On compare les numérateurs : $14 > 13 > 12$.",
+      "La plus grande est $\\frac{7}{10}$.",
+      "Piège : $\\frac{13}{20}$ s'écrit avec les plus grands nombres, mais ses parts sont des vingtièmes, deux fois plus petites que des dixièmes."
+    ],
+    "hint": "Écris les trois fractions avec le même dénominateur : lequel convient pour les trois ?",
+    "estimated_duration_s": 120,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, 5e : comparer des fractions."
+  },
+  {
     "id": "EX-C010-M-01",
     "skill_id": "C010",
     "level": "maitrise",
@@ -100,5 +163,43 @@
     "estimated_duration_s": 180,
     "review_status": "relu_agent",
     "programme_ref": "Cycle 4, 5e : comparer des fractions (automatismes : 3/4 et 7/18)."
+  },
+  {
+    "id": "EX-C010-M-02",
+    "skill_id": "C010",
+    "level": "maitrise",
+    "type": "qcm",
+    "statement": "Au club de Lina, 14 adhérents sur 20 sont des filles. Au club de Malo, 9 adhérents sur 12 sont des filles.\n\nDans quel club la part des filles est-elle la plus grande ?",
+    "image": null,
+    "choices": [
+      {
+        "key": "a",
+        "text": "Au club de Lina",
+        "misconception": "L'élève compare le nombre de filles, 14 contre 9, sans tenir compte du nombre total d'adhérents : il compare des effectifs, pas des fractions."
+      },
+      {
+        "key": "b",
+        "text": "Au club de Malo",
+        "misconception": null
+      },
+      {
+        "key": "c",
+        "text": "On ne peut pas comparer : les clubs n'ont pas le même nombre d'adhérents",
+        "misconception": "L'élève croit que deux fractions de dénominateurs différents ne se comparent pas. Ce sont justement les fractions qui permettent de comparer des groupes de tailles différentes."
+      }
+    ],
+    "answer": {
+      "value": "b"
+    },
+    "solution_steps": [
+      "La part des filles est une fraction : $\\frac{14}{20}$ au club de Lina, $\\frac{9}{12}$ au club de Malo.",
+      "On cherche un dénominateur commun. Multiples de 20 : 20, 40, **60**… 60 est aussi dans la table de 12 : $20 \\times 3 = 60$ et $12 \\times 5 = 60$.",
+      "$\\frac{14}{20} = \\frac{14 \\times 3}{20 \\times 3} = \\frac{42}{60}$ et $\\frac{9}{12} = \\frac{9 \\times 5}{12 \\times 5} = \\frac{45}{60}$.",
+      "$45 > 42$ : la part des filles est plus grande au club de **Malo**, même s'il y a moins de filles."
+    ],
+    "hint": "Écris la part des filles de chaque club sous forme de fraction, puis compare ces deux fractions.",
+    "estimated_duration_s": 180,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, 5e : comparer des fractions."
   }
 ]

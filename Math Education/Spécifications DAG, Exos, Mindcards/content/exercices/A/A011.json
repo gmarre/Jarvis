@@ -38,6 +38,26 @@
     "programme_ref": "Cycle 2, CE1 : l'élève sait dire si un nombre est pair ou impair."
   },
   {
+    "id": "EX-A011-D-02",
+    "skill_id": "A011",
+    "level": "decouverte",
+    "type": "vrai_faux",
+    "statement": "17 enfants se mettent deux par deux. Chaque enfant trouve un camarade.",
+    "image": null,
+    "answer": {
+      "value": false
+    },
+    "solution_steps": [
+      "On forme des paires en comptant de 2 en 2 : 2, 4, 6, 8, 10, 12, 14, 16. Avec 8 paires, 16 enfants sont placés.",
+      "Il reste 1 enfant tout seul : 17 enfants ne se rangent pas tous par paires.",
+      "17 est un nombre **impair** : il se termine par 7. L'affirmation est **fausse**."
+    ],
+    "hint": "Compte les enfants de 2 en 2.",
+    "estimated_duration_s": 40,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 2, CE1, Les quatre opérations : « Connaitre la notion de parité d'un nombre. »"
+  },
+  {
     "id": "EX-A011-E-01",
     "skill_id": "A011",
     "level": "entrainement",
@@ -57,6 +77,44 @@
     "estimated_duration_s": 30,
     "review_status": "relu_agent",
     "programme_ref": "Cycle 2, CE1 : l'élève sait dire si un nombre est pair ou impair."
+  },
+  {
+    "id": "EX-A011-E-02",
+    "skill_id": "A011",
+    "level": "entrainement",
+    "type": "qcm",
+    "statement": "Lequel de ces nombres est **impair** ?",
+    "image": null,
+    "choices": [
+      {
+        "key": "a",
+        "text": "742",
+        "misconception": "L'élève regarde le premier chiffre, 7, qui est impair. Mais c'est le chiffre des unités qui décide : 742 se termine par 2, il est pair."
+      },
+      {
+        "key": "b",
+        "text": "390",
+        "misconception": "L'élève regarde les chiffres 3 et 9, impairs, au lieu du chiffre des unités. 390 se termine par 0 : il est pair, comme 10, 20 ou 30."
+      },
+      {
+        "key": "c",
+        "text": "873",
+        "misconception": null
+      }
+    ],
+    "answer": {
+      "value": "c"
+    },
+    "solution_steps": [
+      "Pour savoir si un nombre est pair ou impair, on regarde seulement son chiffre des unités.",
+      "742 se termine par 2 : pair. 390 se termine par 0 : pair.",
+      "873 se termine par 3 : **impair**.",
+      "Les autres chiffres ne comptent pas : 742 commence par 7, et il est pair quand même."
+    ],
+    "hint": "Quel est le dernier chiffre de chaque nombre ?",
+    "estimated_duration_s": 40,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 2, CE1, Les quatre opérations : « L'élève sait dire si un nombre est pair ou impair. »"
   },
   {
     "id": "EX-A011-M-01",
@@ -83,5 +141,31 @@
     "estimated_duration_s": 90,
     "review_status": "relu_agent",
     "programme_ref": "Cycle 2, CE1 : l'élève sait donner tous les nombres pairs compris en 767 et 778."
+  },
+  {
+    "id": "EX-A011-M-02",
+    "skill_id": "A011",
+    "level": "maitrise",
+    "type": "numerique",
+    "statement": "Avec les chiffres 6, 3 et 8, chacun une seule fois, on peut écrire six nombres de trois chiffres.\n\nCombien sont pairs ?",
+    "image": null,
+    "answer": {
+      "value": 4,
+      "accepted": [
+        "4 nombres",
+        "4 nombres pairs",
+        "4 nombre"
+      ]
+    },
+    "solution_steps": [
+      "Un nombre est pair quand son chiffre des unités est 0, 2, 4, 6 ou 8. Ici, il doit donc se terminer par 6 ou par 8.",
+      "Terminés par 6 : 386 et 836. Terminés par 8 : 368 et 638.",
+      "Les nombres terminés par 3, 683 et 863, sont impairs.",
+      "Il y a **4** nombres pairs."
+    ],
+    "hint": "Le chiffre des unités décide. Lesquels de 6, 3 et 8 peuvent aller à la fin ?",
+    "estimated_duration_s": 120,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 2, CE1, Les quatre opérations : « Connaitre la notion de parité d'un nombre. »"
   }
 ]

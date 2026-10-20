@@ -18,6 +18,20 @@ Compte les jetons : ● ● ● ● ● ● ● Combien y a-t-il de jetons ?
 
 *Indice.* Pose ton doigt sur chaque jeton, un par un, sans en oublier ni en compter deux fois.
 
+**EX-A001-D-02** — decouverte, qcm, 30 s
+
+Quelle rangée a cinq jetons ?
+
+- **a.** ● ● ● ●
+  <br>*Erreur visée :* L'élève dit deux nombres en montrant le même jeton : il arrive à « cinq » au bout de la rangée alors qu'elle n'a que 4 jetons.
+- **b.** ● ● ● ● ● ✅
+- **c.** ● ● ● ● ● ●
+  <br>*Erreur visée :* L'élève saute un jeton en comptant : il dit « cinq » sur le dernier jeton alors que la rangée en a 6.
+
+*Corrigé.* (1) On compte chaque rangée en touchant chaque jeton une seule fois. (2) Première rangée : 1, 2, 3, 4. Elle a 4 jetons, il en manque un. (3) Deuxième rangée : 1, 2, 3, 4, 5. Elle a cinq jetons : c'est la bonne. (4) Troisième rangée : 1, 2, 3, 4, 5, 6. Elle a 6 jetons, un de trop.
+
+*Indice.* Compte chaque rangée en posant ton doigt sur les jetons, un par un.
+
 **EX-A001-E-01** — entrainement, numerique, 20 s
 
 Quel nombre vient juste après 8 ?
@@ -28,6 +42,16 @@ Quel nombre vient juste après 8 ?
 
 *Indice.* Récite la suite des nombres à partir de 1 et arrête-toi juste après 8.
 
+**EX-A001-E-02** — entrainement, numerique, 45 s
+
+Compte seulement les ronds noirs : ● ○ ● ● ○ ● ○ ● ● ○ ● ○ ● Combien y en a-t-il ?
+
+**Réponse :** 8
+
+*Corrigé.* (1) On ne compte que les ronds noirs : on saute les ronds blancs sans dire de nombre. (2) On touche chaque rond noir une seule fois, de gauche à droite : 1, 2, 3, 4, 5, 6, 7, 8. (3) Le dernier nombre dit donne la quantité : il y a 8 ronds noirs. (4) Erreur à éviter : compter les ronds blancs avec les noirs. On trouverait trop de ronds.
+
+*Indice.* Pose ton doigt sur chaque rond noir, un par un, et saute les ronds blancs.
+
 **EX-A001-M-01** — maitrise, vrai_faux, 60 s
 
 Léa a 8 billes. Elle les recompte en commençant par une autre bille. Elle trouve encore 8 billes.
@@ -37,6 +61,16 @@ Léa a 8 billes. Elle les recompte en commençant par une autre bille. Elle trou
 *Corrigé.* (1) Compter, c'est associer un nombre à chaque objet, une seule fois, sans en oublier aucun. (2) Le dernier nombre prononcé donne la quantité totale. (3) Cette quantité ne dépend pas de l'ordre dans lequel on compte : Léa n'a ni ajouté ni enlevé de bille. (4) Elle retrouvera donc 8 billes. L'affirmation est vraie.
 
 *Indice.* Léa a-t-elle ajouté ou enlevé des billes ?
+
+**EX-A001-M-02** — maitrise, numerique, 60 s
+
+Nina a compté jusqu'à sept. Il reste : ● ● ● Quel nombre dit-elle sur le dernier jeton ?
+
+**Réponse :** 10
+
+*Corrigé.* (1) Nina a déjà compté sept jetons : elle continue, sans repartir de 1. (2) On continue la suite des nombres à partir de sept, en touchant chaque jeton qui reste : huit, neuf, dix. (3) Le dernier nombre dit donne la quantité : Nina a 10 jetons en tout. (4) Erreur à éviter : répondre 3, c'est le nombre de jetons qui restent, pas le nombre dit à la fin.
+
+*Indice.* Ne recommence pas à 1 : continue à compter après sept, un jeton à la fois.
 
 ---
 
@@ -57,6 +91,16 @@ Léa a 8 billes. Elle les recompte en commençant par une autre bille. Elle trou
 
 *Indice.* Combien de dizaines ? Combien d'unités ?
 
+**EX-A002-D-02** — decouverte, numerique, 35 s
+
+Lina a 5 boîtes de 10 œufs et 3 œufs seuls. Combien d'œufs a-t-elle ?
+
+**Réponse :** 53
+
+*Corrigé.* (1) Chaque boîte contient 10 œufs : 5 boîtes, c'est 5 dizaines d'œufs. (2) On compte les boîtes de dix en dix : 10, 20, 30, 40, 50. (3) On continue avec les 3 œufs seuls, un par un : 51, 52, 53. (4) Lina a 53 œufs : 5 dizaines et 3 unités. (5) Erreur à éviter : répondre 8, en comptant chaque boîte comme un seul œuf.
+
+*Indice.* Compte les boîtes de dix en dix, puis les œufs seuls un par un.
+
 **EX-A002-E-01** — entrainement, numerique, 30 s
 
 Quel nombre vient juste après 69 ?
@@ -66,6 +110,16 @@ Quel nombre vient juste après 69 ?
 *Corrigé.* (1) 69, c'est 6 dizaines et 9 unités. (2) En ajoutant 1 unité, on complète une dizaine : 6 dizaines + 1 dizaine = 7 dizaines. (3) Le nombre suivant est donc 70.
 
 *Indice.* Attention au changement de dizaine.
+
+**EX-A002-E-02** — entrainement, numerique, 45 s
+
+Quel nombre est repéré par le point A ?
+
+**Réponse :** 57
+
+*Corrigé.* (1) La demi-droite est graduée de un en un : d'un trait au suivant, on avance de 1. De 50 à 60, il y a bien 10 pas. (2) On part du trait de 50 et on avance trait par trait jusqu'au point A : 51, 52, 53, 54, 55, 56, 57. (3) Le point A repère le nombre 57. (4) Erreur à éviter : dire « 51 » sur le trait de 50. On compterait un trait de trop et on trouverait 58.
+
+*Indice.* Pars du trait de 50 et avance d'un trait à la fois jusqu'au point A.
 
 **EX-A002-M-01** — maitrise, qcm, 45 s
 
@@ -80,6 +134,20 @@ Quel nombre s'écrit quatre-vingt-treize ?
 *Corrigé.* (1) « Quatre-vingt » désigne le nombre 80. (2) On y ajoute « treize », soit 13 : 80 + 13 = 93. (3) La réponse est 93.
 
 *Indice.* « Quatre-vingt » n'est pas 4 puis 20 : c'est un seul nombre, 80.
+
+**EX-A002-M-02** — maitrise, qcm, 60 s
+
+Léo a 4 paquets de 10 cartes et 12 cartes seules. Combien a-t-il de cartes ?
+
+- **a.** 16
+  <br>*Erreur visée :* L'élève compte chaque paquet comme une seule carte : 4 et 12 font 16. Mais un paquet contient 10 cartes.
+- **b.** 42
+  <br>*Erreur visée :* L'élève écrit 4 pour les dizaines et garde seulement le 2 de 12 : il oublie que les 12 cartes seules contiennent une dizaine de plus.
+- **c.** 52 ✅
+
+*Corrigé.* (1) Les 4 paquets de 10 font 4 dizaines. (2) Avec les 12 cartes seules, on peut faire un paquet de plus : 10 cartes, et il en reste 2. (3) Léo a donc 5 paquets de 10 et 2 cartes seules : 5 dizaines et 2 unités. (4) On compte de dix en dix, puis de un en un : 10, 20, 30, 40, 50, 51, 52. Léo a 52 cartes.
+
+*Indice.* Avec les 12 cartes seules, peux-tu faire un nouveau paquet de 10 ?
 
 ---
 
@@ -1425,6 +1493,16 @@ Tu donnes 40 € pour un jouet. On te rend 5 €. Combien coûte-t-il ?
 
 *Indice.* Il n'y a pas de dizaine dans ce nombre. Quel chiffre écrit-on à cette place ?
 
+**EX-A003-D-02** — decouverte, numerique, 35 s
+
+Écris en chiffres le nombre qui a 4 centaines, 1 dizaine et 9 unités.
+
+**Réponse :** 419
+
+*Corrigé.* (1) On écrit les chiffres de gauche à droite : centaines, puis dizaines, puis unités. (2) 4 centaines : 4 au rang des centaines. 1 dizaine : 1 au rang des dizaines. 9 unités : 9 au rang des unités. (3) On obtient 419. (4) Vérification : 400 + 10 + 9 = 419.
+
+*Indice.* Écris d'abord le chiffre des centaines, puis celui des dizaines, puis celui des unités.
+
 **EX-A003-E-01** — entrainement, numerique, 40 s
 
 Quel nombre vient juste avant 700 ?
@@ -1435,6 +1513,16 @@ Quel nombre vient juste avant 700 ?
 
 *Indice.* Que se passe-t-il quand on retire 1 à un nombre qui se termine par deux zéros ?
 
+**EX-A003-E-02** — entrainement, numerique, 50 s
+
+Quel nombre le point A repère-t-il sur cette demi-droite ?
+
+**Réponse :** 360
+
+*Corrigé.* (1) Entre 300 et 400, la figure montre 10 intervalles égaux. (2) Il faut 10 dizaines pour faire une centaine : chaque intervalle vaut donc 10. La demi-droite est graduée de dix en dix. (3) On part de 300 et on avance de dix en dix jusqu'au point A : 310, 320, 330, 340, 350, 360. (4) Le point A repère le nombre 360. (5) Erreur à éviter : croire que chaque intervalle vaut 1. On répondrait 306, et on n'arriverait jamais à 400 au bout de la demi-droite.
+
+*Indice.* Combien d'intervalles entre 300 et 400 ? Combien vaut chacun ?
+
 **EX-A003-M-01** — maitrise, numerique, 45 s
 
 Complète : 754 = 700 + 50 + …
@@ -1444,6 +1532,20 @@ Complète : 754 = 700 + 50 + …
 *Corrigé.* (1) 754 se décompose en 7 centaines, 5 dizaines et 4 unités. (2) 700 correspond aux centaines, 50 aux dizaines. (3) Il manque les unités : 4. (4) Vérification : 700 + 50 + 4 = 754.
 
 *Indice.* Regarde le chiffre tout à droite du nombre.
+
+**EX-A003-M-02** — maitrise, qcm, 60 s
+
+Quel nombre a 5 centaines et 13 dizaines ?
+
+- **a.** 513
+  <br>*Erreur visée :* L'élève écrit 5 puis 13 côte à côte : il traite les 13 dizaines comme 13 unités.
+- **b.** 630 ✅
+- **c.** 530
+  <br>*Erreur visée :* L'élève garde les 3 dizaines qui dépassent, mais oublie la centaine formée par 10 des 13 dizaines.
+
+*Corrigé.* (1) 13 dizaines, c'est 10 dizaines et 3 dizaines. (2) 10 dizaines font 1 centaine. Les 13 dizaines donnent donc 1 centaine et 3 dizaines. (3) Avec cette centaine de plus, on a 6 centaines, 3 dizaines et aucune unité. (4) Le nombre est 630.
+
+*Indice.* Combien de dizaines faut-il pour faire une centaine ?
 
 ---
 
@@ -1468,6 +1570,20 @@ Comment lit-on le nombre 407 ?
 
 *Indice.* Le 0 occupe le rang des dizaines : il n'y a pas de dizaine.
 
+**EX-A004-D-02** — decouverte, qcm, 40 s
+
+Comment lit-on le nombre 543 ?
+
+- **a.** cinq-quatre-trois
+  <br>*Erreur visée :* L'élève lit les chiffres un par un, sans tenir compte de leur rang.
+- **b.** cinq-cent-quarante-trois ✅
+- **c.** cinq-cent-trente-quatre
+  <br>*Erreur visée :* L'élève échange le chiffre des dizaines et celui des unités : il lit 534 au lieu de 543.
+
+*Corrigé.* (1) On repère les rangs : 5 centaines, 4 dizaines, 3 unités. (2) 5 centaines se lit cinq-cent. (3) 4 dizaines, c'est 40 : quarante. 3 unités : trois. (4) On lit « cinq-cent-quarante-trois ».
+
+*Indice.* Quel chiffre est au rang des centaines ? Et au rang des dizaines ?
+
 **EX-A004-E-01** — entrainement, qcm, 40 s
 
 Comment lit-on le nombre 380 ?
@@ -1481,6 +1597,16 @@ Comment lit-on le nombre 380 ?
 *Corrigé.* (1) 3 est au rang des centaines : trois-cent. (2) 8 est au rang des dizaines, soit 80 : quatre-vingts. (3) 0 aux unités : il n'y a rien à ajouter. (4) On lit « trois-cent-quatre-vingts ».
 
 *Indice.* Le 8 est-il au rang des unités ou des dizaines ?
+
+**EX-A004-E-02** — entrainement, vrai_faux, 45 s
+
+Hugo lit le nombre 472 : « quatre-cent-soixante-dix-deux ». A-t-il raison ?
+
+**Réponse :** False
+
+*Corrigé.* (1) 472, c'est 4 centaines, 7 dizaines et 2 unités. (2) 4 centaines se lit quatre-cent. (3) 72 ne se dit pas « soixante-dix-deux » : après soixante-dix, on dit soixante-et-onze, puis soixante-douze. (4) On lit « quatre-cent-soixante-douze ». Hugo a tort.
+
+*Indice.* Récite la suite des nombres après soixante-dix. Comment dit-on 72 ?
 
 **EX-A004-M-01** — maitrise, qcm, 60 s
 
@@ -1497,6 +1623,22 @@ Comment lit-on le nombre 190 ?
 *Corrigé.* (1) On repère les rangs : 1 centaine, 9 dizaines, 0 unité. (2) 1 au rang des centaines : cent. (3) 9 dizaines, soit 90, se lit quatre-vingt-dix. (4) Aucune unité : il n'y a rien à ajouter. (5) On lit « cent-quatre-vingt-dix ».
 
 *Indice.* Repère bien le rang de chaque chiffre : centaines, dizaines, unités.
+
+**EX-A004-M-02** — maitrise, qcm, 60 s
+
+Dans quel nombre entend-on « quatre-vingt » quand on le lit ?
+
+- **a.** 420
+  <br>*Erreur visée :* L'élève entend « quatre » et « vingt » dans quatre-cent-vingt, mais ils sont séparés par « cent » : ce n'est pas quatre-vingt.
+- **b.** 808
+  <br>*Erreur visée :* L'élève voit 80 écrit au début du nombre sans regarder les rangs : le 8 est au rang des centaines, et 808 se lit huit-cent-huit.
+- **c.** 148
+  <br>*Erreur visée :* L'élève associe quatre-vingt aux chiffres 4 et 8 qu'il voit dans le nombre, au lieu de le lire : 148 se lit cent-quarante-huit.
+- **d.** 390 ✅
+
+*Corrigé.* (1) On lit chaque nombre en entier, en repérant les rangs. (2) 420 se lit quatre-cent-vingt : on entend « quatre » puis « vingt », mais séparés par « cent ». (3) 808 se lit huit-cent-huit, et 148 se lit cent-quarante-huit. (4) 390, c'est 3 centaines et 9 dizaines. 9 dizaines, c'est 90, qui se dit quatre-vingt-dix. (5) On lit « trois-cent-quatre-vingt-dix » : c'est 390. Pourtant, il n'a ni 4 ni 8 dans son écriture.
+
+*Indice.* Lis chaque nombre à voix basse, en entier. Ne regarde pas seulement ses chiffres.
 
 ---
 
@@ -1517,6 +1659,20 @@ Comment lit-on le nombre 190 ?
 
 *Indice.* Combien de dizaines entends-tu dans « deux-cent-six » ?
 
+**EX-A005-D-02** — decouverte, qcm, 35 s
+
+Quel nombre s'écrit trois-cent-quatorze ?
+
+- **a.** 30014
+  <br>*Erreur visée :* L'élève écrit ce qu'il entend, morceau par morceau : 300 pour « trois-cent », puis 14 pour « quatorze », côte à côte.
+- **b.** 314 ✅
+- **c.** 340
+  <br>*Erreur visée :* L'élève confond « quatorze » et « quarante » : il écrit 4 dizaines au lieu de 1 dizaine et 4 unités.
+
+*Corrigé.* (1) « Trois-cent » : 3 centaines. (2) « Quatorze » : 14, soit 1 dizaine et 4 unités. (3) On écrit chaque chiffre à sa place : 3 aux centaines, 1 aux dizaines, 4 aux unités. (4) On obtient 314. On n'écrit pas 300 puis 14 côte à côte, et « quatorze » n'est pas « quarante ».
+
+*Indice.* Combien de centaines, de dizaines et d'unités entends-tu ?
+
 **EX-A005-E-01** — entrainement, numerique, 50 s
 
 Écris en chiffres : neuf-cent-quatre-vingt-dix-neuf.
@@ -1527,6 +1683,16 @@ Comment lit-on le nombre 190 ?
 
 *Indice.* « Quatre-vingt-dix » est un seul nombre, 90.
 
+**EX-A005-E-02** — entrainement, numerique, 45 s
+
+Écris en chiffres : quatre-cent-quatre-vingt-quatre.
+
+**Réponse :** 484
+
+*Corrigé.* (1) « Quatre-cent » : 4 centaines. (2) « Quatre-vingt » désigne 80, soit 8 dizaines. Ce n'est pas 4 puis 20. (3) « Quatre » à la fin : 4 unités. (4) On obtient 484.
+
+*Indice.* « Quatre-vingt » est un seul nombre. Combien de dizaines fait-il ?
+
 **EX-A005-M-01** — maitrise, numerique, 75 s
 
 Écris en chiffres : cinq-cent-quatre-vingt-dix.
@@ -1536,6 +1702,16 @@ Comment lit-on le nombre 190 ?
 *Corrigé.* (1) « Cinq-cent » : 5 au rang des centaines. (2) « Quatre-vingt-dix » désigne 90, soit 9 dizaines. (3) Aucune unité n'est énoncée : c'est le piège. Il faut écrire 0 au rang des unités, sinon on obtiendrait 59. (4) On obtient 590.
 
 *Indice.* Compte les rangs : centaines, dizaines, unités. Entends-tu des unités ?
+
+**EX-A005-M-02** — maitrise, numerique, 75 s
+
+Maé entend « six-cent-soixante-quatorze ». Elle écrit 664. Quel nombre aurait-elle dû écrire ?
+
+**Réponse :** 674
+
+*Corrigé.* (1) « Six-cent » : 6 centaines. Maé a bien écrit 6 au rang des centaines. (2) Après soixante-dix viennent soixante-et-onze, soixante-douze, soixante-treize, soixante-quatorze : « soixante-quatorze », c'est 74. (3) Il y a donc 7 dizaines et 4 unités, pas 6 dizaines. Maé a entendu « soixante » et écrit 6, puis seulement le 4 de « quatorze ». (4) Le nombre s'écrit 674.
+
+*Indice.* Comment s'écrit « soixante-quatorze » ? Récite la suite après soixante-dix.
 
 ---
 
@@ -1561,6 +1737,16 @@ Quel est le plus grand de ces deux nombres : 45 et 54 ?
 
 *Indice.* Commence toujours par comparer les chiffres de gauche.
 
+**EX-A006-D-02** — decouverte, vrai_faux, 35 s
+
+Cette écriture est-elle vraie ? 71 > 69
+
+**Réponse :** True
+
+*Corrigé.* (1) Les deux nombres ont deux chiffres : on compare d'abord les dizaines. (2) 71 a 7 dizaines, 69 en a 6. 7 dizaines, c'est plus que 6 dizaines : 71 est le plus grand. (3) Le signe > se lit « est plus grand que ». L'écriture 71 > 69 est vraie. (4) Erreur à éviter : comparer les unités, 1 et 9. Le 9 de 69 est grand, mais ce sont les dizaines qui décident.
+
+*Indice.* Compare d'abord les chiffres des dizaines.
+
 **EX-A006-E-01** — entrainement, qcm, 50 s
 
 Quel symbole faut-il placer entre 302 et 320 ? 302 … 320
@@ -1575,6 +1761,20 @@ Quel symbole faut-il placer entre 302 et 320 ? 302 … 320
 
 *Indice.* Compare les chiffres un à un depuis la gauche, et arrête-toi dès qu'ils diffèrent.
 
+**EX-A006-E-02** — entrainement, qcm, 50 s
+
+Quel nombre est compris entre 650 et 700 ?
+
+- **a.** 605
+  <br>*Erreur visée :* L'élève voit 6 centaines comme dans 650 et s'arrête là, sans comparer les dizaines : 605 a 0 dizaine, il est plus petit que 650.
+- **b.** 710
+  <br>*Erreur visée :* L'élève vérifie seulement que le nombre est plus grand que 650 et oublie la borne 700.
+- **c.** 690 ✅
+
+*Corrigé.* (1) Un nombre compris entre 650 et 700 est plus grand que 650 et plus petit que 700. (2) 605 a 6 centaines comme 650, mais 0 dizaine contre 5 : il est plus petit que 650. (3) 710 a 7 centaines et 1 dizaine : il est plus grand que 700. (4) 690 a 6 centaines et 9 dizaines : il est plus grand que 650. Il est plus petit que 700, qui a 7 centaines. (5) La réponse est 690. On peut écrire 650 < 690 < 700.
+
+*Indice.* Pour chaque nombre, compare d'abord les centaines, puis les dizaines.
+
 **EX-A006-M-01** — maitrise, qcm, 45 s
 
 Quel est le plus grand de ces deux nombres : 999 et 1 000 ?
@@ -1588,6 +1788,16 @@ Quel est le plus grand de ces deux nombres : 999 et 1 000 ?
 *Corrigé.* (1) On compare d'abord le nombre de chiffres : 999 en a 3, 1 000 en a 4. (2) À nombre de chiffres différent, le nombre le plus long est le plus grand. (3) Donc 1 000 > 999.
 
 *Indice.* Ne compare pas le premier chiffre avant d'avoir compté combien de chiffres a chaque nombre.
+
+**EX-A006-M-02** — maitrise, numerique, 75 s
+
+Quel chiffre faut-il écrire dans la case pour que ce soit vrai ? 4\square 6 > 486
+
+**Réponse :** 9
+
+*Corrigé.* (1) Les deux nombres ont 3 chiffres et le même chiffre des centaines, 4. (2) On compare donc les dizaines : le chiffre de la case contre le 8 de 486. (3) Avec un chiffre plus petit que 8 dans la case, le nombre est plus petit que 486. (4) Avec 8 dans la case, on obtient 486 : les deux nombres sont égaux, et 486 > 486 est faux. (5) Il faut un chiffre plus grand que 8 : seul 9 convient. En effet, 496 > 486.
+
+*Indice.* Essaie de mettre 8 dans la case. L'écriture est-elle vraie ?
 
 ---
 
@@ -1609,6 +1819,20 @@ Combien y a-t-il de chiffres dans le nombre 407 ?
 
 *Indice.* Un chiffre est un symbole entre 0 et 9. Compte-les un par un.
 
+**EX-A008-D-02** — decouverte, qcm, 30 s
+
+Lequel de ces nombres s'écrit avec un seul chiffre ?
+
+- **a.** 10
+  <br>*Erreur visée :* L'élève croit que 10 est un chiffre, parce qu'on compte « jusqu'à 10 » sur ses doigts. Mais 10 s'écrit avec deux chiffres, 1 et 0 : les chiffres vont de 0 à 9.
+- **b.** 8 ✅
+- **c.** 80
+  <br>*Erreur visée :* L'élève ne compte pas le 0 comme un chiffre : il ne voit que le 8. Or 80 s'écrit avec deux chiffres, 8 et 0.
+
+*Corrigé.* (1) Les chiffres sont les dix signes 0 ; 1 ; 2 ; 3 ; 4 ; 5 ; 6 ; 7 ; 8 ; 9. Avec eux, on écrit tous les nombres. (2) 10 s'écrit avec deux chiffres : 1 et 0. 80 s'écrit aussi avec deux chiffres : 8 et 0. Le 0 est un chiffre comme les autres. (3) 8 s'écrit avec un seul chiffre : c'est à la fois un chiffre et un nombre. (4) Réponse : 8.
+
+*Indice.* Compte les signes qu'il faut écrire pour chaque nombre.
+
 **EX-A008-E-01** — entrainement, numerique, 35 s
 
 Dans le nombre 362, quel est le chiffre des dizaines ?
@@ -1619,6 +1843,16 @@ Dans le nombre 362, quel est le chiffre des dizaines ?
 
 *Indice.* Le rang des dizaines est le deuxième en partant de la droite.
 
+**EX-A008-E-02** — entrainement, numerique, 75 s
+
+Tom numérote les pages de son cahier, de 1 à 12. Combien de chiffres écrit-il en tout ?
+
+**Réponse :** 15
+
+*Corrigé.* (1) Attention : on ne compte pas les nombres (il y en a 12), mais les chiffres écrits. (2) De 1 à 9, chaque nombre s'écrit avec un seul chiffre : cela fait 9 chiffres. (3) 10, 11 et 12 s'écrivent chacun avec deux chiffres : 1 et 0, 1 et 1, 1 et 2. (4) On continue donc à compter de 2 en 2 à partir de 9 : 11, 13, 15. (5) Tom écrit 15 chiffres.
+
+*Indice.* De 1 à 9, un chiffre par page. Et pour les pages suivantes ?
+
 **EX-A008-M-01** — maitrise, vrai_faux, 75 s
 
 Le nombre 99 s'écrit avec plus de chiffres que le nombre 100.
@@ -1628,6 +1862,22 @@ Le nombre 99 s'écrit avec plus de chiffres que le nombre 100.
 *Corrigé.* (1) On compte les chiffres de chacun : 99 s'écrit avec 2 chiffres, 100 s'écrit avec 3 chiffres. (2) Comme 2 chiffres, c'est moins que 3 chiffres, c'est 100 qui s'écrit avec le plus de chiffres. (3) L'affirmation est donc fausse. (4) Le piège : le chiffre 9 est plus grand que le chiffre 1, mais cela ne dit rien du nombre de chiffres utilisés pour écrire le nombre.
 
 *Indice.* Compte les chiffres de chaque nombre, un par un, sans regarder lequel des deux nombres est le plus grand.
+
+**EX-A008-M-02** — maitrise, qcm, 90 s
+
+Avec les chiffres 6, 0 et 2, chacun une seule fois, quel est le plus petit nombre de trois chiffres ?
+
+- **a.** 026
+  <br>*Erreur visée :* L'élève met le plus petit chiffre, 0, en premier. Mais 026 se lit vingt-six : c'est le nombre 26, qui s'écrit avec deux chiffres. Un nombre de trois chiffres ne commence pas par 0.
+- **b.** 260
+  <br>*Erreur visée :* L'élève met bien 2 en premier, puis croit que le 0 se place toujours à la fin, comme dans 10, 20 ou 30. Avec le 0 au rang des dizaines, on obtient un nombre plus petit.
+- **c.** 620
+  <br>*Erreur visée :* L'élève écrit les chiffres du plus grand au plus petit : il obtient le plus grand nombre au lieu du plus petit.
+- **d.** 206 ✅
+
+*Corrigé.* (1) Un nombre de trois chiffres ne commence jamais par 0 : 026 s'écrit simplement 26, qui n'a que deux chiffres. (2) Au rang des centaines, on met donc le plus petit chiffre qui n'est pas 0 : le 2. (3) Il reste 0 et 6. Au rang des dizaines, on met le plus petit : 0. Puis 6 aux unités. (4) Réponse : 206. Les autres nombres possibles, 260, 602 et 620, sont plus grands.
+
+*Indice.* Quel chiffre peut se mettre en premier ? Pas n'importe lequel.
 
 ---
 
@@ -1652,6 +1902,16 @@ Parmi ces nombres, lesquels sont pairs ? 13, 28, 45, 100
 
 *Indice.* Regarde seulement le chiffre des unités.
 
+**EX-A011-D-02** — decouverte, vrai_faux, 40 s
+
+17 enfants se mettent deux par deux. Chaque enfant trouve un camarade.
+
+**Réponse :** False
+
+*Corrigé.* (1) On forme des paires en comptant de 2 en 2 : 2, 4, 6, 8, 10, 12, 14, 16. Avec 8 paires, 16 enfants sont placés. (2) Il reste 1 enfant tout seul : 17 enfants ne se rangent pas tous par paires. (3) 17 est un nombre impair : il se termine par 7. L'affirmation est fausse.
+
+*Indice.* Compte les enfants de 2 en 2.
+
 **EX-A011-E-01** — entrainement, vrai_faux, 30 s
 
 Le nombre 764 est un nombre pair.
@@ -1662,6 +1922,20 @@ Le nombre 764 est un nombre pair.
 
 *Indice.* Peu importe la taille du nombre : seul le chiffre des unités compte.
 
+**EX-A011-E-02** — entrainement, qcm, 40 s
+
+Lequel de ces nombres est impair ?
+
+- **a.** 742
+  <br>*Erreur visée :* L'élève regarde le premier chiffre, 7, qui est impair. Mais c'est le chiffre des unités qui décide : 742 se termine par 2, il est pair.
+- **b.** 390
+  <br>*Erreur visée :* L'élève regarde les chiffres 3 et 9, impairs, au lieu du chiffre des unités. 390 se termine par 0 : il est pair, comme 10, 20 ou 30.
+- **c.** 873 ✅
+
+*Corrigé.* (1) Pour savoir si un nombre est pair ou impair, on regarde seulement son chiffre des unités. (2) 742 se termine par 2 : pair. 390 se termine par 0 : pair. (3) 873 se termine par 3 : impair. (4) Les autres chiffres ne comptent pas : 742 commence par 7, et il est pair quand même.
+
+*Indice.* Quel est le dernier chiffre de chaque nombre ?
+
 **EX-A011-M-01** — maitrise, texte, 90 s
 
 Donne tous les nombres pairs strictement compris entre 767 et 778. Sépare-les par des virgules.
@@ -1671,6 +1945,16 @@ Donne tous les nombres pairs strictement compris entre 767 et 778. Sépare-les p
 *Corrigé.* (1) « Strictement compris entre 767 et 778 » signifie de 768 à 777. (2) Le premier nombre pair est 768. (3) On avance ensuite de 2 en 2 : 768, 770, 772, 774, 776. (4) 778 est exclu car la borne est stricte. (5) Réponse : 768, 770, 772, 774, 776.
 
 *Indice.* Trouve le premier nombre pair après 767, puis avance de 2 en 2.
+
+**EX-A011-M-02** — maitrise, numerique, 120 s
+
+Avec les chiffres 6, 3 et 8, chacun une seule fois, on peut écrire six nombres de trois chiffres. Combien sont pairs ?
+
+**Réponse :** 4
+
+*Corrigé.* (1) Un nombre est pair quand son chiffre des unités est 0, 2, 4, 6 ou 8. Ici, il doit donc se terminer par 6 ou par 8. (2) Terminés par 6 : 386 et 836. Terminés par 8 : 368 et 638. (3) Les nombres terminés par 3, 683 et 863, sont impairs. (4) Il y a 4 nombres pairs.
+
+*Indice.* Le chiffre des unités décide. Lesquels de 6, 3 et 8 peuvent aller à la fin ?
 
 ---
 
@@ -2007,6 +2291,20 @@ Un gâteau est partagé en 4 parts égales. Léa en prend 3. Quelle fraction du 
 
 *Indice.* En bas, le nombre total de parts. En haut, le nombre de parts prises.
 
+**EX-C001-D-02** — decouverte, qcm, 45 s
+
+Quelle fraction du disque est coloriée ?
+
+- **a.** 1/4
+  <br>*Erreur visée :* L'élève met en bas le nombre de parts blanches (4) au lieu du nombre total de parts du disque (5).
+- **b.** 1/5 ✅
+- **c.** 4/5
+  <br>*Erreur visée :* L'élève écrit la fraction de la partie blanche, celle qui n'est pas coloriée, au lieu de la partie coloriée.
+
+*Corrigé.* (1) On compte toutes les parts du disque : 5 parts égales. C'est le nombre du bas. (2) 1 part est coloriée : c'est le nombre du haut. (3) La partie coloriée est 1/5 du disque : un cinquième. (4) Attention : en bas, on écrit toutes les parts, coloriées ou blanches.
+
+*Indice.* Compte toutes les parts du disque, puis les parts coloriées.
+
 **EX-C001-E-01** — entrainement, qcm, 50 s
 
 Une bande est partagée en 5 parts égales. On en colorie 2. Quelle fraction est coloriée ?
@@ -2021,6 +2319,16 @@ Une bande est partagée en 5 parts égales. On en colorie 2. Quelle fraction est
 
 *Indice.* Combien de parts en tout ? Combien de parts coloriées ?
 
+**EX-C001-E-02** — entrainement, texte, 60 s
+
+Quelle fraction de la bande est coloriée ? Écris-la avec une barre.
+
+**Réponse :** 7/10
+
+*Corrigé.* (1) On compte toutes les parts de la bande : 10 parts égales. En bas, on écrit 10. (2) On compte les parts coloriées une par une, même celles qui ne se touchent pas : 7. En haut, on écrit 7. (3) La fraction coloriée est 7/10 : sept dixièmes. (4) Les parts coloriées n'ont pas besoin d'être côte à côte : seul leur nombre compte.
+
+*Indice.* Compte d'abord toutes les parts, puis seulement les parts coloriées.
+
 **EX-C001-M-01** — maitrise, vrai_faux, 75 s
 
 Un rectangle est découpé en 3 morceaux : un grand, deux petits. On prend le grand. A-t-on pris 1/3 du rectangle ?
@@ -2030,6 +2338,20 @@ Un rectangle est découpé en 3 morceaux : un grand, deux petits. On prend le gr
 *Corrigé.* (1) Pour parler de fraction, le tout doit être partagé en parts égales. (2) Ici les morceaux ne sont pas de même taille : un grand et deux petits. (3) On ne peut donc pas dire qu'on a pris 1/3 du rectangle. (4) La réponse est faux.
 
 *Indice.* Relis bien la condition indispensable pour parler de fraction.
+
+**EX-C001-M-02** — maitrise, qcm, 90 s
+
+Les trois bandes sont pareilles. Sur quelle bande a-t-on colorié 1/4 de la bande ?
+
+- **a.** La bande A
+  <br>*Erreur visée :* L'élève voit 1 part coloriée et 4 parts blanches : il met en bas les parts blanches au lieu de toutes les parts. La bande A a 5 parts : elle est coloriée au cinquième.
+- **b.** La bande B
+  <br>*Erreur visée :* L'élève reconnaît le 4 de la fraction dans les 4 parts coloriées de la bande B, sans regarder en combien de parts elle est partagée (8). La bande B est coloriée à moitié.
+- **c.** La bande C ✅
+
+*Corrigé.* (1) 1/4, c'est 1 part quand la bande est partagée en 4 parts égales. (2) Bande A : 5 parts égales, 1 coloriée. C'est 1/5, un cinquième. (3) Bande B : 8 parts égales, 4 coloriées. C'est 4/8 : la moitié de la bande. (4) Bande C : 4 parts égales, 1 coloriée. C'est 1/4, un quart. La réponse est la bande C.
+
+*Indice.* Pour chaque bande, compte toutes les parts, puis les parts coloriées.
 
 ---
 
@@ -2050,6 +2372,16 @@ Dans la fraction 5/8, quel est le numérateur ?
 
 *Indice.* Numérateur : celui du haut.
 
+**EX-C002-D-02** — decouverte, numerique, 30 s
+
+Quel est le numérateur de la fraction coloriée du rectangle ?
+
+**Réponse :** 3
+
+*Corrigé.* (1) Le rectangle est partagé en 8 parts égales : 8 s'écrit en bas, c'est le dénominateur. (2) 3 parts sont coloriées : le numérateur, en haut, est 3. (3) La fraction coloriée est 3/8. Le numérateur compte les parts coloriées.
+
+*Indice.* Le numérateur compte les parts coloriées.
+
 **EX-C002-E-01** — entrainement, qcm, 40 s
 
 Que représente le numérateur d'une fraction ?
@@ -2064,6 +2396,20 @@ Que représente le numérateur d'une fraction ?
 
 *Indice.* Repense à un gâteau partagé : lequel des deux nombres compte les parts prises ?
 
+**EX-C002-E-02** — entrainement, qcm, 50 s
+
+Sur quelle bande la fraction coloriée a-t-elle pour numérateur 2 ?
+
+- **a.** La bande A
+  <br>*Erreur visée :* L'élève compte les 2 parts blanches de la bande A au lieu de ses parts coloriées. Le numérateur compte les parts coloriées : ici 1.
+- **b.** La bande B ✅
+- **c.** La bande C
+  <br>*Erreur visée :* L'élève cherche un 2 n'importe où : la bande C est partagée en 2 parts, c'est son dénominateur. Son numérateur est 1.
+
+*Corrigé.* (1) Le numérateur compte les parts coloriées. (2) Bande A : 1 part coloriée sur 3. Fraction 1/3, numérateur 1. (3) Bande B : 2 parts coloriées sur 10. Fraction 2/10, numérateur 2. (4) Bande C : 1 part coloriée sur 2. Fraction 1/2 : son 2 est le dénominateur, pas le numérateur. (5) La réponse est la bande B.
+
+*Indice.* Le numérateur compte les parts coloriées, pas toutes les parts.
+
 **EX-C002-M-01** — maitrise, numerique, 75 s
 
 Une figure est partagée en 8 parts égales. 2 parts sont coloriées en vert, toutes les autres en jaune. On écrit la fraction jaune sous la forme …/8. Quel est son numérateur ?
@@ -2073,6 +2419,22 @@ Une figure est partagée en 8 parts égales. 2 parts sont coloriées en vert, to
 *Corrigé.* (1) La figure compte 8 parts égales en tout : c'est le dénominateur. (2) 2 parts sont vertes, donc les parts jaunes sont celles qui restent : 8 - 2 = 6. (3) Le numérateur de la fraction jaune est 6. (4) La figure est jaune pour 6/8 et verte pour 2/8.
 
 *Indice.* Le numérateur compte les parts jaunes. Elles ne sont pas données directement : il faut les trouver.
+
+**EX-C002-M-02** — maitrise, qcm, 80 s
+
+Lina colorie une part blanche de plus sur ce disque. Quelle fraction du disque est alors coloriée ?
+
+- **a.** 4/6
+  <br>*Erreur visée :* L'élève croit que colorier une part ajoute une part au disque : il augmente le numérateur, et le dénominateur aussi. Le disque a toujours 5 parts.
+- **b.** 3/6
+  <br>*Erreur visée :* L'élève ajoute la part en bas au lieu de l'ajouter en haut : il confond le rôle du numérateur et celui du dénominateur.
+- **c.** 3/5
+  <br>*Erreur visée :* L'élève écrit la fraction coloriée d'avant : il ne voit pas que le numérateur change quand le nombre de parts coloriées change.
+- **d.** 4/5 ✅
+
+*Corrigé.* (1) Sur la figure, 3 parts sur 5 sont coloriées : 3/5 du disque. (2) Lina colorie une part de plus. On compte les parts coloriées : 4. Le numérateur, qui compte les parts coloriées, devient 4. (3) Le disque est toujours partagé en 5 parts égales : le dénominateur ne change pas, il reste 5. (4) La fraction coloriée est 4/5.
+
+*Indice.* Quand on colorie une part, qu'est-ce qui change : le nombre de parts coloriées, ou le nombre total de parts ?
 
 ---
 
@@ -2093,6 +2455,16 @@ Dans la fraction 5/8, quel est le dénominateur ?
 
 *Indice.* Dénominateur : celui du dessous.
 
+**EX-C003-D-02** — decouverte, numerique, 30 s
+
+Quel est le dénominateur de la fraction coloriée du disque ?
+
+**Réponse :** 4
+
+*Corrigé.* (1) Le disque est partagé en 4 parts égales. (2) Le dénominateur, en bas, indique le nombre total de parts : 4. (3) 1 part est coloriée : c'est le numérateur. La fraction coloriée est 1/4, un quart du disque.
+
+*Indice.* Le dénominateur compte toutes les parts, coloriées ou non.
+
 **EX-C003-E-01** — entrainement, numerique, 35 s
 
 Une pizza est partagée en 6 parts égales. On en prend 1. La fraction prise s'écrit 1/…. Quel est le dénominateur ?
@@ -2102,6 +2474,16 @@ Une pizza est partagée en 6 parts égales. On en prend 1. La fraction prise s'�
 *Corrigé.* (1) Le dénominateur indique en combien de parts égales la pizza est partagée. (2) Ici, elle est partagée en 6 parts. (3) La fraction prise est 1/6, qui se lit « un sixième ».
 
 *Indice.* En combien de parts la pizza est-elle coupée ?
+
+**EX-C003-E-02** — entrainement, vrai_faux, 45 s
+
+Léa dit : « Le dénominateur de la fraction coloriée de la bande est 6. » A-t-elle raison ?
+
+**Réponse :** False
+
+*Corrigé.* (1) On compte toutes les parts de la bande : 10 parts égales. Le dénominateur est 10. (2) 6 parts sont coloriées : 6 est le numérateur, le nombre du haut. (3) La fraction coloriée est 6/10. Léa confond le numérateur et le dénominateur : la réponse est faux.
+
+*Indice.* Le dénominateur compte-t-il les parts coloriées, ou toutes les parts ?
 
 **EX-C003-M-01** — maitrise, qcm, 75 s
 
@@ -2116,6 +2498,16 @@ On partage un même tout en 3 parts égales, ou en 8 parts égales. Dans quel ca
 *Corrigé.* (1) Le tout est le même dans les deux cas. (2) Plus on partage en un grand nombre de parts, plus chaque part est petite. (3) En partageant en 8, chaque part vaut 1/8 ; en partageant en 3, chaque part vaut 1/3. (4) Donc un huitième est plus petit qu'un tiers : la part la plus petite s'obtient en partageant en 8.
 
 *Indice.* Imagine un gâteau partagé entre 3 personnes, puis entre 8 personnes.
+
+**EX-C003-M-02** — maitrise, numerique, 80 s
+
+Voici deux tablettes pareilles. Zoé mange la part coloriée. Quel est le dénominateur de la fraction d'une tablette qu'elle a mangée ?
+
+**Réponse :** 5
+
+*Corrigé.* (1) Le tout, ici, c'est une tablette, pas les deux. (2) Une tablette est partagée en 5 parts égales : le dénominateur est 5. (3) Zoé a mangé 1 part : elle a mangé 1/5 d'une tablette. (4) En comptant les parts des deux tablettes ensemble, on trouve 10 : ce n'est pas le nombre de parts d'une tablette.
+
+*Indice.* Compte seulement les parts d'une tablette.
 
 ---
 
@@ -2140,6 +2532,16 @@ Lequel est le plus grand : 3/8 ou 5/8 ?
 
 *Indice.* Les parts ont la même taille. Regarde seulement combien on en prend.
 
+**EX-C009-D-02** — decouverte, texte, 45 s
+
+Les bandes A et B sont pareilles. Quelle fraction coloriée est la plus grande ? Écris-la avec une barre.
+
+**Réponse :** 4/5
+
+*Corrigé.* (1) Les deux bandes sont partagées en 5 parts égales : ce sont des cinquièmes. Le dénominateur est 5 pour les deux. (2) Bande A : 4 parts coloriées, c'est 4/5. Bande B : 2 parts coloriées, c'est 2/5. Le numérateur compte les parts coloriées. (3) Les parts ont toutes la même taille : il suffit de comparer les numérateurs. 4 parts, c'est plus que 2 parts. (4) La plus grande fraction coloriée est 4/5, celle de la bande A.
+
+*Indice.* Compte les parts de chaque bande, puis les parts coloriées.
+
 **EX-C009-E-01** — entrainement, qcm, 60 s
 
 Tom a mangé 2/6 de sa tarte. Lisa a mangé 5/6 de sa tarte. Qui a mangé la plus grande part de sa tarte ?
@@ -2154,6 +2556,20 @@ Tom a mangé 2/6 de sa tarte. Lisa a mangé 5/6 de sa tarte. Qui a mangé la plu
 
 *Indice.* Chaque tarte est coupée de la même façon : regarde seulement combien de parts chacun a prises.
 
+**EX-C009-E-02** — entrainement, qcm, 50 s
+
+Compare 9/10 et 6/10. Quelle écriture est juste ?
+
+- **a.** 9/10 < 6/10
+  <br>*Erreur visée :* L'élève confond les signes < et > : la pointe du signe doit être tournée vers la plus petite fraction. Ou bien il compare les parts qui restent, 1 et 4, au lieu des parts prises.
+- **b.** 9/10 = 6/10
+  <br>*Erreur visée :* L'élève voit le même dénominateur et en conclut que les deux fractions sont égales.
+- **c.** 9/10 > 6/10 ✅
+
+*Corrigé.* (1) Les deux fractions ont le même dénominateur 10 : le tout est partagé en 10 parts égales, des dixièmes. (2) Le numérateur dit combien de parts on prend : 9 d'un côté, 6 de l'autre. (3) 9 parts, c'est plus que 6 parts de la même taille : 9/10 est plus grand que 6/10. (4) On écrit 9/10 > 6/10 : la pointe du signe est tournée vers la plus petite fraction.
+
+*Indice.* Les parts ont la même taille. Compare le nombre de parts, puis vérifie le sens du signe.
+
 **EX-C009-M-01** — maitrise, texte, 60 s
 
 Range de la plus petite à la plus grande : 7/10, 2/10, 5/10. Écris-les avec une barre, séparées par des virgules.
@@ -2163,6 +2579,16 @@ Range de la plus petite à la plus grande : 7/10, 2/10, 5/10. Écris-les avec un
 *Corrigé.* (1) Les trois fractions ont le même dénominateur 10 : les parts sont toutes des dixièmes. (2) On range donc selon les numérateurs : 2 < 5 < 7. (3) Réponse : 2/10, 5/10, 7/10.
 
 *Indice.* Même dénominateur : range simplement les numérateurs.
+
+**EX-C009-M-02** — maitrise, numerique, 90 s
+
+Léo, Inès et Sami ont des tablettes pareilles. Léo en mange 6/8, Inès 4/8. Sami mange plus qu'Inès, mais moins que Léo. Combien de huitièmes mange Sami ?
+
+**Réponse :** 5
+
+*Corrigé.* (1) Les trois tablettes sont pareilles et les fractions sont des huitièmes : les parts ont toutes la même taille. (2) Léo mange 6 huitièmes, Inès 4 huitièmes. Le dénominateur est le même : on compare les numérateurs. (3) Sami mange plus qu'Inès : plus de 4 huitièmes. Il mange moins que Léo : moins de 6 huitièmes. (4) Le seul nombre plus grand que 4 et plus petit que 6 est 5 : Sami mange 5 huitièmes, c'est-à-dire 5/8 de sa tablette. (5) On peut l'écrire 4/8 < 5/8 < 6/8.
+
+*Indice.* Le dénominateur est le même pour tous. Cherche un numérateur entre celui d'Inès et celui de Léo.
 
 ---
 
@@ -2183,6 +2609,22 @@ Calcule 1/5 + 2/5. Écris ta réponse sous la forme numérateur/dénominateur.
 
 *Indice.* Un cinquième plus deux cinquièmes, cela fait combien de cinquièmes ?
 
+**EX-C012-D-02** — decouverte, qcm, 50 s
+
+Léo a mangé la partie coloriée de la pizza, puis 2/4 de la pizza. Quelle fraction de la pizza a-t-il mangée en tout ?
+
+- **a.** 3/8
+  <br>*Erreur visée :* L'élève additionne les numérateurs et aussi les dénominateurs. Or ce sont des quarts de la même pizza : les parts gardent leur taille, le dénominateur ne change pas.
+- **b.** 1/4
+  <br>*Erreur visée :* L'élève ne lit que la figure : il oublie d'ajouter les deux quarts mangés ensuite.
+- **c.** 2/4
+  <br>*Erreur visée :* L'élève ne garde que la fraction écrite dans l'énoncé et oublie la partie coloriée de la figure.
+- **d.** 3/4 ✅
+
+*Corrigé.* (1) On compte les parts de la pizza : 4 parts égales, des quarts. Une part est coloriée : Léo a d'abord mangé 1/4 de la pizza. (2) Il mange ensuite 2/4 : on ajoute des quarts à des quarts, 1/4 + 2/4. (3) Un quart plus deux quarts, cela fait trois quarts : on additionne les numérateurs, 1 + 2 = 3. Le dénominateur reste 4, car les parts gardent la même taille. (4) Léo a mangé 3/4 de la pizza en tout.
+
+*Indice.* Écris d'abord la fraction coloriée. Puis ajoute des quarts à des quarts.
+
 **EX-C012-E-01** — entrainement, texte, 45 s
 
 Calcule 2/3 - 1/3. Écris ta réponse sous la forme numérateur/dénominateur.
@@ -2193,6 +2635,16 @@ Calcule 2/3 - 1/3. Écris ta réponse sous la forme numérateur/dénominateur.
 
 *Indice.* Le dénominateur ne change jamais quand on additionne ou soustrait des fractions de même dénominateur.
 
+**EX-C012-E-02** — entrainement, texte, 60 s
+
+Il y a 7/8 d'une tarte. Tom mange 2/8 de la tarte. Quelle fraction de la tarte reste-t-il ? Écris-la avec une barre.
+
+**Réponse :** 5/8
+
+*Corrigé.* (1) Les deux fractions sont des huitièmes de la même tarte : les parts ont la même taille. (2) Il y avait 7 parts, Tom en mange 2 : on soustrait les numérateurs, 7 - 2 = 5. (3) Le dénominateur ne change pas : il reste 8, car la tarte est toujours partagée en 8 parts égales. (4) Il reste 7/8 - 2/8 = 5/8 de la tarte : sept huitièmes moins deux huitièmes, cela fait cinq huitièmes. (5) Piège : soustraire aussi les dénominateurs donnerait 8 - 8 = 0 part dans le tout, ce qui n'a pas de sens.
+
+*Indice.* Combien de huitièmes y avait-il, et combien Tom en mange-t-il ?
+
 **EX-C012-M-01** — maitrise, texte, 90 s
 
 Lucie a colorié les 3/10 d'une figure en bleu, et tout le reste en rouge. Quelle fraction de la figure est coloriée en rouge ? Écris ta réponse sous la forme numérateur/dénominateur.
@@ -2202,6 +2654,20 @@ Lucie a colorié les 3/10 d'une figure en bleu, et tout le reste en rouge. Quell
 *Corrigé.* (1) La figure entière représente le tout, soit 10/10. (2) La partie bleue est 3/10. (3) Le rouge est le complément : 10/10 - 3/10 = 7/10. (4) La figure est coloriée en rouge pour 7/10.
 
 *Indice.* Le tout vaut 10 dixièmes. Combien en reste-t-il après en avoir pris 3 ?
+
+**EX-C012-M-02** — maitrise, qcm, 100 s
+
+Léa mange 1/8 d'un gâteau. Hugo mange 5/8 du même gâteau. Quelle fraction du gâteau reste-t-il ?
+
+- **a.** 6/8
+  <br>*Erreur visée :* L'élève calcule bien la part mangée, 1/8 + 5/8 = 6/8, mais s'arrête là : la question porte sur ce qui reste.
+- **b.** 2/8 ✅
+- **c.** 4/8
+  <br>*Erreur visée :* L'élève soustrait les deux fractions de l'énoncé, 5/8 − 1/8 : il calcule combien Hugo a mangé de plus que Léa, pas ce qui reste.
+
+*Corrigé.* (1) Le gâteau entier est partagé en 8 parts égales : le tout vaut 8/8. (2) Léa et Hugo mangent dans le même gâteau. Ensemble : 1/8 + 5/8 = 6/8. On additionne les numérateurs, le dénominateur reste 8. (3) Ce qui reste, c'est le tout moins la part mangée : 8/8 - 6/8 = 2/8. (4) Il reste 2/8 du gâteau, deux parts.
+
+*Indice.* Calcule d'abord la part mangée par les deux enfants. Le gâteau entier, c'est huit huitièmes.
 
 ---
 
@@ -3110,6 +3576,22 @@ Range ces nombres par ordre croissant : 45, 12, 78, 3. Sépare les nombres par d
 
 *Indice.* Croissant veut dire que les nombres augmentent.
 
+**EX-A007-D-02** — decouverte, qcm, 50 s
+
+Range ces scores par ordre croissant (du plus petit au plus grand) : 305, 53, 350, 35. Quel rangement est juste ?
+
+- **a.** 350, 305, 53, 35
+  <br>*Erreur visée :* L'élève range du plus grand au plus petit : c'est l'ordre décroissant. Croissant veut dire que les nombres augmentent.
+- **b.** 305, 35, 350, 53
+  <br>*Erreur visée :* L'élève compare les nombres chiffre par chiffre en partant de la gauche, sans regarder combien de chiffres ils ont : 305, 35 et 350 commencent par 3, 53 par 5. Or un nombre de deux chiffres est plus petit qu'un nombre de trois chiffres.
+- **c.** 35, 53, 305, 350 ✅
+- **d.** 35, 53, 350, 305
+  <br>*Erreur visée :* L'élève départage 305 et 350 par le chiffre des unités (0 est plus petit que 5). Il faut comparer d'abord les dizaines : 0 dizaine dans 305, 5 dizaines dans 350.
+
+*Corrigé.* (1) Ordre croissant : du plus petit au plus grand. (2) 35 et 53 s'écrivent avec deux chiffres : ils sont plus petits que 305 et 350, qui en ont trois. Et 35 < 53 (3 dizaines contre 5). (3) 305 et 350 ont le même chiffre des centaines, 3. On compare les dizaines : 0 dans 305, 5 dans 350. Donc 305 < 350. (4) Réponse : 35, 53, 305, 350.
+
+*Indice.* Commence par compter les chiffres de chaque nombre.
+
 **EX-A007-E-01** — entrainement, texte, 90 s
 
 Range ces nombres par ordre décroissant : 1 204, 1 240, 1 024, 1 402. Sépare les nombres par des virgules.
@@ -3120,6 +3602,20 @@ Range ces nombres par ordre décroissant : 1 204, 1 240, 1 024, 1 402. Sépare l
 
 *Indice.* Les quatre nombres commencent par 1 : passe au rang suivant.
 
+**EX-A007-E-02** — entrainement, qcm, 90 s
+
+À la course d'orientation, les temps en secondes : Nina 1 392, Hugo 1 507, Malo 1 386, Lou 1 429. Le plus petit temps gagne. Qui est deuxième ?
+
+- **a.** Lou
+  <br>*Erreur visée :* L'élève range les temps du plus grand au plus petit (Hugo, puis Lou) : il croit que le plus grand nombre gagne. Ici, le plus rapide met le moins de temps, il faut ranger par ordre croissant.
+- **b.** Nina ✅
+- **c.** Malo
+  <br>*Erreur visée :* L'élève départage 1 392 et 1 386 par le chiffre des unités (2 est plus petit que 6) et place Nina avant Malo. Il faut comparer d'abord les dizaines : 8 pour Malo, 9 pour Nina. Malo est en fait le premier.
+
+*Corrigé.* (1) Le plus rapide a le plus petit temps : on range les temps par ordre croissant. (2) Les quatre temps ont 1 millier. Centaines : 3 pour 1 392 et 1 386, 4 pour 1 429, 5 pour 1 507. Les deux plus petits temps sont donc 1 392 et 1 386. (3) Entre 1 386 et 1 392, on compare les dizaines : 8 contre 9, donc 1 386 < 1 392. (4) Ordre croissant : Malo (1 386), Nina (1 392), Lou (1 429), Hugo (1 507). Malo gagne, Nina arrive deuxième.
+
+*Indice.* Range d'abord les temps du plus petit au plus grand.
+
 **EX-A007-M-01** — maitrise, numerique, 60 s
 
 Trouve un nombre entier qui se place entre 2 899 et 2 901.
@@ -3129,6 +3625,16 @@ Trouve un nombre entier qui se place entre 2 899 et 2 901.
 *Corrigé.* (1) On cherche un entier strictement plus grand que 2 899 et strictement plus petit que 2 901. (2) Juste après 2 899 vient 2 900. (3) Et 2 900 < 2 901 : c'est la seule réponse possible. (4) Réponse : 2 900.
 
 *Indice.* Quel nombre vient juste après 2 899 ?
+
+**EX-A007-M-02** — maitrise, numerique, 120 s
+
+Ces trois nombres sont rangés par ordre croissant : 6 487, 6 4■2, 6 495. Quel chiffre est caché par ■ ?
+
+**Réponse :** 9
+
+*Corrigé.* (1) Les trois nombres ont 6 milliers et 4 centaines : tout se joue sur les dizaines et les unités. (2) 6 4■2 doit être plus grand que 6 487. Avec 8 dizaines, on aurait 6 482, plus petit que 6 487 (2 unités contre 7) : il faut au moins 9 dizaines. (3) 6 4■2 doit être plus petit que 6 495. Avec 9 dizaines, 6 492 est bien plus petit que 6 495 (2 unités contre 5). (4) Le chiffre caché est 9 : 6 487 < 6 492 < 6 495.
+
+*Indice.* Les milliers et les centaines sont les mêmes partout : compare les dizaines, puis les unités.
 
 ---
 
@@ -3148,6 +3654,20 @@ Dans le nombre 3 847, quel est le chiffre des centaines ?
 
 *Indice.* Compte les rangs en partant de la droite : unités, dizaines, centaines.
 
+**EX-A009-D-02** — decouverte, qcm, 35 s
+
+Dans le nombre 7 052, que vaut le chiffre 5 ?
+
+- **a.** 5 unités
+  <br>*Erreur visée :* L'élève croit qu'un chiffre vaut toujours ce qu'il montre, quelle que soit sa place. Or la valeur d'un chiffre dépend de son rang.
+- **b.** 5 centaines
+  <br>*Erreur visée :* L'élève compte les rangs depuis la gauche en sautant le 0 : 7 milliers, puis 5 centaines. Le 0 occupe pourtant un rang, celui des centaines.
+- **c.** 5 dizaines ✅
+
+*Corrigé.* (1) On repère les rangs de droite à gauche : 2 unités, 5 dizaines, 0 centaine, 7 milliers. (2) Le 0 compte : il occupe le rang des centaines, où il n'y a rien. (3) Le chiffre 5 est au rang des dizaines : il vaut 5 dizaines, c'est-à-dire 50.
+
+*Indice.* Pars de la droite : le premier rang est celui des unités.
+
 **EX-A009-E-01** — entrainement, numerique, 75 s
 
 Dans le nombre 3 847, quel est le nombre de centaines ?
@@ -3157,6 +3677,16 @@ Dans le nombre 3 847, quel est le nombre de centaines ?
 *Corrigé.* (1) Le nombre de centaines compte toutes les centaines, y compris celles contenues dans les milliers. (2) 1 millier vaut 10 centaines, donc 3 milliers valent 30 centaines. (3) On ajoute les 8 centaines déjà présentes : 30 + 8 = 38. (4) Il y a 38 centaines (et il reste 47 unités).
 
 *Indice.* Un millier, c'est dix centaines.
+
+**EX-A009-E-02** — entrainement, numerique, 60 s
+
+Un paquet de 1 000 feuilles est fait de liasses de 10 feuilles. Combien y a-t-il de liasses dans le paquet ?
+
+**Réponse :** 100
+
+*Corrigé.* (1) Une liasse, c'est une dizaine de feuilles. On cherche combien de dizaines il y a dans 1 000. (2) 1 000, c'est 10 centaines, et chaque centaine contient 10 dizaines. (3) Pour les 10 centaines, on compte les dizaines de 10 en 10 : 10, 20, 30, 40, 50, 60, 70, 80, 90, 100. (4) Il y a 100 liasses : 1 000, c'est 100 dizaines.
+
+*Indice.* Une centaine, c'est combien de dizaines ? Et un millier, combien de centaines ?
 
 **EX-A009-M-01** — maitrise, qcm, 90 s
 
@@ -3171,6 +3701,20 @@ Dans le nombre 6 304, quel est le nombre de dizaines ?
 *Corrigé.* (1) Le chiffre des dizaines est 0, mais la question porte sur le nombre de dizaines. (2) Le nombre de dizaines compte toutes les dizaines contenues dans 6 304, y compris celles cachées dans les centaines et les milliers. (3) 6 304 = 630 × 10 + 4. (4) Il y a donc 630 dizaines, et il reste 4 unités.
 
 *Indice.* Combien de paquets de 10 peut-on faire avec 6 304 ? Ce n'est pas la même question que « quel chiffre occupe le rang des dizaines ».
+
+**EX-A009-M-02** — maitrise, qcm, 120 s
+
+Une collection contient 3 milliers, 15 centaines et 6 unités. Quel nombre représente-t-elle ?
+
+- **a.** 3 156
+  <br>*Erreur visée :* L'élève écrit côte à côte les nombres de l'énoncé (3, 15, 6) sans tenir compte des rangs : 15 centaines ne tiennent pas dans un seul rang, et le rang des dizaines, vide, a disparu.
+- **b.** 4 506 ✅
+- **c.** 3 506
+  <br>*Erreur visée :* L'élève garde le 5 des 15 centaines mais oublie le millier qu'elles contiennent : 10 centaines font 1 millier.
+
+*Corrigé.* (1) 15 centaines, c'est 10 centaines et 5 centaines. Or 10 centaines font 1 millier : 15 centaines, c'est 1 millier et 5 centaines. (2) Avec les 3 milliers, cela fait 4 milliers et 5 centaines. (3) Il n'y a aucune dizaine : on écrit 0 au rang des dizaines, puis 6 aux unités. (4) Le nombre est 4 506.
+
+*Indice.* Dix centaines font un millier.
 
 ---
 
@@ -3267,6 +3811,16 @@ Quelle fraction est égale à 1/2 ?
 
 *Indice.* Ce qu'on fait en haut, il faut le faire en bas.
 
+**EX-C006-D-02** — decouverte, vrai_faux, 45 s
+
+Les bandes A et B sont pareilles. La même fraction de bande est coloriée sur A et sur B.
+
+**Réponse :** True
+
+*Corrigé.* (1) Bande A : 4 parts égales, 1 coloriée. C'est 1/4. (2) Bande B : 8 parts égales, 2 coloriées. C'est 2/8. (3) Sur la figure, les parties coloriées ont la même longueur : la part coloriée de A recouvre exactement 2 parts de B. (4) 1/4 = 2/8 : l'affirmation est vraie. Les parts de B sont deux fois plus petites, et on en a colorié deux fois plus.
+
+*Indice.* Compare la longueur coloriée sur A et sur B.
+
 **EX-C006-E-01** — entrainement, numerique, 60 s
 
 Complète pour obtenir deux fractions égales : 2/3 = …/12
@@ -3276,6 +3830,16 @@ Complète pour obtenir deux fractions égales : 2/3 = …/12
 *Corrigé.* (1) On cherche par combien le dénominateur a été multiplié : 3 × 4 = 12, donc par 4. (2) On applique la même multiplication au numérateur : 2 × 4 = 8. (3) 2/3 = 8/12.
 
 *Indice.* Par combien passe-t-on de 3 à 12 ? Applique le même facteur en haut.
+
+**EX-C006-E-02** — entrainement, numerique, 70 s
+
+Les bandes A et B sont pareilles. Combien de parts de la bande B faut-il colorier pour colorier la même longueur que sur A ?
+
+**Réponse :** 6
+
+*Corrigé.* (1) Bande A : 5 parts égales, 3 coloriées. C'est 3/5. (2) Bande B : 10 parts égales. Sur la figure, chaque part de A recouvre exactement 2 parts de B. (3) Pour 3 parts de A, il faut 3 × 2 = 6 parts de B. (4) 3/5 = 3 × 2/5 × 2 = 6/10 : on colorie 6 parts. (5) Colorier 3 parts de B ne suffit pas : 3/10, c'est deux fois moins que 3/5.
+
+*Indice.* Combien de parts de B tiennent sous une part de A ?
 
 **EX-C006-M-01** — maitrise, qcm, 120 s
 
@@ -3290,6 +3854,20 @@ Parmi ces fractions, laquelle n'est pas égale à 3/4 ?
 *Corrigé.* (1) 6/8 : on a multiplié 3 et 4 par 2. Égale à 3/4. (2) 9/12 : on a multiplié par 3. Égale à 3/4. (3) 5/6 : on est passé de 3 à 5 en ajoutant 2, et de 4 à 6 en ajoutant 2. Ajouter ne conserve pas l'égalité, seule la multiplication le fait. (4) La fraction qui n'est pas égale à 3/4 est donc 5/6.
 
 *Indice.* Pour chaque proposition, cherche par quel nombre il faudrait multiplier 3 et 4.
+
+**EX-C006-M-02** — maitrise, qcm, 120 s
+
+Tom mange 3/9 de la barre A. Léa mange 1/3 de la barre B, pareille. Qui a mangé le plus ?
+
+- **a.** Tom
+  <br>*Erreur visée :* L'élève compare les numérateurs : 3 parts, c'est plus que 1 part. Il ne voit pas que les parts de Tom sont trois fois plus petites.
+- **b.** Léa
+  <br>*Erreur visée :* L'élève voit que la part de Léa est plus grosse (un tiers contre des neuvièmes) et conclut qu'elle a mangé plus, sans tenir compte du nombre de parts.
+- **c.** Ils ont mangé autant ✅
+
+*Corrigé.* (1) Une part de la barre B (un tiers) recouvre exactement 3 parts de la barre A (3 neuvièmes). (2) Léa a mangé la même longueur que 3 parts de A, autant que Tom. (3) 1/3 = 1 × 3/3 × 3 = 3/9 : des parts trois fois plus petites, trois fois plus de parts. (4) Ils ont mangé autant.
+
+*Indice.* Combien de parts de A tiennent sous une part de B ?
 
 ---
 
@@ -3310,6 +3888,16 @@ Une bande-unité va de 0 à 1. Elle est partagée en quarts, c'est-à-dire en 4 
 
 *Indice.* Le numérateur compte le nombre d'intervalles parcourus depuis 0.
 
+**EX-C005-D-02** — decouverte, texte, 45 s
+
+Quelle fraction repère le point A ? Écris-la sous la forme numérateur/dénominateur.
+
+**Réponse :** 5/6
+
+*Corrigé.* (1) Entre 0 et 1, on compte les intervalles égaux : il y en a 6. Chaque intervalle vaut 1/6. (2) Depuis 0, on avance de 5 intervalles pour arriver au point A. (3) Le point A repère 5/6. (4) On compte les intervalles, pas les traits : de 0 à 1, il y a 7 traits mais seulement 6 intervalles.
+
+*Indice.* Compte les intervalles entre 0 et 1, puis ceux entre 0 et le point A.
+
 **EX-C005-E-01** — entrainement, texte, 50 s
 
 Une bande-unité va de 0 à 1. Elle est partagée en cinquièmes, c'est-à-dire en 5 intervalles égaux. Quelle fraction se trouve à la 4e graduation après 0 ? Écris ta réponse avec une barre.
@@ -3320,6 +3908,20 @@ Une bande-unité va de 0 à 1. Elle est partagée en cinquièmes, c'est-à-dire 
 
 *Indice.* Chaque saut vaut un cinquième. Combien de sauts ?
 
+**EX-C005-E-02** — entrainement, qcm, 60 s
+
+Quel point repère la fraction 4/9 ?
+
+- **a.** Le point A
+  <br>*Erreur visée :* L'élève part de 1 au lieu de 0 : il recule de 4 intervalles depuis 1 et tombe sur 5/9.
+- **b.** Le point B
+  <br>*Erreur visée :* L'élève compte les traits au lieu des intervalles : il compte le trait de 0 comme le premier, et son 4e trait repère 3/9.
+- **c.** Le point C ✅
+
+*Corrigé.* (1) Entre 0 et 1, il y a 9 intervalles égaux : la demi-droite est graduée en neuvièmes. (2) 4/9 : on avance de 4 intervalles depuis 0. (3) On arrive au point C. Le point B est à 3 intervalles de 0, le point A à 5 intervalles. (4) La réponse est le point C.
+
+*Indice.* Le dénominateur dit en combien d'intervalles l'unité est partagée ; le numérateur, combien d'intervalles on parcourt depuis 0.
+
 **EX-C005-M-01** — maitrise, vrai_faux, 75 s
 
 Sur une même bande-unité graduée, 1/2 et 3/6 se placent exactement au même endroit.
@@ -3329,6 +3931,16 @@ Sur une même bande-unité graduée, 1/2 et 3/6 se placent exactement au même e
 *Corrigé.* (1) 3/6 s'obtient à partir de 1/2 en multipliant numérateur et dénominateur par 3. (2) Ces deux écritures désignent donc le même nombre. (3) Un nombre n'occupe qu'une seule place sur la demi-droite graduée. (4) L'affirmation est vraie : des fractions égales tombent au même point.
 
 *Indice.* Ces deux fractions sont-elles égales ?
+
+**EX-C005-M-02** — maitrise, texte, 90 s
+
+Sur cette demi-droite, le nombre 1 n'est pas écrit. Quelle fraction repère le point A ? Écris-la sous la forme numérateur/dénominateur.
+
+**Réponse :** 7/10
+
+*Corrigé.* (1) De 0 à 1/2, on compte 5 intervalles égaux. (2) Une moitié fait 5 intervalles : l'unité entière, de 0 à 1, en fait deux fois plus, 2 × 5 = 10. Chaque intervalle vaut donc 1/10. (3) De 0 au point A, on compte 7 intervalles. (4) Le point A repère 7/10. (5) Piège : un intervalle ne vaut pas 1/5. Les 5 intervalles mènent à 1/2, pas à 1. (6) Attention : le bout du dessin n'est pas 1, la demi-droite continue après 1.
+
+*Indice.* Combien d'intervalles entre 0 et 1/2 ? Combien en faut-il alors entre 0 et 1 ?
 
 ---
 
@@ -3750,6 +4362,20 @@ Décompose 6 304 sous la forme d'une somme. Exemple attendu : 5 827 = 5 000 + 80
 
 *Indice.* Le rang des dizaines est vide : il n'apporte rien à la somme.
 
+**EX-A010-D-02** — decouverte, qcm, 45 s
+
+Quelle décomposition de 3 571 est juste ?
+
+- **a.** 3 + 5 + 7 + 1
+  <br>*Erreur visée :* L'élève additionne les chiffres sans tenir compte de leur rang. Cette somme vaut 16, pas 3 571.
+- **b.** 3 000 + 500 + 70 + 1 ✅
+- **c.** 3 000 + 500 + 7 + 1
+  <br>*Erreur visée :* L'élève donne leur valeur aux milliers et aux centaines, puis recopie le 7 tel quel, alors qu'il est au rang des dizaines : il vaut 70. Cette somme vaut 3 508.
+
+*Corrigé.* (1) 3 571 contient 3 milliers, 5 centaines, 7 dizaines et 1 unité. (2) 3 milliers valent 3 000, 5 centaines valent 500, 7 dizaines valent 70, 1 unité vaut 1. (3) 3 571 = 3 000 + 500 + 70 + 1.
+
+*Indice.* Un chiffre ne vaut pas la même chose selon son rang.
+
 **EX-A010-E-01** — entrainement, numerique, 50 s
 
 Complète : 4 635 = (4 × 1 000) + (… × 100) + (3 × 10) + (5 × 1)
@@ -3760,6 +4386,16 @@ Complète : 4 635 = (4 × 1 000) + (… × 100) + (3 × 10) + (5 × 1)
 
 *Indice.* Quel est le troisième chiffre en partant de la droite ?
 
+**EX-A010-E-02** — entrainement, vrai_faux, 50 s
+
+Lina écrit : « 8 000 + 70 + 500 + 9 = 8 759 ». A-t-elle raison ?
+
+**Réponse :** False
+
+*Corrigé.* (1) Les termes ne sont pas dans l'ordre des rangs : 70, ce sont 7 dizaines ; 500, ce sont 5 centaines. (2) On remet chaque terme à son rang : 8 milliers, 5 centaines, 7 dizaines, 9 unités. (3) 8 000 + 500 + 70 + 9 = 8 579, et non 8 759 : Lina se trompe. (4) Le piège : recopier les chiffres dans l'ordre où ils apparaissent, sans regarder leur rang.
+
+*Indice.* Range d'abord les termes du plus grand au plus petit.
+
 **EX-A010-M-01** — maitrise, numerique, 90 s
 
 Quel nombre s'écrit (2 × 1 000) + (7 × 10) + (9 × 1) ?
@@ -3769,6 +4405,16 @@ Quel nombre s'écrit (2 × 1 000) + (7 × 10) + (9 × 1) ?
 *Corrigé.* (1) 2 × 1 000 = 2 000, 7 × 10 = 70, 9 × 1 = 9. (2) Aucune centaine n'apparaît : le rang des centaines est vide, on y écrit 0. (3) 2 000 + 70 + 9 = 2 079.
 
 *Indice.* Il manque un rang dans la décomposition. Lequel, et quel chiffre faut-il y mettre ?
+
+**EX-A010-M-02** — maitrise, numerique, 120 s
+
+Complète : 6 205 = 5 000 + … + 5
+
+**Réponse :** 1200
+
+*Corrigé.* (1) Ce n'est pas la décomposition habituelle : elle commence par 5 000, pas par 6 000. (2) 6 000, c'est 5 000 plus 1 000. Donc 6 205 = 5 000 + 1 000 + 200 + 5. (3) On regroupe 1 000 et 200 : cela fait 1 200. (4) 6 205 = 5 000 + 1 200 + 5. Le nombre manquant est 1 200. (5) Le piège : répondre 200, en écrivant la décomposition habituelle sans voir qu'il manque un millier.
+
+*Indice.* Combien manque-t-il à 5 000 pour faire 6 000 ?
 
 ---
 
@@ -5166,6 +5812,22 @@ Calcule le tiers de 12 billes, c'est-à-dire 1/3 de 12.
 
 *Indice.* Partage les 12 billes en 3 tas égaux.
 
+**EX-C004-D-02** — decouverte, qcm, 45 s
+
+Un sac contient 30 bonbons. Combien de bonbons y a-t-il dans 1/5 du sac ?
+
+- **a.** 150
+  <br>*Erreur visée :* L'élève multiplie 30 par 5 au lieu de partager les bonbons en 5 parts égales.
+- **b.** 5
+  <br>*Erreur visée :* L'élève donne le dénominateur : il lit le nombre de parts au lieu de calculer ce que contient une part.
+- **c.** 25
+  <br>*Erreur visée :* L'élève enlève 5 bonbons au sac : il confond « un cinquième » avec « 5 de moins ».
+- **d.** 6 ✅
+
+*Corrigé.* (1) Prendre 1/5, c'est partager en 5 parts égales et en prendre une. (2) 30 ÷ 5 = 6. (3) 1/5 du sac, c'est 6 bonbons. (4) Vérification : 5 parts de 6 bonbons, 5 × 6 = 30.
+
+*Indice.* Partage les 30 bonbons en 5 tas égaux.
+
 **EX-C004-E-01** — entrainement, numerique, 60 s
 
 Une piste mesure 100 mètres. Calcule 1/4 de cette longueur.
@@ -5176,6 +5838,16 @@ Une piste mesure 100 mètres. Calcule 1/4 de cette longueur.
 
 *Indice.* Partage les 100 mètres en 4 parts égales.
 
+**EX-C004-E-02** — entrainement, numerique, 70 s
+
+Une citerne contient 56 litres d'eau. On utilise le septième de cette eau pour arroser. Combien de litres utilise-t-on ?
+
+**Réponse :** 8
+
+*Corrigé.* (1) Le septième, c'est 1/7 : on partage les 56 litres en 7 parts égales. (2) Dans la table de 7 : 7 × 8 = 56, donc 56 ÷ 7 = 8. (3) On utilise 8 litres d'eau.
+
+*Indice.* Le septième, c'est 1/7. Cherche 56 dans la table de 7.
+
 **EX-C004-M-01** — maitrise, numerique, 150 s
 
 Léa a dépensé le tiers de son argent de poche, soit 7 €. Combien d'euros avait-elle au départ ?
@@ -5185,6 +5857,16 @@ Léa a dépensé le tiers de son argent de poche, soit 7 €. Combien d'euros av
 *Corrigé.* (1) Le tiers de sa somme vaut 7 €, donc sa somme est partagée en 3 parts de 7 € chacune. (2) Ici on ne cherche pas la part, on cherche le tout : il faut donc multiplier au lieu de diviser. (3) 3 × 7 = 21. (4) Léa avait 21 €. (5) Vérification : 1/3 de 21 vaut 21 ÷ 3 = 7. C'est bien cohérent.
 
 *Indice.* Sa somme est faite de 3 parts identiques, et tu connais la valeur d'une part.
+
+**EX-C004-M-02** — maitrise, numerique, 160 s
+
+Dans une classe, 6 élèves font de la chorale : c'est le cinquième de la classe. Le tiers de la classe fait du judo. Combien d'élèves font du judo ?
+
+**Réponse :** 10
+
+*Corrigé.* (1) On ne connaît pas le nombre d'élèves de la classe : on le cherche d'abord. (2) Le cinquième de la classe vaut 6 élèves : la classe est faite de 5 parts de 6 élèves. 5 × 6 = 30 : la classe compte 30 élèves. (3) Le tiers de la classe : 30 ÷ 3 = 10. (4) 10 élèves font du judo. (5) Piège : 6 ÷ 3 donne le tiers des élèves de la chorale, pas le tiers de la classe.
+
+*Indice.* Trouve d'abord combien d'élèves compte la classe.
 
 ---
 
@@ -11265,6 +11947,22 @@ Quel est le plus petit dénominateur commun à 1/4 et 2/3 ?
 
 *Indice.* Écris les premiers multiples de 4 et de 3, puis cherche le premier qui apparaît dans les deux listes.
 
+**EX-C011-D-02** — decouverte, qcm, 60 s
+
+Quel est le plus petit dénominateur commun à 5/6 et 2/9 ?
+
+- **a.** 54
+  <br>*Erreur visée :* L'élève multiplie les deux dénominateurs : 54 est bien un dénominateur commun, mais pas le plus petit, car 6 et 9 sont tous les deux dans la table de 3.
+- **b.** 15
+  <br>*Erreur visée :* L'élève additionne les dénominateurs : 15 n'est même pas dans la table de 6.
+- **c.** 18 ✅
+- **d.** 9
+  <br>*Erreur visée :* L'élève prend le plus grand dénominateur, comme si 9 était un multiple de 6 ; or 9 n'est pas dans la table de 6.
+
+*Corrigé.* (1) On cherche le plus petit nombre qui est à la fois dans la table de 6 et dans la table de 9. (2) Table de 6 : 6, 12, 18, 24, 30, 36… (3) Table de 9 : 9, 18, 27, 36… (4) Le plus petit commun est 18. Le produit 6 × 9 = 54 est aussi un dénominateur commun, mais il n'est pas le plus petit.
+
+*Indice.* Écris les premiers multiples de 9, et cherche le premier qui est aussi dans la table de 6.
+
 **EX-C011-E-01** — entrainement, texte, 90 s
 
 Réduis 1/4 et 2/3 au même dénominateur. Écris les deux fractions obtenues, séparées par une virgule, sous la forme numérateur/dénominateur.
@@ -11275,6 +11973,16 @@ Réduis 1/4 et 2/3 au même dénominateur. Écris les deux fractions obtenues, s
 
 *Indice.* Par combien faut-il multiplier 4 pour obtenir 12 ? Et 3 ?
 
+**EX-C011-E-02** — entrainement, texte, 120 s
+
+Réduis 3/10 et 7/15 au plus petit dénominateur commun. Écris les deux fractions obtenues dans cet ordre, séparées par une virgule, sous la forme numérateur/dénominateur.
+
+**Réponse :** 9/30, 14/30
+
+*Corrigé.* (1) Multiples de 15 : 15, 30, 45… 30 est aussi dans la table de 10 : le plus petit dénominateur commun est 30. (2) 3/10 = 3 × 3/10 × 3 = 9/30. (3) 7/15 = 7 × 2/15 × 2 = 14/30. (4) On multiplie toujours le numérateur et le dénominateur par le même nombre : la valeur de chaque fraction ne change pas. (5) Piège : le produit 10 × 15 = 150 est aussi un dénominateur commun, mais ce n'est pas le plus petit.
+
+*Indice.* Cherche le premier multiple de 15 qui est aussi dans la table de 10.
+
 **EX-C011-M-01** — maitrise, texte, 120 s
 
 Calcule 2/5 + 1/4. Écris ta réponse sous la forme numérateur/dénominateur.
@@ -11284,6 +11992,16 @@ Calcule 2/5 + 1/4. Écris ta réponse sous la forme numérateur/dénominateur.
 *Corrigé.* (1) Les dénominateurs sont différents : il faut d'abord les rendre identiques. (2) Dénominateur commun : 5 × 4 = 20. (3) 2/5 = 8/20 et 1/4 = 5/20. (4) On additionne les numérateurs : 8/20 + 5/20 = 13/20. (5) 13/20 ne se simplifie pas : c'est la réponse.
 
 *Indice.* On ne peut pas additionner des cinquièmes et des quarts : il faut d'abord les convertir en une même sorte de parts.
+
+**EX-C011-M-02** — maitrise, texte, 180 s
+
+Dans un jardin, les légumes occupent 2/7 de la surface et les fleurs 1/3. Le reste est en pelouse. Quelle fraction du jardin est en pelouse ? Écris-la sous la forme numérateur/dénominateur.
+
+**Réponse :** 8/21
+
+*Corrigé.* (1) Légumes et fleurs ensemble : 2/7 + 1/3. Les dénominateurs sont différents : il faut un dénominateur commun. (2) Table de 7 : 7, 14, 21… 21 est aussi dans la table de 3 : le dénominateur commun est 21. (3) 2/7 = 6/21 et 1/3 = 7/21. Légumes et fleurs occupent donc 6/21 + 7/21 = 13/21 du jardin. (4) Le jardin entier vaut 21/21. La pelouse occupe le reste : 21/21 - 13/21 = 8/21. (5) Vérification : 6/21 + 7/21 + 8/21 = 21/21 = 1, tout le jardin.
+
+*Indice.* Calcule d'abord la part occupée par les légumes et les fleurs ensemble. Le jardin entier, c'est 1.
 
 ---
 
@@ -11308,6 +12026,20 @@ Compare 2/3 et 3/5.
 
 *Indice.* Réduis les deux fractions au même dénominateur avant de comparer.
 
+**EX-C010-D-02** — decouverte, qcm, 90 s
+
+Compare 5/6 et 7/10.
+
+- **a.** 5/6 < 7/10
+  <br>*Erreur visée :* L'élève compare les nombres sans réduire au même dénominateur : 7 est plus grand que 5 et 10 plus grand que 6, il croit donc que 7/10 est la plus grande.
+- **b.** On ne peut pas les comparer : les dénominateurs sont différents
+  <br>*Erreur visée :* L'élève croit qu'une comparaison exige le même dénominateur dès le départ, sans penser qu'on peut en fabriquer un.
+- **c.** 5/6 > 7/10 ✅
+
+*Corrigé.* (1) Les dénominateurs sont différents : on cherche un nombre à la fois dans la table de 6 et dans la table de 10. Multiples de 10 : 10, 20, 30… et 6 × 5 = 30. (2) 5/6 = 5 × 5/6 × 5 = 25/30 et 7/10 = 7 × 3/10 × 3 = 21/30. (3) Les deux fractions sont alors des trentièmes : on compare les numérateurs, 25 > 21. (4) Donc 5/6 > 7/10.
+
+*Indice.* Cherche un nombre qui est à la fois dans la table de 6 et dans la table de 10.
+
 **EX-C010-E-01** — entrainement, qcm, 75 s
 
 Compare 8/12 et 8/21 sans calculer.
@@ -11322,6 +12054,16 @@ Compare 8/12 et 8/21 sans calculer.
 
 *Indice.* À numérateur égal, quel dénominateur donne les parts les plus grandes ?
 
+**EX-C010-E-02** — entrainement, texte, 120 s
+
+Quelle est la plus grande de ces trois fractions ? 13/20, 7/10, 3/5 Écris-la sous la forme numérateur/dénominateur.
+
+**Réponse :** 7/10
+
+*Corrigé.* (1) Les dénominateurs 20, 10 et 5 divisent tous 20 : on écrit les trois fractions en vingtièmes. (2) 7/10 = 7 × 2/10 × 2 = 14/20 et 3/5 = 3 × 4/5 × 4 = 12/20 ; 13/20 ne change pas. (3) On compare les numérateurs : 14 > 13 > 12. (4) La plus grande est 7/10. (5) Piège : 13/20 s'écrit avec les plus grands nombres, mais ses parts sont des vingtièmes, deux fois plus petites que des dixièmes.
+
+*Indice.* Écris les trois fractions avec le même dénominateur : lequel convient pour les trois ?
+
 **EX-C010-M-01** — maitrise, texte, 180 s
 
 Range ces trois fractions de la plus petite à la plus grande : 3/4, 7/18, 5/6 Écris-les séparées par des virgules, sous la forme numérateur/dénominateur.
@@ -11331,6 +12073,20 @@ Range ces trois fractions de la plus petite à la plus grande : 3/4, 7/18, 5/6 �
 *Corrigé.* (1) Aucune astuce ne fonctionne ici : les trois fractions sont inférieures à 1, et elles n'ont ni numérateur ni dénominateur commun. (2) Il faut donc les réduire au même dénominateur. 4, 18 et 6 divisent tous 36. (3) 3/4 = 27/36, 7/18 = 14/36, 5/6 = 30/36. (4) On compare les numérateurs : 14 < 27 < 30. (5) Donc 7/18 < 3/4 < 5/6.
 
 *Indice.* Cherche un dénominateur commun aux trois fractions : un multiple de 4, de 18 et de 6.
+
+**EX-C010-M-02** — maitrise, qcm, 180 s
+
+Au club de Lina, 14 adhérents sur 20 sont des filles. Au club de Malo, 9 adhérents sur 12 sont des filles. Dans quel club la part des filles est-elle la plus grande ?
+
+- **a.** Au club de Lina
+  <br>*Erreur visée :* L'élève compare le nombre de filles, 14 contre 9, sans tenir compte du nombre total d'adhérents : il compare des effectifs, pas des fractions.
+- **b.** Au club de Malo ✅
+- **c.** On ne peut pas comparer : les clubs n'ont pas le même nombre d'adhérents
+  <br>*Erreur visée :* L'élève croit que deux fractions de dénominateurs différents ne se comparent pas. Ce sont justement les fractions qui permettent de comparer des groupes de tailles différentes.
+
+*Corrigé.* (1) La part des filles est une fraction : 14/20 au club de Lina, 9/12 au club de Malo. (2) On cherche un dénominateur commun. Multiples de 20 : 20, 40, 60… 60 est aussi dans la table de 12 : 20 × 3 = 60 et 12 × 5 = 60. (3) 14/20 = 14 × 3/20 × 3 = 42/60 et 9/12 = 9 × 5/12 × 5 = 45/60. (4) 45 > 42 : la part des filles est plus grande au club de Malo, même s'il y a moins de filles.
+
+*Indice.* Écris la part des filles de chaque club sous forme de fraction, puis compare ces deux fractions.
 
 ---
 
@@ -12455,6 +13211,20 @@ Simplifie 12/18 au maximum. Écris ta réponse sous la forme numérateur/dénomi
 
 *Indice.* Cherche un nombre qui divise à la fois 12 et 18.
 
+**EX-C007-D-02** — decouverte, qcm, 60 s
+
+On veut simplifier 14/35. Par quel nombre peut-on diviser à la fois le numérateur et le dénominateur ?
+
+- **a.** 2
+  <br>*Erreur visée :* L'élève ne regarde que le numérateur : 14 est pair, mais 35 est impair, donc 35 n'est pas divisible par 2.
+- **b.** 5
+  <br>*Erreur visée :* L'élève ne regarde que le dénominateur : 35 se termine par 5, mais 14 n'est pas dans la table de 5.
+- **c.** 7 ✅
+
+*Corrigé.* (1) Pour simplifier, il faut un nombre qui divise les deux : le numérateur 14 et le dénominateur 35. (2) 2 divise 14, mais pas 35, qui est impair. 5 divise 35, mais pas 14. (3) 14 et 35 sont tous les deux dans la table de 7 : 14 = 2 × 7 et 35 = 5 × 7. (4) On divise les deux par 7 : 14 ÷ 7 = 2 et 35 ÷ 7 = 5. Donc 14/35 = 2/5, et la valeur de la fraction n'a pas changé.
+
+*Indice.* Cherche une table de multiplication qui contient à la fois 14 et 35.
+
 **EX-C007-E-01** — entrainement, texte, 60 s
 
 Simplifie 25/40 au maximum. Écris ta réponse sous la forme numérateur/dénominateur.
@@ -12464,6 +13234,16 @@ Simplifie 25/40 au maximum. Écris ta réponse sous la forme numérateur/dénomi
 *Corrigé.* (1) 25 et 40 se terminent par 5 ou 0 : ils sont tous deux divisibles par 5. (2) 25 ÷ 5 = 5 et 40 ÷ 5 = 8. (3) 25/40 = 5/8. (4) 5 et 8 n'ont plus de diviseur commun : la simplification est terminée.
 
 *Indice.* Les deux nombres se terminent par 5 ou 0.
+
+**EX-C007-E-02** — entrainement, numerique, 90 s
+
+On simplifie 56/72 et on obtient une fraction de dénominateur 9. Quel est son numérateur ?
+
+**Réponse :** 7
+
+*Corrigé.* (1) Pour passer du dénominateur 72 au dénominateur 9, on a divisé par 8, car 72 ÷ 8 = 9. (2) Pour que la fraction garde sa valeur, on divise le numérateur par le même nombre : 56 ÷ 8 = 7. (3) 56/72 = 7/9 : 56 et 72 sont bien tous les deux dans la table de 8. (4) Le numérateur est 7. (5) Piège : diviser 56 par 9, comme si le dénominateur final servait de diviseur, ne marche pas : 56 n'est pas dans la table de 9.
+
+*Indice.* Par combien a-t-on divisé 72 pour obtenir 9 ?
 
 **EX-C007-M-01** — maitrise, qcm, 120 s
 
@@ -12478,6 +13258,22 @@ Peut-on simplifier l'écriture 4 + 2/4 en barrant les deux 4 ?
 *Corrigé.* (1) On ne peut simplifier que des facteurs (des nombres multipliés), jamais des termes d'une addition. (2) Ici le numérateur est une somme : 4 + 2 = 6. (3) La fraction vaut donc 6/4, qui se simplifie par 2 : 3/2. (4) Ce n'est pas 2 : barrer les 4 donne un résultat faux.
 
 *Indice.* Calcule d'abord le numérateur, puis compare avec ce que donnerait le fait de barrer les 4.
+
+**EX-C007-M-02** — maitrise, qcm, 150 s
+
+Laquelle de ces égalités, écrites pour simplifier 18/27, est juste ?
+
+- **a.** 18/27 = 9/9
+  <br>*Erreur visée :* L'élève divise le numérateur par 2 et le dénominateur par 3. Diviser par deux nombres différents change la valeur : 9/9 vaut 1, alors que 18/27 est plus petit que 1.
+- **b.** 18/27 = 8/7
+  <br>*Erreur visée :* L'élève barre le chiffre 1 de 18 et le chiffre 2 de 27, comme s'il simplifiait des chiffres. On ne simplifie que par un nombre qui divise le numérateur et le dénominateur ; 8/7 est même plus grand que 1.
+- **c.** 18/27 = 15/24
+  <br>*Erreur visée :* L'élève retire 3 en haut et en bas, comme s'il divisait par 3. Soustraire le même nombre change la valeur : 15/24 vaut 5/8, pas 2/3.
+- **d.** 18/27 = 6/9 ✅
+
+*Corrigé.* (1) Simplifier, c'est diviser le numérateur et le dénominateur par le même nombre. On vérifie chaque égalité avec cette règle. (2) 18 et 27 sont dans la table de 3 : 18 ÷ 3 = 6 et 27 ÷ 3 = 9. Donc 18/27 = 6/9 : l'égalité d est juste. (3) Égalité a : 18 a été divisé par 2, mais 27 par 3. Deux diviseurs différents changent la valeur : 9/9 = 1. (4) Égalité b : on a barré des chiffres. Cela ne correspond à aucune division, et 8/7 est plus grand que 1. (5) Égalité c : on a retiré 3 en haut et en bas. Une soustraction ne garde pas la valeur : 15/24 = 5/8. (6) Remarque : 6/9 se simplifie encore par 3 en 2/3. L'égalité d est juste quand même : on peut simplifier en plusieurs fois.
+
+*Indice.* Pour chaque égalité, demande-toi : a-t-on divisé le haut et le bas par le même nombre ?
 
 ---
 
@@ -12659,6 +13455,16 @@ Rends 36/48 irréductible. Écris ta réponse sous la forme numérateur/dénomin
 
 *Indice.* Tu peux simplifier en plusieurs étapes : d'abord par 2, puis encore par 2, puis par 3.
 
+**EX-C008-D-02** — decouverte, vrai_faux, 60 s
+
+La fraction 21/25 est irréductible.
+
+**Réponse :** True
+
+*Corrigé.* (1) Une fraction est irréductible quand son numérateur et son dénominateur n'ont aucun diviseur commun autre que 1. (2) Diviseurs de 21 : 1, 3, 7 et 21. Diviseurs de 25 : 1, 5 et 25. (3) Le seul diviseur commun est 1 : on ne peut pas simplifier. L'affirmation est vraie. (4) Piège : ni 21 ni 25 n'est un nombre premier, et pourtant la fraction est irréductible. Ce qui compte, c'est un diviseur commun aux deux nombres.
+
+*Indice.* Écris la liste des diviseurs de 21, puis celle de 25. Ont-elles un nombre en commun autre que 1 ?
+
 **EX-C008-E-01** — entrainement, texte, 150 s
 
 Rends 84/126 irréductible. Écris ta réponse sous la forme numérateur/dénominateur.
@@ -12668,6 +13474,16 @@ Rends 84/126 irréductible. Écris ta réponse sous la forme numérateur/dénomi
 *Corrigé.* (1) Les deux nombres sont pairs : on divise par 2. 84/126 = 42/63. (2) 42 et 63 sont dans la table de 3 : on divise par 3. 42/63 = 14/21. (3) 14 et 21 sont dans la table de 7 : on divise par 7. 14/21 = 2/3. (4) 2 et 3 n'ont plus de diviseur commun : la fraction est irréductible. (5) On pouvait aussi diviser directement par 42.
 
 *Indice.* Procède par étapes successives : 2, puis 3, puis 7.
+
+**EX-C008-E-02** — entrainement, texte, 120 s
+
+Écris 162/180 sous forme irréductible. Écris ta réponse sous la forme numérateur/dénominateur.
+
+**Réponse :** 9/10
+
+*Corrigé.* (1) 162 et 180 sont pairs : on divise par 2. 162/180 = 81/90. (2) 81 et 90 sont dans la table de 9 : 81 ÷ 9 = 9 et 90 ÷ 9 = 10. Donc 81/90 = 9/10. (3) Diviseurs de 9 : 1, 3 et 9. Aucun ne divise 10, sauf 1 : 9/10 est irréductible. (4) On pouvait aussi diviser directement par 18, car 162 = 9 × 18 et 180 = 10 × 18. (5) Piège : s'arrêter à 81/90. Cette fraction est simplifiée, mais pas irréductible : 81 et 90 ont encore 9 comme diviseur commun.
+
+*Indice.* Commence par diviser par 2. Ensuite, la somme des chiffres de chaque nombre te dit par quoi continuer.
 
 **EX-C008-M-01** — maitrise, qcm, 150 s
 
@@ -12684,5 +13500,15 @@ Parmi ces fractions, laquelle est irréductible ?
 *Corrigé.* (1) 9/12 : 9 et 12 sont divisibles par 3, donc simplifiable. (2) 14/21 : 14 et 21 sont divisibles par 7, donc simplifiable. (3) 15/25 : 15 et 25 sont divisibles par 5, donc simplifiable. (4) 7/9 : 7 n'est divisible que par 1 et 7, et 9 n'est pas divisible par 7. Aucun diviseur commun autre que 1. (5) La seule fraction irréductible est 7/9.
 
 *Indice.* Pour chaque fraction, cherche un diviseur commun au numérateur et au dénominateur.
+
+**EX-C008-M-02** — maitrise, texte, 180 s
+
+Un collège compte 840 élèves, dont 315 demi-pensionnaires. Quelle fraction des élèves est demi-pensionnaire ? Donne-la sous forme irréductible, avec une barre de fraction.
+
+**Réponse :** 3/8
+
+*Corrigé.* (1) 315 élèves sur 840 sont demi-pensionnaires : la fraction est 315/840. (2) 315 et 840 se terminent par 5 et par 0 : on divise par 5. 315/840 = 63/168. (3) 63 et 168 sont dans la table de 3 (sommes des chiffres : 6 + 3 = 9 et 1 + 6 + 8 = 15) : on divise par 3. 63/168 = 21/56. (4) 21 et 56 sont dans la table de 7 : on divise par 7. 21/56 = 3/8. (5) 3 et 8 n'ont pas d'autre diviseur commun que 1 : 3/8 est irréductible. (6) Vérification : 3 × 105 = 315 et 8 × 105 = 840. On a divisé en tout par 5 × 3 × 7 = 105.
+
+*Indice.* Écris d'abord la fraction : élèves demi-pensionnaires sur élèves en tout. Puis simplifie en plusieurs étapes.
 
 ---

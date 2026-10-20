@@ -19,6 +19,43 @@
     "programme_ref": "Cycle 2, CE2 : décomposition du type (4 × 1 000) + (6 × 100) + (3 × 10) + (5 × 1)."
   },
   {
+    "id": "EX-A009-D-02",
+    "skill_id": "A009",
+    "level": "decouverte",
+    "type": "qcm",
+    "statement": "Dans le nombre 7 052, que vaut le chiffre 5 ?",
+    "image": null,
+    "choices": [
+      {
+        "key": "a",
+        "text": "5 unités",
+        "misconception": "L'élève croit qu'un chiffre vaut toujours ce qu'il montre, quelle que soit sa place. Or la valeur d'un chiffre dépend de son rang."
+      },
+      {
+        "key": "b",
+        "text": "5 centaines",
+        "misconception": "L'élève compte les rangs depuis la gauche en sautant le 0 : 7 milliers, puis 5 centaines. Le 0 occupe pourtant un rang, celui des centaines."
+      },
+      {
+        "key": "c",
+        "text": "5 dizaines",
+        "misconception": null
+      }
+    ],
+    "answer": {
+      "value": "c"
+    },
+    "solution_steps": [
+      "On repère les rangs de droite à gauche : 2 unités, 5 dizaines, 0 centaine, 7 milliers.",
+      "Le 0 compte : il occupe le rang des centaines, où il n'y a rien.",
+      "Le chiffre 5 est au rang des dizaines : il vaut **5 dizaines**, c'est-à-dire 50."
+    ],
+    "hint": "Pars de la droite : le premier rang est celui des unités.",
+    "estimated_duration_s": 35,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 2, CE2, Les nombres entiers : « Connaitre la valeur des chiffres en fonction de leur position dans un nombre. »"
+  },
+  {
     "id": "EX-A009-E-01",
     "skill_id": "A009",
     "level": "entrainement",
@@ -38,6 +75,31 @@
     "estimated_duration_s": 75,
     "review_status": "relu_agent",
     "programme_ref": "Cycle 2, CE2 : unités de numération."
+  },
+  {
+    "id": "EX-A009-E-02",
+    "skill_id": "A009",
+    "level": "entrainement",
+    "type": "numerique",
+    "statement": "Un paquet de 1 000 feuilles est fait de liasses de 10 feuilles.\n\nCombien y a-t-il de liasses dans le paquet ?",
+    "image": null,
+    "answer": {
+      "value": 100,
+      "accepted": [
+        "100 liasses",
+        "100 liasse"
+      ]
+    },
+    "solution_steps": [
+      "Une liasse, c'est une dizaine de feuilles. On cherche combien de dizaines il y a dans 1 000.",
+      "1 000, c'est 10 centaines, et chaque centaine contient 10 dizaines.",
+      "Pour les 10 centaines, on compte les dizaines de 10 en 10 : 10, 20, 30, 40, 50, 60, 70, 80, 90, 100.",
+      "Il y a **100** liasses : 1 000, c'est 100 dizaines."
+    ],
+    "hint": "Une centaine, c'est combien de dizaines ? Et un millier, combien de centaines ?",
+    "estimated_duration_s": 60,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 2, CE2, Les nombres entiers : « Connaitre et utiliser les relations entre les unités de numération. »"
   },
   {
     "id": "EX-A009-M-01",
@@ -76,5 +138,43 @@
     "estimated_duration_s": 90,
     "review_status": "relu_agent",
     "programme_ref": "Cycle 2, CE2 : unités de numération."
+  },
+  {
+    "id": "EX-A009-M-02",
+    "skill_id": "A009",
+    "level": "maitrise",
+    "type": "qcm",
+    "statement": "Une collection contient 3 milliers, 15 centaines et 6 unités.\n\nQuel nombre représente-t-elle ?",
+    "image": null,
+    "choices": [
+      {
+        "key": "a",
+        "text": "3 156",
+        "misconception": "L'élève écrit côte à côte les nombres de l'énoncé (3, 15, 6) sans tenir compte des rangs : 15 centaines ne tiennent pas dans un seul rang, et le rang des dizaines, vide, a disparu."
+      },
+      {
+        "key": "b",
+        "text": "4 506",
+        "misconception": null
+      },
+      {
+        "key": "c",
+        "text": "3 506",
+        "misconception": "L'élève garde le 5 des 15 centaines mais oublie le millier qu'elles contiennent : 10 centaines font 1 millier."
+      }
+    ],
+    "answer": {
+      "value": "b"
+    },
+    "solution_steps": [
+      "15 centaines, c'est 10 centaines et 5 centaines. Or 10 centaines font 1 millier : 15 centaines, c'est 1 millier et 5 centaines.",
+      "Avec les 3 milliers, cela fait 4 milliers et 5 centaines.",
+      "Il n'y a aucune dizaine : on écrit 0 au rang des dizaines, puis 6 aux unités.",
+      "Le nombre est **4 506**."
+    ],
+    "hint": "Dix centaines font un millier.",
+    "estimated_duration_s": 120,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 2, CE2, Les nombres entiers : « Connaitre et utiliser les relations entre les unités de numération. »"
   }
 ]

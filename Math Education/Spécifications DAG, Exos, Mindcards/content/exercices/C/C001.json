@@ -37,6 +37,44 @@
     "programme_ref": "Cycle 2, CE1 : les fractions rencontrées au CE1 sont les fractions d'un tout."
   },
   {
+    "id": "EX-C001-D-02",
+    "skill_id": "C001",
+    "level": "decouverte",
+    "type": "qcm",
+    "statement": "Quelle fraction du disque est coloriée ?",
+    "image": "figures/EX-C001-D-02",
+    "choices": [
+      {
+        "key": "a",
+        "text": "$\\frac{1}{4}$",
+        "misconception": "L'élève met en bas le nombre de parts blanches (4) au lieu du nombre total de parts du disque (5)."
+      },
+      {
+        "key": "b",
+        "text": "$\\frac{1}{5}$",
+        "misconception": null
+      },
+      {
+        "key": "c",
+        "text": "$\\frac{4}{5}$",
+        "misconception": "L'élève écrit la fraction de la partie blanche, celle qui n'est pas coloriée, au lieu de la partie coloriée."
+      }
+    ],
+    "answer": {
+      "value": "b"
+    },
+    "solution_steps": [
+      "On compte toutes les parts du disque : 5 parts égales. C'est le nombre du bas.",
+      "1 part est coloriée : c'est le nombre du haut.",
+      "La partie coloriée est $\\frac{1}{5}$ du disque : un cinquième.",
+      "Attention : en bas, on écrit toutes les parts, coloriées ou blanches."
+    ],
+    "hint": "Compte toutes les parts du disque, puis les parts coloriées.",
+    "estimated_duration_s": 45,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 2, CE1 : l'élève sait repérer une partie correspondant à une fraction comme 1/2, 1/3 ou 1/6."
+  },
+  {
     "id": "EX-C001-E-01",
     "skill_id": "C001",
     "level": "entrainement",
@@ -75,6 +113,32 @@
     "programme_ref": "Cycle 2, CE1 : l'élève sait qu'il peut représenter la fraction 2/5 par un tout partagé en 5 parts égales dont il colorie 2 parts."
   },
   {
+    "id": "EX-C001-E-02",
+    "skill_id": "C001",
+    "level": "entrainement",
+    "type": "texte",
+    "statement": "Quelle fraction de la bande est coloriée ? Écris-la avec une barre.",
+    "image": "figures/EX-C001-E-02",
+    "answer": {
+      "value": "7/10",
+      "accepted": [
+        "7 / 10",
+        "sept dixièmes",
+        "7 dixièmes"
+      ]
+    },
+    "solution_steps": [
+      "On compte toutes les parts de la bande : 10 parts égales. En bas, on écrit 10.",
+      "On compte les parts coloriées une par une, même celles qui ne se touchent pas : 7. En haut, on écrit 7.",
+      "La fraction coloriée est $\\frac{7}{10}$ : sept dixièmes.",
+      "Les parts coloriées n'ont pas besoin d'être côte à côte : seul leur nombre compte."
+    ],
+    "hint": "Compte d'abord toutes les parts, puis seulement les parts coloriées.",
+    "estimated_duration_s": 60,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 2, CE1 : savoir interpréter, représenter, écrire et lire des fractions inférieures ou égales à 1."
+  },
+  {
     "id": "EX-C001-M-01",
     "skill_id": "C001",
     "level": "maitrise",
@@ -94,5 +158,43 @@
     "estimated_duration_s": 75,
     "review_status": "relu_agent",
     "programme_ref": "Cycle 2, CE1 : partage d'un tout en parts égales."
+  },
+  {
+    "id": "EX-C001-M-02",
+    "skill_id": "C001",
+    "level": "maitrise",
+    "type": "qcm",
+    "statement": "Les trois bandes sont pareilles. Sur quelle bande a-t-on colorié $\\frac{1}{4}$ de la bande ?",
+    "image": "figures/EX-C001-M-02",
+    "choices": [
+      {
+        "key": "a",
+        "text": "La bande A",
+        "misconception": "L'élève voit 1 part coloriée et 4 parts blanches : il met en bas les parts blanches au lieu de toutes les parts. La bande A a 5 parts : elle est coloriée au cinquième."
+      },
+      {
+        "key": "b",
+        "text": "La bande B",
+        "misconception": "L'élève reconnaît le 4 de la fraction dans les 4 parts coloriées de la bande B, sans regarder en combien de parts elle est partagée (8). La bande B est coloriée à moitié."
+      },
+      {
+        "key": "c",
+        "text": "La bande C",
+        "misconception": null
+      }
+    ],
+    "answer": {
+      "value": "c"
+    },
+    "solution_steps": [
+      "$\\frac{1}{4}$, c'est 1 part quand la bande est partagée en 4 parts égales.",
+      "Bande A : 5 parts égales, 1 coloriée. C'est $\\frac{1}{5}$, un cinquième.",
+      "Bande B : 8 parts égales, 4 coloriées. C'est $\\frac{4}{8}$ : la moitié de la bande.",
+      "Bande C : 4 parts égales, 1 coloriée. C'est $\\frac{1}{4}$, un quart. La réponse est la bande C."
+    ],
+    "hint": "Pour chaque bande, compte toutes les parts, puis les parts coloriées.",
+    "estimated_duration_s": 90,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 2, CE1 : l'élève sait identifier les figures représentant une fraction donnée (le programme prend l'exemple de 1/4)."
   }
 ]

@@ -24,6 +24,44 @@
     "programme_ref": "Cycle 4, 4e : simplifier une fraction."
   },
   {
+    "id": "EX-C007-D-02",
+    "skill_id": "C007",
+    "level": "decouverte",
+    "type": "qcm",
+    "statement": "On veut simplifier $\\frac{14}{35}$.\n\nPar quel nombre peut-on diviser à la fois le numérateur et le dénominateur ?",
+    "image": null,
+    "choices": [
+      {
+        "key": "a",
+        "text": "2",
+        "misconception": "L'élève ne regarde que le numérateur : 14 est pair, mais 35 est impair, donc 35 n'est pas divisible par 2."
+      },
+      {
+        "key": "b",
+        "text": "5",
+        "misconception": "L'élève ne regarde que le dénominateur : 35 se termine par 5, mais 14 n'est pas dans la table de 5."
+      },
+      {
+        "key": "c",
+        "text": "7",
+        "misconception": null
+      }
+    ],
+    "answer": {
+      "value": "c"
+    },
+    "solution_steps": [
+      "Pour simplifier, il faut un nombre qui divise **les deux** : le numérateur 14 et le dénominateur 35.",
+      "2 divise 14, mais pas 35, qui est impair. 5 divise 35, mais pas 14.",
+      "14 et 35 sont tous les deux dans la table de 7 : $14 = 2 \\times 7$ et $35 = 5 \\times 7$.",
+      "On divise les deux par 7 : $14 \\div 7 = 2$ et $35 \\div 7 = 5$. Donc $\\frac{14}{35} = \\frac{2}{5}$, et la valeur de la fraction n'a pas changé."
+    ],
+    "hint": "Cherche une table de multiplication qui contient à la fois 14 et 35.",
+    "estimated_duration_s": 60,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, 4e : simplifier une fraction."
+  },
+  {
     "id": "EX-C007-E-01",
     "skill_id": "C007",
     "level": "entrainement",
@@ -44,6 +82,32 @@
     ],
     "hint": "Les deux nombres se terminent par 5 ou 0.",
     "estimated_duration_s": 60,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, 4e : simplifier une fraction."
+  },
+  {
+    "id": "EX-C007-E-02",
+    "skill_id": "C007",
+    "level": "entrainement",
+    "type": "numerique",
+    "statement": "On simplifie $\\frac{56}{72}$ et on obtient une fraction de dénominateur 9.\n\nQuel est son numérateur ?",
+    "image": null,
+    "answer": {
+      "value": 7,
+      "accepted": [
+        "7/9",
+        "7 / 9"
+      ]
+    },
+    "solution_steps": [
+      "Pour passer du dénominateur 72 au dénominateur 9, on a divisé par 8, car $72 \\div 8 = 9$.",
+      "Pour que la fraction garde sa valeur, on divise le numérateur par **le même nombre** : $56 \\div 8 = 7$.",
+      "$\\frac{56}{72} = \\frac{7}{9}$ : 56 et 72 sont bien tous les deux dans la table de 8.",
+      "Le numérateur est **7**.",
+      "Piège : diviser 56 par 9, comme si le dénominateur final servait de diviseur, ne marche pas : 56 n'est pas dans la table de 9."
+    ],
+    "hint": "Par combien a-t-on divisé 72 pour obtenir 9 ?",
+    "estimated_duration_s": 90,
     "review_status": "relu_agent",
     "programme_ref": "Cycle 4, 4e : simplifier une fraction."
   },
@@ -82,6 +146,51 @@
     ],
     "hint": "Calcule d'abord le numérateur, puis compare avec ce que donnerait le fait de barrer les 4.",
     "estimated_duration_s": 120,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, 4e : simplifier une fraction."
+  },
+  {
+    "id": "EX-C007-M-02",
+    "skill_id": "C007",
+    "level": "maitrise",
+    "type": "qcm",
+    "statement": "Laquelle de ces égalités, écrites pour simplifier $\\frac{18}{27}$, est juste ?",
+    "image": null,
+    "choices": [
+      {
+        "key": "a",
+        "text": "$\\frac{18}{27} = \\frac{9}{9}$",
+        "misconception": "L'élève divise le numérateur par 2 et le dénominateur par 3. Diviser par deux nombres différents change la valeur : 9/9 vaut 1, alors que 18/27 est plus petit que 1."
+      },
+      {
+        "key": "b",
+        "text": "$\\frac{18}{27} = \\frac{8}{7}$",
+        "misconception": "L'élève barre le chiffre 1 de 18 et le chiffre 2 de 27, comme s'il simplifiait des chiffres. On ne simplifie que par un nombre qui divise le numérateur et le dénominateur ; 8/7 est même plus grand que 1."
+      },
+      {
+        "key": "c",
+        "text": "$\\frac{18}{27} = \\frac{15}{24}$",
+        "misconception": "L'élève retire 3 en haut et en bas, comme s'il divisait par 3. Soustraire le même nombre change la valeur : 15/24 vaut 5/8, pas 2/3."
+      },
+      {
+        "key": "d",
+        "text": "$\\frac{18}{27} = \\frac{6}{9}$",
+        "misconception": null
+      }
+    ],
+    "answer": {
+      "value": "d"
+    },
+    "solution_steps": [
+      "Simplifier, c'est diviser le numérateur et le dénominateur **par le même nombre**. On vérifie chaque égalité avec cette règle.",
+      "18 et 27 sont dans la table de 3 : $18 \\div 3 = 6$ et $27 \\div 3 = 9$. Donc $\\frac{18}{27} = \\frac{6}{9}$ : l'égalité d est juste.",
+      "Égalité a : 18 a été divisé par 2, mais 27 par 3. Deux diviseurs différents changent la valeur : $\\frac{9}{9} = 1$.",
+      "Égalité b : on a barré des chiffres. Cela ne correspond à aucune division, et $\\frac{8}{7}$ est plus grand que 1.",
+      "Égalité c : on a retiré 3 en haut et en bas. Une soustraction ne garde pas la valeur : $\\frac{15}{24} = \\frac{5}{8}$.",
+      "Remarque : $\\frac{6}{9}$ se simplifie encore par 3 en $\\frac{2}{3}$. L'égalité d est juste quand même : on peut simplifier en plusieurs fois."
+    ],
+    "hint": "Pour chaque égalité, demande-toi : a-t-on divisé le haut et le bas par le même nombre ?",
+    "estimated_duration_s": 150,
     "review_status": "relu_agent",
     "programme_ref": "Cycle 4, 4e : simplifier une fraction."
   }

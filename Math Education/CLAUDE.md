@@ -23,7 +23,7 @@ Application web d'apprentissage adaptatif des mathématiques, CP à Terminale à
 
 ### 2.1 Contenu (étape 5 fusionnée le 19 octobre 2026)
 
-**170 compétences, 967 exercices (dont 262 avec figure), 35 cartes mentales**, tous en `relu_agent` (relus par agents), en attente de la recette de Marius.
+**170 compétences, 1 036 exercices (dont 281 avec figure), 35 cartes mentales**, tous en `relu_agent` (relus par agents), en attente de la recette de Marius.
 
 | Domaine | Compétences | Classes couvertes |
 |---|---|---|
@@ -40,7 +40,7 @@ Application web d'apprentissage adaptatif des mathématiques, CP à Terminale à
 Étapes faites (bilans détaillés dans `Spécifications DAG, Exos, Mindcards/QUALITY.md`) : tranche pilote A et C ; 1 calcul ; 2 décimaux ; 3 proportionnalité ; 4a grandeurs et mesures ; figures (reprise de 30 exercices) ; 4b géométrie ; 5 relatifs et arithmétique (5e à 3e).
 
 Restes connus sur le contenu :
-- **tranche pilote incomplète : 23 compétences (A001 à A011, C001 à C012, CP à CM) n'ont que 3 exercices** au lieu de 6, avec des QCM dont la bonne réponse est souvent en « a » (le mélange à l'affichage le masque à l'élève, pas au validateur). À compléter par le circuit complet, de préférence avec l'étape 6 qui reprend le domaine C ;
+- tranche pilote **complétée le 20 octobre 2026** : plus aucune compétence sous 6 exercices (bilan dans `QUALITY.md`) ; EX-C030-D-01, E-03, M-02 demandent encore une fraction en `numerique` (à passer en `texte`) ;
 - MM-A-01 couvre 12 compétences (règle : 4 à 8) : à scinder lors de cette reprise ;
 - le validateur réserve `<` et `>` aux descendants de A006 (CE1), alors que le programme du CP les emploie déjà : à vérifier dans le programme avant de changer la règle ;
 - reprise du 20 octobre 2026, relue et contre-relue : citations de A004, A005, A006, A008 (et rubrique de A011), énoncés de C001, C003, C009 sous le plafond du CE1, 6 anciennes cartes remises au niveau (toutes les cartes sont maintenant `relu_agent`), indice faux de EX-A027-D-01 corrigé. Plus aucune anomalie de coordination dans `RELECTURE.md`. Mineur laissé : l'exemple de MM-C-03 (C011) donne 95/60, non simplifié.

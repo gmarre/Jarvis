@@ -37,6 +37,27 @@
     "programme_ref": "Cycle 2, CE2 : établir des égalités entre fractions."
   },
   {
+    "id": "EX-C006-D-02",
+    "skill_id": "C006",
+    "level": "decouverte",
+    "type": "vrai_faux",
+    "statement": "Les bandes A et B sont pareilles. La même fraction de bande est coloriée sur A et sur B.",
+    "image": "figures/EX-C006-D-02",
+    "answer": {
+      "value": true
+    },
+    "solution_steps": [
+      "Bande A : 4 parts égales, 1 coloriée. C'est $\\frac{1}{4}$.",
+      "Bande B : 8 parts égales, 2 coloriées. C'est $\\frac{2}{8}$.",
+      "Sur la figure, les parties coloriées ont la même longueur : la part coloriée de A recouvre exactement 2 parts de B.",
+      "$\\frac{1}{4} = \\frac{2}{8}$ : l'affirmation est **vraie**. Les parts de B sont deux fois plus petites, et on en a colorié deux fois plus."
+    ],
+    "hint": "Compare la longueur coloriée sur A et sur B.",
+    "estimated_duration_s": 45,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 2, CE2 : savoir établir des égalités de fractions inférieures ou égales à 1."
+  },
+  {
     "id": "EX-C006-E-01",
     "skill_id": "C006",
     "level": "entrainement",
@@ -55,6 +76,31 @@
     "estimated_duration_s": 60,
     "review_status": "relu_agent",
     "programme_ref": "Cycle 2, CE2 : établir des égalités entre fractions."
+  },
+  {
+    "id": "EX-C006-E-02",
+    "skill_id": "C006",
+    "level": "entrainement",
+    "type": "numerique",
+    "statement": "Les bandes A et B sont pareilles. Combien de parts de la bande B faut-il colorier pour colorier la même longueur que sur A ?",
+    "image": "figures/EX-C006-E-02",
+    "answer": {
+      "value": 6,
+      "accepted": [
+        "6 parts"
+      ]
+    },
+    "solution_steps": [
+      "Bande A : 5 parts égales, 3 coloriées. C'est $\\frac{3}{5}$.",
+      "Bande B : 10 parts égales. Sur la figure, chaque part de A recouvre exactement 2 parts de B.",
+      "Pour 3 parts de A, il faut $3 \\times 2 = 6$ parts de B.",
+      "$\\frac{3}{5} = \\frac{3 \\times 2}{5 \\times 2} = \\frac{6}{10}$ : on colorie **6** parts.",
+      "Colorier 3 parts de B ne suffit pas : $\\frac{3}{10}$, c'est deux fois moins que $\\frac{3}{5}$."
+    ],
+    "hint": "Combien de parts de B tiennent sous une part de A ?",
+    "estimated_duration_s": 70,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 2, CE2 : savoir établir des égalités de fractions inférieures ou égales à 1."
   },
   {
     "id": "EX-C006-M-01",
@@ -93,5 +139,43 @@
     "estimated_duration_s": 120,
     "review_status": "relu_agent",
     "programme_ref": "Cycle 2, CE2 : établir des égalités entre fractions."
+  },
+  {
+    "id": "EX-C006-M-02",
+    "skill_id": "C006",
+    "level": "maitrise",
+    "type": "qcm",
+    "statement": "Tom mange $\\frac{3}{9}$ de la barre A. Léa mange $\\frac{1}{3}$ de la barre B, pareille. Qui a mangé le plus ?",
+    "image": "figures/EX-C006-M-02",
+    "choices": [
+      {
+        "key": "a",
+        "text": "Tom",
+        "misconception": "L'élève compare les numérateurs : 3 parts, c'est plus que 1 part. Il ne voit pas que les parts de Tom sont trois fois plus petites."
+      },
+      {
+        "key": "b",
+        "text": "Léa",
+        "misconception": "L'élève voit que la part de Léa est plus grosse (un tiers contre des neuvièmes) et conclut qu'elle a mangé plus, sans tenir compte du nombre de parts."
+      },
+      {
+        "key": "c",
+        "text": "Ils ont mangé autant",
+        "misconception": null
+      }
+    ],
+    "answer": {
+      "value": "c"
+    },
+    "solution_steps": [
+      "Une part de la barre B (un tiers) recouvre exactement 3 parts de la barre A (3 neuvièmes).",
+      "Léa a mangé la même longueur que 3 parts de A, autant que Tom.",
+      "$\\frac{1}{3} = \\frac{1 \\times 3}{3 \\times 3} = \\frac{3}{9}$ : des parts trois fois plus petites, trois fois plus de parts.",
+      "Ils ont mangé autant."
+    ],
+    "hint": "Combien de parts de A tiennent sous une part de B ?",
+    "estimated_duration_s": 120,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 2, CE2 : l'élève sait expliquer pourquoi six huitièmes d'un tout est égal à trois quarts de ce tout."
   }
 ]

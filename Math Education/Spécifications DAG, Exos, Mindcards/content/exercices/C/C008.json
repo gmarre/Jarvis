@@ -24,6 +24,27 @@
     "programme_ref": "Cycle 4, 3e : mettre une fraction sous forme irréductible."
   },
   {
+    "id": "EX-C008-D-02",
+    "skill_id": "C008",
+    "level": "decouverte",
+    "type": "vrai_faux",
+    "statement": "La fraction $\\frac{21}{25}$ est irréductible.",
+    "image": null,
+    "answer": {
+      "value": true
+    },
+    "solution_steps": [
+      "Une fraction est irréductible quand son numérateur et son dénominateur n'ont aucun diviseur commun autre que 1.",
+      "Diviseurs de 21 : 1, 3, 7 et 21. Diviseurs de 25 : 1, 5 et 25.",
+      "Le seul diviseur commun est 1 : on ne peut pas simplifier. L'affirmation est **vraie**.",
+      "Piège : ni 21 ni 25 n'est un nombre premier, et pourtant la fraction est irréductible. Ce qui compte, c'est un diviseur **commun** aux deux nombres."
+    ],
+    "hint": "Écris la liste des diviseurs de 21, puis celle de 25. Ont-elles un nombre en commun autre que 1 ?",
+    "estimated_duration_s": 60,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, 3e : mettre une fraction sous forme irréductible."
+  },
+  {
     "id": "EX-C008-E-01",
     "skill_id": "C008",
     "level": "entrainement",
@@ -45,6 +66,31 @@
     ],
     "hint": "Procède par étapes successives : 2, puis 3, puis 7.",
     "estimated_duration_s": 150,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, 3e : rendre irréductible une fraction."
+  },
+  {
+    "id": "EX-C008-E-02",
+    "skill_id": "C008",
+    "level": "entrainement",
+    "type": "texte",
+    "statement": "Écris $\\frac{162}{180}$ sous forme irréductible.\n\nÉcris ta réponse sous la forme numérateur/dénominateur.",
+    "image": null,
+    "answer": {
+      "value": "9/10",
+      "accepted": [
+        "9 / 10"
+      ]
+    },
+    "solution_steps": [
+      "162 et 180 sont pairs : on divise par 2. $\\frac{162}{180} = \\frac{81}{90}$.",
+      "81 et 90 sont dans la table de 9 : $81 \\div 9 = 9$ et $90 \\div 9 = 10$. Donc $\\frac{81}{90} = \\frac{9}{10}$.",
+      "Diviseurs de 9 : 1, 3 et 9. Aucun ne divise 10, sauf 1 : $\\frac{9}{10}$ est irréductible.",
+      "On pouvait aussi diviser directement par 18, car $162 = 9 \\times 18$ et $180 = 10 \\times 18$.",
+      "Piège : s'arrêter à $\\frac{81}{90}$. Cette fraction est simplifiée, mais pas irréductible : 81 et 90 ont encore 9 comme diviseur commun."
+    ],
+    "hint": "Commence par diviser par 2. Ensuite, la somme des chiffres de chaque nombre te dit par quoi continuer.",
+    "estimated_duration_s": 120,
     "review_status": "relu_agent",
     "programme_ref": "Cycle 4, 3e : rendre irréductible une fraction."
   },
@@ -91,5 +137,31 @@
     "estimated_duration_s": 150,
     "review_status": "relu_agent",
     "programme_ref": "Cycle 4, 3e : mettre une fraction sous forme irréductible."
+  },
+  {
+    "id": "EX-C008-M-02",
+    "skill_id": "C008",
+    "level": "maitrise",
+    "type": "texte",
+    "statement": "Un collège compte 840 élèves, dont 315 demi-pensionnaires.\n\nQuelle fraction des élèves est demi-pensionnaire ? Donne-la sous forme irréductible, avec une barre de fraction.",
+    "image": null,
+    "answer": {
+      "value": "3/8",
+      "accepted": [
+        "3 / 8"
+      ]
+    },
+    "solution_steps": [
+      "315 élèves sur 840 sont demi-pensionnaires : la fraction est $\\frac{315}{840}$.",
+      "315 et 840 se terminent par 5 et par 0 : on divise par 5. $\\frac{315}{840} = \\frac{63}{168}$.",
+      "63 et 168 sont dans la table de 3 (sommes des chiffres : $6 + 3 = 9$ et $1 + 6 + 8 = 15$) : on divise par 3. $\\frac{63}{168} = \\frac{21}{56}$.",
+      "21 et 56 sont dans la table de 7 : on divise par 7. $\\frac{21}{56} = \\frac{3}{8}$.",
+      "3 et 8 n'ont pas d'autre diviseur commun que 1 : $\\frac{3}{8}$ est irréductible.",
+      "Vérification : $3 \\times 105 = 315$ et $8 \\times 105 = 840$. On a divisé en tout par $5 \\times 3 \\times 7 = 105$."
+    ],
+    "hint": "Écris d'abord la fraction : élèves demi-pensionnaires sur élèves en tout. Puis simplifie en plusieurs étapes.",
+    "estimated_duration_s": 180,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, 3e : résoudre des problèmes faisant appel à des fractions."
   }
 ]

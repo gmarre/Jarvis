@@ -37,6 +37,27 @@
     "programme_ref": "Cycle 2, CE1 : comparer les entiers."
   },
   {
+    "id": "EX-A006-D-02",
+    "skill_id": "A006",
+    "level": "decouverte",
+    "type": "vrai_faux",
+    "statement": "Cette écriture est-elle vraie ?\n\n$71 > 69$",
+    "image": null,
+    "answer": {
+      "value": true
+    },
+    "solution_steps": [
+      "Les deux nombres ont deux chiffres : on compare d'abord les dizaines.",
+      "71 a 7 dizaines, 69 en a 6. 7 dizaines, c'est plus que 6 dizaines : 71 est le plus grand.",
+      "Le signe $>$ se lit « est plus grand que ». L'écriture $71 > 69$ est **vraie**.",
+      "Erreur à éviter : comparer les unités, 1 et 9. Le 9 de 69 est grand, mais ce sont les dizaines qui décident."
+    ],
+    "hint": "Compare d'abord les chiffres des dizaines.",
+    "estimated_duration_s": 35,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 2, CP : l'élève sait placer le symbole qui convient (= ou < ou >) entre deux nombres, par exemple entre 49 et 53."
+  },
+  {
     "id": "EX-A006-E-01",
     "skill_id": "A006",
     "level": "entrainement",
@@ -75,6 +96,45 @@
     "programme_ref": "Cycle 2, CE1 : comparer les entiers jusqu'à mille."
   },
   {
+    "id": "EX-A006-E-02",
+    "skill_id": "A006",
+    "level": "entrainement",
+    "type": "qcm",
+    "statement": "Quel nombre est compris entre 650 et 700 ?",
+    "image": null,
+    "choices": [
+      {
+        "key": "a",
+        "text": "605",
+        "misconception": "L'élève voit 6 centaines comme dans 650 et s'arrête là, sans comparer les dizaines : 605 a 0 dizaine, il est plus petit que 650."
+      },
+      {
+        "key": "b",
+        "text": "710",
+        "misconception": "L'élève vérifie seulement que le nombre est plus grand que 650 et oublie la borne 700."
+      },
+      {
+        "key": "c",
+        "text": "690",
+        "misconception": null
+      }
+    ],
+    "answer": {
+      "value": "c"
+    },
+    "solution_steps": [
+      "Un nombre compris entre 650 et 700 est plus grand que 650 et plus petit que 700.",
+      "605 a 6 centaines comme 650, mais 0 dizaine contre 5 : il est plus petit que 650.",
+      "710 a 7 centaines et 1 dizaine : il est plus grand que 700.",
+      "690 a 6 centaines et 9 dizaines : il est plus grand que 650. Il est plus petit que 700, qui a 7 centaines.",
+      "La réponse est **690**. On peut écrire $650 < 690 < 700$."
+    ],
+    "hint": "Pour chaque nombre, compare d'abord les centaines, puis les dizaines.",
+    "estimated_duration_s": 50,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 2, CE1 : comprendre et savoir utiliser les expressions « égal à », « supérieur à », « inférieur à », « compris entre … et … »."
+  },
+  {
     "id": "EX-A006-M-01",
     "skill_id": "A006",
     "level": "maitrise",
@@ -110,5 +170,30 @@
     "estimated_duration_s": 45,
     "review_status": "relu_agent",
     "programme_ref": "Cycle 2, CE1 : comparer les entiers jusqu'à mille."
+  },
+  {
+    "id": "EX-A006-M-02",
+    "skill_id": "A006",
+    "level": "maitrise",
+    "type": "numerique",
+    "statement": "Quel chiffre faut-il écrire dans la case pour que ce soit vrai ?\n\n$4\\square 6 > 486$",
+    "image": null,
+    "answer": {
+      "value": 9,
+      "accepted": [
+        "neuf"
+      ]
+    },
+    "solution_steps": [
+      "Les deux nombres ont 3 chiffres et le même chiffre des centaines, 4.",
+      "On compare donc les dizaines : le chiffre de la case contre le 8 de 486.",
+      "Avec un chiffre plus petit que 8 dans la case, le nombre est plus petit que 486.",
+      "Avec 8 dans la case, on obtient 486 : les deux nombres sont égaux, et $486 > 486$ est faux.",
+      "Il faut un chiffre plus grand que 8 : seul **9** convient. En effet, $496 > 486$."
+    ],
+    "hint": "Essaie de mettre 8 dans la case. L'écriture est-elle vraie ?",
+    "estimated_duration_s": 75,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 2, CE1 : comparer, encadrer, intercaler des nombres entiers en utilisant les symboles (=, <, >)."
   }
 ]

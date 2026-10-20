@@ -20,6 +20,26 @@
     "programme_ref": "Cycle 2, CE1 : connaître et utiliser les mots « dénominateur » et « numérateur »."
   },
   {
+    "id": "EX-C002-D-02",
+    "skill_id": "C002",
+    "level": "decouverte",
+    "type": "numerique",
+    "statement": "Quel est le **numérateur** de la fraction coloriée du rectangle ?",
+    "image": "figures/EX-C002-D-02",
+    "answer": {
+      "value": 3
+    },
+    "solution_steps": [
+      "Le rectangle est partagé en 8 parts égales : 8 s'écrit en bas, c'est le dénominateur.",
+      "3 parts sont coloriées : le numérateur, en haut, est **3**.",
+      "La fraction coloriée est $\\frac{3}{8}$. Le numérateur compte les parts coloriées."
+    ],
+    "hint": "Le numérateur compte les parts coloriées.",
+    "estimated_duration_s": 30,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 2, CE1 : il sait que le dénominateur indique le nombre total de parts égales et le numérateur le nombre de parts coloriées."
+  },
+  {
     "id": "EX-C002-E-01",
     "skill_id": "C002",
     "level": "entrainement",
@@ -57,6 +77,45 @@
     "programme_ref": "Cycle 2, CE1 : le numérateur le nombre de parts coloriées."
   },
   {
+    "id": "EX-C002-E-02",
+    "skill_id": "C002",
+    "level": "entrainement",
+    "type": "qcm",
+    "statement": "Sur quelle bande la fraction coloriée a-t-elle pour numérateur 2 ?",
+    "image": "figures/EX-C002-E-02",
+    "choices": [
+      {
+        "key": "a",
+        "text": "La bande A",
+        "misconception": "L'élève compte les 2 parts blanches de la bande A au lieu de ses parts coloriées. Le numérateur compte les parts coloriées : ici 1."
+      },
+      {
+        "key": "b",
+        "text": "La bande B",
+        "misconception": null
+      },
+      {
+        "key": "c",
+        "text": "La bande C",
+        "misconception": "L'élève cherche un 2 n'importe où : la bande C est partagée en 2 parts, c'est son dénominateur. Son numérateur est 1."
+      }
+    ],
+    "answer": {
+      "value": "b"
+    },
+    "solution_steps": [
+      "Le numérateur compte les parts coloriées.",
+      "Bande A : 1 part coloriée sur 3. Fraction $\\frac{1}{3}$, numérateur 1.",
+      "Bande B : 2 parts coloriées sur 10. Fraction $\\frac{2}{10}$, numérateur 2.",
+      "Bande C : 1 part coloriée sur 2. Fraction $\\frac{1}{2}$ : son 2 est le dénominateur, pas le numérateur.",
+      "La réponse est la bande B."
+    ],
+    "hint": "Le numérateur compte les parts coloriées, pas toutes les parts.",
+    "estimated_duration_s": 50,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 2, CE1 : connaître et utiliser les mots « dénominateur » et « numérateur »."
+  },
+  {
     "id": "EX-C002-M-01",
     "skill_id": "C002",
     "level": "maitrise",
@@ -76,5 +135,48 @@
     "estimated_duration_s": 75,
     "review_status": "relu_agent",
     "programme_ref": "Cycle 2, CE1 : connaître et utiliser les mots « dénominateur » et « numérateur »."
+  },
+  {
+    "id": "EX-C002-M-02",
+    "skill_id": "C002",
+    "level": "maitrise",
+    "type": "qcm",
+    "statement": "Lina colorie une part blanche de plus sur ce disque. Quelle fraction du disque est alors coloriée ?",
+    "image": "figures/EX-C002-M-02",
+    "choices": [
+      {
+        "key": "a",
+        "text": "$\\frac{4}{6}$",
+        "misconception": "L'élève croit que colorier une part ajoute une part au disque : il augmente le numérateur, et le dénominateur aussi. Le disque a toujours 5 parts."
+      },
+      {
+        "key": "b",
+        "text": "$\\frac{3}{6}$",
+        "misconception": "L'élève ajoute la part en bas au lieu de l'ajouter en haut : il confond le rôle du numérateur et celui du dénominateur."
+      },
+      {
+        "key": "c",
+        "text": "$\\frac{3}{5}$",
+        "misconception": "L'élève écrit la fraction coloriée d'avant : il ne voit pas que le numérateur change quand le nombre de parts coloriées change."
+      },
+      {
+        "key": "d",
+        "text": "$\\frac{4}{5}$",
+        "misconception": null
+      }
+    ],
+    "answer": {
+      "value": "d"
+    },
+    "solution_steps": [
+      "Sur la figure, 3 parts sur 5 sont coloriées : $\\frac{3}{5}$ du disque.",
+      "Lina colorie une part de plus. On compte les parts coloriées : 4. Le numérateur, qui compte les parts coloriées, devient 4.",
+      "Le disque est toujours partagé en 5 parts égales : le dénominateur ne change pas, il reste 5.",
+      "La fraction coloriée est $\\frac{4}{5}$."
+    ],
+    "hint": "Quand on colorie une part, qu'est-ce qui change : le nombre de parts coloriées, ou le nombre total de parts ?",
+    "estimated_duration_s": 80,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 2, CE1 : il sait que le dénominateur indique le nombre total de parts égales et le numérateur le nombre de parts coloriées."
   }
 ]

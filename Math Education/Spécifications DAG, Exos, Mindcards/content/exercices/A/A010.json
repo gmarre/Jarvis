@@ -25,6 +25,43 @@
     "programme_ref": "Cycle 2, CE2 : décomposition additive sous la forme 4 000 + 600 + 30 + 5."
   },
   {
+    "id": "EX-A010-D-02",
+    "skill_id": "A010",
+    "level": "decouverte",
+    "type": "qcm",
+    "statement": "Quelle décomposition de 3 571 est juste ?",
+    "image": null,
+    "choices": [
+      {
+        "key": "a",
+        "text": "3 + 5 + 7 + 1",
+        "misconception": "L'élève additionne les chiffres sans tenir compte de leur rang. Cette somme vaut 16, pas 3 571."
+      },
+      {
+        "key": "b",
+        "text": "3 000 + 500 + 70 + 1",
+        "misconception": null
+      },
+      {
+        "key": "c",
+        "text": "3 000 + 500 + 7 + 1",
+        "misconception": "L'élève donne leur valeur aux milliers et aux centaines, puis recopie le 7 tel quel, alors qu'il est au rang des dizaines : il vaut 70. Cette somme vaut 3 508."
+      }
+    ],
+    "answer": {
+      "value": "b"
+    },
+    "solution_steps": [
+      "3 571 contient 3 milliers, 5 centaines, 7 dizaines et 1 unité.",
+      "3 milliers valent 3 000, 5 centaines valent 500, 7 dizaines valent 70, 1 unité vaut 1.",
+      "$3\\,571 = 3\\,000 + 500 + 70 + 1$."
+    ],
+    "hint": "Un chiffre ne vaut pas la même chose selon son rang.",
+    "estimated_duration_s": 45,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 2, CE2, Les nombres entiers : « décomposition additive sous la forme 4 000 + 600 + 30 + 5 »"
+  },
+  {
     "id": "EX-A010-E-01",
     "skill_id": "A010",
     "level": "entrainement",
@@ -45,6 +82,27 @@
     "programme_ref": "Cycle 2, CE2 : décomposition du type (4 × 1 000) + (6 × 100) + (3 × 10) + (5 × 1)."
   },
   {
+    "id": "EX-A010-E-02",
+    "skill_id": "A010",
+    "level": "entrainement",
+    "type": "vrai_faux",
+    "statement": "Lina écrit : « $8\\,000 + 70 + 500 + 9 = 8\\,759$ ».\n\nA-t-elle raison ?",
+    "image": null,
+    "answer": {
+      "value": false
+    },
+    "solution_steps": [
+      "Les termes ne sont pas dans l'ordre des rangs : 70, ce sont 7 dizaines ; 500, ce sont 5 centaines.",
+      "On remet chaque terme à son rang : 8 milliers, 5 centaines, 7 dizaines, 9 unités.",
+      "$8\\,000 + 500 + 70 + 9 = 8\\,579$, et non 8 759 : Lina se trompe.",
+      "Le piège : recopier les chiffres dans l'ordre où ils apparaissent, sans regarder leur rang."
+    ],
+    "hint": "Range d'abord les termes du plus grand au plus petit.",
+    "estimated_duration_s": 50,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 2, CE2, Les nombres entiers : « décomposition additive sous la forme 4 000 + 600 + 30 + 5 »"
+  },
+  {
     "id": "EX-A010-M-01",
     "skill_id": "A010",
     "level": "maitrise",
@@ -63,5 +121,31 @@
     "estimated_duration_s": 90,
     "review_status": "relu_agent",
     "programme_ref": "Cycle 2, CE2 : décomposition en unités de numération."
+  },
+  {
+    "id": "EX-A010-M-02",
+    "skill_id": "A010",
+    "level": "maitrise",
+    "type": "numerique",
+    "statement": "Complète : $6\\,205 = 5\\,000 + \\ldots + 5$",
+    "image": null,
+    "answer": {
+      "value": 1200,
+      "accepted": [
+        "1000 + 200",
+        "200 + 1000"
+      ]
+    },
+    "solution_steps": [
+      "Ce n'est pas la décomposition habituelle : elle commence par 5 000, pas par 6 000.",
+      "6 000, c'est 5 000 plus 1 000. Donc $6\\,205 = 5\\,000 + 1\\,000 + 200 + 5$.",
+      "On regroupe 1 000 et 200 : cela fait 1 200.",
+      "$6\\,205 = 5\\,000 + 1\\,200 + 5$. Le nombre manquant est **1 200**.",
+      "Le piège : répondre 200, en écrivant la décomposition habituelle sans voir qu'il manque un millier."
+    ],
+    "hint": "Combien manque-t-il à 5 000 pour faire 6 000 ?",
+    "estimated_duration_s": 120,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 2, CE2, Les nombres entiers : « décomposition additive sous la forme 4 000 + 600 + 30 + 5 »"
   }
 ]

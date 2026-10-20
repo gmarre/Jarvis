@@ -24,6 +24,49 @@
     "programme_ref": "Cycle 2, CE2 : les nombres jusqu'à 10 000."
   },
   {
+    "id": "EX-A007-D-02",
+    "skill_id": "A007",
+    "level": "decouverte",
+    "type": "qcm",
+    "statement": "Range ces scores par ordre **croissant** (du plus petit au plus grand) : 305, 53, 350, 35.\n\nQuel rangement est juste ?",
+    "image": null,
+    "choices": [
+      {
+        "key": "a",
+        "text": "350, 305, 53, 35",
+        "misconception": "L'élève range du plus grand au plus petit : c'est l'ordre décroissant. Croissant veut dire que les nombres augmentent."
+      },
+      {
+        "key": "b",
+        "text": "305, 35, 350, 53",
+        "misconception": "L'élève compare les nombres chiffre par chiffre en partant de la gauche, sans regarder combien de chiffres ils ont : 305, 35 et 350 commencent par 3, 53 par 5. Or un nombre de deux chiffres est plus petit qu'un nombre de trois chiffres."
+      },
+      {
+        "key": "c",
+        "text": "35, 53, 305, 350",
+        "misconception": null
+      },
+      {
+        "key": "d",
+        "text": "35, 53, 350, 305",
+        "misconception": "L'élève départage 305 et 350 par le chiffre des unités (0 est plus petit que 5). Il faut comparer d'abord les dizaines : 0 dizaine dans 305, 5 dizaines dans 350."
+      }
+    ],
+    "answer": {
+      "value": "c"
+    },
+    "solution_steps": [
+      "Ordre croissant : du plus petit au plus grand.",
+      "35 et 53 s'écrivent avec deux chiffres : ils sont plus petits que 305 et 350, qui en ont trois. Et $35 < 53$ (3 dizaines contre 5).",
+      "305 et 350 ont le même chiffre des centaines, 3. On compare les dizaines : 0 dans 305, 5 dans 350. Donc $305 < 350$.",
+      "Réponse : 35, 53, 305, 350."
+    ],
+    "hint": "Commence par compter les chiffres de chaque nombre.",
+    "estimated_duration_s": 50,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 2, CE2, Les nombres entiers : « Ordonner des nombres dans l'ordre croissant ou décroissant. »"
+  },
+  {
     "id": "EX-A007-E-01",
     "skill_id": "A007",
     "level": "entrainement",
@@ -50,6 +93,44 @@
     "programme_ref": "Cycle 2, CE2 : les nombres jusqu'à 10 000."
   },
   {
+    "id": "EX-A007-E-02",
+    "skill_id": "A007",
+    "level": "entrainement",
+    "type": "qcm",
+    "statement": "À la course d'orientation, les temps en secondes : Nina 1 392, Hugo 1 507, Malo 1 386, Lou 1 429.\n\nLe plus petit temps gagne. Qui est deuxième ?",
+    "image": null,
+    "choices": [
+      {
+        "key": "a",
+        "text": "Lou",
+        "misconception": "L'élève range les temps du plus grand au plus petit (Hugo, puis Lou) : il croit que le plus grand nombre gagne. Ici, le plus rapide met le moins de temps, il faut ranger par ordre croissant."
+      },
+      {
+        "key": "b",
+        "text": "Nina",
+        "misconception": null
+      },
+      {
+        "key": "c",
+        "text": "Malo",
+        "misconception": "L'élève départage 1 392 et 1 386 par le chiffre des unités (2 est plus petit que 6) et place Nina avant Malo. Il faut comparer d'abord les dizaines : 8 pour Malo, 9 pour Nina. Malo est en fait le premier."
+      }
+    ],
+    "answer": {
+      "value": "b"
+    },
+    "solution_steps": [
+      "Le plus rapide a le plus petit temps : on range les temps par ordre croissant.",
+      "Les quatre temps ont 1 millier. Centaines : 3 pour 1 392 et 1 386, 4 pour 1 429, 5 pour 1 507. Les deux plus petits temps sont donc 1 392 et 1 386.",
+      "Entre 1 386 et 1 392, on compare les dizaines : 8 contre 9, donc $1\\,386 < 1\\,392$.",
+      "Ordre croissant : Malo (1 386), Nina (1 392), Lou (1 429), Hugo (1 507). Malo gagne, **Nina** arrive deuxième."
+    ],
+    "hint": "Range d'abord les temps du plus petit au plus grand.",
+    "estimated_duration_s": 90,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 2, CE2, Les nombres entiers : « L'élève sait ordonner dans l'ordre croissant ou décroissant un ensemble pouvant aller jusqu'à cinq nombres »"
+  },
+  {
     "id": "EX-A007-M-01",
     "skill_id": "A007",
     "level": "maitrise",
@@ -69,5 +150,26 @@
     "estimated_duration_s": 60,
     "review_status": "relu_agent",
     "programme_ref": "Cycle 2, CE2 : les nombres jusqu'à 10 000."
+  },
+  {
+    "id": "EX-A007-M-02",
+    "skill_id": "A007",
+    "level": "maitrise",
+    "type": "numerique",
+    "statement": "Ces trois nombres sont rangés par ordre croissant : 6 487, 6 4■2, 6 495.\n\nQuel chiffre est caché par ■ ?",
+    "image": null,
+    "answer": {
+      "value": 9
+    },
+    "solution_steps": [
+      "Les trois nombres ont 6 milliers et 4 centaines : tout se joue sur les dizaines et les unités.",
+      "6 4■2 doit être plus grand que 6 487. Avec 8 dizaines, on aurait 6 482, plus petit que 6 487 (2 unités contre 7) : il faut au moins 9 dizaines.",
+      "6 4■2 doit être plus petit que 6 495. Avec 9 dizaines, 6 492 est bien plus petit que 6 495 (2 unités contre 5).",
+      "Le chiffre caché est **9** : $6\\,487 < 6\\,492 < 6\\,495$."
+    ],
+    "hint": "Les milliers et les centaines sont les mêmes partout : compare les dizaines, puis les unités.",
+    "estimated_duration_s": 120,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 2, CE2, Les nombres entiers : « Comparer, encadrer, intercaler des nombres entiers en utilisant les symboles (=, <, >). »"
   }
 ]

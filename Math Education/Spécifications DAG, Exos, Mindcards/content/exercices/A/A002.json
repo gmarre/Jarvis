@@ -20,6 +20,32 @@
     "programme_ref": "Cycle 2, CP : à la fin du CP, l'élève maîtrise l'écriture en lettres des nombres jusqu'à cinquante."
   },
   {
+    "id": "EX-A002-D-02",
+    "skill_id": "A002",
+    "level": "decouverte",
+    "type": "numerique",
+    "statement": "Lina a 5 boîtes de 10 œufs et 3 œufs seuls.\n\nCombien d'œufs a-t-elle ?",
+    "image": null,
+    "answer": {
+      "value": 53,
+      "accepted": [
+        "53 œufs",
+        "53 oeufs"
+      ]
+    },
+    "solution_steps": [
+      "Chaque boîte contient 10 œufs : 5 boîtes, c'est 5 dizaines d'œufs.",
+      "On compte les boîtes de dix en dix : 10, 20, 30, 40, 50.",
+      "On continue avec les 3 œufs seuls, un par un : 51, 52, 53.",
+      "Lina a **53** œufs : 5 dizaines et 3 unités.",
+      "Erreur à éviter : répondre 8, en comptant chaque boîte comme un seul œuf."
+    ],
+    "hint": "Compte les boîtes de dix en dix, puis les œufs seuls un par un.",
+    "estimated_duration_s": 35,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 2, CP : connaitre la valeur des chiffres en fonction de leur position (unités, dizaines)."
+  },
+  {
     "id": "EX-A002-E-01",
     "skill_id": "A002",
     "level": "entrainement",
@@ -38,6 +64,27 @@
     "estimated_duration_s": 30,
     "review_status": "relu_agent",
     "programme_ref": "Cycle 2, CP : les nombres entiers jusqu'à cent."
+  },
+  {
+    "id": "EX-A002-E-02",
+    "skill_id": "A002",
+    "level": "entrainement",
+    "type": "numerique",
+    "statement": "Quel nombre est repéré par le point A ?",
+    "image": "figures/EX-A002-E-02",
+    "answer": {
+      "value": 57
+    },
+    "solution_steps": [
+      "La demi-droite est graduée de un en un : d'un trait au suivant, on avance de 1. De 50 à 60, il y a bien 10 pas.",
+      "On part du trait de 50 et on avance trait par trait jusqu'au point A : 51, 52, 53, 54, 55, 56, 57.",
+      "Le point A repère le nombre **57**.",
+      "Erreur à éviter : dire « 51 » sur le trait de 50. On compterait un trait de trop et on trouverait 58."
+    ],
+    "hint": "Pars du trait de 50 et avance d'un trait à la fois jusqu'au point A.",
+    "estimated_duration_s": 45,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 2, CP : savoir placer des nombres sur une demi-droite graduée de un en un."
   },
   {
     "id": "EX-A002-M-01",
@@ -75,5 +122,43 @@
     "estimated_duration_s": 45,
     "review_status": "relu_agent",
     "programme_ref": "Cycle 2, CP : les nombres entiers jusqu'à cent."
+  },
+  {
+    "id": "EX-A002-M-02",
+    "skill_id": "A002",
+    "level": "maitrise",
+    "type": "qcm",
+    "statement": "Léo a 4 paquets de 10 cartes et 12 cartes seules.\n\nCombien a-t-il de cartes ?",
+    "image": null,
+    "choices": [
+      {
+        "key": "a",
+        "text": "16",
+        "misconception": "L'élève compte chaque paquet comme une seule carte : 4 et 12 font 16. Mais un paquet contient 10 cartes."
+      },
+      {
+        "key": "b",
+        "text": "42",
+        "misconception": "L'élève écrit 4 pour les dizaines et garde seulement le 2 de 12 : il oublie que les 12 cartes seules contiennent une dizaine de plus."
+      },
+      {
+        "key": "c",
+        "text": "52",
+        "misconception": null
+      }
+    ],
+    "answer": {
+      "value": "c"
+    },
+    "solution_steps": [
+      "Les 4 paquets de 10 font 4 dizaines.",
+      "Avec les 12 cartes seules, on peut faire un paquet de plus : 10 cartes, et il en reste 2.",
+      "Léo a donc 5 paquets de 10 et 2 cartes seules : 5 dizaines et 2 unités.",
+      "On compte de dix en dix, puis de un en un : 10, 20, 30, 40, 50, 51, 52. Léo a **52** cartes."
+    ],
+    "hint": "Avec les 12 cartes seules, peux-tu faire un nouveau paquet de 10 ?",
+    "estimated_duration_s": 60,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 2, CP : comparer et dénombrer des collections en les organisant."
   }
 ]

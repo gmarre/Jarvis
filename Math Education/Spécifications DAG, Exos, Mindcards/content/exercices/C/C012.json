@@ -24,6 +24,49 @@
     "programme_ref": "Cycle 2, CE1 : additionner et soustraire des fractions de même dénominateur."
   },
   {
+    "id": "EX-C012-D-02",
+    "skill_id": "C012",
+    "level": "decouverte",
+    "type": "qcm",
+    "statement": "Léo a mangé la partie coloriée de la pizza, puis $\\frac{2}{4}$ de la pizza.\n\nQuelle fraction de la pizza a-t-il mangée en tout ?",
+    "image": "figures/EX-C012-D-02",
+    "choices": [
+      {
+        "key": "a",
+        "text": "$\\frac{3}{8}$",
+        "misconception": "L'élève additionne les numérateurs et aussi les dénominateurs. Or ce sont des quarts de la même pizza : les parts gardent leur taille, le dénominateur ne change pas."
+      },
+      {
+        "key": "b",
+        "text": "$\\frac{1}{4}$",
+        "misconception": "L'élève ne lit que la figure : il oublie d'ajouter les deux quarts mangés ensuite."
+      },
+      {
+        "key": "c",
+        "text": "$\\frac{2}{4}$",
+        "misconception": "L'élève ne garde que la fraction écrite dans l'énoncé et oublie la partie coloriée de la figure."
+      },
+      {
+        "key": "d",
+        "text": "$\\frac{3}{4}$",
+        "misconception": null
+      }
+    ],
+    "answer": {
+      "value": "d"
+    },
+    "solution_steps": [
+      "On compte les parts de la pizza : 4 parts égales, des quarts. Une part est coloriée : Léo a d'abord mangé $\\frac{1}{4}$ de la pizza.",
+      "Il mange ensuite $\\frac{2}{4}$ : on ajoute des quarts à des quarts, $\\frac{1}{4} + \\frac{2}{4}$.",
+      "Un quart plus deux quarts, cela fait trois quarts : on additionne les numérateurs, $1 + 2 = 3$. Le dénominateur reste 4, car les parts gardent la même taille.",
+      "Léo a mangé $\\frac{3}{4}$ de la pizza en tout."
+    ],
+    "hint": "Écris d'abord la fraction coloriée. Puis ajoute des quarts à des quarts.",
+    "estimated_duration_s": 50,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 2, CE1 : additionner et soustraire des fractions de même dénominateur."
+  },
+  {
     "id": "EX-C012-E-01",
     "skill_id": "C012",
     "level": "entrainement",
@@ -48,6 +91,35 @@
     "programme_ref": "Cycle 2, CE1 : l'élève sait calculer 2/3 - 1/3 ou 1/5 + 2/5."
   },
   {
+    "id": "EX-C012-E-02",
+    "skill_id": "C012",
+    "level": "entrainement",
+    "type": "texte",
+    "statement": "Il y a $\\frac{7}{8}$ d'une tarte. Tom mange $\\frac{2}{8}$ de la tarte.\n\nQuelle fraction de la tarte reste-t-il ? Écris-la avec une barre.",
+    "image": null,
+    "answer": {
+      "value": "5/8",
+      "accepted": [
+        "5 / 8",
+        "5 huitièmes",
+        "cinq huitièmes",
+        "5 huitieme",
+        "cinq huitieme"
+      ]
+    },
+    "solution_steps": [
+      "Les deux fractions sont des huitièmes de la même tarte : les parts ont la même taille.",
+      "Il y avait 7 parts, Tom en mange 2 : on soustrait les numérateurs, $7 - 2 = 5$.",
+      "Le dénominateur ne change pas : il reste 8, car la tarte est toujours partagée en 8 parts égales.",
+      "Il reste $\\frac{7}{8} - \\frac{2}{8} = \\frac{5}{8}$ de la tarte : sept huitièmes moins deux huitièmes, cela fait cinq huitièmes.",
+      "Piège : soustraire aussi les dénominateurs donnerait $8 - 8 = 0$ part dans le tout, ce qui n'a pas de sens."
+    ],
+    "hint": "Combien de huitièmes y avait-il, et combien Tom en mange-t-il ?",
+    "estimated_duration_s": 60,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 2, CE1 : additionner et soustraire des fractions de même dénominateur."
+  },
+  {
     "id": "EX-C012-M-01",
     "skill_id": "C012",
     "level": "maitrise",
@@ -68,6 +140,44 @@
     ],
     "hint": "Le tout vaut 10 dixièmes. Combien en reste-t-il après en avoir pris 3 ?",
     "estimated_duration_s": 90,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 2, CE1 : l'élève sait trouver le complément d'une fraction d'un tout par rapport à ce tout."
+  },
+  {
+    "id": "EX-C012-M-02",
+    "skill_id": "C012",
+    "level": "maitrise",
+    "type": "qcm",
+    "statement": "Léa mange $\\frac{1}{8}$ d'un gâteau. Hugo mange $\\frac{5}{8}$ du même gâteau.\n\nQuelle fraction du gâteau reste-t-il ?",
+    "image": null,
+    "choices": [
+      {
+        "key": "a",
+        "text": "$\\frac{6}{8}$",
+        "misconception": "L'élève calcule bien la part mangée, 1/8 + 5/8 = 6/8, mais s'arrête là : la question porte sur ce qui reste."
+      },
+      {
+        "key": "b",
+        "text": "$\\frac{2}{8}$",
+        "misconception": null
+      },
+      {
+        "key": "c",
+        "text": "$\\frac{4}{8}$",
+        "misconception": "L'élève soustrait les deux fractions de l'énoncé, 5/8 − 1/8 : il calcule combien Hugo a mangé de plus que Léa, pas ce qui reste."
+      }
+    ],
+    "answer": {
+      "value": "b"
+    },
+    "solution_steps": [
+      "Le gâteau entier est partagé en 8 parts égales : le tout vaut $\\frac{8}{8}$.",
+      "Léa et Hugo mangent dans le même gâteau. Ensemble : $\\frac{1}{8} + \\frac{5}{8} = \\frac{6}{8}$. On additionne les numérateurs, le dénominateur reste 8.",
+      "Ce qui reste, c'est le tout moins la part mangée : $\\frac{8}{8} - \\frac{6}{8} = \\frac{2}{8}$.",
+      "Il reste $\\frac{2}{8}$ du gâteau, deux parts."
+    ],
+    "hint": "Calcule d'abord la part mangée par les deux enfants. Le gâteau entier, c'est huit huitièmes.",
+    "estimated_duration_s": 100,
     "review_status": "relu_agent",
     "programme_ref": "Cycle 2, CE1 : l'élève sait trouver le complément d'une fraction d'un tout par rapport à ce tout."
   }

@@ -20,6 +20,49 @@
     "programme_ref": "Cycle 3, CM1 : les élèves apprennent à calculer des fractions de quantités comme un tiers de 12 billes."
   },
   {
+    "id": "EX-C004-D-02",
+    "skill_id": "C004",
+    "level": "decouverte",
+    "type": "qcm",
+    "statement": "Un sac contient 30 bonbons. Combien de bonbons y a-t-il dans $\\frac{1}{5}$ du sac ?",
+    "image": null,
+    "choices": [
+      {
+        "key": "a",
+        "text": "150",
+        "misconception": "L'élève multiplie 30 par 5 au lieu de partager les bonbons en 5 parts égales."
+      },
+      {
+        "key": "b",
+        "text": "5",
+        "misconception": "L'élève donne le dénominateur : il lit le nombre de parts au lieu de calculer ce que contient une part."
+      },
+      {
+        "key": "c",
+        "text": "25",
+        "misconception": "L'élève enlève 5 bonbons au sac : il confond « un cinquième » avec « 5 de moins »."
+      },
+      {
+        "key": "d",
+        "text": "6",
+        "misconception": null
+      }
+    ],
+    "answer": {
+      "value": "d"
+    },
+    "solution_steps": [
+      "Prendre $\\frac{1}{5}$, c'est partager en 5 parts égales et en prendre une.",
+      "$30 \\div 5 = 6$.",
+      "$\\frac{1}{5}$ du sac, c'est **6** bonbons.",
+      "Vérification : 5 parts de 6 bonbons, $5 \\times 6 = 30$."
+    ],
+    "hint": "Partage les 30 bonbons en 5 tas égaux.",
+    "estimated_duration_s": 45,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 3, CM1 : déterminer une fraction d'une quantité ou d'une grandeur."
+  },
+  {
     "id": "EX-C004-E-01",
     "skill_id": "C004",
     "level": "entrainement",
@@ -39,6 +82,27 @@
     "estimated_duration_s": 60,
     "review_status": "relu_agent",
     "programme_ref": "Cycle 3, CM1 : les fractions acquièrent le statut d'opérateur multiplicatif pour le cas particulier des fractions unitaires, comme un quart de 100 mètres."
+  },
+  {
+    "id": "EX-C004-E-02",
+    "skill_id": "C004",
+    "level": "entrainement",
+    "type": "numerique",
+    "statement": "Une citerne contient 56 litres d'eau. On utilise le **septième** de cette eau pour arroser.\n\nCombien de litres utilise-t-on ?",
+    "image": null,
+    "answer": {
+      "value": 8,
+      "unit": "L"
+    },
+    "solution_steps": [
+      "Le septième, c'est $\\frac{1}{7}$ : on partage les 56 litres en 7 parts égales.",
+      "Dans la table de 7 : $7 \\times 8 = 56$, donc $56 \\div 7 = 8$.",
+      "On utilise **8 litres** d'eau."
+    ],
+    "hint": "Le septième, c'est $\\frac{1}{7}$. Cherche 56 dans la table de 7.",
+    "estimated_duration_s": 70,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 3, CM1 : les fractions acquièrent le statut d'opérateur multiplicatif pour le cas particulier des fractions unitaires."
   },
   {
     "id": "EX-C004-M-01",
@@ -62,5 +126,28 @@
     "estimated_duration_s": 150,
     "review_status": "relu_agent",
     "programme_ref": "Cycle 3, CM1 : déterminer une fraction d'une quantité ou d'une grandeur (fractions unitaires)."
+  },
+  {
+    "id": "EX-C004-M-02",
+    "skill_id": "C004",
+    "level": "maitrise",
+    "type": "numerique",
+    "statement": "Dans une classe, 6 élèves font de la chorale : c'est le **cinquième** de la classe. Le **tiers** de la classe fait du judo.\n\nCombien d'élèves font du judo ?",
+    "image": null,
+    "answer": {
+      "value": 10,
+      "unit": "élèves"
+    },
+    "solution_steps": [
+      "On ne connaît pas le nombre d'élèves de la classe : on le cherche d'abord.",
+      "Le cinquième de la classe vaut 6 élèves : la classe est faite de 5 parts de 6 élèves. $5 \\times 6 = 30$ : la classe compte 30 élèves.",
+      "Le tiers de la classe : $30 \\div 3 = 10$.",
+      "**10 élèves** font du judo.",
+      "Piège : $6 \\div 3$ donne le tiers des élèves de la chorale, pas le tiers de la classe."
+    ],
+    "hint": "Trouve d'abord combien d'élèves compte la classe.",
+    "estimated_duration_s": 160,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 3, CM1 : déterminer une fraction d'une quantité ou d'une grandeur."
   }
 ]

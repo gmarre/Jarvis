@@ -38,6 +38,44 @@
     "programme_ref": "Cycle 2, CE1 : les connaissances et savoir-faire attendus concernent les nombres jusqu'à mille."
   },
   {
+    "id": "EX-A004-D-02",
+    "skill_id": "A004",
+    "level": "decouverte",
+    "type": "qcm",
+    "statement": "Comment lit-on le nombre **543** ?",
+    "image": null,
+    "choices": [
+      {
+        "key": "a",
+        "text": "cinq-quatre-trois",
+        "misconception": "L'élève lit les chiffres un par un, sans tenir compte de leur rang."
+      },
+      {
+        "key": "b",
+        "text": "cinq-cent-quarante-trois",
+        "misconception": null
+      },
+      {
+        "key": "c",
+        "text": "cinq-cent-trente-quatre",
+        "misconception": "L'élève échange le chiffre des dizaines et celui des unités : il lit 534 au lieu de 543."
+      }
+    ],
+    "answer": {
+      "value": "b"
+    },
+    "solution_steps": [
+      "On repère les rangs : 5 centaines, 4 dizaines, 3 unités.",
+      "5 centaines se lit **cinq-cent**.",
+      "4 dizaines, c'est 40 : **quarante**. 3 unités : **trois**.",
+      "On lit « cinq-cent-quarante-trois »."
+    ],
+    "hint": "Quel chiffre est au rang des centaines ? Et au rang des dizaines ?",
+    "estimated_duration_s": 40,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 2, CE1 : il sait également lire un nombre écrit en chiffres et l'écrire en lettres."
+  },
+  {
     "id": "EX-A004-E-01",
     "skill_id": "A004",
     "level": "entrainement",
@@ -74,6 +112,27 @@
     "estimated_duration_s": 40,
     "review_status": "relu_agent",
     "programme_ref": "Cycle 2, CE1 : les nombres jusqu'à mille."
+  },
+  {
+    "id": "EX-A004-E-02",
+    "skill_id": "A004",
+    "level": "entrainement",
+    "type": "vrai_faux",
+    "statement": "Hugo lit le nombre 472 : « quatre-cent-soixante-dix-deux ».\n\nA-t-il raison ?",
+    "image": null,
+    "answer": {
+      "value": false
+    },
+    "solution_steps": [
+      "472, c'est 4 centaines, 7 dizaines et 2 unités.",
+      "4 centaines se lit **quatre-cent**.",
+      "72 ne se dit pas « soixante-dix-deux » : après soixante-dix, on dit soixante-et-onze, puis **soixante-douze**.",
+      "On lit « quatre-cent-soixante-douze ». Hugo a **tort**."
+    ],
+    "hint": "Récite la suite des nombres après soixante-dix. Comment dit-on 72 ?",
+    "estimated_duration_s": 45,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 2, CE1 : connaitre la suite écrite et la suite orale des nombres jusqu'à mille."
   },
   {
     "id": "EX-A004-M-01",
@@ -118,5 +177,49 @@
     "estimated_duration_s": 60,
     "review_status": "relu_agent",
     "programme_ref": "Cycle 2, CE1 : les nombres jusqu'à mille."
+  },
+  {
+    "id": "EX-A004-M-02",
+    "skill_id": "A004",
+    "level": "maitrise",
+    "type": "qcm",
+    "statement": "Dans quel nombre entend-on « quatre-vingt » quand on le lit ?",
+    "image": null,
+    "choices": [
+      {
+        "key": "a",
+        "text": "420",
+        "misconception": "L'élève entend « quatre » et « vingt » dans quatre-cent-vingt, mais ils sont séparés par « cent » : ce n'est pas quatre-vingt."
+      },
+      {
+        "key": "b",
+        "text": "808",
+        "misconception": "L'élève voit 80 écrit au début du nombre sans regarder les rangs : le 8 est au rang des centaines, et 808 se lit huit-cent-huit."
+      },
+      {
+        "key": "c",
+        "text": "148",
+        "misconception": "L'élève associe quatre-vingt aux chiffres 4 et 8 qu'il voit dans le nombre, au lieu de le lire : 148 se lit cent-quarante-huit."
+      },
+      {
+        "key": "d",
+        "text": "390",
+        "misconception": null
+      }
+    ],
+    "answer": {
+      "value": "d"
+    },
+    "solution_steps": [
+      "On lit chaque nombre en entier, en repérant les rangs.",
+      "420 se lit quatre-cent-vingt : on entend « quatre » puis « vingt », mais séparés par « cent ».",
+      "808 se lit huit-cent-huit, et 148 se lit cent-quarante-huit.",
+      "390, c'est 3 centaines et 9 dizaines. 9 dizaines, c'est 90, qui se dit **quatre-vingt-dix**.",
+      "On lit « trois-cent-quatre-vingt-dix » : c'est **390**. Pourtant, il n'a ni 4 ni 8 dans son écriture."
+    ],
+    "hint": "Lis chaque nombre à voix basse, en entier. Ne regarde pas seulement ses chiffres.",
+    "estimated_duration_s": 60,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 2, CE1 : il sait également lire un nombre écrit en chiffres et l'écrire en lettres."
   }
 ]

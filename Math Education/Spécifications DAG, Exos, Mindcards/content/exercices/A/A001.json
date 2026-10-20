@@ -19,6 +19,44 @@
     "programme_ref": "Cycle 2, CP : les nombres entiers jusqu'à cent."
   },
   {
+    "id": "EX-A001-D-02",
+    "skill_id": "A001",
+    "level": "decouverte",
+    "type": "qcm",
+    "statement": "Quelle rangée a **cinq** jetons ?",
+    "image": null,
+    "choices": [
+      {
+        "key": "a",
+        "text": "● ● ● ●",
+        "misconception": "L'élève dit deux nombres en montrant le même jeton : il arrive à « cinq » au bout de la rangée alors qu'elle n'a que 4 jetons."
+      },
+      {
+        "key": "b",
+        "text": "● ● ● ● ●",
+        "misconception": null
+      },
+      {
+        "key": "c",
+        "text": "● ● ● ● ● ●",
+        "misconception": "L'élève saute un jeton en comptant : il dit « cinq » sur le dernier jeton alors que la rangée en a 6."
+      }
+    ],
+    "answer": {
+      "value": "b"
+    },
+    "solution_steps": [
+      "On compte chaque rangée en touchant chaque jeton une seule fois.",
+      "Première rangée : 1, 2, 3, 4. Elle a 4 jetons, il en manque un.",
+      "Deuxième rangée : 1, 2, 3, 4, 5. Elle a **cinq** jetons : c'est la bonne.",
+      "Troisième rangée : 1, 2, 3, 4, 5, 6. Elle a 6 jetons, un de trop."
+    ],
+    "hint": "Compte chaque rangée en posant ton doigt sur les jetons, un par un.",
+    "estimated_duration_s": 30,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 2, CP : construire des collections de cardinal donné."
+  },
+  {
     "id": "EX-A001-E-01",
     "skill_id": "A001",
     "level": "entrainement",
@@ -35,6 +73,34 @@
     "estimated_duration_s": 20,
     "review_status": "relu_agent",
     "programme_ref": "Cycle 2, CP : les nombres entiers jusqu'à cent."
+  },
+  {
+    "id": "EX-A001-E-02",
+    "skill_id": "A001",
+    "level": "entrainement",
+    "type": "numerique",
+    "statement": "Compte seulement les ronds noirs :\n\n● ○ ● ● ○ ● ○ ● ● ○ ● ○ ●\n\nCombien y en a-t-il ?",
+    "image": null,
+    "answer": {
+      "value": 8,
+      "accepted": [
+        "huit",
+        "8 ronds",
+        "8 ronds noirs",
+        "huit ronds",
+        "huit ronds noirs"
+      ]
+    },
+    "solution_steps": [
+      "On ne compte que les ronds noirs : on saute les ronds blancs sans dire de nombre.",
+      "On touche chaque rond noir une seule fois, de gauche à droite : 1, 2, 3, 4, 5, 6, 7, 8.",
+      "Le dernier nombre dit donne la quantité : il y a **8** ronds noirs.",
+      "Erreur à éviter : compter les ronds blancs avec les noirs. On trouverait trop de ronds."
+    ],
+    "hint": "Pose ton doigt sur chaque rond noir, un par un, et saute les ronds blancs.",
+    "estimated_duration_s": 45,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 2, CP : comparer et dénombrer des collections en les organisant."
   },
   {
     "id": "EX-A001-M-01",
@@ -56,5 +122,31 @@
     "estimated_duration_s": 60,
     "review_status": "relu_agent",
     "programme_ref": "Cycle 2, CP : les nombres entiers jusqu'à cent."
+  },
+  {
+    "id": "EX-A001-M-02",
+    "skill_id": "A001",
+    "level": "maitrise",
+    "type": "numerique",
+    "statement": "Nina a compté jusqu'à **sept**. Il reste : ● ● ●\n\nQuel nombre dit-elle sur le dernier jeton ?",
+    "image": null,
+    "answer": {
+      "value": 10,
+      "accepted": [
+        "dix",
+        "dix jetons",
+        "10 jetons"
+      ]
+    },
+    "solution_steps": [
+      "Nina a déjà compté sept jetons : elle continue, sans repartir de 1.",
+      "On continue la suite des nombres à partir de sept, en touchant chaque jeton qui reste : huit, neuf, dix.",
+      "Le dernier nombre dit donne la quantité : Nina a **10** jetons en tout.",
+      "Erreur à éviter : répondre 3, c'est le nombre de jetons qui restent, pas le nombre dit à la fin."
+    ],
+    "hint": "Ne recommence pas à 1 : continue à compter après sept, un jeton à la fois.",
+    "estimated_duration_s": 60,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 2, CP : l'élève sait compter, à l'oral et à l'écrit, de un en un, de deux en deux et de dix en dix en partant de n'importe quel nombre."
   }
 ]

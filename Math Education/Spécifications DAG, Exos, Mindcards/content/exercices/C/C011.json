@@ -21,6 +21,49 @@
     "programme_ref": "Cycle 4 : trouver un dénominateur commun à deux fractions pour les additionner, les soustraire ou les comparer."
   },
   {
+    "id": "EX-C011-D-02",
+    "skill_id": "C011",
+    "level": "decouverte",
+    "type": "qcm",
+    "statement": "Quel est le plus petit dénominateur commun à $\\frac{5}{6}$ et $\\frac{2}{9}$ ?",
+    "image": null,
+    "choices": [
+      {
+        "key": "a",
+        "text": "54",
+        "misconception": "L'élève multiplie les deux dénominateurs : 54 est bien un dénominateur commun, mais pas le plus petit, car 6 et 9 sont tous les deux dans la table de 3."
+      },
+      {
+        "key": "b",
+        "text": "15",
+        "misconception": "L'élève additionne les dénominateurs : 15 n'est même pas dans la table de 6."
+      },
+      {
+        "key": "c",
+        "text": "18",
+        "misconception": null
+      },
+      {
+        "key": "d",
+        "text": "9",
+        "misconception": "L'élève prend le plus grand dénominateur, comme si 9 était un multiple de 6 ; or 9 n'est pas dans la table de 6."
+      }
+    ],
+    "answer": {
+      "value": "c"
+    },
+    "solution_steps": [
+      "On cherche le plus petit nombre qui est à la fois dans la table de 6 et dans la table de 9.",
+      "Table de 6 : 6, 12, **18**, 24, 30, 36…",
+      "Table de 9 : 9, **18**, 27, 36…",
+      "Le plus petit commun est **18**. Le produit $6 \\times 9 = 54$ est aussi un dénominateur commun, mais il n'est pas le plus petit."
+    ],
+    "hint": "Écris les premiers multiples de 9, et cherche le premier qui est aussi dans la table de 6.",
+    "estimated_duration_s": 60,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, 5e : additionner et soustraire des fractions de dénominateurs quelconques."
+  },
+  {
     "id": "EX-C011-E-01",
     "skill_id": "C011",
     "level": "entrainement",
@@ -42,6 +85,36 @@
     ],
     "hint": "Par combien faut-il multiplier 4 pour obtenir 12 ? Et 3 ?",
     "estimated_duration_s": 90,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, 5e : additionner et soustraire des fractions de dénominateurs quelconques."
+  },
+  {
+    "id": "EX-C011-E-02",
+    "skill_id": "C011",
+    "level": "entrainement",
+    "type": "texte",
+    "statement": "Réduis $\\frac{3}{10}$ et $\\frac{7}{15}$ au plus petit dénominateur commun.\n\nÉcris les deux fractions obtenues dans cet ordre, séparées par une virgule, sous la forme numérateur/dénominateur.",
+    "image": null,
+    "answer": {
+      "value": "9/30, 14/30",
+      "accepted": [
+        "9/30,14/30",
+        "9/30 ; 14/30",
+        "9/30;14/30",
+        "9/30 et 14/30",
+        "9/30 14/30",
+        "9 / 30, 14 / 30"
+      ]
+    },
+    "solution_steps": [
+      "Multiples de 15 : 15, **30**, 45… 30 est aussi dans la table de 10 : le plus petit dénominateur commun est 30.",
+      "$\\frac{3}{10} = \\frac{3 \\times 3}{10 \\times 3} = \\frac{9}{30}$.",
+      "$\\frac{7}{15} = \\frac{7 \\times 2}{15 \\times 2} = \\frac{14}{30}$.",
+      "On multiplie toujours le numérateur et le dénominateur par le même nombre : la valeur de chaque fraction ne change pas.",
+      "Piège : le produit $10 \\times 15 = 150$ est aussi un dénominateur commun, mais ce n'est pas le plus petit."
+    ],
+    "hint": "Cherche le premier multiple de 15 qui est aussi dans la table de 10.",
+    "estimated_duration_s": 120,
     "review_status": "relu_agent",
     "programme_ref": "Cycle 4, 5e : additionner et soustraire des fractions de dénominateurs quelconques."
   },
@@ -69,5 +142,30 @@
     "estimated_duration_s": 120,
     "review_status": "relu_agent",
     "programme_ref": "Cycle 4, 5e : addition et soustraction de fractions simples, dont 2/5 + 1/4."
+  },
+  {
+    "id": "EX-C011-M-02",
+    "skill_id": "C011",
+    "level": "maitrise",
+    "type": "texte",
+    "statement": "Dans un jardin, les légumes occupent $\\frac{2}{7}$ de la surface et les fleurs $\\frac{1}{3}$. Le reste est en pelouse.\n\nQuelle fraction du jardin est en pelouse ? Écris-la sous la forme numérateur/dénominateur.",
+    "image": null,
+    "answer": {
+      "value": "8/21",
+      "accepted": [
+        "8 / 21"
+      ]
+    },
+    "solution_steps": [
+      "Légumes et fleurs ensemble : $\\frac{2}{7} + \\frac{1}{3}$. Les dénominateurs sont différents : il faut un dénominateur commun.",
+      "Table de 7 : 7, 14, **21**… 21 est aussi dans la table de 3 : le dénominateur commun est 21.",
+      "$\\frac{2}{7} = \\frac{6}{21}$ et $\\frac{1}{3} = \\frac{7}{21}$. Légumes et fleurs occupent donc $\\frac{6}{21} + \\frac{7}{21} = \\frac{13}{21}$ du jardin.",
+      "Le jardin entier vaut $\\frac{21}{21}$. La pelouse occupe le reste : $\\frac{21}{21} - \\frac{13}{21} = \\frac{8}{21}$.",
+      "Vérification : $\\frac{6}{21} + \\frac{7}{21} + \\frac{8}{21} = \\frac{21}{21} = 1$, tout le jardin."
+    ],
+    "hint": "Calcule d'abord la part occupée par les légumes et les fleurs ensemble. Le jardin entier, c'est 1.",
+    "estimated_duration_s": 180,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, 5e : résoudre des problèmes avec des additions et soustractions de fractions."
   }
 ]

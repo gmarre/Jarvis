@@ -20,6 +20,44 @@
     "programme_ref": "Cycle 2, CE1 : distinguer chiffre et nombre."
   },
   {
+    "id": "EX-A008-D-02",
+    "skill_id": "A008",
+    "level": "decouverte",
+    "type": "qcm",
+    "statement": "Lequel de ces nombres s'écrit avec **un seul** chiffre ?",
+    "image": null,
+    "choices": [
+      {
+        "key": "a",
+        "text": "10",
+        "misconception": "L'élève croit que 10 est un chiffre, parce qu'on compte « jusqu'à 10 » sur ses doigts. Mais 10 s'écrit avec deux chiffres, 1 et 0 : les chiffres vont de 0 à 9."
+      },
+      {
+        "key": "b",
+        "text": "8",
+        "misconception": null
+      },
+      {
+        "key": "c",
+        "text": "80",
+        "misconception": "L'élève ne compte pas le 0 comme un chiffre : il ne voit que le 8. Or 80 s'écrit avec deux chiffres, 8 et 0."
+      }
+    ],
+    "answer": {
+      "value": "b"
+    },
+    "solution_steps": [
+      "Les chiffres sont les dix signes 0 ; 1 ; 2 ; 3 ; 4 ; 5 ; 6 ; 7 ; 8 ; 9. Avec eux, on écrit tous les nombres.",
+      "10 s'écrit avec deux chiffres : 1 et 0. 80 s'écrit aussi avec deux chiffres : 8 et 0. Le 0 est un chiffre comme les autres.",
+      "8 s'écrit avec un seul chiffre : c'est à la fois un chiffre et un nombre.",
+      "Réponse : **8**."
+    ],
+    "hint": "Compte les signes qu'il faut écrire pour chaque nombre.",
+    "estimated_duration_s": 30,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 2, CE1, Les nombres entiers : « L'élève sait écrire en chiffres un nombre dicté. »"
+  },
+  {
     "id": "EX-A008-E-01",
     "skill_id": "A008",
     "level": "entrainement",
@@ -37,6 +75,32 @@
     "estimated_duration_s": 35,
     "review_status": "relu_agent",
     "programme_ref": "Cycle 2, CE1 : distinguer chiffre et nombre."
+  },
+  {
+    "id": "EX-A008-E-02",
+    "skill_id": "A008",
+    "level": "entrainement",
+    "type": "numerique",
+    "statement": "Tom numérote les pages de son cahier, de 1 à 12.\n\nCombien de chiffres écrit-il en tout ?",
+    "image": null,
+    "answer": {
+      "value": 15,
+      "accepted": [
+        "15 chiffres",
+        "15 chiffre"
+      ]
+    },
+    "solution_steps": [
+      "Attention : on ne compte pas les nombres (il y en a 12), mais les chiffres écrits.",
+      "De 1 à 9, chaque nombre s'écrit avec un seul chiffre : cela fait 9 chiffres.",
+      "10, 11 et 12 s'écrivent chacun avec deux chiffres : 1 et 0, 1 et 1, 1 et 2.",
+      "On continue donc à compter de 2 en 2 à partir de 9 : 11, 13, 15.",
+      "Tom écrit **15** chiffres."
+    ],
+    "hint": "De 1 à 9, un chiffre par page. Et pour les pages suivantes ?",
+    "estimated_duration_s": 75,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 2, CE1, Les nombres entiers : « Connaitre la suite écrite et la suite orale des nombres jusqu'à mille. »"
   },
   {
     "id": "EX-A008-M-01",
@@ -58,5 +122,48 @@
     "estimated_duration_s": 75,
     "review_status": "relu_agent",
     "programme_ref": "Cycle 2, CE1 : distinguer chiffre et nombre."
+  },
+  {
+    "id": "EX-A008-M-02",
+    "skill_id": "A008",
+    "level": "maitrise",
+    "type": "qcm",
+    "statement": "Avec les chiffres 6, 0 et 2, chacun une seule fois, quel est le plus petit nombre de trois chiffres ?",
+    "image": null,
+    "choices": [
+      {
+        "key": "a",
+        "text": "026",
+        "misconception": "L'élève met le plus petit chiffre, 0, en premier. Mais 026 se lit vingt-six : c'est le nombre 26, qui s'écrit avec deux chiffres. Un nombre de trois chiffres ne commence pas par 0."
+      },
+      {
+        "key": "b",
+        "text": "260",
+        "misconception": "L'élève met bien 2 en premier, puis croit que le 0 se place toujours à la fin, comme dans 10, 20 ou 30. Avec le 0 au rang des dizaines, on obtient un nombre plus petit."
+      },
+      {
+        "key": "c",
+        "text": "620",
+        "misconception": "L'élève écrit les chiffres du plus grand au plus petit : il obtient le plus grand nombre au lieu du plus petit."
+      },
+      {
+        "key": "d",
+        "text": "206",
+        "misconception": null
+      }
+    ],
+    "answer": {
+      "value": "d"
+    },
+    "solution_steps": [
+      "Un nombre de trois chiffres ne commence jamais par 0 : 026 s'écrit simplement 26, qui n'a que deux chiffres.",
+      "Au rang des centaines, on met donc le plus petit chiffre qui n'est pas 0 : le 2.",
+      "Il reste 0 et 6. Au rang des dizaines, on met le plus petit : 0. Puis 6 aux unités.",
+      "Réponse : **206**. Les autres nombres possibles, 260, 602 et 620, sont plus grands."
+    ],
+    "hint": "Quel chiffre peut se mettre en premier ? Pas n'importe lequel.",
+    "estimated_duration_s": 90,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 2, CP, Les nombres entiers : « L'élève sait expliquer, en s'appuyant sur la numération, pourquoi 23 n'est pas le même nombre que 32 bien que les écritures des deux nombres soient composées des mêmes chiffres. »"
   }
 ]
