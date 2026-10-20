@@ -189,17 +189,26 @@ export function AppShell({ children, railTop, railBottom }: AppShellProps) {
   )
 }
 
-/** Encart "serie de N jours" du bas de rail (maquette 1f). */
-export function StreakCard({ days }: { days: number }) {
+/**
+ * Encart « serie de N jours » du bas de rail (maquette 1f). La serie est
+ * calculee depuis les tentatives (lib/serie.ts). Le texte encourage sans
+ * jamais menacer : pas de « tu vas perdre ta serie ».
+ */
+export function StreakCard({ days, today }: { days: number; today: boolean }) {
+  const titre = days === 0 ? 'Pas encore de série' : days === 1 ? '1 jour de suite' : `${days} jours de suite`
+  const message =
+    days === 0
+      ? 'Un exercice aujourd’hui lance ta série.'
+      : today
+        ? 'Tu as travaillé aujourd’hui. À demain !'
+        : 'Un exercice aujourd’hui prolonge ta série.'
   return (
     <div className="rounded-card border border-divider bg-canvas p-3.5">
       <div className="mb-1 flex items-center gap-2 text-[12.5px] font-semibold leading-snug text-ink">
-        <IconStreak size={16} className="text-progress" />
-        Série de {days} jours
+        <IconStreak size={16} className={days > 0 ? 'text-progress' : 'text-ink-faint'} />
+        {titre}
       </div>
-      <p className="text-[11.5px] leading-relaxed text-ink-subtle">
-        Reviens demain pour tenir le rythme.
-      </p>
+      <p className="text-[11.5px] leading-relaxed text-ink-subtle">{message}</p>
     </div>
   )
 }
