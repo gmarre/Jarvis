@@ -1,0 +1,187 @@
+{
+  "id": "SX-B017-01",
+  "skill_id": "B017",
+  "skill_ids": [
+    "B017",
+    "A004"
+  ],
+  "school_level": "CM1",
+  "title": "Le festival de cirque",
+  "contexte": "Chaque été, le village de Saint-Arnoult accueille un festival de cirque. Le chapiteau a 2 080 places. Le directeur du festival, M. Rossi, a 58 ans.\n\nVendredi soir, 1 912 spectateurs sont venus. Samedi soir, 2 038 spectateurs sont venus.\n\nUne place coûte 18 euros, pour un adulte comme pour un enfant.\n\nDimanche après-midi, 304 spectateurs ont acheté leur place au guichet.\n\nPour le spectacle de dimanche soir, 203 places ont été vendues sur Internet. La caissière calcule sur sa calculatrice la somme rapportée par ces 203 places. Elle lit : 36 540 euros.",
+  "image": null,
+  "duree_estimee_min": 15,
+  "questions": [
+    {
+      "key": "q1",
+      "skill_id": "A004",
+      "statement": "Comment lit-on le nombre de places du chapiteau ?",
+      "type": "qcm",
+      "choices": [
+        {
+          "key": "a",
+          "text": "deux-mille-huit",
+          "misconception": "L'élève lit 2 008 : il oublie que le 8 est le chiffre des dizaines, et non celui des unités."
+        },
+        {
+          "key": "b",
+          "text": "deux-mille-quatre-vingts",
+          "misconception": null
+        },
+        {
+          "key": "c",
+          "text": "deux-cent-quatre-vingts",
+          "misconception": "L'élève lit 280 : il oublie le zéro des centaines, et prend le 2 des milliers pour un chiffre des centaines."
+        },
+        {
+          "key": "d",
+          "text": "vingt-mille-quatre-vingts",
+          "misconception": "L'élève lit 20 080 : le nombre n'a qu'un chiffre avant la tranche des trois derniers, donc 2 milliers, pas 20."
+        }
+      ],
+      "answer": {
+        "value": "b"
+      },
+      "points": 1,
+      "solution_steps": [
+        "2 080, c'est 2 milliers, 0 centaine, 8 dizaines et 0 unité.",
+        "On lit « deux-mille », puis 80, « quatre-vingts ».",
+        "On lit **deux-mille-quatre-vingts**."
+      ],
+      "hint": "Sépare les milliers du reste du nombre."
+    },
+    {
+      "key": "q2",
+      "skill_id": "B017",
+      "statement": "Arrondis à la centaine la plus proche le nombre de spectateurs de vendredi soir.",
+      "type": "numerique",
+      "answer": {
+        "value": 1900,
+        "unit": "spectateurs"
+      },
+      "points": 2,
+      "solution_steps": [
+        "1 912 est entre 1 900 et 2 000. Le milieu de ces deux centaines est 1 950.",
+        "1 912 est avant 1 950 : il est plus proche de 1 900 que de 2 000.",
+        "Arrondi à la centaine, 1 912 devient **1 900**."
+      ],
+      "hint": "Entre quelles centaines se trouve le nombre de spectateurs de vendredi ?"
+    },
+    {
+      "key": "q3",
+      "skill_id": "B017",
+      "statement": "Sans poser l'opération, environ combien de spectateurs sont venus vendredi soir et samedi soir, en tout ?",
+      "type": "qcm",
+      "choices": [
+        {
+          "key": "a",
+          "text": "Environ 400",
+          "misconception": "L'élève perd un zéro : 1 900 + 2 000 fait 3 900, pas 390."
+        },
+        {
+          "key": "b",
+          "text": "Environ 3 000",
+          "misconception": "L'élève ne garde que les milliers, 1 000 et 2 000. Mais 1 912 est presque 2 000 : cet arrondi est trop grossier."
+        },
+        {
+          "key": "c",
+          "text": "Environ 4 000",
+          "misconception": null
+        },
+        {
+          "key": "d",
+          "text": "Environ 40 000",
+          "misconception": "L'élève ajoute un zéro de trop : deux nombres d'environ 2 000 ne peuvent pas faire 40 000."
+        }
+      ],
+      "answer": {
+        "value": "c"
+      },
+      "points": 3,
+      "solution_steps": [
+        "On arrondit chaque nombre à la centaine : 1 912 devient 1 900, et 2 038 devient 2 000.",
+        "1 900 + 2 000 = 3 900 : c'est environ 4 000.",
+        "Environ **4 000 spectateurs** sont venus en tout."
+      ],
+      "hint": "Arrondis chaque nombre à la centaine avant d'additionner."
+    },
+    {
+      "key": "q4",
+      "skill_id": "B017",
+      "statement": "Sans poser l'opération, environ combien d'euros les places achetées au guichet dimanche après-midi ont-elles rapporté ?",
+      "type": "qcm",
+      "choices": [
+        {
+          "key": "a",
+          "text": "Environ 6 000 €",
+          "misconception": null
+        },
+        {
+          "key": "b",
+          "text": "Environ 600 €",
+          "misconception": "L'élève oublie un zéro : 300 × 20, c'est 3 × 2 = 6 suivi de trois zéros, pas de deux."
+        },
+        {
+          "key": "c",
+          "text": "Environ 60 000 €",
+          "misconception": "L'élève ajoute un zéro de trop : 300 × 20 fait 6 000, pas 60 000."
+        },
+        {
+          "key": "d",
+          "text": "Environ 320 €",
+          "misconception": "L'élève additionne 300 et 20 au lieu de les multiplier : chaque spectateur paie 18 euros, il faut multiplier."
+        }
+      ],
+      "answer": {
+        "value": "a"
+      },
+      "points": 3,
+      "solution_steps": [
+        "304 est proche de 300, et 18 est proche de 20.",
+        "3 × 2 = 6, donc 300 × 2 = 600, et 300 × 20 = 6 000.",
+        "Les places de dimanche après-midi ont rapporté environ **6 000 euros**."
+      ],
+      "hint": "Remplace chaque nombre par un nombre rond qui en est proche."
+    },
+    {
+      "key": "q5",
+      "skill_id": "B017",
+      "statement": "Sans refaire le calcul exact, peut-on affirmer que la caissière s'est trompée pour les 203 places vendues sur Internet ?",
+      "type": "qcm",
+      "choices": [
+        {
+          "key": "a",
+          "text": "Non : on ne peut pas savoir sans poser l'opération.",
+          "misconception": "L'élève pense qu'il faut le résultat exact. Or un ordre de grandeur suffit à repérer une erreur aussi grosse."
+        },
+        {
+          "key": "b",
+          "text": "Non : une calculatrice ne se trompe jamais.",
+          "misconception": "La calculatrice calcule juste ce qu'on lui donne, mais la caissière peut mal taper un nombre ; l'estimation sert justement à le repérer."
+        },
+        {
+          "key": "c",
+          "text": "Oui : la somme devrait être d'environ 400 euros.",
+          "misconception": "L'élève perd un zéro dans l'estimation : 200 × 20 fait 4 000, pas 400."
+        },
+        {
+          "key": "d",
+          "text": "Oui : la somme devrait être d'environ 4 000 euros, son résultat est environ dix fois trop grand.",
+          "misconception": null
+        }
+      ],
+      "answer": {
+        "value": "d"
+      },
+      "points": 4,
+      "solution_steps": [
+        "Ordre de grandeur : 203 est proche de 200, et 18 est proche de 20.",
+        "200 × 20 = 4 000 : les 203 places ont rapporté environ 4 000 euros.",
+        "36 540 est environ dix fois plus grand : la caissière s'est forcément trompée, sans doute en tapant un 0 de trop.",
+        "On peut donc l'affirmer **sans refaire le calcul exact**."
+      ],
+      "hint": "Cherche un ordre de grandeur de la somme rapportée par les 203 places."
+    }
+  ],
+  "review_status": "relu_agent",
+  "programme_ref": "Cycle 3, Cours moyen première année, Les quatre opérations : « Estimer le résultat d'une opération »"
+}

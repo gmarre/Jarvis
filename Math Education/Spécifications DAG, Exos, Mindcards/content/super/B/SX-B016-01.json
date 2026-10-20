@@ -1,0 +1,108 @@
+{
+  "id": "SX-B016-01",
+  "skill_id": "B016",
+  "skill_ids": [
+    "B016",
+    "A002"
+  ],
+  "school_level": "CM2",
+  "title": "La course solidaire",
+  "contexte": "L'école Paul-Bert organise une course solidaire autour du stade. Un tour de piste mesure 400 mètres. La course a lieu un vendredi, de 9 heures à 11 heures.\n\nLes 232 élèves coureurs sont répartis en 4 équipes de même taille.\n\nÀ la fin de la course, l'équipe des Rouges a couru 69 tours, et l'équipe des Bleus 96 tours.\n\nPour le goûter, l'école a reçu 376 compotes, rangées dans des cartons de 8 compotes. Tous les cartons sont pleins.\n\nGrâce aux parrains des coureurs, la course a rapporté 680 euros. L'école partage cette somme à parts égales entre 8 associations.",
+  "image": null,
+  "duree_estimee_min": 15,
+  "questions": [
+    {
+      "key": "q1",
+      "skill_id": "A002",
+      "statement": "Quelle équipe compte le plus d'élèves coureurs ?",
+      "type": "qcm",
+      "choices": [
+        {
+          "key": "a",
+          "text": "Les Rouges",
+          "misconception": "L'élève compare les nombres de tours en regardant les unités, 9 contre 6. Or la question porte sur les élèves, pas sur les tours."
+        },
+        {
+          "key": "b",
+          "text": "Les Bleus",
+          "misconception": "L'élève compare les nombres de tours, 96 contre 69. Mais un nombre de tours ne dit pas combien d'élèves compte une équipe."
+        },
+        {
+          "key": "c",
+          "text": "Les deux équipes comptent autant d'élèves",
+          "misconception": null
+        }
+      ],
+      "answer": {
+        "value": "c"
+      },
+      "points": 1,
+      "solution_steps": [
+        "La question porte sur les élèves, pas sur les tours : 69 et 96 ne servent pas ici.",
+        "Le texte dit que les 232 élèves coureurs sont répartis en 4 équipes **de même taille**.",
+        "Les Rouges et les Bleus comptent donc **autant d'élèves**."
+      ],
+      "hint": "Relis la phrase qui parle des équipes."
+    },
+    {
+      "key": "q2",
+      "skill_id": "B016",
+      "statement": "Combien d'élèves y a-t-il dans chaque équipe ?",
+      "type": "numerique",
+      "answer": {
+        "value": 58,
+        "unit": "élèves"
+      },
+      "points": 2,
+      "solution_steps": [
+        "On divise 232 par 4 : diviser par 4, c'est prendre la moitié, puis la moitié du résultat.",
+        "La moitié de 232 : la moitié de 200 est 100, la moitié de 32 est 16. Donc 116.",
+        "La moitié de 116 : la moitié de 100 est 50, la moitié de 16 est 8. Donc 58.",
+        "$232 \\div 4 = 58$ : chaque équipe compte **58 élèves**."
+      ],
+      "hint": "Diviser par 4, c'est prendre la moitié, puis encore la moitié."
+    },
+    {
+      "key": "q3",
+      "skill_id": "B016",
+      "statement": "Combien de cartons de compotes l'école a-t-elle reçus ?",
+      "type": "numerique",
+      "answer": {
+        "value": 47,
+        "unit": "cartons"
+      },
+      "points": 3,
+      "solution_steps": [
+        "On divise 376 par 8 : on prend la moitié, puis encore la moitié, puis encore la moitié.",
+        "La moitié de 376 : la moitié de 360 est 180, la moitié de 16 est 8. Donc 188.",
+        "La moitié de 188 : la moitié de 180 est 90, la moitié de 8 est 4. Donc 94.",
+        "La moitié de 94 : la moitié de 90 est 45, la moitié de 4 est 2. Donc 47.",
+        "Contrôle avec la table de 2, rang par rang : le double de 47, c'est 80 + 14 = 94 ; le double de 94, c'est 180 + 8 = 188 ; le double de 188, c'est 200 + 160 + 16 = 376.",
+        "$376 \\div 8 = 47$ : l'école a reçu **47 cartons**."
+      ],
+      "hint": "Combien de moitiés successives faut-il prendre pour diviser par 8 ?"
+    },
+    {
+      "key": "q4",
+      "skill_id": "B016",
+      "statement": "Combien d'euros chaque association reçoit-elle ?",
+      "type": "numerique",
+      "answer": {
+        "value": 85,
+        "unit": "€"
+      },
+      "points": 4,
+      "solution_steps": [
+        "On partage 680 euros en 8 parts égales : $680 \\div 8$. On prend la moitié, puis encore la moitié, puis encore la moitié.",
+        "La moitié de 680 : la moitié de 600 est 300, la moitié de 80 est 40. Donc 340.",
+        "La moitié de 340 : la moitié de 300 est 150, la moitié de 40 est 20. Donc 170.",
+        "La moitié de 170 : la moitié de 160 est 80, la moitié de 10 est 5. Donc 85.",
+        "Contrôle avec la table de 2, rang par rang : le double de 85, c'est 160 + 10 = 170 ; le double de 170, c'est 200 + 140 = 340 ; le double de 340, c'est 600 + 80 = 680.",
+        "Chaque association reçoit **85 euros**."
+      ],
+      "hint": "Divise 680 par 8 en prenant des moitiés successives."
+    }
+  ],
+  "review_status": "relu_agent",
+  "programme_ref": "Cycle 3, Cours moyen deuxième année, Le calcul mental : « Diviser un nombre entier par 4 ou par 8 »"
+}

@@ -1,0 +1,73 @@
+{
+  "id": "SX-B001-01",
+  "skill_id": "B001",
+  "skill_ids": [
+    "B001",
+    "A001"
+  ],
+  "school_level": "CP",
+  "title": "La fête du sport des Lions",
+  "contexte": "Samedi, c'est la fête du sport à l'école. Elle commence à 9 heures.\n\nL'équipe des Lions compte Lina, Tom, Sami, Jade et Noé.\n\nPremier jeu : le lancer de balles. Chaque enfant fait deux lancers.\n\nTom marque 6 points au premier lancer. Il marque 2 points au deuxième lancer.\n\nSami marque 3 points au premier lancer. À la fin du jeu, il a 10 points en tout.\n\nÀ midi, 4 enfants de l'équipe des Tigres arrivent. Ils pique-niquent avec les Lions.\n\nChaque enfant a apporté une gourde d'eau.",
+  "image": null,
+  "duree_estimee_min": 8,
+  "questions": [
+    {
+      "key": "q1",
+      "skill_id": "A001",
+      "statement": "Le matin, combien d'enfants compte l'équipe des Lions ?",
+      "type": "numerique",
+      "answer": {
+        "value": 5,
+        "unit": "enfants",
+        "accepted": [
+          "cinq",
+          "cinq enfants"
+        ]
+      },
+      "points": 2,
+      "solution_steps": [
+        "On compte les prénoms de l'équipe des Lions : Lina (1), Tom (2), Sami (3), Jade (4), Noé (5).",
+        "L'équipe des Lions compte **5 enfants**.",
+        "Les 4 enfants des Tigres n'arrivent qu'à midi : ils ne font pas partie de l'équipe le matin."
+      ],
+      "hint": "Compte les prénoms, un par un."
+    },
+    {
+      "key": "q2",
+      "skill_id": "B001",
+      "statement": "Combien de points Tom marque-t-il en tout ?",
+      "type": "numerique",
+      "answer": {
+        "value": 8,
+        "unit": "points"
+      },
+      "points": 3,
+      "solution_steps": [
+        "Tom marque 6 points, puis 2 points : on ajoute les deux, 6 + 2.",
+        "Je pars de 6 et j'avance de 2 : 7, 8.",
+        "6 + 2 = 8 : Tom marque **8 points** en tout."
+      ],
+      "hint": "Tom fait deux lancers : ajoute ses deux résultats."
+    },
+    {
+      "key": "q3",
+      "skill_id": "B001",
+      "statement": "Combien de points Sami marque-t-il au deuxième lancer ?",
+      "type": "numerique",
+      "answer": {
+        "value": 7,
+        "unit": "points"
+      },
+      "points": 4,
+      "solution_steps": [
+        "Sami a 3 points après le premier lancer, et 10 points à la fin. On cherche ce qu'il faut ajouter à 3 pour arriver à 10.",
+        "Je pars de 3 et je compte jusqu'à 10 : 4, 5, 6, 7, 8, 9, 10. J'ai avancé de 7.",
+        "Vérification : 3 + 7 = 10. Sami marque **7 points** au deuxième lancer.",
+        "Attention : 10 points, c'est le total des deux lancers, pas le résultat du deuxième lancer."
+      ],
+      "hint": "Pars de 3 et compte jusqu'à 10."
+    }
+  ],
+  "review_status": "relu_agent",
+  "programme_ref": "Cycle 2, Cours préparatoire, Les quatre opérations : « L'élève montre sa compréhension du sens de l'addition et de la soustraction lors de la résolution de problèmes. »"
+}

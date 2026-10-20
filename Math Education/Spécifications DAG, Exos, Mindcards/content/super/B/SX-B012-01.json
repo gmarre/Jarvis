@@ -1,0 +1,105 @@
+{
+  "id": "SX-B012-01",
+  "skill_id": "B012",
+  "skill_ids": [
+    "B012",
+    "A003"
+  ],
+  "school_level": "CM1",
+  "title": "La sortie au musée des sciences",
+  "contexte": "La classe de CM1 de M. Moreau, qui compte 27 élèves, prépare une sortie au musée des sciences. La coopérative de la classe dispose de 900 euros.\n\nM. Moreau paie deux dépenses avec l'argent de la coopérative :\nle car, qui coûte 385 euros, aller et retour ;\nl'entrée au musée, qui coûte 358 euros pour toute la classe.\n\nLe car a 63 places pour les passagers. Les 27 élèves et 5 adultes, dont M. Moreau, y montent ; le chauffeur a sa propre place.\n\nPour le pique-nique, M. Moreau achète 8 paquets de sandwichs. Chaque paquet contient 5 sandwichs au jambon et 3 sandwichs au fromage.\n\nLe musée ouvre à 10 heures. Il se trouve à 42 km de l'école.",
+  "image": null,
+  "duree_estimee_min": 15,
+  "questions": [
+    {
+      "key": "q1",
+      "skill_id": "A003",
+      "statement": "Quelle dépense est la plus grande ?",
+      "type": "qcm",
+      "choices": [
+        {
+          "key": "a",
+          "text": "Le car",
+          "misconception": null
+        },
+        {
+          "key": "b",
+          "text": "L'entrée au musée",
+          "misconception": "L'élève compare les unités, 8 contre 5. Or on compare d'abord les centaines, puis les dizaines : 385 a 8 dizaines, 358 n'en a que 5."
+        },
+        {
+          "key": "c",
+          "text": "Les deux dépenses sont égales",
+          "misconception": "L'élève voit les mêmes chiffres, 3, 8 et 5. Mais ils ne sont pas à la même place : 385 et 358 sont deux nombres différents."
+        }
+      ],
+      "answer": {
+        "value": "a"
+      },
+      "points": 1,
+      "solution_steps": [
+        "On compare 385 et 358. Les centaines sont les mêmes : 3 de chaque côté.",
+        "On compare alors les dizaines : 8 dizaines pour 385, 5 dizaines pour 358. 385 est donc plus grand que 358.",
+        "La plus grande dépense est **le car**."
+      ],
+      "hint": "Si les centaines sont les mêmes, regarde les dizaines."
+    },
+    {
+      "key": "q2",
+      "skill_id": "B012",
+      "statement": "Combien de places restent libres dans le car ?",
+      "type": "numerique",
+      "answer": {
+        "value": 31,
+        "unit": "places"
+      },
+      "points": 2,
+      "solution_steps": [
+        "Les places occupées sont celles des élèves et des adultes, 27 + 5. On les calcule d'abord, entre parenthèses : $63 - (27 + 5)$.",
+        "$27 + 5 = 32$, puis $63 - 32 = 31$.",
+        "Il reste **31 places** libres.",
+        "Attention : retirer seulement les 27 élèves donnerait 36 ; les adultes occupent aussi des places."
+      ],
+      "hint": "Combien de personnes montent dans le car ?"
+    },
+    {
+      "key": "q3",
+      "skill_id": "B012",
+      "statement": "Combien de sandwichs M. Moreau achète-t-il en tout ?",
+      "type": "numerique",
+      "answer": {
+        "value": 64,
+        "unit": "sandwichs"
+      },
+      "points": 3,
+      "solution_steps": [
+        "Un paquet contient 5 + 3 sandwichs. Il y a 8 paquets : $(5 + 3) \\times 8$.",
+        "On calcule d'abord la parenthèse : $5 + 3 = 8$. Puis $8 \\times 8 = 64$.",
+        "M. Moreau achète **64 sandwichs**.",
+        "Attention : $(5 \\times 8) + 3 = 43$ compte les sandwichs au jambon des 8 paquets, mais les sandwichs au fromage d'un seul paquet."
+      ],
+      "hint": "Combien de sandwichs y a-t-il dans un seul paquet ?"
+    },
+    {
+      "key": "q4",
+      "skill_id": "B012",
+      "statement": "Après avoir payé le car et l'entrée au musée, combien d'euros reste-t-il dans la coopérative ?",
+      "type": "numerique",
+      "answer": {
+        "value": 157,
+        "unit": "€"
+      },
+      "points": 4,
+      "solution_steps": [
+        "On calcule d'abord la dépense totale, entre parenthèses : $900 - (385 + 358)$.",
+        "Dans la parenthèse, on pose l'addition : unités, 5 + 8 = 13, on écrit 3 et on retient 1 ; dizaines, 8 + 5 + 1 = 14, on écrit 4 et on retient 1 ; centaines, 3 + 3 + 1 = 7. Donc $385 + 358 = 743$.",
+        "Puis on pose la soustraction : $900 - 743 = 157$. Vérification : $157 + 743 = 900$.",
+        "Il reste **157 euros** dans la coopérative.",
+        "Attention : $(900 - 385) + 358 = 873$ ajoute le prix de l'entrée au lieu de le retirer."
+      ],
+      "hint": "Calcule d'abord ce que coûtent les deux dépenses ensemble."
+    }
+  ],
+  "review_status": "relu_agent",
+  "programme_ref": "Cycle 3, Cours moyen première année, Les quatre opérations : « Savoir effectuer un calcul contenant des parenthèses »"
+}

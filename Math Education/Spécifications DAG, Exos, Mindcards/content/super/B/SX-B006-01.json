@@ -1,0 +1,86 @@
+{
+  "id": "SX-B006-01",
+  "skill_id": "B006",
+  "skill_ids": [
+    "B006",
+    "A002"
+  ],
+  "school_level": "CE2",
+  "title": "Le spectacle du club de gym",
+  "contexte": "Le club de gym de la ville prépare son grand spectacle de juin. Le club compte quatre-vingt-cinq membres, des enfants et des adultes. Le spectacle aura lieu un samedi, à 20 heures, au gymnase.\n\nPour le public, Mme Roche, l'entraîneuse, installe 8 rangées de 8 chaises. Les familles des gymnastes ont déjà réservé 31 places.\n\nPour le numéro des pyramides, 36 gymnastes forment des pyramides de 4 gymnastes. Toutes les pyramides ont le même nombre de gymnastes, et chaque gymnaste est dans une pyramide.\n\nPour le goûter, Mme Roche veut une bouteille d'eau pour chacun des 30 plus jeunes gymnastes. Les bouteilles sont vendues par packs de 7 bouteilles ; on ne peut pas acheter une bouteille seule.\n\nLe gymnase a été rénové il y a 3 ans.",
+  "image": null,
+  "duree_estimee_min": 15,
+  "questions": [
+    {
+      "key": "q1",
+      "skill_id": "A002",
+      "statement": "Pour le numéro des pyramides, combien de gymnastes forment une pyramide ?",
+      "type": "numerique",
+      "answer": {
+        "value": 4,
+        "unit": "gymnastes"
+      },
+      "points": 1,
+      "solution_steps": [
+        "La phrase du numéro des pyramides dit : « 36 gymnastes forment des pyramides de 4 gymnastes ».",
+        "36, c'est le nombre de gymnastes du numéro ; 4, c'est le nombre de gymnastes dans une pyramide.",
+        "Une pyramide compte **4 gymnastes**. Le nombre de membres du club ne sert pas ici."
+      ],
+      "hint": "Relis la phrase qui parle du numéro des pyramides."
+    },
+    {
+      "key": "q2",
+      "skill_id": "B006",
+      "statement": "Combien de chaises Mme Roche installe-t-elle pour le public ?",
+      "type": "numerique",
+      "answer": {
+        "value": 64,
+        "unit": "chaises"
+      },
+      "points": 2,
+      "solution_steps": [
+        "Il y a 8 rangées de 8 chaises : 8 × 8.",
+        "Dans la table de 8 : 8 × 8 = 64.",
+        "Mme Roche installe **64 chaises**. Les places réservées ne changent pas le nombre de chaises installées."
+      ],
+      "hint": "Toutes les rangées ont le même nombre de chaises."
+    },
+    {
+      "key": "q3",
+      "skill_id": "B006",
+      "statement": "Combien de pyramides les 36 gymnastes forment-ils ?",
+      "type": "numerique",
+      "answer": {
+        "value": 9,
+        "unit": "pyramides"
+      },
+      "points": 3,
+      "solution_steps": [
+        "Chaque pyramide compte 4 gymnastes. On cherche combien de fois 4 gymnastes il y a dans 36 gymnastes : 4 × … = 36.",
+        "Dans la table de 4 : 4 × 9 = 36.",
+        "Les gymnastes forment **9 pyramides**."
+      ],
+      "hint": "Complète une égalité à trou avec la table de 4."
+    },
+    {
+      "key": "q4",
+      "skill_id": "B006",
+      "statement": "Combien de packs de bouteilles Mme Roche doit-elle acheter, au minimum, pour que chacun des 30 plus jeunes gymnastes ait sa bouteille ?",
+      "type": "numerique",
+      "answer": {
+        "value": 5,
+        "unit": "packs"
+      },
+      "points": 4,
+      "solution_steps": [
+        "Chaque pack contient 7 bouteilles. On cherche, dans la table de 7, le premier résultat qui atteint ou dépasse 30.",
+        "7 × 4 = 28 : 28 bouteilles, c'est moins que 30. Avec 4 packs, des gymnastes n'auraient pas de bouteille.",
+        "7 × 5 = 35 : 35 bouteilles, c'est plus que 30. Avec 5 packs, chacun a sa bouteille.",
+        "Mme Roche doit acheter **5 packs**."
+      ],
+      "hint": "Récite la table de 7 jusqu'à atteindre ou dépasser 30."
+    }
+  ],
+  "review_status": "relu_agent",
+  "programme_ref": "Cycle 2, Cours élémentaire deuxième année, Mémoriser des faits numériques : « L'élève sait compléter des « égalités à trou » du type : 7 × … = 42 ; 9 × 6 = … ; 70 = 7 × … »"
+}

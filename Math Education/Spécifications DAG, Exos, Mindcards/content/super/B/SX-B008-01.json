@@ -1,0 +1,90 @@
+{
+  "id": "SX-B008-01",
+  "skill_id": "B008",
+  "skill_ids": [
+    "B008",
+    "A009"
+  ],
+  "school_level": "CM1",
+  "title": "La sortie au verger",
+  "contexte": "Les 5 classes de CM1 de l'école Victor-Hugo, soit 103 élèves, partent cueillir des fruits dans un verger. Le verger compte 1 250 arbres.\n\nPour le trajet, les élèves sont accompagnés de 6 adultes. Tout le monde voyage dans des minibus de 9 places, sans compter la place du chauffeur. Le verger se trouve à 18 km de l'école.\n\nLe matin, les élèves ramassent 538 pommes. Ils les rangent dans des cagettes de 6 pommes. Une cagette n'est envoyée au marché que si elle est pleine.\n\nL'après-midi, ils ramassent 247 poires. Ils les mettent dans des sachets de 8 poires.\n\nAu marché, le kilogramme de pommes est vendu 3 euros.",
+  "image": null,
+  "duree_estimee_min": 15,
+  "questions": [
+    {
+      "key": "q1",
+      "skill_id": "A009",
+      "statement": "Pour poser la division de 538 par 6, on regarde d'abord les dizaines. Combien y a-t-il de dizaines en tout dans 538 ?",
+      "type": "numerique",
+      "answer": {
+        "value": 53,
+        "unit": "dizaines"
+      },
+      "points": 1,
+      "solution_steps": [
+        "538, c'est 5 centaines, 3 dizaines et 8 unités.",
+        "Une centaine vaut 10 dizaines : 5 centaines, ce sont 50 dizaines. Avec les 3 dizaines, cela fait 53 dizaines.",
+        "Il y a **53 dizaines** dans 538. Attention : 3 est le chiffre des dizaines, pas le nombre de dizaines."
+      ],
+      "hint": "Combien de dizaines y a-t-il dans une centaine ?"
+    },
+    {
+      "key": "q2",
+      "skill_id": "B008",
+      "statement": "Combien de cagettes pleines les élèves peuvent-ils envoyer au marché ?",
+      "type": "numerique",
+      "answer": {
+        "value": 89,
+        "unit": "cagettes"
+      },
+      "points": 3,
+      "solution_steps": [
+        "On range 538 pommes par cagettes de 6 : on pose la division euclidienne de 538 par 6.",
+        "5 centaines ne suffisent pas pour 6 parts : on prend les 53 dizaines. 6 × 8 = 48 : 8 dizaines au quotient, et il reste 5 dizaines.",
+        "5 dizaines et 8 unités font 58 unités. 6 × 9 = 54 : 9 unités au quotient, et il reste 4.",
+        "$538 = (6 \\times 89) + 4$ : le quotient est 89, le reste est 4. Les élèves envoient **89 cagettes** pleines ; la cagette commencée n'est pas envoyée."
+      ],
+      "hint": "Pose la division de 538 par 6 en commençant par les dizaines."
+    },
+    {
+      "key": "q3",
+      "skill_id": "B008",
+      "statement": "Combien de sachets complets de poires les élèves remplissent-ils ?",
+      "type": "numerique",
+      "answer": {
+        "value": 30,
+        "unit": "sachets"
+      },
+      "points": 3,
+      "solution_steps": [
+        "On range 247 poires par sachets de 8 : on pose la division euclidienne de 247 par 8.",
+        "2 centaines ne suffisent pas pour 8 parts : on prend les 24 dizaines. 8 × 3 = 24 : 3 dizaines au quotient, et il reste 0 dizaine.",
+        "Il reste 7 unités : 7 unités ne suffisent pas pour 8 parts. On écrit **0** au chiffre des unités du quotient, et le reste est 7.",
+        "$247 = (8 \\times 30) + 7$ : les élèves remplissent **30 sachets** complets, et 7 poires restent hors des sachets.",
+        "Attention : répondre 3 oublierait le 0 du quotient ; 3 sachets ne contiendraient que 24 poires."
+      ],
+      "hint": "Après avoir partagé les dizaines, regarde s'il reste assez d'unités pour remplir un sachet."
+    },
+    {
+      "key": "q4",
+      "skill_id": "B008",
+      "statement": "Combien de minibus faut-il, au minimum, pour emmener au verger tous les élèves et tous les adultes ?",
+      "type": "numerique",
+      "answer": {
+        "value": 13,
+        "unit": "minibus"
+      },
+      "points": 4,
+      "solution_steps": [
+        "Il faut transporter les 103 élèves et les 6 adultes : 103 + 6 = 109 personnes. Le chauffeur n'occupe pas l'une des 9 places.",
+        "On pose la division euclidienne de 109 par 9. 1 centaine ne suffit pas pour 9 parts : on prend les 10 dizaines. 9 × 1 = 9 : 1 dizaine au quotient, il reste 1 dizaine.",
+        "1 dizaine et 9 unités font 19 unités. 9 × 2 = 18 : 2 unités au quotient, il reste 1.",
+        "$109 = (9 \\times 12) + 1$ : 12 minibus pleins emmènent 108 personnes, et il reste 1 personne.",
+        "Cette personne doit aussi partir : il faut un minibus de plus. Il faut **13 minibus**."
+      ],
+      "hint": "Compte d'abord toutes les personnes à transporter, puis demande-toi ce que tu fais du reste."
+    }
+  ],
+  "review_status": "relu_agent",
+  "programme_ref": "Cycle 3, Cours moyen première année, Les quatre opérations : « Poser et effectuer des divisions euclidiennes avec un diviseur à un chiffre »"
+}

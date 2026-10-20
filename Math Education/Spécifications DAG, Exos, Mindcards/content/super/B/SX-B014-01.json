@@ -1,0 +1,85 @@
+{
+  "id": "SX-B014-01",
+  "skill_id": "B014",
+  "skill_ids": [
+    "B014",
+    "A002"
+  ],
+  "school_level": "CP",
+  "title": "La kermesse de l'école",
+  "contexte": "Samedi, c'est la kermesse de l'école. Elle ouvre à 14 heures et ferme à 18 heures.\n\nAu stand des crêpes, on a vendu 58 crêpes. Au stand des gaufres, on a vendu 85 gaufres.\n\nAu stand des ballons, Mme Roy a gonflé 80 ballons. Avant 16 heures, les enfants en achètent 30.\n\nAu stand des gâteaux, M. Ali a coupé 40 parts. Une famille lui achète 7 parts.\n\nChaque part coûte 2 euros. Les gâteaux ont été faits par les parents des élèves.",
+  "image": null,
+  "duree_estimee_min": 8,
+  "questions": [
+    {
+      "key": "q1",
+      "skill_id": "A002",
+      "statement": "À quel stand a-t-on vendu le plus ?",
+      "type": "qcm",
+      "choices": [
+        {
+          "key": "a",
+          "text": "Au stand des crêpes",
+          "misconception": "L'élève regarde d'abord les unités : 8 est plus grand que 5. Or ce sont les dizaines qu'on compare d'abord : 58 n'a que 5 dizaines."
+        },
+        {
+          "key": "b",
+          "text": "Au stand des gaufres",
+          "misconception": null
+        },
+        {
+          "key": "c",
+          "text": "Autant aux deux stands",
+          "misconception": "L'élève voit les mêmes chiffres, 5 et 8. Mais leur place change tout : 58, c'est 5 dizaines et 8 unités ; 85, c'est 8 dizaines et 5 unités."
+        }
+      ],
+      "answer": {
+        "value": "b"
+      },
+      "points": 2,
+      "solution_steps": [
+        "On compare 58 et 85. On regarde d'abord les dizaines : 58 a 5 dizaines, 85 en a 8.",
+        "8 dizaines, c'est plus que 5 dizaines : 85 est plus grand que 58.",
+        "On a vendu le plus **au stand des gaufres**."
+      ],
+      "hint": "Compare d'abord les dizaines."
+    },
+    {
+      "key": "q2",
+      "skill_id": "B014",
+      "statement": "Combien de ballons reste-t-il au stand à 16 heures ?",
+      "type": "numerique",
+      "answer": {
+        "value": 50,
+        "unit": "ballons"
+      },
+      "points": 3,
+      "solution_steps": [
+        "Mme Roy avait 80 ballons, les enfants en achètent 30 : on calcule 80 − 30 dans sa tête.",
+        "80, c'est 8 dizaines, et 30, c'est 3 dizaines. 8 dizaines moins 3 dizaines : il reste 5 dizaines.",
+        "80 − 30 = 50 : il reste **50 ballons** à 16 heures."
+      ],
+      "hint": "Compte en dizaines."
+    },
+    {
+      "key": "q3",
+      "skill_id": "B014",
+      "statement": "Combien de parts de gâteau reste-t-il à M. Ali après le passage de la famille ?",
+      "type": "numerique",
+      "answer": {
+        "value": 33,
+        "unit": "parts"
+      },
+      "points": 4,
+      "solution_steps": [
+        "M. Ali avait 40 parts, la famille en achète 7 : on calcule 40 − 7 dans sa tête.",
+        "40, c'est 4 dizaines et aucune unité : on ne peut pas enlever 7 unités. On casse une dizaine : il reste 3 dizaines, et on a 10 unités.",
+        "10 − 7 = 3 : il reste 3 dizaines et 3 unités, donc **33 parts**.",
+        "Le prix d'une part ne sert pas ici."
+      ],
+      "hint": "40, c'est 4 dizaines : casse l'une d'elles en 10 unités."
+    }
+  ],
+  "review_status": "relu_agent",
+  "programme_ref": "Cycle 2, Cours préparatoire, Le calcul mental : « Soustraire un nombre inférieur à 10 à un nombre entier de dizaines. »"
+}

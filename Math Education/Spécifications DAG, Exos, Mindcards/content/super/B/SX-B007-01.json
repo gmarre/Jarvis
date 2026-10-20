@@ -1,0 +1,91 @@
+{
+  "id": "SX-B007-01",
+  "skill_id": "B007",
+  "skill_ids": [
+    "B007",
+    "A009"
+  ],
+  "school_level": "CE2",
+  "title": "Le salon du livre jeunesse",
+  "contexte": "Chaque année en mars, la ville organise un salon du livre jeunesse. Le salon ouvre à 10 heures et ferme à 19 heures.\n\nL'an dernier, le salon a reçu 2 406 visiteurs.\n\nPour les lectures à voix haute, Mme Garnier installe dans la grande salle 23 rangées de 16 chaises.\n\nPour l'accueil, elle a reçu 7 cartons de 125 marque-pages.\n\nÀ la boutique du salon, un sac en tissu coûte 12 euros et une affiche coûte 5 euros. Samedi, la boutique a vendu 146 sacs en tissu.\n\nCette année, 38 auteurs viennent dédicacer leurs livres.",
+  "image": null,
+  "duree_estimee_min": 15,
+  "questions": [
+    {
+      "key": "q1",
+      "skill_id": "A009",
+      "statement": "Dans le nombre de visiteurs de l'an dernier, 2 406, quel est le chiffre des centaines ?",
+      "type": "numerique",
+      "answer": {
+        "value": 4
+      },
+      "points": 1,
+      "solution_steps": [
+        "Dans 2 406 : 6 unités, 0 dizaine, 4 centaines et 2 milliers.",
+        "Le chiffre des centaines est **4**.",
+        "Attention : 24 est le nombre de centaines (les 2 milliers font 20 centaines), pas le chiffre des centaines."
+      ],
+      "hint": "Les centaines sont au troisième rang, en partant de la droite."
+    },
+    {
+      "key": "q2",
+      "skill_id": "B007",
+      "statement": "Combien de marque-pages Mme Garnier a-t-elle reçus ?",
+      "type": "numerique",
+      "answer": {
+        "value": 875,
+        "unit": "marque-pages"
+      },
+      "points": 2,
+      "solution_steps": [
+        "7 cartons de 125 marque-pages : 125 × 7. On pose la multiplication, le 7 sous les unités.",
+        "Unités : 7 × 5 = 35. On écrit 5 et on retient 3 dizaines.",
+        "Dizaines : 7 × 2 = 14, plus la retenue : 14 + 3 = 17. On écrit 7 et on retient 1 centaine.",
+        "Centaines : 7 × 1 = 7, plus la retenue : 7 + 1 = 8.",
+        "125 × 7 = 875 : Mme Garnier a reçu **875 marque-pages**."
+      ],
+      "hint": "Pose la multiplication et commence par les unités."
+    },
+    {
+      "key": "q3",
+      "skill_id": "B007",
+      "statement": "Combien de chaises Mme Garnier installe-t-elle dans la grande salle ?",
+      "type": "numerique",
+      "answer": {
+        "value": 368,
+        "unit": "chaises"
+      },
+      "points": 3,
+      "solution_steps": [
+        "23 rangées de 16 chaises : 23 × 16. On pose la multiplication, 16 en dessous.",
+        "Première ligne, les 6 unités de 16 : 23 × 6 = 138.",
+        "Deuxième ligne, la dizaine de 16 : 23 × 1 = 23, ce sont 23 dizaines, soit 230. On écrit d'abord un 0 aux unités.",
+        "On additionne les deux lignes : 138 + 230 = 368.",
+        "Mme Garnier installe **368 chaises**.",
+        "Attention : oublier le 0 de la deuxième ligne donnerait 138 + 23 = 161."
+      ],
+      "hint": "Fais une ligne pour les unités de 16, puis une ligne pour sa dizaine."
+    },
+    {
+      "key": "q4",
+      "skill_id": "B007",
+      "statement": "Combien d'euros la boutique a-t-elle reçus samedi pour les sacs en tissu ?",
+      "type": "numerique",
+      "answer": {
+        "value": 1752,
+        "unit": "€"
+      },
+      "points": 4,
+      "solution_steps": [
+        "146 sacs à 12 euros : 146 × 12. On pose la multiplication, 12 en dessous.",
+        "Première ligne, les 2 unités de 12 : 146 × 2 = 292.",
+        "Deuxième ligne, la dizaine de 12 : 146 × 1 = 146, ce sont 146 dizaines, soit 1 460. On écrit d'abord un 0 aux unités.",
+        "On additionne les deux lignes : 292 + 1 460 = 1 752.",
+        "La boutique a reçu **1 752 euros** pour les sacs. Le prix d'une affiche ne sert pas ici."
+      ],
+      "hint": "Pose la multiplication : une ligne pour les unités de 12, une ligne pour sa dizaine."
+    }
+  ],
+  "review_status": "relu_agent",
+  "programme_ref": "Cycle 2, Cours élémentaire deuxième année, Les quatre opérations : « L'algorithme de la multiplication posée est introduit en période 4 au plus tard. »"
+}

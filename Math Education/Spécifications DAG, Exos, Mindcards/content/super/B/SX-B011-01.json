@@ -1,0 +1,150 @@
+{
+  "id": "SX-B011-01",
+  "skill_id": "B011",
+  "skill_ids": [
+    "B011",
+    "A003"
+  ],
+  "school_level": "5e",
+  "title": "La sortie au bowling",
+  "contexte": "Pour fêter la fin de l'année, les 9 élèves du club de théâtre du collège Jules-Ferry vont au bowling avec leur professeure, Mme Benali. Le club dispose d'une cagnotte de 200 €. Le bowling se trouve à 14 km du collège.\n\nLes tarifs affichés à l'entrée :\nune partie : 7 € par joueur ;\nla location de chaussures : 2 € par joueur.\n\nChaque élève joue une partie et loue des chaussures. Pour le retour, le car coûte 65 € pour tout le groupe. Les dépenses des élèves et le car sont payés avec la cagnotte.\n\nMme Benali ne joue pas. Au bar du bowling, elle déjeune avec le chauffeur du car et paie les deux repas avec son propre argent. Son ticket indique un plat du jour à 13 € et 2 desserts à 7 € ; le chauffeur n'a pris qu'un dessert.\n\nLe meilleur score de l'après-midi est celui de Sami : cent-quatre-vingt-sept points.",
+  "image": null,
+  "duree_estimee_min": 15,
+  "questions": [
+    {
+      "key": "q1",
+      "skill_id": "A003",
+      "statement": "Combien de personnes jouent au bowling ?",
+      "type": "numerique",
+      "answer": {
+        "value": 9,
+        "unit": "personnes",
+        "accepted": [
+          "9 joueurs",
+          "9 élèves"
+        ]
+      },
+      "points": 1,
+      "solution_steps": [
+        "Les 9 élèves du club jouent chacun une partie.",
+        "Mme Benali ne joue pas : elle déjeune au bar avec le chauffeur du car, qui ne joue pas non plus.",
+        "**9 personnes** jouent au bowling. Le score de Sami ne sert pas ici."
+      ],
+      "hint": "Relis ce que fait Mme Benali pendant que les élèves jouent."
+    },
+    {
+      "key": "q2",
+      "skill_id": "B011",
+      "statement": "Le ticket de Mme Benali indique le calcul $13 + 2 \\times 7$. Combien d'euros paie-t-elle ?",
+      "type": "numerique",
+      "answer": {
+        "value": 27,
+        "unit": "€"
+      },
+      "points": 2,
+      "solution_steps": [
+        "La multiplication passe avant l'addition : on calcule d'abord $2 \\times 7 = 14$, le prix des deux desserts.",
+        "Puis $13 + 14 = 27$.",
+        "Mme Benali paie **27 €**.",
+        "Attention : calculer de gauche à droite, $13 + 2 = 15$ puis $15 \\times 7 = 105$, ne respecte pas les priorités ; 105 € pour un plat et deux desserts n'a pas de sens."
+      ],
+      "hint": "Quelle opération effectue-t-on en premier ?"
+    },
+    {
+      "key": "q3",
+      "skill_id": "B011",
+      "statement": "Comment s'appelle le calcul $13 + 2 \\times 7$, et quel rôle y joue le nombre 13 ?",
+      "type": "qcm",
+      "choices": [
+        {
+          "key": "a",
+          "text": "Un produit, dont 13 est un facteur",
+          "misconception": "L'élève nomme le calcul d'après l'opération effectuée en premier, la multiplication. Or c'est la dernière opération qui donne le nom : ici, l'addition."
+        },
+        {
+          "key": "b",
+          "text": "Une somme, dont 13 est un terme",
+          "misconception": null
+        },
+        {
+          "key": "c",
+          "text": "Une somme, dont 13 est un facteur",
+          "misconception": "Le nom est juste, mais dans une somme, les nombres ajoutés s'appellent des termes ; les facteurs sont les nombres que l'on multiplie."
+        },
+        {
+          "key": "d",
+          "text": "Un produit, dont 13 est un terme",
+          "misconception": "La dernière opération est l'addition : le calcul est une somme, pas un produit. Et dans un produit, on parle de facteurs, pas de termes."
+        }
+      ],
+      "answer": {
+        "value": "b"
+      },
+      "points": 2,
+      "solution_steps": [
+        "Dans $13 + 2 \\times 7$, on effectue d'abord $2 \\times 7$, puis on ajoute 13 : la **dernière** opération est l'addition.",
+        "Le calcul est donc une **somme**. Ses deux termes sont 13 et $2 \\times 7$ : 13 est un **terme**.",
+        "2 et 7 sont les facteurs du produit $2 \\times 7$, qui est lui-même un terme de la somme."
+      ],
+      "hint": "Le nom d'un calcul vient de sa dernière opération."
+    },
+    {
+      "key": "q4",
+      "skill_id": "B011",
+      "statement": "Quel calcul donne la somme payée avec la cagnotte ?",
+      "type": "qcm",
+      "choices": [
+        {
+          "key": "a",
+          "text": "$9 \\times 7 + 2 + 65$",
+          "misconception": "Sans parenthèses, la multiplication passe d'abord : seules les parties sont comptées 9 fois. Les chaussures ne seraient payées qu'une fois."
+        },
+        {
+          "key": "b",
+          "text": "$9 \\times (7 + 2 + 65)$",
+          "misconception": "Le car est mis dans la parenthèse : il serait payé 9 fois, alors qu'il coûte 65 € pour tout le groupe."
+        },
+        {
+          "key": "c",
+          "text": "$9 + 7 + 2 + 65$",
+          "misconception": "L'élève additionne tous les nombres de l'énoncé : le nombre d'élèves n'est pas un prix, il dit combien de fois on paie."
+        },
+        {
+          "key": "d",
+          "text": "$9 \\times (7 + 2) + 65$",
+          "misconception": null
+        }
+      ],
+      "answer": {
+        "value": "d"
+      },
+      "points": 3,
+      "solution_steps": [
+        "Chaque élève paie une partie et des chaussures : $7 + 2$ euros. Pour les 9 élèves, on multiplie toute cette somme par 9 : il faut des parenthèses, $9 \\times (7 + 2)$.",
+        "Le car est payé une seule fois pour tout le groupe : on ajoute 65 sans le multiplier.",
+        "Le bon calcul est $9 \\times (7 + 2) + 65$. Le repas de Mme Benali n'est pas payé avec la cagnotte."
+      ],
+      "hint": "Qu'est-ce qui est payé pour chaque élève, et qu'est-ce qui est payé une seule fois ?"
+    },
+    {
+      "key": "q5",
+      "skill_id": "B011",
+      "statement": "Combien d'euros sont payés avec la cagnotte, en tout ?",
+      "type": "numerique",
+      "answer": {
+        "value": 146,
+        "unit": "€"
+      },
+      "points": 4,
+      "solution_steps": [
+        "La dépense se calcule par $9 \\times (7 + 2) + 65$.",
+        "Les parenthèses d'abord : $7 + 2 = 9$. Puis la multiplication : $9 \\times 9 = 81$. Enfin l'addition : $81 + 65 = 146$.",
+        "La cagnotte paie **146 €**, et il y reste de l'argent.",
+        "Attention : sans les parenthèses, $9 \\times 7 + 2 + 65 = 130$ ne compterait qu'une fois les chaussures."
+      ],
+      "hint": "Calcule d'abord ce que dépense un élève."
+    }
+  ],
+  "review_status": "relu_agent",
+  "programme_ref": "Cycle 4, classe de 5e, Nombres et calculs, Opérations, Objectifs d'apprentissage : « Connaitre et utiliser les priorités opératoires. »"
+}

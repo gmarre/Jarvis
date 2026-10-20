@@ -1,0 +1,70 @@
+{
+  "id": "SX-B005-01",
+  "skill_id": "B005",
+  "skill_ids": [
+    "B005",
+    "A002"
+  ],
+  "school_level": "CE1",
+  "title": "Le potager de la classe",
+  "contexte": "La classe de CE1 de Mme Lopez a un potager derrière l'école. La classe compte vingt-six élèves.\n\nLundi, les élèves plantent des poireaux. Ils font 4 rangs, avec 9 poireaux dans chaque rang.\n\nMardi, ils plantent des fraisiers : 5 rangs de 7 fraisiers.\n\nMercredi, le jardinier de la ville apporte 32 plants de tomates. Les élèves veulent planter tous ces plants en rangs de 4 plants, avec le même nombre de plants dans chaque rang.\n\nLe jardinier a 58 ans. Il vient à l'école en vélo.",
+  "image": null,
+  "duree_estimee_min": 10,
+  "questions": [
+    {
+      "key": "q1",
+      "skill_id": "A002",
+      "statement": "Lundi, combien de poireaux les élèves plantent-ils dans chaque rang ?",
+      "type": "numerique",
+      "answer": {
+        "value": 9,
+        "unit": "poireaux"
+      },
+      "points": 1,
+      "solution_steps": [
+        "La phrase de lundi dit : « 4 rangs, avec 9 poireaux dans chaque rang ».",
+        "4, c'est le nombre de rangs ; 9, c'est le nombre de poireaux dans un rang.",
+        "Il y a **9 poireaux** dans chaque rang. Le nombre d'élèves ne sert pas ici."
+      ],
+      "hint": "Relis la phrase qui parle de lundi."
+    },
+    {
+      "key": "q2",
+      "skill_id": "B005",
+      "statement": "Combien de poireaux les élèves plantent-ils lundi ?",
+      "type": "numerique",
+      "answer": {
+        "value": 36,
+        "unit": "poireaux"
+      },
+      "points": 3,
+      "solution_steps": [
+        "Il y a 4 rangs de 9 poireaux : 4 fois 9 poireaux, c'est 4 × 9.",
+        "4 × 9 = 9 + 9 + 9 + 9 = 36.",
+        "Les élèves plantent **36 poireaux** lundi.",
+        "Attention : 4 + 9 = 13 ajoute le nombre de rangs au nombre de poireaux d'un rang ; ce n'est pas le nombre de poireaux."
+      ],
+      "hint": "Chaque rang a le même nombre de poireaux."
+    },
+    {
+      "key": "q3",
+      "skill_id": "B005",
+      "statement": "Combien de rangs de tomates les élèves peuvent-ils faire avec les 32 plants ?",
+      "type": "numerique",
+      "answer": {
+        "value": 8,
+        "unit": "rangs"
+      },
+      "points": 4,
+      "solution_steps": [
+        "On fait des rangs de 4 plants avec 32 plants. On cherche combien de fois 4 plants il y a dans 32 plants : 4 × … = 32.",
+        "On récite la table de 4 : 4, 8, 12, 16, 20, 24, 28, 32. On a dit 8 nombres.",
+        "4 × 8 = 32 : les élèves font **8 rangs** de tomates.",
+        "L'âge du jardinier et les fraisiers ne servent pas ici."
+      ],
+      "hint": "Combien de fois faut-il 4 plants pour arriver à 32 plants ?"
+    }
+  ],
+  "review_status": "relu_agent",
+  "programme_ref": "Cycle 2, Cours élémentaire première année, Les quatre opérations : « Le symbole « × » est lu « fois » par l'élève. »"
+}

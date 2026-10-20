@@ -1,0 +1,71 @@
+{
+  "id": "SX-B002-01",
+  "skill_id": "B002",
+  "skill_ids": [
+    "B002",
+    "A002"
+  ],
+  "school_level": "CP",
+  "title": "Les bouchons de l'école Jean-Moulin",
+  "contexte": "L'école Jean-Moulin ramasse des bouchons en plastique pour une association. Le ramassage dure trois semaines.\n\nLa classe de CP de M. Petit compte 23 élèves. Les élèves posent leurs bouchons dans un grand carton, près de la porte.\n\nLa première semaine, les CP apportent 29 bouchons.\nLa deuxième semaine, ils apportent 45 bouchons.\nLa troisième semaine, ils apportent 18 bouchons.\n\nLa classe de CE1 apporte en tout soixante-quinze bouchons.\n\nUn sac de l'association peut contenir 100 bouchons. Le camion de l'association passera le 30 juin.",
+  "image": null,
+  "duree_estimee_min": 10,
+  "questions": [
+    {
+      "key": "q1",
+      "skill_id": "A002",
+      "statement": "Écris en chiffres le nombre de bouchons apportés par la classe de CE1.",
+      "type": "numerique",
+      "answer": {
+        "value": 75,
+        "unit": "bouchons"
+      },
+      "points": 2,
+      "solution_steps": [
+        "« Soixante-quinze », c'est soixante et quinze : 60 + 15.",
+        "60 + 15 = 75 : 7 dizaines et 5 unités.",
+        "Le nombre s'écrit **75**."
+      ],
+      "hint": "Soixante-quinze, c'est soixante et encore quinze."
+    },
+    {
+      "key": "q2",
+      "skill_id": "B002",
+      "statement": "Combien de bouchons les CP apportent-ils pendant les deux premières semaines ?",
+      "type": "numerique",
+      "answer": {
+        "value": 74,
+        "unit": "bouchons"
+      },
+      "points": 3,
+      "solution_steps": [
+        "On additionne les bouchons de la première et de la deuxième semaine : 29 + 45. On pose l'addition : les unités sous les unités, les dizaines sous les dizaines.",
+        "Unités : 9 + 5 = 14. On écrit 4 et on retient 1 dizaine.",
+        "Dizaines : 2 + 4 = 6, plus la retenue : 6 + 1 = 7.",
+        "29 + 45 = 74 : les CP apportent **74 bouchons** pendant les deux premières semaines."
+      ],
+      "hint": "Pose l'addition en commençant par les unités."
+    },
+    {
+      "key": "q3",
+      "skill_id": "B002",
+      "statement": "Combien de bouchons les CP apportent-ils pendant les trois semaines ?",
+      "type": "numerique",
+      "answer": {
+        "value": 92,
+        "unit": "bouchons"
+      },
+      "points": 4,
+      "solution_steps": [
+        "On additionne les bouchons des trois semaines : 29 + 45 + 18. On pose les trois nombres en colonnes, les unités sous les unités.",
+        "Unités : 9 + 5 + 8 = 22. On écrit 2 et on retient 2 dizaines.",
+        "Dizaines : 2 + 4 + 1 = 7, plus la retenue : 7 + 2 = 9.",
+        "29 + 45 + 18 = 92 : les CP apportent **92 bouchons** en trois semaines.",
+        "Le nombre d'élèves et les bouchons des CE1 ne servent pas ici."
+      ],
+      "hint": "Pose les trois nombres l'un sous l'autre, et regarde bien ce que tu retiens aux unités."
+    }
+  ],
+  "review_status": "relu_agent",
+  "programme_ref": "Cycle 2, Cours préparatoire, Les quatre opérations : « L'élève sait poser une addition de deux ou trois nombres à un ou deux chiffres, en positionnant les unités sous les unités, les dizaines sous les dizaines, et en calculer le résultat. Par exemple, 45 + 37 ou 28 + 8 + 56. »"
+}

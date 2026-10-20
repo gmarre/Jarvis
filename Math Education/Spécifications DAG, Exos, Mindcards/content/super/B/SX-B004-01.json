@@ -1,0 +1,72 @@
+{
+  "id": "SX-B004-01",
+  "skill_id": "B004",
+  "skill_ids": [
+    "B004",
+    "A003"
+  ],
+  "school_level": "CE1",
+  "title": "Le cinéma Le Lumière",
+  "contexte": "Le cinéma Le Lumière a deux salles. La grande salle a 450 places. La petite salle a cent-quatre-vingt-douze places.\n\nSamedi, à la séance de 14 heures, 286 spectateurs regardent un dessin animé dans la grande salle.\n\nUn billet coûte 6 euros pour un enfant.\n\nDimanche, le cinéma a vendu 603 billets dans la journée, pour les deux salles. Le matin, il en a vendu 327. Les autres billets ont été vendus l'après-midi.\n\nLes spectateurs entrent par la grande porte vitrée, rue Pasteur.",
+  "image": null,
+  "duree_estimee_min": 10,
+  "questions": [
+    {
+      "key": "q1",
+      "skill_id": "A003",
+      "statement": "Écris en chiffres le nombre de places de la petite salle.",
+      "type": "numerique",
+      "answer": {
+        "value": 192,
+        "unit": "places"
+      },
+      "points": 2,
+      "solution_steps": [
+        "« Cent-quatre-vingt-douze », c'est cent, quatre-vingts et douze : 100 + 80 + 12.",
+        "Cela fait 1 centaine, 9 dizaines et 2 unités.",
+        "Le nombre s'écrit **192**."
+      ],
+      "hint": "Cherche d'abord le chiffre des centaines, puis celui des dizaines."
+    },
+    {
+      "key": "q2",
+      "skill_id": "B004",
+      "statement": "Samedi, à la séance de 14 heures, combien de places restent vides dans la grande salle ?",
+      "type": "numerique",
+      "answer": {
+        "value": 164,
+        "unit": "places"
+      },
+      "points": 3,
+      "solution_steps": [
+        "On enlève les places occupées des places de la grande salle : 450 − 286. On pose la soustraction, les unités sous les unités, et on commence par les unités.",
+        "Unités : on ne peut pas enlever 6 de 0. On casse 1 des 5 dizaines : il reste 4 dizaines, et on a 10 unités. 10 − 6 = 4.",
+        "Dizaines : on ne peut pas enlever 8 de 4. On casse 1 des 4 centaines : il reste 3 centaines, et on a 14 dizaines. 14 − 8 = 6.",
+        "Centaines : 3 − 2 = 1. Donc 450 − 286 = 164.",
+        "Vérification : 164 + 286 = 450. Il reste **164 places** vides."
+      ],
+      "hint": "Pose la soustraction et commence par les unités."
+    },
+    {
+      "key": "q3",
+      "skill_id": "B004",
+      "statement": "Combien de billets le cinéma a-t-il vendus dimanche après-midi ?",
+      "type": "numerique",
+      "answer": {
+        "value": 276,
+        "unit": "billets"
+      },
+      "points": 4,
+      "solution_steps": [
+        "Les billets de l'après-midi, ce sont tous les billets de la journée moins ceux du matin : 603 − 327.",
+        "Unités : on ne peut pas enlever 7 de 3, et il n'y a aucune dizaine à casser. On casse d'abord 1 des 6 centaines : il reste 5 centaines, et on a 10 dizaines.",
+        "On casse ensuite 1 de ces 10 dizaines : il reste 9 dizaines, et on a 13 unités. 13 − 7 = 6.",
+        "Dizaines : 9 − 2 = 7. Centaines : 5 − 3 = 2. Donc 603 − 327 = 276.",
+        "Vérification : 276 + 327 = 603. Le cinéma a vendu **276 billets** l'après-midi."
+      ],
+      "hint": "Regarde le chiffre des dizaines de 603 avant de commencer."
+    }
+  ],
+  "review_status": "relu_agent",
+  "programme_ref": "Cycle 2, Cours élémentaire première année, Les quatre opérations : « L'élève connait un algorithme de soustraction posée (« par cassage » ou « par compensation »). »"
+}

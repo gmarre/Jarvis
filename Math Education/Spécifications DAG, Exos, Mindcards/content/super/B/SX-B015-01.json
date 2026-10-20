@@ -1,0 +1,69 @@
+{
+  "id": "SX-B015-01",
+  "skill_id": "B015",
+  "skill_ids": [
+    "B015",
+    "A008"
+  ],
+  "school_level": "CE1",
+  "title": "Les commandes de la fête de l'école",
+  "contexte": "Pour la fête de l'école, M. Diallo, le directeur, prépare les commandes. L'école compte 214 élèves.\n\nLes gobelets sont vendus en paquets de 10 gobelets. M. Diallo commande 27 paquets.\n\nPour le spectacle, il faut 460 chaises. La mairie prête les chaises par piles de 10 chaises.\n\nLa fête commence à 15 heures. Une crêpe coûte 2 euros. Les parents installent 6 grandes tables dans la cour de récréation. Les élèves de CE1 décorent la cour avec de longues guirlandes en papier.",
+  "image": null,
+  "duree_estimee_min": 10,
+  "questions": [
+    {
+      "key": "q1",
+      "skill_id": "A008",
+      "statement": "Dans le nombre d'élèves de l'école, 214, quel est le chiffre des dizaines ?",
+      "type": "numerique",
+      "answer": {
+        "value": 1
+      },
+      "points": 2,
+      "solution_steps": [
+        "Dans 214 : 4 est le chiffre des unités, 1 est le chiffre des dizaines, 2 est le chiffre des centaines.",
+        "Le chiffre des dizaines est **1**.",
+        "Attention : 21 n'est pas un chiffre. Un chiffre s'écrit avec un seul signe, de 0 à 9 ; 21 est un nombre."
+      ],
+      "hint": "Les unités sont tout à droite. Les dizaines sont juste à côté."
+    },
+    {
+      "key": "q2",
+      "skill_id": "B015",
+      "statement": "Combien de gobelets M. Diallo commande-t-il ?",
+      "type": "numerique",
+      "answer": {
+        "value": 270,
+        "unit": "gobelets"
+      },
+      "points": 3,
+      "solution_steps": [
+        "Il commande 27 paquets de 10 gobelets : 27 × 10.",
+        "27, c'est 2 dizaines et 7 unités. Quand on multiplie par 10, chaque unité devient une dizaine et chaque dizaine devient une centaine.",
+        "On obtient 2 centaines et 7 dizaines : 27 × 10 = 270.",
+        "M. Diallo commande **270 gobelets**."
+      ],
+      "hint": "Quand on multiplie 27 par 10, que devient chaque unité ?"
+    },
+    {
+      "key": "q3",
+      "skill_id": "B015",
+      "statement": "Combien de piles de chaises la mairie doit-elle prêter pour le spectacle ?",
+      "type": "numerique",
+      "answer": {
+        "value": 46,
+        "unit": "piles"
+      },
+      "points": 4,
+      "solution_steps": [
+        "Chaque pile a 10 chaises. On cherche le nombre qui, multiplié par 10, donne 460 : … × 10 = 460.",
+        "460, c'est 4 centaines et 6 dizaines. Quand on multiplie par 10, les dizaines deviennent des centaines et les unités deviennent des dizaines : le nombre cherché a 4 dizaines et 6 unités.",
+        "46 × 10 = 460 : la mairie doit prêter **46 piles** de chaises.",
+        "Le nombre d'élèves ne sert pas ici : ce qui compte, c'est le nombre de chaises."
+      ],
+      "hint": "Quel nombre devient 460 quand on le multiplie par 10 ?"
+    }
+  ],
+  "review_status": "relu_agent",
+  "programme_ref": "Cycle 2, Cours élémentaire première année, Le calcul mental : « Multiplier par 10 un nombre inférieur à 100. »"
+}

@@ -1,0 +1,75 @@
+{
+  "id": "SX-B003-01",
+  "skill_id": "B003",
+  "skill_ids": [
+    "B003",
+    "A001"
+  ],
+  "school_level": "CP",
+  "title": "L'album d'images de Nina",
+  "contexte": "Nina colle des images d'animaux dans un album. L'album a 98 places.\n\nLundi, Nina a déjà collé 45 images.\n\nMardi, sa tante lui offre une pochette. Dans la pochette, il y a un lion, un ours, un zèbre, un singe, un tigre et un loup. Nina colle toutes ces images.\n\nMercredi, son frère Malo lui donne d'autres images. Nina les colle aussi. Le soir, elle compte ses images collées : il y en a 89.\n\nLa pochette a coûté 2 euros. Nina range son album à 19 heures.",
+  "image": null,
+  "duree_estimee_min": 10,
+  "questions": [
+    {
+      "key": "q1",
+      "skill_id": "A001",
+      "statement": "Combien d'images y a-t-il dans la pochette de la tante ?",
+      "type": "numerique",
+      "answer": {
+        "value": 6,
+        "unit": "images",
+        "accepted": [
+          "six",
+          "six images"
+        ]
+      },
+      "points": 2,
+      "solution_steps": [
+        "On compte les animaux de la pochette : le lion (1), l'ours (2), le zèbre (3), le singe (4), le tigre (5), le loup (6).",
+        "Il y a **6 images** dans la pochette.",
+        "Le prix de la pochette ne sert pas ici."
+      ],
+      "hint": "Compte les animaux de la pochette, un par un."
+    },
+    {
+      "key": "q2",
+      "skill_id": "B003",
+      "statement": "Lundi soir, combien de places vides reste-t-il dans l'album ?",
+      "type": "numerique",
+      "answer": {
+        "value": 53,
+        "unit": "places"
+      },
+      "points": 3,
+      "solution_steps": [
+        "L'album a 98 places et 45 sont prises : on enlève 45 de 98, 98 − 45.",
+        "Unités : 8 − 5 = 3. Dizaines : 9 − 4 = 5.",
+        "98 − 45 = 53. On vérifie avec l'addition : 53 + 45 = 98.",
+        "Lundi soir, il reste **53 places** vides."
+      ],
+      "hint": "Les places vides, ce sont les places de l'album moins les places déjà prises."
+    },
+    {
+      "key": "q3",
+      "skill_id": "B003",
+      "statement": "On admet qu'après avoir collé les images de la pochette, Nina avait 51 images collées. Combien d'images Malo lui a-t-il données ?",
+      "type": "numerique",
+      "answer": {
+        "value": 38,
+        "unit": "images"
+      },
+      "points": 4,
+      "solution_steps": [
+        "Nina avait 51 images. Avec celles de Malo, elle en a 89. On cherche ce qu'il faut ajouter à 51 pour arriver à 89 : 51 + … = 89.",
+        "La soustraction est l'opération inverse de l'addition : le nombre cherché est 89 − 51.",
+        "Unités : 9 − 1 = 8. Dizaines : 8 − 5 = 3. Donc 89 − 51 = 38.",
+        "Vérification : 51 + 38 = 89. Malo a donné **38 images** à Nina.",
+        "Attention : 89 − 45 oublierait les images de la pochette, déjà collées avant celles de Malo."
+      ],
+      "hint": "Que faut-il ajouter à 51 pour arriver à 89 ?"
+    }
+  ],
+  "review_status": "relu_agent",
+  "programme_ref": "Cycle 2, Cours préparatoire, Les quatre opérations : « La soustraction est comprise par l'élève comme l'opération inverse de l'addition. »"
+}
