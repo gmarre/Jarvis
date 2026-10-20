@@ -13,6 +13,8 @@ import {
 } from '@/lib/placement'
 import { cn } from '@/lib/cn'
 import { AnswerInput } from '@/components/exercise/AnswerInput'
+import { RevueTest } from '@/components/exercise/RevueTest'
+import type { QuestionRevue } from '@/lib/revue'
 import { ExerciseFigure } from '@/components/exercise/ExerciseFigure'
 import { Wordmark } from '@/components/layout/AppShell'
 import { Badge } from '@/components/ui/Badge'
@@ -48,6 +50,8 @@ export default function PlacementTestPage() {
   /** Correction en cours : le serveur n'a pas encore repondu. */
   const [correcting, setCorrecting] = useState(false)
   const [correctionError, setCorrectionError] = useState<string | null>(null)
+  /** Questions posees, pour la correction montree a la fin du test. */
+  const [revue, setRevue] = useState<QuestionRevue[]>([])
 
   // Selection directe plutot que memoisee : une lecture de tableau indexe, la
   // memoisation couterait plus cher que le calcul.
@@ -104,7 +108,9 @@ export default function PlacementTestPage() {
     setCorrectionError(null)
     let isCorrect: boolean
     try {
-      isCorrect = (await corriger(exercise.id, answer)).isCorrect
+      const correction = await corriger(exercise.id, answer)
+      isCorrect = correction.isCorrect
+      setRevue((current) => [...current, { exercise, reponse: answer, correction }])
     } catch (cause) {
       // La reponse reste saisie : l'eleve n'a qu'a valider a nouveau.
       setCorrectionError(cause instanceof Error ? cause.message : String(cause))
@@ -122,8 +128,22 @@ export default function PlacementTestPage() {
 
   /** "Je ne sais pas encore" compte comme un echec, sans le dire ainsi. */
   const skip = () => {
-    if (!state.current || correcting) return
+    if (!state.current || !exercise || correcting) return
     setCorrectionError(null)
+    // Le corrige d'une question passee est demande en fond, pour la revue de
+    // fin de test : une reponse vide est comptee fausse, rien n'est enregistre.
+    const passee = exercise
+    const index = revue.length
+    setRevue((current) => [...current, { exercise: passee, reponse: null, correction: null }])
+    void corriger(passee.id, '')
+      .then((correction) =>
+        setRevue((current) =>
+          current.map((q, i) => (i === index ? { ...q, correction } : q)),
+        ),
+      )
+      .catch(() => {
+        // Sans corrige, la revue le dit pour cette question ; le test continue.
+      })
     setTrace((current) => [...current, { skillId: state.current as string, correct: false }])
     const next = answerPlacement(state, false)
     setAnswer('')
@@ -132,7 +152,7 @@ export default function PlacementTestPage() {
   }
 
   if (phase === 'resultat' && result) {
-    return <PlacementResultView result={result} prenom={session.profile.prenom} />
+    return <PlacementResultView result={result} prenom={session.profile.prenom} revue={revue} />
   }
 
   // L'effet ci-dessus cloture le test dans la foulee : on n'affiche jamais
@@ -285,7 +305,15 @@ function TraceDot({ color }: { color: string }) {
 }
 
 /** Ecran 1e : la lacune racine est trouvee, on montre la chaine jusqu'a l'objectif. */
-function PlacementResultView({ result, prenom }: { result: PlacementResult; prenom: string }) {
+function PlacementResultView({
+  result,
+  prenom,
+  revue,
+}: {
+  result: PlacementResult
+  prenom: string
+  revue: QuestionRevue[]
+}) {
   const { session } = useAuthenticatedSession()
   const path = buildPathToTarget(session.progress, result.objectif_skill_id)
   const objectif = requireSkill(result.objectif_skill_id)
@@ -356,6 +384,8 @@ function PlacementResultView({ result, prenom }: { result: PlacementResult; pren
             label="estimation à 15 min / jour"
           />
         </div>
+
+        <RevueTest questions={revue} />
 
         <div className="flex flex-col justify-center gap-3 sm:flex-row">
           <ButtonLink to="/travail" size="lg">
