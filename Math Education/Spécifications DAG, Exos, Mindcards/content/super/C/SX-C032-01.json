@@ -1,0 +1,139 @@
+{
+  "id": "SX-C032-01",
+  "skill_id": "C032",
+  "skill_ids": [
+    "C032",
+    "B036",
+    "D007",
+    "D021"
+  ],
+  "school_level": "6e",
+  "title": "L'anniversaire de Jade",
+  "contexte": "Samedi, Jade fête ses 11 ans. Elle a invité 5 amis.\n\nÀ midi, le père de Jade sert 5 pizzas identiques, partagées équitablement entre Jade et ses amis.\n\nL'après-midi, les enfants jouent au laser game. La séance commence à 15 h et dure 40 minutes. Elle coûte 45 € pour tout le groupe, et Jade et ses amis partagent cette somme en parts égales.\n\nPour décorer la salle, Jade a un rouleau de 10 mètres de guirlande. Elle le coupe en 3 morceaux de même longueur, un pour chaque mur sans fenêtre.\n\nSon frère Hugo fait le calcul à la calculatrice. Il lit 3,33 au début du résultat et annonce : « Chaque morceau mesure exactement 3,33 m. »",
+  "image": null,
+  "duree_estimee_min": 15,
+  "questions": [
+    {
+      "key": "q1",
+      "skill_id": "B036",
+      "statement": "Jade coupe sa guirlande. Par quel nombre faut-il diviser 10 m pour trouver la longueur d'un morceau ?",
+      "type": "qcm",
+      "choices": [
+        {
+          "key": "a",
+          "text": "Par 6, le nombre d'enfants",
+          "misconception": "L'élève mélange les situations : la guirlande n'est pas partagée entre les enfants, elle est coupée en un morceau par mur sans fenêtre."
+        },
+        {
+          "key": "b",
+          "text": "Par 3, le nombre de morceaux",
+          "misconception": null
+        },
+        {
+          "key": "c",
+          "text": "Par 4, le nombre de murs d'une salle",
+          "misconception": "L'élève pense aux 4 murs d'une salle. Or Jade ne coupe que 3 morceaux, un pour chaque mur sans fenêtre."
+        }
+      ],
+      "answer": {
+        "value": "b"
+      },
+      "points": 1,
+      "solution_steps": [
+        "Jade coupe le rouleau de 10 m en 3 morceaux de même longueur, un pour chaque mur sans fenêtre : c'est un partage en 3 parts égales.",
+        "On divise donc 10 m par 3. Le nombre d'enfants, l'âge de Jade et la durée de la séance ne servent pas ici."
+      ],
+      "hint": "Relis la phrase qui parle de la guirlande."
+    },
+    {
+      "key": "q2",
+      "skill_id": "C032",
+      "statement": "Les 5 pizzas sont partagées équitablement entre Jade et ses 5 amis, soit 6 enfants. Quelle part de pizza chaque enfant reçoit-il ? Écris ta réponse sous la forme numérateur/dénominateur.",
+      "type": "texte",
+      "answer": {
+        "value": "5/6",
+        "accepted": [
+          "10/12",
+          "15/18",
+          "20/24",
+          "cinq sixièmes",
+          "5 sixièmes"
+        ]
+      },
+      "points": 2,
+      "solution_steps": [
+        "On partage 5 pizzas entre 6 enfants : chaque enfant reçoit $5 \\div 6$ pizza.",
+        "Le quotient $5 \\div 6$ s'écrit $\\frac{5}{6}$ : c'est le nombre qui, multiplié par 6, donne 5.",
+        "On peut le voir ainsi : on coupe chaque pizza en 6 parts égales ; chaque enfant reçoit une part de chaque pizza, soit 5 parts de $\\frac{1}{6}$, donc $\\frac{5}{6}$ de pizza.",
+        "Attention : $\\frac{6}{5}$ de pizza ferait plus d'une pizza par enfant, impossible avec 5 pizzas pour 6 enfants."
+      ],
+      "hint": "Imagine que chaque pizza est coupée en 6 parts égales : combien de parts reçoit chaque enfant ?"
+    },
+    {
+      "key": "q3",
+      "skill_id": "D007",
+      "statement": "Les 6 enfants partagent les 45 € du laser game en parts égales. Combien chaque enfant paie-t-il ?",
+      "type": "numerique",
+      "answer": {
+        "value": 7.5,
+        "unit": "€",
+        "accepted": [
+          "7 € 50",
+          "7 euros 50"
+        ]
+      },
+      "points": 2,
+      "solution_steps": [
+        "Les 6 enfants partagent 45 € en parts égales : on calcule $45 \\div 6$.",
+        "En 45, il y a 7 fois 6 (7 × 6 = 42), et il reste 3 €, soit 30 dixièmes d'euro. 30 ÷ 6 = 5 dixièmes.",
+        "$45 \\div 6 = 7{,}5$ : chaque enfant paie **7,50 €**. C'est aussi le quotient $\\frac{45}{6}$ €.",
+        "Vérification : 6 × 7,50 = 45."
+      ],
+      "hint": "Pose la division de 45 par 6 et continue après la virgule."
+    },
+    {
+      "key": "q4",
+      "skill_id": "C032",
+      "statement": "Quelle est la longueur exacte d'un morceau de guirlande, en mètres ? Écris ta réponse sous la forme numérateur/dénominateur.",
+      "type": "texte",
+      "answer": {
+        "value": "10/3",
+        "accepted": [
+          "20/6",
+          "30/9",
+          "40/12",
+          "3 + 1/3",
+          "10/3 m",
+          "10/3 mètres",
+          "10/3 de mètre"
+        ]
+      },
+      "points": 3,
+      "solution_steps": [
+        "On coupe 10 m en 3 morceaux égaux : un morceau mesure $10 \\div 3$ mètres.",
+        "La division de 10 par 3 ne s'arrête jamais : 3,333… Aucun nombre décimal n'est égal à $10 \\div 3$.",
+        "Le quotient exact s'écrit avec une fraction : $10 \\div 3 = \\frac{10}{3}$. Un morceau mesure exactement $\\frac{10}{3}$ m.",
+        "Vérification : $3 \\times \\frac{10}{3} = \\frac{30}{3} = 10$, on retrouve bien les 10 m."
+      ],
+      "hint": "Le résultat de cette division peut-il s'écrire exactement avec une virgule ? Sinon, cherche une autre écriture du quotient."
+    },
+    {
+      "key": "q5",
+      "skill_id": "D021",
+      "statement": "Vrai ou faux : chaque morceau de guirlande mesure exactement 3,33 m, comme le dit Hugo.",
+      "type": "vrai_faux",
+      "answer": {
+        "value": false
+      },
+      "points": 2,
+      "solution_steps": [
+        "Si chaque morceau mesurait 3,33 m, les 3 morceaux mesureraient 3 × 3,33 = 9,99 m.",
+        "Or le rouleau mesure 10 m : il manque 0,01 m. La valeur 3,33 m n'est qu'une valeur approchée.",
+        "C'est **faux** : la longueur exacte d'un morceau est $\\frac{10}{3}$ m, qui ne s'écrit pas exactement avec une virgule."
+      ],
+      "hint": "Calcule la longueur de 3 morceaux de 3,33 m."
+    }
+  ],
+  "review_status": "relu_agent",
+  "programme_ref": "Cycle 3, classe de 6e, Les fractions : « En classe de 6e, la fraction acquiert un nouveau sens : celui de quotient. »"
+}

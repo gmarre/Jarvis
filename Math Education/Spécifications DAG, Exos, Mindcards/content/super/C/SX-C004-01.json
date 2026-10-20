@@ -1,0 +1,120 @@
+{
+  "id": "SX-C004-01",
+  "skill_id": "C004",
+  "skill_ids": [
+    "C004",
+    "C001",
+    "B006"
+  ],
+  "school_level": "CM1",
+  "title": "Le stand de crêpes de la fête de l'école",
+  "contexte": "Samedi, la classe de CM1 de Mme Roux tient le stand de crêpes de la fête de l'école. La classe compte 26 élèves, et le stand ouvre à 14 heures.\n\nPour commencer, les parents ont préparé 36 crêpes. Le **quart** de ces crêpes sera garni de chocolat et le **tiers** de confiture ; les autres seront au sucre.\n\nPour les boissons, le stand a reçu 5 bouteilles de jus de pomme. Avec une bouteille, on remplit 8 gobelets. Le **quart** de tous les gobelets sera offert aux musiciens de la fête.\n\nPour décorer, Mme Roux a acheté une guirlande de 15 mètres. Elle en accroche le **cinquième** au-dessus du comptoir et garde le reste pour la classe.\n\nLe stand de gaufres, juste à côté, a déjà vendu 7 gaufres : c'est le **sixième** des gaufres préparées.",
+  "image": null,
+  "duree_estimee_min": 15,
+  "questions": [
+    {
+      "key": "q1",
+      "skill_id": "C001",
+      "statement": "Pour savoir combien de crêpes seront garnies de chocolat, de quelles informations as-tu besoin ?",
+      "type": "qcm",
+      "choices": [
+        {
+          "key": "a",
+          "text": "Le nombre d'élèves (26) et le quart",
+          "misconception": "L'élève prend le nombre d'élèves, proche du nombre de crêpes. Or ce sont les crêpes que l'on partage, pas les élèves : le nombre d'élèves ne sert à rien ici."
+        },
+        {
+          "key": "b",
+          "text": "Le nombre de crêpes (36) et le tiers",
+          "misconception": "L'élève lit trop vite : le tiers concerne la confiture. Pour le chocolat, c'est le quart."
+        },
+        {
+          "key": "c",
+          "text": "Le nombre de crêpes (36) et le quart",
+          "misconception": null
+        }
+      ],
+      "answer": {
+        "value": "c"
+      },
+      "points": 1,
+      "solution_steps": [
+        "Le chocolat concerne « le **quart** des crêpes » : on partage les crêpes en 4 parts égales et on en prend une.",
+        "Il faut donc le nombre de crêpes, 36, et la fraction « le quart ». Le nombre d'élèves (26), l'heure d'ouverture et le tiers (qui concerne la confiture) ne servent pas."
+      ],
+      "hint": "Relis la phrase qui parle du chocolat."
+    },
+    {
+      "key": "q2",
+      "skill_id": "C004",
+      "statement": "Combien de crêpes seront garnies de chocolat ?",
+      "type": "numerique",
+      "answer": {
+        "value": 9,
+        "unit": "crêpes"
+      },
+      "points": 2,
+      "solution_steps": [
+        "Le quart de 36 crêpes, c'est 36 partagé en 4 parts égales.",
+        "36 ÷ 4 = 9, car 4 × 9 = 36.",
+        "**9 crêpes** seront garnies de chocolat."
+      ],
+      "hint": "Partage les 36 crêpes en 4 parts égales."
+    },
+    {
+      "key": "q3",
+      "skill_id": "C004",
+      "statement": "Quelle longueur de guirlande Mme Roux accroche-t-elle au-dessus du comptoir ?",
+      "type": "numerique",
+      "answer": {
+        "value": 3,
+        "unit": "m"
+      },
+      "points": 2,
+      "solution_steps": [
+        "Elle accroche le cinquième de 15 mètres : on partage 15 m en 5 parts égales.",
+        "15 ÷ 5 = 3, car 5 × 3 = 15.",
+        "Elle accroche **3 mètres** de guirlande. Le reste, gardé pour la classe, ne sert pas pour cette question."
+      ],
+      "hint": "Partage la longueur de la guirlande en 5 parts égales."
+    },
+    {
+      "key": "q4",
+      "skill_id": "B006",
+      "statement": "Combien de gobelets de jus seront offerts aux musiciens ?",
+      "type": "numerique",
+      "answer": {
+        "value": 10,
+        "unit": "gobelets"
+      },
+      "points": 3,
+      "solution_steps": [
+        "D'abord, le nombre de gobelets : 5 bouteilles de 8 gobelets, c'est 5 × 8 = 40 gobelets.",
+        "Ensuite, le quart de 40 gobelets : 40 ÷ 4 = 10, car 4 × 10 = 40.",
+        "**10 gobelets** seront offerts aux musiciens.",
+        "Attention : le quart de 8 gobelets (une seule bouteille) donnerait 2. Il faut d'abord compter tous les gobelets."
+      ],
+      "hint": "Commence par compter tous les gobelets."
+    },
+    {
+      "key": "q5",
+      "skill_id": "C004",
+      "statement": "Combien de gaufres avaient été préparées en tout ?",
+      "type": "numerique",
+      "answer": {
+        "value": 42,
+        "unit": "gaufres"
+      },
+      "points": 3,
+      "solution_steps": [
+        "Les 7 gaufres vendues sont le sixième des gaufres préparées : si l'on partage toutes les gaufres en 6 parts égales, une part contient 7 gaufres.",
+        "Il y a 6 parts de 7 gaufres : 6 × 7 = 42.",
+        "On avait préparé **42 gaufres**. Vérification : 42 ÷ 6 = 7, le sixième de 42 est bien 7.",
+        "Attention : le sixième d'un nombre est plus petit que ce nombre. Le total des gaufres est donc plus grand que 7."
+      ],
+      "hint": "Les 7 gaufres vendues forment une part, sur 6 parts égales."
+    }
+  ],
+  "review_status": "relu_agent",
+  "programme_ref": "Cycle 3, Cours moyen première année, Les fractions : « Déterminer une fraction d'une quantité ou d'une grandeur. »"
+}

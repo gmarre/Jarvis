@@ -1,0 +1,139 @@
+{
+  "id": "SX-C015-01",
+  "skill_id": "C015",
+  "skill_ids": [
+    "C015",
+    "C031",
+    "P018"
+  ],
+  "school_level": "4e",
+  "title": "L'aire de jeux du parc",
+  "contexte": "La mairie aménage un parc sur un terrain carré de 20 m de côté, acheté 45 000 € en 2019.\n\nElle y installe une aire de jeux rectangulaire : sa longueur est égale aux $\\frac{3}{4}$ du côté du terrain, et sa largeur aux $\\frac{2}{5}$ du côté du terrain. Dans l'aire de jeux, un sol souple couvre les $\\frac{5}{6}$ de la surface ; le reste est couvert de sable.\n\nLe parc a aussi un bassin. Pendant les 6 jours de canicule de juillet, le niveau de l'eau du bassin a baissé de $\\frac{5}{4}$ cm chaque jour.\n\nLe parc est ouvert tous les jours, de 8 h à 20 h.",
+  "image": null,
+  "duree_estimee_min": 15,
+  "questions": [
+    {
+      "key": "q1",
+      "skill_id": "C031",
+      "statement": "Quelle est la longueur de l'aire de jeux, en mètres ?",
+      "type": "numerique",
+      "answer": {
+        "value": 15,
+        "unit": "m"
+      },
+      "points": 1,
+      "solution_steps": [
+        "La longueur est les $\\frac{3}{4}$ du côté du terrain, qui mesure 20 m : $\\frac{3}{4} \\times 20 = \\frac{3 \\times 20}{4} = \\frac{60}{4} = 15$.",
+        "L'aire de jeux mesure **15 m** de long."
+      ],
+      "hint": null
+    },
+    {
+      "key": "q2",
+      "skill_id": "P018",
+      "statement": "Quelle est l'aire du terrain, en m² ?",
+      "type": "numerique",
+      "answer": {
+        "value": 400,
+        "unit": "m²"
+      },
+      "points": 1,
+      "solution_steps": [
+        "Le terrain est un carré de 20 m de côté : son aire est côté × côté.",
+        "20 × 20 = 400 : l'aire du terrain est **400 m²**.",
+        "Attention : 4 × 20 = 80 m est le périmètre du terrain, une longueur, pas une aire."
+      ],
+      "hint": "Le terrain est un carré : multiplie son côté par lui-même."
+    },
+    {
+      "key": "q3",
+      "skill_id": "C015",
+      "statement": "Quelle fraction de l'aire du terrain l'aire de jeux occupe-t-elle ? Calcule-la comme un produit de deux fractions, et écris ta réponse sous la forme numérateur/dénominateur.",
+      "type": "texte",
+      "answer": {
+        "value": "3/10",
+        "accepted": [
+          "6/20",
+          "9/30",
+          "12/40",
+          "15/50",
+          "0,3",
+          "120/400"
+        ]
+      },
+      "points": 3,
+      "solution_steps": [
+        "La longueur de l'aire de jeux est $\\frac{3}{4}$ du côté et sa largeur $\\frac{2}{5}$ du côté : son aire est $\\frac{3}{4} \\times \\frac{2}{5}$ de l'aire du carré.",
+        "On multiplie les numérateurs entre eux et les dénominateurs entre eux : $\\frac{3}{4} \\times \\frac{2}{5} = \\frac{3 \\times 2}{4 \\times 5} = \\frac{6}{20} = \\frac{3}{10}$.",
+        "Vérification avec les mesures : 15 m × 8 m = 120 m², et $\\frac{3}{10} \\times 400 = 120$ m²."
+      ],
+      "hint": "La longueur et la largeur sont chacune une fraction du côté du carré."
+    },
+    {
+      "key": "q4",
+      "skill_id": "C015",
+      "statement": "On note une baisse avec un nombre négatif. Quelle a été la variation totale du niveau de l'eau du bassin pendant les 6 jours, en centimètres ? Écris-la sous la forme d'une fraction, avec son signe.",
+      "type": "texte",
+      "answer": {
+        "value": "−15/2",
+        "accepted": [
+          "-30/4",
+          "-45/6",
+          "-60/8",
+          "-7,5",
+          "-15/2 cm",
+          "-30/4 cm",
+          "-7,5 cm",
+          "15/-2",
+          "-(15/2)"
+        ]
+      },
+      "points": 3,
+      "solution_steps": [
+        "Chaque jour, le niveau varie de $-\\frac{5}{4}$ cm. Pendant 6 jours, la variation est $6 \\times \\left(-\\frac{5}{4}\\right)$.",
+        "Règle des signes : un nombre positif multiplié par un nombre négatif donne un nombre négatif.",
+        "$6 \\times \\frac{5}{4} = \\frac{6 \\times 5}{4} = \\frac{30}{4} = \\frac{15}{2}$.",
+        "La variation totale est $-\\frac{15}{2}$ cm, soit $-7{,}5$ cm : le niveau a baissé de 7,5 cm."
+      ],
+      "hint": "Un entier multiplié par une fraction : seul le numérateur est multiplié."
+    },
+    {
+      "key": "q5",
+      "skill_id": "C015",
+      "statement": "Quelle fraction de l'aire du terrain le sol souple couvre-t-il ? Écris ta réponse sous la forme numérateur/dénominateur.",
+      "type": "texte",
+      "answer": {
+        "value": "1/4",
+        "accepted": [
+          "2/8",
+          "3/12",
+          "4/16",
+          "5/20",
+          "6/24",
+          "7/28",
+          "8/32",
+          "9/36",
+          "10/40",
+          "11/44",
+          "12/48",
+          "0,25",
+          "30/120",
+          "15/60",
+          "100/400",
+          "25/100",
+          "50/200"
+        ]
+      },
+      "points": 3,
+      "solution_steps": [
+        "Le sol souple couvre les $\\frac{5}{6}$ de l'aire de jeux, qui est elle-même les $\\frac{3}{4} \\times \\frac{2}{5}$ de l'aire du terrain.",
+        "Fraction du terrain : $\\frac{5}{6} \\times \\frac{3}{4} \\times \\frac{2}{5} = \\frac{5 \\times 3 \\times 2}{6 \\times 4 \\times 5}$.",
+        "On simplifie avant de calculer : 5 au numérateur et 5 au dénominateur, puis 3 × 2 = 6 au numérateur et 6 au dénominateur. Il reste $\\frac{1}{4}$.",
+        "Le sol souple couvre $\\frac{1}{4}$ de l'aire du terrain, soit $\\frac{1}{4} \\times 400 = 100$ m²."
+      ],
+      "hint": "Le sol souple est une fraction de l'aire de jeux, qui est elle-même une fraction du terrain."
+    }
+  ],
+  "review_status": "relu_agent",
+  "programme_ref": "Cycle 4, classe de 4e, Nombres et calculs, Nombres rationnels, Objectifs d'apprentissage : « Calculer le produit de nombres rationnels. »"
+}

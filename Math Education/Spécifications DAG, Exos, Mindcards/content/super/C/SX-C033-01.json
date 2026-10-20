@@ -1,0 +1,136 @@
+{
+  "id": "SX-C033-01",
+  "skill_id": "C033",
+  "skill_ids": [
+    "C033",
+    "A027",
+    "C013"
+  ],
+  "school_level": "5e",
+  "title": "Le potager du club nature",
+  "contexte": "Le club nature du collège compte 17 élèves. Depuis 3 ans, ils cultivent un potager derrière le gymnase, et ils y passent 2 heures chaque mercredi.\n\nCette année, le potager est partagé ainsi :\nles légumes occupent $\\frac{3}{8}$ du potager ;\nles fleurs occupent $\\frac{1}{4}$ du potager ;\nles plantes aromatiques occupent $\\frac{1}{10}$ du potager ;\nles fraisiers occupent tout le reste.\n\nL'an prochain, le club gardera les légumes et les fleurs à la même place. Les plantes aromatiques et les fraisiers seront retirés : à leur place, le club installera un hôtel à insectes, qui occupera $\\frac{3}{20}$ du potager, et une mare, qui occupera tout le reste.",
+  "image": null,
+  "duree_estimee_min": 15,
+  "questions": [
+    {
+      "key": "q1",
+      "skill_id": "C033",
+      "statement": "Quelle information du texte donne directement la part du potager occupée par les fraisiers cette année ?",
+      "type": "qcm",
+      "choices": [
+        {
+          "key": "a",
+          "text": "$\\frac{3}{20}$",
+          "misconception": "L'élève lit trop vite : $\\frac{3}{20}$ est la part de l'hôtel à insectes, prévu l'an prochain."
+        },
+        {
+          "key": "b",
+          "text": "$\\frac{1}{10}$",
+          "misconception": "L'élève prend la ligne juste au-dessus des fraisiers : $\\frac{1}{10}$ est la part des plantes aromatiques."
+        },
+        {
+          "key": "c",
+          "text": "Aucune : il faut la calculer à partir du potager entier",
+          "misconception": null
+        }
+      ],
+      "answer": {
+        "value": "c"
+      },
+      "points": 1,
+      "solution_steps": [
+        "Le texte dit seulement que les fraisiers occupent « tout le reste » : leur part n'est pas écrite.",
+        "Il faut la calculer à partir du potager entier, qui vaut 1. $\\frac{3}{20}$ est la part de l'hôtel à insectes (l'an prochain) et $\\frac{1}{10}$ celle des plantes aromatiques."
+      ],
+      "hint": null
+    },
+    {
+      "key": "q2",
+      "skill_id": "A027",
+      "statement": "Pour calculer avec les parts de cette année, on écrit $\\frac{3}{8}$, $\\frac{1}{4}$ et $\\frac{1}{10}$ avec un même dénominateur. Quel est le plus petit dénominateur commun possible ?",
+      "type": "numerique",
+      "answer": {
+        "value": 40
+      },
+      "points": 2,
+      "solution_steps": [
+        "On cherche le plus petit nombre qui est à la fois un multiple de 8, de 4 et de 10.",
+        "Un multiple de 8 est aussi un multiple de 4. Multiples de 8 : 8, 16, 24, 32, 40… Le premier qui est aussi un multiple de 10 est 40.",
+        "Le plus petit dénominateur commun est **40** : 40 = 8 × 5 = 4 × 10 = 10 × 4.",
+        "Le produit 8 × 4 × 10 = 320 est aussi un multiple commun, mais il n'est pas le plus petit."
+      ],
+      "hint": "Un multiple de 8 est-il toujours un multiple de 4 ?"
+    },
+    {
+      "key": "q3",
+      "skill_id": "C033",
+      "statement": "Quelle fraction du potager les fraisiers occupent-ils cette année ? Écris ta réponse sous la forme numérateur/dénominateur.",
+      "type": "texte",
+      "answer": {
+        "value": "11/40",
+        "accepted": [
+          "22/80",
+          "33/120",
+          "0,275",
+          "88/320"
+        ]
+      },
+      "points": 3,
+      "solution_steps": [
+        "Le potager entier vaut 1, soit $\\frac{40}{40}$.",
+        "Légumes, fleurs et plantes aromatiques : $\\frac{3}{8} + \\frac{1}{4} + \\frac{1}{10} = \\frac{15}{40} + \\frac{10}{40} + \\frac{4}{40} = \\frac{29}{40}$.",
+        "Les fraisiers occupent le reste : $\\frac{40}{40} - \\frac{29}{40} = \\frac{11}{40}$ du potager.",
+        "Attention : $\\frac{29}{40}$ est la part des trois autres cultures, pas celle des fraisiers ; il faut encore la retirer du potager entier."
+      ],
+      "hint": "Le potager entier vaut 1."
+    },
+    {
+      "key": "q4",
+      "skill_id": "C013",
+      "statement": "De quelle fraction du potager la part des légumes dépasse-t-elle celle des fleurs ? Écris ta réponse sous la forme numérateur/dénominateur.",
+      "type": "texte",
+      "answer": {
+        "value": "1/8",
+        "accepted": [
+          "2/16",
+          "3/24",
+          "4/32",
+          "5/40",
+          "0,125"
+        ]
+      },
+      "points": 2,
+      "solution_steps": [
+        "On calcule $\\frac{3}{8} - \\frac{1}{4}$. Comme $\\frac{1}{4} = \\frac{2}{8}$ : $\\frac{3}{8} - \\frac{2}{8} = \\frac{1}{8}$.",
+        "La part des légumes dépasse celle des fleurs de $\\frac{1}{8}$ du potager."
+      ],
+      "hint": null
+    },
+    {
+      "key": "q5",
+      "skill_id": "C033",
+      "statement": "L'an prochain, quelle fraction du potager la mare occupera-t-elle ? Écris ta réponse sous la forme numérateur/dénominateur.",
+      "type": "texte",
+      "answer": {
+        "value": "9/40",
+        "accepted": [
+          "18/80",
+          "27/120",
+          "0,225",
+          "36/160",
+          "144/640"
+        ]
+      },
+      "points": 3,
+      "solution_steps": [
+        "L'an prochain, le potager entier ($\\frac{40}{40}$) sera partagé entre les légumes, les fleurs, l'hôtel à insectes et la mare. Les plantes aromatiques et les fraisiers n'y seront plus.",
+        "Légumes, fleurs et hôtel : $\\frac{3}{8} + \\frac{1}{4} + \\frac{3}{20} = \\frac{15}{40} + \\frac{10}{40} + \\frac{6}{40} = \\frac{31}{40}$.",
+        "La mare occupera le reste : $\\frac{40}{40} - \\frac{31}{40} = \\frac{9}{40}$ du potager.",
+        "Attention : garder les plantes aromatiques dans le calcul donnerait $\\frac{5}{40}$, et oublier de retirer du potager entier donnerait $\\frac{31}{40}$."
+      ],
+      "hint": "Quelles parties le potager contiendra-t-il l'an prochain ?"
+    }
+  ],
+  "review_status": "relu_agent",
+  "programme_ref": "Cycle 4, classe de 5e, Nombres et calculs, Nombres rationnels, Objectifs d'apprentissage : « Résoudre des problèmes avec des additions et soustractions de fractions. »"
+}

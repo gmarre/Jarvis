@@ -1,0 +1,132 @@
+{
+  "id": "SX-C027-01",
+  "skill_id": "C027",
+  "skill_ids": [
+    "C027",
+    "C001",
+    "C012",
+    "B008"
+  ],
+  "school_level": "CM1",
+  "title": "Le pique-nique du centre de loisirs",
+  "contexte": "Le centre de loisirs des Tilleuls accueille 60 enfants. Mercredi, ils pique-niquent au parc, de 11 heures à 15 heures.\n\nLe cuisinier a préparé 5 tartes aux pommes, toutes de la même taille. Chaque tarte est coupée en 8 parts égales. Le groupe des Écureuils a mangé 19 parts de tarte, et le groupe des Hérissons en a mangé 13.\n\nLe cuisinier a aussi préparé des quiches, chacune coupée en 6 parts égales. À la fin du repas, il reste 1 quiche entière et 5 parts.\n\nPour le goûter de jeudi, 51 enfants ont demandé une part de tarte. Les tartes de mercredi ne seront pas resservies : le cuisinier fera de nouvelles tartes de la même taille, coupées elles aussi en 8 parts égales.",
+  "image": null,
+  "duree_estimee_min": 15,
+  "questions": [
+    {
+      "key": "q1",
+      "skill_id": "C001",
+      "statement": "Quelle fraction d'une tarte représente une part de tarte ?",
+      "type": "qcm",
+      "choices": [
+        {
+          "key": "a",
+          "text": "$\\frac{1}{6}$",
+          "misconception": "L'élève prend le découpage des quiches, en 6 parts, au lieu de celui des tartes, en 8 parts."
+        },
+        {
+          "key": "b",
+          "text": "$\\frac{1}{8}$",
+          "misconception": null
+        },
+        {
+          "key": "c",
+          "text": "$\\frac{1}{5}$",
+          "misconception": "L'élève prend le nombre de tartes. Or une part est un morceau d'une seule tarte, coupée en 8 parts égales."
+        }
+      ],
+      "answer": {
+        "value": "b"
+      },
+      "points": 1,
+      "solution_steps": [
+        "Chaque tarte est coupée en 8 parts égales : une part est $\\frac{1}{8}$ de tarte.",
+        "Le 6 concerne les quiches et le 5 le nombre de tartes : ils ne servent pas ici."
+      ],
+      "hint": "Relis la phrase qui décrit le découpage des tartes, et non celui des quiches."
+    },
+    {
+      "key": "q2",
+      "skill_id": "C027",
+      "statement": "Quelle quantité de tarte les Écureuils ont-ils mangée ? Écris-la sous la forme d'un entier plus une fraction inférieure à 1.",
+      "type": "texte",
+      "answer": {
+        "value": "2 + 3/8",
+        "accepted": [
+          "3/8 + 2",
+          "2 et 3/8"
+        ]
+      },
+      "points": 2,
+      "solution_steps": [
+        "Une part est $\\frac{1}{8}$ de tarte : 19 parts font $\\frac{19}{8}$ de tarte.",
+        "Une tarte entière, ce sont 8 parts. 8 × 2 = 16 et 19 − 16 = 3 : 19 parts font 2 tartes entières et 3 parts.",
+        "Donc $\\frac{19}{8} = 2 + \\frac{3}{8}$, et $\\frac{3}{8}$ est bien inférieure à 1.",
+        "Attention : $1 + \\frac{11}{8}$ est égal, mais $\\frac{11}{8}$ est plus grande que 1 ; on peut encore en sortir une tarte entière."
+      ],
+      "hint": "Combien de tartes entières peut-on reconstituer avec 19 parts ?"
+    },
+    {
+      "key": "q3",
+      "skill_id": "C012",
+      "statement": "Ensemble, quelle quantité de tarte les deux groupes ont-ils mangée ? Donne ta réponse en nombre de tartes.",
+      "type": "numerique",
+      "answer": {
+        "value": 4,
+        "unit": "tartes",
+        "accepted": [
+          "32/8"
+        ]
+      },
+      "points": 2,
+      "solution_steps": [
+        "Les Écureuils ont mangé $\\frac{19}{8}$ de tarte et les Hérissons $\\frac{13}{8}$.",
+        "Les deux fractions ont le même dénominateur : on additionne les numérateurs et on garde le dénominateur. $\\frac{19}{8} + \\frac{13}{8} = \\frac{32}{8}$.",
+        "Une tarte entière fait $\\frac{8}{8}$, et 32 = 4 × 8 : $\\frac{32}{8} = 4$. Les deux groupes ont mangé **4 tartes**.",
+        "Le nombre de tartes préparées (5) ne répond pas à la question : il reste une tarte."
+      ],
+      "hint": "Additionne les deux quantités, en huitièmes de tarte."
+    },
+    {
+      "key": "q4",
+      "skill_id": "C027",
+      "statement": "Quelle quantité de quiche reste-t-il à la fin du repas ? Écris-la sous la forme d'une seule fraction.",
+      "type": "texte",
+      "answer": {
+        "value": "11/6",
+        "accepted": [
+          "22/12",
+          "33/18"
+        ]
+      },
+      "points": 2,
+      "solution_steps": [
+        "Une part de quiche est $\\frac{1}{6}$ de quiche, et une quiche entière fait 6 sixièmes, soit $\\frac{6}{6}$.",
+        "Avec les 5 parts : $\\frac{6}{6} + \\frac{5}{6} = \\frac{11}{6}$.",
+        "Il reste $\\frac{11}{6}$ de quiche, c'est-à-dire $1 + \\frac{5}{6}$.",
+        "Attention : $\\frac{5}{6}$ oublie la quiche entière, et $\\frac{6}{11}$ inverse le numérateur et le dénominateur."
+      ],
+      "hint": "Combien de sixièmes y a-t-il dans une quiche entière ?"
+    },
+    {
+      "key": "q5",
+      "skill_id": "B008",
+      "statement": "Combien de nouvelles tartes le cuisinier doit-il préparer, au minimum, pour le goûter de jeudi ?",
+      "type": "numerique",
+      "answer": {
+        "value": 7,
+        "unit": "tartes"
+      },
+      "points": 3,
+      "solution_steps": [
+        "Il faut 51 parts, une par enfant qui en a demandé, et chaque tarte donne 8 parts : on pose la division euclidienne de 51 par 8. Les 60 enfants du centre ne servent pas ici.",
+        "51 = 8 × 6 + 3 : le quotient est 6 et le reste est 3.",
+        "6 tartes donnent 48 parts : il manque 3 parts. Il faut donc une tarte de plus.",
+        "Le cuisinier doit préparer **7 tartes**. Avec les fractions : $\\frac{51}{8} = 6 + \\frac{3}{8}$, il faut 6 tartes et encore $\\frac{3}{8}$ de tarte."
+      ],
+      "hint": "Pose la division euclidienne du nombre de parts par 8, puis regarde le reste."
+    }
+  ],
+  "review_status": "relu_agent",
+  "programme_ref": "Cycle 3, Cours moyen première année, Les fractions : « Savoir écrire une fraction supérieure à 1 comme la somme d'un entier et d'une fraction inférieure à 1 »"
+}

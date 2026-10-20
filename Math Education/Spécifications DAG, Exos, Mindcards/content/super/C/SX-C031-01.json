@@ -1,0 +1,141 @@
+{
+  "id": "SX-C031-01",
+  "skill_id": "C031",
+  "skill_ids": [
+    "C031",
+    "C027",
+    "B038"
+  ],
+  "school_level": "CM2",
+  "title": "L'arrosage du jardin de l'école",
+  "contexte": "Les 28 élèves de CM2 de l'école Jules-Verne s'occupent du jardin de l'école, qui compte 4 bacs de culture. Ils arrosent chaque matin à 8 h 30, avant la classe.\n\nIls ont planté 9 pieds de tomates. À chaque arrosage, chaque pied de tomates reçoit $\\frac{3}{4}$ de litre d'eau.\n\nIls ont aussi planté 8 fraisiers. À chaque arrosage, chaque fraisier reçoit $\\frac{2}{5}$ de litre d'eau.\n\nL'arrosoir de la classe contient 5 litres d'eau quand il est plein.\n\nEnfin, ils ont semé 40 graines de radis, mais le **huitième** de ces graines n'a pas germé.",
+  "image": null,
+  "duree_estimee_min": 15,
+  "questions": [
+    {
+      "key": "q1",
+      "skill_id": "C031",
+      "statement": "Quel calcul donne la quantité d'eau versée sur les pieds de tomates à chaque arrosage ?",
+      "type": "qcm",
+      "choices": [
+        {
+          "key": "a",
+          "text": "$4 \\times \\frac{3}{4}$",
+          "misconception": "L'élève prend le nombre de bacs (4) au lieu du nombre de pieds de tomates (9) : les bacs ne servent pas ici."
+        },
+        {
+          "key": "b",
+          "text": "$9 + \\frac{3}{4}$",
+          "misconception": "L'élève ajoute au lieu de répéter : chacun des 9 pieds reçoit $\\frac{3}{4}$ de litre, il faut donc multiplier."
+        },
+        {
+          "key": "c",
+          "text": "$9 \\times \\frac{3}{4}$",
+          "misconception": null
+        },
+        {
+          "key": "d",
+          "text": "$5 \\times \\frac{3}{4}$",
+          "misconception": "L'élève prend la contenance de l'arrosoir (5 litres), qui ne dit pas combien de pieds on arrose."
+        }
+      ],
+      "answer": {
+        "value": "c"
+      },
+      "points": 1,
+      "solution_steps": [
+        "Chaque pied de tomates reçoit $\\frac{3}{4}$ de litre, et il y a 9 pieds : on prend 9 fois $\\frac{3}{4}$ de litre.",
+        "Le calcul est $9 \\times \\frac{3}{4}$. Le nombre de bacs (4) et la contenance de l'arrosoir (5 litres) ne servent pas ici."
+      ],
+      "hint": "Combien de pieds de tomates reçoivent chacun la même quantité d'eau ?"
+    },
+    {
+      "key": "q2",
+      "skill_id": "C031",
+      "statement": "Quelle quantité d'eau, en litres, verse-t-on sur les pieds de tomates à chaque arrosage ? Écris ta réponse sous la forme numérateur/dénominateur.",
+      "type": "texte",
+      "answer": {
+        "value": "27/4",
+        "accepted": [
+          "54/8",
+          "81/12",
+          "6,75",
+          "6 + 3/4",
+          "6 et 3/4",
+          "27/4 L",
+          "27/4 litres",
+          "27/4 de litre"
+        ]
+      },
+      "points": 2,
+      "solution_steps": [
+        "On calcule $9 \\times \\frac{3}{4}$ : on multiplie le numérateur par 9 et on garde le dénominateur.",
+        "$9 \\times \\frac{3}{4} = \\frac{9 \\times 3}{4} = \\frac{27}{4}$.",
+        "On verse $\\frac{27}{4}$ litres, c'est-à-dire $6 + \\frac{3}{4}$ litres.",
+        "Attention : multiplier aussi le dénominateur par 9 donnerait $\\frac{27}{36}$, moins d'un litre pour 9 pieds : c'est impossible."
+      ],
+      "hint": "Le dénominateur dit en combien de parts on coupe le litre : il ne change pas."
+    },
+    {
+      "key": "q3",
+      "skill_id": "C027",
+      "statement": "Quelle quantité d'eau, en litres, verse-t-on sur les fraisiers à chaque arrosage ? Écris-la sous la forme d'un entier plus une fraction inférieure à 1.",
+      "type": "texte",
+      "answer": {
+        "value": "3 + 1/5",
+        "accepted": [
+          "1/5 + 3",
+          "3 et 1/5",
+          "3 + 1/5 L",
+          "3 + 1/5 litres",
+          "3 et 1/5 L",
+          "3 et 1/5 litres"
+        ]
+      },
+      "points": 3,
+      "solution_steps": [
+        "Il y a 8 fraisiers, qui reçoivent chacun $\\frac{2}{5}$ de litre : $8 \\times \\frac{2}{5} = \\frac{8 \\times 2}{5} = \\frac{16}{5}$.",
+        "Un litre, ce sont 5 cinquièmes. 5 × 3 = 15 et 16 − 15 = 1 : 16 cinquièmes font 3 litres entiers et encore 1 cinquième.",
+        "On verse $3 + \\frac{1}{5}$ litres sur les fraisiers, et $\\frac{1}{5}$ est bien inférieure à 1."
+      ],
+      "hint": "Calcule d'abord la quantité sous forme d'une fraction, puis compte les litres entiers."
+    },
+    {
+      "key": "q4",
+      "skill_id": "B038",
+      "statement": "Combien de graines de radis ont germé ?",
+      "type": "numerique",
+      "answer": {
+        "value": 35,
+        "unit": "graines"
+      },
+      "points": 2,
+      "solution_steps": [
+        "Le huitième de 40 graines : 40 ÷ 8 = 5. Donc 5 graines n'ont pas germé.",
+        "Toutes les autres ont germé : 40 − 5 = 35.",
+        "**35 graines** ont germé."
+      ],
+      "hint": "Cherche d'abord combien de graines n'ont pas germé."
+    },
+    {
+      "key": "q5",
+      "skill_id": "C031",
+      "statement": "Avec un seul arrosoir plein, combien de pieds de tomates peut-on arroser, au maximum ?",
+      "type": "numerique",
+      "answer": {
+        "value": 6,
+        "unit": "pieds"
+      },
+      "points": 3,
+      "solution_steps": [
+        "Chaque pied reçoit $\\frac{3}{4}$ de litre. On cherche combien de pieds on peut arroser sans dépasser les 5 litres de l'arrosoir.",
+        "5 litres, ce sont 5 × 4 = 20 quarts de litre, soit $\\frac{20}{4}$.",
+        "$6 \\times \\frac{3}{4} = \\frac{18}{4}$ : c'est moins que $\\frac{20}{4}$, l'arrosoir suffit. $7 \\times \\frac{3}{4} = \\frac{21}{4}$ : c'est plus que $\\frac{20}{4}$, il manquerait $\\frac{1}{4}$ de litre.",
+        "Avec un arrosoir plein, on peut arroser **6 pieds** de tomates."
+      ],
+      "hint": "Combien de quarts de litre y a-t-il dans 5 litres ?"
+    }
+  ],
+  "review_status": "relu_agent",
+  "programme_ref": "Cycle 3, Cours moyen deuxième année, Les fractions : « Calculer le produit d'un entier et d'une fraction »"
+}

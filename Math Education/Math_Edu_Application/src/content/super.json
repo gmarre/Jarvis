@@ -2,7 +2,1075 @@
   "metadata": {
     "version": "1.0",
     "scope": "Super exercices, CP a 3e",
-    "total_super": 0
+    "total_super": 8
   },
-  "super": []
+  "super": [
+    {
+      "id": "SX-C004-01",
+      "skill_id": "C004",
+      "skill_ids": [
+        "C004",
+        "C001",
+        "B006"
+      ],
+      "school_level": "CM1",
+      "title": "Le stand de crêpes de la fête de l'école",
+      "contexte": "Samedi, la classe de CM1 de Mme Roux tient le stand de crêpes de la fête de l'école. La classe compte 26 élèves, et le stand ouvre à 14 heures.\n\nPour commencer, les parents ont préparé 36 crêpes. Le **quart** de ces crêpes sera garni de chocolat et le **tiers** de confiture ; les autres seront au sucre.\n\nPour les boissons, le stand a reçu 5 bouteilles de jus de pomme. Avec une bouteille, on remplit 8 gobelets. Le **quart** de tous les gobelets sera offert aux musiciens de la fête.\n\nPour décorer, Mme Roux a acheté une guirlande de 15 mètres. Elle en accroche le **cinquième** au-dessus du comptoir et garde le reste pour la classe.\n\nLe stand de gaufres, juste à côté, a déjà vendu 7 gaufres : c'est le **sixième** des gaufres préparées.",
+      "image": null,
+      "duree_estimee_min": 15,
+      "questions": [
+        {
+          "key": "q1",
+          "skill_id": "C001",
+          "statement": "Pour savoir combien de crêpes seront garnies de chocolat, de quelles informations as-tu besoin ?",
+          "type": "qcm",
+          "choices": [
+            {
+              "key": "a",
+              "text": "Le nombre d'élèves (26) et le quart",
+              "misconception": "L'élève prend le nombre d'élèves, proche du nombre de crêpes. Or ce sont les crêpes que l'on partage, pas les élèves : le nombre d'élèves ne sert à rien ici."
+            },
+            {
+              "key": "b",
+              "text": "Le nombre de crêpes (36) et le tiers",
+              "misconception": "L'élève lit trop vite : le tiers concerne la confiture. Pour le chocolat, c'est le quart."
+            },
+            {
+              "key": "c",
+              "text": "Le nombre de crêpes (36) et le quart",
+              "misconception": null
+            }
+          ],
+          "answer": {
+            "value": "c"
+          },
+          "points": 1,
+          "solution_steps": [
+            "Le chocolat concerne « le **quart** des crêpes » : on partage les crêpes en 4 parts égales et on en prend une.",
+            "Il faut donc le nombre de crêpes, 36, et la fraction « le quart ». Le nombre d'élèves (26), l'heure d'ouverture et le tiers (qui concerne la confiture) ne servent pas."
+          ],
+          "hint": "Relis la phrase qui parle du chocolat."
+        },
+        {
+          "key": "q2",
+          "skill_id": "C004",
+          "statement": "Combien de crêpes seront garnies de chocolat ?",
+          "type": "numerique",
+          "answer": {
+            "value": 9,
+            "unit": "crêpes"
+          },
+          "points": 2,
+          "solution_steps": [
+            "Le quart de 36 crêpes, c'est 36 partagé en 4 parts égales.",
+            "36 ÷ 4 = 9, car 4 × 9 = 36.",
+            "**9 crêpes** seront garnies de chocolat."
+          ],
+          "hint": "Partage les 36 crêpes en 4 parts égales."
+        },
+        {
+          "key": "q3",
+          "skill_id": "C004",
+          "statement": "Quelle longueur de guirlande Mme Roux accroche-t-elle au-dessus du comptoir ?",
+          "type": "numerique",
+          "answer": {
+            "value": 3,
+            "unit": "m"
+          },
+          "points": 2,
+          "solution_steps": [
+            "Elle accroche le cinquième de 15 mètres : on partage 15 m en 5 parts égales.",
+            "15 ÷ 5 = 3, car 5 × 3 = 15.",
+            "Elle accroche **3 mètres** de guirlande. Le reste, gardé pour la classe, ne sert pas pour cette question."
+          ],
+          "hint": "Partage la longueur de la guirlande en 5 parts égales."
+        },
+        {
+          "key": "q4",
+          "skill_id": "B006",
+          "statement": "Combien de gobelets de jus seront offerts aux musiciens ?",
+          "type": "numerique",
+          "answer": {
+            "value": 10,
+            "unit": "gobelets"
+          },
+          "points": 3,
+          "solution_steps": [
+            "D'abord, le nombre de gobelets : 5 bouteilles de 8 gobelets, c'est 5 × 8 = 40 gobelets.",
+            "Ensuite, le quart de 40 gobelets : 40 ÷ 4 = 10, car 4 × 10 = 40.",
+            "**10 gobelets** seront offerts aux musiciens.",
+            "Attention : le quart de 8 gobelets (une seule bouteille) donnerait 2. Il faut d'abord compter tous les gobelets."
+          ],
+          "hint": "Commence par compter tous les gobelets."
+        },
+        {
+          "key": "q5",
+          "skill_id": "C004",
+          "statement": "Combien de gaufres avaient été préparées en tout ?",
+          "type": "numerique",
+          "answer": {
+            "value": 42,
+            "unit": "gaufres"
+          },
+          "points": 3,
+          "solution_steps": [
+            "Les 7 gaufres vendues sont le sixième des gaufres préparées : si l'on partage toutes les gaufres en 6 parts égales, une part contient 7 gaufres.",
+            "Il y a 6 parts de 7 gaufres : 6 × 7 = 42.",
+            "On avait préparé **42 gaufres**. Vérification : 42 ÷ 6 = 7, le sixième de 42 est bien 7.",
+            "Attention : le sixième d'un nombre est plus petit que ce nombre. Le total des gaufres est donc plus grand que 7."
+          ],
+          "hint": "Les 7 gaufres vendues forment une part, sur 6 parts égales."
+        }
+      ],
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 3, Cours moyen première année, Les fractions : « Déterminer une fraction d'une quantité ou d'une grandeur. »"
+    },
+    {
+      "id": "SX-C013-01",
+      "skill_id": "C013",
+      "skill_ids": [
+        "C013",
+        "A027"
+      ],
+      "school_level": "5e",
+      "title": "Le cocktail de Sacha",
+      "contexte": "Pour l'anniversaire de sa sœur, qui fête ses 13 ans avec 9 invités, Sacha prépare un cocktail de fruits sans alcool. La fête commence à 16 heures.\n\nIl prend une carafe qui contient 2 litres quand elle est pleine. Il y verse, dans cet ordre :\n$\\frac{3}{4}$ de litre de jus d'orange ;\n$\\frac{2}{3}$ de litre de jus d'ananas ;\n$\\frac{1}{8}$ de litre de sirop de grenadine.\n\nIl complète ensuite la carafe avec de l'eau gazeuse, jusqu'à ce qu'elle soit pleine.\n\nLe reste de la bouteille de jus d'orange part au réfrigérateur, pour le petit-déjeuner du lendemain.",
+      "image": null,
+      "duree_estimee_min": 15,
+      "questions": [
+        {
+          "key": "q1",
+          "skill_id": "A027",
+          "statement": "Sacha veut additionner les quantités de jus d'orange et de jus d'ananas. Quel est le plus petit dénominateur commun qu'il peut utiliser ?",
+          "type": "qcm",
+          "choices": [
+            {
+              "key": "a",
+              "text": "12",
+              "misconception": null
+            },
+            {
+              "key": "b",
+              "text": "7",
+              "misconception": "L'élève additionne les dénominateurs 4 et 3 : or 7 n'est un multiple ni de 4 ni de 3."
+            },
+            {
+              "key": "c",
+              "text": "24",
+              "misconception": "L'élève prend aussi le sirop : 24 est un multiple commun à 4, 3 et 8, mais la question ne porte que sur les deux jus, et 12 suffit."
+            },
+            {
+              "key": "d",
+              "text": "6",
+              "misconception": "6 est un multiple de 3, mais pas de 4 : on ne peut pas écrire $\\frac{3}{4}$ avec le dénominateur 6."
+            }
+          ],
+          "answer": {
+            "value": "a"
+          },
+          "points": 1,
+          "solution_steps": [
+            "Il s'agit des deux jus seulement : $\\frac{3}{4}$ et $\\frac{2}{3}$. Le dénominateur commun doit être un multiple de 4 et de 3.",
+            "Multiples de 4 : 4, 8, 12, 16… Le premier qui est aussi un multiple de 3 est 12.",
+            "Le plus petit dénominateur commun est 12. Le sirop ($\\frac{1}{8}$) n'est pas concerné par cette question."
+          ],
+          "hint": "Cherche un nombre qui est à la fois dans la table de 4 et dans la table de 3."
+        },
+        {
+          "key": "q2",
+          "skill_id": "C013",
+          "statement": "Quelle quantité de jus de fruits Sacha verse-t-il, en comptant le jus d'orange et le jus d'ananas ? Écris ta réponse en litres, sous la forme numérateur/dénominateur.",
+          "type": "texte",
+          "answer": {
+            "value": "17/12",
+            "accepted": [
+              "34/24",
+              "51/36",
+              "68/48",
+              "1 + 5/12",
+              "17/12 L",
+              "17/12 litre",
+              "17/12 litres",
+              "17/12 de litre"
+            ]
+          },
+          "points": 2,
+          "solution_steps": [
+            "On calcule $\\frac{3}{4} + \\frac{2}{3}$. Les dénominateurs sont différents : on écrit les deux fractions avec le dénominateur 12, multiple de 4 et de 3.",
+            "$\\frac{3}{4} = \\frac{3 \\times 3}{4 \\times 3} = \\frac{9}{12}$ et $\\frac{2}{3} = \\frac{2 \\times 4}{3 \\times 4} = \\frac{8}{12}$.",
+            "$\\frac{9}{12} + \\frac{8}{12} = \\frac{17}{12}$ : Sacha verse $\\frac{17}{12}$ de litre de jus, un peu plus d'un litre.",
+            "Attention : additionner les numérateurs entre eux et les dénominateurs entre eux donnerait $\\frac{5}{7}$, moins que le seul jus d'orange."
+          ],
+          "hint": "Écris les deux fractions avec un même dénominateur avant d'additionner."
+        },
+        {
+          "key": "q3",
+          "skill_id": "C013",
+          "statement": "De combien la quantité de jus d'orange dépasse-t-elle celle de jus d'ananas ? Écris ta réponse en litres, sous la forme numérateur/dénominateur.",
+          "type": "texte",
+          "answer": {
+            "value": "1/12",
+            "accepted": [
+              "2/24",
+              "3/36",
+              "4/48",
+              "1/12 L",
+              "1/12 litre",
+              "1/12 de litre"
+            ]
+          },
+          "points": 2,
+          "solution_steps": [
+            "On calcule la différence $\\frac{3}{4} - \\frac{2}{3}$, avec le dénominateur commun 12.",
+            "$\\frac{9}{12} - \\frac{8}{12} = \\frac{1}{12}$.",
+            "Le jus d'orange dépasse le jus d'ananas de $\\frac{1}{12}$ de litre."
+          ],
+          "hint": null
+        },
+        {
+          "key": "q4",
+          "skill_id": "C013",
+          "statement": "Quelle quantité d'eau gazeuse Sacha doit-il verser pour que la carafe soit pleine ? Écris ta réponse en litres, sous la forme numérateur/dénominateur.",
+          "type": "texte",
+          "answer": {
+            "value": "11/24",
+            "accepted": [
+              "22/48",
+              "33/72",
+              "44/96",
+              "11/24 L",
+              "11/24 litre",
+              "11/24 de litre",
+              "44/96 L"
+            ]
+          },
+          "points": 4,
+          "solution_steps": [
+            "La carafe pleine contient 2 litres. Il faut retirer les trois liquides déjà versés : $2 - \\frac{3}{4} - \\frac{2}{3} - \\frac{1}{8}$.",
+            "Un dénominateur commun à 4, 3 et 8 : 24, car 24 = 4 × 6 = 3 × 8 = 8 × 3.",
+            "$2 = \\frac{48}{24}$ ; $\\frac{3}{4} = \\frac{18}{24}$ ; $\\frac{2}{3} = \\frac{16}{24}$ ; $\\frac{1}{8} = \\frac{3}{24}$.",
+            "$\\frac{48}{24} - \\frac{18}{24} - \\frac{16}{24} - \\frac{3}{24} = \\frac{11}{24}$.",
+            "Sacha doit verser $\\frac{11}{24}$ de litre d'eau gazeuse, un peu moins d'un demi-litre."
+          ],
+          "hint": "Écris 2 litres et les trois quantités avec un même dénominateur, multiple de 4, de 3 et de 8."
+        }
+      ],
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 4, classe de 5e, Nombres et calculs, Nombres rationnels, Objectifs d'apprentissage : « Additionner et soustraire des fractions de dénominateurs quelconques. »"
+    },
+    {
+      "id": "SX-C015-01",
+      "skill_id": "C015",
+      "skill_ids": [
+        "C015",
+        "C031",
+        "P018"
+      ],
+      "school_level": "4e",
+      "title": "L'aire de jeux du parc",
+      "contexte": "La mairie aménage un parc sur un terrain carré de 20 m de côté, acheté 45 000 € en 2019.\n\nElle y installe une aire de jeux rectangulaire : sa longueur est égale aux $\\frac{3}{4}$ du côté du terrain, et sa largeur aux $\\frac{2}{5}$ du côté du terrain. Dans l'aire de jeux, un sol souple couvre les $\\frac{5}{6}$ de la surface ; le reste est couvert de sable.\n\nLe parc a aussi un bassin. Pendant les 6 jours de canicule de juillet, le niveau de l'eau du bassin a baissé de $\\frac{5}{4}$ cm chaque jour.\n\nLe parc est ouvert tous les jours, de 8 h à 20 h.",
+      "image": null,
+      "duree_estimee_min": 15,
+      "questions": [
+        {
+          "key": "q1",
+          "skill_id": "C031",
+          "statement": "Quelle est la longueur de l'aire de jeux, en mètres ?",
+          "type": "numerique",
+          "answer": {
+            "value": 15,
+            "unit": "m"
+          },
+          "points": 1,
+          "solution_steps": [
+            "La longueur est les $\\frac{3}{4}$ du côté du terrain, qui mesure 20 m : $\\frac{3}{4} \\times 20 = \\frac{3 \\times 20}{4} = \\frac{60}{4} = 15$.",
+            "L'aire de jeux mesure **15 m** de long."
+          ],
+          "hint": null
+        },
+        {
+          "key": "q2",
+          "skill_id": "P018",
+          "statement": "Quelle est l'aire du terrain, en m² ?",
+          "type": "numerique",
+          "answer": {
+            "value": 400,
+            "unit": "m²"
+          },
+          "points": 1,
+          "solution_steps": [
+            "Le terrain est un carré de 20 m de côté : son aire est côté × côté.",
+            "20 × 20 = 400 : l'aire du terrain est **400 m²**.",
+            "Attention : 4 × 20 = 80 m est le périmètre du terrain, une longueur, pas une aire."
+          ],
+          "hint": "Le terrain est un carré : multiplie son côté par lui-même."
+        },
+        {
+          "key": "q3",
+          "skill_id": "C015",
+          "statement": "Quelle fraction de l'aire du terrain l'aire de jeux occupe-t-elle ? Calcule-la comme un produit de deux fractions, et écris ta réponse sous la forme numérateur/dénominateur.",
+          "type": "texte",
+          "answer": {
+            "value": "3/10",
+            "accepted": [
+              "6/20",
+              "9/30",
+              "12/40",
+              "15/50",
+              "0,3",
+              "120/400"
+            ]
+          },
+          "points": 3,
+          "solution_steps": [
+            "La longueur de l'aire de jeux est $\\frac{3}{4}$ du côté et sa largeur $\\frac{2}{5}$ du côté : son aire est $\\frac{3}{4} \\times \\frac{2}{5}$ de l'aire du carré.",
+            "On multiplie les numérateurs entre eux et les dénominateurs entre eux : $\\frac{3}{4} \\times \\frac{2}{5} = \\frac{3 \\times 2}{4 \\times 5} = \\frac{6}{20} = \\frac{3}{10}$.",
+            "Vérification avec les mesures : 15 m × 8 m = 120 m², et $\\frac{3}{10} \\times 400 = 120$ m²."
+          ],
+          "hint": "La longueur et la largeur sont chacune une fraction du côté du carré."
+        },
+        {
+          "key": "q4",
+          "skill_id": "C015",
+          "statement": "On note une baisse avec un nombre négatif. Quelle a été la variation totale du niveau de l'eau du bassin pendant les 6 jours, en centimètres ? Écris-la sous la forme d'une fraction, avec son signe.",
+          "type": "texte",
+          "answer": {
+            "value": "−15/2",
+            "accepted": [
+              "-30/4",
+              "-45/6",
+              "-60/8",
+              "-7,5",
+              "-15/2 cm",
+              "-30/4 cm",
+              "-7,5 cm",
+              "15/-2",
+              "-(15/2)"
+            ]
+          },
+          "points": 3,
+          "solution_steps": [
+            "Chaque jour, le niveau varie de $-\\frac{5}{4}$ cm. Pendant 6 jours, la variation est $6 \\times \\left(-\\frac{5}{4}\\right)$.",
+            "Règle des signes : un nombre positif multiplié par un nombre négatif donne un nombre négatif.",
+            "$6 \\times \\frac{5}{4} = \\frac{6 \\times 5}{4} = \\frac{30}{4} = \\frac{15}{2}$.",
+            "La variation totale est $-\\frac{15}{2}$ cm, soit $-7{,}5$ cm : le niveau a baissé de 7,5 cm."
+          ],
+          "hint": "Un entier multiplié par une fraction : seul le numérateur est multiplié."
+        },
+        {
+          "key": "q5",
+          "skill_id": "C015",
+          "statement": "Quelle fraction de l'aire du terrain le sol souple couvre-t-il ? Écris ta réponse sous la forme numérateur/dénominateur.",
+          "type": "texte",
+          "answer": {
+            "value": "1/4",
+            "accepted": [
+              "2/8",
+              "3/12",
+              "4/16",
+              "5/20",
+              "6/24",
+              "7/28",
+              "8/32",
+              "9/36",
+              "10/40",
+              "11/44",
+              "12/48",
+              "0,25",
+              "30/120",
+              "15/60",
+              "100/400",
+              "25/100",
+              "50/200"
+            ]
+          },
+          "points": 3,
+          "solution_steps": [
+            "Le sol souple couvre les $\\frac{5}{6}$ de l'aire de jeux, qui est elle-même les $\\frac{3}{4} \\times \\frac{2}{5}$ de l'aire du terrain.",
+            "Fraction du terrain : $\\frac{5}{6} \\times \\frac{3}{4} \\times \\frac{2}{5} = \\frac{5 \\times 3 \\times 2}{6 \\times 4 \\times 5}$.",
+            "On simplifie avant de calculer : 5 au numérateur et 5 au dénominateur, puis 3 × 2 = 6 au numérateur et 6 au dénominateur. Il reste $\\frac{1}{4}$.",
+            "Le sol souple couvre $\\frac{1}{4}$ de l'aire du terrain, soit $\\frac{1}{4} \\times 400 = 100$ m²."
+          ],
+          "hint": "Le sol souple est une fraction de l'aire de jeux, qui est elle-même une fraction du terrain."
+        }
+      ],
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 4, classe de 4e, Nombres et calculs, Nombres rationnels, Objectifs d'apprentissage : « Calculer le produit de nombres rationnels. »"
+    },
+    {
+      "id": "SX-C027-01",
+      "skill_id": "C027",
+      "skill_ids": [
+        "C027",
+        "C001",
+        "C012",
+        "B008"
+      ],
+      "school_level": "CM1",
+      "title": "Le pique-nique du centre de loisirs",
+      "contexte": "Le centre de loisirs des Tilleuls accueille 60 enfants. Mercredi, ils pique-niquent au parc, de 11 heures à 15 heures.\n\nLe cuisinier a préparé 5 tartes aux pommes, toutes de la même taille. Chaque tarte est coupée en 8 parts égales. Le groupe des Écureuils a mangé 19 parts de tarte, et le groupe des Hérissons en a mangé 13.\n\nLe cuisinier a aussi préparé des quiches, chacune coupée en 6 parts égales. À la fin du repas, il reste 1 quiche entière et 5 parts.\n\nPour le goûter de jeudi, 51 enfants ont demandé une part de tarte. Les tartes de mercredi ne seront pas resservies : le cuisinier fera de nouvelles tartes de la même taille, coupées elles aussi en 8 parts égales.",
+      "image": null,
+      "duree_estimee_min": 15,
+      "questions": [
+        {
+          "key": "q1",
+          "skill_id": "C001",
+          "statement": "Quelle fraction d'une tarte représente une part de tarte ?",
+          "type": "qcm",
+          "choices": [
+            {
+              "key": "a",
+              "text": "$\\frac{1}{6}$",
+              "misconception": "L'élève prend le découpage des quiches, en 6 parts, au lieu de celui des tartes, en 8 parts."
+            },
+            {
+              "key": "b",
+              "text": "$\\frac{1}{8}$",
+              "misconception": null
+            },
+            {
+              "key": "c",
+              "text": "$\\frac{1}{5}$",
+              "misconception": "L'élève prend le nombre de tartes. Or une part est un morceau d'une seule tarte, coupée en 8 parts égales."
+            }
+          ],
+          "answer": {
+            "value": "b"
+          },
+          "points": 1,
+          "solution_steps": [
+            "Chaque tarte est coupée en 8 parts égales : une part est $\\frac{1}{8}$ de tarte.",
+            "Le 6 concerne les quiches et le 5 le nombre de tartes : ils ne servent pas ici."
+          ],
+          "hint": "Relis la phrase qui décrit le découpage des tartes, et non celui des quiches."
+        },
+        {
+          "key": "q2",
+          "skill_id": "C027",
+          "statement": "Quelle quantité de tarte les Écureuils ont-ils mangée ? Écris-la sous la forme d'un entier plus une fraction inférieure à 1.",
+          "type": "texte",
+          "answer": {
+            "value": "2 + 3/8",
+            "accepted": [
+              "3/8 + 2",
+              "2 et 3/8"
+            ]
+          },
+          "points": 2,
+          "solution_steps": [
+            "Une part est $\\frac{1}{8}$ de tarte : 19 parts font $\\frac{19}{8}$ de tarte.",
+            "Une tarte entière, ce sont 8 parts. 8 × 2 = 16 et 19 − 16 = 3 : 19 parts font 2 tartes entières et 3 parts.",
+            "Donc $\\frac{19}{8} = 2 + \\frac{3}{8}$, et $\\frac{3}{8}$ est bien inférieure à 1.",
+            "Attention : $1 + \\frac{11}{8}$ est égal, mais $\\frac{11}{8}$ est plus grande que 1 ; on peut encore en sortir une tarte entière."
+          ],
+          "hint": "Combien de tartes entières peut-on reconstituer avec 19 parts ?"
+        },
+        {
+          "key": "q3",
+          "skill_id": "C012",
+          "statement": "Ensemble, quelle quantité de tarte les deux groupes ont-ils mangée ? Donne ta réponse en nombre de tartes.",
+          "type": "numerique",
+          "answer": {
+            "value": 4,
+            "unit": "tartes",
+            "accepted": [
+              "32/8"
+            ]
+          },
+          "points": 2,
+          "solution_steps": [
+            "Les Écureuils ont mangé $\\frac{19}{8}$ de tarte et les Hérissons $\\frac{13}{8}$.",
+            "Les deux fractions ont le même dénominateur : on additionne les numérateurs et on garde le dénominateur. $\\frac{19}{8} + \\frac{13}{8} = \\frac{32}{8}$.",
+            "Une tarte entière fait $\\frac{8}{8}$, et 32 = 4 × 8 : $\\frac{32}{8} = 4$. Les deux groupes ont mangé **4 tartes**.",
+            "Le nombre de tartes préparées (5) ne répond pas à la question : il reste une tarte."
+          ],
+          "hint": "Additionne les deux quantités, en huitièmes de tarte."
+        },
+        {
+          "key": "q4",
+          "skill_id": "C027",
+          "statement": "Quelle quantité de quiche reste-t-il à la fin du repas ? Écris-la sous la forme d'une seule fraction.",
+          "type": "texte",
+          "answer": {
+            "value": "11/6",
+            "accepted": [
+              "22/12",
+              "33/18"
+            ]
+          },
+          "points": 2,
+          "solution_steps": [
+            "Une part de quiche est $\\frac{1}{6}$ de quiche, et une quiche entière fait 6 sixièmes, soit $\\frac{6}{6}$.",
+            "Avec les 5 parts : $\\frac{6}{6} + \\frac{5}{6} = \\frac{11}{6}$.",
+            "Il reste $\\frac{11}{6}$ de quiche, c'est-à-dire $1 + \\frac{5}{6}$.",
+            "Attention : $\\frac{5}{6}$ oublie la quiche entière, et $\\frac{6}{11}$ inverse le numérateur et le dénominateur."
+          ],
+          "hint": "Combien de sixièmes y a-t-il dans une quiche entière ?"
+        },
+        {
+          "key": "q5",
+          "skill_id": "B008",
+          "statement": "Combien de nouvelles tartes le cuisinier doit-il préparer, au minimum, pour le goûter de jeudi ?",
+          "type": "numerique",
+          "answer": {
+            "value": 7,
+            "unit": "tartes"
+          },
+          "points": 3,
+          "solution_steps": [
+            "Il faut 51 parts, une par enfant qui en a demandé, et chaque tarte donne 8 parts : on pose la division euclidienne de 51 par 8. Les 60 enfants du centre ne servent pas ici.",
+            "51 = 8 × 6 + 3 : le quotient est 6 et le reste est 3.",
+            "6 tartes donnent 48 parts : il manque 3 parts. Il faut donc une tarte de plus.",
+            "Le cuisinier doit préparer **7 tartes**. Avec les fractions : $\\frac{51}{8} = 6 + \\frac{3}{8}$, il faut 6 tartes et encore $\\frac{3}{8}$ de tarte."
+          ],
+          "hint": "Pose la division euclidienne du nombre de parts par 8, puis regarde le reste."
+        }
+      ],
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 3, Cours moyen première année, Les fractions : « Savoir écrire une fraction supérieure à 1 comme la somme d'un entier et d'une fraction inférieure à 1 »"
+    },
+    {
+      "id": "SX-C031-01",
+      "skill_id": "C031",
+      "skill_ids": [
+        "C031",
+        "C027",
+        "B038"
+      ],
+      "school_level": "CM2",
+      "title": "L'arrosage du jardin de l'école",
+      "contexte": "Les 28 élèves de CM2 de l'école Jules-Verne s'occupent du jardin de l'école, qui compte 4 bacs de culture. Ils arrosent chaque matin à 8 h 30, avant la classe.\n\nIls ont planté 9 pieds de tomates. À chaque arrosage, chaque pied de tomates reçoit $\\frac{3}{4}$ de litre d'eau.\n\nIls ont aussi planté 8 fraisiers. À chaque arrosage, chaque fraisier reçoit $\\frac{2}{5}$ de litre d'eau.\n\nL'arrosoir de la classe contient 5 litres d'eau quand il est plein.\n\nEnfin, ils ont semé 40 graines de radis, mais le **huitième** de ces graines n'a pas germé.",
+      "image": null,
+      "duree_estimee_min": 15,
+      "questions": [
+        {
+          "key": "q1",
+          "skill_id": "C031",
+          "statement": "Quel calcul donne la quantité d'eau versée sur les pieds de tomates à chaque arrosage ?",
+          "type": "qcm",
+          "choices": [
+            {
+              "key": "a",
+              "text": "$4 \\times \\frac{3}{4}$",
+              "misconception": "L'élève prend le nombre de bacs (4) au lieu du nombre de pieds de tomates (9) : les bacs ne servent pas ici."
+            },
+            {
+              "key": "b",
+              "text": "$9 + \\frac{3}{4}$",
+              "misconception": "L'élève ajoute au lieu de répéter : chacun des 9 pieds reçoit $\\frac{3}{4}$ de litre, il faut donc multiplier."
+            },
+            {
+              "key": "c",
+              "text": "$9 \\times \\frac{3}{4}$",
+              "misconception": null
+            },
+            {
+              "key": "d",
+              "text": "$5 \\times \\frac{3}{4}$",
+              "misconception": "L'élève prend la contenance de l'arrosoir (5 litres), qui ne dit pas combien de pieds on arrose."
+            }
+          ],
+          "answer": {
+            "value": "c"
+          },
+          "points": 1,
+          "solution_steps": [
+            "Chaque pied de tomates reçoit $\\frac{3}{4}$ de litre, et il y a 9 pieds : on prend 9 fois $\\frac{3}{4}$ de litre.",
+            "Le calcul est $9 \\times \\frac{3}{4}$. Le nombre de bacs (4) et la contenance de l'arrosoir (5 litres) ne servent pas ici."
+          ],
+          "hint": "Combien de pieds de tomates reçoivent chacun la même quantité d'eau ?"
+        },
+        {
+          "key": "q2",
+          "skill_id": "C031",
+          "statement": "Quelle quantité d'eau, en litres, verse-t-on sur les pieds de tomates à chaque arrosage ? Écris ta réponse sous la forme numérateur/dénominateur.",
+          "type": "texte",
+          "answer": {
+            "value": "27/4",
+            "accepted": [
+              "54/8",
+              "81/12",
+              "6,75",
+              "6 + 3/4",
+              "6 et 3/4",
+              "27/4 L",
+              "27/4 litres",
+              "27/4 de litre"
+            ]
+          },
+          "points": 2,
+          "solution_steps": [
+            "On calcule $9 \\times \\frac{3}{4}$ : on multiplie le numérateur par 9 et on garde le dénominateur.",
+            "$9 \\times \\frac{3}{4} = \\frac{9 \\times 3}{4} = \\frac{27}{4}$.",
+            "On verse $\\frac{27}{4}$ litres, c'est-à-dire $6 + \\frac{3}{4}$ litres.",
+            "Attention : multiplier aussi le dénominateur par 9 donnerait $\\frac{27}{36}$, moins d'un litre pour 9 pieds : c'est impossible."
+          ],
+          "hint": "Le dénominateur dit en combien de parts on coupe le litre : il ne change pas."
+        },
+        {
+          "key": "q3",
+          "skill_id": "C027",
+          "statement": "Quelle quantité d'eau, en litres, verse-t-on sur les fraisiers à chaque arrosage ? Écris-la sous la forme d'un entier plus une fraction inférieure à 1.",
+          "type": "texte",
+          "answer": {
+            "value": "3 + 1/5",
+            "accepted": [
+              "1/5 + 3",
+              "3 et 1/5",
+              "3 + 1/5 L",
+              "3 + 1/5 litres",
+              "3 et 1/5 L",
+              "3 et 1/5 litres"
+            ]
+          },
+          "points": 3,
+          "solution_steps": [
+            "Il y a 8 fraisiers, qui reçoivent chacun $\\frac{2}{5}$ de litre : $8 \\times \\frac{2}{5} = \\frac{8 \\times 2}{5} = \\frac{16}{5}$.",
+            "Un litre, ce sont 5 cinquièmes. 5 × 3 = 15 et 16 − 15 = 1 : 16 cinquièmes font 3 litres entiers et encore 1 cinquième.",
+            "On verse $3 + \\frac{1}{5}$ litres sur les fraisiers, et $\\frac{1}{5}$ est bien inférieure à 1."
+          ],
+          "hint": "Calcule d'abord la quantité sous forme d'une fraction, puis compte les litres entiers."
+        },
+        {
+          "key": "q4",
+          "skill_id": "B038",
+          "statement": "Combien de graines de radis ont germé ?",
+          "type": "numerique",
+          "answer": {
+            "value": 35,
+            "unit": "graines"
+          },
+          "points": 2,
+          "solution_steps": [
+            "Le huitième de 40 graines : 40 ÷ 8 = 5. Donc 5 graines n'ont pas germé.",
+            "Toutes les autres ont germé : 40 − 5 = 35.",
+            "**35 graines** ont germé."
+          ],
+          "hint": "Cherche d'abord combien de graines n'ont pas germé."
+        },
+        {
+          "key": "q5",
+          "skill_id": "C031",
+          "statement": "Avec un seul arrosoir plein, combien de pieds de tomates peut-on arroser, au maximum ?",
+          "type": "numerique",
+          "answer": {
+            "value": 6,
+            "unit": "pieds"
+          },
+          "points": 3,
+          "solution_steps": [
+            "Chaque pied reçoit $\\frac{3}{4}$ de litre. On cherche combien de pieds on peut arroser sans dépasser les 5 litres de l'arrosoir.",
+            "5 litres, ce sont 5 × 4 = 20 quarts de litre, soit $\\frac{20}{4}$.",
+            "$6 \\times \\frac{3}{4} = \\frac{18}{4}$ : c'est moins que $\\frac{20}{4}$, l'arrosoir suffit. $7 \\times \\frac{3}{4} = \\frac{21}{4}$ : c'est plus que $\\frac{20}{4}$, il manquerait $\\frac{1}{4}$ de litre.",
+            "Avec un arrosoir plein, on peut arroser **6 pieds** de tomates."
+          ],
+          "hint": "Combien de quarts de litre y a-t-il dans 5 litres ?"
+        }
+      ],
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 3, Cours moyen deuxième année, Les fractions : « Calculer le produit d'un entier et d'une fraction »"
+    },
+    {
+      "id": "SX-C032-01",
+      "skill_id": "C032",
+      "skill_ids": [
+        "C032",
+        "B036",
+        "D007",
+        "D021"
+      ],
+      "school_level": "6e",
+      "title": "L'anniversaire de Jade",
+      "contexte": "Samedi, Jade fête ses 11 ans. Elle a invité 5 amis.\n\nÀ midi, le père de Jade sert 5 pizzas identiques, partagées équitablement entre Jade et ses amis.\n\nL'après-midi, les enfants jouent au laser game. La séance commence à 15 h et dure 40 minutes. Elle coûte 45 € pour tout le groupe, et Jade et ses amis partagent cette somme en parts égales.\n\nPour décorer la salle, Jade a un rouleau de 10 mètres de guirlande. Elle le coupe en 3 morceaux de même longueur, un pour chaque mur sans fenêtre.\n\nSon frère Hugo fait le calcul à la calculatrice. Il lit 3,33 au début du résultat et annonce : « Chaque morceau mesure exactement 3,33 m. »",
+      "image": null,
+      "duree_estimee_min": 15,
+      "questions": [
+        {
+          "key": "q1",
+          "skill_id": "B036",
+          "statement": "Jade coupe sa guirlande. Par quel nombre faut-il diviser 10 m pour trouver la longueur d'un morceau ?",
+          "type": "qcm",
+          "choices": [
+            {
+              "key": "a",
+              "text": "Par 6, le nombre d'enfants",
+              "misconception": "L'élève mélange les situations : la guirlande n'est pas partagée entre les enfants, elle est coupée en un morceau par mur sans fenêtre."
+            },
+            {
+              "key": "b",
+              "text": "Par 3, le nombre de morceaux",
+              "misconception": null
+            },
+            {
+              "key": "c",
+              "text": "Par 4, le nombre de murs d'une salle",
+              "misconception": "L'élève pense aux 4 murs d'une salle. Or Jade ne coupe que 3 morceaux, un pour chaque mur sans fenêtre."
+            }
+          ],
+          "answer": {
+            "value": "b"
+          },
+          "points": 1,
+          "solution_steps": [
+            "Jade coupe le rouleau de 10 m en 3 morceaux de même longueur, un pour chaque mur sans fenêtre : c'est un partage en 3 parts égales.",
+            "On divise donc 10 m par 3. Le nombre d'enfants, l'âge de Jade et la durée de la séance ne servent pas ici."
+          ],
+          "hint": "Relis la phrase qui parle de la guirlande."
+        },
+        {
+          "key": "q2",
+          "skill_id": "C032",
+          "statement": "Les 5 pizzas sont partagées équitablement entre Jade et ses 5 amis, soit 6 enfants. Quelle part de pizza chaque enfant reçoit-il ? Écris ta réponse sous la forme numérateur/dénominateur.",
+          "type": "texte",
+          "answer": {
+            "value": "5/6",
+            "accepted": [
+              "10/12",
+              "15/18",
+              "20/24",
+              "cinq sixièmes",
+              "5 sixièmes"
+            ]
+          },
+          "points": 2,
+          "solution_steps": [
+            "On partage 5 pizzas entre 6 enfants : chaque enfant reçoit $5 \\div 6$ pizza.",
+            "Le quotient $5 \\div 6$ s'écrit $\\frac{5}{6}$ : c'est le nombre qui, multiplié par 6, donne 5.",
+            "On peut le voir ainsi : on coupe chaque pizza en 6 parts égales ; chaque enfant reçoit une part de chaque pizza, soit 5 parts de $\\frac{1}{6}$, donc $\\frac{5}{6}$ de pizza.",
+            "Attention : $\\frac{6}{5}$ de pizza ferait plus d'une pizza par enfant, impossible avec 5 pizzas pour 6 enfants."
+          ],
+          "hint": "Imagine que chaque pizza est coupée en 6 parts égales : combien de parts reçoit chaque enfant ?"
+        },
+        {
+          "key": "q3",
+          "skill_id": "D007",
+          "statement": "Les 6 enfants partagent les 45 € du laser game en parts égales. Combien chaque enfant paie-t-il ?",
+          "type": "numerique",
+          "answer": {
+            "value": 7.5,
+            "unit": "€",
+            "accepted": [
+              "7 € 50",
+              "7 euros 50"
+            ]
+          },
+          "points": 2,
+          "solution_steps": [
+            "Les 6 enfants partagent 45 € en parts égales : on calcule $45 \\div 6$.",
+            "En 45, il y a 7 fois 6 (7 × 6 = 42), et il reste 3 €, soit 30 dixièmes d'euro. 30 ÷ 6 = 5 dixièmes.",
+            "$45 \\div 6 = 7{,}5$ : chaque enfant paie **7,50 €**. C'est aussi le quotient $\\frac{45}{6}$ €.",
+            "Vérification : 6 × 7,50 = 45."
+          ],
+          "hint": "Pose la division de 45 par 6 et continue après la virgule."
+        },
+        {
+          "key": "q4",
+          "skill_id": "C032",
+          "statement": "Quelle est la longueur exacte d'un morceau de guirlande, en mètres ? Écris ta réponse sous la forme numérateur/dénominateur.",
+          "type": "texte",
+          "answer": {
+            "value": "10/3",
+            "accepted": [
+              "20/6",
+              "30/9",
+              "40/12",
+              "3 + 1/3",
+              "10/3 m",
+              "10/3 mètres",
+              "10/3 de mètre"
+            ]
+          },
+          "points": 3,
+          "solution_steps": [
+            "On coupe 10 m en 3 morceaux égaux : un morceau mesure $10 \\div 3$ mètres.",
+            "La division de 10 par 3 ne s'arrête jamais : 3,333… Aucun nombre décimal n'est égal à $10 \\div 3$.",
+            "Le quotient exact s'écrit avec une fraction : $10 \\div 3 = \\frac{10}{3}$. Un morceau mesure exactement $\\frac{10}{3}$ m.",
+            "Vérification : $3 \\times \\frac{10}{3} = \\frac{30}{3} = 10$, on retrouve bien les 10 m."
+          ],
+          "hint": "Le résultat de cette division peut-il s'écrire exactement avec une virgule ? Sinon, cherche une autre écriture du quotient."
+        },
+        {
+          "key": "q5",
+          "skill_id": "D021",
+          "statement": "Vrai ou faux : chaque morceau de guirlande mesure exactement 3,33 m, comme le dit Hugo.",
+          "type": "vrai_faux",
+          "answer": {
+            "value": false
+          },
+          "points": 2,
+          "solution_steps": [
+            "Si chaque morceau mesurait 3,33 m, les 3 morceaux mesureraient 3 × 3,33 = 9,99 m.",
+            "Or le rouleau mesure 10 m : il manque 0,01 m. La valeur 3,33 m n'est qu'une valeur approchée.",
+            "C'est **faux** : la longueur exacte d'un morceau est $\\frac{10}{3}$ m, qui ne s'écrit pas exactement avec une virgule."
+          ],
+          "hint": "Calcule la longueur de 3 morceaux de 3,33 m."
+        }
+      ],
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 3, classe de 6e, Les fractions : « En classe de 6e, la fraction acquiert un nouveau sens : celui de quotient. »"
+    },
+    {
+      "id": "SX-C033-01",
+      "skill_id": "C033",
+      "skill_ids": [
+        "C033",
+        "A027",
+        "C013"
+      ],
+      "school_level": "5e",
+      "title": "Le potager du club nature",
+      "contexte": "Le club nature du collège compte 17 élèves. Depuis 3 ans, ils cultivent un potager derrière le gymnase, et ils y passent 2 heures chaque mercredi.\n\nCette année, le potager est partagé ainsi :\nles légumes occupent $\\frac{3}{8}$ du potager ;\nles fleurs occupent $\\frac{1}{4}$ du potager ;\nles plantes aromatiques occupent $\\frac{1}{10}$ du potager ;\nles fraisiers occupent tout le reste.\n\nL'an prochain, le club gardera les légumes et les fleurs à la même place. Les plantes aromatiques et les fraisiers seront retirés : à leur place, le club installera un hôtel à insectes, qui occupera $\\frac{3}{20}$ du potager, et une mare, qui occupera tout le reste.",
+      "image": null,
+      "duree_estimee_min": 15,
+      "questions": [
+        {
+          "key": "q1",
+          "skill_id": "C033",
+          "statement": "Quelle information du texte donne directement la part du potager occupée par les fraisiers cette année ?",
+          "type": "qcm",
+          "choices": [
+            {
+              "key": "a",
+              "text": "$\\frac{3}{20}$",
+              "misconception": "L'élève lit trop vite : $\\frac{3}{20}$ est la part de l'hôtel à insectes, prévu l'an prochain."
+            },
+            {
+              "key": "b",
+              "text": "$\\frac{1}{10}$",
+              "misconception": "L'élève prend la ligne juste au-dessus des fraisiers : $\\frac{1}{10}$ est la part des plantes aromatiques."
+            },
+            {
+              "key": "c",
+              "text": "Aucune : il faut la calculer à partir du potager entier",
+              "misconception": null
+            }
+          ],
+          "answer": {
+            "value": "c"
+          },
+          "points": 1,
+          "solution_steps": [
+            "Le texte dit seulement que les fraisiers occupent « tout le reste » : leur part n'est pas écrite.",
+            "Il faut la calculer à partir du potager entier, qui vaut 1. $\\frac{3}{20}$ est la part de l'hôtel à insectes (l'an prochain) et $\\frac{1}{10}$ celle des plantes aromatiques."
+          ],
+          "hint": null
+        },
+        {
+          "key": "q2",
+          "skill_id": "A027",
+          "statement": "Pour calculer avec les parts de cette année, on écrit $\\frac{3}{8}$, $\\frac{1}{4}$ et $\\frac{1}{10}$ avec un même dénominateur. Quel est le plus petit dénominateur commun possible ?",
+          "type": "numerique",
+          "answer": {
+            "value": 40
+          },
+          "points": 2,
+          "solution_steps": [
+            "On cherche le plus petit nombre qui est à la fois un multiple de 8, de 4 et de 10.",
+            "Un multiple de 8 est aussi un multiple de 4. Multiples de 8 : 8, 16, 24, 32, 40… Le premier qui est aussi un multiple de 10 est 40.",
+            "Le plus petit dénominateur commun est **40** : 40 = 8 × 5 = 4 × 10 = 10 × 4.",
+            "Le produit 8 × 4 × 10 = 320 est aussi un multiple commun, mais il n'est pas le plus petit."
+          ],
+          "hint": "Un multiple de 8 est-il toujours un multiple de 4 ?"
+        },
+        {
+          "key": "q3",
+          "skill_id": "C033",
+          "statement": "Quelle fraction du potager les fraisiers occupent-ils cette année ? Écris ta réponse sous la forme numérateur/dénominateur.",
+          "type": "texte",
+          "answer": {
+            "value": "11/40",
+            "accepted": [
+              "22/80",
+              "33/120",
+              "0,275",
+              "88/320"
+            ]
+          },
+          "points": 3,
+          "solution_steps": [
+            "Le potager entier vaut 1, soit $\\frac{40}{40}$.",
+            "Légumes, fleurs et plantes aromatiques : $\\frac{3}{8} + \\frac{1}{4} + \\frac{1}{10} = \\frac{15}{40} + \\frac{10}{40} + \\frac{4}{40} = \\frac{29}{40}$.",
+            "Les fraisiers occupent le reste : $\\frac{40}{40} - \\frac{29}{40} = \\frac{11}{40}$ du potager.",
+            "Attention : $\\frac{29}{40}$ est la part des trois autres cultures, pas celle des fraisiers ; il faut encore la retirer du potager entier."
+          ],
+          "hint": "Le potager entier vaut 1."
+        },
+        {
+          "key": "q4",
+          "skill_id": "C013",
+          "statement": "De quelle fraction du potager la part des légumes dépasse-t-elle celle des fleurs ? Écris ta réponse sous la forme numérateur/dénominateur.",
+          "type": "texte",
+          "answer": {
+            "value": "1/8",
+            "accepted": [
+              "2/16",
+              "3/24",
+              "4/32",
+              "5/40",
+              "0,125"
+            ]
+          },
+          "points": 2,
+          "solution_steps": [
+            "On calcule $\\frac{3}{8} - \\frac{1}{4}$. Comme $\\frac{1}{4} = \\frac{2}{8}$ : $\\frac{3}{8} - \\frac{2}{8} = \\frac{1}{8}$.",
+            "La part des légumes dépasse celle des fleurs de $\\frac{1}{8}$ du potager."
+          ],
+          "hint": null
+        },
+        {
+          "key": "q5",
+          "skill_id": "C033",
+          "statement": "L'an prochain, quelle fraction du potager la mare occupera-t-elle ? Écris ta réponse sous la forme numérateur/dénominateur.",
+          "type": "texte",
+          "answer": {
+            "value": "9/40",
+            "accepted": [
+              "18/80",
+              "27/120",
+              "0,225",
+              "36/160",
+              "144/640"
+            ]
+          },
+          "points": 3,
+          "solution_steps": [
+            "L'an prochain, le potager entier ($\\frac{40}{40}$) sera partagé entre les légumes, les fleurs, l'hôtel à insectes et la mare. Les plantes aromatiques et les fraisiers n'y seront plus.",
+            "Légumes, fleurs et hôtel : $\\frac{3}{8} + \\frac{1}{4} + \\frac{3}{20} = \\frac{15}{40} + \\frac{10}{40} + \\frac{6}{40} = \\frac{31}{40}$.",
+            "La mare occupera le reste : $\\frac{40}{40} - \\frac{31}{40} = \\frac{9}{40}$ du potager.",
+            "Attention : garder les plantes aromatiques dans le calcul donnerait $\\frac{5}{40}$, et oublier de retirer du potager entier donnerait $\\frac{31}{40}$."
+          ],
+          "hint": "Quelles parties le potager contiendra-t-il l'an prochain ?"
+        }
+      ],
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 4, classe de 5e, Nombres et calculs, Nombres rationnels, Objectifs d'apprentissage : « Résoudre des problèmes avec des additions et soustractions de fractions. »"
+    },
+    {
+      "id": "SX-C037-01",
+      "skill_id": "C037",
+      "skill_ids": [
+        "C037",
+        "D024",
+        "C017"
+      ],
+      "school_level": "4e",
+      "title": "La récolte de l'apiculteur",
+      "contexte": "Marc est apiculteur. Cette année, ses 12 ruches ont produit 48 kg de miel.\n\nIl vend d'abord les $\\frac{3}{8}$ de sa récolte à une coopérative, qui lui paie le miel 4,50 € le kilogramme. Il garde ensuite le cinquième de ce qui reste pour sa famille. Tout le miel restant est mis en pots de $\\frac{3}{4}$ de kg, qu'il vend 7 € pièce au marché du samedi, de 8 h à 13 h.\n\nL'an dernier, la récolte avait été moins bonne : le miel mis en pots représentait les $\\frac{5}{6}$ de la récolte, soit 35 kg.",
+      "image": null,
+      "duree_estimee_min": 18,
+      "questions": [
+        {
+          "key": "q1",
+          "skill_id": "C037",
+          "statement": "D'après le texte, Marc garde pour sa famille le cinquième de quelle quantité de miel ?",
+          "type": "qcm",
+          "choices": [
+            {
+              "key": "a",
+              "text": "De toute la récolte (48 kg)",
+              "misconception": "C'est l'erreur classique : le cinquième porte sur ce qui reste après la vente à la coopérative, pas sur toute la récolte."
+            },
+            {
+              "key": "b",
+              "text": "Du miel qui reste après la vente à la coopérative",
+              "misconception": null
+            },
+            {
+              "key": "c",
+              "text": "Du miel mis en pots",
+              "misconception": "Le miel mis en pots est ce qui reste après la part de la famille : il vient après, il ne peut pas servir à la calculer."
+            }
+          ],
+          "answer": {
+            "value": "b"
+          },
+          "points": 1,
+          "solution_steps": [
+            "Le texte dit : « Il garde ensuite le cinquième de ce qui reste ». Ce qui reste, c'est le miel qui n'a pas été vendu à la coopérative.",
+            "Le cinquième porte donc sur le reste après la coopérative, pas sur toute la récolte."
+          ],
+          "hint": "Relis la phrase qui parle de la famille : le cinquième de quoi ?"
+        },
+        {
+          "key": "q2",
+          "skill_id": "D024",
+          "statement": "Quelle somme la coopérative paie-t-elle à Marc ?",
+          "type": "numerique",
+          "answer": {
+            "value": 81,
+            "unit": "€"
+          },
+          "points": 2,
+          "solution_steps": [
+            "Masse vendue à la coopérative : $\\frac{3}{8} \\times 48 = \\frac{3 \\times 48}{8} = \\frac{144}{8} = 18$ kg (ou : 48 ÷ 8 = 6, puis 3 × 6 = 18).",
+            "Prix : 18 × 4,50 = 81.",
+            "La coopérative paie **81 €** à Marc."
+          ],
+          "hint": "Calcule d'abord la masse de miel vendue à la coopérative."
+        },
+        {
+          "key": "q3",
+          "skill_id": "C037",
+          "statement": "Quelle fraction de la récolte Marc garde-t-il pour sa famille ? Écris ta réponse sous la forme numérateur/dénominateur.",
+          "type": "texte",
+          "answer": {
+            "value": "1/8",
+            "accepted": [
+              "2/16",
+              "3/24",
+              "4/32",
+              "5/40",
+              "6/48",
+              "0,125"
+            ]
+          },
+          "points": 3,
+          "solution_steps": [
+            "Après la coopérative, il reste $1 - \\frac{3}{8} = \\frac{5}{8}$ de la récolte.",
+            "La famille reçoit le cinquième de ce reste : $\\frac{1}{5} \\times \\frac{5}{8} = \\frac{5}{40} = \\frac{1}{8}$.",
+            "Marc garde $\\frac{1}{8}$ de la récolte pour sa famille, soit $\\frac{1}{8} \\times 48 = 6$ kg.",
+            "Attention : répondre $\\frac{1}{5}$, c'est prendre le cinquième de toute la récolte au lieu du cinquième du reste."
+          ],
+          "hint": "Quelle fraction de la récolte reste-t-il après la coopérative ?"
+        },
+        {
+          "key": "q4",
+          "skill_id": "C017",
+          "statement": "On admet qu'il reste 24 kg de miel à mettre en pots. Combien de pots Marc remplit-il ?",
+          "type": "numerique",
+          "answer": {
+            "value": 32,
+            "unit": "pots"
+          },
+          "points": 3,
+          "solution_steps": [
+            "On cherche combien de fois $\\frac{3}{4}$ de kg est contenu dans 24 kg : on calcule $24 \\div \\frac{3}{4}$.",
+            "Diviser par $\\frac{3}{4}$, c'est multiplier par son inverse $\\frac{4}{3}$ : $24 \\times \\frac{4}{3} = \\frac{96}{3} = 32$.",
+            "Marc remplit **32 pots**. Vérification : $32 \\times \\frac{3}{4} = \\frac{96}{4} = 24$ kg."
+          ],
+          "hint": "Diviser par une fraction, c'est multiplier par son inverse."
+        },
+        {
+          "key": "q5",
+          "skill_id": "C037",
+          "statement": "Quelle était la masse de la récolte de l'an dernier ?",
+          "type": "numerique",
+          "answer": {
+            "value": 42,
+            "unit": "kg"
+          },
+          "points": 3,
+          "solution_steps": [
+            "Les $\\frac{5}{6}$ de la récolte de l'an dernier valent 35 kg.",
+            "Un sixième de la récolte vaut donc 35 ÷ 5 = 7 kg.",
+            "La récolte entière, ce sont six sixièmes : 6 × 7 = 42 kg. On peut aussi calculer $35 \\div \\frac{5}{6} = 35 \\times \\frac{6}{5} = 42$.",
+            "La récolte de l'an dernier était de **42 kg**. Vérification : $\\frac{5}{6} \\times 42 = 35$ kg, et c'est bien moins que les 48 kg de cette année."
+          ],
+          "hint": "Que vaut un sixième de la récolte ?"
+        }
+      ],
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 4, classe de 4e, Nombres et calculs, Nombres rationnels, Objectifs d'apprentissage : « Résoudre des problèmes mobilisant les opérations sur les fractions : addition, soustraction, multiplication, division, inverse. »"
+    }
+  ]
 }

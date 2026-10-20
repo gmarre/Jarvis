@@ -1,0 +1,133 @@
+{
+  "id": "SX-C013-01",
+  "skill_id": "C013",
+  "skill_ids": [
+    "C013",
+    "A027"
+  ],
+  "school_level": "5e",
+  "title": "Le cocktail de Sacha",
+  "contexte": "Pour l'anniversaire de sa sœur, qui fête ses 13 ans avec 9 invités, Sacha prépare un cocktail de fruits sans alcool. La fête commence à 16 heures.\n\nIl prend une carafe qui contient 2 litres quand elle est pleine. Il y verse, dans cet ordre :\n$\\frac{3}{4}$ de litre de jus d'orange ;\n$\\frac{2}{3}$ de litre de jus d'ananas ;\n$\\frac{1}{8}$ de litre de sirop de grenadine.\n\nIl complète ensuite la carafe avec de l'eau gazeuse, jusqu'à ce qu'elle soit pleine.\n\nLe reste de la bouteille de jus d'orange part au réfrigérateur, pour le petit-déjeuner du lendemain.",
+  "image": null,
+  "duree_estimee_min": 15,
+  "questions": [
+    {
+      "key": "q1",
+      "skill_id": "A027",
+      "statement": "Sacha veut additionner les quantités de jus d'orange et de jus d'ananas. Quel est le plus petit dénominateur commun qu'il peut utiliser ?",
+      "type": "qcm",
+      "choices": [
+        {
+          "key": "a",
+          "text": "12",
+          "misconception": null
+        },
+        {
+          "key": "b",
+          "text": "7",
+          "misconception": "L'élève additionne les dénominateurs 4 et 3 : or 7 n'est un multiple ni de 4 ni de 3."
+        },
+        {
+          "key": "c",
+          "text": "24",
+          "misconception": "L'élève prend aussi le sirop : 24 est un multiple commun à 4, 3 et 8, mais la question ne porte que sur les deux jus, et 12 suffit."
+        },
+        {
+          "key": "d",
+          "text": "6",
+          "misconception": "6 est un multiple de 3, mais pas de 4 : on ne peut pas écrire $\\frac{3}{4}$ avec le dénominateur 6."
+        }
+      ],
+      "answer": {
+        "value": "a"
+      },
+      "points": 1,
+      "solution_steps": [
+        "Il s'agit des deux jus seulement : $\\frac{3}{4}$ et $\\frac{2}{3}$. Le dénominateur commun doit être un multiple de 4 et de 3.",
+        "Multiples de 4 : 4, 8, 12, 16… Le premier qui est aussi un multiple de 3 est 12.",
+        "Le plus petit dénominateur commun est 12. Le sirop ($\\frac{1}{8}$) n'est pas concerné par cette question."
+      ],
+      "hint": "Cherche un nombre qui est à la fois dans la table de 4 et dans la table de 3."
+    },
+    {
+      "key": "q2",
+      "skill_id": "C013",
+      "statement": "Quelle quantité de jus de fruits Sacha verse-t-il, en comptant le jus d'orange et le jus d'ananas ? Écris ta réponse en litres, sous la forme numérateur/dénominateur.",
+      "type": "texte",
+      "answer": {
+        "value": "17/12",
+        "accepted": [
+          "34/24",
+          "51/36",
+          "68/48",
+          "1 + 5/12",
+          "17/12 L",
+          "17/12 litre",
+          "17/12 litres",
+          "17/12 de litre"
+        ]
+      },
+      "points": 2,
+      "solution_steps": [
+        "On calcule $\\frac{3}{4} + \\frac{2}{3}$. Les dénominateurs sont différents : on écrit les deux fractions avec le dénominateur 12, multiple de 4 et de 3.",
+        "$\\frac{3}{4} = \\frac{3 \\times 3}{4 \\times 3} = \\frac{9}{12}$ et $\\frac{2}{3} = \\frac{2 \\times 4}{3 \\times 4} = \\frac{8}{12}$.",
+        "$\\frac{9}{12} + \\frac{8}{12} = \\frac{17}{12}$ : Sacha verse $\\frac{17}{12}$ de litre de jus, un peu plus d'un litre.",
+        "Attention : additionner les numérateurs entre eux et les dénominateurs entre eux donnerait $\\frac{5}{7}$, moins que le seul jus d'orange."
+      ],
+      "hint": "Écris les deux fractions avec un même dénominateur avant d'additionner."
+    },
+    {
+      "key": "q3",
+      "skill_id": "C013",
+      "statement": "De combien la quantité de jus d'orange dépasse-t-elle celle de jus d'ananas ? Écris ta réponse en litres, sous la forme numérateur/dénominateur.",
+      "type": "texte",
+      "answer": {
+        "value": "1/12",
+        "accepted": [
+          "2/24",
+          "3/36",
+          "4/48",
+          "1/12 L",
+          "1/12 litre",
+          "1/12 de litre"
+        ]
+      },
+      "points": 2,
+      "solution_steps": [
+        "On calcule la différence $\\frac{3}{4} - \\frac{2}{3}$, avec le dénominateur commun 12.",
+        "$\\frac{9}{12} - \\frac{8}{12} = \\frac{1}{12}$.",
+        "Le jus d'orange dépasse le jus d'ananas de $\\frac{1}{12}$ de litre."
+      ],
+      "hint": null
+    },
+    {
+      "key": "q4",
+      "skill_id": "C013",
+      "statement": "Quelle quantité d'eau gazeuse Sacha doit-il verser pour que la carafe soit pleine ? Écris ta réponse en litres, sous la forme numérateur/dénominateur.",
+      "type": "texte",
+      "answer": {
+        "value": "11/24",
+        "accepted": [
+          "22/48",
+          "33/72",
+          "44/96",
+          "11/24 L",
+          "11/24 litre",
+          "11/24 de litre",
+          "44/96 L"
+        ]
+      },
+      "points": 4,
+      "solution_steps": [
+        "La carafe pleine contient 2 litres. Il faut retirer les trois liquides déjà versés : $2 - \\frac{3}{4} - \\frac{2}{3} - \\frac{1}{8}$.",
+        "Un dénominateur commun à 4, 3 et 8 : 24, car 24 = 4 × 6 = 3 × 8 = 8 × 3.",
+        "$2 = \\frac{48}{24}$ ; $\\frac{3}{4} = \\frac{18}{24}$ ; $\\frac{2}{3} = \\frac{16}{24}$ ; $\\frac{1}{8} = \\frac{3}{24}$.",
+        "$\\frac{48}{24} - \\frac{18}{24} - \\frac{16}{24} - \\frac{3}{24} = \\frac{11}{24}$.",
+        "Sacha doit verser $\\frac{11}{24}$ de litre d'eau gazeuse, un peu moins d'un demi-litre."
+      ],
+      "hint": "Écris 2 litres et les trois quantités avec un même dénominateur, multiple de 4, de 3 et de 8."
+    }
+  ],
+  "review_status": "relu_agent",
+  "programme_ref": "Cycle 4, classe de 5e, Nombres et calculs, Nombres rationnels, Objectifs d'apprentissage : « Additionner et soustraire des fractions de dénominateurs quelconques. »"
+}

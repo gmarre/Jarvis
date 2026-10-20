@@ -1,0 +1,127 @@
+{
+  "id": "SX-C037-01",
+  "skill_id": "C037",
+  "skill_ids": [
+    "C037",
+    "D024",
+    "C017"
+  ],
+  "school_level": "4e",
+  "title": "La récolte de l'apiculteur",
+  "contexte": "Marc est apiculteur. Cette année, ses 12 ruches ont produit 48 kg de miel.\n\nIl vend d'abord les $\\frac{3}{8}$ de sa récolte à une coopérative, qui lui paie le miel 4,50 € le kilogramme. Il garde ensuite le cinquième de ce qui reste pour sa famille. Tout le miel restant est mis en pots de $\\frac{3}{4}$ de kg, qu'il vend 7 € pièce au marché du samedi, de 8 h à 13 h.\n\nL'an dernier, la récolte avait été moins bonne : le miel mis en pots représentait les $\\frac{5}{6}$ de la récolte, soit 35 kg.",
+  "image": null,
+  "duree_estimee_min": 18,
+  "questions": [
+    {
+      "key": "q1",
+      "skill_id": "C037",
+      "statement": "D'après le texte, Marc garde pour sa famille le cinquième de quelle quantité de miel ?",
+      "type": "qcm",
+      "choices": [
+        {
+          "key": "a",
+          "text": "De toute la récolte (48 kg)",
+          "misconception": "C'est l'erreur classique : le cinquième porte sur ce qui reste après la vente à la coopérative, pas sur toute la récolte."
+        },
+        {
+          "key": "b",
+          "text": "Du miel qui reste après la vente à la coopérative",
+          "misconception": null
+        },
+        {
+          "key": "c",
+          "text": "Du miel mis en pots",
+          "misconception": "Le miel mis en pots est ce qui reste après la part de la famille : il vient après, il ne peut pas servir à la calculer."
+        }
+      ],
+      "answer": {
+        "value": "b"
+      },
+      "points": 1,
+      "solution_steps": [
+        "Le texte dit : « Il garde ensuite le cinquième de ce qui reste ». Ce qui reste, c'est le miel qui n'a pas été vendu à la coopérative.",
+        "Le cinquième porte donc sur le reste après la coopérative, pas sur toute la récolte."
+      ],
+      "hint": "Relis la phrase qui parle de la famille : le cinquième de quoi ?"
+    },
+    {
+      "key": "q2",
+      "skill_id": "D024",
+      "statement": "Quelle somme la coopérative paie-t-elle à Marc ?",
+      "type": "numerique",
+      "answer": {
+        "value": 81,
+        "unit": "€"
+      },
+      "points": 2,
+      "solution_steps": [
+        "Masse vendue à la coopérative : $\\frac{3}{8} \\times 48 = \\frac{3 \\times 48}{8} = \\frac{144}{8} = 18$ kg (ou : 48 ÷ 8 = 6, puis 3 × 6 = 18).",
+        "Prix : 18 × 4,50 = 81.",
+        "La coopérative paie **81 €** à Marc."
+      ],
+      "hint": "Calcule d'abord la masse de miel vendue à la coopérative."
+    },
+    {
+      "key": "q3",
+      "skill_id": "C037",
+      "statement": "Quelle fraction de la récolte Marc garde-t-il pour sa famille ? Écris ta réponse sous la forme numérateur/dénominateur.",
+      "type": "texte",
+      "answer": {
+        "value": "1/8",
+        "accepted": [
+          "2/16",
+          "3/24",
+          "4/32",
+          "5/40",
+          "6/48",
+          "0,125"
+        ]
+      },
+      "points": 3,
+      "solution_steps": [
+        "Après la coopérative, il reste $1 - \\frac{3}{8} = \\frac{5}{8}$ de la récolte.",
+        "La famille reçoit le cinquième de ce reste : $\\frac{1}{5} \\times \\frac{5}{8} = \\frac{5}{40} = \\frac{1}{8}$.",
+        "Marc garde $\\frac{1}{8}$ de la récolte pour sa famille, soit $\\frac{1}{8} \\times 48 = 6$ kg.",
+        "Attention : répondre $\\frac{1}{5}$, c'est prendre le cinquième de toute la récolte au lieu du cinquième du reste."
+      ],
+      "hint": "Quelle fraction de la récolte reste-t-il après la coopérative ?"
+    },
+    {
+      "key": "q4",
+      "skill_id": "C017",
+      "statement": "On admet qu'il reste 24 kg de miel à mettre en pots. Combien de pots Marc remplit-il ?",
+      "type": "numerique",
+      "answer": {
+        "value": 32,
+        "unit": "pots"
+      },
+      "points": 3,
+      "solution_steps": [
+        "On cherche combien de fois $\\frac{3}{4}$ de kg est contenu dans 24 kg : on calcule $24 \\div \\frac{3}{4}$.",
+        "Diviser par $\\frac{3}{4}$, c'est multiplier par son inverse $\\frac{4}{3}$ : $24 \\times \\frac{4}{3} = \\frac{96}{3} = 32$.",
+        "Marc remplit **32 pots**. Vérification : $32 \\times \\frac{3}{4} = \\frac{96}{4} = 24$ kg."
+      ],
+      "hint": "Diviser par une fraction, c'est multiplier par son inverse."
+    },
+    {
+      "key": "q5",
+      "skill_id": "C037",
+      "statement": "Quelle était la masse de la récolte de l'an dernier ?",
+      "type": "numerique",
+      "answer": {
+        "value": 42,
+        "unit": "kg"
+      },
+      "points": 3,
+      "solution_steps": [
+        "Les $\\frac{5}{6}$ de la récolte de l'an dernier valent 35 kg.",
+        "Un sixième de la récolte vaut donc 35 ÷ 5 = 7 kg.",
+        "La récolte entière, ce sont six sixièmes : 6 × 7 = 42 kg. On peut aussi calculer $35 \\div \\frac{5}{6} = 35 \\times \\frac{6}{5} = 42$.",
+        "La récolte de l'an dernier était de **42 kg**. Vérification : $\\frac{5}{6} \\times 42 = 35$ kg, et c'est bien moins que les 48 kg de cette année."
+      ],
+      "hint": "Que vaut un sixième de la récolte ?"
+    }
+  ],
+  "review_status": "relu_agent",
+  "programme_ref": "Cycle 4, classe de 4e, Nombres et calculs, Nombres rationnels, Objectifs d'apprentissage : « Résoudre des problèmes mobilisant les opérations sur les fractions : addition, soustraction, multiplication, division, inverse. »"
+}
