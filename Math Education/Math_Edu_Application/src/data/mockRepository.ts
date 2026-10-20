@@ -39,6 +39,7 @@ import type {
   ModificationEnAttente,
   Profile,
   Rappel,
+  CourseOffer,
 } from '@/types/domain'
 
 const STORAGE_KEY = 'racine.session.v2'
@@ -401,6 +402,7 @@ export const mockRepository: DataRepository = {
     const cat = catalogueCourant()
     const crees: AvailabilitySlot[] = slots.map((slot) => ({
       ...slot,
+      offer_id: slot.offer_id ?? null,
       id: newId(),
       places_prises: 0,
     }))
@@ -529,6 +531,59 @@ export const mockRepository: DataRepository = {
     exigerSession()
     if (rappelMock) rappelMock = { ...rappelMock, etat: 'arrete', motif_arret: 'eleve' }
     return wait(rappelMock)
+  },
+
+  async saveOffer(offre, id) {
+    const session = exigerSession()
+    const cat = catalogueCourant()
+    const enregistree: CourseOffer = { ...offre, id: id ?? newId(), prof_id: session.profile.id }
+    catalogue = {
+      ...cat,
+      offers: id ? cat.offers.map((o) => (o.id === id ? enregistree : o)) : [...cat.offers, enregistree],
+    }
+    persister()
+    return wait(enregistree)
+  },
+
+  async deleteOffer(id) {
+    exigerSession()
+    const cat = catalogueCourant()
+    catalogue = {
+      ...cat,
+      offers: cat.offers.filter((o) => o.id !== id),
+      slots: cat.slots.map((s) => (s.offer_id === id ? { ...s, offer_id: null } : s)),
+    }
+    persister()
+    await wait(undefined)
+  },
+
+  async saveProfilProf(profil) {
+    const session = exigerSession()
+    const cat = catalogueCourant()
+    catalogue = { ...cat, teachers: cat.teachers.map((t) => (t.id === session.profile.id ? { ...t, ...profil } : t)) }
+    persister()
+    await wait(undefined)
+  },
+
+  async getInscrits(slotId) {
+    const session = exigerSession()
+    // Demonstration : les inscrits sont les reservations simulees, nommees.
+    return wait(
+      session.bookings
+        .filter((b) => b.slot_id === slotId)
+        .map((b) => ({ eleve_id: b.eleve_id, prenom: b.eleve_id === 'eleve-lea' ? 'Léa' : 'Élève', partage: true, skill_id: b.skill_id })),
+    )
+  },
+
+  async getLienVisio(slotId) {
+    exigerSession()
+    // Un lien fictif : en demonstration, aucune salle n'est reservee.
+    return wait(`https://meet.jit.si/Racine-demo-${slotId.replace(/[^a-z0-9]/gi, '').slice(0, 12)}`)
+  },
+
+  async getProgressionEleve() {
+    exigerSession()
+    return wait(null)
   },
 
   async lireLienRappel() {

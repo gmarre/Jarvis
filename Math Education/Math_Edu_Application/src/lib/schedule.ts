@@ -98,3 +98,11 @@ export function startBlock(
   if (taken.some((other) => overlaps(minutes, other, durationMin))) return 'chevauche'
   return null
 }
+
+/** « 45 min », « 1 h », « 1 h 30 » : une duree de cours lisible. */
+export function dureeLisible(minutes: number): string {
+  if (minutes < 60) return `${minutes} min`
+  const h = Math.floor(minutes / 60)
+  const m = minutes % 60
+  return m === 0 ? `${h} h` : `${h} h ${m}`
+}

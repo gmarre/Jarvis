@@ -1,4 +1,5 @@
 import { useMemo, useState } from 'react'
+import { Link } from 'react-router-dom'
 
 import { cn } from '@/lib/cn'
 import {
@@ -20,6 +21,7 @@ import { Card, CardTitle, SectionLabel } from '@/components/ui/Card'
 import { Checkbox } from '@/components/ui/Field'
 import { Avatar, EmptyState, Notice } from '@/components/ui/Misc'
 import { IconChevronLeft, IconChevronRight, IconVideo } from '@/components/ui/icons'
+import { LienVisio } from '@/components/cours/LienVisio'
 import { useAuthenticatedSession } from '@/state/session'
 import { useBookings, useSlots, type EnrichedSlot } from '@/state/useBookings'
 import { useDailyPlan } from '@/state/usePlan'
@@ -36,7 +38,7 @@ import { useDailyPlan } from '@/state/usePlan'
 const DAYS_SHOWN = 7
 
 export default function SchedulePage() {
-  const { session, bookSlot, cancelBooking } = useAuthenticatedSession()
+  const { session, catalog, bookSlot, cancelBooking } = useAuthenticatedSession()
   const plan = useDailyPlan()
   const { upcoming } = useBookings()
 
@@ -373,9 +375,13 @@ export default function SchedulePage() {
                       size="lg"
                     />
                     <div className="min-w-0">
-                      <p className="truncate text-[13.5px] font-semibold text-ink">
+                      {/* Le profil public (sprint 3) : experience, methode, offres. */}
+                      <Link
+                        to={`/profs/${selected.teacher.id}`}
+                        className="block truncate text-[13.5px] font-semibold text-accent hover:text-accent-600"
+                      >
                         {selected.teacher.nom_court}
-                      </p>
+                      </Link>
                       <p className="truncate text-[11.5px] text-ink-faint">
                         {selected.teacher.titre} · {selected.teacher.note} ★ ·{' '}
                         {selected.teacher.nb_cours} cours
@@ -388,6 +394,10 @@ export default function SchedulePage() {
                       label={`${formatWeekday(selected.slot.start_at)} ${formatDateShort(selected.slot.start_at)}`}
                       value={formatTimeRange(selected.slot.start_at, selected.slot.duree_min)}
                     />
+                    {(() => {
+                      const offre = catalog.offers.find((o) => o.id === selected.slot.offer_id)
+                      return offre ? <DetailLine label="Cours" value={offre.titre} /> : null
+                    })()}
                     <DetailLine label="Format" value="Visio" />
                     <DetailLine
                       label="Places"
@@ -404,6 +414,7 @@ export default function SchedulePage() {
 
                   {selected.isBooked ? (
                     <>
+                      <LienVisio slotId={selected.slot.id} />
                       <div className="mb-2 flex items-center justify-center gap-2 rounded-xl bg-muted py-3.5 text-[13.5px] font-semibold text-ink-faint">
                         <IconVideo size={16} />
                         Déjà réservé
@@ -453,9 +464,12 @@ export default function SchedulePage() {
                           size="sm"
                         />
                         <div className="min-w-0 flex-1">
-                          <p className="truncate text-[12.5px] font-semibold text-ink">
+                          <Link
+                            to={`/profs/${teacher.id}`}
+                            className="block truncate text-[12.5px] font-semibold text-accent hover:text-accent-600"
+                          >
                             {teacher.nom_court}
-                          </p>
+                          </Link>
                           <p className="truncate text-[11px] text-ink-faint">
                             {free} créneau{free > 1 ? 'x' : ''} libre{free > 1 ? 's' : ''}
                           </p>

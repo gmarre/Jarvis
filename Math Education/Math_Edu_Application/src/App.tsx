@@ -29,6 +29,9 @@ const WelcomePage = lazy(() => import('@/pages/WelcomePage'))
 const RecettePage = lazy(() => import('@/pages/RecettePage'))
 const AccordPage = lazy(() => import('@/pages/AccordPage'))
 const RappelPage = lazy(() => import('@/pages/RappelPage'))
+const TeacherAgendaPage = lazy(() => import('@/pages/TeacherAgendaPage'))
+const StudentGraphPage = lazy(() => import('@/pages/StudentGraphPage'))
+const TeacherPublicPage = lazy(() => import('@/pages/TeacherPublicPage'))
 
 /** Accueil propre a chaque role. */
 function homeFor(role: UserRole): string {
@@ -180,6 +183,30 @@ export default function App() {
           element={
             <RequireAuth roles={PROF}>
               <TeacherSchedulePage />
+            </RequireAuth>
+          }
+        />
+        <Route
+          path="/prof/agenda"
+          element={
+            <RequireAuth roles={PROF}>
+              <TeacherAgendaPage />
+            </RequireAuth>
+          }
+        />
+        <Route
+          path="/prof/eleves/:eleveId"
+          element={
+            <RequireAuth roles={PROF}>
+              <StudentGraphPage />
+            </RequireAuth>
+          }
+        />
+        <Route
+          path="/profs/:profId"
+          element={
+            <RequireAuth roles={ELEVE}>
+              <TeacherPublicPage />
             </RequireAuth>
           }
         />

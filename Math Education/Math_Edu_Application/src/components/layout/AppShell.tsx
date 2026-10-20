@@ -37,6 +37,7 @@ const STUDENT_NAV: NavItem[] = [
 ]
 
 const TEACHER_NAV: NavItem[] = [
+  { to: '/prof/agenda', label: 'Mon agenda', shortLabel: 'Agenda', icon: IconWorkspace },
   { to: '/prof/cours', label: 'Mes créneaux', shortLabel: 'Créneaux', icon: IconCalendar },
   { to: '/profil', label: 'Mon profil', shortLabel: 'Profil', icon: IconUser },
 ]

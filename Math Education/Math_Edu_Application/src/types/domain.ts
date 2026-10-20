@@ -189,6 +189,44 @@ export interface Teacher {
   nb_cours: number
   /** Domaines du DAG couverts par ce professeur. */
   domaines: string[]
+  /** Profil public (migration 0018). */
+  experience: string
+  methode: string
+  /** Classes enseignees (CP a 3e). */
+  niveaux: string[]
+  /** Verifie par l'administrateur : seul un professeur verifie est visible des eleves. */
+  verifie: boolean
+}
+
+/** Ce que le professeur ecrit de son profil public. */
+export type ProfilProf = Pick<Teacher, 'titre' | 'experience' | 'methode' | 'niveaux' | 'domaines'>
+
+/** Table `course_offers` (migration 0018) : un type de cours propose par un professeur. */
+export interface CourseOffer {
+  id: string
+  prof_id: string
+  titre: string
+  description: string
+  skill_ids: string[]
+  niveau: string
+  /** 30 a 120 minutes. */
+  duree_min: number
+  /** 3 eleves au plus. */
+  places: number
+  /** Prix affiche, non encaisse pendant la beta. */
+  prix_eur: number
+  active: boolean
+}
+
+export type NewCourseOffer = Omit<CourseOffer, 'id' | 'prof_id'>
+
+/** Un eleve inscrit a un creneau, vu par son professeur (inscrits_du_creneau). */
+export interface Inscrit {
+  eleve_id: string
+  prenom: string
+  /** L'eleve partage sa progression : le professeur peut voir son graphe. */
+  partage: boolean
+  skill_id: string | null
 }
 
 /** Table `availability_slots`. */
@@ -203,6 +241,8 @@ export interface AvailabilitySlot {
   places_prises: number
   prix_eur: number
   domaines: string[]
+  /** Offre de cours dont le creneau est issu (migration 0018), null pour un cours libre. */
+  offer_id: string | null
 }
 
 /** Table `bookings`. */

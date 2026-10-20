@@ -5,6 +5,7 @@ import type { ProgressMap } from '@/lib/dag'
 import type { Correction } from '@/lib/exercise'
 import type { Flashcard, PublicExercise } from '@/types/content'
 import type {
+  CourseOffer,
   AccordPublic,
   ChampModifiable,
   ModificationEnAttente,
@@ -130,7 +131,13 @@ export interface SessionValue {
    * Ouverture de creneaux par un professeur (ecran 7, vue prof). `starts` en
    * minutes depuis minuit, au quart d'heure : 555 vaut 9h15.
    */
-  openSlots: (dayIso: string, starts: number[], domaines: string[]) => void
+  /**
+   * Ouvre des creneaux ce jour-la, aux debuts donnes (minutes depuis minuit).
+   * Avec une offre : duree, places et prix sont les siens (trigger de 0018).
+   */
+  openSlots: (dayIso: string, starts: number[], domaines: string[], offre?: CourseOffer) => void
+  /** Relit le catalogue (offres, creneaux) apres une modification du professeur. */
+  rechargerCatalogue: () => Promise<void>
 }
 
 export const SessionContext = createContext<SessionValue | null>(null)

@@ -6,6 +6,7 @@ import { ageFrom, estMineur, needsParentalConsent } from '@/lib/age'
 import { ConnexionCard } from '@/components/compte/ConnexionCard'
 import { ConsentementNotice } from '@/components/compte/ConsentementNotice'
 import { RythmeCard } from '@/components/compte/RythmeCard'
+import { ProfilPublicCard } from '@/components/prof/ProfilPublicCard'
 import type { ModificationEnAttente } from '@/types/domain'
 import { AppShell, PageBody, PageHeader } from '@/components/layout/AppShell'
 import { Button, ButtonLink } from '@/components/ui/Button'
@@ -357,6 +358,7 @@ export default function ProfilePage() {
             {isStudent && <SubscriptionCard abonnement={profile.abonnement} />}
 
             {isStudent && <RythmeCard />}
+            {profile.role === 'prof' && <ProfilPublicCard />}
 
             <ConnexionCard onDemandeEnvoyee={relireEnAttente} />
 

@@ -4,6 +4,7 @@ import { domains } from '@/content'
 import { cn } from '@/lib/cn'
 import { formatDateShort, formatWeekday, isSameDay } from '@/lib/format'
 import {
+  dureeLisible,
   formatMinutes,
   isPastStart,
   minutesOf,
@@ -19,6 +20,7 @@ import { Card, CardTitle, SectionLabel } from '@/components/ui/Card'
 import { Field, Select } from '@/components/ui/Field'
 import { Notice } from '@/components/ui/Misc'
 import { IconCheck, IconClose, IconPlus } from '@/components/ui/icons'
+import { OffresCard } from '@/components/prof/OffresCard'
 import { useSession } from '@/state/session'
 
 // Ecran 7, vue professeur (maquette 1n, panneau de droite).
@@ -50,6 +52,13 @@ export default function TeacherSchedulePage() {
   const [draftStart, setDraftStart] = useState<number | null>(null)
   const [selectedDomains, setSelectedDomains] = useState<string[]>(['C', 'A'])
   const [published, setPublished] = useState<number | null>(null)
+  /** Offre choisie pour les creneaux a publier ; vide : cours libre de 1 h 30. */
+  const [offreId, setOffreId] = useState('')
+
+  const mesOffres = catalog.offers.filter((o) => o.prof_id === profile?.id)
+  const offre = mesOffres.find((o) => o.id === offreId)
+  // La duree vient de l'offre : elle sert au controle des chevauchements.
+  const duree = offre?.duree_min ?? DUREE_MIN
 
   // A partir d'aujourd'hui : un professeur ne publie pas sur un jour passe.
   const days = useMemo(() => publishableDays(new Date(), DAYS_AHEAD), [])
@@ -70,7 +79,7 @@ export default function TeacherSchedulePage() {
   // Un debut est bloque s'il est passe, ou s'il chevauche un creneau deja ouvert
   // ou deja choisi : un professeur ne donne pas deux cours a la fois.
   const blockOf = (minutes: number) =>
-    startBlock(day, minutes, new Date(), [...openStarts, ...selectedStarts], DUREE_MIN)
+    startBlock(day, minutes, new Date(), [...openStarts, ...selectedStarts], duree)
 
   const firstFree = STARTS.find((minutes) => blockOf(minutes) === null) ?? null
   const draft = draftStart !== null && blockOf(draftStart) === null ? draftStart : firstFree
@@ -102,7 +111,7 @@ export default function TeacherSchedulePage() {
 
   const publish = () => {
     if (startsToPublish.length === 0) return
-    openSlots(day.toISOString(), startsToPublish, selectedDomains)
+    openSlots(day.toISOString(), startsToPublish, selectedDomains, offre)
     setPublished(startsToPublish.length)
     setSelectedStarts([])
     window.setTimeout(() => setPublished(null), 4000)
@@ -113,7 +122,7 @@ export default function TeacherSchedulePage() {
       <PageBody className="max-w-[900px]">
         <PageHeader
           title="Ouvrir des créneaux"
-          subtitle="Les élèves dont les lacunes correspondent à tes domaines les verront en priorité. 20 € pour 1h30, jusqu'à 3 élèves."
+          subtitle="Choisis une de tes offres de cours (ou un cours libre de 1 h 30), puis tes horaires. Les élèves dont les lacunes correspondent les verront en priorité."
         />
 
         {published !== null && (
@@ -141,9 +150,23 @@ export default function TeacherSchedulePage() {
                   ))}
                 </Select>
               </Field>
-              <Field label="Durée" htmlFor="duree">
-                <Select id="duree" defaultValue={DUREE_MIN} disabled>
-                  <option value={DUREE_MIN}>1h30 · jusqu'à 3 élèves</option>
+              <Field label="Type de cours" htmlFor="offre">
+                <Select
+                  id="offre"
+                  value={offreId}
+                  onChange={(event) => {
+                    setOffreId(event.target.value)
+                    // La duree change : les debuts choisis ne tiennent peut-etre plus.
+                    setSelectedStarts([])
+                    setDraftStart(null)
+                  }}
+                >
+                  <option value="">Cours libre · 1 h 30 · 3 élèves · {PRIX_EUR} €</option>
+                  {mesOffres.map((o) => (
+                    <option key={o.id} value={o.id}>
+                      {o.titre} · {dureeLisible(o.duree_min)} · {o.places} élève{o.places > 1 ? 's' : ''} · {o.prix_eur} €
+                    </option>
+                  ))}
                 </Select>
               </Field>
             </div>
@@ -166,7 +189,7 @@ export default function TeacherSchedulePage() {
                         : block && BLOCK_LABEL[block]
                     return (
                       <option key={minutes} value={minutes} disabled={block !== null}>
-                        {formatMinutes(minutes)} – {formatMinutes(minutes + DUREE_MIN)}
+                        {formatMinutes(minutes)} – {formatMinutes(minutes + duree)}
                         {reason && ` · ${reason}`}
                       </option>
                     )
@@ -196,15 +219,15 @@ export default function TeacherSchedulePage() {
                     aria-label={`Retirer ${formatMinutes(minutes)}`}
                     className="inline-flex min-h-[44px] items-center gap-2 rounded-[10px] bg-accent px-4 text-[12.5px] font-semibold text-white transition hover:bg-accent-600"
                   >
-                    {formatMinutes(minutes)} – {formatMinutes(minutes + DUREE_MIN)}
+                    {formatMinutes(minutes)} – {formatMinutes(minutes + duree)}
                     <IconClose size={13} />
                   </button>
                 ))
               )}
             </div>
 
-            <SectionLabel className="mb-2.5">Domaines couverts</SectionLabel>
-            <div className="mb-5 flex flex-wrap gap-2">
+            {!offre && <SectionLabel className="mb-2.5">Domaines couverts</SectionLabel>}
+            <div className={cn('mb-5 flex flex-wrap gap-2', offre && 'hidden')}>
               {domains.map((domain) => {
                 const active = selectedDomains.includes(domain.id)
                 return (
@@ -229,10 +252,12 @@ export default function TeacherSchedulePage() {
             <div className="mb-5 flex items-center justify-between gap-4 rounded-xl border border-divider bg-canvas px-3.5 py-3">
               <div>
                 <p className="text-[12.5px] font-semibold leading-snug text-ink">
-                  {PRIX_EUR} € pour 1h30
+                  {offre ? `${offre.prix_eur} € pour ${dureeLisible(offre.duree_min)}` : `${PRIX_EUR} € pour 1 h 30`}
                 </p>
                 <p className="text-[11px] leading-relaxed text-ink-faint">
-                  Tarif fixé par la plateforme, commission incluse
+                  {offre
+                    ? 'Prix affiché de ton offre ; rien n’est encaissé pendant la bêta'
+                    : 'Tarif fixé par la plateforme, commission incluse'}
                 </p>
               </div>
             </div>
@@ -251,6 +276,8 @@ export default function TeacherSchedulePage() {
           </Card>
 
           <div className="flex flex-col gap-5">
+            <OffresCard />
+
             <Card>
               <CardTitle>
                 Mes créneaux · {formatWeekday(day.toISOString())} {formatDateShort(day.toISOString())}
@@ -274,9 +301,11 @@ export default function TeacherSchedulePage() {
                             {formatMinutes(minutesOf(new Date(slot.start_at)) + slot.duree_min)}
                           </p>
                           <p className="text-[11.5px] text-ink-faint">
-                            {slot.domaines
-                              .map((id) => domains.find((d) => d.id === id)?.name ?? id)
-                              .join(' · ') || 'Tous domaines'}
+                            {mesOffres.find((o) => o.id === slot.offer_id)?.titre ??
+                              (slot.domaines
+                                .map((id) => domains.find((d) => d.id === id)?.name ?? id)
+                                .join(' · ') ||
+                                'Tous domaines')}
                           </p>
                         </div>
                         <Badge tone={full ? 'neutral' : 'mastered'} dot={!full}>

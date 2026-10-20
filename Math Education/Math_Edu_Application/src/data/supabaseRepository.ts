@@ -42,6 +42,8 @@ import type {
   RappelPublic,
   SkillProgress,
   Teacher,
+  CourseOffer,
+  Inscrit,
 } from '@/types/domain'
 
 // =============================================================================
@@ -629,6 +631,8 @@ export const supabaseRepository: DataRepository = {
           capacite: slot.capacite,
           prix_eur: slot.prix_eur,
           domaines: slot.domaines,
+          // Le trigger de 0018 reprend duree, places et prix de l'offre.
+          ...(slot.offer_id ? { offer_id: slot.offer_id } : {}),
         })),
         // Republier un horaire deja ouvert ne doit pas etre une erreur.
         { onConflict: 'prof_id,start_at', ignoreDuplicates: true },
@@ -636,7 +640,59 @@ export const supabaseRepository: DataRepository = {
       .select('*')
 
     if (error) throw erreur('Ouverture des creneaux', error)
-    return (data ?? []).map((slot) => ({ ...slot, places_prises: 0 }) as AvailabilitySlot)
+    return (data ?? []).map((slot) => ({ ...slot, offer_id: slot.offer_id ?? null, places_prises: 0 }) as AvailabilitySlot)
+  },
+
+  async saveOffer(offre, id) {
+    const db = requireSupabase()
+    const { data: utilisateur } = await db.auth.getUser()
+    if (!utilisateur.user) throw new RepositoryError('Aucune session ouverte')
+    const requete = id
+      ? db.from('course_offers').update(offre).eq('id', id).select('*').single()
+      : db.from('course_offers').insert({ ...offre, prof_id: utilisateur.user.id }).select('*').single()
+    const { data, error } = await requete
+    if (error) throw erreur("Enregistrement de l'offre", error)
+    return data as CourseOffer
+  },
+
+  async deleteOffer(id) {
+    const db = requireSupabase()
+    const { error } = await db.from('course_offers').delete().eq('id', id)
+    if (error) throw erreur("Suppression de l'offre", error)
+  },
+
+  async saveProfilProf(profil) {
+    const db = requireSupabase()
+    const { data: utilisateur } = await db.auth.getUser()
+    if (!utilisateur.user) throw new RepositoryError('Aucune session ouverte')
+    const { error } = await db.from('teachers').update(profil).eq('id', utilisateur.user.id)
+    if (error) throw erreur('Enregistrement du profil public', error)
+  },
+
+  async getInscrits(slotId) {
+    const db = requireSupabase()
+    const { data, error } = await db.rpc('inscrits_du_creneau', { creneau: slotId })
+    if (error) throw erreur('Lecture des inscrits', error)
+    return (data ?? []) as Inscrit[]
+  },
+
+  async getLienVisio(slotId) {
+    const db = requireSupabase()
+    const { data, error } = await db.from('seances_visio').select('lien').eq('slot_id', slotId).maybeSingle()
+    if (error) {
+      if (['42P01', 'PGRST205'].includes(error.code)) return null
+      throw erreur('Lecture du lien de visio', error)
+    }
+    return (data?.lien as string | undefined) ?? null
+  },
+
+  async getProgressionEleve(eleveId) {
+    const db = requireSupabase()
+    // La RLS (peut_lire_eleve) ne rend des lignes que si l'eleve partage.
+    const { data, error } = await db.from('skill_progress').select('*').eq('user_id', eleveId)
+    if (error) throw erreur("Lecture de la progression de l'eleve", error)
+    if (!data || data.length === 0) return null
+    return versProgression(data as LigneProgression[])
   },
 
   async aUnMotDePasse() {
@@ -760,14 +816,24 @@ export const supabaseRepository: DataRepository = {
   async getCatalog(): Promise<Catalog> {
     const db = requireSupabase()
 
-    const [professeurs, creneaux] = await Promise.all([
+    const [professeurs, creneaux, offres, rattachements] = await Promise.all([
       db.from('teachers').select('*, profiles!inner(prenom)'),
       // La vue, pas la table : places_prises y est calcule depuis bookings.
       db.from('slots_disponibles').select('*').order('start_at', { ascending: true }),
+      db.from('course_offers').select('*').eq('active', true).order('cree_le', { ascending: true }),
+      // offer_id n'est pas dans la vue (0001 et 0004 doivent rester rejouables).
+      db.from('availability_slots').select('id, offer_id'),
     ])
 
     if (professeurs.error) throw erreur('Lecture des professeurs', professeurs.error)
     if (creneaux.error) throw erreur('Lecture des creneaux', creneaux.error)
+    // Migration 0018 pas encore appliquee : ni offre ni rattachement, le
+    // catalogue reste celui d'avant.
+    const absente = (e: PostgrestError | null) => e !== null && ['42P01', 'PGRST205', '42703'].includes(e.code)
+    if (offres.error && !absente(offres.error)) throw erreur('Lecture des offres', offres.error)
+    const offreDe = new Map<string, string | null>(
+      rattachements.error ? [] : (rattachements.data ?? []).map((l) => [l.id as string, (l.offer_id as string | null) ?? null]),
+    )
 
     const teachers: Teacher[] = (professeurs.data ?? []).map((ligne) => {
       const joint = ligne as { profiles?: { prenom?: string } | { prenom?: string }[] }
@@ -780,10 +846,19 @@ export const supabaseRepository: DataRepository = {
         note: ligne.note ?? 0,
         nb_cours: ligne.nb_cours,
         domaines: ligne.domaines ?? [],
+        experience: ligne.experience ?? '',
+        methode: ligne.methode ?? '',
+        niveaux: ligne.niveaux ?? [],
+        // Avant 0018, aucune verification n'existe : tous visibles comme avant.
+        verifie: ligne.verifie_le === undefined ? true : ligne.verifie_le !== null,
       }
     })
 
-    return { teachers, slots: (creneaux.data ?? []) as AvailabilitySlot[] }
+    const slots = ((creneaux.data ?? []) as Omit<AvailabilitySlot, 'offer_id'>[]).map((slot) => ({
+      ...slot,
+      offer_id: offreDe.get(slot.id) ?? null,
+    }))
+    return { teachers, slots, offers: offres.error ? [] : ((offres.data ?? []) as CourseOffer[]) }
   },
 
   async getRecette() {

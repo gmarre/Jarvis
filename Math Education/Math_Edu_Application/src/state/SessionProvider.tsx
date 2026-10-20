@@ -29,7 +29,7 @@ import {
 // Le motif est partout le meme : on met l'etat local a jour tout de suite pour
 // que l'interface reste vive, puis on ecrit. Si l'ecriture echoue, on le dit.
 
-const EMPTY_CATALOG: Catalog = { teachers: [], slots: [] }
+const EMPTY_CATALOG: Catalog = { teachers: [], slots: [], offers: [] }
 
 /** Met en forme un echec d'ecriture, en distinguant refus de regle et panne. */
 function echec(prefixe: string, cause: unknown): SyncError {
@@ -433,7 +433,7 @@ export function SessionProvider({ children }: { children: ReactNode }) {
   )
 
   const openSlots = useCallback<SessionValue['openSlots']>(
-    (dayIso, starts, domaines) => {
+    (dayIso, starts, domaines, offre) => {
       const profId = session?.profile.id
       if (!profId) return
 
@@ -441,10 +441,11 @@ export function SessionProvider({ children }: { children: ReactNode }) {
         return {
           prof_id: profId,
           start_at: atMinutes(new Date(dayIso), minutes).toISOString(),
-          duree_min: 90,
-          capacite: 3,
-          prix_eur: 20,
-          domaines,
+          duree_min: offre?.duree_min ?? 90,
+          capacite: offre?.places ?? 3,
+          prix_eur: offre?.prix_eur ?? 20,
+          domaines: offre ? [...new Set(offre.skill_ids.map((id) => id.slice(0, 1)))].sort() : domaines,
+          offer_id: offre?.id ?? null,
         }
       })
 
@@ -457,6 +458,14 @@ export function SessionProvider({ children }: { children: ReactNode }) {
     },
     [session],
   )
+
+  const rechargerCatalogue = useCallback<SessionValue['rechargerCatalogue']>(async () => {
+    try {
+      setCatalog(await repository.getCatalog())
+    } catch (cause) {
+      setSyncError(echec('Le catalogue n’a pas pu être relu.', cause))
+    }
+  }, [])
 
   const value = useMemo<SessionValue>(
     () => ({
@@ -491,6 +500,7 @@ export function SessionProvider({ children }: { children: ReactNode }) {
       lireAccord,
       repondreAccord,
       openSlots,
+      rechargerCatalogue,
     }),
     [
       status,
@@ -523,6 +533,7 @@ export function SessionProvider({ children }: { children: ReactNode }) {
       lireAccord,
       repondreAccord,
       openSlots,
+      rechargerCatalogue,
     ],
   )
 

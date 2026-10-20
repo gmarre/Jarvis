@@ -37,6 +37,10 @@ function teacherFor(catalog: Catalog, profId: string): Teacher {
     note: 0,
     nb_cours: 0,
     domaines: [],
+  experience: '',
+  methode: '',
+  niveaux: [],
+  verifie: false,
   }
 }
 

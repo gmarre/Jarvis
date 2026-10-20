@@ -20,6 +20,7 @@ import type {
   Profile,
   SkillProgress,
   Teacher,
+  CourseOffer,
 } from '@/types/domain'
 
 /** Competence visee par Lea : celle vue en classe en ce moment. */
@@ -134,6 +135,10 @@ export const teachers: Teacher[] = [
     note: 4.9,
     nb_cours: 128,
     domaines: ['C', 'A'],
+    experience: '12 ans en collège, dont 6 en réseau d’éducation prioritaire.',
+    methode: 'Partir de ce que l’élève sait déjà, puis un exercice à la fois.',
+    niveaux: ['6e', '5e', '4e', '3e'],
+    verifie: true,
   },
   {
     id: 'prof-sarah',
@@ -143,6 +148,10 @@ export const teachers: Teacher[] = [
     note: 4.8,
     nb_cours: 94,
     domaines: ['B', 'A'],
+    experience: '',
+    methode: '',
+    niveaux: ['CM1', 'CM2', '6e'],
+    verifie: true,
   },
   {
     id: 'prof-ines',
@@ -152,6 +161,10 @@ export const teachers: Teacher[] = [
     note: 4.7,
     nb_cours: 41,
     domaines: ['C'],
+    experience: '',
+    methode: '',
+    niveaux: ['5e', '4e'],
+    verifie: true,
   },
 ]
 
@@ -192,6 +205,7 @@ function buildSlots(now: Date): AvailabilitySlot[] {
       places_prises: taken,
       prix_eur: 20,
       domaines: teacher?.domaines ?? [],
+      offer_id: null,
     })
   }
 
@@ -305,8 +319,9 @@ export function buildNewAccountSnapshot(profile: Profile): MockSnapshot {
 export function buildCatalog(now: Date = new Date()): {
   teachers: Teacher[]
   slots: AvailabilitySlot[]
+  offers: CourseOffer[]
 } {
-  return { teachers, slots: buildSlots(now) }
+  return { teachers, slots: buildSlots(now), offers: [] }
 }
 
 /** Utilitaire de lecture : la progression d'une competence, jamais undefined. */

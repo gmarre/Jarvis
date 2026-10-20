@@ -21,6 +21,10 @@ import type {
   AvailabilitySlot,
   Booking,
   AccordPublic,
+  CourseOffer,
+  Inscrit,
+  NewCourseOffer,
+  ProfilProf,
   ChampModifiable,
   ContentReview,
   ExerciseAttempt,
@@ -85,10 +89,12 @@ export interface ProfileCompletion {
 export interface Catalog {
   teachers: Teacher[]
   slots: AvailabilitySlot[]
+  /** Offres de cours actives des professeurs verifies (et les siennes). */
+  offers: CourseOffer[]
 }
 
 /** Creneau a ouvrir, avant que le serveur ne lui attribue son identifiant. */
-export type NewSlot = Omit<AvailabilitySlot, 'id' | 'places_prises'>
+export type NewSlot = Omit<AvailabilitySlot, 'id' | 'places_prises' | 'offer_id'> & { offer_id?: string | null }
 
 /**
  * Un profil est incomplet tant qu'il manque de quoi construire un parcours.
@@ -156,6 +162,20 @@ export interface DataRepository {
   createBooking(slotId: string, skillId: string | null): Promise<Booking>
   deleteBooking(bookingId: string): Promise<void>
   createSlots(slots: NewSlot[]): Promise<AvailabilitySlot[]>
+
+  // --- Professeur v1 (migration 0018) -------------------------------------
+
+  /** Cree (sans id) ou modifie une offre de cours du professeur connecte. */
+  saveOffer(offre: NewCourseOffer, id?: string): Promise<CourseOffer>
+  deleteOffer(id: string): Promise<void>
+  /** Profil public du professeur connecte. */
+  saveProfilProf(profil: ProfilProf): Promise<void>
+  /** Inscrits d'un creneau du professeur connecte, nommes. */
+  getInscrits(slotId: string): Promise<Inscrit[]>
+  /** Lien de visio d'une seance, pour son professeur et ses inscrits ; null sinon. */
+  getLienVisio(slotId: string): Promise<string | null>
+  /** Progression d'un eleve, si elle est partagee avec le professeur connecte ; null sinon. */
+  getProgressionEleve(eleveId: string): Promise<ProgressMap | null>
 
   // --- Compte et accord parental (migration 0011) ------------------------
 
