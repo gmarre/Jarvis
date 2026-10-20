@@ -1,0 +1,122 @@
+{
+  "id": "SX-P024-01",
+  "skill_id": "P024",
+  "skill_ids": [
+    "P024",
+    "D004",
+    "B008"
+  ],
+  "school_level": "6e",
+  "title": "Le parquet du salon",
+  "contexte": "La famille Martin rénove son salon. La pièce est un rectangle de 8 m de long et 4,75 m de large ; ses murs mesurent 2,5 m de haut.\n\nOn pose du parquet sur tout le sol, sauf sur une plaque carrée de 2 m de côté, devant la cheminée, qui reste carrelée. Un paquet de lames de parquet couvre 3 m² et coûte 39,90 €.\n\nLe long des murs, on fixe des plinthes en bois, sauf devant la porte, qui mesure 0,9 m de large.\n\nLa chambre voisine sera aussi parquetée : il faut 26 m² de parquet pour elle.",
+  "image": null,
+  "duree_estimee_min": 15,
+  "questions": [
+    {
+      "key": "q1",
+      "skill_id": "P024",
+      "statement": "Quel calcul donne l'aire du sol du salon, en m² ?",
+      "type": "qcm",
+      "choices": [
+        {
+          "key": "a",
+          "text": "$2 \\times (8 + 4{,}75)$",
+          "misconception": "Ce calcul donne le périmètre du salon, c'est-à-dire la longueur de son tour, pas son aire."
+        },
+        {
+          "key": "b",
+          "text": "$8 \\times 4{,}75$",
+          "misconception": null
+        },
+        {
+          "key": "c",
+          "text": "$8 + 4{,}75$",
+          "misconception": "L'élève ajoute la longueur et la largeur : cela ne donne ni l'aire ni le périmètre."
+        },
+        {
+          "key": "d",
+          "text": "$8 \\times 2{,}5$",
+          "misconception": "2,5 m est la hauteur des murs : elle ne sert pas pour l'aire du sol."
+        }
+      ],
+      "answer": {
+        "value": "b"
+      },
+      "points": 1,
+      "solution_steps": [
+        "Le sol du salon est un rectangle de longueur $L = 8$ m et de largeur $l = 4{,}75$ m.",
+        "La formule de l'aire d'un rectangle est $A = L \\times l$.",
+        "Le bon calcul est $8 \\times 4{,}75$."
+      ],
+      "hint": "L'aire d'un rectangle se calcule avec sa longueur et sa largeur."
+    },
+    {
+      "key": "q2",
+      "skill_id": "D004",
+      "statement": "Quelle longueur de plinthes faut-il pour le salon ?",
+      "type": "numerique",
+      "answer": {
+        "value": 24.6,
+        "unit": "m",
+        "accepted": [
+          "24,6 m",
+          "24,60",
+          "24,60 m"
+        ]
+      },
+      "points": 2,
+      "solution_steps": [
+        "Le tour du salon : 8 + 4,75 + 8 + 4,75. On pose l'addition en alignant les virgules : 25,50.",
+        "Pas de plinthe devant la porte : 25,50 − 0,90 = 24,60.",
+        "Il faut **24,6 m** de plinthes."
+      ],
+      "hint": "Calcule d'abord le tour complet du salon."
+    },
+    {
+      "key": "q3",
+      "skill_id": "B008",
+      "statement": "Combien de paquets de parquet faut-il acheter pour la chambre ?",
+      "type": "numerique",
+      "answer": {
+        "value": 9,
+        "unit": "paquets",
+        "accepted": [
+          "9 paquets"
+        ]
+      },
+      "points": 2,
+      "solution_steps": [
+        "Un paquet couvre 3 m², et la chambre demande 26 m² de parquet. On divise 26 par 3.",
+        "26 = 3 × 8 + 2 : le quotient est 8 et le reste 2.",
+        "8 paquets ne couvrent que 24 m² ; il manque 2 m², il faut donc un paquet de plus.",
+        "Il faut acheter **9 paquets**."
+      ],
+      "hint": "Pose la division de 26 par 3, puis demande-toi à quoi correspond le reste."
+    },
+    {
+      "key": "q4",
+      "skill_id": "P024",
+      "statement": "Quelle aire de parquet faut-il pour le salon, en m² ?",
+      "type": "numerique",
+      "answer": {
+        "value": 34,
+        "unit": "m²",
+        "accepted": [
+          "34 m²",
+          "34 m2",
+          "34,0"
+        ]
+      },
+      "points": 4,
+      "solution_steps": [
+        "Aire du sol du salon : $A = L \\times l = 8 \\times 4{,}75 = 38$, soit 38 m².",
+        "Aire de la plaque carrée : $A = c \\times c = 2 \\times 2 = 4$, soit 4 m².",
+        "La plaque reste carrelée : 38 − 4 = 34.",
+        "Il faut **34 m²** de parquet pour le salon."
+      ],
+      "hint": "Le parquet couvre tout le sol, sauf la plaque devant la cheminée."
+    }
+  ],
+  "review_status": "relu_agent",
+  "programme_ref": "Cycle 3, classe de 6e, Grandeurs et mesures, Les aires : « Calculer l'aire d'un carré ou d'un rectangle »"
+}

@@ -1,0 +1,113 @@
+{
+  "id": "SX-P027-01",
+  "skill_id": "P027",
+  "skill_ids": [
+    "P027",
+    "D004",
+    "P014"
+  ],
+  "school_level": "6e",
+  "title": "Le voyage vers Montpellier",
+  "contexte": "Cet été, la famille Benali va de Lille à Montpellier. Elle compare trois façons de voyager. La famille compte deux adultes et deux enfants, de 8 et 11 ans.\n\nEn train, le départ de Lille est à 7 h 46 et l'arrivée à Montpellier à 12 h 34. Un billet adulte coûte 89 €.\n\nEn voiture, le GPS annonce 9,75 h de route. La famille prévoit en plus 1,5 h de pauses.\n\nEn avion, le vol décolle à 10 h 45 et dure 1,35 h. Il faut aussi arriver à l'aéroport 2 h avant le décollage.",
+  "image": null,
+  "duree_estimee_min": 15,
+  "questions": [
+    {
+      "key": "q1",
+      "skill_id": "P027",
+      "statement": "Écris en heures et minutes la durée de route annoncée par le GPS.",
+      "type": "texte",
+      "answer": {
+        "value": "9 h 45 min",
+        "accepted": [
+          "9 h 45",
+          "9h45",
+          "9 heures 45 minutes",
+          "9 heures et 45 minutes",
+          "9 h et 45 min"
+        ]
+      },
+      "points": 2,
+      "solution_steps": [
+        "9,75 h, c'est 9 h et 0,75 h.",
+        "0,75 h, ce sont les trois quarts d'une heure. Un quart d'heure dure 15 min, donc 0,75 h = $3 \\times 15 = 45$ min.",
+        "9,75 h = **9 h 45 min**.",
+        "Attention : 9,75 h n'est pas 9 h 75 min, car une heure compte 60 minutes, pas 100."
+      ],
+      "hint": "Quelle part d'une heure représente 0,75 h ?"
+    },
+    {
+      "key": "q2",
+      "skill_id": "D004",
+      "statement": "Combien d'heures le voyage en voiture durerait-il, pauses comprises ? Réponds avec un nombre décimal.",
+      "type": "numerique",
+      "answer": {
+        "value": 11.25,
+        "unit": "h",
+        "accepted": [
+          "11,25 h",
+          "11,25 heures"
+        ]
+      },
+      "points": 2,
+      "solution_steps": [
+        "On ajoute la durée de route et celle des pauses : 9,75 + 1,5.",
+        "On pose l'addition en alignant les virgules : 9,75 + 1,50 = 11,25.",
+        "Le voyage durerait **11,25 h**, c'est-à-dire 11 h 15 min."
+      ],
+      "hint": "Aligne les virgules avant d'additionner."
+    },
+    {
+      "key": "q3",
+      "skill_id": "P014",
+      "statement": "Combien de temps dure le trajet en train ? Réponds en heures et minutes.",
+      "type": "texte",
+      "answer": {
+        "value": "4 h 48 min",
+        "accepted": [
+          "4 h 48",
+          "4h48",
+          "4 heures 48 minutes",
+          "4 heures et 48 minutes",
+          "4 h et 48 min"
+        ]
+      },
+      "points": 2,
+      "solution_steps": [
+        "Le train part à 7 h 46 et arrive à 12 h 34.",
+        "De 7 h 46 à 8 h, il s'écoule 14 min. De 8 h à 12 h, 4 h. De 12 h à 12 h 34, 34 min.",
+        "14 + 34 = 48 : le trajet dure **4 h 48 min**."
+      ],
+      "hint": "Avance jusqu'à l'heure ronde, puis continue."
+    },
+    {
+      "key": "q4",
+      "skill_id": "P027",
+      "statement": "À quelle heure l'avion atterrit-il ? Réponds en heures et minutes.",
+      "type": "texte",
+      "answer": {
+        "value": "12 h 06",
+        "accepted": [
+          "12h06",
+          "12:06",
+          "12 h 06 min",
+          "12 heures 06",
+          "12 heures 06 minutes",
+          "12 h 6",
+          "12h6"
+        ]
+      },
+      "points": 4,
+      "solution_steps": [
+        "Le vol dure 1,35 h, c'est-à-dire 1 h et 0,35 h.",
+        "0,35 h = 0,25 h + 0,1 h. 0,25 h est un quart d'heure : 15 min. 0,1 h est un dixième d'heure : $60 \\div 10 = 6$ min. Donc 0,35 h = 15 + 6 = 21 min : le vol dure 1 h 21 min.",
+        "10 h 45 + 1 h = 11 h 45 ; puis 11 h 45 + 15 min = 12 h ; il reste 21 − 15 = 6 min.",
+        "L'avion atterrit à **12 h 06**.",
+        "Attention : 1,35 h n'est pas 1 h 35 min. Les 2 h à l'aéroport se passent avant le décollage."
+      ],
+      "hint": "Écris d'abord la durée du vol en heures et minutes."
+    }
+  ],
+  "review_status": "relu_agent",
+  "programme_ref": "Cycle 3, classe de 6e, Grandeurs et mesures, Le repérage dans le temps et les durées : « Effectuer des calculs sur des horaires et des durées »"
+}

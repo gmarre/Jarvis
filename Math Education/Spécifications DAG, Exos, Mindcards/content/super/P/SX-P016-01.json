@@ -1,0 +1,145 @@
+{
+  "id": "SX-P016-01",
+  "skill_id": "P016",
+  "skill_ids": [
+    "P016",
+    "B039",
+    "G012"
+  ],
+  "school_level": "CM1",
+  "title": "Le jardin partagé",
+  "contexte": "La mairie de Valmont crée un jardin partagé pour les 120 habitants du quartier. Il ouvrira un samedi matin, à 9 heures.\n\nLe jardin a la forme d'un rectangle. Sa longueur mesure 26 m et son périmètre 84 m.\n\nTout autour du jardin, on pose un grillage, sauf à l'entrée, où l'on installe un portail de 4 m de large. Le grillage est vendu en rouleaux de 10 m.\n\nAu centre du jardin, un massif de roses a la forme d'un losange. Le périmètre de ce massif mesure 20 m.\n\nDans un coin, un bac à sable a la forme d'un carré de 9 m de côté.",
+  "image": null,
+  "duree_estimee_min": 15,
+  "questions": [
+    {
+      "key": "q1",
+      "skill_id": "P016",
+      "statement": "Pour trouver la largeur du jardin, de quelles informations as-tu besoin ?",
+      "type": "qcm",
+      "choices": [
+        {
+          "key": "a",
+          "text": "Le périmètre (84 m) seulement",
+          "misconception": "L'élève fait comme pour un carré et divise le périmètre par 4. Or le jardin est un rectangle : sa longueur et sa largeur ne sont pas égales."
+        },
+        {
+          "key": "b",
+          "text": "Le périmètre (84 m) et la largeur du portail (4 m)",
+          "misconception": "Le portail sert à calculer le grillage, pas les dimensions du jardin."
+        },
+        {
+          "key": "c",
+          "text": "La longueur (26 m) et le périmètre (84 m)",
+          "misconception": null
+        },
+        {
+          "key": "d",
+          "text": "La longueur (26 m) et le périmètre du massif (20 m)",
+          "misconception": "Le massif de roses est une autre figure : son périmètre ne dit rien des côtés du jardin."
+        }
+      ],
+      "answer": {
+        "value": "c"
+      },
+      "points": 1,
+      "solution_steps": [
+        "Le périmètre du jardin, 84 m, est la somme de ses deux longueurs et de ses deux largeurs.",
+        "Connaissant la longueur, 26 m, on peut retrouver la largeur.",
+        "Il faut donc **la longueur (26 m) et le périmètre (84 m)**. Le portail et le massif ne servent pas ici."
+      ],
+      "hint": "Le périmètre d'un rectangle, c'est deux longueurs et deux largeurs."
+    },
+    {
+      "key": "q2",
+      "skill_id": "P016",
+      "statement": "Quelle est la largeur du jardin ?",
+      "type": "numerique",
+      "answer": {
+        "value": 16,
+        "unit": "m",
+        "accepted": [
+          "16 m",
+          "16m",
+          "16 mètres"
+        ]
+      },
+      "points": 3,
+      "solution_steps": [
+        "Le périmètre, 84 m, est formé de deux longueurs et de deux largeurs.",
+        "Les deux longueurs mesurent 26 + 26 = 52 m.",
+        "Les deux largeurs mesurent donc 84 − 52 = 32 m.",
+        "Une largeur mesure 32 ÷ 2 = 16 m.",
+        "La largeur du jardin est **16 m**. Vérification : 26 + 16 + 26 + 16 = 84."
+      ],
+      "hint": "Commence par retirer les deux longueurs du périmètre."
+    },
+    {
+      "key": "q3",
+      "skill_id": "B039",
+      "statement": "Combien de rouleaux de grillage faut-il acheter ?",
+      "type": "numerique",
+      "answer": {
+        "value": 8,
+        "unit": "rouleaux",
+        "accepted": [
+          "8 rouleaux"
+        ]
+      },
+      "points": 2,
+      "solution_steps": [
+        "Le grillage fait tout le tour du jardin, sauf le portail : 84 − 4 = 80 m.",
+        "Un rouleau contient 10 m. On cherche combien de fois 10 dans 80 : 80 ÷ 10 = 8, car 10 × 8 = 80.",
+        "Il faut **8 rouleaux** de grillage."
+      ],
+      "hint": "Calcule d'abord la longueur de grillage, sans le portail."
+    },
+    {
+      "key": "q4",
+      "skill_id": "G012",
+      "statement": "Quelle est la longueur d'un côté du massif de roses ?",
+      "type": "numerique",
+      "answer": {
+        "value": 5,
+        "unit": "m",
+        "accepted": [
+          "5 m",
+          "5m",
+          "5 mètres"
+        ]
+      },
+      "points": 2,
+      "solution_steps": [
+        "Un losange a quatre côtés de même longueur.",
+        "Le périmètre, 20 m, est donc partagé en 4 longueurs égales : 20 ÷ 4 = 5.",
+        "Un côté du massif mesure **5 m**."
+      ],
+      "hint": "Combien de côtés a un losange ? Que sais-tu de leurs longueurs ?"
+    },
+    {
+      "key": "q5",
+      "skill_id": "P016",
+      "statement": "Les enfants voudraient remplacer le bac à sable carré par un bac rectangulaire qui a le même périmètre et qui mesure 11 m de long. Quelle serait sa largeur ?",
+      "type": "numerique",
+      "answer": {
+        "value": 7,
+        "unit": "m",
+        "accepted": [
+          "7 m",
+          "7m",
+          "7 mètres"
+        ]
+      },
+      "points": 3,
+      "solution_steps": [
+        "Le bac carré a 4 côtés de 9 m : son périmètre est 4 × 9 = 36 m.",
+        "Le bac rectangulaire a aussi un périmètre de 36 m. Ses deux longueurs mesurent 11 + 11 = 22 m.",
+        "Ses deux largeurs mesurent 36 − 22 = 14 m, donc une largeur mesure 14 ÷ 2 = 7 m.",
+        "Le bac rectangulaire mesurerait **7 m** de large. Vérification : 11 + 7 + 11 + 7 = 36."
+      ],
+      "hint": "Calcule d'abord le périmètre du bac carré."
+    }
+  ],
+  "review_status": "relu_agent",
+  "programme_ref": "Cycle 3, Cours moyen première année, Grandeurs et mesures, Les longueurs : « Résoudre des problèmes mettant en jeu les longueurs des côtés d'un polygone et son périmètre »"
+}

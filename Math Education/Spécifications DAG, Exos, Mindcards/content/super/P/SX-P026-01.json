@@ -1,0 +1,118 @@
+{
+  "id": "SX-P026-01",
+  "skill_id": "P026",
+  "skill_ids": [
+    "P026",
+    "G020"
+  ],
+  "school_level": "6e",
+  "title": "Les coffrets de cubes en bois",
+  "contexte": "Le magasin de jouets « Petit Génie » vend des cubes en bois de 1 cm d'arête. Ils sont rangés dans des coffrets en forme de pavé, remplis sans trou. Le magasin ouvre à 9 h 30.\n\nLe coffret « Découverte » contient 2 couches de cubes ; chaque couche compte 16 rangées de 20 cubes. Il coûte 14,90 €.\n\nLe coffret « Grande tour » contient 11 couches de cubes ; chaque couche compte 5 rangées de 10 cubes.\n\nEn vitrine, la vendeuse a commencé à construire un pavé avec les mêmes cubes : c'est l'assemblage dessiné. Chaque cube posé repose sur la table ou sur un autre cube, et il n'y a aucun trou caché.",
+  "image": "figures/SX-P026-01",
+  "duree_estimee_min": 15,
+  "questions": [
+    {
+      "key": "q1",
+      "skill_id": "P026",
+      "statement": "Quel est le volume d'un cube en bois du magasin ?",
+      "type": "qcm",
+      "choices": [
+        {
+          "key": "a",
+          "text": "1 cm³",
+          "misconception": null
+        },
+        {
+          "key": "b",
+          "text": "1 cm²",
+          "misconception": "Le cm² est une unité d'aire : il mesure une surface, comme une face du cube, pas la place qu'occupe le cube."
+        },
+        {
+          "key": "c",
+          "text": "6 cm³",
+          "misconception": "L'élève compte les 6 faces du cube. Or un cube de 1 cm d'arête est l'unité de volume : 1 cm³."
+        },
+        {
+          "key": "d",
+          "text": "12 cm",
+          "misconception": "L'élève compte les 12 arêtes du cube : c'est une longueur, pas un volume."
+        }
+      ],
+      "answer": {
+        "value": "a"
+      },
+      "points": 1,
+      "solution_steps": [
+        "Chaque cube en bois a une arête de 1 cm.",
+        "Un cube de 1 cm d'arête a un volume de **1 cm³** : c'est l'unité de volume."
+      ],
+      "hint": "Relis la première phrase."
+    },
+    {
+      "key": "q2",
+      "skill_id": "G020",
+      "statement": "Combien de cubes l'assemblage de la vitrine compte-t-il ?",
+      "type": "numerique",
+      "answer": {
+        "value": 18,
+        "unit": "cubes",
+        "accepted": [
+          "18 cubes"
+        ]
+      },
+      "points": 2,
+      "solution_steps": [
+        "On compte par étages. L'étage du bas est complet sauf une place, devant à droite : 3 rangées de 4 places, moins 1, soit 11 cubes.",
+        "L'étage du haut : 4 cubes sur la rangée du fond, 2 sur la rangée du milieu, 1 sur la rangée de devant, soit 7 cubes.",
+        "11 + 7 = 18 : l'assemblage compte **18 cubes**, dont certains sont cachés."
+      ],
+      "hint": "Compte étage par étage, en pensant aux cubes cachés sous ceux qu'on voit."
+    },
+    {
+      "key": "q3",
+      "skill_id": "P026",
+      "statement": "La vendeuse complète l'assemblage pour obtenir un pavé de 2 couches, sans changer sa longueur ni sa largeur. Quel sera le volume de ce pavé, en cm³ ?",
+      "type": "numerique",
+      "answer": {
+        "value": 24,
+        "unit": "cm³",
+        "accepted": [
+          "24 cm³",
+          "24 cm3"
+        ]
+      },
+      "points": 2,
+      "solution_steps": [
+        "Le pavé terminé a 2 couches ; chaque couche compte 3 rangées de 4 cubes.",
+        "Une couche : 3 × 4 = 12 cubes. Deux couches : 2 × 12 = 24 cubes.",
+        "Chaque cube a un volume de 1 cm³ : le pavé aura un volume de **24 cm³**."
+      ],
+      "hint": "Combien de cubes compte une couche complète ?"
+    },
+    {
+      "key": "q4",
+      "skill_id": "P026",
+      "statement": "Les deux coffrets n'ont pas le même volume. De combien de cm³ leurs volumes diffèrent-ils ?",
+      "type": "numerique",
+      "answer": {
+        "value": 90,
+        "unit": "cm³",
+        "accepted": [
+          "90 cm³",
+          "90 cm3"
+        ]
+      },
+      "points": 4,
+      "solution_steps": [
+        "Coffret Découverte : une couche compte 16 × 20 = 320 cubes ; 2 couches, 2 × 320 = 640 cubes, soit 640 cm³.",
+        "Coffret Grande tour : une couche compte 5 × 10 = 50 cubes ; 11 couches, 11 × 50 = 550 cubes, soit 550 cm³.",
+        "640 − 550 = 90.",
+        "Les volumes diffèrent de **90 cm³** : le coffret Découverte, qui a moins de couches, a le plus grand volume.",
+        "Attention : additionner les nombres (2 + 16 + 20 et 11 + 5 + 10) ne donne pas un volume."
+      ],
+      "hint": "Calcule le volume de chaque coffret, couche par couche."
+    }
+  ],
+  "review_status": "relu_agent",
+  "programme_ref": "Cycle 3, classe de 6e, Grandeurs et mesures, Les volumes : « Comparer des volumes »"
+}

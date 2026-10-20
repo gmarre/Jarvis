@@ -1,0 +1,122 @@
+{
+  "id": "SX-P021-01",
+  "skill_id": "P021",
+  "skill_ids": [
+    "P021",
+    "D014"
+  ],
+  "school_level": "6e",
+  "title": "La course d'orientation",
+  "contexte": "Le collège Jean-Moulin organise une course d'orientation pour ses 112 élèves de 6e. Les départs ont lieu à partir de 9 h 15, toutes les 2 minutes.\n\nLe parcours relie le départ à l'arrivée en passant par trois balises :\ndu départ à la balise 1 : 750 m ;\nde la balise 1 à la balise 2 : 1,4 km ;\nde la balise 2 à la balise 3 : 85 dam ;\nde la balise 3 à l'arrivée : 6 hm.\n\nChaque balise est signalée par un ruban rouge de 45 cm, coupé dans une bobine de 5 m.\n\nÀ la balise 2, la montre de Lucas affiche qu'il a parcouru 2,3 km depuis le départ.",
+  "image": null,
+  "duree_estimee_min": 15,
+  "questions": [
+    {
+      "key": "q1",
+      "skill_id": "P021",
+      "statement": "Quelle est l'étape la plus longue ?",
+      "type": "qcm",
+      "choices": [
+        {
+          "key": "a",
+          "text": "Du départ à la balise 1",
+          "misconception": "L'élève compare les nombres écrits (750 est le plus grand) sans regarder les unités : 1,4 km = 1 400 m, c'est plus que 750 m."
+        },
+        {
+          "key": "b",
+          "text": "De la balise 1 à la balise 2",
+          "misconception": null
+        },
+        {
+          "key": "c",
+          "text": "De la balise 2 à la balise 3",
+          "misconception": "85 dam = 850 m : c'est moins que 1,4 km = 1 400 m."
+        },
+        {
+          "key": "d",
+          "text": "De la balise 3 à l'arrivée",
+          "misconception": "6 hm = 600 m : c'est même l'étape la plus courte."
+        }
+      ],
+      "answer": {
+        "value": "b"
+      },
+      "points": 1,
+      "solution_steps": [
+        "On écrit les quatre longueurs en mètres : 750 m ; 1,4 km = 1 400 m ; 85 dam = 850 m ; 6 hm = 600 m.",
+        "La plus longue est **l'étape de la balise 1 à la balise 2**."
+      ],
+      "hint": "Écris les quatre longueurs dans la même unité."
+    },
+    {
+      "key": "q2",
+      "skill_id": "P021",
+      "statement": "Quelle est la longueur de l'étape de la balise 2 à la balise 3, en kilomètres ?",
+      "type": "numerique",
+      "answer": {
+        "value": 0.85,
+        "unit": "km",
+        "accepted": [
+          "0,85 km",
+          "0,850",
+          "0,850 km"
+        ]
+      },
+      "points": 2,
+      "solution_steps": [
+        "1 dam = 10 m, donc 85 dam = 850 m.",
+        "1 km = 1 000 m : 850 m, ce sont 850 millièmes de kilomètre. $850 \\div 1\\,000 = 0{,}85$.",
+        "L'étape mesure **0,85 km**.",
+        "Attention : en passant à une unité plus grande, le nombre devient plus petit."
+      ],
+      "hint": "Écris d'abord cette longueur en mètres."
+    },
+    {
+      "key": "q3",
+      "skill_id": "D014",
+      "statement": "À la balise 2, de combien de mètres la montre de Lucas se trompe-t-elle ?",
+      "type": "numerique",
+      "answer": {
+        "value": 150,
+        "unit": "m",
+        "accepted": [
+          "150 m",
+          "150 mètres"
+        ]
+      },
+      "points": 3,
+      "solution_steps": [
+        "On écrit tout en mètres. 1,4 km = 1 km + 400 m = 1 400 m.",
+        "Du départ à la balise 2, Lucas a vraiment parcouru 750 + 1 400 = 2 150 m.",
+        "La montre affiche 2,3 km = 2 km + 300 m = 2 300 m.",
+        "2 300 − 2 150 = 150 : la montre se trompe de **150 m**, elle en affiche trop."
+      ],
+      "hint": "Calcule d'abord la distance vraiment parcourue jusqu'à la balise 2, en mètres."
+    },
+    {
+      "key": "q4",
+      "skill_id": "P021",
+      "statement": "Quelle est la longueur totale du parcours, en kilomètres ?",
+      "type": "numerique",
+      "answer": {
+        "value": 3.6,
+        "unit": "km",
+        "accepted": [
+          "3,6 km",
+          "3,60",
+          "3,60 km"
+        ]
+      },
+      "points": 4,
+      "solution_steps": [
+        "On écrit les quatre étapes dans la même unité, le mètre : 750 m ; 1 400 m ; 850 m ; 600 m.",
+        "750 + 1 400 + 850 + 600 = 3 600.",
+        "1 km = 1 000 m, donc 3 600 m = 3,6 km.",
+        "Le parcours mesure **3,6 km**."
+      ],
+      "hint": "Choisis une seule unité pour additionner les quatre étapes."
+    }
+  ],
+  "review_status": "relu_agent",
+  "programme_ref": "Cycle 3, classe de 6e, Grandeurs et mesures, Les longueurs : « Résoudre des problèmes impliquant des longueurs »"
+}

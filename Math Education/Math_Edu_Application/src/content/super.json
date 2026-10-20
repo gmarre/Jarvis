@@ -2,7 +2,7 @@
   "metadata": {
     "version": "1.0",
     "scope": "Super exercices, CP a 3e",
-    "total_super": 21
+    "total_super": 35
   },
   "super": [
     {
@@ -2390,6 +2390,1882 @@
       ],
       "review_status": "relu_agent",
       "programme_ref": "Cycle 2, Cours élémentaire deuxième année, Grandeurs et mesures, Le repérage dans le temps et les durées : « L'élève lit l'heure sur un cadran à aiguilles ou sur un affichage digital »"
+    },
+    {
+      "id": "SX-P014-01",
+      "skill_id": "P014",
+      "skill_ids": [
+        "P014",
+        "B038"
+      ],
+      "school_level": "CE2",
+      "title": "La sortie à la ferme",
+      "contexte": "Mercredi, les 24 élèves de CE2 de M. Petit partent en sortie à la ferme pédagogique. Chaque élève a payé 6 € pour l'entrée.\n\nLe car part de l'école à 8 h 45. Le trajet dure 40 minutes.\n\nÀ la ferme, les ateliers commencent à 9 h 35. Il y a 4 ateliers de 20 minutes chacun, et une seule pause de 15 minutes, au milieu de la matinée. Dès la fin des ateliers, les élèves visitent l'étable avec le fermier.\n\nLe pique-nique commence à 12 h 15 et dure trois quarts d'heure.\n\nPour rentrer, le car part de la ferme à 14 h 25 et arrive devant l'école à 15 h 25.",
+      "image": null,
+      "duree_estimee_min": 15,
+      "questions": [
+        {
+          "key": "q1",
+          "skill_id": "P014",
+          "statement": "Pour savoir combien de temps dure le trajet du retour, de quelles informations as-tu besoin ?",
+          "type": "qcm",
+          "choices": [
+            {
+              "key": "a",
+              "text": "8 h 45 et 15 h 25",
+              "misconception": "L'élève prend l'heure de départ du matin : il calcule alors la durée de toute la sortie, pas celle du retour."
+            },
+            {
+              "key": "b",
+              "text": "40 minutes, la durée de l'aller",
+              "misconception": "L'élève suppose que le retour dure autant que l'aller. Rien ne le dit : il faut utiliser les horaires du retour."
+            },
+            {
+              "key": "c",
+              "text": "14 h 25 et 15 h 25",
+              "misconception": null
+            },
+            {
+              "key": "d",
+              "text": "12 h 15 et 14 h 25",
+              "misconception": "Ce sont l'heure du pique-nique et celle du départ du car : entre les deux, les élèves sont encore à la ferme."
+            }
+          ],
+          "answer": {
+            "value": "c"
+          },
+          "points": 1,
+          "solution_steps": [
+            "Le trajet du retour va du départ du car à la ferme jusqu'à son arrivée devant l'école.",
+            "Il faut donc l'heure de départ de la ferme, 14 h 25, et l'heure d'arrivée à l'école, 15 h 25.",
+            "L'heure de départ du matin, la durée de l'aller et l'heure du pique-nique ne servent pas ici."
+          ],
+          "hint": "Relis la phrase qui commence par « Pour rentrer »."
+        },
+        {
+          "key": "q2",
+          "skill_id": "P014",
+          "statement": "À quelle heure le car arrive-t-il à la ferme ? Réponds en heures et minutes.",
+          "type": "texte",
+          "answer": {
+            "value": "9 h 25",
+            "accepted": [
+              "9h25",
+              "9:25",
+              "9 h 25 min",
+              "9 heures 25",
+              "9 heures 25 minutes"
+            ]
+          },
+          "points": 2,
+          "solution_steps": [
+            "Le car part à 8 h 45 et roule 40 minutes.",
+            "De 8 h 45 à 9 h, il s'écoule 15 minutes. Il reste encore 40 − 15 = 25 minutes.",
+            "Le car arrive à **9 h 25**.",
+            "Attention : 8 h 85 n'existe pas, car une heure compte 60 minutes."
+          ],
+          "hint": "Avance d'abord jusqu'à l'heure ronde, puis continue."
+        },
+        {
+          "key": "q3",
+          "skill_id": "B038",
+          "statement": "Combien de minutes durent les 4 ateliers et la pause, en tout ?",
+          "type": "numerique",
+          "answer": {
+            "value": 95,
+            "unit": "min",
+            "accepted": [
+              "95 min",
+              "95 minutes"
+            ]
+          },
+          "points": 2,
+          "solution_steps": [
+            "Les 4 ateliers durent chacun 20 minutes : 20 + 20 + 20 + 20 = 80 minutes.",
+            "Il y a une seule pause de 15 minutes : 80 + 15 = 95.",
+            "Les ateliers et la pause durent **95 minutes** en tout."
+          ],
+          "hint": "Compte d'abord le temps des ateliers seuls."
+        },
+        {
+          "key": "q4",
+          "skill_id": "P014",
+          "statement": "On admet que les ateliers et la pause durent 95 minutes en tout. À quelle heure commence la visite de l'étable ? Réponds en heures et minutes.",
+          "type": "texte",
+          "answer": {
+            "value": "11 h 10",
+            "accepted": [
+              "11h10",
+              "11:10",
+              "11 h 10 min",
+              "11 heures 10",
+              "11 heures 10 minutes"
+            ]
+          },
+          "points": 2,
+          "solution_steps": [
+            "95 minutes, c'est 60 minutes et encore 35 minutes, soit 1 h 35 min.",
+            "Les ateliers commencent à 9 h 35. Une heure plus tard, il est 10 h 35.",
+            "De 10 h 35 à 11 h, il s'écoule 25 minutes ; il reste 35 − 25 = 10 minutes.",
+            "La visite de l'étable commence à **11 h 10**."
+          ],
+          "hint": "Écris d'abord 95 minutes en heures et minutes."
+        },
+        {
+          "key": "q5",
+          "skill_id": "P014",
+          "statement": "Combien de temps s'écoule entre le départ du car le matin et son retour devant l'école ? Réponds en heures et minutes.",
+          "type": "texte",
+          "answer": {
+            "value": "6 h 40 min",
+            "accepted": [
+              "6 h 40",
+              "6h40",
+              "6 heures 40 minutes",
+              "6 heures et 40 minutes",
+              "6 h et 40 min"
+            ]
+          },
+          "points": 3,
+          "solution_steps": [
+            "Le car part de l'école à 8 h 45 et y revient à 15 h 25.",
+            "De 8 h 45 à 9 h, il s'écoule 15 minutes.",
+            "De 9 h à 15 h, il s'écoule 6 heures ; de 15 h à 15 h 25, encore 25 minutes.",
+            "15 + 25 = 40 : il s'écoule **6 h 40 min**.",
+            "Attention : retirer 25 de 45 « à l'envers » donne 7 h 20 min, ce qui est faux.",
+            "Une réponse en minutes seules, comme 400 min, n'est pas acceptée : la question demande la durée en heures et minutes."
+          ],
+          "hint": "Dessine un axe du temps de 8 h 45 à 15 h 25, avec des étapes aux heures rondes."
+        }
+      ],
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 2, Cours élémentaire deuxième année, Grandeurs et mesures, Le repérage dans le temps et les durées : « Résoudre des problèmes à une ou deux étapes impliquant des durées. »"
+    },
+    {
+      "id": "SX-P015-01",
+      "skill_id": "P015",
+      "skill_ids": [
+        "P015",
+        "A007",
+        "B041"
+      ],
+      "school_level": "CM1",
+      "title": "La randonnée jusqu'au refuge",
+      "contexte": "Les 26 élèves de CM1 de Mme Garnier partent en randonnée. Le car les dépose au parking à 9 h 15.\n\nLe chemin compte trois étapes :\ndu parking au lac, 2 km ;\ndu lac à la cascade, 7 hm ;\nde la cascade au refuge, 35 dam.\n\nAvant de partir, quatre élèves pèsent leur sac à dos :\nle sac de Malo pèse 2 kg ;\ncelui d'Inès pèse 1 900 g ;\ncelui de Yanis pèse 2 kg et 150 g ;\ncelui de Lou pèse 2 kg et 50 g.\n\nChaque élève emporte une gourde de 75 cL.\n\nAu refuge, le gardien sert de la limonade. Il remplit 8 verres de 20 cL avec une bouteille de 2 L.",
+      "image": null,
+      "duree_estimee_min": 15,
+      "questions": [
+        {
+          "key": "q1",
+          "skill_id": "P015",
+          "statement": "Quelle est l'étape la plus longue ?",
+          "type": "qcm",
+          "choices": [
+            {
+              "key": "a",
+              "text": "Du parking au lac",
+              "misconception": null
+            },
+            {
+              "key": "b",
+              "text": "Du lac à la cascade",
+              "misconception": "L'élève compare 7 et 2 sans regarder les unités : 7 hm = 700 m, c'est moins que 2 km = 2 000 m."
+            },
+            {
+              "key": "c",
+              "text": "De la cascade au refuge",
+              "misconception": "L'élève compare les nombres écrits (35 est le plus grand) sans regarder les unités : 35 dam = 350 m, c'est moins que 2 km = 2 000 m."
+            }
+          ],
+          "answer": {
+            "value": "a"
+          },
+          "points": 1,
+          "solution_steps": [
+            "On écrit les trois longueurs en mètres : 2 km = 2 000 m ; 7 hm = 700 m ; 35 dam = 350 m.",
+            "La plus longue est la première : **du parking au lac**."
+          ],
+          "hint": "Écris les trois longueurs dans la même unité avant de comparer."
+        },
+        {
+          "key": "q2",
+          "skill_id": "P015",
+          "statement": "Quelle distance les élèves parcourent-ils du parking au refuge, en mètres ?",
+          "type": "numerique",
+          "answer": {
+            "value": 3050,
+            "unit": "m",
+            "accepted": [
+              "3 050",
+              "3 050 m",
+              "3050 m"
+            ]
+          },
+          "points": 3,
+          "solution_steps": [
+            "On écrit chaque étape en mètres. 1 km = 1 000 m, donc 2 km = 2 000 m.",
+            "1 hm = 100 m, donc 7 hm = 700 m. 1 dam = 10 m, donc 35 dam = 350 m.",
+            "2 000 + 700 + 350 = 3 050.",
+            "Les élèves parcourent **3 050 m**.",
+            "Attention : additionner 2 + 7 + 35 n'a pas de sens, car les unités sont différentes."
+          ],
+          "hint": "Les trois longueurs doivent être dans la même unité avant d'être additionnées."
+        },
+        {
+          "key": "q3",
+          "skill_id": "A007",
+          "statement": "Range les quatre sacs du plus léger au plus lourd.",
+          "type": "qcm",
+          "choices": [
+            {
+              "key": "a",
+              "text": "Malo, Lou, Yanis, Inès",
+              "misconception": "L'élève croit le sac d'Inès le plus lourd parce que 1 900 est le plus grand nombre écrit. Or 1 900 g, c'est moins que 2 kg = 2 000 g."
+            },
+            {
+              "key": "b",
+              "text": "Inès, Malo, Yanis, Lou",
+              "misconception": "L'élève lit 2 kg et 50 g comme 2 kg et 500 g. Or 2 kg et 50 g = 2 050 g, moins que 2 kg et 150 g = 2 150 g."
+            },
+            {
+              "key": "c",
+              "text": "Inès, Malo, Lou, Yanis",
+              "misconception": null
+            }
+          ],
+          "answer": {
+            "value": "c"
+          },
+          "points": 2,
+          "solution_steps": [
+            "On écrit les quatre masses en grammes. 1 kg = 1 000 g.",
+            "Malo : 2 000 g ; Inès : 1 900 g ; Yanis : 2 000 + 150 = 2 150 g ; Lou : 2 000 + 50 = 2 050 g.",
+            "1 900 < 2 000 < 2 050 < 2 150.",
+            "Du plus léger au plus lourd : **Inès, Malo, Lou, Yanis**."
+          ],
+          "hint": "Écris d'abord les quatre masses en grammes."
+        },
+        {
+          "key": "q4",
+          "skill_id": "B041",
+          "statement": "Combien de centilitres de limonade le gardien verse-t-il en tout dans les verres ?",
+          "type": "numerique",
+          "answer": {
+            "value": 160,
+            "unit": "cL",
+            "accepted": [
+              "160 cL",
+              "160 centilitres"
+            ]
+          },
+          "points": 2,
+          "solution_steps": [
+            "Le gardien remplit 8 verres de 20 cL : on calcule 8 × 20.",
+            "8 × 2 = 16, donc 8 × 20 = 160 : 16 dizaines.",
+            "Il verse **160 cL** de limonade."
+          ],
+          "hint": "20, ce sont 2 dizaines."
+        },
+        {
+          "key": "q5",
+          "skill_id": "P015",
+          "statement": "On admet que le gardien verse 160 cL de limonade. Combien de millilitres de limonade reste-t-il dans la bouteille ?",
+          "type": "numerique",
+          "answer": {
+            "value": 400,
+            "unit": "mL",
+            "accepted": [
+              "400 mL",
+              "400 millilitres"
+            ]
+          },
+          "points": 3,
+          "solution_steps": [
+            "On écrit tout en millilitres. 1 L = 1 000 mL, donc 2 L = 2 000 mL.",
+            "1 cL = 10 mL, donc 160 cL = 1 600 mL.",
+            "2 000 − 1 600 = 400.",
+            "Il reste **400 mL** de limonade.",
+            "Attention : 40 est le reste en centilitres, pas en millilitres."
+          ],
+          "hint": "Écris la contenance de la bouteille et la limonade versée dans la même unité."
+        }
+      ],
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 3, Cours moyen première année, Grandeurs et mesures, Les longueurs : « Connaître et utiliser les unités de longueur du millimètre au kilomètre et les symboles associés »"
+    },
+    {
+      "id": "SX-P016-01",
+      "skill_id": "P016",
+      "skill_ids": [
+        "P016",
+        "B039",
+        "G012"
+      ],
+      "school_level": "CM1",
+      "title": "Le jardin partagé",
+      "contexte": "La mairie de Valmont crée un jardin partagé pour les 120 habitants du quartier. Il ouvrira un samedi matin, à 9 heures.\n\nLe jardin a la forme d'un rectangle. Sa longueur mesure 26 m et son périmètre 84 m.\n\nTout autour du jardin, on pose un grillage, sauf à l'entrée, où l'on installe un portail de 4 m de large. Le grillage est vendu en rouleaux de 10 m.\n\nAu centre du jardin, un massif de roses a la forme d'un losange. Le périmètre de ce massif mesure 20 m.\n\nDans un coin, un bac à sable a la forme d'un carré de 9 m de côté.",
+      "image": null,
+      "duree_estimee_min": 15,
+      "questions": [
+        {
+          "key": "q1",
+          "skill_id": "P016",
+          "statement": "Pour trouver la largeur du jardin, de quelles informations as-tu besoin ?",
+          "type": "qcm",
+          "choices": [
+            {
+              "key": "a",
+              "text": "Le périmètre (84 m) seulement",
+              "misconception": "L'élève fait comme pour un carré et divise le périmètre par 4. Or le jardin est un rectangle : sa longueur et sa largeur ne sont pas égales."
+            },
+            {
+              "key": "b",
+              "text": "Le périmètre (84 m) et la largeur du portail (4 m)",
+              "misconception": "Le portail sert à calculer le grillage, pas les dimensions du jardin."
+            },
+            {
+              "key": "c",
+              "text": "La longueur (26 m) et le périmètre (84 m)",
+              "misconception": null
+            },
+            {
+              "key": "d",
+              "text": "La longueur (26 m) et le périmètre du massif (20 m)",
+              "misconception": "Le massif de roses est une autre figure : son périmètre ne dit rien des côtés du jardin."
+            }
+          ],
+          "answer": {
+            "value": "c"
+          },
+          "points": 1,
+          "solution_steps": [
+            "Le périmètre du jardin, 84 m, est la somme de ses deux longueurs et de ses deux largeurs.",
+            "Connaissant la longueur, 26 m, on peut retrouver la largeur.",
+            "Il faut donc **la longueur (26 m) et le périmètre (84 m)**. Le portail et le massif ne servent pas ici."
+          ],
+          "hint": "Le périmètre d'un rectangle, c'est deux longueurs et deux largeurs."
+        },
+        {
+          "key": "q2",
+          "skill_id": "P016",
+          "statement": "Quelle est la largeur du jardin ?",
+          "type": "numerique",
+          "answer": {
+            "value": 16,
+            "unit": "m",
+            "accepted": [
+              "16 m",
+              "16m",
+              "16 mètres"
+            ]
+          },
+          "points": 3,
+          "solution_steps": [
+            "Le périmètre, 84 m, est formé de deux longueurs et de deux largeurs.",
+            "Les deux longueurs mesurent 26 + 26 = 52 m.",
+            "Les deux largeurs mesurent donc 84 − 52 = 32 m.",
+            "Une largeur mesure 32 ÷ 2 = 16 m.",
+            "La largeur du jardin est **16 m**. Vérification : 26 + 16 + 26 + 16 = 84."
+          ],
+          "hint": "Commence par retirer les deux longueurs du périmètre."
+        },
+        {
+          "key": "q3",
+          "skill_id": "B039",
+          "statement": "Combien de rouleaux de grillage faut-il acheter ?",
+          "type": "numerique",
+          "answer": {
+            "value": 8,
+            "unit": "rouleaux",
+            "accepted": [
+              "8 rouleaux"
+            ]
+          },
+          "points": 2,
+          "solution_steps": [
+            "Le grillage fait tout le tour du jardin, sauf le portail : 84 − 4 = 80 m.",
+            "Un rouleau contient 10 m. On cherche combien de fois 10 dans 80 : 80 ÷ 10 = 8, car 10 × 8 = 80.",
+            "Il faut **8 rouleaux** de grillage."
+          ],
+          "hint": "Calcule d'abord la longueur de grillage, sans le portail."
+        },
+        {
+          "key": "q4",
+          "skill_id": "G012",
+          "statement": "Quelle est la longueur d'un côté du massif de roses ?",
+          "type": "numerique",
+          "answer": {
+            "value": 5,
+            "unit": "m",
+            "accepted": [
+              "5 m",
+              "5m",
+              "5 mètres"
+            ]
+          },
+          "points": 2,
+          "solution_steps": [
+            "Un losange a quatre côtés de même longueur.",
+            "Le périmètre, 20 m, est donc partagé en 4 longueurs égales : 20 ÷ 4 = 5.",
+            "Un côté du massif mesure **5 m**."
+          ],
+          "hint": "Combien de côtés a un losange ? Que sais-tu de leurs longueurs ?"
+        },
+        {
+          "key": "q5",
+          "skill_id": "P016",
+          "statement": "Les enfants voudraient remplacer le bac à sable carré par un bac rectangulaire qui a le même périmètre et qui mesure 11 m de long. Quelle serait sa largeur ?",
+          "type": "numerique",
+          "answer": {
+            "value": 7,
+            "unit": "m",
+            "accepted": [
+              "7 m",
+              "7m",
+              "7 mètres"
+            ]
+          },
+          "points": 3,
+          "solution_steps": [
+            "Le bac carré a 4 côtés de 9 m : son périmètre est 4 × 9 = 36 m.",
+            "Le bac rectangulaire a aussi un périmètre de 36 m. Ses deux longueurs mesurent 11 + 11 = 22 m.",
+            "Ses deux largeurs mesurent 36 − 22 = 14 m, donc une largeur mesure 14 ÷ 2 = 7 m.",
+            "Le bac rectangulaire mesurerait **7 m** de large. Vérification : 11 + 7 + 11 + 7 = 36."
+          ],
+          "hint": "Calcule d'abord le périmètre du bac carré."
+        }
+      ],
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 3, Cours moyen première année, Grandeurs et mesures, Les longueurs : « Résoudre des problèmes mettant en jeu les longueurs des côtés d'un polygone et son périmètre »"
+    },
+    {
+      "id": "SX-P017-01",
+      "skill_id": "P017",
+      "skill_ids": [
+        "P017",
+        "G010",
+        "P010"
+      ],
+      "school_level": "CM1",
+      "title": "Les tapis de la maison de poupée",
+      "contexte": "Pour la kermesse de l'école, Noé, qui a 9 ans, coud avec sa grand-mère des tapis pour une maison de poupée. Il a d'abord dessiné leurs plans sur du papier quadrillé : ce sont les surfaces A, B, C et D de la figure.\n\nChaque carreau du quadrillage est un carré de 1 cm de côté, et chaque tapis aura exactement la forme et la taille de son plan.\n\nLe tissu est vendu 2 € le morceau. Pour finir chaque tapis, Noé coud un galon tout le long de son bord.\n\nLa kermesse a lieu un samedi, à partir de 10 heures.",
+      "image": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 380 204\" width=\"380\" height=\"204\" font-family=\"system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif\" role=\"img\"><title>Quadrillage avec quatre surfaces coloriées, A, B, C et D</title><rect width=\"100%\" height=\"100%\" fill=\"#ffffff\"/><rect x=\"14\" y=\"36\" width=\"22\" height=\"22\" fill=\"#93c5fd\"/><rect x=\"14\" y=\"58\" width=\"22\" height=\"22\" fill=\"#93c5fd\"/><rect x=\"36\" y=\"36\" width=\"22\" height=\"22\" fill=\"#93c5fd\"/><rect x=\"36\" y=\"58\" width=\"22\" height=\"22\" fill=\"#93c5fd\"/><rect x=\"58\" y=\"36\" width=\"22\" height=\"22\" fill=\"#93c5fd\"/><rect x=\"58\" y=\"58\" width=\"22\" height=\"22\" fill=\"#93c5fd\"/><rect x=\"80\" y=\"36\" width=\"22\" height=\"22\" fill=\"#93c5fd\"/><rect x=\"80\" y=\"58\" width=\"22\" height=\"22\" fill=\"#93c5fd\"/><rect x=\"102\" y=\"36\" width=\"22\" height=\"22\" fill=\"#93c5fd\"/><rect x=\"102\" y=\"58\" width=\"22\" height=\"22\" fill=\"#93c5fd\"/><rect x=\"124\" y=\"36\" width=\"22\" height=\"22\" fill=\"#93c5fd\"/><rect x=\"124\" y=\"58\" width=\"22\" height=\"22\" fill=\"#93c5fd\"/><rect x=\"168\" y=\"58\" width=\"22\" height=\"22\" fill=\"#fde68a\"/><rect x=\"190\" y=\"58\" width=\"22\" height=\"22\" fill=\"#fde68a\"/><rect x=\"212\" y=\"58\" width=\"22\" height=\"22\" fill=\"#fde68a\"/><rect x=\"168\" y=\"80\" width=\"22\" height=\"22\" fill=\"#fde68a\"/><rect x=\"190\" y=\"80\" width=\"22\" height=\"22\" fill=\"#fde68a\"/><rect x=\"212\" y=\"80\" width=\"22\" height=\"22\" fill=\"#fde68a\"/><rect x=\"168\" y=\"102\" width=\"22\" height=\"22\" fill=\"#fde68a\"/><rect x=\"190\" y=\"102\" width=\"22\" height=\"22\" fill=\"#fde68a\"/><rect x=\"212\" y=\"102\" width=\"22\" height=\"22\" fill=\"#fde68a\"/><rect x=\"190\" y=\"36\" width=\"22\" height=\"22\" fill=\"#fde68a\"/><rect x=\"234\" y=\"80\" width=\"22\" height=\"22\" fill=\"#fde68a\"/><rect x=\"190\" y=\"124\" width=\"22\" height=\"22\" fill=\"#fde68a\"/><rect x=\"278\" y=\"36\" width=\"22\" height=\"22\" fill=\"#bbf7d0\"/><rect x=\"278\" y=\"58\" width=\"22\" height=\"22\" fill=\"#bbf7d0\"/><rect x=\"278\" y=\"80\" width=\"22\" height=\"22\" fill=\"#bbf7d0\"/><rect x=\"278\" y=\"102\" width=\"22\" height=\"22\" fill=\"#bbf7d0\"/><rect x=\"300\" y=\"36\" width=\"22\" height=\"22\" fill=\"#bbf7d0\"/><rect x=\"300\" y=\"58\" width=\"22\" height=\"22\" fill=\"#bbf7d0\"/><rect x=\"300\" y=\"80\" width=\"22\" height=\"22\" fill=\"#bbf7d0\"/><rect x=\"300\" y=\"102\" width=\"22\" height=\"22\" fill=\"#bbf7d0\"/><rect x=\"322\" y=\"36\" width=\"22\" height=\"22\" fill=\"#bbf7d0\"/><rect x=\"322\" y=\"58\" width=\"22\" height=\"22\" fill=\"#bbf7d0\"/><rect x=\"322\" y=\"80\" width=\"22\" height=\"22\" fill=\"#bbf7d0\"/><rect x=\"322\" y=\"102\" width=\"22\" height=\"22\" fill=\"#bbf7d0\"/><rect x=\"344\" y=\"36\" width=\"22\" height=\"22\" fill=\"#bbf7d0\"/><rect x=\"344\" y=\"58\" width=\"22\" height=\"22\" fill=\"#bbf7d0\"/><rect x=\"344\" y=\"80\" width=\"22\" height=\"22\" fill=\"#bbf7d0\"/><rect x=\"344\" y=\"102\" width=\"22\" height=\"22\" fill=\"#bbf7d0\"/><rect x=\"58\" y=\"102\" width=\"22\" height=\"22\" fill=\"#fecaca\"/><rect x=\"36\" y=\"124\" width=\"22\" height=\"22\" fill=\"#fecaca\"/><rect x=\"58\" y=\"124\" width=\"22\" height=\"22\" fill=\"#fecaca\"/><rect x=\"80\" y=\"124\" width=\"22\" height=\"22\" fill=\"#fecaca\"/><rect x=\"102\" y=\"124\" width=\"22\" height=\"22\" fill=\"#fecaca\"/><rect x=\"36\" y=\"146\" width=\"22\" height=\"22\" fill=\"#fecaca\"/><rect x=\"58\" y=\"146\" width=\"22\" height=\"22\" fill=\"#fecaca\"/><rect x=\"80\" y=\"146\" width=\"22\" height=\"22\" fill=\"#fecaca\"/><rect x=\"102\" y=\"146\" width=\"22\" height=\"22\" fill=\"#fecaca\"/><rect x=\"124\" y=\"146\" width=\"22\" height=\"22\" fill=\"#fecaca\"/><rect x=\"146\" y=\"146\" width=\"22\" height=\"22\" fill=\"#fecaca\"/><line x1=\"14.0\" y1=\"14.0\" x2=\"14.0\" y2=\"190.0\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"36.0\" y1=\"14.0\" x2=\"36.0\" y2=\"190.0\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"58.0\" y1=\"14.0\" x2=\"58.0\" y2=\"190.0\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"80.0\" y1=\"14.0\" x2=\"80.0\" y2=\"190.0\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"102.0\" y1=\"14.0\" x2=\"102.0\" y2=\"190.0\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"124.0\" y1=\"14.0\" x2=\"124.0\" y2=\"190.0\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"146.0\" y1=\"14.0\" x2=\"146.0\" y2=\"190.0\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"168.0\" y1=\"14.0\" x2=\"168.0\" y2=\"190.0\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"190.0\" y1=\"14.0\" x2=\"190.0\" y2=\"190.0\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"212.0\" y1=\"14.0\" x2=\"212.0\" y2=\"190.0\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"234.0\" y1=\"14.0\" x2=\"234.0\" y2=\"190.0\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"256.0\" y1=\"14.0\" x2=\"256.0\" y2=\"190.0\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"278.0\" y1=\"14.0\" x2=\"278.0\" y2=\"190.0\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"300.0\" y1=\"14.0\" x2=\"300.0\" y2=\"190.0\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"322.0\" y1=\"14.0\" x2=\"322.0\" y2=\"190.0\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"344.0\" y1=\"14.0\" x2=\"344.0\" y2=\"190.0\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"366.0\" y1=\"14.0\" x2=\"366.0\" y2=\"190.0\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"14.0\" y1=\"14.0\" x2=\"366.0\" y2=\"14.0\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"14.0\" y1=\"36.0\" x2=\"366.0\" y2=\"36.0\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"14.0\" y1=\"58.0\" x2=\"366.0\" y2=\"58.0\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"14.0\" y1=\"80.0\" x2=\"366.0\" y2=\"80.0\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"14.0\" y1=\"102.0\" x2=\"366.0\" y2=\"102.0\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"14.0\" y1=\"124.0\" x2=\"366.0\" y2=\"124.0\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"14.0\" y1=\"146.0\" x2=\"366.0\" y2=\"146.0\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"14.0\" y1=\"168.0\" x2=\"366.0\" y2=\"168.0\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"14.0\" y1=\"190.0\" x2=\"366.0\" y2=\"190.0\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-linecap=\"round\"/><text stroke=\"#ffffff\" stroke-width=\"3\" paint-order=\"stroke\" x=\"80.0\" y=\"63.0\" font-size=\"14\" text-anchor=\"middle\" fill=\"#334155\" font-weight=\"600\">A</text><text stroke=\"#ffffff\" stroke-width=\"3\" paint-order=\"stroke\" x=\"204.7\" y=\"96.0\" font-size=\"14\" text-anchor=\"middle\" fill=\"#334155\" font-weight=\"600\">B</text><text stroke=\"#ffffff\" stroke-width=\"3\" paint-order=\"stroke\" x=\"322.0\" y=\"85.0\" font-size=\"14\" text-anchor=\"middle\" fill=\"#334155\" font-weight=\"600\">C</text><text stroke=\"#ffffff\" stroke-width=\"3\" paint-order=\"stroke\" x=\"91.0\" y=\"150.0\" font-size=\"14\" text-anchor=\"middle\" fill=\"#334155\" font-weight=\"600\">D</text></svg>",
+      "duree_estimee_min": 15,
+      "questions": [
+        {
+          "key": "q1",
+          "skill_id": "G010",
+          "statement": "Lequel des tapis a la forme d'un carré ?",
+          "type": "qcm",
+          "choices": [
+            {
+              "key": "a",
+              "text": "Le tapis A",
+              "misconception": "Le tapis A a quatre angles droits, mais ses côtés n'ont pas tous la même longueur : c'est un rectangle, pas un carré."
+            },
+            {
+              "key": "b",
+              "text": "Le tapis B",
+              "misconception": "Le tapis B a plus de quatre côtés : ce n'est pas un quadrilatère, donc pas un carré."
+            },
+            {
+              "key": "c",
+              "text": "Le tapis C",
+              "misconception": null
+            },
+            {
+              "key": "d",
+              "text": "Le tapis D",
+              "misconception": "Le tapis D a plus de quatre côtés, de longueurs différentes : ce n'est pas un carré."
+            }
+          ],
+          "answer": {
+            "value": "c"
+          },
+          "points": 1,
+          "solution_steps": [
+            "Un carré a quatre côtés de même longueur et quatre angles droits.",
+            "Le tapis C a quatre côtés de 4 carreaux et quatre angles droits : **c'est un carré**.",
+            "Le tapis A a quatre angles droits, mais deux côtés de 6 carreaux et deux côtés de 2 carreaux : c'est un rectangle."
+          ],
+          "hint": "Compte les carreaux le long de chaque côté."
+        },
+        {
+          "key": "q2",
+          "skill_id": "P017",
+          "statement": "Quelle est l'aire du tapis D, en cm² ?",
+          "type": "numerique",
+          "answer": {
+            "value": 11,
+            "unit": "cm²",
+            "accepted": [
+              "11 cm²",
+              "11 cm2",
+              "11 carreaux"
+            ]
+          },
+          "points": 2,
+          "solution_steps": [
+            "Chaque carreau est un carré de 1 cm de côté : son aire est 1 cm².",
+            "On compte les carreaux du tapis D, ligne par ligne : 1 + 4 + 6 = 11.",
+            "L'aire du tapis D est **11 cm²**."
+          ],
+          "hint": "Compte les carreaux ligne par ligne, sans en oublier."
+        },
+        {
+          "key": "q3",
+          "skill_id": "P010",
+          "statement": "Quelle longueur de galon faut-il pour border le tapis A, en centimètres ?",
+          "type": "numerique",
+          "answer": {
+            "value": 16,
+            "unit": "cm",
+            "accepted": [
+              "16 cm",
+              "16cm",
+              "16 centimètres"
+            ]
+          },
+          "points": 2,
+          "solution_steps": [
+            "Le galon fait le tour du tapis : sa longueur est le périmètre du tapis A.",
+            "Le tapis A est un rectangle de 6 cm de long et 2 cm de large.",
+            "6 + 2 + 6 + 2 = 16.",
+            "Il faut **16 cm** de galon.",
+            "Attention : 12 est le nombre de carreaux du tapis, c'est son aire en cm², pas la longueur de son bord."
+          ],
+          "hint": "Le galon suit le bord du tapis : compte les côtés des carreaux sur le contour."
+        },
+        {
+          "key": "q4",
+          "skill_id": "P017",
+          "statement": "Quel tapis a la même aire que le tapis A ?",
+          "type": "qcm",
+          "choices": [
+            {
+              "key": "a",
+              "text": "Le tapis B",
+              "misconception": null
+            },
+            {
+              "key": "b",
+              "text": "Le tapis C",
+              "misconception": "L'élève compare les bords : A et C ont le même périmètre (16 cm), mais pas la même aire. C compte 16 carreaux, A en compte 12."
+            },
+            {
+              "key": "c",
+              "text": "Le tapis D",
+              "misconception": "Le tapis D compte 11 carreaux, un de moins que le tapis A."
+            },
+            {
+              "key": "d",
+              "text": "Aucun, car aucun n'a la même forme que A",
+              "misconception": "Deux surfaces de formes différentes peuvent avoir la même aire : B a une autre forme que A, mais le même nombre de carreaux."
+            }
+          ],
+          "answer": {
+            "value": "a"
+          },
+          "points": 2,
+          "solution_steps": [
+            "Le tapis A compte 2 rangées de 6 carreaux : 12 carreaux, soit 12 cm².",
+            "Le tapis B compte aussi 12 carreaux (1 + 3 + 4 + 3 + 1), soit 12 cm².",
+            "Le tapis C compte 16 carreaux et le tapis D 11 carreaux.",
+            "C'est **le tapis B** qui a la même aire que le tapis A, même si sa forme est différente."
+          ],
+          "hint": "Compte les carreaux de chaque tapis."
+        },
+        {
+          "key": "q5",
+          "skill_id": "P017",
+          "statement": "Noé coud d'abord les tapis A, B et C, sans perte de tissu. Quelle aire de tissu lui faut-il, en cm² ?",
+          "type": "numerique",
+          "answer": {
+            "value": 40,
+            "unit": "cm²",
+            "accepted": [
+              "40 cm²",
+              "40 cm2",
+              "40 carreaux"
+            ]
+          },
+          "points": 3,
+          "solution_steps": [
+            "On compte les carreaux de chaque tapis. A : 2 rangées de 6, soit 12 carreaux.",
+            "B : 12 carreaux. C : 4 rangées de 4, soit 16 carreaux.",
+            "12 + 12 + 16 = 40.",
+            "Il lui faut **40 cm²** de tissu. Le tapis D n'est pas encore cousu."
+          ],
+          "hint": "Trouve l'aire de chacun des trois tapis, puis ajoute."
+        }
+      ],
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 3, Cours moyen première année, Grandeurs et mesures, Les aires : « Connaître et utiliser les centimètres carrés pour exprimer des aires »"
+    },
+    {
+      "id": "SX-P018-01",
+      "skill_id": "P018",
+      "skill_ids": [
+        "P018",
+        "B039",
+        "D017"
+      ],
+      "school_level": "CM2",
+      "title": "Le grand jeu de la kermesse",
+      "contexte": "Pour la kermesse, les élèves de CM2 fabriquent un grand jeu de l'oie. Ils ont deux semaines pour le terminer.\n\nLe plateau est un rectangle de carton de 48 cm de long et 24 cm de large. Ils le recouvrent entièrement de cases carrées de 6 cm de côté, sans trou ni chevauchement.\n\nLe carton leur a coûté 2,35 € et la peinture 4,80 €. Pour payer les deux, ils ont donné un billet de 10 €.\n\nPour un second jeu, ils hésitent entre deux plateaux qui ont tous les deux 112 cm de périmètre :\nun plateau carré de 28 cm de côté ;\nun plateau rectangulaire de 36 cm de long et 20 cm de large.",
+      "image": null,
+      "duree_estimee_min": 15,
+      "questions": [
+        {
+          "key": "q1",
+          "skill_id": "P018",
+          "statement": "Pour calculer l'aire du premier plateau, en cm², de quelles informations as-tu besoin ?",
+          "type": "qcm",
+          "choices": [
+            {
+              "key": "a",
+              "text": "Le côté d'une case (6 cm)",
+              "misconception": "Le côté d'une case sert à compter les cases du jeu, pas à exprimer l'aire du plateau en cm²."
+            },
+            {
+              "key": "b",
+              "text": "La longueur (48 cm) et la largeur (24 cm)",
+              "misconception": null
+            },
+            {
+              "key": "c",
+              "text": "Le périmètre (112 cm)",
+              "misconception": "C'est le périmètre des plateaux du second jeu ; de plus, l'aire n'est pas le périmètre."
+            }
+          ],
+          "answer": {
+            "value": "b"
+          },
+          "points": 1,
+          "solution_steps": [
+            "L'aire du plateau se trouve en comptant les carrés de 1 cm de côté qui le recouvrent.",
+            "Il faut donc sa longueur, 48 cm, et sa largeur, 24 cm.",
+            "Le côté des cases et le périmètre des plateaux du second jeu ne servent pas ici."
+          ],
+          "hint": "Relis la phrase qui décrit le premier plateau."
+        },
+        {
+          "key": "q2",
+          "skill_id": "B039",
+          "statement": "Combien de cases y a-t-il dans une rangée, le long de la longueur du plateau ?",
+          "type": "numerique",
+          "answer": {
+            "value": 8,
+            "unit": "cases",
+            "accepted": [
+              "8 cases"
+            ]
+          },
+          "points": 2,
+          "solution_steps": [
+            "La longueur du plateau mesure 48 cm, et chaque case mesure 6 cm de côté.",
+            "On cherche combien de fois 6 dans 48 : 48 ÷ 6 = 8, car 6 × 8 = 48.",
+            "Il y a **8 cases** dans une rangée."
+          ],
+          "hint": "Combien de cases de 6 cm faut-il mettre bout à bout pour faire 48 cm ?"
+        },
+        {
+          "key": "q3",
+          "skill_id": "P018",
+          "statement": "Quelle est l'aire du premier plateau, en cm² ?",
+          "type": "numerique",
+          "answer": {
+            "value": 1152,
+            "unit": "cm²",
+            "accepted": [
+              "1 152",
+              "1 152 cm²",
+              "1152 cm²",
+              "1152 cm2"
+            ]
+          },
+          "points": 3,
+          "solution_steps": [
+            "On recouvre le plateau de carrés de 1 cm de côté : 24 rangées de 48 carrés.",
+            "24 × 48 = 1 152 (on pose la multiplication : 48 × 4 = 192 ; 48 × 20 = 960 ; 192 + 960 = 1 152).",
+            "L'aire du plateau est **1 152 cm²**.",
+            "Attention : 48 + 24 + 48 + 24 = 144 donne le périmètre, en cm, pas l'aire."
+          ],
+          "hint": "Combien de rangées de carrés de 1 cm de côté faut-il, et combien de carrés par rangée ?"
+        },
+        {
+          "key": "q4",
+          "skill_id": "D017",
+          "statement": "Combien d'argent leur a-t-on rendu ?",
+          "type": "numerique",
+          "answer": {
+            "value": 2.85,
+            "unit": "€",
+            "accepted": [
+              "2,85 €",
+              "2,85 euros",
+              "2,85€",
+              "2 € 85"
+            ]
+          },
+          "points": 2,
+          "solution_steps": [
+            "Le carton et la peinture coûtent 2,35 + 4,80 = 7,15 €.",
+            "Ils ont donné 10 € : 10,00 − 7,15 = 2,85.",
+            "On leur a rendu **2,85 €**."
+          ],
+          "hint": "Calcule d'abord le prix total des deux achats."
+        },
+        {
+          "key": "q5",
+          "skill_id": "P018",
+          "statement": "De combien de cm² l'aire du plus grand des deux plateaux du second jeu dépasse-t-elle celle de l'autre ?",
+          "type": "numerique",
+          "answer": {
+            "value": 64,
+            "unit": "cm²",
+            "accepted": [
+              "64 cm²",
+              "64 cm2"
+            ]
+          },
+          "points": 4,
+          "solution_steps": [
+            "Plateau carré : 28 rangées de 28 carrés de 1 cm de côté, 28 × 28 = 784, soit 784 cm².",
+            "Plateau rectangulaire : 20 rangées de 36 carrés, 20 × 36 = 720, soit 720 cm².",
+            "Le plateau carré a la plus grande aire : 784 − 720 = 64.",
+            "Son aire dépasse celle du plateau rectangulaire de **64 cm²**, alors que les deux plateaux ont le même périmètre."
+          ],
+          "hint": "Deux figures de même périmètre n'ont pas forcément la même aire : calcule les deux."
+        }
+      ],
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 3, Cours moyen deuxième année, Grandeurs et mesures, Les aires : « Déterminer l'aire d'un carré ou d'un rectangle »"
+    },
+    {
+      "id": "SX-P019-01",
+      "skill_id": "P019",
+      "skill_ids": [
+        "P019",
+        "P018",
+        "B008"
+      ],
+      "school_level": "CM2",
+      "title": "Le carrelage de la cuisine",
+      "contexte": "M. Rossi refait le sol de sa cuisine, qui a la forme d'un rectangle de 5 m de long et 3 m de large. Les murs de la cuisine mesurent 250 cm de haut.\n\nPour le sol, il a choisi des carreaux carrés de 2 dm de côté.\n\nPour la crédence, au-dessus de l'évier, il lui faut 75 carreaux d'une autre couleur. Ces carreaux sont vendus par boîtes de 6 ; une boîte coûte 18 €.\n\nLe long du plan de travail, il colle une frise de mosaïque formée de 40 petits carrés de verre. Chaque petit carré a une aire de 25 cm².\n\nLe chantier commence lundi à 8 h 30.",
+      "image": null,
+      "duree_estimee_min": 15,
+      "questions": [
+        {
+          "key": "q1",
+          "skill_id": "P019",
+          "statement": "Quelle est l'aire d'un carreau du sol ?",
+          "type": "qcm",
+          "choices": [
+            {
+              "key": "a",
+              "text": "2 dm²",
+              "misconception": "L'élève donne la longueur du côté, 2 dm, au lieu de l'aire du carreau."
+            },
+            {
+              "key": "b",
+              "text": "8 dm²",
+              "misconception": "L'élève fait le tour du carreau : 2 + 2 + 2 + 2 = 8, c'est son périmètre, en dm, pas son aire."
+            },
+            {
+              "key": "c",
+              "text": "4 dm²",
+              "misconception": null
+            },
+            {
+              "key": "d",
+              "text": "4 dm",
+              "misconception": "Le nombre est juste, mais une aire ne s'exprime pas en dm : le dm est une unité de longueur."
+            }
+          ],
+          "answer": {
+            "value": "c"
+          },
+          "points": 1,
+          "solution_steps": [
+            "Un carreau du sol est un carré de 2 dm de côté.",
+            "On peut le recouvrir de 2 rangées de 2 carrés de 1 dm de côté : 2 × 2 = 4 carrés.",
+            "Son aire est **4 dm²**."
+          ],
+          "hint": "Combien de carrés de 1 dm de côté faut-il pour recouvrir un carreau ?"
+        },
+        {
+          "key": "q2",
+          "skill_id": "P018",
+          "statement": "Quelle est l'aire du sol de la cuisine, en m² ?",
+          "type": "numerique",
+          "answer": {
+            "value": 15,
+            "unit": "m²",
+            "accepted": [
+              "15 m²",
+              "15 m2"
+            ]
+          },
+          "points": 2,
+          "solution_steps": [
+            "On recouvre le sol de carrés de 1 m de côté : 3 rangées de 5 carrés.",
+            "3 × 5 = 15.",
+            "L'aire du sol est **15 m²**.",
+            "Attention : 5 + 3 + 5 + 3 = 16 donne le périmètre de la cuisine, en m, pas son aire."
+          ],
+          "hint": "Combien de carrés de 1 m de côté faut-il pour recouvrir le sol ?"
+        },
+        {
+          "key": "q3",
+          "skill_id": "P019",
+          "statement": "On admet que le sol de la cuisine a une aire de 15 m². Quelle est cette aire en dm² ?",
+          "type": "numerique",
+          "answer": {
+            "value": 1500,
+            "unit": "dm²",
+            "accepted": [
+              "1 500",
+              "1 500 dm²",
+              "1500 dm²",
+              "1500 dm2"
+            ]
+          },
+          "points": 3,
+          "solution_steps": [
+            "Un carré de 1 m de côté se recouvre de 10 rangées de 10 carrés de 1 dm de côté : 1 m² = 100 dm².",
+            "15 m², c'est donc 15 × 100 = 1 500 dm².",
+            "L'aire du sol est **1 500 dm²**.",
+            "Attention : 1 m = 10 dm, mais 1 m² = 100 dm². Répondre 150 dm², c'est utiliser le rapport des longueurs."
+          ],
+          "hint": "Combien de carrés de 1 dm de côté faut-il pour recouvrir un carré de 1 m de côté ?"
+        },
+        {
+          "key": "q4",
+          "skill_id": "B008",
+          "statement": "Combien de boîtes de carreaux M. Rossi doit-il acheter pour la crédence ?",
+          "type": "numerique",
+          "answer": {
+            "value": 13,
+            "unit": "boîtes",
+            "accepted": [
+              "13 boîtes",
+              "13 boites"
+            ]
+          },
+          "points": 2,
+          "solution_steps": [
+            "Il lui faut 75 carreaux, vendus par boîtes de 6. On divise 75 par 6.",
+            "6 × 12 = 72 et 75 − 72 = 3 : 75 = 6 × 12 + 3. Le quotient est 12 et le reste 3.",
+            "12 boîtes ne donnent que 72 carreaux : il manque 3 carreaux, il faut donc une boîte de plus.",
+            "M. Rossi doit acheter **13 boîtes**."
+          ],
+          "hint": "Pose la division de 75 par 6, puis demande-toi à quoi correspond le reste."
+        },
+        {
+          "key": "q5",
+          "skill_id": "P019",
+          "statement": "Quelle est l'aire de la frise de mosaïque, en dm² ?",
+          "type": "numerique",
+          "answer": {
+            "value": 10,
+            "unit": "dm²",
+            "accepted": [
+              "10 dm²",
+              "10 dm2"
+            ]
+          },
+          "points": 3,
+          "solution_steps": [
+            "La frise est formée de 40 petits carrés de 25 cm² : 40 × 25 = 1 000, soit 1 000 cm².",
+            "1 dm² = 100 cm² : on cherche combien de fois 100 cm² dans 1 000 cm².",
+            "1 000 = 10 × 100, donc 1 000 cm² = 10 dm².",
+            "L'aire de la frise est **10 dm²**."
+          ],
+          "hint": "Calcule d'abord l'aire de la frise en cm²."
+        }
+      ],
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 3, Cours moyen deuxième année, Grandeurs et mesures, Les aires : « Convertir des aires entre différentes unités »"
+    },
+    {
+      "id": "SX-P020-01",
+      "skill_id": "P020",
+      "skill_ids": [
+        "P020",
+        "B007"
+      ],
+      "school_level": "CM2",
+      "title": "La playlist de la boum",
+      "contexte": "Pour la boum de fin d'année, les 42 élèves de CM2 préparent une playlist. L'entrée coûte 2 €, et la salle est réservée jusqu'à 19 h.\n\nLa playlist commence par 9 chansons qui durent chacune 3 min 35 s. Elle se termine par un slow de 4 min 50 s. Les chansons s'enchaînent sans aucune pause.\n\nLa musique démarre à 17 h 46 min 58 s.\n\nPendant la boum, un concours de danse est aussi organisé : chaque danseur a droit à 1 min 15 s sur la piste.",
+      "image": null,
+      "duree_estimee_min": 15,
+      "questions": [
+        {
+          "key": "q1",
+          "skill_id": "P020",
+          "statement": "Combien de secondes dure le slow ?",
+          "type": "numerique",
+          "answer": {
+            "value": 290,
+            "unit": "s",
+            "accepted": [
+              "290 s",
+              "290 secondes"
+            ]
+          },
+          "points": 1,
+          "solution_steps": [
+            "1 min = 60 s, donc 4 min = 4 × 60 = 240 s.",
+            "240 + 50 = 290.",
+            "Le slow dure **290 s**."
+          ],
+          "hint": "Combien de secondes y a-t-il dans une minute ?"
+        },
+        {
+          "key": "q2",
+          "skill_id": "B007",
+          "statement": "Combien de secondes durent les 9 chansons de 3 min 35 s, en tout ?",
+          "type": "numerique",
+          "answer": {
+            "value": 1935,
+            "unit": "s",
+            "accepted": [
+              "1 935",
+              "1 935 s",
+              "1935 s",
+              "1935 secondes"
+            ]
+          },
+          "points": 2,
+          "solution_steps": [
+            "Une chanson dure 3 min 35 s : 3 × 60 + 35 = 180 + 35 = 215 s.",
+            "Les 9 chansons durent 9 × 215 s. On pose la multiplication : 215 × 9 = 1 935.",
+            "Les 9 chansons durent **1 935 s**.",
+            "Attention : 3 min 35 s ne vaut pas 335 s, car une minute compte 60 secondes."
+          ],
+          "hint": "Écris d'abord la durée d'une chanson en secondes."
+        },
+        {
+          "key": "q3",
+          "skill_id": "P020",
+          "statement": "On admet que les 9 chansons durent 1 935 s en tout. Écris cette durée en minutes et secondes.",
+          "type": "texte",
+          "answer": {
+            "value": "32 min 15 s",
+            "accepted": [
+              "32 min 15",
+              "32 min 15 secondes",
+              "32 minutes 15 secondes",
+              "32 minutes et 15 secondes",
+              "32 min et 15 s"
+            ]
+          },
+          "points": 3,
+          "solution_steps": [
+            "Une minute, c'est 60 s. On cherche combien de fois 60 s dans 1 935 s.",
+            "32 × 60 = 1 920 et 33 × 60 = 1 980, trop grand : il y a 32 minutes entières.",
+            "1 935 − 1 920 = 15 : il reste 15 s.",
+            "Les 9 chansons durent **32 min 15 s**.",
+            "Attention : lire 1 935 comme « 19 min 35 s » revient à croire qu'une minute compte 100 secondes."
+          ],
+          "hint": "Cherche le plus grand nombre de minutes entières dans 1 935 s."
+        },
+        {
+          "key": "q4",
+          "skill_id": "P020",
+          "statement": "On admet que toute la playlist dure 37 min 5 s. À quelle heure la musique s'arrête-t-elle ? Réponds en heures, minutes et secondes.",
+          "type": "texte",
+          "answer": {
+            "value": "18 h 24 min 3 s",
+            "accepted": [
+              "18 h 24 min 03 s",
+              "18 h 24 min 3",
+              "18 h 24 min 03",
+              "18 heures 24 minutes 3 secondes",
+              "18 heures 24 minutes et 3 secondes"
+            ]
+          },
+          "points": 4,
+          "solution_steps": [
+            "On ajoute 37 min 5 s à 17 h 46 min 58 s.",
+            "Les secondes : 58 + 5 = 63 s, soit 1 min 3 s.",
+            "Les minutes : 46 + 37 + 1 = 84 min, soit 1 h 24 min.",
+            "Les heures : 17 + 1 = 18.",
+            "La musique s'arrête à **18 h 24 min 3 s**."
+          ],
+          "hint": "Ajoute d'abord les secondes, puis les minutes, puis les heures, en faisant les échanges."
+        }
+      ],
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 3, Cours moyen deuxième année, Grandeurs et mesures, Le repérage dans le temps et les durées : « Résoudre des problèmes à une ou plusieurs étapes impliquant des durées »"
+    },
+    {
+      "id": "SX-P021-01",
+      "skill_id": "P021",
+      "skill_ids": [
+        "P021",
+        "D014"
+      ],
+      "school_level": "6e",
+      "title": "La course d'orientation",
+      "contexte": "Le collège Jean-Moulin organise une course d'orientation pour ses 112 élèves de 6e. Les départs ont lieu à partir de 9 h 15, toutes les 2 minutes.\n\nLe parcours relie le départ à l'arrivée en passant par trois balises :\ndu départ à la balise 1 : 750 m ;\nde la balise 1 à la balise 2 : 1,4 km ;\nde la balise 2 à la balise 3 : 85 dam ;\nde la balise 3 à l'arrivée : 6 hm.\n\nChaque balise est signalée par un ruban rouge de 45 cm, coupé dans une bobine de 5 m.\n\nÀ la balise 2, la montre de Lucas affiche qu'il a parcouru 2,3 km depuis le départ.",
+      "image": null,
+      "duree_estimee_min": 15,
+      "questions": [
+        {
+          "key": "q1",
+          "skill_id": "P021",
+          "statement": "Quelle est l'étape la plus longue ?",
+          "type": "qcm",
+          "choices": [
+            {
+              "key": "a",
+              "text": "Du départ à la balise 1",
+              "misconception": "L'élève compare les nombres écrits (750 est le plus grand) sans regarder les unités : 1,4 km = 1 400 m, c'est plus que 750 m."
+            },
+            {
+              "key": "b",
+              "text": "De la balise 1 à la balise 2",
+              "misconception": null
+            },
+            {
+              "key": "c",
+              "text": "De la balise 2 à la balise 3",
+              "misconception": "85 dam = 850 m : c'est moins que 1,4 km = 1 400 m."
+            },
+            {
+              "key": "d",
+              "text": "De la balise 3 à l'arrivée",
+              "misconception": "6 hm = 600 m : c'est même l'étape la plus courte."
+            }
+          ],
+          "answer": {
+            "value": "b"
+          },
+          "points": 1,
+          "solution_steps": [
+            "On écrit les quatre longueurs en mètres : 750 m ; 1,4 km = 1 400 m ; 85 dam = 850 m ; 6 hm = 600 m.",
+            "La plus longue est **l'étape de la balise 1 à la balise 2**."
+          ],
+          "hint": "Écris les quatre longueurs dans la même unité."
+        },
+        {
+          "key": "q2",
+          "skill_id": "P021",
+          "statement": "Quelle est la longueur de l'étape de la balise 2 à la balise 3, en kilomètres ?",
+          "type": "numerique",
+          "answer": {
+            "value": 0.85,
+            "unit": "km",
+            "accepted": [
+              "0,85 km",
+              "0,850",
+              "0,850 km"
+            ]
+          },
+          "points": 2,
+          "solution_steps": [
+            "1 dam = 10 m, donc 85 dam = 850 m.",
+            "1 km = 1 000 m : 850 m, ce sont 850 millièmes de kilomètre. $850 \\div 1\\,000 = 0{,}85$.",
+            "L'étape mesure **0,85 km**.",
+            "Attention : en passant à une unité plus grande, le nombre devient plus petit."
+          ],
+          "hint": "Écris d'abord cette longueur en mètres."
+        },
+        {
+          "key": "q3",
+          "skill_id": "D014",
+          "statement": "À la balise 2, de combien de mètres la montre de Lucas se trompe-t-elle ?",
+          "type": "numerique",
+          "answer": {
+            "value": 150,
+            "unit": "m",
+            "accepted": [
+              "150 m",
+              "150 mètres"
+            ]
+          },
+          "points": 3,
+          "solution_steps": [
+            "On écrit tout en mètres. 1,4 km = 1 km + 400 m = 1 400 m.",
+            "Du départ à la balise 2, Lucas a vraiment parcouru 750 + 1 400 = 2 150 m.",
+            "La montre affiche 2,3 km = 2 km + 300 m = 2 300 m.",
+            "2 300 − 2 150 = 150 : la montre se trompe de **150 m**, elle en affiche trop."
+          ],
+          "hint": "Calcule d'abord la distance vraiment parcourue jusqu'à la balise 2, en mètres."
+        },
+        {
+          "key": "q4",
+          "skill_id": "P021",
+          "statement": "Quelle est la longueur totale du parcours, en kilomètres ?",
+          "type": "numerique",
+          "answer": {
+            "value": 3.6,
+            "unit": "km",
+            "accepted": [
+              "3,6 km",
+              "3,60",
+              "3,60 km"
+            ]
+          },
+          "points": 4,
+          "solution_steps": [
+            "On écrit les quatre étapes dans la même unité, le mètre : 750 m ; 1 400 m ; 850 m ; 600 m.",
+            "750 + 1 400 + 850 + 600 = 3 600.",
+            "1 km = 1 000 m, donc 3 600 m = 3,6 km.",
+            "Le parcours mesure **3,6 km**."
+          ],
+          "hint": "Choisis une seule unité pour additionner les quatre étapes."
+        }
+      ],
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 3, classe de 6e, Grandeurs et mesures, Les longueurs : « Résoudre des problèmes impliquant des longueurs »"
+    },
+    {
+      "id": "SX-P022-01",
+      "skill_id": "P022",
+      "skill_ids": [
+        "P022",
+        "D024",
+        "B012"
+      ],
+      "school_level": "6e",
+      "title": "Le nouveau square",
+      "contexte": "La commune de Saint-Aubin aménage un square pour les 30 enfants du centre de loisirs. Il ouvrira le 1er juin.\n\nLe bac à sable est un carré de 3,45 m de côté. On l'entoure d'une bordure en bois.\n\nLa pelouse est un rectangle de 14,5 m de long et de 9,75 m de large. On l'entoure d'une clôture en grillage, en laissant une entrée de 1,5 m sans grillage. Le grillage est vendu en rouleaux de 10 m.\n\nDans le square du quartier voisin, le bac à sable est un rectangle de 4,6 m de long et de 2,8 m de large.",
+      "image": null,
+      "duree_estimee_min": 15,
+      "questions": [
+        {
+          "key": "q1",
+          "skill_id": "P022",
+          "statement": "Quel calcul donne le périmètre de la pelouse, en mètres ?",
+          "type": "qcm",
+          "choices": [
+            {
+              "key": "a",
+              "text": "$2 \\times 14{,}5 + 9{,}75$",
+              "misconception": "Sans parenthèses, on ne double que la longueur : il manque une largeur."
+            },
+            {
+              "key": "b",
+              "text": "$14{,}5 \\times 9{,}75$",
+              "misconception": "Ce produit donne l'aire de la pelouse, pas la longueur de son tour."
+            },
+            {
+              "key": "c",
+              "text": "$2 \\times (14{,}5 + 9{,}75)$",
+              "misconception": null
+            },
+            {
+              "key": "d",
+              "text": "$4 \\times 14{,}5$",
+              "misconception": "C'est la formule du carré ; or la pelouse est un rectangle, dont la largeur n'est pas égale à la longueur."
+            }
+          ],
+          "answer": {
+            "value": "c"
+          },
+          "points": 1,
+          "solution_steps": [
+            "La pelouse est un rectangle de longueur $L = 14{,}5$ m et de largeur $l = 9{,}75$ m.",
+            "La formule du périmètre d'un rectangle est $P = 2 \\times (L + l)$.",
+            "Le bon calcul est $2 \\times (14{,}5 + 9{,}75)$."
+          ],
+          "hint": "Le périmètre d'un rectangle compte deux longueurs et deux largeurs."
+        },
+        {
+          "key": "q2",
+          "skill_id": "D024",
+          "statement": "Quelle longueur de bordure faut-il pour le bac à sable carré ?",
+          "type": "numerique",
+          "answer": {
+            "value": 13.8,
+            "unit": "m",
+            "accepted": [
+              "13,8 m",
+              "13,80",
+              "13,80 m"
+            ]
+          },
+          "points": 2,
+          "solution_steps": [
+            "Le bac à sable est un carré de côté $c = 3{,}45$ m : $P = 4 \\times c$.",
+            "On pose la multiplication $3{,}45 \\times 4$ : $345 \\times 4 = 1\\,380$, et le résultat a deux chiffres après la virgule : 13,80.",
+            "Il faut **13,8 m** de bordure."
+          ],
+          "hint": "Un carré a quatre côtés de même longueur."
+        },
+        {
+          "key": "q3",
+          "skill_id": "P022",
+          "statement": "Quelle longueur de grillage faut-il pour clôturer la pelouse ?",
+          "type": "numerique",
+          "answer": {
+            "value": 47,
+            "unit": "m",
+            "accepted": [
+              "47 m",
+              "47m",
+              "47,0",
+              "47 mètres"
+            ]
+          },
+          "points": 4,
+          "solution_steps": [
+            "Le périmètre de la pelouse est $P = 2 \\times (L + l) = 2 \\times (14{,}5 + 9{,}75)$.",
+            "$14{,}5 + 9{,}75 = 24{,}25$, puis $2 \\times 24{,}25 = 48{,}5$ : le tour de la pelouse mesure 48,5 m.",
+            "L'entrée de 1,5 m reste sans grillage : 48,5 − 1,5 = 47.",
+            "Il faut **47 m** de grillage."
+          ],
+          "hint": "Calcule d'abord le tour complet de la pelouse."
+        },
+        {
+          "key": "q4",
+          "skill_id": "B012",
+          "statement": "Quel est le périmètre du bac à sable du quartier voisin ?",
+          "type": "numerique",
+          "answer": {
+            "value": 14.8,
+            "unit": "m",
+            "accepted": [
+              "14,8 m",
+              "14,80",
+              "14,80 m"
+            ]
+          },
+          "points": 2,
+          "solution_steps": [
+            "Ce bac est un rectangle : $P = 2 \\times (L + l) = 2 \\times (4{,}6 + 2{,}8)$.",
+            "On calcule d'abord la parenthèse : $4{,}6 + 2{,}8 = 7{,}4$.",
+            "Puis $2 \\times 7{,}4 = 14{,}8$.",
+            "Le périmètre est **14,8 m**.",
+            "Attention : sans la parenthèse, $2 \\times 4{,}6 + 2{,}8 = 12$, ce qui oublie une largeur."
+          ],
+          "hint": "Commence par le calcul entre parenthèses."
+        }
+      ],
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 3, classe de 6e, Grandeurs et mesures, Les longueurs : « L'élève sait calculer le périmètre d'un carré et d'un rectangle. »"
+    },
+    {
+      "id": "SX-P023-01",
+      "skill_id": "P023",
+      "skill_ids": [
+        "P023",
+        "G013",
+        "D009",
+        "E030"
+      ],
+      "school_level": "6e",
+      "title": "Le parc des Lilas",
+      "contexte": "Au parc des Lilas, ouvert de 8 h à 20 h, le jardinier entretient deux espaces ronds.\n\nLe massif de tulipes a la forme d'un disque de 8 m de rayon. Le jardinier veut l'entourer d'une bordure en métal, vendue 15 € le mètre.\n\nLe bassin a la forme d'un disque de 9 m de diamètre. Une allée en fait le tour, au bord de l'eau.\n\nHugo fait le tour du bassin à vélo, sur cette allée. Les roues de son vélo ont un diamètre de 75 cm. On considère qu'en un tour du bassin, chaque roue parcourt exactement le périmètre du bassin.\n\nDans tout l'exercice, on prend 3,14 pour $\\pi$.",
+      "image": null,
+      "duree_estimee_min": 20,
+      "questions": [
+        {
+          "key": "q1",
+          "skill_id": "G013",
+          "statement": "Quel est le diamètre du massif de tulipes ?",
+          "type": "numerique",
+          "answer": {
+            "value": 16,
+            "unit": "m",
+            "accepted": [
+              "16 m",
+              "16m",
+              "16 mètres"
+            ]
+          },
+          "points": 1,
+          "solution_steps": [
+            "Le diamètre d'un cercle mesure deux fois son rayon.",
+            "2 × 8 = 16 : le diamètre du massif est **16 m**."
+          ],
+          "hint": "Quel lien y a-t-il entre le rayon et le diamètre ?"
+        },
+        {
+          "key": "q2",
+          "skill_id": "P023",
+          "statement": "Quel est le périmètre du bassin ?",
+          "type": "numerique",
+          "answer": {
+            "value": 28.26,
+            "unit": "m",
+            "accepted": [
+              "28,26 m",
+              "28,260"
+            ]
+          },
+          "points": 3,
+          "solution_steps": [
+            "La formule du périmètre d'un disque est $P = d \\times \\pi$, où $d$ est le diamètre.",
+            "Le bassin a un diamètre de 9 m : $9 \\times 3{,}14 = 28{,}26$.",
+            "Le périmètre du bassin est **28,26 m**.",
+            "Attention : $2 \\times 9 \\times 3{,}14$ prendrait 9 m pour le rayon, alors que c'est le diamètre."
+          ],
+          "hint": "Repère si l'énoncé donne le rayon ou le diamètre du bassin."
+        },
+        {
+          "key": "q3",
+          "skill_id": "D009",
+          "statement": "Quelle longueur de bordure faut-il pour entourer le massif de tulipes ? Donne la valeur arrondie au dixième de mètre.",
+          "type": "numerique",
+          "answer": {
+            "value": 50.2,
+            "unit": "m",
+            "accepted": [
+              "50,2 m",
+              "50,20"
+            ]
+          },
+          "points": 2,
+          "solution_steps": [
+            "Le massif a un rayon de 8 m : $P = 2 \\times r \\times \\pi = 2 \\times 8 \\times 3{,}14 = 16 \\times 3{,}14 = 50{,}24$.",
+            "On encadre au dixième : $50{,}2 < 50{,}24 < 50{,}3$.",
+            "Le chiffre des centièmes est 4, inférieur à 5 : l'arrondi au dixième est 50,2.",
+            "Il faut environ **50,2 m** de bordure."
+          ],
+          "hint": "Calcule d'abord le périmètre exact avec 3,14, puis encadre-le entre deux dixièmes."
+        },
+        {
+          "key": "q4",
+          "skill_id": "E030",
+          "statement": "Le jardinier envisage un autre massif rond, de 24 m de rayon, c'est-à-dire un rayon 3 fois plus grand. Que devient la longueur de la bordure ?",
+          "type": "qcm",
+          "choices": [
+            {
+              "key": "a",
+              "text": "Elle est 9 fois plus longue",
+              "misconception": "L'élève multiplie par 3 deux fois. Or le périmètre est proportionnel au diamètre : il est multiplié par 3 seulement."
+            },
+            {
+              "key": "b",
+              "text": "Elle est plus longue de 16 m",
+              "misconception": "L'élève raisonne par ajout : le rayon augmente de 16 m, mais la bordure ne s'allonge pas de 16 m. Elle est multipliée par 3."
+            },
+            {
+              "key": "c",
+              "text": "On ne peut pas savoir sans connaître la valeur exacte de $\\pi$",
+              "misconception": "Quelle que soit la valeur de $\\pi$, le périmètre est le diamètre multiplié par $\\pi$ : il est proportionnel au diamètre."
+            },
+            {
+              "key": "d",
+              "text": "Elle est 3 fois plus longue",
+              "misconception": null
+            }
+          ],
+          "answer": {
+            "value": "d"
+          },
+          "points": 2,
+          "solution_steps": [
+            "Le périmètre d'un disque est proportionnel à son diamètre : $P = d \\times \\pi$.",
+            "Un rayon 3 fois plus grand donne un diamètre 3 fois plus grand, donc un périmètre 3 fois plus grand.",
+            "La bordure est **3 fois plus longue**."
+          ],
+          "hint": "Relis la formule du périmètre d'un disque : par quoi multiplie-t-on le diamètre ?"
+        },
+        {
+          "key": "q5",
+          "skill_id": "P023",
+          "statement": "Combien de tours chaque roue du vélo d'Hugo fait-elle pendant un tour du bassin ?",
+          "type": "numerique",
+          "answer": {
+            "value": 12,
+            "unit": "tours",
+            "accepted": [
+              "12 tours"
+            ]
+          },
+          "points": 4,
+          "solution_steps": [
+            "Le périmètre d'un disque est proportionnel à son diamètre.",
+            "Le diamètre du bassin est 9 m = 900 cm, et celui de la roue 75 cm. Combien de fois 75 cm dans 900 cm ? $75 \\times 4 = 300$ et $300 \\times 3 = 900$, donc $75 \\times 12 = 900$ : le diamètre du bassin est 12 fois celui de la roue.",
+            "Le tour du bassin est donc 12 fois plus long que le tour de la roue.",
+            "Vérification : roue, $75 \\times 3{,}14 = 235{,}5$ cm ; bassin, $900 \\times 3{,}14 = 2\\,826$ cm ; $12 \\times 235{,}5 = 2\\,826$.",
+            "Chaque roue fait **12 tours**."
+          ],
+          "hint": "Compare le diamètre du bassin et celui de la roue, dans la même unité."
+        }
+      ],
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 3, classe de 6e, Grandeurs et mesures, Les longueurs : « Calculer le périmètre d'un disque »"
+    },
+    {
+      "id": "SX-P024-01",
+      "skill_id": "P024",
+      "skill_ids": [
+        "P024",
+        "D004",
+        "B008"
+      ],
+      "school_level": "6e",
+      "title": "Le parquet du salon",
+      "contexte": "La famille Martin rénove son salon. La pièce est un rectangle de 8 m de long et 4,75 m de large ; ses murs mesurent 2,5 m de haut.\n\nOn pose du parquet sur tout le sol, sauf sur une plaque carrée de 2 m de côté, devant la cheminée, qui reste carrelée. Un paquet de lames de parquet couvre 3 m² et coûte 39,90 €.\n\nLe long des murs, on fixe des plinthes en bois, sauf devant la porte, qui mesure 0,9 m de large.\n\nLa chambre voisine sera aussi parquetée : il faut 26 m² de parquet pour elle.",
+      "image": null,
+      "duree_estimee_min": 15,
+      "questions": [
+        {
+          "key": "q1",
+          "skill_id": "P024",
+          "statement": "Quel calcul donne l'aire du sol du salon, en m² ?",
+          "type": "qcm",
+          "choices": [
+            {
+              "key": "a",
+              "text": "$2 \\times (8 + 4{,}75)$",
+              "misconception": "Ce calcul donne le périmètre du salon, c'est-à-dire la longueur de son tour, pas son aire."
+            },
+            {
+              "key": "b",
+              "text": "$8 \\times 4{,}75$",
+              "misconception": null
+            },
+            {
+              "key": "c",
+              "text": "$8 + 4{,}75$",
+              "misconception": "L'élève ajoute la longueur et la largeur : cela ne donne ni l'aire ni le périmètre."
+            },
+            {
+              "key": "d",
+              "text": "$8 \\times 2{,}5$",
+              "misconception": "2,5 m est la hauteur des murs : elle ne sert pas pour l'aire du sol."
+            }
+          ],
+          "answer": {
+            "value": "b"
+          },
+          "points": 1,
+          "solution_steps": [
+            "Le sol du salon est un rectangle de longueur $L = 8$ m et de largeur $l = 4{,}75$ m.",
+            "La formule de l'aire d'un rectangle est $A = L \\times l$.",
+            "Le bon calcul est $8 \\times 4{,}75$."
+          ],
+          "hint": "L'aire d'un rectangle se calcule avec sa longueur et sa largeur."
+        },
+        {
+          "key": "q2",
+          "skill_id": "D004",
+          "statement": "Quelle longueur de plinthes faut-il pour le salon ?",
+          "type": "numerique",
+          "answer": {
+            "value": 24.6,
+            "unit": "m",
+            "accepted": [
+              "24,6 m",
+              "24,60",
+              "24,60 m"
+            ]
+          },
+          "points": 2,
+          "solution_steps": [
+            "Le tour du salon : 8 + 4,75 + 8 + 4,75. On pose l'addition en alignant les virgules : 25,50.",
+            "Pas de plinthe devant la porte : 25,50 − 0,90 = 24,60.",
+            "Il faut **24,6 m** de plinthes."
+          ],
+          "hint": "Calcule d'abord le tour complet du salon."
+        },
+        {
+          "key": "q3",
+          "skill_id": "B008",
+          "statement": "Combien de paquets de parquet faut-il acheter pour la chambre ?",
+          "type": "numerique",
+          "answer": {
+            "value": 9,
+            "unit": "paquets",
+            "accepted": [
+              "9 paquets"
+            ]
+          },
+          "points": 2,
+          "solution_steps": [
+            "Un paquet couvre 3 m², et la chambre demande 26 m² de parquet. On divise 26 par 3.",
+            "26 = 3 × 8 + 2 : le quotient est 8 et le reste 2.",
+            "8 paquets ne couvrent que 24 m² ; il manque 2 m², il faut donc un paquet de plus.",
+            "Il faut acheter **9 paquets**."
+          ],
+          "hint": "Pose la division de 26 par 3, puis demande-toi à quoi correspond le reste."
+        },
+        {
+          "key": "q4",
+          "skill_id": "P024",
+          "statement": "Quelle aire de parquet faut-il pour le salon, en m² ?",
+          "type": "numerique",
+          "answer": {
+            "value": 34,
+            "unit": "m²",
+            "accepted": [
+              "34 m²",
+              "34 m2",
+              "34,0"
+            ]
+          },
+          "points": 4,
+          "solution_steps": [
+            "Aire du sol du salon : $A = L \\times l = 8 \\times 4{,}75 = 38$, soit 38 m².",
+            "Aire de la plaque carrée : $A = c \\times c = 2 \\times 2 = 4$, soit 4 m².",
+            "La plaque reste carrelée : 38 − 4 = 34.",
+            "Il faut **34 m²** de parquet pour le salon."
+          ],
+          "hint": "Le parquet couvre tout le sol, sauf la plaque devant la cheminée."
+        }
+      ],
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 3, classe de 6e, Grandeurs et mesures, Les aires : « Calculer l'aire d'un carré ou d'un rectangle »"
+    },
+    {
+      "id": "SX-P025-01",
+      "skill_id": "P025",
+      "skill_ids": [
+        "P025",
+        "D023",
+        "D004"
+      ],
+      "school_level": "6e",
+      "title": "La mosaïque du club d'arts plastiques",
+      "contexte": "Pour la fête du collège, les 18 élèves du club d'arts plastiques réalisent une mosaïque sur un panneau de bois de 1,35 m². Ils se retrouvent chaque jeudi à 12 h 30.\n\nD'abord, ils peignent le fond du panneau. Il leur reste deux pots de peinture : le premier permet de peindre 80 dm², le second 0,45 m².\n\nEnsuite, ils collent un grand soleil de 6,4 dm². Le soleil est entièrement recouvert de petits carreaux de céramique, sans trou ni chevauchement ; chaque carreau a une aire de 4 cm².\n\nLes carreaux sont vendus en sachets de 50.",
+      "image": null,
+      "duree_estimee_min": 15,
+      "questions": [
+        {
+          "key": "q1",
+          "skill_id": "P025",
+          "statement": "Quelle est l'aire du panneau en dm² ?",
+          "type": "qcm",
+          "choices": [
+            {
+              "key": "a",
+              "text": "13,5 dm²",
+              "misconception": "L'élève multiplie par 10, comme pour les longueurs (1 m = 10 dm). Pour les aires, 1 m² = 100 dm²."
+            },
+            {
+              "key": "b",
+              "text": "135 dm²",
+              "misconception": null
+            },
+            {
+              "key": "c",
+              "text": "1 350 dm²",
+              "misconception": "L'élève multiplie par 1 000 : or 1 m² = 100 dm², pas 1 000 dm²."
+            },
+            {
+              "key": "d",
+              "text": "0,0135 dm²",
+              "misconception": "L'élève divise au lieu de multiplier : en passant à une unité plus petite, le nombre devient plus grand."
+            }
+          ],
+          "answer": {
+            "value": "b"
+          },
+          "points": 2,
+          "solution_steps": [
+            "1 m² = 100 dm² : pour passer des m² aux dm², on multiplie par 100.",
+            "$1{,}35 \\times 100 = 135$.",
+            "L'aire du panneau est **135 dm²**."
+          ],
+          "hint": "Combien de dm² y a-t-il dans 1 m² ?"
+        },
+        {
+          "key": "q2",
+          "skill_id": "D023",
+          "statement": "Quelle est l'aire d'un petit carreau de céramique, en dm² ?",
+          "type": "numerique",
+          "answer": {
+            "value": 0.04,
+            "unit": "dm²",
+            "accepted": [
+              "0,04 dm²",
+              "0,04 dm2",
+              "0,040"
+            ]
+          },
+          "points": 2,
+          "solution_steps": [
+            "1 cm² est un centième de dm² : 1 cm² = 0,01 dm².",
+            "4 cm² = 4 centièmes de dm² : $4 \\div 100 = 0{,}04$.",
+            "Un carreau a une aire de **0,04 dm²**."
+          ],
+          "hint": "1 dm² = 100 cm² : un cm², c'est quelle part d'un dm² ?"
+        },
+        {
+          "key": "q3",
+          "skill_id": "D004",
+          "statement": "Quelle aire, en m², les deux pots de peinture permettent-ils de peindre en tout ?",
+          "type": "numerique",
+          "answer": {
+            "value": 1.25,
+            "unit": "m²",
+            "accepted": [
+              "1,25 m²",
+              "1,25 m2",
+              "1,250"
+            ]
+          },
+          "points": 2,
+          "solution_steps": [
+            "On écrit les deux aires en m². 1 dm² = 0,01 m², donc 80 dm² = 0,80 m².",
+            "On pose l'addition en alignant les virgules : 0,80 + 0,45 = 1,25.",
+            "Les deux pots permettent de peindre **1,25 m²**.",
+            "Attention : 0,8 + 0,45 ne fait pas 0,53 ; il faut aligner les dixièmes avec les dixièmes."
+          ],
+          "hint": "Écris les deux aires dans la même unité avant de les additionner."
+        },
+        {
+          "key": "q4",
+          "skill_id": "P025",
+          "statement": "Combien de petits carreaux faut-il pour recouvrir le soleil ?",
+          "type": "numerique",
+          "answer": {
+            "value": 160,
+            "unit": "carreaux",
+            "accepted": [
+              "160 carreaux"
+            ]
+          },
+          "points": 4,
+          "solution_steps": [
+            "On écrit l'aire du soleil en cm². 1 dm² = 100 cm², donc 6,4 dm² = $6{,}4 \\times 100 = 640$ cm².",
+            "Chaque carreau couvre 4 cm² : $640 \\div 4 = 160$.",
+            "Il faut **160 carreaux**.",
+            "Attention : 6,4 dm² = 64 cm² serait une conversion avec le rapport 10, celui des longueurs."
+          ],
+          "hint": "Écris d'abord l'aire du soleil dans la même unité que celle d'un carreau."
+        }
+      ],
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 3, classe de 6e, Grandeurs et mesures, Les aires : « Effectuer des conversions d'aire »"
+    },
+    {
+      "id": "SX-P026-01",
+      "skill_id": "P026",
+      "skill_ids": [
+        "P026",
+        "G020"
+      ],
+      "school_level": "6e",
+      "title": "Les coffrets de cubes en bois",
+      "contexte": "Le magasin de jouets « Petit Génie » vend des cubes en bois de 1 cm d'arête. Ils sont rangés dans des coffrets en forme de pavé, remplis sans trou. Le magasin ouvre à 9 h 30.\n\nLe coffret « Découverte » contient 2 couches de cubes ; chaque couche compte 16 rangées de 20 cubes. Il coûte 14,90 €.\n\nLe coffret « Grande tour » contient 11 couches de cubes ; chaque couche compte 5 rangées de 10 cubes.\n\nEn vitrine, la vendeuse a commencé à construire un pavé avec les mêmes cubes : c'est l'assemblage dessiné. Chaque cube posé repose sur la table ou sur un autre cube, et il n'y a aucun trou caché.",
+      "image": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 196.062 128.062\" width=\"196.062\" height=\"128.062\" font-family=\"system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif\" role=\"img\"><title>Assemblage de cubes en perspective, sur deux étages</title><rect width=\"100%\" height=\"100%\" fill=\"#ffffff\"/><polygon points=\"36.0,92.0 70.0,92.0 70.0,58.0 36.0,58.0\" fill=\"#ffffff\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linejoin=\"round\"/><polygon points=\"36.0,58.0 70.0,58.0 82.1,46.0 48.1,46.0\" fill=\"#f1f5f9\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linejoin=\"round\"/><polygon points=\"70.0,92.0 82.1,80.0 82.1,46.0 70.0,58.0\" fill=\"#cbd5e1\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linejoin=\"round\"/><polygon points=\"36.0,58.0 70.0,58.0 70.0,24.0 36.0,24.0\" fill=\"#ffffff\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linejoin=\"round\"/><polygon points=\"36.0,24.0 70.0,24.0 82.1,12.0 48.1,12.0\" fill=\"#f1f5f9\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linejoin=\"round\"/><polygon points=\"70.0,58.0 82.1,46.0 82.1,12.0 70.0,24.0\" fill=\"#cbd5e1\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linejoin=\"round\"/><polygon points=\"70.0,92.0 104.0,92.0 104.0,58.0 70.0,58.0\" fill=\"#ffffff\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linejoin=\"round\"/><polygon points=\"70.0,58.0 104.0,58.0 116.1,46.0 82.1,46.0\" fill=\"#f1f5f9\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linejoin=\"round\"/><polygon points=\"104.0,92.0 116.1,80.0 116.1,46.0 104.0,58.0\" fill=\"#cbd5e1\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linejoin=\"round\"/><polygon points=\"70.0,58.0 104.0,58.0 104.0,24.0 70.0,24.0\" fill=\"#ffffff\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linejoin=\"round\"/><polygon points=\"70.0,24.0 104.0,24.0 116.1,12.0 82.1,12.0\" fill=\"#f1f5f9\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linejoin=\"round\"/><polygon points=\"104.0,58.0 116.1,46.0 116.1,12.0 104.0,24.0\" fill=\"#cbd5e1\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linejoin=\"round\"/><polygon points=\"104.0,92.0 138.0,92.0 138.0,58.0 104.0,58.0\" fill=\"#ffffff\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linejoin=\"round\"/><polygon points=\"104.0,58.0 138.0,58.0 150.1,46.0 116.1,46.0\" fill=\"#f1f5f9\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linejoin=\"round\"/><polygon points=\"138.0,92.0 150.1,80.0 150.1,46.0 138.0,58.0\" fill=\"#cbd5e1\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linejoin=\"round\"/><polygon points=\"104.0,58.0 138.0,58.0 138.0,24.0 104.0,24.0\" fill=\"#ffffff\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linejoin=\"round\"/><polygon points=\"104.0,24.0 138.0,24.0 150.1,12.0 116.1,12.0\" fill=\"#f1f5f9\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linejoin=\"round\"/><polygon points=\"138.0,58.0 150.1,46.0 150.1,12.0 138.0,24.0\" fill=\"#cbd5e1\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linejoin=\"round\"/><polygon points=\"138.0,92.0 172.0,92.0 172.0,58.0 138.0,58.0\" fill=\"#ffffff\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linejoin=\"round\"/><polygon points=\"138.0,58.0 172.0,58.0 184.1,46.0 150.1,46.0\" fill=\"#f1f5f9\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linejoin=\"round\"/><polygon points=\"172.0,92.0 184.1,80.0 184.1,46.0 172.0,58.0\" fill=\"#cbd5e1\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linejoin=\"round\"/><polygon points=\"138.0,58.0 172.0,58.0 172.0,24.0 138.0,24.0\" fill=\"#ffffff\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linejoin=\"round\"/><polygon points=\"138.0,24.0 172.0,24.0 184.1,12.0 150.1,12.0\" fill=\"#f1f5f9\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linejoin=\"round\"/><polygon points=\"172.0,58.0 184.1,46.0 184.1,12.0 172.0,24.0\" fill=\"#cbd5e1\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linejoin=\"round\"/><polygon points=\"24.0,104.0 58.0,104.0 58.0,70.0 24.0,70.0\" fill=\"#ffffff\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linejoin=\"round\"/><polygon points=\"24.0,70.0 58.0,70.0 70.0,58.0 36.0,58.0\" fill=\"#f1f5f9\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linejoin=\"round\"/><polygon points=\"58.0,104.0 70.0,92.0 70.0,58.0 58.0,70.0\" fill=\"#cbd5e1\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linejoin=\"round\"/><polygon points=\"24.0,70.0 58.0,70.0 58.0,36.0 24.0,36.0\" fill=\"#ffffff\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linejoin=\"round\"/><polygon points=\"24.0,36.0 58.0,36.0 70.0,24.0 36.0,24.0\" fill=\"#f1f5f9\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linejoin=\"round\"/><polygon points=\"58.0,70.0 70.0,58.0 70.0,24.0 58.0,36.0\" fill=\"#cbd5e1\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linejoin=\"round\"/><polygon points=\"58.0,104.0 92.0,104.0 92.0,70.0 58.0,70.0\" fill=\"#ffffff\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linejoin=\"round\"/><polygon points=\"58.0,70.0 92.0,70.0 104.0,58.0 70.0,58.0\" fill=\"#f1f5f9\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linejoin=\"round\"/><polygon points=\"92.0,104.0 104.0,92.0 104.0,58.0 92.0,70.0\" fill=\"#cbd5e1\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linejoin=\"round\"/><polygon points=\"58.0,70.0 92.0,70.0 92.0,36.0 58.0,36.0\" fill=\"#ffffff\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linejoin=\"round\"/><polygon points=\"58.0,36.0 92.0,36.0 104.0,24.0 70.0,24.0\" fill=\"#f1f5f9\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linejoin=\"round\"/><polygon points=\"92.0,70.0 104.0,58.0 104.0,24.0 92.0,36.0\" fill=\"#cbd5e1\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linejoin=\"round\"/><polygon points=\"92.0,104.0 126.0,104.0 126.0,70.0 92.0,70.0\" fill=\"#ffffff\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linejoin=\"round\"/><polygon points=\"92.0,70.0 126.0,70.0 138.0,58.0 104.0,58.0\" fill=\"#f1f5f9\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linejoin=\"round\"/><polygon points=\"126.0,104.0 138.0,92.0 138.0,58.0 126.0,70.0\" fill=\"#cbd5e1\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linejoin=\"round\"/><polygon points=\"126.0,104.0 160.0,104.0 160.0,70.0 126.0,70.0\" fill=\"#ffffff\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linejoin=\"round\"/><polygon points=\"126.0,70.0 160.0,70.0 172.0,58.0 138.0,58.0\" fill=\"#f1f5f9\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linejoin=\"round\"/><polygon points=\"160.0,104.0 172.0,92.0 172.0,58.0 160.0,70.0\" fill=\"#cbd5e1\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linejoin=\"round\"/><polygon points=\"12.0,116.1 46.0,116.1 46.0,82.1 12.0,82.1\" fill=\"#ffffff\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linejoin=\"round\"/><polygon points=\"12.0,82.1 46.0,82.1 58.0,70.0 24.0,70.0\" fill=\"#f1f5f9\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linejoin=\"round\"/><polygon points=\"46.0,116.1 58.0,104.0 58.0,70.0 46.0,82.1\" fill=\"#cbd5e1\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linejoin=\"round\"/><polygon points=\"12.0,82.1 46.0,82.1 46.0,48.1 12.0,48.1\" fill=\"#ffffff\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linejoin=\"round\"/><polygon points=\"12.0,48.1 46.0,48.1 58.0,36.0 24.0,36.0\" fill=\"#f1f5f9\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linejoin=\"round\"/><polygon points=\"46.0,82.1 58.0,70.0 58.0,36.0 46.0,48.1\" fill=\"#cbd5e1\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linejoin=\"round\"/><polygon points=\"46.0,116.1 80.0,116.1 80.0,82.1 46.0,82.1\" fill=\"#ffffff\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linejoin=\"round\"/><polygon points=\"46.0,82.1 80.0,82.1 92.0,70.0 58.0,70.0\" fill=\"#f1f5f9\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linejoin=\"round\"/><polygon points=\"80.0,116.1 92.0,104.0 92.0,70.0 80.0,82.1\" fill=\"#cbd5e1\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linejoin=\"round\"/><polygon points=\"80.0,116.1 114.0,116.1 114.0,82.1 80.0,82.1\" fill=\"#ffffff\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linejoin=\"round\"/><polygon points=\"80.0,82.1 114.0,82.1 126.0,70.0 92.0,70.0\" fill=\"#f1f5f9\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linejoin=\"round\"/><polygon points=\"114.0,116.1 126.0,104.0 126.0,70.0 114.0,82.1\" fill=\"#cbd5e1\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linejoin=\"round\"/></svg>",
+      "duree_estimee_min": 15,
+      "questions": [
+        {
+          "key": "q1",
+          "skill_id": "P026",
+          "statement": "Quel est le volume d'un cube en bois du magasin ?",
+          "type": "qcm",
+          "choices": [
+            {
+              "key": "a",
+              "text": "1 cm³",
+              "misconception": null
+            },
+            {
+              "key": "b",
+              "text": "1 cm²",
+              "misconception": "Le cm² est une unité d'aire : il mesure une surface, comme une face du cube, pas la place qu'occupe le cube."
+            },
+            {
+              "key": "c",
+              "text": "6 cm³",
+              "misconception": "L'élève compte les 6 faces du cube. Or un cube de 1 cm d'arête est l'unité de volume : 1 cm³."
+            },
+            {
+              "key": "d",
+              "text": "12 cm",
+              "misconception": "L'élève compte les 12 arêtes du cube : c'est une longueur, pas un volume."
+            }
+          ],
+          "answer": {
+            "value": "a"
+          },
+          "points": 1,
+          "solution_steps": [
+            "Chaque cube en bois a une arête de 1 cm.",
+            "Un cube de 1 cm d'arête a un volume de **1 cm³** : c'est l'unité de volume."
+          ],
+          "hint": "Relis la première phrase."
+        },
+        {
+          "key": "q2",
+          "skill_id": "G020",
+          "statement": "Combien de cubes l'assemblage de la vitrine compte-t-il ?",
+          "type": "numerique",
+          "answer": {
+            "value": 18,
+            "unit": "cubes",
+            "accepted": [
+              "18 cubes"
+            ]
+          },
+          "points": 2,
+          "solution_steps": [
+            "On compte par étages. L'étage du bas est complet sauf une place, devant à droite : 3 rangées de 4 places, moins 1, soit 11 cubes.",
+            "L'étage du haut : 4 cubes sur la rangée du fond, 2 sur la rangée du milieu, 1 sur la rangée de devant, soit 7 cubes.",
+            "11 + 7 = 18 : l'assemblage compte **18 cubes**, dont certains sont cachés."
+          ],
+          "hint": "Compte étage par étage, en pensant aux cubes cachés sous ceux qu'on voit."
+        },
+        {
+          "key": "q3",
+          "skill_id": "P026",
+          "statement": "La vendeuse complète l'assemblage pour obtenir un pavé de 2 couches, sans changer sa longueur ni sa largeur. Quel sera le volume de ce pavé, en cm³ ?",
+          "type": "numerique",
+          "answer": {
+            "value": 24,
+            "unit": "cm³",
+            "accepted": [
+              "24 cm³",
+              "24 cm3"
+            ]
+          },
+          "points": 2,
+          "solution_steps": [
+            "Le pavé terminé a 2 couches ; chaque couche compte 3 rangées de 4 cubes.",
+            "Une couche : 3 × 4 = 12 cubes. Deux couches : 2 × 12 = 24 cubes.",
+            "Chaque cube a un volume de 1 cm³ : le pavé aura un volume de **24 cm³**."
+          ],
+          "hint": "Combien de cubes compte une couche complète ?"
+        },
+        {
+          "key": "q4",
+          "skill_id": "P026",
+          "statement": "Les deux coffrets n'ont pas le même volume. De combien de cm³ leurs volumes diffèrent-ils ?",
+          "type": "numerique",
+          "answer": {
+            "value": 90,
+            "unit": "cm³",
+            "accepted": [
+              "90 cm³",
+              "90 cm3"
+            ]
+          },
+          "points": 4,
+          "solution_steps": [
+            "Coffret Découverte : une couche compte 16 × 20 = 320 cubes ; 2 couches, 2 × 320 = 640 cubes, soit 640 cm³.",
+            "Coffret Grande tour : une couche compte 5 × 10 = 50 cubes ; 11 couches, 11 × 50 = 550 cubes, soit 550 cm³.",
+            "640 − 550 = 90.",
+            "Les volumes diffèrent de **90 cm³** : le coffret Découverte, qui a moins de couches, a le plus grand volume.",
+            "Attention : additionner les nombres (2 + 16 + 20 et 11 + 5 + 10) ne donne pas un volume."
+          ],
+          "hint": "Calcule le volume de chaque coffret, couche par couche."
+        }
+      ],
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 3, classe de 6e, Grandeurs et mesures, Les volumes : « Comparer des volumes »"
+    },
+    {
+      "id": "SX-P027-01",
+      "skill_id": "P027",
+      "skill_ids": [
+        "P027",
+        "D004",
+        "P014"
+      ],
+      "school_level": "6e",
+      "title": "Le voyage vers Montpellier",
+      "contexte": "Cet été, la famille Benali va de Lille à Montpellier. Elle compare trois façons de voyager. La famille compte deux adultes et deux enfants, de 8 et 11 ans.\n\nEn train, le départ de Lille est à 7 h 46 et l'arrivée à Montpellier à 12 h 34. Un billet adulte coûte 89 €.\n\nEn voiture, le GPS annonce 9,75 h de route. La famille prévoit en plus 1,5 h de pauses.\n\nEn avion, le vol décolle à 10 h 45 et dure 1,35 h. Il faut aussi arriver à l'aéroport 2 h avant le décollage.",
+      "image": null,
+      "duree_estimee_min": 15,
+      "questions": [
+        {
+          "key": "q1",
+          "skill_id": "P027",
+          "statement": "Écris en heures et minutes la durée de route annoncée par le GPS.",
+          "type": "texte",
+          "answer": {
+            "value": "9 h 45 min",
+            "accepted": [
+              "9 h 45",
+              "9h45",
+              "9 heures 45 minutes",
+              "9 heures et 45 minutes",
+              "9 h et 45 min"
+            ]
+          },
+          "points": 2,
+          "solution_steps": [
+            "9,75 h, c'est 9 h et 0,75 h.",
+            "0,75 h, ce sont les trois quarts d'une heure. Un quart d'heure dure 15 min, donc 0,75 h = $3 \\times 15 = 45$ min.",
+            "9,75 h = **9 h 45 min**.",
+            "Attention : 9,75 h n'est pas 9 h 75 min, car une heure compte 60 minutes, pas 100."
+          ],
+          "hint": "Quelle part d'une heure représente 0,75 h ?"
+        },
+        {
+          "key": "q2",
+          "skill_id": "D004",
+          "statement": "Combien d'heures le voyage en voiture durerait-il, pauses comprises ? Réponds avec un nombre décimal.",
+          "type": "numerique",
+          "answer": {
+            "value": 11.25,
+            "unit": "h",
+            "accepted": [
+              "11,25 h",
+              "11,25 heures"
+            ]
+          },
+          "points": 2,
+          "solution_steps": [
+            "On ajoute la durée de route et celle des pauses : 9,75 + 1,5.",
+            "On pose l'addition en alignant les virgules : 9,75 + 1,50 = 11,25.",
+            "Le voyage durerait **11,25 h**, c'est-à-dire 11 h 15 min."
+          ],
+          "hint": "Aligne les virgules avant d'additionner."
+        },
+        {
+          "key": "q3",
+          "skill_id": "P014",
+          "statement": "Combien de temps dure le trajet en train ? Réponds en heures et minutes.",
+          "type": "texte",
+          "answer": {
+            "value": "4 h 48 min",
+            "accepted": [
+              "4 h 48",
+              "4h48",
+              "4 heures 48 minutes",
+              "4 heures et 48 minutes",
+              "4 h et 48 min"
+            ]
+          },
+          "points": 2,
+          "solution_steps": [
+            "Le train part à 7 h 46 et arrive à 12 h 34.",
+            "De 7 h 46 à 8 h, il s'écoule 14 min. De 8 h à 12 h, 4 h. De 12 h à 12 h 34, 34 min.",
+            "14 + 34 = 48 : le trajet dure **4 h 48 min**."
+          ],
+          "hint": "Avance jusqu'à l'heure ronde, puis continue."
+        },
+        {
+          "key": "q4",
+          "skill_id": "P027",
+          "statement": "À quelle heure l'avion atterrit-il ? Réponds en heures et minutes.",
+          "type": "texte",
+          "answer": {
+            "value": "12 h 06",
+            "accepted": [
+              "12h06",
+              "12:06",
+              "12 h 06 min",
+              "12 heures 06",
+              "12 heures 06 minutes",
+              "12 h 6",
+              "12h6"
+            ]
+          },
+          "points": 4,
+          "solution_steps": [
+            "Le vol dure 1,35 h, c'est-à-dire 1 h et 0,35 h.",
+            "0,35 h = 0,25 h + 0,1 h. 0,25 h est un quart d'heure : 15 min. 0,1 h est un dixième d'heure : $60 \\div 10 = 6$ min. Donc 0,35 h = 15 + 6 = 21 min : le vol dure 1 h 21 min.",
+            "10 h 45 + 1 h = 11 h 45 ; puis 11 h 45 + 15 min = 12 h ; il reste 21 − 15 = 6 min.",
+            "L'avion atterrit à **12 h 06**.",
+            "Attention : 1,35 h n'est pas 1 h 35 min. Les 2 h à l'aéroport se passent avant le décollage."
+          ],
+          "hint": "Écris d'abord la durée du vol en heures et minutes."
+        }
+      ],
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 3, classe de 6e, Grandeurs et mesures, Le repérage dans le temps et les durées : « Effectuer des calculs sur des horaires et des durées »"
     }
   ]
 }

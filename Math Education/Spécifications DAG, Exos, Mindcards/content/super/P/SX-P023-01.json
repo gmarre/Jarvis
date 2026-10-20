@@ -1,0 +1,144 @@
+{
+  "id": "SX-P023-01",
+  "skill_id": "P023",
+  "skill_ids": [
+    "P023",
+    "G013",
+    "D009",
+    "E030"
+  ],
+  "school_level": "6e",
+  "title": "Le parc des Lilas",
+  "contexte": "Au parc des Lilas, ouvert de 8 h à 20 h, le jardinier entretient deux espaces ronds.\n\nLe massif de tulipes a la forme d'un disque de 8 m de rayon. Le jardinier veut l'entourer d'une bordure en métal, vendue 15 € le mètre.\n\nLe bassin a la forme d'un disque de 9 m de diamètre. Une allée en fait le tour, au bord de l'eau.\n\nHugo fait le tour du bassin à vélo, sur cette allée. Les roues de son vélo ont un diamètre de 75 cm. On considère qu'en un tour du bassin, chaque roue parcourt exactement le périmètre du bassin.\n\nDans tout l'exercice, on prend 3,14 pour $\\pi$.",
+  "image": null,
+  "duree_estimee_min": 20,
+  "questions": [
+    {
+      "key": "q1",
+      "skill_id": "G013",
+      "statement": "Quel est le diamètre du massif de tulipes ?",
+      "type": "numerique",
+      "answer": {
+        "value": 16,
+        "unit": "m",
+        "accepted": [
+          "16 m",
+          "16m",
+          "16 mètres"
+        ]
+      },
+      "points": 1,
+      "solution_steps": [
+        "Le diamètre d'un cercle mesure deux fois son rayon.",
+        "2 × 8 = 16 : le diamètre du massif est **16 m**."
+      ],
+      "hint": "Quel lien y a-t-il entre le rayon et le diamètre ?"
+    },
+    {
+      "key": "q2",
+      "skill_id": "P023",
+      "statement": "Quel est le périmètre du bassin ?",
+      "type": "numerique",
+      "answer": {
+        "value": 28.26,
+        "unit": "m",
+        "accepted": [
+          "28,26 m",
+          "28,260"
+        ]
+      },
+      "points": 3,
+      "solution_steps": [
+        "La formule du périmètre d'un disque est $P = d \\times \\pi$, où $d$ est le diamètre.",
+        "Le bassin a un diamètre de 9 m : $9 \\times 3{,}14 = 28{,}26$.",
+        "Le périmètre du bassin est **28,26 m**.",
+        "Attention : $2 \\times 9 \\times 3{,}14$ prendrait 9 m pour le rayon, alors que c'est le diamètre."
+      ],
+      "hint": "Repère si l'énoncé donne le rayon ou le diamètre du bassin."
+    },
+    {
+      "key": "q3",
+      "skill_id": "D009",
+      "statement": "Quelle longueur de bordure faut-il pour entourer le massif de tulipes ? Donne la valeur arrondie au dixième de mètre.",
+      "type": "numerique",
+      "answer": {
+        "value": 50.2,
+        "unit": "m",
+        "accepted": [
+          "50,2 m",
+          "50,20"
+        ]
+      },
+      "points": 2,
+      "solution_steps": [
+        "Le massif a un rayon de 8 m : $P = 2 \\times r \\times \\pi = 2 \\times 8 \\times 3{,}14 = 16 \\times 3{,}14 = 50{,}24$.",
+        "On encadre au dixième : $50{,}2 < 50{,}24 < 50{,}3$.",
+        "Le chiffre des centièmes est 4, inférieur à 5 : l'arrondi au dixième est 50,2.",
+        "Il faut environ **50,2 m** de bordure."
+      ],
+      "hint": "Calcule d'abord le périmètre exact avec 3,14, puis encadre-le entre deux dixièmes."
+    },
+    {
+      "key": "q4",
+      "skill_id": "E030",
+      "statement": "Le jardinier envisage un autre massif rond, de 24 m de rayon, c'est-à-dire un rayon 3 fois plus grand. Que devient la longueur de la bordure ?",
+      "type": "qcm",
+      "choices": [
+        {
+          "key": "a",
+          "text": "Elle est 9 fois plus longue",
+          "misconception": "L'élève multiplie par 3 deux fois. Or le périmètre est proportionnel au diamètre : il est multiplié par 3 seulement."
+        },
+        {
+          "key": "b",
+          "text": "Elle est plus longue de 16 m",
+          "misconception": "L'élève raisonne par ajout : le rayon augmente de 16 m, mais la bordure ne s'allonge pas de 16 m. Elle est multipliée par 3."
+        },
+        {
+          "key": "c",
+          "text": "On ne peut pas savoir sans connaître la valeur exacte de $\\pi$",
+          "misconception": "Quelle que soit la valeur de $\\pi$, le périmètre est le diamètre multiplié par $\\pi$ : il est proportionnel au diamètre."
+        },
+        {
+          "key": "d",
+          "text": "Elle est 3 fois plus longue",
+          "misconception": null
+        }
+      ],
+      "answer": {
+        "value": "d"
+      },
+      "points": 2,
+      "solution_steps": [
+        "Le périmètre d'un disque est proportionnel à son diamètre : $P = d \\times \\pi$.",
+        "Un rayon 3 fois plus grand donne un diamètre 3 fois plus grand, donc un périmètre 3 fois plus grand.",
+        "La bordure est **3 fois plus longue**."
+      ],
+      "hint": "Relis la formule du périmètre d'un disque : par quoi multiplie-t-on le diamètre ?"
+    },
+    {
+      "key": "q5",
+      "skill_id": "P023",
+      "statement": "Combien de tours chaque roue du vélo d'Hugo fait-elle pendant un tour du bassin ?",
+      "type": "numerique",
+      "answer": {
+        "value": 12,
+        "unit": "tours",
+        "accepted": [
+          "12 tours"
+        ]
+      },
+      "points": 4,
+      "solution_steps": [
+        "Le périmètre d'un disque est proportionnel à son diamètre.",
+        "Le diamètre du bassin est 9 m = 900 cm, et celui de la roue 75 cm. Combien de fois 75 cm dans 900 cm ? $75 \\times 4 = 300$ et $300 \\times 3 = 900$, donc $75 \\times 12 = 900$ : le diamètre du bassin est 12 fois celui de la roue.",
+        "Le tour du bassin est donc 12 fois plus long que le tour de la roue.",
+        "Vérification : roue, $75 \\times 3{,}14 = 235{,}5$ cm ; bassin, $900 \\times 3{,}14 = 2\\,826$ cm ; $12 \\times 235{,}5 = 2\\,826$.",
+        "Chaque roue fait **12 tours**."
+      ],
+      "hint": "Compare le diamètre du bassin et celui de la roue, dans la même unité."
+    }
+  ],
+  "review_status": "relu_agent",
+  "programme_ref": "Cycle 3, classe de 6e, Grandeurs et mesures, Les longueurs : « Calculer le périmètre d'un disque »"
+}

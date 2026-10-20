@@ -1,0 +1,140 @@
+{
+  "id": "SX-P018-01",
+  "skill_id": "P018",
+  "skill_ids": [
+    "P018",
+    "B039",
+    "D017"
+  ],
+  "school_level": "CM2",
+  "title": "Le grand jeu de la kermesse",
+  "contexte": "Pour la kermesse, les élèves de CM2 fabriquent un grand jeu de l'oie. Ils ont deux semaines pour le terminer.\n\nLe plateau est un rectangle de carton de 48 cm de long et 24 cm de large. Ils le recouvrent entièrement de cases carrées de 6 cm de côté, sans trou ni chevauchement.\n\nLe carton leur a coûté 2,35 € et la peinture 4,80 €. Pour payer les deux, ils ont donné un billet de 10 €.\n\nPour un second jeu, ils hésitent entre deux plateaux qui ont tous les deux 112 cm de périmètre :\nun plateau carré de 28 cm de côté ;\nun plateau rectangulaire de 36 cm de long et 20 cm de large.",
+  "image": null,
+  "duree_estimee_min": 15,
+  "questions": [
+    {
+      "key": "q1",
+      "skill_id": "P018",
+      "statement": "Pour calculer l'aire du premier plateau, en cm², de quelles informations as-tu besoin ?",
+      "type": "qcm",
+      "choices": [
+        {
+          "key": "a",
+          "text": "Le côté d'une case (6 cm)",
+          "misconception": "Le côté d'une case sert à compter les cases du jeu, pas à exprimer l'aire du plateau en cm²."
+        },
+        {
+          "key": "b",
+          "text": "La longueur (48 cm) et la largeur (24 cm)",
+          "misconception": null
+        },
+        {
+          "key": "c",
+          "text": "Le périmètre (112 cm)",
+          "misconception": "C'est le périmètre des plateaux du second jeu ; de plus, l'aire n'est pas le périmètre."
+        }
+      ],
+      "answer": {
+        "value": "b"
+      },
+      "points": 1,
+      "solution_steps": [
+        "L'aire du plateau se trouve en comptant les carrés de 1 cm de côté qui le recouvrent.",
+        "Il faut donc sa longueur, 48 cm, et sa largeur, 24 cm.",
+        "Le côté des cases et le périmètre des plateaux du second jeu ne servent pas ici."
+      ],
+      "hint": "Relis la phrase qui décrit le premier plateau."
+    },
+    {
+      "key": "q2",
+      "skill_id": "B039",
+      "statement": "Combien de cases y a-t-il dans une rangée, le long de la longueur du plateau ?",
+      "type": "numerique",
+      "answer": {
+        "value": 8,
+        "unit": "cases",
+        "accepted": [
+          "8 cases"
+        ]
+      },
+      "points": 2,
+      "solution_steps": [
+        "La longueur du plateau mesure 48 cm, et chaque case mesure 6 cm de côté.",
+        "On cherche combien de fois 6 dans 48 : 48 ÷ 6 = 8, car 6 × 8 = 48.",
+        "Il y a **8 cases** dans une rangée."
+      ],
+      "hint": "Combien de cases de 6 cm faut-il mettre bout à bout pour faire 48 cm ?"
+    },
+    {
+      "key": "q3",
+      "skill_id": "P018",
+      "statement": "Quelle est l'aire du premier plateau, en cm² ?",
+      "type": "numerique",
+      "answer": {
+        "value": 1152,
+        "unit": "cm²",
+        "accepted": [
+          "1 152",
+          "1 152 cm²",
+          "1152 cm²",
+          "1152 cm2"
+        ]
+      },
+      "points": 3,
+      "solution_steps": [
+        "On recouvre le plateau de carrés de 1 cm de côté : 24 rangées de 48 carrés.",
+        "24 × 48 = 1 152 (on pose la multiplication : 48 × 4 = 192 ; 48 × 20 = 960 ; 192 + 960 = 1 152).",
+        "L'aire du plateau est **1 152 cm²**.",
+        "Attention : 48 + 24 + 48 + 24 = 144 donne le périmètre, en cm, pas l'aire."
+      ],
+      "hint": "Combien de rangées de carrés de 1 cm de côté faut-il, et combien de carrés par rangée ?"
+    },
+    {
+      "key": "q4",
+      "skill_id": "D017",
+      "statement": "Combien d'argent leur a-t-on rendu ?",
+      "type": "numerique",
+      "answer": {
+        "value": 2.85,
+        "unit": "€",
+        "accepted": [
+          "2,85 €",
+          "2,85 euros",
+          "2,85€",
+          "2 € 85"
+        ]
+      },
+      "points": 2,
+      "solution_steps": [
+        "Le carton et la peinture coûtent 2,35 + 4,80 = 7,15 €.",
+        "Ils ont donné 10 € : 10,00 − 7,15 = 2,85.",
+        "On leur a rendu **2,85 €**."
+      ],
+      "hint": "Calcule d'abord le prix total des deux achats."
+    },
+    {
+      "key": "q5",
+      "skill_id": "P018",
+      "statement": "De combien de cm² l'aire du plus grand des deux plateaux du second jeu dépasse-t-elle celle de l'autre ?",
+      "type": "numerique",
+      "answer": {
+        "value": 64,
+        "unit": "cm²",
+        "accepted": [
+          "64 cm²",
+          "64 cm2"
+        ]
+      },
+      "points": 4,
+      "solution_steps": [
+        "Plateau carré : 28 rangées de 28 carrés de 1 cm de côté, 28 × 28 = 784, soit 784 cm².",
+        "Plateau rectangulaire : 20 rangées de 36 carrés, 20 × 36 = 720, soit 720 cm².",
+        "Le plateau carré a la plus grande aire : 784 − 720 = 64.",
+        "Son aire dépasse celle du plateau rectangulaire de **64 cm²**, alors que les deux plateaux ont le même périmètre."
+      ],
+      "hint": "Deux figures de même périmètre n'ont pas forcément la même aire : calcule les deux."
+    }
+  ],
+  "review_status": "relu_agent",
+  "programme_ref": "Cycle 3, Cours moyen deuxième année, Grandeurs et mesures, Les aires : « Déterminer l'aire d'un carré ou d'un rectangle »"
+}

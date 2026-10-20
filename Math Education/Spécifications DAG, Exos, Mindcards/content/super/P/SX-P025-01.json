@@ -1,0 +1,122 @@
+{
+  "id": "SX-P025-01",
+  "skill_id": "P025",
+  "skill_ids": [
+    "P025",
+    "D023",
+    "D004"
+  ],
+  "school_level": "6e",
+  "title": "La mosaïque du club d'arts plastiques",
+  "contexte": "Pour la fête du collège, les 18 élèves du club d'arts plastiques réalisent une mosaïque sur un panneau de bois de 1,35 m². Ils se retrouvent chaque jeudi à 12 h 30.\n\nD'abord, ils peignent le fond du panneau. Il leur reste deux pots de peinture : le premier permet de peindre 80 dm², le second 0,45 m².\n\nEnsuite, ils collent un grand soleil de 6,4 dm². Le soleil est entièrement recouvert de petits carreaux de céramique, sans trou ni chevauchement ; chaque carreau a une aire de 4 cm².\n\nLes carreaux sont vendus en sachets de 50.",
+  "image": null,
+  "duree_estimee_min": 15,
+  "questions": [
+    {
+      "key": "q1",
+      "skill_id": "P025",
+      "statement": "Quelle est l'aire du panneau en dm² ?",
+      "type": "qcm",
+      "choices": [
+        {
+          "key": "a",
+          "text": "13,5 dm²",
+          "misconception": "L'élève multiplie par 10, comme pour les longueurs (1 m = 10 dm). Pour les aires, 1 m² = 100 dm²."
+        },
+        {
+          "key": "b",
+          "text": "135 dm²",
+          "misconception": null
+        },
+        {
+          "key": "c",
+          "text": "1 350 dm²",
+          "misconception": "L'élève multiplie par 1 000 : or 1 m² = 100 dm², pas 1 000 dm²."
+        },
+        {
+          "key": "d",
+          "text": "0,0135 dm²",
+          "misconception": "L'élève divise au lieu de multiplier : en passant à une unité plus petite, le nombre devient plus grand."
+        }
+      ],
+      "answer": {
+        "value": "b"
+      },
+      "points": 2,
+      "solution_steps": [
+        "1 m² = 100 dm² : pour passer des m² aux dm², on multiplie par 100.",
+        "$1{,}35 \\times 100 = 135$.",
+        "L'aire du panneau est **135 dm²**."
+      ],
+      "hint": "Combien de dm² y a-t-il dans 1 m² ?"
+    },
+    {
+      "key": "q2",
+      "skill_id": "D023",
+      "statement": "Quelle est l'aire d'un petit carreau de céramique, en dm² ?",
+      "type": "numerique",
+      "answer": {
+        "value": 0.04,
+        "unit": "dm²",
+        "accepted": [
+          "0,04 dm²",
+          "0,04 dm2",
+          "0,040"
+        ]
+      },
+      "points": 2,
+      "solution_steps": [
+        "1 cm² est un centième de dm² : 1 cm² = 0,01 dm².",
+        "4 cm² = 4 centièmes de dm² : $4 \\div 100 = 0{,}04$.",
+        "Un carreau a une aire de **0,04 dm²**."
+      ],
+      "hint": "1 dm² = 100 cm² : un cm², c'est quelle part d'un dm² ?"
+    },
+    {
+      "key": "q3",
+      "skill_id": "D004",
+      "statement": "Quelle aire, en m², les deux pots de peinture permettent-ils de peindre en tout ?",
+      "type": "numerique",
+      "answer": {
+        "value": 1.25,
+        "unit": "m²",
+        "accepted": [
+          "1,25 m²",
+          "1,25 m2",
+          "1,250"
+        ]
+      },
+      "points": 2,
+      "solution_steps": [
+        "On écrit les deux aires en m². 1 dm² = 0,01 m², donc 80 dm² = 0,80 m².",
+        "On pose l'addition en alignant les virgules : 0,80 + 0,45 = 1,25.",
+        "Les deux pots permettent de peindre **1,25 m²**.",
+        "Attention : 0,8 + 0,45 ne fait pas 0,53 ; il faut aligner les dixièmes avec les dixièmes."
+      ],
+      "hint": "Écris les deux aires dans la même unité avant de les additionner."
+    },
+    {
+      "key": "q4",
+      "skill_id": "P025",
+      "statement": "Combien de petits carreaux faut-il pour recouvrir le soleil ?",
+      "type": "numerique",
+      "answer": {
+        "value": 160,
+        "unit": "carreaux",
+        "accepted": [
+          "160 carreaux"
+        ]
+      },
+      "points": 4,
+      "solution_steps": [
+        "On écrit l'aire du soleil en cm². 1 dm² = 100 cm², donc 6,4 dm² = $6{,}4 \\times 100 = 640$ cm².",
+        "Chaque carreau couvre 4 cm² : $640 \\div 4 = 160$.",
+        "Il faut **160 carreaux**.",
+        "Attention : 6,4 dm² = 64 cm² serait une conversion avec le rapport 10, celui des longueurs."
+      ],
+      "hint": "Écris d'abord l'aire du soleil dans la même unité que celle d'un carreau."
+    }
+  ],
+  "review_status": "relu_agent",
+  "programme_ref": "Cycle 3, classe de 6e, Grandeurs et mesures, Les aires : « Effectuer des conversions d'aire »"
+}

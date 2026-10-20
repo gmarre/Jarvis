@@ -1,0 +1,146 @@
+{
+  "id": "SX-P019-01",
+  "skill_id": "P019",
+  "skill_ids": [
+    "P019",
+    "P018",
+    "B008"
+  ],
+  "school_level": "CM2",
+  "title": "Le carrelage de la cuisine",
+  "contexte": "M. Rossi refait le sol de sa cuisine, qui a la forme d'un rectangle de 5 m de long et 3 m de large. Les murs de la cuisine mesurent 250 cm de haut.\n\nPour le sol, il a choisi des carreaux carrés de 2 dm de côté.\n\nPour la crédence, au-dessus de l'évier, il lui faut 75 carreaux d'une autre couleur. Ces carreaux sont vendus par boîtes de 6 ; une boîte coûte 18 €.\n\nLe long du plan de travail, il colle une frise de mosaïque formée de 40 petits carrés de verre. Chaque petit carré a une aire de 25 cm².\n\nLe chantier commence lundi à 8 h 30.",
+  "image": null,
+  "duree_estimee_min": 15,
+  "questions": [
+    {
+      "key": "q1",
+      "skill_id": "P019",
+      "statement": "Quelle est l'aire d'un carreau du sol ?",
+      "type": "qcm",
+      "choices": [
+        {
+          "key": "a",
+          "text": "2 dm²",
+          "misconception": "L'élève donne la longueur du côté, 2 dm, au lieu de l'aire du carreau."
+        },
+        {
+          "key": "b",
+          "text": "8 dm²",
+          "misconception": "L'élève fait le tour du carreau : 2 + 2 + 2 + 2 = 8, c'est son périmètre, en dm, pas son aire."
+        },
+        {
+          "key": "c",
+          "text": "4 dm²",
+          "misconception": null
+        },
+        {
+          "key": "d",
+          "text": "4 dm",
+          "misconception": "Le nombre est juste, mais une aire ne s'exprime pas en dm : le dm est une unité de longueur."
+        }
+      ],
+      "answer": {
+        "value": "c"
+      },
+      "points": 1,
+      "solution_steps": [
+        "Un carreau du sol est un carré de 2 dm de côté.",
+        "On peut le recouvrir de 2 rangées de 2 carrés de 1 dm de côté : 2 × 2 = 4 carrés.",
+        "Son aire est **4 dm²**."
+      ],
+      "hint": "Combien de carrés de 1 dm de côté faut-il pour recouvrir un carreau ?"
+    },
+    {
+      "key": "q2",
+      "skill_id": "P018",
+      "statement": "Quelle est l'aire du sol de la cuisine, en m² ?",
+      "type": "numerique",
+      "answer": {
+        "value": 15,
+        "unit": "m²",
+        "accepted": [
+          "15 m²",
+          "15 m2"
+        ]
+      },
+      "points": 2,
+      "solution_steps": [
+        "On recouvre le sol de carrés de 1 m de côté : 3 rangées de 5 carrés.",
+        "3 × 5 = 15.",
+        "L'aire du sol est **15 m²**.",
+        "Attention : 5 + 3 + 5 + 3 = 16 donne le périmètre de la cuisine, en m, pas son aire."
+      ],
+      "hint": "Combien de carrés de 1 m de côté faut-il pour recouvrir le sol ?"
+    },
+    {
+      "key": "q3",
+      "skill_id": "P019",
+      "statement": "On admet que le sol de la cuisine a une aire de 15 m². Quelle est cette aire en dm² ?",
+      "type": "numerique",
+      "answer": {
+        "value": 1500,
+        "unit": "dm²",
+        "accepted": [
+          "1 500",
+          "1 500 dm²",
+          "1500 dm²",
+          "1500 dm2"
+        ]
+      },
+      "points": 3,
+      "solution_steps": [
+        "Un carré de 1 m de côté se recouvre de 10 rangées de 10 carrés de 1 dm de côté : 1 m² = 100 dm².",
+        "15 m², c'est donc 15 × 100 = 1 500 dm².",
+        "L'aire du sol est **1 500 dm²**.",
+        "Attention : 1 m = 10 dm, mais 1 m² = 100 dm². Répondre 150 dm², c'est utiliser le rapport des longueurs."
+      ],
+      "hint": "Combien de carrés de 1 dm de côté faut-il pour recouvrir un carré de 1 m de côté ?"
+    },
+    {
+      "key": "q4",
+      "skill_id": "B008",
+      "statement": "Combien de boîtes de carreaux M. Rossi doit-il acheter pour la crédence ?",
+      "type": "numerique",
+      "answer": {
+        "value": 13,
+        "unit": "boîtes",
+        "accepted": [
+          "13 boîtes",
+          "13 boites"
+        ]
+      },
+      "points": 2,
+      "solution_steps": [
+        "Il lui faut 75 carreaux, vendus par boîtes de 6. On divise 75 par 6.",
+        "6 × 12 = 72 et 75 − 72 = 3 : 75 = 6 × 12 + 3. Le quotient est 12 et le reste 3.",
+        "12 boîtes ne donnent que 72 carreaux : il manque 3 carreaux, il faut donc une boîte de plus.",
+        "M. Rossi doit acheter **13 boîtes**."
+      ],
+      "hint": "Pose la division de 75 par 6, puis demande-toi à quoi correspond le reste."
+    },
+    {
+      "key": "q5",
+      "skill_id": "P019",
+      "statement": "Quelle est l'aire de la frise de mosaïque, en dm² ?",
+      "type": "numerique",
+      "answer": {
+        "value": 10,
+        "unit": "dm²",
+        "accepted": [
+          "10 dm²",
+          "10 dm2"
+        ]
+      },
+      "points": 3,
+      "solution_steps": [
+        "La frise est formée de 40 petits carrés de 25 cm² : 40 × 25 = 1 000, soit 1 000 cm².",
+        "1 dm² = 100 cm² : on cherche combien de fois 100 cm² dans 1 000 cm².",
+        "1 000 = 10 × 100, donc 1 000 cm² = 10 dm².",
+        "L'aire de la frise est **10 dm²**."
+      ],
+      "hint": "Calcule d'abord l'aire de la frise en cm²."
+    }
+  ],
+  "review_status": "relu_agent",
+  "programme_ref": "Cycle 3, Cours moyen deuxième année, Grandeurs et mesures, Les aires : « Convertir des aires entre différentes unités »"
+}

@@ -1,0 +1,126 @@
+{
+  "id": "SX-P022-01",
+  "skill_id": "P022",
+  "skill_ids": [
+    "P022",
+    "D024",
+    "B012"
+  ],
+  "school_level": "6e",
+  "title": "Le nouveau square",
+  "contexte": "La commune de Saint-Aubin aménage un square pour les 30 enfants du centre de loisirs. Il ouvrira le 1er juin.\n\nLe bac à sable est un carré de 3,45 m de côté. On l'entoure d'une bordure en bois.\n\nLa pelouse est un rectangle de 14,5 m de long et de 9,75 m de large. On l'entoure d'une clôture en grillage, en laissant une entrée de 1,5 m sans grillage. Le grillage est vendu en rouleaux de 10 m.\n\nDans le square du quartier voisin, le bac à sable est un rectangle de 4,6 m de long et de 2,8 m de large.",
+  "image": null,
+  "duree_estimee_min": 15,
+  "questions": [
+    {
+      "key": "q1",
+      "skill_id": "P022",
+      "statement": "Quel calcul donne le périmètre de la pelouse, en mètres ?",
+      "type": "qcm",
+      "choices": [
+        {
+          "key": "a",
+          "text": "$2 \\times 14{,}5 + 9{,}75$",
+          "misconception": "Sans parenthèses, on ne double que la longueur : il manque une largeur."
+        },
+        {
+          "key": "b",
+          "text": "$14{,}5 \\times 9{,}75$",
+          "misconception": "Ce produit donne l'aire de la pelouse, pas la longueur de son tour."
+        },
+        {
+          "key": "c",
+          "text": "$2 \\times (14{,}5 + 9{,}75)$",
+          "misconception": null
+        },
+        {
+          "key": "d",
+          "text": "$4 \\times 14{,}5$",
+          "misconception": "C'est la formule du carré ; or la pelouse est un rectangle, dont la largeur n'est pas égale à la longueur."
+        }
+      ],
+      "answer": {
+        "value": "c"
+      },
+      "points": 1,
+      "solution_steps": [
+        "La pelouse est un rectangle de longueur $L = 14{,}5$ m et de largeur $l = 9{,}75$ m.",
+        "La formule du périmètre d'un rectangle est $P = 2 \\times (L + l)$.",
+        "Le bon calcul est $2 \\times (14{,}5 + 9{,}75)$."
+      ],
+      "hint": "Le périmètre d'un rectangle compte deux longueurs et deux largeurs."
+    },
+    {
+      "key": "q2",
+      "skill_id": "D024",
+      "statement": "Quelle longueur de bordure faut-il pour le bac à sable carré ?",
+      "type": "numerique",
+      "answer": {
+        "value": 13.8,
+        "unit": "m",
+        "accepted": [
+          "13,8 m",
+          "13,80",
+          "13,80 m"
+        ]
+      },
+      "points": 2,
+      "solution_steps": [
+        "Le bac à sable est un carré de côté $c = 3{,}45$ m : $P = 4 \\times c$.",
+        "On pose la multiplication $3{,}45 \\times 4$ : $345 \\times 4 = 1\\,380$, et le résultat a deux chiffres après la virgule : 13,80.",
+        "Il faut **13,8 m** de bordure."
+      ],
+      "hint": "Un carré a quatre côtés de même longueur."
+    },
+    {
+      "key": "q3",
+      "skill_id": "P022",
+      "statement": "Quelle longueur de grillage faut-il pour clôturer la pelouse ?",
+      "type": "numerique",
+      "answer": {
+        "value": 47,
+        "unit": "m",
+        "accepted": [
+          "47 m",
+          "47m",
+          "47,0",
+          "47 mètres"
+        ]
+      },
+      "points": 4,
+      "solution_steps": [
+        "Le périmètre de la pelouse est $P = 2 \\times (L + l) = 2 \\times (14{,}5 + 9{,}75)$.",
+        "$14{,}5 + 9{,}75 = 24{,}25$, puis $2 \\times 24{,}25 = 48{,}5$ : le tour de la pelouse mesure 48,5 m.",
+        "L'entrée de 1,5 m reste sans grillage : 48,5 − 1,5 = 47.",
+        "Il faut **47 m** de grillage."
+      ],
+      "hint": "Calcule d'abord le tour complet de la pelouse."
+    },
+    {
+      "key": "q4",
+      "skill_id": "B012",
+      "statement": "Quel est le périmètre du bac à sable du quartier voisin ?",
+      "type": "numerique",
+      "answer": {
+        "value": 14.8,
+        "unit": "m",
+        "accepted": [
+          "14,8 m",
+          "14,80",
+          "14,80 m"
+        ]
+      },
+      "points": 2,
+      "solution_steps": [
+        "Ce bac est un rectangle : $P = 2 \\times (L + l) = 2 \\times (4{,}6 + 2{,}8)$.",
+        "On calcule d'abord la parenthèse : $4{,}6 + 2{,}8 = 7{,}4$.",
+        "Puis $2 \\times 7{,}4 = 14{,}8$.",
+        "Le périmètre est **14,8 m**.",
+        "Attention : sans la parenthèse, $2 \\times 4{,}6 + 2{,}8 = 12$, ce qui oublie une largeur."
+      ],
+      "hint": "Commence par le calcul entre parenthèses."
+    }
+  ],
+  "review_status": "relu_agent",
+  "programme_ref": "Cycle 3, classe de 6e, Grandeurs et mesures, Les longueurs : « L'élève sait calculer le périmètre d'un carré et d'un rectangle. »"
+}

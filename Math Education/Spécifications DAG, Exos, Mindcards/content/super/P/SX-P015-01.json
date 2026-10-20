@@ -1,0 +1,152 @@
+{
+  "id": "SX-P015-01",
+  "skill_id": "P015",
+  "skill_ids": [
+    "P015",
+    "A007",
+    "B041"
+  ],
+  "school_level": "CM1",
+  "title": "La randonnée jusqu'au refuge",
+  "contexte": "Les 26 élèves de CM1 de Mme Garnier partent en randonnée. Le car les dépose au parking à 9 h 15.\n\nLe chemin compte trois étapes :\ndu parking au lac, 2 km ;\ndu lac à la cascade, 7 hm ;\nde la cascade au refuge, 35 dam.\n\nAvant de partir, quatre élèves pèsent leur sac à dos :\nle sac de Malo pèse 2 kg ;\ncelui d'Inès pèse 1 900 g ;\ncelui de Yanis pèse 2 kg et 150 g ;\ncelui de Lou pèse 2 kg et 50 g.\n\nChaque élève emporte une gourde de 75 cL.\n\nAu refuge, le gardien sert de la limonade. Il remplit 8 verres de 20 cL avec une bouteille de 2 L.",
+  "image": null,
+  "duree_estimee_min": 15,
+  "questions": [
+    {
+      "key": "q1",
+      "skill_id": "P015",
+      "statement": "Quelle est l'étape la plus longue ?",
+      "type": "qcm",
+      "choices": [
+        {
+          "key": "a",
+          "text": "Du parking au lac",
+          "misconception": null
+        },
+        {
+          "key": "b",
+          "text": "Du lac à la cascade",
+          "misconception": "L'élève compare 7 et 2 sans regarder les unités : 7 hm = 700 m, c'est moins que 2 km = 2 000 m."
+        },
+        {
+          "key": "c",
+          "text": "De la cascade au refuge",
+          "misconception": "L'élève compare les nombres écrits (35 est le plus grand) sans regarder les unités : 35 dam = 350 m, c'est moins que 2 km = 2 000 m."
+        }
+      ],
+      "answer": {
+        "value": "a"
+      },
+      "points": 1,
+      "solution_steps": [
+        "On écrit les trois longueurs en mètres : 2 km = 2 000 m ; 7 hm = 700 m ; 35 dam = 350 m.",
+        "La plus longue est la première : **du parking au lac**."
+      ],
+      "hint": "Écris les trois longueurs dans la même unité avant de comparer."
+    },
+    {
+      "key": "q2",
+      "skill_id": "P015",
+      "statement": "Quelle distance les élèves parcourent-ils du parking au refuge, en mètres ?",
+      "type": "numerique",
+      "answer": {
+        "value": 3050,
+        "unit": "m",
+        "accepted": [
+          "3 050",
+          "3 050 m",
+          "3050 m"
+        ]
+      },
+      "points": 3,
+      "solution_steps": [
+        "On écrit chaque étape en mètres. 1 km = 1 000 m, donc 2 km = 2 000 m.",
+        "1 hm = 100 m, donc 7 hm = 700 m. 1 dam = 10 m, donc 35 dam = 350 m.",
+        "2 000 + 700 + 350 = 3 050.",
+        "Les élèves parcourent **3 050 m**.",
+        "Attention : additionner 2 + 7 + 35 n'a pas de sens, car les unités sont différentes."
+      ],
+      "hint": "Les trois longueurs doivent être dans la même unité avant d'être additionnées."
+    },
+    {
+      "key": "q3",
+      "skill_id": "A007",
+      "statement": "Range les quatre sacs du plus léger au plus lourd.",
+      "type": "qcm",
+      "choices": [
+        {
+          "key": "a",
+          "text": "Malo, Lou, Yanis, Inès",
+          "misconception": "L'élève croit le sac d'Inès le plus lourd parce que 1 900 est le plus grand nombre écrit. Or 1 900 g, c'est moins que 2 kg = 2 000 g."
+        },
+        {
+          "key": "b",
+          "text": "Inès, Malo, Yanis, Lou",
+          "misconception": "L'élève lit 2 kg et 50 g comme 2 kg et 500 g. Or 2 kg et 50 g = 2 050 g, moins que 2 kg et 150 g = 2 150 g."
+        },
+        {
+          "key": "c",
+          "text": "Inès, Malo, Lou, Yanis",
+          "misconception": null
+        }
+      ],
+      "answer": {
+        "value": "c"
+      },
+      "points": 2,
+      "solution_steps": [
+        "On écrit les quatre masses en grammes. 1 kg = 1 000 g.",
+        "Malo : 2 000 g ; Inès : 1 900 g ; Yanis : 2 000 + 150 = 2 150 g ; Lou : 2 000 + 50 = 2 050 g.",
+        "1 900 < 2 000 < 2 050 < 2 150.",
+        "Du plus léger au plus lourd : **Inès, Malo, Lou, Yanis**."
+      ],
+      "hint": "Écris d'abord les quatre masses en grammes."
+    },
+    {
+      "key": "q4",
+      "skill_id": "B041",
+      "statement": "Combien de centilitres de limonade le gardien verse-t-il en tout dans les verres ?",
+      "type": "numerique",
+      "answer": {
+        "value": 160,
+        "unit": "cL",
+        "accepted": [
+          "160 cL",
+          "160 centilitres"
+        ]
+      },
+      "points": 2,
+      "solution_steps": [
+        "Le gardien remplit 8 verres de 20 cL : on calcule 8 × 20.",
+        "8 × 2 = 16, donc 8 × 20 = 160 : 16 dizaines.",
+        "Il verse **160 cL** de limonade."
+      ],
+      "hint": "20, ce sont 2 dizaines."
+    },
+    {
+      "key": "q5",
+      "skill_id": "P015",
+      "statement": "On admet que le gardien verse 160 cL de limonade. Combien de millilitres de limonade reste-t-il dans la bouteille ?",
+      "type": "numerique",
+      "answer": {
+        "value": 400,
+        "unit": "mL",
+        "accepted": [
+          "400 mL",
+          "400 millilitres"
+        ]
+      },
+      "points": 3,
+      "solution_steps": [
+        "On écrit tout en millilitres. 1 L = 1 000 mL, donc 2 L = 2 000 mL.",
+        "1 cL = 10 mL, donc 160 cL = 1 600 mL.",
+        "2 000 − 1 600 = 400.",
+        "Il reste **400 mL** de limonade.",
+        "Attention : 40 est le reste en centilitres, pas en millilitres."
+      ],
+      "hint": "Écris la contenance de la bouteille et la limonade versée dans la même unité."
+    }
+  ],
+  "review_status": "relu_agent",
+  "programme_ref": "Cycle 3, Cours moyen première année, Grandeurs et mesures, Les longueurs : « Connaître et utiliser les unités de longueur du millimètre au kilomètre et les symboles associés »"
+}

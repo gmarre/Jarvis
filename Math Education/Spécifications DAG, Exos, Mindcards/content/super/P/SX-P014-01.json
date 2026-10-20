@@ -1,0 +1,150 @@
+{
+  "id": "SX-P014-01",
+  "skill_id": "P014",
+  "skill_ids": [
+    "P014",
+    "B038"
+  ],
+  "school_level": "CE2",
+  "title": "La sortie à la ferme",
+  "contexte": "Mercredi, les 24 élèves de CE2 de M. Petit partent en sortie à la ferme pédagogique. Chaque élève a payé 6 € pour l'entrée.\n\nLe car part de l'école à 8 h 45. Le trajet dure 40 minutes.\n\nÀ la ferme, les ateliers commencent à 9 h 35. Il y a 4 ateliers de 20 minutes chacun, et une seule pause de 15 minutes, au milieu de la matinée. Dès la fin des ateliers, les élèves visitent l'étable avec le fermier.\n\nLe pique-nique commence à 12 h 15 et dure trois quarts d'heure.\n\nPour rentrer, le car part de la ferme à 14 h 25 et arrive devant l'école à 15 h 25.",
+  "image": null,
+  "duree_estimee_min": 15,
+  "questions": [
+    {
+      "key": "q1",
+      "skill_id": "P014",
+      "statement": "Pour savoir combien de temps dure le trajet du retour, de quelles informations as-tu besoin ?",
+      "type": "qcm",
+      "choices": [
+        {
+          "key": "a",
+          "text": "8 h 45 et 15 h 25",
+          "misconception": "L'élève prend l'heure de départ du matin : il calcule alors la durée de toute la sortie, pas celle du retour."
+        },
+        {
+          "key": "b",
+          "text": "40 minutes, la durée de l'aller",
+          "misconception": "L'élève suppose que le retour dure autant que l'aller. Rien ne le dit : il faut utiliser les horaires du retour."
+        },
+        {
+          "key": "c",
+          "text": "14 h 25 et 15 h 25",
+          "misconception": null
+        },
+        {
+          "key": "d",
+          "text": "12 h 15 et 14 h 25",
+          "misconception": "Ce sont l'heure du pique-nique et celle du départ du car : entre les deux, les élèves sont encore à la ferme."
+        }
+      ],
+      "answer": {
+        "value": "c"
+      },
+      "points": 1,
+      "solution_steps": [
+        "Le trajet du retour va du départ du car à la ferme jusqu'à son arrivée devant l'école.",
+        "Il faut donc l'heure de départ de la ferme, 14 h 25, et l'heure d'arrivée à l'école, 15 h 25.",
+        "L'heure de départ du matin, la durée de l'aller et l'heure du pique-nique ne servent pas ici."
+      ],
+      "hint": "Relis la phrase qui commence par « Pour rentrer »."
+    },
+    {
+      "key": "q2",
+      "skill_id": "P014",
+      "statement": "À quelle heure le car arrive-t-il à la ferme ? Réponds en heures et minutes.",
+      "type": "texte",
+      "answer": {
+        "value": "9 h 25",
+        "accepted": [
+          "9h25",
+          "9:25",
+          "9 h 25 min",
+          "9 heures 25",
+          "9 heures 25 minutes"
+        ]
+      },
+      "points": 2,
+      "solution_steps": [
+        "Le car part à 8 h 45 et roule 40 minutes.",
+        "De 8 h 45 à 9 h, il s'écoule 15 minutes. Il reste encore 40 − 15 = 25 minutes.",
+        "Le car arrive à **9 h 25**.",
+        "Attention : 8 h 85 n'existe pas, car une heure compte 60 minutes."
+      ],
+      "hint": "Avance d'abord jusqu'à l'heure ronde, puis continue."
+    },
+    {
+      "key": "q3",
+      "skill_id": "B038",
+      "statement": "Combien de minutes durent les 4 ateliers et la pause, en tout ?",
+      "type": "numerique",
+      "answer": {
+        "value": 95,
+        "unit": "min",
+        "accepted": [
+          "95 min",
+          "95 minutes"
+        ]
+      },
+      "points": 2,
+      "solution_steps": [
+        "Les 4 ateliers durent chacun 20 minutes : 20 + 20 + 20 + 20 = 80 minutes.",
+        "Il y a une seule pause de 15 minutes : 80 + 15 = 95.",
+        "Les ateliers et la pause durent **95 minutes** en tout."
+      ],
+      "hint": "Compte d'abord le temps des ateliers seuls."
+    },
+    {
+      "key": "q4",
+      "skill_id": "P014",
+      "statement": "On admet que les ateliers et la pause durent 95 minutes en tout. À quelle heure commence la visite de l'étable ? Réponds en heures et minutes.",
+      "type": "texte",
+      "answer": {
+        "value": "11 h 10",
+        "accepted": [
+          "11h10",
+          "11:10",
+          "11 h 10 min",
+          "11 heures 10",
+          "11 heures 10 minutes"
+        ]
+      },
+      "points": 2,
+      "solution_steps": [
+        "95 minutes, c'est 60 minutes et encore 35 minutes, soit 1 h 35 min.",
+        "Les ateliers commencent à 9 h 35. Une heure plus tard, il est 10 h 35.",
+        "De 10 h 35 à 11 h, il s'écoule 25 minutes ; il reste 35 − 25 = 10 minutes.",
+        "La visite de l'étable commence à **11 h 10**."
+      ],
+      "hint": "Écris d'abord 95 minutes en heures et minutes."
+    },
+    {
+      "key": "q5",
+      "skill_id": "P014",
+      "statement": "Combien de temps s'écoule entre le départ du car le matin et son retour devant l'école ? Réponds en heures et minutes.",
+      "type": "texte",
+      "answer": {
+        "value": "6 h 40 min",
+        "accepted": [
+          "6 h 40",
+          "6h40",
+          "6 heures 40 minutes",
+          "6 heures et 40 minutes",
+          "6 h et 40 min"
+        ]
+      },
+      "points": 3,
+      "solution_steps": [
+        "Le car part de l'école à 8 h 45 et y revient à 15 h 25.",
+        "De 8 h 45 à 9 h, il s'écoule 15 minutes.",
+        "De 9 h à 15 h, il s'écoule 6 heures ; de 15 h à 15 h 25, encore 25 minutes.",
+        "15 + 25 = 40 : il s'écoule **6 h 40 min**.",
+        "Attention : retirer 25 de 45 « à l'envers » donne 7 h 20 min, ce qui est faux.",
+        "Une réponse en minutes seules, comme 400 min, n'est pas acceptée : la question demande la durée en heures et minutes."
+      ],
+      "hint": "Dessine un axe du temps de 8 h 45 à 15 h 25, avec des étapes aux heures rondes."
+    }
+  ],
+  "review_status": "relu_agent",
+  "programme_ref": "Cycle 2, Cours élémentaire deuxième année, Grandeurs et mesures, Le repérage dans le temps et les durées : « Résoudre des problèmes à une ou deux étapes impliquant des durées. »"
+}

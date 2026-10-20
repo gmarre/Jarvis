@@ -1,0 +1,112 @@
+{
+  "id": "SX-P020-01",
+  "skill_id": "P020",
+  "skill_ids": [
+    "P020",
+    "B007"
+  ],
+  "school_level": "CM2",
+  "title": "La playlist de la boum",
+  "contexte": "Pour la boum de fin d'année, les 42 élèves de CM2 préparent une playlist. L'entrée coûte 2 €, et la salle est réservée jusqu'à 19 h.\n\nLa playlist commence par 9 chansons qui durent chacune 3 min 35 s. Elle se termine par un slow de 4 min 50 s. Les chansons s'enchaînent sans aucune pause.\n\nLa musique démarre à 17 h 46 min 58 s.\n\nPendant la boum, un concours de danse est aussi organisé : chaque danseur a droit à 1 min 15 s sur la piste.",
+  "image": null,
+  "duree_estimee_min": 15,
+  "questions": [
+    {
+      "key": "q1",
+      "skill_id": "P020",
+      "statement": "Combien de secondes dure le slow ?",
+      "type": "numerique",
+      "answer": {
+        "value": 290,
+        "unit": "s",
+        "accepted": [
+          "290 s",
+          "290 secondes"
+        ]
+      },
+      "points": 1,
+      "solution_steps": [
+        "1 min = 60 s, donc 4 min = 4 × 60 = 240 s.",
+        "240 + 50 = 290.",
+        "Le slow dure **290 s**."
+      ],
+      "hint": "Combien de secondes y a-t-il dans une minute ?"
+    },
+    {
+      "key": "q2",
+      "skill_id": "B007",
+      "statement": "Combien de secondes durent les 9 chansons de 3 min 35 s, en tout ?",
+      "type": "numerique",
+      "answer": {
+        "value": 1935,
+        "unit": "s",
+        "accepted": [
+          "1 935",
+          "1 935 s",
+          "1935 s",
+          "1935 secondes"
+        ]
+      },
+      "points": 2,
+      "solution_steps": [
+        "Une chanson dure 3 min 35 s : 3 × 60 + 35 = 180 + 35 = 215 s.",
+        "Les 9 chansons durent 9 × 215 s. On pose la multiplication : 215 × 9 = 1 935.",
+        "Les 9 chansons durent **1 935 s**.",
+        "Attention : 3 min 35 s ne vaut pas 335 s, car une minute compte 60 secondes."
+      ],
+      "hint": "Écris d'abord la durée d'une chanson en secondes."
+    },
+    {
+      "key": "q3",
+      "skill_id": "P020",
+      "statement": "On admet que les 9 chansons durent 1 935 s en tout. Écris cette durée en minutes et secondes.",
+      "type": "texte",
+      "answer": {
+        "value": "32 min 15 s",
+        "accepted": [
+          "32 min 15",
+          "32 min 15 secondes",
+          "32 minutes 15 secondes",
+          "32 minutes et 15 secondes",
+          "32 min et 15 s"
+        ]
+      },
+      "points": 3,
+      "solution_steps": [
+        "Une minute, c'est 60 s. On cherche combien de fois 60 s dans 1 935 s.",
+        "32 × 60 = 1 920 et 33 × 60 = 1 980, trop grand : il y a 32 minutes entières.",
+        "1 935 − 1 920 = 15 : il reste 15 s.",
+        "Les 9 chansons durent **32 min 15 s**.",
+        "Attention : lire 1 935 comme « 19 min 35 s » revient à croire qu'une minute compte 100 secondes."
+      ],
+      "hint": "Cherche le plus grand nombre de minutes entières dans 1 935 s."
+    },
+    {
+      "key": "q4",
+      "skill_id": "P020",
+      "statement": "On admet que toute la playlist dure 37 min 5 s. À quelle heure la musique s'arrête-t-elle ? Réponds en heures, minutes et secondes.",
+      "type": "texte",
+      "answer": {
+        "value": "18 h 24 min 3 s",
+        "accepted": [
+          "18 h 24 min 03 s",
+          "18 h 24 min 3",
+          "18 h 24 min 03",
+          "18 heures 24 minutes 3 secondes",
+          "18 heures 24 minutes et 3 secondes"
+        ]
+      },
+      "points": 4,
+      "solution_steps": [
+        "On ajoute 37 min 5 s à 17 h 46 min 58 s.",
+        "Les secondes : 58 + 5 = 63 s, soit 1 min 3 s.",
+        "Les minutes : 46 + 37 + 1 = 84 min, soit 1 h 24 min.",
+        "Les heures : 17 + 1 = 18.",
+        "La musique s'arrête à **18 h 24 min 3 s**."
+      ],
+      "hint": "Ajoute d'abord les secondes, puis les minutes, puis les heures, en faisant les échanges."
+    }
+  ],
+  "review_status": "relu_agent",
+  "programme_ref": "Cycle 3, Cours moyen deuxième année, Grandeurs et mesures, Le repérage dans le temps et les durées : « Résoudre des problèmes à une ou plusieurs étapes impliquant des durées »"
+}
