@@ -202,3 +202,12 @@ describe('unite tapee apres une expression', () => {
     tousFaux(e, ['2x + 4 cm', '2x €'])
   })
 })
+
+describe('nom de la grandeur devant une expression (releve du lot L1)', () => {
+  it('P = 6x accepte, x = 6x refuse, pas pour une equation', () => {
+    tousJustes(exo('6x', 'expression'), ['P = 6x', 'p=6x', 'périmètre = 6x'])
+    tousFaux(exo('6x', 'expression'), ['P = 3x', 'x = 6x'])
+    tousJustes(exo('2x + 4', 'reduite', { unit: '€' }), ['prix = 2x + 4 €'])
+    tousFaux(exo('x + 5 = 12', 'equation'), ['P = x + 5'])
+  })
+})

@@ -741,6 +741,20 @@ function lireSolutions(texte: string): number[] | null {
   return valeurs.sort((a, b) => a - b)
 }
 
+/**
+ * « P = 6x » pour une formule de perimetre : le nom de la grandeur, ecrit
+ * comme en 6e (P = 2 × (L + l)), est retire avant la lecture d'une
+ * expression (releve en relecture de l'etape 7, lot L1). Pas pour une
+ * equation ni une inegalite, et jamais quand le nom est une lettre de
+ * l'expression : « x = 6x » reste refuse.
+ */
+function sansNom(raw: string, forme: FormeAttendue, variables: string[]): string {
+  if (forme === 'equation' || forme === 'inegalite' || forme === 'solutions') return raw
+  const m = raw.match(/^\s*(\p{L}+)\s*=\s*([^=]+)$/u)
+  if (!m || variables.includes(m[1].toLowerCase())) return raw
+  return m[2]
+}
+
 /** Une equation deja resolue : une lettre seule d'un cote, un nombre de l'autre. */
 function resolue(g: Noeud, d: Noeud): boolean {
   const seule = (n: Noeud) => n.t === 'var'
@@ -851,7 +865,7 @@ function estJuste(exercise: ExerciceACorriger, raw: string): boolean {
       const forme = exercise.answer.forme
       if (forme) {
         const variables = exercise.answer.variables ?? ['x']
-        const saisie = sansUnite(raw, exercise.answer.unit)
+        const saisie = sansUnite(sansNom(raw, forme, variables), exercise.answer.unit)
         return [expectedValue, ...(exercise.answer.accepted ?? [])].some((attendu) =>
           algebreJuste(forme, String(attendu), saisie, variables, exercise.answer.tolerance ?? 0),
         )
