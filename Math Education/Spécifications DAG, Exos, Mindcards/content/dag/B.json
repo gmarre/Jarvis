@@ -1254,7 +1254,8 @@
     "prerequisites": [
       "B011",
       "D024",
-      "D004"
+      "D004",
+      "B058"
     ],
     "difficulty": 5,
     "school_level": "5e",
@@ -1284,7 +1285,8 @@
     "description": "Savoir que multiplier une somme ou une différence par un nombre revient à multiplier chacun de ses termes par ce nombre, k × (a + b) = k × a + k × b et k × (a − b) = k × a − k × b, et s'en servir dans les deux sens pour calculer mentalement : 7 × 102 = 7 × 100 + 7 × 2 = 714 ; 25 × 98 = 25 × 100 − 25 × 2 = 2 450 ; 13 × 7 + 13 × 3 = 13 × (7 + 3) = 130 ; voir l'égalité sur l'aire d'un rectangle partagé en deux (6 × (4 + 3) = 6 × 4 + 6 × 3 = 42). L'erreur type est de ne multiplier que le premier terme (7 × 102 = 7 × 100 + 2). Nombres entiers positifs ; la même règle avec des lettres est F012. Réponse : un nombre, ou le nombre manquant d'une égalité (7 × 102 = 7 × 100 + 7 × …), ou QCM entre écritures. Figure utile : geometrie, rectangle partagé en deux, longueurs écrites.",
     "prerequisites": [
       "B011",
-      "B007"
+      "B007",
+      "B056"
     ],
     "difficulty": 5,
     "school_level": "5e",
@@ -1299,6 +1301,101 @@
       {
         "source": "Cycle 4, classe de 5e, Nombres et calculs, Opérations, Objectifs d'apprentissage",
         "quote": "Connaitre et utiliser la distributivité simple sur des exemples numériques."
+      }
+    ]
+  },
+  {
+    "id": "B056",
+    "domain": "B",
+    "domain_name": "Calcul numérique",
+    "label": "Calcul mental : distributivité de la multiplication sur l'addition",
+    "description": "Calculer mentalement un produit en décomposant un facteur en une somme et en multipliant chaque terme : 7 × 34 = 7 × 30 + 7 × 4 = 210 + 28 = 238 ; 13 × 7 = 10 × 7 + 3 × 7 = 91 ; 12 × 25 = 10 × 25 + 2 × 25 = 300 ; 6 × 105 = 6 × 100 + 6 × 5 = 630 ; reconnaître, parmi plusieurs décompositions, celle qui donne le bon produit. L'erreur type est de ne multiplier qu'un des termes (7 × 34 = 7 × 30 + 4 = 214). Nombres entiers, décomposition en somme seulement : la différence (25 × 98 = 25 × 100 − 25 × 2) et le sens « factoriser » (13 × 7 + 13 × 3 = 13 × 10) sont du 5e (B055) ; le facteur décomposé a au plus trois chiffres. Réponse : un nombre, ou le nombre manquant d'une décomposition (7 × 34 = 7 × 30 + 7 × …), ou QCM entre décompositions. Figure utile : geometrie, rectangle partagé en deux (largeur 7, longueur 30 + 4), aire écrite dans chaque partie.",
+    "prerequisites": [
+      "B041",
+      "B013"
+    ],
+    "difficulty": 3,
+    "school_level": "CM1",
+    "validation_test": "Calcule mentalement 8 × 23 en écrivant 23 = 20 + 3, puis 14 × 6. Complète : 9 × 47 = 9 × 40 + 9 × … .",
+    "mastery_threshold": {
+      "required": 3,
+      "out_of": 4
+    },
+    "exercise_ids": [],
+    "mindmap_id": null,
+    "programme_ref": [
+      {
+        "source": "Cycle 3, Cours moyen première année, Le calcul mental",
+        "quote": "Utiliser la distributivité de la multiplication par rapport à l'addition dans des cas simples"
+      },
+      {
+        "source": "Cycle 2, Cours élémentaire première année, Le calcul mental",
+        "quote": "L'élève sait verbaliser « 13 fois 7, c'est 10 fois 7 plus 3 fois 7. »"
+      }
+    ]
+  },
+  {
+    "id": "B057",
+    "domain": "B",
+    "domain_name": "Calcul numérique",
+    "label": "Programme de calcul : l'exécuter",
+    "description": "Appliquer à un nombre entier donné un programme de calcul de deux instructions, dans l'ordre, en partant à chaque étape du résultat de l'étape précédente : « choisir un nombre ; ajouter 2 ; multiplier le résultat par 4 » donne 36 en partant de 7 (7 + 2 = 9, puis 9 × 4 = 36) ; appliquer le même programme à plusieurs nombres et compléter un tableau des nombres de départ et d'arrivée ; comparer les résultats de deux programmes pour un même nombre. L'erreur type est d'appliquer chaque instruction au nombre de départ (7 + 2 = 9 et 7 × 4 = 28) ou d'inverser l'ordre des instructions (7 × 4 + 2 = 30). Nombres entiers, instructions en mots (ajouter, retirer, multiplier par, prendre le double) ; le programme de trois instructions et l'écriture d'un programme sont B058 (CM2), sa traduction en une seule expression B054 (5e). Réponse : un nombre (le résultat, ou une case du tableau). Figure : aucune.",
+    "prerequisites": [
+      "B038",
+      "B006",
+      "B004"
+    ],
+    "difficulty": 3,
+    "school_level": "CM1",
+    "validation_test": "Programme : choisir un nombre ; ajouter 5 ; multiplier le résultat par 3. Quel nombre obtient-on en choisissant 6 ? En choisissant 10 ?",
+    "mastery_threshold": {
+      "required": 3,
+      "out_of": 4
+    },
+    "exercise_ids": [],
+    "mindmap_id": null,
+    "programme_ref": [
+      {
+        "source": "Cycle 3, Cours moyen première année, Algèbre",
+        "quote": "Exécuter un programme de calcul"
+      },
+      {
+        "source": "Cycle 3, Cours moyen première année, Initiation à la pensée informatique",
+        "quote": "Il exécute également des programmes de calcul comme le suivant :"
+      }
+    ]
+  },
+  {
+    "id": "B058",
+    "domain": "B",
+    "domain_name": "Calcul numérique",
+    "label": "Programme de calcul : le produire, l'exécuter jusqu'à trois instructions",
+    "description": "Exécuter un programme de calcul de trois instructions (« choisir un nombre entier ; ajouter 2 ; multiplier le résultat par 4 ; retirer 3 » donne 33 en partant de 7) et produire un programme : écrire en instructions le calcul qui répond à une situation (tee-shirts à 12 € et livraison à 5 € : « multiplier le nombre de tee-shirts par 12, puis ajouter 5 », soit 41 € pour 3 tee-shirts) ; compléter l'instruction manquante d'un programme connaissant un nombre de départ et le nombre obtenu (2 donne 11 avec « multiplier par … ; ajouter 1 » : multiplier par 5) ; choisir, parmi plusieurs programmes, celui qui correspond à un tableau de départs et d'arrivées. L'erreur type est d'écrire les instructions dans le mauvais ordre (ajouter 5 puis multiplier par 12) ou de valider un programme sur un seul nombre du tableau. Nombres entiers ; le nombre de départ peut être désigné par un mot ou un symbole (« le nombre de tee-shirts »), sans calcul littéral ; traduire le programme en une seule expression avec parenthèses est B054 (5e). Réponse : un nombre (résultat, nombre manquant d'une instruction), ou QCM entre programmes. Figure : aucune.",
+    "prerequisites": [
+      "B057",
+      "B043"
+    ],
+    "difficulty": 4,
+    "school_level": "CM2",
+    "validation_test": "Un club demande 8 € par enfant et 3 € de frais par famille. Quel programme donne le prix pour une famille : « multiplier le nombre d'enfants par 8, puis ajouter 3 » ou « ajouter 3, puis multiplier par 8 » ? Complète le programme « multiplier par … ; retirer 4 » pour que 6 donne 20.",
+    "mastery_threshold": {
+      "required": 3,
+      "out_of": 4
+    },
+    "exercise_ids": [],
+    "mindmap_id": null,
+    "programme_ref": [
+      {
+        "source": "Cycle 3, Cours moyen deuxième année, Algèbre",
+        "quote": "Exécuter ou produire un programme de calcul"
+      },
+      {
+        "source": "Cycle 3, Cours moyen deuxième année, Initiation à la pensée informatique",
+        "quote": "Il exécute également des programmes de calcul ayant jusqu'à trois instructions comme le suivant :"
+      },
+      {
+        "source": "Cycle 3, Cours moyen deuxième année, Algèbre",
+        "quote": "le prix à payer, en euro, peut s'écrire (N × 12) + 5, où N est le nombre de tee-shirts achetés."
       }
     ]
   }
