@@ -1,0 +1,82 @@
+{
+  "type": "geometrie",
+  "params": {
+    "colonnes": 12,
+    "lignes": 9,
+    "fond": "blanc",
+    "points": {
+      "G": [
+        1,
+        8
+      ],
+      "H": [
+        11,
+        8
+      ],
+      "K": [
+        6,
+        8
+      ],
+      "F": [
+        6,
+        5.5
+      ]
+    },
+    "elements": [
+      {
+        "polygone": [
+          "F",
+          "G",
+          "H"
+        ]
+      },
+      {
+        "segment": [
+          "F",
+          "K"
+        ]
+      },
+      {
+        "angle_droit": [
+          "H",
+          "K",
+          "F"
+        ]
+      },
+      {
+        "codage": [
+          [
+            "G",
+            "K"
+          ],
+          [
+            "K",
+            "H"
+          ]
+        ],
+        "marque": 1
+      },
+      {
+        "angle": [
+          "K",
+          "G",
+          "F"
+        ],
+        "nom": "34°",
+        "rayon_arc": 30
+      },
+      {
+        "longueur": [
+          "G",
+          "F"
+        ],
+        "texte": "?",
+        "couleur": "accent"
+      }
+    ],
+    "etiquettes": {
+      "K": "haut_gauche"
+    }
+  },
+  "alt": "Triangle FGH avec le segment [FK], un angle droit codé en K, deux segments codés égaux, un angle écrit et la longueur cherchée marquée d'un point d'interrogation"
+}

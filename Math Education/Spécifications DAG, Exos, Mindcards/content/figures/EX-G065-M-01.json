@@ -1,0 +1,89 @@
+{
+  "type": "geometrie",
+  "params": {
+    "colonnes": 12,
+    "lignes": 10,
+    "fond": "blanc",
+    "points": {
+      "K": [
+        3,
+        9
+      ],
+      "P": [
+        7,
+        9
+      ],
+      "H": [
+        3,
+        1.6
+      ],
+      "_m": [
+        3,
+        0.3
+      ],
+      "_s1": [
+        0.6,
+        9
+      ],
+      "_s2": [
+        11.4,
+        9
+      ]
+    },
+    "elements": [
+      {
+        "segment": [
+          "_s1",
+          "_s2"
+        ]
+      },
+      {
+        "segment": [
+          "K",
+          "_m"
+        ]
+      },
+      {
+        "segment": [
+          "H",
+          "P"
+        ],
+        "couleur": "accent"
+      },
+      {
+        "angle_droit": [
+          "P",
+          "K",
+          "H"
+        ]
+      },
+      {
+        "angle": [
+          "K",
+          "H",
+          "P"
+        ],
+        "nom": "?",
+        "rayon_arc": 34
+      },
+      {
+        "longueur": [
+          "K",
+          "P"
+        ],
+        "texte": "3 m"
+      },
+      {
+        "longueur": [
+          "H",
+          "P"
+        ],
+        "texte": "8 m"
+      }
+    ],
+    "etiquettes": {
+      "H": "gauche"
+    }
+  },
+  "alt": "Schéma : une échelle [HP] appuyée contre un mur, le coin K entre le mur et le sol, un angle droit codé en K, deux longueurs écrites et l'angle cherché marqué d'un point d'interrogation"
+}

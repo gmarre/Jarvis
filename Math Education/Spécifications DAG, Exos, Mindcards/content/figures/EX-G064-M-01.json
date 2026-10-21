@@ -1,0 +1,76 @@
+{
+  "type": "geometrie",
+  "params": {
+    "colonnes": 12,
+    "lignes": 9,
+    "fond": "blanc",
+    "points": {
+      "B": [
+        1,
+        7.5
+      ],
+      "P": [
+        11,
+        7.5
+      ],
+      "S": [
+        11,
+        5.2
+      ]
+    },
+    "elements": [
+      {
+        "segment": [
+          "B",
+          "P"
+        ]
+      },
+      {
+        "segment": [
+          "P",
+          "S"
+        ]
+      },
+      {
+        "segment": [
+          "B",
+          "S"
+        ],
+        "style": "pointille",
+        "couleur": "accent"
+      },
+      {
+        "angle_droit": [
+          "B",
+          "P",
+          "S"
+        ]
+      },
+      {
+        "angle": [
+          "P",
+          "B",
+          "S"
+        ],
+        "nom": "11°",
+        "rayon_arc": 60
+      },
+      {
+        "longueur": [
+          "P",
+          "S"
+        ],
+        "texte": "34 m"
+      },
+      {
+        "longueur": [
+          "B",
+          "P"
+        ],
+        "texte": "?",
+        "couleur": "accent"
+      }
+    ]
+  },
+  "alt": "Schéma : un bateau B, le pied P et le sommet S d'une falaise, une ligne de visée, un angle droit codé en P, un angle et une longueur écrits, et la longueur cherchée marquée d'un point d'interrogation"
+}

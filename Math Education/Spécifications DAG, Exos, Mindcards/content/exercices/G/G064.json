@@ -1,0 +1,179 @@
+[
+  {
+    "id": "EX-G064-D-01",
+    "skill_id": "G064",
+    "level": "decouverte",
+    "type": "numerique",
+    "statement": "Le triangle EFH est rectangle en F (figure pas en vraie grandeur). Calcule la longueur EF en cm, arrondie au dixième. Calculatrice en degrés.",
+    "image": "figures/EX-G064-D-01",
+    "answer": {
+      "value": 5.8,
+      "tolerance": 0.05,
+      "unit": "cm"
+    },
+    "solution_steps": [
+      "On connaît l'angle $\\widehat{FEH}$ = 50° et l'hypoténuse EH = 9 cm ; on cherche EF, le côté adjacent à cet angle.",
+      "La ligne qui relie le côté adjacent et l'hypoténuse est le cosinus : $\\cos\\widehat{FEH} = \\dfrac{EF}{EH}$, soit cos 50° = $\\dfrac{EF}{9}$.",
+      "En multipliant par 9 : EF = 9 × cos 50° ≈ 5,785 à la calculatrice en degrés, soit **5,8 cm** au dixième.",
+      "Contrôle : EF est plus court que l'hypoténuse, comme tout côté de l'angle droit. Une calculatrice réglée en radians donnerait environ 8,7 cm : il faut la régler en degrés."
+    ],
+    "hint": "Le côté cherché est-il adjacent ou opposé à l'angle de 50° ? Quelle ligne le relie à l'hypoténuse ?",
+    "estimated_duration_s": 90,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, classe de 3e, Espace et géométrie, Triangles : « Connaitre et utiliser les lignes trigonométriques dans le triangle rectangle : cosinus, sinus, tangente. »"
+  },
+  {
+    "id": "EX-G064-D-02",
+    "skill_id": "G064",
+    "level": "decouverte",
+    "type": "qcm",
+    "statement": "Le triangle NPR est rectangle en P (figure pas en vraie grandeur). Quel calcul donne la longueur PR, en cm ? Calculatrice en degrés.",
+    "image": "figures/EX-G064-D-02",
+    "choices": [
+      {
+        "key": "a",
+        "text": "13 × cos 29°",
+        "misconception": "L'élève choisit le cosinus, mais [PR] est en face de l'angle de 29° : c'est le côté opposé. 13 × cos 29° donne NP, le côté adjacent."
+      },
+      {
+        "key": "b",
+        "text": "13 × sin 29°",
+        "misconception": null
+      },
+      {
+        "key": "c",
+        "text": "13 ÷ sin 29°",
+        "misconception": "L'élève divise au lieu de multiplier : 13 ÷ sin 29° vaut environ 26,8 cm, plus que l'hypoténuse, ce qui est impossible pour un côté de l'angle droit."
+      },
+      {
+        "key": "d",
+        "text": "13 × tan 29°",
+        "misconception": "La tangente relie les deux côtés de l'angle droit, sans l'hypoténuse : ce calcul suppose à tort que 13 cm est la longueur de [NP]."
+      }
+    ],
+    "answer": {
+      "value": "b"
+    },
+    "solution_steps": [
+      "Par rapport à l'angle $\\widehat{PNR}$ = 29° : l'hypoténuse est [NR] = 13 cm, et [PR], en face de l'angle, est le côté opposé.",
+      "La ligne qui relie le côté opposé et l'hypoténuse est le sinus : $\\sin\\widehat{PNR} = \\dfrac{PR}{NR}$, soit sin 29° = $\\dfrac{PR}{13}$.",
+      "En multipliant par 13 : PR = 13 × sin 29°, environ 6,3 cm à la calculatrice.",
+      "Moyen de choisir : CAH SOH TOA (Cosinus = Adjacent ÷ Hypoténuse, Sinus = Opposé ÷ Hypoténuse, Tangente = Opposé ÷ Adjacent)."
+    ],
+    "hint": "Le côté cherché est-il adjacent ou opposé à l'angle de 29° ? Quelle ligne le relie à l'hypoténuse ?",
+    "estimated_duration_s": 60,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, classe de 3e, Espace et géométrie, Triangles : « Connaitre et utiliser les lignes trigonométriques dans le triangle rectangle : cosinus, sinus, tangente. »"
+  },
+  {
+    "id": "EX-G064-E-01",
+    "skill_id": "G064",
+    "level": "entrainement",
+    "type": "numerique",
+    "statement": "Le triangle TUV est rectangle en U (figure pas en vraie grandeur). Calcule la longueur TV en cm, arrondie au dixième. Calculatrice en degrés.",
+    "image": "figures/EX-G064-E-01",
+    "answer": {
+      "value": 7.4,
+      "tolerance": 0.05,
+      "unit": "cm"
+    },
+    "solution_steps": [
+      "Par rapport à l'angle $\\widehat{UTV}$ = 28° : TU = 6,5 cm est le côté adjacent, et TV, en face de l'angle droit, est l'hypoténuse cherchée.",
+      "Cosinus : $\\cos\\widehat{UTV} = \\dfrac{TU}{TV}$, soit cos 28° = $\\dfrac{6{,}5}{TV}$.",
+      "La longueur cherchée est au dénominateur : TV × cos 28° = 6,5, donc TV = 6,5 ÷ cos 28° ≈ 7,36, soit **7,4 cm** au dixième.",
+      "Piège : 6,5 × cos 28° ≈ 5,7 cm donnerait une hypoténuse plus courte que le côté adjacent, ce qui est impossible."
+    ],
+    "hint": "Écris l'égalité du cosinus avec les longueurs : la longueur cherchée est-elle au numérateur ou au dénominateur ?",
+    "estimated_duration_s": 120,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, classe de 3e, Espace et géométrie, Triangles : « Connaitre et utiliser les lignes trigonométriques dans le triangle rectangle : cosinus, sinus, tangente. »"
+  },
+  {
+    "id": "EX-G064-E-02",
+    "skill_id": "G064",
+    "level": "entrainement",
+    "type": "qcm",
+    "statement": "Le triangle KLN est rectangle en L (figure pas en vraie grandeur). Combien mesure LN, arrondie au dixième de cm ? Calculatrice en degrés.",
+    "image": "figures/EX-G064-E-02",
+    "choices": [
+      {
+        "key": "a",
+        "text": "4,1 cm",
+        "misconception": "L'élève utilise le sinus : 9 × sin 27° ≈ 4,1. Mais le sinus demande l'hypoténuse, et 9 cm est la longueur du côté adjacent [KL]."
+      },
+      {
+        "key": "b",
+        "text": "17,7 cm",
+        "misconception": "L'élève divise par la tangente : 9 ÷ tan 27° ≈ 17,7. Or tan 27° = LN ÷ 9 : la longueur cherchée est au numérateur, il faut multiplier."
+      },
+      {
+        "key": "c",
+        "text": "8,0 cm",
+        "misconception": "L'élève utilise le cosinus : 9 × cos 27° ≈ 8,0. Le cosinus relie le côté adjacent et l'hypoténuse, alors que LN est le côté opposé."
+      },
+      {
+        "key": "d",
+        "text": "4,6 cm",
+        "misconception": null
+      }
+    ],
+    "answer": {
+      "value": "d"
+    },
+    "solution_steps": [
+      "Par rapport à l'angle $\\widehat{LKN}$ = 27° : KL = 9 cm est le côté adjacent, LN le côté opposé. L'hypoténuse [KN] ne sert pas.",
+      "La ligne qui relie le côté opposé et le côté adjacent est la tangente : $\\tan\\widehat{LKN} = \\dfrac{LN}{KL}$, soit tan 27° = $\\dfrac{LN}{9}$.",
+      "En multipliant par 9 : LN = 9 × tan 27° ≈ 4,586, soit **4,6 cm** au dixième."
+    ],
+    "hint": "Les deux côtés en jeu sont les côtés de l'angle droit : quelle ligne trigonométrique les relie ?",
+    "estimated_duration_s": 120,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, classe de 3e, Espace et géométrie, Triangles : « Connaitre et utiliser les lignes trigonométriques dans le triangle rectangle : cosinus, sinus, tangente. »"
+  },
+  {
+    "id": "EX-G064-M-01",
+    "skill_id": "G064",
+    "level": "maitrise",
+    "type": "numerique",
+    "statement": "Depuis un bateau B, on voit le sommet S d'une falaise verticale de pied P (schéma pas en vraie grandeur). Calcule la distance BP en mètres, arrondie au mètre. Calculatrice en degrés.",
+    "image": "figures/EX-G064-M-01",
+    "answer": {
+      "value": 175,
+      "tolerance": 0.5,
+      "unit": "m"
+    },
+    "solution_steps": [
+      "La falaise est verticale et la mer horizontale : le triangle BPS est rectangle en P.",
+      "Par rapport à l'angle $\\widehat{PBS}$ = 11° : PS = 34 m est le côté opposé, BP le côté adjacent cherché. La tangente les relie : tan 11° = $\\dfrac{PS}{BP} = \\dfrac{34}{BP}$.",
+      "BP est au dénominateur : BP × tan 11° = 34, donc BP = 34 ÷ tan 11° ≈ 174,9, soit **175 m** au mètre près. Arrondir à la fin : avec tan 11° ≈ 0,19, on trouverait 179 m.",
+      "Piège : 34 × tan 11° ≈ 6,6 m placerait le bateau presque au pied de la falaise ; avec un angle aussi petit, le bateau est loin."
+    ],
+    "hint": "Pour l'angle de 11°, quel côté connais-tu et quel côté cherches-tu ? Lequel est au dénominateur de la tangente ?",
+    "estimated_duration_s": 150,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, classe de 3e, Espace et géométrie, Triangles : « Connaitre et utiliser les lignes trigonométriques dans le triangle rectangle : cosinus, sinus, tangente. »"
+  },
+  {
+    "id": "EX-G064-M-02",
+    "skill_id": "G064",
+    "level": "maitrise",
+    "type": "numerique",
+    "statement": "Le haut d'une façade est un triangle FGH isocèle en F, de base GH = 9 m (schéma pas en vraie grandeur). Calcule FG en mètres, arrondie au dixième. Calculatrice en degrés.",
+    "image": "figures/EX-G064-M-02",
+    "answer": {
+      "value": 5.4,
+      "tolerance": 0.05,
+      "unit": "m"
+    },
+    "solution_steps": [
+      "Le codage indique que K est le milieu de [GH] et que (FK) est perpendiculaire à (GH) : GK = 9 ÷ 2 = 4,5 m, et le triangle FGK est rectangle en K.",
+      "Dans FGK, par rapport à l'angle $\\widehat{FGK}$ = 34° : GK = 4,5 m est le côté adjacent et FG l'hypoténuse. Cosinus : cos 34° = $\\dfrac{GK}{FG} = \\dfrac{4{,}5}{FG}$.",
+      "FG × cos 34° = 4,5, donc FG = 4,5 ÷ cos 34° ≈ 5,43, soit **5,4 m** au dixième.",
+      "Piège : prendre GH = 9 m comme côté adjacent donnerait 9 ÷ cos 34° ≈ 10,9 m ; mais [GH] n'est pas un côté du triangle rectangle FGK, seule sa moitié [GK] l'est."
+    ],
+    "hint": "Cherche un triangle rectangle sur le schéma. Combien mesure GK ?",
+    "estimated_duration_s": 150,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, classe de 3e, Espace et géométrie, Triangles : « Connaitre et utiliser les lignes trigonométriques dans le triangle rectangle : cosinus, sinus, tangente. »"
+  }
+]

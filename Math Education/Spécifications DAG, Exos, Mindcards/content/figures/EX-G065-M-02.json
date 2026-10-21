@@ -1,0 +1,83 @@
+{
+  "type": "geometrie",
+  "params": {
+    "colonnes": 12,
+    "lignes": 10,
+    "fond": "blanc",
+    "points": {
+      "P": [
+        10.5,
+        8.5
+      ],
+      "T": [
+        10.5,
+        2.9
+      ],
+      "E": [
+        2.4,
+        8.5
+      ],
+      "_s1": [
+        0.5,
+        8.5
+      ],
+      "_s2": [
+        11.5,
+        8.5
+      ]
+    },
+    "elements": [
+      {
+        "segment": [
+          "_s1",
+          "_s2"
+        ]
+      },
+      {
+        "segment": [
+          "P",
+          "T"
+        ]
+      },
+      {
+        "segment": [
+          "E",
+          "T"
+        ],
+        "style": "pointille",
+        "couleur": "accent"
+      },
+      {
+        "angle_droit": [
+          "E",
+          "P",
+          "T"
+        ]
+      },
+      {
+        "angle": [
+          "P",
+          "E",
+          "T"
+        ],
+        "nom": "?",
+        "rayon_arc": 40
+      },
+      {
+        "longueur": [
+          "P",
+          "T"
+        ],
+        "texte": "7 m"
+      },
+      {
+        "longueur": [
+          "E",
+          "P"
+        ],
+        "texte": "8 m"
+      }
+    ]
+  },
+  "alt": "Schéma : un poteau [PT], son ombre [PE] sur le sol, un rayon de soleil, un angle droit codé en P, deux longueurs écrites et l'angle cherché marqué d'un point d'interrogation"
+}

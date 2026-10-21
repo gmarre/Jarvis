@@ -1,0 +1,82 @@
+{
+  "type": "geometrie",
+  "params": {
+    "colonnes": 12,
+    "lignes": 10,
+    "fond": "blanc",
+    "points": {
+      "S": [
+        1,
+        9
+      ],
+      "V": [
+        4.5,
+        9
+      ],
+      "W": [
+        4.5,
+        "5.43"
+      ],
+      "T": [
+        9,
+        9
+      ],
+      "U": [
+        9,
+        "0.84"
+      ]
+    },
+    "elements": [
+      {
+        "polygone": [
+          "S",
+          "T",
+          "U"
+        ]
+      },
+      {
+        "segment": [
+          "V",
+          "W"
+        ]
+      },
+      {
+        "angle_droit": [
+          "S",
+          "V",
+          "W"
+        ]
+      },
+      {
+        "angle_droit": [
+          "S",
+          "T",
+          "U"
+        ]
+      },
+      {
+        "angle": [
+          "V",
+          "S",
+          "W"
+        ],
+        "rayon_arc": 26
+      },
+      {
+        "longueur": [
+          "S",
+          "V"
+        ],
+        "texte": "3,5 cm"
+      },
+      {
+        "longueur": [
+          "S",
+          "W"
+        ],
+        "texte": "5 cm"
+      }
+    ]
+  },
+  "alt": "Deux triangles emboîtés SVW et STU, avec des angles droits codés en V et en T, un angle marqué en S et deux longueurs écrites"
+}

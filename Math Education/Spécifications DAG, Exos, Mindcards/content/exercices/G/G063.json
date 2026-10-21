@@ -1,0 +1,196 @@
+[
+  {
+    "id": "EX-G063-D-01",
+    "skill_id": "G063",
+    "level": "decouverte",
+    "type": "qcm",
+    "statement": "Le triangle RST est rectangle en R. Quel côté est **adjacent** à l'angle $\\widehat{RST}$ ?",
+    "image": "figures/EX-G063-D-01",
+    "choices": [
+      {
+        "key": "a",
+        "text": "[ST]",
+        "misconception": "L'élève prend l'hypoténuse parce qu'elle touche le sommet S. Mais l'hypoténuse, en face de l'angle droit, n'est jamais appelée côté adjacent."
+      },
+      {
+        "key": "b",
+        "text": "[RT]",
+        "misconception": "L'élève prend le côté opposé : [RT] ne touche pas le sommet S, il est en face de l'angle $\\widehat{RST}$."
+      },
+      {
+        "key": "c",
+        "text": "[RS]",
+        "misconception": null
+      }
+    ],
+    "answer": {
+      "value": "c"
+    },
+    "solution_steps": [
+      "L'angle droit est en R : le côté en face, [ST], est l'**hypoténuse**, le plus long côté du triangle.",
+      "Deux côtés forment l'angle $\\widehat{RST}$ : [SR] et [ST]. L'hypoténuse mise à part, il reste [RS] : c'est le **côté adjacent** à $\\widehat{RST}$.",
+      "Le troisième côté, [RT], est en face de l'angle : c'est le **côté opposé** à $\\widehat{RST}$.",
+      "Pour l'autre angle aigu, $\\widehat{RTS}$, les rôles s'échangent : [RT] devient adjacent et [RS] opposé. L'hypoténuse, elle, ne change jamais."
+    ],
+    "hint": "Repère d'abord l'hypoténuse, en face de l'angle droit : elle n'est jamais le côté adjacent.",
+    "estimated_duration_s": 40,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, classe de 3e, Espace et géométrie, Triangles : « Connaitre et utiliser les lignes trigonométriques dans le triangle rectangle : cosinus, sinus, tangente. »"
+  },
+  {
+    "id": "EX-G063-D-02",
+    "skill_id": "G063",
+    "level": "decouverte",
+    "type": "numerique",
+    "statement": "Le triangle GHK est rectangle en H (figure pas en vraie grandeur). Donne la valeur exacte de $\\cos\\widehat{HGK}$.",
+    "image": "figures/EX-G063-D-02",
+    "answer": {
+      "value": 0.875,
+      "accepted": [
+        "7/8"
+      ]
+    },
+    "solution_steps": [
+      "L'angle droit est en H : l'hypoténuse est [GK], en face, avec GK = 8 cm.",
+      "Le côté adjacent à l'angle $\\widehat{HGK}$ est l'autre côté qui le forme : [GH], avec GH = 7 cm.",
+      "$\\cos\\widehat{HGK} = \\dfrac{\\text{côté adjacent}}{\\text{hypoténuse}} = \\dfrac{GH}{GK} = \\dfrac{7}{8}$, soit 7 ÷ 8 = **0,875**.",
+      "Contrôle : un cosinus est compris entre 0 et 1, car l'hypoténuse est le plus long côté. Écrire $\\dfrac{8}{7}$, plus grand que 1, c'est renverser le quotient."
+    ],
+    "hint": "Le cosinus d'un angle aigu, c'est le côté adjacent divisé par l'hypoténuse.",
+    "estimated_duration_s": 60,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, classe de 3e, Espace et géométrie, Triangles : « Connaitre et utiliser les lignes trigonométriques dans le triangle rectangle : cosinus, sinus, tangente. »"
+  },
+  {
+    "id": "EX-G063-E-01",
+    "skill_id": "G063",
+    "level": "entrainement",
+    "type": "qcm",
+    "statement": "Le triangle XYZ est rectangle en X. Quelle égalité est juste ?",
+    "image": "figures/EX-G063-E-01",
+    "choices": [
+      {
+        "key": "a",
+        "text": "$\\sin\\widehat{XYZ} = \\dfrac{XY}{YZ}$",
+        "misconception": "L'élève prend le côté adjacent [XY] au lieu du côté opposé : ce quotient est le cosinus de $\\widehat{XYZ}$."
+      },
+      {
+        "key": "b",
+        "text": "$\\sin\\widehat{XYZ} = \\dfrac{XZ}{YZ}$",
+        "misconception": null
+      },
+      {
+        "key": "c",
+        "text": "$\\sin\\widehat{XYZ} = \\dfrac{YZ}{XZ}$",
+        "misconception": "L'élève met l'hypoténuse au numérateur : ce quotient est plus grand que 1, alors qu'un sinus est toujours compris entre 0 et 1."
+      },
+      {
+        "key": "d",
+        "text": "$\\sin\\widehat{XYZ} = \\dfrac{XZ}{XY}$",
+        "misconception": "L'élève divise le côté opposé par le côté adjacent : c'est la tangente de $\\widehat{XYZ}$, pas son sinus."
+      }
+    ],
+    "answer": {
+      "value": "b"
+    },
+    "solution_steps": [
+      "L'angle droit est en X : l'hypoténuse est [YZ].",
+      "Pour l'angle $\\widehat{XYZ}$, de sommet Y : le côté adjacent est [XY], qui touche Y ; le côté opposé est [XZ], en face de Y.",
+      "$\\sin\\widehat{XYZ} = \\dfrac{\\text{côté opposé}}{\\text{hypoténuse}} = \\dfrac{XZ}{YZ}$.",
+      "Pour s'y retrouver : cosinus = adjacent ÷ hypoténuse ; sinus = opposé ÷ hypoténuse ; tangente = opposé ÷ adjacent."
+    ],
+    "hint": "Quel côté est en face du sommet Y ? Lequel est l'hypoténuse ?",
+    "estimated_duration_s": 50,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, classe de 3e, Espace et géométrie, Triangles : « Connaitre et utiliser les lignes trigonométriques dans le triangle rectangle : cosinus, sinus, tangente. »"
+  },
+  {
+    "id": "EX-G063-E-02",
+    "skill_id": "G063",
+    "level": "entrainement",
+    "type": "vrai_faux",
+    "statement": "Le triangle UVW est rectangle en U (figure pas en vraie grandeur). Vrai ou faux : $\\tan\\widehat{UVW} = 1{,}4$.",
+    "image": "figures/EX-G063-E-02",
+    "answer": {
+      "value": true
+    },
+    "solution_steps": [
+      "Pour l'angle $\\widehat{UVW}$, de sommet V : le côté opposé est [UW], 7 cm ; le côté adjacent est [UV], 5 cm.",
+      "$\\tan\\widehat{UVW} = \\dfrac{\\text{côté opposé}}{\\text{côté adjacent}} =\\dfrac{UW}{UV} = \\dfrac{7}{5}$, soit 7 ÷ 5 = 1,4. C'est **vrai**.",
+      "Une tangente peut dépasser 1 : elle divise deux côtés de l'angle droit, et le côté opposé peut être le plus long des deux. Seuls le cosinus et le sinus, qui divisent par l'hypoténuse, restent entre 0 et 1.",
+      "Qui trouve $\\dfrac{5}{7}$ a renversé le quotient : c'est la tangente de l'autre angle aigu, $\\widehat{UWV}$."
+    ],
+    "hint": "La tangente divise le côté opposé à l'angle par le côté adjacent.",
+    "estimated_duration_s": 50,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, classe de 3e, Espace et géométrie, Triangles : « Connaitre et utiliser les lignes trigonométriques dans le triangle rectangle : cosinus, sinus, tangente. »"
+  },
+  {
+    "id": "EX-G063-M-01",
+    "skill_id": "G063",
+    "level": "maitrise",
+    "type": "numerique",
+    "statement": "Le triangle JKL est rectangle en K (figure pas en vraie grandeur). Donne la valeur exacte de $\\sin\\widehat{KJL}$, sous la forme d'une fraction.",
+    "image": "figures/EX-G063-M-01",
+    "answer": {
+      "value": "7/25",
+      "accepted": [
+        "7/25"
+      ]
+    },
+    "solution_steps": [
+      "Le sinus de $\\widehat{KJL}$ demande le côté opposé, [KL] = 7 cm, et l'hypoténuse [JL], qui n'est pas donnée.",
+      "Théorème de Pythagore dans le triangle JKL rectangle en K : JL² = JK² + KL² = 24² + 7² = 576 + 49 = 625.",
+      "JL = √625 = 25 : l'hypoténuse mesure 25 cm.",
+      "$\\sin\\widehat{KJL} = \\dfrac{\\text{côté opposé}}{\\text{hypoténuse}} = \\dfrac{KL}{JL} = \\dfrac{7}{25}$.",
+      "Pièges : $\\dfrac{7}{24}$ est la tangente (opposé ÷ adjacent), et $\\dfrac{24}{25}$ le cosinus (adjacent ÷ hypoténuse)."
+    ],
+    "hint": "Il manque l'hypoténuse : quel théorème la donne dans un triangle rectangle ?",
+    "estimated_duration_s": 120,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, classe de 3e, Espace et géométrie, Triangles : « Connaitre et utiliser les lignes trigonométriques dans le triangle rectangle : cosinus, sinus, tangente. »"
+  },
+  {
+    "id": "EX-G063-M-02",
+    "skill_id": "G063",
+    "level": "maitrise",
+    "type": "qcm",
+    "statement": "Les triangles SVW et STU sont rectangles en V et en T ; V est sur [ST], W sur [SU] (figure pas en vraie grandeur). Que vaut $\\cos\\widehat{TSU}$ ?",
+    "image": "figures/EX-G063-M-02",
+    "choices": [
+      {
+        "key": "a",
+        "text": "On ne peut pas le savoir : il manque les longueurs ST et SU.",
+        "misconception": "L'élève croit que le cosinus dépend des longueurs du triangle. Il ne dépend que de l'angle, et $\\widehat{TSU}$ est le même angle que $\\widehat{VSW}$."
+      },
+      {
+        "key": "b",
+        "text": "Plus de 0,7, car le triangle STU est plus grand.",
+        "misconception": "L'élève croit qu'un cosinus grandit avec le triangle. Agrandir le triangle multiplie le côté adjacent et l'hypoténuse par le même nombre : leur quotient ne change pas."
+      },
+      {
+        "key": "c",
+        "text": "Environ 1,43",
+        "misconception": "L'élève divise l'hypoténuse par le côté adjacent (5 ÷ 3,5) : le quotient est renversé, et un cosinus ne dépasse jamais 1."
+      },
+      {
+        "key": "d",
+        "text": "0,7",
+        "misconception": null
+      }
+    ],
+    "answer": {
+      "value": "d"
+    },
+    "solution_steps": [
+      "V est sur [ST] et W sur [SU] : les angles $\\widehat{VSW}$ et $\\widehat{TSU}$ ont les mêmes côtés, c'est le même angle.",
+      "Dans le petit triangle SVW, rectangle en V : $\\cos\\widehat{VSW} = \\dfrac{SV}{SW} = \\dfrac{3{,}5}{5} = 0{,}7$.",
+      "Le cosinus d'un angle aigu ne dépend que de l'angle, pas de la taille du triangle rectangle : dans le grand triangle STU, $\\cos\\widehat{TSU} = \\dfrac{ST}{SU}$ vaut aussi **0,7**.",
+      "Autrement dit, côté adjacent et hypoténuse sont proportionnels d'un triangle à l'autre : le coefficient 0,7 est le même pour tous les triangles rectangles qui ont cet angle."
+    ],
+    "hint": "Les angles $\\widehat{VSW}$ et $\\widehat{TSU}$ sont-ils différents ? Calcule le cosinus dans le triangle dont tu connais les longueurs.",
+    "estimated_duration_s": 90,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, classe de 3e, Espace et géométrie, Triangles : « Connaitre et utiliser les lignes trigonométriques dans le triangle rectangle : cosinus, sinus, tangente. »"
+  }
+]

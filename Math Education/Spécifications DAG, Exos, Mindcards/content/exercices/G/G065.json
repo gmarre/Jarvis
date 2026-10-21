@@ -1,0 +1,156 @@
+[
+  {
+    "id": "EX-G065-D-01",
+    "skill_id": "G065",
+    "level": "decouverte",
+    "type": "numerique",
+    "statement": "Le triangle DEF est rectangle en E (figure pas en vraie grandeur). Donne la mesure de l'angle $\\widehat{EDF}$, arrondie au degré. Calculatrice en degrés.",
+    "image": "figures/EX-G065-D-01",
+    "answer": {
+      "value": 39,
+      "tolerance": 0.5,
+      "unit": "°"
+    },
+    "solution_steps": [
+      "Par rapport à l'angle $\\widehat{EDF}$ : DE = 7 cm est le côté adjacent, DF = 9 cm l'hypoténuse. La ligne qui les relie est le cosinus.",
+      "$\\cos\\widehat{EDF} = \\dfrac{DE}{DF} = \\dfrac{7}{9}$.",
+      "Pour retrouver un angle à partir de son cosinus, on utilise la touche Arccos de la calculatrice (souvent « 2nde » ou « shift », puis « cos ») : Arccos(7 ÷ 9) ≈ 38,9°.",
+      "Arrondie au degré : $\\widehat{EDF}$ mesure environ **39°**. Taper cos(7 ÷ 9) au lieu de Arccos donne un nombre proche de 1 : c'est un cosinus, pas un angle."
+    ],
+    "hint": "Quelle ligne relie le côté adjacent et l'hypoténuse ? Quelle touche donne l'angle quand on connaît son cosinus ?",
+    "estimated_duration_s": 90,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, classe de 3e, Espace et géométrie, Triangles : « Connaitre et utiliser les lignes trigonométriques dans le triangle rectangle : cosinus, sinus, tangente. »"
+  },
+  {
+    "id": "EX-G065-D-02",
+    "skill_id": "G065",
+    "level": "decouverte",
+    "type": "qcm",
+    "statement": "Le triangle KLM est rectangle en L (figure pas en vraie grandeur). Quel calcul donne la mesure de l'angle $\\widehat{LKM}$ ? Calculatrice en degrés.",
+    "image": "figures/EX-G065-D-02",
+    "choices": [
+      {
+        "key": "a",
+        "text": "$\\tan\\left(\\dfrac{9}{5}\\right)$",
+        "misconception": "L'élève calcule la tangente du nombre 9/5 au lieu de chercher l'angle dont la tangente vaut 9/5 : il faut la touche Arctan."
+      },
+      {
+        "key": "b",
+        "text": "$\\text{Arctan}\\left(\\dfrac{5}{9}\\right)$",
+        "misconception": "Le quotient est renversé : 5 ÷ 9 est la tangente de l'autre angle aigu, $\\widehat{LMK}$, pour lequel [KL] est le côté opposé."
+      },
+      {
+        "key": "c",
+        "text": "$\\text{Arctan}\\left(\\dfrac{9}{5}\\right)$",
+        "misconception": null
+      },
+      {
+        "key": "d",
+        "text": "$\\text{Arccos}\\left(\\dfrac{5}{9}\\right)$",
+        "misconception": "Le cosinus demande l'hypoténuse, or 9 cm est la longueur de [LM], un côté de l'angle droit ; l'hypoténuse [KM] n'est pas connue."
+      }
+    ],
+    "answer": {
+      "value": "c"
+    },
+    "solution_steps": [
+      "Par rapport à l'angle $\\widehat{LKM}$ : KL = 5 cm est le côté adjacent, LM = 9 cm le côté opposé. L'hypoténuse [KM] n'est pas connue.",
+      "La ligne qui relie le côté opposé et le côté adjacent est la tangente : $\\tan\\widehat{LKM} = \\dfrac{LM}{KL} = \\dfrac{9}{5}$.",
+      "L'angle s'obtient avec la touche Arctan de la calculatrice : $\\widehat{LKM} = \\text{Arctan}\\left(\\dfrac{9}{5}\\right)$, environ 61°."
+    ],
+    "hint": "Quels côtés connais-tu par rapport à l'angle en K ? Quelle touche donne un angle à partir de sa tangente ?",
+    "estimated_duration_s": 60,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, classe de 3e, Espace et géométrie, Triangles : « Connaitre et utiliser les lignes trigonométriques dans le triangle rectangle : cosinus, sinus, tangente. »"
+  },
+  {
+    "id": "EX-G065-E-01",
+    "skill_id": "G065",
+    "level": "entrainement",
+    "type": "numerique",
+    "statement": "Le triangle GHJ est rectangle en H (figure pas en vraie grandeur). Donne la mesure de l'angle $\\widehat{HGJ}$, arrondie au degré. Calculatrice en degrés.",
+    "image": "figures/EX-G065-E-01",
+    "answer": {
+      "value": 38,
+      "tolerance": 0.5,
+      "unit": "°"
+    },
+    "solution_steps": [
+      "Par rapport à l'angle $\\widehat{HGJ}$, de sommet G : HJ = 8 cm est en face, c'est le côté opposé ; GJ = 13 cm est l'hypoténuse. La ligne qui les relie est le sinus.",
+      "$\\sin\\widehat{HGJ} = \\dfrac{HJ}{GJ} = \\dfrac{8}{13}$.",
+      "Touche Arcsin, en tapant le quotient d'un trait : Arcsin(8 ÷ 13) ≈ 37,98°, soit **38°** au degré près. On n'arrondit qu'à la fin, jamais le quotient en cours de route.",
+      "Piège : Arccos(8 ÷ 13) ≈ 52° est la mesure de l'autre angle aigu, $\\widehat{GJH}$, pour lequel [HJ] est le côté adjacent. Contrôle : 38 + 52 = 90."
+    ],
+    "hint": "Le côté de 8 cm touche-t-il le sommet G, ou est-il en face ?",
+    "estimated_duration_s": 90,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, classe de 3e, Espace et géométrie, Triangles : « Connaitre et utiliser les lignes trigonométriques dans le triangle rectangle : cosinus, sinus, tangente. »"
+  },
+  {
+    "id": "EX-G065-E-02",
+    "skill_id": "G065",
+    "level": "entrainement",
+    "type": "vrai_faux",
+    "statement": "Le triangle NPQ est rectangle en P (figure pas en vraie grandeur). Vrai ou faux : l'angle $\\widehat{PNQ}$ mesure environ 33°. Calculatrice en degrés.",
+    "image": "figures/EX-G065-E-02",
+    "answer": {
+      "value": false
+    },
+    "solution_steps": [
+      "Par rapport à l'angle $\\widehat{PNQ}$ : NP = 6 cm est le côté adjacent, NQ = 11 cm l'hypoténuse. Cosinus : $\\cos\\widehat{PNQ} = \\dfrac{6}{11}$.",
+      "Arccos(6 ÷ 11) ≈ 56,9° : $\\widehat{PNQ}$ mesure environ 57°, pas 33°. C'est **faux**.",
+      "33° vient de Arcsin(6 ÷ 11) : c'est l'erreur qui prend le côté adjacent pour le côté opposé. 33° est la mesure de l'autre angle aigu, $\\widehat{PQN}$ : 57 + 33 = 90."
+    ],
+    "hint": "Le côté de 6 cm est-il adjacent ou opposé à l'angle en N ?",
+    "estimated_duration_s": 90,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, classe de 3e, Espace et géométrie, Triangles : « Connaitre et utiliser les lignes trigonométriques dans le triangle rectangle : cosinus, sinus, tangente. »"
+  },
+  {
+    "id": "EX-G065-M-01",
+    "skill_id": "G065",
+    "level": "maitrise",
+    "type": "numerique",
+    "statement": "Une échelle [HP] est appuyée contre un mur vertical (schéma pas en vraie grandeur). Quel angle $\\widehat{KHP}$ fait-elle avec le mur, arrondi au degré ? Calculatrice en degrés.",
+    "image": "figures/EX-G065-M-01",
+    "answer": {
+      "value": 22,
+      "tolerance": 0.5,
+      "unit": "°"
+    },
+    "solution_steps": [
+      "Le mur est vertical et le sol horizontal : le triangle HKP est rectangle en K. L'angle avec le mur est $\\widehat{KHP}$, de sommet H.",
+      "Par rapport au sommet H : KP = 3 m est en face, c'est le côté opposé ; l'échelle HP = 8 m est l'hypoténuse. Sinus : $\\sin\\widehat{KHP} = \\dfrac{3}{8}$.",
+      "Arcsin(3 ÷ 8) ≈ 22,02°, soit **22°**.",
+      "Piège : Arccos(3 ÷ 8) ≈ 68° est l'angle avec le sol, $\\widehat{KPH}$, pour lequel [KP] est le côté adjacent. Contrôle : 22 + 68 = 90."
+    ],
+    "hint": "Repère le sommet de l'angle demandé : le côté de 3 m le touche-t-il ?",
+    "estimated_duration_s": 120,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, classe de 3e, Espace et géométrie, Triangles : « Connaitre et utiliser les lignes trigonométriques dans le triangle rectangle : cosinus, sinus, tangente. »"
+  },
+  {
+    "id": "EX-G065-M-02",
+    "skill_id": "G065",
+    "level": "maitrise",
+    "type": "numerique",
+    "statement": "Un poteau vertical [PT] a une ombre [PE] sur le sol horizontal (schéma pas en vraie grandeur). Quel angle $\\widehat{PET}$ font les rayons du soleil avec le sol, arrondi au degré ? Calculatrice en degrés.",
+    "image": "figures/EX-G065-M-02",
+    "answer": {
+      "value": 41,
+      "tolerance": 0.5,
+      "unit": "°"
+    },
+    "solution_steps": [
+      "Le poteau est vertical et le sol horizontal : le triangle EPT est rectangle en P.",
+      "Par rapport à l'angle $\\widehat{PET}$ : PT = 7 m est le côté opposé, PE = 8 m le côté adjacent. L'hypoténuse [ET] n'est pas connue : la ligne qui convient est la tangente, $\\tan\\widehat{PET} = \\dfrac{7}{8}$.",
+      "Arctan(7 ÷ 8) ≈ 41,19°, soit **41°**.",
+      "Pièges : Arctan(8 ÷ 7) ≈ 49° est l'angle au sommet du poteau ; Arcsin(7 ÷ 8) ≈ 61° prend l'ombre pour l'hypoténuse, alors que l'hypoténuse est le rayon [ET]."
+    ],
+    "hint": "Les deux longueurs connues sont-elles les côtés de l'angle droit ? Quelle ligne les relie ?",
+    "estimated_duration_s": 120,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, classe de 3e, Espace et géométrie, Triangles : « Connaitre et utiliser les lignes trigonométriques dans le triangle rectangle : cosinus, sinus, tangente. »"
+  }
+]

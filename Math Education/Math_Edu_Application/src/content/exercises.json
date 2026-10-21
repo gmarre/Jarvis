@@ -3,7 +3,7 @@
     "version": "1.0",
     "scope": "Tranche pilote CP a 4e : 69 exercices, 3 par competence (1 decouverte, 1 entrainement, 1 maitrise) sur les 23 competences des domaines A et C. La cible finale de la roadmap est de 5 exercices par niveau, soit 15 par competence.",
     "updated_at": "2026-07-28",
-    "total_exercises": 1408,
+    "total_exercises": 1426,
     "review_status": "relu_agent"
   },
   "exercises": [
@@ -35877,6 +35877,531 @@
       "estimated_duration_s": 150,
       "review_status": "relu_agent",
       "programme_ref": "Cycle 4, classe de 4e, Espace et géométrie, Triangles, Objectifs d'apprentissage : « Caractériser un triangle rectangle à l'aide de son cercle circonscrit, par son inscription dans un demi-cercle dont le diamètre est un côté du triangle. »"
+    },
+    {
+      "id": "EX-G063-D-01",
+      "skill_id": "G063",
+      "level": "decouverte",
+      "type": "qcm",
+      "statement": "Le triangle RST est rectangle en R. Quel côté est **adjacent** à l'angle $\\widehat{RST}$ ?",
+      "image": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 344 292\" width=\"344\" height=\"292\" font-family=\"system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif\" role=\"img\"><title>Triangle RST avec un angle droit codé en R et un angle marqué en S</title><rect width=\"100%\" height=\"100%\" fill=\"#ffffff\"/><polygon points=\"68.0,237.0 286.4,237.0 68.0,81.0\" fill=\"none\" fill-opacity=\"0.6\" stroke=\"#334155\" stroke-width=\"2\" stroke-linejoin=\"round\"/><path d=\"M79.0,237.0 L79.0,226.0 L68.0,226.0\" fill=\"none\" stroke=\"#334155\" stroke-width=\"1.6\"/><path d=\"M258.4,237.0 A28.0,28.0 0 0 1 263.6,220.7\" fill=\"none\" stroke=\"#2563eb\" stroke-width=\"2\"/><line x1=\"64.0\" y1=\"233.0\" x2=\"72.0\" y2=\"241.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"64.0\" y1=\"241.0\" x2=\"72.0\" y2=\"233.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><text x=\"56.6\" y=\"250.1\" font-size=\"15\" text-anchor=\"middle\" fill=\"#334155\" font-weight=\"600\">R</text><line x1=\"282.4\" y1=\"233.0\" x2=\"290.4\" y2=\"241.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"282.4\" y1=\"241.0\" x2=\"290.4\" y2=\"233.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><text x=\"299.6\" y=\"246.7\" font-size=\"15\" text-anchor=\"middle\" fill=\"#334155\" font-weight=\"600\">S</text><line x1=\"64.0\" y1=\"77.0\" x2=\"72.0\" y2=\"85.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"64.0\" y1=\"85.0\" x2=\"72.0\" y2=\"77.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><text x=\"60.0\" y=\"74.5\" font-size=\"15\" text-anchor=\"middle\" fill=\"#334155\" font-weight=\"600\">T</text></svg>",
+      "choices": [
+        {
+          "key": "a",
+          "text": "[ST]",
+          "misconception": "L'élève prend l'hypoténuse parce qu'elle touche le sommet S. Mais l'hypoténuse, en face de l'angle droit, n'est jamais appelée côté adjacent."
+        },
+        {
+          "key": "b",
+          "text": "[RT]",
+          "misconception": "L'élève prend le côté opposé : [RT] ne touche pas le sommet S, il est en face de l'angle $\\widehat{RST}$."
+        },
+        {
+          "key": "c",
+          "text": "[RS]",
+          "misconception": null
+        }
+      ],
+      "answer": {
+        "value": "c"
+      },
+      "solution_steps": [
+        "L'angle droit est en R : le côté en face, [ST], est l'**hypoténuse**, le plus long côté du triangle.",
+        "Deux côtés forment l'angle $\\widehat{RST}$ : [SR] et [ST]. L'hypoténuse mise à part, il reste [RS] : c'est le **côté adjacent** à $\\widehat{RST}$.",
+        "Le troisième côté, [RT], est en face de l'angle : c'est le **côté opposé** à $\\widehat{RST}$.",
+        "Pour l'autre angle aigu, $\\widehat{RTS}$, les rôles s'échangent : [RT] devient adjacent et [RS] opposé. L'hypoténuse, elle, ne change jamais."
+      ],
+      "hint": "Repère d'abord l'hypoténuse, en face de l'angle droit : elle n'est jamais le côté adjacent.",
+      "estimated_duration_s": 40,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 4, classe de 3e, Espace et géométrie, Triangles : « Connaitre et utiliser les lignes trigonométriques dans le triangle rectangle : cosinus, sinus, tangente. »"
+    },
+    {
+      "id": "EX-G063-D-02",
+      "skill_id": "G063",
+      "level": "decouverte",
+      "type": "numerique",
+      "statement": "Le triangle GHK est rectangle en H (figure pas en vraie grandeur). Donne la valeur exacte de $\\cos\\widehat{HGK}$.",
+      "image": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 344 292\" width=\"344\" height=\"292\" font-family=\"system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif\" role=\"img\"><title>Triangle GHK avec un angle droit codé en H, un angle marqué en G et deux longueurs écrites</title><rect width=\"100%\" height=\"100%\" fill=\"#ffffff\"/><polygon points=\"49.8,237.0 296.8,237.0 296.8,99.2\" fill=\"none\" fill-opacity=\"0.6\" stroke=\"#334155\" stroke-width=\"2\" stroke-linejoin=\"round\"/><path d=\"M285.8,237.0 L285.8,226.0 L296.8,226.0\" fill=\"none\" stroke=\"#334155\" stroke-width=\"1.6\"/><path d=\"M79.8,237.0 A30.0,30.0 0 0 0 76.0,222.4\" fill=\"none\" stroke=\"#2563eb\" stroke-width=\"2\"/><text x=\"173.3\" y=\"255.0\" font-size=\"13\" text-anchor=\"middle\" fill=\"#334155\">7 cm</text><text x=\"166.5\" y=\"161.7\" font-size=\"13\" text-anchor=\"middle\" fill=\"#334155\">8 cm</text><line x1=\"292.8\" y1=\"233.0\" x2=\"300.8\" y2=\"241.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"292.8\" y1=\"241.0\" x2=\"300.8\" y2=\"233.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><text x=\"309.0\" y=\"248.8\" font-size=\"15\" text-anchor=\"middle\" fill=\"#334155\" font-weight=\"600\">H</text><line x1=\"45.8\" y1=\"233.0\" x2=\"53.8\" y2=\"241.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"45.8\" y1=\"241.0\" x2=\"53.8\" y2=\"233.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><text x=\"36.3\" y=\"245.8\" font-size=\"15\" text-anchor=\"middle\" fill=\"#334155\" font-weight=\"600\">G</text><line x1=\"292.8\" y1=\"95.2\" x2=\"300.8\" y2=\"103.2\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"292.8\" y1=\"103.2\" x2=\"300.8\" y2=\"95.2\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><text x=\"306.1\" y=\"93.8\" font-size=\"15\" text-anchor=\"middle\" fill=\"#334155\" font-weight=\"600\">K</text></svg>",
+      "answer": {
+        "value": 0.875,
+        "accepted": [
+          "7/8"
+        ]
+      },
+      "solution_steps": [
+        "L'angle droit est en H : l'hypoténuse est [GK], en face, avec GK = 8 cm.",
+        "Le côté adjacent à l'angle $\\widehat{HGK}$ est l'autre côté qui le forme : [GH], avec GH = 7 cm.",
+        "$\\cos\\widehat{HGK} = \\dfrac{\\text{côté adjacent}}{\\text{hypoténuse}} = \\dfrac{GH}{GK} = \\dfrac{7}{8}$, soit 7 ÷ 8 = **0,875**.",
+        "Contrôle : un cosinus est compris entre 0 et 1, car l'hypoténuse est le plus long côté. Écrire $\\dfrac{8}{7}$, plus grand que 1, c'est renverser le quotient."
+      ],
+      "hint": "Le cosinus d'un angle aigu, c'est le côté adjacent divisé par l'hypoténuse.",
+      "estimated_duration_s": 60,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 4, classe de 3e, Espace et géométrie, Triangles : « Connaitre et utiliser les lignes trigonométriques dans le triangle rectangle : cosinus, sinus, tangente. »"
+    },
+    {
+      "id": "EX-G063-E-01",
+      "skill_id": "G063",
+      "level": "entrainement",
+      "type": "qcm",
+      "statement": "Le triangle XYZ est rectangle en X. Quelle égalité est juste ?",
+      "image": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 344 292\" width=\"344\" height=\"292\" font-family=\"system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif\" role=\"img\"><title>Triangle XYZ avec un angle droit codé en X et un angle marqué en Y</title><rect width=\"100%\" height=\"100%\" fill=\"#ffffff\"/><polygon points=\"107.0,244.8 263.0,244.8 107.0,47.2\" fill=\"none\" fill-opacity=\"0.6\" stroke=\"#334155\" stroke-width=\"2\" stroke-linejoin=\"round\"/><path d=\"M118.0,244.8 L118.0,233.8 L107.0,233.8\" fill=\"none\" stroke=\"#334155\" stroke-width=\"1.6\"/><path d=\"M237.0,244.8 A26.0,26.0 0 0 1 246.9,224.4\" fill=\"none\" stroke=\"#2563eb\" stroke-width=\"2\"/><line x1=\"103.0\" y1=\"240.8\" x2=\"111.0\" y2=\"248.8\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"103.0\" y1=\"248.8\" x2=\"111.0\" y2=\"240.8\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><text x=\"98.3\" y=\"260.8\" font-size=\"15\" text-anchor=\"middle\" fill=\"#334155\" font-weight=\"600\">X</text><line x1=\"259.0\" y1=\"240.8\" x2=\"267.0\" y2=\"248.8\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"259.0\" y1=\"248.8\" x2=\"267.0\" y2=\"240.8\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><text x=\"274.8\" y=\"257.3\" font-size=\"15\" text-anchor=\"middle\" fill=\"#334155\" font-weight=\"600\">Y</text><line x1=\"103.0\" y1=\"43.2\" x2=\"111.0\" y2=\"51.2\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"103.0\" y1=\"51.2\" x2=\"111.0\" y2=\"43.2\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><text x=\"101.9\" y=\"39.2\" font-size=\"15\" text-anchor=\"middle\" fill=\"#334155\" font-weight=\"600\">Z</text></svg>",
+      "choices": [
+        {
+          "key": "a",
+          "text": "$\\sin\\widehat{XYZ} = \\dfrac{XY}{YZ}$",
+          "misconception": "L'élève prend le côté adjacent [XY] au lieu du côté opposé : ce quotient est le cosinus de $\\widehat{XYZ}$."
+        },
+        {
+          "key": "b",
+          "text": "$\\sin\\widehat{XYZ} = \\dfrac{XZ}{YZ}$",
+          "misconception": null
+        },
+        {
+          "key": "c",
+          "text": "$\\sin\\widehat{XYZ} = \\dfrac{YZ}{XZ}$",
+          "misconception": "L'élève met l'hypoténuse au numérateur : ce quotient est plus grand que 1, alors qu'un sinus est toujours compris entre 0 et 1."
+        },
+        {
+          "key": "d",
+          "text": "$\\sin\\widehat{XYZ} = \\dfrac{XZ}{XY}$",
+          "misconception": "L'élève divise le côté opposé par le côté adjacent : c'est la tangente de $\\widehat{XYZ}$, pas son sinus."
+        }
+      ],
+      "answer": {
+        "value": "b"
+      },
+      "solution_steps": [
+        "L'angle droit est en X : l'hypoténuse est [YZ].",
+        "Pour l'angle $\\widehat{XYZ}$, de sommet Y : le côté adjacent est [XY], qui touche Y ; le côté opposé est [XZ], en face de Y.",
+        "$\\sin\\widehat{XYZ} = \\dfrac{\\text{côté opposé}}{\\text{hypoténuse}} = \\dfrac{XZ}{YZ}$.",
+        "Pour s'y retrouver : cosinus = adjacent ÷ hypoténuse ; sinus = opposé ÷ hypoténuse ; tangente = opposé ÷ adjacent."
+      ],
+      "hint": "Quel côté est en face du sommet Y ? Lequel est l'hypoténuse ?",
+      "estimated_duration_s": 50,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 4, classe de 3e, Espace et géométrie, Triangles : « Connaitre et utiliser les lignes trigonométriques dans le triangle rectangle : cosinus, sinus, tangente. »"
+    },
+    {
+      "id": "EX-G063-E-02",
+      "skill_id": "G063",
+      "level": "entrainement",
+      "type": "vrai_faux",
+      "statement": "Le triangle UVW est rectangle en U (figure pas en vraie grandeur). Vrai ou faux : $\\tan\\widehat{UVW} = 1{,}4$.",
+      "image": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 344 292\" width=\"344\" height=\"292\" font-family=\"system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif\" role=\"img\"><title>Triangle UVW avec un angle droit codé en U, un angle marqué en V et deux longueurs écrites</title><rect width=\"100%\" height=\"100%\" fill=\"#ffffff\"/><polygon points=\"81.0,244.8 221.4,244.8 81.0,49.8\" fill=\"none\" fill-opacity=\"0.6\" stroke=\"#334155\" stroke-width=\"2\" stroke-linejoin=\"round\"/><path d=\"M92.0,244.8 L92.0,233.8 L81.0,233.8\" fill=\"none\" stroke=\"#334155\" stroke-width=\"1.6\"/><path d=\"M195.4,244.8 A26.0,26.0 0 0 1 206.2,223.7\" fill=\"none\" stroke=\"#2563eb\" stroke-width=\"2\"/><text x=\"151.2\" y=\"262.8\" font-size=\"13\" text-anchor=\"middle\" fill=\"#334155\">5 cm</text><text x=\"73.0\" y=\"152.3\" font-size=\"13\" text-anchor=\"end\" fill=\"#334155\">7 cm</text><line x1=\"77.0\" y1=\"240.8\" x2=\"85.0\" y2=\"248.8\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"77.0\" y1=\"248.8\" x2=\"85.0\" y2=\"240.8\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><text x=\"72.8\" y=\"261.2\" font-size=\"15\" text-anchor=\"middle\" fill=\"#334155\" font-weight=\"600\">U</text><line x1=\"217.4\" y1=\"240.8\" x2=\"225.4\" y2=\"248.8\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"217.4\" y1=\"248.8\" x2=\"225.4\" y2=\"240.8\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><text x=\"232.9\" y=\"257.8\" font-size=\"15\" text-anchor=\"middle\" fill=\"#334155\" font-weight=\"600\">V</text><line x1=\"77.0\" y1=\"45.8\" x2=\"85.0\" y2=\"53.8\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"77.0\" y1=\"53.8\" x2=\"85.0\" y2=\"45.8\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><text x=\"76.3\" y=\"41.6\" font-size=\"15\" text-anchor=\"middle\" fill=\"#334155\" font-weight=\"600\">W</text></svg>",
+      "answer": {
+        "value": true
+      },
+      "solution_steps": [
+        "Pour l'angle $\\widehat{UVW}$, de sommet V : le côté opposé est [UW], 7 cm ; le côté adjacent est [UV], 5 cm.",
+        "$\\tan\\widehat{UVW} = \\dfrac{\\text{côté opposé}}{\\text{côté adjacent}} =\\dfrac{UW}{UV} = \\dfrac{7}{5}$, soit 7 ÷ 5 = 1,4. C'est **vrai**.",
+        "Une tangente peut dépasser 1 : elle divise deux côtés de l'angle droit, et le côté opposé peut être le plus long des deux. Seuls le cosinus et le sinus, qui divisent par l'hypoténuse, restent entre 0 et 1.",
+        "Qui trouve $\\dfrac{5}{7}$ a renversé le quotient : c'est la tangente de l'autre angle aigu, $\\widehat{UWV}$."
+      ],
+      "hint": "La tangente divise le côté opposé à l'angle par le côté adjacent.",
+      "estimated_duration_s": 50,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 4, classe de 3e, Espace et géométrie, Triangles : « Connaitre et utiliser les lignes trigonométriques dans le triangle rectangle : cosinus, sinus, tangente. »"
+    },
+    {
+      "id": "EX-G063-M-01",
+      "skill_id": "G063",
+      "level": "maitrise",
+      "type": "numerique",
+      "statement": "Le triangle JKL est rectangle en K (figure pas en vraie grandeur). Donne la valeur exacte de $\\sin\\widehat{KJL}$, sous la forme d'une fraction.",
+      "image": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 344 240\" width=\"344\" height=\"240\" font-family=\"system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif\" role=\"img\"><title>Triangle JKL avec un angle droit codé en K, un angle marqué en J et deux longueurs écrites</title><rect width=\"100%\" height=\"100%\" fill=\"#ffffff\"/><polygon points=\"42.0,198.0 302.0,198.0 302.0,122.6\" fill=\"none\" fill-opacity=\"0.6\" stroke=\"#334155\" stroke-width=\"2\" stroke-linejoin=\"round\"/><path d=\"M291.0,198.0 L291.0,187.0 L302.0,187.0\" fill=\"none\" stroke=\"#334155\" stroke-width=\"1.6\"/><path d=\"M82.0,198.0 A40.0,40.0 0 0 0 80.4,186.9\" fill=\"none\" stroke=\"#2563eb\" stroke-width=\"2\"/><text x=\"172.0\" y=\"216.0\" font-size=\"13\" text-anchor=\"middle\" fill=\"#334155\">24 cm</text><text x=\"310.0\" y=\"165.3\" font-size=\"13\" text-anchor=\"start\" fill=\"#334155\">7 cm</text><line x1=\"298.0\" y1=\"194.0\" x2=\"306.0\" y2=\"202.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"298.0\" y1=\"202.0\" x2=\"306.0\" y2=\"194.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><text x=\"315.4\" y=\"206.9\" font-size=\"15\" text-anchor=\"middle\" fill=\"#334155\" font-weight=\"600\">K</text><line x1=\"38.0\" y1=\"194.0\" x2=\"46.0\" y2=\"202.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"38.0\" y1=\"202.0\" x2=\"46.0\" y2=\"194.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><text x=\"28.1\" y=\"205.0\" font-size=\"15\" text-anchor=\"middle\" fill=\"#334155\" font-weight=\"600\">J</text><line x1=\"298.0\" y1=\"118.6\" x2=\"306.0\" y2=\"126.6\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"298.0\" y1=\"126.6\" x2=\"306.0\" y2=\"118.6\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><text x=\"314.1\" y=\"120.6\" font-size=\"15\" text-anchor=\"middle\" fill=\"#334155\" font-weight=\"600\">L</text></svg>",
+      "answer": {
+        "value": "7/25",
+        "accepted": [
+          "7/25"
+        ]
+      },
+      "solution_steps": [
+        "Le sinus de $\\widehat{KJL}$ demande le côté opposé, [KL] = 7 cm, et l'hypoténuse [JL], qui n'est pas donnée.",
+        "Théorème de Pythagore dans le triangle JKL rectangle en K : JL² = JK² + KL² = 24² + 7² = 576 + 49 = 625.",
+        "JL = √625 = 25 : l'hypoténuse mesure 25 cm.",
+        "$\\sin\\widehat{KJL} = \\dfrac{\\text{côté opposé}}{\\text{hypoténuse}} = \\dfrac{KL}{JL} = \\dfrac{7}{25}$.",
+        "Pièges : $\\dfrac{7}{24}$ est la tangente (opposé ÷ adjacent), et $\\dfrac{24}{25}$ le cosinus (adjacent ÷ hypoténuse)."
+      ],
+      "hint": "Il manque l'hypoténuse : quel théorème la donne dans un triangle rectangle ?",
+      "estimated_duration_s": 120,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 4, classe de 3e, Espace et géométrie, Triangles : « Connaitre et utiliser les lignes trigonométriques dans le triangle rectangle : cosinus, sinus, tangente. »"
+    },
+    {
+      "id": "EX-G063-M-02",
+      "skill_id": "G063",
+      "level": "maitrise",
+      "type": "qcm",
+      "statement": "Les triangles SVW et STU sont rectangles en V et en T ; V est sur [ST], W sur [SU] (figure pas en vraie grandeur). Que vaut $\\cos\\widehat{TSU}$ ?",
+      "image": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 344 292\" width=\"344\" height=\"292\" font-family=\"system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif\" role=\"img\"><title>Deux triangles emboîtés SVW et STU, avec des angles droits codés en V et en T, un angle marqué en S et deux longueurs écrites</title><rect width=\"100%\" height=\"100%\" fill=\"#ffffff\"/><polygon points=\"42.0,250.0 250.0,250.0 250.0,37.8\" fill=\"none\" fill-opacity=\"0.6\" stroke=\"#334155\" stroke-width=\"2\" stroke-linejoin=\"round\"/><line x1=\"133.0\" y1=\"250.0\" x2=\"133.0\" y2=\"157.2\" stroke=\"#334155\" stroke-width=\"2.0\" stroke-linecap=\"round\"/><path d=\"M122.0,250.0 L122.0,239.0 L133.0,239.0\" fill=\"none\" stroke=\"#334155\" stroke-width=\"1.6\"/><path d=\"M239.0,250.0 L239.0,239.0 L250.0,239.0\" fill=\"none\" stroke=\"#334155\" stroke-width=\"1.6\"/><path d=\"M68.0,250.0 A26.0,26.0 0 0 0 60.2,231.4\" fill=\"none\" stroke=\"#2563eb\" stroke-width=\"2\"/><text x=\"87.5\" y=\"268.0\" font-size=\"13\" text-anchor=\"middle\" fill=\"#334155\">3,5 cm</text><text x=\"81.8\" y=\"203.0\" font-size=\"13\" text-anchor=\"end\" fill=\"#334155\">5 cm</text><line x1=\"38.0\" y1=\"246.0\" x2=\"46.0\" y2=\"254.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"38.0\" y1=\"254.0\" x2=\"46.0\" y2=\"246.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><text x=\"29.5\" y=\"261.4\" font-size=\"15\" text-anchor=\"middle\" fill=\"#334155\" font-weight=\"600\">S</text><line x1=\"129.0\" y1=\"246.0\" x2=\"137.0\" y2=\"254.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"129.0\" y1=\"254.0\" x2=\"137.0\" y2=\"246.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><text x=\"127.1\" y=\"267.7\" font-size=\"15\" text-anchor=\"middle\" fill=\"#334155\" font-weight=\"600\">V</text><line x1=\"129.0\" y1=\"153.2\" x2=\"137.0\" y2=\"161.2\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"129.0\" y1=\"161.2\" x2=\"137.0\" y2=\"153.2\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><text x=\"123.6\" y=\"151.8\" font-size=\"15\" text-anchor=\"middle\" fill=\"#334155\" font-weight=\"600\">W</text><line x1=\"246.0\" y1=\"246.0\" x2=\"254.0\" y2=\"254.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"246.0\" y1=\"254.0\" x2=\"254.0\" y2=\"246.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><text x=\"261.5\" y=\"263.0\" font-size=\"15\" text-anchor=\"middle\" fill=\"#334155\" font-weight=\"600\">T</text><line x1=\"246.0\" y1=\"33.8\" x2=\"254.0\" y2=\"41.8\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"246.0\" y1=\"41.8\" x2=\"254.0\" y2=\"33.8\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><text x=\"257.1\" y=\"30.8\" font-size=\"15\" text-anchor=\"middle\" fill=\"#334155\" font-weight=\"600\">U</text></svg>",
+      "choices": [
+        {
+          "key": "a",
+          "text": "On ne peut pas le savoir : il manque les longueurs ST et SU.",
+          "misconception": "L'élève croit que le cosinus dépend des longueurs du triangle. Il ne dépend que de l'angle, et $\\widehat{TSU}$ est le même angle que $\\widehat{VSW}$."
+        },
+        {
+          "key": "b",
+          "text": "Plus de 0,7, car le triangle STU est plus grand.",
+          "misconception": "L'élève croit qu'un cosinus grandit avec le triangle. Agrandir le triangle multiplie le côté adjacent et l'hypoténuse par le même nombre : leur quotient ne change pas."
+        },
+        {
+          "key": "c",
+          "text": "Environ 1,43",
+          "misconception": "L'élève divise l'hypoténuse par le côté adjacent (5 ÷ 3,5) : le quotient est renversé, et un cosinus ne dépasse jamais 1."
+        },
+        {
+          "key": "d",
+          "text": "0,7",
+          "misconception": null
+        }
+      ],
+      "answer": {
+        "value": "d"
+      },
+      "solution_steps": [
+        "V est sur [ST] et W sur [SU] : les angles $\\widehat{VSW}$ et $\\widehat{TSU}$ ont les mêmes côtés, c'est le même angle.",
+        "Dans le petit triangle SVW, rectangle en V : $\\cos\\widehat{VSW} = \\dfrac{SV}{SW} = \\dfrac{3{,}5}{5} = 0{,}7$.",
+        "Le cosinus d'un angle aigu ne dépend que de l'angle, pas de la taille du triangle rectangle : dans le grand triangle STU, $\\cos\\widehat{TSU} = \\dfrac{ST}{SU}$ vaut aussi **0,7**.",
+        "Autrement dit, côté adjacent et hypoténuse sont proportionnels d'un triangle à l'autre : le coefficient 0,7 est le même pour tous les triangles rectangles qui ont cet angle."
+      ],
+      "hint": "Les angles $\\widehat{VSW}$ et $\\widehat{TSU}$ sont-ils différents ? Calcule le cosinus dans le triangle dont tu connais les longueurs.",
+      "estimated_duration_s": 90,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 4, classe de 3e, Espace et géométrie, Triangles : « Connaitre et utiliser les lignes trigonométriques dans le triangle rectangle : cosinus, sinus, tangente. »"
+    },
+    {
+      "id": "EX-G064-D-01",
+      "skill_id": "G064",
+      "level": "decouverte",
+      "type": "numerique",
+      "statement": "Le triangle EFH est rectangle en F (figure pas en vraie grandeur). Calcule la longueur EF en cm, arrondie au dixième. Calculatrice en degrés.",
+      "image": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 344 292\" width=\"344\" height=\"292\" font-family=\"system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif\" role=\"img\"><title>Triangle EFH avec un angle droit codé en F, un angle et une longueur écrits, et la longueur cherchée marquée d'un point d'interrogation</title><rect width=\"100%\" height=\"100%\" fill=\"#ffffff\"/><polygon points=\"96.6,244.8 263.0,244.8 263.0,83.6\" fill=\"none\" fill-opacity=\"0.6\" stroke=\"#334155\" stroke-width=\"2\" stroke-linejoin=\"round\"/><path d=\"M252.0,244.8 L252.0,233.8 L263.0,233.8\" fill=\"none\" stroke=\"#334155\" stroke-width=\"1.6\"/><path d=\"M122.6,244.8 A26.0,26.0 0 0 0 115.3,226.7\" fill=\"none\" stroke=\"#2563eb\" stroke-width=\"2\"/><text x=\"133.7\" y=\"234.8\" font-size=\"13\" text-anchor=\"middle\" fill=\"#2563eb\" font-weight=\"600\">50°</text><text x=\"174.2\" y=\"163.5\" font-size=\"13\" text-anchor=\"end\" fill=\"#334155\">9 cm</text><text x=\"179.8\" y=\"262.8\" font-size=\"13\" text-anchor=\"middle\" fill=\"#2563eb\">?</text><line x1=\"259.0\" y1=\"240.8\" x2=\"267.0\" y2=\"248.8\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"259.0\" y1=\"248.8\" x2=\"267.0\" y2=\"240.8\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><text x=\"273.1\" y=\"259.5\" font-size=\"15\" text-anchor=\"middle\" fill=\"#334155\" font-weight=\"600\">F</text><line x1=\"92.6\" y1=\"240.8\" x2=\"100.6\" y2=\"248.8\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"92.6\" y1=\"248.8\" x2=\"100.6\" y2=\"240.8\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><text x=\"84.0\" y=\"255.9\" font-size=\"15\" text-anchor=\"middle\" fill=\"#334155\" font-weight=\"600\">E</text><line x1=\"259.0\" y1=\"79.6\" x2=\"267.0\" y2=\"87.6\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"259.0\" y1=\"87.6\" x2=\"267.0\" y2=\"79.6\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><text x=\"269.4\" y=\"76.2\" font-size=\"15\" text-anchor=\"middle\" fill=\"#334155\" font-weight=\"600\">H</text></svg>",
+      "answer": {
+        "value": 5.8,
+        "tolerance": 0.05,
+        "unit": "cm"
+      },
+      "solution_steps": [
+        "On connaît l'angle $\\widehat{FEH}$ = 50° et l'hypoténuse EH = 9 cm ; on cherche EF, le côté adjacent à cet angle.",
+        "La ligne qui relie le côté adjacent et l'hypoténuse est le cosinus : $\\cos\\widehat{FEH} = \\dfrac{EF}{EH}$, soit cos 50° = $\\dfrac{EF}{9}$.",
+        "En multipliant par 9 : EF = 9 × cos 50° ≈ 5,785 à la calculatrice en degrés, soit **5,8 cm** au dixième.",
+        "Contrôle : EF est plus court que l'hypoténuse, comme tout côté de l'angle droit. Une calculatrice réglée en radians donnerait environ 8,7 cm : il faut la régler en degrés."
+      ],
+      "hint": "Le côté cherché est-il adjacent ou opposé à l'angle de 50° ? Quelle ligne le relie à l'hypoténuse ?",
+      "estimated_duration_s": 90,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 4, classe de 3e, Espace et géométrie, Triangles : « Connaitre et utiliser les lignes trigonométriques dans le triangle rectangle : cosinus, sinus, tangente. »"
+    },
+    {
+      "id": "EX-G064-D-02",
+      "skill_id": "G064",
+      "level": "decouverte",
+      "type": "qcm",
+      "statement": "Le triangle NPR est rectangle en P (figure pas en vraie grandeur). Quel calcul donne la longueur PR, en cm ? Calculatrice en degrés.",
+      "image": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 344 292\" width=\"344\" height=\"292\" font-family=\"system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif\" role=\"img\"><title>Triangle NPR avec un angle droit codé en P, un angle et une longueur écrits, et la longueur cherchée marquée d'un point d'interrogation</title><rect width=\"100%\" height=\"100%\" fill=\"#ffffff\"/><polygon points=\"47.2,237.0 296.8,237.0 296.8,68.0\" fill=\"none\" fill-opacity=\"0.6\" stroke=\"#334155\" stroke-width=\"2\" stroke-linejoin=\"round\"/><path d=\"M285.8,237.0 L285.8,226.0 L296.8,226.0\" fill=\"none\" stroke=\"#334155\" stroke-width=\"1.6\"/><path d=\"M81.2,237.0 A34.0,34.0 0 0 0 75.4,217.9\" fill=\"none\" stroke=\"#2563eb\" stroke-width=\"2\"/><text x=\"93.1\" y=\"227.9\" font-size=\"13\" text-anchor=\"middle\" fill=\"#2563eb\" font-weight=\"600\">29°</text><text x=\"167.5\" y=\"150.9\" font-size=\"13\" text-anchor=\"end\" fill=\"#334155\">13 cm</text><text x=\"304.8\" y=\"157.5\" font-size=\"13\" text-anchor=\"start\" fill=\"#2563eb\">?</text><line x1=\"292.8\" y1=\"233.0\" x2=\"300.8\" y2=\"241.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"292.8\" y1=\"241.0\" x2=\"300.8\" y2=\"233.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><text x=\"308.4\" y=\"249.8\" font-size=\"15\" text-anchor=\"middle\" fill=\"#334155\" font-weight=\"600\">P</text><line x1=\"43.2\" y1=\"233.0\" x2=\"51.2\" y2=\"241.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"43.2\" y1=\"241.0\" x2=\"51.2\" y2=\"233.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><text x=\"33.9\" y=\"246.5\" font-size=\"15\" text-anchor=\"middle\" fill=\"#334155\" font-weight=\"600\">N</text><line x1=\"292.8\" y1=\"64.0\" x2=\"300.8\" y2=\"72.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"292.8\" y1=\"72.0\" x2=\"300.8\" y2=\"64.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><text x=\"305.1\" y=\"61.7\" font-size=\"15\" text-anchor=\"middle\" fill=\"#334155\" font-weight=\"600\">R</text></svg>",
+      "choices": [
+        {
+          "key": "a",
+          "text": "13 × cos 29°",
+          "misconception": "L'élève choisit le cosinus, mais [PR] est en face de l'angle de 29° : c'est le côté opposé. 13 × cos 29° donne NP, le côté adjacent."
+        },
+        {
+          "key": "b",
+          "text": "13 × sin 29°",
+          "misconception": null
+        },
+        {
+          "key": "c",
+          "text": "13 ÷ sin 29°",
+          "misconception": "L'élève divise au lieu de multiplier : 13 ÷ sin 29° vaut environ 26,8 cm, plus que l'hypoténuse, ce qui est impossible pour un côté de l'angle droit."
+        },
+        {
+          "key": "d",
+          "text": "13 × tan 29°",
+          "misconception": "La tangente relie les deux côtés de l'angle droit, sans l'hypoténuse : ce calcul suppose à tort que 13 cm est la longueur de [NP]."
+        }
+      ],
+      "answer": {
+        "value": "b"
+      },
+      "solution_steps": [
+        "Par rapport à l'angle $\\widehat{PNR}$ = 29° : l'hypoténuse est [NR] = 13 cm, et [PR], en face de l'angle, est le côté opposé.",
+        "La ligne qui relie le côté opposé et l'hypoténuse est le sinus : $\\sin\\widehat{PNR} = \\dfrac{PR}{NR}$, soit sin 29° = $\\dfrac{PR}{13}$.",
+        "En multipliant par 13 : PR = 13 × sin 29°, environ 6,3 cm à la calculatrice.",
+        "Moyen de choisir : CAH SOH TOA (Cosinus = Adjacent ÷ Hypoténuse, Sinus = Opposé ÷ Hypoténuse, Tangente = Opposé ÷ Adjacent)."
+      ],
+      "hint": "Le côté cherché est-il adjacent ou opposé à l'angle de 29° ? Quelle ligne le relie à l'hypoténuse ?",
+      "estimated_duration_s": 60,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 4, classe de 3e, Espace et géométrie, Triangles : « Connaitre et utiliser les lignes trigonométriques dans le triangle rectangle : cosinus, sinus, tangente. »"
+    },
+    {
+      "id": "EX-G064-E-01",
+      "skill_id": "G064",
+      "level": "entrainement",
+      "type": "numerique",
+      "statement": "Le triangle TUV est rectangle en U (figure pas en vraie grandeur). Calcule la longueur TV en cm, arrondie au dixième. Calculatrice en degrés.",
+      "image": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 344 266\" width=\"344\" height=\"266\" font-family=\"system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif\" role=\"img\"><title>Triangle TUV avec un angle droit codé en U, un angle et une longueur écrits, et la longueur cherchée marquée d'un point d'interrogation</title><rect width=\"100%\" height=\"100%\" fill=\"#ffffff\"/><polygon points=\"47.2,224.0 296.8,224.0 296.8,55.0\" fill=\"none\" fill-opacity=\"0.6\" stroke=\"#334155\" stroke-width=\"2\" stroke-linejoin=\"round\"/><path d=\"M285.8,224.0 L285.8,213.0 L296.8,213.0\" fill=\"none\" stroke=\"#334155\" stroke-width=\"1.6\"/><path d=\"M81.2,224.0 A34.0,34.0 0 0 0 75.4,204.9\" fill=\"none\" stroke=\"#2563eb\" stroke-width=\"2\"/><text x=\"93.1\" y=\"214.9\" font-size=\"13\" text-anchor=\"middle\" fill=\"#2563eb\" font-weight=\"600\">28°</text><text x=\"172.0\" y=\"242.0\" font-size=\"13\" text-anchor=\"middle\" fill=\"#334155\">6,5 cm</text><text x=\"167.5\" y=\"137.9\" font-size=\"13\" text-anchor=\"end\" fill=\"#2563eb\">?</text><line x1=\"292.8\" y1=\"220.0\" x2=\"300.8\" y2=\"228.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"292.8\" y1=\"228.0\" x2=\"300.8\" y2=\"220.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><text x=\"308.4\" y=\"236.8\" font-size=\"15\" text-anchor=\"middle\" fill=\"#334155\" font-weight=\"600\">U</text><line x1=\"43.2\" y1=\"220.0\" x2=\"51.2\" y2=\"228.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"43.2\" y1=\"228.0\" x2=\"51.2\" y2=\"220.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><text x=\"33.9\" y=\"233.5\" font-size=\"15\" text-anchor=\"middle\" fill=\"#334155\" font-weight=\"600\">T</text><line x1=\"292.8\" y1=\"51.0\" x2=\"300.8\" y2=\"59.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"292.8\" y1=\"59.0\" x2=\"300.8\" y2=\"51.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><text x=\"305.1\" y=\"48.7\" font-size=\"15\" text-anchor=\"middle\" fill=\"#334155\" font-weight=\"600\">V</text></svg>",
+      "answer": {
+        "value": 7.4,
+        "tolerance": 0.05,
+        "unit": "cm"
+      },
+      "solution_steps": [
+        "Par rapport à l'angle $\\widehat{UTV}$ = 28° : TU = 6,5 cm est le côté adjacent, et TV, en face de l'angle droit, est l'hypoténuse cherchée.",
+        "Cosinus : $\\cos\\widehat{UTV} = \\dfrac{TU}{TV}$, soit cos 28° = $\\dfrac{6{,}5}{TV}$.",
+        "La longueur cherchée est au dénominateur : TV × cos 28° = 6,5, donc TV = 6,5 ÷ cos 28° ≈ 7,36, soit **7,4 cm** au dixième.",
+        "Piège : 6,5 × cos 28° ≈ 5,7 cm donnerait une hypoténuse plus courte que le côté adjacent, ce qui est impossible."
+      ],
+      "hint": "Écris l'égalité du cosinus avec les longueurs : la longueur cherchée est-elle au numérateur ou au dénominateur ?",
+      "estimated_duration_s": 120,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 4, classe de 3e, Espace et géométrie, Triangles : « Connaitre et utiliser les lignes trigonométriques dans le triangle rectangle : cosinus, sinus, tangente. »"
+    },
+    {
+      "id": "EX-G064-E-02",
+      "skill_id": "G064",
+      "level": "entrainement",
+      "type": "qcm",
+      "statement": "Le triangle KLN est rectangle en L (figure pas en vraie grandeur). Combien mesure LN, arrondie au dixième de cm ? Calculatrice en degrés.",
+      "image": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 344 266\" width=\"344\" height=\"266\" font-family=\"system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif\" role=\"img\"><title>Triangle KLN avec un angle droit codé en L, un angle et une longueur écrits, et la longueur cherchée marquée d'un point d'interrogation</title><rect width=\"100%\" height=\"100%\" fill=\"#ffffff\"/><polygon points=\"296.8,224.0 47.2,224.0 47.2,62.8\" fill=\"none\" fill-opacity=\"0.6\" stroke=\"#334155\" stroke-width=\"2\" stroke-linejoin=\"round\"/><path d=\"M58.2,224.0 L58.2,213.0 L47.2,213.0\" fill=\"none\" stroke=\"#334155\" stroke-width=\"1.6\"/><path d=\"M262.8,224.0 A34.0,34.0 0 0 1 268.2,205.6\" fill=\"none\" stroke=\"#2563eb\" stroke-width=\"2\"/><text x=\"250.8\" y=\"215.4\" font-size=\"13\" text-anchor=\"middle\" fill=\"#2563eb\" font-weight=\"600\">27°</text><text x=\"172.0\" y=\"242.0\" font-size=\"13\" text-anchor=\"middle\" fill=\"#334155\">9 cm</text><text x=\"39.2\" y=\"148.4\" font-size=\"13\" text-anchor=\"end\" fill=\"#2563eb\">?</text><line x1=\"43.2\" y1=\"220.0\" x2=\"51.2\" y2=\"228.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"43.2\" y1=\"228.0\" x2=\"51.2\" y2=\"220.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><text x=\"35.4\" y=\"236.6\" font-size=\"15\" text-anchor=\"middle\" fill=\"#334155\" font-weight=\"600\">L</text><line x1=\"292.8\" y1=\"220.0\" x2=\"300.8\" y2=\"228.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"292.8\" y1=\"228.0\" x2=\"300.8\" y2=\"220.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><text x=\"310.1\" y=\"233.3\" font-size=\"15\" text-anchor=\"middle\" fill=\"#334155\" font-weight=\"600\">K</text><line x1=\"43.2\" y1=\"58.8\" x2=\"51.2\" y2=\"66.8\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"43.2\" y1=\"66.8\" x2=\"51.2\" y2=\"58.8\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><text x=\"38.6\" y=\"56.7\" font-size=\"15\" text-anchor=\"middle\" fill=\"#334155\" font-weight=\"600\">N</text></svg>",
+      "choices": [
+        {
+          "key": "a",
+          "text": "4,1 cm",
+          "misconception": "L'élève utilise le sinus : 9 × sin 27° ≈ 4,1. Mais le sinus demande l'hypoténuse, et 9 cm est la longueur du côté adjacent [KL]."
+        },
+        {
+          "key": "b",
+          "text": "17,7 cm",
+          "misconception": "L'élève divise par la tangente : 9 ÷ tan 27° ≈ 17,7. Or tan 27° = LN ÷ 9 : la longueur cherchée est au numérateur, il faut multiplier."
+        },
+        {
+          "key": "c",
+          "text": "8,0 cm",
+          "misconception": "L'élève utilise le cosinus : 9 × cos 27° ≈ 8,0. Le cosinus relie le côté adjacent et l'hypoténuse, alors que LN est le côté opposé."
+        },
+        {
+          "key": "d",
+          "text": "4,6 cm",
+          "misconception": null
+        }
+      ],
+      "answer": {
+        "value": "d"
+      },
+      "solution_steps": [
+        "Par rapport à l'angle $\\widehat{LKN}$ = 27° : KL = 9 cm est le côté adjacent, LN le côté opposé. L'hypoténuse [KN] ne sert pas.",
+        "La ligne qui relie le côté opposé et le côté adjacent est la tangente : $\\tan\\widehat{LKN} = \\dfrac{LN}{KL}$, soit tan 27° = $\\dfrac{LN}{9}$.",
+        "En multipliant par 9 : LN = 9 × tan 27° ≈ 4,586, soit **4,6 cm** au dixième."
+      ],
+      "hint": "Les deux côtés en jeu sont les côtés de l'angle droit : quelle ligne trigonométrique les relie ?",
+      "estimated_duration_s": 120,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 4, classe de 3e, Espace et géométrie, Triangles : « Connaitre et utiliser les lignes trigonométriques dans le triangle rectangle : cosinus, sinus, tangente. »"
+    },
+    {
+      "id": "EX-G064-M-01",
+      "skill_id": "G064",
+      "level": "maitrise",
+      "type": "numerique",
+      "statement": "Depuis un bateau B, on voit le sommet S d'une falaise verticale de pied P (schéma pas en vraie grandeur). Calcule la distance BP en mètres, arrondie au mètre. Calculatrice en degrés.",
+      "image": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 344 266\" width=\"344\" height=\"266\" font-family=\"system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif\" role=\"img\"><title>Schéma : un bateau B, le pied P et le sommet S d'une falaise, une ligne de visée, un angle droit codé en P, un angle et une longueur écrits, et la longueur cherchée marquée d'un point d'interrogation</title><rect width=\"100%\" height=\"100%\" fill=\"#ffffff\"/><line x1=\"42.0\" y1=\"211.0\" x2=\"302.0\" y2=\"211.0\" stroke=\"#334155\" stroke-width=\"2.0\" stroke-linecap=\"round\"/><line x1=\"302.0\" y1=\"211.0\" x2=\"302.0\" y2=\"151.2\" stroke=\"#334155\" stroke-width=\"2.0\" stroke-linecap=\"round\"/><line x1=\"42.0\" y1=\"211.0\" x2=\"302.0\" y2=\"151.2\" stroke=\"#2563eb\" stroke-width=\"2.0\" stroke-linecap=\"round\" stroke-dasharray=\"5 4\"/><path d=\"M291.0,211.0 L291.0,200.0 L302.0,200.0\" fill=\"none\" stroke=\"#334155\" stroke-width=\"1.6\"/><path d=\"M102.0,211.0 A60.0,60.0 0 0 0 100.5,197.6\" fill=\"none\" stroke=\"#2563eb\" stroke-width=\"2\"/><text x=\"115.5\" y=\"207.7\" font-size=\"13\" text-anchor=\"middle\" fill=\"#2563eb\" font-weight=\"600\">11°</text><text x=\"310.0\" y=\"186.1\" font-size=\"13\" text-anchor=\"start\" fill=\"#334155\">34 m</text><text x=\"172.0\" y=\"229.0\" font-size=\"13\" text-anchor=\"middle\" fill=\"#2563eb\">?</text><line x1=\"38.0\" y1=\"207.0\" x2=\"46.0\" y2=\"215.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"38.0\" y1=\"215.0\" x2=\"46.0\" y2=\"207.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><text x=\"28.1\" y=\"217.6\" font-size=\"15\" text-anchor=\"middle\" fill=\"#334155\" font-weight=\"600\">B</text><line x1=\"298.0\" y1=\"207.0\" x2=\"306.0\" y2=\"215.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"298.0\" y1=\"215.0\" x2=\"306.0\" y2=\"207.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><text x=\"315.6\" y=\"219.1\" font-size=\"15\" text-anchor=\"middle\" fill=\"#334155\" font-weight=\"600\">P</text><line x1=\"298.0\" y1=\"147.2\" x2=\"306.0\" y2=\"155.2\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"298.0\" y1=\"155.2\" x2=\"306.0\" y2=\"147.2\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><text x=\"314.7\" y=\"150.3\" font-size=\"15\" text-anchor=\"middle\" fill=\"#334155\" font-weight=\"600\">S</text></svg>",
+      "answer": {
+        "value": 175,
+        "tolerance": 0.5,
+        "unit": "m"
+      },
+      "solution_steps": [
+        "La falaise est verticale et la mer horizontale : le triangle BPS est rectangle en P.",
+        "Par rapport à l'angle $\\widehat{PBS}$ = 11° : PS = 34 m est le côté opposé, BP le côté adjacent cherché. La tangente les relie : tan 11° = $\\dfrac{PS}{BP} = \\dfrac{34}{BP}$.",
+        "BP est au dénominateur : BP × tan 11° = 34, donc BP = 34 ÷ tan 11° ≈ 174,9, soit **175 m** au mètre près. Arrondir à la fin : avec tan 11° ≈ 0,19, on trouverait 179 m.",
+        "Piège : 34 × tan 11° ≈ 6,6 m placerait le bateau presque au pied de la falaise ; avec un angle aussi petit, le bateau est loin."
+      ],
+      "hint": "Pour l'angle de 11°, quel côté connais-tu et quel côté cherches-tu ? Lequel est au dénominateur de la tangente ?",
+      "estimated_duration_s": 150,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 4, classe de 3e, Espace et géométrie, Triangles : « Connaitre et utiliser les lignes trigonométriques dans le triangle rectangle : cosinus, sinus, tangente. »"
+    },
+    {
+      "id": "EX-G064-M-02",
+      "skill_id": "G064",
+      "level": "maitrise",
+      "type": "numerique",
+      "statement": "Le haut d'une façade est un triangle FGH isocèle en F, de base GH = 9 m (schéma pas en vraie grandeur). Calcule FG en mètres, arrondie au dixième. Calculatrice en degrés.",
+      "image": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 344 266\" width=\"344\" height=\"266\" font-family=\"system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif\" role=\"img\"><title>Triangle FGH avec le segment [FK], un angle droit codé en K, deux segments codés égaux, un angle écrit et la longueur cherchée marquée d'un point d'interrogation</title><rect width=\"100%\" height=\"100%\" fill=\"#ffffff\"/><polygon points=\"172.0,159.0 42.0,224.0 302.0,224.0\" fill=\"none\" fill-opacity=\"0.6\" stroke=\"#334155\" stroke-width=\"2\" stroke-linejoin=\"round\"/><line x1=\"172.0\" y1=\"159.0\" x2=\"172.0\" y2=\"224.0\" stroke=\"#334155\" stroke-width=\"2.0\" stroke-linecap=\"round\"/><path d=\"M183.0,224.0 L183.0,213.0 L172.0,213.0\" fill=\"none\" stroke=\"#334155\" stroke-width=\"1.6\"/><line x1=\"109.0\" y1=\"218.0\" x2=\"105.0\" y2=\"230.0\" stroke=\"#2563eb\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"239.0\" y1=\"218.0\" x2=\"235.0\" y2=\"230.0\" stroke=\"#2563eb\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><path d=\"M72.0,224.0 A30.0,30.0 0 0 0 68.8,210.6\" fill=\"none\" stroke=\"#2563eb\" stroke-width=\"2\"/><text x=\"84.8\" y=\"218.9\" font-size=\"13\" text-anchor=\"middle\" fill=\"#2563eb\" font-weight=\"600\">34°</text><text x=\"100.7\" y=\"184.9\" font-size=\"13\" text-anchor=\"middle\" fill=\"#2563eb\">?</text><line x1=\"38.0\" y1=\"220.0\" x2=\"46.0\" y2=\"228.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"38.0\" y1=\"228.0\" x2=\"46.0\" y2=\"220.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><text x=\"28.1\" y=\"230.7\" font-size=\"15\" text-anchor=\"middle\" fill=\"#334155\" font-weight=\"600\">G</text><line x1=\"298.0\" y1=\"220.0\" x2=\"306.0\" y2=\"228.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"298.0\" y1=\"228.0\" x2=\"306.0\" y2=\"220.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><text x=\"315.9\" y=\"230.7\" font-size=\"15\" text-anchor=\"middle\" fill=\"#334155\" font-weight=\"600\">H</text><line x1=\"168.0\" y1=\"220.0\" x2=\"176.0\" y2=\"228.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"168.0\" y1=\"228.0\" x2=\"176.0\" y2=\"220.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><text x=\"162.2\" y=\"219.2\" font-size=\"15\" text-anchor=\"middle\" fill=\"#334155\" font-weight=\"600\">K</text><line x1=\"168.0\" y1=\"155.0\" x2=\"176.0\" y2=\"163.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"168.0\" y1=\"163.0\" x2=\"176.0\" y2=\"155.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><text x=\"172.0\" y=\"150.0\" font-size=\"15\" text-anchor=\"middle\" fill=\"#334155\" font-weight=\"600\">F</text></svg>",
+      "answer": {
+        "value": 5.4,
+        "tolerance": 0.05,
+        "unit": "m"
+      },
+      "solution_steps": [
+        "Le codage indique que K est le milieu de [GH] et que (FK) est perpendiculaire à (GH) : GK = 9 ÷ 2 = 4,5 m, et le triangle FGK est rectangle en K.",
+        "Dans FGK, par rapport à l'angle $\\widehat{FGK}$ = 34° : GK = 4,5 m est le côté adjacent et FG l'hypoténuse. Cosinus : cos 34° = $\\dfrac{GK}{FG} = \\dfrac{4{,}5}{FG}$.",
+        "FG × cos 34° = 4,5, donc FG = 4,5 ÷ cos 34° ≈ 5,43, soit **5,4 m** au dixième.",
+        "Piège : prendre GH = 9 m comme côté adjacent donnerait 9 ÷ cos 34° ≈ 10,9 m ; mais [GH] n'est pas un côté du triangle rectangle FGK, seule sa moitié [GK] l'est."
+      ],
+      "hint": "Cherche un triangle rectangle sur le schéma. Combien mesure GK ?",
+      "estimated_duration_s": 150,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 4, classe de 3e, Espace et géométrie, Triangles : « Connaitre et utiliser les lignes trigonométriques dans le triangle rectangle : cosinus, sinus, tangente. »"
+    },
+    {
+      "id": "EX-G065-D-01",
+      "skill_id": "G065",
+      "level": "decouverte",
+      "type": "numerique",
+      "statement": "Le triangle DEF est rectangle en E (figure pas en vraie grandeur). Donne la mesure de l'angle $\\widehat{EDF}$, arrondie au degré. Calculatrice en degrés.",
+      "image": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 344 292\" width=\"344\" height=\"292\" font-family=\"system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif\" role=\"img\"><title>Triangle DEF avec un angle droit codé en E, deux longueurs écrites et l'angle cherché marqué d'un point d'interrogation</title><rect width=\"100%\" height=\"100%\" fill=\"#ffffff\"/><polygon points=\"296.8,244.8 55.0,244.8 55.0,88.8\" fill=\"none\" fill-opacity=\"0.6\" stroke=\"#334155\" stroke-width=\"2\" stroke-linejoin=\"round\"/><path d=\"M66.0,244.8 L66.0,233.8 L55.0,233.8\" fill=\"none\" stroke=\"#334155\" stroke-width=\"1.6\"/><path d=\"M268.8,244.8 A28.0,28.0 0 0 1 273.3,229.6\" fill=\"none\" stroke=\"#2563eb\" stroke-width=\"2\"/><text x=\"256.5\" y=\"237.9\" font-size=\"13\" text-anchor=\"middle\" fill=\"#2563eb\" font-weight=\"600\">?</text><text x=\"175.9\" y=\"262.8\" font-size=\"13\" text-anchor=\"middle\" fill=\"#334155\">7 cm</text><text x=\"180.2\" y=\"165.1\" font-size=\"13\" text-anchor=\"start\" fill=\"#334155\">9 cm</text><line x1=\"51.0\" y1=\"240.8\" x2=\"59.0\" y2=\"248.8\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"51.0\" y1=\"248.8\" x2=\"59.0\" y2=\"240.8\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><text x=\"43.2\" y=\"257.4\" font-size=\"15\" text-anchor=\"middle\" fill=\"#334155\" font-weight=\"600\">E</text><line x1=\"292.8\" y1=\"240.8\" x2=\"300.8\" y2=\"248.8\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"292.8\" y1=\"248.8\" x2=\"300.8\" y2=\"240.8\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><text x=\"310.1\" y=\"254.1\" font-size=\"15\" text-anchor=\"middle\" fill=\"#334155\" font-weight=\"600\">D</text><line x1=\"51.0\" y1=\"84.8\" x2=\"59.0\" y2=\"92.8\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"51.0\" y1=\"92.8\" x2=\"59.0\" y2=\"84.8\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><text x=\"46.4\" y=\"82.7\" font-size=\"15\" text-anchor=\"middle\" fill=\"#334155\" font-weight=\"600\">F</text></svg>",
+      "answer": {
+        "value": 39,
+        "tolerance": 0.5,
+        "unit": "°"
+      },
+      "solution_steps": [
+        "Par rapport à l'angle $\\widehat{EDF}$ : DE = 7 cm est le côté adjacent, DF = 9 cm l'hypoténuse. La ligne qui les relie est le cosinus.",
+        "$\\cos\\widehat{EDF} = \\dfrac{DE}{DF} = \\dfrac{7}{9}$.",
+        "Pour retrouver un angle à partir de son cosinus, on utilise la touche Arccos de la calculatrice (souvent « 2nde » ou « shift », puis « cos ») : Arccos(7 ÷ 9) ≈ 38,9°.",
+        "Arrondie au degré : $\\widehat{EDF}$ mesure environ **39°**. Taper cos(7 ÷ 9) au lieu de Arccos donne un nombre proche de 1 : c'est un cosinus, pas un angle."
+      ],
+      "hint": "Quelle ligne relie le côté adjacent et l'hypoténuse ? Quelle touche donne l'angle quand on connaît son cosinus ?",
+      "estimated_duration_s": 90,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 4, classe de 3e, Espace et géométrie, Triangles : « Connaitre et utiliser les lignes trigonométriques dans le triangle rectangle : cosinus, sinus, tangente. »"
+    },
+    {
+      "id": "EX-G065-D-02",
+      "skill_id": "G065",
+      "level": "decouverte",
+      "type": "qcm",
+      "statement": "Le triangle KLM est rectangle en L (figure pas en vraie grandeur). Quel calcul donne la mesure de l'angle $\\widehat{LKM}$ ? Calculatrice en degrés.",
+      "image": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 344 292\" width=\"344\" height=\"292\" font-family=\"system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif\" role=\"img\"><title>Triangle KLM avec un angle droit codé en L, deux longueurs écrites et l'angle cherché marqué d'un point d'interrogation</title><rect width=\"100%\" height=\"100%\" fill=\"#ffffff\"/><polygon points=\"122.6,250.0 237.0,250.0 237.0,86.2\" fill=\"none\" fill-opacity=\"0.6\" stroke=\"#334155\" stroke-width=\"2\" stroke-linejoin=\"round\"/><path d=\"M226.0,250.0 L226.0,239.0 L237.0,239.0\" fill=\"none\" stroke=\"#334155\" stroke-width=\"1.6\"/><path d=\"M148.6,250.0 A26.0,26.0 0 0 0 137.5,228.7\" fill=\"none\" stroke=\"#2563eb\" stroke-width=\"2\"/><text x=\"158.1\" y=\"236.5\" font-size=\"13\" text-anchor=\"middle\" fill=\"#2563eb\" font-weight=\"600\">?</text><text x=\"179.8\" y=\"268.0\" font-size=\"13\" text-anchor=\"middle\" fill=\"#334155\">5 cm</text><text x=\"245.0\" y=\"173.1\" font-size=\"13\" text-anchor=\"start\" fill=\"#334155\">9 cm</text><line x1=\"233.0\" y1=\"246.0\" x2=\"241.0\" y2=\"254.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"233.0\" y1=\"254.0\" x2=\"241.0\" y2=\"246.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><text x=\"245.0\" y=\"266.5\" font-size=\"15\" text-anchor=\"middle\" fill=\"#334155\" font-weight=\"600\">L</text><line x1=\"118.6\" y1=\"246.0\" x2=\"126.6\" y2=\"254.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"118.6\" y1=\"254.0\" x2=\"126.6\" y2=\"246.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><text x=\"111.2\" y=\"263.1\" font-size=\"15\" text-anchor=\"middle\" fill=\"#334155\" font-weight=\"600\">K</text><line x1=\"233.0\" y1=\"82.2\" x2=\"241.0\" y2=\"90.2\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"233.0\" y1=\"90.2\" x2=\"241.0\" y2=\"82.2\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><text x=\"241.6\" y=\"78.0\" font-size=\"15\" text-anchor=\"middle\" fill=\"#334155\" font-weight=\"600\">M</text></svg>",
+      "choices": [
+        {
+          "key": "a",
+          "text": "$\\tan\\left(\\dfrac{9}{5}\\right)$",
+          "misconception": "L'élève calcule la tangente du nombre 9/5 au lieu de chercher l'angle dont la tangente vaut 9/5 : il faut la touche Arctan."
+        },
+        {
+          "key": "b",
+          "text": "$\\text{Arctan}\\left(\\dfrac{5}{9}\\right)$",
+          "misconception": "Le quotient est renversé : 5 ÷ 9 est la tangente de l'autre angle aigu, $\\widehat{LMK}$, pour lequel [KL] est le côté opposé."
+        },
+        {
+          "key": "c",
+          "text": "$\\text{Arctan}\\left(\\dfrac{9}{5}\\right)$",
+          "misconception": null
+        },
+        {
+          "key": "d",
+          "text": "$\\text{Arccos}\\left(\\dfrac{5}{9}\\right)$",
+          "misconception": "Le cosinus demande l'hypoténuse, or 9 cm est la longueur de [LM], un côté de l'angle droit ; l'hypoténuse [KM] n'est pas connue."
+        }
+      ],
+      "answer": {
+        "value": "c"
+      },
+      "solution_steps": [
+        "Par rapport à l'angle $\\widehat{LKM}$ : KL = 5 cm est le côté adjacent, LM = 9 cm le côté opposé. L'hypoténuse [KM] n'est pas connue.",
+        "La ligne qui relie le côté opposé et le côté adjacent est la tangente : $\\tan\\widehat{LKM} = \\dfrac{LM}{KL} = \\dfrac{9}{5}$.",
+        "L'angle s'obtient avec la touche Arctan de la calculatrice : $\\widehat{LKM} = \\text{Arctan}\\left(\\dfrac{9}{5}\\right)$, environ 61°."
+      ],
+      "hint": "Quels côtés connais-tu par rapport à l'angle en K ? Quelle touche donne un angle à partir de sa tangente ?",
+      "estimated_duration_s": 60,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 4, classe de 3e, Espace et géométrie, Triangles : « Connaitre et utiliser les lignes trigonométriques dans le triangle rectangle : cosinus, sinus, tangente. »"
+    },
+    {
+      "id": "EX-G065-E-01",
+      "skill_id": "G065",
+      "level": "entrainement",
+      "type": "numerique",
+      "statement": "Le triangle GHJ est rectangle en H (figure pas en vraie grandeur). Donne la mesure de l'angle $\\widehat{HGJ}$, arrondie au degré. Calculatrice en degrés.",
+      "image": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 344 292\" width=\"344\" height=\"292\" font-family=\"system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif\" role=\"img\"><title>Triangle GHJ avec un angle droit codé en H, deux longueurs écrites et l'angle cherché marqué d'un point d'interrogation</title><rect width=\"100%\" height=\"100%\" fill=\"#ffffff\"/><polygon points=\"47.2,239.6 296.8,239.6 296.8,94.0\" fill=\"none\" fill-opacity=\"0.6\" stroke=\"#334155\" stroke-width=\"2\" stroke-linejoin=\"round\"/><path d=\"M285.8,239.6 L285.8,228.6 L296.8,228.6\" fill=\"none\" stroke=\"#334155\" stroke-width=\"1.6\"/><path d=\"M77.2,239.6 A30.0,30.0 0 0 0 73.1,224.5\" fill=\"none\" stroke=\"#2563eb\" stroke-width=\"2\"/><text x=\"89.7\" y=\"233.1\" font-size=\"13\" text-anchor=\"middle\" fill=\"#2563eb\" font-weight=\"600\">?</text><text x=\"168.0\" y=\"164.9\" font-size=\"13\" text-anchor=\"end\" fill=\"#334155\">13 cm</text><text x=\"304.8\" y=\"171.8\" font-size=\"13\" text-anchor=\"start\" fill=\"#334155\">8 cm</text><line x1=\"292.8\" y1=\"235.6\" x2=\"300.8\" y2=\"243.6\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"292.8\" y1=\"243.6\" x2=\"300.8\" y2=\"235.6\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><text x=\"308.9\" y=\"251.7\" font-size=\"15\" text-anchor=\"middle\" fill=\"#334155\" font-weight=\"600\">H</text><line x1=\"43.2\" y1=\"235.6\" x2=\"51.2\" y2=\"243.6\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"43.2\" y1=\"243.6\" x2=\"51.2\" y2=\"235.6\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><text x=\"33.8\" y=\"248.5\" font-size=\"15\" text-anchor=\"middle\" fill=\"#334155\" font-weight=\"600\">G</text><line x1=\"292.8\" y1=\"90.0\" x2=\"300.8\" y2=\"98.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"292.8\" y1=\"98.0\" x2=\"300.8\" y2=\"90.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><text x=\"305.9\" y=\"88.4\" font-size=\"15\" text-anchor=\"middle\" fill=\"#334155\" font-weight=\"600\">J</text></svg>",
+      "answer": {
+        "value": 38,
+        "tolerance": 0.5,
+        "unit": "°"
+      },
+      "solution_steps": [
+        "Par rapport à l'angle $\\widehat{HGJ}$, de sommet G : HJ = 8 cm est en face, c'est le côté opposé ; GJ = 13 cm est l'hypoténuse. La ligne qui les relie est le sinus.",
+        "$\\sin\\widehat{HGJ} = \\dfrac{HJ}{GJ} = \\dfrac{8}{13}$.",
+        "Touche Arcsin, en tapant le quotient d'un trait : Arcsin(8 ÷ 13) ≈ 37,98°, soit **38°** au degré près. On n'arrondit qu'à la fin, jamais le quotient en cours de route.",
+        "Piège : Arccos(8 ÷ 13) ≈ 52° est la mesure de l'autre angle aigu, $\\widehat{GJH}$, pour lequel [HJ] est le côté adjacent. Contrôle : 38 + 52 = 90."
+      ],
+      "hint": "Le côté de 8 cm touche-t-il le sommet G, ou est-il en face ?",
+      "estimated_duration_s": 90,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 4, classe de 3e, Espace et géométrie, Triangles : « Connaitre et utiliser les lignes trigonométriques dans le triangle rectangle : cosinus, sinus, tangente. »"
+    },
+    {
+      "id": "EX-G065-E-02",
+      "skill_id": "G065",
+      "level": "entrainement",
+      "type": "vrai_faux",
+      "statement": "Le triangle NPQ est rectangle en P (figure pas en vraie grandeur). Vrai ou faux : l'angle $\\widehat{PNQ}$ mesure environ 33°. Calculatrice en degrés.",
+      "image": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 344 292\" width=\"344\" height=\"292\" font-family=\"system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif\" role=\"img\"><title>Triangle NPQ avec un angle droit codé en P, un angle marqué en N et deux longueurs écrites</title><rect width=\"100%\" height=\"100%\" fill=\"#ffffff\"/><polygon points=\"203.2,250.0 68.0,250.0 68.0,94.0\" fill=\"none\" fill-opacity=\"0.6\" stroke=\"#334155\" stroke-width=\"2\" stroke-linejoin=\"round\"/><path d=\"M79.0,250.0 L79.0,239.0 L68.0,239.0\" fill=\"none\" stroke=\"#334155\" stroke-width=\"1.6\"/><path d=\"M177.2,250.0 A26.0,26.0 0 0 1 186.2,230.4\" fill=\"none\" stroke=\"#2563eb\" stroke-width=\"2\"/><text x=\"135.6\" y=\"268.0\" font-size=\"13\" text-anchor=\"middle\" fill=\"#334155\">6 cm</text><text x=\"141.6\" y=\"171.8\" font-size=\"13\" text-anchor=\"start\" fill=\"#334155\">11 cm</text><line x1=\"64.0\" y1=\"246.0\" x2=\"72.0\" y2=\"254.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"64.0\" y1=\"254.0\" x2=\"72.0\" y2=\"246.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><text x=\"58.8\" y=\"265.6\" font-size=\"15\" text-anchor=\"middle\" fill=\"#334155\" font-weight=\"600\">P</text><line x1=\"199.2\" y1=\"246.0\" x2=\"207.2\" y2=\"254.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"199.2\" y1=\"254.0\" x2=\"207.2\" y2=\"246.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><text x=\"215.3\" y=\"262.0\" font-size=\"15\" text-anchor=\"middle\" fill=\"#334155\" font-weight=\"600\">N</text><line x1=\"64.0\" y1=\"90.0\" x2=\"72.0\" y2=\"98.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"64.0\" y1=\"98.0\" x2=\"72.0\" y2=\"90.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><text x=\"62.4\" y=\"86.2\" font-size=\"15\" text-anchor=\"middle\" fill=\"#334155\" font-weight=\"600\">Q</text></svg>",
+      "answer": {
+        "value": false
+      },
+      "solution_steps": [
+        "Par rapport à l'angle $\\widehat{PNQ}$ : NP = 6 cm est le côté adjacent, NQ = 11 cm l'hypoténuse. Cosinus : $\\cos\\widehat{PNQ} = \\dfrac{6}{11}$.",
+        "Arccos(6 ÷ 11) ≈ 56,9° : $\\widehat{PNQ}$ mesure environ 57°, pas 33°. C'est **faux**.",
+        "33° vient de Arcsin(6 ÷ 11) : c'est l'erreur qui prend le côté adjacent pour le côté opposé. 33° est la mesure de l'autre angle aigu, $\\widehat{PQN}$ : 57 + 33 = 90."
+      ],
+      "hint": "Le côté de 6 cm est-il adjacent ou opposé à l'angle en N ?",
+      "estimated_duration_s": 90,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 4, classe de 3e, Espace et géométrie, Triangles : « Connaitre et utiliser les lignes trigonométriques dans le triangle rectangle : cosinus, sinus, tangente. »"
+    },
+    {
+      "id": "EX-G065-M-01",
+      "skill_id": "G065",
+      "level": "maitrise",
+      "type": "numerique",
+      "statement": "Une échelle [HP] est appuyée contre un mur vertical (schéma pas en vraie grandeur). Quel angle $\\widehat{KHP}$ fait-elle avec le mur, arrondi au degré ? Calculatrice en degrés.",
+      "image": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 344 292\" width=\"344\" height=\"292\" font-family=\"system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif\" role=\"img\"><title>Schéma : une échelle [HP] appuyée contre un mur, le coin K entre le mur et le sol, un angle droit codé en K, deux longueurs écrites et l'angle cherché marqué d'un point d'interrogation</title><rect width=\"100%\" height=\"100%\" fill=\"#ffffff\"/><line x1=\"31.6\" y1=\"250.0\" x2=\"312.4\" y2=\"250.0\" stroke=\"#334155\" stroke-width=\"2.0\" stroke-linecap=\"round\"/><line x1=\"94.0\" y1=\"250.0\" x2=\"94.0\" y2=\"23.8\" stroke=\"#334155\" stroke-width=\"2.0\" stroke-linecap=\"round\"/><line x1=\"94.0\" y1=\"57.6\" x2=\"198.0\" y2=\"250.0\" stroke=\"#2563eb\" stroke-width=\"2.0\" stroke-linecap=\"round\"/><path d=\"M105.0,250.0 L105.0,239.0 L94.0,239.0\" fill=\"none\" stroke=\"#334155\" stroke-width=\"1.6\"/><path d=\"M94.0,91.6 A34.0,34.0 0 0 0 110.2,87.5\" fill=\"none\" stroke=\"#2563eb\" stroke-width=\"2\"/><text x=\"105.8\" y=\"109.1\" font-size=\"13\" text-anchor=\"middle\" fill=\"#2563eb\" font-weight=\"600\">?</text><text x=\"146.0\" y=\"268.0\" font-size=\"13\" text-anchor=\"middle\" fill=\"#334155\">3 m</text><text x=\"153.0\" y=\"155.0\" font-size=\"13\" text-anchor=\"start\" fill=\"#334155\">8 m</text><line x1=\"90.0\" y1=\"246.0\" x2=\"98.0\" y2=\"254.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"90.0\" y1=\"254.0\" x2=\"98.0\" y2=\"246.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><text x=\"87.3\" y=\"267.3\" font-size=\"15\" text-anchor=\"middle\" fill=\"#334155\" font-weight=\"600\">K</text><line x1=\"194.0\" y1=\"246.0\" x2=\"202.0\" y2=\"254.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"194.0\" y1=\"254.0\" x2=\"202.0\" y2=\"246.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><text x=\"208.3\" y=\"264.5\" font-size=\"15\" text-anchor=\"middle\" fill=\"#334155\" font-weight=\"600\">P</text><line x1=\"90.0\" y1=\"53.6\" x2=\"98.0\" y2=\"61.6\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"90.0\" y1=\"61.6\" x2=\"98.0\" y2=\"53.6\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><text x=\"80.0\" y=\"62.6\" font-size=\"15\" text-anchor=\"middle\" fill=\"#334155\" font-weight=\"600\">H</text></svg>",
+      "answer": {
+        "value": 22,
+        "tolerance": 0.5,
+        "unit": "°"
+      },
+      "solution_steps": [
+        "Le mur est vertical et le sol horizontal : le triangle HKP est rectangle en K. L'angle avec le mur est $\\widehat{KHP}$, de sommet H.",
+        "Par rapport au sommet H : KP = 3 m est en face, c'est le côté opposé ; l'échelle HP = 8 m est l'hypoténuse. Sinus : $\\sin\\widehat{KHP} = \\dfrac{3}{8}$.",
+        "Arcsin(3 ÷ 8) ≈ 22,02°, soit **22°**.",
+        "Piège : Arccos(3 ÷ 8) ≈ 68° est l'angle avec le sol, $\\widehat{KPH}$, pour lequel [KP] est le côté adjacent. Contrôle : 22 + 68 = 90."
+      ],
+      "hint": "Repère le sommet de l'angle demandé : le côté de 3 m le touche-t-il ?",
+      "estimated_duration_s": 120,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 4, classe de 3e, Espace et géométrie, Triangles : « Connaitre et utiliser les lignes trigonométriques dans le triangle rectangle : cosinus, sinus, tangente. »"
+    },
+    {
+      "id": "EX-G065-M-02",
+      "skill_id": "G065",
+      "level": "maitrise",
+      "type": "numerique",
+      "statement": "Un poteau vertical [PT] a une ombre [PE] sur le sol horizontal (schéma pas en vraie grandeur). Quel angle $\\widehat{PET}$ font les rayons du soleil avec le sol, arrondi au degré ? Calculatrice en degrés.",
+      "image": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 344 292\" width=\"344\" height=\"292\" font-family=\"system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif\" role=\"img\"><title>Schéma : un poteau [PT], son ombre [PE] sur le sol, un rayon de soleil, un angle droit codé en P, deux longueurs écrites et l'angle cherché marqué d'un point d'interrogation</title><rect width=\"100%\" height=\"100%\" fill=\"#ffffff\"/><line x1=\"29.0\" y1=\"237.0\" x2=\"315.0\" y2=\"237.0\" stroke=\"#334155\" stroke-width=\"2.0\" stroke-linecap=\"round\"/><line x1=\"289.0\" y1=\"237.0\" x2=\"289.0\" y2=\"91.4\" stroke=\"#334155\" stroke-width=\"2.0\" stroke-linecap=\"round\"/><line x1=\"78.4\" y1=\"237.0\" x2=\"289.0\" y2=\"91.4\" stroke=\"#2563eb\" stroke-width=\"2.0\" stroke-linecap=\"round\" stroke-dasharray=\"5 4\"/><path d=\"M278.0,237.0 L278.0,226.0 L289.0,226.0\" fill=\"none\" stroke=\"#334155\" stroke-width=\"1.6\"/><path d=\"M118.4,237.0 A40.0,40.0 0 0 0 111.3,214.3\" fill=\"none\" stroke=\"#2563eb\" stroke-width=\"2\"/><text x=\"129.9\" y=\"225.9\" font-size=\"13\" text-anchor=\"middle\" fill=\"#2563eb\" font-weight=\"600\">?</text><text x=\"297.0\" y=\"169.2\" font-size=\"13\" text-anchor=\"start\" fill=\"#334155\">7 m</text><text x=\"183.7\" y=\"255.0\" font-size=\"13\" text-anchor=\"middle\" fill=\"#334155\">8 m</text><line x1=\"285.0\" y1=\"233.0\" x2=\"293.0\" y2=\"241.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"285.0\" y1=\"241.0\" x2=\"293.0\" y2=\"233.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><text x=\"300.5\" y=\"250.0\" font-size=\"15\" text-anchor=\"middle\" fill=\"#334155\" font-weight=\"600\">P</text><line x1=\"285.0\" y1=\"87.4\" x2=\"293.0\" y2=\"95.4\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"285.0\" y1=\"95.4\" x2=\"293.0\" y2=\"87.4\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><text x=\"297.2\" y=\"85.1\" font-size=\"15\" text-anchor=\"middle\" fill=\"#334155\" font-weight=\"600\">T</text><line x1=\"74.4\" y1=\"233.0\" x2=\"82.4\" y2=\"241.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"74.4\" y1=\"241.0\" x2=\"82.4\" y2=\"233.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><text x=\"65.2\" y=\"246.6\" font-size=\"15\" text-anchor=\"middle\" fill=\"#334155\" font-weight=\"600\">E</text></svg>",
+      "answer": {
+        "value": 41,
+        "tolerance": 0.5,
+        "unit": "°"
+      },
+      "solution_steps": [
+        "Le poteau est vertical et le sol horizontal : le triangle EPT est rectangle en P.",
+        "Par rapport à l'angle $\\widehat{PET}$ : PT = 7 m est le côté opposé, PE = 8 m le côté adjacent. L'hypoténuse [ET] n'est pas connue : la ligne qui convient est la tangente, $\\tan\\widehat{PET} = \\dfrac{7}{8}$.",
+        "Arctan(7 ÷ 8) ≈ 41,19°, soit **41°**.",
+        "Pièges : Arctan(8 ÷ 7) ≈ 49° est l'angle au sommet du poteau ; Arcsin(7 ÷ 8) ≈ 61° prend l'ombre pour l'hypoténuse, alors que l'hypoténuse est le rayon [ET]."
+      ],
+      "hint": "Les deux longueurs connues sont-elles les côtés de l'angle droit ? Quelle ligne les relie ?",
+      "estimated_duration_s": 120,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 4, classe de 3e, Espace et géométrie, Triangles : « Connaitre et utiliser les lignes trigonométriques dans le triangle rectangle : cosinus, sinus, tangente. »"
     },
     {
       "id": "EX-P001-D-01",
