@@ -429,7 +429,7 @@ Décision de Gauthier : on déploie une fois tout le reste fait. **Gauthier conn
 
 ### Business (à mener en parallèle, sans code)
 
-1. **Business plan : c'est à Claude de proposer** (Gauthier n'a pas d'hypothèses arrêtées). Livrable : un document à part, pas dans ce fichier, avec :
+1. **Business plan : c'est à Claude de proposer** (Gauthier n'a pas d'hypothèses arrêtées). **Proposition faite le 21 octobre 2026 : `Management de Projet/Business_plan.md`** (coûts sourcés et datés, trois offres, coût d'acquisition, trois scénarios sur 24 mois, script `bp_scenarios.py`) ; **8 hypothèses à valider par Gauthier** (§9 du document). Livrable demandé : un document à part, pas dans ce fichier, avec :
    - les **coûts réels** recherchés et datés : Supabase Pro, Netlify, domaine, Resend, Sentry et PostHog gratuits, publicité sur les réseaux (Meta, TikTok), référencement, frais Stripe ;
    - **2 ou 3 offres** cohérentes et chiffrées (par exemple gratuit limité, élève, élève avec professeur, famille) ;
    - un prix par offre, la répartition élève et professeur sur un cours, le coût d'acquisition et le taux de conversion supposés, chacun justifié par une source ou un comparable (Kartable, Superprof, Mathia…) ;
