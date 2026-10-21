@@ -52,7 +52,7 @@ Ton fichier est un tableau JSON de cartes :
    - pour compter sur une droite, on parle d'intervalles, pas de graduations ;
    - jamais « également » quand rien ne précède ;
    - une règle doit rester vraie dans les cas limites (0, 1, nombres égaux).
-8. **Leçons de la relecture des défis du cycle 3** (2 cartes bloquantes sur 36) :
+8. **Leçons de la relecture des défis du cycle 3** (2 cartes bloquantes sur 33) :
    - chaque opération d'un recto ou d'un verso est permise par la chaîne de la compétence, pas seulement par sa classe : un produit hors des tables (22 × 7) exige une compétence de multiplication dans la chaîne, une soustraction avec retenue exige B004, un produit par des dizaines exige B041. Avant d'écrire, note pour chaque compétence les opérations que sa chaîne autorise, et reste en deçà ;
    - un vrai/faux ne reprend pas la forme d'un exercice ou d'un test de la compétence avec d'autres nombres : il vise l'erreur, pas le calcul déjà demandé.
 
