@@ -340,7 +340,10 @@ describe('checkAnswer, accents et unites en toutes lettres', () => {
     for (const saisie of ['SH = 3,8 m', `SH ${environ} 3,8 m`, 'x = 3,8', '3,8 m', `${environ} 3,8`, 'environ 3,8 m', 'Environ 3,8']) {
       expect(checkAnswer(longueur, saisie).isCorrect).toBe(true)
     }
-    for (const saisie of ['SH = 4,2 m', 'SHT = 3,8', 'SH + 3,8']) expect(checkAnswer(longueur, saisie).isCorrect).toBe(false)
+    const angle: Exercise = { ...base, answer: { value: 38, unit: '°' } }
+    expect(checkAnswer(angle, 'HGJ = 38°').isCorrect).toBe(true)
+    expect(checkAnswer(angle, 'HGJ = 52°').isCorrect).toBe(false)
+    for (const saisie of ['SH = 4,2 m', 'SHTU = 3,8', 'SH + 3,8']) expect(checkAnswer(longueur, saisie).isCorrect).toBe(false)
   })
 
   it('lit « pi » tape apres un nombre comme le symbole (etape 8)', () => {
