@@ -188,6 +188,14 @@ describe('factorisation complete (etape 7, releve des redacteurs)', () => {
     tousFaux(exo('(x − 2)(x + 8)', 'factorisee'), ['(x + 3 − 5)(x + 3 + 5)'])
     tousJustes(exo('(x − 2)(x + 8)', 'factorisee'), ['(x+8)(x-2)', '1(x-2)(x+8)'])
   })
+  it('refuse un facteur qui a encore une racine rationnelle (releve du lot L7c)', () => {
+    tousJustes(exo('2(x − 6)(x + 6)', 'factorisee'), ['2(x-6)(x+6)', '(x+6)×2×(x-6)'])
+    tousFaux(exo('2(x − 6)(x + 6)', 'factorisee'), ['2(x² − 36)', '2(x^2-36)', '(2x-12)(x+6)'])
+    tousFaux(exo('x(2x − 1)(x + 3)', 'factorisee'), ['x(2x² + 5x − 3)'])
+    // Sans racine rationnelle, le facteur ne se factorise plus au college.
+    tousJustes(exo('3(x² + 1)', 'factorisee'), ['3(x^2+1)'])
+    tousJustes(exo('(x + 1)(x² − 2)', 'factorisee'), ['(x+1)(x^2-2)'])
+  })
   it('garde les identites remarquables et les carres', () => {
     tousJustes(exo('(2x − 3)(2x + 3)', 'factorisee'), ['(2x+3)(2x-3)'])
     tousJustes(exo('(x + 5)²', 'factorisee'), ['(5+x)^2'])

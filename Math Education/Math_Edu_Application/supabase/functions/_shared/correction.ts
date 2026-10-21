@@ -669,7 +669,27 @@ function encoreFactorisable(f: Noeud): boolean {
   if (!c) return false
   const nonNuls = c.filter((x) => x !== 0)
   if (nonNuls.length < 2) return false
-  return nonNuls.reduce(pgcd) > 1 || c[0] === 0
+  if (nonNuls.reduce(pgcd) > 1 || c[0] === 0) return true
+  // Une racine rationnelle p/q (p divise le terme constant, q le coefficient
+  // dominant) laisse un facteur du premier degre : « x² − 36 » se factorise
+  // encore en (x − 6)(x + 6) (releve par le redacteur des super exercices de
+  // l'etape 7, lot L7c). « x² + 1 » ou « x² − 2 » restent acceptes.
+  const degre = c.length - 1 - [...c].reverse().findIndex((x) => x !== 0)
+  if (degre < 2) return false
+  const diviseurs = (n: number) => {
+    const d: number[] = []
+    for (let k = 1; k <= Math.abs(n); k++) if (n % k === 0) d.push(k)
+    return d
+  }
+  const valeur = (x: number) => c.reduce((s, ck, k) => s + ck * x ** k, 0)
+  for (const p of diviseurs(c[0])) {
+    for (const q of diviseurs(c[degre])) {
+      for (const signe of [1, -1]) {
+        if (Math.abs(valeur((signe * p) / q)) < 1e-9) return true
+      }
+    }
+  }
+  return false
 }
 
 /** Une somme de monomes distincts (ou un seul terme) : « x + 3 − 5 » ne l'est pas. */

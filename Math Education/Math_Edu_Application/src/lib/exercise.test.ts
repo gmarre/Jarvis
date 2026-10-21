@@ -7,7 +7,7 @@ import { toPublicExercise, type Exercise } from '@/types/content'
 
 // La banque complete, reponses comprises : celle que l'application installe
 // n'en a plus depuis la phase 3.
-const { exercises } = await chargerContenuLocal()
+const { exercises, superExercises } = await chargerContenuLocal()
 
 // La regle produit posee en tete de lib/exercise.ts : compter faux une reponse
 // juste ecrite autrement casse la confiance de l'eleve plus surement qu'un bug.
@@ -492,3 +492,24 @@ describe('formatExpected, grands nombres', () => {
   })
 })
 
+
+describe('toute la banque se corrige juste avec ses propres reponses', () => {
+  // Une regle de correction durcie (forme factorisee, par exemple) ne doit
+  // jamais refuser la reponse attendue ni une ecriture listee comme acceptee.
+  const questions: { id: string; ex: Pick<Exercise, 'type' | 'choices' | 'answer' | 'solution_steps'> }[] = [
+    ...exercises.map((ex) => ({ id: ex.id, ex })),
+    ...superExercises.flatMap((sx) => sx.questions.map((q) => ({ id: `${sx.id}#${q.key}`, ex: q }))),
+  ]
+  const saisie = (type: Exercise['type'], v: string | number | boolean) =>
+    type === 'vrai_faux' ? String(Boolean(v)) : String(v)
+
+  it('la reponse attendue et chaque ecriture acceptee sont jugees justes', () => {
+    const refusees: string[] = []
+    for (const { id, ex } of questions) {
+      for (const v of [ex.answer.value, ...(ex.answer.accepted ?? [])]) {
+        if (!checkAnswer(ex as Exercise, saisie(ex.type, v)).isCorrect) refusees.push(`${id} : ${String(v)}`)
+      }
+    }
+    expect(refusees).toEqual([])
+  })
+})
