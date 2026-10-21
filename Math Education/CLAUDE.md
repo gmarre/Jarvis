@@ -403,7 +403,7 @@ Décisions prises en route : la page publique du parent est `/accord/:jeton` (co
 - Parcours Playwright élève, professeur et parent.
 - `/security-review`.
 - ~~Montée de react-router 7~~ : faite le 21 octobre 2026 (`react-router-dom` 7.18.4, `npm audit --omit=dev` à 0). react-router 7 demande Node 20 : `NODE_VERSION=20` sur Netlify au sprint final ; le Node 18.18 local suffit pour les tests et le build.
-- Polices auto-hébergées.
+- ~~Polices auto-hébergées~~ : faites le 21 octobre 2026 (`@fontsource-variable/inter` et `fraunces`, axe opsz ; plus aucune requête vers Google Fonts).
 - Supabase Pro : pas de mise en pause, et la protection contre les mots de passe compromis est disponible.
 
 ### Sprint final : déploiement et référencement (après tous les sprints et tout le contenu jusqu'à la 3e)

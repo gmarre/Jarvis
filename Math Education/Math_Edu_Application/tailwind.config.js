@@ -76,8 +76,8 @@ export default {
       },
       fontFamily: {
         // Titres : serif douce. UI et corps de texte : Inter.
-        display: ['Fraunces', 'Georgia', 'serif'],
-        sans: ['Inter', 'system-ui', 'sans-serif'],
+        display: ['Fraunces Variable', 'Fraunces', 'Georgia', 'serif'],
+        sans: ['Inter Variable', 'Inter', 'system-ui', 'sans-serif'],
         mono: ['ui-monospace', 'Menlo', 'monospace'],
       },
       borderRadius: {
