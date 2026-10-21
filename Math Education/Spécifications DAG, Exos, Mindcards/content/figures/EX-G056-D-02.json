@@ -1,0 +1,63 @@
+{
+  "type": "geometrie",
+  "params": {
+    "colonnes": 10,
+    "lignes": 7,
+    "fond": "blanc",
+    "points": {
+      "P": [
+        1,
+        1
+      ],
+      "Q": [
+        9,
+        1
+      ],
+      "R": [
+        9,
+        6
+      ],
+      "S": [
+        1,
+        6
+      ],
+      "O": [
+        5,
+        "3.5"
+      ]
+    },
+    "elements": [
+      {
+        "polygone": [
+          "P",
+          "Q",
+          "R",
+          "S"
+        ]
+      },
+      {
+        "segment": [
+          "P",
+          "R"
+        ]
+      },
+      {
+        "segment": [
+          "Q",
+          "S"
+        ]
+      },
+      {
+        "angle_droit": [
+          "S",
+          "P",
+          "Q"
+        ]
+      }
+    ],
+    "etiquettes": {
+      "O": "bas"
+    }
+  },
+  "alt": "Quadrilatère PQRS et ses diagonales, qui se coupent en O"
+}

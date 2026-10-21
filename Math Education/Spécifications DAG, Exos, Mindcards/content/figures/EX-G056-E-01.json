@@ -1,0 +1,89 @@
+{
+  "type": "geometrie",
+  "params": {
+    "colonnes": 10,
+    "lignes": 8,
+    "fond": "blanc",
+    "points": {
+      "T": [
+        1,
+        4
+      ],
+      "U": [
+        5,
+        "1.5"
+      ],
+      "V": [
+        9,
+        4
+      ],
+      "W": [
+        5,
+        "6.5"
+      ],
+      "O": [
+        5,
+        4
+      ]
+    },
+    "elements": [
+      {
+        "polygone": [
+          "T",
+          "U",
+          "V",
+          "W"
+        ]
+      },
+      {
+        "segment": [
+          "T",
+          "V"
+        ]
+      },
+      {
+        "segment": [
+          "U",
+          "W"
+        ]
+      },
+      {
+        "codage": [
+          [
+            "T",
+            "O"
+          ],
+          [
+            "O",
+            "V"
+          ]
+        ],
+        "marque": 1
+      },
+      {
+        "codage": [
+          [
+            "U",
+            "O"
+          ],
+          [
+            "O",
+            "W"
+          ]
+        ],
+        "marque": 2
+      },
+      {
+        "angle_droit": [
+          "V",
+          "O",
+          "W"
+        ]
+      }
+    ],
+    "etiquettes": {
+      "O": "haut_gauche"
+    }
+  },
+  "alt": "Quadrilatère TUVW et ses diagonales, qui se coupent en O, avec un codage"
+}

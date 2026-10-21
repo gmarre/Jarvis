@@ -1,0 +1,97 @@
+{
+  "type": "geometrie",
+  "params": {
+    "colonnes": 12,
+    "lignes": 8,
+    "fond": "blanc",
+    "points": {
+      "K": [
+        2,
+        1
+      ],
+      "L": [
+        8,
+        1
+      ],
+      "M": [
+        8,
+        7
+      ],
+      "N": [
+        2,
+        7
+      ],
+      "O": [
+        5,
+        4
+      ],
+      "P": [
+        11,
+        4
+      ]
+    },
+    "elements": [
+      {
+        "polygone": [
+          "K",
+          "L",
+          "M",
+          "N"
+        ]
+      },
+      {
+        "segment": [
+          "K",
+          "M"
+        ]
+      },
+      {
+        "segment": [
+          "L",
+          "N"
+        ]
+      },
+      {
+        "angle_droit": [
+          "N",
+          "K",
+          "L"
+        ]
+      },
+      {
+        "codage": [
+          [
+            "K",
+            "L"
+          ],
+          [
+            "L",
+            "M"
+          ],
+          [
+            "M",
+            "N"
+          ],
+          [
+            "N",
+            "K"
+          ]
+        ],
+        "marque": 1
+      },
+      {
+        "polygone": [
+          "O",
+          "L",
+          "P",
+          "M"
+        ],
+        "couleur": "accent"
+      }
+    ],
+    "etiquettes": {
+      "O": "gauche"
+    }
+  },
+  "alt": "Quadrilatère KLMN et ses diagonales, qui se coupent en O, et un second quadrilatère OLPM"
+}

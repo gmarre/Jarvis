@@ -1,0 +1,185 @@
+[
+  {
+    "id": "EX-G049-D-01",
+    "skill_id": "G049",
+    "level": "decouverte",
+    "type": "numerique",
+    "statement": "RSTU est un parallélogramme. La figure n'est pas en vraie grandeur.\n\nCombien mesure le côté [TU], en cm ?",
+    "image": "figures/EX-G049-D-01",
+    "answer": {
+      "value": 5.4,
+      "unit": "cm",
+      "accepted": [
+        "5,4 cm",
+        "5.4 cm"
+      ]
+    },
+    "solution_steps": [
+      "Dans un parallélogramme, les côtés opposés ont la même longueur.",
+      "Dans RSTU, on lit les sommets dans l'ordre R, S, T, U : le côté opposé à [TU] est [RS], qui n'a aucun sommet commun avec lui.",
+      "Donc TU = RS = **5,4 cm**.",
+      "Piège : [ST] (3,9 cm) a le sommet T en commun avec [TU] : c'est un côté consécutif, pas opposé."
+    ],
+    "hint": "Cherche le côté qui fait face au côté [TU].",
+    "estimated_duration_s": 40,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, classe de 5e, Espace et géométrie, Parallélogrammes, Objectifs d'apprentissage : « Connaitre les propriétés caractéristiques des côtés opposés et des diagonales. »"
+  },
+  {
+    "id": "EX-G049-D-02",
+    "skill_id": "G049",
+    "level": "decouverte",
+    "type": "vrai_faux",
+    "statement": "KLMN est un parallélogramme de centre O, et KM = 8,6 cm.\n\nVrai ou faux : on peut en déduire que OL = 4,3 cm.",
+    "image": "figures/EX-G049-D-02",
+    "answer": {
+      "value": false
+    },
+    "solution_steps": [
+      "Les diagonales d'un parallélogramme se coupent en leur milieu : O est le milieu de [KM] et de [LN].",
+      "Donc OK = OM = 8,6 ÷ 2 = 4,3 cm. Mais [OL] est la moitié de l'**autre** diagonale, [LN], dont on ne connaît pas la longueur.",
+      "Les deux diagonales d'un parallélogramme n'ont pas forcément la même longueur. On ne peut pas en déduire OL : c'est **faux**."
+    ],
+    "hint": "Le segment [OL] est la moitié de quelle diagonale ?",
+    "estimated_duration_s": 50,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, classe de 5e, Espace et géométrie, Parallélogrammes, Objectifs d'apprentissage : « Connaitre les propriétés caractéristiques des côtés opposés et des diagonales. »"
+  },
+  {
+    "id": "EX-G049-E-01",
+    "skill_id": "G049",
+    "level": "entrainement",
+    "type": "numerique",
+    "statement": "PQRS est un parallélogramme. La figure n'est pas en vraie grandeur.\n\nCombien mesure l'angle $\\widehat{PQR}$, en degrés ?",
+    "image": "figures/EX-G049-E-01",
+    "answer": {
+      "value": 122,
+      "unit": "°",
+      "accepted": [
+        "122°",
+        "122 °",
+        "122 degrés"
+      ]
+    },
+    "solution_steps": [
+      "Dans un parallélogramme, deux angles consécutifs sont supplémentaires : leur somme vaut 180°.",
+      "$\\widehat{QPS}$ et $\\widehat{PQR}$ sont consécutifs : ils ont le côté [PQ] en commun.",
+      "Donc $\\widehat{PQR}$ = 180° − 58° = **122°**.",
+      "Piège : 58° est la mesure de l'angle **opposé** à $\\widehat{QPS}$, c'est-à-dire $\\widehat{QRS}$, pas celle de $\\widehat{PQR}$."
+    ],
+    "hint": "Les angles en P et en Q ont un côté commun : que vaut leur somme ?",
+    "estimated_duration_s": 50,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, classe de 5e, Espace et géométrie, Parallélogrammes, Objectifs d'apprentissage : « Définir le parallélogramme. »"
+  },
+  {
+    "id": "EX-G049-E-02",
+    "skill_id": "G049",
+    "level": "entrainement",
+    "type": "qcm",
+    "statement": "IJKL est un parallélogramme de centre O.\n\nQuelle égalité est vraie dans **tout** parallélogramme ?",
+    "image": "figures/EX-G049-E-02",
+    "choices": [
+      {
+        "key": "a",
+        "text": "IK = JL",
+        "misconception": "Des diagonales de même longueur, c'est le rectangle. Dans un parallélogramme quelconque, [IK] et [JL] n'ont pas la même longueur."
+      },
+      {
+        "key": "b",
+        "text": "OI = OJ",
+        "misconception": "O est le milieu de chaque diagonale, mais [OI] et [OJ] sont les moitiés de deux diagonales différentes : elles ne sont égales que si les diagonales ont la même longueur."
+      },
+      {
+        "key": "c",
+        "text": "OI = OK",
+        "misconception": null
+      },
+      {
+        "key": "d",
+        "text": "IJ = JK",
+        "misconception": "[IJ] et [JK] sont deux côtés consécutifs. Ce sont les côtés opposés qui ont la même longueur ; deux côtés consécutifs égaux, c'est le losange."
+      }
+    ],
+    "answer": {
+      "value": "c"
+    },
+    "solution_steps": [
+      "Dans un parallélogramme, les diagonales se coupent en leur milieu : O est le milieu de [IK] et le milieu de [JL].",
+      "Donc OI = OK (et OJ = OL) : c'est l'égalité **c**.",
+      "Les autres égalités ne sont vraies que pour des parallélogrammes particuliers : diagonales de même longueur (rectangle), côtés consécutifs de même longueur (losange)."
+    ],
+    "hint": "Que sait-on du point O sur chacune des deux diagonales ?",
+    "estimated_duration_s": 45,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, classe de 5e, Espace et géométrie, Parallélogrammes, Objectifs d'apprentissage : « Connaitre les propriétés caractéristiques des côtés opposés et des diagonales. »"
+  },
+  {
+    "id": "EX-G049-M-01",
+    "skill_id": "G049",
+    "level": "maitrise",
+    "type": "numerique",
+    "statement": "GHJK et HLMJ sont deux parallélogrammes. La figure n'est pas en vraie grandeur.\n\nCombien mesure le côté [LM], en cm ?",
+    "image": "figures/EX-G049-M-01",
+    "answer": {
+      "value": 4.4,
+      "unit": "cm",
+      "accepted": [
+        "4,4 cm",
+        "4.4 cm"
+      ]
+    },
+    "solution_steps": [
+      "GHJK est un parallélogramme : ses côtés opposés [GK] et [HJ] ont la même longueur, donc HJ = GK = 4,4 cm.",
+      "HLMJ est un parallélogramme : ses côtés opposés [HJ] et [LM] ont la même longueur, donc LM = HJ = 4,4 cm.",
+      "Le côté [LM] mesure **4,4 cm**. Le côté [HJ], commun aux deux parallélogrammes, sert de relais.",
+      "Pièges : 4,9 cm est la longueur de [HL], un côté consécutif à [LM] ; 3,6 cm est celle de [GH], qui n'est pas un côté de HLMJ."
+    ],
+    "hint": "Passe par le côté [HJ], commun aux deux parallélogrammes.",
+    "estimated_duration_s": 70,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, classe de 5e, Espace et géométrie, Parallélogrammes, Objectifs d'apprentissage : « Connaitre les propriétés caractéristiques des côtés opposés et des diagonales. »"
+  },
+  {
+    "id": "EX-G049-M-02",
+    "skill_id": "G049",
+    "level": "maitrise",
+    "type": "qcm",
+    "statement": "Dans un parallélogramme, deux angles opposés mesurent 104° à eux deux.\n\nCombien mesure chacun des deux autres angles ?",
+    "image": null,
+    "choices": [
+      {
+        "key": "a",
+        "text": "128°",
+        "misconception": null
+      },
+      {
+        "key": "b",
+        "text": "52°",
+        "misconception": "52° est la mesure de chacun des deux angles opposés de l'énoncé (104° ÷ 2). Les deux autres angles leur sont supplémentaires."
+      },
+      {
+        "key": "c",
+        "text": "76°",
+        "misconception": "C'est 180° − 104° : l'élève prend 104° pour un seul angle. Or 104° est la somme de deux angles."
+      },
+      {
+        "key": "d",
+        "text": "104°",
+        "misconception": "L'élève recopie la donnée : 104° est la somme de deux angles, pas la mesure d'un angle."
+      }
+    ],
+    "answer": {
+      "value": "a"
+    },
+    "solution_steps": [
+      "Dans un parallélogramme, les angles opposés sont égaux : chacun des deux angles de l'énoncé mesure 104° ÷ 2 = 52°.",
+      "Deux angles consécutifs sont supplémentaires : chacun des deux autres angles mesure 180° − 52° = **128°**, réponse **a**.",
+      "Vérification : les deux autres angles sont opposés, donc égaux, et 52° + 128° = 180° pour deux angles consécutifs."
+    ],
+    "hint": "Commence par trouver la mesure d'un seul des deux angles opposés.",
+    "estimated_duration_s": 70,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, classe de 5e, Espace et géométrie, Parallélogrammes, Objectifs d'apprentissage : « Définir le parallélogramme. »"
+  }
+]

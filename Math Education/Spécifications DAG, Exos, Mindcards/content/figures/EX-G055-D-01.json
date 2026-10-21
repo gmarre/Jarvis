@@ -1,0 +1,82 @@
+{
+  "type": "geometrie",
+  "params": {
+    "colonnes": 10,
+    "lignes": 8,
+    "fond": "blanc",
+    "points": {
+      "D": [
+        1,
+        6
+      ],
+      "E": [
+        5,
+        7
+      ],
+      "F": [
+        9,
+        2
+      ],
+      "G": [
+        5,
+        1
+      ],
+      "I": [
+        5,
+        4
+      ]
+    },
+    "elements": [
+      {
+        "polygone": [
+          "D",
+          "E",
+          "F",
+          "G"
+        ]
+      },
+      {
+        "segment": [
+          "D",
+          "F"
+        ]
+      },
+      {
+        "segment": [
+          "E",
+          "G"
+        ]
+      },
+      {
+        "codage": [
+          [
+            "D",
+            "I"
+          ],
+          [
+            "I",
+            "F"
+          ]
+        ],
+        "marque": 1
+      },
+      {
+        "codage": [
+          [
+            "E",
+            "I"
+          ],
+          [
+            "I",
+            "G"
+          ]
+        ],
+        "marque": 2
+      }
+    ],
+    "etiquettes": {
+      "I": "droite"
+    }
+  },
+  "alt": "Quadrilatère DEFG et ses diagonales, qui se coupent en I, avec un codage"
+}

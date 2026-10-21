@@ -1,0 +1,193 @@
+[
+  {
+    "id": "EX-G045-D-01",
+    "skill_id": "G045",
+    "level": "decouverte",
+    "type": "numerique",
+    "statement": "Le triangle K'L'N' est l'image du triangle KLN par le demi-tour de centre O. La figure n'est pas en vraie grandeur.\n\nCombien mesure le côté [L'N'], en cm ?",
+    "image": "figures/EX-G045-D-01",
+    "answer": {
+      "value": 4.8,
+      "unit": "cm",
+      "accepted": [
+        "4,8 cm",
+        "4.8 cm",
+        "L'N' = 4,8 cm",
+        "L'N' = 4,8",
+        "L'N'=4,8 cm",
+        "L’N’ = 4,8 cm",
+        "L’N’ = 4,8"
+      ]
+    },
+    "solution_steps": [
+      "Le demi-tour de centre O envoie K sur K', L sur L' et N sur N' : le côté [L'N'] est l'image du côté [LN].",
+      "Un demi-tour conserve les longueurs : L'N' = LN.",
+      "Sur la figure, LN = 4,8 cm, donc **L'N' = 4,8 cm**.",
+      "Piège : [K'L'] est l'image de [KL] (4,1 cm) et [K'N'] celle de [KN] (4,4 cm). Le point marqué ' est l'image du point de même lettre."
+    ],
+    "hint": "Quel côté du triangle KLN a pour image le côté [L'N'] ?",
+    "estimated_duration_s": 45,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, classe de 5e, Espace et géométrie, Transformations, Objectifs d'apprentissage : « Connaitre les propriétés du demi-tour. »"
+  },
+  {
+    "id": "EX-G045-D-02",
+    "skill_id": "G045",
+    "level": "decouverte",
+    "type": "vrai_faux",
+    "statement": "Le demi-tour de centre O transforme la droite (d) en la droite (d').\n\nVrai ou faux : les droites (d) et (d') sont perpendiculaires.",
+    "image": null,
+    "answer": {
+      "value": false
+    },
+    "solution_steps": [
+      "Un demi-tour transforme une droite en une droite **parallèle** : (d') est parallèle à (d).",
+      "Le demi-tour fait tourner toute la figure d'un angle plat (180°) autour de O : après un angle plat, une droite reprend la même direction.",
+      "C'est donc **faux** : (d) et (d') ne sont pas perpendiculaires. Elles sont parallèles, ou confondues si (d) passe par O."
+    ],
+    "hint": "De quel angle le demi-tour fait-il tourner la figure ? Que devient alors la direction d'une droite ?",
+    "estimated_duration_s": 40,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, classe de 5e, Espace et géométrie, Transformations, Objectifs d'apprentissage : « Connaitre les propriétés du demi-tour. »"
+  },
+  {
+    "id": "EX-G045-E-01",
+    "skill_id": "G045",
+    "level": "entrainement",
+    "type": "numerique",
+    "statement": "Le cercle (C') est l'image du cercle (C) par le demi-tour de centre O. La figure n'est pas en vraie grandeur.\n\nQuel est le diamètre du cercle (C'), en cm ?",
+    "image": "figures/EX-G045-E-01",
+    "answer": {
+      "value": 5.2,
+      "unit": "cm",
+      "accepted": [
+        "5,2 cm",
+        "5.2 cm"
+      ]
+    },
+    "solution_steps": [
+      "Le demi-tour conserve les longueurs : l'image d'un cercle est un cercle de **même rayon**, dont le centre P' est l'image du centre P.",
+      "Le rayon de (C) est PR = 2,6 cm : le rayon de (C') mesure aussi 2,6 cm.",
+      "Le diamètre mesure deux fois le rayon : 2,6 × 2 = 5,2. Le diamètre de (C') mesure **5,2 cm**.",
+      "Piège : 2,6 cm est le rayon, pas le diamètre."
+    ],
+    "hint": "Le demi-tour change-t-il la taille d'un cercle ? Ensuite, quel lien y a-t-il entre le rayon et le diamètre ?",
+    "estimated_duration_s": 50,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, classe de 5e, Espace et géométrie, Transformations, Objectifs d'apprentissage : « Connaitre les propriétés du demi-tour. »"
+  },
+  {
+    "id": "EX-G045-E-02",
+    "skill_id": "G045",
+    "level": "entrainement",
+    "type": "qcm",
+    "statement": "Laquelle de ces figures **n'a pas** de centre de symétrie ?",
+    "image": null,
+    "choices": [
+      {
+        "key": "a",
+        "text": "Un cercle",
+        "misconception": "Le cercle a un centre de symétrie : son centre. Un demi-tour autour de lui envoie chaque point du cercle sur le point diamétralement opposé."
+      },
+      {
+        "key": "b",
+        "text": "Un segment",
+        "misconception": "Le segment a un centre de symétrie : son milieu. Le demi-tour autour du milieu échange ses deux extrémités."
+      },
+      {
+        "key": "c",
+        "text": "Un rectangle",
+        "misconception": "Le rectangle a un centre de symétrie, le point situé en son milieu : le demi-tour autour de ce point envoie chaque sommet sur le sommet opposé. Il a aussi deux axes."
+      },
+      {
+        "key": "d",
+        "text": "Un demi-disque",
+        "misconception": null
+      }
+    ],
+    "answer": {
+      "value": "d"
+    },
+    "solution_steps": [
+      "Une figure a un centre de symétrie O quand le demi-tour de centre O la ramène exactement sur elle-même.",
+      "Le cercle (autour de son centre), le segment (autour de son milieu) et le rectangle (autour du point situé en son milieu) retombent sur eux-mêmes après un demi-tour : ils ont un centre de symétrie.",
+      "Le demi-disque a un axe de symétrie, mais aucun centre : après un demi-tour, sa partie arrondie passe du côté opposé. La réponse est **d**. Avoir un axe de symétrie ne suffit pas."
+    ],
+    "hint": "Imagine chaque figure après un demi-tour : laquelle ne retombe pas sur elle-même ?",
+    "estimated_duration_s": 45,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, classe de 5e, Espace et géométrie, Transformations, Objectifs d'apprentissage : « Connaitre les propriétés du demi-tour. »"
+  },
+  {
+    "id": "EX-G045-M-01",
+    "skill_id": "G045",
+    "level": "maitrise",
+    "type": "numerique",
+    "statement": "Les sommets des figures sont sur les nœuds du quadrillage.\n\nCombien de ces quatre figures ont un centre de symétrie ?",
+    "image": "figures/EX-G045-M-01",
+    "answer": {
+      "value": 3,
+      "unit": null,
+      "accepted": [
+        "3 figures",
+        "trois",
+        "trois figures"
+      ]
+    },
+    "solution_steps": [
+      "Une figure a un centre de symétrie quand un demi-tour autour d'un point la ramène exactement sur elle-même. On le vérifie en comptant les carreaux, sans mesurer.",
+      "Figure 1 : chaque sommet a un sommet qui lui correspond, à autant de carreaux de l'autre côté du point situé au milieu de la figure. Elle a un **centre** de symétrie, mais aucun axe.",
+      "Figure 2 : c'est un triangle. Après un demi-tour, sa pointe passe de l'autre côté : pas de centre de symétrie. Il a un axe, ce qui ne suffit pas.",
+      "Figure 3 : ses six sommets se correspondent deux par deux par un demi-tour autour du milieu de la figure. Elle a un **centre** de symétrie, et aucun axe.",
+      "Figure 4 : un rectangle a un **centre** de symétrie, le point situé en son milieu, et deux axes.",
+      "Les figures 1, 3 et 4 ont un centre de symétrie : la réponse est **3**. Piège : compter les figures qui ont un **axe** de symétrie (2 et 4) donne 2."
+    ],
+    "hint": "Pour chaque figure, cherche un point autour duquel un demi-tour la ramène sur elle-même. Un axe de symétrie ne suffit pas.",
+    "estimated_duration_s": 90,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, classe de 5e, Espace et géométrie, Transformations, Objectifs d'apprentissage : « Connaitre les propriétés du demi-tour. »"
+  },
+  {
+    "id": "EX-G045-M-02",
+    "skill_id": "G045",
+    "level": "maitrise",
+    "type": "qcm",
+    "statement": "Le demi-tour de centre O transforme le triangle UVW en U'V'W'. On sait que U'V' = 4,3 cm et que $\\widehat{U'V'W'}$ mesure 38°.\n\nQuelle affirmation est **fausse** ?",
+    "image": null,
+    "choices": [
+      {
+        "key": "a",
+        "text": "UV = 4,3 cm.",
+        "misconception": "Cette affirmation est vraie : le demi-tour conserve les longueurs. La choisir, c'est croire que l'image change de taille."
+      },
+      {
+        "key": "b",
+        "text": "Les droites (VW) et (V'W') sont perpendiculaires.",
+        "misconception": null
+      },
+      {
+        "key": "c",
+        "text": "$\\widehat{UVW}$ mesure 38°.",
+        "misconception": "Cette affirmation est vraie : le demi-tour conserve les angles. La choisir, c'est croire que l'angle devient son supplémentaire (142°) parce que la figure a tourné d'un angle plat."
+      },
+      {
+        "key": "d",
+        "text": "Les points U, O et U' sont alignés.",
+        "misconception": "Cette affirmation est vraie : O est le milieu de [UU'], par définition du demi-tour."
+      }
+    ],
+    "answer": {
+      "value": "b"
+    },
+    "solution_steps": [
+      "Le demi-tour conserve les longueurs : UV = U'V' = 4,3 cm. L'affirmation a est vraie.",
+      "Il conserve les angles : $\\widehat{UVW}$ et $\\widehat{U'V'W'}$ mesurent tous les deux 38°. L'affirmation c est vraie.",
+      "Par définition, O est le milieu de [UU'] : U, O et U' sont alignés. L'affirmation d est vraie.",
+      "L'image d'une droite par un demi-tour est une droite **parallèle** : (V'W') est parallèle à (VW), pas perpendiculaire. L'affirmation fausse est la **b**."
+    ],
+    "hint": "Revois les propriétés du demi-tour : longueurs, angles, alignement, direction des droites.",
+    "estimated_duration_s": 70,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, classe de 5e, Espace et géométrie, Transformations, Objectifs d'apprentissage : « Connaitre les propriétés du demi-tour. »"
+  }
+]

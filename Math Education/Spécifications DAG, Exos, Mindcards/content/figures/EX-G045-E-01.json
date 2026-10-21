@@ -1,0 +1,68 @@
+{
+  "type": "geometrie",
+  "params": {
+    "colonnes": 12,
+    "lignes": 10,
+    "fond": "blanc",
+    "points": {
+      "P": [
+        3,
+        3
+      ],
+      "R": [
+        5,
+        3
+      ],
+      "O": [
+        6,
+        5
+      ],
+      "P'": [
+        9,
+        7
+      ]
+    },
+    "elements": [
+      {
+        "cercle": "P",
+        "rayon": 2
+      },
+      {
+        "cercle": "P'",
+        "rayon": 2,
+        "couleur": "accent"
+      },
+      {
+        "segment": [
+          "P",
+          "R"
+        ]
+      },
+      {
+        "longueur": [
+          "P",
+          "R"
+        ],
+        "texte": "2,6 cm"
+      },
+      {
+        "texte": "(C)",
+        "position": [
+          "0.9",
+          "0.9"
+        ]
+      },
+      {
+        "texte": "(C')",
+        "position": [
+          "11",
+          "9.4"
+        ]
+      }
+    ],
+    "etiquettes": {
+      "R": "droite"
+    }
+  },
+  "alt": "Deux cercles (C) et (C') de centres P et P', et un point O"
+}

@@ -1,0 +1,203 @@
+[
+  {
+    "id": "EX-G055-D-01",
+    "skill_id": "G055",
+    "level": "decouverte",
+    "type": "qcm",
+    "statement": "Le codage permet de prouver que DEFG est un parallélogramme.\n\nQuelle propriété utilise-t-on ?",
+    "image": "figures/EX-G055-D-01",
+    "choices": [
+      {
+        "key": "a",
+        "text": "Ses côtés opposés ont la même longueur.",
+        "misconception": "Aucun côté n'est codé : les traits sont sur les moitiés des diagonales, [DI], [IF], [EI] et [IG]."
+      },
+      {
+        "key": "b",
+        "text": "Ses diagonales se coupent en leur milieu.",
+        "misconception": null
+      },
+      {
+        "key": "c",
+        "text": "Ses diagonales ont la même longueur.",
+        "misconception": "Le codage dit DI = IF et EI = IG, pas DF = EG. Et des diagonales de même longueur ne suffisent pas à faire un parallélogramme."
+      },
+      {
+        "key": "d",
+        "text": "Ses côtés opposés sont parallèles.",
+        "misconception": "Rien ne dit que des côtés sont parallèles : on croit le voir, mais l'apparence n'est pas une preuve."
+      }
+    ],
+    "answer": {
+      "value": "b"
+    },
+    "solution_steps": [
+      "Lis le codage : un trait sur [DI] et sur [IF], donc I est le milieu de [DF] ; deux traits sur [EI] et sur [IG], donc I est le milieu de [EG].",
+      "Les diagonales [DF] et [EG] ont le même milieu I.",
+      "Or un quadrilatère dont les diagonales se coupent en leur milieu est un parallélogramme. Donc DEFG est un parallélogramme : propriété **b**."
+    ],
+    "hint": "Sur quels segments sont les traits du codage ? Que disent-ils du point I ?",
+    "estimated_duration_s": 45,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, classe de 5e, Espace et géométrie, Parallélogrammes, Objectifs d'apprentissage : « Utiliser une propriété caractéristique sur les diagonales ou les côtés pour les construire ou donner la nature du quadrilatère. »"
+  },
+  {
+    "id": "EX-G055-D-02",
+    "skill_id": "G055",
+    "level": "decouverte",
+    "type": "vrai_faux",
+    "statement": "Dans le quadrilatère KLNP, les droites (KL) et (PN) sont parallèles.\n\nVrai ou faux : KLNP est forcément un parallélogramme.",
+    "image": null,
+    "answer": {
+      "value": false
+    },
+    "solution_steps": [
+      "Un parallélogramme a ses côtés opposés parallèles **deux à deux** : (KL) et (PN), mais aussi (LN) et (KP).",
+      "Ici, une seule paire de côtés opposés est parallèle. Un trapèze a exactement cette propriété sans être un parallélogramme.",
+      "C'est donc **faux** : KLNP n'est pas forcément un parallélogramme."
+    ],
+    "hint": "Combien de paires de côtés opposés parallèles faut-il à un parallélogramme ? Combien l'énoncé en donne-t-il ?",
+    "estimated_duration_s": 40,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, classe de 5e, Espace et géométrie, Parallélogrammes, Objectifs d'apprentissage : « Utiliser une propriété caractéristique sur les diagonales ou les côtés pour les construire ou donner la nature du quadrilatère. »"
+  },
+  {
+    "id": "EX-G055-E-01",
+    "skill_id": "G055",
+    "level": "entrainement",
+    "type": "texte",
+    "statement": "Le quadrilatère RSTU est non croisé.\n\nLis le codage : quelle est la nature de RSTU ?",
+    "image": "figures/EX-G055-E-01",
+    "answer": {
+      "value": "parallélogramme",
+      "unit": null,
+      "accepted": [
+        "un parallélogramme",
+        "c'est un parallélogramme",
+        "RSTU est un parallélogramme",
+        "le parallélogramme",
+        "paralélogramme",
+        "un paralélogramme",
+        "parallélograme",
+        "un parallélograme",
+        "paralélograme",
+        "parrallélogramme"
+      ]
+    },
+    "solution_steps": [
+      "Lis le codage : un trait sur [RS] et sur [TU], deux traits sur [ST] et sur [UR]. Donc RS = TU et ST = UR.",
+      "RSTU a ses côtés opposés de même longueur deux à deux, et il est non croisé.",
+      "Or un quadrilatère non croisé dont les côtés opposés ont la même longueur deux à deux est un parallélogramme. RSTU est un **parallélogramme**.",
+      "On ne peut pas dire plus : aucun angle droit n'est codé et deux côtés consécutifs n'ont pas le même codage. Rien ne prouve que RSTU est un rectangle ou un losange : sa nature prouvée est « parallélogramme »."
+    ],
+    "hint": "Repère les côtés qui portent le même codage : sont-ils opposés ou consécutifs ?",
+    "estimated_duration_s": 50,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, classe de 5e, Espace et géométrie, Parallélogrammes, Objectifs d'apprentissage : « Utiliser une propriété caractéristique sur les diagonales ou les côtés pour les construire ou donner la nature du quadrilatère. »"
+  },
+  {
+    "id": "EX-G055-E-02",
+    "skill_id": "G055",
+    "level": "entrainement",
+    "type": "qcm",
+    "statement": "Dans quel cas un quadrilatère non croisé est-il **forcément** un parallélogramme ?",
+    "image": null,
+    "choices": [
+      {
+        "key": "a",
+        "text": "Il a deux côtés opposés parallèles.",
+        "misconception": "C'est un trapèze : il faut que les deux paires de côtés opposés soient parallèles, ou que les côtés parallèles aient aussi la même longueur."
+      },
+      {
+        "key": "b",
+        "text": "Ses diagonales ont la même longueur.",
+        "misconception": "Un trapèze dont les côtés non parallèles ont la même longueur a des diagonales de même longueur sans être un parallélogramme."
+      },
+      {
+        "key": "c",
+        "text": "Il a deux côtés opposés parallèles et de même longueur.",
+        "misconception": null
+      },
+      {
+        "key": "d",
+        "text": "Il a deux paires de côtés consécutifs de même longueur.",
+        "misconception": "Deux côtés de 3 cm qui se suivent, puis deux côtés de 5 cm, donnent la forme d'un cerf-volant. Ce sont les côtés opposés qui doivent avoir la même longueur."
+      }
+    ],
+    "answer": {
+      "value": "c"
+    },
+    "solution_steps": [
+      "Une seule paire de côtés parallèles ne suffit pas : c'est le cas du trapèze. Des diagonales de même longueur ne suffisent pas non plus.",
+      "Si deux côtés opposés sont à la fois parallèles et de même longueur, et que le quadrilatère est non croisé, c'est un parallélogramme : c'est une propriété caractéristique.",
+      "Réponse **c**. Les autres propriétés caractéristiques : côtés opposés parallèles deux à deux ; côtés opposés de même longueur deux à deux ; diagonales de même milieu."
+    ],
+    "hint": "Une seule information sur une paire de côtés ne suffit pas toujours : laquelle de ces propositions en donne deux ?",
+    "estimated_duration_s": 50,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, classe de 5e, Espace et géométrie, Parallélogrammes, Objectifs d'apprentissage : « Utiliser une propriété caractéristique sur les diagonales ou les côtés pour les construire ou donner la nature du quadrilatère. »"
+  },
+  {
+    "id": "EX-G055-M-01",
+    "skill_id": "G055",
+    "level": "maitrise",
+    "type": "qcm",
+    "statement": "Lis le codage.\n\nQue prouve le codage sur le quadrilatère KLPN ?",
+    "image": "figures/EX-G055-M-01",
+    "choices": [
+      {
+        "key": "a",
+        "text": "C'est un losange, car ses diagonales se coupent en leur milieu.",
+        "misconception": "Des diagonales qui se coupent en leur milieu prouvent un parallélogramme, pas un losange : il faudrait en plus des diagonales perpendiculaires ou deux côtés consécutifs égaux."
+      },
+      {
+        "key": "b",
+        "text": "C'est un parallélogramme, car ses diagonales ont la même longueur.",
+        "misconception": "Le codage ne dit pas KP = LN : les moitiés de [LN] ont un trait, celles de [KP] deux. Et des diagonales de même longueur ne suffisent pas à prouver un parallélogramme."
+      },
+      {
+        "key": "c",
+        "text": "On ne peut rien dire sans mesurer.",
+        "misconception": "La mesure n'est pas une preuve, et elle n'est pas nécessaire : le codage suffit."
+      },
+      {
+        "key": "d",
+        "text": "C'est un parallélogramme, car ses diagonales [KP] et [LN] ont le même milieu.",
+        "misconception": null
+      }
+    ],
+    "answer": {
+      "value": "d"
+    },
+    "solution_steps": [
+      "Lis le codage : I est le milieu de [LN] (un trait de chaque côté) et le milieu de [KP] (deux traits de chaque côté).",
+      "Dans le quadrilatère KLPN, on lit les sommets dans l'ordre K, L, P, N : ses diagonales sont [KP] et [LN].",
+      "Les diagonales ont le même milieu I. Or un quadrilatère dont les diagonales ont le même milieu est un parallélogramme. Donc KLPN est un **parallélogramme** : réponse **d**."
+    ],
+    "hint": "Quelles sont les diagonales de KLPN ? Que dit le codage de leur milieu ?",
+    "estimated_duration_s": 70,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, classe de 5e, Espace et géométrie, Parallélogrammes, Automatismes : « Reconnaitre en justifiant un quadrilatère, un parallélogramme, un rectangle, un losange, un carré, un trapèze, un pentagone, un hexagone dans des figures complexes. »"
+  },
+  {
+    "id": "EX-G055-M-02",
+    "skill_id": "G055",
+    "level": "maitrise",
+    "type": "vrai_faux",
+    "statement": "Juge cette preuve.\n\n« TUVW est non croisé, (TU) et (WV) sont parallèles, et TU = WV. Or un quadrilatère non croisé qui a deux côtés opposés parallèles et de même longueur est un parallélogramme. Donc TUVW est un parallélogramme. »\n\nVrai ou faux : cette preuve est valable.",
+    "image": null,
+    "answer": {
+      "value": true
+    },
+    "solution_steps": [
+      "Les données sont connues : TUVW est non croisé, (TU) et (WV) sont parallèles, TU = WV.",
+      "[TU] et [WV] sont bien deux côtés opposés de TUVW : ils n'ont aucun sommet commun.",
+      "La propriété citée est une propriété caractéristique du parallélogramme, et les données la remplissent toutes. La preuve est **valable** : c'est vrai.",
+      "Une seule paire de côtés suffit ici parce que ces côtés sont **à la fois** parallèles et de même longueur."
+    ],
+    "hint": "Vérifie trois choses : les données sont-elles connues ? La propriété est-elle vraie ? S'applique-t-elle à deux côtés opposés ?",
+    "estimated_duration_s": 80,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, classe de 5e, Espace et géométrie, Parallélogrammes, Objectifs d'apprentissage : « Utiliser une propriété caractéristique sur les diagonales ou les côtés pour les construire ou donner la nature du quadrilatère. »"
+  }
+]

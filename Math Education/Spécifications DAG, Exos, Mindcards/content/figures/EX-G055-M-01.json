@@ -1,0 +1,82 @@
+{
+  "type": "geometrie",
+  "params": {
+    "colonnes": 11,
+    "lignes": 8,
+    "fond": "blanc",
+    "points": {
+      "K": [
+        4,
+        1
+      ],
+      "L": [
+        1,
+        4
+      ],
+      "N": [
+        10,
+        4
+      ],
+      "I": [
+        "5.5",
+        4
+      ],
+      "P": [
+        7,
+        7
+      ]
+    },
+    "elements": [
+      {
+        "polygone": [
+          "K",
+          "L",
+          "P",
+          "N"
+        ]
+      },
+      {
+        "segment": [
+          "L",
+          "N"
+        ]
+      },
+      {
+        "segment": [
+          "K",
+          "P"
+        ]
+      },
+      {
+        "codage": [
+          [
+            "L",
+            "I"
+          ],
+          [
+            "I",
+            "N"
+          ]
+        ],
+        "marque": 1
+      },
+      {
+        "codage": [
+          [
+            "K",
+            "I"
+          ],
+          [
+            "I",
+            "P"
+          ]
+        ],
+        "marque": 2
+      }
+    ],
+    "etiquettes": {
+      "I": "haut_droite"
+    }
+  },
+  "alt": "Quadrilatère KLPN, les segments [LN] et [KP] qui se coupent en I, avec un codage"
+}

@@ -3,7 +3,7 @@
     "version": "1.0",
     "scope": "Tranche pilote CP a 4e : 69 exercices, 3 par competence (1 decouverte, 1 entrainement, 1 maitrise) sur les 23 competences des domaines A et C. La cible finale de la roadmap est de 5 exercices par niveau, soit 15 par competence.",
     "updated_at": "2026-07-28",
-    "total_exercises": 1510,
+    "total_exercises": 1540,
     "review_status": "relu_agent"
   },
   "exercises": [
@@ -35329,6 +35329,197 @@
       "programme_ref": "Cycle 4, classe de 4e, Espace et géométrie, Triangles, Objectifs d'apprentissage : « Connaitre le théorème de Pythagore, sa réciproque, sa contraposée. »"
     },
     {
+      "id": "EX-G045-D-01",
+      "skill_id": "G045",
+      "level": "decouverte",
+      "type": "numerique",
+      "statement": "Le triangle K'L'N' est l'image du triangle KLN par le demi-tour de centre O. La figure n'est pas en vraie grandeur.\n\nCombien mesure le côté [L'N'], en cm ?",
+      "image": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 344 292\" width=\"344\" height=\"292\" font-family=\"system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif\" role=\"img\"><title>Un triangle KLN, un point O et un second triangle K'L'N'</title><rect width=\"100%\" height=\"100%\" fill=\"#ffffff\"/><polygon points=\"29.0,94.0 133.0,29.0 107.0,146.0\" fill=\"none\" fill-opacity=\"0.6\" stroke=\"#334155\" stroke-width=\"2\" stroke-linejoin=\"round\"/><polygon points=\"315.0,198.0 211.0,263.0 237.0,146.0\" fill=\"none\" fill-opacity=\"0.6\" stroke=\"#2563eb\" stroke-width=\"2\" stroke-linejoin=\"round\"/><text x=\"65.4\" y=\"50.9\" font-size=\"15\" text-anchor=\"middle\" fill=\"#334155\" font-weight=\"600\">4,1 cm</text><text x=\"153.8\" y=\"99.0\" font-size=\"15\" text-anchor=\"middle\" fill=\"#334155\" font-weight=\"600\">4,8 cm</text><text x=\"52.4\" y=\"148.4\" font-size=\"15\" text-anchor=\"middle\" fill=\"#334155\" font-weight=\"600\">4,4 cm</text><line x1=\"25.0\" y1=\"90.0\" x2=\"33.0\" y2=\"98.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"25.0\" y1=\"98.0\" x2=\"33.0\" y2=\"90.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><text x=\"15.8\" y=\"94.2\" font-size=\"15\" text-anchor=\"middle\" fill=\"#334155\" font-weight=\"600\">K</text><line x1=\"129.0\" y1=\"25.0\" x2=\"137.0\" y2=\"33.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"129.0\" y1=\"33.0\" x2=\"137.0\" y2=\"25.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><text x=\"128.6\" y=\"20.7\" font-size=\"15\" text-anchor=\"middle\" fill=\"#334155\" font-weight=\"600\">L</text><line x1=\"103.0\" y1=\"142.0\" x2=\"111.0\" y2=\"150.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"103.0\" y1=\"150.0\" x2=\"111.0\" y2=\"142.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><text x=\"93.0\" y=\"151.0\" font-size=\"15\" text-anchor=\"middle\" fill=\"#334155\" font-weight=\"600\">N</text><line x1=\"168.0\" y1=\"142.0\" x2=\"176.0\" y2=\"150.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"168.0\" y1=\"150.0\" x2=\"176.0\" y2=\"142.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><text x=\"172.0\" y=\"165.0\" font-size=\"15\" text-anchor=\"middle\" fill=\"#334155\" font-weight=\"600\">O</text><line x1=\"311.0\" y1=\"194.0\" x2=\"319.0\" y2=\"202.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"311.0\" y1=\"202.0\" x2=\"319.0\" y2=\"194.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><text x=\"328.2\" y=\"207.8\" font-size=\"15\" text-anchor=\"middle\" fill=\"#334155\" font-weight=\"600\">K'</text><line x1=\"207.0\" y1=\"259.0\" x2=\"215.0\" y2=\"267.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"207.0\" y1=\"267.0\" x2=\"215.0\" y2=\"259.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><text x=\"215.4\" y=\"281.3\" font-size=\"15\" text-anchor=\"middle\" fill=\"#334155\" font-weight=\"600\">L'</text><line x1=\"233.0\" y1=\"142.0\" x2=\"241.0\" y2=\"150.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"233.0\" y1=\"150.0\" x2=\"241.0\" y2=\"142.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><text x=\"251.0\" y=\"151.0\" font-size=\"15\" text-anchor=\"middle\" fill=\"#334155\" font-weight=\"600\">N'</text></svg>",
+      "answer": {
+        "value": 4.8,
+        "unit": "cm",
+        "accepted": [
+          "4,8 cm",
+          "4.8 cm",
+          "L'N' = 4,8 cm",
+          "L'N' = 4,8",
+          "L'N'=4,8 cm",
+          "L’N’ = 4,8 cm",
+          "L’N’ = 4,8"
+        ]
+      },
+      "solution_steps": [
+        "Le demi-tour de centre O envoie K sur K', L sur L' et N sur N' : le côté [L'N'] est l'image du côté [LN].",
+        "Un demi-tour conserve les longueurs : L'N' = LN.",
+        "Sur la figure, LN = 4,8 cm, donc **L'N' = 4,8 cm**.",
+        "Piège : [K'L'] est l'image de [KL] (4,1 cm) et [K'N'] celle de [KN] (4,4 cm). Le point marqué ' est l'image du point de même lettre."
+      ],
+      "hint": "Quel côté du triangle KLN a pour image le côté [L'N'] ?",
+      "estimated_duration_s": 45,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 4, classe de 5e, Espace et géométrie, Transformations, Objectifs d'apprentissage : « Connaitre les propriétés du demi-tour. »"
+    },
+    {
+      "id": "EX-G045-D-02",
+      "skill_id": "G045",
+      "level": "decouverte",
+      "type": "vrai_faux",
+      "statement": "Le demi-tour de centre O transforme la droite (d) en la droite (d').\n\nVrai ou faux : les droites (d) et (d') sont perpendiculaires.",
+      "image": null,
+      "answer": {
+        "value": false
+      },
+      "solution_steps": [
+        "Un demi-tour transforme une droite en une droite **parallèle** : (d') est parallèle à (d).",
+        "Le demi-tour fait tourner toute la figure d'un angle plat (180°) autour de O : après un angle plat, une droite reprend la même direction.",
+        "C'est donc **faux** : (d) et (d') ne sont pas perpendiculaires. Elles sont parallèles, ou confondues si (d) passe par O."
+      ],
+      "hint": "De quel angle le demi-tour fait-il tourner la figure ? Que devient alors la direction d'une droite ?",
+      "estimated_duration_s": 40,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 4, classe de 5e, Espace et géométrie, Transformations, Objectifs d'apprentissage : « Connaitre les propriétés du demi-tour. »"
+    },
+    {
+      "id": "EX-G045-E-01",
+      "skill_id": "G045",
+      "level": "entrainement",
+      "type": "numerique",
+      "statement": "Le cercle (C') est l'image du cercle (C) par le demi-tour de centre O. La figure n'est pas en vraie grandeur.\n\nQuel est le diamètre du cercle (C'), en cm ?",
+      "image": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 344 292\" width=\"344\" height=\"292\" font-family=\"system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif\" role=\"img\"><title>Deux cercles (C) et (C') de centres P et P', et un point O</title><rect width=\"100%\" height=\"100%\" fill=\"#ffffff\"/><circle cx=\"94.0\" cy=\"94.0\" r=\"52.0\" fill=\"none\" stroke=\"#334155\" stroke-width=\"2\"/><circle cx=\"250.0\" cy=\"198.0\" r=\"52.0\" fill=\"none\" stroke=\"#2563eb\" stroke-width=\"2\"/><line x1=\"94.0\" y1=\"94.0\" x2=\"146.0\" y2=\"94.0\" stroke=\"#334155\" stroke-width=\"2.0\" stroke-linecap=\"round\"/><text x=\"120.0\" y=\"86.0\" font-size=\"13\" text-anchor=\"middle\" fill=\"#334155\">2,6 cm</text><text x=\"39.4\" y=\"44.4\" font-size=\"15\" text-anchor=\"middle\" fill=\"#334155\" font-weight=\"600\">(C)</text><text x=\"302.0\" y=\"265.4\" font-size=\"15\" text-anchor=\"middle\" fill=\"#334155\" font-weight=\"600\">(C')</text><line x1=\"90.0\" y1=\"90.0\" x2=\"98.0\" y2=\"98.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"90.0\" y1=\"98.0\" x2=\"98.0\" y2=\"90.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><text x=\"81.7\" y=\"92.3\" font-size=\"15\" text-anchor=\"middle\" fill=\"#334155\" font-weight=\"600\">P</text><line x1=\"142.0\" y1=\"90.0\" x2=\"150.0\" y2=\"98.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"142.0\" y1=\"98.0\" x2=\"150.0\" y2=\"90.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><text x=\"160.0\" y=\"99.0\" font-size=\"15\" text-anchor=\"middle\" fill=\"#334155\" font-weight=\"600\">R</text><line x1=\"168.0\" y1=\"142.0\" x2=\"176.0\" y2=\"150.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"168.0\" y1=\"150.0\" x2=\"176.0\" y2=\"142.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><text x=\"178.3\" y=\"163.5\" font-size=\"15\" text-anchor=\"middle\" fill=\"#334155\" font-weight=\"600\">O</text><line x1=\"246.0\" y1=\"194.0\" x2=\"254.0\" y2=\"202.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"246.0\" y1=\"202.0\" x2=\"254.0\" y2=\"194.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><text x=\"261.1\" y=\"211.5\" font-size=\"15\" text-anchor=\"middle\" fill=\"#334155\" font-weight=\"600\">P'</text></svg>",
+      "answer": {
+        "value": 5.2,
+        "unit": "cm",
+        "accepted": [
+          "5,2 cm",
+          "5.2 cm"
+        ]
+      },
+      "solution_steps": [
+        "Le demi-tour conserve les longueurs : l'image d'un cercle est un cercle de **même rayon**, dont le centre P' est l'image du centre P.",
+        "Le rayon de (C) est PR = 2,6 cm : le rayon de (C') mesure aussi 2,6 cm.",
+        "Le diamètre mesure deux fois le rayon : 2,6 × 2 = 5,2. Le diamètre de (C') mesure **5,2 cm**.",
+        "Piège : 2,6 cm est le rayon, pas le diamètre."
+      ],
+      "hint": "Le demi-tour change-t-il la taille d'un cercle ? Ensuite, quel lien y a-t-il entre le rayon et le diamètre ?",
+      "estimated_duration_s": 50,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 4, classe de 5e, Espace et géométrie, Transformations, Objectifs d'apprentissage : « Connaitre les propriétés du demi-tour. »"
+    },
+    {
+      "id": "EX-G045-E-02",
+      "skill_id": "G045",
+      "level": "entrainement",
+      "type": "qcm",
+      "statement": "Laquelle de ces figures **n'a pas** de centre de symétrie ?",
+      "image": null,
+      "choices": [
+        {
+          "key": "a",
+          "text": "Un cercle",
+          "misconception": "Le cercle a un centre de symétrie : son centre. Un demi-tour autour de lui envoie chaque point du cercle sur le point diamétralement opposé."
+        },
+        {
+          "key": "b",
+          "text": "Un segment",
+          "misconception": "Le segment a un centre de symétrie : son milieu. Le demi-tour autour du milieu échange ses deux extrémités."
+        },
+        {
+          "key": "c",
+          "text": "Un rectangle",
+          "misconception": "Le rectangle a un centre de symétrie, le point situé en son milieu : le demi-tour autour de ce point envoie chaque sommet sur le sommet opposé. Il a aussi deux axes."
+        },
+        {
+          "key": "d",
+          "text": "Un demi-disque",
+          "misconception": null
+        }
+      ],
+      "answer": {
+        "value": "d"
+      },
+      "solution_steps": [
+        "Une figure a un centre de symétrie O quand le demi-tour de centre O la ramène exactement sur elle-même.",
+        "Le cercle (autour de son centre), le segment (autour de son milieu) et le rectangle (autour du point situé en son milieu) retombent sur eux-mêmes après un demi-tour : ils ont un centre de symétrie.",
+        "Le demi-disque a un axe de symétrie, mais aucun centre : après un demi-tour, sa partie arrondie passe du côté opposé. La réponse est **d**. Avoir un axe de symétrie ne suffit pas."
+      ],
+      "hint": "Imagine chaque figure après un demi-tour : laquelle ne retombe pas sur elle-même ?",
+      "estimated_duration_s": 45,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 4, classe de 5e, Espace et géométrie, Transformations, Objectifs d'apprentissage : « Connaitre les propriétés du demi-tour. »"
+    },
+    {
+      "id": "EX-G045-M-01",
+      "skill_id": "G045",
+      "level": "maitrise",
+      "type": "numerique",
+      "statement": "Les sommets des figures sont sur les nœuds du quadrillage.\n\nCombien de ces quatre figures ont un centre de symétrie ?",
+      "image": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 344 292\" width=\"344\" height=\"292\" font-family=\"system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif\" role=\"img\"><title>Quatre figures numérotées de 1 à 4 sur un quadrillage</title><rect width=\"100%\" height=\"100%\" fill=\"#ffffff\"/><line x1=\"16.0\" y1=\"16.0\" x2=\"16.0\" y2=\"276.0\" stroke=\"#cbd5e1\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"42.0\" y1=\"16.0\" x2=\"42.0\" y2=\"276.0\" stroke=\"#cbd5e1\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"68.0\" y1=\"16.0\" x2=\"68.0\" y2=\"276.0\" stroke=\"#cbd5e1\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"94.0\" y1=\"16.0\" x2=\"94.0\" y2=\"276.0\" stroke=\"#cbd5e1\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"120.0\" y1=\"16.0\" x2=\"120.0\" y2=\"276.0\" stroke=\"#cbd5e1\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"146.0\" y1=\"16.0\" x2=\"146.0\" y2=\"276.0\" stroke=\"#cbd5e1\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"172.0\" y1=\"16.0\" x2=\"172.0\" y2=\"276.0\" stroke=\"#cbd5e1\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"198.0\" y1=\"16.0\" x2=\"198.0\" y2=\"276.0\" stroke=\"#cbd5e1\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"224.0\" y1=\"16.0\" x2=\"224.0\" y2=\"276.0\" stroke=\"#cbd5e1\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"250.0\" y1=\"16.0\" x2=\"250.0\" y2=\"276.0\" stroke=\"#cbd5e1\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"276.0\" y1=\"16.0\" x2=\"276.0\" y2=\"276.0\" stroke=\"#cbd5e1\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"302.0\" y1=\"16.0\" x2=\"302.0\" y2=\"276.0\" stroke=\"#cbd5e1\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"328.0\" y1=\"16.0\" x2=\"328.0\" y2=\"276.0\" stroke=\"#cbd5e1\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"16.0\" y1=\"16.0\" x2=\"328.0\" y2=\"16.0\" stroke=\"#cbd5e1\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"16.0\" y1=\"42.0\" x2=\"328.0\" y2=\"42.0\" stroke=\"#cbd5e1\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"16.0\" y1=\"68.0\" x2=\"328.0\" y2=\"68.0\" stroke=\"#cbd5e1\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"16.0\" y1=\"94.0\" x2=\"328.0\" y2=\"94.0\" stroke=\"#cbd5e1\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"16.0\" y1=\"120.0\" x2=\"328.0\" y2=\"120.0\" stroke=\"#cbd5e1\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"16.0\" y1=\"146.0\" x2=\"328.0\" y2=\"146.0\" stroke=\"#cbd5e1\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"16.0\" y1=\"172.0\" x2=\"328.0\" y2=\"172.0\" stroke=\"#cbd5e1\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"16.0\" y1=\"198.0\" x2=\"328.0\" y2=\"198.0\" stroke=\"#cbd5e1\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"16.0\" y1=\"224.0\" x2=\"328.0\" y2=\"224.0\" stroke=\"#cbd5e1\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"16.0\" y1=\"250.0\" x2=\"328.0\" y2=\"250.0\" stroke=\"#cbd5e1\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"16.0\" y1=\"276.0\" x2=\"328.0\" y2=\"276.0\" stroke=\"#cbd5e1\" stroke-width=\"1\" stroke-linecap=\"round\"/><polygon points=\"42.0,42.0 120.0,42.0 146.0,94.0 68.0,94.0\" fill=\"#bfdbfe\" fill-opacity=\"0.6\" stroke=\"#334155\" stroke-width=\"2\" stroke-linejoin=\"round\"/><polygon points=\"198.0,120.0 302.0,120.0 250.0,42.0\" fill=\"#bfdbfe\" fill-opacity=\"0.6\" stroke=\"#334155\" stroke-width=\"2\" stroke-linejoin=\"round\"/><polygon points=\"42.0,172.0 94.0,172.0 146.0,198.0 146.0,250.0 94.0,250.0 42.0,224.0\" fill=\"#bfdbfe\" fill-opacity=\"0.6\" stroke=\"#334155\" stroke-width=\"2\" stroke-linejoin=\"round\"/><polygon points=\"198.0,172.0 302.0,172.0 302.0,224.0 198.0,224.0\" fill=\"#bfdbfe\" fill-opacity=\"0.6\" stroke=\"#334155\" stroke-width=\"2\" stroke-linejoin=\"round\"/><text x=\"29.0\" y=\"34.0\" font-size=\"15\" text-anchor=\"middle\" fill=\"#334155\" font-weight=\"600\">1</text><text x=\"185.0\" y=\"47.0\" font-size=\"15\" text-anchor=\"middle\" fill=\"#334155\" font-weight=\"600\">2</text><text x=\"29.0\" y=\"164.0\" font-size=\"15\" text-anchor=\"middle\" fill=\"#334155\" font-weight=\"600\">3</text><text x=\"185.0\" y=\"164.0\" font-size=\"15\" text-anchor=\"middle\" fill=\"#334155\" font-weight=\"600\">4</text></svg>",
+      "answer": {
+        "value": 3,
+        "unit": null,
+        "accepted": [
+          "3 figures",
+          "trois",
+          "trois figures"
+        ]
+      },
+      "solution_steps": [
+        "Une figure a un centre de symétrie quand un demi-tour autour d'un point la ramène exactement sur elle-même. On le vérifie en comptant les carreaux, sans mesurer.",
+        "Figure 1 : chaque sommet a un sommet qui lui correspond, à autant de carreaux de l'autre côté du point situé au milieu de la figure. Elle a un **centre** de symétrie, mais aucun axe.",
+        "Figure 2 : c'est un triangle. Après un demi-tour, sa pointe passe de l'autre côté : pas de centre de symétrie. Il a un axe, ce qui ne suffit pas.",
+        "Figure 3 : ses six sommets se correspondent deux par deux par un demi-tour autour du milieu de la figure. Elle a un **centre** de symétrie, et aucun axe.",
+        "Figure 4 : un rectangle a un **centre** de symétrie, le point situé en son milieu, et deux axes.",
+        "Les figures 1, 3 et 4 ont un centre de symétrie : la réponse est **3**. Piège : compter les figures qui ont un **axe** de symétrie (2 et 4) donne 2."
+      ],
+      "hint": "Pour chaque figure, cherche un point autour duquel un demi-tour la ramène sur elle-même. Un axe de symétrie ne suffit pas.",
+      "estimated_duration_s": 90,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 4, classe de 5e, Espace et géométrie, Transformations, Objectifs d'apprentissage : « Connaitre les propriétés du demi-tour. »"
+    },
+    {
+      "id": "EX-G045-M-02",
+      "skill_id": "G045",
+      "level": "maitrise",
+      "type": "qcm",
+      "statement": "Le demi-tour de centre O transforme le triangle UVW en U'V'W'. On sait que U'V' = 4,3 cm et que $\\widehat{U'V'W'}$ mesure 38°.\n\nQuelle affirmation est **fausse** ?",
+      "image": null,
+      "choices": [
+        {
+          "key": "a",
+          "text": "UV = 4,3 cm.",
+          "misconception": "Cette affirmation est vraie : le demi-tour conserve les longueurs. La choisir, c'est croire que l'image change de taille."
+        },
+        {
+          "key": "b",
+          "text": "Les droites (VW) et (V'W') sont perpendiculaires.",
+          "misconception": null
+        },
+        {
+          "key": "c",
+          "text": "$\\widehat{UVW}$ mesure 38°.",
+          "misconception": "Cette affirmation est vraie : le demi-tour conserve les angles. La choisir, c'est croire que l'angle devient son supplémentaire (142°) parce que la figure a tourné d'un angle plat."
+        },
+        {
+          "key": "d",
+          "text": "Les points U, O et U' sont alignés.",
+          "misconception": "Cette affirmation est vraie : O est le milieu de [UU'], par définition du demi-tour."
+        }
+      ],
+      "answer": {
+        "value": "b"
+      },
+      "solution_steps": [
+        "Le demi-tour conserve les longueurs : UV = U'V' = 4,3 cm. L'affirmation a est vraie.",
+        "Il conserve les angles : $\\widehat{UVW}$ et $\\widehat{U'V'W'}$ mesurent tous les deux 38°. L'affirmation c est vraie.",
+        "Par définition, O est le milieu de [UU'] : U, O et U' sont alignés. L'affirmation d est vraie.",
+        "L'image d'une droite par un demi-tour est une droite **parallèle** : (V'W') est parallèle à (VW), pas perpendiculaire. L'affirmation fausse est la **b**."
+      ],
+      "hint": "Revois les propriétés du demi-tour : longueurs, angles, alignement, direction des droites.",
+      "estimated_duration_s": 70,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 4, classe de 5e, Espace et géométrie, Transformations, Objectifs d'apprentissage : « Connaitre les propriétés du demi-tour. »"
+    },
+    {
       "id": "EX-G046-D-01",
       "skill_id": "G046",
       "level": "decouverte",
@@ -35918,6 +36109,189 @@
       "programme_ref": "Cycle 4, classe de 5e, Espace et géométrie, Angles, Objectifs d'apprentissage : « Caractériser le parallélisme par les angles : angles alternes internes, angles correspondants. »"
     },
     {
+      "id": "EX-G049-D-01",
+      "skill_id": "G049",
+      "level": "decouverte",
+      "type": "numerique",
+      "statement": "RSTU est un parallélogramme. La figure n'est pas en vraie grandeur.\n\nCombien mesure le côté [TU], en cm ?",
+      "image": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 292 214\" width=\"292\" height=\"214\" font-family=\"system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif\" role=\"img\"><title>Quadrilatère RSTU avec deux longueurs écrites</title><rect width=\"100%\" height=\"100%\" fill=\"#ffffff\"/><polygon points=\"42.0,172.0 172.0,172.0 250.0,42.0 120.0,42.0\" fill=\"none\" fill-opacity=\"0.6\" stroke=\"#334155\" stroke-width=\"2\" stroke-linejoin=\"round\"/><text x=\"107.0\" y=\"190.0\" font-size=\"13\" text-anchor=\"middle\" fill=\"#334155\">5,4 cm</text><text x=\"217.9\" y=\"116.1\" font-size=\"13\" text-anchor=\"start\" fill=\"#334155\">3,9 cm</text><line x1=\"38.0\" y1=\"168.0\" x2=\"46.0\" y2=\"176.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"38.0\" y1=\"176.0\" x2=\"46.0\" y2=\"168.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><text x=\"30.1\" y=\"184.4\" font-size=\"15\" text-anchor=\"middle\" fill=\"#334155\" font-weight=\"600\">R</text><line x1=\"168.0\" y1=\"168.0\" x2=\"176.0\" y2=\"176.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"168.0\" y1=\"176.0\" x2=\"176.0\" y2=\"168.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><text x=\"177.2\" y=\"190.0\" font-size=\"15\" text-anchor=\"middle\" fill=\"#334155\" font-weight=\"600\">S</text><line x1=\"246.0\" y1=\"38.0\" x2=\"254.0\" y2=\"46.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"246.0\" y1=\"46.0\" x2=\"254.0\" y2=\"38.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><text x=\"261.9\" y=\"39.6\" font-size=\"15\" text-anchor=\"middle\" fill=\"#334155\" font-weight=\"600\">T</text><line x1=\"116.0\" y1=\"38.0\" x2=\"124.0\" y2=\"46.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"116.0\" y1=\"46.0\" x2=\"124.0\" y2=\"38.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><text x=\"114.8\" y=\"34.0\" font-size=\"15\" text-anchor=\"middle\" fill=\"#334155\" font-weight=\"600\">U</text></svg>",
+      "answer": {
+        "value": 5.4,
+        "unit": "cm",
+        "accepted": [
+          "5,4 cm",
+          "5.4 cm"
+        ]
+      },
+      "solution_steps": [
+        "Dans un parallélogramme, les côtés opposés ont la même longueur.",
+        "Dans RSTU, on lit les sommets dans l'ordre R, S, T, U : le côté opposé à [TU] est [RS], qui n'a aucun sommet commun avec lui.",
+        "Donc TU = RS = **5,4 cm**.",
+        "Piège : [ST] (3,9 cm) a le sommet T en commun avec [TU] : c'est un côté consécutif, pas opposé."
+      ],
+      "hint": "Cherche le côté qui fait face au côté [TU].",
+      "estimated_duration_s": 40,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 4, classe de 5e, Espace et géométrie, Parallélogrammes, Objectifs d'apprentissage : « Connaitre les propriétés caractéristiques des côtés opposés et des diagonales. »"
+    },
+    {
+      "id": "EX-G049-D-02",
+      "skill_id": "G049",
+      "level": "decouverte",
+      "type": "vrai_faux",
+      "statement": "KLMN est un parallélogramme de centre O, et KM = 8,6 cm.\n\nVrai ou faux : on peut en déduire que OL = 4,3 cm.",
+      "image": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 318 214\" width=\"318\" height=\"214\" font-family=\"system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif\" role=\"img\"><title>Quadrilatère KLMN et ses diagonales, qui se coupent en O</title><rect width=\"100%\" height=\"100%\" fill=\"#ffffff\"/><polygon points=\"42.0,172.0 224.0,172.0 276.0,68.0 94.0,68.0\" fill=\"none\" fill-opacity=\"0.6\" stroke=\"#334155\" stroke-width=\"2\" stroke-linejoin=\"round\"/><line x1=\"42.0\" y1=\"172.0\" x2=\"276.0\" y2=\"68.0\" stroke=\"#334155\" stroke-width=\"2.0\" stroke-linecap=\"round\"/><line x1=\"224.0\" y1=\"172.0\" x2=\"94.0\" y2=\"68.0\" stroke=\"#334155\" stroke-width=\"2.0\" stroke-linecap=\"round\"/><line x1=\"38.0\" y1=\"168.0\" x2=\"46.0\" y2=\"176.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"38.0\" y1=\"176.0\" x2=\"46.0\" y2=\"168.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><text x=\"29.2\" y=\"182.7\" font-size=\"15\" text-anchor=\"middle\" fill=\"#334155\" font-weight=\"600\">K</text><line x1=\"220.0\" y1=\"168.0\" x2=\"228.0\" y2=\"176.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"220.0\" y1=\"176.0\" x2=\"228.0\" y2=\"168.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><text x=\"234.9\" y=\"185.7\" font-size=\"15\" text-anchor=\"middle\" fill=\"#334155\" font-weight=\"600\">L</text><line x1=\"272.0\" y1=\"64.0\" x2=\"280.0\" y2=\"72.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"272.0\" y1=\"72.0\" x2=\"280.0\" y2=\"64.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><text x=\"288.8\" y=\"67.3\" font-size=\"15\" text-anchor=\"middle\" fill=\"#334155\" font-weight=\"600\">M</text><line x1=\"90.0\" y1=\"64.0\" x2=\"98.0\" y2=\"72.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"90.0\" y1=\"72.0\" x2=\"98.0\" y2=\"64.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><text x=\"83.1\" y=\"64.3\" font-size=\"15\" text-anchor=\"middle\" fill=\"#334155\" font-weight=\"600\">N</text><line x1=\"155.0\" y1=\"116.0\" x2=\"163.0\" y2=\"124.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"155.0\" y1=\"124.0\" x2=\"163.0\" y2=\"116.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><text x=\"159.0\" y=\"139.0\" font-size=\"15\" text-anchor=\"middle\" fill=\"#334155\" font-weight=\"600\">O</text></svg>",
+      "answer": {
+        "value": false
+      },
+      "solution_steps": [
+        "Les diagonales d'un parallélogramme se coupent en leur milieu : O est le milieu de [KM] et de [LN].",
+        "Donc OK = OM = 8,6 ÷ 2 = 4,3 cm. Mais [OL] est la moitié de l'**autre** diagonale, [LN], dont on ne connaît pas la longueur.",
+        "Les deux diagonales d'un parallélogramme n'ont pas forcément la même longueur. On ne peut pas en déduire OL : c'est **faux**."
+      ],
+      "hint": "Le segment [OL] est la moitié de quelle diagonale ?",
+      "estimated_duration_s": 50,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 4, classe de 5e, Espace et géométrie, Parallélogrammes, Objectifs d'apprentissage : « Connaitre les propriétés caractéristiques des côtés opposés et des diagonales. »"
+    },
+    {
+      "id": "EX-G049-E-01",
+      "skill_id": "G049",
+      "level": "entrainement",
+      "type": "numerique",
+      "statement": "PQRS est un parallélogramme. La figure n'est pas en vraie grandeur.\n\nCombien mesure l'angle $\\widehat{PQR}$, en degrés ?",
+      "image": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 344 214\" width=\"344\" height=\"214\" font-family=\"system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif\" role=\"img\"><title>Quadrilatère PQRS avec un angle marqué en P</title><rect width=\"100%\" height=\"100%\" fill=\"#ffffff\"/><polygon points=\"42.0,172.0 198.0,172.0 302.0,47.2 146.0,47.2\" fill=\"none\" fill-opacity=\"0.6\" stroke=\"#334155\" stroke-width=\"2\" stroke-linejoin=\"round\"/><path d=\"M62.0,172.0 A20.0,20.0 0 0 0 54.8,156.6\" fill=\"none\" stroke=\"#2563eb\" stroke-width=\"2\"/><text x=\"72.8\" y=\"162.6\" font-size=\"13\" text-anchor=\"middle\" fill=\"#2563eb\" font-weight=\"600\">58°</text><line x1=\"38.0\" y1=\"168.0\" x2=\"46.0\" y2=\"176.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"38.0\" y1=\"176.0\" x2=\"46.0\" y2=\"168.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><text x=\"29.4\" y=\"183.1\" font-size=\"15\" text-anchor=\"middle\" fill=\"#334155\" font-weight=\"600\">P</text><line x1=\"194.0\" y1=\"168.0\" x2=\"202.0\" y2=\"176.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"194.0\" y1=\"176.0\" x2=\"202.0\" y2=\"168.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><text x=\"203.4\" y=\"189.9\" font-size=\"15\" text-anchor=\"middle\" fill=\"#334155\" font-weight=\"600\">Q</text><line x1=\"298.0\" y1=\"43.2\" x2=\"306.0\" y2=\"51.2\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"298.0\" y1=\"51.2\" x2=\"306.0\" y2=\"43.2\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><text x=\"314.6\" y=\"46.1\" font-size=\"15\" text-anchor=\"middle\" fill=\"#334155\" font-weight=\"600\">R</text><line x1=\"142.0\" y1=\"43.2\" x2=\"150.0\" y2=\"51.2\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"142.0\" y1=\"51.2\" x2=\"150.0\" y2=\"43.2\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><text x=\"140.6\" y=\"39.3\" font-size=\"15\" text-anchor=\"middle\" fill=\"#334155\" font-weight=\"600\">S</text></svg>",
+      "answer": {
+        "value": 122,
+        "unit": "°",
+        "accepted": [
+          "122°",
+          "122 °",
+          "122 degrés"
+        ]
+      },
+      "solution_steps": [
+        "Dans un parallélogramme, deux angles consécutifs sont supplémentaires : leur somme vaut 180°.",
+        "$\\widehat{QPS}$ et $\\widehat{PQR}$ sont consécutifs : ils ont le côté [PQ] en commun.",
+        "Donc $\\widehat{PQR}$ = 180° − 58° = **122°**.",
+        "Piège : 58° est la mesure de l'angle **opposé** à $\\widehat{QPS}$, c'est-à-dire $\\widehat{QRS}$, pas celle de $\\widehat{PQR}$."
+      ],
+      "hint": "Les angles en P et en Q ont un côté commun : que vaut leur somme ?",
+      "estimated_duration_s": 50,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 4, classe de 5e, Espace et géométrie, Parallélogrammes, Objectifs d'apprentissage : « Définir le parallélogramme. »"
+    },
+    {
+      "id": "EX-G049-E-02",
+      "skill_id": "G049",
+      "level": "entrainement",
+      "type": "qcm",
+      "statement": "IJKL est un parallélogramme de centre O.\n\nQuelle égalité est vraie dans **tout** parallélogramme ?",
+      "image": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 344 214\" width=\"344\" height=\"214\" font-family=\"system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif\" role=\"img\"><title>Quadrilatère IJKL et ses diagonales, qui se coupent en O</title><rect width=\"100%\" height=\"100%\" fill=\"#ffffff\"/><polygon points=\"42.0,172.0 224.0,172.0 302.0,68.0 120.0,68.0\" fill=\"none\" fill-opacity=\"0.6\" stroke=\"#334155\" stroke-width=\"2\" stroke-linejoin=\"round\"/><line x1=\"42.0\" y1=\"172.0\" x2=\"302.0\" y2=\"68.0\" stroke=\"#334155\" stroke-width=\"2.0\" stroke-linecap=\"round\"/><line x1=\"224.0\" y1=\"172.0\" x2=\"120.0\" y2=\"68.0\" stroke=\"#334155\" stroke-width=\"2.0\" stroke-linecap=\"round\"/><line x1=\"38.0\" y1=\"168.0\" x2=\"46.0\" y2=\"176.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"38.0\" y1=\"176.0\" x2=\"46.0\" y2=\"168.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><text x=\"29.0\" y=\"182.2\" font-size=\"15\" text-anchor=\"middle\" fill=\"#334155\" font-weight=\"600\">I</text><line x1=\"220.0\" y1=\"168.0\" x2=\"228.0\" y2=\"176.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"220.0\" y1=\"176.0\" x2=\"228.0\" y2=\"168.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><text x=\"233.9\" y=\"186.9\" font-size=\"15\" text-anchor=\"middle\" fill=\"#334155\" font-weight=\"600\">J</text><line x1=\"298.0\" y1=\"64.0\" x2=\"306.0\" y2=\"72.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"298.0\" y1=\"72.0\" x2=\"306.0\" y2=\"64.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><text x=\"315.0\" y=\"67.8\" font-size=\"15\" text-anchor=\"middle\" fill=\"#334155\" font-weight=\"600\">K</text><line x1=\"116.0\" y1=\"64.0\" x2=\"124.0\" y2=\"72.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"116.0\" y1=\"72.0\" x2=\"124.0\" y2=\"64.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><text x=\"110.1\" y=\"63.1\" font-size=\"15\" text-anchor=\"middle\" fill=\"#334155\" font-weight=\"600\">L</text><line x1=\"168.0\" y1=\"116.0\" x2=\"176.0\" y2=\"124.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"168.0\" y1=\"124.0\" x2=\"176.0\" y2=\"116.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><text x=\"172.0\" y=\"139.0\" font-size=\"15\" text-anchor=\"middle\" fill=\"#334155\" font-weight=\"600\">O</text></svg>",
+      "choices": [
+        {
+          "key": "a",
+          "text": "IK = JL",
+          "misconception": "Des diagonales de même longueur, c'est le rectangle. Dans un parallélogramme quelconque, [IK] et [JL] n'ont pas la même longueur."
+        },
+        {
+          "key": "b",
+          "text": "OI = OJ",
+          "misconception": "O est le milieu de chaque diagonale, mais [OI] et [OJ] sont les moitiés de deux diagonales différentes : elles ne sont égales que si les diagonales ont la même longueur."
+        },
+        {
+          "key": "c",
+          "text": "OI = OK",
+          "misconception": null
+        },
+        {
+          "key": "d",
+          "text": "IJ = JK",
+          "misconception": "[IJ] et [JK] sont deux côtés consécutifs. Ce sont les côtés opposés qui ont la même longueur ; deux côtés consécutifs égaux, c'est le losange."
+        }
+      ],
+      "answer": {
+        "value": "c"
+      },
+      "solution_steps": [
+        "Dans un parallélogramme, les diagonales se coupent en leur milieu : O est le milieu de [IK] et le milieu de [JL].",
+        "Donc OI = OK (et OJ = OL) : c'est l'égalité **c**.",
+        "Les autres égalités ne sont vraies que pour des parallélogrammes particuliers : diagonales de même longueur (rectangle), côtés consécutifs de même longueur (losange)."
+      ],
+      "hint": "Que sait-on du point O sur chacune des deux diagonales ?",
+      "estimated_duration_s": 45,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 4, classe de 5e, Espace et géométrie, Parallélogrammes, Objectifs d'apprentissage : « Connaitre les propriétés caractéristiques des côtés opposés et des diagonales. »"
+    },
+    {
+      "id": "EX-G049-M-01",
+      "skill_id": "G049",
+      "level": "maitrise",
+      "type": "numerique",
+      "statement": "GHJK et HLMJ sont deux parallélogrammes. La figure n'est pas en vraie grandeur.\n\nCombien mesure le côté [LM], en cm ?",
+      "image": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 344 240\" width=\"344\" height=\"240\" font-family=\"system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif\" role=\"img\"><title>Deux quadrilatères GHJK et HLMJ qui ont le côté [HJ] en commun, avec trois longueurs écrites</title><rect width=\"100%\" height=\"100%\" fill=\"#ffffff\"/><polygon points=\"29.0,211.0 133.0,211.0 185.0,55.0 81.0,55.0\" fill=\"none\" fill-opacity=\"0.6\" stroke=\"#334155\" stroke-width=\"2\" stroke-linejoin=\"round\"/><polygon points=\"133.0,211.0 263.0,211.0 315.0,55.0 185.0,55.0\" fill=\"none\" fill-opacity=\"0.6\" stroke=\"#334155\" stroke-width=\"2\" stroke-linejoin=\"round\"/><text x=\"49.0\" y=\"135.5\" font-size=\"13\" text-anchor=\"end\" fill=\"#334155\">4,4 cm</text><text x=\"81.0\" y=\"229.0\" font-size=\"13\" text-anchor=\"middle\" fill=\"#334155\">3,6 cm</text><text x=\"198.0\" y=\"229.0\" font-size=\"13\" text-anchor=\"middle\" fill=\"#334155\">4,9 cm</text><line x1=\"25.0\" y1=\"207.0\" x2=\"33.0\" y2=\"215.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"25.0\" y1=\"215.0\" x2=\"33.0\" y2=\"207.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><text x=\"16.8\" y=\"222.9\" font-size=\"15\" text-anchor=\"middle\" fill=\"#334155\" font-weight=\"600\">G</text><line x1=\"129.0\" y1=\"207.0\" x2=\"137.0\" y2=\"215.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"129.0\" y1=\"215.0\" x2=\"137.0\" y2=\"207.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><text x=\"127.3\" y=\"228.8\" font-size=\"15\" text-anchor=\"middle\" fill=\"#334155\" font-weight=\"600\">H</text><line x1=\"181.0\" y1=\"51.0\" x2=\"189.0\" y2=\"59.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"181.0\" y1=\"59.0\" x2=\"189.0\" y2=\"51.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><text x=\"188.0\" y=\"46.3\" font-size=\"15\" text-anchor=\"middle\" fill=\"#334155\" font-weight=\"600\">J</text><line x1=\"77.0\" y1=\"51.0\" x2=\"85.0\" y2=\"59.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"77.0\" y1=\"59.0\" x2=\"85.0\" y2=\"51.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><text x=\"70.6\" y=\"50.6\" font-size=\"15\" text-anchor=\"middle\" fill=\"#334155\" font-weight=\"600\">K</text><line x1=\"259.0\" y1=\"207.0\" x2=\"267.0\" y2=\"215.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"259.0\" y1=\"215.0\" x2=\"267.0\" y2=\"207.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><text x=\"273.8\" y=\"224.9\" font-size=\"15\" text-anchor=\"middle\" fill=\"#334155\" font-weight=\"600\">L</text><line x1=\"311.0\" y1=\"51.0\" x2=\"319.0\" y2=\"59.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"311.0\" y1=\"59.0\" x2=\"319.0\" y2=\"51.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><text x=\"327.4\" y=\"53.4\" font-size=\"15\" text-anchor=\"middle\" fill=\"#334155\" font-weight=\"600\">M</text></svg>",
+      "answer": {
+        "value": 4.4,
+        "unit": "cm",
+        "accepted": [
+          "4,4 cm",
+          "4.4 cm"
+        ]
+      },
+      "solution_steps": [
+        "GHJK est un parallélogramme : ses côtés opposés [GK] et [HJ] ont la même longueur, donc HJ = GK = 4,4 cm.",
+        "HLMJ est un parallélogramme : ses côtés opposés [HJ] et [LM] ont la même longueur, donc LM = HJ = 4,4 cm.",
+        "Le côté [LM] mesure **4,4 cm**. Le côté [HJ], commun aux deux parallélogrammes, sert de relais.",
+        "Pièges : 4,9 cm est la longueur de [HL], un côté consécutif à [LM] ; 3,6 cm est celle de [GH], qui n'est pas un côté de HLMJ."
+      ],
+      "hint": "Passe par le côté [HJ], commun aux deux parallélogrammes.",
+      "estimated_duration_s": 70,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 4, classe de 5e, Espace et géométrie, Parallélogrammes, Objectifs d'apprentissage : « Connaitre les propriétés caractéristiques des côtés opposés et des diagonales. »"
+    },
+    {
+      "id": "EX-G049-M-02",
+      "skill_id": "G049",
+      "level": "maitrise",
+      "type": "qcm",
+      "statement": "Dans un parallélogramme, deux angles opposés mesurent 104° à eux deux.\n\nCombien mesure chacun des deux autres angles ?",
+      "image": null,
+      "choices": [
+        {
+          "key": "a",
+          "text": "128°",
+          "misconception": null
+        },
+        {
+          "key": "b",
+          "text": "52°",
+          "misconception": "52° est la mesure de chacun des deux angles opposés de l'énoncé (104° ÷ 2). Les deux autres angles leur sont supplémentaires."
+        },
+        {
+          "key": "c",
+          "text": "76°",
+          "misconception": "C'est 180° − 104° : l'élève prend 104° pour un seul angle. Or 104° est la somme de deux angles."
+        },
+        {
+          "key": "d",
+          "text": "104°",
+          "misconception": "L'élève recopie la donnée : 104° est la somme de deux angles, pas la mesure d'un angle."
+        }
+      ],
+      "answer": {
+        "value": "a"
+      },
+      "solution_steps": [
+        "Dans un parallélogramme, les angles opposés sont égaux : chacun des deux angles de l'énoncé mesure 104° ÷ 2 = 52°.",
+        "Deux angles consécutifs sont supplémentaires : chacun des deux autres angles mesure 180° − 52° = **128°**, réponse **a**.",
+        "Vérification : les deux autres angles sont opposés, donc égaux, et 52° + 128° = 180° pour deux angles consécutifs."
+      ],
+      "hint": "Commence par trouver la mesure d'un seul des deux angles opposés.",
+      "estimated_duration_s": 70,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 4, classe de 5e, Espace et géométrie, Parallélogrammes, Objectifs d'apprentissage : « Définir le parallélogramme. »"
+    },
+    {
       "id": "EX-G050-D-01",
       "skill_id": "G050",
       "level": "decouverte",
@@ -36328,6 +36702,186 @@
       "programme_ref": "Cycle 4, classe de 5e, Espace et géométrie, Triangles, Objectifs d'apprentissage : « Connaitre la somme des angles d'un triangle et savoir la démontrer. »"
     },
     {
+      "id": "EX-G052-D-01",
+      "skill_id": "G052",
+      "level": "decouverte",
+      "type": "numerique",
+      "statement": "Pour construire le triangle KLN, on connaît $\\widehat{LKN}$ = 48° et $\\widehat{KLN}$ = 67°.\n\nCombien mesure l'angle $\\widehat{KNL}$, en degrés ?",
+      "image": null,
+      "answer": {
+        "value": 65,
+        "unit": "°",
+        "accepted": [
+          "65°",
+          "65 °",
+          "65 degrés"
+        ]
+      },
+      "solution_steps": [
+        "Dans un triangle, la somme des trois angles vaut 180°.",
+        "$\\widehat{KNL}$ = 180° − (48° + 67°) = 180° − 115° = **65°**.",
+        "On calcule ce troisième angle avant de construire : il permet de vérifier la figure, et de savoir si la construction est possible.",
+        "Piège : 115° est la somme des deux angles donnés, pas le troisième angle."
+      ],
+      "hint": "Que vaut la somme des trois angles d'un triangle ?",
+      "estimated_duration_s": 45,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 4, classe de 5e, Espace et géométrie, Triangles, Objectifs d'apprentissage : « Construire des triangles à partir de données partielles. »"
+    },
+    {
+      "id": "EX-G052-D-02",
+      "skill_id": "G052",
+      "level": "decouverte",
+      "type": "vrai_faux",
+      "statement": "Vrai ou faux : on peut construire un triangle qui a un angle de 112° et un angle de 71°.",
+      "image": null,
+      "answer": {
+        "value": false
+      },
+      "solution_steps": [
+        "Dans un triangle, la somme des trois angles vaut 180°.",
+        "112° + 71° = 183° : c'est déjà plus que 180°, il ne reste rien pour le troisième angle.",
+        "Si l'on essaie de le construire, les deux demi-droites tracées aux extrémités d'un côté ne se rencontrent pas. C'est **faux** : ce triangle est impossible."
+      ],
+      "hint": "Additionne les deux angles et compare le résultat à 180°.",
+      "estimated_duration_s": 35,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 4, classe de 5e, Espace et géométrie, Triangles, Objectifs d'apprentissage : « Construire des triangles à partir de données partielles. »"
+    },
+    {
+      "id": "EX-G052-E-01",
+      "skill_id": "G052",
+      "level": "entrainement",
+      "type": "qcm",
+      "statement": "On veut construire le triangle RST avec RS = 4 cm, RT = 3 cm et $\\widehat{SRT}$ = 50°.\n\nQuel programme de construction convient ?",
+      "image": null,
+      "choices": [
+        {
+          "key": "a",
+          "text": "Tracer [RS] de 4 cm. Tracer une demi-droite d'origine S qui fait un angle de 50° avec [SR]. Placer T sur cette demi-droite, à 3 cm de S.",
+          "misconception": "L'angle de 50° est placé au sommet S. Or $\\widehat{SRT}$ a son sommet en R, la lettre du milieu."
+        },
+        {
+          "key": "b",
+          "text": "Tracer [RS] de 4 cm. Tracer une demi-droite d'origine R qui fait un angle de 50° avec [RS]. Placer T sur cette demi-droite, à 3 cm de R.",
+          "misconception": null
+        },
+        {
+          "key": "c",
+          "text": "Tracer [RT] de 4 cm. Tracer une demi-droite d'origine R qui fait un angle de 50° avec [RT]. Placer S sur cette demi-droite, à 3 cm de R.",
+          "misconception": "Les longueurs sont inversées : ce programme donne RT = 4 cm et RS = 3 cm."
+        },
+        {
+          "key": "d",
+          "text": "Tracer [RS] de 4 cm. Tracer une demi-droite d'origine R qui fait un angle de 50° avec [RS]. Placer T sur cette demi-droite, à 3 cm de S.",
+          "misconception": "T doit être à 3 cm de R, puisque RT = 3 cm, pas à 3 cm de S."
+        }
+      ],
+      "answer": {
+        "value": "b"
+      },
+      "solution_steps": [
+        "Le sommet de l'angle $\\widehat{SRT}$ est la lettre du milieu, R : l'angle de 50° se trace en R, entre [RS] et [RT].",
+        "On trace d'abord un côté connu, [RS] de 4 cm, puis, au rapporteur, la demi-droite d'origine R qui fait un angle de 50° avec [RS].",
+        "T est sur cette demi-droite, à 3 cm de R puisque RT = 3 cm : c'est le programme **b**."
+      ],
+      "hint": "Quel est le sommet de l'angle $\\widehat{SRT}$ ? De quel point T doit-il être à 3 cm ?",
+      "estimated_duration_s": 70,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 4, classe de 5e, Espace et géométrie, Triangles, Objectifs d'apprentissage : « Construire des triangles à partir de données partielles. »"
+    },
+    {
+      "id": "EX-G052-E-02",
+      "skill_id": "G052",
+      "level": "entrainement",
+      "type": "qcm",
+      "statement": "Remets dans l'ordre la construction du triangle GHI : GH = 6,5 cm, GI = 4 cm, HI = 5 cm.\n\n(1) Placer I au croisement des deux arcs.\n(2) Tracer [GH].\n(3) Tracer deux arcs : centre G, rayon 4 cm ; centre H, rayon 5 cm.",
+      "image": null,
+      "choices": [
+        {
+          "key": "a",
+          "text": "2, 3, 1",
+          "misconception": null
+        },
+        {
+          "key": "b",
+          "text": "2, 1, 3",
+          "misconception": "On ne peut pas placer I avant d'avoir tracé les arcs : c'est leur croisement qui donne sa place."
+        },
+        {
+          "key": "c",
+          "text": "3, 2, 1",
+          "misconception": "Les arcs ont pour centres G et H : on ne peut pas les tracer avant d'avoir placé ces points avec le segment [GH]."
+        },
+        {
+          "key": "d",
+          "text": "1, 3, 2",
+          "misconception": "On ne peut pas commencer par placer I : sa place dépend de G et de H, qui ne sont pas encore tracés."
+        }
+      ],
+      "answer": {
+        "value": "a"
+      },
+      "solution_steps": [
+        "On commence par un côté : (2), le segment [GH] de 6,5 cm. Il place les points G et H.",
+        "I est à 4 cm de G et à 5 cm de H : il est sur l'arc de centre G de rayon 4 cm et sur l'arc de centre H de rayon 5 cm. On trace ces arcs : (3).",
+        "I est au croisement des deux arcs : (1). L'ordre est **2, 3, 1**, réponse **a**."
+      ],
+      "hint": "Les arcs ont pour centres G et H : qu'est-ce qui doit être tracé avant eux ?",
+      "estimated_duration_s": 60,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 4, classe de 5e, Espace et géométrie, Triangles, Objectifs d'apprentissage : « Construire des triangles à partir de données partielles. »"
+    },
+    {
+      "id": "EX-G052-M-01",
+      "skill_id": "G052",
+      "level": "maitrise",
+      "type": "numerique",
+      "statement": "Combien de ces triangles ont un côté de 5 cm avec, à ses deux extrémités, des angles de 35° et de 30° ?\n\nLes figures ne sont pas en vraie grandeur.",
+      "image": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 344 292\" width=\"344\" height=\"292\" font-family=\"system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif\" role=\"img\"><title>Quatre triangles numérotés de 1 à 4, avec des angles et une longueur écrits</title><rect width=\"100%\" height=\"100%\" fill=\"#ffffff\"/><line x1=\"172.0\" y1=\"16.0\" x2=\"172.0\" y2=\"276.0\" stroke=\"#334155\" stroke-width=\"2.0\" stroke-linecap=\"round\" stroke-dasharray=\"5 4\"/><line x1=\"16.0\" y1=\"146.0\" x2=\"328.0\" y2=\"146.0\" stroke=\"#334155\" stroke-width=\"2.0\" stroke-linecap=\"round\" stroke-dasharray=\"5 4\"/><polygon points=\"31.6,112.2 161.6,112.2 90.4,71.1\" fill=\"none\" fill-opacity=\"0.6\" stroke=\"#334155\" stroke-width=\"2\" stroke-linejoin=\"round\"/><path d=\"M55.6,112.2 A24.0,24.0 0 0 0 51.3,98.4\" fill=\"none\" stroke=\"#2563eb\" stroke-width=\"2\"/><text x=\"67.8\" y=\"105.8\" font-size=\"13\" text-anchor=\"middle\" fill=\"#2563eb\" font-weight=\"600\">35°</text><path d=\"M140.8,100.2 A24.0,24.0 0 0 0 137.6,112.2\" fill=\"none\" stroke=\"#2563eb\" stroke-width=\"2\"/><text x=\"124.9\" y=\"107.4\" font-size=\"13\" text-anchor=\"middle\" fill=\"#2563eb\" font-weight=\"600\">30°</text><text x=\"96.6\" y=\"132.8\" font-size=\"15\" text-anchor=\"middle\" fill=\"#334155\" font-weight=\"600\">5 cm</text><text x=\"25.1\" y=\"36.6\" font-size=\"15\" text-anchor=\"middle\" fill=\"#334155\" font-weight=\"600\">1</text><polygon points=\"192.8,117.4 260.4,117.4 293.2,47.1\" fill=\"none\" fill-opacity=\"0.6\" stroke=\"#334155\" stroke-width=\"2\" stroke-linejoin=\"round\"/><path d=\"M216.8,117.4 A24.0,24.0 0 0 0 212.5,103.6\" fill=\"none\" stroke=\"#2563eb\" stroke-width=\"2\"/><text x=\"229.0\" y=\"111.0\" font-size=\"13\" text-anchor=\"middle\" fill=\"#2563eb\" font-weight=\"600\">35°</text><path d=\"M273.5,60.9 A24.0,24.0 0 0 0 283.0,68.9\" fill=\"none\" stroke=\"#2563eb\" stroke-width=\"2\"/><text x=\"268.8\" y=\"81.2\" font-size=\"13\" text-anchor=\"middle\" fill=\"#2563eb\" font-weight=\"600\">30°</text><text x=\"226.6\" y=\"138.0\" font-size=\"15\" text-anchor=\"middle\" fill=\"#334155\" font-weight=\"600\">5 cm</text><text x=\"181.1\" y=\"36.6\" font-size=\"15\" text-anchor=\"middle\" fill=\"#334155\" font-weight=\"600\">2</text><polygon points=\"31.6,187.6 161.6,187.6 102.8,228.7\" fill=\"none\" fill-opacity=\"0.6\" stroke=\"#334155\" stroke-width=\"2\" stroke-linejoin=\"round\"/><path d=\"M55.6,187.6 A24.0,24.0 0 0 1 52.4,199.6\" fill=\"none\" stroke=\"#2563eb\" stroke-width=\"2\"/><text x=\"68.3\" y=\"202.4\" font-size=\"13\" text-anchor=\"middle\" fill=\"#2563eb\" font-weight=\"600\">30°</text><path d=\"M141.9,201.4 A24.0,24.0 0 0 1 137.6,187.6\" fill=\"none\" stroke=\"#2563eb\" stroke-width=\"2\"/><text x=\"125.4\" y=\"204.0\" font-size=\"13\" text-anchor=\"middle\" fill=\"#2563eb\" font-weight=\"600\">35°</text><text x=\"96.6\" y=\"178.3\" font-size=\"15\" text-anchor=\"middle\" fill=\"#334155\" font-weight=\"600\">5 cm</text><text x=\"25.1\" y=\"166.6\" font-size=\"15\" text-anchor=\"middle\" fill=\"#334155\" font-weight=\"600\">3</text><polygon points=\"192.8,257.8 322.8,257.8 251.6,216.7\" fill=\"none\" fill-opacity=\"0.6\" stroke=\"#334155\" stroke-width=\"2\" stroke-linejoin=\"round\"/><path d=\"M216.8,257.8 A24.0,24.0 0 0 0 212.5,244.0\" fill=\"none\" stroke=\"#2563eb\" stroke-width=\"2\"/><text x=\"229.0\" y=\"251.4\" font-size=\"13\" text-anchor=\"middle\" fill=\"#2563eb\" font-weight=\"600\">35°</text><path d=\"M302.0,245.8 A24.0,24.0 0 0 0 298.8,257.8\" fill=\"none\" stroke=\"#2563eb\" stroke-width=\"2\"/><text x=\"286.1\" y=\"253.0\" font-size=\"13\" text-anchor=\"middle\" fill=\"#2563eb\" font-weight=\"600\">30°</text><text x=\"201.9\" y=\"235.5\" font-size=\"15\" text-anchor=\"middle\" fill=\"#334155\" font-weight=\"600\">5 cm</text><text x=\"181.1\" y=\"166.6\" font-size=\"15\" text-anchor=\"middle\" fill=\"#334155\" font-weight=\"600\">4</text></svg>",
+      "answer": {
+        "value": 2,
+        "unit": null,
+        "accepted": [
+          "2 triangles",
+          "deux",
+          "deux triangles"
+        ]
+      },
+      "solution_steps": [
+        "Le côté de 5 cm doit avoir les angles de 35° et de 30° à ses **deux extrémités** : ce sont les deux angles qui touchent ce côté.",
+        "Triangle 1 : le côté de 5 cm va du sommet de 35° au sommet de 30°. Il convient.",
+        "Triangle 2 : l'angle de 30° est au sommet opposé au côté de 5 cm, pas à une de ses extrémités. Il ne convient pas.",
+        "Triangle 3 : c'est le triangle 1 après un demi-tour, la pointe en bas ; le côté de 5 cm a bien 30° et 35° à ses extrémités. Il convient : la position du triangle ne compte pas.",
+        "Triangle 4 : le côté de 5 cm relie le sommet de 35° au troisième sommet ; l'angle de 30° n'est pas à une de ses extrémités. Il ne convient pas.",
+        "**2** triangles conviennent, le 1 et le 3. Piège : écarter le 3 parce qu'il est tourné."
+      ],
+      "hint": "Pour chaque triangle, regarde les deux extrémités du côté de 5 cm : quels angles y sont marqués ?",
+      "estimated_duration_s": 90,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 4, classe de 5e, Espace et géométrie, Triangles, Objectifs d'apprentissage : « Construire des triangles à partir de données partielles. »"
+    },
+    {
+      "id": "EX-G052-M-02",
+      "skill_id": "G052",
+      "level": "maitrise",
+      "type": "vrai_faux",
+      "statement": "Tom veut un triangle avec un côté de 7 cm et, aux extrémités de ce côté, des angles de 96° et de 84°. Il dit : « C'est impossible. »\n\nA-t-il raison ?",
+      "image": null,
+      "answer": {
+        "value": true
+      },
+      "solution_steps": [
+        "Les deux angles donnés ont pour somme 96° + 84° = 180°.",
+        "Le troisième angle mesurerait 180° − 180° = 0° : il n'y a pas de triangle. Les demi-droites tracées aux extrémités du côté de 7 cm ne se rencontrent pas.",
+        "Pour qu'un triangle existe, les deux angles qui touchent le côté doivent avoir une somme **strictement inférieure** à 180°. Tom a **raison** : c'est vrai."
+      ],
+      "hint": "Calcule la somme des deux angles : que resterait-il pour le troisième ?",
+      "estimated_duration_s": 50,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 4, classe de 5e, Espace et géométrie, Triangles, Objectifs d'apprentissage : « Construire des triangles à partir de données partielles. »"
+    },
+    {
       "id": "EX-G053-D-01",
       "skill_id": "G053",
       "level": "decouverte",
@@ -36717,6 +37271,392 @@
       "estimated_duration_s": 75,
       "review_status": "relu_agent",
       "programme_ref": "Cycle 4, classe de 5e, Espace et géométrie, Triangles : « Utiliser ces propriétés dans le cas de triangles particuliers. »"
+    },
+    {
+      "id": "EX-G055-D-01",
+      "skill_id": "G055",
+      "level": "decouverte",
+      "type": "qcm",
+      "statement": "Le codage permet de prouver que DEFG est un parallélogramme.\n\nQuelle propriété utilise-t-on ?",
+      "image": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 292 240\" width=\"292\" height=\"240\" font-family=\"system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif\" role=\"img\"><title>Quadrilatère DEFG et ses diagonales, qui se coupent en I, avec un codage</title><rect width=\"100%\" height=\"100%\" fill=\"#ffffff\"/><polygon points=\"42.0,172.0 146.0,198.0 250.0,68.0 146.0,42.0\" fill=\"none\" fill-opacity=\"0.6\" stroke=\"#334155\" stroke-width=\"2\" stroke-linejoin=\"round\"/><line x1=\"42.0\" y1=\"172.0\" x2=\"250.0\" y2=\"68.0\" stroke=\"#334155\" stroke-width=\"2.0\" stroke-linecap=\"round\"/><line x1=\"146.0\" y1=\"198.0\" x2=\"146.0\" y2=\"42.0\" stroke=\"#334155\" stroke-width=\"2.0\" stroke-linecap=\"round\"/><line x1=\"93.1\" y1=\"139.7\" x2=\"94.9\" y2=\"152.3\" stroke=\"#2563eb\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"197.1\" y1=\"87.7\" x2=\"198.9\" y2=\"100.3\" stroke=\"#2563eb\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"140.0\" y1=\"159.5\" x2=\"152.0\" y2=\"163.5\" stroke=\"#2563eb\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"140.0\" y1=\"154.5\" x2=\"152.0\" y2=\"158.5\" stroke=\"#2563eb\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"140.0\" y1=\"81.5\" x2=\"152.0\" y2=\"85.5\" stroke=\"#2563eb\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"140.0\" y1=\"76.5\" x2=\"152.0\" y2=\"80.5\" stroke=\"#2563eb\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"38.0\" y1=\"168.0\" x2=\"46.0\" y2=\"176.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"38.0\" y1=\"176.0\" x2=\"46.0\" y2=\"168.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><text x=\"29.5\" y=\"183.3\" font-size=\"15\" text-anchor=\"middle\" fill=\"#334155\" font-weight=\"600\">D</text><line x1=\"142.0\" y1=\"194.0\" x2=\"150.0\" y2=\"202.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"142.0\" y1=\"202.0\" x2=\"150.0\" y2=\"194.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><text x=\"146.0\" y=\"217.0\" font-size=\"15\" text-anchor=\"middle\" fill=\"#334155\" font-weight=\"600\">E</text><line x1=\"246.0\" y1=\"64.0\" x2=\"254.0\" y2=\"72.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"246.0\" y1=\"72.0\" x2=\"254.0\" y2=\"64.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><text x=\"262.5\" y=\"66.7\" font-size=\"15\" text-anchor=\"middle\" fill=\"#334155\" font-weight=\"600\">F</text><line x1=\"142.0\" y1=\"38.0\" x2=\"150.0\" y2=\"46.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"142.0\" y1=\"46.0\" x2=\"150.0\" y2=\"38.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><text x=\"146.0\" y=\"33.0\" font-size=\"15\" text-anchor=\"middle\" fill=\"#334155\" font-weight=\"600\">G</text><line x1=\"142.0\" y1=\"116.0\" x2=\"150.0\" y2=\"124.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"142.0\" y1=\"124.0\" x2=\"150.0\" y2=\"116.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><text x=\"160.0\" y=\"125.0\" font-size=\"15\" text-anchor=\"middle\" fill=\"#334155\" font-weight=\"600\">I</text></svg>",
+      "choices": [
+        {
+          "key": "a",
+          "text": "Ses côtés opposés ont la même longueur.",
+          "misconception": "Aucun côté n'est codé : les traits sont sur les moitiés des diagonales, [DI], [IF], [EI] et [IG]."
+        },
+        {
+          "key": "b",
+          "text": "Ses diagonales se coupent en leur milieu.",
+          "misconception": null
+        },
+        {
+          "key": "c",
+          "text": "Ses diagonales ont la même longueur.",
+          "misconception": "Le codage dit DI = IF et EI = IG, pas DF = EG. Et des diagonales de même longueur ne suffisent pas à faire un parallélogramme."
+        },
+        {
+          "key": "d",
+          "text": "Ses côtés opposés sont parallèles.",
+          "misconception": "Rien ne dit que des côtés sont parallèles : on croit le voir, mais l'apparence n'est pas une preuve."
+        }
+      ],
+      "answer": {
+        "value": "b"
+      },
+      "solution_steps": [
+        "Lis le codage : un trait sur [DI] et sur [IF], donc I est le milieu de [DF] ; deux traits sur [EI] et sur [IG], donc I est le milieu de [EG].",
+        "Les diagonales [DF] et [EG] ont le même milieu I.",
+        "Or un quadrilatère dont les diagonales se coupent en leur milieu est un parallélogramme. Donc DEFG est un parallélogramme : propriété **b**."
+      ],
+      "hint": "Sur quels segments sont les traits du codage ? Que disent-ils du point I ?",
+      "estimated_duration_s": 45,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 4, classe de 5e, Espace et géométrie, Parallélogrammes, Objectifs d'apprentissage : « Utiliser une propriété caractéristique sur les diagonales ou les côtés pour les construire ou donner la nature du quadrilatère. »"
+    },
+    {
+      "id": "EX-G055-D-02",
+      "skill_id": "G055",
+      "level": "decouverte",
+      "type": "vrai_faux",
+      "statement": "Dans le quadrilatère KLNP, les droites (KL) et (PN) sont parallèles.\n\nVrai ou faux : KLNP est forcément un parallélogramme.",
+      "image": null,
+      "answer": {
+        "value": false
+      },
+      "solution_steps": [
+        "Un parallélogramme a ses côtés opposés parallèles **deux à deux** : (KL) et (PN), mais aussi (LN) et (KP).",
+        "Ici, une seule paire de côtés opposés est parallèle. Un trapèze a exactement cette propriété sans être un parallélogramme.",
+        "C'est donc **faux** : KLNP n'est pas forcément un parallélogramme."
+      ],
+      "hint": "Combien de paires de côtés opposés parallèles faut-il à un parallélogramme ? Combien l'énoncé en donne-t-il ?",
+      "estimated_duration_s": 40,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 4, classe de 5e, Espace et géométrie, Parallélogrammes, Objectifs d'apprentissage : « Utiliser une propriété caractéristique sur les diagonales ou les côtés pour les construire ou donner la nature du quadrilatère. »"
+    },
+    {
+      "id": "EX-G055-E-01",
+      "skill_id": "G055",
+      "level": "entrainement",
+      "type": "texte",
+      "statement": "Le quadrilatère RSTU est non croisé.\n\nLis le codage : quelle est la nature de RSTU ?",
+      "image": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 318 240\" width=\"318\" height=\"240\" font-family=\"system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif\" role=\"img\"><title>Quadrilatère RSTU avec un codage des côtés</title><rect width=\"100%\" height=\"100%\" fill=\"#ffffff\"/><polygon points=\"42.0,198.0 224.0,198.0 276.0,68.0 94.0,68.0\" fill=\"none\" fill-opacity=\"0.6\" stroke=\"#334155\" stroke-width=\"2\" stroke-linejoin=\"round\"/><line x1=\"135.0\" y1=\"192.0\" x2=\"131.0\" y2=\"204.0\" stroke=\"#2563eb\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"183.0\" y1=\"74.0\" x2=\"187.0\" y2=\"62.0\" stroke=\"#2563eb\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"244.2\" y1=\"131.2\" x2=\"253.9\" y2=\"139.4\" stroke=\"#2563eb\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"246.1\" y1=\"126.6\" x2=\"255.8\" y2=\"134.8\" stroke=\"#2563eb\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"73.8\" y1=\"134.8\" x2=\"64.1\" y2=\"126.6\" stroke=\"#2563eb\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"71.9\" y1=\"139.4\" x2=\"62.2\" y2=\"131.2\" stroke=\"#2563eb\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"38.0\" y1=\"194.0\" x2=\"46.0\" y2=\"202.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"38.0\" y1=\"202.0\" x2=\"46.0\" y2=\"194.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><text x=\"29.8\" y=\"209.8\" font-size=\"15\" text-anchor=\"middle\" fill=\"#334155\" font-weight=\"600\">R</text><line x1=\"220.0\" y1=\"194.0\" x2=\"228.0\" y2=\"202.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"220.0\" y1=\"202.0\" x2=\"228.0\" y2=\"194.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><text x=\"233.9\" y=\"212.9\" font-size=\"15\" text-anchor=\"middle\" fill=\"#334155\" font-weight=\"600\">S</text><line x1=\"272.0\" y1=\"64.0\" x2=\"280.0\" y2=\"72.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"272.0\" y1=\"72.0\" x2=\"280.0\" y2=\"64.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><text x=\"288.2\" y=\"66.2\" font-size=\"15\" text-anchor=\"middle\" fill=\"#334155\" font-weight=\"600\">T</text><line x1=\"90.0\" y1=\"64.0\" x2=\"98.0\" y2=\"72.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"90.0\" y1=\"72.0\" x2=\"98.0\" y2=\"64.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><text x=\"84.1\" y=\"63.1\" font-size=\"15\" text-anchor=\"middle\" fill=\"#334155\" font-weight=\"600\">U</text></svg>",
+      "answer": {
+        "value": "parallélogramme",
+        "unit": null,
+        "accepted": [
+          "un parallélogramme",
+          "c'est un parallélogramme",
+          "RSTU est un parallélogramme",
+          "le parallélogramme",
+          "paralélogramme",
+          "un paralélogramme",
+          "parallélograme",
+          "un parallélograme",
+          "paralélograme",
+          "parrallélogramme"
+        ]
+      },
+      "solution_steps": [
+        "Lis le codage : un trait sur [RS] et sur [TU], deux traits sur [ST] et sur [UR]. Donc RS = TU et ST = UR.",
+        "RSTU a ses côtés opposés de même longueur deux à deux, et il est non croisé.",
+        "Or un quadrilatère non croisé dont les côtés opposés ont la même longueur deux à deux est un parallélogramme. RSTU est un **parallélogramme**.",
+        "On ne peut pas dire plus : aucun angle droit n'est codé et deux côtés consécutifs n'ont pas le même codage. Rien ne prouve que RSTU est un rectangle ou un losange : sa nature prouvée est « parallélogramme »."
+      ],
+      "hint": "Repère les côtés qui portent le même codage : sont-ils opposés ou consécutifs ?",
+      "estimated_duration_s": 50,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 4, classe de 5e, Espace et géométrie, Parallélogrammes, Objectifs d'apprentissage : « Utiliser une propriété caractéristique sur les diagonales ou les côtés pour les construire ou donner la nature du quadrilatère. »"
+    },
+    {
+      "id": "EX-G055-E-02",
+      "skill_id": "G055",
+      "level": "entrainement",
+      "type": "qcm",
+      "statement": "Dans quel cas un quadrilatère non croisé est-il **forcément** un parallélogramme ?",
+      "image": null,
+      "choices": [
+        {
+          "key": "a",
+          "text": "Il a deux côtés opposés parallèles.",
+          "misconception": "C'est un trapèze : il faut que les deux paires de côtés opposés soient parallèles, ou que les côtés parallèles aient aussi la même longueur."
+        },
+        {
+          "key": "b",
+          "text": "Ses diagonales ont la même longueur.",
+          "misconception": "Un trapèze dont les côtés non parallèles ont la même longueur a des diagonales de même longueur sans être un parallélogramme."
+        },
+        {
+          "key": "c",
+          "text": "Il a deux côtés opposés parallèles et de même longueur.",
+          "misconception": null
+        },
+        {
+          "key": "d",
+          "text": "Il a deux paires de côtés consécutifs de même longueur.",
+          "misconception": "Deux côtés de 3 cm qui se suivent, puis deux côtés de 5 cm, donnent la forme d'un cerf-volant. Ce sont les côtés opposés qui doivent avoir la même longueur."
+        }
+      ],
+      "answer": {
+        "value": "c"
+      },
+      "solution_steps": [
+        "Une seule paire de côtés parallèles ne suffit pas : c'est le cas du trapèze. Des diagonales de même longueur ne suffisent pas non plus.",
+        "Si deux côtés opposés sont à la fois parallèles et de même longueur, et que le quadrilatère est non croisé, c'est un parallélogramme : c'est une propriété caractéristique.",
+        "Réponse **c**. Les autres propriétés caractéristiques : côtés opposés parallèles deux à deux ; côtés opposés de même longueur deux à deux ; diagonales de même milieu."
+      ],
+      "hint": "Une seule information sur une paire de côtés ne suffit pas toujours : laquelle de ces propositions en donne deux ?",
+      "estimated_duration_s": 50,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 4, classe de 5e, Espace et géométrie, Parallélogrammes, Objectifs d'apprentissage : « Utiliser une propriété caractéristique sur les diagonales ou les côtés pour les construire ou donner la nature du quadrilatère. »"
+    },
+    {
+      "id": "EX-G055-M-01",
+      "skill_id": "G055",
+      "level": "maitrise",
+      "type": "qcm",
+      "statement": "Lis le codage.\n\nQue prouve le codage sur le quadrilatère KLPN ?",
+      "image": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 318 240\" width=\"318\" height=\"240\" font-family=\"system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif\" role=\"img\"><title>Quadrilatère KLPN, les segments [LN] et [KP] qui se coupent en I, avec un codage</title><rect width=\"100%\" height=\"100%\" fill=\"#ffffff\"/><polygon points=\"120.0,42.0 42.0,120.0 198.0,198.0 276.0,120.0\" fill=\"none\" fill-opacity=\"0.6\" stroke=\"#334155\" stroke-width=\"2\" stroke-linejoin=\"round\"/><line x1=\"42.0\" y1=\"120.0\" x2=\"276.0\" y2=\"120.0\" stroke=\"#334155\" stroke-width=\"2.0\" stroke-linecap=\"round\"/><line x1=\"120.0\" y1=\"42.0\" x2=\"198.0\" y2=\"198.0\" stroke=\"#334155\" stroke-width=\"2.0\" stroke-linecap=\"round\"/><line x1=\"102.5\" y1=\"114.0\" x2=\"98.5\" y2=\"126.0\" stroke=\"#2563eb\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"219.5\" y1=\"114.0\" x2=\"215.5\" y2=\"126.0\" stroke=\"#2563eb\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"144.6\" y1=\"77.9\" x2=\"132.1\" y2=\"79.7\" stroke=\"#2563eb\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"146.9\" y1=\"82.3\" x2=\"134.4\" y2=\"84.1\" stroke=\"#2563eb\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"183.6\" y1=\"155.9\" x2=\"171.1\" y2=\"157.7\" stroke=\"#2563eb\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"185.9\" y1=\"160.3\" x2=\"173.4\" y2=\"162.1\" stroke=\"#2563eb\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"116.0\" y1=\"38.0\" x2=\"124.0\" y2=\"46.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"116.0\" y1=\"46.0\" x2=\"124.0\" y2=\"38.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><text x=\"113.7\" y=\"34.5\" font-size=\"15\" text-anchor=\"middle\" fill=\"#334155\" font-weight=\"600\">K</text><line x1=\"38.0\" y1=\"116.0\" x2=\"46.0\" y2=\"124.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"38.0\" y1=\"124.0\" x2=\"46.0\" y2=\"116.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><text x=\"28.0\" y=\"125.0\" font-size=\"15\" text-anchor=\"middle\" fill=\"#334155\" font-weight=\"600\">L</text><line x1=\"272.0\" y1=\"116.0\" x2=\"280.0\" y2=\"124.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"272.0\" y1=\"124.0\" x2=\"280.0\" y2=\"116.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><text x=\"290.0\" y=\"125.0\" font-size=\"15\" text-anchor=\"middle\" fill=\"#334155\" font-weight=\"600\">N</text><line x1=\"155.0\" y1=\"116.0\" x2=\"163.0\" y2=\"124.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"155.0\" y1=\"124.0\" x2=\"163.0\" y2=\"116.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><text x=\"168.8\" y=\"115.2\" font-size=\"15\" text-anchor=\"middle\" fill=\"#334155\" font-weight=\"600\">I</text><line x1=\"194.0\" y1=\"194.0\" x2=\"202.0\" y2=\"202.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"194.0\" y1=\"202.0\" x2=\"202.0\" y2=\"194.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><text x=\"204.3\" y=\"215.5\" font-size=\"15\" text-anchor=\"middle\" fill=\"#334155\" font-weight=\"600\">P</text></svg>",
+      "choices": [
+        {
+          "key": "a",
+          "text": "C'est un losange, car ses diagonales se coupent en leur milieu.",
+          "misconception": "Des diagonales qui se coupent en leur milieu prouvent un parallélogramme, pas un losange : il faudrait en plus des diagonales perpendiculaires ou deux côtés consécutifs égaux."
+        },
+        {
+          "key": "b",
+          "text": "C'est un parallélogramme, car ses diagonales ont la même longueur.",
+          "misconception": "Le codage ne dit pas KP = LN : les moitiés de [LN] ont un trait, celles de [KP] deux. Et des diagonales de même longueur ne suffisent pas à prouver un parallélogramme."
+        },
+        {
+          "key": "c",
+          "text": "On ne peut rien dire sans mesurer.",
+          "misconception": "La mesure n'est pas une preuve, et elle n'est pas nécessaire : le codage suffit."
+        },
+        {
+          "key": "d",
+          "text": "C'est un parallélogramme, car ses diagonales [KP] et [LN] ont le même milieu.",
+          "misconception": null
+        }
+      ],
+      "answer": {
+        "value": "d"
+      },
+      "solution_steps": [
+        "Lis le codage : I est le milieu de [LN] (un trait de chaque côté) et le milieu de [KP] (deux traits de chaque côté).",
+        "Dans le quadrilatère KLPN, on lit les sommets dans l'ordre K, L, P, N : ses diagonales sont [KP] et [LN].",
+        "Les diagonales ont le même milieu I. Or un quadrilatère dont les diagonales ont le même milieu est un parallélogramme. Donc KLPN est un **parallélogramme** : réponse **d**."
+      ],
+      "hint": "Quelles sont les diagonales de KLPN ? Que dit le codage de leur milieu ?",
+      "estimated_duration_s": 70,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 4, classe de 5e, Espace et géométrie, Parallélogrammes, Automatismes : « Reconnaitre en justifiant un quadrilatère, un parallélogramme, un rectangle, un losange, un carré, un trapèze, un pentagone, un hexagone dans des figures complexes. »"
+    },
+    {
+      "id": "EX-G055-M-02",
+      "skill_id": "G055",
+      "level": "maitrise",
+      "type": "vrai_faux",
+      "statement": "Juge cette preuve.\n\n« TUVW est non croisé, (TU) et (WV) sont parallèles, et TU = WV. Or un quadrilatère non croisé qui a deux côtés opposés parallèles et de même longueur est un parallélogramme. Donc TUVW est un parallélogramme. »\n\nVrai ou faux : cette preuve est valable.",
+      "image": null,
+      "answer": {
+        "value": true
+      },
+      "solution_steps": [
+        "Les données sont connues : TUVW est non croisé, (TU) et (WV) sont parallèles, TU = WV.",
+        "[TU] et [WV] sont bien deux côtés opposés de TUVW : ils n'ont aucun sommet commun.",
+        "La propriété citée est une propriété caractéristique du parallélogramme, et les données la remplissent toutes. La preuve est **valable** : c'est vrai.",
+        "Une seule paire de côtés suffit ici parce que ces côtés sont **à la fois** parallèles et de même longueur."
+      ],
+      "hint": "Vérifie trois choses : les données sont-elles connues ? La propriété est-elle vraie ? S'applique-t-elle à deux côtés opposés ?",
+      "estimated_duration_s": 80,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 4, classe de 5e, Espace et géométrie, Parallélogrammes, Objectifs d'apprentissage : « Utiliser une propriété caractéristique sur les diagonales ou les côtés pour les construire ou donner la nature du quadrilatère. »"
+    },
+    {
+      "id": "EX-G056-D-01",
+      "skill_id": "G056",
+      "level": "decouverte",
+      "type": "texte",
+      "statement": "JKLM est un parallélogramme.\n\nLis le codage : quelle est la nature exacte de JKLM ?",
+      "image": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 266 214\" width=\"266\" height=\"214\" font-family=\"system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif\" role=\"img\"><title>Quadrilatère JKLM avec un codage</title><rect width=\"100%\" height=\"100%\" fill=\"#ffffff\"/><polygon points=\"42.0,172.0 224.0,172.0 224.0,68.0 42.0,68.0\" fill=\"none\" fill-opacity=\"0.6\" stroke=\"#334155\" stroke-width=\"2\" stroke-linejoin=\"round\"/><path d=\"M42.0,161.0 L53.0,161.0 L53.0,172.0\" fill=\"none\" stroke=\"#334155\" stroke-width=\"1.6\"/><line x1=\"38.0\" y1=\"168.0\" x2=\"46.0\" y2=\"176.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"38.0\" y1=\"176.0\" x2=\"46.0\" y2=\"168.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><text x=\"29.8\" y=\"183.9\" font-size=\"15\" text-anchor=\"middle\" fill=\"#334155\" font-weight=\"600\">J</text><line x1=\"220.0\" y1=\"168.0\" x2=\"228.0\" y2=\"176.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"220.0\" y1=\"176.0\" x2=\"228.0\" y2=\"168.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><text x=\"236.2\" y=\"183.9\" font-size=\"15\" text-anchor=\"middle\" fill=\"#334155\" font-weight=\"600\">K</text><line x1=\"220.0\" y1=\"64.0\" x2=\"228.0\" y2=\"72.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"220.0\" y1=\"72.0\" x2=\"228.0\" y2=\"64.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><text x=\"236.2\" y=\"66.1\" font-size=\"15\" text-anchor=\"middle\" fill=\"#334155\" font-weight=\"600\">L</text><line x1=\"38.0\" y1=\"64.0\" x2=\"46.0\" y2=\"72.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"38.0\" y1=\"72.0\" x2=\"46.0\" y2=\"64.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><text x=\"29.8\" y=\"66.1\" font-size=\"15\" text-anchor=\"middle\" fill=\"#334155\" font-weight=\"600\">M</text></svg>",
+      "answer": {
+        "value": "rectangle",
+        "unit": null,
+        "accepted": [
+          "un rectangle",
+          "c'est un rectangle",
+          "JKLM est un rectangle",
+          "le rectangle"
+        ]
+      },
+      "solution_steps": [
+        "Le codage montre un angle droit en J.",
+        "Or un parallélogramme qui a un angle droit est un rectangle : c'est sa définition. Ses quatre angles sont alors droits.",
+        "JKLM est un **rectangle**. On ne peut pas dire « carré » : aucun codage ne dit que deux côtés consécutifs ont la même longueur, et la mesure n'est pas une preuve."
+      ],
+      "hint": "Que devient un parallélogramme qui a un angle droit ?",
+      "estimated_duration_s": 40,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 4, classe de 5e, Espace et géométrie, Parallélogrammes, Objectifs d'apprentissage : « Définir les parallélogrammes particuliers (rectangle, losange, carré). »"
+    },
+    {
+      "id": "EX-G056-D-02",
+      "skill_id": "G056",
+      "level": "decouverte",
+      "type": "numerique",
+      "statement": "PQRS est un rectangle de centre O, et PR = 9,6 cm.\n\nCombien mesure le segment [OQ], en cm ?",
+      "image": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 292 214\" width=\"292\" height=\"214\" font-family=\"system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif\" role=\"img\"><title>Quadrilatère PQRS et ses diagonales, qui se coupent en O</title><rect width=\"100%\" height=\"100%\" fill=\"#ffffff\"/><polygon points=\"42.0,42.0 250.0,42.0 250.0,172.0 42.0,172.0\" fill=\"none\" fill-opacity=\"0.6\" stroke=\"#334155\" stroke-width=\"2\" stroke-linejoin=\"round\"/><line x1=\"42.0\" y1=\"42.0\" x2=\"250.0\" y2=\"172.0\" stroke=\"#334155\" stroke-width=\"2.0\" stroke-linecap=\"round\"/><line x1=\"250.0\" y1=\"42.0\" x2=\"42.0\" y2=\"172.0\" stroke=\"#334155\" stroke-width=\"2.0\" stroke-linecap=\"round\"/><path d=\"M42.0,53.0 L53.0,53.0 L53.0,42.0\" fill=\"none\" stroke=\"#334155\" stroke-width=\"1.6\"/><line x1=\"38.0\" y1=\"38.0\" x2=\"46.0\" y2=\"46.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"38.0\" y1=\"46.0\" x2=\"46.0\" y2=\"38.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><text x=\"30.1\" y=\"39.6\" font-size=\"15\" text-anchor=\"middle\" fill=\"#334155\" font-weight=\"600\">P</text><line x1=\"246.0\" y1=\"38.0\" x2=\"254.0\" y2=\"46.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"246.0\" y1=\"46.0\" x2=\"254.0\" y2=\"38.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><text x=\"261.9\" y=\"39.6\" font-size=\"15\" text-anchor=\"middle\" fill=\"#334155\" font-weight=\"600\">Q</text><line x1=\"246.0\" y1=\"168.0\" x2=\"254.0\" y2=\"176.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"246.0\" y1=\"176.0\" x2=\"254.0\" y2=\"168.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><text x=\"261.9\" y=\"184.4\" font-size=\"15\" text-anchor=\"middle\" fill=\"#334155\" font-weight=\"600\">R</text><line x1=\"38.0\" y1=\"168.0\" x2=\"46.0\" y2=\"176.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"38.0\" y1=\"176.0\" x2=\"46.0\" y2=\"168.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><text x=\"30.1\" y=\"184.4\" font-size=\"15\" text-anchor=\"middle\" fill=\"#334155\" font-weight=\"600\">S</text><line x1=\"142.0\" y1=\"103.0\" x2=\"150.0\" y2=\"111.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"142.0\" y1=\"111.0\" x2=\"150.0\" y2=\"103.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><text x=\"146.0\" y=\"126.0\" font-size=\"15\" text-anchor=\"middle\" fill=\"#334155\" font-weight=\"600\">O</text></svg>",
+      "answer": {
+        "value": 4.8,
+        "unit": "cm",
+        "accepted": [
+          "4,8 cm",
+          "4.8 cm"
+        ]
+      },
+      "solution_steps": [
+        "Un rectangle est un parallélogramme : ses diagonales se coupent en leur milieu O.",
+        "Un rectangle a de plus des diagonales de **même longueur** : QS = PR = 9,6 cm.",
+        "O est le milieu de [QS] : OQ = 9,6 ÷ 2 = **4,8 cm**.",
+        "Piège : 9,6 cm est la longueur d'une diagonale entière, pas de sa moitié."
+      ],
+      "hint": "Le segment [OQ] est la moitié de quelle diagonale ? Que sait-on des diagonales d'un rectangle ?",
+      "estimated_duration_s": 50,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 4, classe de 5e, Espace et géométrie, Parallélogrammes, Objectifs d'apprentissage : « Définir les parallélogrammes particuliers (rectangle, losange, carré). »"
+    },
+    {
+      "id": "EX-G056-E-01",
+      "skill_id": "G056",
+      "level": "entrainement",
+      "type": "qcm",
+      "statement": "Lis le codage.\n\nQuelle est la nature exacte du quadrilatère TUVW ?",
+      "image": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 292 240\" width=\"292\" height=\"240\" font-family=\"system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif\" role=\"img\"><title>Quadrilatère TUVW et ses diagonales, qui se coupent en O, avec un codage</title><rect width=\"100%\" height=\"100%\" fill=\"#ffffff\"/><polygon points=\"42.0,120.0 146.0,55.0 250.0,120.0 146.0,185.0\" fill=\"none\" fill-opacity=\"0.6\" stroke=\"#334155\" stroke-width=\"2\" stroke-linejoin=\"round\"/><line x1=\"42.0\" y1=\"120.0\" x2=\"250.0\" y2=\"120.0\" stroke=\"#334155\" stroke-width=\"2.0\" stroke-linecap=\"round\"/><line x1=\"146.0\" y1=\"55.0\" x2=\"146.0\" y2=\"185.0\" stroke=\"#334155\" stroke-width=\"2.0\" stroke-linecap=\"round\"/><line x1=\"96.0\" y1=\"114.0\" x2=\"92.0\" y2=\"126.0\" stroke=\"#2563eb\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"200.0\" y1=\"114.0\" x2=\"196.0\" y2=\"126.0\" stroke=\"#2563eb\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"152.0\" y1=\"87.0\" x2=\"140.0\" y2=\"83.0\" stroke=\"#2563eb\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"152.0\" y1=\"92.0\" x2=\"140.0\" y2=\"88.0\" stroke=\"#2563eb\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"152.0\" y1=\"152.0\" x2=\"140.0\" y2=\"148.0\" stroke=\"#2563eb\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"152.0\" y1=\"157.0\" x2=\"140.0\" y2=\"153.0\" stroke=\"#2563eb\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><path d=\"M157.0,120.0 L157.0,131.0 L146.0,131.0\" fill=\"none\" stroke=\"#334155\" stroke-width=\"1.6\"/><line x1=\"38.0\" y1=\"116.0\" x2=\"46.0\" y2=\"124.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"38.0\" y1=\"124.0\" x2=\"46.0\" y2=\"116.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><text x=\"28.0\" y=\"125.0\" font-size=\"15\" text-anchor=\"middle\" fill=\"#334155\" font-weight=\"600\">T</text><line x1=\"142.0\" y1=\"51.0\" x2=\"150.0\" y2=\"59.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"142.0\" y1=\"59.0\" x2=\"150.0\" y2=\"51.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><text x=\"146.0\" y=\"46.0\" font-size=\"15\" text-anchor=\"middle\" fill=\"#334155\" font-weight=\"600\">U</text><line x1=\"246.0\" y1=\"116.0\" x2=\"254.0\" y2=\"124.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"246.0\" y1=\"124.0\" x2=\"254.0\" y2=\"116.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><text x=\"264.0\" y=\"125.0\" font-size=\"15\" text-anchor=\"middle\" fill=\"#334155\" font-weight=\"600\">V</text><line x1=\"142.0\" y1=\"181.0\" x2=\"150.0\" y2=\"189.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"142.0\" y1=\"189.0\" x2=\"150.0\" y2=\"181.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><text x=\"146.0\" y=\"204.0\" font-size=\"15\" text-anchor=\"middle\" fill=\"#334155\" font-weight=\"600\">W</text><line x1=\"142.0\" y1=\"116.0\" x2=\"150.0\" y2=\"124.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"142.0\" y1=\"124.0\" x2=\"150.0\" y2=\"116.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><text x=\"136.2\" y=\"115.2\" font-size=\"15\" text-anchor=\"middle\" fill=\"#334155\" font-weight=\"600\">O</text></svg>",
+      "choices": [
+        {
+          "key": "a",
+          "text": "Un carré",
+          "misconception": "Des diagonales perpendiculaires ne suffisent pas pour un carré : il faudrait aussi des diagonales de même longueur. Rien ne dit que TV = UW."
+        },
+        {
+          "key": "b",
+          "text": "Un rectangle",
+          "misconception": "Un rectangle se reconnaît à des diagonales de même longueur ; le codage ne le dit pas. Il dit qu'elles sont perpendiculaires."
+        },
+        {
+          "key": "c",
+          "text": "Un losange",
+          "misconception": null
+        },
+        {
+          "key": "d",
+          "text": "Un parallélogramme quelconque",
+          "misconception": "C'est bien un parallélogramme, mais l'angle droit codé entre les diagonales en fait un parallélogramme particulier : cette réponse n'est pas la plus précise."
+        }
+      ],
+      "answer": {
+        "value": "c"
+      },
+      "solution_steps": [
+        "Le codage dit que O est le milieu de [TV] et de [UW] : les diagonales ont le même milieu, donc TUVW est un parallélogramme.",
+        "L'angle droit en O dit que les diagonales sont perpendiculaires.",
+        "Or un parallélogramme dont les diagonales sont perpendiculaires est un losange. TUVW est un **losange**.",
+        "Ce n'est pas forcément un carré : il faudrait en plus que les diagonales aient la même longueur."
+      ],
+      "hint": "Commence par prouver que TUVW est un parallélogramme, puis regarde l'angle codé en O.",
+      "estimated_duration_s": 60,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 4, classe de 5e, Espace et géométrie, Parallélogrammes, Automatismes : « Exploiter le codage d'une figure pour identifier des parallélogrammes particuliers. »"
+    },
+    {
+      "id": "EX-G056-E-02",
+      "skill_id": "G056",
+      "level": "entrainement",
+      "type": "vrai_faux",
+      "statement": "Le losange LMNP a un angle droit en L.\n\nVrai ou faux : LMNP est un carré.",
+      "image": null,
+      "answer": {
+        "value": true
+      },
+      "solution_steps": [
+        "Un losange est un parallélogramme. Un parallélogramme qui a un angle droit est un rectangle.",
+        "LMNP est donc à la fois un losange et un rectangle : c'est un **carré**. C'est vrai.",
+        "Un seul angle droit suffit : dans un parallélogramme, deux angles consécutifs sont supplémentaires (180° − 90° = 90°), donc les quatre angles sont droits."
+      ],
+      "hint": "Un losange est un parallélogramme : que devient un parallélogramme qui a un angle droit ?",
+      "estimated_duration_s": 45,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 4, classe de 5e, Espace et géométrie, Parallélogrammes, Objectifs d'apprentissage : « Définir les parallélogrammes particuliers (rectangle, losange, carré). »"
+    },
+    {
+      "id": "EX-G056-M-01",
+      "skill_id": "G056",
+      "level": "maitrise",
+      "type": "qcm",
+      "statement": "Lis le codage.\n\nQue peut-on dire du quadrilatère WXYZ ?",
+      "image": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 292 292\" width=\"292\" height=\"292\" font-family=\"system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif\" role=\"img\"><title>Quadrilatère WXYZ et ses diagonales, avec un codage</title><rect width=\"100%\" height=\"100%\" fill=\"#ffffff\"/><polygon points=\"42.0,94.0 94.0,42.0 250.0,94.0 94.0,250.0\" fill=\"none\" fill-opacity=\"0.6\" stroke=\"#334155\" stroke-width=\"2\" stroke-linejoin=\"round\"/><line x1=\"42.0\" y1=\"94.0\" x2=\"250.0\" y2=\"94.0\" stroke=\"#334155\" stroke-width=\"2.0\" stroke-linecap=\"round\"/><line x1=\"94.0\" y1=\"42.0\" x2=\"94.0\" y2=\"250.0\" stroke=\"#334155\" stroke-width=\"2.0\" stroke-linecap=\"round\"/><line x1=\"148.0\" y1=\"88.0\" x2=\"144.0\" y2=\"100.0\" stroke=\"#2563eb\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"100.0\" y1=\"148.0\" x2=\"88.0\" y2=\"144.0\" stroke=\"#2563eb\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><path d=\"M105.0,94.0 L105.0,105.0 L94.0,105.0\" fill=\"none\" stroke=\"#334155\" stroke-width=\"1.6\"/><line x1=\"38.0\" y1=\"90.0\" x2=\"46.0\" y2=\"98.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"38.0\" y1=\"98.0\" x2=\"46.0\" y2=\"90.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><text x=\"28.7\" y=\"94.6\" font-size=\"15\" text-anchor=\"middle\" fill=\"#334155\" font-weight=\"600\">W</text><line x1=\"90.0\" y1=\"38.0\" x2=\"98.0\" y2=\"46.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"90.0\" y1=\"46.0\" x2=\"98.0\" y2=\"38.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><text x=\"89.6\" y=\"33.7\" font-size=\"15\" text-anchor=\"middle\" fill=\"#334155\" font-weight=\"600\">X</text><line x1=\"246.0\" y1=\"90.0\" x2=\"254.0\" y2=\"98.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"246.0\" y1=\"98.0\" x2=\"254.0\" y2=\"90.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><text x=\"263.7\" y=\"96.3\" font-size=\"15\" text-anchor=\"middle\" fill=\"#334155\" font-weight=\"600\">Y</text><line x1=\"90.0\" y1=\"246.0\" x2=\"98.0\" y2=\"254.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"90.0\" y1=\"254.0\" x2=\"98.0\" y2=\"246.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><text x=\"91.3\" y=\"268.7\" font-size=\"15\" text-anchor=\"middle\" fill=\"#334155\" font-weight=\"600\">Z</text></svg>",
+      "choices": [
+        {
+          "key": "a",
+          "text": "C'est un carré.",
+          "misconception": "Diagonales perpendiculaires et de même longueur : cela donne un carré seulement si l'on sait déjà que c'est un parallélogramme. Ici, rien ne le prouve."
+        },
+        {
+          "key": "b",
+          "text": "C'est un rectangle.",
+          "misconception": "Des diagonales de même longueur font un rectangle seulement pour un parallélogramme. Rien ne prouve que WXYZ en est un."
+        },
+        {
+          "key": "c",
+          "text": "C'est un losange.",
+          "misconception": "Des diagonales perpendiculaires font un losange seulement pour un parallélogramme. Rien ne prouve que WXYZ en est un."
+        },
+        {
+          "key": "d",
+          "text": "On ne peut pas conclure : rien ne prouve que c'est un parallélogramme.",
+          "misconception": null
+        }
+      ],
+      "answer": {
+        "value": "d"
+      },
+      "solution_steps": [
+        "Le codage dit deux choses : les diagonales [WY] et [XZ] ont la même longueur (un trait sur chacune), et elles sont perpendiculaires (angle droit).",
+        "Les propriétés des diagonales du rectangle, du losange et du carré ne valent que pour un **parallélogramme**. Il faudrait d'abord prouver que WXYZ en est un, par exemple avec des diagonales qui ont le même milieu.",
+        "Aucun codage ne dit que les diagonales se coupent en leur milieu. On ne peut donc pas conclure : réponse **d**.",
+        "Le dessin va dans le même sens : les traits du codage, placés au milieu de chaque diagonale, ne sont pas au point où elles se coupent."
+      ],
+      "hint": "Avant d'utiliser les diagonales pour reconnaître un rectangle, un losange ou un carré, que faut-il savoir du quadrilatère ?",
+      "estimated_duration_s": 80,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 4, classe de 5e, Espace et géométrie, Parallélogrammes, Automatismes : « Exploiter le codage d'une figure pour identifier des parallélogrammes particuliers. »"
+    },
+    {
+      "id": "EX-G056-M-02",
+      "skill_id": "G056",
+      "level": "maitrise",
+      "type": "numerique",
+      "statement": "KLMN est un carré de centre O, et OK = 3,4 cm. OLPM est un losange.\n\nCombien mesure le côté [LP], en cm ?",
+      "image": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 344 240\" width=\"344\" height=\"240\" font-family=\"system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif\" role=\"img\"><title>Quadrilatère KLMN et ses diagonales, qui se coupent en O, et un second quadrilatère OLPM</title><rect width=\"100%\" height=\"100%\" fill=\"#ffffff\"/><polygon points=\"68.0,42.0 224.0,42.0 224.0,198.0 68.0,198.0\" fill=\"none\" fill-opacity=\"0.6\" stroke=\"#334155\" stroke-width=\"2\" stroke-linejoin=\"round\"/><line x1=\"68.0\" y1=\"42.0\" x2=\"224.0\" y2=\"198.0\" stroke=\"#334155\" stroke-width=\"2.0\" stroke-linecap=\"round\"/><line x1=\"224.0\" y1=\"42.0\" x2=\"68.0\" y2=\"198.0\" stroke=\"#334155\" stroke-width=\"2.0\" stroke-linecap=\"round\"/><path d=\"M68.0,53.0 L79.0,53.0 L79.0,42.0\" fill=\"none\" stroke=\"#334155\" stroke-width=\"1.6\"/><line x1=\"148.0\" y1=\"36.0\" x2=\"144.0\" y2=\"48.0\" stroke=\"#2563eb\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"230.0\" y1=\"122.0\" x2=\"218.0\" y2=\"118.0\" stroke=\"#2563eb\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"144.0\" y1=\"204.0\" x2=\"148.0\" y2=\"192.0\" stroke=\"#2563eb\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"62.0\" y1=\"118.0\" x2=\"74.0\" y2=\"122.0\" stroke=\"#2563eb\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><polygon points=\"146.0,120.0 224.0,42.0 302.0,120.0 224.0,198.0\" fill=\"none\" fill-opacity=\"0.6\" stroke=\"#2563eb\" stroke-width=\"2\" stroke-linejoin=\"round\"/><line x1=\"64.0\" y1=\"38.0\" x2=\"72.0\" y2=\"46.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"64.0\" y1=\"46.0\" x2=\"72.0\" y2=\"38.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><text x=\"56.8\" y=\"38.6\" font-size=\"15\" text-anchor=\"middle\" fill=\"#334155\" font-weight=\"600\">K</text><line x1=\"220.0\" y1=\"38.0\" x2=\"228.0\" y2=\"46.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"220.0\" y1=\"46.0\" x2=\"228.0\" y2=\"38.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><text x=\"231.8\" y=\"35.4\" font-size=\"15\" text-anchor=\"middle\" fill=\"#334155\" font-weight=\"600\">L</text><line x1=\"220.0\" y1=\"194.0\" x2=\"228.0\" y2=\"202.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"220.0\" y1=\"202.0\" x2=\"228.0\" y2=\"194.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><text x=\"231.8\" y=\"214.6\" font-size=\"15\" text-anchor=\"middle\" fill=\"#334155\" font-weight=\"600\">M</text><line x1=\"64.0\" y1=\"194.0\" x2=\"72.0\" y2=\"202.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"64.0\" y1=\"202.0\" x2=\"72.0\" y2=\"194.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><text x=\"56.8\" y=\"211.4\" font-size=\"15\" text-anchor=\"middle\" fill=\"#334155\" font-weight=\"600\">N</text><line x1=\"142.0\" y1=\"116.0\" x2=\"150.0\" y2=\"124.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"142.0\" y1=\"124.0\" x2=\"150.0\" y2=\"116.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><text x=\"132.0\" y=\"125.0\" font-size=\"15\" text-anchor=\"middle\" fill=\"#334155\" font-weight=\"600\">O</text><line x1=\"298.0\" y1=\"116.0\" x2=\"306.0\" y2=\"124.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"298.0\" y1=\"124.0\" x2=\"306.0\" y2=\"116.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><text x=\"316.0\" y=\"125.0\" font-size=\"15\" text-anchor=\"middle\" fill=\"#334155\" font-weight=\"600\">P</text></svg>",
+      "answer": {
+        "value": 3.4,
+        "unit": "cm",
+        "accepted": [
+          "3,4 cm",
+          "3.4 cm"
+        ]
+      },
+      "solution_steps": [
+        "Un carré est un rectangle : ses diagonales [KM] et [LN] ont la même longueur et se coupent en leur milieu O.",
+        "Donc les quatre demi-diagonales sont égales : OL = OK = 3,4 cm.",
+        "OLPM est un losange : ses quatre côtés ont la même longueur, donc LP = OL = **3,4 cm**.",
+        "Pièges : 6,8 cm est la longueur d'une diagonale du carré ; [LP] n'est pas un côté du carré."
+      ],
+      "hint": "Que sait-on des diagonales d'un carré ? Et des côtés d'un losange ?",
+      "estimated_duration_s": 80,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 4, classe de 5e, Espace et géométrie, Parallélogrammes, Objectifs d'apprentissage : « Définir les parallélogrammes particuliers (rectangle, losange, carré). »"
     },
     {
       "id": "EX-G059-D-01",

@@ -1,0 +1,182 @@
+[
+  {
+    "id": "EX-G052-D-01",
+    "skill_id": "G052",
+    "level": "decouverte",
+    "type": "numerique",
+    "statement": "Pour construire le triangle KLN, on connaît $\\widehat{LKN}$ = 48° et $\\widehat{KLN}$ = 67°.\n\nCombien mesure l'angle $\\widehat{KNL}$, en degrés ?",
+    "image": null,
+    "answer": {
+      "value": 65,
+      "unit": "°",
+      "accepted": [
+        "65°",
+        "65 °",
+        "65 degrés"
+      ]
+    },
+    "solution_steps": [
+      "Dans un triangle, la somme des trois angles vaut 180°.",
+      "$\\widehat{KNL}$ = 180° − (48° + 67°) = 180° − 115° = **65°**.",
+      "On calcule ce troisième angle avant de construire : il permet de vérifier la figure, et de savoir si la construction est possible.",
+      "Piège : 115° est la somme des deux angles donnés, pas le troisième angle."
+    ],
+    "hint": "Que vaut la somme des trois angles d'un triangle ?",
+    "estimated_duration_s": 45,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, classe de 5e, Espace et géométrie, Triangles, Objectifs d'apprentissage : « Construire des triangles à partir de données partielles. »"
+  },
+  {
+    "id": "EX-G052-D-02",
+    "skill_id": "G052",
+    "level": "decouverte",
+    "type": "vrai_faux",
+    "statement": "Vrai ou faux : on peut construire un triangle qui a un angle de 112° et un angle de 71°.",
+    "image": null,
+    "answer": {
+      "value": false
+    },
+    "solution_steps": [
+      "Dans un triangle, la somme des trois angles vaut 180°.",
+      "112° + 71° = 183° : c'est déjà plus que 180°, il ne reste rien pour le troisième angle.",
+      "Si l'on essaie de le construire, les deux demi-droites tracées aux extrémités d'un côté ne se rencontrent pas. C'est **faux** : ce triangle est impossible."
+    ],
+    "hint": "Additionne les deux angles et compare le résultat à 180°.",
+    "estimated_duration_s": 35,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, classe de 5e, Espace et géométrie, Triangles, Objectifs d'apprentissage : « Construire des triangles à partir de données partielles. »"
+  },
+  {
+    "id": "EX-G052-E-01",
+    "skill_id": "G052",
+    "level": "entrainement",
+    "type": "qcm",
+    "statement": "On veut construire le triangle RST avec RS = 4 cm, RT = 3 cm et $\\widehat{SRT}$ = 50°.\n\nQuel programme de construction convient ?",
+    "image": null,
+    "choices": [
+      {
+        "key": "a",
+        "text": "Tracer [RS] de 4 cm. Tracer une demi-droite d'origine S qui fait un angle de 50° avec [SR]. Placer T sur cette demi-droite, à 3 cm de S.",
+        "misconception": "L'angle de 50° est placé au sommet S. Or $\\widehat{SRT}$ a son sommet en R, la lettre du milieu."
+      },
+      {
+        "key": "b",
+        "text": "Tracer [RS] de 4 cm. Tracer une demi-droite d'origine R qui fait un angle de 50° avec [RS]. Placer T sur cette demi-droite, à 3 cm de R.",
+        "misconception": null
+      },
+      {
+        "key": "c",
+        "text": "Tracer [RT] de 4 cm. Tracer une demi-droite d'origine R qui fait un angle de 50° avec [RT]. Placer S sur cette demi-droite, à 3 cm de R.",
+        "misconception": "Les longueurs sont inversées : ce programme donne RT = 4 cm et RS = 3 cm."
+      },
+      {
+        "key": "d",
+        "text": "Tracer [RS] de 4 cm. Tracer une demi-droite d'origine R qui fait un angle de 50° avec [RS]. Placer T sur cette demi-droite, à 3 cm de S.",
+        "misconception": "T doit être à 3 cm de R, puisque RT = 3 cm, pas à 3 cm de S."
+      }
+    ],
+    "answer": {
+      "value": "b"
+    },
+    "solution_steps": [
+      "Le sommet de l'angle $\\widehat{SRT}$ est la lettre du milieu, R : l'angle de 50° se trace en R, entre [RS] et [RT].",
+      "On trace d'abord un côté connu, [RS] de 4 cm, puis, au rapporteur, la demi-droite d'origine R qui fait un angle de 50° avec [RS].",
+      "T est sur cette demi-droite, à 3 cm de R puisque RT = 3 cm : c'est le programme **b**."
+    ],
+    "hint": "Quel est le sommet de l'angle $\\widehat{SRT}$ ? De quel point T doit-il être à 3 cm ?",
+    "estimated_duration_s": 70,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, classe de 5e, Espace et géométrie, Triangles, Objectifs d'apprentissage : « Construire des triangles à partir de données partielles. »"
+  },
+  {
+    "id": "EX-G052-E-02",
+    "skill_id": "G052",
+    "level": "entrainement",
+    "type": "qcm",
+    "statement": "Remets dans l'ordre la construction du triangle GHI : GH = 6,5 cm, GI = 4 cm, HI = 5 cm.\n\n(1) Placer I au croisement des deux arcs.\n(2) Tracer [GH].\n(3) Tracer deux arcs : centre G, rayon 4 cm ; centre H, rayon 5 cm.",
+    "image": null,
+    "choices": [
+      {
+        "key": "a",
+        "text": "2, 3, 1",
+        "misconception": null
+      },
+      {
+        "key": "b",
+        "text": "2, 1, 3",
+        "misconception": "On ne peut pas placer I avant d'avoir tracé les arcs : c'est leur croisement qui donne sa place."
+      },
+      {
+        "key": "c",
+        "text": "3, 2, 1",
+        "misconception": "Les arcs ont pour centres G et H : on ne peut pas les tracer avant d'avoir placé ces points avec le segment [GH]."
+      },
+      {
+        "key": "d",
+        "text": "1, 3, 2",
+        "misconception": "On ne peut pas commencer par placer I : sa place dépend de G et de H, qui ne sont pas encore tracés."
+      }
+    ],
+    "answer": {
+      "value": "a"
+    },
+    "solution_steps": [
+      "On commence par un côté : (2), le segment [GH] de 6,5 cm. Il place les points G et H.",
+      "I est à 4 cm de G et à 5 cm de H : il est sur l'arc de centre G de rayon 4 cm et sur l'arc de centre H de rayon 5 cm. On trace ces arcs : (3).",
+      "I est au croisement des deux arcs : (1). L'ordre est **2, 3, 1**, réponse **a**."
+    ],
+    "hint": "Les arcs ont pour centres G et H : qu'est-ce qui doit être tracé avant eux ?",
+    "estimated_duration_s": 60,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, classe de 5e, Espace et géométrie, Triangles, Objectifs d'apprentissage : « Construire des triangles à partir de données partielles. »"
+  },
+  {
+    "id": "EX-G052-M-01",
+    "skill_id": "G052",
+    "level": "maitrise",
+    "type": "numerique",
+    "statement": "Combien de ces triangles ont un côté de 5 cm avec, à ses deux extrémités, des angles de 35° et de 30° ?\n\nLes figures ne sont pas en vraie grandeur.",
+    "image": "figures/EX-G052-M-01",
+    "answer": {
+      "value": 2,
+      "unit": null,
+      "accepted": [
+        "2 triangles",
+        "deux",
+        "deux triangles"
+      ]
+    },
+    "solution_steps": [
+      "Le côté de 5 cm doit avoir les angles de 35° et de 30° à ses **deux extrémités** : ce sont les deux angles qui touchent ce côté.",
+      "Triangle 1 : le côté de 5 cm va du sommet de 35° au sommet de 30°. Il convient.",
+      "Triangle 2 : l'angle de 30° est au sommet opposé au côté de 5 cm, pas à une de ses extrémités. Il ne convient pas.",
+      "Triangle 3 : c'est le triangle 1 après un demi-tour, la pointe en bas ; le côté de 5 cm a bien 30° et 35° à ses extrémités. Il convient : la position du triangle ne compte pas.",
+      "Triangle 4 : le côté de 5 cm relie le sommet de 35° au troisième sommet ; l'angle de 30° n'est pas à une de ses extrémités. Il ne convient pas.",
+      "**2** triangles conviennent, le 1 et le 3. Piège : écarter le 3 parce qu'il est tourné."
+    ],
+    "hint": "Pour chaque triangle, regarde les deux extrémités du côté de 5 cm : quels angles y sont marqués ?",
+    "estimated_duration_s": 90,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, classe de 5e, Espace et géométrie, Triangles, Objectifs d'apprentissage : « Construire des triangles à partir de données partielles. »"
+  },
+  {
+    "id": "EX-G052-M-02",
+    "skill_id": "G052",
+    "level": "maitrise",
+    "type": "vrai_faux",
+    "statement": "Tom veut un triangle avec un côté de 7 cm et, aux extrémités de ce côté, des angles de 96° et de 84°. Il dit : « C'est impossible. »\n\nA-t-il raison ?",
+    "image": null,
+    "answer": {
+      "value": true
+    },
+    "solution_steps": [
+      "Les deux angles donnés ont pour somme 96° + 84° = 180°.",
+      "Le troisième angle mesurerait 180° − 180° = 0° : il n'y a pas de triangle. Les demi-droites tracées aux extrémités du côté de 7 cm ne se rencontrent pas.",
+      "Pour qu'un triangle existe, les deux angles qui touchent le côté doivent avoir une somme **strictement inférieure** à 180°. Tom a **raison** : c'est vrai."
+    ],
+    "hint": "Calcule la somme des deux angles : que resterait-il pour le troisième ?",
+    "estimated_duration_s": 50,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, classe de 5e, Espace et géométrie, Triangles, Objectifs d'apprentissage : « Construire des triangles à partir de données partielles. »"
+  }
+]

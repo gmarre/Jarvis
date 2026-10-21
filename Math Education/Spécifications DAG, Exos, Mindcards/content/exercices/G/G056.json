@@ -1,0 +1,187 @@
+[
+  {
+    "id": "EX-G056-D-01",
+    "skill_id": "G056",
+    "level": "decouverte",
+    "type": "texte",
+    "statement": "JKLM est un parallélogramme.\n\nLis le codage : quelle est la nature exacte de JKLM ?",
+    "image": "figures/EX-G056-D-01",
+    "answer": {
+      "value": "rectangle",
+      "unit": null,
+      "accepted": [
+        "un rectangle",
+        "c'est un rectangle",
+        "JKLM est un rectangle",
+        "le rectangle"
+      ]
+    },
+    "solution_steps": [
+      "Le codage montre un angle droit en J.",
+      "Or un parallélogramme qui a un angle droit est un rectangle : c'est sa définition. Ses quatre angles sont alors droits.",
+      "JKLM est un **rectangle**. On ne peut pas dire « carré » : aucun codage ne dit que deux côtés consécutifs ont la même longueur, et la mesure n'est pas une preuve."
+    ],
+    "hint": "Que devient un parallélogramme qui a un angle droit ?",
+    "estimated_duration_s": 40,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, classe de 5e, Espace et géométrie, Parallélogrammes, Objectifs d'apprentissage : « Définir les parallélogrammes particuliers (rectangle, losange, carré). »"
+  },
+  {
+    "id": "EX-G056-D-02",
+    "skill_id": "G056",
+    "level": "decouverte",
+    "type": "numerique",
+    "statement": "PQRS est un rectangle de centre O, et PR = 9,6 cm.\n\nCombien mesure le segment [OQ], en cm ?",
+    "image": "figures/EX-G056-D-02",
+    "answer": {
+      "value": 4.8,
+      "unit": "cm",
+      "accepted": [
+        "4,8 cm",
+        "4.8 cm"
+      ]
+    },
+    "solution_steps": [
+      "Un rectangle est un parallélogramme : ses diagonales se coupent en leur milieu O.",
+      "Un rectangle a de plus des diagonales de **même longueur** : QS = PR = 9,6 cm.",
+      "O est le milieu de [QS] : OQ = 9,6 ÷ 2 = **4,8 cm**.",
+      "Piège : 9,6 cm est la longueur d'une diagonale entière, pas de sa moitié."
+    ],
+    "hint": "Le segment [OQ] est la moitié de quelle diagonale ? Que sait-on des diagonales d'un rectangle ?",
+    "estimated_duration_s": 50,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, classe de 5e, Espace et géométrie, Parallélogrammes, Objectifs d'apprentissage : « Définir les parallélogrammes particuliers (rectangle, losange, carré). »"
+  },
+  {
+    "id": "EX-G056-E-01",
+    "skill_id": "G056",
+    "level": "entrainement",
+    "type": "qcm",
+    "statement": "Lis le codage.\n\nQuelle est la nature exacte du quadrilatère TUVW ?",
+    "image": "figures/EX-G056-E-01",
+    "choices": [
+      {
+        "key": "a",
+        "text": "Un carré",
+        "misconception": "Des diagonales perpendiculaires ne suffisent pas pour un carré : il faudrait aussi des diagonales de même longueur. Rien ne dit que TV = UW."
+      },
+      {
+        "key": "b",
+        "text": "Un rectangle",
+        "misconception": "Un rectangle se reconnaît à des diagonales de même longueur ; le codage ne le dit pas. Il dit qu'elles sont perpendiculaires."
+      },
+      {
+        "key": "c",
+        "text": "Un losange",
+        "misconception": null
+      },
+      {
+        "key": "d",
+        "text": "Un parallélogramme quelconque",
+        "misconception": "C'est bien un parallélogramme, mais l'angle droit codé entre les diagonales en fait un parallélogramme particulier : cette réponse n'est pas la plus précise."
+      }
+    ],
+    "answer": {
+      "value": "c"
+    },
+    "solution_steps": [
+      "Le codage dit que O est le milieu de [TV] et de [UW] : les diagonales ont le même milieu, donc TUVW est un parallélogramme.",
+      "L'angle droit en O dit que les diagonales sont perpendiculaires.",
+      "Or un parallélogramme dont les diagonales sont perpendiculaires est un losange. TUVW est un **losange**.",
+      "Ce n'est pas forcément un carré : il faudrait en plus que les diagonales aient la même longueur."
+    ],
+    "hint": "Commence par prouver que TUVW est un parallélogramme, puis regarde l'angle codé en O.",
+    "estimated_duration_s": 60,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, classe de 5e, Espace et géométrie, Parallélogrammes, Automatismes : « Exploiter le codage d'une figure pour identifier des parallélogrammes particuliers. »"
+  },
+  {
+    "id": "EX-G056-E-02",
+    "skill_id": "G056",
+    "level": "entrainement",
+    "type": "vrai_faux",
+    "statement": "Le losange LMNP a un angle droit en L.\n\nVrai ou faux : LMNP est un carré.",
+    "image": null,
+    "answer": {
+      "value": true
+    },
+    "solution_steps": [
+      "Un losange est un parallélogramme. Un parallélogramme qui a un angle droit est un rectangle.",
+      "LMNP est donc à la fois un losange et un rectangle : c'est un **carré**. C'est vrai.",
+      "Un seul angle droit suffit : dans un parallélogramme, deux angles consécutifs sont supplémentaires (180° − 90° = 90°), donc les quatre angles sont droits."
+    ],
+    "hint": "Un losange est un parallélogramme : que devient un parallélogramme qui a un angle droit ?",
+    "estimated_duration_s": 45,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, classe de 5e, Espace et géométrie, Parallélogrammes, Objectifs d'apprentissage : « Définir les parallélogrammes particuliers (rectangle, losange, carré). »"
+  },
+  {
+    "id": "EX-G056-M-01",
+    "skill_id": "G056",
+    "level": "maitrise",
+    "type": "qcm",
+    "statement": "Lis le codage.\n\nQue peut-on dire du quadrilatère WXYZ ?",
+    "image": "figures/EX-G056-M-01",
+    "choices": [
+      {
+        "key": "a",
+        "text": "C'est un carré.",
+        "misconception": "Diagonales perpendiculaires et de même longueur : cela donne un carré seulement si l'on sait déjà que c'est un parallélogramme. Ici, rien ne le prouve."
+      },
+      {
+        "key": "b",
+        "text": "C'est un rectangle.",
+        "misconception": "Des diagonales de même longueur font un rectangle seulement pour un parallélogramme. Rien ne prouve que WXYZ en est un."
+      },
+      {
+        "key": "c",
+        "text": "C'est un losange.",
+        "misconception": "Des diagonales perpendiculaires font un losange seulement pour un parallélogramme. Rien ne prouve que WXYZ en est un."
+      },
+      {
+        "key": "d",
+        "text": "On ne peut pas conclure : rien ne prouve que c'est un parallélogramme.",
+        "misconception": null
+      }
+    ],
+    "answer": {
+      "value": "d"
+    },
+    "solution_steps": [
+      "Le codage dit deux choses : les diagonales [WY] et [XZ] ont la même longueur (un trait sur chacune), et elles sont perpendiculaires (angle droit).",
+      "Les propriétés des diagonales du rectangle, du losange et du carré ne valent que pour un **parallélogramme**. Il faudrait d'abord prouver que WXYZ en est un, par exemple avec des diagonales qui ont le même milieu.",
+      "Aucun codage ne dit que les diagonales se coupent en leur milieu. On ne peut donc pas conclure : réponse **d**.",
+      "Le dessin va dans le même sens : les traits du codage, placés au milieu de chaque diagonale, ne sont pas au point où elles se coupent."
+    ],
+    "hint": "Avant d'utiliser les diagonales pour reconnaître un rectangle, un losange ou un carré, que faut-il savoir du quadrilatère ?",
+    "estimated_duration_s": 80,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, classe de 5e, Espace et géométrie, Parallélogrammes, Automatismes : « Exploiter le codage d'une figure pour identifier des parallélogrammes particuliers. »"
+  },
+  {
+    "id": "EX-G056-M-02",
+    "skill_id": "G056",
+    "level": "maitrise",
+    "type": "numerique",
+    "statement": "KLMN est un carré de centre O, et OK = 3,4 cm. OLPM est un losange.\n\nCombien mesure le côté [LP], en cm ?",
+    "image": "figures/EX-G056-M-02",
+    "answer": {
+      "value": 3.4,
+      "unit": "cm",
+      "accepted": [
+        "3,4 cm",
+        "3.4 cm"
+      ]
+    },
+    "solution_steps": [
+      "Un carré est un rectangle : ses diagonales [KM] et [LN] ont la même longueur et se coupent en leur milieu O.",
+      "Donc les quatre demi-diagonales sont égales : OL = OK = 3,4 cm.",
+      "OLPM est un losange : ses quatre côtés ont la même longueur, donc LP = OL = **3,4 cm**.",
+      "Pièges : 6,8 cm est la longueur d'une diagonale du carré ; [LP] n'est pas un côté du carré."
+    ],
+    "hint": "Que sait-on des diagonales d'un carré ? Et des côtés d'un losange ?",
+    "estimated_duration_s": 80,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, classe de 5e, Espace et géométrie, Parallélogrammes, Objectifs d'apprentissage : « Définir les parallélogrammes particuliers (rectangle, losange, carré). »"
+  }
+]
