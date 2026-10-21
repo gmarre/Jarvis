@@ -91,7 +91,7 @@ Une compétence dont la chaîne de prérequis compte moins d'une autre compéten
 - Le schéma `schemas\super.schema.json`.
 
 ## Les vérifications obligatoires
-Python : `C:\Users\MARRE\AppData\Local\Temp\claude\c--Users-MARRE-Documents-Jarvis\ea40d22e-4298-472f-ad2f-ecce13c7b8cb\scratchpad\venv\Scripts\python.exe`, avec `PYTHONIOENCODING=utf-8`.
+Python : `C:\Users\MARRE\Documents\Jarvis\Math Education\.venv\Scripts\python.exe`, avec `PYTHONIOENCODING=utf-8`.
 1. Un script `_travail\verif_super_<lot>.py` qui contrôle :
    - le recalcul de chaque réponse et de chaque distracteur ;
    - les chaînes de prérequis ;

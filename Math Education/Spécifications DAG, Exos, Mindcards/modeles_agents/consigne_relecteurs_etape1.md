@@ -11,7 +11,7 @@ Tu joues l'agent `math-reviewer` de MATH EDUCATION. Tu es **indépendant** : tu 
 6. Programme en texte : `_travail\programmes\ce1-ce2-cp.txt` et `_travail\programmes\6eme-cm1-cm2.txt`. Vérifie que chaque `programme_ref` correspond à un attendu réel, au niveau de la compétence ou en dessous.
 
 ## Outils
-Python : `C:\Users\MARRE\AppData\Local\Temp\claude\c--Users-MARRE-Documents-Jarvis\ea40d22e-4298-472f-ad2f-ecce13c7b8cb\scratchpad\venv\Scripts\python.exe`, avec `PYTHONIOENCODING=utf-8`.
+Python : `C:\Users\MARRE\Documents\Jarvis\Math Education\.venv\Scripts\python.exe`, avec `PYTHONIOENCODING=utf-8`.
 - Recalcule **chaque** réponse et **chaque** étape de corrigé par script, sans regarder `answer.value` avant d'avoir la tienne.
 - Lance le validateur complet sur une copie temporaire :
   `python "C:\Users\MARRE\Documents\Jarvis\Math Education\scripts\check_lot.py" --skills "C:\Users\MARRE\Documents\Jarvis\Math Education\_travail\etape1_dag_B.json" --links "C:\Users\MARRE\Documents\Jarvis\Math Education\_travail\etape1_liens_B.json" --exercises <lot>`

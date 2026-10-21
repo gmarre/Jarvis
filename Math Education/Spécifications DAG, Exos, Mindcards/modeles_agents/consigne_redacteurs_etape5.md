@@ -64,7 +64,7 @@ Ton lot t'est indiqué dans ton message de lancement.
 - **divisibilité** : critère de 3 confondu avec « finit par 3 » ; 1 compté comme premier ; 9 compté comme premier ; décomposition qui garde un facteur non premier (2 × 6).
 
 ## Vérifications obligatoires avant de rendre
-Python : `C:\Users\MARRE\AppData\Local\Temp\claude\c--Users-MARRE-Documents-Jarvis\ea40d22e-4298-472f-ad2f-ecce13c7b8cb\scratchpad\venv\Scripts\python.exe`, avec `PYTHONIOENCODING=utf-8`.
+Python : `C:\Users\MARRE\Documents\Jarvis\Math Education\.venv\Scripts\python.exe`, avec `PYTHONIOENCODING=utf-8`.
 
 1. **Un script jetable `_travail\verif_lot_etape5_<ton lot>.py`.** Pour chaque exercice, il recalcule la réponse (Fraction, jamais de flottants pour les égalités) et la compare à `answer.value` ; recalcule chaque distracteur depuis son erreur ; pour les figures, relit la description et fait le test de substitution ; contrôle le champ numérique, le plafond de mots, l'absence de caractère de contrôle, et qu'aucun texte élève ne contient de trait d'union devant un chiffre hors formule KaTeX.
 2. **Rejoue les saisies plausibles contre la vraie correction** : `Math_Edu_Application\supabase\functions\_shared\correction.ts`, transpilé et lancé sous node (modèle : `_travail\review_F1_saisie.cjs`). Pour chaque réponse négative, rejoue au moins « -3 », « −3 » et « (-3) ».

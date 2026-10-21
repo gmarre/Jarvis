@@ -87,7 +87,7 @@ Vise **22 à 30 compétences** du CP à la 6e, moins si le programme ne le justi
    - les **points à arbitrer**, numérotés, chacun avec ta recommandation.
 
 ## Vérifications obligatoires avant de rendre
-Python du projet : `C:\Users\MARRE\AppData\Local\Temp\claude\c--Users-MARRE-Documents-Jarvis\ea40d22e-4298-472f-ad2f-ecce13c7b8cb\scratchpad\venv\Scripts\python.exe`, avec `PYTHONIOENCODING=utf-8`.
+Python du projet : `C:\Users\MARRE\Documents\Jarvis\Math Education\.venv\Scripts\python.exe`, avec `PYTHONIOENCODING=utf-8`.
 1. **Un script `_travail\verif_etape4b_dag_G.py`**, sur le modèle de `_travail\verif_etape4a_dag_P.py` (ou de `verif_etape3_dag_E.py`). Il vérifie :
    - que chaque citation figure mot pour mot **dans la section de sa classe** ;
    - qu'aucun prérequis n'est d'un niveau postérieur ;

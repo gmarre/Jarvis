@@ -28,7 +28,7 @@ Tes scripts jetables vont dans `_travail\review_super_<lot>_*`.
    - Chaque corrigé est complet, et aucun indice ne donne la réponse.
    - Deux questions n'ont pas la même réponse.
 8. **Pas de reprise.** Aucun couple de données ne vient d'un exercice ni d'un test des compétences mobilisées.
-9. **KaTeX et validateur.** Lance `python scripts\merge_super.py _travail\super_<lot>.json [--figures _travail\figures_super_<lot>]` en simulation. Le Python est `C:\Users\MARRE\AppData\Local\Temp\claude\c--Users-MARRE-Documents-Jarvis\ea40d22e-4298-472f-ad2f-ecce13c7b8cb\scratchpad\venv\Scripts\python.exe`, avec `PYTHONIOENCODING=utf-8`.
+9. **KaTeX et validateur.** Lance `python scripts\merge_super.py _travail\super_<lot>.json [--figures _travail\figures_super_<lot>]` en simulation. Le Python est `C:\Users\MARRE\Documents\Jarvis\Math Education\.venv\Scripts\python.exe`, avec `PYTHONIOENCODING=utf-8`.
 
 ## Format des défauts
 Pour chaque défaut, donne :

@@ -37,7 +37,7 @@ Tu rédiges les 5 cartes mentales de l'étape 5 de MATH EDUCATION. Réponds en f
 - Chaque compétence de la carte a au moins une ligne de méthode et un exemple.
 
 ## Vérifications obligatoires
-Python : `C:\Users\MARRE\AppData\Local\Temp\claude\c--Users-MARRE-Documents-Jarvis\ea40d22e-4298-472f-ad2f-ecce13c7b8cb\scratchpad\venv\Scripts\python.exe`, avec `PYTHONIOENCODING=utf-8`.
+Python : `C:\Users\MARRE\Documents\Jarvis\Math Education\.venv\Scripts\python.exe`, avec `PYTHONIOENCODING=utf-8`.
 1. **Un script `_travail\verif_mm_AB.py`**, sur le modèle de `_travail\verif_mm_G.py` : structure, vocabulaire contrôlé, KaTeX (nombre pair de `$`, virgule `{,}`, aucune commande sans antislash), recalcul de chaque égalité (Fraction), lignes « Erreur à éviter », et **aucun couple de données** d'un exercice ou d'un test de la même carte parmi les nombres d'une même ligne.
 2. **Rendu KaTeX** : sur le modèle de `_travail\review_etape4b_mm_katex.cjs`, rends chaque formule avec KaTeX (le paquet est dans `Math_Edu_Application\node_modules`) et vérifie qu'aucune ne lève d'erreur.
 3. **Le validateur** :

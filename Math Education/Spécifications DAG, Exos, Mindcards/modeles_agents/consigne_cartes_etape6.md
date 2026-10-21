@@ -54,7 +54,7 @@ Ton rôle (R1 ou R2) t'est indiqué dans ton message de lancement. Les cartes co
   - une ligne « Erreur à éviter » décrit une vraie erreur, jamais une démarche juste mais superflue.
 
 ## Vérifications obligatoires
-Python : `C:\Users\MARRE\AppData\Local\Temp\claude\c--Users-MARRE-Documents-Jarvis\ea40d22e-4298-472f-ad2f-ecce13c7b8cb\scratchpad\venv\Scripts\python.exe`, avec `PYTHONIOENCODING=utf-8`.
+Python : `C:\Users\MARRE\Documents\Jarvis\Math Education\.venv\Scripts\python.exe`, avec `PYTHONIOENCODING=utf-8`.
 1. **Un script `_travail\verif_mm_6_<R1|R2>.py`**, sur le modèle de `verif_mm_AB.py`. Il contrôle :
    - la structure et le vocabulaire contrôlé ;
    - le KaTeX ;

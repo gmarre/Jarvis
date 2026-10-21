@@ -26,7 +26,7 @@ L'élève lit le recto, cherche de tête, retourne la carte, dit lui-même s'il 
    - Le verso donne la réponse d'abord, en gras, puis le pourquoi en une phrase.
    - Chaque règle reste vraie pour 0 et pour 1, et dans les cas limites.
 7. **Rendu KaTeX** de chaque formule, avec le KaTeX de `Math_Edu_Application\node_modules`.
-8. **Validateur.** Lance `python scripts\merge_defis.py _travail\defis_<lot>.json` en simulation, sans `--apply`. Le Python est `C:\Users\MARRE\AppData\Local\Temp\claude\c--Users-MARRE-Documents-Jarvis\ea40d22e-4298-472f-ad2f-ecce13c7b8cb\scratchpad\venv\Scripts\python.exe`, avec `PYTHONIOENCODING=utf-8`.
+8. **Validateur.** Lance `python scripts\merge_defis.py _travail\defis_<lot>.json` en simulation, sans `--apply`. Le Python est `C:\Users\MARRE\Documents\Jarvis\Math Education\.venv\Scripts\python.exe`, avec `PYTHONIOENCODING=utf-8`.
 
 ## Format des défauts
 Pour chaque défaut, donne :

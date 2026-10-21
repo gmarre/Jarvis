@@ -168,7 +168,7 @@ Ce qui est faux ou absent aujourd'hui (repris dans le backlog §6) :
 
 Modèles de consignes : `Spécifications DAG, Exos, Mindcards/modeles_agents/consigne_*_etape5.md` (les plus récentes, cycle 4, avec la consigne des cartes) et `consigne_*_etape4b.md` (toutes les règles de figures).
 
-**Python :** recréer un venv (`python -m venv venv`, `pip install -r scripts/requirements.lock.txt`), puis lancer avec `PYTHONIOENCODING=utf-8`. Validation : `scripts/validate_content.py` ; un lot seul : `scripts/check_lot.py`.
+**Python :** le venv du projet est `Math Education/.venv` (ignoré par git, recréé le 21 octobre 2026 : celui du dossier temporaire avait été vidé). Le recréer au besoin : `C:\Python312\python.exe -m venv .venv`, puis `.venv\Scripts\python.exe -m pip install -r scripts/requirements.lock.txt` ; lancer avec `PYTHONIOENCODING=utf-8`. Ne jamais garder un venv dans un dossier temporaire. Validation : `scripts/validate_content.py` ; un lot seul : `scripts/check_lot.py`.
 
 **Règles de contenu tirées des relectures (toutes au validateur ou dans les consignes) :**
 - notations contrôlées par classe : `<>`, ×, ÷, virgule, %, ², ³, ° ;

@@ -13,7 +13,7 @@ Tu joues l'agent `math-reviewer` de MATH EDUCATION. Tu es **indépendant** : tu 
 6. Programme : `_travail\programmes\5eme.txt` (cycle 4 par classe) et `_travail\programmes\6eme-cm1-cm2.txt`.
 
 ## Outils
-Python du projet : `C:\Users\MARRE\AppData\Local\Temp\claude\c--Users-MARRE-Documents-Jarvis\ea40d22e-4298-472f-ad2f-ecce13c7b8cb\scratchpad\venv\Scripts\python.exe`, avec `PYTHONIOENCODING=utf-8`.
+Python du projet : `C:\Users\MARRE\Documents\Jarvis\Math Education\.venv\Scripts\python.exe`, avec `PYTHONIOENCODING=utf-8`.
 - **Recalcule chaque réponse toi-même**, en Fraction, sans regarder `answer.value` avant d'avoir la tienne ; recalcule chaque distracteur depuis l'erreur annoncée.
 - **Figures** : rends-les toi-même (`python scripts\figures.py apercu <dossier> <sortie>`), puis une planche PNG à 360 px avec `node "C:\Users\MARRE\AppData\Local\Temp\claude\c--Users-MARRE-Documents-Jarvis\5625dac1-2271-41d0-bf2b-fc23fb862aa9\scratchpad\fig\shot.cjs" <page.html> <sortie.png> 360`, ouverte avec l'outil Read.
 - **Saisies** : teste les saisies plausibles contre la vraie correction, `Math_Edu_Application\supabase\functions\_shared\correction.ts`, sous node (modèle : `_travail\review_F1_saisie.cjs`). Pour toute réponse négative : « -3 », « −3 », « – 3 », « (-3) ».

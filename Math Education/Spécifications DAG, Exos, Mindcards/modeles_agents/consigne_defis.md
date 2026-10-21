@@ -64,7 +64,7 @@ Ton fichier est un tableau JSON de cartes :
 2. Le schéma `Spécifications DAG, Exos, Mindcards\schemas\flashcards.schema.json`.
 
 ## Les vérifications obligatoires
-Le Python est `C:\Users\MARRE\AppData\Local\Temp\claude\c--Users-MARRE-Documents-Jarvis\ea40d22e-4298-472f-ad2f-ecce13c7b8cb\scratchpad\venv\Scripts\python.exe`, avec `PYTHONIOENCODING=utf-8`.
+Le Python est `C:\Users\MARRE\Documents\Jarvis\Math Education\.venv\Scripts\python.exe`, avec `PYTHONIOENCODING=utf-8`.
 1. Un script `_travail\verif_defis_<lot>.py`. Il contrôle :
    - le recalcul de chaque égalité (Fraction) ;
    - la longueur ;

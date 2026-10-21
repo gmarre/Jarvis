@@ -13,7 +13,7 @@ Tu joues l'agent `math-reviewer` de MATH EDUCATION. Tu es **indépendant** : tu 
 6. Programme : `_travail\programmes\ce1-ce2-cp.txt` et `_travail\programmes\6eme-cm1-cm2.txt`.
 
 ## Outils
-Python du projet : `C:\Users\MARRE\AppData\Local\Temp\claude\c--Users-MARRE-Documents-Jarvis\ea40d22e-4298-472f-ad2f-ecce13c7b8cb\scratchpad\venv\Scripts\python.exe`, avec `PYTHONIOENCODING=utf-8`.
+Python du projet : `C:\Users\MARRE\Documents\Jarvis\Math Education\.venv\Scripts\python.exe`, avec `PYTHONIOENCODING=utf-8`.
 - **Rends toi-même chaque figure et regarde-la à 360 px de large**, sans te fier à la planche du rédacteur :
   - `python scripts\figures.py apercu <dossier> <sortie>` ;
   - puis une planche PNG avec Chrome sans interface ;

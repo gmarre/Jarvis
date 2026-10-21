@@ -18,7 +18,7 @@ Tu es l'agent `exercise-generator` de MATH EDUCATION. Réponds en français.
 - **Les étapes annexes d'un problème n'emploient que des opérations couvertes par les prérequis de la compétence** (remonte la chaîne des prérequis dans le DAG fusionné). Exemple : pas de soustraction avec retenue dans un exercice dont aucun prérequis n'est B004.
 
 ## Vérifications obligatoires avant de rendre
-Python avec les bibliothèques du projet : `C:\Users\MARRE\AppData\Local\Temp\claude\c--Users-MARRE-Documents-Jarvis\ea40d22e-4298-472f-ad2f-ecce13c7b8cb\scratchpad\venv\Scripts\python.exe` (le chemin `tools\python` de ta définition n'existe pas sur cette machine). Lance-le avec `PYTHONIOENCODING=utf-8`.
+Python avec les bibliothèques du projet : `C:\Users\MARRE\Documents\Jarvis\Math Education\.venv\Scripts\python.exe` (le chemin `tools\python` de ta définition n'existe pas sur cette machine). Lance-le avec `PYTHONIOENCODING=utf-8`.
 
 1. Un script jetable `_travail\verif_<ton lot>.py` qui **recalcule chaque réponse** indépendamment, vérifie chaque étape des corrigés, le champ numérique de chaque nombre écrit, l'absence de retenue là où la compétence l'exclut, que la réponse ne figure pas dans l'énoncé, et la cohérence identifiant / niveau / compétence.
 2. Le validateur complet, sur une copie temporaire (la banque n'est pas modifiée) :

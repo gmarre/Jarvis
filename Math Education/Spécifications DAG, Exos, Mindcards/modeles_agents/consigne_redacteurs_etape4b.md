@@ -110,7 +110,7 @@ Ce sont des misconceptions réelles :
 - **déplacements** : confondre la gauche et la droite du robot avec celles de l'élève.
 
 ## Vérifications obligatoires avant de rendre
-Python du projet : `C:\Users\MARRE\AppData\Local\Temp\claude\c--Users-MARRE-Documents-Jarvis\ea40d22e-4298-472f-ad2f-ecce13c7b8cb\scratchpad\venv\Scripts\python.exe`, avec `PYTHONIOENCODING=utf-8`.
+Python du projet : `C:\Users\MARRE\Documents\Jarvis\Math Education\.venv\Scripts\python.exe`, avec `PYTHONIOENCODING=utf-8`.
 
 1. **Un script jetable `_travail\verif_lot_etape4b_<ton lot>.py`.** Pour chaque exercice, il :
    - lit SA description de figure ;

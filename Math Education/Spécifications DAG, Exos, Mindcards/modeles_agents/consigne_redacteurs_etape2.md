@@ -24,7 +24,7 @@ Tu es l'agent `exercise-generator` de MATH EDUCATION. Réponds en français.
 - **Les étapes annexes d'un problème n'emploient que des opérations couvertes par les prérequis** de la compétence (remonte la chaîne dans le DAG fusionné).
 
 ## Vérifications obligatoires avant de rendre
-Python avec les bibliothèques du projet : `C:\Users\MARRE\AppData\Local\Temp\claude\c--Users-MARRE-Documents-Jarvis\ea40d22e-4298-472f-ad2f-ecce13c7b8cb\scratchpad\venv\Scripts\python.exe`, avec `PYTHONIOENCODING=utf-8`.
+Python avec les bibliothèques du projet : `C:\Users\MARRE\Documents\Jarvis\Math Education\.venv\Scripts\python.exe`, avec `PYTHONIOENCODING=utf-8`.
 
 1. Un script jetable `_travail\verif_lot_etape2_<ton lot>.py` qui **recalcule chaque réponse** avec `decimal.Decimal` ou `fractions.Fraction` (jamais de flottants pour vérifier un calcul décimal), vérifie chaque étape des corrigés et chaque misconception chiffrée, le champ numérique, que la réponse ne figure pas dans l'énoncé, la cohérence identifiant / niveau / compétence, et qu'aucun antislash n'est devenu une tabulation.
 2. Le validateur complet, sur une copie temporaire (la banque n'est pas modifiée) :

@@ -12,7 +12,7 @@ Tu joues l'agent `math-reviewer` de MATH EDUCATION. Tu es **indépendant** : tu 
 7. Programme : `_travail\programmes\6eme-cm1-cm2.txt` et `_travail\programmes\5eme.txt`. Vérifie que chaque `programme_ref` correspond à un attendu réel, au niveau de la compétence ou en dessous.
 
 ## Outils
-Python : `C:\Users\MARRE\AppData\Local\Temp\claude\c--Users-MARRE-Documents-Jarvis\ea40d22e-4298-472f-ad2f-ecce13c7b8cb\scratchpad\venv\Scripts\python.exe`, avec `PYTHONIOENCODING=utf-8`.
+Python : `C:\Users\MARRE\Documents\Jarvis\Math Education\.venv\Scripts\python.exe`, avec `PYTHONIOENCODING=utf-8`.
 - Recalcule **chaque** réponse et **chaque** étape de corrigé par script, avec `fractions.Fraction` ou `decimal.Decimal` (jamais de flottants), sans regarder `answer.value` avant d'avoir la tienne.
 - Validateur complet sur une copie :
   `python "C:\Users\MARRE\Documents\Jarvis\Math Education\scripts\check_lot.py" --skills "C:\Users\MARRE\Documents\Jarvis\Math Education\_travail\etape3_dag_E.json" --links "C:\Users\MARRE\Documents\Jarvis\Math Education\_travail\etape3_liens_E.json" --exercises <lot>` (`--tout` pour la sortie complète).

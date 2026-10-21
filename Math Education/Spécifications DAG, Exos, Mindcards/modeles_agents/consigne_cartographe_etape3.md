@@ -36,7 +36,7 @@ Ta mission : proposer les nœuds du DAG du domaine E « Proportionnalité et pou
 - Vise **15 à 20 compétences**. Moins si le programme ne le justifie pas : un nœud sans attendu clair n'a rien à faire là.
 
 ## Vérifications obligatoires avant de rendre
-Python du projet : `C:\Users\MARRE\AppData\Local\Temp\claude\c--Users-MARRE-Documents-Jarvis\ea40d22e-4298-472f-ad2f-ecce13c7b8cb\scratchpad\venv\Scripts\python.exe`, avec `PYTHONIOENCODING=utf-8`.
+Python du projet : `C:\Users\MARRE\Documents\Jarvis\Math Education\.venv\Scripts\python.exe`, avec `PYTHONIOENCODING=utf-8`.
 1. Un script jetable `_travail\verif_etape3_dag_E.py`. Il vérifie :
    - que **chaque citation figure mot pour mot** dans le fichier de programme de sa classe ;
    - qu'aucun prérequis n'est d'un niveau postérieur ;
