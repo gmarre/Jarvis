@@ -1,0 +1,93 @@
+{
+  "id": "SX-F027-01",
+  "skill_id": "F027",
+  "skill_ids": [
+    "F027",
+    "D024",
+    "F002"
+  ],
+  "school_level": "3e",
+  "title": "Crêpes et gaufres à la kermesse",
+  "contexte": "Pour financer une sortie au planétarium, qui coûte 420 € au total, l'association du collège vend des crêpes et des gaufres à la kermesse. Chaque crêpe et chaque gaufre lui coûte 1,50 € à fabriquer.\n\nL'an dernier, l'association avait vendu 180 crêpes à 2 € pièce.\n\nCette année, une enquête auprès des familles donne des prévisions. Si la crêpe est vendue $x$ euros, l'association en vendra $240 - 40x$, et son bénéfice sur les crêpes, en euros, sera $(x - 1{,}5)(240 - 40x)$.\n\nSi la gaufre est vendue $x$ euros, elle en vendra $200 - 20x$, et son bénéfice sur les gaufres sera $(x - 1{,}5)(200 - 20x)$.\n\nLa kermesse aura lieu un samedi, de 14 h à 18 h.",
+  "image": null,
+  "duree_estimee_min": 15,
+  "questions": [
+    {
+      "key": "q1",
+      "skill_id": "D024",
+      "statement": "L'an dernier, quel bénéfice l'association a-t-elle fait sur les crêpes ?",
+      "type": "numerique",
+      "answer": {
+        "value": 90,
+        "unit": "€"
+      },
+      "points": 1,
+      "solution_steps": [
+        "Bénéfice sur une crêpe : 2 − 1,50 = 0,50 €.",
+        "Pour 180 crêpes : 180 × 0,5 = 90.",
+        "L'an dernier, le bénéfice sur les crêpes était de **90 €**."
+      ],
+      "hint": "Combien l'association gagne-t-elle sur une seule crêpe ?"
+    },
+    {
+      "key": "q2",
+      "skill_id": "F002",
+      "statement": "D'après l'enquête, combien de crêpes l'association vendra-t-elle si elle fixe le prix à 3,50 € ?",
+      "type": "numerique",
+      "answer": {
+        "value": 100,
+        "accepted": [
+          "100 crêpes",
+          "100 crepes"
+        ]
+      },
+      "points": 2,
+      "solution_steps": [
+        "On remplace $x$ par 3,5 dans $240 - 40x$.",
+        "$240 - 40 \\times 3{,}5 = 240 - 140 = 100$ : la multiplication passe avant la soustraction.",
+        "L'association vendra **100 crêpes**."
+      ],
+      "hint": "Quelle opération faut-il faire en premier dans $240 - 40x$ ?"
+    },
+    {
+      "key": "q3",
+      "skill_id": "F027",
+      "statement": "Résous l'équation $(x - 1{,}5)(240 - 40x) = 0$ : pour quels prix le bénéfice sur les crêpes est-il nul ? Donne toutes les solutions, séparées par un point-virgule.",
+      "type": "texte",
+      "answer": {
+        "value": "1,5 ; 6",
+        "forme": "solutions"
+      },
+      "points": 3,
+      "solution_steps": [
+        "Un produit est nul si et seulement si l'un au moins de ses facteurs est nul.",
+        "$x - 1{,}5 = 0$ donne $x = 1{,}5$.",
+        "$240 - 40x = 0$ donne $40x = 240$, puis $x = 240 \\div 40 = 6$.",
+        "Les solutions sont 1,5 et 6. À 1,50 €, la crêpe est vendue au prix qu'elle coûte ; à 6 €, l'association n'en vend plus aucune."
+      ],
+      "hint": "Quand un produit de deux facteurs vaut 0, que peut-on dire de ces facteurs ?"
+    },
+    {
+      "key": "q4",
+      "skill_id": "F027",
+      "statement": "Crêpes et gaufres sont vendues au même prix $x$. Pour quels prix l'association ferait-elle le même bénéfice sur les crêpes que sur les gaufres ? Résous l'équation $(x - 1{,}5)(240 - 40x) = (x - 1{,}5)(200 - 20x)$ et donne toutes ses solutions, séparées par un point-virgule.",
+      "type": "texte",
+      "answer": {
+        "value": "1,5 ; 2",
+        "forme": "solutions"
+      },
+      "points": 4,
+      "solution_steps": [
+        "On rassemble tout dans le membre de gauche : $(x - 1{,}5)(240 - 40x) - (x - 1{,}5)(200 - 20x) = 0$.",
+        "On factorise par le facteur commun $(x - 1{,}5)$ : $(x - 1{,}5)\\left[(240 - 40x) - (200 - 20x)\\right] = 0$.",
+        "On réduit le second facteur : $240 - 40x - 200 + 20x = 40 - 20x$. L'équation devient $(x - 1{,}5)(40 - 20x) = 0$.",
+        "Produit nul : $x - 1{,}5 = 0$ donne $x = 1{,}5$ ; $40 - 20x = 0$ donne $20x = 40$, puis $x = 2$.",
+        "Les solutions sont 1,5 et 2. Diviser les deux membres par $x - 1{,}5$ ferait perdre la solution 1,5 : on ne divise pas par une expression qui peut être nulle.",
+        "Vérification à 2 € : $240 - 40 \\times 2 = 160$ crêpes et $200 - 20 \\times 2 = 160$ gaufres, soit $0{,}5 \\times 160 = 80$ € de bénéfice de chaque côté."
+      ],
+      "hint": "Rassemble tout dans le même membre, puis cherche un facteur commun aux deux produits."
+    }
+  ],
+  "review_status": "relu_agent",
+  "programme_ref": "Cycle 4, classe de 3e, Nombres et calculs, Calcul littéral et algébrique, Objectifs d'apprentissage : « Résoudre une équation produit nul. »"
+}

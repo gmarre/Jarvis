@@ -1,0 +1,115 @@
+{
+  "id": "SX-F068-01",
+  "skill_id": "F068",
+  "skill_ids": [
+    "F068",
+    "A040",
+    "B052"
+  ],
+  "school_level": "3e",
+  "title": "La chute des pierres",
+  "contexte": "En sciences, la classe de 3e étudie la chute des objets. Quand on lâche une pierre sans la lancer, la distance $d$ qu'elle a parcourue, en mètres, au bout de $t$ secondes vaut environ $d = 5t^{2}$. On néglige la résistance de l'air.\n\nLors d'une sortie au château de Montbrun, construit vers 1250, les élèves ont relevé trois hauteurs :\nle donjon, haut de 28 m ;\nle vieux puits, profond de 45 m ;\nle pont-levis, à 12,8 m au-dessus de l'eau des douves.\n\nL'entrée du château coûte 8,50 € par élève, et la visite guidée dure une heure et demie.",
+  "image": null,
+  "duree_estimee_min": 15,
+  "questions": [
+    {
+      "key": "q1",
+      "skill_id": "B052",
+      "statement": "Quelle distance une pierre lâchée a-t-elle parcourue au bout de 6 secondes ?",
+      "type": "numerique",
+      "answer": {
+        "value": 180,
+        "unit": "m"
+      },
+      "points": 1,
+      "solution_steps": [
+        "On calcule $5 \\times 6^{2}$ : le carré se calcule avant le produit.",
+        "$5 \\times 6^{2} = 5 \\times 36 = 180$ : la pierre a parcouru **180 m**.",
+        "Attention : $(5 \\times 6)^{2} = 900$ n'est pas le même calcul."
+      ],
+      "hint": "Que calcule-t-on en premier dans $5t^{2}$ ?"
+    },
+    {
+      "key": "q2",
+      "skill_id": "F068",
+      "statement": "Pour le puits, Inès se trompe de signe et écrit l'équation $5t^{2} = -45$. Combien de solutions a cette équation ?",
+      "type": "qcm",
+      "choices": [
+        {
+          "key": "a",
+          "text": "Deux : 3 et $-3$",
+          "misconception": "$5 \\times 3^{2} = 45$ et $5 \\times (-3)^{2} = 45$ : on trouve 45, pas $-45$."
+        },
+        {
+          "key": "b",
+          "text": "Une seule : $-3$",
+          "misconception": "$(-3)^{2} = 9$ est positif : $5 \\times (-3)^{2} = 45$, pas $-45$."
+        },
+        {
+          "key": "c",
+          "text": "Aucune",
+          "misconception": null
+        },
+        {
+          "key": "d",
+          "text": "Deux : 9 et $-9$",
+          "misconception": "On a confondu $t$ et $t^{2}$ ; de plus, un carré n'est jamais négatif."
+        }
+      ],
+      "answer": {
+        "value": "c"
+      },
+      "points": 2,
+      "solution_steps": [
+        "On divise les deux membres par 5 : $t^{2} = -9$.",
+        "Un carré n'est jamais négatif : aucun nombre n'a pour carré $-9$.",
+        "L'équation $5t^{2} = -45$ n'a aucune solution."
+      ],
+      "hint": "Commence par diviser les deux membres par 5."
+    },
+    {
+      "key": "q3",
+      "skill_id": "A040",
+      "statement": "Au bout de combien de secondes une pierre lâchée du haut du donjon touche-t-elle le sol ? Donne la durée arrondie au dixième de seconde : seule la valeur arrondie est acceptée.",
+      "type": "numerique",
+      "answer": {
+        "value": 2.4,
+        "unit": "s",
+        "tolerance": 0
+      },
+      "points": 3,
+      "solution_steps": [
+        "La pierre parcourt 28 m : $5t^{2} = 28$, donc $t^{2} = 28 \\div 5 = 5{,}6$.",
+        "La durée est positive : $t = \\sqrt{5{,}6}$.",
+        "Contrôle : $2^{2} = 4$ et $3^{2} = 9$, donc la durée est entre 2 s et 3 s.",
+        "La calculatrice donne $\\sqrt{5{,}6} \\approx 2{,}366$. Au dixième : 2,4, car le chiffre des centièmes, 6, est supérieur ou égal à 5.",
+        "La pierre touche le sol au bout d'environ **2,4 s**."
+      ],
+      "hint": "Écris l'équation qui traduit la chute, puis isole $t^{2}$."
+    },
+    {
+      "key": "q4",
+      "skill_id": "F068",
+      "statement": "Pour le pont-levis, la durée de chute $t$ vérifie $5t^{2} = 12{,}8$. Résous cette équation : donne toutes ses solutions, séparées par un point-virgule.",
+      "type": "texte",
+      "answer": {
+        "value": "−1,6 ; 1,6",
+        "forme": "solutions",
+        "variables": [
+          "t"
+        ]
+      },
+      "points": 4,
+      "solution_steps": [
+        "On divise les deux membres par 5 : $t^{2} = 12{,}8 \\div 5 = 2{,}56$.",
+        "2,56 est positif : l'équation a deux solutions, $\\sqrt{2{,}56}$ et $-\\sqrt{2{,}56}$.",
+        "$1{,}6 \\times 1{,}6 = 2{,}56$, donc $\\sqrt{2{,}56} = 1{,}6$.",
+        "Les solutions sont $1{,}6$ et $-1{,}6$.",
+        "Seule la solution positive est une durée : la pierre atteint l'eau au bout de 1,6 s. La solution $-1{,}6$ est juste pour l'équation, mais n'a pas de sens pour la chute."
+      ],
+      "hint": "Commence par isoler $t^{2}$."
+    }
+  ],
+  "review_status": "relu_agent",
+  "programme_ref": "Cycle 4, classe de 3e, Nombres et calculs, Racine carrée, Objectifs d'apprentissage : « Résoudre analytiquement et graphiquement des équations de la forme 𝑥2 = a. »"
+}

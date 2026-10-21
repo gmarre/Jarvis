@@ -1,0 +1,125 @@
+{
+  "id": "SX-F021-01",
+  "skill_id": "F021",
+  "skill_ids": [
+    "F021",
+    "A030"
+  ],
+  "school_level": "3e",
+  "title": "Les plateaux du menuisier",
+  "contexte": "Léo, menuisier, fabrique trois plateaux de table carrés pour un restaurant. Les longueurs sont en décimètres (dm) et $x$ est un nombre plus grand que 6.\n\nLe plateau A est un carré de côté $x$. Dans un angle, Léo découpe un petit carré de 6 dm de côté, pour laisser passer un poteau.\n\nLe plateau B est un carré dont l'aire vaut $x^{2} + 18x + 81$.\n\nLe plateau C est un carré dont l'aire vaut $9x^{2} - 12x + 4$.\n\nLe restaurant a aussi commandé 24 chaises. Le chêne coûte 85 € le mètre carré, et la livraison est prévue dans trois semaines.",
+  "image": null,
+  "duree_estimee_min": 15,
+  "questions": [
+    {
+      "key": "q1",
+      "skill_id": "A030",
+      "statement": "L'aire du plateau C est $9x^{2} - 12x + 4$. Un seul de ces trois nombres n'est pas le carré d'un nombre entier. Lequel ?",
+      "type": "qcm",
+      "choices": [
+        {
+          "key": "a",
+          "text": "9",
+          "misconception": "$9 = 3 \\times 3 = 3^{2}$ : c'est le carré de 3."
+        },
+        {
+          "key": "b",
+          "text": "4",
+          "misconception": "$4 = 2 \\times 2 = 2^{2}$ : c'est le carré de 2."
+        },
+        {
+          "key": "c",
+          "text": "12",
+          "misconception": null
+        }
+      ],
+      "answer": {
+        "value": "c"
+      },
+      "points": 1,
+      "solution_steps": [
+        "Les carrés des entiers de 0 à 12 sont 0, 1, 4, 9, 16, 25, 36, 49, 64, 81, 100, 121 et 144.",
+        "$9 = 3^{2}$ et $4 = 2^{2}$ sont des carrés. 12 n'est pas dans la liste : il est entre $3^{2} = 9$ et $4^{2} = 16$.",
+        "Le nombre qui n'est pas un carré est 12. Dans l'aire, il vient du double produit."
+      ],
+      "hint": null
+    },
+    {
+      "key": "q2",
+      "skill_id": "F021",
+      "statement": "Quelle est la longueur du côté du plateau B ? Écris-la en fonction de $x$.",
+      "type": "texte",
+      "answer": {
+        "value": "x + 9",
+        "unit": "dm",
+        "forme": "reduite"
+      },
+      "points": 2,
+      "solution_steps": [
+        "$x^{2} + 18x + 81$ ressemble à $a^{2} + 2ab + b^{2}$ : $x^{2}$ est le carré de $x$ et $81 = 9^{2}$.",
+        "On vérifie le double produit : $2 \\times x \\times 9 = 18x$, c'est bien le terme du milieu.",
+        "Donc $x^{2} + 18x + 81 = (x + 9)^{2}$ : le plateau B est un carré de côté $x + 9$ dm."
+      ],
+      "hint": "L'aire d'un carré est son côté au carré : quelle expression, élevée au carré, donne cette aire ?"
+    },
+    {
+      "key": "q3",
+      "skill_id": "F021",
+      "statement": "Laquelle de ces écritures est la forme factorisée de l'aire du plateau C, $9x^{2} - 12x + 4$ ?",
+      "type": "qcm",
+      "choices": [
+        {
+          "key": "a",
+          "text": "$(9x - 2)^{2}$",
+          "misconception": "$9x^{2}$ est le carré de $3x$, pas de $9x$ : $(9x - 2)^{2} = 81x^{2} - 36x + 4$."
+        },
+        {
+          "key": "b",
+          "text": "$(3x + 2)^{2}$",
+          "misconception": "Le terme du milieu est $-12x$ : il faut une différence, car $(3x + 2)^{2} = 9x^{2} + 12x + 4$."
+        },
+        {
+          "key": "c",
+          "text": "$(3x - 2)(3x + 2)$",
+          "misconception": "Ce produit vaut $9x^{2} - 4$ : il n'a pas de terme en $x$."
+        },
+        {
+          "key": "d",
+          "text": "$(3x - 2)^{2}$",
+          "misconception": null
+        }
+      ],
+      "answer": {
+        "value": "d"
+      },
+      "points": 3,
+      "solution_steps": [
+        "$9x^{2} = (3x)^{2}$ et $4 = 2^{2}$ : on pense à $(a - b)^{2} = a^{2} - 2ab + b^{2}$ avec $a = 3x$ et $b = 2$.",
+        "On vérifie le double produit : $2 \\times 3x \\times 2 = 12x$, précédé du signe moins comme dans l'aire.",
+        "Donc $9x^{2} - 12x + 4 = (3x - 2)^{2}$ : le plateau C est un carré de côté $3x - 2$ dm."
+      ],
+      "hint": "Repère les deux carrés, puis vérifie le terme du milieu."
+    },
+    {
+      "key": "q4",
+      "skill_id": "F021",
+      "statement": "Le restaurant commande deux plateaux A identiques. Une fois les petits carrés découpés, l'aire totale de bois des deux plateaux vaut $2x^{2} - 72$ dm². Factorise complètement $2x^{2} - 72$.",
+      "type": "texte",
+      "answer": {
+        "value": "2(x − 6)(x + 6)",
+        "forme": "factorisee",
+        "unit": "dm²"
+      },
+      "points": 4,
+      "solution_steps": [
+        "Les deux termes sont des multiples de 2 : $2x^{2} - 72 = 2(x^{2} - 36)$.",
+        "Ce n'est pas fini : $x^{2} - 36 = x^{2} - 6^{2}$ est une différence de deux carrés, $a^{2} - b^{2} = (a - b)(a + b)$.",
+        "Donc $2x^{2} - 72 = 2(x - 6)(x + 6)$. Plus aucun facteur ne se factorise : c'est la factorisation complète.",
+        "Contrôle avec $x = 10$ : $2 \\times 10^{2} - 72 = 128$ et $2 \\times 4 \\times 16 = 128$."
+      ],
+      "hint": "Mets d'abord un nombre en facteur, puis regarde ce qui reste dans la parenthèse."
+    }
+  ],
+  "review_status": "relu_agent",
+  "programme_ref": "Cycle 4, classe de 3e, Nombres et calculs, Calcul littéral et algébrique, Objectifs d'apprentissage : « Manipuler les trois identités remarquables pour développer et factoriser »"
+}

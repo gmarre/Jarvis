@@ -1,0 +1,89 @@
+{
+  "id": "SX-F020-01",
+  "skill_id": "F020",
+  "skill_ids": [
+    "F020",
+    "P024"
+  ],
+  "school_level": "3e",
+  "title": "La place des Tilleuls",
+  "contexte": "La commune réaménage la place des Tilleuls. Les longueurs sont en mètres et $x$ est un nombre plus grand que 9.\n\nAu centre de la place, il y aura un bassin carré de côté $x$. Tout autour du bassin, une allée pavée de 3 m de large ; le bassin et son allée formeront un grand carré.\n\nDans un coin, un massif de fleurs rectangulaire aura pour longueur $x + 9$ et pour largeur $x - 9$.\n\nLe long de la mairie, une terrasse rectangulaire mesurera 14 m sur 6,5 m.\n\nLes pavés coûtent 45 € le mètre carré, pose comprise, et les travaux dureront 9 semaines.\n\nPour comparer, le champ de foire du village voisin est un carré de 103 m de côté.",
+  "image": null,
+  "duree_estimee_min": 15,
+  "questions": [
+    {
+      "key": "q1",
+      "skill_id": "P024",
+      "statement": "Quelle sera l'aire de la terrasse, en m² ?",
+      "type": "numerique",
+      "answer": {
+        "value": 91,
+        "unit": "m²"
+      },
+      "points": 1,
+      "solution_steps": [
+        "La terrasse est un rectangle : son aire est longueur × largeur.",
+        "14 × 6,5 = 91 : l'aire de la terrasse sera de **91 m²**."
+      ],
+      "hint": null
+    },
+    {
+      "key": "q2",
+      "skill_id": "F020",
+      "statement": "Sans calculatrice, à l'aide d'une identité remarquable, calcule l'aire du champ de foire du village voisin, en m².",
+      "type": "numerique",
+      "answer": {
+        "value": 10609,
+        "unit": "m²"
+      },
+      "points": 2,
+      "solution_steps": [
+        "L'aire d'un carré de 103 m de côté est $103^{2}$ m².",
+        "On écrit $103 = 100 + 3$ et on utilise $(a + b)^{2} = a^{2} + 2ab + b^{2}$.",
+        "$103^{2} = 100^{2} + 2 \\times 100 \\times 3 + 3^{2} = 10\\,000 + 600 + 9 = 10\\,609$.",
+        "L'aire du champ de foire est de **10 609 m²**. Attention : $100^{2} + 3^{2} = 10\\,009$ oublie le double produit."
+      ],
+      "hint": "Écris 103 comme la somme de deux nombres faciles à élever au carré."
+    },
+    {
+      "key": "q3",
+      "skill_id": "F020",
+      "statement": "Développe et réduis l'aire du massif de fleurs, $(x + 9)(x - 9)$, à l'aide d'une identité remarquable.",
+      "type": "texte",
+      "answer": {
+        "value": "x² − 81",
+        "unit": "m²",
+        "forme": "developpee"
+      },
+      "points": 3,
+      "solution_steps": [
+        "On reconnaît $(a + b)(a - b) = a^{2} - b^{2}$ avec $a = x$ et $b = 9$.",
+        "$(x + 9)(x - 9) = x^{2} - 9^{2} = x^{2} - 81$.",
+        "L'aire du massif est $x^{2} - 81$ m². Il n'y a pas de terme en $x$ : $+9x$ et $-9x$ s'annulent."
+      ],
+      "hint": "Les deux parenthèses ont les mêmes termes ; seul un signe change."
+    },
+    {
+      "key": "q4",
+      "skill_id": "F020",
+      "statement": "Quelle sera l'aire de l'allée pavée ? Écris-la en m², en fonction de $x$, sous forme réduite.",
+      "type": "texte",
+      "answer": {
+        "value": "12x + 36",
+        "unit": "m²",
+        "forme": "reduite"
+      },
+      "points": 4,
+      "solution_steps": [
+        "L'allée borde le bassin des deux côtés : le grand carré a pour côté $x + 3 + 3 = x + 6$.",
+        "Aire de l'allée = aire du grand carré moins aire du bassin = $(x + 6)^{2} - x^{2}$.",
+        "$(x + 6)^{2} = x^{2} + 2 \\times x \\times 6 + 6^{2} = x^{2} + 12x + 36$.",
+        "$x^{2} + 12x + 36 - x^{2} = 12x + 36$ : l'allée a une aire de $12x + 36$ m².",
+        "Erreurs à éviter : écrire $(x + 6)^{2} = x^{2} + 36$, qui oublie le double produit, ou compter seulement quatre bandes de $x$ sur 3, ce qui oublie les quatre coins de 9 m²."
+      ],
+      "hint": "Fais un schéma : l'allée entoure tout le bassin."
+    }
+  ],
+  "review_status": "relu_agent",
+  "programme_ref": "Cycle 4, classe de 3e, Nombres et calculs, Calcul littéral et algébrique, Objectifs d'apprentissage : « Manipuler les trois identités remarquables pour développer et factoriser »"
+}

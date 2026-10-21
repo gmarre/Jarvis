@@ -2,7 +2,7 @@
   "metadata": {
     "version": "1.0",
     "scope": "Super exercices, CP a 3e",
-    "total_super": 211
+    "total_super": 218
   },
   "super": [
     {
@@ -17095,6 +17095,120 @@
       "programme_ref": "Cycle 4, classe de 5e, Nombres et calculs, Calcul littéral et algébrique, Objectifs d'apprentissage : « Exploiter les relations k(a + b) = ka + kb ou k(a – b) = ka – kb pour factoriser, ou développer une expression littérale. »"
     },
     {
+      "id": "SX-F013-01",
+      "skill_id": "F013",
+      "skill_ids": [
+        "F013",
+        "F003",
+        "F014",
+        "P022"
+      ],
+      "school_level": "3e",
+      "title": "Le potager agrandi",
+      "contexte": "Monsieur Laurent cultive un potager carré de $x$ mètres de côté, avec $x$ plus grand que 5. Il veut l'agrandir : il allonge un côté de 7 m et l'autre de 4 m. Le nouveau potager sera donc un rectangle de longueur $x + 7$ et de largeur $x + 4$, en mètres.\n\nDans ce nouveau potager, il installera une serre rectangulaire de longueur $x + 1$ et de largeur $x - 5$, en mètres. Tout le reste du nouveau potager sera planté de légumes.\n\nIl entourera le nouveau potager d'un grillage. Autour de la serre, il posera une bordure en bois, vendue 2,50 € le mètre.\n\nSon cabanon de jardin, un rectangle de 2 m sur 1,5 m, reste à sa place, à l'extérieur du potager. Les travaux commenceront en mars.",
+      "image": null,
+      "duree_estimee_min": 15,
+      "questions": [
+        {
+          "key": "q1",
+          "skill_id": "F003",
+          "statement": "Quelle expression donne l'aire du nouveau potager, en m² ?",
+          "type": "qcm",
+          "choices": [
+            {
+              "key": "a",
+              "text": "$x + 7 \\times x + 4$",
+              "misconception": "Sans parenthèses, la multiplication passe avant l'addition : cette expression vaut $8x + 4$, pas l'aire du rectangle."
+            },
+            {
+              "key": "b",
+              "text": "$2(x + 7) + 2(x + 4)$",
+              "misconception": "C'est le périmètre du nouveau potager, la longueur de son contour, pas son aire."
+            },
+            {
+              "key": "c",
+              "text": "$(x + 7)(x + 4)$",
+              "misconception": null
+            },
+            {
+              "key": "d",
+              "text": "$x^{2} + 7 + 4$",
+              "misconception": "On a ajouté à l'aire de l'ancien potager les longueurs gagnées : on n'ajoute pas une longueur à une aire."
+            }
+          ],
+          "answer": {
+            "value": "c"
+          },
+          "points": 1,
+          "solution_steps": [
+            "L'aire d'un rectangle est longueur × largeur.",
+            "Le nouveau potager mesure $x + 7$ sur $x + 4$ : son aire est $(x + 7) \\times (x + 4)$, qui s'écrit $(x + 7)(x + 4)$.",
+            "Les parenthèses sont indispensables : sans elles, $x + 7 \\times x + 4$ ne multiplie que 7 par $x$."
+          ],
+          "hint": null
+        },
+        {
+          "key": "q2",
+          "skill_id": "P022",
+          "statement": "Quelle longueur de grillage faut-il pour entourer le nouveau potager ? Écris-la en fonction de $x$, sous forme réduite.",
+          "type": "texte",
+          "answer": {
+            "value": "4x + 22",
+            "unit": "m",
+            "forme": "reduite"
+          },
+          "points": 2,
+          "solution_steps": [
+            "Le grillage fait le tour du nouveau potager : sa longueur est le périmètre du rectangle, $2 \\times (L + l)$.",
+            "$2 \\times (x + 7 + x + 4) = 2 \\times (2x + 11) = 4x + 22$.",
+            "Il faut $4x + 22$ mètres de grillage."
+          ],
+          "hint": "Le périmètre d'un rectangle de longueur L et de largeur l est 2 × (L + l)."
+        },
+        {
+          "key": "q3",
+          "skill_id": "F014",
+          "statement": "Écris le prix de la bordure en bois posée autour de la serre, en euros, en fonction de $x$, sous forme réduite.",
+          "type": "texte",
+          "answer": {
+            "value": "10x − 20",
+            "unit": "€",
+            "forme": "reduite"
+          },
+          "points": 2,
+          "solution_steps": [
+            "La bordure fait le tour de la serre : sa longueur est le périmètre de la serre.",
+            "$2 \\times (x + 1 + x - 5) = 2 \\times (2x - 4) = 4x - 8$ mètres.",
+            "Le prix est $2{,}5 \\times (4x - 8) = 2{,}5 \\times 4x + 2{,}5 \\times (-8) = 10x - 20$.",
+            "La bordure coûte $10x - 20$ euros. Le signe moins de $-8$ se retrouve dans le résultat."
+          ],
+          "hint": "Commence par la longueur de la bordure : c'est le tour de la serre."
+        },
+        {
+          "key": "q4",
+          "skill_id": "F013",
+          "statement": "Quelle aire sera plantée de légumes ? Écris-la en m², en fonction de $x$, développée et réduite.",
+          "type": "texte",
+          "answer": {
+            "value": "15x + 33",
+            "unit": "m²",
+            "forme": "reduite"
+          },
+          "points": 4,
+          "solution_steps": [
+            "L'aire plantée est l'aire du nouveau potager moins l'aire de la serre : $(x + 7)(x + 4) - (x + 1)(x - 5)$. Le cabanon est hors du potager : il ne compte pas.",
+            "$(x + 7)(x + 4) = x^{2} + 4x + 7x + 28 = x^{2} + 11x + 28$.",
+            "$(x + 1)(x - 5) = x^{2} - 5x + x - 5 = x^{2} - 4x - 5$.",
+            "On retire toute l'aire de la serre, donc on change tous les signes de sa parenthèse : $x^{2} + 11x + 28 - (x^{2} - 4x - 5) = x^{2} + 11x + 28 - x^{2} + 4x + 5$.",
+            "On réduit : l'aire plantée est $15x + 33$ m²."
+          ],
+          "hint": "Écris d'abord l'aire plantée comme une différence de deux aires, avec des parenthèses."
+        }
+      ],
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 4, classe de 3e, Nombres et calculs, Calcul littéral et algébrique, Objectifs d'apprentissage : « Utiliser la double distributivité pour développer et factoriser des expressions dont le facteur est apparent. »"
+    },
+    {
       "id": "SX-F014-01",
       "skill_id": "F014",
       "skill_ids": [
@@ -17226,6 +17340,220 @@
       ],
       "review_status": "relu_agent",
       "programme_ref": "Cycle 4, classe de 4e, Nombres et calculs, Calcul littéral et algébrique, Objectifs d'apprentissage : « Connaitre et utiliser la distributivité simple pour développer et factoriser une expression algébrique. »"
+    },
+    {
+      "id": "SX-F020-01",
+      "skill_id": "F020",
+      "skill_ids": [
+        "F020",
+        "P024"
+      ],
+      "school_level": "3e",
+      "title": "La place des Tilleuls",
+      "contexte": "La commune réaménage la place des Tilleuls. Les longueurs sont en mètres et $x$ est un nombre plus grand que 9.\n\nAu centre de la place, il y aura un bassin carré de côté $x$. Tout autour du bassin, une allée pavée de 3 m de large ; le bassin et son allée formeront un grand carré.\n\nDans un coin, un massif de fleurs rectangulaire aura pour longueur $x + 9$ et pour largeur $x - 9$.\n\nLe long de la mairie, une terrasse rectangulaire mesurera 14 m sur 6,5 m.\n\nLes pavés coûtent 45 € le mètre carré, pose comprise, et les travaux dureront 9 semaines.\n\nPour comparer, le champ de foire du village voisin est un carré de 103 m de côté.",
+      "image": null,
+      "duree_estimee_min": 15,
+      "questions": [
+        {
+          "key": "q1",
+          "skill_id": "P024",
+          "statement": "Quelle sera l'aire de la terrasse, en m² ?",
+          "type": "numerique",
+          "answer": {
+            "value": 91,
+            "unit": "m²"
+          },
+          "points": 1,
+          "solution_steps": [
+            "La terrasse est un rectangle : son aire est longueur × largeur.",
+            "14 × 6,5 = 91 : l'aire de la terrasse sera de **91 m²**."
+          ],
+          "hint": null
+        },
+        {
+          "key": "q2",
+          "skill_id": "F020",
+          "statement": "Sans calculatrice, à l'aide d'une identité remarquable, calcule l'aire du champ de foire du village voisin, en m².",
+          "type": "numerique",
+          "answer": {
+            "value": 10609,
+            "unit": "m²"
+          },
+          "points": 2,
+          "solution_steps": [
+            "L'aire d'un carré de 103 m de côté est $103^{2}$ m².",
+            "On écrit $103 = 100 + 3$ et on utilise $(a + b)^{2} = a^{2} + 2ab + b^{2}$.",
+            "$103^{2} = 100^{2} + 2 \\times 100 \\times 3 + 3^{2} = 10\\,000 + 600 + 9 = 10\\,609$.",
+            "L'aire du champ de foire est de **10 609 m²**. Attention : $100^{2} + 3^{2} = 10\\,009$ oublie le double produit."
+          ],
+          "hint": "Écris 103 comme la somme de deux nombres faciles à élever au carré."
+        },
+        {
+          "key": "q3",
+          "skill_id": "F020",
+          "statement": "Développe et réduis l'aire du massif de fleurs, $(x + 9)(x - 9)$, à l'aide d'une identité remarquable.",
+          "type": "texte",
+          "answer": {
+            "value": "x² − 81",
+            "unit": "m²",
+            "forme": "developpee"
+          },
+          "points": 3,
+          "solution_steps": [
+            "On reconnaît $(a + b)(a - b) = a^{2} - b^{2}$ avec $a = x$ et $b = 9$.",
+            "$(x + 9)(x - 9) = x^{2} - 9^{2} = x^{2} - 81$.",
+            "L'aire du massif est $x^{2} - 81$ m². Il n'y a pas de terme en $x$ : $+9x$ et $-9x$ s'annulent."
+          ],
+          "hint": "Les deux parenthèses ont les mêmes termes ; seul un signe change."
+        },
+        {
+          "key": "q4",
+          "skill_id": "F020",
+          "statement": "Quelle sera l'aire de l'allée pavée ? Écris-la en m², en fonction de $x$, sous forme réduite.",
+          "type": "texte",
+          "answer": {
+            "value": "12x + 36",
+            "unit": "m²",
+            "forme": "reduite"
+          },
+          "points": 4,
+          "solution_steps": [
+            "L'allée borde le bassin des deux côtés : le grand carré a pour côté $x + 3 + 3 = x + 6$.",
+            "Aire de l'allée = aire du grand carré moins aire du bassin = $(x + 6)^{2} - x^{2}$.",
+            "$(x + 6)^{2} = x^{2} + 2 \\times x \\times 6 + 6^{2} = x^{2} + 12x + 36$.",
+            "$x^{2} + 12x + 36 - x^{2} = 12x + 36$ : l'allée a une aire de $12x + 36$ m².",
+            "Erreurs à éviter : écrire $(x + 6)^{2} = x^{2} + 36$, qui oublie le double produit, ou compter seulement quatre bandes de $x$ sur 3, ce qui oublie les quatre coins de 9 m²."
+          ],
+          "hint": "Fais un schéma : l'allée entoure tout le bassin."
+        }
+      ],
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 4, classe de 3e, Nombres et calculs, Calcul littéral et algébrique, Objectifs d'apprentissage : « Manipuler les trois identités remarquables pour développer et factoriser »"
+    },
+    {
+      "id": "SX-F021-01",
+      "skill_id": "F021",
+      "skill_ids": [
+        "F021",
+        "A030"
+      ],
+      "school_level": "3e",
+      "title": "Les plateaux du menuisier",
+      "contexte": "Léo, menuisier, fabrique trois plateaux de table carrés pour un restaurant. Les longueurs sont en décimètres (dm) et $x$ est un nombre plus grand que 6.\n\nLe plateau A est un carré de côté $x$. Dans un angle, Léo découpe un petit carré de 6 dm de côté, pour laisser passer un poteau.\n\nLe plateau B est un carré dont l'aire vaut $x^{2} + 18x + 81$.\n\nLe plateau C est un carré dont l'aire vaut $9x^{2} - 12x + 4$.\n\nLe restaurant a aussi commandé 24 chaises. Le chêne coûte 85 € le mètre carré, et la livraison est prévue dans trois semaines.",
+      "image": null,
+      "duree_estimee_min": 15,
+      "questions": [
+        {
+          "key": "q1",
+          "skill_id": "A030",
+          "statement": "L'aire du plateau C est $9x^{2} - 12x + 4$. Un seul de ces trois nombres n'est pas le carré d'un nombre entier. Lequel ?",
+          "type": "qcm",
+          "choices": [
+            {
+              "key": "a",
+              "text": "9",
+              "misconception": "$9 = 3 \\times 3 = 3^{2}$ : c'est le carré de 3."
+            },
+            {
+              "key": "b",
+              "text": "4",
+              "misconception": "$4 = 2 \\times 2 = 2^{2}$ : c'est le carré de 2."
+            },
+            {
+              "key": "c",
+              "text": "12",
+              "misconception": null
+            }
+          ],
+          "answer": {
+            "value": "c"
+          },
+          "points": 1,
+          "solution_steps": [
+            "Les carrés des entiers de 0 à 12 sont 0, 1, 4, 9, 16, 25, 36, 49, 64, 81, 100, 121 et 144.",
+            "$9 = 3^{2}$ et $4 = 2^{2}$ sont des carrés. 12 n'est pas dans la liste : il est entre $3^{2} = 9$ et $4^{2} = 16$.",
+            "Le nombre qui n'est pas un carré est 12. Dans l'aire, il vient du double produit."
+          ],
+          "hint": null
+        },
+        {
+          "key": "q2",
+          "skill_id": "F021",
+          "statement": "Quelle est la longueur du côté du plateau B ? Écris-la en fonction de $x$.",
+          "type": "texte",
+          "answer": {
+            "value": "x + 9",
+            "unit": "dm",
+            "forme": "reduite"
+          },
+          "points": 2,
+          "solution_steps": [
+            "$x^{2} + 18x + 81$ ressemble à $a^{2} + 2ab + b^{2}$ : $x^{2}$ est le carré de $x$ et $81 = 9^{2}$.",
+            "On vérifie le double produit : $2 \\times x \\times 9 = 18x$, c'est bien le terme du milieu.",
+            "Donc $x^{2} + 18x + 81 = (x + 9)^{2}$ : le plateau B est un carré de côté $x + 9$ dm."
+          ],
+          "hint": "L'aire d'un carré est son côté au carré : quelle expression, élevée au carré, donne cette aire ?"
+        },
+        {
+          "key": "q3",
+          "skill_id": "F021",
+          "statement": "Laquelle de ces écritures est la forme factorisée de l'aire du plateau C, $9x^{2} - 12x + 4$ ?",
+          "type": "qcm",
+          "choices": [
+            {
+              "key": "a",
+              "text": "$(9x - 2)^{2}$",
+              "misconception": "$9x^{2}$ est le carré de $3x$, pas de $9x$ : $(9x - 2)^{2} = 81x^{2} - 36x + 4$."
+            },
+            {
+              "key": "b",
+              "text": "$(3x + 2)^{2}$",
+              "misconception": "Le terme du milieu est $-12x$ : il faut une différence, car $(3x + 2)^{2} = 9x^{2} + 12x + 4$."
+            },
+            {
+              "key": "c",
+              "text": "$(3x - 2)(3x + 2)$",
+              "misconception": "Ce produit vaut $9x^{2} - 4$ : il n'a pas de terme en $x$."
+            },
+            {
+              "key": "d",
+              "text": "$(3x - 2)^{2}$",
+              "misconception": null
+            }
+          ],
+          "answer": {
+            "value": "d"
+          },
+          "points": 3,
+          "solution_steps": [
+            "$9x^{2} = (3x)^{2}$ et $4 = 2^{2}$ : on pense à $(a - b)^{2} = a^{2} - 2ab + b^{2}$ avec $a = 3x$ et $b = 2$.",
+            "On vérifie le double produit : $2 \\times 3x \\times 2 = 12x$, précédé du signe moins comme dans l'aire.",
+            "Donc $9x^{2} - 12x + 4 = (3x - 2)^{2}$ : le plateau C est un carré de côté $3x - 2$ dm."
+          ],
+          "hint": "Repère les deux carrés, puis vérifie le terme du milieu."
+        },
+        {
+          "key": "q4",
+          "skill_id": "F021",
+          "statement": "Le restaurant commande deux plateaux A identiques. Une fois les petits carrés découpés, l'aire totale de bois des deux plateaux vaut $2x^{2} - 72$ dm². Factorise complètement $2x^{2} - 72$.",
+          "type": "texte",
+          "answer": {
+            "value": "2(x − 6)(x + 6)",
+            "forme": "factorisee",
+            "unit": "dm²"
+          },
+          "points": 4,
+          "solution_steps": [
+            "Les deux termes sont des multiples de 2 : $2x^{2} - 72 = 2(x^{2} - 36)$.",
+            "Ce n'est pas fini : $x^{2} - 36 = x^{2} - 6^{2}$ est une différence de deux carrés, $a^{2} - b^{2} = (a - b)(a + b)$.",
+            "Donc $2x^{2} - 72 = 2(x - 6)(x + 6)$. Plus aucun facteur ne se factorise : c'est la factorisation complète.",
+            "Contrôle avec $x = 10$ : $2 \\times 10^{2} - 72 = 128$ et $2 \\times 4 \\times 16 = 128$."
+          ],
+          "hint": "Mets d'abord un nombre en facteur, puis regarde ce qui reste dans la parenthèse."
+        }
+      ],
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 4, classe de 3e, Nombres et calculs, Calcul littéral et algébrique, Objectifs d'apprentissage : « Manipuler les trois identités remarquables pour développer et factoriser »"
     },
     {
       "id": "SX-F022-01",
@@ -17725,6 +18053,230 @@
       ],
       "review_status": "relu_agent",
       "programme_ref": "Cycle 4, classe de 4e, Nombres et calculs, Calcul littéral et algébrique, Objectifs d'apprentissage : « Mettre en équation un problème et le résoudre à l'aide d'une équation du premier degré du type a𝑥 + b = c𝑥 + d. »"
+    },
+    {
+      "id": "SX-F027-01",
+      "skill_id": "F027",
+      "skill_ids": [
+        "F027",
+        "D024",
+        "F002"
+      ],
+      "school_level": "3e",
+      "title": "Crêpes et gaufres à la kermesse",
+      "contexte": "Pour financer une sortie au planétarium, qui coûte 420 € au total, l'association du collège vend des crêpes et des gaufres à la kermesse. Chaque crêpe et chaque gaufre lui coûte 1,50 € à fabriquer.\n\nL'an dernier, l'association avait vendu 180 crêpes à 2 € pièce.\n\nCette année, une enquête auprès des familles donne des prévisions. Si la crêpe est vendue $x$ euros, l'association en vendra $240 - 40x$, et son bénéfice sur les crêpes, en euros, sera $(x - 1{,}5)(240 - 40x)$.\n\nSi la gaufre est vendue $x$ euros, elle en vendra $200 - 20x$, et son bénéfice sur les gaufres sera $(x - 1{,}5)(200 - 20x)$.\n\nLa kermesse aura lieu un samedi, de 14 h à 18 h.",
+      "image": null,
+      "duree_estimee_min": 15,
+      "questions": [
+        {
+          "key": "q1",
+          "skill_id": "D024",
+          "statement": "L'an dernier, quel bénéfice l'association a-t-elle fait sur les crêpes ?",
+          "type": "numerique",
+          "answer": {
+            "value": 90,
+            "unit": "€"
+          },
+          "points": 1,
+          "solution_steps": [
+            "Bénéfice sur une crêpe : 2 − 1,50 = 0,50 €.",
+            "Pour 180 crêpes : 180 × 0,5 = 90.",
+            "L'an dernier, le bénéfice sur les crêpes était de **90 €**."
+          ],
+          "hint": "Combien l'association gagne-t-elle sur une seule crêpe ?"
+        },
+        {
+          "key": "q2",
+          "skill_id": "F002",
+          "statement": "D'après l'enquête, combien de crêpes l'association vendra-t-elle si elle fixe le prix à 3,50 € ?",
+          "type": "numerique",
+          "answer": {
+            "value": 100,
+            "accepted": [
+              "100 crêpes",
+              "100 crepes"
+            ]
+          },
+          "points": 2,
+          "solution_steps": [
+            "On remplace $x$ par 3,5 dans $240 - 40x$.",
+            "$240 - 40 \\times 3{,}5 = 240 - 140 = 100$ : la multiplication passe avant la soustraction.",
+            "L'association vendra **100 crêpes**."
+          ],
+          "hint": "Quelle opération faut-il faire en premier dans $240 - 40x$ ?"
+        },
+        {
+          "key": "q3",
+          "skill_id": "F027",
+          "statement": "Résous l'équation $(x - 1{,}5)(240 - 40x) = 0$ : pour quels prix le bénéfice sur les crêpes est-il nul ? Donne toutes les solutions, séparées par un point-virgule.",
+          "type": "texte",
+          "answer": {
+            "value": "1,5 ; 6",
+            "forme": "solutions"
+          },
+          "points": 3,
+          "solution_steps": [
+            "Un produit est nul si et seulement si l'un au moins de ses facteurs est nul.",
+            "$x - 1{,}5 = 0$ donne $x = 1{,}5$.",
+            "$240 - 40x = 0$ donne $40x = 240$, puis $x = 240 \\div 40 = 6$.",
+            "Les solutions sont 1,5 et 6. À 1,50 €, la crêpe est vendue au prix qu'elle coûte ; à 6 €, l'association n'en vend plus aucune."
+          ],
+          "hint": "Quand un produit de deux facteurs vaut 0, que peut-on dire de ces facteurs ?"
+        },
+        {
+          "key": "q4",
+          "skill_id": "F027",
+          "statement": "Crêpes et gaufres sont vendues au même prix $x$. Pour quels prix l'association ferait-elle le même bénéfice sur les crêpes que sur les gaufres ? Résous l'équation $(x - 1{,}5)(240 - 40x) = (x - 1{,}5)(200 - 20x)$ et donne toutes ses solutions, séparées par un point-virgule.",
+          "type": "texte",
+          "answer": {
+            "value": "1,5 ; 2",
+            "forme": "solutions"
+          },
+          "points": 4,
+          "solution_steps": [
+            "On rassemble tout dans le membre de gauche : $(x - 1{,}5)(240 - 40x) - (x - 1{,}5)(200 - 20x) = 0$.",
+            "On factorise par le facteur commun $(x - 1{,}5)$ : $(x - 1{,}5)\\left[(240 - 40x) - (200 - 20x)\\right] = 0$.",
+            "On réduit le second facteur : $240 - 40x - 200 + 20x = 40 - 20x$. L'équation devient $(x - 1{,}5)(40 - 20x) = 0$.",
+            "Produit nul : $x - 1{,}5 = 0$ donne $x = 1{,}5$ ; $40 - 20x = 0$ donne $20x = 40$, puis $x = 2$.",
+            "Les solutions sont 1,5 et 2. Diviser les deux membres par $x - 1{,}5$ ferait perdre la solution 1,5 : on ne divise pas par une expression qui peut être nulle.",
+            "Vérification à 2 € : $240 - 40 \\times 2 = 160$ crêpes et $200 - 20 \\times 2 = 160$ gaufres, soit $0{,}5 \\times 160 = 80$ € de bénéfice de chaque côté."
+          ],
+          "hint": "Rassemble tout dans le même membre, puis cherche un facteur commun aux deux produits."
+        }
+      ],
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 4, classe de 3e, Nombres et calculs, Calcul littéral et algébrique, Objectifs d'apprentissage : « Résoudre une équation produit nul. »"
+    },
+    {
+      "id": "SX-F031-01",
+      "skill_id": "F031",
+      "skill_ids": [
+        "F031",
+        "A023"
+      ],
+      "school_level": "3e",
+      "title": "Sortie en montagne",
+      "contexte": "Le club de randonnée du collège prépare une sortie en montagne. Le car partira du collège à 7 h 30.\n\nAu départ du sentier, il fait 14 °C. Le guide explique que la température baisse d'environ 6 °C à chaque kilomètre de montée : quand le groupe sera monté de $x$ kilomètres, la température aura varié de $-6x$ degrés.\n\nLa veille, le guide a relevé la température au sommet de quatre montagnes :\nPic Blanc, −2,6 °C ;\nMont Rond, −0,7 °C ;\nAiguille Noire, −3,4 °C ;\nCol Vert, 1,2 °C.\n\nLe soir, le groupe dormira dans un refuge qui facture la nuit 8 € par personne. Le club dispose de 300 € pour payer le refuge.",
+      "image": null,
+      "duree_estimee_min": 15,
+      "questions": [
+        {
+          "key": "q1",
+          "skill_id": "A023",
+          "statement": "Au sommet de quelle montagne faisait-il le plus froid la veille ?",
+          "type": "qcm",
+          "choices": [
+            {
+              "key": "a",
+              "text": "Pic Blanc",
+              "misconception": "−2,6 est plus proche de zéro que −3,4 : il est plus grand. De deux nombres négatifs, le plus petit est le plus éloigné de zéro."
+            },
+            {
+              "key": "b",
+              "text": "Mont Rond",
+              "misconception": "−0,7 est le négatif le plus proche de zéro : c'est le plus grand des trois, donc la moins froide des trois températures négatives."
+            },
+            {
+              "key": "c",
+              "text": "Aiguille Noire",
+              "misconception": null
+            },
+            {
+              "key": "d",
+              "text": "Col Vert",
+              "misconception": "1,2 °C est positif : c'est la température la plus haute, pas la plus basse."
+            }
+          ],
+          "answer": {
+            "value": "c"
+          },
+          "points": 1,
+          "solution_steps": [
+            "Le plus froid correspond à la plus petite température.",
+            "Un nombre négatif est plus petit qu'un nombre positif, et de deux nombres négatifs, le plus petit est le plus éloigné de zéro.",
+            "−3,4 < −2,6 < −0,7 < 1,2 : il faisait le plus froid à l'**Aiguille Noire**."
+          ],
+          "hint": null
+        },
+        {
+          "key": "q2",
+          "skill_id": "F031",
+          "statement": "On note $n$ le nombre de personnes qui dormiront au refuge. Pour ne pas dépasser le budget, il faut $8n \\leqslant 300$. Combien de personnes au maximum peuvent dormir au refuge ?",
+          "type": "numerique",
+          "answer": {
+            "value": 37,
+            "accepted": [
+              "37 personnes"
+            ]
+          },
+          "points": 2,
+          "solution_steps": [
+            "On divise les deux membres par 8, qui est positif : le sens de l'inégalité est conservé. On obtient $n \\leqslant 300 \\div 8$, soit $n \\leqslant 37{,}5$.",
+            "Le nombre de personnes est un entier : au plus **37**.",
+            "Vérification : $8 \\times 37 = 296$, qui ne dépasse pas 300 ; $8 \\times 38 = 304$ dépasse 300."
+          ],
+          "hint": "Le nombre de personnes est un nombre entier."
+        },
+        {
+          "key": "q3",
+          "skill_id": "F031",
+          "statement": "Lequel de ces nombres est solution de l'inéquation $-6x \\leqslant -15$ ?",
+          "type": "qcm",
+          "choices": [
+            {
+              "key": "a",
+              "text": "0",
+              "misconception": "$-6 \\times 0 = 0$, et 0 est plus grand que $-15$ : 0 n'est pas solution."
+            },
+            {
+              "key": "b",
+              "text": "2",
+              "misconception": "$-6 \\times 2 = -12$ et $-12 > -15$ : comparer 12 et 15 sans tenir compte du signe donne la mauvaise conclusion."
+            },
+            {
+              "key": "c",
+              "text": "3",
+              "misconception": null
+            },
+            {
+              "key": "d",
+              "text": "−3",
+              "misconception": "$-6 \\times (-3) = 18$ : le produit de deux nombres négatifs est positif, et $18 > -15$."
+            }
+          ],
+          "answer": {
+            "value": "c"
+          },
+          "points": 2,
+          "solution_steps": [
+            "On remplace $x$ par chaque nombre et on regarde si $-6x \\leqslant -15$ est vrai.",
+            "Pour 3 : $-6 \\times 3 = -18$, et $-18 \\leqslant -15$ est vrai, car $-18$ est plus éloigné de zéro que $-15$.",
+            "Pour 0, 2 et $-3$, on obtient 0, $-12$ et 18, tous plus grands que $-15$.",
+            "Le seul nombre solution est 3."
+          ],
+          "hint": "Remplace x par chaque nombre proposé."
+        },
+        {
+          "key": "q4",
+          "skill_id": "F031",
+          "statement": "La température aura baissé d'au moins 15 °C lorsque $-6x \\leqslant -15$. Résous cette inéquation : écris l'inégalité qui donne toutes ses solutions ($\\geqslant$ peut se taper >=, et $\\leqslant$ peut se taper <=).",
+          "type": "texte",
+          "answer": {
+            "value": "x ⩾ 2,5",
+            "forme": "inegalite"
+          },
+          "points": 4,
+          "solution_steps": [
+            "On divise les deux membres par $-6$ : $-15 \\div (-6) = 2{,}5$.",
+            "$-6$ est négatif : diviser par un nombre négatif change le sens de l'inégalité. On obtient $x \\geqslant 2{,}5$.",
+            "Vérification avec 3, qui est bien supérieur à 2,5 : $-6 \\times 3 = -18$ et $-18 \\leqslant -15$ est vrai.",
+            "La température aura baissé d'au moins 15 °C dès que le groupe sera monté de 2,5 km ou plus."
+          ],
+          "hint": "Par quel nombre faut-il diviser les deux membres ? Est-il positif ou négatif ?"
+        }
+      ],
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 4, classe de 3e, Nombres et calculs, Calcul littéral et algébrique, Objectifs d'apprentissage : « Résoudre analytiquement et graphiquement une inéquation du premier degré du type a𝑥 ⩾ b. »"
     },
     {
       "id": "SX-F061-01",
@@ -18504,6 +19056,237 @@
       ],
       "review_status": "relu_agent",
       "programme_ref": "Cycle 4, classe de 4e, Nombres et calculs, Calcul littéral et algébrique, Objectifs d'apprentissage : « Mettre en équation un problème et le résoudre à l'aide d'une équation du premier degré du type a𝑥 + b = c𝑥 + d. »"
+    },
+    {
+      "id": "SX-F067-01",
+      "skill_id": "F067",
+      "skill_ids": [
+        "F067",
+        "C007",
+        "F013"
+      ],
+      "school_level": "3e",
+      "title": "Le champ partagé",
+      "contexte": "Une agricultrice possède un champ rectangulaire, partagé en deux parcelles rectangulaires accolées. Les longueurs sont en décamètres (dam) et $x$ est un nombre plus grand que 2.\n\nLes deux parcelles ont la même largeur, $x + 8$.\nLa parcelle de blé a pour longueur $2x + 7$.\nLa parcelle de colza a pour longueur $x - 2$.\n\nL'an dernier, sur les 48 hectares de son exploitation, elle avait semé 18 hectares de maïs.\n\nElle possède deux tracteurs et 35 vaches laitières, et elle vend son lait à une coopérative.",
+      "image": null,
+      "duree_estimee_min": 15,
+      "questions": [
+        {
+          "key": "q1",
+          "skill_id": "C007",
+          "statement": "Quelle fraction de son exploitation était semée en maïs l'an dernier ? Donne-la sous forme irréductible.",
+          "type": "texte",
+          "answer": {
+            "value": "3/8",
+            "accepted": [
+              "3 / 8",
+              "trois huitièmes",
+              "trois huitiemes",
+              "3/8 de l'exploitation"
+            ]
+          },
+          "points": 2,
+          "solution_steps": [
+            "La fraction est $\\frac{18}{48}$ : 18 hectares sur 48.",
+            "18 et 48 sont dans la table de 6 : 18 = 6 × 3 et 48 = 6 × 8.",
+            "$\\frac{18}{48} = \\frac{6 \\times 3}{6 \\times 8} = \\frac{3}{8}$. 3 et 8 n'ont pas d'autre diviseur commun que 1 : $\\frac{3}{8}$ est irréductible."
+          ],
+          "hint": "Cherche un nombre qui divise à la fois 18 et 48."
+        },
+        {
+          "key": "q2",
+          "skill_id": "F013",
+          "statement": "Développe et réduis l'aire de la parcelle de colza, $(x + 8)(x - 2)$.",
+          "type": "texte",
+          "answer": {
+            "value": "x² + 6x − 16",
+            "unit": "dam²",
+            "forme": "developpee"
+          },
+          "points": 2,
+          "solution_steps": [
+            "Chaque terme de $x + 8$ multiplie chaque terme de $x - 2$ : $x \\times x = x^{2}$ ; $x \\times (-2) = -2x$ ; $8 \\times x = 8x$ ; $8 \\times (-2) = -16$.",
+            "$(x + 8)(x - 2) = x^{2} - 2x + 8x - 16 = x^{2} + 6x - 16$.",
+            "L'aire de la parcelle de colza est $x^{2} + 6x - 16$ dam²."
+          ],
+          "hint": "Quatre produits à écrire ; attention au signe de $-2$."
+        },
+        {
+          "key": "q3",
+          "skill_id": "F067",
+          "statement": "Combien de fois la parcelle de blé est-elle plus grande que la parcelle de colza ? On simplifie le quotient de leurs aires, $\\frac{(x + 8)(2x + 7)}{(x + 8)(x - 2)}$. Quel résultat est juste ?",
+          "type": "qcm",
+          "choices": [
+            {
+              "key": "a",
+              "text": "$x + 9$",
+              "misconception": "C'est la différence des longueurs $(2x + 7) - (x - 2)$ : elle dit de combien la parcelle de blé est plus longue, pas combien de fois elle est plus grande."
+            },
+            {
+              "key": "b",
+              "text": "$2$",
+              "misconception": "On a simplifié $2x$ par $x$ en oubliant 7 et $-2$ : on ne simplifie pas un terme d'une somme."
+            },
+            {
+              "key": "c",
+              "text": "$\\frac{2x + 7}{x - 2}$",
+              "misconception": null
+            },
+            {
+              "key": "d",
+              "text": "$\\frac{(x + 8)(2x + 7)}{x - 2}$",
+              "misconception": "Le facteur $(x + 8)$ est au numérateur et au dénominateur : il faut le simplifier des deux côtés, pas d'un seul."
+            }
+          ],
+          "answer": {
+            "value": "c"
+          },
+          "points": 3,
+          "solution_steps": [
+            "$(x + 8)$ est un facteur du numérateur et un facteur du dénominateur, et il n'est pas nul, car $x$ est plus grand que 2.",
+            "On simplifie par ce facteur commun : $\\frac{(x + 8)(2x + 7)}{(x + 8)(x - 2)} = \\frac{2x + 7}{x - 2}$.",
+            "On ne va pas plus loin : $2x + 7$ et $x - 2$ sont des sommes, et on ne simplifie jamais un terme d'une somme.",
+            "La parcelle de blé est $\\frac{2x + 7}{x - 2}$ fois plus grande que celle de colza."
+          ],
+          "hint": "Cherche ce qui apparaît à la fois au numérateur et au dénominateur."
+        },
+        {
+          "key": "q4",
+          "skill_id": "F067",
+          "statement": "L'aire totale du champ est $A = (x + 8)(2x + 7) + (x + 8)(x - 2)$. Factorise $A$ en réduisant le second facteur, et écris ta réponse avec des parenthèses, sans crochets.",
+          "type": "texte",
+          "answer": {
+            "value": "(x + 8)(3x + 5)",
+            "forme": "factorisee",
+            "unit": "dam²"
+          },
+          "points": 4,
+          "solution_steps": [
+            "Les deux termes ont un facteur commun apparent, $(x + 8)$.",
+            "$A = (x + 8)\\left[(2x + 7) + (x - 2)\\right]$ : on met le second facteur entre crochets avant de le réduire.",
+            "$(2x + 7) + (x - 2) = 3x + 5$, donc $A = (x + 8)(3x + 5)$.",
+            "Ce résultat se lit sur le champ : c'est un rectangle de largeur $x + 8$ et de longueur $(2x + 7) + (x - 2) = 3x + 5$."
+          ],
+          "hint": "Quel facteur apparaît dans les deux produits ?"
+        }
+      ],
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 4, classe de 3e, Nombres et calculs, Calcul littéral et algébrique, Objectifs d'apprentissage : « Utiliser la double distributivité pour développer et factoriser des expressions dont le facteur est apparent. »"
+    },
+    {
+      "id": "SX-F068-01",
+      "skill_id": "F068",
+      "skill_ids": [
+        "F068",
+        "A040",
+        "B052"
+      ],
+      "school_level": "3e",
+      "title": "La chute des pierres",
+      "contexte": "En sciences, la classe de 3e étudie la chute des objets. Quand on lâche une pierre sans la lancer, la distance $d$ qu'elle a parcourue, en mètres, au bout de $t$ secondes vaut environ $d = 5t^{2}$. On néglige la résistance de l'air.\n\nLors d'une sortie au château de Montbrun, construit vers 1250, les élèves ont relevé trois hauteurs :\nle donjon, haut de 28 m ;\nle vieux puits, profond de 45 m ;\nle pont-levis, à 12,8 m au-dessus de l'eau des douves.\n\nL'entrée du château coûte 8,50 € par élève, et la visite guidée dure une heure et demie.",
+      "image": null,
+      "duree_estimee_min": 15,
+      "questions": [
+        {
+          "key": "q1",
+          "skill_id": "B052",
+          "statement": "Quelle distance une pierre lâchée a-t-elle parcourue au bout de 6 secondes ?",
+          "type": "numerique",
+          "answer": {
+            "value": 180,
+            "unit": "m"
+          },
+          "points": 1,
+          "solution_steps": [
+            "On calcule $5 \\times 6^{2}$ : le carré se calcule avant le produit.",
+            "$5 \\times 6^{2} = 5 \\times 36 = 180$ : la pierre a parcouru **180 m**.",
+            "Attention : $(5 \\times 6)^{2} = 900$ n'est pas le même calcul."
+          ],
+          "hint": "Que calcule-t-on en premier dans $5t^{2}$ ?"
+        },
+        {
+          "key": "q2",
+          "skill_id": "F068",
+          "statement": "Pour le puits, Inès se trompe de signe et écrit l'équation $5t^{2} = -45$. Combien de solutions a cette équation ?",
+          "type": "qcm",
+          "choices": [
+            {
+              "key": "a",
+              "text": "Deux : 3 et $-3$",
+              "misconception": "$5 \\times 3^{2} = 45$ et $5 \\times (-3)^{2} = 45$ : on trouve 45, pas $-45$."
+            },
+            {
+              "key": "b",
+              "text": "Une seule : $-3$",
+              "misconception": "$(-3)^{2} = 9$ est positif : $5 \\times (-3)^{2} = 45$, pas $-45$."
+            },
+            {
+              "key": "c",
+              "text": "Aucune",
+              "misconception": null
+            },
+            {
+              "key": "d",
+              "text": "Deux : 9 et $-9$",
+              "misconception": "On a confondu $t$ et $t^{2}$ ; de plus, un carré n'est jamais négatif."
+            }
+          ],
+          "answer": {
+            "value": "c"
+          },
+          "points": 2,
+          "solution_steps": [
+            "On divise les deux membres par 5 : $t^{2} = -9$.",
+            "Un carré n'est jamais négatif : aucun nombre n'a pour carré $-9$.",
+            "L'équation $5t^{2} = -45$ n'a aucune solution."
+          ],
+          "hint": "Commence par diviser les deux membres par 5."
+        },
+        {
+          "key": "q3",
+          "skill_id": "A040",
+          "statement": "Au bout de combien de secondes une pierre lâchée du haut du donjon touche-t-elle le sol ? Donne la durée arrondie au dixième de seconde : seule la valeur arrondie est acceptée.",
+          "type": "numerique",
+          "answer": {
+            "value": 2.4,
+            "unit": "s",
+            "tolerance": 0
+          },
+          "points": 3,
+          "solution_steps": [
+            "La pierre parcourt 28 m : $5t^{2} = 28$, donc $t^{2} = 28 \\div 5 = 5{,}6$.",
+            "La durée est positive : $t = \\sqrt{5{,}6}$.",
+            "Contrôle : $2^{2} = 4$ et $3^{2} = 9$, donc la durée est entre 2 s et 3 s.",
+            "La calculatrice donne $\\sqrt{5{,}6} \\approx 2{,}366$. Au dixième : 2,4, car le chiffre des centièmes, 6, est supérieur ou égal à 5.",
+            "La pierre touche le sol au bout d'environ **2,4 s**."
+          ],
+          "hint": "Écris l'équation qui traduit la chute, puis isole $t^{2}$."
+        },
+        {
+          "key": "q4",
+          "skill_id": "F068",
+          "statement": "Pour le pont-levis, la durée de chute $t$ vérifie $5t^{2} = 12{,}8$. Résous cette équation : donne toutes ses solutions, séparées par un point-virgule.",
+          "type": "texte",
+          "answer": {
+            "value": "−1,6 ; 1,6",
+            "forme": "solutions",
+            "variables": [
+              "t"
+            ]
+          },
+          "points": 4,
+          "solution_steps": [
+            "On divise les deux membres par 5 : $t^{2} = 12{,}8 \\div 5 = 2{,}56$.",
+            "2,56 est positif : l'équation a deux solutions, $\\sqrt{2{,}56}$ et $-\\sqrt{2{,}56}$.",
+            "$1{,}6 \\times 1{,}6 = 2{,}56$, donc $\\sqrt{2{,}56} = 1{,}6$.",
+            "Les solutions sont $1{,}6$ et $-1{,}6$.",
+            "Seule la solution positive est une durée : la pierre atteint l'eau au bout de 1,6 s. La solution $-1{,}6$ est juste pour l'équation, mais n'a pas de sens pour la chute."
+          ],
+          "hint": "Commence par isoler $t^{2}$."
+        }
+      ],
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 4, classe de 3e, Nombres et calculs, Racine carrée, Objectifs d'apprentissage : « Résoudre analytiquement et graphiquement des équations de la forme 𝑥2 = a. »"
     },
     {
       "id": "SX-G002-01",

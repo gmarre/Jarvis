@@ -1,0 +1,116 @@
+{
+  "id": "SX-F067-01",
+  "skill_id": "F067",
+  "skill_ids": [
+    "F067",
+    "C007",
+    "F013"
+  ],
+  "school_level": "3e",
+  "title": "Le champ partagé",
+  "contexte": "Une agricultrice possède un champ rectangulaire, partagé en deux parcelles rectangulaires accolées. Les longueurs sont en décamètres (dam) et $x$ est un nombre plus grand que 2.\n\nLes deux parcelles ont la même largeur, $x + 8$.\nLa parcelle de blé a pour longueur $2x + 7$.\nLa parcelle de colza a pour longueur $x - 2$.\n\nL'an dernier, sur les 48 hectares de son exploitation, elle avait semé 18 hectares de maïs.\n\nElle possède deux tracteurs et 35 vaches laitières, et elle vend son lait à une coopérative.",
+  "image": null,
+  "duree_estimee_min": 15,
+  "questions": [
+    {
+      "key": "q1",
+      "skill_id": "C007",
+      "statement": "Quelle fraction de son exploitation était semée en maïs l'an dernier ? Donne-la sous forme irréductible.",
+      "type": "texte",
+      "answer": {
+        "value": "3/8",
+        "accepted": [
+          "3 / 8",
+          "trois huitièmes",
+          "trois huitiemes",
+          "3/8 de l'exploitation"
+        ]
+      },
+      "points": 2,
+      "solution_steps": [
+        "La fraction est $\\frac{18}{48}$ : 18 hectares sur 48.",
+        "18 et 48 sont dans la table de 6 : 18 = 6 × 3 et 48 = 6 × 8.",
+        "$\\frac{18}{48} = \\frac{6 \\times 3}{6 \\times 8} = \\frac{3}{8}$. 3 et 8 n'ont pas d'autre diviseur commun que 1 : $\\frac{3}{8}$ est irréductible."
+      ],
+      "hint": "Cherche un nombre qui divise à la fois 18 et 48."
+    },
+    {
+      "key": "q2",
+      "skill_id": "F013",
+      "statement": "Développe et réduis l'aire de la parcelle de colza, $(x + 8)(x - 2)$.",
+      "type": "texte",
+      "answer": {
+        "value": "x² + 6x − 16",
+        "unit": "dam²",
+        "forme": "developpee"
+      },
+      "points": 2,
+      "solution_steps": [
+        "Chaque terme de $x + 8$ multiplie chaque terme de $x - 2$ : $x \\times x = x^{2}$ ; $x \\times (-2) = -2x$ ; $8 \\times x = 8x$ ; $8 \\times (-2) = -16$.",
+        "$(x + 8)(x - 2) = x^{2} - 2x + 8x - 16 = x^{2} + 6x - 16$.",
+        "L'aire de la parcelle de colza est $x^{2} + 6x - 16$ dam²."
+      ],
+      "hint": "Quatre produits à écrire ; attention au signe de $-2$."
+    },
+    {
+      "key": "q3",
+      "skill_id": "F067",
+      "statement": "Combien de fois la parcelle de blé est-elle plus grande que la parcelle de colza ? On simplifie le quotient de leurs aires, $\\frac{(x + 8)(2x + 7)}{(x + 8)(x - 2)}$. Quel résultat est juste ?",
+      "type": "qcm",
+      "choices": [
+        {
+          "key": "a",
+          "text": "$x + 9$",
+          "misconception": "C'est la différence des longueurs $(2x + 7) - (x - 2)$ : elle dit de combien la parcelle de blé est plus longue, pas combien de fois elle est plus grande."
+        },
+        {
+          "key": "b",
+          "text": "$2$",
+          "misconception": "On a simplifié $2x$ par $x$ en oubliant 7 et $-2$ : on ne simplifie pas un terme d'une somme."
+        },
+        {
+          "key": "c",
+          "text": "$\\frac{2x + 7}{x - 2}$",
+          "misconception": null
+        },
+        {
+          "key": "d",
+          "text": "$\\frac{(x + 8)(2x + 7)}{x - 2}$",
+          "misconception": "Le facteur $(x + 8)$ est au numérateur et au dénominateur : il faut le simplifier des deux côtés, pas d'un seul."
+        }
+      ],
+      "answer": {
+        "value": "c"
+      },
+      "points": 3,
+      "solution_steps": [
+        "$(x + 8)$ est un facteur du numérateur et un facteur du dénominateur, et il n'est pas nul, car $x$ est plus grand que 2.",
+        "On simplifie par ce facteur commun : $\\frac{(x + 8)(2x + 7)}{(x + 8)(x - 2)} = \\frac{2x + 7}{x - 2}$.",
+        "On ne va pas plus loin : $2x + 7$ et $x - 2$ sont des sommes, et on ne simplifie jamais un terme d'une somme.",
+        "La parcelle de blé est $\\frac{2x + 7}{x - 2}$ fois plus grande que celle de colza."
+      ],
+      "hint": "Cherche ce qui apparaît à la fois au numérateur et au dénominateur."
+    },
+    {
+      "key": "q4",
+      "skill_id": "F067",
+      "statement": "L'aire totale du champ est $A = (x + 8)(2x + 7) + (x + 8)(x - 2)$. Factorise $A$ en réduisant le second facteur, et écris ta réponse avec des parenthèses, sans crochets.",
+      "type": "texte",
+      "answer": {
+        "value": "(x + 8)(3x + 5)",
+        "forme": "factorisee",
+        "unit": "dam²"
+      },
+      "points": 4,
+      "solution_steps": [
+        "Les deux termes ont un facteur commun apparent, $(x + 8)$.",
+        "$A = (x + 8)\\left[(2x + 7) + (x - 2)\\right]$ : on met le second facteur entre crochets avant de le réduire.",
+        "$(2x + 7) + (x - 2) = 3x + 5$, donc $A = (x + 8)(3x + 5)$.",
+        "Ce résultat se lit sur le champ : c'est un rectangle de largeur $x + 8$ et de longueur $(2x + 7) + (x - 2) = 3x + 5$."
+      ],
+      "hint": "Quel facteur apparaît dans les deux produits ?"
+    }
+  ],
+  "review_status": "relu_agent",
+  "programme_ref": "Cycle 4, classe de 3e, Nombres et calculs, Calcul littéral et algébrique, Objectifs d'apprentissage : « Utiliser la double distributivité pour développer et factoriser des expressions dont le facteur est apparent. »"
+}

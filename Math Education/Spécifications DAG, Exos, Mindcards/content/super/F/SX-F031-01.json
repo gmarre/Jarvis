@@ -1,0 +1,131 @@
+{
+  "id": "SX-F031-01",
+  "skill_id": "F031",
+  "skill_ids": [
+    "F031",
+    "A023"
+  ],
+  "school_level": "3e",
+  "title": "Sortie en montagne",
+  "contexte": "Le club de randonnée du collège prépare une sortie en montagne. Le car partira du collège à 7 h 30.\n\nAu départ du sentier, il fait 14 °C. Le guide explique que la température baisse d'environ 6 °C à chaque kilomètre de montée : quand le groupe sera monté de $x$ kilomètres, la température aura varié de $-6x$ degrés.\n\nLa veille, le guide a relevé la température au sommet de quatre montagnes :\nPic Blanc, −2,6 °C ;\nMont Rond, −0,7 °C ;\nAiguille Noire, −3,4 °C ;\nCol Vert, 1,2 °C.\n\nLe soir, le groupe dormira dans un refuge qui facture la nuit 8 € par personne. Le club dispose de 300 € pour payer le refuge.",
+  "image": null,
+  "duree_estimee_min": 15,
+  "questions": [
+    {
+      "key": "q1",
+      "skill_id": "A023",
+      "statement": "Au sommet de quelle montagne faisait-il le plus froid la veille ?",
+      "type": "qcm",
+      "choices": [
+        {
+          "key": "a",
+          "text": "Pic Blanc",
+          "misconception": "−2,6 est plus proche de zéro que −3,4 : il est plus grand. De deux nombres négatifs, le plus petit est le plus éloigné de zéro."
+        },
+        {
+          "key": "b",
+          "text": "Mont Rond",
+          "misconception": "−0,7 est le négatif le plus proche de zéro : c'est le plus grand des trois, donc la moins froide des trois températures négatives."
+        },
+        {
+          "key": "c",
+          "text": "Aiguille Noire",
+          "misconception": null
+        },
+        {
+          "key": "d",
+          "text": "Col Vert",
+          "misconception": "1,2 °C est positif : c'est la température la plus haute, pas la plus basse."
+        }
+      ],
+      "answer": {
+        "value": "c"
+      },
+      "points": 1,
+      "solution_steps": [
+        "Le plus froid correspond à la plus petite température.",
+        "Un nombre négatif est plus petit qu'un nombre positif, et de deux nombres négatifs, le plus petit est le plus éloigné de zéro.",
+        "−3,4 < −2,6 < −0,7 < 1,2 : il faisait le plus froid à l'**Aiguille Noire**."
+      ],
+      "hint": null
+    },
+    {
+      "key": "q2",
+      "skill_id": "F031",
+      "statement": "On note $n$ le nombre de personnes qui dormiront au refuge. Pour ne pas dépasser le budget, il faut $8n \\leqslant 300$. Combien de personnes au maximum peuvent dormir au refuge ?",
+      "type": "numerique",
+      "answer": {
+        "value": 37,
+        "accepted": [
+          "37 personnes"
+        ]
+      },
+      "points": 2,
+      "solution_steps": [
+        "On divise les deux membres par 8, qui est positif : le sens de l'inégalité est conservé. On obtient $n \\leqslant 300 \\div 8$, soit $n \\leqslant 37{,}5$.",
+        "Le nombre de personnes est un entier : au plus **37**.",
+        "Vérification : $8 \\times 37 = 296$, qui ne dépasse pas 300 ; $8 \\times 38 = 304$ dépasse 300."
+      ],
+      "hint": "Le nombre de personnes est un nombre entier."
+    },
+    {
+      "key": "q3",
+      "skill_id": "F031",
+      "statement": "Lequel de ces nombres est solution de l'inéquation $-6x \\leqslant -15$ ?",
+      "type": "qcm",
+      "choices": [
+        {
+          "key": "a",
+          "text": "0",
+          "misconception": "$-6 \\times 0 = 0$, et 0 est plus grand que $-15$ : 0 n'est pas solution."
+        },
+        {
+          "key": "b",
+          "text": "2",
+          "misconception": "$-6 \\times 2 = -12$ et $-12 > -15$ : comparer 12 et 15 sans tenir compte du signe donne la mauvaise conclusion."
+        },
+        {
+          "key": "c",
+          "text": "3",
+          "misconception": null
+        },
+        {
+          "key": "d",
+          "text": "−3",
+          "misconception": "$-6 \\times (-3) = 18$ : le produit de deux nombres négatifs est positif, et $18 > -15$."
+        }
+      ],
+      "answer": {
+        "value": "c"
+      },
+      "points": 2,
+      "solution_steps": [
+        "On remplace $x$ par chaque nombre et on regarde si $-6x \\leqslant -15$ est vrai.",
+        "Pour 3 : $-6 \\times 3 = -18$, et $-18 \\leqslant -15$ est vrai, car $-18$ est plus éloigné de zéro que $-15$.",
+        "Pour 0, 2 et $-3$, on obtient 0, $-12$ et 18, tous plus grands que $-15$.",
+        "Le seul nombre solution est 3."
+      ],
+      "hint": "Remplace x par chaque nombre proposé."
+    },
+    {
+      "key": "q4",
+      "skill_id": "F031",
+      "statement": "La température aura baissé d'au moins 15 °C lorsque $-6x \\leqslant -15$. Résous cette inéquation : écris l'inégalité qui donne toutes ses solutions ($\\geqslant$ peut se taper >=, et $\\leqslant$ peut se taper <=).",
+      "type": "texte",
+      "answer": {
+        "value": "x ⩾ 2,5",
+        "forme": "inegalite"
+      },
+      "points": 4,
+      "solution_steps": [
+        "On divise les deux membres par $-6$ : $-15 \\div (-6) = 2{,}5$.",
+        "$-6$ est négatif : diviser par un nombre négatif change le sens de l'inégalité. On obtient $x \\geqslant 2{,}5$.",
+        "Vérification avec 3, qui est bien supérieur à 2,5 : $-6 \\times 3 = -18$ et $-18 \\leqslant -15$ est vrai.",
+        "La température aura baissé d'au moins 15 °C dès que le groupe sera monté de 2,5 km ou plus."
+      ],
+      "hint": "Par quel nombre faut-il diviser les deux membres ? Est-il positif ou négatif ?"
+    }
+  ],
+  "review_status": "relu_agent",
+  "programme_ref": "Cycle 4, classe de 3e, Nombres et calculs, Calcul littéral et algébrique, Objectifs d'apprentissage : « Résoudre analytiquement et graphiquement une inéquation du premier degré du type a𝑥 ⩾ b. »"
+}

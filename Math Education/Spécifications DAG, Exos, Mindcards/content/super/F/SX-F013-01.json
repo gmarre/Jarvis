@@ -1,0 +1,114 @@
+{
+  "id": "SX-F013-01",
+  "skill_id": "F013",
+  "skill_ids": [
+    "F013",
+    "F003",
+    "F014",
+    "P022"
+  ],
+  "school_level": "3e",
+  "title": "Le potager agrandi",
+  "contexte": "Monsieur Laurent cultive un potager carré de $x$ mètres de côté, avec $x$ plus grand que 5. Il veut l'agrandir : il allonge un côté de 7 m et l'autre de 4 m. Le nouveau potager sera donc un rectangle de longueur $x + 7$ et de largeur $x + 4$, en mètres.\n\nDans ce nouveau potager, il installera une serre rectangulaire de longueur $x + 1$ et de largeur $x - 5$, en mètres. Tout le reste du nouveau potager sera planté de légumes.\n\nIl entourera le nouveau potager d'un grillage. Autour de la serre, il posera une bordure en bois, vendue 2,50 € le mètre.\n\nSon cabanon de jardin, un rectangle de 2 m sur 1,5 m, reste à sa place, à l'extérieur du potager. Les travaux commenceront en mars.",
+  "image": null,
+  "duree_estimee_min": 15,
+  "questions": [
+    {
+      "key": "q1",
+      "skill_id": "F003",
+      "statement": "Quelle expression donne l'aire du nouveau potager, en m² ?",
+      "type": "qcm",
+      "choices": [
+        {
+          "key": "a",
+          "text": "$x + 7 \\times x + 4$",
+          "misconception": "Sans parenthèses, la multiplication passe avant l'addition : cette expression vaut $8x + 4$, pas l'aire du rectangle."
+        },
+        {
+          "key": "b",
+          "text": "$2(x + 7) + 2(x + 4)$",
+          "misconception": "C'est le périmètre du nouveau potager, la longueur de son contour, pas son aire."
+        },
+        {
+          "key": "c",
+          "text": "$(x + 7)(x + 4)$",
+          "misconception": null
+        },
+        {
+          "key": "d",
+          "text": "$x^{2} + 7 + 4$",
+          "misconception": "On a ajouté à l'aire de l'ancien potager les longueurs gagnées : on n'ajoute pas une longueur à une aire."
+        }
+      ],
+      "answer": {
+        "value": "c"
+      },
+      "points": 1,
+      "solution_steps": [
+        "L'aire d'un rectangle est longueur × largeur.",
+        "Le nouveau potager mesure $x + 7$ sur $x + 4$ : son aire est $(x + 7) \\times (x + 4)$, qui s'écrit $(x + 7)(x + 4)$.",
+        "Les parenthèses sont indispensables : sans elles, $x + 7 \\times x + 4$ ne multiplie que 7 par $x$."
+      ],
+      "hint": null
+    },
+    {
+      "key": "q2",
+      "skill_id": "P022",
+      "statement": "Quelle longueur de grillage faut-il pour entourer le nouveau potager ? Écris-la en fonction de $x$, sous forme réduite.",
+      "type": "texte",
+      "answer": {
+        "value": "4x + 22",
+        "unit": "m",
+        "forme": "reduite"
+      },
+      "points": 2,
+      "solution_steps": [
+        "Le grillage fait le tour du nouveau potager : sa longueur est le périmètre du rectangle, $2 \\times (L + l)$.",
+        "$2 \\times (x + 7 + x + 4) = 2 \\times (2x + 11) = 4x + 22$.",
+        "Il faut $4x + 22$ mètres de grillage."
+      ],
+      "hint": "Le périmètre d'un rectangle de longueur L et de largeur l est 2 × (L + l)."
+    },
+    {
+      "key": "q3",
+      "skill_id": "F014",
+      "statement": "Écris le prix de la bordure en bois posée autour de la serre, en euros, en fonction de $x$, sous forme réduite.",
+      "type": "texte",
+      "answer": {
+        "value": "10x − 20",
+        "unit": "€",
+        "forme": "reduite"
+      },
+      "points": 2,
+      "solution_steps": [
+        "La bordure fait le tour de la serre : sa longueur est le périmètre de la serre.",
+        "$2 \\times (x + 1 + x - 5) = 2 \\times (2x - 4) = 4x - 8$ mètres.",
+        "Le prix est $2{,}5 \\times (4x - 8) = 2{,}5 \\times 4x + 2{,}5 \\times (-8) = 10x - 20$.",
+        "La bordure coûte $10x - 20$ euros. Le signe moins de $-8$ se retrouve dans le résultat."
+      ],
+      "hint": "Commence par la longueur de la bordure : c'est le tour de la serre."
+    },
+    {
+      "key": "q4",
+      "skill_id": "F013",
+      "statement": "Quelle aire sera plantée de légumes ? Écris-la en m², en fonction de $x$, développée et réduite.",
+      "type": "texte",
+      "answer": {
+        "value": "15x + 33",
+        "unit": "m²",
+        "forme": "reduite"
+      },
+      "points": 4,
+      "solution_steps": [
+        "L'aire plantée est l'aire du nouveau potager moins l'aire de la serre : $(x + 7)(x + 4) - (x + 1)(x - 5)$. Le cabanon est hors du potager : il ne compte pas.",
+        "$(x + 7)(x + 4) = x^{2} + 4x + 7x + 28 = x^{2} + 11x + 28$.",
+        "$(x + 1)(x - 5) = x^{2} - 5x + x - 5 = x^{2} - 4x - 5$.",
+        "On retire toute l'aire de la serre, donc on change tous les signes de sa parenthèse : $x^{2} + 11x + 28 - (x^{2} - 4x - 5) = x^{2} + 11x + 28 - x^{2} + 4x + 5$.",
+        "On réduit : l'aire plantée est $15x + 33$ m²."
+      ],
+      "hint": "Écris d'abord l'aire plantée comme une différence de deux aires, avec des parenthèses."
+    }
+  ],
+  "review_status": "relu_agent",
+  "programme_ref": "Cycle 4, classe de 3e, Nombres et calculs, Calcul littéral et algébrique, Objectifs d'apprentissage : « Utiliser la double distributivité pour développer et factoriser des expressions dont le facteur est apparent. »"
+}
