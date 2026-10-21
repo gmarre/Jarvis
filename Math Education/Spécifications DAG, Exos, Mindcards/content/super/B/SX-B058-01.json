@@ -1,0 +1,153 @@
+{
+  "id": "SX-B058-01",
+  "skill_id": "B058",
+  "skill_ids": [
+    "B058",
+    "A003",
+    "B043"
+  ],
+  "school_level": "CM2",
+  "title": "Le parc accrobranche des Écureuils",
+  "contexte": "Le parc accrobranche des Écureuils est ouvert d'avril à octobre. En juin, il a reçu 864 visiteurs ; en juillet, 846 visiteurs.\n\nLe parc a deux parcours. Le parcours vert compte 7 ateliers. Le parcours noir compte 3 fois plus d'ateliers que le parcours vert.\n\n**Les tarifs en semaine.** L'entrée coûte 7 € par enfant. Chaque groupe paie en plus 30 € pour le moniteur, quel que soit le nombre d'enfants. Un groupe qui a la carte « Club » a une réduction de 12 € sur le total.\n\n**Les tarifs du dimanche.** Le dimanche, le prix de l'entrée par enfant change. Le prix du moniteur et la réduction de la carte « Club » restent les mêmes.\n\nLes casques sont prêtés gratuitement.",
+  "image": null,
+  "duree_estimee_min": 20,
+  "questions": [
+    {
+      "key": "q1",
+      "skill_id": "A003",
+      "statement": "Quel mois le parc a-t-il reçu le plus de visiteurs ?",
+      "type": "qcm",
+      "choices": [
+        {
+          "key": "a",
+          "text": "En juin",
+          "misconception": null
+        },
+        {
+          "key": "b",
+          "text": "En juillet",
+          "misconception": "L'élève compare les unités : 6 est plus grand que 4. Mais on compare d'abord les centaines, puis les dizaines : 864 a 6 dizaines, 846 n'en a que 4."
+        },
+        {
+          "key": "c",
+          "text": "Autant en juin qu'en juillet",
+          "misconception": "L'élève voit les mêmes chiffres, 8, 6 et 4. Mais ils ne sont pas à la même place : 864 et 846 sont deux nombres différents."
+        }
+      ],
+      "answer": {
+        "value": "a"
+      },
+      "points": 1,
+      "solution_steps": [
+        "On compare 864 et 846. Les centaines sont les mêmes : 8 de chaque côté.",
+        "On compare les dizaines : 6 dizaines pour 864, 4 dizaines pour 846. 864 est plus grand.",
+        "C'est **en juin** que le parc a reçu le plus de visiteurs."
+      ],
+      "hint": "Si les centaines sont les mêmes, regarde les dizaines."
+    },
+    {
+      "key": "q2",
+      "skill_id": "B043",
+      "statement": "Combien d'ateliers le parcours noir compte-t-il ?",
+      "type": "numerique",
+      "answer": {
+        "value": 21,
+        "unit": "ateliers",
+        "accepted": [
+          "21 ateliers",
+          "21 atelier"
+        ]
+      },
+      "points": 2,
+      "solution_steps": [
+        "« 3 fois plus d'ateliers » : on multiplie le nombre d'ateliers du parcours vert par 3.",
+        "$7 \\times 3 = 21$ : le parcours noir compte **21 ateliers**.",
+        "Attention : « 3 fois plus » n'est pas « 3 de plus », qui donnerait 10."
+      ],
+      "hint": "« Fois plus » se traduit par une multiplication."
+    },
+    {
+      "key": "q3",
+      "skill_id": "B058",
+      "statement": "Mercredi, un groupe de 8 enfants qui a la carte « Club » vient au parc. Combien ce groupe paie-t-il ?",
+      "type": "numerique",
+      "answer": {
+        "value": 74,
+        "unit": "€"
+      },
+      "points": 2,
+      "solution_steps": [
+        "Programme du prix en semaine : multiplier le nombre d'enfants par 7 ; ajouter 30 ; retirer 12.",
+        "Multiplier par 7 : $8 \\times 7 = 56$ €.",
+        "Ajouter 30 : $56 + 30 = 86$ €.",
+        "Retirer 12 : $86 - 12 = 74$. Le groupe paie **74 €**.",
+        "Le moniteur et la réduction comptent une seule fois pour le groupe : seule l'entrée dépend du nombre d'enfants."
+      ],
+      "hint": "Seule l'entrée se paie pour chaque enfant."
+    },
+    {
+      "key": "q4",
+      "skill_id": "B058",
+      "statement": "Quel programme donne le prix à payer en semaine par un groupe qui a la carte « Club », à partir du nombre d'enfants ?",
+      "type": "qcm",
+      "choices": [
+        {
+          "key": "a",
+          "text": "Ajouter 30 au nombre d'enfants ; multiplier le résultat par 7 ; retirer 12.",
+          "misconception": "Les instructions sont dans le mauvais ordre : en ajoutant 30 avant de multiplier par 7, le moniteur serait payé 7 fois."
+        },
+        {
+          "key": "b",
+          "text": "Multiplier le nombre d'enfants par 7 ; ajouter 12 ; retirer 30.",
+          "misconception": "L'élève échange le prix du moniteur et la réduction : le groupe paierait 30 € de moins et 12 € de plus. Pour 5 enfants, ce programme donne 17 € au lieu de 53 €."
+        },
+        {
+          "key": "c",
+          "text": "Multiplier le nombre d'enfants par 7 ; ajouter 30 ; retirer 12.",
+          "misconception": null
+        },
+        {
+          "key": "d",
+          "text": "Multiplier le nombre d'enfants par 37 ; retirer 12.",
+          "misconception": "L'élève fait payer le moniteur par chaque enfant, comme l'entrée. Le moniteur se paie une seule fois pour tout le groupe."
+        }
+      ],
+      "answer": {
+        "value": "c"
+      },
+      "points": 3,
+      "solution_steps": [
+        "Chaque enfant paie 7 € : on commence par multiplier le nombre d'enfants par 7.",
+        "Le moniteur se paie une fois pour le groupe : on ajoute 30 au résultat.",
+        "La carte « Club » fait baisser le total : on retire 12.",
+        "Le programme est **c** : multiplier le nombre d'enfants par 7 ; ajouter 30 ; retirer 12. Exemple pour 5 enfants : $5 \\times 7 = 35$, $35 + 30 = 65$, $65 - 12 = 53$ €."
+      ],
+      "hint": "Demande-toi ce qui se paie pour chaque enfant, et ce qui se paie une seule fois."
+    },
+    {
+      "key": "q5",
+      "skill_id": "B058",
+      "statement": "Dimanche, un groupe de 3 enfants qui a la carte « Club » paie 45 € en tout. Quel est le prix de l'entrée par enfant le dimanche ?",
+      "type": "numerique",
+      "answer": {
+        "value": 9,
+        "unit": "€",
+        "accepted": [
+          "9 € par enfant",
+          "9 euros par enfant"
+        ]
+      },
+      "points": 4,
+      "solution_steps": [
+        "Programme du dimanche : multiplier le nombre d'enfants par le prix de l'entrée ; ajouter 30 ; retirer 12. On le remonte en partant du nombre obtenu, 45, et on défait chaque instruction.",
+        "La dernière instruction retire 12 : avant elle, on avait $45 + 12 = 57$.",
+        "L'instruction d'avant ajoute 30 : avant elle, on avait $57 - 30 = 27$.",
+        "27 est le prix des entrées des 3 enfants : $27 \\div 3 = 9$, car $3 \\times 9 = 27$. L'entrée coûte **9 €** le dimanche.",
+        "Vérification : $3 \\times 9 = 27$, $27 + 30 = 57$, $57 - 12 = 45$."
+      ],
+      "hint": "Pars de 45 et défais les instructions, de la dernière à la première."
+    }
+  ],
+  "review_status": "relu_agent",
+  "programme_ref": "Cycle 3, Cours moyen deuxième année, Algèbre : « Exécuter ou produire un programme de calcul »"
+}

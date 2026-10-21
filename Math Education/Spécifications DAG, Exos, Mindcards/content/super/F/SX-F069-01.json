@@ -1,0 +1,142 @@
+{
+  "id": "SX-F069-01",
+  "skill_id": "F069",
+  "skill_ids": [
+    "F069",
+    "B043"
+  ],
+  "school_level": "CM1",
+  "title": "Au marché avec Papi",
+  "contexte": "Samedi matin, Lucie accompagne son grand-père au marché. Le marché ouvre à 8 heures, et Lucie y arrive vers 10 heures.\n\n**Chez le primeur.** La balance à plateaux est en équilibre. Sur le plateau de gauche, il y a 3 pastèques de même masse et un poids de 1 kg. Sur le plateau de droite, il y a des poids qui font 19 kg en tout.\n\nPapi achète 8 barquettes de fraises à 3 € la barquette. Il paie avec un billet de 50 €.\n\n**Chez l'apiculteur.** Un petit pot de miel coûte 5 €. Un grand pot coûte 3 fois plus cher que le petit.\n\nSur l'étal, il y a 27 pots de miel en tout, au miel de fleurs ou au miel de châtaignier. Il y a 2 fois plus de pots de miel de fleurs que de pots de miel de châtaignier.",
+  "image": null,
+  "duree_estimee_min": 15,
+  "questions": [
+    {
+      "key": "q1",
+      "skill_id": "B043",
+      "statement": "Combien coûte un grand pot de miel ?",
+      "type": "numerique",
+      "answer": {
+        "value": 15,
+        "unit": "€"
+      },
+      "points": 1,
+      "solution_steps": [
+        "Le grand pot coûte « 3 fois plus cher » que le petit pot : on multiplie le prix du petit pot par 3.",
+        "$5 \\times 3 = 15$ : un grand pot coûte **15 €**.",
+        "Attention : « 3 fois plus cher » n'est pas « 3 € de plus », qui donnerait 8 €."
+      ],
+      "hint": "Relis la phrase qui compare les deux pots."
+    },
+    {
+      "key": "q2",
+      "skill_id": "F069",
+      "statement": "On note ■ la masse d'une pastèque, en kilogrammes. Quelle écriture traduit la balance du primeur ?",
+      "type": "qcm",
+      "choices": [
+        {
+          "key": "a",
+          "text": "■ + 3 + 1 = 19",
+          "misconception": "L'élève écrit le nombre de pastèques, 3, comme une masse. Or il y a 3 pastèques qui pèsent chacune ■ : ■ + ■ + ■."
+        },
+        {
+          "key": "b",
+          "text": "■ + ■ + ■ + 1 = 19",
+          "misconception": null
+        },
+        {
+          "key": "c",
+          "text": "■ + ■ + ■ = 19 + 1",
+          "misconception": "L'élève met le poids de 1 kg du mauvais côté. Il est sur le plateau des pastèques : il s'ajoute à leur masse, à gauche."
+        },
+        {
+          "key": "d",
+          "text": "■ + 1 = 19",
+          "misconception": "L'élève oublie deux pastèques : il y en a 3 sur le plateau, et chacune pèse ■."
+        }
+      ],
+      "answer": {
+        "value": "b"
+      },
+      "points": 2,
+      "solution_steps": [
+        "Chaque pastèque pèse ■. Les trois pastèques : ■ + ■ + ■.",
+        "Avec le poids de 1 kg posé sur le même plateau : ■ + ■ + ■ + 1.",
+        "La balance est en équilibre : le plateau de gauche pèse autant que celui de droite, 19 kg.",
+        "L'écriture est ■ + ■ + ■ + 1 = 19 : réponse **b**."
+      ],
+      "hint": "Écris ce qu'il y a sur chaque plateau."
+    },
+    {
+      "key": "q3",
+      "skill_id": "F069",
+      "statement": "Quelle est la masse d'une pastèque ?",
+      "type": "numerique",
+      "answer": {
+        "value": 6,
+        "unit": "kg",
+        "accepted": [
+          "■ = 6",
+          "■ = 6 kg"
+        ]
+      },
+      "points": 3,
+      "solution_steps": [
+        "La balance donne ■ + ■ + ■ + 1 = 19.",
+        "Sans le poids de 1 kg, les trois pastèques pèsent $19 - 1 = 18$ kg.",
+        "On cherche le nombre qui, pris trois fois, fait 18 : $3 \\times 6 = 18$, donc $18 \\div 3 = 6$.",
+        "Une pastèque pèse **6 kg**. Vérification : $6 + 6 + 6 + 1 = 19$.",
+        "Ajouter 1 kg à 19 kg, ce serait refaire l'opération de l'énoncé au lieu de la défaire."
+      ],
+      "hint": "Que pèsent les trois pastèques sans le poids de 1 kg ?"
+    },
+    {
+      "key": "q4",
+      "skill_id": "F069",
+      "statement": "Pour trouver la monnaie qu'il rend à Papi, le primeur écrit : 50 − … = 8 × 3. Quel nombre manque ?",
+      "type": "numerique",
+      "answer": {
+        "value": 26,
+        "accepted": [
+          "26 €",
+          "26€",
+          "26 euros"
+        ]
+      },
+      "points": 3,
+      "solution_steps": [
+        "Le signe = veut dire : les deux côtés valent le même nombre.",
+        "Côté droit : $8 \\times 3 = 24$. Le côté gauche doit valoir 24 aussi : 50 moins le nombre manquant doit donner 24.",
+        "Le nombre manquant est l'écart entre 50 et 24 : on pose $50 - 24$. Unités : on casse une dizaine, $10 - 4 = 6$ ; dizaines : $4 - 2 = 2$. Donc $50 - 24 = 26$.",
+        "Vérification : $50 - 26 = 24$ et $8 \\times 3 = 24$. Le nombre manquant est **26** : le primeur rend 26 €.",
+        "Écrire 24 dans le trou, ce serait lire = comme « ça donne »."
+      ],
+      "hint": "Commence par calculer le côté droit."
+    },
+    {
+      "key": "q5",
+      "skill_id": "F069",
+      "statement": "Combien de pots de miel de châtaignier y a-t-il sur l'étal ?",
+      "type": "numerique",
+      "answer": {
+        "value": 9,
+        "unit": "pots",
+        "accepted": [
+          "9 pots",
+          "9 pot"
+        ]
+      },
+      "points": 4,
+      "solution_steps": [
+        "On fait un schéma en barre. Le miel de châtaignier : une part. Le miel de fleurs, 2 fois plus : 2 parts de la même taille.",
+        "En tout, il y a $1 + 2 = 3$ parts égales, qui font 27 pots.",
+        "Une part : $27 \\div 3 = 9$, car $3 \\times 9 = 27$. Il y a **9 pots** de miel de châtaignier.",
+        "Vérification : les pots de fleurs sont $2 \\times 9 = 18$, et $9 + 18 = 27$.",
+        "Compter seulement 2 parts oublierait la part du miel de châtaignier : il y a $1 + 2 = 3$ parts."
+      ],
+      "hint": "Dessine une barre pour le miel de châtaignier, puis une barre pour le miel de fleurs."
+    }
+  ],
+  "review_status": "relu_agent",
+  "programme_ref": "Cycle 3, Cours moyen première année, Algèbre : « Déterminer la valeur d'un nombre inconnu en utilisant un symbole ou une lettre pour le représenter »"
+}

@@ -1,0 +1,141 @@
+{
+  "id": "SX-F070-01",
+  "skill_id": "F070",
+  "skill_ids": [
+    "F070",
+    "B013"
+  ],
+  "school_level": "CM1",
+  "title": "Le goûter de fin d'année",
+  "contexte": "Vendredi, la classe de Mme Petit organise un goûter avec les familles, dans le préau.\n\n**Les tables.** Les élèves mettent de longues tables bout à bout, en une seule rangée. Ils comptent les places : 12 places avec 1 table, 22 places avec 2 tables, 32 places avec 3 tables. Au goûter viendront 27 enfants et 15 parents. Mme Petit servira debout. Chaque enfant et chaque parent doit avoir une place assise.\n\n**L'escargot.** Dans la cour, un escargot grimpe le long d'un mur. Le jour, il monte ; la nuit, il glisse un peu. Chaque soir et chaque matin, Noé mesure sa hauteur et la note en centimètres : 13 ; 10 ; 23 ; 20 ; 33 ; …\n\n**La tombola.** Les numéros des billets gagnants suivent une règle : 5 ; 10 ; 20 ; 40 ; … Il y a cinq billets gagnants.",
+  "image": null,
+  "duree_estimee_min": 15,
+  "questions": [
+    {
+      "key": "q1",
+      "skill_id": "B013",
+      "statement": "Combien d'enfants et de parents viendront au goûter en tout ?",
+      "type": "numerique",
+      "answer": {
+        "value": 42,
+        "unit": "personnes",
+        "accepted": [
+          "42 personnes",
+          "42 personne"
+        ]
+      },
+      "points": 1,
+      "solution_steps": [
+        "Au goûter viendront 27 enfants et 15 parents : on ajoute $27 + 15$.",
+        "On ajoute d'abord la dizaine, puis les unités : $27 + 10 = 37$, puis $37 + 5 = 42$.",
+        "**42 personnes** viendront au goûter."
+      ],
+      "hint": "Relis la phrase qui parle des enfants et des parents."
+    },
+    {
+      "key": "q2",
+      "skill_id": "F070",
+      "statement": "On admet que 42 personnes viendront. Combien de tables faut-il, au minimum, mettre bout à bout pour que chacune ait une place ?",
+      "type": "numerique",
+      "answer": {
+        "value": 4,
+        "unit": "tables",
+        "accepted": [
+          "4 tables",
+          "4 table"
+        ]
+      },
+      "points": 3,
+      "solution_steps": [
+        "On regarde ce qui change d'une table à la suivante : 12, puis 22, puis 32 places. $12 + 10 = 22$ et $22 + 10 = 32$.",
+        "Chaque table de plus ajoute 10 places.",
+        "Avec 4 tables : $32 + 10 = 42$ places. C'est juste assez pour les 42 personnes.",
+        "Il faut **4 tables**. Inutile de recompter toutes les places : on part de 3 tables et on ajoute ce qui change."
+      ],
+      "hint": "De combien de places la rangée grandit-elle à chaque table ajoutée ?"
+    },
+    {
+      "key": "q3",
+      "skill_id": "F070",
+      "statement": "Quelle règle permet de poursuivre la suite des hauteurs notées par Noé ?",
+      "type": "qcm",
+      "choices": [
+        {
+          "key": "a",
+          "text": "On ajoute 10.",
+          "misconception": "L'élève regarde un nombre sur deux (13, 23, 33). Mais 10 vient juste après 13 : la suite ne fait pas que monter."
+        },
+        {
+          "key": "b",
+          "text": "On retire 3, puis on ajoute 13, et on recommence.",
+          "misconception": null
+        },
+        {
+          "key": "c",
+          "text": "On retire 3.",
+          "misconception": "La règle ne marche que pour certains passages : de 10 à 23, on ajoute 13."
+        },
+        {
+          "key": "d",
+          "text": "On ajoute 13.",
+          "misconception": "La règle ne marche que pour certains passages : de 13 à 10, on retire 3."
+        }
+      ],
+      "answer": {
+        "value": "b"
+      },
+      "points": 2,
+      "solution_steps": [
+        "On regarde chaque passage : $13 - 3 = 10$ ; $10 + 13 = 23$ ; $23 - 3 = 20$ ; $20 + 13 = 33$.",
+        "Les passages alternent : on retire 3, puis on ajoute 13. C'est la règle **b**.",
+        "Une règle doit marcher pour tous les passages, pas seulement pour deux nombres."
+      ],
+      "hint": "Calcule ce qui change entre deux nombres qui se suivent."
+    },
+    {
+      "key": "q4",
+      "skill_id": "F070",
+      "statement": "Quel est le numéro du cinquième billet gagnant ?",
+      "type": "numerique",
+      "answer": {
+        "value": 80,
+        "accepted": [
+          "numéro 80",
+          "n° 80",
+          "le numéro 80",
+          "le 80"
+        ]
+      },
+      "points": 3,
+      "solution_steps": [
+        "On regarde chaque passage : 5 puis 10, 10 puis 20, 20 puis 40.",
+        "Chaque numéro est le double du précédent : $5 + 5 = 10$, $10 + 10 = 20$ et $20 + 20 = 40$. La règle est « on double ».",
+        "Le quatrième billet porte le numéro 40. Le cinquième est le double de 40 : $40 + 40 = 80$.",
+        "Le cinquième billet gagnant porte le numéro **80**.",
+        "Ajouter 20, comme entre 20 et 40, donnerait 60 : cette règle ne marche pas pour les autres passages."
+      ],
+      "hint": "Compare chaque numéro au précédent."
+    },
+    {
+      "key": "q5",
+      "skill_id": "F070",
+      "statement": "Quel sera le 7e nombre de la suite des hauteurs notées par Noé ?",
+      "type": "numerique",
+      "answer": {
+        "value": 43,
+        "unit": "cm"
+      },
+      "points": 4,
+      "solution_steps": [
+        "La règle : on retire 3, puis on ajoute 13, et on recommence.",
+        "Le dernier passage connu, de 20 à 33, ajoutait 13. Le suivant retire 3 : le 6e nombre est $33 - 3 = 30$.",
+        "Puis on ajoute 13 : le 7e nombre est $30 + 13 = 43$.",
+        "Le 7e nombre de la suite est **43** : le soir, l'escargot sera à 43 cm.",
+        "Ne regarder que les deux derniers nombres (de 20 à 33, on ajoute 13) donnerait 46, puis 59 : c'est faux."
+      ],
+      "hint": "Repère si le prochain passage est un retrait ou un ajout."
+    }
+  ],
+  "review_status": "relu_agent",
+  "programme_ref": "Cycle 3, Cours moyen première année, Algèbre : « Identifier et formuler une règle de calcul pour poursuivre une suite de nombres »"
+}

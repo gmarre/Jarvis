@@ -2,7 +2,7 @@
   "metadata": {
     "version": "1.0",
     "scope": "Super exercices, CP a 3e",
-    "total_super": 218
+    "total_super": 224
   },
   "super": [
     {
@@ -8359,6 +8359,420 @@
       ],
       "review_status": "relu_agent",
       "programme_ref": "Cycle 4, classe de 5e, Nombres et calculs, Opérations, Objectifs d'apprentissage : « Connaitre et utiliser la distributivité simple sur des exemples numériques. »"
+    },
+    {
+      "id": "SX-B056-01",
+      "skill_id": "B056",
+      "skill_ids": [
+        "B056",
+        "B041",
+        "A003"
+      ],
+      "school_level": "CM1",
+      "title": "Les préparatifs de la fête de l'école",
+      "contexte": "Samedi 21 juin, l'école Jules-Verne organise sa fête de fin d'année, de 14 heures à 19 heures.\n\n**Le spectacle.** Dans la cour, M. Diallo installe 9 rangées de 24 chaises pour les familles.\n\n**La buvette.** L'association des parents achète 5 paquets de 60 gobelets et 3 packs de 6 bouteilles de jus. Une crêpe sera vendue 2 euros.\n\n**La tombola.** Chaque carnet de tombola contient 25 billets. La classe de Mme Roux vend 8 carnets complets. La classe de M. Petit vend cent quatre-vingt-seize billets.\n\n**Les manèges.** Mme Lopez achète 6 rouleaux de tickets de manège. Chaque rouleau contient 112 tickets.",
+      "image": null,
+      "duree_estimee_min": 15,
+      "questions": [
+        {
+          "key": "q1",
+          "skill_id": "B041",
+          "statement": "Combien de gobelets l'association des parents achète-t-elle ?",
+          "type": "numerique",
+          "answer": {
+            "value": 300,
+            "unit": "gobelets",
+            "accepted": [
+              "300 gobelets",
+              "300 gobelet"
+            ]
+          },
+          "points": 1,
+          "solution_steps": [
+            "Les gobelets sont vendus par paquets de 60, et l'association achète 5 paquets : on calcule $5 \\times 60$.",
+            "60, c'est 6 dizaines. $5 \\times 6 = 30$, donc 5 fois 6 dizaines font 30 dizaines.",
+            "30 dizaines, c'est 300 : l'association achète **300 gobelets**.",
+            "Les packs de bouteilles et le prix des crêpes ne servent pas ici."
+          ],
+          "hint": "Relis la phrase qui parle des gobelets."
+        },
+        {
+          "key": "q2",
+          "skill_id": "B056",
+          "statement": "Combien de chaises M. Diallo installe-t-il dans la cour ?",
+          "type": "numerique",
+          "answer": {
+            "value": 216,
+            "unit": "chaises",
+            "accepted": [
+              "216 chaises",
+              "216 chaise"
+            ]
+          },
+          "points": 3,
+          "solution_steps": [
+            "9 rangées de 24 chaises : on calcule $9 \\times 24$.",
+            "24, c'est 20 + 4. On multiplie chaque morceau par 9 : $9 \\times 24 = 9 \\times 20 + 9 \\times 4$.",
+            "$9 \\times 20 = 180$ (9 fois 2 dizaines, c'est 18 dizaines) et $9 \\times 4 = 36$.",
+            "$180 + 36 = 216$ : M. Diallo installe **216 chaises**.",
+            "Attention : $9 \\times 20 + 4 = 184$ oublie de multiplier le 4 par 9."
+          ],
+          "hint": "24, c'est 20 + 4."
+        },
+        {
+          "key": "q3",
+          "skill_id": "A003",
+          "statement": "Quelle classe a vendu le plus de billets de tombola ?",
+          "type": "qcm",
+          "choices": [
+            {
+              "key": "a",
+              "text": "La classe de Mme Roux",
+              "misconception": null
+            },
+            {
+              "key": "b",
+              "text": "La classe de M. Petit",
+              "misconception": "L'élève calcule 8 × 25 comme 8 × 20 + 5 = 165 et trouve moins que 196. Il faut multiplier aussi le 5 par 8 : 8 × 25 = 160 + 40 = 200."
+            },
+            {
+              "key": "c",
+              "text": "Les deux classes ont vendu autant de billets",
+              "misconception": "L'élève voit que 196 est proche de 200 et les croit égaux. On compare les nombres exacts : 200 est plus grand que 196."
+            }
+          ],
+          "answer": {
+            "value": "a"
+          },
+          "points": 2,
+          "solution_steps": [
+            "La classe de Mme Roux vend 8 carnets de 25 billets : $8 \\times 25 = 8 \\times 20 + 8 \\times 5 = 160 + 40 = 200$ billets.",
+            "La classe de M. Petit vend cent quatre-vingt-seize billets, c'est-à-dire 196 billets.",
+            "On compare 200 et 196 : 200 a 2 centaines, 196 n'en a qu'une. 200 est plus grand que 196.",
+            "C'est **la classe de Mme Roux** qui a vendu le plus de billets."
+          ],
+          "hint": "Calcule d'abord le nombre de billets de la classe de Mme Roux."
+        },
+        {
+          "key": "q4",
+          "skill_id": "B056",
+          "statement": "Combien de tickets de manège Mme Lopez achète-t-elle ? Calcule de tête en décomposant 112.",
+          "type": "numerique",
+          "answer": {
+            "value": 672,
+            "unit": "tickets",
+            "accepted": [
+              "672 tickets",
+              "672 ticket"
+            ]
+          },
+          "points": 4,
+          "solution_steps": [
+            "6 rouleaux de 112 tickets : on calcule $6 \\times 112$.",
+            "112, c'est 100 + 10 + 2. On multiplie chaque morceau par 6 : $6 \\times 112 = 6 \\times 100 + 6 \\times 10 + 6 \\times 2$.",
+            "$6 \\times 100 = 600$, $6 \\times 10 = 60$ et $6 \\times 2 = 12$.",
+            "$600 + 60 + 12 = 672$ : Mme Lopez achète **672 tickets**.",
+            "Attention : $6 \\times 100 + 12 = 612$ oublie de multiplier la dizaine et les unités par 6."
+          ],
+          "hint": "Écris 112 comme une somme de centaines, de dizaines et d'unités."
+        }
+      ],
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 3, Cours moyen première année, Le calcul mental : « Utiliser la distributivité de la multiplication par rapport à l'addition dans des cas simples »"
+    },
+    {
+      "id": "SX-B057-01",
+      "skill_id": "B057",
+      "skill_ids": [
+        "B057",
+        "A003",
+        "B004"
+      ],
+      "school_level": "CM1",
+      "title": "Le rallye calcul",
+      "contexte": "Jeudi, les élèves de l'école Pasteur participent au rallye calcul. Il y a 4 classes, et chaque équipe compte 5 élèves. Trois équipes arrivent en finale. L'équipe finaliste qui aura le plus de points à la fin gagnera une coupe.\n\nAvant le dernier atelier, les Renards ont 268 points, les Hiboux 286 points et les Castors 259 points.\n\nAu dernier atelier, chaque équipe tire un nombre au hasard et lui applique un programme de calcul. Le nombre obtenu est le nombre de points gagnés.\n\n**Programme Soleil** : choisir un nombre ; retirer 5 ; multiplier le résultat par 9.\n\n**Programme Lune** : choisir un nombre ; multiplier par 9 ; retirer 5.\n\nLes Renards tirent le nombre 14 et utilisent le programme Soleil. Les Hiboux tirent le nombre 9 et utilisent le programme Lune. Les Castors tirent le nombre 7 et peuvent choisir leur programme.",
+      "image": null,
+      "duree_estimee_min": 15,
+      "questions": [
+        {
+          "key": "q1",
+          "skill_id": "A003",
+          "statement": "Avant le dernier atelier, laquelle des trois équipes finalistes a le plus de points ?",
+          "type": "qcm",
+          "choices": [
+            {
+              "key": "a",
+              "text": "Les Renards",
+              "misconception": "L'élève compare les unités : 8 est plus grand que 6. Mais on compare d'abord les centaines, puis les dizaines : 286 a 8 dizaines, 268 n'en a que 6."
+            },
+            {
+              "key": "b",
+              "text": "Les Hiboux",
+              "misconception": null
+            },
+            {
+              "key": "c",
+              "text": "Les Castors",
+              "misconception": "L'élève regarde le chiffre des unités, 9, le plus grand. Mais 259 n'a que 5 dizaines : c'est le plus petit des trois nombres."
+            }
+          ],
+          "answer": {
+            "value": "b"
+          },
+          "points": 1,
+          "solution_steps": [
+            "On compare 268, 286 et 259. Les trois nombres ont 2 centaines.",
+            "On compare alors les dizaines : 6 dizaines pour 268, 8 dizaines pour 286, 5 dizaines pour 259.",
+            "286 est le plus grand : ce sont **les Hiboux** qui ont le plus de points."
+          ],
+          "hint": "Si les centaines sont les mêmes, regarde les dizaines."
+        },
+        {
+          "key": "q2",
+          "skill_id": "B057",
+          "statement": "Combien de points les Renards gagnent-ils au dernier atelier ?",
+          "type": "numerique",
+          "answer": {
+            "value": 81,
+            "unit": "points",
+            "accepted": [
+              "81 points",
+              "81 point"
+            ]
+          },
+          "points": 2,
+          "solution_steps": [
+            "Les Renards appliquent le programme Soleil au nombre 14, dans l'ordre des instructions.",
+            "Retirer 5 : $14 - 5 = 9$.",
+            "Multiplier le résultat par 9 : $9 \\times 9 = 81$. Les Renards gagnent **81 points**.",
+            "On multiplie le résultat de la première instruction, 9, et pas le nombre tiré, 14."
+          ],
+          "hint": "Chaque instruction part du résultat de la précédente."
+        },
+        {
+          "key": "q3",
+          "skill_id": "B057",
+          "statement": "Combien de points les Hiboux gagnent-ils au dernier atelier ?",
+          "type": "numerique",
+          "answer": {
+            "value": 76,
+            "unit": "points",
+            "accepted": [
+              "76 points",
+              "76 point"
+            ]
+          },
+          "points": 3,
+          "solution_steps": [
+            "Les Hiboux appliquent le programme Lune au nombre 9 : d'abord multiplier par 9, ensuite retirer 5.",
+            "Multiplier par 9 : $9 \\times 9 = 81$.",
+            "Retirer 5 au résultat : $81 - 5 = 76$. Les Hiboux gagnent **76 points**.",
+            "Attention : retirer 5 d'abord, ce serait le programme Soleil. Il donnerait $9 - 5 = 4$, puis $4 \\times 9 = 36$."
+          ],
+          "hint": "Relis l'ordre des instructions du programme Lune."
+        },
+        {
+          "key": "q4",
+          "skill_id": "B004",
+          "statement": "Avant le dernier atelier, combien de points les Hiboux ont-ils de plus que les Castors ?",
+          "type": "numerique",
+          "answer": {
+            "value": 27,
+            "unit": "points",
+            "accepted": [
+              "27 points",
+              "27 point"
+            ]
+          },
+          "points": 2,
+          "solution_steps": [
+            "On cherche l'écart entre 286 et 259 : on pose $286 - 259$.",
+            "Unités : on ne peut pas retirer 9 de 6. On casse une dizaine : $16 - 9 = 7$, et il reste 7 dizaines.",
+            "Dizaines : $7 - 5 = 2$. Centaines : $2 - 2 = 0$.",
+            "$286 - 259 = 27$. Vérification : $259 + 27 = 286$. Les Hiboux ont **27 points** de plus.",
+            "Retirer le petit chiffre du grand dans chaque colonne donnerait 33 : c'est faux."
+          ],
+          "hint": "Pose la soustraction en commençant par les unités."
+        },
+        {
+          "key": "q5",
+          "skill_id": "B057",
+          "statement": "Les Castors veulent gagner le plus de points possible. Combien de points de plus gagnent-ils avec le meilleur des deux programmes qu'avec l'autre ?",
+          "type": "numerique",
+          "answer": {
+            "value": 40,
+            "unit": "points",
+            "accepted": [
+              "40 points",
+              "40 point"
+            ]
+          },
+          "points": 4,
+          "solution_steps": [
+            "On applique les deux programmes au nombre 7.",
+            "Programme Soleil : $7 - 5 = 2$, puis $2 \\times 9 = 18$.",
+            "Programme Lune : $7 \\times 9 = 63$, puis $63 - 5 = 58$.",
+            "Le meilleur programme est Lune, qui donne 58 points. L'écart : $58 - 18 = 40$.",
+            "Les Castors gagnent **40 points** de plus avec le programme Lune. Les deux programmes ont les mêmes instructions, mais pas dans le même ordre : ils ne donnent pas le même résultat."
+          ],
+          "hint": "Calcule le résultat de chaque programme pour le nombre des Castors."
+        }
+      ],
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 3, Cours moyen première année, Algèbre : « Exécuter un programme de calcul »"
+    },
+    {
+      "id": "SX-B058-01",
+      "skill_id": "B058",
+      "skill_ids": [
+        "B058",
+        "A003",
+        "B043"
+      ],
+      "school_level": "CM2",
+      "title": "Le parc accrobranche des Écureuils",
+      "contexte": "Le parc accrobranche des Écureuils est ouvert d'avril à octobre. En juin, il a reçu 864 visiteurs ; en juillet, 846 visiteurs.\n\nLe parc a deux parcours. Le parcours vert compte 7 ateliers. Le parcours noir compte 3 fois plus d'ateliers que le parcours vert.\n\n**Les tarifs en semaine.** L'entrée coûte 7 € par enfant. Chaque groupe paie en plus 30 € pour le moniteur, quel que soit le nombre d'enfants. Un groupe qui a la carte « Club » a une réduction de 12 € sur le total.\n\n**Les tarifs du dimanche.** Le dimanche, le prix de l'entrée par enfant change. Le prix du moniteur et la réduction de la carte « Club » restent les mêmes.\n\nLes casques sont prêtés gratuitement.",
+      "image": null,
+      "duree_estimee_min": 20,
+      "questions": [
+        {
+          "key": "q1",
+          "skill_id": "A003",
+          "statement": "Quel mois le parc a-t-il reçu le plus de visiteurs ?",
+          "type": "qcm",
+          "choices": [
+            {
+              "key": "a",
+              "text": "En juin",
+              "misconception": null
+            },
+            {
+              "key": "b",
+              "text": "En juillet",
+              "misconception": "L'élève compare les unités : 6 est plus grand que 4. Mais on compare d'abord les centaines, puis les dizaines : 864 a 6 dizaines, 846 n'en a que 4."
+            },
+            {
+              "key": "c",
+              "text": "Autant en juin qu'en juillet",
+              "misconception": "L'élève voit les mêmes chiffres, 8, 6 et 4. Mais ils ne sont pas à la même place : 864 et 846 sont deux nombres différents."
+            }
+          ],
+          "answer": {
+            "value": "a"
+          },
+          "points": 1,
+          "solution_steps": [
+            "On compare 864 et 846. Les centaines sont les mêmes : 8 de chaque côté.",
+            "On compare les dizaines : 6 dizaines pour 864, 4 dizaines pour 846. 864 est plus grand.",
+            "C'est **en juin** que le parc a reçu le plus de visiteurs."
+          ],
+          "hint": "Si les centaines sont les mêmes, regarde les dizaines."
+        },
+        {
+          "key": "q2",
+          "skill_id": "B043",
+          "statement": "Combien d'ateliers le parcours noir compte-t-il ?",
+          "type": "numerique",
+          "answer": {
+            "value": 21,
+            "unit": "ateliers",
+            "accepted": [
+              "21 ateliers",
+              "21 atelier"
+            ]
+          },
+          "points": 2,
+          "solution_steps": [
+            "« 3 fois plus d'ateliers » : on multiplie le nombre d'ateliers du parcours vert par 3.",
+            "$7 \\times 3 = 21$ : le parcours noir compte **21 ateliers**.",
+            "Attention : « 3 fois plus » n'est pas « 3 de plus », qui donnerait 10."
+          ],
+          "hint": "« Fois plus » se traduit par une multiplication."
+        },
+        {
+          "key": "q3",
+          "skill_id": "B058",
+          "statement": "Mercredi, un groupe de 8 enfants qui a la carte « Club » vient au parc. Combien ce groupe paie-t-il ?",
+          "type": "numerique",
+          "answer": {
+            "value": 74,
+            "unit": "€"
+          },
+          "points": 2,
+          "solution_steps": [
+            "Programme du prix en semaine : multiplier le nombre d'enfants par 7 ; ajouter 30 ; retirer 12.",
+            "Multiplier par 7 : $8 \\times 7 = 56$ €.",
+            "Ajouter 30 : $56 + 30 = 86$ €.",
+            "Retirer 12 : $86 - 12 = 74$. Le groupe paie **74 €**.",
+            "Le moniteur et la réduction comptent une seule fois pour le groupe : seule l'entrée dépend du nombre d'enfants."
+          ],
+          "hint": "Seule l'entrée se paie pour chaque enfant."
+        },
+        {
+          "key": "q4",
+          "skill_id": "B058",
+          "statement": "Quel programme donne le prix à payer en semaine par un groupe qui a la carte « Club », à partir du nombre d'enfants ?",
+          "type": "qcm",
+          "choices": [
+            {
+              "key": "a",
+              "text": "Ajouter 30 au nombre d'enfants ; multiplier le résultat par 7 ; retirer 12.",
+              "misconception": "Les instructions sont dans le mauvais ordre : en ajoutant 30 avant de multiplier par 7, le moniteur serait payé 7 fois."
+            },
+            {
+              "key": "b",
+              "text": "Multiplier le nombre d'enfants par 7 ; ajouter 12 ; retirer 30.",
+              "misconception": "L'élève échange le prix du moniteur et la réduction : le groupe paierait 30 € de moins et 12 € de plus. Pour 5 enfants, ce programme donne 17 € au lieu de 53 €."
+            },
+            {
+              "key": "c",
+              "text": "Multiplier le nombre d'enfants par 7 ; ajouter 30 ; retirer 12.",
+              "misconception": null
+            },
+            {
+              "key": "d",
+              "text": "Multiplier le nombre d'enfants par 37 ; retirer 12.",
+              "misconception": "L'élève fait payer le moniteur par chaque enfant, comme l'entrée. Le moniteur se paie une seule fois pour tout le groupe."
+            }
+          ],
+          "answer": {
+            "value": "c"
+          },
+          "points": 3,
+          "solution_steps": [
+            "Chaque enfant paie 7 € : on commence par multiplier le nombre d'enfants par 7.",
+            "Le moniteur se paie une fois pour le groupe : on ajoute 30 au résultat.",
+            "La carte « Club » fait baisser le total : on retire 12.",
+            "Le programme est **c** : multiplier le nombre d'enfants par 7 ; ajouter 30 ; retirer 12. Exemple pour 5 enfants : $5 \\times 7 = 35$, $35 + 30 = 65$, $65 - 12 = 53$ €."
+          ],
+          "hint": "Demande-toi ce qui se paie pour chaque enfant, et ce qui se paie une seule fois."
+        },
+        {
+          "key": "q5",
+          "skill_id": "B058",
+          "statement": "Dimanche, un groupe de 3 enfants qui a la carte « Club » paie 45 € en tout. Quel est le prix de l'entrée par enfant le dimanche ?",
+          "type": "numerique",
+          "answer": {
+            "value": 9,
+            "unit": "€",
+            "accepted": [
+              "9 € par enfant",
+              "9 euros par enfant"
+            ]
+          },
+          "points": 4,
+          "solution_steps": [
+            "Programme du dimanche : multiplier le nombre d'enfants par le prix de l'entrée ; ajouter 30 ; retirer 12. On le remonte en partant du nombre obtenu, 45, et on défait chaque instruction.",
+            "La dernière instruction retire 12 : avant elle, on avait $45 + 12 = 57$.",
+            "L'instruction d'avant ajoute 30 : avant elle, on avait $57 - 30 = 27$.",
+            "27 est le prix des entrées des 3 enfants : $27 \\div 3 = 9$, car $3 \\times 9 = 27$. L'entrée coûte **9 €** le dimanche.",
+            "Vérification : $3 \\times 9 = 27$, $27 + 30 = 57$, $57 - 12 = 45$."
+          ],
+          "hint": "Pars de 45 et défais les instructions, de la dernière à la première."
+        }
+      ],
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 3, Cours moyen deuxième année, Algèbre : « Exécuter ou produire un programme de calcul »"
     },
     {
       "id": "SX-C001-01",
@@ -19287,6 +19701,437 @@
       ],
       "review_status": "relu_agent",
       "programme_ref": "Cycle 4, classe de 3e, Nombres et calculs, Racine carrée, Objectifs d'apprentissage : « Résoudre analytiquement et graphiquement des équations de la forme 𝑥2 = a. »"
+    },
+    {
+      "id": "SX-F069-01",
+      "skill_id": "F069",
+      "skill_ids": [
+        "F069",
+        "B043"
+      ],
+      "school_level": "CM1",
+      "title": "Au marché avec Papi",
+      "contexte": "Samedi matin, Lucie accompagne son grand-père au marché. Le marché ouvre à 8 heures, et Lucie y arrive vers 10 heures.\n\n**Chez le primeur.** La balance à plateaux est en équilibre. Sur le plateau de gauche, il y a 3 pastèques de même masse et un poids de 1 kg. Sur le plateau de droite, il y a des poids qui font 19 kg en tout.\n\nPapi achète 8 barquettes de fraises à 3 € la barquette. Il paie avec un billet de 50 €.\n\n**Chez l'apiculteur.** Un petit pot de miel coûte 5 €. Un grand pot coûte 3 fois plus cher que le petit.\n\nSur l'étal, il y a 27 pots de miel en tout, au miel de fleurs ou au miel de châtaignier. Il y a 2 fois plus de pots de miel de fleurs que de pots de miel de châtaignier.",
+      "image": null,
+      "duree_estimee_min": 15,
+      "questions": [
+        {
+          "key": "q1",
+          "skill_id": "B043",
+          "statement": "Combien coûte un grand pot de miel ?",
+          "type": "numerique",
+          "answer": {
+            "value": 15,
+            "unit": "€"
+          },
+          "points": 1,
+          "solution_steps": [
+            "Le grand pot coûte « 3 fois plus cher » que le petit pot : on multiplie le prix du petit pot par 3.",
+            "$5 \\times 3 = 15$ : un grand pot coûte **15 €**.",
+            "Attention : « 3 fois plus cher » n'est pas « 3 € de plus », qui donnerait 8 €."
+          ],
+          "hint": "Relis la phrase qui compare les deux pots."
+        },
+        {
+          "key": "q2",
+          "skill_id": "F069",
+          "statement": "On note ■ la masse d'une pastèque, en kilogrammes. Quelle écriture traduit la balance du primeur ?",
+          "type": "qcm",
+          "choices": [
+            {
+              "key": "a",
+              "text": "■ + 3 + 1 = 19",
+              "misconception": "L'élève écrit le nombre de pastèques, 3, comme une masse. Or il y a 3 pastèques qui pèsent chacune ■ : ■ + ■ + ■."
+            },
+            {
+              "key": "b",
+              "text": "■ + ■ + ■ + 1 = 19",
+              "misconception": null
+            },
+            {
+              "key": "c",
+              "text": "■ + ■ + ■ = 19 + 1",
+              "misconception": "L'élève met le poids de 1 kg du mauvais côté. Il est sur le plateau des pastèques : il s'ajoute à leur masse, à gauche."
+            },
+            {
+              "key": "d",
+              "text": "■ + 1 = 19",
+              "misconception": "L'élève oublie deux pastèques : il y en a 3 sur le plateau, et chacune pèse ■."
+            }
+          ],
+          "answer": {
+            "value": "b"
+          },
+          "points": 2,
+          "solution_steps": [
+            "Chaque pastèque pèse ■. Les trois pastèques : ■ + ■ + ■.",
+            "Avec le poids de 1 kg posé sur le même plateau : ■ + ■ + ■ + 1.",
+            "La balance est en équilibre : le plateau de gauche pèse autant que celui de droite, 19 kg.",
+            "L'écriture est ■ + ■ + ■ + 1 = 19 : réponse **b**."
+          ],
+          "hint": "Écris ce qu'il y a sur chaque plateau."
+        },
+        {
+          "key": "q3",
+          "skill_id": "F069",
+          "statement": "Quelle est la masse d'une pastèque ?",
+          "type": "numerique",
+          "answer": {
+            "value": 6,
+            "unit": "kg",
+            "accepted": [
+              "■ = 6",
+              "■ = 6 kg"
+            ]
+          },
+          "points": 3,
+          "solution_steps": [
+            "La balance donne ■ + ■ + ■ + 1 = 19.",
+            "Sans le poids de 1 kg, les trois pastèques pèsent $19 - 1 = 18$ kg.",
+            "On cherche le nombre qui, pris trois fois, fait 18 : $3 \\times 6 = 18$, donc $18 \\div 3 = 6$.",
+            "Une pastèque pèse **6 kg**. Vérification : $6 + 6 + 6 + 1 = 19$.",
+            "Ajouter 1 kg à 19 kg, ce serait refaire l'opération de l'énoncé au lieu de la défaire."
+          ],
+          "hint": "Que pèsent les trois pastèques sans le poids de 1 kg ?"
+        },
+        {
+          "key": "q4",
+          "skill_id": "F069",
+          "statement": "Pour trouver la monnaie qu'il rend à Papi, le primeur écrit : 50 − … = 8 × 3. Quel nombre manque ?",
+          "type": "numerique",
+          "answer": {
+            "value": 26,
+            "accepted": [
+              "26 €",
+              "26€",
+              "26 euros"
+            ]
+          },
+          "points": 3,
+          "solution_steps": [
+            "Le signe = veut dire : les deux côtés valent le même nombre.",
+            "Côté droit : $8 \\times 3 = 24$. Le côté gauche doit valoir 24 aussi : 50 moins le nombre manquant doit donner 24.",
+            "Le nombre manquant est l'écart entre 50 et 24 : on pose $50 - 24$. Unités : on casse une dizaine, $10 - 4 = 6$ ; dizaines : $4 - 2 = 2$. Donc $50 - 24 = 26$.",
+            "Vérification : $50 - 26 = 24$ et $8 \\times 3 = 24$. Le nombre manquant est **26** : le primeur rend 26 €.",
+            "Écrire 24 dans le trou, ce serait lire = comme « ça donne »."
+          ],
+          "hint": "Commence par calculer le côté droit."
+        },
+        {
+          "key": "q5",
+          "skill_id": "F069",
+          "statement": "Combien de pots de miel de châtaignier y a-t-il sur l'étal ?",
+          "type": "numerique",
+          "answer": {
+            "value": 9,
+            "unit": "pots",
+            "accepted": [
+              "9 pots",
+              "9 pot"
+            ]
+          },
+          "points": 4,
+          "solution_steps": [
+            "On fait un schéma en barre. Le miel de châtaignier : une part. Le miel de fleurs, 2 fois plus : 2 parts de la même taille.",
+            "En tout, il y a $1 + 2 = 3$ parts égales, qui font 27 pots.",
+            "Une part : $27 \\div 3 = 9$, car $3 \\times 9 = 27$. Il y a **9 pots** de miel de châtaignier.",
+            "Vérification : les pots de fleurs sont $2 \\times 9 = 18$, et $9 + 18 = 27$.",
+            "Compter seulement 2 parts oublierait la part du miel de châtaignier : il y a $1 + 2 = 3$ parts."
+          ],
+          "hint": "Dessine une barre pour le miel de châtaignier, puis une barre pour le miel de fleurs."
+        }
+      ],
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 3, Cours moyen première année, Algèbre : « Déterminer la valeur d'un nombre inconnu en utilisant un symbole ou une lettre pour le représenter »"
+    },
+    {
+      "id": "SX-F070-01",
+      "skill_id": "F070",
+      "skill_ids": [
+        "F070",
+        "B013"
+      ],
+      "school_level": "CM1",
+      "title": "Le goûter de fin d'année",
+      "contexte": "Vendredi, la classe de Mme Petit organise un goûter avec les familles, dans le préau.\n\n**Les tables.** Les élèves mettent de longues tables bout à bout, en une seule rangée. Ils comptent les places : 12 places avec 1 table, 22 places avec 2 tables, 32 places avec 3 tables. Au goûter viendront 27 enfants et 15 parents. Mme Petit servira debout. Chaque enfant et chaque parent doit avoir une place assise.\n\n**L'escargot.** Dans la cour, un escargot grimpe le long d'un mur. Le jour, il monte ; la nuit, il glisse un peu. Chaque soir et chaque matin, Noé mesure sa hauteur et la note en centimètres : 13 ; 10 ; 23 ; 20 ; 33 ; …\n\n**La tombola.** Les numéros des billets gagnants suivent une règle : 5 ; 10 ; 20 ; 40 ; … Il y a cinq billets gagnants.",
+      "image": null,
+      "duree_estimee_min": 15,
+      "questions": [
+        {
+          "key": "q1",
+          "skill_id": "B013",
+          "statement": "Combien d'enfants et de parents viendront au goûter en tout ?",
+          "type": "numerique",
+          "answer": {
+            "value": 42,
+            "unit": "personnes",
+            "accepted": [
+              "42 personnes",
+              "42 personne"
+            ]
+          },
+          "points": 1,
+          "solution_steps": [
+            "Au goûter viendront 27 enfants et 15 parents : on ajoute $27 + 15$.",
+            "On ajoute d'abord la dizaine, puis les unités : $27 + 10 = 37$, puis $37 + 5 = 42$.",
+            "**42 personnes** viendront au goûter."
+          ],
+          "hint": "Relis la phrase qui parle des enfants et des parents."
+        },
+        {
+          "key": "q2",
+          "skill_id": "F070",
+          "statement": "On admet que 42 personnes viendront. Combien de tables faut-il, au minimum, mettre bout à bout pour que chacune ait une place ?",
+          "type": "numerique",
+          "answer": {
+            "value": 4,
+            "unit": "tables",
+            "accepted": [
+              "4 tables",
+              "4 table"
+            ]
+          },
+          "points": 3,
+          "solution_steps": [
+            "On regarde ce qui change d'une table à la suivante : 12, puis 22, puis 32 places. $12 + 10 = 22$ et $22 + 10 = 32$.",
+            "Chaque table de plus ajoute 10 places.",
+            "Avec 4 tables : $32 + 10 = 42$ places. C'est juste assez pour les 42 personnes.",
+            "Il faut **4 tables**. Inutile de recompter toutes les places : on part de 3 tables et on ajoute ce qui change."
+          ],
+          "hint": "De combien de places la rangée grandit-elle à chaque table ajoutée ?"
+        },
+        {
+          "key": "q3",
+          "skill_id": "F070",
+          "statement": "Quelle règle permet de poursuivre la suite des hauteurs notées par Noé ?",
+          "type": "qcm",
+          "choices": [
+            {
+              "key": "a",
+              "text": "On ajoute 10.",
+              "misconception": "L'élève regarde un nombre sur deux (13, 23, 33). Mais 10 vient juste après 13 : la suite ne fait pas que monter."
+            },
+            {
+              "key": "b",
+              "text": "On retire 3, puis on ajoute 13, et on recommence.",
+              "misconception": null
+            },
+            {
+              "key": "c",
+              "text": "On retire 3.",
+              "misconception": "La règle ne marche que pour certains passages : de 10 à 23, on ajoute 13."
+            },
+            {
+              "key": "d",
+              "text": "On ajoute 13.",
+              "misconception": "La règle ne marche que pour certains passages : de 13 à 10, on retire 3."
+            }
+          ],
+          "answer": {
+            "value": "b"
+          },
+          "points": 2,
+          "solution_steps": [
+            "On regarde chaque passage : $13 - 3 = 10$ ; $10 + 13 = 23$ ; $23 - 3 = 20$ ; $20 + 13 = 33$.",
+            "Les passages alternent : on retire 3, puis on ajoute 13. C'est la règle **b**.",
+            "Une règle doit marcher pour tous les passages, pas seulement pour deux nombres."
+          ],
+          "hint": "Calcule ce qui change entre deux nombres qui se suivent."
+        },
+        {
+          "key": "q4",
+          "skill_id": "F070",
+          "statement": "Quel est le numéro du cinquième billet gagnant ?",
+          "type": "numerique",
+          "answer": {
+            "value": 80,
+            "accepted": [
+              "numéro 80",
+              "n° 80",
+              "le numéro 80",
+              "le 80"
+            ]
+          },
+          "points": 3,
+          "solution_steps": [
+            "On regarde chaque passage : 5 puis 10, 10 puis 20, 20 puis 40.",
+            "Chaque numéro est le double du précédent : $5 + 5 = 10$, $10 + 10 = 20$ et $20 + 20 = 40$. La règle est « on double ».",
+            "Le quatrième billet porte le numéro 40. Le cinquième est le double de 40 : $40 + 40 = 80$.",
+            "Le cinquième billet gagnant porte le numéro **80**.",
+            "Ajouter 20, comme entre 20 et 40, donnerait 60 : cette règle ne marche pas pour les autres passages."
+          ],
+          "hint": "Compare chaque numéro au précédent."
+        },
+        {
+          "key": "q5",
+          "skill_id": "F070",
+          "statement": "Quel sera le 7e nombre de la suite des hauteurs notées par Noé ?",
+          "type": "numerique",
+          "answer": {
+            "value": 43,
+            "unit": "cm"
+          },
+          "points": 4,
+          "solution_steps": [
+            "La règle : on retire 3, puis on ajoute 13, et on recommence.",
+            "Le dernier passage connu, de 20 à 33, ajoutait 13. Le suivant retire 3 : le 6e nombre est $33 - 3 = 30$.",
+            "Puis on ajoute 13 : le 7e nombre est $30 + 13 = 43$.",
+            "Le 7e nombre de la suite est **43** : le soir, l'escargot sera à 43 cm.",
+            "Ne regarder que les deux derniers nombres (de 20 à 33, on ajoute 13) donnerait 46, puis 59 : c'est faux."
+          ],
+          "hint": "Repère si le prochain passage est un retrait ou un ajout."
+        }
+      ],
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 3, Cours moyen première année, Algèbre : « Identifier et formuler une règle de calcul pour poursuivre une suite de nombres »"
+    },
+    {
+      "id": "SX-F071-01",
+      "skill_id": "F071",
+      "skill_ids": [
+        "F071",
+        "B041",
+        "F070"
+      ],
+      "school_level": "CM2",
+      "title": "Les barrières du potager",
+      "contexte": "Au printemps, l'école Jean-Moulin installe un potager de 12 bacs de légumes. Pour le protéger, M. Diallo veut construire des barrières en blocs de bois.\n\nAvant de commencer, les élèves de CM2 dessinent les barrières sur du papier quadrillé. Chaque carreau colorié représente un bloc de bois carré de 20 cm de côté. Un poteau est fait de blocs empilés, et deux poteaux voisins sont reliés par un seul bloc.\n\nLe dessin montre les barrières des étapes 1, 2 et 3. La barrière de l'étape 1 a une seule section entre deux poteaux, celle de l'étape 2 a deux sections, et ainsi de suite : à chaque étape, on ajoute une section au bout de la barrière.\n\nLes blocs seront peints en vert avant d'être assemblés.",
+      "image": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 248 294\" width=\"248\" height=\"294\" font-family=\"system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif\" role=\"img\"><title>Quadrillage : trois barrières de carreaux coloriés, numérotées 1, 2 et 3</title><rect width=\"100%\" height=\"100%\" fill=\"#ffffff\"/><rect x=\"58\" y=\"14\" width=\"22\" height=\"22\" fill=\"#93c5fd\"/><rect x=\"58\" y=\"36\" width=\"22\" height=\"22\" fill=\"#93c5fd\"/><rect x=\"58\" y=\"58\" width=\"22\" height=\"22\" fill=\"#93c5fd\"/><rect x=\"80\" y=\"36\" width=\"22\" height=\"22\" fill=\"#93c5fd\"/><rect x=\"102\" y=\"14\" width=\"22\" height=\"22\" fill=\"#93c5fd\"/><rect x=\"102\" y=\"36\" width=\"22\" height=\"22\" fill=\"#93c5fd\"/><rect x=\"102\" y=\"58\" width=\"22\" height=\"22\" fill=\"#93c5fd\"/><rect x=\"58\" y=\"102\" width=\"22\" height=\"22\" fill=\"#fde68a\"/><rect x=\"58\" y=\"124\" width=\"22\" height=\"22\" fill=\"#fde68a\"/><rect x=\"58\" y=\"146\" width=\"22\" height=\"22\" fill=\"#fde68a\"/><rect x=\"80\" y=\"124\" width=\"22\" height=\"22\" fill=\"#fde68a\"/><rect x=\"102\" y=\"102\" width=\"22\" height=\"22\" fill=\"#fde68a\"/><rect x=\"102\" y=\"124\" width=\"22\" height=\"22\" fill=\"#fde68a\"/><rect x=\"102\" y=\"146\" width=\"22\" height=\"22\" fill=\"#fde68a\"/><rect x=\"124\" y=\"124\" width=\"22\" height=\"22\" fill=\"#fde68a\"/><rect x=\"146\" y=\"102\" width=\"22\" height=\"22\" fill=\"#fde68a\"/><rect x=\"146\" y=\"124\" width=\"22\" height=\"22\" fill=\"#fde68a\"/><rect x=\"146\" y=\"146\" width=\"22\" height=\"22\" fill=\"#fde68a\"/><rect x=\"58\" y=\"190\" width=\"22\" height=\"22\" fill=\"#bbf7d0\"/><rect x=\"58\" y=\"212\" width=\"22\" height=\"22\" fill=\"#bbf7d0\"/><rect x=\"58\" y=\"234\" width=\"22\" height=\"22\" fill=\"#bbf7d0\"/><rect x=\"80\" y=\"212\" width=\"22\" height=\"22\" fill=\"#bbf7d0\"/><rect x=\"102\" y=\"190\" width=\"22\" height=\"22\" fill=\"#bbf7d0\"/><rect x=\"102\" y=\"212\" width=\"22\" height=\"22\" fill=\"#bbf7d0\"/><rect x=\"102\" y=\"234\" width=\"22\" height=\"22\" fill=\"#bbf7d0\"/><rect x=\"124\" y=\"212\" width=\"22\" height=\"22\" fill=\"#bbf7d0\"/><rect x=\"146\" y=\"190\" width=\"22\" height=\"22\" fill=\"#bbf7d0\"/><rect x=\"146\" y=\"212\" width=\"22\" height=\"22\" fill=\"#bbf7d0\"/><rect x=\"146\" y=\"234\" width=\"22\" height=\"22\" fill=\"#bbf7d0\"/><rect x=\"168\" y=\"212\" width=\"22\" height=\"22\" fill=\"#bbf7d0\"/><rect x=\"190\" y=\"190\" width=\"22\" height=\"22\" fill=\"#bbf7d0\"/><rect x=\"190\" y=\"212\" width=\"22\" height=\"22\" fill=\"#bbf7d0\"/><rect x=\"190\" y=\"234\" width=\"22\" height=\"22\" fill=\"#bbf7d0\"/><line x1=\"14.0\" y1=\"14.0\" x2=\"14.0\" y2=\"256.0\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"36.0\" y1=\"14.0\" x2=\"36.0\" y2=\"256.0\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"58.0\" y1=\"14.0\" x2=\"58.0\" y2=\"256.0\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"80.0\" y1=\"14.0\" x2=\"80.0\" y2=\"256.0\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"102.0\" y1=\"14.0\" x2=\"102.0\" y2=\"256.0\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"124.0\" y1=\"14.0\" x2=\"124.0\" y2=\"256.0\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"146.0\" y1=\"14.0\" x2=\"146.0\" y2=\"256.0\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"168.0\" y1=\"14.0\" x2=\"168.0\" y2=\"256.0\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"190.0\" y1=\"14.0\" x2=\"190.0\" y2=\"256.0\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"212.0\" y1=\"14.0\" x2=\"212.0\" y2=\"256.0\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"234.0\" y1=\"14.0\" x2=\"234.0\" y2=\"256.0\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"14.0\" y1=\"14.0\" x2=\"234.0\" y2=\"14.0\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"14.0\" y1=\"36.0\" x2=\"234.0\" y2=\"36.0\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"14.0\" y1=\"58.0\" x2=\"234.0\" y2=\"58.0\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"14.0\" y1=\"80.0\" x2=\"234.0\" y2=\"80.0\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"14.0\" y1=\"102.0\" x2=\"234.0\" y2=\"102.0\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"14.0\" y1=\"124.0\" x2=\"234.0\" y2=\"124.0\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"14.0\" y1=\"146.0\" x2=\"234.0\" y2=\"146.0\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"14.0\" y1=\"168.0\" x2=\"234.0\" y2=\"168.0\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"14.0\" y1=\"190.0\" x2=\"234.0\" y2=\"190.0\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"14.0\" y1=\"212.0\" x2=\"234.0\" y2=\"212.0\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"14.0\" y1=\"234.0\" x2=\"234.0\" y2=\"234.0\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"14.0\" y1=\"256.0\" x2=\"234.0\" y2=\"256.0\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-linecap=\"round\"/><text x=\"25.0\" y=\"52.0\" font-size=\"13\" text-anchor=\"middle\" fill=\"#334155\" font-weight=\"600\">1</text><text x=\"25.0\" y=\"140.0\" font-size=\"13\" text-anchor=\"middle\" fill=\"#334155\" font-weight=\"600\">2</text><text x=\"25.0\" y=\"228.0\" font-size=\"13\" text-anchor=\"middle\" fill=\"#334155\" font-weight=\"600\">3</text><text x=\"124.0\" y=\"284.0\" font-size=\"13\" text-anchor=\"middle\" fill=\"#334155\">Le numéro de l'étape est à gauche</text></svg>",
+      "duree_estimee_min": 20,
+      "questions": [
+        {
+          "key": "q1",
+          "skill_id": "B041",
+          "statement": "Quelle sera la hauteur d'un poteau de la vraie barrière ?",
+          "type": "numerique",
+          "answer": {
+            "value": 60,
+            "unit": "cm"
+          },
+          "points": 1,
+          "solution_steps": [
+            "Sur le dessin, un poteau est fait de 3 carreaux empilés.",
+            "Chaque carreau représente un bloc de 20 cm : $3 \\times 20$. 20, c'est 2 dizaines, et $3 \\times 2 = 6$ : 6 dizaines.",
+            "Un poteau mesure **60 cm** de haut."
+          ],
+          "hint": "Compte les carreaux d'un poteau sur le dessin."
+        },
+        {
+          "key": "q2",
+          "skill_id": "F070",
+          "statement": "Combien de carreaux faudra-t-il pour dessiner la barrière de l'étape 6 ?",
+          "type": "numerique",
+          "answer": {
+            "value": 27,
+            "unit": "carreaux",
+            "accepted": [
+              "27 carreaux",
+              "27 carreau"
+            ]
+          },
+          "points": 2,
+          "solution_steps": [
+            "On compte les carreaux : 7 à l'étape 1, 11 à l'étape 2, 15 à l'étape 3.",
+            "D'une étape à la suivante, on ajoute une section : un poteau de 3 carreaux et le bloc qui le relie, soit 4 carreaux.",
+            "Étape 4 : $15 + 4 = 19$ ; étape 5 : $19 + 4 = 23$ ; étape 6 : $23 + 4 = 27$ carreaux.",
+            "Inutile de recompter toute la barrière : on part de l'étape 3 et on ajoute ce qui change."
+          ],
+          "hint": "Regarde ce qui s'ajoute d'une étape à la suivante."
+        },
+        {
+          "key": "q3",
+          "skill_id": "F071",
+          "statement": "Quelle phrase donne le nombre de carreaux de la barrière à n'importe quelle étape ?",
+          "type": "qcm",
+          "choices": [
+            {
+              "key": "a",
+              "text": "Quatre fois le numéro de l'étape, plus trois.",
+              "misconception": null
+            },
+            {
+              "key": "b",
+              "text": "Sept fois le numéro de l'étape.",
+              "misconception": "La phrase marche à l'étape 1 (7 carreaux) mais pas à l'étape 2 : elle donne 14 au lieu de 11. L'étape 2 n'est pas le double de l'étape 1."
+            },
+            {
+              "key": "c",
+              "text": "Le numéro de l'étape, plus six.",
+              "misconception": "La phrase marche à l'étape 1 mais pas à l'étape 2 : elle donne 8 au lieu de 11. Chaque étape ajoute 4 carreaux, pas 1."
+            },
+            {
+              "key": "d",
+              "text": "Trois fois le numéro de l'étape, plus quatre.",
+              "misconception": "La phrase marche à l'étape 1 mais pas à l'étape 2 : elle donne 10 au lieu de 11. Chaque étape ajoute 4 carreaux, pas 3."
+            }
+          ],
+          "answer": {
+            "value": "a"
+          },
+          "points": 3,
+          "solution_steps": [
+            "Le premier poteau, à gauche, a 3 carreaux et ne change jamais.",
+            "Chaque section ajoute 4 carreaux : un bloc qui relie et un poteau de 3 carreaux. Il y a autant de sections que le numéro de l'étape.",
+            "Quatre fois le numéro, plus trois : étape 1, $4 \\times 1 + 3 = 7$ ; étape 2, $4 \\times 2 + 3 = 11$ ; étape 3, $4 \\times 3 + 3 = 15$. La phrase marche pour les trois étapes.",
+            "Les phrases b, c et d ne marchent qu'à l'étape 1. Réponse **a**."
+          ],
+          "hint": "Essaie chaque phrase aux étapes 1, 2 et 3."
+        },
+        {
+          "key": "q4",
+          "skill_id": "F071",
+          "statement": "Combien de carreaux faudra-t-il pour dessiner la barrière de l'étape 40 ?",
+          "type": "numerique",
+          "answer": {
+            "value": 163,
+            "unit": "carreaux",
+            "accepted": [
+              "163 carreaux",
+              "163 carreau"
+            ]
+          },
+          "points": 3,
+          "solution_steps": [
+            "À chaque étape, la barrière a 4 carreaux par section, plus les 3 carreaux du premier poteau.",
+            "À l'étape 40, il y a 40 sections : $4 \\times 40 = 160$ carreaux. 40, c'est 4 dizaines, et $4 \\times 4 = 16$ : 16 dizaines.",
+            "On ajoute le premier poteau : $160 + 3 = 163$ carreaux.",
+            "Attention : l'étape 40 n'a pas 40 fois les carreaux de l'étape 1 ($7 \\times 40 = 280$ serait faux), car le premier poteau ne se répète pas."
+          ],
+          "hint": "Combien de sections la barrière de l'étape 40 a-t-elle ?"
+        },
+        {
+          "key": "q5",
+          "skill_id": "F071",
+          "statement": "Le dessin d'une barrière compte 123 carreaux. À quelle étape correspond-il ?",
+          "type": "numerique",
+          "answer": {
+            "value": 30,
+            "accepted": [
+              "étape 30",
+              "l'étape 30",
+              "à l'étape 30",
+              "30e",
+              "30e étape",
+              "la 30e étape",
+              "à la 30e étape",
+              "30ème",
+              "30ème étape",
+              "la 30ème étape",
+              "à la 30ème étape"
+            ]
+          },
+          "points": 4,
+          "solution_steps": [
+            "Les 3 carreaux du premier poteau sont là dès le départ : on les enlève, $123 - 3 = 120$.",
+            "Les 120 carreaux qui restent forment des sections de 4 carreaux. On cherche combien de fois 4 font 120 : $4 \\times 30 = 120$, donc $120 \\div 4 = 30$.",
+            "C'est l'étape **30**. Vérification : $4 \\times 30 + 3 = 123$.",
+            "Oublier le premier poteau, c'est chercher combien de fois 4 font 123 : $4 \\times 30 = 120$, et il reste 3 carreaux, ceux du premier poteau. C'est le signe d'un oubli."
+          ],
+          "hint": "Commence par mettre de côté ce qui ne change jamais."
+        }
+      ],
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 3, Cours moyen deuxième année, Algèbre : « Trouver le nombre d'éléments pour une étape donnée dans une suite de motifs évolutive »"
     },
     {
       "id": "SX-G002-01",

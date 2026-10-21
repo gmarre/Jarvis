@@ -1,0 +1,148 @@
+{
+  "id": "SX-F071-01",
+  "skill_id": "F071",
+  "skill_ids": [
+    "F071",
+    "B041",
+    "F070"
+  ],
+  "school_level": "CM2",
+  "title": "Les barrières du potager",
+  "contexte": "Au printemps, l'école Jean-Moulin installe un potager de 12 bacs de légumes. Pour le protéger, M. Diallo veut construire des barrières en blocs de bois.\n\nAvant de commencer, les élèves de CM2 dessinent les barrières sur du papier quadrillé. Chaque carreau colorié représente un bloc de bois carré de 20 cm de côté. Un poteau est fait de blocs empilés, et deux poteaux voisins sont reliés par un seul bloc.\n\nLe dessin montre les barrières des étapes 1, 2 et 3. La barrière de l'étape 1 a une seule section entre deux poteaux, celle de l'étape 2 a deux sections, et ainsi de suite : à chaque étape, on ajoute une section au bout de la barrière.\n\nLes blocs seront peints en vert avant d'être assemblés.",
+  "image": "figures/SX-F071-01",
+  "duree_estimee_min": 20,
+  "questions": [
+    {
+      "key": "q1",
+      "skill_id": "B041",
+      "statement": "Quelle sera la hauteur d'un poteau de la vraie barrière ?",
+      "type": "numerique",
+      "answer": {
+        "value": 60,
+        "unit": "cm"
+      },
+      "points": 1,
+      "solution_steps": [
+        "Sur le dessin, un poteau est fait de 3 carreaux empilés.",
+        "Chaque carreau représente un bloc de 20 cm : $3 \\times 20$. 20, c'est 2 dizaines, et $3 \\times 2 = 6$ : 6 dizaines.",
+        "Un poteau mesure **60 cm** de haut."
+      ],
+      "hint": "Compte les carreaux d'un poteau sur le dessin."
+    },
+    {
+      "key": "q2",
+      "skill_id": "F070",
+      "statement": "Combien de carreaux faudra-t-il pour dessiner la barrière de l'étape 6 ?",
+      "type": "numerique",
+      "answer": {
+        "value": 27,
+        "unit": "carreaux",
+        "accepted": [
+          "27 carreaux",
+          "27 carreau"
+        ]
+      },
+      "points": 2,
+      "solution_steps": [
+        "On compte les carreaux : 7 à l'étape 1, 11 à l'étape 2, 15 à l'étape 3.",
+        "D'une étape à la suivante, on ajoute une section : un poteau de 3 carreaux et le bloc qui le relie, soit 4 carreaux.",
+        "Étape 4 : $15 + 4 = 19$ ; étape 5 : $19 + 4 = 23$ ; étape 6 : $23 + 4 = 27$ carreaux.",
+        "Inutile de recompter toute la barrière : on part de l'étape 3 et on ajoute ce qui change."
+      ],
+      "hint": "Regarde ce qui s'ajoute d'une étape à la suivante."
+    },
+    {
+      "key": "q3",
+      "skill_id": "F071",
+      "statement": "Quelle phrase donne le nombre de carreaux de la barrière à n'importe quelle étape ?",
+      "type": "qcm",
+      "choices": [
+        {
+          "key": "a",
+          "text": "Quatre fois le numéro de l'étape, plus trois.",
+          "misconception": null
+        },
+        {
+          "key": "b",
+          "text": "Sept fois le numéro de l'étape.",
+          "misconception": "La phrase marche à l'étape 1 (7 carreaux) mais pas à l'étape 2 : elle donne 14 au lieu de 11. L'étape 2 n'est pas le double de l'étape 1."
+        },
+        {
+          "key": "c",
+          "text": "Le numéro de l'étape, plus six.",
+          "misconception": "La phrase marche à l'étape 1 mais pas à l'étape 2 : elle donne 8 au lieu de 11. Chaque étape ajoute 4 carreaux, pas 1."
+        },
+        {
+          "key": "d",
+          "text": "Trois fois le numéro de l'étape, plus quatre.",
+          "misconception": "La phrase marche à l'étape 1 mais pas à l'étape 2 : elle donne 10 au lieu de 11. Chaque étape ajoute 4 carreaux, pas 3."
+        }
+      ],
+      "answer": {
+        "value": "a"
+      },
+      "points": 3,
+      "solution_steps": [
+        "Le premier poteau, à gauche, a 3 carreaux et ne change jamais.",
+        "Chaque section ajoute 4 carreaux : un bloc qui relie et un poteau de 3 carreaux. Il y a autant de sections que le numéro de l'étape.",
+        "Quatre fois le numéro, plus trois : étape 1, $4 \\times 1 + 3 = 7$ ; étape 2, $4 \\times 2 + 3 = 11$ ; étape 3, $4 \\times 3 + 3 = 15$. La phrase marche pour les trois étapes.",
+        "Les phrases b, c et d ne marchent qu'à l'étape 1. Réponse **a**."
+      ],
+      "hint": "Essaie chaque phrase aux étapes 1, 2 et 3."
+    },
+    {
+      "key": "q4",
+      "skill_id": "F071",
+      "statement": "Combien de carreaux faudra-t-il pour dessiner la barrière de l'étape 40 ?",
+      "type": "numerique",
+      "answer": {
+        "value": 163,
+        "unit": "carreaux",
+        "accepted": [
+          "163 carreaux",
+          "163 carreau"
+        ]
+      },
+      "points": 3,
+      "solution_steps": [
+        "À chaque étape, la barrière a 4 carreaux par section, plus les 3 carreaux du premier poteau.",
+        "À l'étape 40, il y a 40 sections : $4 \\times 40 = 160$ carreaux. 40, c'est 4 dizaines, et $4 \\times 4 = 16$ : 16 dizaines.",
+        "On ajoute le premier poteau : $160 + 3 = 163$ carreaux.",
+        "Attention : l'étape 40 n'a pas 40 fois les carreaux de l'étape 1 ($7 \\times 40 = 280$ serait faux), car le premier poteau ne se répète pas."
+      ],
+      "hint": "Combien de sections la barrière de l'étape 40 a-t-elle ?"
+    },
+    {
+      "key": "q5",
+      "skill_id": "F071",
+      "statement": "Le dessin d'une barrière compte 123 carreaux. À quelle étape correspond-il ?",
+      "type": "numerique",
+      "answer": {
+        "value": 30,
+        "accepted": [
+          "étape 30",
+          "l'étape 30",
+          "à l'étape 30",
+          "30e",
+          "30e étape",
+          "la 30e étape",
+          "à la 30e étape",
+          "30ème",
+          "30ème étape",
+          "la 30ème étape",
+          "à la 30ème étape"
+        ]
+      },
+      "points": 4,
+      "solution_steps": [
+        "Les 3 carreaux du premier poteau sont là dès le départ : on les enlève, $123 - 3 = 120$.",
+        "Les 120 carreaux qui restent forment des sections de 4 carreaux. On cherche combien de fois 4 font 120 : $4 \\times 30 = 120$, donc $120 \\div 4 = 30$.",
+        "C'est l'étape **30**. Vérification : $4 \\times 30 + 3 = 123$.",
+        "Oublier le premier poteau, c'est chercher combien de fois 4 font 123 : $4 \\times 30 = 120$, et il reste 3 carreaux, ceux du premier poteau. C'est le signe d'un oubli."
+      ],
+      "hint": "Commence par mettre de côté ce qui ne change jamais."
+    }
+  ],
+  "review_status": "relu_agent",
+  "programme_ref": "Cycle 3, Cours moyen deuxième année, Algèbre : « Trouver le nombre d'éléments pour une étape donnée dans une suite de motifs évolutive »"
+}

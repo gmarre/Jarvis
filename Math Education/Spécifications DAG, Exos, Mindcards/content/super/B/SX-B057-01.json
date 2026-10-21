@@ -1,0 +1,141 @@
+{
+  "id": "SX-B057-01",
+  "skill_id": "B057",
+  "skill_ids": [
+    "B057",
+    "A003",
+    "B004"
+  ],
+  "school_level": "CM1",
+  "title": "Le rallye calcul",
+  "contexte": "Jeudi, les élèves de l'école Pasteur participent au rallye calcul. Il y a 4 classes, et chaque équipe compte 5 élèves. Trois équipes arrivent en finale. L'équipe finaliste qui aura le plus de points à la fin gagnera une coupe.\n\nAvant le dernier atelier, les Renards ont 268 points, les Hiboux 286 points et les Castors 259 points.\n\nAu dernier atelier, chaque équipe tire un nombre au hasard et lui applique un programme de calcul. Le nombre obtenu est le nombre de points gagnés.\n\n**Programme Soleil** : choisir un nombre ; retirer 5 ; multiplier le résultat par 9.\n\n**Programme Lune** : choisir un nombre ; multiplier par 9 ; retirer 5.\n\nLes Renards tirent le nombre 14 et utilisent le programme Soleil. Les Hiboux tirent le nombre 9 et utilisent le programme Lune. Les Castors tirent le nombre 7 et peuvent choisir leur programme.",
+  "image": null,
+  "duree_estimee_min": 15,
+  "questions": [
+    {
+      "key": "q1",
+      "skill_id": "A003",
+      "statement": "Avant le dernier atelier, laquelle des trois équipes finalistes a le plus de points ?",
+      "type": "qcm",
+      "choices": [
+        {
+          "key": "a",
+          "text": "Les Renards",
+          "misconception": "L'élève compare les unités : 8 est plus grand que 6. Mais on compare d'abord les centaines, puis les dizaines : 286 a 8 dizaines, 268 n'en a que 6."
+        },
+        {
+          "key": "b",
+          "text": "Les Hiboux",
+          "misconception": null
+        },
+        {
+          "key": "c",
+          "text": "Les Castors",
+          "misconception": "L'élève regarde le chiffre des unités, 9, le plus grand. Mais 259 n'a que 5 dizaines : c'est le plus petit des trois nombres."
+        }
+      ],
+      "answer": {
+        "value": "b"
+      },
+      "points": 1,
+      "solution_steps": [
+        "On compare 268, 286 et 259. Les trois nombres ont 2 centaines.",
+        "On compare alors les dizaines : 6 dizaines pour 268, 8 dizaines pour 286, 5 dizaines pour 259.",
+        "286 est le plus grand : ce sont **les Hiboux** qui ont le plus de points."
+      ],
+      "hint": "Si les centaines sont les mêmes, regarde les dizaines."
+    },
+    {
+      "key": "q2",
+      "skill_id": "B057",
+      "statement": "Combien de points les Renards gagnent-ils au dernier atelier ?",
+      "type": "numerique",
+      "answer": {
+        "value": 81,
+        "unit": "points",
+        "accepted": [
+          "81 points",
+          "81 point"
+        ]
+      },
+      "points": 2,
+      "solution_steps": [
+        "Les Renards appliquent le programme Soleil au nombre 14, dans l'ordre des instructions.",
+        "Retirer 5 : $14 - 5 = 9$.",
+        "Multiplier le résultat par 9 : $9 \\times 9 = 81$. Les Renards gagnent **81 points**.",
+        "On multiplie le résultat de la première instruction, 9, et pas le nombre tiré, 14."
+      ],
+      "hint": "Chaque instruction part du résultat de la précédente."
+    },
+    {
+      "key": "q3",
+      "skill_id": "B057",
+      "statement": "Combien de points les Hiboux gagnent-ils au dernier atelier ?",
+      "type": "numerique",
+      "answer": {
+        "value": 76,
+        "unit": "points",
+        "accepted": [
+          "76 points",
+          "76 point"
+        ]
+      },
+      "points": 3,
+      "solution_steps": [
+        "Les Hiboux appliquent le programme Lune au nombre 9 : d'abord multiplier par 9, ensuite retirer 5.",
+        "Multiplier par 9 : $9 \\times 9 = 81$.",
+        "Retirer 5 au résultat : $81 - 5 = 76$. Les Hiboux gagnent **76 points**.",
+        "Attention : retirer 5 d'abord, ce serait le programme Soleil. Il donnerait $9 - 5 = 4$, puis $4 \\times 9 = 36$."
+      ],
+      "hint": "Relis l'ordre des instructions du programme Lune."
+    },
+    {
+      "key": "q4",
+      "skill_id": "B004",
+      "statement": "Avant le dernier atelier, combien de points les Hiboux ont-ils de plus que les Castors ?",
+      "type": "numerique",
+      "answer": {
+        "value": 27,
+        "unit": "points",
+        "accepted": [
+          "27 points",
+          "27 point"
+        ]
+      },
+      "points": 2,
+      "solution_steps": [
+        "On cherche l'écart entre 286 et 259 : on pose $286 - 259$.",
+        "Unités : on ne peut pas retirer 9 de 6. On casse une dizaine : $16 - 9 = 7$, et il reste 7 dizaines.",
+        "Dizaines : $7 - 5 = 2$. Centaines : $2 - 2 = 0$.",
+        "$286 - 259 = 27$. Vérification : $259 + 27 = 286$. Les Hiboux ont **27 points** de plus.",
+        "Retirer le petit chiffre du grand dans chaque colonne donnerait 33 : c'est faux."
+      ],
+      "hint": "Pose la soustraction en commençant par les unités."
+    },
+    {
+      "key": "q5",
+      "skill_id": "B057",
+      "statement": "Les Castors veulent gagner le plus de points possible. Combien de points de plus gagnent-ils avec le meilleur des deux programmes qu'avec l'autre ?",
+      "type": "numerique",
+      "answer": {
+        "value": 40,
+        "unit": "points",
+        "accepted": [
+          "40 points",
+          "40 point"
+        ]
+      },
+      "points": 4,
+      "solution_steps": [
+        "On applique les deux programmes au nombre 7.",
+        "Programme Soleil : $7 - 5 = 2$, puis $2 \\times 9 = 18$.",
+        "Programme Lune : $7 \\times 9 = 63$, puis $63 - 5 = 58$.",
+        "Le meilleur programme est Lune, qui donne 58 points. L'écart : $58 - 18 = 40$.",
+        "Les Castors gagnent **40 points** de plus avec le programme Lune. Les deux programmes ont les mêmes instructions, mais pas dans le même ordre : ils ne donnent pas le même résultat."
+      ],
+      "hint": "Calcule le résultat de chaque programme pour le nombre des Castors."
+    }
+  ],
+  "review_status": "relu_agent",
+  "programme_ref": "Cycle 3, Cours moyen première année, Algèbre : « Exécuter un programme de calcul »"
+}

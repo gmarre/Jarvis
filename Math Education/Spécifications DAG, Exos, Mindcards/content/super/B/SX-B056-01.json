@@ -1,0 +1,120 @@
+{
+  "id": "SX-B056-01",
+  "skill_id": "B056",
+  "skill_ids": [
+    "B056",
+    "B041",
+    "A003"
+  ],
+  "school_level": "CM1",
+  "title": "Les préparatifs de la fête de l'école",
+  "contexte": "Samedi 21 juin, l'école Jules-Verne organise sa fête de fin d'année, de 14 heures à 19 heures.\n\n**Le spectacle.** Dans la cour, M. Diallo installe 9 rangées de 24 chaises pour les familles.\n\n**La buvette.** L'association des parents achète 5 paquets de 60 gobelets et 3 packs de 6 bouteilles de jus. Une crêpe sera vendue 2 euros.\n\n**La tombola.** Chaque carnet de tombola contient 25 billets. La classe de Mme Roux vend 8 carnets complets. La classe de M. Petit vend cent quatre-vingt-seize billets.\n\n**Les manèges.** Mme Lopez achète 6 rouleaux de tickets de manège. Chaque rouleau contient 112 tickets.",
+  "image": null,
+  "duree_estimee_min": 15,
+  "questions": [
+    {
+      "key": "q1",
+      "skill_id": "B041",
+      "statement": "Combien de gobelets l'association des parents achète-t-elle ?",
+      "type": "numerique",
+      "answer": {
+        "value": 300,
+        "unit": "gobelets",
+        "accepted": [
+          "300 gobelets",
+          "300 gobelet"
+        ]
+      },
+      "points": 1,
+      "solution_steps": [
+        "Les gobelets sont vendus par paquets de 60, et l'association achète 5 paquets : on calcule $5 \\times 60$.",
+        "60, c'est 6 dizaines. $5 \\times 6 = 30$, donc 5 fois 6 dizaines font 30 dizaines.",
+        "30 dizaines, c'est 300 : l'association achète **300 gobelets**.",
+        "Les packs de bouteilles et le prix des crêpes ne servent pas ici."
+      ],
+      "hint": "Relis la phrase qui parle des gobelets."
+    },
+    {
+      "key": "q2",
+      "skill_id": "B056",
+      "statement": "Combien de chaises M. Diallo installe-t-il dans la cour ?",
+      "type": "numerique",
+      "answer": {
+        "value": 216,
+        "unit": "chaises",
+        "accepted": [
+          "216 chaises",
+          "216 chaise"
+        ]
+      },
+      "points": 3,
+      "solution_steps": [
+        "9 rangées de 24 chaises : on calcule $9 \\times 24$.",
+        "24, c'est 20 + 4. On multiplie chaque morceau par 9 : $9 \\times 24 = 9 \\times 20 + 9 \\times 4$.",
+        "$9 \\times 20 = 180$ (9 fois 2 dizaines, c'est 18 dizaines) et $9 \\times 4 = 36$.",
+        "$180 + 36 = 216$ : M. Diallo installe **216 chaises**.",
+        "Attention : $9 \\times 20 + 4 = 184$ oublie de multiplier le 4 par 9."
+      ],
+      "hint": "24, c'est 20 + 4."
+    },
+    {
+      "key": "q3",
+      "skill_id": "A003",
+      "statement": "Quelle classe a vendu le plus de billets de tombola ?",
+      "type": "qcm",
+      "choices": [
+        {
+          "key": "a",
+          "text": "La classe de Mme Roux",
+          "misconception": null
+        },
+        {
+          "key": "b",
+          "text": "La classe de M. Petit",
+          "misconception": "L'élève calcule 8 × 25 comme 8 × 20 + 5 = 165 et trouve moins que 196. Il faut multiplier aussi le 5 par 8 : 8 × 25 = 160 + 40 = 200."
+        },
+        {
+          "key": "c",
+          "text": "Les deux classes ont vendu autant de billets",
+          "misconception": "L'élève voit que 196 est proche de 200 et les croit égaux. On compare les nombres exacts : 200 est plus grand que 196."
+        }
+      ],
+      "answer": {
+        "value": "a"
+      },
+      "points": 2,
+      "solution_steps": [
+        "La classe de Mme Roux vend 8 carnets de 25 billets : $8 \\times 25 = 8 \\times 20 + 8 \\times 5 = 160 + 40 = 200$ billets.",
+        "La classe de M. Petit vend cent quatre-vingt-seize billets, c'est-à-dire 196 billets.",
+        "On compare 200 et 196 : 200 a 2 centaines, 196 n'en a qu'une. 200 est plus grand que 196.",
+        "C'est **la classe de Mme Roux** qui a vendu le plus de billets."
+      ],
+      "hint": "Calcule d'abord le nombre de billets de la classe de Mme Roux."
+    },
+    {
+      "key": "q4",
+      "skill_id": "B056",
+      "statement": "Combien de tickets de manège Mme Lopez achète-t-elle ? Calcule de tête en décomposant 112.",
+      "type": "numerique",
+      "answer": {
+        "value": 672,
+        "unit": "tickets",
+        "accepted": [
+          "672 tickets",
+          "672 ticket"
+        ]
+      },
+      "points": 4,
+      "solution_steps": [
+        "6 rouleaux de 112 tickets : on calcule $6 \\times 112$.",
+        "112, c'est 100 + 10 + 2. On multiplie chaque morceau par 6 : $6 \\times 112 = 6 \\times 100 + 6 \\times 10 + 6 \\times 2$.",
+        "$6 \\times 100 = 600$, $6 \\times 10 = 60$ et $6 \\times 2 = 12$.",
+        "$600 + 60 + 12 = 672$ : Mme Lopez achète **672 tickets**.",
+        "Attention : $6 \\times 100 + 12 = 612$ oublie de multiplier la dizaine et les unités par 6."
+      ],
+      "hint": "Écris 112 comme une somme de centaines, de dizaines et d'unités."
+    }
+  ],
+  "review_status": "relu_agent",
+  "programme_ref": "Cycle 3, Cours moyen première année, Le calcul mental : « Utiliser la distributivité de la multiplication par rapport à l'addition dans des cas simples »"
+}
