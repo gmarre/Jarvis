@@ -318,6 +318,30 @@ describe('checkAnswer, accents et unites en toutes lettres', () => {
     expect(checkAnswer(prix, '35 euros').isCorrect).toBe(true)
   })
 
+  it('accepte les unites agraires et composees, en symbole ou en lettres (etape 8)', () => {
+    const base = byType('numerique')
+    const champ: Exercise = { ...base, answer: { value: 3, unit: 'ha' } }
+    for (const saisie of ['3 ha', '3 hectares', '3 hectare']) expect(checkAnswer(champ, saisie).isCorrect).toBe(true)
+    expect(checkAnswer(champ, '3 a').isCorrect).toBe(false)
+    const vitesse: Exercise = { ...base, answer: { value: 90, unit: 'km/h' } }
+    for (const saisie of ['90 km/h', '90 km.h-1', `90 km${String.fromCharCode(0x00b7)}h-1`, `90 kilom${e}tres par heure`, '90 km par h']) {
+      expect(checkAnswer(vitesse, saisie).isCorrect).toBe(true)
+    }
+    expect(checkAnswer(vitesse, '90 m/s').isCorrect).toBe(false)
+    expect(checkAnswer(vitesse, '90 km').isCorrect).toBe(false)
+    const debit: Exercise = { ...base, answer: { value: 12, unit: 'L/min' } }
+    for (const saisie of ['12 L/min', '12 litres par minute']) expect(checkAnswer(debit, saisie).isCorrect).toBe(true)
+  })
+
+  it('lit « pi » tape apres un nombre comme le symbole (etape 8)', () => {
+    const base = byType('numerique')
+    const pi = String.fromCharCode(0x3c0)
+    const exacte: Exercise = { ...base, type: 'texte', answer: { value: `36${pi}` } }
+    for (const saisie of [`36${pi}`, '36pi', '36 pi', '36 PI']) expect(checkAnswer(exacte, saisie).isCorrect).toBe(true)
+    expect(checkAnswer(exacte, '36').isCorrect).toBe(false)
+    expect(checkAnswer(exacte, '6pi').isCorrect).toBe(false)
+  })
+
   it("refuse une autre unite que celle attendue, et un mauvais nombre", () => {
     const base = byType('numerique')
     const longueur: Exercise = { ...base, answer: { value: 5, unit: 'm' } }

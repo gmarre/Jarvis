@@ -106,6 +106,7 @@ const ESPACES_SPECIALES = new RegExp(`[${car(0xa0, 0x202f, 0x2009)}]`, 'g')
 const MOINS_VARIANTS = new RegExp(`[${car(0x2212, 0x2013, 0x2014, 0x2010, 0x2011, 0xfe63, 0xff0d)}]`, 'g')
 const DIVISE = new RegExp(car(0xf7), 'g')
 const EURO = car(0x20ac)
+const PI = car(0x3c0)
 
 /**
  * Signes de multiplication : « 3,2 × 10^4 », « 3,2 x 10^4 », « 3,2*10^4 »,
@@ -140,6 +141,9 @@ function normalize(value: string): string {
     // le moins typographique (U+2212), un tiret demi-cadratin (U+2013) ou un
     // trait d'union insecable. Tous valent « - » (etape 5, nombres relatifs).
     .replace(MOINS_VARIANTS, '-')
+    // « 36pi » ou « 36 pi » : la valeur exacte avec π, tapee sans le symbole
+    // (etape 8, aires et volumes).
+    .replace(/(?<=\d)\s*pi(?![a-z])/g, PI)
     // Apostrophe typographique du clavier d'un telephone, et ponctuation
     // finale : « C’est le triangle ! » vaut « c'est le triangle » (releve en
     // relecture, etape 4a). La ponctuation interne n'est pas touchee.
@@ -238,11 +242,35 @@ const NOMS_UNITES: Record<string, string[]> = {
   // et « 7,7° » sans le C (releve en relecture, super exercices B2).
   '°c': ['degre', 'degrecelsius', 'degrescelsius', 'c', '°'],
   [EURO]: ['euro', 'eur'],
+  // Aires agraires (etape 8, grandeurs du cycle 4).
+  ha: ['hectare'],
+  a: ['are'],
 }
 
-/** Toutes les ecritures acceptees d'une unite : symbole, nom, pluriel, carre ou cube. */
+/**
+ * Toutes les ecritures acceptees d'une unite : symbole, nom, pluriel, carre ou
+ * cube. Une unite composee (« km/h », « g/cm³ ») s'ecrit aussi « km.h-1 » ou
+ * « kilometres par heure » (etape 8, grandeurs quotients).
+ */
 function formesUnite(unit: string): Set<string> {
   const symbole = normalizeLoose(unit)
+  const quotient = symbole.split('/')
+  if (quotient.length === 2 && quotient[0] && quotient[1]) {
+    const [haut, bas] = quotient.map((u) => formesUnite(u))
+    const formes = new Set<string>()
+    for (const h of haut) {
+      for (const b of bas) {
+        formes.add(`${h}/${b}`)
+        formes.add(`${h}par${b}`)
+      }
+    }
+    // « km.h-1 », « km·h-1 », « kmh-1 » : seulement pour un denominateur
+    // sans exposant (« g.cm-3 » demanderait de lire l'exposant).
+    if (!/[23]$/.test(quotient[1])) {
+      for (const sep of ['.', FOIS, '']) formes.add(`${quotient[0]}${sep}${quotient[1]}-1`)
+    }
+    return formes
+  }
   const formes = new Set([symbole])
   const base = symbole.replace(/[23]$/, '')
   const exposant = symbole.slice(base.length)
