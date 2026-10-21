@@ -3,7 +3,7 @@
     "version": "1.0",
     "scope": "Tranche pilote CP a 4e : 69 exercices, 3 par competence (1 decouverte, 1 entrainement, 1 maitrise) sur les 23 competences des domaines A et C. La cible finale de la roadmap est de 5 exercices par niveau, soit 15 par competence.",
     "updated_at": "2026-07-28",
-    "total_exercises": 1618,
+    "total_exercises": 1636,
     "review_status": "relu_agent"
   },
   "exercises": [
@@ -40871,6 +40871,418 @@
       "programme_ref": "Cycle 4, classe de 5e, Espace et géométrie, Représentation de l'espace : « Savoir mettre en relation une représentation en perspective cavalière et un patron d'un pavé, d'un prisme droit ou d'un cylindre de révolution. »"
     },
     {
+      "id": "EX-G075-D-01",
+      "skill_id": "G075",
+      "level": "decouverte",
+      "type": "qcm",
+      "statement": "O est le centre de ce solide. Comment s'appelle l'ensemble des points de l'espace situés à exactement 4 cm de O ?",
+      "image": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 270 230\" width=\"270\" height=\"230\" font-family=\"system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif\" role=\"img\"><title>Boule de centre O dessinée en perspective</title><rect width=\"100%\" height=\"100%\" fill=\"#ffffff\"/><circle cx=\"135.0\" cy=\"121.0\" r=\"81.4\" fill=\"#f8fafc\" stroke=\"#334155\" stroke-width=\"1.8\"/><path d=\"M53.6,121.0 A81.4,24.4 0 0 0 216.4,121.0\" fill=\"none\" stroke=\"#334155\" stroke-width=\"1.2\"/><path d=\"M53.6,121.0 A81.4,24.4 0 0 1 216.4,121.0\" fill=\"none\" stroke=\"#334155\" stroke-width=\"1\" stroke-dasharray=\"4 3\"/><circle cx=\"135.0\" cy=\"121.0\" r=\"2.5\" fill=\"#334155\"/><line x1=\"135.0\" y1=\"121.0\" x2=\"205.5\" y2=\"80.3\" stroke=\"#2563eb\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><text x=\"125.8\" y=\"134.7\" font-size=\"13\" text-anchor=\"middle\" fill=\"#334155\" font-weight=\"600\">O</text><text stroke=\"#ffffff\" stroke-width=\"3\" paint-order=\"stroke\" x=\"170.0\" y=\"80.8\" font-size=\"13\" text-anchor=\"middle\" fill=\"#334155\">4 cm</text></svg>",
+      "choices": [
+        {
+          "key": "a",
+          "text": "Le cercle de centre O et de rayon 4 cm",
+          "misconception": "L'élève reprend la définition du plan. Dans l'espace, les points à 4 cm de O ne sont pas tous dans un même plan : ils forment une surface, pas une ligne."
+        },
+        {
+          "key": "b",
+          "text": "La boule de centre O et de rayon 4 cm",
+          "misconception": "L'élève confond la sphère et la boule. La boule contient aussi les points situés à moins de 4 cm de O : c'est un solide plein, pas seulement sa surface."
+        },
+        {
+          "key": "c",
+          "text": "La sphère de centre O et de rayon 4 cm",
+          "misconception": null
+        },
+        {
+          "key": "d",
+          "text": "Le disque de centre O et de rayon 4 cm",
+          "misconception": "L'élève pense au disque du plan, qui contient les points situés à 4 cm au plus de O dans un seul plan. Ici, on parle de l'espace et de la distance exacte 4 cm."
+        }
+      ],
+      "answer": {
+        "value": "c"
+      },
+      "solution_steps": [
+        "Dans le plan, les points situés à 4 cm de O forment un cercle. Dans l'espace, ils sont dans toutes les directions autour de O : en haut, en bas, devant, derrière.",
+        "Ils forment une surface, comme l'enveloppe d'un ballon : c'est **la sphère de centre O et de rayon 4 cm**.",
+        "La boule, elle, est le solide plein : elle contient la sphère et tous les points situés à moins de 4 cm de O.",
+        "Sphère et boule de l'espace correspondent au cercle et au disque du plan."
+      ],
+      "hint": "Dans l'espace, ces points ne sont pas tous dans un même plan : forment-ils une ligne, une surface ou un solide plein ?",
+      "estimated_duration_s": 45,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 4, classe de 3e, Espace et géométrie, Représentation de l'espace, Objectifs d'apprentissage : « Définir la boule et la sphère. »"
+    },
+    {
+      "id": "EX-G075-D-02",
+      "skill_id": "G075",
+      "level": "decouverte",
+      "type": "numerique",
+      "statement": "Cette boule de pétanque a pour centre O ; son diamètre est écrit sur la figure. Quel est son rayon, en cm ?",
+      "image": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 270 230\" width=\"270\" height=\"230\" font-family=\"system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif\" role=\"img\"><title>Boule de centre O dessinée en perspective</title><rect width=\"100%\" height=\"100%\" fill=\"#ffffff\"/><circle cx=\"135.0\" cy=\"121.0\" r=\"81.4\" fill=\"#f8fafc\" stroke=\"#334155\" stroke-width=\"1.8\"/><path d=\"M53.6,121.0 A81.4,24.4 0 0 0 216.4,121.0\" fill=\"none\" stroke=\"#334155\" stroke-width=\"1.2\"/><path d=\"M53.6,121.0 A81.4,24.4 0 0 1 216.4,121.0\" fill=\"none\" stroke=\"#334155\" stroke-width=\"1\" stroke-dasharray=\"4 3\"/><circle cx=\"135.0\" cy=\"121.0\" r=\"2.5\" fill=\"#334155\"/><line x1=\"64.5\" y1=\"161.7\" x2=\"205.5\" y2=\"80.3\" stroke=\"#2563eb\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><text x=\"130.0\" y=\"137.5\" font-size=\"13\" text-anchor=\"middle\" fill=\"#334155\" font-weight=\"600\">O</text><text stroke=\"#ffffff\" stroke-width=\"3\" paint-order=\"stroke\" x=\"129.0\" y=\"115.6\" font-size=\"13\" text-anchor=\"middle\" fill=\"#334155\">7,4 cm</text></svg>",
+      "answer": {
+        "value": 3.7,
+        "unit": "cm",
+        "accepted": [
+          "3,7 cm",
+          "3,7",
+          "3,7 centimètres"
+        ]
+      },
+      "solution_steps": [
+        "Un diamètre de la boule est un segment qui passe par le centre O et joint deux points de la sphère : il est formé de deux rayons mis bout à bout.",
+        "Diamètre = 2 × rayon, donc rayon = diamètre ÷ 2 = 7,4 ÷ 2 = 3,7.",
+        "Le rayon de la boule de pétanque est **3,7 cm**.",
+        "Calculer 7,4 × 2 = 14,8 cm reviendrait à prendre le diamètre pour le rayon."
+      ],
+      "hint": "Combien de rayons faut-il mettre bout à bout pour faire un diamètre ?",
+      "estimated_duration_s": 40,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 4, classe de 3e, Espace et géométrie, Représentation de l'espace, Objectifs d'apprentissage : « Définir les grands cercles, le diamètre. »"
+    },
+    {
+      "id": "EX-G075-E-01",
+      "skill_id": "G075",
+      "level": "entrainement",
+      "type": "vrai_faux",
+      "statement": "Sur cette sphère de centre O, on a tracé un cercle colorié de centre H.\n\nVrai ou faux : ce cercle est un grand cercle de la sphère.",
+      "image": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 270 230\" width=\"270\" height=\"230\" font-family=\"system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif\" role=\"img\"><title>Sphère de centre O et cercle de centre H tracé sur elle</title><rect width=\"100%\" height=\"100%\" fill=\"#ffffff\"/><circle cx=\"135.0\" cy=\"119.0\" r=\"83.3\" fill=\"#f8fafc\" stroke=\"#334155\" stroke-width=\"1.8\"/><path d=\"M51.7,119.0 A83.3,25.0 0 0 0 218.3,119.0\" fill=\"none\" stroke=\"#334155\" stroke-width=\"1.2\"/><path d=\"M51.7,119.0 A83.3,25.0 0 0 1 218.3,119.0\" fill=\"none\" stroke=\"#334155\" stroke-width=\"1\" stroke-dasharray=\"4 3\"/><ellipse cx=\"135.0\" cy=\"70.4\" rx=\"67.7\" ry=\"20.3\" fill=\"#93c5fd\" fill-opacity=\"0.75\" stroke=\"#2563eb\" stroke-width=\"1.6\"/><circle cx=\"135.0\" cy=\"70.4\" r=\"2.5\" fill=\"#334155\"/><circle cx=\"135.0\" cy=\"119.0\" r=\"2.5\" fill=\"#334155\"/><text x=\"124.6\" y=\"67.1\" font-size=\"13\" text-anchor=\"middle\" fill=\"#334155\" font-weight=\"600\">H</text><text x=\"125.8\" y=\"132.7\" font-size=\"13\" text-anchor=\"middle\" fill=\"#334155\" font-weight=\"600\">O</text></svg>",
+      "answer": {
+        "value": false
+      },
+      "solution_steps": [
+        "Un grand cercle d'une sphère est un cercle tracé sur la sphère qui a le même centre et le même rayon qu'elle : ici, son centre devrait être O. L'équateur dessiné en noir en est un.",
+        "Le cercle colorié a pour centre H, qui n'est pas le point O : ce n'est pas un grand cercle.",
+        "L'affirmation est **fausse**.",
+        "Tous les cercles tracés sur une sphère n'ont pas le rayon de la sphère : seuls les grands cercles l'ont."
+      ],
+      "hint": "Quel est le centre d'un grand cercle d'une sphère ?",
+      "estimated_duration_s": 45,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 4, classe de 3e, Espace et géométrie, Représentation de l'espace, Objectifs d'apprentissage : « Définir les grands cercles, le diamètre. »"
+    },
+    {
+      "id": "EX-G075-E-02",
+      "skill_id": "G075",
+      "level": "entrainement",
+      "type": "qcm",
+      "statement": "Cette boule a pour centre O ; son diamètre est écrit sur la figure. Un point T est à 6,5 cm de O. Où se trouve T ?",
+      "image": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 270 230\" width=\"270\" height=\"230\" font-family=\"system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif\" role=\"img\"><title>Boule de centre O dessinée en perspective</title><rect width=\"100%\" height=\"100%\" fill=\"#ffffff\"/><circle cx=\"135.0\" cy=\"121.0\" r=\"81.4\" fill=\"#f8fafc\" stroke=\"#334155\" stroke-width=\"1.8\"/><path d=\"M53.6,121.0 A81.4,24.4 0 0 0 216.4,121.0\" fill=\"none\" stroke=\"#334155\" stroke-width=\"1.2\"/><path d=\"M53.6,121.0 A81.4,24.4 0 0 1 216.4,121.0\" fill=\"none\" stroke=\"#334155\" stroke-width=\"1\" stroke-dasharray=\"4 3\"/><circle cx=\"135.0\" cy=\"121.0\" r=\"2.5\" fill=\"#334155\"/><line x1=\"64.5\" y1=\"161.7\" x2=\"205.5\" y2=\"80.3\" stroke=\"#2563eb\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><text x=\"130.0\" y=\"137.5\" font-size=\"13\" text-anchor=\"middle\" fill=\"#334155\" font-weight=\"600\">O</text><text stroke=\"#ffffff\" stroke-width=\"3\" paint-order=\"stroke\" x=\"129.0\" y=\"115.6\" font-size=\"13\" text-anchor=\"middle\" fill=\"#334155\">12 cm</text></svg>",
+      "choices": [
+        {
+          "key": "a",
+          "text": "À l'extérieur de la boule",
+          "misconception": null
+        },
+        {
+          "key": "b",
+          "text": "Sur la sphère",
+          "misconception": "L'élève juge que 6,5 cm est « à peu près » le rayon. Un point est sur la sphère seulement s'il est à exactement 6 cm de O."
+        },
+        {
+          "key": "c",
+          "text": "Dans la boule, sans être sur la sphère",
+          "misconception": "L'élève compare 6,5 cm au diamètre : 6,5 < 12. Mais la distance au centre se compare au rayon, 12 ÷ 2 = 6 cm."
+        }
+      ],
+      "answer": {
+        "value": "a"
+      },
+      "solution_steps": [
+        "Le rayon est la moitié du diamètre : 12 ÷ 2 = 6 cm.",
+        "Les points de la boule sont à une distance de O d'au plus 6 cm, le rayon ; ceux de la sphère, exactement à cette distance.",
+        "OT = 6,5 cm et 6,5 > 6 : T est plus loin de O que le rayon. Il est **à l'extérieur de la boule**.",
+        "Comparer 6,5 au diamètre, 12, serait une erreur : la position d'un point se lit avec sa distance au centre, comparée au rayon."
+      ],
+      "hint": "Compare la distance OT au rayon, pas au diamètre.",
+      "estimated_duration_s": 60,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 4, classe de 3e, Espace et géométrie, Représentation de l'espace, Objectifs d'apprentissage : « Définir la boule et la sphère. »"
+    },
+    {
+      "id": "EX-G075-M-01",
+      "skill_id": "G075",
+      "level": "maitrise",
+      "type": "qcm",
+      "statement": "Une sphère de centre O a 15 cm de diamètre. E, F, G et K sont à 7 cm, 7,5 cm, 8 cm et 15 cm de O. Lesquels appartiennent à la boule limitée par cette sphère ?",
+      "image": null,
+      "choices": [
+        {
+          "key": "a",
+          "text": "E seulement",
+          "misconception": "L'élève croit que la boule ne contient que les points à moins de 7,5 cm de O. Mais la sphère fait partie de la boule : F, à exactement 7,5 cm, y appartient."
+        },
+        {
+          "key": "b",
+          "text": "E, F et G",
+          "misconception": "L'élève compare les distances au diamètre, 15 cm, et garde celles qui sont plus petites. Il faut les comparer au rayon, 7,5 cm : G, à 8 cm, est dehors."
+        },
+        {
+          "key": "c",
+          "text": "E, F, G et K",
+          "misconception": "L'élève compare au diamètre et compte aussi K, à 15 cm, comme s'il était sur la sphère. K est à deux rayons de O, loin à l'extérieur."
+        },
+        {
+          "key": "d",
+          "text": "E et F",
+          "misconception": null
+        }
+      ],
+      "answer": {
+        "value": "d"
+      },
+      "solution_steps": [
+        "Rayon : 15 ÷ 2 = 7,5 cm.",
+        "La boule de centre O et de rayon 7,5 cm contient tous les points situés à 7,5 cm **au plus** de O : l'intérieur, et la sphère elle-même.",
+        "E (7 cm) est à l'intérieur ; F (7,5 cm) est sur la sphère, donc dans la boule ; G (8 cm) et K (15 cm) sont à l'extérieur.",
+        "Les points de la boule sont **E et F**."
+      ],
+      "hint": "Un point de la sphère appartient-il à la boule ?",
+      "estimated_duration_s": 90,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 4, classe de 3e, Espace et géométrie, Représentation de l'espace, Objectifs d'apprentissage : « Définir la boule et la sphère. »"
+    },
+    {
+      "id": "EX-G075-M-02",
+      "skill_id": "G075",
+      "level": "maitrise",
+      "type": "numerique",
+      "statement": "On assimile la Terre à une sphère de centre O. Le segment [NS] joint les pôles en passant par O et mesure 12 714 km. Quel est le rayon du méridien colorié, en km ?",
+      "image": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 270 230\" width=\"270\" height=\"230\" font-family=\"system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif\" role=\"img\"><title>Sphère de centre O avec un cercle colorié et deux points N et S</title><rect width=\"100%\" height=\"100%\" fill=\"#ffffff\"/><circle cx=\"135.0\" cy=\"119.0\" r=\"83.3\" fill=\"#f8fafc\" stroke=\"#334155\" stroke-width=\"1.8\"/><ellipse cx=\"135.0\" cy=\"119.0\" rx=\"25.0\" ry=\"83.3\" fill=\"#bfdbfe\" fill-opacity=\"0.7\" stroke=\"none\"/><path d=\"M135.0,35.7 A25.0,83.3 0 0 1 135.0,202.3\" fill=\"none\" stroke=\"#2563eb\" stroke-width=\"1.6\"/><path d=\"M135.0,35.7 A25.0,83.3 0 0 0 135.0,202.3\" fill=\"none\" stroke=\"#2563eb\" stroke-width=\"1.1\" stroke-dasharray=\"4 3\"/><path d=\"M51.7,119.0 A83.3,25.0 0 0 0 218.3,119.0\" fill=\"none\" stroke=\"#334155\" stroke-width=\"1.2\"/><path d=\"M51.7,119.0 A83.3,25.0 0 0 1 218.3,119.0\" fill=\"none\" stroke=\"#334155\" stroke-width=\"1\" stroke-dasharray=\"4 3\"/><circle cx=\"135.0\" cy=\"119.0\" r=\"2.5\" fill=\"#334155\"/><line x1=\"131.0\" y1=\"31.7\" x2=\"139.0\" y2=\"39.7\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"131.0\" y1=\"39.7\" x2=\"139.0\" y2=\"31.7\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"131.0\" y1=\"198.3\" x2=\"139.0\" y2=\"206.3\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"131.0\" y1=\"206.3\" x2=\"139.0\" y2=\"198.3\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><text x=\"125.8\" y=\"132.7\" font-size=\"13\" text-anchor=\"middle\" fill=\"#334155\" font-weight=\"600\">O</text><text x=\"135.0\" y=\"27.2\" font-size=\"13\" text-anchor=\"middle\" fill=\"#334155\" font-weight=\"600\">N</text><text x=\"135.0\" y=\"219.8\" font-size=\"13\" text-anchor=\"middle\" fill=\"#334155\" font-weight=\"600\">S</text></svg>",
+      "answer": {
+        "value": 6357,
+        "unit": "km",
+        "accepted": [
+          "6 357 km",
+          "6357 km",
+          "6 357",
+          "6357"
+        ]
+      },
+      "solution_steps": [
+        "N et S sont sur la sphère et le segment [NS] passe par le centre O : c'est un diamètre de la sphère.",
+        "Le rayon de la sphère est donc 12 714 ÷ 2 = 6 357 km.",
+        "Un méridien est un grand cercle : il a le même centre O et le même rayon que la sphère.",
+        "Le rayon du méridien est **6 357 km**. La longueur 12 714 km est celle d'un diamètre, pas d'un rayon."
+      ],
+      "hint": "Le segment [NS] est-il un rayon ou un diamètre ? Quel rayon a un grand cercle ?",
+      "estimated_duration_s": 75,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 4, classe de 3e, Espace et géométrie, Représentation de l'espace, Objectifs d'apprentissage : « Définir les grands cercles, le diamètre. »"
+    },
+    {
+      "id": "EX-G076-D-01",
+      "skill_id": "G076",
+      "level": "decouverte",
+      "type": "qcm",
+      "statement": "Ce cylindre de révolution est coupé par un plan perpendiculaire à son axe. La section est coloriée. Quelle est sa nature ?",
+      "image": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 270 230\" width=\"270\" height=\"230\" font-family=\"system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif\" role=\"img\"><title>Cylindre coupé par un plan</title><rect width=\"100%\" height=\"100%\" fill=\"#ffffff\"/><path d=\"M80.0,183.1 A55.0,20.9 0 0 0 190.0,183.1\" fill=\"none\" stroke=\"#334155\" stroke-width=\"1.8\"/><path d=\"M80.0,183.1 A55.0,20.9 0 0 1 190.0,183.1\" fill=\"none\" stroke=\"#334155\" stroke-width=\"1.2\" stroke-dasharray=\"4 3\"/><line x1=\"80.0\" y1=\"183.1\" x2=\"80.0\" y2=\"54.9\" stroke=\"#334155\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><line x1=\"190.0\" y1=\"183.1\" x2=\"190.0\" y2=\"54.9\" stroke=\"#334155\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><ellipse cx=\"135.0\" cy=\"54.9\" rx=\"55.0\" ry=\"20.9\" fill=\"#f1f5f9\" stroke=\"#334155\" stroke-width=\"1.8\"/><ellipse cx=\"135.0\" cy=\"131.8\" rx=\"55.0\" ry=\"20.9\" fill=\"#93c5fd\" fill-opacity=\"0.75\" stroke=\"#2563eb\" stroke-width=\"1.6\"/></svg>",
+      "choices": [
+        {
+          "key": "a",
+          "text": "Un ovale",
+          "misconception": "L'élève décrit le dessin. En perspective cavalière, un disque qui n'est pas vu de face est dessiné aplati : la vraie section n'est pas un ovale."
+        },
+        {
+          "key": "b",
+          "text": "Un disque de même rayon que la base",
+          "misconception": null
+        },
+        {
+          "key": "c",
+          "text": "Un rectangle",
+          "misconception": "L'élève confond avec la section par un plan parallèle à l'axe, qui donne un rectangle."
+        },
+        {
+          "key": "d",
+          "text": "Un disque plus petit que la base",
+          "misconception": "L'élève pense que la section rétrécit, comme dans un cône. Dans un cylindre, toutes les sections perpendiculaires à l'axe sont superposables à la base."
+        }
+      ],
+      "answer": {
+        "value": "b"
+      },
+      "solution_steps": [
+        "Les deux bases d'un cylindre de révolution sont des disques de même rayon, perpendiculaires à son axe.",
+        "Un plan perpendiculaire à l'axe est parallèle aux bases : il découpe dans le cylindre une « tranche » superposable à une base.",
+        "La section est **un disque de même rayon que la base**.",
+        "Elle est dessinée en ovale parce que la perspective cavalière aplatit les disques qui ne sont pas vus de face : c'est le dessin qui déforme, pas la section."
+      ],
+      "hint": "Le plan de coupe est parallèle à quelles faces du cylindre ?",
+      "estimated_duration_s": 45,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 4, classe de 3e, Espace et géométrie, Représentation de l'espace, Objectifs d'apprentissage : « Visualiser et réaliser des sections de pavé parallèlement à une face, de cylindre parallèlement ou perpendiculairement à son axe, d'une boule. »"
+    },
+    {
+      "id": "EX-G076-D-02",
+      "skill_id": "G076",
+      "level": "decouverte",
+      "type": "numerique",
+      "statement": "On coupe une boule de centre O et de 13 cm de diamètre par un plan qui passe par O. Quel est le rayon de la section, en cm ?",
+      "image": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 270 230\" width=\"270\" height=\"230\" font-family=\"system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif\" role=\"img\"><title>Boule de centre O coupée par un plan</title><rect width=\"100%\" height=\"100%\" fill=\"#ffffff\"/><circle cx=\"135.0\" cy=\"121.0\" r=\"81.4\" fill=\"#f8fafc\" stroke=\"#334155\" stroke-width=\"1.8\"/><path d=\"M53.6,121.0 A81.4,24.4 0 0 0 216.4,121.0\" fill=\"none\" stroke=\"#334155\" stroke-width=\"1.2\"/><path d=\"M53.6,121.0 A81.4,24.4 0 0 1 216.4,121.0\" fill=\"none\" stroke=\"#334155\" stroke-width=\"1\" stroke-dasharray=\"4 3\"/><ellipse cx=\"135.0\" cy=\"121.0\" rx=\"81.4\" ry=\"24.4\" fill=\"#93c5fd\" fill-opacity=\"0.75\" stroke=\"#2563eb\" stroke-width=\"1.6\"/><circle cx=\"135.0\" cy=\"121.0\" r=\"2.5\" fill=\"#334155\"/><line x1=\"135.0\" y1=\"121.0\" x2=\"216.4\" y2=\"121.0\" stroke=\"#2563eb\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><text x=\"125.8\" y=\"134.7\" font-size=\"13\" text-anchor=\"middle\" fill=\"#334155\" font-weight=\"600\">O</text><text stroke=\"#ffffff\" stroke-width=\"3\" paint-order=\"stroke\" x=\"163.5\" y=\"114.0\" font-size=\"13\" text-anchor=\"middle\" fill=\"#334155\">?</text></svg>",
+      "answer": {
+        "value": 6.5,
+        "unit": "cm",
+        "accepted": [
+          "6,5 cm",
+          "6,5",
+          "6,5 centimètres"
+        ]
+      },
+      "solution_steps": [
+        "Un plan qui passe par le centre O coupe la boule selon un disque de centre O.",
+        "Ce disque a le même rayon que la boule : son bord est un grand cercle de la sphère.",
+        "Rayon de la boule : 13 ÷ 2 = 6,5 cm. Le rayon de la section est **6,5 cm**.",
+        "Répondre 13 cm, ce serait donner le diamètre de la section, pas son rayon."
+      ],
+      "hint": "Quand le plan passe par le centre, le bord de la section est un grand cercle.",
+      "estimated_duration_s": 45,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 4, classe de 3e, Espace et géométrie, Représentation de l'espace, Objectifs d'apprentissage : « Visualiser et réaliser des sections de pavé parallèlement à une face, de cylindre parallèlement ou perpendiculairement à son axe, d'une boule. »"
+    },
+    {
+      "id": "EX-G076-E-01",
+      "skill_id": "G076",
+      "level": "entrainement",
+      "type": "qcm",
+      "statement": "Ce pavé droit est coupé par un plan parallèle à sa face du dessous ABFE. Quelle est la section coloriée ?",
+      "image": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 270 230\" width=\"270\" height=\"230\" font-family=\"system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif\" role=\"img\"><title>Pavé droit ABCDEFGH coupé par un plan</title><rect width=\"100%\" height=\"100%\" fill=\"#ffffff\"/><polygon points=\"52.0,204.0 190.1,204.0 190.1,105.4 52.0,105.4\" fill=\"#ffffff\" stroke=\"none\"/><polygon points=\"52.0,105.4 190.1,105.4 218.0,77.5 79.9,77.5\" fill=\"#f1f5f9\" stroke=\"none\"/><polygon points=\"190.1,204.0 190.1,105.4 218.0,77.5 218.0,176.1\" fill=\"#e2e8f0\" stroke=\"none\"/><polygon points=\"52.0,144.8 190.1,144.8 218.0,116.9 79.9,116.9\" fill=\"#93c5fd\" fill-opacity=\"0.75\" stroke=\"#2563eb\" stroke-width=\"1.6\" stroke-linejoin=\"round\"/><line x1=\"79.9\" y1=\"176.1\" x2=\"218.0\" y2=\"176.1\" stroke=\"#334155\" stroke-width=\"1.2\" stroke-linecap=\"round\" stroke-dasharray=\"4 3\"/><line x1=\"79.9\" y1=\"77.5\" x2=\"79.9\" y2=\"176.1\" stroke=\"#334155\" stroke-width=\"1.2\" stroke-linecap=\"round\" stroke-dasharray=\"4 3\"/><line x1=\"79.9\" y1=\"176.1\" x2=\"52.0\" y2=\"204.0\" stroke=\"#334155\" stroke-width=\"1.2\" stroke-linecap=\"round\" stroke-dasharray=\"4 3\"/><line x1=\"52.0\" y1=\"204.0\" x2=\"190.1\" y2=\"204.0\" stroke=\"#334155\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><line x1=\"190.1\" y1=\"204.0\" x2=\"190.1\" y2=\"105.4\" stroke=\"#334155\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><line x1=\"190.1\" y1=\"105.4\" x2=\"52.0\" y2=\"105.4\" stroke=\"#334155\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><line x1=\"52.0\" y1=\"105.4\" x2=\"52.0\" y2=\"204.0\" stroke=\"#334155\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><line x1=\"218.0\" y1=\"176.1\" x2=\"218.0\" y2=\"77.5\" stroke=\"#334155\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><line x1=\"218.0\" y1=\"77.5\" x2=\"79.9\" y2=\"77.5\" stroke=\"#334155\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><line x1=\"190.1\" y1=\"204.0\" x2=\"218.0\" y2=\"176.1\" stroke=\"#334155\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><line x1=\"190.1\" y1=\"105.4\" x2=\"218.0\" y2=\"77.5\" stroke=\"#334155\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><line x1=\"79.9\" y1=\"77.5\" x2=\"52.0\" y2=\"105.4\" stroke=\"#334155\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><text x=\"43.5\" y=\"217.0\" font-size=\"13\" text-anchor=\"middle\" fill=\"#334155\" font-weight=\"600\">A</text><text x=\"194.7\" y=\"219.6\" font-size=\"13\" text-anchor=\"middle\" fill=\"#334155\" font-weight=\"600\">B</text><text x=\"201.2\" y=\"114.4\" font-size=\"13\" text-anchor=\"middle\" fill=\"#334155\" font-weight=\"600\">C</text><text x=\"40.9\" y=\"105.3\" font-size=\"13\" text-anchor=\"middle\" fill=\"#334155\" font-weight=\"600\">D</text><text x=\"68.8\" y=\"176.0\" font-size=\"13\" text-anchor=\"middle\" fill=\"#334155\" font-weight=\"600\">E</text><text x=\"229.1\" y=\"185.2\" font-size=\"13\" text-anchor=\"middle\" fill=\"#334155\" font-weight=\"600\">F</text><text x=\"226.5\" y=\"73.5\" font-size=\"13\" text-anchor=\"middle\" fill=\"#334155\" font-weight=\"600\">G</text><text x=\"75.3\" y=\"70.9\" font-size=\"13\" text-anchor=\"middle\" fill=\"#334155\" font-weight=\"600\">H</text><text stroke=\"#ffffff\" stroke-width=\"3\" paint-order=\"stroke\" x=\"121.0\" y=\"221.0\" font-size=\"13\" text-anchor=\"middle\" fill=\"#334155\">7 cm</text><text stroke=\"#ffffff\" stroke-width=\"3\" paint-order=\"stroke\" x=\"45.0\" y=\"159.7\" font-size=\"13\" text-anchor=\"end\" fill=\"#334155\">5 cm</text><text stroke=\"#ffffff\" stroke-width=\"3\" paint-order=\"stroke\" x=\"209.0\" y=\"200.0\" font-size=\"13\" text-anchor=\"start\" fill=\"#334155\">4 cm</text></svg>",
+      "choices": [
+        {
+          "key": "a",
+          "text": "Un rectangle de 7 cm sur 5 cm",
+          "misconception": "L'élève prend les dimensions de la face avant ABCD. Le plan est parallèle à la face du dessous, pas à la face avant."
+        },
+        {
+          "key": "b",
+          "text": "Un rectangle de 5 cm sur 4 cm",
+          "misconception": "L'élève prend les dimensions de la face de droite BCGF, qui est verticale. Le plan de coupe est horizontal."
+        },
+        {
+          "key": "c",
+          "text": "Un parallélogramme de 7 cm sur 4 cm",
+          "misconception": "L'élève décrit le dessin : en perspective cavalière, un rectangle horizontal est dessiné en parallélogramme, mais ses angles sont droits."
+        },
+        {
+          "key": "d",
+          "text": "Un rectangle de 7 cm sur 4 cm",
+          "misconception": null
+        }
+      ],
+      "answer": {
+        "value": "d"
+      },
+      "solution_steps": [
+        "Un plan parallèle à une face d'un pavé droit coupe le pavé selon un rectangle superposable à cette face.",
+        "La face du dessous ABFE a pour dimensions AB = 7 cm et BF = 4 cm.",
+        "La section est **un rectangle de 7 cm sur 4 cm**. Elle est dessinée en parallélogramme parce qu'elle n'est pas vue de face.",
+        "La hauteur AD = 5 cm ne compte pas : elle dit seulement entre quelles limites on peut couper."
+      ],
+      "hint": "À quelle face du pavé la section est-elle superposable ?",
+      "estimated_duration_s": 60,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 4, classe de 3e, Espace et géométrie, Représentation de l'espace, Objectifs d'apprentissage : « Visualiser et réaliser des sections de pavé parallèlement à une face, de cylindre parallèlement ou perpendiculairement à son axe, d'une boule. »"
+    },
+    {
+      "id": "EX-G076-E-02",
+      "skill_id": "G076",
+      "level": "entrainement",
+      "type": "numerique",
+      "statement": "Ce cylindre de révolution, de rayon 4 cm, est coupé par un plan qui contient son axe, la droite (OO'). Quelle est l'aire de la section, en cm² ?",
+      "image": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 270 230\" width=\"270\" height=\"230\" font-family=\"system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif\" role=\"img\"><title>Cylindre coupé par un plan, centres O et O'</title><rect width=\"100%\" height=\"100%\" fill=\"#ffffff\"/><path d=\"M78.5,182.5 A56.5,21.5 0 0 0 191.5,182.5\" fill=\"none\" stroke=\"#334155\" stroke-width=\"1.8\"/><path d=\"M78.5,182.5 A56.5,21.5 0 0 1 191.5,182.5\" fill=\"none\" stroke=\"#334155\" stroke-width=\"1.2\" stroke-dasharray=\"4 3\"/><line x1=\"78.5\" y1=\"182.5\" x2=\"78.5\" y2=\"55.5\" stroke=\"#334155\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><line x1=\"191.5\" y1=\"182.5\" x2=\"191.5\" y2=\"55.5\" stroke=\"#334155\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><ellipse cx=\"135.0\" cy=\"55.5\" rx=\"56.5\" ry=\"21.5\" fill=\"#f1f5f9\" stroke=\"#334155\" stroke-width=\"1.8\"/><line x1=\"135.0\" y1=\"182.5\" x2=\"135.0\" y2=\"55.5\" stroke=\"#94a3b8\" stroke-width=\"1.2\" stroke-dasharray=\"5 3\"/><circle cx=\"135.0\" cy=\"182.5\" r=\"2.5\" fill=\"#334155\"/><circle cx=\"135.0\" cy=\"55.5\" r=\"2.5\" fill=\"#334155\"/><polygon points=\"78.5,182.5 191.5,182.5 191.5,55.5 78.5,55.5\" fill=\"#93c5fd\" fill-opacity=\"0.6\" stroke=\"#2563eb\" stroke-width=\"1.6\" stroke-linejoin=\"round\"/><text x=\"124.0\" y=\"193.9\" font-size=\"13\" text-anchor=\"middle\" fill=\"#334155\" font-weight=\"600\">O</text><text x=\"127.5\" y=\"49.4\" font-size=\"13\" text-anchor=\"middle\" fill=\"#334155\" font-weight=\"600\">O'</text><text stroke=\"#ffffff\" stroke-width=\"3\" paint-order=\"stroke\" x=\"198.5\" y=\"124.0\" font-size=\"13\" text-anchor=\"start\" fill=\"#334155\">9 cm</text></svg>",
+      "answer": {
+        "value": 72,
+        "unit": "cm²",
+        "accepted": [
+          "72 cm²",
+          "72 cm2",
+          "72",
+          "72 centimètres carrés"
+        ]
+      },
+      "solution_steps": [
+        "Un plan parallèle à l'axe d'un cylindre le coupe selon un rectangle, dont un côté est la hauteur du cylindre : 9 cm.",
+        "Ici, le plan contient l'axe : il passe par les centres O et O' et coupe chaque base selon un diamètre, 2 × 4 = 8 cm.",
+        "La section est un rectangle de 9 cm sur 8 cm. Son aire : 9 × 8 = **72 cm²**.",
+        "Avec le rayon au lieu du diamètre, on trouverait 9 × 4 = 36 cm², l'aire de la moitié de la section."
+      ],
+      "hint": "Le plan passe par l'axe : quelle longueur découpe-t-il dans chaque base ?",
+      "estimated_duration_s": 75,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 4, classe de 3e, Espace et géométrie, Représentation de l'espace, Objectifs d'apprentissage : « Visualiser et réaliser des sections de pavé parallèlement à une face, de cylindre parallèlement ou perpendiculairement à son axe, d'une boule. »"
+    },
+    {
+      "id": "EX-G076-M-01",
+      "skill_id": "G076",
+      "level": "maitrise",
+      "type": "numerique",
+      "statement": "Une boule de centre O, de rayon 17 cm, est coupée par un plan perpendiculaire en H à (OH), avec OH = 8 cm. Calcule le rayon HM de la section, en cm (figure pas en vraie grandeur).",
+      "image": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 270 230\" width=\"270\" height=\"230\" font-family=\"system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif\" role=\"img\"><title>Boule de centre O coupée par un plan, points H et M</title><rect width=\"100%\" height=\"100%\" fill=\"#ffffff\"/><circle cx=\"135.0\" cy=\"121.0\" r=\"81.4\" fill=\"#f8fafc\" stroke=\"#334155\" stroke-width=\"1.8\"/><path d=\"M53.6,121.0 A81.4,24.4 0 0 0 216.4,121.0\" fill=\"none\" stroke=\"#334155\" stroke-width=\"1.2\"/><path d=\"M53.6,121.0 A81.4,24.4 0 0 1 216.4,121.0\" fill=\"none\" stroke=\"#334155\" stroke-width=\"1\" stroke-dasharray=\"4 3\"/><ellipse cx=\"135.0\" cy=\"70.9\" rx=\"64.1\" ry=\"19.2\" fill=\"#93c5fd\" fill-opacity=\"0.75\" stroke=\"#2563eb\" stroke-width=\"1.6\"/><circle cx=\"135.0\" cy=\"70.9\" r=\"2.5\" fill=\"#334155\"/><circle cx=\"135.0\" cy=\"121.0\" r=\"2.5\" fill=\"#334155\"/><line x1=\"195.1\" y1=\"66.9\" x2=\"203.1\" y2=\"74.9\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"195.1\" y1=\"74.9\" x2=\"203.1\" y2=\"66.9\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"135.0\" y1=\"121.0\" x2=\"135.0\" y2=\"70.9\" stroke=\"#2563eb\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-dasharray=\"5 3\"/><line x1=\"135.0\" y1=\"70.9\" x2=\"199.1\" y2=\"70.9\" stroke=\"#2563eb\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><text x=\"124.6\" y=\"67.6\" font-size=\"13\" text-anchor=\"middle\" fill=\"#334155\" font-weight=\"600\">H</text><text x=\"125.8\" y=\"134.7\" font-size=\"13\" text-anchor=\"middle\" fill=\"#334155\" font-weight=\"600\">O</text><text x=\"209.4\" y=\"67.4\" font-size=\"13\" text-anchor=\"middle\" fill=\"#334155\" font-weight=\"600\">M</text><rect x=\"118.6\" y=\"97.6\" width=\"32.8\" height=\"14\" fill=\"#ffffff\" rx=\"2\"/><text x=\"135.0\" y=\"108.0\" font-size=\"13\" text-anchor=\"middle\" fill=\"#334155\">8 cm</text><rect x=\"161.5\" y=\"65.0\" width=\"11.2\" height=\"14\" fill=\"#ffffff\" rx=\"2\"/><text x=\"167.1\" y=\"75.4\" font-size=\"13\" text-anchor=\"middle\" fill=\"#334155\">?</text></svg>",
+      "answer": {
+        "value": 15,
+        "unit": "cm",
+        "accepted": [
+          "15 cm",
+          "15",
+          "15 centimètres"
+        ]
+      },
+      "solution_steps": [
+        "M est sur le bord de la section, donc sur la sphère : OM = 17 cm, le rayon de la boule.",
+        "Le plan de coupe est perpendiculaire à (OH) en H : la section est un disque de centre H, et la droite (HM), tracée dans ce plan, est perpendiculaire à (OH). Le triangle OHM est rectangle en H, d'hypoténuse [OM].",
+        "Théorème de Pythagore : OM² = OH² + HM², donc HM² = 17² − 8² = 289 − 64 = 225.",
+        "HM = √225 = 15 : le rayon de la section est **15 cm**.",
+        "Erreurs à éviter : 17 − 8 = 9 cm (ce sont les carrés qu'on soustrait, pas les longueurs) ; 17 cm (seule une section qui passe par O a le rayon de la boule)."
+      ],
+      "hint": "Quelle longueur connais-tu dans le triangle OHM, et où est son angle droit ?",
+      "estimated_duration_s": 120,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 4, classe de 3e, Espace et géométrie, Représentation de l'espace, Objectifs d'apprentissage : « Visualiser et réaliser des sections de pavé parallèlement à une face, de cylindre parallèlement ou perpendiculairement à son axe, d'une boule. »"
+    },
+    {
+      "id": "EX-G076-M-02",
+      "skill_id": "G076",
+      "level": "maitrise",
+      "type": "qcm",
+      "statement": "Ce cylindre de révolution, de rayon 10 cm, est coupé par un plan parallèle à son axe, à 6 cm de cet axe (figure pas en vraie grandeur). Quelle est la section ?",
+      "image": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 270 230\" width=\"270\" height=\"230\" font-family=\"system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif\" role=\"img\"><title>Cylindre coupé par un plan</title><rect width=\"100%\" height=\"100%\" fill=\"#ffffff\"/><path d=\"M52.0,172.5 A83.0,31.5 0 0 0 218.0,172.5\" fill=\"none\" stroke=\"#334155\" stroke-width=\"1.8\"/><path d=\"M52.0,172.5 A83.0,31.5 0 0 1 218.0,172.5\" fill=\"none\" stroke=\"#334155\" stroke-width=\"1.2\" stroke-dasharray=\"4 3\"/><line x1=\"52.0\" y1=\"172.5\" x2=\"52.0\" y2=\"72.9\" stroke=\"#334155\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><line x1=\"218.0\" y1=\"172.5\" x2=\"218.0\" y2=\"72.9\" stroke=\"#334155\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><ellipse cx=\"135.0\" cy=\"72.9\" rx=\"83.0\" ry=\"31.5\" fill=\"#f1f5f9\" stroke=\"#334155\" stroke-width=\"1.8\"/><line x1=\"135.0\" y1=\"172.5\" x2=\"135.0\" y2=\"72.9\" stroke=\"#94a3b8\" stroke-width=\"1.2\" stroke-dasharray=\"5 3\"/><circle cx=\"135.0\" cy=\"172.5\" r=\"2.5\" fill=\"#334155\"/><circle cx=\"135.0\" cy=\"72.9\" r=\"2.5\" fill=\"#334155\"/><polygon points=\"85.2,147.2 184.8,147.2 184.8,47.6 85.2,47.6\" fill=\"#93c5fd\" fill-opacity=\"0.6\" stroke=\"#2563eb\" stroke-width=\"1.6\" stroke-linejoin=\"round\"/><text x=\"124.0\" y=\"183.8\" font-size=\"13\" text-anchor=\"middle\" fill=\"#334155\" font-weight=\"600\">O</text><text x=\"127.5\" y=\"66.8\" font-size=\"13\" text-anchor=\"middle\" fill=\"#334155\" font-weight=\"600\">O'</text><text stroke=\"#ffffff\" stroke-width=\"3\" paint-order=\"stroke\" x=\"225.0\" y=\"127.7\" font-size=\"13\" text-anchor=\"start\" fill=\"#334155\">12 cm</text></svg>",
+      "choices": [
+        {
+          "key": "a",
+          "text": "Un rectangle de 12 cm sur 20 cm",
+          "misconception": "L'élève prend le diamètre de la base : c'est la section par un plan qui contient l'axe. Ici, le plan est à 6 cm de l'axe, la section est plus étroite."
+        },
+        {
+          "key": "b",
+          "text": "Un rectangle de 12 cm sur 8 cm",
+          "misconception": "L'élève trouve bien la demi-corde avec le théorème de Pythagore, 100 − 36 = 64 et √64 = 8, mais oublie de la doubler : la corde s'étend des deux côtés de son milieu."
+        },
+        {
+          "key": "c",
+          "text": "Un rectangle de 12 cm sur 16 cm",
+          "misconception": null
+        },
+        {
+          "key": "d",
+          "text": "Un rectangle de 12 cm sur 4 cm",
+          "misconception": "L'élève soustrait les longueurs, 10 − 6 = 4, au lieu d'utiliser le théorème de Pythagore dans la base."
+        }
+      ],
+      "answer": {
+        "value": "c"
+      },
+      "solution_steps": [
+        "Un plan parallèle à l'axe coupe le cylindre selon un rectangle ; un de ses côtés est la hauteur du cylindre, 12 cm.",
+        "L'autre côté est la corde [PQ] que le plan découpe dans une base, un disque de centre O et de rayon 10 cm. Soit I le pied de la perpendiculaire à (PQ) passant par O : OI = 6 cm, et I est le milieu de [PQ], car la droite (OI) est un axe de symétrie du disque.",
+        "Le triangle OIP est rectangle en I, d'hypoténuse [OP] = 10 cm : IP² = OP² − OI² = 100 − 36 = 64, donc IP = 8 cm.",
+        "PQ = 2 × 8 = 16 cm : la section est **un rectangle de 12 cm sur 16 cm**."
+      ],
+      "hint": "Dessine la base vue de dessus : le plan y découpe une corde à 6 cm du centre.",
+      "estimated_duration_s": 150,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 4, classe de 3e, Espace et géométrie, Représentation de l'espace, Objectifs d'apprentissage : « Visualiser et réaliser des sections de pavé parallèlement à une face, de cylindre parallèlement ou perpendiculairement à son axe, d'une boule. »"
+    },
+    {
       "id": "EX-P001-D-01",
       "skill_id": "P001",
       "level": "decouverte",
@@ -47502,6 +47914,220 @@
       "estimated_duration_s": 120,
       "review_status": "relu_agent",
       "programme_ref": "Cycle 4, classe de 4e, Proportionnalité, fonctions, Proportionnalité, Objectifs d'apprentissage : « Utiliser des grandeurs quotients, avec ou sans unités. »"
+    },
+    {
+      "id": "EX-P038-D-01",
+      "skill_id": "P038",
+      "level": "decouverte",
+      "type": "numerique",
+      "statement": "Le volume d'une boule de rayon r est $\\frac{4}{3} \\times \\pi \\times r^3$. Quel est le volume de cette boule, en cm³, arrondi à l'unité ?",
+      "image": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 270 230\" width=\"270\" height=\"230\" font-family=\"system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif\" role=\"img\"><title>Boule de centre O dessinée en perspective</title><rect width=\"100%\" height=\"100%\" fill=\"#ffffff\"/><circle cx=\"135.0\" cy=\"121.0\" r=\"81.4\" fill=\"#f8fafc\" stroke=\"#334155\" stroke-width=\"1.8\"/><path d=\"M53.6,121.0 A81.4,24.4 0 0 0 216.4,121.0\" fill=\"none\" stroke=\"#334155\" stroke-width=\"1.2\"/><path d=\"M53.6,121.0 A81.4,24.4 0 0 1 216.4,121.0\" fill=\"none\" stroke=\"#334155\" stroke-width=\"1\" stroke-dasharray=\"4 3\"/><circle cx=\"135.0\" cy=\"121.0\" r=\"2.5\" fill=\"#334155\"/><line x1=\"135.0\" y1=\"121.0\" x2=\"205.5\" y2=\"80.3\" stroke=\"#2563eb\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><text x=\"125.8\" y=\"134.7\" font-size=\"13\" text-anchor=\"middle\" fill=\"#334155\" font-weight=\"600\">O</text><text stroke=\"#ffffff\" stroke-width=\"3\" paint-order=\"stroke\" x=\"170.0\" y=\"80.8\" font-size=\"13\" text-anchor=\"middle\" fill=\"#334155\">2,8 cm</text></svg>",
+      "answer": {
+        "value": 92,
+        "unit": "cm³",
+        "tolerance": 0.5,
+        "accepted": [
+          "92 cm³",
+          "92 cm3",
+          "92",
+          "92 centimètres cubes"
+        ]
+      },
+      "solution_steps": [
+        "Le rayon est r = 2,8 cm. Son cube : r³ = 2,8 × 2,8 × 2,8 = 21,952.",
+        "Volume = $\\frac{4}{3}$ × π × 21,952 = 4 × π × 21,952 ÷ 3, soit 91,95… cm³ avec la touche π, et 91,91… cm³ avec 3,14.",
+        "Arrondi à l'unité : **92 cm³** dans les deux cas.",
+        "Avec r² au lieu de r³, on trouverait environ 33 cm³ ; sans le facteur $\\frac{4}{3}$, environ 69 cm³."
+      ],
+      "hint": "Calcule d'abord le cube du rayon : r × r × r.",
+      "estimated_duration_s": 75,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 4, classe de 3e, Espace et géométrie, Représentation de l'espace, Objectifs d'apprentissage : « Connaitre et utiliser la formule du volume d'une boule de rayon donné. »"
+    },
+    {
+      "id": "EX-P038-D-02",
+      "skill_id": "P038",
+      "level": "decouverte",
+      "type": "qcm",
+      "statement": "Une boule a un rayon de 9 cm. Quel est son volume exact ?",
+      "image": null,
+      "choices": [
+        {
+          "key": "a",
+          "text": "108π cm³",
+          "misconception": "L'élève élève le rayon au carré au lieu du cube : $\\frac{4}{3}$ × 81 = 108."
+        },
+        {
+          "key": "b",
+          "text": "729π cm³",
+          "misconception": "L'élève oublie le facteur $\\frac{4}{3}$ : π × 9³ = 729π."
+        },
+        {
+          "key": "c",
+          "text": "972π cm³",
+          "misconception": null
+        },
+        {
+          "key": "d",
+          "text": "7 776π cm³",
+          "misconception": "L'élève utilise le diamètre, 18 cm, au lieu du rayon : $\\frac{4}{3}$ × 18³ = $\\frac{4}{3}$ × 5 832 = 7 776."
+        }
+      ],
+      "answer": {
+        "value": "c"
+      },
+      "solution_steps": [
+        "Volume d'une boule : $\\frac{4}{3} \\times \\pi \\times r^3$, avec r = 9 cm.",
+        "r³ = 9 × 9 × 9 = 729.",
+        "$\\frac{4}{3}$ × 729 = 4 × 729 ÷ 3 = 2 916 ÷ 3 = 972. Le volume exact est **972π cm³**.",
+        "On garde π dans l'écriture : c'est la valeur exacte. Une valeur approchée serait environ 3 054 cm³."
+      ],
+      "hint": "Élève le rayon au cube, puis multiplie par 4/3.",
+      "estimated_duration_s": 60,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 4, classe de 3e, Espace et géométrie, Représentation de l'espace, Objectifs d'apprentissage : « Connaitre et utiliser la formule du volume d'une boule de rayon donné. »"
+    },
+    {
+      "id": "EX-P038-E-01",
+      "skill_id": "P038",
+      "level": "entrainement",
+      "type": "texte",
+      "statement": "Cette bille a 3 cm de diamètre. Donne son volume exact en cm³, écrit avec π (au clavier, tu peux taper pi).",
+      "image": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 270 230\" width=\"270\" height=\"230\" font-family=\"system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif\" role=\"img\"><title>Bille en forme de boule de centre O</title><rect width=\"100%\" height=\"100%\" fill=\"#ffffff\"/><circle cx=\"135.0\" cy=\"121.0\" r=\"81.4\" fill=\"#f8fafc\" stroke=\"#334155\" stroke-width=\"1.8\"/><path d=\"M53.6,121.0 A81.4,24.4 0 0 0 216.4,121.0\" fill=\"none\" stroke=\"#334155\" stroke-width=\"1.2\"/><path d=\"M53.6,121.0 A81.4,24.4 0 0 1 216.4,121.0\" fill=\"none\" stroke=\"#334155\" stroke-width=\"1\" stroke-dasharray=\"4 3\"/><circle cx=\"135.0\" cy=\"121.0\" r=\"2.5\" fill=\"#334155\"/><line x1=\"64.5\" y1=\"161.7\" x2=\"205.5\" y2=\"80.3\" stroke=\"#2563eb\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><text x=\"130.0\" y=\"137.5\" font-size=\"13\" text-anchor=\"middle\" fill=\"#334155\" font-weight=\"600\">O</text><text stroke=\"#ffffff\" stroke-width=\"3\" paint-order=\"stroke\" x=\"129.0\" y=\"115.6\" font-size=\"13\" text-anchor=\"middle\" fill=\"#334155\">3 cm</text></svg>",
+      "answer": {
+        "value": "4,5π",
+        "unit": "cm³",
+        "forme": "expression",
+        "variables": []
+      },
+      "solution_steps": [
+        "Le rayon est la moitié du diamètre : r = 3 ÷ 2 = 1,5 cm.",
+        "r³ = 1,5 × 1,5 × 1,5 = 3,375.",
+        "Volume = $\\frac{4}{3}$ × π × 3,375 ; et 4 × 3,375 ÷ 3 = 13,5 ÷ 3 = 4,5. Le volume exact est **4,5π cm³**.",
+        "Avec le diamètre au lieu du rayon : $\\frac{4}{3}$ × 27 = 36, soit 36π cm³, huit fois trop."
+      ],
+      "hint": "Commence par trouver le rayon.",
+      "estimated_duration_s": 75,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 4, classe de 3e, Espace et géométrie, Représentation de l'espace, Objectifs d'apprentissage : « Connaitre et utiliser la formule du volume d'une boule de rayon donné. »"
+    },
+    {
+      "id": "EX-P038-E-02",
+      "skill_id": "P038",
+      "level": "entrainement",
+      "type": "numerique",
+      "statement": "Un ballon de basket a la forme d'une boule de 24 cm de diamètre. Quel est son volume, en litres, arrondi au dixième ?",
+      "image": null,
+      "answer": {
+        "value": 7.2,
+        "unit": "L",
+        "tolerance": 0.05,
+        "accepted": [
+          "7,2 L",
+          "7,2 l",
+          "7,2 litres",
+          "7,2",
+          "7,2 dm³",
+          "7,2 dm3"
+        ]
+      },
+      "solution_steps": [
+        "Rayon : 24 ÷ 2 = 12 cm, et r³ = 12 × 12 × 12 = 1 728.",
+        "Volume = $\\frac{4}{3}$ × π × 1 728 = 2 304π cm³, soit 7 238,2… cm³ avec la touche π (7 234,56 cm³ avec 3,14).",
+        "1 L = 1 dm³ = 1 000 cm³ : on divise par 1 000, environ 7,24 L (ou 7,23 L avec 3,14).",
+        "Arrondi au dixième : **7,2 L** dans les deux cas.",
+        "Avec le diamètre au lieu du rayon, on trouverait environ 57,9 L : huit fois trop."
+      ],
+      "hint": "Calcule le volume en cm³, puis convertis-le en litres.",
+      "estimated_duration_s": 120,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 4, classe de 3e, Espace et géométrie, Représentation de l'espace, Objectifs d'apprentissage : « Connaitre et utiliser la formule du volume d'une boule de rayon donné. »"
+    },
+    {
+      "id": "EX-P038-M-01",
+      "skill_id": "P038",
+      "level": "maitrise",
+      "type": "qcm",
+      "statement": "Une boule de rayon 7 cm tient exactement dans une boîte cylindrique de même rayon et de hauteur 14 cm. Quelle fraction du volume de la boîte la boule occupe-t-elle ?",
+      "image": null,
+      "choices": [
+        {
+          "key": "a",
+          "text": "$\\frac{2}{3}$",
+          "misconception": null
+        },
+        {
+          "key": "b",
+          "text": "$\\frac{1}{3}$",
+          "misconception": "L'élève pense au cône, qui occupe le tiers du cylindre de même base et de même hauteur. La boule en occupe davantage."
+        },
+        {
+          "key": "c",
+          "text": "$\\frac{4}{3}$",
+          "misconception": "L'élève reprend le facteur de la formule. Une boule qui tient dans la boîte ne peut pas avoir un volume plus grand que la boîte."
+        },
+        {
+          "key": "d",
+          "text": "$\\frac{1}{6}$",
+          "misconception": "L'élève calcule le volume de la boîte avec le diamètre, π × 14² × 14 = 2 744π, au lieu du rayon : il trouve une boîte quatre fois trop grande."
+        }
+      ],
+      "answer": {
+        "value": "a"
+      },
+      "solution_steps": [
+        "Volume de la boule : $\\frac{4}{3}$ × π × 7³ = $\\frac{4}{3}$ × π × 343 = $\\frac{1372}{3}$ × π cm³.",
+        "Volume de la boîte : π × 7² × 14 = π × 49 × 14 = 686π cm³.",
+        "Or 1 372 = 2 × 686 : le volume de la boule est $\\frac{2 \\times 686}{3}$ × π = $\\frac{2}{3}$ × 686π cm³, c'est-à-dire les $\\frac{2}{3}$ du volume de la boîte.",
+        "La boule occupe **les $\\frac{2}{3}$** de la boîte, quel que soit le rayon : c'est le résultat découvert par Archimède."
+      ],
+      "hint": "Calcule les deux volumes en gardant π, puis compare 1 372 et 686.",
+      "estimated_duration_s": 150,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 4, classe de 3e, Espace et géométrie, Représentation de l'espace, Objectifs d'apprentissage : « Connaitre et utiliser la formule du volume d'une boule de rayon donné. »"
+    },
+    {
+      "id": "EX-P038-M-02",
+      "skill_id": "P038",
+      "level": "maitrise",
+      "type": "qcm",
+      "statement": "Qu'est-ce qui a le plus grand volume : une boule de rayon 4 cm, ou 8 billes de rayon 2 cm réunies ?",
+      "image": null,
+      "choices": [
+        {
+          "key": "a",
+          "text": "La boule de rayon 4 cm",
+          "misconception": "L'élève compare la grande boule à une seule bille et oublie qu'il y en a 8 : une bille seule a bien un volume 8 fois plus petit."
+        },
+        {
+          "key": "b",
+          "text": "Les 8 billes",
+          "misconception": "L'élève pense qu'en doublant le rayon, on double le volume (ou on le multiplie par 4, comme une aire) : la grande boule vaudrait 2 ou 4 billes. Le rayon est au cube : 2³ = 8."
+        },
+        {
+          "key": "c",
+          "text": "Elles ont le même volume",
+          "misconception": null
+        },
+        {
+          "key": "d",
+          "text": "On ne peut pas savoir sans une valeur de π",
+          "misconception": "Les deux volumes s'écrivent $\\frac{4}{3}$ × π × un nombre : il suffit de comparer ces nombres, 4³ = 64 et 8 × 2³ = 64."
+        }
+      ],
+      "answer": {
+        "value": "c"
+      },
+      "solution_steps": [
+        "Boule : $\\frac{4}{3}$ × π × 4³ = $\\frac{4}{3}$ × π × 64.",
+        "Une bille : $\\frac{4}{3}$ × π × 2³ = $\\frac{4}{3}$ × π × 8 ; les 8 billes : 8 × $\\frac{4}{3}$ × π × 8 = $\\frac{4}{3}$ × π × 64.",
+        "Les deux volumes sont égaux : **elles ont le même volume**. Pas besoin de valeur de π pour comparer.",
+        "Quand le rayon double, le volume est multiplié par 2³ = 8, pas par 2 ni par 4."
+      ],
+      "hint": "Quand le rayon est multiplié par 2, par combien le cube du rayon est-il multiplié ?",
+      "estimated_duration_s": 120,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 4, classe de 3e, Espace et géométrie, Représentation de l'espace, Objectifs d'apprentissage : « Connaitre et utiliser la formule du volume d'une boule de rayon donné. »"
     }
   ]
 }
