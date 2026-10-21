@@ -1,0 +1,117 @@
+{
+  "id": "SX-F025-01",
+  "skill_id": "F025",
+  "skill_ids": [
+    "F025",
+    "P022",
+    "D026"
+  ],
+  "school_level": "4e",
+  "title": "Cadres et bougies à l'atelier",
+  "contexte": "À l'atelier de bricolage du centre social, Sami fabrique deux cadres avec une baguette de bois. Il veut utiliser exactement la même longueur de baguette pour chacun.\n\nLe cadre A est un rectangle : sa largeur mesure $x$ cm, et sa longueur mesure le triple de sa largeur augmenté de 11 cm.\nLe cadre B est un hexagone régulier : ses six côtés mesurent chacun $x + 8$ cm.\n\nLa baguette coûte 3,20 € le mètre, et l'atelier compte quinze établis.\n\nPour décorer l'atelier, Sami allume en même temps deux bougies. La bougie rouge mesure 32 cm et perd 2 cm de hauteur par heure. La bougie verte mesure 24 cm et perd 1,2 cm de hauteur par heure. Il se demande au bout de combien d'heures elles auront la même hauteur.",
+  "image": null,
+  "duree_estimee_min": 15,
+  "questions": [
+    {
+      "key": "q1",
+      "skill_id": "F025",
+      "statement": "Quelle expression donne la longueur du cadre A, en cm ?",
+      "type": "qcm",
+      "choices": [
+        {
+          "key": "a",
+          "text": "$3(x + 11)$",
+          "misconception": "Ici, on triple la largeur seule, puis on ajoute 11 : il n'y a pas de parenthèses."
+        },
+        {
+          "key": "b",
+          "text": "$3x + 11$",
+          "misconception": null
+        },
+        {
+          "key": "c",
+          "text": "$x + 8$",
+          "misconception": "$x + 8$ est le côté du cadre B, pas la longueur du cadre A."
+        },
+        {
+          "key": "d",
+          "text": "$33x$",
+          "misconception": "On ajoute 11 au triple de la largeur : $3x$ et 11 ne se multiplient pas."
+        }
+      ],
+      "answer": {
+        "value": "b"
+      },
+      "points": 1,
+      "solution_steps": [
+        "La longueur est le triple de la largeur, $3x$, augmenté de 11 cm.",
+        "« Augmenté de 11 » se traduit par une addition : la longueur est **3x + 11** cm."
+      ],
+      "hint": "Relis la phrase qui décrit le cadre A."
+    },
+    {
+      "key": "q2",
+      "skill_id": "P022",
+      "statement": "On admet que la longueur du cadre A mesure $3x + 11$ cm. Écris, sous forme réduite, le périmètre du cadre A, en cm, en fonction de $x$.",
+      "type": "texte",
+      "answer": {
+        "value": "8x + 22",
+        "unit": "cm",
+        "forme": "reduite"
+      },
+      "points": 2,
+      "solution_steps": [
+        "Périmètre d'un rectangle : 2 × (longueur + largeur), soit $2(3x + 11 + x) = 2(4x + 11)$.",
+        "On développe : $2 \\times 4x + 2 \\times 11 = 8x + 22$.",
+        "Le périmètre du cadre A est **8x + 22** cm.",
+        "Attention : $4x + 11$ n'est que la moitié du tour."
+      ],
+      "hint": "Un rectangle a deux longueurs et deux largeurs."
+    },
+    {
+      "key": "q3",
+      "skill_id": "F025",
+      "statement": "Les deux cadres utilisent la même longueur de baguette. On admet que le périmètre du cadre A vaut $8x + 22$ cm et celui du cadre B $6(x + 8)$ cm. Résous l'équation $8x + 22 = 6(x + 8)$.",
+      "type": "numerique",
+      "answer": {
+        "value": 13,
+        "accepted": [
+          "13 cm"
+        ]
+      },
+      "points": 4,
+      "solution_steps": [
+        "On développe le second membre : $6(x + 8) = 6x + 48$. L'équation devient $8x + 22 = 6x + 48$.",
+        "On retranche $6x$ aux deux membres : $2x + 22 = 48$.",
+        "On retranche 22 aux deux membres : $2x = 26$, puis on divise par 2 : $x = 13$.",
+        "Vérification : $8 \\times 13 + 22 = 126$ et $6 \\times (13 + 8) = 6 \\times 21 = 126$. La solution est **13**.",
+        "Attention : écrire $6(x + 8) = 6x + 8$ ne multiplie que le premier terme, et donne $x = -7$, une largeur impossible."
+      ],
+      "hint": "Développe d'abord, puis regroupe les termes en $x$ dans un seul membre."
+    },
+    {
+      "key": "q4",
+      "skill_id": "D026",
+      "statement": "On note $x$ le nombre d'heures écoulées. Les deux bougies ont la même hauteur quand $32 - 2x = 24 - 1{,}2x$. Résous cette équation.",
+      "type": "numerique",
+      "answer": {
+        "value": 10,
+        "accepted": [
+          "10 h",
+          "10 heures"
+        ]
+      },
+      "points": 3,
+      "solution_steps": [
+        "On ajoute $2x$ aux deux membres : $32 = 24 + 0{,}8x$, car $2x - 1{,}2x = 0{,}8x$.",
+        "On retranche 24 aux deux membres : $8 = 0{,}8x$.",
+        "On divise par 0,8 : $8 \\div 0{,}8 = 80 \\div 8 = 10$, en multipliant les deux nombres par 10.",
+        "Vérification : $32 - 2 \\times 10 = 12$ et $24 - 1{,}2 \\times 10 = 12$. La solution est **10** : au bout de 10 heures.",
+        "Attention : $8 \\div 8 = 1$ multiplie seulement le diviseur par 10."
+      ],
+      "hint": "Regroupe les termes en $x$ dans un membre, puis divise par un nombre décimal."
+    }
+  ],
+  "review_status": "relu_agent",
+  "programme_ref": "Cycle 4, classe de 4e, Nombres et calculs, Calcul littéral et algébrique, Objectifs d'apprentissage : « Mettre en équation un problème et le résoudre à l'aide d'une équation du premier degré du type a𝑥 + b = c𝑥 + d. »"
+}

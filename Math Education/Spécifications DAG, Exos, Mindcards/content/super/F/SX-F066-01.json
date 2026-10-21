@@ -1,0 +1,131 @@
+{
+  "id": "SX-F066-01",
+  "skill_id": "F066",
+  "skill_ids": [
+    "F066",
+    "F003",
+    "F025",
+    "D024"
+  ],
+  "school_level": "4e",
+  "title": "Les formules de la salle d'escalade",
+  "contexte": "La salle d'escalade Vertige propose deux formules pour le trimestre d'automne, d'octobre à décembre.\n\n**Formule Liberté** : chaque séance coûte 9,50 €.\n**Formule Abonné** : on paie un abonnement de 42 € pour le trimestre, puis 6,50 € par séance.\n\nDans les deux formules, la location des chaussons coûte 3 € par séance. Inès a ses propres chaussons et ne les loue jamais. La salle compte 85 voies, et son mur le plus haut mesure 16 m.\n\nInès hésite entre les deux formules. Elle note $x$ le nombre de séances qu'elle fera pendant le trimestre, et veut savoir pour quel nombre de séances les deux formules lui coûtent le même prix.",
+  "image": null,
+  "duree_estimee_min": 15,
+  "questions": [
+    {
+      "key": "q1",
+      "skill_id": "F066",
+      "statement": "Dans la formule Abonné, que représente l'expression $6{,}5x$ ?",
+      "type": "qcm",
+      "choices": [
+        {
+          "key": "a",
+          "text": "le prix de l'abonnement",
+          "misconception": "L'abonnement coûte 42 €, une seule fois : il ne dépend pas du nombre de séances."
+        },
+        {
+          "key": "b",
+          "text": "le prix des $x$ séances, sans l'abonnement",
+          "misconception": null
+        },
+        {
+          "key": "c",
+          "text": "le prix total payé par Inès",
+          "misconception": "Le prix total ajoute l'abonnement de 42 € au prix des séances."
+        },
+        {
+          "key": "d",
+          "text": "le prix des chaussons",
+          "misconception": "Les chaussons coûtent 3 € par séance, et Inès ne les loue pas."
+        }
+      ],
+      "answer": {
+        "value": "b"
+      },
+      "points": 1,
+      "solution_steps": [
+        "Avec la formule Abonné, chaque séance coûte 6,50 € : $x$ séances coûtent $6{,}5 \\times x = 6{,}5x$ euros.",
+        "$6{,}5x$ est donc le prix des $x$ séances, **sans** l'abonnement de 42 €."
+      ],
+      "hint": "Relis la phrase de la formule Abonné."
+    },
+    {
+      "key": "q2",
+      "skill_id": "F003",
+      "statement": "Écris le prix payé par Inès avec la formule Abonné, en euros, en fonction de $x$.",
+      "type": "texte",
+      "answer": {
+        "value": "42 + 6,5x",
+        "unit": "€",
+        "forme": "expression"
+      },
+      "points": 2,
+      "solution_steps": [
+        "L'abonnement se paie une fois : 42 €.",
+        "Les $x$ séances coûtent $6{,}5x$ euros.",
+        "Le prix est **42 + 6,5x** euros.",
+        "Attention : $48{,}5x$ additionne l'abonnement et le prix d'une séance, qui ne sont pas des termes semblables."
+      ],
+      "hint": "Que paie-t-on une seule fois, et que paie-t-on à chaque séance ?"
+    },
+    {
+      "key": "q3",
+      "skill_id": "F066",
+      "statement": "On admet qu'avec la formule Abonné, $x$ séances coûtent $42 + 6{,}5x$ euros. Écris une équation qui traduit la phrase : « avec $x$ séances, les deux formules coûtent le même prix à Inès ».",
+      "type": "texte",
+      "answer": {
+        "value": "9,5x = 42 + 6,5x",
+        "forme": "equation"
+      },
+      "points": 4,
+      "solution_steps": [
+        "Avec la formule Liberté, $x$ séances coûtent $9{,}5x$ euros.",
+        "Avec la formule Abonné, elles coûtent $42 + 6{,}5x$ euros.",
+        "Les deux prix sont égaux : **9,5x = 42 + 6,5x**.",
+        "Attention : écrire « x = 14 » donne la solution, pas l'équation demandée ; et les chaussons ne comptent pas, Inès ne les loue pas."
+      ],
+      "hint": "Écris d'abord le prix de chaque formule pour $x$ séances."
+    },
+    {
+      "key": "q4",
+      "skill_id": "F025",
+      "statement": "On admet que l'équation $9{,}5x = 42 + 6{,}5x$ traduit le problème. Quand les deux formules coûtent le même prix, combien Inès paie-t-elle, en euros ?",
+      "type": "numerique",
+      "answer": {
+        "value": 133,
+        "unit": "€"
+      },
+      "points": 3,
+      "solution_steps": [
+        "On retranche $6{,}5x$ aux deux membres : $3x = 42$.",
+        "On divise par 3 : $x = 14$. Les formules coûtent autant pour 14 séances.",
+        "La question porte sur le prix : $9{,}5 \\times 14 = 133$, et aussi $42 + 6{,}5 \\times 14 = 42 + 91 = 133$.",
+        "Inès paie **133 €**.",
+        "Attention : 14 est le nombre de séances, pas le prix demandé."
+      ],
+      "hint": "Résous l'équation, puis relis ce que demande la question."
+    },
+    {
+      "key": "q5",
+      "skill_id": "D024",
+      "statement": "Inès fera finalement 20 séances. Quelle somme économise-t-elle en choisissant la formule la moins chère ?",
+      "type": "numerique",
+      "answer": {
+        "value": 18,
+        "unit": "€"
+      },
+      "points": 2,
+      "solution_steps": [
+        "Formule Liberté : $9{,}5 \\times 20 = 190$ €.",
+        "Formule Abonné : $42 + 6{,}5 \\times 20 = 42 + 130 = 172$ €.",
+        "La formule Abonné est la moins chère. Économie : $190 - 172 = 18$.",
+        "Inès économise **18 €**.",
+        "Attention : $3 \\times 20 = 60$ oublie l'abonnement de 42 €."
+      ],
+      "hint": "Calcule le prix des 20 séances dans chaque formule."
+    }
+  ],
+  "review_status": "relu_agent",
+  "programme_ref": "Cycle 4, classe de 4e, Nombres et calculs, Calcul littéral et algébrique, Objectifs d'apprentissage : « Mettre en équation un problème et le résoudre à l'aide d'une équation du premier degré du type a𝑥 + b = c𝑥 + d. »"
+}

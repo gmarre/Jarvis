@@ -1,0 +1,144 @@
+{
+  "id": "SX-F063-01",
+  "skill_id": "F063",
+  "skill_ids": [
+    "F063",
+    "A018",
+    "B047",
+    "B049",
+    "F022"
+  ],
+  "school_level": "4e",
+  "title": "La station météo du collège",
+  "contexte": "Le club sciences du collège Jean-Moulin relève chaque matin la température minimale de la nuit, en degrés Celsius (°C). Sa station est installée sur le toit du gymnase.\n\nRelevés d'une semaine de mars :\nlundi −7 °C, mardi −5 °C, mercredi 0 °C, jeudi −9 °C, vendredi 10 °C, après un fort redoux.\n\nLe club échange ses relevés avec un collège de Chicago, aux États-Unis, où l'on mesure les températures en degrés Fahrenheit. Pour passer d'une température $x$ en degrés Celsius à la même température en degrés Fahrenheit, on calcule $1{,}8x + 32$.\n\nPar exemple, 20 °C correspondent à $1{,}8 \\times 20 + 32 = 68$ degrés Fahrenheit.",
+  "image": null,
+  "duree_estimee_min": 14,
+  "questions": [
+    {
+      "key": "q1",
+      "skill_id": "A018",
+      "statement": "Combien de matins de cette semaine la température minimale relevée est-elle strictement négative ?",
+      "type": "numerique",
+      "answer": {
+        "value": 3,
+        "accepted": [
+          "3 matins",
+          "3 jours"
+        ]
+      },
+      "points": 1,
+      "solution_steps": [
+        "Les relevés strictement négatifs sont ceux de lundi (−7), mardi (−5) et jeudi (−9).",
+        "Vendredi, 10 °C est positif. Mercredi, 0 °C n'est pas strictement négatif : 0 est à la fois positif et négatif.",
+        "Il y a **3** matins."
+      ],
+      "hint": "Que dire de 0 °C ?"
+    },
+    {
+      "key": "q2",
+      "skill_id": "B047",
+      "statement": "Quel est l'écart, en °C, entre la température la plus haute et la température la plus basse de la semaine ?",
+      "type": "numerique",
+      "answer": {
+        "value": 19,
+        "unit": "°C"
+      },
+      "points": 2,
+      "solution_steps": [
+        "La plus haute est 10 °C (vendredi), la plus basse −9 °C (jeudi).",
+        "Écart : $10 - (-9) = 10 + 9 = 19$.",
+        "L'écart est de **19 °C**.",
+        "Attention : $10 - 9 = 1$ oublie que l'on soustrait un nombre négatif."
+      ],
+      "hint": "Soustraire un nombre, c'est ajouter son opposé."
+    },
+    {
+      "key": "q3",
+      "skill_id": "B049",
+      "statement": "Le collège de Chicago demande la température de jeudi en degrés Fahrenheit. Quel nombre obtient-on ?",
+      "type": "numerique",
+      "answer": {
+        "value": 15.8,
+        "accepted": [
+          "15,8 °F",
+          "15,8 degrés Fahrenheit",
+          "15,8 degrés",
+          "15,8 °"
+        ]
+      },
+      "points": 2,
+      "solution_steps": [
+        "Jeudi, la température est −9 °C : on remplace $x$ par $(-9)$, entre parenthèses.",
+        "$1{,}8 \\times (-9) + 32 = -16{,}2 + 32 = 15{,}8$.",
+        "On obtient **15,8** degrés Fahrenheit.",
+        "Attention : $1{,}8 \\times 9 + 32 = 48{,}2$ oublie le signe de $-9$."
+      ],
+      "hint": "Un produit d'un nombre positif par un nombre négatif est négatif."
+    },
+    {
+      "key": "q4",
+      "skill_id": "F063",
+      "statement": "Le professeur affirme qu'une température s'écrit avec le même nombre en degrés Celsius et en degrés Fahrenheit. Un seul des nombres −50 ; −40 ; −20 ; 40 vérifie l'égalité $1{,}8x + 32 = x$. Lequel ?",
+      "type": "numerique",
+      "answer": {
+        "value": -40,
+        "accepted": [
+          "−40 °C",
+          "−40 °F",
+          "−40 degrés",
+          "−40 degrés Celsius"
+        ]
+      },
+      "points": 4,
+      "solution_steps": [
+        "On calcule séparément les deux membres pour chaque nombre.",
+        "Pour $x = -50$ : $1{,}8 \\times (-50) + 32 = -90 + 32 = -58$, différent de $-50$.",
+        "Pour $x = -40$ : $1{,}8 \\times (-40) + 32 = -72 + 32 = -40$, égal au second membre $-40$.",
+        "Pour $x = -20$ : $1{,}8 \\times (-20) + 32 = -36 + 32 = -4$, différent de $-20$.",
+        "Pour $x = 40$ : $1{,}8 \\times 40 + 32 = 72 + 32 = 104$, différent de 40.",
+        "Le nombre est **−40** : −40 °C, c'est aussi −40 degrés Fahrenheit."
+      ],
+      "hint": "Calcule le premier membre pour chaque nombre et compare-le au second."
+    },
+    {
+      "key": "q5",
+      "skill_id": "F022",
+      "statement": "Léo affirme : « Une température négative en degrés Celsius est toujours négative en degrés Fahrenheit. » Que penser de son affirmation ?",
+      "type": "qcm",
+      "choices": [
+        {
+          "key": "a",
+          "text": "Il a raison : −30 °C donne −22 degrés Fahrenheit.",
+          "misconception": "Un exemple qui marche ne prouve pas que l'affirmation est toujours vraie : il suffit d'un contre-exemple pour la réfuter."
+        },
+        {
+          "key": "b",
+          "text": "Il a tort : −5 °C donne 23 degrés Fahrenheit, et un seul contre-exemple suffit.",
+          "misconception": null
+        },
+        {
+          "key": "c",
+          "text": "Il a raison, car $1{,}8x$ est négatif quand $x$ est négatif.",
+          "misconception": "On ajoute ensuite 32 : $1{,}8x + 32$ peut être positif même si $1{,}8x$ est négatif."
+        },
+        {
+          "key": "d",
+          "text": "On ne peut pas conclure sans essayer toutes les températures négatives.",
+          "misconception": "Pour montrer qu'une affirmation est fausse, un seul contre-exemple suffit."
+        }
+      ],
+      "answer": {
+        "value": "b"
+      },
+      "points": 2,
+      "solution_steps": [
+        "Mardi, −5 °C donne $1{,}8 \\times (-5) + 32 = -9 + 32 = 23$ degrés Fahrenheit, un nombre positif.",
+        "Un seul contre-exemple suffit à montrer qu'une affirmation générale est fausse.",
+        "Léo a **tort**."
+      ],
+      "hint": "Essaie avec un relevé de la semaine."
+    }
+  ],
+  "review_status": "relu_agent",
+  "programme_ref": "Cycle 4, classe de 4e, Nombres et calculs, Calcul littéral et algébrique, Automatismes : « Tester si un nombre vérifie une égalité. »"
+}

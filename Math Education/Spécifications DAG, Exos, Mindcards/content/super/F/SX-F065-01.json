@@ -1,0 +1,154 @@
+{
+  "id": "SX-F065-01",
+  "skill_id": "F065",
+  "skill_ids": [
+    "F065",
+    "F003",
+    "F010",
+    "A016"
+  ],
+  "school_level": "4e",
+  "title": "Le tour du calendrier",
+  "contexte": "Au CDI du collège, une affiche lance un défi aux élèves de 4e.\n\n« Dans le calendrier d'un mois, entourez trois dates qui se suivent en diagonale, en descendant vers la droite. Additionnez-les. En divisant votre somme par 3, je trouve toujours la date du milieu. »\n\nDans ce calendrier, chaque ligne compte une semaine, du lundi au dimanche. La date placée une ligne plus bas et une colonne plus à droite suit donc la précédente de 8 jours. Le mois choisi est mars 2027, qui commence un lundi.\n\nMalo entoure 4, 12 et 20 : sa somme est 36, et 36 ÷ 3 = 12 donne bien la date du milieu. Sofia entoure 10, 18 et 26 : sa somme 54 donne 18. Hugo, 12 ans, pense que ces deux essais réussis prouvent que le tour marche toujours.\n\nPour le démontrer, on note $n$ la date du haut, $n$ étant un nombre entier.",
+  "image": null,
+  "duree_estimee_min": 14,
+  "questions": [
+    {
+      "key": "q1",
+      "skill_id": "F065",
+      "statement": "Léa entoure le 9 en haut de sa diagonale. Quelle date se trouve tout en bas ?",
+      "type": "numerique",
+      "answer": {
+        "value": 25,
+        "accepted": [
+          "le 25",
+          "25 mars",
+          "le 25 mars"
+        ]
+      },
+      "points": 1,
+      "solution_steps": [
+        "En diagonale, chaque date suit la précédente de 8 jours : après le 9 vient $9 + 8 = 17$.",
+        "Après le 17 vient $17 + 8 = 25$.",
+        "La date du bas est le **25**."
+      ],
+      "hint": "Relis la phrase qui dit combien de jours séparent deux dates de la diagonale."
+    },
+    {
+      "key": "q2",
+      "skill_id": "F003",
+      "statement": "La date du haut est $n$. Quelle expression donne la date du bas ?",
+      "type": "qcm",
+      "choices": [
+        {
+          "key": "a",
+          "text": "$n + 2$",
+          "misconception": "$n + 2$ serait la troisième date d'une même ligne. En diagonale, on avance de 8 jours à chaque ligne."
+        },
+        {
+          "key": "b",
+          "text": "$3n$",
+          "misconception": "$3n$ est le triple de la date du haut : on ajoute des jours, on ne multiplie pas la date."
+        },
+        {
+          "key": "c",
+          "text": "$n + 16$",
+          "misconception": null
+        },
+        {
+          "key": "d",
+          "text": "$n + 8$",
+          "misconception": "$n + 8$ est la date du milieu. La date du bas est encore 8 jours après."
+        }
+      ],
+      "answer": {
+        "value": "c"
+      },
+      "points": 2,
+      "solution_steps": [
+        "La date du milieu suit la date du haut de 8 jours : $n + 8$.",
+        "La date du bas suit la date du milieu de 8 jours : $n + 8 + 8 = n + 16$.",
+        "La date du bas est **n + 16**."
+      ],
+      "hint": "Combien de jours séparent la date du haut et celle du bas ?"
+    },
+    {
+      "key": "q3",
+      "skill_id": "F010",
+      "statement": "On admet que les trois dates entourées s'écrivent $n$, $n + 8$ et $n + 16$. Écris, sous forme réduite, leur somme, en fonction de $n$.",
+      "type": "texte",
+      "answer": {
+        "value": "3n + 24",
+        "forme": "reduite",
+        "variables": [
+          "n"
+        ]
+      },
+      "points": 3,
+      "solution_steps": [
+        "Les trois dates sont $n$, $n + 8$ et $n + 16$.",
+        "Leur somme est $n + (n + 8) + (n + 16) = n + n + n + 8 + 16$.",
+        "On regroupe les termes en $n$ et les nombres : $3n + 24$.",
+        "La somme est **3n + 24**.",
+        "Attention : $3n$ et $24$ ne sont pas des termes semblables, ils ne s'additionnent pas en $27n$."
+      ],
+      "hint": "Regroupe les termes en $n$ entre eux, et les nombres entre eux."
+    },
+    {
+      "key": "q4",
+      "skill_id": "F065",
+      "statement": "On admet que la somme des trois dates vaut $3n + 24$. Quel raisonnement démontre que le tour marche toujours ?",
+      "type": "qcm",
+      "choices": [
+        {
+          "key": "a",
+          "text": "Malo, Sofia et Léa ont réussi : trois essais suffisent à le prouver.",
+          "misconception": "Des exemples, même nombreux, ne démontrent pas qu'une propriété est toujours vraie : il faut un calcul valable pour tout $n$."
+        },
+        {
+          "key": "b",
+          "text": "$3n + 24 = 3(n + 8)$, et $n + 8$ est la date du milieu : la somme vaut toujours 3 fois la date du milieu.",
+          "misconception": null
+        },
+        {
+          "key": "c",
+          "text": "$3n + 24 = 3(n + 24)$ : la somme est donc un multiple de 3.",
+          "misconception": "La factorisation est fausse : $3(n + 24) = 3n + 72$. Et être un multiple de 3 ne dit pas que le quotient est la date du milieu."
+        },
+        {
+          "key": "d",
+          "text": "$3n + 24 = 27n$, et $27n$ se divise toujours par 3.",
+          "misconception": "$3n$ et $24$ ne sont pas des termes semblables : on ne peut pas les additionner en $27n$."
+        }
+      ],
+      "answer": {
+        "value": "b"
+      },
+      "points": 4,
+      "solution_steps": [
+        "On factorise par 3 : $3n + 24 = 3 \\times n + 3 \\times 8 = 3(n + 8)$.",
+        "Or $n + 8$ est la date du milieu : la somme vaut toujours 3 fois la date du milieu, et la diviser par 3 redonne la date du milieu.",
+        "Ce calcul vaut pour tout entier $n$ : c'est une démonstration, alors que des essais ne montrent que des cas particuliers."
+      ],
+      "hint": "Vérifie chaque égalité proposée, en développant ou en réduisant."
+    },
+    {
+      "key": "q5",
+      "skill_id": "A016",
+      "statement": "On admet que la somme des trois dates vaut $3n + 24$. Vrai ou faux : en entourant trois dates de cette façon, on peut obtenir une somme égale à 80.",
+      "type": "vrai_faux",
+      "answer": {
+        "value": false
+      },
+      "points": 2,
+      "solution_steps": [
+        "La somme vaut $3n + 24 = 3(n + 8)$ : c'est toujours un multiple de 3.",
+        "Or $80 = 3 \\times 26 + 2$ : le reste de la division de 80 par 3 n'est pas nul, donc 80 n'est pas un multiple de 3.",
+        "C'est **faux** : aucune diagonale ne donne une somme de 80."
+      ],
+      "hint": "Que sait-on de la somme, grâce à la démonstration ?"
+    }
+  ],
+  "review_status": "relu_agent",
+  "programme_ref": "Cycle 4, classe de 4e, Nombres et calculs, Calcul littéral et algébrique, Objectifs d'apprentissage : « Utiliser le calcul algébrique pour produire des démonstrations. »"
+}

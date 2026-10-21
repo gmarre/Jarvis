@@ -1,0 +1,139 @@
+{
+  "id": "SX-F024-01",
+  "skill_id": "F024",
+  "skill_ids": [
+    "F024",
+    "C007",
+    "F063"
+  ],
+  "school_level": "4e",
+  "title": "La sortie du club de canoë",
+  "contexte": "Le club de canoë de Saint-Pons, fondé en 1998, compte 140 adhérents. Il propose deux formules pour les sorties sur la rivière.\n\n**Formule carte** : on achète une carte à 36 € pour l'année, puis chaque sortie coûte 5 €.\n**Formule libre** : chaque sortie coûte 9 €, sans carte.\n\nAvant le départ, le bidon d'eau potable du club contient 2 L. On le remplit avec un tuyau qui verse 10 L par minute, jusqu'à ce qu'il contienne 10 L.\n\nLe niveau de la rivière se lit sur une règle fixée au ponton : 0 correspond au niveau habituel. Lundi matin, la règle indiquait 35 cm. Depuis, le niveau baisse de 4 cm chaque jour. Les sorties sont annulées dès que le niveau descend sous −25 cm.",
+  "image": null,
+  "duree_estimee_min": 14,
+  "questions": [
+    {
+      "key": "q1",
+      "skill_id": "F024",
+      "statement": "Avec la formule carte, quelle somme paie-t-on une seule fois dans l'année, quel que soit le nombre de sorties ?",
+      "type": "qcm",
+      "choices": [
+        {
+          "key": "a",
+          "text": "36 €, le prix de la carte",
+          "misconception": null
+        },
+        {
+          "key": "b",
+          "text": "5 €, le prix d'une sortie",
+          "misconception": "Avec la carte, les 5 € se paient à chaque sortie, pas une seule fois."
+        },
+        {
+          "key": "c",
+          "text": "9 €, le prix d'une sortie libre",
+          "misconception": "9 € est le prix d'une sortie de la formule libre, payé à chaque sortie."
+        },
+        {
+          "key": "d",
+          "text": "41 €, la carte et une sortie",
+          "misconception": "41 € est le prix de la carte et d'une seule sortie : chaque nouvelle sortie coûte encore 5 €."
+        }
+      ],
+      "answer": {
+        "value": "a"
+      },
+      "points": 1,
+      "solution_steps": [
+        "Le texte dit : « une carte à 36 € pour l'année, puis chaque sortie coûte 5 € ».",
+        "La carte, 36 €, se paie une seule fois. Les 5 € se paient à chaque sortie."
+      ],
+      "hint": "Relis la phrase de la formule carte."
+    },
+    {
+      "key": "q2",
+      "skill_id": "F024",
+      "statement": "Léa a choisi la formule carte et a payé 106 € dans l'année. Le nombre $x$ de ses sorties vérifie $5x + 36 = 106$. Résous cette équation.",
+      "type": "numerique",
+      "answer": {
+        "value": 14,
+        "accepted": [
+          "14 sorties"
+        ]
+      },
+      "points": 2,
+      "solution_steps": [
+        "On retranche 36 aux deux membres : $5x + 36 - 36 = 106 - 36$, soit $5x = 70$.",
+        "On divise les deux membres par 5 : $x = 70 \\div 5 = 14$.",
+        "Vérification : $5 \\times 14 + 36 = 70 + 36 = 106$. Léa a fait **14** sorties."
+      ],
+      "hint": "Isole d'abord $5x$ en retranchant un même nombre aux deux membres."
+    },
+    {
+      "key": "q3",
+      "skill_id": "C007",
+      "statement": "La durée $x$ du remplissage du bidon, en minutes, vérifie $2 + 10x = 10$. Résous cette équation et donne la solution sous forme d'une fraction irréductible.",
+      "type": "texte",
+      "answer": {
+        "value": "4/5",
+        "accepted": [
+          "x = 4/5",
+          "x=4/5",
+          "4/5 min",
+          "4/5 de minute",
+          "4/5 minute",
+          "x = 4/5 min",
+          "x = 4/5 minute",
+          "x = 4/5 de minute"
+        ]
+      },
+      "points": 2,
+      "solution_steps": [
+        "On retranche 2 aux deux membres : $10x = 8$.",
+        "On divise les deux membres par 10 : $x = \\frac{8}{10}$.",
+        "On simplifie par 2 : $\\frac{8}{10} = \\frac{8 \\div 2}{10 \\div 2} = \\frac{4}{5}$, et 4 et 5 n'ont plus de diviseur commun autre que 1.",
+        "La solution est **4/5** de minute.",
+        "Attention : $\\frac{8}{10}$ est juste mais pas irréductible, et $\\frac{5}{4}$ divise 10 par 8 au lieu de 8 par 10."
+      ],
+      "hint": "Isole $10x$, puis divise, puis simplifie."
+    },
+    {
+      "key": "q4",
+      "skill_id": "F024",
+      "statement": "On note $x$ le nombre de jours écoulés depuis lundi matin. La règle indique alors $35 - 4x$ cm. Résous l'équation $35 - 4x = -17$ pour savoir au bout de combien de jours la règle indique −17 cm.",
+      "type": "numerique",
+      "answer": {
+        "value": 13,
+        "accepted": [
+          "13 jours"
+        ]
+      },
+      "points": 4,
+      "solution_steps": [
+        "On retranche 35 aux deux membres : $-4x = -17 - 35$, soit $-4x = -52$.",
+        "On divise les deux membres par $-4$ : $x = (-52) \\div (-4) = 13$, car un quotient de deux négatifs est positif.",
+        "Vérification : $35 - 4 \\times 13 = 35 - 52 = -17$.",
+        "La règle indique −17 cm au bout de **13** jours.",
+        "Attention : $x = -13$ se trompe de signe dans la division."
+      ],
+      "hint": "Isole $-4x$, puis divise par $-4$ en surveillant le signe."
+    },
+    {
+      "key": "q5",
+      "skill_id": "F063",
+      "statement": "Vrai ou faux : le nombre 9 est solution de l'équation $5x + 36 = 9x$, c'est-à-dire qu'avec 9 sorties, les deux formules coûtent le même prix.",
+      "type": "vrai_faux",
+      "answer": {
+        "value": true
+      },
+      "points": 2,
+      "solution_steps": [
+        "On remplace $x$ par 9 dans chaque membre.",
+        "Premier membre : $5 \\times 9 + 36 = 45 + 36 = 81$. Second membre : $9 \\times 9 = 81$.",
+        "Les deux membres sont égaux : 9 est solution. C'est **vrai** : 9 sorties coûtent 81 € dans les deux formules."
+      ],
+      "hint": "Calcule séparément les deux membres."
+    }
+  ],
+  "review_status": "relu_agent",
+  "programme_ref": "Cycle 4, classe de 4e, Nombres et calculs, Calcul littéral et algébrique, Objectifs d'apprentissage : « Résoudre une équation du premier degré du type a𝑥 + b = c. »"
+}

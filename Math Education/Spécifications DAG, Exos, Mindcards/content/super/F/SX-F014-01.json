@@ -1,0 +1,133 @@
+{
+  "id": "SX-F014-01",
+  "skill_id": "F014",
+  "skill_ids": [
+    "F014",
+    "P022",
+    "F012"
+  ],
+  "school_level": "4e",
+  "title": "La parcelle du jardin partagé",
+  "contexte": "Le jardin partagé du quartier des Tilleuls compte quatorze parcelles. La cotisation annuelle est de 25 € par famille, et le jardin ouvre le samedi matin.\n\nLa famille Benali reçoit une parcelle rectangulaire. Sa largeur n'est pas encore fixée : on la note $x$, en mètres. Sa longueur mesure 7 m de plus que sa largeur.\n\nLe long d'une largeur, la famille installe une zone de compost rectangulaire de 6 m sur $x - 5$ mètres, où $x$ est un nombre plus grand que 5. Tout le reste de la parcelle sera cultivé.\n\nLa parcelle doit être entourée d'un grillage sur tout son tour. Ce grillage coûte 8 € le mètre.\n\nSur la parcelle voisine, celle de M. Roy, l'aire cultivée s'écrit $6x^{2} + 10x$ m².",
+  "image": null,
+  "duree_estimee_min": 15,
+  "questions": [
+    {
+      "key": "q1",
+      "skill_id": "F014",
+      "statement": "Laquelle de ces informations ne sert pas à calculer le prix du grillage de la famille Benali ?",
+      "type": "qcm",
+      "choices": [
+        {
+          "key": "a",
+          "text": "la longueur de la parcelle, $x + 7$ mètres",
+          "misconception": "Le grillage fait le tour de la parcelle : sa longueur y compte deux fois."
+        },
+        {
+          "key": "b",
+          "text": "le prix du grillage, 8 € le mètre",
+          "misconception": "Sans le prix d'un mètre, on ne peut pas passer de la longueur du grillage à son prix."
+        },
+        {
+          "key": "c",
+          "text": "la largeur $x$ de la parcelle",
+          "misconception": "Le grillage fait le tour de la parcelle : sa largeur y compte deux fois."
+        },
+        {
+          "key": "d",
+          "text": "les dimensions de la zone de compost",
+          "misconception": null
+        }
+      ],
+      "answer": {
+        "value": "d"
+      },
+      "points": 1,
+      "solution_steps": [
+        "Le grillage fait le tour de la parcelle : il dépend de sa longueur et de sa largeur, puis du prix d'un mètre.",
+        "La zone de compost est à l'intérieur de la parcelle : ses dimensions ne changent pas le tour de la parcelle."
+      ],
+      "hint": "Où passe le grillage ?"
+    },
+    {
+      "key": "q2",
+      "skill_id": "P022",
+      "statement": "Écris, sous forme réduite, le périmètre de la parcelle des Benali, en mètres, en fonction de $x$.",
+      "type": "texte",
+      "answer": {
+        "value": "4x + 14",
+        "unit": "m",
+        "forme": "reduite"
+      },
+      "points": 2,
+      "solution_steps": [
+        "La longueur mesure 7 m de plus que la largeur : $x + 7$.",
+        "Périmètre d'un rectangle : 2 × (longueur + largeur), soit $2(x + 7 + x) = 2(2x + 7)$.",
+        "On développe : $2 \\times 2x + 2 \\times 7 = 4x + 14$.",
+        "Le périmètre de la parcelle est **4x + 14** mètres.",
+        "Attention : $2x + 7$ n'est que la moitié du tour."
+      ],
+      "hint": "Un rectangle a deux longueurs et deux largeurs."
+    },
+    {
+      "key": "q3",
+      "skill_id": "F012",
+      "statement": "On admet que le périmètre de la parcelle est $4x + 14$ mètres. Le prix du grillage s'écrit donc $8(4x + 14)$ euros. Développe et réduis cette expression.",
+      "type": "texte",
+      "answer": {
+        "value": "32x + 112",
+        "unit": "€",
+        "forme": "developpee"
+      },
+      "points": 2,
+      "solution_steps": [
+        "On multiplie 8 par chaque terme de la parenthèse : $8(4x + 14) = 8 \\times 4x + 8 \\times 14$.",
+        "$8 \\times 4x = 32x$ et $8 \\times 14 = 112$.",
+        "Le grillage coûte **32x + 112** euros.",
+        "Attention : $32x + 14$ oublie de multiplier le second terme par 8."
+      ],
+      "hint": "Le 8 multiplie chacun des deux termes."
+    },
+    {
+      "key": "q4",
+      "skill_id": "F014",
+      "statement": "Écris, sous forme réduite, l'aire de la partie cultivée de la parcelle des Benali, en m², en fonction de $x$.",
+      "type": "texte",
+      "answer": {
+        "value": "x² + x + 30",
+        "unit": "m²",
+        "forme": "reduite"
+      },
+      "points": 4,
+      "solution_steps": [
+        "Aire de la parcelle : $x(x + 7) = x \\times x + x \\times 7 = x^{2} + 7x$.",
+        "Aire du compost : $6(x - 5)$.",
+        "Partie cultivée : $x^{2} + 7x - 6(x - 5) = x^{2} + 7x - 6x + 30$, car $-6 \\times (-5) = 30$ : le second terme change de signe.",
+        "On regroupe : $7x - 6x = 1x = x$.",
+        "L'aire cultivée est **x² + x + 30** m².",
+        "Attention : $x^{2} + x - 30$ oublie que $-6 \\times (-5)$ est positif."
+      ],
+      "hint": "Retire l'aire du compost à l'aire de la parcelle, et surveille les signes."
+    },
+    {
+      "key": "q5",
+      "skill_id": "F014",
+      "statement": "Factorise le plus possible l'expression $6x^{2} + 10x$, l'aire cultivée de la parcelle de M. Roy.",
+      "type": "texte",
+      "answer": {
+        "value": "2x(3x + 5)",
+        "forme": "factorisee"
+      },
+      "points": 3,
+      "solution_steps": [
+        "$6x^{2} = 2x \\times 3x$ et $10x = 2x \\times 5$ : le facteur commun le plus grand est $2x$.",
+        "$6x^{2} + 10x = 2x \\times 3x + 2x \\times 5 = 2x(3x + 5)$.",
+        "La forme factorisée est **2x(3x + 5)**.",
+        "Attention : $2(3x^{2} + 5x)$ et $x(6x + 10)$ sont justes mais incomplètes, car $3x^{2} + 5x$ et $6x + 10$ se factorisent encore."
+      ],
+      "hint": "Cherche le plus grand facteur commun aux deux termes, nombre et lettre compris."
+    }
+  ],
+  "review_status": "relu_agent",
+  "programme_ref": "Cycle 4, classe de 4e, Nombres et calculs, Calcul littéral et algébrique, Objectifs d'apprentissage : « Connaitre et utiliser la distributivité simple pour développer et factoriser une expression algébrique. »"
+}

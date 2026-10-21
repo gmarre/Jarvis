@@ -2,7 +2,7 @@
   "metadata": {
     "version": "1.0",
     "scope": "Super exercices, CP a 3e",
-    "total_super": 193
+    "total_super": 201
   },
   "super": [
     {
@@ -16166,6 +16166,1081 @@
       ],
       "review_status": "brouillon",
       "programme_ref": "Cycle 4, classe de 5e, Nombres rationnels, Automatismes : « Prendre 1 %, 10 % ou 50 % d'un nombre, en lien avec la proportionnalité. »"
+    },
+    {
+      "id": "SX-F006-01",
+      "skill_id": "F006",
+      "skill_ids": [
+        "F006",
+        "F010",
+        "P024"
+      ],
+      "school_level": "4e",
+      "title": "Le plan du studio",
+      "contexte": "Mme Kader, architecte, dessine le plan d'un studio de plain-pied. La largeur exacte du terrain n'est pas encore connue : elle note $x$ une longueur, en mètres, et écrit toutes les dimensions en fonction de $x$.\n\nLe studio compte trois pièces rectangulaires, qui ne se chevauchent pas.\nLe séjour mesure $8x$ de long et $7x$ de large.\nLa chambre mesure $7x$ de long et $6x$ de large.\nLa salle d'eau est un carré de côté $6x$.\n\nLa hauteur sous plafond sera de 2,5 m dans toutes les pièces. Le chantier doit commencer en mars et durer plusieurs mois.\n\nLe sol des trois pièces sera couvert de parquet. Une plinthe en bois fera le tour complet du séjour, au ras du sol.",
+      "image": null,
+      "duree_estimee_min": 14,
+      "questions": [
+        {
+          "key": "q1",
+          "skill_id": "F006",
+          "statement": "Laquelle de ces informations ne sert à calculer ni l'aire du sol, ni la longueur de la plinthe ?",
+          "type": "qcm",
+          "choices": [
+            {
+              "key": "a",
+              "text": "la largeur $7x$ du séjour",
+              "misconception": "La largeur du séjour sert deux fois : pour son aire et pour le tour du séjour, où passe la plinthe."
+            },
+            {
+              "key": "b",
+              "text": "le côté $6x$ de la salle d'eau",
+              "misconception": "Le côté de la salle d'eau sert à calculer l'aire de son sol."
+            },
+            {
+              "key": "c",
+              "text": "la hauteur sous plafond, 2,5 m",
+              "misconception": null
+            },
+            {
+              "key": "d",
+              "text": "la largeur $6x$ de la chambre",
+              "misconception": "La largeur de la chambre sert à calculer l'aire de son sol."
+            }
+          ],
+          "answer": {
+            "value": "c"
+          },
+          "points": 1,
+          "solution_steps": [
+            "L'aire du sol se calcule avec les longueurs et les largeurs des trois pièces, la plinthe avec les dimensions du séjour.",
+            "La hauteur sous plafond, 2,5 m, servirait pour les murs, pas pour le sol : elle ne sert ici à rien."
+          ],
+          "hint": "Relis ce qu'on cherche : le sol et le tour du séjour."
+        },
+        {
+          "key": "q2",
+          "skill_id": "F010",
+          "statement": "Écris, sous forme réduite, la longueur de la plinthe qui fait le tour du séjour, en fonction de $x$.",
+          "type": "texte",
+          "answer": {
+            "value": "30x",
+            "unit": "m",
+            "forme": "reduite"
+          },
+          "points": 2,
+          "solution_steps": [
+            "La plinthe fait le tour du séjour, un rectangle de $8x$ sur $7x$ : $8x + 7x + 8x + 7x$.",
+            "On regroupe les termes en $x$ : $(8 + 7 + 8 + 7)x = 30x$.",
+            "La plinthe mesure **30x** mètres.",
+            "Attention : $15x$ n'est que la moitié du tour, et $56x^{2}$ est l'aire du séjour, pas son tour."
+          ],
+          "hint": "Le tour d'un rectangle passe par ses quatre côtés."
+        },
+        {
+          "key": "q3",
+          "skill_id": "P024",
+          "statement": "Le terrain est enfin mesuré : $x$ vaut 0,6 m. Quelle est alors l'aire du sol du séjour, en m² ?",
+          "type": "numerique",
+          "answer": {
+            "value": 20.16,
+            "unit": "m²"
+          },
+          "points": 2,
+          "solution_steps": [
+            "Avec $x = 0{,}6$, la longueur du séjour vaut $8 \\times 0{,}6 = 4{,}8$ m et sa largeur $7 \\times 0{,}6 = 4{,}2$ m.",
+            "Aire d'un rectangle : longueur × largeur, soit $4{,}8 \\times 4{,}2 = 20{,}16$.",
+            "L'aire du sol du séjour est **20,16 m²**.",
+            "Attention : $4{,}8 + 4{,}2 + 4{,}8 + 4{,}2 = 18$ est le tour du séjour en mètres, pas son aire."
+          ],
+          "hint": "Calcule d'abord la longueur et la largeur du séjour en mètres."
+        },
+        {
+          "key": "q4",
+          "skill_id": "F006",
+          "statement": "Écris, sous forme réduite, l'aire totale du sol des trois pièces, en fonction de $x$.",
+          "type": "texte",
+          "answer": {
+            "value": "134x²",
+            "unit": "m²",
+            "forme": "reduite"
+          },
+          "points": 4,
+          "solution_steps": [
+            "Séjour : $8x \\times 7x = 8 \\times 7 \\times x \\times x = 56x^{2}$.",
+            "Chambre : $7x \\times 6x = 42x^{2}$.",
+            "Salle d'eau : $6x \\times 6x = 36x^{2}$.",
+            "Les pièces ne se chevauchent pas, on additionne : $56x^{2} + 42x^{2} + 36x^{2} = 134x^{2}$.",
+            "L'aire totale du sol est **134x²** m².",
+            "Attention : $x \\times x$ s'écrit $x^{2}$, pas $2x$, et on multiplie les nombres $8 \\times 7 = 56$, on ne les additionne pas."
+          ],
+          "hint": "Dans un produit, multiplie les nombres entre eux et les lettres entre elles."
+        },
+        {
+          "key": "q5",
+          "skill_id": "F006",
+          "statement": "Noé écrit l'aire de la chambre ainsi : $7x \\times 6x = 13x^{2}$. Quelle phrase décrit son erreur ?",
+          "type": "qcm",
+          "choices": [
+            {
+              "key": "a",
+              "text": "Il aurait dû écrire $13x$, car $x \\times x = x$.",
+              "misconception": "$x \\times x$ s'écrit $x^{2}$ : le $x^{2}$ de Noé est juste, c'est le nombre 13 qui est faux."
+            },
+            {
+              "key": "b",
+              "text": "Il a additionné 7 et 6 au lieu de les multiplier : l'aire est $42x^{2}$.",
+              "misconception": null
+            },
+            {
+              "key": "c",
+              "text": "Il aurait dû écrire $42x$.",
+              "misconception": "$7 \\times 6 = 42$ est juste, mais $x \\times x$ s'écrit $x^{2}$, pas $x$ : l'aire est $42x^{2}$."
+            },
+            {
+              "key": "d",
+              "text": "Il n'y a pas d'erreur : $7x \\times 6x = 13x^{2}$.",
+              "misconception": "Dans un produit, on multiplie les nombres entre eux : $7 \\times 6 = 42$, pas 13."
+            }
+          ],
+          "answer": {
+            "value": "b"
+          },
+          "points": 2,
+          "solution_steps": [
+            "On range les facteurs : $7x \\times 6x = 7 \\times 6 \\times x \\times x$.",
+            "$7 \\times 6 = 42$ et $x \\times x = x^{2}$, donc $7x \\times 6x = 42x^{2}$.",
+            "Noé a **additionné** 7 et 6 au lieu de les multiplier."
+          ],
+          "hint": "Range les nombres d'un côté et les lettres de l'autre."
+        }
+      ],
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 4, classe de 4e, Nombres et calculs, Calcul littéral et algébrique, Automatismes : « Connaitre et utiliser : 1 × 𝑥 = 𝑥 ; 𝑥 + 𝑥 = 2𝑥 ; 𝑥 × 𝑥 = 𝑥² ; 3𝑥 + 2𝑥 = 5𝑥 ; 3𝑥 × 2𝑥 = 6𝑥². »"
+    },
+    {
+      "id": "SX-F014-01",
+      "skill_id": "F014",
+      "skill_ids": [
+        "F014",
+        "P022",
+        "F012"
+      ],
+      "school_level": "4e",
+      "title": "La parcelle du jardin partagé",
+      "contexte": "Le jardin partagé du quartier des Tilleuls compte quatorze parcelles. La cotisation annuelle est de 25 € par famille, et le jardin ouvre le samedi matin.\n\nLa famille Benali reçoit une parcelle rectangulaire. Sa largeur n'est pas encore fixée : on la note $x$, en mètres. Sa longueur mesure 7 m de plus que sa largeur.\n\nLe long d'une largeur, la famille installe une zone de compost rectangulaire de 6 m sur $x - 5$ mètres, où $x$ est un nombre plus grand que 5. Tout le reste de la parcelle sera cultivé.\n\nLa parcelle doit être entourée d'un grillage sur tout son tour. Ce grillage coûte 8 € le mètre.\n\nSur la parcelle voisine, celle de M. Roy, l'aire cultivée s'écrit $6x^{2} + 10x$ m².",
+      "image": null,
+      "duree_estimee_min": 15,
+      "questions": [
+        {
+          "key": "q1",
+          "skill_id": "F014",
+          "statement": "Laquelle de ces informations ne sert pas à calculer le prix du grillage de la famille Benali ?",
+          "type": "qcm",
+          "choices": [
+            {
+              "key": "a",
+              "text": "la longueur de la parcelle, $x + 7$ mètres",
+              "misconception": "Le grillage fait le tour de la parcelle : sa longueur y compte deux fois."
+            },
+            {
+              "key": "b",
+              "text": "le prix du grillage, 8 € le mètre",
+              "misconception": "Sans le prix d'un mètre, on ne peut pas passer de la longueur du grillage à son prix."
+            },
+            {
+              "key": "c",
+              "text": "la largeur $x$ de la parcelle",
+              "misconception": "Le grillage fait le tour de la parcelle : sa largeur y compte deux fois."
+            },
+            {
+              "key": "d",
+              "text": "les dimensions de la zone de compost",
+              "misconception": null
+            }
+          ],
+          "answer": {
+            "value": "d"
+          },
+          "points": 1,
+          "solution_steps": [
+            "Le grillage fait le tour de la parcelle : il dépend de sa longueur et de sa largeur, puis du prix d'un mètre.",
+            "La zone de compost est à l'intérieur de la parcelle : ses dimensions ne changent pas le tour de la parcelle."
+          ],
+          "hint": "Où passe le grillage ?"
+        },
+        {
+          "key": "q2",
+          "skill_id": "P022",
+          "statement": "Écris, sous forme réduite, le périmètre de la parcelle des Benali, en mètres, en fonction de $x$.",
+          "type": "texte",
+          "answer": {
+            "value": "4x + 14",
+            "unit": "m",
+            "forme": "reduite"
+          },
+          "points": 2,
+          "solution_steps": [
+            "La longueur mesure 7 m de plus que la largeur : $x + 7$.",
+            "Périmètre d'un rectangle : 2 × (longueur + largeur), soit $2(x + 7 + x) = 2(2x + 7)$.",
+            "On développe : $2 \\times 2x + 2 \\times 7 = 4x + 14$.",
+            "Le périmètre de la parcelle est **4x + 14** mètres.",
+            "Attention : $2x + 7$ n'est que la moitié du tour."
+          ],
+          "hint": "Un rectangle a deux longueurs et deux largeurs."
+        },
+        {
+          "key": "q3",
+          "skill_id": "F012",
+          "statement": "On admet que le périmètre de la parcelle est $4x + 14$ mètres. Le prix du grillage s'écrit donc $8(4x + 14)$ euros. Développe et réduis cette expression.",
+          "type": "texte",
+          "answer": {
+            "value": "32x + 112",
+            "unit": "€",
+            "forme": "developpee"
+          },
+          "points": 2,
+          "solution_steps": [
+            "On multiplie 8 par chaque terme de la parenthèse : $8(4x + 14) = 8 \\times 4x + 8 \\times 14$.",
+            "$8 \\times 4x = 32x$ et $8 \\times 14 = 112$.",
+            "Le grillage coûte **32x + 112** euros.",
+            "Attention : $32x + 14$ oublie de multiplier le second terme par 8."
+          ],
+          "hint": "Le 8 multiplie chacun des deux termes."
+        },
+        {
+          "key": "q4",
+          "skill_id": "F014",
+          "statement": "Écris, sous forme réduite, l'aire de la partie cultivée de la parcelle des Benali, en m², en fonction de $x$.",
+          "type": "texte",
+          "answer": {
+            "value": "x² + x + 30",
+            "unit": "m²",
+            "forme": "reduite"
+          },
+          "points": 4,
+          "solution_steps": [
+            "Aire de la parcelle : $x(x + 7) = x \\times x + x \\times 7 = x^{2} + 7x$.",
+            "Aire du compost : $6(x - 5)$.",
+            "Partie cultivée : $x^{2} + 7x - 6(x - 5) = x^{2} + 7x - 6x + 30$, car $-6 \\times (-5) = 30$ : le second terme change de signe.",
+            "On regroupe : $7x - 6x = 1x = x$.",
+            "L'aire cultivée est **x² + x + 30** m².",
+            "Attention : $x^{2} + x - 30$ oublie que $-6 \\times (-5)$ est positif."
+          ],
+          "hint": "Retire l'aire du compost à l'aire de la parcelle, et surveille les signes."
+        },
+        {
+          "key": "q5",
+          "skill_id": "F014",
+          "statement": "Factorise le plus possible l'expression $6x^{2} + 10x$, l'aire cultivée de la parcelle de M. Roy.",
+          "type": "texte",
+          "answer": {
+            "value": "2x(3x + 5)",
+            "forme": "factorisee"
+          },
+          "points": 3,
+          "solution_steps": [
+            "$6x^{2} = 2x \\times 3x$ et $10x = 2x \\times 5$ : le facteur commun le plus grand est $2x$.",
+            "$6x^{2} + 10x = 2x \\times 3x + 2x \\times 5 = 2x(3x + 5)$.",
+            "La forme factorisée est **2x(3x + 5)**.",
+            "Attention : $2(3x^{2} + 5x)$ et $x(6x + 10)$ sont justes mais incomplètes, car $3x^{2} + 5x$ et $6x + 10$ se factorisent encore."
+          ],
+          "hint": "Cherche le plus grand facteur commun aux deux termes, nombre et lettre compris."
+        }
+      ],
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 4, classe de 4e, Nombres et calculs, Calcul littéral et algébrique, Objectifs d'apprentissage : « Connaitre et utiliser la distributivité simple pour développer et factoriser une expression algébrique. »"
+    },
+    {
+      "id": "SX-F024-01",
+      "skill_id": "F024",
+      "skill_ids": [
+        "F024",
+        "C007",
+        "F063"
+      ],
+      "school_level": "4e",
+      "title": "La sortie du club de canoë",
+      "contexte": "Le club de canoë de Saint-Pons, fondé en 1998, compte 140 adhérents. Il propose deux formules pour les sorties sur la rivière.\n\n**Formule carte** : on achète une carte à 36 € pour l'année, puis chaque sortie coûte 5 €.\n**Formule libre** : chaque sortie coûte 9 €, sans carte.\n\nAvant le départ, le bidon d'eau potable du club contient 2 L. On le remplit avec un tuyau qui verse 10 L par minute, jusqu'à ce qu'il contienne 10 L.\n\nLe niveau de la rivière se lit sur une règle fixée au ponton : 0 correspond au niveau habituel. Lundi matin, la règle indiquait 35 cm. Depuis, le niveau baisse de 4 cm chaque jour. Les sorties sont annulées dès que le niveau descend sous −25 cm.",
+      "image": null,
+      "duree_estimee_min": 14,
+      "questions": [
+        {
+          "key": "q1",
+          "skill_id": "F024",
+          "statement": "Avec la formule carte, quelle somme paie-t-on une seule fois dans l'année, quel que soit le nombre de sorties ?",
+          "type": "qcm",
+          "choices": [
+            {
+              "key": "a",
+              "text": "36 €, le prix de la carte",
+              "misconception": null
+            },
+            {
+              "key": "b",
+              "text": "5 €, le prix d'une sortie",
+              "misconception": "Avec la carte, les 5 € se paient à chaque sortie, pas une seule fois."
+            },
+            {
+              "key": "c",
+              "text": "9 €, le prix d'une sortie libre",
+              "misconception": "9 € est le prix d'une sortie de la formule libre, payé à chaque sortie."
+            },
+            {
+              "key": "d",
+              "text": "41 €, la carte et une sortie",
+              "misconception": "41 € est le prix de la carte et d'une seule sortie : chaque nouvelle sortie coûte encore 5 €."
+            }
+          ],
+          "answer": {
+            "value": "a"
+          },
+          "points": 1,
+          "solution_steps": [
+            "Le texte dit : « une carte à 36 € pour l'année, puis chaque sortie coûte 5 € ».",
+            "La carte, 36 €, se paie une seule fois. Les 5 € se paient à chaque sortie."
+          ],
+          "hint": "Relis la phrase de la formule carte."
+        },
+        {
+          "key": "q2",
+          "skill_id": "F024",
+          "statement": "Léa a choisi la formule carte et a payé 106 € dans l'année. Le nombre $x$ de ses sorties vérifie $5x + 36 = 106$. Résous cette équation.",
+          "type": "numerique",
+          "answer": {
+            "value": 14,
+            "accepted": [
+              "14 sorties"
+            ]
+          },
+          "points": 2,
+          "solution_steps": [
+            "On retranche 36 aux deux membres : $5x + 36 - 36 = 106 - 36$, soit $5x = 70$.",
+            "On divise les deux membres par 5 : $x = 70 \\div 5 = 14$.",
+            "Vérification : $5 \\times 14 + 36 = 70 + 36 = 106$. Léa a fait **14** sorties."
+          ],
+          "hint": "Isole d'abord $5x$ en retranchant un même nombre aux deux membres."
+        },
+        {
+          "key": "q3",
+          "skill_id": "C007",
+          "statement": "La durée $x$ du remplissage du bidon, en minutes, vérifie $2 + 10x = 10$. Résous cette équation et donne la solution sous forme d'une fraction irréductible.",
+          "type": "texte",
+          "answer": {
+            "value": "4/5",
+            "accepted": [
+              "x = 4/5",
+              "x=4/5",
+              "4/5 min",
+              "4/5 de minute",
+              "4/5 minute",
+              "x = 4/5 min",
+              "x = 4/5 minute",
+              "x = 4/5 de minute"
+            ]
+          },
+          "points": 2,
+          "solution_steps": [
+            "On retranche 2 aux deux membres : $10x = 8$.",
+            "On divise les deux membres par 10 : $x = \\frac{8}{10}$.",
+            "On simplifie par 2 : $\\frac{8}{10} = \\frac{8 \\div 2}{10 \\div 2} = \\frac{4}{5}$, et 4 et 5 n'ont plus de diviseur commun autre que 1.",
+            "La solution est **4/5** de minute.",
+            "Attention : $\\frac{8}{10}$ est juste mais pas irréductible, et $\\frac{5}{4}$ divise 10 par 8 au lieu de 8 par 10."
+          ],
+          "hint": "Isole $10x$, puis divise, puis simplifie."
+        },
+        {
+          "key": "q4",
+          "skill_id": "F024",
+          "statement": "On note $x$ le nombre de jours écoulés depuis lundi matin. La règle indique alors $35 - 4x$ cm. Résous l'équation $35 - 4x = -17$ pour savoir au bout de combien de jours la règle indique −17 cm.",
+          "type": "numerique",
+          "answer": {
+            "value": 13,
+            "accepted": [
+              "13 jours"
+            ]
+          },
+          "points": 4,
+          "solution_steps": [
+            "On retranche 35 aux deux membres : $-4x = -17 - 35$, soit $-4x = -52$.",
+            "On divise les deux membres par $-4$ : $x = (-52) \\div (-4) = 13$, car un quotient de deux négatifs est positif.",
+            "Vérification : $35 - 4 \\times 13 = 35 - 52 = -17$.",
+            "La règle indique −17 cm au bout de **13** jours.",
+            "Attention : $x = -13$ se trompe de signe dans la division."
+          ],
+          "hint": "Isole $-4x$, puis divise par $-4$ en surveillant le signe."
+        },
+        {
+          "key": "q5",
+          "skill_id": "F063",
+          "statement": "Vrai ou faux : le nombre 9 est solution de l'équation $5x + 36 = 9x$, c'est-à-dire qu'avec 9 sorties, les deux formules coûtent le même prix.",
+          "type": "vrai_faux",
+          "answer": {
+            "value": true
+          },
+          "points": 2,
+          "solution_steps": [
+            "On remplace $x$ par 9 dans chaque membre.",
+            "Premier membre : $5 \\times 9 + 36 = 45 + 36 = 81$. Second membre : $9 \\times 9 = 81$.",
+            "Les deux membres sont égaux : 9 est solution. C'est **vrai** : 9 sorties coûtent 81 € dans les deux formules."
+          ],
+          "hint": "Calcule séparément les deux membres."
+        }
+      ],
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 4, classe de 4e, Nombres et calculs, Calcul littéral et algébrique, Objectifs d'apprentissage : « Résoudre une équation du premier degré du type a𝑥 + b = c. »"
+    },
+    {
+      "id": "SX-F025-01",
+      "skill_id": "F025",
+      "skill_ids": [
+        "F025",
+        "P022",
+        "D026"
+      ],
+      "school_level": "4e",
+      "title": "Cadres et bougies à l'atelier",
+      "contexte": "À l'atelier de bricolage du centre social, Sami fabrique deux cadres avec une baguette de bois. Il veut utiliser exactement la même longueur de baguette pour chacun.\n\nLe cadre A est un rectangle : sa largeur mesure $x$ cm, et sa longueur mesure le triple de sa largeur augmenté de 11 cm.\nLe cadre B est un hexagone régulier : ses six côtés mesurent chacun $x + 8$ cm.\n\nLa baguette coûte 3,20 € le mètre, et l'atelier compte quinze établis.\n\nPour décorer l'atelier, Sami allume en même temps deux bougies. La bougie rouge mesure 32 cm et perd 2 cm de hauteur par heure. La bougie verte mesure 24 cm et perd 1,2 cm de hauteur par heure. Il se demande au bout de combien d'heures elles auront la même hauteur.",
+      "image": null,
+      "duree_estimee_min": 15,
+      "questions": [
+        {
+          "key": "q1",
+          "skill_id": "F025",
+          "statement": "Quelle expression donne la longueur du cadre A, en cm ?",
+          "type": "qcm",
+          "choices": [
+            {
+              "key": "a",
+              "text": "$3(x + 11)$",
+              "misconception": "Ici, on triple la largeur seule, puis on ajoute 11 : il n'y a pas de parenthèses."
+            },
+            {
+              "key": "b",
+              "text": "$3x + 11$",
+              "misconception": null
+            },
+            {
+              "key": "c",
+              "text": "$x + 8$",
+              "misconception": "$x + 8$ est le côté du cadre B, pas la longueur du cadre A."
+            },
+            {
+              "key": "d",
+              "text": "$33x$",
+              "misconception": "On ajoute 11 au triple de la largeur : $3x$ et 11 ne se multiplient pas."
+            }
+          ],
+          "answer": {
+            "value": "b"
+          },
+          "points": 1,
+          "solution_steps": [
+            "La longueur est le triple de la largeur, $3x$, augmenté de 11 cm.",
+            "« Augmenté de 11 » se traduit par une addition : la longueur est **3x + 11** cm."
+          ],
+          "hint": "Relis la phrase qui décrit le cadre A."
+        },
+        {
+          "key": "q2",
+          "skill_id": "P022",
+          "statement": "On admet que la longueur du cadre A mesure $3x + 11$ cm. Écris, sous forme réduite, le périmètre du cadre A, en cm, en fonction de $x$.",
+          "type": "texte",
+          "answer": {
+            "value": "8x + 22",
+            "unit": "cm",
+            "forme": "reduite"
+          },
+          "points": 2,
+          "solution_steps": [
+            "Périmètre d'un rectangle : 2 × (longueur + largeur), soit $2(3x + 11 + x) = 2(4x + 11)$.",
+            "On développe : $2 \\times 4x + 2 \\times 11 = 8x + 22$.",
+            "Le périmètre du cadre A est **8x + 22** cm.",
+            "Attention : $4x + 11$ n'est que la moitié du tour."
+          ],
+          "hint": "Un rectangle a deux longueurs et deux largeurs."
+        },
+        {
+          "key": "q3",
+          "skill_id": "F025",
+          "statement": "Les deux cadres utilisent la même longueur de baguette. On admet que le périmètre du cadre A vaut $8x + 22$ cm et celui du cadre B $6(x + 8)$ cm. Résous l'équation $8x + 22 = 6(x + 8)$.",
+          "type": "numerique",
+          "answer": {
+            "value": 13,
+            "accepted": [
+              "13 cm"
+            ]
+          },
+          "points": 4,
+          "solution_steps": [
+            "On développe le second membre : $6(x + 8) = 6x + 48$. L'équation devient $8x + 22 = 6x + 48$.",
+            "On retranche $6x$ aux deux membres : $2x + 22 = 48$.",
+            "On retranche 22 aux deux membres : $2x = 26$, puis on divise par 2 : $x = 13$.",
+            "Vérification : $8 \\times 13 + 22 = 126$ et $6 \\times (13 + 8) = 6 \\times 21 = 126$. La solution est **13**.",
+            "Attention : écrire $6(x + 8) = 6x + 8$ ne multiplie que le premier terme, et donne $x = -7$, une largeur impossible."
+          ],
+          "hint": "Développe d'abord, puis regroupe les termes en $x$ dans un seul membre."
+        },
+        {
+          "key": "q4",
+          "skill_id": "D026",
+          "statement": "On note $x$ le nombre d'heures écoulées. Les deux bougies ont la même hauteur quand $32 - 2x = 24 - 1{,}2x$. Résous cette équation.",
+          "type": "numerique",
+          "answer": {
+            "value": 10,
+            "accepted": [
+              "10 h",
+              "10 heures"
+            ]
+          },
+          "points": 3,
+          "solution_steps": [
+            "On ajoute $2x$ aux deux membres : $32 = 24 + 0{,}8x$, car $2x - 1{,}2x = 0{,}8x$.",
+            "On retranche 24 aux deux membres : $8 = 0{,}8x$.",
+            "On divise par 0,8 : $8 \\div 0{,}8 = 80 \\div 8 = 10$, en multipliant les deux nombres par 10.",
+            "Vérification : $32 - 2 \\times 10 = 12$ et $24 - 1{,}2 \\times 10 = 12$. La solution est **10** : au bout de 10 heures.",
+            "Attention : $8 \\div 8 = 1$ multiplie seulement le diviseur par 10."
+          ],
+          "hint": "Regroupe les termes en $x$ dans un membre, puis divise par un nombre décimal."
+        }
+      ],
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 4, classe de 4e, Nombres et calculs, Calcul littéral et algébrique, Objectifs d'apprentissage : « Mettre en équation un problème et le résoudre à l'aide d'une équation du premier degré du type a𝑥 + b = c𝑥 + d. »"
+    },
+    {
+      "id": "SX-F063-01",
+      "skill_id": "F063",
+      "skill_ids": [
+        "F063",
+        "A018",
+        "B047",
+        "B049",
+        "F022"
+      ],
+      "school_level": "4e",
+      "title": "La station météo du collège",
+      "contexte": "Le club sciences du collège Jean-Moulin relève chaque matin la température minimale de la nuit, en degrés Celsius (°C). Sa station est installée sur le toit du gymnase.\n\nRelevés d'une semaine de mars :\nlundi −7 °C, mardi −5 °C, mercredi 0 °C, jeudi −9 °C, vendredi 10 °C, après un fort redoux.\n\nLe club échange ses relevés avec un collège de Chicago, aux États-Unis, où l'on mesure les températures en degrés Fahrenheit. Pour passer d'une température $x$ en degrés Celsius à la même température en degrés Fahrenheit, on calcule $1{,}8x + 32$.\n\nPar exemple, 20 °C correspondent à $1{,}8 \\times 20 + 32 = 68$ degrés Fahrenheit.",
+      "image": null,
+      "duree_estimee_min": 14,
+      "questions": [
+        {
+          "key": "q1",
+          "skill_id": "A018",
+          "statement": "Combien de matins de cette semaine la température minimale relevée est-elle strictement négative ?",
+          "type": "numerique",
+          "answer": {
+            "value": 3,
+            "accepted": [
+              "3 matins",
+              "3 jours"
+            ]
+          },
+          "points": 1,
+          "solution_steps": [
+            "Les relevés strictement négatifs sont ceux de lundi (−7), mardi (−5) et jeudi (−9).",
+            "Vendredi, 10 °C est positif. Mercredi, 0 °C n'est pas strictement négatif : 0 est à la fois positif et négatif.",
+            "Il y a **3** matins."
+          ],
+          "hint": "Que dire de 0 °C ?"
+        },
+        {
+          "key": "q2",
+          "skill_id": "B047",
+          "statement": "Quel est l'écart, en °C, entre la température la plus haute et la température la plus basse de la semaine ?",
+          "type": "numerique",
+          "answer": {
+            "value": 19,
+            "unit": "°C"
+          },
+          "points": 2,
+          "solution_steps": [
+            "La plus haute est 10 °C (vendredi), la plus basse −9 °C (jeudi).",
+            "Écart : $10 - (-9) = 10 + 9 = 19$.",
+            "L'écart est de **19 °C**.",
+            "Attention : $10 - 9 = 1$ oublie que l'on soustrait un nombre négatif."
+          ],
+          "hint": "Soustraire un nombre, c'est ajouter son opposé."
+        },
+        {
+          "key": "q3",
+          "skill_id": "B049",
+          "statement": "Le collège de Chicago demande la température de jeudi en degrés Fahrenheit. Quel nombre obtient-on ?",
+          "type": "numerique",
+          "answer": {
+            "value": 15.8,
+            "accepted": [
+              "15,8 °F",
+              "15,8 degrés Fahrenheit",
+              "15,8 degrés",
+              "15,8 °"
+            ]
+          },
+          "points": 2,
+          "solution_steps": [
+            "Jeudi, la température est −9 °C : on remplace $x$ par $(-9)$, entre parenthèses.",
+            "$1{,}8 \\times (-9) + 32 = -16{,}2 + 32 = 15{,}8$.",
+            "On obtient **15,8** degrés Fahrenheit.",
+            "Attention : $1{,}8 \\times 9 + 32 = 48{,}2$ oublie le signe de $-9$."
+          ],
+          "hint": "Un produit d'un nombre positif par un nombre négatif est négatif."
+        },
+        {
+          "key": "q4",
+          "skill_id": "F063",
+          "statement": "Le professeur affirme qu'une température s'écrit avec le même nombre en degrés Celsius et en degrés Fahrenheit. Un seul des nombres −50 ; −40 ; −20 ; 40 vérifie l'égalité $1{,}8x + 32 = x$. Lequel ?",
+          "type": "numerique",
+          "answer": {
+            "value": -40,
+            "accepted": [
+              "−40 °C",
+              "−40 °F",
+              "−40 degrés",
+              "−40 degrés Celsius"
+            ]
+          },
+          "points": 4,
+          "solution_steps": [
+            "On calcule séparément les deux membres pour chaque nombre.",
+            "Pour $x = -50$ : $1{,}8 \\times (-50) + 32 = -90 + 32 = -58$, différent de $-50$.",
+            "Pour $x = -40$ : $1{,}8 \\times (-40) + 32 = -72 + 32 = -40$, égal au second membre $-40$.",
+            "Pour $x = -20$ : $1{,}8 \\times (-20) + 32 = -36 + 32 = -4$, différent de $-20$.",
+            "Pour $x = 40$ : $1{,}8 \\times 40 + 32 = 72 + 32 = 104$, différent de 40.",
+            "Le nombre est **−40** : −40 °C, c'est aussi −40 degrés Fahrenheit."
+          ],
+          "hint": "Calcule le premier membre pour chaque nombre et compare-le au second."
+        },
+        {
+          "key": "q5",
+          "skill_id": "F022",
+          "statement": "Léo affirme : « Une température négative en degrés Celsius est toujours négative en degrés Fahrenheit. » Que penser de son affirmation ?",
+          "type": "qcm",
+          "choices": [
+            {
+              "key": "a",
+              "text": "Il a raison : −30 °C donne −22 degrés Fahrenheit.",
+              "misconception": "Un exemple qui marche ne prouve pas que l'affirmation est toujours vraie : il suffit d'un contre-exemple pour la réfuter."
+            },
+            {
+              "key": "b",
+              "text": "Il a tort : −5 °C donne 23 degrés Fahrenheit, et un seul contre-exemple suffit.",
+              "misconception": null
+            },
+            {
+              "key": "c",
+              "text": "Il a raison, car $1{,}8x$ est négatif quand $x$ est négatif.",
+              "misconception": "On ajoute ensuite 32 : $1{,}8x + 32$ peut être positif même si $1{,}8x$ est négatif."
+            },
+            {
+              "key": "d",
+              "text": "On ne peut pas conclure sans essayer toutes les températures négatives.",
+              "misconception": "Pour montrer qu'une affirmation est fausse, un seul contre-exemple suffit."
+            }
+          ],
+          "answer": {
+            "value": "b"
+          },
+          "points": 2,
+          "solution_steps": [
+            "Mardi, −5 °C donne $1{,}8 \\times (-5) + 32 = -9 + 32 = 23$ degrés Fahrenheit, un nombre positif.",
+            "Un seul contre-exemple suffit à montrer qu'une affirmation générale est fausse.",
+            "Léo a **tort**."
+          ],
+          "hint": "Essaie avec un relevé de la semaine."
+        }
+      ],
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 4, classe de 4e, Nombres et calculs, Calcul littéral et algébrique, Automatismes : « Tester si un nombre vérifie une égalité. »"
+    },
+    {
+      "id": "SX-F064-01",
+      "skill_id": "F064",
+      "skill_ids": [
+        "F064",
+        "F061",
+        "B051",
+        "F014"
+      ],
+      "school_level": "4e",
+      "title": "Le tour de magie de Nina",
+      "contexte": "Pour la fête du collège, Nina, élève de 4e, prépare un tour de « magie » avec un programme de calcul. Elle demande à un spectateur de suivre ce programme sans lui dire le nombre choisi.\n\n**Programme de Nina**\nChoisir un nombre.\nLui soustraire 8.\nMultiplier le résultat par 5.\nAjouter 9 au résultat.\n\nLe spectateur annonce seulement le résultat final, et Nina retrouve aussitôt le nombre choisi. Le spectateur peut choisir n'importe quel nombre relatif, entier ou décimal.\n\nLe tour dure environ quatre minutes, et Nina le présente plusieurs fois dans l'après-midi. Pour s'entraîner, son ami Tom a choisi le nombre 13, son âge.",
+      "image": null,
+      "duree_estimee_min": 12,
+      "questions": [
+        {
+          "key": "q1",
+          "skill_id": "F061",
+          "statement": "Si l'on écrit le programme de Nina en une seule expression, cette expression est-elle une somme, une différence ou un produit ?",
+          "type": "qcm",
+          "choices": [
+            {
+              "key": "a",
+              "text": "un produit, car on multiplie par 5",
+              "misconception": "La multiplication par 5 n'est pas la dernière opération : on ajoute 9 ensuite."
+            },
+            {
+              "key": "b",
+              "text": "une somme, car la dernière opération est « ajouter 9 »",
+              "misconception": null
+            },
+            {
+              "key": "c",
+              "text": "une différence, car la première opération est une soustraction",
+              "misconception": "On ne regarde pas la première opération, mais la dernière, qui est une addition."
+            }
+          ],
+          "answer": {
+            "value": "b"
+          },
+          "points": 1,
+          "solution_steps": [
+            "La nature d'une expression est donnée par la dernière opération effectuée.",
+            "La dernière étape du programme est « Ajouter 9 au résultat » : l'expression est une **somme**."
+          ],
+          "hint": "Regarde la dernière étape du programme."
+        },
+        {
+          "key": "q2",
+          "skill_id": "B051",
+          "statement": "Quel résultat obtient-on en choisissant −10 ?",
+          "type": "numerique",
+          "answer": {
+            "value": -81
+          },
+          "points": 2,
+          "solution_steps": [
+            "On soustrait 8 : $-10 - 8 = -18$.",
+            "On multiplie par 5 : $(-18) \\times 5 = -90$.",
+            "On ajoute 9 : $-90 + 9 = -81$.",
+            "On obtient **−81**.",
+            "Attention : $-10 - 8 \\times 5 + 9 = -41$ oublie que l'on multiplie tout le résultat par 5."
+          ],
+          "hint": "Suis les étapes dans l'ordre, une par une."
+        },
+        {
+          "key": "q3",
+          "skill_id": "F014",
+          "statement": "Écris, sous forme réduite, le résultat obtenu en choisissant $x$.",
+          "type": "texte",
+          "answer": {
+            "value": "5x − 31",
+            "forme": "reduite"
+          },
+          "points": 3,
+          "solution_steps": [
+            "On soustrait 8 : $x - 8$. On multiplie le résultat par 5 : $5(x - 8)$. On ajoute 9 : $5(x - 8) + 9$.",
+            "On développe : $5(x - 8) = 5x - 40$.",
+            "On réduit : $5x - 40 + 9 = 5x - 31$.",
+            "Le résultat est **5x − 31**.",
+            "Attention : $x - 8 \\times 5 + 9$ oublie les parenthèses, et $5x - 49$ se trompe de signe en ajoutant 9."
+          ],
+          "hint": "Le résultat entier de l'étape 2 est multiplié par 5 : pense aux parenthèses."
+        },
+        {
+          "key": "q4",
+          "skill_id": "F064",
+          "statement": "Une spectatrice annonce −46. Quel nombre a-t-elle choisi ?",
+          "type": "numerique",
+          "answer": {
+            "value": -3
+          },
+          "points": 4,
+          "solution_steps": [
+            "On remonte le programme avec les opérations inverses, dans l'ordre inverse.",
+            "La dernière étape ajoutait 9 : on soustrait 9. $-46 - 9 = -55$.",
+            "L'étape d'avant multipliait par 5 : on divise par 5. $(-55) \\div 5 = -11$.",
+            "La première étape soustrayait 8 : on ajoute 8. $-11 + 8 = -3$.",
+            "Vérification : $-3 - 8 = -11$, puis $(-11) \\times 5 = -55$, puis $-55 + 9 = -46$. Elle a choisi **−3**."
+          ],
+          "hint": "Pars du résultat et défais les étapes, de la dernière à la première."
+        }
+      ],
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 4, classe de 4e, Proportionnalité, fonctions, Fonctions, Objectifs d'apprentissage : « Savoir retrouver le nombre de départ après avoir remonté un programme de calcul simple. »"
+    },
+    {
+      "id": "SX-F065-01",
+      "skill_id": "F065",
+      "skill_ids": [
+        "F065",
+        "F003",
+        "F010",
+        "A016"
+      ],
+      "school_level": "4e",
+      "title": "Le tour du calendrier",
+      "contexte": "Au CDI du collège, une affiche lance un défi aux élèves de 4e.\n\n« Dans le calendrier d'un mois, entourez trois dates qui se suivent en diagonale, en descendant vers la droite. Additionnez-les. En divisant votre somme par 3, je trouve toujours la date du milieu. »\n\nDans ce calendrier, chaque ligne compte une semaine, du lundi au dimanche. La date placée une ligne plus bas et une colonne plus à droite suit donc la précédente de 8 jours. Le mois choisi est mars 2027, qui commence un lundi.\n\nMalo entoure 4, 12 et 20 : sa somme est 36, et 36 ÷ 3 = 12 donne bien la date du milieu. Sofia entoure 10, 18 et 26 : sa somme 54 donne 18. Hugo, 12 ans, pense que ces deux essais réussis prouvent que le tour marche toujours.\n\nPour le démontrer, on note $n$ la date du haut, $n$ étant un nombre entier.",
+      "image": null,
+      "duree_estimee_min": 14,
+      "questions": [
+        {
+          "key": "q1",
+          "skill_id": "F065",
+          "statement": "Léa entoure le 9 en haut de sa diagonale. Quelle date se trouve tout en bas ?",
+          "type": "numerique",
+          "answer": {
+            "value": 25,
+            "accepted": [
+              "le 25",
+              "25 mars",
+              "le 25 mars"
+            ]
+          },
+          "points": 1,
+          "solution_steps": [
+            "En diagonale, chaque date suit la précédente de 8 jours : après le 9 vient $9 + 8 = 17$.",
+            "Après le 17 vient $17 + 8 = 25$.",
+            "La date du bas est le **25**."
+          ],
+          "hint": "Relis la phrase qui dit combien de jours séparent deux dates de la diagonale."
+        },
+        {
+          "key": "q2",
+          "skill_id": "F003",
+          "statement": "La date du haut est $n$. Quelle expression donne la date du bas ?",
+          "type": "qcm",
+          "choices": [
+            {
+              "key": "a",
+              "text": "$n + 2$",
+              "misconception": "$n + 2$ serait la troisième date d'une même ligne. En diagonale, on avance de 8 jours à chaque ligne."
+            },
+            {
+              "key": "b",
+              "text": "$3n$",
+              "misconception": "$3n$ est le triple de la date du haut : on ajoute des jours, on ne multiplie pas la date."
+            },
+            {
+              "key": "c",
+              "text": "$n + 16$",
+              "misconception": null
+            },
+            {
+              "key": "d",
+              "text": "$n + 8$",
+              "misconception": "$n + 8$ est la date du milieu. La date du bas est encore 8 jours après."
+            }
+          ],
+          "answer": {
+            "value": "c"
+          },
+          "points": 2,
+          "solution_steps": [
+            "La date du milieu suit la date du haut de 8 jours : $n + 8$.",
+            "La date du bas suit la date du milieu de 8 jours : $n + 8 + 8 = n + 16$.",
+            "La date du bas est **n + 16**."
+          ],
+          "hint": "Combien de jours séparent la date du haut et celle du bas ?"
+        },
+        {
+          "key": "q3",
+          "skill_id": "F010",
+          "statement": "On admet que les trois dates entourées s'écrivent $n$, $n + 8$ et $n + 16$. Écris, sous forme réduite, leur somme, en fonction de $n$.",
+          "type": "texte",
+          "answer": {
+            "value": "3n + 24",
+            "forme": "reduite",
+            "variables": [
+              "n"
+            ]
+          },
+          "points": 3,
+          "solution_steps": [
+            "Les trois dates sont $n$, $n + 8$ et $n + 16$.",
+            "Leur somme est $n + (n + 8) + (n + 16) = n + n + n + 8 + 16$.",
+            "On regroupe les termes en $n$ et les nombres : $3n + 24$.",
+            "La somme est **3n + 24**.",
+            "Attention : $3n$ et $24$ ne sont pas des termes semblables, ils ne s'additionnent pas en $27n$."
+          ],
+          "hint": "Regroupe les termes en $n$ entre eux, et les nombres entre eux."
+        },
+        {
+          "key": "q4",
+          "skill_id": "F065",
+          "statement": "On admet que la somme des trois dates vaut $3n + 24$. Quel raisonnement démontre que le tour marche toujours ?",
+          "type": "qcm",
+          "choices": [
+            {
+              "key": "a",
+              "text": "Malo, Sofia et Léa ont réussi : trois essais suffisent à le prouver.",
+              "misconception": "Des exemples, même nombreux, ne démontrent pas qu'une propriété est toujours vraie : il faut un calcul valable pour tout $n$."
+            },
+            {
+              "key": "b",
+              "text": "$3n + 24 = 3(n + 8)$, et $n + 8$ est la date du milieu : la somme vaut toujours 3 fois la date du milieu.",
+              "misconception": null
+            },
+            {
+              "key": "c",
+              "text": "$3n + 24 = 3(n + 24)$ : la somme est donc un multiple de 3.",
+              "misconception": "La factorisation est fausse : $3(n + 24) = 3n + 72$. Et être un multiple de 3 ne dit pas que le quotient est la date du milieu."
+            },
+            {
+              "key": "d",
+              "text": "$3n + 24 = 27n$, et $27n$ se divise toujours par 3.",
+              "misconception": "$3n$ et $24$ ne sont pas des termes semblables : on ne peut pas les additionner en $27n$."
+            }
+          ],
+          "answer": {
+            "value": "b"
+          },
+          "points": 4,
+          "solution_steps": [
+            "On factorise par 3 : $3n + 24 = 3 \\times n + 3 \\times 8 = 3(n + 8)$.",
+            "Or $n + 8$ est la date du milieu : la somme vaut toujours 3 fois la date du milieu, et la diviser par 3 redonne la date du milieu.",
+            "Ce calcul vaut pour tout entier $n$ : c'est une démonstration, alors que des essais ne montrent que des cas particuliers."
+          ],
+          "hint": "Vérifie chaque égalité proposée, en développant ou en réduisant."
+        },
+        {
+          "key": "q5",
+          "skill_id": "A016",
+          "statement": "On admet que la somme des trois dates vaut $3n + 24$. Vrai ou faux : en entourant trois dates de cette façon, on peut obtenir une somme égale à 80.",
+          "type": "vrai_faux",
+          "answer": {
+            "value": false
+          },
+          "points": 2,
+          "solution_steps": [
+            "La somme vaut $3n + 24 = 3(n + 8)$ : c'est toujours un multiple de 3.",
+            "Or $80 = 3 \\times 26 + 2$ : le reste de la division de 80 par 3 n'est pas nul, donc 80 n'est pas un multiple de 3.",
+            "C'est **faux** : aucune diagonale ne donne une somme de 80."
+          ],
+          "hint": "Que sait-on de la somme, grâce à la démonstration ?"
+        }
+      ],
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 4, classe de 4e, Nombres et calculs, Calcul littéral et algébrique, Objectifs d'apprentissage : « Utiliser le calcul algébrique pour produire des démonstrations. »"
+    },
+    {
+      "id": "SX-F066-01",
+      "skill_id": "F066",
+      "skill_ids": [
+        "F066",
+        "F003",
+        "F025",
+        "D024"
+      ],
+      "school_level": "4e",
+      "title": "Les formules de la salle d'escalade",
+      "contexte": "La salle d'escalade Vertige propose deux formules pour le trimestre d'automne, d'octobre à décembre.\n\n**Formule Liberté** : chaque séance coûte 9,50 €.\n**Formule Abonné** : on paie un abonnement de 42 € pour le trimestre, puis 6,50 € par séance.\n\nDans les deux formules, la location des chaussons coûte 3 € par séance. Inès a ses propres chaussons et ne les loue jamais. La salle compte 85 voies, et son mur le plus haut mesure 16 m.\n\nInès hésite entre les deux formules. Elle note $x$ le nombre de séances qu'elle fera pendant le trimestre, et veut savoir pour quel nombre de séances les deux formules lui coûtent le même prix.",
+      "image": null,
+      "duree_estimee_min": 15,
+      "questions": [
+        {
+          "key": "q1",
+          "skill_id": "F066",
+          "statement": "Dans la formule Abonné, que représente l'expression $6{,}5x$ ?",
+          "type": "qcm",
+          "choices": [
+            {
+              "key": "a",
+              "text": "le prix de l'abonnement",
+              "misconception": "L'abonnement coûte 42 €, une seule fois : il ne dépend pas du nombre de séances."
+            },
+            {
+              "key": "b",
+              "text": "le prix des $x$ séances, sans l'abonnement",
+              "misconception": null
+            },
+            {
+              "key": "c",
+              "text": "le prix total payé par Inès",
+              "misconception": "Le prix total ajoute l'abonnement de 42 € au prix des séances."
+            },
+            {
+              "key": "d",
+              "text": "le prix des chaussons",
+              "misconception": "Les chaussons coûtent 3 € par séance, et Inès ne les loue pas."
+            }
+          ],
+          "answer": {
+            "value": "b"
+          },
+          "points": 1,
+          "solution_steps": [
+            "Avec la formule Abonné, chaque séance coûte 6,50 € : $x$ séances coûtent $6{,}5 \\times x = 6{,}5x$ euros.",
+            "$6{,}5x$ est donc le prix des $x$ séances, **sans** l'abonnement de 42 €."
+          ],
+          "hint": "Relis la phrase de la formule Abonné."
+        },
+        {
+          "key": "q2",
+          "skill_id": "F003",
+          "statement": "Écris le prix payé par Inès avec la formule Abonné, en euros, en fonction de $x$.",
+          "type": "texte",
+          "answer": {
+            "value": "42 + 6,5x",
+            "unit": "€",
+            "forme": "expression"
+          },
+          "points": 2,
+          "solution_steps": [
+            "L'abonnement se paie une fois : 42 €.",
+            "Les $x$ séances coûtent $6{,}5x$ euros.",
+            "Le prix est **42 + 6,5x** euros.",
+            "Attention : $48{,}5x$ additionne l'abonnement et le prix d'une séance, qui ne sont pas des termes semblables."
+          ],
+          "hint": "Que paie-t-on une seule fois, et que paie-t-on à chaque séance ?"
+        },
+        {
+          "key": "q3",
+          "skill_id": "F066",
+          "statement": "On admet qu'avec la formule Abonné, $x$ séances coûtent $42 + 6{,}5x$ euros. Écris une équation qui traduit la phrase : « avec $x$ séances, les deux formules coûtent le même prix à Inès ».",
+          "type": "texte",
+          "answer": {
+            "value": "9,5x = 42 + 6,5x",
+            "forme": "equation"
+          },
+          "points": 4,
+          "solution_steps": [
+            "Avec la formule Liberté, $x$ séances coûtent $9{,}5x$ euros.",
+            "Avec la formule Abonné, elles coûtent $42 + 6{,}5x$ euros.",
+            "Les deux prix sont égaux : **9,5x = 42 + 6,5x**.",
+            "Attention : écrire « x = 14 » donne la solution, pas l'équation demandée ; et les chaussons ne comptent pas, Inès ne les loue pas."
+          ],
+          "hint": "Écris d'abord le prix de chaque formule pour $x$ séances."
+        },
+        {
+          "key": "q4",
+          "skill_id": "F025",
+          "statement": "On admet que l'équation $9{,}5x = 42 + 6{,}5x$ traduit le problème. Quand les deux formules coûtent le même prix, combien Inès paie-t-elle, en euros ?",
+          "type": "numerique",
+          "answer": {
+            "value": 133,
+            "unit": "€"
+          },
+          "points": 3,
+          "solution_steps": [
+            "On retranche $6{,}5x$ aux deux membres : $3x = 42$.",
+            "On divise par 3 : $x = 14$. Les formules coûtent autant pour 14 séances.",
+            "La question porte sur le prix : $9{,}5 \\times 14 = 133$, et aussi $42 + 6{,}5 \\times 14 = 42 + 91 = 133$.",
+            "Inès paie **133 €**.",
+            "Attention : 14 est le nombre de séances, pas le prix demandé."
+          ],
+          "hint": "Résous l'équation, puis relis ce que demande la question."
+        },
+        {
+          "key": "q5",
+          "skill_id": "D024",
+          "statement": "Inès fera finalement 20 séances. Quelle somme économise-t-elle en choisissant la formule la moins chère ?",
+          "type": "numerique",
+          "answer": {
+            "value": 18,
+            "unit": "€"
+          },
+          "points": 2,
+          "solution_steps": [
+            "Formule Liberté : $9{,}5 \\times 20 = 190$ €.",
+            "Formule Abonné : $42 + 6{,}5 \\times 20 = 42 + 130 = 172$ €.",
+            "La formule Abonné est la moins chère. Économie : $190 - 172 = 18$.",
+            "Inès économise **18 €**.",
+            "Attention : $3 \\times 20 = 60$ oublie l'abonnement de 42 €."
+          ],
+          "hint": "Calcule le prix des 20 séances dans chaque formule."
+        }
+      ],
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 4, classe de 4e, Nombres et calculs, Calcul littéral et algébrique, Objectifs d'apprentissage : « Mettre en équation un problème et le résoudre à l'aide d'une équation du premier degré du type a𝑥 + b = c𝑥 + d. »"
     },
     {
       "id": "SX-G002-01",

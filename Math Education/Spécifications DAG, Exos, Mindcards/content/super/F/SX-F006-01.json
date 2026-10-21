@@ -1,0 +1,151 @@
+{
+  "id": "SX-F006-01",
+  "skill_id": "F006",
+  "skill_ids": [
+    "F006",
+    "F010",
+    "P024"
+  ],
+  "school_level": "4e",
+  "title": "Le plan du studio",
+  "contexte": "Mme Kader, architecte, dessine le plan d'un studio de plain-pied. La largeur exacte du terrain n'est pas encore connue : elle note $x$ une longueur, en mètres, et écrit toutes les dimensions en fonction de $x$.\n\nLe studio compte trois pièces rectangulaires, qui ne se chevauchent pas.\nLe séjour mesure $8x$ de long et $7x$ de large.\nLa chambre mesure $7x$ de long et $6x$ de large.\nLa salle d'eau est un carré de côté $6x$.\n\nLa hauteur sous plafond sera de 2,5 m dans toutes les pièces. Le chantier doit commencer en mars et durer plusieurs mois.\n\nLe sol des trois pièces sera couvert de parquet. Une plinthe en bois fera le tour complet du séjour, au ras du sol.",
+  "image": null,
+  "duree_estimee_min": 14,
+  "questions": [
+    {
+      "key": "q1",
+      "skill_id": "F006",
+      "statement": "Laquelle de ces informations ne sert à calculer ni l'aire du sol, ni la longueur de la plinthe ?",
+      "type": "qcm",
+      "choices": [
+        {
+          "key": "a",
+          "text": "la largeur $7x$ du séjour",
+          "misconception": "La largeur du séjour sert deux fois : pour son aire et pour le tour du séjour, où passe la plinthe."
+        },
+        {
+          "key": "b",
+          "text": "le côté $6x$ de la salle d'eau",
+          "misconception": "Le côté de la salle d'eau sert à calculer l'aire de son sol."
+        },
+        {
+          "key": "c",
+          "text": "la hauteur sous plafond, 2,5 m",
+          "misconception": null
+        },
+        {
+          "key": "d",
+          "text": "la largeur $6x$ de la chambre",
+          "misconception": "La largeur de la chambre sert à calculer l'aire de son sol."
+        }
+      ],
+      "answer": {
+        "value": "c"
+      },
+      "points": 1,
+      "solution_steps": [
+        "L'aire du sol se calcule avec les longueurs et les largeurs des trois pièces, la plinthe avec les dimensions du séjour.",
+        "La hauteur sous plafond, 2,5 m, servirait pour les murs, pas pour le sol : elle ne sert ici à rien."
+      ],
+      "hint": "Relis ce qu'on cherche : le sol et le tour du séjour."
+    },
+    {
+      "key": "q2",
+      "skill_id": "F010",
+      "statement": "Écris, sous forme réduite, la longueur de la plinthe qui fait le tour du séjour, en fonction de $x$.",
+      "type": "texte",
+      "answer": {
+        "value": "30x",
+        "unit": "m",
+        "forme": "reduite"
+      },
+      "points": 2,
+      "solution_steps": [
+        "La plinthe fait le tour du séjour, un rectangle de $8x$ sur $7x$ : $8x + 7x + 8x + 7x$.",
+        "On regroupe les termes en $x$ : $(8 + 7 + 8 + 7)x = 30x$.",
+        "La plinthe mesure **30x** mètres.",
+        "Attention : $15x$ n'est que la moitié du tour, et $56x^{2}$ est l'aire du séjour, pas son tour."
+      ],
+      "hint": "Le tour d'un rectangle passe par ses quatre côtés."
+    },
+    {
+      "key": "q3",
+      "skill_id": "P024",
+      "statement": "Le terrain est enfin mesuré : $x$ vaut 0,6 m. Quelle est alors l'aire du sol du séjour, en m² ?",
+      "type": "numerique",
+      "answer": {
+        "value": 20.16,
+        "unit": "m²"
+      },
+      "points": 2,
+      "solution_steps": [
+        "Avec $x = 0{,}6$, la longueur du séjour vaut $8 \\times 0{,}6 = 4{,}8$ m et sa largeur $7 \\times 0{,}6 = 4{,}2$ m.",
+        "Aire d'un rectangle : longueur × largeur, soit $4{,}8 \\times 4{,}2 = 20{,}16$.",
+        "L'aire du sol du séjour est **20,16 m²**.",
+        "Attention : $4{,}8 + 4{,}2 + 4{,}8 + 4{,}2 = 18$ est le tour du séjour en mètres, pas son aire."
+      ],
+      "hint": "Calcule d'abord la longueur et la largeur du séjour en mètres."
+    },
+    {
+      "key": "q4",
+      "skill_id": "F006",
+      "statement": "Écris, sous forme réduite, l'aire totale du sol des trois pièces, en fonction de $x$.",
+      "type": "texte",
+      "answer": {
+        "value": "134x²",
+        "unit": "m²",
+        "forme": "reduite"
+      },
+      "points": 4,
+      "solution_steps": [
+        "Séjour : $8x \\times 7x = 8 \\times 7 \\times x \\times x = 56x^{2}$.",
+        "Chambre : $7x \\times 6x = 42x^{2}$.",
+        "Salle d'eau : $6x \\times 6x = 36x^{2}$.",
+        "Les pièces ne se chevauchent pas, on additionne : $56x^{2} + 42x^{2} + 36x^{2} = 134x^{2}$.",
+        "L'aire totale du sol est **134x²** m².",
+        "Attention : $x \\times x$ s'écrit $x^{2}$, pas $2x$, et on multiplie les nombres $8 \\times 7 = 56$, on ne les additionne pas."
+      ],
+      "hint": "Dans un produit, multiplie les nombres entre eux et les lettres entre elles."
+    },
+    {
+      "key": "q5",
+      "skill_id": "F006",
+      "statement": "Noé écrit l'aire de la chambre ainsi : $7x \\times 6x = 13x^{2}$. Quelle phrase décrit son erreur ?",
+      "type": "qcm",
+      "choices": [
+        {
+          "key": "a",
+          "text": "Il aurait dû écrire $13x$, car $x \\times x = x$.",
+          "misconception": "$x \\times x$ s'écrit $x^{2}$ : le $x^{2}$ de Noé est juste, c'est le nombre 13 qui est faux."
+        },
+        {
+          "key": "b",
+          "text": "Il a additionné 7 et 6 au lieu de les multiplier : l'aire est $42x^{2}$.",
+          "misconception": null
+        },
+        {
+          "key": "c",
+          "text": "Il aurait dû écrire $42x$.",
+          "misconception": "$7 \\times 6 = 42$ est juste, mais $x \\times x$ s'écrit $x^{2}$, pas $x$ : l'aire est $42x^{2}$."
+        },
+        {
+          "key": "d",
+          "text": "Il n'y a pas d'erreur : $7x \\times 6x = 13x^{2}$.",
+          "misconception": "Dans un produit, on multiplie les nombres entre eux : $7 \\times 6 = 42$, pas 13."
+        }
+      ],
+      "answer": {
+        "value": "b"
+      },
+      "points": 2,
+      "solution_steps": [
+        "On range les facteurs : $7x \\times 6x = 7 \\times 6 \\times x \\times x$.",
+        "$7 \\times 6 = 42$ et $x \\times x = x^{2}$, donc $7x \\times 6x = 42x^{2}$.",
+        "Noé a **additionné** 7 et 6 au lieu de les multiplier."
+      ],
+      "hint": "Range les nombres d'un côté et les lettres de l'autre."
+    }
+  ],
+  "review_status": "relu_agent",
+  "programme_ref": "Cycle 4, classe de 4e, Nombres et calculs, Calcul littéral et algébrique, Automatismes : « Connaitre et utiliser : 1 × 𝑥 = 𝑥 ; 𝑥 + 𝑥 = 2𝑥 ; 𝑥 × 𝑥 = 𝑥² ; 3𝑥 + 2𝑥 = 5𝑥 ; 3𝑥 × 2𝑥 = 6𝑥². »"
+}

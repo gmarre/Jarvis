@@ -1,0 +1,106 @@
+{
+  "id": "SX-F064-01",
+  "skill_id": "F064",
+  "skill_ids": [
+    "F064",
+    "F061",
+    "B051",
+    "F014"
+  ],
+  "school_level": "4e",
+  "title": "Le tour de magie de Nina",
+  "contexte": "Pour la fête du collège, Nina, élève de 4e, prépare un tour de « magie » avec un programme de calcul. Elle demande à un spectateur de suivre ce programme sans lui dire le nombre choisi.\n\n**Programme de Nina**\nChoisir un nombre.\nLui soustraire 8.\nMultiplier le résultat par 5.\nAjouter 9 au résultat.\n\nLe spectateur annonce seulement le résultat final, et Nina retrouve aussitôt le nombre choisi. Le spectateur peut choisir n'importe quel nombre relatif, entier ou décimal.\n\nLe tour dure environ quatre minutes, et Nina le présente plusieurs fois dans l'après-midi. Pour s'entraîner, son ami Tom a choisi le nombre 13, son âge.",
+  "image": null,
+  "duree_estimee_min": 12,
+  "questions": [
+    {
+      "key": "q1",
+      "skill_id": "F061",
+      "statement": "Si l'on écrit le programme de Nina en une seule expression, cette expression est-elle une somme, une différence ou un produit ?",
+      "type": "qcm",
+      "choices": [
+        {
+          "key": "a",
+          "text": "un produit, car on multiplie par 5",
+          "misconception": "La multiplication par 5 n'est pas la dernière opération : on ajoute 9 ensuite."
+        },
+        {
+          "key": "b",
+          "text": "une somme, car la dernière opération est « ajouter 9 »",
+          "misconception": null
+        },
+        {
+          "key": "c",
+          "text": "une différence, car la première opération est une soustraction",
+          "misconception": "On ne regarde pas la première opération, mais la dernière, qui est une addition."
+        }
+      ],
+      "answer": {
+        "value": "b"
+      },
+      "points": 1,
+      "solution_steps": [
+        "La nature d'une expression est donnée par la dernière opération effectuée.",
+        "La dernière étape du programme est « Ajouter 9 au résultat » : l'expression est une **somme**."
+      ],
+      "hint": "Regarde la dernière étape du programme."
+    },
+    {
+      "key": "q2",
+      "skill_id": "B051",
+      "statement": "Quel résultat obtient-on en choisissant −10 ?",
+      "type": "numerique",
+      "answer": {
+        "value": -81
+      },
+      "points": 2,
+      "solution_steps": [
+        "On soustrait 8 : $-10 - 8 = -18$.",
+        "On multiplie par 5 : $(-18) \\times 5 = -90$.",
+        "On ajoute 9 : $-90 + 9 = -81$.",
+        "On obtient **−81**.",
+        "Attention : $-10 - 8 \\times 5 + 9 = -41$ oublie que l'on multiplie tout le résultat par 5."
+      ],
+      "hint": "Suis les étapes dans l'ordre, une par une."
+    },
+    {
+      "key": "q3",
+      "skill_id": "F014",
+      "statement": "Écris, sous forme réduite, le résultat obtenu en choisissant $x$.",
+      "type": "texte",
+      "answer": {
+        "value": "5x − 31",
+        "forme": "reduite"
+      },
+      "points": 3,
+      "solution_steps": [
+        "On soustrait 8 : $x - 8$. On multiplie le résultat par 5 : $5(x - 8)$. On ajoute 9 : $5(x - 8) + 9$.",
+        "On développe : $5(x - 8) = 5x - 40$.",
+        "On réduit : $5x - 40 + 9 = 5x - 31$.",
+        "Le résultat est **5x − 31**.",
+        "Attention : $x - 8 \\times 5 + 9$ oublie les parenthèses, et $5x - 49$ se trompe de signe en ajoutant 9."
+      ],
+      "hint": "Le résultat entier de l'étape 2 est multiplié par 5 : pense aux parenthèses."
+    },
+    {
+      "key": "q4",
+      "skill_id": "F064",
+      "statement": "Une spectatrice annonce −46. Quel nombre a-t-elle choisi ?",
+      "type": "numerique",
+      "answer": {
+        "value": -3
+      },
+      "points": 4,
+      "solution_steps": [
+        "On remonte le programme avec les opérations inverses, dans l'ordre inverse.",
+        "La dernière étape ajoutait 9 : on soustrait 9. $-46 - 9 = -55$.",
+        "L'étape d'avant multipliait par 5 : on divise par 5. $(-55) \\div 5 = -11$.",
+        "La première étape soustrayait 8 : on ajoute 8. $-11 + 8 = -3$.",
+        "Vérification : $-3 - 8 = -11$, puis $(-11) \\times 5 = -55$, puis $-55 + 9 = -46$. Elle a choisi **−3**."
+      ],
+      "hint": "Pars du résultat et défais les étapes, de la dernière à la première."
+    }
+  ],
+  "review_status": "relu_agent",
+  "programme_ref": "Cycle 4, classe de 4e, Proportionnalité, fonctions, Fonctions, Objectifs d'apprentissage : « Savoir retrouver le nombre de départ après avoir remonté un programme de calcul simple. »"
+}
