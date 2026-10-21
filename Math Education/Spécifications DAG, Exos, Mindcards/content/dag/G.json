@@ -1240,5 +1240,1051 @@
         "quote": "Différents supports peuvent être utilisés : papier quadrillé, papier pointé, auxquels on ajoute le papier uni."
       }
     ]
+  },
+  {
+    "id": "G038",
+    "domain": "G",
+    "domain_name": "Espace et géométrie",
+    "label": "Symétrie centrale (demi-tour) : symétrique d'un point, d'une figure",
+    "description": "Savoir que le symétrique du point A par rapport au point O (par le demi-tour de centre O) est le point A' tel que O est le milieu du segment [AA'] : A, O et A' sont alignés et OA' = OA ; le symétrique de O est O lui-même. Le demi-tour fait tourner la figure d'un angle plat autour de O, sans la retourner. Sur quadrillage : si A est à 3 carreaux à droite et 1 carreau au-dessus de O, son symétrique est à 3 carreaux à gauche et 1 carreau au-dessous ; si OA = 4,5 cm, alors AA' = 9 cm. Désigner, parmi des points ou des figures lettrés, le symétrique d'un point, d'un segment, d'un triangle. L'erreur type est de confondre avec la symétrie axiale (figure retournée, image « en miroir » par rapport à une droite passant par O) ou de placer A' du même côté que A. Construire au compas n'est pas évalué : le tracé se réduit à désigner. Réponse : QCM (lettre du point ou numéro de la figure), un nombre avec unité (longueur AA'). Figure nécessaire : geometrie ou quadrillage (existants), centre marqué, points candidats lettrés ; images calculées et contrôlées par le générateur (à créer, section Figures).",
+    "prerequisites": [
+      "G030",
+      "G026"
+    ],
+    "difficulty": 5,
+    "school_level": "5e",
+    "validation_test": "Sur le quadrillage, lequel des points E, F, G ou H est le symétrique du point B par rapport au point O ? Le point K a pour symétrique K' par rapport à O, et OK = 3,5 cm : combien mesure le segment [KK'] ?",
+    "mastery_threshold": {
+      "required": 3,
+      "out_of": 4
+    },
+    "exercise_ids": [],
+    "mindmap_id": null,
+    "programme_ref": [
+      {
+        "source": "Cycle 4, classe de 5e, Espace et géométrie, Transformations, Objectifs d'apprentissage",
+        "quote": "Définir le demi-tour, ou symétrie centrale."
+      }
+    ]
+  },
+  {
+    "id": "G040",
+    "domain": "G",
+    "domain_name": "Espace et géométrie",
+    "label": "Théorème de Pythagore : calculer une longueur",
+    "description": "Dans un triangle rectangle, reconnaître l'hypoténuse (le côté opposé à l'angle droit, le plus long), écrire l'égalité de Pythagore (ABC rectangle en A : BC² = AB² + AC²) et calculer une longueur : l'hypoténuse (AB = 6 cm, AC = 8 cm, BC² = 36 + 64 = 100, BC = 10 cm ; côtés de 2,5 cm et 6 cm, hypoténuse de 6,5 cm) ou un côté de l'angle droit (BC = 13 cm, AB = 5 cm, AC² = 169 − 25 = 144, AC = 12 cm). Quand le carré n'est pas un carré parfait, donner la valeur exacte √34 et une valeur approchée à la calculatrice (5,8 cm au dixième), contrôlée par un encadrement (5 < √34 < 6). L'erreur type est d'additionner les longueurs sans les élever au carré, d'additionner les carrés quand on cherche un côté de l'angle droit, ou de prendre pour hypoténuse un autre côté. Réponse : un nombre avec unité ; valeur approchée avec answer.tolerance égale à la moitié du rang demandé (0,05 au dixième) ; valeur exacte √34 en texte avec answer.forme « solutions ». Figure nécessaire : geometrie (existant), triangle rectangle codé, longueurs écrites, côté cherché marqué « ? », pas en vraie grandeur.",
+    "prerequisites": [
+      "A035",
+      "G017",
+      "D009",
+      "B052"
+    ],
+    "difficulty": 6,
+    "school_level": "4e",
+    "validation_test": "Le triangle DEF est rectangle en D, avec DE = 9 cm et DF = 12 cm : calcule EF. Le triangle RST est rectangle en S, avec RT = 17 cm et RS = 8 cm : calcule ST. Un triangle rectangle a des côtés de l'angle droit de 4 cm et de 7 cm : donne la longueur de son hypoténuse arrondie au dixième.",
+    "mastery_threshold": {
+      "required": 3,
+      "out_of": 4
+    },
+    "exercise_ids": [],
+    "mindmap_id": null,
+    "programme_ref": [
+      {
+        "source": "Cycle 4, classe de 4e, Espace et géométrie, Triangles, Objectifs d'apprentissage",
+        "quote": "Connaitre le théorème de Pythagore, sa réciproque, sa contraposée."
+      },
+      {
+        "source": "Cycle 4, Nombres et calculs, présentation commune aux trois classes",
+        "quote": "La racine carrée est introduite, en lien avec des situations géométriques (longueur du côté d'un carré d'aire donnée, théorème de Pythagore)."
+      }
+    ]
+  },
+  {
+    "id": "G041",
+    "domain": "G",
+    "domain_name": "Espace et géométrie",
+    "label": "Réciproque et contraposée de Pythagore : le triangle est-il rectangle ?",
+    "description": "Décider si un triangle dont on connaît les trois longueurs est rectangle : calculer séparément le carré du plus grand côté et la somme des carrés des deux autres ; s'ils sont égaux, le triangle est rectangle, et l'angle droit est le sommet opposé au plus grand côté (réciproque) ; sinon, il ne l'est pas (contraposée). Exemples : 9 cm, 12 cm, 15 cm, 15² = 225 et 9² + 12² = 81 + 144 = 225, rectangle ; 6 cm, 7 cm, 9 cm, 9² = 81 et 6² + 7² = 85, non rectangle. Nommer le théorème utilisé (réciproque ou contraposée). L'erreur type est de ne pas prendre le plus grand côté, d'écrire l'égalité avant de l'avoir vérifiée, ou de conclure avec des longueurs arrondies. Réponse : vrai/faux ou QCM (rectangle ou non, en quel sommet, théorème utilisé) ; un nombre pour chaque carré calculé. Figure utile : geometrie (existant), triangle à main levée avec longueurs écrites, sans codage d'angle droit.",
+    "prerequisites": [
+      "G040",
+      "G060"
+    ],
+    "difficulty": 6,
+    "school_level": "4e",
+    "validation_test": "Le triangle KLM a pour côtés KL = 20 cm, LM = 21 cm et KM = 29 cm. Est-il rectangle ? Si oui, en quel sommet ? Le triangle UVW a pour côtés 5 cm, 6 cm et 8 cm : est-il rectangle ? Quel théorème permet de conclure ?",
+    "mastery_threshold": {
+      "required": 3,
+      "out_of": 4
+    },
+    "exercise_ids": [],
+    "mindmap_id": null,
+    "programme_ref": [
+      {
+        "source": "Cycle 4, classe de 4e, Espace et géométrie, Triangles, Objectifs d'apprentissage",
+        "quote": "Connaitre le théorème de Pythagore, sa réciproque, sa contraposée."
+      },
+      {
+        "source": "Cycle 4, classe de 4e, Espace et géométrie, Triangles, Objectifs d'apprentissage",
+        "quote": "Mener un travail de logique sur la réciproque et la contraposée."
+      }
+    ]
+  },
+  {
+    "id": "G042",
+    "domain": "G",
+    "domain_name": "Espace et géométrie",
+    "label": "Théorème de Thalès : calculer une longueur (triangles emboîtés)",
+    "description": "Dans un triangle ABC, avec M sur [AB], N sur [AC] et (MN) parallèle à (BC), savoir que AM/AB = AN/AC = MN/BC (les longueurs du petit triangle sont proportionnelles à celles du grand) et s'en servir pour calculer une longueur par l'égalité de deux quotients : AM = 3 cm, AB = 5 cm, AC = 7,5 cm donnent AN = 3 × 7,5 ÷ 5 = 4,5 cm ; MN = 2,4 cm donne BC = 2,4 × 5 ÷ 3 = 4 cm. Vérifier d'abord les hypothèses (alignements, parallélisme) ; la droite des milieux en est le cas particulier où le quotient vaut 1/2. L'erreur type est d'apparier des côtés non homologues (AM/MB au lieu de AM/AB), ou d'écrire le petit triangle au dénominateur d'un quotient et au numérateur de l'autre. Réponse : un nombre avec unité (answer.tolerance si un arrondi est demandé) ; QCM pour l'égalité des quotients. Figure nécessaire : geometrie (existant), triangle et parallèle à un côté, longueurs écrites, longueur cherchée marquée « ? », pas en vraie grandeur.",
+    "prerequisites": [
+      "G059",
+      "F023",
+      "E034"
+    ],
+    "difficulty": 6,
+    "school_level": "3e",
+    "validation_test": "Dans le triangle ABC, le point M est sur [AB], le point N sur [AC], et (MN) est parallèle à (BC). AM = 4 cm, AB = 10 cm, AC = 7 cm et BC = 8,5 cm. Calcule AN, puis MN.",
+    "mastery_threshold": {
+      "required": 3,
+      "out_of": 4
+    },
+    "exercise_ids": [],
+    "mindmap_id": null,
+    "programme_ref": [
+      {
+        "source": "Cycle 4, classe de 3e, Espace et géométrie, Triangles, Objectifs d'apprentissage",
+        "quote": "Connaitre et appliquer le théorème de Thalès, sa réciproque, sa contraposée (configurations des triangles emboités et configuration dite du papillon)."
+      },
+      {
+        "source": "Cycle 4, classe de 3e, Espace et géométrie, Triangles, Automatismes",
+        "quote": "Utiliser la droite des milieux pour prouver que des droites sont parallèles, pour calculer une longueur, pour prouver qu'un point est le milieu d'un côté."
+      }
+    ]
+  },
+  {
+    "id": "G043",
+    "domain": "G",
+    "domain_name": "Espace et géométrie",
+    "label": "Réciproque et contraposée de Thalès : les droites sont-elles parallèles ?",
+    "description": "Décider si deux droites sont parallèles dans une configuration de Thalès (emboîtée ou papillon) : vérifier que les points sont alignés dans le même ordre, calculer séparément les deux quotients AM/AB et AN/AC ; s'ils sont égaux, les droites (MN) et (BC) sont parallèles (réciproque) ; sinon, elles ne le sont pas (contraposée). Comparer des quotients en valeur exacte (simplification, même dénominateur) plutôt qu'en valeurs arrondies : 3/9 = 1/3 et 4/12 = 1/3, parallèles ; 5/8 = 0,625 et 6/10 = 0,6, non parallèles. Nommer le théorème utilisé. L'erreur type est de conclure sur des quotients arrondis égaux, d'oublier l'ordre des points, ou de calculer un troisième quotient avec MN et BC, qui ne sert pas à prouver. Réponse : vrai/faux ou QCM (parallèles ou non, théorème) ; nombre ou fraction pour chaque quotient. Figure nécessaire : geometrie (existant), deux droites sécantes et deux droites candidates au parallélisme, longueurs écrites ; droites presque parallèles autorisées quand les quotients disent le contraire.",
+    "prerequisites": [
+      "G062",
+      "G060",
+      "C010",
+      "C007"
+    ],
+    "difficulty": 7,
+    "school_level": "3e",
+    "validation_test": "Les points R, S, T sont alignés dans cet ordre, ainsi que les points R, U, V. RS = 2,4 cm, RT = 6 cm, RU = 3 cm et RV = 7,5 cm. Les droites (SU) et (TV) sont-elles parallèles ? Et si RV mesurait 7 cm ?",
+    "mastery_threshold": {
+      "required": 3,
+      "out_of": 4
+    },
+    "exercise_ids": [],
+    "mindmap_id": null,
+    "programme_ref": [
+      {
+        "source": "Cycle 4, classe de 3e, Espace et géométrie, Triangles, Objectifs d'apprentissage",
+        "quote": "Connaitre et appliquer le théorème de Thalès, sa réciproque, sa contraposée (configurations des triangles emboités et configuration dite du papillon)."
+      }
+    ]
+  },
+  {
+    "id": "G045",
+    "domain": "G",
+    "domain_name": "Espace et géométrie",
+    "label": "Propriétés du demi-tour ; centre de symétrie d'une figure",
+    "description": "Connaître les propriétés du demi-tour : il conserve les longueurs, les angles, les aires et l'alignement ; l'image d'une droite est une droite qui lui est parallèle ; l'image d'un cercle est un cercle de même rayon dont le centre est l'image du centre. S'en servir sans mesurer : [AB] de 6 cm a pour image [A'B'] de 6 cm et (A'B') est parallèle à (AB) ; un angle de 40° a pour image un angle de 40°. Reconnaître une figure qui a un centre de symétrie (parallélogramme, rectangle, losange, carré, cercle, segment) et une figure qui n'en a pas (triangle, trapèze non parallélogramme). L'erreur type est de croire que l'image d'une droite lui est perpendiculaire, ou qu'un triangle équilatéral a un centre de symétrie parce qu'il a des axes. Réponse : nombre avec unité, vrai/faux, QCM. Figure utile : geometrie (existant), figure et son image, centre marqué.",
+    "prerequisites": [
+      "G038"
+    ],
+    "difficulty": 5,
+    "school_level": "5e",
+    "validation_test": "Le triangle A'B'C' est l'image du triangle ABC par le demi-tour de centre O ; AB = 5 cm et l'angle ABC mesure 72°. Que valent A'B' et l'angle A'B'C' ? Les droites (AB) et (A'B') sont-elles parallèles ? Laquelle de ces figures a un centre de symétrie : triangle équilatéral ; rectangle ; trapèze rectangle ?",
+    "mastery_threshold": {
+      "required": 3,
+      "out_of": 4
+    },
+    "exercise_ids": [],
+    "mindmap_id": null,
+    "programme_ref": [
+      {
+        "source": "Cycle 4, classe de 5e, Espace et géométrie, Transformations, Objectifs d'apprentissage",
+        "quote": "Connaitre les propriétés du demi-tour."
+      }
+    ]
+  },
+  {
+    "id": "G046",
+    "domain": "G",
+    "domain_name": "Espace et géométrie",
+    "label": "Angles alternes-internes et correspondants : les reconnaître",
+    "description": "Sur deux droites coupées par une sécante, nommer et reconnaître les paires d'angles alternes-internes (entre les deux droites, de part et d'autre de la sécante) et les paires d'angles correspondants (même position par rapport à chaque droite et à la sécante), en les distinguant des angles opposés par le sommet et des angles adjacents supplémentaires déjà connus ; les repérer dans une figure complexe (parallélogramme, triangle et droite parallèle à un côté), quand la sécante n'est pas tracée en entier ou que les droites ne sont pas parallèles. L'erreur type est d'appeler alternes-internes deux angles du même côté de la sécante, ou de croire que ces mots supposent des droites parallèles. Réponse : QCM (numéro de l'angle, nom de la paire), vrai/faux. Figure nécessaire : geometrie (existant), deux droites et une sécante, angles numérotés de 1 à 8 par des arcs et le champ nom.",
+    "prerequisites": [
+      "G026",
+      "G016"
+    ],
+    "difficulty": 5,
+    "school_level": "5e",
+    "validation_test": "Sur la figure, les droites (d) et (d') sont coupées par la sécante (s) et les angles sont numérotés de 1 à 8. Quel angle est alterne-interne avec l'angle 3 ? Quel angle est correspondant à l'angle 1 ? Les angles 2 et 6 sont-ils alternes-internes, correspondants ou opposés par le sommet ?",
+    "mastery_threshold": {
+      "required": 3,
+      "out_of": 4
+    },
+    "exercise_ids": [],
+    "mindmap_id": null,
+    "programme_ref": [
+      {
+        "source": "Cycle 4, classe de 5e, Espace et géométrie, Angles, Objectifs d'apprentissage",
+        "quote": "Caractériser le parallélisme par les angles : angles alternes internes, angles correspondants."
+      },
+      {
+        "source": "Cycle 4, classe de 5e, Espace et géométrie, Angles, Automatismes",
+        "quote": "Reconnaitre et citer sur une configuration géométrique des angles : angle plein, plat, nul, droit ; angles opposés par le sommet, adjacents, supplémentaires, aigus, obtus."
+      }
+    ]
+  },
+  {
+    "id": "G047",
+    "domain": "G",
+    "domain_name": "Espace et géométrie",
+    "label": "Droites parallèles : calculer un angle par les angles alternes-internes",
+    "description": "Savoir que si deux droites parallèles sont coupées par une sécante, alors les angles alternes-internes sont égaux et les angles correspondants sont égaux, et s'en servir avec les angles opposés par le sommet et supplémentaires pour calculer des angles : (d) et (d') parallèles, l'angle 1 mesure 63°, son correspondant mesure 63° et l'angle adjacent supplémentaire 180° − 63° = 117° ; dans un trapèze ABCD de bases (AB) et (CD), si l'angle DAB mesure 70°, l'angle ADC mesure 110°. L'erreur type est d'appliquer l'égalité sans que les droites soient parallèles, ou de confondre égal et supplémentaire. Réponse : un nombre avec l'unité degré (« 117° ») ; QCM pour la propriété utilisée. Figure nécessaire : geometrie (existant), droites parallèles annoncées dans l'énoncé, angles nommés ; un codage des parallèles par des flèches serait confortable.",
+    "prerequisites": [
+      "G046"
+    ],
+    "difficulty": 5,
+    "school_level": "5e",
+    "validation_test": "Les droites (d) et (d') sont parallèles et coupées par la sécante (s). L'angle 1 mesure 58°. Combien mesure l'angle 5, qui lui est correspondant ? Et l'angle 6, adjacent à l'angle 5 et supplémentaire ? Quelle propriété as-tu utilisée pour l'angle 5 ?",
+    "mastery_threshold": {
+      "required": 3,
+      "out_of": 4
+    },
+    "exercise_ids": [],
+    "mindmap_id": null,
+    "programme_ref": [
+      {
+        "source": "Cycle 4, classe de 5e, Espace et géométrie, Angles, Objectifs d'apprentissage",
+        "quote": "Caractériser le parallélisme par les angles : angles alternes internes, angles correspondants."
+      },
+      {
+        "source": "Cycle 4, classe de 5e, Espace et géométrie, Angles, Automatismes",
+        "quote": "Savoir qu'un angle droit mesure 90°, qu'un angle plat mesure 180°."
+      }
+    ]
+  },
+  {
+    "id": "G048",
+    "domain": "G",
+    "domain_name": "Espace et géométrie",
+    "label": "Prouver que deux droites sont parallèles, ou ne le sont pas, par les angles",
+    "description": "Savoir que si deux droites coupées par une sécante forment des angles alternes-internes égaux (ou des angles correspondants égaux), alors elles sont parallèles ; et que si ces angles ne sont pas égaux, les droites ne sont pas parallèles. Conclure à partir de mesures données, jamais d'une mesure lue sur la figure : 74° et 74° alternes-internes, les droites sont parallèles ; 81° et 79° correspondants, elles ne le sont pas, même si la figure semble montrer des parallèles. Distinguer cette propriété de celle qui part du parallélisme (G047). L'erreur type est de conclure « parallèles » parce que le dessin le montre, ou de se servir d'angles opposés par le sommet. Réponse : vrai/faux ou QCM (parallèles ou non, propriété utilisée). Figure nécessaire : geometrie (existant), droites presque parallèles autorisées quand les mesures données disent le contraire, mesures écrites.",
+    "prerequisites": [
+      "G047"
+    ],
+    "difficulty": 6,
+    "school_level": "5e",
+    "validation_test": "Deux droites (d) et (d') sont coupées par une sécante. Deux angles alternes-internes mesurent 74° et 74° : les droites sont-elles parallèles ? Deux angles correspondants mesurent 81° et 79° : les droites sont-elles parallèles ? Quelle propriété permet de répondre à la première question ?",
+    "mastery_threshold": {
+      "required": 3,
+      "out_of": 4
+    },
+    "exercise_ids": [],
+    "mindmap_id": null,
+    "programme_ref": [
+      {
+        "source": "Cycle 4, classe de 5e, Espace et géométrie, Angles, Objectifs d'apprentissage",
+        "quote": "Caractériser le parallélisme par les angles : angles alternes internes, angles correspondants."
+      },
+      {
+        "source": "Cycle 4, Espace et géométrie, présentation commune aux trois classes",
+        "quote": "la mesure ne constitue plus un élément de preuve."
+      }
+    ]
+  },
+  {
+    "id": "G049",
+    "domain": "G",
+    "domain_name": "Espace et géométrie",
+    "label": "Le parallélogramme : définition et propriétés",
+    "description": "Savoir qu'un parallélogramme est un quadrilatère dont les côtés opposés sont parallèles deux à deux, et connaître ses propriétés : ses côtés opposés ont la même longueur, ses diagonales se coupent en leur milieu, qui est son centre de symétrie, ses angles opposés sont égaux et deux angles consécutifs sont supplémentaires. Les utiliser pour calculer : ABCD parallélogramme, AB = 7 cm et BC = 4 cm donnent CD = 7 cm, AD = 4 cm et un périmètre de 22 cm ; AC = 10 cm donne AO = 5 cm ; un angle de 65° en A donne 65° en C et 115° en B. L'erreur type est de croire que les diagonales ont la même longueur (c'est le rectangle) ou de lire le quadrilatère dans le désordre (ABDC). Construire un parallélogramme n'est pas évalué (choisir le bon programme de construction l'approche). Réponse : un nombre avec unité, QCM. Figure nécessaire : geometrie (existant), parallélogramme lettré, diagonales, codages des longueurs et des angles.",
+    "prerequisites": [
+      "G045",
+      "G018"
+    ],
+    "difficulty": 5,
+    "school_level": "5e",
+    "validation_test": "EFGH est un parallélogramme de centre O. EF = 6,5 cm, FG = 3 cm, EG = 9 cm et l'angle HEF mesure 70°. Combien mesurent GH, OE et l'angle FGH ? Et l'angle EFG ?",
+    "mastery_threshold": {
+      "required": 3,
+      "out_of": 4
+    },
+    "exercise_ids": [],
+    "mindmap_id": null,
+    "programme_ref": [
+      {
+        "source": "Cycle 4, classe de 5e, Espace et géométrie, Parallélogrammes, Objectifs d'apprentissage",
+        "quote": "Définir le parallélogramme."
+      },
+      {
+        "source": "Cycle 4, classe de 5e, Espace et géométrie, Parallélogrammes, Objectifs d'apprentissage",
+        "quote": "Connaitre les propriétés caractéristiques des côtés opposés et des diagonales."
+      },
+      {
+        "source": "Cycle 4, classe de 5e, Espace et géométrie, Parallélogrammes, Objectifs d'apprentissage",
+        "quote": "Construire des parallélogrammes."
+      }
+    ]
+  },
+  {
+    "id": "G050",
+    "domain": "G",
+    "domain_name": "Espace et géométrie",
+    "label": "Démonstration courte : données, propriété, conclusion",
+    "description": "Mener un raisonnement déductif en une ou deux étapes : repérer dans l'énoncé les données (codages compris), choisir la propriété qui permet de conclure (définition ou propriété des parallélogrammes, des angles et des parallèles, du demi-tour), écrire la conclusion ; « On sait que les diagonales de ABCD ont le même milieu ; or un quadrilatère dont les diagonales ont le même milieu est un parallélogramme ; donc ABCD est un parallélogramme ». Savoir qu'une mesure sur la figure ou des exemples ne prouvent pas, et distinguer une propriété de la même propriété prise dans l'autre sens (le mot « réciproque » viendra en 4e). Évaluation partielle : une preuve rédigée ne se fait pas à l'écran ; elle se complète (choisir la propriété manquante), s'ordonne (remettre trois étapes dans l'ordre), se corrige (repérer l'étape fausse) ou se juge (cette preuve est-elle valable ?). L'erreur type est de citer la conclusion comme donnée, ou une propriété dont la conclusion n'est pas celle cherchée. Réponse : QCM, vrai/faux. Figure utile : geometrie (existant), figure codée.",
+    "prerequisites": [
+      "G047",
+      "G049"
+    ],
+    "difficulty": 6,
+    "school_level": "5e",
+    "validation_test": "Complète la preuve : « On sait que (d) et (d') sont parallèles et que l'angle 1 mesure 40°. Or … Donc l'angle 2, alterne-interne avec l'angle 1, mesure 40°. » Quelle propriété faut-il écrire ? Mesurer l'angle 2 au rapporteur suffit-il à prouver qu'il mesure 40° ?",
+    "mastery_threshold": {
+      "required": 3,
+      "out_of": 4
+    },
+    "exercise_ids": [],
+    "mindmap_id": null,
+    "programme_ref": [
+      {
+        "source": "Cycle 4, classe de 5e, Espace et géométrie, Parallélogrammes, Automatismes",
+        "quote": "Reconnaitre en justifiant un quadrilatère, un parallélogramme, un rectangle, un losange, un carré, un trapèze, un pentagone, un hexagone dans des figures complexes."
+      },
+      {
+        "source": "Cycle 4, Espace et géométrie, présentation commune aux trois classes",
+        "quote": "Pourront ainsi être présentés des exemples génériques, des ébauches de preuves, des diagrammes ou schémas de raisonnement, des manipulations donnant l'idée de la preuve, des preuves à compléter ou à mettre dans l'ordre."
+      },
+      {
+        "source": "Cycle 4, Espace et géométrie, présentation commune aux trois classes",
+        "quote": "la mesure ne constitue plus un élément de preuve."
+      }
+    ]
+  },
+  {
+    "id": "G051",
+    "domain": "G",
+    "domain_name": "Espace et géométrie",
+    "label": "Somme des angles d'un triangle : la démontrer, l'utiliser",
+    "description": "Démontrer que la somme des angles d'un triangle vaut 180°, avec la parallèle à un côté passant par le sommet opposé et deux paires d'angles alternes-internes ; s'en servir dans les triangles particuliers reconnus sur un schéma codé : triangle isocèle d'angle principal 40°, angles à la base (180° − 40°) ÷ 2 = 70° ; angle à la base 35°, angle principal 180° − 2 × 35° = 110° ; triangle équilatéral, 60° ; triangle rectangle, angles aigus de somme 90° (90° − 27° = 63°) ; triangle rectangle isocèle, 45°. Évaluation partielle : la démonstration ne se fait pas à l'écran ; elle se remet dans l'ordre, se complète par la propriété ou l'angle manquant ; les calculs sont directs. L'erreur type est de diviser 180° par 2 sans retirer l'angle principal, ou de chercher à mesurer. Réponse : un nombre avec l'unité degré ; QCM pour la preuve. Figure utile : geometrie (existant), triangle codé (longueurs égales, angle droit), parallèle à un côté en pointillés pour la preuve.",
+    "prerequisites": [
+      "G027",
+      "G050"
+    ],
+    "difficulty": 6,
+    "school_level": "5e",
+    "validation_test": "Un triangle isocèle a un angle principal de 50° : combien mesure chacun de ses angles à la base ? Dans un triangle rectangle, un angle aigu mesure 27° : combien mesure l'autre ? Remets dans l'ordre les trois étapes de la preuve que la somme des angles d'un triangle vaut 180°.",
+    "mastery_threshold": {
+      "required": 3,
+      "out_of": 4
+    },
+    "exercise_ids": [],
+    "mindmap_id": null,
+    "programme_ref": [
+      {
+        "source": "Cycle 4, classe de 5e, Espace et géométrie, Triangles, Objectifs d'apprentissage",
+        "quote": "Connaitre la somme des angles d'un triangle et savoir la démontrer."
+      },
+      {
+        "source": "Cycle 4, classe de 5e, Espace et géométrie, Triangles, Automatismes",
+        "quote": "Connaitre la somme des angles d'un triangle, calculer le 3e angle d'un triangle connaissant les mesures des deux autres."
+      },
+      {
+        "source": "Cycle 4, classe de 5e, Espace et géométrie, Triangles, Automatismes",
+        "quote": "Reconnaitre un triangle isocèle, équilatéral ou rectangle à partir d'un schéma codé."
+      }
+    ]
+  },
+  {
+    "id": "G052",
+    "domain": "G",
+    "domain_name": "Espace et géométrie",
+    "label": "Construire un triangle à partir de données partielles",
+    "description": "Savoir quelles données déterminent un triangle (trois longueurs ; deux longueurs et l'angle compris entre ces côtés ; une longueur et les deux angles qui lui sont adjacents), dans quel ordre on le construit à la règle, au compas et au rapporteur, et reconnaître qu'une construction est impossible quand deux angles donnés ont une somme d'au moins 180°. Calculer d'abord ce qui manque : AB = 6 cm, angles en A de 40° et en B de 75°, donc l'angle en C mesure 65°. Évaluation partielle : la construction ne se fait pas à l'écran ; elle s'approche en choisissant le bon programme de construction, en remettant ses étapes dans l'ordre, en désignant parmi des figures lettrées celle qui respecte les données, ou en décidant si elle est possible. L'erreur type est de placer l'angle donné au mauvais sommet, ou l'angle qui n'est pas compris entre les deux côtés donnés. Réponse : QCM, vrai/faux, un nombre avec l'unité degré. Figure nécessaire : geometrie (existant), triangles candidats numérotés, longueurs et angles écrits ; un triangle candidat doit différer nettement du bon.",
+    "prerequisites": [
+      "G051",
+      "G021"
+    ],
+    "difficulty": 6,
+    "school_level": "5e",
+    "validation_test": "On veut construire un triangle ABC avec AB = 6 cm, un angle BAC de 40° et un angle ABC de 75°. Combien mesure l'angle ACB ? Quelle est la première étape du programme de construction ? Peut-on construire un triangle qui a deux angles de 95° et de 90° ?",
+    "mastery_threshold": {
+      "required": 3,
+      "out_of": 4
+    },
+    "exercise_ids": [],
+    "mindmap_id": null,
+    "programme_ref": [
+      {
+        "source": "Cycle 4, classe de 5e, Espace et géométrie, Triangles, Objectifs d'apprentissage",
+        "quote": "Construire des triangles à partir de données partielles."
+      }
+    ]
+  },
+  {
+    "id": "G053",
+    "domain": "G",
+    "domain_name": "Espace et géométrie",
+    "label": "Hauteurs et médianes d'un triangle",
+    "description": "Savoir que la hauteur issue de A dans le triangle ABC est la droite passant par A et perpendiculaire à (BC), dont le pied peut être hors du segment [BC] quand le triangle a un angle obtus (on prolonge le côté), et que les trois hauteurs d'un triangle sont concourantes ; savoir que la médiane issue de A est le segment (ou la droite) qui joint A au milieu de [BC] : BC = 8 cm, son milieu M, BM = 4 cm. Distinguer hauteur, médiane et médiatrice sur une figure codée (angle droit, milieu, sommet). L'erreur type est d'appeler hauteur toute droite issue d'un sommet, ou de chercher le pied de la hauteur au milieu du côté. Tracer se réduit à désigner la bonne droite. Réponse : QCM (nom de la droite), un nombre avec unité. Figure nécessaire : geometrie (existant), triangle lettré, droites candidates, angle droit et milieu codés, côté prolongé en pointillés.",
+    "prerequisites": [
+      "G029",
+      "G017"
+    ],
+    "difficulty": 5,
+    "school_level": "5e",
+    "validation_test": "Dans le triangle ABC, la droite issue de A est perpendiculaire à (BC) : est-ce une hauteur, une médiane ou une médiatrice ? Dans le triangle EFG, I est le milieu de [EF] et EF = 9 cm : combien mesure EI, et comment s'appelle le segment [GI] ?",
+    "mastery_threshold": {
+      "required": 3,
+      "out_of": 4
+    },
+    "exercise_ids": [],
+    "mindmap_id": null,
+    "programme_ref": [
+      {
+        "source": "Cycle 4, classe de 5e, Espace et géométrie, Triangles, Objectifs d'apprentissage",
+        "quote": "Définir et tracer les hauteurs dans un triangle."
+      },
+      {
+        "source": "Cycle 4, classe de 5e, Espace et géométrie, Triangles, Objectifs d'apprentissage",
+        "quote": "Savoir que les hauteurs d'un triangle sont concourantes."
+      },
+      {
+        "source": "Cycle 4, classe de 5e, Espace et géométrie, Triangles, Objectifs d'apprentissage",
+        "quote": "Définir et tracer les médianes dans un triangle."
+      }
+    ]
+  },
+  {
+    "id": "G054",
+    "domain": "G",
+    "domain_name": "Espace et géométrie",
+    "label": "Droites remarquables des triangles isocèle et équilatéral",
+    "description": "Dans un triangle isocèle en A, savoir que la médiatrice de la base [BC] passe par A et qu'elle porte aussi la hauteur, la médiane et la bissectrice issues de A ; dans un triangle équilatéral, que c'est vrai pour les trois sommets, et que le centre du cercle circonscrit est aussi le point de concours des hauteurs et des médianes. S'en servir pour calculer : ABC isocèle en A, BC = 10 cm et angle BAC de 40°, la hauteur issue de A coupe [BC] en son milieu H, donc BH = 5 cm et l'angle BAH mesure 20°. L'erreur type est d'appliquer ces égalités dans un triangle quelconque, ou à partir d'un autre sommet que le sommet principal. Réponse : un nombre avec unité, QCM, vrai/faux. Figure nécessaire : geometrie (existant), triangle isocèle ou équilatéral codé, droite issue du sommet principal, cercle circonscrit.",
+    "prerequisites": [
+      "G053",
+      "G026"
+    ],
+    "difficulty": 6,
+    "school_level": "5e",
+    "validation_test": "RST est isocèle en R, ST = 7 cm et l'angle SRT mesure 36°. La hauteur issue de R coupe [ST] en H. Combien mesurent SH et l'angle SRH ? Dans un triangle quelconque, la hauteur issue d'un sommet passe-t-elle toujours par le milieu du côté opposé ?",
+    "mastery_threshold": {
+      "required": 3,
+      "out_of": 4
+    },
+    "exercise_ids": [],
+    "mindmap_id": null,
+    "programme_ref": [
+      {
+        "source": "Cycle 4, classe de 5e, Espace et géométrie, Triangles, Objectifs d'apprentissage",
+        "quote": "Connaitre les propriétés des médiatrices et du cercle circonscrit dans le cas de triangles particuliers."
+      },
+      {
+        "source": "Cycle 4, classe de 5e, Espace et géométrie, Triangles, Objectifs d'apprentissage",
+        "quote": "Utiliser ces propriétés dans le cas de triangles particuliers."
+      },
+      {
+        "source": "Cycle 4, classe de 5e, Espace et géométrie, Triangles, Automatismes",
+        "quote": "Connaitre la notion de médiatrice, de cercle circonscrit."
+      }
+    ]
+  },
+  {
+    "id": "G055",
+    "domain": "G",
+    "domain_name": "Espace et géométrie",
+    "label": "Reconnaître un parallélogramme par une propriété caractéristique",
+    "description": "Prouver qu'un quadrilatère est un parallélogramme par une propriété caractéristique : ses diagonales ont le même milieu ; ses côtés opposés sont parallèles deux à deux ; ses côtés opposés ont la même longueur deux à deux (quadrilatère non croisé) ; deux côtés opposés sont parallèles et de même longueur (non croisé). Lire ces données dans un codage ou dans un texte, y compris dans une figure complexe, et savoir ce qui ne suffit pas : deux côtés opposés parallèles (trapèze), deux côtés consécutifs égaux, des diagonales de même longueur seules. L'erreur type est de conclure sur l'apparence ou sur une seule paire de côtés parallèles. Réponse : QCM (nature, propriété utilisée), vrai/faux. Figure nécessaire : geometrie (existant), quadrilatères codés, dont un trapèze et un cerf-volant en contre-exemples.",
+    "prerequisites": [
+      "G050"
+    ],
+    "difficulty": 6,
+    "school_level": "5e",
+    "validation_test": "Dans le quadrilatère non croisé MNPQ, MN = PQ = 5 cm et NP = MQ = 3 cm. Est-ce un parallélogramme ? Quelle propriété le justifie ? Un quadrilatère qui a deux côtés opposés parallèles est-il toujours un parallélogramme ?",
+    "mastery_threshold": {
+      "required": 3,
+      "out_of": 4
+    },
+    "exercise_ids": [],
+    "mindmap_id": null,
+    "programme_ref": [
+      {
+        "source": "Cycle 4, classe de 5e, Espace et géométrie, Parallélogrammes, Objectifs d'apprentissage",
+        "quote": "Utiliser une propriété caractéristique sur les diagonales ou les côtés pour les construire ou donner la nature du quadrilatère."
+      },
+      {
+        "source": "Cycle 4, classe de 5e, Espace et géométrie, Parallélogrammes, Objectifs d'apprentissage",
+        "quote": "Connaitre les propriétés caractéristiques des côtés opposés et des diagonales."
+      }
+    ]
+  },
+  {
+    "id": "G056",
+    "domain": "G",
+    "domain_name": "Espace et géométrie",
+    "label": "Rectangle, losange, carré : parallélogrammes particuliers",
+    "description": "Définir le rectangle (parallélogramme qui a un angle droit), le losange (parallélogramme qui a deux côtés consécutifs de même longueur) et le carré (à la fois rectangle et losange), et connaître leurs propriétés caractéristiques par les diagonales : un parallélogramme dont les diagonales ont la même longueur est un rectangle ; dont les diagonales sont perpendiculaires, un losange ; les deux à la fois, un carré. Exploiter le codage d'une figure pour identifier la nature exacte. Calculer : ABCD rectangle de centre O, AC = 12 cm, donc BD = 12 cm et OB = 6 cm. L'erreur type est de conclure « carré » dès que les diagonales sont perpendiculaires, ou d'oublier de vérifier d'abord que c'est un parallélogramme. Réponse : QCM (nature), vrai/faux, un nombre avec unité. Figure nécessaire : geometrie (existant), quadrilatères codés (angles droits, longueurs égales, diagonales).",
+    "prerequisites": [
+      "G055"
+    ],
+    "difficulty": 6,
+    "school_level": "5e",
+    "validation_test": "Un parallélogramme a des diagonales perpendiculaires : quelle est sa nature ? Le parallélogramme ABCD a des diagonales de même longueur, avec AC = 14 cm : est-ce un rectangle, un losange ou un carré, et combien mesure BD ?",
+    "mastery_threshold": {
+      "required": 3,
+      "out_of": 4
+    },
+    "exercise_ids": [],
+    "mindmap_id": null,
+    "programme_ref": [
+      {
+        "source": "Cycle 4, classe de 5e, Espace et géométrie, Parallélogrammes, Objectifs d'apprentissage",
+        "quote": "Définir les parallélogrammes particuliers (rectangle, losange, carré)."
+      },
+      {
+        "source": "Cycle 4, classe de 5e, Espace et géométrie, Parallélogrammes, Automatismes",
+        "quote": "Exploiter le codage d'une figure pour identifier des parallélogrammes particuliers."
+      }
+    ]
+  },
+  {
+    "id": "G057",
+    "domain": "G",
+    "domain_name": "Espace et géométrie",
+    "label": "Symétrie axiale ou demi-tour : reconnaître, trouver les images",
+    "description": "Dire si deux figures sont images l'une de l'autre par une symétrie axiale (et désigner l'axe), par un demi-tour (et désigner le centre) ou par aucune des deux ; dans une configuration donnée (parallélogramme, figure à axe), donner sans construire l'image d'un point, d'un segment, d'une droite, d'une figure : ABCD parallélogramme de centre O, l'image de B par le demi-tour de centre O est D, celle de [AD] est [CB]. Placer le symétrique d'un point par demi-tour sur quadrillage. L'erreur type est de prendre un demi-tour pour une symétrie axiale quand la figure a l'air « retournée », ou d'oublier d'échanger les extrémités d'un segment. Réponse : QCM (transformation, axe, centre, point image), une lettre ou un nom de segment. Figure nécessaire : quadrillage ou geometrie (existants), figures numérotées, axes et centres candidats ; images calculées et contrôlées (à créer, section Figures).",
+    "prerequisites": [
+      "G045"
+    ],
+    "difficulty": 6,
+    "school_level": "4e",
+    "validation_test": "ABCD est un parallélogramme de centre O. Quelle est l'image du point B par le demi-tour de centre O ? Quelle est l'image du segment [AD] ? Sur le quadrillage, la figure 2 est-elle l'image de la figure 1 par une symétrie axiale, par un demi-tour ou par aucune des deux ?",
+    "mastery_threshold": {
+      "required": 3,
+      "out_of": 4
+    },
+    "exercise_ids": [],
+    "mindmap_id": null,
+    "programme_ref": [
+      {
+        "source": "Cycle 4, classe de 4e, Espace et géométrie, Parallélogrammes et translations, Automatismes",
+        "quote": "Dire si des figures planes sont images l'une de l'autre par une symétrie axiale (dont on identifie l'axe) ou par un demi-tour (dont on identifie le centre)."
+      },
+      {
+        "source": "Cycle 4, classe de 4e, Espace et géométrie, Parallélogrammes et translations, Automatismes",
+        "quote": "Dans une configuration donnée, déterminer les images de figures, de droites, de segments, de points par une symétrie axiale ou un demi-tour."
+      },
+      {
+        "source": "Cycle 4, classe de 4e, Espace et géométrie, Transformations, Automatismes",
+        "quote": "Construire le symétrique d'un point par demi-tour."
+      }
+    ]
+  },
+  {
+    "id": "G058",
+    "domain": "G",
+    "domain_name": "Espace et géométrie",
+    "label": "Translation : effet sur une figure, propriétés de conservation",
+    "description": "Comprendre la translation qui transforme A en B comme un glissement de toute la figure, dans la direction de la droite (AB), dans le sens de A vers B et sur la longueur AB : sur quadrillage, chaque point glisse de 4 carreaux vers la droite et de 1 vers le haut. Savoir qu'elle conserve les longueurs, les angles, les aires, l'alignement et le parallélisme, que l'image d'une droite lui est parallèle (ou confondue), et que si M a pour image M', alors ABM'M est un parallélogramme (aplati si M est sur la droite (AB)). Distinguer la translation du demi-tour et de la symétrie axiale. L'erreur type est d'inverser le sens (de B vers A) ou de faire glisser la figure de la distance entre deux points qui ne sont pas homologues. Réponse : QCM (point ou figure image), vrai/faux, un nombre avec unité. Figure nécessaire : quadrillage ou geometrie (existants) avec une flèche de A vers B (à créer : élément vecteur), figures candidates numérotées.",
+    "prerequisites": [
+      "G057",
+      "G049"
+    ],
+    "difficulty": 6,
+    "school_level": "4e",
+    "validation_test": "La translation qui transforme A en B fait glisser chaque point de 4 carreaux vers la droite et de 1 carreau vers le haut. Laquelle des figures 2, 3 ou 4 est l'image de la figure 1 ? L'image d'une droite (CD) est-elle parallèle, perpendiculaire ou sécante à (CD) ? Un angle de la figure mesure 35° : combien mesure son image ?",
+    "mastery_threshold": {
+      "required": 3,
+      "out_of": 4
+    },
+    "exercise_ids": [],
+    "mindmap_id": null,
+    "programme_ref": [
+      {
+        "source": "Cycle 4, classe de 4e, Espace et géométrie, Parallélogrammes et translations, Objectifs d'apprentissage",
+        "quote": "Comprendre l'effet d'une translation."
+      },
+      {
+        "source": "Cycle 4, classe de 4e, Espace et géométrie, Parallélogrammes et translations, Objectifs d'apprentissage",
+        "quote": "Faire le lien avec les parallélogrammes, les angles."
+      },
+      {
+        "source": "Cycle 4, classe de 4e, Espace et géométrie, Parallélogrammes et translations, Objectifs d'apprentissage",
+        "quote": "Connaitre et utiliser les propriétés de conservations des translations."
+      }
+    ]
+  },
+  {
+    "id": "G059",
+    "domain": "G",
+    "domain_name": "Espace et géométrie",
+    "label": "Les trois théorèmes de la droite des milieux",
+    "description": "Connaître et utiliser les trois théorèmes de la droite des milieux dans un triangle ABC : la droite qui passe par les milieux I de [AB] et J de [AC] est parallèle à (BC) ; le segment [IJ] mesure la moitié de BC ; la droite qui passe par le milieu d'un côté et qui est parallèle à un deuxième côté coupe le troisième en son milieu. Calculer : BC = 9 cm donne IJ = 4,5 cm ; IJ = 3,2 cm donne BC = 6,4 cm ; prouver un parallélisme ou un milieu en choisissant le bon théorème. L'erreur type est de diviser une autre longueur que celle du troisième côté, ou d'utiliser le premier théorème avec un seul milieu. Réponse : un nombre avec unité, QCM (théorème utilisé, conclusion), vrai/faux. Figure nécessaire : geometrie (existant), triangle avec milieux codés, segment des milieux, longueurs écrites.",
+    "prerequisites": [
+      "G055"
+    ],
+    "difficulty": 6,
+    "school_level": "4e",
+    "validation_test": "Dans le triangle EFG, M est le milieu de [EF] et N celui de [EG]. FG = 11 cm : combien mesure MN ? Les droites (MN) et (FG) sont-elles parallèles ? Dans un triangle RST, la parallèle à (ST) qui passe par le milieu de [RS] coupe [RT] en P : que peut-on dire du point P ?",
+    "mastery_threshold": {
+      "required": 3,
+      "out_of": 4
+    },
+    "exercise_ids": [],
+    "mindmap_id": null,
+    "programme_ref": [
+      {
+        "source": "Cycle 4, classe de 4e, Espace et géométrie, Triangles, Objectifs d'apprentissage",
+        "quote": "Connaitre les trois théorèmes relatifs à la droite des milieux dans un triangle."
+      }
+    ]
+  },
+  {
+    "id": "G060",
+    "domain": "G",
+    "domain_name": "Espace et géométrie",
+    "label": "Théorème, réciproque, contraposée",
+    "description": "Repérer l'hypothèse et la conclusion d'une propriété écrite « si …, alors … » ; écrire (choisir) sa réciproque, qui les échange, et sa contraposée (« si la conclusion est fausse, alors l'hypothèse est fausse ») ; savoir qu'une propriété vraie a une contraposée vraie mais pas toujours une réciproque vraie, et réfuter une réciproque fausse par un contre-exemple : « si un quadrilatère est un carré, alors ses diagonales ont la même longueur » est vraie, sa réciproque est fausse (un rectangle non carré), sa contraposée est « si les diagonales d'un quadrilatère n'ont pas la même longueur, alors ce n'est pas un carré ». Reconnaître ces trois formes dans les propriétés de G047 et G048. L'erreur type est de prendre la réciproque pour la contraposée, ou de croire qu'une réciproque est vraie parce que la propriété l'est. Réponse : QCM, vrai/faux. Figure : aucune.",
+    "prerequisites": [
+      "G050",
+      "G048"
+    ],
+    "difficulty": 6,
+    "school_level": "4e",
+    "validation_test": "Quelle est la réciproque de la propriété « Si un triangle est équilatéral, alors il est isocèle » ? Est-elle vraie ? Quelle est la contraposée de « Si deux droites sont parallèles, alors les angles alternes-internes qu'elles forment avec une sécante sont égaux » ?",
+    "mastery_threshold": {
+      "required": 3,
+      "out_of": 4
+    },
+    "exercise_ids": [],
+    "mindmap_id": null,
+    "programme_ref": [
+      {
+        "source": "Cycle 4, classe de 4e, Espace et géométrie, Triangles, Objectifs d'apprentissage",
+        "quote": "Mener un travail de logique sur la réciproque et la contraposée."
+      },
+      {
+        "source": "Cycle 4, Principes, présentation commune aux trois classes",
+        "quote": "Le vocabulaire (théorème, réciproque et contraposée) est explicité."
+      },
+      {
+        "source": "Cycle 4, Principes, présentation commune aux trois classes",
+        "quote": "L'élève apprend que si une propriété est vraie alors sa contraposée l'est aussi, sans pour autant que sa réciproque soit vraie."
+      }
+    ]
+  },
+  {
+    "id": "G061",
+    "domain": "G",
+    "domain_name": "Espace et géométrie",
+    "label": "Triangle rectangle et cercle circonscrit",
+    "description": "Savoir que le centre du cercle circonscrit à un triangle rectangle est le milieu de son hypoténuse, donc que son rayon en est la moitié (et que la médiane issue de l'angle droit mesure la moitié de l'hypoténuse) ; réciproquement, qu'un triangle inscrit dans un demi-cercle dont le diamètre est l'un de ses côtés est rectangle, l'angle droit étant le sommet opposé au diamètre. Calculer : ABC rectangle en A, AB = 6 cm, AC = 8 cm, BC = 10 cm, rayon 5 cm ; construire un rectangle sans équerre à partir de deux diamètres d'un cercle. L'erreur type est de placer le centre au milieu d'un côté de l'angle droit, ou d'appliquer la réciproque sans que le côté soit un diamètre. Réponse : un nombre avec unité, QCM (centre, sommet de l'angle droit), vrai/faux. Figure nécessaire : geometrie (existant), cercle, diamètre, triangle inscrit ; un demi-cercle seul serait confortable.",
+    "prerequisites": [
+      "G056",
+      "G040",
+      "G060"
+    ],
+    "difficulty": 6,
+    "school_level": "4e",
+    "validation_test": "Le triangle GHK est rectangle en G, avec GH = 5 cm et GK = 12 cm. Où se trouve le centre de son cercle circonscrit, et quel est son rayon ? Le point P est sur le cercle de diamètre [UV], distinct de U et de V : combien mesure l'angle UPV ?",
+    "mastery_threshold": {
+      "required": 3,
+      "out_of": 4
+    },
+    "exercise_ids": [],
+    "mindmap_id": null,
+    "programme_ref": [
+      {
+        "source": "Cycle 4, classe de 4e, Espace et géométrie, Triangles, Objectifs d'apprentissage",
+        "quote": "Caractériser un triangle rectangle à l'aide de son cercle circonscrit, par son inscription dans un demi-cercle dont le diamètre est un côté du triangle."
+      },
+      {
+        "source": "Cycle 4, classe de 4e, Espace et géométrie, Triangles, Objectifs d'apprentissage",
+        "quote": "Déterminer le centre du cercle circonscrit d'un triangle rectangle."
+      },
+      {
+        "source": "Cycle 4, classe de 4e, Espace et géométrie, Triangles, Objectifs d'apprentissage",
+        "quote": "Construire des rectangles sans équerre."
+      }
+    ]
+  },
+  {
+    "id": "G062",
+    "domain": "G",
+    "domain_name": "Espace et géométrie",
+    "label": "Théorème de Thalès dans la configuration du papillon",
+    "description": "Reconnaître la configuration du papillon (deux droites sécantes en A, B et M sur l'une, C et N sur l'autre, de part et d'autre de A, avec (BC) parallèle à (MN)) et y appliquer le théorème de Thalès, AM/AB = AN/AC = MN/BC, en appariant les côtés homologues des deux triangles opposés par le sommet : AB = 6 cm, AC = 9 cm, AM = 4 cm donnent AN = 4 × 9 ÷ 6 = 6 cm ; BC = 7,5 cm donne MN = 7,5 × 4 ÷ 6 = 5 cm. Distinguer le papillon des triangles emboîtés et choisir l'égalité de quotients qui contient la longueur cherchée. L'erreur type est d'associer des côtés qui ne se correspondent pas (le côté de l'un des triangles avec le côté voisin de l'autre). Réponse : un nombre avec unité ; QCM pour l'égalité des quotients. Figure nécessaire : geometrie (existant), deux droites sécantes et deux parallèles, longueurs écrites, pas en vraie grandeur.",
+    "prerequisites": [
+      "G042"
+    ],
+    "difficulty": 6,
+    "school_level": "3e",
+    "validation_test": "Les droites (EK) et (FL) se coupent en O, et (EF) est parallèle à (KL). OE = 3 cm, OK = 4,5 cm, OF = 4 cm et EF = 5 cm. Calcule OL, puis KL.",
+    "mastery_threshold": {
+      "required": 3,
+      "out_of": 4
+    },
+    "exercise_ids": [],
+    "mindmap_id": null,
+    "programme_ref": [
+      {
+        "source": "Cycle 4, classe de 3e, Espace et géométrie, Triangles, Objectifs d'apprentissage",
+        "quote": "Connaitre et appliquer le théorème de Thalès, sa réciproque, sa contraposée (configurations des triangles emboités et configuration dite du papillon)."
+      }
+    ]
+  },
+  {
+    "id": "G063",
+    "domain": "G",
+    "domain_name": "Espace et géométrie",
+    "label": "Cosinus, sinus, tangente d'un angle aigu d'un triangle rectangle",
+    "description": "Dans un triangle ABC rectangle en A, pour l'angle aigu en B, nommer le côté adjacent [AB], le côté opposé [AC] et l'hypoténuse [BC], et écrire cos B = AB/BC, sin B = AC/BC, tan B = AC/AB ; savoir que ces quotients ne dépendent que de l'angle (pas de la taille du triangle), que le cosinus et le sinus d'un angle aigu sont compris entre 0 et 1. Calculer leurs valeurs exactes dans un triangle de côtés 3 cm, 4 cm, 5 cm : cos B = 3/5 = 0,6 ; sin B = 0,8 ; tan B = 4/3. L'erreur type est d'échanger côté adjacent et côté opposé quand on change d'angle aigu, ou de mettre l'hypoténuse au numérateur. Réponse : QCM (côté, quotient), un nombre ou une fraction. Figure nécessaire : geometrie (existant), triangle rectangle codé, angle aigu marqué d'un arc, longueurs écrites.",
+    "prerequisites": [
+      "G040",
+      "E034",
+      "G051"
+    ],
+    "difficulty": 6,
+    "school_level": "3e",
+    "validation_test": "Le triangle EFG est rectangle en E, avec EF = 8 cm, EG = 6 cm et FG = 10 cm. Quel côté est adjacent à l'angle EFG ? Quel quotient est égal au cosinus de l'angle EFG ? Donne la valeur de ce cosinus, puis celle de la tangente de l'angle EFG.",
+    "mastery_threshold": {
+      "required": 3,
+      "out_of": 4
+    },
+    "exercise_ids": [],
+    "mindmap_id": null,
+    "programme_ref": [
+      {
+        "source": "Cycle 4, classe de 3e, Espace et géométrie, Triangles, Objectifs d'apprentissage",
+        "quote": "Connaitre et utiliser les lignes trigonométriques dans le triangle rectangle : cosinus, sinus, tangente."
+      }
+    ]
+  },
+  {
+    "id": "G064",
+    "domain": "G",
+    "domain_name": "Espace et géométrie",
+    "label": "Trigonométrie : calculer une longueur dans un triangle rectangle",
+    "description": "Choisir la ligne trigonométrique qui relie l'angle connu, la longueur connue et la longueur cherchée, écrire l'égalité, la résoudre et calculer à la calculatrice réglée en degrés : hypoténuse 7 cm, angle de 40°, côté adjacent 7 × cos 40° ≈ 5,4 cm ; côté adjacent 5 cm, angle de 32°, hypoténuse 5 ÷ cos 32° ≈ 5,9 cm ; côté adjacent 6 cm, angle de 25°, côté opposé 6 × tan 25° ≈ 2,8 cm. Arrondir à la fin seulement. L'erreur type est de multiplier au lieu de diviser quand la longueur cherchée est au dénominateur, de choisir une ligne qui ne contient pas la longueur cherchée, ou d'avoir la calculatrice en radians. Réponse : un nombre avec unité, valeur approchée avec answer.tolerance égale à la moitié du rang demandé (0,05 au dixième) ; données choisies pour que la valeur exacte soit à plus de 0,01 d'une frontière d'arrondi. Figure nécessaire : geometrie (existant), triangle rectangle codé, angle marqué et sa mesure, longueur cherchée marquée « ? », pas en vraie grandeur.",
+    "prerequisites": [
+      "G063",
+      "F023"
+    ],
+    "difficulty": 7,
+    "school_level": "3e",
+    "validation_test": "Le triangle KLM est rectangle en K, avec LM = 12 cm et un angle KLM de 35°. Calcule KL, puis KM, arrondis au dixième.",
+    "mastery_threshold": {
+      "required": 3,
+      "out_of": 4
+    },
+    "exercise_ids": [],
+    "mindmap_id": null,
+    "programme_ref": [
+      {
+        "source": "Cycle 4, classe de 3e, Espace et géométrie, Triangles, Objectifs d'apprentissage",
+        "quote": "Connaitre et utiliser les lignes trigonométriques dans le triangle rectangle : cosinus, sinus, tangente."
+      }
+    ]
+  },
+  {
+    "id": "G065",
+    "domain": "G",
+    "domain_name": "Espace et géométrie",
+    "label": "Trigonométrie : calculer un angle dans un triangle rectangle",
+    "description": "Calculer la mesure d'un angle aigu d'un triangle rectangle à partir de deux longueurs : choisir la ligne trigonométrique qui relie ces deux côtés à l'angle, calculer le quotient, puis retrouver l'angle avec la touche réciproque de la calculatrice (Arccos, Arcsin, Arctan) : cos B = 0,6, l'angle B mesure environ 53° ; côté adjacent 4 cm, hypoténuse 9 cm, cos B = 4/9, B ≈ 63,6° ≈ 64° ; en déduire l'autre angle aigu par la somme des angles (90° − 64° = 26°). L'erreur type est de taper cos(0,6) au lieu de la touche réciproque, ou d'inverser le quotient (un cosinus supérieur à 1 doit alerter). Réponse : un nombre avec l'unité degré, arrondi au degré avec answer.tolerance 0,5. Figure nécessaire : geometrie (existant), triangle rectangle codé, angle cherché marqué « ? », longueurs écrites.",
+    "prerequisites": [
+      "G063"
+    ],
+    "difficulty": 7,
+    "school_level": "3e",
+    "validation_test": "Le triangle PQR est rectangle en P, avec PQ = 8 cm et QR = 11 cm. Donne la mesure de l'angle PQR arrondie au degré, puis celle de l'angle PRQ.",
+    "mastery_threshold": {
+      "required": 3,
+      "out_of": 4
+    },
+    "exercise_ids": [],
+    "mindmap_id": null,
+    "programme_ref": [
+      {
+        "source": "Cycle 4, classe de 3e, Espace et géométrie, Triangles, Objectifs d'apprentissage",
+        "quote": "Connaitre et utiliser les lignes trigonométriques dans le triangle rectangle : cosinus, sinus, tangente."
+      }
+    ]
+  },
+  {
+    "id": "G066",
+    "domain": "G",
+    "domain_name": "Espace et géométrie",
+    "label": "Translation et vecteur : parallélogramme, vecteurs égaux, opposés",
+    "description": "Définir l'image d'un point par une translation : la translation qui transforme A en B transforme M en M' tel que ABM'M est un parallélogramme (éventuellement aplati). Définir le vecteur AB par sa direction, son sens et sa longueur ; savoir que les vecteurs AB et CD sont égaux si et seulement si ABDC est un parallélogramme (éventuellement aplati), que le vecteur AA est le vecteur nul, que le vecteur BA est l'opposé du vecteur AB. Dans un parallélogramme ABDC : AB = CD en vecteurs, l'image de C par la translation de vecteur AB est D, et le vecteur DC est l'opposé de AB. L'erreur type est de lire le parallélogramme dans le mauvais ordre (ABCD au lieu de ABDC) ou de confondre vecteurs égaux et longueurs égales. Réponse : QCM (point, vecteur), vrai/faux, nom d'un point ou d'un vecteur en texte court. Figure nécessaire : geometrie (existant) avec flèches de vecteurs (à créer : élément vecteur), points lettrés, quadrillage possible.",
+    "prerequisites": [
+      "G058",
+      "G055"
+    ],
+    "difficulty": 6,
+    "school_level": "3e",
+    "validation_test": "ABDC est un parallélogramme, ses sommets étant pris dans cet ordre. Le vecteur AB est-il égal au vecteur CD ? Au vecteur DC ? Quelle est l'image du point C par la translation de vecteur AB ? Quel vecteur est l'opposé du vecteur AB ?",
+    "mastery_threshold": {
+      "required": 3,
+      "out_of": 4
+    },
+    "exercise_ids": [],
+    "mindmap_id": null,
+    "programme_ref": [
+      {
+        "source": "Cycle 4, classe de 3e, Espace et géométrie, Translations et vecteurs, Objectifs d'apprentissage",
+        "quote": "Définir et utiliser la translation : définition ponctuelle avec parallélogramme."
+      },
+      {
+        "source": "Cycle 4, classe de 3e, Espace et géométrie, Translations et vecteurs, Objectifs d'apprentissage",
+        "quote": "Définir et utiliser les notions de vecteur, de vecteurs égaux, de vecteur nul, d'opposé d'un vecteur."
+      },
+      {
+        "source": "Cycle 4, classe de 3e, Espace et géométrie, Translations et vecteurs, Automatismes",
+        "quote": "Mobiliser les connaissances sur la symétrie axiale, le demi-tour, la translation."
+      }
+    ]
+  },
+  {
+    "id": "G067",
+    "domain": "G",
+    "domain_name": "Espace et géométrie",
+    "label": "Somme de deux vecteurs ; relation de Chasles",
+    "description": "Savoir que l'enchaînement de la translation de vecteur AB puis de la translation de vecteur BC est la translation de vecteur AC, et donc que AB + BC = AC en vecteurs (relation de Chasles) ; construire la somme de deux vecteurs de même origine par la règle du parallélogramme (AB + AD = AC quand ABCD est un parallélogramme) ; simplifier une somme : MN + NP + PQ = MQ, AB + BA = vecteur nul. L'erreur type est d'appliquer Chasles à des vecteurs qui ne s'enchaînent pas (AB + CD), ou d'additionner les longueurs (AB + BC n'a pas pour longueur AB + BC en général). Réponse : texte court (nom du vecteur, « AC »), QCM, vrai/faux. Figure nécessaire : geometrie (existant) avec flèches de vecteurs (à créer : élément vecteur), quadrillage possible.",
+    "prerequisites": [
+      "G066"
+    ],
+    "difficulty": 7,
+    "school_level": "3e",
+    "validation_test": "Écris plus simplement la somme des vecteurs EF et FG, puis celle des vecteurs RS, ST et TU. La translation de vecteur EF suivie de la translation de vecteur FG est-elle la translation de vecteur EG ? ABCD est un parallélogramme : à quel vecteur la somme des vecteurs AB et AD est-elle égale ?",
+    "mastery_threshold": {
+      "required": 3,
+      "out_of": 4
+    },
+    "exercise_ids": [],
+    "mindmap_id": null,
+    "programme_ref": [
+      {
+        "source": "Cycle 4, classe de 3e, Espace et géométrie, Translations et vecteurs, Objectifs d'apprentissage",
+        "quote": "Définir et utiliser la somme de deux vecteurs par enchainement de deux translations."
+      },
+      {
+        "source": "Cycle 4, classe de 3e, Espace et géométrie, Translations et vecteurs, Objectifs d'apprentissage",
+        "quote": "Découvrir et utiliser la relation de Chasles."
+      }
+    ]
+  },
+  {
+    "id": "G070",
+    "domain": "G",
+    "domain_name": "Espace et géométrie",
+    "label": "Vues d'un empilement de cubes ; dénombrer ses cubes",
+    "description": "Associer un empilement de cubes dessiné en perspective à ses vues de dessus, de face et de côté, et inversement, et dénombrer les cubes d'un empilement, y compris ceux qu'on ne voit pas, en raisonnant par colonnes : une vue de dessus dont les cases portent le nombre de cubes empilés (2 ; 1 ; 3 ; 1) décrit un empilement de 7 cubes ; la vue de face ne montre que la colonne la plus haute de chaque file. L'erreur type est de confondre la vue de face et la vue de côté, ou de compter un cube caché deux fois ou pas du tout. Prolonge G020 (CM1), sans formule de volume. Réponse : QCM entre vues lettrées, ou un nombre (de cubes). Figure nécessaire : cubes (empilement en perspective, avec une flèche qui fixe le sens de la vue de face) et quadrillage (vues proposées, cases coloriées, nombres écrits dans les cases pour la vue de dessus cotée).",
+    "prerequisites": [
+      "G020"
+    ],
+    "difficulty": 4,
+    "school_level": "5e",
+    "validation_test": "La vue de dessus d'un empilement a trois cases, où l'on a écrit le nombre de cubes de chaque colonne : 3 ; 1 ; 2. Combien de cubes compte l'empilement ? Sur la figure, laquelle des vues A, B ou C est la vue de face ?",
+    "mastery_threshold": {
+      "required": 3,
+      "out_of": 4
+    },
+    "exercise_ids": [],
+    "mindmap_id": null,
+    "programme_ref": [
+      {
+        "source": "Cycle 4, classe de 5e, Espace et géométrie, Représentation de l'espace, Automatismes",
+        "quote": "Reconnaitre des vues (de dessus, dessous…) d'empilements de cubes."
+      },
+      {
+        "source": "Cycle 4, classe de 5e, Espace et géométrie, Représentation de l'espace, Automatismes",
+        "quote": "Dénombrer des cubes dans des empilements."
+      }
+    ]
+  },
+  {
+    "id": "G071",
+    "domain": "G",
+    "domain_name": "Espace et géométrie",
+    "label": "Perspective cavalière : pavé, cube, prisme droit, cylindre",
+    "description": "Lire et compléter la représentation en perspective cavalière d'un pavé droit, d'un cube, d'un prisme droit ou d'un cylindre de révolution : la face avant est en vraie grandeur ; les arêtes fuyantes sont parallèles entre elles, inclinées et raccourcies ; deux arêtes parallèles dans l'espace restent parallèles sur le dessin ; les arêtes cachées sont en pointillés (3 sur 12 pour un pavé) ; un angle droit d'une face fuyante n'est pas dessiné droit ; les bases d'un cylindre deviennent des ellipses ; reconnaître la base et la hauteur d'un prisme droit, debout ou couché. L'erreur type est de mesurer une longueur réelle sur une fuyante, ou de croire que la face du dessus d'un pavé n'est pas un rectangle parce qu'elle est dessinée en parallélogramme. Construire la perspective ne se fait pas à l'écran : l'élève choisit l'arête manquante parmi des segments lettrés, repère les arêtes cachées, la vraie nature d'une face, une longueur réelle. Réponse : QCM, vrai/faux, ou un nombre (arêtes, longueur réelle). Figure nécessaire : solide, avec lettres aux sommets (prismes compris), longueurs écrites sur des arêtes, prisme couché, arête à compléter.",
+    "prerequisites": [
+      "G019",
+      "G016"
+    ],
+    "difficulty": 4,
+    "school_level": "5e",
+    "validation_test": "Un pavé droit est dessiné en perspective cavalière : combien de ses arêtes sont en pointillés ? Sa face du dessus est dessinée comme un parallélogramme : quelle est sa nature réelle ? Sur la figure, le prisme droit est couché : laquelle de ses faces lettrées est une base ?",
+    "mastery_threshold": {
+      "required": 3,
+      "out_of": 4
+    },
+    "exercise_ids": [],
+    "mindmap_id": null,
+    "programme_ref": [
+      {
+        "source": "Cycle 4, classe de 5e, Espace et géométrie, Représentation de l'espace, Objectifs d'apprentissage",
+        "quote": "Construire et mettre en relation différentes représentations en perspectives cavalières des solides suivants : pavé droit, cube, cylindre de révolution, prisme droit."
+      },
+      {
+        "source": "Cycle 4, classe de 5e, Espace et géométrie, Représentation de l'espace, Automatismes",
+        "quote": "Reconnaitre un cube, un pavé représenté en perspective cavalière."
+      }
+    ]
+  },
+  {
+    "id": "G072",
+    "domain": "G",
+    "domain_name": "Espace et géométrie",
+    "label": "Patrons du pavé, du prisme droit et du cylindre",
+    "description": "Mettre en relation un solide dessiné en perspective cavalière et son patron : reconnaître un patron de pavé (six rectangles, faces opposées identiques), de prisme droit (deux bases polygonales identiques et autant de rectangles que la base a de côtés) ou de cylindre de révolution (deux disques et un rectangle) ; trouver les arêtes qui se superposent au pliage, la face opposée à une face marquée, une dimension manquante : dans le patron d'un cylindre de rayon 3 cm, la longueur du rectangle est le périmètre du disque, 2 × 3 × 3,14 = 18,84 cm. L'erreur type est de dessiner deux faces opposées de dimensions différentes, ou de prendre le diamètre pour la longueur du rectangle. Reconnaître un patron de cube (G011) est un automatisme entretenu ici. Réponse : QCM entre patrons lettrés, vrai/faux, ou un nombre (longueur, nombre de faces). Figure nécessaire : geometrie (patrons sur quadrillage, faces numérotées) et solide (la perspective associée).",
+    "prerequisites": [
+      "G071",
+      "G011",
+      "P023"
+    ],
+    "difficulty": 5,
+    "school_level": "5e",
+    "validation_test": "Un cylindre a un rayon de 5 cm et une hauteur de 8 cm. Dans son patron, le rectangle a une largeur de 8 cm : quelle est sa longueur, en prenant 3,14 pour π ? Combien de faces compte le patron d'un prisme droit dont la base est un pentagone ?",
+    "mastery_threshold": {
+      "required": 3,
+      "out_of": 4
+    },
+    "exercise_ids": [],
+    "mindmap_id": null,
+    "programme_ref": [
+      {
+        "source": "Cycle 4, classe de 5e, Espace et géométrie, Représentation de l'espace, Objectifs d'apprentissage",
+        "quote": "Savoir mettre en relation une représentation en perspective cavalière et un patron d'un pavé, d'un prisme droit ou d'un cylindre de révolution."
+      },
+      {
+        "source": "Cycle 4, classe de 5e, Espace et géométrie, Représentation de l'espace, Automatismes",
+        "quote": "Reconnaitre un patron d'un cube."
+      }
+    ]
+  },
+  {
+    "id": "G073",
+    "domain": "G",
+    "domain_name": "Espace et géométrie",
+    "label": "Pyramide et cône de révolution : reconnaître, décrire, représenter",
+    "description": "Reconnaître une pyramide (une base polygonale, des faces latérales triangulaires qui se rejoignent au sommet) et un cône de révolution (une base en forme de disque et un sommet), en perspective cavalière ou par un patron ; nommer sommet, base, arêtes latérales, hauteur (le segment issu du sommet, perpendiculaire à la base ; pour un cône, il aboutit au centre du disque) ; dénombrer : une pyramide dont la base a n côtés a n + 1 faces, 2n arêtes et n + 1 sommets (base hexagonale : 7 faces, 12 arêtes, 7 sommets) ; distinguer pyramide et prisme, cône et cylindre. L'erreur type est d'oublier la base en comptant les faces, ou de prendre une arête latérale pour la hauteur. Réponse : QCM, vrai/faux ou un nombre. Figure nécessaire : solide (pyramides de bases variées, cône, hauteur tracée en pointillés avec son pied, lettres).",
+    "prerequisites": [
+      "G072"
+    ],
+    "difficulty": 5,
+    "school_level": "4e",
+    "validation_test": "Combien de faces, d'arêtes et de sommets a une pyramide dont la base est un pentagone ? Sur un cône de révolution, la hauteur relie le sommet à quel point de la base ?",
+    "mastery_threshold": {
+      "required": 3,
+      "out_of": 4
+    },
+    "exercise_ids": [],
+    "mindmap_id": null,
+    "programme_ref": [
+      {
+        "source": "Cycle 4, classe de 4e, Espace et géométrie, Représentation de l'espace, Objectifs d'apprentissage",
+        "quote": "Reconnaitre des solides (pyramide, cône de révolution)."
+      },
+      {
+        "source": "Cycle 4, classe de 4e, Espace et géométrie, Représentation de l'espace, Objectifs d'apprentissage",
+        "quote": "Construire et mettre en relation différentes représentations des solides (pavé droit, cube, cylindre de révolution, prisme droit, pyramides et cônes de révolution)."
+      }
+    ]
+  },
+  {
+    "id": "G074",
+    "domain": "G",
+    "domain_name": "Espace et géométrie",
+    "label": "Pyramide en perspective : nature des faces, patrons",
+    "description": "Donner la nature d'une face d'une pyramide représentée en perspective cavalière, en raisonnant sur le solide et non sur le dessin, et identifier le patron d'une pyramide donnée. Cas type, la pyramide inscrite dans un cube ABCDEFGH, dont les sommets sont des sommets du cube : la pyramide ABDE a trois faces en triangle rectangle isocèle (ABD, ABE et ADE, moitiés de faces du cube) et une face équilatérale (BDE, dont les trois côtés sont des diagonales de faces) ; un patron de pyramide à base carrée a quatre triangles autour du carré. L'erreur type est de lire la nature d'une face sur le dessin (un angle droit qui n'est pas dessiné droit, un triangle équilatéral qui paraît quelconque). Réponse : QCM, vrai/faux ou un nombre. Figure nécessaire : solide (pyramide inscrite dans un cube, arêtes de la pyramide en couleur) et geometrie (patrons candidats lettrés).",
+    "prerequisites": [
+      "G073",
+      "G017"
+    ],
+    "difficulty": 5,
+    "school_level": "3e",
+    "validation_test": "Dans un cube ABCDEFGH, ABCD est une face et E est relié à A par une arête. On considère la pyramide ABDE. Quelle est la nature de la face ABD ? Quelle est la nature de la face BDE ? Combien de triangles compte le patron d'une pyramide à base carrée ?",
+    "mastery_threshold": {
+      "required": 3,
+      "out_of": 4
+    },
+    "exercise_ids": [],
+    "mindmap_id": null,
+    "programme_ref": [
+      {
+        "source": "Cycle 4, classe de 3e, Espace et géométrie, Représentation de l'espace, Automatismes",
+        "quote": "Donner la nature d'une face d'une pyramide représentée en perspective cavalière."
+      },
+      {
+        "source": "Cycle 4, classe de 3e, Espace et géométrie, Représentation de l'espace, Automatismes",
+        "quote": "Identifier les patrons de pyramides données (par exemple inscrites dans un cube)."
+      }
+    ]
+  },
+  {
+    "id": "G075",
+    "domain": "G",
+    "domain_name": "Espace et géométrie",
+    "label": "Sphère et boule : centre, rayon, diamètre, grands cercles",
+    "description": "Définir la sphère de centre O et de rayon r (les points de l'espace situés à la distance r de O) et la boule (les points situés à une distance inférieure ou égale à r), comme le cercle et le disque dans le plan ; un diamètre mesure 2 × r ; un grand cercle est un cercle de la sphère de centre O et de rayon r (l'équateur, un méridien) ; dire si un point est sur la sphère, dans la boule ou à l'extérieur : pour une sphère de rayon 7 cm, un point à 5 cm de O est dans la boule, pas sur la sphère. L'erreur type est de confondre la sphère et la boule, ou de croire qu'un cercle tracé sur la sphère a toujours le rayon de la sphère. Réponse : QCM, vrai/faux ou un nombre (rayon, diamètre). Figure nécessaire : solide (boule avec son centre, un rayon, un grand cercle en couleur, points lettrés sur, dans ou hors de la boule).",
+    "prerequisites": [
+      "G028",
+      "G071"
+    ],
+    "difficulty": 5,
+    "school_level": "3e",
+    "validation_test": "Une sphère a pour centre O et pour rayon 9 cm. Un point M est à 6 cm de O : est-il sur la sphère, dans la boule ou à l'extérieur ? Quel est le rayon d'un grand cercle de cette sphère ? Combien mesure un diamètre ?",
+    "mastery_threshold": {
+      "required": 3,
+      "out_of": 4
+    },
+    "exercise_ids": [],
+    "mindmap_id": null,
+    "programme_ref": [
+      {
+        "source": "Cycle 4, classe de 3e, Espace et géométrie, Représentation de l'espace, Objectifs d'apprentissage",
+        "quote": "Définir la boule et la sphère."
+      },
+      {
+        "source": "Cycle 4, classe de 3e, Espace et géométrie, Représentation de l'espace, Objectifs d'apprentissage",
+        "quote": "Définir les grands cercles, le diamètre."
+      }
+    ]
+  },
+  {
+    "id": "G076",
+    "domain": "G",
+    "domain_name": "Espace et géométrie",
+    "label": "Sections planes d'un pavé, d'un cylindre et d'une boule",
+    "description": "Visualiser la section d'un solide par un plan et donner sa nature et ses dimensions : un pavé coupé parallèlement à une face donne un rectangle de mêmes dimensions que cette face (pavé de 6 cm × 4 cm × 3 cm coupé parallèlement à la face de 6 cm sur 4 cm : rectangle de 6 cm sur 4 cm) ; un cylindre coupé perpendiculairement à son axe donne un disque de même rayon, parallèlement à son axe un rectangle dont un côté est la hauteur du cylindre ; une boule coupée par un plan donne un disque, de même rayon que la boule si le plan passe par le centre (grand cercle) ; quand on connaît la distance du plan au centre, le rayon de la section se calcule avec le théorème de Pythagore, une fois ce théorème acquis (étape 8a) : boule de rayon 5 cm, plan à 3 cm du centre, rayon 4 cm, car 5 × 5 − 3 × 3 = 16. Réaliser la section (couper, la tracer en vraie grandeur) ne se fait pas à l'écran : l'élève choisit la section parmi des figures lettrées, donne sa nature, une dimension. L'erreur type est de croire que la section d'un cylindre parallèle à son axe est un disque, ou que toutes les sections d'une boule ont le rayon de la boule. Réponse : QCM, vrai/faux ou un nombre. Figure nécessaire : solide (plan de coupe colorié dans un pavé, un cylindre, une boule).",
+    "prerequisites": [
+      "G075",
+      "G040"
+    ],
+    "difficulty": 6,
+    "school_level": "3e",
+    "validation_test": "On coupe un pavé droit de 8 cm × 5 cm × 3 cm par un plan parallèle à la face de 8 cm sur 5 cm : quelle est la nature de la section, et quelles sont ses dimensions ? On coupe un cylindre par un plan perpendiculaire à son axe : quelle est la nature de la section ? Une boule de rayon 6 cm est coupée par un plan passant par son centre : quel est le rayon de la section ?",
+    "mastery_threshold": {
+      "required": 3,
+      "out_of": 4
+    },
+    "exercise_ids": [],
+    "mindmap_id": null,
+    "programme_ref": [
+      {
+        "source": "Cycle 4, classe de 3e, Espace et géométrie, Représentation de l'espace, Objectifs d'apprentissage",
+        "quote": "Visualiser et réaliser des sections de pavé parallèlement à une face, de cylindre parallèlement ou perpendiculairement à son axe, d'une boule."
+      }
+    ]
   }
 ]

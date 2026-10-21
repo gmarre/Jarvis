@@ -1127,5 +1127,345 @@
         "quote": "Effectuer des calculs sur des horaires et des durées"
       }
     ]
+  },
+  {
+    "id": "P028",
+    "domain": "P",
+    "domain_name": "Grandeurs et mesures",
+    "label": "Aire d'un triangle : base × hauteur ÷ 2",
+    "description": "Calculer l'aire d'un triangle par la formule base × hauteur ÷ 2, où la hauteur est relative au côté choisi comme base (issue du sommet opposé, perpendiculaire à ce côté), y compris quand son pied est sur le prolongement de la base (triangle à angle obtus) et pour un triangle rectangle (les deux côtés de l'angle droit) : base 9 cm et hauteur 4 cm, aire 18 cm² ; côtés de l'angle droit 5 cm et 7 cm, aire 17,5 cm² ; comprendre la formule comme la moitié d'un rectangle ; deux triangles de même base et de même hauteur ont la même aire ; une médiane partage donc un triangle en deux triangles de même aire (arbitrage de l'étape 8 : cette propriété est ici, et non dans G053, pour éviter un cycle). L'erreur type est de prendre un côté oblique pour la hauteur, ou d'oublier de diviser par 2. Réponse : un nombre avec son unité d'aire. Figure utile : geometrie, triangle avec une hauteur en pointillés codée d'un angle droit, longueurs écrites, dont celle d'un côté oblique en distracteur.",
+    "prerequisites": [
+      "P024",
+      "D007",
+      "G016",
+      "G017",
+      "G053"
+    ],
+    "difficulty": 5,
+    "school_level": "5e",
+    "validation_test": "Un triangle a un côté de 12 cm, et la hauteur relative à ce côté mesure 5 cm : quelle est son aire ? Un triangle ABC est rectangle en A, avec AB = 6 cm et AC = 4,5 cm : quelle est son aire ?",
+    "mastery_threshold": {
+      "required": 3,
+      "out_of": 4
+    },
+    "exercise_ids": [],
+    "mindmap_id": null,
+    "programme_ref": [
+      {
+        "source": "Cycle 4, classe de 5e, Espace et géométrie, Triangles, Objectifs d'apprentissage",
+        "quote": "Calculer l'aire d'un triangle."
+      }
+    ]
+  },
+  {
+    "id": "P029",
+    "domain": "P",
+    "domain_name": "Grandeurs et mesures",
+    "label": "Aire d'un parallélogramme et de figures composées",
+    "description": "Calculer l'aire d'un parallélogramme, base × hauteur (le rectangle obtenu en découpant un triangle et en le recollant de l'autre côté), et l'aire d'une figure complexe en la décomposant en rectangles, triangles et parallélogrammes, par somme ou par différence d'aires : parallélogramme de côté 8 cm et de hauteur relative 4,5 cm, 36 cm² ; un rectangle de 12 m sur 5 m privé d'un triangle rectangle de côtés 4 m et 3 m, 60 − 6 = 54 m² ; un trapèze se découpe en un rectangle et des triangles (pas de formule du trapèze). L'erreur type est de multiplier deux côtés consécutifs du parallélogramme (8 × 5 au lieu de 8 × 4,5), ou de compter deux fois une partie commune. Réponse : un nombre avec son unité d'aire. Figure nécessaire : geometrie (parallélogramme avec sa hauteur codée, figures composées avec leurs longueurs, partie retirée en pointillés).",
+    "prerequisites": [
+      "P028",
+      "G049"
+    ],
+    "difficulty": 5,
+    "school_level": "5e",
+    "validation_test": "Un parallélogramme a un côté de 7 cm, et la hauteur relative à ce côté mesure 3,5 cm : quelle est son aire ? Une figure est formée d'un carré de 6 cm de côté et d'un triangle posé sur l'un de ses côtés, de hauteur 4 cm : quelle est l'aire de la figure ?",
+    "mastery_threshold": {
+      "required": 3,
+      "out_of": 4
+    },
+    "exercise_ids": [],
+    "mindmap_id": null,
+    "programme_ref": [
+      {
+        "source": "Cycle 4, classe de 5e, Espace et géométrie, Parallélogrammes, Objectifs d'apprentissage",
+        "quote": "Savoir calculer l'aire d'un parallélogramme et de figures complexes."
+      },
+      {
+        "source": "Cycle 4, Espace et géométrie, présentation commune aux trois classes",
+        "quote": "Le programme propose de travailler en fil rouge des preuves utilisant les aires, afin de mobiliser les grandeurs géométriques"
+      }
+    ]
+  },
+  {
+    "id": "P030",
+    "domain": "P",
+    "domain_name": "Grandeurs et mesures",
+    "label": "Convertir des longueurs et des aires dans des problèmes",
+    "description": "Connaître les unités d'aire du mm² au km² (chaque unité vaut 100 fois la suivante) et résoudre des problèmes où longueurs et aires sont dans des unités différentes : convertir les longueurs dans une même unité avant de calculer (un rectangle de 2,4 m sur 50 cm a une aire de 2,4 × 0,5 = 1,2 m²), ou convertir une aire (2,5 m² = 25 000 cm² ; 45 000 m² = 0,045 km²) ; combien de carreaux de 40 cm de côté pour couvrir 14 m² (1 600 cm² = 0,16 m², 14 ÷ 0,16 = 87,5, donc 88 carreaux). L'hectare (1 ha = 10 000 m²) n'est employé que si l'énoncé le rappelle. L'erreur type est de convertir une aire avec un facteur 10, comme une longueur, ou de multiplier deux longueurs exprimées dans des unités différentes. Réponse : un nombre avec son unité. Figure : aucune.",
+    "prerequisites": [
+      "P025",
+      "P021",
+      "D026"
+    ],
+    "difficulty": 5,
+    "school_level": "5e",
+    "validation_test": "Convertis 3,6 m² en cm², puis 85 000 m² en km². Un rectangle mesure 2,5 m sur 60 cm : quelle est son aire en m² ?",
+    "mastery_threshold": {
+      "required": 3,
+      "out_of": 4
+    },
+    "exercise_ids": [],
+    "mindmap_id": null,
+    "programme_ref": [
+      {
+        "source": "Cycle 4, classe de 5e, Espace et géométrie, Parallélogrammes, Objectifs d'apprentissage",
+        "quote": "Résoudre des problèmes faisant appel à des conversions d'unités de longueur et d'unités d'aires."
+      },
+      {
+        "source": "Cycle 4, classe de 5e, Nombres et calculs, Puissances, Automatismes",
+        "quote": "Connaitre les unités d'aires et de volume."
+      }
+    ]
+  },
+  {
+    "id": "P031",
+    "domain": "P",
+    "domain_name": "Grandeurs et mesures",
+    "label": "Unités de volume et de contenance : cm³, dm³, m³, litre",
+    "description": "Connaître les unités de volume (mm³, cm³, dm³, m³ : chaque unité vaut 1 000 fois la suivante, car 10³ = 1 000) et leur lien avec les contenances : 1 dm³ = 1 L, 1 cm³ = 1 mL, 1 m³ = 1 000 L ; convertir dans les deux sens, avec des nombres décimaux : 3,2 dm³ = 3 200 cm³ ; 2,5 m³ = 2 500 L ; 750 cm³ = 0,75 L = 75 cL. L'erreur type est de convertir avec un facteur 10 ou 100, ou de confondre dm³ et dL. Réponse : un nombre avec son unité ; le litre se tape L, l, litre ou litres. Figure : aucune.",
+    "prerequisites": [
+      "A029",
+      "P015",
+      "D023"
+    ],
+    "difficulty": 5,
+    "school_level": "5e",
+    "validation_test": "Convertis 4,5 dm³ en cm³, puis 0,6 m³ en litres. Une canette contient 33 cL : quel est son volume en cm³ ?",
+    "mastery_threshold": {
+      "required": 3,
+      "out_of": 4
+    },
+    "exercise_ids": [],
+    "mindmap_id": null,
+    "programme_ref": [
+      {
+        "source": "Cycle 4, classe de 5e, Espace et géométrie, Représentation de l'espace, Objectifs d'apprentissage",
+        "quote": "Connaitre et convertir des unités usuelles (volume et capacité)."
+      },
+      {
+        "source": "Cycle 4, classe de 5e, Nombres et calculs, Puissances, Automatismes",
+        "quote": "Connaitre les unités d'aires et de volume."
+      },
+      {
+        "source": "Cycle 4, classe de 5e, Nombres et calculs, Puissances, Objectifs d'apprentissage",
+        "quote": "Connaitre le cube de 10."
+      },
+      {
+        "source": "Cycle 4, programme de 2020 commun aux trois classes, Thème C, Grandeurs et mesures",
+        "quote": "Correspondance entre unités de volume et de contenance (1 L = 1 dm3, 1 000 L = 1 m3)."
+      }
+    ]
+  },
+  {
+    "id": "P032",
+    "domain": "P",
+    "domain_name": "Grandeurs et mesures",
+    "label": "Volume du cube, du pavé droit et du prisme droit",
+    "description": "Calculer le volume d'un cube (l'arête au cube : 4 cm donne 4³ = 64 cm³), d'un pavé droit (longueur × largeur × hauteur : 6 × 2,5 × 4 = 60 cm³) et d'un prisme droit (aire d'une base × hauteur : base en triangle rectangle de côtés 3 cm et 4 cm, d'aire 6 cm², hauteur 10 cm, volume 60 cm³), en reconnaissant la base même quand le prisme est couché ; donner le résultat dans l'unité demandée : un aquarium de 50 cm × 30 cm × 40 cm contient 60 000 cm³, soit 60 L. L'erreur type est de multiplier les trois côtés du triangle de base, de prendre une dimension de la base pour la hauteur du prisme, ou de mélanger les unités. Réponse : un nombre avec son unité de volume ou de contenance. Figure utile : solide (pavé, prisme couché) avec les longueurs écrites sur les arêtes.",
+    "prerequisites": [
+      "P031",
+      "P028",
+      "G071",
+      "D006"
+    ],
+    "difficulty": 5,
+    "school_level": "5e",
+    "validation_test": "Un pavé droit mesure 8 cm, 5 cm et 2,5 cm : quel est son volume ? Un prisme droit a pour base un triangle d'aire 12 cm² et pour hauteur 7 cm : quel est son volume ? Un aquarium mesure 60 cm, 30 cm et 40 cm : combien de litres contient-il quand il est plein ?",
+    "mastery_threshold": {
+      "required": 3,
+      "out_of": 4
+    },
+    "exercise_ids": [],
+    "mindmap_id": null,
+    "programme_ref": [
+      {
+        "source": "Cycle 4, classe de 5e, Espace et géométrie, Représentation de l'espace, Objectifs d'apprentissage",
+        "quote": "Calculer le volume du cube, du pavé droit, du prisme droit."
+      }
+    ]
+  },
+  {
+    "id": "P033",
+    "domain": "P",
+    "domain_name": "Grandeurs et mesures",
+    "label": "Aire d'un disque : π × r²",
+    "description": "Calculer l'aire d'un disque de rayon r par la formule π × r² : rayon 5 cm, aire 25π cm², environ 78,5 cm² ; diamètre 20 m, donc rayon 10 m, aire environ 314 m² ; donner la valeur exacte (36π cm² pour un rayon de 6 cm) ou une valeur arrondie au rang demandé, avec 3,14 ou la touche π de la calculatrice ; distinguer l'aire (π × r²) du périmètre (2 × π × r) ; aire d'une figure composée avec un demi-disque. L'erreur type est d'utiliser le diamètre au lieu du rayon (π × 20² au lieu de π × 10²), ou de calculer (π × r)². Réponse : un nombre avec son unité d'aire, avec une tolérance égale au rang d'arrondi demandé (l'arrondi obtenu avec 3,14 et celui obtenu avec la touche π sont alors acceptés tous les deux) ; la valeur exacte se tape (36π, type texte, forme expression, π déclaré comme lettre) ou se choisit (QCM). Figure utile : geometrie, disque avec son centre, un rayon ou un diamètre écrit.",
+    "prerequisites": [
+      "P023",
+      "A029",
+      "D006"
+    ],
+    "difficulty": 5,
+    "school_level": "5e",
+    "validation_test": "Un disque a un rayon de 6 cm : donne son aire arrondie au dixième de cm². Un disque a un diamètre de 20 m : donne son aire arrondie au m². Laquelle de ces écritures est l'aire exacte d'un disque de rayon 3 cm : 6π cm² ; 9π cm² ; 3π cm² ?",
+    "mastery_threshold": {
+      "required": 3,
+      "out_of": 4
+    },
+    "exercise_ids": [],
+    "mindmap_id": null,
+    "programme_ref": [
+      {
+        "source": "Cycle 4, classe de 5e, Espace et géométrie, Représentation de l'espace, Objectifs d'apprentissage",
+        "quote": "Calculer l'aire du disque, le volume du cylindre de révolution."
+      }
+    ]
+  },
+  {
+    "id": "P034",
+    "domain": "P",
+    "domain_name": "Grandeurs et mesures",
+    "label": "Volume d'un cylindre de révolution",
+    "description": "Calculer le volume d'un cylindre de révolution, aire de la base × hauteur = π × r² × h : rayon 3 cm et hauteur 10 cm, 90π cm³, environ 283 cm³ ; une canette de 6,6 cm de diamètre et de 11 cm de hauteur contient environ 376 cm³, soit 37,6 cL ; c'est la même formule que pour le pavé et le prisme (base × hauteur). L'erreur type est d'utiliser le diamètre, d'oublier le carré du rayon, ou de calculer 2 × π × r × h (l'aire du rectangle du patron). Réponse : un nombre avec son unité de volume ou de contenance, tolérance égale au rang d'arrondi ; valeur exacte en π tapée ou choisie, comme pour P033. Figure utile : solide (cylindre avec rayon et hauteur écrits).",
+    "prerequisites": [
+      "P033",
+      "P032"
+    ],
+    "difficulty": 5,
+    "school_level": "5e",
+    "validation_test": "Un cylindre a un rayon de 4 cm et une hauteur de 10 cm : donne son volume exact, puis arrondi au cm³. Une citerne cylindrique a un diamètre de 2 m et une hauteur de 3 m : quel est son volume en m³, arrondi au dixième ?",
+    "mastery_threshold": {
+      "required": 3,
+      "out_of": 4
+    },
+    "exercise_ids": [],
+    "mindmap_id": null,
+    "programme_ref": [
+      {
+        "source": "Cycle 4, classe de 5e, Espace et géométrie, Représentation de l'espace, Objectifs d'apprentissage",
+        "quote": "Calculer l'aire du disque, le volume du cylindre de révolution."
+      }
+    ]
+  },
+  {
+    "id": "P035",
+    "domain": "P",
+    "domain_name": "Grandeurs et mesures",
+    "label": "Volume d'une pyramide et d'un cône de révolution",
+    "description": "Calculer le volume d'une pyramide ou d'un cône, aire de la base × hauteur ÷ 3 (le tiers du prisme ou du cylindre de même base et de même hauteur) : pyramide à base carrée de 6 cm de côté et de hauteur 10 cm, 36 × 10 ÷ 3 = 120 cm³ ; cône de rayon 3 cm et de hauteur 4 cm, π × 9 × 4 ÷ 3 = 12π cm³, environ 37,7 cm³ ; reconnaître la hauteur (issue du sommet, perpendiculaire à la base), distincte d'une arête latérale ou d'une génératrice ; donner une valeur exacte en fraction (une base de 10 cm² et une hauteur de 10 cm donnent 100/3 cm³) ou arrondie. L'erreur type est d'oublier de diviser par 3, ou de prendre la génératrice ou l'arête latérale pour la hauteur. Réponse : un nombre avec son unité (fraction acceptée, 100/3), tolérance égale au rang d'arrondi ; valeur exacte en π comme pour P033. Figure nécessaire : solide (pyramide ou cône, hauteur en pointillés avec son pied et un angle droit, longueurs écrites, génératrice ou arête latérale écrite en distracteur).",
+    "prerequisites": [
+      "P034",
+      "G073",
+      "C032"
+    ],
+    "difficulty": 6,
+    "school_level": "4e",
+    "validation_test": "Une pyramide a pour base un rectangle de 5 cm sur 4 cm et pour hauteur 9 cm : quel est son volume ? Un cône a un rayon de 6 cm et une hauteur de 5 cm : donne son volume exact, puis arrondi au cm³.",
+    "mastery_threshold": {
+      "required": 3,
+      "out_of": 4
+    },
+    "exercise_ids": [],
+    "mindmap_id": null,
+    "programme_ref": [
+      {
+        "source": "Cycle 4, classe de 4e, Espace et géométrie, Représentation de l'espace, Objectifs d'apprentissage",
+        "quote": "Connaitre le volume de la pyramide et du cône de révolution."
+      },
+      {
+        "source": "Cycle 4, classe de 4e, Espace et géométrie, Représentation de l'espace, Automatismes",
+        "quote": "Connaitre et utiliser les formules du volume d'un cube, d'un pavé, d'un prisme, d'un cylindre."
+      }
+    ]
+  },
+  {
+    "id": "P036",
+    "domain": "P",
+    "domain_name": "Grandeurs et mesures",
+    "label": "Grandeurs quotients : vitesse, débit, masse volumique",
+    "description": "Calculer et utiliser une grandeur quotient, rapport de deux grandeurs de natures différentes, avec son unité composée : vitesse moyenne (distance ÷ durée, en km/h), débit (volume ÷ durée, en L/min : 180 L en 12 min, 15 L/min), masse volumique (masse ÷ volume, en g/cm³ : 54 g pour 20 cm³, 2,7 g/cm³), consommation (L/100 km), prix au kilogramme, densité de population (habitants par km²) ; retrouver l'une des trois grandeurs connaissant les deux autres (à 15 L/min, 300 L s'écoulent en 20 min) ; un quotient de deux grandeurs de même nature est sans unité. L'erreur type est de diviser dans le mauvais sens (durée ÷ distance) ou d'écrire une unité qui ne correspond pas au calcul. La vitesse moyenne en heures entières est déjà en 5e (E007) ; les changements d'unités composées sont dans P037. Réponse : un nombre avec son unité (15 L/min, 2,7 g/cm³ sont acceptés tels quels ; « litres par minute » ne l'est pas encore). Figure : aucune.",
+    "prerequisites": [
+      "E007",
+      "D026",
+      "P031"
+    ],
+    "difficulty": 6,
+    "school_level": "4e",
+    "validation_test": "Un robinet remplit une cuve de 240 L en 16 min : quel est son débit en L/min ? Un objet de 30 cm³ a une masse de 237 g : quelle est sa masse volumique en g/cm³ ? Une randonneuse parcourt 13,5 km en 3 h : quelle est sa vitesse moyenne ?",
+    "mastery_threshold": {
+      "required": 3,
+      "out_of": 4
+    },
+    "exercise_ids": [],
+    "mindmap_id": null,
+    "programme_ref": [
+      {
+        "source": "Cycle 4, classe de 4e, Proportionnalité, fonctions, Proportionnalité, Objectifs d'apprentissage",
+        "quote": "Utiliser des grandeurs quotients, avec ou sans unités."
+      },
+      {
+        "source": "Cycle 4, classe de 5e, Proportionnalité, fonctions, Proportionnalité, Objectifs d'apprentissage",
+        "quote": "Utiliser un coefficient de proportionnalité dans des contextes concrets (prix unitaire, vitesse moyenne, échelle, etc.)."
+      },
+      {
+        "source": "Cycle 4, programme de 2020 commun aux trois classes, Thème C, Grandeurs et mesures",
+        "quote": "Notion de grandeur produit et de grandeur quotient."
+      }
+    ]
+  },
+  {
+    "id": "P037",
+    "domain": "P",
+    "domain_name": "Grandeurs et mesures",
+    "label": "Changer d'unités dans une grandeur quotient : km/h, m/s, L/min",
+    "description": "Convertir une grandeur quotient en convertissant séparément le numérateur et le dénominateur : 72 km/h = 72 000 m en 3 600 s = 20 m/s ; 15 m/s = 15 × 3 600 m par heure = 54 km/h ; 30 L/min = 1 800 L/h = 1,8 m³/h ; 2,7 g/cm³ = 2 700 kg/m³ ; utiliser une durée en heures décimales (1 h 30 min = 1,5 h ; 1 h 12 min = 1,2 h) : à 80 km/h pendant 1 h 15 min, on parcourt 80 × 1,25 = 100 km. L'erreur type est d'écrire 1 h 30 min = 1,30 h, ou de diviser 72 par 60 pour passer en m/s. Réponse : un nombre avec son unité. Figure : aucune.",
+    "prerequisites": [
+      "P036"
+    ],
+    "difficulty": 6,
+    "school_level": "4e",
+    "validation_test": "Convertis 90 km/h en m/s, puis 12 L/min en m³/h. Une voiture roule pendant 1 h 15 min à la vitesse moyenne de 96 km/h : quelle distance parcourt-elle ?",
+    "mastery_threshold": {
+      "required": 3,
+      "out_of": 4
+    },
+    "exercise_ids": [],
+    "mindmap_id": null,
+    "programme_ref": [
+      {
+        "source": "Cycle 4, classe de 4e, Proportionnalité, fonctions, Proportionnalité, Objectifs d'apprentissage",
+        "quote": "Utiliser des grandeurs quotients, avec ou sans unités."
+      },
+      {
+        "source": "Cycle 4, Proportionnalité, fonctions, présentation commune aux trois classes",
+        "quote": "changement d'échelle, changement d'unité, pourcentages, rapports et ratios."
+      },
+      {
+        "source": "Cycle 4, programme de 2020 commun aux trois classes, Thème C, Grandeurs et mesures",
+        "quote": "Mener des calculs impliquant des grandeurs mesurables, notamment des grandeurs composées, exprimer les résultats dans les unités adaptées."
+      }
+    ]
+  },
+  {
+    "id": "P038",
+    "domain": "P",
+    "domain_name": "Grandeurs et mesures",
+    "label": "Volume d'une boule : 4/3 × π × r³",
+    "description": "Calculer le volume d'une boule de rayon r par la formule 4/3 × π × r³ : rayon 3 cm, 4/3 × π × 27 = 36π cm³, environ 113 cm³ ; une balle de 12 cm de diamètre, donc de rayon 6 cm, 288π cm³, environ 905 cm³ ; comparer avec le cylindre qui contient la boule (elle en occupe les deux tiers) ; résoudre un problème de remplissage (combien de billes, quelle contenance). L'erreur type est d'utiliser le diamètre, d'élever le rayon au carré au lieu du cube, ou d'oublier le facteur 4/3. Réponse : un nombre avec son unité, tolérance égale au rang d'arrondi ; valeur exacte en π comme pour P033. Figure utile : solide (boule avec son centre et un rayon écrit).",
+    "prerequisites": [
+      "P035",
+      "G075",
+      "C015"
+    ],
+    "difficulty": 6,
+    "school_level": "3e",
+    "validation_test": "Une boule a un rayon de 3 cm : donne son volume exact, puis arrondi au cm³. Une balle a un diamètre de 10 cm : quel est son volume, arrondi au cm³ ?",
+    "mastery_threshold": {
+      "required": 3,
+      "out_of": 4
+    },
+    "exercise_ids": [],
+    "mindmap_id": null,
+    "programme_ref": [
+      {
+        "source": "Cycle 4, classe de 3e, Espace et géométrie, Représentation de l'espace, Objectifs d'apprentissage",
+        "quote": "Connaitre et utiliser la formule du volume d'une boule de rayon donné."
+      },
+      {
+        "source": "Cycle 4, classe de 3e, Espace et géométrie, Représentation de l'espace, Automatismes",
+        "quote": "Connaitre et utiliser les formules du volume d'une pyramide ou d'un cône."
+      }
+    ]
   }
 ]
