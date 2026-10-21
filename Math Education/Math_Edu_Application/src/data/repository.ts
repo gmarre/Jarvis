@@ -175,7 +175,7 @@ export interface DataRepository {
   /**
    * Corrige une reponse. En production c'est le serveur qui corrige (Edge
    * Function `corriger`) : l'application n'a pas les reponses. Sans mode, rien
-   * n'est enregistre. En mode « positionnement », le serveur garde le verdict :
+   * n'est enregistre, et le serveur le refuse a un eleve (migration 0023). En mode « positionnement », le serveur garde le verdict :
    * c'est la preuve qu'exige enregistrer_positionnement (migration 0021).
    */
   corriger(exerciseId: string, reponse: string, mode?: 'positionnement'): Promise<Correction>

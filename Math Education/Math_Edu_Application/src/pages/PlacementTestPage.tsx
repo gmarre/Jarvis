@@ -135,11 +135,12 @@ export default function PlacementTestPage() {
     if (!state.current || !exercise || correcting) return
     setCorrectionError(null)
     // Le corrige d'une question passee est demande en fond, pour la revue de
-    // fin de test : une reponse vide est comptee fausse, rien n'est enregistre.
+    // fin de test : une reponse vide est comptee fausse. Le serveur la garde
+    // (mode positionnement) : il ne corrige rien pour un eleve sans l'enregistrer.
     const passee = exercise
     const index = revue.length
     setRevue((current) => [...current, { exercise: passee, reponse: null, correction: null }])
-    void corriger(passee.id, '')
+    void corriger(passee.id, '', 'positionnement')
       .then((correction) =>
         setRevue((current) =>
           current.map((q, i) => (i === index ? { ...q, correction } : q)),

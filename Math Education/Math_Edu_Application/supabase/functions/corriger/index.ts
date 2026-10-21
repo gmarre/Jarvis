@@ -13,8 +13,8 @@
 //           erreur de raisonnement, corrige), plus ce qui a ete enregistre.
 //
 // Les modes (sprint 6, progression cote serveur, migration 0021) :
-//   - sans mode : correction seule, rien n'est ecrit (revue d'une question
-//     passee) ;
+//   - sans mode : correction seule, rien n'est ecrit ; refusee a un eleve
+//     (migration 0023), ouverte aux autres comptes (recette) ;
 //   - "exercice" : la tentative est enregistree et la progression de la
 //     competence avance ici, avec la regle de _shared/maitrise.ts. La reponse
 //     porte `progression` (ligne ecrite, acquisition, controle, epreuve) et
@@ -146,6 +146,20 @@ Deno.serve(async (requete) => {
   }
   if (typeof reponse !== 'string' || reponse.length > LONGUEUR_MAX) {
     return repondre(400, { erreur: 'reponse invalide' })
+  }
+
+  // Un eleve ne recoit jamais une correction qui ne soit pas enregistree :
+  // sinon il lirait la reponse attendue, puis la redonnerait au test de
+  // positionnement (revue de securite du sprint 6, migration 0023). La
+  // correction seule reste ouverte aux autres comptes (recette).
+  if (mode === null) {
+    try {
+      if (await estEleve(admin, utilisateur.user.id)) {
+        return repondre(403, { erreur: 'Une réponse d’élève est toujours enregistrée' })
+      }
+    } catch (cause) {
+      return repondre(500, { erreur: cause instanceof Error ? cause.message : String(cause) })
+    }
   }
 
   if (question) {

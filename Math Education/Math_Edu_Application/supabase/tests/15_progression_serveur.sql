@@ -111,4 +111,35 @@ select 'TEST 196 un seul positionnement, aucun pour le professeur' as test,
        ((select count(*) from placement_results where user_id = 'a1000000-0000-0000-0000-000000000001') = 1
         and not exists (select 1 from placement_results where user_id = 'a1000000-0000-0000-0000-000000000002')) as ok;
 
+-- --- Reponse juste apres avoir lu la correction (migration 0023) -----------------
+
+-- E-02 : faux une heure avant (correction lue), puis juste. E-03 : deja fait
+-- en exercice, puis juste au test. Ni l'un ni l'autre ne prouve C001.
+insert into placement_reponses (user_id, exercise_id, skill_id, juste, created_at) values
+  ('a1000000-0000-0000-0000-000000000001', 'EX-C001-E-02', 'C001', false, now() - interval '1 hour'),
+  ('a1000000-0000-0000-0000-000000000001', 'EX-C001-E-02', 'C001', true, now()),
+  ('a1000000-0000-0000-0000-000000000001', 'EX-C001-E-03', 'C001', true, now());
+insert into exercise_attempts (user_id, exercise_id, skill_id, is_correct, created_at)
+values ('a1000000-0000-0000-0000-000000000001', 'EX-C001-E-03', 'C001', false, now() - interval '2 hours');
+
+set role authenticated;
+set request.jwt.claim.sub = 'a1000000-0000-0000-0000-000000000001';
+\echo '--- C001 juste seulement apres la correction : refuse ---'
+\set ON_ERROR_STOP off
+select enregistrer_positionnement(array['C001'], 2, array[]::text[], 'C001', 1);
+\set ON_ERROR_STOP on
+reset role;
+select 'TEST 197 une reponse juste apres la correction ne prouve rien' as test,
+       not exists (select 1 from skill_progress
+                   where user_id = 'a1000000-0000-0000-0000-000000000001' and skill_id = 'C001') as ok;
+
+-- E-04 : juste du premier coup.
+insert into placement_reponses (user_id, exercise_id, skill_id, juste)
+values ('a1000000-0000-0000-0000-000000000001', 'EX-C001-E-04', 'C001', true);
+set role authenticated;
+set request.jwt.claim.sub = 'a1000000-0000-0000-0000-000000000001';
+select 'TEST 198 juste du premier coup : C001 validee' as test,
+       (enregistrer_positionnement(array['C001'], 3, array[]::text[], 'C001', 1) = 1) as ok;
+reset role;
+
 select 'TEST FIN 15 le fichier est alle jusqu au bout' as test, true as ok;
