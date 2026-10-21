@@ -3,7 +3,6 @@ import { Navigate, useNavigate, useParams } from 'react-router-dom'
 
 import { getSkill, getSuper } from '@/content'
 import { cn } from '@/lib/cn'
-import { newId } from '@/lib/id'
 import { resultatSuper, type ResultatQuestion } from '@/lib/super'
 import { AnswerInput } from '@/components/exercise/AnswerInput'
 import { ExerciseFigure } from '@/components/exercise/ExerciseFigure'
@@ -38,7 +37,7 @@ export default function SuperPage() {
 
 function SuperEpreuve({ sx }: { sx: SuperExercise }) {
   const navigate = useNavigate()
-  const { corriger, enregistrerSuper } = useAuthenticatedSession()
+  const { rendreSuper } = useAuthenticatedSession()
   const [phase, setPhase] = useState<Phase>('consigne')
   const [index, setIndex] = useState(0)
   const [reponses, setReponses] = useState<Record<string, string>>({})
@@ -224,34 +223,25 @@ function SuperEpreuve({ sx }: { sx: SuperExercise }) {
     setEnCorrection(true)
     setErreur(null)
     try {
-      // Une question laissee vide part aussi au serveur : elle y est comptee
-      // fausse, et sa correction rapporte le corrige a afficher.
-      const corrections = await Promise.all(
-        sx.questions.map(async (question) => {
-          const reponse = reponses[question.key] ?? ''
-          const exo = questionCommeExercice(sx, question)
-          const correction = await corriger(exo.id, reponse)
-          return {
-            key: question.key,
-            reponse,
-            affichee: afficherReponse(exo.choices, question.type, reponse),
-            correction,
-          }
-        }),
+      // Toute la copie part au serveur, qui corrige et compte les points
+      // (sprint 6). Une question laissee vide y est comptee fausse, et sa
+      // correction rapporte le corrige a afficher.
+      const { corrections: parCle, effet: changement } = await rendreSuper(
+        sx,
+        Object.fromEntries(sx.questions.map((question) => [question.key, reponses[question.key] ?? ''])),
+        Math.round((Date.now() - debut.current) / 1000),
       )
-      const bilan = resultatSuper(sx, corrections)
-      const changement = enregistrerSuper({
-        id: newId(),
-        super_id: sx.id,
-        skill_id: sx.skill_id,
-        score: bilan.score,
-        total: bilan.total,
-        reussi: bilan.reussi,
-        reponses: Object.fromEntries(
-          corrections.map((c) => [c.key, { reponse: c.reponse, juste: c.correction.isCorrect }]),
-        ),
-        duree_s: Math.round((Date.now() - debut.current) / 1000),
-        created_at: new Date().toISOString(),
+      const corrections = sx.questions.map((question) => {
+        const reponse = reponses[question.key] ?? ''
+        const exo = questionCommeExercice(sx, question)
+        const correction = parCle[question.key]
+        if (!correction) throw new Error(`Correction absente pour ${question.key}`)
+        return {
+          key: question.key,
+          reponse,
+          affichee: afficherReponse(exo.choices, question.type, reponse),
+          correction,
+        }
       })
       setEffet(changement)
       setResultats(corrections)

@@ -17,6 +17,7 @@
 import type { ProgressMap } from '@/lib/dag'
 import type { DefiProgressMap } from '@/lib/defis'
 import type { Correction } from '@/lib/exercise'
+import type { SuperExercise } from '@/types/content'
 import type {
   AvailabilitySlot,
   Booking,
@@ -116,6 +117,30 @@ export function isProfileComplete(profile: Profile): boolean {
   return Boolean(profile.niveau_scolaire) && Boolean(profile.date_naissance)
 }
 
+/** Ce que le serveur a enregistre apres une reponse d'exercice (sprint 6). */
+export interface ReponseEnregistree {
+  correction: Correction
+  /** La ligne de progression de la competence, telle qu'ecrite. */
+  ligne: SkillProgress
+  /** La competence vient d'etre acquise (niveau 4) par cette reponse. */
+  vientDEtreAcquise: boolean
+  /** Cette reponse etait un controle d'une competence acquise. */
+  controle: 'reussi' | 'rate' | null
+  /** Exercices faits : le super exercice de la competence reste a reussir. */
+  attendEpreuve: boolean
+  tentative: ExerciseAttempt
+}
+
+/** Ce que le serveur a enregistre apres un super exercice rendu (sprint 6). */
+export interface SuperRendu {
+  /** La correction de chaque question, par cle (q1, q2...). */
+  corrections: Record<string, Correction>
+  passage: SuperAttempt
+  /** La ligne de la porteuse quand son niveau change, null sinon. */
+  ligne: SkillProgress | null
+  vientDEtreAcquise: boolean
+}
+
 export interface DataRepository {
   // --- Authentification ---------------------------------------------------
 
@@ -149,23 +174,39 @@ export interface DataRepository {
 
   /**
    * Corrige une reponse. En production c'est le serveur qui corrige (Edge
-   * Function `corriger`) : l'application n'a pas les reponses. Ne fait que
-   * corriger, sans rien enregistrer : la tentative suit par saveAttempt.
+   * Function `corriger`) : l'application n'a pas les reponses. Sans mode, rien
+   * n'est enregistre. En mode « positionnement », le serveur garde le verdict :
+   * c'est la preuve qu'exige enregistrer_positionnement (migration 0021).
    */
-  corriger(exerciseId: string, reponse: string): Promise<Correction>
+  corriger(exerciseId: string, reponse: string, mode?: 'positionnement'): Promise<Correction>
+  /**
+   * Une reponse d'exercice (sprint 6) : le serveur la corrige, enregistre la
+   * tentative et fait avancer la progression de la competence, puis rend ce
+   * qu'il a ecrit. En demonstration, le meme calcul se fait localement.
+   */
+  repondre(exercise: { id: string; skill_id: string }, reponse: string, dureeS: number): Promise<ReponseEnregistree>
+  /**
+   * Super exercice rendu (sprint 6) : le serveur corrige toute la copie, compte
+   * les points, enregistre le passage et applique la regle de maitrise a la
+   * competence porteuse.
+   */
+  rendreSuper(sx: SuperExercise, reponses: Record<string, string>, dureeS: number): Promise<SuperRendu>
 
   // --- Mutations, une par intention --------------------------------------
 
   updateProfile(patch: Partial<Profile>): Promise<Profile>
-  /** Une reponse d'exercice : une progression mise a jour, une tentative ajoutee. */
-  saveAttempt(attempt: ExerciseAttempt, progress: SkillProgress): Promise<void>
-  /** Carte mentale revue : avance l'echeance de revision espacee. */
+  /**
+   * Carte mentale revue : avance l'echeance de revision espacee. Seules
+   * review_box, next_review_at et updated_at sont ecrites (migration 0021).
+   */
   saveProgress(progress: SkillProgress): Promise<void>
   /** Carte defi retournee : sa boite et sa prochaine echeance. */
   saveDefi(progress: FlashcardProgress): Promise<void>
-  /** Super exercice rendu : le passage, score et reponses compris. */
-  saveSuperAttempt(attempt: SuperAttempt): Promise<void>
-  /** Cloture du positionnement : le resultat, et la progression initiale en lot. */
+  /**
+   * Cloture du positionnement : le resultat, et la progression initiale en
+   * lot. Le serveur n'accepte comme acquises que les competences reussies
+   * pendant le test et leurs prerequis.
+   */
   savePlacement(result: PlacementResult, progress: SkillProgress[]): Promise<void>
   createBooking(slotId: string, skillId: string | null): Promise<Booking>
   deleteBooking(bookingId: string): Promise<void>

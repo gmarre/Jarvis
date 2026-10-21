@@ -1,10 +1,10 @@
 import { beforeEach, describe, expect, it, vi } from 'vitest'
 
 import { emptyProgress } from '@/lib/dag'
-import { skills } from '@/content'
+import { getExercisesForSkill, getSuperForSkill, skills } from '@/content'
 import { activerRecetteMock, mockRepository, resetMockRepository } from './mockRepository'
 import { RepositoryError, isProfileComplete, type SignUpInput } from './repository'
-import type { ExerciseAttempt, PlacementResult, Profile, SkillProgress } from '@/types/domain'
+import type { PlacementResult, Profile, SkillProgress } from '@/types/domain'
 
 // Ces tests decrivent le CONTRAT du repository, pas les details du mock. Le
 // repository Supabase implemente la meme interface : ce fichier dit ce que les
@@ -194,30 +194,19 @@ describe('isProfileComplete', () => {
 })
 
 describe('mutations granulaires', () => {
-  it('enregistre une tentative sans toucher aux autres competences', async () => {
+  it('enregistre une reponse sans toucher aux autres competences', async () => {
     const session = await inscrire()
     const avant = session.progress
+    const exercice = getExercisesForSkill('A010')[0]
 
-    const progress: SkillProgress = {
-      ...emptyProgress('A010'),
-      status: 'in_progress',
-      recent: [true],
-      score: 1,
-      attempts: 1,
-    }
-    const attempt: ExerciseAttempt = {
-      id: 'a1',
-      exercise_id: 'ex1',
-      skill_id: 'A010',
-      answer: '7',
-      is_correct: true,
-      duration_s: 12,
-      created_at: new Date().toISOString(),
-    }
-
-    await mockRepository.saveAttempt(attempt, progress)
+    // Comme le serveur (sprint 6) : correction, tentative et progression en
+    // un seul appel. Une reponse vide est fausse.
+    const r = await mockRepository.repondre(exercice, '', 12)
     const apres = await mockRepository.getSession()
 
+    expect(r.correction.isCorrect).toBe(false)
+    expect(r.tentative).toMatchObject({ exercise_id: exercice.id, skill_id: 'A010', duration_s: 12 })
+    expect(apres?.progress.A010).toEqual(r.ligne)
     expect(apres?.progress.A010.status).toBe('in_progress')
     expect(apres?.attempts).toHaveLength(1)
     // Toutes les autres lignes sont inchangees : c'est tout l'objet du passage
@@ -226,6 +215,18 @@ describe('mutations granulaires', () => {
     for (const id of autres) {
       expect(apres?.progress[id]).toEqual(avant[id])
     }
+  })
+
+  it('rend un super exercice : copie corrigee, passage enregistre, porteuse inchangee si rate', async () => {
+    await inscrire()
+    const sx = getSuperForSkill('C012')[0]
+    const r = await mockRepository.rendreSuper(sx, {}, 600)
+    const apres = await mockRepository.getSession()
+
+    expect(Object.keys(r.corrections).sort()).toEqual(sx.questions.map((q) => q.key).sort())
+    expect(r.passage).toMatchObject({ super_id: sx.id, skill_id: 'C012', score: 0, reussi: false, duree_s: 600 })
+    expect(r.ligne).toBeNull()
+    expect(apres?.superAttempts).toHaveLength(1)
   })
 
   it('avance l echeance de revision sans creer de tentative', async () => {

@@ -3,7 +3,7 @@ import { createContext, useContext } from 'react'
 import type { Catalog, ProfileCompletion, Session, SignUpInput } from '@/data'
 import type { ProgressMap } from '@/lib/dag'
 import type { Correction } from '@/lib/exercise'
-import type { Flashcard, PublicExercise } from '@/types/content'
+import type { Flashcard, PublicExercise, SuperExercise } from '@/types/content'
 import type {
   CourseOffer,
   AccordPublic,
@@ -11,7 +11,6 @@ import type {
   ModificationEnAttente,
   PlacementResult,
   Profile,
-  SuperAttempt,
 } from '@/types/domain'
 
 // Contrat de la session et hooks d'acces. Separe du provider pour que ce
@@ -94,17 +93,25 @@ export interface SessionValue {
     raw: string,
     durationS: number,
   ) => Promise<AnswerResult>
-  /** Correction seule, sans rien enregistrer : sert au test de positionnement. */
-  corriger: (exerciseId: string, raw: string) => Promise<Correction>
+  /**
+   * Correction seule. En mode « positionnement », le serveur garde le verdict,
+   * preuve exigee a la cloture du test (migration 0021).
+   */
+  corriger: (exerciseId: string, raw: string, mode?: 'positionnement') => Promise<Correction>
   /** Marque une carte mentale comme revue : passe a l'echeance Leitner suivante. */
   reviewSkill: (skillId: string) => void
   /** Carte defi retournee : l'eleve dit s'il savait (lib/defis.ts). */
   reviserDefi: (carte: Flashcard, savait: boolean) => void
   /**
-   * Super exercice rendu : enregistre le passage (score, reponses) et applique
-   * la regle de maitrise a sa competence porteuse (niveau 4 s'il est reussi).
+   * Super exercice rendu : le serveur corrige la copie, enregistre le passage
+   * et applique la regle de maitrise a sa competence porteuse (niveau 4 s'il
+   * est reussi). Rejette si la correction echoue : rien n'est enregistre.
    */
-  enregistrerSuper: (attempt: SuperAttempt) => EffetSuper
+  rendreSuper: (
+    sx: SuperExercise,
+    reponses: Record<string, string>,
+    dureeS: number,
+  ) => Promise<{ corrections: Record<string, Correction>; effet: EffetSuper }>
   /** Cloture le test de positionnement. */
   completePlacement: (result: PlacementResult, progress: ProgressMap) => void
   bookSlot: (slotId: string, skillId: string | null) => void

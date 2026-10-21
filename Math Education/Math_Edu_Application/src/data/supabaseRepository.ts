@@ -26,6 +26,7 @@ import {
   type NewSlot,
   type ProfileCompletion,
   type Session,
+  type ReponseEnregistree,
 } from './repository'
 import type {
   AccordPublic,
@@ -209,6 +210,22 @@ async function appelerParent<T>(nom: string, corps: Record<string, unknown>): Pr
 /** Meme contrat pour `rappel-revision` (migration 0017). */
 async function appelerRappel<T>(corps: Record<string, unknown>): Promise<T> {
   return appelerFonction<T>('rappel-revision', corps)
+}
+
+/**
+ * Appel de `corriger` ou de `rendre-super` : un refus (4xx) garde son message,
+ * une panne donne la consigne de l'ecran d'exercice, la reponse restant saisie.
+ */
+async function appelerCorrection<T>(nom: string, corps: Record<string, unknown>): Promise<T> {
+  try {
+    return await appelerFonction<T>(nom, corps)
+  } catch (cause) {
+    if (cause instanceof RepositoryError && cause.refus) throw cause
+    throw new RepositoryError(
+      "La correction n'a pas pu se faire. Vérifie ta connexion et valide à nouveau.",
+      cause instanceof Error ? cause : undefined,
+    )
+  }
 }
 
 async function appelerFonction<T>(nom: string, corps: Record<string, unknown>): Promise<T> {
@@ -459,10 +476,10 @@ export const supabaseRepository: DataRepository = {
     return versProfil(data as LigneProfil)
   },
 
-  async corriger(exerciseId, reponse) {
+  async corriger(exerciseId, reponse, mode) {
     const db = requireSupabase()
     const { data, error } = await db.functions.invoke<Correction>('corriger', {
-      body: { exercise_id: exerciseId, reponse },
+      body: mode ? { exercise_id: exerciseId, reponse, mode } : { exercise_id: exerciseId, reponse },
     })
     if (error || !data) {
       throw new RepositoryError(
@@ -512,30 +529,38 @@ export const supabaseRepository: DataRepository = {
     return versProfil(data as LigneProfil)
   },
 
-  async saveAttempt(attempt: ExerciseAttempt, progress: SkillProgress) {
-    const db = requireSupabase()
-    const { data: utilisateur } = await db.auth.getUser()
-    if (!utilisateur.user) throw new RepositoryError('Aucune session ouverte')
-    const userId = utilisateur.user.id
+  async repondre(exercise, reponse, dureeS) {
+    // Le serveur corrige, ecrit la tentative et la progression (sprint 6) :
+    // le navigateur ne peut plus les ecrire (migration 0021).
+    const r = await appelerCorrection<
+      Correction & {
+        progression: Omit<ReponseEnregistree, 'correction' | 'tentative' | 'ligne'> & { ligne: SkillProgress }
+        tentative: ExerciseAttempt
+      }
+    >('corriger', { exercise_id: exercise.id, reponse, mode: 'exercice', duree_s: dureeS })
+    const { progression, tentative, ...correction } = r
+    return {
+      correction,
+      ligne: progression.ligne,
+      vientDEtreAcquise: progression.vientDEtreAcquise,
+      controle: progression.controle,
+      attendEpreuve: progression.attendEpreuve,
+      tentative,
+    }
+  },
 
-    // Deux ecritures, et deux seulement : une ligne de progression, une
-    // tentative. C'est tout l'objet du passage aux mutations granulaires.
-    const [progression, tentative] = await Promise.all([
-      db.from('skill_progress').upsert({ ...progress, user_id: userId }, { onConflict: 'user_id,skill_id' }),
-      db.from('exercise_attempts').insert({
-        id: attempt.id,
-        user_id: userId,
-        exercise_id: attempt.exercise_id,
-        skill_id: attempt.skill_id,
-        answer: attempt.answer,
-        is_correct: attempt.is_correct,
-        duration_s: attempt.duration_s,
-        created_at: attempt.created_at,
-      }),
-    ])
-
-    if (progression.error) throw erreur('Enregistrement de la progression', progression.error)
-    if (tentative.error) throw erreur('Enregistrement de la tentative', tentative.error)
+  async rendreSuper(sx, reponses, dureeS) {
+    const r = await appelerCorrection<{
+      corrections: Record<string, Correction>
+      passage: SuperAttempt
+      progression: { ligne: SkillProgress; vientDEtreAcquise: boolean } | null
+    }>('rendre-super', { super_id: sx.id, reponses, duree_s: dureeS })
+    return {
+      corrections: r.corrections,
+      passage: r.passage,
+      ligne: r.progression?.ligne ?? null,
+      vientDEtreAcquise: r.progression?.vientDEtreAcquise ?? false,
+    }
   },
 
   async saveProgress(progress: SkillProgress) {
@@ -543,9 +568,17 @@ export const supabaseRepository: DataRepository = {
     const { data: utilisateur } = await db.auth.getUser()
     if (!utilisateur.user) throw new RepositoryError('Aucune session ouverte')
 
+    // Seules ces trois colonnes restent ecrites par le navigateur : le reste
+    // de la ligne appartient au serveur (trigger de la migration 0021).
     const { error } = await db
       .from('skill_progress')
-      .upsert({ ...progress, user_id: utilisateur.user.id }, { onConflict: 'user_id,skill_id' })
+      .update({
+        review_box: progress.review_box,
+        next_review_at: progress.next_review_at,
+        updated_at: progress.updated_at,
+      })
+      .eq('user_id', utilisateur.user.id)
+      .eq('skill_id', progress.skill_id)
 
     if (error) throw erreur('Enregistrement de la revision', error)
   },
@@ -562,47 +595,19 @@ export const supabaseRepository: DataRepository = {
     if (error) throw erreur('Enregistrement de la carte defi', error)
   },
 
-  async saveSuperAttempt(attempt: SuperAttempt) {
-    const db = requireSupabase()
-    const { data: utilisateur } = await db.auth.getUser()
-    if (!utilisateur.user) throw new RepositoryError('Aucune session ouverte')
-
-    const { error } = await db.from('super_attempts').insert({ ...attempt, user_id: utilisateur.user.id })
-    if (error) throw erreur('Enregistrement du super exercice', error)
-  },
-
   async savePlacement(result: PlacementResult, progress: SkillProgress[]) {
     const db = requireSupabase()
-    const { data: utilisateur } = await db.auth.getUser()
-    if (!utilisateur.user) throw new RepositoryError('Aucune session ouverte')
-    const userId = utilisateur.user.id
-
-    const { error: erreurResultat } = await db.from('placement_results').insert({
-      user_id: userId,
-      questions_posees: result.questions_posees,
-      competences_maitrisees: result.competences_maitrisees,
-      competences_totales: result.competences_totales,
-      lacunes_racines: result.lacunes_racines,
-      objectif_skill_id: result.objectif_skill_id,
-      estimation_semaines: result.estimation_semaines,
+    // Le serveur verifie chaque competence declaree acquise contre les
+    // reponses qu'il a lui-meme corrigees pendant le test (migration 0021),
+    // puis ecrit le resultat et les lignes de progression.
+    const { error } = await db.rpc('enregistrer_positionnement', {
+      p_maitrisees: progress.filter((ligne) => ligne.status === 'mastered').map((ligne) => ligne.skill_id),
+      p_questions: result.questions_posees,
+      p_lacunes: result.lacunes_racines,
+      p_objectif: result.objectif_skill_id,
+      p_estimation: result.estimation_semaines,
     })
-    if (erreurResultat) throw erreur('Enregistrement du positionnement', erreurResultat)
-
-    // Seules les competences reellement evaluees sont ecrites. Poser les 38
-    // lignes dont 30 vides remplirait la base de bruit, et le convertisseur
-    // comble les absentes a la lecture.
-    const aEcrire = progress.filter(
-      (ligne) => ligne.status !== 'locked' || ligne.attempts > 0,
-    )
-    if (aEcrire.length === 0) return
-
-    const { error } = await db
-      .from('skill_progress')
-      .upsert(
-        aEcrire.map((ligne) => ({ ...ligne, user_id: userId })),
-        { onConflict: 'user_id,skill_id' },
-      )
-    if (error) throw erreur('Enregistrement de la progression initiale', error)
+    if (error) throw erreur('Enregistrement du positionnement', error)
   },
 
   async createBooking(slotId, skillId) {
@@ -943,6 +948,7 @@ export const supabaseRepository: DataRepository = {
       'placement_results',
       'flashcard_progress',
       'super_attempts',
+      'placement_reponses',
     ] as const
     const resultats = await Promise.all(
       tables.map((t) => db.from(t).select('*').eq(t === 'profiles' ? 'id' : 'user_id', eleveId)),

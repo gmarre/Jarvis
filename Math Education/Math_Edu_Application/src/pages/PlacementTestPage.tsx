@@ -112,7 +112,7 @@ export default function PlacementTestPage() {
     setCorrectionError(null)
     let isCorrect: boolean
     try {
-      const correction = await corriger(exercise.id, answer)
+      const correction = await corriger(exercise.id, answer, 'positionnement')
       isCorrect = correction.isCorrect
       setRevue((current) => [...current, { exercise, reponse: answer, correction }])
     } catch (cause) {

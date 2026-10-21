@@ -15,11 +15,12 @@ import {
   buildNewAccountSnapshot,
   profMarcProfile,
 } from '@/mocks/mockData'
-import { emptyProgress } from '@/lib/dag'
+import { applyAttempt, applySuper, emptyProgress } from '@/lib/dag'
+import { epreuveDe, resultatSuper } from '@/lib/super'
 import { newId } from '@/lib/id'
-import { skills } from '@/content'
+import { getSuperForSkill, skills } from '@/content'
 import { assurerContenu, chargerContenuLocal, versContenuPublic } from '@/content/chargement'
-import { checkAnswer } from '@/lib/exercise'
+import { checkAnswer, type Correction } from '@/lib/exercise'
 import { MINIMUM_AGE_WITHOUT_CONSENT, ageFrom, estMineur } from '@/lib/age'
 import { verifierValeur } from '../../supabase/functions/_shared/accord'
 import { idQuestionSuper, type Exercise } from '@/types/content'
@@ -307,15 +308,83 @@ export const mockRepository: DataRepository = {
     return wait(profile)
   },
 
-  async saveAttempt(attempt, progress) {
+  // Demonstration : le calcul du serveur (`corriger` en mode exercice), fait
+  // ici avec les memes fonctions partagees.
+  async repondre(exercise, reponse, dureeS) {
+    const correction = await this.corriger(exercise.id, reponse)
     const session = exigerSession()
+    const maintenant = new Date()
+    const epreuve = epreuveDe(
+      getSuperForSkill(exercise.skill_id).map((sx) => sx.id),
+      session.superAttempts,
+    )
+    const r = applyAttempt(session.progress, exercise.skill_id, exercise.id, correction.isCorrect, maintenant, epreuve)
+    const tentative = {
+      id: newId(),
+      exercise_id: exercise.id,
+      skill_id: exercise.skill_id,
+      answer: reponse,
+      is_correct: correction.isCorrect,
+      duration_s: Math.max(0, Math.round(dureeS)),
+      created_at: maintenant.toISOString(),
+    }
     courante = {
       ...session,
-      progress: { ...session.progress, [progress.skill_id]: progress },
-      attempts: [attempt, ...session.attempts],
+      progress: { ...session.progress, [exercise.skill_id]: r.progress },
+      attempts: [tentative, ...session.attempts],
     }
     persister()
-    await wait(undefined)
+    return {
+      correction,
+      ligne: r.progress,
+      vientDEtreAcquise: r.justMastered,
+      controle: r.controle,
+      attendEpreuve: r.attendEpreuve,
+      tentative,
+    }
+  },
+
+  // Demonstration : le calcul de `rendre-super`.
+  async rendreSuper(sx, reponses, dureeS) {
+    const corrections: Record<string, Correction> = {}
+    for (const q of sx.questions) {
+      corrections[q.key] = await this.corriger(idQuestionSuper(sx.id, q.key), reponses[q.key] ?? '')
+    }
+    const bilan = resultatSuper(
+      sx,
+      sx.questions.map((q) => ({ key: q.key, correction: corrections[q.key] })),
+    )
+    const session = exigerSession()
+    const passage = {
+      id: newId(),
+      super_id: sx.id,
+      skill_id: sx.skill_id,
+      score: bilan.score,
+      total: bilan.total,
+      reussi: bilan.reussi,
+      reponses: Object.fromEntries(
+        sx.questions.map((q) => [q.key, { reponse: reponses[q.key] ?? '', juste: corrections[q.key].isCorrect }]),
+      ),
+      duree_s: Math.max(0, Math.round(dureeS)),
+      created_at: new Date().toISOString(),
+    }
+    const effet = applySuper(session.progress, sx.skill_id, {
+      reussie: bilan.reussi,
+      sansFaute: bilan.reussi && bilan.score === bilan.total,
+    })
+    const change = effet.progress.niveau !== effet.niveauAvant
+    courante = {
+      ...session,
+      superAttempts: [passage, ...session.superAttempts],
+      progress: change ? { ...session.progress, [sx.skill_id]: effet.progress } : session.progress,
+    }
+    persister()
+    return {
+      corrections,
+      passage,
+      ligne: change ? effet.progress : null,
+      vientDEtreAcquise: effet.justMastered,
+    }
   },
 
   async saveProgress(progress) {
@@ -335,18 +404,14 @@ export const mockRepository: DataRepository = {
     await wait(undefined)
   },
 
-  async saveSuperAttempt(attempt) {
-    const session = exigerSession()
-    courante = { ...session, superAttempts: [attempt, ...session.superAttempts] }
-    persister()
-    await wait(undefined)
-  },
-
   async savePlacement(result, progress) {
     const session = exigerSession()
     const carte = { ...session.progress }
     for (const skill of skills) carte[skill.id] = carte[skill.id] ?? emptyProgress(skill.id)
-    for (const ligne of progress) carte[ligne.skill_id] = ligne
+    // Meme regle que enregistrer_positionnement (migration 0021).
+    for (const ligne of progress) {
+      if (ligne.status === 'mastered' && (carte[ligne.skill_id]?.niveau ?? 0) < 4) carte[ligne.skill_id] = ligne
+    }
 
     courante = {
       ...session,

@@ -1,13 +1,10 @@
 import { useCallback, useEffect, useMemo, useRef, useState, type ReactNode } from 'react'
 
-import { getSuperForSkill } from '@/content'
 import { RepositoryError, repository, useMockData, type Catalog, type Session } from '@/data'
 import { needsParentalConsent } from '@/lib/age'
-import { applyAttempt, applySuper, nextReviewDate } from '@/lib/dag'
+import { descenteVers, nextReviewDate, type ProgressMap } from '@/lib/dag'
 import { apresDefi } from '@/lib/defis'
-import { newId } from '@/lib/id'
 import { atMinutes } from '@/lib/schedule'
-import { epreuveDe } from '@/lib/super'
 import type { PublicExercise } from '@/types/content'
 import type { Profile, SkillProgress } from '@/types/domain'
 import {
@@ -182,77 +179,41 @@ export function SessionProvider({ children }: { children: ReactNode }) {
   // --- Mutations ----------------------------------------------------------
 
   const corriger = useCallback<SessionValue['corriger']>(
-    (exerciseId, raw) => repository.corriger(exerciseId, raw),
+    (exerciseId, raw, mode) => repository.corriger(exerciseId, raw, mode),
     [],
   )
 
   const answerExercise = useCallback(
     async (exercise: PublicExercise, raw: string, durationS: number): Promise<AnswerResult> => {
-      // Le serveur corrige : l'application n'a pas la reponse. Un echec remonte
-      // a l'ecran, qui laisse l'eleve valider a nouveau ; rien n'est ecrit.
-      const correction = await repository.corriger(exercise.id, raw)
+      // Le serveur corrige, enregistre la tentative et fait avancer la
+      // progression (sprint 6) : l'application n'a ni la reponse ni le droit
+      // d'ecrire sa progression. Un echec remonte a l'ecran, qui laisse
+      // l'eleve valider a nouveau ; rien n'est alors enregistre.
+      const r = await repository.repondre(exercise, raw, durationS)
       const current = sessionRef.current
-      if (!current) {
-        return {
-          ...correction,
-          justMastered: false,
-          controle: null,
-          niveau: 0,
-          prochainControle: null,
-          attendEpreuve: false,
-          shouldDescend: false,
-          descendTo: [],
+      const descendTo = current ? descenteVers(current.progress, exercise.skill_id, r.ligne) : []
+      if (current) {
+        const suivante = {
+          ...current,
+          progress: { ...current.progress, [exercise.skill_id]: r.ligne },
+          attempts: [r.tentative, ...current.attempts],
         }
+        sessionRef.current = suivante
+        setSession(suivante)
       }
-
-      // Le calcul se fait avant setSession, pas dans son updater : React ne
-      // garantit pas qu'un updater tourne avant le retour de la fonction
-      // appelante, et l'ecran d'exercice a besoin du verdict tout de suite.
-      const epreuve = epreuveDe(
-        getSuperForSkill(exercise.skill_id).map((sx) => sx.id),
-        current.superAttempts,
-      )
-      const applied = applyAttempt(
-        current.progress,
-        exercise.skill_id,
-        exercise.id,
-        correction.isCorrect,
-        new Date(),
-        epreuve,
-      )
-
-      const attempt = {
-        id: newId(),
-        exercise_id: exercise.id,
-        skill_id: exercise.skill_id,
-        answer: raw,
-        is_correct: correction.isCorrect,
-        duration_s: durationS,
-        created_at: new Date().toISOString(),
-      }
-
-      const suivante = {
-        ...current,
-        progress: { ...current.progress, [exercise.skill_id]: applied.progress },
-        attempts: [attempt, ...current.attempts],
-      }
-      sessionRef.current = suivante
-      setSession(suivante)
-
-      ecrire(() => repository.saveAttempt(attempt, applied.progress), 'Ta réponse')
 
       return {
-        ...correction,
-        justMastered: applied.justMastered,
-        controle: applied.controle,
-        niveau: applied.progress.niveau,
-        prochainControle: applied.progress.prochain_controle,
-        attendEpreuve: applied.attendEpreuve,
-        shouldDescend: applied.shouldDescend,
-        descendTo: applied.descendTo,
+        ...r.correction,
+        justMastered: r.vientDEtreAcquise,
+        controle: r.controle,
+        niveau: r.ligne.niveau,
+        prochainControle: r.ligne.prochain_controle,
+        attendEpreuve: r.attendEpreuve,
+        shouldDescend: descendTo.length > 0,
+        descendTo,
       }
     },
-    [ecrire],
+    [],
   )
 
   const reviewSkill = useCallback(
@@ -288,42 +249,49 @@ export function SessionProvider({ children }: { children: ReactNode }) {
     [ecrire],
   )
 
-  const enregistrerSuper = useCallback<SessionValue['enregistrerSuper']>(
-    (attempt) => {
-      const current = sessionRef.current
-      if (!current) return { niveauAvant: 0, niveauApres: 0, justMastered: false }
-      const effet = applySuper(current.progress, attempt.skill_id, {
-        reussie: attempt.reussi,
-        sansFaute: attempt.reussi && attempt.score === attempt.total,
-      })
-      const change = effet.progress.niveau !== effet.niveauAvant
+  const rendreSuper = useCallback<SessionValue['rendreSuper']>(async (sx, reponses, dureeS) => {
+    // Le serveur corrige la copie et compte les points (sprint 6). Un echec
+    // remonte a l'ecran, qui garde les reponses pour un nouvel envoi.
+    const r = await repository.rendreSuper(sx, reponses, dureeS)
+    const current = sessionRef.current
+    const niveauAvant = current?.progress[sx.skill_id]?.niveau ?? 0
+    if (current) {
       const suivante = {
         ...current,
-        superAttempts: [attempt, ...current.superAttempts],
-        progress: change ? { ...current.progress, [attempt.skill_id]: effet.progress } : current.progress,
+        superAttempts: [r.passage, ...current.superAttempts],
+        progress: r.ligne ? { ...current.progress, [sx.skill_id]: r.ligne } : current.progress,
       }
       sessionRef.current = suivante
       setSession(suivante)
-      ecrire(() => repository.saveSuperAttempt(attempt), 'Ton super exercice')
-      if (change) ecrire(() => repository.saveProgress(effet.progress), 'Ta progression')
-      return {
-        niveauAvant: effet.niveauAvant,
-        niveauApres: effet.progress.niveau,
-        justMastered: effet.justMastered,
-      }
-    },
-    [ecrire],
-  )
+    }
+    return {
+      corrections: r.corrections,
+      effet: {
+        niveauAvant,
+        niveauApres: r.ligne?.niveau ?? niveauAvant,
+        justMastered: r.vientDEtreAcquise,
+      },
+    }
+  }, [])
 
   const completePlacement = useCallback<SessionValue['completePlacement']>(
     (result, progress) => {
       const current = session
       if (!current) return
 
+      // Meme regle que enregistrer_positionnement (migration 0021) : le test
+      // acquiert une competence, il ne touche pas a une competence deja
+      // acquise par le travail ni n'efface une competence en cours.
+      const fusion: ProgressMap = { ...progress, ...current.progress }
+      for (const ligne of Object.values(progress)) {
+        if (ligne.status === 'mastered' && (current.progress[ligne.skill_id]?.niveau ?? 0) < 4) {
+          fusion[ligne.skill_id] = ligne
+        }
+      }
       setSession({
         ...current,
         placement: result,
-        progress,
+        progress: fusion,
         objectifSkillId: result.objectif_skill_id,
       })
       ecrire(
@@ -486,7 +454,7 @@ export function SessionProvider({ children }: { children: ReactNode }) {
       corriger,
       reviewSkill,
       reviserDefi,
-      enregistrerSuper,
+      rendreSuper,
       completePlacement,
       bookSlot,
       cancelBooking,
@@ -519,7 +487,7 @@ export function SessionProvider({ children }: { children: ReactNode }) {
       corriger,
       reviewSkill,
       reviserDefi,
-      enregistrerSuper,
+      rendreSuper,
       completePlacement,
       bookSlot,
       cancelBooking,
