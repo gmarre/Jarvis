@@ -402,7 +402,7 @@ Décisions prises en route : la page publique du parent est `/accord/:jeton` (co
 - ~~Passer la progression côté serveur (`applyAttempt` dans une Edge Function) : prérequis de tout paiement.~~ Fait (voir ci-dessus).
 - Parcours Playwright élève, professeur et parent.
 - `/security-review`.
-- Montée de react-router 7 (2 vulnérabilités modérées sans correctif en 6.x).
+- ~~Montée de react-router 7~~ : faite le 21 octobre 2026 (`react-router-dom` 7.18.4, `npm audit --omit=dev` à 0). react-router 7 demande Node 20 : `NODE_VERSION=20` sur Netlify au sprint final ; le Node 18.18 local suffit pour les tests et le build.
 - Polices auto-hébergées.
 - Supabase Pro : pas de mise en pause, et la protection contre les mots de passe compromis est disponible.
 
