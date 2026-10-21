@@ -1,0 +1,218 @@
+[
+  {
+    "id": "EX-G067-D-01",
+    "skill_id": "G067",
+    "level": "decouverte",
+    "type": "texte",
+    "statement": "Écris plus simplement la somme $\\overrightarrow{KL}$ + $\\overrightarrow{LM}$. Donne le nom du vecteur : ses deux lettres, l'origine puis l'extrémité.",
+    "image": "figures/EX-G067-D-01",
+    "answer": {
+      "value": "KM",
+      "accepted": [
+        "vecteur KM",
+        "le vecteur KM",
+        "vect KM",
+        "vec KM",
+        "→KM",
+        "KM→",
+        "KL + LM = KM",
+        "c'est le vecteur KM",
+        "c'est KM"
+      ]
+    },
+    "solution_steps": [
+      "Ajouter $\\overrightarrow{LM}$ à $\\overrightarrow{KL}$, c'est enchaîner deux translations : de K on glisse jusqu'à L, puis de L jusqu'à M.",
+      "Au total, on est parti de K et on est arrivé en M.",
+      "Relation de Chasles : $\\overrightarrow{KL}$ + $\\overrightarrow{LM}$ = **$\\overrightarrow{KM}$**. L'extrémité du premier vecteur est l'origine du second, la lettre L « disparaît ».",
+      "Attention à l'ordre des lettres : $\\overrightarrow{MK}$ est le vecteur opposé."
+    ],
+    "hint": "Où arrive-t-on si l'on part de K, qu'on va en L, puis en M ?",
+    "estimated_duration_s": 40,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, classe de 3e, Espace et géométrie, Translations et vecteurs, Objectifs d'apprentissage : « Découvrir et utiliser la relation de Chasles. »"
+  },
+  {
+    "id": "EX-G067-D-02",
+    "skill_id": "G067",
+    "level": "decouverte",
+    "type": "qcm",
+    "statement": "On applique au point P la translation de vecteur $\\vec{u}$, puis la translation de vecteur $\\vec{v}$. En quel point arrive-t-on ?",
+    "image": "figures/EX-G067-D-02",
+    "choices": [
+      {
+        "key": "a",
+        "text": "Au point R",
+        "misconception": null
+      },
+      {
+        "key": "b",
+        "text": "Au point S",
+        "misconception": "S est l'image de P par la seule translation de vecteur $\\vec{u}$ : la seconde translation est oubliée."
+      },
+      {
+        "key": "c",
+        "text": "Au point T",
+        "misconception": "Après la translation de vecteur $\\vec{u}$, on a glissé dans le sens contraire de $\\vec{v}$ (1 carreau vers la gauche et 3 vers le bas, au lieu de la droite et du haut)."
+      },
+      {
+        "key": "d",
+        "text": "Au point W",
+        "misconception": "W est l'image de P par la seule translation de vecteur $\\vec{v}$ : la première translation est oubliée."
+      }
+    ],
+    "answer": {
+      "value": "a"
+    },
+    "solution_steps": [
+      "Le vecteur $\\vec{u}$ fait glisser de 4 carreaux vers la droite et de 2 carreaux vers le bas. En partant de P, on arrive en S.",
+      "Le vecteur $\\vec{v}$ fait glisser de 1 carreau vers la droite et de 3 carreaux vers le haut. En partant de S, on arrive en R.",
+      "On arrive donc **au point R**. Enchaîner les deux translations revient à appliquer une seule translation, celle de vecteur $\\vec{u} + \\vec{v}$ : 5 carreaux vers la droite et 1 vers le haut.",
+      "S et W ne tiennent compte que d'une des deux translations ; T applique $\\vec{v}$ dans le mauvais sens."
+    ],
+    "hint": "Fais les deux glissements l'un après l'autre : d'abord celui de $\\vec{u}$ en partant de P, puis celui de $\\vec{v}$ en partant du point obtenu.",
+    "estimated_duration_s": 60,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, classe de 3e, Espace et géométrie, Translations et vecteurs, Objectifs d'apprentissage : « Définir et utiliser la somme de deux vecteurs par enchainement de deux translations. »"
+  },
+  {
+    "id": "EX-G067-E-01",
+    "skill_id": "G067",
+    "level": "entrainement",
+    "type": "qcm",
+    "statement": "NPQR est un parallélogramme, ses sommets étant pris dans cet ordre. À quel vecteur la somme $\\overrightarrow{PN}$ + $\\overrightarrow{PQ}$ est-elle égale ?",
+    "image": "figures/EX-G067-E-01",
+    "choices": [
+      {
+        "key": "a",
+        "text": "$\\overrightarrow{NQ}$",
+        "misconception": "Chasles appliqué à des vecteurs qui ne s'enchaînent pas : on a « barré » la lettre P, alors que les deux vecteurs partent tous les deux de P."
+      },
+      {
+        "key": "b",
+        "text": "$\\overrightarrow{RP}$",
+        "misconception": "La bonne diagonale, mais dans le mauvais sens : la somme part de P, comme $\\overrightarrow{PN}$ et $\\overrightarrow{PQ}$."
+      },
+      {
+        "key": "c",
+        "text": "$\\overrightarrow{PR}$",
+        "misconception": null
+      },
+      {
+        "key": "d",
+        "text": "$\\overrightarrow{NR}$",
+        "misconception": "$\\overrightarrow{NR}$ est égal à $\\overrightarrow{PQ}$ seulement : il manque le vecteur $\\overrightarrow{PN}$."
+      }
+    ],
+    "answer": {
+      "value": "c"
+    },
+    "solution_steps": [
+      "Les deux vecteurs partent de P : on ne peut pas appliquer Chasles directement. On remplace l'un d'eux par un vecteur égal qui s'enchaîne.",
+      "NPQR est un parallélogramme, donc $\\overrightarrow{PQ}$ = $\\overrightarrow{NR}$ (côtés opposés, même sens).",
+      "$\\overrightarrow{PN}$ + $\\overrightarrow{PQ}$ = $\\overrightarrow{PN}$ + $\\overrightarrow{NR}$ = **$\\overrightarrow{PR}$** par la relation de Chasles.",
+      "La somme est la diagonale issue de P, parcourue à partir de P. $\\overrightarrow{NQ}$ est l'autre diagonale."
+    ],
+    "hint": "Remplace le vecteur PQ par un vecteur égal qui part de N.",
+    "estimated_duration_s": 70,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, classe de 3e, Espace et géométrie, Translations et vecteurs, Objectifs d'apprentissage : « Définir et utiliser la somme de deux vecteurs par enchainement de deux translations. »"
+  },
+  {
+    "id": "EX-G067-E-02",
+    "skill_id": "G067",
+    "level": "entrainement",
+    "type": "texte",
+    "statement": "Écris plus simplement la somme $\\overrightarrow{VW}$ + $\\overrightarrow{UV}$. Donne le nom du vecteur : ses deux lettres, l'origine puis l'extrémité.",
+    "image": null,
+    "answer": {
+      "value": "UW",
+      "accepted": [
+        "vecteur UW",
+        "le vecteur UW",
+        "vect UW",
+        "vec UW",
+        "→UW",
+        "UW→",
+        "UV + VW = UW",
+        "VW + UV = UW",
+        "c'est le vecteur UW",
+        "c'est UW"
+      ]
+    },
+    "solution_steps": [
+      "Les vecteurs ne s'enchaînent pas dans l'ordre écrit : $\\overrightarrow{VW}$ finit en W, et $\\overrightarrow{UV}$ commence en U.",
+      "On peut changer l'ordre d'une somme de vecteurs : $\\overrightarrow{VW}$ + $\\overrightarrow{UV}$ = $\\overrightarrow{UV}$ + $\\overrightarrow{VW}$.",
+      "Ainsi, l'extrémité V du premier est l'origine du second, et la relation de Chasles donne $\\overrightarrow{UV}$ + $\\overrightarrow{VW}$ = **$\\overrightarrow{UW}$**.",
+      "En « barrant » le V sans changer l'ordre, on écrirait $\\overrightarrow{WU}$ : c'est le vecteur opposé."
+    ],
+    "hint": "Échange les deux vecteurs pour que l'extrémité du premier soit l'origine du second.",
+    "estimated_duration_s": 50,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, classe de 3e, Espace et géométrie, Translations et vecteurs, Objectifs d'apprentissage : « Découvrir et utiliser la relation de Chasles. »"
+  },
+  {
+    "id": "EX-G067-M-01",
+    "skill_id": "G067",
+    "level": "maitrise",
+    "type": "numerique",
+    "statement": "GHJK est un quadrilatère : GH = 5 cm, HJ = 4 cm, JK = 3 cm, GJ = 7,5 cm et GK = 8 cm. Quelle est la longueur, en cm, du vecteur $\\overrightarrow{GH}$ + $\\overrightarrow{HJ}$ + $\\overrightarrow{JK}$ ?",
+    "image": "figures/EX-G067-M-01",
+    "answer": {
+      "value": 8,
+      "unit": "cm"
+    },
+    "solution_steps": [
+      "Relation de Chasles, deux fois : $\\overrightarrow{GH}$ + $\\overrightarrow{HJ}$ = $\\overrightarrow{GJ}$, puis $\\overrightarrow{GJ}$ + $\\overrightarrow{JK}$ = $\\overrightarrow{GK}$.",
+      "Enchaîner les trois translations revient à aller directement de G à K. La longueur du vecteur $\\overrightarrow{GK}$ est GK, soit **8 cm**.",
+      "On n'additionne pas les longueurs : 5 + 4 + 3 = 12, ou 7,5 + 3 = 10,5, sont des longueurs de trajets, pas celle du vecteur somme.",
+      "7,5 cm est la longueur de $\\overrightarrow{GJ}$ : il manque le vecteur $\\overrightarrow{JK}$."
+    ],
+    "hint": "Écris d'abord la somme comme un seul vecteur, avec la relation de Chasles. Quelle est sa longueur ?",
+    "estimated_duration_s": 70,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, classe de 3e, Espace et géométrie, Translations et vecteurs, Objectifs d'apprentissage : « Définir et utiliser la somme de deux vecteurs par enchainement de deux translations. »"
+  },
+  {
+    "id": "EX-G067-M-02",
+    "skill_id": "G067",
+    "level": "maitrise",
+    "type": "qcm",
+    "statement": "X, Y, Z sont trois points quelconques. Que vaut la somme $\\overrightarrow{XY}$ + $\\overrightarrow{ZX}$ + $\\overrightarrow{YZ}$ ?",
+    "image": null,
+    "choices": [
+      {
+        "key": "a",
+        "text": "$\\overrightarrow{XZ}$",
+        "misconception": "$\\overrightarrow{XY}$ + $\\overrightarrow{YZ}$ = $\\overrightarrow{XZ}$ est juste, mais le vecteur $\\overrightarrow{ZX}$ a été oublié."
+      },
+      {
+        "key": "b",
+        "text": "Le vecteur nul",
+        "misconception": null
+      },
+      {
+        "key": "c",
+        "text": "$\\overrightarrow{ZY}$",
+        "misconception": "$\\overrightarrow{ZX}$ + $\\overrightarrow{XY}$ = $\\overrightarrow{ZY}$ est juste, mais le vecteur $\\overrightarrow{YZ}$ a été oublié."
+      },
+      {
+        "key": "d",
+        "text": "Elle ne se simplifie pas : les vecteurs ne se suivent pas dans l'écriture.",
+        "misconception": "On peut changer l'ordre des termes d'une somme de vecteurs, puis appliquer la relation de Chasles."
+      }
+    ],
+    "answer": {
+      "value": "b"
+    },
+    "solution_steps": [
+      "On range les termes pour qu'ils s'enchaînent : $\\overrightarrow{ZX}$ + $\\overrightarrow{XY}$ + $\\overrightarrow{YZ}$.",
+      "Chasles une première fois : $\\overrightarrow{ZX}$ + $\\overrightarrow{XY}$ = $\\overrightarrow{ZY}$. Puis $\\overrightarrow{ZY}$ + $\\overrightarrow{YZ}$ = $\\overrightarrow{ZZ}$.",
+      "$\\overrightarrow{ZZ}$ part de Z et y revient : c'est **le vecteur nul**. Les trois translations ramènent chaque point à sa place.",
+      "Un oubli d'un des trois termes donne $\\overrightarrow{XZ}$ ou $\\overrightarrow{ZY}$ : il faut les utiliser tous."
+    ],
+    "hint": "Range les trois vecteurs pour que l'extrémité de chacun soit l'origine du suivant. Où arrive-t-on ?",
+    "estimated_duration_s": 75,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, classe de 3e, Espace et géométrie, Translations et vecteurs, Objectifs d'apprentissage : « Découvrir et utiliser la relation de Chasles. »"
+  }
+]

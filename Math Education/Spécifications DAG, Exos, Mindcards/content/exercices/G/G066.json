@@ -1,0 +1,210 @@
+[
+  {
+    "id": "EX-G066-D-01",
+    "skill_id": "G066",
+    "level": "decouverte",
+    "type": "qcm",
+    "statement": "Compte les carreaux sur la figure. Quel vecteur est égal au vecteur $\\overrightarrow{MN}$ ?",
+    "image": "figures/EX-G066-D-01",
+    "choices": [
+      {
+        "key": "a",
+        "text": "$\\overrightarrow{GH}$",
+        "misconception": "$\\overrightarrow{GH}$ a la même direction et la même longueur que $\\overrightarrow{MN}$, mais il va dans le sens contraire : c'est son opposé, pas un vecteur égal."
+      },
+      {
+        "key": "b",
+        "text": "$\\overrightarrow{QS}$",
+        "misconception": null
+      },
+      {
+        "key": "c",
+        "text": "$\\overrightarrow{UV}$",
+        "misconception": "$\\overrightarrow{UV}$ a la même longueur que $\\overrightarrow{MN}$ (2 et 3 carreaux au lieu de 3 et 2), mais pas la même direction : des longueurs égales ne suffisent pas."
+      },
+      {
+        "key": "d",
+        "text": "$\\overrightarrow{PR}$",
+        "misconception": "$\\overrightarrow{PR}$ a la même direction et le même sens que $\\overrightarrow{MN}$, mais il est deux fois plus long."
+      }
+    ],
+    "answer": {
+      "value": "b"
+    },
+    "solution_steps": [
+      "Deux vecteurs sont égaux s'ils ont la même direction, le même sens et la même longueur.",
+      "De M à N, on avance de 3 carreaux vers la droite et de 2 carreaux vers le haut.",
+      "De Q à S, on avance aussi de 3 carreaux vers la droite et de 2 vers le haut : **$\\overrightarrow{MN}$ = $\\overrightarrow{QS}$**.",
+      "$\\overrightarrow{GH}$ va de 3 carreaux vers la gauche et 2 vers le bas : sens contraire. $\\overrightarrow{UV}$ : 2 à droite et 3 en haut, autre direction. $\\overrightarrow{PR}$ : 6 et 4, deux fois plus long."
+    ],
+    "hint": "Pour chaque flèche, compte les carreaux de l'origine à la pointe : combien vers la droite ou la gauche, combien vers le haut ou le bas ?",
+    "estimated_duration_s": 50,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, classe de 3e, Espace et géométrie, Translations et vecteurs, Objectifs d'apprentissage : « Définir et utiliser les notions de vecteur, de vecteurs égaux, de vecteur nul, d'opposé d'un vecteur. »"
+  },
+  {
+    "id": "EX-G066-D-02",
+    "skill_id": "G066",
+    "level": "decouverte",
+    "type": "texte",
+    "statement": "Sur le quadrillage, la translation de vecteur $\\overrightarrow{XY}$ transforme le point S en l'un des points marqués. Lequel ? Écris sa lettre.",
+    "image": "figures/EX-G066-D-02",
+    "answer": {
+      "value": "T",
+      "accepted": [
+        "point T",
+        "le point T",
+        "c'est le point T",
+        "en T",
+        "au point T",
+        "c'est T"
+      ]
+    },
+    "solution_steps": [
+      "La translation de vecteur $\\overrightarrow{XY}$ fait glisser chaque point comme X glisse vers Y : de 5 carreaux vers la droite et de 2 carreaux vers le haut.",
+      "On part de S : 5 carreaux vers la droite, puis 2 vers le haut. On arrive en **T**.",
+      "Vérification avec la définition : XYTS est un parallélogramme (les côtés [XY] et [ST] sont parallèles, de même longueur, et parcourus dans le même sens).",
+      "U est obtenu en glissant dans le sens contraire (de Y vers X), et V en descendant au lieu de monter."
+    ],
+    "hint": "Compte comment on va de X à Y, puis fais le même trajet en partant de S.",
+    "estimated_duration_s": 50,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, classe de 3e, Espace et géométrie, Translations et vecteurs, Objectifs d'apprentissage : « Définir et utiliser la translation : définition ponctuelle avec parallélogramme. »"
+  },
+  {
+    "id": "EX-G066-E-01",
+    "skill_id": "G066",
+    "level": "entrainement",
+    "type": "vrai_faux",
+    "statement": "MNPQ est un parallélogramme, ses sommets étant pris dans cet ordre.\n\nVrai ou faux : $\\overrightarrow{MN}$ = $\\overrightarrow{PQ}$.",
+    "image": "figures/EX-G066-E-01",
+    "answer": {
+      "value": false
+    },
+    "solution_steps": [
+      "Dans le parallélogramme MNPQ, les côtés [MN] et [PQ] sont opposés : ils sont parallèles et ont la même longueur. Les vecteurs ont donc la même direction et la même longueur.",
+      "Mais le sens compte : on va de M vers N, et de P vers Q dans l'autre sens (sur la figure, l'un va vers la droite, l'autre vers la gauche).",
+      "Le vecteur égal à $\\overrightarrow{MN}$ est $\\overrightarrow{QP}$ : MNPQ parallélogramme donne $\\overrightarrow{MN}$ = $\\overrightarrow{QP}$. Et $\\overrightarrow{PQ}$ est l'opposé de $\\overrightarrow{MN}$.",
+      "L'affirmation est donc **fausse** : des côtés de même longueur ne donnent pas forcément des vecteurs égaux."
+    ],
+    "hint": "Deux vecteurs égaux ont la même direction, la même longueur… et le même sens. Suis le sens de M vers N, puis de P vers Q.",
+    "estimated_duration_s": 50,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, classe de 3e, Espace et géométrie, Translations et vecteurs, Objectifs d'apprentissage : « Définir et utiliser les notions de vecteur, de vecteurs égaux, de vecteur nul, d'opposé d'un vecteur. »"
+  },
+  {
+    "id": "EX-G066-E-02",
+    "skill_id": "G066",
+    "level": "entrainement",
+    "type": "qcm",
+    "statement": "JKNM est un parallélogramme, ses sommets étant pris dans cet ordre. Quel vecteur est l'opposé du vecteur $\\overrightarrow{JM}$ ?",
+    "image": "figures/EX-G066-E-02",
+    "choices": [
+      {
+        "key": "a",
+        "text": "$\\overrightarrow{KN}$",
+        "misconception": "[KN] est le côté opposé à [JM] dans le parallélogramme, mais $\\overrightarrow{KN}$ a le même sens que $\\overrightarrow{JM}$ : il lui est égal, pas opposé."
+      },
+      {
+        "key": "b",
+        "text": "$\\overrightarrow{KJ}$",
+        "misconception": "$\\overrightarrow{KJ}$ va dans l'autre sens, mais le long du côté [JK] : il n'a pas la direction de (JM)."
+      },
+      {
+        "key": "c",
+        "text": "$\\overrightarrow{NK}$",
+        "misconception": null
+      },
+      {
+        "key": "d",
+        "text": "$\\overrightarrow{MN}$",
+        "misconception": "$\\overrightarrow{MN}$ part de M, là où arrive $\\overrightarrow{JM}$ : il continue le trajet au lieu de le défaire, et il suit le côté [MN], pas la direction de (JM)."
+      }
+    ],
+    "answer": {
+      "value": "c"
+    },
+    "solution_steps": [
+      "L'opposé de $\\overrightarrow{JM}$ a la même direction et la même longueur que lui, mais le sens contraire. C'est $\\overrightarrow{MJ}$, de M vers J.",
+      "JKNM est un parallélogramme, donc $\\overrightarrow{JM}$ = $\\overrightarrow{KN}$ (côtés opposés, parcourus dans le même sens).",
+      "L'opposé de $\\overrightarrow{KN}$ est $\\overrightarrow{NK}$. Donc **$\\overrightarrow{NK}$** est l'opposé de $\\overrightarrow{JM}$, comme $\\overrightarrow{MJ}$.",
+      "$\\overrightarrow{KN}$ est égal à $\\overrightarrow{JM}$, pas opposé ; $\\overrightarrow{KJ}$ et $\\overrightarrow{MN}$ suivent l'autre direction du parallélogramme."
+    ],
+    "hint": "Cherche d'abord le vecteur égal à JM sur l'autre côté du parallélogramme, puis retourne-le.",
+    "estimated_duration_s": 60,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, classe de 3e, Espace et géométrie, Translations et vecteurs, Objectifs d'apprentissage : « Définir et utiliser les notions de vecteur, de vecteurs égaux, de vecteur nul, d'opposé d'un vecteur. »"
+  },
+  {
+    "id": "EX-G066-M-01",
+    "skill_id": "G066",
+    "level": "maitrise",
+    "type": "qcm",
+    "statement": "W, X, Y, Z sont quatre points non alignés tels que $\\overrightarrow{WX}$ = $\\overrightarrow{ZY}$. Quel quadrilatère est alors un parallélogramme, ses sommets étant pris dans l'ordre écrit ?",
+    "image": null,
+    "choices": [
+      {
+        "key": "a",
+        "text": "WXYZ",
+        "misconception": null
+      },
+      {
+        "key": "b",
+        "text": "WXZY",
+        "misconception": "Les lettres sont prises dans l'ordre de l'égalité (W, X puis Z, Y) : c'est l'erreur ABCD au lieu de ABDC. WXZY est croisé : ses côtés [XZ] et [YW] se coupent."
+      },
+      {
+        "key": "c",
+        "text": "WZXY",
+        "misconception": "Les deux origines (W, Z) puis les deux extrémités (X, Y) : WZXY est croisé, ses côtés [ZX] et [YW] se coupent."
+      },
+      {
+        "key": "d",
+        "text": "Aucun : il faut aussi une deuxième égalité de vecteurs.",
+        "misconception": "Une seule égalité de vecteurs suffit : elle dit à la fois que deux côtés sont parallèles, de même longueur, et dans le même sens."
+      }
+    ],
+    "answer": {
+      "value": "a"
+    },
+    "solution_steps": [
+      "Propriété : $\\overrightarrow{AB}$ = $\\overrightarrow{CD}$ équivaut à « ABDC est un parallélogramme ». On remplace A par W, B par X, C par Z et D par Y.",
+      "$\\overrightarrow{WX}$ = $\\overrightarrow{ZY}$ donne donc : **WXYZ** est un parallélogramme.",
+      "Vérification : on va de W à X, puis X à Y, Y à Z et Z à W. Les côtés [WX] et [YZ] sont opposés, et l'égalité dit que de Z à Y on fait le même trajet que de W à X.",
+      "WXZY et WZXY sont croisés : leurs côtés [XZ] et [YW] sont les diagonales de WXYZ, qui se coupent. Une seule égalité de vecteurs suffit pour conclure."
+    ],
+    "hint": "Dessine à main levée : place W et X, puis Z et Y pour que de Z à Y on fasse le même trajet que de W à X. Fais le tour de la figure.",
+    "estimated_duration_s": 75,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, classe de 3e, Espace et géométrie, Translations et vecteurs, Objectifs d'apprentissage : « Définir et utiliser les notions de vecteur, de vecteurs égaux, de vecteur nul, d'opposé d'un vecteur. »"
+  },
+  {
+    "id": "EX-G066-M-02",
+    "skill_id": "G066",
+    "level": "maitrise",
+    "type": "texte",
+    "statement": "Les points H, J, K, L sont alignés dans cet ordre, et la figure est codée. Quelle est l'image du point H par la translation de vecteur $\\overrightarrow{KL}$ ? Écris sa lettre.",
+    "image": "figures/EX-G066-M-02",
+    "answer": {
+      "value": "J",
+      "accepted": [
+        "point J",
+        "le point J",
+        "c'est le point J",
+        "en J",
+        "au point J",
+        "c'est J"
+      ]
+    },
+    "solution_steps": [
+      "Le codage dit que HJ = JK = KL.",
+      "$\\overrightarrow{HJ}$ et $\\overrightarrow{KL}$ ont la même direction (la droite), le même sens (de H vers L) et la même longueur : $\\overrightarrow{HJ}$ = $\\overrightarrow{KL}$.",
+      "L'image de H par la translation de vecteur $\\overrightarrow{KL}$ est donc **J** : HJLK est un parallélogramme aplati, ses quatre sommets sont sur une même droite.",
+      "La translation ne va pas jusqu'à L : elle fait glisser H de la longueur KL seulement, dans le sens de K vers L."
+    ],
+    "hint": "Le parallélogramme peut être aplati : cherche le point qu'on atteint en partant de H et en faisant le même trajet que de K à L.",
+    "estimated_duration_s": 60,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, classe de 3e, Espace et géométrie, Translations et vecteurs, Objectifs d'apprentissage : « Définir et utiliser la translation : définition ponctuelle avec parallélogramme. »"
+  }
+]

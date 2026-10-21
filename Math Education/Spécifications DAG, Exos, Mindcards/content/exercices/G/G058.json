@@ -1,0 +1,186 @@
+[
+  {
+    "id": "EX-G058-D-01",
+    "skill_id": "G058",
+    "level": "decouverte",
+    "type": "qcm",
+    "statement": "Quel point est l'image du point C par la translation qui transforme A en B ?",
+    "image": "figures/EX-G058-D-01",
+    "choices": [
+      {
+        "key": "a",
+        "text": "Le point E",
+        "misconception": "E est obtenu en faisant glisser C de B vers A, dans le mauvais sens : 3 carreaux vers la gauche et 2 vers le bas."
+      },
+      {
+        "key": "b",
+        "text": "Le point F",
+        "misconception": "Pour aller de C à F, on avance de 2 carreaux vers la droite et de 3 vers le haut : les deux nombres de carreaux ont été échangés."
+      },
+      {
+        "key": "c",
+        "text": "Le point G",
+        "misconception": null
+      },
+      {
+        "key": "d",
+        "text": "Le point H",
+        "misconception": "Pour aller de C à H, on avance bien de 3 carreaux vers la droite, mais on descend de 2 au lieu de monter : la direction n'est pas celle de A vers B."
+      }
+    ],
+    "answer": {
+      "value": "c"
+    },
+    "solution_steps": [
+      "La translation qui transforme A en B fait glisser chaque point comme A glisse jusqu'à B : même direction, même sens, même longueur.",
+      "Pour aller de A à B, on avance de 3 carreaux vers la droite et de 2 carreaux vers le haut.",
+      "On fait le même glissement à partir de C : 3 carreaux vers la droite, 2 vers le haut. On arrive sur **le point G**.",
+      "E a glissé dans le sens de B vers A ; F et H n'ont pas le bon trajet."
+    ],
+    "hint": "Compte les carreaux pour aller de A à B, puis fais le même trajet à partir de C.",
+    "estimated_duration_s": 45,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, classe de 4e, Espace et géométrie, Parallélogrammes et translations, Objectifs d'apprentissage : « Comprendre l'effet d'une translation. »"
+  },
+  {
+    "id": "EX-G058-D-02",
+    "skill_id": "G058",
+    "level": "decouverte",
+    "type": "numerique",
+    "statement": "La translation qui transforme A en B transforme C en C' et D en D'. On sait que AB = 3 cm et CD = 4,6 cm.\n\nCombien mesure le segment [C'D'], en cm ?",
+    "image": "figures/EX-G058-D-02",
+    "answer": {
+      "value": 4.6,
+      "unit": "cm",
+      "accepted": [
+        "4,6 cm",
+        "4,6",
+        "4,6 centimètres",
+        "C'D' = 4,6 cm"
+      ]
+    },
+    "solution_steps": [
+      "La translation fait glisser le segment [CD] sans le déformer : son image est le segment [C'D'].",
+      "Une translation conserve les longueurs : C'D' = CD.",
+      "Le segment [C'D'] mesure **4,6 cm**.",
+      "Piège : AB = 3 cm dit de combien chaque point glisse ; cette longueur ne s'ajoute pas à celle du segment (7,6 cm est faux)."
+    ],
+    "hint": "Une translation change-t-elle la taille d'une figure ?",
+    "estimated_duration_s": 35,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, classe de 4e, Espace et géométrie, Parallélogrammes et translations, Objectifs d'apprentissage : « Connaitre et utiliser les propriétés de conservations des translations. »"
+  },
+  {
+    "id": "EX-G058-E-01",
+    "skill_id": "G058",
+    "level": "entrainement",
+    "type": "vrai_faux",
+    "statement": "Sami dit : « L'image du point C par la translation qui transforme A en B est le point E, car CE = AB. »\n\nA-t-il raison ?",
+    "image": "figures/EX-G058-E-01",
+    "answer": {
+      "value": false
+    },
+    "solution_steps": [
+      "La translation qui transforme A en B fait glisser chaque point dans la direction de la droite (AB), dans le sens de A vers B, sur la longueur AB.",
+      "Ici, A glisse de 4 carreaux vers la droite. L'image de C est donc 4 carreaux à droite de C.",
+      "E est bien à 4 carreaux de C, mais vers le bas : la longueur est la bonne, pas la direction.",
+      "Sami a tort : c'est **faux**. La même longueur ne suffit pas, il faut aussi la même direction et le même sens."
+    ],
+    "hint": "Compare le trajet de A à B et celui de C à E : même longueur, mais même direction ?",
+    "estimated_duration_s": 50,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, classe de 4e, Espace et géométrie, Parallélogrammes et translations, Objectifs d'apprentissage : « Comprendre l'effet d'une translation. »"
+  },
+  {
+    "id": "EX-G058-E-02",
+    "skill_id": "G058",
+    "level": "entrainement",
+    "type": "qcm",
+    "statement": "Quelle figure est l'image de la figure F par la translation qui transforme A en B ?",
+    "image": "figures/EX-G058-E-02",
+    "choices": [
+      {
+        "key": "a",
+        "text": "La figure P",
+        "misconception": "P est obtenue en faisant glisser F de B vers A : la direction est la bonne, mais le sens est inversé."
+      },
+      {
+        "key": "b",
+        "text": "La figure Q",
+        "misconception": null
+      },
+      {
+        "key": "c",
+        "text": "La figure R",
+        "misconception": "R est tournée d'un demi-tour par rapport à F : c'est son image par un demi-tour, pas par une translation. Une translation ne fait pas tourner la figure."
+      },
+      {
+        "key": "d",
+        "text": "Aucune de ces figures",
+        "misconception": "Q convient : chacun de ses sommets s'obtient en faisant glisser un sommet de F de 5 carreaux vers la droite et de 2 vers le haut."
+      }
+    ],
+    "answer": {
+      "value": "b"
+    },
+    "solution_steps": [
+      "Pour aller de A à B, on avance de 5 carreaux vers la droite et de 2 carreaux vers le haut.",
+      "Une translation fait glisser la figure sans la tourner ni la retourner : l'image de F est orientée comme F.",
+      "Le sommet de l'angle droit de F, déplacé de 5 carreaux vers la droite et de 2 vers le haut, arrive sur le sommet de l'angle droit de Q ; de même pour les deux autres sommets. Réponse : **la figure Q**.",
+      "P a glissé dans le sens de B vers A ; R a été tournée d'un demi-tour."
+    ],
+    "hint": "Une translation ne fait pas tourner la figure. Compte ensuite le trajet de A à B.",
+    "estimated_duration_s": 60,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, classe de 4e, Espace et géométrie, Parallélogrammes et translations, Objectifs d'apprentissage : « Comprendre l'effet d'une translation. »"
+  },
+  {
+    "id": "EX-G058-M-01",
+    "skill_id": "G058",
+    "level": "maitrise",
+    "type": "numerique",
+    "statement": "La translation qui transforme A en B transforme M en M'. Les segments [AM'] et [BM] se coupent en I. On sait que AM' = 9,4 cm et BM = 6,2 cm (figure pas en vraie grandeur).\n\nCombien mesure AI, en cm ?",
+    "image": "figures/EX-G058-M-01",
+    "answer": {
+      "value": 4.7,
+      "unit": "cm",
+      "accepted": [
+        "4,7 cm",
+        "4,7",
+        "4,7 centimètres",
+        "AI = 4,7 cm"
+      ]
+    },
+    "solution_steps": [
+      "M' est l'image de M par la translation qui transforme A en B : le quadrilatère ABM'M est un parallélogramme.",
+      "Ses diagonales sont [AM'] et [BM]. Les diagonales d'un parallélogramme se coupent en leur milieu : I est le milieu de [AM'].",
+      "AI = 9,4 ÷ 2 = 4,7. Le segment [AI] mesure **4,7 cm**.",
+      "Pièges : 3,1 cm est la moitié de BM, l'autre diagonale ; 9,4 cm est la longueur de toute la diagonale [AM']."
+    ],
+    "hint": "Quelle figure forment les points A, B, M' et M ? Que sais-tu de ses diagonales ?",
+    "estimated_duration_s": 90,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, classe de 4e, Espace et géométrie, Parallélogrammes et translations, Objectifs d'apprentissage : « Faire le lien avec les parallélogrammes, les angles. »"
+  },
+  {
+    "id": "EX-G058-M-02",
+    "skill_id": "G058",
+    "level": "maitrise",
+    "type": "vrai_faux",
+    "statement": "Le point M est sur la droite (AB). La translation qui transforme A en B transforme M en M'.\n\nVrai ou faux : le point M' est sur la droite (AB).",
+    "image": "figures/EX-G058-M-02",
+    "answer": {
+      "value": true
+    },
+    "solution_steps": [
+      "La translation qui transforme A en B fait glisser M dans la direction de la droite (AB), sur la longueur AB.",
+      "M est sur (AB) : en glissant dans cette direction, il reste sur la droite (AB). C'est **vrai**.",
+      "Le quadrilatère ABM'M est alors aplati : ses quatre sommets sont sur une même droite. Dans tous les autres cas, c'est un vrai parallélogramme.",
+      "Une translation transforme une droite en une droite parallèle ; la droite (AB), qui a la direction du glissement, est transformée en elle-même."
+    ],
+    "hint": "Dans quelle direction le point M glisse-t-il ?",
+    "estimated_duration_s": 60,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, classe de 4e, Espace et géométrie, Parallélogrammes et translations, Objectifs d'apprentissage : « Connaitre et utiliser les propriétés de conservations des translations. »"
+  }
+]

@@ -1,0 +1,224 @@
+[
+  {
+    "id": "EX-G057-D-01",
+    "skill_id": "G057",
+    "level": "decouverte",
+    "type": "qcm",
+    "statement": "Le triangle DEF est-il l'image du triangle ABC par la symétrie d'axe (d), par le demi-tour de centre O, par les deux, ou par aucune des deux ?",
+    "image": "figures/EX-G057-D-01",
+    "choices": [
+      {
+        "key": "a",
+        "text": "Par la symétrie d'axe (d)",
+        "misconception": "DEF est de l'autre côté de (d), mais il n'est pas « en miroir » : le symétrique de A par rapport à (d) serait 8 carreaux sous A, et ce n'est aucun sommet de DEF."
+      },
+      {
+        "key": "b",
+        "text": "Par le demi-tour de centre O",
+        "misconception": "Le symétrique de A par rapport à O serait 5 carreaux à droite de O et 4 carreaux sous O : ce n'est aucun sommet de DEF. DEF n'a pas tourné."
+      },
+      {
+        "key": "c",
+        "text": "Par les deux",
+        "misconception": "Ni la symétrie d'axe (d) ni le demi-tour de centre O n'envoient A sur un sommet de DEF : aucune des deux ne convient."
+      },
+      {
+        "key": "d",
+        "text": "Par aucune des deux",
+        "misconception": null
+      }
+    ],
+    "answer": {
+      "value": "d"
+    },
+    "solution_steps": [
+      "Une symétrie axiale retourne la figure, comme dans un miroir ; un demi-tour la fait tourner autour du centre. Cherchons l'image de A par chacune.",
+      "Symétrie d'axe (d) : le symétrique de A est sur la même verticale, 8 carreaux sous A. Ce n'est aucun des sommets D, E, F.",
+      "Demi-tour de centre O : de A à O, 5 carreaux vers la droite et 4 vers le bas ; le symétrique de A est encore 5 carreaux à droite et 4 plus bas. Ce n'est aucun des sommets D, E, F non plus.",
+      "DEF a seulement glissé : de A à D, de B à E, de C à F, on avance chaque fois de 4 carreaux vers la droite et de 5 vers le bas. Réponse : **par aucune des deux**."
+    ],
+    "hint": "Cherche l'image du point A par chacune des deux transformations : est-ce un sommet de DEF ?",
+    "estimated_duration_s": 50,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, classe de 4e, Espace et géométrie, Parallélogrammes et translations, Automatismes : « Dire si des figures planes sont images l'une de l'autre par une symétrie axiale (dont on identifie l'axe) ou par un demi-tour (dont on identifie le centre). »"
+  },
+  {
+    "id": "EX-G057-D-02",
+    "skill_id": "G057",
+    "level": "decouverte",
+    "type": "texte",
+    "statement": "Le point K est le milieu du segment [EG] et du segment [FH].\n\nQuelle est l'image du point G par le demi-tour de centre K ?",
+    "image": "figures/EX-G057-D-02",
+    "answer": {
+      "value": "E",
+      "accepted": [
+        "le point E",
+        "point E",
+        "c'est E",
+        "c'est le point E",
+        "l'image est E",
+        "l'image de G est E",
+        "l'image de G est le point E",
+        "E est l'image de G"
+      ]
+    },
+    "solution_steps": [
+      "Le demi-tour de centre K transforme un point en un autre point, tel que K soit le milieu du segment qui les joint.",
+      "K est le milieu de [EG] : le demi-tour de centre K transforme donc G en **E** (et E en G).",
+      "Piège : F et H sont aussi des extrémités, mais K n'est le milieu ni de [GF] ni de [GH]. Par ce demi-tour, F et H s'échangent entre eux."
+    ],
+    "hint": "De quel segment ayant G pour extrémité le point K est-il le milieu ?",
+    "estimated_duration_s": 35,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, classe de 4e, Espace et géométrie, Parallélogrammes et translations, Automatismes : « Dans une configuration donnée, déterminer les images de figures, de droites, de segments, de points par une symétrie axiale ou un demi-tour. »"
+  },
+  {
+    "id": "EX-G057-E-01",
+    "skill_id": "G057",
+    "level": "entrainement",
+    "type": "qcm",
+    "statement": "Le triangle DEF est le symétrique du triangle ABC par une symétrie axiale.\n\nQuel est l'axe de cette symétrie ?",
+    "image": "figures/EX-G057-E-01",
+    "choices": [
+      {
+        "key": "a",
+        "text": "La droite (d1)",
+        "misconception": "Le symétrique de A par rapport à (d1) est à la même hauteur que A, 4 carreaux à droite de (d1) : ce n'est pas D."
+      },
+      {
+        "key": "b",
+        "text": "La droite (d2)",
+        "misconception": "Le symétrique de A par rapport à (d2) est juste en dessous de A, 2 carreaux sous (d2) : ce n'est pas D."
+      },
+      {
+        "key": "c",
+        "text": "La droite (d3)",
+        "misconception": null
+      },
+      {
+        "key": "d",
+        "text": "Aucune de ces droites",
+        "misconception": "(d3) convient : c'est la médiatrice de [AD], de [BE] et de [CF]. Il faut tester chaque droite sur un point et son symétrique."
+      }
+    ],
+    "answer": {
+      "value": "c"
+    },
+    "solution_steps": [
+      "L'axe d'une symétrie axiale est la médiatrice du segment qui joint un point et son symétrique : il coupe ce segment en son milieu, perpendiculairement.",
+      "(d3) suit une diagonale des carreaux. Partons de A et avançons dans l'autre diagonale, d'un carreau vers la droite et d'un carreau vers le bas à chaque pas : après 3 pas, on est sur (d3) ; après 3 pas de plus, on arrive en D.",
+      "Cela marche aussi pour B et E (5 pas en tout), pour C et F (2 pas en tout) : l'axe est **la droite (d3)**.",
+      "(d1) et (d2) ne conviennent pas : le symétrique de A par rapport à (d1) est 4 carreaux à droite de (d1), par rapport à (d2) 2 carreaux sous (d2) ; aucun des deux n'est D."
+    ],
+    "hint": "Prends un point et son symétrique, par exemple A et D : l'axe coupe [AD] en son milieu et lui est perpendiculaire.",
+    "estimated_duration_s": 70,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, classe de 4e, Espace et géométrie, Parallélogrammes et translations, Automatismes : « Dire si des figures planes sont images l'une de l'autre par une symétrie axiale (dont on identifie l'axe) ou par un demi-tour (dont on identifie le centre). »"
+  },
+  {
+    "id": "EX-G057-E-02",
+    "skill_id": "G057",
+    "level": "entrainement",
+    "type": "texte",
+    "statement": "La droite (d) est un axe de symétrie de la figure ABCDEF.\n\nQuelle est l'image du segment [CD] par la symétrie d'axe (d) ?",
+    "image": "figures/EX-G057-E-02",
+    "answer": {
+      "value": "[ED]",
+      "accepted": [
+        "[DE]",
+        "ED",
+        "DE",
+        "le segment [ED]",
+        "le segment [DE]",
+        "segment [ED]",
+        "segment [DE]",
+        "c'est [ED]",
+        "c'est [DE]",
+        "c'est le segment [ED]",
+        "c'est le segment [DE]",
+        "le segment ED",
+        "le segment DE",
+        "segment ED",
+        "segment DE",
+        "l'image est [ED]",
+        "l'image est [DE]",
+        "l'image de [CD] est [ED]",
+        "l'image de [CD] est [DE]"
+      ]
+    },
+    "solution_steps": [
+      "Le symétrique de C par rapport à (d) est de l'autre côté de (d), à la même distance, sur la perpendiculaire à (d) qui passe par C : c'est le point E.",
+      "Le point D est sur l'axe (d) : il est son propre symétrique.",
+      "L'image du segment [CD] est donc **le segment [ED]**.",
+      "Piège : [EF] est l'image de [CB], pas de [CD]. Un point de l'axe ne bouge pas."
+    ],
+    "hint": "Cherche l'image de chaque extrémité du segment. Que devient un point situé sur l'axe ?",
+    "estimated_duration_s": 50,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, classe de 4e, Espace et géométrie, Parallélogrammes et translations, Automatismes : « Dans une configuration donnée, déterminer les images de figures, de droites, de segments, de points par une symétrie axiale ou un demi-tour. »"
+  },
+  {
+    "id": "EX-G057-M-01",
+    "skill_id": "G057",
+    "level": "maitrise",
+    "type": "vrai_faux",
+    "statement": "Le triangle T' est l'image du triangle T par la symétrie d'axe (d). Malik dit : « On peut obtenir T' à partir de T par un demi-tour. »\n\nA-t-il raison ?",
+    "image": "figures/EX-G057-M-01",
+    "answer": {
+      "value": true
+    },
+    "solution_steps": [
+      "Le triangle T a lui-même un axe de symétrie : la droite verticale qui passe par son sommet du haut.",
+      "Appelons O le point de (d) situé 4 carreaux sous le sommet du haut de T. Le sommet du bas de T' est 4 carreaux sous O : O est le milieu du segment qui joint ces deux sommets.",
+      "Le sommet de gauche de T est 2 carreaux à gauche de O et 1 carreau au-dessus ; le sommet de droite de T' est 2 carreaux à droite de O et 1 carreau au-dessous : O est le milieu de ce segment aussi. De même pour les deux derniers sommets.",
+      "T' est donc aussi l'image de T par le demi-tour de centre O. Malik a raison : c'est **vrai**. Cela arrive parce que T a un axe de symétrie perpendiculaire à (d)."
+    ],
+    "hint": "Cherche sur (d) un point qui serait le milieu des segments joignant les sommets de T à des sommets de T'.",
+    "estimated_duration_s": 90,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, classe de 4e, Espace et géométrie, Parallélogrammes et translations, Automatismes : « Dire si des figures planes sont images l'une de l'autre par une symétrie axiale (dont on identifie l'axe) ou par un demi-tour (dont on identifie le centre). »"
+  },
+  {
+    "id": "EX-G057-M-02",
+    "skill_id": "G057",
+    "level": "maitrise",
+    "type": "qcm",
+    "statement": "Le triangle DEF est l'image du triangle ABC, mais D n'est pas forcément l'image de A.\n\nPar quelle transformation ?",
+    "image": "figures/EX-G057-M-02",
+    "choices": [
+      {
+        "key": "a",
+        "text": "Le demi-tour de centre P",
+        "misconception": null
+      },
+      {
+        "key": "b",
+        "text": "Le demi-tour de centre Q",
+        "misconception": "Q est le milieu de [AD], mais D n'est pas l'image de A : en associant les sommets dans l'ordre des lettres, on trouve Q. Le symétrique de B par rapport à Q n'est aucun sommet de DEF."
+      },
+      {
+        "key": "c",
+        "text": "La symétrie d'axe (d)",
+        "misconception": "(d) est la médiatrice de [AD] : elle envoie A sur D, mais le symétrique de B par rapport à (d) n'est aucun sommet de DEF."
+      },
+      {
+        "key": "d",
+        "text": "Aucune de ces transformations",
+        "misconception": "Le demi-tour de centre P convient : P est le milieu de [AF], de [BD] et de [CE]. L'ordre des lettres ne dit pas quels sommets se correspondent."
+      }
+    ],
+    "answer": {
+      "value": "a"
+    },
+    "solution_steps": [
+      "Par un demi-tour, l'image d'un sommet est de l'autre côté du centre, à la même distance. Cherchons, pour chaque sommet de ABC, le sommet de DEF qui lui correspond.",
+      "De A à P : 4 carreaux vers la droite et 3 vers le bas ; de P à F : encore 4 vers la droite et 3 vers le bas. P est le milieu de [AF].",
+      "De même, P est le milieu de [BD] et de [CE] : DEF est l'image de ABC par **le demi-tour de centre P**, qui transforme A en F, B en D et C en E.",
+      "Q est le milieu de [AD] et (d) est la médiatrice de [AD] : ils conviennent pour A et D seulement, pas pour les autres sommets."
+    ],
+    "hint": "Ne te fie pas à l'ordre des lettres : pour chaque proposition, vérifie l'image de chacun des trois sommets.",
+    "estimated_duration_s": 90,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, classe de 4e, Espace et géométrie, Parallélogrammes et translations, Automatismes : « Dire si des figures planes sont images l'une de l'autre par une symétrie axiale (dont on identifie l'axe) ou par un demi-tour (dont on identifie le centre). »"
+  }
+]

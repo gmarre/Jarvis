@@ -1,0 +1,200 @@
+[
+  {
+    "id": "EX-P034-D-01",
+    "skill_id": "P034",
+    "level": "decouverte",
+    "type": "numerique",
+    "statement": "Le volume d'un cylindre se calcule comme celui d'un prisme droit : aire de la base × hauteur. Quel est le volume de ce cylindre, en cm³, arrondi à l'unité ?",
+    "image": "figures/EX-P034-D-01",
+    "answer": {
+      "value": 1005,
+      "unit": "cm³",
+      "tolerance": 0.5,
+      "accepted": [
+        "1 005 cm³",
+        "1005 cm³",
+        "1005 cm3",
+        "1 005 cm3",
+        "1005 centimètres cubes"
+      ]
+    },
+    "solution_steps": [
+      "La base est un disque de rayon 8 cm. Son aire : π × r² = π × 8² = π × 64.",
+      "La hauteur est 5 cm. Volume = π × 64 × 5 = π × 320 : la valeur exacte est 320π cm³.",
+      "Avec la touche π : 1 005,3… ; avec 3,14 : 3,14 × 320 = 1 004,8. Arrondi à l'unité : 1 005 dans les deux cas.",
+      "Le volume du cylindre est d'environ **1 005 cm³**."
+    ],
+    "hint": "Calcule d'abord l'aire du disque de base.",
+    "estimated_duration_s": 75,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, classe de 5e, Espace et géométrie, Représentation de l'espace, Objectifs d'apprentissage : « Calculer l'aire du disque, le volume du cylindre de révolution. »"
+  },
+  {
+    "id": "EX-P034-D-02",
+    "skill_id": "P034",
+    "level": "decouverte",
+    "type": "qcm",
+    "statement": "Un cylindre a un diamètre de 18 cm et une hauteur de 3 cm. Quel est son volume exact ?",
+    "image": null,
+    "choices": [
+      {
+        "key": "a",
+        "text": "54π cm³",
+        "misconception": "L'élève calcule 2 × π × r × h = 2 × π × 9 × 3 : c'est l'aire de la face latérale (le rectangle du patron), pas un volume."
+      },
+      {
+        "key": "b",
+        "text": "972π cm³",
+        "misconception": "L'élève utilise le diamètre au lieu du rayon : π × 18² × 3 = π × 324 × 3."
+      },
+      {
+        "key": "c",
+        "text": "243π cm³",
+        "misconception": null
+      },
+      {
+        "key": "d",
+        "text": "27π cm³",
+        "misconception": "L'élève oublie le carré du rayon : π × 9 × 3."
+      }
+    ],
+    "answer": {
+      "value": "c"
+    },
+    "solution_steps": [
+      "Le rayon est la moitié du diamètre : r = 18 ÷ 2 = 9 cm.",
+      "Aire de la base : π × 9² = π × 81.",
+      "Volume = aire de la base × hauteur = π × 81 × 3 = π × 243. Le volume exact est **243π cm³**.",
+      "On garde π dans l'écriture : c'est la valeur exacte. Avec 3,14, on n'aurait qu'une valeur approchée."
+    ],
+    "hint": "Commence par trouver le rayon.",
+    "estimated_duration_s": 60,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, classe de 5e, Espace et géométrie, Représentation de l'espace, Objectifs d'apprentissage : « Calculer l'aire du disque, le volume du cylindre de révolution. »"
+  },
+  {
+    "id": "EX-P034-E-01",
+    "skill_id": "P034",
+    "level": "entrainement",
+    "type": "texte",
+    "statement": "Ce cylindre est couché. Donne son volume exact en cm³, écrit avec π (au clavier, tu peux taper pi).",
+    "image": "figures/EX-P034-E-01",
+    "answer": {
+      "value": "588π",
+      "unit": "cm³",
+      "forme": "expression",
+      "variables": []
+    },
+    "solution_steps": [
+      "Couché, le cylindre a ses bases à gauche et à droite : ce sont des disques de rayon 7 cm. Sa hauteur est la distance entre les deux bases : 12 cm.",
+      "Aire d'une base : π × 7² = π × 49.",
+      "Volume = π × 49 × 12 = π × 588 : le volume exact est **588π cm³**.",
+      "Avec le diamètre, 14 cm, on trouverait π × 196 × 12 = 2 352π cm³ : quatre fois trop."
+    ],
+    "hint": "Quelle longueur relie les deux bases ?",
+    "estimated_duration_s": 75,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, classe de 5e, Espace et géométrie, Représentation de l'espace, Objectifs d'apprentissage : « Calculer l'aire du disque, le volume du cylindre de révolution. »"
+  },
+  {
+    "id": "EX-P034-E-02",
+    "skill_id": "P034",
+    "level": "entrainement",
+    "type": "numerique",
+    "statement": "Un petit pot de crème a la forme de ce cylindre. Quel est son volume, en cm³, arrondi au dixième ?",
+    "image": "figures/EX-P034-E-02",
+    "answer": {
+      "value": 58.9,
+      "unit": "cm³",
+      "tolerance": 0.05,
+      "accepted": [
+        "58,9 cm³",
+        "58,9 cm3",
+        "58,9 centimètres cubes"
+      ]
+    },
+    "solution_steps": [
+      "La figure donne le diamètre, 5 cm. Le rayon en est la moitié : r = 5 ÷ 2 = 2,5 cm.",
+      "Aire de la base : π × 2,5² = π × 6,25. Volume = π × 6,25 × 3 = π × 18,75.",
+      "Avec la touche π : 58,90… ; avec 3,14 : 3,14 × 18,75 = 58,875. Arrondi au dixième : 58,9 dans les deux cas.",
+      "Le volume du pot est d'environ **58,9 cm³**. Avec le diamètre, π × 5² × 3 donnerait environ 235,6 cm³."
+    ],
+    "hint": "La longueur écrite en haut est-elle le rayon ?",
+    "estimated_duration_s": 90,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, classe de 5e, Espace et géométrie, Représentation de l'espace, Objectifs d'apprentissage : « Calculer l'aire du disque, le volume du cylindre de révolution. »"
+  },
+  {
+    "id": "EX-P034-M-01",
+    "skill_id": "P034",
+    "level": "maitrise",
+    "type": "numerique",
+    "statement": "Une poubelle cylindrique mesure 40 cm de diamètre et 50 cm de hauteur. Quelle est sa contenance, en litres, arrondie au dixième ?",
+    "image": null,
+    "answer": {
+      "value": 62.8,
+      "unit": "L",
+      "tolerance": 0.05,
+      "accepted": [
+        "62,8 L",
+        "62,8 l",
+        "62,8 litres"
+      ]
+    },
+    "solution_steps": [
+      "Rayon : 40 ÷ 2 = 20 cm. Aire de la base : π × 20² = π × 400.",
+      "Volume = π × 400 × 50 = π × 20 000 : environ 62 831,9 cm³ avec la touche π, et 62 800 cm³ avec 3,14.",
+      "1 L = 1 dm³ = 1 000 cm³ : on divise par 1 000. On obtient 62,83… L avec la touche π, 62,8 L avec 3,14.",
+      "Arrondie au dixième, la contenance est d'environ **62,8 L** dans les deux cas.",
+      "Sans conversion, on trouverait des cm³, pas des litres ; avec le diamètre pris pour rayon, environ 251,3 L."
+    ],
+    "hint": "Calcule le volume en cm³, puis convertis-le en litres.",
+    "estimated_duration_s": 150,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, classe de 5e, Espace et géométrie, Représentation de l'espace, Objectifs d'apprentissage : « Calculer l'aire du disque, le volume du cylindre de révolution. »"
+  },
+  {
+    "id": "EX-P034-M-02",
+    "skill_id": "P034",
+    "level": "maitrise",
+    "type": "qcm",
+    "statement": "Une boîte en pavé droit mesure 10 cm sur 10 cm sur 12 cm. Une boîte cylindrique a 10 cm de diamètre et 15 cm de hauteur. Quelle phrase est juste ?",
+    "image": null,
+    "choices": [
+      {
+        "key": "a",
+        "text": "Le pavé contient le plus : 1 200 cm³ contre environ 1 178 cm³",
+        "misconception": null
+      },
+      {
+        "key": "b",
+        "text": "Le cylindre contient le plus : environ 4 712 cm³ contre 1 200 cm³",
+        "misconception": "L'élève prend le diamètre pour rayon : π × 10² × 15 ≈ 4 712. Le rayon est 5 cm."
+      },
+      {
+        "key": "c",
+        "text": "Le cylindre contient le plus, car il est plus haut : 15 cm contre 12 cm",
+        "misconception": "L'élève compare seulement les hauteurs. Le volume dépend aussi de l'aire de la base, plus petite pour le cylindre."
+      },
+      {
+        "key": "d",
+        "text": "Le pavé contient le plus : 1 200 cm³ contre environ 471 cm³",
+        "misconception": "La conclusion est juste, mais pas le calcul : 2 × π × 5 × 15 ≈ 471 est l'aire de la face latérale du cylindre, en cm², pas son volume. La phrase est donc fausse."
+      }
+    ],
+    "answer": {
+      "value": "a"
+    },
+    "solution_steps": [
+      "Boîte en pavé : 10 × 10 × 12 = 1 200 cm³.",
+      "Boîte cylindrique : rayon 10 ÷ 2 = 5 cm, aire de la base π × 5² = π × 25, volume π × 25 × 15 = 375π cm³.",
+      "Avec la touche π, 375π ≈ 1 178 cm³ ; avec 3,14, 1 177,5 cm³. Dans les deux cas, c'est moins que 1 200 cm³.",
+      "C'est **la boîte en pavé** qui contient le plus, de peu : le cylindre est plus haut, mais sa base, un disque de 10 cm de diamètre, est plus petite que le carré de 10 cm de côté.",
+      "La phrase d conclut aussi « le pavé », mais avec un faux volume pour le cylindre (471 cm³, l'aire de sa face latérale) : seule la phrase a est entièrement juste."
+    ],
+    "hint": "Calcule les deux volumes ; pour le cylindre, cherche d'abord le rayon.",
+    "estimated_duration_s": 150,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, classe de 5e, Espace et géométrie, Représentation de l'espace, Objectifs d'apprentissage : « Calculer l'aire du disque, le volume du cylindre de révolution. »"
+  }
+]

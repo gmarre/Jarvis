@@ -1,0 +1,92 @@
+{
+  "type": "geometrie",
+  "params": {
+    "colonnes": 12,
+    "lignes": 6,
+    "fond": "quadrille",
+    "points": {
+      "_P": [
+        6,
+        0
+      ],
+      "_Q": [
+        6,
+        6
+      ],
+      "O": [
+        6,
+        5
+      ],
+      "A": [
+        1,
+        2
+      ],
+      "B": [
+        4,
+        1
+      ],
+      "C": [
+        3,
+        4
+      ],
+      "D": [
+        11,
+        2
+      ],
+      "E": [
+        8,
+        1
+      ],
+      "F": [
+        9,
+        4
+      ]
+    },
+    "elements": [
+      {
+        "polygone": [
+          "A",
+          "B",
+          "C"
+        ]
+      },
+      {
+        "image": [
+          "A",
+          "B",
+          "C"
+        ],
+        "par": {
+          "symetrie": [
+            "_P",
+            "_Q"
+          ]
+        },
+        "noms": [
+          "D",
+          "E",
+          "F"
+        ],
+        "polygone": true,
+        "couleur": "accent"
+      },
+      {
+        "image": [
+          "A",
+          "B",
+          "C"
+        ],
+        "par": {
+          "demi_tour": "O"
+        },
+        "noms": [
+          "D",
+          "E",
+          "F"
+        ],
+        "distracteur": true
+      }
+    ]
+  },
+  "alt": "Deux triangles ABC et DEF et un point O sur un quadrillage"
+}

@@ -1,0 +1,75 @@
+{
+  "type": "geometrie",
+  "params": {
+    "colonnes": 12,
+    "lignes": 9,
+    "fond": "blanc",
+    "points": {
+      "A": [
+        1,
+        7
+      ],
+      "B": [
+        7,
+        8
+      ],
+      "M": [
+        3,
+        2
+      ],
+      "I": [
+        5,
+        5
+      ]
+    },
+    "elements": [
+      {
+        "vecteur": [
+          "A",
+          "B"
+        ]
+      },
+      {
+        "image": [
+          "M"
+        ],
+        "par": {
+          "translation": [
+            "A",
+            "B"
+          ]
+        },
+        "noms": [
+          "M'"
+        ]
+      },
+      {
+        "image": [
+          "A",
+          "B"
+        ],
+        "par": {
+          "demi_tour": "I"
+        },
+        "noms": [
+          "M'",
+          "M"
+        ]
+      },
+      {
+        "segment": [
+          "A",
+          "M'"
+        ]
+      },
+      {
+        "segment": [
+          "B",
+          "M"
+        ]
+      }
+    ],
+    "legende": "Figure pas en vraie grandeur"
+  },
+  "alt": "Une flèche de A vers B, deux segments [AM'] et [BM] qui se coupent en I"
+}

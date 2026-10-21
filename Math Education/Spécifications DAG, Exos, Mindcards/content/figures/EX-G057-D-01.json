@@ -1,0 +1,117 @@
+{
+  "type": "geometrie",
+  "params": {
+    "colonnes": 12,
+    "lignes": 10,
+    "fond": "quadrille",
+    "points": {
+      "_P": [
+        0,
+        5
+      ],
+      "_Q": [
+        12,
+        5
+      ],
+      "O": [
+        6,
+        5
+      ],
+      "_t1": [
+        0,
+        0
+      ],
+      "_t2": [
+        4,
+        5
+      ],
+      "A": [
+        1,
+        1
+      ],
+      "B": [
+        5,
+        2
+      ],
+      "C": [
+        2,
+        4
+      ]
+    },
+    "elements": [
+      {
+        "axe": [
+          "_P",
+          "_Q"
+        ],
+        "nom": "(d)"
+      },
+      {
+        "polygone": [
+          "A",
+          "B",
+          "C"
+        ]
+      },
+      {
+        "image": [
+          "A",
+          "B",
+          "C"
+        ],
+        "par": {
+          "translation": [
+            "_t1",
+            "_t2"
+          ]
+        },
+        "noms": [
+          "D",
+          "E",
+          "F"
+        ],
+        "polygone": true,
+        "couleur": "accent"
+      },
+      {
+        "image": [
+          "A",
+          "B",
+          "C"
+        ],
+        "par": {
+          "demi_tour": "O"
+        },
+        "noms": [
+          "D",
+          "E",
+          "F"
+        ],
+        "distracteur": true
+      },
+      {
+        "image": [
+          "A",
+          "B",
+          "C"
+        ],
+        "par": {
+          "symetrie": [
+            "_P",
+            "_Q"
+          ]
+        },
+        "noms": [
+          "D",
+          "E",
+          "F"
+        ],
+        "distracteur": true
+      }
+    ],
+    "etiquettes": {
+      "O": "haut"
+    }
+  },
+  "alt": "Deux triangles ABC et DEF, une droite (d) et un point O sur un quadrillage"
+}

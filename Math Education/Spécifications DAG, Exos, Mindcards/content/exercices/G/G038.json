@@ -1,0 +1,198 @@
+[
+  {
+    "id": "EX-G038-D-01",
+    "skill_id": "G038",
+    "level": "decouverte",
+    "type": "qcm",
+    "statement": "Sur le quadrillage, quel point est le symétrique du point M par rapport au point O ?",
+    "image": "figures/EX-G038-D-01",
+    "choices": [
+      {
+        "key": "a",
+        "text": "Le point R",
+        "misconception": "R est à la même hauteur que M, de l'autre côté de O : c'est le symétrique de M par rapport à la droite verticale qui passe par O (symétrie axiale), pas par rapport au point O."
+      },
+      {
+        "key": "b",
+        "text": "Le point S",
+        "misconception": null
+      },
+      {
+        "key": "c",
+        "text": "Le point T",
+        "misconception": "T est juste en dessous de M : c'est son symétrique par rapport à la droite horizontale qui passe par O. Le symétrique par rapport au point O échange à la fois la gauche et la droite, le haut et le bas."
+      },
+      {
+        "key": "d",
+        "text": "Le point U",
+        "misconception": "M, O et U sont bien alignés, mais U est du même côté de O que M : O n'est pas le milieu de [MU]. Le symétrique est de l'autre côté de O."
+      }
+    ],
+    "answer": {
+      "value": "b"
+    },
+    "solution_steps": [
+      "Le symétrique de M par rapport à O est le point M' tel que O soit le milieu du segment [MM'] : M, O et M' sont alignés, et OM' = OM.",
+      "Pour aller de M à O, on avance de 3 carreaux vers la droite et de 2 carreaux vers le bas.",
+      "On refait le même trajet à partir de O : 3 carreaux vers la droite, puis 2 carreaux vers le bas. On arrive sur **le point S**.",
+      "R et T sont des symétriques de M par rapport à des droites (la figure est retournée comme dans un miroir) ; U est aligné avec M et O, mais du même côté que M."
+    ],
+    "hint": "Compte les carreaux pour aller de M à O, puis refais le même trajet à partir de O.",
+    "estimated_duration_s": 45,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, classe de 5e, Espace et géométrie, Transformations, Objectifs d'apprentissage : « Définir le demi-tour, ou symétrie centrale. »"
+  },
+  {
+    "id": "EX-G038-D-02",
+    "skill_id": "G038",
+    "level": "decouverte",
+    "type": "numerique",
+    "statement": "Le point P' est le symétrique du point P par rapport au point O : c'est l'image de P par le demi-tour de centre O. On sait que OP = 3,8 cm.\n\nCombien mesure le segment [PP'], en cm ?",
+    "image": "figures/EX-G038-D-02",
+    "answer": {
+      "value": 7.6,
+      "unit": "cm",
+      "accepted": [
+        "7,6 cm",
+        "7,6",
+        "7,6 centimètres",
+        "PP' = 7,6 cm"
+      ]
+    },
+    "solution_steps": [
+      "Par définition, O est le milieu du segment [PP'] : les points P, O et P' sont alignés, et OP' = OP = 3,8 cm.",
+      "Le segment [PP'] est formé des segments [PO] et [OP'] : PP' = OP + OP' = 3,8 + 3,8 = 7,6.",
+      "Le segment [PP'] mesure **7,6 cm**, le double de OP.",
+      "Pièges : 3,8 cm est la longueur OP', pas la longueur PP' ; 1,9 cm serait la moitié de OP, alors que c'est PP' qui est le double de OP."
+    ],
+    "hint": "Où se trouve le point O sur le segment [PP'] ?",
+    "estimated_duration_s": 45,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, classe de 5e, Espace et géométrie, Transformations, Objectifs d'apprentissage : « Définir le demi-tour, ou symétrie centrale. »"
+  },
+  {
+    "id": "EX-G038-E-01",
+    "skill_id": "G038",
+    "level": "entrainement",
+    "type": "vrai_faux",
+    "statement": "Lina dit : « Le triangle DEF est le symétrique du triangle ABC par rapport au point O. »\n\nA-t-elle raison ?",
+    "image": "figures/EX-G038-E-01",
+    "answer": {
+      "value": false
+    },
+    "solution_steps": [
+      "Si DEF était le symétrique de ABC par rapport à O, le point O serait le milieu de [AD] : A, O et D seraient alignés.",
+      "Or A et D sont à la même hauteur sur le quadrillage, alors que O est 3 carreaux plus bas : O n'est pas sur le segment [AD].",
+      "Le triangle DEF est en fait retourné, comme dans un miroir : c'est le symétrique de ABC par rapport à la droite verticale qui passe par O (symétrie axiale).",
+      "Le symétrique de A par rapport au point O serait 5 carreaux à droite de O et 3 carreaux plus bas : ce n'est aucun des sommets D, E, F. Lina a tort : c'est **faux**."
+    ],
+    "hint": "Le point O est-il le milieu du segment [AD] ?",
+    "estimated_duration_s": 60,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, classe de 5e, Espace et géométrie, Transformations, Objectifs d'apprentissage : « Définir le demi-tour, ou symétrie centrale. »"
+  },
+  {
+    "id": "EX-G038-E-02",
+    "skill_id": "G038",
+    "level": "entrainement",
+    "type": "qcm",
+    "statement": "Quelle figure est le symétrique de la figure 1 par rapport au point O ?",
+    "image": "figures/EX-G038-E-02",
+    "choices": [
+      {
+        "key": "a",
+        "text": "La figure 2",
+        "misconception": "La figure 2 est retournée comme dans un miroir : c'est le symétrique de la figure 1 par rapport à la droite verticale qui passe par O, pas par rapport au point O."
+      },
+      {
+        "key": "b",
+        "text": "La figure 3",
+        "misconception": "La figure 3 est le symétrique de la figure 1 par rapport à la droite horizontale qui passe par O : elle est retournée, pas tournée d'un demi-tour."
+      },
+      {
+        "key": "c",
+        "text": "La figure 4",
+        "misconception": null
+      },
+      {
+        "key": "d",
+        "text": "Aucune de ces figures",
+        "misconception": "La figure 4 convient : chaque sommet de la figure 1 a son symétrique par rapport à O parmi ses sommets. Il faut vérifier sommet par sommet avant de conclure."
+      }
+    ],
+    "answer": {
+      "value": "c"
+    },
+    "solution_steps": [
+      "Le symétrique par rapport au point O s'obtient en faisant faire un demi-tour à la figure autour de O : elle est tournée, pas retournée.",
+      "Le sommet de l'angle droit de la figure 1 est 5 carreaux à gauche de O et 4 carreaux au-dessus. Son symétrique est 5 carreaux à droite de O et 4 carreaux au-dessous : c'est le sommet de l'angle droit de la figure 4.",
+      "On vérifie de même les deux autres sommets : la figure 4 est le symétrique de la figure 1. Réponse : **la figure 4**.",
+      "Les figures 2 et 3 sont les symétriques de la figure 1 par rapport à des droites (verticale et horizontale) passant par O : elles sont retournées."
+    ],
+    "hint": "La symétrie centrale fait faire un demi-tour à la figure : cherche celle qui est tournée, pas retournée.",
+    "estimated_duration_s": 60,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, classe de 5e, Espace et géométrie, Transformations, Objectifs d'apprentissage : « Définir le demi-tour, ou symétrie centrale. »"
+  },
+  {
+    "id": "EX-G038-M-01",
+    "skill_id": "G038",
+    "level": "maitrise",
+    "type": "texte",
+    "statement": "Le point A' est le symétrique du point A par un demi-tour (symétrie centrale).\n\nQuel point, P, Q, R ou S, est le centre de ce demi-tour ?",
+    "image": "figures/EX-G038-M-01",
+    "answer": {
+      "value": "R",
+      "accepted": [
+        "le point R",
+        "point R",
+        "c'est R",
+        "c'est le point R",
+        "le centre est R",
+        "le centre est le point R",
+        "R est le centre",
+        "le point R est le centre",
+        "le centre du demi-tour est R",
+        "le centre du demi-tour est le point R"
+      ]
+    },
+    "solution_steps": [
+      "Le centre du demi-tour qui transforme A en A' est le milieu du segment [AA'] : il est aligné avec A et A', et à la même distance des deux.",
+      "Pour aller de A à A', on avance de 8 carreaux vers la droite et de 4 carreaux vers le bas. Le milieu est à mi-chemin : 4 carreaux vers la droite et 2 carreaux vers le bas à partir de A.",
+      "On arrive sur **le point R**.",
+      "P est aligné avec A et A', mais trop près de A. Q est à la même distance de A et de A', mais il n'est pas sur le segment [AA']. S n'est à mi-chemin que vers la droite."
+    ],
+    "hint": "Le centre est le milieu du segment [AA'] : compte les carreaux de A à A', puis prends-en la moitié.",
+    "estimated_duration_s": 75,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, classe de 5e, Espace et géométrie, Transformations, Objectifs d'apprentissage : « Définir le demi-tour, ou symétrie centrale. »"
+  },
+  {
+    "id": "EX-G038-M-02",
+    "skill_id": "G038",
+    "level": "maitrise",
+    "type": "numerique",
+    "statement": "Le point A' est le symétrique du point A par rapport au point O, et AA' = 8,4 cm. Le point B est le symétrique de O par rapport à A'.\n\nCombien mesure le segment [AB], en cm ?",
+    "image": null,
+    "answer": {
+      "value": 12.6,
+      "unit": "cm",
+      "accepted": [
+        "12,6 cm",
+        "12,6",
+        "12,6 centimètres",
+        "AB = 12,6 cm"
+      ]
+    },
+    "solution_steps": [
+      "O est le milieu de [AA'] : OA' = 8,4 ÷ 2 = 4,2 cm.",
+      "B est le symétrique de O par rapport à A' : A' est le milieu de [OB]. Donc A'B = A'O = 4,2 cm, et B est de l'autre côté de A' par rapport à O.",
+      "Les points sont alignés dans l'ordre A, O, A', B. Donc AB = AA' + A'B = 8,4 + 4,2 = 12,6.",
+      "Le segment [AB] mesure **12,6 cm**. Piège : prendre A'B = AA' donne 16,8 cm ; c'est A'O qui est égal à A'B, pas AA'."
+    ],
+    "hint": "Fais un schéma à main levée : place A, O et A', puis B. De quel segment A' est-il le milieu ?",
+    "estimated_duration_s": 90,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, classe de 5e, Espace et géométrie, Transformations, Objectifs d'apprentissage : « Définir le demi-tour, ou symétrie centrale. »"
+  }
+]

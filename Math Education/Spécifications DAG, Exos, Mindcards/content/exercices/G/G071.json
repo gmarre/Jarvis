@@ -1,0 +1,178 @@
+[
+  {
+    "id": "EX-G071-D-01",
+    "skill_id": "G071",
+    "level": "decouverte",
+    "type": "qcm",
+    "statement": "Ce pavé droit ABCDEFGH est dessiné en perspective cavalière, mais il manque une arête. Lequel des segments bleus a, b ou c la complète ?",
+    "image": "figures/EX-G071-D-01",
+    "choices": [
+      {
+        "key": "a",
+        "text": "Le segment a",
+        "misconception": "L'élève relie C au sommet F, placé derrière B. Mais [CF] traverse la face de droite : c'est une diagonale de cette face, pas une arête."
+      },
+      {
+        "key": "b",
+        "text": "Le segment b",
+        "misconception": "L'élève relie C au sommet H, au fond de la face du dessus. Mais [CH] traverse cette face : c'est une diagonale, pas une arête."
+      },
+      {
+        "key": "c",
+        "text": "Le segment c",
+        "misconception": null
+      }
+    ],
+    "answer": {
+      "value": "c"
+    },
+    "solution_steps": [
+      "Dans un pavé, chaque sommet de la face avant ABCD est relié par une arête au sommet placé derrière lui : [BF] et [DH] sont tracées, [AE] aussi, en pointillés car elle est cachée.",
+      "Ces arêtes qui partent vers l'arrière s'appellent les fuyantes. En perspective cavalière, elles sont parallèles entre elles : sur le dessin, elles ont toutes la même direction.",
+      "Il manque la fuyante qui part de C : elle va de C à G, parallèle à [BF] et à [DH]. C'est **le segment c**.",
+      "Les segments a et b ne suivent pas le bord d'une face : ils la traversent. Ce sont des diagonales de faces, pas des arêtes."
+    ],
+    "hint": "Les arêtes qui partent vers l'arrière sont toutes parallèles : laquelle manque ?",
+    "estimated_duration_s": 60,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, classe de 5e, Espace et géométrie, Représentation de l'espace, Objectifs d'apprentissage : « Construire et mettre en relation différentes représentations en perspectives cavalières des solides suivants : pavé droit, cube, cylindre de révolution, prisme droit. »"
+  },
+  {
+    "id": "EX-G071-D-02",
+    "skill_id": "G071",
+    "level": "decouverte",
+    "type": "vrai_faux",
+    "statement": "Ce cylindre de révolution est couché. Sa face de droite, de centre O', est dessinée en forme d'ovale.\n\nVrai ou faux : en réalité, cette face est un ovale.",
+    "image": "figures/EX-G071-D-02",
+    "answer": {
+      "value": false
+    },
+    "solution_steps": [
+      "Le cylindre est couché : ses deux bases sont à gauche et à droite, pas en bas. La face de droite, de centre O', est une base.",
+      "Les deux bases d'un cylindre de révolution sont des disques de même rayon.",
+      "En perspective cavalière, un disque qui n'est pas dessiné de face apparaît aplati, en forme d'ovale : c'est le dessin qui déforme, pas le solide.",
+      "En réalité, cette face est un disque de centre O'. L'affirmation est **fausse**."
+    ],
+    "hint": "Quelle est la forme des bases d'un cylindre de révolution ?",
+    "estimated_duration_s": 40,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, classe de 5e, Espace et géométrie, Représentation de l'espace, Objectifs d'apprentissage : « Construire et mettre en relation différentes représentations en perspectives cavalières des solides suivants : pavé droit, cube, cylindre de révolution, prisme droit. »"
+  },
+  {
+    "id": "EX-G071-E-01",
+    "skill_id": "G071",
+    "level": "entrainement",
+    "type": "qcm",
+    "statement": "Dans ce pavé droit, la face coloriée BCGF est dessinée comme un parallélogramme. Quelle est sa vraie nature ?",
+    "image": "figures/EX-G071-E-01",
+    "choices": [
+      {
+        "key": "a",
+        "text": "Un parallélogramme sans angle droit",
+        "misconception": "L'élève décrit le dessin, pas le solide. En perspective cavalière, les angles droits d'une face qui n'est pas vue de face ne sont pas dessinés droits."
+      },
+      {
+        "key": "b",
+        "text": "Un rectangle",
+        "misconception": null
+      },
+      {
+        "key": "c",
+        "text": "Un carré",
+        "misconception": "L'élève pense que les faces d'un pavé sont des carrés, comme celles d'un cube. Ici, BC = 5 cm et BF = 3 cm : les côtés ne sont pas égaux."
+      },
+      {
+        "key": "d",
+        "text": "Un losange",
+        "misconception": "L'élève croit qu'un parallélogramme dessiné penché est un losange. Un losange a quatre côtés égaux : ici, BC = 5 cm et BF = 3 cm."
+      }
+    ],
+    "answer": {
+      "value": "b"
+    },
+    "solution_steps": [
+      "Toutes les faces d'un pavé droit sont des rectangles : c'est ce qui fait un pavé droit.",
+      "La face BCGF n'est pas vue de face. En perspective cavalière, elle est dessinée déformée : ses angles droits ne sont pas dessinés droits, et [BF], qui part vers l'arrière, est raccourcie.",
+      "Ses côtés mesurent en réalité BC = 5 cm et BF = 3 cm. Ils ne sont pas égaux : ce n'est ni un carré ni un losange.",
+      "La face BCGF est **un rectangle** de 5 cm sur 3 cm."
+    ],
+    "hint": "Quelle est la forme de toutes les faces d'un pavé droit ?",
+    "estimated_duration_s": 50,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, classe de 5e, Espace et géométrie, Représentation de l'espace, Automatismes : « Reconnaitre un cube, un pavé représenté en perspective cavalière. »"
+  },
+  {
+    "id": "EX-G071-E-02",
+    "skill_id": "G071",
+    "level": "entrainement",
+    "type": "numerique",
+    "statement": "Ce prisme droit a pour bases deux hexagones (6 côtés). On l'a dessiné sans ses arêtes cachées.\n\nCombien d'arêtes faut-il ajouter en pointillés ?",
+    "image": "figures/EX-G071-E-02",
+    "answer": {
+      "value": 5,
+      "accepted": [
+        "5 arêtes",
+        "cinq",
+        "cinq arêtes"
+      ]
+    },
+    "solution_steps": [
+      "Le prisme a 6 arêtes sur la base du bas, 6 sur la base du haut et 6 arêtes latérales qui les relient : 6 + 6 + 6 = 18 arêtes en tout.",
+      "Sur le dessin, on voit les 6 côtés de la base du haut, 3 côtés de la base du bas (ceux de devant) et 4 arêtes latérales : 6 + 3 + 4 = 13 arêtes.",
+      "Celles qui manquent sont à l'arrière : les 3 autres côtés de la base du bas, et les 2 arêtes latérales qui partent de ses 2 sommets cachés. Cela fait 3 + 2 = 5.",
+      "Vérification : 13 + 5 = 18. Il faut ajouter **5 arêtes** en pointillés.",
+      "Répondre 3, comme pour un pavé, c'est appliquer un nombre appris au lieu de regarder ce solide."
+    ],
+    "hint": "Compte toutes les arêtes de ce prisme, puis celles qui sont dessinées.",
+    "estimated_duration_s": 90,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, classe de 5e, Espace et géométrie, Représentation de l'espace, Objectifs d'apprentissage : « Construire et mettre en relation différentes représentations en perspectives cavalières des solides suivants : pavé droit, cube, cylindre de révolution, prisme droit. »"
+  },
+  {
+    "id": "EX-G071-M-01",
+    "skill_id": "G071",
+    "level": "maitrise",
+    "type": "numerique",
+    "statement": "Ce prisme droit à base triangulaire est couché sur une de ses faces. Quelle est sa hauteur, en cm ?",
+    "image": "figures/EX-G071-M-01",
+    "answer": {
+      "value": 9,
+      "unit": "cm",
+      "accepted": [
+        "9 cm",
+        "9 centimètres"
+      ]
+    },
+    "solution_steps": [
+      "Les bases d'un prisme droit sont ses deux faces triangulaires : ici ABC, devant, et DEF, derrière. Le prisme est couché, donc ses bases ne sont pas en bas.",
+      "La hauteur d'un prisme droit est la distance entre ses deux bases : c'est la longueur d'une arête latérale, qui relie un sommet de ABC au sommet correspondant de DEF.",
+      "L'arête latérale [CF] mesure 9 cm. La hauteur du prisme est **9 cm**.",
+      "[AC] est verticale sur le dessin, mais c'est un côté de la base : prendre 4 cm, c'est croire que la base est toujours la face du dessous."
+    ],
+    "hint": "Repère d'abord les deux bases triangulaires.",
+    "estimated_duration_s": 75,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, classe de 5e, Espace et géométrie, Représentation de l'espace, Objectifs d'apprentissage : « Construire et mettre en relation différentes représentations en perspectives cavalières des solides suivants : pavé droit, cube, cylindre de révolution, prisme droit. »"
+  },
+  {
+    "id": "EX-G071-M-02",
+    "skill_id": "G071",
+    "level": "maitrise",
+    "type": "vrai_faux",
+    "statement": "Sur ce dessin du pavé droit ABCDEFGH, l'angle $\\widehat{ABF}$ n'est pas dessiné droit.\n\nVrai ou faux : dans le pavé réel, les droites (AB) et (BF) sont perpendiculaires.",
+    "image": "figures/EX-G071-M-02",
+    "answer": {
+      "value": true
+    },
+    "solution_steps": [
+      "[AB] et [BF] sont deux côtés de la face ABFE, la face du dessous du pavé.",
+      "Les faces d'un pavé droit sont des rectangles : dans le pavé réel, l'angle $\\widehat{ABF}$ est donc droit.",
+      "Deux droites qui forment un angle droit sont perpendiculaires. L'affirmation est **vraie**.",
+      "Sur le dessin, [BF] part vers l'arrière, inclinée : en perspective cavalière, un angle droit n'est dessiné droit que sur une face vue de face, comme ABCD."
+    ],
+    "hint": "Quelle est la vraie nature de la face qui contient [AB] et [BF] ?",
+    "estimated_duration_s": 60,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, classe de 5e, Espace et géométrie, Représentation de l'espace, Objectifs d'apprentissage : « Construire et mettre en relation différentes représentations en perspectives cavalières des solides suivants : pavé droit, cube, cylindre de révolution, prisme droit. »"
+  }
+]

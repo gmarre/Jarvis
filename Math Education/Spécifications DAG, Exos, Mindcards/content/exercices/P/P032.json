@@ -1,0 +1,192 @@
+[
+  {
+    "id": "EX-P032-D-01",
+    "skill_id": "P032",
+    "level": "decouverte",
+    "type": "numerique",
+    "statement": "Quel est le volume de ce cube, en cm³ ?",
+    "image": "figures/EX-P032-D-01",
+    "answer": {
+      "value": 343,
+      "unit": "cm³",
+      "accepted": [
+        "343 cm³",
+        "343 cm3",
+        "343 centimètres cubes"
+      ]
+    },
+    "solution_steps": [
+      "Un cube est un pavé droit dont la longueur, la largeur et la hauteur sont égales : ici, toutes mesurent 7 cm.",
+      "Volume = longueur × largeur × hauteur = 7 × 7 × 7, qu'on écrit 7³.",
+      "7 × 7 = 49, puis 49 × 7 = 343. Le volume du cube est **343 cm³**.",
+      "À ne pas confondre : 7 × 3 = 21 n'est pas 7³, et 49 cm² est l'aire d'une seule face."
+    ],
+    "hint": "Combien de fois l'arête apparaît-elle dans le produit ?",
+    "estimated_duration_s": 45,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, classe de 5e, Espace et géométrie, Représentation de l'espace, Objectifs d'apprentissage : « Calculer le volume du cube, du pavé droit, du prisme droit. »"
+  },
+  {
+    "id": "EX-P032-D-02",
+    "skill_id": "P032",
+    "level": "decouverte",
+    "type": "qcm",
+    "statement": "Quel est le volume de ce pavé droit ?",
+    "image": "figures/EX-P032-D-02",
+    "choices": [
+      {
+        "key": "a",
+        "text": "36 cm³",
+        "misconception": "L'élève calcule l'aire de la face du dessous, 9 × 4 = 36, et oublie de multiplier par la hauteur."
+      },
+      {
+        "key": "b",
+        "text": "16 cm³",
+        "misconception": "L'élève additionne les trois dimensions, 9 + 4 + 3 = 16, au lieu de les multiplier."
+      },
+      {
+        "key": "c",
+        "text": "108 cm²",
+        "misconception": "Le calcul 9 × 4 × 3 = 108 est juste, mais un volume se mesure en cm³ : le cm² est une unité d'aire."
+      },
+      {
+        "key": "d",
+        "text": "108 cm³",
+        "misconception": null
+      }
+    ],
+    "answer": {
+      "value": "d"
+    },
+    "solution_steps": [
+      "Le pavé mesure 9 cm de longueur, 4 cm de largeur et 3 cm de hauteur.",
+      "Volume = longueur × largeur × hauteur = 9 × 4 × 3.",
+      "9 × 4 = 36, puis 36 × 3 = 108. Le volume est **108 cm³**.",
+      "On peut le voir comme 3 couches de 36 cubes de 1 cm³ : 36 cm² est l'aire de la face du dessous, pas le volume."
+    ],
+    "hint": "Multiplie les trois dimensions.",
+    "estimated_duration_s": 45,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, classe de 5e, Espace et géométrie, Représentation de l'espace, Objectifs d'apprentissage : « Calculer le volume du cube, du pavé droit, du prisme droit. »"
+  },
+  {
+    "id": "EX-P032-E-01",
+    "skill_id": "P032",
+    "level": "entrainement",
+    "type": "numerique",
+    "statement": "La base de ce prisme droit est le triangle ABC, rectangle en B. Quel est le volume du prisme, en cm³ ?",
+    "image": "figures/EX-P032-E-01",
+    "answer": {
+      "value": 216,
+      "unit": "cm³",
+      "accepted": [
+        "216 cm³",
+        "216 cm3",
+        "216 centimètres cubes"
+      ]
+    },
+    "solution_steps": [
+      "Volume d'un prisme droit = aire d'une base × hauteur du prisme.",
+      "Le triangle ABC est rectangle en B : on prend [AB] pour base et [BC], perpendiculaire, pour hauteur. Aire = 8 × 6 ÷ 2 = 24 cm².",
+      "La hauteur du prisme est la longueur d'une arête latérale : BE = 9 cm.",
+      "Volume = 24 × 9 = 216. Le volume du prisme est **216 cm³**.",
+      "Oublier le ÷ 2 donnerait 432 cm³ ; multiplier les trois côtés du triangle, 8 × 6 × 10, ne donne pas son aire."
+    ],
+    "hint": "Calcule d'abord l'aire du triangle ABC.",
+    "estimated_duration_s": 90,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, classe de 5e, Espace et géométrie, Représentation de l'espace, Objectifs d'apprentissage : « Calculer le volume du cube, du pavé droit, du prisme droit. »"
+  },
+  {
+    "id": "EX-P032-E-02",
+    "skill_id": "P032",
+    "level": "entrainement",
+    "type": "qcm",
+    "statement": "Ce prisme droit est couché sur une face. Dans sa base ABC, AB = 7 cm et [CK] est la hauteur relative à [AB]. Quel est le volume du prisme ?",
+    "image": "figures/EX-P032-E-02",
+    "choices": [
+      {
+        "key": "a",
+        "text": "280 cm³",
+        "misconception": "L'élève prend le côté oblique AC = 5 cm pour la hauteur du triangle : 7 × 5 ÷ 2 × 16 = 280."
+      },
+      {
+        "key": "b",
+        "text": "168 cm³",
+        "misconception": null
+      },
+      {
+        "key": "c",
+        "text": "336 cm³",
+        "misconception": "L'élève oublie de diviser par 2 l'aire du triangle : 7 × 3 × 16 = 336."
+      },
+      {
+        "key": "d",
+        "text": "1 680 cm³",
+        "misconception": "L'élève multiplie toutes les longueurs écrites, 7 × 3 × 5 × 16 = 1 680, comme si le prisme était un pavé."
+      }
+    ],
+    "answer": {
+      "value": "b"
+    },
+    "solution_steps": [
+      "Les bases du prisme sont ses deux faces triangulaires : ABC, devant, et DEF, derrière. Couché, le prisme garde les mêmes bases.",
+      "Aire de ABC = base × hauteur ÷ 2 = AB × CK ÷ 2 = 7 × 3 ÷ 2 = 10,5 cm².",
+      "La hauteur du prisme est la longueur d'une arête latérale : BE = 16 cm.",
+      "Volume = 10,5 × 16 = 168. Le volume du prisme est **168 cm³**.",
+      "AC = 5 cm est un côté oblique du triangle, pas sa hauteur : la hauteur relative à [AB] lui est perpendiculaire."
+    ],
+    "hint": "Quelle face triangulaire est une base ? Calcule son aire.",
+    "estimated_duration_s": 100,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, classe de 5e, Espace et géométrie, Représentation de l'espace, Objectifs d'apprentissage : « Calculer le volume du cube, du pavé droit, du prisme droit. »"
+  },
+  {
+    "id": "EX-P032-M-01",
+    "skill_id": "P032",
+    "level": "maitrise",
+    "type": "vrai_faux",
+    "statement": "Le cube A a une arête de 3 cm, le cube B une arête de 6 cm.\n\nVrai ou faux : le volume du cube B est le double du volume du cube A.",
+    "image": null,
+    "answer": {
+      "value": false
+    },
+    "solution_steps": [
+      "Cube A : 3 × 3 × 3 = 3³ = 27 cm³.",
+      "Cube B : 6 × 6 × 6 = 6³ = 216 cm³.",
+      "Le double de 27 est 27 × 2 = 54, pas 216. L'affirmation est **fausse** : en fait, 216 = 27 × 8.",
+      "L'arête est doublée dans les trois directions : la longueur, la largeur et la hauteur sont toutes multipliées par 2, donc le volume par 2 × 2 × 2 = 8."
+    ],
+    "hint": "Calcule le volume de chaque cube.",
+    "estimated_duration_s": 75,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, classe de 5e, Espace et géométrie, Représentation de l'espace, Objectifs d'apprentissage : « Calculer le volume du cube, du pavé droit, du prisme droit. »"
+  },
+  {
+    "id": "EX-P032-M-02",
+    "skill_id": "P032",
+    "level": "maitrise",
+    "type": "numerique",
+    "statement": "Un vase en forme de pavé droit a un fond rectangulaire de 25 cm sur 12 cm. On y verse 4,5 L d'eau. Quelle hauteur l'eau atteint-elle, en cm ?",
+    "image": null,
+    "answer": {
+      "value": 15,
+      "unit": "cm",
+      "accepted": [
+        "15 cm",
+        "15 centimètres"
+      ]
+    },
+    "solution_steps": [
+      "On convertit le volume d'eau en cm³ : 1 L = 1 dm³ = 1 000 cm³, donc 4,5 L = 4,5 × 1 000 = 4 500 cm³.",
+      "L'eau forme un pavé droit dont le fond mesure 25 cm sur 12 cm : aire du fond = 25 × 12 = 300 cm².",
+      "Volume = aire du fond × hauteur, donc 300 × hauteur = 4 500. La hauteur est 4 500 ÷ 300 = 15.",
+      "Vérification : 25 × 12 × 15 = 4 500 cm³. L'eau atteint **15 cm** de hauteur.",
+      "Sans conversion, 4,5 ÷ 300 donnerait une hauteur minuscule : on ne mélange pas des litres et des cm²."
+    ],
+    "hint": "Convertis d'abord les litres en cm³.",
+    "estimated_duration_s": 150,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, classe de 5e, Espace et géométrie, Représentation de l'espace, Objectifs d'apprentissage : « Calculer le volume du cube, du pavé droit, du prisme droit. »"
+  }
+]

@@ -1,0 +1,79 @@
+{
+  "type": "geometrie",
+  "params": {
+    "colonnes": 12,
+    "lignes": 8,
+    "fond": "blanc",
+    "points": {
+      "K": [
+        6,
+        4
+      ],
+      "E": [
+        1,
+        6
+      ],
+      "F": [
+        4,
+        1
+      ]
+    },
+    "elements": [
+      {
+        "image": [
+          "E",
+          "F"
+        ],
+        "par": {
+          "demi_tour": "K"
+        },
+        "noms": [
+          "G",
+          "H"
+        ]
+      },
+      {
+        "segment": [
+          "E",
+          "G"
+        ]
+      },
+      {
+        "segment": [
+          "F",
+          "H"
+        ]
+      },
+      {
+        "codage": [
+          [
+            "E",
+            "K"
+          ],
+          [
+            "K",
+            "G"
+          ]
+        ],
+        "marque": 1
+      },
+      {
+        "codage": [
+          [
+            "F",
+            "K"
+          ],
+          [
+            "K",
+            "H"
+          ]
+        ],
+        "marque": 2
+      }
+    ],
+    "etiquettes": {
+      "K": "droite"
+    }
+  },
+  "alt": "Deux segments [EG] et [FH] qui se coupent en K"
+}
