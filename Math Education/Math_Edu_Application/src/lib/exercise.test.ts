@@ -337,7 +337,7 @@ describe('checkAnswer, accents et unites en toutes lettres', () => {
     const base = byType('numerique')
     const environ = String.fromCharCode(0x2248)
     const longueur: Exercise = { ...base, answer: { value: 3.8, unit: 'm', tolerance: 0.05 } }
-    for (const saisie of ['SH = 3,8 m', `SH ${environ} 3,8 m`, 'x = 3,8', '3,8 m']) {
+    for (const saisie of ['SH = 3,8 m', `SH ${environ} 3,8 m`, 'x = 3,8', '3,8 m', `${environ} 3,8`, 'environ 3,8 m', 'Environ 3,8']) {
       expect(checkAnswer(longueur, saisie).isCorrect).toBe(true)
     }
     for (const saisie of ['SH = 4,2 m', 'SHT = 3,8', 'SH + 3,8']) expect(checkAnswer(longueur, saisie).isCorrect).toBe(false)
