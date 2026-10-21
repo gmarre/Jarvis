@@ -33,7 +33,7 @@ const MIGRATIONS = join(ICI, '..', 'migrations')
 
 // Meme liste que run.sh : ces refus prouvent que les gardes fonctionnent.
 const REFUS_ATTENDUS =
-  /Creneau complet|violates row-level security|ne se modifie pas depuis le client|se confirme par le lien|duplicate key value|permission denied for function publier_contenu|Publication reservee au serveur|invalide_avec_commentaire|accord du parent|profiles_chemins_choisis_format|skill_progress_niveau_borne|flashcard_progress_box_check|super_attempts_score_borne|profiles_rythme_jours_borne|profiles_jours_travail_valides|rappels_heure_plage|permission denied for table rappels|course_offers_valides|permission denied for table seances_visio|Professeur inconnu|permission denied for table messages_suivi/
+  /Creneau complet|violates row-level security|ne se modifie pas depuis le client|se confirme par le lien|duplicate key value|permission denied for function publier_contenu|Publication reservee au serveur|invalide_avec_commentaire|accord du parent|profiles_chemins_choisis_format|skill_progress_niveau_borne|flashcard_progress_box_check|super_attempts_score_borne|profiles_rythme_jours_borne|profiles_jours_travail_valides|rappels_heure_plage|permission denied for table rappels|course_offers_valides|permission denied for table seances_visio|Professeur inconnu|permission denied for table messages_suivi|progression ecrite par le serveur|competences non reussies pendant le test|positionnement reserve aux eleves|permission denied for table (exercise_attempts|super_attempts|placement_results|placement_reponses|skill_progress)/
 
 const FICHIERS_DE_TEST = [
   ['Triggers, capacite des creneaux, cascades', '01_triggers_et_capacite.sql'],
@@ -50,6 +50,7 @@ const FICHIERS_DE_TEST = [
   ['Professeur v1', '12_professeur.sql'],
   ['Espace parent', '13_espace_parent.sql'],
   ['Suivi', '14_suivi.sql'],
+  ['Progression cote serveur', '15_progression_serveur.sql'],
 ]
 
 /**

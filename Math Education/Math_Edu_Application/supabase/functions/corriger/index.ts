@@ -6,21 +6,42 @@
 // le corrige. La migration 0006 retire aux comptes connectes le droit de lire
 // cette table.
 //
-// Entree  : POST { exercise_id: "EX-A001-D-01", reponse: "b" }, jeton de
-//           l'eleve dans Authorization (ajoute par supabase.functions.invoke).
+// Entree  : POST { exercise_id: "EX-A001-D-01", reponse: "b", mode?, duree_s? },
+//           jeton de l'eleve dans Authorization (ajoute par
+//           supabase.functions.invoke).
 // Sortie  : la Correction de _shared/correction.ts (verdict, reponse attendue,
-//           erreur de raisonnement, corrige).
+//           erreur de raisonnement, corrige), plus ce qui a ete enregistre.
 //
-// Ce que la fonction ne fait pas (encore) : enregistrer la tentative et la
-// progression. Le client les ecrit toujours lui-meme, donc un eleve determine
-// peut encore falsifier sa progression. A deplacer ici avant tout abonnement
-// payant (CLAUDE.md §13).
+// Les modes (sprint 6, progression cote serveur, migration 0021) :
+//   - sans mode : correction seule, rien n'est ecrit (revue d'une question
+//     passee) ;
+//   - "exercice" : la tentative est enregistree et la progression de la
+//     competence avance ici, avec la regle de _shared/maitrise.ts. La reponse
+//     porte `progression` (ligne ecrite, acquisition, controle, epreuve) et
+//     `tentative` ;
+//   - "positionnement" : le verdict est garde dans placement_reponses ; la
+//     fonction SQL enregistrer_positionnement n'acceptera comme acquises que
+//     les competences reussies ici et leurs prerequis.
+// Le navigateur ne peut plus ecrire ni ses tentatives ni sa progression.
+//
+// Deux reponses envoyees en meme temps sur la meme competence pourraient se
+// chevaucher (lecture puis ecriture) : l'ecran d'exercice attend la
+// correction avant d'en permettre une autre.
 //
 // Deploiement : voir CLAUDE.md §10 (Edge Functions). SUPABASE_URL et
 // SUPABASE_SERVICE_ROLE_KEY sont fournies par Supabase a l'execution.
 
 import { createClient } from 'npm:@supabase/supabase-js@2'
 
+import { apresTentative } from '../_shared/maitrise.ts'
+import {
+  ecrireLigne,
+  epreuveDeLEleve,
+  ErreurProgression,
+  estEleve,
+  fenetreDe,
+  lireLigne,
+} from '../_shared/progression.ts'
 import {
   checkAnswer,
   versExerciceACorriger,
@@ -103,7 +124,7 @@ Deno.serve(async (requete) => {
   const { data: utilisateur, error: erreurAuth } = await admin.auth.getUser(jeton)
   if (erreurAuth || !utilisateur.user) return repondre(401, { erreur: 'Connexion requise' })
 
-  let corps: { exercise_id?: unknown; reponse?: unknown }
+  let corps: { exercise_id?: unknown; reponse?: unknown; mode?: unknown; duree_s?: unknown }
   try {
     corps = await requete.json()
   } catch {
@@ -111,6 +132,14 @@ Deno.serve(async (requete) => {
   }
 
   const { exercise_id: id, reponse } = corps
+  const mode = corps.mode ?? null
+  if (mode !== null && mode !== 'exercice' && mode !== 'positionnement') {
+    return repondre(400, { erreur: 'mode invalide' })
+  }
+  const duree =
+    typeof corps.duree_s === 'number' && Number.isFinite(corps.duree_s)
+      ? Math.min(Math.max(Math.round(corps.duree_s), 0), 86_400)
+      : 0
   const question = typeof id === 'string' ? ID_QUESTION_SUPER.exec(id) : null
   if (typeof id !== 'string' || (!ID_EXERCICE.test(id) && !question)) {
     return repondre(400, { erreur: 'exercise_id invalide' })
@@ -120,6 +149,9 @@ Deno.serve(async (requete) => {
   }
 
   if (question) {
+    // Une question de super exercice se rend avec toute la copie
+    // (`rendre-super`) : ici, correction seule.
+    if (mode !== null) return repondre(400, { erreur: 'Un super exercice se rend par rendre-super' })
     const exercice = await questionDeSuper(question[1], question[2])
     if ('erreur' in exercice) return repondre(exercice.statut, { erreur: exercice.erreur })
     return repondre(200, checkAnswer(exercice, reponse))
@@ -127,7 +159,7 @@ Deno.serve(async (requete) => {
 
   const { data, error } = await admin
     .from('content_exercises')
-    .select('type, choices, content_exercise_keys(answer, solution_steps, misconceptions)')
+    .select('skill_id, type, choices, content_exercise_keys(answer, solution_steps, misconceptions)')
     .eq('id', id)
     .maybeSingle()
 
@@ -137,6 +169,7 @@ Deno.serve(async (requete) => {
   // PostgREST rend la cle comme un objet (relation un a un) ; on accepte aussi
   // un tableau, au cas ou il ne detecterait pas l'unicite.
   const brute = data as unknown as Omit<LigneACorriger, 'content_exercise_keys'> & {
+    skill_id: string
     content_exercise_keys: LigneACorriger['content_exercise_keys'] | LigneACorriger['content_exercise_keys'][]
   }
   const cle = Array.isArray(brute.content_exercise_keys)
@@ -145,5 +178,62 @@ Deno.serve(async (requete) => {
   const exercice = versExerciceACorriger({ ...brute, content_exercise_keys: cle })
   if (!exercice) return repondre(500, { erreur: `Cle absente pour ${id}` })
 
-  return repondre(200, checkAnswer(exercice, reponse))
+  const correction = checkAnswer(exercice, reponse)
+  if (mode === null) return repondre(200, correction)
+
+  const userId = utilisateur.user.id
+  const skillId = brute.skill_id
+  try {
+    if (!(await estEleve(admin, userId))) {
+      return repondre(403, { erreur: 'Seul un compte élève enregistre ses réponses' })
+    }
+
+    if (mode === 'positionnement') {
+      const { error: erreurPos } = await admin.from('placement_reponses').insert({
+        user_id: userId,
+        exercise_id: id,
+        skill_id: skillId,
+        juste: correction.isCorrect,
+      })
+      if (erreurPos) throw new ErreurProgression(`Ecriture du positionnement : ${erreurPos.message}`)
+      return repondre(200, correction)
+    }
+
+    const maintenant = new Date()
+    const [base, fenetre, epreuve] = await Promise.all([
+      lireLigne(admin, userId, skillId),
+      fenetreDe(admin, skillId),
+      epreuveDeLEleve(admin, userId, skillId),
+    ])
+    const r = apresTentative(base, fenetre, id, correction.isCorrect, maintenant, epreuve)
+
+    const { data: tentative, error: erreurTentative } = await admin
+      .from('exercise_attempts')
+      .insert({
+        user_id: userId,
+        exercise_id: id,
+        skill_id: skillId,
+        answer: reponse,
+        is_correct: correction.isCorrect,
+        duration_s: duree,
+        created_at: maintenant.toISOString(),
+      })
+      .select('id, exercise_id, skill_id, answer, is_correct, duration_s, created_at')
+      .single()
+    if (erreurTentative) throw new ErreurProgression(`Ecriture de la tentative : ${erreurTentative.message}`)
+    await ecrireLigne(admin, userId, r.ligne)
+
+    return repondre(200, {
+      ...correction,
+      progression: {
+        ligne: r.ligne,
+        vientDEtreAcquise: r.vientDEtreAcquise,
+        controle: r.controle,
+        attendEpreuve: r.attendEpreuve,
+      },
+      tentative,
+    })
+  } catch (cause) {
+    return repondre(500, { erreur: cause instanceof Error ? cause.message : String(cause) })
+  }
 })

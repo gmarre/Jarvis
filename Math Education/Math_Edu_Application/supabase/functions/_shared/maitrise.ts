@@ -386,3 +386,61 @@ export function apresPassageSuper(
   }
   return { ligne, vientDEtreAcquise: evolution.vientDEtreAcquise }
 }
+
+// =============================================================================
+// Super exercice : bareme et epreuve (sprint 2, point 7 ; serveur au sprint 6)
+// =============================================================================
+//
+// Chaque question a ses points (1 a 4). L'epreuve est reussie a partir de
+// 70 % des points, arrondi a l'entier superieur : 7 sur 10, 9 sur 12. Le
+// seuil est le meme pour toutes les classes, pour que l'eleve sache d'avance
+// ce qu'on attend de lui. La fonction `rendre-super` compte les points ;
+// l'application reprend le meme calcul en demonstration.
+
+export const SEUIL_REUSSITE = 0.7
+
+export function seuilDeReussite(total: number): number {
+  return Math.ceil(SEUIL_REUSSITE * total - 1e-9)
+}
+
+export interface BilanSuper {
+  score: number
+  total: number
+  /** Points necessaires pour reussir. */
+  seuil: number
+  reussi: boolean
+  /** Competences des questions ratees, sans doublon, dans l'ordre des questions. */
+  aRetravailler: string[]
+}
+
+export function bilanSuper(
+  questions: { key: string; points: number; skill_id: string }[],
+  juste: (key: string) => boolean,
+): BilanSuper {
+  let score = 0
+  let total = 0
+  const aRetravailler: string[] = []
+  for (const q of questions) {
+    total += q.points
+    if (juste(q.key)) score += q.points
+    else if (!aRetravailler.includes(q.skill_id)) aRetravailler.push(q.skill_id)
+  }
+  const seuil = seuilDeReussite(total)
+  return { score, total, seuil, reussi: score >= seuil, aRetravailler }
+}
+
+/**
+ * Ce que l'eleve a fait des super exercices d'une competence (ceux dont elle
+ * est la porteuse), pour la regle de maitrise.
+ */
+export function epreuveDe(
+  superIds: string[],
+  passages: { super_id: string; reussi: boolean; score: number; total: number }[],
+): Epreuve {
+  const siens = passages.filter((p) => superIds.includes(p.super_id))
+  return {
+    existe: superIds.length > 0,
+    reussie: siens.some((p) => p.reussi),
+    sansFaute: siens.some((p) => p.reussi && p.score === p.total),
+  }
+}

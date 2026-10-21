@@ -276,11 +276,13 @@ async function main() {
   const jProf = await connexion(comptes.prof.email)
 
   console.log('\n== Cloisonnement de la progression ==')
-  await rest(jA, 'skill_progress', {
+  // Depuis la migration 0021, la progression est ecrite par le serveur
+  // (fonctions `corriger` et `rendre-super`, cle service_role).
+  await admin('skill_progress', {
     methode: 'POST',
     corps: { user_id: comptes.eleveA.id, skill_id: 'A010', status: 'in_progress' },
   })
-  await rest(jB, 'skill_progress', {
+  await admin('skill_progress', {
     methode: 'POST',
     corps: { user_id: comptes.eleveB.id, skill_id: 'C003', status: 'mastered' },
   })
@@ -298,8 +300,32 @@ async function main() {
       corps: { user_id: comptes.eleveB.id, skill_id: 'B001', status: 'mastered' },
     }),
   )
-
-  const tentative = await rest(jA, 'exercise_attempts', {
+  await refuse('Alice ne peut pas se donner une competence acquise (0021)', () =>
+    rest(jA, 'skill_progress', {
+      methode: 'POST',
+      corps: { user_id: comptes.eleveA.id, skill_id: 'B001', status: 'mastered', niveau: 4 },
+    }),
+  )
+  await refuse('Alice ne peut pas monter son niveau (0021)', () =>
+    rest(jA, `skill_progress?user_id=eq.${comptes.eleveA.id}&skill_id=eq.A010`, {
+      methode: 'PATCH',
+      corps: { niveau: 5, status: 'mastered' },
+    }),
+  )
+  await refuse('Alice ne peut pas ecrire une tentative elle-meme (0021)', () =>
+    rest(jA, 'exercise_attempts', {
+      methode: 'POST',
+      corps: {
+        user_id: comptes.eleveA.id,
+        exercise_id: 'ex-test',
+        skill_id: 'A010',
+        answer: '7',
+        is_correct: true,
+        duration_s: 5,
+      },
+    }),
+  )
+  const tentative = await admin('exercise_attempts', {
     methode: 'POST',
     corps: {
       user_id: comptes.eleveA.id,
@@ -310,7 +336,7 @@ async function main() {
       duration_s: 5,
     },
   })
-  verifier('Alice enregistre sa tentative', !tentative.error, tentative.error?.message)
+  verifier('le serveur enregistre la tentative d Alice', !tentative.error, tentative.error?.message)
 
   const tentativesDeB = await rest(jB, 'exercise_attempts?select=id')
   verifier(

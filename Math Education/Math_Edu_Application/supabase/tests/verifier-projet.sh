@@ -81,7 +81,7 @@ echo "== Tables de la migration =="
 # l'OpenAPI n'est servi qu'a la service_role. On interroge donc chaque table.
 manquantes=0
 presentes=0
-for t in profiles skill_progress exercise_attempts placement_results \
+for t in profiles skill_progress exercise_attempts placement_results placement_reponses \
          teachers availability_slots bookings parent_links slots_disponibles; do
   code="$(appel "$URL/rest/v1/$t?select=*&limit=1")"
   case "$code" in

@@ -42,31 +42,38 @@ select 'TEST 103 un eleve lit le super exercice' as test,
 select 'TEST 104 un eleve ne lit aucune cle' as test,
        ((select count(*) from content_super_keys) = 0) as ok;
 
+\echo '--- L eleve ecrit lui-meme son passage : refuse (0021, rendre-super l ecrit) ---'
+\set ON_ERROR_STOP off
+insert into super_attempts (user_id, super_id, skill_id, score, total, reussi)
+values ('22222222-2222-2222-2222-222222222222', 'SX-A001-01', 'A001', 3, 3, true);
+\set ON_ERROR_STOP on
+
+reset role;
+select 'TEST 105 aucun passage ecrit par le navigateur' as test,
+       ((select count(*) from super_attempts where user_id = '22222222-2222-2222-2222-222222222222') = 0) as ok;
+
+-- Le serveur (ici le proprietaire, comme la cle service_role) ecrit le passage.
 insert into super_attempts (user_id, super_id, skill_id, score, total, reussi, reponses, duree_s)
 values ('22222222-2222-2222-2222-222222222222', 'SX-A001-01', 'A001', 3, 3, true,
         '{"q1": {"reponse": "5", "juste": true}}', 600);
 
-\echo '--- Un passage au nom d un autre eleve : refuse ---'
-\set ON_ERROR_STOP off
-insert into super_attempts (user_id, super_id, skill_id, score, total, reussi)
-values ('33333333-3333-3333-3333-333333333333', 'SX-A001-01', 'A001', 3, 3, true);
-\set ON_ERROR_STOP on
-
-\echo '--- Un score au-dessus du total : refuse ---'
+\echo '--- Un score au-dessus du total : refuse, meme par le serveur ---'
 \set ON_ERROR_STOP off
 insert into super_attempts (user_id, super_id, skill_id, score, total, reussi)
 values ('22222222-2222-2222-2222-222222222222', 'SX-A001-01', 'A001', 9, 3, true);
 \set ON_ERROR_STOP on
 
+set role authenticated;
+set request.jwt.claim.sub = '22222222-2222-2222-2222-222222222222';
 \echo '--- Modifier un passage : sans effet (aucune politique de mise a jour) ---'
+\set ON_ERROR_STOP off
 update super_attempts set score = 0 where user_id = '22222222-2222-2222-2222-222222222222';
-
+\set ON_ERROR_STOP on
+select 'TEST 106 l eleve lit son passage' as test, ((select count(*) from super_attempts) = 1) as ok;
 reset role;
-select 'TEST 105 l eleve enregistre son passage, une seule fois et sans le modifier' as test,
+select 'TEST 106a le passage n a pas ete modifie' as test,
        ((select count(*) from super_attempts where user_id = '22222222-2222-2222-2222-222222222222') = 1
         and (select score from super_attempts where user_id = '22222222-2222-2222-2222-222222222222') = 3) as ok;
-select 'TEST 106 aucun passage ecrit au nom d un autre eleve' as test,
-       ((select count(*) from super_attempts where user_id = '33333333-3333-3333-3333-333333333333') = 0) as ok;
 
 set role authenticated;
 set request.jwt.claim.sub = '33333333-3333-3333-3333-333333333333';
