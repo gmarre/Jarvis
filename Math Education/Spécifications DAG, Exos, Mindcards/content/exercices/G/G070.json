@@ -1,0 +1,202 @@
+[
+  {
+    "id": "EX-G070-D-01",
+    "skill_id": "G070",
+    "level": "decouverte",
+    "type": "numerique",
+    "statement": "Voici la vue de dessus d'un empilement de cubes. Dans chaque case, on a écrit le nombre de cubes empilés.\n\nCombien de cubes compte l'empilement ?",
+    "image": "figures/EX-G070-D-01",
+    "answer": {
+      "value": 10,
+      "accepted": [
+        "10 cubes",
+        "dix",
+        "dix cubes"
+      ]
+    },
+    "solution_steps": [
+      "Chaque case de la vue de dessus est le haut d'une colonne de cubes. Le nombre écrit dit combien de cubes sont empilés dans cette colonne.",
+      "Rangée du haut de la vue : 2 + 3 + 1 = 6 cubes. Rangée du bas : 1 + 2 + 1 = 4 cubes.",
+      "En tout : 6 + 4 = 10. L'empilement compte **10 cubes**.",
+      "Compter les cases donnerait 6 : ce serait oublier les cubes empilés sous ceux du dessus."
+    ],
+    "hint": "Additionne les nombres écrits dans les cases.",
+    "estimated_duration_s": 45,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, classe de 5e, Espace et géométrie, Représentation de l'espace, Automatismes : « Dénombrer des cubes dans des empilements. »"
+  },
+  {
+    "id": "EX-G070-D-02",
+    "skill_id": "G070",
+    "level": "decouverte",
+    "type": "qcm",
+    "statement": "À gauche, la vue de dessus d'un empilement (nombre de cubes par colonne, devant en bas).\n\nLaquelle des vues A, B ou C est sa vue de face ?",
+    "image": "figures/EX-G070-D-02",
+    "choices": [
+      {
+        "key": "a",
+        "text": "La vue A",
+        "misconception": "L'élève additionne les cubes de devant et de derrière dans chaque colonne. Mais de face, les cubes de derrière sont cachés : on ne voit que la plus haute pile."
+      },
+      {
+        "key": "b",
+        "text": "La vue B",
+        "misconception": null
+      },
+      {
+        "key": "c",
+        "text": "La vue C",
+        "misconception": "L'élève ne dessine que la rangée de devant. Il oublie que la colonne de 3 cubes, derrière, dépasse et se voit de face."
+      }
+    ],
+    "answer": {
+      "value": "b"
+    },
+    "solution_steps": [
+      "De face, on voit les colonnes de gauche à droite. Pour chacune, on voit la plus haute des deux piles, celle de devant ou celle de derrière : la plus basse est cachée.",
+      "Colonne de gauche : 1 cube derrière, 2 devant ; on voit 2 carrés de haut. Colonne du milieu : 3 derrière, 1 devant ; on voit 3 carrés. Colonne de droite : 1 derrière, 2 devant ; on voit 2 carrés.",
+      "La vue de face a des colonnes de 2, 3 et 2 carrés : c'est **la vue B**.",
+      "La vue C ne montre que la rangée de devant (2, 1, 2), et la vue A additionne les deux rangées (3, 4, 3)."
+    ],
+    "hint": "Pour chaque colonne, quelle est la plus haute pile, devant ou derrière ?",
+    "estimated_duration_s": 75,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, classe de 5e, Espace et géométrie, Représentation de l'espace, Automatismes : « Reconnaitre des vues (de dessus, dessous…) d'empilements de cubes. »"
+  },
+  {
+    "id": "EX-G070-E-01",
+    "skill_id": "G070",
+    "level": "entrainement",
+    "type": "qcm",
+    "statement": "On regarde cet empilement de face, dans le sens de la flèche. Combien de carrés compte sa vue de face ?",
+    "image": "figures/EX-G070-E-01",
+    "choices": [
+      {
+        "key": "a",
+        "text": "11",
+        "misconception": "L'élève compte tous les cubes de l'empilement. Mais de face, un cube placé derrière un autre de même étage est caché."
+      },
+      {
+        "key": "b",
+        "text": "4",
+        "misconception": "L'élève ne compte que la rangée de devant (2 + 1 + 1). Les piles de derrière plus hautes dépassent et se voient."
+      },
+      {
+        "key": "c",
+        "text": "8",
+        "misconception": null
+      },
+      {
+        "key": "d",
+        "text": "7",
+        "misconception": "L'élève compte les colonnes posées sur la table : c'est le nombre de carrés de la vue de dessus, pas de la vue de face."
+      }
+    ],
+    "answer": {
+      "value": "c"
+    },
+    "solution_steps": [
+      "L'empilement a 4 colonnes de gauche à droite, et 2 rangées : une devant, une derrière.",
+      "De face, chaque colonne montre la plus haute de ses deux piles. Colonnes : devant 2 et derrière 1, on voit 2 ; devant 1 et derrière 3, on voit 3 ; devant 1 et derrière 2, on voit 2 ; rien devant et 1 derrière, on voit 1.",
+      "2 + 3 + 2 + 1 = 8. La vue de face compte **8 carrés**.",
+      "L'empilement compte 11 cubes, mais 3 d'entre eux sont masqués de face par un cube placé devant eux."
+    ],
+    "hint": "Colonne par colonne, quelle pile est la plus haute ?",
+    "estimated_duration_s": 90,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, classe de 5e, Espace et géométrie, Représentation de l'espace, Automatismes : « Reconnaitre des vues (de dessus, dessous…) d'empilements de cubes. »"
+  },
+  {
+    "id": "EX-G070-E-02",
+    "skill_id": "G070",
+    "level": "entrainement",
+    "type": "numerique",
+    "statement": "Aucun cube de cet empilement ne flotte : sous chaque cube, il y a un cube ou la table.\n\nCombien de cubes compte l'empilement ?",
+    "image": "figures/EX-G070-E-02",
+    "answer": {
+      "value": 16,
+      "accepted": [
+        "16 cubes",
+        "seize",
+        "seize cubes"
+      ]
+    },
+    "solution_steps": [
+      "On raisonne par colonnes : chaque colonne va jusqu'à la table, même si ses cubes du bas sont cachés. On lit la hauteur de chaque colonne au cube du dessus.",
+      "Rangée de derrière : colonnes de 3, 3 et 2 cubes, soit 3 + 3 + 2 = 8. Rangée du milieu : 2 + 2 + 1 = 5. Rangée de devant : 1 + 1 + 1 = 3.",
+      "8 + 5 + 3 = 16. L'empilement compte **16 cubes**.",
+      "On n'en voit qu'une partie sur le dessin : les cubes du bas des rangées de derrière sont cachés, mais ils portent ceux du dessus."
+    ],
+    "hint": "Écris dans ta tête la vue de dessus, avec la hauteur de chaque colonne.",
+    "estimated_duration_s": 120,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, classe de 5e, Espace et géométrie, Représentation de l'espace, Automatismes : « Dénombrer des cubes dans des empilements. »"
+  },
+  {
+    "id": "EX-G070-M-01",
+    "skill_id": "G070",
+    "level": "maitrise",
+    "type": "qcm",
+    "statement": "À gauche, la vue de dessus d'un empilement (nombre de cubes par colonne, devant en bas).\n\nOn regarde l'empilement depuis le côté droit de cette vue de dessus. Quelle vue voit-on ?",
+    "image": "figures/EX-G070-M-01",
+    "choices": [
+      {
+        "key": "a",
+        "text": "La vue A",
+        "misconception": null
+      },
+      {
+        "key": "b",
+        "text": "La vue B",
+        "misconception": "L'élève lit les rangées de haut en bas sur la vue de dessus, donc de derrière vers devant. Il obtient la vue depuis la gauche, à l'envers de la vue de droite."
+      },
+      {
+        "key": "c",
+        "text": "La vue C",
+        "misconception": "L'élève confond vue de côté et vue de face : la vue C montre les 2 colonnes vues de face."
+      }
+    ],
+    "answer": {
+      "value": "a"
+    },
+    "solution_steps": [
+      "Depuis la droite, on a la rangée de devant à sa gauche et la rangée de derrière à sa droite.",
+      "Dans chaque rangée, on voit la plus haute pile. Devant : 1 et 1, on voit 1. Milieu : 1 et 3, on voit 3. Derrière : 2 et 1, on voit 2.",
+      "De gauche à droite, la vue de droite a des colonnes de 1, 3 et 2 carrés : c'est **la vue A**.",
+      "La vue B est la vue depuis la gauche (l'ordre est inversé) ; la vue C, de 2 colonnes, est la vue de face."
+    ],
+    "hint": "Place-toi à droite de la vue de dessus : qu'as-tu à ta gauche, la rangée de devant ou celle de derrière ?",
+    "estimated_duration_s": 120,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, classe de 5e, Espace et géométrie, Représentation de l'espace, Automatismes : « Reconnaitre des vues (de dessus, dessous…) d'empilements de cubes. »"
+  },
+  {
+    "id": "EX-G070-M-02",
+    "skill_id": "G070",
+    "level": "maitrise",
+    "type": "numerique",
+    "statement": "Voici la vue de dessus et la vue de face d'un empilement de cubes. Combien de cubes peut-il compter, au plus ?",
+    "image": "figures/EX-G070-M-02",
+    "answer": {
+      "value": 11,
+      "accepted": [
+        "11 cubes",
+        "onze",
+        "onze cubes",
+        "au plus 11",
+        "11 au plus",
+        "au plus 11 cubes"
+      ]
+    },
+    "solution_steps": [
+      "La vue de dessus dit où sont les colonnes : 3 derrière, et 2 devant (à gauche et à droite).",
+      "La vue de face donne la hauteur maximale de chaque file, de gauche à droite : 2, 1 et 3. Une colonne ne peut pas dépasser la hauteur de sa file.",
+      "File de gauche : 2 colonnes d'au plus 2 cubes, soit 4. File du milieu : 1 colonne d'au plus 1 cube, soit 1. File de droite : 2 colonnes d'au plus 3 cubes, soit 6.",
+      "4 + 1 + 6 = 11 : l'empilement compte **au plus 11 cubes**. Les 6 carrés de la vue de face n'en donnent pas le nombre."
+    ],
+    "hint": "Pour chaque file vue de face, combien de colonnes la vue de dessus y montre-t-elle ?",
+    "estimated_duration_s": 150,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, classe de 5e, Espace et géométrie, Représentation de l'espace, Automatismes : « Dénombrer des cubes dans des empilements. »"
+  }
+]

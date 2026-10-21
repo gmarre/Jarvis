@@ -1,0 +1,188 @@
+[
+  {
+    "id": "EX-P031-D-01",
+    "skill_id": "P031",
+    "level": "decouverte",
+    "type": "numerique",
+    "statement": "Une boîte en forme de cube a une arête de 1 dm, c'est-à-dire 10 cm. On la remplit de petits cubes de 1 cm³.\n\nCombien de petits cubes faut-il pour la remplir ?",
+    "image": null,
+    "answer": {
+      "value": 1000,
+      "accepted": [
+        "1 000",
+        "1000 cubes",
+        "1 000 cubes",
+        "1000 cm³",
+        "1 000 cm³",
+        "mille",
+        "1000 petits cubes",
+        "1 000 petits cubes"
+      ]
+    },
+    "solution_steps": [
+      "Le fond de la boîte est un carré de 10 cm sur 10 cm : on y pose une couche de 10 rangées de 10 petits cubes, soit 10 × 10 = 100 cubes.",
+      "La boîte a 10 cm de haut : on empile 10 couches de 100 cubes. 10 × 100 = 1 000.",
+      "Il faut **1 000 petits cubes**. C'est 10 × 10 × 10 = 10³ = 1 000.",
+      "Ces petits cubes mesurent chacun 1 cm³ et remplissent exactement 1 dm³ : **1 dm³ = 1 000 cm³**. Une unité de volume vaut 1 000 fois la suivante, et non 10 fois comme pour les longueurs."
+    ],
+    "hint": "Combien de petits cubes dans la couche du fond ? Combien de couches ?",
+    "estimated_duration_s": 60,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, classe de 5e, Nombres et calculs, Puissances : « Connaitre le cube de 10. »"
+  },
+  {
+    "id": "EX-P031-D-02",
+    "skill_id": "P031",
+    "level": "decouverte",
+    "type": "qcm",
+    "statement": "Une carafe contient 2,4 L de jus. Sachant que 1 L = 1 dm³, quel est ce volume en cm³ ?",
+    "image": null,
+    "choices": [
+      {
+        "key": "a",
+        "text": "240 cm³",
+        "misconception": "L'élève multiplie par 100, comme pour une aire : 2,4 × 100 = 240. Pour un volume, on passe d'une unité à la suivante en multipliant par 1 000."
+      },
+      {
+        "key": "b",
+        "text": "2 400 cm³",
+        "misconception": null
+      },
+      {
+        "key": "c",
+        "text": "24 cm³",
+        "misconception": "L'élève multiplie par 10, comme pour une longueur (1 dm = 10 cm) : 2,4 × 10 = 24. Or 1 dm³ contient 10 × 10 × 10 = 1 000 cm³."
+      },
+      {
+        "key": "d",
+        "text": "2,4 cm³",
+        "misconception": "L'élève croit que 1 L = 1 cm³ : il ne change pas le nombre. Or 1 L = 1 dm³, et un dm³ est 1 000 fois plus grand qu'un cm³."
+      }
+    ],
+    "answer": {
+      "value": "b"
+    },
+    "solution_steps": [
+      "1 L = 1 dm³, donc 2,4 L = 2,4 dm³.",
+      "1 dm³ = 1 000 cm³ : un cube de 1 dm d'arête contient 10 × 10 × 10 = 1 000 cubes de 1 cm³.",
+      "2,4 dm³ = 2,4 × 1 000 cm³ = 2 400 cm³. La carafe contient **2 400 cm³** de jus.",
+      "Contrôle : 1 L, c'est 1 000 mL, et 1 mL = 1 cm³. 2,4 L font 2 400 mL, soit 2 400 cm³."
+    ],
+    "hint": "Passe d'abord des litres aux dm³, puis des dm³ aux cm³ : par combien multiplie-t-on ?",
+    "estimated_duration_s": 45,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, classe de 5e, Espace et géométrie, Représentation de l'espace : « Connaitre et convertir des unités usuelles (volume et capacité). »"
+  },
+  {
+    "id": "EX-P031-E-01",
+    "skill_id": "P031",
+    "level": "entrainement",
+    "type": "numerique",
+    "statement": "Un aquarium contient 0,18 m³ d'eau. Combien de litres d'eau contient-il ?",
+    "image": null,
+    "answer": {
+      "value": 180,
+      "unit": "L",
+      "accepted": [
+        "180 L",
+        "180 l",
+        "180 litres"
+      ]
+    },
+    "solution_steps": [
+      "1 m³ = 1 000 dm³ : chaque unité de volume vaut 1 000 fois la suivante.",
+      "0,18 m³ = 0,18 × 1 000 dm³ = 180 dm³.",
+      "1 dm³ = 1 L, donc 180 dm³ = 180 L. L'aquarium contient **180 L** d'eau.",
+      "Multiplier par 100 donnerait 18 L : trop peu pour un aquarium qui contient presque un cinquième de mètre cube."
+    ],
+    "hint": "Combien de litres y a-t-il dans 1 m³ ?",
+    "estimated_duration_s": 60,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, classe de 5e, Espace et géométrie, Représentation de l'espace : « Connaitre et convertir des unités usuelles (volume et capacité). »"
+  },
+  {
+    "id": "EX-P031-E-02",
+    "skill_id": "P031",
+    "level": "entrainement",
+    "type": "vrai_faux",
+    "statement": "Un flacon de parfum contient 75 cm³. Zoé affirme : « Il contient 7,5 cL. »\n\nZoé a-t-elle raison ?",
+    "image": null,
+    "answer": {
+      "value": true
+    },
+    "solution_steps": [
+      "1 cm³ = 1 mL : un litre (1 dm³) vaut 1 000 mL et aussi 1 000 cm³.",
+      "Donc 75 cm³ = 75 mL.",
+      "1 cL = 10 mL, donc 75 mL = 75 ÷ 10 cL = 7,5 cL.",
+      "Le flacon contient bien 7,5 cL : Zoé a **raison**."
+    ],
+    "hint": "Combien de mL dans 1 cm³ ? Combien de mL dans 1 cL ?",
+    "estimated_duration_s": 60,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, classe de 5e, Espace et géométrie, Représentation de l'espace : « Connaitre et convertir des unités usuelles (volume et capacité). »"
+  },
+  {
+    "id": "EX-P031-M-01",
+    "skill_id": "P031",
+    "level": "maitrise",
+    "type": "numerique",
+    "statement": "Une piscine gonflable contient 2,7 m³ d'eau. On la vide avec un seau de 9 L.\n\nCombien de seaux pleins faut-il vider ?",
+    "image": null,
+    "answer": {
+      "value": 300,
+      "accepted": [
+        "300 seaux",
+        "trois cents",
+        "300 seaux pleins"
+      ]
+    },
+    "solution_steps": [
+      "Les deux volumes ne sont pas dans la même unité : on convertit le volume de la piscine en litres.",
+      "1 m³ = 1 000 dm³ = 1 000 L, donc 2,7 m³ = 2,7 × 1 000 L = 2 700 L.",
+      "Nombre de seaux : 2 700 ÷ 9 = 300. Il faut **300 seaux**.",
+      "Avec 1 m³ = 100 L (facteur d'une aire), on trouverait 270 L, donc 30 seaux : dix fois trop peu."
+    ],
+    "hint": "Exprime d'abord le volume de la piscine en litres.",
+    "estimated_duration_s": 90,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, classe de 5e, Espace et géométrie, Représentation de l'espace : « Connaitre et convertir des unités usuelles (volume et capacité). »"
+  },
+  {
+    "id": "EX-P031-M-02",
+    "skill_id": "P031",
+    "level": "maitrise",
+    "type": "qcm",
+    "statement": "Trois récipients sont pleins : une bassine de 0,03 m³, un bidon de 2 800 cL et un seau de 26 000 cm³.\n\nLequel contient le plus ?",
+    "image": null,
+    "choices": [
+      {
+        "key": "a",
+        "text": "Le bidon de 2 800 cL",
+        "misconception": "L'élève convertit les m³ avec un facteur 100, comme pour une aire : 0,03 m³ deviendrait 3 L. Le bidon (28 L) semble alors le plus grand. Or 1 m³ = 1 000 L."
+      },
+      {
+        "key": "b",
+        "text": "Le seau de 26 000 cm³",
+        "misconception": "L'élève compare les nombres sans regarder les unités : 26 000 est le plus grand nombre, mais 26 000 cm³ ne font que 26 L."
+      },
+      {
+        "key": "c",
+        "text": "La bassine de 0,03 m³",
+        "misconception": null
+      }
+    ],
+    "answer": {
+      "value": "c"
+    },
+    "solution_steps": [
+      "Pour comparer, on exprime les trois volumes dans la même unité, par exemple en litres.",
+      "Bassine : 0,03 m³ = 0,03 × 1 000 L = 30 L.",
+      "Bidon : 1 L = 100 cL, donc 2 800 cL = 2 800 ÷ 100 L = 28 L. Seau : 1 L = 1 dm³ = 1 000 cm³, donc 26 000 cm³ = 26 000 ÷ 1 000 L = 26 L.",
+      "30 L > 28 L > 26 L : c'est **la bassine de 0,03 m³** qui contient le plus, alors que son nombre est le plus petit."
+    ],
+    "hint": "Convertis les trois volumes en litres avant de les comparer.",
+    "estimated_duration_s": 120,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, classe de 5e, Espace et géométrie, Représentation de l'espace : « Connaitre et convertir des unités usuelles (volume et capacité). »"
+  }
+]

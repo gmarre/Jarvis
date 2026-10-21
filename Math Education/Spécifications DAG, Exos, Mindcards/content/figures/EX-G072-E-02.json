@@ -1,0 +1,87 @@
+{
+  "type": "geometrie",
+  "params": {
+    "colonnes": 12,
+    "lignes": 10,
+    "fond": "blanc",
+    "points": {
+      "_o1": [
+        "3.4",
+        "2"
+      ],
+      "_r1": [
+        "5.3",
+        "2"
+      ],
+      "_o2": [
+        "8.6",
+        "7.8"
+      ],
+      "_rc1": [
+        "1.5",
+        "3.9"
+      ],
+      "_rc2": [
+        "10.5",
+        "3.9"
+      ],
+      "_rc3": [
+        "10.5",
+        "5.9"
+      ],
+      "_rc4": [
+        "1.5",
+        "5.9"
+      ]
+    },
+    "elements": [
+      {
+        "polygone": [
+          "_rc1",
+          "_rc2",
+          "_rc3",
+          "_rc4"
+        ],
+        "rempli": true
+      },
+      {
+        "cercle": "_o1",
+        "rayon": "1.9",
+        "rempli": true
+      },
+      {
+        "cercle": "_o2",
+        "rayon": "1.9",
+        "rempli": true
+      },
+      {
+        "segment": [
+          "_o1",
+          "_r1"
+        ]
+      },
+      {
+        "longueur": [
+          "_o1",
+          "_r1"
+        ],
+        "texte": "4 cm"
+      },
+      {
+        "longueur": [
+          "_rc1",
+          "_rc2"
+        ],
+        "texte": "?"
+      },
+      {
+        "longueur": [
+          "_rc1",
+          "_rc4"
+        ],
+        "texte": "7 cm"
+      }
+    ]
+  },
+  "alt": "Patron d'un cylindre : un rectangle et deux disques, des longueurs écrites"
+}

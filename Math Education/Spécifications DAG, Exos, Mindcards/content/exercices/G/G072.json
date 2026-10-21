@@ -1,0 +1,201 @@
+[
+  {
+    "id": "EX-G072-D-01",
+    "skill_id": "G072",
+    "level": "decouverte",
+    "type": "qcm",
+    "statement": "Quand on plie ce patron, quel solide obtient-on ?",
+    "image": "figures/EX-G072-D-01",
+    "choices": [
+      {
+        "key": "a",
+        "text": "Un pavé droit",
+        "misconception": "L'élève voit des rectangles et pense au pavé. Mais un pavé n'a que des faces rectangulaires, et ce patron a deux triangles."
+      },
+      {
+        "key": "b",
+        "text": "Une pyramide à base triangulaire",
+        "misconception": "L'élève voit des triangles et pense à la pyramide. Mais une pyramide n'a pas de faces rectangulaires."
+      },
+      {
+        "key": "c",
+        "text": "Un prisme droit à base triangulaire",
+        "misconception": null
+      }
+    ],
+    "answer": {
+      "value": "c"
+    },
+    "solution_steps": [
+      "Le patron a deux triangles identiques et trois rectangles de même hauteur.",
+      "Les deux triangles sont opposés : ce sont les deux bases du solide. Les rectangles font le tour des bases.",
+      "Un solide à deux bases identiques reliées par des rectangles est un prisme droit : c'est **un prisme droit à base triangulaire**.",
+      "Une pyramide n'a qu'une base ; ses autres faces sont des triangles qui se rejoignent en un sommet."
+    ],
+    "hint": "Compte les triangles et les rectangles. Que forment-ils une fois pliés ?",
+    "estimated_duration_s": 45,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, classe de 5e, Espace et géométrie, Représentation de l'espace : « Savoir mettre en relation une représentation en perspective cavalière et un patron d'un pavé, d'un prisme droit ou d'un cylindre de révolution. »"
+  },
+  {
+    "id": "EX-G072-D-02",
+    "skill_id": "G072",
+    "level": "decouverte",
+    "type": "numerique",
+    "statement": "Ce prisme droit a pour bases deux hexagones (des polygones à 6 côtés). Combien de faces compte son patron ?",
+    "image": "figures/EX-G072-D-02",
+    "answer": {
+      "value": 8,
+      "accepted": [
+        "8 faces",
+        "huit",
+        "huit faces"
+      ]
+    },
+    "solution_steps": [
+      "Un prisme droit a deux bases identiques : ici, deux hexagones.",
+      "Chaque côté d'une base porte une face rectangulaire : l'hexagone a 6 côtés, donc il y a 6 rectangles.",
+      "En tout : 2 + 6 = 8. Le patron compte **8 faces**.",
+      "Compter 6 oublierait les deux bases ; elles font partie du patron."
+    ],
+    "hint": "Combien de bases ? Combien de rectangles autour ?",
+    "estimated_duration_s": 45,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, classe de 5e, Espace et géométrie, Représentation de l'espace : « Savoir mettre en relation une représentation en perspective cavalière et un patron d'un pavé, d'un prisme droit ou d'un cylindre de révolution. »"
+  },
+  {
+    "id": "EX-G072-E-01",
+    "skill_id": "G072",
+    "level": "entrainement",
+    "type": "qcm",
+    "statement": "Un seul de ces assemblages est un patron de pavé droit. Lequel ?",
+    "image": "figures/EX-G072-E-01",
+    "choices": [
+      {
+        "key": "a",
+        "text": "L'assemblage A",
+        "misconception": "L'élève vérifie qu'il y a 6 faces et des faces opposées identiques, mais ne regarde pas leur position : les deux carrés se superposent au pliage."
+      },
+      {
+        "key": "b",
+        "text": "L'assemblage B",
+        "misconception": null
+      },
+      {
+        "key": "c",
+        "text": "L'assemblage C",
+        "misconception": "L'élève compte bien 6 faces, mais ne vérifie pas que les faces opposées sont identiques : un bout est un carré, l'autre un rectangle."
+      }
+    ],
+    "answer": {
+      "value": "b"
+    },
+    "solution_steps": [
+      "Un patron de pavé a 6 faces rectangulaires, les faces opposées sont identiques, et aucune face ne se superpose à une autre au pliage.",
+      "A : les deux carrés sont au-dessus de la bande. Au pliage, ils tombent tous les deux sur le même bout : ils se superposent, et l'autre bout reste ouvert.",
+      "C : un bout est un carré, l'autre un rectangle deux fois plus long. Deux faces opposées n'ont pas les mêmes dimensions : le rectangle dépasse.",
+      "B : les deux carrés sont de part et d'autre de la bande, et ils ont la même taille. **B est un patron de pavé**."
+    ],
+    "hint": "Pour chaque assemblage, imagine où vont les deux petites faces au pliage.",
+    "estimated_duration_s": 90,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, classe de 5e, Espace et géométrie, Représentation de l'espace : « Savoir mettre en relation une représentation en perspective cavalière et un patron d'un pavé, d'un prisme droit ou d'un cylindre de révolution. »"
+  },
+  {
+    "id": "EX-G072-E-02",
+    "skill_id": "G072",
+    "level": "entrainement",
+    "type": "numerique",
+    "statement": "Voici le patron d'un cylindre de rayon 4 cm et de hauteur 7 cm (pas en vraie grandeur). En prenant 3,14 pour π, quelle est la longueur du rectangle, en cm ?",
+    "image": "figures/EX-G072-E-02",
+    "answer": {
+      "value": 25.12,
+      "unit": "cm",
+      "accepted": [
+        "25,12 cm",
+        "25,12cm",
+        "25,12 centimètres"
+      ]
+    },
+    "solution_steps": [
+      "Au pliage, la longueur du rectangle s'enroule exactement autour d'un disque : elle est égale au périmètre du disque.",
+      "Périmètre d'un disque de rayon 4 cm : 2 × 4 × π. Avec 3,14 : 2 × 4 × 3,14 = 8 × 3,14 = 25,12.",
+      "La longueur du rectangle est **25,12 cm**. Sa largeur, 7 cm, est la hauteur du cylindre.",
+      "Prendre le diamètre (8 cm) pour la longueur ferait un rectangle trop court : il ne ferait pas le tour du disque."
+    ],
+    "hint": "Au pliage, autour de quoi s'enroule la longueur du rectangle ?",
+    "estimated_duration_s": 75,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, classe de 5e, Espace et géométrie, Représentation de l'espace : « Savoir mettre en relation une représentation en perspective cavalière et un patron d'un pavé, d'un prisme droit ou d'un cylindre de révolution. »"
+  },
+  {
+    "id": "EX-G072-M-01",
+    "skill_id": "G072",
+    "level": "maitrise",
+    "type": "qcm",
+    "statement": "On plie ce patron de pavé droit. Quelle face est opposée à la face 2 ?",
+    "image": "figures/EX-G072-M-01",
+    "choices": [
+      {
+        "key": "a",
+        "text": "La face 3",
+        "misconception": "L'élève prend la face la plus éloignée sur le patron. Mais au pliage, la bande se referme : les faces 3 et 2 se touchent par une arête."
+      },
+      {
+        "key": "b",
+        "text": "La face 5",
+        "misconception": "L'élève choisit une face voisine de la face 2 sur le patron. Deux faces qui ont une arête commune ne sont jamais opposées."
+      },
+      {
+        "key": "c",
+        "text": "La face 4",
+        "misconception": "L'élève prend la face accrochée à la face 2 : elle se plie contre elle, à angle droit, et ne lui est pas opposée."
+      },
+      {
+        "key": "d",
+        "text": "La face 1",
+        "misconception": null
+      }
+    ],
+    "answer": {
+      "value": "d"
+    },
+    "solution_steps": [
+      "Dans la bande de quatre faces 3, 1, 5, 2, deux faces séparées par une seule autre sont opposées au pliage.",
+      "La face 1 et la face 2 sont séparées par la face 5 : elles sont opposées. De même, 3 et 5 sont opposées.",
+      "Les faces 6 et 4, une au-dessus et une au-dessous de la bande, ferment les deux bouts : elles sont opposées.",
+      "La face opposée à la face 2 est **la face 1**."
+    ],
+    "hint": "Une face est opposée à une autre si elles ne se touchent pas une fois le pavé fermé.",
+    "estimated_duration_s": 120,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, classe de 5e, Espace et géométrie, Représentation de l'espace : « Savoir mettre en relation une représentation en perspective cavalière et un patron d'un pavé, d'un prisme droit ou d'un cylindre de révolution. »"
+  },
+  {
+    "id": "EX-G072-M-02",
+    "skill_id": "G072",
+    "level": "maitrise",
+    "type": "numerique",
+    "statement": "Voici le patron d'un prisme droit à base triangulaire. Les longueurs écrites sont exactes, le dessin non.\n\nQuelle est la longueur du segment [AB], en cm ?",
+    "image": "figures/EX-G072-M-02",
+    "answer": {
+      "value": 30,
+      "unit": "cm",
+      "accepted": [
+        "30 cm",
+        "30cm",
+        "30 centimètres"
+      ]
+    },
+    "solution_steps": [
+      "[AB] est le bord des trois faces rectangulaires mises bout à bout. Au pliage, chaque rectangle se colle contre un côté du triangle.",
+      "Le rectangle du milieu partage un côté avec le triangle du haut : sa largeur est 5 cm. Celui de gauche se colle contre le côté de 13 cm, celui de droite contre le côté de 12 cm.",
+      "AB = 13 + 5 + 12 = 30. Le segment [AB] mesure **30 cm** : c'est le périmètre du triangle de base.",
+      "Oublier le côté de 13 cm donnerait 17 cm : la bande ne ferait pas le tour du triangle. Mesurer le dessin ne sert à rien, il n'est pas à l'échelle."
+    ],
+    "hint": "Contre quel côté du triangle chaque rectangle se colle-t-il au pliage ?",
+    "estimated_duration_s": 150,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, classe de 5e, Espace et géométrie, Représentation de l'espace : « Savoir mettre en relation une représentation en perspective cavalière et un patron d'un pavé, d'un prisme droit ou d'un cylindre de révolution. »"
+  }
+]

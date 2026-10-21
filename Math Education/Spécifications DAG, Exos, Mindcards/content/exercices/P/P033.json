@@ -1,0 +1,197 @@
+[
+  {
+    "id": "EX-P033-D-01",
+    "skill_id": "P033",
+    "level": "decouverte",
+    "type": "numerique",
+    "statement": "Voici un disque de rayon 4 cm. Son aire se calcule avec la formule π × r².\n\nQuelle est son aire, en cm², arrondie à l'unité ?",
+    "image": "figures/EX-P033-D-01",
+    "answer": {
+      "value": 50,
+      "unit": "cm²",
+      "tolerance": 0.5,
+      "accepted": [
+        "50 cm²",
+        "50 cm2",
+        "50 centimètres carrés"
+      ]
+    },
+    "solution_steps": [
+      "Le rayon est r = 4 cm, donc r² = 4² = 4 × 4 = 16.",
+      "Aire = π × 16. Avec la touche π : environ 50,27 ; avec 3,14 : 3,14 × 16 = 50,24.",
+      "Dans les deux cas, l'arrondi à l'unité est 50. L'aire du disque est d'environ **50 cm²**.",
+      "À ne pas confondre : 2 × π × 4 ≈ 25,1 cm est le périmètre du disque, une longueur, pas une aire."
+    ],
+    "hint": "Calcule d'abord r², puis multiplie par π.",
+    "estimated_duration_s": 60,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, classe de 5e, Espace et géométrie, Représentation de l'espace : « Calculer l'aire du disque, le volume du cylindre de révolution. »"
+  },
+  {
+    "id": "EX-P033-D-02",
+    "skill_id": "P033",
+    "level": "decouverte",
+    "type": "qcm",
+    "statement": "Un disque a un diamètre de 22 cm. Quelle est son aire exacte ?",
+    "image": null,
+    "choices": [
+      {
+        "key": "a",
+        "text": "121π cm²",
+        "misconception": null
+      },
+      {
+        "key": "b",
+        "text": "22π cm²",
+        "misconception": "L'élève calcule π × d, c'est-à-dire le périmètre du disque : une longueur, pas une aire."
+      },
+      {
+        "key": "c",
+        "text": "484π cm²",
+        "misconception": "L'élève élève le diamètre au carré (22² = 484) au lieu du rayon."
+      },
+      {
+        "key": "d",
+        "text": "11π cm²",
+        "misconception": "L'élève multiplie π par le rayon sans l'élever au carré : il oublie le carré de π × r²."
+      }
+    ],
+    "answer": {
+      "value": "a"
+    },
+    "solution_steps": [
+      "La formule de l'aire utilise le rayon : Aire = π × r².",
+      "Le rayon est la moitié du diamètre : r = 22 ÷ 2 = 11 cm.",
+      "r² = 11 × 11 = 121, donc Aire = π × 121 : l'aire exacte est **121π cm²**.",
+      "On garde π dans l'écriture : c'est la valeur exacte. Une valeur avec 3,14 serait approchée."
+    ],
+    "hint": "Commence par trouver le rayon.",
+    "estimated_duration_s": 45,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, classe de 5e, Espace et géométrie, Représentation de l'espace : « Calculer l'aire du disque, le volume du cylindre de révolution. »"
+  },
+  {
+    "id": "EX-P033-E-01",
+    "skill_id": "P033",
+    "level": "entrainement",
+    "type": "texte",
+    "statement": "Un disque a un rayon de 13 cm. Donne son aire exacte en cm², écrite avec le symbole π (au clavier, tu peux taper pi).",
+    "image": null,
+    "answer": {
+      "value": "169π",
+      "unit": "cm²",
+      "forme": "expression",
+      "variables": []
+    },
+    "solution_steps": [
+      "Aire d'un disque : π × r², avec r le rayon.",
+      "r² = 13² = 13 × 13 = 169.",
+      "L'aire exacte est π × 169, qu'on écrit **169π cm²**.",
+      "26π serait 2 × π × 13, le périmètre ; 676π viendrait du diamètre 26 élevé au carré."
+    ],
+    "hint": "Calcule le carré du rayon, puis écris-le devant π.",
+    "estimated_duration_s": 60,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, classe de 5e, Espace et géométrie, Représentation de l'espace : « Calculer l'aire du disque, le volume du cylindre de révolution. »"
+  },
+  {
+    "id": "EX-P033-E-02",
+    "skill_id": "P033",
+    "level": "entrainement",
+    "type": "numerique",
+    "statement": "Un dessous-de-plat rond a ce diamètre. Quelle est son aire, en cm², arrondie au dixième ?",
+    "image": "figures/EX-P033-E-02",
+    "answer": {
+      "value": 153.9,
+      "unit": "cm²",
+      "tolerance": 0.05,
+      "accepted": [
+        "153,9 cm²",
+        "153,9 cm2",
+        "153,9 centimètres carrés"
+      ]
+    },
+    "solution_steps": [
+      "La figure donne le diamètre, 14 cm. Le rayon en est la moitié : r = 14 ÷ 2 = 7 cm.",
+      "r² = 7 × 7 = 49, donc Aire = π × 49.",
+      "Avec la touche π : 153,938… ; avec 3,14 : 3,14 × 49 = 153,86. Arrondi au dixième : 153,9 dans les deux cas.",
+      "L'aire est d'environ **153,9 cm²**. Avec le diamètre, π × 14² donnerait environ 615,8 cm² : quatre fois trop."
+    ],
+    "hint": "Le diamètre n'est pas le rayon.",
+    "estimated_duration_s": 75,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, classe de 5e, Espace et géométrie, Représentation de l'espace : « Calculer l'aire du disque, le volume du cylindre de révolution. »"
+  },
+  {
+    "id": "EX-P033-M-01",
+    "skill_id": "P033",
+    "level": "maitrise",
+    "type": "numerique",
+    "statement": "Une fenêtre a la forme d'un rectangle de 9 dm sur 12 dm, surmonté d'un demi-disque. Quelle est son aire, en dm², arrondie au dixième ?",
+    "image": "figures/EX-P033-M-01",
+    "answer": {
+      "value": 139.8,
+      "unit": "dm²",
+      "tolerance": 0.05,
+      "accepted": [
+        "139,8 dm²",
+        "139,8 dm2",
+        "139,8 décimètres carrés"
+      ]
+    },
+    "solution_steps": [
+      "On découpe la fenêtre en deux parties : un rectangle de 9 dm sur 12 dm, et un demi-disque posé sur le côté de 9 dm.",
+      "Rectangle : 9 × 12 = 108 dm².",
+      "Le demi-disque a pour diamètre 9 dm, donc pour rayon 4,5 dm. Disque entier : π × 4,5² = π × 20,25 ; demi-disque : π × 20,25 ÷ 2, environ 31,81 dm² (31,79 avec 3,14).",
+      "Total : 108 + 31,81 = 139,81. Arrondi au dixième, l'aire est d'environ **139,8 dm²** (avec 3,14 : 139,79, même arrondi).",
+      "Oublier de diviser par 2 donnerait environ 171,6 dm² : on compterait un disque entier. Prendre 9 dm pour rayon donnerait environ 235,2 dm²."
+    ],
+    "hint": "Calcule séparément l'aire du rectangle et celle du demi-disque.",
+    "estimated_duration_s": 150,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, classe de 5e, Espace et géométrie, Représentation de l'espace : « Calculer l'aire du disque, le volume du cylindre de révolution. »"
+  },
+  {
+    "id": "EX-P033-M-02",
+    "skill_id": "P033",
+    "level": "maitrise",
+    "type": "qcm",
+    "statement": "Le disque B a un rayon trois fois plus grand que celui du disque A.\n\nCombien de fois l'aire de B est-elle plus grande que celle de A ?",
+    "image": "figures/EX-P033-M-02",
+    "choices": [
+      {
+        "key": "a",
+        "text": "3 fois",
+        "misconception": "L'élève pense que l'aire est proportionnelle au rayon, comme le périmètre. Mais l'aire dépend du carré du rayon."
+      },
+      {
+        "key": "b",
+        "text": "9 fois",
+        "misconception": null
+      },
+      {
+        "key": "c",
+        "text": "6 fois",
+        "misconception": "L'élève multiplie le rapport des rayons par 2, comme dans 2 × r : il mélange la formule du périmètre et le carré."
+      },
+      {
+        "key": "d",
+        "text": "27 fois",
+        "misconception": "L'élève multiplie trois fois par 3, comme pour un cube : l'aire ne fait intervenir que le carré du rayon."
+      }
+    ],
+    "answer": {
+      "value": "b"
+    },
+    "solution_steps": [
+      "Aire de A : π × 8² = π × 64 = 64π cm².",
+      "Aire de B : π × 24² = π × 576 = 576π cm².",
+      "576 ÷ 64 = 9 : l'aire de B est **9 fois** plus grande que celle de A.",
+      "Le rayon est multiplié par 3, et le carré du rayon par 3 × 3 = 9. Le périmètre, lui, n'est multiplié que par 3."
+    ],
+    "hint": "Calcule l'aire exacte de chaque disque, en gardant π.",
+    "estimated_duration_s": 120,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, classe de 5e, Espace et géométrie, Représentation de l'espace : « Calculer l'aire du disque, le volume du cylindre de révolution. »"
+  }
+]

@@ -3,7 +3,7 @@
     "version": "1.0",
     "scope": "Tranche pilote CP a 4e : 69 exercices, 3 par competence (1 decouverte, 1 entrainement, 1 maitrise) sur les 23 competences des domaines A et C. La cible finale de la roadmap est de 5 exercices par niveau, soit 15 par competence.",
     "updated_at": "2026-07-28",
-    "total_exercises": 1486,
+    "total_exercises": 1510,
     "review_status": "relu_agent"
   },
   "exercises": [
@@ -37794,6 +37794,405 @@
       "programme_ref": "Cycle 4, classe de 3e, Espace et géométrie, Triangles : « Connaitre et utiliser les lignes trigonométriques dans le triangle rectangle : cosinus, sinus, tangente. »"
     },
     {
+      "id": "EX-G070-D-01",
+      "skill_id": "G070",
+      "level": "decouverte",
+      "type": "numerique",
+      "statement": "Voici la vue de dessus d'un empilement de cubes. Dans chaque case, on a écrit le nombre de cubes empilés.\n\nCombien de cubes compte l'empilement ?",
+      "image": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 138 140\" width=\"138\" height=\"140\" font-family=\"system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif\" role=\"img\"><title>Vue de dessus d'un empilement, un nombre écrit dans chaque case</title><rect width=\"100%\" height=\"100%\" fill=\"#ffffff\"/><rect x=\"36\" y=\"36\" width=\"22\" height=\"22\" fill=\"#93c5fd\"/><rect x=\"58\" y=\"36\" width=\"22\" height=\"22\" fill=\"#93c5fd\"/><rect x=\"80\" y=\"36\" width=\"22\" height=\"22\" fill=\"#93c5fd\"/><rect x=\"36\" y=\"58\" width=\"22\" height=\"22\" fill=\"#93c5fd\"/><rect x=\"58\" y=\"58\" width=\"22\" height=\"22\" fill=\"#93c5fd\"/><rect x=\"80\" y=\"58\" width=\"22\" height=\"22\" fill=\"#93c5fd\"/><line x1=\"14.0\" y1=\"14.0\" x2=\"14.0\" y2=\"102.0\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"36.0\" y1=\"14.0\" x2=\"36.0\" y2=\"102.0\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"58.0\" y1=\"14.0\" x2=\"58.0\" y2=\"102.0\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"80.0\" y1=\"14.0\" x2=\"80.0\" y2=\"102.0\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"102.0\" y1=\"14.0\" x2=\"102.0\" y2=\"102.0\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"124.0\" y1=\"14.0\" x2=\"124.0\" y2=\"102.0\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"14.0\" y1=\"14.0\" x2=\"124.0\" y2=\"14.0\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"14.0\" y1=\"36.0\" x2=\"124.0\" y2=\"36.0\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"14.0\" y1=\"58.0\" x2=\"124.0\" y2=\"58.0\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"14.0\" y1=\"80.0\" x2=\"124.0\" y2=\"80.0\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"14.0\" y1=\"102.0\" x2=\"124.0\" y2=\"102.0\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-linecap=\"round\"/><text x=\"47.0\" y=\"52.0\" font-size=\"13\" text-anchor=\"middle\" fill=\"#334155\" font-weight=\"600\">2</text><text x=\"69.0\" y=\"52.0\" font-size=\"13\" text-anchor=\"middle\" fill=\"#334155\" font-weight=\"600\">3</text><text x=\"91.0\" y=\"52.0\" font-size=\"13\" text-anchor=\"middle\" fill=\"#334155\" font-weight=\"600\">1</text><text x=\"47.0\" y=\"74.0\" font-size=\"13\" text-anchor=\"middle\" fill=\"#334155\" font-weight=\"600\">1</text><text x=\"69.0\" y=\"74.0\" font-size=\"13\" text-anchor=\"middle\" fill=\"#334155\" font-weight=\"600\">2</text><text x=\"91.0\" y=\"74.0\" font-size=\"13\" text-anchor=\"middle\" fill=\"#334155\" font-weight=\"600\">1</text><text x=\"69.0\" y=\"130.0\" font-size=\"13\" text-anchor=\"middle\" fill=\"#334155\">Vue de dessus</text></svg>",
+      "answer": {
+        "value": 10,
+        "accepted": [
+          "10 cubes",
+          "dix",
+          "dix cubes"
+        ]
+      },
+      "solution_steps": [
+        "Chaque case de la vue de dessus est le haut d'une colonne de cubes. Le nombre écrit dit combien de cubes sont empilés dans cette colonne.",
+        "Rangée du haut de la vue : 2 + 3 + 1 = 6 cubes. Rangée du bas : 1 + 2 + 1 = 4 cubes.",
+        "En tout : 6 + 4 = 10. L'empilement compte **10 cubes**.",
+        "Compter les cases donnerait 6 : ce serait oublier les cubes empilés sous ceux du dessus."
+      ],
+      "hint": "Additionne les nombres écrits dans les cases.",
+      "estimated_duration_s": 45,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 4, classe de 5e, Espace et géométrie, Représentation de l'espace, Automatismes : « Dénombrer des cubes dans des empilements. »"
+    },
+    {
+      "id": "EX-G070-D-02",
+      "skill_id": "G070",
+      "level": "decouverte",
+      "type": "qcm",
+      "statement": "À gauche, la vue de dessus d'un empilement (nombre de cubes par colonne, devant en bas).\n\nLaquelle des vues A, B ou C est sa vue de face ?",
+      "image": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 380 184\" width=\"380\" height=\"184\" font-family=\"system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif\" role=\"img\"><title>Vue de dessus d'un empilement avec des nombres, et trois vues lettrées A, B, C</title><rect width=\"100%\" height=\"100%\" fill=\"#ffffff\"/><rect x=\"36\" y=\"58\" width=\"22\" height=\"22\" fill=\"#93c5fd\"/><rect x=\"58\" y=\"58\" width=\"22\" height=\"22\" fill=\"#93c5fd\"/><rect x=\"80\" y=\"58\" width=\"22\" height=\"22\" fill=\"#93c5fd\"/><rect x=\"36\" y=\"80\" width=\"22\" height=\"22\" fill=\"#93c5fd\"/><rect x=\"58\" y=\"80\" width=\"22\" height=\"22\" fill=\"#93c5fd\"/><rect x=\"80\" y=\"80\" width=\"22\" height=\"22\" fill=\"#93c5fd\"/><rect x=\"124\" y=\"102\" width=\"22\" height=\"22\" fill=\"#fde68a\"/><rect x=\"124\" y=\"80\" width=\"22\" height=\"22\" fill=\"#fde68a\"/><rect x=\"124\" y=\"58\" width=\"22\" height=\"22\" fill=\"#fde68a\"/><rect x=\"146\" y=\"102\" width=\"22\" height=\"22\" fill=\"#fde68a\"/><rect x=\"146\" y=\"80\" width=\"22\" height=\"22\" fill=\"#fde68a\"/><rect x=\"146\" y=\"58\" width=\"22\" height=\"22\" fill=\"#fde68a\"/><rect x=\"146\" y=\"36\" width=\"22\" height=\"22\" fill=\"#fde68a\"/><rect x=\"168\" y=\"102\" width=\"22\" height=\"22\" fill=\"#fde68a\"/><rect x=\"168\" y=\"80\" width=\"22\" height=\"22\" fill=\"#fde68a\"/><rect x=\"168\" y=\"58\" width=\"22\" height=\"22\" fill=\"#fde68a\"/><rect x=\"212\" y=\"102\" width=\"22\" height=\"22\" fill=\"#fde68a\"/><rect x=\"212\" y=\"80\" width=\"22\" height=\"22\" fill=\"#fde68a\"/><rect x=\"234\" y=\"102\" width=\"22\" height=\"22\" fill=\"#fde68a\"/><rect x=\"234\" y=\"80\" width=\"22\" height=\"22\" fill=\"#fde68a\"/><rect x=\"234\" y=\"58\" width=\"22\" height=\"22\" fill=\"#fde68a\"/><rect x=\"256\" y=\"102\" width=\"22\" height=\"22\" fill=\"#fde68a\"/><rect x=\"256\" y=\"80\" width=\"22\" height=\"22\" fill=\"#fde68a\"/><rect x=\"300\" y=\"102\" width=\"22\" height=\"22\" fill=\"#fde68a\"/><rect x=\"300\" y=\"80\" width=\"22\" height=\"22\" fill=\"#fde68a\"/><rect x=\"322\" y=\"102\" width=\"22\" height=\"22\" fill=\"#fde68a\"/><rect x=\"344\" y=\"102\" width=\"22\" height=\"22\" fill=\"#fde68a\"/><rect x=\"344\" y=\"80\" width=\"22\" height=\"22\" fill=\"#fde68a\"/><line x1=\"14.0\" y1=\"14.0\" x2=\"14.0\" y2=\"146.0\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"36.0\" y1=\"14.0\" x2=\"36.0\" y2=\"146.0\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"58.0\" y1=\"14.0\" x2=\"58.0\" y2=\"146.0\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"80.0\" y1=\"14.0\" x2=\"80.0\" y2=\"146.0\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"102.0\" y1=\"14.0\" x2=\"102.0\" y2=\"146.0\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"124.0\" y1=\"14.0\" x2=\"124.0\" y2=\"146.0\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"146.0\" y1=\"14.0\" x2=\"146.0\" y2=\"146.0\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"168.0\" y1=\"14.0\" x2=\"168.0\" y2=\"146.0\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"190.0\" y1=\"14.0\" x2=\"190.0\" y2=\"146.0\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"212.0\" y1=\"14.0\" x2=\"212.0\" y2=\"146.0\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"234.0\" y1=\"14.0\" x2=\"234.0\" y2=\"146.0\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"256.0\" y1=\"14.0\" x2=\"256.0\" y2=\"146.0\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"278.0\" y1=\"14.0\" x2=\"278.0\" y2=\"146.0\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"300.0\" y1=\"14.0\" x2=\"300.0\" y2=\"146.0\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"322.0\" y1=\"14.0\" x2=\"322.0\" y2=\"146.0\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"344.0\" y1=\"14.0\" x2=\"344.0\" y2=\"146.0\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"366.0\" y1=\"14.0\" x2=\"366.0\" y2=\"146.0\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"14.0\" y1=\"14.0\" x2=\"366.0\" y2=\"14.0\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"14.0\" y1=\"36.0\" x2=\"366.0\" y2=\"36.0\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"14.0\" y1=\"58.0\" x2=\"366.0\" y2=\"58.0\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"14.0\" y1=\"80.0\" x2=\"366.0\" y2=\"80.0\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"14.0\" y1=\"102.0\" x2=\"366.0\" y2=\"102.0\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"14.0\" y1=\"124.0\" x2=\"366.0\" y2=\"124.0\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"14.0\" y1=\"146.0\" x2=\"366.0\" y2=\"146.0\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-linecap=\"round\"/><text x=\"47.0\" y=\"74.0\" font-size=\"13\" text-anchor=\"middle\" fill=\"#334155\" font-weight=\"600\">1</text><text x=\"69.0\" y=\"74.0\" font-size=\"13\" text-anchor=\"middle\" fill=\"#334155\" font-weight=\"600\">3</text><text x=\"91.0\" y=\"74.0\" font-size=\"13\" text-anchor=\"middle\" fill=\"#334155\" font-weight=\"600\">1</text><text x=\"47.0\" y=\"96.0\" font-size=\"13\" text-anchor=\"middle\" fill=\"#334155\" font-weight=\"600\">2</text><text x=\"69.0\" y=\"96.0\" font-size=\"13\" text-anchor=\"middle\" fill=\"#334155\" font-weight=\"600\">1</text><text x=\"91.0\" y=\"96.0\" font-size=\"13\" text-anchor=\"middle\" fill=\"#334155\" font-weight=\"600\">2</text><text x=\"157.0\" y=\"140.0\" font-size=\"13\" text-anchor=\"middle\" fill=\"#334155\" font-weight=\"600\">A</text><text x=\"245.0\" y=\"140.0\" font-size=\"13\" text-anchor=\"middle\" fill=\"#334155\" font-weight=\"600\">B</text><text x=\"333.0\" y=\"140.0\" font-size=\"13\" text-anchor=\"middle\" fill=\"#334155\" font-weight=\"600\">C</text><text x=\"190.0\" y=\"174.0\" font-size=\"13\" text-anchor=\"middle\" fill=\"#334155\">À gauche : vue de dessus. À droite : vues A, B, C.</text></svg>",
+      "choices": [
+        {
+          "key": "a",
+          "text": "La vue A",
+          "misconception": "L'élève additionne les cubes de devant et de derrière dans chaque colonne. Mais de face, les cubes de derrière sont cachés : on ne voit que la plus haute pile."
+        },
+        {
+          "key": "b",
+          "text": "La vue B",
+          "misconception": null
+        },
+        {
+          "key": "c",
+          "text": "La vue C",
+          "misconception": "L'élève ne dessine que la rangée de devant. Il oublie que la colonne de 3 cubes, derrière, dépasse et se voit de face."
+        }
+      ],
+      "answer": {
+        "value": "b"
+      },
+      "solution_steps": [
+        "De face, on voit les colonnes de gauche à droite. Pour chacune, on voit la plus haute des deux piles, celle de devant ou celle de derrière : la plus basse est cachée.",
+        "Colonne de gauche : 1 cube derrière, 2 devant ; on voit 2 carrés de haut. Colonne du milieu : 3 derrière, 1 devant ; on voit 3 carrés. Colonne de droite : 1 derrière, 2 devant ; on voit 2 carrés.",
+        "La vue de face a des colonnes de 2, 3 et 2 carrés : c'est **la vue B**.",
+        "La vue C ne montre que la rangée de devant (2, 1, 2), et la vue A additionne les deux rangées (3, 4, 3)."
+      ],
+      "hint": "Pour chaque colonne, quelle est la plus haute pile, devant ou derrière ?",
+      "estimated_duration_s": 75,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 4, classe de 5e, Espace et géométrie, Représentation de l'espace, Automatismes : « Reconnaitre des vues (de dessus, dessous…) d'empilements de cubes. »"
+    },
+    {
+      "id": "EX-G070-E-01",
+      "skill_id": "G070",
+      "level": "entrainement",
+      "type": "qcm",
+      "statement": "On regarde cet empilement de face, dans le sens de la flèche. Combien de carrés compte sa vue de face ?",
+      "image": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 208.042 172.042\" width=\"208.042\" height=\"172.042\" font-family=\"system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif\" role=\"img\"><title>Empilement de cubes en perspective, une flèche indique le sens de la vue de face</title><rect width=\"100%\" height=\"100%\" fill=\"#ffffff\"/><g transform=\"translate(24,0)\"><polygon points=\"24.0,126.0 58.0,126.0 58.0,92.0 24.0,92.0\" fill=\"#ffffff\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linejoin=\"round\"/><polygon points=\"24.0,92.0 58.0,92.0 70.0,80.0 36.0,80.0\" fill=\"#f1f5f9\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linejoin=\"round\"/><polygon points=\"58.0,126.0 70.0,114.0 70.0,80.0 58.0,92.0\" fill=\"#cbd5e1\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linejoin=\"round\"/><polygon points=\"58.0,126.0 92.0,126.0 92.0,92.0 58.0,92.0\" fill=\"#ffffff\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linejoin=\"round\"/><polygon points=\"58.0,92.0 92.0,92.0 104.0,80.0 70.0,80.0\" fill=\"#f1f5f9\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linejoin=\"round\"/><polygon points=\"92.0,126.0 104.0,114.0 104.0,80.0 92.0,92.0\" fill=\"#cbd5e1\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linejoin=\"round\"/><polygon points=\"58.0,92.0 92.0,92.0 92.0,58.0 58.0,58.0\" fill=\"#ffffff\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linejoin=\"round\"/><polygon points=\"58.0,58.0 92.0,58.0 104.0,46.0 70.0,46.0\" fill=\"#f1f5f9\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linejoin=\"round\"/><polygon points=\"92.0,92.0 104.0,80.0 104.0,46.0 92.0,58.0\" fill=\"#cbd5e1\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linejoin=\"round\"/><polygon points=\"58.0,58.0 92.0,58.0 92.0,24.0 58.0,24.0\" fill=\"#ffffff\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linejoin=\"round\"/><polygon points=\"58.0,24.0 92.0,24.0 104.0,12.0 70.0,12.0\" fill=\"#f1f5f9\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linejoin=\"round\"/><polygon points=\"92.0,58.0 104.0,46.0 104.0,12.0 92.0,24.0\" fill=\"#cbd5e1\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linejoin=\"round\"/><polygon points=\"92.0,126.0 126.0,126.0 126.0,92.0 92.0,92.0\" fill=\"#ffffff\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linejoin=\"round\"/><polygon points=\"92.0,92.0 126.0,92.0 138.0,80.0 104.0,80.0\" fill=\"#f1f5f9\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linejoin=\"round\"/><polygon points=\"126.0,126.0 138.0,114.0 138.0,80.0 126.0,92.0\" fill=\"#cbd5e1\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linejoin=\"round\"/><polygon points=\"92.0,92.0 126.0,92.0 126.0,58.0 92.0,58.0\" fill=\"#ffffff\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linejoin=\"round\"/><polygon points=\"92.0,58.0 126.0,58.0 138.0,46.0 104.0,46.0\" fill=\"#f1f5f9\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linejoin=\"round\"/><polygon points=\"126.0,92.0 138.0,80.0 138.0,46.0 126.0,58.0\" fill=\"#cbd5e1\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linejoin=\"round\"/><polygon points=\"126.0,126.0 160.0,126.0 160.0,92.0 126.0,92.0\" fill=\"#ffffff\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linejoin=\"round\"/><polygon points=\"126.0,92.0 160.0,92.0 172.0,80.0 138.0,80.0\" fill=\"#f1f5f9\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linejoin=\"round\"/><polygon points=\"160.0,126.0 172.0,114.0 172.0,80.0 160.0,92.0\" fill=\"#cbd5e1\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linejoin=\"round\"/><polygon points=\"12.0,138.0 46.0,138.0 46.0,104.0 12.0,104.0\" fill=\"#ffffff\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linejoin=\"round\"/><polygon points=\"12.0,104.0 46.0,104.0 58.0,92.0 24.0,92.0\" fill=\"#f1f5f9\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linejoin=\"round\"/><polygon points=\"46.0,138.0 58.0,126.0 58.0,92.0 46.0,104.0\" fill=\"#cbd5e1\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linejoin=\"round\"/><polygon points=\"12.0,104.0 46.0,104.0 46.0,70.0 12.0,70.0\" fill=\"#ffffff\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linejoin=\"round\"/><polygon points=\"12.0,70.0 46.0,70.0 58.0,58.0 24.0,58.0\" fill=\"#f1f5f9\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linejoin=\"round\"/><polygon points=\"46.0,104.0 58.0,92.0 58.0,58.0 46.0,70.0\" fill=\"#cbd5e1\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linejoin=\"round\"/><polygon points=\"46.0,138.0 80.0,138.0 80.0,104.0 46.0,104.0\" fill=\"#ffffff\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linejoin=\"round\"/><polygon points=\"46.0,104.0 80.0,104.0 92.0,92.0 58.0,92.0\" fill=\"#f1f5f9\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linejoin=\"round\"/><polygon points=\"80.0,138.0 92.0,126.0 92.0,92.0 80.0,104.0\" fill=\"#cbd5e1\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linejoin=\"round\"/><polygon points=\"80.0,138.0 114.0,138.0 114.0,104.0 80.0,104.0\" fill=\"#ffffff\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linejoin=\"round\"/><polygon points=\"80.0,104.0 114.0,104.0 126.0,92.0 92.0,92.0\" fill=\"#f1f5f9\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linejoin=\"round\"/><polygon points=\"114.0,138.0 126.0,126.0 126.0,92.0 114.0,104.0\" fill=\"#cbd5e1\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linejoin=\"round\"/></g><line x1=\"75.7\" y1=\"154.4\" x2=\"97.6\" y2=\"132.5\" stroke=\"#2563eb\" stroke-width=\"3\" stroke-linecap=\"round\"/><path d=\"M104.0,126.1 L99.8,138.9 L91.3,130.4 Z\" fill=\"#2563eb\"/></svg>",
+      "choices": [
+        {
+          "key": "a",
+          "text": "11",
+          "misconception": "L'élève compte tous les cubes de l'empilement. Mais de face, un cube placé derrière un autre de même étage est caché."
+        },
+        {
+          "key": "b",
+          "text": "4",
+          "misconception": "L'élève ne compte que la rangée de devant (2 + 1 + 1). Les piles de derrière plus hautes dépassent et se voient."
+        },
+        {
+          "key": "c",
+          "text": "8",
+          "misconception": null
+        },
+        {
+          "key": "d",
+          "text": "7",
+          "misconception": "L'élève compte les colonnes posées sur la table : c'est le nombre de carrés de la vue de dessus, pas de la vue de face."
+        }
+      ],
+      "answer": {
+        "value": "c"
+      },
+      "solution_steps": [
+        "L'empilement a 4 colonnes de gauche à droite, et 2 rangées : une devant, une derrière.",
+        "De face, chaque colonne montre la plus haute de ses deux piles. Colonnes : devant 2 et derrière 1, on voit 2 ; devant 1 et derrière 3, on voit 3 ; devant 1 et derrière 2, on voit 2 ; rien devant et 1 derrière, on voit 1.",
+        "2 + 3 + 2 + 1 = 8. La vue de face compte **8 carrés**.",
+        "L'empilement compte 11 cubes, mais 3 d'entre eux sont masqués de face par un cube placé devant eux."
+      ],
+      "hint": "Colonne par colonne, quelle pile est la plus haute ?",
+      "estimated_duration_s": 90,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 4, classe de 5e, Espace et géométrie, Représentation de l'espace, Automatismes : « Reconnaitre des vues (de dessus, dessous…) d'empilements de cubes. »"
+    },
+    {
+      "id": "EX-G070-E-02",
+      "skill_id": "G070",
+      "level": "entrainement",
+      "type": "numerique",
+      "statement": "Aucun cube de cet empilement ne flotte : sous chaque cube, il y a un cube ou la table.\n\nCombien de cubes compte l'empilement ?",
+      "image": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 162.062 162.062\" width=\"162.062\" height=\"162.062\" font-family=\"system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif\" role=\"img\"><title>Empilement de cubes en perspective</title><rect width=\"100%\" height=\"100%\" fill=\"#ffffff\"/><polygon points=\"36.0,126.0 70.0,126.0 70.0,92.0 36.0,92.0\" fill=\"#ffffff\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linejoin=\"round\"/><polygon points=\"36.0,92.0 70.0,92.0 82.1,80.0 48.1,80.0\" fill=\"#f1f5f9\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linejoin=\"round\"/><polygon points=\"70.0,126.0 82.1,114.0 82.1,80.0 70.0,92.0\" fill=\"#cbd5e1\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linejoin=\"round\"/><polygon points=\"36.0,92.0 70.0,92.0 70.0,58.0 36.0,58.0\" fill=\"#ffffff\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linejoin=\"round\"/><polygon points=\"36.0,58.0 70.0,58.0 82.1,46.0 48.1,46.0\" fill=\"#f1f5f9\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linejoin=\"round\"/><polygon points=\"70.0,92.0 82.1,80.0 82.1,46.0 70.0,58.0\" fill=\"#cbd5e1\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linejoin=\"round\"/><polygon points=\"36.0,58.0 70.0,58.0 70.0,24.0 36.0,24.0\" fill=\"#ffffff\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linejoin=\"round\"/><polygon points=\"36.0,24.0 70.0,24.0 82.1,12.0 48.1,12.0\" fill=\"#f1f5f9\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linejoin=\"round\"/><polygon points=\"70.0,58.0 82.1,46.0 82.1,12.0 70.0,24.0\" fill=\"#cbd5e1\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linejoin=\"round\"/><polygon points=\"70.0,126.0 104.0,126.0 104.0,92.0 70.0,92.0\" fill=\"#ffffff\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linejoin=\"round\"/><polygon points=\"70.0,92.0 104.0,92.0 116.1,80.0 82.1,80.0\" fill=\"#f1f5f9\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linejoin=\"round\"/><polygon points=\"104.0,126.0 116.1,114.0 116.1,80.0 104.0,92.0\" fill=\"#cbd5e1\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linejoin=\"round\"/><polygon points=\"70.0,92.0 104.0,92.0 104.0,58.0 70.0,58.0\" fill=\"#ffffff\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linejoin=\"round\"/><polygon points=\"70.0,58.0 104.0,58.0 116.1,46.0 82.1,46.0\" fill=\"#f1f5f9\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linejoin=\"round\"/><polygon points=\"104.0,92.0 116.1,80.0 116.1,46.0 104.0,58.0\" fill=\"#cbd5e1\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linejoin=\"round\"/><polygon points=\"70.0,58.0 104.0,58.0 104.0,24.0 70.0,24.0\" fill=\"#ffffff\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linejoin=\"round\"/><polygon points=\"70.0,24.0 104.0,24.0 116.1,12.0 82.1,12.0\" fill=\"#f1f5f9\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linejoin=\"round\"/><polygon points=\"104.0,58.0 116.1,46.0 116.1,12.0 104.0,24.0\" fill=\"#cbd5e1\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linejoin=\"round\"/><polygon points=\"104.0,126.0 138.0,126.0 138.0,92.0 104.0,92.0\" fill=\"#ffffff\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linejoin=\"round\"/><polygon points=\"104.0,92.0 138.0,92.0 150.1,80.0 116.1,80.0\" fill=\"#f1f5f9\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linejoin=\"round\"/><polygon points=\"138.0,126.0 150.1,114.0 150.1,80.0 138.0,92.0\" fill=\"#cbd5e1\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linejoin=\"round\"/><polygon points=\"104.0,92.0 138.0,92.0 138.0,58.0 104.0,58.0\" fill=\"#ffffff\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linejoin=\"round\"/><polygon points=\"104.0,58.0 138.0,58.0 150.1,46.0 116.1,46.0\" fill=\"#f1f5f9\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linejoin=\"round\"/><polygon points=\"138.0,92.0 150.1,80.0 150.1,46.0 138.0,58.0\" fill=\"#cbd5e1\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linejoin=\"round\"/><polygon points=\"24.0,138.0 58.0,138.0 58.0,104.0 24.0,104.0\" fill=\"#ffffff\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linejoin=\"round\"/><polygon points=\"24.0,104.0 58.0,104.0 70.0,92.0 36.0,92.0\" fill=\"#f1f5f9\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linejoin=\"round\"/><polygon points=\"58.0,138.0 70.0,126.0 70.0,92.0 58.0,104.0\" fill=\"#cbd5e1\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linejoin=\"round\"/><polygon points=\"24.0,104.0 58.0,104.0 58.0,70.0 24.0,70.0\" fill=\"#ffffff\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linejoin=\"round\"/><polygon points=\"24.0,70.0 58.0,70.0 70.0,58.0 36.0,58.0\" fill=\"#f1f5f9\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linejoin=\"round\"/><polygon points=\"58.0,104.0 70.0,92.0 70.0,58.0 58.0,70.0\" fill=\"#cbd5e1\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linejoin=\"round\"/><polygon points=\"58.0,138.0 92.0,138.0 92.0,104.0 58.0,104.0\" fill=\"#ffffff\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linejoin=\"round\"/><polygon points=\"58.0,104.0 92.0,104.0 104.0,92.0 70.0,92.0\" fill=\"#f1f5f9\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linejoin=\"round\"/><polygon points=\"92.0,138.0 104.0,126.0 104.0,92.0 92.0,104.0\" fill=\"#cbd5e1\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linejoin=\"round\"/><polygon points=\"58.0,104.0 92.0,104.0 92.0,70.0 58.0,70.0\" fill=\"#ffffff\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linejoin=\"round\"/><polygon points=\"58.0,70.0 92.0,70.0 104.0,58.0 70.0,58.0\" fill=\"#f1f5f9\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linejoin=\"round\"/><polygon points=\"92.0,104.0 104.0,92.0 104.0,58.0 92.0,70.0\" fill=\"#cbd5e1\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linejoin=\"round\"/><polygon points=\"92.0,138.0 126.0,138.0 126.0,104.0 92.0,104.0\" fill=\"#ffffff\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linejoin=\"round\"/><polygon points=\"92.0,104.0 126.0,104.0 138.0,92.0 104.0,92.0\" fill=\"#f1f5f9\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linejoin=\"round\"/><polygon points=\"126.0,138.0 138.0,126.0 138.0,92.0 126.0,104.0\" fill=\"#cbd5e1\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linejoin=\"round\"/><polygon points=\"12.0,150.1 46.0,150.1 46.0,116.1 12.0,116.1\" fill=\"#ffffff\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linejoin=\"round\"/><polygon points=\"12.0,116.1 46.0,116.1 58.0,104.0 24.0,104.0\" fill=\"#f1f5f9\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linejoin=\"round\"/><polygon points=\"46.0,150.1 58.0,138.0 58.0,104.0 46.0,116.1\" fill=\"#cbd5e1\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linejoin=\"round\"/><polygon points=\"46.0,150.1 80.0,150.1 80.0,116.1 46.0,116.1\" fill=\"#ffffff\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linejoin=\"round\"/><polygon points=\"46.0,116.1 80.0,116.1 92.0,104.0 58.0,104.0\" fill=\"#f1f5f9\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linejoin=\"round\"/><polygon points=\"80.0,150.1 92.0,138.0 92.0,104.0 80.0,116.1\" fill=\"#cbd5e1\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linejoin=\"round\"/><polygon points=\"80.0,150.1 114.0,150.1 114.0,116.1 80.0,116.1\" fill=\"#ffffff\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linejoin=\"round\"/><polygon points=\"80.0,116.1 114.0,116.1 126.0,104.0 92.0,104.0\" fill=\"#f1f5f9\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linejoin=\"round\"/><polygon points=\"114.0,150.1 126.0,138.0 126.0,104.0 114.0,116.1\" fill=\"#cbd5e1\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linejoin=\"round\"/></svg>",
+      "answer": {
+        "value": 16,
+        "accepted": [
+          "16 cubes",
+          "seize",
+          "seize cubes"
+        ]
+      },
+      "solution_steps": [
+        "On raisonne par colonnes : chaque colonne va jusqu'à la table, même si ses cubes du bas sont cachés. On lit la hauteur de chaque colonne au cube du dessus.",
+        "Rangée de derrière : colonnes de 3, 3 et 2 cubes, soit 3 + 3 + 2 = 8. Rangée du milieu : 2 + 2 + 1 = 5. Rangée de devant : 1 + 1 + 1 = 3.",
+        "8 + 5 + 3 = 16. L'empilement compte **16 cubes**.",
+        "On n'en voit qu'une partie sur le dessin : les cubes du bas des rangées de derrière sont cachés, mais ils portent ceux du dessus."
+      ],
+      "hint": "Écris dans ta tête la vue de dessus, avec la hauteur de chaque colonne.",
+      "estimated_duration_s": 120,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 4, classe de 5e, Espace et géométrie, Représentation de l'espace, Automatismes : « Dénombrer des cubes dans des empilements. »"
+    },
+    {
+      "id": "EX-G070-M-01",
+      "skill_id": "G070",
+      "level": "maitrise",
+      "type": "qcm",
+      "statement": "À gauche, la vue de dessus d'un empilement (nombre de cubes par colonne, devant en bas).\n\nOn regarde l'empilement depuis le côté droit de cette vue de dessus. Quelle vue voit-on ?",
+      "image": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 358 184\" width=\"358\" height=\"184\" font-family=\"system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif\" role=\"img\"><title>Vue de dessus d'un empilement avec des nombres, et trois vues lettrées A, B, C</title><rect width=\"100%\" height=\"100%\" fill=\"#ffffff\"/><rect x=\"36\" y=\"36\" width=\"22\" height=\"22\" fill=\"#93c5fd\"/><rect x=\"58\" y=\"36\" width=\"22\" height=\"22\" fill=\"#93c5fd\"/><rect x=\"36\" y=\"58\" width=\"22\" height=\"22\" fill=\"#93c5fd\"/><rect x=\"58\" y=\"58\" width=\"22\" height=\"22\" fill=\"#93c5fd\"/><rect x=\"36\" y=\"80\" width=\"22\" height=\"22\" fill=\"#93c5fd\"/><rect x=\"58\" y=\"80\" width=\"22\" height=\"22\" fill=\"#93c5fd\"/><rect x=\"102\" y=\"102\" width=\"22\" height=\"22\" fill=\"#fde68a\"/><rect x=\"124\" y=\"102\" width=\"22\" height=\"22\" fill=\"#fde68a\"/><rect x=\"124\" y=\"80\" width=\"22\" height=\"22\" fill=\"#fde68a\"/><rect x=\"124\" y=\"58\" width=\"22\" height=\"22\" fill=\"#fde68a\"/><rect x=\"146\" y=\"102\" width=\"22\" height=\"22\" fill=\"#fde68a\"/><rect x=\"146\" y=\"80\" width=\"22\" height=\"22\" fill=\"#fde68a\"/><rect x=\"190\" y=\"102\" width=\"22\" height=\"22\" fill=\"#fde68a\"/><rect x=\"190\" y=\"80\" width=\"22\" height=\"22\" fill=\"#fde68a\"/><rect x=\"212\" y=\"102\" width=\"22\" height=\"22\" fill=\"#fde68a\"/><rect x=\"212\" y=\"80\" width=\"22\" height=\"22\" fill=\"#fde68a\"/><rect x=\"212\" y=\"58\" width=\"22\" height=\"22\" fill=\"#fde68a\"/><rect x=\"234\" y=\"102\" width=\"22\" height=\"22\" fill=\"#fde68a\"/><rect x=\"278\" y=\"102\" width=\"22\" height=\"22\" fill=\"#fde68a\"/><rect x=\"278\" y=\"80\" width=\"22\" height=\"22\" fill=\"#fde68a\"/><rect x=\"300\" y=\"102\" width=\"22\" height=\"22\" fill=\"#fde68a\"/><rect x=\"300\" y=\"80\" width=\"22\" height=\"22\" fill=\"#fde68a\"/><rect x=\"300\" y=\"58\" width=\"22\" height=\"22\" fill=\"#fde68a\"/><line x1=\"14.0\" y1=\"14.0\" x2=\"14.0\" y2=\"146.0\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"36.0\" y1=\"14.0\" x2=\"36.0\" y2=\"146.0\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"58.0\" y1=\"14.0\" x2=\"58.0\" y2=\"146.0\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"80.0\" y1=\"14.0\" x2=\"80.0\" y2=\"146.0\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"102.0\" y1=\"14.0\" x2=\"102.0\" y2=\"146.0\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"124.0\" y1=\"14.0\" x2=\"124.0\" y2=\"146.0\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"146.0\" y1=\"14.0\" x2=\"146.0\" y2=\"146.0\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"168.0\" y1=\"14.0\" x2=\"168.0\" y2=\"146.0\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"190.0\" y1=\"14.0\" x2=\"190.0\" y2=\"146.0\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"212.0\" y1=\"14.0\" x2=\"212.0\" y2=\"146.0\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"234.0\" y1=\"14.0\" x2=\"234.0\" y2=\"146.0\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"256.0\" y1=\"14.0\" x2=\"256.0\" y2=\"146.0\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"278.0\" y1=\"14.0\" x2=\"278.0\" y2=\"146.0\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"300.0\" y1=\"14.0\" x2=\"300.0\" y2=\"146.0\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"322.0\" y1=\"14.0\" x2=\"322.0\" y2=\"146.0\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"344.0\" y1=\"14.0\" x2=\"344.0\" y2=\"146.0\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"14.0\" y1=\"14.0\" x2=\"344.0\" y2=\"14.0\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"14.0\" y1=\"36.0\" x2=\"344.0\" y2=\"36.0\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"14.0\" y1=\"58.0\" x2=\"344.0\" y2=\"58.0\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"14.0\" y1=\"80.0\" x2=\"344.0\" y2=\"80.0\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"14.0\" y1=\"102.0\" x2=\"344.0\" y2=\"102.0\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"14.0\" y1=\"124.0\" x2=\"344.0\" y2=\"124.0\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"14.0\" y1=\"146.0\" x2=\"344.0\" y2=\"146.0\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-linecap=\"round\"/><text x=\"47.0\" y=\"52.0\" font-size=\"13\" text-anchor=\"middle\" fill=\"#334155\" font-weight=\"600\">2</text><text x=\"69.0\" y=\"52.0\" font-size=\"13\" text-anchor=\"middle\" fill=\"#334155\" font-weight=\"600\">1</text><text x=\"47.0\" y=\"74.0\" font-size=\"13\" text-anchor=\"middle\" fill=\"#334155\" font-weight=\"600\">1</text><text x=\"69.0\" y=\"74.0\" font-size=\"13\" text-anchor=\"middle\" fill=\"#334155\" font-weight=\"600\">3</text><text x=\"47.0\" y=\"96.0\" font-size=\"13\" text-anchor=\"middle\" fill=\"#334155\" font-weight=\"600\">1</text><text x=\"69.0\" y=\"96.0\" font-size=\"13\" text-anchor=\"middle\" fill=\"#334155\" font-weight=\"600\">1</text><text x=\"135.0\" y=\"140.0\" font-size=\"13\" text-anchor=\"middle\" fill=\"#334155\" font-weight=\"600\">A</text><text x=\"223.0\" y=\"140.0\" font-size=\"13\" text-anchor=\"middle\" fill=\"#334155\" font-weight=\"600\">B</text><text x=\"289.0\" y=\"140.0\" font-size=\"13\" text-anchor=\"middle\" fill=\"#334155\" font-weight=\"600\">C</text><text x=\"179.0\" y=\"174.0\" font-size=\"13\" text-anchor=\"middle\" fill=\"#334155\">À gauche : vue de dessus. À droite : vues A, B, C.</text></svg>",
+      "choices": [
+        {
+          "key": "a",
+          "text": "La vue A",
+          "misconception": null
+        },
+        {
+          "key": "b",
+          "text": "La vue B",
+          "misconception": "L'élève lit les rangées de haut en bas sur la vue de dessus, donc de derrière vers devant. Il obtient la vue depuis la gauche, à l'envers de la vue de droite."
+        },
+        {
+          "key": "c",
+          "text": "La vue C",
+          "misconception": "L'élève confond vue de côté et vue de face : la vue C montre les 2 colonnes vues de face."
+        }
+      ],
+      "answer": {
+        "value": "a"
+      },
+      "solution_steps": [
+        "Depuis la droite, on a la rangée de devant à sa gauche et la rangée de derrière à sa droite.",
+        "Dans chaque rangée, on voit la plus haute pile. Devant : 1 et 1, on voit 1. Milieu : 1 et 3, on voit 3. Derrière : 2 et 1, on voit 2.",
+        "De gauche à droite, la vue de droite a des colonnes de 1, 3 et 2 carrés : c'est **la vue A**.",
+        "La vue B est la vue depuis la gauche (l'ordre est inversé) ; la vue C, de 2 colonnes, est la vue de face."
+      ],
+      "hint": "Place-toi à droite de la vue de dessus : qu'as-tu à ta gauche, la rangée de devant ou celle de derrière ?",
+      "estimated_duration_s": 120,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 4, classe de 5e, Espace et géométrie, Représentation de l'espace, Automatismes : « Reconnaitre des vues (de dessus, dessous…) d'empilements de cubes. »"
+    },
+    {
+      "id": "EX-G070-M-02",
+      "skill_id": "G070",
+      "level": "maitrise",
+      "type": "numerique",
+      "statement": "Voici la vue de dessus et la vue de face d'un empilement de cubes. Combien de cubes peut-il compter, au plus ?",
+      "image": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 248 162\" width=\"248\" height=\"162\" font-family=\"system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif\" role=\"img\"><title>Vue de dessus et vue de face d'un empilement de cubes</title><rect width=\"100%\" height=\"100%\" fill=\"#ffffff\"/><rect x=\"36\" y=\"58\" width=\"22\" height=\"22\" fill=\"#93c5fd\"/><rect x=\"58\" y=\"58\" width=\"22\" height=\"22\" fill=\"#93c5fd\"/><rect x=\"80\" y=\"58\" width=\"22\" height=\"22\" fill=\"#93c5fd\"/><rect x=\"36\" y=\"80\" width=\"22\" height=\"22\" fill=\"#93c5fd\"/><rect x=\"80\" y=\"80\" width=\"22\" height=\"22\" fill=\"#93c5fd\"/><rect x=\"124\" y=\"80\" width=\"22\" height=\"22\" fill=\"#fde68a\"/><rect x=\"124\" y=\"58\" width=\"22\" height=\"22\" fill=\"#fde68a\"/><rect x=\"146\" y=\"80\" width=\"22\" height=\"22\" fill=\"#fde68a\"/><rect x=\"168\" y=\"80\" width=\"22\" height=\"22\" fill=\"#fde68a\"/><rect x=\"168\" y=\"58\" width=\"22\" height=\"22\" fill=\"#fde68a\"/><rect x=\"168\" y=\"36\" width=\"22\" height=\"22\" fill=\"#fde68a\"/><line x1=\"14.0\" y1=\"14.0\" x2=\"14.0\" y2=\"124.0\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"36.0\" y1=\"14.0\" x2=\"36.0\" y2=\"124.0\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"58.0\" y1=\"14.0\" x2=\"58.0\" y2=\"124.0\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"80.0\" y1=\"14.0\" x2=\"80.0\" y2=\"124.0\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"102.0\" y1=\"14.0\" x2=\"102.0\" y2=\"124.0\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"124.0\" y1=\"14.0\" x2=\"124.0\" y2=\"124.0\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"146.0\" y1=\"14.0\" x2=\"146.0\" y2=\"124.0\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"168.0\" y1=\"14.0\" x2=\"168.0\" y2=\"124.0\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"190.0\" y1=\"14.0\" x2=\"190.0\" y2=\"124.0\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"212.0\" y1=\"14.0\" x2=\"212.0\" y2=\"124.0\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"234.0\" y1=\"14.0\" x2=\"234.0\" y2=\"124.0\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"14.0\" y1=\"14.0\" x2=\"234.0\" y2=\"14.0\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"14.0\" y1=\"36.0\" x2=\"234.0\" y2=\"36.0\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"14.0\" y1=\"58.0\" x2=\"234.0\" y2=\"58.0\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"14.0\" y1=\"80.0\" x2=\"234.0\" y2=\"80.0\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"14.0\" y1=\"102.0\" x2=\"234.0\" y2=\"102.0\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"14.0\" y1=\"124.0\" x2=\"234.0\" y2=\"124.0\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-linecap=\"round\"/><text x=\"124.0\" y=\"152.0\" font-size=\"13\" text-anchor=\"middle\" fill=\"#334155\">Vue de dessus, puis vue de face</text></svg>",
+      "answer": {
+        "value": 11,
+        "accepted": [
+          "11 cubes",
+          "onze",
+          "onze cubes",
+          "au plus 11",
+          "11 au plus",
+          "au plus 11 cubes"
+        ]
+      },
+      "solution_steps": [
+        "La vue de dessus dit où sont les colonnes : 3 derrière, et 2 devant (à gauche et à droite).",
+        "La vue de face donne la hauteur maximale de chaque file, de gauche à droite : 2, 1 et 3. Une colonne ne peut pas dépasser la hauteur de sa file.",
+        "File de gauche : 2 colonnes d'au plus 2 cubes, soit 4. File du milieu : 1 colonne d'au plus 1 cube, soit 1. File de droite : 2 colonnes d'au plus 3 cubes, soit 6.",
+        "4 + 1 + 6 = 11 : l'empilement compte **au plus 11 cubes**. Les 6 carrés de la vue de face n'en donnent pas le nombre."
+      ],
+      "hint": "Pour chaque file vue de face, combien de colonnes la vue de dessus y montre-t-elle ?",
+      "estimated_duration_s": 150,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 4, classe de 5e, Espace et géométrie, Représentation de l'espace, Automatismes : « Dénombrer des cubes dans des empilements. »"
+    },
+    {
+      "id": "EX-G072-D-01",
+      "skill_id": "G072",
+      "level": "decouverte",
+      "type": "qcm",
+      "statement": "Quand on plie ce patron, quel solide obtient-on ?",
+      "image": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 344 292\" width=\"344\" height=\"292\" font-family=\"system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif\" role=\"img\"><title>Patron d'un solide sur quadrillage : des triangles et des rectangles</title><rect width=\"100%\" height=\"100%\" fill=\"#ffffff\"/><line x1=\"16.0\" y1=\"16.0\" x2=\"16.0\" y2=\"276.0\" stroke=\"#cbd5e1\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"42.0\" y1=\"16.0\" x2=\"42.0\" y2=\"276.0\" stroke=\"#cbd5e1\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"68.0\" y1=\"16.0\" x2=\"68.0\" y2=\"276.0\" stroke=\"#cbd5e1\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"94.0\" y1=\"16.0\" x2=\"94.0\" y2=\"276.0\" stroke=\"#cbd5e1\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"120.0\" y1=\"16.0\" x2=\"120.0\" y2=\"276.0\" stroke=\"#cbd5e1\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"146.0\" y1=\"16.0\" x2=\"146.0\" y2=\"276.0\" stroke=\"#cbd5e1\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"172.0\" y1=\"16.0\" x2=\"172.0\" y2=\"276.0\" stroke=\"#cbd5e1\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"198.0\" y1=\"16.0\" x2=\"198.0\" y2=\"276.0\" stroke=\"#cbd5e1\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"224.0\" y1=\"16.0\" x2=\"224.0\" y2=\"276.0\" stroke=\"#cbd5e1\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"250.0\" y1=\"16.0\" x2=\"250.0\" y2=\"276.0\" stroke=\"#cbd5e1\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"276.0\" y1=\"16.0\" x2=\"276.0\" y2=\"276.0\" stroke=\"#cbd5e1\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"302.0\" y1=\"16.0\" x2=\"302.0\" y2=\"276.0\" stroke=\"#cbd5e1\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"328.0\" y1=\"16.0\" x2=\"328.0\" y2=\"276.0\" stroke=\"#cbd5e1\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"16.0\" y1=\"16.0\" x2=\"328.0\" y2=\"16.0\" stroke=\"#cbd5e1\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"16.0\" y1=\"42.0\" x2=\"328.0\" y2=\"42.0\" stroke=\"#cbd5e1\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"16.0\" y1=\"68.0\" x2=\"328.0\" y2=\"68.0\" stroke=\"#cbd5e1\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"16.0\" y1=\"94.0\" x2=\"328.0\" y2=\"94.0\" stroke=\"#cbd5e1\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"16.0\" y1=\"120.0\" x2=\"328.0\" y2=\"120.0\" stroke=\"#cbd5e1\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"16.0\" y1=\"146.0\" x2=\"328.0\" y2=\"146.0\" stroke=\"#cbd5e1\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"16.0\" y1=\"172.0\" x2=\"328.0\" y2=\"172.0\" stroke=\"#cbd5e1\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"16.0\" y1=\"198.0\" x2=\"328.0\" y2=\"198.0\" stroke=\"#cbd5e1\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"16.0\" y1=\"224.0\" x2=\"328.0\" y2=\"224.0\" stroke=\"#cbd5e1\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"16.0\" y1=\"250.0\" x2=\"328.0\" y2=\"250.0\" stroke=\"#cbd5e1\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"16.0\" y1=\"276.0\" x2=\"328.0\" y2=\"276.0\" stroke=\"#cbd5e1\" stroke-width=\"1\" stroke-linecap=\"round\"/><polygon points=\"16.0,94.0 94.0,94.0 94.0,198.0 16.0,198.0\" fill=\"#bfdbfe\" fill-opacity=\"0.6\" stroke=\"#334155\" stroke-width=\"2\" stroke-linejoin=\"round\"/><polygon points=\"94.0,94.0 198.0,94.0 198.0,198.0 94.0,198.0\" fill=\"#bfdbfe\" fill-opacity=\"0.6\" stroke=\"#334155\" stroke-width=\"2\" stroke-linejoin=\"round\"/><polygon points=\"198.0,94.0 328.0,94.0 328.0,198.0 198.0,198.0\" fill=\"#bfdbfe\" fill-opacity=\"0.6\" stroke=\"#334155\" stroke-width=\"2\" stroke-linejoin=\"round\"/><polygon points=\"94.0,16.0 94.0,94.0 198.0,94.0\" fill=\"#bfdbfe\" fill-opacity=\"0.6\" stroke=\"#334155\" stroke-width=\"2\" stroke-linejoin=\"round\"/><polygon points=\"94.0,198.0 198.0,198.0 94.0,276.0\" fill=\"#bfdbfe\" fill-opacity=\"0.6\" stroke=\"#334155\" stroke-width=\"2\" stroke-linejoin=\"round\"/></svg>",
+      "choices": [
+        {
+          "key": "a",
+          "text": "Un pavé droit",
+          "misconception": "L'élève voit des rectangles et pense au pavé. Mais un pavé n'a que des faces rectangulaires, et ce patron a deux triangles."
+        },
+        {
+          "key": "b",
+          "text": "Une pyramide à base triangulaire",
+          "misconception": "L'élève voit des triangles et pense à la pyramide. Mais une pyramide n'a pas de faces rectangulaires."
+        },
+        {
+          "key": "c",
+          "text": "Un prisme droit à base triangulaire",
+          "misconception": null
+        }
+      ],
+      "answer": {
+        "value": "c"
+      },
+      "solution_steps": [
+        "Le patron a deux triangles identiques et trois rectangles de même hauteur.",
+        "Les deux triangles sont opposés : ce sont les deux bases du solide. Les rectangles font le tour des bases.",
+        "Un solide à deux bases identiques reliées par des rectangles est un prisme droit : c'est **un prisme droit à base triangulaire**.",
+        "Une pyramide n'a qu'une base ; ses autres faces sont des triangles qui se rejoignent en un sommet."
+      ],
+      "hint": "Compte les triangles et les rectangles. Que forment-ils une fois pliés ?",
+      "estimated_duration_s": 45,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 4, classe de 5e, Espace et géométrie, Représentation de l'espace : « Savoir mettre en relation une représentation en perspective cavalière et un patron d'un pavé, d'un prisme droit ou d'un cylindre de révolution. »"
+    },
+    {
+      "id": "EX-G072-D-02",
+      "skill_id": "G072",
+      "level": "decouverte",
+      "type": "numerique",
+      "statement": "Ce prisme droit a pour bases deux hexagones (des polygones à 6 côtés). Combien de faces compte son patron ?",
+      "image": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 270 230\" width=\"270\" height=\"230\" font-family=\"system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif\" role=\"img\"><title>Solide en perspective cavalière</title><rect width=\"100%\" height=\"100%\" fill=\"#ffffff\"/><polygon points=\"201.5,56.4 151.0,75.6 82.0,68.6 63.5,42.3 114.0,23.2 183.0,30.2\" fill=\"#f1f5f9\" stroke=\"none\"/><line x1=\"201.5\" y1=\"56.4\" x2=\"151.0\" y2=\"75.6\" stroke=\"#334155\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><line x1=\"201.5\" y1=\"183.9\" x2=\"151.0\" y2=\"203.1\" stroke=\"#334155\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><line x1=\"201.5\" y1=\"183.9\" x2=\"201.5\" y2=\"56.4\" stroke=\"#334155\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><line x1=\"151.0\" y1=\"75.6\" x2=\"82.0\" y2=\"68.6\" stroke=\"#334155\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><line x1=\"151.0\" y1=\"203.1\" x2=\"82.0\" y2=\"196.1\" stroke=\"#334155\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><line x1=\"151.0\" y1=\"203.1\" x2=\"151.0\" y2=\"75.6\" stroke=\"#334155\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><line x1=\"82.0\" y1=\"68.6\" x2=\"63.5\" y2=\"42.3\" stroke=\"#334155\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><line x1=\"82.0\" y1=\"196.1\" x2=\"63.5\" y2=\"169.8\" stroke=\"#334155\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><line x1=\"82.0\" y1=\"196.1\" x2=\"82.0\" y2=\"68.6\" stroke=\"#334155\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><line x1=\"63.5\" y1=\"42.3\" x2=\"114.0\" y2=\"23.2\" stroke=\"#334155\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><line x1=\"63.5\" y1=\"169.8\" x2=\"114.0\" y2=\"150.7\" stroke=\"#334155\" stroke-width=\"1.2\" stroke-linecap=\"round\" stroke-dasharray=\"4 3\"/><line x1=\"63.5\" y1=\"169.8\" x2=\"63.5\" y2=\"42.3\" stroke=\"#334155\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><line x1=\"114.0\" y1=\"23.2\" x2=\"183.0\" y2=\"30.2\" stroke=\"#334155\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><line x1=\"114.0\" y1=\"150.7\" x2=\"183.0\" y2=\"157.7\" stroke=\"#334155\" stroke-width=\"1.2\" stroke-linecap=\"round\" stroke-dasharray=\"4 3\"/><line x1=\"114.0\" y1=\"150.7\" x2=\"114.0\" y2=\"23.2\" stroke=\"#334155\" stroke-width=\"1.2\" stroke-linecap=\"round\" stroke-dasharray=\"4 3\"/><line x1=\"183.0\" y1=\"30.2\" x2=\"201.5\" y2=\"56.4\" stroke=\"#334155\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><line x1=\"183.0\" y1=\"157.7\" x2=\"201.5\" y2=\"183.9\" stroke=\"#334155\" stroke-width=\"1.2\" stroke-linecap=\"round\" stroke-dasharray=\"4 3\"/><line x1=\"183.0\" y1=\"157.7\" x2=\"183.0\" y2=\"30.2\" stroke=\"#334155\" stroke-width=\"1.2\" stroke-linecap=\"round\" stroke-dasharray=\"4 3\"/></svg>",
+      "answer": {
+        "value": 8,
+        "accepted": [
+          "8 faces",
+          "huit",
+          "huit faces"
+        ]
+      },
+      "solution_steps": [
+        "Un prisme droit a deux bases identiques : ici, deux hexagones.",
+        "Chaque côté d'une base porte une face rectangulaire : l'hexagone a 6 côtés, donc il y a 6 rectangles.",
+        "En tout : 2 + 6 = 8. Le patron compte **8 faces**.",
+        "Compter 6 oublierait les deux bases ; elles font partie du patron."
+      ],
+      "hint": "Combien de bases ? Combien de rectangles autour ?",
+      "estimated_duration_s": 45,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 4, classe de 5e, Espace et géométrie, Représentation de l'espace : « Savoir mettre en relation une représentation en perspective cavalière et un patron d'un pavé, d'un prisme droit ou d'un cylindre de révolution. »"
+    },
+    {
+      "id": "EX-G072-E-01",
+      "skill_id": "G072",
+      "level": "entrainement",
+      "type": "qcm",
+      "statement": "Un seul de ces assemblages est un patron de pavé droit. Lequel ?",
+      "image": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 344 292\" width=\"344\" height=\"292\" font-family=\"system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif\" role=\"img\"><title>Trois assemblages de rectangles sur quadrillage, lettrés A, B, C</title><rect width=\"100%\" height=\"100%\" fill=\"#ffffff\"/><line x1=\"16.0\" y1=\"16.0\" x2=\"16.0\" y2=\"276.0\" stroke=\"#cbd5e1\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"42.0\" y1=\"16.0\" x2=\"42.0\" y2=\"276.0\" stroke=\"#cbd5e1\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"68.0\" y1=\"16.0\" x2=\"68.0\" y2=\"276.0\" stroke=\"#cbd5e1\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"94.0\" y1=\"16.0\" x2=\"94.0\" y2=\"276.0\" stroke=\"#cbd5e1\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"120.0\" y1=\"16.0\" x2=\"120.0\" y2=\"276.0\" stroke=\"#cbd5e1\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"146.0\" y1=\"16.0\" x2=\"146.0\" y2=\"276.0\" stroke=\"#cbd5e1\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"172.0\" y1=\"16.0\" x2=\"172.0\" y2=\"276.0\" stroke=\"#cbd5e1\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"198.0\" y1=\"16.0\" x2=\"198.0\" y2=\"276.0\" stroke=\"#cbd5e1\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"224.0\" y1=\"16.0\" x2=\"224.0\" y2=\"276.0\" stroke=\"#cbd5e1\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"250.0\" y1=\"16.0\" x2=\"250.0\" y2=\"276.0\" stroke=\"#cbd5e1\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"276.0\" y1=\"16.0\" x2=\"276.0\" y2=\"276.0\" stroke=\"#cbd5e1\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"302.0\" y1=\"16.0\" x2=\"302.0\" y2=\"276.0\" stroke=\"#cbd5e1\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"328.0\" y1=\"16.0\" x2=\"328.0\" y2=\"276.0\" stroke=\"#cbd5e1\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"16.0\" y1=\"16.0\" x2=\"328.0\" y2=\"16.0\" stroke=\"#cbd5e1\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"16.0\" y1=\"42.0\" x2=\"328.0\" y2=\"42.0\" stroke=\"#cbd5e1\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"16.0\" y1=\"68.0\" x2=\"328.0\" y2=\"68.0\" stroke=\"#cbd5e1\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"16.0\" y1=\"94.0\" x2=\"328.0\" y2=\"94.0\" stroke=\"#cbd5e1\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"16.0\" y1=\"120.0\" x2=\"328.0\" y2=\"120.0\" stroke=\"#cbd5e1\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"16.0\" y1=\"146.0\" x2=\"328.0\" y2=\"146.0\" stroke=\"#cbd5e1\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"16.0\" y1=\"172.0\" x2=\"328.0\" y2=\"172.0\" stroke=\"#cbd5e1\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"16.0\" y1=\"198.0\" x2=\"328.0\" y2=\"198.0\" stroke=\"#cbd5e1\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"16.0\" y1=\"224.0\" x2=\"328.0\" y2=\"224.0\" stroke=\"#cbd5e1\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"16.0\" y1=\"250.0\" x2=\"328.0\" y2=\"250.0\" stroke=\"#cbd5e1\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"16.0\" y1=\"276.0\" x2=\"328.0\" y2=\"276.0\" stroke=\"#cbd5e1\" stroke-width=\"1\" stroke-linecap=\"round\"/><polygon points=\"42.0,42.0 68.0,42.0 68.0,94.0 42.0,94.0\" fill=\"#bfdbfe\" fill-opacity=\"0.6\" stroke=\"#334155\" stroke-width=\"2\" stroke-linejoin=\"round\"/><polygon points=\"68.0,42.0 94.0,42.0 94.0,94.0 68.0,94.0\" fill=\"#bfdbfe\" fill-opacity=\"0.6\" stroke=\"#334155\" stroke-width=\"2\" stroke-linejoin=\"round\"/><polygon points=\"94.0,42.0 120.0,42.0 120.0,94.0 94.0,94.0\" fill=\"#bfdbfe\" fill-opacity=\"0.6\" stroke=\"#334155\" stroke-width=\"2\" stroke-linejoin=\"round\"/><polygon points=\"120.0,42.0 146.0,42.0 146.0,94.0 120.0,94.0\" fill=\"#bfdbfe\" fill-opacity=\"0.6\" stroke=\"#334155\" stroke-width=\"2\" stroke-linejoin=\"round\"/><polygon points=\"42.0,16.0 68.0,16.0 68.0,42.0 42.0,42.0\" fill=\"#bfdbfe\" fill-opacity=\"0.6\" stroke=\"#334155\" stroke-width=\"2\" stroke-linejoin=\"round\"/><polygon points=\"94.0,16.0 120.0,16.0 120.0,42.0 94.0,42.0\" fill=\"#bfdbfe\" fill-opacity=\"0.6\" stroke=\"#334155\" stroke-width=\"2\" stroke-linejoin=\"round\"/><polygon points=\"198.0,42.0 224.0,42.0 224.0,94.0 198.0,94.0\" fill=\"#bfdbfe\" fill-opacity=\"0.6\" stroke=\"#334155\" stroke-width=\"2\" stroke-linejoin=\"round\"/><polygon points=\"224.0,42.0 250.0,42.0 250.0,94.0 224.0,94.0\" fill=\"#bfdbfe\" fill-opacity=\"0.6\" stroke=\"#334155\" stroke-width=\"2\" stroke-linejoin=\"round\"/><polygon points=\"250.0,42.0 276.0,42.0 276.0,94.0 250.0,94.0\" fill=\"#bfdbfe\" fill-opacity=\"0.6\" stroke=\"#334155\" stroke-width=\"2\" stroke-linejoin=\"round\"/><polygon points=\"276.0,42.0 302.0,42.0 302.0,94.0 276.0,94.0\" fill=\"#bfdbfe\" fill-opacity=\"0.6\" stroke=\"#334155\" stroke-width=\"2\" stroke-linejoin=\"round\"/><polygon points=\"224.0,16.0 250.0,16.0 250.0,42.0 224.0,42.0\" fill=\"#bfdbfe\" fill-opacity=\"0.6\" stroke=\"#334155\" stroke-width=\"2\" stroke-linejoin=\"round\"/><polygon points=\"276.0,94.0 302.0,94.0 302.0,120.0 276.0,120.0\" fill=\"#bfdbfe\" fill-opacity=\"0.6\" stroke=\"#334155\" stroke-width=\"2\" stroke-linejoin=\"round\"/><polygon points=\"120.0,172.0 146.0,172.0 146.0,224.0 120.0,224.0\" fill=\"#bfdbfe\" fill-opacity=\"0.6\" stroke=\"#334155\" stroke-width=\"2\" stroke-linejoin=\"round\"/><polygon points=\"146.0,172.0 172.0,172.0 172.0,224.0 146.0,224.0\" fill=\"#bfdbfe\" fill-opacity=\"0.6\" stroke=\"#334155\" stroke-width=\"2\" stroke-linejoin=\"round\"/><polygon points=\"172.0,172.0 198.0,172.0 198.0,224.0 172.0,224.0\" fill=\"#bfdbfe\" fill-opacity=\"0.6\" stroke=\"#334155\" stroke-width=\"2\" stroke-linejoin=\"round\"/><polygon points=\"198.0,172.0 224.0,172.0 224.0,224.0 198.0,224.0\" fill=\"#bfdbfe\" fill-opacity=\"0.6\" stroke=\"#334155\" stroke-width=\"2\" stroke-linejoin=\"round\"/><polygon points=\"146.0,146.0 172.0,146.0 172.0,172.0 146.0,172.0\" fill=\"#bfdbfe\" fill-opacity=\"0.6\" stroke=\"#334155\" stroke-width=\"2\" stroke-linejoin=\"round\"/><polygon points=\"172.0,224.0 198.0,224.0 198.0,276.0 172.0,276.0\" fill=\"#bfdbfe\" fill-opacity=\"0.6\" stroke=\"#334155\" stroke-width=\"2\" stroke-linejoin=\"round\"/><text x=\"26.4\" y=\"73.0\" font-size=\"15\" text-anchor=\"middle\" fill=\"#334155\" font-weight=\"600\">A</text><text x=\"182.4\" y=\"73.0\" font-size=\"15\" text-anchor=\"middle\" fill=\"#334155\" font-weight=\"600\">B</text><text x=\"104.4\" y=\"203.0\" font-size=\"15\" text-anchor=\"middle\" fill=\"#334155\" font-weight=\"600\">C</text></svg>",
+      "choices": [
+        {
+          "key": "a",
+          "text": "L'assemblage A",
+          "misconception": "L'élève vérifie qu'il y a 6 faces et des faces opposées identiques, mais ne regarde pas leur position : les deux carrés se superposent au pliage."
+        },
+        {
+          "key": "b",
+          "text": "L'assemblage B",
+          "misconception": null
+        },
+        {
+          "key": "c",
+          "text": "L'assemblage C",
+          "misconception": "L'élève compte bien 6 faces, mais ne vérifie pas que les faces opposées sont identiques : un bout est un carré, l'autre un rectangle."
+        }
+      ],
+      "answer": {
+        "value": "b"
+      },
+      "solution_steps": [
+        "Un patron de pavé a 6 faces rectangulaires, les faces opposées sont identiques, et aucune face ne se superpose à une autre au pliage.",
+        "A : les deux carrés sont au-dessus de la bande. Au pliage, ils tombent tous les deux sur le même bout : ils se superposent, et l'autre bout reste ouvert.",
+        "C : un bout est un carré, l'autre un rectangle deux fois plus long. Deux faces opposées n'ont pas les mêmes dimensions : le rectangle dépasse.",
+        "B : les deux carrés sont de part et d'autre de la bande, et ils ont la même taille. **B est un patron de pavé**."
+      ],
+      "hint": "Pour chaque assemblage, imagine où vont les deux petites faces au pliage.",
+      "estimated_duration_s": 90,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 4, classe de 5e, Espace et géométrie, Représentation de l'espace : « Savoir mettre en relation une représentation en perspective cavalière et un patron d'un pavé, d'un prisme droit ou d'un cylindre de révolution. »"
+    },
+    {
+      "id": "EX-G072-E-02",
+      "skill_id": "G072",
+      "level": "entrainement",
+      "type": "numerique",
+      "statement": "Voici le patron d'un cylindre de rayon 4 cm et de hauteur 7 cm (pas en vraie grandeur). En prenant 3,14 pour π, quelle est la longueur du rectangle, en cm ?",
+      "image": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 344 292\" width=\"344\" height=\"292\" font-family=\"system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif\" role=\"img\"><title>Patron d'un cylindre : un rectangle et deux disques, des longueurs écrites</title><rect width=\"100%\" height=\"100%\" fill=\"#ffffff\"/><polygon points=\"55.0,117.4 289.0,117.4 289.0,169.4 55.0,169.4\" fill=\"#bfdbfe\" fill-opacity=\"0.6\" stroke=\"#334155\" stroke-width=\"2\" stroke-linejoin=\"round\"/><circle cx=\"104.4\" cy=\"68.0\" r=\"49.4\" fill=\"#bfdbfe\" stroke=\"#334155\" stroke-width=\"2\"/><circle cx=\"239.6\" cy=\"218.8\" r=\"49.4\" fill=\"#bfdbfe\" stroke=\"#334155\" stroke-width=\"2\"/><line x1=\"104.4\" y1=\"68.0\" x2=\"153.8\" y2=\"68.0\" stroke=\"#334155\" stroke-width=\"2.0\" stroke-linecap=\"round\"/><text x=\"129.1\" y=\"60.0\" font-size=\"13\" text-anchor=\"middle\" fill=\"#334155\">4 cm</text><text x=\"172.0\" y=\"109.4\" font-size=\"13\" text-anchor=\"middle\" fill=\"#334155\">?</text><text x=\"47.0\" y=\"148.4\" font-size=\"13\" text-anchor=\"end\" fill=\"#334155\">7 cm</text></svg>",
+      "answer": {
+        "value": 25.12,
+        "unit": "cm",
+        "accepted": [
+          "25,12 cm",
+          "25,12cm",
+          "25,12 centimètres"
+        ]
+      },
+      "solution_steps": [
+        "Au pliage, la longueur du rectangle s'enroule exactement autour d'un disque : elle est égale au périmètre du disque.",
+        "Périmètre d'un disque de rayon 4 cm : 2 × 4 × π. Avec 3,14 : 2 × 4 × 3,14 = 8 × 3,14 = 25,12.",
+        "La longueur du rectangle est **25,12 cm**. Sa largeur, 7 cm, est la hauteur du cylindre.",
+        "Prendre le diamètre (8 cm) pour la longueur ferait un rectangle trop court : il ne ferait pas le tour du disque."
+      ],
+      "hint": "Au pliage, autour de quoi s'enroule la longueur du rectangle ?",
+      "estimated_duration_s": 75,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 4, classe de 5e, Espace et géométrie, Représentation de l'espace : « Savoir mettre en relation une représentation en perspective cavalière et un patron d'un pavé, d'un prisme droit ou d'un cylindre de révolution. »"
+    },
+    {
+      "id": "EX-G072-M-01",
+      "skill_id": "G072",
+      "level": "maitrise",
+      "type": "qcm",
+      "statement": "On plie ce patron de pavé droit. Quelle face est opposée à la face 2 ?",
+      "image": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 344 292\" width=\"344\" height=\"292\" font-family=\"system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif\" role=\"img\"><title>Patron d'un pavé sur quadrillage, faces numérotées de 1 à 6</title><rect width=\"100%\" height=\"100%\" fill=\"#ffffff\"/><line x1=\"16.0\" y1=\"16.0\" x2=\"16.0\" y2=\"276.0\" stroke=\"#cbd5e1\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"42.0\" y1=\"16.0\" x2=\"42.0\" y2=\"276.0\" stroke=\"#cbd5e1\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"68.0\" y1=\"16.0\" x2=\"68.0\" y2=\"276.0\" stroke=\"#cbd5e1\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"94.0\" y1=\"16.0\" x2=\"94.0\" y2=\"276.0\" stroke=\"#cbd5e1\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"120.0\" y1=\"16.0\" x2=\"120.0\" y2=\"276.0\" stroke=\"#cbd5e1\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"146.0\" y1=\"16.0\" x2=\"146.0\" y2=\"276.0\" stroke=\"#cbd5e1\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"172.0\" y1=\"16.0\" x2=\"172.0\" y2=\"276.0\" stroke=\"#cbd5e1\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"198.0\" y1=\"16.0\" x2=\"198.0\" y2=\"276.0\" stroke=\"#cbd5e1\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"224.0\" y1=\"16.0\" x2=\"224.0\" y2=\"276.0\" stroke=\"#cbd5e1\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"250.0\" y1=\"16.0\" x2=\"250.0\" y2=\"276.0\" stroke=\"#cbd5e1\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"276.0\" y1=\"16.0\" x2=\"276.0\" y2=\"276.0\" stroke=\"#cbd5e1\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"302.0\" y1=\"16.0\" x2=\"302.0\" y2=\"276.0\" stroke=\"#cbd5e1\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"328.0\" y1=\"16.0\" x2=\"328.0\" y2=\"276.0\" stroke=\"#cbd5e1\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"16.0\" y1=\"16.0\" x2=\"328.0\" y2=\"16.0\" stroke=\"#cbd5e1\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"16.0\" y1=\"42.0\" x2=\"328.0\" y2=\"42.0\" stroke=\"#cbd5e1\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"16.0\" y1=\"68.0\" x2=\"328.0\" y2=\"68.0\" stroke=\"#cbd5e1\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"16.0\" y1=\"94.0\" x2=\"328.0\" y2=\"94.0\" stroke=\"#cbd5e1\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"16.0\" y1=\"120.0\" x2=\"328.0\" y2=\"120.0\" stroke=\"#cbd5e1\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"16.0\" y1=\"146.0\" x2=\"328.0\" y2=\"146.0\" stroke=\"#cbd5e1\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"16.0\" y1=\"172.0\" x2=\"328.0\" y2=\"172.0\" stroke=\"#cbd5e1\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"16.0\" y1=\"198.0\" x2=\"328.0\" y2=\"198.0\" stroke=\"#cbd5e1\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"16.0\" y1=\"224.0\" x2=\"328.0\" y2=\"224.0\" stroke=\"#cbd5e1\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"16.0\" y1=\"250.0\" x2=\"328.0\" y2=\"250.0\" stroke=\"#cbd5e1\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"16.0\" y1=\"276.0\" x2=\"328.0\" y2=\"276.0\" stroke=\"#cbd5e1\" stroke-width=\"1\" stroke-linecap=\"round\"/><polygon points=\"68.0,94.0 120.0,94.0 120.0,198.0 68.0,198.0\" fill=\"#bfdbfe\" fill-opacity=\"0.6\" stroke=\"#334155\" stroke-width=\"2\" stroke-linejoin=\"round\"/><polygon points=\"120.0,94.0 172.0,94.0 172.0,198.0 120.0,198.0\" fill=\"#bfdbfe\" fill-opacity=\"0.6\" stroke=\"#334155\" stroke-width=\"2\" stroke-linejoin=\"round\"/><polygon points=\"172.0,94.0 224.0,94.0 224.0,198.0 172.0,198.0\" fill=\"#bfdbfe\" fill-opacity=\"0.6\" stroke=\"#334155\" stroke-width=\"2\" stroke-linejoin=\"round\"/><polygon points=\"224.0,94.0 276.0,94.0 276.0,198.0 224.0,198.0\" fill=\"#bfdbfe\" fill-opacity=\"0.6\" stroke=\"#334155\" stroke-width=\"2\" stroke-linejoin=\"round\"/><polygon points=\"120.0,42.0 172.0,42.0 172.0,94.0 120.0,94.0\" fill=\"#bfdbfe\" fill-opacity=\"0.6\" stroke=\"#334155\" stroke-width=\"2\" stroke-linejoin=\"round\"/><polygon points=\"224.0,198.0 276.0,198.0 276.0,250.0 224.0,250.0\" fill=\"#bfdbfe\" fill-opacity=\"0.6\" stroke=\"#334155\" stroke-width=\"2\" stroke-linejoin=\"round\"/><text x=\"94.0\" y=\"151.0\" font-size=\"15\" text-anchor=\"middle\" fill=\"#334155\" font-weight=\"600\">3</text><text x=\"146.0\" y=\"151.0\" font-size=\"15\" text-anchor=\"middle\" fill=\"#334155\" font-weight=\"600\">1</text><text x=\"198.0\" y=\"151.0\" font-size=\"15\" text-anchor=\"middle\" fill=\"#334155\" font-weight=\"600\">5</text><text x=\"250.0\" y=\"151.0\" font-size=\"15\" text-anchor=\"middle\" fill=\"#334155\" font-weight=\"600\">2</text><text x=\"146.0\" y=\"73.0\" font-size=\"15\" text-anchor=\"middle\" fill=\"#334155\" font-weight=\"600\">6</text><text x=\"250.0\" y=\"229.0\" font-size=\"15\" text-anchor=\"middle\" fill=\"#334155\" font-weight=\"600\">4</text></svg>",
+      "choices": [
+        {
+          "key": "a",
+          "text": "La face 3",
+          "misconception": "L'élève prend la face la plus éloignée sur le patron. Mais au pliage, la bande se referme : les faces 3 et 2 se touchent par une arête."
+        },
+        {
+          "key": "b",
+          "text": "La face 5",
+          "misconception": "L'élève choisit une face voisine de la face 2 sur le patron. Deux faces qui ont une arête commune ne sont jamais opposées."
+        },
+        {
+          "key": "c",
+          "text": "La face 4",
+          "misconception": "L'élève prend la face accrochée à la face 2 : elle se plie contre elle, à angle droit, et ne lui est pas opposée."
+        },
+        {
+          "key": "d",
+          "text": "La face 1",
+          "misconception": null
+        }
+      ],
+      "answer": {
+        "value": "d"
+      },
+      "solution_steps": [
+        "Dans la bande de quatre faces 3, 1, 5, 2, deux faces séparées par une seule autre sont opposées au pliage.",
+        "La face 1 et la face 2 sont séparées par la face 5 : elles sont opposées. De même, 3 et 5 sont opposées.",
+        "Les faces 6 et 4, une au-dessus et une au-dessous de la bande, ferment les deux bouts : elles sont opposées.",
+        "La face opposée à la face 2 est **la face 1**."
+      ],
+      "hint": "Une face est opposée à une autre si elles ne se touchent pas une fois le pavé fermé.",
+      "estimated_duration_s": 120,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 4, classe de 5e, Espace et géométrie, Représentation de l'espace : « Savoir mettre en relation une représentation en perspective cavalière et un patron d'un pavé, d'un prisme droit ou d'un cylindre de révolution. »"
+    },
+    {
+      "id": "EX-G072-M-02",
+      "skill_id": "G072",
+      "level": "maitrise",
+      "type": "numerique",
+      "statement": "Voici le patron d'un prisme droit à base triangulaire. Les longueurs écrites sont exactes, le dessin non.\n\nQuelle est la longueur du segment [AB], en cm ?",
+      "image": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 344 292\" width=\"344\" height=\"292\" font-family=\"system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif\" role=\"img\"><title>Patron d'un prisme droit sur quadrillage, trois longueurs écrites, points A et B</title><rect width=\"100%\" height=\"100%\" fill=\"#ffffff\"/><line x1=\"16.0\" y1=\"16.0\" x2=\"16.0\" y2=\"276.0\" stroke=\"#cbd5e1\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"42.0\" y1=\"16.0\" x2=\"42.0\" y2=\"276.0\" stroke=\"#cbd5e1\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"68.0\" y1=\"16.0\" x2=\"68.0\" y2=\"276.0\" stroke=\"#cbd5e1\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"94.0\" y1=\"16.0\" x2=\"94.0\" y2=\"276.0\" stroke=\"#cbd5e1\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"120.0\" y1=\"16.0\" x2=\"120.0\" y2=\"276.0\" stroke=\"#cbd5e1\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"146.0\" y1=\"16.0\" x2=\"146.0\" y2=\"276.0\" stroke=\"#cbd5e1\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"172.0\" y1=\"16.0\" x2=\"172.0\" y2=\"276.0\" stroke=\"#cbd5e1\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"198.0\" y1=\"16.0\" x2=\"198.0\" y2=\"276.0\" stroke=\"#cbd5e1\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"224.0\" y1=\"16.0\" x2=\"224.0\" y2=\"276.0\" stroke=\"#cbd5e1\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"250.0\" y1=\"16.0\" x2=\"250.0\" y2=\"276.0\" stroke=\"#cbd5e1\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"276.0\" y1=\"16.0\" x2=\"276.0\" y2=\"276.0\" stroke=\"#cbd5e1\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"302.0\" y1=\"16.0\" x2=\"302.0\" y2=\"276.0\" stroke=\"#cbd5e1\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"328.0\" y1=\"16.0\" x2=\"328.0\" y2=\"276.0\" stroke=\"#cbd5e1\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"16.0\" y1=\"16.0\" x2=\"328.0\" y2=\"16.0\" stroke=\"#cbd5e1\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"16.0\" y1=\"42.0\" x2=\"328.0\" y2=\"42.0\" stroke=\"#cbd5e1\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"16.0\" y1=\"68.0\" x2=\"328.0\" y2=\"68.0\" stroke=\"#cbd5e1\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"16.0\" y1=\"94.0\" x2=\"328.0\" y2=\"94.0\" stroke=\"#cbd5e1\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"16.0\" y1=\"120.0\" x2=\"328.0\" y2=\"120.0\" stroke=\"#cbd5e1\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"16.0\" y1=\"146.0\" x2=\"328.0\" y2=\"146.0\" stroke=\"#cbd5e1\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"16.0\" y1=\"172.0\" x2=\"328.0\" y2=\"172.0\" stroke=\"#cbd5e1\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"16.0\" y1=\"198.0\" x2=\"328.0\" y2=\"198.0\" stroke=\"#cbd5e1\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"16.0\" y1=\"224.0\" x2=\"328.0\" y2=\"224.0\" stroke=\"#cbd5e1\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"16.0\" y1=\"250.0\" x2=\"328.0\" y2=\"250.0\" stroke=\"#cbd5e1\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"16.0\" y1=\"276.0\" x2=\"328.0\" y2=\"276.0\" stroke=\"#cbd5e1\" stroke-width=\"1\" stroke-linecap=\"round\"/><polygon points=\"16.0,120.0 146.0,120.0 146.0,172.0 16.0,172.0\" fill=\"#bfdbfe\" fill-opacity=\"0.6\" stroke=\"#334155\" stroke-width=\"2\" stroke-linejoin=\"round\"/><polygon points=\"146.0,120.0 224.0,120.0 224.0,172.0 146.0,172.0\" fill=\"#bfdbfe\" fill-opacity=\"0.6\" stroke=\"#334155\" stroke-width=\"2\" stroke-linejoin=\"round\"/><polygon points=\"224.0,120.0 328.0,120.0 328.0,172.0 224.0,172.0\" fill=\"#bfdbfe\" fill-opacity=\"0.6\" stroke=\"#334155\" stroke-width=\"2\" stroke-linejoin=\"round\"/><polygon points=\"146.0,120.0 224.0,120.0 224.0,16.0\" fill=\"#bfdbfe\" fill-opacity=\"0.6\" stroke=\"#334155\" stroke-width=\"2\" stroke-linejoin=\"round\"/><polygon points=\"146.0,172.0 224.0,172.0 224.0,276.0\" fill=\"#bfdbfe\" fill-opacity=\"0.6\" stroke=\"#334155\" stroke-width=\"2\" stroke-linejoin=\"round\"/><text x=\"178.6\" y=\"68.2\" font-size=\"13\" text-anchor=\"end\" fill=\"#334155\">13 cm</text><text x=\"185.0\" y=\"112.0\" font-size=\"13\" text-anchor=\"middle\" fill=\"#334155\">5 cm</text><text x=\"232.0\" y=\"229.0\" font-size=\"13\" text-anchor=\"start\" fill=\"#334155\">12 cm</text><line x1=\"12.0\" y1=\"168.0\" x2=\"20.0\" y2=\"176.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"12.0\" y1=\"176.0\" x2=\"20.0\" y2=\"168.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><text x=\"16.0\" y=\"191.0\" font-size=\"15\" text-anchor=\"middle\" fill=\"#334155\" font-weight=\"600\">A</text><line x1=\"324.0\" y1=\"168.0\" x2=\"332.0\" y2=\"176.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"324.0\" y1=\"176.0\" x2=\"332.0\" y2=\"168.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><text x=\"328.0\" y=\"191.0\" font-size=\"15\" text-anchor=\"middle\" fill=\"#334155\" font-weight=\"600\">B</text></svg>",
+      "answer": {
+        "value": 30,
+        "unit": "cm",
+        "accepted": [
+          "30 cm",
+          "30cm",
+          "30 centimètres"
+        ]
+      },
+      "solution_steps": [
+        "[AB] est le bord des trois faces rectangulaires mises bout à bout. Au pliage, chaque rectangle se colle contre un côté du triangle.",
+        "Le rectangle du milieu partage un côté avec le triangle du haut : sa largeur est 5 cm. Celui de gauche se colle contre le côté de 13 cm, celui de droite contre le côté de 12 cm.",
+        "AB = 13 + 5 + 12 = 30. Le segment [AB] mesure **30 cm** : c'est le périmètre du triangle de base.",
+        "Oublier le côté de 13 cm donnerait 17 cm : la bande ne ferait pas le tour du triangle. Mesurer le dessin ne sert à rien, il n'est pas à l'échelle."
+      ],
+      "hint": "Contre quel côté du triangle chaque rectangle se colle-t-il au pliage ?",
+      "estimated_duration_s": 150,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 4, classe de 5e, Espace et géométrie, Représentation de l'espace : « Savoir mettre en relation une représentation en perspective cavalière et un patron d'un pavé, d'un prisme droit ou d'un cylindre de révolution. »"
+    },
+    {
       "id": "EX-P001-D-01",
       "skill_id": "P001",
       "level": "decouverte",
@@ -43321,6 +43720,387 @@
       "estimated_duration_s": 90,
       "review_status": "relu_agent",
       "programme_ref": "Cycle 4, classe de 5e, Espace et géométrie, Parallélogrammes : « Résoudre des problèmes faisant appel à des conversions d'unités de longueur et d'unités d'aires. »"
+    },
+    {
+      "id": "EX-P031-D-01",
+      "skill_id": "P031",
+      "level": "decouverte",
+      "type": "numerique",
+      "statement": "Une boîte en forme de cube a une arête de 1 dm, c'est-à-dire 10 cm. On la remplit de petits cubes de 1 cm³.\n\nCombien de petits cubes faut-il pour la remplir ?",
+      "image": null,
+      "answer": {
+        "value": 1000,
+        "accepted": [
+          "1 000",
+          "1000 cubes",
+          "1 000 cubes",
+          "1000 cm³",
+          "1 000 cm³",
+          "mille",
+          "1000 petits cubes",
+          "1 000 petits cubes"
+        ]
+      },
+      "solution_steps": [
+        "Le fond de la boîte est un carré de 10 cm sur 10 cm : on y pose une couche de 10 rangées de 10 petits cubes, soit 10 × 10 = 100 cubes.",
+        "La boîte a 10 cm de haut : on empile 10 couches de 100 cubes. 10 × 100 = 1 000.",
+        "Il faut **1 000 petits cubes**. C'est 10 × 10 × 10 = 10³ = 1 000.",
+        "Ces petits cubes mesurent chacun 1 cm³ et remplissent exactement 1 dm³ : **1 dm³ = 1 000 cm³**. Une unité de volume vaut 1 000 fois la suivante, et non 10 fois comme pour les longueurs."
+      ],
+      "hint": "Combien de petits cubes dans la couche du fond ? Combien de couches ?",
+      "estimated_duration_s": 60,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 4, classe de 5e, Nombres et calculs, Puissances : « Connaitre le cube de 10. »"
+    },
+    {
+      "id": "EX-P031-D-02",
+      "skill_id": "P031",
+      "level": "decouverte",
+      "type": "qcm",
+      "statement": "Une carafe contient 2,4 L de jus. Sachant que 1 L = 1 dm³, quel est ce volume en cm³ ?",
+      "image": null,
+      "choices": [
+        {
+          "key": "a",
+          "text": "240 cm³",
+          "misconception": "L'élève multiplie par 100, comme pour une aire : 2,4 × 100 = 240. Pour un volume, on passe d'une unité à la suivante en multipliant par 1 000."
+        },
+        {
+          "key": "b",
+          "text": "2 400 cm³",
+          "misconception": null
+        },
+        {
+          "key": "c",
+          "text": "24 cm³",
+          "misconception": "L'élève multiplie par 10, comme pour une longueur (1 dm = 10 cm) : 2,4 × 10 = 24. Or 1 dm³ contient 10 × 10 × 10 = 1 000 cm³."
+        },
+        {
+          "key": "d",
+          "text": "2,4 cm³",
+          "misconception": "L'élève croit que 1 L = 1 cm³ : il ne change pas le nombre. Or 1 L = 1 dm³, et un dm³ est 1 000 fois plus grand qu'un cm³."
+        }
+      ],
+      "answer": {
+        "value": "b"
+      },
+      "solution_steps": [
+        "1 L = 1 dm³, donc 2,4 L = 2,4 dm³.",
+        "1 dm³ = 1 000 cm³ : un cube de 1 dm d'arête contient 10 × 10 × 10 = 1 000 cubes de 1 cm³.",
+        "2,4 dm³ = 2,4 × 1 000 cm³ = 2 400 cm³. La carafe contient **2 400 cm³** de jus.",
+        "Contrôle : 1 L, c'est 1 000 mL, et 1 mL = 1 cm³. 2,4 L font 2 400 mL, soit 2 400 cm³."
+      ],
+      "hint": "Passe d'abord des litres aux dm³, puis des dm³ aux cm³ : par combien multiplie-t-on ?",
+      "estimated_duration_s": 45,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 4, classe de 5e, Espace et géométrie, Représentation de l'espace : « Connaitre et convertir des unités usuelles (volume et capacité). »"
+    },
+    {
+      "id": "EX-P031-E-01",
+      "skill_id": "P031",
+      "level": "entrainement",
+      "type": "numerique",
+      "statement": "Un aquarium contient 0,18 m³ d'eau. Combien de litres d'eau contient-il ?",
+      "image": null,
+      "answer": {
+        "value": 180,
+        "unit": "L",
+        "accepted": [
+          "180 L",
+          "180 l",
+          "180 litres"
+        ]
+      },
+      "solution_steps": [
+        "1 m³ = 1 000 dm³ : chaque unité de volume vaut 1 000 fois la suivante.",
+        "0,18 m³ = 0,18 × 1 000 dm³ = 180 dm³.",
+        "1 dm³ = 1 L, donc 180 dm³ = 180 L. L'aquarium contient **180 L** d'eau.",
+        "Multiplier par 100 donnerait 18 L : trop peu pour un aquarium qui contient presque un cinquième de mètre cube."
+      ],
+      "hint": "Combien de litres y a-t-il dans 1 m³ ?",
+      "estimated_duration_s": 60,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 4, classe de 5e, Espace et géométrie, Représentation de l'espace : « Connaitre et convertir des unités usuelles (volume et capacité). »"
+    },
+    {
+      "id": "EX-P031-E-02",
+      "skill_id": "P031",
+      "level": "entrainement",
+      "type": "vrai_faux",
+      "statement": "Un flacon de parfum contient 75 cm³. Zoé affirme : « Il contient 7,5 cL. »\n\nZoé a-t-elle raison ?",
+      "image": null,
+      "answer": {
+        "value": true
+      },
+      "solution_steps": [
+        "1 cm³ = 1 mL : un litre (1 dm³) vaut 1 000 mL et aussi 1 000 cm³.",
+        "Donc 75 cm³ = 75 mL.",
+        "1 cL = 10 mL, donc 75 mL = 75 ÷ 10 cL = 7,5 cL.",
+        "Le flacon contient bien 7,5 cL : Zoé a **raison**."
+      ],
+      "hint": "Combien de mL dans 1 cm³ ? Combien de mL dans 1 cL ?",
+      "estimated_duration_s": 60,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 4, classe de 5e, Espace et géométrie, Représentation de l'espace : « Connaitre et convertir des unités usuelles (volume et capacité). »"
+    },
+    {
+      "id": "EX-P031-M-01",
+      "skill_id": "P031",
+      "level": "maitrise",
+      "type": "numerique",
+      "statement": "Une piscine gonflable contient 2,7 m³ d'eau. On la vide avec un seau de 9 L.\n\nCombien de seaux pleins faut-il vider ?",
+      "image": null,
+      "answer": {
+        "value": 300,
+        "accepted": [
+          "300 seaux",
+          "trois cents",
+          "300 seaux pleins"
+        ]
+      },
+      "solution_steps": [
+        "Les deux volumes ne sont pas dans la même unité : on convertit le volume de la piscine en litres.",
+        "1 m³ = 1 000 dm³ = 1 000 L, donc 2,7 m³ = 2,7 × 1 000 L = 2 700 L.",
+        "Nombre de seaux : 2 700 ÷ 9 = 300. Il faut **300 seaux**.",
+        "Avec 1 m³ = 100 L (facteur d'une aire), on trouverait 270 L, donc 30 seaux : dix fois trop peu."
+      ],
+      "hint": "Exprime d'abord le volume de la piscine en litres.",
+      "estimated_duration_s": 90,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 4, classe de 5e, Espace et géométrie, Représentation de l'espace : « Connaitre et convertir des unités usuelles (volume et capacité). »"
+    },
+    {
+      "id": "EX-P031-M-02",
+      "skill_id": "P031",
+      "level": "maitrise",
+      "type": "qcm",
+      "statement": "Trois récipients sont pleins : une bassine de 0,03 m³, un bidon de 2 800 cL et un seau de 26 000 cm³.\n\nLequel contient le plus ?",
+      "image": null,
+      "choices": [
+        {
+          "key": "a",
+          "text": "Le bidon de 2 800 cL",
+          "misconception": "L'élève convertit les m³ avec un facteur 100, comme pour une aire : 0,03 m³ deviendrait 3 L. Le bidon (28 L) semble alors le plus grand. Or 1 m³ = 1 000 L."
+        },
+        {
+          "key": "b",
+          "text": "Le seau de 26 000 cm³",
+          "misconception": "L'élève compare les nombres sans regarder les unités : 26 000 est le plus grand nombre, mais 26 000 cm³ ne font que 26 L."
+        },
+        {
+          "key": "c",
+          "text": "La bassine de 0,03 m³",
+          "misconception": null
+        }
+      ],
+      "answer": {
+        "value": "c"
+      },
+      "solution_steps": [
+        "Pour comparer, on exprime les trois volumes dans la même unité, par exemple en litres.",
+        "Bassine : 0,03 m³ = 0,03 × 1 000 L = 30 L.",
+        "Bidon : 1 L = 100 cL, donc 2 800 cL = 2 800 ÷ 100 L = 28 L. Seau : 1 L = 1 dm³ = 1 000 cm³, donc 26 000 cm³ = 26 000 ÷ 1 000 L = 26 L.",
+        "30 L > 28 L > 26 L : c'est **la bassine de 0,03 m³** qui contient le plus, alors que son nombre est le plus petit."
+      ],
+      "hint": "Convertis les trois volumes en litres avant de les comparer.",
+      "estimated_duration_s": 120,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 4, classe de 5e, Espace et géométrie, Représentation de l'espace : « Connaitre et convertir des unités usuelles (volume et capacité). »"
+    },
+    {
+      "id": "EX-P033-D-01",
+      "skill_id": "P033",
+      "level": "decouverte",
+      "type": "numerique",
+      "statement": "Voici un disque de rayon 4 cm. Son aire se calcule avec la formule π × r².\n\nQuelle est son aire, en cm², arrondie à l'unité ?",
+      "image": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 188 188\" width=\"188\" height=\"188\" font-family=\"system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif\" role=\"img\"><title>Disque de centre O avec un rayon tracé et sa longueur écrite</title><rect width=\"100%\" height=\"100%\" fill=\"#ffffff\"/><circle cx=\"94.0\" cy=\"94.0\" r=\"65.0\" fill=\"#bfdbfe\" stroke=\"#334155\" stroke-width=\"2\"/><line x1=\"94.0\" y1=\"94.0\" x2=\"159.0\" y2=\"94.0\" stroke=\"#334155\" stroke-width=\"2.0\" stroke-linecap=\"round\"/><text x=\"126.5\" y=\"112.0\" font-size=\"13\" text-anchor=\"middle\" fill=\"#334155\">4 cm</text><line x1=\"90.0\" y1=\"90.0\" x2=\"98.0\" y2=\"98.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"90.0\" y1=\"98.0\" x2=\"98.0\" y2=\"90.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><text x=\"94.0\" y=\"85.0\" font-size=\"15\" text-anchor=\"middle\" fill=\"#334155\" font-weight=\"600\">O</text></svg>",
+      "answer": {
+        "value": 50,
+        "unit": "cm²",
+        "tolerance": 0.5,
+        "accepted": [
+          "50 cm²",
+          "50 cm2",
+          "50 centimètres carrés"
+        ]
+      },
+      "solution_steps": [
+        "Le rayon est r = 4 cm, donc r² = 4² = 4 × 4 = 16.",
+        "Aire = π × 16. Avec la touche π : environ 50,27 ; avec 3,14 : 3,14 × 16 = 50,24.",
+        "Dans les deux cas, l'arrondi à l'unité est 50. L'aire du disque est d'environ **50 cm²**.",
+        "À ne pas confondre : 2 × π × 4 ≈ 25,1 cm est le périmètre du disque, une longueur, pas une aire."
+      ],
+      "hint": "Calcule d'abord r², puis multiplie par π.",
+      "estimated_duration_s": 60,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 4, classe de 5e, Espace et géométrie, Représentation de l'espace : « Calculer l'aire du disque, le volume du cylindre de révolution. »"
+    },
+    {
+      "id": "EX-P033-D-02",
+      "skill_id": "P033",
+      "level": "decouverte",
+      "type": "qcm",
+      "statement": "Un disque a un diamètre de 22 cm. Quelle est son aire exacte ?",
+      "image": null,
+      "choices": [
+        {
+          "key": "a",
+          "text": "121π cm²",
+          "misconception": null
+        },
+        {
+          "key": "b",
+          "text": "22π cm²",
+          "misconception": "L'élève calcule π × d, c'est-à-dire le périmètre du disque : une longueur, pas une aire."
+        },
+        {
+          "key": "c",
+          "text": "484π cm²",
+          "misconception": "L'élève élève le diamètre au carré (22² = 484) au lieu du rayon."
+        },
+        {
+          "key": "d",
+          "text": "11π cm²",
+          "misconception": "L'élève multiplie π par le rayon sans l'élever au carré : il oublie le carré de π × r²."
+        }
+      ],
+      "answer": {
+        "value": "a"
+      },
+      "solution_steps": [
+        "La formule de l'aire utilise le rayon : Aire = π × r².",
+        "Le rayon est la moitié du diamètre : r = 22 ÷ 2 = 11 cm.",
+        "r² = 11 × 11 = 121, donc Aire = π × 121 : l'aire exacte est **121π cm²**.",
+        "On garde π dans l'écriture : c'est la valeur exacte. Une valeur avec 3,14 serait approchée."
+      ],
+      "hint": "Commence par trouver le rayon.",
+      "estimated_duration_s": 45,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 4, classe de 5e, Espace et géométrie, Représentation de l'espace : « Calculer l'aire du disque, le volume du cylindre de révolution. »"
+    },
+    {
+      "id": "EX-P033-E-01",
+      "skill_id": "P033",
+      "level": "entrainement",
+      "type": "texte",
+      "statement": "Un disque a un rayon de 13 cm. Donne son aire exacte en cm², écrite avec le symbole π (au clavier, tu peux taper pi).",
+      "image": null,
+      "answer": {
+        "value": "169π",
+        "unit": "cm²",
+        "forme": "expression",
+        "variables": []
+      },
+      "solution_steps": [
+        "Aire d'un disque : π × r², avec r le rayon.",
+        "r² = 13² = 13 × 13 = 169.",
+        "L'aire exacte est π × 169, qu'on écrit **169π cm²**.",
+        "26π serait 2 × π × 13, le périmètre ; 676π viendrait du diamètre 26 élevé au carré."
+      ],
+      "hint": "Calcule le carré du rayon, puis écris-le devant π.",
+      "estimated_duration_s": 60,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 4, classe de 5e, Espace et géométrie, Représentation de l'espace : « Calculer l'aire du disque, le volume du cylindre de révolution. »"
+    },
+    {
+      "id": "EX-P033-E-02",
+      "skill_id": "P033",
+      "level": "entrainement",
+      "type": "numerique",
+      "statement": "Un dessous-de-plat rond a ce diamètre. Quelle est son aire, en cm², arrondie au dixième ?",
+      "image": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 188 188\" width=\"188\" height=\"188\" font-family=\"system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif\" role=\"img\"><title>Disque de centre O avec un diamètre tracé et sa longueur écrite</title><rect width=\"100%\" height=\"100%\" fill=\"#ffffff\"/><circle cx=\"94.0\" cy=\"94.0\" r=\"65.0\" fill=\"#bfdbfe\" stroke=\"#334155\" stroke-width=\"2\"/><line x1=\"29.0\" y1=\"94.0\" x2=\"159.0\" y2=\"94.0\" stroke=\"#334155\" stroke-width=\"2.0\" stroke-linecap=\"round\"/><text x=\"94.0\" y=\"112.0\" font-size=\"13\" text-anchor=\"middle\" fill=\"#334155\">14 cm</text><line x1=\"90.0\" y1=\"90.0\" x2=\"98.0\" y2=\"98.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"90.0\" y1=\"98.0\" x2=\"98.0\" y2=\"90.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><text x=\"94.0\" y=\"85.0\" font-size=\"15\" text-anchor=\"middle\" fill=\"#334155\" font-weight=\"600\">O</text></svg>",
+      "answer": {
+        "value": 153.9,
+        "unit": "cm²",
+        "tolerance": 0.05,
+        "accepted": [
+          "153,9 cm²",
+          "153,9 cm2",
+          "153,9 centimètres carrés"
+        ]
+      },
+      "solution_steps": [
+        "La figure donne le diamètre, 14 cm. Le rayon en est la moitié : r = 14 ÷ 2 = 7 cm.",
+        "r² = 7 × 7 = 49, donc Aire = π × 49.",
+        "Avec la touche π : 153,938… ; avec 3,14 : 3,14 × 49 = 153,86. Arrondi au dixième : 153,9 dans les deux cas.",
+        "L'aire est d'environ **153,9 cm²**. Avec le diamètre, π × 14² donnerait environ 615,8 cm² : quatre fois trop."
+      ],
+      "hint": "Le diamètre n'est pas le rayon.",
+      "estimated_duration_s": 75,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 4, classe de 5e, Espace et géométrie, Représentation de l'espace : « Calculer l'aire du disque, le volume du cylindre de révolution. »"
+    },
+    {
+      "id": "EX-P033-M-01",
+      "skill_id": "P033",
+      "level": "maitrise",
+      "type": "numerique",
+      "statement": "Une fenêtre a la forme d'un rectangle de 9 dm sur 12 dm, surmonté d'un demi-disque. Quelle est son aire, en dm², arrondie au dixième ?",
+      "image": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 292\" width=\"240\" height=\"292\" font-family=\"system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif\" role=\"img\"><title>Fenêtre formée d'un rectangle surmonté d'un demi-disque, deux longueurs écrites</title><rect width=\"100%\" height=\"100%\" fill=\"#ffffff\"/><polygon points=\"61.5,260.4 178.5,260.4 178.5,104.4 178.0,96.8 176.5,89.3 174.1,82.0 170.7,75.2 166.4,68.8 161.4,63.0 155.6,58.0 149.2,53.7 142.4,50.3 135.1,47.9 127.6,46.4 120.0,45.9 112.4,46.4 104.9,47.9 97.6,50.3 90.8,53.7 84.4,58.0 78.6,63.0 73.6,68.8 69.3,75.2 65.9,82.0 63.5,89.3 62.0,96.8 61.5,104.4\" fill=\"#bfdbfe\" fill-opacity=\"0.6\" stroke=\"#334155\" stroke-width=\"2\" stroke-linejoin=\"round\"/><line x1=\"178.5\" y1=\"104.4\" x2=\"61.5\" y2=\"104.4\" stroke=\"#334155\" stroke-width=\"2.0\" stroke-linecap=\"round\" stroke-dasharray=\"5 4\"/><text x=\"120.0\" y=\"278.4\" font-size=\"13\" text-anchor=\"middle\" fill=\"#334155\">9 dm</text><text x=\"53.5\" y=\"187.4\" font-size=\"13\" text-anchor=\"end\" fill=\"#334155\">12 dm</text></svg>",
+      "answer": {
+        "value": 139.8,
+        "unit": "dm²",
+        "tolerance": 0.05,
+        "accepted": [
+          "139,8 dm²",
+          "139,8 dm2",
+          "139,8 décimètres carrés"
+        ]
+      },
+      "solution_steps": [
+        "On découpe la fenêtre en deux parties : un rectangle de 9 dm sur 12 dm, et un demi-disque posé sur le côté de 9 dm.",
+        "Rectangle : 9 × 12 = 108 dm².",
+        "Le demi-disque a pour diamètre 9 dm, donc pour rayon 4,5 dm. Disque entier : π × 4,5² = π × 20,25 ; demi-disque : π × 20,25 ÷ 2, environ 31,81 dm² (31,79 avec 3,14).",
+        "Total : 108 + 31,81 = 139,81. Arrondi au dixième, l'aire est d'environ **139,8 dm²** (avec 3,14 : 139,79, même arrondi).",
+        "Oublier de diviser par 2 donnerait environ 171,6 dm² : on compterait un disque entier. Prendre 9 dm pour rayon donnerait environ 235,2 dm²."
+      ],
+      "hint": "Calcule séparément l'aire du rectangle et celle du demi-disque.",
+      "estimated_duration_s": 150,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 4, classe de 5e, Espace et géométrie, Représentation de l'espace : « Calculer l'aire du disque, le volume du cylindre de révolution. »"
+    },
+    {
+      "id": "EX-P033-M-02",
+      "skill_id": "P033",
+      "level": "maitrise",
+      "type": "qcm",
+      "statement": "Le disque B a un rayon trois fois plus grand que celui du disque A.\n\nCombien de fois l'aire de B est-elle plus grande que celle de A ?",
+      "image": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 344 266\" width=\"344\" height=\"266\" font-family=\"system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif\" role=\"img\"><title>Deux disques A et B, un rayon tracé dans chacun et sa longueur écrite</title><rect width=\"100%\" height=\"100%\" fill=\"#ffffff\"/><circle cx=\"57.6\" cy=\"151.2\" r=\"32.5\" fill=\"#bfdbfe\" stroke=\"#334155\" stroke-width=\"2\"/><circle cx=\"221.4\" cy=\"151.2\" r=\"97.5\" fill=\"#bfdbfe\" stroke=\"#334155\" stroke-width=\"2\"/><line x1=\"57.6\" y1=\"151.2\" x2=\"90.1\" y2=\"151.2\" stroke=\"#334155\" stroke-width=\"2.0\" stroke-linecap=\"round\"/><line x1=\"221.4\" y1=\"151.2\" x2=\"318.9\" y2=\"151.2\" stroke=\"#334155\" stroke-width=\"2.0\" stroke-linecap=\"round\"/><text x=\"57.6\" y=\"208.2\" font-size=\"15\" text-anchor=\"middle\" fill=\"#334155\" font-weight=\"600\">8 cm</text><text x=\"270.2\" y=\"169.2\" font-size=\"13\" text-anchor=\"middle\" fill=\"#334155\">24 cm</text><text x=\"57.6\" y=\"106.8\" font-size=\"15\" text-anchor=\"middle\" fill=\"#334155\" font-weight=\"600\">A</text><text x=\"221.4\" y=\"36.6\" font-size=\"15\" text-anchor=\"middle\" fill=\"#334155\" font-weight=\"600\">B</text></svg>",
+      "choices": [
+        {
+          "key": "a",
+          "text": "3 fois",
+          "misconception": "L'élève pense que l'aire est proportionnelle au rayon, comme le périmètre. Mais l'aire dépend du carré du rayon."
+        },
+        {
+          "key": "b",
+          "text": "9 fois",
+          "misconception": null
+        },
+        {
+          "key": "c",
+          "text": "6 fois",
+          "misconception": "L'élève multiplie le rapport des rayons par 2, comme dans 2 × r : il mélange la formule du périmètre et le carré."
+        },
+        {
+          "key": "d",
+          "text": "27 fois",
+          "misconception": "L'élève multiplie trois fois par 3, comme pour un cube : l'aire ne fait intervenir que le carré du rayon."
+        }
+      ],
+      "answer": {
+        "value": "b"
+      },
+      "solution_steps": [
+        "Aire de A : π × 8² = π × 64 = 64π cm².",
+        "Aire de B : π × 24² = π × 576 = 576π cm².",
+        "576 ÷ 64 = 9 : l'aire de B est **9 fois** plus grande que celle de A.",
+        "Le rayon est multiplié par 3, et le carré du rayon par 3 × 3 = 9. Le périmètre, lui, n'est multiplié que par 3."
+      ],
+      "hint": "Calcule l'aire exacte de chaque disque, en gardant π.",
+      "estimated_duration_s": 120,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 4, classe de 5e, Espace et géométrie, Représentation de l'espace : « Calculer l'aire du disque, le volume du cylindre de révolution. »"
     }
   ]
 }
