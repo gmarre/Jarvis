@@ -107,6 +107,9 @@ const MOINS_VARIANTS = new RegExp(`[${car(0x2212, 0x2013, 0x2014, 0x2010, 0x2011
 const DIVISE = new RegExp(car(0xf7), 'g')
 const EURO = car(0x20ac)
 const PI = car(0x3c0)
+const ENVIRON = car(0x2248)
+/** « n = », « x = », « KN = », « SH ≈ » devant une reponse numerique. */
+const PREFIXE_NOMME = new RegExp(`^\\s*(?:[a-zA-Z]|[A-Z]{2})\\s*[=${ENVIRON}]\\s*`)
 
 /**
  * Signes de multiplication : « 3,2 × 10^4 », « 3,2 x 10^4 », « 3,2*10^4 »,
@@ -791,7 +794,8 @@ function lireSolutions(texte: string): number[] | null {
   texte = texte.replace(/^s=/, '').replace(/^\{(.*)\}$/, '$1')
   const valeurs: number[] = []
   for (let morceau of texte.split(/;|et|ou|,/)) {
-    morceau = morceau.replace(/^[a-z]=/, '')
+    // « x = 3 », et en geometrie « hp = √29 » ou « hp ≈ 5,4 » (etape 8).
+    morceau = morceau.replace(new RegExp(`^[a-z]{1,2}[=${ENVIRON}]`), '')
     if (morceau === '') return null
     let double = false
     if (morceau.startsWith(PLUS_OU_MOINS)) {
@@ -916,8 +920,10 @@ function estJuste(exercise: ExerciceACorriger, raw: string): boolean {
     case 'numerique': {
       // « n = 13 » pour « Que vaut n ? » : l'eleve recopie la lettre de
       // l'enonce (releve en relecture, etape 6). Seule une lettre isolee est
-      // retiree, l'egalite d'un calcul n'est pas lue.
-      const saisie = raw.replace(/^\s*[a-zA-Z]\s*=\s*/, '')
+      // retiree, l'egalite d'un calcul n'est pas lue. En geometrie, le nom d'un
+      // segment (deux majuscules) se recopie aussi, avec = ou ≈ : « KN = 20 »,
+      // « SH ≈ 3,8 m » (releve au lot M5, etape 8).
+      const saisie = raw.replace(PREFIXE_NOMME, '')
       const given = toNumber(saisie) ?? nombreAvecUnite(saisie, exercise.answer.unit)
       const target = toNumber(String(expectedValue))
       if (given === null || target === null) return matchesAccepted(exercise, raw)

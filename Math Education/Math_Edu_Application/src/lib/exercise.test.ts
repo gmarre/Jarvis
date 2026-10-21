@@ -333,6 +333,16 @@ describe('checkAnswer, accents et unites en toutes lettres', () => {
     for (const saisie of ['12 L/min', '12 litres par minute']) expect(checkAnswer(debit, saisie).isCorrect).toBe(true)
   })
 
+  it('retire le nom recopie devant la reponse : lettre ou segment, = ou ≈ (etape 8)', () => {
+    const base = byType('numerique')
+    const environ = String.fromCharCode(0x2248)
+    const longueur: Exercise = { ...base, answer: { value: 3.8, unit: 'm', tolerance: 0.05 } }
+    for (const saisie of ['SH = 3,8 m', `SH ${environ} 3,8 m`, 'x = 3,8', '3,8 m']) {
+      expect(checkAnswer(longueur, saisie).isCorrect).toBe(true)
+    }
+    for (const saisie of ['SH = 4,2 m', 'SHT = 3,8', 'SH + 3,8']) expect(checkAnswer(longueur, saisie).isCorrect).toBe(false)
+  })
+
   it('lit « pi » tape apres un nombre comme le symbole (etape 8)', () => {
     const base = byType('numerique')
     const pi = String.fromCharCode(0x3c0)

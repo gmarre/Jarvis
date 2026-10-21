@@ -151,7 +151,7 @@ describe('liste de solutions', () => {
   it('± et racines : x² = 49 et x² = 5', () => {
     tousJustes(exo('7 ; −7', 'solutions'), ['-7 ; 7', '7 et -7', '±7'])
     tousJustes(exo('√5 ; −√5', 'solutions'), ['±√5', 'racine de 5 ; -racine de 5', 'racine carrée de 5 et -√5'])
-    tousJustes(exo('√29', 'solutions'), ['sqrt(29)', 'sqrt 29', '√29', 'racine de 29'])
+    tousJustes(exo('√29', 'solutions'), ['sqrt(29)', 'sqrt 29', '√29', 'racine de 29', 'HP = √29', 'hp = sqrt(29)'])
     tousFaux(exo('√5 ; −√5', 'solutions'), ['√5', '±5', '2,24 ; -2,24'])
   })
   it('valeurs approchees avec tolerance', () => {
