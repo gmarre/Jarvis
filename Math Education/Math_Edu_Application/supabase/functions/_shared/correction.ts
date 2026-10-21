@@ -372,6 +372,8 @@ function texteAlgebrique(raw: string): string {
     .replace(new RegExp(FOIS, 'g'), '*')
     .replace(DIVISE, '/')
     .replace(/racine\s*(carree\s*)?(de\s*)?/g, RACINE)
+    // « sqrt(29) », ecrit comme sur une calculatrice (releve au lot M5, etape 8).
+    .replace(/sqrt\s*/g, RACINE)
     // « 36pi » : π tape en lettres (etape 8), jamais au milieu d'un mot.
     .replace(/(?<![a-z])pi(?![a-z])/g, PI)
     // Crochets ecrits comme au college : « (x − 2)[3x + 4] » (releve en
