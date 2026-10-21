@@ -1,0 +1,173 @@
+[
+  {
+    "id": "EX-P037-D-01",
+    "skill_id": "P037",
+    "level": "decouverte",
+    "type": "numerique",
+    "statement": "Une voiture roule à 108 km/h sur une voie rapide. Quelle est sa vitesse, en m/s ?",
+    "image": null,
+    "answer": {
+      "value": 30,
+      "unit": "m/s"
+    },
+    "solution_steps": [
+      "108 km/h, c'est 108 km parcourus en 1 h.",
+      "On convertit séparément : 108 km = 108 000 m et 1 h = 3 600 s.",
+      "108 000 ÷ 3 600 = 30 : la voiture parcourt 30 m chaque seconde.",
+      "Vitesse : **30 m/s**. Diviser 108 par 60 ne convertirait que les heures en minutes, en gardant les kilomètres."
+    ],
+    "hint": "Convertis les kilomètres en mètres et l'heure en secondes, puis divise.",
+    "estimated_duration_s": 75,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, classe de 4e, Proportionnalité, fonctions, Proportionnalité, Objectifs d'apprentissage : « Utiliser des grandeurs quotients, avec ou sans unités. »"
+  },
+  {
+    "id": "EX-P037-D-02",
+    "skill_id": "P037",
+    "level": "decouverte",
+    "type": "qcm",
+    "statement": "Un train roule à 120 km/h pendant 1 h 45 min. Quelle distance parcourt-il ?",
+    "image": null,
+    "choices": [
+      {
+        "key": "a",
+        "text": "174 km",
+        "misconception": "L'élève lit 1 h 45 min comme 1,45 h : 120 × 1,45 = 174. Or 45 min ne font pas 0,45 h."
+      },
+      {
+        "key": "b",
+        "text": "12 600 km",
+        "misconception": "L'élève convertit la durée en minutes (105 min) mais garde la vitesse en km par heure : 120 × 105."
+      },
+      {
+        "key": "c",
+        "text": "210 km",
+        "misconception": null
+      },
+      {
+        "key": "d",
+        "text": "165 km",
+        "misconception": "L'élève compte 120 km pour 1 h et 45 km pour 45 min, comme si le train faisait 1 km par minute."
+      }
+    ],
+    "answer": {
+      "value": "c"
+    },
+    "solution_steps": [
+      "45 min = 45 ÷ 60 h = 0,75 h, donc 1 h 45 min = 1,75 h.",
+      "Distance = vitesse × durée = 120 × 1,75 = 210.",
+      "Le train parcourt 210 km. Bonne réponse : c."
+    ],
+    "hint": "Écris d'abord 1 h 45 min en heures. Combien d'heures font 45 minutes ?",
+    "estimated_duration_s": 75,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, classe de 4e, Proportionnalité, fonctions, Proportionnalité, Objectifs d'apprentissage : « Utiliser des grandeurs quotients, avec ou sans unités. »"
+  },
+  {
+    "id": "EX-P037-E-01",
+    "skill_id": "P037",
+    "level": "entrainement",
+    "type": "numerique",
+    "statement": "Un faucon pèlerin pique à 35 m/s. Quelle est sa vitesse, en km/h ?",
+    "image": null,
+    "answer": {
+      "value": 126,
+      "unit": "km/h"
+    },
+    "solution_steps": [
+      "35 m/s : le faucon parcourt 35 m en 1 s.",
+      "En 1 h = 3 600 s, il parcourt 35 × 3 600 = 126 000 m.",
+      "126 000 m = 126 km : la vitesse est de **126 km/h**.",
+      "Contrôle : la même vitesse s'écrit avec un nombre 3,6 fois plus grand en km/h qu'en m/s, et 35 × 3,6 = 126. Diviser par 3,6 donnerait un nombre plus petit, faux."
+    ],
+    "hint": "Combien de mètres parcourt-il en une heure, c'est-à-dire en 3 600 s ?",
+    "estimated_duration_s": 90,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, classe de 4e, Proportionnalité, fonctions, Proportionnalité, Objectifs d'apprentissage : « Utiliser des grandeurs quotients, avec ou sans unités. »"
+  },
+  {
+    "id": "EX-P037-E-02",
+    "skill_id": "P037",
+    "level": "entrainement",
+    "type": "qcm",
+    "statement": "Une pompe débite 45 L/min. Quel est son débit en m³/h ?",
+    "image": null,
+    "choices": [
+      {
+        "key": "a",
+        "text": "2,7 m³/h",
+        "misconception": null
+      },
+      {
+        "key": "b",
+        "text": "2 700 m³/h",
+        "misconception": "L'élève passe des minutes aux heures (45 × 60) mais oublie de convertir les litres en m³."
+      },
+      {
+        "key": "c",
+        "text": "0,75 m³/h",
+        "misconception": "L'élève divise par 60 au lieu de multiplier (45 ÷ 60 = 0,75) et oublie de convertir les litres en m³."
+      },
+      {
+        "key": "d",
+        "text": "0,045 m³/h",
+        "misconception": "L'élève convertit les litres en m³ mais garde le volume d'une seule minute."
+      }
+    ],
+    "answer": {
+      "value": "a"
+    },
+    "solution_steps": [
+      "En 1 h = 60 min, la pompe débite 45 × 60 = 2 700 L.",
+      "1 m³ = 1 000 L, donc 2 700 L = 2 700 ÷ 1 000 = 2,7 m³.",
+      "Le débit est 2,7 m³/h. Bonne réponse : a."
+    ],
+    "hint": "Convertis séparément : les litres en m³, et la minute en heure.",
+    "estimated_duration_s": 90,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, classe de 4e, Proportionnalité, fonctions, Proportionnalité, Objectifs d'apprentissage : « Utiliser des grandeurs quotients, avec ou sans unités. »"
+  },
+  {
+    "id": "EX-P037-M-01",
+    "skill_id": "P037",
+    "level": "maitrise",
+    "type": "vrai_faux",
+    "statement": "Lou court 400 m en 1 min 20 s. Elle affirme : « Je cours moins vite qu'un cycliste qui roule à 19 km/h. » A-t-elle raison ?",
+    "image": null,
+    "answer": {
+      "value": true
+    },
+    "solution_steps": [
+      "1 min 20 s = 60 s + 20 s = 80 s. Vitesse de Lou : 400 ÷ 80 = 5 m/s.",
+      "En 1 h = 3 600 s, elle parcourrait 5 × 3 600 = 18 000 m = 18 km : Lou court à 18 km/h.",
+      "18 km/h est moins que 19 km/h : Lou est moins rapide que le cycliste. Elle a **raison**.",
+      "Lire 1 min 20 s comme 1,2 min, soit 72 s, donnerait 400 ÷ 72 × 3,6 = 20 km/h, plus que 19 km/h : c'est l'erreur à éviter."
+    ],
+    "hint": "Écris les deux vitesses dans la même unité avant de les comparer.",
+    "estimated_duration_s": 120,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, classe de 4e, Proportionnalité, fonctions, Proportionnalité, Objectifs d'apprentissage : « Utiliser des grandeurs quotients, avec ou sans unités. »"
+  },
+  {
+    "id": "EX-P037-M-02",
+    "skill_id": "P037",
+    "level": "maitrise",
+    "type": "numerique",
+    "statement": "Un bus roule à la vitesse moyenne de 84 km/h. Combien de minutes dure un trajet de 63 km ?",
+    "image": null,
+    "answer": {
+      "value": 45,
+      "unit": "min"
+    },
+    "solution_steps": [
+      "84 km/h, c'est 84 km en 60 min : en 1 min, le bus parcourt 84 ÷ 60 = 1,4 km.",
+      "Durée : 63 ÷ 1,4 = 45.",
+      "Autre chemin : 63 ÷ 84 = 0,75 h, et 0,75 h = 0,75 × 60 min = 45 min.",
+      "Le trajet dure **45 min**. Lire 0,75 h comme 75 min est l'erreur à éviter."
+    ],
+    "hint": "Quelle distance le bus parcourt-il en une minute ?",
+    "estimated_duration_s": 120,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, classe de 4e, Proportionnalité, fonctions, Proportionnalité, Objectifs d'apprentissage : « Utiliser des grandeurs quotients, avec ou sans unités. »"
+  }
+]

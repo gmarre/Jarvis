@@ -1,0 +1,71 @@
+{
+  "type": "geometrie",
+  "params": {
+    "colonnes": 12,
+    "lignes": 10,
+    "points": {
+      "K": [
+        6,
+        1
+      ],
+      "P": [
+        1,
+        9
+      ],
+      "Q": [
+        11,
+        9
+      ],
+      "E": [
+        "3.5",
+        5
+      ],
+      "F": [
+        "8.5",
+        5
+      ]
+    },
+    "elements": [
+      {
+        "segment": [
+          "K",
+          "P"
+        ]
+      },
+      {
+        "segment": [
+          "K",
+          "Q"
+        ]
+      },
+      {
+        "segment": [
+          "P",
+          "Q"
+        ]
+      },
+      {
+        "segment": [
+          "E",
+          "F"
+        ],
+        "couleur": "accent"
+      },
+      {
+        "longueur": [
+          "K",
+          "E"
+        ],
+        "texte": "2,1 cm"
+      },
+      {
+        "longueur": [
+          "K",
+          "F"
+        ],
+        "texte": "2,8 cm"
+      }
+    ]
+  },
+  "alt": "Triangle KPQ avec un point E sur [KP], un point F sur [KQ], le segment [EF] et des longueurs écrites"
+}

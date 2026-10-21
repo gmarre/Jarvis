@@ -3,7 +3,7 @@
     "version": "1.0",
     "scope": "Tranche pilote CP a 4e : 69 exercices, 3 par competence (1 decouverte, 1 entrainement, 1 maitrise) sur les 23 competences des domaines A et C. La cible finale de la roadmap est de 5 exercices par niveau, soit 15 par competence.",
     "updated_at": "2026-07-28",
-    "total_exercises": 1540,
+    "total_exercises": 1570,
     "review_status": "relu_agent"
   },
   "exercises": [
@@ -35329,6 +35329,370 @@
       "programme_ref": "Cycle 4, classe de 4e, Espace et géométrie, Triangles, Objectifs d'apprentissage : « Connaitre le théorème de Pythagore, sa réciproque, sa contraposée. »"
     },
     {
+      "id": "EX-G042-D-01",
+      "skill_id": "G042",
+      "level": "decouverte",
+      "type": "qcm",
+      "statement": "M est sur [AB], N sur [AC], et (MN) est parallèle à (BC). Quelle égalité donne le théorème de Thalès ?",
+      "image": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 344 292\" width=\"344\" height=\"292\" font-family=\"system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif\" role=\"img\"><title>Triangle ABC avec un point M sur [AB], un point N sur [AC] et le segment [MN]</title><rect width=\"100%\" height=\"100%\" fill=\"#ffffff\"/><line x1=\"120.0\" y1=\"42.0\" x2=\"42.0\" y2=\"250.0\" stroke=\"#334155\" stroke-width=\"2.0\" stroke-linecap=\"round\"/><line x1=\"120.0\" y1=\"42.0\" x2=\"302.0\" y2=\"250.0\" stroke=\"#334155\" stroke-width=\"2.0\" stroke-linecap=\"round\"/><line x1=\"42.0\" y1=\"250.0\" x2=\"302.0\" y2=\"250.0\" stroke=\"#334155\" stroke-width=\"2.0\" stroke-linecap=\"round\"/><line x1=\"88.8\" y1=\"125.2\" x2=\"192.8\" y2=\"125.2\" stroke=\"#2563eb\" stroke-width=\"2.0\" stroke-linecap=\"round\"/><line x1=\"116.0\" y1=\"38.0\" x2=\"124.0\" y2=\"46.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"116.0\" y1=\"46.0\" x2=\"124.0\" y2=\"38.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><text x=\"116.6\" y=\"33.4\" font-size=\"15\" text-anchor=\"middle\" fill=\"#334155\" font-weight=\"600\">A</text><line x1=\"38.0\" y1=\"246.0\" x2=\"46.0\" y2=\"254.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"38.0\" y1=\"254.0\" x2=\"46.0\" y2=\"246.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><text x=\"31.4\" y=\"264.1\" font-size=\"15\" text-anchor=\"middle\" fill=\"#334155\" font-weight=\"600\">B</text><line x1=\"298.0\" y1=\"246.0\" x2=\"306.0\" y2=\"254.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"298.0\" y1=\"254.0\" x2=\"306.0\" y2=\"246.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><text x=\"314.0\" y=\"262.2\" font-size=\"15\" text-anchor=\"middle\" fill=\"#334155\" font-weight=\"600\">C</text><line x1=\"84.8\" y1=\"121.2\" x2=\"92.8\" y2=\"129.2\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"84.8\" y1=\"129.2\" x2=\"92.8\" y2=\"121.2\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><text x=\"76.5\" y=\"123.4\" font-size=\"15\" text-anchor=\"middle\" fill=\"#334155\" font-weight=\"600\">M</text><line x1=\"188.8\" y1=\"121.2\" x2=\"196.8\" y2=\"129.2\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"188.8\" y1=\"129.2\" x2=\"196.8\" y2=\"121.2\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><text x=\"203.9\" y=\"121.7\" font-size=\"15\" text-anchor=\"middle\" fill=\"#334155\" font-weight=\"600\">N</text></svg>",
+      "choices": [
+        {
+          "key": "a",
+          "text": "$\\frac{AM}{MB} = \\frac{AN}{NC} = \\frac{MN}{BC}$",
+          "misconception": "L'élève prend [MB] et [NC], qui ne sont pas des côtés du grand triangle : MN/BC n'est pas égal à AM/MB."
+        },
+        {
+          "key": "b",
+          "text": "$\\frac{AM}{AB} = \\frac{AC}{AN} = \\frac{MN}{BC}$",
+          "misconception": "L'élève renverse le deuxième quotient : le grand côté passe au numérateur."
+        },
+        {
+          "key": "c",
+          "text": "$\\frac{AM}{AB} = \\frac{AN}{AC} = \\frac{MN}{BC}$",
+          "misconception": null
+        },
+        {
+          "key": "d",
+          "text": "$\\frac{AM}{AC} = \\frac{AN}{AB} = \\frac{MN}{BC}$",
+          "misconception": "L'élève associe des côtés qui ne sont pas sur la même droite : [AM] avec [AC], [AN] avec [AB]."
+        }
+      ],
+      "answer": {
+        "value": "c"
+      },
+      "solution_steps": [
+        "Les points A, M, B sont alignés, ainsi que A, N, C, et (MN) est parallèle à (BC) : le petit triangle AMN et le grand triangle ABC ont leurs longueurs proportionnelles.",
+        "On associe les côtés homologues : [AM] et [AB] sur la même droite, [AN] et [AC] sur l'autre, [MN] et [BC] parallèles.",
+        "Chaque quotient a au numérateur un côté du petit triangle et au dénominateur le côté homologue du grand : $\\frac{AM}{AB} = \\frac{AN}{AC} = \\frac{MN}{BC}$. Bonne réponse : c."
+      ],
+      "hint": "Mets les côtés du petit triangle AMN en haut, et les côtés homologues du grand triangle ABC en bas.",
+      "estimated_duration_s": 60,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 4, classe de 3e, Espace et géométrie, Triangles, Objectifs d'apprentissage : « Connaitre et appliquer le théorème de Thalès, sa réciproque, sa contraposée (configurations des triangles emboités et configuration dite du papillon). »"
+    },
+    {
+      "id": "EX-G042-D-02",
+      "skill_id": "G042",
+      "level": "decouverte",
+      "type": "numerique",
+      "statement": "Figure pas en vraie grandeur. K est sur [EF], L sur [EG], (KL) est parallèle à (FG), EF = 4 cm et EG = 5,2 cm. Calcule EL, en cm.",
+      "image": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 344 292\" width=\"344\" height=\"292\" font-family=\"system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif\" role=\"img\"><title>Triangle EFG avec un point K sur [EF], un point L sur [EG], le segment [KL] et des longueurs écrites</title><rect width=\"100%\" height=\"100%\" fill=\"#ffffff\"/><line x1=\"172.0\" y1=\"42.0\" x2=\"42.0\" y2=\"250.0\" stroke=\"#334155\" stroke-width=\"2.0\" stroke-linecap=\"round\"/><line x1=\"172.0\" y1=\"42.0\" x2=\"302.0\" y2=\"224.0\" stroke=\"#334155\" stroke-width=\"2.0\" stroke-linecap=\"round\"/><line x1=\"42.0\" y1=\"250.0\" x2=\"302.0\" y2=\"224.0\" stroke=\"#334155\" stroke-width=\"2.0\" stroke-linecap=\"round\"/><line x1=\"94.0\" y1=\"166.8\" x2=\"250.0\" y2=\"151.2\" stroke=\"#2563eb\" stroke-width=\"2.0\" stroke-linecap=\"round\"/><text x=\"126.2\" y=\"105.2\" font-size=\"13\" text-anchor=\"end\" fill=\"#334155\">3 cm</text><text x=\"217.5\" y=\"97.0\" font-size=\"13\" text-anchor=\"start\" fill=\"#334155\">?</text><line x1=\"168.0\" y1=\"38.0\" x2=\"176.0\" y2=\"46.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"168.0\" y1=\"46.0\" x2=\"176.0\" y2=\"38.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><text x=\"172.0\" y=\"33.0\" font-size=\"15\" text-anchor=\"middle\" fill=\"#334155\" font-weight=\"600\">E</text><line x1=\"38.0\" y1=\"246.0\" x2=\"46.0\" y2=\"254.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"38.0\" y1=\"254.0\" x2=\"46.0\" y2=\"246.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><text x=\"30.2\" y=\"262.5\" font-size=\"15\" text-anchor=\"middle\" fill=\"#334155\" font-weight=\"600\">F</text><line x1=\"298.0\" y1=\"220.0\" x2=\"306.0\" y2=\"228.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"298.0\" y1=\"228.0\" x2=\"306.0\" y2=\"220.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><text x=\"314.8\" y=\"234.6\" font-size=\"15\" text-anchor=\"middle\" fill=\"#334155\" font-weight=\"600\">G</text><line x1=\"90.0\" y1=\"162.8\" x2=\"98.0\" y2=\"170.8\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"90.0\" y1=\"170.8\" x2=\"98.0\" y2=\"162.8\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><text x=\"80.0\" y=\"171.8\" font-size=\"15\" text-anchor=\"middle\" fill=\"#334155\" font-weight=\"600\">K</text><line x1=\"246.0\" y1=\"147.2\" x2=\"254.0\" y2=\"155.2\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"246.0\" y1=\"155.2\" x2=\"254.0\" y2=\"147.2\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><text x=\"263.7\" y=\"153.5\" font-size=\"15\" text-anchor=\"middle\" fill=\"#334155\" font-weight=\"600\">L</text></svg>",
+      "answer": {
+        "value": 3.9,
+        "unit": "cm"
+      },
+      "solution_steps": [
+        "E, K, F sont alignés, ainsi que E, L, G, et (KL) est parallèle à (FG) : le théorème de Thalès s'applique aux triangles EKL et EFG.",
+        "$\\frac{EK}{EF} = \\frac{EL}{EG} = \\frac{KL}{FG}$, donc $\\frac{3}{4} = \\frac{EL}{5{,}2}$.",
+        "3 ÷ 4 = 0,75, donc EL = 0,75 × 5,2 = 3,9.",
+        "EL = **3,9 cm**. Contrôle : EL est plus petit que EG, comme EK est plus petit que EF."
+      ],
+      "hint": "Écris l'égalité des quotients, puis garde les deux qui contiennent EK et EL.",
+      "estimated_duration_s": 75,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 4, classe de 3e, Espace et géométrie, Triangles, Objectifs d'apprentissage : « Connaitre et appliquer le théorème de Thalès, sa réciproque, sa contraposée (configurations des triangles emboités et configuration dite du papillon). »"
+    },
+    {
+      "id": "EX-G042-E-01",
+      "skill_id": "G042",
+      "level": "entrainement",
+      "type": "numerique",
+      "statement": "Figure pas en vraie grandeur. X est sur [TU], Y sur [TV], et (XY) est parallèle à (UV). Calcule UV, en cm.",
+      "image": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 344 292\" width=\"344\" height=\"292\" font-family=\"system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif\" role=\"img\"><title>Triangle TUV avec un point X sur [TU], un point Y sur [TV], le segment [XY] et des longueurs écrites</title><rect width=\"100%\" height=\"100%\" fill=\"#ffffff\"/><line x1=\"172.0\" y1=\"42.0\" x2=\"42.0\" y2=\"250.0\" stroke=\"#334155\" stroke-width=\"2.0\" stroke-linecap=\"round\"/><line x1=\"172.0\" y1=\"42.0\" x2=\"185.0\" y2=\"250.0\" stroke=\"#334155\" stroke-width=\"2.0\" stroke-linecap=\"round\"/><line x1=\"42.0\" y1=\"250.0\" x2=\"185.0\" y2=\"250.0\" stroke=\"#334155\" stroke-width=\"2.0\" stroke-linecap=\"round\"/><line x1=\"107.0\" y1=\"146.0\" x2=\"178.5\" y2=\"146.0\" stroke=\"#2563eb\" stroke-width=\"2.0\" stroke-linecap=\"round\"/><text x=\"132.7\" y=\"94.8\" font-size=\"13\" text-anchor=\"end\" fill=\"#334155\">3 cm</text><text x=\"67.7\" y=\"198.8\" font-size=\"13\" text-anchor=\"end\" fill=\"#334155\">4,5 cm</text><text x=\"142.8\" y=\"138.0\" font-size=\"13\" text-anchor=\"middle\" fill=\"#334155\">2,6 cm</text><text x=\"113.5\" y=\"268.0\" font-size=\"13\" text-anchor=\"middle\" fill=\"#334155\">?</text><line x1=\"168.0\" y1=\"38.0\" x2=\"176.0\" y2=\"46.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"168.0\" y1=\"46.0\" x2=\"176.0\" y2=\"38.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><text x=\"175.8\" y=\"33.5\" font-size=\"15\" text-anchor=\"middle\" fill=\"#334155\" font-weight=\"600\">T</text><line x1=\"38.0\" y1=\"246.0\" x2=\"46.0\" y2=\"254.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"38.0\" y1=\"254.0\" x2=\"46.0\" y2=\"246.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><text x=\"31.5\" y=\"264.2\" font-size=\"15\" text-anchor=\"middle\" fill=\"#334155\" font-weight=\"600\">U</text><line x1=\"181.0\" y1=\"246.0\" x2=\"189.0\" y2=\"254.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"181.0\" y1=\"254.0\" x2=\"189.0\" y2=\"246.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><text x=\"192.0\" y=\"267.1\" font-size=\"15\" text-anchor=\"middle\" fill=\"#334155\" font-weight=\"600\">V</text><line x1=\"103.0\" y1=\"142.0\" x2=\"111.0\" y2=\"150.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"103.0\" y1=\"150.0\" x2=\"111.0\" y2=\"142.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><text x=\"95.5\" y=\"143.0\" font-size=\"15\" text-anchor=\"middle\" fill=\"#334155\" font-weight=\"600\">X</text><line x1=\"174.5\" y1=\"142.0\" x2=\"182.5\" y2=\"150.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"174.5\" y1=\"150.0\" x2=\"182.5\" y2=\"142.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><text x=\"191.0\" y=\"144.7\" font-size=\"15\" text-anchor=\"middle\" fill=\"#334155\" font-weight=\"600\">Y</text></svg>",
+      "answer": {
+        "value": 6.5,
+        "unit": "cm"
+      },
+      "solution_steps": [
+        "T, X, U sont alignés, ainsi que T, Y, V, et (XY) est parallèle à (UV) : le théorème de Thalès s'applique aux triangles TXY et TUV.",
+        "Le côté du grand triangle est [TU] : TU = TX + XU = 3 + 4,5 = 7,5.",
+        "$\\frac{TX}{TU} = \\frac{TY}{TV} = \\frac{XY}{UV}$, donc $\\frac{3}{7{,}5} = \\frac{2{,}6}{UV}$.",
+        "3 ÷ 7,5 = 0,4, donc 0,4 × UV = 2,6 et UV = 2,6 ÷ 0,4 = 6,5.",
+        "UV = **6,5 cm**. Avec XU au lieu de TU, on trouverait 3,9 cm : [XU] n'est pas un côté du grand triangle."
+      ],
+      "hint": "Quelle est la longueur du côté [TU] du grand triangle ?",
+      "estimated_duration_s": 120,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 4, classe de 3e, Espace et géométrie, Triangles, Objectifs d'apprentissage : « Connaitre et appliquer le théorème de Thalès, sa réciproque, sa contraposée (configurations des triangles emboités et configuration dite du papillon). »"
+    },
+    {
+      "id": "EX-G042-E-02",
+      "skill_id": "G042",
+      "level": "entrainement",
+      "type": "vrai_faux",
+      "statement": "Sur la figure, S est sur [HJ] et W sur [HK]. Hugo calcule HW à partir de HS, HJ et HK, avec le théorème de Thalès. A-t-il raison ?",
+      "image": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 344 292\" width=\"344\" height=\"292\" font-family=\"system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif\" role=\"img\"><title>Triangle HJK avec un point S sur [HJ], un point W sur [HK] et le segment [SW]</title><rect width=\"100%\" height=\"100%\" fill=\"#ffffff\"/><line x1=\"146.0\" y1=\"42.0\" x2=\"42.0\" y2=\"250.0\" stroke=\"#334155\" stroke-width=\"2.0\" stroke-linecap=\"round\"/><line x1=\"146.0\" y1=\"42.0\" x2=\"302.0\" y2=\"250.0\" stroke=\"#334155\" stroke-width=\"2.0\" stroke-linecap=\"round\"/><line x1=\"42.0\" y1=\"250.0\" x2=\"302.0\" y2=\"250.0\" stroke=\"#334155\" stroke-width=\"2.0\" stroke-linecap=\"round\"/><line x1=\"104.4\" y1=\"125.2\" x2=\"210.0\" y2=\"127.3\" stroke=\"#2563eb\" stroke-width=\"2.0\" stroke-linecap=\"round\"/><line x1=\"142.0\" y1=\"38.0\" x2=\"150.0\" y2=\"46.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"142.0\" y1=\"46.0\" x2=\"150.0\" y2=\"38.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><text x=\"144.2\" y=\"33.1\" font-size=\"15\" text-anchor=\"middle\" fill=\"#334155\" font-weight=\"600\">H</text><line x1=\"38.0\" y1=\"246.0\" x2=\"46.0\" y2=\"254.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"38.0\" y1=\"254.0\" x2=\"46.0\" y2=\"246.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><text x=\"30.9\" y=\"263.5\" font-size=\"15\" text-anchor=\"middle\" fill=\"#334155\" font-weight=\"600\">J</text><line x1=\"298.0\" y1=\"246.0\" x2=\"306.0\" y2=\"254.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"298.0\" y1=\"254.0\" x2=\"306.0\" y2=\"246.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><text x=\"313.8\" y=\"262.6\" font-size=\"15\" text-anchor=\"middle\" fill=\"#334155\" font-weight=\"600\">K</text><line x1=\"100.4\" y1=\"121.2\" x2=\"108.4\" y2=\"129.2\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"100.4\" y1=\"129.2\" x2=\"108.4\" y2=\"121.2\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><text x=\"92.4\" y=\"123.0\" font-size=\"15\" text-anchor=\"middle\" fill=\"#334155\" font-weight=\"600\">S</text><line x1=\"206.0\" y1=\"123.3\" x2=\"214.0\" y2=\"131.3\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"206.0\" y1=\"131.3\" x2=\"214.0\" y2=\"123.3\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><text x=\"221.7\" y=\"124.7\" font-size=\"15\" text-anchor=\"middle\" fill=\"#334155\" font-weight=\"600\">W</text></svg>",
+      "answer": {
+        "value": false
+      },
+      "solution_steps": [
+        "Le théorème de Thalès demande deux droites parallèles : ici, il faudrait que (SW) soit parallèle à (JK).",
+        "Ni l'énoncé ni la figure ne le disent. Même si les droites semblent parallèles, la mesure n'est pas une preuve.",
+        "Le théorème ne s'applique pas : le calcul de Hugo n'est pas justifié. Hugo a **tort**."
+      ],
+      "hint": "Quelles sont les hypothèses du théorème de Thalès ? Sont-elles toutes données ?",
+      "estimated_duration_s": 60,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 4, classe de 3e, Espace et géométrie, Triangles, Objectifs d'apprentissage : « Connaitre et appliquer le théorème de Thalès, sa réciproque, sa contraposée (configurations des triangles emboités et configuration dite du papillon). »"
+    },
+    {
+      "id": "EX-G042-M-01",
+      "skill_id": "G042",
+      "level": "maitrise",
+      "type": "numerique",
+      "statement": "Un bâton [MN] de 1,2 m et un arbre [BC] sont verticaux, sur un sol horizontal ; A, N, C sont alignés (figure pas en vraie grandeur). Quelle est la hauteur BC, en m ?",
+      "image": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 344 292\" width=\"344\" height=\"292\" font-family=\"system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif\" role=\"img\"><title>Schéma d'un bâton [MN] et d'un arbre [BC] posés sur le sol, d'un rayon de soleil [AC] et de longueurs écrites</title><rect width=\"100%\" height=\"100%\" fill=\"#ffffff\"/><line x1=\"42.0\" y1=\"250.0\" x2=\"302.0\" y2=\"250.0\" stroke=\"#334155\" stroke-width=\"2.0\" stroke-linecap=\"round\"/><line x1=\"42.0\" y1=\"250.0\" x2=\"302.0\" y2=\"120.0\" stroke=\"#334155\" stroke-width=\"2.0\" stroke-linecap=\"round\" stroke-dasharray=\"5 4\"/><line x1=\"302.0\" y1=\"250.0\" x2=\"302.0\" y2=\"120.0\" stroke=\"#334155\" stroke-width=\"2.0\" stroke-linecap=\"round\"/><line x1=\"120.0\" y1=\"250.0\" x2=\"120.0\" y2=\"211.0\" stroke=\"#2563eb\" stroke-width=\"2.0\" stroke-linecap=\"round\"/><path d=\"M109.0,250.0 L109.0,239.0 L120.0,239.0\" fill=\"none\" stroke=\"#334155\" stroke-width=\"1.6\"/><path d=\"M291.0,250.0 L291.0,239.0 L302.0,239.0\" fill=\"none\" stroke=\"#334155\" stroke-width=\"1.6\"/><text x=\"81.0\" y=\"268.0\" font-size=\"13\" text-anchor=\"middle\" fill=\"#334155\">1,6 m</text><text x=\"211.0\" y=\"268.0\" font-size=\"13\" text-anchor=\"middle\" fill=\"#334155\">8,4 m</text><text x=\"310.0\" y=\"190.0\" font-size=\"13\" text-anchor=\"start\" fill=\"#334155\">?</text><line x1=\"38.0\" y1=\"246.0\" x2=\"46.0\" y2=\"254.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"38.0\" y1=\"254.0\" x2=\"46.0\" y2=\"246.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><text x=\"28.4\" y=\"258.4\" font-size=\"15\" text-anchor=\"middle\" fill=\"#334155\" font-weight=\"600\">A</text><line x1=\"298.0\" y1=\"246.0\" x2=\"306.0\" y2=\"254.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"298.0\" y1=\"254.0\" x2=\"306.0\" y2=\"246.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><text x=\"315.5\" y=\"258.7\" font-size=\"15\" text-anchor=\"middle\" fill=\"#334155\" font-weight=\"600\">B</text><line x1=\"298.0\" y1=\"116.0\" x2=\"306.0\" y2=\"124.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"298.0\" y1=\"124.0\" x2=\"306.0\" y2=\"116.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><text x=\"313.1\" y=\"116.5\" font-size=\"15\" text-anchor=\"middle\" fill=\"#334155\" font-weight=\"600\">C</text><line x1=\"116.0\" y1=\"246.0\" x2=\"124.0\" y2=\"254.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"116.0\" y1=\"254.0\" x2=\"124.0\" y2=\"246.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><text x=\"120.0\" y=\"269.0\" font-size=\"15\" text-anchor=\"middle\" fill=\"#334155\" font-weight=\"600\">M</text><line x1=\"116.0\" y1=\"207.0\" x2=\"124.0\" y2=\"215.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"116.0\" y1=\"215.0\" x2=\"124.0\" y2=\"207.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><text x=\"120.0\" y=\"202.0\" font-size=\"15\" text-anchor=\"middle\" fill=\"#334155\" font-weight=\"600\">N</text></svg>",
+      "answer": {
+        "value": 7.5,
+        "unit": "m"
+      },
+      "solution_steps": [
+        "Le bâton et l'arbre sont perpendiculaires au sol. Deux droites perpendiculaires à une même droite sont parallèles : (MN) est parallèle à (BC).",
+        "A, M, B sont alignés (le sol), ainsi que A, N, C : le théorème de Thalès s'applique aux triangles AMN et ABC.",
+        "AB = AM + MB = 1,6 + 8,4 = 10.",
+        "$\\frac{AM}{AB} = \\frac{MN}{BC}$, donc $\\frac{1{,}6}{10} = \\frac{1{,}2}{BC}$ : 0,16 × BC = 1,2 et BC = 1,2 ÷ 0,16 = 7,5.",
+        "L'arbre mesure **7,5 m**. Avec MB à la place de AB, on trouverait 6,3 m."
+      ],
+      "hint": "Pourquoi (MN) est-elle parallèle à (BC) ? Puis cherche la longueur AB.",
+      "estimated_duration_s": 150,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 4, classe de 3e, Espace et géométrie, Triangles, Objectifs d'apprentissage : « Connaitre et appliquer le théorème de Thalès, sa réciproque, sa contraposée (configurations des triangles emboités et configuration dite du papillon). »"
+    },
+    {
+      "id": "EX-G042-M-02",
+      "skill_id": "G042",
+      "level": "maitrise",
+      "type": "qcm",
+      "statement": "Figure pas en vraie grandeur. E est sur [PQ], F sur [PR], (EF) est parallèle à (QR), PQ = 9 cm, PR = 12,5 cm et PF = 7,5 cm. Combien mesure EQ ?",
+      "image": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 344 292\" width=\"344\" height=\"292\" font-family=\"system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif\" role=\"img\"><title>Triangle PQR avec un point E sur [PQ], un point F sur [PR] et le segment [EF]</title><rect width=\"100%\" height=\"100%\" fill=\"#ffffff\"/><line x1=\"172.0\" y1=\"42.0\" x2=\"42.0\" y2=\"250.0\" stroke=\"#334155\" stroke-width=\"2.0\" stroke-linecap=\"round\"/><line x1=\"172.0\" y1=\"42.0\" x2=\"302.0\" y2=\"224.0\" stroke=\"#334155\" stroke-width=\"2.0\" stroke-linecap=\"round\"/><line x1=\"42.0\" y1=\"250.0\" x2=\"302.0\" y2=\"224.0\" stroke=\"#334155\" stroke-width=\"2.0\" stroke-linecap=\"round\"/><line x1=\"113.5\" y1=\"135.6\" x2=\"230.5\" y2=\"123.9\" stroke=\"#2563eb\" stroke-width=\"2.0\" stroke-linecap=\"round\"/><text x=\"71.0\" y=\"193.6\" font-size=\"13\" text-anchor=\"end\" fill=\"#334155\">?</text><line x1=\"168.0\" y1=\"38.0\" x2=\"176.0\" y2=\"46.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"168.0\" y1=\"46.0\" x2=\"176.0\" y2=\"38.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><text x=\"172.0\" y=\"33.0\" font-size=\"15\" text-anchor=\"middle\" fill=\"#334155\" font-weight=\"600\">P</text><line x1=\"38.0\" y1=\"246.0\" x2=\"46.0\" y2=\"254.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"38.0\" y1=\"254.0\" x2=\"46.0\" y2=\"246.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><text x=\"30.7\" y=\"263.3\" font-size=\"15\" text-anchor=\"middle\" fill=\"#334155\" font-weight=\"600\">Q</text><line x1=\"298.0\" y1=\"220.0\" x2=\"306.0\" y2=\"228.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"298.0\" y1=\"228.0\" x2=\"306.0\" y2=\"220.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><text x=\"314.4\" y=\"235.6\" font-size=\"15\" text-anchor=\"middle\" fill=\"#334155\" font-weight=\"600\">R</text><line x1=\"109.5\" y1=\"131.6\" x2=\"117.5\" y2=\"139.6\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"109.5\" y1=\"139.6\" x2=\"117.5\" y2=\"131.6\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><text x=\"100.2\" y=\"136.2\" font-size=\"15\" text-anchor=\"middle\" fill=\"#334155\" font-weight=\"600\">E</text><line x1=\"226.5\" y1=\"119.9\" x2=\"234.5\" y2=\"127.9\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"226.5\" y1=\"127.9\" x2=\"234.5\" y2=\"119.9\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><text x=\"242.9\" y=\"122.3\" font-size=\"15\" text-anchor=\"middle\" fill=\"#334155\" font-weight=\"600\">F</text></svg>",
+      "choices": [
+        {
+          "key": "a",
+          "text": "5,4 cm",
+          "misconception": "L'élève calcule PE et s'arrête : on demandait EQ, l'autre morceau de [PQ]."
+        },
+        {
+          "key": "b",
+          "text": "3,6 cm",
+          "misconception": null
+        },
+        {
+          "key": "c",
+          "text": "15 cm",
+          "misconception": "L'élève renverse un quotient : 9 × 12,5 ÷ 7,5 = 15, plus long que [PQ] lui-même."
+        },
+        {
+          "key": "d",
+          "text": "5 cm",
+          "misconception": "L'élève croit EQ égal à FR = 12,5 − 7,5 = 5 : les morceaux des deux côtés ne sont pas égaux, ils sont proportionnels."
+        }
+      ],
+      "answer": {
+        "value": "b"
+      },
+      "solution_steps": [
+        "Le théorème de Thalès dans les triangles PEF et PQR donne $\\frac{PE}{PQ} = \\frac{PF}{PR}$.",
+        "PF ÷ PR = 7,5 ÷ 12,5 = 0,6, donc PE ÷ 9 = 0,6 et PE = 0,6 × 9 = 5,4.",
+        "E est sur [PQ] : EQ = PQ − PE = 9 − 5,4 = 3,6.",
+        "Bonne réponse : b, **3,6 cm**."
+      ],
+      "hint": "Calcule d'abord PE avec le théorème de Thalès. Où se trouve E sur [PQ] ?",
+      "estimated_duration_s": 150,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 4, classe de 3e, Espace et géométrie, Triangles, Objectifs d'apprentissage : « Connaitre et appliquer le théorème de Thalès, sa réciproque, sa contraposée (configurations des triangles emboités et configuration dite du papillon). »"
+    },
+    {
+      "id": "EX-G043-D-01",
+      "skill_id": "G043",
+      "level": "decouverte",
+      "type": "qcm",
+      "statement": "A, M, B et A, N, C sont alignés dans cet ordre. Pour savoir si (MN) est parallèle à (BC), quels quotients compare-t-on ?",
+      "image": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 344 292\" width=\"344\" height=\"292\" font-family=\"system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif\" role=\"img\"><title>Triangle ABC avec un point M sur [AB], un point N sur [AC] et le segment [MN]</title><rect width=\"100%\" height=\"100%\" fill=\"#ffffff\"/><line x1=\"146.0\" y1=\"42.0\" x2=\"42.0\" y2=\"250.0\" stroke=\"#334155\" stroke-width=\"2.0\" stroke-linecap=\"round\"/><line x1=\"146.0\" y1=\"42.0\" x2=\"302.0\" y2=\"224.0\" stroke=\"#334155\" stroke-width=\"2.0\" stroke-linecap=\"round\"/><line x1=\"42.0\" y1=\"250.0\" x2=\"302.0\" y2=\"224.0\" stroke=\"#334155\" stroke-width=\"2.0\" stroke-linecap=\"round\"/><line x1=\"109.6\" y1=\"114.8\" x2=\"200.6\" y2=\"105.7\" stroke=\"#2563eb\" stroke-width=\"2.0\" stroke-linecap=\"round\"/><line x1=\"142.0\" y1=\"38.0\" x2=\"150.0\" y2=\"46.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"142.0\" y1=\"46.0\" x2=\"150.0\" y2=\"38.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><text x=\"144.1\" y=\"33.1\" font-size=\"15\" text-anchor=\"middle\" fill=\"#334155\" font-weight=\"600\">A</text><line x1=\"38.0\" y1=\"246.0\" x2=\"46.0\" y2=\"254.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"38.0\" y1=\"254.0\" x2=\"46.0\" y2=\"246.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><text x=\"31.4\" y=\"264.2\" font-size=\"15\" text-anchor=\"middle\" fill=\"#334155\" font-weight=\"600\">B</text><line x1=\"298.0\" y1=\"220.0\" x2=\"306.0\" y2=\"228.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"298.0\" y1=\"228.0\" x2=\"306.0\" y2=\"220.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><text x=\"314.3\" y=\"235.7\" font-size=\"15\" text-anchor=\"middle\" fill=\"#334155\" font-weight=\"600\">C</text><line x1=\"105.6\" y1=\"110.8\" x2=\"113.6\" y2=\"118.8\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"105.6\" y1=\"118.8\" x2=\"113.6\" y2=\"110.8\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><text x=\"97.8\" y=\"112.2\" font-size=\"15\" text-anchor=\"middle\" fill=\"#334155\" font-weight=\"600\">M</text><line x1=\"196.6\" y1=\"101.7\" x2=\"204.6\" y2=\"109.7\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"196.6\" y1=\"109.7\" x2=\"204.6\" y2=\"101.7\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><text x=\"210.4\" y=\"100.7\" font-size=\"15\" text-anchor=\"middle\" fill=\"#334155\" font-weight=\"600\">N</text></svg>",
+      "choices": [
+        {
+          "key": "a",
+          "text": "$\\frac{AM}{AB}$ et $\\frac{MN}{BC}$",
+          "misconception": "Le quotient MN/BC ne sert pas à prouver le parallélisme : seuls les quotients pris sur les deux droites sécantes comptent."
+        },
+        {
+          "key": "b",
+          "text": "$\\frac{AM}{AB}$ et $\\frac{AN}{AC}$",
+          "misconception": null
+        },
+        {
+          "key": "c",
+          "text": "$\\frac{AM}{MB}$ et $\\frac{AN}{AC}$",
+          "misconception": "L'élève mélange : un quotient compare deux morceaux de [AB], l'autre un morceau et le côté entier [AC]."
+        },
+        {
+          "key": "d",
+          "text": "$\\frac{AB}{AM}$ et $\\frac{AN}{AC}$",
+          "misconception": "Un des quotients est renversé : le côté entier est au numérateur d'un côté et au dénominateur de l'autre."
+        }
+      ],
+      "answer": {
+        "value": "b"
+      },
+      "solution_steps": [
+        "La réciproque du théorème de Thalès compare deux quotients pris sur les deux droites qui se coupent en A, dans le même sens : un morceau sur le côté entier.",
+        "Sur la droite (AB) : $\\frac{AM}{AB}$. Sur la droite (AC) : $\\frac{AN}{AC}$.",
+        "S'ils sont égaux, et comme les points sont alignés dans le même ordre, (MN) est parallèle à (BC) ; sinon, elle ne l'est pas. Bonne réponse : b."
+      ],
+      "hint": "Prends un quotient sur chacune des deux droites qui passent par A, construits de la même façon.",
+      "estimated_duration_s": 60,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 4, classe de 3e, Espace et géométrie, Triangles, Objectifs d'apprentissage : « Connaitre et appliquer le théorème de Thalès, sa réciproque, sa contraposée (configurations des triangles emboités et configuration dite du papillon). »"
+    },
+    {
+      "id": "EX-G043-D-02",
+      "skill_id": "G043",
+      "level": "decouverte",
+      "type": "vrai_faux",
+      "statement": "Figure pas en vraie grandeur. K, E, P et K, F, Q sont alignés dans cet ordre ; KP = 6 cm, KQ = 8 cm. Vrai ou faux : (EF) est parallèle à (PQ).",
+      "image": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 344 292\" width=\"344\" height=\"292\" font-family=\"system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif\" role=\"img\"><title>Triangle KPQ avec un point E sur [KP], un point F sur [KQ], le segment [EF] et des longueurs écrites</title><rect width=\"100%\" height=\"100%\" fill=\"#ffffff\"/><line x1=\"172.0\" y1=\"42.0\" x2=\"42.0\" y2=\"250.0\" stroke=\"#334155\" stroke-width=\"2.0\" stroke-linecap=\"round\"/><line x1=\"172.0\" y1=\"42.0\" x2=\"302.0\" y2=\"250.0\" stroke=\"#334155\" stroke-width=\"2.0\" stroke-linecap=\"round\"/><line x1=\"42.0\" y1=\"250.0\" x2=\"302.0\" y2=\"250.0\" stroke=\"#334155\" stroke-width=\"2.0\" stroke-linecap=\"round\"/><line x1=\"107.0\" y1=\"146.0\" x2=\"237.0\" y2=\"146.0\" stroke=\"#2563eb\" stroke-width=\"2.0\" stroke-linecap=\"round\"/><text x=\"132.7\" y=\"94.8\" font-size=\"13\" text-anchor=\"end\" fill=\"#334155\">2,1 cm</text><text x=\"211.3\" y=\"94.8\" font-size=\"13\" text-anchor=\"start\" fill=\"#334155\">2,8 cm</text><line x1=\"168.0\" y1=\"38.0\" x2=\"176.0\" y2=\"46.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"168.0\" y1=\"46.0\" x2=\"176.0\" y2=\"38.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><text x=\"172.0\" y=\"33.0\" font-size=\"15\" text-anchor=\"middle\" fill=\"#334155\" font-weight=\"600\">K</text><line x1=\"38.0\" y1=\"246.0\" x2=\"46.0\" y2=\"254.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"38.0\" y1=\"254.0\" x2=\"46.0\" y2=\"246.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><text x=\"30.2\" y=\"262.5\" font-size=\"15\" text-anchor=\"middle\" fill=\"#334155\" font-weight=\"600\">P</text><line x1=\"298.0\" y1=\"246.0\" x2=\"306.0\" y2=\"254.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"298.0\" y1=\"254.0\" x2=\"306.0\" y2=\"246.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><text x=\"313.8\" y=\"262.5\" font-size=\"15\" text-anchor=\"middle\" fill=\"#334155\" font-weight=\"600\">Q</text><line x1=\"103.0\" y1=\"142.0\" x2=\"111.0\" y2=\"150.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"103.0\" y1=\"150.0\" x2=\"111.0\" y2=\"142.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><text x=\"93.7\" y=\"146.7\" font-size=\"15\" text-anchor=\"middle\" fill=\"#334155\" font-weight=\"600\">E</text><line x1=\"233.0\" y1=\"142.0\" x2=\"241.0\" y2=\"150.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"233.0\" y1=\"150.0\" x2=\"241.0\" y2=\"142.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><text x=\"250.3\" y=\"146.7\" font-size=\"15\" text-anchor=\"middle\" fill=\"#334155\" font-weight=\"600\">F</text></svg>",
+      "answer": {
+        "value": true
+      },
+      "solution_steps": [
+        "On calcule séparément les deux quotients : KE ÷ KP = 2,1 ÷ 6 = 0,35 et KF ÷ KQ = 2,8 ÷ 8 = 0,35.",
+        "Les quotients sont égaux : $\\frac{KE}{KP} = \\frac{KF}{KQ}$, et les points sont alignés dans le même ordre.",
+        "D'après la réciproque du théorème de Thalès, (EF) est parallèle à (PQ) : l'affirmation est **vraie**."
+      ],
+      "hint": "Calcule KE ÷ KP, puis KF ÷ KQ, et compare.",
+      "estimated_duration_s": 75,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 4, classe de 3e, Espace et géométrie, Triangles, Objectifs d'apprentissage : « Connaitre et appliquer le théorème de Thalès, sa réciproque, sa contraposée (configurations des triangles emboités et configuration dite du papillon). »"
+    },
+    {
+      "id": "EX-G043-E-01",
+      "skill_id": "G043",
+      "level": "entrainement",
+      "type": "qcm",
+      "statement": "Figure pas en vraie grandeur. (EG) et (FH) se coupent en O ; OE = 4,5 cm, OG = 7,5 cm, OF = 6 cm, OH = 9,6 cm. Que peut-on conclure ?",
+      "image": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 344 292\" width=\"344\" height=\"292\" font-family=\"system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif\" role=\"img\"><title>Deux segments [EG] et [FH] qui se coupent en O, et les segments [EF] et [GH]</title><rect width=\"100%\" height=\"100%\" fill=\"#ffffff\"/><line x1=\"68.0\" y1=\"68.0\" x2=\"317.6\" y2=\"224.0\" stroke=\"#334155\" stroke-width=\"2.0\" stroke-linecap=\"round\"/><line x1=\"224.0\" y1=\"42.0\" x2=\"96.6\" y2=\"264.9\" stroke=\"#334155\" stroke-width=\"2.0\" stroke-linecap=\"round\"/><line x1=\"68.0\" y1=\"68.0\" x2=\"224.0\" y2=\"42.0\" stroke=\"#334155\" stroke-width=\"2.0\" stroke-linecap=\"round\"/><line x1=\"317.6\" y1=\"224.0\" x2=\"96.6\" y2=\"264.9\" stroke=\"#2563eb\" stroke-width=\"2.0\" stroke-linecap=\"round\"/><line x1=\"168.0\" y1=\"129.0\" x2=\"176.0\" y2=\"137.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"168.0\" y1=\"137.0\" x2=\"176.0\" y2=\"129.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><text x=\"168.3\" y=\"124.5\" font-size=\"15\" text-anchor=\"middle\" fill=\"#334155\" font-weight=\"600\">O</text><line x1=\"64.0\" y1=\"64.0\" x2=\"72.0\" y2=\"72.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"64.0\" y1=\"72.0\" x2=\"72.0\" y2=\"64.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><text x=\"56.7\" y=\"64.8\" font-size=\"15\" text-anchor=\"middle\" fill=\"#334155\" font-weight=\"600\">E</text><line x1=\"220.0\" y1=\"38.0\" x2=\"228.0\" y2=\"46.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"220.0\" y1=\"46.0\" x2=\"228.0\" y2=\"38.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><text x=\"229.9\" y=\"34.3\" font-size=\"15\" text-anchor=\"middle\" fill=\"#334155\" font-weight=\"600\">F</text><line x1=\"313.6\" y1=\"220.0\" x2=\"321.6\" y2=\"228.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"313.6\" y1=\"228.0\" x2=\"321.6\" y2=\"220.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><text x=\"329.9\" y=\"235.7\" font-size=\"15\" text-anchor=\"middle\" fill=\"#334155\" font-weight=\"600\">G</text><line x1=\"92.6\" y1=\"260.9\" x2=\"100.6\" y2=\"268.9\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"92.6\" y1=\"268.9\" x2=\"100.6\" y2=\"260.9\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><text x=\"88.8\" y=\"281.6\" font-size=\"15\" text-anchor=\"middle\" fill=\"#334155\" font-weight=\"600\">H</text></svg>",
+      "choices": [
+        {
+          "key": "a",
+          "text": "(EF) et (GH) sont parallèles, d'après la réciproque du théorème de Thalès.",
+          "misconception": "L'élève juge 0,6 et 0,625 assez proches : l'égalité doit être exacte."
+        },
+        {
+          "key": "b",
+          "text": "On ne peut rien conclure, car les quotients ne sont pas égaux.",
+          "misconception": "L'élève oublie la contraposée : des quotients différents prouvent que les droites ne sont pas parallèles."
+        },
+        {
+          "key": "c",
+          "text": "(EF) et (GH) ne sont pas parallèles, d'après la contraposée du théorème de Thalès.",
+          "misconception": null
+        },
+        {
+          "key": "d",
+          "text": "(EF) et (GH) ne sont pas parallèles, d'après la réciproque du théorème de Thalès.",
+          "misconception": "Bonne conclusion, mauvais théorème : la réciproque part de quotients égaux pour conclure au parallélisme."
+        }
+      ],
+      "answer": {
+        "value": "c"
+      },
+      "solution_steps": [
+        "E, O, G sont alignés, ainsi que F, O, H, dans le même ordre. On calcule séparément : OE ÷ OG = 4,5 ÷ 7,5 = 0,6 et OF ÷ OH = 6 ÷ 9,6 = 0,625.",
+        "0,6 et 0,625 ne sont pas égaux.",
+        "La contraposée du théorème de Thalès dit : si les quotients ne sont pas égaux, les droites ne sont pas parallèles. Donc (EF) et (GH) ne sont pas parallèles, même si l'écart ne se voit pas sur le dessin.",
+        "Bonne réponse : c."
+      ],
+      "hint": "Calcule les deux quotients. Quel théorème conclut quand ils sont différents ?",
+      "estimated_duration_s": 120,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 4, classe de 3e, Espace et géométrie, Triangles, Objectifs d'apprentissage : « Connaitre et appliquer le théorème de Thalès, sa réciproque, sa contraposée (configurations des triangles emboités et configuration dite du papillon). »"
+    },
+    {
+      "id": "EX-G043-E-02",
+      "skill_id": "G043",
+      "level": "entrainement",
+      "type": "vrai_faux",
+      "statement": "Figure pas en vraie grandeur : ZQ = 4,5 cm et ZY = 5 cm. Eva trouve $\\frac{ZP}{ZQ} \\approx 0{,}78$ et $\\frac{ZX}{ZY} = 0{,}78$, donc (PX) est parallèle à (QY). A-t-elle raison ?",
+      "image": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 344 292\" width=\"344\" height=\"292\" font-family=\"system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif\" role=\"img\"><title>Triangle ZQY avec un point P sur [ZQ], un point X sur [ZY], le segment [PX] et des longueurs écrites</title><rect width=\"100%\" height=\"100%\" fill=\"#ffffff\"/><line x1=\"146.0\" y1=\"42.0\" x2=\"42.0\" y2=\"250.0\" stroke=\"#334155\" stroke-width=\"2.0\" stroke-linecap=\"round\"/><line x1=\"146.0\" y1=\"42.0\" x2=\"302.0\" y2=\"250.0\" stroke=\"#334155\" stroke-width=\"2.0\" stroke-linecap=\"round\"/><line x1=\"42.0\" y1=\"250.0\" x2=\"302.0\" y2=\"250.0\" stroke=\"#334155\" stroke-width=\"2.0\" stroke-linecap=\"round\"/><line x1=\"94.0\" y1=\"146.0\" x2=\"225.6\" y2=\"148.1\" stroke=\"#2563eb\" stroke-width=\"2.0\" stroke-linecap=\"round\"/><text x=\"112.8\" y=\"95.4\" font-size=\"13\" text-anchor=\"end\" fill=\"#334155\">3,5 cm</text><text x=\"192.2\" y=\"95.2\" font-size=\"13\" text-anchor=\"start\" fill=\"#334155\">3,9 cm</text><line x1=\"142.0\" y1=\"38.0\" x2=\"150.0\" y2=\"46.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"142.0\" y1=\"46.0\" x2=\"150.0\" y2=\"38.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><text x=\"144.2\" y=\"33.1\" font-size=\"15\" text-anchor=\"middle\" fill=\"#334155\" font-weight=\"600\">Z</text><line x1=\"38.0\" y1=\"246.0\" x2=\"46.0\" y2=\"254.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"38.0\" y1=\"254.0\" x2=\"46.0\" y2=\"246.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><text x=\"30.5\" y=\"263.0\" font-size=\"15\" text-anchor=\"middle\" fill=\"#334155\" font-weight=\"600\">Q</text><line x1=\"298.0\" y1=\"246.0\" x2=\"306.0\" y2=\"254.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"298.0\" y1=\"254.0\" x2=\"306.0\" y2=\"246.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><text x=\"314.1\" y=\"262.1\" font-size=\"15\" text-anchor=\"middle\" fill=\"#334155\" font-weight=\"600\">Y</text><line x1=\"90.0\" y1=\"142.0\" x2=\"98.0\" y2=\"150.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"90.0\" y1=\"150.0\" x2=\"98.0\" y2=\"142.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><text x=\"80.6\" y=\"146.8\" font-size=\"15\" text-anchor=\"middle\" fill=\"#334155\" font-weight=\"600\">P</text><line x1=\"221.6\" y1=\"144.1\" x2=\"229.6\" y2=\"152.1\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"221.6\" y1=\"152.1\" x2=\"229.6\" y2=\"144.1\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><text x=\"239.0\" y=\"149.0\" font-size=\"15\" text-anchor=\"middle\" fill=\"#334155\" font-weight=\"600\">X</text></svg>",
+      "answer": {
+        "value": false
+      },
+      "solution_steps": [
+        "En valeur exacte : $\\frac{ZP}{ZQ} = \\frac{3{,}5}{4{,}5} = \\frac{35}{45} = \\frac{7}{9}$ et $\\frac{ZX}{ZY} = \\frac{3{,}9}{5} = \\frac{78}{100} = \\frac{39}{50}$.",
+        "Même dénominateur 450 : $\\frac{7}{9} = \\frac{350}{450}$ et $\\frac{39}{50} = \\frac{351}{450}$. Les quotients ne sont pas égaux : 7 ÷ 9 = 0,777…, qu'Eva a arrondi au centième, 0,78.",
+        "D'après la contraposée du théorème de Thalès, (PX) et (QY) ne sont pas parallèles.",
+        "Eva a comparé des valeurs arrondies : elle a **tort**."
+      ],
+      "hint": "Compare les deux quotients en valeur exacte, sous forme de fractions.",
+      "estimated_duration_s": 150,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 4, classe de 3e, Espace et géométrie, Triangles, Objectifs d'apprentissage : « Connaitre et appliquer le théorème de Thalès, sa réciproque, sa contraposée (configurations des triangles emboités et configuration dite du papillon). »"
+    },
+    {
+      "id": "EX-G043-M-01",
+      "skill_id": "G043",
+      "level": "maitrise",
+      "type": "numerique",
+      "statement": "Figure pas en vraie grandeur. W, E, F et W, G, H sont alignés dans cet ordre ; WF = 6 cm. Quelle longueur WH, en cm, rend (EG) parallèle à (FH) ?",
+      "image": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 344 292\" width=\"344\" height=\"292\" font-family=\"system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif\" role=\"img\"><title>Deux segments [WF] et [WH] de même origine, un point E sur [WF], un point G sur [WH], les segments [EG] et [FH] et des longueurs écrites</title><rect width=\"100%\" height=\"100%\" fill=\"#ffffff\"/><line x1=\"172.0\" y1=\"42.0\" x2=\"42.0\" y2=\"250.0\" stroke=\"#334155\" stroke-width=\"2.0\" stroke-linecap=\"round\"/><line x1=\"172.0\" y1=\"42.0\" x2=\"276.0\" y2=\"185.0\" stroke=\"#334155\" stroke-width=\"2.0\" stroke-linecap=\"round\"/><line x1=\"113.5\" y1=\"135.6\" x2=\"218.8\" y2=\"106.4\" stroke=\"#2563eb\" stroke-width=\"2.0\" stroke-linecap=\"round\"/><line x1=\"42.0\" y1=\"250.0\" x2=\"276.0\" y2=\"185.0\" stroke=\"#2563eb\" stroke-width=\"2.0\" stroke-linecap=\"round\"/><text x=\"136.0\" y=\"89.6\" font-size=\"13\" text-anchor=\"end\" fill=\"#334155\">3,6 cm</text><text x=\"201.9\" y=\"74.5\" font-size=\"13\" text-anchor=\"start\" fill=\"#334155\">4,2 cm</text><line x1=\"168.0\" y1=\"38.0\" x2=\"176.0\" y2=\"46.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"168.0\" y1=\"46.0\" x2=\"176.0\" y2=\"38.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><text x=\"173.0\" y=\"33.0\" font-size=\"15\" text-anchor=\"middle\" fill=\"#334155\" font-weight=\"600\">W</text><line x1=\"38.0\" y1=\"246.0\" x2=\"46.0\" y2=\"254.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"38.0\" y1=\"254.0\" x2=\"46.0\" y2=\"246.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><text x=\"31.4\" y=\"264.2\" font-size=\"15\" text-anchor=\"middle\" fill=\"#334155\" font-weight=\"600\">F</text><line x1=\"272.0\" y1=\"181.0\" x2=\"280.0\" y2=\"189.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"272.0\" y1=\"189.0\" x2=\"280.0\" y2=\"181.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><text x=\"289.1\" y=\"194.9\" font-size=\"15\" text-anchor=\"middle\" fill=\"#334155\" font-weight=\"600\">H</text><line x1=\"109.5\" y1=\"131.6\" x2=\"117.5\" y2=\"139.6\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"109.5\" y1=\"139.6\" x2=\"117.5\" y2=\"131.6\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><text x=\"99.7\" y=\"138.4\" font-size=\"15\" text-anchor=\"middle\" fill=\"#334155\" font-weight=\"600\">E</text><line x1=\"214.8\" y1=\"102.4\" x2=\"222.8\" y2=\"110.4\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"214.8\" y1=\"110.4\" x2=\"222.8\" y2=\"102.4\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><text x=\"230.3\" y=\"103.4\" font-size=\"15\" text-anchor=\"middle\" fill=\"#334155\" font-weight=\"600\">G</text></svg>",
+      "answer": {
+        "value": 7,
+        "unit": "cm"
+      },
+      "solution_steps": [
+        "Les points sont alignés dans le même ordre : d'après la réciproque du théorème de Thalès, (EG) est parallèle à (FH) dès que $\\frac{WE}{WF} = \\frac{WG}{WH}$.",
+        "WE ÷ WF = 3,6 ÷ 6 = 0,6.",
+        "$0{,}6 = \\frac{4{,}2}{WH}$, donc 0,6 × WH = 4,2 et WH = 4,2 ÷ 0,6 = 7.",
+        "WH = **7 cm**. Ajouter à WG l'écart entre WE et WF (4,2 + 2,4 = 6,6) ne rend pas les quotients égaux : 4,2 ÷ 6,6 n'est pas 0,6."
+      ],
+      "hint": "Quels quotients doivent être égaux pour que la réciproque s'applique ?",
+      "estimated_duration_s": 120,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 4, classe de 3e, Espace et géométrie, Triangles, Objectifs d'apprentissage : « Connaitre et appliquer le théorème de Thalès, sa réciproque, sa contraposée (configurations des triangles emboités et configuration dite du papillon). »"
+    },
+    {
+      "id": "EX-G043-M-02",
+      "skill_id": "G043",
+      "level": "maitrise",
+      "type": "qcm",
+      "statement": "Les pieds [PG] et [QH] d'un tréteau se croisent en O (figure pas en vraie grandeur). Le plateau (GH) est-il parallèle au sol (PQ) ?",
+      "image": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 344 292\" width=\"344\" height=\"292\" font-family=\"system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif\" role=\"img\"><title>Schéma d'un tréteau : deux pieds [PG] et [QH] qui se croisent en O, le plateau [GH], le sol [PQ] et des longueurs écrites</title><rect width=\"100%\" height=\"100%\" fill=\"#ffffff\"/><line x1=\"94.0\" y1=\"213.6\" x2=\"237.0\" y2=\"42.0\" stroke=\"#334155\" stroke-width=\"2.0\" stroke-linecap=\"round\"/><line x1=\"250.0\" y1=\"213.6\" x2=\"107.0\" y2=\"42.0\" stroke=\"#334155\" stroke-width=\"2.0\" stroke-linecap=\"round\"/><line x1=\"237.0\" y1=\"42.0\" x2=\"107.0\" y2=\"42.0\" stroke=\"#2563eb\" stroke-width=\"2.0\" stroke-linecap=\"round\"/><line x1=\"94.0\" y1=\"213.6\" x2=\"250.0\" y2=\"213.6\" stroke=\"#334155\" stroke-width=\"2.0\" stroke-linecap=\"round\"/><text x=\"241.9\" y=\"88.1\" font-size=\"15\" text-anchor=\"middle\" fill=\"#334155\" font-weight=\"600\">48 cm</text><text x=\"126.9\" y=\"166.7\" font-size=\"13\" text-anchor=\"end\" fill=\"#334155\">60 cm</text><text x=\"102.1\" y=\"88.1\" font-size=\"15\" text-anchor=\"middle\" fill=\"#334155\" font-weight=\"600\">56 cm</text><text x=\"217.1\" y=\"166.7\" font-size=\"13\" text-anchor=\"start\" fill=\"#334155\">70 cm</text><line x1=\"168.0\" y1=\"116.0\" x2=\"176.0\" y2=\"124.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"168.0\" y1=\"124.0\" x2=\"176.0\" y2=\"116.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><text x=\"172.0\" y=\"111.0\" font-size=\"15\" text-anchor=\"middle\" fill=\"#334155\" font-weight=\"600\">O</text><line x1=\"233.0\" y1=\"38.0\" x2=\"241.0\" y2=\"46.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"233.0\" y1=\"46.0\" x2=\"241.0\" y2=\"38.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><text x=\"245.6\" y=\"35.9\" font-size=\"15\" text-anchor=\"middle\" fill=\"#334155\" font-weight=\"600\">G</text><line x1=\"103.0\" y1=\"38.0\" x2=\"111.0\" y2=\"46.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"103.0\" y1=\"46.0\" x2=\"111.0\" y2=\"38.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><text x=\"98.4\" y=\"35.9\" font-size=\"15\" text-anchor=\"middle\" fill=\"#334155\" font-weight=\"600\">H</text><line x1=\"90.0\" y1=\"209.6\" x2=\"98.0\" y2=\"217.6\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"90.0\" y1=\"217.6\" x2=\"98.0\" y2=\"209.6\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><text x=\"84.7\" y=\"229.0\" font-size=\"15\" text-anchor=\"middle\" fill=\"#334155\" font-weight=\"600\">P</text><line x1=\"246.0\" y1=\"209.6\" x2=\"254.0\" y2=\"217.6\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"246.0\" y1=\"217.6\" x2=\"254.0\" y2=\"209.6\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><text x=\"259.3\" y=\"229.0\" font-size=\"15\" text-anchor=\"middle\" fill=\"#334155\" font-weight=\"600\">Q</text></svg>",
+      "choices": [
+        {
+          "key": "a",
+          "text": "Non, d'après la contraposée du théorème de Thalès.",
+          "misconception": "L'élève compare OG ÷ OQ = 48 ÷ 70, environ 0,69, et OH ÷ OP = 56 ÷ 60, environ 0,93 : ces longueurs ne sont pas sur la même droite."
+        },
+        {
+          "key": "b",
+          "text": "Oui, d'après le théorème de Thalès.",
+          "misconception": "Le théorème de Thalès part de droites parallèles : il ne peut pas servir à prouver qu'elles le sont."
+        },
+        {
+          "key": "c",
+          "text": "On ne peut pas savoir sans mesurer les angles.",
+          "misconception": "L'élève ignore la réciproque du théorème de Thalès, qui conclut à partir des seules longueurs."
+        },
+        {
+          "key": "d",
+          "text": "Oui, d'après la réciproque du théorème de Thalès.",
+          "misconception": null
+        }
+      ],
+      "answer": {
+        "value": "d"
+      },
+      "solution_steps": [
+        "G, O, P sont alignés, ainsi que H, O, Q, dans le même ordre : [OG] et [OP] sont sur une droite, [OH] et [OQ] sur l'autre.",
+        "On calcule séparément : OG ÷ OP = 48 ÷ 60 = 0,8 et OH ÷ OQ = 56 ÷ 70 = 0,8.",
+        "Les quotients sont égaux : d'après la réciproque du théorème de Thalès, (GH) est parallèle à (PQ). Le théorème de Thalès lui-même suppose déjà les droites parallèles : il ne sert pas à le prouver.",
+        "Bonne réponse : d."
+      ],
+      "hint": "Compare OG ÷ OP et OH ÷ OQ : chaque quotient reste sur une seule droite.",
+      "estimated_duration_s": 150,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 4, classe de 3e, Espace et géométrie, Triangles, Objectifs d'apprentissage : « Connaitre et appliquer le théorème de Thalès, sa réciproque, sa contraposée (configurations des triangles emboités et configuration dite du papillon). »"
+    },
+    {
       "id": "EX-G045-D-01",
       "skill_id": "G045",
       "level": "decouverte",
@@ -38207,6 +38571,178 @@
       "estimated_duration_s": 150,
       "review_status": "relu_agent",
       "programme_ref": "Cycle 4, classe de 4e, Espace et géométrie, Triangles, Objectifs d'apprentissage : « Caractériser un triangle rectangle à l'aide de son cercle circonscrit, par son inscription dans un demi-cercle dont le diamètre est un côté du triangle. »"
+    },
+    {
+      "id": "EX-G062-D-01",
+      "skill_id": "G062",
+      "level": "decouverte",
+      "type": "qcm",
+      "statement": "Les droites (DG) et (EH) se coupent en O, et (DE) est parallèle à (GH). Quelle égalité donne le théorème de Thalès ?",
+      "image": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 344 292\" width=\"344\" height=\"292\" font-family=\"system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif\" role=\"img\"><title>Deux segments [DG] et [EH] qui se coupent en O, et les segments [DE] et [GH]</title><rect width=\"100%\" height=\"100%\" fill=\"#ffffff\"/><line x1=\"68.0\" y1=\"68.0\" x2=\"296.8\" y2=\"239.6\" stroke=\"#334155\" stroke-width=\"2.0\" stroke-linecap=\"round\"/><line x1=\"224.0\" y1=\"42.0\" x2=\"109.6\" y2=\"270.8\" stroke=\"#334155\" stroke-width=\"2.0\" stroke-linecap=\"round\"/><line x1=\"68.0\" y1=\"68.0\" x2=\"224.0\" y2=\"42.0\" stroke=\"#334155\" stroke-width=\"2.0\" stroke-linecap=\"round\"/><line x1=\"296.8\" y1=\"239.6\" x2=\"109.6\" y2=\"270.8\" stroke=\"#2563eb\" stroke-width=\"2.0\" stroke-linecap=\"round\"/><line x1=\"168.0\" y1=\"142.0\" x2=\"176.0\" y2=\"150.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"168.0\" y1=\"150.0\" x2=\"176.0\" y2=\"142.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><text x=\"168.2\" y=\"137.5\" font-size=\"15\" text-anchor=\"middle\" fill=\"#334155\" font-weight=\"600\">O</text><line x1=\"64.0\" y1=\"64.0\" x2=\"72.0\" y2=\"72.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"64.0\" y1=\"72.0\" x2=\"72.0\" y2=\"64.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><text x=\"57.1\" y=\"64.2\" font-size=\"15\" text-anchor=\"middle\" fill=\"#334155\" font-weight=\"600\">D</text><line x1=\"220.0\" y1=\"38.0\" x2=\"228.0\" y2=\"46.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"220.0\" y1=\"46.0\" x2=\"228.0\" y2=\"38.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><text x=\"229.7\" y=\"34.2\" font-size=\"15\" text-anchor=\"middle\" fill=\"#334155\" font-weight=\"600\">E</text><line x1=\"292.8\" y1=\"235.6\" x2=\"300.8\" y2=\"243.6\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"292.8\" y1=\"243.6\" x2=\"300.8\" y2=\"235.6\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><text x=\"308.3\" y=\"252.7\" font-size=\"15\" text-anchor=\"middle\" fill=\"#334155\" font-weight=\"600\">G</text><line x1=\"105.6\" y1=\"266.8\" x2=\"113.6\" y2=\"274.8\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"105.6\" y1=\"274.8\" x2=\"113.6\" y2=\"266.8\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><text x=\"102.9\" y=\"288.1\" font-size=\"15\" text-anchor=\"middle\" fill=\"#334155\" font-weight=\"600\">H</text></svg>",
+      "choices": [
+        {
+          "key": "a",
+          "text": "$\\frac{OD}{OH} = \\frac{OE}{OG} = \\frac{DE}{GH}$",
+          "misconception": "L'élève associe un côté d'un triangle au côté voisin de l'autre : [OD] et [OH] ne sont pas sur la même droite."
+        },
+        {
+          "key": "b",
+          "text": "$\\frac{OD}{OG} = \\frac{OE}{OH} = \\frac{DE}{GH}$",
+          "misconception": null
+        },
+        {
+          "key": "c",
+          "text": "$\\frac{OD}{DG} = \\frac{OE}{EH} = \\frac{DE}{GH}$",
+          "misconception": "L'élève applique la configuration des triangles emboîtés : [DG] n'est un côté d'aucun des deux triangles."
+        },
+        {
+          "key": "d",
+          "text": "$\\frac{OD}{OG} = \\frac{OH}{OE} = \\frac{DE}{GH}$",
+          "misconception": "L'élève renverse le deuxième quotient : le côté du triangle OGH passe au numérateur."
+        }
+      ],
+      "answer": {
+        "value": "b"
+      },
+      "solution_steps": [
+        "Les triangles ODE et OGH sont opposés par le sommet O. On associe les côtés homologues : [OD] et [OG] sont sur la même droite, [OE] et [OH] sur l'autre, [DE] et [GH] sont parallèles.",
+        "Thalès : $\\frac{OD}{OG} = \\frac{OE}{OH} = \\frac{DE}{GH}$. Chaque quotient a au numérateur un côté du triangle ODE et au dénominateur le côté homologue du triangle OGH.",
+        "Bonne réponse : b."
+      ],
+      "hint": "D et G sont sur la même droite, de part et d'autre de O. Avec quel point E est-il associé ?",
+      "estimated_duration_s": 60,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 4, classe de 3e, Espace et géométrie, Triangles, Objectifs d'apprentissage : « Connaitre et appliquer le théorème de Thalès, sa réciproque, sa contraposée (configurations des triangles emboités et configuration dite du papillon). »"
+    },
+    {
+      "id": "EX-G062-D-02",
+      "skill_id": "G062",
+      "level": "decouverte",
+      "type": "numerique",
+      "statement": "Figure pas en vraie grandeur. Les droites (AF) et (BG) se coupent en S, et (AB) est parallèle à (FG). Calcule SG, en cm.",
+      "image": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 344 292\" width=\"344\" height=\"292\" font-family=\"system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif\" role=\"img\"><title>Deux segments [AF] et [BG] qui se coupent en S, les segments [AB] et [FG] et des longueurs écrites</title><rect width=\"100%\" height=\"100%\" fill=\"#ffffff\"/><line x1=\"68.0\" y1=\"55.0\" x2=\"286.4\" y2=\"237.0\" stroke=\"#334155\" stroke-width=\"2.0\" stroke-linecap=\"round\"/><line x1=\"185.0\" y1=\"42.0\" x2=\"75.8\" y2=\"260.4\" stroke=\"#334155\" stroke-width=\"2.0\" stroke-linecap=\"round\"/><line x1=\"68.0\" y1=\"55.0\" x2=\"185.0\" y2=\"42.0\" stroke=\"#334155\" stroke-width=\"2.0\" stroke-linecap=\"round\"/><line x1=\"286.4\" y1=\"237.0\" x2=\"75.8\" y2=\"260.4\" stroke=\"#2563eb\" stroke-width=\"2.0\" stroke-linecap=\"round\"/><text x=\"74.2\" y=\"96.9\" font-size=\"15\" text-anchor=\"middle\" fill=\"#334155\" font-weight=\"600\">2 cm</text><text x=\"221.3\" y=\"177.4\" font-size=\"13\" text-anchor=\"start\" fill=\"#334155\">5 cm</text><text x=\"206.8\" y=\"85.2\" font-size=\"15\" text-anchor=\"middle\" fill=\"#334155\" font-weight=\"600\">2,6 cm</text><text x=\"103.7\" y=\"191.6\" font-size=\"13\" text-anchor=\"end\" fill=\"#334155\">?</text><line x1=\"142.0\" y1=\"116.0\" x2=\"150.0\" y2=\"124.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"142.0\" y1=\"124.0\" x2=\"150.0\" y2=\"116.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><text x=\"142.3\" y=\"111.5\" font-size=\"15\" text-anchor=\"middle\" fill=\"#334155\" font-weight=\"600\">S</text><line x1=\"64.0\" y1=\"51.0\" x2=\"72.0\" y2=\"59.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"64.0\" y1=\"59.0\" x2=\"72.0\" y2=\"51.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><text x=\"58.3\" y=\"49.9\" font-size=\"15\" text-anchor=\"middle\" fill=\"#334155\" font-weight=\"600\">A</text><line x1=\"181.0\" y1=\"38.0\" x2=\"189.0\" y2=\"46.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"181.0\" y1=\"46.0\" x2=\"189.0\" y2=\"38.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><text x=\"189.3\" y=\"33.7\" font-size=\"15\" text-anchor=\"middle\" fill=\"#334155\" font-weight=\"600\">B</text><line x1=\"282.4\" y1=\"233.0\" x2=\"290.4\" y2=\"241.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"282.4\" y1=\"241.0\" x2=\"290.4\" y2=\"233.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><text x=\"297.9\" y=\"250.0\" font-size=\"15\" text-anchor=\"middle\" fill=\"#334155\" font-weight=\"600\">F</text><line x1=\"71.8\" y1=\"256.4\" x2=\"79.8\" y2=\"264.4\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"71.8\" y1=\"264.4\" x2=\"79.8\" y2=\"256.4\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><text x=\"68.2\" y=\"277.1\" font-size=\"15\" text-anchor=\"middle\" fill=\"#334155\" font-weight=\"600\">G</text></svg>",
+      "answer": {
+        "value": 6.5,
+        "unit": "cm"
+      },
+      "solution_steps": [
+        "A, S, F sont alignés, ainsi que B, S, G, et (AB) est parallèle à (FG) : le théorème de Thalès s'applique aux triangles SAB et SFG, opposés par le sommet S.",
+        "Côtés homologues : [SA] et [SF], [SB] et [SG], [AB] et [FG]. Donc $\\frac{SA}{SF} = \\frac{SB}{SG} = \\frac{AB}{FG}$.",
+        "$\\frac{2}{5} = \\frac{2{,}6}{SG}$ : 2 ÷ 5 = 0,4, donc 0,4 × SG = 2,6 et SG = 2,6 ÷ 0,4 = 6,5.",
+        "SG = **6,5 cm**. Contrôle : le triangle SFG est plus grand que SAB, et SG est bien plus grand que SB."
+      ],
+      "hint": "B et G sont sur la même droite, de part et d'autre de S : avec quel quotient [SB] va-t-il ?",
+      "estimated_duration_s": 75,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 4, classe de 3e, Espace et géométrie, Triangles, Objectifs d'apprentissage : « Connaitre et appliquer le théorème de Thalès, sa réciproque, sa contraposée (configurations des triangles emboités et configuration dite du papillon). »"
+    },
+    {
+      "id": "EX-G062-E-01",
+      "skill_id": "G062",
+      "level": "entrainement",
+      "type": "numerique",
+      "statement": "Figure pas en vraie grandeur. Les droites (UX) et (VY) se coupent en W, et (UV) est parallèle à (XY). Calcule XY, en cm.",
+      "image": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 344 292\" width=\"344\" height=\"292\" font-family=\"system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif\" role=\"img\"><title>Deux segments [UX] et [VY] qui se coupent en W, les segments [UV] et [XY] et des longueurs écrites</title><rect width=\"100%\" height=\"100%\" fill=\"#ffffff\"/><line x1=\"68.0\" y1=\"57.6\" x2=\"270.8\" y2=\"219.8\" stroke=\"#334155\" stroke-width=\"2.0\" stroke-linecap=\"round\"/><line x1=\"172.0\" y1=\"36.8\" x2=\"104.4\" y2=\"253.1\" stroke=\"#334155\" stroke-width=\"2.0\" stroke-linecap=\"round\"/><line x1=\"68.0\" y1=\"57.6\" x2=\"172.0\" y2=\"36.8\" stroke=\"#334155\" stroke-width=\"2.0\" stroke-linecap=\"round\"/><line x1=\"270.8\" y1=\"219.8\" x2=\"104.4\" y2=\"253.1\" stroke=\"#2563eb\" stroke-width=\"2.0\" stroke-linecap=\"round\"/><text x=\"71.4\" y=\"103.2\" font-size=\"15\" text-anchor=\"middle\" fill=\"#334155\" font-weight=\"600\">4,8 cm</text><text x=\"213.4\" y=\"168.7\" font-size=\"13\" text-anchor=\"start\" fill=\"#334155\">6 cm</text><text x=\"117.3\" y=\"39.5\" font-size=\"13\" text-anchor=\"middle\" fill=\"#334155\">3,6 cm</text><text x=\"190.3\" y=\"254.2\" font-size=\"13\" text-anchor=\"middle\" fill=\"#334155\">?</text><line x1=\"142.0\" y1=\"116.0\" x2=\"150.0\" y2=\"124.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"142.0\" y1=\"124.0\" x2=\"150.0\" y2=\"116.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><text x=\"141.3\" y=\"111.8\" font-size=\"15\" text-anchor=\"middle\" fill=\"#334155\" font-weight=\"600\">W</text><line x1=\"64.0\" y1=\"53.6\" x2=\"72.0\" y2=\"61.6\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"64.0\" y1=\"61.6\" x2=\"72.0\" y2=\"53.6\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><text x=\"57.8\" y=\"53.0\" font-size=\"15\" text-anchor=\"middle\" fill=\"#334155\" font-weight=\"600\">U</text><line x1=\"168.0\" y1=\"32.8\" x2=\"176.0\" y2=\"40.8\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"168.0\" y1=\"40.8\" x2=\"176.0\" y2=\"32.8\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><text x=\"174.7\" y=\"28.1\" font-size=\"15\" text-anchor=\"middle\" fill=\"#334155\" font-weight=\"600\">V</text><line x1=\"266.8\" y1=\"215.8\" x2=\"274.8\" y2=\"223.8\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"266.8\" y1=\"223.8\" x2=\"274.8\" y2=\"215.8\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><text x=\"282.3\" y=\"232.8\" font-size=\"15\" text-anchor=\"middle\" fill=\"#334155\" font-weight=\"600\">X</text><line x1=\"100.4\" y1=\"249.1\" x2=\"108.4\" y2=\"257.1\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"100.4\" y1=\"257.1\" x2=\"108.4\" y2=\"249.1\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><text x=\"99.0\" y=\"271.1\" font-size=\"15\" text-anchor=\"middle\" fill=\"#334155\" font-weight=\"600\">Y</text></svg>",
+      "answer": {
+        "value": 4.5,
+        "unit": "cm"
+      },
+      "solution_steps": [
+        "U, W, X sont alignés, ainsi que V, W, Y, et (UV) est parallèle à (XY) : le théorème de Thalès s'applique aux triangles WUV et WXY.",
+        "Côtés homologues : [WU] et [WX], [WV] et [WY], [UV] et [XY]. Donc $\\frac{WU}{WX} = \\frac{WV}{WY} = \\frac{UV}{XY}$.",
+        "$\\frac{4{,}8}{6} = \\frac{3{,}6}{XY}$ : 4,8 ÷ 6 = 0,8, donc 0,8 × XY = 3,6 et XY = 3,6 ÷ 0,8 = 4,5.",
+        "XY = **4,5 cm**."
+      ],
+      "hint": "Quel côté du triangle WUV correspond à [XY] ? Et quel côté correspond à [WX] ?",
+      "estimated_duration_s": 90,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 4, classe de 3e, Espace et géométrie, Triangles, Objectifs d'apprentissage : « Connaitre et appliquer le théorème de Thalès, sa réciproque, sa contraposée (configurations des triangles emboités et configuration dite du papillon). »"
+    },
+    {
+      "id": "EX-G062-E-02",
+      "skill_id": "G062",
+      "level": "entrainement",
+      "type": "vrai_faux",
+      "statement": "Figure pas en vraie grandeur. Les droites (KN) et (LP) se coupent en O, et (KL) est parallèle à (NP). Paul affirme : « OP = 3 cm. » A-t-il raison ?",
+      "image": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 344 292\" width=\"344\" height=\"292\" font-family=\"system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif\" role=\"img\"><title>Deux segments [KN] et [LP] qui se coupent en O, les segments [KL] et [NP] et des longueurs écrites</title><rect width=\"100%\" height=\"100%\" fill=\"#ffffff\"/><line x1=\"68.0\" y1=\"68.0\" x2=\"302.0\" y2=\"263.0\" stroke=\"#334155\" stroke-width=\"2.0\" stroke-linecap=\"round\"/><line x1=\"185.0\" y1=\"68.0\" x2=\"68.0\" y2=\"263.0\" stroke=\"#334155\" stroke-width=\"2.0\" stroke-linecap=\"round\"/><line x1=\"68.0\" y1=\"68.0\" x2=\"185.0\" y2=\"68.0\" stroke=\"#334155\" stroke-width=\"2.0\" stroke-linecap=\"round\"/><line x1=\"302.0\" y1=\"263.0\" x2=\"68.0\" y2=\"263.0\" stroke=\"#2563eb\" stroke-width=\"2.0\" stroke-linecap=\"round\"/><text x=\"74.2\" y=\"109.9\" font-size=\"15\" text-anchor=\"middle\" fill=\"#334155\" font-weight=\"600\">4 cm</text><text x=\"198.3\" y=\"105.8\" font-size=\"15\" text-anchor=\"middle\" fill=\"#334155\" font-weight=\"600\">2 cm</text><text x=\"229.1\" y=\"196.9\" font-size=\"13\" text-anchor=\"start\" fill=\"#334155\">6 cm</text><line x1=\"142.0\" y1=\"129.0\" x2=\"150.0\" y2=\"137.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"142.0\" y1=\"137.0\" x2=\"150.0\" y2=\"129.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><text x=\"142.0\" y=\"124.6\" font-size=\"15\" text-anchor=\"middle\" fill=\"#334155\" font-weight=\"600\">O</text><line x1=\"64.0\" y1=\"64.0\" x2=\"72.0\" y2=\"72.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"64.0\" y1=\"72.0\" x2=\"72.0\" y2=\"64.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><text x=\"58.4\" y=\"62.8\" font-size=\"15\" text-anchor=\"middle\" fill=\"#334155\" font-weight=\"600\">K</text><line x1=\"181.0\" y1=\"64.0\" x2=\"189.0\" y2=\"72.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"181.0\" y1=\"72.0\" x2=\"189.0\" y2=\"64.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><text x=\"189.5\" y=\"59.8\" font-size=\"15\" text-anchor=\"middle\" fill=\"#334155\" font-weight=\"600\">L</text><line x1=\"298.0\" y1=\"259.0\" x2=\"306.0\" y2=\"267.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"298.0\" y1=\"267.0\" x2=\"306.0\" y2=\"259.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><text x=\"313.5\" y=\"276.0\" font-size=\"15\" text-anchor=\"middle\" fill=\"#334155\" font-weight=\"600\">N</text><line x1=\"64.0\" y1=\"259.0\" x2=\"72.0\" y2=\"267.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"64.0\" y1=\"267.0\" x2=\"72.0\" y2=\"259.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><text x=\"59.1\" y=\"278.8\" font-size=\"15\" text-anchor=\"middle\" fill=\"#334155\" font-weight=\"600\">P</text></svg>",
+      "answer": {
+        "value": true
+      },
+      "solution_steps": [
+        "K et N sont sur la même droite, de part et d'autre de O : [OK] et [ON] sont homologues. De même [OL] et [OP].",
+        "Thalès : $\\frac{ON}{OK} = \\frac{OP}{OL}$. Or ON ÷ OK = 6 ÷ 4 = 1,5, donc OP = 1,5 × 2 = 3.",
+        "Associer [OK] avec [OP] et [OL] avec [ON], des côtés qui ne se correspondent pas, donnerait 4 × 6 ÷ 2 = 12 cm.",
+        "OP = 3 cm : Paul a **raison**."
+      ],
+      "hint": "Quel point est sur la même droite que K ? Et lequel est sur la même droite que L ?",
+      "estimated_duration_s": 90,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 4, classe de 3e, Espace et géométrie, Triangles, Objectifs d'apprentissage : « Connaitre et appliquer le théorème de Thalès, sa réciproque, sa contraposée (configurations des triangles emboités et configuration dite du papillon). »"
+    },
+    {
+      "id": "EX-G062-M-01",
+      "skill_id": "G062",
+      "level": "maitrise",
+      "type": "numerique",
+      "statement": "Largeur RS d'un étang : les droites (RU) et (SV) se coupent en O, et (RS) est parallèle à (UV). Calcule RS, en m (figure pas en vraie grandeur).",
+      "image": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 344 292\" width=\"344\" height=\"292\" font-family=\"system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif\" role=\"img\"><title>Schéma de piquets : deux segments [RU] et [SV] qui se coupent en O, les segments [UV] et [RS] et des longueurs écrites</title><rect width=\"100%\" height=\"100%\" fill=\"#ffffff\"/><line x1=\"315.0\" y1=\"250.0\" x2=\"42.0\" y2=\"104.4\" stroke=\"#334155\" stroke-width=\"2.0\" stroke-linecap=\"round\"/><line x1=\"315.0\" y1=\"68.0\" x2=\"42.0\" y2=\"177.2\" stroke=\"#334155\" stroke-width=\"2.0\" stroke-linecap=\"round\"/><line x1=\"42.0\" y1=\"104.4\" x2=\"42.0\" y2=\"177.2\" stroke=\"#334155\" stroke-width=\"2.0\" stroke-linecap=\"round\"/><line x1=\"315.0\" y1=\"250.0\" x2=\"315.0\" y2=\"68.0\" stroke=\"#2563eb\" stroke-width=\"2.0\" stroke-linecap=\"round\"/><text x=\"81.0\" y=\"106.8\" font-size=\"15\" text-anchor=\"middle\" fill=\"#334155\" font-weight=\"600\">9 m</text><text x=\"210.9\" y=\"214.5\" font-size=\"13\" text-anchor=\"middle\" fill=\"#334155\">36 m</text><text x=\"34.0\" y=\"145.8\" font-size=\"13\" text-anchor=\"end\" fill=\"#334155\">11 m</text><text x=\"323.0\" y=\"164.0\" font-size=\"13\" text-anchor=\"start\" fill=\"#334155\">?</text><line x1=\"116.0\" y1=\"142.0\" x2=\"124.0\" y2=\"150.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"116.0\" y1=\"150.0\" x2=\"124.0\" y2=\"142.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><text x=\"106.0\" y=\"150.1\" font-size=\"15\" text-anchor=\"middle\" fill=\"#334155\" font-weight=\"600\">O</text><line x1=\"38.0\" y1=\"100.4\" x2=\"46.0\" y2=\"108.4\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"38.0\" y1=\"108.4\" x2=\"46.0\" y2=\"100.4\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><text x=\"28.8\" y=\"104.7\" font-size=\"15\" text-anchor=\"middle\" fill=\"#334155\" font-weight=\"600\">U</text><line x1=\"38.0\" y1=\"173.2\" x2=\"46.0\" y2=\"181.2\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"38.0\" y1=\"181.2\" x2=\"46.0\" y2=\"173.2\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><text x=\"28.3\" y=\"185.3\" font-size=\"15\" text-anchor=\"middle\" fill=\"#334155\" font-weight=\"600\">V</text><line x1=\"311.0\" y1=\"246.0\" x2=\"319.0\" y2=\"254.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"311.0\" y1=\"254.0\" x2=\"319.0\" y2=\"246.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><text x=\"326.6\" y=\"262.9\" font-size=\"15\" text-anchor=\"middle\" fill=\"#334155\" font-weight=\"600\">R</text><line x1=\"311.0\" y1=\"64.0\" x2=\"319.0\" y2=\"72.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"311.0\" y1=\"72.0\" x2=\"319.0\" y2=\"64.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><text x=\"327.3\" y=\"66.3\" font-size=\"15\" text-anchor=\"middle\" fill=\"#334155\" font-weight=\"600\">S</text></svg>",
+      "answer": {
+        "value": 44,
+        "unit": "m"
+      },
+      "solution_steps": [
+        "R, O, U sont alignés, ainsi que S, O, V, et (RS) est parallèle à (UV) : le théorème de Thalès s'applique aux triangles OUV et ORS.",
+        "Côtés homologues : [OU] et [OR], [UV] et [RS]. Donc $\\frac{OU}{OR} = \\frac{UV}{RS}$, soit $\\frac{9}{36} = \\frac{11}{RS}$.",
+        "9 ÷ 36 = 0,25, donc 0,25 × RS = 11 et RS = 11 ÷ 0,25 = 44.",
+        "L'étang mesure **44 m** de large. Le calcul 11 × 9 ÷ 36 = 2,75 associe des côtés qui ne se correspondent pas : RS ne peut pas être plus court que UV."
+      ],
+      "hint": "[RS] est un côté du grand triangle ORS : quel côté du petit triangle lui correspond ?",
+      "estimated_duration_s": 150,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 4, classe de 3e, Espace et géométrie, Triangles, Objectifs d'apprentissage : « Connaitre et appliquer le théorème de Thalès, sa réciproque, sa contraposée (configurations des triangles emboités et configuration dite du papillon). »"
+    },
+    {
+      "id": "EX-G062-M-02",
+      "skill_id": "G062",
+      "level": "maitrise",
+      "type": "qcm",
+      "statement": "Figure pas en vraie grandeur. Les droites (AC) et (BD) se coupent en O, et (AB) est parallèle à (CD). Quel est le périmètre du triangle OCD ?",
+      "image": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 344 292\" width=\"344\" height=\"292\" font-family=\"system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif\" role=\"img\"><title>Deux segments [AC] et [BD] qui se coupent en O, les segments [AB] et [CD] et des longueurs écrites</title><rect width=\"100%\" height=\"100%\" fill=\"#ffffff\"/><line x1=\"81.0\" y1=\"68.0\" x2=\"237.0\" y2=\"185.0\" stroke=\"#334155\" stroke-width=\"2.0\" stroke-linecap=\"round\"/><line x1=\"151.2\" y1=\"44.6\" x2=\"96.6\" y2=\"231.8\" stroke=\"#334155\" stroke-width=\"2.0\" stroke-linecap=\"round\"/><line x1=\"81.0\" y1=\"68.0\" x2=\"151.2\" y2=\"44.6\" stroke=\"#334155\" stroke-width=\"2.0\" stroke-linecap=\"round\"/><line x1=\"237.0\" y1=\"185.0\" x2=\"96.6\" y2=\"231.8\" stroke=\"#2563eb\" stroke-width=\"2.0\" stroke-linecap=\"round\"/><text x=\"78.1\" y=\"107.1\" font-size=\"15\" text-anchor=\"middle\" fill=\"#334155\" font-weight=\"600\">3,2 cm</text><text x=\"174.9\" y=\"75.3\" font-size=\"15\" text-anchor=\"middle\" fill=\"#334155\" font-weight=\"600\">4 cm</text><text x=\"111.7\" y=\"49.0\" font-size=\"13\" text-anchor=\"middle\" fill=\"#334155\">4,8 cm</text><text x=\"189.8\" y=\"144.6\" font-size=\"13\" text-anchor=\"start\" fill=\"#334155\">4 cm</text><line x1=\"129.0\" y1=\"103.0\" x2=\"137.0\" y2=\"111.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"129.0\" y1=\"111.0\" x2=\"137.0\" y2=\"103.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><text x=\"128.6\" y=\"98.7\" font-size=\"15\" text-anchor=\"middle\" fill=\"#334155\" font-weight=\"600\">O</text><line x1=\"77.0\" y1=\"64.0\" x2=\"85.0\" y2=\"72.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"77.0\" y1=\"72.0\" x2=\"85.0\" y2=\"64.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><text x=\"71.1\" y=\"63.1\" font-size=\"15\" text-anchor=\"middle\" fill=\"#334155\" font-weight=\"600\">A</text><line x1=\"147.2\" y1=\"40.6\" x2=\"155.2\" y2=\"48.6\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"147.2\" y1=\"48.6\" x2=\"155.2\" y2=\"40.6\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><text x=\"153.1\" y=\"35.7\" font-size=\"15\" text-anchor=\"middle\" fill=\"#334155\" font-weight=\"600\">B</text><line x1=\"233.0\" y1=\"181.0\" x2=\"241.0\" y2=\"189.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"233.0\" y1=\"189.0\" x2=\"241.0\" y2=\"181.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><text x=\"249.0\" y=\"197.1\" font-size=\"15\" text-anchor=\"middle\" fill=\"#334155\" font-weight=\"600\">C</text><line x1=\"92.6\" y1=\"227.8\" x2=\"100.6\" y2=\"235.8\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"92.6\" y1=\"235.8\" x2=\"100.6\" y2=\"227.8\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><text x=\"91.3\" y=\"249.7\" font-size=\"15\" text-anchor=\"middle\" fill=\"#334155\" font-weight=\"600\">D</text></svg>",
+      "choices": [
+        {
+          "key": "a",
+          "text": "9,6 cm",
+          "misconception": "L'élève renverse le quotient (3,2 ÷ 4 = 0,8) et multiplie les côtés de OAB par 0,8, alors que OCD est le plus grand triangle."
+        },
+        {
+          "key": "b",
+          "text": "12 cm",
+          "misconception": "L'élève associe [OC] au côté voisin [OB] : OC ÷ OB = 1, et il recopie le périmètre de OAB, 3,2 + 4 + 4,8 = 12. Les côtés homologues de [OC] et [OB] sont [OA] et [OD]."
+        },
+        {
+          "key": "c",
+          "text": "14,4 cm",
+          "misconception": "L'élève ajoute 0,8 cm à chaque côté, comme de OA = 3,2 à OC = 4 : les longueurs sont proportionnelles, pas augmentées d'une même quantité."
+        },
+        {
+          "key": "d",
+          "text": "15 cm",
+          "misconception": null
+        }
+      ],
+      "answer": {
+        "value": "d"
+      },
+      "solution_steps": [
+        "A et C sont sur la même droite, de part et d'autre de O : [OA] et [OC] sont homologues ; de même [OB] et [OD], et [AB] et [CD].",
+        "Thalès : $\\frac{OC}{OA} = \\frac{OD}{OB} = \\frac{CD}{AB}$, et OC ÷ OA = 4 ÷ 3,2 = 1,25.",
+        "OD = 1,25 × 4 = 5 et CD = 1,25 × 4,8 = 6.",
+        "Périmètre de OCD : 4 + 5 + 6 = **15 cm**. Bonne réponse : d."
+      ],
+      "hint": "Combien de fois [OC] est-il plus long que son côté homologue [OA] ?",
+      "estimated_duration_s": 150,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 4, classe de 3e, Espace et géométrie, Triangles, Objectifs d'apprentissage : « Connaitre et appliquer le théorème de Thalès, sa réciproque, sa contraposée (configurations des triangles emboités et configuration dite du papillon). »"
     },
     {
       "id": "EX-G063-D-01",
@@ -45041,6 +45577,341 @@
       "estimated_duration_s": 120,
       "review_status": "relu_agent",
       "programme_ref": "Cycle 4, classe de 5e, Espace et géométrie, Représentation de l'espace : « Calculer l'aire du disque, le volume du cylindre de révolution. »"
+    },
+    {
+      "id": "EX-P036-D-01",
+      "skill_id": "P036",
+      "level": "decouverte",
+      "type": "numerique",
+      "statement": "Une fontaine remplit un bassin de 378 L en 18 min, avec un débit constant. Quel est son débit, en L/min ?",
+      "image": null,
+      "answer": {
+        "value": 21,
+        "unit": "L/min"
+      },
+      "solution_steps": [
+        "Le débit est le volume qui s'écoule en une unité de temps : débit = volume ÷ durée.",
+        "378 ÷ 18 = 21.",
+        "Chaque minute, 21 L s'écoulent : le débit est de **21 L/min**. Calculer 18 ÷ 378 donnerait des minutes par litre, pas des litres par minute."
+      ],
+      "hint": "Combien de litres s'écoulent en une minute ?",
+      "estimated_duration_s": 60,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 4, classe de 4e, Proportionnalité, fonctions, Proportionnalité, Objectifs d'apprentissage : « Utiliser des grandeurs quotients, avec ou sans unités. »"
+    },
+    {
+      "id": "EX-P036-D-02",
+      "skill_id": "P036",
+      "level": "decouverte",
+      "type": "qcm",
+      "statement": "Un morceau de chêne de 40 cm³ a une masse de 32 g. Quelle est la masse volumique du chêne ?",
+      "image": null,
+      "choices": [
+        {
+          "key": "a",
+          "text": "1,25 g/cm³",
+          "misconception": "L'élève divise le volume par la masse (40 ÷ 32) : il obtient des cm³ par gramme, pas des grammes par cm³."
+        },
+        {
+          "key": "b",
+          "text": "0,8 g/cm³",
+          "misconception": null
+        },
+        {
+          "key": "c",
+          "text": "1 280 g/cm³",
+          "misconception": "L'élève multiplie la masse par le volume (32 × 40) au lieu de diviser."
+        },
+        {
+          "key": "d",
+          "text": "8 g/cm³",
+          "misconception": "L'élève divise 32 par 4 au lieu de 40 : il perd un zéro du volume."
+        }
+      ],
+      "answer": {
+        "value": "b"
+      },
+      "solution_steps": [
+        "La masse volumique est la masse d'un cm³ : masse volumique = masse ÷ volume, en g/cm³.",
+        "32 ÷ 40 = 0,8.",
+        "Un cm³ de chêne a une masse de 0,8 g : la masse volumique est 0,8 g/cm³. Bonne réponse : b."
+      ],
+      "hint": "Quelle est la masse d'un seul cm³ de chêne ?",
+      "estimated_duration_s": 60,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 4, classe de 4e, Proportionnalité, fonctions, Proportionnalité, Objectifs d'apprentissage : « Utiliser des grandeurs quotients, avec ou sans unités. »"
+    },
+    {
+      "id": "EX-P036-E-01",
+      "skill_id": "P036",
+      "level": "entrainement",
+      "type": "numerique",
+      "statement": "Une pompe a un débit de 25 L/min. Combien de minutes lui faut-il pour remplir une cuve de 1 150 L ?",
+      "image": null,
+      "answer": {
+        "value": 46,
+        "unit": "min"
+      },
+      "solution_steps": [
+        "En 1 min, la pompe fait couler 25 L. La durée est le nombre de fois que 25 L tiennent dans 1 150 L : durée = volume ÷ débit.",
+        "1 150 ÷ 25 = 46.",
+        "Contrôle : 25 × 46 = 1 150. Il faut **46 min**. Multiplier 25 par 1 150 ne donne pas une durée."
+      ],
+      "hint": "Le débit dit combien de litres coulent en une minute. Combien de minutes pour 1 150 L ?",
+      "estimated_duration_s": 75,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 4, classe de 4e, Proportionnalité, fonctions, Proportionnalité, Objectifs d'apprentissage : « Utiliser des grandeurs quotients, avec ou sans unités. »"
+    },
+    {
+      "id": "EX-P036-E-02",
+      "skill_id": "P036",
+      "level": "entrainement",
+      "type": "qcm",
+      "statement": "Une commune de 18 km² compte 4 950 habitants. Quelle est sa densité de population ?",
+      "image": null,
+      "choices": [
+        {
+          "key": "a",
+          "text": "89 100 habitants par km²",
+          "misconception": "L'élève multiplie le nombre d'habitants par l'aire (4 950 × 18) au lieu de diviser."
+        },
+        {
+          "key": "b",
+          "text": "275 km² par habitant",
+          "misconception": "Bon calcul, unité renversée : le quotient habitants ÷ km² se lit en habitants par km², pas en km² par habitant."
+        },
+        {
+          "key": "c",
+          "text": "275 habitants par km²",
+          "misconception": null
+        }
+      ],
+      "answer": {
+        "value": "c"
+      },
+      "solution_steps": [
+        "La densité de population est le nombre d'habitants par km² : densité = nombre d'habitants ÷ aire.",
+        "4 950 ÷ 18 = 275.",
+        "Il y a en moyenne 275 habitants sur chaque km². Bonne réponse : c."
+      ],
+      "hint": "Combien d'habitants vivent, en moyenne, sur un seul km² ?",
+      "estimated_duration_s": 60,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 4, classe de 4e, Proportionnalité, fonctions, Proportionnalité, Objectifs d'apprentissage : « Utiliser des grandeurs quotients, avec ou sans unités. »"
+    },
+    {
+      "id": "EX-P036-M-01",
+      "skill_id": "P036",
+      "level": "maitrise",
+      "type": "vrai_faux",
+      "statement": "Un cycliste monte un col de 15 km à 10 km/h de moyenne, puis redescend les 15 km à 30 km/h. Inès affirme : « Sa vitesse moyenne sur l'aller-retour est 20 km/h. » A-t-elle raison ?",
+      "image": null,
+      "answer": {
+        "value": false
+      },
+      "solution_steps": [
+        "Montée : 15 km à 10 km/h, durée 15 ÷ 10 = 1,5 h. Descente : 15 km à 30 km/h, durée 15 ÷ 30 = 0,5 h.",
+        "Distance totale : 15 + 15 = 30 km. Durée totale : 1,5 + 0,5 = 2 h.",
+        "Vitesse moyenne = distance totale ÷ durée totale = 30 ÷ 2 = 15 km/h.",
+        "Inès fait la moyenne des deux vitesses, (10 + 30) ÷ 2 = 20 : elle oublie que le cycliste roule plus longtemps à la montée. Elle a **tort**."
+      ],
+      "hint": "Calcule la durée de la montée et celle de la descente, puis la distance totale.",
+      "estimated_duration_s": 120,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 4, classe de 4e, Proportionnalité, fonctions, Proportionnalité, Objectifs d'apprentissage : « Utiliser des grandeurs quotients, avec ou sans unités. »"
+    },
+    {
+      "id": "EX-P036-M-02",
+      "skill_id": "P036",
+      "level": "maitrise",
+      "type": "numerique",
+      "statement": "Le robinet bleu remplit 150 L en 6 min, le robinet rouge 96 L en 4 min. Ouverts ensemble, en combien de minutes remplissent-ils une cuve de 1 470 L ?",
+      "image": null,
+      "answer": {
+        "value": 30,
+        "unit": "min"
+      },
+      "solution_steps": [
+        "Débit du robinet bleu : 150 ÷ 6 = 25 L/min. Débit du robinet rouge : 96 ÷ 4 = 24 L/min.",
+        "Ensemble, en une minute, ils versent 25 + 24 = 49 L : les débits s'ajoutent, pas les durées.",
+        "Durée : 1 470 ÷ 49 = 30.",
+        "Il faut **30 min**. Contrôle : 49 × 30 = 1 470."
+      ],
+      "hint": "Calcule d'abord le débit de chaque robinet, en L/min.",
+      "estimated_duration_s": 150,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 4, classe de 4e, Proportionnalité, fonctions, Proportionnalité, Objectifs d'apprentissage : « Utiliser des grandeurs quotients, avec ou sans unités. »"
+    },
+    {
+      "id": "EX-P037-D-01",
+      "skill_id": "P037",
+      "level": "decouverte",
+      "type": "numerique",
+      "statement": "Une voiture roule à 108 km/h sur une voie rapide. Quelle est sa vitesse, en m/s ?",
+      "image": null,
+      "answer": {
+        "value": 30,
+        "unit": "m/s"
+      },
+      "solution_steps": [
+        "108 km/h, c'est 108 km parcourus en 1 h.",
+        "On convertit séparément : 108 km = 108 000 m et 1 h = 3 600 s.",
+        "108 000 ÷ 3 600 = 30 : la voiture parcourt 30 m chaque seconde.",
+        "Vitesse : **30 m/s**. Diviser 108 par 60 ne convertirait que les heures en minutes, en gardant les kilomètres."
+      ],
+      "hint": "Convertis les kilomètres en mètres et l'heure en secondes, puis divise.",
+      "estimated_duration_s": 75,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 4, classe de 4e, Proportionnalité, fonctions, Proportionnalité, Objectifs d'apprentissage : « Utiliser des grandeurs quotients, avec ou sans unités. »"
+    },
+    {
+      "id": "EX-P037-D-02",
+      "skill_id": "P037",
+      "level": "decouverte",
+      "type": "qcm",
+      "statement": "Un train roule à 120 km/h pendant 1 h 45 min. Quelle distance parcourt-il ?",
+      "image": null,
+      "choices": [
+        {
+          "key": "a",
+          "text": "174 km",
+          "misconception": "L'élève lit 1 h 45 min comme 1,45 h : 120 × 1,45 = 174. Or 45 min ne font pas 0,45 h."
+        },
+        {
+          "key": "b",
+          "text": "12 600 km",
+          "misconception": "L'élève convertit la durée en minutes (105 min) mais garde la vitesse en km par heure : 120 × 105."
+        },
+        {
+          "key": "c",
+          "text": "210 km",
+          "misconception": null
+        },
+        {
+          "key": "d",
+          "text": "165 km",
+          "misconception": "L'élève compte 120 km pour 1 h et 45 km pour 45 min, comme si le train faisait 1 km par minute."
+        }
+      ],
+      "answer": {
+        "value": "c"
+      },
+      "solution_steps": [
+        "45 min = 45 ÷ 60 h = 0,75 h, donc 1 h 45 min = 1,75 h.",
+        "Distance = vitesse × durée = 120 × 1,75 = 210.",
+        "Le train parcourt 210 km. Bonne réponse : c."
+      ],
+      "hint": "Écris d'abord 1 h 45 min en heures. Combien d'heures font 45 minutes ?",
+      "estimated_duration_s": 75,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 4, classe de 4e, Proportionnalité, fonctions, Proportionnalité, Objectifs d'apprentissage : « Utiliser des grandeurs quotients, avec ou sans unités. »"
+    },
+    {
+      "id": "EX-P037-E-01",
+      "skill_id": "P037",
+      "level": "entrainement",
+      "type": "numerique",
+      "statement": "Un faucon pèlerin pique à 35 m/s. Quelle est sa vitesse, en km/h ?",
+      "image": null,
+      "answer": {
+        "value": 126,
+        "unit": "km/h"
+      },
+      "solution_steps": [
+        "35 m/s : le faucon parcourt 35 m en 1 s.",
+        "En 1 h = 3 600 s, il parcourt 35 × 3 600 = 126 000 m.",
+        "126 000 m = 126 km : la vitesse est de **126 km/h**.",
+        "Contrôle : la même vitesse s'écrit avec un nombre 3,6 fois plus grand en km/h qu'en m/s, et 35 × 3,6 = 126. Diviser par 3,6 donnerait un nombre plus petit, faux."
+      ],
+      "hint": "Combien de mètres parcourt-il en une heure, c'est-à-dire en 3 600 s ?",
+      "estimated_duration_s": 90,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 4, classe de 4e, Proportionnalité, fonctions, Proportionnalité, Objectifs d'apprentissage : « Utiliser des grandeurs quotients, avec ou sans unités. »"
+    },
+    {
+      "id": "EX-P037-E-02",
+      "skill_id": "P037",
+      "level": "entrainement",
+      "type": "qcm",
+      "statement": "Une pompe débite 45 L/min. Quel est son débit en m³/h ?",
+      "image": null,
+      "choices": [
+        {
+          "key": "a",
+          "text": "2,7 m³/h",
+          "misconception": null
+        },
+        {
+          "key": "b",
+          "text": "2 700 m³/h",
+          "misconception": "L'élève passe des minutes aux heures (45 × 60) mais oublie de convertir les litres en m³."
+        },
+        {
+          "key": "c",
+          "text": "0,75 m³/h",
+          "misconception": "L'élève divise par 60 au lieu de multiplier (45 ÷ 60 = 0,75) et oublie de convertir les litres en m³."
+        },
+        {
+          "key": "d",
+          "text": "0,045 m³/h",
+          "misconception": "L'élève convertit les litres en m³ mais garde le volume d'une seule minute."
+        }
+      ],
+      "answer": {
+        "value": "a"
+      },
+      "solution_steps": [
+        "En 1 h = 60 min, la pompe débite 45 × 60 = 2 700 L.",
+        "1 m³ = 1 000 L, donc 2 700 L = 2 700 ÷ 1 000 = 2,7 m³.",
+        "Le débit est 2,7 m³/h. Bonne réponse : a."
+      ],
+      "hint": "Convertis séparément : les litres en m³, et la minute en heure.",
+      "estimated_duration_s": 90,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 4, classe de 4e, Proportionnalité, fonctions, Proportionnalité, Objectifs d'apprentissage : « Utiliser des grandeurs quotients, avec ou sans unités. »"
+    },
+    {
+      "id": "EX-P037-M-01",
+      "skill_id": "P037",
+      "level": "maitrise",
+      "type": "vrai_faux",
+      "statement": "Lou court 400 m en 1 min 20 s. Elle affirme : « Je cours moins vite qu'un cycliste qui roule à 19 km/h. » A-t-elle raison ?",
+      "image": null,
+      "answer": {
+        "value": true
+      },
+      "solution_steps": [
+        "1 min 20 s = 60 s + 20 s = 80 s. Vitesse de Lou : 400 ÷ 80 = 5 m/s.",
+        "En 1 h = 3 600 s, elle parcourrait 5 × 3 600 = 18 000 m = 18 km : Lou court à 18 km/h.",
+        "18 km/h est moins que 19 km/h : Lou est moins rapide que le cycliste. Elle a **raison**.",
+        "Lire 1 min 20 s comme 1,2 min, soit 72 s, donnerait 400 ÷ 72 × 3,6 = 20 km/h, plus que 19 km/h : c'est l'erreur à éviter."
+      ],
+      "hint": "Écris les deux vitesses dans la même unité avant de les comparer.",
+      "estimated_duration_s": 120,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 4, classe de 4e, Proportionnalité, fonctions, Proportionnalité, Objectifs d'apprentissage : « Utiliser des grandeurs quotients, avec ou sans unités. »"
+    },
+    {
+      "id": "EX-P037-M-02",
+      "skill_id": "P037",
+      "level": "maitrise",
+      "type": "numerique",
+      "statement": "Un bus roule à la vitesse moyenne de 84 km/h. Combien de minutes dure un trajet de 63 km ?",
+      "image": null,
+      "answer": {
+        "value": 45,
+        "unit": "min"
+      },
+      "solution_steps": [
+        "84 km/h, c'est 84 km en 60 min : en 1 min, le bus parcourt 84 ÷ 60 = 1,4 km.",
+        "Durée : 63 ÷ 1,4 = 45.",
+        "Autre chemin : 63 ÷ 84 = 0,75 h, et 0,75 h = 0,75 × 60 min = 45 min.",
+        "Le trajet dure **45 min**. Lire 0,75 h comme 75 min est l'erreur à éviter."
+      ],
+      "hint": "Quelle distance le bus parcourt-il en une minute ?",
+      "estimated_duration_s": 120,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 4, classe de 4e, Proportionnalité, fonctions, Proportionnalité, Objectifs d'apprentissage : « Utiliser des grandeurs quotients, avec ou sans unités. »"
     }
   ]
 }

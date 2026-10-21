@@ -1,0 +1,85 @@
+{
+  "type": "geometrie",
+  "params": {
+    "colonnes": 12,
+    "lignes": 10,
+    "points": {
+      "T": [
+        6,
+        1
+      ],
+      "U": [
+        1,
+        9
+      ],
+      "V": [
+        "6.5",
+        9
+      ],
+      "X": [
+        "3.5",
+        5
+      ],
+      "Y": [
+        "6.25",
+        5
+      ]
+    },
+    "elements": [
+      {
+        "segment": [
+          "T",
+          "U"
+        ]
+      },
+      {
+        "segment": [
+          "T",
+          "V"
+        ]
+      },
+      {
+        "segment": [
+          "U",
+          "V"
+        ]
+      },
+      {
+        "segment": [
+          "X",
+          "Y"
+        ],
+        "couleur": "accent"
+      },
+      {
+        "longueur": [
+          "T",
+          "X"
+        ],
+        "texte": "3 cm"
+      },
+      {
+        "longueur": [
+          "X",
+          "U"
+        ],
+        "texte": "4,5 cm"
+      },
+      {
+        "longueur": [
+          "X",
+          "Y"
+        ],
+        "texte": "2,6 cm"
+      },
+      {
+        "longueur": [
+          "U",
+          "V"
+        ],
+        "texte": "?"
+      }
+    ]
+  },
+  "alt": "Triangle TUV avec un point X sur [TU], un point Y sur [TV], le segment [XY] et des longueurs écrites"
+}

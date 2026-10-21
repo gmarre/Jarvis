@@ -1,0 +1,175 @@
+[
+  {
+    "id": "EX-G042-D-01",
+    "skill_id": "G042",
+    "level": "decouverte",
+    "type": "qcm",
+    "statement": "M est sur [AB], N sur [AC], et (MN) est parallèle à (BC). Quelle égalité donne le théorème de Thalès ?",
+    "image": "figures/EX-G042-D-01",
+    "choices": [
+      {
+        "key": "a",
+        "text": "$\\frac{AM}{MB} = \\frac{AN}{NC} = \\frac{MN}{BC}$",
+        "misconception": "L'élève prend [MB] et [NC], qui ne sont pas des côtés du grand triangle : MN/BC n'est pas égal à AM/MB."
+      },
+      {
+        "key": "b",
+        "text": "$\\frac{AM}{AB} = \\frac{AC}{AN} = \\frac{MN}{BC}$",
+        "misconception": "L'élève renverse le deuxième quotient : le grand côté passe au numérateur."
+      },
+      {
+        "key": "c",
+        "text": "$\\frac{AM}{AB} = \\frac{AN}{AC} = \\frac{MN}{BC}$",
+        "misconception": null
+      },
+      {
+        "key": "d",
+        "text": "$\\frac{AM}{AC} = \\frac{AN}{AB} = \\frac{MN}{BC}$",
+        "misconception": "L'élève associe des côtés qui ne sont pas sur la même droite : [AM] avec [AC], [AN] avec [AB]."
+      }
+    ],
+    "answer": {
+      "value": "c"
+    },
+    "solution_steps": [
+      "Les points A, M, B sont alignés, ainsi que A, N, C, et (MN) est parallèle à (BC) : le petit triangle AMN et le grand triangle ABC ont leurs longueurs proportionnelles.",
+      "On associe les côtés homologues : [AM] et [AB] sur la même droite, [AN] et [AC] sur l'autre, [MN] et [BC] parallèles.",
+      "Chaque quotient a au numérateur un côté du petit triangle et au dénominateur le côté homologue du grand : $\\frac{AM}{AB} = \\frac{AN}{AC} = \\frac{MN}{BC}$. Bonne réponse : c."
+    ],
+    "hint": "Mets les côtés du petit triangle AMN en haut, et les côtés homologues du grand triangle ABC en bas.",
+    "estimated_duration_s": 60,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, classe de 3e, Espace et géométrie, Triangles, Objectifs d'apprentissage : « Connaitre et appliquer le théorème de Thalès, sa réciproque, sa contraposée (configurations des triangles emboités et configuration dite du papillon). »"
+  },
+  {
+    "id": "EX-G042-D-02",
+    "skill_id": "G042",
+    "level": "decouverte",
+    "type": "numerique",
+    "statement": "Figure pas en vraie grandeur. K est sur [EF], L sur [EG], (KL) est parallèle à (FG), EF = 4 cm et EG = 5,2 cm. Calcule EL, en cm.",
+    "image": "figures/EX-G042-D-02",
+    "answer": {
+      "value": 3.9,
+      "unit": "cm"
+    },
+    "solution_steps": [
+      "E, K, F sont alignés, ainsi que E, L, G, et (KL) est parallèle à (FG) : le théorème de Thalès s'applique aux triangles EKL et EFG.",
+      "$\\frac{EK}{EF} = \\frac{EL}{EG} = \\frac{KL}{FG}$, donc $\\frac{3}{4} = \\frac{EL}{5{,}2}$.",
+      "3 ÷ 4 = 0,75, donc EL = 0,75 × 5,2 = 3,9.",
+      "EL = **3,9 cm**. Contrôle : EL est plus petit que EG, comme EK est plus petit que EF."
+    ],
+    "hint": "Écris l'égalité des quotients, puis garde les deux qui contiennent EK et EL.",
+    "estimated_duration_s": 75,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, classe de 3e, Espace et géométrie, Triangles, Objectifs d'apprentissage : « Connaitre et appliquer le théorème de Thalès, sa réciproque, sa contraposée (configurations des triangles emboités et configuration dite du papillon). »"
+  },
+  {
+    "id": "EX-G042-E-01",
+    "skill_id": "G042",
+    "level": "entrainement",
+    "type": "numerique",
+    "statement": "Figure pas en vraie grandeur. X est sur [TU], Y sur [TV], et (XY) est parallèle à (UV). Calcule UV, en cm.",
+    "image": "figures/EX-G042-E-01",
+    "answer": {
+      "value": 6.5,
+      "unit": "cm"
+    },
+    "solution_steps": [
+      "T, X, U sont alignés, ainsi que T, Y, V, et (XY) est parallèle à (UV) : le théorème de Thalès s'applique aux triangles TXY et TUV.",
+      "Le côté du grand triangle est [TU] : TU = TX + XU = 3 + 4,5 = 7,5.",
+      "$\\frac{TX}{TU} = \\frac{TY}{TV} = \\frac{XY}{UV}$, donc $\\frac{3}{7{,}5} = \\frac{2{,}6}{UV}$.",
+      "3 ÷ 7,5 = 0,4, donc 0,4 × UV = 2,6 et UV = 2,6 ÷ 0,4 = 6,5.",
+      "UV = **6,5 cm**. Avec XU au lieu de TU, on trouverait 3,9 cm : [XU] n'est pas un côté du grand triangle."
+    ],
+    "hint": "Quelle est la longueur du côté [TU] du grand triangle ?",
+    "estimated_duration_s": 120,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, classe de 3e, Espace et géométrie, Triangles, Objectifs d'apprentissage : « Connaitre et appliquer le théorème de Thalès, sa réciproque, sa contraposée (configurations des triangles emboités et configuration dite du papillon). »"
+  },
+  {
+    "id": "EX-G042-E-02",
+    "skill_id": "G042",
+    "level": "entrainement",
+    "type": "vrai_faux",
+    "statement": "Sur la figure, S est sur [HJ] et W sur [HK]. Hugo calcule HW à partir de HS, HJ et HK, avec le théorème de Thalès. A-t-il raison ?",
+    "image": "figures/EX-G042-E-02",
+    "answer": {
+      "value": false
+    },
+    "solution_steps": [
+      "Le théorème de Thalès demande deux droites parallèles : ici, il faudrait que (SW) soit parallèle à (JK).",
+      "Ni l'énoncé ni la figure ne le disent. Même si les droites semblent parallèles, la mesure n'est pas une preuve.",
+      "Le théorème ne s'applique pas : le calcul de Hugo n'est pas justifié. Hugo a **tort**."
+    ],
+    "hint": "Quelles sont les hypothèses du théorème de Thalès ? Sont-elles toutes données ?",
+    "estimated_duration_s": 60,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, classe de 3e, Espace et géométrie, Triangles, Objectifs d'apprentissage : « Connaitre et appliquer le théorème de Thalès, sa réciproque, sa contraposée (configurations des triangles emboités et configuration dite du papillon). »"
+  },
+  {
+    "id": "EX-G042-M-01",
+    "skill_id": "G042",
+    "level": "maitrise",
+    "type": "numerique",
+    "statement": "Un bâton [MN] de 1,2 m et un arbre [BC] sont verticaux, sur un sol horizontal ; A, N, C sont alignés (figure pas en vraie grandeur). Quelle est la hauteur BC, en m ?",
+    "image": "figures/EX-G042-M-01",
+    "answer": {
+      "value": 7.5,
+      "unit": "m"
+    },
+    "solution_steps": [
+      "Le bâton et l'arbre sont perpendiculaires au sol. Deux droites perpendiculaires à une même droite sont parallèles : (MN) est parallèle à (BC).",
+      "A, M, B sont alignés (le sol), ainsi que A, N, C : le théorème de Thalès s'applique aux triangles AMN et ABC.",
+      "AB = AM + MB = 1,6 + 8,4 = 10.",
+      "$\\frac{AM}{AB} = \\frac{MN}{BC}$, donc $\\frac{1{,}6}{10} = \\frac{1{,}2}{BC}$ : 0,16 × BC = 1,2 et BC = 1,2 ÷ 0,16 = 7,5.",
+      "L'arbre mesure **7,5 m**. Avec MB à la place de AB, on trouverait 6,3 m."
+    ],
+    "hint": "Pourquoi (MN) est-elle parallèle à (BC) ? Puis cherche la longueur AB.",
+    "estimated_duration_s": 150,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, classe de 3e, Espace et géométrie, Triangles, Objectifs d'apprentissage : « Connaitre et appliquer le théorème de Thalès, sa réciproque, sa contraposée (configurations des triangles emboités et configuration dite du papillon). »"
+  },
+  {
+    "id": "EX-G042-M-02",
+    "skill_id": "G042",
+    "level": "maitrise",
+    "type": "qcm",
+    "statement": "Figure pas en vraie grandeur. E est sur [PQ], F sur [PR], (EF) est parallèle à (QR), PQ = 9 cm, PR = 12,5 cm et PF = 7,5 cm. Combien mesure EQ ?",
+    "image": "figures/EX-G042-M-02",
+    "choices": [
+      {
+        "key": "a",
+        "text": "5,4 cm",
+        "misconception": "L'élève calcule PE et s'arrête : on demandait EQ, l'autre morceau de [PQ]."
+      },
+      {
+        "key": "b",
+        "text": "3,6 cm",
+        "misconception": null
+      },
+      {
+        "key": "c",
+        "text": "15 cm",
+        "misconception": "L'élève renverse un quotient : 9 × 12,5 ÷ 7,5 = 15, plus long que [PQ] lui-même."
+      },
+      {
+        "key": "d",
+        "text": "5 cm",
+        "misconception": "L'élève croit EQ égal à FR = 12,5 − 7,5 = 5 : les morceaux des deux côtés ne sont pas égaux, ils sont proportionnels."
+      }
+    ],
+    "answer": {
+      "value": "b"
+    },
+    "solution_steps": [
+      "Le théorème de Thalès dans les triangles PEF et PQR donne $\\frac{PE}{PQ} = \\frac{PF}{PR}$.",
+      "PF ÷ PR = 7,5 ÷ 12,5 = 0,6, donc PE ÷ 9 = 0,6 et PE = 0,6 × 9 = 5,4.",
+      "E est sur [PQ] : EQ = PQ − PE = 9 − 5,4 = 3,6.",
+      "Bonne réponse : b, **3,6 cm**."
+    ],
+    "hint": "Calcule d'abord PE avec le théorème de Thalès. Où se trouve E sur [PQ] ?",
+    "estimated_duration_s": 150,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, classe de 3e, Espace et géométrie, Triangles, Objectifs d'apprentissage : « Connaitre et appliquer le théorème de Thalès, sa réciproque, sa contraposée (configurations des triangles emboités et configuration dite du papillon). »"
+  }
+]

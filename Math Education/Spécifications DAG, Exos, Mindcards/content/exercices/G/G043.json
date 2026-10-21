@@ -1,0 +1,193 @@
+[
+  {
+    "id": "EX-G043-D-01",
+    "skill_id": "G043",
+    "level": "decouverte",
+    "type": "qcm",
+    "statement": "A, M, B et A, N, C sont alignés dans cet ordre. Pour savoir si (MN) est parallèle à (BC), quels quotients compare-t-on ?",
+    "image": "figures/EX-G043-D-01",
+    "choices": [
+      {
+        "key": "a",
+        "text": "$\\frac{AM}{AB}$ et $\\frac{MN}{BC}$",
+        "misconception": "Le quotient MN/BC ne sert pas à prouver le parallélisme : seuls les quotients pris sur les deux droites sécantes comptent."
+      },
+      {
+        "key": "b",
+        "text": "$\\frac{AM}{AB}$ et $\\frac{AN}{AC}$",
+        "misconception": null
+      },
+      {
+        "key": "c",
+        "text": "$\\frac{AM}{MB}$ et $\\frac{AN}{AC}$",
+        "misconception": "L'élève mélange : un quotient compare deux morceaux de [AB], l'autre un morceau et le côté entier [AC]."
+      },
+      {
+        "key": "d",
+        "text": "$\\frac{AB}{AM}$ et $\\frac{AN}{AC}$",
+        "misconception": "Un des quotients est renversé : le côté entier est au numérateur d'un côté et au dénominateur de l'autre."
+      }
+    ],
+    "answer": {
+      "value": "b"
+    },
+    "solution_steps": [
+      "La réciproque du théorème de Thalès compare deux quotients pris sur les deux droites qui se coupent en A, dans le même sens : un morceau sur le côté entier.",
+      "Sur la droite (AB) : $\\frac{AM}{AB}$. Sur la droite (AC) : $\\frac{AN}{AC}$.",
+      "S'ils sont égaux, et comme les points sont alignés dans le même ordre, (MN) est parallèle à (BC) ; sinon, elle ne l'est pas. Bonne réponse : b."
+    ],
+    "hint": "Prends un quotient sur chacune des deux droites qui passent par A, construits de la même façon.",
+    "estimated_duration_s": 60,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, classe de 3e, Espace et géométrie, Triangles, Objectifs d'apprentissage : « Connaitre et appliquer le théorème de Thalès, sa réciproque, sa contraposée (configurations des triangles emboités et configuration dite du papillon). »"
+  },
+  {
+    "id": "EX-G043-D-02",
+    "skill_id": "G043",
+    "level": "decouverte",
+    "type": "vrai_faux",
+    "statement": "Figure pas en vraie grandeur. K, E, P et K, F, Q sont alignés dans cet ordre ; KP = 6 cm, KQ = 8 cm. Vrai ou faux : (EF) est parallèle à (PQ).",
+    "image": "figures/EX-G043-D-02",
+    "answer": {
+      "value": true
+    },
+    "solution_steps": [
+      "On calcule séparément les deux quotients : KE ÷ KP = 2,1 ÷ 6 = 0,35 et KF ÷ KQ = 2,8 ÷ 8 = 0,35.",
+      "Les quotients sont égaux : $\\frac{KE}{KP} = \\frac{KF}{KQ}$, et les points sont alignés dans le même ordre.",
+      "D'après la réciproque du théorème de Thalès, (EF) est parallèle à (PQ) : l'affirmation est **vraie**."
+    ],
+    "hint": "Calcule KE ÷ KP, puis KF ÷ KQ, et compare.",
+    "estimated_duration_s": 75,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, classe de 3e, Espace et géométrie, Triangles, Objectifs d'apprentissage : « Connaitre et appliquer le théorème de Thalès, sa réciproque, sa contraposée (configurations des triangles emboités et configuration dite du papillon). »"
+  },
+  {
+    "id": "EX-G043-E-01",
+    "skill_id": "G043",
+    "level": "entrainement",
+    "type": "qcm",
+    "statement": "Figure pas en vraie grandeur. (EG) et (FH) se coupent en O ; OE = 4,5 cm, OG = 7,5 cm, OF = 6 cm, OH = 9,6 cm. Que peut-on conclure ?",
+    "image": "figures/EX-G043-E-01",
+    "choices": [
+      {
+        "key": "a",
+        "text": "(EF) et (GH) sont parallèles, d'après la réciproque du théorème de Thalès.",
+        "misconception": "L'élève juge 0,6 et 0,625 assez proches : l'égalité doit être exacte."
+      },
+      {
+        "key": "b",
+        "text": "On ne peut rien conclure, car les quotients ne sont pas égaux.",
+        "misconception": "L'élève oublie la contraposée : des quotients différents prouvent que les droites ne sont pas parallèles."
+      },
+      {
+        "key": "c",
+        "text": "(EF) et (GH) ne sont pas parallèles, d'après la contraposée du théorème de Thalès.",
+        "misconception": null
+      },
+      {
+        "key": "d",
+        "text": "(EF) et (GH) ne sont pas parallèles, d'après la réciproque du théorème de Thalès.",
+        "misconception": "Bonne conclusion, mauvais théorème : la réciproque part de quotients égaux pour conclure au parallélisme."
+      }
+    ],
+    "answer": {
+      "value": "c"
+    },
+    "solution_steps": [
+      "E, O, G sont alignés, ainsi que F, O, H, dans le même ordre. On calcule séparément : OE ÷ OG = 4,5 ÷ 7,5 = 0,6 et OF ÷ OH = 6 ÷ 9,6 = 0,625.",
+      "0,6 et 0,625 ne sont pas égaux.",
+      "La contraposée du théorème de Thalès dit : si les quotients ne sont pas égaux, les droites ne sont pas parallèles. Donc (EF) et (GH) ne sont pas parallèles, même si l'écart ne se voit pas sur le dessin.",
+      "Bonne réponse : c."
+    ],
+    "hint": "Calcule les deux quotients. Quel théorème conclut quand ils sont différents ?",
+    "estimated_duration_s": 120,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, classe de 3e, Espace et géométrie, Triangles, Objectifs d'apprentissage : « Connaitre et appliquer le théorème de Thalès, sa réciproque, sa contraposée (configurations des triangles emboités et configuration dite du papillon). »"
+  },
+  {
+    "id": "EX-G043-E-02",
+    "skill_id": "G043",
+    "level": "entrainement",
+    "type": "vrai_faux",
+    "statement": "Figure pas en vraie grandeur : ZQ = 4,5 cm et ZY = 5 cm. Eva trouve $\\frac{ZP}{ZQ} \\approx 0{,}78$ et $\\frac{ZX}{ZY} = 0{,}78$, donc (PX) est parallèle à (QY). A-t-elle raison ?",
+    "image": "figures/EX-G043-E-02",
+    "answer": {
+      "value": false
+    },
+    "solution_steps": [
+      "En valeur exacte : $\\frac{ZP}{ZQ} = \\frac{3{,}5}{4{,}5} = \\frac{35}{45} = \\frac{7}{9}$ et $\\frac{ZX}{ZY} = \\frac{3{,}9}{5} = \\frac{78}{100} = \\frac{39}{50}$.",
+      "Même dénominateur 450 : $\\frac{7}{9} = \\frac{350}{450}$ et $\\frac{39}{50} = \\frac{351}{450}$. Les quotients ne sont pas égaux : 7 ÷ 9 = 0,777…, qu'Eva a arrondi au centième, 0,78.",
+      "D'après la contraposée du théorème de Thalès, (PX) et (QY) ne sont pas parallèles.",
+      "Eva a comparé des valeurs arrondies : elle a **tort**."
+    ],
+    "hint": "Compare les deux quotients en valeur exacte, sous forme de fractions.",
+    "estimated_duration_s": 150,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, classe de 3e, Espace et géométrie, Triangles, Objectifs d'apprentissage : « Connaitre et appliquer le théorème de Thalès, sa réciproque, sa contraposée (configurations des triangles emboités et configuration dite du papillon). »"
+  },
+  {
+    "id": "EX-G043-M-01",
+    "skill_id": "G043",
+    "level": "maitrise",
+    "type": "numerique",
+    "statement": "Figure pas en vraie grandeur. W, E, F et W, G, H sont alignés dans cet ordre ; WF = 6 cm. Quelle longueur WH, en cm, rend (EG) parallèle à (FH) ?",
+    "image": "figures/EX-G043-M-01",
+    "answer": {
+      "value": 7,
+      "unit": "cm"
+    },
+    "solution_steps": [
+      "Les points sont alignés dans le même ordre : d'après la réciproque du théorème de Thalès, (EG) est parallèle à (FH) dès que $\\frac{WE}{WF} = \\frac{WG}{WH}$.",
+      "WE ÷ WF = 3,6 ÷ 6 = 0,6.",
+      "$0{,}6 = \\frac{4{,}2}{WH}$, donc 0,6 × WH = 4,2 et WH = 4,2 ÷ 0,6 = 7.",
+      "WH = **7 cm**. Ajouter à WG l'écart entre WE et WF (4,2 + 2,4 = 6,6) ne rend pas les quotients égaux : 4,2 ÷ 6,6 n'est pas 0,6."
+    ],
+    "hint": "Quels quotients doivent être égaux pour que la réciproque s'applique ?",
+    "estimated_duration_s": 120,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, classe de 3e, Espace et géométrie, Triangles, Objectifs d'apprentissage : « Connaitre et appliquer le théorème de Thalès, sa réciproque, sa contraposée (configurations des triangles emboités et configuration dite du papillon). »"
+  },
+  {
+    "id": "EX-G043-M-02",
+    "skill_id": "G043",
+    "level": "maitrise",
+    "type": "qcm",
+    "statement": "Les pieds [PG] et [QH] d'un tréteau se croisent en O (figure pas en vraie grandeur). Le plateau (GH) est-il parallèle au sol (PQ) ?",
+    "image": "figures/EX-G043-M-02",
+    "choices": [
+      {
+        "key": "a",
+        "text": "Non, d'après la contraposée du théorème de Thalès.",
+        "misconception": "L'élève compare OG ÷ OQ = 48 ÷ 70, environ 0,69, et OH ÷ OP = 56 ÷ 60, environ 0,93 : ces longueurs ne sont pas sur la même droite."
+      },
+      {
+        "key": "b",
+        "text": "Oui, d'après le théorème de Thalès.",
+        "misconception": "Le théorème de Thalès part de droites parallèles : il ne peut pas servir à prouver qu'elles le sont."
+      },
+      {
+        "key": "c",
+        "text": "On ne peut pas savoir sans mesurer les angles.",
+        "misconception": "L'élève ignore la réciproque du théorème de Thalès, qui conclut à partir des seules longueurs."
+      },
+      {
+        "key": "d",
+        "text": "Oui, d'après la réciproque du théorème de Thalès.",
+        "misconception": null
+      }
+    ],
+    "answer": {
+      "value": "d"
+    },
+    "solution_steps": [
+      "G, O, P sont alignés, ainsi que H, O, Q, dans le même ordre : [OG] et [OP] sont sur une droite, [OH] et [OQ] sur l'autre.",
+      "On calcule séparément : OG ÷ OP = 48 ÷ 60 = 0,8 et OH ÷ OQ = 56 ÷ 70 = 0,8.",
+      "Les quotients sont égaux : d'après la réciproque du théorème de Thalès, (GH) est parallèle à (PQ). Le théorème de Thalès lui-même suppose déjà les droites parallèles : il ne sert pas à le prouver.",
+      "Bonne réponse : d."
+    ],
+    "hint": "Compare OG ÷ OP et OH ÷ OQ : chaque quotient reste sur une seule droite.",
+    "estimated_duration_s": 150,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, classe de 3e, Espace et géométrie, Triangles, Objectifs d'apprentissage : « Connaitre et appliquer le théorème de Thalès, sa réciproque, sa contraposée (configurations des triangles emboités et configuration dite du papillon). »"
+  }
+]

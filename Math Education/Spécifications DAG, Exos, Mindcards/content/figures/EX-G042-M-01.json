@@ -1,0 +1,97 @@
+{
+  "type": "geometrie",
+  "params": {
+    "colonnes": 12,
+    "lignes": 10,
+    "points": {
+      "A": [
+        1,
+        9
+      ],
+      "B": [
+        11,
+        9
+      ],
+      "C": [
+        11,
+        4
+      ],
+      "M": [
+        4,
+        9
+      ],
+      "N": [
+        4,
+        "7.5"
+      ]
+    },
+    "elements": [
+      {
+        "segment": [
+          "A",
+          "B"
+        ]
+      },
+      {
+        "segment": [
+          "A",
+          "C"
+        ],
+        "style": "pointille"
+      },
+      {
+        "segment": [
+          "B",
+          "C"
+        ]
+      },
+      {
+        "segment": [
+          "M",
+          "N"
+        ],
+        "couleur": "accent"
+      },
+      {
+        "angle_droit": [
+          "A",
+          "M",
+          "N"
+        ]
+      },
+      {
+        "angle_droit": [
+          "A",
+          "B",
+          "C"
+        ]
+      },
+      {
+        "longueur": [
+          "A",
+          "M"
+        ],
+        "texte": "1,6 m"
+      },
+      {
+        "longueur": [
+          "M",
+          "B"
+        ],
+        "texte": "8,4 m"
+      },
+      {
+        "longueur": [
+          "B",
+          "C"
+        ],
+        "texte": "?"
+      }
+    ],
+    "etiquettes": {
+      "N": "haut",
+      "M": "bas"
+    }
+  },
+  "alt": "Schéma d'un bâton [MN] et d'un arbre [BC] posés sur le sol, d'un rayon de soleil [AC] et de longueurs écrites"
+}
