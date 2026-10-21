@@ -372,6 +372,8 @@ function texteAlgebrique(raw: string): string {
     .replace(new RegExp(FOIS, 'g'), '*')
     .replace(DIVISE, '/')
     .replace(/racine\s*(carree\s*)?(de\s*)?/g, RACINE)
+    // « 36pi » : π tape en lettres (etape 8), jamais au milieu d'un mot.
+    .replace(/(?<![a-z])pi(?![a-z])/g, PI)
     // Crochets ecrits comme au college : « (x − 2)[3x + 4] » (releve en
     // relecture de l'etape 7, lot L5).
     .replace(/\[/g, '(')
@@ -394,11 +396,16 @@ function lireExpression(texte: string, variables: string[]): Noeud | null {
   let i = 0
   const voir = (): string | undefined => s[i]
   const debutFacteur = (c: string | undefined) =>
-    c !== undefined && (/[\d(]/.test(c) || c === RACINE || variables.includes(c))
+    c !== undefined && (/[\d(]/.test(c) || c === RACINE || c === PI || variables.includes(c))
 
   function primaire(): Noeud | null {
     const c = voir()
     if (c === undefined) return null
+    // π est une constante, pas une lettre a declarer : « 36π », « 2πr » (etape 8).
+    if (c === PI) {
+      i += 1
+      return { t: 'num', v: Math.PI }
+    }
     if (/\d/.test(c)) {
       const m = /^\d+(?:\.\d+)?/.exec(s.slice(i)) as RegExpExecArray
       i += m[0].length

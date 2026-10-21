@@ -196,6 +196,12 @@ describe('factorisation complete (etape 7, releve des redacteurs)', () => {
     tousJustes(exo('3(x² + 1)', 'factorisee'), ['3(x^2+1)'])
     tousJustes(exo('(x + 1)(x² − 2)', 'factorisee'), ['(x+1)(x^2-2)'])
   })
+  it('lit π comme une constante, tape ou en lettres (etape 8)', () => {
+    tousJustes(exo('36π', 'expression'), ['36π', '36pi', '36 pi', 'π×36', '36*π'])
+    tousFaux(exo('36π', 'expression'), ['113,1', '36', '36×3,14', '6π'])
+    tousJustes(exo('2πr', 'expression', { variables: ['r'] }), ['2πr', '2*pi*r', 'r×2π', '2rπ'])
+    tousFaux(exo('2πr', 'expression', { variables: ['r'] }), ['πr²', '2r'])
+  })
   it('garde les identites remarquables et les carres', () => {
     tousJustes(exo('(2x − 3)(2x + 3)', 'factorisee'), ['(2x+3)(2x-3)'])
     tousJustes(exo('(x + 5)²', 'factorisee'), ['(5+x)^2'])
