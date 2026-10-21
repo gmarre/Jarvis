@@ -2,7 +2,7 @@
   "metadata": {
     "version": "1.0",
     "scope": "Super exercices, CP a 3e",
-    "total_super": 201
+    "total_super": 211
   },
   "super": [
     {
@@ -8088,6 +8088,279 @@
       "programme_ref": "Cycle 4, classe de 4e, Nombres et calculs, Puissances, Objectifs d'apprentissage : « Multiplier des puissances d'un même exposant entier naturel de deux nombres entre elles. »"
     },
     {
+      "id": "SX-B054-01",
+      "skill_id": "B054",
+      "skill_ids": [
+        "B054",
+        "B038",
+        "D024",
+        "B011"
+      ],
+      "school_level": "5e",
+      "title": "La sortie à la patinoire",
+      "contexte": "Le club de jeunes de la commune organise une sortie à la patinoire, un mercredi après-midi. Le car part de la mairie à 13 h 30.\n\n**Le groupe** : 8 jeunes et 2 animateurs. Les animateurs entrent gratuitement et ne patinent pas. Parmi les jeunes, un seul vient avec ses propres patins ; les autres louent une paire.\n\n**Les tarifs de la patinoire** :\nentrée, 6,50 € par jeune ;\nlocation d'une paire de patins, 3,20 € ;\ncasier pour les sacs, 1 € (le club n'en prend pas).\n\n**Le car** coûte 72 € pour toute la sortie. Les 8 jeunes se partagent ce prix en parts égales, et chacun ajoute 1,80 € pour le chocolat chaud du retour.\n\nLe club dispose d'un budget de 90 € pour payer les entrées et les locations de patins. La piste mesure 56 m de long.",
+      "image": null,
+      "duree_estimee_min": 15,
+      "questions": [
+        {
+          "key": "q1",
+          "skill_id": "B038",
+          "statement": "Combien de paires de patins le club doit-il louer ?",
+          "type": "numerique",
+          "answer": {
+            "value": 7,
+            "unit": "paires",
+            "accepted": [
+              "7 paires",
+              "sept",
+              "7 paires de patins"
+            ]
+          },
+          "points": 1,
+          "solution_steps": [
+            "Les animateurs ne patinent pas : seuls les 8 jeunes ont besoin de patins.",
+            "Un seul jeune a ses propres patins : 8 − 1 = 7.",
+            "Le club loue **7 paires** de patins."
+          ],
+          "hint": "Qui patine ? Parmi eux, qui a déjà des patins ?"
+        },
+        {
+          "key": "q2",
+          "skill_id": "D024",
+          "statement": "Combien coûtent les entrées des 8 jeunes ?",
+          "type": "numerique",
+          "answer": {
+            "value": 52,
+            "unit": "€",
+            "accepted": [
+              "52 €",
+              "52,00",
+              "52,00 €",
+              "52 euros"
+            ]
+          },
+          "points": 2,
+          "solution_steps": [
+            "Chaque jeune paie une entrée à 6,50 € : on calcule 6,50 × 8.",
+            "On pose la multiplication sans la virgule : 650 × 8 = 5 200.",
+            "6,50 a deux chiffres après la virgule : le produit aussi. 6,50 × 8 = 52,00, c'est-à-dire 52.",
+            "Les entrées coûtent **52 €**. Les animateurs entrent gratuitement : on ne les compte pas."
+          ],
+          "hint": "Une entrée par jeune : quel calcul fais-tu ?"
+        },
+        {
+          "key": "q3",
+          "skill_id": "B054",
+          "statement": "Quelle expression donne ce que paie chaque jeune pour le car et le chocolat chaud ?",
+          "type": "qcm",
+          "choices": [
+            {
+              "key": "a",
+              "text": "$(72 + 1{,}80) \\div 8$",
+              "misconception": "L'élève partage aussi le chocolat chaud entre les 8 jeunes : chacun n'en paierait qu'un huitième, alors que chacun ajoute 1,80 €."
+            },
+            {
+              "key": "b",
+              "text": "$8 \\div 72 + 1{,}80$",
+              "misconception": "L'élève inverse la division : il divise le nombre de jeunes par le prix du car, au lieu de partager 72 € en 8."
+            },
+            {
+              "key": "c",
+              "text": "$72 \\div 8 + 1{,}80$",
+              "misconception": null
+            },
+            {
+              "key": "d",
+              "text": "$72 \\div (8 + 1{,}80)$",
+              "misconception": "L'élève met 8 + 1,80 entre parenthèses : il ajoute un nombre de jeunes et un prix, ce qui n'a pas de sens."
+            }
+          ],
+          "answer": {
+            "value": "c"
+          },
+          "points": 2,
+          "solution_steps": [
+            "La part du car : 72 € partagés en 8 parts égales, soit $72 \\div 8$.",
+            "Chaque jeune ajoute ensuite 1,80 € : $72 \\div 8 + 1{,}80$.",
+            "Pas besoin de parenthèses : la division se calcule avant l'addition, c'est bien l'ordre voulu.",
+            "Calcul : 72 ÷ 8 = 9, puis 9 + 1,80 = 10,80 €."
+          ],
+          "hint": "Qu'est-ce qui est partagé entre les jeunes, et qu'est-ce que chacun paie en entier ?"
+        },
+        {
+          "key": "q4",
+          "skill_id": "B054",
+          "statement": "Le club loue 7 paires de patins.\n\nÉcris en une seule expression, avec les nombres de l'énoncé, le calcul de l'argent qui reste au club après avoir payé les entrées et les locations. N'effectue pas le calcul.",
+          "type": "texte",
+          "answer": {
+            "value": "90 − (8 × 6,50 + 7 × 3,20)",
+            "forme": "meme_calcul",
+            "variables": [],
+            "unit": "€"
+          },
+          "points": 4,
+          "solution_steps": [
+            "Le club paie les entrées des 8 jeunes, 8 × 6,50, et les 7 locations, 7 × 3,20 : sa dépense est 8 × 6,50 + 7 × 3,20.",
+            "On retire toute cette dépense du budget : elle doit être calculée avant la soustraction, donc entre parenthèses : 90 − (8 × 6,50 + 7 × 3,20).",
+            "On peut aussi retirer les deux dépenses l'une après l'autre : 90 − 8 × 6,50 − 7 × 3,20 est juste aussi.",
+            "Sans parenthèses, 90 − 8 × 6,50 + 7 × 3,20 ajouterait le prix des patins au lieu de le retirer : ce n'est plus le calcul demandé.",
+            "Contrôle : 8 × 6,50 = 52 ; 7 × 3,20 = 22,40 ; 52 + 22,40 = 74,40 ; 90 − 74,40 = 15,60 €."
+          ],
+          "hint": "Écris d'abord, en une expression, tout ce que paie le club. Que fais-tu ensuite de cette dépense ?"
+        },
+        {
+          "key": "q5",
+          "skill_id": "B011",
+          "statement": "Combien paie chaque jeune pour le car et le chocolat chaud ?",
+          "type": "numerique",
+          "answer": {
+            "value": 10.8,
+            "unit": "€",
+            "accepted": [
+              "10,80",
+              "10,80 €",
+              "10,8 €",
+              "10,80 euros"
+            ]
+          },
+          "points": 2,
+          "solution_steps": [
+            "Le calcul s'écrit 72 ÷ 8 + 1,80 : la division passe avant l'addition.",
+            "72 ÷ 8 = 9, car 8 × 9 = 72 : la part du car est 9 €.",
+            "9 + 1,80 = 10,80 : chaque jeune paie **10,80 €**.",
+            "Attention : le chocolat chaud n'est pas partagé, chacun paie le sien en entier."
+          ],
+          "hint": "Commence par la part du car de chaque jeune."
+        }
+      ],
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 4, classe de 5e, Nombres et calculs, Opérations, Objectifs d'apprentissage : « Traduire un problème, une succession donnée d'opérations, un programme de calcul, en une seule expression, en faisant appel ou non à des parenthèses. »"
+    },
+    {
+      "id": "SX-B055-01",
+      "skill_id": "B055",
+      "skill_ids": [
+        "B055",
+        "A009"
+      ],
+      "school_level": "5e",
+      "title": "Le festival de théâtre",
+      "contexte": "Le collège organise son festival de théâtre dans la salle des fêtes de la ville, le vendredi et le samedi soir.\n\nLa salle compte 8 rangées de 103 fauteuils. Les portes ouvrent à 19 h 30 et le spectacle dure 95 minutes.\n\nLes billets coûtent 13 € pour un adulte et 7 € pour un enfant. La troupe compte 23 élèves comédiens, qui ne paient pas leur place.\n\n**Vendredi soir**, 47 adultes et 47 enfants ont acheté un billet.\n\n**Samedi soir**, 98 adultes ont acheté un billet ; ce soir-là, les enfants entraient gratuitement.\n\nPour calculer le nombre de places et les recettes, la trésorière de l'association des parents veut tout faire de tête, sans poser les opérations.",
+      "image": null,
+      "duree_estimee_min": 12,
+      "questions": [
+        {
+          "key": "q1",
+          "skill_id": "A009",
+          "statement": "Pour calculer de tête le nombre de fauteuils, on décompose 103. Quelle décomposition est juste ?",
+          "type": "qcm",
+          "choices": [
+            {
+              "key": "a",
+              "text": "103 = 10 + 3",
+              "misconception": "L'élève lit « 10 » puis « 3 » : il oublie que le 1 est le chiffre des centaines. 10 + 3 = 13, pas 103."
+            },
+            {
+              "key": "b",
+              "text": "103 = 100 + 3",
+              "misconception": null
+            },
+            {
+              "key": "c",
+              "text": "103 = 1 + 0 + 3",
+              "misconception": "L'élève additionne les chiffres : 1 + 0 + 3 = 4. Chaque chiffre vaut selon sa place, le 1 vaut 100."
+            },
+            {
+              "key": "d",
+              "text": "103 = 100 + 30",
+              "misconception": "L'élève place le 3 au rang des dizaines : 100 + 30 = 130. Dans 103, les dizaines sont occupées par le 0."
+            }
+          ],
+          "answer": {
+            "value": "b"
+          },
+          "points": 1,
+          "solution_steps": [
+            "Dans 103, le chiffre 1 est celui des centaines : il vaut 100.",
+            "Le 0 est au rang des dizaines (aucune dizaine) et le 3 au rang des unités : il vaut 3.",
+            "Donc 103 = 100 + 3. Réponse b."
+          ],
+          "hint": "Que vaut le chiffre 1 dans 103, d'après sa place ?"
+        },
+        {
+          "key": "q2",
+          "skill_id": "B055",
+          "statement": "Combien de fauteuils la salle compte-t-elle ?",
+          "type": "numerique",
+          "answer": {
+            "value": 824,
+            "unit": "fauteuils",
+            "accepted": [
+              "824 fauteuils",
+              "824 places"
+            ]
+          },
+          "points": 2,
+          "solution_steps": [
+            "8 rangées de 103 fauteuils : 8 × 103.",
+            "103 = 100 + 3, donc 8 × 103 = 8 × 100 + 8 × 3 = 800 + 24 = 824.",
+            "On multiplie **chacun** des deux termes par 8 : 8 × 100 + 3 = 803 serait faux.",
+            "La salle compte **824 fauteuils**."
+          ],
+          "hint": "Décompose 103 en deux nombres faciles à multiplier par 8, puis multiplie chacun d'eux par 8."
+        },
+        {
+          "key": "q3",
+          "skill_id": "B055",
+          "statement": "Quelle est la recette des billets du vendredi soir ?",
+          "type": "numerique",
+          "answer": {
+            "value": 940,
+            "unit": "€",
+            "accepted": [
+              "940 €",
+              "940 euros",
+              "940€"
+            ]
+          },
+          "points": 3,
+          "solution_steps": [
+            "Recette des adultes : 47 × 13 ; recette des enfants : 47 × 7. En tout : 47 × 13 + 47 × 7.",
+            "47 est un facteur commun aux deux produits : 47 × 13 + 47 × 7 = 47 × (13 + 7) = 47 × 20.",
+            "47 × 20 = 47 × 2 × 10 = 94 × 10 = 940.",
+            "La recette du vendredi est **940 €**. On a évité de calculer 47 × 13 en regroupant les deux prix."
+          ],
+          "hint": "Il y a autant d'adultes que d'enfants : regroupe les deux prix."
+        },
+        {
+          "key": "q4",
+          "skill_id": "B055",
+          "statement": "Quelle est la recette des billets du samedi soir ?",
+          "type": "numerique",
+          "answer": {
+            "value": 1274,
+            "unit": "€",
+            "accepted": [
+              "1 274",
+              "1 274 €",
+              "1274 €",
+              "1 274 euros"
+            ]
+          },
+          "points": 4,
+          "solution_steps": [
+            "98 billets adultes à 13 € : 13 × 98. Les enfants entraient gratuitement, ils ne rapportent rien.",
+            "98 = 100 − 2, donc 13 × 98 = 13 × 100 − 13 × 2 = 1 300 − 26 = 1 274.",
+            "On retire 13 × 2 = 26, et non 2 : les 2 billets comptés en trop valent 26 €. 13 × 100 − 2 = 1 298 serait faux.",
+            "La recette du samedi est **1 274 €**."
+          ],
+          "hint": "98, c'est 100 moins 2. Que rapporteraient 100 billets adultes ?"
+        }
+      ],
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 4, classe de 5e, Nombres et calculs, Opérations, Objectifs d'apprentissage : « Connaitre et utiliser la distributivité simple sur des exemples numériques. »"
+    },
+    {
       "id": "SX-C001-01",
       "skill_id": "C001",
       "skill_ids": [
@@ -16168,6 +16441,237 @@
       "programme_ref": "Cycle 4, classe de 5e, Nombres rationnels, Automatismes : « Prendre 1 %, 10 % ou 50 % d'un nombre, en lien avec la proportionnalité. »"
     },
     {
+      "id": "SX-F002-01",
+      "skill_id": "F002",
+      "skill_ids": [
+        "F002",
+        "F003",
+        "D006"
+      ],
+      "school_level": "5e",
+      "title": "L'atelier des cadres photo",
+      "contexte": "Le club de menuiserie du collège fabrique des cadres pour l'exposition photo de juin. Toutes les photos sont carrées. On note $x$ la longueur, en centimètres, du côté d'une photo.\n\nPour le cadre d'une photo :\nla baguette de bois qui fait le tour mesure $4x + 12$ centimètres (les 12 cm en plus servent aux coupes des angles) ;\nla vitre est un carré de même côté que la photo ;\nle carton du fond est un carré qui dépasse la photo de 2 cm de chaque côté.\n\nLe vitrier fait payer le verre 2 centimes par centimètre carré : le prix de la vitre, en centimes, est donc $2x^{2}$.\n\nLe club compte 14 membres et se réunit le jeudi midi.\n\nPhotos à encadrer : la photo du lac, de côté 15 cm ; la photo du phare, de côté 7,5 cm ; la photo de la forêt, de côté 12 cm.",
+      "image": null,
+      "duree_estimee_min": 15,
+      "questions": [
+        {
+          "key": "q1",
+          "skill_id": "F003",
+          "statement": "Quelle expression donne la longueur du côté du carton du fond ?",
+          "type": "qcm",
+          "choices": [
+            {
+              "key": "a",
+              "text": "$x + 2$",
+              "misconception": "L'élève n'ajoute que 2 cm : le carton dépasse de 2 cm à gauche **et** de 2 cm à droite, soit 4 cm de plus."
+            },
+            {
+              "key": "b",
+              "text": "$2x$",
+              "misconception": "L'élève double le côté : le carton ne fait pas le double de la photo, il la dépasse de 2 cm de chaque côté."
+            },
+            {
+              "key": "c",
+              "text": "$x + 4$",
+              "misconception": null
+            },
+            {
+              "key": "d",
+              "text": "$4x$",
+              "misconception": "L'élève confond avec le tour de la photo : $4x$ est le périmètre de la photo, pas le côté du carton."
+            }
+          ],
+          "answer": {
+            "value": "c"
+          },
+          "points": 1,
+          "solution_steps": [
+            "Le carton dépasse la photo de 2 cm d'un côté **et** de 2 cm du côté opposé.",
+            "Son côté mesure donc $x + 2 + 2$, c'est-à-dire $x + 4$ centimètres. Réponse c."
+          ],
+          "hint": "Fais un petit dessin de la photo posée sur son carton, puis relis la phrase qui parle du carton."
+        },
+        {
+          "key": "q2",
+          "skill_id": "F002",
+          "statement": "Quelle longueur de baguette faut-il pour le cadre de la photo du lac ?",
+          "type": "numerique",
+          "answer": {
+            "value": 72,
+            "unit": "cm",
+            "accepted": [
+              "72 cm",
+              "72 centimètres"
+            ]
+          },
+          "points": 2,
+          "solution_steps": [
+            "Pour la photo du lac, $x = 15$. On rétablit le signe × sous-entendu : $4x + 12 = 4 \\times 15 + 12$.",
+            "La multiplication d'abord : 4 × 15 = 60 ; puis 60 + 12 = 72.",
+            "Il faut **72 cm** de baguette.",
+            "Attention : $4x$ ne veut pas dire « 4 suivi de 15 » (415), mais 4 × 15."
+          ],
+          "hint": "Que cache l'écriture $4x$ entre le 4 et le $x$ ?"
+        },
+        {
+          "key": "q3",
+          "skill_id": "D006",
+          "statement": "Quelle est l'aire de la vitre de la photo du phare, en centimètres carrés ?",
+          "type": "numerique",
+          "answer": {
+            "value": 56.25,
+            "unit": "cm²",
+            "accepted": [
+              "56,25 cm²",
+              "56,25 cm2",
+              "56,25 cm^2"
+            ]
+          },
+          "points": 3,
+          "solution_steps": [
+            "La vitre est un carré de côté 7,5 cm : son aire est $7{,}5^{2} = 7{,}5 \\times 7{,}5$.",
+            "On pose la multiplication sans les virgules : 75 × 75 = 5 625.",
+            "Les deux facteurs ont un chiffre après la virgule chacun, soit deux en tout : 7,5 × 7,5 = 56,25.",
+            "L'aire de la vitre est **56,25 cm²**. Attention : $7{,}5^{2}$ n'est pas 7,5 × 2 = 15."
+          ],
+          "hint": "L'aire d'un carré, c'est côté × côté."
+        },
+        {
+          "key": "q4",
+          "skill_id": "F002",
+          "statement": "Combien coûte, en centimes, la vitre de la photo de la forêt ?",
+          "type": "numerique",
+          "answer": {
+            "value": 288,
+            "unit": "centimes",
+            "accepted": [
+              "288 centimes",
+              "288 c",
+              "2,88 €",
+              "2,88 euros"
+            ]
+          },
+          "points": 4,
+          "solution_steps": [
+            "Pour la photo de la forêt, $x = 12$ : $2x^{2} = 2 \\times 12^{2}$.",
+            "Le carré se calcule avant la multiplication : $12^{2} = 12 \\times 12 = 144$.",
+            "Puis 2 × 144 = 288 : la vitre coûte **288 centimes**, soit 2,88 €.",
+            "Attention : $2x^{2}$ n'est pas $(2x)^{2}$. Calculer $(2 \\times 12)^{2} = 24^{2} = 576$ serait mettre au carré le 2 aussi."
+          ],
+          "hint": "Dans $2x^{2}$, quel nombre est au carré ?"
+        }
+      ],
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 4, classe de 5e, Nombres et calculs, Puissances, Objectifs d'apprentissage : « Calculer la valeur d'une expression littérale contenant une puissance simple. »"
+    },
+    {
+      "id": "SX-F003-01",
+      "skill_id": "F003",
+      "skill_ids": [
+        "F003",
+        "F071",
+        "P022"
+      ],
+      "school_level": "5e",
+      "title": "Les tables du repas de quartier",
+      "contexte": "Pour le repas de quartier, le comité des fêtes installe des tables carrées de 80 cm de côté. Il les aligne bout à bout pour former de longues rangées.\n\nAutour d'une table seule, on place 4 chaises, une par côté. Quand on colle deux tables, les côtés collés n'ont plus de chaise : deux tables accueillent 6 personnes, trois tables en accueillent 8, et ainsi de suite.\n\nPour décorer une rangée, on pose un ruban doré tout autour : il suit exactement le contour du rectangle formé par les tables, sans passer entre elles.\n\nChaque table pèse 11 kg. Le comité attend 86 invités, et le repas commence à 12 h 30.",
+      "image": null,
+      "duree_estimee_min": 15,
+      "questions": [
+        {
+          "key": "q1",
+          "skill_id": "F071",
+          "statement": "Combien de personnes peut-on asseoir autour d'une rangée de 7 tables ?",
+          "type": "numerique",
+          "answer": {
+            "value": 16,
+            "unit": "personnes",
+            "accepted": [
+              "16 personnes",
+              "16 chaises"
+            ]
+          },
+          "points": 1,
+          "solution_steps": [
+            "Chaque table ajoutée apporte 2 chaises de plus : 4, 6, 8, 10, 12, 14, 16 pour 1 à 7 tables.",
+            "Autre façon : le long des deux grands côtés, une chaise par table de chaque côté, 2 × 7 = 14 ; plus une chaise à chaque bout : 14 + 2 = 16.",
+            "On peut asseoir **16 personnes**."
+          ],
+          "hint": "Combien de chaises gagne-t-on à chaque table ajoutée ?"
+        },
+        {
+          "key": "q2",
+          "skill_id": "F003",
+          "statement": "On note $n$ le nombre de tables d'une rangée. Écris une expression qui donne le nombre de personnes qu'on peut asseoir autour de cette rangée.",
+          "type": "texte",
+          "answer": {
+            "value": "2n + 2",
+            "forme": "expression",
+            "variables": [
+              "n"
+            ]
+          },
+          "points": 3,
+          "solution_steps": [
+            "Le long des deux grands côtés, il y a une chaise par table de chaque côté : $2 \\times n$, noté $2n$.",
+            "Aux deux bouts de la rangée, il y a 2 chaises de plus : $2n + 2$.",
+            "Contrôle : pour $n = 3$, $2 \\times 3 + 2 = 8$, comme dans l'énoncé.",
+            "Attention : $4n$ compterait 4 chaises par table, alors que les côtés collés n'en ont pas."
+          ],
+          "hint": "Compte à part les chaises le long des tables et celles des deux bouts."
+        },
+        {
+          "key": "q3",
+          "skill_id": "P022",
+          "statement": "Quelle longueur de ruban faut-il pour une rangée de 3 tables ?",
+          "type": "numerique",
+          "answer": {
+            "value": 640,
+            "unit": "cm",
+            "accepted": [
+              "640 cm",
+              "640 centimètres",
+              "6,40 m",
+              "6,4 m"
+            ]
+          },
+          "points": 2,
+          "solution_steps": [
+            "Trois tables alignées forment un rectangle de longueur 3 × 80 = 240 cm et de largeur 80 cm.",
+            "Le ruban suit le contour : c'est le périmètre du rectangle, 2 × (240 + 80) = 2 × 320 = 640.",
+            "Il faut **640 cm** de ruban, soit 6,40 m.",
+            "Attention : le ruban ne passe pas entre les tables collées, on ne compte pas le tour de chaque table."
+          ],
+          "hint": "Quelles sont la longueur et la largeur du rectangle formé par les 3 tables ?"
+        },
+        {
+          "key": "q4",
+          "skill_id": "F003",
+          "statement": "Écris une expression qui donne la longueur de ruban, en centimètres, pour une rangée de $n$ tables.",
+          "type": "texte",
+          "answer": {
+            "value": "2 × (80n + 80)",
+            "forme": "expression",
+            "variables": [
+              "n"
+            ],
+            "unit": "cm"
+          },
+          "points": 4,
+          "solution_steps": [
+            "La rangée de $n$ tables est un rectangle de longueur $80 \\times n$, notée $80n$, et de largeur 80 (en cm).",
+            "Le périmètre d'un rectangle vaut 2 × (longueur + largeur) : ici $2 \\times (80n + 80)$.",
+            "Les parenthèses sont indispensables : $2 \\times 80n + 80$ ne compterait qu'une seule largeur.",
+            "Toute écriture égale est acceptée, par exemple $(80n + 80) \\times 2$ ou $80n + 80 + 80n + 80$.",
+            "Contrôle : pour $n = 3$, $2 \\times (240 + 80) = 640$, la longueur trouvée pour 3 tables."
+          ],
+          "hint": "Écris d'abord la longueur et la largeur du rectangle formé par $n$ tables."
+        }
+      ],
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 4, classe de 5e, Nombres et calculs, Calcul littéral et algébrique, Objectifs d'apprentissage : « Produire des formules (double, triple, carré, successeur, prédécesseur, aire, périmètre, etc.). »"
+    },
+    {
       "id": "SX-F006-01",
       "skill_id": "F006",
       "skill_ids": [
@@ -16319,6 +16823,278 @@
       "programme_ref": "Cycle 4, classe de 4e, Nombres et calculs, Calcul littéral et algébrique, Automatismes : « Connaitre et utiliser : 1 × 𝑥 = 𝑥 ; 𝑥 + 𝑥 = 2𝑥 ; 𝑥 × 𝑥 = 𝑥² ; 3𝑥 + 2𝑥 = 5𝑥 ; 3𝑥 × 2𝑥 = 6𝑥². »"
     },
     {
+      "id": "SX-F010-01",
+      "skill_id": "F010",
+      "skill_ids": [
+        "F010",
+        "F061",
+        "P022"
+      ],
+      "school_level": "5e",
+      "title": "L'enclos des poules",
+      "contexte": "Le jardin partagé du quartier va accueillir 6 poules. Les jardiniers dessinent un enclos à cinq côtés, ABCDE. Ils n'ont pas encore choisi la longueur notée $x$, en mètres ; ils savent seulement que $x$ sera plus grand que 5.\n\nLes côtés mesurent, en mètres :\nAB = $5x + 13$ ;\nBC = $x + 3{,}5$ ;\nCD = $7x - 29$ ;\nDE = $x$ ;\nEA = $1{,}5x + 11$.\n\nLe côté DE longe le mur du cabanon à outils : il n'a pas besoin de grillage. Tous les autres côtés seront grillagés.\n\nLe grillage se vend en rouleaux de 10 m. Chaque poule pond environ 5 œufs par semaine.\n\nDans l'enclos, on construira un poulailler dont la base est un rectangle de 2,4 m sur 1,7 m.",
+      "image": null,
+      "duree_estimee_min": 15,
+      "questions": [
+        {
+          "key": "q1",
+          "skill_id": "F061",
+          "statement": "Quelle phrase décrit l'expression $7x - 29$ du côté CD ?",
+          "type": "qcm",
+          "choices": [
+            {
+              "key": "a",
+              "text": "Un produit de deux facteurs : 7 et $x - 29$",
+              "misconception": "L'élève lit $7(x - 29)$ : sans parenthèses, le 7 ne multiplie que $x$."
+            },
+            {
+              "key": "b",
+              "text": "Une différence de deux termes : $7x$ et 29",
+              "misconception": null
+            },
+            {
+              "key": "c",
+              "text": "Une somme de deux termes : $7x$ et 29",
+              "misconception": "L'élève ne voit pas le signe − : on retranche 29, c'est une différence."
+            },
+            {
+              "key": "d",
+              "text": "Un produit de deux facteurs : 7 et $x$",
+              "misconception": "L'élève ne regarde que $7x$ : la dernière opération est la soustraction de 29, pas la multiplication."
+            }
+          ],
+          "answer": {
+            "value": "b"
+          },
+          "points": 1,
+          "solution_steps": [
+            "Pour calculer $7x - 29$, on multiplie d'abord 7 par $x$, puis on retranche 29.",
+            "La dernière opération est une soustraction : c'est une différence de deux termes, $7x$ et 29. Réponse b."
+          ],
+          "hint": "Quelle est la dernière opération à faire pour calculer $7x - 29$ ?"
+        },
+        {
+          "key": "q2",
+          "skill_id": "F010",
+          "statement": "Quelle est la forme réduite de la somme AB + EA ?",
+          "type": "qcm",
+          "choices": [
+            {
+              "key": "a",
+              "text": "$30{,}5x$",
+              "misconception": "L'élève additionne tous les nombres, ceux qui accompagnent $x$ et les autres : 5 + 13 + 1,5 + 11 = 30,5. Or 13 et 11 ne sont pas des termes en $x$."
+            },
+            {
+              "key": "b",
+              "text": "$6{,}5x^{2} + 24$",
+              "misconception": "L'élève croit qu'ajouter des $x$ donne $x^{2}$ : $5x + 1{,}5x = 6{,}5x$, les $x$ s'ajoutent, ils ne se multiplient pas."
+            },
+            {
+              "key": "c",
+              "text": "$17{,}5x + 13$",
+              "misconception": "L'élève colle 11 au terme $1{,}5x$ et le transforme en $12{,}5x$, puis ajoute $5x$ : un terme en $x$ et un nombre ne se réunissent pas."
+            },
+            {
+              "key": "d",
+              "text": "$6{,}5x + 24$",
+              "misconception": null
+            }
+          ],
+          "answer": {
+            "value": "d"
+          },
+          "points": 2,
+          "solution_steps": [
+            "AB + EA = $5x + 13 + 1{,}5x + 11$.",
+            "Termes en $x$ : $5x + 1{,}5x = 6{,}5x$. Nombres : 13 + 11 = 24.",
+            "Forme réduite : $6{,}5x + 24$. Réponse d. On ne peut pas aller plus loin : $6{,}5x$ et 24 ne sont pas des termes semblables."
+          ],
+          "hint": "Regroupe les termes en $x$ entre eux, puis les nombres entre eux."
+        },
+        {
+          "key": "q3",
+          "skill_id": "F010",
+          "statement": "Quelle longueur de grillage faut-il ? Écris-la sous forme réduite, en fonction de $x$.",
+          "type": "texte",
+          "answer": {
+            "value": "14,5x − 1,5",
+            "forme": "reduite",
+            "unit": "m"
+          },
+          "points": 4,
+          "solution_steps": [
+            "Le grillage fait le tour, sauf le côté DE : on additionne AB + BC + CD + EA.",
+            "$5x + 13 + x + 3{,}5 + 7x - 29 + 1{,}5x + 11$ : chaque terme garde le signe qui le précède.",
+            "Termes en $x$ : $5x + x + 7x + 1{,}5x = 14{,}5x$.",
+            "Nombres : 13 + 3,5 = 16,5 ; 16,5 − 29 = −12,5 ; −12,5 + 11 = −1,5.",
+            "Il faut $14{,}5x - 1{,}5$ mètres de grillage. Attention : le − devant 29 reste attaché à ce terme, et DE n'est pas grillagé."
+          ],
+          "hint": "Quel côté n'a pas de grillage ? Regroupe ensuite les termes en $x$, puis les nombres avec leur signe."
+        },
+        {
+          "key": "q4",
+          "skill_id": "P022",
+          "statement": "Quel est le périmètre de la base du poulailler ?",
+          "type": "numerique",
+          "answer": {
+            "value": 8.2,
+            "unit": "m",
+            "accepted": [
+              "8,2 m",
+              "8,20",
+              "8,20 m",
+              "8,2 mètres"
+            ]
+          },
+          "points": 2,
+          "solution_steps": [
+            "La base est un rectangle de 2,4 m sur 1,7 m.",
+            "Son périmètre est la somme de ses quatre côtés : 2,4 + 1,7 + 2,4 + 1,7 = 8,2.",
+            "On peut aussi écrire 2 × (2,4 + 1,7) = 2 × 4,1 = 8,2.",
+            "Le périmètre est **8,2 m**. Attention : 2,4 + 1,7 = 4,1 m ne fait que la moitié du tour."
+          ],
+          "hint": "Un rectangle a quatre côtés, égaux deux à deux."
+        }
+      ],
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 4, classe de 5e, Nombres et calculs, Calcul littéral et algébrique, Objectifs d'apprentissage : « Réduire une expression littérale de la forme a𝑥 + b, où a et b sont des nombres décimaux. »"
+    },
+    {
+      "id": "SX-F012-01",
+      "skill_id": "F012",
+      "skill_ids": [
+        "F012",
+        "B038",
+        "A016"
+      ],
+      "school_level": "5e",
+      "title": "Les tenues du club de handball",
+      "contexte": "Le club de handball de la ville commande des tenues neuves. Une tenue comprend un maillot et un short. Le fournisseur n'a pas encore fixé le prix du maillot : on le note $x$, en euros. Le short coûte 9 €. Les chaussettes sont offertes.\n\nL'équipe des moins de 13 ans compte 14 joueurs, celle des moins de 15 ans 11 joueurs. Chaque joueur reçoit une tenue. Les 3 entraîneurs n'en reçoivent pas.\n\nLa livraison est gratuite. Le club a été fondé en 1994.\n\nLe club de basket voisin a commandé chez le même fournisseur des tenues avec un autre modèle de short, le même pour toutes ses tenues. Sa facture s'élève à $7x + 56$ euros.",
+      "image": null,
+      "duree_estimee_min": 15,
+      "questions": [
+        {
+          "key": "q1",
+          "skill_id": "B038",
+          "statement": "Combien de tenues le club de handball commande-t-il ?",
+          "type": "numerique",
+          "answer": {
+            "value": 25,
+            "unit": "tenues",
+            "accepted": [
+              "25 tenues"
+            ]
+          },
+          "points": 1,
+          "solution_steps": [
+            "Seuls les joueurs reçoivent une tenue : 14 + 11 = 25.",
+            "Les 3 entraîneurs n'en reçoivent pas : le club commande **25 tenues**."
+          ],
+          "hint": "Relis la phrase qui parle des entraîneurs."
+        },
+        {
+          "key": "q2",
+          "skill_id": "F012",
+          "statement": "Quelle expression donne le prix, en euros, des tenues des moins de 13 ans ?",
+          "type": "qcm",
+          "choices": [
+            {
+              "key": "a",
+              "text": "$14x + 9$",
+              "misconception": "L'élève ne multiplie que le prix du maillot : il compte un seul short pour les 14 joueurs."
+            },
+            {
+              "key": "b",
+              "text": "$14(x + 9)$",
+              "misconception": null
+            },
+            {
+              "key": "c",
+              "text": "$x + 14 \\times 9$",
+              "misconception": "L'élève compte 14 shorts mais un seul maillot."
+            },
+            {
+              "key": "d",
+              "text": "$14 + x + 9$",
+              "misconception": "L'élève ajoute le nombre de joueurs aux prix au lieu de multiplier : 14 n'est pas un prix."
+            }
+          ],
+          "answer": {
+            "value": "b"
+          },
+          "points": 2,
+          "solution_steps": [
+            "Une tenue coûte $x + 9$ euros : un maillot et un short.",
+            "Les 14 joueurs ont chacun une tenue : $14 \\times (x + 9)$, qu'on écrit $14(x + 9)$. Réponse b.",
+            "Les parenthèses sont nécessaires : le 14 multiplie le prix du maillot **et** celui du short."
+          ],
+          "hint": "Écris d'abord le prix d'une seule tenue."
+        },
+        {
+          "key": "q3",
+          "skill_id": "F012",
+          "statement": "Écris le prix, en euros, des tenues des moins de 15 ans sous forme développée et réduite, sans parenthèses.",
+          "type": "texte",
+          "answer": {
+            "value": "11x + 99",
+            "forme": "developpee",
+            "unit": "€"
+          },
+          "points": 3,
+          "solution_steps": [
+            "Les 11 joueurs ont chacun une tenue à $x + 9$ euros : le prix est $11(x + 9)$.",
+            "On multiplie **chaque** terme de la parenthèse par 11 : $11(x + 9) = 11 \\times x + 11 \\times 9 = 11x + 99$.",
+            "Attention : $11x + 9$ oublierait de multiplier le 9, c'est-à-dire 10 des 11 shorts."
+          ],
+          "hint": "Écris le prix d'une tenue, multiplie-le par le nombre de joueurs, puis retire les parenthèses."
+        },
+        {
+          "key": "q4",
+          "skill_id": "F012",
+          "statement": "Écris la facture du club de basket, $7x + 56$, sous la forme d'un produit.",
+          "type": "texte",
+          "answer": {
+            "value": "7(x + 8)",
+            "forme": "factorisee",
+            "unit": "€"
+          },
+          "points": 4,
+          "solution_steps": [
+            "$7x$, c'est $7 \\times x$, et 56, c'est $7 \\times 8$ : 7 est un facteur commun aux deux termes.",
+            "Donc $7x + 56 = 7 \\times x + 7 \\times 8 = 7(x + 8)$.",
+            "Vérification en développant : $7(x + 8) = 7x + 56$.",
+            "Attention : $7(x + 56)$ ne convient pas, car en développant on obtiendrait $7x + 392$."
+          ],
+          "hint": "Cherche un nombre qui divise à la fois $7x$ et 56."
+        },
+        {
+          "key": "q5",
+          "skill_id": "A016",
+          "statement": "Combien coûte un short du club de basket ?",
+          "type": "numerique",
+          "answer": {
+            "value": 8,
+            "unit": "€",
+            "accepted": [
+              "8 €",
+              "8 euros",
+              "8€"
+            ]
+          },
+          "points": 2,
+          "solution_steps": [
+            "Chaque tenue de basket coûte $x$ euros plus le prix du short ; tous les shorts ont le même prix.",
+            "Le terme $7x$ montre qu'il y a 7 maillots, donc 7 tenues : les 7 shorts coûtent 56 € en tout.",
+            "56 est un multiple de 7 : 56 = 7 × 8, donc 56 ÷ 7 = 8.",
+            "Un short de basket coûte **8 €**. C'est le 8 de la forme factorisée $7(x + 8)$."
+          ],
+          "hint": "Combien de tenues le club de basket a-t-il commandées ? Que coûtent tous ses shorts ensemble ?"
+        }
+      ],
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 4, classe de 5e, Nombres et calculs, Calcul littéral et algébrique, Objectifs d'apprentissage : « Exploiter les relations k(a + b) = ka + kb ou k(a – b) = ka – kb pour factoriser, ou développer une expression littérale. »"
+    },
+    {
       "id": "SX-F014-01",
       "skill_id": "F014",
       "skill_ids": [
@@ -16450,6 +17226,249 @@
       ],
       "review_status": "relu_agent",
       "programme_ref": "Cycle 4, classe de 4e, Nombres et calculs, Calcul littéral et algébrique, Objectifs d'apprentissage : « Connaitre et utiliser la distributivité simple pour développer et factoriser une expression algébrique. »"
+    },
+    {
+      "id": "SX-F022-01",
+      "skill_id": "F022",
+      "skill_ids": [
+        "F022",
+        "D024",
+        "F002"
+      ],
+      "school_level": "5e",
+      "title": "Deux formules pour la piscine",
+      "contexte": "La piscine municipale propose deux formules pour l'année.\n\n**Formule Liberté** : 4,80 € la séance.\n\n**Formule Club** : une carte de 15 €, payée une seule fois, puis 2,30 € la séance.\n\nOn note $x$ le nombre de séances dans l'année. Avec la formule Liberté, on paie $4{,}8x$ euros ; avec la formule Club, on paie $2{,}3x + 15$ euros.\n\nLe grand bassin mesure 25 m de long. Un bonnet de bain coûte 6 € à l'accueil, quelle que soit la formule. La piscine est ouverte de 7 h à 21 h.\n\nAvant de choisir, plusieurs membres de la famille Martin comparent les deux formules.",
+      "image": null,
+      "duree_estimee_min": 15,
+      "questions": [
+        {
+          "key": "q1",
+          "skill_id": "D024",
+          "statement": "Combien paie-t-on pour 8 séances avec la formule Liberté ?",
+          "type": "numerique",
+          "answer": {
+            "value": 38.4,
+            "unit": "€",
+            "accepted": [
+              "38,40",
+              "38,40 €",
+              "38,4 €",
+              "38,40 euros"
+            ]
+          },
+          "points": 1,
+          "solution_steps": [
+            "8 séances à 4,80 € : 4,80 × 8.",
+            "On pose 480 × 8 = 3 840 ; 4,80 a deux chiffres après la virgule, le produit aussi : 38,40.",
+            "On paie **38,40 €**."
+          ],
+          "hint": "Une séance coûte 4,80 € : combien en coûtent 8 ?"
+        },
+        {
+          "key": "q2",
+          "skill_id": "F002",
+          "statement": "Combien paie-t-on pour 4 séances avec la formule Club ?",
+          "type": "numerique",
+          "answer": {
+            "value": 24.2,
+            "unit": "€",
+            "accepted": [
+              "24,20",
+              "24,20 €",
+              "24,2 €",
+              "24,20 euros"
+            ]
+          },
+          "points": 2,
+          "solution_steps": [
+            "On remplace $x$ par 4 dans $2{,}3x + 15$ : $2{,}3 \\times 4 + 15$.",
+            "La multiplication d'abord : 2,3 × 4 = 9,2 ; puis 9,2 + 15 = 24,2.",
+            "On paie **24,20 €**. Attention : la carte de 15 € se paie une fois, elle n'est pas multipliée par 4."
+          ],
+          "hint": "Dans $2{,}3x + 15$, quel calcul fait-on en premier ?"
+        },
+        {
+          "key": "q3",
+          "skill_id": "F022",
+          "statement": "Léo affirme : « La formule Club est toujours plus chère que la formule Liberté. » Quel nombre de séances montre qu'il a tort ?",
+          "type": "qcm",
+          "choices": [
+            {
+              "key": "a",
+              "text": "1 séance",
+              "misconception": "Pour 1 séance, la formule Club coûte 17,30 € et la formule Liberté 4,80 € : cet exemple va dans le sens de Léo, il ne le contredit pas."
+            },
+            {
+              "key": "b",
+              "text": "3 séances",
+              "misconception": "Pour 3 séances, la formule Club coûte 21,90 € et la formule Liberté 14,40 € : un exemple qui confirme l'affirmation ne la contredit pas."
+            },
+            {
+              "key": "c",
+              "text": "9 séances",
+              "misconception": null
+            },
+            {
+              "key": "d",
+              "text": "5 séances",
+              "misconception": "Pour 5 séances, la formule Club coûte 26,50 € et la formule Liberté 24 € : les prix sont proches, mais la formule Club reste plus chère."
+            }
+          ],
+          "answer": {
+            "value": "c"
+          },
+          "points": 4,
+          "solution_steps": [
+            "Pour contredire Léo, il faut un nombre de séances pour lequel la formule Club n'est **pas** plus chère.",
+            "1 séance : Liberté 4,80 €, Club 2,30 + 15 = 17,30 € ; 3 séances : 14,40 € et 21,90 € ; 5 séances : 24 € et 26,50 €. Ces trois essais vont dans le sens de Léo.",
+            "9 séances : Liberté 4,8 × 9 = 43,20 € ; Club 2,3 × 9 + 15 = 20,70 + 15 = 35,70 €. La formule Club est moins chère.",
+            "Un seul contre-exemple suffit : 9 séances montrent que Léo a tort. Réponse c."
+          ],
+          "hint": "Pour chaque nombre proposé, calcule le prix des deux formules."
+        },
+        {
+          "key": "q4",
+          "skill_id": "F022",
+          "statement": "Inès remarque que, pour 6 séances, les deux formules coûtent le même prix. Elle en conclut que l'égalité $4{,}8x = 2{,}3x + 15$ est vraie pour tout nombre de séances. Pour 11 séances, quel est l'écart, en euros, entre les prix des deux formules ?",
+          "type": "numerique",
+          "answer": {
+            "value": 12.5,
+            "unit": "€",
+            "accepted": [
+              "12,50",
+              "12,50 €",
+              "12,5 €",
+              "12,50 euros"
+            ]
+          },
+          "points": 3,
+          "solution_steps": [
+            "Formule Liberté pour 11 séances : 4,8 × 11 = 52,80 €.",
+            "Formule Club : 2,3 × 11 + 15 = 25,30 + 15 = 40,30 €.",
+            "Écart : 52,80 − 40,30 = 12,50 €.",
+            "Pour 6 séances, l'égalité est vraie (4,8 × 6 = 28,80 et 2,3 × 6 + 15 = 28,80), mais pour 11 séances elle est fausse.",
+            "Une égalité vraie pour une valeur ne prouve rien pour les autres : 11 séances est un contre-exemple, Inès a tort."
+          ],
+          "hint": "Calcule séparément le prix de chaque formule pour 11 séances."
+        }
+      ],
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 4, classe de 5e, Nombres et calculs, Calcul littéral et algébrique, Objectifs d'apprentissage : « Utiliser un contre-exemple pour démontrer qu'une assertion est fausse. »"
+    },
+    {
+      "id": "SX-F023-01",
+      "skill_id": "F023",
+      "skill_ids": [
+        "F023",
+        "C032"
+      ],
+      "school_level": "5e",
+      "title": "Le voyage dans le Jura",
+      "contexte": "La classe de 5e B part trois jours dans le Jura. Le car quitte le collège à 7 h 20 avec 24 élèves et 3 accompagnateurs.\n\nÀ la pause de 9 h, le chauffeur annonce : « Nous avons déjà parcouru 148 km. Le trajet complet fait 235 km. »\n\nÀ midi, au marché du village, le groupe achète 1,2 kg de comté pour le pique-nique et le paie 18 €. Il achète aussi 4 baguettes de pain à 1,10 € pièce.\n\nLe soir, au gîte, situé à 1 050 m d'altitude, Noé verse 5 litres de jus de pomme dans 6 gourdes identiques : toutes les gourdes sont remplies au même niveau, et il ne reste pas de jus.",
+      "image": null,
+      "duree_estimee_min": 15,
+      "questions": [
+        {
+          "key": "q1",
+          "skill_id": "F023",
+          "statement": "On note $x$ le nombre de kilomètres qu'il reste à parcourir après la pause. Écris une équation qui traduit l'annonce du chauffeur.",
+          "type": "texte",
+          "answer": {
+            "value": "x + 148 = 235",
+            "forme": "equation"
+          },
+          "points": 2,
+          "solution_steps": [
+            "Distance déjà parcourue + distance qui reste = trajet complet.",
+            "Avec la lettre : $148 + x = 235$, qu'on peut aussi écrire $x + 148 = 235$.",
+            "C'est une équation : $x$ est le nombre inconnu. La question demande l'équation, pas sa solution."
+          ],
+          "hint": "Écris d'abord en mots : ce qui est fait, plus ce qui reste, égale…"
+        },
+        {
+          "key": "q2",
+          "skill_id": "F023",
+          "statement": "Combien de kilomètres reste-t-il à parcourir après la pause ?",
+          "type": "numerique",
+          "answer": {
+            "value": 87,
+            "unit": "km",
+            "accepted": [
+              "87 km",
+              "x = 87",
+              "87 kilomètres"
+            ]
+          },
+          "points": 2,
+          "solution_steps": [
+            "On cherche le nombre $x$ tel que $x + 148 = 235$.",
+            "Pour compléter une addition à trou, on fait l'opération inverse, une soustraction : $x = 235 - 148 = 87$.",
+            "Vérification : 87 + 148 = 235. Il reste **87 km**.",
+            "Attention : 235 + 148 = 383 appliquerait l'opération de l'énoncé au lieu de l'opération inverse."
+          ],
+          "hint": "Quel nombre faut-il ajouter à 148 pour obtenir 235 ?"
+        },
+        {
+          "key": "q3",
+          "skill_id": "F023",
+          "statement": "On note $x$ le prix d'un kilogramme de comté, en euros. Traduis l'achat du midi par une équation, puis résous-la : quel est le prix d'un kilogramme de comté ?",
+          "type": "numerique",
+          "answer": {
+            "value": 15,
+            "unit": "€",
+            "accepted": [
+              "15 €",
+              "15 euros",
+              "x = 15",
+              "15 € le kg"
+            ]
+          },
+          "points": 4,
+          "solution_steps": [
+            "1,2 kg à $x$ euros le kilogramme coûtent $1{,}2 \\times x$, noté $1{,}2x$ : l'équation est $1{,}2x = 18$.",
+            "$x$ est multiplié par 1,2 : on fait l'opération inverse, on divise 18 par 1,2.",
+            "Pour diviser par un décimal, on multiplie les deux nombres par 10 : 18 ÷ 1,2 = 180 ÷ 12 = 15.",
+            "Vérification : 1,2 × 15 = 18. Un kilogramme de comté coûte **15 €**.",
+            "Attention : 18 − 1,2 = 16,8 soustrait au lieu de diviser, et 18 ÷ 12 = 1,5 ne décale la virgule que d'un seul nombre."
+          ],
+          "hint": "Quelle opération fait-on sur $x$ pour obtenir 18 ? Fais l'opération inverse."
+        },
+        {
+          "key": "q4",
+          "skill_id": "C032",
+          "statement": "Quelle quantité de jus, en litres, contient chaque gourde ? Donne la valeur exacte, sous forme de fraction.",
+          "type": "texte",
+          "answer": {
+            "value": "5/6",
+            "accepted": [
+              "5/6 L",
+              "5/6 l",
+              "5/6 litre",
+              "5/6 litres",
+              "5/6 de litre",
+              "x = 5/6",
+              "10/12",
+              "10/12 L",
+              "10/12 litre",
+              "10/12 litres",
+              "15/18",
+              "15/18 L",
+              "20/24",
+              "20/24 L"
+            ]
+          },
+          "points": 2,
+          "solution_steps": [
+            "Les 5 litres sont partagés en 6 parts égales : chaque gourde contient 5 ÷ 6 litre.",
+            "On peut l'écrire avec une équation : $6x = 5$, donc $x = 5 \\div 6$.",
+            "Ce quotient ne tombe pas juste en décimal, mais il s'écrit exactement $\\frac{5}{6}$.",
+            "Chaque gourde contient **5/6 L**, un peu moins d'un litre. Attention : $\\frac{6}{5}$ litre par gourde ferait plus de 5 litres en tout."
+          ],
+          "hint": "Partage 5 litres en 6 parts égales. Comment écrit-on exactement ce quotient ?"
+        }
+      ],
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 4, classe de 5e, Nombres et calculs, Calcul littéral et algébrique, Objectifs d'apprentissage : « Résoudre des équations du type a𝑥 = c ou 𝑥 + b = c par des méthodes arithmétiques s'appuyant sur les opérations inverses. »"
     },
     {
       "id": "SX-F024-01",
@@ -16706,6 +17725,250 @@
       ],
       "review_status": "relu_agent",
       "programme_ref": "Cycle 4, classe de 4e, Nombres et calculs, Calcul littéral et algébrique, Objectifs d'apprentissage : « Mettre en équation un problème et le résoudre à l'aide d'une équation du premier degré du type a𝑥 + b = c𝑥 + d. »"
+    },
+    {
+      "id": "SX-F061-01",
+      "skill_id": "F061",
+      "skill_ids": [
+        "F061",
+        "B058",
+        "F003"
+      ],
+      "school_level": "5e",
+      "title": "Les programmes de la fête de la science",
+      "contexte": "Pour la fête de la science, le club de maths affiche quatre programmes de calcul sur un panneau. Les visiteurs choisissent un nombre, suivent un programme et comparent leurs résultats.\n\n**Programme Bleu** : choisir un nombre ; ajouter 8 ; multiplier le résultat par 7.\n\n**Programme Vert** : choisir un nombre ; le multiplier par 7 ; ajouter 8 au résultat.\n\n**Programme Rouge** : choisir un nombre ; le multiplier par lui-même ; ajouter au résultat le double du nombre choisi.\n\n**Programme Orange** : choisir un nombre ; le multiplier par 6 ; ajouter 11 ; multiplier le résultat par le nombre choisi.\n\nLe stand est ouvert de 14 h à 17 h. Les 35 premiers visiteurs reçoivent un porte-clés.",
+      "image": null,
+      "duree_estimee_min": 12,
+      "questions": [
+        {
+          "key": "q1",
+          "skill_id": "B058",
+          "statement": "Quel résultat donne le programme Bleu si l'on choisit 6 ?",
+          "type": "numerique",
+          "answer": {
+            "value": 98
+          },
+          "points": 1,
+          "solution_steps": [
+            "On ajoute 8 au nombre choisi : 6 + 8 = 14.",
+            "On multiplie ce résultat par 7 : 14 × 7 = 98.",
+            "Le programme Bleu donne **98**. En une seule expression : (6 + 8) × 7."
+          ],
+          "hint": "Suis les consignes dans l'ordre, une par une."
+        },
+        {
+          "key": "q2",
+          "skill_id": "F003",
+          "statement": "On choisit le nombre $x$. Écris l'expression obtenue avec le programme Rouge.",
+          "type": "texte",
+          "answer": {
+            "value": "x² + 2x",
+            "forme": "expression"
+          },
+          "points": 2,
+          "solution_steps": [
+            "Le nombre multiplié par lui-même : $x \\times x$, qu'on note $x^{2}$.",
+            "Le double du nombre choisi : $2 \\times x$, noté $2x$.",
+            "On les ajoute : $x^{2} + 2x$.",
+            "Attention : multiplier $x$ par lui-même donne $x^{2}$, pas $2x$ ; le carré et le double ne sont pas la même chose."
+          ],
+          "hint": "Traduis chaque consigne avec la lettre $x$."
+        },
+        {
+          "key": "q3",
+          "skill_id": "F061",
+          "statement": "Avec le nombre $x$, le programme Bleu donne $7(x + 8)$ et le programme Vert donne $7x + 8$. Quelle phrase est juste ?",
+          "type": "qcm",
+          "choices": [
+            {
+              "key": "a",
+              "text": "Les deux expressions sont des sommes, car elles contiennent toutes les deux le signe +.",
+              "misconception": "L'élève se fie au signe + qu'il voit : dans $7(x + 8)$, la somme est entre parenthèses et la dernière opération est la multiplication par 7."
+            },
+            {
+              "key": "b",
+              "text": "$7(x + 8)$ est une somme et $7x + 8$ est un produit.",
+              "misconception": "L'élève inverse les deux natures : pour $7x + 8$, la dernière opération est l'ajout de 8, c'est une somme."
+            },
+            {
+              "key": "c",
+              "text": "$7(x + 8)$ est un produit de deux facteurs, 7 et $x + 8$ ; $7x + 8$ est une somme de deux termes, $7x$ et 8.",
+              "misconception": null
+            },
+            {
+              "key": "d",
+              "text": "Les deux expressions sont des produits, car elles commencent toutes les deux par 7.",
+              "misconception": "L'élève se fie au premier nombre lu : dans $7x + 8$, le 7 ne multiplie que $x$, puis on ajoute 8."
+            }
+          ],
+          "answer": {
+            "value": "c"
+          },
+          "points": 3,
+          "solution_steps": [
+            "Pour savoir si une expression est une somme ou un produit, on cherche la **dernière** opération à effectuer.",
+            "Programme Bleu : on ajoute 8, puis on multiplie le résultat par 7. $7(x + 8)$ est un produit de deux facteurs, 7 et $x + 8$.",
+            "Programme Vert : on multiplie par 7, puis on ajoute 8. $7x + 8$ est une somme de deux termes, $7x$ et 8.",
+            "Réponse c."
+          ],
+          "hint": "Pour chaque programme, quelle est la dernière consigne ?"
+        },
+        {
+          "key": "q4",
+          "skill_id": "F061",
+          "statement": "Avec le nombre $x$, quelle phrase décrit l'expression que donne le programme Orange ?",
+          "type": "qcm",
+          "choices": [
+            {
+              "key": "a",
+              "text": "Une somme de deux termes : $6x$ et 11",
+              "misconception": "L'élève oublie la dernière consigne : après avoir ajouté 11, on multiplie encore par le nombre choisi."
+            },
+            {
+              "key": "b",
+              "text": "Un produit de deux facteurs : $x$ et $6x + 11$",
+              "misconception": null
+            },
+            {
+              "key": "c",
+              "text": "Une somme de trois termes : $6x$, 11 et $x$",
+              "misconception": "L'élève ajoute le nombre choisi au lieu de multiplier par lui : la dernière consigne est « multiplier le résultat par le nombre choisi »."
+            },
+            {
+              "key": "d",
+              "text": "Un produit de deux facteurs : 6 et $x + 11$",
+              "misconception": "L'élève place mal la parenthèse : on multiplie par 6 avant d'ajouter 11, on obtient $6x + 11$ et non $6(x + 11)$."
+            }
+          ],
+          "answer": {
+            "value": "b"
+          },
+          "points": 4,
+          "solution_steps": [
+            "On suit le programme avec $x$ : $x \\times 6 = 6x$ ; on ajoute 11 : $6x + 11$.",
+            "On multiplie ce résultat **en entier** par le nombre choisi : $x(6x + 11)$, avec des parenthèses.",
+            "La dernière opération est une multiplication : c'est un produit de deux facteurs, $x$ et $6x + 11$. Réponse b."
+          ],
+          "hint": "Quelle est la dernière consigne du programme Orange ?"
+        }
+      ],
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 4, classe de 5e, Nombres et calculs, Calcul littéral et algébrique, Objectifs d'apprentissage : « Déterminer si une expression littérale est une somme ou un produit. »"
+    },
+    {
+      "id": "SX-F062-01",
+      "skill_id": "F062",
+      "skill_ids": [
+        "F062",
+        "B058",
+        "F012",
+        "F022"
+      ],
+      "school_level": "5e",
+      "title": "Les défis du club de maths",
+      "contexte": "Pour la journée portes ouvertes, le club de maths propose trois défis aux visiteurs.\n\n**Le programme mystère** : choisir un nombre ; ajouter 11 ; multiplier le résultat par 4 ; retrancher 44. « Comparez le résultat au nombre de départ : que remarquez-vous ? »\n\n**Les pairs consécutifs** : choisir trois nombres pairs qui se suivent, comme 16, 18 et 20, et les additionner. Le club affirme que la somme est toujours un multiple de 6.\n\n**L'affirmation de Tom** : Tom affirme : « Pour tout entier $n$, $18n + 26$ est un multiple de 4. »\n\nChaque visiteur qui relève un défi gagne un badge. La journée accueille environ 300 visiteurs.",
+      "image": null,
+      "duree_estimee_min": 15,
+      "questions": [
+        {
+          "key": "q1",
+          "skill_id": "B058",
+          "statement": "Léa choisit 13 pour le programme mystère. Quel résultat obtient-elle ?",
+          "type": "numerique",
+          "answer": {
+            "value": 52
+          },
+          "points": 1,
+          "solution_steps": [
+            "13 + 11 = 24 ; 24 × 4 = 96 ; 96 − 44 = 52.",
+            "Léa obtient **52**. En une seule expression : (13 + 11) × 4 − 44."
+          ],
+          "hint": "Suis les consignes dans l'ordre."
+        },
+        {
+          "key": "q2",
+          "skill_id": "F012",
+          "statement": "Avec un nombre $n$, le programme mystère s'écrit $4(n + 11) - 44$. Développe et réduis cette expression.",
+          "type": "texte",
+          "answer": {
+            "value": "4n",
+            "forme": "reduite",
+            "variables": [
+              "n"
+            ]
+          },
+          "points": 3,
+          "solution_steps": [
+            "On développe : $4(n + 11) = 4 \\times n + 4 \\times 11 = 4n + 44$.",
+            "On retranche 44 : $4n + 44 - 44 = 4n$.",
+            "Le résultat est toujours 4 fois le nombre choisi, quel que soit $n$ : ce calcul avec la lettre vaut pour tous les nombres.",
+            "Attention : écrire $4n + 11 - 44$ oublierait de multiplier le 11 par 4."
+          ],
+          "hint": "Le 4 multiplie chacun des deux termes de la parenthèse."
+        },
+        {
+          "key": "q3",
+          "skill_id": "F062",
+          "statement": "Quel raisonnement démontre l'affirmation du club sur les pairs consécutifs ?",
+          "type": "qcm",
+          "choices": [
+            {
+              "key": "a",
+              "text": "« 16 + 18 + 20 = 54, 2 + 4 + 6 = 12 et 30 + 32 + 34 = 96 : ce sont des multiples de 6. »",
+              "misconception": "L'élève vérifie trois exemples : cela ne prouve rien pour les autres nombres pairs. Des essais ne démontrent pas une propriété générale."
+            },
+            {
+              "key": "b",
+              "text": "« Les trois nombres s'écrivent $2n$, $2n + 2$ et $2n + 4$, avec $n$ entier : $2n + (2n + 2) + (2n + 4) = 6n + 6 = 6(n + 1)$, c'est 6 fois l'entier $n + 1$. »",
+              "misconception": null
+            },
+            {
+              "key": "c",
+              "text": "« Avec $2n$, $2n + 2$ et $2n + 4$, la somme vaut $6n + 6$ ; pour $n = 8$, on trouve 54, un multiple de 6. »",
+              "misconception": "L'élève fait le bon calcul avec la lettre, puis conclut sur un seul exemple : il faut écrire $6n + 6$ comme 6 fois un entier pour conclure pour tous les $n$."
+            },
+            {
+              "key": "d",
+              "text": "« Les trois nombres s'écrivent $n$, $n + 2$ et $n + 4$ : la somme vaut $3n + 6 = 3(n + 2)$, c'est un multiple de 3. »",
+              "misconception": "L'élève écrit $n$ pour un nombre pair, alors que $n$ peut être impair, et il ne démontre qu'un multiple de 3, pas de 6."
+            }
+          ],
+          "answer": {
+            "value": "b"
+          },
+          "points": 4,
+          "solution_steps": [
+            "Un nombre pair s'écrit $2n$ avec $n$ entier ; les deux pairs suivants sont $2n + 2$ et $2n + 4$.",
+            "On réduit la somme : $2n + (2n + 2) + (2n + 4) = 6n + 6$.",
+            "On factorise : $6n + 6 = 6(n + 1)$. C'est 6 fois l'entier $n + 1$ : la somme est un multiple de 6, pour **tous** les entiers $n$.",
+            "Des exemples, même nombreux, ne démontrent rien pour les autres nombres. Réponse b."
+          ],
+          "hint": "Lequel de ces raisonnements vaut pour tous les nombres pairs, et pas seulement pour quelques-uns ?"
+        },
+        {
+          "key": "q4",
+          "skill_id": "F022",
+          "statement": "Quel est le plus petit entier $n$ strictement positif qui montre que Tom a tort ?",
+          "type": "numerique",
+          "answer": {
+            "value": 2,
+            "accepted": [
+              "n = 2",
+              "n=2"
+            ]
+          },
+          "points": 2,
+          "solution_steps": [
+            "On teste les entiers strictement positifs dans l'ordre.",
+            "$n = 1$ : $18 \\times 1 + 26 = 44 = 4 \\times 11$, un multiple de 4 : pas de contradiction.",
+            "$n = 2$ : $18 \\times 2 + 26 = 62$, qui n'est pas un multiple de 4 (4 × 15 = 60 et 4 × 16 = 64).",
+            "Un seul contre-exemple suffit : pour $n = 2$, l'affirmation est fausse. Le plus petit entier qui contredit Tom est **2**."
+          ],
+          "hint": "Teste les entiers strictement positifs dans l'ordre, en calculant $18n + 26$ à chaque fois."
+        }
+      ],
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 4, classe de 5e, Nombres et calculs, Calcul littéral et algébrique, Objectifs d'apprentissage : « Démontrer une propriété générale par le calcul littéral. »"
     },
     {
       "id": "SX-F063-01",

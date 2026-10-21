@@ -1,0 +1,115 @@
+{
+  "id": "SX-F023-01",
+  "skill_id": "F023",
+  "skill_ids": [
+    "F023",
+    "C032"
+  ],
+  "school_level": "5e",
+  "title": "Le voyage dans le Jura",
+  "contexte": "La classe de 5e B part trois jours dans le Jura. Le car quitte le collège à 7 h 20 avec 24 élèves et 3 accompagnateurs.\n\nÀ la pause de 9 h, le chauffeur annonce : « Nous avons déjà parcouru 148 km. Le trajet complet fait 235 km. »\n\nÀ midi, au marché du village, le groupe achète 1,2 kg de comté pour le pique-nique et le paie 18 €. Il achète aussi 4 baguettes de pain à 1,10 € pièce.\n\nLe soir, au gîte, situé à 1 050 m d'altitude, Noé verse 5 litres de jus de pomme dans 6 gourdes identiques : toutes les gourdes sont remplies au même niveau, et il ne reste pas de jus.",
+  "image": null,
+  "duree_estimee_min": 15,
+  "questions": [
+    {
+      "key": "q1",
+      "skill_id": "F023",
+      "statement": "On note $x$ le nombre de kilomètres qu'il reste à parcourir après la pause. Écris une équation qui traduit l'annonce du chauffeur.",
+      "type": "texte",
+      "answer": {
+        "value": "x + 148 = 235",
+        "forme": "equation"
+      },
+      "points": 2,
+      "solution_steps": [
+        "Distance déjà parcourue + distance qui reste = trajet complet.",
+        "Avec la lettre : $148 + x = 235$, qu'on peut aussi écrire $x + 148 = 235$.",
+        "C'est une équation : $x$ est le nombre inconnu. La question demande l'équation, pas sa solution."
+      ],
+      "hint": "Écris d'abord en mots : ce qui est fait, plus ce qui reste, égale…"
+    },
+    {
+      "key": "q2",
+      "skill_id": "F023",
+      "statement": "Combien de kilomètres reste-t-il à parcourir après la pause ?",
+      "type": "numerique",
+      "answer": {
+        "value": 87,
+        "unit": "km",
+        "accepted": [
+          "87 km",
+          "x = 87",
+          "87 kilomètres"
+        ]
+      },
+      "points": 2,
+      "solution_steps": [
+        "On cherche le nombre $x$ tel que $x + 148 = 235$.",
+        "Pour compléter une addition à trou, on fait l'opération inverse, une soustraction : $x = 235 - 148 = 87$.",
+        "Vérification : 87 + 148 = 235. Il reste **87 km**.",
+        "Attention : 235 + 148 = 383 appliquerait l'opération de l'énoncé au lieu de l'opération inverse."
+      ],
+      "hint": "Quel nombre faut-il ajouter à 148 pour obtenir 235 ?"
+    },
+    {
+      "key": "q3",
+      "skill_id": "F023",
+      "statement": "On note $x$ le prix d'un kilogramme de comté, en euros. Traduis l'achat du midi par une équation, puis résous-la : quel est le prix d'un kilogramme de comté ?",
+      "type": "numerique",
+      "answer": {
+        "value": 15,
+        "unit": "€",
+        "accepted": [
+          "15 €",
+          "15 euros",
+          "x = 15",
+          "15 € le kg"
+        ]
+      },
+      "points": 4,
+      "solution_steps": [
+        "1,2 kg à $x$ euros le kilogramme coûtent $1{,}2 \\times x$, noté $1{,}2x$ : l'équation est $1{,}2x = 18$.",
+        "$x$ est multiplié par 1,2 : on fait l'opération inverse, on divise 18 par 1,2.",
+        "Pour diviser par un décimal, on multiplie les deux nombres par 10 : 18 ÷ 1,2 = 180 ÷ 12 = 15.",
+        "Vérification : 1,2 × 15 = 18. Un kilogramme de comté coûte **15 €**.",
+        "Attention : 18 − 1,2 = 16,8 soustrait au lieu de diviser, et 18 ÷ 12 = 1,5 ne décale la virgule que d'un seul nombre."
+      ],
+      "hint": "Quelle opération fait-on sur $x$ pour obtenir 18 ? Fais l'opération inverse."
+    },
+    {
+      "key": "q4",
+      "skill_id": "C032",
+      "statement": "Quelle quantité de jus, en litres, contient chaque gourde ? Donne la valeur exacte, sous forme de fraction.",
+      "type": "texte",
+      "answer": {
+        "value": "5/6",
+        "accepted": [
+          "5/6 L",
+          "5/6 l",
+          "5/6 litre",
+          "5/6 litres",
+          "5/6 de litre",
+          "x = 5/6",
+          "10/12",
+          "10/12 L",
+          "10/12 litre",
+          "10/12 litres",
+          "15/18",
+          "15/18 L",
+          "20/24",
+          "20/24 L"
+        ]
+      },
+      "points": 2,
+      "solution_steps": [
+        "Les 5 litres sont partagés en 6 parts égales : chaque gourde contient 5 ÷ 6 litre.",
+        "On peut l'écrire avec une équation : $6x = 5$, donc $x = 5 \\div 6$.",
+        "Ce quotient ne tombe pas juste en décimal, mais il s'écrit exactement $\\frac{5}{6}$.",
+        "Chaque gourde contient **5/6 L**, un peu moins d'un litre. Attention : $\\frac{6}{5}$ litre par gourde ferait plus de 5 litres en tout."
+      ],
+      "hint": "Partage 5 litres en 6 parts égales. Comment écrit-on exactement ce quotient ?"
+    }
+  ],
+  "review_status": "relu_agent",
+  "programme_ref": "Cycle 4, classe de 5e, Nombres et calculs, Calcul littéral et algébrique, Objectifs d'apprentissage : « Résoudre des équations du type a𝑥 = c ou 𝑥 + b = c par des méthodes arithmétiques s'appuyant sur les opérations inverses. »"
+}

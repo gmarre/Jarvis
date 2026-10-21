@@ -1,0 +1,107 @@
+{
+  "id": "SX-F003-01",
+  "skill_id": "F003",
+  "skill_ids": [
+    "F003",
+    "F071",
+    "P022"
+  ],
+  "school_level": "5e",
+  "title": "Les tables du repas de quartier",
+  "contexte": "Pour le repas de quartier, le comité des fêtes installe des tables carrées de 80 cm de côté. Il les aligne bout à bout pour former de longues rangées.\n\nAutour d'une table seule, on place 4 chaises, une par côté. Quand on colle deux tables, les côtés collés n'ont plus de chaise : deux tables accueillent 6 personnes, trois tables en accueillent 8, et ainsi de suite.\n\nPour décorer une rangée, on pose un ruban doré tout autour : il suit exactement le contour du rectangle formé par les tables, sans passer entre elles.\n\nChaque table pèse 11 kg. Le comité attend 86 invités, et le repas commence à 12 h 30.",
+  "image": null,
+  "duree_estimee_min": 15,
+  "questions": [
+    {
+      "key": "q1",
+      "skill_id": "F071",
+      "statement": "Combien de personnes peut-on asseoir autour d'une rangée de 7 tables ?",
+      "type": "numerique",
+      "answer": {
+        "value": 16,
+        "unit": "personnes",
+        "accepted": [
+          "16 personnes",
+          "16 chaises"
+        ]
+      },
+      "points": 1,
+      "solution_steps": [
+        "Chaque table ajoutée apporte 2 chaises de plus : 4, 6, 8, 10, 12, 14, 16 pour 1 à 7 tables.",
+        "Autre façon : le long des deux grands côtés, une chaise par table de chaque côté, 2 × 7 = 14 ; plus une chaise à chaque bout : 14 + 2 = 16.",
+        "On peut asseoir **16 personnes**."
+      ],
+      "hint": "Combien de chaises gagne-t-on à chaque table ajoutée ?"
+    },
+    {
+      "key": "q2",
+      "skill_id": "F003",
+      "statement": "On note $n$ le nombre de tables d'une rangée. Écris une expression qui donne le nombre de personnes qu'on peut asseoir autour de cette rangée.",
+      "type": "texte",
+      "answer": {
+        "value": "2n + 2",
+        "forme": "expression",
+        "variables": [
+          "n"
+        ]
+      },
+      "points": 3,
+      "solution_steps": [
+        "Le long des deux grands côtés, il y a une chaise par table de chaque côté : $2 \\times n$, noté $2n$.",
+        "Aux deux bouts de la rangée, il y a 2 chaises de plus : $2n + 2$.",
+        "Contrôle : pour $n = 3$, $2 \\times 3 + 2 = 8$, comme dans l'énoncé.",
+        "Attention : $4n$ compterait 4 chaises par table, alors que les côtés collés n'en ont pas."
+      ],
+      "hint": "Compte à part les chaises le long des tables et celles des deux bouts."
+    },
+    {
+      "key": "q3",
+      "skill_id": "P022",
+      "statement": "Quelle longueur de ruban faut-il pour une rangée de 3 tables ?",
+      "type": "numerique",
+      "answer": {
+        "value": 640,
+        "unit": "cm",
+        "accepted": [
+          "640 cm",
+          "640 centimètres",
+          "6,40 m",
+          "6,4 m"
+        ]
+      },
+      "points": 2,
+      "solution_steps": [
+        "Trois tables alignées forment un rectangle de longueur 3 × 80 = 240 cm et de largeur 80 cm.",
+        "Le ruban suit le contour : c'est le périmètre du rectangle, 2 × (240 + 80) = 2 × 320 = 640.",
+        "Il faut **640 cm** de ruban, soit 6,40 m.",
+        "Attention : le ruban ne passe pas entre les tables collées, on ne compte pas le tour de chaque table."
+      ],
+      "hint": "Quelles sont la longueur et la largeur du rectangle formé par les 3 tables ?"
+    },
+    {
+      "key": "q4",
+      "skill_id": "F003",
+      "statement": "Écris une expression qui donne la longueur de ruban, en centimètres, pour une rangée de $n$ tables.",
+      "type": "texte",
+      "answer": {
+        "value": "2 × (80n + 80)",
+        "forme": "expression",
+        "variables": [
+          "n"
+        ],
+        "unit": "cm"
+      },
+      "points": 4,
+      "solution_steps": [
+        "La rangée de $n$ tables est un rectangle de longueur $80 \\times n$, notée $80n$, et de largeur 80 (en cm).",
+        "Le périmètre d'un rectangle vaut 2 × (longueur + largeur) : ici $2 \\times (80n + 80)$.",
+        "Les parenthèses sont indispensables : $2 \\times 80n + 80$ ne compterait qu'une seule largeur.",
+        "Toute écriture égale est acceptée, par exemple $(80n + 80) \\times 2$ ou $80n + 80 + 80n + 80$.",
+        "Contrôle : pour $n = 3$, $2 \\times (240 + 80) = 640$, la longueur trouvée pour 3 tables."
+      ],
+      "hint": "Écris d'abord la longueur et la largeur du rectangle formé par $n$ tables."
+    }
+  ],
+  "review_status": "relu_agent",
+  "programme_ref": "Cycle 4, classe de 5e, Nombres et calculs, Calcul littéral et algébrique, Objectifs d'apprentissage : « Produire des formules (double, triple, carré, successeur, prédécesseur, aire, périmètre, etc.). »"
+}

@@ -1,0 +1,115 @@
+{
+  "id": "SX-F062-01",
+  "skill_id": "F062",
+  "skill_ids": [
+    "F062",
+    "B058",
+    "F012",
+    "F022"
+  ],
+  "school_level": "5e",
+  "title": "Les défis du club de maths",
+  "contexte": "Pour la journée portes ouvertes, le club de maths propose trois défis aux visiteurs.\n\n**Le programme mystère** : choisir un nombre ; ajouter 11 ; multiplier le résultat par 4 ; retrancher 44. « Comparez le résultat au nombre de départ : que remarquez-vous ? »\n\n**Les pairs consécutifs** : choisir trois nombres pairs qui se suivent, comme 16, 18 et 20, et les additionner. Le club affirme que la somme est toujours un multiple de 6.\n\n**L'affirmation de Tom** : Tom affirme : « Pour tout entier $n$, $18n + 26$ est un multiple de 4. »\n\nChaque visiteur qui relève un défi gagne un badge. La journée accueille environ 300 visiteurs.",
+  "image": null,
+  "duree_estimee_min": 15,
+  "questions": [
+    {
+      "key": "q1",
+      "skill_id": "B058",
+      "statement": "Léa choisit 13 pour le programme mystère. Quel résultat obtient-elle ?",
+      "type": "numerique",
+      "answer": {
+        "value": 52
+      },
+      "points": 1,
+      "solution_steps": [
+        "13 + 11 = 24 ; 24 × 4 = 96 ; 96 − 44 = 52.",
+        "Léa obtient **52**. En une seule expression : (13 + 11) × 4 − 44."
+      ],
+      "hint": "Suis les consignes dans l'ordre."
+    },
+    {
+      "key": "q2",
+      "skill_id": "F012",
+      "statement": "Avec un nombre $n$, le programme mystère s'écrit $4(n + 11) - 44$. Développe et réduis cette expression.",
+      "type": "texte",
+      "answer": {
+        "value": "4n",
+        "forme": "reduite",
+        "variables": [
+          "n"
+        ]
+      },
+      "points": 3,
+      "solution_steps": [
+        "On développe : $4(n + 11) = 4 \\times n + 4 \\times 11 = 4n + 44$.",
+        "On retranche 44 : $4n + 44 - 44 = 4n$.",
+        "Le résultat est toujours 4 fois le nombre choisi, quel que soit $n$ : ce calcul avec la lettre vaut pour tous les nombres.",
+        "Attention : écrire $4n + 11 - 44$ oublierait de multiplier le 11 par 4."
+      ],
+      "hint": "Le 4 multiplie chacun des deux termes de la parenthèse."
+    },
+    {
+      "key": "q3",
+      "skill_id": "F062",
+      "statement": "Quel raisonnement démontre l'affirmation du club sur les pairs consécutifs ?",
+      "type": "qcm",
+      "choices": [
+        {
+          "key": "a",
+          "text": "« 16 + 18 + 20 = 54, 2 + 4 + 6 = 12 et 30 + 32 + 34 = 96 : ce sont des multiples de 6. »",
+          "misconception": "L'élève vérifie trois exemples : cela ne prouve rien pour les autres nombres pairs. Des essais ne démontrent pas une propriété générale."
+        },
+        {
+          "key": "b",
+          "text": "« Les trois nombres s'écrivent $2n$, $2n + 2$ et $2n + 4$, avec $n$ entier : $2n + (2n + 2) + (2n + 4) = 6n + 6 = 6(n + 1)$, c'est 6 fois l'entier $n + 1$. »",
+          "misconception": null
+        },
+        {
+          "key": "c",
+          "text": "« Avec $2n$, $2n + 2$ et $2n + 4$, la somme vaut $6n + 6$ ; pour $n = 8$, on trouve 54, un multiple de 6. »",
+          "misconception": "L'élève fait le bon calcul avec la lettre, puis conclut sur un seul exemple : il faut écrire $6n + 6$ comme 6 fois un entier pour conclure pour tous les $n$."
+        },
+        {
+          "key": "d",
+          "text": "« Les trois nombres s'écrivent $n$, $n + 2$ et $n + 4$ : la somme vaut $3n + 6 = 3(n + 2)$, c'est un multiple de 3. »",
+          "misconception": "L'élève écrit $n$ pour un nombre pair, alors que $n$ peut être impair, et il ne démontre qu'un multiple de 3, pas de 6."
+        }
+      ],
+      "answer": {
+        "value": "b"
+      },
+      "points": 4,
+      "solution_steps": [
+        "Un nombre pair s'écrit $2n$ avec $n$ entier ; les deux pairs suivants sont $2n + 2$ et $2n + 4$.",
+        "On réduit la somme : $2n + (2n + 2) + (2n + 4) = 6n + 6$.",
+        "On factorise : $6n + 6 = 6(n + 1)$. C'est 6 fois l'entier $n + 1$ : la somme est un multiple de 6, pour **tous** les entiers $n$.",
+        "Des exemples, même nombreux, ne démontrent rien pour les autres nombres. Réponse b."
+      ],
+      "hint": "Lequel de ces raisonnements vaut pour tous les nombres pairs, et pas seulement pour quelques-uns ?"
+    },
+    {
+      "key": "q4",
+      "skill_id": "F022",
+      "statement": "Quel est le plus petit entier $n$ strictement positif qui montre que Tom a tort ?",
+      "type": "numerique",
+      "answer": {
+        "value": 2,
+        "accepted": [
+          "n = 2",
+          "n=2"
+        ]
+      },
+      "points": 2,
+      "solution_steps": [
+        "On teste les entiers strictement positifs dans l'ordre.",
+        "$n = 1$ : $18 \\times 1 + 26 = 44 = 4 \\times 11$, un multiple de 4 : pas de contradiction.",
+        "$n = 2$ : $18 \\times 2 + 26 = 62$, qui n'est pas un multiple de 4 (4 × 15 = 60 et 4 × 16 = 64).",
+        "Un seul contre-exemple suffit : pour $n = 2$, l'affirmation est fausse. Le plus petit entier qui contredit Tom est **2**."
+      ],
+      "hint": "Teste les entiers strictement positifs dans l'ordre, en calculant $18n + 26$ à chaque fois."
+    }
+  ],
+  "review_status": "relu_agent",
+  "programme_ref": "Cycle 4, classe de 5e, Nombres et calculs, Calcul littéral et algébrique, Objectifs d'apprentissage : « Démontrer une propriété générale par le calcul littéral. »"
+}

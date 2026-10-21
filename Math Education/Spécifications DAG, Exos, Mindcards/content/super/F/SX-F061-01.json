@@ -1,0 +1,129 @@
+{
+  "id": "SX-F061-01",
+  "skill_id": "F061",
+  "skill_ids": [
+    "F061",
+    "B058",
+    "F003"
+  ],
+  "school_level": "5e",
+  "title": "Les programmes de la fête de la science",
+  "contexte": "Pour la fête de la science, le club de maths affiche quatre programmes de calcul sur un panneau. Les visiteurs choisissent un nombre, suivent un programme et comparent leurs résultats.\n\n**Programme Bleu** : choisir un nombre ; ajouter 8 ; multiplier le résultat par 7.\n\n**Programme Vert** : choisir un nombre ; le multiplier par 7 ; ajouter 8 au résultat.\n\n**Programme Rouge** : choisir un nombre ; le multiplier par lui-même ; ajouter au résultat le double du nombre choisi.\n\n**Programme Orange** : choisir un nombre ; le multiplier par 6 ; ajouter 11 ; multiplier le résultat par le nombre choisi.\n\nLe stand est ouvert de 14 h à 17 h. Les 35 premiers visiteurs reçoivent un porte-clés.",
+  "image": null,
+  "duree_estimee_min": 12,
+  "questions": [
+    {
+      "key": "q1",
+      "skill_id": "B058",
+      "statement": "Quel résultat donne le programme Bleu si l'on choisit 6 ?",
+      "type": "numerique",
+      "answer": {
+        "value": 98
+      },
+      "points": 1,
+      "solution_steps": [
+        "On ajoute 8 au nombre choisi : 6 + 8 = 14.",
+        "On multiplie ce résultat par 7 : 14 × 7 = 98.",
+        "Le programme Bleu donne **98**. En une seule expression : (6 + 8) × 7."
+      ],
+      "hint": "Suis les consignes dans l'ordre, une par une."
+    },
+    {
+      "key": "q2",
+      "skill_id": "F003",
+      "statement": "On choisit le nombre $x$. Écris l'expression obtenue avec le programme Rouge.",
+      "type": "texte",
+      "answer": {
+        "value": "x² + 2x",
+        "forme": "expression"
+      },
+      "points": 2,
+      "solution_steps": [
+        "Le nombre multiplié par lui-même : $x \\times x$, qu'on note $x^{2}$.",
+        "Le double du nombre choisi : $2 \\times x$, noté $2x$.",
+        "On les ajoute : $x^{2} + 2x$.",
+        "Attention : multiplier $x$ par lui-même donne $x^{2}$, pas $2x$ ; le carré et le double ne sont pas la même chose."
+      ],
+      "hint": "Traduis chaque consigne avec la lettre $x$."
+    },
+    {
+      "key": "q3",
+      "skill_id": "F061",
+      "statement": "Avec le nombre $x$, le programme Bleu donne $7(x + 8)$ et le programme Vert donne $7x + 8$. Quelle phrase est juste ?",
+      "type": "qcm",
+      "choices": [
+        {
+          "key": "a",
+          "text": "Les deux expressions sont des sommes, car elles contiennent toutes les deux le signe +.",
+          "misconception": "L'élève se fie au signe + qu'il voit : dans $7(x + 8)$, la somme est entre parenthèses et la dernière opération est la multiplication par 7."
+        },
+        {
+          "key": "b",
+          "text": "$7(x + 8)$ est une somme et $7x + 8$ est un produit.",
+          "misconception": "L'élève inverse les deux natures : pour $7x + 8$, la dernière opération est l'ajout de 8, c'est une somme."
+        },
+        {
+          "key": "c",
+          "text": "$7(x + 8)$ est un produit de deux facteurs, 7 et $x + 8$ ; $7x + 8$ est une somme de deux termes, $7x$ et 8.",
+          "misconception": null
+        },
+        {
+          "key": "d",
+          "text": "Les deux expressions sont des produits, car elles commencent toutes les deux par 7.",
+          "misconception": "L'élève se fie au premier nombre lu : dans $7x + 8$, le 7 ne multiplie que $x$, puis on ajoute 8."
+        }
+      ],
+      "answer": {
+        "value": "c"
+      },
+      "points": 3,
+      "solution_steps": [
+        "Pour savoir si une expression est une somme ou un produit, on cherche la **dernière** opération à effectuer.",
+        "Programme Bleu : on ajoute 8, puis on multiplie le résultat par 7. $7(x + 8)$ est un produit de deux facteurs, 7 et $x + 8$.",
+        "Programme Vert : on multiplie par 7, puis on ajoute 8. $7x + 8$ est une somme de deux termes, $7x$ et 8.",
+        "Réponse c."
+      ],
+      "hint": "Pour chaque programme, quelle est la dernière consigne ?"
+    },
+    {
+      "key": "q4",
+      "skill_id": "F061",
+      "statement": "Avec le nombre $x$, quelle phrase décrit l'expression que donne le programme Orange ?",
+      "type": "qcm",
+      "choices": [
+        {
+          "key": "a",
+          "text": "Une somme de deux termes : $6x$ et 11",
+          "misconception": "L'élève oublie la dernière consigne : après avoir ajouté 11, on multiplie encore par le nombre choisi."
+        },
+        {
+          "key": "b",
+          "text": "Un produit de deux facteurs : $x$ et $6x + 11$",
+          "misconception": null
+        },
+        {
+          "key": "c",
+          "text": "Une somme de trois termes : $6x$, 11 et $x$",
+          "misconception": "L'élève ajoute le nombre choisi au lieu de multiplier par lui : la dernière consigne est « multiplier le résultat par le nombre choisi »."
+        },
+        {
+          "key": "d",
+          "text": "Un produit de deux facteurs : 6 et $x + 11$",
+          "misconception": "L'élève place mal la parenthèse : on multiplie par 6 avant d'ajouter 11, on obtient $6x + 11$ et non $6(x + 11)$."
+        }
+      ],
+      "answer": {
+        "value": "b"
+      },
+      "points": 4,
+      "solution_steps": [
+        "On suit le programme avec $x$ : $x \\times 6 = 6x$ ; on ajoute 11 : $6x + 11$.",
+        "On multiplie ce résultat **en entier** par le nombre choisi : $x(6x + 11)$, avec des parenthèses.",
+        "La dernière opération est une multiplication : c'est un produit de deux facteurs, $x$ et $6x + 11$. Réponse b."
+      ],
+      "hint": "Quelle est la dernière consigne du programme Orange ?"
+    }
+  ],
+  "review_status": "relu_agent",
+  "programme_ref": "Cycle 4, classe de 5e, Nombres et calculs, Calcul littéral et algébrique, Objectifs d'apprentissage : « Déterminer si une expression littérale est une somme ou un produit. »"
+}

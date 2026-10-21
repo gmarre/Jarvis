@@ -1,0 +1,149 @@
+{
+  "id": "SX-B054-01",
+  "skill_id": "B054",
+  "skill_ids": [
+    "B054",
+    "B038",
+    "D024",
+    "B011"
+  ],
+  "school_level": "5e",
+  "title": "La sortie à la patinoire",
+  "contexte": "Le club de jeunes de la commune organise une sortie à la patinoire, un mercredi après-midi. Le car part de la mairie à 13 h 30.\n\n**Le groupe** : 8 jeunes et 2 animateurs. Les animateurs entrent gratuitement et ne patinent pas. Parmi les jeunes, un seul vient avec ses propres patins ; les autres louent une paire.\n\n**Les tarifs de la patinoire** :\nentrée, 6,50 € par jeune ;\nlocation d'une paire de patins, 3,20 € ;\ncasier pour les sacs, 1 € (le club n'en prend pas).\n\n**Le car** coûte 72 € pour toute la sortie. Les 8 jeunes se partagent ce prix en parts égales, et chacun ajoute 1,80 € pour le chocolat chaud du retour.\n\nLe club dispose d'un budget de 90 € pour payer les entrées et les locations de patins. La piste mesure 56 m de long.",
+  "image": null,
+  "duree_estimee_min": 15,
+  "questions": [
+    {
+      "key": "q1",
+      "skill_id": "B038",
+      "statement": "Combien de paires de patins le club doit-il louer ?",
+      "type": "numerique",
+      "answer": {
+        "value": 7,
+        "unit": "paires",
+        "accepted": [
+          "7 paires",
+          "sept",
+          "7 paires de patins"
+        ]
+      },
+      "points": 1,
+      "solution_steps": [
+        "Les animateurs ne patinent pas : seuls les 8 jeunes ont besoin de patins.",
+        "Un seul jeune a ses propres patins : 8 − 1 = 7.",
+        "Le club loue **7 paires** de patins."
+      ],
+      "hint": "Qui patine ? Parmi eux, qui a déjà des patins ?"
+    },
+    {
+      "key": "q2",
+      "skill_id": "D024",
+      "statement": "Combien coûtent les entrées des 8 jeunes ?",
+      "type": "numerique",
+      "answer": {
+        "value": 52,
+        "unit": "€",
+        "accepted": [
+          "52 €",
+          "52,00",
+          "52,00 €",
+          "52 euros"
+        ]
+      },
+      "points": 2,
+      "solution_steps": [
+        "Chaque jeune paie une entrée à 6,50 € : on calcule 6,50 × 8.",
+        "On pose la multiplication sans la virgule : 650 × 8 = 5 200.",
+        "6,50 a deux chiffres après la virgule : le produit aussi. 6,50 × 8 = 52,00, c'est-à-dire 52.",
+        "Les entrées coûtent **52 €**. Les animateurs entrent gratuitement : on ne les compte pas."
+      ],
+      "hint": "Une entrée par jeune : quel calcul fais-tu ?"
+    },
+    {
+      "key": "q3",
+      "skill_id": "B054",
+      "statement": "Quelle expression donne ce que paie chaque jeune pour le car et le chocolat chaud ?",
+      "type": "qcm",
+      "choices": [
+        {
+          "key": "a",
+          "text": "$(72 + 1{,}80) \\div 8$",
+          "misconception": "L'élève partage aussi le chocolat chaud entre les 8 jeunes : chacun n'en paierait qu'un huitième, alors que chacun ajoute 1,80 €."
+        },
+        {
+          "key": "b",
+          "text": "$8 \\div 72 + 1{,}80$",
+          "misconception": "L'élève inverse la division : il divise le nombre de jeunes par le prix du car, au lieu de partager 72 € en 8."
+        },
+        {
+          "key": "c",
+          "text": "$72 \\div 8 + 1{,}80$",
+          "misconception": null
+        },
+        {
+          "key": "d",
+          "text": "$72 \\div (8 + 1{,}80)$",
+          "misconception": "L'élève met 8 + 1,80 entre parenthèses : il ajoute un nombre de jeunes et un prix, ce qui n'a pas de sens."
+        }
+      ],
+      "answer": {
+        "value": "c"
+      },
+      "points": 2,
+      "solution_steps": [
+        "La part du car : 72 € partagés en 8 parts égales, soit $72 \\div 8$.",
+        "Chaque jeune ajoute ensuite 1,80 € : $72 \\div 8 + 1{,}80$.",
+        "Pas besoin de parenthèses : la division se calcule avant l'addition, c'est bien l'ordre voulu.",
+        "Calcul : 72 ÷ 8 = 9, puis 9 + 1,80 = 10,80 €."
+      ],
+      "hint": "Qu'est-ce qui est partagé entre les jeunes, et qu'est-ce que chacun paie en entier ?"
+    },
+    {
+      "key": "q4",
+      "skill_id": "B054",
+      "statement": "Le club loue 7 paires de patins.\n\nÉcris en une seule expression, avec les nombres de l'énoncé, le calcul de l'argent qui reste au club après avoir payé les entrées et les locations. N'effectue pas le calcul.",
+      "type": "texte",
+      "answer": {
+        "value": "90 − (8 × 6,50 + 7 × 3,20)",
+        "forme": "meme_calcul",
+        "variables": [],
+        "unit": "€"
+      },
+      "points": 4,
+      "solution_steps": [
+        "Le club paie les entrées des 8 jeunes, 8 × 6,50, et les 7 locations, 7 × 3,20 : sa dépense est 8 × 6,50 + 7 × 3,20.",
+        "On retire toute cette dépense du budget : elle doit être calculée avant la soustraction, donc entre parenthèses : 90 − (8 × 6,50 + 7 × 3,20).",
+        "On peut aussi retirer les deux dépenses l'une après l'autre : 90 − 8 × 6,50 − 7 × 3,20 est juste aussi.",
+        "Sans parenthèses, 90 − 8 × 6,50 + 7 × 3,20 ajouterait le prix des patins au lieu de le retirer : ce n'est plus le calcul demandé.",
+        "Contrôle : 8 × 6,50 = 52 ; 7 × 3,20 = 22,40 ; 52 + 22,40 = 74,40 ; 90 − 74,40 = 15,60 €."
+      ],
+      "hint": "Écris d'abord, en une expression, tout ce que paie le club. Que fais-tu ensuite de cette dépense ?"
+    },
+    {
+      "key": "q5",
+      "skill_id": "B011",
+      "statement": "Combien paie chaque jeune pour le car et le chocolat chaud ?",
+      "type": "numerique",
+      "answer": {
+        "value": 10.8,
+        "unit": "€",
+        "accepted": [
+          "10,80",
+          "10,80 €",
+          "10,8 €",
+          "10,80 euros"
+        ]
+      },
+      "points": 2,
+      "solution_steps": [
+        "Le calcul s'écrit 72 ÷ 8 + 1,80 : la division passe avant l'addition.",
+        "72 ÷ 8 = 9, car 8 × 9 = 72 : la part du car est 9 €.",
+        "9 + 1,80 = 10,80 : chaque jeune paie **10,80 €**.",
+        "Attention : le chocolat chaud n'est pas partagé, chacun paie le sien en entier."
+      ],
+      "hint": "Commence par la part du car de chaque jeune."
+    }
+  ],
+  "review_status": "relu_agent",
+  "programme_ref": "Cycle 4, classe de 5e, Nombres et calculs, Opérations, Objectifs d'apprentissage : « Traduire un problème, une succession donnée d'opérations, un programme de calcul, en une seule expression, en faisant appel ou non à des parenthèses. »"
+}

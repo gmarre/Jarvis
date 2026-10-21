@@ -1,0 +1,137 @@
+{
+  "id": "SX-F010-01",
+  "skill_id": "F010",
+  "skill_ids": [
+    "F010",
+    "F061",
+    "P022"
+  ],
+  "school_level": "5e",
+  "title": "L'enclos des poules",
+  "contexte": "Le jardin partagé du quartier va accueillir 6 poules. Les jardiniers dessinent un enclos à cinq côtés, ABCDE. Ils n'ont pas encore choisi la longueur notée $x$, en mètres ; ils savent seulement que $x$ sera plus grand que 5.\n\nLes côtés mesurent, en mètres :\nAB = $5x + 13$ ;\nBC = $x + 3{,}5$ ;\nCD = $7x - 29$ ;\nDE = $x$ ;\nEA = $1{,}5x + 11$.\n\nLe côté DE longe le mur du cabanon à outils : il n'a pas besoin de grillage. Tous les autres côtés seront grillagés.\n\nLe grillage se vend en rouleaux de 10 m. Chaque poule pond environ 5 œufs par semaine.\n\nDans l'enclos, on construira un poulailler dont la base est un rectangle de 2,4 m sur 1,7 m.",
+  "image": null,
+  "duree_estimee_min": 15,
+  "questions": [
+    {
+      "key": "q1",
+      "skill_id": "F061",
+      "statement": "Quelle phrase décrit l'expression $7x - 29$ du côté CD ?",
+      "type": "qcm",
+      "choices": [
+        {
+          "key": "a",
+          "text": "Un produit de deux facteurs : 7 et $x - 29$",
+          "misconception": "L'élève lit $7(x - 29)$ : sans parenthèses, le 7 ne multiplie que $x$."
+        },
+        {
+          "key": "b",
+          "text": "Une différence de deux termes : $7x$ et 29",
+          "misconception": null
+        },
+        {
+          "key": "c",
+          "text": "Une somme de deux termes : $7x$ et 29",
+          "misconception": "L'élève ne voit pas le signe − : on retranche 29, c'est une différence."
+        },
+        {
+          "key": "d",
+          "text": "Un produit de deux facteurs : 7 et $x$",
+          "misconception": "L'élève ne regarde que $7x$ : la dernière opération est la soustraction de 29, pas la multiplication."
+        }
+      ],
+      "answer": {
+        "value": "b"
+      },
+      "points": 1,
+      "solution_steps": [
+        "Pour calculer $7x - 29$, on multiplie d'abord 7 par $x$, puis on retranche 29.",
+        "La dernière opération est une soustraction : c'est une différence de deux termes, $7x$ et 29. Réponse b."
+      ],
+      "hint": "Quelle est la dernière opération à faire pour calculer $7x - 29$ ?"
+    },
+    {
+      "key": "q2",
+      "skill_id": "F010",
+      "statement": "Quelle est la forme réduite de la somme AB + EA ?",
+      "type": "qcm",
+      "choices": [
+        {
+          "key": "a",
+          "text": "$30{,}5x$",
+          "misconception": "L'élève additionne tous les nombres, ceux qui accompagnent $x$ et les autres : 5 + 13 + 1,5 + 11 = 30,5. Or 13 et 11 ne sont pas des termes en $x$."
+        },
+        {
+          "key": "b",
+          "text": "$6{,}5x^{2} + 24$",
+          "misconception": "L'élève croit qu'ajouter des $x$ donne $x^{2}$ : $5x + 1{,}5x = 6{,}5x$, les $x$ s'ajoutent, ils ne se multiplient pas."
+        },
+        {
+          "key": "c",
+          "text": "$17{,}5x + 13$",
+          "misconception": "L'élève colle 11 au terme $1{,}5x$ et le transforme en $12{,}5x$, puis ajoute $5x$ : un terme en $x$ et un nombre ne se réunissent pas."
+        },
+        {
+          "key": "d",
+          "text": "$6{,}5x + 24$",
+          "misconception": null
+        }
+      ],
+      "answer": {
+        "value": "d"
+      },
+      "points": 2,
+      "solution_steps": [
+        "AB + EA = $5x + 13 + 1{,}5x + 11$.",
+        "Termes en $x$ : $5x + 1{,}5x = 6{,}5x$. Nombres : 13 + 11 = 24.",
+        "Forme réduite : $6{,}5x + 24$. Réponse d. On ne peut pas aller plus loin : $6{,}5x$ et 24 ne sont pas des termes semblables."
+      ],
+      "hint": "Regroupe les termes en $x$ entre eux, puis les nombres entre eux."
+    },
+    {
+      "key": "q3",
+      "skill_id": "F010",
+      "statement": "Quelle longueur de grillage faut-il ? Écris-la sous forme réduite, en fonction de $x$.",
+      "type": "texte",
+      "answer": {
+        "value": "14,5x − 1,5",
+        "forme": "reduite",
+        "unit": "m"
+      },
+      "points": 4,
+      "solution_steps": [
+        "Le grillage fait le tour, sauf le côté DE : on additionne AB + BC + CD + EA.",
+        "$5x + 13 + x + 3{,}5 + 7x - 29 + 1{,}5x + 11$ : chaque terme garde le signe qui le précède.",
+        "Termes en $x$ : $5x + x + 7x + 1{,}5x = 14{,}5x$.",
+        "Nombres : 13 + 3,5 = 16,5 ; 16,5 − 29 = −12,5 ; −12,5 + 11 = −1,5.",
+        "Il faut $14{,}5x - 1{,}5$ mètres de grillage. Attention : le − devant 29 reste attaché à ce terme, et DE n'est pas grillagé."
+      ],
+      "hint": "Quel côté n'a pas de grillage ? Regroupe ensuite les termes en $x$, puis les nombres avec leur signe."
+    },
+    {
+      "key": "q4",
+      "skill_id": "P022",
+      "statement": "Quel est le périmètre de la base du poulailler ?",
+      "type": "numerique",
+      "answer": {
+        "value": 8.2,
+        "unit": "m",
+        "accepted": [
+          "8,2 m",
+          "8,20",
+          "8,20 m",
+          "8,2 mètres"
+        ]
+      },
+      "points": 2,
+      "solution_steps": [
+        "La base est un rectangle de 2,4 m sur 1,7 m.",
+        "Son périmètre est la somme de ses quatre côtés : 2,4 + 1,7 + 2,4 + 1,7 = 8,2.",
+        "On peut aussi écrire 2 × (2,4 + 1,7) = 2 × 4,1 = 8,2.",
+        "Le périmètre est **8,2 m**. Attention : 2,4 + 1,7 = 4,1 m ne fait que la moitié du tour."
+      ],
+      "hint": "Un rectangle a quatre côtés, égaux deux à deux."
+    }
+  ],
+  "review_status": "relu_agent",
+  "programme_ref": "Cycle 4, classe de 5e, Nombres et calculs, Calcul littéral et algébrique, Objectifs d'apprentissage : « Réduire une expression littérale de la forme a𝑥 + b, où a et b sont des nombres décimaux. »"
+}

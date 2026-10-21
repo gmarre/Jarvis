@@ -1,0 +1,124 @@
+{
+  "id": "SX-F002-01",
+  "skill_id": "F002",
+  "skill_ids": [
+    "F002",
+    "F003",
+    "D006"
+  ],
+  "school_level": "5e",
+  "title": "L'atelier des cadres photo",
+  "contexte": "Le club de menuiserie du collège fabrique des cadres pour l'exposition photo de juin. Toutes les photos sont carrées. On note $x$ la longueur, en centimètres, du côté d'une photo.\n\nPour le cadre d'une photo :\nla baguette de bois qui fait le tour mesure $4x + 12$ centimètres (les 12 cm en plus servent aux coupes des angles) ;\nla vitre est un carré de même côté que la photo ;\nle carton du fond est un carré qui dépasse la photo de 2 cm de chaque côté.\n\nLe vitrier fait payer le verre 2 centimes par centimètre carré : le prix de la vitre, en centimes, est donc $2x^{2}$.\n\nLe club compte 14 membres et se réunit le jeudi midi.\n\nPhotos à encadrer : la photo du lac, de côté 15 cm ; la photo du phare, de côté 7,5 cm ; la photo de la forêt, de côté 12 cm.",
+  "image": null,
+  "duree_estimee_min": 15,
+  "questions": [
+    {
+      "key": "q1",
+      "skill_id": "F003",
+      "statement": "Quelle expression donne la longueur du côté du carton du fond ?",
+      "type": "qcm",
+      "choices": [
+        {
+          "key": "a",
+          "text": "$x + 2$",
+          "misconception": "L'élève n'ajoute que 2 cm : le carton dépasse de 2 cm à gauche **et** de 2 cm à droite, soit 4 cm de plus."
+        },
+        {
+          "key": "b",
+          "text": "$2x$",
+          "misconception": "L'élève double le côté : le carton ne fait pas le double de la photo, il la dépasse de 2 cm de chaque côté."
+        },
+        {
+          "key": "c",
+          "text": "$x + 4$",
+          "misconception": null
+        },
+        {
+          "key": "d",
+          "text": "$4x$",
+          "misconception": "L'élève confond avec le tour de la photo : $4x$ est le périmètre de la photo, pas le côté du carton."
+        }
+      ],
+      "answer": {
+        "value": "c"
+      },
+      "points": 1,
+      "solution_steps": [
+        "Le carton dépasse la photo de 2 cm d'un côté **et** de 2 cm du côté opposé.",
+        "Son côté mesure donc $x + 2 + 2$, c'est-à-dire $x + 4$ centimètres. Réponse c."
+      ],
+      "hint": "Fais un petit dessin de la photo posée sur son carton, puis relis la phrase qui parle du carton."
+    },
+    {
+      "key": "q2",
+      "skill_id": "F002",
+      "statement": "Quelle longueur de baguette faut-il pour le cadre de la photo du lac ?",
+      "type": "numerique",
+      "answer": {
+        "value": 72,
+        "unit": "cm",
+        "accepted": [
+          "72 cm",
+          "72 centimètres"
+        ]
+      },
+      "points": 2,
+      "solution_steps": [
+        "Pour la photo du lac, $x = 15$. On rétablit le signe × sous-entendu : $4x + 12 = 4 \\times 15 + 12$.",
+        "La multiplication d'abord : 4 × 15 = 60 ; puis 60 + 12 = 72.",
+        "Il faut **72 cm** de baguette.",
+        "Attention : $4x$ ne veut pas dire « 4 suivi de 15 » (415), mais 4 × 15."
+      ],
+      "hint": "Que cache l'écriture $4x$ entre le 4 et le $x$ ?"
+    },
+    {
+      "key": "q3",
+      "skill_id": "D006",
+      "statement": "Quelle est l'aire de la vitre de la photo du phare, en centimètres carrés ?",
+      "type": "numerique",
+      "answer": {
+        "value": 56.25,
+        "unit": "cm²",
+        "accepted": [
+          "56,25 cm²",
+          "56,25 cm2",
+          "56,25 cm^2"
+        ]
+      },
+      "points": 3,
+      "solution_steps": [
+        "La vitre est un carré de côté 7,5 cm : son aire est $7{,}5^{2} = 7{,}5 \\times 7{,}5$.",
+        "On pose la multiplication sans les virgules : 75 × 75 = 5 625.",
+        "Les deux facteurs ont un chiffre après la virgule chacun, soit deux en tout : 7,5 × 7,5 = 56,25.",
+        "L'aire de la vitre est **56,25 cm²**. Attention : $7{,}5^{2}$ n'est pas 7,5 × 2 = 15."
+      ],
+      "hint": "L'aire d'un carré, c'est côté × côté."
+    },
+    {
+      "key": "q4",
+      "skill_id": "F002",
+      "statement": "Combien coûte, en centimes, la vitre de la photo de la forêt ?",
+      "type": "numerique",
+      "answer": {
+        "value": 288,
+        "unit": "centimes",
+        "accepted": [
+          "288 centimes",
+          "288 c",
+          "2,88 €",
+          "2,88 euros"
+        ]
+      },
+      "points": 4,
+      "solution_steps": [
+        "Pour la photo de la forêt, $x = 12$ : $2x^{2} = 2 \\times 12^{2}$.",
+        "Le carré se calcule avant la multiplication : $12^{2} = 12 \\times 12 = 144$.",
+        "Puis 2 × 144 = 288 : la vitre coûte **288 centimes**, soit 2,88 €.",
+        "Attention : $2x^{2}$ n'est pas $(2x)^{2}$. Calculer $(2 \\times 12)^{2} = 24^{2} = 576$ serait mettre au carré le 2 aussi."
+      ],
+      "hint": "Dans $2x^{2}$, quel nombre est au carré ?"
+    }
+  ],
+  "review_status": "relu_agent",
+  "programme_ref": "Cycle 4, classe de 5e, Nombres et calculs, Puissances, Objectifs d'apprentissage : « Calculer la valeur d'une expression littérale contenant une puissance simple. »"
+}

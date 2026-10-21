@@ -1,0 +1,135 @@
+{
+  "id": "SX-F012-01",
+  "skill_id": "F012",
+  "skill_ids": [
+    "F012",
+    "B038",
+    "A016"
+  ],
+  "school_level": "5e",
+  "title": "Les tenues du club de handball",
+  "contexte": "Le club de handball de la ville commande des tenues neuves. Une tenue comprend un maillot et un short. Le fournisseur n'a pas encore fixé le prix du maillot : on le note $x$, en euros. Le short coûte 9 €. Les chaussettes sont offertes.\n\nL'équipe des moins de 13 ans compte 14 joueurs, celle des moins de 15 ans 11 joueurs. Chaque joueur reçoit une tenue. Les 3 entraîneurs n'en reçoivent pas.\n\nLa livraison est gratuite. Le club a été fondé en 1994.\n\nLe club de basket voisin a commandé chez le même fournisseur des tenues avec un autre modèle de short, le même pour toutes ses tenues. Sa facture s'élève à $7x + 56$ euros.",
+  "image": null,
+  "duree_estimee_min": 15,
+  "questions": [
+    {
+      "key": "q1",
+      "skill_id": "B038",
+      "statement": "Combien de tenues le club de handball commande-t-il ?",
+      "type": "numerique",
+      "answer": {
+        "value": 25,
+        "unit": "tenues",
+        "accepted": [
+          "25 tenues"
+        ]
+      },
+      "points": 1,
+      "solution_steps": [
+        "Seuls les joueurs reçoivent une tenue : 14 + 11 = 25.",
+        "Les 3 entraîneurs n'en reçoivent pas : le club commande **25 tenues**."
+      ],
+      "hint": "Relis la phrase qui parle des entraîneurs."
+    },
+    {
+      "key": "q2",
+      "skill_id": "F012",
+      "statement": "Quelle expression donne le prix, en euros, des tenues des moins de 13 ans ?",
+      "type": "qcm",
+      "choices": [
+        {
+          "key": "a",
+          "text": "$14x + 9$",
+          "misconception": "L'élève ne multiplie que le prix du maillot : il compte un seul short pour les 14 joueurs."
+        },
+        {
+          "key": "b",
+          "text": "$14(x + 9)$",
+          "misconception": null
+        },
+        {
+          "key": "c",
+          "text": "$x + 14 \\times 9$",
+          "misconception": "L'élève compte 14 shorts mais un seul maillot."
+        },
+        {
+          "key": "d",
+          "text": "$14 + x + 9$",
+          "misconception": "L'élève ajoute le nombre de joueurs aux prix au lieu de multiplier : 14 n'est pas un prix."
+        }
+      ],
+      "answer": {
+        "value": "b"
+      },
+      "points": 2,
+      "solution_steps": [
+        "Une tenue coûte $x + 9$ euros : un maillot et un short.",
+        "Les 14 joueurs ont chacun une tenue : $14 \\times (x + 9)$, qu'on écrit $14(x + 9)$. Réponse b.",
+        "Les parenthèses sont nécessaires : le 14 multiplie le prix du maillot **et** celui du short."
+      ],
+      "hint": "Écris d'abord le prix d'une seule tenue."
+    },
+    {
+      "key": "q3",
+      "skill_id": "F012",
+      "statement": "Écris le prix, en euros, des tenues des moins de 15 ans sous forme développée et réduite, sans parenthèses.",
+      "type": "texte",
+      "answer": {
+        "value": "11x + 99",
+        "forme": "developpee",
+        "unit": "€"
+      },
+      "points": 3,
+      "solution_steps": [
+        "Les 11 joueurs ont chacun une tenue à $x + 9$ euros : le prix est $11(x + 9)$.",
+        "On multiplie **chaque** terme de la parenthèse par 11 : $11(x + 9) = 11 \\times x + 11 \\times 9 = 11x + 99$.",
+        "Attention : $11x + 9$ oublierait de multiplier le 9, c'est-à-dire 10 des 11 shorts."
+      ],
+      "hint": "Écris le prix d'une tenue, multiplie-le par le nombre de joueurs, puis retire les parenthèses."
+    },
+    {
+      "key": "q4",
+      "skill_id": "F012",
+      "statement": "Écris la facture du club de basket, $7x + 56$, sous la forme d'un produit.",
+      "type": "texte",
+      "answer": {
+        "value": "7(x + 8)",
+        "forme": "factorisee",
+        "unit": "€"
+      },
+      "points": 4,
+      "solution_steps": [
+        "$7x$, c'est $7 \\times x$, et 56, c'est $7 \\times 8$ : 7 est un facteur commun aux deux termes.",
+        "Donc $7x + 56 = 7 \\times x + 7 \\times 8 = 7(x + 8)$.",
+        "Vérification en développant : $7(x + 8) = 7x + 56$.",
+        "Attention : $7(x + 56)$ ne convient pas, car en développant on obtiendrait $7x + 392$."
+      ],
+      "hint": "Cherche un nombre qui divise à la fois $7x$ et 56."
+    },
+    {
+      "key": "q5",
+      "skill_id": "A016",
+      "statement": "Combien coûte un short du club de basket ?",
+      "type": "numerique",
+      "answer": {
+        "value": 8,
+        "unit": "€",
+        "accepted": [
+          "8 €",
+          "8 euros",
+          "8€"
+        ]
+      },
+      "points": 2,
+      "solution_steps": [
+        "Chaque tenue de basket coûte $x$ euros plus le prix du short ; tous les shorts ont le même prix.",
+        "Le terme $7x$ montre qu'il y a 7 maillots, donc 7 tenues : les 7 shorts coûtent 56 € en tout.",
+        "56 est un multiple de 7 : 56 = 7 × 8, donc 56 ÷ 7 = 8.",
+        "Un short de basket coûte **8 €**. C'est le 8 de la forme factorisée $7(x + 8)$."
+      ],
+      "hint": "Combien de tenues le club de basket a-t-il commandées ? Que coûtent tous ses shorts ensemble ?"
+    }
+  ],
+  "review_status": "relu_agent",
+  "programme_ref": "Cycle 4, classe de 5e, Nombres et calculs, Calcul littéral et algébrique, Objectifs d'apprentissage : « Exploiter les relations k(a + b) = ka + kb ou k(a – b) = ka – kb pour factoriser, ou développer une expression littérale. »"
+}

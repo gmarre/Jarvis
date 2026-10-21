@@ -1,0 +1,124 @@
+{
+  "id": "SX-B055-01",
+  "skill_id": "B055",
+  "skill_ids": [
+    "B055",
+    "A009"
+  ],
+  "school_level": "5e",
+  "title": "Le festival de théâtre",
+  "contexte": "Le collège organise son festival de théâtre dans la salle des fêtes de la ville, le vendredi et le samedi soir.\n\nLa salle compte 8 rangées de 103 fauteuils. Les portes ouvrent à 19 h 30 et le spectacle dure 95 minutes.\n\nLes billets coûtent 13 € pour un adulte et 7 € pour un enfant. La troupe compte 23 élèves comédiens, qui ne paient pas leur place.\n\n**Vendredi soir**, 47 adultes et 47 enfants ont acheté un billet.\n\n**Samedi soir**, 98 adultes ont acheté un billet ; ce soir-là, les enfants entraient gratuitement.\n\nPour calculer le nombre de places et les recettes, la trésorière de l'association des parents veut tout faire de tête, sans poser les opérations.",
+  "image": null,
+  "duree_estimee_min": 12,
+  "questions": [
+    {
+      "key": "q1",
+      "skill_id": "A009",
+      "statement": "Pour calculer de tête le nombre de fauteuils, on décompose 103. Quelle décomposition est juste ?",
+      "type": "qcm",
+      "choices": [
+        {
+          "key": "a",
+          "text": "103 = 10 + 3",
+          "misconception": "L'élève lit « 10 » puis « 3 » : il oublie que le 1 est le chiffre des centaines. 10 + 3 = 13, pas 103."
+        },
+        {
+          "key": "b",
+          "text": "103 = 100 + 3",
+          "misconception": null
+        },
+        {
+          "key": "c",
+          "text": "103 = 1 + 0 + 3",
+          "misconception": "L'élève additionne les chiffres : 1 + 0 + 3 = 4. Chaque chiffre vaut selon sa place, le 1 vaut 100."
+        },
+        {
+          "key": "d",
+          "text": "103 = 100 + 30",
+          "misconception": "L'élève place le 3 au rang des dizaines : 100 + 30 = 130. Dans 103, les dizaines sont occupées par le 0."
+        }
+      ],
+      "answer": {
+        "value": "b"
+      },
+      "points": 1,
+      "solution_steps": [
+        "Dans 103, le chiffre 1 est celui des centaines : il vaut 100.",
+        "Le 0 est au rang des dizaines (aucune dizaine) et le 3 au rang des unités : il vaut 3.",
+        "Donc 103 = 100 + 3. Réponse b."
+      ],
+      "hint": "Que vaut le chiffre 1 dans 103, d'après sa place ?"
+    },
+    {
+      "key": "q2",
+      "skill_id": "B055",
+      "statement": "Combien de fauteuils la salle compte-t-elle ?",
+      "type": "numerique",
+      "answer": {
+        "value": 824,
+        "unit": "fauteuils",
+        "accepted": [
+          "824 fauteuils",
+          "824 places"
+        ]
+      },
+      "points": 2,
+      "solution_steps": [
+        "8 rangées de 103 fauteuils : 8 × 103.",
+        "103 = 100 + 3, donc 8 × 103 = 8 × 100 + 8 × 3 = 800 + 24 = 824.",
+        "On multiplie **chacun** des deux termes par 8 : 8 × 100 + 3 = 803 serait faux.",
+        "La salle compte **824 fauteuils**."
+      ],
+      "hint": "Décompose 103 en deux nombres faciles à multiplier par 8, puis multiplie chacun d'eux par 8."
+    },
+    {
+      "key": "q3",
+      "skill_id": "B055",
+      "statement": "Quelle est la recette des billets du vendredi soir ?",
+      "type": "numerique",
+      "answer": {
+        "value": 940,
+        "unit": "€",
+        "accepted": [
+          "940 €",
+          "940 euros",
+          "940€"
+        ]
+      },
+      "points": 3,
+      "solution_steps": [
+        "Recette des adultes : 47 × 13 ; recette des enfants : 47 × 7. En tout : 47 × 13 + 47 × 7.",
+        "47 est un facteur commun aux deux produits : 47 × 13 + 47 × 7 = 47 × (13 + 7) = 47 × 20.",
+        "47 × 20 = 47 × 2 × 10 = 94 × 10 = 940.",
+        "La recette du vendredi est **940 €**. On a évité de calculer 47 × 13 en regroupant les deux prix."
+      ],
+      "hint": "Il y a autant d'adultes que d'enfants : regroupe les deux prix."
+    },
+    {
+      "key": "q4",
+      "skill_id": "B055",
+      "statement": "Quelle est la recette des billets du samedi soir ?",
+      "type": "numerique",
+      "answer": {
+        "value": 1274,
+        "unit": "€",
+        "accepted": [
+          "1 274",
+          "1 274 €",
+          "1274 €",
+          "1 274 euros"
+        ]
+      },
+      "points": 4,
+      "solution_steps": [
+        "98 billets adultes à 13 € : 13 × 98. Les enfants entraient gratuitement, ils ne rapportent rien.",
+        "98 = 100 − 2, donc 13 × 98 = 13 × 100 − 13 × 2 = 1 300 − 26 = 1 274.",
+        "On retire 13 × 2 = 26, et non 2 : les 2 billets comptés en trop valent 26 €. 13 × 100 − 2 = 1 298 serait faux.",
+        "La recette du samedi est **1 274 €**."
+      ],
+      "hint": "98, c'est 100 moins 2. Que rapporteraient 100 billets adultes ?"
+    }
+  ],
+  "review_status": "relu_agent",
+  "programme_ref": "Cycle 4, classe de 5e, Nombres et calculs, Opérations, Objectifs d'apprentissage : « Connaitre et utiliser la distributivité simple sur des exemples numériques. »"
+}
