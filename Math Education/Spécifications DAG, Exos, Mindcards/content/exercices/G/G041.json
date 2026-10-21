@@ -1,0 +1,190 @@
+[
+  {
+    "id": "EX-G041-D-01",
+    "skill_id": "G041",
+    "level": "decouverte",
+    "type": "numerique",
+    "statement": "Un triangle LUC a pour côtés LU = 10 cm, UC = 24 cm et LC = 26 cm. Pour savoir s'il est rectangle, calcule LU² + UC², en cm².",
+    "image": null,
+    "answer": {
+      "value": 676,
+      "unit": "cm²"
+    },
+    "solution_steps": [
+      "Le plus grand côté est [LC]. S'il y a un angle droit, il est en face de ce côté, en U.",
+      "On calcule la somme des carrés des deux autres côtés : LU² + UC² = 10² + 24² = 100 + 576 = **676**.",
+      "Séparément, le carré du plus grand côté : LC² = 26² = 676.",
+      "Les deux résultats sont égaux : d'après la réciproque du théorème de Pythagore, LUC est rectangle en U."
+    ],
+    "hint": "Élève chaque longueur au carré avant d'additionner.",
+    "estimated_duration_s": 60,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, classe de 4e, Espace et géométrie, Triangles, Objectifs d'apprentissage : « Connaitre le théorème de Pythagore, sa réciproque, sa contraposée. »"
+  },
+  {
+    "id": "EX-G041-D-02",
+    "skill_id": "G041",
+    "level": "decouverte",
+    "type": "qcm",
+    "statement": "Un triangle RSV a pour côtés RS = 3,6 cm, SV = 3,9 cm et RV = 1,5 cm. Est-il rectangle ?",
+    "image": null,
+    "choices": [
+      {
+        "key": "a",
+        "text": "Non, car RS² + SV² ≠ RV².",
+        "misconception": "L'élève ne prend pas le plus grand côté : il compare au carré du dernier côté de la liste, [RV], qui est le plus petit."
+      },
+      {
+        "key": "b",
+        "text": "Oui, en S.",
+        "misconception": "L'élève place l'angle droit à une extrémité du plus grand côté [SV], au lieu du sommet opposé."
+      },
+      {
+        "key": "c",
+        "text": "Oui, en R.",
+        "misconception": null
+      }
+    ],
+    "answer": {
+      "value": "c"
+    },
+    "solution_steps": [
+      "Le plus grand côté est [SV], de 3,9 cm : SV² = 3,9² = 15,21.",
+      "La somme des carrés des deux autres : RS² + RV² = 3,6² + 1,5² = 12,96 + 2,25 = 15,21.",
+      "SV² = RS² + RV² : d'après la réciproque du théorème de Pythagore, RSV est rectangle.",
+      "L'angle droit est en face du plus grand côté [SV], donc en R. Bonne réponse : c."
+    ],
+    "hint": "Commence par repérer le plus grand côté : l'angle droit, s'il existe, est en face.",
+    "estimated_duration_s": 75,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, classe de 4e, Espace et géométrie, Triangles, Objectifs d'apprentissage : « Connaitre le théorème de Pythagore, sa réciproque, sa contraposée. »"
+  },
+  {
+    "id": "EX-G041-E-01",
+    "skill_id": "G041",
+    "level": "entrainement",
+    "type": "vrai_faux",
+    "statement": "Un triangle a des côtés de 4,5 cm ; 6 cm et 7,6 cm. Max affirme : « Ce triangle est rectangle. » A-t-il raison ?",
+    "image": null,
+    "answer": {
+      "value": false
+    },
+    "solution_steps": [
+      "Le plus grand côté mesure 7,6 cm : 7,6² = 57,76.",
+      "Les deux autres : 4,5² + 6² = 20,25 + 36 = 56,25.",
+      "57,76 ≠ 56,25 : l'égalité de Pythagore n'est pas vérifiée. D'après la contraposée du théorème de Pythagore, le triangle n'est pas rectangle.",
+      "Max a **tort**. Un triangle de côtés 4,5 cm ; 6 cm et 7,5 cm, lui, serait rectangle."
+    ],
+    "hint": "Compare le carré du plus grand côté à la somme des carrés des deux autres.",
+    "estimated_duration_s": 75,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, classe de 4e, Espace et géométrie, Triangles, Objectifs d'apprentissage : « Connaitre le théorème de Pythagore, sa réciproque, sa contraposée. »"
+  },
+  {
+    "id": "EX-G041-E-02",
+    "skill_id": "G041",
+    "level": "entrainement",
+    "type": "qcm",
+    "statement": "Un triangle FGH a pour côtés FG = 5 cm, GH = 5 cm et FH = 7 cm. Que peut-on conclure, et grâce à quel théorème ?",
+    "image": null,
+    "choices": [
+      {
+        "key": "a",
+        "text": "FGH est rectangle en G, d'après le théorème de Pythagore.",
+        "misconception": "L'élève prend 49 et 50 pour égaux, et cite le théorème de Pythagore, qui suppose le triangle déjà rectangle."
+      },
+      {
+        "key": "b",
+        "text": "FGH n'est pas rectangle, d'après la contraposée du théorème de Pythagore.",
+        "misconception": null
+      },
+      {
+        "key": "c",
+        "text": "FGH est rectangle en G, d'après la réciproque du théorème de Pythagore.",
+        "misconception": "L'élève juge 49 et 50 assez proches pour conclure : l'égalité doit être exacte."
+      },
+      {
+        "key": "d",
+        "text": "FGH n'est pas rectangle, d'après la réciproque du théorème de Pythagore.",
+        "misconception": "Bonne conclusion, mauvais théorème : la réciproque sert à prouver qu'un triangle est rectangle, pas qu'il ne l'est pas."
+      }
+    ],
+    "answer": {
+      "value": "b"
+    },
+    "solution_steps": [
+      "Le plus grand côté est [FH] : FH² = 7² = 49.",
+      "La somme des carrés des deux autres : FG² + GH² = 5² + 5² = 25 + 25 = 50.",
+      "49 ≠ 50 : l'égalité de Pythagore n'est pas vérifiée.",
+      "La contraposée du théorème de Pythagore dit : si le carré du plus grand côté n'est pas égal à la somme des carrés des deux autres, le triangle n'est pas rectangle. Bonne réponse : b."
+    ],
+    "hint": "Calcule les deux nombres à comparer. Quel théorème conclut quand ils sont différents ?",
+    "estimated_duration_s": 90,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, classe de 4e, Espace et géométrie, Triangles, Objectifs d'apprentissage : « Connaitre le théorème de Pythagore, sa réciproque, sa contraposée. »"
+  },
+  {
+    "id": "EX-G041-M-01",
+    "skill_id": "G041",
+    "level": "maitrise",
+    "type": "qcm",
+    "statement": "Chaque proposition donne les longueurs des trois côtés d'un triangle, en cm. Lequel de ces triangles est rectangle ?",
+    "image": null,
+    "choices": [
+      {
+        "key": "a",
+        "text": "4 ; 5 ; 6",
+        "misconception": "L'élève choisit des nombres qui se suivent, comme 3 ; 4 ; 5, sans calculer : 4² + 5² = 41 et 6² = 36."
+      },
+      {
+        "key": "b",
+        "text": "7 ; 10 ; 12,2",
+        "misconception": "L'élève trouve 7² + 10² = 149 et 12,2² = 148,84, presque égaux, et conclut trop vite : l'égalité doit être exacte."
+      },
+      {
+        "key": "c",
+        "text": "6 ; 8 ; 11",
+        "misconception": "L'élève reconnaît 6 et 8, comme dans le triangle 6 ; 8 ; 10, sans vérifier le troisième côté : 6² + 8² = 100 et 11² = 121."
+      },
+      {
+        "key": "d",
+        "text": "1,6 ; 3 ; 3,4",
+        "misconception": null
+      }
+    ],
+    "answer": {
+      "value": "d"
+    },
+    "solution_steps": [
+      "Pour chaque triangle, on compare le carré du plus grand côté à la somme des carrés des deux autres.",
+      "4 ; 5 ; 6 : 16 + 25 = 41 et 6² = 36. 7 ; 10 ; 12,2 : 49 + 100 = 149 et 12,2² = 148,84. 6 ; 8 ; 11 : 36 + 64 = 100 et 11² = 121. Pas d'égalité : d'après la contraposée, ces trois triangles ne sont pas rectangles.",
+      "1,6 ; 3 ; 3,4 : 1,6² + 3² = 2,56 + 9 = 11,56 et 3,4² = 11,56. Égalité : d'après la réciproque du théorème de Pythagore, ce triangle est rectangle.",
+      "Bonne réponse : d."
+    ],
+    "hint": "Teste chaque triangle : les deux nombres doivent être exactement égaux.",
+    "estimated_duration_s": 150,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, classe de 4e, Espace et géométrie, Triangles, Objectifs d'apprentissage : « Connaitre le théorème de Pythagore, sa réciproque, sa contraposée. »"
+  },
+  {
+    "id": "EX-G041-M-02",
+    "skill_id": "G041",
+    "level": "maitrise",
+    "type": "vrai_faux",
+    "statement": "Pour vérifier qu'un coin de terrasse est droit, Paul marque un point à 2,1 m du coin sur un bord, un point à 2,8 m sur l'autre bord, et mesure 3,5 m entre ces deux points. Il en conclut que le coin est droit. A-t-il raison ?",
+    "image": null,
+    "answer": {
+      "value": true
+    },
+    "solution_steps": [
+      "Le coin et les deux marques forment un triangle de côtés 2,1 m ; 2,8 m et 3,5 m. Le plus grand côté, 3,5 m, est en face du coin.",
+      "3,5² = 12,25 et 2,1² + 2,8² = 4,41 + 7,84 = 12,25.",
+      "Les deux résultats sont égaux : d'après la réciproque du théorème de Pythagore, le triangle est rectangle, et l'angle droit est en face du plus grand côté, au coin.",
+      "Paul a **raison**."
+    ],
+    "hint": "Quel triangle Paul a-t-il formé ? Compare le carré du plus grand côté à la somme des carrés des deux autres.",
+    "estimated_duration_s": 120,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, classe de 4e, Espace et géométrie, Triangles, Objectifs d'apprentissage : « Connaitre le théorème de Pythagore, sa réciproque, sa contraposée. »"
+  }
+]

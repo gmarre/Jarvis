@@ -1,0 +1,90 @@
+{
+  "type": "geometrie",
+  "params": {
+    "colonnes": 12,
+    "lignes": 9,
+    "points": {
+      "A": [
+        7,
+        1
+      ],
+      "B": [
+        11,
+        8
+      ],
+      "C": [
+        1,
+        8
+      ],
+      "I": [
+        9,
+        "4.5"
+      ],
+      "J": [
+        6,
+        8
+      ],
+      "K": [
+        4,
+        "4.5"
+      ]
+    },
+    "elements": [
+      {
+        "polygone": [
+          "A",
+          "B",
+          "C"
+        ]
+      },
+      {
+        "polygone": [
+          "I",
+          "J",
+          "K"
+        ],
+        "couleur": "accent"
+      },
+      {
+        "codage": [
+          [
+            "A",
+            "I"
+          ],
+          [
+            "I",
+            "B"
+          ]
+        ],
+        "marque": 1
+      },
+      {
+        "codage": [
+          [
+            "B",
+            "J"
+          ],
+          [
+            "J",
+            "C"
+          ]
+        ],
+        "marque": 2
+      },
+      {
+        "codage": [
+          [
+            "A",
+            "K"
+          ],
+          [
+            "K",
+            "C"
+          ]
+        ],
+        "marque": 3
+      }
+    ]
+  },
+  "alt": "Triangle ABC avec trois points codés I, J, K sur ses côtés et le triangle IJK"
+}

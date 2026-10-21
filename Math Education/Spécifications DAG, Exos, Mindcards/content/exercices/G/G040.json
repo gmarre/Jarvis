@@ -1,0 +1,183 @@
+[
+  {
+    "id": "EX-G040-D-01",
+    "skill_id": "G040",
+    "level": "decouverte",
+    "type": "numerique",
+    "statement": "Sur la figure (pas en vraie grandeur), calcule la longueur KN, en cm.",
+    "image": "figures/EX-G040-D-01",
+    "answer": {
+      "value": 20,
+      "unit": "cm"
+    },
+    "solution_steps": [
+      "Le codage montre un angle droit en L : le triangle KLN est rectangle en L. Son hypoténuse est le côté opposé à l'angle droit, [KN].",
+      "Théorème de Pythagore : KN² = KL² + LN².",
+      "KN² = 12² + 16² = 144 + 256 = 400.",
+      "KN est le nombre positif dont le carré vaut 400 : KN = √400 = 20, car 20 × 20 = 400.",
+      "KN = **20 cm**. Additionner les longueurs (12 + 16 = 28) sans les élever au carré est l'erreur à éviter."
+    ],
+    "hint": "Quel côté est en face de l'angle droit ? Écris l'égalité avec les carrés.",
+    "estimated_duration_s": 75,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, classe de 4e, Espace et géométrie, Triangles, Objectifs d'apprentissage : « Connaitre le théorème de Pythagore, sa réciproque, sa contraposée. »"
+  },
+  {
+    "id": "EX-G040-D-02",
+    "skill_id": "G040",
+    "level": "decouverte",
+    "type": "qcm",
+    "statement": "D'après le codage de la figure, quelle égalité est vraie dans le triangle TAC ?",
+    "image": "figures/EX-G040-D-02",
+    "choices": [
+      {
+        "key": "a",
+        "text": "TA² = TC² + AC²",
+        "misconception": "L'élève prend [TA] pour l'hypoténuse, alors que [TA] touche l'angle droit."
+      },
+      {
+        "key": "b",
+        "text": "TC² = TA² + AC²",
+        "misconception": null
+      },
+      {
+        "key": "c",
+        "text": "TC = TA + AC",
+        "misconception": "L'élève additionne les longueurs sans les élever au carré."
+      },
+      {
+        "key": "d",
+        "text": "AC² = TA² + TC²",
+        "misconception": "L'élève prend pour hypoténuse [AC], qui part du sommet de l'angle droit."
+      }
+    ],
+    "answer": {
+      "value": "b"
+    },
+    "solution_steps": [
+      "Le codage place l'angle droit en A : TAC est rectangle en A.",
+      "L'hypoténuse est le côté opposé à l'angle droit, celui qui ne passe pas par A : c'est [TC].",
+      "Théorème de Pythagore : le carré de l'hypoténuse est égal à la somme des carrés des deux autres côtés, donc TC² = TA² + AC².",
+      "Bonne réponse : b."
+    ],
+    "hint": "Repère le sommet de l'angle droit : l'hypoténuse est le côté qui ne le touche pas.",
+    "estimated_duration_s": 45,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, classe de 4e, Espace et géométrie, Triangles, Objectifs d'apprentissage : « Connaitre le théorème de Pythagore, sa réciproque, sa contraposée. »"
+  },
+  {
+    "id": "EX-G040-E-01",
+    "skill_id": "G040",
+    "level": "entrainement",
+    "type": "numerique",
+    "statement": "Sur la figure (pas en vraie grandeur), calcule la longueur marquée d'un point d'interrogation, en cm.",
+    "image": "figures/EX-G040-E-01",
+    "answer": {
+      "value": 4.8,
+      "unit": "cm"
+    },
+    "solution_steps": [
+      "Le triangle BUS est rectangle en U (codage). Son hypoténuse est [BS], qui mesure 6 cm. On cherche US, un côté de l'angle droit.",
+      "Théorème de Pythagore : BS² = BU² + US², donc US² = BS² − BU².",
+      "US² = 6² − 3,6² = 36 − 12,96 = 23,04.",
+      "US = √23,04 = 4,8, car 4,8 × 4,8 = 23,04.",
+      "US = **4,8 cm**. Contrôle : un côté de l'angle droit est plus court que l'hypoténuse, et 4,8 < 6."
+    ],
+    "hint": "On cherche un côté de l'angle droit, pas l'hypoténuse : faut-il additionner ou soustraire les carrés ?",
+    "estimated_duration_s": 90,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, classe de 4e, Espace et géométrie, Triangles, Objectifs d'apprentissage : « Connaitre le théorème de Pythagore, sa réciproque, sa contraposée. »"
+  },
+  {
+    "id": "EX-G040-E-02",
+    "skill_id": "G040",
+    "level": "entrainement",
+    "type": "texte",
+    "statement": "Sur la figure (pas en vraie grandeur), donne la valeur exacte de la longueur HP, en cm, en utilisant le symbole √.",
+    "image": "figures/EX-G040-E-02",
+    "answer": {
+      "value": "√29",
+      "accepted": [
+        "racine de 29",
+        "racine carrée de 29"
+      ],
+      "unit": "cm",
+      "forme": "solutions"
+    },
+    "solution_steps": [
+      "Le triangle HJP est rectangle en J (codage) ; son hypoténuse est [HP].",
+      "Théorème de Pythagore : HP² = HJ² + JP² = 2² + 5² = 4 + 25 = 29.",
+      "29 n'est le carré d'aucun entier, car 5² = 25 et 6² = 36 : la valeur exacte de HP est √29, et 5 < √29 < 6.",
+      "HP = **√29 cm**. Une valeur arrondie, comme 5,4 cm, n'est pas la valeur exacte."
+    ],
+    "hint": "Calcule HP², puis cherche le nombre positif dont le carré vaut ce résultat.",
+    "estimated_duration_s": 90,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, classe de 4e, Espace et géométrie, Triangles, Objectifs d'apprentissage : « Connaitre le théorème de Pythagore, sa réciproque, sa contraposée. »"
+  },
+  {
+    "id": "EX-G040-M-01",
+    "skill_id": "G040",
+    "level": "maitrise",
+    "type": "numerique",
+    "statement": "Une échelle est appuyée contre un mur vertical (figure pas en vraie grandeur). À quelle hauteur arrive son sommet H ? Donne la valeur arrondie au dixième de mètre.",
+    "image": "figures/EX-G040-M-01",
+    "answer": {
+      "value": 3.8,
+      "tolerance": 0.05,
+      "unit": "m"
+    },
+    "solution_steps": [
+      "Le mur est vertical et le sol horizontal : le triangle HSP est rectangle en S. L'échelle [HP], de 4 m, est l'hypoténuse.",
+      "On cherche SH, un côté de l'angle droit : SH² = HP² − SP² = 4² − 1,3² = 16 − 1,69 = 14,31.",
+      "SH = √14,31. Contrôle : 3 < √14,31 < 4, car 9 < 14,31 < 16. À la calculatrice, √14,31 ≈ 3,78.",
+      "Arrondi au dixième : SH ≈ **3,8 m**."
+    ],
+    "hint": "L'échelle est-elle l'hypoténuse ou un côté de l'angle droit ?",
+    "estimated_duration_s": 150,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, classe de 4e, Espace et géométrie, Triangles, Objectifs d'apprentissage : « Connaitre le théorème de Pythagore, sa réciproque, sa contraposée. »"
+  },
+  {
+    "id": "EX-G040-M-02",
+    "skill_id": "G040",
+    "level": "maitrise",
+    "type": "qcm",
+    "statement": "Sur la figure (pas en vraie grandeur), combien mesure le segment [AD] ?",
+    "image": "figures/EX-G040-M-02",
+    "choices": [
+      {
+        "key": "a",
+        "text": "8,6 cm",
+        "misconception": "L'élève additionne les trois longueurs écrites au lieu d'utiliser les carrés."
+      },
+      {
+        "key": "b",
+        "text": "√7 cm",
+        "misconception": "L'élève trouve AC = 4 cm, puis soustrait les carrés (16 − 9) alors que [AD] est l'hypoténuse de ACD."
+      },
+      {
+        "key": "c",
+        "text": "7 cm",
+        "misconception": "L'élève trouve AC = 4 cm, puis additionne les longueurs AC et CD au lieu de leurs carrés."
+      },
+      {
+        "key": "d",
+        "text": "5 cm",
+        "misconception": null
+      }
+    ],
+    "answer": {
+      "value": "d"
+    },
+    "solution_steps": [
+      "On ne connaît pas AC, mais [AC] est l'hypoténuse du triangle ABC, rectangle en B : AC² = AB² + BC² = 2,4² + 3,2² = 5,76 + 10,24 = 16, donc AC = 4 cm.",
+      "Le triangle ACD est rectangle en C ; son hypoténuse est [AD] : AD² = AC² + CD² = 4² + 3² = 16 + 9 = 25.",
+      "AD = √25 = 5. Bonne réponse : d, **5 cm**."
+    ],
+    "hint": "Calcule d'abord la longueur du côté commun aux deux triangles.",
+    "estimated_duration_s": 150,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, classe de 4e, Espace et géométrie, Triangles, Objectifs d'apprentissage : « Connaitre le théorème de Pythagore, sa réciproque, sa contraposée. »"
+  }
+]

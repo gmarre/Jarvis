@@ -1,0 +1,72 @@
+{
+  "type": "geometrie",
+  "params": {
+    "colonnes": 12,
+    "lignes": 9,
+    "points": {
+      "K": [
+        9,
+        1
+      ],
+      "L": [
+        1,
+        7
+      ],
+      "P": [
+        11,
+        8
+      ],
+      "D": [
+        5,
+        4
+      ],
+      "E": [
+        10,
+        "4.5"
+      ]
+    },
+    "elements": [
+      {
+        "polygone": [
+          "K",
+          "L",
+          "P"
+        ]
+      },
+      {
+        "segment": [
+          "D",
+          "E"
+        ],
+        "couleur": "accent"
+      },
+      {
+        "codage": [
+          [
+            "K",
+            "D"
+          ],
+          [
+            "D",
+            "L"
+          ]
+        ],
+        "marque": 1
+      },
+      {
+        "codage": [
+          [
+            "K",
+            "E"
+          ],
+          [
+            "E",
+            "P"
+          ]
+        ],
+        "marque": 2
+      }
+    ]
+  },
+  "alt": "Triangle KLP avec deux points codés D et E sur ses côtés et le segment [DE]"
+}

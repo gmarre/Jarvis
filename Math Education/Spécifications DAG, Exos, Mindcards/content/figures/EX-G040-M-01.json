@@ -1,0 +1,83 @@
+{
+  "type": "geometrie",
+  "params": {
+    "colonnes": 9,
+    "lignes": 10,
+    "points": {
+      "H": [
+        3,
+        1
+      ],
+      "S": [
+        3,
+        9
+      ],
+      "P": [
+        6,
+        9
+      ],
+      "_W": [
+        3,
+        "0.3"
+      ],
+      "_G1": [
+        "0.5",
+        9
+      ],
+      "_G2": [
+        "8.5",
+        9
+      ]
+    },
+    "elements": [
+      {
+        "segment": [
+          "_G1",
+          "_G2"
+        ]
+      },
+      {
+        "segment": [
+          "S",
+          "_W"
+        ]
+      },
+      {
+        "segment": [
+          "H",
+          "P"
+        ],
+        "couleur": "accent"
+      },
+      {
+        "angle_droit": [
+          "H",
+          "S",
+          "P"
+        ]
+      },
+      {
+        "longueur": [
+          "H",
+          "P"
+        ],
+        "texte": "4 m"
+      },
+      {
+        "longueur": [
+          "S",
+          "P"
+        ],
+        "texte": "1,3 m"
+      },
+      {
+        "longueur": [
+          "S",
+          "H"
+        ],
+        "texte": "?"
+      }
+    ]
+  },
+  "alt": "Schéma d'une échelle [HP] appuyée contre un mur, avec un angle codé et des longueurs écrites"
+}

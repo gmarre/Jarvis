@@ -1,0 +1,86 @@
+{
+  "type": "geometrie",
+  "params": {
+    "colonnes": 12,
+    "lignes": 9,
+    "points": {
+      "A": [
+        5,
+        1
+      ],
+      "B": [
+        1,
+        8
+      ],
+      "C": [
+        11,
+        8
+      ],
+      "I": [
+        3,
+        "4.5"
+      ],
+      "J": [
+        8,
+        "4.5"
+      ]
+    },
+    "elements": [
+      {
+        "polygone": [
+          "A",
+          "B",
+          "C"
+        ]
+      },
+      {
+        "segment": [
+          "I",
+          "J"
+        ],
+        "couleur": "accent"
+      },
+      {
+        "codage": [
+          [
+            "A",
+            "I"
+          ],
+          [
+            "I",
+            "B"
+          ]
+        ],
+        "marque": 1
+      },
+      {
+        "codage": [
+          [
+            "A",
+            "J"
+          ],
+          [
+            "J",
+            "C"
+          ]
+        ],
+        "marque": 2
+      },
+      {
+        "longueur": [
+          "B",
+          "C"
+        ],
+        "texte": "7,4 cm"
+      },
+      {
+        "longueur": [
+          "I",
+          "J"
+        ],
+        "texte": "?"
+      }
+    ]
+  },
+  "alt": "Triangle ABC avec deux points codés I et J sur ses côtés, le segment [IJ] et une longueur écrite"
+}

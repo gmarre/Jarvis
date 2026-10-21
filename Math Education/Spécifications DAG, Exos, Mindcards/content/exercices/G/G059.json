@@ -1,0 +1,171 @@
+[
+  {
+    "id": "EX-G059-D-01",
+    "skill_id": "G059",
+    "level": "decouverte",
+    "type": "numerique",
+    "statement": "Sur la figure, les codages indiquent deux milieux. Combien mesure le segment [IJ], en cm ?",
+    "image": "figures/EX-G059-D-01",
+    "answer": {
+      "value": 3.7,
+      "unit": "cm"
+    },
+    "solution_steps": [
+      "Les codages disent que I est le milieu de [AB] et que J est le milieu de [AC].",
+      "Théorème de la droite des milieux : dans un triangle, le segment qui joint les milieux de deux côtés mesure la moitié du troisième côté.",
+      "Ici, le troisième côté est [BC], celui qui ne contient ni I ni J. Donc IJ = BC ÷ 2 = 7,4 ÷ 2 = 3,7.",
+      "Le segment [IJ] mesure **3,7 cm**."
+    ],
+    "hint": "Quel côté du triangle ne touche ni I ni J ?",
+    "estimated_duration_s": 60,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, classe de 4e, Espace et géométrie, Triangles, Objectifs d'apprentissage : « Connaitre les trois théorèmes relatifs à la droite des milieux dans un triangle. »"
+  },
+  {
+    "id": "EX-G059-D-02",
+    "skill_id": "G059",
+    "level": "decouverte",
+    "type": "qcm",
+    "statement": "Sur la figure, les codages indiquent des milieux. Quelle propriété permet de prouver que les droites (DE) et (LP) sont parallèles ?",
+    "image": "figures/EX-G059-D-02",
+    "choices": [
+      {
+        "key": "a",
+        "text": "Le segment qui joint les milieux de deux côtés d'un triangle mesure la moitié du troisième côté.",
+        "misconception": "Cette propriété conclut sur une longueur, pas sur un parallélisme."
+      },
+      {
+        "key": "b",
+        "text": "Si les diagonales d'un quadrilatère se coupent en leur milieu, c'est un parallélogramme.",
+        "misconception": "L'élève pense au parallélogramme dès qu'il est question de parallèles, mais la figure n'a ni quadrilatère ni diagonales."
+      },
+      {
+        "key": "c",
+        "text": "Dans un triangle, la droite qui passe par les milieux de deux côtés est parallèle au troisième côté.",
+        "misconception": null
+      },
+      {
+        "key": "d",
+        "text": "Dans un triangle, la droite qui passe par le milieu d'un côté et qui est parallèle à un deuxième côté coupe le troisième en son milieu.",
+        "misconception": "Cette propriété suppose déjà les droites parallèles et conclut à un milieu : l'élève confond ses données et sa conclusion."
+      }
+    ],
+    "answer": {
+      "value": "c"
+    },
+    "solution_steps": [
+      "Les codages disent que D est le milieu de [KL] et que E est le milieu de [KP].",
+      "On veut prouver un parallélisme : il faut une propriété dont la conclusion est « … est parallèle à … ».",
+      "Dans un triangle, la droite qui passe par les milieux de deux côtés est parallèle au troisième côté. Dans KLP, D et E sont les milieux de [KL] et de [KP], donc (DE) est parallèle à (LP).",
+      "La propriété des longueurs donne DE = LP ÷ 2, pas un parallélisme ; celle du milieu demande déjà des droites parallèles au départ. Bonne réponse : c."
+    ],
+    "hint": "Cherche une propriété dont la conclusion parle de droites parallèles, et dont les données sont deux milieux.",
+    "estimated_duration_s": 60,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, classe de 4e, Espace et géométrie, Triangles, Objectifs d'apprentissage : « Connaitre les trois théorèmes relatifs à la droite des milieux dans un triangle. »"
+  },
+  {
+    "id": "EX-G059-E-01",
+    "skill_id": "G059",
+    "level": "entrainement",
+    "type": "numerique",
+    "statement": "Une échelle double est ouverte. La barre de sécurité [IJ] est fixée comme le montre la figure. Quel est l'écartement BC entre les pieds, en cm ?",
+    "image": "figures/EX-G059-E-01",
+    "answer": {
+      "value": 85,
+      "unit": "cm"
+    },
+    "solution_steps": [
+      "Les montants [AB] et [AC] et le sol forment le triangle ABC. Les codages disent que I est le milieu de [AB] et J celui de [AC].",
+      "Théorème de la droite des milieux : IJ mesure la moitié de BC. Donc BC mesure le double de IJ.",
+      "BC = 2 × 42,5 = 85.",
+      "Les pieds sont écartés de **85 cm**. Diviser 42,5 par 2 donnerait la moitié de la barre, pas l'écartement."
+    ],
+    "hint": "La barre mesure-t-elle la moitié ou le double de l'écartement des pieds ?",
+    "estimated_duration_s": 90,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, classe de 4e, Espace et géométrie, Triangles, Objectifs d'apprentissage : « Connaitre les trois théorèmes relatifs à la droite des milieux dans un triangle. »"
+  },
+  {
+    "id": "EX-G059-E-02",
+    "skill_id": "G059",
+    "level": "entrainement",
+    "type": "qcm",
+    "statement": "La droite (ST) est parallèle à (QR) et PR = 9,4 cm. D'après les données de la figure, combien mesure PT ?",
+    "image": "figures/EX-G059-E-02",
+    "choices": [
+      {
+        "key": "a",
+        "text": "4,7 cm",
+        "misconception": null
+      },
+      {
+        "key": "b",
+        "text": "2,5 cm",
+        "misconception": "L'élève calcule ST, la moitié de QR, au lieu de PT."
+      },
+      {
+        "key": "c",
+        "text": "On ne peut pas savoir : rien n'indique que T est le milieu de [PR].",
+        "misconception": "L'élève oublie le troisième théorème : la parallèle à (QR) qui passe par le milieu de [PQ] coupe [PR] en son milieu."
+      }
+    ],
+    "answer": {
+      "value": "a"
+    },
+    "solution_steps": [
+      "Le codage dit que S est le milieu de [PQ] ; l'énoncé dit que (ST) est parallèle à (QR).",
+      "Théorème : dans un triangle, la droite qui passe par le milieu d'un côté et qui est parallèle à un deuxième côté coupe le troisième côté en son milieu.",
+      "Dans PQR, la droite (ST) passe par le milieu S de [PQ] et elle est parallèle à (QR) : elle coupe [PR] en son milieu. T est donc le milieu de [PR].",
+      "PT = PR ÷ 2 = 9,4 ÷ 2 = 4,7. Bonne réponse : a, **4,7 cm**."
+    ],
+    "hint": "Que peut-on dire du point T, puisque (ST) passe par un milieu et qu'elle est parallèle à un côté ?",
+    "estimated_duration_s": 90,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, classe de 4e, Espace et géométrie, Triangles, Objectifs d'apprentissage : « Connaitre les trois théorèmes relatifs à la droite des milieux dans un triangle. »"
+  },
+  {
+    "id": "EX-G059-M-01",
+    "skill_id": "G059",
+    "level": "maitrise",
+    "type": "numerique",
+    "statement": "Dans le triangle ABC, AB = 7 cm, BC = 9 cm et AC = 8,4 cm. D'après les codages de la figure, combien vaut IJ + JK + KI, en cm ?",
+    "image": "figures/EX-G059-M-01",
+    "answer": {
+      "value": 12.2,
+      "unit": "cm"
+    },
+    "solution_steps": [
+      "Les codages disent que I, J et K sont les milieux de [AB], [BC] et [AC].",
+      "Chaque côté de IJK joint les milieux de deux côtés de ABC : il mesure la moitié du troisième côté.",
+      "[IJ] joint les milieux de [AB] et [BC] : IJ = AC ÷ 2 = 8,4 ÷ 2 = 4,2. [JK] joint les milieux de [BC] et [AC] : JK = AB ÷ 2 = 7 ÷ 2 = 3,5. [KI] joint les milieux de [AC] et [AB] : KI = BC ÷ 2 = 9 ÷ 2 = 4,5.",
+      "IJ + JK + KI = 4,2 + 3,5 + 4,5 = 12,2. C'est la moitié de AB + BC + AC, qui vaut 24,4 cm.",
+      "IJ + JK + KI = **12,2 cm**."
+    ],
+    "hint": "Chaque côté du petit triangle joint deux milieux : quel côté du grand triangle lui correspond ?",
+    "estimated_duration_s": 150,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, classe de 4e, Espace et géométrie, Triangles, Objectifs d'apprentissage : « Connaitre les trois théorèmes relatifs à la droite des milieux dans un triangle. »"
+  },
+  {
+    "id": "EX-G059-M-02",
+    "skill_id": "G059",
+    "level": "maitrise",
+    "type": "vrai_faux",
+    "statement": "Sur la figure, seul le point I est codé comme milieu. Tom écrit : « (IJ) est parallèle à (BC) d'après le théorème de la droite des milieux. » Son raisonnement est-il juste ?",
+    "image": "figures/EX-G059-M-02",
+    "answer": {
+      "value": false
+    },
+    "solution_steps": [
+      "Le théorème dit : si une droite passe par les milieux de **deux** côtés d'un triangle, alors elle est parallèle au troisième côté.",
+      "Ici, seul I est codé comme milieu de [AB]. Rien ne dit que J est le milieu de [AC].",
+      "Même si J semble au milieu sur le dessin, la mesure n'est pas une preuve : le théorème ne s'applique pas.",
+      "Le raisonnement de Tom est **faux**."
+    ],
+    "hint": "Combien de milieux le théorème demande-t-il ?",
+    "estimated_duration_s": 75,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, classe de 4e, Espace et géométrie, Triangles, Objectifs d'apprentissage : « Connaitre les trois théorèmes relatifs à la droite des milieux dans un triangle. »"
+  }
+]

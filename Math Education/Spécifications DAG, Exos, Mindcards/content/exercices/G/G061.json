@@ -1,0 +1,174 @@
+[
+  {
+    "id": "EX-G061-D-01",
+    "skill_id": "G061",
+    "level": "decouverte",
+    "type": "vrai_faux",
+    "statement": "Le triangle NPV est codé sur la figure. Lina affirme : « Le centre de son cercle circonscrit est le milieu du côté [NV]. » A-t-elle raison ?",
+    "image": "figures/EX-G061-D-01",
+    "answer": {
+      "value": true
+    },
+    "solution_steps": [
+      "Le codage place l'angle droit en P : NPV est rectangle en P, et son hypoténuse est [NV], le côté opposé à l'angle droit.",
+      "Propriété : le centre du cercle circonscrit à un triangle rectangle est le milieu de son hypoténuse.",
+      "Le centre est donc le milieu de [NV]. Lina a **raison**."
+    ],
+    "hint": "Quel côté est en face de l'angle droit ?",
+    "estimated_duration_s": 45,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, classe de 4e, Espace et géométrie, Triangles, Objectifs d'apprentissage : « Déterminer le centre du cercle circonscrit d'un triangle rectangle. »"
+  },
+  {
+    "id": "EX-G061-D-02",
+    "skill_id": "G061",
+    "level": "decouverte",
+    "type": "numerique",
+    "statement": "Le triangle EAU est codé sur la figure (pas en vraie grandeur). Quel est le rayon de son cercle circonscrit, en cm ?",
+    "image": "figures/EX-G061-D-02",
+    "answer": {
+      "value": 4.3,
+      "unit": "cm"
+    },
+    "solution_steps": [
+      "Le codage place l'angle droit en A : EAU est rectangle en A ; son hypoténuse est [EU], de 8,6 cm.",
+      "Le centre du cercle circonscrit est le milieu de l'hypoténuse : le rayon est la moitié de EU.",
+      "Rayon : 8,6 ÷ 2 = 4,3. La longueur EA = 6 cm ne sert pas : [EA] n'est pas un diamètre du cercle.",
+      "Le rayon mesure **4,3 cm**."
+    ],
+    "hint": "Où se trouve le centre du cercle circonscrit d'un triangle rectangle ?",
+    "estimated_duration_s": 60,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, classe de 4e, Espace et géométrie, Triangles, Objectifs d'apprentissage : « Déterminer le centre du cercle circonscrit d'un triangle rectangle. »"
+  },
+  {
+    "id": "EX-G061-E-01",
+    "skill_id": "G061",
+    "level": "entrainement",
+    "type": "numerique",
+    "statement": "D'après la figure (pas en vraie grandeur), quel est le rayon du cercle circonscrit au triangle DFK, en cm ?",
+    "image": "figures/EX-G061-E-01",
+    "answer": {
+      "value": 3.5,
+      "unit": "cm"
+    },
+    "solution_steps": [
+      "Le codage place l'angle droit en F : DFK est rectangle en F, d'hypoténuse [DK].",
+      "Théorème de Pythagore : DK² = DF² + FK² = 4,2² + 5,6² = 17,64 + 31,36 = 49, donc DK = √49 = 7.",
+      "Le centre du cercle circonscrit est le milieu de [DK] : le rayon vaut 7 ÷ 2 = 3,5.",
+      "Le rayon mesure **3,5 cm**."
+    ],
+    "hint": "Calcule d'abord l'hypoténuse : c'est un diamètre du cercle.",
+    "estimated_duration_s": 120,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, classe de 4e, Espace et géométrie, Triangles, Objectifs d'apprentissage : « Déterminer le centre du cercle circonscrit d'un triangle rectangle. »"
+  },
+  {
+    "id": "EX-G061-E-02",
+    "skill_id": "G061",
+    "level": "entrainement",
+    "type": "qcm",
+    "statement": "Sur la figure, [EG] est un diamètre du cercle de centre O, et les points F et H sont sur ce cercle. Quel triangle est forcément rectangle ?",
+    "image": "figures/EX-G061-E-02",
+    "choices": [
+      {
+        "key": "a",
+        "text": "EFH, rectangle en F",
+        "misconception": "F et H sont sur le cercle, mais [EH] n'est pas un diamètre : la propriété ne s'applique pas."
+      },
+      {
+        "key": "b",
+        "text": "EFG, rectangle en E",
+        "misconception": "L'élève place l'angle droit à une extrémité du diamètre ; il est au sommet opposé, en F."
+      },
+      {
+        "key": "c",
+        "text": "EHG, rectangle en H",
+        "misconception": null
+      },
+      {
+        "key": "d",
+        "text": "FHG, rectangle en H",
+        "misconception": "L'élève applique la propriété alors que [FG] n'est pas un diamètre du cercle."
+      }
+    ],
+    "answer": {
+      "value": "c"
+    },
+    "solution_steps": [
+      "Propriété : si un triangle a ses trois sommets sur un cercle et qu'un de ses côtés est un diamètre, alors il est rectangle, et l'angle droit est au sommet opposé à ce diamètre.",
+      "Le triangle EHG a ses trois sommets sur le cercle et son côté [EG] est un diamètre : il est rectangle en H.",
+      "Pour EFH et FHG, aucun côté n'est un diamètre : rien ne permet de conclure. Et EFG est rectangle en F, pas en E.",
+      "Bonne réponse : c."
+    ],
+    "hint": "Cherche un triangle dont un côté est le diamètre [EG].",
+    "estimated_duration_s": 90,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, classe de 4e, Espace et géométrie, Triangles, Objectifs d'apprentissage : « Caractériser un triangle rectangle à l'aide de son cercle circonscrit, par son inscription dans un demi-cercle dont le diamètre est un côté du triangle. »"
+  },
+  {
+    "id": "EX-G061-M-01",
+    "skill_id": "G061",
+    "level": "maitrise",
+    "type": "qcm",
+    "statement": "Mia trace deux diamètres [EG] et [FH] d'un cercle de centre O, puis le quadrilatère EFGH. Pourquoi EFGH est-il un rectangle ?",
+    "image": "figures/EX-G061-M-01",
+    "choices": [
+      {
+        "key": "a",
+        "text": "Ses diagonales ont le même milieu O et la même longueur.",
+        "misconception": null
+      },
+      {
+        "key": "b",
+        "text": "Ses angles paraissent droits sur la figure.",
+        "misconception": "Ce que l'on voit sur un dessin n'est pas une preuve."
+      },
+      {
+        "key": "c",
+        "text": "Ses diagonales se coupent en leur milieu.",
+        "misconception": "Cela prouve seulement que EFGH est un parallélogramme : il faut aussi des diagonales de même longueur."
+      },
+      {
+        "key": "d",
+        "text": "Ses diagonales sont perpendiculaires.",
+        "misconception": "Rien ne dit que les diamètres sont perpendiculaires ; et des diagonales perpendiculaires caractérisent le losange, pas le rectangle."
+      }
+    ],
+    "answer": {
+      "value": "a"
+    },
+    "solution_steps": [
+      "[EG] et [FH] sont deux diamètres du même cercle : ils ont le même milieu, le centre O, et la même longueur, le double du rayon.",
+      "Un quadrilatère dont les diagonales ont le même milieu est un parallélogramme.",
+      "Un parallélogramme dont les diagonales ont la même longueur est un rectangle. EFGH est donc un rectangle, construit sans équerre.",
+      "Bonne réponse : a."
+    ],
+    "hint": "Que peut-on dire des deux diamètres d'un même cercle : leur milieu ? leur longueur ?",
+    "estimated_duration_s": 90,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, classe de 4e, Espace et géométrie, Triangles, Objectifs d'apprentissage : « Construire des rectangles sans équerre. »"
+  },
+  {
+    "id": "EX-G061-M-02",
+    "skill_id": "G061",
+    "level": "maitrise",
+    "type": "numerique",
+    "statement": "Sur la figure (pas en vraie grandeur), A, B et C sont sur le cercle de centre O et de rayon 12,5 cm, et O est sur [BC]. Combien mesure AB, en cm ?",
+    "image": "figures/EX-G061-M-02",
+    "answer": {
+      "value": 15,
+      "unit": "cm"
+    },
+    "solution_steps": [
+      "O est le centre du cercle et il est sur [BC] : [BC] est un diamètre. Le rayon mesure 12,5 cm, donc BC = 2 × 12,5 = 25.",
+      "A est sur le cercle de diamètre [BC] : le triangle ABC est rectangle en A, d'hypoténuse [BC].",
+      "Théorème de Pythagore : AB² = BC² − AC² = 25² − 20² = 625 − 400 = 225, donc AB = √225 = 15.",
+      "AB mesure **15 cm**."
+    ],
+    "hint": "Que représente [BC] pour le cercle ? Qu'en déduis-tu pour l'angle en A ?",
+    "estimated_duration_s": 150,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, classe de 4e, Espace et géométrie, Triangles, Objectifs d'apprentissage : « Caractériser un triangle rectangle à l'aide de son cercle circonscrit, par son inscription dans un demi-cercle dont le diamètre est un côté du triangle. »"
+  }
+]
