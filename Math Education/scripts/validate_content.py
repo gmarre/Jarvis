@@ -501,7 +501,10 @@ NOTATIONS = {
     # l'etape 7 interdit m comme inconnue. Une lettre collee a une autre (cm²,
     # km²) reste une unite.
     "A029": (re.compile(r"(?<=[\d)])[²³]|(?<=[\d)}])\^\{?[23](?!\d)"
-                        r"|(?<![A-Za-z\\])[a-ln-z](?:[²³]|\^\{?[23](?!\d))"), "un carre ou un cube (a², a³)"),
+                        r"|(?<![A-Za-z\\])[a-ln-z](?:[²³]|\^\{?[23](?!\d))"
+                        # Etape 8 : AB², le carre d'une longueur (Pythagore).
+                        # Deux majuscules : les unites (cm², km²) sont en minuscules.
+                        r"|(?<![A-Za-z])[A-Z]{2}(?:²|\^\{?2(?!\d))"), "un carre ou un cube (a², a³, AB²)"),
     "A031": (re.compile(r"(?<=[\d)])[⁰¹⁴⁵⁶⁷⁸⁹]|(?<=[\d)}])\^\{?(?:[4-9]|1\d|[01](?![\d.]))"), "un exposant autre que 2 et 3"),
     "A036": (re.compile(r"⁻|(?<=[\d)}])\^\{?-"), "un exposant negatif"),
     "A034": (re.compile(r"√|\\sqrt"), "la racine carree (√)"),
@@ -512,6 +515,13 @@ NOTATIONS = {
     # Le degre (symbole DEG) est introduit au CM2 a partir de l'angle droit (G022,
     # etape 4b). Ecrit par son code : invisible a la relecture sinon.
     # « °C » (temperature, etape 5) n'est pas un angle : le motif l'exclut.
+    # Etape 8 (geometrie et grandeurs du cycle 4) : π arrive avec le perimetre
+    # du disque (P023, 6e) ; cos, sin, tan avec la trigonometrie (G063, 3e) ;
+    # la notation vecteur avec les vecteurs (G066, 3e). La fleche seule n'est
+    # pas controlee : elle sert aussi aux programmes de calcul.
+    "P023": (re.compile(r"π|\\pi(?![a-zA-Z])"), "le nombre π"),
+    "G063": (re.compile(r"\b(?:cos|sin|tan)\b|\\(?:cos|sin|tan)(?![a-zA-Z])"), "cos, sin, tan"),
+    "G066": (re.compile(r"\\overrightarrow|\\vec(?![a-zA-Z])"), "la notation vecteur"),
     "G022": (re.compile(chr(176) + r"(?!\s?C\b)|\^\{?\\circ(?!\}?\s*(?:\\text\{\s*)?C\b)"), "le symbole du degre"),
 }
 
