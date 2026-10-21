@@ -1,0 +1,198 @@
+[
+  {
+    "id": "EX-G051-D-01",
+    "skill_id": "G051",
+    "level": "decouverte",
+    "type": "numerique",
+    "statement": "Combien mesure l'angle $\\widehat{ABC}$ de ce triangle, en degrés ? La figure n'est pas en vraie grandeur.",
+    "image": "figures/EX-G051-D-01",
+    "answer": {
+      "value": 67,
+      "unit": "°",
+      "accepted": [
+        "67°",
+        "67 °",
+        "67 degrés",
+        "67 degré",
+        "ABC = 67°",
+        "ABC = 67"
+      ]
+    },
+    "solution_steps": [
+      "Le codage montre $AB = AC$ : le triangle ABC est **isocèle en A**. Ses angles à la base, $\\widehat{ABC}$ et $\\widehat{ACB}$, ont la même mesure.",
+      "La somme des angles d'un triangle vaut 180°. Les deux angles à la base font ensemble 180 − 46 = 134°.",
+      "Chacun mesure 134 ÷ 2 = 67 : **67°**.",
+      "Pièges : 180 ÷ 2 = 90 oublie l'angle de 46° ; 134° est la somme des deux angles à la base, pas l'un d'eux."
+    ],
+    "hint": "Que dit le codage des côtés [AB] et [AC] ? Qu'en déduis-tu pour les angles en B et en C ?",
+    "estimated_duration_s": 50,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, classe de 5e, Espace et géométrie, Triangles, Automatismes : « Reconnaitre un triangle isocèle, équilatéral ou rectangle à partir d'un schéma codé. »"
+  },
+  {
+    "id": "EX-G051-D-02",
+    "skill_id": "G051",
+    "level": "decouverte",
+    "type": "qcm",
+    "statement": "La droite (d) passe par A et elle est parallèle à (BC).\n\nPourquoi les angles $\\widehat{DAB}$ et $\\widehat{ABC}$ ont-ils la même mesure ?",
+    "image": "figures/EX-G051-D-02",
+    "choices": [
+      {
+        "key": "a",
+        "text": "Ils sont opposés par le sommet.",
+        "misconception": "Des angles opposés par le sommet ont le même sommet ; ici, l'un est en A, l'autre en B."
+      },
+      {
+        "key": "b",
+        "text": "Ils sont correspondants, et (d) est parallèle à (BC).",
+        "misconception": "Les deux angles ne sont pas placés de la même façon : $\\widehat{DAB}$ est sous (d), $\\widehat{ABC}$ au-dessus de (BC). Entre les deux parallèles et de part et d'autre de (AB), ils sont alternes-internes."
+      },
+      {
+        "key": "c",
+        "text": "On les mesure au rapporteur et on trouve la même chose.",
+        "misconception": "Une mesure sur la figure n'est pas une preuve : elle est imprécise et ne vaut que pour ce dessin."
+      },
+      {
+        "key": "d",
+        "text": "Ils sont alternes-internes, et (d) est parallèle à (BC).",
+        "misconception": null
+      }
+    ],
+    "answer": {
+      "value": "d"
+    },
+    "solution_steps": [
+      "Pour les droites (d) et (BC), coupées par la sécante (AB) : $\\widehat{DAB}$ est sous (d), $\\widehat{ABC}$ est au-dessus de (BC). Les deux sont entre les droites, de part et d'autre de (AB).",
+      "Ce sont des angles **alternes-internes**. Comme (d) est parallèle à (BC), ils ont la même mesure.",
+      "C'est la première étape de la preuve de la somme des angles : de même, $\\widehat{EAC} = \\widehat{ACB}$, et les trois angles en A forment un angle plat."
+    ],
+    "hint": "Repère la sécante commune aux deux angles, puis la position de chaque angle par rapport aux deux droites.",
+    "estimated_duration_s": 50,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, classe de 5e, Espace et géométrie, Triangles, Objectifs d'apprentissage : « Connaitre la somme des angles d'un triangle et savoir la démontrer. »"
+  },
+  {
+    "id": "EX-G051-E-01",
+    "skill_id": "G051",
+    "level": "entrainement",
+    "type": "numerique",
+    "statement": "Combien mesure l'angle $\\widehat{BAC}$ de ce triangle, en degrés ? La figure n'est pas en vraie grandeur.",
+    "image": "figures/EX-G051-E-01",
+    "answer": {
+      "value": 116,
+      "unit": "°",
+      "accepted": [
+        "116°",
+        "116 °",
+        "116 degrés",
+        "116 degré",
+        "BAC = 116°",
+        "BAC = 116"
+      ]
+    },
+    "solution_steps": [
+      "Le codage montre $AB = AC$ : le triangle est isocèle en A, donc $\\widehat{ACB}$ mesure aussi 32°.",
+      "Les deux angles à la base font 2 × 32 = 64°.",
+      "La somme des angles vaut 180° : $\\widehat{BAC}$ mesure 180 − 64 = 116 : **116°**.",
+      "Piège : 180 − 32 = 148 oublie le second angle à la base."
+    ],
+    "hint": "Le triangle a deux angles égaux : lesquels ?",
+    "estimated_duration_s": 50,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, classe de 5e, Espace et géométrie, Triangles, Automatismes : « Reconnaitre un triangle isocèle, équilatéral ou rectangle à partir d'un schéma codé. »"
+  },
+  {
+    "id": "EX-G051-E-02",
+    "skill_id": "G051",
+    "level": "entrainement",
+    "type": "qcm",
+    "statement": "La droite (d) passe par A et elle est parallèle à (BC). Remets dans l'ordre la preuve que la somme des angles du triangle vaut 180° :\n\n(1) Donc $\\widehat{DAB} = \\widehat{ABC}$ et $\\widehat{CAE} = \\widehat{ACB}$, car ils sont alternes-internes.\n(2) Donc $\\widehat{ABC} + \\widehat{BAC} + \\widehat{ACB} = \\widehat{DAB} + \\widehat{BAC} + \\widehat{CAE}$, et cette somme vaut 180° (angle plat).\n(3) (d) et (BC) sont parallèles, coupées par les sécantes (AB) et (AC).",
+    "image": "figures/EX-G051-E-02",
+    "choices": [
+      {
+        "key": "a",
+        "text": "1, 3, 2",
+        "misconception": "L'étape (1) utilise le parallélisme de (d) et (BC) : elle ne peut pas venir avant l'étape (3)."
+      },
+      {
+        "key": "b",
+        "text": "3, 2, 1",
+        "misconception": "L'étape (2) remplace deux angles du triangle grâce aux égalités de l'étape (1) : elle doit venir après."
+      },
+      {
+        "key": "c",
+        "text": "3, 1, 2",
+        "misconception": null
+      },
+      {
+        "key": "d",
+        "text": "2, 3, 1",
+        "misconception": "Commencer par la conclusion, c'est la supposer vraie avant de l'avoir prouvée."
+      }
+    ],
+    "answer": {
+      "value": "c"
+    },
+    "solution_steps": [
+      "On part de la donnée : (d) et (BC) sont parallèles, étape (3).",
+      "Avec les sécantes (AB) et (AC), on obtient deux paires d'angles alternes-internes égaux : étape (1).",
+      "On remplace alors $\\widehat{ABC}$ et $\\widehat{ACB}$ par $\\widehat{DAB}$ et $\\widehat{CAE}$. Ces trois angles en A forment l'angle plat $\\widehat{DAE}$, de 180° : étape (2). Ordre : **3, 1, 2**.",
+      "Cette preuve vaut pour tous les triangles ; mesurer les angles d'un triangle ne vaudrait que pour celui-là."
+    ],
+    "hint": "Quelle étape utilise le parallélisme ? Laquelle utilise les égalités d'angles ?",
+    "estimated_duration_s": 75,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, classe de 5e, Espace et géométrie, Triangles, Objectifs d'apprentissage : « Connaitre la somme des angles d'un triangle et savoir la démontrer. »"
+  },
+  {
+    "id": "EX-G051-M-01",
+    "skill_id": "G051",
+    "level": "maitrise",
+    "type": "numerique",
+    "statement": "Le point D est sur la droite (BC), au-delà de C (figure pas en vraie grandeur).\n\nCombien mesure l'angle $\\widehat{BAC}$, en degrés ?",
+    "image": "figures/EX-G051-M-01",
+    "answer": {
+      "value": 68,
+      "unit": "°",
+      "accepted": [
+        "68°",
+        "68 °",
+        "68 degrés",
+        "68 degré",
+        "BAC = 68°",
+        "BAC = 68"
+      ]
+    },
+    "solution_steps": [
+      "B, C et D sont alignés : $\\widehat{ACB}$ et $\\widehat{ACD}$ sont supplémentaires. $\\widehat{ACB}$ mesure 180 − 124 = 56°.",
+      "Le codage donne $AB = AC$ : le triangle est isocèle en A, donc $\\widehat{ABC}$ mesure aussi 56°.",
+      "Somme des angles : 56 + 56 = 112, puis 180 − 112 = 68. $\\widehat{BAC}$ mesure **68°**.",
+      "Piège : 124° est un angle extérieur au triangle. Le prendre pour $\\widehat{ACB}$ donnerait déjà 124 + 124 = 248, plus que 180."
+    ],
+    "hint": "Commence par l'angle $\\widehat{ACB}$ : que forment les points B, C et D ?",
+    "estimated_duration_s": 80,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, classe de 5e, Espace et géométrie, Triangles, Objectifs d'apprentissage : « Connaitre la somme des angles d'un triangle et savoir la démontrer. »"
+  },
+  {
+    "id": "EX-G051-M-02",
+    "skill_id": "G051",
+    "level": "maitrise",
+    "type": "vrai_faux",
+    "statement": "Sami affirme : « Un triangle isocèle peut avoir deux angles à la base de 92°. »\n\nSami a-t-il raison ?",
+    "image": null,
+    "answer": {
+      "value": false
+    },
+    "solution_steps": [
+      "Dans un triangle isocèle, les deux angles à la base ont la même mesure : ici, 92° chacun.",
+      "Ensemble, ils feraient déjà 92 + 92 = 184°.",
+      "Or la somme des trois angles d'un triangle vaut 180°, et 184 est plus grand que 180, sans même compter le troisième angle. Sami a **tort**.",
+      "Plus généralement, deux angles égaux d'un triangle sont toujours aigus : leur somme doit rester plus petite que 180°."
+    ],
+    "hint": "Calcule la somme des deux angles à la base, puis compare-la à 180°.",
+    "estimated_duration_s": 50,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, classe de 5e, Espace et géométrie, Triangles, Objectifs d'apprentissage : « Connaitre la somme des angles d'un triangle et savoir la démontrer. »"
+  }
+]

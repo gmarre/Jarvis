@@ -1,0 +1,87 @@
+{
+  "type": "geometrie",
+  "params": {
+    "colonnes": 12,
+    "lignes": 9,
+    "fond": "blanc",
+    "points": {
+      "E": [
+        6,
+        2.5
+      ],
+      "F": [
+        7.865,
+        6.5
+      ],
+      "A": [
+        3,
+        2.5
+      ],
+      "B": [
+        10.2,
+        6.5
+      ],
+      "_d1": [
+        1,
+        2.5
+      ],
+      "_d2": [
+        11,
+        2.5
+      ],
+      "_e1": [
+        1,
+        6.5
+      ],
+      "_e2": [
+        11,
+        6.5
+      ]
+    },
+    "elements": [
+      {
+        "droite": [
+          "_d1",
+          "_d2"
+        ],
+        "nom": "(d)"
+      },
+      {
+        "droite": [
+          "_e1",
+          "_e2"
+        ],
+        "nom": "(d')"
+      },
+      {
+        "droite": [
+          "F",
+          "E"
+        ]
+      },
+      {
+        "angle": [
+          "A",
+          "E",
+          "F"
+        ],
+        "rayon_arc": 18
+      },
+      {
+        "angle": [
+          "B",
+          "F",
+          "E"
+        ],
+        "rayon_arc": 18
+      }
+    ],
+    "etiquettes": {
+      "E": "haut_droite",
+      "F": "bas",
+      "A": "haut",
+      "B": "bas"
+    }
+  },
+  "alt": "Deux droites (d) et (d'), points A, E, F, B et deux angles marqués"
+}

@@ -1,0 +1,216 @@
+[
+  {
+    "id": "EX-G050-D-01",
+    "skill_id": "G050",
+    "level": "decouverte",
+    "type": "qcm",
+    "statement": "Le demi-tour de centre O transforme A en A' et B en B'. Complète : « $AB = 7$ cm. Or … Donc $A'B' = 7$ cm. »",
+    "image": "figures/EX-G050-D-01",
+    "choices": [
+      {
+        "key": "a",
+        "text": "sur la figure, A'B' mesure 7 cm à la règle.",
+        "misconception": "La mesure n'est pas une preuve : elle est imprécise et ne vaut que pour ce dessin."
+      },
+      {
+        "key": "b",
+        "text": "un demi-tour conserve les longueurs.",
+        "misconception": null
+      },
+      {
+        "key": "c",
+        "text": "$A'B' = 7$ cm.",
+        "misconception": "C'est la conclusion : l'écrire comme argument revient à supposer ce qu'on veut prouver."
+      },
+      {
+        "key": "d",
+        "text": "l'image d'une droite par un demi-tour est une droite parallèle.",
+        "misconception": "Propriété vraie, mais elle parle de parallélisme, pas de longueur : elle ne mène pas à la conclusion."
+      }
+    ],
+    "answer": {
+      "value": "b"
+    },
+    "solution_steps": [
+      "Une preuve enchaîne ce qu'on sait (les données), une propriété (« Or… ») et la conclusion (« Donc… »).",
+      "La propriété doit faire passer de « $AB = 7$ cm » à « $A'B' = 7$ cm », sachant que [A'B'] est l'image de [AB] : c'est **un demi-tour conserve les longueurs**.",
+      "Écrire « $A'B' = 7$ cm » à la place de la propriété, c'est donner la conclusion comme une donnée. Mesurer sur la figure ne prouve rien.",
+      "Le demi-tour transforme bien une droite en une droite parallèle, mais cette propriété ne parle pas de longueur."
+    ],
+    "hint": "Quelle propriété du demi-tour parle de longueurs ?",
+    "estimated_duration_s": 50,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, Espace et géométrie, présentation commune aux trois classes : « Pourront ainsi être présentés des exemples génériques, des ébauches de preuves, des diagrammes ou schémas de raisonnement, des manipulations donnant l'idée de la preuve, des preuves à compléter ou à mettre dans l'ordre. »"
+  },
+  {
+    "id": "EX-G050-D-02",
+    "skill_id": "G050",
+    "level": "decouverte",
+    "type": "vrai_faux",
+    "statement": "Cette preuve est-elle valable ?\n\n« ABCD est un parallélogramme et $AB = 6$ cm. Or les côtés opposés d'un parallélogramme ont la même longueur. Donc $CD = 6$ cm. »",
+    "image": null,
+    "answer": {
+      "value": true
+    },
+    "solution_steps": [
+      "Données : ABCD est un parallélogramme et $AB = 6$ cm. Elles sont connues.",
+      "Propriété : les côtés opposés d'un parallélogramme ont la même longueur. Elle est vraie, et elle part bien de « ABCD est un parallélogramme ».",
+      "[AB] et [CD] sont des côtés opposés de ABCD, donc $CD = 6$ cm : la preuve est **valable**.",
+      "Aucune mesure n'a été faite : c'est la propriété qui prouve."
+    ],
+    "hint": "Vérifie trois choses : les données sont-elles connues ? La propriété est-elle vraie ? Mène-t-elle à la conclusion ?",
+    "estimated_duration_s": 45,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, classe de 5e, Espace et géométrie, Parallélogrammes, Automatismes : « Reconnaitre en justifiant un quadrilatère, un parallélogramme, un rectangle, un losange, un carré, un trapèze, un pentagone, un hexagone dans des figures complexes. »"
+  },
+  {
+    "id": "EX-G050-E-01",
+    "skill_id": "G050",
+    "level": "entrainement",
+    "type": "qcm",
+    "statement": "Remets cette preuve dans l'ordre :\n\n(1) Donc $\\widehat{EFB}$ mesure 115°.\n(2) On sait que (d) et (d') sont parallèles et que $\\widehat{AEF}$ mesure 115°.\n(3) Or des parallèles coupées par une sécante forment des angles alternes-internes égaux.",
+    "image": "figures/EX-G050-E-01",
+    "choices": [
+      {
+        "key": "a",
+        "text": "2, 1, 3",
+        "misconception": "La conclusion (« Donc ») arrive avant la propriété qui la justifie."
+      },
+      {
+        "key": "b",
+        "text": "3, 2, 1",
+        "misconception": "« Or » introduit la propriété qui relie les données à la conclusion : il vient après les données, pas avant."
+      },
+      {
+        "key": "c",
+        "text": "2, 3, 1",
+        "misconception": null
+      },
+      {
+        "key": "d",
+        "text": "1, 2, 3",
+        "misconception": "Commencer par « Donc », c'est écrire la conclusion comme si elle était déjà connue : la preuve tourne en rond."
+      }
+    ],
+    "answer": {
+      "value": "c"
+    },
+    "solution_steps": [
+      "Une preuve commence par ce qu'on sait : l'étape (2), avec les données.",
+      "Vient ensuite la propriété qui relie les données à la conclusion, introduite par « Or » : l'étape (3). Elle s'applique, car $\\widehat{AEF}$ et $\\widehat{EFB}$ sont alternes-internes pour la sécante (EF).",
+      "On termine par la conclusion, introduite par « Donc » : l'étape (1). Ordre : **2, 3, 1**.",
+      "Mesurer $\\widehat{EFB}$ au rapporteur ne remplacerait pas cette preuve : la mesure n'est pas une preuve."
+    ],
+    "hint": "Une preuve suit l'ordre : « On sait que… », « Or… », « Donc… ».",
+    "estimated_duration_s": 60,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, Espace et géométrie, présentation commune aux trois classes : « Pourront ainsi être présentés des exemples génériques, des ébauches de preuves, des diagrammes ou schémas de raisonnement, des manipulations donnant l'idée de la preuve, des preuves à compléter ou à mettre dans l'ordre. »"
+  },
+  {
+    "id": "EX-G050-E-02",
+    "skill_id": "G050",
+    "level": "entrainement",
+    "type": "qcm",
+    "statement": "Où est l'erreur dans cette preuve ?\n\n(1) On sait que ABCD est un parallélogramme.\n(2) Or les diagonales d'un parallélogramme ont la même longueur.\n(3) Donc $AC = BD$.",
+    "image": null,
+    "choices": [
+      {
+        "key": "a",
+        "text": "À l'étape (2) : cette propriété est fausse, elle n'est vraie que pour certains parallélogrammes, comme le rectangle.",
+        "misconception": null
+      },
+      {
+        "key": "b",
+        "text": "À l'étape (1) : on ne peut pas partir de « ABCD est un parallélogramme ».",
+        "misconception": "C'est une donnée de départ : une preuve part justement de ce qu'on sait."
+      },
+      {
+        "key": "c",
+        "text": "À l'étape (3) : la conclusion ne découle pas des étapes (1) et (2).",
+        "misconception": "Si la propriété de l'étape (2) était vraie, la conclusion en découlerait bien. Le défaut est dans la propriété citée, pas dans l'enchaînement."
+      },
+      {
+        "key": "d",
+        "text": "Il n'y a pas d'erreur.",
+        "misconception": "L'élève croit que les diagonales de tout parallélogramme ont la même longueur. C'est faux : c'est le cas du rectangle."
+      }
+    ],
+    "answer": {
+      "value": "a"
+    },
+    "solution_steps": [
+      "L'étape (1) part d'une donnée : elle est juste.",
+      "L'étape (2) cite une propriété **fausse** : les diagonales d'un parallélogramme se coupent en leur milieu, mais elles n'ont pas toujours la même longueur. C'est vrai pour le rectangle, pas pour tout parallélogramme.",
+      "L'étape (3) découle bien de (1) et (2) : l'enchaînement est correct, mais il repose sur une propriété fausse, donc il ne prouve rien.",
+      "Une preuve n'est valable que si chaque propriété citée est vraie."
+    ],
+    "hint": "Pense à un parallélogramme très « penché » : ses deux diagonales ont-elles la même longueur ?",
+    "estimated_duration_s": 55,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, classe de 5e, Espace et géométrie, Parallélogrammes, Automatismes : « Reconnaitre en justifiant un quadrilatère, un parallélogramme, un rectangle, un losange, un carré, un trapèze, un pentagone, un hexagone dans des figures complexes. »"
+  },
+  {
+    "id": "EX-G050-M-01",
+    "skill_id": "G050",
+    "level": "maitrise",
+    "type": "vrai_faux",
+    "statement": "Cette preuve est-elle valable ?\n\n« Les angles alternes-internes marqués sont égaux. Or si deux droites sont parallèles, leurs angles alternes-internes sont égaux. Donc (d) et (d') sont parallèles. »",
+    "image": "figures/EX-G050-M-01",
+    "answer": {
+      "value": false
+    },
+    "solution_steps": [
+      "Les données sont justes (108° et 108°), et la propriété citée est vraie.",
+      "Mais cette propriété part de « les droites sont parallèles » et conclut « les angles sont égaux ». La preuve s'en sert pour aller des angles vers les droites : c'est la propriété prise dans l'autre sens.",
+      "Une propriété ne permet de conclure que ce qui suit son « alors ». Celle-ci ne peut pas prouver le parallélisme : la preuve n'est **pas valable**.",
+      "Il fallait la propriété dans l'autre sens : « si deux droites coupées par une sécante forment des angles alternes-internes égaux, alors elles sont parallèles »."
+    ],
+    "hint": "Dans la propriété citée, que sait-on au départ (après « si ») et que conclut-on (après « alors ») ?",
+    "estimated_duration_s": 60,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, Espace et géométrie, présentation commune aux trois classes : « Pourront ainsi être présentés des exemples génériques, des ébauches de preuves, des diagrammes ou schémas de raisonnement, des manipulations donnant l'idée de la preuve, des preuves à compléter ou à mettre dans l'ordre. »"
+  },
+  {
+    "id": "EX-G050-M-02",
+    "skill_id": "G050",
+    "level": "maitrise",
+    "type": "qcm",
+    "statement": "ABCD est un parallélogramme. Complète : « (AB) et (DC) sont parallèles, et $\\widehat{BAC}$, $\\widehat{DCA}$ sont alternes-internes. Or … Donc $\\widehat{BAC} = \\widehat{DCA}$. »",
+    "image": "figures/EX-G050-M-02",
+    "choices": [
+      {
+        "key": "a",
+        "text": "les diagonales d'un parallélogramme se coupent en leur milieu.",
+        "misconception": "Propriété vraie, mais sa conclusion parle des diagonales, pas des deux angles cherchés."
+      },
+      {
+        "key": "b",
+        "text": "les angles opposés d'un parallélogramme sont égaux.",
+        "misconception": "Les angles opposés du parallélogramme sont $\\widehat{DAB}$ et $\\widehat{BCD}$ ; $\\widehat{BAC}$ et $\\widehat{DCA}$ n'en sont que des morceaux."
+      },
+      {
+        "key": "c",
+        "text": "si deux angles alternes-internes sont égaux, alors les droites sont parallèles.",
+        "misconception": "C'est la propriété dans l'autre sens : elle conclut au parallélisme, déjà connu. On cherche l'égalité des angles."
+      },
+      {
+        "key": "d",
+        "text": "si deux droites parallèles sont coupées par une sécante, alors les angles alternes-internes sont égaux.",
+        "misconception": null
+      }
+    ],
+    "answer": {
+      "value": "d"
+    },
+    "solution_steps": [
+      "Première étape, déjà écrite : par définition, un parallélogramme a ses côtés opposés parallèles, donc (AB) et (DC) sont parallèles.",
+      "La diagonale [AC] est une sécante de ces deux parallèles, et $\\widehat{BAC}$, $\\widehat{DCA}$ sont alternes-internes.",
+      "La propriété qui mène à l'égalité des deux angles est celle des parallèles : **si deux droites parallèles sont coupées par une sécante, alors les angles alternes-internes sont égaux**.",
+      "La preuve a deux étapes : la définition du parallélogramme donne les parallèles, la propriété des angles donne la conclusion."
+    ],
+    "hint": "La conclusion porte sur deux angles alternes-internes. Quelle propriété conclut à leur égalité ?",
+    "estimated_duration_s": 70,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, classe de 5e, Espace et géométrie, Parallélogrammes, Automatismes : « Reconnaitre en justifiant un quadrilatère, un parallélogramme, un rectangle, un losange, un carré, un trapèze, un pentagone, un hexagone dans des figures complexes. »"
+  }
+]

@@ -1,0 +1,195 @@
+[
+  {
+    "id": "EX-G047-D-01",
+    "skill_id": "G047",
+    "level": "decouverte",
+    "type": "numerique",
+    "statement": "Les droites (d) et (d') sont parallèles (figure pas en vraie grandeur).\n\nCombien mesure l'angle marqué « ? », en degrés ?",
+    "image": "figures/EX-G047-D-01",
+    "answer": {
+      "value": 52,
+      "unit": "°",
+      "accepted": [
+        "52°",
+        "52 °",
+        "52 degrés",
+        "52 degré"
+      ]
+    },
+    "solution_steps": [
+      "L'angle de 52° et l'angle « ? » sont entre les deux droites, de part et d'autre de la sécante : ils sont **alternes-internes**.",
+      "Propriété : si deux droites parallèles sont coupées par une sécante, alors les angles alternes-internes ont la même mesure.",
+      "(d) et (d') sont parallèles, donc l'angle « ? » mesure **52°**.",
+      "Piège : 180 − 52 = 128 est la mesure d'un angle adjacent supplémentaire, pas celle de l'alterne-interne."
+    ],
+    "hint": "Comment s'appellent ces deux angles ? Que dit la propriété quand les droites sont parallèles ?",
+    "estimated_duration_s": 45,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, classe de 5e, Espace et géométrie, Angles, Objectifs d'apprentissage : « Caractériser le parallélisme par les angles : angles alternes internes, angles correspondants. »"
+  },
+  {
+    "id": "EX-G047-D-02",
+    "skill_id": "G047",
+    "level": "decouverte",
+    "type": "qcm",
+    "statement": "Les droites (d) et (d') sont parallèles.\n\nQuelle propriété donne la mesure de l'angle « ? » ?",
+    "image": "figures/EX-G047-D-02",
+    "choices": [
+      {
+        "key": "a",
+        "text": "Deux angles opposés par le sommet ont la même mesure.",
+        "misconception": "Les deux angles marqués n'ont pas le même sommet : l'un est sur (d), l'autre sur (d'). Ils ne sont pas opposés par le sommet."
+      },
+      {
+        "key": "b",
+        "text": "Si deux droites parallèles sont coupées par une sécante, alors les angles correspondants ont la même mesure.",
+        "misconception": null
+      },
+      {
+        "key": "c",
+        "text": "Si deux droites sont coupées par une sécante, alors les angles correspondants ont la même mesure.",
+        "misconception": "Sans droites parallèles, deux angles correspondants n'ont pas forcément la même mesure : l'élève oublie la condition qui rend la propriété vraie."
+      },
+      {
+        "key": "d",
+        "text": "Si deux droites parallèles sont coupées par une sécante, alors les angles correspondants sont supplémentaires.",
+        "misconception": "Confusion entre « égaux » et « supplémentaires » : avec des parallèles, deux angles correspondants ont la même mesure, ils ne font pas 180° à eux deux."
+      }
+    ],
+    "answer": {
+      "value": "b"
+    },
+    "solution_steps": [
+      "Les deux angles marqués sont placés de la même façon par rapport à (d) et à (d'), du même côté de la sécante : ils sont **correspondants**.",
+      "(d) et (d') sont parallèles : la propriété des angles correspondants s'applique, ils ont la même mesure.",
+      "L'angle « ? » mesure donc 64°.",
+      "La condition « droites parallèles » est indispensable : sans elle, la phrase c est fausse."
+    ],
+    "hint": "Trouve d'abord le nom de la paire d'angles, puis vérifie la condition de la propriété.",
+    "estimated_duration_s": 50,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, classe de 5e, Espace et géométrie, Angles, Objectifs d'apprentissage : « Caractériser le parallélisme par les angles : angles alternes internes, angles correspondants. »"
+  },
+  {
+    "id": "EX-G047-E-01",
+    "skill_id": "G047",
+    "level": "entrainement",
+    "type": "numerique",
+    "statement": "(d) et (d') sont parallèles (figure pas en vraie grandeur).\n\nQuelle est la mesure de l'angle « ? », en degrés ?",
+    "image": "figures/EX-G047-E-01",
+    "answer": {
+      "value": 133,
+      "unit": "°",
+      "accepted": [
+        "133°",
+        "133 °",
+        "133 degrés",
+        "133 degré"
+      ]
+    },
+    "solution_steps": [
+      "Sur (d'), l'angle placé au-dessus de (d'), à droite de la sécante, est **correspondant** à l'angle de 47°. Les droites sont parallèles, donc il mesure aussi 47°.",
+      "L'angle « ? » est adjacent à cet angle de 47° : ensemble, ils forment un angle plat. Ils sont **supplémentaires**.",
+      "L'angle « ? » mesure 180 − 47 = 133 : **133°**.",
+      "Piège : 47° serait la mesure du correspondant, pas celle de l'angle « ? », qui est obtus."
+    ],
+    "hint": "Passe par un angle intermédiaire : le correspondant de l'angle de 47°, au même sommet que l'angle « ? ».",
+    "estimated_duration_s": 60,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, classe de 5e, Espace et géométrie, Angles, Objectifs d'apprentissage : « Caractériser le parallélisme par les angles : angles alternes internes, angles correspondants. »"
+  },
+  {
+    "id": "EX-G047-E-02",
+    "skill_id": "G047",
+    "level": "entrainement",
+    "type": "vrai_faux",
+    "statement": "Léo affirme que l'angle « ? » mesure 60°, parce qu'il est alterne-interne avec l'angle de 60°.\n\nCe raisonnement est-il juste ?",
+    "image": "figures/EX-G047-E-02",
+    "answer": {
+      "value": false
+    },
+    "solution_steps": [
+      "Les deux angles marqués sont bien alternes-internes : entre (d) et (d'), de part et d'autre de la sécante.",
+      "Mais deux angles alternes-internes n'ont la même mesure que si les droites sont **parallèles**. Ici, rien ne le dit.",
+      "Léo applique la propriété sans sa condition : son raisonnement est **faux**. Avec ces données, on ne peut pas calculer l'angle « ? ».",
+      "Sur la figure, (d) et (d') semblent parallèles et les deux angles semblent égaux ; mais seul l'énoncé peut dire que des droites sont parallèles, et il ne le dit pas."
+    ],
+    "hint": "La propriété des angles alternes-internes égaux a une condition. L'énoncé la donne-t-il ?",
+    "estimated_duration_s": 50,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, classe de 5e, Espace et géométrie, Angles, Objectifs d'apprentissage : « Caractériser le parallélisme par les angles : angles alternes internes, angles correspondants. »"
+  },
+  {
+    "id": "EX-G047-M-01",
+    "skill_id": "G047",
+    "level": "maitrise",
+    "type": "numerique",
+    "statement": "Les droites (AB) et (DC) sont parallèles (figure pas en vraie grandeur).\n\nCombien mesure l'angle $\\widehat{ADC}$, en degrés ?",
+    "image": "figures/EX-G047-M-01",
+    "answer": {
+      "value": 114,
+      "unit": "°",
+      "accepted": [
+        "114°",
+        "114 °",
+        "114 degrés",
+        "114 degré",
+        "ADC = 114°",
+        "ADC = 114"
+      ]
+    },
+    "solution_steps": [
+      "On prolonge [CD] au-delà de D jusqu'à un point E. Pour les droites (AB) et (DC), coupées par la sécante (AD), les angles $\\widehat{BAD}$ et $\\widehat{ADE}$ sont **alternes-internes**.",
+      "Les droites sont parallèles, donc $\\widehat{ADE}$ mesure 66°, comme $\\widehat{BAD}$.",
+      "E, D et C sont alignés : $\\widehat{ADE}$ et $\\widehat{ADC}$ sont adjacents et supplémentaires. $\\widehat{ADC}$ mesure 180 − 66 = 114 : **114°**.",
+      "Piège : $\\widehat{BAD}$ et $\\widehat{ADC}$ sont du même côté de (AD). Ils ne sont pas alternes-internes et n'ont pas la même mesure : 66° est faux."
+    ],
+    "hint": "Prolonge le côté [CD] au-delà de D : quel angle est alterne-interne avec l'angle de 66° ?",
+    "estimated_duration_s": 90,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, classe de 5e, Espace et géométrie, Angles, Objectifs d'apprentissage : « Caractériser le parallélisme par les angles : angles alternes internes, angles correspondants. »"
+  },
+  {
+    "id": "EX-G047-M-02",
+    "skill_id": "G047",
+    "level": "maitrise",
+    "type": "qcm",
+    "statement": "Les droites (d), (d') et (p) sont parallèles (figure pas en vraie grandeur).\n\nCombien mesure l'angle $\\widehat{APB}$ ?",
+    "image": "figures/EX-G047-M-02",
+    "choices": [
+      {
+        "key": "a",
+        "text": "112°",
+        "misconception": "L'élève trouve 31 + 37 = 68, puis calcule 180 − 68 : il confond « égaux » et « supplémentaires » pour des angles alternes-internes."
+      },
+      {
+        "key": "b",
+        "text": "37°",
+        "misconception": "L'élève croit que $\\widehat{APB}$ est alterne-interne avec l'angle de 37° tout entier ; mais la droite (p) le coupe en deux angles."
+      },
+      {
+        "key": "c",
+        "text": "68°",
+        "misconception": null
+      },
+      {
+        "key": "d",
+        "text": "6°",
+        "misconception": "L'élève calcule l'écart 37 − 31 au lieu d'ajouter les deux morceaux de $\\widehat{APB}$ que la droite (p) sépare."
+      }
+    ],
+    "answer": {
+      "value": "c"
+    },
+    "solution_steps": [
+      "La droite (p) partage l'angle $\\widehat{APB}$ en deux angles : l'un du côté de A, l'autre du côté de B.",
+      "(d) et (p) sont parallèles, coupées par la sécante (AP) : l'angle de 31° en A et l'angle entre [PA) et (p) sont alternes-internes, donc égaux. Ce morceau mesure 31°.",
+      "(d') et (p) sont parallèles, coupées par la sécante (BP) : de même, l'angle entre [PB) et (p) mesure 37°.",
+      "$\\widehat{APB}$ mesure 31 + 37 = 68 : **68°**."
+    ],
+    "hint": "La droite (p) coupe l'angle $\\widehat{APB}$ en deux. Cherche chaque morceau avec des angles alternes-internes.",
+    "estimated_duration_s": 90,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, classe de 5e, Espace et géométrie, Angles, Objectifs d'apprentissage : « Caractériser le parallélisme par les angles : angles alternes internes, angles correspondants. »"
+  }
+]

@@ -1,0 +1,59 @@
+{
+  "type": "geometrie",
+  "params": {
+    "colonnes": 12,
+    "lignes": 9,
+    "fond": "blanc",
+    "points": {
+      "A": [
+        1.5,
+        7
+      ],
+      "B": [
+        8,
+        7
+      ],
+      "C": [
+        10.5,
+        2
+      ],
+      "D": [
+        4,
+        2
+      ]
+    },
+    "elements": [
+      {
+        "polygone": [
+          "A",
+          "B",
+          "C",
+          "D"
+        ]
+      },
+      {
+        "segment": [
+          "A",
+          "C"
+        ]
+      },
+      {
+        "angle": [
+          "B",
+          "A",
+          "C"
+        ],
+        "rayon_arc": 30
+      },
+      {
+        "angle": [
+          "D",
+          "C",
+          "A"
+        ],
+        "rayon_arc": 30
+      }
+    ]
+  },
+  "alt": "Quadrilatère ABCD, diagonale [AC] et deux angles marqués"
+}

@@ -1,0 +1,69 @@
+{
+  "type": "geometrie",
+  "params": {
+    "colonnes": 12,
+    "lignes": 9,
+    "fond": "blanc",
+    "points": {
+      "A": [
+        5,
+        1.5
+      ],
+      "B": [
+        1.5,
+        7.5
+      ],
+      "C": [
+        10.5,
+        7.5
+      ],
+      "D": [
+        1,
+        1.5
+      ],
+      "E": [
+        11,
+        1.5
+      ]
+    },
+    "elements": [
+      {
+        "polygone": [
+          "A",
+          "B",
+          "C"
+        ]
+      },
+      {
+        "droite": [
+          "D",
+          "E"
+        ],
+        "nom": "(d)",
+        "style": "pointille"
+      },
+      {
+        "angle": [
+          "D",
+          "A",
+          "B"
+        ],
+        "rayon_arc": 22
+      },
+      {
+        "angle": [
+          "A",
+          "B",
+          "C"
+        ],
+        "rayon_arc": 22
+      }
+    ],
+    "etiquettes": {
+      "A": "haut",
+      "D": "haut",
+      "E": "haut"
+    }
+  },
+  "alt": "Triangle ABC, droite (d) passant par A, points D et E sur (d), deux angles marqués"
+}

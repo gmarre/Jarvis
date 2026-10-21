@@ -1,0 +1,62 @@
+{
+  "type": "geometrie",
+  "params": {
+    "colonnes": 12,
+    "lignes": 9,
+    "fond": "blanc",
+    "points": {
+      "A": [
+        2.5,
+        2
+      ],
+      "B": [
+        4,
+        7
+      ],
+      "O": [
+        6,
+        4.5
+      ],
+      "A'": [
+        9.5,
+        7
+      ],
+      "B'": [
+        8,
+        2
+      ]
+    },
+    "elements": [
+      {
+        "segment": [
+          "A",
+          "B"
+        ]
+      },
+      {
+        "segment": [
+          "A'",
+          "B'"
+        ]
+      },
+      {
+        "segment": [
+          "A",
+          "A'"
+        ],
+        "style": "pointille"
+      },
+      {
+        "segment": [
+          "B",
+          "B'"
+        ],
+        "style": "pointille"
+      }
+    ],
+    "etiquettes": {
+      "O": "droite"
+    }
+  },
+  "alt": "Points A, B, leurs images A', B' et le centre O"
+}
