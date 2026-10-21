@@ -341,7 +341,7 @@ Décisions prises en route : la page publique du parent est `/accord/:jeton` (co
   4. Pythagore en 4e (G040) avec une valeur approchée de racine (A034, A035 dans la chaîne) ; Thalès et trigonométrie en 3e.
   5. La propriété « une médiane partage un triangle en deux aires égales » va dans P028 (aire du triangle), pour éviter un cycle.
   6. Grandeurs quotients en P (P036, P037) ; débit et masse volumique comme exemples.
-  7. π : valeur exacte en texte (« 36π ») ou en QCM ; valeur approchée avec une tolérance égale au rang d'arrondi demandé. La correction lit « 36pi », les hectares, les ares, « km.h-1 » et « kilomètres par heure » (fait le 21 octobre 2026) ; le validateur contrôle π (P023), cos, sin, tan (G063), la notation vecteur (G066) et AB² (A029).
+  7. π : valeur exacte en texte (« 36π ») ou en QCM ; valeur approchée avec une tolérance d'un demi-rang d'arrondi (0,05 au dixième), l'arrondi fait avec 3,14 donnant le même résultat. La correction lit « 36pi », les hectares, les ares, « km.h-1 » et « kilomètres par heure » (fait le 21 octobre 2026) ; le validateur contrôle π (P023), cos, sin, tan (G063), la notation vecteur (G066) et AB² (A029).
   8. Cartes mentales : les quatre cartes courtes de 8a acceptées ; 8a numérote ses cartes avant 8b.
   9. Figures : la flèche de vecteur, les images par demi-tour, symétrie et translation (8a), et les extensions de `solide` (8b) sont codées **avant** la rédaction des nœuds qui en dépendent ; les autres nœuds se rédigent avec les générateurs existants.
 

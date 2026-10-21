@@ -1,0 +1,177 @@
+[
+  {
+    "id": "EX-P028-D-01",
+    "skill_id": "P028",
+    "level": "decouverte",
+    "type": "numerique",
+    "statement": "Dans le triangle EFG, le segment en pointillés est la hauteur issue de G. Quelle est l'aire du triangle, en cm² ?",
+    "image": "figures/EX-P028-D-01",
+    "answer": {
+      "value": 44,
+      "unit": "cm²",
+      "accepted": [
+        "44 cm²",
+        "44 cm2",
+        "44 centimètres carrés"
+      ]
+    },
+    "solution_steps": [
+      "Aire d'un triangle = base × hauteur ÷ 2 : le triangle est la moitié d'un rectangle qui a la même base et la même hauteur.",
+      "La hauteur issue de G mesure 8 cm ; elle est perpendiculaire au côté [EF], qui mesure 11 cm. On prend donc [EF] comme base.",
+      "Aire = 11 × 8 ÷ 2 = 88 ÷ 2 = 44. L'aire du triangle est **44 cm²**.",
+      "Le côté [EG], 10 cm, n'est pas une hauteur : il n'est pas perpendiculaire à [EF], et 11 × 10 ÷ 2 = 55 cm² est faux. Quant à 88 cm², c'est l'aire du rectangle : on a oublié de diviser par 2."
+    ],
+    "hint": "Quelle longueur est perpendiculaire à la base [EF] ?",
+    "estimated_duration_s": 60,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, classe de 5e, Espace et géométrie, Triangles : « Calculer l'aire d'un triangle. »"
+  },
+  {
+    "id": "EX-P028-D-02",
+    "skill_id": "P028",
+    "level": "decouverte",
+    "type": "qcm",
+    "statement": "Le triangle RST est rectangle en R. Quelle est son aire ?",
+    "image": "figures/EX-P028-D-02",
+    "choices": [
+      {
+        "key": "a",
+        "text": "108 cm²",
+        "misconception": "L'élève calcule 12 × 9 = 108 et oublie de diviser par 2 : c'est l'aire du rectangle de côtés 12 cm et 9 cm, le double du triangle."
+      },
+      {
+        "key": "b",
+        "text": "90 cm²",
+        "misconception": "L'élève prend le plus long côté, [ST], comme hauteur : 12 × 15 ÷ 2 = 90. Mais [ST] n'est pas perpendiculaire à [RS]."
+      },
+      {
+        "key": "c",
+        "text": "67,5 cm²",
+        "misconception": "L'élève prend [RT] comme base et le plus long côté, [ST], comme hauteur : 9 × 15 ÷ 2 = 67,5. Mais [ST] n'est pas perpendiculaire à [RT]."
+      },
+      {
+        "key": "d",
+        "text": "54 cm²",
+        "misconception": null
+      }
+    ],
+    "answer": {
+      "value": "d"
+    },
+    "solution_steps": [
+      "Dans un triangle rectangle en R, les deux côtés de l'angle droit, [RS] et [RT], sont perpendiculaires : l'un est la hauteur relative à l'autre.",
+      "On prend [RS] comme base, 12 cm ; la hauteur relative à cette base est [RT], 9 cm.",
+      "Aire = 12 × 9 ÷ 2 = 108 ÷ 2 = 54. L'aire est **54 cm²**.",
+      "Le côté [ST], 15 cm, opposé à l'angle droit, ne sert pas : il n'est perpendiculaire à aucun autre côté."
+    ],
+    "hint": "Quels sont les deux côtés perpendiculaires ?",
+    "estimated_duration_s": 45,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, classe de 5e, Espace et géométrie, Triangles : « Calculer l'aire d'un triangle. »"
+  },
+  {
+    "id": "EX-P028-E-01",
+    "skill_id": "P028",
+    "level": "entrainement",
+    "type": "numerique",
+    "statement": "Dans le triangle KLM, [KH] est la hauteur issue de K. Quelle est l'aire du triangle KLM, en cm² ?",
+    "image": "figures/EX-P028-E-01",
+    "answer": {
+      "value": 19.5,
+      "unit": "cm²",
+      "accepted": [
+        "19,5 cm²",
+        "19,5 cm2",
+        "19,5 centimètres carrés"
+      ]
+    },
+    "solution_steps": [
+      "La hauteur [KH] est perpendiculaire à la droite (LM) : son pied H est sur le prolongement du côté [LM] (les pointillés).",
+      "La base associée à cette hauteur est le côté [LM], qui mesure 6 cm. La longueur HL = 3 cm ne fait pas partie de la base.",
+      "Aire = LM × KH ÷ 2 = 6 × 6,5 ÷ 2 = 39 ÷ 2 = 19,5. L'aire est **19,5 cm²**.",
+      "Prendre HM = 9 cm comme base donne 29,25 cm² : c'est l'aire du grand triangle KHM, pas celle de KLM. Et 39 cm², c'est oublier de diviser par 2."
+    ],
+    "hint": "La base est un côté du triangle KLM. Lequel est perpendiculaire à [KH] ?",
+    "estimated_duration_s": 75,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, classe de 5e, Espace et géométrie, Triangles : « Calculer l'aire d'un triangle. »"
+  },
+  {
+    "id": "EX-P028-E-02",
+    "skill_id": "P028",
+    "level": "entrainement",
+    "type": "vrai_faux",
+    "statement": "Les droites (EF) et (GK) sont parallèles. Tom dit : « Le triangle EFK a une aire plus grande que le triangle EFG. » A-t-il raison ?",
+    "image": "figures/EX-P028-E-02",
+    "answer": {
+      "value": false
+    },
+    "solution_steps": [
+      "Les deux triangles ont le même côté [EF]. On le prend comme base pour les deux.",
+      "La hauteur relative à [EF] est la distance entre le sommet opposé et la droite (EF). G et K sont sur une même parallèle à (EF) : ils sont à la même distance de (EF).",
+      "Même base et même hauteur : les deux triangles ont la même aire, base × hauteur ÷ 2. Tom a **tort**.",
+      "Le triangle EFK paraît plus grand parce qu'il est plus étiré, mais l'aire d'un triangle ne dépend que de sa base et de la hauteur relative à cette base."
+    ],
+    "hint": "Compare les bases, puis les hauteurs relatives à [EF] des deux triangles.",
+    "estimated_duration_s": 60,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, classe de 5e, Espace et géométrie, Triangles : « Calculer l'aire d'un triangle. »"
+  },
+  {
+    "id": "EX-P028-M-01",
+    "skill_id": "P028",
+    "level": "maitrise",
+    "type": "numerique",
+    "statement": "Le triangle RST a une aire de 22,5 cm². Combien mesure sa hauteur [TH], relative au côté [RS] ? La figure n'est pas en vraie grandeur.",
+    "image": "figures/EX-P028-M-01",
+    "answer": {
+      "value": 9,
+      "unit": "cm",
+      "accepted": [
+        "9 cm",
+        "9 centimètres",
+        "90 mm",
+        "TH = 9 cm",
+        "TH = 9"
+      ]
+    },
+    "solution_steps": [
+      "Aire = base × hauteur ÷ 2, avec la base [RS] = 5 cm et la hauteur [TH] relative à ce côté.",
+      "Donc 5 × TH ÷ 2 = 22,5. Avant la division par 2, le produit valait 22,5 × 2 = 45 : 5 × TH = 45.",
+      "TH = 45 ÷ 5 = 9. La hauteur mesure **9 cm**. Vérification : 5 × 9 ÷ 2 = 45 ÷ 2 = 22,5.",
+      "Le côté [RT], 15 cm, est oblique : ce n'est pas la hauteur. Et 22,5 ÷ 5 = 4,5 cm oublie que l'aire est la moitié de base × hauteur."
+    ],
+    "hint": "Écris la formule avec les nombres connus, puis remonte le calcul.",
+    "estimated_duration_s": 90,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, classe de 5e, Espace et géométrie, Triangles : « Calculer l'aire d'un triangle. »"
+  },
+  {
+    "id": "EX-P028-M-02",
+    "skill_id": "P028",
+    "level": "maitrise",
+    "type": "numerique",
+    "statement": "Le triangle EFG a une aire de 37 cm², et [EI] est sa médiane issue de E. Quelle est l'aire du triangle EIG, en cm² ?",
+    "image": "figures/EX-P028-M-02",
+    "answer": {
+      "value": 18.5,
+      "unit": "cm²",
+      "accepted": [
+        "18,5 cm²",
+        "18,5 cm2",
+        "18,5 centimètres carrés"
+      ]
+    },
+    "solution_steps": [
+      "[EI] est la médiane issue de E : I est le milieu de [FG], donc FI = IG.",
+      "Les triangles EFI et EIG ont des bases de même longueur, [FI] et [IG], sur la même droite (FG).",
+      "Ils ont aussi la même hauteur : la perpendiculaire à (FG) passant par E, commune aux deux triangles.",
+      "Même base et même hauteur : même aire. La médiane partage le triangle EFG en deux triangles de même aire.",
+      "Aire de EIG = 37 ÷ 2 = 18,5. L'aire est **18,5 cm²**."
+    ],
+    "hint": "Compare les bases [FI] et [IG], puis les hauteurs issues de E des triangles EFI et EIG.",
+    "estimated_duration_s": 90,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, classe de 5e, Espace et géométrie, Triangles : « Démontrer qu'une médiane partage un triangle en deux triangles d'aires égales. »"
+  }
+]

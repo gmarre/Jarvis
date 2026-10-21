@@ -1,0 +1,191 @@
+[
+  {
+    "id": "EX-P030-D-01",
+    "skill_id": "P030",
+    "level": "decouverte",
+    "type": "numerique",
+    "statement": "Une banderole rectangulaire mesure 3 m sur 80 cm. Quelle est son aire, en m² ?",
+    "image": null,
+    "answer": {
+      "value": 2.4,
+      "unit": "m²",
+      "accepted": [
+        "2,4 m²",
+        "2,4 m2",
+        "2,4 mètres carrés",
+        "2,40 m²"
+      ]
+    },
+    "solution_steps": [
+      "Les deux longueurs ne sont pas dans la même unité : on convertit avant de multiplier. 1 m = 100 cm, donc 80 cm = 0,8 m.",
+      "Aire = 3 × 0,8 = 2,4. L'aire est **2,4 m²**.",
+      "Calculer 3 × 80 = 240 mélange des mètres et des centimètres : ce nombre n'est ni des m², ni des cm².",
+      "Autre chemin : 3 m = 300 cm, 300 × 80 = 24 000 cm², et 1 m² = 10 000 cm², donc 24 000 cm² = 2,4 m²."
+    ],
+    "hint": "Exprime d'abord les deux longueurs en mètres.",
+    "estimated_duration_s": 60,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, classe de 5e, Espace et géométrie, Parallélogrammes : « Résoudre des problèmes faisant appel à des conversions d'unités de longueur et d'unités d'aires. »"
+  },
+  {
+    "id": "EX-P030-D-02",
+    "skill_id": "P030",
+    "level": "decouverte",
+    "type": "qcm",
+    "statement": "Une forêt a une aire de 4 km². Quelle est son aire en m² ?",
+    "image": null,
+    "choices": [
+      {
+        "key": "a",
+        "text": "4 000 000 m²",
+        "misconception": null
+      },
+      {
+        "key": "b",
+        "text": "4 000 m²",
+        "misconception": "L'élève convertit l'aire comme une longueur : 1 km = 1 000 m, mais 1 km² = 1 000 000 m²."
+      },
+      {
+        "key": "c",
+        "text": "40 000 m²",
+        "misconception": "L'élève oublie une unité dans la chaîne km², hm², dam², m² : il multiplie deux fois par 100 au lieu de trois."
+      },
+      {
+        "key": "d",
+        "text": "400 m²",
+        "misconception": "L'élève ne multiplie qu'une fois par 100, comme si le m² suivait directement le km²."
+      }
+    ],
+    "answer": {
+      "value": "a"
+    },
+    "solution_steps": [
+      "Chaque unité d'aire vaut 100 fois la suivante : 1 km² = 100 hm², 1 hm² = 100 dam², 1 dam² = 100 m².",
+      "Donc 1 km² = 100 × 100 × 100 m² = 1 000 000 m².",
+      "4 km² = 4 × 1 000 000 m² = 4 000 000 m². La réponse est **4 000 000 m²**.",
+      "Vérification : un carré de 1 km de côté mesure 1 000 m sur 1 000 m, et 1 000 × 1 000 = 1 000 000."
+    ],
+    "hint": "Un carré de 1 km de côté : combien mesure son côté en mètres ? Et son aire en m² ?",
+    "estimated_duration_s": 45,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, classe de 5e, Espace et géométrie, Parallélogrammes : « Résoudre des problèmes faisant appel à des conversions d'unités de longueur et d'unités d'aires. »"
+  },
+  {
+    "id": "EX-P030-E-01",
+    "skill_id": "P030",
+    "level": "entrainement",
+    "type": "numerique",
+    "statement": "Une puce électronique carrée mesure 6 mm de côté. Quelle est son aire, en cm² ?",
+    "image": null,
+    "answer": {
+      "value": 0.36,
+      "unit": "cm²",
+      "accepted": [
+        "0,36 cm²",
+        "0,36 cm2",
+        "0,36 centimètre carré",
+        "0,36 centimètres carrés"
+      ]
+    },
+    "solution_steps": [
+      "Aire du carré en mm² : 6 × 6 = 36 mm².",
+      "Un carré de 1 cm de côté mesure 10 mm sur 10 mm : 1 cm² = 100 mm². Pour passer des mm² aux cm², on divise par 100.",
+      "36 ÷ 100 = 0,36. L'aire est **0,36 cm²**.",
+      "Diviser par 10, comme pour une longueur, donnerait 3,6 cm² : dix fois trop."
+    ],
+    "hint": "Calcule l'aire en mm², puis convertis : combien y a-t-il de mm² dans 1 cm² ?",
+    "estimated_duration_s": 60,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, classe de 5e, Espace et géométrie, Parallélogrammes : « Résoudre des problèmes faisant appel à des conversions d'unités de longueur et d'unités d'aires. »"
+  },
+  {
+    "id": "EX-P030-E-02",
+    "skill_id": "P030",
+    "level": "entrainement",
+    "type": "vrai_faux",
+    "statement": "Un terrain rectangulaire mesure 250 m sur 120 m. Sam dit : « Son aire est 0,03 km². » A-t-il raison ?",
+    "image": null,
+    "answer": {
+      "value": true
+    },
+    "solution_steps": [
+      "Aire en m² : 250 × 120 = 30 000 m².",
+      "1 km² = 1 000 000 m². Pour passer des m² aux km², on divise par 1 000 000, c'est-à-dire par 1 000 puis encore par 1 000 : 30 000 ÷ 1 000 = 30, puis 30 ÷ 1 000 = 0,03.",
+      "Le terrain mesure bien 0,03 km² : Sam a **raison**.",
+      "Diviser par 1 000 seulement, comme pour une longueur, donnerait 30 km² : la taille d'une ville entière, pour un terrain de quelques centaines de mètres de côté."
+    ],
+    "hint": "Calcule l'aire en m², puis convertis-la en km².",
+    "estimated_duration_s": 75,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, classe de 5e, Espace et géométrie, Parallélogrammes : « Résoudre des problèmes faisant appel à des conversions d'unités de longueur et d'unités d'aires. »"
+  },
+  {
+    "id": "EX-P030-M-01",
+    "skill_id": "P030",
+    "level": "maitrise",
+    "type": "numerique",
+    "statement": "Une salle de bain rectangulaire mesure 2,7 m sur 1,8 m. On la carrelle avec des carreaux carrés de 30 cm de côté, sans découpe. Combien faut-il de carreaux ?",
+    "image": null,
+    "answer": {
+      "value": 54,
+      "unit": null,
+      "accepted": [
+        "54 carreaux"
+      ]
+    },
+    "solution_steps": [
+      "On travaille dans une seule unité, le centimètre : 2,7 m = 270 cm et 1,8 m = 180 cm.",
+      "Aire de la salle : 270 × 180 = 48 600 cm². Aire d'un carreau : 30 × 30 = 900 cm².",
+      "Nombre de carreaux : 48 600 ÷ 900 = 54. Il faut **54 carreaux**.",
+      "Vérification par rangées : 270 ÷ 30 = 9 carreaux dans la longueur, 180 ÷ 30 = 6 rangées, et 9 × 6 = 54.",
+      "Diviser une aire par la longueur d'un côté de carreau n'a pas de sens : on compare une aire à une aire, dans la même unité."
+    ],
+    "hint": "Convertis tout en centimètres, puis compare l'aire de la salle à celle d'un carreau.",
+    "estimated_duration_s": 120,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, classe de 5e, Espace et géométrie, Parallélogrammes : « Résoudre des problèmes faisant appel à des conversions d'unités de longueur et d'unités d'aires. »"
+  },
+  {
+    "id": "EX-P030-M-02",
+    "skill_id": "P030",
+    "level": "maitrise",
+    "type": "qcm",
+    "statement": "Un champ rectangulaire a une aire de 1,2 km². Sa largeur mesure 400 m. Quelle est sa longueur ?",
+    "image": null,
+    "choices": [
+      {
+        "key": "a",
+        "text": "3 m",
+        "misconception": "L'élève convertit 1,2 km² en m² en multipliant par 1 000, comme une longueur : 1 200 m², puis 1 200 ÷ 400 = 3. Il fallait multiplier par 1 000 000."
+      },
+      {
+        "key": "b",
+        "text": "30 m",
+        "misconception": "L'élève oublie une unité de la chaîne : 1,2 km² = 12 000 m² (× 10 000 au lieu de × 1 000 000), puis 12 000 ÷ 400 = 30."
+      },
+      {
+        "key": "c",
+        "text": "0,3 km",
+        "misconception": "L'élève lit 400 m comme 4 kilomètres en divisant par 100 au lieu de 1 000 : 1,2 ÷ 4 = 0,3. Or 400 m = 0,4 km."
+      },
+      {
+        "key": "d",
+        "text": "3 km",
+        "misconception": null
+      }
+    ],
+    "answer": {
+      "value": "d"
+    },
+    "solution_steps": [
+      "Aire du rectangle = longueur × largeur, donc longueur = aire ÷ largeur, à condition que les unités aillent ensemble.",
+      "L'aire est en km² : on met la largeur en kilomètres. 400 m = 0,4 km.",
+      "Longueur = 1,2 ÷ 0,4 = 12 ÷ 4 = 3. Le champ mesure **3 km** de long.",
+      "Vérification en mètres : 1,2 km² = 1 200 000 m², et 1 200 000 ÷ 400 = 3 000 m, soit 3 km."
+    ],
+    "hint": "Exprime la largeur dans l'unité de longueur qui va avec les km².",
+    "estimated_duration_s": 90,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, classe de 5e, Espace et géométrie, Parallélogrammes : « Résoudre des problèmes faisant appel à des conversions d'unités de longueur et d'unités d'aires. »"
+  }
+]

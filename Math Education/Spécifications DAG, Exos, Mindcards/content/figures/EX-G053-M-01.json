@@ -1,0 +1,21 @@
+{
+  "type": "geometrie",
+  "params": {
+    "colonnes": 12,
+    "lignes": 9,
+    "points": {"H": ["0.5", 8], "E": ["3.5", 8], "F": ["11.5", 8], "G": ["0.5", "1.5"], "I": ["7.5", 8]},
+    "etiquettes": {"I": "haut_droite", "E": "haut_droite"},
+    "elements": [
+      {"polygone": ["E", "F", "G"]},
+      {"segment": ["H", "E"], "style": "pointille"},
+      {"segment": ["G", "H"]},
+      {"segment": ["G", "I"]},
+      {"angle_droit": ["G", "H", "E"]},
+      {"codage": [["E", "I"], ["I", "F"]], "marque": 1},
+      {"longueur": ["H", "E"], "texte": "3 cm"},
+      {"longueur": ["E", "F"], "texte": "13 cm"}
+    ],
+    "legende": "Figure pas en vraie grandeur"
+  },
+  "alt": "Triangle EFG, côté prolongé, segments [GH] et [GI], et deux longueurs écrites"
+}

@@ -3,7 +3,7 @@
     "version": "1.0",
     "scope": "Tranche pilote CP a 4e : 69 exercices, 3 par competence (1 decouverte, 1 entrainement, 1 maitrise) sur les 23 competences des domaines A et C. La cible finale de la roadmap est de 5 exercices par niveau, soit 15 par competence.",
     "updated_at": "2026-07-28",
-    "total_exercises": 1456,
+    "total_exercises": 1486,
     "review_status": "relu_agent"
   },
   "exercises": [
@@ -36328,6 +36328,397 @@
       "programme_ref": "Cycle 4, classe de 5e, Espace et géométrie, Triangles, Objectifs d'apprentissage : « Connaitre la somme des angles d'un triangle et savoir la démontrer. »"
     },
     {
+      "id": "EX-G053-D-01",
+      "skill_id": "G053",
+      "level": "decouverte",
+      "type": "qcm",
+      "statement": "Dans le triangle EFG, trois droites sont tracées. Laquelle est la hauteur issue de G ?",
+      "image": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 344 292\" width=\"344\" height=\"292\" font-family=\"system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif\" role=\"img\"><title>Triangle EFG et trois droites (d1), (d2), (d3) avec des codages</title><rect width=\"100%\" height=\"100%\" fill=\"#ffffff\"/><polygon points=\"29.0,224.0 315.0,224.0 81.0,42.0\" fill=\"none\" fill-opacity=\"0.6\" stroke=\"#334155\" stroke-width=\"2\" stroke-linejoin=\"round\"/><line x1=\"62.0\" y1=\"4.0\" x2=\"204.0\" y2=\"288.0\" stroke=\"#334155\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><line x1=\"172.0\" y1=\"288.0\" x2=\"172.0\" y2=\"4.0\" stroke=\"#334155\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><line x1=\"81.0\" y1=\"4.0\" x2=\"81.0\" y2=\"288.0\" stroke=\"#334155\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><text x=\"208.4\" y=\"268.0\" font-size=\"15\" text-anchor=\"middle\" fill=\"#334155\" font-weight=\"600\">(d1)</text><text x=\"195.4\" y=\"36.6\" font-size=\"15\" text-anchor=\"middle\" fill=\"#334155\" font-weight=\"600\">(d2)</text><text x=\"104.4\" y=\"268.0\" font-size=\"15\" text-anchor=\"middle\" fill=\"#334155\" font-weight=\"600\">(d3)</text><path d=\"M81.0,213.0 L92.0,213.0 L92.0,224.0\" fill=\"none\" stroke=\"#334155\" stroke-width=\"1.6\"/><path d=\"M172.0,213.0 L183.0,213.0 L183.0,224.0\" fill=\"none\" stroke=\"#334155\" stroke-width=\"1.6\"/><line x1=\"102.5\" y1=\"218.0\" x2=\"98.5\" y2=\"230.0\" stroke=\"#2563eb\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"245.5\" y1=\"218.0\" x2=\"241.5\" y2=\"230.0\" stroke=\"#2563eb\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"25.0\" y1=\"220.0\" x2=\"33.0\" y2=\"228.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"25.0\" y1=\"228.0\" x2=\"33.0\" y2=\"220.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><text x=\"16.7\" y=\"235.6\" font-size=\"15\" text-anchor=\"middle\" fill=\"#334155\" font-weight=\"600\">E</text><line x1=\"311.0\" y1=\"220.0\" x2=\"319.0\" y2=\"228.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"311.0\" y1=\"228.0\" x2=\"319.0\" y2=\"220.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><text x=\"328.2\" y=\"233.6\" font-size=\"15\" text-anchor=\"middle\" fill=\"#334155\" font-weight=\"600\">F</text><line x1=\"77.0\" y1=\"38.0\" x2=\"85.0\" y2=\"46.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"77.0\" y1=\"46.0\" x2=\"85.0\" y2=\"38.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><text x=\"71.2\" y=\"37.2\" font-size=\"15\" text-anchor=\"middle\" fill=\"#334155\" font-weight=\"600\">G</text></svg>",
+      "choices": [
+        {
+          "key": "a",
+          "text": "La droite (d1)",
+          "misconception": "L'élève prend pour hauteur une droite issue de G qui arrive au milieu du côté : (d1) passe bien par G et par le milieu de [EF], mais elle n'est pas perpendiculaire à (EF). C'est la médiane issue de G."
+        },
+        {
+          "key": "b",
+          "text": "La droite (d2)",
+          "misconception": "L'élève voit l'angle droit et pense à la hauteur : (d2) est perpendiculaire à [EF] en son milieu, c'est la médiatrice de [EF]. Elle ne passe pas par G."
+        },
+        {
+          "key": "c",
+          "text": "La droite (d3)",
+          "misconception": null
+        }
+      ],
+      "answer": {
+        "value": "c"
+      },
+      "solution_steps": [
+        "La hauteur issue de G est la droite qui passe par G et qui est perpendiculaire au côté opposé, (EF). Il faut les deux conditions.",
+        "(d3) passe par G, et le codage montre un angle droit avec (EF) : **(d3) est la hauteur issue de G**.",
+        "(d1) passe par G et par le milieu de [EF] (les petits traits le codent), mais sans angle droit : c'est la médiane issue de G.",
+        "(d2) est perpendiculaire à [EF] en son milieu : c'est la médiatrice de [EF]. Elle ne passe pas par G, ce n'est donc pas une droite issue de G."
+      ],
+      "hint": "Une hauteur part d'un sommet. Quelles droites passent par G ? Laquelle forme un angle droit avec (EF) ?",
+      "estimated_duration_s": 60,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 4, classe de 5e, Espace et géométrie, Triangles : « Définir et tracer les hauteurs dans un triangle. »"
+    },
+    {
+      "id": "EX-G053-D-02",
+      "skill_id": "G053",
+      "level": "decouverte",
+      "type": "numerique",
+      "statement": "Dans le triangle RST, le segment [SK] est la médiane issue de S. Combien mesure RK ?",
+      "image": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 344 266\" width=\"344\" height=\"266\" font-family=\"system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif\" role=\"img\"><title>Triangle RST, un segment [SK] et une longueur écrite</title><rect width=\"100%\" height=\"100%\" fill=\"#ffffff\"/><polygon points=\"29.0,224.0 315.0,224.0 250.0,55.0\" fill=\"none\" fill-opacity=\"0.6\" stroke=\"#334155\" stroke-width=\"2\" stroke-linejoin=\"round\"/><line x1=\"250.0\" y1=\"55.0\" x2=\"172.0\" y2=\"224.0\" stroke=\"#334155\" stroke-width=\"2.0\" stroke-linecap=\"round\"/><text x=\"172.0\" y=\"242.0\" font-size=\"13\" text-anchor=\"middle\" fill=\"#334155\">11 cm</text><line x1=\"25.0\" y1=\"220.0\" x2=\"33.0\" y2=\"228.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"25.0\" y1=\"228.0\" x2=\"33.0\" y2=\"220.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><text x=\"15.5\" y=\"232.5\" font-size=\"15\" text-anchor=\"middle\" fill=\"#334155\" font-weight=\"600\">R</text><line x1=\"311.0\" y1=\"220.0\" x2=\"319.0\" y2=\"228.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"311.0\" y1=\"228.0\" x2=\"319.0\" y2=\"220.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><text x=\"328.2\" y=\"233.5\" font-size=\"15\" text-anchor=\"middle\" fill=\"#334155\" font-weight=\"600\">T</text><line x1=\"246.0\" y1=\"51.0\" x2=\"254.0\" y2=\"59.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"246.0\" y1=\"59.0\" x2=\"254.0\" y2=\"51.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><text x=\"255.9\" y=\"47.3\" font-size=\"15\" text-anchor=\"middle\" fill=\"#334155\" font-weight=\"600\">S</text><line x1=\"168.0\" y1=\"220.0\" x2=\"176.0\" y2=\"228.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"168.0\" y1=\"228.0\" x2=\"176.0\" y2=\"220.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><text x=\"162.2\" y=\"219.2\" font-size=\"15\" text-anchor=\"middle\" fill=\"#334155\" font-weight=\"600\">K</text></svg>",
+      "answer": {
+        "value": 5.5,
+        "unit": "cm",
+        "accepted": [
+          "5,5 cm",
+          "5,5 centimètres",
+          "55 mm",
+          "RK = 5,5 cm",
+          "RK = 5,5"
+        ]
+      },
+      "solution_steps": [
+        "La médiane issue de S est le segment qui joint S au milieu du côté opposé, [RT]. Donc K est le milieu de [RT].",
+        "Le milieu partage [RT] en deux segments de même longueur : RK = RT ÷ 2.",
+        "On lit RT = 11 cm : RK = 11 ÷ 2 = 5,5. RK mesure **5,5 cm**.",
+        "À ne pas confondre : la hauteur issue de S serait perpendiculaire à (RT) ; la médiane, elle, arrive au milieu de [RT], sans angle droit en général."
+      ],
+      "hint": "Où arrive une médiane sur le côté opposé au sommet ?",
+      "estimated_duration_s": 45,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 4, classe de 5e, Espace et géométrie, Triangles : « Définir et tracer les médianes dans un triangle. »"
+    },
+    {
+      "id": "EX-G053-E-01",
+      "skill_id": "G053",
+      "level": "entrainement",
+      "type": "qcm",
+      "statement": "Quel segment est la hauteur issue de K du triangle KLM ?",
+      "image": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 344 266\" width=\"344\" height=\"266\" font-family=\"system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif\" role=\"img\"><title>Triangle KLM, côté prolongé en pointillés, segments issus de K et points H et I</title><rect width=\"100%\" height=\"100%\" fill=\"#ffffff\"/><polygon points=\"42.0,68.0 120.0,224.0 276.0,224.0\" fill=\"none\" fill-opacity=\"0.6\" stroke=\"#334155\" stroke-width=\"2\" stroke-linejoin=\"round\"/><line x1=\"42.0\" y1=\"224.0\" x2=\"120.0\" y2=\"224.0\" stroke=\"#334155\" stroke-width=\"2.0\" stroke-linecap=\"round\" stroke-dasharray=\"5 4\"/><line x1=\"42.0\" y1=\"68.0\" x2=\"42.0\" y2=\"224.0\" stroke=\"#334155\" stroke-width=\"2.0\" stroke-linecap=\"round\"/><line x1=\"42.0\" y1=\"68.0\" x2=\"198.0\" y2=\"224.0\" stroke=\"#334155\" stroke-width=\"2.0\" stroke-linecap=\"round\"/><path d=\"M42.0,213.0 L53.0,213.0 L53.0,224.0\" fill=\"none\" stroke=\"#334155\" stroke-width=\"1.6\"/><line x1=\"161.0\" y1=\"218.0\" x2=\"157.0\" y2=\"230.0\" stroke=\"#2563eb\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"239.0\" y1=\"218.0\" x2=\"235.0\" y2=\"230.0\" stroke=\"#2563eb\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"38.0\" y1=\"64.0\" x2=\"46.0\" y2=\"72.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"38.0\" y1=\"72.0\" x2=\"46.0\" y2=\"64.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><text x=\"33.6\" y=\"61.8\" font-size=\"15\" text-anchor=\"middle\" fill=\"#334155\" font-weight=\"600\">K</text><line x1=\"116.0\" y1=\"220.0\" x2=\"124.0\" y2=\"228.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"116.0\" y1=\"228.0\" x2=\"124.0\" y2=\"220.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><text x=\"113.7\" y=\"241.5\" font-size=\"15\" text-anchor=\"middle\" fill=\"#334155\" font-weight=\"600\">L</text><line x1=\"272.0\" y1=\"220.0\" x2=\"280.0\" y2=\"228.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"272.0\" y1=\"228.0\" x2=\"280.0\" y2=\"220.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><text x=\"289.7\" y=\"232.0\" font-size=\"15\" text-anchor=\"middle\" fill=\"#334155\" font-weight=\"600\">M</text><line x1=\"38.0\" y1=\"220.0\" x2=\"46.0\" y2=\"228.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"38.0\" y1=\"228.0\" x2=\"46.0\" y2=\"220.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><text x=\"28.7\" y=\"233.4\" font-size=\"15\" text-anchor=\"middle\" fill=\"#334155\" font-weight=\"600\">H</text><line x1=\"194.0\" y1=\"220.0\" x2=\"202.0\" y2=\"228.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"194.0\" y1=\"228.0\" x2=\"202.0\" y2=\"220.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><text x=\"210.5\" y=\"235.3\" font-size=\"15\" text-anchor=\"middle\" fill=\"#334155\" font-weight=\"600\">I</text></svg>",
+      "choices": [
+        {
+          "key": "a",
+          "text": "Le segment [KL]",
+          "misconception": "L'élève veut une hauteur à l'intérieur du triangle et prend le côté le plus proche : [KL] part bien de K, mais il ne forme pas d'angle droit avec (LM)."
+        },
+        {
+          "key": "b",
+          "text": "Le segment [KH]",
+          "misconception": null
+        },
+        {
+          "key": "c",
+          "text": "Le segment [KI]",
+          "misconception": "L'élève cherche le pied de la hauteur au milieu du côté : [KI] joint K au milieu I de [LM] (les petits traits le codent). C'est la médiane issue de K."
+        },
+        {
+          "key": "d",
+          "text": "Ce triangle n'a pas de hauteur issue de K",
+          "misconception": "L'élève croit que le pied d'une hauteur est toujours sur le côté : ici il est sur le prolongement de [LM], mais la hauteur existe bien."
+        }
+      ],
+      "answer": {
+        "value": "b"
+      },
+      "solution_steps": [
+        "La hauteur issue de K est la droite qui passe par K et qui est perpendiculaire à la droite (LM). On la représente souvent par le segment qui va de K à cette droite.",
+        "Ici, le pied de la perpendiculaire tombe en dehors du segment [LM] : on prolonge le côté (les pointillés), et H est sur ce prolongement.",
+        "Le codage montre un angle droit en H : [KH] part de K et il est perpendiculaire à (LM). **[KH] est la hauteur issue de K.**",
+        "[KI] arrive au milieu de [LM] : c'est la médiane issue de K. [KL] est un côté du triangle, sans angle droit avec (LM)."
+      ],
+      "hint": "Cherche le segment qui part de K et qui fait un angle droit avec la droite (LM), même en dehors du triangle.",
+      "estimated_duration_s": 75,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 4, classe de 5e, Espace et géométrie, Triangles : « Définir et tracer les hauteurs dans un triangle. »"
+    },
+    {
+      "id": "EX-G053-E-02",
+      "skill_id": "G053",
+      "level": "entrainement",
+      "type": "vrai_faux",
+      "statement": "Dans le triangle XYZ, [XH] est la hauteur issue de X. Inès dit : « [XH] n'est pas la médiane issue de X. » A-t-elle raison ?",
+      "image": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 344 266\" width=\"344\" height=\"266\" font-family=\"system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif\" role=\"img\"><title>Triangle XYZ, segment [XH] et deux longueurs écrites</title><rect width=\"100%\" height=\"100%\" fill=\"#ffffff\"/><polygon points=\"133.0,55.0 42.0,224.0 302.0,224.0\" fill=\"none\" fill-opacity=\"0.6\" stroke=\"#334155\" stroke-width=\"2\" stroke-linejoin=\"round\"/><line x1=\"133.0\" y1=\"55.0\" x2=\"133.0\" y2=\"224.0\" stroke=\"#334155\" stroke-width=\"2.0\" stroke-linecap=\"round\"/><path d=\"M133.0,213.0 L144.0,213.0 L144.0,224.0\" fill=\"none\" stroke=\"#334155\" stroke-width=\"1.6\"/><text x=\"87.5\" y=\"242.0\" font-size=\"13\" text-anchor=\"middle\" fill=\"#334155\">3,5 cm</text><text x=\"217.5\" y=\"242.0\" font-size=\"13\" text-anchor=\"middle\" fill=\"#334155\">6,5 cm</text><line x1=\"129.0\" y1=\"51.0\" x2=\"137.0\" y2=\"59.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"129.0\" y1=\"59.0\" x2=\"137.0\" y2=\"51.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><text x=\"130.9\" y=\"46.2\" font-size=\"15\" text-anchor=\"middle\" fill=\"#334155\" font-weight=\"600\">X</text><line x1=\"38.0\" y1=\"220.0\" x2=\"46.0\" y2=\"228.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"38.0\" y1=\"228.0\" x2=\"46.0\" y2=\"220.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><text x=\"28.9\" y=\"234.0\" font-size=\"15\" text-anchor=\"middle\" fill=\"#334155\" font-weight=\"600\">Y</text><line x1=\"298.0\" y1=\"220.0\" x2=\"306.0\" y2=\"228.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"298.0\" y1=\"228.0\" x2=\"306.0\" y2=\"220.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><text x=\"315.5\" y=\"232.8\" font-size=\"15\" text-anchor=\"middle\" fill=\"#334155\" font-weight=\"600\">Z</text><line x1=\"129.0\" y1=\"220.0\" x2=\"137.0\" y2=\"228.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"129.0\" y1=\"228.0\" x2=\"137.0\" y2=\"220.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><text x=\"123.2\" y=\"219.2\" font-size=\"15\" text-anchor=\"middle\" fill=\"#334155\" font-weight=\"600\">H</text></svg>",
+      "answer": {
+        "value": true
+      },
+      "solution_steps": [
+        "La médiane issue de X joint X au milieu de [YZ]. On lit YH = 3,5 cm et HZ = 6,5 cm, donc YZ = 3,5 + 6,5 = 10 cm : le milieu de [YZ] est à 10 ÷ 2 = 5 cm de Y.",
+        "Le pied de la hauteur, H, est à 3,5 cm de Y, pas à 5 cm : H n'est pas le milieu de [YZ]. D'ailleurs YH et HZ ne sont pas égales.",
+        "Donc [XH] n'est pas la médiane issue de X : Inès a **raison**.",
+        "La hauteur et la médiane issues d'un même sommet sont en général deux segments différents : l'une fait un angle droit avec le côté opposé, l'autre arrive en son milieu."
+      ],
+      "hint": "Où se trouve le milieu de [YZ] ? Compare les longueurs YH et HZ.",
+      "estimated_duration_s": 60,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 4, classe de 5e, Espace et géométrie, Triangles : « Définir et tracer les médianes dans un triangle. »"
+    },
+    {
+      "id": "EX-G053-M-01",
+      "skill_id": "G053",
+      "level": "maitrise",
+      "type": "numerique",
+      "statement": "Dans le triangle EFG, [GH] est la hauteur issue de G et [GI] la médiane issue de G. Combien mesure HI ? La figure n'est pas en vraie grandeur.",
+      "image": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 344 288\" width=\"344\" height=\"288\" font-family=\"system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif\" role=\"img\"><title>Triangle EFG, côté prolongé, segments [GH] et [GI], et deux longueurs écrites</title><rect width=\"100%\" height=\"100%\" fill=\"#ffffff\"/><polygon points=\"107.0,224.0 315.0,224.0 29.0,55.0\" fill=\"none\" fill-opacity=\"0.6\" stroke=\"#334155\" stroke-width=\"2\" stroke-linejoin=\"round\"/><line x1=\"29.0\" y1=\"224.0\" x2=\"107.0\" y2=\"224.0\" stroke=\"#334155\" stroke-width=\"2.0\" stroke-linecap=\"round\" stroke-dasharray=\"5 4\"/><line x1=\"29.0\" y1=\"55.0\" x2=\"29.0\" y2=\"224.0\" stroke=\"#334155\" stroke-width=\"2.0\" stroke-linecap=\"round\"/><line x1=\"29.0\" y1=\"55.0\" x2=\"211.0\" y2=\"224.0\" stroke=\"#334155\" stroke-width=\"2.0\" stroke-linecap=\"round\"/><path d=\"M29.0,213.0 L40.0,213.0 L40.0,224.0\" fill=\"none\" stroke=\"#334155\" stroke-width=\"1.6\"/><line x1=\"161.0\" y1=\"218.0\" x2=\"157.0\" y2=\"230.0\" stroke=\"#2563eb\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"265.0\" y1=\"218.0\" x2=\"261.0\" y2=\"230.0\" stroke=\"#2563eb\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><text x=\"68.0\" y=\"242.0\" font-size=\"13\" text-anchor=\"middle\" fill=\"#334155\">3 cm</text><text x=\"211.0\" y=\"242.0\" font-size=\"13\" text-anchor=\"middle\" fill=\"#334155\">13 cm</text><line x1=\"25.0\" y1=\"220.0\" x2=\"33.0\" y2=\"228.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"25.0\" y1=\"228.0\" x2=\"33.0\" y2=\"220.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><text x=\"15.6\" y=\"233.1\" font-size=\"15\" text-anchor=\"middle\" fill=\"#334155\" font-weight=\"600\">H</text><line x1=\"103.0\" y1=\"220.0\" x2=\"111.0\" y2=\"228.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"103.0\" y1=\"228.0\" x2=\"111.0\" y2=\"220.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><text x=\"116.8\" y=\"219.2\" font-size=\"15\" text-anchor=\"middle\" fill=\"#334155\" font-weight=\"600\">E</text><line x1=\"311.0\" y1=\"220.0\" x2=\"319.0\" y2=\"228.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"311.0\" y1=\"228.0\" x2=\"319.0\" y2=\"220.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><text x=\"328.8\" y=\"231.6\" font-size=\"15\" text-anchor=\"middle\" fill=\"#334155\" font-weight=\"600\">F</text><line x1=\"25.0\" y1=\"51.0\" x2=\"33.0\" y2=\"59.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"25.0\" y1=\"59.0\" x2=\"33.0\" y2=\"51.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><text x=\"20.2\" y=\"49.1\" font-size=\"15\" text-anchor=\"middle\" fill=\"#334155\" font-weight=\"600\">G</text><line x1=\"207.0\" y1=\"220.0\" x2=\"215.0\" y2=\"228.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"207.0\" y1=\"228.0\" x2=\"215.0\" y2=\"220.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><text x=\"220.8\" y=\"219.2\" font-size=\"15\" text-anchor=\"middle\" fill=\"#334155\" font-weight=\"600\">I</text><text x=\"172.0\" y=\"278.0\" font-size=\"13\" text-anchor=\"middle\" fill=\"#475569\">Figure pas en vraie grandeur</text></svg>",
+      "answer": {
+        "value": 9.5,
+        "unit": "cm",
+        "accepted": [
+          "9,5 cm",
+          "9,5 centimètres",
+          "95 mm",
+          "HI = 9,5 cm",
+          "HI = 9,5"
+        ]
+      },
+      "solution_steps": [
+        "[GI] est la médiane issue de G : I est le milieu de [EF]. Donc EI = 13 ÷ 2 = 6,5 cm.",
+        "[GH] est la hauteur issue de G : H est le pied de la perpendiculaire à (EF) passant par G. Ici il tombe sur le prolongement de [EF], du côté de E, à 3 cm de E.",
+        "Sur la droite (EF), on rencontre H, puis E, puis I : HI = HE + EI = 3 + 6,5 = 9,5. HI mesure **9,5 cm**.",
+        "Répondre 3,5 cm (6,5 − 3), c'est placer H sur [EF] sans regarder la figure ; répondre 0 cm, c'est croire que le pied de la hauteur est au milieu du côté."
+      ],
+      "hint": "Calcule d'abord EI. Où est H par rapport à E et à I ?",
+      "estimated_duration_s": 90,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 4, classe de 5e, Espace et géométrie, Triangles : « Définir et tracer les médianes dans un triangle. »"
+    },
+    {
+      "id": "EX-G053-M-02",
+      "skill_id": "G053",
+      "level": "maitrise",
+      "type": "qcm",
+      "statement": "Dans le triangle PQR, les hauteurs issues de P et de Q se coupent en O. Que peut-on affirmer de la droite (RO) ?",
+      "image": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 344 266\" width=\"344\" height=\"266\" font-family=\"system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif\" role=\"img\"><title>Triangle PQR, deux segments en pointillés qui se coupent en O</title><rect width=\"100%\" height=\"100%\" fill=\"#ffffff\"/><polygon points=\"42.0,224.0 302.0,224.0 120.0,42.0\" fill=\"none\" fill-opacity=\"0.6\" stroke=\"#334155\" stroke-width=\"2\" stroke-linejoin=\"round\"/><line x1=\"42.0\" y1=\"224.0\" x2=\"172.0\" y2=\"94.0\" stroke=\"#334155\" stroke-width=\"2.0\" stroke-linecap=\"round\" stroke-dasharray=\"5 4\"/><line x1=\"302.0\" y1=\"224.0\" x2=\"82.3\" y2=\"129.9\" stroke=\"#334155\" stroke-width=\"2.0\" stroke-linecap=\"round\" stroke-dasharray=\"5 4\"/><path d=\"M164.2,101.8 L172.0,109.6 L179.8,101.8\" fill=\"none\" stroke=\"#334155\" stroke-width=\"1.6\"/><path d=\"M92.5,134.2 L88.1,144.3 L78.0,140.0\" fill=\"none\" stroke=\"#334155\" stroke-width=\"1.6\"/><line x1=\"38.0\" y1=\"220.0\" x2=\"46.0\" y2=\"228.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"38.0\" y1=\"228.0\" x2=\"46.0\" y2=\"220.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><text x=\"30.1\" y=\"236.4\" font-size=\"15\" text-anchor=\"middle\" fill=\"#334155\" font-weight=\"600\">P</text><line x1=\"298.0\" y1=\"220.0\" x2=\"306.0\" y2=\"228.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"298.0\" y1=\"228.0\" x2=\"306.0\" y2=\"220.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><text x=\"314.9\" y=\"234.4\" font-size=\"15\" text-anchor=\"middle\" fill=\"#334155\" font-weight=\"600\">Q</text><line x1=\"116.0\" y1=\"38.0\" x2=\"124.0\" y2=\"46.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"116.0\" y1=\"46.0\" x2=\"124.0\" y2=\"38.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><text x=\"117.0\" y=\"33.3\" font-size=\"15\" text-anchor=\"middle\" fill=\"#334155\" font-weight=\"600\">R</text><line x1=\"116.0\" y1=\"142.0\" x2=\"124.0\" y2=\"150.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"116.0\" y1=\"150.0\" x2=\"124.0\" y2=\"142.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><text x=\"134.0\" y=\"151.0\" font-size=\"15\" text-anchor=\"middle\" fill=\"#334155\" font-weight=\"600\">O</text></svg>",
+      "choices": [
+        {
+          "key": "a",
+          "text": "Elle est perpendiculaire à la droite (PQ).",
+          "misconception": null
+        },
+        {
+          "key": "b",
+          "text": "Elle passe par le milieu de [PQ].",
+          "misconception": "L'élève confond hauteur et médiane : ce sont les médianes qui passent par les milieux des côtés. (RO) est la troisième hauteur, son pied n'a aucune raison d'être au milieu de [PQ]."
+        },
+        {
+          "key": "c",
+          "text": "Elle est la médiatrice de [PQ].",
+          "misconception": "L'élève confond hauteur et médiatrice : la médiatrice de [PQ] est perpendiculaire à [PQ] en son milieu, et elle ne passe par R que si le triangle est isocèle en R."
+        },
+        {
+          "key": "d",
+          "text": "On ne peut rien affirmer sans la tracer.",
+          "misconception": "L'élève ne connaît pas la propriété des hauteurs : elles se coupent toujours en un même point. Pas besoin de tracer ni de mesurer pour conclure."
+        }
+      ],
+      "answer": {
+        "value": "a"
+      },
+      "solution_steps": [
+        "Propriété : les trois hauteurs d'un triangle sont concourantes, c'est-à-dire qu'elles passent par un même point.",
+        "Les hauteurs issues de P et de Q se coupent en O : la troisième hauteur, issue de R, passe donc elle aussi par O.",
+        "La hauteur issue de R passe par R et par O : c'est la droite (RO). Comme toute hauteur issue de R, elle est perpendiculaire au côté opposé : **(RO) est perpendiculaire à (PQ)**.",
+        "Elle n'a aucune raison de passer par le milieu de [PQ] : c'est la médiane issue de R qui le fait. Et la médiatrice de [PQ] ne passe par R que si le triangle est isocèle en R."
+      ],
+      "hint": "Que sais-tu des trois hauteurs d'un triangle ?",
+      "estimated_duration_s": 75,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 4, classe de 5e, Espace et géométrie, Triangles : « Savoir que les hauteurs d'un triangle sont concourantes. »"
+    },
+    {
+      "id": "EX-G054-D-01",
+      "skill_id": "G054",
+      "level": "decouverte",
+      "type": "numerique",
+      "statement": "Le triangle EFG est isocèle en E, avec FG = 15 cm, et [EH] est sa hauteur issue de E. Combien mesure FH ?",
+      "image": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 344 266\" width=\"344\" height=\"266\" font-family=\"system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif\" role=\"img\"><title>Triangle EFG codé et un segment [EH]</title><rect width=\"100%\" height=\"100%\" fill=\"#ffffff\"/><polygon points=\"172.0,42.0 42.0,224.0 302.0,224.0\" fill=\"none\" fill-opacity=\"0.6\" stroke=\"#334155\" stroke-width=\"2\" stroke-linejoin=\"round\"/><line x1=\"172.0\" y1=\"42.0\" x2=\"172.0\" y2=\"224.0\" stroke=\"#334155\" stroke-width=\"2.0\" stroke-linecap=\"round\"/><path d=\"M172.0,213.0 L183.0,213.0 L183.0,224.0\" fill=\"none\" stroke=\"#334155\" stroke-width=\"1.6\"/><line x1=\"110.7\" y1=\"138.1\" x2=\"103.3\" y2=\"127.9\" stroke=\"#2563eb\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"243.0\" y1=\"131.1\" x2=\"231.0\" y2=\"134.9\" stroke=\"#2563eb\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"168.0\" y1=\"38.0\" x2=\"176.0\" y2=\"46.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"168.0\" y1=\"46.0\" x2=\"176.0\" y2=\"38.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><text x=\"172.0\" y=\"33.0\" font-size=\"15\" text-anchor=\"middle\" fill=\"#334155\" font-weight=\"600\">E</text><line x1=\"38.0\" y1=\"220.0\" x2=\"46.0\" y2=\"228.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"38.0\" y1=\"228.0\" x2=\"46.0\" y2=\"220.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><text x=\"28.8\" y=\"233.6\" font-size=\"15\" text-anchor=\"middle\" fill=\"#334155\" font-weight=\"600\">F</text><line x1=\"298.0\" y1=\"220.0\" x2=\"306.0\" y2=\"228.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"298.0\" y1=\"228.0\" x2=\"306.0\" y2=\"220.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><text x=\"315.2\" y=\"233.6\" font-size=\"15\" text-anchor=\"middle\" fill=\"#334155\" font-weight=\"600\">G</text><line x1=\"168.0\" y1=\"220.0\" x2=\"176.0\" y2=\"228.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"168.0\" y1=\"228.0\" x2=\"176.0\" y2=\"220.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><text x=\"162.2\" y=\"219.2\" font-size=\"15\" text-anchor=\"middle\" fill=\"#334155\" font-weight=\"600\">H</text></svg>",
+      "answer": {
+        "value": 7.5,
+        "unit": "cm",
+        "accepted": [
+          "7,5 cm",
+          "7,5 centimètres",
+          "75 mm",
+          "FH = 7,5 cm",
+          "FH = 7,5"
+        ]
+      },
+      "solution_steps": [
+        "Le codage le dit : EF = EG, le triangle est isocèle en E. E est son sommet principal.",
+        "Propriété : dans un triangle isocèle, la hauteur issue du sommet principal est aussi la médiane issue de ce sommet. Elle coupe la base [FG] en son milieu.",
+        "Donc H est le milieu de [FG] : FH = 15 ÷ 2 = 7,5. FH mesure **7,5 cm**.",
+        "Cette propriété ne vaut que pour la hauteur issue du sommet principal. Dans un triangle quelconque, le pied de la hauteur n'est pas au milieu du côté."
+      ],
+      "hint": "Dans un triangle isocèle, où la hauteur issue du sommet principal coupe-t-elle la base ?",
+      "estimated_duration_s": 45,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 4, classe de 5e, Espace et géométrie, Triangles : « Utiliser ces propriétés dans le cas de triangles particuliers. »"
+    },
+    {
+      "id": "EX-G054-D-02",
+      "skill_id": "G054",
+      "level": "decouverte",
+      "type": "qcm",
+      "statement": "Le triangle NPQ est isocèle en N. La droite (d) passe par N et par le milieu de [PQ]. Que peut-on dire de (d) ?",
+      "image": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 344 266\" width=\"344\" height=\"266\" font-family=\"system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif\" role=\"img\"><title>Triangle NPQ codé et une droite (d)</title><rect width=\"100%\" height=\"100%\" fill=\"#ffffff\"/><polygon points=\"172.0,55.0 55.0,237.0 289.0,237.0\" fill=\"none\" fill-opacity=\"0.6\" stroke=\"#334155\" stroke-width=\"2\" stroke-linejoin=\"round\"/><line x1=\"172.0\" y1=\"4.0\" x2=\"172.0\" y2=\"262.0\" stroke=\"#334155\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><text x=\"160.0\" y=\"251.0\" font-size=\"14\" text-anchor=\"middle\" fill=\"#334155\">(d)</text><line x1=\"117.5\" y1=\"150.9\" x2=\"109.5\" y2=\"141.1\" stroke=\"#2563eb\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"236.6\" y1=\"144.4\" x2=\"224.4\" y2=\"147.6\" stroke=\"#2563eb\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"113.0\" y1=\"231.0\" x2=\"109.0\" y2=\"243.0\" stroke=\"#2563eb\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"118.0\" y1=\"231.0\" x2=\"114.0\" y2=\"243.0\" stroke=\"#2563eb\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"230.0\" y1=\"231.0\" x2=\"226.0\" y2=\"243.0\" stroke=\"#2563eb\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"235.0\" y1=\"231.0\" x2=\"231.0\" y2=\"243.0\" stroke=\"#2563eb\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"168.0\" y1=\"51.0\" x2=\"176.0\" y2=\"59.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"168.0\" y1=\"59.0\" x2=\"176.0\" y2=\"51.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><text x=\"172.0\" y=\"46.0\" font-size=\"15\" text-anchor=\"middle\" fill=\"#334155\" font-weight=\"600\">N</text><line x1=\"51.0\" y1=\"233.0\" x2=\"59.0\" y2=\"241.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"51.0\" y1=\"241.0\" x2=\"59.0\" y2=\"233.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><text x=\"42.6\" y=\"248.4\" font-size=\"15\" text-anchor=\"middle\" fill=\"#334155\" font-weight=\"600\">P</text><line x1=\"285.0\" y1=\"233.0\" x2=\"293.0\" y2=\"241.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"285.0\" y1=\"241.0\" x2=\"293.0\" y2=\"233.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><text x=\"301.4\" y=\"248.4\" font-size=\"15\" text-anchor=\"middle\" fill=\"#334155\" font-weight=\"600\">Q</text></svg>",
+      "choices": [
+        {
+          "key": "a",
+          "text": "C'est la médiane issue de N, mais elle n'est perpendiculaire à (PQ) que si NPQ est équilatéral.",
+          "misconception": "L'élève croit ces propriétés réservées au triangle équilatéral. Il suffit que le triangle soit isocèle en N, et la droite part du sommet principal."
+        },
+        {
+          "key": "b",
+          "text": "C'est la médiane et la hauteur issues de N, mais pas la bissectrice de l'angle $\\widehat{PNQ}$.",
+          "misconception": "L'élève connaît la hauteur du triangle isocèle mais oublie que la même droite partage aussi l'angle au sommet $\\widehat{PNQ}$ en deux angles égaux."
+        },
+        {
+          "key": "c",
+          "text": "C'est à la fois la médiane et la hauteur issues de N, la médiatrice de [PQ] et la bissectrice de l'angle $\\widehat{PNQ}$.",
+          "misconception": null
+        }
+      ],
+      "answer": {
+        "value": "c"
+      },
+      "solution_steps": [
+        "NP = NQ : N est à égale distance de P et de Q, donc N est sur la médiatrice de [PQ].",
+        "La médiatrice de [PQ] passe aussi par le milieu de [PQ]. Elle passe par N et par ce milieu : c'est la droite (d).",
+        "(d) est donc perpendiculaire à (PQ) : c'est aussi la hauteur issue de N. Et, propriété du triangle isocèle, elle partage l'angle $\\widehat{PNQ}$ en deux angles égaux : c'est sa bissectrice.",
+        "Bilan : dans un triangle isocèle, la médiane, la hauteur et la bissectrice issues du sommet principal, et la médiatrice de la base, sont **une seule et même droite**."
+      ],
+      "hint": "N est à égale distance de P et de Q : sur quelle droite remarquable se trouve-t-il ?",
+      "estimated_duration_s": 60,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 4, classe de 5e, Espace et géométrie, Triangles : « Connaitre les propriétés des médiatrices et du cercle circonscrit dans le cas de triangles particuliers. »"
+    },
+    {
+      "id": "EX-G054-E-01",
+      "skill_id": "G054",
+      "level": "entrainement",
+      "type": "numerique",
+      "statement": "Le triangle UVW est isocèle en U, et [UH] est sa hauteur issue de U. Combien mesure l'angle $\\widehat{VUW}$, en degrés ? La figure n'est pas en vraie grandeur.",
+      "image": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 344 288\" width=\"344\" height=\"288\" font-family=\"system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif\" role=\"img\"><title>Triangle UVW codé, segment [UH] et un angle marqué</title><rect width=\"100%\" height=\"100%\" fill=\"#ffffff\"/><polygon points=\"172.0,42.0 42.0,237.0 302.0,237.0\" fill=\"none\" fill-opacity=\"0.6\" stroke=\"#334155\" stroke-width=\"2\" stroke-linejoin=\"round\"/><line x1=\"172.0\" y1=\"42.0\" x2=\"172.0\" y2=\"237.0\" stroke=\"#334155\" stroke-width=\"2.0\" stroke-linecap=\"round\"/><path d=\"M172.0,226.0 L183.0,226.0 L183.0,237.0\" fill=\"none\" stroke=\"#334155\" stroke-width=\"1.6\"/><line x1=\"110.9\" y1=\"144.5\" x2=\"103.1\" y2=\"134.5\" stroke=\"#2563eb\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"243.1\" y1=\"137.8\" x2=\"230.9\" y2=\"141.2\" stroke=\"#2563eb\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><path d=\"M153.1,70.3 A34.0,34.0 0 0 0 172.0,76.0\" fill=\"none\" stroke=\"#2563eb\" stroke-width=\"2\"/><text x=\"158.1\" y=\"92.9\" font-size=\"13\" text-anchor=\"middle\" fill=\"#2563eb\" font-weight=\"600\">28°</text><line x1=\"168.0\" y1=\"38.0\" x2=\"176.0\" y2=\"46.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"168.0\" y1=\"46.0\" x2=\"176.0\" y2=\"38.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><text x=\"172.0\" y=\"33.0\" font-size=\"15\" text-anchor=\"middle\" fill=\"#334155\" font-weight=\"600\">U</text><line x1=\"38.0\" y1=\"233.0\" x2=\"46.0\" y2=\"241.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"38.0\" y1=\"241.0\" x2=\"46.0\" y2=\"233.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><text x=\"28.9\" y=\"246.9\" font-size=\"15\" text-anchor=\"middle\" fill=\"#334155\" font-weight=\"600\">V</text><line x1=\"298.0\" y1=\"233.0\" x2=\"306.0\" y2=\"241.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"298.0\" y1=\"241.0\" x2=\"306.0\" y2=\"233.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><text x=\"315.1\" y=\"246.9\" font-size=\"15\" text-anchor=\"middle\" fill=\"#334155\" font-weight=\"600\">W</text><line x1=\"168.0\" y1=\"233.0\" x2=\"176.0\" y2=\"241.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"168.0\" y1=\"241.0\" x2=\"176.0\" y2=\"233.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><text x=\"172.0\" y=\"256.0\" font-size=\"15\" text-anchor=\"middle\" fill=\"#334155\" font-weight=\"600\">H</text><text x=\"172.0\" y=\"278.0\" font-size=\"13\" text-anchor=\"middle\" fill=\"#475569\">Figure pas en vraie grandeur</text></svg>",
+      "answer": {
+        "value": 56,
+        "unit": "°",
+        "accepted": [
+          "56°",
+          "56 °",
+          "56 degrés"
+        ]
+      },
+      "solution_steps": [
+        "UVW est isocèle en U : la hauteur issue du sommet principal U est aussi la bissectrice de l'angle $\\widehat{VUW}$.",
+        "Elle partage cet angle en deux angles égaux : $\\widehat{VUH}$ = $\\widehat{HUW}$ = 28°.",
+        "Donc $\\widehat{VUW}$ = 2 × 28° = 56°. L'angle mesure **56°**.",
+        "Répondre 14°, c'est diviser par 2 au lieu de doubler : 28° est déjà la moitié de l'angle cherché."
+      ],
+      "hint": "Dans un triangle isocèle, la hauteur issue du sommet principal partage l'angle au sommet en deux angles égaux.",
+      "estimated_duration_s": 60,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 4, classe de 5e, Espace et géométrie, Triangles : « Utiliser ces propriétés dans le cas de triangles particuliers. »"
+    },
+    {
+      "id": "EX-G054-E-02",
+      "skill_id": "G054",
+      "level": "entrainement",
+      "type": "vrai_faux",
+      "statement": "Le triangle KLM est isocèle en K, de hauteur [LJ] issue de L. Jade : « On peut affirmer que J est le milieu de [KM]. » A-t-elle raison ?",
+      "image": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 344 266\" width=\"344\" height=\"266\" font-family=\"system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif\" role=\"img\"><title>Triangle KLM codé et un segment [LJ]</title><rect width=\"100%\" height=\"100%\" fill=\"#ffffff\"/><polygon points=\"172.0,55.0 42.0,237.0 302.0,237.0\" fill=\"none\" fill-opacity=\"0.6\" stroke=\"#334155\" stroke-width=\"2\" stroke-linejoin=\"round\"/><line x1=\"42.0\" y1=\"237.0\" x2=\"214.2\" y2=\"114.0\" stroke=\"#334155\" stroke-width=\"2.0\" stroke-linecap=\"round\"/><path d=\"M205.2,120.4 L211.6,129.4 L220.6,123.0\" fill=\"none\" stroke=\"#334155\" stroke-width=\"1.6\"/><line x1=\"110.7\" y1=\"151.1\" x2=\"103.3\" y2=\"140.9\" stroke=\"#2563eb\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"243.0\" y1=\"144.1\" x2=\"231.0\" y2=\"147.9\" stroke=\"#2563eb\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"168.0\" y1=\"51.0\" x2=\"176.0\" y2=\"59.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"168.0\" y1=\"59.0\" x2=\"176.0\" y2=\"51.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><text x=\"170.6\" y=\"46.1\" font-size=\"15\" text-anchor=\"middle\" fill=\"#334155\" font-weight=\"600\">K</text><line x1=\"38.0\" y1=\"233.0\" x2=\"46.0\" y2=\"241.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"38.0\" y1=\"241.0\" x2=\"46.0\" y2=\"233.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><text x=\"29.7\" y=\"248.7\" font-size=\"15\" text-anchor=\"middle\" fill=\"#334155\" font-weight=\"600\">L</text><line x1=\"298.0\" y1=\"233.0\" x2=\"306.0\" y2=\"241.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"298.0\" y1=\"241.0\" x2=\"306.0\" y2=\"233.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><text x=\"313.8\" y=\"249.5\" font-size=\"15\" text-anchor=\"middle\" fill=\"#334155\" font-weight=\"600\">M</text><line x1=\"210.2\" y1=\"110.0\" x2=\"218.2\" y2=\"118.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"210.2\" y1=\"118.0\" x2=\"218.2\" y2=\"110.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><text x=\"228.2\" y=\"119.0\" font-size=\"15\" text-anchor=\"middle\" fill=\"#334155\" font-weight=\"600\">J</text></svg>",
+      "answer": {
+        "value": false
+      },
+      "solution_steps": [
+        "Le sommet principal du triangle isocèle KLM est K : c'est le sommet commun aux deux côtés égaux, [KL] et [KM].",
+        "La propriété « la hauteur est aussi la médiane » ne vaut que pour la hauteur issue du sommet principal, K.",
+        "[LJ] part de L, qui n'est pas le sommet principal : rien ne permet de dire que J est le milieu de [KM].",
+        "Jade a **tort** : elle applique la propriété à partir d'un autre sommet que le sommet principal. La hauteur issue de K, elle, couperait [LM] en son milieu."
+      ],
+      "hint": "Quel est le sommet principal de ce triangle isocèle ? La hauteur [LJ] part-elle de ce sommet ?",
+      "estimated_duration_s": 60,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 4, classe de 5e, Espace et géométrie, Triangles : « Utiliser ces propriétés dans le cas de triangles particuliers. »"
+    },
+    {
+      "id": "EX-G054-M-01",
+      "skill_id": "G054",
+      "level": "maitrise",
+      "type": "numerique",
+      "statement": "Le triangle EFG est équilatéral, de côté 7,4 cm, et O est le centre de son cercle circonscrit. La droite (EO) coupe [FG] en I. Combien mesure FI ?",
+      "image": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 344 292\" width=\"344\" height=\"292\" font-family=\"system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif\" role=\"img\"><title>Triangle EFG dans un cercle de centre O, et un segment [EI]</title><rect width=\"100%\" height=\"100%\" fill=\"#ffffff\"/><circle cx=\"172.0\" cy=\"146.0\" r=\"90.1\" fill=\"none\" stroke=\"#334155\" stroke-width=\"2\"/><polygon points=\"172.0,55.9 94.0,191.0 250.0,191.0\" fill=\"none\" fill-opacity=\"0.6\" stroke=\"#334155\" stroke-width=\"2\" stroke-linejoin=\"round\"/><line x1=\"172.0\" y1=\"55.9\" x2=\"172.0\" y2=\"191.0\" stroke=\"#334155\" stroke-width=\"2.0\" stroke-linecap=\"round\"/><line x1=\"168.0\" y1=\"51.9\" x2=\"176.0\" y2=\"59.9\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"168.0\" y1=\"59.9\" x2=\"176.0\" y2=\"51.9\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><text x=\"172.0\" y=\"46.9\" font-size=\"15\" text-anchor=\"middle\" fill=\"#334155\" font-weight=\"600\">E</text><line x1=\"90.0\" y1=\"187.0\" x2=\"98.0\" y2=\"195.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"90.0\" y1=\"195.0\" x2=\"98.0\" y2=\"187.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><text x=\"81.3\" y=\"201.9\" font-size=\"15\" text-anchor=\"middle\" fill=\"#334155\" font-weight=\"600\">F</text><line x1=\"246.0\" y1=\"187.0\" x2=\"254.0\" y2=\"195.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"246.0\" y1=\"195.0\" x2=\"254.0\" y2=\"187.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><text x=\"262.7\" y=\"201.9\" font-size=\"15\" text-anchor=\"middle\" fill=\"#334155\" font-weight=\"600\">G</text><line x1=\"168.0\" y1=\"142.0\" x2=\"176.0\" y2=\"150.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"168.0\" y1=\"150.0\" x2=\"176.0\" y2=\"142.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><text x=\"186.0\" y=\"151.0\" font-size=\"15\" text-anchor=\"middle\" fill=\"#334155\" font-weight=\"600\">O</text><line x1=\"168.0\" y1=\"187.0\" x2=\"176.0\" y2=\"195.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"168.0\" y1=\"195.0\" x2=\"176.0\" y2=\"187.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><text x=\"181.8\" y=\"186.2\" font-size=\"15\" text-anchor=\"middle\" fill=\"#334155\" font-weight=\"600\">I</text></svg>",
+      "answer": {
+        "value": 3.7,
+        "unit": "cm",
+        "accepted": [
+          "3,7 cm",
+          "3,7 centimètres",
+          "37 mm",
+          "FI = 3,7 cm",
+          "FI = 3,7"
+        ]
+      },
+      "solution_steps": [
+        "O est le centre du cercle circonscrit : OF = OG. O est donc sur la médiatrice de [FG].",
+        "Le triangle est équilatéral, donc EF = EG : E est lui aussi sur la médiatrice de [FG].",
+        "La droite (EO) passe par deux points de la médiatrice de [FG] : c'est cette médiatrice. Elle coupe [FG] en son milieu, donc I est le milieu de [FG].",
+        "FI = 7,4 ÷ 2 = 3,7. FI mesure **3,7 cm**.",
+        "Dans un triangle équilatéral, cette droite est à la fois la médiatrice de [FG], la hauteur, la médiane et la bissectrice issues de E."
+      ],
+      "hint": "Sur quelle droite se trouvent les points à égale distance de F et de G ? E et O y sont-ils ?",
+      "estimated_duration_s": 90,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 4, classe de 5e, Espace et géométrie, Triangles : « Connaitre les propriétés des médiatrices et du cercle circonscrit dans le cas de triangles particuliers. »"
+    },
+    {
+      "id": "EX-G054-M-02",
+      "skill_id": "G054",
+      "level": "maitrise",
+      "type": "qcm",
+      "statement": "Dans le triangle XYZ, la hauteur issue de X coupe [YZ] en son milieu H. Que peut-on en déduire ?",
+      "image": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 344 266\" width=\"344\" height=\"266\" font-family=\"system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif\" role=\"img\"><title>Triangle XYZ et un segment [XH] codé</title><rect width=\"100%\" height=\"100%\" fill=\"#ffffff\"/><polygon points=\"172.0,29.0 29.0,224.0 315.0,224.0\" fill=\"none\" fill-opacity=\"0.6\" stroke=\"#334155\" stroke-width=\"2\" stroke-linejoin=\"round\"/><line x1=\"172.0\" y1=\"29.0\" x2=\"172.0\" y2=\"224.0\" stroke=\"#334155\" stroke-width=\"2.0\" stroke-linecap=\"round\"/><path d=\"M172.0,213.0 L183.0,213.0 L183.0,224.0\" fill=\"none\" stroke=\"#334155\" stroke-width=\"1.6\"/><line x1=\"102.5\" y1=\"218.0\" x2=\"98.5\" y2=\"230.0\" stroke=\"#2563eb\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"245.5\" y1=\"218.0\" x2=\"241.5\" y2=\"230.0\" stroke=\"#2563eb\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"168.0\" y1=\"25.0\" x2=\"176.0\" y2=\"33.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"168.0\" y1=\"33.0\" x2=\"176.0\" y2=\"25.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><text x=\"172.0\" y=\"20.0\" font-size=\"15\" text-anchor=\"middle\" fill=\"#334155\" font-weight=\"600\">X</text><line x1=\"25.0\" y1=\"220.0\" x2=\"33.0\" y2=\"228.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"25.0\" y1=\"228.0\" x2=\"33.0\" y2=\"220.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><text x=\"15.7\" y=\"233.5\" font-size=\"15\" text-anchor=\"middle\" fill=\"#334155\" font-weight=\"600\">Y</text><line x1=\"311.0\" y1=\"220.0\" x2=\"319.0\" y2=\"228.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"311.0\" y1=\"228.0\" x2=\"319.0\" y2=\"220.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><text x=\"328.3\" y=\"233.5\" font-size=\"15\" text-anchor=\"middle\" fill=\"#334155\" font-weight=\"600\">Z</text><line x1=\"168.0\" y1=\"220.0\" x2=\"176.0\" y2=\"228.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"168.0\" y1=\"228.0\" x2=\"176.0\" y2=\"220.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><text x=\"162.2\" y=\"219.2\" font-size=\"15\" text-anchor=\"middle\" fill=\"#334155\" font-weight=\"600\">H</text></svg>",
+      "choices": [
+        {
+          "key": "a",
+          "text": "XYZ est rectangle en X.",
+          "misconception": "L'élève reporte l'angle droit codé en H sur le sommet X : l'angle droit est entre la hauteur et (YZ), pas entre les côtés [XY] et [XZ]."
+        },
+        {
+          "key": "b",
+          "text": "XYZ est isocèle en X.",
+          "misconception": null
+        },
+        {
+          "key": "c",
+          "text": "XYZ est équilatéral.",
+          "misconception": "L'élève va trop loin : on sait que XY = XZ, mais rien ne dit que YZ a la même longueur."
+        },
+        {
+          "key": "d",
+          "text": "Rien : dans tout triangle, la hauteur passe par le milieu du côté opposé.",
+          "misconception": "C'est l'erreur type : dans un triangle quelconque, le pied de la hauteur n'est pas au milieu du côté. Ici il l'est, et c'est une information."
+        }
+      ],
+      "answer": {
+        "value": "b"
+      },
+      "solution_steps": [
+        "La hauteur issue de X est perpendiculaire à (YZ), et elle coupe [YZ] en son milieu H.",
+        "Une droite perpendiculaire à un segment en son milieu, c'est la médiatrice de ce segment : (XH) est la médiatrice de [YZ].",
+        "X est sur la médiatrice de [YZ], donc X est à égale distance de Y et de Z : XY = XZ. **Le triangle XYZ est isocèle en X.**",
+        "C'est la propriété du triangle isocèle utilisée dans l'autre sens. Rien ne dit que les trois côtés sont égaux, ni que l'angle en X est droit."
+      ],
+      "hint": "Une droite perpendiculaire à [YZ] en son milieu : comment s'appelle-t-elle ? Que sais-tu de ses points ?",
+      "estimated_duration_s": 75,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 4, classe de 5e, Espace et géométrie, Triangles : « Utiliser ces propriétés dans le cas de triangles particuliers. »"
+    },
+    {
       "id": "EX-G059-D-01",
       "skill_id": "G059",
       "level": "decouverte",
@@ -42374,6 +42765,562 @@
       "estimated_duration_s": 120,
       "review_status": "relu_agent",
       "programme_ref": "Cycle 3, 6e : résoudre des problèmes impliquant des horaires et des durées ; convertir des durées."
+    },
+    {
+      "id": "EX-P028-D-01",
+      "skill_id": "P028",
+      "level": "decouverte",
+      "type": "numerique",
+      "statement": "Dans le triangle EFG, le segment en pointillés est la hauteur issue de G. Quelle est l'aire du triangle, en cm² ?",
+      "image": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 344 292\" width=\"344\" height=\"292\" font-family=\"system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif\" role=\"img\"><title>Triangle EFG, un segment en pointillés et trois longueurs écrites</title><rect width=\"100%\" height=\"100%\" fill=\"#ffffff\"/><polygon points=\"29.0,250.0 315.0,250.0 185.0,42.0\" fill=\"none\" fill-opacity=\"0.6\" stroke=\"#334155\" stroke-width=\"2\" stroke-linejoin=\"round\"/><line x1=\"185.0\" y1=\"42.0\" x2=\"185.0\" y2=\"250.0\" stroke=\"#334155\" stroke-width=\"2.0\" stroke-linecap=\"round\" stroke-dasharray=\"5 4\"/><path d=\"M185.0,239.0 L196.0,239.0 L196.0,250.0\" fill=\"none\" stroke=\"#334155\" stroke-width=\"1.6\"/><text x=\"172.0\" y=\"268.0\" font-size=\"13\" text-anchor=\"middle\" fill=\"#334155\">11 cm</text><text x=\"100.6\" y=\"146.2\" font-size=\"13\" text-anchor=\"end\" fill=\"#334155\">10 cm</text><text x=\"193.0\" y=\"151.0\" font-size=\"13\" text-anchor=\"start\" fill=\"#334155\">8 cm</text><line x1=\"25.0\" y1=\"246.0\" x2=\"33.0\" y2=\"254.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"25.0\" y1=\"254.0\" x2=\"33.0\" y2=\"246.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><text x=\"16.3\" y=\"261.0\" font-size=\"15\" text-anchor=\"middle\" fill=\"#334155\" font-weight=\"600\">E</text><line x1=\"311.0\" y1=\"246.0\" x2=\"319.0\" y2=\"254.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"311.0\" y1=\"254.0\" x2=\"319.0\" y2=\"246.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><text x=\"327.5\" y=\"261.3\" font-size=\"15\" text-anchor=\"middle\" fill=\"#334155\" font-weight=\"600\">F</text><line x1=\"181.0\" y1=\"38.0\" x2=\"189.0\" y2=\"46.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"181.0\" y1=\"46.0\" x2=\"189.0\" y2=\"38.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><text x=\"185.9\" y=\"33.0\" font-size=\"15\" text-anchor=\"middle\" fill=\"#334155\" font-weight=\"600\">G</text></svg>",
+      "answer": {
+        "value": 44,
+        "unit": "cm²",
+        "accepted": [
+          "44 cm²",
+          "44 cm2",
+          "44 centimètres carrés"
+        ]
+      },
+      "solution_steps": [
+        "Aire d'un triangle = base × hauteur ÷ 2 : le triangle est la moitié d'un rectangle qui a la même base et la même hauteur.",
+        "La hauteur issue de G mesure 8 cm ; elle est perpendiculaire au côté [EF], qui mesure 11 cm. On prend donc [EF] comme base.",
+        "Aire = 11 × 8 ÷ 2 = 88 ÷ 2 = 44. L'aire du triangle est **44 cm²**.",
+        "Le côté [EG], 10 cm, n'est pas une hauteur : il n'est pas perpendiculaire à [EF], et 11 × 10 ÷ 2 = 55 cm² est faux. Quant à 88 cm², c'est l'aire du rectangle : on a oublié de diviser par 2."
+      ],
+      "hint": "Quelle longueur est perpendiculaire à la base [EF] ?",
+      "estimated_duration_s": 60,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 4, classe de 5e, Espace et géométrie, Triangles : « Calculer l'aire d'un triangle. »"
+    },
+    {
+      "id": "EX-P028-D-02",
+      "skill_id": "P028",
+      "level": "decouverte",
+      "type": "qcm",
+      "statement": "Le triangle RST est rectangle en R. Quelle est son aire ?",
+      "image": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 344 266\" width=\"344\" height=\"266\" font-family=\"system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif\" role=\"img\"><title>Triangle RST codé et ses trois longueurs écrites</title><rect width=\"100%\" height=\"100%\" fill=\"#ffffff\"/><polygon points=\"68.0,237.0 255.2,237.0 68.0,96.6\" fill=\"none\" fill-opacity=\"0.6\" stroke=\"#334155\" stroke-width=\"2\" stroke-linejoin=\"round\"/><path d=\"M79.0,237.0 L79.0,226.0 L68.0,226.0\" fill=\"none\" stroke=\"#334155\" stroke-width=\"1.6\"/><text x=\"161.6\" y=\"255.0\" font-size=\"13\" text-anchor=\"middle\" fill=\"#334155\">12 cm</text><text x=\"60.0\" y=\"171.8\" font-size=\"13\" text-anchor=\"end\" fill=\"#334155\">9 cm</text><text x=\"166.4\" y=\"165.4\" font-size=\"13\" text-anchor=\"start\" fill=\"#334155\">15 cm</text><line x1=\"64.0\" y1=\"233.0\" x2=\"72.0\" y2=\"241.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"64.0\" y1=\"241.0\" x2=\"72.0\" y2=\"233.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><text x=\"56.8\" y=\"250.4\" font-size=\"15\" text-anchor=\"middle\" fill=\"#334155\" font-weight=\"600\">R</text><line x1=\"251.2\" y1=\"233.0\" x2=\"259.2\" y2=\"241.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"251.2\" y1=\"241.0\" x2=\"259.2\" y2=\"233.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><text x=\"268.3\" y=\"246.9\" font-size=\"15\" text-anchor=\"middle\" fill=\"#334155\" font-weight=\"600\">S</text><line x1=\"64.0\" y1=\"92.6\" x2=\"72.0\" y2=\"100.6\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"64.0\" y1=\"100.6\" x2=\"72.0\" y2=\"92.6\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><text x=\"60.2\" y=\"90.0\" font-size=\"15\" text-anchor=\"middle\" fill=\"#334155\" font-weight=\"600\">T</text></svg>",
+      "choices": [
+        {
+          "key": "a",
+          "text": "108 cm²",
+          "misconception": "L'élève calcule 12 × 9 = 108 et oublie de diviser par 2 : c'est l'aire du rectangle de côtés 12 cm et 9 cm, le double du triangle."
+        },
+        {
+          "key": "b",
+          "text": "90 cm²",
+          "misconception": "L'élève prend le plus long côté, [ST], comme hauteur : 12 × 15 ÷ 2 = 90. Mais [ST] n'est pas perpendiculaire à [RS]."
+        },
+        {
+          "key": "c",
+          "text": "67,5 cm²",
+          "misconception": "L'élève prend [RT] comme base et le plus long côté, [ST], comme hauteur : 9 × 15 ÷ 2 = 67,5. Mais [ST] n'est pas perpendiculaire à [RT]."
+        },
+        {
+          "key": "d",
+          "text": "54 cm²",
+          "misconception": null
+        }
+      ],
+      "answer": {
+        "value": "d"
+      },
+      "solution_steps": [
+        "Dans un triangle rectangle en R, les deux côtés de l'angle droit, [RS] et [RT], sont perpendiculaires : l'un est la hauteur relative à l'autre.",
+        "On prend [RS] comme base, 12 cm ; la hauteur relative à cette base est [RT], 9 cm.",
+        "Aire = 12 × 9 ÷ 2 = 108 ÷ 2 = 54. L'aire est **54 cm²**.",
+        "Le côté [ST], 15 cm, opposé à l'angle droit, ne sert pas : il n'est perpendiculaire à aucun autre côté."
+      ],
+      "hint": "Quels sont les deux côtés perpendiculaires ?",
+      "estimated_duration_s": 45,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 4, classe de 5e, Espace et géométrie, Triangles : « Calculer l'aire d'un triangle. »"
+    },
+    {
+      "id": "EX-P028-E-01",
+      "skill_id": "P028",
+      "level": "entrainement",
+      "type": "numerique",
+      "statement": "Dans le triangle KLM, [KH] est la hauteur issue de K. Quelle est l'aire du triangle KLM, en cm² ?",
+      "image": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 344 266\" width=\"344\" height=\"266\" font-family=\"system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif\" role=\"img\"><title>Triangle KLM, côté prolongé, segment [KH] et trois longueurs écrites</title><rect width=\"100%\" height=\"100%\" fill=\"#ffffff\"/><polygon points=\"68.0,55.0 146.0,224.0 302.0,224.0\" fill=\"none\" fill-opacity=\"0.6\" stroke=\"#334155\" stroke-width=\"2\" stroke-linejoin=\"round\"/><line x1=\"68.0\" y1=\"224.0\" x2=\"146.0\" y2=\"224.0\" stroke=\"#334155\" stroke-width=\"2.0\" stroke-linecap=\"round\" stroke-dasharray=\"5 4\"/><line x1=\"68.0\" y1=\"55.0\" x2=\"68.0\" y2=\"224.0\" stroke=\"#334155\" stroke-width=\"2.0\" stroke-linecap=\"round\" stroke-dasharray=\"5 4\"/><path d=\"M68.0,213.0 L79.0,213.0 L79.0,224.0\" fill=\"none\" stroke=\"#334155\" stroke-width=\"1.6\"/><text x=\"224.0\" y=\"242.0\" font-size=\"13\" text-anchor=\"middle\" fill=\"#334155\">6 cm</text><text x=\"107.0\" y=\"242.0\" font-size=\"13\" text-anchor=\"middle\" fill=\"#334155\">3 cm</text><text x=\"60.0\" y=\"144.5\" font-size=\"13\" text-anchor=\"end\" fill=\"#334155\">6,5 cm</text><line x1=\"64.0\" y1=\"51.0\" x2=\"72.0\" y2=\"59.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"64.0\" y1=\"59.0\" x2=\"72.0\" y2=\"51.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><text x=\"60.7\" y=\"48.1\" font-size=\"15\" text-anchor=\"middle\" fill=\"#334155\" font-weight=\"600\">K</text><line x1=\"142.0\" y1=\"220.0\" x2=\"150.0\" y2=\"228.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"142.0\" y1=\"228.0\" x2=\"150.0\" y2=\"220.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><text x=\"146.0\" y=\"243.0\" font-size=\"15\" text-anchor=\"middle\" fill=\"#334155\" font-weight=\"600\">L</text><line x1=\"298.0\" y1=\"220.0\" x2=\"306.0\" y2=\"228.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"298.0\" y1=\"228.0\" x2=\"306.0\" y2=\"220.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><text x=\"315.5\" y=\"232.7\" font-size=\"15\" text-anchor=\"middle\" fill=\"#334155\" font-weight=\"600\">M</text><line x1=\"64.0\" y1=\"220.0\" x2=\"72.0\" y2=\"228.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"64.0\" y1=\"228.0\" x2=\"72.0\" y2=\"220.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><text x=\"55.7\" y=\"235.7\" font-size=\"15\" text-anchor=\"middle\" fill=\"#334155\" font-weight=\"600\">H</text></svg>",
+      "answer": {
+        "value": 19.5,
+        "unit": "cm²",
+        "accepted": [
+          "19,5 cm²",
+          "19,5 cm2",
+          "19,5 centimètres carrés"
+        ]
+      },
+      "solution_steps": [
+        "La hauteur [KH] est perpendiculaire à la droite (LM) : son pied H est sur le prolongement du côté [LM] (les pointillés).",
+        "La base associée à cette hauteur est le côté [LM], qui mesure 6 cm. La longueur HL = 3 cm ne fait pas partie de la base.",
+        "Aire = LM × KH ÷ 2 = 6 × 6,5 ÷ 2 = 39 ÷ 2 = 19,5. L'aire est **19,5 cm²**.",
+        "Prendre HM = 9 cm comme base donne 29,25 cm² : c'est l'aire du grand triangle KHM, pas celle de KLM. Et 39 cm², c'est oublier de diviser par 2."
+      ],
+      "hint": "La base est un côté du triangle KLM. Lequel est perpendiculaire à [KH] ?",
+      "estimated_duration_s": 75,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 4, classe de 5e, Espace et géométrie, Triangles : « Calculer l'aire d'un triangle. »"
+    },
+    {
+      "id": "EX-P028-E-02",
+      "skill_id": "P028",
+      "level": "entrainement",
+      "type": "vrai_faux",
+      "statement": "Les droites (EF) et (GK) sont parallèles. Tom dit : « Le triangle EFK a une aire plus grande que le triangle EFG. » A-t-il raison ?",
+      "image": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 344 266\" width=\"344\" height=\"266\" font-family=\"system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif\" role=\"img\"><title>Deux triangles EFG et EFK de côté commun [EF], et une droite en pointillés</title><rect width=\"100%\" height=\"100%\" fill=\"#ffffff\"/><line x1=\"4.0\" y1=\"94.0\" x2=\"340.0\" y2=\"94.0\" stroke=\"#334155\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-dasharray=\"5 4\"/><polygon points=\"68.0,224.0 198.0,224.0 133.0,94.0\" fill=\"none\" fill-opacity=\"0.6\" stroke=\"#334155\" stroke-width=\"2\" stroke-linejoin=\"round\"/><polygon points=\"68.0,224.0 198.0,224.0 302.0,94.0\" fill=\"none\" fill-opacity=\"0.6\" stroke=\"#2563eb\" stroke-width=\"2\" stroke-linejoin=\"round\"/><line x1=\"64.0\" y1=\"220.0\" x2=\"72.0\" y2=\"228.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"64.0\" y1=\"228.0\" x2=\"72.0\" y2=\"220.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><text x=\"56.0\" y=\"236.3\" font-size=\"15\" text-anchor=\"middle\" fill=\"#334155\" font-weight=\"600\">E</text><line x1=\"194.0\" y1=\"220.0\" x2=\"202.0\" y2=\"228.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"194.0\" y1=\"228.0\" x2=\"202.0\" y2=\"220.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><text x=\"202.6\" y=\"242.2\" font-size=\"15\" text-anchor=\"middle\" fill=\"#334155\" font-weight=\"600\">F</text><line x1=\"129.0\" y1=\"90.0\" x2=\"137.0\" y2=\"98.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"129.0\" y1=\"98.0\" x2=\"137.0\" y2=\"90.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><text x=\"133.0\" y=\"85.0\" font-size=\"15\" text-anchor=\"middle\" fill=\"#334155\" font-weight=\"600\">G</text><line x1=\"298.0\" y1=\"90.0\" x2=\"306.0\" y2=\"98.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"298.0\" y1=\"98.0\" x2=\"306.0\" y2=\"90.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><text x=\"302.0\" y=\"85.0\" font-size=\"15\" text-anchor=\"middle\" fill=\"#334155\" font-weight=\"600\">K</text></svg>",
+      "answer": {
+        "value": false
+      },
+      "solution_steps": [
+        "Les deux triangles ont le même côté [EF]. On le prend comme base pour les deux.",
+        "La hauteur relative à [EF] est la distance entre le sommet opposé et la droite (EF). G et K sont sur une même parallèle à (EF) : ils sont à la même distance de (EF).",
+        "Même base et même hauteur : les deux triangles ont la même aire, base × hauteur ÷ 2. Tom a **tort**.",
+        "Le triangle EFK paraît plus grand parce qu'il est plus étiré, mais l'aire d'un triangle ne dépend que de sa base et de la hauteur relative à cette base."
+      ],
+      "hint": "Compare les bases, puis les hauteurs relatives à [EF] des deux triangles.",
+      "estimated_duration_s": 60,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 4, classe de 5e, Espace et géométrie, Triangles : « Calculer l'aire d'un triangle. »"
+    },
+    {
+      "id": "EX-P028-M-01",
+      "skill_id": "P028",
+      "level": "maitrise",
+      "type": "numerique",
+      "statement": "Le triangle RST a une aire de 22,5 cm². Combien mesure sa hauteur [TH], relative au côté [RS] ? La figure n'est pas en vraie grandeur.",
+      "image": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 344 314\" width=\"344\" height=\"314\" font-family=\"system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif\" role=\"img\"><title>Triangle RST, côté prolongé, segment [TH] et des longueurs écrites</title><rect width=\"100%\" height=\"100%\" fill=\"#ffffff\"/><polygon points=\"42.0,239.6 172.0,239.6 291.6,109.6\" fill=\"none\" fill-opacity=\"0.6\" stroke=\"#334155\" stroke-width=\"2\" stroke-linejoin=\"round\"/><line x1=\"172.0\" y1=\"239.6\" x2=\"291.6\" y2=\"239.6\" stroke=\"#334155\" stroke-width=\"2.0\" stroke-linecap=\"round\" stroke-dasharray=\"5 4\"/><line x1=\"291.6\" y1=\"109.6\" x2=\"291.6\" y2=\"239.6\" stroke=\"#334155\" stroke-width=\"2.0\" stroke-linecap=\"round\" stroke-dasharray=\"5 4\"/><path d=\"M291.6,228.6 L280.6,228.6 L280.6,239.6\" fill=\"none\" stroke=\"#334155\" stroke-width=\"1.6\"/><text x=\"107.0\" y=\"257.6\" font-size=\"13\" text-anchor=\"middle\" fill=\"#334155\">5 cm</text><text x=\"160.3\" y=\"168.1\" font-size=\"13\" text-anchor=\"middle\" fill=\"#334155\">15 cm</text><text x=\"299.6\" y=\"179.6\" font-size=\"13\" text-anchor=\"start\" fill=\"#334155\">?</text><line x1=\"38.0\" y1=\"235.6\" x2=\"46.0\" y2=\"243.6\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"38.0\" y1=\"243.6\" x2=\"46.0\" y2=\"235.6\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><text x=\"28.3\" y=\"247.4\" font-size=\"15\" text-anchor=\"middle\" fill=\"#334155\" font-weight=\"600\">R</text><line x1=\"168.0\" y1=\"235.6\" x2=\"176.0\" y2=\"243.6\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"168.0\" y1=\"243.6\" x2=\"176.0\" y2=\"235.6\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><text x=\"163.0\" y=\"255.3\" font-size=\"15\" text-anchor=\"middle\" fill=\"#334155\" font-weight=\"600\">S</text><line x1=\"287.6\" y1=\"105.6\" x2=\"295.6\" y2=\"113.6\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"287.6\" y1=\"113.6\" x2=\"295.6\" y2=\"105.6\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><text x=\"301.2\" y=\"104.4\" font-size=\"15\" text-anchor=\"middle\" fill=\"#334155\" font-weight=\"600\">T</text><line x1=\"287.6\" y1=\"235.6\" x2=\"295.6\" y2=\"243.6\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"287.6\" y1=\"243.6\" x2=\"295.6\" y2=\"235.6\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><text x=\"304.8\" y=\"249.2\" font-size=\"15\" text-anchor=\"middle\" fill=\"#334155\" font-weight=\"600\">H</text><text x=\"172.0\" y=\"304.0\" font-size=\"13\" text-anchor=\"middle\" fill=\"#475569\">Figure pas en vraie grandeur</text></svg>",
+      "answer": {
+        "value": 9,
+        "unit": "cm",
+        "accepted": [
+          "9 cm",
+          "9 centimètres",
+          "90 mm",
+          "TH = 9 cm",
+          "TH = 9"
+        ]
+      },
+      "solution_steps": [
+        "Aire = base × hauteur ÷ 2, avec la base [RS] = 5 cm et la hauteur [TH] relative à ce côté.",
+        "Donc 5 × TH ÷ 2 = 22,5. Avant la division par 2, le produit valait 22,5 × 2 = 45 : 5 × TH = 45.",
+        "TH = 45 ÷ 5 = 9. La hauteur mesure **9 cm**. Vérification : 5 × 9 ÷ 2 = 45 ÷ 2 = 22,5.",
+        "Le côté [RT], 15 cm, est oblique : ce n'est pas la hauteur. Et 22,5 ÷ 5 = 4,5 cm oublie que l'aire est la moitié de base × hauteur."
+      ],
+      "hint": "Écris la formule avec les nombres connus, puis remonte le calcul.",
+      "estimated_duration_s": 90,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 4, classe de 5e, Espace et géométrie, Triangles : « Calculer l'aire d'un triangle. »"
+    },
+    {
+      "id": "EX-P028-M-02",
+      "skill_id": "P028",
+      "level": "maitrise",
+      "type": "numerique",
+      "statement": "Le triangle EFG a une aire de 37 cm², et [EI] est sa médiane issue de E. Quelle est l'aire du triangle EIG, en cm² ?",
+      "image": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 344 266\" width=\"344\" height=\"266\" font-family=\"system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif\" role=\"img\"><title>Triangle EFG et un segment [EI] codé</title><rect width=\"100%\" height=\"100%\" fill=\"#ffffff\"/><polygon points=\"120.0,42.0 42.0,237.0 302.0,237.0\" fill=\"none\" fill-opacity=\"0.6\" stroke=\"#334155\" stroke-width=\"2\" stroke-linejoin=\"round\"/><line x1=\"120.0\" y1=\"42.0\" x2=\"172.0\" y2=\"237.0\" stroke=\"#334155\" stroke-width=\"2.0\" stroke-linecap=\"round\"/><line x1=\"109.0\" y1=\"231.0\" x2=\"105.0\" y2=\"243.0\" stroke=\"#2563eb\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"239.0\" y1=\"231.0\" x2=\"235.0\" y2=\"243.0\" stroke=\"#2563eb\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"116.0\" y1=\"38.0\" x2=\"124.0\" y2=\"46.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"116.0\" y1=\"46.0\" x2=\"124.0\" y2=\"38.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><text x=\"116.4\" y=\"33.5\" font-size=\"15\" text-anchor=\"middle\" fill=\"#334155\" font-weight=\"600\">E</text><line x1=\"38.0\" y1=\"233.0\" x2=\"46.0\" y2=\"241.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"38.0\" y1=\"241.0\" x2=\"46.0\" y2=\"233.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><text x=\"29.1\" y=\"247.4\" font-size=\"15\" text-anchor=\"middle\" fill=\"#334155\" font-weight=\"600\">F</text><line x1=\"298.0\" y1=\"233.0\" x2=\"306.0\" y2=\"241.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"298.0\" y1=\"241.0\" x2=\"306.0\" y2=\"233.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><text x=\"315.3\" y=\"246.5\" font-size=\"15\" text-anchor=\"middle\" fill=\"#334155\" font-weight=\"600\">G</text><line x1=\"168.0\" y1=\"233.0\" x2=\"176.0\" y2=\"241.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"168.0\" y1=\"241.0\" x2=\"176.0\" y2=\"233.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><text x=\"175.6\" y=\"255.5\" font-size=\"15\" text-anchor=\"middle\" fill=\"#334155\" font-weight=\"600\">I</text></svg>",
+      "answer": {
+        "value": 18.5,
+        "unit": "cm²",
+        "accepted": [
+          "18,5 cm²",
+          "18,5 cm2",
+          "18,5 centimètres carrés"
+        ]
+      },
+      "solution_steps": [
+        "[EI] est la médiane issue de E : I est le milieu de [FG], donc FI = IG.",
+        "Les triangles EFI et EIG ont des bases de même longueur, [FI] et [IG], sur la même droite (FG).",
+        "Ils ont aussi la même hauteur : la perpendiculaire à (FG) passant par E, commune aux deux triangles.",
+        "Même base et même hauteur : même aire. La médiane partage le triangle EFG en deux triangles de même aire.",
+        "Aire de EIG = 37 ÷ 2 = 18,5. L'aire est **18,5 cm²**."
+      ],
+      "hint": "Compare les bases [FI] et [IG], puis les hauteurs issues de E des triangles EFI et EIG.",
+      "estimated_duration_s": 90,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 4, classe de 5e, Espace et géométrie, Triangles : « Démontrer qu'une médiane partage un triangle en deux triangles d'aires égales. »"
+    },
+    {
+      "id": "EX-P029-D-01",
+      "skill_id": "P029",
+      "level": "decouverte",
+      "type": "numerique",
+      "statement": "EFGH est un parallélogramme. Quelle est son aire, en cm² ?",
+      "image": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 344 240\" width=\"344\" height=\"240\" font-family=\"system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif\" role=\"img\"><title>Parallélogramme EFGH, un segment en pointillés et trois longueurs écrites</title><rect width=\"100%\" height=\"100%\" fill=\"#ffffff\"/><polygon points=\"42.0,198.0 237.0,198.0 315.0,94.0 120.0,94.0\" fill=\"none\" fill-opacity=\"0.6\" stroke=\"#334155\" stroke-width=\"2\" stroke-linejoin=\"round\"/><line x1=\"185.0\" y1=\"94.0\" x2=\"185.0\" y2=\"198.0\" stroke=\"#334155\" stroke-width=\"2.0\" stroke-linecap=\"round\" stroke-dasharray=\"5 4\"/><path d=\"M185.0,187.0 L196.0,187.0 L196.0,198.0\" fill=\"none\" stroke=\"#334155\" stroke-width=\"1.6\"/><text x=\"139.5\" y=\"216.0\" font-size=\"13\" text-anchor=\"middle\" fill=\"#334155\">7,5 cm</text><text x=\"74.6\" y=\"146.2\" font-size=\"13\" text-anchor=\"end\" fill=\"#334155\">5 cm</text><text x=\"193.0\" y=\"151.0\" font-size=\"13\" text-anchor=\"start\" fill=\"#334155\">4 cm</text><line x1=\"38.0\" y1=\"194.0\" x2=\"46.0\" y2=\"202.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"38.0\" y1=\"202.0\" x2=\"46.0\" y2=\"194.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><text x=\"28.9\" y=\"208.0\" font-size=\"15\" text-anchor=\"middle\" fill=\"#334155\" font-weight=\"600\">E</text><line x1=\"233.0\" y1=\"194.0\" x2=\"241.0\" y2=\"202.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"233.0\" y1=\"202.0\" x2=\"241.0\" y2=\"194.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><text x=\"247.5\" y=\"212.3\" font-size=\"15\" text-anchor=\"middle\" fill=\"#334155\" font-weight=\"600\">F</text><line x1=\"311.0\" y1=\"90.0\" x2=\"319.0\" y2=\"98.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"311.0\" y1=\"98.0\" x2=\"319.0\" y2=\"90.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><text x=\"328.1\" y=\"94.0\" font-size=\"15\" text-anchor=\"middle\" fill=\"#334155\" font-weight=\"600\">G</text><line x1=\"116.0\" y1=\"90.0\" x2=\"124.0\" y2=\"98.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"116.0\" y1=\"98.0\" x2=\"124.0\" y2=\"90.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><text x=\"109.5\" y=\"89.7\" font-size=\"15\" text-anchor=\"middle\" fill=\"#334155\" font-weight=\"600\">H</text></svg>",
+      "answer": {
+        "value": 30,
+        "unit": "cm²",
+        "accepted": [
+          "30 cm²",
+          "30 cm2",
+          "30 centimètres carrés"
+        ]
+      },
+      "solution_steps": [
+        "Aire d'un parallélogramme = base × hauteur, où la hauteur est perpendiculaire à la base.",
+        "On découpe la partie gauche, entre [EH] et la hauteur en pointillés, et on la recolle à droite, contre [FG] : on obtient un rectangle de 7,5 cm sur 4 cm, de même aire.",
+        "La base [EF] mesure 7,5 cm et la hauteur relative à [EF] (en pointillés) mesure 4 cm : aire = 7,5 × 4 = 30. L'aire est **30 cm²**.",
+        "EH = 5 cm est un côté oblique, pas une hauteur : 7,5 × 5 = 37,5 cm² est faux. Et pas de division par 2 : c'est le triangle qui est la moitié d'un rectangle, pas le parallélogramme."
+      ],
+      "hint": "Quelle longueur est perpendiculaire à la base [EF] ?",
+      "estimated_duration_s": 60,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 4, classe de 5e, Espace et géométrie, Parallélogrammes : « Savoir calculer l'aire d'un parallélogramme et de figures complexes. »"
+    },
+    {
+      "id": "EX-P029-D-02",
+      "skill_id": "P029",
+      "level": "decouverte",
+      "type": "qcm",
+      "statement": "Un panneau de bois a la forme dessinée : un rectangle surmonté d'un triangle. Quelle est son aire ?",
+      "image": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 344 292\" width=\"344\" height=\"292\" font-family=\"system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif\" role=\"img\"><title>Figure formée d'un rectangle et d'un triangle, avec des longueurs écrites</title><rect width=\"100%\" height=\"100%\" fill=\"#ffffff\"/><polygon points=\"88.8,260.4 255.2,260.4 255.2,135.6 172.0,73.2 88.8,135.6\" fill=\"none\" fill-opacity=\"0.6\" stroke=\"#334155\" stroke-width=\"2\" stroke-linejoin=\"round\"/><line x1=\"88.8\" y1=\"135.6\" x2=\"255.2\" y2=\"135.6\" stroke=\"#334155\" stroke-width=\"2.0\" stroke-linecap=\"round\" stroke-dasharray=\"5 4\"/><line x1=\"172.0\" y1=\"73.2\" x2=\"172.0\" y2=\"135.6\" stroke=\"#334155\" stroke-width=\"2.0\" stroke-linecap=\"round\" stroke-dasharray=\"5 4\"/><path d=\"M172.0,124.6 L161.0,124.6 L161.0,135.6\" fill=\"none\" stroke=\"#334155\" stroke-width=\"1.6\"/><text x=\"172.0\" y=\"278.4\" font-size=\"13\" text-anchor=\"middle\" fill=\"#334155\">8 dm</text><text x=\"263.2\" y=\"203.0\" font-size=\"13\" text-anchor=\"start\" fill=\"#334155\">6 dm</text><text x=\"125.6\" y=\"103.0\" font-size=\"13\" text-anchor=\"end\" fill=\"#334155\">5 dm</text><text x=\"180.0\" y=\"122.4\" font-size=\"13\" text-anchor=\"start\" fill=\"#334155\">3 dm</text></svg>",
+      "choices": [
+        {
+          "key": "a",
+          "text": "60 dm²",
+          "misconception": null
+        },
+        {
+          "key": "b",
+          "text": "72 dm²",
+          "misconception": "L'élève oublie de diviser l'aire du triangle par 2 : 8 × 3 = 24 dm², c'est le rectangle qui entoure le triangle. 48 + 24 = 72."
+        },
+        {
+          "key": "c",
+          "text": "68 dm²",
+          "misconception": "L'élève prend le côté oblique du toit, 5 dm, comme hauteur : 8 × 5 ÷ 2 = 20 et 48 + 20 = 68. Ce côté n'est pas perpendiculaire à la base du triangle."
+        },
+        {
+          "key": "d",
+          "text": "36 dm²",
+          "misconception": "L'élève divise toute la figure par 2 : (48 + 24) ÷ 2 = 36. Seul le triangle est la moitié d'un rectangle."
+        }
+      ],
+      "answer": {
+        "value": "a"
+      },
+      "solution_steps": [
+        "On découpe la figure en deux : un rectangle de 8 dm sur 6 dm, et un triangle de base 8 dm et de hauteur 3 dm (en pointillés).",
+        "Aire du rectangle : 8 × 6 = 48 dm².",
+        "Aire du triangle : 8 × 3 ÷ 2 = 24 ÷ 2 = 12 dm².",
+        "Aire du panneau : 48 + 12 = 60. L'aire est **60 dm²**."
+      ],
+      "hint": "Découpe la figure en un rectangle et un triangle, et calcule chaque aire.",
+      "estimated_duration_s": 75,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 4, classe de 5e, Espace et géométrie, Parallélogrammes : « Savoir calculer l'aire d'un parallélogramme et de figures complexes. »"
+    },
+    {
+      "id": "EX-P029-E-01",
+      "skill_id": "P029",
+      "level": "entrainement",
+      "type": "numerique",
+      "statement": "Un jardin rectangulaire a, dans un coin, un bassin triangulaire (en pointillés). Quelle aire reste-t-il à gazonner, en m² ?",
+      "image": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 344 266\" width=\"344\" height=\"266\" font-family=\"system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif\" role=\"img\"><title>Rectangle dont un coin triangulaire est en pointillés, avec des longueurs écrites</title><rect width=\"100%\" height=\"100%\" fill=\"#ffffff\"/><polygon points=\"55.0,68.0 185.0,68.0 289.0,133.0 289.0,224.0 55.0,224.0\" fill=\"#bfdbfe\" fill-opacity=\"0.6\" stroke=\"#334155\" stroke-width=\"2\" stroke-linejoin=\"round\"/><polygon points=\"185.0,68.0 289.0,68.0 289.0,133.0\" fill=\"none\" fill-opacity=\"0.6\" stroke=\"#334155\" stroke-width=\"2\" stroke-linejoin=\"round\" stroke-dasharray=\"5 4\"/><text x=\"172.0\" y=\"242.0\" font-size=\"13\" text-anchor=\"middle\" fill=\"#334155\">9 m</text><text x=\"47.0\" y=\"151.0\" font-size=\"13\" text-anchor=\"end\" fill=\"#334155\">6 m</text><text x=\"237.0\" y=\"60.0\" font-size=\"13\" text-anchor=\"middle\" fill=\"#334155\">4 m</text><text x=\"297.0\" y=\"105.5\" font-size=\"13\" text-anchor=\"start\" fill=\"#334155\">2,5 m</text></svg>",
+      "answer": {
+        "value": 49,
+        "unit": "m²",
+        "accepted": [
+          "49 m²",
+          "49 m2",
+          "49 mètres carrés"
+        ]
+      },
+      "solution_steps": [
+        "L'aire à gazonner est l'aire du rectangle moins l'aire du bassin : on calcule par différence.",
+        "Rectangle : 9 × 6 = 54 m².",
+        "Le bassin est un triangle rectangle : ses côtés de l'angle droit, 4 m et 2,5 m, sont une base et la hauteur relative. Aire : 4 × 2,5 ÷ 2 = 10 ÷ 2 = 5 m².",
+        "Aire à gazonner : 54 − 5 = 49. Il reste **49 m²**.",
+        "Répondre 44 m², c'est oublier de diviser l'aire du bassin par 2 ; répondre 59 m², c'est ajouter le bassin au lieu de le retirer."
+      ],
+      "hint": "Calcule l'aire du rectangle entier, puis retire celle du bassin.",
+      "estimated_duration_s": 90,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 4, classe de 5e, Espace et géométrie, Parallélogrammes : « Savoir calculer l'aire d'un parallélogramme et de figures complexes. »"
+    },
+    {
+      "id": "EX-P029-E-02",
+      "skill_id": "P029",
+      "level": "entrainement",
+      "type": "vrai_faux",
+      "statement": "RSTU est un parallélogramme. Léa dit : « Son aire est 6 × 4 = 24 cm². » A-t-elle raison ?",
+      "image": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 344 240\" width=\"344\" height=\"240\" font-family=\"system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif\" role=\"img\"><title>Parallélogramme RSTU, un segment en pointillés et trois longueurs écrites</title><rect width=\"100%\" height=\"100%\" fill=\"#ffffff\"/><polygon points=\"42.0,198.0 198.0,198.0 260.4,114.8 104.4,114.8\" fill=\"none\" fill-opacity=\"0.6\" stroke=\"#334155\" stroke-width=\"2\" stroke-linejoin=\"round\"/><line x1=\"151.2\" y1=\"114.8\" x2=\"151.2\" y2=\"198.0\" stroke=\"#334155\" stroke-width=\"2.0\" stroke-linecap=\"round\" stroke-dasharray=\"5 4\"/><path d=\"M151.2,187.0 L162.2,187.0 L162.2,198.0\" fill=\"none\" stroke=\"#334155\" stroke-width=\"1.6\"/><text x=\"120.0\" y=\"216.0\" font-size=\"13\" text-anchor=\"middle\" fill=\"#334155\">6 cm</text><text x=\"235.6\" y=\"166.2\" font-size=\"13\" text-anchor=\"start\" fill=\"#334155\">4 cm</text><text x=\"143.2\" y=\"161.4\" font-size=\"13\" text-anchor=\"end\" fill=\"#334155\">3,2 cm</text><line x1=\"38.0\" y1=\"194.0\" x2=\"46.0\" y2=\"202.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"38.0\" y1=\"202.0\" x2=\"46.0\" y2=\"194.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><text x=\"28.9\" y=\"208.0\" font-size=\"15\" text-anchor=\"middle\" fill=\"#334155\" font-weight=\"600\">R</text><line x1=\"194.0\" y1=\"194.0\" x2=\"202.0\" y2=\"202.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"194.0\" y1=\"202.0\" x2=\"202.0\" y2=\"194.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><text x=\"208.5\" y=\"212.3\" font-size=\"15\" text-anchor=\"middle\" fill=\"#334155\" font-weight=\"600\">S</text><line x1=\"256.4\" y1=\"110.8\" x2=\"264.4\" y2=\"118.8\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"256.4\" y1=\"118.8\" x2=\"264.4\" y2=\"110.8\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><text x=\"273.5\" y=\"114.8\" font-size=\"15\" text-anchor=\"middle\" fill=\"#334155\" font-weight=\"600\">T</text><line x1=\"100.4\" y1=\"110.8\" x2=\"108.4\" y2=\"118.8\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"100.4\" y1=\"118.8\" x2=\"108.4\" y2=\"110.8\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><text x=\"93.9\" y=\"110.5\" font-size=\"15\" text-anchor=\"middle\" fill=\"#334155\" font-weight=\"600\">U</text></svg>",
+      "answer": {
+        "value": false
+      },
+      "solution_steps": [
+        "Aire d'un parallélogramme = base × hauteur, et la hauteur doit être perpendiculaire à la base.",
+        "Léa multiplie deux côtés consécutifs, 6 cm et 4 cm. Mais [ST] est oblique : ce n'est pas une hauteur. Ce calcul ne marche que pour un rectangle.",
+        "La hauteur relative à la base [RS] est le segment en pointillés, 3,2 cm : aire = 6 × 3,2 = 19,2 cm².",
+        "Léa a **tort** : l'aire est 19,2 cm², pas 24 cm²."
+      ],
+      "hint": "Le côté [ST] est-il perpendiculaire à la base [RS] ?",
+      "estimated_duration_s": 60,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 4, classe de 5e, Espace et géométrie, Parallélogrammes : « Savoir calculer l'aire d'un parallélogramme et de figures complexes. »"
+    },
+    {
+      "id": "EX-P029-M-01",
+      "skill_id": "P029",
+      "level": "maitrise",
+      "type": "numerique",
+      "statement": "EFGH est un parallélogramme. Combien mesure sa hauteur [GL], relative au côté [EH] ? La figure n'est pas en vraie grandeur.",
+      "image": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 344 288\" width=\"344\" height=\"288\" font-family=\"system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif\" role=\"img\"><title>Parallélogramme EFGH, deux segments en pointillés et des longueurs écrites</title><rect width=\"100%\" height=\"100%\" fill=\"#ffffff\"/><polygon points=\"29.0,237.0 195.4,237.0 295.2,162.1 128.8,162.1\" fill=\"none\" fill-opacity=\"0.6\" stroke=\"#334155\" stroke-width=\"2\" stroke-linejoin=\"round\"/><line x1=\"172.0\" y1=\"162.1\" x2=\"172.0\" y2=\"237.0\" stroke=\"#334155\" stroke-width=\"2.0\" stroke-linecap=\"round\" stroke-dasharray=\"5 4\"/><path d=\"M172.0,226.0 L183.0,226.0 L183.0,237.0\" fill=\"none\" stroke=\"#334155\" stroke-width=\"1.6\"/><line x1=\"128.8\" y1=\"162.1\" x2=\"235.3\" y2=\"82.2\" stroke=\"#334155\" stroke-width=\"2.0\" stroke-linecap=\"round\" stroke-dasharray=\"5 4\"/><line x1=\"295.2\" y1=\"162.1\" x2=\"235.3\" y2=\"82.2\" stroke=\"#334155\" stroke-width=\"2.0\" stroke-linecap=\"round\" stroke-dasharray=\"5 4\"/><path d=\"M241.9,91.0 L233.1,97.6 L226.5,88.8\" fill=\"none\" stroke=\"#334155\" stroke-width=\"1.6\"/><text x=\"112.2\" y=\"255.0\" font-size=\"13\" text-anchor=\"middle\" fill=\"#334155\">10 cm</text><text x=\"250.1\" y=\"211.0\" font-size=\"13\" text-anchor=\"start\" fill=\"#334155\">6 cm</text><text x=\"164.0\" y=\"204.6\" font-size=\"13\" text-anchor=\"end\" fill=\"#334155\">4,8 cm</text><text x=\"271.7\" y=\"122.4\" font-size=\"13\" text-anchor=\"start\" fill=\"#334155\">?</text><line x1=\"25.0\" y1=\"233.0\" x2=\"33.0\" y2=\"241.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"25.0\" y1=\"241.0\" x2=\"33.0\" y2=\"233.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><text x=\"16.1\" y=\"247.3\" font-size=\"15\" text-anchor=\"middle\" fill=\"#334155\" font-weight=\"600\">E</text><line x1=\"191.4\" y1=\"233.0\" x2=\"199.4\" y2=\"241.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"191.4\" y1=\"241.0\" x2=\"199.4\" y2=\"233.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><text x=\"199.5\" y=\"255.4\" font-size=\"15\" text-anchor=\"middle\" fill=\"#334155\" font-weight=\"600\">F</text><line x1=\"291.2\" y1=\"158.1\" x2=\"299.2\" y2=\"166.1\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"291.2\" y1=\"166.1\" x2=\"299.2\" y2=\"158.1\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><text x=\"309.1\" y=\"165.5\" font-size=\"15\" text-anchor=\"middle\" fill=\"#334155\" font-weight=\"600\">G</text><line x1=\"124.8\" y1=\"158.1\" x2=\"132.8\" y2=\"166.1\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"124.8\" y1=\"166.1\" x2=\"132.8\" y2=\"158.1\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><text x=\"115.4\" y=\"163.2\" font-size=\"15\" text-anchor=\"middle\" fill=\"#334155\" font-weight=\"600\">H</text><line x1=\"231.3\" y1=\"78.2\" x2=\"239.3\" y2=\"86.2\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"231.3\" y1=\"86.2\" x2=\"239.3\" y2=\"78.2\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><text x=\"221.3\" y=\"87.2\" font-size=\"15\" text-anchor=\"middle\" fill=\"#334155\" font-weight=\"600\">L</text><text x=\"172.0\" y=\"278.0\" font-size=\"13\" text-anchor=\"middle\" fill=\"#475569\">Figure pas en vraie grandeur</text></svg>",
+      "answer": {
+        "value": 8,
+        "unit": "cm",
+        "accepted": [
+          "8 cm",
+          "8 centimètres",
+          "80 mm",
+          "GL = 8 cm",
+          "GL = 8"
+        ]
+      },
+      "solution_steps": [
+        "Avec la base [EF] = 10 cm et la hauteur relative à [EF], 4,8 cm (en pointillés, entre [EF] et [HG]) : aire = 10 × 4,8 = 48 cm².",
+        "Dans un parallélogramme, les côtés opposés ont la même longueur : EH = FG = 6 cm.",
+        "Avec la base [EH], l'aire s'écrit aussi EH × GL = 6 × GL. Donc 6 × GL = 48.",
+        "GL = 48 ÷ 6 = 8. La hauteur [GL] mesure **8 cm**.",
+        "Le pied L est sur le prolongement de [EH] : une hauteur peut tomber hors du côté. Une même aire s'écrit avec n'importe quel côté comme base, à condition de prendre la hauteur qui lui correspond."
+      ],
+      "hint": "Calcule l'aire avec la base [EF], puis écris-la avec la base [EH].",
+      "estimated_duration_s": 120,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 4, classe de 5e, Espace et géométrie, Parallélogrammes : « Savoir calculer l'aire d'un parallélogramme et de figures complexes. »"
+    },
+    {
+      "id": "EX-P029-M-02",
+      "skill_id": "P029",
+      "level": "maitrise",
+      "type": "qcm",
+      "statement": "Un champ a la forme dessinée ci-dessous. Quelle est son aire ?",
+      "image": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 344 266\" width=\"344\" height=\"266\" font-family=\"system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif\" role=\"img\"><title>Quadrilatère avec deux angles droits et trois longueurs écrites</title><rect width=\"100%\" height=\"100%\" fill=\"#ffffff\"/><polygon points=\"42.0,224.0 291.6,224.0 187.6,99.2 42.0,99.2\" fill=\"none\" fill-opacity=\"0.6\" stroke=\"#334155\" stroke-width=\"2\" stroke-linejoin=\"round\"/><path d=\"M53.0,224.0 L53.0,213.0 L42.0,213.0\" fill=\"none\" stroke=\"#334155\" stroke-width=\"1.6\"/><path d=\"M42.0,110.2 L53.0,110.2 L53.0,99.2\" fill=\"none\" stroke=\"#334155\" stroke-width=\"1.6\"/><text x=\"166.8\" y=\"242.0\" font-size=\"13\" text-anchor=\"middle\" fill=\"#334155\">12 m</text><text x=\"114.8\" y=\"91.2\" font-size=\"13\" text-anchor=\"middle\" fill=\"#334155\">7 m</text><text x=\"34.0\" y=\"166.6\" font-size=\"13\" text-anchor=\"end\" fill=\"#334155\">6 m</text></svg>",
+      "choices": [
+        {
+          "key": "a",
+          "text": "72 m²",
+          "misconception": "L'élève calcule le rectangle de 12 m sur 6 m qui entoure le champ, ou oublie de diviser l'aire du triangle par 2 : 42 + 30 = 72."
+        },
+        {
+          "key": "b",
+          "text": "114 m²",
+          "misconception": "L'élève ajoute les deux côtés parallèles et multiplie par la hauteur : (12 + 7) × 6 = 114, sans diviser par 2. C'est le double de l'aire."
+        },
+        {
+          "key": "c",
+          "text": "57 m²",
+          "misconception": null
+        },
+        {
+          "key": "d",
+          "text": "42 m²",
+          "misconception": "L'élève ne compte que le rectangle de 7 m sur 6 m et oublie le triangle de droite."
+        }
+      ],
+      "answer": {
+        "value": "c"
+      },
+      "solution_steps": [
+        "On découpe le champ par une perpendiculaire au grand côté : un rectangle de 7 m sur 6 m à gauche, et un triangle rectangle à droite.",
+        "Rectangle : 7 × 6 = 42 m².",
+        "Triangle : sa base mesure 12 − 7 = 5 m et sa hauteur 6 m. Aire : 5 × 6 ÷ 2 = 30 ÷ 2 = 15 m².",
+        "Aire du champ : 42 + 15 = 57. L'aire est **57 m²**."
+      ],
+      "hint": "Découpe la figure en un rectangle et un triangle par une perpendiculaire au grand côté.",
+      "estimated_duration_s": 90,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 4, classe de 5e, Espace et géométrie, Parallélogrammes : « Savoir calculer l'aire d'un parallélogramme et de figures complexes. »"
+    },
+    {
+      "id": "EX-P030-D-01",
+      "skill_id": "P030",
+      "level": "decouverte",
+      "type": "numerique",
+      "statement": "Une banderole rectangulaire mesure 3 m sur 80 cm. Quelle est son aire, en m² ?",
+      "image": null,
+      "answer": {
+        "value": 2.4,
+        "unit": "m²",
+        "accepted": [
+          "2,4 m²",
+          "2,4 m2",
+          "2,4 mètres carrés",
+          "2,40 m²"
+        ]
+      },
+      "solution_steps": [
+        "Les deux longueurs ne sont pas dans la même unité : on convertit avant de multiplier. 1 m = 100 cm, donc 80 cm = 0,8 m.",
+        "Aire = 3 × 0,8 = 2,4. L'aire est **2,4 m²**.",
+        "Calculer 3 × 80 = 240 mélange des mètres et des centimètres : ce nombre n'est ni des m², ni des cm².",
+        "Autre chemin : 3 m = 300 cm, 300 × 80 = 24 000 cm², et 1 m² = 10 000 cm², donc 24 000 cm² = 2,4 m²."
+      ],
+      "hint": "Exprime d'abord les deux longueurs en mètres.",
+      "estimated_duration_s": 60,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 4, classe de 5e, Espace et géométrie, Parallélogrammes : « Résoudre des problèmes faisant appel à des conversions d'unités de longueur et d'unités d'aires. »"
+    },
+    {
+      "id": "EX-P030-D-02",
+      "skill_id": "P030",
+      "level": "decouverte",
+      "type": "qcm",
+      "statement": "Une forêt a une aire de 4 km². Quelle est son aire en m² ?",
+      "image": null,
+      "choices": [
+        {
+          "key": "a",
+          "text": "4 000 000 m²",
+          "misconception": null
+        },
+        {
+          "key": "b",
+          "text": "4 000 m²",
+          "misconception": "L'élève convertit l'aire comme une longueur : 1 km = 1 000 m, mais 1 km² = 1 000 000 m²."
+        },
+        {
+          "key": "c",
+          "text": "40 000 m²",
+          "misconception": "L'élève oublie une unité dans la chaîne km², hm², dam², m² : il multiplie deux fois par 100 au lieu de trois."
+        },
+        {
+          "key": "d",
+          "text": "400 m²",
+          "misconception": "L'élève ne multiplie qu'une fois par 100, comme si le m² suivait directement le km²."
+        }
+      ],
+      "answer": {
+        "value": "a"
+      },
+      "solution_steps": [
+        "Chaque unité d'aire vaut 100 fois la suivante : 1 km² = 100 hm², 1 hm² = 100 dam², 1 dam² = 100 m².",
+        "Donc 1 km² = 100 × 100 × 100 m² = 1 000 000 m².",
+        "4 km² = 4 × 1 000 000 m² = 4 000 000 m². La réponse est **4 000 000 m²**.",
+        "Vérification : un carré de 1 km de côté mesure 1 000 m sur 1 000 m, et 1 000 × 1 000 = 1 000 000."
+      ],
+      "hint": "Un carré de 1 km de côté : combien mesure son côté en mètres ? Et son aire en m² ?",
+      "estimated_duration_s": 45,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 4, classe de 5e, Espace et géométrie, Parallélogrammes : « Résoudre des problèmes faisant appel à des conversions d'unités de longueur et d'unités d'aires. »"
+    },
+    {
+      "id": "EX-P030-E-01",
+      "skill_id": "P030",
+      "level": "entrainement",
+      "type": "numerique",
+      "statement": "Une puce électronique carrée mesure 6 mm de côté. Quelle est son aire, en cm² ?",
+      "image": null,
+      "answer": {
+        "value": 0.36,
+        "unit": "cm²",
+        "accepted": [
+          "0,36 cm²",
+          "0,36 cm2",
+          "0,36 centimètre carré",
+          "0,36 centimètres carrés"
+        ]
+      },
+      "solution_steps": [
+        "Aire du carré en mm² : 6 × 6 = 36 mm².",
+        "Un carré de 1 cm de côté mesure 10 mm sur 10 mm : 1 cm² = 100 mm². Pour passer des mm² aux cm², on divise par 100.",
+        "36 ÷ 100 = 0,36. L'aire est **0,36 cm²**.",
+        "Diviser par 10, comme pour une longueur, donnerait 3,6 cm² : dix fois trop."
+      ],
+      "hint": "Calcule l'aire en mm², puis convertis : combien y a-t-il de mm² dans 1 cm² ?",
+      "estimated_duration_s": 60,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 4, classe de 5e, Espace et géométrie, Parallélogrammes : « Résoudre des problèmes faisant appel à des conversions d'unités de longueur et d'unités d'aires. »"
+    },
+    {
+      "id": "EX-P030-E-02",
+      "skill_id": "P030",
+      "level": "entrainement",
+      "type": "vrai_faux",
+      "statement": "Un terrain rectangulaire mesure 250 m sur 120 m. Sam dit : « Son aire est 0,03 km². » A-t-il raison ?",
+      "image": null,
+      "answer": {
+        "value": true
+      },
+      "solution_steps": [
+        "Aire en m² : 250 × 120 = 30 000 m².",
+        "1 km² = 1 000 000 m². Pour passer des m² aux km², on divise par 1 000 000, c'est-à-dire par 1 000 puis encore par 1 000 : 30 000 ÷ 1 000 = 30, puis 30 ÷ 1 000 = 0,03.",
+        "Le terrain mesure bien 0,03 km² : Sam a **raison**.",
+        "Diviser par 1 000 seulement, comme pour une longueur, donnerait 30 km² : la taille d'une ville entière, pour un terrain de quelques centaines de mètres de côté."
+      ],
+      "hint": "Calcule l'aire en m², puis convertis-la en km².",
+      "estimated_duration_s": 75,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 4, classe de 5e, Espace et géométrie, Parallélogrammes : « Résoudre des problèmes faisant appel à des conversions d'unités de longueur et d'unités d'aires. »"
+    },
+    {
+      "id": "EX-P030-M-01",
+      "skill_id": "P030",
+      "level": "maitrise",
+      "type": "numerique",
+      "statement": "Une salle de bain rectangulaire mesure 2,7 m sur 1,8 m. On la carrelle avec des carreaux carrés de 30 cm de côté, sans découpe. Combien faut-il de carreaux ?",
+      "image": null,
+      "answer": {
+        "value": 54,
+        "unit": null,
+        "accepted": [
+          "54 carreaux"
+        ]
+      },
+      "solution_steps": [
+        "On travaille dans une seule unité, le centimètre : 2,7 m = 270 cm et 1,8 m = 180 cm.",
+        "Aire de la salle : 270 × 180 = 48 600 cm². Aire d'un carreau : 30 × 30 = 900 cm².",
+        "Nombre de carreaux : 48 600 ÷ 900 = 54. Il faut **54 carreaux**.",
+        "Vérification par rangées : 270 ÷ 30 = 9 carreaux dans la longueur, 180 ÷ 30 = 6 rangées, et 9 × 6 = 54.",
+        "Diviser une aire par la longueur d'un côté de carreau n'a pas de sens : on compare une aire à une aire, dans la même unité."
+      ],
+      "hint": "Convertis tout en centimètres, puis compare l'aire de la salle à celle d'un carreau.",
+      "estimated_duration_s": 120,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 4, classe de 5e, Espace et géométrie, Parallélogrammes : « Résoudre des problèmes faisant appel à des conversions d'unités de longueur et d'unités d'aires. »"
+    },
+    {
+      "id": "EX-P030-M-02",
+      "skill_id": "P030",
+      "level": "maitrise",
+      "type": "qcm",
+      "statement": "Un champ rectangulaire a une aire de 1,2 km². Sa largeur mesure 400 m. Quelle est sa longueur ?",
+      "image": null,
+      "choices": [
+        {
+          "key": "a",
+          "text": "3 m",
+          "misconception": "L'élève convertit 1,2 km² en m² en multipliant par 1 000, comme une longueur : 1 200 m², puis 1 200 ÷ 400 = 3. Il fallait multiplier par 1 000 000."
+        },
+        {
+          "key": "b",
+          "text": "30 m",
+          "misconception": "L'élève oublie une unité de la chaîne : 1,2 km² = 12 000 m² (× 10 000 au lieu de × 1 000 000), puis 12 000 ÷ 400 = 30."
+        },
+        {
+          "key": "c",
+          "text": "0,3 km",
+          "misconception": "L'élève lit 400 m comme 4 kilomètres en divisant par 100 au lieu de 1 000 : 1,2 ÷ 4 = 0,3. Or 400 m = 0,4 km."
+        },
+        {
+          "key": "d",
+          "text": "3 km",
+          "misconception": null
+        }
+      ],
+      "answer": {
+        "value": "d"
+      },
+      "solution_steps": [
+        "Aire du rectangle = longueur × largeur, donc longueur = aire ÷ largeur, à condition que les unités aillent ensemble.",
+        "L'aire est en km² : on met la largeur en kilomètres. 400 m = 0,4 km.",
+        "Longueur = 1,2 ÷ 0,4 = 12 ÷ 4 = 3. Le champ mesure **3 km** de long.",
+        "Vérification en mètres : 1,2 km² = 1 200 000 m², et 1 200 000 ÷ 400 = 3 000 m, soit 3 km."
+      ],
+      "hint": "Exprime la largeur dans l'unité de longueur qui va avec les km².",
+      "estimated_duration_s": 90,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 4, classe de 5e, Espace et géométrie, Parallélogrammes : « Résoudre des problèmes faisant appel à des conversions d'unités de longueur et d'unités d'aires. »"
     }
   ]
 }

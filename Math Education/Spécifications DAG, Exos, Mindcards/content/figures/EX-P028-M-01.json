@@ -1,0 +1,19 @@
+{
+  "type": "geometrie",
+  "params": {
+    "colonnes": 12,
+    "lignes": 10,
+    "points": {"R": [1, "8.6"], "S": [6, "8.6"], "T": ["10.6", "3.6"], "H": ["10.6", "8.6"]},
+    "elements": [
+      {"polygone": ["R", "S", "T"]},
+      {"segment": ["S", "H"], "style": "pointille"},
+      {"segment": ["T", "H"], "style": "pointille"},
+      {"angle_droit": ["T", "H", "S"]},
+      {"longueur": ["R", "S"], "texte": "5 cm"},
+      {"longueur": ["R", "T"], "texte": "15 cm"},
+      {"longueur": ["T", "H"], "texte": "?"}
+    ],
+    "legende": "Figure pas en vraie grandeur"
+  },
+  "alt": "Triangle RST, côté prolongé, segment [TH] et des longueurs écrites"
+}

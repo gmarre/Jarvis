@@ -1,0 +1,74 @@
+{
+  "type": "geometrie",
+  "params": {
+    "colonnes": 12,
+    "lignes": 9,
+    "points": {
+      "P": [
+        1,
+        8
+      ],
+      "Q": [
+        11,
+        8
+      ],
+      "R": [
+        4,
+        1
+      ],
+      "O": [
+        4,
+        5
+      ],
+      "_K": [
+        6,
+        3
+      ],
+      "_J": [
+        "74/29",
+        "127/29"
+      ]
+    },
+    "etiquettes": {
+      "O": "droite"
+    },
+    "elements": [
+      {
+        "polygone": [
+          "P",
+          "Q",
+          "R"
+        ]
+      },
+      {
+        "segment": [
+          "P",
+          "_K"
+        ],
+        "style": "pointille"
+      },
+      {
+        "segment": [
+          "Q",
+          "_J"
+        ],
+        "style": "pointille"
+      },
+      {
+        "angle_droit": [
+          "P",
+          "_K",
+          "Q"
+        ]
+      },
+      {
+        "angle_droit": [
+          "Q",
+          "_J",
+          "P"
+        ]
+      }
+    ]
+  },
+  "alt": "Triangle PQR, deux segments en pointillés qui se coupent en O"
+}

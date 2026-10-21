@@ -1,0 +1,205 @@
+[
+  {
+    "id": "EX-G053-D-01",
+    "skill_id": "G053",
+    "level": "decouverte",
+    "type": "qcm",
+    "statement": "Dans le triangle EFG, trois droites sont tracées. Laquelle est la hauteur issue de G ?",
+    "image": "figures/EX-G053-D-01",
+    "choices": [
+      {
+        "key": "a",
+        "text": "La droite (d1)",
+        "misconception": "L'élève prend pour hauteur une droite issue de G qui arrive au milieu du côté : (d1) passe bien par G et par le milieu de [EF], mais elle n'est pas perpendiculaire à (EF). C'est la médiane issue de G."
+      },
+      {
+        "key": "b",
+        "text": "La droite (d2)",
+        "misconception": "L'élève voit l'angle droit et pense à la hauteur : (d2) est perpendiculaire à [EF] en son milieu, c'est la médiatrice de [EF]. Elle ne passe pas par G."
+      },
+      {
+        "key": "c",
+        "text": "La droite (d3)",
+        "misconception": null
+      }
+    ],
+    "answer": {
+      "value": "c"
+    },
+    "solution_steps": [
+      "La hauteur issue de G est la droite qui passe par G et qui est perpendiculaire au côté opposé, (EF). Il faut les deux conditions.",
+      "(d3) passe par G, et le codage montre un angle droit avec (EF) : **(d3) est la hauteur issue de G**.",
+      "(d1) passe par G et par le milieu de [EF] (les petits traits le codent), mais sans angle droit : c'est la médiane issue de G.",
+      "(d2) est perpendiculaire à [EF] en son milieu : c'est la médiatrice de [EF]. Elle ne passe pas par G, ce n'est donc pas une droite issue de G."
+    ],
+    "hint": "Une hauteur part d'un sommet. Quelles droites passent par G ? Laquelle forme un angle droit avec (EF) ?",
+    "estimated_duration_s": 60,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, classe de 5e, Espace et géométrie, Triangles : « Définir et tracer les hauteurs dans un triangle. »"
+  },
+  {
+    "id": "EX-G053-D-02",
+    "skill_id": "G053",
+    "level": "decouverte",
+    "type": "numerique",
+    "statement": "Dans le triangle RST, le segment [SK] est la médiane issue de S. Combien mesure RK ?",
+    "image": "figures/EX-G053-D-02",
+    "answer": {
+      "value": 5.5,
+      "unit": "cm",
+      "accepted": [
+        "5,5 cm",
+        "5,5 centimètres",
+        "55 mm",
+        "RK = 5,5 cm",
+        "RK = 5,5"
+      ]
+    },
+    "solution_steps": [
+      "La médiane issue de S est le segment qui joint S au milieu du côté opposé, [RT]. Donc K est le milieu de [RT].",
+      "Le milieu partage [RT] en deux segments de même longueur : RK = RT ÷ 2.",
+      "On lit RT = 11 cm : RK = 11 ÷ 2 = 5,5. RK mesure **5,5 cm**.",
+      "À ne pas confondre : la hauteur issue de S serait perpendiculaire à (RT) ; la médiane, elle, arrive au milieu de [RT], sans angle droit en général."
+    ],
+    "hint": "Où arrive une médiane sur le côté opposé au sommet ?",
+    "estimated_duration_s": 45,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, classe de 5e, Espace et géométrie, Triangles : « Définir et tracer les médianes dans un triangle. »"
+  },
+  {
+    "id": "EX-G053-E-01",
+    "skill_id": "G053",
+    "level": "entrainement",
+    "type": "qcm",
+    "statement": "Quel segment est la hauteur issue de K du triangle KLM ?",
+    "image": "figures/EX-G053-E-01",
+    "choices": [
+      {
+        "key": "a",
+        "text": "Le segment [KL]",
+        "misconception": "L'élève veut une hauteur à l'intérieur du triangle et prend le côté le plus proche : [KL] part bien de K, mais il ne forme pas d'angle droit avec (LM)."
+      },
+      {
+        "key": "b",
+        "text": "Le segment [KH]",
+        "misconception": null
+      },
+      {
+        "key": "c",
+        "text": "Le segment [KI]",
+        "misconception": "L'élève cherche le pied de la hauteur au milieu du côté : [KI] joint K au milieu I de [LM] (les petits traits le codent). C'est la médiane issue de K."
+      },
+      {
+        "key": "d",
+        "text": "Ce triangle n'a pas de hauteur issue de K",
+        "misconception": "L'élève croit que le pied d'une hauteur est toujours sur le côté : ici il est sur le prolongement de [LM], mais la hauteur existe bien."
+      }
+    ],
+    "answer": {
+      "value": "b"
+    },
+    "solution_steps": [
+      "La hauteur issue de K est la droite qui passe par K et qui est perpendiculaire à la droite (LM). On la représente souvent par le segment qui va de K à cette droite.",
+      "Ici, le pied de la perpendiculaire tombe en dehors du segment [LM] : on prolonge le côté (les pointillés), et H est sur ce prolongement.",
+      "Le codage montre un angle droit en H : [KH] part de K et il est perpendiculaire à (LM). **[KH] est la hauteur issue de K.**",
+      "[KI] arrive au milieu de [LM] : c'est la médiane issue de K. [KL] est un côté du triangle, sans angle droit avec (LM)."
+    ],
+    "hint": "Cherche le segment qui part de K et qui fait un angle droit avec la droite (LM), même en dehors du triangle.",
+    "estimated_duration_s": 75,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, classe de 5e, Espace et géométrie, Triangles : « Définir et tracer les hauteurs dans un triangle. »"
+  },
+  {
+    "id": "EX-G053-E-02",
+    "skill_id": "G053",
+    "level": "entrainement",
+    "type": "vrai_faux",
+    "statement": "Dans le triangle XYZ, [XH] est la hauteur issue de X. Inès dit : « [XH] n'est pas la médiane issue de X. » A-t-elle raison ?",
+    "image": "figures/EX-G053-E-02",
+    "answer": {
+      "value": true
+    },
+    "solution_steps": [
+      "La médiane issue de X joint X au milieu de [YZ]. On lit YH = 3,5 cm et HZ = 6,5 cm, donc YZ = 3,5 + 6,5 = 10 cm : le milieu de [YZ] est à 10 ÷ 2 = 5 cm de Y.",
+      "Le pied de la hauteur, H, est à 3,5 cm de Y, pas à 5 cm : H n'est pas le milieu de [YZ]. D'ailleurs YH et HZ ne sont pas égales.",
+      "Donc [XH] n'est pas la médiane issue de X : Inès a **raison**.",
+      "La hauteur et la médiane issues d'un même sommet sont en général deux segments différents : l'une fait un angle droit avec le côté opposé, l'autre arrive en son milieu."
+    ],
+    "hint": "Où se trouve le milieu de [YZ] ? Compare les longueurs YH et HZ.",
+    "estimated_duration_s": 60,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, classe de 5e, Espace et géométrie, Triangles : « Définir et tracer les médianes dans un triangle. »"
+  },
+  {
+    "id": "EX-G053-M-01",
+    "skill_id": "G053",
+    "level": "maitrise",
+    "type": "numerique",
+    "statement": "Dans le triangle EFG, [GH] est la hauteur issue de G et [GI] la médiane issue de G. Combien mesure HI ? La figure n'est pas en vraie grandeur.",
+    "image": "figures/EX-G053-M-01",
+    "answer": {
+      "value": 9.5,
+      "unit": "cm",
+      "accepted": [
+        "9,5 cm",
+        "9,5 centimètres",
+        "95 mm",
+        "HI = 9,5 cm",
+        "HI = 9,5"
+      ]
+    },
+    "solution_steps": [
+      "[GI] est la médiane issue de G : I est le milieu de [EF]. Donc EI = 13 ÷ 2 = 6,5 cm.",
+      "[GH] est la hauteur issue de G : H est le pied de la perpendiculaire à (EF) passant par G. Ici il tombe sur le prolongement de [EF], du côté de E, à 3 cm de E.",
+      "Sur la droite (EF), on rencontre H, puis E, puis I : HI = HE + EI = 3 + 6,5 = 9,5. HI mesure **9,5 cm**.",
+      "Répondre 3,5 cm (6,5 − 3), c'est placer H sur [EF] sans regarder la figure ; répondre 0 cm, c'est croire que le pied de la hauteur est au milieu du côté."
+    ],
+    "hint": "Calcule d'abord EI. Où est H par rapport à E et à I ?",
+    "estimated_duration_s": 90,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, classe de 5e, Espace et géométrie, Triangles : « Définir et tracer les médianes dans un triangle. »"
+  },
+  {
+    "id": "EX-G053-M-02",
+    "skill_id": "G053",
+    "level": "maitrise",
+    "type": "qcm",
+    "statement": "Dans le triangle PQR, les hauteurs issues de P et de Q se coupent en O. Que peut-on affirmer de la droite (RO) ?",
+    "image": "figures/EX-G053-M-02",
+    "choices": [
+      {
+        "key": "a",
+        "text": "Elle est perpendiculaire à la droite (PQ).",
+        "misconception": null
+      },
+      {
+        "key": "b",
+        "text": "Elle passe par le milieu de [PQ].",
+        "misconception": "L'élève confond hauteur et médiane : ce sont les médianes qui passent par les milieux des côtés. (RO) est la troisième hauteur, son pied n'a aucune raison d'être au milieu de [PQ]."
+      },
+      {
+        "key": "c",
+        "text": "Elle est la médiatrice de [PQ].",
+        "misconception": "L'élève confond hauteur et médiatrice : la médiatrice de [PQ] est perpendiculaire à [PQ] en son milieu, et elle ne passe par R que si le triangle est isocèle en R."
+      },
+      {
+        "key": "d",
+        "text": "On ne peut rien affirmer sans la tracer.",
+        "misconception": "L'élève ne connaît pas la propriété des hauteurs : elles se coupent toujours en un même point. Pas besoin de tracer ni de mesurer pour conclure."
+      }
+    ],
+    "answer": {
+      "value": "a"
+    },
+    "solution_steps": [
+      "Propriété : les trois hauteurs d'un triangle sont concourantes, c'est-à-dire qu'elles passent par un même point.",
+      "Les hauteurs issues de P et de Q se coupent en O : la troisième hauteur, issue de R, passe donc elle aussi par O.",
+      "La hauteur issue de R passe par R et par O : c'est la droite (RO). Comme toute hauteur issue de R, elle est perpendiculaire au côté opposé : **(RO) est perpendiculaire à (PQ)**.",
+      "Elle n'a aucune raison de passer par le milieu de [PQ] : c'est la médiane issue de R qui le fait. Et la médiatrice de [PQ] ne passe par R que si le triangle est isocèle en R."
+    ],
+    "hint": "Que sais-tu des trois hauteurs d'un triangle ?",
+    "estimated_duration_s": 75,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, classe de 5e, Espace et géométrie, Triangles : « Savoir que les hauteurs d'un triangle sont concourantes. »"
+  }
+]

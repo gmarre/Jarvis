@@ -1,0 +1,20 @@
+{
+  "type": "geometrie",
+  "params": {
+    "colonnes": 12,
+    "lignes": 10,
+    "points": {"_a": ["2.8", "9.4"], "_b": ["9.2", "9.4"], "_c": ["9.2", "4.6"], "_s": [6, "2.2"],
+               "_d": ["2.8", "4.6"], "_m": [6, "4.6"], "_y": [6, "3.2"], "_z": [0, "9.4"]},
+    "elements": [
+      {"polygone": ["_a", "_b", "_c", "_s", "_d"]},
+      {"segment": ["_d", "_c"], "style": "pointille"},
+      {"segment": ["_s", "_m"], "style": "pointille"},
+      {"angle_droit": ["_s", "_m", "_d"]},
+      {"longueur": ["_a", "_b"], "texte": "8 dm"},
+      {"longueur": ["_b", "_c"], "texte": "6 dm"},
+      {"longueur": ["_d", "_s"], "texte": "5 dm"},
+      {"longueur": ["_y", "_m"], "texte": "3 dm"}
+    ]
+  },
+  "alt": "Figure formée d'un rectangle et d'un triangle, avec des longueurs écrites"
+}

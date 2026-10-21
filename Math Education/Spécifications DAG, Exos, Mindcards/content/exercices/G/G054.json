@@ -1,0 +1,190 @@
+[
+  {
+    "id": "EX-G054-D-01",
+    "skill_id": "G054",
+    "level": "decouverte",
+    "type": "numerique",
+    "statement": "Le triangle EFG est isocèle en E, avec FG = 15 cm, et [EH] est sa hauteur issue de E. Combien mesure FH ?",
+    "image": "figures/EX-G054-D-01",
+    "answer": {
+      "value": 7.5,
+      "unit": "cm",
+      "accepted": [
+        "7,5 cm",
+        "7,5 centimètres",
+        "75 mm",
+        "FH = 7,5 cm",
+        "FH = 7,5"
+      ]
+    },
+    "solution_steps": [
+      "Le codage le dit : EF = EG, le triangle est isocèle en E. E est son sommet principal.",
+      "Propriété : dans un triangle isocèle, la hauteur issue du sommet principal est aussi la médiane issue de ce sommet. Elle coupe la base [FG] en son milieu.",
+      "Donc H est le milieu de [FG] : FH = 15 ÷ 2 = 7,5. FH mesure **7,5 cm**.",
+      "Cette propriété ne vaut que pour la hauteur issue du sommet principal. Dans un triangle quelconque, le pied de la hauteur n'est pas au milieu du côté."
+    ],
+    "hint": "Dans un triangle isocèle, où la hauteur issue du sommet principal coupe-t-elle la base ?",
+    "estimated_duration_s": 45,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, classe de 5e, Espace et géométrie, Triangles : « Utiliser ces propriétés dans le cas de triangles particuliers. »"
+  },
+  {
+    "id": "EX-G054-D-02",
+    "skill_id": "G054",
+    "level": "decouverte",
+    "type": "qcm",
+    "statement": "Le triangle NPQ est isocèle en N. La droite (d) passe par N et par le milieu de [PQ]. Que peut-on dire de (d) ?",
+    "image": "figures/EX-G054-D-02",
+    "choices": [
+      {
+        "key": "a",
+        "text": "C'est la médiane issue de N, mais elle n'est perpendiculaire à (PQ) que si NPQ est équilatéral.",
+        "misconception": "L'élève croit ces propriétés réservées au triangle équilatéral. Il suffit que le triangle soit isocèle en N, et la droite part du sommet principal."
+      },
+      {
+        "key": "b",
+        "text": "C'est la médiane et la hauteur issues de N, mais pas la bissectrice de l'angle $\\widehat{PNQ}$.",
+        "misconception": "L'élève connaît la hauteur du triangle isocèle mais oublie que la même droite partage aussi l'angle au sommet $\\widehat{PNQ}$ en deux angles égaux."
+      },
+      {
+        "key": "c",
+        "text": "C'est à la fois la médiane et la hauteur issues de N, la médiatrice de [PQ] et la bissectrice de l'angle $\\widehat{PNQ}$.",
+        "misconception": null
+      }
+    ],
+    "answer": {
+      "value": "c"
+    },
+    "solution_steps": [
+      "NP = NQ : N est à égale distance de P et de Q, donc N est sur la médiatrice de [PQ].",
+      "La médiatrice de [PQ] passe aussi par le milieu de [PQ]. Elle passe par N et par ce milieu : c'est la droite (d).",
+      "(d) est donc perpendiculaire à (PQ) : c'est aussi la hauteur issue de N. Et, propriété du triangle isocèle, elle partage l'angle $\\widehat{PNQ}$ en deux angles égaux : c'est sa bissectrice.",
+      "Bilan : dans un triangle isocèle, la médiane, la hauteur et la bissectrice issues du sommet principal, et la médiatrice de la base, sont **une seule et même droite**."
+    ],
+    "hint": "N est à égale distance de P et de Q : sur quelle droite remarquable se trouve-t-il ?",
+    "estimated_duration_s": 60,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, classe de 5e, Espace et géométrie, Triangles : « Connaitre les propriétés des médiatrices et du cercle circonscrit dans le cas de triangles particuliers. »"
+  },
+  {
+    "id": "EX-G054-E-01",
+    "skill_id": "G054",
+    "level": "entrainement",
+    "type": "numerique",
+    "statement": "Le triangle UVW est isocèle en U, et [UH] est sa hauteur issue de U. Combien mesure l'angle $\\widehat{VUW}$, en degrés ? La figure n'est pas en vraie grandeur.",
+    "image": "figures/EX-G054-E-01",
+    "answer": {
+      "value": 56,
+      "unit": "°",
+      "accepted": [
+        "56°",
+        "56 °",
+        "56 degrés"
+      ]
+    },
+    "solution_steps": [
+      "UVW est isocèle en U : la hauteur issue du sommet principal U est aussi la bissectrice de l'angle $\\widehat{VUW}$.",
+      "Elle partage cet angle en deux angles égaux : $\\widehat{VUH}$ = $\\widehat{HUW}$ = 28°.",
+      "Donc $\\widehat{VUW}$ = 2 × 28° = 56°. L'angle mesure **56°**.",
+      "Répondre 14°, c'est diviser par 2 au lieu de doubler : 28° est déjà la moitié de l'angle cherché."
+    ],
+    "hint": "Dans un triangle isocèle, la hauteur issue du sommet principal partage l'angle au sommet en deux angles égaux.",
+    "estimated_duration_s": 60,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, classe de 5e, Espace et géométrie, Triangles : « Utiliser ces propriétés dans le cas de triangles particuliers. »"
+  },
+  {
+    "id": "EX-G054-E-02",
+    "skill_id": "G054",
+    "level": "entrainement",
+    "type": "vrai_faux",
+    "statement": "Le triangle KLM est isocèle en K, de hauteur [LJ] issue de L. Jade : « On peut affirmer que J est le milieu de [KM]. » A-t-elle raison ?",
+    "image": "figures/EX-G054-E-02",
+    "answer": {
+      "value": false
+    },
+    "solution_steps": [
+      "Le sommet principal du triangle isocèle KLM est K : c'est le sommet commun aux deux côtés égaux, [KL] et [KM].",
+      "La propriété « la hauteur est aussi la médiane » ne vaut que pour la hauteur issue du sommet principal, K.",
+      "[LJ] part de L, qui n'est pas le sommet principal : rien ne permet de dire que J est le milieu de [KM].",
+      "Jade a **tort** : elle applique la propriété à partir d'un autre sommet que le sommet principal. La hauteur issue de K, elle, couperait [LM] en son milieu."
+    ],
+    "hint": "Quel est le sommet principal de ce triangle isocèle ? La hauteur [LJ] part-elle de ce sommet ?",
+    "estimated_duration_s": 60,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, classe de 5e, Espace et géométrie, Triangles : « Utiliser ces propriétés dans le cas de triangles particuliers. »"
+  },
+  {
+    "id": "EX-G054-M-01",
+    "skill_id": "G054",
+    "level": "maitrise",
+    "type": "numerique",
+    "statement": "Le triangle EFG est équilatéral, de côté 7,4 cm, et O est le centre de son cercle circonscrit. La droite (EO) coupe [FG] en I. Combien mesure FI ?",
+    "image": "figures/EX-G054-M-01",
+    "answer": {
+      "value": 3.7,
+      "unit": "cm",
+      "accepted": [
+        "3,7 cm",
+        "3,7 centimètres",
+        "37 mm",
+        "FI = 3,7 cm",
+        "FI = 3,7"
+      ]
+    },
+    "solution_steps": [
+      "O est le centre du cercle circonscrit : OF = OG. O est donc sur la médiatrice de [FG].",
+      "Le triangle est équilatéral, donc EF = EG : E est lui aussi sur la médiatrice de [FG].",
+      "La droite (EO) passe par deux points de la médiatrice de [FG] : c'est cette médiatrice. Elle coupe [FG] en son milieu, donc I est le milieu de [FG].",
+      "FI = 7,4 ÷ 2 = 3,7. FI mesure **3,7 cm**.",
+      "Dans un triangle équilatéral, cette droite est à la fois la médiatrice de [FG], la hauteur, la médiane et la bissectrice issues de E."
+    ],
+    "hint": "Sur quelle droite se trouvent les points à égale distance de F et de G ? E et O y sont-ils ?",
+    "estimated_duration_s": 90,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, classe de 5e, Espace et géométrie, Triangles : « Connaitre les propriétés des médiatrices et du cercle circonscrit dans le cas de triangles particuliers. »"
+  },
+  {
+    "id": "EX-G054-M-02",
+    "skill_id": "G054",
+    "level": "maitrise",
+    "type": "qcm",
+    "statement": "Dans le triangle XYZ, la hauteur issue de X coupe [YZ] en son milieu H. Que peut-on en déduire ?",
+    "image": "figures/EX-G054-M-02",
+    "choices": [
+      {
+        "key": "a",
+        "text": "XYZ est rectangle en X.",
+        "misconception": "L'élève reporte l'angle droit codé en H sur le sommet X : l'angle droit est entre la hauteur et (YZ), pas entre les côtés [XY] et [XZ]."
+      },
+      {
+        "key": "b",
+        "text": "XYZ est isocèle en X.",
+        "misconception": null
+      },
+      {
+        "key": "c",
+        "text": "XYZ est équilatéral.",
+        "misconception": "L'élève va trop loin : on sait que XY = XZ, mais rien ne dit que YZ a la même longueur."
+      },
+      {
+        "key": "d",
+        "text": "Rien : dans tout triangle, la hauteur passe par le milieu du côté opposé.",
+        "misconception": "C'est l'erreur type : dans un triangle quelconque, le pied de la hauteur n'est pas au milieu du côté. Ici il l'est, et c'est une information."
+      }
+    ],
+    "answer": {
+      "value": "b"
+    },
+    "solution_steps": [
+      "La hauteur issue de X est perpendiculaire à (YZ), et elle coupe [YZ] en son milieu H.",
+      "Une droite perpendiculaire à un segment en son milieu, c'est la médiatrice de ce segment : (XH) est la médiatrice de [YZ].",
+      "X est sur la médiatrice de [YZ], donc X est à égale distance de Y et de Z : XY = XZ. **Le triangle XYZ est isocèle en X.**",
+      "C'est la propriété du triangle isocèle utilisée dans l'autre sens. Rien ne dit que les trois côtés sont égaux, ni que l'angle en X est droit."
+    ],
+    "hint": "Une droite perpendiculaire à [YZ] en son milieu : comment s'appelle-t-elle ? Que sais-tu de ses points ?",
+    "estimated_duration_s": 75,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, classe de 5e, Espace et géométrie, Triangles : « Utiliser ces propriétés dans le cas de triangles particuliers. »"
+  }
+]

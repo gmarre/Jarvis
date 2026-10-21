@@ -1,0 +1,24 @@
+{
+  "type": "geometrie",
+  "params": {
+    "colonnes": 12,
+    "lignes": 9,
+    "points": {"E": ["0.5", "8.5"], "F": ["6.9", "8.5"], "G": ["10.74", "5.62"], "H": ["4.34", "5.62"],
+               "_h": [6, "5.62"], "_k": [6, "8.5"], "L": ["8.436", "2.548"]},
+    "etiquettes": {"L": "gauche"},
+    "elements": [
+      {"polygone": ["E", "F", "G", "H"]},
+      {"segment": ["_h", "_k"], "style": "pointille"},
+      {"angle_droit": ["_h", "_k", "F"]},
+      {"segment": ["H", "L"], "style": "pointille"},
+      {"segment": ["G", "L"], "style": "pointille"},
+      {"angle_droit": ["G", "L", "H"]},
+      {"longueur": ["E", "F"], "texte": "10 cm"},
+      {"longueur": ["F", "G"], "texte": "6 cm"},
+      {"longueur": ["_h", "_k"], "texte": "4,8 cm"},
+      {"longueur": ["G", "L"], "texte": "?"}
+    ],
+    "legende": "Figure pas en vraie grandeur"
+  },
+  "alt": "Parallélogramme EFGH, deux segments en pointillés et des longueurs écrites"
+}

@@ -1,0 +1,82 @@
+{
+  "type": "geometrie",
+  "params": {
+    "colonnes": 12,
+    "lignes": 9,
+    "points": {
+      "_a": [
+        "1.5",
+        2
+      ],
+      "_p": [
+        "6.5",
+        2
+      ],
+      "_q": [
+        "10.5",
+        2
+      ],
+      "_r": [
+        "10.5",
+        "4.5"
+      ],
+      "_b": [
+        "10.5",
+        8
+      ],
+      "_c": [
+        "1.5",
+        8
+      ]
+    },
+    "elements": [
+      {
+        "polygone": [
+          "_a",
+          "_p",
+          "_r",
+          "_b",
+          "_c"
+        ],
+        "rempli": true
+      },
+      {
+        "polygone": [
+          "_p",
+          "_q",
+          "_r"
+        ],
+        "style": "pointille"
+      },
+      {
+        "longueur": [
+          "_c",
+          "_b"
+        ],
+        "texte": "9 m"
+      },
+      {
+        "longueur": [
+          "_a",
+          "_c"
+        ],
+        "texte": "6 m"
+      },
+      {
+        "longueur": [
+          "_p",
+          "_q"
+        ],
+        "texte": "4 m"
+      },
+      {
+        "longueur": [
+          "_q",
+          "_r"
+        ],
+        "texte": "2,5 m"
+      }
+    ]
+  },
+  "alt": "Rectangle dont un coin triangulaire est en pointillés, avec des longueurs écrites"
+}

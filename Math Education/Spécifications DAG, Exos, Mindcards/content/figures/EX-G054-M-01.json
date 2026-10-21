@@ -1,0 +1,53 @@
+{
+  "type": "geometrie",
+  "params": {
+    "colonnes": 12,
+    "lignes": 10,
+    "points": {
+      "E": [
+        6,
+        "1.5359"
+      ],
+      "F": [
+        3,
+        "6.7321"
+      ],
+      "G": [
+        9,
+        "6.7321"
+      ],
+      "O": [
+        6,
+        5
+      ],
+      "I": [
+        6,
+        "6.7321"
+      ]
+    },
+    "etiquettes": {
+      "O": "droite",
+      "I": "haut_droite"
+    },
+    "elements": [
+      {
+        "cercle": "O",
+        "passe_par": "E"
+      },
+      {
+        "polygone": [
+          "E",
+          "F",
+          "G"
+        ]
+      },
+      {
+        "segment": [
+          "E",
+          "I"
+        ]
+      }
+    ]
+  },
+  "alt": "Triangle EFG dans un cercle de centre O, et un segment [EI]"
+}

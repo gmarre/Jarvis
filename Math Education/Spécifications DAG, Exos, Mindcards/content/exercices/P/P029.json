@@ -1,0 +1,194 @@
+[
+  {
+    "id": "EX-P029-D-01",
+    "skill_id": "P029",
+    "level": "decouverte",
+    "type": "numerique",
+    "statement": "EFGH est un parallélogramme. Quelle est son aire, en cm² ?",
+    "image": "figures/EX-P029-D-01",
+    "answer": {
+      "value": 30,
+      "unit": "cm²",
+      "accepted": [
+        "30 cm²",
+        "30 cm2",
+        "30 centimètres carrés"
+      ]
+    },
+    "solution_steps": [
+      "Aire d'un parallélogramme = base × hauteur, où la hauteur est perpendiculaire à la base.",
+      "On découpe la partie gauche, entre [EH] et la hauteur en pointillés, et on la recolle à droite, contre [FG] : on obtient un rectangle de 7,5 cm sur 4 cm, de même aire.",
+      "La base [EF] mesure 7,5 cm et la hauteur relative à [EF] (en pointillés) mesure 4 cm : aire = 7,5 × 4 = 30. L'aire est **30 cm²**.",
+      "EH = 5 cm est un côté oblique, pas une hauteur : 7,5 × 5 = 37,5 cm² est faux. Et pas de division par 2 : c'est le triangle qui est la moitié d'un rectangle, pas le parallélogramme."
+    ],
+    "hint": "Quelle longueur est perpendiculaire à la base [EF] ?",
+    "estimated_duration_s": 60,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, classe de 5e, Espace et géométrie, Parallélogrammes : « Savoir calculer l'aire d'un parallélogramme et de figures complexes. »"
+  },
+  {
+    "id": "EX-P029-D-02",
+    "skill_id": "P029",
+    "level": "decouverte",
+    "type": "qcm",
+    "statement": "Un panneau de bois a la forme dessinée : un rectangle surmonté d'un triangle. Quelle est son aire ?",
+    "image": "figures/EX-P029-D-02",
+    "choices": [
+      {
+        "key": "a",
+        "text": "60 dm²",
+        "misconception": null
+      },
+      {
+        "key": "b",
+        "text": "72 dm²",
+        "misconception": "L'élève oublie de diviser l'aire du triangle par 2 : 8 × 3 = 24 dm², c'est le rectangle qui entoure le triangle. 48 + 24 = 72."
+      },
+      {
+        "key": "c",
+        "text": "68 dm²",
+        "misconception": "L'élève prend le côté oblique du toit, 5 dm, comme hauteur : 8 × 5 ÷ 2 = 20 et 48 + 20 = 68. Ce côté n'est pas perpendiculaire à la base du triangle."
+      },
+      {
+        "key": "d",
+        "text": "36 dm²",
+        "misconception": "L'élève divise toute la figure par 2 : (48 + 24) ÷ 2 = 36. Seul le triangle est la moitié d'un rectangle."
+      }
+    ],
+    "answer": {
+      "value": "a"
+    },
+    "solution_steps": [
+      "On découpe la figure en deux : un rectangle de 8 dm sur 6 dm, et un triangle de base 8 dm et de hauteur 3 dm (en pointillés).",
+      "Aire du rectangle : 8 × 6 = 48 dm².",
+      "Aire du triangle : 8 × 3 ÷ 2 = 24 ÷ 2 = 12 dm².",
+      "Aire du panneau : 48 + 12 = 60. L'aire est **60 dm²**."
+    ],
+    "hint": "Découpe la figure en un rectangle et un triangle, et calcule chaque aire.",
+    "estimated_duration_s": 75,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, classe de 5e, Espace et géométrie, Parallélogrammes : « Savoir calculer l'aire d'un parallélogramme et de figures complexes. »"
+  },
+  {
+    "id": "EX-P029-E-01",
+    "skill_id": "P029",
+    "level": "entrainement",
+    "type": "numerique",
+    "statement": "Un jardin rectangulaire a, dans un coin, un bassin triangulaire (en pointillés). Quelle aire reste-t-il à gazonner, en m² ?",
+    "image": "figures/EX-P029-E-01",
+    "answer": {
+      "value": 49,
+      "unit": "m²",
+      "accepted": [
+        "49 m²",
+        "49 m2",
+        "49 mètres carrés"
+      ]
+    },
+    "solution_steps": [
+      "L'aire à gazonner est l'aire du rectangle moins l'aire du bassin : on calcule par différence.",
+      "Rectangle : 9 × 6 = 54 m².",
+      "Le bassin est un triangle rectangle : ses côtés de l'angle droit, 4 m et 2,5 m, sont une base et la hauteur relative. Aire : 4 × 2,5 ÷ 2 = 10 ÷ 2 = 5 m².",
+      "Aire à gazonner : 54 − 5 = 49. Il reste **49 m²**.",
+      "Répondre 44 m², c'est oublier de diviser l'aire du bassin par 2 ; répondre 59 m², c'est ajouter le bassin au lieu de le retirer."
+    ],
+    "hint": "Calcule l'aire du rectangle entier, puis retire celle du bassin.",
+    "estimated_duration_s": 90,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, classe de 5e, Espace et géométrie, Parallélogrammes : « Savoir calculer l'aire d'un parallélogramme et de figures complexes. »"
+  },
+  {
+    "id": "EX-P029-E-02",
+    "skill_id": "P029",
+    "level": "entrainement",
+    "type": "vrai_faux",
+    "statement": "RSTU est un parallélogramme. Léa dit : « Son aire est 6 × 4 = 24 cm². » A-t-elle raison ?",
+    "image": "figures/EX-P029-E-02",
+    "answer": {
+      "value": false
+    },
+    "solution_steps": [
+      "Aire d'un parallélogramme = base × hauteur, et la hauteur doit être perpendiculaire à la base.",
+      "Léa multiplie deux côtés consécutifs, 6 cm et 4 cm. Mais [ST] est oblique : ce n'est pas une hauteur. Ce calcul ne marche que pour un rectangle.",
+      "La hauteur relative à la base [RS] est le segment en pointillés, 3,2 cm : aire = 6 × 3,2 = 19,2 cm².",
+      "Léa a **tort** : l'aire est 19,2 cm², pas 24 cm²."
+    ],
+    "hint": "Le côté [ST] est-il perpendiculaire à la base [RS] ?",
+    "estimated_duration_s": 60,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, classe de 5e, Espace et géométrie, Parallélogrammes : « Savoir calculer l'aire d'un parallélogramme et de figures complexes. »"
+  },
+  {
+    "id": "EX-P029-M-01",
+    "skill_id": "P029",
+    "level": "maitrise",
+    "type": "numerique",
+    "statement": "EFGH est un parallélogramme. Combien mesure sa hauteur [GL], relative au côté [EH] ? La figure n'est pas en vraie grandeur.",
+    "image": "figures/EX-P029-M-01",
+    "answer": {
+      "value": 8,
+      "unit": "cm",
+      "accepted": [
+        "8 cm",
+        "8 centimètres",
+        "80 mm",
+        "GL = 8 cm",
+        "GL = 8"
+      ]
+    },
+    "solution_steps": [
+      "Avec la base [EF] = 10 cm et la hauteur relative à [EF], 4,8 cm (en pointillés, entre [EF] et [HG]) : aire = 10 × 4,8 = 48 cm².",
+      "Dans un parallélogramme, les côtés opposés ont la même longueur : EH = FG = 6 cm.",
+      "Avec la base [EH], l'aire s'écrit aussi EH × GL = 6 × GL. Donc 6 × GL = 48.",
+      "GL = 48 ÷ 6 = 8. La hauteur [GL] mesure **8 cm**.",
+      "Le pied L est sur le prolongement de [EH] : une hauteur peut tomber hors du côté. Une même aire s'écrit avec n'importe quel côté comme base, à condition de prendre la hauteur qui lui correspond."
+    ],
+    "hint": "Calcule l'aire avec la base [EF], puis écris-la avec la base [EH].",
+    "estimated_duration_s": 120,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, classe de 5e, Espace et géométrie, Parallélogrammes : « Savoir calculer l'aire d'un parallélogramme et de figures complexes. »"
+  },
+  {
+    "id": "EX-P029-M-02",
+    "skill_id": "P029",
+    "level": "maitrise",
+    "type": "qcm",
+    "statement": "Un champ a la forme dessinée ci-dessous. Quelle est son aire ?",
+    "image": "figures/EX-P029-M-02",
+    "choices": [
+      {
+        "key": "a",
+        "text": "72 m²",
+        "misconception": "L'élève calcule le rectangle de 12 m sur 6 m qui entoure le champ, ou oublie de diviser l'aire du triangle par 2 : 42 + 30 = 72."
+      },
+      {
+        "key": "b",
+        "text": "114 m²",
+        "misconception": "L'élève ajoute les deux côtés parallèles et multiplie par la hauteur : (12 + 7) × 6 = 114, sans diviser par 2. C'est le double de l'aire."
+      },
+      {
+        "key": "c",
+        "text": "57 m²",
+        "misconception": null
+      },
+      {
+        "key": "d",
+        "text": "42 m²",
+        "misconception": "L'élève ne compte que le rectangle de 7 m sur 6 m et oublie le triangle de droite."
+      }
+    ],
+    "answer": {
+      "value": "c"
+    },
+    "solution_steps": [
+      "On découpe le champ par une perpendiculaire au grand côté : un rectangle de 7 m sur 6 m à gauche, et un triangle rectangle à droite.",
+      "Rectangle : 7 × 6 = 42 m².",
+      "Triangle : sa base mesure 12 − 7 = 5 m et sa hauteur 6 m. Aire : 5 × 6 ÷ 2 = 30 ÷ 2 = 15 m².",
+      "Aire du champ : 42 + 15 = 57. L'aire est **57 m²**."
+    ],
+    "hint": "Découpe la figure en un rectangle et un triangle par une perpendiculaire au grand côté.",
+    "estimated_duration_s": 90,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, classe de 5e, Espace et géométrie, Parallélogrammes : « Savoir calculer l'aire d'un parallélogramme et de figures complexes. »"
+  }
+]
