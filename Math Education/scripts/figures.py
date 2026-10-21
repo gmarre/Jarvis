@@ -578,6 +578,132 @@ def _monnaie(p: dict) -> tuple[str, str]:
     return _svg(L, H, corps, alt), alt
 
 
+def _valeur_ecrite(texte: str):
+    """Nombre en tete d'un texte (« 5 cm », « ≈ 7,2 », « 35° »), ou None."""
+    m = re.match(r"^\s*(?:≈\s*)?(\d+(?:[.,]\d+)?)", str(texte).replace(ESPACE_MILLIERS, ""))
+    return float(m.group(1).replace(",", ".")) if m else None
+
+
+def _echelle_longueurs(elements, P, dist2):
+    """Unites dessinees par unite ecrite, d'apres les longueurs chiffrees de la
+    figure (mediane) ; 1 s'il n'y en a pas (1 carreau pour 1 unite)."""
+    ks = []
+    for e in elements:
+        if isinstance(e, dict) and "longueur" in e and "cherche" not in e:
+            v = _valeur_ecrite(e.get("texte", ""))
+            if v:
+                a, b = e["longueur"]
+                ks.append(math.sqrt(float(dist2(P(a), P(b)))) / v)
+    if not ks:
+        return 1.0
+    ks.sort()
+    return ks[len(ks) // 2]
+
+
+def _controle_cherche_longueur(e, i, dessinee: float, echelle: float) -> None:
+    cherche = float(_nombre(e["cherche"], f"element {i + 1} : cherche"))
+    if cherche <= 0:
+        raise FigureInvalide(f"element {i + 1} : cherche, longueur strictement positive")
+    v = _valeur_ecrite(e.get("texte", ""))
+    if v is not None and abs(v - cherche) < 1e-9:
+        raise FigureInvalide(f"element {i + 1} : la longueur cherchee est ecrite sur la figure")
+    if abs(dessinee / cherche - echelle) <= 0.1 * echelle:
+        raise FigureInvalide(f"element {i + 1} : la longueur cherchee ({_texte_nombre(Fraction(str(cherche)))}) "
+                             "se mesure sur la figure (dessinee a l'echelle des autres) ; la deformer d'au moins 10 %")
+
+
+def _controle_cherche_angle(e, i, u, v) -> None:
+    cherche = float(_nombre(e["cherche"], f"element {i + 1} : cherche"))
+    if not 0 < cherche < 180:
+        raise FigureInvalide(f"element {i + 1} : cherche, angle entre 0 et 180 degres")
+    n = _valeur_ecrite(e.get("nom", ""))
+    if n is not None and abs(n - cherche) < 1e-9:
+        raise FigureInvalide(f"element {i + 1} : l'angle cherche est ecrit sur la figure")
+    cos = float(u[0] * v[0] + u[1] * v[1]) / (math.hypot(*map(float, u)) * math.hypot(*map(float, v)))
+    dessine = math.degrees(math.acos(max(-1.0, min(1.0, cos))))
+    if abs(dessine - cherche) < 5:
+        raise FigureInvalide(f"element {i + 1} : l'angle cherche ({_texte_nombre(Fraction(str(cherche)))} degres) "
+                             f"est dessine a {dessine:.0f} degres, il se mesure au rapporteur ; le deformer d'au moins 5 degres")
+
+
+def _paire(v, quoi: str) -> tuple[str, str]:
+    """["A", "B"] : deux noms de points."""
+    if not (isinstance(v, list) and len(v) == 2 and all(isinstance(x, str) for x in v)):
+        raise FigureInvalide(f"{quoi} : [\"A\", \"B\"] attendu")
+    return v[0], v[1]
+
+
+def _transformer(par, P, quoi: str):
+    """Fonction exacte (fractions) d'une transformation decrite par "par" :
+    {"demi_tour": "O"}, {"symetrie": ["P", "Q"]} ou {"translation": ["E", "F"]}."""
+    if not (isinstance(par, dict) and len(par) == 1):
+        raise FigureInvalide(f"{quoi} : par, {{\"demi_tour\": \"O\"}}, {{\"symetrie\": [\"P\", \"Q\"]}} "
+                             "ou {\"translation\": [\"E\", \"F\"]}")
+    (sorte, arg), = par.items()
+    if sorte == "demi_tour":
+        if not isinstance(arg, str):
+            raise FigureInvalide(f"{quoi} : demi_tour, nom du centre attendu")
+        ox, oy = P(arg)
+        return lambda q: (2 * ox - q[0], 2 * oy - q[1])
+    if sorte == "symetrie":
+        a, b = _paire(arg, f"{quoi} (symetrie)")
+        (ax, ay), (bx, by) = P(a), P(b)
+        dx, dy = bx - ax, by - ay
+        d2 = dx * dx + dy * dy
+        if d2 == 0:
+            raise FigureInvalide(f"{quoi} : axe defini par deux points confondus")
+
+        def sym(q):
+            t = ((q[0] - ax) * dx + (q[1] - ay) * dy) / d2
+            hx, hy = ax + t * dx, ay + t * dy
+            return 2 * hx - q[0], 2 * hy - q[1]
+        return sym
+    if sorte == "translation":
+        a, b = _paire(arg, f"{quoi} (translation)")
+        (ax, ay), (bx, by) = P(a), P(b)
+        return lambda q: (q[0] + bx - ax, q[1] + by - ay)
+    raise FigureInvalide(f"{quoi} : transformation « {sorte} » inconnue (demi_tour, symetrie, translation)")
+
+
+def _images_geometrie(e: dict, i: int, pts: dict, P, nc: int, nl: int) -> None:
+    """Calcule (ou controle) les images d'un element "image" de `geometrie` et
+    les range dans `pts`. Voir la docstring de `_geometrie`."""
+    quoi = f"element {i + 1} (image)"
+    de, noms = e.get("image"), e.get("noms")
+    if not (isinstance(de, list) and 1 <= len(de) <= 8 and all(isinstance(x, str) for x in de)):
+        raise FigureInvalide(f"{quoi} : image, liste de 1 a 8 noms de points")
+    if not (isinstance(noms, list) and len(noms) == len(de) and all(isinstance(x, str) for x in noms)):
+        raise FigureInvalide(f"{quoi} : noms, un nom d'image par point de depart")
+    if len(set(noms)) != len(noms):
+        raise FigureInvalide(f"{quoi} : noms en double")
+    f = _transformer(e.get("par"), P, quoi)
+    vraies = [f(P(a)) for a in de]
+    if e.get("distracteur"):
+        absents = [n for n in noms if n not in pts]
+        if absents:
+            raise FigureInvalide(f"{quoi} : distracteur, les points {', '.join(absents)} doivent etre donnes")
+        # Nettement faux : au moins un point a un carreau ou plus de toutes les
+        # vraies images (sinon l'eleve ne peut pas trancher a l'oeil).
+        def loin(q):
+            return all((q[0] - v[0]) ** 2 + (q[1] - v[1]) ** 2 >= 1 for v in vraies)
+        if not any(loin(pts[n]) for n in noms):
+            raise FigureInvalide(f"{quoi} : le distracteur {''.join(noms)} est l'image, ou presque "
+                                 "(aucun point a un carreau ou plus des vraies images)")
+        return
+    for a, n, (x, y) in zip(de, noms, vraies):
+        if not (1 <= len(n) <= 4):
+            raise FigureInvalide(f"{quoi} : nom « {n} » invalide (1 a 4 caracteres)")
+        if n in pts:
+            if pts[n] != (x, y):
+                raise FigureInvalide(f"{quoi} : {n} donne en ({_relatif(pts[n][0])} ; {_relatif(pts[n][1])}) "
+                                     f"n'est pas l'image de {a}, qui est en ({_relatif(x)} ; {_relatif(y)})")
+        else:
+            if not (0 <= x <= nc and 0 <= y <= nl):
+                raise FigureInvalide(f"{quoi} : l'image {n} de {a} tombe hors du cadre "
+                                     f"(({_relatif(x)} ; {_relatif(y)}), cadre {nc} x {nl})")
+            pts[n] = (x, y)
+
+
 def _geometrie(p: dict) -> tuple[str, str]:
     """Figure de geometrie plane : points, segments, droites, polygones, cercles,
     angles et codages, sur fond blanc, quadrille ou pointe.
@@ -608,11 +734,54 @@ def _geometrie(p: dict) -> tuple[str, str]:
         {"longueur": ["A", "B"], "texte": "5 cm"} longueur ecrite le long de [AB],
                                                  du cote oppose au centre de la figure
         {"texte": "1", "position": [x, y]}       texte libre (numero de figure...)
-      Options d'un angle : "arcs": 2 (double arc, angles egaux), "nom" jusqu'a
-      5 caracteres ("65" suivi du symbole degre). Option d'un cercle :
-      "rempli": true (disque).
+        {"vecteur": ["A", "B"], "nom": "u"}      fleche de A vers B (segment oriente,
+                                                 pointe en B), bleue par defaut ;
+                                                 "nom" (1 a 3 caracteres) ecrit pres
+                                                 du milieu, surmonte d'une petite fleche
+        {"image": ["A", "B", "C"], "par": {...}, "noms": ["A'", "B'", "C'"]}
+                                                 images des points par une transformation :
+                                                 "par" vaut {"demi_tour": "O"} (symetrie
+                                                 centrale de centre O), {"symetrie": ["P", "Q"]}
+                                                 (symetrie d'axe (PQ)) ou {"translation":
+                                                 ["E", "F"]} (translation qui transforme E
+                                                 en F). Un nom absent de "points" est
+                                                 CALCULE (fractions exactes) et devient un
+                                                 point de la figure ; un nom deja dans
+                                                 "points" est CONTROLE : refus s'il n'est
+                                                 pas exactement l'image. "polygone": true
+                                                 trace le polygone des images (options
+                                                 "rempli", "couleur", "style").
+                                                 "distracteur": true inverse le controle :
+                                                 tous les noms sont donnes dans "points" et
+                                                 la figure ne doit PAS etre l'image (au
+                                                 moins un point a un carreau ou plus de
+                                                 toutes les vraies images), pour un QCM
+                                                 « laquelle est l'image ? ».
+        {"parallele": [["A", "B"], ["C", "D"]], "marque": 1}
+                                                 codage du parallelisme : 1 ou 2 chevrons
+                                                 au milieu de chaque segment, dans le meme
+                                                 sens ; refus si les segments ne sont pas
+                                                 paralleles (a 0,1 degre pres)
+        {"arc": ["A", "O", "B"], "sens": "antihoraire"}
+                                                 arc de cercle de centre O, de A a B,
+                                                 tourne dans le sens donne a l'ecran
+                                                 ("antihoraire", defaut, ou "horaire") ;
+                                                 OA = OB exige ; un demi-cercle si A, O, B
+                                                 sont alignes
+      Options d'un angle : "arcs": 2 ou 3 (double ou triple arc, angles egaux),
+      "nom" jusqu'a 5 caracteres ("65" suivi du symbole degre). Option d'un
+      cercle : "rempli": true (disque).
       Options d'un element : "couleur": "accent" (bleu) ou "trait" (defaut),
       "style": "pointille".
+      Option "cherche" d'un angle ou d'une longueur : la mesure cherchee par
+      l'exercice (nombre, en degres pour un angle). Elle ne doit pas se lire
+      sur le dessin : refus si l'angle dessine est a moins de 5 degres de cette
+      mesure, ou si la longueur dessinee lui est proportionnelle a 10 % pres
+      (echelle : celle des longueurs chiffrees de la figure, sinon 1 carreau
+      pour 1 unite) ; refus aussi si le texte ou le nom ecrit la donne.
+      legende     texte court sous la figure, 40 caracteres au plus (facultatif) ;
+                  pour les figures de Pythagore, Thales et trigonometrie :
+                  "Figure pas en vraie grandeur". Sans legende, rendu inchange.
 
     Controles (une figure exacte ne doit pas mentir) : un angle droit code doit
     etre droit, des segments codes egaux doivent etre egaux, tout point doit
@@ -621,6 +790,11 @@ def _geometrie(p: dict) -> tuple[str, str]:
     trois points presque alignes sans l'etre, sont refuses (etape 4b, point 9 du
     cartographe). "presque_droit_autorise": true leve le premier controle, pour
     un exercice qui ne porte pas sur l'angle droit (comparer deux angles).
+    Les images d'une transformation sont calculees ou controlees (element
+    "image") : la figure ne peut pas montrer une fausse image comme la bonne.
+    Les points nommes dans un element "image" n'entrent pas dans le controle
+    des points presque alignes (A, C, B' presque alignes ne trompent personne,
+    et les alignements utiles, A, O, A', sont exacts).
     """
     nc = _entier(p, "colonnes", 2, 12)
     nl = _entier(p, "lignes", 2, 10)
@@ -680,6 +854,18 @@ def _geometrie(p: dict) -> tuple[str, str]:
         t_min = max(t for t in ts if t < 0) if deux_sens else 0.0
         return (ax + t_min * dx, ay + t_min * dy), (ax + t_max * dx, ay + t_max * dy)
 
+    # Images par une transformation : calculees ou controlees AVANT le dessin,
+    # pour que tout element (polygone, segment, codage...) puisse les nommer,
+    # dans l'ordre ou elles sont decrites (image d'une image permise).
+    elements = p.get("elements", [])
+    if not isinstance(elements, list):
+        raise FigureInvalide("elements : liste attendue")
+    noms_images: set[str] = set()
+    for i, e in enumerate(elements):
+        if isinstance(e, dict) and "image" in e:
+            _images_geometrie(e, i, pts, P, nc, nl)
+            noms_images.update(e.get("noms", []))
+
     corps: list[str] = []
     angles_vus: list = []
     if fond == "quadrille":
@@ -692,10 +878,118 @@ def _geometrie(p: dict) -> tuple[str, str]:
             for j in range(nl + 1):
                 corps.append(f'<circle cx="{m + i * s}" cy="{m + j * s}" r="1.6" fill="{DOUX}"/>')
 
-    for i, e in enumerate(p.get("elements", [])):
+    for i, e in enumerate(elements):
         if not isinstance(e, dict):
             raise FigureInvalide(f"element {i + 1} : objet attendu")
-        if "segment" in e:
+        if "vecteur" in e:
+            a, b = _paire(e["vecteur"], f"element {i + 1} (vecteur)")
+            A, B = P(a), P(b)
+            if A == B:
+                raise FigureInvalide(f"element {i + 1} : vecteur d'origine et d'extremite confondues")
+            e_v = {**e, "couleur": e.get("couleur", "accent")}
+            (x1, y1), (x2, y2) = px(A), px(B)
+            n = math.hypot(x2 - x1, y2 - y1)
+            ux, uy = (x2 - x1) / n, (y2 - y1) / n
+            # Le trait s'arrete au pied de la pointe : sinon il deborde de la
+            # pointe et l'arrondit.
+            corps.append(trait((x1, y1), (x2 - ux * 9, y2 - uy * 9), e_v, epaisseur=2.2))
+            corps.append(f'<path d="M{x2:.1f},{y2:.1f} L{x2 - ux * 11 - uy * 5:.1f},{y2 - uy * 11 + ux * 5:.1f} '
+                         f'L{x2 - ux * 11 + uy * 5:.1f},{y2 - uy * 11 - ux * 5:.1f} Z" fill="{couleur(e_v)}"/>')
+            if e.get("nom"):
+                nom_v = str(e["nom"])[:3]
+                nx, ny = -uy, ux
+                vis = [q for q in pts if not q.startswith("_")] or list(pts)
+                gx0 = m + sum(float(pts[q][0]) for q in vis) / len(vis) * s
+                gy0 = m + sum(float(pts[q][1]) for q in vis) / len(vis) * s
+                mx, my = (x1 + x2) / 2, (y1 + y2) / 2
+                if (mx - gx0) * nx + (my - gy0) * ny < 0:
+                    nx, ny = -nx, -ny
+                tx = min(max(mx + nx * 16, 12), L - 12)
+                ty = min(max(my + ny * 16 + 6, 24), H - 3)
+                largeur = 8.5 * len(nom_v)
+                corps.append(_texte(tx, ty, nom_v, 15, couleur=couleur(e_v), gras=True))
+                # Petite fleche au-dessus du nom (notation du vecteur).
+                yf = ty - 15
+                corps.append(_ligne(tx - largeur / 2 - 1, yf, tx + largeur / 2 + 1, yf, couleur=couleur(e_v), epaisseur=1.3))
+                corps.append(f'<path d="M{tx + largeur / 2 + 3:.1f},{yf:.1f} l-5,-3 v6 z" fill="{couleur(e_v)}"/>')
+        elif "image" in e:
+            # Points deja calcules ou controles ; reste a tracer le polygone.
+            if e.get("polygone"):
+                noms_img = e.get("noms", [])
+                if len(noms_img) < 3:
+                    raise FigureInvalide(f"element {i + 1} : un polygone d'images demande 3 points au moins")
+                sommets = [px(P(n)) for n in noms_img]
+                remp = REMPLI if e.get("rempli") else "none"
+                chemin = " ".join(f"{x:.1f},{y:.1f}" for x, y in sommets)
+                for k in range(len(noms_img)):
+                    A = P(noms_img[k])
+                    B, C = P(noms_img[k - 1]), P(noms_img[(k + 1) % len(noms_img)])
+                    angles_vus.append((f"{noms_img[k - 1]}{noms_img[k]}{noms_img[(k + 1) % len(noms_img)]}",
+                                       (B[0] - A[0], B[1] - A[1]), (C[0] - A[0], C[1] - A[1])))
+                corps.append(f'<polygon points="{chemin}" fill="{remp}" fill-opacity="0.6" stroke="{couleur(e)}" '
+                             f'stroke-width="2" stroke-linejoin="round"{tirets(e)}/>')
+        elif "parallele" in e:
+            marque = e.get("marque", 1)
+            if marque not in (1, 2):
+                raise FigureInvalide(f"element {i + 1} : marque 1 ou 2 (chevrons de parallelisme)")
+            segs = e["parallele"]
+            if not (isinstance(segs, list) and len(segs) >= 2):
+                raise FigureInvalide(f"element {i + 1} : parallele, liste de 2 segments au moins")
+            dirs = []
+            for sg in segs:
+                a, b = _paire(sg, f"element {i + 1} (parallele)")
+                A, B = P(a), P(b)
+                if A == B:
+                    raise FigureInvalide(f"element {i + 1} : segment [{a}{b}] nul")
+                dirs.append((A, B, (B[0] - A[0], B[1] - A[1])))
+            u0 = dirs[0][2]
+            for A, B, u in dirs[1:]:
+                croix = abs(float(u0[0] * u[1] - u0[1] * u[0]))
+                if croix / (math.hypot(*map(float, u0)) * math.hypot(*map(float, u))) > 0.002:
+                    raise FigureInvalide(f"element {i + 1} : segments codes paralleles mais qui ne le sont pas")
+            for A, B, u in dirs:
+                (x1, y1), (x2, y2) = px(A), px(B)
+                n = math.hypot(x2 - x1, y2 - y1)
+                tx_, ty_ = (x2 - x1) / n, (y2 - y1) / n
+                if tx_ * float(u0[0]) + ty_ * float(u0[1]) < 0:
+                    tx_, ty_ = -tx_, -ty_
+                nx, ny = -ty_, tx_
+                mx, my = (x1 + x2) / 2, (y1 + y2) / 2
+                for k in range(marque):
+                    d = (k - (marque - 1) / 2) * 6 + 3
+                    cx, cy = mx + tx_ * d, my + ty_ * d
+                    corps.append(f'<path d="M{cx - tx_ * 6 + nx * 5:.1f},{cy - ty_ * 6 + ny * 5:.1f} L{cx:.1f},{cy:.1f} '
+                                 f'L{cx - tx_ * 6 - nx * 5:.1f},{cy - ty_ * 6 - ny * 5:.1f}" fill="none" stroke="{ACCENT}" '
+                                 f'stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>')
+        elif "arc" in e:
+            trio = e["arc"]
+            if not (isinstance(trio, list) and len(trio) == 3):
+                raise FigureInvalide(f"element {i + 1} : arc [\"A\", \"O\", \"B\"] attendu (O centre)")
+            a, o, b = trio
+            A, O, B = P(a), P(o), P(b)
+            ra, rb = dist2(O, A), dist2(O, B)
+            if ra == 0 or A == B:
+                raise FigureInvalide(f"element {i + 1} : arc avec des points confondus")
+            if max(ra, rb) > min(ra, rb) * Fraction(1004, 1000):
+                raise FigureInvalide(f"element {i + 1} : {o}{a} et {o}{b} differents, {a} et {b} ne sont pas sur un meme cercle de centre {o}")
+            sens = e.get("sens", "antihoraire")
+            if sens not in ("antihoraire", "horaire"):
+                raise FigureInvalide(f"element {i + 1} : sens \"antihoraire\" ou \"horaire\"")
+            r = math.sqrt(float(ra))
+            a1 = math.atan2(float(A[1] - O[1]), float(A[0] - O[0]))
+            a2 = math.atan2(float(B[1] - O[1]), float(B[0] - O[0]))
+            # y vers le bas : un angle croissant tourne dans le sens horaire a l'ecran.
+            balaye = (a2 - a1) % (2 * math.pi) if sens == "horaire" else (a1 - a2) % (2 * math.pi)
+            for k in range(1, 24):
+                t_ = a1 + (balaye if sens == "horaire" else -balaye) * k / 24
+                xx, yy = float(O[0]) + r * math.cos(t_), float(O[1]) + r * math.sin(t_)
+                if not (-1e-6 <= xx <= nc + 1e-6 and -1e-6 <= yy <= nl + 1e-6):
+                    raise FigureInvalide(f"element {i + 1} : l'arc sort du cadre")
+            (xa, ya), (xb, yb) = px(A), px(B)
+            grand = 1 if balaye > math.pi + 1e-9 else 0
+            corps.append(f'<path d="M{xa:.1f},{ya:.1f} A{r * s:.1f},{r * s:.1f} 0 {grand} {1 if sens == "horaire" else 0} '
+                         f'{xb:.1f},{yb:.1f}" fill="none" stroke="{couleur(e)}" stroke-width="2"{tirets(e)}/>')
+        elif "segment" in e:
             a, b = e["segment"]
             corps.append(trait(px(P(a)), px(P(b)), e))
         elif "droite" in e or "axe" in e or "demi_droite" in e:
@@ -757,6 +1051,8 @@ def _geometrie(p: dict) -> tuple[str, str]:
             ax, ay = px(A)
             if not droit:
                 angles_vus.append((f"{b}{a}{c}", u, v))
+            if "cherche" in e:
+                _controle_cherche_angle(e, i, u, v)
             if droit:
                 k = 11
                 chemin = (f"M{ax + ux * k:.1f},{ay + uy * k:.1f} L{ax + (ux + vx) * k:.1f},{ay + (uy + vy) * k:.1f} "
@@ -768,8 +1064,8 @@ def _geometrie(p: dict) -> tuple[str, str]:
                 chemin = (f"M{ax + ux * r:.1f},{ay + uy * r:.1f} "
                           f"A{r},{r} 0 0 {balayage} {ax + vx * r:.1f},{ay + vy * r:.1f}")
                 arcs = e.get("arcs", 1)
-                if arcs not in (1, 2):
-                    raise FigureInvalide(f"element {i + 1} : arcs 1 ou 2")
+                if arcs not in (1, 2, 3):
+                    raise FigureInvalide(f"element {i + 1} : arcs 1, 2 ou 3")
                 for k in range(1, arcs):
                     rr = r + 4 * k
                     chemin = (f"M{ax + ux * rr:.1f},{ay + uy * rr:.1f} "
@@ -806,6 +1102,9 @@ def _geometrie(p: dict) -> tuple[str, str]:
                                         couleur=ACCENT, epaisseur=1.6))
         elif "longueur" in e:
             a, b = e["longueur"]
+            if "cherche" in e:
+                _controle_cherche_longueur(e, i, math.sqrt(float(dist2(P(a), P(b)))),
+                                           _echelle_longueurs(elements, P, dist2))
             (x1, y1), (x2, y2) = px(P(a)), px(P(b))
             mx, my = (x1 + x2) / 2, (y1 + y2) / 2
             dx, dy = x2 - x1, y2 - y1
@@ -857,6 +1156,12 @@ def _geometrie(p: dict) -> tuple[str, str]:
             for c in noms_vus:
                 if not (a < c and b not in (a, c)):
                     continue
+                # Un point d'image (calcule, controle ou distracteur nettement
+                # faux) n'entre pas dans ce controle : A, C, B' presque alignes
+                # ne trompent personne, et les alignements utiles (A, O, A')
+                # sont exacts.
+                if noms_images and (a in noms_images or b in noms_images or c in noms_images):
+                    continue
                 A, B, C = pts[a], pts[b], pts[c]
                 ac = (C[0] - A[0], C[1] - A[1])
                 ab = (B[0] - A[0], B[1] - A[1])
@@ -895,7 +1200,19 @@ def _geometrie(p: dict) -> tuple[str, str]:
     alt = "Figure de géométrie"
     if visibles:
         alt += " avec les points " + ", ".join(visibles)
-    return _svg(L, H, corps, alt), alt
+    legende = p.get("legende")
+    if legende is None:
+        return _svg(L, H, corps, alt), alt
+    if not (isinstance(legende, str) and 1 <= len(legende.strip()) <= 40):
+        raise FigureInvalide("legende : texte de 1 a 40 caracteres")
+    # Legende sous le cadre ; si elle depasse la figure, le cadre s'elargit et
+    # la figure est centree (13 px, environ 7 px par caractere).
+    largeur = 7 * len(legende) + 16
+    L2 = max(L, largeur)
+    if L2 > L:
+        corps = [f'<g transform="translate({(L2 - L) / 2:.1f},0)">'] + corps + ["</g>"]
+    corps.append(_texte(L2 / 2, H + 12, legende.strip(), 13, couleur="#475569"))
+    return _svg(L2, H + 22, corps, alt), alt
 
 
 def _rapporteur(p: dict) -> tuple[str, str]:
@@ -1112,6 +1429,1024 @@ def _dessin_solide(sorte: str, x0: float, y0: float, t: float, p: dict) -> list[
     return corps
 
 
+# ---------------------------------------------------------------------------
+#  Solides cotes, a proportions vraies (etape 8b)
+# ---------------------------------------------------------------------------
+#
+# Un solide qui porte l'une des cles ci-dessous est dessine par
+# `_dessin_solide_cote` : ses proportions suivent ses dimensions, les aretes
+# cachees sont calculees (faces tournees vers l'arriere), et tout ce qui est
+# ecrit (cote, image d'un point, section) est calcule ou controle. Sans ces
+# cles, l'ancien dessin (`_dessin_solide`) est garde a l'identique.
+
+CLES_SOLIDE_COTE = ("dimensions", "unite", "cotes", "hauteur", "nom_pied", "pied", "position",
+                    "a_completer", "rendu_a_completer", "coupe", "pyramide", "points", "segments",
+                    "grand_cercle", "etiquettes")
+
+# Fuyante de la perspective cavaliere (45 degres, coefficient 0,5) et direction
+# des rayons de projection, en coordonnees x vers la droite, y en profondeur
+# (vers l'arriere), z vers le haut : une face dont la normale sortante va
+# contre cette direction est vue.
+C45 = 0.5 / math.sqrt(2)
+VUE = (-C45, 1.0, -C45)
+
+_DIMS_CLES = {
+    "cube": ("arete",),
+    "pave": ("longueur", "largeur", "hauteur"),
+    "pyramide": ("cote", "longueur", "largeur", "hauteur"),
+    "pyramide_triangle": ("base", "hauteur_base", "decalage", "hauteur"),
+    "prisme": ("base", "hauteur_base", "decalage", "hauteur"),
+    "prisme_hexagone": ("cote", "hauteur"),
+    "cylindre": ("rayon", "hauteur"),
+    "cone": ("rayon", "hauteur"),
+    "boule": ("rayon",),
+}
+_DIMS_REQUISES = {**_DIMS_CLES, "pyramide": ("longueur", "largeur", "hauteur"),
+                  "pyramide_triangle": ("base", "hauteur_base", "hauteur"),
+                  "prisme": ("base", "hauteur_base", "hauteur")}
+# Dimensions par defaut (sans "dimensions") : les proportions de l'ancien dessin.
+_DIMS_DEFAUT = {
+    "cube": {"arete": 4}, "pave": {"longueur": 8, "largeur": 6, "hauteur": "4.5"},
+    "pyramide": {"longueur": 8, "largeur": 8, "hauteur": 7},
+    "pyramide_triangle": {"base": 8, "hauteur_base": 5, "decalage": 5, "hauteur": 8},
+    "prisme": {"base": 6, "hauteur_base": 5, "decalage": 3, "hauteur": 8},
+    "prisme_hexagone": {"cote": 3, "hauteur": 7},
+    "cylindre": {"rayon": 3, "hauteur": 6}, "cone": {"rayon": 3, "hauteur": 6}, "boule": {"rayon": 3},
+}
+
+
+def _solide_cote_demande(sol: dict) -> bool:
+    return (any(k in sol for k in CLES_SOLIDE_COTE) or isinstance(sol.get("sommets"), list)
+            or isinstance(sol.get("face"), list))
+
+
+def _dimensions(sorte: str, sol: dict) -> tuple[dict, bool]:
+    """Dimensions exactes d'un solide, et si l'auteur les a donnees."""
+    brut = sol.get("dimensions")
+    if brut is None:
+        return {k: Fraction(str(v)) for k, v in _DIMS_DEFAUT[sorte].items()}, False
+    if not isinstance(brut, dict):
+        raise FigureInvalide("dimensions : objet attendu")
+    inconnues = sorted(set(brut) - set(_DIMS_CLES[sorte]))
+    if inconnues:
+        raise FigureInvalide(f"dimensions : {', '.join(inconnues)} inconnu(s) pour {sorte} "
+                             f"(cles : {', '.join(_DIMS_CLES[sorte])})")
+    d = {}
+    for k, v in brut.items():
+        x = _nombre(v, f"dimensions.{k}")
+        if x < 0 or (x == 0 and k != "decalage"):
+            raise FigureInvalide(f"dimensions.{k} : nombre strictement positif attendu")
+        d[k] = x
+    if sorte == "pyramide" and "cote" in d:
+        if "longueur" in d or "largeur" in d:
+            raise FigureInvalide("dimensions : pyramide, \"cote\" (base carree) ou \"longueur\" et \"largeur\"")
+        d["longueur"] = d["largeur"] = d.pop("cote")
+    manque = [k for k in _DIMS_REQUISES[sorte] if k not in d]
+    if manque:
+        raise FigureInvalide(f"dimensions : il manque {', '.join(manque)} pour {sorte}")
+    if sorte in ("pyramide_triangle", "prisme"):
+        d.setdefault("decalage", d["base"] / 2)
+        if d["decalage"] > d["base"]:
+            raise FigureInvalide("dimensions.decalage : entre 0 et la base")
+    principales = [v for k, v in d.items() if k != "decalage"]
+    if max(principales) > 10 * min(principales):
+        raise FigureInvalide("dimensions : une dimension plus de 10 fois plus grande qu'une autre, dessin illisible")
+    return d, True
+
+
+def _polyedre(sorte: str, d: dict, couche: bool, pied: str | None):
+    """Sommets (noms par defaut -> (x, y, z)), faces, et (sommet, pied) d'une pyramide."""
+    f = float
+    if sorte in ("cube", "pave"):
+        a, b, c = ((f(d["arete"]),) * 3 if sorte == "cube"
+                   else (f(d["longueur"]), f(d["largeur"]), f(d["hauteur"])))
+        S = {"A": (0, 0, 0), "B": (a, 0, 0), "C": (a, 0, c), "D": (0, 0, c),
+             "E": (0, b, 0), "F": (a, b, 0), "G": (a, b, c), "H": (0, b, c)}
+        faces = [list("ABCD"), list("EFGH"), list("ABFE"), list("DCGH"), list("BCGF"), list("ADHE")]
+        return S, faces, None
+    if sorte in ("pyramide", "pyramide_triangle"):
+        h = f(d["hauteur"])
+        if sorte == "pyramide":
+            a, b = f(d["longueur"]), f(d["largeur"])
+            S = {"A": (0, 0, 0), "B": (a, 0, 0), "C": (a, b, 0), "D": (0, b, 0)}
+            centre = (a / 2, b / 2, 0)
+        else:
+            b, hb, dc = f(d["base"]), f(d["hauteur_base"]), f(d["decalage"])
+            S = {"A": (0, 0, 0), "B": (b, 0, 0), "C": (dc, hb, 0)}
+            centre = ((b + dc) / 3, hb / 3, 0)
+        base = list(S)
+        if pied in (None, "centre"):
+            pied_xyz = centre
+        elif pied in S:
+            pied_xyz = S[pied]
+        else:
+            raise FigureInvalide(f"pied : \"centre\" ou un sommet de la base ({', '.join(base)})")
+        S["S"] = (pied_xyz[0], pied_xyz[1], h)
+        faces = [base] + [["S", base[k], base[(k + 1) % len(base)]] for k in range(len(base))]
+        return S, faces, ("S", pied_xyz)
+    # Prismes droits : une base polygonale extrudee ; debout, la base est
+    # horizontale ; couche, elle est de face (vraie grandeur) et le prisme
+    # repose sur une face laterale.
+    h = f(d["hauteur"])
+    if sorte == "prisme":
+        b, hb, dc = f(d["base"]), f(d["hauteur_base"]), f(d["decalage"])
+        base2 = [(0.0, 0.0), (b, 0.0), (dc, hb)]
+        noms_bas, noms_haut = "ABC", "DEF"
+    else:
+        a = f(d["cote"])
+        # Debout : tourne de 15 degres, sinon des aretes cachees tombent sur
+        # des aretes vues ; couche : une arete en bas, posee au sol.
+        dep = 0.0 if couche else 15.0
+        base2 = [(a * math.cos(math.radians(dep + 60 * k)), a * math.sin(math.radians(dep + 60 * k))) for k in range(6)]
+        if couche:
+            base2 = base2[4:] + base2[:4]          # A, B : l'arete du bas
+        noms_bas, noms_haut = "ABCDEF", "GHIJKL"
+    if couche:
+        S = {n: (u, 0.0, v) for n, (u, v) in zip(noms_bas, base2)}
+        S.update({n: (u, h, v) for n, (u, v) in zip(noms_haut, base2)})
+    else:
+        S = {n: (u, v, 0.0) for n, (u, v) in zip(noms_bas, base2)}
+        S.update({n: (u, v, h) for n, (u, v) in zip(noms_haut, base2)})
+    nb = len(base2)
+    faces = [list(noms_bas), list(noms_haut)]
+    faces += [[noms_bas[k], noms_bas[(k + 1) % nb], noms_haut[(k + 1) % nb], noms_haut[k]] for k in range(nb)]
+    return S, faces, None
+
+
+def _sous(a, b):
+    return (a[0] - b[0], a[1] - b[1], a[2] - b[2])
+
+
+def _scal(a, b):
+    return a[0] * b[0] + a[1] * b[1] + a[2] * b[2]
+
+
+def _vect(a, b):
+    return (a[1] * b[2] - a[2] * b[1], a[2] * b[0] - a[0] * b[2], a[0] * b[1] - a[1] * b[0])
+
+
+def _norme3(a):
+    return math.sqrt(_scal(a, a))
+
+
+def _projette(q) -> tuple[float, float]:
+    """Perspective cavaliere : (x, y, z) -> (u, v), u vers la droite, v vers le haut."""
+    return q[0] + C45 * q[1], q[2] + C45 * q[1]
+
+
+def _faces_vues(S: dict, faces: list) -> list:
+    """[(face, normale sortante, vue ?)] d'un polyedre convexe."""
+    g = tuple(sum(q[i] for q in S.values()) / len(S) for i in range(3))
+    res = []
+    for face in faces:
+        pts = [S[n] for n in face]
+        nrm = [0.0, 0.0, 0.0]
+        for p_, q_ in zip(pts, pts[1:] + pts[:1]):
+            nrm[0] += (p_[1] - q_[1]) * (p_[2] + q_[2])
+            nrm[1] += (p_[2] - q_[2]) * (p_[0] + q_[0])
+            nrm[2] += (p_[0] - q_[0]) * (p_[1] + q_[1])
+        c = tuple(sum(q[i] for q in pts) / len(pts) for i in range(3))
+        if _scal(nrm, _sous(c, g)) < 0:
+            nrm = [-x for x in nrm]
+        n = _norme3(nrm) or 1.0
+        res.append((face, tuple(x / n for x in nrm), _scal(nrm, VUE) / n < -1e-9))
+    return res
+
+
+def _aretes(faces_vues: list) -> dict:
+    """{frozenset(a, b): [(a, b), vue ?]} : une arete est vue si l'une de ses faces l'est."""
+    ar: dict = {}
+    for face, _, vue in faces_vues:
+        for a, b in zip(face, face[1:] + face[:1]):
+            k = frozenset((a, b))
+            if k not in ar:
+                ar[k] = [(a, b), False]
+            ar[k][1] = ar[k][1] or vue
+    return ar
+
+
+_COTE_NOMBRE = re.compile(r"^\s*(?:≈\s*)?(\d+(?:[.,]\d+)?)")
+
+
+def _controle_cote(texte: str, longueur: float, quoi: str) -> None:
+    """Une cote chiffree doit dire la longueur dessinee : valeur exacte, ou
+    valeur correctement arrondie au rang ecrit. « ? », « x », « h » sont libres."""
+    t = texte.replace(ESPACE_MILLIERS, "").replace(" ", "")
+    m = _COTE_NOMBRE.match(t)
+    if not m:
+        return
+    n = m.group(1).replace(",", ".")
+    rang = len(n.split(".")[1]) if "." in n else 0
+    val = float(n)
+    if abs(val - longueur) <= 1e-9 * max(1.0, longueur) or abs(val - longueur) < 0.5 * 10 ** -rang - 1e-9:
+        return
+    fr = Fraction(longueur).limit_denominator(1000)
+    vraie = _texte_nombre(fr) if abs(float(fr) - longueur) < 1e-9 else f"{longueur:.4f}".replace(".", ",")
+    raise FigureInvalide(f"{quoi} : la cote « {texte} » ne correspond pas a la longueur dessinee ({vraie})")
+
+
+def _cote_auto(longueur: float, unite: str, quoi: str) -> str:
+    """Texte d'une cote calculee : la longueur exacte, si elle est decimale."""
+    fr = Fraction(longueur).limit_denominator(1000)
+    if abs(float(fr) - longueur) > 1e-9 * max(1.0, longueur) or (fr * 1000).denominator != 1:
+        raise FigureInvalide(f"{quoi} : longueur non decimale ({longueur:.4f}), donner \"texte\" "
+                             "(valeur arrondie, par exemple « ≈ 7,2 cm »)")
+    return _texte_nombre(fr) + (" " + unite if unite else "")
+
+
+def _dir_etiquette(pt, voisins, centre) -> tuple[float, float]:
+    """Direction (ecran) ou ecrire le nom d'un sommet : au milieu du plus grand
+    angle libre entre ses aretes, de preference vers l'exterieur du solide."""
+    ox, oy = pt[0] - centre[0], pt[1] - centre[1]
+    no = math.hypot(ox, oy)
+    ext = math.atan2(oy, ox) if no > 1e-6 else -math.pi / 2
+    angles = sorted(math.atan2(q[1] - pt[1], q[0] - pt[0]) for q in voisins
+                    if math.hypot(q[0] - pt[0], q[1] - pt[1]) > 1e-6)
+    if not angles:
+        return math.cos(ext), math.sin(ext)
+    meilleur, choix = -1.0, ext
+    for k, a in enumerate(angles):
+        b = angles[(k + 1) % len(angles)] + (2 * math.pi if k == len(angles) - 1 else 0)
+        ecart = b - a
+        mil = a + ecart / 2
+        score = ecart * (1 + 0.6 * math.cos(mil - ext))
+        if score > meilleur:
+            meilleur, choix = score, mil
+    return math.cos(choix), math.sin(choix)
+
+
+PLACES_ETIQUETTE = {"haut": (0, -1), "bas": (0, 1), "gauche": (-1, 0), "droite": (1, 0),
+                    "haut_gauche": (-0.7, -0.7), "haut_droite": (0.7, -0.7),
+                    "bas_gauche": (-0.7, 0.7), "bas_droite": (0.7, 0.7)}
+
+
+def _dist_seg(p, a, b) -> float:
+    """Distance ecran du point p au segment [ab]."""
+    dx, dy = b[0] - a[0], b[1] - a[1]
+    l2 = dx * dx + dy * dy
+    k = 0.0 if l2 == 0 else max(0.0, min(1.0, ((p[0] - a[0]) * dx + (p[1] - a[1]) * dy) / l2))
+    return math.hypot(p[0] - a[0] - k * dx, p[1] - a[1] - k * dy)
+
+
+def _coupe_boite(a, b, boite) -> bool:
+    """Le segment ecran [ab] touche-t-il le rectangle (x0, y0, x1, y1) ? (Liang-Barsky)"""
+    x0, y0, x1, y1 = boite
+    dx, dy = b[0] - a[0], b[1] - a[1]
+    t0, t1 = 0.0, 1.0
+    for p_, q_ in ((-dx, a[0] - x0), (dx, x1 - a[0]), (-dy, a[1] - y0), (dy, y1 - a[1])):
+        if abs(p_) < 1e-12:
+            if q_ < 0:
+                return False
+        else:
+            r = q_ / p_
+            if p_ < 0:
+                t0 = max(t0, r)
+            else:
+                t1 = min(t1, r)
+            if t0 > t1:
+                return False
+    return True
+
+
+def _placer(candidats, texte: str, taille: int, segs: list, boites: list, cadre: tuple, propre=None):
+    """Choisit, parmi des positions candidates (x, y, ancre, penalite), celle
+    dont le texte ne touche ni trait ni autre texte et reste dans le cadre ;
+    a egalite, la moins penalisee (la place naturelle). Range sa boite.
+    "propre" : le segment ecran que le texte decrit (une cote) ; une place plus
+    proche d'un autre trait que de lui est evitee (la cote serait mal lue)."""
+    xg, xd, hmax = cadre
+    w = 7.2 * len(texte) * taille / 13
+    meilleur = None
+    for x, y, ancre, pen in candidats:
+        x0 = x - (w if ancre == "end" else w / 2 if ancre in ("middle", "sur") else 0)
+        boite = (x0 - 1, y - 0.78 * taille, x0 + w + 1, y + 2)
+        score = pen
+        score += 10 * sum(1 for a, b in segs if (a, b) != propre and _coupe_boite(a, b, boite))
+        score += 12 * sum(1 for bx in boites
+                          if not (boite[2] < bx[0] or bx[2] < boite[0] or boite[3] < bx[1] or bx[3] < boite[1]))
+        if boite[0] < xg + 2 or boite[2] > xd - 2 or boite[1] < 2 or boite[3] > hmax - 2:
+            score += 30
+        if propre is not None:
+            centre_b = ((boite[0] + boite[2]) / 2, (boite[1] + boite[3]) / 2)
+            d0 = _dist_seg(centre_b, *propre)
+            if any(_dist_seg(centre_b, a, b) < d0 - 1 for a, b in segs if (a, b) != propre):
+                score += 25
+        if meilleur is None or score < meilleur[0]:
+            meilleur = (score, x, y, ancre, boite)
+    boites.append(meilleur[4])
+    return meilleur[1], meilleur[2], meilleur[3]
+
+
+def _ecrire_cote(x, y, ancre, texte, taille) -> list[str]:
+    """Texte d'une cote ; pose sur son trait ("sur"), il a un fond blanc."""
+    if ancre == "sur":
+        w = 7.2 * len(texte) * taille / 13
+        return [f'<rect x="{x - w / 2 - 2:.1f}" y="{y - 0.8 * taille:.1f}" width="{w + 4:.1f}" '
+                f'height="{taille + 1}" fill="#ffffff" rx="2"/>', _texte(x, y, texte, taille)]
+    return [_texte(x, y, texte, taille, ancre=ancre)
+            .replace("<text ", '<text stroke="#ffffff" stroke-width="3" paint-order="stroke" ', 1)]
+
+
+def _candidats_cote(a, b, centre, cote=None):
+    """Positions d'une cote le long de [ab] : au milieu puis decalee, du cote
+    exterieur d'abord (ou du seul cote force)."""
+    (x1, y1), (x2, y2) = a, b
+    dx, dy = x2 - x1, y2 - y1
+    n = math.hypot(dx, dy) or 1.0
+    nx, ny = -dy / n, dx / n
+    mx, my = (x1 + x2) / 2, (y1 + y2) / 2
+    if cote is not None:
+        if cote not in ("gauche", "droite", "haut", "bas"):
+            raise FigureInvalide("cotes.cote : gauche, droite, haut ou bas")
+        vx, vy = PLACES_ETIQUETTE[cote]
+        if abs(nx * vx + ny * vy) < 0.2:
+            nx, ny = vx, vy
+        elif nx * vx + ny * vy < 0:
+            nx, ny = -nx, -ny
+        cotes_ = [(nx, ny, 0)]
+    else:
+        if (mx - centre[0]) * nx + (my - centre[1]) * ny < 0:
+            nx, ny = -nx, -ny
+        cotes_ = [(nx, ny, 0), (-nx, -ny, 2)]
+    # Sur le trait lui-meme (texte sur fond blanc) : quand la place manque,
+    # mieux vaut couper le trait que laisser croire que la cote est a un autre.
+    res = [(x1 + dx * k, y1 + dy * k + 4.5, "sur", 6 + pen_k) for k, pen_k in ((0.5, 0), (0.35, 1), (0.65, 1))]
+    if cote is not None:
+        res = [(x, y, an, pen + 6) for x, y, an, pen in res]   # cote forcee : sur le trait en dernier recours
+    for sx, sy, pen in cotes_:
+        for k, pen_k in ((0.5, 0), (0.35, 1), (0.65, 1), (0.22, 3), (0.78, 3), (0.12, 5), (0.88, 5)):
+            px_, py_ = x1 + dx * k, y1 + dy * k
+            for dist, pen_d in ((1.0, 0), (1.8, 2), (3.2, 4)):
+                if abs(sx) > 0.5:
+                    res.append((px_ + sx * 7 * dist, py_ + sy * 7 * dist + 5, "start" if sx > 0 else "end",
+                                pen + pen_k + pen_d))
+                else:
+                    res.append((px_ + sx * 12 * dist, py_ + sy * 12 * dist + 5, "middle", pen + pen_k + pen_d))
+    return res
+
+
+def _cadrage(uv: list, gauche: float, droite: float, y0: float, t: float):
+    """Echelle et placement : la boite des points (u, v) tient dans la largeur
+    [gauche, droite] et la hauteur t, posee sur y0, centree en largeur."""
+    us, vs = [q[0] for q in uv], [q[1] for q in uv]
+    bw, bh = max(max(us) - min(us), 1e-9), max(max(vs) - min(vs), 1e-9)
+    s = min((droite - gauche) / bw, t / bh)
+    ox = gauche + ((droite - gauche) - bw * s) / 2
+    umin, vmin = min(us), min(vs)
+
+    def ecran(u, v):
+        return ox + (u - umin) * s, y0 - (v - vmin) * s
+    return ecran, s
+
+
+def _dessin_solide_cote(sorte: str, gauche: float, droite: float, y0: float, t: float,
+                        sol: dict, cadre: tuple) -> list[str]:
+    """Solide a proportions vraies, cote, annote (voir la docstring de `_solide`)."""
+    d, dims_donnees = _dimensions(sorte, sol)
+    unite = sol.get("unite", "cm")
+    if not (isinstance(unite, str) and len(unite) <= 4):
+        raise FigureInvalide("unite : texte de 4 caracteres au plus (cm, m, mm, dm)")
+    position = sol.get("position", "debout")
+    if position not in ("debout", "couche"):
+        raise FigureInvalide("position : \"debout\" ou \"couche\"")
+    if position == "couche" and sorte not in ("prisme", "prisme_hexagone", "cylindre"):
+        raise FigureInvalide("position couche : prisme, prisme_hexagone ou cylindre seulement")
+    for cle in ("cotes", "segments", "a_completer"):
+        if not isinstance(sol.get(cle, []), list):
+            raise FigureInvalide(f"{cle} : liste attendue")
+    if sorte in ("cylindre", "cone", "boule"):
+        return _dessin_rond_cote(sorte, d, dims_donnees, unite, position == "couche",
+                                 gauche, droite, y0, t, sol, cadre)
+    if "grand_cercle" in sol:
+        raise FigureInvalide("grand_cercle : boule seulement")
+
+    # Noms : par defaut A, B, C... (S pour le sommet d'une pyramide) ; une
+    # liste dans "sommets" les remplace dans le meme ordre.
+    lettres = sol.get("sommets", False)
+    S0, faces0, apex = _polyedre(sorte, d, position == "couche", None)
+    renom = {n: n for n in S0}
+    if isinstance(lettres, list):
+        if len(lettres) != len(S0) or not all(isinstance(n, str) and 1 <= len(n) <= 3 for n in lettres) \
+                or len(set(lettres)) != len(lettres):
+            raise FigureInvalide(f"sommets : {len(S0)} noms distincts attendus, dans l'ordre {', '.join(S0)}")
+        renom = dict(zip(S0, lettres))
+    inverse = {v: k for k, v in renom.items()}
+    pied = sol.get("pied")
+    if pied is not None:
+        if sorte not in ("pyramide", "pyramide_triangle"):
+            raise FigureInvalide("pied : pyramides seulement")
+        if pied != "centre" and pied not in inverse:
+            raise FigureInvalide(f"pied : \"centre\" ou un sommet de la base")
+        pied = "centre" if pied == "centre" else inverse[pied]
+        S0, faces0, apex = _polyedre(sorte, d, position == "couche", pied)
+    S = {renom[n]: q for n, q in S0.items()}
+    faces = [[renom[n] for n in f_] for f_ in faces0]
+    nommes = dict(S)                       # tous les points nommables
+    aretes = _aretes(_faces_vues(S, faces))
+
+    # Points definis sur des segments : {"M": ["A", "B", "1/2"]}.
+    extra = sol.get("points", {})
+    if not isinstance(extra, dict):
+        raise FigureInvalide("points : objet {\"M\": [\"A\", \"B\", \"1/2\"]} attendu (point M de [AB], AM = 1/2 AB)")
+    for n, defn in extra.items():
+        if not (isinstance(n, str) and 1 <= len(n) <= 3) or n in nommes:
+            raise FigureInvalide(f"points : nom « {n} » invalide ou deja pris")
+        if not (isinstance(defn, list) and len(defn) == 3):
+            raise FigureInvalide(f"points.{n} : [\"A\", \"B\", t] attendu")
+        a, b = defn[0], defn[1]
+        if a not in nommes or b not in nommes:
+            raise FigureInvalide(f"points.{n} : {a} ou {b} inconnu")
+        k = float(_nombre(defn[2], f"points.{n}"))
+        if not 0 <= k <= 1:
+            raise FigureInvalide(f"points.{n} : t entre 0 et 1 (point du segment)")
+        A, B = nommes[a], nommes[b]
+        nommes[n] = tuple(A[i] + k * (B[i] - A[i]) for i in range(3))
+
+    # Hauteur d'une pyramide : pied nomme, utilisable dans les cotes.
+    hauteur = sol.get("hauteur", False)
+    if hauteur not in (True, False):
+        raise FigureInvalide("hauteur : true ou false")
+    nom_pied = None
+    if hauteur:
+        if apex is None:
+            raise FigureInvalide("hauteur : pyramides seulement (pour un prisme, coter une arete)")
+        nom_pied = sol.get("nom_pied", "H")
+        if not (isinstance(nom_pied, str) and 1 <= len(nom_pied) <= 3):
+            raise FigureInvalide("nom_pied : 1 a 3 caracteres")
+        pied_xyz = (apex[1][0], apex[1][1], 0.0)
+        existant = [n for n, q in nommes.items() if _norme3(_sous(q, pied_xyz)) < 1e-9]
+        if existant:
+            nom_pied = existant[0]
+        elif nom_pied in nommes:
+            raise FigureInvalide(f"nom_pied : « {nom_pied} » deja pris")
+        else:
+            nommes[nom_pied] = pied_xyz
+
+    def nomme(n, quoi):
+        if n not in nommes:
+            raise FigureInvalide(f"{quoi} : point « {n} » inconnu ({', '.join(nommes)})")
+        return nommes[n]
+
+    # Pyramide inscrite (cube ou pave) : le contenant en traits fins.
+    pyr = sol.get("pyramide")
+    pyr_S, pyr_faces = None, None
+    if pyr is not None:
+        if sorte not in ("cube", "pave"):
+            raise FigureInvalide("pyramide : inscrite dans un cube ou un pave seulement")
+        if not (isinstance(pyr, dict) and isinstance(pyr.get("base"), list) and len(pyr["base"]) >= 3
+                and isinstance(pyr.get("sommet"), str)):
+            raise FigureInvalide("pyramide : {\"base\": [\"A\", \"B\", \"C\"...], \"sommet\": \"G\"} attendu")
+        base = pyr["base"]
+        if len(set(base + [pyr["sommet"]])) != len(base) + 1:
+            raise FigureInvalide("pyramide : sommets en double")
+        pyr_S = {n: nomme(n, "pyramide") for n in base + [pyr["sommet"]]}
+        b0, b1, b2 = (pyr_S[n] for n in base[:3])
+        nrm = _vect(_sous(b1, b0), _sous(b2, b0))
+        if _norme3(nrm) < 1e-9:
+            raise FigureInvalide("pyramide : trois premiers points de la base alignes")
+        for n in base[3:]:
+            if abs(_scal(nrm, _sous(pyr_S[n], b0))) > 1e-9 * _norme3(nrm):
+                raise FigureInvalide(f"pyramide : la base n'est pas plane ({n})")
+        if abs(_scal(nrm, _sous(pyr_S[pyr["sommet"]], b0))) < 1e-9 * _norme3(nrm):
+            raise FigureInvalide("pyramide : le sommet est dans le plan de la base")
+        sm = pyr["sommet"]
+        pyr_faces = [list(base)] + [[sm, base[k], base[(k + 1) % len(base)]] for k in range(len(base))]
+
+    # Cadrage : sommets et points, plus une marge pour les cotes.
+    cotes = sol.get("cotes", [])
+    marge = 46 if cotes else 18
+    uv = [_projette(q) for q in nommes.values()]
+    ecran, s = _cadrage(uv, gauche + marge, droite - marge, y0, t)
+
+    def E(q):
+        return ecran(*_projette(q))
+    centre = (sum(E(q)[0] for q in S.values()) / len(S), sum(E(q)[1] for q in S.values()) / len(S))
+    corps: list[str] = []
+    fv = _faces_vues(S, faces)
+
+    # Face coloriee : liste de sommets, ou avant / dessus / droite (cube, pave).
+    face_c = sol.get("face")
+    face_set = None
+    if face_c is not None:
+        if isinstance(face_c, str) and sorte in ("cube", "pave") and face_c in ("avant", "dessus", "droite"):
+            face_set = {renom[n] for n in {"avant": "ABCD", "dessus": "DCGH", "droite": "BCGF"}[face_c]}
+        elif isinstance(face_c, list):
+            face_set = set(face_c)
+        if face_set is None or not any(set(f_) == face_set for f_ in faces):
+            raise FigureInvalide("face : liste des sommets d'une face (ou avant, dessus, droite pour un cube, un pave)")
+
+    def poly(pts_, remplissage, extra_=""):
+        chemin = " ".join(f"{x:.1f},{y:.1f}" for x, y in pts_)
+        corps.append(f'<polygon points="{chemin}" fill="{remplissage}" stroke="none"{extra_}/>')
+
+    contenant = pyr is not None
+    # Aretes a completer : lues avant le remplissage, car le bord d'une face
+    # coloriee trahirait l'arete absente ; on ne colorie alors aucune face.
+    a_comp = set()
+    for paire in sol.get("a_completer", []):
+        a, b = _paire(paire, "a_completer")
+        k = frozenset((a, b))
+        if k not in aretes:
+            raise FigureInvalide(f"a_completer : [{a}{b}] n'est pas une arete du solide")
+        a_comp.add(k)
+    rendu_ac = sol.get("rendu_a_completer", "absente")
+    if rendu_ac not in ("absente", "pointille"):
+        raise FigureInvalide("rendu_a_completer : \"absente\" ou \"pointille\"")
+    if not contenant and not a_comp:
+        for face, nrm, vue in fv:
+            if vue:
+                if face_set is not None and set(face) == face_set:
+                    teinte = REMPLI
+                elif nrm[2] > 0.7:
+                    teinte = "#f1f5f9"
+                elif nrm[1] < -0.7:
+                    teinte = "#ffffff"
+                else:
+                    teinte = "#e2e8f0"
+                poly([E(S[n]) for n in face], teinte)
+    if face_set is not None:
+        for face, nrm, vue in fv:
+            if set(face) == face_set and (not vue or contenant or a_comp):
+                poly([E(S[n]) for n in face], REMPLI, ' fill-opacity="0.5"')
+
+    # Section par un plan.
+    coupe = sol.get("coupe")
+    if coupe is not None:
+        corps.append(_section_polyedre(coupe, S, aretes, nommes, E))
+
+    # Aretes : cachees en pointilles, a completer absentes ou en pointilles fins.
+    couleur_ar = DOUX if contenant else TRAIT
+    traces: list[tuple[str, str]] = []           # segments dessines (pour les cotes)
+    traits_ecran: list = []                      # segments ecran (pour placer les textes)
+    for vue_voulue in (False, True):
+        for k, ((a, b), vue) in aretes.items():
+            if vue != vue_voulue:
+                continue
+            (x1, y1), (x2, y2) = E(S[a]), E(S[b])
+            if k in a_comp:
+                if rendu_ac == "pointille":
+                    corps.append(f'<line x1="{x1:.1f}" y1="{y1:.1f}" x2="{x2:.1f}" y2="{y2:.1f}" stroke="{DOUX}" '
+                                 f'stroke-width="1.6" stroke-dasharray="1.5 4" stroke-linecap="round"/>')
+                    traits_ecran.append(((x1, y1), (x2, y2)))
+                continue
+            extra_ = ' stroke-dasharray="4 3"' if not vue else ""
+            ep = (1.1 if not vue else 1.4) if contenant else (1.2 if not vue else 1.8)
+            corps.append(f'<line x1="{x1:.1f}" y1="{y1:.1f}" x2="{x2:.1f}" y2="{y2:.1f}" stroke="{couleur_ar}" '
+                         f'stroke-width="{ep}" stroke-linecap="round"{extra_}/>')
+            traces.append((a, b))
+            traits_ecran.append(((x1, y1), (x2, y2)))
+    voisins = {n: [] for n in nommes}
+    for a, b in traces:
+        voisins[a].append(E(nommes[b]))
+        voisins[b].append(E(nommes[a]))
+
+    if pyr is not None:
+        pfv = _faces_vues(pyr_S, pyr_faces)
+        for face, _, vue in pfv:
+            if vue:
+                poly([E(pyr_S[n]) for n in face], REMPLI, ' fill-opacity="0.35"')
+        par = _aretes(pfv)
+        for vue_voulue in (False, True):
+            for (a, b), vue in par.values():
+                if vue != vue_voulue:
+                    continue
+                (x1, y1), (x2, y2) = E(pyr_S[a]), E(pyr_S[b])
+                extra_ = ' stroke-dasharray="4 3"' if not vue else ""
+                corps.append(f'<line x1="{x1:.1f}" y1="{y1:.1f}" x2="{x2:.1f}" y2="{y2:.1f}" stroke="{ACCENT}" '
+                             f'stroke-width="{1.4 if not vue else 2.2}" stroke-linecap="round"{extra_}/>')
+                traces.append((a, b))
+                traits_ecran.append(((x1, y1), (x2, y2)))
+                voisins[a].append(E(pyr_S[b]))
+                voisins[b].append(E(pyr_S[a]))
+
+    # Hauteur : pointilles du sommet au pied, pied marque, angle droit.
+    if hauteur:
+        sx, sy = E(S[renom[apex[0]]])
+        hx, hy = E(nommes[nom_pied])
+        if nom_pied not in S:
+            corps.append(f'<line x1="{sx:.1f}" y1="{sy:.1f}" x2="{hx:.1f}" y2="{hy:.1f}" stroke="{ACCENT}" '
+                         f'stroke-width="1.6" stroke-dasharray="5 3"/>')
+            corps.append(f'<circle cx="{hx:.1f}" cy="{hy:.1f}" r="2.5" fill="{ACCENT}"/>')
+            traits_ecran.append(((sx, sy), (hx, hy)))
+        traces.append((renom[apex[0]], nom_pied))
+        voisins[renom[apex[0]]].append((hx, hy))
+        voisins[nom_pied].append((sx, sy))
+        # Petit carre dans le plan de face (vraie grandeur en cavaliere), du
+        # cote de l'interieur de la base.
+        q = nommes[nom_pied]
+        k = 9 / s
+        cx_base = sum(S[n][0] for n in S if n != renom[apex[0]]) / (len(S) - 1)
+        sens = 1 if cx_base >= q[0] else -1
+        c1 = E((q[0] + sens * k, q[1], q[2]))
+        c2 = E((q[0] + sens * k, q[1], q[2] + k))
+        c3 = E((q[0], q[1], q[2] + k))
+        corps.append(f'<path d="M{c1[0]:.1f},{c1[1]:.1f} L{c2[0]:.1f},{c2[1]:.1f} L{c3[0]:.1f},{c3[1]:.1f}" '
+                     f'fill="none" stroke="{ACCENT}" stroke-width="1.4"/>')
+        traits_ecran += [(c1, c2), (c2, c3)]
+        voisins[nom_pied].append(c1)
+
+    # Segments supplementaires (diagonale, candidats d'une arete a completer).
+    noms_seg = []
+    for i, sg in enumerate(sol.get("segments", [])):
+        if not isinstance(sg, dict):
+            raise FigureInvalide(f"segments {i + 1} : objet {{\"de\": \"A\", \"a\": \"G\"}} attendu")
+        a, b = sg.get("de"), sg.get("a")
+        A, B = nomme(a, f"segments {i + 1}"), nomme(b, f"segments {i + 1}")
+        if _norme3(_sous(A, B)) < 1e-9:
+            raise FigureInvalide(f"segments {i + 1} : extremites confondues")
+        if sg.get("style", "plein") not in ("plein", "pointille"):
+            raise FigureInvalide(f"segments {i + 1} : style \"plein\" ou \"pointille\"")
+        coul = TRAIT if sg.get("couleur") == "trait" else ACCENT
+        (x1, y1), (x2, y2) = E(A), E(B)
+        extra_ = ' stroke-dasharray="5 3"' if sg.get("style") == "pointille" else ""
+        corps.append(f'<line x1="{x1:.1f}" y1="{y1:.1f}" x2="{x2:.1f}" y2="{y2:.1f}" stroke="{coul}" '
+                     f'stroke-width="1.8" stroke-linecap="round"{extra_}/>')
+        traces.append((a, b))
+        traits_ecran.append(((x1, y1), (x2, y2)))
+        voisins[a].append((x2, y2))
+        voisins[b].append((x1, y1))
+        if sg.get("nom"):
+            noms_seg.append(((x1, y1), (x2, y2), str(sg["nom"])[:3]))
+
+    # Textes, places pour ne toucher ni trait ni autre texte : noms des
+    # sommets et des points, puis noms des segments, puis cotes.
+    forcees = sol.get("etiquettes", {})
+    if not isinstance(forcees, dict):
+        raise FigureInvalide("etiquettes : objet {\"A\": \"bas_gauche\"} attendu")
+    a_nommer = list(S) if lettres else []
+    a_nommer += [n for n in extra if not n.startswith("_")]
+    if hauteur and nom_pied not in S and lettres:
+        a_nommer.append(nom_pied)
+    xg, xd, hmax = cadre
+    taille = 13 if (xd - xg) > 150 else 11
+    boites: list = []
+    for n in a_nommer:
+        x, y = E(nommes[n])
+        boites.append((x - 3, y - 3, x + 3, y + 3))      # le point lui-meme
+    for n in a_nommer:
+        x, y = E(nommes[n])
+        if n in extra:
+            corps.append(f'<circle cx="{x:.1f}" cy="{y:.1f}" r="2.5" fill="{TRAIT}"/>')
+        if n in forcees:
+            if forcees[n] not in PLACES_ETIQUETTE:
+                raise FigureInvalide(f"etiquettes.{n} : {', '.join(PLACES_ETIQUETTE)}")
+            dx, dy = PLACES_ETIQUETTE[forcees[n]]
+            nd = math.hypot(dx, dy)
+            cands = [(x + dx / nd * 12, y + dy / nd * 12 + 4.5, "middle", 0)]
+        else:
+            gx_, gy_ = _dir_etiquette((x, y), voisins.get(n, []), centre)
+            ref = math.atan2(gy_, gx_)
+            cands = []
+            for j in range(16):
+                ang = ref + j * math.pi / 8
+                for dist, pen_d in ((12, 0), (16, 1.5)):
+                    cands.append((x + math.cos(ang) * dist, y + math.sin(ang) * dist + 4.5, "middle",
+                                  2 * (1 - math.cos(ang - ref)) + pen_d))
+        tx, ty, _ = _placer(cands, n, taille, traits_ecran, boites, cadre)
+        corps.append(_texte(tx, ty, n, taille, gras=True))
+    for a, b, nom in noms_seg:
+        cands = [c for c in _candidats_cote(a, b, centre) if c[2] != "sur"]
+        tx, ty, ancre = _placer(cands, nom, 13, traits_ecran, boites, cadre, (a, b))
+        corps.append(_texte(tx, ty, nom, 13, ancre=ancre, couleur=ACCENT, gras=True)
+                     .replace("<text ", '<text stroke="#ffffff" stroke-width="3" paint-order="stroke" ', 1))
+
+    # Cotes : sur un segment dessine ; texte calcule, ou controle s'il est chiffre.
+    deja = {frozenset(tr) for tr in traces}
+    for i, ct in enumerate(cotes):
+        if not (isinstance(ct, dict) and "arete" in ct):
+            raise FigureInvalide(f"cotes {i + 1} : {{\"arete\": [\"A\", \"B\"], \"texte\": \"8 cm\"}} attendu")
+        a, b = _paire(ct["arete"], f"cotes {i + 1}")
+        A, B = nomme(a, f"cotes {i + 1}"), nomme(b, f"cotes {i + 1}")
+        if frozenset((a, b)) not in deja:
+            raise FigureInvalide(f"cotes {i + 1} : [{a}{b}] n'est pas dessine (arete absente ? ajouter un segment)")
+        longueur = _norme3(_sous(A, B))
+        if "texte" in ct:
+            texte = str(ct["texte"])[:10]
+            _controle_cote(texte, longueur, f"cotes {i + 1}")
+        else:
+            if not dims_donnees:
+                raise FigureInvalide(f"cotes {i + 1} : cote calculee sans \"dimensions\" ; donner les dimensions")
+            texte = _cote_auto(longueur, unite, f"cotes {i + 1}")
+        if texte:
+            cands = _candidats_cote(E(A), E(B), centre, ct.get("cote"))
+            tx, ty, ancre = _placer(cands, texte, taille, traits_ecran, boites, cadre, (E(A), E(B)))
+            corps += _ecrire_cote(tx, ty, ancre, texte, taille)
+    return corps
+
+
+def _section_polyedre(coupe, S: dict, aretes: dict, nommes: dict, E) -> str:
+    """Section d'un polyedre convexe par un plan : polygone colorie."""
+    if not isinstance(coupe, dict):
+        raise FigureInvalide("coupe : objet attendu")
+    if "plan" in coupe:
+        trois = coupe["plan"]
+        if not (isinstance(trois, list) and len(trois) == 3 and all(n in nommes for n in trois)):
+            raise FigureInvalide("coupe.plan : trois points nommes du solide (sommets ou points)")
+        p0, p1, p2 = (nommes[n] for n in trois)
+        nrm = _vect(_sous(p1, p0), _sous(p2, p0))
+        if _norme3(nrm) < 1e-9:
+            raise FigureInvalide("coupe.plan : trois points alignes")
+    elif "parallele" in coupe:
+        axe = {"base": 2, "avant": 1, "cote": 0}.get(coupe["parallele"])
+        if axe is None:
+            raise FigureInvalide("coupe.parallele : \"base\" (plan horizontal), \"avant\" (de face) ou \"cote\"")
+        pos = _nombre(coupe.get("position"), "coupe.position")
+        if not 0 < pos < 1:
+            raise FigureInvalide("coupe.position : fraction strictement entre 0 et 1 (depuis le bas, l'avant ou la gauche)")
+        vals = [q[axe] for q in S.values()]
+        c = min(vals) + float(pos) * (max(vals) - min(vals))
+        p0 = tuple(c if i == axe else 0.0 for i in range(3))
+        nrm = tuple(1.0 if i == axe else 0.0 for i in range(3))
+    else:
+        raise FigureInvalide("coupe : {\"parallele\": ..., \"position\": t} ou {\"plan\": [\"M\", \"N\", \"P\"]}")
+    nn = _norme3(nrm)
+    cotes_ = {n: _scal(nrm, _sous(q, p0)) / nn for n, q in S.items()}
+    if all(v >= -1e-9 for v in cotes_.values()) or all(v <= 1e-9 for v in cotes_.values()):
+        raise FigureInvalide("coupe : le plan ne traverse pas le solide (il le touche au plus sur une face)")
+    pts = []
+    for (a, b), _ in aretes.values():
+        da, db = cotes_[a], cotes_[b]
+        if abs(da) <= 1e-9:
+            pts.append(S[a])
+        if abs(db) <= 1e-9:
+            pts.append(S[b])
+        if da * db < 0 and abs(da) > 1e-9 and abs(db) > 1e-9:
+            k = da / (da - db)
+            pts.append(tuple(S[a][i] + k * (S[b][i] - S[a][i]) for i in range(3)))
+    uniques = []
+    for q in pts:
+        if all(_norme3(_sous(q, r)) > 1e-7 for r in uniques):
+            uniques.append(q)
+    if len(uniques) < 3:
+        raise FigureInvalide("coupe : section reduite a un point ou un segment")
+    g = tuple(sum(q[i] for q in uniques) / len(uniques) for i in range(3))
+    e1 = _sous(uniques[0], g)
+    e1 = tuple(x / _norme3(e1) for x in e1)
+    e2 = _vect(tuple(x / nn for x in nrm), e1)
+    uniques.sort(key=lambda q: math.atan2(_scal(_sous(q, g), e2), _scal(_sous(q, g), e1)))
+    chemin = " ".join(f"{E(q)[0]:.1f},{E(q)[1]:.1f}" for q in uniques)
+    return (f'<polygon points="{chemin}" fill="{REMPLI_FORT}" fill-opacity="0.75" stroke="{ACCENT}" '
+            f'stroke-width="1.6" stroke-linejoin="round"/>')
+
+
+def _dessin_rond_cote(sorte, d, dims_donnees, unite, couche, gauche, droite, y0, t, sol, cadre) -> list[str]:
+    """Cylindre, cone, boule a proportions vraies, annotes."""
+    for cle in ("a_completer", "pyramide", "pied", "segments", "etiquettes"):
+        if cle in sol:
+            raise FigureInvalide(f"{cle} : pas pour un {sorte}")
+    if sorte != "boule" and ("points" in sol or "grand_cercle" in sol):
+        raise FigureInvalide("points, grand_cercle : boule seulement")
+    r = float(d["rayon"])
+    h = float(d.get("hauteur", 0))
+    cotes = sol.get("cotes", [])
+    marge = 46 if cotes else 18
+    W = droite - gauche - 2 * marge
+    xm = (gauche + droite) / 2
+    corps: list[str] = []
+    xg, xd, hmax = cadre
+    defaut_noms = {"cylindre": ["O", "O'"], "cone": ["S", "O"], "boule": ["O"]}[sorte]
+    lettres = sol.get("sommets", False)
+    noms = defaut_noms
+    if isinstance(lettres, list):
+        if len(lettres) != len(defaut_noms) or not all(isinstance(n, str) and 1 <= len(n) <= 3 for n in lettres):
+            raise FigureInvalide(f"sommets : {len(defaut_noms)} noms attendus ({', '.join(defaut_noms)})")
+        noms = lettres
+    hauteur = sol.get("hauteur", False)
+    if hauteur not in (True, False) or (hauteur and sorte == "boule"):
+        raise FigureInvalide("hauteur : true ou false, cone ou cylindre")
+    coupe = sol.get("coupe")
+    if coupe is not None and not isinstance(coupe, dict):
+        raise FigureInvalide("coupe : objet attendu")
+    trait_ = f'stroke="{TRAIT}" stroke-width="1.8"'
+    pointille = f'stroke="{TRAIT}" stroke-width="1.2" stroke-dasharray="4 3"'
+    segs: dict[str, tuple] = {}            # grandeur -> (a, b, cote par defaut, longueur)
+    marques: list[tuple] = []              # (x, y, nom, direction)
+
+    def point(x, y, nom, dx, dy):
+        corps.append(f'<circle cx="{x:.1f}" cy="{y:.1f}" r="2.5" fill="{TRAIT}"/>')
+        marques.append((x, y, nom, dx, dy))
+
+    if sorte == "boule":
+        pts_b = sol.get("points", [])
+        if not isinstance(pts_b, list):
+            raise FigureInvalide("points : liste [{\"nom\": \"A\", \"distance\": 5, \"angle\": 30}] pour une boule")
+        lus = []
+        for i, q in enumerate(pts_b):
+            if not isinstance(q, dict) or not isinstance(q.get("nom"), str) or not 1 <= len(q["nom"]) <= 3:
+                raise FigureInvalide(f"points {i + 1} : {{\"nom\": \"A\", \"distance\": 5, \"angle\": 30}} attendu")
+            dist = _nombre(q.get("distance"), f"points {i + 1}.distance")
+            if dist < 0 or dist > 2 * d["rayon"]:
+                raise FigureInvalide(f"points {i + 1} : distance au centre entre 0 et deux rayons")
+            ang = float(_nombre(q.get("angle", [35, 150, 250, 320, 100, 200][i % 6]), f"points {i + 1}.angle"))
+            lus.append((q["nom"], float(dist), ang))
+        ext = max([r] + [dd for _, dd, _ in lus]) * 1.02
+        s = min(W / (2 * ext), t / (2 * ext))
+        R = r * s
+        cx, cy = xm, y0 - ext * s
+        corps.append(f'<circle cx="{cx:.1f}" cy="{cy:.1f}" r="{R:.1f}" fill="#f8fafc" {trait_}/>')
+        gc = sol.get("grand_cercle")
+        if gc not in (None, "equateur", "meridien"):
+            raise FigureInvalide("grand_cercle : \"equateur\" ou \"meridien\"")
+        if gc == "equateur":
+            corps.append(f'<ellipse cx="{cx:.1f}" cy="{cy:.1f}" rx="{R:.1f}" ry="{R * 0.3:.1f}" fill="{REMPLI}" fill-opacity="0.7" stroke="none"/>')
+        if gc == "meridien":
+            corps.append(f'<ellipse cx="{cx:.1f}" cy="{cy:.1f}" rx="{R * 0.3:.1f}" ry="{R:.1f}" fill="{REMPLI}" fill-opacity="0.7" stroke="none"/>')
+            corps.append(f'<path d="M{cx:.1f},{cy - R:.1f} A{R * 0.3:.1f},{R:.1f} 0 0 1 {cx:.1f},{cy + R:.1f}" fill="none" stroke="{ACCENT}" stroke-width="1.6"/>')
+            corps.append(f'<path d="M{cx:.1f},{cy - R:.1f} A{R * 0.3:.1f},{R:.1f} 0 0 0 {cx:.1f},{cy + R:.1f}" fill="none" stroke="{ACCENT}" stroke-width="1.1" stroke-dasharray="4 3"/>')
+        coul_eq = ACCENT if gc == "equateur" else TRAIT
+        corps.append(f'<path d="M{cx - R:.1f},{cy:.1f} A{R:.1f},{R * 0.3:.1f} 0 0 0 {cx + R:.1f},{cy:.1f}" '
+                     f'fill="none" stroke="{coul_eq}" stroke-width="{1.6 if gc == "equateur" else 1.2}"/>')
+        corps.append(f'<path d="M{cx - R:.1f},{cy:.1f} A{R:.1f},{R * 0.3:.1f} 0 0 1 {cx + R:.1f},{cy:.1f}" '
+                     f'fill="none" stroke="{coul_eq}" stroke-width="1" stroke-dasharray="4 3"/>')
+        if coupe is not None:
+            if set(coupe) - {"distance", "nom"}:
+                raise FigureInvalide("coupe : boule, {\"distance\": d} (plan horizontal a la distance d du centre, "
+                                     "d > 0 au-dessus), \"nom\" du centre de la section")
+            dd = _nombre(coupe.get("distance"), "coupe.distance")
+            if abs(dd) >= d["rayon"]:
+                raise FigureInvalide("coupe.distance : plus petite que le rayon (sinon le plan ne coupe pas la boule)")
+            rs = math.sqrt(r * r - float(dd) ** 2)
+            yh = cy - float(dd) * s
+            corps.append(f'<ellipse cx="{cx:.1f}" cy="{yh:.1f}" rx="{rs * s:.1f}" ry="{rs * s * 0.3:.1f}" '
+                         f'fill="{REMPLI_FORT}" fill-opacity="0.75" stroke="{ACCENT}" stroke-width="1.6"/>')
+            segs["distance"] = ((cx, cy), (cx, yh), "gauche", abs(float(dd)))
+            segs["rayon_section"] = ((cx, yh), (cx + rs * s, yh), "haut", rs)
+            if coupe.get("nom"):
+                point(cx, yh, str(coupe["nom"])[:3], -0.8, -0.6)
+        a30 = math.radians(30)
+        bord = (cx + R * math.cos(a30), cy - R * math.sin(a30))
+        segs["rayon"] = ((cx, cy), bord, "haut", r)
+        segs["diametre"] = ((cx - R * math.cos(a30), cy + R * math.sin(a30)), bord, "haut", 2 * r)
+        if lettres:
+            point(cx, cy, noms[0], -0.7, 0.7)
+        for nom, dist, ang in lus:
+            x, y = cx + dist * s * math.cos(math.radians(ang)), cy - dist * s * math.sin(math.radians(ang))
+            corps.append(_ligne(x - 4, y - 4, x + 4, y + 4, epaisseur=1.6))
+            corps.append(_ligne(x - 4, y + 4, x + 4, y - 4, epaisseur=1.6))
+            marques.append((x, y, nom, math.cos(math.radians(ang)), -math.sin(math.radians(ang))))
+        centre = (cx, cy)
+    elif couche:                                   # cylindre couche, axe horizontal
+        if coupe is not None:
+            raise FigureInvalide("coupe : cylindre debout seulement")
+        s = min(W / (h + 0.76 * r), t / (2 * r))
+        R, rx = r * s, 0.38 * r * s
+        xl = xm - h * s / 2
+        xr = xm + h * s / 2
+        cy = y0 - R
+        corps.append(f'<path d="M{xl:.1f},{cy - R:.1f} A{rx:.1f},{R:.1f} 0 0 0 {xl:.1f},{cy + R:.1f}" fill="none" {trait_}/>')
+        corps.append(f'<path d="M{xl:.1f},{cy - R:.1f} A{rx:.1f},{R:.1f} 0 0 1 {xl:.1f},{cy + R:.1f}" fill="none" {pointille}/>')
+        corps.append(_ligne(xl, cy - R, xr, cy - R, epaisseur=1.8))
+        corps.append(_ligne(xl, cy + R, xr, cy + R, epaisseur=1.8))
+        corps.append(f'<ellipse cx="{xr:.1f}" cy="{cy:.1f}" rx="{rx:.1f}" ry="{R:.1f}" fill="#f1f5f9" {trait_}/>')
+        if hauteur or lettres:
+            corps.append(f'<line x1="{xl:.1f}" y1="{cy:.1f}" x2="{xr:.1f}" y2="{cy:.1f}" stroke="{DOUX}" stroke-width="1.2" stroke-dasharray="5 3"/>')
+        segs["rayon"] = ((xr, cy), (xr, cy - R), "droite", r)
+        segs["diametre"] = ((xr, cy + R), (xr, cy - R), "droite", 2 * r)
+        segs["hauteur"] = ((xl, cy + R), (xr, cy + R), "bas", h)
+        if lettres:
+            point(xl, cy, noms[0], -0.2, 1)
+            point(xr, cy, noms[1], 0.2, 1)
+        centre = (xm, cy)
+    else:                                          # cylindre debout, cone
+        haut_total = h + (0.76 if sorte == "cylindre" else 0.38) * r
+        s = min(W / (2 * r), t / haut_total)
+        R, ry = r * s, 0.38 * r * s
+        cx, cyb = xm, y0 - ry
+        corps.append(f'<path d="M{cx - R:.1f},{cyb:.1f} A{R:.1f},{ry:.1f} 0 0 0 {cx + R:.1f},{cyb:.1f}" fill="none" {trait_}/>')
+        corps.append(f'<path d="M{cx - R:.1f},{cyb:.1f} A{R:.1f},{ry:.1f} 0 0 1 {cx + R:.1f},{cyb:.1f}" fill="none" {pointille}/>')
+        yt = cyb - h * s
+        if sorte == "cylindre":
+            corps.append(_ligne(cx - R, cyb, cx - R, yt, epaisseur=1.8))
+            corps.append(_ligne(cx + R, cyb, cx + R, yt, epaisseur=1.8))
+            corps.append(f'<ellipse cx="{cx:.1f}" cy="{yt:.1f}" rx="{R:.1f}" ry="{ry:.1f}" fill="#f1f5f9" {trait_}/>')
+            if hauteur or lettres:
+                corps.append(f'<line x1="{cx:.1f}" y1="{cyb:.1f}" x2="{cx:.1f}" y2="{yt:.1f}" stroke="{DOUX}" stroke-width="1.2" stroke-dasharray="5 3"/>')
+            segs["rayon"] = ((cx, yt), (cx + R, yt), "haut", r)
+            segs["diametre"] = ((cx - R, yt), (cx + R, yt), "haut", 2 * r)
+            segs["hauteur"] = ((cx + R, cyb), (cx + R, yt), "droite", h)
+            if lettres:
+                point(cx, cyb, noms[0], -0.8, 0.5)
+                point(cx, yt, noms[1], -0.8, -0.5)
+        else:
+            corps.append(_ligne(cx - R, cyb, cx, yt, epaisseur=1.8))
+            corps.append(_ligne(cx + R, cyb, cx, yt, epaisseur=1.8))
+            if hauteur:
+                corps.append(f'<line x1="{cx:.1f}" y1="{cyb:.1f}" x2="{cx:.1f}" y2="{yt:.1f}" stroke="{ACCENT}" stroke-width="1.6" stroke-dasharray="5 3"/>')
+                corps.append(f'<path d="M{cx + 9:.1f},{cyb:.1f} L{cx + 9:.1f},{cyb - 9:.1f} L{cx:.1f},{cyb - 9:.1f}" fill="none" stroke="{ACCENT}" stroke-width="1.4"/>')
+            segs["rayon"] = ((cx, cyb), (cx + R, cyb), "bas", r)
+            segs["diametre"] = ((cx - R, cyb), (cx + R, cyb), "bas", 2 * r)
+            segs["hauteur"] = ((cx, yt), (cx, cyb), "gauche", h)
+            segs["generatrice"] = ((cx + R, cyb), (cx, yt), "droite", math.hypot(r, h))
+            if lettres:
+                marques.append((cx, yt, noms[0], 0, -1))
+                point(cx, cyb, noms[1], -0.8, 0.6)
+        if coupe is not None:
+            par = coupe.get("parallele")
+            if set(coupe) - {"parallele", "position"} or par not in (("base", "axe") if sorte == "cylindre" else ("base",)):
+                raise FigureInvalide("coupe : {\"parallele\": \"base\", \"position\": t} (t de 0 a 1 depuis la base)"
+                                     + (" ou {\"parallele\": \"axe\", \"position\": t} (t de -1 a 1 : ecart a l'axe "
+                                        "en rayons, positif vers l'arriere)" if sorte == "cylindre" else ""))
+            pos = float(_nombre(coupe.get("position"), "coupe.position"))
+            if par == "base":
+                if not 0 < pos < 1:
+                    raise FigureInvalide("coupe.position : strictement entre 0 et 1")
+                k = (1 - pos) if sorte == "cone" else 1.0
+                corps.append(f'<ellipse cx="{cx:.1f}" cy="{cyb - pos * h * s:.1f}" rx="{R * k:.1f}" ry="{ry * k:.1f}" '
+                             f'fill="{REMPLI_FORT}" fill-opacity="0.75" stroke="{ACCENT}" stroke-width="1.6"/>')
+            else:
+                if not -1 < pos < 1:
+                    raise FigureInvalide("coupe.position : strictement entre -1 et 1")
+                w = R * math.sqrt(1 - pos * pos)
+                yb = cyb - pos * ry
+                corps.append(f'<polygon points="{cx - w:.1f},{yb:.1f} {cx + w:.1f},{yb:.1f} {cx + w:.1f},{yb - h * s:.1f} '
+                             f'{cx - w:.1f},{yb - h * s:.1f}" fill="{REMPLI_FORT}" fill-opacity="0.6" stroke="{ACCENT}" '
+                             f'stroke-width="1.6" stroke-linejoin="round"/>')
+        centre = (cx, cyb - h * s / 2)
+
+    taille = 13 if (xd - xg) > 150 else 11
+    a_ecrire = []
+    for i, ct in enumerate(cotes):
+        if not (isinstance(ct, dict) and ct.get("grandeur") in segs):
+            raise FigureInvalide(f"cotes {i + 1} : {{\"grandeur\": ..., \"texte\": ...}} avec grandeur parmi "
+                                 f"{', '.join(segs)}")
+        a, b, cote_def, longueur = segs[ct["grandeur"]]
+        if ct["grandeur"] in ("rayon", "diametre") or (ct["grandeur"] == "hauteur" and sorte == "cone" and not hauteur) \
+                or ct["grandeur"] == "rayon_section" or ct["grandeur"] == "distance":
+            tiret = ' stroke-dasharray="5 3"' if ct["grandeur"] in ("hauteur", "distance") else ""
+            corps.append(f'<line x1="{a[0]:.1f}" y1="{a[1]:.1f}" x2="{b[0]:.1f}" y2="{b[1]:.1f}" stroke="{ACCENT}" '
+                         f'stroke-width="1.6" stroke-linecap="round"{tiret}/>')
+        if "texte" in ct:
+            texte = str(ct["texte"])[:10]
+            _controle_cote(texte, longueur, f"cotes {i + 1}")
+        else:
+            if not dims_donnees:
+                raise FigureInvalide(f"cotes {i + 1} : cote calculee sans \"dimensions\" ; donner les dimensions")
+            texte = _cote_auto(longueur, unite, f"cotes {i + 1}")
+        if texte:
+            a_ecrire.append((a, b, texte, ct.get("cote", cote_def)))
+    # Textes places pour ne toucher ni trait ni autre texte (traits relus
+    # dans le dessin deja fait).
+    traits_ecran = _traits_svg(corps)
+    boites = [(x - 3, y - 3, x + 3, y + 3) for x, y, *_ in marques]
+    for x, y, nom, dx, dy in marques:
+        ref = math.atan2(dy, dx)
+        cands = []
+        for j in range(16):
+            ang = ref + j * math.pi / 8
+            for dist, pen_d in ((13, 0), (17, 1.5)):
+                cands.append((x + math.cos(ang) * dist, y + math.sin(ang) * dist + 4.5, "middle",
+                              3 * (1 - math.cos(ang - ref)) + pen_d))
+        tx, ty, _ = _placer(cands, nom, taille, traits_ecran, boites, cadre)
+        corps.append(_texte(tx, ty, nom, taille, gras=True))
+    for a, b, texte, cote in a_ecrire:
+        tx, ty, ancre = _placer(_candidats_cote(a, b, centre, cote), texte, taille, traits_ecran, boites, cadre,
+                                (a, b))
+        corps += _ecrire_cote(tx, ty, ancre, texte, taille)
+    return corps
+
+
+def _traits_svg(corps: list[str]) -> list:
+    """Segments ecran approchant les traits deja dessines (lignes, polygones,
+    ellipses, cercles, demi-ellipses), pour placer les textes a cote."""
+    traits = []
+
+    def att(el):
+        return dict(re.findall(r'([\w-]+)="([^"]*)"', el))
+
+    def ellipse(cx, cy, rx, ry, de=0.0, a=2 * math.pi, n=24):
+        pts = [(cx + rx * math.cos(de + a * k / n), cy + ry * math.sin(de + a * k / n)) for k in range(n + 1)]
+        traits.extend(zip(pts, pts[1:]))
+
+    for el in corps:
+        v = att(el)
+        if el.startswith("<line"):
+            traits.append(((float(v["x1"]), float(v["y1"])), (float(v["x2"]), float(v["y2"]))))
+        elif el.startswith("<ellipse"):
+            ellipse(float(v["cx"]), float(v["cy"]), float(v["rx"]), float(v["ry"]))
+        elif el.startswith("<circle") and float(v["r"]) > 4:
+            ellipse(float(v["cx"]), float(v["cy"]), float(v["r"]), float(v["r"]))
+        elif el.startswith("<polygon"):
+            pts = [tuple(map(float, q.split(","))) for q in v["points"].split()]
+            traits.extend(zip(pts, pts[1:] + pts[:1]))
+        elif el.startswith("<path"):
+            d = v.get("d", "")
+            m = re.match(r"M([\d.-]+),([\d.-]+) A([\d.-]+),([\d.-]+) 0 \d (\d) ([\d.-]+),([\d.-]+)", d)
+            if m:
+                x1, y1, rx, ry, sw, x2, y2 = (float(g) for g in m.groups())
+                cx, cy = (x1 + x2) / 2, (y1 + y2) / 2
+                if abs(y2 - y1) < 1e-6:                      # demi-ellipse horizontale
+                    bas = (sw == 0) == (x2 > x1)
+                    ellipse(cx, cy, abs(x2 - x1) / 2, ry, 0.0 if bas else math.pi, math.pi)
+                else:                                         # demi-ellipse verticale
+                    droite = (sw == 1) == (y2 > y1)
+                    ellipse(cx, cy, rx, abs(y2 - y1) / 2, -math.pi / 2 if droite else math.pi / 2, math.pi)
+            else:
+                nb = [float(x) for x in re.findall(r"-?[\d.]+", d)]
+                pts = list(zip(nb[0::2], nb[1::2]))
+                traits.extend(zip(pts, pts[1:]))
+    return traits
+
+
 SOLIDES = ("cube", "pave", "pyramide", "pyramide_triangle", "prisme", "prisme_hexagone",
            "cylindre", "cone", "boule")
 
@@ -1127,6 +2462,83 @@ def _solide(p: dict) -> tuple[str, str]:
                 "sommets" : lettres aux sommets (cube, pave, pyramides)
                 "face" : une face coloriee (cube, pave)
                 "nom" : nom ecrit sous le solide (pour un QCM)
+
+    Solide cote, a proportions vraies (etape 8b). Des qu'un solide porte l'une
+    des cles suivantes, il est dessine a l'echelle de ses dimensions, ses aretes
+    cachees sont calculees, et ce qui est ecrit est calcule ou controle. Sans
+    elles, le dessin d'avant est garde tel quel.
+      dimensions  nombres exacts (entier, "2.5", "7/2"), par type :
+                    cube {"arete"} ; pave {"longueur", "largeur", "hauteur"}
+                    (longueur de face, largeur en profondeur) ;
+                    pyramide {"cote"} ou {"longueur", "largeur"}, et "hauteur" ;
+                    pyramide_triangle et prisme {"base", "hauteur_base",
+                    "decalage", "hauteur"} : triangle de base "base", de hauteur
+                    "hauteur_base", dont le sommet est a "decalage" de l'extremite
+                    gauche de la base (defaut : la moitie, triangle isocele ;
+                    0 : triangle rectangle) ; prisme_hexagone {"cote", "hauteur"} ;
+                    cylindre et cone {"rayon", "hauteur"} ; boule {"rayon"}.
+                  Sans dimensions : les proportions de l'ancien dessin, et pas
+                  de cote calculee. Rapport de 10 au plus entre deux dimensions.
+      unite       texte des cotes calculees (defaut "cm")
+      sommets     true, ou liste de noms remplacant ceux par defaut, dans l'ordre :
+                    cube, pave A B C D (face avant, depuis le bas gauche, sens
+                    inverse des aiguilles) puis E F G H (derriere A B C D) ;
+                    pyramide A B C D (base, A et B devant) puis S ;
+                    pyramide_triangle A B C puis S ; prisme A B C puis D E F
+                    (D en face de A) ; prisme_hexagone A a F puis G a L ;
+                    cylindre O (centre du bas, ou de gauche couche) et O' ;
+                    cone S et O ; boule O.
+      etiquettes  {"A": "bas_gauche"} : place forcee d'un nom (haut, bas, gauche,
+                  droite, haut_gauche...) ; sinon dans le plus grand angle libre
+      position    "debout" (defaut) ou "couche" (prismes : base de face, en vraie
+                  grandeur, le prisme pose sur une face laterale ; cylindre : axe
+                  horizontal) ; la base n'est alors pas « la face du dessous »
+      cotes       liste ; polyedres : {"arete": ["A", "B"], "texte": "8 cm",
+                  "cote": "gauche"} sur un segment dessine (arete, hauteur,
+                  segment ajoute) ; ronds : {"grandeur": "rayon" | "diametre" |
+                  "hauteur" | "generatrice" (cone) | "distance" | "rayon_section"
+                  (boule coupee), "texte": ...} (le segment est trace).
+                  Sans "texte", la longueur exacte est ecrite avec l'unite (si
+                  elle est decimale). Un texte chiffre est CONTROLE : valeur
+                  exacte ou arrondie au rang ecrit (« ≈ 7,2 cm »), sinon refus.
+                  « ? », « x », « h » sont libres. "cote" force le cote du texte.
+      hauteur     true : pyramide, hauteur en pointilles du sommet a son pied
+                  (pied marque, angle droit), pied nomme "nom_pied" (defaut "H")
+                  et utilisable dans les cotes ; cone : hauteur [SO] et angle
+                  droit ; cylindre : axe [OO'] en pointilles
+      pied        pyramides : "centre" (defaut) ou un sommet de la base au-dessus
+                  duquel est le sommet S (pyramide dont une arete est la hauteur)
+      points      polyedres : {"M": ["A", "B", "1/2"]}, point M de [AB] avec
+                  AM = 1/2 AB, marque et nomme (un nom commencant par "_" n'est
+                  pas montre) ; utilisable partout (cotes, coupe, pyramide...) ;
+                  boule : [{"nom": "A", "distance": 5, "angle": 30}] : point a
+                  cette distance du centre, dans le plan de face (angle en degres,
+                  0 a droite, 90 en haut) : sur, dans ou hors de la boule selon
+                  la distance, exactement
+      segments    polyedres : [{"de": "A", "a": "G", "nom": "a", "style":
+                  "pointille", "couleur": "trait"}] : diagonale, segment
+                  candidat d'un QCM (nom ecrit au milieu), en bleu par defaut
+      a_completer polyedres : [["E", "F"]] aretes a completer, absentes du dessin
+                  ("rendu_a_completer": "absente", defaut) ou en pointilles fins
+                  gris ("pointille"), distincts des aretes cachees
+      coupe       section coloriee par un plan :
+                    polyedres {"parallele": "base" | "avant" | "cote", "position":
+                    t} (plan horizontal, de face ou de cote, a la fraction t de
+                    la hauteur, de la profondeur ou de la largeur, depuis le bas,
+                    l'avant ou la gauche) ou {"plan": ["M", "N", "P"]} (plan par
+                    trois points nommes, par exemple parallele a une arete) ;
+                    cylindre {"parallele": "base" | "axe", "position": t} (axe :
+                    t entre -1 et 1, ecart a l'axe en rayons, positif vers
+                    l'arriere) ; cone {"parallele": "base", "position": t} ;
+                    boule {"distance": d, "nom": "H"} (plan horizontal a d du
+                    centre, au-dessus si d > 0 ; centre de la section nomme)
+      pyramide    cube ou pave : {"base": ["A", "B", "C", "D"], "sommet": "G"},
+                  pyramide inscrite (sommets du solide ou "points"), en bleu, le
+                  contenant en traits fins gris
+      grand_cercle  boule : "equateur" ou "meridien", colorie
+      face        aussi une liste de sommets : ["A", "B", "F", "E"]
+    Le texte alternatif reste « Solide en perspective » : ne jamais y ecrire la
+    nature d'une section, la longueur cherchee ou la position d'un point.
     """
     liste = p.get("solides")
     if not (isinstance(liste, list) and 1 <= len(liste) <= 4):
@@ -1144,7 +2556,12 @@ def _solide(p: dict) -> tuple[str, str]:
             raise FigureInvalide(f"solide {k + 1} : type parmi {', '.join(SOLIDES)}")
         x0 = case * k + (case - t) / 2 + (6 if seul else 0)
         y0 = H - (34 if not seul else 26)
-        corps += _dessin_solide(sol["type"], x0, y0, t, sol)
+        if _solide_cote_demande(sol):
+            marge = 6 if seul else 2
+            corps += _dessin_solide_cote(sol["type"], case * k + marge, case * (k + 1) - marge, y0, t, sol,
+                                         (case * k, case * (k + 1), H))
+        else:
+            corps += _dessin_solide(sol["type"], x0, y0, t, sol)
         if sol.get("nom"):
             corps.append(_texte(case * k + case / 2, H - 8, str(sol["nom"])[:3], 15, gras=True))
     alt = "Solide en perspective" if seul else f"{len(liste)} solides en perspective"
@@ -1160,6 +2577,10 @@ def _cubes(p: dict) -> tuple[str, str]:
                 case (0 a 5). Ex. [[2, 1], [1, 0]] : 2 rangees de 2 cases.
                 Au plus 4 rangees et 6 colonnes.
       marque    [rangee, colonne, etage] d'un cube a colorier (etage 0 = en bas)
+      fleche    sens de la vue (facultatif) : "avant" (fleche dans le sens des
+                fuyantes, vers la face avant), "droite", "gauche" ou "dessus" ;
+                fixe ce que « vue de face » ou « vue de droite » veut dire sans
+                le dire en mots. Sans fleche, rendu inchange.
     Un cube cache par d'autres n'est pas visible, comme sur un vrai dessin : la
     description fait foi pour le nombre total (validateur, corrige).
     """
@@ -1199,7 +2620,39 @@ def _cubes(p: dict) -> tuple[str, str]:
                     corps.append(f'<polygon points="{chemin}" fill="{couleur}" stroke="{TRAIT}" '
                                  f'stroke-width="1.4" stroke-linejoin="round"/>')
     alt = "Assemblage de cubes en perspective"
-    return _svg(L, H, corps, alt), alt
+    fleche = p.get("fleche")
+    if fleche is None:
+        return _svg(L, H, corps, alt), alt
+    # Fleche de vue : pointe contre l'assemblage, depart a 40 px ; le cadre
+    # s'agrandit du cote du depart.
+    largeur_assemblage = 12 + nc * s + nr * ox
+    y_milieu = H - 12 - s / 2 + nr * oy / 2
+    if fleche == "avant":
+        ux, uy = math.sqrt(0.5), -math.sqrt(0.5)
+        pointe = (12 + nc * s / 2, H - 12 - s * 0.35)
+        marges = (24, 0, 0, 22)                   # gauche, droite, haut, bas
+    elif fleche == "droite":
+        ux, uy = -1.0, 0.0
+        pointe = (largeur_assemblage + 4, y_milieu)
+        marges = (0, 46, 0, 0)
+    elif fleche == "gauche":
+        ux, uy = 1.0, 0.0
+        pointe = (8, y_milieu)
+        marges = (46, 0, 0, 0)
+    elif fleche == "dessus":
+        ux, uy = 0.0, 1.0
+        pointe = (12 + nc * s / 2 + nr * ox / 2, H - 12 - hmax * s + nr * oy - 4)
+        marges = (0, 0, 46, 0)
+    else:
+        raise FigureInvalide("fleche : \"avant\", \"droite\", \"gauche\" ou \"dessus\"")
+    mg, md, mh, mb = marges
+    tx_, ty_ = pointe[0] + mg, pointe[1] + mh
+    depart = (tx_ - ux * 40, ty_ - uy * 40)
+    corps = [f'<g transform="translate({mg},{mh})">'] + corps + ["</g>"]
+    corps.append(_ligne(depart[0], depart[1], tx_ - ux * 9, ty_ - uy * 9, couleur=ACCENT, epaisseur=3))
+    corps.append(f'<path d="M{tx_:.1f},{ty_:.1f} L{tx_ - ux * 12 - uy * 6:.1f},{ty_ - uy * 12 + ux * 6:.1f} '
+                 f'L{tx_ - ux * 12 + uy * 6:.1f},{ty_ - uy * 12 - ux * 6:.1f} Z" fill="{ACCENT}"/>')
+    return _svg(L + mg + md, H + mh + mb, corps, alt), alt
 
 
 # ---------------------------------------------------------------------------
