@@ -81,7 +81,7 @@ Ce qui est faux ou absent aujourd'hui (repris dans le backlog §6) :
 - Le fichier Google `client_secret_*.json` n'est jamais commité.
 - **Migrations : jamais par l'outil MCP `apply_migration` (refusé par Gauthier).** Créer le fichier numéroté suivant dans `supabase/migrations/` (rejouable : `if not exists`, `create or replace`, `drop policy if exists`), puis Gauthier le colle dans le SQL Editor. Ne jamais modifier une migration déjà appliquée (dernière appliquée : 0016, le 20 octobre 2026).
 - Les outils MCP Supabase `deploy_edge_function`, `get_edge_function` et `execute_sql` en lecture sont acceptés.
-- **Migrations 0017 à 0020 écrites, à appliquer par Gauthier dans l'ordre** (0018 : vérifier ensuite les professeurs, sinon leurs créneaux disparaissent du catalogue des élèves), puis `supabase/cron/rappels.sql` (secret `CRON_SECRET` à créer, mode d'emploi en tête du fichier). Tant que 0017 n'est pas appliquée, la carte « Mon rythme » de `/profil` échoue à l'enregistrement (bandeau d'erreur).
+- **Migrations 0017 à 0021 écrites, à appliquer par Gauthier dans l'ordre** (0018 : vérifier ensuite les professeurs, sinon leurs créneaux disparaissent du catalogue des élèves), puis `supabase/cron/rappels.sql` (secret `CRON_SECRET` à créer, mode d'emploi en tête du fichier). Tant que 0017 n'est pas appliquée, la carte « Mon rythme » de `/profil` échoue à l'enregistrement (bandeau d'erreur). **0021 (progression côté serveur) : les fonctions `corriger` v14 et `rendre-super` v1 sont déjà déployées ; l'application à jour l'exige (le test de positionnement échoue sans elle), et l'ancienne version de l'application, qui écrivait elle-même sa progression, est refusée après elle.** `npm run check:db` attend 0021.
 - Ne pas contourner un refus du classifieur de sécurité.
 
 **Avant chaque commit :** `cd Math_Edu_Application && npm test && npm run lint && npm run build` (lint à zéro avertissement). Après une migration : **`npm run test:sql`** (PGlite, Postgres en WebAssembly, sans Docker : Gauthier ne veut pas de Docker Desktop). `supabase/tests/run.sh` reste pour qui a Docker.
@@ -127,7 +127,7 @@ Ce qui est faux ou absent aujourd'hui (repris dans le backlog §6) :
   - Le générateur refuse une figure qui trompe l'œil : angle codé droit qui ne l'est pas, angle presque droit, points presque alignés, longueurs codées égales qui ne le sont pas.
   - L'app affiche la figure en `<img>` data URI, donc aucun script ne peut s'exécuter.
 
-### 4.2 Base (`supabase/migrations/0001` à `0020`, chaque fichier explique son objet)
+### 4.2 Base (`supabase/migrations/0001` à `0021`, chaque fichier explique son objet)
 
 **Tables :**
 - `profiles` (rôle, niveau, email parent, consentement, préférences) ;
@@ -142,7 +142,7 @@ Ce qui est faux ou absent aujourd'hui (repris dans le backlog §6) :
 
 **Colonnes protégées du client** (trigger) : `role` (choisi une seule fois, `role_choisi_le`, 0010), `consentement_parental_at`, `email`, `cree_le`, `abonnement` ; pour un mineur, `date_naissance` (0011). Un changement de parent ou une date sous 15 ans remet le consentement à zéro.
 
-**Edge Functions :** `rapport-hebdo` (`verify_jwt: false`, v1, résumé hebdomadaire au parent, secret `CRON_SECRET`) ; `supprimer-compte` (`verify_jwt: true`, v1, suppression définitive, mot SUPPRIMER) ; `rappel-revision` (`verify_jwt: false`, version 1 : rappels de travail par email, migration 0017 ; secrets `RESEND_*`, `APP_URL`, `CRON_SECRET`) ; `corriger` (`verify_jwt: true`, version 13 : formes réduite, développée, factorisée complète, équation (« x = 7 » refusé), inégalité (« => »), solutions (« S = {…} »), crochets, « P = 6x », unité après une expression ; questions de super exercices `SX-…#qN`, lecture des expressions algébriques (`answer.forme`), signe moins typographique, °C, « +8 °C », « 7,7° » pour des °C, puissances et notation scientifique reconnues sans calcul, fractions relatives, « ÷ », « fois », « cm^2 », « n = 13 », écritures du signe d'une fraction sans réduction ni double signe, tolérance incluse, espaces de milliers au corrigé) ; `accord-parental` (`verify_jwt: false`, le parent n'a pas de compte ; secrets `RESEND_API_KEY`, `RESEND_FROM`, `APP_URL`).
+**Edge Functions :** `rapport-hebdo` (`verify_jwt: false`, v1, résumé hebdomadaire au parent, secret `CRON_SECRET`) ; `supprimer-compte` (`verify_jwt: true`, v1, suppression définitive, mot SUPPRIMER) ; `rappel-revision` (`verify_jwt: false`, version 1 : rappels de travail par email, migration 0017 ; secrets `RESEND_*`, `APP_URL`, `CRON_SECRET`) ; `rendre-super` (`verify_jwt: true`, v1, sprint 6 : corrige toute la copie d'un super exercice, compte les points, écrit `super_attempts` et la progression de la porteuse) ; `corriger` (`verify_jwt: true`, version 14 : mode « exercice », qui écrit la tentative et la progression avec `_shared/maitrise.ts`, et mode « positionnement », qui garde le verdict dans `placement_reponses` ; formes réduite, développée, factorisée complète, équation (« x = 7 » refusé), inégalité (« => »), solutions (« S = {…} »), crochets, « P = 6x », unité après une expression ; questions de super exercices `SX-…#qN`, lecture des expressions algébriques (`answer.forme`), signe moins typographique, °C, « +8 °C », « 7,7° » pour des °C, puissances et notation scientifique reconnues sans calcul, fractions relatives, « ÷ », « fois », « cm^2 », « n = 13 », écritures du signe d'une fraction sans réduction ni double signe, tolérance incluse, espaces de milliers au corrigé) ; `accord-parental` (`verify_jwt: false`, le parent n'a pas de compte ; secrets `RESEND_API_KEY`, `RESEND_FROM`, `APP_URL`).
 
 **Fonctions d'autorisation** en `security definer`, pour éviter la récursion RLS : `peut_lire_eleve`, `est_prof_de`, `est_parent_de`, `role_actuel`, `nb_places_prises`. Aucune n'est appelable par `anon`.
 
@@ -191,7 +191,7 @@ Modèles de consignes : `Spécifications DAG, Exos, Mindcards/modeles_agents/con
 
 ### 5.3 Déployer l'Edge Function `corriger`
 
-MCP `deploy_edge_function`, nom `corriger`, point d'entrée `corriger/index.ts`, fichiers `corriger/index.ts` et `_shared/correction.ts`, `verify_jwt: true`.
+MCP `deploy_edge_function`, nom `corriger`, point d'entrée `corriger/index.ts`, fichiers `corriger/index.ts`, `_shared/correction.ts`, `_shared/maitrise.ts` et `_shared/progression.ts`, `verify_jwt: true`. Même chose pour `rendre-super` (point d'entrée `rendre-super/index.ts`, mêmes fichiers partagés). Toute modification de `_shared/maitrise.ts` se redéploie dans les deux.
 
 **Piège :** dans les paramètres d'outil, une séquence `\uXXXX` devient un caractère littéral. Envoyer les caractères spéciaux tels quels, ou par code.
 
@@ -332,7 +332,7 @@ Décisions prises en route : la page publique du parent est `/accord/:jeton` (co
    - **Garde-fou :** pas de mécanique manipulatrice sur des mineurs (pas de perte punitive, pas de notifications nocturnes), conformément aux recommandations CNIL pour les mineurs.
    - Rappels : emails d'abord, notifications PWA ensuite.
 
-**Contenu, étape 7 (calcul littéral, domaine F)** : DAG fusionné le 20 octobre 2026 (25 compétences : B054, B055, F002, F003, F006, F010, F012 à F014, F020 à F025, F027, F031, F061 à F068) ; **150 exercices rédigés, relus, corrigés, fusionnés et publiés le 21 octobre 2026** (6 lots, consigne `_travail/brief_etape7.md`, relecture `_travail/brief_relecture_etape7.md`) ; liens ajoutés en relecture : B054 ← D004, B055 ← B007 (B055 ← B041 retiré). Complément cycle 3 (étape 7 bis) : B056, B057, B058, F069, F070, F071, liens B055 ← B056, B054 ← B058, F003 ← F071, F023 ← F069. Restent : cartes mentales (en rédaction), exercices du cycle 3 (en rédaction), cartes défi et super exercices des 31 compétences. La correction des expressions (S1 à S5 du cartographe) est faite : `answer.forme` (`expression`, `reduite`, `developpee`, `factorisee`, `meme_calcul`, `equation`, `inegalite`, `solutions`), 29 tests dans `src/lib/algebre.test.ts` ; déployée dans `corriger` (version 11).
+**Contenu, étape 7 (calcul littéral, domaine F)** : DAG fusionné le 20 octobre 2026 (25 compétences : B054, B055, F002, F003, F006, F010, F012 à F014, F020 à F025, F027, F031, F061 à F068) ; **150 exercices rédigés, relus, corrigés, fusionnés et publiés le 21 octobre 2026** (6 lots, consigne `_travail/brief_etape7.md`, relecture `_travail/brief_relecture_etape7.md`) ; liens ajoutés en relecture : B054 ← D004, B055 ← B007 (B055 ← B041 retiré). Complément cycle 3 (étape 7 bis) : B056, B057, B058, F069, F070, F071, liens B055 ← B056, B054 ← B058, F003 ← F071, F023 ← F069. **Fait le 21 octobre 2026** : 36 exercices du cycle 3 fusionnés (non publiés), cartes défi de l'étape 7 (139) et du cycle 3 fusionnées, cartes mentales MM-B-08, MM-F-01 à MM-F-06, MM-B-09 et MM-F-07 relues, corrigées et fusionnées (non publiées). Restent : super exercices des 31 compétences (4 lots en rédaction, brief `_travail/brief_super_etape7.md`), puis publication et bilan dans `QUALITY.md`. La correction des expressions (S1 à S5 du cartographe) est faite : `answer.forme` (`expression`, `reduite`, `developpee`, `factorisee`, `meme_calcul`, `equation`, `inegalite`, `solutions`), 29 tests dans `src/lib/algebre.test.ts` ; déployée dans `corriger` (version 11).
 
 **Contenu :** **étape 6 du §7 fusionnée et publiée le 20 octobre 2026** : 26 compétences, 156 exercices, 7 cartes, tous relus et contre-relus par agents (bilan dans `QUALITY.md`). Liens ajoutés en relecture : A034 ← B049 (et A032 ← A031 seul). A025 réécrite avec les puissances. A038 n'est plus en évaluation partielle (la notation scientifique se tape) ; seule C035 l'est encore. Prochaine étape de contenu : 7 (calcul littéral, domaine F).
 
@@ -397,7 +397,9 @@ Décisions prises en route : la page publique du parent est `/accord/:jeton` (co
 
 ### Sprint 6 : Avant les premiers élèves réels
 
-- Passer la progression côté serveur (`applyAttempt` dans une Edge Function) : prérequis de tout paiement.
+**Avancement au 21 octobre 2026 :** progression côté serveur **codée, testée et déployée** (migration **0021** à appliquer). La règle de maîtrise vit dans `supabase/functions/_shared/maitrise.ts`, que `src/lib/maitrise.ts` réexporte ; `corriger` (mode « exercice ») écrit la tentative et la ligne de progression, `rendre-super` corrige la copie et écrit le passage ; le navigateur ne peut plus écrire ni ses tentatives, ni ses passages, ni son positionnement, ni sa progression, sauf la relecture espacée des cartes (trigger `proteger_progression`) ; `enregistrer_positionnement` n'accepte que les compétences réussies pendant le test et leurs prérequis, et ne touche pas une compétence déjà acquise. La démonstration fait le même calcul localement. Tests SQL 08, 10 et 15 (TEST 190 à 196), contrôle d'intégration mis à jour. Limites connues : deux réponses simultanées sur une même compétence peuvent se chevaucher (l'écran attend la correction) ; les échéances serveur sont posées à 6 h UTC.
+
+- ~~Passer la progression côté serveur (`applyAttempt` dans une Edge Function) : prérequis de tout paiement.~~ Fait (voir ci-dessus).
 - Parcours Playwright élève, professeur et parent.
 - `/security-review`.
 - Montée de react-router 7 (2 vulnérabilités modérées sans correctif en 6.x).
@@ -491,6 +493,7 @@ Toute nouvelle lettre exige une migration qui élargit les contraintes `A-P`, et
 9. Règle du super exercice : une compétence aux exercices réussis reste à 3, le super exercice réussi la passe à 4 (bilan de /super), le bouton du panneau de /parcours change de libellé ; un super exercice sans faute après les contrôles donne 5.
 10. Rythme et rappels (après la migration 0017 et le Cron) : choisir 3 jours dans /profil, voir « N séances sur 3 » dans /travail ; compte de moins de 15 ans : « Demander à mon parent », email reçu, /rappels/:jeton accepte puis « Ne plus recevoir » ; compte de 15 ans et plus : activation directe, rappel reçu un jour choisi sans séance.
 11. Étape 7 sur un vrai compte : saisir « 5 + 3x », « (x+3)(x-3) », « P = 6x », « S = {-4 ; 2} » dans les exercices F, au téléphone compris.
+12. Progression côté serveur (après la migration 0021) : un exercice réussi fait monter le niveau, rechargement de la page compris ; un super exercice rendu affiche son score et passe la porteuse à 4 ; le test de positionnement d'un nouveau compte se clôt sans bandeau d'erreur ; une carte mentale revue avance son échéance ; `npm run check:db` vert.
 
 **Réponses du 20 octobre 2026 (soir)** :
 - **Étape 7 : Gauthier délègue** (« suivre tes propres recommandations, prendre les initiatives, consigner tous les choix »). Choix du chef de projet, le 20 octobre 2026 :
@@ -512,7 +515,7 @@ Toute nouvelle lettre exige une migration qui élargit les contraintes `A-P`, et
 
 ## 9. Dette et risques à garder en tête
 
-- **Progression falsifiable** (écrite par le navigateur) : bloquant avant tout paiement (sprint 6).
+- ~~**Progression falsifiable**~~ : réglé au sprint 6 (migration 0021, à appliquer). Reste falsifiable : la relecture espacée des cartes mentales, sans enjeu.
 - **RGPD et mineurs :** consentement avant 15 ans (sprint 1), export et suppression (sprint 4), hébergement UE.
 - **Accessibilité :** le texte alternatif d'une figure ne donne pas la réponse, donc **un élève aveugle ne peut pas faire les 241 exercices à figure**. À traiter avec Marius.
 - **Interface jamais testée de bout en bout** : Playwright au sprint 6. D'ici là, chaque sprint finit par un passage manuel dans un navigateur, sur téléphone compris.
