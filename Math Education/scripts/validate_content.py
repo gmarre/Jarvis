@@ -388,6 +388,51 @@ def check_images(exercises: dict) -> None:
             err(f"Figure : {ex['id']} : {exc}")
 
 
+def check_angle_mesurable(dag: dict, exercises: dict) -> None:
+    """Un angle cherche ne se lit pas au rapporteur sur la figure (etape 8).
+
+    Des la 5e, la mesure n'est pas une preuve : un angle marque « ? » dont la
+    reponse attendue est en degres doit etre dessine a au moins 5 degres de sa
+    valeur, sinon un rapporteur pose sur l'ecran donne la reponse (releve aux
+    lots M1 et M7 de l'etape 8, 13 exercices bloquants). Au cycle 3, mesurer
+    est souvent la competence elle-meme : la regle ne s'y applique pas.
+    """
+    import math
+    import figures
+    niveau = {s["id"]: s["school_level"] for s in dag["skills"]}
+    dossiers = figures.dossiers_figures(CONTENT_DIR)
+    for ex in exercises["exercises"]:
+        ref = ex.get("image")
+        reponse = ex.get("answer", {})
+        if not ref or niveau.get(ex.get("skill_id")) not in ("5e", "4e", "3e"):
+            continue
+        if ex.get("type") != "numerique" or reponse.get("unit") != chr(176):
+            continue
+        try:
+            spec = json.loads(figures.trouver(ref, dossiers).read_text(encoding="utf-8"))
+        except Exception:
+            continue  # une reference cassee est signalee par check_images
+        params = spec.get("params", {})
+        points = params.get("points", {})
+        for el in params.get("elements", []):
+            sommets = el.get("angle")
+            if not sommets or el.get("nom") != "?" or not all(p in points for p in sommets):
+                continue
+            (ax, ay), (bx, by), (cx, cy) = (points[p] for p in sommets)
+            u, v = (ax - bx, ay - by), (cx - bx, cy - by)
+            norme = math.hypot(*u) * math.hypot(*v)
+            if norme == 0:
+                continue
+            dessine = math.degrees(math.acos(max(-1.0, min(1.0, (u[0] * v[0] + u[1] * v[1]) / norme))))
+            try:
+                attendu = float(reponse.get("value"))
+            except (TypeError, ValueError):
+                continue
+            if abs(dessine - attendu) < 5:
+                err(f"Figure mesurable : {ex['id']} dessine l'angle cherche a {dessine:.1f} degres pour "
+                    f"une reponse de {attendu:g} ; l'ecarter d'au moins 5 degres")
+
+
 def check_champ_cartes(mindmaps: dict | None) -> None:
     """Champ numerique des cartes, section par section.
 
@@ -1155,6 +1200,10 @@ def main() -> int:
         check_champ_cartes(mindmaps)
         check_images(exercises)
         print(f"  champ numerique       {'OK' if len(errors) == err_avant else 'ANOMALIES'}")
+
+        err_avant = len(errors)
+        check_angle_mesurable(dag, exercises)
+        print(f"  angles non mesurables {'OK' if len(errors) == err_avant else 'ANOMALIES'}")
 
         warn_avant = len(warnings)
         check_programme_ref(dag, exercises)
