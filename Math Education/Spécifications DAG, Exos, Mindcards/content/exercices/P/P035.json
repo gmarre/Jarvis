@@ -1,0 +1,189 @@
+[
+  {
+    "id": "EX-P035-D-01",
+    "skill_id": "P035",
+    "level": "decouverte",
+    "type": "numerique",
+    "statement": "Volume d'une pyramide = aire de la base × hauteur ÷ 3. Quel est le volume de cette pyramide à base carrée, en cm³ ?",
+    "image": "figures/EX-P035-D-01",
+    "answer": {
+      "value": 50,
+      "unit": "cm³",
+      "accepted": [
+        "50 cm³",
+        "50 cm3",
+        "50 centimètres cubes",
+        "c'est 50 cm³",
+        "V = 50 cm³",
+        "V = 50"
+      ]
+    },
+    "solution_steps": [
+      "La base est un carré de 5 cm de côté : son aire est 5 × 5 = 25 cm².",
+      "La hauteur est [SH], perpendiculaire à la base : 6 cm. L'arête [SC], d'environ 7 cm, n'est pas la hauteur.",
+      "Volume = 25 × 6 ÷ 3 = 150 ÷ 3 = 50.",
+      "Le volume de la pyramide est **50 cm³**. Sans diviser par 3, on trouverait 150 cm³ : c'est le volume du pavé droit de même base et de même hauteur."
+    ],
+    "hint": "Quelle longueur est perpendiculaire à la base ?",
+    "estimated_duration_s": 60,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, classe de 4e, Espace et géométrie, Représentation de l'espace, Objectifs d'apprentissage : « Connaitre le volume de la pyramide et du cône de révolution. »"
+  },
+  {
+    "id": "EX-P035-D-02",
+    "skill_id": "P035",
+    "level": "decouverte",
+    "type": "qcm",
+    "statement": "Volume d'un cône = aire de la base × hauteur ÷ 3. Quel est le volume exact de ce cône ?",
+    "image": "figures/EX-P035-D-02",
+    "choices": [
+      {
+        "key": "a",
+        "text": "144π cm³",
+        "misconception": "L'élève oublie de diviser par 3 : π × 16 × 9 = 144π est le volume du cylindre de même base et de même hauteur."
+      },
+      {
+        "key": "b",
+        "text": "12π cm³",
+        "misconception": "L'élève n'élève pas le rayon au carré : π × 4 × 9 ÷ 3 = 12π. L'aire du disque est π × r², ici π × 16."
+      },
+      {
+        "key": "c",
+        "text": "48π cm³",
+        "misconception": null
+      },
+      {
+        "key": "d",
+        "text": "16π cm³",
+        "misconception": "L'élève s'arrête à l'aire de la base, π × 4² = 16π : il oublie de multiplier par la hauteur et de diviser par 3."
+      }
+    ],
+    "answer": {
+      "value": "c"
+    },
+    "solution_steps": [
+      "La base est un disque de rayon 4 cm : son aire est π × 4² = π × 16, soit 16π cm².",
+      "La hauteur est [SO] : 9 cm. Le segment d'environ 9,8 cm, en biais, n'est pas la hauteur.",
+      "Volume = 16π × 9 ÷ 3 = 144π ÷ 3 = 48π.",
+      "Le volume exact du cône est **48π cm³**."
+    ],
+    "hint": "Calcule d'abord l'aire du disque de base, en gardant π.",
+    "estimated_duration_s": 60,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, classe de 4e, Espace et géométrie, Représentation de l'espace, Objectifs d'apprentissage : « Connaitre le volume de la pyramide et du cône de révolution. »"
+  },
+  {
+    "id": "EX-P035-E-01",
+    "skill_id": "P035",
+    "level": "entrainement",
+    "type": "texte",
+    "statement": "Donne le volume exact de ce cône de révolution, en cm³, écrit avec π (au clavier, tu peux taper pi).",
+    "image": "figures/EX-P035-E-01",
+    "answer": {
+      "value": "245π",
+      "unit": "cm³",
+      "forme": "expression",
+      "variables": []
+    },
+    "solution_steps": [
+      "La longueur de 14 cm, écrite sur la base, est un diamètre : le rayon vaut 14 ÷ 2 = 7 cm.",
+      "Aire de la base : π × 7² = π × 49, soit 49π cm².",
+      "La hauteur est le segment en pointillés : 15 cm. Le segment d'environ 16,6 cm, en biais, ne sert pas. Volume = 49π × 15 ÷ 3 = 49π × 5 = 245π.",
+      "Le volume exact est **245π cm³**. Avec le diamètre pris pour rayon, on trouverait π × 196 × 15 ÷ 3 = 980π cm³, quatre fois trop."
+    ],
+    "hint": "La longueur écrite sur la base est-elle le rayon ?",
+    "estimated_duration_s": 90,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, classe de 4e, Espace et géométrie, Représentation de l'espace, Objectifs d'apprentissage : « Connaitre le volume de la pyramide et du cône de révolution. »"
+  },
+  {
+    "id": "EX-P035-E-02",
+    "skill_id": "P035",
+    "level": "entrainement",
+    "type": "numerique",
+    "statement": "Quel est le volume exact de cette pyramide à base rectangulaire, en cm³ ? Écris-le sous la forme numérateur/dénominateur.",
+    "image": "figures/EX-P035-E-02",
+    "answer": {
+      "value": "160/3",
+      "unit": "cm³",
+      "accepted": [
+        "160/3 cm³",
+        "160/3 cm3",
+        "160 / 3 cm³",
+        "160 / 3 cm3"
+      ]
+    },
+    "solution_steps": [
+      "La base est un rectangle de 8 cm sur 5 cm : son aire est 8 × 5 = 40 cm².",
+      "La hauteur est [SH] : 4 cm. L'arête d'environ 6,2 cm n'est pas la hauteur.",
+      "Volume = 40 × 4 ÷ 3 = 160 ÷ 3. La division ne tombe pas juste (160 = 3 × 53 + 1) : la valeur exacte est le quotient $\\frac{160}{3}$.",
+      "Le volume exact est **160/3 cm³**, environ 53,3 cm³. Une valeur arrondie n'est pas une valeur exacte."
+    ],
+    "hint": "La division par 3 tombe-t-elle juste ? Sinon, comment écrire le quotient exact ?",
+    "estimated_duration_s": 90,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, classe de 4e, Espace et géométrie, Représentation de l'espace, Objectifs d'apprentissage : « Connaitre le volume de la pyramide et du cône de révolution. »"
+  },
+  {
+    "id": "EX-P035-M-01",
+    "skill_id": "P035",
+    "level": "maitrise",
+    "type": "numerique",
+    "statement": "Cette pyramide à base carrée a un volume de 216 cm³. Quelle est sa hauteur h, en cm ? La figure n'est pas en vraie grandeur.",
+    "image": "figures/EX-P035-M-01",
+    "answer": {
+      "value": 8,
+      "unit": "cm",
+      "accepted": [
+        "8 cm",
+        "h = 8",
+        "h = 8 cm",
+        "8 centimètres",
+        "c'est 8 cm",
+        "SH = 8 cm",
+        "SH = 8"
+      ]
+    },
+    "solution_steps": [
+      "Aire de la base : 9 × 9 = 81 cm².",
+      "Volume = 81 × h ÷ 3 = 216. On défait la division par 3 : 81 × h = 216 × 3 = 648.",
+      "On défait la multiplication par 81 : h = 648 ÷ 81 = 8.",
+      "La hauteur est **8 cm**. Vérification : 81 × 8 ÷ 3 = 648 ÷ 3 = 216 cm³. Sans le facteur 3, on trouverait 216 ÷ 81, environ 2,7 cm : trois fois trop peu."
+    ],
+    "hint": "Le volume est le tiers de quel produit ?",
+    "estimated_duration_s": 120,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, classe de 4e, Espace et géométrie, Représentation de l'espace, Objectifs d'apprentissage : « Connaitre le volume de la pyramide et du cône de révolution. »"
+  },
+  {
+    "id": "EX-P035-M-02",
+    "skill_id": "P035",
+    "level": "maitrise",
+    "type": "numerique",
+    "statement": "Une tente a la forme de ce cône de révolution. Quel volume d'air contient-elle, en m³, arrondi à l'unité ?",
+    "image": "figures/EX-P035-M-02",
+    "answer": {
+      "value": 39,
+      "unit": "m³",
+      "tolerance": 0.5,
+      "accepted": [
+        "39 m³",
+        "39 m3",
+        "39 mètres cubes",
+        "c'est 39 m³",
+        "V = 39 m³",
+        "environ 39 m³"
+      ]
+    },
+    "solution_steps": [
+      "La base est un disque de rayon 2,5 m : son aire est π × 2,5² = π × 6,25.",
+      "La hauteur est le segment en pointillés, 6 m. Le segment de 6,5 m est la toile, en biais : il ne sert pas.",
+      "Volume = π × 6,25 × 6 ÷ 3 = π × 12,5. Avec la touche π : 39,27… ; avec 3,14 : 3,14 × 12,5 = 39,25.",
+      "Arrondi à l'unité, la tente contient environ **39 m³** d'air dans les deux cas. Avec 6,5 m pour hauteur, on trouverait environ 43 m³ ; sans diviser par 3, environ 118 m³."
+    ],
+    "hint": "Quelle longueur est la hauteur : 6 m ou 6,5 m ?",
+    "estimated_duration_s": 120,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, classe de 4e, Espace et géométrie, Représentation de l'espace, Objectifs d'apprentissage : « Connaitre le volume de la pyramide et du cône de révolution. »"
+  }
+]

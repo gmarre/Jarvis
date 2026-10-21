@@ -1,0 +1,201 @@
+[
+  {
+    "id": "EX-G073-D-01",
+    "skill_id": "G073",
+    "level": "decouverte",
+    "type": "qcm",
+    "statement": "Une pyramide a une base qui est un polygone, et des faces triangulaires qui se rejoignent en un sommet. Parmi ces solides, lequel est une pyramide ?",
+    "image": "figures/EX-G073-D-01",
+    "choices": [
+      {
+        "key": "a",
+        "text": "Le solide 1",
+        "misconception": "L'élève voit des faces triangulaires et pense à la pyramide. Mais le solide 1 a deux triangles identiques, ses bases, reliés par des rectangles : c'est un prisme droit."
+      },
+      {
+        "key": "b",
+        "text": "Le solide 4",
+        "misconception": "L'élève croit qu'une pyramide a toujours une base carrée, comme les pyramides d'Égypte : il écarte le solide 2 et retient la pointe du solide 4. Mais la base de 4 est un disque : c'est un cône de révolution."
+      },
+      {
+        "key": "c",
+        "text": "Le solide 2",
+        "misconception": null
+      },
+      {
+        "key": "d",
+        "text": "Les solides 2 et 4",
+        "misconception": "L'élève retient que le solide 4 a une base et un sommet. Mais sa base est un disque, pas un polygone, et il n'a aucune face triangulaire : c'est un cône de révolution."
+      }
+    ],
+    "answer": {
+      "value": "c"
+    },
+    "solution_steps": [
+      "Le solide 1 a deux faces triangulaires identiques, reliées par trois rectangles : c'est un prisme droit à base triangulaire.",
+      "Le solide 3 a deux disques reliés par une surface courbe : c'est un cylindre. Le solide 4 a un disque pour base et un sommet : c'est un cône de révolution. Sa base n'est pas un polygone, ce n'est donc pas une pyramide.",
+      "Le solide 2 a une base triangulaire et trois faces triangulaires qui se rejoignent au sommet. La base d'une pyramide n'est pas forcément un carré : **le solide 2 est une pyramide**, à base triangulaire."
+    ],
+    "hint": "Regarde d'abord la forme de la base de chaque solide, puis ses autres faces.",
+    "estimated_duration_s": 45,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, classe de 4e, Espace et géométrie, Représentation de l'espace, Objectifs d'apprentissage : « Reconnaitre des solides (pyramide, cône de révolution). »"
+  },
+  {
+    "id": "EX-G073-D-02",
+    "skill_id": "G073",
+    "level": "decouverte",
+    "type": "qcm",
+    "statement": "SABCD est une pyramide à base carrée, et I est le milieu de [AB]. Quel segment est la hauteur de cette pyramide ?",
+    "image": "figures/EX-G073-D-02",
+    "choices": [
+      {
+        "key": "a",
+        "text": "[SH]",
+        "misconception": null
+      },
+      {
+        "key": "b",
+        "text": "[SA]",
+        "misconception": "L'élève prend une arête latérale pour la hauteur. [SA] relie le sommet à un sommet de la base, en biais : elle n'est pas perpendiculaire à la base."
+      },
+      {
+        "key": "c",
+        "text": "[SI]",
+        "misconception": "L'élève prend la hauteur de la face SAB pour celle de la pyramide. [SI] est perpendiculaire à (AB), mais elle est dans la face SAB, inclinée : elle n'est pas perpendiculaire à la base."
+      }
+    ],
+    "answer": {
+      "value": "a"
+    },
+    "solution_steps": [
+      "La hauteur d'une pyramide est le segment issu du sommet et perpendiculaire à la base.",
+      "[SA] est une arête latérale : elle va du sommet S à un sommet de la base, en biais. [SI] est dans la face triangulaire SAB : elle est perpendiculaire au côté [AB], mais pas à la base.",
+      "[SH] part du sommet S et arrive au centre H du carré ; l'angle droit codé en H montre qu'elle est perpendiculaire à la base. La hauteur est **[SH]**."
+    ],
+    "hint": "La hauteur part du sommet. Que doit-elle couper à angle droit ?",
+    "estimated_duration_s": 40,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, classe de 4e, Espace et géométrie, Représentation de l'espace, Objectifs d'apprentissage : « Reconnaitre des solides (pyramide, cône de révolution). »"
+  },
+  {
+    "id": "EX-G073-E-01",
+    "skill_id": "G073",
+    "level": "entrainement",
+    "type": "vrai_faux",
+    "statement": "Voici un cône de révolution de sommet S ; sa base est le disque de centre O. Lina dit : « La hauteur de ce cône mesure 10 cm. »\n\nA-t-elle raison ?",
+    "image": "figures/EX-G073-E-01",
+    "answer": {
+      "value": false
+    },
+    "solution_steps": [
+      "La hauteur d'un cône de révolution est le segment [SO] : il relie le sommet S au centre O du disque de base, perpendiculairement à la base. Sur la figure, il est en pointillés.",
+      "Le segment de 10 cm relie S à un point du bord du disque : il est en biais, comme une arête latérale de pyramide. On l'appelle une génératrice du cône.",
+      "La figure n'écrit pas la longueur de [SO] : ce n'est pas le segment de 10 cm. Lina a **tort**."
+    ],
+    "hint": "Quel segment relie le sommet au centre de la base ?",
+    "estimated_duration_s": 45,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, classe de 4e, Espace et géométrie, Représentation de l'espace, Objectifs d'apprentissage : « Reconnaitre des solides (pyramide, cône de révolution). »"
+  },
+  {
+    "id": "EX-G073-E-02",
+    "skill_id": "G073",
+    "level": "entrainement",
+    "type": "qcm",
+    "statement": "Ce patron est formé d'une portion de disque et d'un disque. Quand on le plie, quel solide obtient-on ?",
+    "image": "figures/EX-G073-E-02",
+    "choices": [
+      {
+        "key": "a",
+        "text": "Un cylindre de révolution",
+        "misconception": "L'élève voit un disque, comme la base d'un cylindre. Mais le patron d'un cylindre a deux disques et un rectangle, pas une portion de disque."
+      },
+      {
+        "key": "b",
+        "text": "Un cône de révolution",
+        "misconception": null
+      },
+      {
+        "key": "c",
+        "text": "Une pyramide",
+        "misconception": "L'élève voit une pointe et pense à la pyramide. Mais une pyramide a une base polygonale et des faces triangulaires : aucune partie arrondie."
+      }
+    ],
+    "answer": {
+      "value": "b"
+    },
+    "solution_steps": [
+      "Le disque devient la base du solide.",
+      "La portion de disque s'enroule : ses deux bords droits se recollent, et son centre devient la pointe du solide. Son bord arrondi fait le tour du disque de base.",
+      "Une base en forme de disque et un sommet : c'est **un cône de révolution**.",
+      "Le patron d'un cylindre aurait deux disques et un rectangle ; celui d'une pyramide, un polygone et des triangles."
+    ],
+    "hint": "Combien de bases aura le solide ? Que devient la pointe de la portion de disque ?",
+    "estimated_duration_s": 45,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, classe de 4e, Espace et géométrie, Représentation de l'espace, Objectifs d'apprentissage : « Construire et mettre en relation différentes représentations des solides (pavé droit, cube, cylindre de révolution, prisme droit, pyramides et cônes de révolution). »"
+  },
+  {
+    "id": "EX-G073-M-01",
+    "skill_id": "G073",
+    "level": "maitrise",
+    "type": "numerique",
+    "statement": "Une pyramide a 14 arêtes. Combien a-t-elle de faces ?",
+    "image": null,
+    "answer": {
+      "value": 8,
+      "accepted": [
+        "8 faces",
+        "huit",
+        "huit faces",
+        "c'est 8",
+        "il y en a 8",
+        "8 faces en tout",
+        "elle a 8 faces",
+        "il y a 8 faces"
+      ]
+    },
+    "solution_steps": [
+      "Si la base a n côtés, la pyramide a n arêtes sur la base et n arêtes latérales, une vers chaque sommet de la base : 2 × n arêtes en tout.",
+      "2 × n = 14, donc n = 14 ÷ 2 = 7 : la base a 7 côtés.",
+      "Les faces : la base, plus une face triangulaire sur chaque côté de la base, soit 1 + 7 = 8.",
+      "La pyramide a **8 faces**. En oubliant la base, on en trouverait 7."
+    ],
+    "hint": "Combien d'arêtes sont sur la base, et combien partent du sommet ?",
+    "estimated_duration_s": 90,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, classe de 4e, Espace et géométrie, Représentation de l'espace, Objectifs d'apprentissage : « Reconnaitre des solides (pyramide, cône de révolution). »"
+  },
+  {
+    "id": "EX-G073-M-02",
+    "skill_id": "G073",
+    "level": "maitrise",
+    "type": "numerique",
+    "statement": "Une pyramide a 9 sommets. Combien a-t-elle d'arêtes ?",
+    "image": null,
+    "answer": {
+      "value": 16,
+      "accepted": [
+        "16 arêtes",
+        "16 aretes",
+        "seize",
+        "seize arêtes",
+        "c'est 16",
+        "il y en a 16",
+        "elle a 16 arêtes",
+        "il y a 16 arêtes"
+      ]
+    },
+    "solution_steps": [
+      "Un des 9 sommets est le sommet de la pyramide ; les autres sont ceux de la base : 9 − 1 = 8. La base a 8 sommets, donc 8 côtés.",
+      "Les arêtes : 8 sur la base, et 8 qui partent du sommet, une vers chaque sommet de la base. 8 + 8 = 16.",
+      "La pyramide a **16 arêtes**.",
+      "À comparer avec un prisme droit dont la base a 8 côtés : deux bases et les arêtes qui les relient, 8 + 8 + 8 = 24 arêtes."
+    ],
+    "hint": "Parmi les 9 sommets, combien sont sur la base ?",
+    "estimated_duration_s": 90,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, classe de 4e, Espace et géométrie, Représentation de l'espace, Objectifs d'apprentissage : « Reconnaitre des solides (pyramide, cône de révolution). »"
+  }
+]

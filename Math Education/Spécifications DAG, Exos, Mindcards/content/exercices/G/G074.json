@@ -1,0 +1,217 @@
+[
+  {
+    "id": "EX-G074-D-01",
+    "skill_id": "G074",
+    "level": "decouverte",
+    "type": "qcm",
+    "statement": "Dans le cube ABCDEFGH, on a tracé en bleu la pyramide de sommet G et de base ABCD. Quelle est la vraie nature de la face GBC ?",
+    "image": "figures/EX-G074-D-01",
+    "choices": [
+      {
+        "key": "a",
+        "text": "Un triangle isocèle, mais pas rectangle",
+        "misconception": "L'élève lit l'angle sur le dessin : en perspective, l'angle en C n'est pas dessiné droit. Mais [CB] et [CG] sont deux côtés d'une face carrée du cube : ils sont perpendiculaires."
+      },
+      {
+        "key": "b",
+        "text": "Un triangle rectangle isocèle",
+        "misconception": null
+      },
+      {
+        "key": "c",
+        "text": "Un triangle équilatéral",
+        "misconception": "L'élève croit que tous les segments tracés dans un cube ont la longueur de l'arête. Mais [BG] est une diagonale de face, plus longue que le côté [BC] du carré."
+      },
+      {
+        "key": "d",
+        "text": "Un triangle quelconque",
+        "misconception": "L'élève se fie aux longueurs du dessin, où [CG], tracée en profondeur, paraît plus courte que [CB]. Dans le cube, CG = CB."
+      }
+    ],
+    "answer": {
+      "value": "b"
+    },
+    "solution_steps": [
+      "Les points B, C et G sont trois sommets de la face BCGF du cube : le triangle GBC est dans cette face, qui est un carré.",
+      "[CB] et [CG] sont deux côtés consécutifs de ce carré : CB = CG, et ils sont perpendiculaires en C.",
+      "GBC est donc **un triangle rectangle isocèle** en C : c'est la moitié du carré BCGF, coupé par sa diagonale [BG].",
+      "Le dessin ne montre pas l'angle droit : en perspective cavalière, les faces de côté sont déformées. On raisonne sur le cube, pas sur le dessin."
+    ],
+    "hint": "Dans quelle face du cube se trouve le triangle GBC ?",
+    "estimated_duration_s": 60,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, classe de 3e, Espace et géométrie, Représentation de l'espace, Automatismes : « Donner la nature d'une face d'une pyramide représentée en perspective cavalière. »"
+  },
+  {
+    "id": "EX-G074-D-02",
+    "skill_id": "G074",
+    "level": "decouverte",
+    "type": "qcm",
+    "statement": "Lequel de ces assemblages est un patron d'une pyramide à base carrée dont les faces latérales sont identiques ?",
+    "image": "figures/EX-G074-D-02",
+    "choices": [
+      {
+        "key": "a",
+        "text": "L'assemblage A",
+        "misconception": "L'élève reconnaît le carré et les triangles sans les compter : il manque une face triangulaire, le côté du haut du carré reste libre et la pyramide ne se ferme pas."
+      },
+      {
+        "key": "b",
+        "text": "L'assemblage B",
+        "misconception": "L'élève pense qu'une pyramide n'a que des faces triangulaires. B n'a pas de carré : plié, il donne une pyramide à base triangulaire."
+      },
+      {
+        "key": "c",
+        "text": "L'assemblage C",
+        "misconception": null
+      }
+    ],
+    "answer": {
+      "value": "c"
+    },
+    "solution_steps": [
+      "Une pyramide à base carrée a 5 faces : la base carrée, et une face triangulaire sur chaque côté du carré.",
+      "A n'a que 3 triangles : un côté du carré reste libre, une face manque.",
+      "B n'a que des triangles, sans carré : plié, il donne une pyramide à base triangulaire.",
+      "C a un carré et un triangle identique sur chacun de ses côtés ; pliés, les triangles se rejoignent au sommet. **C est le patron cherché**."
+    ],
+    "hint": "Combien de faces a une pyramide à base carrée, et de quelles formes ?",
+    "estimated_duration_s": 45,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, classe de 3e, Espace et géométrie, Représentation de l'espace, Automatismes : « Identifier les patrons de pyramides données (par exemple inscrites dans un cube). »"
+  },
+  {
+    "id": "EX-G074-E-01",
+    "skill_id": "G074",
+    "level": "entrainement",
+    "type": "qcm",
+    "statement": "Dans le cube ABCDEFGH, on a tracé en bleu la pyramide de sommet H et de base DEG. Quelle est la vraie nature de la face DEG ?",
+    "image": "figures/EX-G074-E-01",
+    "choices": [
+      {
+        "key": "a",
+        "text": "Un triangle équilatéral",
+        "misconception": null
+      },
+      {
+        "key": "b",
+        "text": "Un triangle rectangle isocèle",
+        "misconception": "L'élève applique à DEG ce qui vaut pour les trois autres faces, HDE, HEG et HDG, moitiés de faces du cube. Mais les côtés de DEG sont trois diagonales de faces, pas des côtés de carrés."
+      },
+      {
+        "key": "c",
+        "text": "Un triangle isocèle, mais pas équilatéral",
+        "misconception": "L'élève lit les longueurs sur le dessin, où [DE], tracée en profondeur, paraît plus courte que [EG] et [DG]. Dans le cube, ce sont trois diagonales de carrés identiques."
+      }
+    ],
+    "answer": {
+      "value": "a"
+    },
+    "solution_steps": [
+      "[DE] est une diagonale de la face ADHE, [EG] une diagonale de la face EFGH, et [DG] une diagonale de la face DCGH.",
+      "Les six faces du cube sont des carrés identiques : leurs diagonales ont toutes la même longueur. Donc DE = EG = DG.",
+      "DEG a ses trois côtés de même longueur : c'est **un triangle équilatéral**.",
+      "Sur le dessin, [DE] paraît plus courte : la perspective cavalière raccourcit ce qui part en profondeur. On ne mesure pas le dessin, on raisonne sur le cube."
+    ],
+    "hint": "Dans quelle face du cube se trouve chacun des côtés [DE], [EG] et [DG] ?",
+    "estimated_duration_s": 75,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, classe de 3e, Espace et géométrie, Représentation de l'espace, Automatismes : « Donner la nature d'une face d'une pyramide représentée en perspective cavalière. »"
+  },
+  {
+    "id": "EX-G074-E-02",
+    "skill_id": "G074",
+    "level": "entrainement",
+    "type": "vrai_faux",
+    "statement": "Dans le cube ABCDEFGH, on a tracé la pyramide de sommet D et de base ACH. Léo dit : « CDH est un triangle rectangle, même si $\\widehat{CDH}$ n'est pas droit sur le dessin. »\n\nA-t-il raison ?",
+    "image": "figures/EX-G074-E-02",
+    "answer": {
+      "value": true
+    },
+    "solution_steps": [
+      "C, D et H sont trois sommets de la face DCGH du cube, qui est un carré : [DC] et [DH] sont deux côtés consécutifs de ce carré.",
+      "Ils sont perpendiculaires en D, et DC = DH : le triangle CDH est rectangle isocèle en D.",
+      "Sur le dessin, la face DCGH est vue en perspective cavalière : elle est dessinée comme un parallélogramme, et ses angles droits ne sont pas dessinés droits.",
+      "Léo a **raison** : la nature d'une face se lit sur le solide, pas sur le dessin."
+    ],
+    "hint": "Dans quelle face du cube se trouve le triangle CDH ?",
+    "estimated_duration_s": 60,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, classe de 3e, Espace et géométrie, Représentation de l'espace, Automatismes : « Donner la nature d'une face d'une pyramide représentée en perspective cavalière. »"
+  },
+  {
+    "id": "EX-G074-M-01",
+    "skill_id": "G074",
+    "level": "maitrise",
+    "type": "numerique",
+    "statement": "Dans le cube ABCDEFGH, on a tracé en bleu la pyramide de sommet H et de base ACF. Combien de ses faces sont des triangles équilatéraux ?",
+    "image": "figures/EX-G074-M-01",
+    "answer": {
+      "value": 4,
+      "accepted": [
+        "4 faces",
+        "quatre",
+        "quatre faces",
+        "les 4",
+        "les quatre",
+        "c'est 4",
+        "il y en a 4",
+        "toutes",
+        "les 4 faces",
+        "les quatre faces",
+        "toutes les faces",
+        "toutes les 4",
+        "4 triangles",
+        "4 triangles équilatéraux"
+      ]
+    },
+    "solution_steps": [
+      "La pyramide a 4 faces : ACF, HAC, HAF et HCF. Ses 6 arêtes sont [AC], [AF], [CF], [HA], [HC] et [HF].",
+      "Chacune est une diagonale d'une face du cube : [AC] de ABCD, [AF] de ABFE, [CF] de BCGF, [HA] de ADHE, [HC] de DCGH, [HF] de EFGH.",
+      "Les faces du cube sont des carrés identiques : ces 6 diagonales ont la même longueur. Toutes les arêtes de la pyramide sont donc égales.",
+      "Chaque face a ses trois côtés égaux : les **4 faces** sont des triangles équilatéraux, même si trois d'entre elles ne le paraissent pas sur le dessin."
+    ],
+    "hint": "Chaque arête de la pyramide est dans une face du cube. Qu'est-elle pour ce carré ?",
+    "estimated_duration_s": 120,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, classe de 3e, Espace et géométrie, Représentation de l'espace, Automatismes : « Donner la nature d'une face d'une pyramide représentée en perspective cavalière. »"
+  },
+  {
+    "id": "EX-G074-M-02",
+    "skill_id": "G074",
+    "level": "maitrise",
+    "type": "qcm",
+    "statement": "Dans un cube ABCDEFGH, [FB], [FE] et [FG] sont des arêtes. On découpe la pyramide de sommet F et de base BEG. Lequel de ces assemblages est son patron ?",
+    "image": "figures/EX-G074-M-02",
+    "choices": [
+      {
+        "key": "a",
+        "text": "L'assemblage A",
+        "misconception": "L'élève sait que la face BEG est équilatérale et le généralise à toutes les faces. Mais FBE, FBG et FEG sont des moitiés de faces carrées du cube : des triangles rectangles isocèles."
+      },
+      {
+        "key": "b",
+        "text": "L'assemblage B",
+        "misconception": null
+      },
+      {
+        "key": "c",
+        "text": "L'assemblage C",
+        "misconception": "L'élève reconnaît les trois triangles rectangles isocèles autour de F, mais pas la face BEG : ses côtés sont trois diagonales de faces, de même longueur. BEG est équilatéral, pas rectangle."
+      }
+    ],
+    "answer": {
+      "value": "b"
+    },
+    "solution_steps": [
+      "Les faces FBE, FBG et FEG sont dans trois faces carrées du cube (ABFE, BCGF et EFGH) : ce sont des moitiés de carrés, des triangles rectangles isocèles en F.",
+      "La face BEG a pour côtés trois diagonales de faces du cube, de même longueur : c'est un triangle équilatéral.",
+      "Le patron a donc trois triangles rectangles isocèles et un triangle équilatéral, dont les côtés sont les grands côtés des triangles rectangles.",
+      "A n'a que des triangles équilatéraux ; C a quatre triangles rectangles isocèles. **B est le patron** : au pliage, les trois angles droits se rejoignent en F, et le triangle équilatéral ferme la pyramide."
+    ],
+    "hint": "Quelle est la nature de chacune des quatre faces de cette pyramide ?",
+    "estimated_duration_s": 120,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, classe de 3e, Espace et géométrie, Représentation de l'espace, Automatismes : « Identifier les patrons de pyramides données (par exemple inscrites dans un cube). »"
+  }
+]
