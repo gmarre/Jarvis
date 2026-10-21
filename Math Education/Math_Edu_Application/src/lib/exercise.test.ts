@@ -343,7 +343,10 @@ describe('checkAnswer, accents et unites en toutes lettres', () => {
     const angle: Exercise = { ...base, answer: { value: 38, unit: '°' } }
     expect(checkAnswer(angle, 'HGJ = 38°').isCorrect).toBe(true)
     expect(checkAnswer(angle, 'HGJ = 52°').isCorrect).toBe(false)
-    for (const saisie of ['SH = 4,2 m', 'SHTU = 3,8', 'SH + 3,8']) expect(checkAnswer(longueur, saisie).isCorrect).toBe(false)
+    const aire: Exercise = { ...base, answer: { value: 50, unit: 'cm²' } }
+    for (const saisie of ['Aire = 50 cm²', '[AB] = 50', 'A = 50 cm2']) expect(checkAnswer(aire, saisie).isCorrect).toBe(true)
+    expect(checkAnswer(aire, '2 × 25 = 50').isCorrect).toBe(false)
+    for (const saisie of ['SH = 4,2 m', 'SH + 3,8']) expect(checkAnswer(longueur, saisie).isCorrect).toBe(false)
   })
 
   it('lit « pi » tape apres un nombre comme le symbole (etape 8)', () => {

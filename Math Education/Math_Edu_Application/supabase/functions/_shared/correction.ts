@@ -112,7 +112,9 @@ const ENVIRON = car(0x2248)
  * « n = », « x = », « KN = », « SH ≈ », « ≈ » ou « environ » devant une
  * reponse numerique (releve aux lots M5 et M7 de l'etape 8).
  */
-const PREFIXE_NOMME = new RegExp(`^\\s*(?:(?:[a-zA-Z]|[A-Z]{2,3})\\s*[=${ENVIRON}]|${ENVIRON}|environ)\\s*`, 'i')
+// Un nom d'au plus dix lettres, crochets ou parentheses compris : « Aire = »,
+// « [AB] = », « (d) = » (releve au lot M4).
+const PREFIXE_NOMME = new RegExp(`^\\s*(?:[\\p{L}\\[\\]()]{1,10}\\s*[=${ENVIRON}]|${ENVIRON}|environ)\\s*`, 'iu')
 
 /**
  * Signes de multiplication : « 3,2 × 10^4 », « 3,2 x 10^4 », « 3,2*10^4 »,
