@@ -75,6 +75,14 @@ Toutes celles de la consigne des rédacteurs d'exercices s'appliquent : `Spécif
 - **Compter de vrais mots** dans les contextes : ni « ● », ni « : », ni « ; ».
 - **CP et CE1** : 3 questions, 5 à 10 minutes, contexte de 80 à 120 mots, phrases courtes, nombres dans le champ de la classe.
 
+## Leçons des étapes 7 et 7 bis (31 super exercices relus)
+- **Unité dans `answer.unit` dès que la réponse en a une**, même pour une expression (« 7(x + 8) € ») ; `accepted` couvre le pluriel (« 5/6 litres ») et les fractions égales quand l'écriture n'est pas évaluée.
+- **Le contrôle des couples lit aussi les tests de validation, et les expressions transposées** : {25, 64} venait du test de A030, (x + 7)(x − 7) et (x + 6)² croisaient le test de F020.
+- **Un indice décrit une démarche**, jamais la bonne proposition ni la réponse d'une autre question.
+- **Fermer les lectures malignes du contexte** : qui est compté parmi les personnes, combien d'équipes concourent, un même prix x pour deux produits seulement si c'est dit.
+- **`skill_ids` ne liste que des compétences évaluées par une question** : un calcul de la chaîne employé dans un corrigé ne l'y ajoute pas.
+- **Au cycle 3, chaque opération est permise par la chaîne** (règle 8 de `consigne_defis.md`), corrigés compris ; une division avec reste n'est pas une division de table.
+
 ## Compétences sans super exercice
 Une compétence dont la chaîne de prérequis compte moins d'une autre compétence (A001 compter, par exemple) ne peut pas faire converger deux notions : **ne lui écris pas de super exercice**, et liste-la dans ta réponse finale avec la raison. Le schéma exige au moins deux compétences dans `skill_ids`.
 
