@@ -1,0 +1,218 @@
+{
+  "id": "SX-G057-01",
+  "skill_id": "G057",
+  "skill_ids": [
+    "G057",
+    "G049",
+    "D021"
+  ],
+  "school_level": "4e",
+  "title": "Le jardin de la fontaine",
+  "contexte": "La mairie de Montvert aménage un jardin autour d'une fontaine. Le plan est tracé sur un quadrillage, mais il n'est pas à l'échelle.\n\nLa pelouse est un parallélogramme PQRS de centre O, et la fontaine est placée au point O. Une allée droite, notée (d), traverse le jardin en passant par la fontaine.\n\nSur le terrain, on a mesuré PQ = 9,6 m et QR = 7,8 m. La diagonale [PR] mesure 15,2 m.\n\nUne bordure de buis fera tout le tour de la pelouse. Elle coûte 6 € le mètre.\n\nAutour de la pelouse, quatre parterres de fleurs triangulaires sont numérotés de 1 à 4. Le jardinier plantera 240 bulbes de tulipes dans le parterre 1, au mois d'octobre.\n\nPour que le jardin paraisse régulier, l'architecte a placé certains parterres comme des images du parterre 1, par une symétrie axiale ou par un demi-tour.",
+  "image": "figures/SX-G057-01",
+  "duree_estimee_min": 15,
+  "questions": [
+    {
+      "key": "q1",
+      "skill_id": "G049",
+      "statement": "Pour calculer la longueur de la bordure de buis, quelles données du texte faut-il utiliser ?",
+      "type": "qcm",
+      "choices": [
+        {
+          "key": "a",
+          "text": "PQ et PR",
+          "misconception": "L'élève prend la diagonale [PR] pour un côté : elle traverse la pelouse, la bordure n'en fait pas partie."
+        },
+        {
+          "key": "b",
+          "text": "PQ et QR",
+          "misconception": null
+        },
+        {
+          "key": "c",
+          "text": "PQ seulement",
+          "misconception": "L'élève croit que les quatre côtés d'un parallélogramme ont la même longueur : c'est vrai pour un losange, pas ici, puisque QR n'est pas égal à PQ."
+        },
+        {
+          "key": "d",
+          "text": "PQ, QR et PR",
+          "misconception": "L'élève ajoute la diagonale [PR], qui ne fait pas partie du tour de la pelouse."
+        }
+      ],
+      "answer": {
+        "value": "b"
+      },
+      "points": 1,
+      "solution_steps": [
+        "La bordure fait le tour de la pelouse : il faut les longueurs de ses quatre côtés, [PQ], [QR], [RS] et [SP].",
+        "Dans un parallélogramme, les côtés opposés ont la même longueur : RS = PQ et SP = QR.",
+        "Il suffit donc de connaître **PQ et QR**. La diagonale [PR] et les 240 bulbes ne servent pas pour la bordure."
+      ],
+      "hint": "Relis la phrase qui parle de la bordure, puis pense aux côtés opposés d'un parallélogramme."
+    },
+    {
+      "key": "q2",
+      "skill_id": "G049",
+      "statement": "Quelle est la longueur de la bordure de buis, en mètres ?",
+      "type": "numerique",
+      "answer": {
+        "value": 34.8,
+        "unit": "m",
+        "accepted": [
+          "34,8 m",
+          "34,80 m",
+          "34,8 mètres",
+          "3480 cm"
+        ]
+      },
+      "points": 2,
+      "solution_steps": [
+        "Dans le parallélogramme PQRS, les côtés opposés ont la même longueur : RS = PQ = 9,6 m et SP = QR = 7,8 m.",
+        "Longueur de la bordure : 9,6 + 7,8 + 9,6 + 7,8 = 34,8.",
+        "La bordure mesure **34,8 m**."
+      ],
+      "hint": "Combien de côtés a la pelouse, et lesquels ont la même longueur ?"
+    },
+    {
+      "key": "q3",
+      "skill_id": "D021",
+      "statement": "On admet que la bordure mesure 34,8 m. Combien coûtera-t-elle, en euros ?",
+      "type": "numerique",
+      "answer": {
+        "value": 208.8,
+        "unit": "€",
+        "accepted": [
+          "208,8 €",
+          "208,80 €",
+          "208,80",
+          "208,8 euros",
+          "208,80 euros",
+          "208 € 80"
+        ]
+      },
+      "points": 2,
+      "solution_steps": [
+        "Le buis coûte 6 € le mètre : on multiplie la longueur par 6.",
+        "34,8 × 6 = 208,8 (on calcule 348 × 6 = 2 088, puis on place la virgule : un chiffre après la virgule).",
+        "La bordure coûtera **208,80 €**."
+      ],
+      "hint": "Le prix est donné pour un mètre de bordure."
+    },
+    {
+      "key": "q4",
+      "skill_id": "G057",
+      "statement": "Quelle est l'image du segment [QR] par le demi-tour de centre O ?",
+      "type": "texte",
+      "answer": {
+        "value": "[SP]",
+        "accepted": [
+          "[PS]",
+          "SP",
+          "PS",
+          "le segment [SP]",
+          "le segment [PS]",
+          "segment [SP]",
+          "segment [PS]",
+          "le segment SP",
+          "le segment PS",
+          "segment SP",
+          "segment PS",
+          "c'est [SP]",
+          "c'est [PS]",
+          "c'est le segment [SP]",
+          "c'est le segment [PS]",
+          "l'image est [SP]",
+          "l'image est [PS]",
+          "l'image est le segment [SP]",
+          "l'image est le segment [PS]",
+          "l'image de [QR] est [SP]",
+          "l'image de [QR] est [PS]",
+          "[SP] est l'image de [QR]",
+          "[PS] est l'image de [QR]"
+        ]
+      },
+      "points": 2,
+      "solution_steps": [
+        "O est le centre du parallélogramme PQRS : c'est le milieu de ses diagonales [PR] et [QS].",
+        "Le demi-tour de centre O envoie donc Q sur S (O est le milieu de [QS]) et R sur P (O est le milieu de [RP]).",
+        "L'image du segment [QR] est le segment qui joint les images de ses extrémités : **le segment [SP]**."
+      ],
+      "hint": "Cherche d'abord l'image de chaque extrémité du segment."
+    },
+    {
+      "key": "q5",
+      "skill_id": "G057",
+      "statement": "Le parterre 4 est-il l'image du parterre 1 par une symétrie axiale, par un demi-tour, ou par aucune des deux ?",
+      "type": "qcm",
+      "choices": [
+        {
+          "key": "a",
+          "text": "Par la symétrie d'axe (d)",
+          "misconception": "L'élève voit deux parterres de même forme ; mais la symétrie d'axe (d) envoie le parterre 1 de l'autre côté de l'allée, alors que le parterre 4 est du même côté."
+        },
+        {
+          "key": "b",
+          "text": "Par le demi-tour de centre O",
+          "misconception": "Un demi-tour de centre O fait tourner la figure tête en bas, de l'autre côté de la fontaine ; le parterre 4 a gardé la même orientation que le parterre 1, et il est du même côté de l'allée."
+        },
+        {
+          "key": "c",
+          "text": "Par une symétrie d'axe horizontal, placé entre les deux parterres",
+          "misconception": "L'élève imagine un pli horizontal entre les deux parterres ; mais un pli retournerait le parterre, sa pointe tournée vers le bas serait tournée vers le haut. Le parterre 4 n'est pas retourné."
+        },
+        {
+          "key": "d",
+          "text": "Par aucune des deux",
+          "misconception": null
+        }
+      ],
+      "answer": {
+        "value": "d"
+      },
+      "points": 2,
+      "solution_steps": [
+        "Sur le quadrillage, chaque sommet du parterre 4 est exactement 7 carreaux sous le sommet correspondant du parterre 1 : le parterre 4 est le parterre 1 décalé vers le bas, sans être ni retourné ni tourné.",
+        "Une symétrie axiale retourne la figure comme dans un miroir : avec un axe horizontal, la pointe du parterre 1, tournée vers le bas, serait tournée vers le haut. Ce n'est pas le cas.",
+        "Un demi-tour fait tourner la figure tête en bas autour de son centre. Ce n'est pas le cas non plus.",
+        "Le parterre 4 n'est l'image du parterre 1 **par aucune des deux** transformations."
+      ],
+      "hint": "Compare le sens de la pointe des deux parterres, et leur position par rapport à l'allée et à la fontaine."
+    },
+    {
+      "key": "q6",
+      "skill_id": "G057",
+      "statement": "Quel parterre est l'image du parterre 1 par le demi-tour de centre O ?",
+      "type": "qcm",
+      "choices": [
+        {
+          "key": "a",
+          "text": "Le parterre 2",
+          "misconception": null
+        },
+        {
+          "key": "b",
+          "text": "Le parterre 3",
+          "misconception": "L'élève prend la symétrie d'axe (d) pour un demi-tour : le parterre 3 est le parterre 1 retourné comme dans un miroir, de l'autre côté de l'allée (d) ; il n'a pas tourné autour de la fontaine."
+        },
+        {
+          "key": "c",
+          "text": "Le parterre 4",
+          "misconception": "L'élève croit qu'un demi-tour déplace la figure sans la tourner : le parterre 4 a gardé la même orientation que le parterre 1."
+        }
+      ],
+      "answer": {
+        "value": "a"
+      },
+      "points": 3,
+      "solution_steps": [
+        "Le demi-tour de centre O envoie chaque point M sur le point M' tel que O soit le milieu de [MM'].",
+        "Sur le quadrillage, le sommet du parterre 1 le plus à gauche est 5 carreaux à gauche de O et 4 carreaux au-dessus : son image est 5 carreaux à droite de O et 4 carreaux au-dessous. C'est un sommet du parterre 2.",
+        "On vérifie de même les deux autres sommets : le parterre 1 arrive, tête en bas, sur **le parterre 2**.",
+        "Le parterre 3 est l'image du parterre 1 par la symétrie d'axe (d), pas par le demi-tour."
+      ],
+      "hint": "Pour un demi-tour de centre O, O est le milieu du segment qui joint un point à son image."
+    }
+  ],
+  "review_status": "relu_agent",
+  "programme_ref": "Cycle 4, classe de 4e, Espace et géométrie, Parallélogrammes et translations, Automatismes : « Dire si des figures planes sont images l'une de l'autre par une symétrie axiale (dont on identifie l'axe) ou par un demi-tour (dont on identifie le centre). »"
+}

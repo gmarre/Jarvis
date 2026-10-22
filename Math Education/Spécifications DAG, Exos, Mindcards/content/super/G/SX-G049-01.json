@@ -1,0 +1,150 @@
+{
+  "id": "SX-G049-01",
+  "skill_id": "G049",
+  "skill_ids": [
+    "G049",
+    "D021"
+  ],
+  "school_level": "5e",
+  "title": "La parcelle du jardin partagé",
+  "contexte": "Le jardin partagé du quartier occupe une parcelle qui a la forme d'un parallélogramme EFGH. Deux allées droites suivent ses diagonales [EG] et [FH] ; elles se croisent au point O, où se trouve le robinet.\n\nLe géomètre a relevé ces mesures :\nEF = 25,6 m ;\nFG = 15,8 m ;\nEG = 37 m ;\nFH = 21 m ;\nl'angle $\\widehat{HEF}$ mesure 55°.\n\nL'association veut poser un grillage le long du côté [HG], à 6 € le mètre. Elle compte 34 adhérents, et la récolte de l'an dernier a pesé 412 kg.",
+  "image": null,
+  "duree_estimee_min": 15,
+  "questions": [
+    {
+      "key": "q1",
+      "skill_id": "G049",
+      "statement": "Quel côté de la parcelle est parallèle au côté [EF] ?",
+      "type": "qcm",
+      "choices": [
+        {
+          "key": "a",
+          "text": "Le côté [FG]",
+          "misconception": "[FG] a le sommet F en commun avec [EF] : ces côtés sont consécutifs, pas opposés."
+        },
+        {
+          "key": "b",
+          "text": "Le côté [HG]",
+          "misconception": null
+        },
+        {
+          "key": "c",
+          "text": "Le côté [EH]",
+          "misconception": "[EH] a le sommet E en commun avec [EF] : ces côtés sont consécutifs, pas opposés."
+        }
+      ],
+      "answer": {
+        "value": "b"
+      },
+      "points": 1,
+      "solution_steps": [
+        "Dans le parallélogramme EFGH, on lit les sommets dans l'ordre : [EF], [FG], [GH] et [HE] sont les quatre côtés.",
+        "Le côté opposé à [EF] est celui qui n'a aucun sommet commun avec lui : [HG].",
+        "Un parallélogramme a ses côtés opposés parallèles : **[HG]** est parallèle à [EF]."
+      ],
+      "hint": "Cherche le côté qui n'a aucun sommet commun avec [EF]."
+    },
+    {
+      "key": "q2",
+      "skill_id": "G049",
+      "statement": "Combien mesure l'angle $\\widehat{EFG}$, en degrés ?",
+      "type": "numerique",
+      "answer": {
+        "value": 125,
+        "unit": "°",
+        "accepted": [
+          "125°",
+          "125 °",
+          "125 degrés",
+          "125 degré",
+          "EFG = 125°",
+          "EFG = 125"
+        ]
+      },
+      "points": 2,
+      "solution_steps": [
+        "Les angles $\\widehat{HEF}$ et $\\widehat{EFG}$ sont deux angles consécutifs du parallélogramme : ils sont supplémentaires.",
+        "180 − 55 = 125.",
+        "L'angle $\\widehat{EFG}$ mesure **125°**. Attention : ce sont les angles opposés, comme $\\widehat{HEF}$ et $\\widehat{FGH}$, qui ont la même mesure."
+      ],
+      "hint": "Les angles en E et en F sont-ils opposés ou consécutifs ?"
+    },
+    {
+      "key": "q3",
+      "skill_id": "D021",
+      "statement": "Combien coûtera le grillage, en euros ?",
+      "type": "numerique",
+      "answer": {
+        "value": 153.6,
+        "unit": "€",
+        "accepted": [
+          "153,60",
+          "153,6 €",
+          "153,60 €",
+          "153,60€",
+          "153,6 euros",
+          "153,60 euros",
+          "153 € 60"
+        ]
+      },
+      "points": 2,
+      "solution_steps": [
+        "Les côtés opposés d'un parallélogramme ont la même longueur : HG = EF = 25,6 m.",
+        "Le grillage coûte 6 € le mètre : on pose 25,6 × 6.",
+        "256 × 6 = 1 536 ; il y a un chiffre après la virgule dans 25,6, donc 25,6 × 6 = 153,6.",
+        "Le grillage coûtera **153,60 €**."
+      ],
+      "hint": "Le texte ne donne pas la longueur de [HG] : quel côté a la même longueur ?"
+    },
+    {
+      "key": "q4",
+      "skill_id": "G049",
+      "statement": "Quelle est la distance du robinet O au point G, en mètres ?",
+      "type": "numerique",
+      "answer": {
+        "value": 18.5,
+        "unit": "m",
+        "accepted": [
+          "18,5 m",
+          "18,50 m",
+          "18,5 mètres",
+          "OG = 18,5 m",
+          "OG = 18,5"
+        ]
+      },
+      "points": 2,
+      "solution_steps": [
+        "Les diagonales d'un parallélogramme se coupent en leur milieu : O est le milieu de [EG].",
+        "OG est la moitié de EG : 37 ÷ 2 = 18,5.",
+        "Le robinet est à **18,5 m** du point G."
+      ],
+      "hint": "Que sait-on du point où se coupent les diagonales d'un parallélogramme ?"
+    },
+    {
+      "key": "q5",
+      "skill_id": "G049",
+      "statement": "Lina va du point E au robinet O, puis du robinet au point F, en suivant les allées. Quelle distance parcourt-elle, en mètres ?",
+      "type": "numerique",
+      "answer": {
+        "value": 29,
+        "unit": "m",
+        "accepted": [
+          "29 m",
+          "29 mètres",
+          "29,0 m",
+          "29m"
+        ]
+      },
+      "points": 4,
+      "solution_steps": [
+        "O est le milieu de chaque diagonale, car les diagonales d'un parallélogramme se coupent en leur milieu.",
+        "EO est la moitié de EG : 37 ÷ 2 = 18,5 m. OF est la moitié de FH : 21 ÷ 2 = 10,5 m.",
+        "18,5 + 10,5 = 29. Lina parcourt **29 m**.",
+        "Attention : les deux diagonales n'ont pas la même longueur (c'est vrai seulement pour un rectangle) : OF n'est pas égal à EO."
+      ],
+      "hint": "Sur quelle allée se trouve chaque morceau du trajet de Lina ?"
+    }
+  ],
+  "review_status": "relu_agent",
+  "programme_ref": "Cycle 4, classe de 5e, Espace et géométrie, Parallélogrammes, Objectifs d'apprentissage : « Connaitre les propriétés caractéristiques des côtés opposés et des diagonales. »"
+}

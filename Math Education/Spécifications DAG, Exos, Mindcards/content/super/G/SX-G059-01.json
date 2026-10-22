@@ -1,0 +1,165 @@
+{
+  "id": "SX-G059-01",
+  "skill_id": "G059",
+  "skill_ids": [
+    "G059",
+    "D021"
+  ],
+  "school_level": "4e",
+  "title": "Les allées du jardin public",
+  "contexte": "Le jardin public de Lauzac a la forme d'un triangle ABC. Sur le terrain, ses côtés mesurent AB = 68,4 m, BC = 63,4 m et AC = 54,6 m.\n\nLes paysagistes ont tracé deux allées droites, que l'on voit sur le plan.\nL'allée [IJ] relie le milieu I du côté [AB] au milieu J du côté [AC].\nL'allée [IK] part du point I, parallèlement au côté [AC], et rejoint le côté [BC] au point K.\n\nLe long de l'allée [IJ], on posera une bordure en pierre qui coûte 8 € le mètre. Le long de l'allée [IK], on plantera des rosiers.\n\nLe jardin a ouvert en 1998, et il reçoit 350 visiteurs par jour.",
+  "image": "figures/SX-G059-01",
+  "duree_estimee_min": 15,
+  "questions": [
+    {
+      "key": "q1",
+      "skill_id": "G059",
+      "statement": "Pour calculer la longueur de l'allée [IJ], quelle longueur du texte faut-il utiliser ?",
+      "type": "qcm",
+      "choices": [
+        {
+          "key": "a",
+          "text": "AB, car I est sur le côté [AB]",
+          "misconception": "I est bien sur [AB], mais le segment qui joint les milieux de deux côtés mesure la moitié du troisième côté, celui qui ne porte ni I ni J."
+        },
+        {
+          "key": "b",
+          "text": "AC, car J est sur le côté [AC]",
+          "misconception": "J est bien sur [AC], mais le segment qui joint les milieux de deux côtés mesure la moitié du troisième côté, celui qui ne porte ni I ni J."
+        },
+        {
+          "key": "c",
+          "text": "BC",
+          "misconception": null
+        },
+        {
+          "key": "d",
+          "text": "AB et AC",
+          "misconception": "L'élève pense qu'il faut les deux côtés qui portent I et J ; la longueur de [IJ] ne dépend que du troisième côté."
+        }
+      ],
+      "answer": {
+        "value": "c"
+      },
+      "points": 1,
+      "solution_steps": [
+        "I et J sont les milieux des côtés [AB] et [AC] du triangle ABC.",
+        "D'après le théorème de la droite des milieux, le segment [IJ] mesure la moitié du troisième côté, [BC].",
+        "Il faut utiliser **BC**. Les longueurs AB et AC, l'année d'ouverture et le nombre de visiteurs ne servent pas ici."
+      ],
+      "hint": "Rappelle-toi ce que dit le théorème de la droite des milieux sur la longueur du segment qui joint deux milieux."
+    },
+    {
+      "key": "q2",
+      "skill_id": "G059",
+      "statement": "Quelle est la longueur de l'allée [IJ], en mètres ?",
+      "type": "numerique",
+      "answer": {
+        "value": 31.7,
+        "unit": "m",
+        "accepted": [
+          "31,7 m",
+          "31,70 m",
+          "31,7 mètres",
+          "3170 cm"
+        ]
+      },
+      "points": 2,
+      "solution_steps": [
+        "I est le milieu de [AB] et J est le milieu de [AC].",
+        "D'après le théorème de la droite des milieux, IJ = BC ÷ 2.",
+        "IJ = 63,4 ÷ 2 = 31,7. L'allée [IJ] mesure **31,7 m**."
+      ],
+      "hint": "Le théorème de la droite des milieux relie la longueur IJ à celle d'un côté du triangle."
+    },
+    {
+      "key": "q3",
+      "skill_id": "D021",
+      "statement": "On admet que l'allée [IJ] mesure 31,7 m. Combien coûtera la bordure en pierre, en euros ?",
+      "type": "numerique",
+      "answer": {
+        "value": 253.6,
+        "unit": "€",
+        "accepted": [
+          "253,6 €",
+          "253,60 €",
+          "253,60",
+          "253,6 euros",
+          "253,60 euros",
+          "253 € 60"
+        ]
+      },
+      "points": 2,
+      "solution_steps": [
+        "La bordure coûte 8 € le mètre : on multiplie la longueur par 8.",
+        "31,7 × 8 = 253,6 (on calcule 317 × 8 = 2 536, puis on place la virgule).",
+        "La bordure coûtera **253,60 €**."
+      ],
+      "hint": "Le prix est donné pour un mètre de bordure."
+    },
+    {
+      "key": "q4",
+      "skill_id": "G059",
+      "statement": "Pour prouver que K est le milieu de [BC], Sacha écrit :\n**Données.** Dans le triangle ABC, I est le milieu de [AB], et la droite (IK) est parallèle à la droite (AC).\n**Propriété.** …\n**Conclusion.** K est le milieu de [BC].\n\nQuelle propriété complète sa preuve ?",
+      "type": "qcm",
+      "choices": [
+        {
+          "key": "a",
+          "text": "Dans un triangle, la droite qui passe par les milieux de deux côtés est parallèle au troisième côté.",
+          "misconception": "Cette propriété demande deux milieux et conclut à un parallélisme. Ici, on ne connaît qu'un milieu, I, et on veut prouver qu'un point est un milieu."
+        },
+        {
+          "key": "b",
+          "text": "Dans un triangle, si une droite passe par le milieu d'un côté et est parallèle à un deuxième côté, alors elle coupe le troisième côté en son milieu.",
+          "misconception": null
+        },
+        {
+          "key": "c",
+          "text": "Dans un triangle, le segment qui joint les milieux de deux côtés mesure la moitié du troisième côté.",
+          "misconception": "Cette propriété donne une longueur, et elle demande deux milieux. Elle ne permet pas de prouver que K est un milieu."
+        },
+        {
+          "key": "d",
+          "text": "Si un quadrilatère a ses côtés opposés parallèles deux à deux, alors c'est un parallélogramme.",
+          "misconception": "Il n'y a pas de quadrilatère dans les données de Sacha, et sa conclusion n'est pas un parallélogramme."
+        }
+      ],
+      "answer": {
+        "value": "b"
+      },
+      "points": 3,
+      "solution_steps": [
+        "Les données disent qu'une droite, (IK), passe par le milieu I du côté [AB] et qu'elle est parallèle à un deuxième côté, [AC].",
+        "La propriété qui part de ces données et conclut à un milieu est le troisième théorème de la droite des milieux : **dans un triangle, si une droite passe par le milieu d'un côté et est parallèle à un deuxième côté, alors elle coupe le troisième côté en son milieu.**",
+        "Ici, elle coupe le troisième côté, [BC], au point K : K est le milieu de [BC]."
+      ],
+      "hint": "Choisis la propriété dont les conditions sont exactement les données de Sacha, et dont la conclusion est la sienne."
+    },
+    {
+      "key": "q5",
+      "skill_id": "G059",
+      "statement": "On admet que K est le milieu de [BC]. Quelle est la longueur de l'allée [IK], en mètres ?",
+      "type": "numerique",
+      "answer": {
+        "value": 27.3,
+        "unit": "m",
+        "accepted": [
+          "27,3 m",
+          "27,30 m",
+          "27,3 mètres",
+          "2730 cm"
+        ]
+      },
+      "points": 3,
+      "solution_steps": [
+        "Dans le triangle ABC, I est le milieu de [AB] et K est le milieu de [BC].",
+        "D'après le théorème de la droite des milieux, le segment [IK] mesure la moitié du troisième côté, [AC] : IK = AC ÷ 2.",
+        "IK = 54,6 ÷ 2 = 27,3. L'allée [IK] mesure **27,3 m**.",
+        "Prendre la moitié de BC ou de AB serait une erreur : I et K sont sur ces deux côtés, c'est le troisième côté qui compte."
+      ],
+      "hint": "Repère les deux côtés du triangle dont I et K sont les milieux."
+    }
+  ],
+  "review_status": "relu_agent",
+  "programme_ref": "Cycle 4, classe de 4e, Espace et géométrie, Triangles, Objectifs d'apprentissage : « Connaitre les trois théorèmes relatifs à la droite des milieux dans un triangle. »"
+}

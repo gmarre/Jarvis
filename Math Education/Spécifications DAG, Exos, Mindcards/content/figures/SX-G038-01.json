@@ -1,0 +1,150 @@
+{
+  "type": "geometrie",
+  "params": {
+    "colonnes": 12,
+    "lignes": 10,
+    "fond": "quadrille",
+    "points": {
+      "O": [
+        6,
+        5
+      ],
+      "A": [
+        1,
+        4
+      ],
+      "B": [
+        2,
+        2
+      ],
+      "C": [
+        5,
+        2
+      ],
+      "_1a": [
+        11,
+        4
+      ],
+      "_1b": [
+        10,
+        2
+      ],
+      "_1c": [
+        7,
+        2
+      ],
+      "_3a": [
+        1,
+        6
+      ],
+      "_3b": [
+        2,
+        8
+      ],
+      "_3c": [
+        5,
+        8
+      ]
+    },
+    "etiquettes": {
+      "O": "droite",
+      "A": "gauche",
+      "B": "haut",
+      "C": "haut"
+    },
+    "elements": [
+      {
+        "polygone": [
+          "A",
+          "B",
+          "C"
+        ],
+        "rempli": true
+      },
+      {
+        "image": [
+          "A",
+          "B",
+          "C"
+        ],
+        "par": {
+          "demi_tour": "O"
+        },
+        "noms": [
+          "_2a",
+          "_2b",
+          "_2c"
+        ],
+        "polygone": true
+      },
+      {
+        "polygone": [
+          "_1a",
+          "_1b",
+          "_1c"
+        ]
+      },
+      {
+        "polygone": [
+          "_3a",
+          "_3b",
+          "_3c"
+        ]
+      },
+      {
+        "image": [
+          "A",
+          "B",
+          "C"
+        ],
+        "par": {
+          "demi_tour": "O"
+        },
+        "noms": [
+          "_1a",
+          "_1b",
+          "_1c"
+        ],
+        "distracteur": true
+      },
+      {
+        "image": [
+          "A",
+          "B",
+          "C"
+        ],
+        "par": {
+          "demi_tour": "O"
+        },
+        "noms": [
+          "_3a",
+          "_3b",
+          "_3c"
+        ],
+        "distracteur": true
+      },
+      {
+        "texte": "1",
+        "position": [
+          "9.33",
+          "2.67"
+        ]
+      },
+      {
+        "texte": "2",
+        "position": [
+          "9.33",
+          "7.33"
+        ]
+      },
+      {
+        "texte": "3",
+        "position": [
+          "2.67",
+          "7.33"
+        ]
+      }
+    ]
+  },
+  "alt": "Quadrillage avec le point O, le triangle ABC et trois triangles numérotés 1, 2 et 3"
+}

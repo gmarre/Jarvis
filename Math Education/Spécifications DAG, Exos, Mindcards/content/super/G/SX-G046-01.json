@@ -1,0 +1,164 @@
+{
+  "id": "SX-G046-01",
+  "skill_id": "G046",
+  "skill_ids": [
+    "G046",
+    "G026",
+    "B004"
+  ],
+  "school_level": "5e",
+  "title": "Les deux carrefours du boulevard",
+  "contexte": "À Montclar, l'avenue du Port, représentée par la droite (d), et la rue des Halles, représentée par la droite (d'), sont coupées par le boulevard Victor-Hugo, représenté par la droite (s). L'avenue et la rue ne sont pas parallèles : elles se rapprochent en allant vers la gare.\n\nSur le plan, qui n'est pas en vraie grandeur, les huit angles formés aux carrefours E et F sont numérotés de 1 à 8. Le géomètre de la ville a mesuré sur le terrain : l'angle 2 mesure 57° et l'angle 6 mesure 71°.\n\nLe boulevard mesure 915 m. Du début du boulevard au carrefour E, il y a 348 m ; du carrefour E au carrefour F, il y a 279 m. Le boulevard compte 4 voies de circulation et 62 platanes.",
+  "image": "figures/SX-G046-01",
+  "duree_estimee_min": 15,
+  "questions": [
+    {
+      "key": "q1",
+      "skill_id": "G046",
+      "statement": "D'après le texte, quelle droite représente le boulevard Victor-Hugo ?",
+      "type": "qcm",
+      "choices": [
+        {
+          "key": "a",
+          "text": "La droite (d)",
+          "misconception": "La droite (d) représente l'avenue du Port."
+        },
+        {
+          "key": "b",
+          "text": "La droite (d')",
+          "misconception": "La droite (d') représente la rue des Halles."
+        },
+        {
+          "key": "c",
+          "text": "La droite (s)",
+          "misconception": null
+        }
+      ],
+      "answer": {
+        "value": "c"
+      },
+      "points": 1,
+      "solution_steps": [
+        "Le texte dit : « le boulevard Victor-Hugo, représenté par la droite (s) ».",
+        "C'est **la droite (s)**, la sécante qui coupe les deux autres droites."
+      ],
+      "hint": "Relis la première phrase du texte."
+    },
+    {
+      "key": "q2",
+      "skill_id": "G046",
+      "statement": "Quel est le numéro de l'angle correspondant à l'angle 3 ?",
+      "type": "numerique",
+      "answer": {
+        "value": 5,
+        "accepted": [
+          "l'angle 5",
+          "angle 5",
+          "n° 5",
+          "n°5",
+          "l'angle n°5",
+          "l'angle n° 5",
+          "numéro 5",
+          "l'angle numéro 5",
+          "angle numéro 5",
+          "le 5",
+          "c'est l'angle 5"
+        ]
+      },
+      "points": 2,
+      "solution_steps": [
+        "L'angle 3 a son sommet en E. Il est sous la droite (d) et à droite de la sécante (s).",
+        "Son correspondant a son sommet sur l'autre droite, en F, et il est placé de la même façon : sous la droite (d') et à droite de (s).",
+        "C'est **l'angle 5**."
+      ],
+      "hint": "Cherche, au carrefour F, l'angle placé comme l'angle 3 par rapport à sa droite et à la sécante."
+    },
+    {
+      "key": "q3",
+      "skill_id": "G026",
+      "statement": "Combien mesure l'angle 3, en degrés ?",
+      "type": "numerique",
+      "answer": {
+        "value": 123,
+        "unit": "°",
+        "accepted": [
+          "123°",
+          "123 °",
+          "123 degrés",
+          "123 degré"
+        ]
+      },
+      "points": 2,
+      "solution_steps": [
+        "Les angles 2 et 3 sont adjacents et forment ensemble un angle plat, car leurs côtés extérieurs sont sur la droite (s).",
+        "Ils sont donc supplémentaires : 180 − 57 = 123.",
+        "L'angle 3 mesure **123°**. Attention : la figure n'est pas en vraie grandeur, on ne mesure pas au rapporteur."
+      ],
+      "hint": "Que forment ensemble l'angle 2 et l'angle 3 ?"
+    },
+    {
+      "key": "q4",
+      "skill_id": "B004",
+      "statement": "Quelle distance sépare le carrefour F de la fin du boulevard, en mètres ?",
+      "type": "numerique",
+      "answer": {
+        "value": 288,
+        "unit": "m",
+        "accepted": [
+          "288 m",
+          "288 mètres",
+          "288m"
+        ]
+      },
+      "points": 2,
+      "solution_steps": [
+        "Du début du boulevard au carrefour F : 348 + 279 = 627 m.",
+        "Il reste jusqu'à la fin du boulevard : 915 − 627.",
+        "En colonnes : 5 − 7 impossible, on prend une dizaine : 15 − 7 = 8 ; puis 0 − 2 impossible, on prend une centaine : 10 − 2 = 8 ; enfin 8 − 6 = 2.",
+        "915 − 627 = 288. Le carrefour F est à **288 m** de la fin du boulevard. Vérification : 627 + 288 = 915."
+      ],
+      "hint": "Calcule d'abord la distance du début du boulevard au carrefour F."
+    },
+    {
+      "key": "q5",
+      "skill_id": "G046",
+      "statement": "Quelle phrase est juste ?",
+      "type": "qcm",
+      "choices": [
+        {
+          "key": "a",
+          "text": "Les angles 4 et 8 ne sont pas alternes-internes, car (d) et (d') ne sont pas parallèles.",
+          "misconception": "L'élève croit que le mot « alternes-internes » suppose des droites parallèles : il ne dépend que de la position des angles."
+        },
+        {
+          "key": "b",
+          "text": "Les angles 4 et 8 sont correspondants.",
+          "misconception": "Deux angles correspondants sont du même côté de la sécante ; les angles 4 et 8 sont de part et d'autre de (s)."
+        },
+        {
+          "key": "c",
+          "text": "Les angles 4 et 8 sont alternes-internes, et ils ont la même mesure.",
+          "misconception": "L'élève croit que deux angles alternes-internes ont toujours la même mesure ; sans droites parallèles, ce n'est pas le cas : 57° et 71°."
+        },
+        {
+          "key": "d",
+          "text": "Les angles 4 et 8 sont alternes-internes, et ils n'ont pas la même mesure.",
+          "misconception": null
+        }
+      ],
+      "answer": {
+        "value": "d"
+      },
+      "points": 4,
+      "solution_steps": [
+        "L'angle 4 a son sommet en E, sous la droite (d) et à gauche de (s). L'angle 8 a son sommet en F, au-dessus de (d') et à droite de (s).",
+        "Ils sont tous les deux entre les droites (d) et (d'), de part et d'autre de la sécante : ils sont alternes-internes, même si les droites ne sont pas parallèles.",
+        "L'angle 4 est opposé par le sommet à l'angle 2 : il mesure 57°. L'angle 8 est opposé par le sommet à l'angle 6 : il mesure 71°.",
+        "La phrase juste est donc : **les angles 4 et 8 sont alternes-internes, et ils n'ont pas la même mesure**."
+      ],
+      "hint": "Repère la position de chaque angle, puis cherche sa mesure grâce aux angles opposés par le sommet."
+    }
+  ],
+  "review_status": "relu_agent",
+  "programme_ref": "Cycle 4, classe de 5e, Espace et géométrie, Angles, Objectifs d'apprentissage : « Caractériser le parallélisme par les angles : angles alternes internes, angles correspondants. »"
+}

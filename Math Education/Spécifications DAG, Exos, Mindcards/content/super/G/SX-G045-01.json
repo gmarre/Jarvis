@@ -1,0 +1,175 @@
+{
+  "id": "SX-G045-01",
+  "skill_id": "G045",
+  "skill_ids": [
+    "G045",
+    "D007"
+  ],
+  "school_level": "5e",
+  "title": "Les carreaux de faïence",
+  "contexte": "Mme Lebrun, céramiste, décore des carreaux de faïence carrés de 15 cm de côté. Sur chaque carreau, elle peint en rouge le triangle RST et le cercle (C) de centre I. Puis elle peint en bleu leurs images par le demi-tour de centre O, le centre du carreau : le triangle R'S'T' et le cercle (C'), de centre I'.\n\nSur son modèle, elle a noté ces mesures :\nRS = 6,4 cm ;\nST = 5,5 cm ;\nR'T' = 3,7 cm ;\nle diamètre du cercle (C) est 2,8 cm.\n\nPour la bordure du mur, elle hésite entre cinq motifs : un losange, un triangle équilatéral, un cercle, un trapèze isocèle aux deux bases de longueurs différentes, et un rectangle. Elle ne gardera que les motifs qui ont un centre de symétrie.\n\nElle a payé 38,25 € pour 9 carreaux blancs identiques. Son four cuit les carreaux pendant 8 heures.",
+  "image": "figures/SX-G045-01",
+  "duree_estimee_min": 15,
+  "questions": [
+    {
+      "key": "q1",
+      "skill_id": "G045",
+      "statement": "D'après le texte, comment Mme Lebrun obtient-elle le triangle bleu R'S'T' ?",
+      "type": "qcm",
+      "choices": [
+        {
+          "key": "a",
+          "text": "En faisant glisser le triangle RST sans le tourner",
+          "misconception": "Le texte ne parle pas de glisser : il parle d'un demi-tour, qui fait tourner le triangle autour de O."
+        },
+        {
+          "key": "b",
+          "text": "Par le demi-tour de centre O",
+          "misconception": null
+        },
+        {
+          "key": "c",
+          "text": "Par la symétrie d'axe la droite (RS)",
+          "misconception": "Le texte ne parle d'aucun axe : le centre du demi-tour est le point O."
+        }
+      ],
+      "answer": {
+        "value": "b"
+      },
+      "points": 1,
+      "solution_steps": [
+        "Le texte dit que les motifs bleus sont les images des motifs rouges « par le demi-tour de centre O ».",
+        "Le triangle R'S'T' est donc l'image du triangle RST **par le demi-tour de centre O**."
+      ],
+      "hint": "Relis la phrase qui parle de la peinture bleue."
+    },
+    {
+      "key": "q2",
+      "skill_id": "G045",
+      "statement": "Quel est le périmètre du triangle bleu R'S'T', en cm ?",
+      "type": "numerique",
+      "answer": {
+        "value": 15.6,
+        "unit": "cm",
+        "accepted": [
+          "15,6 cm",
+          "15,60 cm",
+          "15,6 centimètres",
+          "156 mm"
+        ]
+      },
+      "points": 2,
+      "solution_steps": [
+        "Le demi-tour conserve les longueurs : R'S' = RS = 6,4 cm et S'T' = ST = 5,5 cm.",
+        "R'T' est donné : 3,7 cm.",
+        "Périmètre : 6,4 + 5,5 + 3,7 = 15,6.",
+        "Le périmètre du triangle bleu est **15,6 cm**. Attention : on ne mesure pas sur la figure, qui n'est pas en vraie grandeur."
+      ],
+      "hint": "Deux côtés du triangle bleu ne sont pas donnés : où trouver leurs longueurs ?"
+    },
+    {
+      "key": "q3",
+      "skill_id": "G045",
+      "statement": "Quel est le rayon du cercle bleu (C'), en cm ?",
+      "type": "numerique",
+      "answer": {
+        "value": 1.4,
+        "unit": "cm",
+        "accepted": [
+          "1,4 cm",
+          "1,40 cm",
+          "1,4 centimètre",
+          "1,4 centimètres",
+          "14 mm"
+        ]
+      },
+      "points": 2,
+      "solution_steps": [
+        "L'image d'un cercle par un demi-tour est un cercle de même rayon.",
+        "Le cercle (C) a un diamètre de 2,8 cm, donc un rayon de 2,8 ÷ 2 = 1,4 cm.",
+        "Le rayon du cercle (C') est **1,4 cm**. Attention : 2,8 cm est le diamètre, pas le rayon."
+      ],
+      "hint": "Le texte donne-t-il le rayon ou le diamètre ?"
+    },
+    {
+      "key": "q4",
+      "skill_id": "D007",
+      "statement": "Combien a coûté un carreau blanc, en euros ?",
+      "type": "numerique",
+      "answer": {
+        "value": 4.25,
+        "unit": "€",
+        "accepted": [
+          "4,25 €",
+          "4,25€",
+          "4,25 euros",
+          "4 € 25"
+        ]
+      },
+      "points": 2,
+      "solution_steps": [
+        "9 carreaux identiques ont coûté 38,25 € : on pose 38,25 ÷ 9.",
+        "En 38, il y a 4 fois 9 (9 × 4 = 36), reste 2. On abaisse le 2 des dixièmes et on écrit la virgule au quotient : en 22, il y a 2 fois 9 (18), reste 4. On abaisse le 5 : en 45, il y a 5 fois 9, reste 0.",
+        "38,25 ÷ 9 = 4,25. Un carreau a coûté **4,25 €**. Vérification : 4,25 × 9 = 38,25."
+      ],
+      "hint": "Pose la division, et place la virgule au quotient quand tu abaisses le chiffre des dixièmes."
+    },
+    {
+      "key": "q5",
+      "skill_id": "G045",
+      "statement": "Vrai ou faux : les droites (ST) et (S'T') sont perpendiculaires.",
+      "type": "vrai_faux",
+      "answer": {
+        "value": false
+      },
+      "points": 2,
+      "solution_steps": [
+        "La droite (S'T') est l'image de la droite (ST) par le demi-tour de centre O.",
+        "L'image d'une droite par un demi-tour est une droite qui lui est parallèle.",
+        "C'est **faux** : (ST) et (S'T') sont parallèles, pas perpendiculaires."
+      ],
+      "hint": "Que devient une droite quand on lui applique un demi-tour ?"
+    },
+    {
+      "key": "q6",
+      "skill_id": "G045",
+      "statement": "Quels motifs Mme Lebrun gardera-t-elle pour la bordure ?",
+      "type": "qcm",
+      "choices": [
+        {
+          "key": "a",
+          "text": "Le losange, le triangle équilatéral, le cercle et le rectangle",
+          "misconception": "L'élève croit qu'une figure qui a des axes de symétrie a aussi un centre de symétrie : le triangle équilatéral n'en a pas."
+        },
+        {
+          "key": "b",
+          "text": "Le cercle seulement",
+          "misconception": "L'élève pense que seul un motif rond peut revenir sur lui-même ; le losange et le rectangle ont aussi un centre de symétrie."
+        },
+        {
+          "key": "c",
+          "text": "Le losange, le cercle, le trapèze isocèle et le rectangle",
+          "misconception": "L'élève confond axe et centre : le trapèze isocèle a un axe de symétrie, mais aucun centre de symétrie."
+        },
+        {
+          "key": "d",
+          "text": "Le losange, le cercle et le rectangle",
+          "misconception": null
+        }
+      ],
+      "answer": {
+        "value": "d"
+      },
+      "points": 4,
+      "solution_steps": [
+        "Une figure a un centre de symétrie quand un demi-tour autour de ce point la ramène exactement sur elle-même.",
+        "Le losange et le rectangle en ont un : le point où se coupent leurs diagonales. Le cercle en a un : son centre.",
+        "Le triangle équilatéral n'en a pas : il a trois axes de symétrie, mais aucun centre. Le trapèze isocèle n'en a pas non plus : il a un axe, pas de centre.",
+        "Mme Lebrun gardera **le losange, le cercle et le rectangle**."
+      ],
+      "hint": "Pour chaque motif, demande-toi si un demi-tour autour d'un point peut le ramener sur lui-même."
+    }
+  ],
+  "review_status": "relu_agent",
+  "programme_ref": "Cycle 4, classe de 5e, Espace et géométrie, Transformations, Objectifs d'apprentissage : « Connaitre les propriétés du demi-tour. »"
+}

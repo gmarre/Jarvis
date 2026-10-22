@@ -1,0 +1,188 @@
+{
+  "id": "SX-G060-01",
+  "skill_id": "G060",
+  "skill_ids": [
+    "G060",
+    "D017",
+    "G048"
+  ],
+  "school_level": "4e",
+  "title": "Le parking du supermarché",
+  "contexte": "À l'entrée du parking du supermarché Bonprix, un panneau affiche le règlement.\n**Règle 1.** Si un client a fait plus de 30 € d'achats, alors son ticket de parking est gratuit.\n**Règle 2.** Un client qui a la carte de fidélité a aussi le parking gratuit, quel que soit le montant de ses achats.\n**Règle 3.** Les autres clients paient 1,50 € par heure.\nCes règles sont toujours appliquées.\n\nUn employé du magasin affirme : « Si le ticket de parking d'un client est gratuit, alors ce client a fait plus de 30 € d'achats. »\n\nSamedi, quatre clients sortent du magasin.\nMme Diallo a fait 42,60 € d'achats, et elle n'a pas la carte de fidélité.\nM. Petit a fait 18,75 € d'achats, et il a la carte.\nMme Roux a fait 35,20 € d'achats, et elle a la carte.\nJules n'a pas la carte. Il a acheté un livre à 12,40 €, un jeu à 9,85 € et un stylo à 6,30 €.\n\nSur le sol du parking, le gardien vérifie deux lignes blanches, (d1) et (d2), coupées par la bordure du trottoir. Il mesure les deux angles alternes-internes qu'elles forment avec cette bordure : 64° et 66°. Le parking compte 180 places.",
+  "image": null,
+  "duree_estimee_min": 15,
+  "questions": [
+    {
+      "key": "q1",
+      "skill_id": "D017",
+      "statement": "Quel est le montant total des achats de Jules, en euros ?",
+      "type": "numerique",
+      "answer": {
+        "value": 28.55,
+        "unit": "€",
+        "accepted": [
+          "28,55 €",
+          "28,55 euros",
+          "28 € 55"
+        ]
+      },
+      "points": 2,
+      "solution_steps": [
+        "Les achats de Jules sont le livre (12,40 €), le jeu (9,85 €) et le stylo (6,30 €).",
+        "12,40 + 9,85 = 22,25, puis 22,25 + 6,30 = 28,55.",
+        "Jules a fait **28,55 €** d'achats. Les montants des trois autres clients ne servent pas ici."
+      ],
+      "hint": "Relève seulement les prix des objets achetés par Jules, puis additionne-les en alignant les virgules."
+    },
+    {
+      "key": "q2",
+      "skill_id": "G060",
+      "statement": "Par rapport à la règle 1, qu'est-ce que la phrase de l'employé ?",
+      "type": "qcm",
+      "choices": [
+        {
+          "key": "a",
+          "text": "Sa contraposée",
+          "misconception": "L'élève confond réciproque et contraposée : la contraposée partirait du contraire de la conclusion, « le ticket n'est pas gratuit ». L'employé échange l'hypothèse et la conclusion sans les nier."
+        },
+        {
+          "key": "b",
+          "text": "La règle 1 elle-même, dite autrement",
+          "misconception": "L'élève voit les mêmes mots et croit que la phrase dit la même chose ; mais l'hypothèse et la conclusion de la règle 1 ont été échangées."
+        },
+        {
+          "key": "c",
+          "text": "Sa réciproque",
+          "misconception": null
+        },
+        {
+          "key": "d",
+          "text": "Une phrase qui contredit la règle 1",
+          "misconception": "La phrase de l'employé ne nie ni l'hypothèse ni la conclusion de la règle 1 : elle les échange. Elle ne dit pas le contraire de la règle 1."
+        }
+      ],
+      "answer": {
+        "value": "c"
+      },
+      "points": 2,
+      "solution_steps": [
+        "Dans la règle 1, l'hypothèse est « un client a fait plus de 30 € d'achats » et la conclusion est « son ticket de parking est gratuit ».",
+        "L'employé part de « le ticket est gratuit » et arrive à « le client a fait plus de 30 € d'achats » : il a échangé l'hypothèse et la conclusion, sans les nier.",
+        "Sa phrase est donc **la réciproque** de la règle 1. Une réciproque n'est pas forcément vraie, même quand la propriété de départ l'est."
+      ],
+      "hint": "Repère l'hypothèse (après « si ») et la conclusion (après « alors ») dans la règle 1, puis dans la phrase de l'employé."
+    },
+    {
+      "key": "q3",
+      "skill_id": "G048",
+      "statement": "Que peut-on dire des lignes (d1) et (d2) vérifiées par le gardien ?",
+      "type": "qcm",
+      "choices": [
+        {
+          "key": "a",
+          "text": "Elles sont parallèles, car 64° et 66° sont presque égaux.",
+          "misconception": "Deux droites coupées par une sécante sont parallèles seulement si les angles alternes-internes sont égaux. 64° et 66° ne sont pas égaux, même s'ils sont proches."
+        },
+        {
+          "key": "b",
+          "text": "Elles ne sont pas parallèles, car leurs angles alternes-internes ne sont pas égaux.",
+          "misconception": null
+        },
+        {
+          "key": "c",
+          "text": "On ne peut rien dire sans les prolonger pour voir si elles se coupent.",
+          "misconception": "Les angles suffisent : si les lignes étaient parallèles, les angles alternes-internes seraient égaux. Les prolonger ne prouverait rien, elles pourraient se couper très loin."
+        }
+      ],
+      "answer": {
+        "value": "b"
+      },
+      "points": 2,
+      "solution_steps": [
+        "Si deux droites sont parallèles, alors les angles alternes-internes qu'elles forment avec une sécante sont égaux.",
+        "Ici, la bordure est une sécante, et les angles alternes-internes mesurent 64° et 66° : ils ne sont pas égaux.",
+        "Donc **les lignes (d1) et (d2) ne sont pas parallèles**. Un écart de 2° ne se voit pas à l'œil, mais il suffit."
+      ],
+      "hint": "Que vaudraient les deux angles alternes-internes si les lignes étaient parallèles ?"
+    },
+    {
+      "key": "q4",
+      "skill_id": "G060",
+      "statement": "En fin de journée, le ticket de M. Garnier n'est pas gratuit. Le gardien en déduit : « M. Garnier n'a pas fait plus de 30 € d'achats. » Quelle phrase est juste ?",
+      "type": "qcm",
+      "choices": [
+        {
+          "key": "a",
+          "text": "Le gardien utilise la contraposée de la règle 1, qui est vraie : sa déduction est juste.",
+          "misconception": null
+        },
+        {
+          "key": "b",
+          "text": "Le gardien utilise la réciproque de la règle 1 : sa déduction est juste.",
+          "misconception": "L'élève confond réciproque et contraposée : la réciproque partirait d'un ticket gratuit. Le gardien part d'un ticket qui n'est pas gratuit : c'est la contraposée."
+        },
+        {
+          "key": "c",
+          "text": "Sa déduction est fausse, car un ticket payant ne dit rien sur le montant des achats.",
+          "misconception": "La règle 1 est vraie, donc sa contraposée l'est aussi : si M. Garnier avait fait plus de 30 € d'achats, son ticket serait gratuit."
+        },
+        {
+          "key": "d",
+          "text": "Sa déduction est fausse, car M. Garnier a peut-être la carte de fidélité.",
+          "misconception": "S'il avait la carte, son ticket serait gratuit d'après la règle 2 ; or il ne l'est pas. La carte ne remet pas en cause la déduction du gardien."
+        }
+      ],
+      "answer": {
+        "value": "a"
+      },
+      "points": 2,
+      "solution_steps": [
+        "La contraposée de la règle 1 est : « Si le ticket de parking d'un client n'est pas gratuit, alors il n'a pas fait plus de 30 € d'achats. »",
+        "La règle 1 est vraie, donc sa contraposée est vraie aussi.",
+        "Le ticket de M. Garnier n'est pas gratuit : d'après la contraposée, il n'a pas fait plus de 30 € d'achats. **Le gardien utilise la contraposée de la règle 1, et sa déduction est juste.**"
+      ],
+      "hint": "Écris la réciproque et la contraposée de la règle 1, puis cherche laquelle part de l'information « le ticket n'est pas gratuit »."
+    },
+    {
+      "key": "q5",
+      "skill_id": "G060",
+      "statement": "Parmi les quatre clients du samedi, lequel montre que la phrase de l'employé est fausse ?",
+      "type": "qcm",
+      "choices": [
+        {
+          "key": "a",
+          "text": "Mme Diallo",
+          "misconception": "Mme Diallo a un ticket gratuit et plus de 30 € d'achats : elle vérifie la phrase de l'employé, elle ne la contredit pas."
+        },
+        {
+          "key": "b",
+          "text": "Mme Roux",
+          "misconception": "Mme Roux a un ticket gratuit et 35,20 € d'achats, plus de 30 € : elle ne contredit pas la phrase de l'employé, même si elle a aussi la carte."
+        },
+        {
+          "key": "c",
+          "text": "Jules",
+          "misconception": "Le ticket de Jules n'est pas gratuit, puisqu'il n'a pas la carte et a fait moins de 30 € d'achats ; la phrase de l'employé ne parle que des clients dont le ticket est gratuit."
+        },
+        {
+          "key": "d",
+          "text": "M. Petit",
+          "misconception": null
+        }
+      ],
+      "answer": {
+        "value": "d"
+      },
+      "points": 3,
+      "solution_steps": [
+        "La phrase de l'employé dit : « Si le ticket de parking d'un client est gratuit, alors ce client a fait plus de 30 € d'achats. » C'est la réciproque de la règle 1.",
+        "Pour montrer qu'elle est fausse, il faut un contre-exemple : un client dont le ticket est gratuit, mais qui n'a pas fait plus de 30 € d'achats.",
+        "M. Petit a la carte de fidélité : son ticket est gratuit d'après la règle 2. Il n'a fait que 18,75 € d'achats, moins de 30 €.",
+        "**M. Petit** est un contre-exemple : la réciproque de la règle 1 est fausse, alors que la règle 1 est vraie."
+      ],
+      "hint": "Cherche un client dont le ticket est gratuit pour une autre raison que la règle 1."
+    }
+  ],
+  "review_status": "relu_agent",
+  "programme_ref": "Cycle 4, classe de 4e, Espace et géométrie, Triangles, Objectifs d'apprentissage : « Mener un travail de logique sur la réciproque et la contraposée. »"
+}

@@ -1,0 +1,187 @@
+{
+ "type": "geometrie",
+ "params": {
+  "colonnes": 12,
+  "lignes": 10,
+  "fond": "quadrille",
+  "points": {
+   "P": [
+    4,
+    6
+   ],
+   "Q": [
+    7,
+    6
+   ],
+   "R": [
+    8,
+    4
+   ],
+   "S": [
+    5,
+    4
+   ],
+   "O": [
+    6,
+    5
+   ],
+   "_d1": [
+    6,
+    0
+   ],
+   "_d2": [
+    6,
+    10
+   ],
+   "_t1": [
+    0,
+    1
+   ],
+   "_t2": [
+    0,
+    8
+   ],
+   "_a": [
+    1,
+    1
+   ],
+   "_b": [
+    4,
+    1
+   ],
+   "_c": [
+    2,
+    3
+   ]
+  },
+  "etiquettes": {
+   "O": "haut_droite",
+   "P": "bas_gauche",
+   "Q": "bas_droite",
+   "R": "haut_droite",
+   "S": "haut_gauche"
+  },
+  "elements": [
+   {
+    "axe": [
+     "_d1",
+     "_d2"
+    ],
+    "nom": "(d)"
+   },
+   {
+    "polygone": [
+     "P",
+     "Q",
+     "R",
+     "S"
+    ],
+    "rempli": true
+   },
+   {
+    "segment": [
+     "P",
+     "R"
+    ],
+    "style": "pointille"
+   },
+   {
+    "segment": [
+     "Q",
+     "S"
+    ],
+    "style": "pointille"
+   },
+   {
+    "polygone": [
+     "_a",
+     "_b",
+     "_c"
+    ]
+   },
+   {
+    "image": [
+     "_a",
+     "_b",
+     "_c"
+    ],
+    "par": {
+     "demi_tour": "O"
+    },
+    "noms": [
+     "_a2",
+     "_b2",
+     "_c2"
+    ],
+    "polygone": true
+   },
+   {
+    "image": [
+     "_a",
+     "_b",
+     "_c"
+    ],
+    "par": {
+     "symetrie": [
+      "_d1",
+      "_d2"
+     ]
+    },
+    "noms": [
+     "_a3",
+     "_b3",
+     "_c3"
+    ],
+    "polygone": true
+   },
+   {
+    "image": [
+     "_a",
+     "_b",
+     "_c"
+    ],
+    "par": {
+     "translation": [
+      "_t1",
+      "_t2"
+     ]
+    },
+    "noms": [
+     "_a4",
+     "_b4",
+     "_c4"
+    ],
+    "polygone": true
+   },
+   {
+    "texte": "1",
+    "position": [
+     "2.4",
+     "1.7"
+    ]
+   },
+   {
+    "texte": "2",
+    "position": [
+     "9.6",
+     "8.3"
+    ]
+   },
+   {
+    "texte": "3",
+    "position": [
+     "9.6",
+     "1.7"
+    ]
+   },
+   {
+    "texte": "4",
+    "position": [
+     "2.4",
+     "8.7"
+    ]
+   }
+  ]
+ },
+ "alt": "Plan sur quadrillage : un quadrilatère PQRS, un point O, une droite (d) et quatre triangles numérotés de 1 à 4"
+}

@@ -1,0 +1,166 @@
+{
+  "id": "SX-G048-01",
+  "skill_id": "G048",
+  "skill_ids": [
+    "G048",
+    "B004"
+  ],
+  "school_level": "5e",
+  "title": "Les étagères sous le toit",
+  "contexte": "Sous le toit de sa chambre, Noé fixe trois étagères sur une poutre inclinée. Sur le schéma, la droite (s) représente la poutre ; les droites (e1), (e2) et (e3) représentent les étagères, fixées aux points A, B et C. Le schéma n'est pas en vraie grandeur. Les angles marqués sont numérotés de 1 à 4.\n\nAvec un rapporteur, Noé a mesuré sur la vraie poutre : l'angle 1 mesure 68°, l'angle 2 mesure 68° et l'angle 4 mesure 111°.\n\nPour fabriquer les étagères, il dispose d'une planche de 250 cm. Les étagères (e1) et (e2) mesurent 85 cm chacune, et l'étagère (e3) mesure 64 cm. Il veut y ranger 47 livres, et sa chambre a 2 fenêtres.",
+  "image": "figures/SX-G048-01",
+  "duree_estimee_min": 15,
+  "questions": [
+    {
+      "key": "q1",
+      "skill_id": "G048",
+      "statement": "D'après le texte, que représente la droite (s) ?",
+      "type": "qcm",
+      "choices": [
+        {
+          "key": "a",
+          "text": "Une étagère",
+          "misconception": "Les étagères sont représentées par les droites (e1), (e2) et (e3)."
+        },
+        {
+          "key": "b",
+          "text": "La poutre",
+          "misconception": null
+        },
+        {
+          "key": "c",
+          "text": "Le sol de la chambre",
+          "misconception": "Le texte ne parle pas du sol : la droite (s) représente la poutre inclinée."
+        }
+      ],
+      "answer": {
+        "value": "b"
+      },
+      "points": 1,
+      "solution_steps": [
+        "Le texte dit : « la droite (s) représente la poutre ».",
+        "La droite (s) représente **la poutre** ; c'est la sécante qui coupe les trois étagères."
+      ],
+      "hint": "Relis la deuxième phrase du texte."
+    },
+    {
+      "key": "q2",
+      "skill_id": "G048",
+      "statement": "Vrai ou faux : d'après les mesures de Noé, les étagères (e1) et (e2) sont parallèles.",
+      "type": "vrai_faux",
+      "answer": {
+        "value": true
+      },
+      "points": 2,
+      "solution_steps": [
+        "Les angles 1 et 2 sont entre les droites (e1) et (e2), de part et d'autre de la sécante (s) : ils sont alternes-internes.",
+        "Ils mesurent tous les deux 68° : ils ont la même mesure.",
+        "Si deux droites coupées par une sécante forment des angles alternes-internes de même mesure, alors elles sont parallèles.",
+        "C'est **vrai** : (e1) et (e2) sont parallèles."
+      ],
+      "hint": "Comment s'appellent les angles 1 et 2 ? Compare leurs mesures."
+    },
+    {
+      "key": "q3",
+      "skill_id": "B004",
+      "statement": "Quelle longueur de planche restera-t-il à Noé, en cm ?",
+      "type": "numerique",
+      "answer": {
+        "value": 16,
+        "unit": "cm",
+        "accepted": [
+          "16 cm",
+          "16 centimètres",
+          "16cm"
+        ]
+      },
+      "points": 2,
+      "solution_steps": [
+        "Longueur des trois étagères : 85 + 85 + 64 = 234 cm.",
+        "Il restera : 250 − 234.",
+        "En colonnes : 0 − 4 impossible, on prend une dizaine : 10 − 4 = 6 ; puis 4 − 3 = 1 ; enfin 2 − 2 = 0.",
+        "250 − 234 = 16. Il restera **16 cm** de planche. Vérification : 234 + 16 = 250."
+      ],
+      "hint": "Calcule d'abord la longueur totale des trois étagères."
+    },
+    {
+      "key": "q4",
+      "skill_id": "G048",
+      "statement": "Quelle propriété permet de prouver que les étagères (e1) et (e2) sont parallèles ?",
+      "type": "qcm",
+      "choices": [
+        {
+          "key": "a",
+          "text": "Si deux droites parallèles sont coupées par une sécante, alors elles forment des angles alternes-internes de même mesure.",
+          "misconception": "C'est la propriété dans l'autre sens : elle part des droites parallèles, que l'on veut justement prouver."
+        },
+        {
+          "key": "b",
+          "text": "Si deux droites coupées par une sécante forment des angles correspondants de même mesure, alors elles sont parallèles.",
+          "misconception": "Cette propriété est vraie, mais les angles 1 et 2 ne sont pas correspondants : ils sont de part et d'autre de la sécante."
+        },
+        {
+          "key": "c",
+          "text": "Deux angles opposés par le sommet ont la même mesure.",
+          "misconception": "Les angles 1 et 2 n'ont pas le même sommet ; et des angles opposés par le sommet ne disent rien du parallélisme."
+        },
+        {
+          "key": "d",
+          "text": "Si deux droites coupées par une sécante forment des angles alternes-internes de même mesure, alors elles sont parallèles.",
+          "misconception": null
+        }
+      ],
+      "answer": {
+        "value": "d"
+      },
+      "points": 3,
+      "solution_steps": [
+        "On connaît les mesures des angles 1 et 2, qui sont alternes-internes ; on veut conclure que des droites sont parallèles.",
+        "La propriété doit donc partir d'angles alternes-internes de même mesure et arriver au parallélisme.",
+        "C'est : **si deux droites coupées par une sécante forment des angles alternes-internes de même mesure, alors elles sont parallèles**."
+      ],
+      "hint": "Que sait-on au départ, et que veut-on prouver ?"
+    },
+    {
+      "key": "q5",
+      "skill_id": "G048",
+      "statement": "Quelle phrase est juste à propos des étagères (e2) et (e3) ?",
+      "type": "qcm",
+      "choices": [
+        {
+          "key": "a",
+          "text": "(e2) et (e3) ne sont pas parallèles : l'angle 3 mesure 112° et l'angle 4, qui lui correspond, mesure 111°.",
+          "misconception": null
+        },
+        {
+          "key": "b",
+          "text": "(e2) et (e3) sont parallèles : les angles 3 et 4 ont presque la même mesure.",
+          "misconception": "« Presque » ne suffit pas : avec des droites parallèles, deux angles correspondants ont exactement la même mesure."
+        },
+        {
+          "key": "c",
+          "text": "(e2) et (e3) sont parallèles : sur le schéma, elles ont l'air parallèles.",
+          "misconception": "La mesure sur le schéma n'est pas une preuve : un écart de 1° ne se voit pas. Seules les mesures données permettent de conclure."
+        },
+        {
+          "key": "d",
+          "text": "On ne peut pas savoir sans mesurer les angles sur le schéma.",
+          "misconception": "Les mesures de Noé suffisent pour conclure ; et mesurer sur un schéma qui n'est pas en vraie grandeur ne prouverait rien."
+        }
+      ],
+      "answer": {
+        "value": "a"
+      },
+      "points": 4,
+      "solution_steps": [
+        "Les angles 2 et 3 sont adjacents et forment un angle plat : l'angle 3 mesure 180 − 68 = 112°.",
+        "Les angles 3 et 4 sont placés de la même façon, l'un par rapport à (e2), l'autre par rapport à (e3), du même côté de (s) : ils sont correspondants.",
+        "L'angle 3 mesure 112° et l'angle 4 mesure 111° : ils n'ont pas la même mesure.",
+        "Si deux droites étaient parallèles, ces angles correspondants auraient la même mesure. Donc **(e2) et (e3) ne sont pas parallèles**, même si le schéma ne montre aucun écart."
+      ],
+      "hint": "Calcule la mesure de l'angle 3, puis compare-la à celle de l'angle placé comme lui sur (e3)."
+    }
+  ],
+  "review_status": "relu_agent",
+  "programme_ref": "Cycle 4, classe de 5e, Espace et géométrie, Angles, Objectifs d'apprentissage : « Caractériser le parallélisme par les angles : angles alternes internes, angles correspondants. »"
+}

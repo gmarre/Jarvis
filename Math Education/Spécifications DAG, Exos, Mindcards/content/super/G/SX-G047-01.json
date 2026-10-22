@@ -1,0 +1,162 @@
+{
+  "id": "SX-G047-01",
+  "skill_id": "G047",
+  "skill_ids": [
+    "G047",
+    "B016"
+  ],
+  "school_level": "5e",
+  "title": "Le parking en épi",
+  "contexte": "Devant le gymnase, la mairie fait repeindre le parking en épi. Sur le plan, qui n'est pas en vraie grandeur, la droite (d) représente la ligne du fond du parking et la droite (d') la bordure du trottoir. Ces deux droites sont parallèles. La droite (s) représente une bande blanche entre deux places, et la droite (p) le passage des piétons, qui traverse le parking puis le trottoir.\n\nLes points E, A et C sont sur (d). Les points G, B, D et F sont sur (d'). Le point H est sur le passage, au-delà de la bordure.\n\nLe peintre a mesuré deux angles : l'angle $\\widehat{EAB}$ mesure 56° et l'angle $\\widehat{FDH}$ mesure 49°.\n\nLe parking compte 4 rangées identiques et 132 places en tout. Les travaux dureront 3 jours, et le gymnase compte 12 vestiaires.",
+  "image": "figures/SX-G047-01",
+  "duree_estimee_min": 15,
+  "questions": [
+    {
+      "key": "q1",
+      "skill_id": "G047",
+      "statement": "D'après le texte, quelles droites sont parallèles ?",
+      "type": "qcm",
+      "choices": [
+        {
+          "key": "a",
+          "text": "(d) et (d')",
+          "misconception": null
+        },
+        {
+          "key": "b",
+          "text": "(s) et (p)",
+          "misconception": "Le texte ne dit pas que la bande et le passage sont parallèles ; sur le plan, ils ne le sont pas."
+        },
+        {
+          "key": "c",
+          "text": "(d) et (s)",
+          "misconception": "La bande (s) coupe la ligne du fond (d) au point A : ces droites sont sécantes."
+        }
+      ],
+      "answer": {
+        "value": "a"
+      },
+      "points": 1,
+      "solution_steps": [
+        "Le texte dit que la ligne du fond (d) et la bordure (d') sont parallèles.",
+        "Les droites parallèles sont **(d) et (d')**. Rien ne dit que la bande (s) et le passage (p) le sont."
+      ],
+      "hint": "Relis la phrase qui parle de la ligne du fond et de la bordure."
+    },
+    {
+      "key": "q2",
+      "skill_id": "G047",
+      "statement": "Combien mesure l'angle $\\widehat{ABG}$, en degrés ?",
+      "type": "numerique",
+      "answer": {
+        "value": 124,
+        "unit": "°",
+        "accepted": [
+          "124°",
+          "124 °",
+          "124 degrés",
+          "124 degré",
+          "ABG = 124°",
+          "ABG = 124"
+        ]
+      },
+      "points": 2,
+      "solution_steps": [
+        "Les droites (d) et (d') sont parallèles et coupées par la sécante (s).",
+        "Les angles $\\widehat{EAB}$ et $\\widehat{ABD}$ sont alternes-internes : ils ont la même mesure, donc $\\widehat{ABD}$ mesure 56°.",
+        "Les points G, B et D sont alignés : $\\widehat{ABG}$ et $\\widehat{ABD}$ sont supplémentaires. 180 − 56 = 124.",
+        "L'angle $\\widehat{ABG}$ mesure **124°**. Attention : 56° est la mesure de $\\widehat{ABD}$, l'autre angle en B."
+      ],
+      "hint": "Cherche d'abord l'angle en B qui est alterne-interne avec $\\widehat{EAB}$."
+    },
+    {
+      "key": "q3",
+      "skill_id": "B016",
+      "statement": "Combien de places compte une rangée du parking ?",
+      "type": "numerique",
+      "answer": {
+        "value": 33,
+        "unit": "places",
+        "accepted": [
+          "33 places",
+          "trente-trois",
+          "trente-trois places"
+        ]
+      },
+      "points": 2,
+      "solution_steps": [
+        "Les 132 places sont partagées en 4 rangées identiques : on calcule 132 ÷ 4.",
+        "On prend la moitié deux fois : 132 ÷ 2 = 66, puis 66 ÷ 2 = 33.",
+        "Une rangée compte **33 places**. Vérification : 33 × 4 = 132."
+      ],
+      "hint": "Diviser par 4, c'est prendre la moitié de la moitié."
+    },
+    {
+      "key": "q4",
+      "skill_id": "G047",
+      "statement": "Quelle phrase justifie que l'angle $\\widehat{ABD}$ mesure 56° ?",
+      "type": "qcm",
+      "choices": [
+        {
+          "key": "a",
+          "text": "Les angles $\\widehat{EAB}$ et $\\widehat{ABD}$ sont opposés par le sommet.",
+          "misconception": "Deux angles opposés par le sommet ont le même sommet ; ici, l'un est en A, l'autre en B."
+        },
+        {
+          "key": "b",
+          "text": "Les angles $\\widehat{EAB}$ et $\\widehat{ABD}$ sont alternes-internes, et deux angles alternes-internes ont toujours la même mesure.",
+          "misconception": "L'élève oublie la condition : des angles alternes-internes n'ont la même mesure que si les droites sont parallèles."
+        },
+        {
+          "key": "c",
+          "text": "Les droites (d) et (d') sont parallèles, et les angles $\\widehat{EAB}$ et $\\widehat{ABD}$ sont alternes-internes.",
+          "misconception": null
+        },
+        {
+          "key": "d",
+          "text": "Les droites (d) et (d') sont parallèles, et les angles $\\widehat{EAB}$ et $\\widehat{ABD}$ sont correspondants.",
+          "misconception": "Deux angles correspondants sont du même côté de la sécante ; $\\widehat{EAB}$ et $\\widehat{ABD}$ sont de part et d'autre de (s)."
+        }
+      ],
+      "answer": {
+        "value": "c"
+      },
+      "points": 3,
+      "solution_steps": [
+        "Les angles $\\widehat{EAB}$ et $\\widehat{ABD}$ n'ont pas le même sommet : ils ne sont pas opposés par le sommet.",
+        "Ils sont entre les droites (d) et (d'), de part et d'autre de la sécante (s) : ils sont alternes-internes.",
+        "Des angles alternes-internes n'ont la même mesure que si les droites sont parallèles, ce que dit le texte.",
+        "La phrase juste est : **(d) et (d') sont parallèles, et les angles $\\widehat{EAB}$ et $\\widehat{ABD}$ sont alternes-internes**."
+      ],
+      "hint": "Regarde où sont placés les deux angles, et ce que le texte dit des droites (d) et (d')."
+    },
+    {
+      "key": "q5",
+      "skill_id": "G047",
+      "statement": "Combien mesure l'angle $\\widehat{ACD}$, en degrés ?",
+      "type": "numerique",
+      "answer": {
+        "value": 131,
+        "unit": "°",
+        "accepted": [
+          "131°",
+          "131 °",
+          "131 degrés",
+          "131 degré",
+          "ACD = 131°",
+          "ACD = 131"
+        ]
+      },
+      "points": 4,
+      "solution_steps": [
+        "Les angles $\\widehat{FDH}$ et $\\widehat{BDC}$ sont opposés par le sommet : $\\widehat{BDC}$ mesure 49°.",
+        "Les droites (d) et (d') sont parallèles et coupées par la sécante (p). En notant J un point de (d) à droite de C, les angles $\\widehat{BDC}$ et $\\widehat{DCJ}$ sont alternes-internes : $\\widehat{DCJ}$ mesure 49°.",
+        "Les points A, C et J sont alignés : $\\widehat{ACD}$ et $\\widehat{DCJ}$ sont supplémentaires. 180 − 49 = 131.",
+        "L'angle $\\widehat{ACD}$ mesure **131°**."
+      ],
+      "hint": "Commence par l'angle en D qui est opposé par le sommet à $\\widehat{FDH}$."
+    }
+  ],
+  "review_status": "relu_agent",
+  "programme_ref": "Cycle 4, classe de 5e, Espace et géométrie, Angles, Objectifs d'apprentissage : « Caractériser le parallélisme par les angles : angles alternes internes, angles correspondants. »"
+}

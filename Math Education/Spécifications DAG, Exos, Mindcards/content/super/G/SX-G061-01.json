@@ -1,0 +1,211 @@
+{
+  "id": "SX-G061-01",
+  "skill_id": "G061",
+  "skill_ids": [
+    "G061",
+    "G040",
+    "D003"
+  ],
+  "school_level": "4e",
+  "title": "L'arroseur de la pelouse",
+  "contexte": "Dans le jardin de Mme Lambert, la pelouse a la forme d'un triangle ABC rectangle en A. On a mesuré AB = 6 m et AC = 3,2 m. **La figure n'est pas en vraie grandeur.**\n\nMme Lambert veut installer un arroseur rotatif. Posé en un point, il arrose un disque, et sa portée est le rayon de ce disque. Elle veut placer l'arroseur à la même distance des trois coins A, B et C, et régler sa portée pour que le bord du disque arrosé passe juste par ces trois coins.\n\nAu magasin, la portée d'un arroseur se règle à la baisse, jusqu'à une portée maximale qui dépend du modèle : 3,25 m, 3,5 m, 3,8 m ou 4,25 m. Un arroseur coûte 24,90 €, et la pelouse a été semée au mois d'avril.\n\nPlus tard, Mme Lambert plante un rosier en un point R du cercle qui passe par A, B et C. Le point R est différent de B et de C.",
+  "image": "figures/SX-G061-01",
+  "duree_estimee_min": 15,
+  "questions": [
+    {
+      "key": "q1",
+      "skill_id": "G040",
+      "statement": "Quel côté de la pelouse est l'hypoténuse du triangle ABC ?",
+      "type": "qcm",
+      "choices": [
+        {
+          "key": "a",
+          "text": "[BC]",
+          "misconception": null
+        },
+        {
+          "key": "b",
+          "text": "[AB], le plus long des côtés mesurés",
+          "misconception": "[AB] est un côté de l'angle droit, puisque l'angle droit est en A. L'hypoténuse est le côté opposé à l'angle droit."
+        },
+        {
+          "key": "c",
+          "text": "[AC]",
+          "misconception": "[AC] part du sommet A de l'angle droit : c'est un côté de l'angle droit, pas l'hypoténuse."
+        }
+      ],
+      "answer": {
+        "value": "a"
+      },
+      "points": 1,
+      "solution_steps": [
+        "Le triangle ABC est rectangle en A.",
+        "L'hypoténuse est le côté opposé à l'angle droit, celui qui ne passe pas par A : **[BC]**."
+      ],
+      "hint": "L'hypoténuse est le côté qui fait face à l'angle droit."
+    },
+    {
+      "key": "q2",
+      "skill_id": "G040",
+      "statement": "Calcule la longueur BC, en mètres.",
+      "type": "numerique",
+      "answer": {
+        "value": 6.8,
+        "unit": "m",
+        "accepted": [
+          "6,8 m",
+          "6,80 m",
+          "6,8 mètres",
+          "680 cm"
+        ]
+      },
+      "points": 2,
+      "solution_steps": [
+        "Le triangle ABC est rectangle en A, d'hypoténuse [BC].",
+        "D'après le théorème de Pythagore : BC² = AB² + AC² = 6² + 3,2² = 36 + 10,24 = 46,24.",
+        "BC = √46,24 = 6,8, car 6,8 × 6,8 = 46,24.",
+        "BC mesure **6,8 m**."
+      ],
+      "hint": "Écris l'égalité de Pythagore dans le triangle ABC."
+    },
+    {
+      "key": "q3",
+      "skill_id": "G061",
+      "statement": "Où Mme Lambert doit-elle poser l'arroseur ?",
+      "type": "qcm",
+      "choices": [
+        {
+          "key": "a",
+          "text": "Au coin A, celui de l'angle droit",
+          "misconception": "Posé en A, l'arroseur ne serait pas à la même distance des trois coins : il serait à 6 m de B et à 3,2 m de C."
+        },
+        {
+          "key": "b",
+          "text": "Au milieu du côté [AB]",
+          "misconception": "L'élève place le centre au milieu d'un côté de l'angle droit : ce point est à la même distance de A et de B, mais pas de C."
+        },
+        {
+          "key": "c",
+          "text": "Au milieu du côté [AC]",
+          "misconception": "L'élève place le centre au milieu d'un côté de l'angle droit : ce point est à la même distance de A et de C, mais pas de B."
+        },
+        {
+          "key": "d",
+          "text": "Au milieu du côté [BC]",
+          "misconception": null
+        }
+      ],
+      "answer": {
+        "value": "d"
+      },
+      "points": 2,
+      "solution_steps": [
+        "Le point situé à la même distance des trois coins est le centre du cercle circonscrit au triangle ABC.",
+        "Le triangle ABC est rectangle en A : le centre de son cercle circonscrit est le milieu de son hypoténuse [BC].",
+        "Mme Lambert doit poser l'arroseur **au milieu du côté [BC]**."
+      ],
+      "hint": "Le point à la même distance des trois sommets d'un triangle est le centre de son cercle circonscrit."
+    },
+    {
+      "key": "q4",
+      "skill_id": "G061",
+      "statement": "On admet que BC = 6,8 m. Sur quelle portée faut-il régler l'arroseur, en mètres ?",
+      "type": "numerique",
+      "answer": {
+        "value": 3.4,
+        "unit": "m",
+        "accepted": [
+          "3,4 m",
+          "3,40 m",
+          "3,4 mètres",
+          "340 cm"
+        ]
+      },
+      "points": 2,
+      "solution_steps": [
+        "L'arroseur est au centre du cercle circonscrit, le milieu de [BC] ; sa portée est le rayon de ce cercle.",
+        "Le rayon est la moitié de l'hypoténuse : 6,8 ÷ 2 = 3,4.",
+        "Il faut régler l'arroseur sur **3,4 m**."
+      ],
+      "hint": "La portée est la distance entre l'arroseur et l'un des coins de la pelouse."
+    },
+    {
+      "key": "q5",
+      "skill_id": "D003",
+      "statement": "On admet que la portée doit être réglée sur 3,4 m. Parmi les portées maximales du magasin, quelle est la plus petite qui convient ?",
+      "type": "qcm",
+      "choices": [
+        {
+          "key": "a",
+          "text": "3,25 m",
+          "misconception": "L'élève compare les parties décimales comme des entiers (25 est plus grand que 4) ; or 3,25 est plus petit que 3,40."
+        },
+        {
+          "key": "b",
+          "text": "3,5 m",
+          "misconception": null
+        },
+        {
+          "key": "c",
+          "text": "3,8 m",
+          "misconception": "3,8 m convient, mais ce n'est pas la plus petite portée qui convient : 3,5 m suffit déjà."
+        },
+        {
+          "key": "d",
+          "text": "4,25 m",
+          "misconception": "4,25 m convient, mais ce n'est pas la plus petite portée qui convient : 3,5 m suffit déjà."
+        }
+      ],
+      "answer": {
+        "value": "b"
+      },
+      "points": 1,
+      "solution_steps": [
+        "La portée se règle à la baisse : il faut une portée maximale d'au moins 3,4 m.",
+        "On compare en écrivant les nombres avec deux chiffres après la virgule : 3,25 < 3,40 < 3,50 < 3,80 < 4,25.",
+        "3,25 m ne suffit pas. La plus petite portée maximale qui convient est **3,5 m**."
+      ],
+      "hint": "Écris toutes les portées avec deux chiffres après la virgule avant de les comparer à 3,4."
+    },
+    {
+      "key": "q6",
+      "skill_id": "G061",
+      "statement": "Pour prouver que le triangle BRC est rectangle en R, Noé écrit :\n**Données.** R est sur le cercle de diamètre [BC], et R est différent de B et de C.\n**Propriété.** …\n**Conclusion.** Le triangle BRC est rectangle en R.\n\nQuelle propriété complète sa preuve ?",
+      "type": "qcm",
+      "choices": [
+        {
+          "key": "a",
+          "text": "Si un triangle est rectangle, alors le centre de son cercle circonscrit est le milieu de son hypoténuse.",
+          "misconception": "Cette propriété part d'un triangle déjà rectangle : c'est ce que Noé veut prouver. Il lui faut la propriété réciproque."
+        },
+        {
+          "key": "b",
+          "text": "Si un triangle est rectangle, alors le carré de son hypoténuse est égal à la somme des carrés des deux autres côtés.",
+          "misconception": "Le théorème de Pythagore part lui aussi d'un triangle rectangle, et Noé ne connaît aucune longueur de BRC."
+        },
+        {
+          "key": "c",
+          "text": "Si un triangle est inscrit dans un cercle qui a pour diamètre l'un de ses côtés, alors il est rectangle, et le sommet de l'angle droit est opposé à ce diamètre.",
+          "misconception": null
+        },
+        {
+          "key": "d",
+          "text": "Si un quadrilatère a des diagonales de même longueur qui se coupent en leur milieu, alors c'est un rectangle.",
+          "misconception": "Il n'y a pas de quadrilatère dans les données de Noé, et sa conclusion porte sur un triangle."
+        }
+      ],
+      "answer": {
+        "value": "c"
+      },
+      "points": 3,
+      "solution_steps": [
+        "Les données disent que R est sur un cercle dont [BC] est un diamètre : le triangle BRC est inscrit dans ce cercle, et l'un de ses côtés, [BC], est un diamètre.",
+        "La propriété qui part de ces données est : **si un triangle est inscrit dans un cercle qui a pour diamètre l'un de ses côtés, alors il est rectangle, et le sommet de l'angle droit est opposé à ce diamètre.**",
+        "C'est la réciproque de la propriété du cercle circonscrit à un triangle rectangle. Le sommet opposé à [BC] est R : BRC est rectangle en R."
+      ],
+      "hint": "Choisis la propriété dont l'hypothèse correspond aux données de Noé."
+    }
+  ],
+  "review_status": "relu_agent",
+  "programme_ref": "Cycle 4, classe de 4e, Espace et géométrie, Triangles, Objectifs d'apprentissage : « Caractériser un triangle rectangle à l'aide de son cercle circonscrit, par son inscription dans un demi-cercle dont le diamètre est un côté du triangle. »"
+}

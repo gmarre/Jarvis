@@ -1,0 +1,176 @@
+{
+  "id": "SX-G038-01",
+  "skill_id": "G038",
+  "skill_ids": [
+    "G038",
+    "D021"
+  ],
+  "school_level": "5e",
+  "title": "Le square de la fontaine",
+  "contexte": "La ville de Valmont aménage un square autour de sa fontaine, placée au point O. La paysagiste veut un square symétrique par rapport au point O : chaque élément installé d'un côté de la fontaine aura son symétrique de l'autre côté, obtenu par le demi-tour de centre O.\n\nSur le plan, dessiné sur un quadrillage, le côté d'un carreau représente 1 m. Le premier massif de roses est le triangle ABC. Les triangles 1, 2 et 3 sont trois emplacements proposés pour le second massif.\n\nSur le plan, le lampadaire L est 5 carreaux à droite de la fontaine et 2 carreaux au-dessus. Le banc K est installé à 4,65 m de la fontaine.\n\nChaque massif recevra 7 rosiers à 3,85 € l'un. Le square ouvrira au mois de mai, avec 18 tilleuls.",
+  "image": "figures/SX-G038-01",
+  "duree_estimee_min": 15,
+  "questions": [
+    {
+      "key": "q1",
+      "skill_id": "G038",
+      "statement": "D'après le texte, quel élément du square est le centre du demi-tour ?",
+      "type": "qcm",
+      "choices": [
+        {
+          "key": "a",
+          "text": "Le lampadaire L",
+          "misconception": "Le lampadaire est un élément à reproduire de l'autre côté de la fontaine, ce n'est pas le centre."
+        },
+        {
+          "key": "b",
+          "text": "Le banc K",
+          "misconception": "Le banc est un élément du square ; sa distance à la fontaine sert à placer son symétrique."
+        },
+        {
+          "key": "c",
+          "text": "La fontaine O",
+          "misconception": null
+        }
+      ],
+      "answer": {
+        "value": "c"
+      },
+      "points": 1,
+      "solution_steps": [
+        "Le texte dit que chaque symétrique est « obtenu par le demi-tour de centre O ».",
+        "O est la fontaine : **la fontaine** est le centre du demi-tour."
+      ],
+      "hint": "Relis la première phrase du texte."
+    },
+    {
+      "key": "q2",
+      "skill_id": "G038",
+      "statement": "Sur le plan, où faut-il placer L', le symétrique du lampadaire L par rapport au point O ?",
+      "type": "qcm",
+      "choices": [
+        {
+          "key": "a",
+          "text": "5 carreaux à gauche de la fontaine et 2 carreaux au-dessous",
+          "misconception": null
+        },
+        {
+          "key": "b",
+          "text": "5 carreaux à gauche de la fontaine et 2 carreaux au-dessus",
+          "misconception": "C'est le point « en miroir » par rapport à la droite verticale qui passe par O : une symétrie axiale, pas un demi-tour."
+        },
+        {
+          "key": "c",
+          "text": "5 carreaux à droite de la fontaine et 2 carreaux au-dessous",
+          "misconception": "C'est le point « en miroir » par rapport à la droite horizontale qui passe par O : une symétrie axiale, pas un demi-tour."
+        },
+        {
+          "key": "d",
+          "text": "10 carreaux à gauche de la fontaine et 4 carreaux au-dessous",
+          "misconception": "L'élève double le trajet : 10 carreaux et 4 carreaux, c'est le trajet de L à son symétrique, pas celui de la fontaine au symétrique."
+        }
+      ],
+      "answer": {
+        "value": "a"
+      },
+      "points": 2,
+      "solution_steps": [
+        "Le symétrique L' de L par rapport à O est le point tel que O soit le milieu du segment [LL'] : on refait le même trajet que de L à O, à partir de O.",
+        "De L à O, on va de 5 carreaux vers la gauche et de 2 carreaux vers le bas.",
+        "À partir de O, on refait ce trajet : L' est **5 carreaux à gauche de la fontaine et 2 carreaux au-dessous**."
+      ],
+      "hint": "Compte le trajet qui mène du lampadaire à la fontaine, puis continue de la même façon."
+    },
+    {
+      "key": "q3",
+      "skill_id": "D021",
+      "statement": "Combien coûtent les rosiers des deux massifs, en euros ?",
+      "type": "numerique",
+      "answer": {
+        "value": 53.9,
+        "unit": "€",
+        "accepted": [
+          "53,90",
+          "53,9 €",
+          "53,90 €",
+          "53,90€",
+          "53,9 euros",
+          "53,90 euros",
+          "53 € 90"
+        ]
+      },
+      "points": 2,
+      "solution_steps": [
+        "Un massif reçoit 7 rosiers à 3,85 € : on pose 3,85 × 7.",
+        "385 × 7 = 2 695 ; il y a deux chiffres après la virgule dans 3,85, donc 3,85 × 7 = 26,95.",
+        "Pour les deux massifs : 26,95 × 2 = 53,90.",
+        "Les rosiers coûtent **53,90 €**."
+      ],
+      "hint": "Calcule d'abord le prix des rosiers d'un seul massif."
+    },
+    {
+      "key": "q4",
+      "skill_id": "G038",
+      "statement": "La paysagiste installe un second banc K', symétrique du banc K par rapport au point O. Quelle distance sépare les deux bancs, en mètres ?",
+      "type": "numerique",
+      "answer": {
+        "value": 9.3,
+        "unit": "m",
+        "accepted": [
+          "9,3 m",
+          "9,30 m",
+          "9,3 mètres",
+          "9,30 mètres",
+          "930 cm",
+          "KK' = 9,3 m",
+          "KK' = 9,3"
+        ]
+      },
+      "points": 2,
+      "solution_steps": [
+        "K' est le symétrique de K par rapport à O : O est le milieu du segment [KK'].",
+        "Donc KK' = 2 × OK = 4,65 × 2 = 9,3.",
+        "Les deux bancs sont à **9,3 m** l'un de l'autre.",
+        "Attention : 4,65 m est la distance d'un banc à la fontaine, la moitié seulement."
+      ],
+      "hint": "Où se trouve la fontaine sur le segment qui joint les deux bancs ?"
+    },
+    {
+      "key": "q5",
+      "skill_id": "G038",
+      "statement": "Quel triangle est le symétrique du massif ABC par rapport au point O ?",
+      "type": "qcm",
+      "choices": [
+        {
+          "key": "a",
+          "text": "Le triangle 1",
+          "misconception": "Le triangle 1 est le massif retourné « en miroir » par rapport à la droite verticale qui passe par O : une symétrie axiale."
+        },
+        {
+          "key": "b",
+          "text": "Le triangle 2",
+          "misconception": null
+        },
+        {
+          "key": "c",
+          "text": "Le triangle 3",
+          "misconception": "Le triangle 3 est le massif retourné « en miroir » par rapport à la droite horizontale qui passe par O : une symétrie axiale."
+        }
+      ],
+      "answer": {
+        "value": "b"
+      },
+      "points": 4,
+      "solution_steps": [
+        "Le symétrique de chaque sommet s'obtient par le même trajet de l'autre côté de O.",
+        "A est 5 carreaux à gauche de O et 1 carreau au-dessus : son symétrique est 5 carreaux à droite de O et 1 carreau au-dessous.",
+        "B est 4 carreaux à gauche et 3 carreaux au-dessus : son symétrique est 4 carreaux à droite et 3 carreaux au-dessous.",
+        "C est 1 carreau à gauche et 3 carreaux au-dessus : son symétrique est 1 carreau à droite et 3 carreaux au-dessous.",
+        "Ces trois points sont les sommets du **triangle 2**. Le demi-tour fait tourner le massif : il n'est pas retourné."
+      ],
+      "hint": "Cherche le symétrique de chacun des trois sommets A, B et C."
+    }
+  ],
+  "review_status": "relu_agent",
+  "programme_ref": "Cycle 4, classe de 5e, Espace et géométrie, Transformations, Objectifs d'apprentissage : « Définir le demi-tour, ou symétrie centrale. »"
+}

@@ -1,0 +1,149 @@
+{
+  "id": "SX-G040-01",
+  "skill_id": "G040",
+  "skill_ids": [
+    "G040",
+    "D004",
+    "P024"
+  ],
+  "school_level": "4e",
+  "title": "Le toit de l'abri de jardin",
+  "contexte": "Karim construit un abri de jardin dont le toit n'a qu'une seule pente. La figure montre le mur de côté de l'abri. **Elle n'est pas en vraie grandeur.**\n\nLes deux murs, [AB] à l'arrière et [DC] à l'avant, sont verticaux, et le sol [AD] est horizontal. Le mur arrière mesure 2,6 m de haut, le mur avant 1,9 m, et le sol 2,4 m de long.\nLe point H est sur le mur arrière, à la même hauteur que C. Le triangle BHC est donc rectangle en H, et HC = AD.\n\nLe toit est un rectangle de 3,4 m de large, qui couvre toute la largeur de l'abri. Il repose sur des chevrons qui vont de B à C.\n\nLa façade avant de l'abri est un rectangle de 3,4 m de large et de 1,9 m de haut. Pour la rendre plus solide, Karim visse une planche en diagonale, d'un coin à l'autre de cette façade.\n\nLa porte mesure 0,8 m de large, et l'abri sera peint en vert.",
+  "image": "figures/SX-G040-01",
+  "duree_estimee_min": 15,
+  "questions": [
+    {
+      "key": "q1",
+      "skill_id": "D004",
+      "statement": "De combien le mur arrière est-il plus haut que le mur avant, en mètres ?",
+      "type": "numerique",
+      "answer": {
+        "value": 0.7,
+        "unit": "m",
+        "accepted": [
+          "0,7 m",
+          "0,70 m",
+          "0,7 mètre",
+          "70 cm"
+        ]
+      },
+      "points": 1,
+      "solution_steps": [
+        "La différence de hauteur est 2,6 − 1,9.",
+        "2,6 − 1,9 = 0,7.",
+        "Le mur arrière est plus haut de **0,7 m** : c'est la longueur BH."
+      ],
+      "hint": "On cherche l'écart entre deux hauteurs."
+    },
+    {
+      "key": "q2",
+      "skill_id": "G040",
+      "statement": "Dans le triangle BHC, rectangle en H, quelle égalité est vraie ?",
+      "type": "qcm",
+      "choices": [
+        {
+          "key": "a",
+          "text": "HC² = BH² + BC²",
+          "misconception": "L'élève prend [HC] pour l'hypoténuse. L'hypoténuse est le côté opposé à l'angle droit, ici [BC], et c'est son carré qui est seul."
+        },
+        {
+          "key": "b",
+          "text": "BC = BH + HC",
+          "misconception": "L'élève additionne les longueurs : l'égalité de Pythagore porte sur les carrés des longueurs, et BC est plus court que BH + HC."
+        },
+        {
+          "key": "c",
+          "text": "BC² = BH² + HC²",
+          "misconception": null
+        },
+        {
+          "key": "d",
+          "text": "BH² = BC² + HC²",
+          "misconception": "L'élève met seul le carré de BH, alors que [BH] est un côté de l'angle droit."
+        }
+      ],
+      "answer": {
+        "value": "c"
+      },
+      "points": 2,
+      "solution_steps": [
+        "Le triangle BHC est rectangle en H : son hypoténuse est le côté opposé à l'angle droit, [BC].",
+        "D'après le théorème de Pythagore, le carré de l'hypoténuse est égal à la somme des carrés des deux autres côtés : **BC² = BH² + HC²**."
+      ],
+      "hint": "Repère d'abord le côté opposé à l'angle droit."
+    },
+    {
+      "key": "q3",
+      "skill_id": "G040",
+      "statement": "On admet que BH = 0,7 m. Calcule la longueur d'un chevron [BC], en mètres.",
+      "type": "numerique",
+      "answer": {
+        "value": 2.5,
+        "unit": "m",
+        "accepted": [
+          "2,5 m",
+          "2,50 m",
+          "2,5 mètres",
+          "250 cm"
+        ]
+      },
+      "points": 2,
+      "solution_steps": [
+        "Le triangle BHC est rectangle en H, avec BH = 0,7 m et HC = AD = 2,4 m.",
+        "D'après le théorème de Pythagore : BC² = BH² + HC² = 0,7² + 2,4² = 0,49 + 5,76 = 6,25.",
+        "BC = √6,25 = 2,5, car 2,5 × 2,5 = 6,25.",
+        "Un chevron mesure **2,5 m**."
+      ],
+      "hint": "Écris l'égalité de Pythagore dans le triangle BHC, puis remplace les longueurs connues."
+    },
+    {
+      "key": "q4",
+      "skill_id": "P024",
+      "statement": "On admet qu'un chevron mesure 2,5 m : le toit est un rectangle de 3,4 m sur 2,5 m. Quelle est son aire, en m² ?",
+      "type": "numerique",
+      "answer": {
+        "value": 8.5,
+        "unit": "m²",
+        "accepted": [
+          "8,5 m²",
+          "8,5 m2",
+          "8,5 mètres carrés",
+          "8,50 m²"
+        ]
+      },
+      "points": 2,
+      "solution_steps": [
+        "L'aire d'un rectangle est le produit de sa longueur par sa largeur.",
+        "3,4 × 2,5 = 8,5 (on calcule 34 × 25 = 850, puis on place la virgule : 8,50).",
+        "Le toit a une aire de **8,5 m²**."
+      ],
+      "hint": "Le toit est un rectangle : rappelle-toi comment on calcule l'aire d'un rectangle."
+    },
+    {
+      "key": "q5",
+      "skill_id": "G040",
+      "statement": "Quelle est la longueur de la planche posée en diagonale sur la façade avant ? Donne la valeur arrondie au dixième de mètre.",
+      "type": "numerique",
+      "answer": {
+        "value": 3.9,
+        "unit": "m",
+        "tolerance": 0.05,
+        "accepted": [
+          "3,9 m",
+          "3,9 mètres",
+          "390 cm"
+        ]
+      },
+      "points": 3,
+      "solution_steps": [
+        "La façade avant est un rectangle de 3,4 m sur 1,9 m. La planche et deux côtés de la façade forment un triangle rectangle : son angle droit est un coin de la façade, et la planche est son hypoténuse.",
+        "D'après le théorème de Pythagore, le carré de la longueur de la planche vaut 3,4² + 1,9² = 11,56 + 3,61 = 15,17.",
+        "La longueur de la planche est √15,17. À la calculatrice, √15,17 ≈ 3,89 ; contrôle : 3² = 9 et 4² = 16, et 15,17 est entre les deux, donc la longueur est entre 3 m et 4 m.",
+        "Arrondie au dixième, la planche mesure **3,9 m**."
+      ],
+      "hint": "Dessine la façade au brouillon : quel triangle rectangle la planche forme-t-elle avec deux de ses côtés ?"
+    }
+  ],
+  "review_status": "relu_agent",
+  "programme_ref": "Cycle 4, classe de 4e, Espace et géométrie, Triangles, Objectifs d'apprentissage : « Connaitre le théorème de Pythagore, sa réciproque, sa contraposée. »"
+}

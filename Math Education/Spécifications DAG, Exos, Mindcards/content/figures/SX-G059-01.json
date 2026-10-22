@@ -1,0 +1,105 @@
+{
+ "type": "geometrie",
+ "params": {
+  "colonnes": 12,
+  "lignes": 10,
+  "points": {
+   "A": [
+    8,
+    1
+   ],
+   "B": [
+    1,
+    9
+   ],
+   "C": [
+    11,
+    9
+   ],
+   "I": [
+    "9/2",
+    5
+   ],
+   "J": [
+    "19/2",
+    5
+   ],
+   "K": [
+    6,
+    9
+   ],
+   "_u": [
+    "35/4",
+    3
+   ]
+  },
+  "etiquettes": {
+   "I": "gauche",
+   "J": "droite",
+   "K": "bas"
+  },
+  "elements": [
+   {
+    "polygone": [
+     "A",
+     "B",
+     "C"
+    ]
+   },
+   {
+    "segment": [
+     "I",
+     "J"
+    ],
+    "couleur": "accent"
+   },
+   {
+    "segment": [
+     "I",
+     "K"
+    ],
+    "couleur": "accent"
+   },
+   {
+    "codage": [
+     [
+      "A",
+      "I"
+     ],
+     [
+      "I",
+      "B"
+     ]
+    ],
+    "marque": 1
+   },
+   {
+    "codage": [
+     [
+      "A",
+      "J"
+     ],
+     [
+      "J",
+      "C"
+     ]
+    ],
+    "marque": 2
+   },
+   {
+    "parallele": [
+     [
+      "I",
+      "K"
+     ],
+     [
+      "_u",
+      "J"
+     ]
+    ],
+    "marque": 1
+   }
+  ]
+ },
+ "alt": "Plan d'un triangle ABC avec les points I, J et K, des codages et deux segments en couleur"
+}

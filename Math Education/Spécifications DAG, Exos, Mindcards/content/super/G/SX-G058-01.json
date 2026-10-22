@@ -1,0 +1,181 @@
+{
+  "id": "SX-G058-01",
+  "skill_id": "G058",
+  "skill_ids": [
+    "G058",
+    "G057",
+    "D021"
+  ],
+  "school_level": "4e",
+  "title": "La frise de l'escalier",
+  "contexte": "Inès décore le mur de la montée d'escalier avec une frise peinte au pochoir. Elle peint d'abord le motif 1. Ensuite, elle fait glisser le pochoir le long de l'escalier : chaque nouveau motif est l'image du précédent par la translation qui transforme A en B.\n\nSur le schéma, tracé sur un quadrillage, la flèche va de A à B. On y voit le motif 1 et trois autres motifs, numérotés 2, 3 et 4. Un seul d'entre eux est le motif suivant de la frise. Le point K est un clou planté dans le mur, et M est un sommet du motif 1.\n\nLe schéma n'est pas à l'échelle du mur. Sur le vrai mur, la flèche AB mesure 0,45 m, et Inès peindra 8 motifs à la suite. Le pochoir lui a coûté 12 €, et chaque motif sèche en 20 minutes.",
+  "image": "figures/SX-G058-01",
+  "duree_estimee_min": 15,
+  "questions": [
+    {
+      "key": "q1",
+      "skill_id": "G058",
+      "statement": "D'après la flèche, comment glisse chaque point d'un motif au motif suivant ?",
+      "type": "qcm",
+      "choices": [
+        {
+          "key": "a",
+          "text": "De 4 carreaux vers la gauche et de 2 carreaux vers le bas",
+          "misconception": "L'élève lit la flèche à l'envers, de B vers A : la translation qui transforme A en B va dans le sens de A vers B."
+        },
+        {
+          "key": "b",
+          "text": "De 4 carreaux vers la droite et de 2 carreaux vers le haut",
+          "misconception": null
+        },
+        {
+          "key": "c",
+          "text": "De 2 carreaux vers la droite et de 4 carreaux vers le haut",
+          "misconception": "L'élève échange les deux déplacements : de A à B, on avance de 4 carreaux vers la droite et on monte de 2."
+        },
+        {
+          "key": "d",
+          "text": "De 6 carreaux vers la droite",
+          "misconception": "L'élève additionne les deux déplacements : on avance de 4 carreaux et on monte de 2, ce n'est pas un glissement de 6 carreaux dans une seule direction."
+        }
+      ],
+      "answer": {
+        "value": "b"
+      },
+      "points": 1,
+      "solution_steps": [
+        "Pour aller de A à B sur le quadrillage, on avance de 4 carreaux vers la droite et on monte de 2 carreaux.",
+        "La translation qui transforme A en B fait glisser chaque point de la même façon, dans le sens de A vers B : **de 4 carreaux vers la droite et de 2 carreaux vers le haut**."
+      ],
+      "hint": "Compte les carreaux pour aller de A à B, en partant de A."
+    },
+    {
+      "key": "q2",
+      "skill_id": "G058",
+      "statement": "Quel motif est l'image du motif 1 par la translation qui transforme A en B ?",
+      "type": "qcm",
+      "choices": [
+        {
+          "key": "a",
+          "text": "Le motif 2",
+          "misconception": "L'élève fait glisser le motif dans le mauvais sens, de B vers A : le motif 2 est 4 carreaux à gauche et 2 carreaux plus bas que le motif 1."
+        },
+        {
+          "key": "b",
+          "text": "Le motif 3",
+          "misconception": "L'élève prend un motif tête en bas pour le motif suivant : le motif 3 a tourné d'un demi-tour, alors qu'une translation fait glisser la figure sans la tourner."
+        },
+        {
+          "key": "c",
+          "text": "Le motif 4",
+          "misconception": null
+        }
+      ],
+      "answer": {
+        "value": "c"
+      },
+      "points": 3,
+      "solution_steps": [
+        "Chaque point du motif 1 doit glisser de 4 carreaux vers la droite et de 2 carreaux vers le haut, comme de A à B.",
+        "Le sommet M arrive ainsi 4 carreaux à droite et 2 carreaux au-dessus de M : c'est un sommet du motif 4. Les deux autres sommets du motif 1 arrivent aussi sur des sommets du motif 4.",
+        "Le motif 4 a la même forme et la même orientation que le motif 1 : l'image cherchée est **le motif 4**."
+      ],
+      "hint": "Fais glisser un sommet du motif 1 comme on va de A à B, puis regarde où il arrive."
+    },
+    {
+      "key": "q3",
+      "skill_id": "G057",
+      "statement": "Le motif 3 est l'image du motif 1 par une autre transformation. Laquelle ?",
+      "type": "qcm",
+      "choices": [
+        {
+          "key": "a",
+          "text": "Le demi-tour de centre K",
+          "misconception": null
+        },
+        {
+          "key": "b",
+          "text": "La symétrie d'axe (AB)",
+          "misconception": "L'élève voit un motif changé de sens et pense à une symétrie axiale. Mais la droite (AB) ne sépare pas les deux motifs, et le motif 3 a tourné autour de K sans être retourné comme dans un miroir."
+        },
+        {
+          "key": "c",
+          "text": "La translation qui transforme B en A",
+          "misconception": "Une translation fait glisser la figure sans la tourner, quel que soit son sens ; le motif 3 est tête en bas par rapport au motif 1."
+        }
+      ],
+      "answer": {
+        "value": "a"
+      },
+      "points": 2,
+      "solution_steps": [
+        "Le motif 3 est tête en bas par rapport au motif 1 : il a tourné d'un demi-tour. Ce n'est pas une translation, qui garde l'orientation, ni une symétrie axiale, qui retournerait le motif comme dans un miroir.",
+        "Le centre du demi-tour est le milieu du segment qui joint un sommet à son image. M est 1 carreau et demi à gauche de K et un demi-carreau au-dessus ; son image est 1 carreau et demi à droite de K et un demi-carreau au-dessous : c'est un sommet du motif 3.",
+        "Le motif 3 est l'image du motif 1 par **le demi-tour de centre K**."
+      ],
+      "hint": "Regarde si le motif 3 a seulement glissé, s'il a été retourné comme dans un miroir, ou s'il a tourné."
+    },
+    {
+      "key": "q4",
+      "skill_id": "D021",
+      "statement": "Sur le vrai mur, Inès peint 8 motifs à la suite, du 1er au 8e. De quelle distance chaque point du 8e motif est-il éloigné du point correspondant du 1er motif, en mètres ?",
+      "type": "numerique",
+      "answer": {
+        "value": 3.15,
+        "unit": "m",
+        "accepted": [
+          "3,15 m",
+          "3,15 mètres",
+          "315 cm"
+        ]
+      },
+      "points": 2,
+      "solution_steps": [
+        "Du 1er motif au 8e, il y a 7 glissements : du 1er au 2e, du 2e au 3e, et ainsi de suite jusqu'au 8e.",
+        "À chaque glissement, chaque point avance de AB = 0,45 m, toujours dans la même direction et le même sens.",
+        "7 × 0,45 = 3,15. Chaque point du 8e motif est à **3,15 m** du point correspondant du 1er motif."
+      ],
+      "hint": "Compte combien de glissements il faut pour passer du 1er motif de la frise au 8e, en essayant d'abord avec le 3e."
+    },
+    {
+      "key": "q5",
+      "skill_id": "G058",
+      "statement": "M' est l'image du sommet M par la translation qui transforme A en B. Quelle phrase est juste ?",
+      "type": "qcm",
+      "choices": [
+        {
+          "key": "a",
+          "text": "ABMM' est un parallélogramme.",
+          "misconception": "L'élève ne respecte pas l'ordre des sommets : dans ABMM', les côtés [BM] et [M'A] se croisent. Le parallélogramme est ABM'M, où [AB] et [M'M] sont deux côtés opposés."
+        },
+        {
+          "key": "b",
+          "text": "Le segment [MM'] est plus long que [AB], car M est loin de la flèche.",
+          "misconception": "Une translation fait glisser tous les points sur la même longueur : MM' = AB, quelle que soit la place de M."
+        },
+        {
+          "key": "c",
+          "text": "La droite (MM') est perpendiculaire à la droite (AB).",
+          "misconception": "Chaque point glisse dans la direction de la flèche : (MM') est parallèle à (AB), pas perpendiculaire."
+        },
+        {
+          "key": "d",
+          "text": "ABM'M est un parallélogramme.",
+          "misconception": null
+        }
+      ],
+      "answer": {
+        "value": "d"
+      },
+      "points": 3,
+      "solution_steps": [
+        "La translation qui transforme A en B fait glisser M dans la même direction, dans le même sens et sur la même longueur que de A à B : (MM') est parallèle à (AB), et MM' = AB.",
+        "C'est une propriété de la translation : si M a pour image M', alors **ABM'M est un parallélogramme**. Il n'est pas aplati, car M n'est pas sur la droite (AB).",
+        "Dans ABMM', l'ordre des sommets fait se croiser les côtés [BM] et [M'A] : ce n'est pas un parallélogramme."
+      ],
+      "hint": "Rappelle-toi comment glisse chaque point : dans quelle direction, dans quel sens, et sur quelle longueur."
+    }
+  ],
+  "review_status": "relu_agent",
+  "programme_ref": "Cycle 4, classe de 4e, Espace et géométrie, Parallélogrammes et translations, Objectifs d'apprentissage : « Comprendre l'effet d'une translation. »"
+}

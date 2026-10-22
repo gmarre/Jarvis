@@ -1,0 +1,99 @@
+{
+ "type": "geometrie",
+ "params": {
+  "colonnes": 10,
+  "lignes": 10,
+  "points": {
+   "A": [
+    2,
+    9
+   ],
+   "B": [
+    2,
+    "1/2"
+   ],
+   "C": [
+    8,
+    5
+   ],
+   "D": [
+    8,
+    9
+   ],
+   "H": [
+    2,
+    5
+   ]
+  },
+  "etiquettes": {
+   "H": "bas_droite",
+   "A": "bas_gauche",
+   "D": "bas_droite",
+   "B": "haut_gauche",
+   "C": "droite"
+  },
+  "elements": [
+   {
+    "polygone": [
+     "A",
+     "B",
+     "C",
+     "D"
+    ],
+    "rempli": true
+   },
+   {
+    "segment": [
+     "H",
+     "C"
+    ],
+    "style": "pointille"
+   },
+   {
+    "angle_droit": [
+     "B",
+     "A",
+     "D"
+    ]
+   },
+   {
+    "angle_droit": [
+     "A",
+     "D",
+     "C"
+    ]
+   },
+   {
+    "angle_droit": [
+     "B",
+     "H",
+     "C"
+    ]
+   },
+   {
+    "longueur": [
+     "D",
+     "C"
+    ],
+    "texte": "1,9 m"
+   },
+   {
+    "longueur": [
+     "A",
+     "D"
+    ],
+    "texte": "2,4 m"
+   },
+   {
+    "longueur": [
+     "B",
+     "C"
+    ],
+    "texte": "?",
+    "cherche": "2.5"
+   }
+  ],
+  "legende": "Figure pas en vraie grandeur"
+ },
+ "alt": "Mur de côté d'un abri : quadrilatère ABCD avec le point H, des angles codés et des longueurs écrites"
+}

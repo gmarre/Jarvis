@@ -1,0 +1,124 @@
+{
+  "type": "geometrie",
+  "params": {
+    "colonnes": 12,
+    "lignes": 9,
+    "fond": "blanc",
+    "points": {
+      "A": [
+        9,
+        "1.8"
+      ],
+      "B": [
+        "7.4",
+        "4.6"
+      ],
+      "C": [
+        "5.8",
+        "7.4"
+      ],
+      "_a1": [
+        2,
+        "1.8"
+      ],
+      "_a2": [
+        "11.5",
+        "1.8"
+      ],
+      "_b1": [
+        "1.5",
+        "4.6"
+      ],
+      "_b2": [
+        "11.5",
+        "4.6"
+      ],
+      "_c1": [
+        "0.8",
+        "7.3"
+      ],
+      "_c2": [
+        "11.8",
+        "7.52"
+      ],
+      "_sd": [
+        5,
+        "8.8"
+      ]
+    },
+    "etiquettes": {
+      "A": "haut_droite",
+      "B": "haut_droite",
+      "C": "haut_droite"
+    },
+    "elements": [
+      {
+        "droite": [
+          "_sd",
+          "A"
+        ],
+        "nom": "(s)"
+      },
+      {
+        "droite": [
+          "_a1",
+          "_a2"
+        ],
+        "nom": "(e1)"
+      },
+      {
+        "droite": [
+          "_b1",
+          "_b2"
+        ],
+        "nom": "(e2)"
+      },
+      {
+        "droite": [
+          "_c1",
+          "_c2"
+        ],
+        "nom": "(e3)"
+      },
+      {
+        "angle": [
+          "_a1",
+          "A",
+          "B"
+        ],
+        "rayon_arc": 18,
+        "nom": "1"
+      },
+      {
+        "angle": [
+          "_b2",
+          "B",
+          "A"
+        ],
+        "rayon_arc": 18,
+        "nom": "2"
+      },
+      {
+        "angle": [
+          "_b2",
+          "B",
+          "C"
+        ],
+        "rayon_arc": 14,
+        "nom": "3",
+        "cherche": 112
+      },
+      {
+        "angle": [
+          "_c2",
+          "C",
+          "_sd"
+        ],
+        "rayon_arc": 14,
+        "nom": "4"
+      }
+    ],
+    "legende": "Figure pas en vraie grandeur"
+  },
+  "alt": "Une droite (s) qui coupe trois droites (e1), (e2), (e3) en A, B et C, quatre angles numérotés"
+}

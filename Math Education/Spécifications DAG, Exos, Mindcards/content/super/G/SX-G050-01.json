@@ -1,0 +1,180 @@
+{
+  "id": "SX-G050-01",
+  "skill_id": "G050",
+  "skill_ids": [
+    "G050",
+    "G049",
+    "D021"
+  ],
+  "school_level": "5e",
+  "title": "La passerelle du bassin",
+  "contexte": "Dans le parc municipal, le bassin a la forme d'un parallélogramme ABCD. Une passerelle droite, le segment [AC], relie les coins A et C ; elle mesure 23,4 m. Un jet d'eau est installé au point O, là où la passerelle croise la diagonale [BD].\n\nSur le plan, qui n'est pas en vraie grandeur, l'angle $\\widehat{CAD}$, entre la passerelle et le bord [AD], mesure 34°.\n\nLa mairie va poser un garde-corps des deux côtés de la passerelle, sur toute sa longueur, à 7 € le mètre. Le bassin a 1,2 m de profondeur et abrite 26 poissons rouges.\n\nHugo, en stage à la mairie, doit justifier plusieurs affirmations avant les travaux, par des démonstrations courtes.",
+  "image": "figures/SX-G050-01",
+  "duree_estimee_min": 15,
+  "questions": [
+    {
+      "key": "q1",
+      "skill_id": "G050",
+      "statement": "Parmi ces phrases, laquelle est une donnée du texte ?",
+      "type": "qcm",
+      "choices": [
+        {
+          "key": "a",
+          "text": "O est le milieu du segment [BD].",
+          "misconception": "Le texte dit seulement que O est le point où la passerelle croise [BD] ; qu'il en soit le milieu reste à démontrer."
+        },
+        {
+          "key": "b",
+          "text": "L'angle $\\widehat{ACB}$ mesure 34°.",
+          "misconception": "Le texte donne la mesure de $\\widehat{CAD}$, pas celle de $\\widehat{ACB}$ : elle reste à démontrer."
+        },
+        {
+          "key": "c",
+          "text": "ABCD est un parallélogramme.",
+          "misconception": null
+        }
+      ],
+      "answer": {
+        "value": "c"
+      },
+      "points": 1,
+      "solution_steps": [
+        "Une donnée est ce que dit le texte, sans rien démontrer.",
+        "Le texte dit que le bassin est le parallélogramme ABCD : c'est une donnée.",
+        "Que O soit le milieu de [BD], ou la mesure de $\\widehat{ACB}$, le texte ne le dit pas : il faudra le démontrer.",
+        "La donnée est : **ABCD est un parallélogramme**."
+      ],
+      "hint": "Relis la première phrase du texte."
+    },
+    {
+      "key": "q2",
+      "skill_id": "G049",
+      "statement": "À quelle distance du coin A se trouve le jet d'eau, en mètres ?",
+      "type": "numerique",
+      "answer": {
+        "value": 11.7,
+        "unit": "m",
+        "accepted": [
+          "11,7 m",
+          "11,70 m",
+          "11,7 mètres",
+          "AO = 11,7 m",
+          "AO = 11,7",
+          "OA = 11,7 m"
+        ]
+      },
+      "points": 2,
+      "solution_steps": [
+        "Les diagonales d'un parallélogramme se coupent en leur milieu : O est le milieu de la passerelle [AC].",
+        "AO est la moitié de AC : 23,4 ÷ 2 = 11,7.",
+        "Le jet d'eau est à **11,7 m** du coin A."
+      ],
+      "hint": "Que sait-on du point où se coupent les diagonales d'un parallélogramme ?"
+    },
+    {
+      "key": "q3",
+      "skill_id": "D021",
+      "statement": "Combien coûtera le garde-corps, en euros ?",
+      "type": "numerique",
+      "answer": {
+        "value": 327.6,
+        "unit": "€",
+        "accepted": [
+          "327,60",
+          "327,6 €",
+          "327,60 €",
+          "327,60€",
+          "327,6 euros",
+          "327,60 euros",
+          "327 € 60"
+        ]
+      },
+      "points": 2,
+      "solution_steps": [
+        "Le garde-corps longe les deux côtés de la passerelle : 23,4 × 2 = 46,8 m.",
+        "À 7 € le mètre : on pose 46,8 × 7. 468 × 7 = 3 276 ; il y a un chiffre après la virgule dans 46,8, donc 46,8 × 7 = 327,6.",
+        "Le garde-corps coûtera **327,60 €**."
+      ],
+      "hint": "Combien de mètres de garde-corps faut-il en tout ?"
+    },
+    {
+      "key": "q4",
+      "skill_id": "G050",
+      "statement": "Complète la preuve de Hugo : « On sait que ABCD est un parallélogramme. Or … Donc (AD) et (BC) sont parallèles. Or des droites parallèles coupées par une sécante forment des angles alternes-internes de même mesure. Donc $\\widehat{ACB}$ mesure 34°. »",
+      "type": "qcm",
+      "choices": [
+        {
+          "key": "a",
+          "text": "les côtés opposés d'un parallélogramme sont parallèles.",
+          "misconception": null
+        },
+        {
+          "key": "b",
+          "text": "les diagonales d'un parallélogramme se coupent en leur milieu.",
+          "misconception": "Propriété vraie, mais elle conduit au milieu des diagonales, pas au parallélisme de (AD) et (BC)."
+        },
+        {
+          "key": "c",
+          "text": "si deux droites coupées par une sécante forment des angles alternes-internes de même mesure, alors elles sont parallèles.",
+          "misconception": "C'est la propriété dans l'autre sens : elle part de l'égalité des angles, que Hugo veut justement démontrer."
+        },
+        {
+          "key": "d",
+          "text": "sur le plan, (AD) et (BC) ont l'air parallèles.",
+          "misconception": "La mesure ou l'aspect d'un dessin ne sont pas une preuve, surtout sur un plan qui n'est pas en vraie grandeur."
+        }
+      ],
+      "answer": {
+        "value": "a"
+      },
+      "points": 3,
+      "solution_steps": [
+        "On part de la donnée « ABCD est un parallélogramme » et on veut arriver à « (AD) et (BC) sont parallèles ».",
+        "La propriété qui va de l'une à l'autre est la définition du parallélogramme : ses côtés opposés sont parallèles.",
+        "Il faut écrire : **les côtés opposés d'un parallélogramme sont parallèles**."
+      ],
+      "hint": "La propriété doit partir de ce qu'on sait et arriver à la phrase qui suit « Donc »."
+    },
+    {
+      "key": "q5",
+      "skill_id": "G050",
+      "statement": "Hugo doit aussi prouver que le jet d'eau O est à la même distance des coins B et D. Quelle preuve est valable ?",
+      "type": "qcm",
+      "choices": [
+        {
+          "key": "a",
+          "text": "« J'ai mesuré OB et OD sur le plan : ils ont la même longueur. Donc OB = OD. »",
+          "misconception": "La mesure sur un plan n'est pas une preuve : elle est imprécise, et ce plan n'est pas en vraie grandeur."
+        },
+        {
+          "key": "b",
+          "text": "« On sait que O est à la même distance de B et de D. Or le milieu d'un segment est à la même distance de ses extrémités. Donc OB = OD. »",
+          "misconception": "Cette preuve part de la conclusion : « O est à la même distance de B et de D » est ce qu'il faut prouver, pas une donnée."
+        },
+        {
+          "key": "c",
+          "text": "« On sait que ABCD est un parallélogramme. Or les diagonales d'un parallélogramme ont la même longueur. Donc OB = OD. »",
+          "misconception": "La propriété citée est fausse : les diagonales n'ont la même longueur que dans un rectangle."
+        },
+        {
+          "key": "d",
+          "text": "« On sait que ABCD est un parallélogramme. Or les diagonales d'un parallélogramme se coupent en leur milieu. Donc O est le milieu de [BD], et OB = OD. »",
+          "misconception": null
+        }
+      ],
+      "answer": {
+        "value": "d"
+      },
+      "points": 4,
+      "solution_steps": [
+        "Une preuve part des données, cite une propriété vraie qui s'applique, et arrive à la conclusion.",
+        "La preuve d) part de la donnée « ABCD est un parallélogramme », cite une propriété vraie de tout parallélogramme, et en déduit que O est le milieu de [BD], donc que OB = OD.",
+        "Les autres mesurent sur le plan, partent de ce qu'il faut prouver, ou citent une propriété fausse.",
+        "La preuve valable est **la preuve d)**."
+      ],
+      "hint": "Pour chaque preuve, vérifie d'où elle part et si la propriété citée est vraie pour tout parallélogramme."
+    }
+  ],
+  "review_status": "relu_agent",
+  "programme_ref": "Cycle 4, Espace et géométrie, présentation commune aux trois classes : « Pourront ainsi être présentés des exemples génériques, des ébauches de preuves, des diagrammes ou schémas de raisonnement, des manipulations donnant l'idée de la preuve, des preuves à compléter ou à mettre dans l'ordre. »"
+}

@@ -1,0 +1,172 @@
+{
+  "id": "SX-G041-01",
+  "skill_id": "G041",
+  "skill_ids": [
+    "G041",
+    "B052",
+    "P010"
+  ],
+  "school_level": "4e",
+  "title": "Les parcelles du jardin partagé",
+  "contexte": "L'association du quartier des Tilleuls découpe un terrain en parcelles triangulaires pour un jardin partagé. Dans chaque parcelle qui a un angle droit, les jardiniers installeront un bac à compost carré, calé dans ce coin.\nIl n'y a pas de plan : on ne peut pas mesurer les angles, il faut calculer à partir des longueurs mesurées sur le terrain.\n\nLa parcelle 1 est un triangle ABC, avec AB = 3,9 m, BC = 8,9 m et AC = 8 m.\nLa parcelle 2 est un triangle DEF, avec DE = 4 m, DF = 7,5 m et EF = 8,6 m.\n\nUne bordure en bois fera le tour de la parcelle 1. Le terrain est à 400 m de l'école, et chaque parcelle recevra 9 sachets de graines.",
+  "image": null,
+  "duree_estimee_min": 15,
+  "questions": [
+    {
+      "key": "q1",
+      "skill_id": "G041",
+      "statement": "Si la parcelle 1 a un angle droit, quel côté est son hypoténuse ?",
+      "type": "qcm",
+      "choices": [
+        {
+          "key": "a",
+          "text": "[AB]",
+          "misconception": "[AB] est le plus court des trois côtés : l'hypoténuse d'un triangle rectangle est son plus long côté."
+        },
+        {
+          "key": "b",
+          "text": "[AC]",
+          "misconception": "[AC] n'est pas le plus long côté : BC = 8,9 m est plus grand que AC = 8 m."
+        },
+        {
+          "key": "c",
+          "text": "[BC]",
+          "misconception": null
+        }
+      ],
+      "answer": {
+        "value": "c"
+      },
+      "points": 1,
+      "solution_steps": [
+        "Dans un triangle rectangle, l'hypoténuse est le côté opposé à l'angle droit, et c'est le plus long des trois côtés.",
+        "Le plus long côté de la parcelle 1 est [BC], qui mesure 8,9 m : si la parcelle a un angle droit, son hypoténuse est **[BC]**."
+      ],
+      "hint": "Range les trois côtés de la parcelle 1 du plus court au plus long."
+    },
+    {
+      "key": "q2",
+      "skill_id": "B052",
+      "statement": "Calcule AB² + AC², en m².",
+      "type": "numerique",
+      "answer": {
+        "value": 79.21,
+        "unit": "m²",
+        "accepted": [
+          "79,21 m²",
+          "79,21 m2",
+          "79,21 mètres carrés"
+        ]
+      },
+      "points": 2,
+      "solution_steps": [
+        "AB² = 3,9² = 3,9 × 3,9 = 15,21.",
+        "AC² = 8² = 8 × 8 = 64.",
+        "AB² + AC² = 15,21 + 64 = **79,21** (en m²)."
+      ],
+      "hint": "Calcule chaque carré à part, puis additionne-les."
+    },
+    {
+      "key": "q3",
+      "skill_id": "P010",
+      "statement": "Quelle longueur de bordure faut-il pour faire le tour de la parcelle 1, en mètres ?",
+      "type": "numerique",
+      "answer": {
+        "value": 20.8,
+        "unit": "m",
+        "accepted": [
+          "20,8 m",
+          "20,80 m",
+          "20,8 mètres",
+          "2080 cm"
+        ]
+      },
+      "points": 2,
+      "solution_steps": [
+        "La bordure fait le tour de la parcelle 1 : sa longueur est le périmètre du triangle ABC.",
+        "3,9 + 8,9 + 8 = 20,8.",
+        "Il faut **20,8 m** de bordure."
+      ],
+      "hint": "Le tour d'un triangle passe par ses trois côtés."
+    },
+    {
+      "key": "q4",
+      "skill_id": "G041",
+      "statement": "On admet que AB² + AC² = 79,21. Quelle phrase est juste ?",
+      "type": "qcm",
+      "choices": [
+        {
+          "key": "a",
+          "text": "BC² = 79,21, donc la parcelle 1 est rectangle en A, d'après la réciproque du théorème de Pythagore.",
+          "misconception": null
+        },
+        {
+          "key": "b",
+          "text": "BC² = 79,21, donc la parcelle 1 est rectangle en B, d'après la réciproque du théorème de Pythagore.",
+          "misconception": "L'angle droit est au sommet opposé à l'hypoténuse [BC] : c'est A, le seul sommet qui n'est pas sur [BC]."
+        },
+        {
+          "key": "c",
+          "text": "La parcelle 1 est rectangle en A, d'après le théorème de Pythagore.",
+          "misconception": "Le théorème de Pythagore part d'un triangle déjà rectangle pour calculer une longueur. Pour prouver qu'un triangle est rectangle à partir de ses longueurs, on utilise sa réciproque."
+        },
+        {
+          "key": "d",
+          "text": "BC² n'est pas égal à 79,21, donc la parcelle 1 n'est pas rectangle.",
+          "misconception": "Erreur de calcul : 8,9² = 8,9 × 8,9 = 79,21, et non 8,9 × 2 = 17,8."
+        }
+      ],
+      "answer": {
+        "value": "a"
+      },
+      "points": 2,
+      "solution_steps": [
+        "Le plus long côté de la parcelle 1 est [BC] : BC² = 8,9² = 8,9 × 8,9 = 79,21.",
+        "On a donc BC² = AB² + AC² : l'égalité de Pythagore est vérifiée.",
+        "D'après la réciproque du théorème de Pythagore, la parcelle 1 est rectangle, et l'angle droit est au sommet opposé à [BC] : **la parcelle 1 est rectangle en A**."
+      ],
+      "hint": "Calcule le carré du plus long côté, puis compare-le à 79,21."
+    },
+    {
+      "key": "q5",
+      "skill_id": "G041",
+      "statement": "La parcelle 2 a-t-elle un angle droit ? Quelle phrase est juste ?",
+      "type": "qcm",
+      "choices": [
+        {
+          "key": "a",
+          "text": "DEF est rectangle en D, d'après la réciproque du théorème de Pythagore.",
+          "misconception": "L'élève voit que 72,25 et 73,96 sont proches et conclut trop vite : la réciproque exige l'égalité exacte des deux nombres."
+        },
+        {
+          "key": "b",
+          "text": "DEF n'est pas rectangle, d'après la réciproque du théorème de Pythagore.",
+          "misconception": "Le théorème cité n'est pas le bon : la réciproque sert à prouver qu'un triangle est rectangle. Pour prouver qu'il ne l'est pas, on utilise la contraposée."
+        },
+        {
+          "key": "c",
+          "text": "On ne peut pas savoir sans mesurer l'angle en D.",
+          "misconception": "Les longueurs suffisent : en comparant le carré du plus long côté à la somme des carrés des deux autres, on conclut sans mesurer. Et une mesure n'est pas une preuve."
+        },
+        {
+          "key": "d",
+          "text": "DEF n'est pas rectangle, d'après la contraposée du théorème de Pythagore.",
+          "misconception": null
+        }
+      ],
+      "answer": {
+        "value": "d"
+      },
+      "points": 3,
+      "solution_steps": [
+        "Le plus long côté de DEF est [EF] : EF² = 8,6² = 73,96.",
+        "Somme des carrés des deux autres côtés : DE² + DF² = 4² + 7,5² = 16 + 56,25 = 72,25.",
+        "73,96 n'est pas égal à 72,25 : l'égalité de Pythagore n'est pas vérifiée.",
+        "D'après la contraposée du théorème de Pythagore, **DEF n'est pas rectangle**. La parcelle 2 n'aura pas de bac à compost calé dans un angle droit."
+      ],
+      "hint": "Fais pour la parcelle 2 les mêmes calculs que pour la parcelle 1, puis compare les deux nombres obtenus."
+    }
+  ],
+  "review_status": "relu_agent",
+  "programme_ref": "Cycle 4, classe de 4e, Espace et géométrie, Triangles, Objectifs d'apprentissage : « Connaitre le théorème de Pythagore, sa réciproque, sa contraposée. »"
+}
