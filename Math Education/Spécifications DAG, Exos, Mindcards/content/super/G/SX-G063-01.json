@@ -1,0 +1,161 @@
+{
+  "id": "SX-G063-01",
+  "skill_id": "G063",
+  "skill_ids": [
+    "G063",
+    "G040",
+    "P024"
+  ],
+  "school_level": "3e",
+  "title": "La rampe du camion de déménagement",
+  "contexte": "Pour charger un camion de déménagement, Hugo pose une rampe droite entre le sol et le plancher du camion. Sur le schéma, A est le bas de la rampe, posé sur le sol horizontal, C est le haut de la rampe, au bord du plancher, et B est le point du sol situé juste sous C. Le triangle ABC est rectangle en B.\n\nLes mesures :\nAB = 3,2 m, distance au sol entre le bas de la rampe et le camion\nBC = 0,72 m, hauteur du plancher\n\nLa rampe est une plaque de métal rectangulaire, large de 0,85 m. Elle supporte 400 kg. Le camion contient 46 cartons.\n\nOn note $\\widehat{BAC}$ l'angle que fait la rampe avec le sol. Le schéma n'est pas en vraie grandeur : ni ses longueurs ni ses angles ne sont respectés.",
+  "image": "figures/SX-G063-01",
+  "duree_estimee_min": 15,
+  "questions": [
+    {
+      "key": "q1",
+      "skill_id": "G063",
+      "statement": "Dans le triangle ABC, quel est le côté opposé à l'angle $\\widehat{BAC}$ ?",
+      "type": "qcm",
+      "choices": [
+        {
+          "key": "a",
+          "text": "[AB]",
+          "misconception": "[AB] part du sommet A : c'est le côté adjacent à l'angle, pas le côté opposé."
+        },
+        {
+          "key": "b",
+          "text": "[AC]",
+          "misconception": "[AC] est en face de l'angle droit : c'est l'hypoténuse."
+        },
+        {
+          "key": "c",
+          "text": "[BC]",
+          "misconception": null
+        }
+      ],
+      "answer": {
+        "value": "c"
+      },
+      "points": 1,
+      "solution_steps": [
+        "Le côté opposé à un angle aigu est le côté de l'angle droit qui ne touche pas cet angle.",
+        "[AC] est l'hypoténuse (en face de l'angle droit en B) et [AB] touche l'angle en A : c'est le côté adjacent.",
+        "Le côté opposé à l'angle $\\widehat{BAC}$ est **[BC]**."
+      ],
+      "hint": "Relis comment on nomme les côtés d'un triangle rectangle par rapport à l'un de ses angles aigus."
+    },
+    {
+      "key": "q2",
+      "skill_id": "G040",
+      "statement": "Calcule la longueur AC de la rampe, en mètres.",
+      "type": "numerique",
+      "answer": {
+        "value": 3.28,
+        "unit": "m",
+        "accepted": [
+          "3,28 m",
+          "3,28 mètres",
+          "3,28m",
+          "328 cm",
+          "328 centimètres",
+          "328cm"
+        ]
+      },
+      "points": 3,
+      "solution_steps": [
+        "Le triangle ABC est rectangle en B, d'hypoténuse [AC]. D'après le théorème de Pythagore, AC² = AB² + BC².",
+        "AC² = 3,2² + 0,72² = 10,24 + 0,5184 = 10,7584.",
+        "AC = √10,7584, et la calculatrice donne exactement 3,28 : en effet, 3,28 × 3,28 = 10,7584.",
+        "La rampe mesure **3,28 m**."
+      ],
+      "hint": "Repère l'hypoténuse, puis écris l'égalité de Pythagore."
+    },
+    {
+      "key": "q3",
+      "skill_id": "G063",
+      "statement": "Donne la valeur exacte de $\\tan\\widehat{BAC}$, en écriture décimale.",
+      "type": "numerique",
+      "answer": {
+        "value": 0.225,
+        "accepted": [
+          "9/40",
+          "0,2250",
+          "tan BAC = 0,225",
+          "tan(BAC) = 0,225"
+        ]
+      },
+      "points": 3,
+      "solution_steps": [
+        "$\\tan\\widehat{BAC} = \\dfrac{\\text{côté opposé}}{\\text{côté adjacent}} = \\dfrac{BC}{AB}$.",
+        "$\\dfrac{BC}{AB} = \\dfrac{0{,}72}{3{,}2} = \\dfrac{72}{320} = \\dfrac{9}{40}$, en multipliant par 100 puis en divisant par 8.",
+        "$\\dfrac{9}{40} = \\dfrac{225}{1000} = 0{,}225$, en multipliant par 25.",
+        "$\\tan\\widehat{BAC} = $ **0,225**."
+      ],
+      "hint": "La tangente compare les deux côtés de l'angle droit."
+    },
+    {
+      "key": "q4",
+      "skill_id": "P024",
+      "statement": "On admet que la rampe mesure 3,28 m de long. Quelle est l'aire de la plaque rectangulaire de la rampe, en m² ?",
+      "type": "numerique",
+      "answer": {
+        "value": 2.788,
+        "unit": "m²",
+        "accepted": [
+          "2,788 m²",
+          "2,788 m2",
+          "2,788 mètres carrés"
+        ]
+      },
+      "points": 2,
+      "solution_steps": [
+        "L'aire d'un rectangle est le produit de sa longueur par sa largeur.",
+        "3,28 × 0,85 = 2,788.",
+        "La plaque a une aire de **2,788 m²**."
+      ],
+      "hint": "Relis l'énoncé pour trouver la largeur de la rampe."
+    },
+    {
+      "key": "q5",
+      "skill_id": "G063",
+      "statement": "On rappelle que la première rampe mesure 3,28 m. Pour un autre camion, Hugo pose une rampe plus courte, car le plancher n'est qu'à 0,54 m du sol, et elle fait exactement le même angle avec le sol que la première. Que vaut le sinus de cet angle ?",
+      "type": "qcm",
+      "choices": [
+        {
+          "key": "a",
+          "text": "$\\dfrac{9}{41}$",
+          "misconception": null
+        },
+        {
+          "key": "b",
+          "text": "$\\dfrac{0{,}54}{3{,}28}$",
+          "misconception": "Ce quotient mélange les deux rampes : la hauteur de la seconde avec la longueur de la première, qui est plus longue."
+        },
+        {
+          "key": "c",
+          "text": "On ne peut pas le savoir sans la longueur de la nouvelle rampe.",
+          "misconception": "Le sinus ne dépend que de l'angle : le même angle donne le même sinus, quelle que soit la taille du triangle."
+        },
+        {
+          "key": "d",
+          "text": "$\\dfrac{41}{9}$",
+          "misconception": "L'hypoténuse est au numérateur : ce quotient est plus grand que 1, alors que le sinus d'un angle aigu est compris entre 0 et 1."
+        }
+      ],
+      "answer": {
+        "value": "a"
+      },
+      "points": 4,
+      "solution_steps": [
+        "Les deux rampes font le même angle avec le sol : les deux triangles rectangles ont le même angle aigu, donc le même sinus. Le sinus ne dépend que de l'angle, pas de la taille du triangle.",
+        "Dans le premier triangle : $\\sin\\widehat{BAC} = \\dfrac{\\text{côté opposé}}{\\text{hypoténuse}} = \\dfrac{BC}{AC} = \\dfrac{0{,}72}{3{,}28}$.",
+        "$\\dfrac{0{,}72}{3{,}28} = \\dfrac{72}{328} = \\dfrac{9}{41}$, en divisant par 8.",
+        "Le sinus vaut **$\\dfrac{9}{41}$**."
+      ],
+      "hint": "Écris la définition du sinus de l'angle, puis cherche un triangle rectangle dont tu connais les deux longueurs utiles."
+    }
+  ],
+  "review_status": "relu_agent",
+  "programme_ref": "Cycle 4, classe de 3e, Espace et géométrie, Triangles, Objectifs d'apprentissage : « Connaitre et utiliser les lignes trigonométriques dans le triangle rectangle : cosinus, sinus, tangente. »"
+}

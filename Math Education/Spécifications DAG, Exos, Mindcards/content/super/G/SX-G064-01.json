@@ -1,0 +1,147 @@
+{
+  "id": "SX-G064-01",
+  "skill_id": "G064",
+  "skill_ids": [
+    "G064",
+    "G063",
+    "D004"
+  ],
+  "school_level": "3e",
+  "title": "La grande échelle des pompiers",
+  "contexte": "Les pompiers dressent la grande échelle de leur camion contre un immeuble. Sur le schéma, P est le pivot de l'échelle, sur le camion, à 2,15 m au-dessus du sol. T est le haut de l'échelle, contre la façade, et K est le point de la façade situé à la même hauteur que P. Le triangle PKT est rectangle en K.\n\nLes données :\nl'échelle [PT] est déployée sur 23 m\nelle fait un angle $\\widehat{KPT}$ de 62° avec l'horizontale\n\nLe camion pèse 16 tonnes et transporte 6 pompiers. La fenêtre à atteindre est au sixième étage.\n\nCalculatrice en degrés. Le schéma n'est pas en vraie grandeur : ni ses longueurs ni ses angles ne sont respectés.",
+  "image": "figures/SX-G064-01",
+  "duree_estimee_min": 15,
+  "questions": [
+    {
+      "key": "q1",
+      "skill_id": "G063",
+      "statement": "Quelle ligne trigonométrique de l'angle $\\widehat{KPT}$ relie la longueur PT de l'échelle et la hauteur KT ?",
+      "type": "qcm",
+      "choices": [
+        {
+          "key": "a",
+          "text": "Le cosinus",
+          "misconception": "Le cosinus relie le côté adjacent [PK] et l'hypoténuse ; KT est le côté opposé à l'angle."
+        },
+        {
+          "key": "b",
+          "text": "Le sinus",
+          "misconception": null
+        },
+        {
+          "key": "c",
+          "text": "La tangente",
+          "misconception": "La tangente relie les deux côtés de l'angle droit, sans l'hypoténuse : elle n'utilise pas la longueur de l'échelle."
+        }
+      ],
+      "answer": {
+        "value": "b"
+      },
+      "points": 1,
+      "solution_steps": [
+        "Dans le triangle PKT rectangle en K, [PT] est l'hypoténuse et [KT] est le côté opposé à l'angle $\\widehat{KPT}$.",
+        "La ligne qui relie le côté opposé et l'hypoténuse est le **sinus** : $\\sin\\widehat{KPT} = \\dfrac{KT}{PT}$."
+      ],
+      "hint": "Nomme d'abord les côtés : hypoténuse, côté adjacent, côté opposé à l'angle en P."
+    },
+    {
+      "key": "q2",
+      "skill_id": "G064",
+      "statement": "Calcule la hauteur KT, en mètres, arrondie au dixième. Calculatrice en degrés.",
+      "type": "numerique",
+      "answer": {
+        "value": 20.3,
+        "tolerance": 0.05,
+        "unit": "m",
+        "accepted": [
+          "20,3 m",
+          "20,3 mètres",
+          "20,3m"
+        ]
+      },
+      "points": 3,
+      "solution_steps": [
+        "Dans le triangle PKT rectangle en K : $\\sin\\widehat{KPT} = \\dfrac{KT}{PT}$, donc $\\sin 62^{\\circ} = \\dfrac{KT}{23}$.",
+        "KT = $23 \\times \\sin 62^{\\circ}$.",
+        "À la calculatrice réglée en degrés : KT ≈ 20,307…, on arrondit à la fin.",
+        "KT ≈ **20,3 m**."
+      ],
+      "hint": "Écris le sinus de l'angle en P avec les longueurs du triangle PKT."
+    },
+    {
+      "key": "q3",
+      "skill_id": "D004",
+      "statement": "On admet que le haut T de l'échelle est 20,3 m au-dessus du pivot. À quelle hauteur au-dessus du sol se trouve-t-il ? Réponds en mètres.",
+      "type": "numerique",
+      "answer": {
+        "value": 22.45,
+        "unit": "m",
+        "accepted": [
+          "22,45 m",
+          "22,45 mètres",
+          "22,45m"
+        ]
+      },
+      "points": 2,
+      "solution_steps": [
+        "Le pivot est déjà à 2,15 m au-dessus du sol, et le haut de l'échelle est 20,3 m plus haut que le pivot.",
+        "20,3 + 2,15 = 22,45.",
+        "Le haut de l'échelle est à **22,45 m** du sol."
+      ],
+      "hint": "Relis l'énoncé : à quelle hauteur le pivot est-il placé ?"
+    },
+    {
+      "key": "q4",
+      "skill_id": "G064",
+      "statement": "Calcule la distance PK entre le pivot et la façade, en mètres, arrondie au dixième. Calculatrice en degrés.",
+      "type": "numerique",
+      "answer": {
+        "value": 10.8,
+        "tolerance": 0.05,
+        "unit": "m",
+        "accepted": [
+          "10,8 m",
+          "10,8 mètres",
+          "10,8m"
+        ]
+      },
+      "points": 3,
+      "solution_steps": [
+        "[PK] est le côté adjacent à l'angle $\\widehat{KPT}$, et [PT] l'hypoténuse : $\\cos\\widehat{KPT} = \\dfrac{PK}{PT}$.",
+        "PK = $23 \\times \\cos 62^{\\circ}$.",
+        "À la calculatrice réglée en degrés : PK ≈ 10,797…",
+        "PK ≈ **10,8 m**."
+      ],
+      "hint": "Quelle ligne trigonométrique relie le côté adjacent et l'hypoténuse ?"
+    },
+    {
+      "key": "q5",
+      "skill_id": "G064",
+      "statement": "Une autre fenêtre est à 26 m au-dessus du sol. Sans changer l'angle de 62°, sur quelle longueur faut-il déployer l'échelle pour que son haut l'atteigne ? Réponds en mètres, arrondi au dixième. Calculatrice en degrés.",
+      "type": "numerique",
+      "answer": {
+        "value": 27.0,
+        "tolerance": 0.05,
+        "unit": "m",
+        "accepted": [
+          "27 m",
+          "27 mètres",
+          "27m",
+          "27,0 m",
+          "27,0 mètres",
+          "27,0m"
+        ]
+      },
+      "points": 4,
+      "solution_steps": [
+        "Le pivot est à 2,15 m du sol : le haut de l'échelle doit monter de 26 − 2,15 = 23,85 m au-dessus du pivot.",
+        "Dans le nouveau triangle rectangle, l'échelle est l'hypoténuse L et 23,85 m est le côté opposé à l'angle de 62° : $\\sin 62^{\\circ} = \\dfrac{23{,}85}{L}$.",
+        "Donc $L \\times \\sin 62^{\\circ} = 23{,}85$ et $L = 23{,}85 \\div \\sin 62^{\\circ}$.",
+        "À la calculatrice réglée en degrés : L ≈ 27,011…, soit **27,0 m** au dixième."
+      ],
+      "hint": "Calcule d'abord de combien le haut de l'échelle doit monter au-dessus du pivot ; la longueur cherchée est au dénominateur."
+    }
+  ],
+  "review_status": "relu_agent",
+  "programme_ref": "Cycle 4, classe de 3e, Espace et géométrie, Triangles, Objectifs d'apprentissage : « Connaitre et utiliser les lignes trigonométriques dans le triangle rectangle : cosinus, sinus, tangente. »"
+}

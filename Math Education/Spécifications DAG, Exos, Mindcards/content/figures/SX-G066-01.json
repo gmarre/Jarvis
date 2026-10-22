@@ -1,0 +1,78 @@
+{
+  "type": "geometrie",
+  "params": {
+    "colonnes": 12,
+    "lignes": 10,
+    "fond": "quadrille",
+    "points": {
+      "A": [
+        2,
+        5
+      ],
+      "B": [
+        6,
+        5
+      ],
+      "C": [
+        5,
+        9
+      ],
+      "D": [
+        9,
+        9
+      ],
+      "K": [
+        6,
+        2
+      ],
+      "R": [
+        2,
+        2
+      ],
+      "S": [
+        9,
+        6
+      ],
+      "T": [
+        10,
+        2
+      ]
+    },
+    "etiquettes": {
+      "A": "gauche",
+      "B": "haut_droite",
+      "C": "bas",
+      "D": "droite",
+      "K": "haut",
+      "R": "haut",
+      "S": "droite",
+      "T": "haut"
+    },
+    "elements": [
+      {
+        "polygone": [
+          "A",
+          "B",
+          "D",
+          "C"
+        ],
+        "rempli": true
+      },
+      {
+        "image": [
+          "K"
+        ],
+        "par": {
+          "translation": [
+            "A",
+            "B"
+          ]
+        },
+        "noms": [
+          "T"
+        ]
+      }
+    ]
+  },
+  "alt": "Plan d'un parc sur un quadrillage : un quadrilatère et plusieurs points nommés"
+}

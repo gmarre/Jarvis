@@ -1,0 +1,161 @@
+{
+  "id": "SX-G066-01",
+  "skill_id": "G066",
+  "skill_ids": [
+    "G066",
+    "G049",
+    "B007"
+  ],
+  "school_level": "3e",
+  "title": "La pelouse et le kiosque du parc",
+  "contexte": "Le plan du parc des Tilleuls est dessiné sur un quadrillage. La pelouse centrale est le parallélogramme ABDC, ses sommets étant pris dans cet ordre. Ses côtés [AB] et [AC] mesurent AB = 20 m et AC = 25 m.\n\nLa mairie veut entourer la pelouse d'une petite clôture, vendue 8 € le mètre.\n\nElle veut aussi déplacer le kiosque à musique K par la translation qui transforme A en B, c'est-à-dire la translation de vecteur $\\overrightarrow{AB}$. Trois emplacements sont marqués sur le plan, les points R, S et T.\n\nLe parc ouvre à 9 h et ferme à 19 h. Il reçoit environ 350 visiteurs par jour, et la pelouse sera semée en avril.",
+  "image": "figures/SX-G066-01",
+  "duree_estimee_min": 15,
+  "questions": [
+    {
+      "key": "q1",
+      "skill_id": "G049",
+      "statement": "Quelles sont les longueurs des côtés [CD] et [BD] de la pelouse ?",
+      "type": "qcm",
+      "choices": [
+        {
+          "key": "a",
+          "text": "CD = 20 m et BD = 25 m",
+          "misconception": null
+        },
+        {
+          "key": "b",
+          "text": "CD = 25 m et BD = 20 m",
+          "misconception": "L'élève lit le quadrilatère dans l'ordre ABCD : dans ABDC, [CD] est opposé à [AB], et [BD] à [AC]."
+        },
+        {
+          "key": "c",
+          "text": "On ne peut pas les connaître sans mesurer sur le plan.",
+          "misconception": "Les côtés opposés d'un parallélogramme ont la même longueur : les données suffisent, la mesure n'est pas une preuve."
+        }
+      ],
+      "answer": {
+        "value": "a"
+      },
+      "points": 1,
+      "solution_steps": [
+        "Dans le parallélogramme ABDC, les côtés opposés sont [AB] et [DC], puis [BD] et [CA].",
+        "Les côtés opposés d'un parallélogramme ont la même longueur : CD = AB et BD = AC.",
+        "Donc **CD = 20 m et BD = 25 m**."
+      ],
+      "hint": "Lis les sommets dans l'ordre A, B, D, C pour trouver les côtés opposés."
+    },
+    {
+      "key": "q2",
+      "skill_id": "G066",
+      "statement": "Quel vecteur est égal au vecteur $\\overrightarrow{AB}$ ?",
+      "type": "qcm",
+      "choices": [
+        {
+          "key": "a",
+          "text": "$\\overrightarrow{DC}$",
+          "misconception": "$\\overrightarrow{DC}$ a la même direction et la même longueur que $\\overrightarrow{AB}$, mais le sens contraire : c'est son opposé."
+        },
+        {
+          "key": "b",
+          "text": "$\\overrightarrow{BD}$",
+          "misconception": "[BD] est un autre côté de la pelouse : sa direction n'est pas celle de [AB]."
+        },
+        {
+          "key": "c",
+          "text": "$\\overrightarrow{CD}$",
+          "misconception": null
+        },
+        {
+          "key": "d",
+          "text": "$\\overrightarrow{AD}$",
+          "misconception": "$\\overrightarrow{AD}$ part aussi de A, mais c'est une diagonale de la pelouse : il n'a ni la direction ni la longueur de $\\overrightarrow{AB}$."
+        }
+      ],
+      "answer": {
+        "value": "c"
+      },
+      "points": 2,
+      "solution_steps": [
+        "ABDC est un parallélogramme, ses sommets étant pris dans cet ordre : donc $\\overrightarrow{AB} = \\overrightarrow{CD}$.",
+        "Sur le quadrillage, on va de A à B comme de C à D : 4 carreaux vers la droite, sans monter ni descendre.",
+        "Le vecteur égal à $\\overrightarrow{AB}$ est **$\\overrightarrow{CD}$** : même direction, même sens, même longueur."
+      ],
+      "hint": "Deux vecteurs égaux ont la même direction, le même sens et la même longueur."
+    },
+    {
+      "key": "q3",
+      "skill_id": "G066",
+      "statement": "Sur quel emplacement, R, S ou T, le kiosque arrive-t-il ? Écris sa lettre.",
+      "type": "texte",
+      "answer": {
+        "value": "T",
+        "accepted": [
+          "point T",
+          "le point T",
+          "en T",
+          "au point T",
+          "c'est T",
+          "c'est le point T",
+          "l'emplacement T",
+          "emplacement T"
+        ]
+      },
+      "points": 3,
+      "solution_steps": [
+        "La translation qui transforme A en B fait glisser chaque point comme A glisse vers B : sur le quadrillage, de 4 carreaux vers la droite, sans monter ni descendre.",
+        "Le kiosque K glisse donc de 4 carreaux vers la droite : il arrive en **T**. K, B, T et A forment un parallélogramme ABTK.",
+        "R est obtenu en allant vers la gauche (vecteur $\\overrightarrow{BA}$, sens contraire), et S en suivant le vecteur $\\overrightarrow{AC}$."
+      ],
+      "hint": "Compte les carreaux pour aller de A à B, puis fais le même déplacement à partir de K."
+    },
+    {
+      "key": "q4",
+      "skill_id": "B007",
+      "statement": "On rappelle que les côtés opposés d'un parallélogramme ont la même longueur. Combien coûte la clôture qui fait le tour de la pelouse ?",
+      "type": "numerique",
+      "answer": {
+        "value": 720,
+        "unit": "€",
+        "accepted": [
+          "720 €",
+          "720 euros",
+          "720€"
+        ]
+      },
+      "points": 2,
+      "solution_steps": [
+        "La clôture fait le tour de la pelouse : AB + BD + DC + CA = 20 + 25 + 20 + 25 = 90 m.",
+        "À 8 € le mètre : 90 × 8 = 720.",
+        "La clôture coûte **720 €**."
+      ],
+      "hint": "Calcule d'abord la longueur du tour de la pelouse."
+    },
+    {
+      "key": "q5",
+      "skill_id": "G066",
+      "statement": "Quelle est l'image du point D par la translation de vecteur $\\overrightarrow{BA}$ ? Écris sa lettre.",
+      "type": "texte",
+      "answer": {
+        "value": "C",
+        "accepted": [
+          "point C",
+          "le point C",
+          "en C",
+          "au point C",
+          "c'est C",
+          "c'est le point C"
+        ]
+      },
+      "points": 4,
+      "solution_steps": [
+        "ABDC est un parallélogramme : $\\overrightarrow{AB} = \\overrightarrow{CD}$.",
+        "$\\overrightarrow{BA}$ est l'opposé de $\\overrightarrow{AB}$ ; il est donc égal à $\\overrightarrow{DC}$, l'opposé de $\\overrightarrow{CD}$.",
+        "La translation de vecteur $\\overrightarrow{DC}$ transforme D en C : l'image de D est **C**. Sur le quadrillage, on part de D et on va de 4 carreaux vers la gauche."
+      ],
+      "hint": "Cherche un vecteur égal à $\\overrightarrow{BA}$ qui part du point D."
+    }
+  ],
+  "review_status": "relu_agent",
+  "programme_ref": "Cycle 4, classe de 3e, Espace et géométrie, Translations et vecteurs, Objectifs d'apprentissage : « Définir et utiliser les notions de vecteur, de vecteurs égaux, de vecteur nul, d'opposé d'un vecteur. »"
+}

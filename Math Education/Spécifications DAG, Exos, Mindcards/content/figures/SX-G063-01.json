@@ -1,0 +1,69 @@
+{
+  "type": "geometrie",
+  "params": {
+    "colonnes": 12,
+    "lignes": 10,
+    "points": {
+      "A": [
+        1,
+        8
+      ],
+      "B": [
+        10,
+        8
+      ],
+      "C": [
+        10,
+        "3/2"
+      ]
+    },
+    "elements": [
+      {
+        "polygone": [
+          "A",
+          "B",
+          "C"
+        ]
+      },
+      {
+        "angle_droit": [
+          "A",
+          "B",
+          "C"
+        ]
+      },
+      {
+        "angle": [
+          "B",
+          "A",
+          "C"
+        ],
+        "rayon_arc": 34
+      },
+      {
+        "longueur": [
+          "A",
+          "B"
+        ],
+        "texte": "3,2 m"
+      },
+      {
+        "longueur": [
+          "B",
+          "C"
+        ],
+        "texte": "0,72 m"
+      },
+      {
+        "longueur": [
+          "A",
+          "C"
+        ],
+        "texte": "?",
+        "cherche": "3.28"
+      }
+    ],
+    "legende": "Pas en vraie grandeur, angles compris"
+  },
+  "alt": "Schéma d'une rampe : un triangle ABC avec un angle droit codé en B, un angle marqué en A et des longueurs écrites"
+}

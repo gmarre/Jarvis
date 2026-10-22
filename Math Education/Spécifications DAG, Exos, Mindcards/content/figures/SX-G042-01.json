@@ -1,0 +1,90 @@
+{
+  "type": "geometrie",
+  "params": {
+    "colonnes": 12,
+    "lignes": 10,
+    "points": {
+      "A": [
+        "27/5",
+        "11/2"
+      ],
+      "B": [
+        1,
+        9
+      ],
+      "C": [
+        11,
+        9
+      ],
+      "M": [
+        "149/50",
+        "297/40"
+      ],
+      "N": [
+        "212/25",
+        "297/40"
+      ]
+    },
+    "etiquettes": {
+      "A": "haut",
+      "M": "gauche",
+      "N": "droite"
+    },
+    "elements": [
+      {
+        "segment": [
+          "A",
+          "B"
+        ]
+      },
+      {
+        "segment": [
+          "A",
+          "C"
+        ]
+      },
+      {
+        "segment": [
+          "B",
+          "C"
+        ]
+      },
+      {
+        "segment": [
+          "M",
+          "N"
+        ],
+        "couleur": "accent"
+      },
+      {
+        "parallele": [
+          [
+            "M",
+            "N"
+          ],
+          [
+            "B",
+            "C"
+          ]
+        ]
+      },
+      {
+        "longueur": [
+          "B",
+          "C"
+        ],
+        "texte": "4,5 m"
+      },
+      {
+        "longueur": [
+          "M",
+          "N"
+        ],
+        "texte": "?",
+        "cherche": 2
+      }
+    ],
+    "legende": "Figure pas en vraie grandeur"
+  },
+  "alt": "Schéma d'une ferme de charpente : un triangle ABC, un point M sur [AB], un point N sur [AC] et le segment [MN]"
+}

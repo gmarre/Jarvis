@@ -1,0 +1,158 @@
+{
+  "id": "SX-G042-01",
+  "skill_id": "G042",
+  "skill_ids": [
+    "G042",
+    "P010",
+    "D024"
+  ],
+  "school_level": "3e",
+  "title": "La charpente de l'abri de jardin",
+  "contexte": "Léa construit un abri de jardin. Sa charpente compte **4 fermes** identiques. Chaque ferme est un triangle en bois ABC : les chevrons [AB] et [AC] partent du faîte A, et la poutre [BC] relie leurs pieds B et C. Pour rendre la ferme plus solide, Léa ajoute une traverse [MN], avec M sur le chevron [AB] et N sur le chevron [AC]. La traverse est **parallèle** à la poutre : la droite (MN) est parallèle à la droite (BC).\n\nLes mesures d'une ferme :\nAB = 2,7 m\nAC = 3,15 m\nBC = 4,5 m\nAM = 1,2 m\n\nLe bois coûte 8 € le mètre. L'abri aura une porte large de 0,9 m, et son toit sera couvert de 18 plaques ondulées.\n\nLa figure n'est pas en vraie grandeur.",
+  "image": "figures/SX-G042-01",
+  "duree_estimee_min": 15,
+  "questions": [
+    {
+      "key": "q1",
+      "skill_id": "G042",
+      "statement": "Pour calculer la longueur MN de la traverse, quelles mesures de l'énoncé faut-il utiliser ?",
+      "type": "qcm",
+      "choices": [
+        {
+          "key": "a",
+          "text": "AM, AC et BC",
+          "misconception": "AM est une longueur prise sur le chevron [AB] : elle se compare à AB, la longueur du grand triangle sur la même droite, pas à AC."
+        },
+        {
+          "key": "b",
+          "text": "AM, AB et BC",
+          "misconception": null
+        },
+        {
+          "key": "c",
+          "text": "AB, AC et BC",
+          "misconception": "Ce sont trois longueurs du grand triangle : sans aucune longueur du petit triangle AMN, on ne peut pas savoir combien il est plus petit."
+        },
+        {
+          "key": "d",
+          "text": "AM, BC et la largeur de la porte",
+          "misconception": "La porte ne fait pas partie de la ferme : sa largeur est une donnée inutile."
+        }
+      ],
+      "answer": {
+        "value": "b"
+      },
+      "points": 1,
+      "solution_steps": [
+        "M est sur [AB], N sur [AC], et (MN) est parallèle à (BC) : d'après le théorème de Thalès, $\\dfrac{AM}{AB} = \\dfrac{AN}{AC} = \\dfrac{MN}{BC}$.",
+        "La longueur cherchée MN est dans le quotient $\\dfrac{MN}{BC}$. On l'égale au quotient $\\dfrac{AM}{AB}$, dont on connaît les deux longueurs.",
+        "Il faut donc **AM, AB et BC**. AC servira pour le point N ; la porte ne sert pas."
+      ],
+      "hint": "Écris les trois quotients égaux du théorème de Thalès, puis repère celui qui contient MN."
+    },
+    {
+      "key": "q2",
+      "skill_id": "P010",
+      "statement": "Sans la traverse, quelle longueur de bois faut-il pour le triangle ABC d'une ferme ? Réponds en mètres.",
+      "type": "numerique",
+      "answer": {
+        "value": 10.35,
+        "unit": "m",
+        "accepted": [
+          "10,35 m",
+          "10,35 mètres",
+          "10,35m",
+          "1035 cm",
+          "1035 centimètres",
+          "1035cm"
+        ]
+      },
+      "points": 2,
+      "solution_steps": [
+        "Le triangle est formé des deux chevrons et de la poutre : la longueur de bois est son périmètre.",
+        "AB + AC + BC = 2,7 + 3,15 + 4,5 = 10,35.",
+        "Il faut **10,35 m** de bois."
+      ],
+      "hint": "Fais le tour du triangle en additionnant les longueurs de ses trois côtés."
+    },
+    {
+      "key": "q3",
+      "skill_id": "G042",
+      "statement": "Calcule la longueur MN de la traverse, en mètres.",
+      "type": "numerique",
+      "answer": {
+        "value": 2,
+        "unit": "m",
+        "accepted": [
+          "2 m",
+          "2 mètres",
+          "2m",
+          "200 cm",
+          "200 centimètres",
+          "200cm"
+        ]
+      },
+      "points": 3,
+      "solution_steps": [
+        "M est sur [AB], N sur [AC], et (MN) est parallèle à (BC) : d'après le théorème de Thalès, $\\dfrac{AM}{AB} = \\dfrac{MN}{BC}$.",
+        "Donc $\\dfrac{1{,}2}{2{,}7} = \\dfrac{MN}{4{,}5}$, d'où MN = 4,5 × 1,2 ÷ 2,7.",
+        "4,5 × 1,2 = 5,4 et 5,4 ÷ 2,7 = 2.",
+        "La traverse mesure **2 m**."
+      ],
+      "hint": "Remplace les longueurs connues dans l'égalité des deux quotients, puis résous comme une équation."
+    },
+    {
+      "key": "q4",
+      "skill_id": "D024",
+      "statement": "On admet qu'une ferme complète, traverse comprise, demande 12,35 m de bois. Combien coûte le bois des 4 fermes ?",
+      "type": "numerique",
+      "answer": {
+        "value": 395.2,
+        "unit": "€",
+        "accepted": [
+          "395,20 €",
+          "395,20",
+          "395,2 euros",
+          "395,20 euros",
+          "395 € 20",
+          "395€20"
+        ]
+      },
+      "points": 2,
+      "solution_steps": [
+        "Pour les 4 fermes : 12,35 × 4 = 49,4 m de bois.",
+        "À 8 € le mètre : 49,4 × 8 = 395,2.",
+        "Le bois coûte **395,20 €**."
+      ],
+      "hint": "Calcule d'abord la longueur de bois des 4 fermes."
+    },
+    {
+      "key": "q5",
+      "skill_id": "G042",
+      "statement": "Léa doit percer le chevron [AC] à l'endroit où se fixe la traverse. À quelle distance NC du pied C du chevron se trouve le point N ? Réponds en mètres.",
+      "type": "numerique",
+      "answer": {
+        "value": 1.75,
+        "unit": "m",
+        "accepted": [
+          "1,75 m",
+          "1,75 mètres",
+          "1,75m",
+          "175 cm",
+          "175 centimètres",
+          "175cm"
+        ]
+      },
+      "points": 4,
+      "solution_steps": [
+        "D'après le théorème de Thalès, $\\dfrac{AN}{AC} = \\dfrac{AM}{AB}$, donc $\\dfrac{AN}{3{,}15} = \\dfrac{1{,}2}{2{,}7}$.",
+        "AN = 3,15 × 1,2 ÷ 2,7. Or 3,15 × 1,2 = 3,78 et 3,78 ÷ 2,7 = 1,4 : AN = 1,4 m.",
+        "N est sur le chevron [AC], entre A et C : NC = AC − AN = 3,15 − 1,4 = 1,75.",
+        "Le point N est à **1,75 m** du pied C. Répondre 1,4 m donnerait la distance au faîte A."
+      ],
+      "hint": "Calcule d'abord la distance AN, puis regarde où se trouve N sur le chevron."
+    }
+  ],
+  "review_status": "relu_agent",
+  "programme_ref": "Cycle 4, classe de 3e, Espace et géométrie, Triangles, Objectifs d'apprentissage : « Connaitre et appliquer le théorème de Thalès, sa réciproque, sa contraposée (configurations des triangles emboités et configuration dite du papillon). »"
+}

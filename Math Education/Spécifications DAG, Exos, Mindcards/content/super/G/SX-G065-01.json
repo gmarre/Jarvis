@@ -1,0 +1,144 @@
+{
+  "id": "SX-G065-01",
+  "skill_id": "G065",
+  "skill_ids": [
+    "G065",
+    "G063",
+    "G040",
+    "P024"
+  ],
+  "school_level": "3e",
+  "title": "Les modules du skatepark",
+  "contexte": "La mairie installe des modules de skate en béton. Vu de côté, le premier module forme un triangle BKT rectangle en K : B est le bas de la pente, T son sommet, et K le point du sol situé juste sous T.\n\nLes mesures du premier module :\nhauteur KT = 1,15 m\nlongueur au sol BK = 3,1 m\nlargeur du module = 1,8 m\n\nUn second module, plus raide, aura une pente rectiligne de 2,8 m de long pour une hauteur de 1,35 m. Lui aussi forme un triangle rectangle avec le sol.\n\nLes travaux coûtent 9 500 € et dureront 3 semaines. Le skatepark ouvrira en juin.\n\nCalculatrice en degrés. Le schéma, qui montre le premier module, n'est pas en vraie grandeur : ni ses longueurs ni ses angles ne sont respectés.",
+  "image": "figures/SX-G065-01",
+  "duree_estimee_min": 15,
+  "questions": [
+    {
+      "key": "q1",
+      "skill_id": "G063",
+      "statement": "Pour calculer l'angle $\\widehat{KBT}$ du premier module, on connaît KT et BK. Quelle ligne trigonométrique faut-il utiliser ?",
+      "type": "qcm",
+      "choices": [
+        {
+          "key": "a",
+          "text": "La tangente",
+          "misconception": null
+        },
+        {
+          "key": "b",
+          "text": "Le sinus",
+          "misconception": "Le sinus demande l'hypoténuse [BT], qui n'est pas donnée."
+        },
+        {
+          "key": "c",
+          "text": "Le cosinus",
+          "misconception": "Le cosinus relie le côté adjacent et l'hypoténuse [BT], qui n'est pas donnée."
+        }
+      ],
+      "answer": {
+        "value": "a"
+      },
+      "points": 1,
+      "solution_steps": [
+        "Pour l'angle $\\widehat{KBT}$, [KT] est le côté opposé et [BK] le côté adjacent ; l'hypoténuse [BT] n'est pas donnée.",
+        "La ligne qui relie le côté opposé et le côté adjacent est la **tangente** : $\\tan\\widehat{KBT} = \\dfrac{KT}{BK}$."
+      ],
+      "hint": "Nomme les deux côtés connus par rapport à l'angle en B."
+    },
+    {
+      "key": "q2",
+      "skill_id": "G065",
+      "statement": "Calcule la mesure de l'angle $\\widehat{KBT}$, arrondie au degré. Calculatrice en degrés.",
+      "type": "numerique",
+      "answer": {
+        "value": 20,
+        "tolerance": 0.5,
+        "unit": "°",
+        "accepted": [
+          "20°",
+          "20 °",
+          "20 degrés"
+        ]
+      },
+      "points": 3,
+      "solution_steps": [
+        "Dans le triangle BKT rectangle en K : $\\tan\\widehat{KBT} = \\dfrac{KT}{BK} = \\dfrac{1{,}15}{3{,}1}$.",
+        "On retrouve l'angle avec la touche Arctan de la calculatrice réglée en degrés : $\\widehat{KBT} = \\text{Arctan}\\left(\\dfrac{1{,}15}{3{,}1}\\right) \\approx 20{,}35^{\\circ}$.",
+        "Arrondi au degré : $\\widehat{KBT} \\approx$ **20°**."
+      ],
+      "hint": "Calcule la tangente de l'angle, puis cherche la touche qui donne l'angle à partir de sa tangente."
+    },
+    {
+      "key": "q3",
+      "skill_id": "G040",
+      "statement": "Calcule la longueur BT de la pente du premier module, en mètres, arrondie au dixième.",
+      "type": "numerique",
+      "answer": {
+        "value": 3.3,
+        "tolerance": 0.05,
+        "unit": "m",
+        "accepted": [
+          "3,3 m",
+          "3,3 mètres",
+          "3,3m"
+        ]
+      },
+      "points": 2,
+      "solution_steps": [
+        "Le triangle BKT est rectangle en K, d'hypoténuse [BT]. D'après le théorème de Pythagore, BT² = BK² + KT².",
+        "BT² = 3,1² + 1,15² = 9,61 + 1,3225 = 10,9325.",
+        "BT = √10,9325 ≈ 3,306…, arrondi au dixième à la fin.",
+        "BT ≈ **3,3 m**."
+      ],
+      "hint": "Repère l'hypoténuse du triangle BKT, puis écris l'égalité de Pythagore."
+    },
+    {
+      "key": "q4",
+      "skill_id": "P024",
+      "statement": "On admet que la pente BT mesure 3,3 m. La surface de glisse est un rectangle de longueur BT et de largeur 1,8 m. Quelle est son aire, en m² ?",
+      "type": "numerique",
+      "answer": {
+        "value": 5.94,
+        "unit": "m²",
+        "accepted": [
+          "5,94 m²",
+          "5,94 m2",
+          "5,94 mètres carrés"
+        ]
+      },
+      "points": 2,
+      "solution_steps": [
+        "L'aire d'un rectangle est le produit de sa longueur par sa largeur.",
+        "3,3 × 1,8 = 5,94.",
+        "La surface de glisse a une aire de **5,94 m²**."
+      ],
+      "hint": "Multiplie la longueur par la largeur."
+    },
+    {
+      "key": "q5",
+      "skill_id": "G065",
+      "statement": "Calcule la mesure de l'angle que fait la pente du second module avec le sol, arrondie au degré. Calculatrice en degrés.",
+      "type": "numerique",
+      "answer": {
+        "value": 29,
+        "tolerance": 0.5,
+        "unit": "°",
+        "accepted": [
+          "29°",
+          "29 °",
+          "29 degrés"
+        ]
+      },
+      "points": 4,
+      "solution_steps": [
+        "Le second module forme un triangle rectangle : la pente de 2,8 m est l'hypoténuse, et la hauteur de 1,35 m est le côté opposé à l'angle cherché, au bas de la pente.",
+        "La ligne qui relie le côté opposé et l'hypoténuse est le sinus : le sinus de l'angle vaut $\\dfrac{1{,}35}{2{,}8}$.",
+        "Avec la touche Arcsin de la calculatrice réglée en degrés : $\\text{Arcsin}\\left(\\dfrac{1{,}35}{2{,}8}\\right) \\approx 28{,}8^{\\circ}$.",
+        "Arrondi au degré, la pente fait un angle d'environ **29°** avec le sol."
+      ],
+      "hint": "Cette fois, la longueur au sol n'est pas donnée : quels côtés connais-tu par rapport à l'angle cherché ?"
+    }
+  ],
+  "review_status": "relu_agent",
+  "programme_ref": "Cycle 4, classe de 3e, Espace et géométrie, Triangles, Objectifs d'apprentissage : « Connaitre et utiliser les lignes trigonométriques dans le triangle rectangle : cosinus, sinus, tangente. »"
+}

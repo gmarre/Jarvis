@@ -1,0 +1,81 @@
+{
+  "type": "geometrie",
+  "params": {
+    "colonnes": 12,
+    "lignes": 10,
+    "points": {
+      "S": [
+        6,
+        1
+      ],
+      "A": [
+        1,
+        9
+      ],
+      "B": [
+        10,
+        9
+      ],
+      "M": [
+        "33/8",
+        4
+      ],
+      "N": [
+        "15/2",
+        4
+      ],
+      "P": [
+        "23/8",
+        6
+      ],
+      "Q": [
+        "382/45",
+        "269/45"
+      ]
+    },
+    "etiquettes": {
+      "S": "haut",
+      "M": "gauche",
+      "P": "gauche",
+      "N": "droite",
+      "Q": "droite"
+    },
+    "elements": [
+      {
+        "segment": [
+          "S",
+          "A"
+        ]
+      },
+      {
+        "segment": [
+          "S",
+          "B"
+        ]
+      },
+      {
+        "segment": [
+          "A",
+          "B"
+        ],
+        "style": "pointille"
+      },
+      {
+        "segment": [
+          "M",
+          "N"
+        ],
+        "couleur": "accent"
+      },
+      {
+        "segment": [
+          "P",
+          "Q"
+        ],
+        "couleur": "accent"
+      }
+    ],
+    "legende": "Figure pas en vraie grandeur"
+  },
+  "alt": "Schéma d'une étagère en A : deux segments [SA] et [SB], deux segments [MN] et [PQ] qui les relient, et le segment [AB] en pointillés"
+}

@@ -1,0 +1,191 @@
+{
+  "id": "SX-G043-01",
+  "skill_id": "G043",
+  "skill_ids": [
+    "G043",
+    "C007",
+    "C010"
+  ],
+  "school_level": "3e",
+  "title": "L'étagère en forme de A",
+  "contexte": "Nadia fabrique une étagère en forme de A pour sa chambre. Les deux montants [SA] et [SB] partent du sommet S et reposent sur le sol en A et en B. Deux planches relient les montants : la planche du haut [MN] et la planche du bas [PQ]. Les points S, M, P, A sont alignés dans cet ordre, ainsi que les points S, N, Q, B.\n\nPour que les livres ne glissent pas, chaque planche doit être parallèle au sol, c'est-à-dire à la droite (AB).\n\nLes mesures :\nSA = 2,4 m et SB = 1,8 m\nSM = 0,9 m et SN = 0,675 m\nSP = 1,5 m et SQ = 1,12 m\nMN = 0,75 m et AB = 2 m\n\nLe bois est du pin, vendu 13 € la planche.\n\nLa figure n'est pas en vraie grandeur.",
+  "image": "figures/SX-G043-01",
+  "duree_estimee_min": 15,
+  "questions": [
+    {
+      "key": "q1",
+      "skill_id": "G043",
+      "statement": "Pour savoir si la planche du haut [MN] est parallèle au sol, quels quotients faut-il comparer ?",
+      "type": "qcm",
+      "choices": [
+        {
+          "key": "a",
+          "text": "$\\dfrac{SM}{SB}$ et $\\dfrac{SN}{SA}$",
+          "misconception": "M est sur le montant [SA] : SM se compare à SA, pas à SB. Ces côtés ne se correspondent pas."
+        },
+        {
+          "key": "b",
+          "text": "$\\dfrac{SM}{SA}$ et $\\dfrac{SN}{SB}$",
+          "misconception": null
+        },
+        {
+          "key": "c",
+          "text": "$\\dfrac{SM}{SA}$ et $\\dfrac{MN}{AB}$",
+          "misconception": "Le quotient MN/AB ne prouve rien : la réciproque du théorème de Thalès compare les longueurs prises sur les deux droites issues de S."
+        },
+        {
+          "key": "d",
+          "text": "$\\dfrac{SA}{SM}$ et $\\dfrac{SN}{SB}$",
+          "misconception": "Le premier quotient est renversé : le grand triangle est au numérateur d'un quotient et au dénominateur de l'autre."
+        }
+      ],
+      "answer": {
+        "value": "b"
+      },
+      "points": 1,
+      "solution_steps": [
+        "Les points S, M, A et S, N, B sont alignés dans le même ordre.",
+        "On compare les quotients des longueurs prises sur chacune des deux droites issues de S : **$\\dfrac{SM}{SA}$ et $\\dfrac{SN}{SB}$**.",
+        "Le quotient $\\dfrac{MN}{AB}$ ne sert pas à prouver le parallélisme."
+      ],
+      "hint": "Repère les deux droites issues du sommet S et les points placés sur chacune d'elles."
+    },
+    {
+      "key": "q2",
+      "skill_id": "C007",
+      "statement": "Écris le quotient $\\dfrac{SM}{SA}$ sous la forme d'une fraction irréductible.",
+      "type": "texte",
+      "answer": {
+        "value": "3/8",
+        "accepted": [
+          "3 / 8",
+          "trois huitièmes",
+          "3 sur 8"
+        ]
+      },
+      "points": 2,
+      "solution_steps": [
+        "$\\dfrac{SM}{SA} = \\dfrac{0{,}9}{2{,}4} = \\dfrac{9}{24}$, en multipliant le numérateur et le dénominateur par 10.",
+        "9 et 24 sont tous les deux divisibles par 3 : $\\dfrac{9}{24} = \\dfrac{3}{8}$.",
+        "3 et 8 n'ont pas d'autre diviseur commun que 1 : **$\\dfrac{3}{8}$** est irréductible."
+      ],
+      "hint": "Commence par écrire le quotient avec des nombres entiers, puis simplifie."
+    },
+    {
+      "key": "q3",
+      "skill_id": "G043",
+      "statement": "On admet que $\\dfrac{SM}{SA} = \\dfrac{3}{8}$. Quelle phrase est juste ?",
+      "type": "qcm",
+      "choices": [
+        {
+          "key": "a",
+          "text": "La planche du haut n'est pas parallèle au sol, d'après la contraposée du théorème de Thalès.",
+          "misconception": "Les deux quotients valent 3/8 : la contraposée ne s'applique que s'ils sont différents."
+        },
+        {
+          "key": "b",
+          "text": "La planche du haut est parallèle au sol, d'après le théorème de Thalès.",
+          "misconception": "Le théorème de Thalès part de droites parallèles pour en déduire des quotients égaux. Pour prouver le parallélisme, il faut sa réciproque."
+        },
+        {
+          "key": "c",
+          "text": "On ne peut le savoir qu'en mesurant les angles sur la figure.",
+          "misconception": "La figure n'est pas en vraie grandeur, et la mesure n'est pas une preuve : les longueurs données suffisent."
+        },
+        {
+          "key": "d",
+          "text": "La planche du haut est parallèle au sol, d'après la réciproque du théorème de Thalès.",
+          "misconception": null
+        }
+      ],
+      "answer": {
+        "value": "d"
+      },
+      "points": 3,
+      "solution_steps": [
+        "$\\dfrac{SN}{SB} = \\dfrac{0{,}675}{1{,}8} = \\dfrac{675}{1\\,800} = \\dfrac{27}{72} = \\dfrac{3}{8}$, en divisant par 25 puis par 9.",
+        "Les points S, M, A et S, N, B sont alignés dans le même ordre, et $\\dfrac{SM}{SA} = \\dfrac{SN}{SB}$.",
+        "D'après la réciproque du théorème de Thalès, (MN) est parallèle à (AB) : **la planche du haut est parallèle au sol**."
+      ],
+      "hint": "Calcule l'autre quotient et compare-le à $\\dfrac{3}{8}$, puis relis ce que dit chaque théorème cité."
+    },
+    {
+      "key": "q4",
+      "skill_id": "C010",
+      "statement": "Pour la planche du bas, $\\dfrac{SP}{SA} = \\dfrac{5}{8}$ et $\\dfrac{SQ}{SB} = \\dfrac{28}{45}$. Quelle phrase est juste ?",
+      "type": "qcm",
+      "choices": [
+        {
+          "key": "a",
+          "text": "$\\dfrac{5}{8} > \\dfrac{28}{45}$",
+          "misconception": null
+        },
+        {
+          "key": "b",
+          "text": "$\\dfrac{5}{8} = \\dfrac{28}{45}$, car arrondies au dixième elles valent toutes les deux 0,6",
+          "misconception": "Des arrondis égaux ne prouvent pas l'égalité : en valeur exacte, $\\dfrac{5}{8} = \\dfrac{225}{360}$ et $\\dfrac{28}{45} = \\dfrac{224}{360}$."
+        },
+        {
+          "key": "c",
+          "text": "$\\dfrac{5}{8} < \\dfrac{28}{45}$",
+          "misconception": "L'élève croit que la fraction écrite avec les plus grands nombres est la plus grande. Sur le dénominateur 360, 225 est plus grand que 224."
+        },
+        {
+          "key": "d",
+          "text": "On ne peut pas comparer deux fractions de dénominateurs différents.",
+          "misconception": "On peut toujours les comparer en les écrivant avec un même dénominateur, ici 360."
+        }
+      ],
+      "answer": {
+        "value": "a"
+      },
+      "points": 2,
+      "solution_steps": [
+        "On écrit les deux fractions avec un même dénominateur, 360, multiple commun de 8 et de 45 : $\\dfrac{5}{8} = \\dfrac{5 \\times 45}{8 \\times 45} = \\dfrac{225}{360}$ et $\\dfrac{28}{45} = \\dfrac{28 \\times 8}{45 \\times 8} = \\dfrac{224}{360}$.",
+        "225 > 224, donc **$\\dfrac{5}{8} > \\dfrac{28}{45}$** : les deux fractions ne sont pas égales.",
+        "Arrondies au dixième, elles valent pourtant toutes les deux 0,6 : des arrondis égaux ne prouvent pas l'égalité."
+      ],
+      "hint": "Écris les deux fractions avec un même dénominateur."
+    },
+    {
+      "key": "q5",
+      "skill_id": "G043",
+      "statement": "On rappelle que $\\dfrac{SP}{SA} = \\dfrac{5}{8}$ et $\\dfrac{SQ}{SB} = \\dfrac{28}{45}$, et on admet que ces deux fractions ne sont pas égales. Quelle phrase est juste pour la planche du bas [PQ] ?",
+      "type": "qcm",
+      "choices": [
+        {
+          "key": "a",
+          "text": "La planche du bas est parallèle au sol, d'après la réciproque du théorème de Thalès, car les quotients sont presque égaux.",
+          "misconception": "La réciproque exige des quotients égaux en valeur exacte : 225/360 et 224/360 ne le sont pas."
+        },
+        {
+          "key": "b",
+          "text": "On ne peut rien conclure, car les quotients ne sont pas égaux.",
+          "misconception": "Quand les quotients sont différents, la contraposée du théorème de Thalès permet de conclure : les droites ne sont pas parallèles."
+        },
+        {
+          "key": "c",
+          "text": "La planche du bas n'est pas parallèle au sol, d'après la contraposée du théorème de Thalès.",
+          "misconception": null
+        },
+        {
+          "key": "d",
+          "text": "La planche du bas est parallèle au sol, car elle semble parallèle à la planche du haut.",
+          "misconception": "Sur la figure, les planches semblent parallèles, mais la mesure n'est pas une preuve : seuls les quotients exacts tranchent."
+        }
+      ],
+      "answer": {
+        "value": "c"
+      },
+      "points": 4,
+      "solution_steps": [
+        "Les points S, P, A et S, Q, B sont alignés dans le même ordre.",
+        "$\\dfrac{5}{8} = \\dfrac{225}{360}$ et $\\dfrac{28}{45} = \\dfrac{224}{360}$ : $\\dfrac{SP}{SA} \\neq \\dfrac{SQ}{SB}$.",
+        "Si (PQ) était parallèle à (AB), le théorème de Thalès donnerait des quotients égaux. Ils ne le sont pas : d'après la contraposée du théorème de Thalès, **la planche du bas n'est pas parallèle au sol**, même si l'écart ne se voit pas."
+      ],
+      "hint": "Relis ce que dit chaque théorème cité, et dans quel cas on peut l'utiliser."
+    }
+  ],
+  "review_status": "relu_agent",
+  "programme_ref": "Cycle 4, classe de 3e, Espace et géométrie, Triangles, Objectifs d'apprentissage : « Connaitre et appliquer le théorème de Thalès, sa réciproque, sa contraposée (configurations des triangles emboités et configuration dite du papillon). »"
+}

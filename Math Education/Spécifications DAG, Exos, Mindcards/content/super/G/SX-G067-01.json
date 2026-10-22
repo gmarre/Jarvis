@@ -1,0 +1,167 @@
+{
+  "id": "SX-G067-01",
+  "skill_id": "G067",
+  "skill_ids": [
+    "G067",
+    "D004"
+  ],
+  "school_level": "3e",
+  "title": "La tournée du drone de livraison",
+  "contexte": "Une pharmacie livre des médicaments par drone. Le drone décolle de l'entrepôt E. Pour sa tournée du matin, il vole en ligne droite jusqu'à la ferme F, puis de F jusqu'au village G. Le déplacement de E à F est représenté par le vecteur $\\overrightarrow{EF}$, celui de F à G par le vecteur $\\overrightarrow{FG}$.\n\nLes distances :\nEF = 3,5 km\nFG = 2,4 km\nEG = 4,9 km, en ligne droite entre l'entrepôt et le village\n\nLe point H, sur la figure, est une antenne relais placée de sorte que EFGH soit un parallélogramme.\n\nAvec une batterie pleine, le drone peut parcourir 15 km. Il vole à 60 km/h et emporte au plus 2 kg de colis.",
+  "image": "figures/SX-G067-01",
+  "duree_estimee_min": 15,
+  "questions": [
+    {
+      "key": "q1",
+      "skill_id": "D004",
+      "statement": "Quelle distance le drone parcourt-il pour aller de E à G en passant par F ? Réponds en km.",
+      "type": "numerique",
+      "answer": {
+        "value": 5.9,
+        "unit": "km",
+        "accepted": [
+          "5,9 km",
+          "5,9 kilomètres",
+          "5,90 km",
+          "5,9km"
+        ]
+      },
+      "points": 1,
+      "solution_steps": [
+        "Le drone vole de E à F, puis de F à G : on additionne les deux distances.",
+        "3,5 + 2,4 = 5,9.",
+        "Il parcourt **5,9 km**. La distance EG en ligne droite ne compte pas ici."
+      ],
+      "hint": "Relis le trajet de la tournée : quels vols le drone fait-il ?"
+    },
+    {
+      "key": "q2",
+      "skill_id": "G067",
+      "statement": "Écris plus simplement la somme $\\overrightarrow{EF} + \\overrightarrow{FG}$. Donne le nom du vecteur : ses deux lettres, l'origine puis l'extrémité.",
+      "type": "texte",
+      "answer": {
+        "value": "EG",
+        "accepted": [
+          "vecteur EG",
+          "le vecteur EG",
+          "vect EG",
+          "vec EG",
+          "→EG",
+          "EG→",
+          "EF + FG = EG",
+          "c'est le vecteur EG",
+          "c'est EG"
+        ]
+      },
+      "points": 2,
+      "solution_steps": [
+        "Les vecteurs s'enchaînent : le premier finit en F, le second commence en F.",
+        "D'après la relation de Chasles, $\\overrightarrow{EF} + \\overrightarrow{FG} = \\overrightarrow{EG}$.",
+        "La somme est le vecteur **$\\overrightarrow{EG}$**."
+      ],
+      "hint": "Regarde où finit le premier vecteur et où commence le second."
+    },
+    {
+      "key": "q3",
+      "skill_id": "G067",
+      "statement": "On admet que $\\overrightarrow{EF} + \\overrightarrow{FG} = \\overrightarrow{EG}$. Quelle est la longueur du vecteur $\\overrightarrow{EF} + \\overrightarrow{FG}$ ?",
+      "type": "qcm",
+      "choices": [
+        {
+          "key": "a",
+          "text": "5,9 km",
+          "misconception": "L'élève additionne les longueurs des deux vecteurs. Or la somme des vecteurs est $\\overrightarrow{EG}$, et le drone qui va de E à G en ligne droite fait moins de chemin."
+        },
+        {
+          "key": "b",
+          "text": "1,1 km",
+          "misconception": "L'élève soustrait les deux longueurs : la somme de deux vecteurs ne se calcule pas sur leurs longueurs."
+        },
+        {
+          "key": "c",
+          "text": "4,9 km",
+          "misconception": null
+        },
+        {
+          "key": "d",
+          "text": "2,4 km",
+          "misconception": "C'est la longueur du seul vecteur $\\overrightarrow{FG}$, pas celle de la somme."
+        }
+      ],
+      "answer": {
+        "value": "c"
+      },
+      "points": 3,
+      "solution_steps": [
+        "$\\overrightarrow{EF} + \\overrightarrow{FG} = \\overrightarrow{EG}$, d'après la relation de Chasles.",
+        "La longueur de ce vecteur est la distance EG, donnée dans l'énoncé.",
+        "Elle vaut **4,9 km**. On n'additionne pas les longueurs : E, F et G ne sont pas alignés."
+      ],
+      "hint": "La longueur d'un vecteur est la distance entre son origine et son extrémité."
+    },
+    {
+      "key": "q4",
+      "skill_id": "D004",
+      "statement": "Après sa tournée, le drone revient du village G à l'entrepôt E en ligne droite. Combien de kilomètres peut-il encore parcourir avec sa batterie à la fin de ce retour ?",
+      "type": "numerique",
+      "answer": {
+        "value": 4.2,
+        "unit": "km",
+        "accepted": [
+          "4,2 km",
+          "4,20 km",
+          "4,2 kilomètres",
+          "4,2km"
+        ]
+      },
+      "points": 2,
+      "solution_steps": [
+        "Le drone vole de E à F, de F à G, puis de G à E : 3,5 + 2,4 + 4,9 = 10,8 km.",
+        "Sa batterie permet 15 km : 15 − 10,8 = 4,2.",
+        "Il peut encore parcourir **4,2 km**."
+      ],
+      "hint": "Additionne les trois vols de la journée avant de les comparer à l'autonomie."
+    },
+    {
+      "key": "q5",
+      "skill_id": "G067",
+      "statement": "Un autre jour, le drone part de E, fait d'abord le déplacement de vecteur $\\overrightarrow{FG}$, puis celui de vecteur $\\overrightarrow{EF}$. Où arrive-t-il ?",
+      "type": "qcm",
+      "choices": [
+        {
+          "key": "a",
+          "text": "En F",
+          "misconception": "Depuis E, le vecteur $\\overrightarrow{EF}$ seul mène en F, mais le drone a d'abord fait le déplacement $\\overrightarrow{FG}$ : il ne part plus de E pour le second."
+        },
+        {
+          "key": "b",
+          "text": "En H",
+          "misconception": "H est le point atteint après le premier déplacement seulement : il reste le déplacement de vecteur $\\overrightarrow{EF}$."
+        },
+        {
+          "key": "c",
+          "text": "Nulle part : on ne peut pas enchaîner ces deux déplacements, car $\\overrightarrow{FG}$ ne finit pas là où $\\overrightarrow{EF}$ commence.",
+          "misconception": "Une translation peut toujours suivre une autre : la somme de deux vecteurs existe toujours. Il suffit de remplacer chaque vecteur par un vecteur égal qui s'enchaîne."
+        },
+        {
+          "key": "d",
+          "text": "En G",
+          "misconception": null
+        }
+      ],
+      "answer": {
+        "value": "d"
+      },
+      "points": 4,
+      "solution_steps": [
+        "EFGH est un parallélogramme : $\\overrightarrow{EH} = \\overrightarrow{FG}$ et $\\overrightarrow{HG} = \\overrightarrow{EF}$.",
+        "Le premier déplacement, de vecteur $\\overrightarrow{FG}$, c'est-à-dire $\\overrightarrow{EH}$, mène le drone de E en H.",
+        "Le second, de vecteur $\\overrightarrow{EF}$, c'est-à-dire $\\overrightarrow{HG}$, le mène de H en G.",
+        "D'après la relation de Chasles, $\\overrightarrow{EH} + \\overrightarrow{HG} = \\overrightarrow{EG}$ : le drone arrive **en G**, comme pour sa tournée habituelle."
+      ],
+      "hint": "Cherche un vecteur égal à $\\overrightarrow{FG}$ qui part de E : le point H peut t'aider."
+    }
+  ],
+  "review_status": "relu_agent",
+  "programme_ref": "Cycle 4, classe de 3e, Espace et géométrie, Translations et vecteurs, Objectifs d'apprentissage : « Définir et utiliser la somme de deux vecteurs par enchainement de deux translations. »"
+}

@@ -1,0 +1,154 @@
+{
+  "id": "SX-G062-01",
+  "skill_id": "G062",
+  "skill_ids": [
+    "G062",
+    "E034",
+    "P015"
+  ],
+  "school_level": "3e",
+  "title": "La chaise pliante de camping",
+  "contexte": "Un fabricant dessine une chaise pliante de camping. Vue de côté, ses deux pieds sont des tubes droits [AC] et [BD] qui se croisent en O, où un axe les relie. Le siège en toile est tendu entre A et B, et les pieds touchent le sol en C et en D. Le siège est **parallèle** au sol : la droite (AB) est parallèle à la droite (DC).\n\nLes mesures :\nOA = 28 cm\nOB = 26 cm\nOC = 42 cm\nAB = 36 cm\n\nLa chaise pèse 1,8 kg, supporte 110 kg et se vend 24,90 €.\n\nLa figure n'est pas en vraie grandeur.",
+  "image": "figures/SX-G062-01",
+  "duree_estimee_min": 15,
+  "questions": [
+    {
+      "key": "q1",
+      "skill_id": "G062",
+      "statement": "Quelle égalité de quotients le théorème de Thalès donne-t-il sur cette figure ?",
+      "type": "qcm",
+      "choices": [
+        {
+          "key": "a",
+          "text": "$\\dfrac{OA}{OD} = \\dfrac{OB}{OC} = \\dfrac{AB}{DC}$",
+          "misconception": "OA et OD ne se correspondent pas : A et C sont sur le même tube, donc OA va avec OC."
+        },
+        {
+          "key": "b",
+          "text": "$\\dfrac{OA}{AC} = \\dfrac{OB}{BD} = \\dfrac{AB}{DC}$",
+          "misconception": "C'est l'égalité des triangles emboîtés. Ici les deux triangles sont opposés par le sommet O : on compare OA à OC, pas à la longueur AC du tube entier."
+        },
+        {
+          "key": "c",
+          "text": "$\\dfrac{OA}{OC} = \\dfrac{OB}{OD} = \\dfrac{AB}{DC}$",
+          "misconception": null
+        },
+        {
+          "key": "d",
+          "text": "$\\dfrac{OC}{OA} = \\dfrac{OB}{OD} = \\dfrac{AB}{DC}$",
+          "misconception": "Le triangle OCD est au numérateur du premier quotient et au dénominateur des autres : ces quotients ne sont pas égaux."
+        }
+      ],
+      "answer": {
+        "value": "c"
+      },
+      "points": 1,
+      "solution_steps": [
+        "Les droites (AC) et (BD) se coupent en O, et (AB) est parallèle à (DC) : les triangles OAB et OCD sont opposés par le sommet O (configuration du papillon).",
+        "Les côtés qui se correspondent sont pris sur les mêmes droites : OA avec OC (tube [AC]), OB avec OD (tube [BD]), et AB avec DC (les deux parallèles).",
+        "Le théorème de Thalès donne donc **$\\dfrac{OA}{OC} = \\dfrac{OB}{OD} = \\dfrac{AB}{DC}$**."
+      ],
+      "hint": "Associe chaque longueur du triangle OAB à la longueur du triangle OCD prise sur la même droite."
+    },
+    {
+      "key": "q2",
+      "skill_id": "E034",
+      "statement": "Par quel nombre faut-il multiplier une longueur du triangle OAB pour obtenir la longueur correspondante du triangle OCD ?",
+      "type": "numerique",
+      "answer": {
+        "value": 1.5,
+        "accepted": [
+          "3/2",
+          "1,50",
+          "× 1,5",
+          "x 1,5"
+        ]
+      },
+      "points": 2,
+      "solution_steps": [
+        "OC correspond à OA : les deux longueurs sont prises sur le tube [AC], de part et d'autre de O.",
+        "Le coefficient vaut 42 ÷ 28 = 1,5 : en effet, 28 × 1,5 = 42.",
+        "Il faut multiplier par **1,5**."
+      ],
+      "hint": "Cherche la longueur du triangle OCD qui correspond à OA."
+    },
+    {
+      "key": "q3",
+      "skill_id": "G062",
+      "statement": "Calcule l'écartement DC des pieds sur le sol, en cm.",
+      "type": "numerique",
+      "answer": {
+        "value": 54,
+        "unit": "cm",
+        "accepted": [
+          "54 cm",
+          "54 centimètres",
+          "54cm",
+          "0,54 m",
+          "0,54 mètre",
+          "0,54m"
+        ]
+      },
+      "points": 3,
+      "solution_steps": [
+        "Les droites (AC) et (BD) se coupent en O, et (AB) est parallèle à (DC) : d'après le théorème de Thalès, $\\dfrac{OA}{OC} = \\dfrac{AB}{DC}$.",
+        "Donc $\\dfrac{28}{42} = \\dfrac{36}{DC}$, d'où DC = 36 × 42 ÷ 28.",
+        "42 ÷ 28 = 1,5 et 36 × 1,5 = 54.",
+        "Les pieds sont écartés de **54 cm** sur le sol."
+      ],
+      "hint": "Choisis l'égalité de deux quotients qui contient DC et trois longueurs connues."
+    },
+    {
+      "key": "q4",
+      "skill_id": "P015",
+      "statement": "On admet que OD = 39 cm. Quelle longueur de tube faut-il pour les deux pieds [AC] et [BD] ? Réponds en mètres.",
+      "type": "numerique",
+      "answer": {
+        "value": 1.35,
+        "unit": "m",
+        "accepted": [
+          "1,35 m",
+          "1,35 mètres",
+          "1,35m",
+          "1 m 35",
+          "1 m 35 cm"
+        ]
+      },
+      "points": 2,
+      "solution_steps": [
+        "Le tube [AC] mesure OA + OC = 28 + 42 = 70 cm, et le tube [BD] mesure OB + OD = 26 + 39 = 65 cm.",
+        "En tout : 70 + 65 = 135 cm.",
+        "Comme 100 cm font 1 m, 135 cm font **1,35 m**."
+      ],
+      "hint": "Calcule la longueur de chaque tube, puis convertis le total."
+    },
+    {
+      "key": "q5",
+      "skill_id": "G062",
+      "statement": "Pour un modèle plus haut, le fabricant garde OA = 28 cm et AB = 36 cm, avec le siège toujours parallèle au sol. Il veut un écartement au sol DC = 63 cm. Quelle longueur OC doit-il donner ? Réponds en cm.",
+      "type": "numerique",
+      "answer": {
+        "value": 49,
+        "unit": "cm",
+        "accepted": [
+          "49 cm",
+          "49 centimètres",
+          "49cm",
+          "0,49 m",
+          "0,49 mètre",
+          "0,49m"
+        ]
+      },
+      "points": 4,
+      "solution_steps": [
+        "Les droites (AC) et (BD) se coupent toujours en O et (AB) est parallèle à (DC) : d'après le théorème de Thalès, $\\dfrac{OA}{OC} = \\dfrac{AB}{DC}$.",
+        "Donc $\\dfrac{28}{OC} = \\dfrac{36}{63}$ : le triangle OCD est 63 ÷ 36 = 1,75 fois plus grand que le triangle OAB.",
+        "OC = 28 × 1,75 = 49.",
+        "Il faut **OC = 49 cm**."
+      ],
+      "hint": "La longueur cherchée est cette fois au dénominateur : écris l'égalité de quotients, puis le coefficient entre les deux triangles."
+    }
+  ],
+  "review_status": "relu_agent",
+  "programme_ref": "Cycle 4, classe de 3e, Espace et géométrie, Triangles, Objectifs d'apprentissage : « Connaitre et appliquer le théorème de Thalès, sa réciproque, sa contraposée (configurations des triangles emboités et configuration dite du papillon). »"
+}

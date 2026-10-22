@@ -2,7 +2,7 @@
   "metadata": {
     "version": "1.0",
     "scope": "Super exercices, CP a 3e",
-    "total_super": 244
+    "total_super": 252
   },
   "super": [
     {
@@ -24213,6 +24213,355 @@
       "programme_ref": "Cycle 4, classe de 4e, Espace et géométrie, Triangles, Objectifs d'apprentissage : « Connaitre le théorème de Pythagore, sa réciproque, sa contraposée. »"
     },
     {
+      "id": "SX-G042-01",
+      "skill_id": "G042",
+      "skill_ids": [
+        "G042",
+        "P010",
+        "D024"
+      ],
+      "school_level": "3e",
+      "title": "La charpente de l'abri de jardin",
+      "contexte": "Léa construit un abri de jardin. Sa charpente compte **4 fermes** identiques. Chaque ferme est un triangle en bois ABC : les chevrons [AB] et [AC] partent du faîte A, et la poutre [BC] relie leurs pieds B et C. Pour rendre la ferme plus solide, Léa ajoute une traverse [MN], avec M sur le chevron [AB] et N sur le chevron [AC]. La traverse est **parallèle** à la poutre : la droite (MN) est parallèle à la droite (BC).\n\nLes mesures d'une ferme :\nAB = 2,7 m\nAC = 3,15 m\nBC = 4,5 m\nAM = 1,2 m\n\nLe bois coûte 8 € le mètre. L'abri aura une porte large de 0,9 m, et son toit sera couvert de 18 plaques ondulées.\n\nLa figure n'est pas en vraie grandeur.",
+      "image": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 344 314\" width=\"344\" height=\"314\" font-family=\"system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif\" role=\"img\"><title>Schéma d'une ferme de charpente : un triangle ABC, un point M sur [AB], un point N sur [AC] et le segment [MN]</title><rect width=\"100%\" height=\"100%\" fill=\"#ffffff\"/><line x1=\"156.4\" y1=\"159.0\" x2=\"42.0\" y2=\"250.0\" stroke=\"#334155\" stroke-width=\"2.0\" stroke-linecap=\"round\"/><line x1=\"156.4\" y1=\"159.0\" x2=\"302.0\" y2=\"250.0\" stroke=\"#334155\" stroke-width=\"2.0\" stroke-linecap=\"round\"/><line x1=\"42.0\" y1=\"250.0\" x2=\"302.0\" y2=\"250.0\" stroke=\"#334155\" stroke-width=\"2.0\" stroke-linecap=\"round\"/><line x1=\"93.5\" y1=\"209.0\" x2=\"236.5\" y2=\"209.0\" stroke=\"#2563eb\" stroke-width=\"2.0\" stroke-linecap=\"round\"/><path d=\"M162.0,214.0 L168.0,209.0 L162.0,204.0\" fill=\"none\" stroke=\"#2563eb\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M169.0,255.0 L175.0,250.0 L169.0,245.0\" fill=\"none\" stroke=\"#2563eb\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><text x=\"172.0\" y=\"268.0\" font-size=\"13\" text-anchor=\"middle\" fill=\"#334155\">4,5 m</text><text x=\"165.0\" y=\"201.0\" font-size=\"13\" text-anchor=\"middle\" fill=\"#334155\">?</text><line x1=\"152.4\" y1=\"155.0\" x2=\"160.4\" y2=\"163.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"152.4\" y1=\"163.0\" x2=\"160.4\" y2=\"155.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><text x=\"156.4\" y=\"150.0\" font-size=\"15\" text-anchor=\"middle\" fill=\"#334155\" font-weight=\"600\">A</text><line x1=\"38.0\" y1=\"246.0\" x2=\"46.0\" y2=\"254.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"38.0\" y1=\"254.0\" x2=\"46.0\" y2=\"246.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><text x=\"28.5\" y=\"258.8\" font-size=\"15\" text-anchor=\"middle\" fill=\"#334155\" font-weight=\"600\">B</text><line x1=\"298.0\" y1=\"246.0\" x2=\"306.0\" y2=\"254.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"298.0\" y1=\"254.0\" x2=\"306.0\" y2=\"246.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><text x=\"315.6\" y=\"258.5\" font-size=\"15\" text-anchor=\"middle\" fill=\"#334155\" font-weight=\"600\">C</text><line x1=\"89.5\" y1=\"205.0\" x2=\"97.5\" y2=\"213.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"89.5\" y1=\"213.0\" x2=\"97.5\" y2=\"205.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><text x=\"79.5\" y=\"214.0\" font-size=\"15\" text-anchor=\"middle\" fill=\"#334155\" font-weight=\"600\">M</text><line x1=\"232.5\" y1=\"205.0\" x2=\"240.5\" y2=\"213.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"232.5\" y1=\"213.0\" x2=\"240.5\" y2=\"205.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><text x=\"250.5\" y=\"214.0\" font-size=\"15\" text-anchor=\"middle\" fill=\"#334155\" font-weight=\"600\">N</text><text x=\"172.0\" y=\"304.0\" font-size=\"13\" text-anchor=\"middle\" fill=\"#475569\">Figure pas en vraie grandeur</text></svg>",
+      "duree_estimee_min": 15,
+      "questions": [
+        {
+          "key": "q1",
+          "skill_id": "G042",
+          "statement": "Pour calculer la longueur MN de la traverse, quelles mesures de l'énoncé faut-il utiliser ?",
+          "type": "qcm",
+          "choices": [
+            {
+              "key": "a",
+              "text": "AM, AC et BC",
+              "misconception": "AM est une longueur prise sur le chevron [AB] : elle se compare à AB, la longueur du grand triangle sur la même droite, pas à AC."
+            },
+            {
+              "key": "b",
+              "text": "AM, AB et BC",
+              "misconception": null
+            },
+            {
+              "key": "c",
+              "text": "AB, AC et BC",
+              "misconception": "Ce sont trois longueurs du grand triangle : sans aucune longueur du petit triangle AMN, on ne peut pas savoir combien il est plus petit."
+            },
+            {
+              "key": "d",
+              "text": "AM, BC et la largeur de la porte",
+              "misconception": "La porte ne fait pas partie de la ferme : sa largeur est une donnée inutile."
+            }
+          ],
+          "answer": {
+            "value": "b"
+          },
+          "points": 1,
+          "solution_steps": [
+            "M est sur [AB], N sur [AC], et (MN) est parallèle à (BC) : d'après le théorème de Thalès, $\\dfrac{AM}{AB} = \\dfrac{AN}{AC} = \\dfrac{MN}{BC}$.",
+            "La longueur cherchée MN est dans le quotient $\\dfrac{MN}{BC}$. On l'égale au quotient $\\dfrac{AM}{AB}$, dont on connaît les deux longueurs.",
+            "Il faut donc **AM, AB et BC**. AC servira pour le point N ; la porte ne sert pas."
+          ],
+          "hint": "Écris les trois quotients égaux du théorème de Thalès, puis repère celui qui contient MN."
+        },
+        {
+          "key": "q2",
+          "skill_id": "P010",
+          "statement": "Sans la traverse, quelle longueur de bois faut-il pour le triangle ABC d'une ferme ? Réponds en mètres.",
+          "type": "numerique",
+          "answer": {
+            "value": 10.35,
+            "unit": "m",
+            "accepted": [
+              "10,35 m",
+              "10,35 mètres",
+              "10,35m",
+              "1035 cm",
+              "1035 centimètres",
+              "1035cm"
+            ]
+          },
+          "points": 2,
+          "solution_steps": [
+            "Le triangle est formé des deux chevrons et de la poutre : la longueur de bois est son périmètre.",
+            "AB + AC + BC = 2,7 + 3,15 + 4,5 = 10,35.",
+            "Il faut **10,35 m** de bois."
+          ],
+          "hint": "Fais le tour du triangle en additionnant les longueurs de ses trois côtés."
+        },
+        {
+          "key": "q3",
+          "skill_id": "G042",
+          "statement": "Calcule la longueur MN de la traverse, en mètres.",
+          "type": "numerique",
+          "answer": {
+            "value": 2,
+            "unit": "m",
+            "accepted": [
+              "2 m",
+              "2 mètres",
+              "2m",
+              "200 cm",
+              "200 centimètres",
+              "200cm"
+            ]
+          },
+          "points": 3,
+          "solution_steps": [
+            "M est sur [AB], N sur [AC], et (MN) est parallèle à (BC) : d'après le théorème de Thalès, $\\dfrac{AM}{AB} = \\dfrac{MN}{BC}$.",
+            "Donc $\\dfrac{1{,}2}{2{,}7} = \\dfrac{MN}{4{,}5}$, d'où MN = 4,5 × 1,2 ÷ 2,7.",
+            "4,5 × 1,2 = 5,4 et 5,4 ÷ 2,7 = 2.",
+            "La traverse mesure **2 m**."
+          ],
+          "hint": "Remplace les longueurs connues dans l'égalité des deux quotients, puis résous comme une équation."
+        },
+        {
+          "key": "q4",
+          "skill_id": "D024",
+          "statement": "On admet qu'une ferme complète, traverse comprise, demande 12,35 m de bois. Combien coûte le bois des 4 fermes ?",
+          "type": "numerique",
+          "answer": {
+            "value": 395.2,
+            "unit": "€",
+            "accepted": [
+              "395,20 €",
+              "395,20",
+              "395,2 euros",
+              "395,20 euros",
+              "395 € 20",
+              "395€20"
+            ]
+          },
+          "points": 2,
+          "solution_steps": [
+            "Pour les 4 fermes : 12,35 × 4 = 49,4 m de bois.",
+            "À 8 € le mètre : 49,4 × 8 = 395,2.",
+            "Le bois coûte **395,20 €**."
+          ],
+          "hint": "Calcule d'abord la longueur de bois des 4 fermes."
+        },
+        {
+          "key": "q5",
+          "skill_id": "G042",
+          "statement": "Léa doit percer le chevron [AC] à l'endroit où se fixe la traverse. À quelle distance NC du pied C du chevron se trouve le point N ? Réponds en mètres.",
+          "type": "numerique",
+          "answer": {
+            "value": 1.75,
+            "unit": "m",
+            "accepted": [
+              "1,75 m",
+              "1,75 mètres",
+              "1,75m",
+              "175 cm",
+              "175 centimètres",
+              "175cm"
+            ]
+          },
+          "points": 4,
+          "solution_steps": [
+            "D'après le théorème de Thalès, $\\dfrac{AN}{AC} = \\dfrac{AM}{AB}$, donc $\\dfrac{AN}{3{,}15} = \\dfrac{1{,}2}{2{,}7}$.",
+            "AN = 3,15 × 1,2 ÷ 2,7. Or 3,15 × 1,2 = 3,78 et 3,78 ÷ 2,7 = 1,4 : AN = 1,4 m.",
+            "N est sur le chevron [AC], entre A et C : NC = AC − AN = 3,15 − 1,4 = 1,75.",
+            "Le point N est à **1,75 m** du pied C. Répondre 1,4 m donnerait la distance au faîte A."
+          ],
+          "hint": "Calcule d'abord la distance AN, puis regarde où se trouve N sur le chevron."
+        }
+      ],
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 4, classe de 3e, Espace et géométrie, Triangles, Objectifs d'apprentissage : « Connaitre et appliquer le théorème de Thalès, sa réciproque, sa contraposée (configurations des triangles emboités et configuration dite du papillon). »"
+    },
+    {
+      "id": "SX-G043-01",
+      "skill_id": "G043",
+      "skill_ids": [
+        "G043",
+        "C007",
+        "C010"
+      ],
+      "school_level": "3e",
+      "title": "L'étagère en forme de A",
+      "contexte": "Nadia fabrique une étagère en forme de A pour sa chambre. Les deux montants [SA] et [SB] partent du sommet S et reposent sur le sol en A et en B. Deux planches relient les montants : la planche du haut [MN] et la planche du bas [PQ]. Les points S, M, P, A sont alignés dans cet ordre, ainsi que les points S, N, Q, B.\n\nPour que les livres ne glissent pas, chaque planche doit être parallèle au sol, c'est-à-dire à la droite (AB).\n\nLes mesures :\nSA = 2,4 m et SB = 1,8 m\nSM = 0,9 m et SN = 0,675 m\nSP = 1,5 m et SQ = 1,12 m\nMN = 0,75 m et AB = 2 m\n\nLe bois est du pin, vendu 13 € la planche.\n\nLa figure n'est pas en vraie grandeur.",
+      "image": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 344 314\" width=\"344\" height=\"314\" font-family=\"system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif\" role=\"img\"><title>Schéma d'une étagère en A : deux segments [SA] et [SB], deux segments [MN] et [PQ] qui les relient, et le segment [AB] en pointillés</title><rect width=\"100%\" height=\"100%\" fill=\"#ffffff\"/><line x1=\"172.0\" y1=\"42.0\" x2=\"42.0\" y2=\"250.0\" stroke=\"#334155\" stroke-width=\"2.0\" stroke-linecap=\"round\"/><line x1=\"172.0\" y1=\"42.0\" x2=\"276.0\" y2=\"250.0\" stroke=\"#334155\" stroke-width=\"2.0\" stroke-linecap=\"round\"/><line x1=\"42.0\" y1=\"250.0\" x2=\"276.0\" y2=\"250.0\" stroke=\"#334155\" stroke-width=\"2.0\" stroke-linecap=\"round\" stroke-dasharray=\"5 4\"/><line x1=\"123.2\" y1=\"120.0\" x2=\"211.0\" y2=\"120.0\" stroke=\"#2563eb\" stroke-width=\"2.0\" stroke-linecap=\"round\"/><line x1=\"90.8\" y1=\"172.0\" x2=\"236.7\" y2=\"171.4\" stroke=\"#2563eb\" stroke-width=\"2.0\" stroke-linecap=\"round\"/><line x1=\"168.0\" y1=\"38.0\" x2=\"176.0\" y2=\"46.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"168.0\" y1=\"46.0\" x2=\"176.0\" y2=\"38.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><text x=\"172.0\" y=\"33.0\" font-size=\"15\" text-anchor=\"middle\" fill=\"#334155\" font-weight=\"600\">S</text><line x1=\"38.0\" y1=\"246.0\" x2=\"46.0\" y2=\"254.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"38.0\" y1=\"254.0\" x2=\"46.0\" y2=\"246.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><text x=\"30.7\" y=\"263.2\" font-size=\"15\" text-anchor=\"middle\" fill=\"#334155\" font-weight=\"600\">A</text><line x1=\"272.0\" y1=\"246.0\" x2=\"280.0\" y2=\"254.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"272.0\" y1=\"254.0\" x2=\"280.0\" y2=\"246.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><text x=\"286.9\" y=\"263.7\" font-size=\"15\" text-anchor=\"middle\" fill=\"#334155\" font-weight=\"600\">B</text><line x1=\"119.2\" y1=\"116.0\" x2=\"127.2\" y2=\"124.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"119.2\" y1=\"124.0\" x2=\"127.2\" y2=\"116.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><text x=\"109.2\" y=\"125.0\" font-size=\"15\" text-anchor=\"middle\" fill=\"#334155\" font-weight=\"600\">M</text><line x1=\"207.0\" y1=\"116.0\" x2=\"215.0\" y2=\"124.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"207.0\" y1=\"124.0\" x2=\"215.0\" y2=\"116.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><text x=\"225.0\" y=\"125.0\" font-size=\"15\" text-anchor=\"middle\" fill=\"#334155\" font-weight=\"600\">N</text><line x1=\"86.8\" y1=\"168.0\" x2=\"94.8\" y2=\"176.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"86.8\" y1=\"176.0\" x2=\"94.8\" y2=\"168.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><text x=\"76.8\" y=\"177.0\" font-size=\"15\" text-anchor=\"middle\" fill=\"#334155\" font-weight=\"600\">P</text><line x1=\"232.7\" y1=\"167.4\" x2=\"240.7\" y2=\"175.4\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"232.7\" y1=\"175.4\" x2=\"240.7\" y2=\"167.4\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><text x=\"250.7\" y=\"176.4\" font-size=\"15\" text-anchor=\"middle\" fill=\"#334155\" font-weight=\"600\">Q</text><text x=\"172.0\" y=\"304.0\" font-size=\"13\" text-anchor=\"middle\" fill=\"#475569\">Figure pas en vraie grandeur</text></svg>",
+      "duree_estimee_min": 15,
+      "questions": [
+        {
+          "key": "q1",
+          "skill_id": "G043",
+          "statement": "Pour savoir si la planche du haut [MN] est parallèle au sol, quels quotients faut-il comparer ?",
+          "type": "qcm",
+          "choices": [
+            {
+              "key": "a",
+              "text": "$\\dfrac{SM}{SB}$ et $\\dfrac{SN}{SA}$",
+              "misconception": "M est sur le montant [SA] : SM se compare à SA, pas à SB. Ces côtés ne se correspondent pas."
+            },
+            {
+              "key": "b",
+              "text": "$\\dfrac{SM}{SA}$ et $\\dfrac{SN}{SB}$",
+              "misconception": null
+            },
+            {
+              "key": "c",
+              "text": "$\\dfrac{SM}{SA}$ et $\\dfrac{MN}{AB}$",
+              "misconception": "Le quotient MN/AB ne prouve rien : la réciproque du théorème de Thalès compare les longueurs prises sur les deux droites issues de S."
+            },
+            {
+              "key": "d",
+              "text": "$\\dfrac{SA}{SM}$ et $\\dfrac{SN}{SB}$",
+              "misconception": "Le premier quotient est renversé : le grand triangle est au numérateur d'un quotient et au dénominateur de l'autre."
+            }
+          ],
+          "answer": {
+            "value": "b"
+          },
+          "points": 1,
+          "solution_steps": [
+            "Les points S, M, A et S, N, B sont alignés dans le même ordre.",
+            "On compare les quotients des longueurs prises sur chacune des deux droites issues de S : **$\\dfrac{SM}{SA}$ et $\\dfrac{SN}{SB}$**.",
+            "Le quotient $\\dfrac{MN}{AB}$ ne sert pas à prouver le parallélisme."
+          ],
+          "hint": "Repère les deux droites issues du sommet S et les points placés sur chacune d'elles."
+        },
+        {
+          "key": "q2",
+          "skill_id": "C007",
+          "statement": "Écris le quotient $\\dfrac{SM}{SA}$ sous la forme d'une fraction irréductible.",
+          "type": "texte",
+          "answer": {
+            "value": "3/8",
+            "accepted": [
+              "3 / 8",
+              "trois huitièmes",
+              "3 sur 8"
+            ]
+          },
+          "points": 2,
+          "solution_steps": [
+            "$\\dfrac{SM}{SA} = \\dfrac{0{,}9}{2{,}4} = \\dfrac{9}{24}$, en multipliant le numérateur et le dénominateur par 10.",
+            "9 et 24 sont tous les deux divisibles par 3 : $\\dfrac{9}{24} = \\dfrac{3}{8}$.",
+            "3 et 8 n'ont pas d'autre diviseur commun que 1 : **$\\dfrac{3}{8}$** est irréductible."
+          ],
+          "hint": "Commence par écrire le quotient avec des nombres entiers, puis simplifie."
+        },
+        {
+          "key": "q3",
+          "skill_id": "G043",
+          "statement": "On admet que $\\dfrac{SM}{SA} = \\dfrac{3}{8}$. Quelle phrase est juste ?",
+          "type": "qcm",
+          "choices": [
+            {
+              "key": "a",
+              "text": "La planche du haut n'est pas parallèle au sol, d'après la contraposée du théorème de Thalès.",
+              "misconception": "Les deux quotients valent 3/8 : la contraposée ne s'applique que s'ils sont différents."
+            },
+            {
+              "key": "b",
+              "text": "La planche du haut est parallèle au sol, d'après le théorème de Thalès.",
+              "misconception": "Le théorème de Thalès part de droites parallèles pour en déduire des quotients égaux. Pour prouver le parallélisme, il faut sa réciproque."
+            },
+            {
+              "key": "c",
+              "text": "On ne peut le savoir qu'en mesurant les angles sur la figure.",
+              "misconception": "La figure n'est pas en vraie grandeur, et la mesure n'est pas une preuve : les longueurs données suffisent."
+            },
+            {
+              "key": "d",
+              "text": "La planche du haut est parallèle au sol, d'après la réciproque du théorème de Thalès.",
+              "misconception": null
+            }
+          ],
+          "answer": {
+            "value": "d"
+          },
+          "points": 3,
+          "solution_steps": [
+            "$\\dfrac{SN}{SB} = \\dfrac{0{,}675}{1{,}8} = \\dfrac{675}{1\\,800} = \\dfrac{27}{72} = \\dfrac{3}{8}$, en divisant par 25 puis par 9.",
+            "Les points S, M, A et S, N, B sont alignés dans le même ordre, et $\\dfrac{SM}{SA} = \\dfrac{SN}{SB}$.",
+            "D'après la réciproque du théorème de Thalès, (MN) est parallèle à (AB) : **la planche du haut est parallèle au sol**."
+          ],
+          "hint": "Calcule l'autre quotient et compare-le à $\\dfrac{3}{8}$, puis relis ce que dit chaque théorème cité."
+        },
+        {
+          "key": "q4",
+          "skill_id": "C010",
+          "statement": "Pour la planche du bas, $\\dfrac{SP}{SA} = \\dfrac{5}{8}$ et $\\dfrac{SQ}{SB} = \\dfrac{28}{45}$. Quelle phrase est juste ?",
+          "type": "qcm",
+          "choices": [
+            {
+              "key": "a",
+              "text": "$\\dfrac{5}{8} > \\dfrac{28}{45}$",
+              "misconception": null
+            },
+            {
+              "key": "b",
+              "text": "$\\dfrac{5}{8} = \\dfrac{28}{45}$, car arrondies au dixième elles valent toutes les deux 0,6",
+              "misconception": "Des arrondis égaux ne prouvent pas l'égalité : en valeur exacte, $\\dfrac{5}{8} = \\dfrac{225}{360}$ et $\\dfrac{28}{45} = \\dfrac{224}{360}$."
+            },
+            {
+              "key": "c",
+              "text": "$\\dfrac{5}{8} < \\dfrac{28}{45}$",
+              "misconception": "L'élève croit que la fraction écrite avec les plus grands nombres est la plus grande. Sur le dénominateur 360, 225 est plus grand que 224."
+            },
+            {
+              "key": "d",
+              "text": "On ne peut pas comparer deux fractions de dénominateurs différents.",
+              "misconception": "On peut toujours les comparer en les écrivant avec un même dénominateur, ici 360."
+            }
+          ],
+          "answer": {
+            "value": "a"
+          },
+          "points": 2,
+          "solution_steps": [
+            "On écrit les deux fractions avec un même dénominateur, 360, multiple commun de 8 et de 45 : $\\dfrac{5}{8} = \\dfrac{5 \\times 45}{8 \\times 45} = \\dfrac{225}{360}$ et $\\dfrac{28}{45} = \\dfrac{28 \\times 8}{45 \\times 8} = \\dfrac{224}{360}$.",
+            "225 > 224, donc **$\\dfrac{5}{8} > \\dfrac{28}{45}$** : les deux fractions ne sont pas égales.",
+            "Arrondies au dixième, elles valent pourtant toutes les deux 0,6 : des arrondis égaux ne prouvent pas l'égalité."
+          ],
+          "hint": "Écris les deux fractions avec un même dénominateur."
+        },
+        {
+          "key": "q5",
+          "skill_id": "G043",
+          "statement": "On rappelle que $\\dfrac{SP}{SA} = \\dfrac{5}{8}$ et $\\dfrac{SQ}{SB} = \\dfrac{28}{45}$, et on admet que ces deux fractions ne sont pas égales. Quelle phrase est juste pour la planche du bas [PQ] ?",
+          "type": "qcm",
+          "choices": [
+            {
+              "key": "a",
+              "text": "La planche du bas est parallèle au sol, d'après la réciproque du théorème de Thalès, car les quotients sont presque égaux.",
+              "misconception": "La réciproque exige des quotients égaux en valeur exacte : 225/360 et 224/360 ne le sont pas."
+            },
+            {
+              "key": "b",
+              "text": "On ne peut rien conclure, car les quotients ne sont pas égaux.",
+              "misconception": "Quand les quotients sont différents, la contraposée du théorème de Thalès permet de conclure : les droites ne sont pas parallèles."
+            },
+            {
+              "key": "c",
+              "text": "La planche du bas n'est pas parallèle au sol, d'après la contraposée du théorème de Thalès.",
+              "misconception": null
+            },
+            {
+              "key": "d",
+              "text": "La planche du bas est parallèle au sol, car elle semble parallèle à la planche du haut.",
+              "misconception": "Sur la figure, les planches semblent parallèles, mais la mesure n'est pas une preuve : seuls les quotients exacts tranchent."
+            }
+          ],
+          "answer": {
+            "value": "c"
+          },
+          "points": 4,
+          "solution_steps": [
+            "Les points S, P, A et S, Q, B sont alignés dans le même ordre.",
+            "$\\dfrac{5}{8} = \\dfrac{225}{360}$ et $\\dfrac{28}{45} = \\dfrac{224}{360}$ : $\\dfrac{SP}{SA} \\neq \\dfrac{SQ}{SB}$.",
+            "Si (PQ) était parallèle à (AB), le théorème de Thalès donnerait des quotients égaux. Ils ne le sont pas : d'après la contraposée du théorème de Thalès, **la planche du bas n'est pas parallèle au sol**, même si l'écart ne se voit pas."
+          ],
+          "hint": "Relis ce que dit chaque théorème cité, et dans quel cas on peut l'utiliser."
+        }
+      ],
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 4, classe de 3e, Espace et géométrie, Triangles, Objectifs d'apprentissage : « Connaitre et appliquer le théorème de Thalès, sa réciproque, sa contraposée (configurations des triangles emboités et configuration dite du papillon). »"
+    },
+    {
       "id": "SX-G045-01",
       "skill_id": "G045",
       "skill_ids": [
@@ -27137,6 +27486,940 @@
       ],
       "review_status": "relu_agent",
       "programme_ref": "Cycle 4, classe de 4e, Espace et géométrie, Triangles, Objectifs d'apprentissage : « Caractériser un triangle rectangle à l'aide de son cercle circonscrit, par son inscription dans un demi-cercle dont le diamètre est un côté du triangle. »"
+    },
+    {
+      "id": "SX-G062-01",
+      "skill_id": "G062",
+      "skill_ids": [
+        "G062",
+        "E034",
+        "P015"
+      ],
+      "school_level": "3e",
+      "title": "La chaise pliante de camping",
+      "contexte": "Un fabricant dessine une chaise pliante de camping. Vue de côté, ses deux pieds sont des tubes droits [AC] et [BD] qui se croisent en O, où un axe les relie. Le siège en toile est tendu entre A et B, et les pieds touchent le sol en C et en D. Le siège est **parallèle** au sol : la droite (AB) est parallèle à la droite (DC).\n\nLes mesures :\nOA = 28 cm\nOB = 26 cm\nOC = 42 cm\nAB = 36 cm\n\nLa chaise pèse 1,8 kg, supporte 110 kg et se vend 24,90 €.\n\nLa figure n'est pas en vraie grandeur.",
+      "image": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 344 314\" width=\"344\" height=\"314\" font-family=\"system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif\" role=\"img\"><title>Schéma d'une chaise pliante vue de côté : les segments [AC] et [BD] se coupent en O, avec les segments [AB] et [DC]</title><rect width=\"100%\" height=\"100%\" fill=\"#ffffff\"/><line x1=\"42.0\" y1=\"42.0\" x2=\"242.2\" y2=\"242.2\" stroke=\"#334155\" stroke-width=\"2.0\" stroke-linecap=\"round\"/><line x1=\"172.0\" y1=\"42.0\" x2=\"86.2\" y2=\"242.2\" stroke=\"#334155\" stroke-width=\"2.0\" stroke-linecap=\"round\"/><line x1=\"42.0\" y1=\"42.0\" x2=\"172.0\" y2=\"42.0\" stroke=\"#2563eb\" stroke-width=\"2.0\" stroke-linecap=\"round\"/><line x1=\"86.2\" y1=\"242.2\" x2=\"242.2\" y2=\"242.2\" stroke=\"#334155\" stroke-width=\"2.0\" stroke-linecap=\"round\"/><path d=\"M104.0,47.0 L110.0,42.0 L104.0,37.0\" fill=\"none\" stroke=\"#2563eb\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M161.2,247.2 L167.2,242.2 L161.2,237.2\" fill=\"none\" stroke=\"#2563eb\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><text x=\"107.0\" y=\"34.0\" font-size=\"13\" text-anchor=\"middle\" fill=\"#334155\">36 cm</text><text x=\"164.2\" y=\"260.2\" font-size=\"13\" text-anchor=\"middle\" fill=\"#334155\">?</text><line x1=\"38.0\" y1=\"38.0\" x2=\"46.0\" y2=\"46.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"38.0\" y1=\"46.0\" x2=\"46.0\" y2=\"38.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><text x=\"32.4\" y=\"36.8\" font-size=\"15\" text-anchor=\"middle\" fill=\"#334155\" font-weight=\"600\">A</text><line x1=\"168.0\" y1=\"38.0\" x2=\"176.0\" y2=\"46.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"168.0\" y1=\"46.0\" x2=\"176.0\" y2=\"38.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><text x=\"176.9\" y=\"33.9\" font-size=\"15\" text-anchor=\"middle\" fill=\"#334155\" font-weight=\"600\">B</text><line x1=\"129.0\" y1=\"129.0\" x2=\"137.0\" y2=\"137.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"129.0\" y1=\"137.0\" x2=\"137.0\" y2=\"129.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><text x=\"147.0\" y=\"138.0\" font-size=\"15\" text-anchor=\"middle\" fill=\"#334155\" font-weight=\"600\">O</text><line x1=\"238.2\" y1=\"238.2\" x2=\"246.2\" y2=\"246.2\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"238.2\" y1=\"246.2\" x2=\"246.2\" y2=\"238.2\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><text x=\"252.3\" y=\"256.9\" font-size=\"15\" text-anchor=\"middle\" fill=\"#334155\" font-weight=\"600\">C</text><line x1=\"82.2\" y1=\"238.2\" x2=\"90.2\" y2=\"246.2\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"82.2\" y1=\"246.2\" x2=\"90.2\" y2=\"238.2\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><text x=\"80.1\" y=\"259.8\" font-size=\"15\" text-anchor=\"middle\" fill=\"#334155\" font-weight=\"600\">D</text><text x=\"172.0\" y=\"304.0\" font-size=\"13\" text-anchor=\"middle\" fill=\"#475569\">Figure pas en vraie grandeur</text></svg>",
+      "duree_estimee_min": 15,
+      "questions": [
+        {
+          "key": "q1",
+          "skill_id": "G062",
+          "statement": "Quelle égalité de quotients le théorème de Thalès donne-t-il sur cette figure ?",
+          "type": "qcm",
+          "choices": [
+            {
+              "key": "a",
+              "text": "$\\dfrac{OA}{OD} = \\dfrac{OB}{OC} = \\dfrac{AB}{DC}$",
+              "misconception": "OA et OD ne se correspondent pas : A et C sont sur le même tube, donc OA va avec OC."
+            },
+            {
+              "key": "b",
+              "text": "$\\dfrac{OA}{AC} = \\dfrac{OB}{BD} = \\dfrac{AB}{DC}$",
+              "misconception": "C'est l'égalité des triangles emboîtés. Ici les deux triangles sont opposés par le sommet O : on compare OA à OC, pas à la longueur AC du tube entier."
+            },
+            {
+              "key": "c",
+              "text": "$\\dfrac{OA}{OC} = \\dfrac{OB}{OD} = \\dfrac{AB}{DC}$",
+              "misconception": null
+            },
+            {
+              "key": "d",
+              "text": "$\\dfrac{OC}{OA} = \\dfrac{OB}{OD} = \\dfrac{AB}{DC}$",
+              "misconception": "Le triangle OCD est au numérateur du premier quotient et au dénominateur des autres : ces quotients ne sont pas égaux."
+            }
+          ],
+          "answer": {
+            "value": "c"
+          },
+          "points": 1,
+          "solution_steps": [
+            "Les droites (AC) et (BD) se coupent en O, et (AB) est parallèle à (DC) : les triangles OAB et OCD sont opposés par le sommet O (configuration du papillon).",
+            "Les côtés qui se correspondent sont pris sur les mêmes droites : OA avec OC (tube [AC]), OB avec OD (tube [BD]), et AB avec DC (les deux parallèles).",
+            "Le théorème de Thalès donne donc **$\\dfrac{OA}{OC} = \\dfrac{OB}{OD} = \\dfrac{AB}{DC}$**."
+          ],
+          "hint": "Associe chaque longueur du triangle OAB à la longueur du triangle OCD prise sur la même droite."
+        },
+        {
+          "key": "q2",
+          "skill_id": "E034",
+          "statement": "Par quel nombre faut-il multiplier une longueur du triangle OAB pour obtenir la longueur correspondante du triangle OCD ?",
+          "type": "numerique",
+          "answer": {
+            "value": 1.5,
+            "accepted": [
+              "3/2",
+              "1,50",
+              "× 1,5",
+              "x 1,5"
+            ]
+          },
+          "points": 2,
+          "solution_steps": [
+            "OC correspond à OA : les deux longueurs sont prises sur le tube [AC], de part et d'autre de O.",
+            "Le coefficient vaut 42 ÷ 28 = 1,5 : en effet, 28 × 1,5 = 42.",
+            "Il faut multiplier par **1,5**."
+          ],
+          "hint": "Cherche la longueur du triangle OCD qui correspond à OA."
+        },
+        {
+          "key": "q3",
+          "skill_id": "G062",
+          "statement": "Calcule l'écartement DC des pieds sur le sol, en cm.",
+          "type": "numerique",
+          "answer": {
+            "value": 54,
+            "unit": "cm",
+            "accepted": [
+              "54 cm",
+              "54 centimètres",
+              "54cm",
+              "0,54 m",
+              "0,54 mètre",
+              "0,54m"
+            ]
+          },
+          "points": 3,
+          "solution_steps": [
+            "Les droites (AC) et (BD) se coupent en O, et (AB) est parallèle à (DC) : d'après le théorème de Thalès, $\\dfrac{OA}{OC} = \\dfrac{AB}{DC}$.",
+            "Donc $\\dfrac{28}{42} = \\dfrac{36}{DC}$, d'où DC = 36 × 42 ÷ 28.",
+            "42 ÷ 28 = 1,5 et 36 × 1,5 = 54.",
+            "Les pieds sont écartés de **54 cm** sur le sol."
+          ],
+          "hint": "Choisis l'égalité de deux quotients qui contient DC et trois longueurs connues."
+        },
+        {
+          "key": "q4",
+          "skill_id": "P015",
+          "statement": "On admet que OD = 39 cm. Quelle longueur de tube faut-il pour les deux pieds [AC] et [BD] ? Réponds en mètres.",
+          "type": "numerique",
+          "answer": {
+            "value": 1.35,
+            "unit": "m",
+            "accepted": [
+              "1,35 m",
+              "1,35 mètres",
+              "1,35m",
+              "1 m 35",
+              "1 m 35 cm"
+            ]
+          },
+          "points": 2,
+          "solution_steps": [
+            "Le tube [AC] mesure OA + OC = 28 + 42 = 70 cm, et le tube [BD] mesure OB + OD = 26 + 39 = 65 cm.",
+            "En tout : 70 + 65 = 135 cm.",
+            "Comme 100 cm font 1 m, 135 cm font **1,35 m**."
+          ],
+          "hint": "Calcule la longueur de chaque tube, puis convertis le total."
+        },
+        {
+          "key": "q5",
+          "skill_id": "G062",
+          "statement": "Pour un modèle plus haut, le fabricant garde OA = 28 cm et AB = 36 cm, avec le siège toujours parallèle au sol. Il veut un écartement au sol DC = 63 cm. Quelle longueur OC doit-il donner ? Réponds en cm.",
+          "type": "numerique",
+          "answer": {
+            "value": 49,
+            "unit": "cm",
+            "accepted": [
+              "49 cm",
+              "49 centimètres",
+              "49cm",
+              "0,49 m",
+              "0,49 mètre",
+              "0,49m"
+            ]
+          },
+          "points": 4,
+          "solution_steps": [
+            "Les droites (AC) et (BD) se coupent toujours en O et (AB) est parallèle à (DC) : d'après le théorème de Thalès, $\\dfrac{OA}{OC} = \\dfrac{AB}{DC}$.",
+            "Donc $\\dfrac{28}{OC} = \\dfrac{36}{63}$ : le triangle OCD est 63 ÷ 36 = 1,75 fois plus grand que le triangle OAB.",
+            "OC = 28 × 1,75 = 49.",
+            "Il faut **OC = 49 cm**."
+          ],
+          "hint": "La longueur cherchée est cette fois au dénominateur : écris l'égalité de quotients, puis le coefficient entre les deux triangles."
+        }
+      ],
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 4, classe de 3e, Espace et géométrie, Triangles, Objectifs d'apprentissage : « Connaitre et appliquer le théorème de Thalès, sa réciproque, sa contraposée (configurations des triangles emboités et configuration dite du papillon). »"
+    },
+    {
+      "id": "SX-G063-01",
+      "skill_id": "G063",
+      "skill_ids": [
+        "G063",
+        "G040",
+        "P024"
+      ],
+      "school_level": "3e",
+      "title": "La rampe du camion de déménagement",
+      "contexte": "Pour charger un camion de déménagement, Hugo pose une rampe droite entre le sol et le plancher du camion. Sur le schéma, A est le bas de la rampe, posé sur le sol horizontal, C est le haut de la rampe, au bord du plancher, et B est le point du sol situé juste sous C. Le triangle ABC est rectangle en B.\n\nLes mesures :\nAB = 3,2 m, distance au sol entre le bas de la rampe et le camion\nBC = 0,72 m, hauteur du plancher\n\nLa rampe est une plaque de métal rectangulaire, large de 0,85 m. Elle supporte 400 kg. Le camion contient 46 cartons.\n\nOn note $\\widehat{BAC}$ l'angle que fait la rampe avec le sol. Le schéma n'est pas en vraie grandeur : ni ses longueurs ni ses angles ne sont respectés.",
+      "image": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 344 314\" width=\"344\" height=\"314\" font-family=\"system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif\" role=\"img\"><title>Schéma d'une rampe : un triangle ABC avec un angle droit codé en B, un angle marqué en A et des longueurs écrites</title><rect width=\"100%\" height=\"100%\" fill=\"#ffffff\"/><polygon points=\"42.0,224.0 276.0,224.0 276.0,55.0\" fill=\"none\" fill-opacity=\"0.6\" stroke=\"#334155\" stroke-width=\"2\" stroke-linejoin=\"round\"/><path d=\"M265.0,224.0 L265.0,213.0 L276.0,213.0\" fill=\"none\" stroke=\"#334155\" stroke-width=\"1.6\"/><path d=\"M76.0,224.0 A34.0,34.0 0 0 0 69.6,204.1\" fill=\"none\" stroke=\"#2563eb\" stroke-width=\"2\"/><text x=\"159.0\" y=\"242.0\" font-size=\"13\" text-anchor=\"middle\" fill=\"#334155\">3,2 m</text><text x=\"284.0\" y=\"144.5\" font-size=\"13\" text-anchor=\"start\" fill=\"#334155\">0,72 m</text><text x=\"154.3\" y=\"138.0\" font-size=\"13\" text-anchor=\"end\" fill=\"#334155\">?</text><line x1=\"38.0\" y1=\"220.0\" x2=\"46.0\" y2=\"228.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"38.0\" y1=\"228.0\" x2=\"46.0\" y2=\"220.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><text x=\"28.8\" y=\"233.8\" font-size=\"15\" text-anchor=\"middle\" fill=\"#334155\" font-weight=\"600\">A</text><line x1=\"272.0\" y1=\"220.0\" x2=\"280.0\" y2=\"228.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"272.0\" y1=\"228.0\" x2=\"280.0\" y2=\"220.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><text x=\"287.3\" y=\"237.2\" font-size=\"15\" text-anchor=\"middle\" fill=\"#334155\" font-weight=\"600\">B</text><line x1=\"272.0\" y1=\"51.0\" x2=\"280.0\" y2=\"59.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"272.0\" y1=\"59.0\" x2=\"280.0\" y2=\"51.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><text x=\"284.0\" y=\"48.5\" font-size=\"15\" text-anchor=\"middle\" fill=\"#334155\" font-weight=\"600\">C</text><text x=\"172.0\" y=\"304.0\" font-size=\"13\" text-anchor=\"middle\" fill=\"#475569\">Pas en vraie grandeur, angles compris</text></svg>",
+      "duree_estimee_min": 15,
+      "questions": [
+        {
+          "key": "q1",
+          "skill_id": "G063",
+          "statement": "Dans le triangle ABC, quel est le côté opposé à l'angle $\\widehat{BAC}$ ?",
+          "type": "qcm",
+          "choices": [
+            {
+              "key": "a",
+              "text": "[AB]",
+              "misconception": "[AB] part du sommet A : c'est le côté adjacent à l'angle, pas le côté opposé."
+            },
+            {
+              "key": "b",
+              "text": "[AC]",
+              "misconception": "[AC] est en face de l'angle droit : c'est l'hypoténuse."
+            },
+            {
+              "key": "c",
+              "text": "[BC]",
+              "misconception": null
+            }
+          ],
+          "answer": {
+            "value": "c"
+          },
+          "points": 1,
+          "solution_steps": [
+            "Le côté opposé à un angle aigu est le côté de l'angle droit qui ne touche pas cet angle.",
+            "[AC] est l'hypoténuse (en face de l'angle droit en B) et [AB] touche l'angle en A : c'est le côté adjacent.",
+            "Le côté opposé à l'angle $\\widehat{BAC}$ est **[BC]**."
+          ],
+          "hint": "Relis comment on nomme les côtés d'un triangle rectangle par rapport à l'un de ses angles aigus."
+        },
+        {
+          "key": "q2",
+          "skill_id": "G040",
+          "statement": "Calcule la longueur AC de la rampe, en mètres.",
+          "type": "numerique",
+          "answer": {
+            "value": 3.28,
+            "unit": "m",
+            "accepted": [
+              "3,28 m",
+              "3,28 mètres",
+              "3,28m",
+              "328 cm",
+              "328 centimètres",
+              "328cm"
+            ]
+          },
+          "points": 3,
+          "solution_steps": [
+            "Le triangle ABC est rectangle en B, d'hypoténuse [AC]. D'après le théorème de Pythagore, AC² = AB² + BC².",
+            "AC² = 3,2² + 0,72² = 10,24 + 0,5184 = 10,7584.",
+            "AC = √10,7584, et la calculatrice donne exactement 3,28 : en effet, 3,28 × 3,28 = 10,7584.",
+            "La rampe mesure **3,28 m**."
+          ],
+          "hint": "Repère l'hypoténuse, puis écris l'égalité de Pythagore."
+        },
+        {
+          "key": "q3",
+          "skill_id": "G063",
+          "statement": "Donne la valeur exacte de $\\tan\\widehat{BAC}$, en écriture décimale.",
+          "type": "numerique",
+          "answer": {
+            "value": 0.225,
+            "accepted": [
+              "9/40",
+              "0,2250",
+              "tan BAC = 0,225",
+              "tan(BAC) = 0,225"
+            ]
+          },
+          "points": 3,
+          "solution_steps": [
+            "$\\tan\\widehat{BAC} = \\dfrac{\\text{côté opposé}}{\\text{côté adjacent}} = \\dfrac{BC}{AB}$.",
+            "$\\dfrac{BC}{AB} = \\dfrac{0{,}72}{3{,}2} = \\dfrac{72}{320} = \\dfrac{9}{40}$, en multipliant par 100 puis en divisant par 8.",
+            "$\\dfrac{9}{40} = \\dfrac{225}{1000} = 0{,}225$, en multipliant par 25.",
+            "$\\tan\\widehat{BAC} = $ **0,225**."
+          ],
+          "hint": "La tangente compare les deux côtés de l'angle droit."
+        },
+        {
+          "key": "q4",
+          "skill_id": "P024",
+          "statement": "On admet que la rampe mesure 3,28 m de long. Quelle est l'aire de la plaque rectangulaire de la rampe, en m² ?",
+          "type": "numerique",
+          "answer": {
+            "value": 2.788,
+            "unit": "m²",
+            "accepted": [
+              "2,788 m²",
+              "2,788 m2",
+              "2,788 mètres carrés"
+            ]
+          },
+          "points": 2,
+          "solution_steps": [
+            "L'aire d'un rectangle est le produit de sa longueur par sa largeur.",
+            "3,28 × 0,85 = 2,788.",
+            "La plaque a une aire de **2,788 m²**."
+          ],
+          "hint": "Relis l'énoncé pour trouver la largeur de la rampe."
+        },
+        {
+          "key": "q5",
+          "skill_id": "G063",
+          "statement": "On rappelle que la première rampe mesure 3,28 m. Pour un autre camion, Hugo pose une rampe plus courte, car le plancher n'est qu'à 0,54 m du sol, et elle fait exactement le même angle avec le sol que la première. Que vaut le sinus de cet angle ?",
+          "type": "qcm",
+          "choices": [
+            {
+              "key": "a",
+              "text": "$\\dfrac{9}{41}$",
+              "misconception": null
+            },
+            {
+              "key": "b",
+              "text": "$\\dfrac{0{,}54}{3{,}28}$",
+              "misconception": "Ce quotient mélange les deux rampes : la hauteur de la seconde avec la longueur de la première, qui est plus longue."
+            },
+            {
+              "key": "c",
+              "text": "On ne peut pas le savoir sans la longueur de la nouvelle rampe.",
+              "misconception": "Le sinus ne dépend que de l'angle : le même angle donne le même sinus, quelle que soit la taille du triangle."
+            },
+            {
+              "key": "d",
+              "text": "$\\dfrac{41}{9}$",
+              "misconception": "L'hypoténuse est au numérateur : ce quotient est plus grand que 1, alors que le sinus d'un angle aigu est compris entre 0 et 1."
+            }
+          ],
+          "answer": {
+            "value": "a"
+          },
+          "points": 4,
+          "solution_steps": [
+            "Les deux rampes font le même angle avec le sol : les deux triangles rectangles ont le même angle aigu, donc le même sinus. Le sinus ne dépend que de l'angle, pas de la taille du triangle.",
+            "Dans le premier triangle : $\\sin\\widehat{BAC} = \\dfrac{\\text{côté opposé}}{\\text{hypoténuse}} = \\dfrac{BC}{AC} = \\dfrac{0{,}72}{3{,}28}$.",
+            "$\\dfrac{0{,}72}{3{,}28} = \\dfrac{72}{328} = \\dfrac{9}{41}$, en divisant par 8.",
+            "Le sinus vaut **$\\dfrac{9}{41}$**."
+          ],
+          "hint": "Écris la définition du sinus de l'angle, puis cherche un triangle rectangle dont tu connais les deux longueurs utiles."
+        }
+      ],
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 4, classe de 3e, Espace et géométrie, Triangles, Objectifs d'apprentissage : « Connaitre et utiliser les lignes trigonométriques dans le triangle rectangle : cosinus, sinus, tangente. »"
+    },
+    {
+      "id": "SX-G064-01",
+      "skill_id": "G064",
+      "skill_ids": [
+        "G064",
+        "G063",
+        "D004"
+      ],
+      "school_level": "3e",
+      "title": "La grande échelle des pompiers",
+      "contexte": "Les pompiers dressent la grande échelle de leur camion contre un immeuble. Sur le schéma, P est le pivot de l'échelle, sur le camion, à 2,15 m au-dessus du sol. T est le haut de l'échelle, contre la façade, et K est le point de la façade situé à la même hauteur que P. Le triangle PKT est rectangle en K.\n\nLes données :\nl'échelle [PT] est déployée sur 23 m\nelle fait un angle $\\widehat{KPT}$ de 62° avec l'horizontale\n\nLe camion pèse 16 tonnes et transporte 6 pompiers. La fenêtre à atteindre est au sixième étage.\n\nCalculatrice en degrés. Le schéma n'est pas en vraie grandeur : ni ses longueurs ni ses angles ne sont respectés.",
+      "image": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 344 314\" width=\"344\" height=\"314\" font-family=\"system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif\" role=\"img\"><title>Schéma de la grande échelle : un triangle PKT avec un angle droit codé en K, un angle marqué en P et des longueurs écrites</title><rect width=\"100%\" height=\"100%\" fill=\"#ffffff\"/><line x1=\"42.0\" y1=\"250.0\" x2=\"224.0\" y2=\"250.0\" stroke=\"#334155\" stroke-width=\"2.0\" stroke-linecap=\"round\" stroke-dasharray=\"5 4\"/><line x1=\"224.0\" y1=\"250.0\" x2=\"224.0\" y2=\"61.5\" stroke=\"#334155\" stroke-width=\"2.0\" stroke-linecap=\"round\"/><line x1=\"42.0\" y1=\"250.0\" x2=\"224.0\" y2=\"61.5\" stroke=\"#2563eb\" stroke-width=\"2.0\" stroke-linecap=\"round\"/><path d=\"M213.0,250.0 L213.0,239.0 L224.0,239.0\" fill=\"none\" stroke=\"#334155\" stroke-width=\"1.6\"/><path d=\"M76.0,250.0 A34.0,34.0 0 0 0 65.6,225.5\" fill=\"none\" stroke=\"#2563eb\" stroke-width=\"2\"/><text x=\"86.2\" y=\"236.2\" font-size=\"13\" text-anchor=\"middle\" fill=\"#2563eb\" font-weight=\"600\">62°</text><text x=\"127.2\" y=\"155.2\" font-size=\"13\" text-anchor=\"end\" fill=\"#334155\">23 m</text><text x=\"232.0\" y=\"160.8\" font-size=\"13\" text-anchor=\"start\" fill=\"#334155\">?</text><line x1=\"38.0\" y1=\"246.0\" x2=\"46.0\" y2=\"254.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"38.0\" y1=\"254.0\" x2=\"46.0\" y2=\"246.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><text x=\"29.6\" y=\"261.4\" font-size=\"15\" text-anchor=\"middle\" fill=\"#334155\" font-weight=\"600\">P</text><line x1=\"220.0\" y1=\"246.0\" x2=\"228.0\" y2=\"254.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"220.0\" y1=\"254.0\" x2=\"228.0\" y2=\"246.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><text x=\"233.7\" y=\"265.1\" font-size=\"15\" text-anchor=\"middle\" fill=\"#334155\" font-weight=\"600\">K</text><line x1=\"220.0\" y1=\"57.5\" x2=\"228.0\" y2=\"65.5\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"220.0\" y1=\"65.5\" x2=\"228.0\" y2=\"57.5\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><text x=\"230.1\" y=\"53.9\" font-size=\"15\" text-anchor=\"middle\" fill=\"#334155\" font-weight=\"600\">T</text><text x=\"172.0\" y=\"304.0\" font-size=\"13\" text-anchor=\"middle\" fill=\"#475569\">Pas en vraie grandeur, angles compris</text></svg>",
+      "duree_estimee_min": 15,
+      "questions": [
+        {
+          "key": "q1",
+          "skill_id": "G063",
+          "statement": "Quelle ligne trigonométrique de l'angle $\\widehat{KPT}$ relie la longueur PT de l'échelle et la hauteur KT ?",
+          "type": "qcm",
+          "choices": [
+            {
+              "key": "a",
+              "text": "Le cosinus",
+              "misconception": "Le cosinus relie le côté adjacent [PK] et l'hypoténuse ; KT est le côté opposé à l'angle."
+            },
+            {
+              "key": "b",
+              "text": "Le sinus",
+              "misconception": null
+            },
+            {
+              "key": "c",
+              "text": "La tangente",
+              "misconception": "La tangente relie les deux côtés de l'angle droit, sans l'hypoténuse : elle n'utilise pas la longueur de l'échelle."
+            }
+          ],
+          "answer": {
+            "value": "b"
+          },
+          "points": 1,
+          "solution_steps": [
+            "Dans le triangle PKT rectangle en K, [PT] est l'hypoténuse et [KT] est le côté opposé à l'angle $\\widehat{KPT}$.",
+            "La ligne qui relie le côté opposé et l'hypoténuse est le **sinus** : $\\sin\\widehat{KPT} = \\dfrac{KT}{PT}$."
+          ],
+          "hint": "Nomme d'abord les côtés : hypoténuse, côté adjacent, côté opposé à l'angle en P."
+        },
+        {
+          "key": "q2",
+          "skill_id": "G064",
+          "statement": "Calcule la hauteur KT, en mètres, arrondie au dixième. Calculatrice en degrés.",
+          "type": "numerique",
+          "answer": {
+            "value": 20.3,
+            "tolerance": 0.05,
+            "unit": "m",
+            "accepted": [
+              "20,3 m",
+              "20,3 mètres",
+              "20,3m"
+            ]
+          },
+          "points": 3,
+          "solution_steps": [
+            "Dans le triangle PKT rectangle en K : $\\sin\\widehat{KPT} = \\dfrac{KT}{PT}$, donc $\\sin 62^{\\circ} = \\dfrac{KT}{23}$.",
+            "KT = $23 \\times \\sin 62^{\\circ}$.",
+            "À la calculatrice réglée en degrés : KT ≈ 20,307…, on arrondit à la fin.",
+            "KT ≈ **20,3 m**."
+          ],
+          "hint": "Écris le sinus de l'angle en P avec les longueurs du triangle PKT."
+        },
+        {
+          "key": "q3",
+          "skill_id": "D004",
+          "statement": "On admet que le haut T de l'échelle est 20,3 m au-dessus du pivot. À quelle hauteur au-dessus du sol se trouve-t-il ? Réponds en mètres.",
+          "type": "numerique",
+          "answer": {
+            "value": 22.45,
+            "unit": "m",
+            "accepted": [
+              "22,45 m",
+              "22,45 mètres",
+              "22,45m"
+            ]
+          },
+          "points": 2,
+          "solution_steps": [
+            "Le pivot est déjà à 2,15 m au-dessus du sol, et le haut de l'échelle est 20,3 m plus haut que le pivot.",
+            "20,3 + 2,15 = 22,45.",
+            "Le haut de l'échelle est à **22,45 m** du sol."
+          ],
+          "hint": "Relis l'énoncé : à quelle hauteur le pivot est-il placé ?"
+        },
+        {
+          "key": "q4",
+          "skill_id": "G064",
+          "statement": "Calcule la distance PK entre le pivot et la façade, en mètres, arrondie au dixième. Calculatrice en degrés.",
+          "type": "numerique",
+          "answer": {
+            "value": 10.8,
+            "tolerance": 0.05,
+            "unit": "m",
+            "accepted": [
+              "10,8 m",
+              "10,8 mètres",
+              "10,8m"
+            ]
+          },
+          "points": 3,
+          "solution_steps": [
+            "[PK] est le côté adjacent à l'angle $\\widehat{KPT}$, et [PT] l'hypoténuse : $\\cos\\widehat{KPT} = \\dfrac{PK}{PT}$.",
+            "PK = $23 \\times \\cos 62^{\\circ}$.",
+            "À la calculatrice réglée en degrés : PK ≈ 10,797…",
+            "PK ≈ **10,8 m**."
+          ],
+          "hint": "Quelle ligne trigonométrique relie le côté adjacent et l'hypoténuse ?"
+        },
+        {
+          "key": "q5",
+          "skill_id": "G064",
+          "statement": "Une autre fenêtre est à 26 m au-dessus du sol. Sans changer l'angle de 62°, sur quelle longueur faut-il déployer l'échelle pour que son haut l'atteigne ? Réponds en mètres, arrondi au dixième. Calculatrice en degrés.",
+          "type": "numerique",
+          "answer": {
+            "value": 27.0,
+            "tolerance": 0.05,
+            "unit": "m",
+            "accepted": [
+              "27 m",
+              "27 mètres",
+              "27m",
+              "27,0 m",
+              "27,0 mètres",
+              "27,0m"
+            ]
+          },
+          "points": 4,
+          "solution_steps": [
+            "Le pivot est à 2,15 m du sol : le haut de l'échelle doit monter de 26 − 2,15 = 23,85 m au-dessus du pivot.",
+            "Dans le nouveau triangle rectangle, l'échelle est l'hypoténuse L et 23,85 m est le côté opposé à l'angle de 62° : $\\sin 62^{\\circ} = \\dfrac{23{,}85}{L}$.",
+            "Donc $L \\times \\sin 62^{\\circ} = 23{,}85$ et $L = 23{,}85 \\div \\sin 62^{\\circ}$.",
+            "À la calculatrice réglée en degrés : L ≈ 27,011…, soit **27,0 m** au dixième."
+          ],
+          "hint": "Calcule d'abord de combien le haut de l'échelle doit monter au-dessus du pivot ; la longueur cherchée est au dénominateur."
+        }
+      ],
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 4, classe de 3e, Espace et géométrie, Triangles, Objectifs d'apprentissage : « Connaitre et utiliser les lignes trigonométriques dans le triangle rectangle : cosinus, sinus, tangente. »"
+    },
+    {
+      "id": "SX-G065-01",
+      "skill_id": "G065",
+      "skill_ids": [
+        "G065",
+        "G063",
+        "G040",
+        "P024"
+      ],
+      "school_level": "3e",
+      "title": "Les modules du skatepark",
+      "contexte": "La mairie installe des modules de skate en béton. Vu de côté, le premier module forme un triangle BKT rectangle en K : B est le bas de la pente, T son sommet, et K le point du sol situé juste sous T.\n\nLes mesures du premier module :\nhauteur KT = 1,15 m\nlongueur au sol BK = 3,1 m\nlargeur du module = 1,8 m\n\nUn second module, plus raide, aura une pente rectiligne de 2,8 m de long pour une hauteur de 1,35 m. Lui aussi forme un triangle rectangle avec le sol.\n\nLes travaux coûtent 9 500 € et dureront 3 semaines. Le skatepark ouvrira en juin.\n\nCalculatrice en degrés. Le schéma, qui montre le premier module, n'est pas en vraie grandeur : ni ses longueurs ni ses angles ne sont respectés.",
+      "image": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 344 314\" width=\"344\" height=\"314\" font-family=\"system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif\" role=\"img\"><title>Schéma d'un module de skate vu de côté : un triangle BKT avec un angle droit codé en K, un angle marqué en B et des longueurs écrites</title><rect width=\"100%\" height=\"100%\" fill=\"#ffffff\"/><polygon points=\"42.0,224.0 276.0,224.0 276.0,50.7\" fill=\"none\" fill-opacity=\"0.6\" stroke=\"#334155\" stroke-width=\"2\" stroke-linejoin=\"round\"/><path d=\"M265.0,224.0 L265.0,213.0 L276.0,213.0\" fill=\"none\" stroke=\"#334155\" stroke-width=\"1.6\"/><path d=\"M76.0,224.0 A34.0,34.0 0 0 0 69.3,203.8\" fill=\"none\" stroke=\"#2563eb\" stroke-width=\"2\"/><text x=\"87.6\" y=\"214.0\" font-size=\"13\" text-anchor=\"middle\" fill=\"#2563eb\" font-weight=\"600\">?</text><text x=\"159.0\" y=\"242.0\" font-size=\"13\" text-anchor=\"middle\" fill=\"#334155\">3,1 m</text><text x=\"284.0\" y=\"142.3\" font-size=\"13\" text-anchor=\"start\" fill=\"#334155\">1,15 m</text><text x=\"154.2\" y=\"135.9\" font-size=\"13\" text-anchor=\"end\" fill=\"#334155\">?</text><line x1=\"38.0\" y1=\"220.0\" x2=\"46.0\" y2=\"228.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"38.0\" y1=\"228.0\" x2=\"46.0\" y2=\"220.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><text x=\"28.9\" y=\"233.9\" font-size=\"15\" text-anchor=\"middle\" fill=\"#334155\" font-weight=\"600\">B</text><line x1=\"272.0\" y1=\"220.0\" x2=\"280.0\" y2=\"228.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"272.0\" y1=\"228.0\" x2=\"280.0\" y2=\"220.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><text x=\"287.2\" y=\"237.3\" font-size=\"15\" text-anchor=\"middle\" fill=\"#334155\" font-weight=\"600\">K</text><line x1=\"272.0\" y1=\"46.7\" x2=\"280.0\" y2=\"54.7\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"272.0\" y1=\"54.7\" x2=\"280.0\" y2=\"46.7\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><text x=\"283.8\" y=\"44.1\" font-size=\"15\" text-anchor=\"middle\" fill=\"#334155\" font-weight=\"600\">T</text><text x=\"172.0\" y=\"304.0\" font-size=\"13\" text-anchor=\"middle\" fill=\"#475569\">Pas en vraie grandeur, angles compris</text></svg>",
+      "duree_estimee_min": 15,
+      "questions": [
+        {
+          "key": "q1",
+          "skill_id": "G063",
+          "statement": "Pour calculer l'angle $\\widehat{KBT}$ du premier module, on connaît KT et BK. Quelle ligne trigonométrique faut-il utiliser ?",
+          "type": "qcm",
+          "choices": [
+            {
+              "key": "a",
+              "text": "La tangente",
+              "misconception": null
+            },
+            {
+              "key": "b",
+              "text": "Le sinus",
+              "misconception": "Le sinus demande l'hypoténuse [BT], qui n'est pas donnée."
+            },
+            {
+              "key": "c",
+              "text": "Le cosinus",
+              "misconception": "Le cosinus relie le côté adjacent et l'hypoténuse [BT], qui n'est pas donnée."
+            }
+          ],
+          "answer": {
+            "value": "a"
+          },
+          "points": 1,
+          "solution_steps": [
+            "Pour l'angle $\\widehat{KBT}$, [KT] est le côté opposé et [BK] le côté adjacent ; l'hypoténuse [BT] n'est pas donnée.",
+            "La ligne qui relie le côté opposé et le côté adjacent est la **tangente** : $\\tan\\widehat{KBT} = \\dfrac{KT}{BK}$."
+          ],
+          "hint": "Nomme les deux côtés connus par rapport à l'angle en B."
+        },
+        {
+          "key": "q2",
+          "skill_id": "G065",
+          "statement": "Calcule la mesure de l'angle $\\widehat{KBT}$, arrondie au degré. Calculatrice en degrés.",
+          "type": "numerique",
+          "answer": {
+            "value": 20,
+            "tolerance": 0.5,
+            "unit": "°",
+            "accepted": [
+              "20°",
+              "20 °",
+              "20 degrés"
+            ]
+          },
+          "points": 3,
+          "solution_steps": [
+            "Dans le triangle BKT rectangle en K : $\\tan\\widehat{KBT} = \\dfrac{KT}{BK} = \\dfrac{1{,}15}{3{,}1}$.",
+            "On retrouve l'angle avec la touche Arctan de la calculatrice réglée en degrés : $\\widehat{KBT} = \\text{Arctan}\\left(\\dfrac{1{,}15}{3{,}1}\\right) \\approx 20{,}35^{\\circ}$.",
+            "Arrondi au degré : $\\widehat{KBT} \\approx$ **20°**."
+          ],
+          "hint": "Calcule la tangente de l'angle, puis cherche la touche qui donne l'angle à partir de sa tangente."
+        },
+        {
+          "key": "q3",
+          "skill_id": "G040",
+          "statement": "Calcule la longueur BT de la pente du premier module, en mètres, arrondie au dixième.",
+          "type": "numerique",
+          "answer": {
+            "value": 3.3,
+            "tolerance": 0.05,
+            "unit": "m",
+            "accepted": [
+              "3,3 m",
+              "3,3 mètres",
+              "3,3m"
+            ]
+          },
+          "points": 2,
+          "solution_steps": [
+            "Le triangle BKT est rectangle en K, d'hypoténuse [BT]. D'après le théorème de Pythagore, BT² = BK² + KT².",
+            "BT² = 3,1² + 1,15² = 9,61 + 1,3225 = 10,9325.",
+            "BT = √10,9325 ≈ 3,306…, arrondi au dixième à la fin.",
+            "BT ≈ **3,3 m**."
+          ],
+          "hint": "Repère l'hypoténuse du triangle BKT, puis écris l'égalité de Pythagore."
+        },
+        {
+          "key": "q4",
+          "skill_id": "P024",
+          "statement": "On admet que la pente BT mesure 3,3 m. La surface de glisse est un rectangle de longueur BT et de largeur 1,8 m. Quelle est son aire, en m² ?",
+          "type": "numerique",
+          "answer": {
+            "value": 5.94,
+            "unit": "m²",
+            "accepted": [
+              "5,94 m²",
+              "5,94 m2",
+              "5,94 mètres carrés"
+            ]
+          },
+          "points": 2,
+          "solution_steps": [
+            "L'aire d'un rectangle est le produit de sa longueur par sa largeur.",
+            "3,3 × 1,8 = 5,94.",
+            "La surface de glisse a une aire de **5,94 m²**."
+          ],
+          "hint": "Multiplie la longueur par la largeur."
+        },
+        {
+          "key": "q5",
+          "skill_id": "G065",
+          "statement": "Calcule la mesure de l'angle que fait la pente du second module avec le sol, arrondie au degré. Calculatrice en degrés.",
+          "type": "numerique",
+          "answer": {
+            "value": 29,
+            "tolerance": 0.5,
+            "unit": "°",
+            "accepted": [
+              "29°",
+              "29 °",
+              "29 degrés"
+            ]
+          },
+          "points": 4,
+          "solution_steps": [
+            "Le second module forme un triangle rectangle : la pente de 2,8 m est l'hypoténuse, et la hauteur de 1,35 m est le côté opposé à l'angle cherché, au bas de la pente.",
+            "La ligne qui relie le côté opposé et l'hypoténuse est le sinus : le sinus de l'angle vaut $\\dfrac{1{,}35}{2{,}8}$.",
+            "Avec la touche Arcsin de la calculatrice réglée en degrés : $\\text{Arcsin}\\left(\\dfrac{1{,}35}{2{,}8}\\right) \\approx 28{,}8^{\\circ}$.",
+            "Arrondi au degré, la pente fait un angle d'environ **29°** avec le sol."
+          ],
+          "hint": "Cette fois, la longueur au sol n'est pas donnée : quels côtés connais-tu par rapport à l'angle cherché ?"
+        }
+      ],
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 4, classe de 3e, Espace et géométrie, Triangles, Objectifs d'apprentissage : « Connaitre et utiliser les lignes trigonométriques dans le triangle rectangle : cosinus, sinus, tangente. »"
+    },
+    {
+      "id": "SX-G066-01",
+      "skill_id": "G066",
+      "skill_ids": [
+        "G066",
+        "G049",
+        "B007"
+      ],
+      "school_level": "3e",
+      "title": "La pelouse et le kiosque du parc",
+      "contexte": "Le plan du parc des Tilleuls est dessiné sur un quadrillage. La pelouse centrale est le parallélogramme ABDC, ses sommets étant pris dans cet ordre. Ses côtés [AB] et [AC] mesurent AB = 20 m et AC = 25 m.\n\nLa mairie veut entourer la pelouse d'une petite clôture, vendue 8 € le mètre.\n\nElle veut aussi déplacer le kiosque à musique K par la translation qui transforme A en B, c'est-à-dire la translation de vecteur $\\overrightarrow{AB}$. Trois emplacements sont marqués sur le plan, les points R, S et T.\n\nLe parc ouvre à 9 h et ferme à 19 h. Il reçoit environ 350 visiteurs par jour, et la pelouse sera semée en avril.",
+      "image": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 344 292\" width=\"344\" height=\"292\" font-family=\"system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif\" role=\"img\"><title>Plan d'un parc sur un quadrillage : un quadrilatère et plusieurs points nommés</title><rect width=\"100%\" height=\"100%\" fill=\"#ffffff\"/><line x1=\"16.0\" y1=\"16.0\" x2=\"16.0\" y2=\"276.0\" stroke=\"#cbd5e1\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"42.0\" y1=\"16.0\" x2=\"42.0\" y2=\"276.0\" stroke=\"#cbd5e1\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"68.0\" y1=\"16.0\" x2=\"68.0\" y2=\"276.0\" stroke=\"#cbd5e1\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"94.0\" y1=\"16.0\" x2=\"94.0\" y2=\"276.0\" stroke=\"#cbd5e1\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"120.0\" y1=\"16.0\" x2=\"120.0\" y2=\"276.0\" stroke=\"#cbd5e1\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"146.0\" y1=\"16.0\" x2=\"146.0\" y2=\"276.0\" stroke=\"#cbd5e1\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"172.0\" y1=\"16.0\" x2=\"172.0\" y2=\"276.0\" stroke=\"#cbd5e1\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"198.0\" y1=\"16.0\" x2=\"198.0\" y2=\"276.0\" stroke=\"#cbd5e1\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"224.0\" y1=\"16.0\" x2=\"224.0\" y2=\"276.0\" stroke=\"#cbd5e1\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"250.0\" y1=\"16.0\" x2=\"250.0\" y2=\"276.0\" stroke=\"#cbd5e1\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"276.0\" y1=\"16.0\" x2=\"276.0\" y2=\"276.0\" stroke=\"#cbd5e1\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"302.0\" y1=\"16.0\" x2=\"302.0\" y2=\"276.0\" stroke=\"#cbd5e1\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"328.0\" y1=\"16.0\" x2=\"328.0\" y2=\"276.0\" stroke=\"#cbd5e1\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"16.0\" y1=\"16.0\" x2=\"328.0\" y2=\"16.0\" stroke=\"#cbd5e1\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"16.0\" y1=\"42.0\" x2=\"328.0\" y2=\"42.0\" stroke=\"#cbd5e1\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"16.0\" y1=\"68.0\" x2=\"328.0\" y2=\"68.0\" stroke=\"#cbd5e1\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"16.0\" y1=\"94.0\" x2=\"328.0\" y2=\"94.0\" stroke=\"#cbd5e1\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"16.0\" y1=\"120.0\" x2=\"328.0\" y2=\"120.0\" stroke=\"#cbd5e1\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"16.0\" y1=\"146.0\" x2=\"328.0\" y2=\"146.0\" stroke=\"#cbd5e1\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"16.0\" y1=\"172.0\" x2=\"328.0\" y2=\"172.0\" stroke=\"#cbd5e1\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"16.0\" y1=\"198.0\" x2=\"328.0\" y2=\"198.0\" stroke=\"#cbd5e1\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"16.0\" y1=\"224.0\" x2=\"328.0\" y2=\"224.0\" stroke=\"#cbd5e1\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"16.0\" y1=\"250.0\" x2=\"328.0\" y2=\"250.0\" stroke=\"#cbd5e1\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"16.0\" y1=\"276.0\" x2=\"328.0\" y2=\"276.0\" stroke=\"#cbd5e1\" stroke-width=\"1\" stroke-linecap=\"round\"/><polygon points=\"68.0,146.0 172.0,146.0 250.0,250.0 146.0,250.0\" fill=\"#bfdbfe\" fill-opacity=\"0.6\" stroke=\"#334155\" stroke-width=\"2\" stroke-linejoin=\"round\"/><line x1=\"64.0\" y1=\"142.0\" x2=\"72.0\" y2=\"150.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"64.0\" y1=\"150.0\" x2=\"72.0\" y2=\"142.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><text x=\"54.0\" y=\"151.0\" font-size=\"15\" text-anchor=\"middle\" fill=\"#334155\" font-weight=\"600\">A</text><line x1=\"168.0\" y1=\"142.0\" x2=\"176.0\" y2=\"150.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"168.0\" y1=\"150.0\" x2=\"176.0\" y2=\"142.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><text x=\"181.8\" y=\"141.2\" font-size=\"15\" text-anchor=\"middle\" fill=\"#334155\" font-weight=\"600\">B</text><line x1=\"142.0\" y1=\"246.0\" x2=\"150.0\" y2=\"254.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"142.0\" y1=\"254.0\" x2=\"150.0\" y2=\"246.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><text x=\"146.0\" y=\"269.0\" font-size=\"15\" text-anchor=\"middle\" fill=\"#334155\" font-weight=\"600\">C</text><line x1=\"246.0\" y1=\"246.0\" x2=\"254.0\" y2=\"254.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"246.0\" y1=\"254.0\" x2=\"254.0\" y2=\"246.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><text x=\"264.0\" y=\"255.0\" font-size=\"15\" text-anchor=\"middle\" fill=\"#334155\" font-weight=\"600\">D</text><line x1=\"168.0\" y1=\"64.0\" x2=\"176.0\" y2=\"72.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"168.0\" y1=\"72.0\" x2=\"176.0\" y2=\"64.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><text x=\"172.0\" y=\"59.0\" font-size=\"15\" text-anchor=\"middle\" fill=\"#334155\" font-weight=\"600\">K</text><line x1=\"64.0\" y1=\"64.0\" x2=\"72.0\" y2=\"72.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"64.0\" y1=\"72.0\" x2=\"72.0\" y2=\"64.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><text x=\"68.0\" y=\"59.0\" font-size=\"15\" text-anchor=\"middle\" fill=\"#334155\" font-weight=\"600\">R</text><line x1=\"246.0\" y1=\"168.0\" x2=\"254.0\" y2=\"176.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"246.0\" y1=\"176.0\" x2=\"254.0\" y2=\"168.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><text x=\"264.0\" y=\"177.0\" font-size=\"15\" text-anchor=\"middle\" fill=\"#334155\" font-weight=\"600\">S</text><line x1=\"272.0\" y1=\"64.0\" x2=\"280.0\" y2=\"72.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"272.0\" y1=\"72.0\" x2=\"280.0\" y2=\"64.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><text x=\"276.0\" y=\"59.0\" font-size=\"15\" text-anchor=\"middle\" fill=\"#334155\" font-weight=\"600\">T</text></svg>",
+      "duree_estimee_min": 15,
+      "questions": [
+        {
+          "key": "q1",
+          "skill_id": "G049",
+          "statement": "Quelles sont les longueurs des côtés [CD] et [BD] de la pelouse ?",
+          "type": "qcm",
+          "choices": [
+            {
+              "key": "a",
+              "text": "CD = 20 m et BD = 25 m",
+              "misconception": null
+            },
+            {
+              "key": "b",
+              "text": "CD = 25 m et BD = 20 m",
+              "misconception": "L'élève lit le quadrilatère dans l'ordre ABCD : dans ABDC, [CD] est opposé à [AB], et [BD] à [AC]."
+            },
+            {
+              "key": "c",
+              "text": "On ne peut pas les connaître sans mesurer sur le plan.",
+              "misconception": "Les côtés opposés d'un parallélogramme ont la même longueur : les données suffisent, la mesure n'est pas une preuve."
+            }
+          ],
+          "answer": {
+            "value": "a"
+          },
+          "points": 1,
+          "solution_steps": [
+            "Dans le parallélogramme ABDC, les côtés opposés sont [AB] et [DC], puis [BD] et [CA].",
+            "Les côtés opposés d'un parallélogramme ont la même longueur : CD = AB et BD = AC.",
+            "Donc **CD = 20 m et BD = 25 m**."
+          ],
+          "hint": "Lis les sommets dans l'ordre A, B, D, C pour trouver les côtés opposés."
+        },
+        {
+          "key": "q2",
+          "skill_id": "G066",
+          "statement": "Quel vecteur est égal au vecteur $\\overrightarrow{AB}$ ?",
+          "type": "qcm",
+          "choices": [
+            {
+              "key": "a",
+              "text": "$\\overrightarrow{DC}$",
+              "misconception": "$\\overrightarrow{DC}$ a la même direction et la même longueur que $\\overrightarrow{AB}$, mais le sens contraire : c'est son opposé."
+            },
+            {
+              "key": "b",
+              "text": "$\\overrightarrow{BD}$",
+              "misconception": "[BD] est un autre côté de la pelouse : sa direction n'est pas celle de [AB]."
+            },
+            {
+              "key": "c",
+              "text": "$\\overrightarrow{CD}$",
+              "misconception": null
+            },
+            {
+              "key": "d",
+              "text": "$\\overrightarrow{AD}$",
+              "misconception": "$\\overrightarrow{AD}$ part aussi de A, mais c'est une diagonale de la pelouse : il n'a ni la direction ni la longueur de $\\overrightarrow{AB}$."
+            }
+          ],
+          "answer": {
+            "value": "c"
+          },
+          "points": 2,
+          "solution_steps": [
+            "ABDC est un parallélogramme, ses sommets étant pris dans cet ordre : donc $\\overrightarrow{AB} = \\overrightarrow{CD}$.",
+            "Sur le quadrillage, on va de A à B comme de C à D : 4 carreaux vers la droite, sans monter ni descendre.",
+            "Le vecteur égal à $\\overrightarrow{AB}$ est **$\\overrightarrow{CD}$** : même direction, même sens, même longueur."
+          ],
+          "hint": "Deux vecteurs égaux ont la même direction, le même sens et la même longueur."
+        },
+        {
+          "key": "q3",
+          "skill_id": "G066",
+          "statement": "Sur quel emplacement, R, S ou T, le kiosque arrive-t-il ? Écris sa lettre.",
+          "type": "texte",
+          "answer": {
+            "value": "T",
+            "accepted": [
+              "point T",
+              "le point T",
+              "en T",
+              "au point T",
+              "c'est T",
+              "c'est le point T",
+              "l'emplacement T",
+              "emplacement T"
+            ]
+          },
+          "points": 3,
+          "solution_steps": [
+            "La translation qui transforme A en B fait glisser chaque point comme A glisse vers B : sur le quadrillage, de 4 carreaux vers la droite, sans monter ni descendre.",
+            "Le kiosque K glisse donc de 4 carreaux vers la droite : il arrive en **T**. K, B, T et A forment un parallélogramme ABTK.",
+            "R est obtenu en allant vers la gauche (vecteur $\\overrightarrow{BA}$, sens contraire), et S en suivant le vecteur $\\overrightarrow{AC}$."
+          ],
+          "hint": "Compte les carreaux pour aller de A à B, puis fais le même déplacement à partir de K."
+        },
+        {
+          "key": "q4",
+          "skill_id": "B007",
+          "statement": "On rappelle que les côtés opposés d'un parallélogramme ont la même longueur. Combien coûte la clôture qui fait le tour de la pelouse ?",
+          "type": "numerique",
+          "answer": {
+            "value": 720,
+            "unit": "€",
+            "accepted": [
+              "720 €",
+              "720 euros",
+              "720€"
+            ]
+          },
+          "points": 2,
+          "solution_steps": [
+            "La clôture fait le tour de la pelouse : AB + BD + DC + CA = 20 + 25 + 20 + 25 = 90 m.",
+            "À 8 € le mètre : 90 × 8 = 720.",
+            "La clôture coûte **720 €**."
+          ],
+          "hint": "Calcule d'abord la longueur du tour de la pelouse."
+        },
+        {
+          "key": "q5",
+          "skill_id": "G066",
+          "statement": "Quelle est l'image du point D par la translation de vecteur $\\overrightarrow{BA}$ ? Écris sa lettre.",
+          "type": "texte",
+          "answer": {
+            "value": "C",
+            "accepted": [
+              "point C",
+              "le point C",
+              "en C",
+              "au point C",
+              "c'est C",
+              "c'est le point C"
+            ]
+          },
+          "points": 4,
+          "solution_steps": [
+            "ABDC est un parallélogramme : $\\overrightarrow{AB} = \\overrightarrow{CD}$.",
+            "$\\overrightarrow{BA}$ est l'opposé de $\\overrightarrow{AB}$ ; il est donc égal à $\\overrightarrow{DC}$, l'opposé de $\\overrightarrow{CD}$.",
+            "La translation de vecteur $\\overrightarrow{DC}$ transforme D en C : l'image de D est **C**. Sur le quadrillage, on part de D et on va de 4 carreaux vers la gauche."
+          ],
+          "hint": "Cherche un vecteur égal à $\\overrightarrow{BA}$ qui part du point D."
+        }
+      ],
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 4, classe de 3e, Espace et géométrie, Translations et vecteurs, Objectifs d'apprentissage : « Définir et utiliser les notions de vecteur, de vecteurs égaux, de vecteur nul, d'opposé d'un vecteur. »"
+    },
+    {
+      "id": "SX-G067-01",
+      "skill_id": "G067",
+      "skill_ids": [
+        "G067",
+        "D004"
+      ],
+      "school_level": "3e",
+      "title": "La tournée du drone de livraison",
+      "contexte": "Une pharmacie livre des médicaments par drone. Le drone décolle de l'entrepôt E. Pour sa tournée du matin, il vole en ligne droite jusqu'à la ferme F, puis de F jusqu'au village G. Le déplacement de E à F est représenté par le vecteur $\\overrightarrow{EF}$, celui de F à G par le vecteur $\\overrightarrow{FG}$.\n\nLes distances :\nEF = 3,5 km\nFG = 2,4 km\nEG = 4,9 km, en ligne droite entre l'entrepôt et le village\n\nLe point H, sur la figure, est une antenne relais placée de sorte que EFGH soit un parallélogramme.\n\nAvec une batterie pleine, le drone peut parcourir 15 km. Il vole à 60 km/h et emporte au plus 2 kg de colis.",
+      "image": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 344 292\" width=\"344\" height=\"292\" font-family=\"system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif\" role=\"img\"><title>Une flèche de E à F, une flèche de F à G, et un point H</title><rect width=\"100%\" height=\"100%\" fill=\"#ffffff\"/><line x1=\"42.0\" y1=\"224.0\" x2=\"215.0\" y2=\"224.0\" stroke=\"#2563eb\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><path d=\"M224.0,224.0 L213.0,229.0 L213.0,219.0 Z\" fill=\"#2563eb\"/><line x1=\"224.0\" y1=\"224.0\" x2=\"265.4\" y2=\"115.8\" stroke=\"#2563eb\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><path d=\"M268.6,107.4 L269.3,119.5 L260.0,115.9 Z\" fill=\"#2563eb\"/><line x1=\"38.0\" y1=\"220.0\" x2=\"46.0\" y2=\"228.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"38.0\" y1=\"228.0\" x2=\"46.0\" y2=\"220.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><text x=\"42.0\" y=\"243.0\" font-size=\"15\" text-anchor=\"middle\" fill=\"#334155\" font-weight=\"600\">E</text><line x1=\"220.0\" y1=\"220.0\" x2=\"228.0\" y2=\"228.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"220.0\" y1=\"228.0\" x2=\"228.0\" y2=\"220.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><text x=\"224.0\" y=\"243.0\" font-size=\"15\" text-anchor=\"middle\" fill=\"#334155\" font-weight=\"600\">F</text><line x1=\"264.6\" y1=\"103.4\" x2=\"272.6\" y2=\"111.4\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"264.6\" y1=\"111.4\" x2=\"272.6\" y2=\"103.4\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><text x=\"268.6\" y=\"98.4\" font-size=\"15\" text-anchor=\"middle\" fill=\"#334155\" font-weight=\"600\">G</text><line x1=\"82.6\" y1=\"103.4\" x2=\"90.6\" y2=\"111.4\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"82.6\" y1=\"111.4\" x2=\"90.6\" y2=\"103.4\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><text x=\"86.6\" y=\"98.4\" font-size=\"15\" text-anchor=\"middle\" fill=\"#334155\" font-weight=\"600\">H</text></svg>",
+      "duree_estimee_min": 15,
+      "questions": [
+        {
+          "key": "q1",
+          "skill_id": "D004",
+          "statement": "Quelle distance le drone parcourt-il pour aller de E à G en passant par F ? Réponds en km.",
+          "type": "numerique",
+          "answer": {
+            "value": 5.9,
+            "unit": "km",
+            "accepted": [
+              "5,9 km",
+              "5,9 kilomètres",
+              "5,90 km",
+              "5,9km"
+            ]
+          },
+          "points": 1,
+          "solution_steps": [
+            "Le drone vole de E à F, puis de F à G : on additionne les deux distances.",
+            "3,5 + 2,4 = 5,9.",
+            "Il parcourt **5,9 km**. La distance EG en ligne droite ne compte pas ici."
+          ],
+          "hint": "Relis le trajet de la tournée : quels vols le drone fait-il ?"
+        },
+        {
+          "key": "q2",
+          "skill_id": "G067",
+          "statement": "Écris plus simplement la somme $\\overrightarrow{EF} + \\overrightarrow{FG}$. Donne le nom du vecteur : ses deux lettres, l'origine puis l'extrémité.",
+          "type": "texte",
+          "answer": {
+            "value": "EG",
+            "accepted": [
+              "vecteur EG",
+              "le vecteur EG",
+              "vect EG",
+              "vec EG",
+              "→EG",
+              "EG→",
+              "EF + FG = EG",
+              "c'est le vecteur EG",
+              "c'est EG"
+            ]
+          },
+          "points": 2,
+          "solution_steps": [
+            "Les vecteurs s'enchaînent : le premier finit en F, le second commence en F.",
+            "D'après la relation de Chasles, $\\overrightarrow{EF} + \\overrightarrow{FG} = \\overrightarrow{EG}$.",
+            "La somme est le vecteur **$\\overrightarrow{EG}$**."
+          ],
+          "hint": "Regarde où finit le premier vecteur et où commence le second."
+        },
+        {
+          "key": "q3",
+          "skill_id": "G067",
+          "statement": "On admet que $\\overrightarrow{EF} + \\overrightarrow{FG} = \\overrightarrow{EG}$. Quelle est la longueur du vecteur $\\overrightarrow{EF} + \\overrightarrow{FG}$ ?",
+          "type": "qcm",
+          "choices": [
+            {
+              "key": "a",
+              "text": "5,9 km",
+              "misconception": "L'élève additionne les longueurs des deux vecteurs. Or la somme des vecteurs est $\\overrightarrow{EG}$, et le drone qui va de E à G en ligne droite fait moins de chemin."
+            },
+            {
+              "key": "b",
+              "text": "1,1 km",
+              "misconception": "L'élève soustrait les deux longueurs : la somme de deux vecteurs ne se calcule pas sur leurs longueurs."
+            },
+            {
+              "key": "c",
+              "text": "4,9 km",
+              "misconception": null
+            },
+            {
+              "key": "d",
+              "text": "2,4 km",
+              "misconception": "C'est la longueur du seul vecteur $\\overrightarrow{FG}$, pas celle de la somme."
+            }
+          ],
+          "answer": {
+            "value": "c"
+          },
+          "points": 3,
+          "solution_steps": [
+            "$\\overrightarrow{EF} + \\overrightarrow{FG} = \\overrightarrow{EG}$, d'après la relation de Chasles.",
+            "La longueur de ce vecteur est la distance EG, donnée dans l'énoncé.",
+            "Elle vaut **4,9 km**. On n'additionne pas les longueurs : E, F et G ne sont pas alignés."
+          ],
+          "hint": "La longueur d'un vecteur est la distance entre son origine et son extrémité."
+        },
+        {
+          "key": "q4",
+          "skill_id": "D004",
+          "statement": "Après sa tournée, le drone revient du village G à l'entrepôt E en ligne droite. Combien de kilomètres peut-il encore parcourir avec sa batterie à la fin de ce retour ?",
+          "type": "numerique",
+          "answer": {
+            "value": 4.2,
+            "unit": "km",
+            "accepted": [
+              "4,2 km",
+              "4,20 km",
+              "4,2 kilomètres",
+              "4,2km"
+            ]
+          },
+          "points": 2,
+          "solution_steps": [
+            "Le drone vole de E à F, de F à G, puis de G à E : 3,5 + 2,4 + 4,9 = 10,8 km.",
+            "Sa batterie permet 15 km : 15 − 10,8 = 4,2.",
+            "Il peut encore parcourir **4,2 km**."
+          ],
+          "hint": "Additionne les trois vols de la journée avant de les comparer à l'autonomie."
+        },
+        {
+          "key": "q5",
+          "skill_id": "G067",
+          "statement": "Un autre jour, le drone part de E, fait d'abord le déplacement de vecteur $\\overrightarrow{FG}$, puis celui de vecteur $\\overrightarrow{EF}$. Où arrive-t-il ?",
+          "type": "qcm",
+          "choices": [
+            {
+              "key": "a",
+              "text": "En F",
+              "misconception": "Depuis E, le vecteur $\\overrightarrow{EF}$ seul mène en F, mais le drone a d'abord fait le déplacement $\\overrightarrow{FG}$ : il ne part plus de E pour le second."
+            },
+            {
+              "key": "b",
+              "text": "En H",
+              "misconception": "H est le point atteint après le premier déplacement seulement : il reste le déplacement de vecteur $\\overrightarrow{EF}$."
+            },
+            {
+              "key": "c",
+              "text": "Nulle part : on ne peut pas enchaîner ces deux déplacements, car $\\overrightarrow{FG}$ ne finit pas là où $\\overrightarrow{EF}$ commence.",
+              "misconception": "Une translation peut toujours suivre une autre : la somme de deux vecteurs existe toujours. Il suffit de remplacer chaque vecteur par un vecteur égal qui s'enchaîne."
+            },
+            {
+              "key": "d",
+              "text": "En G",
+              "misconception": null
+            }
+          ],
+          "answer": {
+            "value": "d"
+          },
+          "points": 4,
+          "solution_steps": [
+            "EFGH est un parallélogramme : $\\overrightarrow{EH} = \\overrightarrow{FG}$ et $\\overrightarrow{HG} = \\overrightarrow{EF}$.",
+            "Le premier déplacement, de vecteur $\\overrightarrow{FG}$, c'est-à-dire $\\overrightarrow{EH}$, mène le drone de E en H.",
+            "Le second, de vecteur $\\overrightarrow{EF}$, c'est-à-dire $\\overrightarrow{HG}$, le mène de H en G.",
+            "D'après la relation de Chasles, $\\overrightarrow{EH} + \\overrightarrow{HG} = \\overrightarrow{EG}$ : le drone arrive **en G**, comme pour sa tournée habituelle."
+          ],
+          "hint": "Cherche un vecteur égal à $\\overrightarrow{FG}$ qui part de E : le point H peut t'aider."
+        }
+      ],
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 4, classe de 3e, Espace et géométrie, Translations et vecteurs, Objectifs d'apprentissage : « Définir et utiliser la somme de deux vecteurs par enchainement de deux translations. »"
     },
     {
       "id": "SX-P001-01",
