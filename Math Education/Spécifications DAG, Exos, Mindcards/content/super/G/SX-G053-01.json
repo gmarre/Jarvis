@@ -1,0 +1,130 @@
+{
+  "id": "SX-G053-01",
+  "skill_id": "G053",
+  "skill_ids": [
+    "G053",
+    "D004",
+    "G016"
+  ],
+  "school_level": "5e",
+  "title": "Le tuyau du jardin partagé",
+  "contexte": "Le jardin partagé du quartier a la forme du triangle ABC de la figure, qui n'est pas en vraie grandeur. Le côté [BC] longe la rue et mesure 23 m ; M est son milieu.\n\nLes jardiniers installent un robinet au coin A. Le tuyau d'arrosage part de A et rejoint la rue par le chemin le plus court : il est perpendiculaire à (BC) et touche la rue en H, un point du côté [BC] tel que BH = 7,6 m. Ce tuyau mesure 9,4 m ; il sera coupé dans un rouleau de 15 m.\n\nUne allée droite ira du robinet A jusqu'au point M, au bord de la rue.\n\nLe jardin compte 14 parcelles, et chaque jardinier paie 12 € par an.",
+  "image": "figures/SX-G053-01",
+  "duree_estimee_min": 12,
+  "questions": [
+    {
+      "key": "q1",
+      "skill_id": "G016",
+      "statement": "Sur la figure, quelles droites sont perpendiculaires ?",
+      "type": "qcm",
+      "choices": [
+        {
+          "key": "a",
+          "text": "Les droites (AH) et (BC)",
+          "misconception": null
+        },
+        {
+          "key": "b",
+          "text": "Les droites (AM) et (BC)",
+          "misconception": "L'allée [AM] va au milieu de la rue, mais rien ne dit qu'elle lui est perpendiculaire : aucun angle droit n'est codé en M."
+        },
+        {
+          "key": "c",
+          "text": "Les droites (AB) et (AC)",
+          "misconception": "Aucun angle droit n'est codé en A : on ne peut pas dire que (AB) et (AC) sont perpendiculaires."
+        }
+      ],
+      "answer": {
+        "value": "a"
+      },
+      "points": 1,
+      "solution_steps": [
+        "L'énoncé dit que le tuyau [AH] est perpendiculaire à la rue (BC), et la figure code un angle droit en H.",
+        "Les droites perpendiculaires sont donc **(AH) et (BC)**. Aucun angle droit n'est codé en M ni en A."
+      ],
+      "hint": "Cherche le codage de l'angle droit sur la figure."
+    },
+    {
+      "key": "q2",
+      "skill_id": "D004",
+      "statement": "Combien de mètres de tuyau restera-t-il dans le rouleau après la pose ?",
+      "type": "numerique",
+      "answer": {
+        "value": 5.6,
+        "unit": "m",
+        "accepted": [
+          "5,6 m",
+          "5,6 mètres"
+        ]
+      },
+      "points": 2,
+      "solution_steps": [
+        "Le rouleau mesure 15 m et on en coupe 9,4 m : on calcule 15 − 9,4.",
+        "On pose la soustraction en écrivant 15 sous la forme 15,0 : 15,0 − 9,4 = 5,6.",
+        "Il restera **5,6 m** de tuyau. Vérification : 9,4 + 5,6 = 15."
+      ],
+      "hint": "Quelle longueur avait le rouleau, et quelle longueur en coupe-t-on ?"
+    },
+    {
+      "key": "q3",
+      "skill_id": "G053",
+      "statement": "Dans le triangle ABC, comment s'appellent les segments [AH] et [AM] ?",
+      "type": "qcm",
+      "choices": [
+        {
+          "key": "a",
+          "text": "[AH] est la médiane issue de A, et [AM] est la hauteur issue de A.",
+          "misconception": "Les noms sont inversés : la hauteur est perpendiculaire au côté opposé, la médiane va en son milieu."
+        },
+        {
+          "key": "b",
+          "text": "[AH] et [AM] sont deux hauteurs issues de A.",
+          "misconception": "Une seule droite issue de A est perpendiculaire à (BC) : [AM] ne fait pas d'angle droit avec la rue, ce n'est pas une hauteur."
+        },
+        {
+          "key": "c",
+          "text": "[AH] est la médiatrice de [BC], et [AM] est la médiane issue de A.",
+          "misconception": "La médiatrice de [BC] est perpendiculaire à [BC] en son milieu M ; (AH) coupe (BC) en H, qui n'est pas le milieu."
+        },
+        {
+          "key": "d",
+          "text": "[AH] est la hauteur issue de A, et [AM] est la médiane issue de A.",
+          "misconception": null
+        }
+      ],
+      "answer": {
+        "value": "d"
+      },
+      "points": 3,
+      "solution_steps": [
+        "[AH] part du sommet A et il est perpendiculaire au côté opposé (BC) : c'est la **hauteur issue de A**.",
+        "[AM] joint le sommet A au milieu M du côté opposé [BC] : c'est la **médiane issue de A**.",
+        "La médiatrice de [BC], elle, est perpendiculaire à [BC] en son milieu M : elle ne passe pas par H."
+      ],
+      "hint": "Pour chaque segment, demande-toi : passe-t-il par un milieu ? Fait-il un angle droit avec (BC) ?"
+    },
+    {
+      "key": "q4",
+      "skill_id": "G053",
+      "statement": "Les jardiniers veulent poser un banc au bord de la rue, entre le pied H du tuyau et le bout M de l'allée. Combien mesure HM, en mètres ?",
+      "type": "numerique",
+      "answer": {
+        "value": 3.9,
+        "unit": "m",
+        "accepted": [
+          "3,9 m",
+          "3,9 mètres"
+        ]
+      },
+      "points": 4,
+      "solution_steps": [
+        "M est le milieu de [BC], qui mesure 23 m : BM = 23 ÷ 2 = 11,5 m.",
+        "H est sur [BC] avec BH = 7,6 m, moins que 11,5 m : H est entre B et M. Le pied de la hauteur n'est pas le milieu du côté.",
+        "HM = BM − BH = 11,5 − 7,6 = 3,9. La distance HM mesure **3,9 m**."
+      ],
+      "hint": "Commence par placer M sur [BC], puis H."
+    }
+  ],
+  "review_status": "relu_agent",
+  "programme_ref": "Cycle 4, classe de 5e, Espace et géométrie, Triangles, Objectifs d'apprentissage : « Définir et tracer les hauteurs dans un triangle. »"
+}

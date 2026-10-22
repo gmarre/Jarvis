@@ -1,0 +1,171 @@
+{
+  "id": "SX-G052-01",
+  "skill_id": "G052",
+  "skill_ids": [
+    "G052",
+    "D021",
+    "G027"
+  ],
+  "school_level": "5e",
+  "title": "Les fanions de la kermesse",
+  "contexte": "Pour la kermesse de l'école, Inès prépare trois modèles de fanions triangulaires. Avant de découper le tissu, elle trace chaque modèle en vraie grandeur sur une feuille, à la règle, au compas et au rapporteur. Voici ses données.\n\n**Modèle 1**, le triangle DEF : DE = 14 cm, DF = 11 cm et $\\widehat{EDF}$ = 52°.\n**Modèle 2**, le triangle GHK : GH = 12 cm, $\\widehat{HGK}$ = 63° et $\\widehat{GHK}$ = 49°.\n**Modèle 3**, le triangle LMN : LM = 13 cm, $\\widehat{MLN}$ = 98° et $\\widehat{LMN}$ = 85°.\n\nElle coudra 9 fanions du modèle 2, et il faut 0,37 m de ruban pour border chacun d'eux. Le ruban est vendu en bobines de 5 m, et la kermesse aura lieu un samedi de juin.",
+  "image": null,
+  "duree_estimee_min": 15,
+  "questions": [
+    {
+      "key": "q1",
+      "skill_id": "G052",
+      "statement": "Pour quel modèle Inès connaît-elle deux longueurs et l'angle compris entre ces deux côtés ?",
+      "type": "qcm",
+      "choices": [
+        {
+          "key": "a",
+          "text": "Le modèle 1",
+          "misconception": null
+        },
+        {
+          "key": "b",
+          "text": "Le modèle 2",
+          "misconception": "Le modèle 2 donne une seule longueur, GH, et les deux angles aux extrémités de [GH]."
+        },
+        {
+          "key": "c",
+          "text": "Le modèle 3",
+          "misconception": "Le modèle 3 donne une seule longueur, LM, et deux angles : ce n'est pas deux longueurs et un angle."
+        }
+      ],
+      "answer": {
+        "value": "a"
+      },
+      "points": 1,
+      "solution_steps": [
+        "Modèle 1 : on connaît DE et DF, et l'angle $\\widehat{EDF}$, au sommet D commun à ces deux côtés. C'est l'angle compris entre [DE] et [DF].",
+        "Les modèles 2 et 3 donnent une seule longueur et deux angles.",
+        "La réponse est le **modèle 1**."
+      ],
+      "hint": "Pour chaque modèle, compte les longueurs et les angles donnés."
+    },
+    {
+      "key": "q2",
+      "skill_id": "D021",
+      "statement": "Quelle longueur de ruban faut-il pour border les 9 fanions du modèle 2, en mètres ?",
+      "type": "numerique",
+      "answer": {
+        "value": 3.33,
+        "unit": "m",
+        "accepted": [
+          "3,33 m",
+          "3,33 mètres"
+        ]
+      },
+      "points": 2,
+      "solution_steps": [
+        "Il faut 0,37 m de ruban par fanion, et il y a 9 fanions : on calcule 0,37 × 9.",
+        "On pose 37 × 9 = 333, puis on place la virgule : 0,37 a deux chiffres après la virgule, le produit aussi. 0,37 × 9 = 3,33.",
+        "Il faut **3,33 m** de ruban. La longueur d'une bobine ne sert pas pour cette question."
+      ],
+      "hint": "Combien de ruban faut-il pour un fanion ? Pour combien de fanions ?"
+    },
+    {
+      "key": "q3",
+      "skill_id": "G027",
+      "statement": "Pour son tracé, Inès calcule l'angle $\\widehat{GKH}$ du modèle 2. Combien mesure-t-il, en degrés ?",
+      "type": "numerique",
+      "answer": {
+        "value": 68,
+        "unit": "°",
+        "accepted": [
+          "68°",
+          "68 °",
+          "68 degrés",
+          "68 degré"
+        ]
+      },
+      "points": 2,
+      "solution_steps": [
+        "La somme des angles d'un triangle vaut 180°.",
+        "Dans le triangle GHK : 63 + 49 = 112, puis 180 − 112 = 68.",
+        "L'angle $\\widehat{GKH}$ mesure **68°**."
+      ],
+      "hint": "Que vaut la somme des trois angles d'un triangle ?"
+    },
+    {
+      "key": "q4",
+      "skill_id": "G052",
+      "statement": "Voici, dans le désordre, les étapes de la construction du modèle 2.\n\n(1) Placer K au point d'intersection des deux demi-droites.\n(2) Tracer le segment [GH] de 12 cm.\n(3) Tracer la demi-droite d'origine G qui fait un angle de 63° avec [GH], puis la demi-droite d'origine H qui fait un angle de 49° avec [HG], du même côté de (GH).\n\nDans quel ordre faut-il les faire ?",
+      "type": "qcm",
+      "choices": [
+        {
+          "key": "a",
+          "text": "3, 2, 1",
+          "misconception": "Les demi-droites partent de G et de H : il faut d'abord avoir tracé [GH] pour placer ces deux points et mesurer les angles."
+        },
+        {
+          "key": "b",
+          "text": "2, 1, 3",
+          "misconception": "K est le point d'intersection des deux demi-droites : on ne peut pas le placer avant de les avoir tracées."
+        },
+        {
+          "key": "c",
+          "text": "2, 3, 1",
+          "misconception": null
+        },
+        {
+          "key": "d",
+          "text": "1, 2, 3",
+          "misconception": "Placer K en premier revient à le placer au hasard : c'est le croisement des demi-droites qui le donne."
+        }
+      ],
+      "answer": {
+        "value": "c"
+      },
+      "points": 3,
+      "solution_steps": [
+        "On ne peut placer un angle qu'à partir d'un côté déjà tracé : on commence par le segment [GH], étape (2).",
+        "On trace ensuite les deux demi-droites aux extrémités G et H, avec les angles donnés : étape (3).",
+        "Leur point d'intersection est le troisième sommet K : étape (1). L'ordre est **2, 3, 1**."
+      ],
+      "hint": "Qu'est-ce qui doit déjà être tracé pour placer un angle au rapporteur ?"
+    },
+    {
+      "key": "q5",
+      "skill_id": "G052",
+      "statement": "Inès n'arrive pas à tracer le modèle 3. Quelle phrase est juste ?",
+      "type": "qcm",
+      "choices": [
+        {
+          "key": "a",
+          "text": "Le modèle 3 est impossible, car un triangle ne peut pas avoir un angle obtus.",
+          "misconception": "Un triangle peut avoir un angle obtus ; ce qui rend le modèle 3 impossible, c'est la somme 98° + 85°, qui dépasse 180°."
+        },
+        {
+          "key": "b",
+          "text": "Le modèle 3 est impossible, car 98° + 85° = 183°, alors que les trois angles d'un triangle ont une somme de 180°.",
+          "misconception": null
+        },
+        {
+          "key": "c",
+          "text": "Le modèle 3 est possible si Inès prend un côté [LM] plus long.",
+          "misconception": "La longueur de [LM] ne change pas les angles : avec 98° et 85°, les deux demi-droites ne se coupent jamais du bon côté, quelle que soit la longueur."
+        },
+        {
+          "key": "d",
+          "text": "Le modèle 3 est possible, car chacun de ses angles mesure moins de 180°.",
+          "misconception": "Chaque angle est bien inférieur à 180°, mais ce sont les trois angles ensemble qui font 180° ; deux angles ne peuvent pas dépasser cette somme, or ici 98° + 85° = 183°."
+        }
+      ],
+      "answer": {
+        "value": "b"
+      },
+      "points": 4,
+      "solution_steps": [
+        "Les deux angles donnés aux extrémités de [LM] mesurent 98° et 85° : 98 + 85 = 183.",
+        "Or les trois angles d'un triangle ont une somme de 180° : deux d'entre eux ne peuvent pas faire déjà 183°. Les deux demi-droites tracées en L et en M ne se coupent pas du bon côté de (LM).",
+        "Le modèle 3 est **impossible**, quelle que soit la longueur de [LM]. Avoir un angle obtus n'est pas le problème : c'est la somme des deux angles donnés."
+      ],
+      "hint": "Relis les données du modèle 3, puis ce que tu sais des angles d'un triangle."
+    }
+  ],
+  "review_status": "relu_agent",
+  "programme_ref": "Cycle 4, classe de 5e, Espace et géométrie, Triangles, Objectifs d'apprentissage : « Construire des triangles à partir de données partielles. »"
+}

@@ -1,0 +1,175 @@
+{
+  "id": "SX-G055-01",
+  "skill_id": "G055",
+  "skill_ids": [
+    "G055",
+    "D021",
+    "G049"
+  ],
+  "school_level": "5e",
+  "title": "La caisse à outils à plateaux",
+  "contexte": "Le grand-père de Sami lui offre une caisse à outils à plateaux. Quand on l'ouvre, les plateaux s'écartent, et chaque côté de la caisse forme un quadrilatère articulé ABCD, non croisé, dessiné sur la figure (pas en vraie grandeur).\n\nLes bras [AD] et [BC] mesurent chacun 21,5 cm, et les bords [AB] et [DC] mesurent chacun 34 cm. Caisse ouverte, l'angle $\\widehat{DAB}$ mesure 62°.\n\nSi le plateau du haut reste parallèle au fond de la caisse, les outils ne glissent pas.\n\nUn bras est fendu : Sami décide de remplacer les quatre bras de la caisse, deux de chaque côté. La caisse pèse 3,8 kg et a coûté 45 €.",
+  "image": "figures/SX-G055-01",
+  "duree_estimee_min": 15,
+  "questions": [
+    {
+      "key": "q1",
+      "skill_id": "G049",
+      "statement": "Dans le quadrilatère ABCD, quel est le côté opposé au côté [AB] ?",
+      "type": "qcm",
+      "choices": [
+        {
+          "key": "a",
+          "text": "Le côté [BC]",
+          "misconception": "[BC] partage le sommet B avec [AB] : c'est un côté consécutif, pas opposé."
+        },
+        {
+          "key": "b",
+          "text": "Le segment [AC]",
+          "misconception": "[AC] joint deux sommets non consécutifs : c'est une diagonale, pas un côté."
+        },
+        {
+          "key": "c",
+          "text": "Le côté [DC]",
+          "misconception": null
+        },
+        {
+          "key": "d",
+          "text": "Le côté [AD]",
+          "misconception": "[AD] partage le sommet A avec [AB] : c'est un côté consécutif, pas opposé."
+        }
+      ],
+      "answer": {
+        "value": "c"
+      },
+      "points": 1,
+      "solution_steps": [
+        "On lit les sommets dans l'ordre A, B, C, D : les côtés sont [AB], [BC], [CD] et [DA].",
+        "Le côté opposé à [AB] est celui qui n'a aucun sommet commun avec lui : **[DC]**."
+      ],
+      "hint": "Un côté opposé n'a aucun sommet en commun avec [AB]."
+    },
+    {
+      "key": "q2",
+      "skill_id": "D021",
+      "statement": "Quelle longueur de baguette faut-il pour fabriquer les quatre bras, en centimètres ?",
+      "type": "numerique",
+      "answer": {
+        "value": 86,
+        "unit": "cm",
+        "accepted": [
+          "86 cm",
+          "86 centimètres"
+        ]
+      },
+      "points": 2,
+      "solution_steps": [
+        "Il y a quatre bras de 21,5 cm : on calcule 21,5 × 4.",
+        "On pose 215 × 4 = 860, puis on place la virgule : 21,5 × 4 = 86,0.",
+        "Il faut **86 cm** de baguette."
+      ],
+      "hint": "Combien de bras faut-il, et combien mesure chacun ?"
+    },
+    {
+      "key": "q3",
+      "skill_id": "G055",
+      "statement": "Quelle propriété permet de prouver que ABCD est un parallélogramme ?",
+      "type": "qcm",
+      "choices": [
+        {
+          "key": "a",
+          "text": "Ses diagonales se coupent en leur milieu.",
+          "misconception": "L'énoncé ne dit rien des diagonales [AC] et [BD] : on ne peut pas utiliser cette propriété."
+        },
+        {
+          "key": "b",
+          "text": "Il a deux côtés opposés parallèles.",
+          "misconception": "On ne sait pas que des côtés sont parallèles : c'est justement ce qu'on veut prouver. Et deux côtés parallèles ne suffisent pas, un trapèze en a aussi."
+        },
+        {
+          "key": "c",
+          "text": "Il a deux côtés consécutifs de même longueur.",
+          "misconception": "[AB] et [BC] ne mesurent pas la même longueur, et deux côtés consécutifs égaux ne prouvent jamais un parallélogramme."
+        },
+        {
+          "key": "d",
+          "text": "Il est non croisé, et ses côtés opposés ont la même longueur deux à deux.",
+          "misconception": null
+        }
+      ],
+      "answer": {
+        "value": "d"
+      },
+      "points": 3,
+      "solution_steps": [
+        "Les données portent sur les côtés : AD = BC = 21,5 cm et AB = DC = 34 cm, et ABCD est non croisé.",
+        "Or un quadrilatère non croisé dont les côtés opposés ont la même longueur deux à deux est un parallélogramme.",
+        "Donc ABCD est un parallélogramme : le plateau du haut (DC) reste parallèle au fond (AB)."
+      ],
+      "hint": "Relis les données : portent-elles sur les côtés ou sur les diagonales ?"
+    },
+    {
+      "key": "q4",
+      "skill_id": "G049",
+      "statement": "On admet que ABCD est un parallélogramme. Caisse ouverte, combien mesure l'angle $\\widehat{ABC}$, en degrés ?",
+      "type": "numerique",
+      "answer": {
+        "value": 118,
+        "unit": "°",
+        "accepted": [
+          "118°",
+          "118 °",
+          "118 degrés",
+          "118 degré"
+        ]
+      },
+      "points": 2,
+      "solution_steps": [
+        "Dans un parallélogramme, deux angles consécutifs sont supplémentaires : leur somme vaut 180°.",
+        "Les angles $\\widehat{DAB}$ et $\\widehat{ABC}$ sont consécutifs (ils ont le côté [AB] en commun) : 180 − 62 = 118.",
+        "L'angle $\\widehat{ABC}$ mesure **118°**. C'est l'angle opposé, $\\widehat{BCD}$, qui mesure 62°."
+      ],
+      "hint": "Les angles en A et en B sont-ils opposés ou consécutifs ?"
+    },
+    {
+      "key": "q5",
+      "skill_id": "G055",
+      "statement": "La caisse premier prix d'un voisin a, sur un côté, un quadrilatère articulé EFGH non croisé. Le fabricant garantit seulement que (EF) est parallèle à (HG) et que EH = FG. Quelle phrase est juste ?",
+      "type": "qcm",
+      "choices": [
+        {
+          "key": "a",
+          "text": "On ne peut pas affirmer que EFGH est un parallélogramme : un trapèze dont les côtés non parallèles ont la même longueur vérifie aussi ces données.",
+          "misconception": null
+        },
+        {
+          "key": "b",
+          "text": "EFGH est forcément un parallélogramme, car il a deux côtés opposés parallèles.",
+          "misconception": "Deux côtés opposés parallèles ne suffisent pas : un trapèze en a aussi."
+        },
+        {
+          "key": "c",
+          "text": "EFGH est forcément un parallélogramme, car il a deux côtés opposés parallèles et deux côtés opposés de même longueur.",
+          "misconception": "La propriété exige que les deux mêmes côtés soient à la fois parallèles et de même longueur ; ici [EF] et [HG] sont parallèles, mais ce sont [EH] et [FG] qui ont la même longueur."
+        },
+        {
+          "key": "d",
+          "text": "EFGH n'est pas un parallélogramme, car un parallélogramme a ses diagonales de même longueur.",
+          "misconception": "Ce sont les diagonales du rectangle qui ont la même longueur, pas celles de tout parallélogramme ; et l'énoncé ne dit rien des diagonales."
+        }
+      ],
+      "answer": {
+        "value": "a"
+      },
+      "points": 4,
+      "solution_steps": [
+        "Les côtés parallèles sont [EF] et [HG] ; les côtés de même longueur sont les deux autres, [EH] et [FG].",
+        "La propriété « deux côtés opposés parallèles et de même longueur » demande que ce soient les **mêmes** deux côtés. Ici, ce n'est pas le cas.",
+        "Un trapèze dont les deux côtés non parallèles ont la même longueur vérifie ces données sans être un parallélogramme : on ne peut pas affirmer que EFGH en est un."
+      ],
+      "hint": "Pour chaque phrase, cherche la donnée de l'énoncé sur laquelle elle s'appuie, et vérifie que la propriété citée est exacte."
+    }
+  ],
+  "review_status": "relu_agent",
+  "programme_ref": "Cycle 4, classe de 5e, Espace et géométrie, Parallélogrammes, Objectifs d'apprentissage : « Utiliser une propriété caractéristique sur les diagonales ou les côtés pour les construire ou donner la nature du quadrilatère. »"
+}

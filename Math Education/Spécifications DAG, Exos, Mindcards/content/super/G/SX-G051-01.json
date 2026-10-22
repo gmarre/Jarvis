@@ -1,0 +1,161 @@
+{
+  "id": "SX-G051-01",
+  "skill_id": "G051",
+  "skill_ids": [
+    "G051",
+    "D004",
+    "G017"
+  ],
+  "school_level": "5e",
+  "title": "La façade de l'abri à vélos",
+  "contexte": "Nora et son oncle construisent un abri pour les 6 vélos de la famille. La façade avant a la forme du triangle ABC de la figure, qui n'est pas en vraie grandeur.\n\nLes deux chevrons [AB] et [AC] mesurent chacun 2,6 m, et la poutre du bas [BC] mesure 4,31 m. L'oncle a réglé l'angle $\\widehat{ABC}$ à 34°.\n\nLe poinçon [AH] descend du sommet A jusqu'à la poutre : il la coupe en H et lui est perpendiculaire. Une latte décorative (d) passe par A, parallèle à la poutre (BC) ; Nora y a marqué deux points L et K, de part et d'autre de A.\n\nLe bois a coûté 7 € le mètre, et le toit sera posé en deux jours.",
+  "image": "figures/SX-G051-01",
+  "duree_estimee_min": 15,
+  "questions": [
+    {
+      "key": "q1",
+      "skill_id": "G017",
+      "statement": "Quelle est la nature du triangle ABC ?",
+      "type": "qcm",
+      "choices": [
+        {
+          "key": "a",
+          "text": "Un triangle équilatéral",
+          "misconception": "Seuls [AB] et [AC] ont la même longueur ; [BC] mesure 4,31 m, pas 2,6 m."
+        },
+        {
+          "key": "b",
+          "text": "Un triangle isocèle en B",
+          "misconception": "Le sommet principal est le point commun aux deux côtés de même longueur, [AB] et [AC] : c'est A, pas B."
+        },
+        {
+          "key": "c",
+          "text": "Un triangle rectangle en H",
+          "misconception": "H n'est pas un sommet du triangle ABC : l'angle droit en H appartient au triangle ABH."
+        },
+        {
+          "key": "d",
+          "text": "Un triangle isocèle en A",
+          "misconception": null
+        }
+      ],
+      "answer": {
+        "value": "d"
+      },
+      "points": 1,
+      "solution_steps": [
+        "Les chevrons [AB] et [AC] ont la même longueur, 2,6 m : le codage de la figure le montre aussi.",
+        "Un triangle qui a deux côtés de même longueur est **isocèle**. Son sommet principal est le point commun à ces deux côtés : A.",
+        "Le troisième côté [BC] mesure 4,31 m : le triangle n'est pas équilatéral."
+      ],
+      "hint": "Regarde les longueurs des trois côtés, ou le codage de la figure."
+    },
+    {
+      "key": "q2",
+      "skill_id": "D004",
+      "statement": "Pour la façade, il faut les trois pièces [AB], [AC] et [BC]. Quelle longueur de bois faut-il en tout, en mètres ?",
+      "type": "numerique",
+      "answer": {
+        "value": 9.51,
+        "unit": "m",
+        "accepted": [
+          "9,51 m",
+          "9,51 mètres"
+        ]
+      },
+      "points": 2,
+      "solution_steps": [
+        "On additionne les longueurs des trois pièces : 2,6 + 2,6 + 4,31.",
+        "On pose l'addition en alignant les virgules, et on écrit 2,6 sous la forme 2,60 : 2,60 + 2,60 = 5,20, puis 5,20 + 4,31 = 9,51.",
+        "Il faut **9,51 m** de bois. Le prix du mètre ne sert pas ici : on demande une longueur."
+      ],
+      "hint": "Combien de pièces y a-t-il, et combien mesure chacune ?"
+    },
+    {
+      "key": "q3",
+      "skill_id": "G051",
+      "statement": "Nora prouve que la somme des angles de ABC vaut 180°.\n\n(1) (d) et (BC) sont parallèles, coupées par les sécantes (AB) et (AC).\n(2) …\n(3) Donc $\\widehat{ABC} + \\widehat{BAC} + \\widehat{ACB} = \\widehat{LAB} + \\widehat{BAC} + \\widehat{CAK}$ = 180°, car L, A, K sont alignés.\n\nQuelle phrase complète correctement l'étape (2) ?",
+      "type": "qcm",
+      "choices": [
+        {
+          "key": "a",
+          "text": "Donc $\\widehat{LAB} = \\widehat{ABC}$ et $\\widehat{CAK} = \\widehat{ACB}$, car ce sont des angles correspondants.",
+          "misconception": "Les angles $\\widehat{LAB}$ et $\\widehat{ABC}$ sont de part et d'autre de la sécante (AB), entre les deux parallèles : ils sont alternes-internes, pas correspondants. La justification est fausse."
+        },
+        {
+          "key": "b",
+          "text": "Donc $\\widehat{LAB} = \\widehat{ACB}$ et $\\widehat{CAK} = \\widehat{ABC}$, car ce sont des angles alternes-internes.",
+          "misconception": "Les angles sont mal associés : $\\widehat{LAB}$ est formé avec la sécante (AB), il est alterne-interne avec $\\widehat{ABC}$, pas avec $\\widehat{ACB}$."
+        },
+        {
+          "key": "c",
+          "text": "Donc $\\widehat{LAB} = \\widehat{ABC}$ et $\\widehat{CAK} = \\widehat{ACB}$, car ce sont des angles alternes-internes.",
+          "misconception": null
+        },
+        {
+          "key": "d",
+          "text": "Donc $\\widehat{LAB} = \\widehat{ABC}$ et $\\widehat{CAK} = \\widehat{ACB}$, car ils ont l'air égaux sur la figure.",
+          "misconception": "Ce qu'on voit ou ce qu'on mesure sur une figure ne prouve rien, et celle-ci n'est même pas en vraie grandeur : il faut une propriété."
+        }
+      ],
+      "answer": {
+        "value": "c"
+      },
+      "points": 3,
+      "solution_steps": [
+        "Les angles $\\widehat{LAB}$ et $\\widehat{ABC}$ sont de part et d'autre de la sécante (AB), entre les droites (d) et (BC) : ils sont **alternes-internes**. Comme (d) et (BC) sont parallèles, ils sont égaux.",
+        "De même, $\\widehat{CAK}$ et $\\widehat{ACB}$ sont alternes-internes, de part et d'autre de la sécante (AC) : ils sont égaux.",
+        "L'étape (2) est donc : « Donc $\\widehat{LAB} = \\widehat{ABC}$ et $\\widehat{CAK} = \\widehat{ACB}$, car ce sont des angles alternes-internes. » L'étape (3) remplace alors deux angles du triangle par deux angles qui forment, avec $\\widehat{BAC}$, l'angle plat $\\widehat{LAK}$."
+      ],
+      "hint": "Relis l'étape (1) : quelle propriété des droites parallèles et des sécantes peut-on employer ?"
+    },
+    {
+      "key": "q4",
+      "skill_id": "G051",
+      "statement": "Combien mesure l'angle $\\widehat{BAH}$, entre le chevron [AB] et le poinçon, en degrés ?",
+      "type": "numerique",
+      "answer": {
+        "value": 56,
+        "unit": "°",
+        "accepted": [
+          "56°",
+          "56 °",
+          "56 degrés",
+          "56 degré"
+        ]
+      },
+      "points": 2,
+      "solution_steps": [
+        "Le poinçon est perpendiculaire à la poutre : le triangle ABH est rectangle en H.",
+        "Dans un triangle rectangle, les deux angles aigus ont une somme de 90°.",
+        "L'angle $\\widehat{ABH}$ est l'angle $\\widehat{ABC}$, de 34° : 90 − 34 = 56. L'angle $\\widehat{BAH}$ mesure **56°**."
+      ],
+      "hint": "Regarde le triangle ABH : que sais-tu de son angle en H ?"
+    },
+    {
+      "key": "q5",
+      "skill_id": "G051",
+      "statement": "On admet que le triangle ABC est isocèle en A. Combien mesure l'angle $\\widehat{BAC}$, au sommet de la façade, en degrés ?",
+      "type": "numerique",
+      "answer": {
+        "value": 112,
+        "unit": "°",
+        "accepted": [
+          "112°",
+          "112 °",
+          "112 degrés",
+          "112 degré"
+        ]
+      },
+      "points": 4,
+      "solution_steps": [
+        "Le triangle ABC est isocèle en A : ses deux angles à la base sont égaux, donc $\\widehat{ACB}$ mesure aussi 34°.",
+        "La somme des angles d'un triangle vaut 180° : 34 + 34 = 68, puis 180 − 68 = 112.",
+        "L'angle $\\widehat{BAC}$ mesure **112°**. Attention : 180 − 34 = 146 oublie le deuxième angle à la base, et diviser par 2 ne sert qu'à trouver un angle à la base quand on connaît l'angle au sommet."
+      ],
+      "hint": "Que sais-tu des deux angles à la base d'un triangle isocèle ?"
+    }
+  ],
+  "review_status": "relu_agent",
+  "programme_ref": "Cycle 4, classe de 5e, Espace et géométrie, Triangles, Objectifs d'apprentissage : « Connaitre la somme des angles d'un triangle et savoir la démontrer. »"
+}

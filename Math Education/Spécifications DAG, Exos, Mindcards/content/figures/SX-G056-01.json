@@ -1,0 +1,93 @@
+{
+  "type": "geometrie",
+  "params": {
+    "colonnes": 12,
+    "lignes": 9,
+    "points": {
+      "A": [
+        2,
+        8
+      ],
+      "B": [
+        10,
+        8
+      ],
+      "C": [
+        10,
+        2
+      ],
+      "D": [
+        2,
+        2
+      ],
+      "O": [
+        6,
+        5
+      ]
+    },
+    "etiquettes": {
+      "A": "bas_gauche",
+      "B": "bas_droite",
+      "C": "haut_droite",
+      "D": "haut_gauche",
+      "O": "haut"
+    },
+    "elements": [
+      {
+        "polygone": [
+          "A",
+          "B",
+          "C",
+          "D"
+        ]
+      },
+      {
+        "segment": [
+          "A",
+          "C"
+        ]
+      },
+      {
+        "segment": [
+          "B",
+          "D"
+        ]
+      },
+      {
+        "angle_droit": [
+          "D",
+          "A",
+          "B"
+        ]
+      },
+      {
+        "codage": [
+          [
+            "A",
+            "B"
+          ],
+          [
+            "D",
+            "C"
+          ]
+        ],
+        "marque": 2
+      },
+      {
+        "codage": [
+          [
+            "A",
+            "D"
+          ],
+          [
+            "B",
+            "C"
+          ]
+        ],
+        "marque": 1
+      }
+    ],
+    "legende": "Figure pas en vraie grandeur"
+  },
+  "alt": "Figure de géométrie : le quadrilatère ABCD codé, ses diagonales [AC] et [BD] et leur point commun O"
+}

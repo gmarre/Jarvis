@@ -1,0 +1,158 @@
+{
+  "id": "SX-G054-01",
+  "skill_id": "G054",
+  "skill_ids": [
+    "G054",
+    "D004",
+    "G017"
+  ],
+  "school_level": "5e",
+  "title": "La tente de la patrouille",
+  "contexte": "Pour le camp d'été, les 8 scouts de la patrouille montent une tente. Vue de face, l'entrée de la tente est le triangle ABC de la figure, qui n'est pas en vraie grandeur.\n\nLes deux pans de toile [AB] et [AC] mesurent chacun 2,35 m, et la largeur au sol [BC] mesure 3,7 m. L'angle au sommet $\\widehat{BAC}$ mesure 104°.\n\nLe mât [AH] va du sommet A jusqu'au sol, perpendiculaire à (BC) ; son pied H est sur [BC].\n\nPour décorer l'entrée, les scouts cousent un galon le long des trois côtés du triangle. La tente pèse 6,5 kg, et le camp dure 12 jours.",
+  "image": "figures/SX-G054-01",
+  "duree_estimee_min": 15,
+  "questions": [
+    {
+      "key": "q1",
+      "skill_id": "G017",
+      "statement": "Le triangle ABC est isocèle. Quel est son sommet principal ?",
+      "type": "qcm",
+      "choices": [
+        {
+          "key": "a",
+          "text": "Le point A",
+          "misconception": null
+        },
+        {
+          "key": "b",
+          "text": "Le point B",
+          "misconception": "B est une extrémité de la base [BC] ; le sommet principal est commun aux deux côtés égaux [AB] et [AC]."
+        },
+        {
+          "key": "c",
+          "text": "Le point C",
+          "misconception": "C est une extrémité de la base [BC] ; le sommet principal est commun aux deux côtés égaux [AB] et [AC]."
+        },
+        {
+          "key": "d",
+          "text": "Le point H",
+          "misconception": "H est le pied du mât, sur [BC] : ce n'est pas un sommet du triangle ABC."
+        }
+      ],
+      "answer": {
+        "value": "a"
+      },
+      "points": 1,
+      "solution_steps": [
+        "Les pans [AB] et [AC] ont la même longueur, 2,35 m, et le codage le montre.",
+        "Le sommet principal d'un triangle isocèle est le point commun aux deux côtés de même longueur : **A**."
+      ],
+      "hint": "Quels sont les deux côtés de même longueur ? Quel sommet ont-ils en commun ?"
+    },
+    {
+      "key": "q2",
+      "skill_id": "D004",
+      "statement": "Quelle longueur de galon faut-il, en mètres ?",
+      "type": "numerique",
+      "answer": {
+        "value": 8.4,
+        "unit": "m",
+        "accepted": [
+          "8,4 m",
+          "8,4 mètres"
+        ]
+      },
+      "points": 2,
+      "solution_steps": [
+        "Le galon longe les trois côtés : 2,35 + 2,35 + 3,7.",
+        "On pose l'addition en alignant les virgules, 3,7 s'écrit 3,70 : 2,35 + 2,35 = 4,70, puis 4,70 + 3,70 = 8,40.",
+        "Il faut **8,4 m** de galon."
+      ],
+      "hint": "Le long de combien de côtés coud-on le galon ?"
+    },
+    {
+      "key": "q3",
+      "skill_id": "G054",
+      "statement": "On admet que ABC est isocèle en A. À quelle distance du coin B le mât touche-t-il le sol ? Donne BH, en mètres.",
+      "type": "numerique",
+      "answer": {
+        "value": 1.85,
+        "unit": "m",
+        "accepted": [
+          "1,85 m",
+          "1,85 mètres"
+        ]
+      },
+      "points": 2,
+      "solution_steps": [
+        "Le mât [AH] est perpendiculaire à (BC) : c'est la hauteur issue de A du triangle ABC.",
+        "ABC est isocèle en A : la hauteur issue du sommet principal est aussi la médiane, donc H est le milieu de [BC].",
+        "BH = 3,7 ÷ 2 = 1,85. Le mât touche le sol à **1,85 m** de B."
+      ],
+      "hint": "Dans un triangle isocèle, que sait-on de la hauteur issue du sommet principal ?"
+    },
+    {
+      "key": "q4",
+      "skill_id": "G054",
+      "statement": "On admet que ABC est isocèle en A. Combien mesure l'angle $\\widehat{BAH}$, entre le pan [AB] et le mât, en degrés ?",
+      "type": "numerique",
+      "answer": {
+        "value": 52,
+        "unit": "°",
+        "accepted": [
+          "52°",
+          "52 °",
+          "52 degrés",
+          "52 degré"
+        ]
+      },
+      "points": 3,
+      "solution_steps": [
+        "ABC est isocèle en A et [AH] est la hauteur issue de A : elle est aussi la bissectrice de l'angle $\\widehat{BAC}$.",
+        "Une bissectrice partage l'angle en deux angles de même mesure : 104 ÷ 2 = 52.",
+        "L'angle $\\widehat{BAH}$ mesure **52°**."
+      ],
+      "hint": "Dans ce triangle isocèle, que fait la droite (AH) à l'angle au sommet ?"
+    },
+    {
+      "key": "q5",
+      "skill_id": "G054",
+      "statement": "On admet que ABC est isocèle en A. Un scout tend une corde du coin B jusqu'au milieu K du pan [AC]. Quelle phrase est juste ?",
+      "type": "qcm",
+      "choices": [
+        {
+          "key": "a",
+          "text": "[BK] est la médiane issue de B, et elle est perpendiculaire à (AC), car ABC est isocèle.",
+          "misconception": "Ces égalités ne valent qu'à partir du sommet principal A ; depuis B, la médiane n'a aucune raison d'être une hauteur."
+        },
+        {
+          "key": "b",
+          "text": "[BK] est la hauteur issue de B.",
+          "misconception": "[BK] va au milieu de [AC] : c'est une médiane ; aucun angle droit n'est donné en K."
+        },
+        {
+          "key": "c",
+          "text": "[BK] est la médiane issue de B ; rien ne permet d'affirmer qu'elle est perpendiculaire à (AC).",
+          "misconception": null
+        },
+        {
+          "key": "d",
+          "text": "[BK] partage l'angle $\\widehat{ABC}$ en deux angles de même mesure.",
+          "misconception": "Depuis B, la médiane n'est la bissectrice que si le triangle est équilatéral ; or BC et AB n'ont pas la même longueur."
+        }
+      ],
+      "answer": {
+        "value": "c"
+      },
+      "points": 4,
+      "solution_steps": [
+        "[BK] joint le sommet B au milieu K du côté opposé [AC] : c'est la médiane issue de B.",
+        "Dans un triangle isocèle en A, la médiane, la hauteur et la bissectrice sont confondues seulement pour le sommet principal A. B n'est pas le sommet principal, et ABC n'est pas équilatéral (BC = 3,7 m, AB = 2,35 m).",
+        "On ne peut donc rien affirmer de plus : la bonne phrase est « [BK] est la médiane issue de B ; rien ne permet d'affirmer qu'elle est perpendiculaire à (AC) »."
+      ],
+      "hint": "Les propriétés du triangle isocèle valent-elles pour tous les sommets ?"
+    }
+  ],
+  "review_status": "relu_agent",
+  "programme_ref": "Cycle 4, classe de 5e, Espace et géométrie, Triangles, Objectifs d'apprentissage : « Connaitre les propriétés des médiatrices et du cercle circonscrit dans le cas de triangles particuliers. »"
+}

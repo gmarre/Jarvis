@@ -1,0 +1,79 @@
+{
+  "type": "geometrie",
+  "params": {
+    "colonnes": 12,
+    "lignes": 9,
+    "points": {
+      "A": [
+        "4.6",
+        "1.5"
+      ],
+      "B": [
+        1,
+        8
+      ],
+      "C": [
+        11,
+        8
+      ],
+      "H": [
+        "4.6",
+        8
+      ],
+      "M": [
+        6,
+        8
+      ]
+    },
+    "etiquettes": {
+      "A": "haut",
+      "B": "bas_gauche",
+      "C": "bas_droite",
+      "H": "bas",
+      "M": "bas"
+    },
+    "elements": [
+      {
+        "polygone": [
+          "A",
+          "B",
+          "C"
+        ]
+      },
+      {
+        "segment": [
+          "A",
+          "H"
+        ]
+      },
+      {
+        "segment": [
+          "A",
+          "M"
+        ]
+      },
+      {
+        "angle_droit": [
+          "A",
+          "H",
+          "C"
+        ]
+      },
+      {
+        "codage": [
+          [
+            "B",
+            "M"
+          ],
+          [
+            "M",
+            "C"
+          ]
+        ],
+        "marque": 2
+      }
+    ],
+    "legende": "Figure pas en vraie grandeur"
+  },
+  "alt": "Figure de géométrie : le triangle ABC, les segments [AH] et [AM], les points H et M sur [BC]"
+}

@@ -1,0 +1,171 @@
+{
+  "id": "SX-G056-01",
+  "skill_id": "G056",
+  "skill_ids": [
+    "G056",
+    "D021",
+    "G055"
+  ],
+  "school_level": "5e",
+  "title": "Le cadre du potager",
+  "contexte": "Yanis fabrique un cadre en bois pour un potager surélevé. Vu de dessus, le cadre est le quadrilatère ABCD de la figure, non croisé et pas en vraie grandeur. Il a coupé ses planches pour que AB = DC = 140 cm et AD = BC = 105 cm, puis il a vérifié à l'équerre que l'angle en A est droit. Les diagonales [AC] et [BD] se coupent en O, et il a mesuré AC = 175 cm.\n\nÀ côté du potager, il installe un treillis pour les tomates : un quadrilatère EFGH dont les diagonales [EG] et [FH] se coupent en leur milieu I et sont perpendiculaires, avec EG = 90 cm et FH = 120 cm.\n\nPour renforcer le cadre, il visse une équerre métallique dans chacun des quatre coins ; une équerre coûte 2,35 €. Le potager accueillera 12 pieds de salade.",
+  "image": "figures/SX-G056-01",
+  "duree_estimee_min": 15,
+  "questions": [
+    {
+      "key": "q1",
+      "skill_id": "G055",
+      "statement": "Quelle donnée de l'énoncé prouve que le cadre ABCD est un parallélogramme ?",
+      "type": "qcm",
+      "choices": [
+        {
+          "key": "a",
+          "text": "L'angle en A est droit.",
+          "misconception": "Un seul angle droit ne dit rien des autres côtés : beaucoup de quadrilatères qui ne sont pas des parallélogrammes ont un angle droit."
+        },
+        {
+          "key": "b",
+          "text": "AB = DC et AD = BC, et ABCD est non croisé.",
+          "misconception": null
+        },
+        {
+          "key": "c",
+          "text": "Les diagonales [AC] et [BD] se coupent en O.",
+          "misconception": "Les diagonales d'un quadrilatère non croisé se coupent toujours ; il faudrait savoir que O est leur milieu à toutes les deux."
+        }
+      ],
+      "answer": {
+        "value": "b"
+      },
+      "points": 1,
+      "solution_steps": [
+        "ABCD est non croisé, et ses côtés opposés ont la même longueur deux à deux : AB = DC et AD = BC.",
+        "Or un quadrilatère non croisé dont les côtés opposés ont la même longueur deux à deux est un parallélogramme."
+      ],
+      "hint": "Quelle propriété caractéristique du parallélogramme porte sur les côtés ?"
+    },
+    {
+      "key": "q2",
+      "skill_id": "D021",
+      "statement": "Combien Yanis paie-t-il les quatre équerres métalliques, en euros ?",
+      "type": "numerique",
+      "answer": {
+        "value": 9.4,
+        "unit": "€",
+        "accepted": [
+          "9,40 €",
+          "9,4 €",
+          "9,40 euros",
+          "9,4 euros",
+          "9,40"
+        ]
+      },
+      "points": 2,
+      "solution_steps": [
+        "Une équerre coûte 2,35 €, et il en faut quatre : on calcule 2,35 × 4.",
+        "On pose 235 × 4 = 940, puis on place la virgule : 2,35 a deux chiffres après la virgule, le produit aussi. 2,35 × 4 = 9,40.",
+        "Yanis paie **9,40 €**."
+      ],
+      "hint": "Combien coûte une équerre, et combien en faut-il ?"
+    },
+    {
+      "key": "q3",
+      "skill_id": "G056",
+      "statement": "Quelle est la nature exacte du cadre ABCD ?",
+      "type": "qcm",
+      "choices": [
+        {
+          "key": "a",
+          "text": "Un carré",
+          "misconception": "Un carré a ses quatre côtés de même longueur ; ici [AB] mesure 140 cm et [AD] 105 cm."
+        },
+        {
+          "key": "b",
+          "text": "Un rectangle",
+          "misconception": null
+        },
+        {
+          "key": "c",
+          "text": "Un losange",
+          "misconception": "Un losange a deux côtés consécutifs de même longueur ; ici [AB] et [AD] sont différents."
+        },
+        {
+          "key": "d",
+          "text": "Un parallélogramme quelconque",
+          "misconception": "C'est bien un parallélogramme, mais il a un angle droit : c'est donc un rectangle, nature plus précise."
+        }
+      ],
+      "answer": {
+        "value": "b"
+      },
+      "points": 2,
+      "solution_steps": [
+        "ABCD est un parallélogramme : ses côtés opposés ont la même longueur deux à deux, et il est non croisé.",
+        "Un parallélogramme qui a un angle droit est un **rectangle**.",
+        "Ce n'est pas un carré : deux côtés consécutifs, [AB] et [AD], n'ont pas la même longueur (140 cm et 105 cm)."
+      ],
+      "hint": "Que devient un parallélogramme qui a un angle droit ?"
+    },
+    {
+      "key": "q4",
+      "skill_id": "G056",
+      "statement": "On admet que ABCD est un rectangle. Yanis tend une ficelle du point O jusqu'au coin B. Combien mesure-t-elle, en centimètres ?",
+      "type": "numerique",
+      "answer": {
+        "value": 87.5,
+        "unit": "cm",
+        "accepted": [
+          "87,5 cm",
+          "87,5 centimètres"
+        ]
+      },
+      "points": 3,
+      "solution_steps": [
+        "Les diagonales d'un rectangle ont la même longueur : BD = AC = 175 cm.",
+        "Elles se coupent en leur milieu O : OB est la moitié de BD.",
+        "OB = 175 ÷ 2 = 87,5. La ficelle mesure **87,5 cm**."
+      ],
+      "hint": "Que sais-tu des diagonales d'un rectangle : leur longueur, leur point de rencontre ?"
+    },
+    {
+      "key": "q5",
+      "skill_id": "G056",
+      "statement": "Quelle est la nature exacte du treillis EFGH ?",
+      "type": "qcm",
+      "choices": [
+        {
+          "key": "a",
+          "text": "Un carré, car ses diagonales sont perpendiculaires.",
+          "misconception": "Des diagonales perpendiculaires ne suffisent pas pour un carré : il faudrait aussi qu'elles aient la même longueur, or 90 cm et 120 cm."
+        },
+        {
+          "key": "b",
+          "text": "Un rectangle, car ses diagonales se coupent en leur milieu.",
+          "misconception": "Des diagonales qui se coupent en leur milieu donnent un parallélogramme ; pour un rectangle, il faudrait des diagonales de même longueur."
+        },
+        {
+          "key": "c",
+          "text": "On ne peut pas conclure, car on ne sait pas si EFGH est un parallélogramme.",
+          "misconception": "On le sait : des diagonales qui se coupent en leur milieu prouvent que EFGH est un parallélogramme."
+        },
+        {
+          "key": "d",
+          "text": "Un losange, car c'est un parallélogramme dont les diagonales sont perpendiculaires.",
+          "misconception": null
+        }
+      ],
+      "answer": {
+        "value": "d"
+      },
+      "points": 4,
+      "solution_steps": [
+        "Les diagonales de EFGH se coupent en leur milieu I : EFGH est un parallélogramme.",
+        "Un parallélogramme dont les diagonales sont perpendiculaires est un losange.",
+        "Ce n'est pas un carré : les diagonales d'un carré ont aussi la même longueur, or EG = 90 cm et FH = 120 cm. EFGH est un **losange**."
+      ],
+      "hint": "Commence par te demander si EFGH est un parallélogramme, puis regarde ses diagonales."
+    }
+  ],
+  "review_status": "relu_agent",
+  "programme_ref": "Cycle 4, classe de 5e, Espace et géométrie, Parallélogrammes, Objectifs d'apprentissage : « Définir les parallélogrammes particuliers (rectangle, losange, carré). »"
+}
