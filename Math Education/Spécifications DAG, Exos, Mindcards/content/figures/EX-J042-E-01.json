@@ -1,0 +1,37 @@
+{
+  "type": "repere",
+  "params": {
+    "xmin": 0,
+    "xmax": 12,
+    "ymin": 0,
+    "ymax": 12,
+    "pas_x": 0.5,
+    "pas_y": 3,
+    "nom_x": "x (cm)",
+    "nom_y": "S (cm²)",
+    "courbes": [
+      {
+        "sorte": "affine",
+        "a": -6,
+        "b": 36,
+        "nom": "T1",
+        "position_nom": 0.3,
+        "cote_nom": "dessous"
+      },
+      {
+        "sorte": "carre",
+        "a": -1,
+        "b": 36,
+        "nom": "T2"
+      },
+      {
+        "sorte": "carre",
+        "a": 1,
+        "b": 0,
+        "nom": "T3"
+      }
+    ],
+    "intersection_libre": true
+  },
+  "alt": "Repère ; en abscisse : x (cm), en ordonnée : S (cm²), avec trois tracés nommés T1, T2 et T3"
+}

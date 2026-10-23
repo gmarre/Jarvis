@@ -1,0 +1,177 @@
+[
+  {
+    "id": "EX-J001-D-01",
+    "skill_id": "J001",
+    "level": "decouverte",
+    "type": "numerique",
+    "statement": "Voici un tableau de valeurs d'une fonction $f$ :\n\n$\\begin{array}{|c|c|c|c|c|}\\hline x & -3 & 0 & 2 & 5 \\\\ \\hline f(x) & 8 & 2 & 7 & -4 \\\\ \\hline\\end{array}$\n\nQuelle est l'image de 2 par $f$ ?",
+    "image": null,
+    "answer": {
+      "value": 7,
+      "accepted": [
+        "f(2)=7",
+        "f(2) = 7"
+      ]
+    },
+    "solution_steps": [
+      "Dans un tableau de valeurs, la première ligne donne les nombres $x$, la seconde leurs images $f(x)$.",
+      "On cherche 2 dans la première ligne : sous lui, on lit 7. L'image de 2 par $f$ est 7, ce qu'on écrit $f(2) = 7$.",
+      "Attention à ne pas lire dans l'autre sens : 2 est aussi dans la seconde ligne, sous 0. Cela veut dire $f(0) = 2$ : 2 est l'image de 0, et 0 est un antécédent de 2.",
+      "Chaque nombre $x$ a une seule image : la colonne de 2 donne une seule valeur, 7."
+    ],
+    "hint": "Cherche 2 dans la ligne des $x$.",
+    "estimated_duration_s": 40,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, classe de 3e, Proportionnalité, fonctions, Fonctions, Objectifs d'apprentissage : « Définir et connaitre le vocabulaire : image, antécédents. »"
+  },
+  {
+    "id": "EX-J001-D-02",
+    "skill_id": "J001",
+    "level": "decouverte",
+    "type": "qcm",
+    "statement": "On sait que $f(4) = 9$. Quelle phrase dit la même chose ?",
+    "image": null,
+    "choices": [
+      {
+        "key": "a",
+        "text": "L'image de 9 par $f$ est 4.",
+        "misconception": "L'élève confond image et antécédent : dans $f(4) = 9$, le nombre de départ est 4, et 9 est son image."
+      },
+      {
+        "key": "b",
+        "text": "L'image de 4 par $f$ est 9.",
+        "misconception": null
+      },
+      {
+        "key": "c",
+        "text": "9 est un antécédent de 4 par $f$.",
+        "misconception": "L'élève inverse les rôles : c'est 4 qui est un antécédent de 9, car $f$ associe 9 au nombre 4."
+      },
+      {
+        "key": "d",
+        "text": "$f$ multiplié par 4 donne 9.",
+        "misconception": "L'élève lit $f(4)$ comme un produit $f \\times 4$. Les parenthèses de $f(4)$ entourent le nombre de départ : $f(4)$ se lit « $f$ de 4 », l'image de 4."
+      }
+    ],
+    "answer": {
+      "value": "b"
+    },
+    "solution_steps": [
+      "$f(4) = 9$ se lit « $f$ de 4 égale 9 » : la fonction $f$ associe le nombre 9 au nombre 4.",
+      "Le nombre entre parenthèses est le nombre de départ, 4 ; le résultat, 9, est son image. L'image de 4 par $f$ est 9 : c'est la phrase b.",
+      "On peut le dire dans l'autre sens : 4 est un antécédent de 9 par $f$.",
+      "Les phrases a et c échangent image et antécédent ; la phrase d prend $f(4)$ pour un produit."
+    ],
+    "hint": "Dans $f(4)$, quel est le nombre de départ ?",
+    "estimated_duration_s": 40,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, classe de 3e, Proportionnalité, fonctions, Fonctions, Objectifs d'apprentissage : « Définir et connaitre le vocabulaire : image, antécédents. »"
+  },
+  {
+    "id": "EX-J001-E-01",
+    "skill_id": "J001",
+    "level": "entrainement",
+    "type": "texte",
+    "statement": "Voici un tableau de valeurs d'une fonction $g$ :\n\n$\\begin{array}{|c|c|c|c|c|c|}\\hline x & -4 & -1 & 0 & 2 & 3 \\\\ \\hline g(x) & 5 & -4 & -3 & 5 & 12 \\\\ \\hline\\end{array}$\n\nDonne tous les antécédents de 5 par $g$ lus dans ce tableau, séparés par un point-virgule.",
+    "image": null,
+    "answer": {
+      "value": "−4 ; 2",
+      "forme": "solutions"
+    },
+    "solution_steps": [
+      "Un antécédent de 5 est un nombre $x$ dont l'image est 5 : on cherche 5 dans la ligne des images $g(x)$.",
+      "5 apparaît deux fois : sous −4 et sous 2. Donc $g(-4) = 5$ et $g(2) = 5$.",
+      "Les antécédents de 5 lus dans le tableau sont −4 et 2. Un nombre peut avoir plusieurs antécédents, alors qu'un nombre n'a qu'une seule image.",
+      "Attention : −4 apparaît aussi dans la ligne des images, sous −1. Cela veut dire $g(-1) = -4$, ce qui ne répond pas à la question."
+    ],
+    "hint": "Cherche 5 dans la seconde ligne, et lis au-dessus.",
+    "estimated_duration_s": 60,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, classe de 3e, Proportionnalité, fonctions, Fonctions, Objectifs d'apprentissage : « Définir et connaitre le vocabulaire : image, antécédents. »"
+  },
+  {
+    "id": "EX-J001-E-02",
+    "skill_id": "J001",
+    "level": "entrainement",
+    "type": "vrai_faux",
+    "statement": "Voici un tableau de valeurs d'une fonction $h$ :\n\n$\\begin{array}{|c|c|c|c|c|}\\hline x & -2 & 1 & 4 & 7 \\\\ \\hline h(x) & 6 & -6 & 0 & 24 \\\\ \\hline\\end{array}$\n\nVrai ou faux : ce tableau donne l'image de 7 par $h$, mais aucun antécédent de 7.",
+    "image": null,
+    "answer": {
+      "value": true
+    },
+    "solution_steps": [
+      "On cherche 7 dans chaque ligne. 7 est dans la ligne des $x$ : son image se lit dessous, $h(7) = 24$. La première partie est juste.",
+      "Un antécédent de 7 est un nombre dont l'image est 7 : il faudrait trouver 7 dans la ligne des images $h(x)$. Elle contient 6, −6, 0 et 24 : 7 n'y est pas. La seconde partie est juste aussi.",
+      "Réponse : vrai. Avoir une image et avoir un antécédent, ce n'est pas la même chose : 7 a une image dans le tableau, mais pas d'antécédent.",
+      "En revanche, 6 a un antécédent dans le tableau : −2, car $h(-2) = 6$."
+    ],
+    "hint": "Un antécédent de 7 se cherche-t-il dans la ligne des $x$ ou dans celle des images ?",
+    "estimated_duration_s": 45,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, classe de 3e, Proportionnalité, fonctions, Fonctions, Objectifs d'apprentissage : « Définir et connaitre le vocabulaire : image, antécédents. »"
+  },
+  {
+    "id": "EX-J001-M-01",
+    "skill_id": "J001",
+    "level": "maitrise",
+    "type": "qcm",
+    "statement": "On choisit un nombre, on le multiplie par 4, puis on soustrait 7 au résultat. On note $f$ la fonction qui associe au nombre choisi le résultat obtenu. Quelle écriture est juste ?",
+    "image": null,
+    "choices": [
+      {
+        "key": "a",
+        "text": "$f : 4x - 7 \\mapsto x$",
+        "misconception": "L'élève écrit la flèche à l'envers : elle part du nombre choisi $x$ et va vers son image, le résultat du programme."
+      },
+      {
+        "key": "b",
+        "text": "$f(x) = 4(x - 7)$",
+        "misconception": "L'élève soustrait 7 avant de multiplier par 4 : $4(x - 7)$ correspond au programme « soustraire 7, puis multiplier par 4 »."
+      },
+      {
+        "key": "c",
+        "text": "$f : x \\mapsto 4x - 7$",
+        "misconception": null
+      }
+    ],
+    "answer": {
+      "value": "c"
+    },
+    "solution_steps": [
+      "Pour un nombre $x$ : on le multiplie par 4, ce qui donne $4x$, puis on soustrait 7 : $4x - 7$.",
+      "La fonction $f$ associe donc à $x$ le nombre $4x - 7$. On l'écrit $f : x \\mapsto 4x - 7$, ou $f(x) = 4x - 7$ : c'est l'écriture c.",
+      "La flèche part du nombre choisi et pointe vers son image : $f : 4x - 7 \\mapsto x$ l'écrit à l'envers.",
+      "Contrôle avec 3 : $3 \\times 4 = 12$, $12 - 7 = 5$, et $4 \\times 3 - 7 = 5$. L'écriture b donne $4 \\times (3 - 7) = -16$."
+    ],
+    "hint": "Applique le programme à un nombre, par exemple 3, puis à une lettre.",
+    "estimated_duration_s": 75,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, classe de 3e, Proportionnalité, fonctions, Fonctions, Objectifs d'apprentissage : « Utiliser les différentes représentations d'une fonction. »"
+  },
+  {
+    "id": "EX-J001-M-02",
+    "skill_id": "J001",
+    "level": "maitrise",
+    "type": "numerique",
+    "statement": "Une fonction $f$ vérifie : $f(-2) = 5$ ; $f(0) = 1$ ; $f(3) = 5$ ; $f(5) = -2$ ; $f(8) = 5$. Parmi les nombres −2 ; 0 ; 3 ; 5 ; 8, combien sont des antécédents de 5 par $f$ ?",
+    "image": null,
+    "answer": {
+      "value": 3,
+      "accepted": [
+        "trois",
+        "3 antécédents",
+        "trois antécédents"
+      ]
+    },
+    "solution_steps": [
+      "Un antécédent de 5 est un nombre dont l'image est 5 : on cherche les égalités où l'image vaut 5.",
+      "$f(-2) = 5$, $f(3) = 5$ et $f(8) = 5$ : −2, 3 et 8 sont des antécédents de 5.",
+      "5 n'est pas un antécédent de 5 : $f(5) = -2$ dit que 5 a pour image −2. Compter 5, ce serait confondre le nombre de départ et l'image.",
+      "Réponse : 3. Un nombre peut avoir plusieurs antécédents ; en revanche, chaque nombre n'a qu'une image."
+    ],
+    "hint": "Dans chaque égalité, l'image est à droite du signe =.",
+    "estimated_duration_s": 60,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, classe de 3e, Proportionnalité, fonctions, Fonctions, Objectifs d'apprentissage : « Définir et connaitre le vocabulaire : image, antécédents. »"
+  }
+]

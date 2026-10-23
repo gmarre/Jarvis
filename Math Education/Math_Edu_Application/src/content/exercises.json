@@ -3,7 +3,7 @@
     "version": "1.0",
     "scope": "Tranche pilote CP a 4e : 69 exercices, 3 par competence (1 decouverte, 1 entrainement, 1 maitrise) sur les 23 competences des domaines A et C. La cible finale de la roadmap est de 5 exercices par niveau, soit 15 par competence.",
     "updated_at": "2026-07-28",
-    "total_exercises": 1750,
+    "total_exercises": 1774,
     "review_status": "relu_agent"
   },
   "exercises": [
@@ -43066,6 +43066,346 @@
       "programme_ref": "Cycle 4, classe de 3e, Espace et géométrie, Représentation de l'espace, Objectifs d'apprentissage : « Visualiser et réaliser des sections de pavé parallèlement à une face, de cylindre parallèlement ou perpendiculairement à son axe, d'une boule. »"
     },
     {
+      "id": "EX-J001-D-01",
+      "skill_id": "J001",
+      "level": "decouverte",
+      "type": "numerique",
+      "statement": "Voici un tableau de valeurs d'une fonction $f$ :\n\n$\\begin{array}{|c|c|c|c|c|}\\hline x & -3 & 0 & 2 & 5 \\\\ \\hline f(x) & 8 & 2 & 7 & -4 \\\\ \\hline\\end{array}$\n\nQuelle est l'image de 2 par $f$ ?",
+      "image": null,
+      "answer": {
+        "value": 7,
+        "accepted": [
+          "f(2)=7",
+          "f(2) = 7"
+        ]
+      },
+      "solution_steps": [
+        "Dans un tableau de valeurs, la première ligne donne les nombres $x$, la seconde leurs images $f(x)$.",
+        "On cherche 2 dans la première ligne : sous lui, on lit 7. L'image de 2 par $f$ est 7, ce qu'on écrit $f(2) = 7$.",
+        "Attention à ne pas lire dans l'autre sens : 2 est aussi dans la seconde ligne, sous 0. Cela veut dire $f(0) = 2$ : 2 est l'image de 0, et 0 est un antécédent de 2.",
+        "Chaque nombre $x$ a une seule image : la colonne de 2 donne une seule valeur, 7."
+      ],
+      "hint": "Cherche 2 dans la ligne des $x$.",
+      "estimated_duration_s": 40,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 4, classe de 3e, Proportionnalité, fonctions, Fonctions, Objectifs d'apprentissage : « Définir et connaitre le vocabulaire : image, antécédents. »"
+    },
+    {
+      "id": "EX-J001-D-02",
+      "skill_id": "J001",
+      "level": "decouverte",
+      "type": "qcm",
+      "statement": "On sait que $f(4) = 9$. Quelle phrase dit la même chose ?",
+      "image": null,
+      "choices": [
+        {
+          "key": "a",
+          "text": "L'image de 9 par $f$ est 4.",
+          "misconception": "L'élève confond image et antécédent : dans $f(4) = 9$, le nombre de départ est 4, et 9 est son image."
+        },
+        {
+          "key": "b",
+          "text": "L'image de 4 par $f$ est 9.",
+          "misconception": null
+        },
+        {
+          "key": "c",
+          "text": "9 est un antécédent de 4 par $f$.",
+          "misconception": "L'élève inverse les rôles : c'est 4 qui est un antécédent de 9, car $f$ associe 9 au nombre 4."
+        },
+        {
+          "key": "d",
+          "text": "$f$ multiplié par 4 donne 9.",
+          "misconception": "L'élève lit $f(4)$ comme un produit $f \\times 4$. Les parenthèses de $f(4)$ entourent le nombre de départ : $f(4)$ se lit « $f$ de 4 », l'image de 4."
+        }
+      ],
+      "answer": {
+        "value": "b"
+      },
+      "solution_steps": [
+        "$f(4) = 9$ se lit « $f$ de 4 égale 9 » : la fonction $f$ associe le nombre 9 au nombre 4.",
+        "Le nombre entre parenthèses est le nombre de départ, 4 ; le résultat, 9, est son image. L'image de 4 par $f$ est 9 : c'est la phrase b.",
+        "On peut le dire dans l'autre sens : 4 est un antécédent de 9 par $f$.",
+        "Les phrases a et c échangent image et antécédent ; la phrase d prend $f(4)$ pour un produit."
+      ],
+      "hint": "Dans $f(4)$, quel est le nombre de départ ?",
+      "estimated_duration_s": 40,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 4, classe de 3e, Proportionnalité, fonctions, Fonctions, Objectifs d'apprentissage : « Définir et connaitre le vocabulaire : image, antécédents. »"
+    },
+    {
+      "id": "EX-J001-E-01",
+      "skill_id": "J001",
+      "level": "entrainement",
+      "type": "texte",
+      "statement": "Voici un tableau de valeurs d'une fonction $g$ :\n\n$\\begin{array}{|c|c|c|c|c|c|}\\hline x & -4 & -1 & 0 & 2 & 3 \\\\ \\hline g(x) & 5 & -4 & -3 & 5 & 12 \\\\ \\hline\\end{array}$\n\nDonne tous les antécédents de 5 par $g$ lus dans ce tableau, séparés par un point-virgule.",
+      "image": null,
+      "answer": {
+        "value": "−4 ; 2",
+        "forme": "solutions"
+      },
+      "solution_steps": [
+        "Un antécédent de 5 est un nombre $x$ dont l'image est 5 : on cherche 5 dans la ligne des images $g(x)$.",
+        "5 apparaît deux fois : sous −4 et sous 2. Donc $g(-4) = 5$ et $g(2) = 5$.",
+        "Les antécédents de 5 lus dans le tableau sont −4 et 2. Un nombre peut avoir plusieurs antécédents, alors qu'un nombre n'a qu'une seule image.",
+        "Attention : −4 apparaît aussi dans la ligne des images, sous −1. Cela veut dire $g(-1) = -4$, ce qui ne répond pas à la question."
+      ],
+      "hint": "Cherche 5 dans la seconde ligne, et lis au-dessus.",
+      "estimated_duration_s": 60,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 4, classe de 3e, Proportionnalité, fonctions, Fonctions, Objectifs d'apprentissage : « Définir et connaitre le vocabulaire : image, antécédents. »"
+    },
+    {
+      "id": "EX-J001-E-02",
+      "skill_id": "J001",
+      "level": "entrainement",
+      "type": "vrai_faux",
+      "statement": "Voici un tableau de valeurs d'une fonction $h$ :\n\n$\\begin{array}{|c|c|c|c|c|}\\hline x & -2 & 1 & 4 & 7 \\\\ \\hline h(x) & 6 & -6 & 0 & 24 \\\\ \\hline\\end{array}$\n\nVrai ou faux : ce tableau donne l'image de 7 par $h$, mais aucun antécédent de 7.",
+      "image": null,
+      "answer": {
+        "value": true
+      },
+      "solution_steps": [
+        "On cherche 7 dans chaque ligne. 7 est dans la ligne des $x$ : son image se lit dessous, $h(7) = 24$. La première partie est juste.",
+        "Un antécédent de 7 est un nombre dont l'image est 7 : il faudrait trouver 7 dans la ligne des images $h(x)$. Elle contient 6, −6, 0 et 24 : 7 n'y est pas. La seconde partie est juste aussi.",
+        "Réponse : vrai. Avoir une image et avoir un antécédent, ce n'est pas la même chose : 7 a une image dans le tableau, mais pas d'antécédent.",
+        "En revanche, 6 a un antécédent dans le tableau : −2, car $h(-2) = 6$."
+      ],
+      "hint": "Un antécédent de 7 se cherche-t-il dans la ligne des $x$ ou dans celle des images ?",
+      "estimated_duration_s": 45,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 4, classe de 3e, Proportionnalité, fonctions, Fonctions, Objectifs d'apprentissage : « Définir et connaitre le vocabulaire : image, antécédents. »"
+    },
+    {
+      "id": "EX-J001-M-01",
+      "skill_id": "J001",
+      "level": "maitrise",
+      "type": "qcm",
+      "statement": "On choisit un nombre, on le multiplie par 4, puis on soustrait 7 au résultat. On note $f$ la fonction qui associe au nombre choisi le résultat obtenu. Quelle écriture est juste ?",
+      "image": null,
+      "choices": [
+        {
+          "key": "a",
+          "text": "$f : 4x - 7 \\mapsto x$",
+          "misconception": "L'élève écrit la flèche à l'envers : elle part du nombre choisi $x$ et va vers son image, le résultat du programme."
+        },
+        {
+          "key": "b",
+          "text": "$f(x) = 4(x - 7)$",
+          "misconception": "L'élève soustrait 7 avant de multiplier par 4 : $4(x - 7)$ correspond au programme « soustraire 7, puis multiplier par 4 »."
+        },
+        {
+          "key": "c",
+          "text": "$f : x \\mapsto 4x - 7$",
+          "misconception": null
+        }
+      ],
+      "answer": {
+        "value": "c"
+      },
+      "solution_steps": [
+        "Pour un nombre $x$ : on le multiplie par 4, ce qui donne $4x$, puis on soustrait 7 : $4x - 7$.",
+        "La fonction $f$ associe donc à $x$ le nombre $4x - 7$. On l'écrit $f : x \\mapsto 4x - 7$, ou $f(x) = 4x - 7$ : c'est l'écriture c.",
+        "La flèche part du nombre choisi et pointe vers son image : $f : 4x - 7 \\mapsto x$ l'écrit à l'envers.",
+        "Contrôle avec 3 : $3 \\times 4 = 12$, $12 - 7 = 5$, et $4 \\times 3 - 7 = 5$. L'écriture b donne $4 \\times (3 - 7) = -16$."
+      ],
+      "hint": "Applique le programme à un nombre, par exemple 3, puis à une lettre.",
+      "estimated_duration_s": 75,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 4, classe de 3e, Proportionnalité, fonctions, Fonctions, Objectifs d'apprentissage : « Utiliser les différentes représentations d'une fonction. »"
+    },
+    {
+      "id": "EX-J001-M-02",
+      "skill_id": "J001",
+      "level": "maitrise",
+      "type": "numerique",
+      "statement": "Une fonction $f$ vérifie : $f(-2) = 5$ ; $f(0) = 1$ ; $f(3) = 5$ ; $f(5) = -2$ ; $f(8) = 5$. Parmi les nombres −2 ; 0 ; 3 ; 5 ; 8, combien sont des antécédents de 5 par $f$ ?",
+      "image": null,
+      "answer": {
+        "value": 3,
+        "accepted": [
+          "trois",
+          "3 antécédents",
+          "trois antécédents"
+        ]
+      },
+      "solution_steps": [
+        "Un antécédent de 5 est un nombre dont l'image est 5 : on cherche les égalités où l'image vaut 5.",
+        "$f(-2) = 5$, $f(3) = 5$ et $f(8) = 5$ : −2, 3 et 8 sont des antécédents de 5.",
+        "5 n'est pas un antécédent de 5 : $f(5) = -2$ dit que 5 a pour image −2. Compter 5, ce serait confondre le nombre de départ et l'image.",
+        "Réponse : 3. Un nombre peut avoir plusieurs antécédents ; en revanche, chaque nombre n'a qu'une image."
+      ],
+      "hint": "Dans chaque égalité, l'image est à droite du signe =.",
+      "estimated_duration_s": 60,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 4, classe de 3e, Proportionnalité, fonctions, Fonctions, Objectifs d'apprentissage : « Définir et connaitre le vocabulaire : image, antécédents. »"
+    },
+    {
+      "id": "EX-J002-D-01",
+      "skill_id": "J002",
+      "level": "decouverte",
+      "type": "numerique",
+      "statement": "Soit $f$ la fonction définie par $f(x) = 6x + 13$. Calcule l'image de −2 par $f$.",
+      "image": null,
+      "answer": {
+        "value": 1,
+        "accepted": [
+          "f(-2)=1",
+          "f(−2)=1",
+          "f(-2) = 1",
+          "f(−2) = 1"
+        ]
+      },
+      "solution_steps": [
+        "L'image de −2 est $f(-2)$ : on remplace $x$ par −2, entre parenthèses.",
+        "$f(-2) = 6 \\times (-2) + 13 = -12 + 13 = 1$.",
+        "L'image de −2 par $f$ est 1. Oublier le signe donnerait $6 \\times 2 + 13 = 25$.",
+        "On peut le dire dans l'autre sens : −2 est un antécédent de 1 par $f$."
+      ],
+      "hint": "Remplace $x$ par $(-2)$, puis respecte les priorités.",
+      "estimated_duration_s": 45,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 4, classe de 3e, Proportionnalité, fonctions, Fonctions, Objectifs d'apprentissage : « Définir et connaitre le vocabulaire : image, antécédents. »"
+    },
+    {
+      "id": "EX-J002-D-02",
+      "skill_id": "J002",
+      "level": "decouverte",
+      "type": "numerique",
+      "statement": "Soit $g$ la fonction définie par $g(x) = 5x - 3$. Un antécédent de 17 par $g$ est un nombre $x$ tel que $5x - 3 = 17$. Quel est cet antécédent ?",
+      "image": null,
+      "answer": {
+        "value": 4,
+        "accepted": [
+          "g(4) = 17",
+          "g(4)=17"
+        ]
+      },
+      "solution_steps": [
+        "On cherche le nombre $x$ dont l'image est 17 : on résout $5x - 3 = 17$.",
+        "On ajoute 3 aux deux membres : $5x = 20$. On divise par 5 : $x = 4$.",
+        "Contrôle : $g(4) = 5 \\times 4 - 3 = 20 - 3 = 17$. L'antécédent de 17 par $g$ est 4.",
+        "Calculer $g(17) = 5 \\times 17 - 3 = 82$ donnerait l'image de 17, pas son antécédent."
+      ],
+      "hint": "Isole $5x$, puis divise par 5.",
+      "estimated_duration_s": 50,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 4, classe de 3e, Proportionnalité, fonctions, Fonctions, Objectifs d'apprentissage : « Définir et connaitre le vocabulaire : image, antécédents. »"
+    },
+    {
+      "id": "EX-J002-E-01",
+      "skill_id": "J002",
+      "level": "entrainement",
+      "type": "vrai_faux",
+      "statement": "Soit $f$ la fonction définie par $f(x) = 10 - x^{2}$. Léa calcule l'image de −3 par $f$ et trouve 19. A-t-elle raison ?",
+      "image": null,
+      "answer": {
+        "value": false
+      },
+      "solution_steps": [
+        "On remplace $x$ par $(-3)$, avec ses parenthèses : $f(-3) = 10 - (-3)^{2}$.",
+        "$(-3)^{2} = (-3) \\times (-3) = 9$ : le carré d'un nombre négatif est positif.",
+        "$f(-3) = 10 - 9 = 1$. L'image de −3 est 1, pas 19 : Léa a tort, la réponse est faux.",
+        "Léa a écrit $-3^{2} = -9$, puis $10 - (-9) = 19$ : sans parenthèses, le carré ne porte que sur 3."
+      ],
+      "hint": "Écris $(-3)^{2}$ avec ses parenthèses, puis calcule.",
+      "estimated_duration_s": 60,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 4, classe de 3e, Proportionnalité, fonctions, Fonctions, Objectifs d'apprentissage : « Définir et connaitre le vocabulaire : image, antécédents. »"
+    },
+    {
+      "id": "EX-J002-E-02",
+      "skill_id": "J002",
+      "level": "entrainement",
+      "type": "texte",
+      "statement": "Soit $k$ la fonction définie par $k(x) = 9x + 2$. Calcule l'antécédent de −4 par $k$. Donne-le sous forme d'une fraction.",
+      "image": null,
+      "answer": {
+        "value": "−2/3",
+        "forme": "solutions"
+      },
+      "solution_steps": [
+        "On cherche $x$ tel que $k(x) = -4$, c'est-à-dire $9x + 2 = -4$.",
+        "On retranche 2 aux deux membres : $9x = -6$.",
+        "On divise par 9 : $x = \\frac{-6}{9} = -\\frac{2}{3}$, en simplifiant par 3.",
+        "Contrôle : $\\frac{-6}{9}$ est le nombre qui, multiplié par 9, donne −6 ; et $-6 + 2 = -4$. Calculer $k(-4) = 9 \\times (-4) + 2 = -34$ donnerait l'image de −4, pas son antécédent."
+      ],
+      "hint": "Écris l'équation qui traduit $k(x) = -4$, puis résous-la.",
+      "estimated_duration_s": 75,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 4, classe de 3e, Proportionnalité, fonctions, Fonctions, Objectifs d'apprentissage : « Définir et connaitre le vocabulaire : image, antécédents. »"
+    },
+    {
+      "id": "EX-J002-M-01",
+      "skill_id": "J002",
+      "level": "maitrise",
+      "type": "qcm",
+      "statement": "Une fonction $f$ associe à un nombre le résultat du programme : soustraire 3, puis multiplier le résultat par 4. Quel est l'antécédent de 10 par $f$ ?",
+      "image": null,
+      "choices": [
+        {
+          "key": "a",
+          "text": "28",
+          "misconception": "L'élève calcule l'image de 10 au lieu de son antécédent : $(10 - 3) \\times 4 = 28$."
+        },
+        {
+          "key": "b",
+          "text": "5,5",
+          "misconception": null
+        },
+        {
+          "key": "c",
+          "text": "3,25",
+          "misconception": "L'élève remonte le programme dans le mauvais ordre : $10 + 3 = 13$, puis $13 \\div 4 = 3{,}25$. Il faut défaire d'abord la dernière étape, la multiplication par 4."
+        },
+        {
+          "key": "d",
+          "text": "2,5",
+          "misconception": "L'élève défait la multiplication, $10 \\div 4 = 2{,}5$, mais oublie de défaire la soustraction : 2,5 est le résultat de la première étape, pas le nombre choisi."
+        }
+      ],
+      "answer": {
+        "value": "b"
+      },
+      "solution_steps": [
+        "Pour un nombre $x$ : $x - 3$, puis $4 \\times (x - 3)$. Donc $f(x) = 4(x - 3) = 4x - 12$.",
+        "L'antécédent de 10 vérifie $4x - 12 = 10$. On ajoute 12 : $4x = 22$ ; on divise par 4 : $x = 5{,}5$.",
+        "Contrôle : $5{,}5 - 3 = 2{,}5$, puis $2{,}5 \\times 4 = 10$. L'antécédent de 10 est 5,5.",
+        "On peut aussi remonter le programme : on défait d'abord la dernière étape, $10 \\div 4 = 2{,}5$, puis la première, $2{,}5 + 3 = 5{,}5$."
+      ],
+      "hint": "Écris $f(x)$ à partir du programme, puis résous $f(x) = 10$.",
+      "estimated_duration_s": 120,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 4, classe de 3e, Proportionnalité, fonctions, Fonctions, Objectifs d'apprentissage : « Utiliser les différentes représentations d'une fonction. »"
+    },
+    {
+      "id": "EX-J002-M-02",
+      "skill_id": "J002",
+      "level": "maitrise",
+      "type": "numerique",
+      "statement": "Le prix, en euros, d'une course de taxi de $x$ km est $p(x) = 1{,}8x + 4$. Une course a coûté 22 €. Quelle distance, en km, le taxi a-t-il parcourue ?",
+      "image": null,
+      "answer": {
+        "value": 10,
+        "unit": "km",
+        "accepted": [
+          "p(10) = 22",
+          "p(10)=22",
+          "p(10) = 22 €"
+        ]
+      },
+      "solution_steps": [
+        "On connaît le prix, 22 € : c'est une image. On cherche la distance $x$ dont l'image est 22, c'est-à-dire l'antécédent de 22 par $p$.",
+        "On résout $1{,}8x + 4 = 22$. On retranche 4 aux deux membres : $1{,}8x = 18$.",
+        "On divise par 1,8 : $x = 18 \\div 1{,}8 = 10$. Le taxi a parcouru 10 km.",
+        "Contrôle : $p(10) = 1{,}8 \\times 10 + 4 = 22$. Calculer $p(22) = 43{,}6$ donnerait le prix d'une course de 22 km : c'est l'image de 22, pas la réponse."
+      ],
+      "hint": "22 € est-il l'image ou l'antécédent cherché ?",
+      "estimated_duration_s": 100,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 4, classe de 3e, Proportionnalité, fonctions, Fonctions, Objectifs d'apprentissage : « Définir et connaitre le vocabulaire : image, antécédents. »"
+    },
+    {
       "id": "EX-J008-D-01",
       "skill_id": "J008",
       "level": "decouverte",
@@ -44150,6 +44490,375 @@
       "estimated_duration_s": 120,
       "review_status": "relu_agent",
       "programme_ref": "Cycle 4, classe de 5e, Proportionnalité, fonctions, Fonctions, Objectifs d'apprentissage : « Lire et interpréter un graphique cartésien donné par une courbe ou un nuage de points. »"
+    },
+    {
+      "id": "EX-J041-D-01",
+      "skill_id": "J041",
+      "level": "decouverte",
+      "type": "qcm",
+      "statement": "Dans un carré de 8 cm de côté, on découpe un coin carré de côté $x$ cm. Quelle formule donne l'aire restante $A$, en cm² ?",
+      "image": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 292 292\" width=\"292\" height=\"292\" font-family=\"system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif\" role=\"img\"><title>Grand carré dont on a découpé un petit carré dans un coin, en pointillés ; la partie restante est coloriée ; côtés marqués 8 cm et x</title><rect width=\"100%\" height=\"100%\" fill=\"#ffffff\"/><polygon points=\"42.0,42.0 172.0,42.0 172.0,120.0 250.0,120.0 250.0,250.0 42.0,250.0\" fill=\"#bfdbfe\" fill-opacity=\"0.6\" stroke=\"#334155\" stroke-width=\"2\" stroke-linejoin=\"round\"/><polygon points=\"172.0,42.0 250.0,42.0 250.0,120.0 172.0,120.0\" fill=\"none\" fill-opacity=\"0.6\" stroke=\"#334155\" stroke-width=\"2\" stroke-linejoin=\"round\" stroke-dasharray=\"5 4\"/><text x=\"146.0\" y=\"268.0\" font-size=\"13\" text-anchor=\"middle\" fill=\"#334155\">8 cm</text><text x=\"34.0\" y=\"151.0\" font-size=\"13\" text-anchor=\"end\" fill=\"#334155\">8 cm</text><text x=\"211.0\" y=\"34.0\" font-size=\"13\" text-anchor=\"middle\" fill=\"#334155\">x</text><text x=\"258.0\" y=\"86.0\" font-size=\"13\" text-anchor=\"start\" fill=\"#334155\">x</text></svg>",
+      "choices": [
+        {
+          "key": "a",
+          "text": "$A = 64 - 2x$",
+          "misconception": "L'élève confond $x^{2}$ et $2x$ : l'aire du carré découpé est $x \\times x$, pas $x + x$."
+        },
+        {
+          "key": "b",
+          "text": "$A = 8 - x$",
+          "misconception": "L'élève soustrait les côtés au lieu des aires : $8 - x$ est une longueur, pas une aire en cm²."
+        },
+        {
+          "key": "c",
+          "text": "$A = 64 - x^{2}$",
+          "misconception": null
+        },
+        {
+          "key": "d",
+          "text": "$A = 32 - 4x$",
+          "misconception": "L'élève travaille avec les périmètres : 32 cm est le périmètre du grand carré et $4x$ celui du carré découpé, pas leurs aires."
+        }
+      ],
+      "answer": {
+        "value": "c"
+      },
+      "solution_steps": [
+        "L'aire coloriée, c'est l'aire du grand carré moins l'aire du carré découpé.",
+        "Grand carré : $8 \\times 8 = 64$ cm². Carré découpé : $x \\times x = x^{2}$ cm².",
+        "Donc $A = 64 - x^{2}$ : c'est la proposition c.",
+        "Contrôle avec $x = 3$ : on retire $3 \\times 3 = 9$ cm², il reste 55 cm², et $64 - 3^{2} = 55$. Attention, $x = 2$ ne départage pas $x^{2}$ et $2x$, car $2 \\times 2 = 2 + 2$.",
+        "$x$ peut varier entre 0 et 8 : le carré découpé doit tenir dans le grand carré. Plus $x$ est grand, plus l'aire restante est petite."
+      ],
+      "hint": "Calcule l'aire du grand carré, puis celle du carré qu'on enlève.",
+      "estimated_duration_s": 60,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 4, classe de 4e, Proportionnalité, fonctions, Fonctions, Objectifs d'apprentissage : « Produire une formule littérale représentant la dépendance d'une grandeur en fonction d'une autre. »"
+    },
+    {
+      "id": "EX-J041-D-02",
+      "skill_id": "J041",
+      "level": "decouverte",
+      "type": "texte",
+      "statement": "Un rectangle a pour largeur $x$ cm et pour longueur $x + 5$ cm. Écris son périmètre $P$, en cm, en fonction de $x$.",
+      "image": null,
+      "answer": {
+        "value": "4x + 10",
+        "forme": "expression",
+        "variables": [
+          "x"
+        ],
+        "unit": "cm"
+      },
+      "solution_steps": [
+        "Le périmètre est la longueur du contour : deux largeurs et deux longueurs.",
+        "$P = 2 \\times x + 2 \\times (x + 5)$. Les parenthèses sont indispensables : on double toute la longueur, 5 compris.",
+        "On réduit : $2x + 2x + 10 = 4x + 10$.",
+        "Contrôle avec $x = 3$ : le rectangle mesure 3 cm sur 8 cm, son périmètre est $3 + 8 + 3 + 8 = 22$ cm, et $4 \\times 3 + 10 = 22$."
+      ],
+      "hint": "Écris d'abord le périmètre pour une largeur de 3 cm, puis remplace 3 par $x$.",
+      "estimated_duration_s": 75,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 4, classe de 4e, Proportionnalité, fonctions, Fonctions, Objectifs d'apprentissage : « Produire une formule littérale représentant la dépendance d'une grandeur en fonction d'une autre. »"
+    },
+    {
+      "id": "EX-J041-E-01",
+      "skill_id": "J041",
+      "level": "entrainement",
+      "type": "texte",
+      "statement": "Une salle coûte 80 €, plus 12 € par invité pour le repas et 15 € par invité pour l'animation. Écris, sous forme réduite, le prix $p$ en fonction du nombre $n$ d'invités.",
+      "image": null,
+      "answer": {
+        "value": "27n + 80",
+        "forme": "reduite",
+        "variables": [
+          "n"
+        ],
+        "unit": "€"
+      },
+      "solution_steps": [
+        "Pour $n$ invités, le repas coûte $12 \\times n = 12n$ euros et l'animation $15n$ euros. Les 80 € de la salle se paient une seule fois, quel que soit $n$.",
+        "$p = 80 + 12n + 15n$.",
+        "On réduit : $12n + 15n = 27n$, car chaque invité coûte $12 + 15 = 27$ euros. Donc $p = 80 + 27n$.",
+        "Contrôle avec 10 invités : $80 + 120 + 150 = 350$ €, et $80 + 27 \\times 10 = 350$. Écrire $107n$ ferait payer la salle une fois par invité."
+      ],
+      "hint": "Quelles dépenses changent avec le nombre d'invités, et laquelle ne change pas ?",
+      "estimated_duration_s": 90,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 4, classe de 4e, Proportionnalité, fonctions, Fonctions, Objectifs d'apprentissage : « Produire une formule littérale représentant la dépendance d'une grandeur en fonction d'une autre. »"
+    },
+    {
+      "id": "EX-J041-E-02",
+      "skill_id": "J041",
+      "level": "entrainement",
+      "type": "vrai_faux",
+      "statement": "Un rectangle de largeur $x$ cm a un périmètre de 20 cm. Zoé affirme : « Sa longueur, en cm, est $20 - x$. » A-t-elle raison ?",
+      "image": null,
+      "answer": {
+        "value": false
+      },
+      "solution_steps": [
+        "Le périmètre compte deux largeurs et deux longueurs : une largeur et une longueur font la moitié du périmètre, $20 \\div 2 = 10$ cm.",
+        "La longueur vaut donc $10 - x$ cm, pas $20 - x$ : Zoé enlève une seule largeur au périmètre entier.",
+        "Contrôle avec $x = 4$ : la longueur vaut $10 - 4 = 6$ cm, et $4 + 6 + 4 + 6 = 20$. Avec la formule de Zoé, la longueur vaudrait 16 cm et le périmètre $4 + 16 + 4 + 16 = 40$ cm.",
+        "Réponse : faux. La largeur $x$ ne peut d'ailleurs varier qu'entre 0 et 10."
+      ],
+      "hint": "Teste avec une largeur de 4 cm : quel périmètre obtiens-tu avec la longueur de Zoé ?",
+      "estimated_duration_s": 75,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 4, classe de 4e, Proportionnalité, fonctions, Fonctions, Objectifs d'apprentissage : « Produire une formule littérale représentant la dépendance d'une grandeur en fonction d'une autre. »"
+    },
+    {
+      "id": "EX-J041-M-01",
+      "skill_id": "J041",
+      "level": "maitrise",
+      "type": "qcm",
+      "statement": "Louer un vélo coûte 6 € pour les deux premières heures, puis 1,50 € par heure supplémentaire. Quelle formule donne le prix $p$ de $t$ heures de location, quand $t$ dépasse 2 ?",
+      "image": null,
+      "choices": [
+        {
+          "key": "a",
+          "text": "$p = 6 + 1{,}5 \\times t - 2$",
+          "misconception": "L'élève oublie les parenthèses : il retire 2 euros au prix au lieu de retirer 2 heures à la durée. Pour 4 h, il trouve 10 € au lieu de 9 €."
+        },
+        {
+          "key": "b",
+          "text": "$p = 6 + 1{,}5 \\times t$",
+          "misconception": "L'élève fait payer 1,50 € toutes les heures, y compris les deux premières, déjà comprises dans les 6 € : 12 € pour 4 h."
+        },
+        {
+          "key": "c",
+          "text": "$p = 1{,}5 \\times (t - 2)$",
+          "misconception": "L'élève oublie les 6 € des deux premières heures : il ne compte que les heures supplémentaires, 3 € pour 4 h."
+        },
+        {
+          "key": "d",
+          "text": "$p = 6 + 1{,}5 \\times (t - 2)$",
+          "misconception": null
+        }
+      ],
+      "answer": {
+        "value": "d"
+      },
+      "solution_steps": [
+        "Le prix comporte une partie fixe, 6 € pour les deux premières heures, et une partie qui dépend de $t$.",
+        "Les heures supplémentaires sont celles au-delà des deux premières : il y en a $t - 2$. Elles coûtent $1{,}5 \\times (t - 2)$ euros.",
+        "$p = 6 + 1{,}5 \\times (t - 2)$ : c'est la proposition d. Les parenthèses sont indispensables : c'est la durée $t - 2$ qu'on multiplie par 1,5.",
+        "Contrôle pour 4 h : 6 €, plus 2 heures supplémentaires à 1,50 €, soit 9 €. La formule d donne $6 + 1{,}5 \\times 2 = 9$ ; les formules a, b et c donnent 10 €, 12 € et 3 €."
+      ],
+      "hint": "Combien d'heures supplémentaires y a-t-il pour une location de 4 heures ? Teste chaque formule avec $t = 4$.",
+      "estimated_duration_s": 120,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 4, classe de 4e, Proportionnalité, fonctions, Fonctions, Objectifs d'apprentissage : « Produire une formule littérale représentant la dépendance d'une grandeur en fonction d'une autre. »"
+    },
+    {
+      "id": "EX-J041-M-02",
+      "skill_id": "J041",
+      "level": "maitrise",
+      "type": "numerique",
+      "statement": "On découpe un carré de côté $x$ cm à chaque coin d'une plaque de 24 cm sur 16 cm. Quand $x$ passe de 3 à 4, de combien l'aire restante diminue-t-elle, en cm² ?",
+      "image": null,
+      "answer": {
+        "value": 28,
+        "unit": "cm²"
+      },
+      "solution_steps": [
+        "L'aire restante est l'aire de la plaque moins celle des quatre carrés : $A = 24 \\times 16 - 4 \\times x^{2} = 384 - 4x^{2}$.",
+        "Pour $x = 3$ : $A = 384 - 4 \\times 9 = 384 - 36 = 348$ cm².",
+        "Pour $x = 4$ : $A = 384 - 4 \\times 16 = 384 - 64 = 320$ cm².",
+        "L'aire diminue de $348 - 320 = 28$ cm². Chaque carré passe de 9 cm² à 16 cm², soit 7 cm² de plus, et il y a quatre carrés : $4 \\times 7 = 28$.",
+        "Compter 1 cm² de plus par carré, comme si l'aire augmentait comme le côté, donnerait 4 cm² : l'aire d'un carré n'est pas proportionnelle à son côté."
+      ],
+      "hint": "Écris l'aire restante en fonction de $x$, puis calcule-la pour $x = 3$ et pour $x = 4$.",
+      "estimated_duration_s": 150,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 4, classe de 4e, Proportionnalité, fonctions, Fonctions, Objectifs d'apprentissage : « Comprendre la dépendance d'une grandeur en fonction d'une autre. »"
+    },
+    {
+      "id": "EX-J042-D-01",
+      "skill_id": "J042",
+      "level": "decouverte",
+      "type": "qcm",
+      "statement": "Une bougie brûle : au bout de $t$ heures, sa hauteur en cm est $h = 20 - 2{,}5 \\times t$.\n\n$\\begin{array}{|c|c|c|c|}\\hline t & 0 & 2 & 4 \\\\ \\hline h & 20 & 15 & 10 \\\\ \\hline\\end{array}$\n\nQuel tracé représente $h$ en fonction de $t$ ?",
+      "image": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 328 328\" width=\"328\" height=\"328\" font-family=\"system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif\" role=\"img\"><title>Repère ; en abscisse : durée (h), en ordonnée : hauteur (cm), avec trois droites nommées T1, T2 et T3</title><rect width=\"100%\" height=\"100%\" fill=\"#ffffff\"/><line x1=\"34.0\" y1=\"294.0\" x2=\"34.0\" y2=\"34.0\" stroke=\"#e2e8f0\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"60.0\" y1=\"294.0\" x2=\"60.0\" y2=\"34.0\" stroke=\"#e2e8f0\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"86.0\" y1=\"294.0\" x2=\"86.0\" y2=\"34.0\" stroke=\"#e2e8f0\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"112.0\" y1=\"294.0\" x2=\"112.0\" y2=\"34.0\" stroke=\"#e2e8f0\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"138.0\" y1=\"294.0\" x2=\"138.0\" y2=\"34.0\" stroke=\"#e2e8f0\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"164.0\" y1=\"294.0\" x2=\"164.0\" y2=\"34.0\" stroke=\"#e2e8f0\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"190.0\" y1=\"294.0\" x2=\"190.0\" y2=\"34.0\" stroke=\"#e2e8f0\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"216.0\" y1=\"294.0\" x2=\"216.0\" y2=\"34.0\" stroke=\"#e2e8f0\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"242.0\" y1=\"294.0\" x2=\"242.0\" y2=\"34.0\" stroke=\"#e2e8f0\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"268.0\" y1=\"294.0\" x2=\"268.0\" y2=\"34.0\" stroke=\"#e2e8f0\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"294.0\" y1=\"294.0\" x2=\"294.0\" y2=\"34.0\" stroke=\"#e2e8f0\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"34.0\" y1=\"294.0\" x2=\"294.0\" y2=\"294.0\" stroke=\"#e2e8f0\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"34.0\" y1=\"268.0\" x2=\"294.0\" y2=\"268.0\" stroke=\"#e2e8f0\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"34.0\" y1=\"242.0\" x2=\"294.0\" y2=\"242.0\" stroke=\"#e2e8f0\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"34.0\" y1=\"216.0\" x2=\"294.0\" y2=\"216.0\" stroke=\"#e2e8f0\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"34.0\" y1=\"190.0\" x2=\"294.0\" y2=\"190.0\" stroke=\"#e2e8f0\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"34.0\" y1=\"164.0\" x2=\"294.0\" y2=\"164.0\" stroke=\"#e2e8f0\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"34.0\" y1=\"138.0\" x2=\"294.0\" y2=\"138.0\" stroke=\"#e2e8f0\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"34.0\" y1=\"112.0\" x2=\"294.0\" y2=\"112.0\" stroke=\"#e2e8f0\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"34.0\" y1=\"86.0\" x2=\"294.0\" y2=\"86.0\" stroke=\"#e2e8f0\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"34.0\" y1=\"60.0\" x2=\"294.0\" y2=\"60.0\" stroke=\"#e2e8f0\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"34.0\" y1=\"34.0\" x2=\"294.0\" y2=\"34.0\" stroke=\"#e2e8f0\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"21.0\" y1=\"294.0\" x2=\"307.0\" y2=\"294.0\" stroke=\"#334155\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><path d=\"M313.0,294.0 l-10,-5 v10 z\" fill=\"#334155\"/><line x1=\"34.0\" y1=\"307.0\" x2=\"34.0\" y2=\"21.0\" stroke=\"#334155\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><path d=\"M34.0,15.0 l-5,10 h10 z\" fill=\"#334155\"/><line x1=\"34.0\" y1=\"290.0\" x2=\"34.0\" y2=\"298.0\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><line x1=\"60.0\" y1=\"290.0\" x2=\"60.0\" y2=\"298.0\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><text x=\"60.0\" y=\"311.0\" font-size=\"11\" text-anchor=\"middle\" fill=\"#334155\">2</text><line x1=\"86.0\" y1=\"290.0\" x2=\"86.0\" y2=\"298.0\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><text x=\"86.0\" y=\"311.0\" font-size=\"11\" text-anchor=\"middle\" fill=\"#334155\">4</text><line x1=\"112.0\" y1=\"290.0\" x2=\"112.0\" y2=\"298.0\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><text x=\"112.0\" y=\"311.0\" font-size=\"11\" text-anchor=\"middle\" fill=\"#334155\">6</text><line x1=\"138.0\" y1=\"290.0\" x2=\"138.0\" y2=\"298.0\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><text x=\"138.0\" y=\"311.0\" font-size=\"11\" text-anchor=\"middle\" fill=\"#334155\">8</text><line x1=\"164.0\" y1=\"290.0\" x2=\"164.0\" y2=\"298.0\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><text x=\"164.0\" y=\"311.0\" font-size=\"11\" text-anchor=\"middle\" fill=\"#334155\">10</text><line x1=\"190.0\" y1=\"290.0\" x2=\"190.0\" y2=\"298.0\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><text x=\"190.0\" y=\"311.0\" font-size=\"11\" text-anchor=\"middle\" fill=\"#334155\">12</text><line x1=\"216.0\" y1=\"290.0\" x2=\"216.0\" y2=\"298.0\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><text x=\"216.0\" y=\"311.0\" font-size=\"11\" text-anchor=\"middle\" fill=\"#334155\">14</text><line x1=\"242.0\" y1=\"290.0\" x2=\"242.0\" y2=\"298.0\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><text x=\"242.0\" y=\"311.0\" font-size=\"11\" text-anchor=\"middle\" fill=\"#334155\">16</text><line x1=\"268.0\" y1=\"290.0\" x2=\"268.0\" y2=\"298.0\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><text x=\"268.0\" y=\"311.0\" font-size=\"11\" text-anchor=\"middle\" fill=\"#334155\">18</text><line x1=\"294.0\" y1=\"290.0\" x2=\"294.0\" y2=\"298.0\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><text x=\"294.0\" y=\"311.0\" font-size=\"11\" text-anchor=\"middle\" fill=\"#334155\">20</text><line x1=\"30.0\" y1=\"294.0\" x2=\"38.0\" y2=\"294.0\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><line x1=\"30.0\" y1=\"268.0\" x2=\"38.0\" y2=\"268.0\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><text x=\"27.0\" y=\"272.0\" font-size=\"11\" text-anchor=\"end\" fill=\"#334155\">2</text><line x1=\"30.0\" y1=\"242.0\" x2=\"38.0\" y2=\"242.0\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><text x=\"27.0\" y=\"246.0\" font-size=\"11\" text-anchor=\"end\" fill=\"#334155\">4</text><line x1=\"30.0\" y1=\"216.0\" x2=\"38.0\" y2=\"216.0\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><text x=\"27.0\" y=\"220.0\" font-size=\"11\" text-anchor=\"end\" fill=\"#334155\">6</text><line x1=\"30.0\" y1=\"190.0\" x2=\"38.0\" y2=\"190.0\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><text x=\"27.0\" y=\"194.0\" font-size=\"11\" text-anchor=\"end\" fill=\"#334155\">8</text><line x1=\"30.0\" y1=\"164.0\" x2=\"38.0\" y2=\"164.0\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><text x=\"27.0\" y=\"168.0\" font-size=\"11\" text-anchor=\"end\" fill=\"#334155\">10</text><line x1=\"30.0\" y1=\"138.0\" x2=\"38.0\" y2=\"138.0\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><text x=\"27.0\" y=\"142.0\" font-size=\"11\" text-anchor=\"end\" fill=\"#334155\">12</text><line x1=\"30.0\" y1=\"112.0\" x2=\"38.0\" y2=\"112.0\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><text x=\"27.0\" y=\"116.0\" font-size=\"11\" text-anchor=\"end\" fill=\"#334155\">14</text><line x1=\"30.0\" y1=\"86.0\" x2=\"38.0\" y2=\"86.0\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><text x=\"27.0\" y=\"90.0\" font-size=\"11\" text-anchor=\"end\" fill=\"#334155\">16</text><line x1=\"30.0\" y1=\"60.0\" x2=\"38.0\" y2=\"60.0\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><text x=\"27.0\" y=\"64.0\" font-size=\"11\" text-anchor=\"end\" fill=\"#334155\">18</text><line x1=\"30.0\" y1=\"34.0\" x2=\"38.0\" y2=\"34.0\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><text x=\"27.0\" y=\"38.0\" font-size=\"11\" text-anchor=\"end\" fill=\"#334155\">20</text><text stroke=\"#ffffff\" stroke-width=\"3.5\" paint-order=\"stroke\" x=\"313.0\" y=\"325.0\" font-size=\"12\" text-anchor=\"end\" fill=\"#334155\">durée (h)</text><text stroke=\"#ffffff\" stroke-width=\"3.5\" paint-order=\"stroke\" x=\"43.0\" y=\"19.0\" font-size=\"12\" text-anchor=\"start\" fill=\"#334155\">hauteur (cm)</text><path d=\"M34.0,190.0 L294.0,294.0\" fill=\"none\" stroke=\"#2563eb\" stroke-width=\"2.2\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/><text stroke=\"#ffffff\" stroke-width=\"3.5\" paint-order=\"stroke\" x=\"260.2\" y=\"270.4\" font-size=\"14\" text-anchor=\"middle\" fill=\"#2563eb\" font-weight=\"600\">T1</text><path d=\"M34.0,294.0 L138.0,34.0\" fill=\"none\" stroke=\"#c2410c\" stroke-width=\"2.2\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/><text stroke=\"#ffffff\" stroke-width=\"3.5\" paint-order=\"stroke\" x=\"109.4\" y=\"72.8\" font-size=\"14\" text-anchor=\"middle\" fill=\"#c2410c\" font-weight=\"600\">T2</text><path d=\"M34.0,34.0 L138.0,294.0\" fill=\"none\" stroke=\"#334155\" stroke-width=\"2.2\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/><text stroke=\"#ffffff\" stroke-width=\"3.5\" paint-order=\"stroke\" x=\"67.8\" y=\"85.8\" font-size=\"14\" text-anchor=\"middle\" fill=\"#334155\" font-weight=\"600\">T3</text><text x=\"28.0\" y=\"288.0\" font-size=\"12\" text-anchor=\"end\" fill=\"#334155\" font-weight=\"600\">O</text></svg>",
+      "choices": [
+        {
+          "key": "a",
+          "text": "Le tracé T1",
+          "misconception": "L'élève inverse les axes : il porte la hauteur en abscisse et la durée en ordonnée. T1 passe par (20 ; 0), (15 ; 2) et (10 ; 4)."
+        },
+        {
+          "key": "b",
+          "text": "Le tracé T2",
+          "misconception": "L'élève croit que la hauteur augmente avec le temps : T2 part de 0 et monte de 2,5 cm par heure, comme la longueur de bougie déjà brûlée."
+        },
+        {
+          "key": "c",
+          "text": "Le tracé T3",
+          "misconception": null
+        }
+      ],
+      "answer": {
+        "value": "c"
+      },
+      "solution_steps": [
+        "Chaque colonne du tableau donne un point : l'abscisse est la durée $t$, l'ordonnée la hauteur $h$. Les points sont (0 ; 20), (2 ; 15) et (4 ; 10).",
+        "Sur l'axe vertical, une graduation vaut 2 cm : le point (0 ; 20) est tout en haut de l'axe des ordonnées. Seul T3 part de ce point.",
+        "T3 passe aussi par (2 ; 15) et (4 ; 10) : il représente $h$ en fonction de $t$. La durée varie de façon continue : on relie donc les points.",
+        "T1 passe par (20 ; 0), (15 ; 2) et (10 ; 4) : les coordonnées sont inversées. T2 monte, alors que la bougie raccourcit.",
+        "La bougie est entièrement consumée quand $h = 0$, au bout de 8 h : T3 coupe l'axe des abscisses en 8."
+      ],
+      "hint": "Pour chaque point, l'abscisse est la durée et l'ordonnée la hauteur. Vérifie les trois points du tableau.",
+      "estimated_duration_s": 60,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 4, classe de 4e, Proportionnalité, fonctions, Fonctions, Objectifs d'apprentissage : « Représenter l'expression d'une grandeur en fonction d'une autre par un graphique. »"
+    },
+    {
+      "id": "EX-J042-D-02",
+      "skill_id": "J042",
+      "level": "decouverte",
+      "type": "vrai_faux",
+      "statement": "Un abonnement coûte $p = 6 \\times n + 15$ euros pour $n$ mois. Vrai ou faux : le point (5 ; 45) est sur la représentation graphique de $p$ en fonction de $n$.",
+      "image": null,
+      "answer": {
+        "value": true
+      },
+      "solution_steps": [
+        "Le point (5 ; 45) a pour abscisse $n = 5$ et pour ordonnée $p = 45$.",
+        "Pour $n = 5$, la formule donne $p = 6 \\times 5 + 15 = 30 + 15 = 45$.",
+        "On retrouve l'ordonnée 45 : le point est sur la représentation. Réponse : vrai.",
+        "Le point (45 ; 5), lui, n'y est pas : pour $n = 45$, $p = 6 \\times 45 + 15 = 285$. L'ordre des coordonnées compte : l'abscisse d'abord."
+      ],
+      "hint": "Remplace $n$ par l'abscisse du point et compare le résultat à son ordonnée.",
+      "estimated_duration_s": 45,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 4, classe de 4e, Proportionnalité, fonctions, Fonctions, Objectifs d'apprentissage : « Représenter l'expression d'une grandeur en fonction d'une autre par un graphique. »"
+    },
+    {
+      "id": "EX-J042-E-01",
+      "skill_id": "J042",
+      "level": "entrainement",
+      "type": "qcm",
+      "statement": "D'un carré de 6 cm de côté, on retire un carré de côté $x$ cm. L'aire restante est $S = 36 - x^{2}$. Quel tracé représente $S$ en fonction de $x$ ?",
+      "image": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 368 368\" width=\"368\" height=\"368\" font-family=\"system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif\" role=\"img\"><title>Repère ; en abscisse : x (cm), en ordonnée : S (cm²), avec trois tracés nommés T1, T2 et T3</title><rect width=\"100%\" height=\"100%\" fill=\"#ffffff\"/><line x1=\"34.0\" y1=\"334.0\" x2=\"34.0\" y2=\"34.0\" stroke=\"#e2e8f0\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"59.0\" y1=\"334.0\" x2=\"59.0\" y2=\"34.0\" stroke=\"#e2e8f0\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"84.0\" y1=\"334.0\" x2=\"84.0\" y2=\"34.0\" stroke=\"#e2e8f0\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"109.0\" y1=\"334.0\" x2=\"109.0\" y2=\"34.0\" stroke=\"#e2e8f0\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"134.0\" y1=\"334.0\" x2=\"134.0\" y2=\"34.0\" stroke=\"#e2e8f0\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"159.0\" y1=\"334.0\" x2=\"159.0\" y2=\"34.0\" stroke=\"#e2e8f0\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"184.0\" y1=\"334.0\" x2=\"184.0\" y2=\"34.0\" stroke=\"#e2e8f0\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"209.0\" y1=\"334.0\" x2=\"209.0\" y2=\"34.0\" stroke=\"#e2e8f0\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"234.0\" y1=\"334.0\" x2=\"234.0\" y2=\"34.0\" stroke=\"#e2e8f0\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"259.0\" y1=\"334.0\" x2=\"259.0\" y2=\"34.0\" stroke=\"#e2e8f0\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"284.0\" y1=\"334.0\" x2=\"284.0\" y2=\"34.0\" stroke=\"#e2e8f0\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"309.0\" y1=\"334.0\" x2=\"309.0\" y2=\"34.0\" stroke=\"#e2e8f0\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"334.0\" y1=\"334.0\" x2=\"334.0\" y2=\"34.0\" stroke=\"#e2e8f0\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"34.0\" y1=\"334.0\" x2=\"334.0\" y2=\"334.0\" stroke=\"#e2e8f0\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"34.0\" y1=\"309.0\" x2=\"334.0\" y2=\"309.0\" stroke=\"#e2e8f0\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"34.0\" y1=\"284.0\" x2=\"334.0\" y2=\"284.0\" stroke=\"#e2e8f0\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"34.0\" y1=\"259.0\" x2=\"334.0\" y2=\"259.0\" stroke=\"#e2e8f0\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"34.0\" y1=\"234.0\" x2=\"334.0\" y2=\"234.0\" stroke=\"#e2e8f0\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"34.0\" y1=\"209.0\" x2=\"334.0\" y2=\"209.0\" stroke=\"#e2e8f0\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"34.0\" y1=\"184.0\" x2=\"334.0\" y2=\"184.0\" stroke=\"#e2e8f0\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"34.0\" y1=\"159.0\" x2=\"334.0\" y2=\"159.0\" stroke=\"#e2e8f0\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"34.0\" y1=\"134.0\" x2=\"334.0\" y2=\"134.0\" stroke=\"#e2e8f0\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"34.0\" y1=\"109.0\" x2=\"334.0\" y2=\"109.0\" stroke=\"#e2e8f0\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"34.0\" y1=\"84.0\" x2=\"334.0\" y2=\"84.0\" stroke=\"#e2e8f0\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"34.0\" y1=\"59.0\" x2=\"334.0\" y2=\"59.0\" stroke=\"#e2e8f0\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"34.0\" y1=\"34.0\" x2=\"334.0\" y2=\"34.0\" stroke=\"#e2e8f0\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"21.5\" y1=\"334.0\" x2=\"346.5\" y2=\"334.0\" stroke=\"#334155\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><path d=\"M352.5,334.0 l-10,-5 v10 z\" fill=\"#334155\"/><line x1=\"34.0\" y1=\"346.5\" x2=\"34.0\" y2=\"21.5\" stroke=\"#334155\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><path d=\"M34.0,15.5 l-5,10 h10 z\" fill=\"#334155\"/><line x1=\"34.0\" y1=\"330.0\" x2=\"34.0\" y2=\"338.0\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><line x1=\"59.0\" y1=\"330.0\" x2=\"59.0\" y2=\"338.0\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><text x=\"59.0\" y=\"351.0\" font-size=\"11\" text-anchor=\"middle\" fill=\"#334155\">0,5</text><line x1=\"84.0\" y1=\"330.0\" x2=\"84.0\" y2=\"338.0\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><text x=\"84.0\" y=\"351.0\" font-size=\"11\" text-anchor=\"middle\" fill=\"#334155\">1</text><line x1=\"109.0\" y1=\"330.0\" x2=\"109.0\" y2=\"338.0\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><text x=\"109.0\" y=\"351.0\" font-size=\"11\" text-anchor=\"middle\" fill=\"#334155\">1,5</text><line x1=\"134.0\" y1=\"330.0\" x2=\"134.0\" y2=\"338.0\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><text x=\"134.0\" y=\"351.0\" font-size=\"11\" text-anchor=\"middle\" fill=\"#334155\">2</text><line x1=\"159.0\" y1=\"330.0\" x2=\"159.0\" y2=\"338.0\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><text x=\"159.0\" y=\"351.0\" font-size=\"11\" text-anchor=\"middle\" fill=\"#334155\">2,5</text><line x1=\"184.0\" y1=\"330.0\" x2=\"184.0\" y2=\"338.0\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><text x=\"184.0\" y=\"351.0\" font-size=\"11\" text-anchor=\"middle\" fill=\"#334155\">3</text><line x1=\"209.0\" y1=\"330.0\" x2=\"209.0\" y2=\"338.0\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><text x=\"209.0\" y=\"351.0\" font-size=\"11\" text-anchor=\"middle\" fill=\"#334155\">3,5</text><line x1=\"234.0\" y1=\"330.0\" x2=\"234.0\" y2=\"338.0\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><text x=\"234.0\" y=\"351.0\" font-size=\"11\" text-anchor=\"middle\" fill=\"#334155\">4</text><line x1=\"259.0\" y1=\"330.0\" x2=\"259.0\" y2=\"338.0\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><text x=\"259.0\" y=\"351.0\" font-size=\"11\" text-anchor=\"middle\" fill=\"#334155\">4,5</text><line x1=\"284.0\" y1=\"330.0\" x2=\"284.0\" y2=\"338.0\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><text x=\"284.0\" y=\"351.0\" font-size=\"11\" text-anchor=\"middle\" fill=\"#334155\">5</text><line x1=\"309.0\" y1=\"330.0\" x2=\"309.0\" y2=\"338.0\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><text x=\"309.0\" y=\"351.0\" font-size=\"11\" text-anchor=\"middle\" fill=\"#334155\">5,5</text><line x1=\"334.0\" y1=\"330.0\" x2=\"334.0\" y2=\"338.0\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><text x=\"334.0\" y=\"351.0\" font-size=\"11\" text-anchor=\"middle\" fill=\"#334155\">6</text><line x1=\"30.0\" y1=\"334.0\" x2=\"38.0\" y2=\"334.0\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><line x1=\"30.0\" y1=\"309.0\" x2=\"38.0\" y2=\"309.0\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><text x=\"27.0\" y=\"313.0\" font-size=\"11\" text-anchor=\"end\" fill=\"#334155\">3</text><line x1=\"30.0\" y1=\"284.0\" x2=\"38.0\" y2=\"284.0\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><text x=\"27.0\" y=\"288.0\" font-size=\"11\" text-anchor=\"end\" fill=\"#334155\">6</text><line x1=\"30.0\" y1=\"259.0\" x2=\"38.0\" y2=\"259.0\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><text x=\"27.0\" y=\"263.0\" font-size=\"11\" text-anchor=\"end\" fill=\"#334155\">9</text><line x1=\"30.0\" y1=\"234.0\" x2=\"38.0\" y2=\"234.0\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><text x=\"27.0\" y=\"238.0\" font-size=\"11\" text-anchor=\"end\" fill=\"#334155\">12</text><line x1=\"30.0\" y1=\"209.0\" x2=\"38.0\" y2=\"209.0\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><text x=\"27.0\" y=\"213.0\" font-size=\"11\" text-anchor=\"end\" fill=\"#334155\">15</text><line x1=\"30.0\" y1=\"184.0\" x2=\"38.0\" y2=\"184.0\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><text x=\"27.0\" y=\"188.0\" font-size=\"11\" text-anchor=\"end\" fill=\"#334155\">18</text><line x1=\"30.0\" y1=\"159.0\" x2=\"38.0\" y2=\"159.0\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><text x=\"27.0\" y=\"163.0\" font-size=\"11\" text-anchor=\"end\" fill=\"#334155\">21</text><line x1=\"30.0\" y1=\"134.0\" x2=\"38.0\" y2=\"134.0\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><text x=\"27.0\" y=\"138.0\" font-size=\"11\" text-anchor=\"end\" fill=\"#334155\">24</text><line x1=\"30.0\" y1=\"109.0\" x2=\"38.0\" y2=\"109.0\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><text x=\"27.0\" y=\"113.0\" font-size=\"11\" text-anchor=\"end\" fill=\"#334155\">27</text><line x1=\"30.0\" y1=\"84.0\" x2=\"38.0\" y2=\"84.0\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><text x=\"27.0\" y=\"88.0\" font-size=\"11\" text-anchor=\"end\" fill=\"#334155\">30</text><line x1=\"30.0\" y1=\"59.0\" x2=\"38.0\" y2=\"59.0\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><text x=\"27.0\" y=\"63.0\" font-size=\"11\" text-anchor=\"end\" fill=\"#334155\">33</text><line x1=\"30.0\" y1=\"34.0\" x2=\"38.0\" y2=\"34.0\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><text x=\"27.0\" y=\"38.0\" font-size=\"11\" text-anchor=\"end\" fill=\"#334155\">36</text><text stroke=\"#ffffff\" stroke-width=\"3.5\" paint-order=\"stroke\" x=\"352.5\" y=\"365.0\" font-size=\"12\" text-anchor=\"end\" fill=\"#334155\">x (cm)</text><text stroke=\"#ffffff\" stroke-width=\"3.5\" paint-order=\"stroke\" x=\"43.0\" y=\"19.5\" font-size=\"12\" text-anchor=\"start\" fill=\"#334155\">S (cm²)</text><path d=\"M34.0,34.0 L334.0,334.0\" fill=\"none\" stroke=\"#2563eb\" stroke-width=\"2.2\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/><text stroke=\"#ffffff\" stroke-width=\"3.5\" paint-order=\"stroke\" x=\"114.1\" y=\"138.9\" font-size=\"14\" text-anchor=\"middle\" fill=\"#2563eb\" font-weight=\"600\">T1</text><path d=\"M34.0,34.0 L35.2,34.0 L36.5,34.0 L37.8,34.0 L39.0,34.1 L40.2,34.1 L41.5,34.2 L42.8,34.3 L44.0,34.3 L45.2,34.4 L46.5,34.5 L47.8,34.6 L49.0,34.8 L50.2,34.9 L51.5,35.0 L52.8,35.2 L54.0,35.3 L55.2,35.5 L56.5,35.7 L57.8,35.9 L59.0,36.1 L60.2,36.3 L61.5,36.5 L62.8,36.8 L64.0,37.0 L65.2,37.3 L66.5,37.5 L67.8,37.8 L69.0,38.1 L70.2,38.4 L71.5,38.7 L72.8,39.0 L74.0,39.3 L75.2,39.7 L76.5,40.0 L77.8,40.4 L79.0,40.8 L80.2,41.1 L81.5,41.5 L82.8,41.9 L84.0,42.3 L85.2,42.8 L86.5,43.2 L87.8,43.6 L89.0,44.1 L90.2,44.5 L91.5,45.0 L92.8,45.5 L94.0,46.0 L95.2,46.5 L96.5,47.0 L97.8,47.5 L99.0,48.1 L100.2,48.6 L101.5,49.2 L102.8,49.8 L104.0,50.3 L105.2,50.9 L106.5,51.5 L107.8,52.1 L109.0,52.8 L110.2,53.4 L111.5,54.0 L112.8,54.7 L114.0,55.3 L115.2,56.0 L116.5,56.7 L117.8,57.4 L119.0,58.1 L120.2,58.8 L121.5,59.5 L122.8,60.3 L124.0,61.0 L125.2,61.8 L126.5,62.5 L127.8,63.3 L129.0,64.1 L130.2,64.9 L131.5,65.7 L132.8,66.5 L134.0,67.3 L135.2,68.2 L136.5,69.0 L137.8,69.9 L139.0,70.8 L140.2,71.6 L141.5,72.5 L142.8,73.4 L144.0,74.3 L145.2,75.3 L146.5,76.2 L147.8,77.1 L149.0,78.1 L150.2,79.0 L151.5,80.0 L152.8,81.0 L154.0,82.0 L155.2,83.0 L156.5,84.0 L157.8,85.0 L159.0,86.1 L160.2,87.1 L161.5,88.2 L162.8,89.3 L164.0,90.3 L165.2,91.4 L166.5,92.5 L167.8,93.6 L169.0,94.8 L170.2,95.9 L171.5,97.0 L172.8,98.2 L174.0,99.3 L175.2,100.5 L176.5,101.7 L177.8,102.9 L179.0,104.1 L180.2,105.3 L181.5,106.5 L182.8,107.8 L184.0,109.0 L185.2,110.3 L186.5,111.5 L187.8,112.8 L189.0,114.1 L190.2,115.4 L191.5,116.7 L192.8,118.0 L194.0,119.3 L195.2,120.7 L196.5,122.0 L197.8,123.4 L199.0,124.7 L200.2,126.1 L201.5,127.5 L202.8,128.9 L204.0,130.3 L205.2,131.8 L206.5,133.2 L207.8,134.6 L209.0,136.1 L210.2,137.5 L211.5,139.0 L212.8,140.5 L214.0,142.0 L215.2,143.5 L216.5,145.0 L217.8,146.5 L219.0,148.1 L220.2,149.6 L221.5,151.2 L222.8,152.8 L224.0,154.3 L225.2,155.9 L226.5,157.5 L227.8,159.1 L229.0,160.7 L230.2,162.4 L231.5,164.0 L232.8,165.7 L234.0,167.3 L235.3,169.0 L236.5,170.7 L237.8,172.4 L239.0,174.1 L240.2,175.8 L241.5,177.5 L242.8,179.3 L244.0,181.0 L245.2,182.8 L246.5,184.5 L247.8,186.3 L249.0,188.1 L250.2,189.9 L251.5,191.7 L252.8,193.5 L254.0,195.3 L255.2,197.2 L256.5,199.0 L257.8,200.9 L259.0,202.8 L260.2,204.6 L261.5,206.5 L262.8,208.4 L264.0,210.3 L265.2,212.3 L266.5,214.2 L267.8,216.1 L269.0,218.1 L270.2,220.0 L271.5,222.0 L272.8,224.0 L274.0,226.0 L275.2,228.0 L276.5,230.0 L277.8,232.0 L279.0,234.1 L280.2,236.1 L281.5,238.2 L282.8,240.3 L284.0,242.3 L285.2,244.4 L286.5,246.5 L287.8,248.6 L289.0,250.7 L290.2,252.9 L291.5,255.0 L292.8,257.2 L294.0,259.3 L295.2,261.5 L296.5,263.7 L297.8,265.9 L299.0,268.1 L300.2,270.3 L301.5,272.5 L302.8,274.8 L304.0,277.0 L305.2,279.3 L306.5,281.5 L307.8,283.8 L309.0,286.1 L310.2,288.4 L311.5,290.7 L312.8,293.0 L314.0,295.3 L315.2,297.7 L316.5,300.0 L317.8,302.4 L319.0,304.8 L320.2,307.1 L321.5,309.5 L322.8,311.9 L324.0,314.3 L325.2,316.8 L326.5,319.2 L327.8,321.6 L329.0,324.1 L330.2,326.5 L331.5,329.0 L332.8,331.5 L334.0,334.0\" fill=\"none\" stroke=\"#c2410c\" stroke-width=\"2.2\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/><text stroke=\"#ffffff\" stroke-width=\"3.5\" paint-order=\"stroke\" x=\"315.2\" y=\"273.3\" font-size=\"14\" text-anchor=\"middle\" fill=\"#c2410c\" font-weight=\"600\">T2</text><path d=\"M34.0,334.0 L35.2,334.0 L36.5,334.0 L37.8,334.0 L39.0,333.9 L40.2,333.9 L41.5,333.8 L42.8,333.7 L44.0,333.7 L45.2,333.6 L46.5,333.5 L47.8,333.4 L49.0,333.2 L50.2,333.1 L51.5,333.0 L52.8,332.8 L54.0,332.7 L55.2,332.5 L56.5,332.3 L57.8,332.1 L59.0,331.9 L60.2,331.7 L61.5,331.5 L62.8,331.2 L64.0,331.0 L65.2,330.7 L66.5,330.5 L67.8,330.2 L69.0,329.9 L70.2,329.6 L71.5,329.3 L72.8,329.0 L74.0,328.7 L75.2,328.3 L76.5,328.0 L77.8,327.6 L79.0,327.2 L80.2,326.9 L81.5,326.5 L82.8,326.1 L84.0,325.7 L85.2,325.2 L86.5,324.8 L87.8,324.4 L89.0,323.9 L90.2,323.5 L91.5,323.0 L92.8,322.5 L94.0,322.0 L95.2,321.5 L96.5,321.0 L97.8,320.5 L99.0,319.9 L100.2,319.4 L101.5,318.8 L102.8,318.2 L104.0,317.7 L105.2,317.1 L106.5,316.5 L107.8,315.9 L109.0,315.2 L110.2,314.6 L111.5,314.0 L112.8,313.3 L114.0,312.7 L115.2,312.0 L116.5,311.3 L117.8,310.6 L119.0,309.9 L120.2,309.2 L121.5,308.5 L122.8,307.7 L124.0,307.0 L125.2,306.2 L126.5,305.5 L127.8,304.7 L129.0,303.9 L130.2,303.1 L131.5,302.3 L132.8,301.5 L134.0,300.7 L135.2,299.8 L136.5,299.0 L137.8,298.1 L139.0,297.2 L140.2,296.4 L141.5,295.5 L142.8,294.6 L144.0,293.7 L145.2,292.7 L146.5,291.8 L147.8,290.9 L149.0,289.9 L150.2,289.0 L151.5,288.0 L152.8,287.0 L154.0,286.0 L155.2,285.0 L156.5,284.0 L157.8,283.0 L159.0,281.9 L160.2,280.9 L161.5,279.8 L162.8,278.7 L164.0,277.7 L165.2,276.6 L166.5,275.5 L167.8,274.4 L169.0,273.2 L170.2,272.1 L171.5,271.0 L172.8,269.8 L174.0,268.7 L175.2,267.5 L176.5,266.3 L177.8,265.1 L179.0,263.9 L180.2,262.7 L181.5,261.5 L182.8,260.2 L184.0,259.0 L185.2,257.7 L186.5,256.5 L187.8,255.2 L189.0,253.9 L190.2,252.6 L191.5,251.3 L192.8,250.0 L194.0,248.7 L195.2,247.3 L196.5,246.0 L197.8,244.6 L199.0,243.2 L200.2,241.9 L201.5,240.5 L202.8,239.1 L204.0,237.7 L205.2,236.2 L206.5,234.8 L207.8,233.4 L209.0,231.9 L210.2,230.5 L211.5,229.0 L212.8,227.5 L214.0,226.0 L215.2,224.5 L216.5,223.0 L217.8,221.5 L219.0,219.9 L220.2,218.4 L221.5,216.8 L222.8,215.2 L224.0,213.7 L225.2,212.1 L226.5,210.5 L227.8,208.9 L229.0,207.2 L230.2,205.6 L231.5,204.0 L232.8,202.3 L234.0,200.7 L235.3,199.0 L236.5,197.3 L237.8,195.6 L239.0,193.9 L240.2,192.2 L241.5,190.5 L242.8,188.7 L244.0,187.0 L245.2,185.2 L246.5,183.5 L247.8,181.7 L249.0,179.9 L250.2,178.1 L251.5,176.3 L252.8,174.5 L254.0,172.7 L255.2,170.8 L256.5,169.0 L257.8,167.1 L259.0,165.2 L260.2,163.4 L261.5,161.5 L262.8,159.6 L264.0,157.7 L265.2,155.7 L266.5,153.8 L267.8,151.9 L269.0,149.9 L270.2,148.0 L271.5,146.0 L272.8,144.0 L274.0,142.0 L275.2,140.0 L276.5,138.0 L277.8,136.0 L279.0,133.9 L280.2,131.9 L281.5,129.8 L282.8,127.7 L284.0,125.7 L285.2,123.6 L286.5,121.5 L287.8,119.4 L289.0,117.3 L290.2,115.1 L291.5,113.0 L292.8,110.8 L294.0,108.7 L295.2,106.5 L296.5,104.3 L297.8,102.1 L299.0,99.9 L300.2,97.7 L301.5,95.5 L302.8,93.2 L304.0,91.0 L305.2,88.7 L306.5,86.5 L307.8,84.2 L309.0,81.9 L310.2,79.6 L311.5,77.3 L312.8,75.0 L314.0,72.7 L315.2,70.3 L316.5,68.0 L317.8,65.6 L319.0,63.2 L320.2,60.9 L321.5,58.5 L322.8,56.1 L324.0,53.7 L325.2,51.2 L326.5,48.8 L327.8,46.4 L329.0,43.9 L330.2,41.5 L331.5,39.0 L332.8,36.5 L334.0,34.0\" fill=\"none\" stroke=\"#334155\" stroke-width=\"2.2\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/><text stroke=\"#ffffff\" stroke-width=\"3.5\" paint-order=\"stroke\" x=\"290.7\" y=\"91.1\" font-size=\"14\" text-anchor=\"middle\" fill=\"#334155\" font-weight=\"600\">T3</text><text x=\"28.0\" y=\"328.0\" font-size=\"12\" text-anchor=\"end\" fill=\"#334155\" font-weight=\"600\">O</text></svg>",
+      "choices": [
+        {
+          "key": "a",
+          "text": "Le tracé T1",
+          "misconception": "L'élève calcule seulement les valeurs extrêmes, 36 pour $x = 0$ et 0 pour $x = 6$, et les relie par une droite. Pour $x = 3$, la formule donne 27, mais T1 passe par 18."
+        },
+        {
+          "key": "b",
+          "text": "Le tracé T2",
+          "misconception": null
+        },
+        {
+          "key": "c",
+          "text": "Le tracé T3",
+          "misconception": "L'élève représente l'aire retirée, $x^{2}$, au lieu de l'aire restante : T3 part de 0 et monte, alors que l'aire restante diminue quand $x$ augmente."
+        }
+      ],
+      "answer": {
+        "value": "b"
+      },
+      "solution_steps": [
+        "On calcule quelques valeurs : pour $x = 0$, $S = 36$ ; pour $x = 3$, $S = 36 - 9 = 27$ ; pour $x = 6$, $S = 36 - 36 = 0$.",
+        "Le tracé cherché part de (0 ; 36) et arrive en (6 ; 0) : T1 et T2 passent par ces deux points, T3 non.",
+        "Le point (3 ; 27) est sur T2, pas sur T1, qui passe par (3 ; 18). La réponse est T2.",
+        "La représentation n'est pas une droite : relier (0 ; 36) et (6 ; 0) en ligne droite reviendrait à dire que l'aire baisse de 6 cm² chaque fois que $x$ augmente de 1 cm, ce qui est faux.",
+        "T3 représente l'aire retirée, $x^{2}$ : elle augmente quand $x$ augmente, alors que l'aire restante diminue."
+      ],
+      "hint": "Calcule $S$ pour $x = 3$ et cherche le tracé qui passe par ce point.",
+      "estimated_duration_s": 90,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 4, classe de 4e, Proportionnalité, fonctions, Fonctions, Objectifs d'apprentissage : « Représenter l'expression d'une grandeur en fonction d'une autre par un graphique. »"
+    },
+    {
+      "id": "EX-J042-E-02",
+      "skill_id": "J042",
+      "level": "entrainement",
+      "type": "numerique",
+      "statement": "Une balle lâchée de 45 m de haut est, au bout de $t$ secondes, à la hauteur $h = 45 - 5 \\times t^{2}$, en m. Dans le tableau de valeurs, que vaut $h$ pour $t = 1{,}5$ ?",
+      "image": null,
+      "answer": {
+        "value": 33.75,
+        "unit": "m"
+      },
+      "solution_steps": [
+        "On remplace $t$ par 1,5 en respectant les priorités : le carré d'abord, puis la multiplication, puis la soustraction.",
+        "$1{,}5^{2} = 1{,}5 \\times 1{,}5 = 2{,}25$.",
+        "$5 \\times 2{,}25 = 11{,}25$, puis $h = 45 - 11{,}25 = 33{,}75$ m.",
+        "Erreurs à éviter : $t^{2}$ n'est pas $2 \\times t$ (on trouverait 30 m), et le carré porte sur $t$ seul, pas sur $5 \\times t$ (on trouverait un nombre négatif).",
+        "Avec d'autres valeurs (0 s : 45 m ; 1 s : 40 m ; 2 s : 25 m ; 3 s : 0 m), les points ne sont pas alignés : on les relie par une courbe, pas par une droite."
+      ],
+      "hint": "Calcule d'abord $1{,}5 \\times 1{,}5$.",
+      "estimated_duration_s": 75,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 4, classe de 4e, Proportionnalité, fonctions, Fonctions, Objectifs d'apprentissage : « Représenter l'expression d'une grandeur en fonction d'une autre par un graphique. »"
+    },
+    {
+      "id": "EX-J042-M-01",
+      "skill_id": "J042",
+      "level": "maitrise",
+      "type": "vrai_faux",
+      "statement": "Une place de cinéma coûte 7,50 €. Léo a placé les points de son tableau de valeurs, puis les a reliés. Vrai ou faux : chaque point de ses segments correspond à un achat possible.",
+      "image": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 250 328\" width=\"250\" height=\"328\" font-family=\"system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif\" role=\"img\"><title>Repère ; en abscisse : nombre de places, en ordonnée : prix (€), avec des points marqués d'une croix et reliés par des segments</title><rect width=\"100%\" height=\"100%\" fill=\"#ffffff\"/><line x1=\"34.0\" y1=\"294.0\" x2=\"34.0\" y2=\"34.0\" stroke=\"#e2e8f0\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"60.0\" y1=\"294.0\" x2=\"60.0\" y2=\"34.0\" stroke=\"#e2e8f0\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"86.0\" y1=\"294.0\" x2=\"86.0\" y2=\"34.0\" stroke=\"#e2e8f0\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"112.0\" y1=\"294.0\" x2=\"112.0\" y2=\"34.0\" stroke=\"#e2e8f0\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"138.0\" y1=\"294.0\" x2=\"138.0\" y2=\"34.0\" stroke=\"#e2e8f0\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"164.0\" y1=\"294.0\" x2=\"164.0\" y2=\"34.0\" stroke=\"#e2e8f0\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"190.0\" y1=\"294.0\" x2=\"190.0\" y2=\"34.0\" stroke=\"#e2e8f0\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"216.0\" y1=\"294.0\" x2=\"216.0\" y2=\"34.0\" stroke=\"#e2e8f0\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"34.0\" y1=\"294.0\" x2=\"216.0\" y2=\"294.0\" stroke=\"#e2e8f0\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"34.0\" y1=\"268.0\" x2=\"216.0\" y2=\"268.0\" stroke=\"#e2e8f0\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"34.0\" y1=\"242.0\" x2=\"216.0\" y2=\"242.0\" stroke=\"#e2e8f0\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"34.0\" y1=\"216.0\" x2=\"216.0\" y2=\"216.0\" stroke=\"#e2e8f0\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"34.0\" y1=\"190.0\" x2=\"216.0\" y2=\"190.0\" stroke=\"#e2e8f0\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"34.0\" y1=\"164.0\" x2=\"216.0\" y2=\"164.0\" stroke=\"#e2e8f0\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"34.0\" y1=\"138.0\" x2=\"216.0\" y2=\"138.0\" stroke=\"#e2e8f0\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"34.0\" y1=\"112.0\" x2=\"216.0\" y2=\"112.0\" stroke=\"#e2e8f0\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"34.0\" y1=\"86.0\" x2=\"216.0\" y2=\"86.0\" stroke=\"#e2e8f0\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"34.0\" y1=\"60.0\" x2=\"216.0\" y2=\"60.0\" stroke=\"#e2e8f0\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"34.0\" y1=\"34.0\" x2=\"216.0\" y2=\"34.0\" stroke=\"#e2e8f0\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"21.0\" y1=\"294.0\" x2=\"229.0\" y2=\"294.0\" stroke=\"#334155\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><path d=\"M235.0,294.0 l-10,-5 v10 z\" fill=\"#334155\"/><line x1=\"34.0\" y1=\"307.0\" x2=\"34.0\" y2=\"21.0\" stroke=\"#334155\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><path d=\"M34.0,15.0 l-5,10 h10 z\" fill=\"#334155\"/><line x1=\"34.0\" y1=\"290.0\" x2=\"34.0\" y2=\"298.0\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><line x1=\"60.0\" y1=\"290.0\" x2=\"60.0\" y2=\"298.0\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><text x=\"60.0\" y=\"311.0\" font-size=\"11\" text-anchor=\"middle\" fill=\"#334155\">1</text><line x1=\"86.0\" y1=\"290.0\" x2=\"86.0\" y2=\"298.0\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><text x=\"86.0\" y=\"311.0\" font-size=\"11\" text-anchor=\"middle\" fill=\"#334155\">2</text><line x1=\"112.0\" y1=\"290.0\" x2=\"112.0\" y2=\"298.0\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><text x=\"112.0\" y=\"311.0\" font-size=\"11\" text-anchor=\"middle\" fill=\"#334155\">3</text><line x1=\"138.0\" y1=\"290.0\" x2=\"138.0\" y2=\"298.0\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><text x=\"138.0\" y=\"311.0\" font-size=\"11\" text-anchor=\"middle\" fill=\"#334155\">4</text><line x1=\"164.0\" y1=\"290.0\" x2=\"164.0\" y2=\"298.0\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><text x=\"164.0\" y=\"311.0\" font-size=\"11\" text-anchor=\"middle\" fill=\"#334155\">5</text><line x1=\"190.0\" y1=\"290.0\" x2=\"190.0\" y2=\"298.0\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><text x=\"190.0\" y=\"311.0\" font-size=\"11\" text-anchor=\"middle\" fill=\"#334155\">6</text><line x1=\"216.0\" y1=\"290.0\" x2=\"216.0\" y2=\"298.0\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><text x=\"216.0\" y=\"311.0\" font-size=\"11\" text-anchor=\"middle\" fill=\"#334155\">7</text><line x1=\"30.0\" y1=\"294.0\" x2=\"38.0\" y2=\"294.0\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><line x1=\"30.0\" y1=\"268.0\" x2=\"38.0\" y2=\"268.0\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><text x=\"27.0\" y=\"272.0\" font-size=\"11\" text-anchor=\"end\" fill=\"#334155\">5</text><line x1=\"30.0\" y1=\"242.0\" x2=\"38.0\" y2=\"242.0\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><text x=\"27.0\" y=\"246.0\" font-size=\"11\" text-anchor=\"end\" fill=\"#334155\">10</text><line x1=\"30.0\" y1=\"216.0\" x2=\"38.0\" y2=\"216.0\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><text x=\"27.0\" y=\"220.0\" font-size=\"11\" text-anchor=\"end\" fill=\"#334155\">15</text><line x1=\"30.0\" y1=\"190.0\" x2=\"38.0\" y2=\"190.0\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><text x=\"27.0\" y=\"194.0\" font-size=\"11\" text-anchor=\"end\" fill=\"#334155\">20</text><line x1=\"30.0\" y1=\"164.0\" x2=\"38.0\" y2=\"164.0\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><text x=\"27.0\" y=\"168.0\" font-size=\"11\" text-anchor=\"end\" fill=\"#334155\">25</text><line x1=\"30.0\" y1=\"138.0\" x2=\"38.0\" y2=\"138.0\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><text x=\"27.0\" y=\"142.0\" font-size=\"11\" text-anchor=\"end\" fill=\"#334155\">30</text><line x1=\"30.0\" y1=\"112.0\" x2=\"38.0\" y2=\"112.0\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><text x=\"27.0\" y=\"116.0\" font-size=\"11\" text-anchor=\"end\" fill=\"#334155\">35</text><line x1=\"30.0\" y1=\"86.0\" x2=\"38.0\" y2=\"86.0\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><text x=\"27.0\" y=\"90.0\" font-size=\"11\" text-anchor=\"end\" fill=\"#334155\">40</text><line x1=\"30.0\" y1=\"60.0\" x2=\"38.0\" y2=\"60.0\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><text x=\"27.0\" y=\"64.0\" font-size=\"11\" text-anchor=\"end\" fill=\"#334155\">45</text><line x1=\"30.0\" y1=\"34.0\" x2=\"38.0\" y2=\"34.0\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><text x=\"27.0\" y=\"38.0\" font-size=\"11\" text-anchor=\"end\" fill=\"#334155\">50</text><text stroke=\"#ffffff\" stroke-width=\"3.5\" paint-order=\"stroke\" x=\"235.0\" y=\"325.0\" font-size=\"12\" text-anchor=\"end\" fill=\"#334155\">nombre de places</text><text stroke=\"#ffffff\" stroke-width=\"3.5\" paint-order=\"stroke\" x=\"43.0\" y=\"19.0\" font-size=\"12\" text-anchor=\"start\" fill=\"#334155\">prix (€)</text><path d=\"M34.0,294.0 L60.0,255.0 L86.0,216.0 L112.0,177.0 L138.0,138.0 L164.0,99.0 L190.0,60.0\" fill=\"none\" stroke=\"#2563eb\" stroke-width=\"2.2\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/><line x1=\"30.0\" y1=\"290.0\" x2=\"38.0\" y2=\"298.0\" stroke=\"#2563eb\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><line x1=\"30.0\" y1=\"298.0\" x2=\"38.0\" y2=\"290.0\" stroke=\"#2563eb\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><line x1=\"56.0\" y1=\"251.0\" x2=\"64.0\" y2=\"259.0\" stroke=\"#2563eb\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><line x1=\"56.0\" y1=\"259.0\" x2=\"64.0\" y2=\"251.0\" stroke=\"#2563eb\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><line x1=\"82.0\" y1=\"212.0\" x2=\"90.0\" y2=\"220.0\" stroke=\"#2563eb\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><line x1=\"82.0\" y1=\"220.0\" x2=\"90.0\" y2=\"212.0\" stroke=\"#2563eb\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><line x1=\"108.0\" y1=\"173.0\" x2=\"116.0\" y2=\"181.0\" stroke=\"#2563eb\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><line x1=\"108.0\" y1=\"181.0\" x2=\"116.0\" y2=\"173.0\" stroke=\"#2563eb\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><line x1=\"134.0\" y1=\"134.0\" x2=\"142.0\" y2=\"142.0\" stroke=\"#2563eb\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><line x1=\"134.0\" y1=\"142.0\" x2=\"142.0\" y2=\"134.0\" stroke=\"#2563eb\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><line x1=\"160.0\" y1=\"95.0\" x2=\"168.0\" y2=\"103.0\" stroke=\"#2563eb\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><line x1=\"160.0\" y1=\"103.0\" x2=\"168.0\" y2=\"95.0\" stroke=\"#2563eb\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><line x1=\"186.0\" y1=\"56.0\" x2=\"194.0\" y2=\"64.0\" stroke=\"#2563eb\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><line x1=\"186.0\" y1=\"64.0\" x2=\"194.0\" y2=\"56.0\" stroke=\"#2563eb\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><text x=\"28.0\" y=\"288.0\" font-size=\"12\" text-anchor=\"end\" fill=\"#334155\" font-weight=\"600\">O</text></svg>",
+      "answer": {
+        "value": false
+      },
+      "solution_steps": [
+        "Les croix sont bien placées : pour 4 places, $4 \\times 7{,}5 = 30$ €, et le point (4 ; 30) est sur le graphique.",
+        "Mais entre les croix (2 ; 15) et (3 ; 22,5), le segment passe par le point (2,5 ; 18,75) : il voudrait dire « 2,5 places pour 18,75 € ». On ne peut pas acheter 2,5 places.",
+        "Le nombre de places ne prend que des valeurs entières : 0, 1, 2, 3… Seules les croix correspondent à un achat. Réponse : faux.",
+        "C'est pourquoi on ne relie pas ces points : la représentation est un nuage de points. On relie les points seulement quand la grandeur en abscisse varie de façon continue, comme une durée ou une longueur."
+      ],
+      "hint": "Quelles valeurs le nombre de places peut-il prendre ?",
+      "estimated_duration_s": 60,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 4, classe de 4e, Proportionnalité, fonctions, Fonctions, Objectifs d'apprentissage : « Représenter l'expression d'une grandeur en fonction d'une autre par un graphique. »"
+    },
+    {
+      "id": "EX-J042-M-02",
+      "skill_id": "J042",
+      "level": "maitrise",
+      "type": "qcm",
+      "statement": "Le graphique donne la distance $d$, en m, qui sépare une luge de l'arrivée, en fonction du temps $t$, en secondes. Quelle formule a-t-on représentée ?",
+      "image": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 328 276\" width=\"328\" height=\"276\" font-family=\"system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif\" role=\"img\"><title>Repère ; en abscisse : temps (s), en ordonnée : distance (m), avec un tracé</title><rect width=\"100%\" height=\"100%\" fill=\"#ffffff\"/><line x1=\"34.0\" y1=\"242.0\" x2=\"34.0\" y2=\"34.0\" stroke=\"#e2e8f0\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"60.0\" y1=\"242.0\" x2=\"60.0\" y2=\"34.0\" stroke=\"#e2e8f0\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"86.0\" y1=\"242.0\" x2=\"86.0\" y2=\"34.0\" stroke=\"#e2e8f0\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"112.0\" y1=\"242.0\" x2=\"112.0\" y2=\"34.0\" stroke=\"#e2e8f0\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"138.0\" y1=\"242.0\" x2=\"138.0\" y2=\"34.0\" stroke=\"#e2e8f0\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"164.0\" y1=\"242.0\" x2=\"164.0\" y2=\"34.0\" stroke=\"#e2e8f0\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"190.0\" y1=\"242.0\" x2=\"190.0\" y2=\"34.0\" stroke=\"#e2e8f0\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"216.0\" y1=\"242.0\" x2=\"216.0\" y2=\"34.0\" stroke=\"#e2e8f0\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"242.0\" y1=\"242.0\" x2=\"242.0\" y2=\"34.0\" stroke=\"#e2e8f0\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"268.0\" y1=\"242.0\" x2=\"268.0\" y2=\"34.0\" stroke=\"#e2e8f0\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"294.0\" y1=\"242.0\" x2=\"294.0\" y2=\"34.0\" stroke=\"#e2e8f0\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"34.0\" y1=\"242.0\" x2=\"294.0\" y2=\"242.0\" stroke=\"#e2e8f0\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"34.0\" y1=\"216.0\" x2=\"294.0\" y2=\"216.0\" stroke=\"#e2e8f0\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"34.0\" y1=\"190.0\" x2=\"294.0\" y2=\"190.0\" stroke=\"#e2e8f0\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"34.0\" y1=\"164.0\" x2=\"294.0\" y2=\"164.0\" stroke=\"#e2e8f0\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"34.0\" y1=\"138.0\" x2=\"294.0\" y2=\"138.0\" stroke=\"#e2e8f0\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"34.0\" y1=\"112.0\" x2=\"294.0\" y2=\"112.0\" stroke=\"#e2e8f0\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"34.0\" y1=\"86.0\" x2=\"294.0\" y2=\"86.0\" stroke=\"#e2e8f0\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"34.0\" y1=\"60.0\" x2=\"294.0\" y2=\"60.0\" stroke=\"#e2e8f0\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"34.0\" y1=\"34.0\" x2=\"294.0\" y2=\"34.0\" stroke=\"#e2e8f0\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"21.0\" y1=\"242.0\" x2=\"307.0\" y2=\"242.0\" stroke=\"#334155\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><path d=\"M313.0,242.0 l-10,-5 v10 z\" fill=\"#334155\"/><line x1=\"34.0\" y1=\"255.0\" x2=\"34.0\" y2=\"21.0\" stroke=\"#334155\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><path d=\"M34.0,15.0 l-5,10 h10 z\" fill=\"#334155\"/><line x1=\"34.0\" y1=\"238.0\" x2=\"34.0\" y2=\"246.0\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><line x1=\"60.0\" y1=\"238.0\" x2=\"60.0\" y2=\"246.0\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><text x=\"60.0\" y=\"259.0\" font-size=\"11\" text-anchor=\"middle\" fill=\"#334155\">1</text><line x1=\"86.0\" y1=\"238.0\" x2=\"86.0\" y2=\"246.0\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><text x=\"86.0\" y=\"259.0\" font-size=\"11\" text-anchor=\"middle\" fill=\"#334155\">2</text><line x1=\"112.0\" y1=\"238.0\" x2=\"112.0\" y2=\"246.0\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><text x=\"112.0\" y=\"259.0\" font-size=\"11\" text-anchor=\"middle\" fill=\"#334155\">3</text><line x1=\"138.0\" y1=\"238.0\" x2=\"138.0\" y2=\"246.0\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><text x=\"138.0\" y=\"259.0\" font-size=\"11\" text-anchor=\"middle\" fill=\"#334155\">4</text><line x1=\"164.0\" y1=\"238.0\" x2=\"164.0\" y2=\"246.0\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><text x=\"164.0\" y=\"259.0\" font-size=\"11\" text-anchor=\"middle\" fill=\"#334155\">5</text><line x1=\"190.0\" y1=\"238.0\" x2=\"190.0\" y2=\"246.0\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><text x=\"190.0\" y=\"259.0\" font-size=\"11\" text-anchor=\"middle\" fill=\"#334155\">6</text><line x1=\"216.0\" y1=\"238.0\" x2=\"216.0\" y2=\"246.0\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><text x=\"216.0\" y=\"259.0\" font-size=\"11\" text-anchor=\"middle\" fill=\"#334155\">7</text><line x1=\"242.0\" y1=\"238.0\" x2=\"242.0\" y2=\"246.0\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><text x=\"242.0\" y=\"259.0\" font-size=\"11\" text-anchor=\"middle\" fill=\"#334155\">8</text><line x1=\"268.0\" y1=\"238.0\" x2=\"268.0\" y2=\"246.0\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><text x=\"268.0\" y=\"259.0\" font-size=\"11\" text-anchor=\"middle\" fill=\"#334155\">9</text><line x1=\"294.0\" y1=\"238.0\" x2=\"294.0\" y2=\"246.0\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><text x=\"294.0\" y=\"259.0\" font-size=\"11\" text-anchor=\"middle\" fill=\"#334155\">10</text><line x1=\"30.0\" y1=\"242.0\" x2=\"38.0\" y2=\"242.0\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><line x1=\"30.0\" y1=\"216.0\" x2=\"38.0\" y2=\"216.0\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><text x=\"27.0\" y=\"220.0\" font-size=\"11\" text-anchor=\"end\" fill=\"#334155\">5</text><line x1=\"30.0\" y1=\"190.0\" x2=\"38.0\" y2=\"190.0\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><text x=\"27.0\" y=\"194.0\" font-size=\"11\" text-anchor=\"end\" fill=\"#334155\">10</text><line x1=\"30.0\" y1=\"164.0\" x2=\"38.0\" y2=\"164.0\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><text x=\"27.0\" y=\"168.0\" font-size=\"11\" text-anchor=\"end\" fill=\"#334155\">15</text><line x1=\"30.0\" y1=\"138.0\" x2=\"38.0\" y2=\"138.0\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><text x=\"27.0\" y=\"142.0\" font-size=\"11\" text-anchor=\"end\" fill=\"#334155\">20</text><line x1=\"30.0\" y1=\"112.0\" x2=\"38.0\" y2=\"112.0\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><text x=\"27.0\" y=\"116.0\" font-size=\"11\" text-anchor=\"end\" fill=\"#334155\">25</text><line x1=\"30.0\" y1=\"86.0\" x2=\"38.0\" y2=\"86.0\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><text x=\"27.0\" y=\"90.0\" font-size=\"11\" text-anchor=\"end\" fill=\"#334155\">30</text><line x1=\"30.0\" y1=\"60.0\" x2=\"38.0\" y2=\"60.0\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><text x=\"27.0\" y=\"64.0\" font-size=\"11\" text-anchor=\"end\" fill=\"#334155\">35</text><line x1=\"30.0\" y1=\"34.0\" x2=\"38.0\" y2=\"34.0\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><text x=\"27.0\" y=\"38.0\" font-size=\"11\" text-anchor=\"end\" fill=\"#334155\">40</text><text stroke=\"#ffffff\" stroke-width=\"3.5\" paint-order=\"stroke\" x=\"313.0\" y=\"273.0\" font-size=\"12\" text-anchor=\"end\" fill=\"#334155\">temps (s)</text><text stroke=\"#ffffff\" stroke-width=\"3.5\" paint-order=\"stroke\" x=\"43.0\" y=\"19.0\" font-size=\"12\" text-anchor=\"start\" fill=\"#334155\">distance (m)</text><path d=\"M34.0,34.0 L35.1,34.0 L36.2,34.0 L37.2,34.0 L38.3,34.1 L39.4,34.1 L40.5,34.1 L41.6,34.2 L42.7,34.2 L43.8,34.3 L44.8,34.4 L45.9,34.4 L47.0,34.5 L48.1,34.6 L49.2,34.7 L50.2,34.8 L51.3,34.9 L52.4,35.0 L53.5,35.2 L54.6,35.3 L55.7,35.4 L56.8,35.6 L57.8,35.7 L58.9,35.9 L60.0,36.1 L61.1,36.3 L62.2,36.4 L63.2,36.6 L64.3,36.8 L65.4,37.0 L66.5,37.2 L67.6,37.5 L68.7,37.7 L69.8,37.9 L70.8,38.2 L71.9,38.4 L73.0,38.7 L74.1,38.9 L75.2,39.2 L76.2,39.5 L77.3,39.8 L78.4,40.1 L79.5,40.4 L80.6,40.7 L81.7,41.0 L82.8,41.3 L83.8,41.6 L84.9,42.0 L86.0,42.3 L87.1,42.7 L88.2,43.0 L89.2,43.4 L90.3,43.8 L91.4,44.1 L92.5,44.5 L93.6,44.9 L94.7,45.3 L95.8,45.7 L96.8,46.1 L97.9,46.6 L99.0,47.0 L100.1,47.4 L101.2,47.9 L102.2,48.3 L103.3,48.8 L104.4,49.3 L105.5,49.7 L106.6,50.2 L107.7,50.7 L108.8,51.2 L109.8,51.7 L110.9,52.2 L112.0,52.7 L113.1,53.2 L114.2,53.8 L115.2,54.3 L116.3,54.9 L117.4,55.4 L118.5,56.0 L119.6,56.5 L120.7,57.1 L121.8,57.7 L122.8,58.3 L123.9,58.9 L125.0,59.5 L126.1,60.1 L127.2,60.7 L128.2,61.3 L129.3,62.0 L130.4,62.6 L131.5,63.2 L132.6,63.9 L133.7,64.6 L134.8,65.2 L135.8,65.9 L136.9,66.6 L138.0,67.3 L139.1,68.0 L140.2,68.7 L141.2,69.4 L142.3,70.1 L143.4,70.8 L144.5,71.6 L145.6,72.3 L146.7,73.1 L147.8,73.8 L148.8,74.6 L149.9,75.3 L151.0,76.1 L152.1,76.9 L153.2,77.7 L154.2,78.5 L155.3,79.3 L156.4,80.1 L157.5,80.9 L158.6,81.8 L159.7,82.6 L160.8,83.4 L161.8,84.3 L162.9,85.1 L164.0,86.0 L165.1,86.9 L166.2,87.7 L167.2,88.6 L168.3,89.5 L169.4,90.4 L170.5,91.3 L171.6,92.2 L172.7,93.2 L173.8,94.1 L174.8,95.0 L175.9,96.0 L177.0,96.9 L178.1,97.9 L179.2,98.8 L180.2,99.8 L181.3,100.8 L182.4,101.8 L183.5,102.8 L184.6,103.8 L185.7,104.8 L186.8,105.8 L187.8,106.8 L188.9,107.8 L190.0,108.9 L191.1,109.9 L192.2,111.0 L193.2,112.0 L194.3,113.1 L195.4,114.2 L196.5,115.2 L197.6,116.3 L198.7,117.4 L199.8,118.5 L200.8,119.6 L201.9,120.8 L203.0,121.9 L204.1,123.0 L205.2,124.1 L206.2,125.3 L207.3,126.4 L208.4,127.6 L209.5,128.8 L210.6,129.9 L211.7,131.1 L212.8,132.3 L213.8,133.5 L214.9,134.7 L216.0,135.9 L217.1,137.1 L218.2,138.4 L219.2,139.6 L220.3,140.8 L221.4,142.1 L222.5,143.3 L223.6,144.6 L224.7,145.9 L225.8,147.1 L226.8,148.4 L227.9,149.7 L229.0,151.0 L230.1,152.3 L231.2,153.6 L232.2,154.9 L233.3,156.3 L234.4,157.6 L235.5,158.9 L236.6,160.3 L237.7,161.6 L238.8,163.0 L239.8,164.4 L240.9,165.7 L242.0,167.1 L243.1,168.5 L244.2,169.9 L245.2,171.3 L246.3,172.7 L247.4,174.1 L248.5,175.6 L249.6,177.0 L250.7,178.4 L251.8,179.9 L252.8,181.3 L253.9,182.8 L255.0,184.3 L256.1,185.8 L257.2,187.2 L258.2,188.7 L259.3,190.2 L260.4,191.7 L261.5,193.2 L262.6,194.8 L263.7,196.3 L264.8,197.8 L265.8,199.4 L266.9,200.9 L268.0,202.5 L269.1,204.0 L270.2,205.6 L271.2,207.2 L272.3,208.8 L273.4,210.4 L274.5,212.0 L275.6,213.6 L276.7,215.2 L277.8,216.8 L278.8,218.4 L279.9,220.1 L281.0,221.7 L282.1,223.4 L283.2,225.0 L284.2,226.7 L285.3,228.4 L286.4,230.0 L287.5,231.7 L288.6,233.4 L289.7,235.1 L290.8,236.8 L291.8,238.5 L292.9,240.3 L294.0,242.0\" fill=\"none\" stroke=\"#2563eb\" stroke-width=\"2.2\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/><text x=\"28.0\" y=\"236.0\" font-size=\"12\" text-anchor=\"end\" fill=\"#334155\" font-weight=\"600\">O</text></svg>",
+      "choices": [
+        {
+          "key": "a",
+          "text": "$d = 40 - 0{,}4 \\times t^{2}$",
+          "misconception": null
+        },
+        {
+          "key": "b",
+          "text": "$d = 40 - 4 \\times t$",
+          "misconception": "L'élève ne vérifie que les points (0 ; 40) et (10 ; 0), qui sont bien sur la courbe. Mais cette formule donne 20 pour $t = 5$, alors que la courbe passe par (5 ; 30) : sa représentation est une droite."
+        },
+        {
+          "key": "c",
+          "text": "$d = 0{,}4 \\times t^{2}$",
+          "misconception": "L'élève prend la distance parcourue depuis le départ pour la distance à l'arrivée : cette formule donne 0 pour $t = 0$, alors que la courbe part de 40."
+        },
+        {
+          "key": "d",
+          "text": "$d = 40 - 0{,}4 \\times t$",
+          "misconception": "L'élève ne vérifie que le point de départ (0 ; 40). Pour $t = 10$, cette formule donne 36, alors que la courbe arrive à 0."
+        }
+      ],
+      "answer": {
+        "value": "a"
+      },
+      "solution_steps": [
+        "On lit sur la courbe des points sûrs, aux nœuds du quadrillage : (0 ; 40), (5 ; 30) et (10 ; 0).",
+        "On teste chaque formule. $40 - 0{,}4 \\times t^{2}$ donne 40 pour $t = 0$, $40 - 0{,}4 \\times 25 = 30$ pour $t = 5$ et $40 - 0{,}4 \\times 100 = 0$ pour $t = 10$ : les trois points conviennent.",
+        "$40 - 4 \\times t$ donne 20 pour $t = 5$ ; $0{,}4 \\times t^{2}$ donne 0 pour $t = 0$ ; $40 - 0{,}4 \\times t$ donne 36 pour $t = 10$. Ces trois formules ne conviennent pas.",
+        "La courbe n'est pas une droite : la luge accélère, la distance diminue de plus en plus vite. La formule représentée est $d = 40 - 0{,}4 \\times t^{2}$."
+      ],
+      "hint": "Lis sur le graphique la distance au bout de 5 s, puis teste chaque formule avec $t = 5$.",
+      "estimated_duration_s": 120,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 4, classe de 4e, Proportionnalité, fonctions, Fonctions, Objectifs d'apprentissage : « Représenter l'expression d'une grandeur en fonction d'une autre par un graphique. »"
     },
     {
       "id": "EX-J044-D-01",

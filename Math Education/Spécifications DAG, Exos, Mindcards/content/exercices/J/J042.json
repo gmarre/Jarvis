@@ -1,0 +1,188 @@
+[
+  {
+    "id": "EX-J042-D-01",
+    "skill_id": "J042",
+    "level": "decouverte",
+    "type": "qcm",
+    "statement": "Une bougie brûle : au bout de $t$ heures, sa hauteur en cm est $h = 20 - 2{,}5 \\times t$.\n\n$\\begin{array}{|c|c|c|c|}\\hline t & 0 & 2 & 4 \\\\ \\hline h & 20 & 15 & 10 \\\\ \\hline\\end{array}$\n\nQuel tracé représente $h$ en fonction de $t$ ?",
+    "image": "figures/EX-J042-D-01",
+    "choices": [
+      {
+        "key": "a",
+        "text": "Le tracé T1",
+        "misconception": "L'élève inverse les axes : il porte la hauteur en abscisse et la durée en ordonnée. T1 passe par (20 ; 0), (15 ; 2) et (10 ; 4)."
+      },
+      {
+        "key": "b",
+        "text": "Le tracé T2",
+        "misconception": "L'élève croit que la hauteur augmente avec le temps : T2 part de 0 et monte de 2,5 cm par heure, comme la longueur de bougie déjà brûlée."
+      },
+      {
+        "key": "c",
+        "text": "Le tracé T3",
+        "misconception": null
+      }
+    ],
+    "answer": {
+      "value": "c"
+    },
+    "solution_steps": [
+      "Chaque colonne du tableau donne un point : l'abscisse est la durée $t$, l'ordonnée la hauteur $h$. Les points sont (0 ; 20), (2 ; 15) et (4 ; 10).",
+      "Sur l'axe vertical, une graduation vaut 2 cm : le point (0 ; 20) est tout en haut de l'axe des ordonnées. Seul T3 part de ce point.",
+      "T3 passe aussi par (2 ; 15) et (4 ; 10) : il représente $h$ en fonction de $t$. La durée varie de façon continue : on relie donc les points.",
+      "T1 passe par (20 ; 0), (15 ; 2) et (10 ; 4) : les coordonnées sont inversées. T2 monte, alors que la bougie raccourcit.",
+      "La bougie est entièrement consumée quand $h = 0$, au bout de 8 h : T3 coupe l'axe des abscisses en 8."
+    ],
+    "hint": "Pour chaque point, l'abscisse est la durée et l'ordonnée la hauteur. Vérifie les trois points du tableau.",
+    "estimated_duration_s": 60,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, classe de 4e, Proportionnalité, fonctions, Fonctions, Objectifs d'apprentissage : « Représenter l'expression d'une grandeur en fonction d'une autre par un graphique. »"
+  },
+  {
+    "id": "EX-J042-D-02",
+    "skill_id": "J042",
+    "level": "decouverte",
+    "type": "vrai_faux",
+    "statement": "Un abonnement coûte $p = 6 \\times n + 15$ euros pour $n$ mois. Vrai ou faux : le point (5 ; 45) est sur la représentation graphique de $p$ en fonction de $n$.",
+    "image": null,
+    "answer": {
+      "value": true
+    },
+    "solution_steps": [
+      "Le point (5 ; 45) a pour abscisse $n = 5$ et pour ordonnée $p = 45$.",
+      "Pour $n = 5$, la formule donne $p = 6 \\times 5 + 15 = 30 + 15 = 45$.",
+      "On retrouve l'ordonnée 45 : le point est sur la représentation. Réponse : vrai.",
+      "Le point (45 ; 5), lui, n'y est pas : pour $n = 45$, $p = 6 \\times 45 + 15 = 285$. L'ordre des coordonnées compte : l'abscisse d'abord."
+    ],
+    "hint": "Remplace $n$ par l'abscisse du point et compare le résultat à son ordonnée.",
+    "estimated_duration_s": 45,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, classe de 4e, Proportionnalité, fonctions, Fonctions, Objectifs d'apprentissage : « Représenter l'expression d'une grandeur en fonction d'une autre par un graphique. »"
+  },
+  {
+    "id": "EX-J042-E-01",
+    "skill_id": "J042",
+    "level": "entrainement",
+    "type": "qcm",
+    "statement": "D'un carré de 6 cm de côté, on retire un carré de côté $x$ cm. L'aire restante est $S = 36 - x^{2}$. Quel tracé représente $S$ en fonction de $x$ ?",
+    "image": "figures/EX-J042-E-01",
+    "choices": [
+      {
+        "key": "a",
+        "text": "Le tracé T1",
+        "misconception": "L'élève calcule seulement les valeurs extrêmes, 36 pour $x = 0$ et 0 pour $x = 6$, et les relie par une droite. Pour $x = 3$, la formule donne 27, mais T1 passe par 18."
+      },
+      {
+        "key": "b",
+        "text": "Le tracé T2",
+        "misconception": null
+      },
+      {
+        "key": "c",
+        "text": "Le tracé T3",
+        "misconception": "L'élève représente l'aire retirée, $x^{2}$, au lieu de l'aire restante : T3 part de 0 et monte, alors que l'aire restante diminue quand $x$ augmente."
+      }
+    ],
+    "answer": {
+      "value": "b"
+    },
+    "solution_steps": [
+      "On calcule quelques valeurs : pour $x = 0$, $S = 36$ ; pour $x = 3$, $S = 36 - 9 = 27$ ; pour $x = 6$, $S = 36 - 36 = 0$.",
+      "Le tracé cherché part de (0 ; 36) et arrive en (6 ; 0) : T1 et T2 passent par ces deux points, T3 non.",
+      "Le point (3 ; 27) est sur T2, pas sur T1, qui passe par (3 ; 18). La réponse est T2.",
+      "La représentation n'est pas une droite : relier (0 ; 36) et (6 ; 0) en ligne droite reviendrait à dire que l'aire baisse de 6 cm² chaque fois que $x$ augmente de 1 cm, ce qui est faux.",
+      "T3 représente l'aire retirée, $x^{2}$ : elle augmente quand $x$ augmente, alors que l'aire restante diminue."
+    ],
+    "hint": "Calcule $S$ pour $x = 3$ et cherche le tracé qui passe par ce point.",
+    "estimated_duration_s": 90,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, classe de 4e, Proportionnalité, fonctions, Fonctions, Objectifs d'apprentissage : « Représenter l'expression d'une grandeur en fonction d'une autre par un graphique. »"
+  },
+  {
+    "id": "EX-J042-E-02",
+    "skill_id": "J042",
+    "level": "entrainement",
+    "type": "numerique",
+    "statement": "Une balle lâchée de 45 m de haut est, au bout de $t$ secondes, à la hauteur $h = 45 - 5 \\times t^{2}$, en m. Dans le tableau de valeurs, que vaut $h$ pour $t = 1{,}5$ ?",
+    "image": null,
+    "answer": {
+      "value": 33.75,
+      "unit": "m"
+    },
+    "solution_steps": [
+      "On remplace $t$ par 1,5 en respectant les priorités : le carré d'abord, puis la multiplication, puis la soustraction.",
+      "$1{,}5^{2} = 1{,}5 \\times 1{,}5 = 2{,}25$.",
+      "$5 \\times 2{,}25 = 11{,}25$, puis $h = 45 - 11{,}25 = 33{,}75$ m.",
+      "Erreurs à éviter : $t^{2}$ n'est pas $2 \\times t$ (on trouverait 30 m), et le carré porte sur $t$ seul, pas sur $5 \\times t$ (on trouverait un nombre négatif).",
+      "Avec d'autres valeurs (0 s : 45 m ; 1 s : 40 m ; 2 s : 25 m ; 3 s : 0 m), les points ne sont pas alignés : on les relie par une courbe, pas par une droite."
+    ],
+    "hint": "Calcule d'abord $1{,}5 \\times 1{,}5$.",
+    "estimated_duration_s": 75,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, classe de 4e, Proportionnalité, fonctions, Fonctions, Objectifs d'apprentissage : « Représenter l'expression d'une grandeur en fonction d'une autre par un graphique. »"
+  },
+  {
+    "id": "EX-J042-M-01",
+    "skill_id": "J042",
+    "level": "maitrise",
+    "type": "vrai_faux",
+    "statement": "Une place de cinéma coûte 7,50 €. Léo a placé les points de son tableau de valeurs, puis les a reliés. Vrai ou faux : chaque point de ses segments correspond à un achat possible.",
+    "image": "figures/EX-J042-M-01",
+    "answer": {
+      "value": false
+    },
+    "solution_steps": [
+      "Les croix sont bien placées : pour 4 places, $4 \\times 7{,}5 = 30$ €, et le point (4 ; 30) est sur le graphique.",
+      "Mais entre les croix (2 ; 15) et (3 ; 22,5), le segment passe par le point (2,5 ; 18,75) : il voudrait dire « 2,5 places pour 18,75 € ». On ne peut pas acheter 2,5 places.",
+      "Le nombre de places ne prend que des valeurs entières : 0, 1, 2, 3… Seules les croix correspondent à un achat. Réponse : faux.",
+      "C'est pourquoi on ne relie pas ces points : la représentation est un nuage de points. On relie les points seulement quand la grandeur en abscisse varie de façon continue, comme une durée ou une longueur."
+    ],
+    "hint": "Quelles valeurs le nombre de places peut-il prendre ?",
+    "estimated_duration_s": 60,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, classe de 4e, Proportionnalité, fonctions, Fonctions, Objectifs d'apprentissage : « Représenter l'expression d'une grandeur en fonction d'une autre par un graphique. »"
+  },
+  {
+    "id": "EX-J042-M-02",
+    "skill_id": "J042",
+    "level": "maitrise",
+    "type": "qcm",
+    "statement": "Le graphique donne la distance $d$, en m, qui sépare une luge de l'arrivée, en fonction du temps $t$, en secondes. Quelle formule a-t-on représentée ?",
+    "image": "figures/EX-J042-M-02",
+    "choices": [
+      {
+        "key": "a",
+        "text": "$d = 40 - 0{,}4 \\times t^{2}$",
+        "misconception": null
+      },
+      {
+        "key": "b",
+        "text": "$d = 40 - 4 \\times t$",
+        "misconception": "L'élève ne vérifie que les points (0 ; 40) et (10 ; 0), qui sont bien sur la courbe. Mais cette formule donne 20 pour $t = 5$, alors que la courbe passe par (5 ; 30) : sa représentation est une droite."
+      },
+      {
+        "key": "c",
+        "text": "$d = 0{,}4 \\times t^{2}$",
+        "misconception": "L'élève prend la distance parcourue depuis le départ pour la distance à l'arrivée : cette formule donne 0 pour $t = 0$, alors que la courbe part de 40."
+      },
+      {
+        "key": "d",
+        "text": "$d = 40 - 0{,}4 \\times t$",
+        "misconception": "L'élève ne vérifie que le point de départ (0 ; 40). Pour $t = 10$, cette formule donne 36, alors que la courbe arrive à 0."
+      }
+    ],
+    "answer": {
+      "value": "a"
+    },
+    "solution_steps": [
+      "On lit sur la courbe des points sûrs, aux nœuds du quadrillage : (0 ; 40), (5 ; 30) et (10 ; 0).",
+      "On teste chaque formule. $40 - 0{,}4 \\times t^{2}$ donne 40 pour $t = 0$, $40 - 0{,}4 \\times 25 = 30$ pour $t = 5$ et $40 - 0{,}4 \\times 100 = 0$ pour $t = 10$ : les trois points conviennent.",
+      "$40 - 4 \\times t$ donne 20 pour $t = 5$ ; $0{,}4 \\times t^{2}$ donne 0 pour $t = 0$ ; $40 - 0{,}4 \\times t$ donne 36 pour $t = 10$. Ces trois formules ne conviennent pas.",
+      "La courbe n'est pas une droite : la luge accélère, la distance diminue de plus en plus vite. La formule représentée est $d = 40 - 0{,}4 \\times t^{2}$."
+    ],
+    "hint": "Lis sur le graphique la distance au bout de 5 s, puis teste chaque formule avec $t = 5$.",
+    "estimated_duration_s": 120,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, classe de 4e, Proportionnalité, fonctions, Fonctions, Objectifs d'apprentissage : « Représenter l'expression d'une grandeur en fonction d'une autre par un graphique. »"
+  }
+]

@@ -1,0 +1,185 @@
+[
+  {
+    "id": "EX-J041-D-01",
+    "skill_id": "J041",
+    "level": "decouverte",
+    "type": "qcm",
+    "statement": "Dans un carré de 8 cm de côté, on découpe un coin carré de côté $x$ cm. Quelle formule donne l'aire restante $A$, en cm² ?",
+    "image": "figures/EX-J041-D-01",
+    "choices": [
+      {
+        "key": "a",
+        "text": "$A = 64 - 2x$",
+        "misconception": "L'élève confond $x^{2}$ et $2x$ : l'aire du carré découpé est $x \\times x$, pas $x + x$."
+      },
+      {
+        "key": "b",
+        "text": "$A = 8 - x$",
+        "misconception": "L'élève soustrait les côtés au lieu des aires : $8 - x$ est une longueur, pas une aire en cm²."
+      },
+      {
+        "key": "c",
+        "text": "$A = 64 - x^{2}$",
+        "misconception": null
+      },
+      {
+        "key": "d",
+        "text": "$A = 32 - 4x$",
+        "misconception": "L'élève travaille avec les périmètres : 32 cm est le périmètre du grand carré et $4x$ celui du carré découpé, pas leurs aires."
+      }
+    ],
+    "answer": {
+      "value": "c"
+    },
+    "solution_steps": [
+      "L'aire coloriée, c'est l'aire du grand carré moins l'aire du carré découpé.",
+      "Grand carré : $8 \\times 8 = 64$ cm². Carré découpé : $x \\times x = x^{2}$ cm².",
+      "Donc $A = 64 - x^{2}$ : c'est la proposition c.",
+      "Contrôle avec $x = 3$ : on retire $3 \\times 3 = 9$ cm², il reste 55 cm², et $64 - 3^{2} = 55$. Attention, $x = 2$ ne départage pas $x^{2}$ et $2x$, car $2 \\times 2 = 2 + 2$.",
+      "$x$ peut varier entre 0 et 8 : le carré découpé doit tenir dans le grand carré. Plus $x$ est grand, plus l'aire restante est petite."
+    ],
+    "hint": "Calcule l'aire du grand carré, puis celle du carré qu'on enlève.",
+    "estimated_duration_s": 60,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, classe de 4e, Proportionnalité, fonctions, Fonctions, Objectifs d'apprentissage : « Produire une formule littérale représentant la dépendance d'une grandeur en fonction d'une autre. »"
+  },
+  {
+    "id": "EX-J041-D-02",
+    "skill_id": "J041",
+    "level": "decouverte",
+    "type": "texte",
+    "statement": "Un rectangle a pour largeur $x$ cm et pour longueur $x + 5$ cm. Écris son périmètre $P$, en cm, en fonction de $x$.",
+    "image": null,
+    "answer": {
+      "value": "4x + 10",
+      "forme": "expression",
+      "variables": [
+        "x"
+      ],
+      "unit": "cm"
+    },
+    "solution_steps": [
+      "Le périmètre est la longueur du contour : deux largeurs et deux longueurs.",
+      "$P = 2 \\times x + 2 \\times (x + 5)$. Les parenthèses sont indispensables : on double toute la longueur, 5 compris.",
+      "On réduit : $2x + 2x + 10 = 4x + 10$.",
+      "Contrôle avec $x = 3$ : le rectangle mesure 3 cm sur 8 cm, son périmètre est $3 + 8 + 3 + 8 = 22$ cm, et $4 \\times 3 + 10 = 22$."
+    ],
+    "hint": "Écris d'abord le périmètre pour une largeur de 3 cm, puis remplace 3 par $x$.",
+    "estimated_duration_s": 75,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, classe de 4e, Proportionnalité, fonctions, Fonctions, Objectifs d'apprentissage : « Produire une formule littérale représentant la dépendance d'une grandeur en fonction d'une autre. »"
+  },
+  {
+    "id": "EX-J041-E-01",
+    "skill_id": "J041",
+    "level": "entrainement",
+    "type": "texte",
+    "statement": "Une salle coûte 80 €, plus 12 € par invité pour le repas et 15 € par invité pour l'animation. Écris, sous forme réduite, le prix $p$ en fonction du nombre $n$ d'invités.",
+    "image": null,
+    "answer": {
+      "value": "27n + 80",
+      "forme": "reduite",
+      "variables": [
+        "n"
+      ],
+      "unit": "€"
+    },
+    "solution_steps": [
+      "Pour $n$ invités, le repas coûte $12 \\times n = 12n$ euros et l'animation $15n$ euros. Les 80 € de la salle se paient une seule fois, quel que soit $n$.",
+      "$p = 80 + 12n + 15n$.",
+      "On réduit : $12n + 15n = 27n$, car chaque invité coûte $12 + 15 = 27$ euros. Donc $p = 80 + 27n$.",
+      "Contrôle avec 10 invités : $80 + 120 + 150 = 350$ €, et $80 + 27 \\times 10 = 350$. Écrire $107n$ ferait payer la salle une fois par invité."
+    ],
+    "hint": "Quelles dépenses changent avec le nombre d'invités, et laquelle ne change pas ?",
+    "estimated_duration_s": 90,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, classe de 4e, Proportionnalité, fonctions, Fonctions, Objectifs d'apprentissage : « Produire une formule littérale représentant la dépendance d'une grandeur en fonction d'une autre. »"
+  },
+  {
+    "id": "EX-J041-E-02",
+    "skill_id": "J041",
+    "level": "entrainement",
+    "type": "vrai_faux",
+    "statement": "Un rectangle de largeur $x$ cm a un périmètre de 20 cm. Zoé affirme : « Sa longueur, en cm, est $20 - x$. » A-t-elle raison ?",
+    "image": null,
+    "answer": {
+      "value": false
+    },
+    "solution_steps": [
+      "Le périmètre compte deux largeurs et deux longueurs : une largeur et une longueur font la moitié du périmètre, $20 \\div 2 = 10$ cm.",
+      "La longueur vaut donc $10 - x$ cm, pas $20 - x$ : Zoé enlève une seule largeur au périmètre entier.",
+      "Contrôle avec $x = 4$ : la longueur vaut $10 - 4 = 6$ cm, et $4 + 6 + 4 + 6 = 20$. Avec la formule de Zoé, la longueur vaudrait 16 cm et le périmètre $4 + 16 + 4 + 16 = 40$ cm.",
+      "Réponse : faux. La largeur $x$ ne peut d'ailleurs varier qu'entre 0 et 10."
+    ],
+    "hint": "Teste avec une largeur de 4 cm : quel périmètre obtiens-tu avec la longueur de Zoé ?",
+    "estimated_duration_s": 75,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, classe de 4e, Proportionnalité, fonctions, Fonctions, Objectifs d'apprentissage : « Produire une formule littérale représentant la dépendance d'une grandeur en fonction d'une autre. »"
+  },
+  {
+    "id": "EX-J041-M-01",
+    "skill_id": "J041",
+    "level": "maitrise",
+    "type": "qcm",
+    "statement": "Louer un vélo coûte 6 € pour les deux premières heures, puis 1,50 € par heure supplémentaire. Quelle formule donne le prix $p$ de $t$ heures de location, quand $t$ dépasse 2 ?",
+    "image": null,
+    "choices": [
+      {
+        "key": "a",
+        "text": "$p = 6 + 1{,}5 \\times t - 2$",
+        "misconception": "L'élève oublie les parenthèses : il retire 2 euros au prix au lieu de retirer 2 heures à la durée. Pour 4 h, il trouve 10 € au lieu de 9 €."
+      },
+      {
+        "key": "b",
+        "text": "$p = 6 + 1{,}5 \\times t$",
+        "misconception": "L'élève fait payer 1,50 € toutes les heures, y compris les deux premières, déjà comprises dans les 6 € : 12 € pour 4 h."
+      },
+      {
+        "key": "c",
+        "text": "$p = 1{,}5 \\times (t - 2)$",
+        "misconception": "L'élève oublie les 6 € des deux premières heures : il ne compte que les heures supplémentaires, 3 € pour 4 h."
+      },
+      {
+        "key": "d",
+        "text": "$p = 6 + 1{,}5 \\times (t - 2)$",
+        "misconception": null
+      }
+    ],
+    "answer": {
+      "value": "d"
+    },
+    "solution_steps": [
+      "Le prix comporte une partie fixe, 6 € pour les deux premières heures, et une partie qui dépend de $t$.",
+      "Les heures supplémentaires sont celles au-delà des deux premières : il y en a $t - 2$. Elles coûtent $1{,}5 \\times (t - 2)$ euros.",
+      "$p = 6 + 1{,}5 \\times (t - 2)$ : c'est la proposition d. Les parenthèses sont indispensables : c'est la durée $t - 2$ qu'on multiplie par 1,5.",
+      "Contrôle pour 4 h : 6 €, plus 2 heures supplémentaires à 1,50 €, soit 9 €. La formule d donne $6 + 1{,}5 \\times 2 = 9$ ; les formules a, b et c donnent 10 €, 12 € et 3 €."
+    ],
+    "hint": "Combien d'heures supplémentaires y a-t-il pour une location de 4 heures ? Teste chaque formule avec $t = 4$.",
+    "estimated_duration_s": 120,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, classe de 4e, Proportionnalité, fonctions, Fonctions, Objectifs d'apprentissage : « Produire une formule littérale représentant la dépendance d'une grandeur en fonction d'une autre. »"
+  },
+  {
+    "id": "EX-J041-M-02",
+    "skill_id": "J041",
+    "level": "maitrise",
+    "type": "numerique",
+    "statement": "On découpe un carré de côté $x$ cm à chaque coin d'une plaque de 24 cm sur 16 cm. Quand $x$ passe de 3 à 4, de combien l'aire restante diminue-t-elle, en cm² ?",
+    "image": null,
+    "answer": {
+      "value": 28,
+      "unit": "cm²"
+    },
+    "solution_steps": [
+      "L'aire restante est l'aire de la plaque moins celle des quatre carrés : $A = 24 \\times 16 - 4 \\times x^{2} = 384 - 4x^{2}$.",
+      "Pour $x = 3$ : $A = 384 - 4 \\times 9 = 384 - 36 = 348$ cm².",
+      "Pour $x = 4$ : $A = 384 - 4 \\times 16 = 384 - 64 = 320$ cm².",
+      "L'aire diminue de $348 - 320 = 28$ cm². Chaque carré passe de 9 cm² à 16 cm², soit 7 cm² de plus, et il y a quatre carrés : $4 \\times 7 = 28$.",
+      "Compter 1 cm² de plus par carré, comme si l'aire augmentait comme le côté, donnerait 4 cm² : l'aire d'un carré n'est pas proportionnelle à son côté."
+    ],
+    "hint": "Écris l'aire restante en fonction de $x$, puis calcule-la pour $x = 3$ et pour $x = 4$.",
+    "estimated_duration_s": 150,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, classe de 4e, Proportionnalité, fonctions, Fonctions, Objectifs d'apprentissage : « Comprendre la dépendance d'une grandeur en fonction d'une autre. »"
+  }
+]
