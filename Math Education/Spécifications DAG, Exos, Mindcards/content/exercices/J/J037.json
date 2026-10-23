@@ -1,0 +1,178 @@
+[
+  {
+    "id": "EX-J037-D-01",
+    "skill_id": "J037",
+    "level": "decouverte",
+    "type": "numerique",
+    "statement": "Au karting, le prix $P$ d'une séance, en euros, dépend du nombre de tours $n$ : $P = 3 \\times n + 5$. Pour 2 tours, $P = 3 \\times 2 + 5 = 11$.\n\n$$\\begin{array}{|l|c|c|c|} \\hline \\text{Tours } n \\text{} & 2 & 4 & 10 \\\\ \\hline \\text{Prix } P \\text{ (euros)} & 11 & ? & 35 \\\\ \\hline \\end{array}$$\n\nQuel prix écrire pour 4 tours ?",
+    "image": null,
+    "answer": {
+      "value": 17,
+      "unit": "€"
+    },
+    "solution_steps": [
+      "On remplace $n$ par 4 dans la formule : $P = 3 \\times 4 + 5$.",
+      "La multiplication passe avant l'addition : $3 \\times 4 = 12$, puis $12 + 5 = 17$.",
+      "Pour 4 tours, la séance coûte **17 €**.",
+      "Erreurs fréquentes : $3 \\times (4 + 5) = 27$, en faisant l'addition d'abord ; 22, le double de 11, alors que le prix n'est pas proportionnel au nombre de tours (les 5 € ne doublent pas)."
+    ],
+    "hint": "Fais comme pour 2 tours, en remplaçant $n$ par 4.",
+    "estimated_duration_s": 50,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, classe de 5e, Proportionnalité, fonctions, Fonctions : « Traduire la relation de dépendance entre deux grandeurs par un tableau de valeurs à partir d’une formule. »"
+  },
+  {
+    "id": "EX-J037-D-02",
+    "skill_id": "J037",
+    "level": "decouverte",
+    "type": "qcm",
+    "statement": "Une baignoire contient 20 L d'eau. On ouvre le robinet : au bout de $t$ minutes, elle contient $V = 12t + 20$ litres.\n\n$$\\begin{array}{|l|c|c|c|} \\hline \\text{Durée } t \\text{ (min)} & 0 & 5 & 10 \\\\ \\hline \\text{Volume } V \\text{ (L)} & ? & ? & ? \\\\ \\hline \\end{array}$$\n\nQuelles valeurs écrire dans la ligne du volume ?",
+    "image": null,
+    "choices": [
+      {
+        "key": "a",
+        "text": "0 ; 60 ; 120",
+        "misconception": "L'élève calcule seulement $12t$ et oublie d'ajouter les 20 L déjà présents."
+      },
+      {
+        "key": "b",
+        "text": "240 ; 300 ; 360",
+        "misconception": "L'élève fait l'addition avant la multiplication : $12 \\times (5 + 20) = 300$. Dans $12t + 20$, on multiplie d'abord."
+      },
+      {
+        "key": "c",
+        "text": "20 ; 32 ; 44",
+        "misconception": "L'élève ajoute 12 L d'une colonne à l'autre, comme si les colonnes étaient espacées de 1 minute. Elles sont espacées de 5 minutes : il faut ajouter $12 \\times 5 = 60$ L."
+      },
+      {
+        "key": "d",
+        "text": "20 ; 80 ; 140",
+        "misconception": null
+      }
+    ],
+    "answer": {
+      "value": "d"
+    },
+    "solution_steps": [
+      "$12t$ signifie $12 \\times t$. On remplace $t$ par chaque durée du tableau.",
+      "Pour $t = 0$ : $12 \\times 0 + 20 = 20$. Pour $t = 5$ : $12 \\times 5 + 20 = 80$. Pour $t = 10$ : $12 \\times 10 + 20 = 140$.",
+      "La ligne du volume est **20 ; 80 ; 140** : c'est la proposition d."
+    ],
+    "hint": "Remplace $t$ par 0, puis par 5, puis par 10. La multiplication passe avant l'addition.",
+    "estimated_duration_s": 75,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, classe de 5e, Proportionnalité, fonctions, Fonctions : « Produire un tableau de valeurs. »"
+  },
+  {
+    "id": "EX-J037-E-01",
+    "skill_id": "J037",
+    "level": "entrainement",
+    "type": "numerique",
+    "statement": "Au club de tir à l'arc, le prix $P$, en euros, pour $x$ séances est $P = 15 + 4{,}5x$.\n\n$$\\begin{array}{|l|c|c|c|} \\hline \\text{Séances } x \\text{} & 4 & 8 & 12 \\\\ \\hline \\text{Prix } P \\text{ (euros)} & ? & ? & ? \\\\ \\hline \\end{array}$$\n\nQuelle valeur écrire pour 8 séances ?",
+    "image": null,
+    "answer": {
+      "value": 51,
+      "unit": "€"
+    },
+    "solution_steps": [
+      "On remplace $x$ par 8 : $P = 15 + 4{,}5 \\times 8$.",
+      "La multiplication d'abord : $4{,}5 \\times 8 = 36$. Puis $15 + 36 = 51$.",
+      "Pour 8 séances, on paie **51 €**.",
+      "Erreurs fréquentes : $(15 + 4{,}5) \\times 8 = 156$, en additionnant d'abord ; 36, en oubliant les 15 € fixes."
+    ],
+    "hint": "Calcule d'abord $4{,}5x$ pour $x = 8$.",
+    "estimated_duration_s": 60,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, classe de 5e, Proportionnalité, fonctions, Fonctions : « Traduire la relation de dépendance entre deux grandeurs par un tableau de valeurs à partir d’une formule. »"
+  },
+  {
+    "id": "EX-J037-E-02",
+    "skill_id": "J037",
+    "level": "entrainement",
+    "type": "vrai_faux",
+    "statement": "L'aire $A$ d'une terrasse carrée de côté $c$ est donnée par $A = c^2$ ($c$ en m, $A$ en m²). Noé complète ce tableau :\n\n$$\\begin{array}{|l|c|c|c|} \\hline \\text{Côté } c \\text{ (m)} & 2 & 3 & 3{,}5 \\\\ \\hline \\text{Aire } A \\text{ (m}^2\\text{)} & 4 & 9 & 7 \\\\ \\hline \\end{array}$$\n\nA-t-il raison pour la dernière case ?",
+    "image": null,
+    "answer": {
+      "value": false
+    },
+    "solution_steps": [
+      "$c^2$ signifie $c \\times c$, et non $2 \\times c$.",
+      "Pour $c = 3{,}5$ : $3{,}5 \\times 3{,}5 = 12{,}25$. La dernière case doit contenir 12,25.",
+      "Pour la dernière case, Noé a calculé $3{,}5 \\times 2 = 7$ : il a confondu $c^2$ et $2c$. Il a **tort**.",
+      "Les deux premières cases sont justes : $2 \\times 2 = 4$ et $3 \\times 3 = 9$. Pour $c = 2$, $2c$ et $c^2$ valent tous deux 4 : ce cas ne permet pas de voir la confusion."
+    ],
+    "hint": "Que signifie le petit 2 de $c^2$ ?",
+    "estimated_duration_s": 75,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, classe de 5e, Proportionnalité, fonctions, Fonctions : « Traduire la relation de dépendance entre deux grandeurs par un tableau de valeurs à partir d’une formule. »"
+  },
+  {
+    "id": "EX-J037-M-01",
+    "skill_id": "J037",
+    "level": "maitrise",
+    "type": "numerique",
+    "statement": "Le prix $P$, en euros, de $n$ tee-shirts imprimés est $P = 8n + 25$. Le tableau a été commencé :\n\n$$\\begin{array}{|l|c|c|c|} \\hline \\text{Tee-shirts } n \\text{} & 5 & 10 & 20 \\\\ \\hline \\text{Prix } P & 65 & 105 & 185 \\\\ \\hline \\end{array}$$\n\nCombien de tee-shirts a-t-on commandés pour 145 € ?",
+    "image": null,
+    "answer": {
+      "value": 15,
+      "accepted": [
+        "15 tee-shirts",
+        "15 tee shirts",
+        "15 t-shirts"
+      ]
+    },
+    "solution_steps": [
+      "145 € est entre 105 € (10 tee-shirts) et 185 € (20 tee-shirts) : le nombre de tee-shirts est entre 10 et 20.",
+      "De 10 à 20 tee-shirts, le prix augmente de 80 € : chaque tee-shirt ajoute 8 €, comme l'indique $8n$.",
+      "De 105 € à 145 €, il y a 40 €, soit $40 \\div 8 = 5$ tee-shirts de plus : on essaie $n = 15$.",
+      "Vérification avec la formule : $8 \\times 15 + 25 = 120 + 25 = 145$. On a commandé **15 tee-shirts**.",
+      "Erreur fréquente : diviser 145 par 8 en oubliant les 25 € fixes ; le résultat, 18,125, n'est même pas un nombre entier de tee-shirts."
+    ],
+    "hint": "Entre quelles colonnes du tableau se trouve 145 € ? Essaie une valeur de $n$ entre les deux.",
+    "estimated_duration_s": 120,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, classe de 5e, Proportionnalité, fonctions, Fonctions : « Traduire la relation de dépendance entre deux grandeurs par un tableau de valeurs à partir d’une formule. »"
+  },
+  {
+    "id": "EX-J037-M-02",
+    "skill_id": "J037",
+    "level": "maitrise",
+    "type": "qcm",
+    "statement": "Un bocal vide pèse 350 g, chaque bille 6 g. Avec $n$ billes, le bocal pèse $T = 350 + 6n$ grammes, soit 410 g pour 10 billes.\n\nQuelle phrase est juste ?",
+    "image": null,
+    "choices": [
+      {
+        "key": "a",
+        "text": "Avec 20 billes, il pèse 820 g, le double de 410 g.",
+        "misconception": "L'élève croit la masse proportionnelle au nombre de billes et double 410 g. Mais le bocal vide, 350 g, ne double pas : seule la masse des billes double."
+      },
+      {
+        "key": "b",
+        "text": "Avec 20 billes, il pèse 7 120 g.",
+        "misconception": "L'élève fait l'addition avant la multiplication : $(350 + 6) \\times 20 = 7\\,120$."
+      },
+      {
+        "key": "c",
+        "text": "Avec 20 billes, il pèse 470 g.",
+        "misconception": null
+      },
+      {
+        "key": "d",
+        "text": "Avec 20 billes, il pèse 970 g.",
+        "misconception": "L'élève lit $6n$ en collant les chiffres : pour $n = 20$, il écrit 620 au lieu de $6 \\times 20 = 120$, puis $350 + 620 = 970$."
+      }
+    ],
+    "answer": {
+      "value": "c"
+    },
+    "solution_steps": [
+      "On remplace $n$ par 20 : $T = 350 + 6 \\times 20 = 350 + 120 = 470$.",
+      "Avec 20 billes, le bocal pèse **470 g** : c'est la phrase c.",
+      "Doubler le nombre de billes ne double pas la masse : les 60 g de billes deviennent 120 g, mais le bocal vide pèse toujours 350 g. La masse n'est pas proportionnelle au nombre de billes."
+    ],
+    "hint": "Calcule $T$ pour $n = 20$ avec la formule, sans partir de 410 g.",
+    "estimated_duration_s": 90,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, classe de 5e, Proportionnalité, fonctions, Fonctions : « Traduire la relation de dépendance entre deux grandeurs par un tableau de valeurs à partir d’une formule. »"
+  }
+]

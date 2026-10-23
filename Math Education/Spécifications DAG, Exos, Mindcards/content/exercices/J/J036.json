@@ -1,0 +1,180 @@
+[
+  {
+    "id": "EX-J036-D-01",
+    "skill_id": "J036",
+    "level": "decouverte",
+    "type": "numerique",
+    "statement": "Le tableau donne la masse d'un chiot en fonction de son âge. La première colonne donne l'âge, la seconde la masse.\n\n$$\\begin{array}{|c|c|} \\hline \\text{Âge (mois)} & \\text{Masse (kg)} \\\\ \\hline 2 & 3{,}2 \\\\ \\hline 3 & 4{,}5 \\\\ \\hline 4 & 5{,}6 \\\\ \\hline 5 & 6{,}4 \\\\ \\hline 6 & 7 \\\\ \\hline \\end{array}$$\n\nCombien pèse le chiot à 4 mois ?",
+    "image": null,
+    "answer": {
+      "value": 5.6,
+      "unit": "kg"
+    },
+    "solution_steps": [
+      "« La masse en fonction de l'âge » : pour chaque âge, le tableau donne une masse. On part donc de la colonne des âges.",
+      "On cherche 4 dans la colonne « Âge (mois) », puis on lit la case à côté, dans la colonne « Masse (kg) ».",
+      "À 4 mois, le chiot pèse **5,6 kg**.",
+      "Attention à ne pas lire la case voisine : 4,5 kg est la masse à 3 mois."
+    ],
+    "hint": "Repère la ligne du 4 dans la colonne des âges.",
+    "estimated_duration_s": 40,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, classe de 5e, Proportionnalité, fonctions, Fonctions : « Lire et interpréter un tableau de valeurs. »"
+  },
+  {
+    "id": "EX-J036-D-02",
+    "skill_id": "J036",
+    "level": "decouverte",
+    "type": "qcm",
+    "statement": "Le tableau donne le prix d'un parking en fonction de la durée de stationnement.\n\n$$\\begin{array}{|c|c|} \\hline \\text{Durée (h)} & \\text{Prix (euros)} \\\\ \\hline 1 & 2 \\\\ \\hline 2 & 3{,}50 \\\\ \\hline 3 & 5 \\\\ \\hline 4 & 6 \\\\ \\hline 5 & 6{,}50 \\\\ \\hline \\end{array}$$\n\nCombien de temps peut-on rester pour 5 € ?",
+    "image": null,
+    "choices": [
+      {
+        "key": "a",
+        "text": "6,5 h",
+        "misconception": "L'élève cherche 5 dans la colonne des durées au lieu de la colonne des prix, et donne la case à côté : 6,50, lu comme une durée."
+      },
+      {
+        "key": "b",
+        "text": "3 h",
+        "misconception": null
+      },
+      {
+        "key": "c",
+        "text": "2,5 h",
+        "misconception": "L'élève suppose le prix proportionnel à la durée, à 2 € l'heure comme pour la première heure : 5 ÷ 2 = 2,5. Le tableau montre que ce n'est pas le cas."
+      },
+      {
+        "key": "d",
+        "text": "5 h",
+        "misconception": "L'élève recopie le nombre 5 de la question sans lire le tableau, en confondant les euros et les heures."
+      }
+    ],
+    "answer": {
+      "value": "b"
+    },
+    "solution_steps": [
+      "Ici, on connaît le prix et on cherche la durée : on part de la colonne des prix.",
+      "On cherche 5 dans la colonne « Prix (euros) », puis on lit la case à côté, dans la colonne « Durée (h) ».",
+      "Pour 5 €, on peut rester **3 h** : c'est la proposition b.",
+      "Le prix n'est pas proportionnel à la durée : 1 h coûte 2 €, mais 3 h coûtent 5 €, et non 6 €."
+    ],
+    "hint": "Cherche 5 dans la colonne des prix, pas dans celle des durées.",
+    "estimated_duration_s": 45,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, classe de 5e, Proportionnalité, fonctions, Fonctions : « Lire et interpréter un tableau de valeurs. »"
+  },
+  {
+    "id": "EX-J036-E-01",
+    "skill_id": "J036",
+    "level": "entrainement",
+    "type": "numerique",
+    "statement": "Le tableau donne la hauteur d'eau dans un port en fonction de l'heure.\n\n$$\\begin{array}{|c|c|} \\hline \\text{Heure (h)} & \\text{Hauteur (m)} \\\\ \\hline 6 & 1{,}8 \\\\ \\hline 8 & 3{,}2 \\\\ \\hline 10 & 4{,}5 \\\\ \\hline 12 & 4{,}9 \\\\ \\hline 14 & 3{,}6 \\\\ \\hline 16 & 2{,}1 \\\\ \\hline \\end{array}$$\n\nParmi les heures du tableau, à quelle heure la hauteur d'eau est-elle la plus grande ?",
+    "image": null,
+    "answer": {
+      "value": 12,
+      "unit": "h",
+      "accepted": [
+        "12 h 00",
+        "midi"
+      ]
+    },
+    "solution_steps": [
+      "On parcourt la colonne des hauteurs pour trouver la plus grande : 1,8 ; 3,2 ; 4,5 ; 4,9 ; 3,6 ; 2,1. La plus grande est 4,9 m.",
+      "On lit l'heure sur la même ligne que 4,9 : c'est **12 h**.",
+      "La question demande une heure, pas une hauteur : répondre 4,9 serait lire la mauvaise colonne.",
+      "D'après le tableau, la hauteur d'eau augmente de 6 h à 12 h, puis diminue de 12 h à 16 h."
+    ],
+    "hint": "Trouve d'abord la plus grande hauteur, puis lis l'heure qui lui correspond.",
+    "estimated_duration_s": 50,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, classe de 5e, Proportionnalité, fonctions, Fonctions : « Lire et interpréter un tableau de valeurs. »"
+  },
+  {
+    "id": "EX-J036-E-02",
+    "skill_id": "J036",
+    "level": "entrainement",
+    "type": "vrai_faux",
+    "statement": "Le tableau donne la distance de freinage d'une voiture en fonction de sa vitesse.\n\n$$\\begin{array}{|c|c|} \\hline \\text{Vitesse (km/h)} & \\text{Distance (m)} \\\\ \\hline 30 & 6 \\\\ \\hline 60 & 24 \\\\ \\hline 90 & 54 \\\\ \\hline 120 & 96 \\\\ \\hline \\end{array}$$\n\nInès affirme : « La distance augmente avec la vitesse, mais elle n'est pas proportionnelle à la vitesse. » A-t-elle raison ?",
+    "image": null,
+    "answer": {
+      "value": true
+    },
+    "solution_steps": [
+      "La distance augmente bien avec la vitesse : 6 m, puis 24 m, 54 m et 96 m.",
+      "Si la distance était proportionnelle à la vitesse, une vitesse 2 fois plus grande donnerait une distance 2 fois plus grande.",
+      "De 30 km/h à 60 km/h, la vitesse est multipliée par 2. La distance passe de 6 m à 24 m : elle est multipliée par 4, et non par 2 ($6 \\times 2 = 12$, pas 24).",
+      "La distance de freinage n'est donc pas proportionnelle à la vitesse : Inès a **raison**.",
+      "Qu'une grandeur augmente quand l'autre augmente ne suffit pas pour conclure à la proportionnalité."
+    ],
+    "hint": "Regarde ce que devient la distance quand la vitesse double.",
+    "estimated_duration_s": 75,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, classe de 5e, Proportionnalité, fonctions, Proportionnalité : « Reconnaitre une situation de proportionnalité à partir d’un tableau ou d’un graphique. »"
+  },
+  {
+    "id": "EX-J036-M-01",
+    "skill_id": "J036",
+    "level": "maitrise",
+    "type": "numerique",
+    "statement": "Le tableau donne la température, en °C, dans un congélateur en fonction de la durée écoulée depuis sa mise en marche.\n\n$$\\begin{array}{|c|c|} \\hline \\text{Durée (min)} & \\text{Température} \\\\ \\hline 0 & 18 \\\\ \\hline 15 & 7 \\\\ \\hline 30 & −4 \\\\ \\hline 45 & −12 \\\\ \\hline 60 & −17 \\\\ \\hline 75 & −19 \\\\ \\hline \\end{array}$$\n\nQuelle est la première durée du tableau où la température est plus basse que −15 °C ?",
+    "image": null,
+    "answer": {
+      "value": 60,
+      "unit": "min"
+    },
+    "solution_steps": [
+      "On lit la colonne des températures de haut en bas, en cherchant la première plus basse que −15 °C.",
+      "18, 7 et −4 sont plus hautes que −15. Pour −12 : entre deux nombres négatifs, le plus petit est le plus éloigné de zéro. −12 est à 12 de zéro, −15 à 15 : donc −12 > −15 : à 45 min, il fait plus chaud que −15 °C.",
+      "−17 est à 17 de zéro, plus loin que −15 : −17 < −15. C'est la première température plus basse que −15 °C, atteinte au bout de **60 min**.",
+      "Pièges : répondre 45 min en croyant −12 plus bas que −15 ; répondre 75 min, la température la plus basse, qui n'est pas la première ; répondre −17, qui est une température et non une durée."
+    ],
+    "hint": "Entre deux nombres négatifs, le plus petit est le plus éloigné de zéro.",
+    "estimated_duration_s": 90,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, classe de 5e, Proportionnalité, fonctions, Fonctions : « Lire et interpréter un tableau de valeurs. »"
+  },
+  {
+    "id": "EX-J036-M-02",
+    "skill_id": "J036",
+    "level": "maitrise",
+    "type": "qcm",
+    "statement": "Le tableau donne le prix d'entrée d'un groupe dans un parc en fonction du nombre de personnes.\n\n$$\\begin{array}{|c|c|} \\hline \\text{Personnes} & \\text{Prix (euros)} \\\\ \\hline 1 & 12 \\\\ \\hline 2 & 24 \\\\ \\hline 3 & 36 \\\\ \\hline 4 & 44 \\\\ \\hline 5 & 50 \\\\ \\hline \\end{array}$$\n\nQuelle phrase est juste ?",
+    "image": null,
+    "choices": [
+      {
+        "key": "a",
+        "text": "Le prix est proportionnel au nombre de personnes, car il augmente quand le nombre de personnes augmente.",
+        "misconception": "L'élève croit qu'une grandeur qui augmente quand l'autre augmente lui est proportionnelle. Ici le prix augmente, mais pas proportionnellement : 4 personnes paient 44 €, et non 48 €."
+      },
+      {
+        "key": "b",
+        "text": "Le prix est proportionnel au nombre de personnes, car 2 personnes paient 2 fois plus qu'une seule.",
+        "misconception": "L'élève ne vérifie qu'une ligne : 24 = 2 × 12 est vrai, mais 44 n'est pas 4 × 12. Une seule ligne qui ne va pas suffit pour dire non."
+      },
+      {
+        "key": "c",
+        "text": "Le prix n'est pas proportionnel au nombre de personnes, car 4 personnes paient 44 €, et non 4 × 12 = 48 €.",
+        "misconception": null
+      },
+      {
+        "key": "d",
+        "text": "Le prix n'est pas proportionnel au nombre de personnes, car le tableau ne commence pas par 0 personne.",
+        "misconception": "La conclusion est juste, mais la raison est fausse : un tableau de proportionnalité n'a pas besoin de commencer par 0. C'est la ligne de 4 personnes qui prouve que le prix n'est pas proportionnel."
+      }
+    ],
+    "answer": {
+      "value": "c"
+    },
+    "solution_steps": [
+      "Si le prix était proportionnel au nombre de personnes, chaque prix serait 12 fois le nombre de personnes, comme pour 1 personne.",
+      "Pour 2 et 3 personnes, cela marche : $24 = 2 \\times 12$ et $36 = 3 \\times 12$.",
+      "Pour 4 personnes : $4 \\times 12 = 48$, mais on paie 44 €. Une seule ligne qui ne va pas suffit : le prix n'est pas proportionnel au nombre de personnes. C'est la phrase c.",
+      "Le parc fait une réduction aux groupes de 4 personnes ou plus : 44 € au lieu de 48 €, 50 € au lieu de $5 \\times 12 = 60$ €."
+    ],
+    "hint": "Calcule le prix de chaque ligne si chaque personne payait 12 €.",
+    "estimated_duration_s": 90,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, classe de 5e, Proportionnalité, fonctions, Proportionnalité : « Reconnaitre une situation de proportionnalité à partir d’un tableau ou d’un graphique. »"
+  }
+]

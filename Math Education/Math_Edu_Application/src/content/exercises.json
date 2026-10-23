@@ -3,7 +3,7 @@
     "version": "1.0",
     "scope": "Tranche pilote CP a 4e : 69 exercices, 3 par competence (1 decouverte, 1 entrainement, 1 maitrise) sur les 23 competences des domaines A et C. La cible finale de la roadmap est de 5 exercices par niveau, soit 15 par competence.",
     "updated_at": "2026-07-28",
-    "total_exercises": 1732,
+    "total_exercises": 1750,
     "review_status": "relu_agent"
   },
   "exercises": [
@@ -25932,6 +25932,183 @@
       "programme_ref": "Cycle 4, 5e : prendre 1 %, 10 % ou 50 % d'un nombre, en lien avec la proportionnalité."
     },
     {
+      "id": "EX-E038-D-01",
+      "skill_id": "E038",
+      "level": "decouverte",
+      "type": "numerique",
+      "statement": "Un plan de maison est à l'échelle $\\dfrac{1}{50}$ : 1 cm sur le plan représente 50 cm en réalité. La chambre y mesure 8 cm.\n\nQuelle est sa longueur réelle, en mètres ?",
+      "image": null,
+      "answer": {
+        "value": 4,
+        "unit": "m"
+      },
+      "solution_steps": [
+        "L'échelle $\\dfrac{1}{50}$ dit que les longueurs réelles sont 50 fois plus grandes que sur le plan, dans la même unité : c'est un coefficient de proportionnalité.",
+        "Longueur réelle : $8 \\times 50 = 400$, donc 400 cm.",
+        "On convertit en mètres : 1 m = 100 cm, donc 400 cm = 4 m. La chambre mesure **4 m** de long.",
+        "Attention : 400 est la longueur en centimètres, pas en mètres. Et diviser 8 par 50 donnerait une longueur réelle plus petite que sur le plan, ce qui est impossible."
+      ],
+      "hint": "Chaque centimètre du plan vaut 50 cm en réalité. Calcule en centimètres, puis convertis.",
+      "estimated_duration_s": 60,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 4, classe de 5e, Proportionnalité, fonctions, Proportionnalité : « Utiliser un coefficient de proportionnalité dans des contextes concrets (prix unitaire, vitesse moyenne, échelle, etc.). »"
+    },
+    {
+      "id": "EX-E038-D-02",
+      "skill_id": "E038",
+      "level": "decouverte",
+      "type": "qcm",
+      "statement": "Une carte de randonnée est à l'échelle $\\dfrac{1}{20\\,000}$.\n\nQue représente 1 cm sur cette carte, en réalité ?",
+      "image": null,
+      "choices": [
+        {
+          "key": "a",
+          "text": "20 000 m",
+          "misconception": "L'élève lit le dénominateur directement en mètres. L'échelle compare deux longueurs dans la même unité : 20 000 cm, et non 20 000 m."
+        },
+        {
+          "key": "b",
+          "text": "200 m",
+          "misconception": null
+        },
+        {
+          "key": "c",
+          "text": "2 km",
+          "misconception": "L'élève convertit les centimètres en kilomètres en divisant par 10 000 : 20 000 ÷ 10 000 = 2. Or 1 km = 100 000 cm, donc 20 000 cm = 0,2 km."
+        },
+        {
+          "key": "d",
+          "text": "20 m",
+          "misconception": "L'élève divise par 1 000 pour passer des centimètres aux mètres : 20 000 ÷ 1 000 = 20. Or 1 m = 100 cm : il faut diviser par 100."
+        }
+      ],
+      "answer": {
+        "value": "b"
+      },
+      "solution_steps": [
+        "L'échelle $\\dfrac{1}{20\\,000}$ signifie : 1 cm sur la carte représente 20 000 **cm** en réalité. Les deux longueurs sont dans la même unité.",
+        "On convertit : 1 m = 100 cm, donc 20 000 cm = $20\\,000 \\div 100 = 200$ m.",
+        "1 cm sur la carte représente **200 m** en réalité, soit 0,2 km : c'est la proposition b."
+      ],
+      "hint": "Le 20 000 de l'échelle est dans la même unité que le 1 : des centimètres.",
+      "estimated_duration_s": 45,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 4, classe de 5e, Proportionnalité, fonctions, Proportionnalité : « Identifier des situations de proportionnalité dans des contextes concrets (prix, recettes, distances, échelles). »"
+    },
+    {
+      "id": "EX-E038-E-01",
+      "skill_id": "E038",
+      "level": "entrainement",
+      "type": "numerique",
+      "statement": "Sur une carte routière à l'échelle $\\dfrac{1}{250\\,000}$, deux villes sont à 7,2 cm l'une de l'autre.\n\nQuelle est la distance réelle entre ces deux villes, en km ?",
+      "image": null,
+      "answer": {
+        "value": 18,
+        "unit": "km"
+      },
+      "solution_steps": [
+        "À l'échelle $\\dfrac{1}{250\\,000}$, 1 cm sur la carte représente 250 000 cm en réalité.",
+        "Distance réelle : $7{,}2 \\times 250\\,000 = 1\\,800\\,000$, donc 1 800 000 cm.",
+        "On convertit : 1 800 000 cm = 18 000 m (on divise par 100), puis 18 000 m = 18 km (on divise par 1 000).",
+        "Les deux villes sont à **18 km** l'une de l'autre.",
+        "Erreur fréquente : écrire 1 800 000 km, en oubliant que le produit est dans l'unité de la mesure sur la carte, le centimètre."
+      ],
+      "hint": "Calcule d'abord la distance réelle en centimètres, puis convertis-la en kilomètres.",
+      "estimated_duration_s": 90,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 4, classe de 5e, Proportionnalité, fonctions, Proportionnalité : « Utiliser un coefficient de proportionnalité dans des contextes concrets (prix unitaire, vitesse moyenne, échelle, etc.). »"
+    },
+    {
+      "id": "EX-E038-E-02",
+      "skill_id": "E038",
+      "level": "entrainement",
+      "type": "vrai_faux",
+      "statement": "Sur un plan de ville à l'échelle $\\dfrac{1}{5\\,000}$, Hugo veut dessiner une avenue longue de 600 m. Il calcule $600 \\div 5\\,000 = 0{,}12$ et annonce : « Sur le plan, l'avenue mesurera 0,12 cm. »\n\nA-t-il raison ?",
+      "image": null,
+      "answer": {
+        "value": false
+      },
+      "solution_steps": [
+        "À l'échelle $\\dfrac{1}{5\\,000}$, les longueurs réelles sont 5 000 fois plus grandes que sur le plan, **dans la même unité** : 1 cm pour 5 000 cm, ou 1 m pour 5 000 m.",
+        "La division de Hugo est juste, mais il part de 600 **m** : $600 \\div 5\\,000 = 0{,}12$ donne une longueur en mètres. Sur le plan, l'avenue mesure 0,12 m, et non 0,12 cm.",
+        "On convertit : 1 m = 100 cm, donc 0,12 m = 12 cm. Hugo a **tort** : l'avenue mesurera 12 cm sur le plan.",
+        "Autre méthode : on convertit d'abord, 600 m = 60 000 cm, puis $60\\,000 \\div 5\\,000 = 60 \\div 5 = 12$, donc 12 cm.",
+        "Vérification : $12 \\times 5\\,000 = 60\\,000$ cm, soit 600 m."
+      ],
+      "hint": "Dans quelle unité est la longueur 600 ? Le résultat de la division est dans la même unité.",
+      "estimated_duration_s": 75,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 4, classe de 5e, Proportionnalité, fonctions, Proportionnalité : « Utiliser un coefficient de proportionnalité dans des contextes concrets (prix unitaire, vitesse moyenne, échelle, etc.). »"
+    },
+    {
+      "id": "EX-E038-M-01",
+      "skill_id": "E038",
+      "level": "maitrise",
+      "type": "numerique",
+      "statement": "Sur le plan d'un collège, la cour, longue de 45 m en réalité, mesure 9 cm.\n\nQuelle est l'échelle de ce plan ? Écris-la en fraction, avec 1 au numérateur.",
+      "image": null,
+      "answer": {
+        "value": "1/500",
+        "accepted": [
+          "1 / 500"
+        ]
+      },
+      "solution_steps": [
+        "L'échelle compare deux longueurs exprimées dans la même unité : on met la longueur réelle en centimètres. 45 m = 4 500 cm.",
+        "9 cm sur le plan représentent 4 500 cm en réalité. 1 cm représente donc 9 fois moins : $4\\,500 \\div 9 = 500$ cm.",
+        "1 cm sur le plan pour 500 cm en réalité : l'échelle est $\\dfrac{1}{500}$.",
+        "Vérification : $9 \\times 500 = 4\\,500$ cm, soit 45 m.",
+        "Erreurs fréquentes : $45 \\div 9 = 5$ sans convertir donne $\\dfrac{1}{5}$, comme si la cour mesurait 45 cm ; écrire 45 m = 450 cm donne $\\dfrac{1}{50}$."
+      ],
+      "hint": "Exprime les deux longueurs en centimètres, puis cherche ce que représente 1 cm du plan.",
+      "estimated_duration_s": 120,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 4, classe de 5e, Proportionnalité, fonctions, Proportionnalité : « Utiliser un coefficient de proportionnalité dans des contextes concrets (prix unitaire, vitesse moyenne, échelle, etc.). »"
+    },
+    {
+      "id": "EX-E038-M-02",
+      "skill_id": "E038",
+      "level": "maitrise",
+      "type": "qcm",
+      "statement": "Sur une carte à l'échelle $\\dfrac{1}{300\\,000}$, une rivière mesure 4,5 cm.\n\nQuelle longueur mesure cette rivière sur une autre carte, à l'échelle $\\dfrac{1}{100\\,000}$ ?",
+      "image": null,
+      "choices": [
+        {
+          "key": "a",
+          "text": "1,5 cm",
+          "misconception": "L'élève divise 4,5 par 3 en pensant qu'une échelle au dénominateur plus petit dessine plus petit. C'est l'inverse : sur la seconde carte, 1 cm représente 3 fois moins de distance réelle, donc la rivière y est 3 fois plus longue."
+        },
+        {
+          "key": "b",
+          "text": "13,5 km",
+          "misconception": "L'élève calcule la longueur réelle, 4,5 × 300 000 = 1 350 000 cm, soit 13,5 km, et s'arrête là, sans revenir à la seconde carte."
+        },
+        {
+          "key": "c",
+          "text": "135 cm",
+          "misconception": "L'élève trouve bien 1 350 000 cm en réalité, puis divise par 10 000 au lieu de 100 000 pour revenir à la seconde carte."
+        },
+        {
+          "key": "d",
+          "text": "13,5 cm",
+          "misconception": null
+        }
+      ],
+      "answer": {
+        "value": "d"
+      },
+      "solution_steps": [
+        "Longueur réelle : à l'échelle $\\dfrac{1}{300\\,000}$, 1 cm représente 300 000 cm, soit 3 km. $4{,}5 \\times 3 = 13{,}5$ : la rivière mesure 13,5 km.",
+        "Sur la seconde carte, 1 cm représente 100 000 cm, soit 1 km.",
+        "13,5 km y sont donc représentés par 13,5 cm : la rivière mesure **13,5 cm** sur la seconde carte, proposition d.",
+        "Autre raisonnement : 1 cm de la seconde carte représente 3 fois moins de distance réelle que sur la première, donc la rivière y est 3 fois plus longue : $4{,}5 \\times 3 = 13{,}5$ cm."
+      ],
+      "hint": "Calcule d'abord la longueur réelle de la rivière, en kilomètres.",
+      "estimated_duration_s": 120,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 4, classe de 5e, Proportionnalité, fonctions, Proportionnalité : « Utiliser un coefficient de proportionnalité dans des contextes concrets (prix unitaire, vitesse moyenne, échelle, etc.). »"
+    },
+    {
       "id": "EX-E039-D-01",
       "skill_id": "E039",
       "level": "decouverte",
@@ -43053,6 +43230,360 @@
       "estimated_duration_s": 100,
       "review_status": "relu_agent",
       "programme_ref": "Cycle 4, classe de 3e, Proportionnalité, fonctions, Fonctions, Objectifs d'apprentissage : « Représenter la fonction carré. »"
+    },
+    {
+      "id": "EX-J036-D-01",
+      "skill_id": "J036",
+      "level": "decouverte",
+      "type": "numerique",
+      "statement": "Le tableau donne la masse d'un chiot en fonction de son âge. La première colonne donne l'âge, la seconde la masse.\n\n$$\\begin{array}{|c|c|} \\hline \\text{Âge (mois)} & \\text{Masse (kg)} \\\\ \\hline 2 & 3{,}2 \\\\ \\hline 3 & 4{,}5 \\\\ \\hline 4 & 5{,}6 \\\\ \\hline 5 & 6{,}4 \\\\ \\hline 6 & 7 \\\\ \\hline \\end{array}$$\n\nCombien pèse le chiot à 4 mois ?",
+      "image": null,
+      "answer": {
+        "value": 5.6,
+        "unit": "kg"
+      },
+      "solution_steps": [
+        "« La masse en fonction de l'âge » : pour chaque âge, le tableau donne une masse. On part donc de la colonne des âges.",
+        "On cherche 4 dans la colonne « Âge (mois) », puis on lit la case à côté, dans la colonne « Masse (kg) ».",
+        "À 4 mois, le chiot pèse **5,6 kg**.",
+        "Attention à ne pas lire la case voisine : 4,5 kg est la masse à 3 mois."
+      ],
+      "hint": "Repère la ligne du 4 dans la colonne des âges.",
+      "estimated_duration_s": 40,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 4, classe de 5e, Proportionnalité, fonctions, Fonctions : « Lire et interpréter un tableau de valeurs. »"
+    },
+    {
+      "id": "EX-J036-D-02",
+      "skill_id": "J036",
+      "level": "decouverte",
+      "type": "qcm",
+      "statement": "Le tableau donne le prix d'un parking en fonction de la durée de stationnement.\n\n$$\\begin{array}{|c|c|} \\hline \\text{Durée (h)} & \\text{Prix (euros)} \\\\ \\hline 1 & 2 \\\\ \\hline 2 & 3{,}50 \\\\ \\hline 3 & 5 \\\\ \\hline 4 & 6 \\\\ \\hline 5 & 6{,}50 \\\\ \\hline \\end{array}$$\n\nCombien de temps peut-on rester pour 5 € ?",
+      "image": null,
+      "choices": [
+        {
+          "key": "a",
+          "text": "6,5 h",
+          "misconception": "L'élève cherche 5 dans la colonne des durées au lieu de la colonne des prix, et donne la case à côté : 6,50, lu comme une durée."
+        },
+        {
+          "key": "b",
+          "text": "3 h",
+          "misconception": null
+        },
+        {
+          "key": "c",
+          "text": "2,5 h",
+          "misconception": "L'élève suppose le prix proportionnel à la durée, à 2 € l'heure comme pour la première heure : 5 ÷ 2 = 2,5. Le tableau montre que ce n'est pas le cas."
+        },
+        {
+          "key": "d",
+          "text": "5 h",
+          "misconception": "L'élève recopie le nombre 5 de la question sans lire le tableau, en confondant les euros et les heures."
+        }
+      ],
+      "answer": {
+        "value": "b"
+      },
+      "solution_steps": [
+        "Ici, on connaît le prix et on cherche la durée : on part de la colonne des prix.",
+        "On cherche 5 dans la colonne « Prix (euros) », puis on lit la case à côté, dans la colonne « Durée (h) ».",
+        "Pour 5 €, on peut rester **3 h** : c'est la proposition b.",
+        "Le prix n'est pas proportionnel à la durée : 1 h coûte 2 €, mais 3 h coûtent 5 €, et non 6 €."
+      ],
+      "hint": "Cherche 5 dans la colonne des prix, pas dans celle des durées.",
+      "estimated_duration_s": 45,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 4, classe de 5e, Proportionnalité, fonctions, Fonctions : « Lire et interpréter un tableau de valeurs. »"
+    },
+    {
+      "id": "EX-J036-E-01",
+      "skill_id": "J036",
+      "level": "entrainement",
+      "type": "numerique",
+      "statement": "Le tableau donne la hauteur d'eau dans un port en fonction de l'heure.\n\n$$\\begin{array}{|c|c|} \\hline \\text{Heure (h)} & \\text{Hauteur (m)} \\\\ \\hline 6 & 1{,}8 \\\\ \\hline 8 & 3{,}2 \\\\ \\hline 10 & 4{,}5 \\\\ \\hline 12 & 4{,}9 \\\\ \\hline 14 & 3{,}6 \\\\ \\hline 16 & 2{,}1 \\\\ \\hline \\end{array}$$\n\nParmi les heures du tableau, à quelle heure la hauteur d'eau est-elle la plus grande ?",
+      "image": null,
+      "answer": {
+        "value": 12,
+        "unit": "h",
+        "accepted": [
+          "12 h 00",
+          "midi"
+        ]
+      },
+      "solution_steps": [
+        "On parcourt la colonne des hauteurs pour trouver la plus grande : 1,8 ; 3,2 ; 4,5 ; 4,9 ; 3,6 ; 2,1. La plus grande est 4,9 m.",
+        "On lit l'heure sur la même ligne que 4,9 : c'est **12 h**.",
+        "La question demande une heure, pas une hauteur : répondre 4,9 serait lire la mauvaise colonne.",
+        "D'après le tableau, la hauteur d'eau augmente de 6 h à 12 h, puis diminue de 12 h à 16 h."
+      ],
+      "hint": "Trouve d'abord la plus grande hauteur, puis lis l'heure qui lui correspond.",
+      "estimated_duration_s": 50,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 4, classe de 5e, Proportionnalité, fonctions, Fonctions : « Lire et interpréter un tableau de valeurs. »"
+    },
+    {
+      "id": "EX-J036-E-02",
+      "skill_id": "J036",
+      "level": "entrainement",
+      "type": "vrai_faux",
+      "statement": "Le tableau donne la distance de freinage d'une voiture en fonction de sa vitesse.\n\n$$\\begin{array}{|c|c|} \\hline \\text{Vitesse (km/h)} & \\text{Distance (m)} \\\\ \\hline 30 & 6 \\\\ \\hline 60 & 24 \\\\ \\hline 90 & 54 \\\\ \\hline 120 & 96 \\\\ \\hline \\end{array}$$\n\nInès affirme : « La distance augmente avec la vitesse, mais elle n'est pas proportionnelle à la vitesse. » A-t-elle raison ?",
+      "image": null,
+      "answer": {
+        "value": true
+      },
+      "solution_steps": [
+        "La distance augmente bien avec la vitesse : 6 m, puis 24 m, 54 m et 96 m.",
+        "Si la distance était proportionnelle à la vitesse, une vitesse 2 fois plus grande donnerait une distance 2 fois plus grande.",
+        "De 30 km/h à 60 km/h, la vitesse est multipliée par 2. La distance passe de 6 m à 24 m : elle est multipliée par 4, et non par 2 ($6 \\times 2 = 12$, pas 24).",
+        "La distance de freinage n'est donc pas proportionnelle à la vitesse : Inès a **raison**.",
+        "Qu'une grandeur augmente quand l'autre augmente ne suffit pas pour conclure à la proportionnalité."
+      ],
+      "hint": "Regarde ce que devient la distance quand la vitesse double.",
+      "estimated_duration_s": 75,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 4, classe de 5e, Proportionnalité, fonctions, Proportionnalité : « Reconnaitre une situation de proportionnalité à partir d’un tableau ou d’un graphique. »"
+    },
+    {
+      "id": "EX-J036-M-01",
+      "skill_id": "J036",
+      "level": "maitrise",
+      "type": "numerique",
+      "statement": "Le tableau donne la température, en °C, dans un congélateur en fonction de la durée écoulée depuis sa mise en marche.\n\n$$\\begin{array}{|c|c|} \\hline \\text{Durée (min)} & \\text{Température} \\\\ \\hline 0 & 18 \\\\ \\hline 15 & 7 \\\\ \\hline 30 & −4 \\\\ \\hline 45 & −12 \\\\ \\hline 60 & −17 \\\\ \\hline 75 & −19 \\\\ \\hline \\end{array}$$\n\nQuelle est la première durée du tableau où la température est plus basse que −15 °C ?",
+      "image": null,
+      "answer": {
+        "value": 60,
+        "unit": "min"
+      },
+      "solution_steps": [
+        "On lit la colonne des températures de haut en bas, en cherchant la première plus basse que −15 °C.",
+        "18, 7 et −4 sont plus hautes que −15. Pour −12 : entre deux nombres négatifs, le plus petit est le plus éloigné de zéro. −12 est à 12 de zéro, −15 à 15 : donc −12 > −15 : à 45 min, il fait plus chaud que −15 °C.",
+        "−17 est à 17 de zéro, plus loin que −15 : −17 < −15. C'est la première température plus basse que −15 °C, atteinte au bout de **60 min**.",
+        "Pièges : répondre 45 min en croyant −12 plus bas que −15 ; répondre 75 min, la température la plus basse, qui n'est pas la première ; répondre −17, qui est une température et non une durée."
+      ],
+      "hint": "Entre deux nombres négatifs, le plus petit est le plus éloigné de zéro.",
+      "estimated_duration_s": 90,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 4, classe de 5e, Proportionnalité, fonctions, Fonctions : « Lire et interpréter un tableau de valeurs. »"
+    },
+    {
+      "id": "EX-J036-M-02",
+      "skill_id": "J036",
+      "level": "maitrise",
+      "type": "qcm",
+      "statement": "Le tableau donne le prix d'entrée d'un groupe dans un parc en fonction du nombre de personnes.\n\n$$\\begin{array}{|c|c|} \\hline \\text{Personnes} & \\text{Prix (euros)} \\\\ \\hline 1 & 12 \\\\ \\hline 2 & 24 \\\\ \\hline 3 & 36 \\\\ \\hline 4 & 44 \\\\ \\hline 5 & 50 \\\\ \\hline \\end{array}$$\n\nQuelle phrase est juste ?",
+      "image": null,
+      "choices": [
+        {
+          "key": "a",
+          "text": "Le prix est proportionnel au nombre de personnes, car il augmente quand le nombre de personnes augmente.",
+          "misconception": "L'élève croit qu'une grandeur qui augmente quand l'autre augmente lui est proportionnelle. Ici le prix augmente, mais pas proportionnellement : 4 personnes paient 44 €, et non 48 €."
+        },
+        {
+          "key": "b",
+          "text": "Le prix est proportionnel au nombre de personnes, car 2 personnes paient 2 fois plus qu'une seule.",
+          "misconception": "L'élève ne vérifie qu'une ligne : 24 = 2 × 12 est vrai, mais 44 n'est pas 4 × 12. Une seule ligne qui ne va pas suffit pour dire non."
+        },
+        {
+          "key": "c",
+          "text": "Le prix n'est pas proportionnel au nombre de personnes, car 4 personnes paient 44 €, et non 4 × 12 = 48 €.",
+          "misconception": null
+        },
+        {
+          "key": "d",
+          "text": "Le prix n'est pas proportionnel au nombre de personnes, car le tableau ne commence pas par 0 personne.",
+          "misconception": "La conclusion est juste, mais la raison est fausse : un tableau de proportionnalité n'a pas besoin de commencer par 0. C'est la ligne de 4 personnes qui prouve que le prix n'est pas proportionnel."
+        }
+      ],
+      "answer": {
+        "value": "c"
+      },
+      "solution_steps": [
+        "Si le prix était proportionnel au nombre de personnes, chaque prix serait 12 fois le nombre de personnes, comme pour 1 personne.",
+        "Pour 2 et 3 personnes, cela marche : $24 = 2 \\times 12$ et $36 = 3 \\times 12$.",
+        "Pour 4 personnes : $4 \\times 12 = 48$, mais on paie 44 €. Une seule ligne qui ne va pas suffit : le prix n'est pas proportionnel au nombre de personnes. C'est la phrase c.",
+        "Le parc fait une réduction aux groupes de 4 personnes ou plus : 44 € au lieu de 48 €, 50 € au lieu de $5 \\times 12 = 60$ €."
+      ],
+      "hint": "Calcule le prix de chaque ligne si chaque personne payait 12 €.",
+      "estimated_duration_s": 90,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 4, classe de 5e, Proportionnalité, fonctions, Proportionnalité : « Reconnaitre une situation de proportionnalité à partir d’un tableau ou d’un graphique. »"
+    },
+    {
+      "id": "EX-J037-D-01",
+      "skill_id": "J037",
+      "level": "decouverte",
+      "type": "numerique",
+      "statement": "Au karting, le prix $P$ d'une séance, en euros, dépend du nombre de tours $n$ : $P = 3 \\times n + 5$. Pour 2 tours, $P = 3 \\times 2 + 5 = 11$.\n\n$$\\begin{array}{|l|c|c|c|} \\hline \\text{Tours } n \\text{} & 2 & 4 & 10 \\\\ \\hline \\text{Prix } P \\text{ (euros)} & 11 & ? & 35 \\\\ \\hline \\end{array}$$\n\nQuel prix écrire pour 4 tours ?",
+      "image": null,
+      "answer": {
+        "value": 17,
+        "unit": "€"
+      },
+      "solution_steps": [
+        "On remplace $n$ par 4 dans la formule : $P = 3 \\times 4 + 5$.",
+        "La multiplication passe avant l'addition : $3 \\times 4 = 12$, puis $12 + 5 = 17$.",
+        "Pour 4 tours, la séance coûte **17 €**.",
+        "Erreurs fréquentes : $3 \\times (4 + 5) = 27$, en faisant l'addition d'abord ; 22, le double de 11, alors que le prix n'est pas proportionnel au nombre de tours (les 5 € ne doublent pas)."
+      ],
+      "hint": "Fais comme pour 2 tours, en remplaçant $n$ par 4.",
+      "estimated_duration_s": 50,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 4, classe de 5e, Proportionnalité, fonctions, Fonctions : « Traduire la relation de dépendance entre deux grandeurs par un tableau de valeurs à partir d’une formule. »"
+    },
+    {
+      "id": "EX-J037-D-02",
+      "skill_id": "J037",
+      "level": "decouverte",
+      "type": "qcm",
+      "statement": "Une baignoire contient 20 L d'eau. On ouvre le robinet : au bout de $t$ minutes, elle contient $V = 12t + 20$ litres.\n\n$$\\begin{array}{|l|c|c|c|} \\hline \\text{Durée } t \\text{ (min)} & 0 & 5 & 10 \\\\ \\hline \\text{Volume } V \\text{ (L)} & ? & ? & ? \\\\ \\hline \\end{array}$$\n\nQuelles valeurs écrire dans la ligne du volume ?",
+      "image": null,
+      "choices": [
+        {
+          "key": "a",
+          "text": "0 ; 60 ; 120",
+          "misconception": "L'élève calcule seulement $12t$ et oublie d'ajouter les 20 L déjà présents."
+        },
+        {
+          "key": "b",
+          "text": "240 ; 300 ; 360",
+          "misconception": "L'élève fait l'addition avant la multiplication : $12 \\times (5 + 20) = 300$. Dans $12t + 20$, on multiplie d'abord."
+        },
+        {
+          "key": "c",
+          "text": "20 ; 32 ; 44",
+          "misconception": "L'élève ajoute 12 L d'une colonne à l'autre, comme si les colonnes étaient espacées de 1 minute. Elles sont espacées de 5 minutes : il faut ajouter $12 \\times 5 = 60$ L."
+        },
+        {
+          "key": "d",
+          "text": "20 ; 80 ; 140",
+          "misconception": null
+        }
+      ],
+      "answer": {
+        "value": "d"
+      },
+      "solution_steps": [
+        "$12t$ signifie $12 \\times t$. On remplace $t$ par chaque durée du tableau.",
+        "Pour $t = 0$ : $12 \\times 0 + 20 = 20$. Pour $t = 5$ : $12 \\times 5 + 20 = 80$. Pour $t = 10$ : $12 \\times 10 + 20 = 140$.",
+        "La ligne du volume est **20 ; 80 ; 140** : c'est la proposition d."
+      ],
+      "hint": "Remplace $t$ par 0, puis par 5, puis par 10. La multiplication passe avant l'addition.",
+      "estimated_duration_s": 75,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 4, classe de 5e, Proportionnalité, fonctions, Fonctions : « Produire un tableau de valeurs. »"
+    },
+    {
+      "id": "EX-J037-E-01",
+      "skill_id": "J037",
+      "level": "entrainement",
+      "type": "numerique",
+      "statement": "Au club de tir à l'arc, le prix $P$, en euros, pour $x$ séances est $P = 15 + 4{,}5x$.\n\n$$\\begin{array}{|l|c|c|c|} \\hline \\text{Séances } x \\text{} & 4 & 8 & 12 \\\\ \\hline \\text{Prix } P \\text{ (euros)} & ? & ? & ? \\\\ \\hline \\end{array}$$\n\nQuelle valeur écrire pour 8 séances ?",
+      "image": null,
+      "answer": {
+        "value": 51,
+        "unit": "€"
+      },
+      "solution_steps": [
+        "On remplace $x$ par 8 : $P = 15 + 4{,}5 \\times 8$.",
+        "La multiplication d'abord : $4{,}5 \\times 8 = 36$. Puis $15 + 36 = 51$.",
+        "Pour 8 séances, on paie **51 €**.",
+        "Erreurs fréquentes : $(15 + 4{,}5) \\times 8 = 156$, en additionnant d'abord ; 36, en oubliant les 15 € fixes."
+      ],
+      "hint": "Calcule d'abord $4{,}5x$ pour $x = 8$.",
+      "estimated_duration_s": 60,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 4, classe de 5e, Proportionnalité, fonctions, Fonctions : « Traduire la relation de dépendance entre deux grandeurs par un tableau de valeurs à partir d’une formule. »"
+    },
+    {
+      "id": "EX-J037-E-02",
+      "skill_id": "J037",
+      "level": "entrainement",
+      "type": "vrai_faux",
+      "statement": "L'aire $A$ d'une terrasse carrée de côté $c$ est donnée par $A = c^2$ ($c$ en m, $A$ en m²). Noé complète ce tableau :\n\n$$\\begin{array}{|l|c|c|c|} \\hline \\text{Côté } c \\text{ (m)} & 2 & 3 & 3{,}5 \\\\ \\hline \\text{Aire } A \\text{ (m}^2\\text{)} & 4 & 9 & 7 \\\\ \\hline \\end{array}$$\n\nA-t-il raison pour la dernière case ?",
+      "image": null,
+      "answer": {
+        "value": false
+      },
+      "solution_steps": [
+        "$c^2$ signifie $c \\times c$, et non $2 \\times c$.",
+        "Pour $c = 3{,}5$ : $3{,}5 \\times 3{,}5 = 12{,}25$. La dernière case doit contenir 12,25.",
+        "Pour la dernière case, Noé a calculé $3{,}5 \\times 2 = 7$ : il a confondu $c^2$ et $2c$. Il a **tort**.",
+        "Les deux premières cases sont justes : $2 \\times 2 = 4$ et $3 \\times 3 = 9$. Pour $c = 2$, $2c$ et $c^2$ valent tous deux 4 : ce cas ne permet pas de voir la confusion."
+      ],
+      "hint": "Que signifie le petit 2 de $c^2$ ?",
+      "estimated_duration_s": 75,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 4, classe de 5e, Proportionnalité, fonctions, Fonctions : « Traduire la relation de dépendance entre deux grandeurs par un tableau de valeurs à partir d’une formule. »"
+    },
+    {
+      "id": "EX-J037-M-01",
+      "skill_id": "J037",
+      "level": "maitrise",
+      "type": "numerique",
+      "statement": "Le prix $P$, en euros, de $n$ tee-shirts imprimés est $P = 8n + 25$. Le tableau a été commencé :\n\n$$\\begin{array}{|l|c|c|c|} \\hline \\text{Tee-shirts } n \\text{} & 5 & 10 & 20 \\\\ \\hline \\text{Prix } P & 65 & 105 & 185 \\\\ \\hline \\end{array}$$\n\nCombien de tee-shirts a-t-on commandés pour 145 € ?",
+      "image": null,
+      "answer": {
+        "value": 15,
+        "accepted": [
+          "15 tee-shirts",
+          "15 tee shirts",
+          "15 t-shirts"
+        ]
+      },
+      "solution_steps": [
+        "145 € est entre 105 € (10 tee-shirts) et 185 € (20 tee-shirts) : le nombre de tee-shirts est entre 10 et 20.",
+        "De 10 à 20 tee-shirts, le prix augmente de 80 € : chaque tee-shirt ajoute 8 €, comme l'indique $8n$.",
+        "De 105 € à 145 €, il y a 40 €, soit $40 \\div 8 = 5$ tee-shirts de plus : on essaie $n = 15$.",
+        "Vérification avec la formule : $8 \\times 15 + 25 = 120 + 25 = 145$. On a commandé **15 tee-shirts**.",
+        "Erreur fréquente : diviser 145 par 8 en oubliant les 25 € fixes ; le résultat, 18,125, n'est même pas un nombre entier de tee-shirts."
+      ],
+      "hint": "Entre quelles colonnes du tableau se trouve 145 € ? Essaie une valeur de $n$ entre les deux.",
+      "estimated_duration_s": 120,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 4, classe de 5e, Proportionnalité, fonctions, Fonctions : « Traduire la relation de dépendance entre deux grandeurs par un tableau de valeurs à partir d’une formule. »"
+    },
+    {
+      "id": "EX-J037-M-02",
+      "skill_id": "J037",
+      "level": "maitrise",
+      "type": "qcm",
+      "statement": "Un bocal vide pèse 350 g, chaque bille 6 g. Avec $n$ billes, le bocal pèse $T = 350 + 6n$ grammes, soit 410 g pour 10 billes.\n\nQuelle phrase est juste ?",
+      "image": null,
+      "choices": [
+        {
+          "key": "a",
+          "text": "Avec 20 billes, il pèse 820 g, le double de 410 g.",
+          "misconception": "L'élève croit la masse proportionnelle au nombre de billes et double 410 g. Mais le bocal vide, 350 g, ne double pas : seule la masse des billes double."
+        },
+        {
+          "key": "b",
+          "text": "Avec 20 billes, il pèse 7 120 g.",
+          "misconception": "L'élève fait l'addition avant la multiplication : $(350 + 6) \\times 20 = 7\\,120$."
+        },
+        {
+          "key": "c",
+          "text": "Avec 20 billes, il pèse 470 g.",
+          "misconception": null
+        },
+        {
+          "key": "d",
+          "text": "Avec 20 billes, il pèse 970 g.",
+          "misconception": "L'élève lit $6n$ en collant les chiffres : pour $n = 20$, il écrit 620 au lieu de $6 \\times 20 = 120$, puis $350 + 620 = 970$."
+        }
+      ],
+      "answer": {
+        "value": "c"
+      },
+      "solution_steps": [
+        "On remplace $n$ par 20 : $T = 350 + 6 \\times 20 = 350 + 120 = 470$.",
+        "Avec 20 billes, le bocal pèse **470 g** : c'est la phrase c.",
+        "Doubler le nombre de billes ne double pas la masse : les 60 g de billes deviennent 120 g, mais le bocal vide pèse toujours 350 g. La masse n'est pas proportionnelle au nombre de billes."
+      ],
+      "hint": "Calcule $T$ pour $n = 20$ avec la formule, sans partir de 410 g.",
+      "estimated_duration_s": 90,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 4, classe de 5e, Proportionnalité, fonctions, Fonctions : « Traduire la relation de dépendance entre deux grandeurs par un tableau de valeurs à partir d’une formule. »"
     },
     {
       "id": "EX-J038-D-01",

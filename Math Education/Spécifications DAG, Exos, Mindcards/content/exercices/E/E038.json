@@ -1,0 +1,179 @@
+[
+  {
+    "id": "EX-E038-D-01",
+    "skill_id": "E038",
+    "level": "decouverte",
+    "type": "numerique",
+    "statement": "Un plan de maison est à l'échelle $\\dfrac{1}{50}$ : 1 cm sur le plan représente 50 cm en réalité. La chambre y mesure 8 cm.\n\nQuelle est sa longueur réelle, en mètres ?",
+    "image": null,
+    "answer": {
+      "value": 4,
+      "unit": "m"
+    },
+    "solution_steps": [
+      "L'échelle $\\dfrac{1}{50}$ dit que les longueurs réelles sont 50 fois plus grandes que sur le plan, dans la même unité : c'est un coefficient de proportionnalité.",
+      "Longueur réelle : $8 \\times 50 = 400$, donc 400 cm.",
+      "On convertit en mètres : 1 m = 100 cm, donc 400 cm = 4 m. La chambre mesure **4 m** de long.",
+      "Attention : 400 est la longueur en centimètres, pas en mètres. Et diviser 8 par 50 donnerait une longueur réelle plus petite que sur le plan, ce qui est impossible."
+    ],
+    "hint": "Chaque centimètre du plan vaut 50 cm en réalité. Calcule en centimètres, puis convertis.",
+    "estimated_duration_s": 60,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, classe de 5e, Proportionnalité, fonctions, Proportionnalité : « Utiliser un coefficient de proportionnalité dans des contextes concrets (prix unitaire, vitesse moyenne, échelle, etc.). »"
+  },
+  {
+    "id": "EX-E038-D-02",
+    "skill_id": "E038",
+    "level": "decouverte",
+    "type": "qcm",
+    "statement": "Une carte de randonnée est à l'échelle $\\dfrac{1}{20\\,000}$.\n\nQue représente 1 cm sur cette carte, en réalité ?",
+    "image": null,
+    "choices": [
+      {
+        "key": "a",
+        "text": "20 000 m",
+        "misconception": "L'élève lit le dénominateur directement en mètres. L'échelle compare deux longueurs dans la même unité : 20 000 cm, et non 20 000 m."
+      },
+      {
+        "key": "b",
+        "text": "200 m",
+        "misconception": null
+      },
+      {
+        "key": "c",
+        "text": "2 km",
+        "misconception": "L'élève convertit les centimètres en kilomètres en divisant par 10 000 : 20 000 ÷ 10 000 = 2. Or 1 km = 100 000 cm, donc 20 000 cm = 0,2 km."
+      },
+      {
+        "key": "d",
+        "text": "20 m",
+        "misconception": "L'élève divise par 1 000 pour passer des centimètres aux mètres : 20 000 ÷ 1 000 = 20. Or 1 m = 100 cm : il faut diviser par 100."
+      }
+    ],
+    "answer": {
+      "value": "b"
+    },
+    "solution_steps": [
+      "L'échelle $\\dfrac{1}{20\\,000}$ signifie : 1 cm sur la carte représente 20 000 **cm** en réalité. Les deux longueurs sont dans la même unité.",
+      "On convertit : 1 m = 100 cm, donc 20 000 cm = $20\\,000 \\div 100 = 200$ m.",
+      "1 cm sur la carte représente **200 m** en réalité, soit 0,2 km : c'est la proposition b."
+    ],
+    "hint": "Le 20 000 de l'échelle est dans la même unité que le 1 : des centimètres.",
+    "estimated_duration_s": 45,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, classe de 5e, Proportionnalité, fonctions, Proportionnalité : « Identifier des situations de proportionnalité dans des contextes concrets (prix, recettes, distances, échelles). »"
+  },
+  {
+    "id": "EX-E038-E-01",
+    "skill_id": "E038",
+    "level": "entrainement",
+    "type": "numerique",
+    "statement": "Sur une carte routière à l'échelle $\\dfrac{1}{250\\,000}$, deux villes sont à 7,2 cm l'une de l'autre.\n\nQuelle est la distance réelle entre ces deux villes, en km ?",
+    "image": null,
+    "answer": {
+      "value": 18,
+      "unit": "km"
+    },
+    "solution_steps": [
+      "À l'échelle $\\dfrac{1}{250\\,000}$, 1 cm sur la carte représente 250 000 cm en réalité.",
+      "Distance réelle : $7{,}2 \\times 250\\,000 = 1\\,800\\,000$, donc 1 800 000 cm.",
+      "On convertit : 1 800 000 cm = 18 000 m (on divise par 100), puis 18 000 m = 18 km (on divise par 1 000).",
+      "Les deux villes sont à **18 km** l'une de l'autre.",
+      "Erreur fréquente : écrire 1 800 000 km, en oubliant que le produit est dans l'unité de la mesure sur la carte, le centimètre."
+    ],
+    "hint": "Calcule d'abord la distance réelle en centimètres, puis convertis-la en kilomètres.",
+    "estimated_duration_s": 90,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, classe de 5e, Proportionnalité, fonctions, Proportionnalité : « Utiliser un coefficient de proportionnalité dans des contextes concrets (prix unitaire, vitesse moyenne, échelle, etc.). »"
+  },
+  {
+    "id": "EX-E038-E-02",
+    "skill_id": "E038",
+    "level": "entrainement",
+    "type": "vrai_faux",
+    "statement": "Sur un plan de ville à l'échelle $\\dfrac{1}{5\\,000}$, Hugo veut dessiner une avenue longue de 600 m. Il calcule $600 \\div 5\\,000 = 0{,}12$ et annonce : « Sur le plan, l'avenue mesurera 0,12 cm. »\n\nA-t-il raison ?",
+    "image": null,
+    "answer": {
+      "value": false
+    },
+    "solution_steps": [
+      "À l'échelle $\\dfrac{1}{5\\,000}$, les longueurs réelles sont 5 000 fois plus grandes que sur le plan, **dans la même unité** : 1 cm pour 5 000 cm, ou 1 m pour 5 000 m.",
+      "La division de Hugo est juste, mais il part de 600 **m** : $600 \\div 5\\,000 = 0{,}12$ donne une longueur en mètres. Sur le plan, l'avenue mesure 0,12 m, et non 0,12 cm.",
+      "On convertit : 1 m = 100 cm, donc 0,12 m = 12 cm. Hugo a **tort** : l'avenue mesurera 12 cm sur le plan.",
+      "Autre méthode : on convertit d'abord, 600 m = 60 000 cm, puis $60\\,000 \\div 5\\,000 = 60 \\div 5 = 12$, donc 12 cm.",
+      "Vérification : $12 \\times 5\\,000 = 60\\,000$ cm, soit 600 m."
+    ],
+    "hint": "Dans quelle unité est la longueur 600 ? Le résultat de la division est dans la même unité.",
+    "estimated_duration_s": 75,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, classe de 5e, Proportionnalité, fonctions, Proportionnalité : « Utiliser un coefficient de proportionnalité dans des contextes concrets (prix unitaire, vitesse moyenne, échelle, etc.). »"
+  },
+  {
+    "id": "EX-E038-M-01",
+    "skill_id": "E038",
+    "level": "maitrise",
+    "type": "numerique",
+    "statement": "Sur le plan d'un collège, la cour, longue de 45 m en réalité, mesure 9 cm.\n\nQuelle est l'échelle de ce plan ? Écris-la en fraction, avec 1 au numérateur.",
+    "image": null,
+    "answer": {
+      "value": "1/500",
+      "accepted": [
+        "1 / 500"
+      ]
+    },
+    "solution_steps": [
+      "L'échelle compare deux longueurs exprimées dans la même unité : on met la longueur réelle en centimètres. 45 m = 4 500 cm.",
+      "9 cm sur le plan représentent 4 500 cm en réalité. 1 cm représente donc 9 fois moins : $4\\,500 \\div 9 = 500$ cm.",
+      "1 cm sur le plan pour 500 cm en réalité : l'échelle est $\\dfrac{1}{500}$.",
+      "Vérification : $9 \\times 500 = 4\\,500$ cm, soit 45 m.",
+      "Erreurs fréquentes : $45 \\div 9 = 5$ sans convertir donne $\\dfrac{1}{5}$, comme si la cour mesurait 45 cm ; écrire 45 m = 450 cm donne $\\dfrac{1}{50}$."
+    ],
+    "hint": "Exprime les deux longueurs en centimètres, puis cherche ce que représente 1 cm du plan.",
+    "estimated_duration_s": 120,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, classe de 5e, Proportionnalité, fonctions, Proportionnalité : « Utiliser un coefficient de proportionnalité dans des contextes concrets (prix unitaire, vitesse moyenne, échelle, etc.). »"
+  },
+  {
+    "id": "EX-E038-M-02",
+    "skill_id": "E038",
+    "level": "maitrise",
+    "type": "qcm",
+    "statement": "Sur une carte à l'échelle $\\dfrac{1}{300\\,000}$, une rivière mesure 4,5 cm.\n\nQuelle longueur mesure cette rivière sur une autre carte, à l'échelle $\\dfrac{1}{100\\,000}$ ?",
+    "image": null,
+    "choices": [
+      {
+        "key": "a",
+        "text": "1,5 cm",
+        "misconception": "L'élève divise 4,5 par 3 en pensant qu'une échelle au dénominateur plus petit dessine plus petit. C'est l'inverse : sur la seconde carte, 1 cm représente 3 fois moins de distance réelle, donc la rivière y est 3 fois plus longue."
+      },
+      {
+        "key": "b",
+        "text": "13,5 km",
+        "misconception": "L'élève calcule la longueur réelle, 4,5 × 300 000 = 1 350 000 cm, soit 13,5 km, et s'arrête là, sans revenir à la seconde carte."
+      },
+      {
+        "key": "c",
+        "text": "135 cm",
+        "misconception": "L'élève trouve bien 1 350 000 cm en réalité, puis divise par 10 000 au lieu de 100 000 pour revenir à la seconde carte."
+      },
+      {
+        "key": "d",
+        "text": "13,5 cm",
+        "misconception": null
+      }
+    ],
+    "answer": {
+      "value": "d"
+    },
+    "solution_steps": [
+      "Longueur réelle : à l'échelle $\\dfrac{1}{300\\,000}$, 1 cm représente 300 000 cm, soit 3 km. $4{,}5 \\times 3 = 13{,}5$ : la rivière mesure 13,5 km.",
+      "Sur la seconde carte, 1 cm représente 100 000 cm, soit 1 km.",
+      "13,5 km y sont donc représentés par 13,5 cm : la rivière mesure **13,5 cm** sur la seconde carte, proposition d.",
+      "Autre raisonnement : 1 cm de la seconde carte représente 3 fois moins de distance réelle que sur la première, donc la rivière y est 3 fois plus longue : $4{,}5 \\times 3 = 13{,}5$ cm."
+    ],
+    "hint": "Calcule d'abord la longueur réelle de la rivière, en kilomètres.",
+    "estimated_duration_s": 120,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, classe de 5e, Proportionnalité, fonctions, Proportionnalité : « Utiliser un coefficient de proportionnalité dans des contextes concrets (prix unitaire, vitesse moyenne, échelle, etc.). »"
+  }
+]
