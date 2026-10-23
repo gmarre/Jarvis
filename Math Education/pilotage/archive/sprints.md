@@ -2,6 +2,15 @@
 
 > Le plus récent en haut. Un résumé de 5 à 10 lignes par sprint, écrit par le skill `cloture-sprint`.
 
+## A2a. Étape 9, outils et cartographe (23 octobre 2026)
+
+- Livré : `repere` étendu (droites, fonction carré, lignes brisées, lectures d'image et d'antécédents, titres d'axes, segments libres ; lectures et intersections hors de la demi-graduation refusées ; 587 figures identiques, 19 refus testés).
+- Cartographe : 24 compétences (E 8, J 16 « Fonctions », nouveau domaine), 3 liens et 6 arêtes redondantes retirées ; 15 arbitrages tranchés par délégation (`DECISIONS.md`).
+- Validateur : vocabulaire de l'étape réservé à sa compétence ; correction : « f(x) = … » et « x ↦ … » lus.
+- Consignes `_travail/brief_etape9.md` (lots Q1 à Q7) et `brief_relecture_etape9.md`.
+- Reporté : redéploiement de `corriger` et `rendre-super`, groupé avec les correctifs de A2b avant la publication.
+- Constat : 0023 et 0024 en ligne ; le compte de test `+prof1` n'est pas vérifié.
+
 ## A1. Clôture de l'étape 8 (23 octobre 2026)
 
 - Livré : validateur vert, anomalie F012 corrigée (durée de EX-F012-M-01, 90 à 120 s), export et tests de l'application, commit 9c359e4 publié et vérifié en base (1 654 exercices, 270 super exercices, 1 475 cartes défi).

@@ -19,7 +19,7 @@ Application web d'apprentissage adaptatif des mathématiques, CP à Terminale à
 
 ## 2. État en bref (23 octobre 2026, détail dans `pilotage/ETAT.md`)
 
-- **Contenu :** 273 compétences, 1 654 exercices, 65 cartes mentales, 1 475 cartes défi, 270 super exercices, tous `relu_agent`, recette de Marius à venir. Étapes 1 à 8 rédigées et publiées (23 octobre 2026).
+- **Contenu :** 297 compétences (24 de l'étape 9 sans exercice), 1 654 exercices, 65 cartes mentales, 1 475 cartes défi, 270 super exercices, tous `relu_agent`, recette de Marius à venir. Étapes 1 à 8 publiées ; étape 9 : DAG fusionné, rédaction en cours.
 - **Application :** React, Supabase ; **tourne en local seulement, rien n'est déployé.** Progression écrite côté serveur (`corriger` v17, `rendre-super` v3).
 - **En attente de Gauthier :** Cron `supabase/cron/rappels.sql` (`pg_cron` absent, secret `CRON_SECRET` à créer). Dernière migration appliquée : 0024 (23 octobre 2026, vérifiée en base).
 
