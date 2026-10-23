@@ -1,0 +1,177 @@
+{
+  "id": "SX-G076-01",
+  "skill_id": "G076",
+  "skill_ids": [
+    "G076",
+    "G075",
+    "P024"
+  ],
+  "school_level": "3e",
+  "title": "Le buffet du traiteur",
+  "contexte": "Pour la fête du collège, un traiteur prépare le buffet.\n\n**Le cake** est un pavé droit de 25 cm de long, 8,5 cm de large et 6 cm de haut. Le traiteur le coupe en tranches, par des plans parallèles à sa face de 8,5 cm sur 6 cm.\n\n**La bûche de chèvre** est un cylindre de révolution de 3 cm de rayon et de 18 cm de long. Il la coupe en deux dans le sens de la longueur, par un plan qui contient son axe.\n\n**Le melon** est assimilé à une boule de centre O et de 9 cm de rayon. Pour en faire un couvercle décoratif, le traiteur le coupe par un plan situé à 5 cm du centre O. La section est un disque de centre H, et M est un point du bord de ce disque. La figure n'est pas en vraie grandeur.\n\nLe buffet est prévu pour 120 invités, et le traiteur demande 4,50 € par personne.",
+  "image": "figures/SX-G076-01",
+  "duree_estimee_min": 15,
+  "questions": [
+    {
+      "key": "q1",
+      "skill_id": "G076",
+      "statement": "Quelle est la forme de la face coupée d'une tranche de cake ?",
+      "type": "qcm",
+      "choices": [
+        {
+          "key": "a",
+          "text": "Un rectangle de 25 cm sur 6 cm",
+          "misconception": "On obtiendrait ce rectangle en coupant parallèlement à la face de 25 cm sur 6 cm, dans le sens de la longueur."
+        },
+        {
+          "key": "b",
+          "text": "Un rectangle de 8,5 cm sur 6 cm",
+          "misconception": null
+        },
+        {
+          "key": "c",
+          "text": "Un carré de 6 cm de côté",
+          "misconception": "La section a les mêmes dimensions que la face parallèle au plan, 8,5 cm sur 6 cm : ce n'est pas un carré."
+        },
+        {
+          "key": "d",
+          "text": "Un rectangle de 25 cm sur 8,5 cm",
+          "misconception": "C'est la face du dessous du cake ; le plan de coupe est parallèle à la face de 8,5 cm sur 6 cm."
+        }
+      ],
+      "answer": {
+        "value": "b"
+      },
+      "points": 1,
+      "solution_steps": [
+        "La section d'un pavé droit par un plan parallèle à une face est un rectangle de mêmes dimensions que cette face.",
+        "Ici, le plan est parallèle à la face de 8,5 cm sur 6 cm : la face coupée est **un rectangle de 8,5 cm sur 6 cm**."
+      ],
+      "hint": "Que sais-tu de la section d'un pavé droit par un plan parallèle à l'une de ses faces ?"
+    },
+    {
+      "key": "q2",
+      "skill_id": "P024",
+      "statement": "On admet que la face coupée d'une tranche est un rectangle de 8,5 cm sur 6 cm. Quelle est son aire, en cm² ?",
+      "type": "numerique",
+      "answer": {
+        "value": 51,
+        "unit": "cm²",
+        "accepted": [
+          "51 cm²",
+          "51 centimètres carrés",
+          "51 cm2"
+        ]
+      },
+      "points": 2,
+      "solution_steps": [
+        "Aire d'un rectangle = longueur × largeur.",
+        "8,5 × 6 = 51.",
+        "La face coupée a une aire de **51 cm²**."
+      ],
+      "hint": "Quelle formule donne l'aire d'un rectangle ? Ne la confonds pas avec celle du périmètre."
+    },
+    {
+      "key": "q3",
+      "skill_id": "G076",
+      "statement": "Quelle est la section de la bûche de chèvre ?",
+      "type": "qcm",
+      "choices": [
+        {
+          "key": "a",
+          "text": "Un disque de 3 cm de rayon",
+          "misconception": "On obtient un disque de même rayon en coupant perpendiculairement à l'axe ; ici, le plan contient l'axe."
+        },
+        {
+          "key": "b",
+          "text": "Un rectangle de 18 cm sur 3 cm",
+          "misconception": "Le plan passe par l'axe : il traverse toute la largeur de la bûche, un diamètre de 6 cm, pas le rayon."
+        },
+        {
+          "key": "c",
+          "text": "Un rectangle de 18 cm sur 6 cm",
+          "misconception": null
+        },
+        {
+          "key": "d",
+          "text": "Un ovale de 18 cm de long",
+          "misconception": "La section d'un cylindre par un plan parallèle à son axe est un rectangle, pas un ovale."
+        }
+      ],
+      "answer": {
+        "value": "c"
+      },
+      "points": 3,
+      "solution_steps": [
+        "Un cylindre coupé par un plan parallèle à son axe donne un rectangle ; un de ses côtés est la hauteur du cylindre, ici sa longueur, 18 cm.",
+        "Le plan contient l'axe : il traverse la bûche en passant par le centre de chaque base. L'autre côté du rectangle est donc un diamètre du disque de base, 2 × 3 = 6 cm.",
+        "La section est **un rectangle de 18 cm sur 6 cm**."
+      ],
+      "hint": "Le plan de coupe contient l'axe : quelle largeur de la bûche traverse-t-il ?"
+    },
+    {
+      "key": "q4",
+      "skill_id": "G075",
+      "statement": "Le point M est sur le bord de la section du melon. Combien mesure OM ?",
+      "type": "qcm",
+      "choices": [
+        {
+          "key": "a",
+          "text": "5 cm",
+          "misconception": "5 cm est la distance OH entre le centre et le plan de coupe, pas OM."
+        },
+        {
+          "key": "b",
+          "text": "4 cm",
+          "misconception": "9 − 5 = 4 n'est la longueur d'aucun segment utile : M n'est pas sur la droite (OH)."
+        },
+        {
+          "key": "c",
+          "text": "18 cm",
+          "misconception": "18 cm est le diamètre du melon ; M n'est qu'à un rayon du centre."
+        },
+        {
+          "key": "d",
+          "text": "9 cm",
+          "misconception": null
+        }
+      ],
+      "answer": {
+        "value": "d"
+      },
+      "points": 2,
+      "solution_steps": [
+        "Le bord de la section est sur la peau du melon, c'est-à-dire sur la sphère de centre O et de rayon 9 cm.",
+        "Tous les points de cette sphère sont à 9 cm de O : **OM = 9 cm**."
+      ],
+      "hint": "Le bord de la section est-il à l'intérieur du melon, ou à sa surface ?"
+    },
+    {
+      "key": "q5",
+      "skill_id": "G076",
+      "statement": "On admet que OM = 9 cm et que le triangle OHM est rectangle en H, avec OH = 5 cm. Quel est le rayon HM de la section, en cm, arrondi au dixième ?",
+      "type": "numerique",
+      "answer": {
+        "value": 7.5,
+        "tolerance": 0.05,
+        "unit": "cm",
+        "accepted": [
+          "7,5 cm",
+          "7,5 centimètres",
+          "HM = 7,5 cm",
+          "HM ≈ 7,5",
+          "≈ 7,5 cm"
+        ]
+      },
+      "points": 4,
+      "solution_steps": [
+        "Le triangle OHM est rectangle en H : son hypoténuse est [OM]. D'après le théorème de Pythagore, OM² = OH² + HM².",
+        "HM² = OM² − OH² = 9² − 5² = 81 − 25 = 56, donc HM = √56.",
+        "√56 ≈ 7,48 : arrondi au dixième, HM ≈ **7,5 cm**. Le disque de coupe est plus petit que le grand cercle du melon, de rayon 9 cm."
+      ],
+      "hint": "Dans le triangle OHM, quel côté est l'hypoténuse ?"
+    }
+  ],
+  "review_status": "brouillon",
+  "programme_ref": "Cycle 4, classe de 3e, Espace et géométrie, Représentation de l'espace, Objectifs d'apprentissage : « Visualiser et réaliser des sections de pavé parallèlement à une face, de cylindre parallèlement ou perpendiculairement à son axe, d'une boule. »"
+}

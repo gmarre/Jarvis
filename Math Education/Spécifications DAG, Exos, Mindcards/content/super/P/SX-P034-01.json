@@ -1,0 +1,165 @@
+{
+  "id": "SX-P034-01",
+  "skill_id": "P034",
+  "skill_ids": [
+    "P034",
+    "G071",
+    "P031",
+    "P033"
+  ],
+  "school_level": "5e",
+  "title": "La piscine hors-sol",
+  "contexte": "Les grands-parents d'Enzo installent une piscine hors-sol dans leur jardin : un cylindre de révolution de 4 m de diamètre, dont la paroi mesure 1,3 m de haut, comme sur la figure.\n\nPour que l'eau ne déborde pas quand on se baigne, on ne la remplit que jusqu'à 1,2 m de hauteur.\n\nAvant de la monter, on étale au sol une bâche qui a exactement la forme et la taille du fond de la piscine. La piscine a coûté 699 €, et elle peut accueillir 6 baigneurs.\n\nLes aires et les volumes sont demandés arrondis au dixième. Tu peux utiliser la touche π de la calculatrice ou 3,14.",
+  "image": "figures/SX-P034-01",
+  "duree_estimee_min": 15,
+  "questions": [
+    {
+      "key": "q1",
+      "skill_id": "G071",
+      "statement": "Sur la figure, le fond et le haut de la piscine sont dessinés en forme d'ovale. Quelle est la vraie forme du fond ?",
+      "type": "qcm",
+      "choices": [
+        {
+          "key": "a",
+          "text": "Un disque",
+          "misconception": null
+        },
+        {
+          "key": "b",
+          "text": "Un ovale",
+          "misconception": "C'est la forme du dessin : un disque vu de biais est dessiné en ovale en perspective."
+        },
+        {
+          "key": "c",
+          "text": "Un rectangle",
+          "misconception": "Le rectangle est la paroi déroulée, dans le patron ; le fond est une base du cylindre."
+        }
+      ],
+      "answer": {
+        "value": "a"
+      },
+      "points": 1,
+      "solution_steps": [
+        "La piscine est un cylindre de révolution : ses deux bases sont des disques de même rayon.",
+        "En perspective cavalière, un disque vu de biais est dessiné en ovale, mais le fond est **un disque** de 4 m de diamètre."
+      ],
+      "hint": "De quel solide s'agit-il ? Quelles sont ses bases ?"
+    },
+    {
+      "key": "q2",
+      "skill_id": "P033",
+      "statement": "Quelle est l'aire de la bâche, en m², arrondie au dixième ?",
+      "type": "numerique",
+      "answer": {
+        "value": 12.6,
+        "unit": "m²",
+        "tolerance": 0.05,
+        "accepted": [
+          "12,6 m²",
+          "12,6 m2",
+          "12,6 mètres carrés",
+          "≈ 12,6 m²",
+          "≈ 12,6"
+        ]
+      },
+      "points": 2,
+      "solution_steps": [
+        "La bâche a la forme du fond : un disque de 4 m de diamètre, donc de rayon 4 ÷ 2 = 2 m.",
+        "Aire = π × 2 × 2 = π × 4. Avec la touche π : 12,566… ; avec 3,14 : 3,14 × 4 = 12,56.",
+        "Arrondi au dixième, dans les deux cas : la bâche a une aire d'environ **12,6 m²**."
+      ],
+      "hint": "Calcule d'abord le rayon du fond."
+    },
+    {
+      "key": "q3",
+      "skill_id": "P034",
+      "statement": "On admet que l'aire du fond de la piscine est π × 4 m². Quel volume d'eau faut-il pour remplir la piscine jusqu'à 1,2 m, en m³, arrondi au dixième ?",
+      "type": "numerique",
+      "answer": {
+        "value": 15.1,
+        "unit": "m³",
+        "tolerance": 0.05,
+        "accepted": [
+          "15,1 m³",
+          "15,1 m3",
+          "15,1 mètres cubes",
+          "≈ 15,1 m³",
+          "≈ 15,1"
+        ]
+      },
+      "points": 3,
+      "solution_steps": [
+        "Volume d'un cylindre = aire de la base × hauteur. La hauteur à prendre est celle de l'eau, 1,2 m, et non celle de la paroi.",
+        "Aire de la base : π × 2 × 2 = π × 4. Volume : π × 4 × 1,2 = π × 4,8.",
+        "Avec la touche π : 15,079… ; avec 3,14 : 3,14 × 4,8 = 15,072. Arrondi au dixième : **15,1 m³**.",
+        "Attention : avec la paroi, π × 4 × 1,3, environ 16,3, compte de l'eau qui n'y est pas."
+      ],
+      "hint": "L'eau monte-t-elle jusqu'en haut de la paroi ?"
+    },
+    {
+      "key": "q4",
+      "skill_id": "P031",
+      "statement": "On admet qu'il faut 15,1 m³ d'eau. Combien cela fait-il en litres ?",
+      "type": "numerique",
+      "answer": {
+        "value": 15100,
+        "unit": "L",
+        "accepted": [
+          "15 100 L",
+          "15 100 litres",
+          "15 100 l",
+          "15100 L",
+          "15100 litres",
+          "15100"
+        ]
+      },
+      "points": 2,
+      "solution_steps": [
+        "1 m³ = 1 000 dm³ = 1 000 L : pour passer des m³ aux litres, on multiplie par 1 000.",
+        "15,1 × 1 000 = 15 100.",
+        "Il faut **15 100 L** d'eau."
+      ],
+      "hint": "Combien de litres y a-t-il dans 1 m³ ?"
+    },
+    {
+      "key": "q5",
+      "skill_id": "P034",
+      "statement": "Les voisins ont une piscine de même forme, remplie à la même hauteur, mais de diamètre deux fois plus grand. Quelle phrase est juste ?",
+      "type": "qcm",
+      "choices": [
+        {
+          "key": "a",
+          "text": "Elle contient 2 fois plus d'eau, car son diamètre est 2 fois plus grand.",
+          "misconception": "Le volume n'est pas proportionnel au rayon : le rayon est multiplié par lui-même dans l'aire du fond."
+        },
+        {
+          "key": "b",
+          "text": "Elle contient 4 fois plus d'eau.",
+          "misconception": null
+        },
+        {
+          "key": "c",
+          "text": "Elle contient 8 fois plus d'eau.",
+          "misconception": "On multiplierait par 8 si les trois dimensions doublaient ; ici la hauteur d'eau ne change pas."
+        },
+        {
+          "key": "d",
+          "text": "Elle contient π fois plus d'eau.",
+          "misconception": "π est dans les deux formules : il ne change pas le rapport entre les deux volumes."
+        }
+      ],
+      "answer": {
+        "value": "b"
+      },
+      "points": 4,
+      "solution_steps": [
+        "Le volume vaut π × rayon × rayon × hauteur. Si le diamètre double, le rayon double aussi.",
+        "Le rayon apparaît deux fois dans le produit : le volume est multiplié par 2 × 2 = 4. La hauteur ne change pas.",
+        "La piscine des voisins contient **4 fois plus d'eau** : avec un rayon de 4 m, π × 4 × 4 × 1,2 = π × 19,2, et π × 19,2 = 4 × π × 4,8."
+      ],
+      "hint": "Dans la formule du volume, combien de fois le rayon apparaît-il ?"
+    }
+  ],
+  "review_status": "brouillon",
+  "programme_ref": "Cycle 4, classe de 5e, Espace et géométrie, Représentation de l'espace, Objectifs d'apprentissage : « Calculer l'aire du disque, le volume du cylindre de révolution. »"
+}

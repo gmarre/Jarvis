@@ -1,0 +1,145 @@
+{
+  "id": "SX-P036-01",
+  "skill_id": "P036",
+  "skill_ids": [
+    "P036",
+    "E007",
+    "P031"
+  ],
+  "school_level": "4e",
+  "title": "La piscine de la famille Moreau",
+  "contexte": "La famille Moreau vient d'installer une piscine hors-sol dans son jardin. Pleine, elle contient 10,8 m³ d'eau. Elle a coûté 489 €, et les 3 enfants de la famille attendent la première baignade avec impatience.\n\nPour la remplir, M. Moreau compare deux solutions.\n\n**Le tuyau d'arrosage.** Pour connaître son débit, M. Moreau le laisse couler 25 minutes dans la piscine vide. Pendant ce temps, le compteur d'eau de la maison avance de 0,4 m³. Le débit du tuyau ne change pas tant que le robinet reste ouvert.\n\n**Le camion-citerne de la commune.** Il part du dépôt, situé à 24 km de la maison, et arrive une demi-heure plus tard. Il remplit la piscine en une seule fois, mais la livraison coûte 95 €.",
+  "image": null,
+  "duree_estimee_min": 15,
+  "questions": [
+    {
+      "key": "q1",
+      "skill_id": "P036",
+      "statement": "M. Moreau veut calculer le débit de son tuyau. Quelles données de l'énoncé lui servent ?",
+      "type": "qcm",
+      "choices": [
+        {
+          "key": "a",
+          "text": "10,8 m³ et 25 minutes",
+          "misconception": "10,8 m³ est le volume de la piscine pleine ; pendant les 25 minutes du test, il n'a coulé que 0,4 m³."
+        },
+        {
+          "key": "b",
+          "text": "24 km et une demi-heure",
+          "misconception": "Ces données décrivent le trajet du camion : elles donnent sa vitesse, pas le débit du tuyau."
+        },
+        {
+          "key": "c",
+          "text": "0,4 m³ et 25 minutes",
+          "misconception": null
+        },
+        {
+          "key": "d",
+          "text": "0,4 m³ et 95 €",
+          "misconception": "Un débit est un volume divisé par une durée ; un prix n'est pas une durée."
+        }
+      ],
+      "answer": {
+        "value": "c"
+      },
+      "points": 1,
+      "solution_steps": [
+        "Un débit est le quotient d'un volume par une durée : le volume d'eau écoulé, divisé par le temps qu'il a mis à couler.",
+        "Pendant le test, le tuyau a versé 0,4 m³ d'eau, mesurés par le compteur, en 25 minutes.",
+        "Les données utiles sont **0,4 m³ et 25 minutes**. Le volume de la piscine pleine servira ensuite, pour la durée du remplissage."
+      ],
+      "hint": "Un débit compare deux grandeurs : lesquelles ? Cherche celles qui décrivent le même test."
+    },
+    {
+      "key": "q2",
+      "skill_id": "P031",
+      "statement": "Combien de litres d'eau contient la piscine pleine ?",
+      "type": "numerique",
+      "answer": {
+        "value": 10800,
+        "unit": "L",
+        "accepted": [
+          "10800 L",
+          "10800 litres",
+          "10 800 L",
+          "10 800 litres",
+          "10800 l"
+        ]
+      },
+      "points": 2,
+      "solution_steps": [
+        "1 m³ = 1 000 L : pour passer des mètres cubes aux litres, on multiplie par 1 000.",
+        "10,8 × 1 000 = 10 800.",
+        "La piscine pleine contient **10 800 L**."
+      ],
+      "hint": "Combien de litres y a-t-il dans 1 m³ ?"
+    },
+    {
+      "key": "q3",
+      "skill_id": "E007",
+      "statement": "Quelle est la vitesse moyenne du camion-citerne entre le dépôt et la maison, en km/h ?",
+      "type": "numerique",
+      "answer": {
+        "value": 48,
+        "unit": "km/h",
+        "accepted": [
+          "48 km/h",
+          "48 km.h-1",
+          "48 kilomètres par heure",
+          "48 km par h"
+        ]
+      },
+      "points": 2,
+      "solution_steps": [
+        "Vitesse moyenne = distance ÷ durée, avec la durée en heures.",
+        "Une demi-heure, c'est 0,5 h : 24 ÷ 0,5 = 48.",
+        "Le camion roule à **48 km/h** de moyenne. Vérification : en une demi-heure à 48 km/h, il parcourt la moitié de 48 km, soit 24 km."
+      ],
+      "hint": "Combien de temps dure le trajet, exprimé en heures ?"
+    },
+    {
+      "key": "q4",
+      "skill_id": "P036",
+      "statement": "Quel est le débit du tuyau d'arrosage, en L/min ?",
+      "type": "numerique",
+      "answer": {
+        "value": 16,
+        "unit": "L/min",
+        "accepted": [
+          "16 L/min",
+          "16 litres par minute"
+        ]
+      },
+      "points": 3,
+      "solution_steps": [
+        "On exprime d'abord le volume écoulé pendant le test en litres : 0,4 m³ = 0,4 × 1 000 L = 400 L.",
+        "Débit = volume ÷ durée : 400 ÷ 25 = 16.",
+        "Le débit du tuyau est de **16 L/min**. Diviser 25 par 400 donnerait des minutes par litre : c'est le mauvais sens."
+      ],
+      "hint": "Commence par exprimer le volume écoulé pendant le test dans l'unité de la réponse."
+    },
+    {
+      "key": "q5",
+      "skill_id": "P036",
+      "statement": "On admet que la piscine pleine contient 10 800 L et que le débit du tuyau est de 16 L/min. Combien de minutes faut-il pour remplir la piscine vide avec le tuyau ?",
+      "type": "numerique",
+      "answer": {
+        "value": 675,
+        "unit": "min",
+        "accepted": [
+          "675 min",
+          "675 minutes"
+        ]
+      },
+      "points": 4,
+      "solution_steps": [
+        "Un débit de 16 L/min signifie que 16 L coulent chaque minute. La durée est le volume divisé par le débit : 10 800 ÷ 16.",
+        "10 800 ÷ 16 = 675. Vérification : 675 × 16 = 10 800.",
+        "Il faut **675 min** pour remplir la piscine, soit 11 h 15 min."
+      ],
+      "hint": "Que signifie un débit de 16 L/min ? Combien de fois 16 L faut-il pour remplir la piscine ?"
+    }
+  ],
+  "review_status": "brouillon",
+  "programme_ref": "Cycle 4, classe de 4e, Proportionnalité, fonctions, Proportionnalité, Objectifs d'apprentissage : « Utiliser des grandeurs quotients, avec ou sans unités. »"
+}

@@ -1,0 +1,137 @@
+{
+  "id": "SX-P033-01",
+  "skill_id": "P033",
+  "skill_ids": [
+    "P033",
+    "A029",
+    "G013",
+    "P023"
+  ],
+  "school_level": "5e",
+  "title": "Le trampoline du jardin",
+  "contexte": "La famille de Lou achète un trampoline rond. Vue de dessus, sa toile est un disque de 3,6 m de diamètre. Le trampoline coûte 249 €, il pèse 85 kg, et la toile est à 0,9 m au-dessus du sol.\n\nPour la sécurité, un boudin de mousse fait tout le tour de la toile, sur son bord.\n\nLe père de Lou veut aussi poser tout autour du trampoline une bande de gazon synthétique de 0,6 m de large : vue de dessus, la bande est comprise entre le cercle du bord de la toile et un grand cercle de même centre, 0,6 m plus loin.\n\nToutes les aires sont demandées en m², arrondies au dixième. Tu peux utiliser la touche π de la calculatrice ou 3,14.",
+  "image": null,
+  "duree_estimee_min": 15,
+  "questions": [
+    {
+      "key": "q1",
+      "skill_id": "G013",
+      "statement": "Quel est le rayon de la toile du trampoline, en m ?",
+      "type": "numerique",
+      "answer": {
+        "value": 1.8,
+        "unit": "m",
+        "accepted": [
+          "1,8 m",
+          "1,8 mètres"
+        ]
+      },
+      "points": 1,
+      "solution_steps": [
+        "Le rayon est la moitié du diamètre : 3,6 ÷ 2 = 1,8.",
+        "La toile a un rayon de **1,8 m**."
+      ],
+      "hint": "Quel est le lien entre le rayon et le diamètre ?"
+    },
+    {
+      "key": "q2",
+      "skill_id": "P023",
+      "statement": "Quelle est la longueur du boudin de mousse, en m, arrondie au dixième ?",
+      "type": "numerique",
+      "answer": {
+        "value": 11.3,
+        "unit": "m",
+        "tolerance": 0.05,
+        "accepted": [
+          "11,3 m",
+          "11,3 mètres",
+          "≈ 11,3 m",
+          "≈ 11,3"
+        ]
+      },
+      "points": 2,
+      "solution_steps": [
+        "Le boudin fait le tour de la toile : c'est le périmètre du disque, diamètre × π.",
+        "Avec la touche π : 3,6 × π = 11,309… ; avec 3,14 : 3,6 × 3,14 = 11,304.",
+        "Arrondi au dixième, dans les deux cas : le boudin mesure environ **11,3 m**."
+      ],
+      "hint": "Le boudin fait le tour de la toile : quelle formule donne ce tour ?"
+    },
+    {
+      "key": "q3",
+      "skill_id": "A029",
+      "statement": "Pour l'aire de la toile, Lou calcule d'abord le carré du rayon, $1{,}8^2$. Combien vaut ce carré, en valeur exacte ?",
+      "type": "numerique",
+      "answer": {
+        "value": 3.24,
+        "unit": null,
+        "accepted": [
+          "3,24 m²",
+          "3,24 m2",
+          "3,24 mètres carrés"
+        ]
+      },
+      "points": 2,
+      "solution_steps": [
+        "$1{,}8^2$ = 1,8 × 1,8 : le carré d'un nombre est ce nombre multiplié par lui-même.",
+        "18 × 18 = 324, et le produit a deux chiffres après la virgule : 1,8 × 1,8 = 3,24.",
+        "Le carré du rayon vaut **3,24**. Attention : 1,8 × 2 = 3,6 calcule le double, pas le carré."
+      ],
+      "hint": "Que veut dire le petit 2 en exposant ?"
+    },
+    {
+      "key": "q4",
+      "skill_id": "P033",
+      "statement": "Le rayon de la toile est 1,8 m, et $1{,}8^2 = 3{,}24$. Quelle est l'aire de la toile, en m², arrondie au dixième ?",
+      "type": "numerique",
+      "answer": {
+        "value": 10.2,
+        "unit": "m²",
+        "tolerance": 0.05,
+        "accepted": [
+          "10,2 m²",
+          "10,2 m2",
+          "10,2 mètres carrés",
+          "≈ 10,2 m²",
+          "≈ 10,2"
+        ]
+      },
+      "points": 3,
+      "solution_steps": [
+        "Aire d'un disque = π × rayon × rayon. Le rayon est 1,8 m, et $1{,}8^2$ = 3,24.",
+        "Avec la touche π : π × 3,24 = 10,178… ; avec 3,14 : 3,14 × 3,24 = 10,1736.",
+        "Arrondi au dixième, dans les deux cas : la toile a une aire d'environ **10,2 m²**.",
+        "Attention : avec le diamètre, π × 3,6 × 3,6, environ 40,7, est quatre fois trop grand ; π × 3,6 est le périmètre."
+      ],
+      "hint": "L'aire d'un disque se calcule avec le rayon, pas avec le diamètre."
+    },
+    {
+      "key": "q5",
+      "skill_id": "P033",
+      "statement": "Le rayon de la toile est 1,8 m, et $1{,}8^2 = 3{,}24$. Quelle est l'aire de la bande de gazon synthétique, en m², arrondie au dixième ?",
+      "type": "numerique",
+      "answer": {
+        "value": 7.9,
+        "unit": "m²",
+        "tolerance": 0.05,
+        "accepted": [
+          "7,9 m²",
+          "7,9 m2",
+          "7,9 mètres carrés",
+          "≈ 7,9 m²",
+          "≈ 7,9"
+        ]
+      },
+      "points": 4,
+      "solution_steps": [
+        "Le grand cercle a pour rayon 1,8 + 0,6 = 2,4 m. La bande est le grand disque privé du disque de la toile.",
+        "Grand disque : π × 2,4 × 2,4 = π × 5,76. Toile : π × 3,24. Bande : π × 5,76 − π × 3,24 = π × 2,52.",
+        "Avec la touche π : π × 2,52 = 7,916… ; avec 3,14 : 3,14 × 2,52 = 7,9128. Arrondi au dixième : **7,9 m²**.",
+        "Attention : π × 0,6 × 0,6, environ 1,1, prend la largeur de la bande pour le rayon d'un disque."
+      ],
+      "hint": "La bande, c'est un grand disque moins un petit : quel est le rayon du grand ?"
+    }
+  ],
+  "review_status": "brouillon",
+  "programme_ref": "Cycle 4, classe de 5e, Espace et géométrie, Représentation de l'espace, Objectifs d'apprentissage : « Calculer l'aire du disque, le volume du cylindre de révolution. »"
+}

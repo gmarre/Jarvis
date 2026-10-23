@@ -1,0 +1,178 @@
+{
+  "id": "SX-G070-01",
+  "skill_id": "G070",
+  "skill_ids": [
+    "G070",
+    "B006",
+    "G020"
+  ],
+  "school_level": "5e",
+  "title": "Les caisses de livres de la kermesse",
+  "contexte": "Pour la kermesse du collège, Malik empile des caisses de livres d'occasion sur une table. Toutes les caisses sont des cubes identiques, et aucune ne flotte : sous chaque caisse, il y a une autre caisse ou la table.\n\nÀ gauche de la figure, voici la vue de dessus de l'empilement. Dans chaque case, Malik a écrit le nombre de caisses empilées. La rangée de devant, du côté des visiteurs, est en bas de la vue de dessus.\n\nÀ droite, Zoé a dessiné quatre vues, lettrées A, B, C et D, pour aider les bénévoles. Certaines sont justes, d'autres non.\n\nChaque caisse contient 8 livres. La kermesse attend 80 familles, et le stand de livres ouvre après le spectacle des élèves de 6e.",
+  "image": "figures/SX-G070-01",
+  "duree_estimee_min": 15,
+  "questions": [
+    {
+      "key": "q1",
+      "skill_id": "G020",
+      "statement": "Dans la vue de dessus, que veut dire le nombre 5 écrit dans une case ?",
+      "type": "qcm",
+      "choices": [
+        {
+          "key": "a",
+          "text": "Cette pile est la cinquième en partant de la gauche.",
+          "misconception": "Le nombre ne donne pas une place : la vue de dessus n'a que trois cases par rangée. Il compte les caisses de la pile."
+        },
+        {
+          "key": "b",
+          "text": "Il y a 5 livres dans les caisses de cette case.",
+          "misconception": "Une caisse contient 8 livres ; le nombre écrit compte des caisses, pas des livres."
+        },
+        {
+          "key": "c",
+          "text": "On voit 5 caisses quand on regarde l'empilement de face.",
+          "misconception": "La vue de face montre la pile la plus haute de chaque colonne, pas le nombre écrit dans une seule case."
+        },
+        {
+          "key": "d",
+          "text": "Il y a 5 caisses empilées sur cette case.",
+          "misconception": null
+        }
+      ],
+      "answer": {
+        "value": "d"
+      },
+      "points": 1,
+      "solution_steps": [
+        "Malik a écrit, dans chaque case de la vue de dessus, le nombre de caisses empilées sur cette case.",
+        "Le nombre 5 veut donc dire qu'il y a **5 caisses empilées** sur cette case : une pile de 5 caisses."
+      ],
+      "hint": "Relis la phrase de l'énoncé qui explique les nombres écrits dans les cases."
+    },
+    {
+      "key": "q2",
+      "skill_id": "G020",
+      "statement": "Combien de caisses compte l'empilement, en tout ?",
+      "type": "numerique",
+      "answer": {
+        "value": 12,
+        "unit": "caisses",
+        "accepted": [
+          "12 caisses",
+          "12 caisse",
+          "douze",
+          "douze caisses"
+        ]
+      },
+      "points": 2,
+      "solution_steps": [
+        "On additionne les nombres écrits dans les cases, rangée par rangée : chaque nombre compte les caisses d'une pile, celles qu'on voit et celles qui sont cachées dessous.",
+        "Rangée du fond : 2 + 1 + 5 = 8. Rangée de devant : 1 + 2 + 1 = 4.",
+        "En tout : 8 + 4 = 12. L'empilement compte **12 caisses**.",
+        "Attention : compter les cases donne 6, c'est le nombre de piles, pas de caisses."
+      ],
+      "hint": "Que compte chaque nombre écrit dans la vue de dessus ?"
+    },
+    {
+      "key": "q3",
+      "skill_id": "B006",
+      "statement": "Combien de livres contiennent, en tout, les caisses de la rangée de devant ?",
+      "type": "numerique",
+      "answer": {
+        "value": 32,
+        "unit": "livres",
+        "accepted": [
+          "32 livres",
+          "32 livre",
+          "trente-deux",
+          "trente-deux livres"
+        ]
+      },
+      "points": 2,
+      "solution_steps": [
+        "La rangée de devant est en bas de la vue de dessus : 1 + 2 + 1 = 4 caisses.",
+        "Chaque caisse contient 8 livres : 4 × 8 = 32.",
+        "Les caisses de la rangée de devant contiennent **32 livres**."
+      ],
+      "hint": "Combien de caisses compte la rangée de devant ? Combien de livres y a-t-il dans une caisse ?"
+    },
+    {
+      "key": "q4",
+      "skill_id": "G070",
+      "statement": "Un visiteur se place devant la table, du côté de la rangée de devant, et regarde l'empilement. Laquelle des quatre vues voit-il ?",
+      "type": "qcm",
+      "choices": [
+        {
+          "key": "a",
+          "text": "La vue A",
+          "misconception": "La vue A ne montre que la rangée du fond (2 ; 1 ; 5). Au milieu, la pile de devant a 2 caisses : elle dépasse celle du fond, et on la voit."
+        },
+        {
+          "key": "b",
+          "text": "La vue B",
+          "misconception": null
+        },
+        {
+          "key": "c",
+          "text": "La vue C",
+          "misconception": "La vue C n'a que deux colonnes : c'est une vue de côté, où l'on voit une colonne par rangée. De face, il y a trois colonnes."
+        },
+        {
+          "key": "d",
+          "text": "La vue D",
+          "misconception": "La vue D n'a que deux colonnes : c'est une vue de côté. De face, on voit une colonne pour chacune des trois cases d'une rangée."
+        }
+      ],
+      "answer": {
+        "value": "b"
+      },
+      "points": 3,
+      "solution_steps": [
+        "De face, on voit une colonne pour chaque case d'une rangée : trois colonnes, de gauche à droite.",
+        "Dans chaque colonne, on ne voit que la pile la plus haute, que les autres cachent : à gauche, 2 caisses au fond et 1 devant, on voit 2 carrés ; au milieu, 1 au fond et 2 devant, on en voit 2 ; à droite, 5 au fond et 1 devant, on en voit 5.",
+        "La vue de face a des colonnes de 2, 2 et 5 carrés : c'est **la vue B**."
+      ],
+      "hint": "Pour chaque colonne, de gauche à droite, quelle est la pile la plus haute ?"
+    },
+    {
+      "key": "q5",
+      "skill_id": "G070",
+      "statement": "Malik se place du côté droit de la table, c'est-à-dire du côté droit de la vue de dessus, et il regarde l'empilement de ce côté. Laquelle des quatre vues voit-il ?",
+      "type": "qcm",
+      "choices": [
+        {
+          "key": "a",
+          "text": "La vue A",
+          "misconception": "La vue A a trois colonnes : c'est une vue prise de face ou de derrière. Depuis la droite, on voit une colonne par rangée, donc deux colonnes."
+        },
+        {
+          "key": "b",
+          "text": "La vue B",
+          "misconception": "La vue B est la vue de face : depuis la droite, on ne voit que deux colonnes, une par rangée."
+        },
+        {
+          "key": "c",
+          "text": "La vue C",
+          "misconception": null
+        },
+        {
+          "key": "d",
+          "text": "La vue D",
+          "misconception": "La vue D est inversée : c'est ce qu'on voit depuis la gauche. Placé à droite, Malik a la rangée de devant, la moins haute, à sa gauche."
+        }
+      ],
+      "answer": {
+        "value": "c"
+      },
+      "points": 4,
+      "solution_steps": [
+        "Depuis la droite, on voit une colonne par rangée : deux colonnes. Dans chacune, on ne voit que la pile la plus haute de la rangée : 2 pour la rangée de devant, 5 pour celle du fond.",
+        "Placé à droite et tourné vers la table, Malik a la rangée de devant, côté visiteurs, à sa gauche, et la rangée du fond à sa droite.",
+        "Il voit donc une colonne de 2 carrés à gauche et une colonne de 5 carrés à droite : c'est **la vue C**. La vue D est celle qu'on voit depuis la gauche de la table."
+      ],
+      "hint": "Place-toi à droite de la table, tourné vers elle : où est la rangée de devant, à ta gauche ou à ta droite ?"
+    }
+  ],
+  "review_status": "brouillon",
+  "programme_ref": "Cycle 4, classe de 5e, Espace et géométrie, Représentation de l'espace, Automatismes : « Reconnaitre des vues (de dessus, dessous…) d'empilements de cubes. »"
+}

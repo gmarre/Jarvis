@@ -1,0 +1,176 @@
+{
+  "id": "SX-G074-01",
+  "skill_id": "G074",
+  "skill_ids": [
+    "G074",
+    "D004",
+    "G073"
+  ],
+  "school_level": "3e",
+  "title": "Le presse-papier du verrier",
+  "contexte": "Un artisan verrier fabrique des presse-papiers. Il part d'un cube de verre ABCDEFGH de 7 cm d'arête, représenté en perspective cavalière sur la figure : ABCD est la face avant, E, F, G et H sont derrière A, B, C et D, et ABFE est la face du dessous, posée sur la table.\n\nIl taille dans ce cube la pyramide de sommet D et de base ABFE, tracée en bleu ; O est le centre du carré ABFE. Avec un pied à coulisse, il mesure DB ≈ 9,9 cm et DF ≈ 12,1 cm.\n\nPour décorer chaque presse-papier, il colle un filet doré le long des trois côtés de la face DBF. Le cube de verre pèse 850 g, et l'artisan vend chaque presse-papier 39 €.",
+  "image": "figures/SX-G074-01",
+  "duree_estimee_min": 15,
+  "questions": [
+    {
+      "key": "q1",
+      "skill_id": "G073",
+      "statement": "Combien de faces a la pyramide de sommet D et de base ABFE ?",
+      "type": "numerique",
+      "answer": {
+        "value": 5,
+        "accepted": [
+          "5 faces",
+          "cinq",
+          "cinq faces",
+          "il y en a 5"
+        ]
+      },
+      "points": 1,
+      "solution_steps": [
+        "La base ABFE a 4 côtés : la pyramide a 4 faces latérales triangulaires, DAB, DBF, DFE et DEA.",
+        "Avec la base, cela fait 4 + 1 = **5 faces**."
+      ],
+      "hint": "Combien de côtés a la base ? Chaque côté de la base porte une face latérale."
+    },
+    {
+      "key": "q2",
+      "skill_id": "G073",
+      "statement": "Quel segment est la hauteur de la pyramide de sommet D et de base ABFE ?",
+      "type": "qcm",
+      "choices": [
+        {
+          "key": "a",
+          "text": "[DO]",
+          "misconception": "La hauteur doit être perpendiculaire à la base ; ici, le sommet D est au-dessus de A, pas au-dessus du centre O : [DO] est oblique."
+        },
+        {
+          "key": "b",
+          "text": "[DA]",
+          "misconception": null
+        },
+        {
+          "key": "c",
+          "text": "[DF]",
+          "misconception": "[DF] est l'arête la plus longue, une grande diagonale du cube : elle n'est pas perpendiculaire à la base."
+        },
+        {
+          "key": "d",
+          "text": "[DB]",
+          "misconception": "[DB] est une diagonale de la face avant : elle est oblique par rapport à la base."
+        }
+      ],
+      "answer": {
+        "value": "b"
+      },
+      "points": 2,
+      "solution_steps": [
+        "La hauteur d'une pyramide est le segment issu du sommet et perpendiculaire à la base.",
+        "[DA] est une arête verticale du cube : elle est perpendiculaire à la face du dessous ABFE, et A est un point de cette base.",
+        "La hauteur est donc **[DA]**, qui est aussi une arête latérale de la pyramide. Elle n'aboutit pas au centre O de la base."
+      ],
+      "hint": "La hauteur part du sommet D. Quelle propriété doit-elle avoir par rapport à la base ?"
+    },
+    {
+      "key": "q3",
+      "skill_id": "D004",
+      "statement": "D'après les mesures de l'artisan, quelle longueur de filet doré faut-il pour border la face DBF, en cm ?",
+      "type": "numerique",
+      "answer": {
+        "value": 29,
+        "unit": "cm",
+        "accepted": [
+          "29 cm",
+          "29 centimètres",
+          "≈ 29 cm",
+          "environ 29 cm"
+        ]
+      },
+      "points": 2,
+      "solution_steps": [
+        "La face DBF a trois côtés : [DB], d'environ 9,9 cm ; [BF], une arête du cube, de 7 cm ; [DF], d'environ 12,1 cm.",
+        "9,9 + 7 + 12,1 = 29.",
+        "Il faut environ **29 cm** de filet doré."
+      ],
+      "hint": "Quels sont les trois côtés de la face DBF ? L'un d'eux est une arête du cube."
+    },
+    {
+      "key": "q4",
+      "skill_id": "G074",
+      "statement": "Quelle est la vraie nature de la face DAE de la pyramide ?",
+      "type": "qcm",
+      "choices": [
+        {
+          "key": "a",
+          "text": "Un triangle rectangle isocèle en A",
+          "misconception": null
+        },
+        {
+          "key": "b",
+          "text": "Un triangle équilatéral",
+          "misconception": "[DE] est une diagonale de la face ADHE : elle est plus longue que les arêtes [DA] et [AE]."
+        },
+        {
+          "key": "c",
+          "text": "Un triangle quelconque, car l'angle en A n'est pas droit sur le dessin",
+          "misconception": "En perspective cavalière, un angle droit d'une face fuyante n'est pas dessiné droit : il faut raisonner sur le cube, pas sur le dessin."
+        },
+        {
+          "key": "d",
+          "text": "Un triangle rectangle en D",
+          "misconception": "L'angle droit est entre les deux arêtes du cube [AD] et [AE], au sommet A, pas en D."
+        }
+      ],
+      "answer": {
+        "value": "a"
+      },
+      "points": 3,
+      "solution_steps": [
+        "[DA] et [AE] sont deux arêtes du cube : elles mesurent 7 cm toutes les deux.",
+        "Ce sont deux côtés consécutifs de la face carrée ADHE du cube : elles forment un angle droit en A.",
+        "DAE est la moitié du carré ADHE coupé par sa diagonale [DE] : c'est **un triangle rectangle isocèle en A**, même si l'angle en A n'est pas dessiné droit."
+      ],
+      "hint": "Dans quelle face du cube se trouve le triangle DAE ? Que sais-tu de ses côtés ?"
+    },
+    {
+      "key": "q5",
+      "skill_id": "G074",
+      "statement": "Quelle est la vraie nature de la face DFE de la pyramide ?",
+      "type": "qcm",
+      "choices": [
+        {
+          "key": "a",
+          "text": "Un triangle équilatéral, car ses trois côtés sont des diagonales",
+          "misconception": "Seul [DE] est une diagonale de face ; [EF] est une arête de 7 cm, et [DF] une grande diagonale du cube, d'environ 12,1 cm."
+        },
+        {
+          "key": "b",
+          "text": "Un triangle rectangle isocèle en E",
+          "misconception": "EF = 7 cm, alors que [DE], diagonale d'une face carrée du cube comme [DB], mesure environ 9,9 cm : les deux côtés de l'angle droit n'ont pas la même longueur."
+        },
+        {
+          "key": "c",
+          "text": "Un triangle quelconque, car l'angle en E n'est pas droit sur le dessin",
+          "misconception": "En perspective cavalière, un angle droit n'est pas toujours dessiné droit : il faut raisonner sur le cube, pas sur le dessin."
+        },
+        {
+          "key": "d",
+          "text": "Un triangle rectangle en E, qui n'est pas isocèle",
+          "misconception": null
+        }
+      ],
+      "answer": {
+        "value": "d"
+      },
+      "points": 4,
+      "solution_steps": [
+        "[EF] est une arête du cube perpendiculaire à la face ADHE : elle fait un angle droit avec chaque segment de cette face issu de E, en particulier avec la diagonale [ED]. Le triangle DFE est donc rectangle en E, même si cet angle n'est pas dessiné droit.",
+        "[DE] est une diagonale de la face carrée ADHE, de 7 cm de côté, comme [DB] l'est de la face ABCD : DE = DB ≈ 9,9 cm. Les trois côtés mesurent donc EF = 7 cm, DE ≈ 9,9 cm et DF ≈ 12,1 cm : ils sont différents, le triangle n'est ni isocèle, ni équilatéral.",
+        "La face DFE est **un triangle rectangle en E, qui n'est pas isocèle**. Son plus grand côté, [DF], est une grande diagonale du cube."
+      ],
+      "hint": "Raisonne sur le cube et non sur le dessin : regarde où se trouve chaque côté de la face DFE."
+    }
+  ],
+  "review_status": "brouillon",
+  "programme_ref": "Cycle 4, classe de 3e, Espace et géométrie, Représentation de l'espace, Automatismes : « Donner la nature d'une face d'une pyramide représentée en perspective cavalière. »"
+}

@@ -1,0 +1,147 @@
+{
+  "id": "SX-P029-01",
+  "skill_id": "P029",
+  "skill_ids": [
+    "P029",
+    "D004",
+    "G049",
+    "P028"
+  ],
+  "school_level": "5e",
+  "title": "Le jardin public en parallélogramme",
+  "contexte": "La mairie aménage un petit jardin public. Vu de dessus, il a la forme du parallélogramme ABCD de la figure. Le côté [AB], le long de la rue, mesure 16 m, et le côté [AD] mesure 10,2 m. Le point K est sur [AB], à 4,8 m de A, et le segment [DK] est perpendiculaire à (AB) : il mesure 9 m. L'angle $\\widehat{DAB}$ mesure environ 62°.\n\nDans le coin A, le triangle AKD, colorié sur la figure, deviendra une mare. Tout le reste du jardin sera en pelouse. Une bordure en pierre fera le tour complet du parallélogramme.\n\nLes travaux dureront 3 semaines, et la mairie a prévu 8 bancs.",
+  "image": "figures/SX-P029-01",
+  "duree_estimee_min": 15,
+  "questions": [
+    {
+      "key": "q1",
+      "skill_id": "G049",
+      "statement": "Quelle phrase sur le côté [DC] est juste ?",
+      "type": "qcm",
+      "choices": [
+        {
+          "key": "a",
+          "text": "[DC] mesure 16 m, car dans un parallélogramme les côtés opposés ont la même longueur.",
+          "misconception": null
+        },
+        {
+          "key": "b",
+          "text": "[DC] mesure 10,2 m, car dans un parallélogramme les côtés consécutifs ont la même longueur.",
+          "misconception": "Les côtés consécutifs d'un parallélogramme n'ont pas forcément la même longueur ; c'est le cas du losange."
+        },
+        {
+          "key": "c",
+          "text": "On ne peut pas connaître [DC] sans le mesurer sur la figure.",
+          "misconception": "La propriété des côtés opposés donne [DC] sans mesurer ; et une mesure sur la figure ne prouve rien."
+        },
+        {
+          "key": "d",
+          "text": "[DC] mesure 9 m, comme [DK], car [DK] et [DC] partent de D.",
+          "misconception": "[DK] est la hauteur, pas un côté : partir du même point ne donne pas la même longueur."
+        }
+      ],
+      "answer": {
+        "value": "a"
+      },
+      "points": 1,
+      "solution_steps": [
+        "ABCD est un parallélogramme : ses côtés opposés ont la même longueur.",
+        "[DC] est le côté opposé à [AB] : il mesure aussi 16 m. La bonne phrase est la a."
+      ],
+      "hint": "Quel côté est opposé à [DC] ?"
+    },
+    {
+      "key": "q2",
+      "skill_id": "P028",
+      "statement": "Quelle est l'aire de la mare AKD, en m² ?",
+      "type": "numerique",
+      "answer": {
+        "value": 21.6,
+        "unit": "m²",
+        "accepted": [
+          "21,6 m²",
+          "21,6 m2",
+          "21,6 mètres carrés"
+        ]
+      },
+      "points": 2,
+      "solution_steps": [
+        "La mare est le triangle AKD, rectangle en K. Pour la base [AK], de 4,8 m, la hauteur est [DK], de 9 m.",
+        "Aire = 4,8 × 9 ÷ 2 = 21,6. La mare a une aire de **21,6 m²**.",
+        "Attention : [AD], de 10,2 m, est le côté oblique ; ce n'est pas une hauteur du triangle pour la base [AK]."
+      ],
+      "hint": "Le triangle AKD a un angle droit : quels côtés le forment ?"
+    },
+    {
+      "key": "q3",
+      "skill_id": "D004",
+      "statement": "On admet que [DC] mesure 16 m et [BC] 10,2 m. Quelle longueur de bordure faut-il pour faire le tour complet du jardin, en m ?",
+      "type": "numerique",
+      "answer": {
+        "value": 52.4,
+        "unit": "m",
+        "accepted": [
+          "52,4 m",
+          "52,4 mètres"
+        ]
+      },
+      "points": 2,
+      "solution_steps": [
+        "Le tour du parallélogramme : AB + BC + CD + DA, avec AB = 16 m, BC = 10,2 m, CD = 16 m et DA = 10,2 m.",
+        "16 + 10,2 = 26,2, puis 26,2 + 26,2 = 52,4.",
+        "Il faut **52,4 m** de bordure."
+      ],
+      "hint": "Combien mesure chacun des quatre côtés ?"
+    },
+    {
+      "key": "q4",
+      "skill_id": "G049",
+      "statement": "Le maçon taille la pierre du coin B. Combien mesure environ l'angle $\\widehat{ABC}$, en degrés ?",
+      "type": "numerique",
+      "answer": {
+        "value": 118,
+        "unit": "°",
+        "accepted": [
+          "118°",
+          "118 °",
+          "118 degrés",
+          "environ 118°",
+          "≈ 118°",
+          "ABC = 118°"
+        ]
+      },
+      "points": 2,
+      "solution_steps": [
+        "Dans un parallélogramme, deux angles consécutifs sont supplémentaires : leur somme vaut 180°.",
+        "Les angles $\\widehat{DAB}$ et $\\widehat{ABC}$ ont le côté [AB] en commun : ils sont consécutifs. 180 − 62 = 118.",
+        "L'angle $\\widehat{ABC}$ mesure environ **118°**. C'est l'angle opposé, $\\widehat{BCD}$, qui mesure environ 62°."
+      ],
+      "hint": "Les angles en A et en B sont-ils opposés ou consécutifs ?"
+    },
+    {
+      "key": "q5",
+      "skill_id": "P029",
+      "statement": "On admet que la mare a une aire de 21,6 m². Quelle est l'aire de la pelouse, en m² ?",
+      "type": "numerique",
+      "answer": {
+        "value": 122.4,
+        "unit": "m²",
+        "accepted": [
+          "122,4 m²",
+          "122,4 m2",
+          "122,4 mètres carrés"
+        ]
+      },
+      "points": 4,
+      "solution_steps": [
+        "La pelouse est le jardin privé de la mare : on calcule l'aire du parallélogramme, puis une différence.",
+        "Aire d'un parallélogramme = base × hauteur relative à cette base. Base [AB] : 16 m ; hauteur [DK] : 9 m. 16 × 9 = 144 m².",
+        "Aire de la pelouse : 144 − 21,6 = 122,4. La pelouse a une aire de **122,4 m²**.",
+        "Attention : 16 × 10,2 = 163,2 multiplie deux côtés, [AD] n'est pas une hauteur ; et ajouter la mare au lieu de la retirer donne 165,6."
+      ],
+      "hint": "La pelouse, c'est le jardin moins quelle partie ? Pour le jardin, quelle longueur est perpendiculaire à [AB] ?"
+    }
+  ],
+  "review_status": "brouillon",
+  "programme_ref": "Cycle 4, classe de 5e, Espace et géométrie, Parallélogrammes, Objectifs d'apprentissage : « Savoir calculer l'aire d'un parallélogramme et de figures complexes. »"
+}

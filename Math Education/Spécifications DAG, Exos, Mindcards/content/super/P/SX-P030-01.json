@@ -1,0 +1,134 @@
+{
+  "id": "SX-P030-01",
+  "skill_id": "P030",
+  "skill_ids": [
+    "P030",
+    "D007",
+    "P021",
+    "P025"
+  ],
+  "school_level": "5e",
+  "title": "Le nouveau sol de la salle polyvalente",
+  "contexte": "La mairie refait le sol de la salle polyvalente. La salle est un rectangle de 7,5 m de long et de 450 cm de large.\n\nLe sol sera couvert de dalles carrées de 50 cm de côté, posées bord à bord, sans aucune découpe. Les dalles sont vendues par cartons de 5, et un carton coûte 23 €.\n\nL'estrade, démontable, sera rangée pendant les travaux : les dalles couvriront tout le sol de la salle. On garde la moquette de l'estrade, qui mesure 8,4 m². La salle peut accueillir 120 personnes, et les travaux auront lieu pendant les vacances de printemps.",
+  "image": null,
+  "duree_estimee_min": 15,
+  "questions": [
+    {
+      "key": "q1",
+      "skill_id": "P021",
+      "statement": "Quelle est la longueur de la salle, en centimètres ?",
+      "type": "numerique",
+      "answer": {
+        "value": 750,
+        "unit": "cm",
+        "accepted": [
+          "750 cm",
+          "750 centimètres"
+        ]
+      },
+      "points": 1,
+      "solution_steps": [
+        "1 m = 100 cm : pour passer des mètres aux centimètres, on multiplie par 100.",
+        "7,5 × 100 = 750. La salle a une longueur de **750 cm**."
+      ],
+      "hint": "Combien de centimètres y a-t-il dans un mètre ?"
+    },
+    {
+      "key": "q2",
+      "skill_id": "P030",
+      "statement": "Quelle est l'aire du sol de la salle, en m² ?",
+      "type": "numerique",
+      "answer": {
+        "value": 33.75,
+        "unit": "m²",
+        "accepted": [
+          "33,75 m²",
+          "33,75 m2",
+          "33,75 mètres carrés"
+        ]
+      },
+      "points": 2,
+      "solution_steps": [
+        "Avant de multiplier, on écrit les deux longueurs dans la même unité : 7,5 m et 450 cm = 4,5 m.",
+        "Aire du rectangle : 7,5 × 4,5 = 33,75.",
+        "Le sol a une aire de **33,75 m²**. Attention : 7,5 × 450 = 3 375 multiplie des mètres par des centimètres, ce n'est pas une aire en m²."
+      ],
+      "hint": "Les deux longueurs sont-elles dans la même unité ?"
+    },
+    {
+      "key": "q3",
+      "skill_id": "P025",
+      "statement": "Quelle est l'aire de la moquette de l'estrade, en cm² ?",
+      "type": "numerique",
+      "answer": {
+        "value": 84000,
+        "unit": "cm²",
+        "accepted": [
+          "84 000 cm²",
+          "84 000 cm2",
+          "84 000 centimètres carrés",
+          "84000 cm²",
+          "84000 cm2",
+          "84000"
+        ]
+      },
+      "points": 2,
+      "solution_steps": [
+        "1 m² = 100 dm² = 10 000 cm² : une unité d'aire vaut 100 fois la suivante.",
+        "8,4 × 10 000 = 84 000.",
+        "La moquette a une aire de **84 000 cm²**. Attention : 8,4 × 100 = 840 convertit comme une longueur."
+      ],
+      "hint": "Par combien multiplie-t-on pour passer des m² aux dm², puis des dm² aux cm² ?"
+    },
+    {
+      "key": "q4",
+      "skill_id": "D007",
+      "statement": "Combien coûte une seule dalle, en euros ?",
+      "type": "numerique",
+      "answer": {
+        "value": 4.6,
+        "unit": "€",
+        "accepted": [
+          "4,60 €",
+          "4,6 €",
+          "4,60 euros",
+          "4,6 euros",
+          "4,60"
+        ]
+      },
+      "points": 2,
+      "solution_steps": [
+        "Un carton de 5 dalles coûte 23 € : on partage 23 € en 5.",
+        "5 × 4 = 20, il reste 3 €, soit 30 dixièmes ; 5 × 6 = 30, il ne reste rien. Donc 23 ÷ 5 = 4,6.",
+        "Une dalle coûte **4,60 €**. Attention : « 4 reste 3 » ne s'écrit pas 4,3."
+      ],
+      "hint": "Combien de dalles y a-t-il dans un carton, et combien coûte le carton ?"
+    },
+    {
+      "key": "q5",
+      "skill_id": "P030",
+      "statement": "On admet que le sol de la salle mesure 33,75 m². Combien de dalles faut-il pour le couvrir ?",
+      "type": "numerique",
+      "answer": {
+        "value": 135,
+        "unit": "dalles",
+        "accepted": [
+          "135 dalles",
+          "135 dalle",
+          "cent trente-cinq",
+          "cent trente-cinq dalles"
+        ]
+      },
+      "points": 4,
+      "solution_steps": [
+        "Une dalle est un carré de 50 cm = 0,5 m de côté : son aire est 0,5 × 0,5 = 0,25 m².",
+        "Nombre de dalles : 33,75 ÷ 0,25. On multiplie les deux nombres par 100 : 3 375 ÷ 25 = 135.",
+        "Il faut **135 dalles**. Vérification : 15 dalles dans la longueur (15 × 0,5 = 7,5) et 9 dans la largeur (9 × 0,5 = 4,5), et 15 × 9 = 135.",
+        "Attention : 1 m² = 10 000 cm², donc 2 500 cm² = 0,25 m², et non 0,025 m²."
+      ],
+      "hint": "Calcule d'abord l'aire d'une dalle dans la même unité que le sol."
+    }
+  ],
+  "review_status": "brouillon",
+  "programme_ref": "Cycle 4, classe de 5e, Espace et géométrie, Parallélogrammes, Objectifs d'apprentissage : « Résoudre des problèmes faisant appel à des conversions d'unités de longueur et d'unités d'aires. »"
+}

@@ -1,0 +1,161 @@
+{
+  "id": "SX-G073-01",
+  "skill_id": "G073",
+  "skill_ids": [
+    "G073",
+    "G019",
+    "P023"
+  ],
+  "school_level": "4e",
+  "title": "La maquette du château fort",
+  "contexte": "Pour l'exposition du club de maquettes, Hugo construit un château fort en carton.\n\n**La grande tour** est un prisme droit dont les deux bases sont des hexagones. Sur ce prisme, Hugo colle un toit en forme de pyramide, dont la base est exactement l'hexagone du dessus du prisme : cet hexagone se retrouve caché à l'intérieur de la tour.\n\n**La tourelle** est un cylindre de révolution surmonté d'un toit en forme de cône de révolution, dessiné sur la figure. Ce cône a pour sommet S et pour base le disque de centre O ; ses longueurs sont écrites sur la figure.\n\nPour fabriquer ce toit, Hugo découpe un patron dans du carton : une portion de disque, dont l'arc fait exactement le tour du disque de base quand on la plie.\n\nUne feuille de carton coûte 3,50 €, et l'exposition dure 2 jours.",
+  "image": "figures/SX-G073-01",
+  "duree_estimee_min": 15,
+  "questions": [
+    {
+      "key": "q1",
+      "skill_id": "G073",
+      "statement": "Quelle est la base du toit de la tourelle ?",
+      "type": "qcm",
+      "choices": [
+        {
+          "key": "a",
+          "text": "Le disque de centre O",
+          "misconception": null
+        },
+        {
+          "key": "b",
+          "text": "Le point S",
+          "misconception": "S est le sommet du cône, pas sa base."
+        },
+        {
+          "key": "c",
+          "text": "Un triangle",
+          "misconception": "Vu de face, le cône ressemble à un triangle, mais sa base est plane et ronde : un disque."
+        },
+        {
+          "key": "d",
+          "text": "Un hexagone",
+          "misconception": "L'hexagone est la base du toit de la grande tour, une pyramide ; le toit de la tourelle est un cône."
+        }
+      ],
+      "answer": {
+        "value": "a"
+      },
+      "points": 1,
+      "solution_steps": [
+        "Un cône de révolution a un sommet et une base en forme de disque.",
+        "Ici, le sommet est S et la base est **le disque de centre O**."
+      ],
+      "hint": "Un cône de révolution a deux parties remarquables : lesquelles ?"
+    },
+    {
+      "key": "q2",
+      "skill_id": "G073",
+      "statement": "Hugo veut renforcer le toit de la tourelle avec une tige droite, qui va du sommet S jusqu'à la base et qui est perpendiculaire à la base. Quelle longueur de tige doit-il couper ?",
+      "type": "qcm",
+      "choices": [
+        {
+          "key": "a",
+          "text": "8,5 cm",
+          "misconception": "8,5 cm est la longueur d'une génératrice, du sommet au bord du disque : elle n'est pas perpendiculaire à la base."
+        },
+        {
+          "key": "b",
+          "text": "4,5 cm",
+          "misconception": "4,5 cm est le rayon du disque de base, pas une longueur issue du sommet."
+        },
+        {
+          "key": "c",
+          "text": "9 cm",
+          "misconception": "9 cm serait le diamètre du disque de base : ce n'est pas une longueur issue du sommet."
+        },
+        {
+          "key": "d",
+          "text": "7,2 cm",
+          "misconception": null
+        }
+      ],
+      "answer": {
+        "value": "d"
+      },
+      "points": 2,
+      "solution_steps": [
+        "Une tige issue du sommet et perpendiculaire à la base, c'est la hauteur du cône : elle aboutit au centre O du disque de base.",
+        "Sur la figure, la hauteur est le segment [SO], en pointillés, avec l'angle droit en O : il mesure **7,2 cm**.",
+        "Le segment qui joint S au bord du disque est une génératrice, d'environ 8,5 cm : il est plus long que la hauteur, et il n'est pas perpendiculaire à la base."
+      ],
+      "hint": "Rappelle-toi la définition de la hauteur d'un cône."
+    },
+    {
+      "key": "q3",
+      "skill_id": "P023",
+      "statement": "Le rayon du disque de base du toit mesure 4,5 cm. Quelle est la longueur de l'arc du patron, en cm, arrondie au dixième ?",
+      "type": "numerique",
+      "answer": {
+        "value": 28.3,
+        "tolerance": 0.05,
+        "unit": "cm",
+        "accepted": [
+          "28,3 cm",
+          "28,3 centimètres",
+          "≈ 28,3 cm",
+          "environ 28,3 cm"
+        ]
+      },
+      "points": 2,
+      "solution_steps": [
+        "Plié, l'arc du patron fait exactement le tour du disque de base : sa longueur est le périmètre de ce disque.",
+        "Périmètre = 2 × π × rayon = 2 × π × 4,5 = 9 × π ≈ 28,27.",
+        "Arrondie au dixième, la longueur de l'arc est **28,3 cm**. Avec 3,14 pour π : 9 × 3,14 = 28,26, qui s'arrondit aussi à 28,3."
+      ],
+      "hint": "Quand on plie le patron, l'arc vient se coller contre le bord de quel disque ?"
+    },
+    {
+      "key": "q4",
+      "skill_id": "G019",
+      "statement": "Avant qu'Hugo y colle le toit, combien de faces a le prisme de la grande tour ?",
+      "type": "numerique",
+      "answer": {
+        "value": 8,
+        "accepted": [
+          "8 faces",
+          "huit",
+          "huit faces",
+          "il y en a 8"
+        ]
+      },
+      "points": 2,
+      "solution_steps": [
+        "Un prisme droit a deux bases identiques, ici deux hexagones.",
+        "Il a autant de faces latérales rectangulaires que sa base a de côtés : un hexagone a 6 côtés, donc 6 faces latérales.",
+        "En tout : 2 + 6 = **8 faces**."
+      ],
+      "hint": "Quelle est la forme des bases d'un prisme droit ? Et celle de ses autres faces ?"
+    },
+    {
+      "key": "q5",
+      "skill_id": "G073",
+      "statement": "On admet que le prisme de la grande tour a 8 faces. Combien de faces a la grande tour terminée, avec son toit ?",
+      "type": "numerique",
+      "answer": {
+        "value": 13,
+        "accepted": [
+          "13 faces",
+          "treize",
+          "treize faces",
+          "il y en a 13"
+        ]
+      },
+      "points": 4,
+      "solution_steps": [
+        "Le toit est une pyramide à base hexagonale : elle a une face latérale triangulaire par côté de l'hexagone, soit 6 triangles, plus sa base.",
+        "Quand le toit est collé, l'hexagone du dessus du prisme et la base de la pyramide sont cachés à l'intérieur : ce ne sont plus des faces de la tour.",
+        "Il reste les 8 − 1 = 7 faces du prisme et les 6 triangles du toit : 7 + 6 = **13 faces**."
+      ],
+      "hint": "Que deviennent les deux hexagones qui se touchent quand Hugo colle le toit ?"
+    }
+  ],
+  "review_status": "brouillon",
+  "programme_ref": "Cycle 4, classe de 4e, Espace et géométrie, Représentation de l'espace, Objectifs d'apprentissage : « Reconnaitre des solides (pyramide, cône de révolution). »"
+}

@@ -1,0 +1,163 @@
+{
+  "id": "SX-G072-01",
+  "skill_id": "G072",
+  "skill_ids": [
+    "G072",
+    "D004",
+    "G013"
+  ],
+  "school_level": "5e",
+  "title": "La boîte à crayons",
+  "contexte": "Pour la fête des pères, Jade fabrique une boîte à crayons en carton. Elle copie un modèle vu dans un magasin de loisirs : un cylindre de révolution de 7 cm de diamètre et de 11 cm de hauteur, fermé par un fond et par un couvercle.\n\nElle dessine le patron de la boîte sur une feuille de carton : un rectangle et deux disques, comme sur la figure, qui n'est pas en vraie grandeur. La largeur du rectangle est écrite ; sa longueur est marquée d'un point d'interrogation.\n\nPour fermer le tube, elle ajoute au bout du rectangle une languette de 1,5 cm, qu'elle collera sous l'autre bout. La feuille de carton coûte 3 €, et la boîte rangera 24 crayons.",
+  "image": "figures/SX-G072-01",
+  "duree_estimee_min": 15,
+  "questions": [
+    {
+      "key": "q1",
+      "skill_id": "G013",
+      "statement": "Quel est le rayon de chacun des deux disques du patron, en cm ?",
+      "type": "numerique",
+      "answer": {
+        "value": 3.5,
+        "unit": "cm",
+        "accepted": [
+          "3,5 cm",
+          "3,5 centimètres"
+        ]
+      },
+      "points": 1,
+      "solution_steps": [
+        "Les deux disques sont le fond et le couvercle : ils ont le diamètre de la boîte, 7 cm.",
+        "Le rayon est la moitié du diamètre : 7 ÷ 2 = 3,5.",
+        "Le rayon de chaque disque est **3,5 cm**."
+      ],
+      "hint": "Quel est le lien entre le rayon et le diamètre d'un cercle ?"
+    },
+    {
+      "key": "q2",
+      "skill_id": "G072",
+      "statement": "Quand on roule le rectangle pour former le tube, sa longueur fait le tour d'un disque. Quelle phrase est juste ?",
+      "type": "qcm",
+      "choices": [
+        {
+          "key": "a",
+          "text": "La longueur du rectangle est égale au diamètre d'un disque, 7 cm.",
+          "misconception": "Le rectangle fait tout le tour du disque, pas seulement sa traversée : sa longueur est le périmètre, bien plus grand que le diamètre."
+        },
+        {
+          "key": "b",
+          "text": "La longueur du rectangle est égale à la hauteur de la boîte, 11 cm.",
+          "misconception": "C'est la largeur du rectangle qui est la hauteur de la boîte ; sa longueur fait le tour du fond."
+        },
+        {
+          "key": "c",
+          "text": "La longueur du rectangle est égale au périmètre d'un disque.",
+          "misconception": null
+        },
+        {
+          "key": "d",
+          "text": "La longueur du rectangle est égale à π × rayon d'un disque.",
+          "misconception": "π × rayon n'est que la moitié du périmètre : le tour complet du disque vaut 2 × π × rayon."
+        }
+      ],
+      "answer": {
+        "value": "c"
+      },
+      "points": 2,
+      "solution_steps": [
+        "En roulant le rectangle, sa longueur vient border le fond de la boîte : elle fait exactement le tour du disque.",
+        "La longueur du rectangle est donc **le périmètre d'un disque**, c'est-à-dire 2 × π × rayon.",
+        "Sa largeur, elle, est la hauteur de la boîte."
+      ],
+      "hint": "Imagine le tube roulé : quel bord du rectangle fait le tour du fond ?"
+    },
+    {
+      "key": "q3",
+      "skill_id": "G072",
+      "statement": "Quelle est la longueur du rectangle du patron, en cm, arrondie au dixième ?",
+      "type": "numerique",
+      "answer": {
+        "value": 22,
+        "unit": "cm",
+        "tolerance": 0.05,
+        "accepted": [
+          "22 cm",
+          "22 centimètres",
+          "22,0 cm",
+          "22,0",
+          "≈ 22 cm",
+          "≈ 22,0"
+        ]
+      },
+      "points": 3,
+      "solution_steps": [
+        "La longueur du rectangle est le périmètre d'un disque de rayon 3,5 cm : 2 × π × 3,5, soit π × 7.",
+        "Avec la touche π : π × 7 = 21,99… ; avec 3,14 : 3,14 × 7 = 21,98.",
+        "Arrondi au dixième, dans les deux cas : 22,0. La longueur du rectangle est d'environ **22 cm**.",
+        "Attention : π × 3,5 = 10,99… oublie le facteur 2 ; c'est la moitié du tour."
+      ],
+      "hint": "La longueur du rectangle fait le tour d'un disque : quelle formule donne ce tour ?"
+    },
+    {
+      "key": "q4",
+      "skill_id": "D004",
+      "statement": "On admet que la longueur du rectangle est 22 cm. Avec la languette, quelle longueur de carton faut-il pour cette bande, en cm ?",
+      "type": "numerique",
+      "answer": {
+        "value": 23.5,
+        "unit": "cm",
+        "accepted": [
+          "23,5 cm",
+          "23,5 centimètres"
+        ]
+      },
+      "points": 2,
+      "solution_steps": [
+        "La bande, c'est le rectangle plus la languette, ajoutée au bout : 22 + 1,5.",
+        "On aligne les virgules, 22 s'écrit 22,0 : 22,0 + 1,5 = 23,5.",
+        "La bande mesure **23,5 cm** de long."
+      ],
+      "hint": "La languette s'ajoute à quelle longueur du rectangle ?"
+    },
+    {
+      "key": "q5",
+      "skill_id": "G072",
+      "statement": "Jade veut une seconde boîte de même diamètre, mais deux fois plus haute. Quelle phrase est juste pour le patron de cette seconde boîte ?",
+      "type": "qcm",
+      "choices": [
+        {
+          "key": "a",
+          "text": "Les disques et la longueur du rectangle ne changent pas ; la largeur du rectangle double.",
+          "misconception": null
+        },
+        {
+          "key": "b",
+          "text": "Les disques ne changent pas ; la longueur du rectangle double.",
+          "misconception": "La longueur du rectangle fait le tour du disque, qui ne change pas ; c'est la largeur, la hauteur de la boîte, qui double."
+        },
+        {
+          "key": "c",
+          "text": "Les disques et le rectangle sont deux fois plus grands dans les deux sens.",
+          "misconception": "Le diamètre ne change pas : les disques et la longueur du rectangle restent les mêmes. Seule la hauteur double."
+        },
+        {
+          "key": "d",
+          "text": "Le rayon des disques double ; le rectangle ne change pas.",
+          "misconception": "Le diamètre de la boîte est le même : les disques ne changent pas. C'est la hauteur qui double, donc la largeur du rectangle."
+        }
+      ],
+      "answer": {
+        "value": "a"
+      },
+      "points": 4,
+      "solution_steps": [
+        "Les disques ont le diamètre de la boîte, qui ne change pas : ils restent les mêmes.",
+        "La longueur du rectangle est le périmètre d'un disque : elle ne change pas non plus.",
+        "La largeur du rectangle est la hauteur de la boîte : elle double. La bonne phrase est la a."
+      ],
+      "hint": "Pour chaque dimension du patron, demande-toi de quelle dimension de la boîte elle dépend."
+    }
+  ],
+  "review_status": "brouillon",
+  "programme_ref": "Cycle 4, classe de 5e, Espace et géométrie, Représentation de l'espace, Objectifs d'apprentissage : « Savoir mettre en relation une représentation en perspective cavalière et un patron d'un pavé, d'un prisme droit ou d'un cylindre de révolution. »"
+}

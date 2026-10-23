@@ -1,0 +1,147 @@
+{
+  "id": "SX-P032-01",
+  "skill_id": "P032",
+  "skill_ids": [
+    "P032",
+    "G071",
+    "P028",
+    "P031"
+  ],
+  "school_level": "5e",
+  "title": "La niche du chien",
+  "contexte": "Tom construit une niche pour son grand chien. Elle a la forme d'un prisme droit couché, dessiné en perspective cavalière sur la figure. Sa face avant, le triangle ABC, est en vraie grandeur : [AB] est posé au sol, H est le milieu de [AB], et la hauteur [CH] est perpendiculaire à (AB). Les longueurs écrites sont les vraies longueurs.\n\nLa niche mesure 1,1 m de profondeur, de la face avant ABC à la face arrière DEF.\n\nLe chien pèse 38 kg, et Tom a payé le bois 65 €. Pour comparer, il regarde aussi en magasin une niche en forme de pavé droit, de 120 cm de large, de 1,1 m de profondeur et de 50 cm de haut.",
+  "image": "figures/SX-P032-01",
+  "duree_estimee_min": 15,
+  "questions": [
+    {
+      "key": "q1",
+      "skill_id": "G071",
+      "statement": "Quelle face de la niche est une base du prisme droit ?",
+      "type": "qcm",
+      "choices": [
+        {
+          "key": "a",
+          "text": "La face ABC",
+          "misconception": null
+        },
+        {
+          "key": "b",
+          "text": "La face BCFE",
+          "misconception": "BCFE est un rectangle qui relie les deux triangles : c'est une face latérale."
+        },
+        {
+          "key": "c",
+          "text": "La face ABED, posée au sol",
+          "misconception": "Le prisme est couché : la face du dessous est une face latérale rectangulaire, pas une base."
+        }
+      ],
+      "answer": {
+        "value": "a"
+      },
+      "points": 1,
+      "solution_steps": [
+        "Les bases d'un prisme droit sont ses deux faces identiques et parallèles ; les autres faces sont des rectangles.",
+        "Ici, les deux faces identiques sont les triangles ABC et DEF : la face **ABC** est une base, même si le prisme est couché.",
+        "La face ABED, au sol, est une face latérale rectangulaire."
+      ],
+      "hint": "Un prisme couché ne repose pas sur sa base : cherche les deux faces identiques."
+    },
+    {
+      "key": "q2",
+      "skill_id": "P028",
+      "statement": "Quelle est l'aire du triangle ABC, en cm² ?",
+      "type": "numerique",
+      "answer": {
+        "value": 4800,
+        "unit": "cm²",
+        "accepted": [
+          "4 800 cm²",
+          "4 800 cm2",
+          "4 800 centimètres carrés",
+          "4800 cm²",
+          "4800 cm2",
+          "4800"
+        ]
+      },
+      "points": 2,
+      "solution_steps": [
+        "Aire d'un triangle = base × hauteur ÷ 2. Base [AB] : 120 cm ; hauteur relative [CH] : 80 cm.",
+        "120 × 80 = 9 600, puis 9 600 ÷ 2 = 4 800.",
+        "Le triangle ABC a une aire de **4 800 cm²**. Attention : [AC] mesure 100 cm, mais ce n'est pas une hauteur."
+      ],
+      "hint": "Quelle hauteur va avec la base [AB] ?"
+    },
+    {
+      "key": "q3",
+      "skill_id": "P032",
+      "statement": "On admet que l'aire du triangle ABC est 4 800 cm². Quel est le volume de la niche, en cm³ ?",
+      "type": "numerique",
+      "answer": {
+        "value": 528000,
+        "unit": "cm³",
+        "accepted": [
+          "528 000 cm³",
+          "528 000 cm3",
+          "528 000 centimètres cubes",
+          "528000 cm³",
+          "528000 cm3",
+          "528000"
+        ]
+      },
+      "points": 3,
+      "solution_steps": [
+        "Volume d'un prisme droit = aire d'une base × hauteur du prisme. Ici, la hauteur du prisme est la profondeur de la niche : 1,1 m = 110 cm.",
+        "4 800 × 110 = 528 000.",
+        "La niche a un volume de **528 000 cm³**. Attention : 4 800 × 1,1 mélange des cm² et des mètres."
+      ],
+      "hint": "Quelle longueur relie les deux bases ? Écris-la en cm."
+    },
+    {
+      "key": "q4",
+      "skill_id": "P031",
+      "statement": "On admet que le volume de la niche est 528 000 cm³. Combien cela fait-il en litres ?",
+      "type": "numerique",
+      "answer": {
+        "value": 528,
+        "unit": "L",
+        "accepted": [
+          "528 L",
+          "528 litres",
+          "528 l"
+        ]
+      },
+      "points": 2,
+      "solution_steps": [
+        "1 L = 1 dm³ = 1 000 cm³ : pour passer des cm³ aux litres, on divise par 1 000.",
+        "528 000 ÷ 1 000 = 528.",
+        "La niche a un volume de **528 L**."
+      ],
+      "hint": "Combien de cm³ y a-t-il dans un litre ?"
+    },
+    {
+      "key": "q5",
+      "skill_id": "P032",
+      "statement": "Quel est le volume de la niche en pavé droit vue en magasin, en litres ?",
+      "type": "numerique",
+      "answer": {
+        "value": 660,
+        "unit": "L",
+        "accepted": [
+          "660 L",
+          "660 litres",
+          "660 l"
+        ]
+      },
+      "points": 4,
+      "solution_steps": [
+        "Volume d'un pavé droit = longueur × largeur × hauteur, les trois longueurs dans la même unité.",
+        "En décimètres : 120 cm = 12 dm, 1,1 m = 11 dm, 50 cm = 5 dm. 12 × 11 = 132, puis 132 × 5 = 660.",
+        "Le volume est 660 dm³, et 1 dm³ = 1 L : la niche du magasin contient **660 L**.",
+        "Attention : 120 × 1,1 × 50 = 6 600 mélange des centimètres et des mètres."
+      ],
+      "hint": "Écris d'abord les trois dimensions dans la même unité ; le décimètre donne directement des litres."
+    }
+  ],
+  "review_status": "brouillon",
+  "programme_ref": "Cycle 4, classe de 5e, Espace et géométrie, Représentation de l'espace, Objectifs d'apprentissage : « Calculer le volume du cube, du pavé droit, du prisme droit. »"
+}

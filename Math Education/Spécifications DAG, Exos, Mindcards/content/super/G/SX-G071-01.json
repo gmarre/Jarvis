@@ -1,0 +1,178 @@
+{
+  "id": "SX-G071-01",
+  "skill_id": "G071",
+  "skill_ids": [
+    "G071",
+    "B036",
+    "G016"
+  ],
+  "school_level": "5e",
+  "title": "Le coffret du jeu de société",
+  "contexte": "Lina fabrique un coffret en bois pour ranger un jeu de société. Le coffret est un pavé droit ABCDEFGH, dessiné en perspective cavalière sur la figure : la face avant ABCD est en vraie grandeur, et les arêtes cachées sont en pointillés. Les longueurs écrites sur la figure sont les vraies longueurs du coffret.\n\nEn recopiant le dessin, son frère a oublié l'arête [GH]. Pour la remplacer, il a tracé trois segments bleus partant de H, nommés a, b et c, mais un seul est juste.\n\nLe jeu se joue à 4 joueurs. Il compte 54 jetons, que Lina range dans les 3 compartiments du coffret, autant dans chacun. Une partie dure environ 40 minutes.",
+  "image": "figures/SX-G071-01",
+  "duree_estimee_min": 15,
+  "questions": [
+    {
+      "key": "q1",
+      "skill_id": "G016",
+      "statement": "Sur le vrai coffret, quelle arête est parallèle à l'arête [CG] ?",
+      "type": "qcm",
+      "choices": [
+        {
+          "key": "a",
+          "text": "L'arête [BC]",
+          "misconception": "[BC] et [CG] partent toutes les deux de C : elles se coupent, elles ne sont pas parallèles. Sur le vrai coffret, elles forment un angle droit."
+        },
+        {
+          "key": "b",
+          "text": "L'arête [DH]",
+          "misconception": null
+        },
+        {
+          "key": "c",
+          "text": "L'arête [CD]",
+          "misconception": "[CD] et [CG] ont le sommet C en commun : elles se coupent, elles ne sont pas parallèles."
+        },
+        {
+          "key": "d",
+          "text": "L'arête [FG]",
+          "misconception": "[FG] est l'arête de derrière qui correspond à [BC] : elle est parallèle à [BC], et elle coupe [CG] en G."
+        }
+      ],
+      "answer": {
+        "value": "b"
+      },
+      "points": 1,
+      "solution_steps": [
+        "Les arêtes [DH] et [CG] relient la face avant à la face arrière : elles sont toutes les deux fuyantes.",
+        "Deux arêtes parallèles dans l'espace restent parallèles sur le dessin : [DH] et [CG] sont dessinées dans la même direction. La réponse est **[DH]**.",
+        "[BC] et [CD] forment un angle droit avec [CG] au sommet C ; [FG] est parallèle à [BC]."
+      ],
+      "hint": "Cherche une arête dessinée dans la même direction que [CG]."
+    },
+    {
+      "key": "q2",
+      "skill_id": "B036",
+      "statement": "Combien de jetons Lina range-t-elle dans chaque compartiment ?",
+      "type": "numerique",
+      "answer": {
+        "value": 18,
+        "unit": "jetons",
+        "accepted": [
+          "18 jetons",
+          "18 jeton",
+          "dix-huit",
+          "dix-huit jetons"
+        ]
+      },
+      "points": 2,
+      "solution_steps": [
+        "On partage les 54 jetons en 3 parts égales, une par compartiment.",
+        "On distribue 10 jetons dans chaque compartiment : 10 + 10 + 10 = 30 jetons. Pour arriver à 54, il en manque 24, car 30 + 24 = 54.",
+        "On distribue encore 8 jetons dans chaque compartiment : 8 + 8 + 8 = 24. Chaque compartiment reçoit 10 + 8 = 18 jetons.",
+        "Vérification : 18 + 18 = 36, puis 36 + 18 = 54. Lina range **18 jetons** dans chaque compartiment. Le nombre de joueurs ne sert pas : on partage entre les compartiments."
+      ],
+      "hint": "Entre combien de compartiments partage-t-on les jetons ?"
+    },
+    {
+      "key": "q3",
+      "skill_id": "G071",
+      "statement": "Sur la figure, la face de droite BCGF est dessinée comme un parallélogramme. Quelle est sa vraie nature ?",
+      "type": "qcm",
+      "choices": [
+        {
+          "key": "a",
+          "text": "Un parallélogramme sans angle droit",
+          "misconception": "C'est la forme du dessin, pas celle du coffret : en perspective cavalière, les angles droits des faces fuyantes ne sont pas dessinés droits."
+        },
+        {
+          "key": "b",
+          "text": "Un rectangle dont les côtés n'ont pas tous la même longueur",
+          "misconception": "La fuyante [BF] est dessinée plus courte, mais elle mesure vraiment 20 cm, comme [BC]."
+        },
+        {
+          "key": "c",
+          "text": "Un losange sans angle droit",
+          "misconception": "Les faces d'un pavé droit ont quatre angles droits ; seul le dessin les déforme."
+        },
+        {
+          "key": "d",
+          "text": "Un carré",
+          "misconception": null
+        }
+      ],
+      "answer": {
+        "value": "d"
+      },
+      "points": 3,
+      "solution_steps": [
+        "Dans un pavé droit, toutes les faces sont des rectangles : les angles de BCGF sont droits, même s'ils ne sont pas dessinés droits en perspective cavalière.",
+        "[BC] mesure 20 cm, comme [AD], son côté opposé dans la face avant ABCD, et [BF] mesure aussi 20 cm : la fuyante [BF] est dessinée plus courte, mais sa vraie longueur est celle qui est écrite.",
+        "Un rectangle qui a deux côtés consécutifs de même longueur est un **carré**."
+      ],
+      "hint": "Quelles sont les vraies longueurs des côtés [BC] et [BF] ? Et ses angles ?"
+    },
+    {
+      "key": "q4",
+      "skill_id": "G071",
+      "statement": "Sur la figure, quelle est la longueur réelle totale des arêtes dessinées en pointillés, en cm ?",
+      "type": "numerique",
+      "answer": {
+        "value": 70,
+        "unit": "cm",
+        "accepted": [
+          "70 cm",
+          "70 centimètres"
+        ]
+      },
+      "points": 3,
+      "solution_steps": [
+        "Le sommet E est caché : les arêtes en pointillés sont celles qui partent de E, [AE], [EF] et [EH].",
+        "Leurs vraies longueurs : [AE] est parallèle à [BF], elle mesure 20 cm ; [EF] est parallèle à [AB], elle mesure 30 cm ; [EH] est parallèle à [AD], elle mesure 20 cm.",
+        "20 + 30 = 50, puis 50 + 20 = 70. Les arêtes en pointillés mesurent **70 cm** en tout.",
+        "Attention : la fuyante [AE] est dessinée plus courte que 20 cm, mais sa vraie longueur est celle de [BF]."
+      ],
+      "hint": "Quel sommet est caché ? Quelles arêtes en partent ?"
+    },
+    {
+      "key": "q5",
+      "skill_id": "G071",
+      "statement": "Les trois segments bleus partent de H. Quelle phrase est juste pour remplacer l'arête [GH] oubliée ?",
+      "type": "qcm",
+      "choices": [
+        {
+          "key": "a",
+          "text": "Le segment c, car [GH] est parallèle à [DC] sur le coffret, et deux arêtes parallèles restent parallèles sur le dessin.",
+          "misconception": null
+        },
+        {
+          "key": "b",
+          "text": "Le segment a, car il relie H à un sommet de la face avant, comme l'arête [DH].",
+          "misconception": "Le segment a joint H à C : c'est une diagonale de la face du dessus DCGH, pas une arête. L'arête [GH] n'a aucune extrémité sur la face avant."
+        },
+        {
+          "key": "c",
+          "text": "Le segment c, car sur le dessin toutes les arêtes du dessus du coffret sont horizontales.",
+          "misconception": "Le segment c est le bon, mais pas pour cette raison : [DH] et [CG] sont aussi des arêtes du dessus, et ce sont des fuyantes, dessinées inclinées."
+        },
+        {
+          "key": "d",
+          "text": "Le segment b, car [GH] et le segment b sont tous les deux sur la face arrière.",
+          "misconception": "Le segment b joint H à F : c'est une diagonale de la face arrière EFGH, pas une arête, et il n'est pas parallèle à [DC]."
+        }
+      ],
+      "answer": {
+        "value": "a"
+      },
+      "points": 4,
+      "solution_steps": [
+        "Sur le coffret, [GH] est l'arête du haut de la face arrière : elle est parallèle à [DC] et à [AB].",
+        "En perspective cavalière, deux arêtes parallèles restent parallèles sur le dessin : [GH] est dessinée dans la même direction que [DC], avec la même longueur. C'est le segment c, pour cette raison : **phrase a**.",
+        "La phrase c choisit le bon segment pour une fausse raison : les arêtes du dessus [DH] et [CG] sont dessinées inclinées. Les segments a et b sont des diagonales de faces, pas des arêtes."
+      ],
+      "hint": "À quelle arête de la face avant l'arête [GH] est-elle parallèle ?"
+    }
+  ],
+  "review_status": "brouillon",
+  "programme_ref": "Cycle 4, classe de 5e, Espace et géométrie, Représentation de l'espace, Objectifs d'apprentissage : « Construire et mettre en relation différentes représentations en perspectives cavalières des solides suivants : pavé droit, cube, cylindre de révolution, prisme droit. »"
+}

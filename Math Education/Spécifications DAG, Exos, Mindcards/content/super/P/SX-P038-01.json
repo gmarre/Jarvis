@@ -1,0 +1,136 @@
+{
+  "id": "SX-P038-01",
+  "skill_id": "P038",
+  "skill_ids": [
+    "P038",
+    "G075",
+    "P034",
+    "P035"
+  ],
+  "school_level": "3e",
+  "title": "L'atelier de bougies",
+  "contexte": "Léna fabrique des bougies dans son atelier. Elle verse de la cire fondue dans des moules, puis la laisse durcir.\n\nLe moule « boule » donne une bougie en forme de boule de 8 cm de diamètre. Le moule « cylindre » donne un cylindre de révolution de 4 cm de rayon et de 8 cm de hauteur, et le moule « cône » un cône de révolution de même rayon et de même hauteur.\n\nPour une commande de mariage, elle utilise aussi un moule à petites boules de 5 cm de diamètre. Il lui reste 1,2 L de cire fondue pour cette commande.\n\nChaque bougie reçoit une mèche de 15 cm, et une bougie boule se vend 12 €.",
+  "image": null,
+  "duree_estimee_min": 15,
+  "questions": [
+    {
+      "key": "q1",
+      "skill_id": "G075",
+      "statement": "Quel est le rayon d'une petite boule de la commande de mariage, en cm ?",
+      "type": "numerique",
+      "answer": {
+        "value": 2.5,
+        "unit": "cm",
+        "accepted": [
+          "2,5 cm",
+          "2,5 centimètres",
+          "r = 2,5 cm"
+        ]
+      },
+      "points": 1,
+      "solution_steps": [
+        "Le rayon d'une boule est la moitié de son diamètre.",
+        "5 ÷ 2 = 2,5 : le rayon mesure **2,5 cm**."
+      ],
+      "hint": "Quel lien y a-t-il entre le diamètre et le rayon d'une boule ?"
+    },
+    {
+      "key": "q2",
+      "skill_id": "P034",
+      "statement": "Quel est le volume exact de la bougie cylindrique, en cm³ ? Écris-le avec π (au clavier, tu peux taper pi).",
+      "type": "texte",
+      "answer": {
+        "value": "128π",
+        "unit": "cm³",
+        "forme": "expression",
+        "variables": [],
+        "accepted": [
+          "128π cm³",
+          "128 π cm³",
+          "128pi cm³"
+        ]
+      },
+      "points": 2,
+      "solution_steps": [
+        "Volume d'un cylindre = aire de la base × hauteur = π × r² × h.",
+        "π × 4² × 8 = π × 16 × 8 = 128π.",
+        "Le volume exact est **128π cm³**, environ 402 cm³."
+      ],
+      "hint": "Quelle formule donne le volume d'un cylindre ?"
+    },
+    {
+      "key": "q3",
+      "skill_id": "P035",
+      "statement": "Quel est le volume de la bougie conique, en cm³, arrondi à l'unité ?",
+      "type": "numerique",
+      "answer": {
+        "value": 134,
+        "tolerance": 0.5,
+        "unit": "cm³",
+        "accepted": [
+          "134 cm³",
+          "134 centimètres cubes",
+          "134 cm3",
+          "≈ 134 cm³"
+        ]
+      },
+      "points": 2,
+      "solution_steps": [
+        "Volume d'un cône = aire de la base × hauteur ÷ 3 = π × r² × h ÷ 3.",
+        "π × 4² × 8 ÷ 3 = 128 × π ÷ 3 ≈ 134,04.",
+        "Arrondi à l'unité : **134 cm³**. Avec 3,14 : 128 × 3,14 ÷ 3 ≈ 133,97, même arrondi."
+      ],
+      "hint": "Quelle formule donne le volume d'un cône ? Compare-la à celle du cylindre."
+    },
+    {
+      "key": "q4",
+      "skill_id": "P038",
+      "statement": "Quel est le volume de la bougie boule, en cm³, arrondi à l'unité ?",
+      "type": "numerique",
+      "answer": {
+        "value": 268,
+        "tolerance": 0.5,
+        "unit": "cm³",
+        "accepted": [
+          "268 cm³",
+          "268 centimètres cubes",
+          "268 cm3",
+          "≈ 268 cm³"
+        ]
+      },
+      "points": 3,
+      "solution_steps": [
+        "La boule a 8 cm de diamètre : son rayon mesure 4 cm.",
+        "Volume d'une boule = $\\frac{4}{3} \\times \\pi \\times r^3$ = $\\frac{4}{3} \\times \\pi \\times 4^3$ = $\\frac{4}{3} \\times \\pi \\times 64$ = $\\frac{256}{3} \\times \\pi$ ≈ 268,08.",
+        "Arrondi à l'unité : **268 cm³**. Avec 3,14 : 256 × 3,14 ÷ 3 ≈ 267,95, même arrondi."
+      ],
+      "hint": "Commence par trouver le rayon de la bougie boule."
+    },
+    {
+      "key": "q5",
+      "skill_id": "P038",
+      "statement": "On admet que le rayon d'une petite boule mesure 2,5 cm. Combien de petites boules Léna peut-elle mouler, au maximum, avec ses 1,2 L de cire ?",
+      "type": "numerique",
+      "answer": {
+        "value": 18,
+        "accepted": [
+          "18 boules",
+          "dix-huit",
+          "dix-huit boules",
+          "il y en a 18",
+          "18 petites boules",
+          "18 bougies"
+        ]
+      },
+      "points": 4,
+      "solution_steps": [
+        "Volume d'une petite boule : $\\frac{4}{3} \\times \\pi \\times 2{,}5^3$ = $\\frac{4}{3} \\times \\pi \\times 15{,}625$ ≈ 65,45 cm³.",
+        "La cire disponible : 1,2 L = 1,2 dm³ = 1 200 cm³.",
+        "18 boules demandent environ 18 × 65,45 ≈ 1 178 cm³ : c'est assez. 19 boules demanderaient environ 19 × 65,45 ≈ 1 244 cm³ : c'est trop. Léna peut mouler **18 petites boules** au maximum."
+      ],
+      "hint": "Calcule le volume d'une petite boule, puis exprime la cire disponible dans la même unité."
+    }
+  ],
+  "review_status": "brouillon",
+  "programme_ref": "Cycle 4, classe de 3e, Espace et géométrie, Représentation de l'espace, Objectifs d'apprentissage : « Connaitre et utiliser la formule du volume d'une boule de rayon donné. »"
+}

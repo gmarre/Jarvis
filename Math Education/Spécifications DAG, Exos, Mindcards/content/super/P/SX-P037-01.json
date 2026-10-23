@@ -1,0 +1,110 @@
+{
+  "id": "SX-P037-01",
+  "skill_id": "P037",
+  "skill_ids": [
+    "P037",
+    "E007",
+    "P027",
+    "P036"
+  ],
+  "school_level": "4e",
+  "title": "La sortie à vélo jusqu'au lac",
+  "contexte": "Samedi, Lucas et son père partent à vélo de leur village jusqu'au lac de Vassivière. Ils roulent ensemble pendant tout le trajet, et rentreront en car, pour 6,50 € par personne.\n\n**Première partie.** Ils parcourent 27 km de petites routes en 1 h 30 min. Ils s'arrêtent ensuite 20 minutes pour pique-niquer au bord d'une rivière.\n\n**Deuxième partie.** Ils descendent vers le lac : 13 km parcourus en 30 min.\n\nDans la descente, le compteur de Lucas affiche un moment 9,5 m/s. Son père, lui, a réglé son propre compteur en km/h, et il trouve que Lucas va vite. Le vélo de Lucas pèse 11,5 kg.",
+  "image": null,
+  "duree_estimee_min": 12,
+  "questions": [
+    {
+      "key": "q1",
+      "skill_id": "P027",
+      "statement": "Écris la durée de la première partie, 1 h 30 min, en heures, sous la forme d'un nombre décimal.",
+      "type": "numerique",
+      "answer": {
+        "value": 1.5,
+        "unit": "h",
+        "accepted": [
+          "1,5 h",
+          "1,5 heure",
+          "1,5 heures"
+        ]
+      },
+      "points": 1,
+      "solution_steps": [
+        "Une heure compte 60 minutes : 30 min, c'est la moitié d'une heure, soit 0,5 h.",
+        "1 h 30 min = 1 h + 0,5 h = 1,5 h.",
+        "La durée est **1,5 h**. Elle ne s'écrit pas 1,3 h : une heure compte 60 minutes, pas 100."
+      ],
+      "hint": "Combien de minutes y a-t-il dans une heure ? Quelle fraction d'heure font 30 min ?"
+    },
+    {
+      "key": "q2",
+      "skill_id": "E007",
+      "statement": "On admet que 1 h 30 min = 1,5 h. Quelle est leur vitesse moyenne pendant la première partie, en km/h ?",
+      "type": "numerique",
+      "answer": {
+        "value": 18,
+        "unit": "km/h",
+        "accepted": [
+          "18 km/h",
+          "18 km.h-1",
+          "18 kilomètres par heure",
+          "18 km par h"
+        ]
+      },
+      "points": 2,
+      "solution_steps": [
+        "Vitesse moyenne = distance ÷ durée : 27 ÷ 1,5.",
+        "27 ÷ 1,5 = 270 ÷ 15 = 18.",
+        "Ils roulent à **18 km/h** de moyenne. Vérification : 18 × 1,5 = 27."
+      ],
+      "hint": "Quelle opération relie la distance, la durée et la vitesse moyenne ?"
+    },
+    {
+      "key": "q3",
+      "skill_id": "P036",
+      "statement": "On admet que 1 h 30 min = 1,5 h. Quelle est la vitesse moyenne de Lucas sur l'ensemble des deux parties, en ne comptant que le temps passé à rouler, en km/h ?",
+      "type": "numerique",
+      "answer": {
+        "value": 20,
+        "unit": "km/h",
+        "accepted": [
+          "20 km/h",
+          "20 km.h-1",
+          "20 kilomètres par heure",
+          "20 km par h"
+        ]
+      },
+      "points": 3,
+      "solution_steps": [
+        "Distance totale : 27 + 13 = 40 km. Durée totale de roulage : 1,5 h + 0,5 h = 2 h, sans la pause.",
+        "Vitesse moyenne = distance totale ÷ durée totale : 40 ÷ 2 = 20.",
+        "La vitesse moyenne est **20 km/h**. Ce n'est pas la moyenne des vitesses des deux parties, 18 km/h et 26 km/h : les deux parties n'ont pas la même durée."
+      ],
+      "hint": "Calcule d'abord la distance totale et la durée totale passée à rouler."
+    },
+    {
+      "key": "q4",
+      "skill_id": "P037",
+      "statement": "Dans la descente, le compteur de Lucas affiche 9,5 m/s. À combien de kilomètres par heure cette vitesse correspond-elle ?",
+      "type": "numerique",
+      "answer": {
+        "value": 34.2,
+        "unit": "km/h",
+        "accepted": [
+          "34,2 km/h",
+          "34,2 km.h-1",
+          "34,2 kilomètres par heure",
+          "34,2 km par h"
+        ]
+      },
+      "points": 4,
+      "solution_steps": [
+        "En 1 s, Lucas parcourt 9,5 m. Une heure compte 3 600 s : en 1 h, il parcourt 3 600 fois plus, 9,5 × 3 600 = 34 200 m.",
+        "34 200 m = 34,2 km : en une heure, Lucas parcourt 34,2 km.",
+        "La vitesse vaut **34,2 km/h**. Pour passer des m/s aux km/h, on multiplie donc par 3,6 ; diviser par 3,6 donnerait une vitesse plus petite, absurde ici."
+      ],
+      "hint": "Combien de secondes compte une heure ? Combien de mètres compte un kilomètre ?"
+    }
+  ],
+  "review_status": "brouillon",
+  "programme_ref": "Cycle 4, classe de 4e, Proportionnalité, fonctions, Proportionnalité, Objectifs d'apprentissage : « Utiliser des grandeurs quotients, avec ou sans unités. »"
+}

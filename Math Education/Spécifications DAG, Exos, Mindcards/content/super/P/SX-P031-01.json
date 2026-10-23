@@ -1,0 +1,149 @@
+{
+  "id": "SX-P031-01",
+  "skill_id": "P031",
+  "skill_ids": [
+    "P031",
+    "A029",
+    "B008",
+    "P015"
+  ],
+  "school_level": "5e",
+  "title": "La cuve d'eau de pluie",
+  "contexte": "Au jardin partagé, une cuve récupère l'eau de pluie du toit de la cabane. Pleine, elle contient 1,35 m³ d'eau. Elle mesure 1,6 m de haut et elle a coûté 89 €.\n\nPour arroser, les jardiniers remplissent un arrosoir de 9 L. Pour les visiteurs, ils remplissent aussi des bouteilles en verre de 70 cL avec de l'eau du robinet, qu'ils gardent au frais dans la cabane.\n\nUn jour de juillet, ils vident 2 arrosoirs pleins sur les tomates et remplissent 12 bouteilles.",
+  "image": null,
+  "duree_estimee_min": 15,
+  "questions": [
+    {
+      "key": "q1",
+      "skill_id": "P015",
+      "statement": "Quelle est la contenance d'une bouteille en verre, en litres ?",
+      "type": "numerique",
+      "answer": {
+        "value": 0.7,
+        "unit": "L",
+        "accepted": [
+          "0,7 L",
+          "0,7 litres",
+          "0,7 l"
+        ]
+      },
+      "points": 1,
+      "solution_steps": [
+        "1 L = 100 cL : pour passer des centilitres aux litres, on divise par 100.",
+        "70 ÷ 100 = 0,7. Une bouteille contient **0,7 L**."
+      ],
+      "hint": "Combien de centilitres y a-t-il dans un litre ?"
+    },
+    {
+      "key": "q2",
+      "skill_id": "P031",
+      "statement": "Combien de litres d'eau contient la cuve pleine ?",
+      "type": "numerique",
+      "answer": {
+        "value": 1350,
+        "unit": "L",
+        "accepted": [
+          "1 350 L",
+          "1 350 litres",
+          "1 350 l",
+          "1350 L",
+          "1350 litres",
+          "1350"
+        ]
+      },
+      "points": 2,
+      "solution_steps": [
+        "1 m³ = 1 000 dm³, et 1 dm³ = 1 L : donc 1 m³ = 1 000 L.",
+        "1,35 × 1 000 = 1 350.",
+        "La cuve pleine contient **1 350 L**. La hauteur de la cuve et son prix ne servent pas."
+      ],
+      "hint": "Combien de litres y a-t-il dans 1 m³ ?"
+    },
+    {
+      "key": "q3",
+      "skill_id": "B008",
+      "statement": "On admet que la cuve pleine contient 1 350 L. Combien d'arrosoirs pleins peut-on remplir avec cette eau ?",
+      "type": "numerique",
+      "answer": {
+        "value": 150,
+        "unit": "arrosoirs",
+        "accepted": [
+          "150 arrosoirs",
+          "150 arrosoir",
+          "cent cinquante",
+          "cent cinquante arrosoirs"
+        ]
+      },
+      "points": 2,
+      "solution_steps": [
+        "Un arrosoir contient 9 L : on cherche combien de fois 9 L dans 1 350 L, c'est la division 1 350 ÷ 9.",
+        "On pose la division : 13 centaines ÷ 9 = 1 centaine, reste 4 ; 45 dizaines ÷ 9 = 5 dizaines, reste 0 ; 0 unité ÷ 9 = 0. Donc 1 350 ÷ 9 = 150.",
+        "On peut remplir **150 arrosoirs**. Vérification : 150 × 9 = 1 350."
+      ],
+      "hint": "Quelle opération dit combien de fois 9 L tiennent dans la cuve ?"
+    },
+    {
+      "key": "q4",
+      "skill_id": "A029",
+      "statement": "Les jardiniers se demandent pourquoi 1 m³ vaut 1 000 dm³. Quelle phrase est juste ?",
+      "type": "qcm",
+      "choices": [
+        {
+          "key": "a",
+          "text": "Car 1 m = 1 000 dm.",
+          "misconception": "1 m = 10 dm seulement ; c'est le volume qui est multiplié par 1 000."
+        },
+        {
+          "key": "b",
+          "text": "Car 1 m = 100 dm, et 100 × 10 = 1 000.",
+          "misconception": "1 m = 10 dm (c'est 1 m = 100 cm) ; et pour un volume on multiplie trois fois par 10 : 10 × 10 × 10 = 1 000."
+        },
+        {
+          "key": "c",
+          "text": "Car chaque unité de volume vaut 100 fois la suivante, comme pour les aires.",
+          "misconception": "C'est la règle des aires (10 × 10) ; pour les volumes, il y a trois dimensions : 10 × 10 × 10."
+        },
+        {
+          "key": "d",
+          "text": "Car 1 m = 10 dm, et $10^3$ = 10 × 10 × 10 = 1 000.",
+          "misconception": null
+        }
+      ],
+      "answer": {
+        "value": "d"
+      },
+      "points": 2,
+      "solution_steps": [
+        "1 m = 10 dm. Un cube de 1 m d'arête a donc 10 dm d'arête.",
+        "On peut y ranger 10 rangées de 10 petits cubes de 1 dm³, sur 10 étages : 10 × 10 × 10 = 1 000 petits cubes.",
+        "Donc 1 m³ = $10^3$ dm³ = 1 000 dm³ : c'est la phrase d."
+      ],
+      "hint": "Combien de décimètres mesure l'arête d'un cube de 1 m ? Combien de petits cubes de 1 dm³ y tiennent ?"
+    },
+    {
+      "key": "q5",
+      "skill_id": "P031",
+      "statement": "En comptant l'eau des arrosoirs et celle des bouteilles, quel volume d'eau les jardiniers ont-ils utilisé ce jour de juillet, en dm³ ?",
+      "type": "numerique",
+      "answer": {
+        "value": 26.4,
+        "unit": "dm³",
+        "accepted": [
+          "26,4 dm³",
+          "26,4 dm3",
+          "26,4 décimètres cubes"
+        ]
+      },
+      "points": 4,
+      "solution_steps": [
+        "Arrosoirs : 2 × 9 = 18 L. Bouteilles : 12 × 70 = 840 cL, et 840 cL = 8,4 L (on divise par 100).",
+        "En tout : 18 + 8,4 = 26,4 L.",
+        "1 L = 1 dm³ : ils ont utilisé **26,4 dm³** d'eau.",
+        "Attention : 18 + 840 = 858 additionne des litres et des centilitres ; et 1 L n'est pas 1 dL."
+      ],
+      "hint": "Écris d'abord les deux volumes dans la même unité, le litre."
+    }
+  ],
+  "review_status": "brouillon",
+  "programme_ref": "Cycle 4, classe de 5e, Espace et géométrie, Représentation de l'espace, Objectifs d'apprentissage : « Connaitre et convertir des unités usuelles (volume et capacité). »"
+}

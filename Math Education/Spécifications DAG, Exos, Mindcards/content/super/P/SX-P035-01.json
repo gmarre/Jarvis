@@ -1,0 +1,127 @@
+{
+  "id": "SX-P035-01",
+  "skill_id": "P035",
+  "skill_ids": [
+    "P035",
+    "G073",
+    "P034"
+  ],
+  "school_level": "4e",
+  "title": "Le silo de la ferme",
+  "contexte": "M. Ferrand, agriculteur, stocke son blé dans un silo métallique. Le silo est un cylindre de révolution de 1,5 m de rayon et de 4 m de hauteur, posé sur un fond en forme de cône de révolution de même rayon, pointe vers le bas. Ce fond est dessiné seul sur la figure, pointe vers le haut.\n\nSous le hangar, une trémie sert à remplir les remorques. C'est une pyramide dont la base est un carré de 3 m de côté, elle aussi pointe vers le bas. Ses arêtes latérales mesurent environ 3,3 m.\n\nLe blé se vend 210 € la tonne, et la moissonneuse a récolté 12 hectares cette année.",
+  "image": "figures/SX-P035-01",
+  "duree_estimee_min": 15,
+  "questions": [
+    {
+      "key": "q1",
+      "skill_id": "G073",
+      "statement": "Quelle est la hauteur du fond conique du silo ?",
+      "type": "qcm",
+      "choices": [
+        {
+          "key": "a",
+          "text": "1,9 m",
+          "misconception": "1,9 m est la longueur d'une génératrice, du sommet au bord du disque : elle n'est pas perpendiculaire à la base."
+        },
+        {
+          "key": "b",
+          "text": "1,5 m",
+          "misconception": "1,5 m est le rayon du disque de base."
+        },
+        {
+          "key": "c",
+          "text": "1,2 m",
+          "misconception": null
+        },
+        {
+          "key": "d",
+          "text": "4 m",
+          "misconception": "4 m est la hauteur du cylindre, pas celle du cône."
+        }
+      ],
+      "answer": {
+        "value": "c"
+      },
+      "points": 1,
+      "solution_steps": [
+        "La hauteur d'un cône est le segment qui joint le sommet au centre de la base, perpendiculairement à la base.",
+        "Sur la figure, c'est le segment en pointillés, avec un angle droit au centre de la base : il mesure **1,2 m**."
+      ],
+      "hint": "La hauteur d'un cône part du sommet. Où arrive-t-elle, et avec quel angle ?"
+    },
+    {
+      "key": "q2",
+      "skill_id": "P034",
+      "statement": "Quel est le volume exact de la partie cylindrique du silo, en m³ ? Écris-le avec π (au clavier, tu peux taper pi).",
+      "type": "texte",
+      "answer": {
+        "value": "9π",
+        "unit": "m³",
+        "forme": "expression",
+        "variables": [],
+        "accepted": [
+          "9π m³",
+          "9 π m³",
+          "9pi m³"
+        ]
+      },
+      "points": 2,
+      "solution_steps": [
+        "Volume d'un cylindre = aire de la base × hauteur = π × r² × h.",
+        "π × 1,5² × 4 = π × 2,25 × 4 = 9π.",
+        "Le volume exact est **9π m³**, environ 28,3 m³."
+      ],
+      "hint": "Quelle formule donne le volume d'un cylindre ? Quelle figure en est la base ?"
+    },
+    {
+      "key": "q3",
+      "skill_id": "P035",
+      "statement": "On admet que la hauteur du fond conique est 1,2 m. Quel est le volume de ce fond, en m³, arrondi au dixième ?",
+      "type": "numerique",
+      "answer": {
+        "value": 2.8,
+        "tolerance": 0.05,
+        "unit": "m³",
+        "accepted": [
+          "2,8 m³",
+          "2,8 mètres cubes",
+          "≈ 2,8 m³",
+          "2,8 m3",
+          "environ 2,8 m³"
+        ]
+      },
+      "points": 3,
+      "solution_steps": [
+        "Volume d'un cône = aire de la base × hauteur ÷ 3, avec la hauteur, 1,2 m, et non la génératrice.",
+        "Aire de la base : π × 1,5² = π × 2,25. Volume : π × 2,25 × 1,2 ÷ 3 = π × 2,7 ÷ 3 = 0,9 × π.",
+        "0,9 × π ≈ 2,827 : arrondi au dixième, **2,8 m³**. Avec 3,14 : 0,9 × 3,14 = 2,826, même arrondi."
+      ],
+      "hint": "Quelle formule donne le volume d'un cône ? Vérifie que tu prends la bonne longueur pour la hauteur."
+    },
+    {
+      "key": "q4",
+      "skill_id": "P035",
+      "statement": "Pleine, la trémie contient exactement 7,5 m³ de blé. Quelle est sa hauteur h, en m ?",
+      "type": "numerique",
+      "answer": {
+        "value": 2.5,
+        "unit": "m",
+        "accepted": [
+          "2,5 m",
+          "2,5 mètres",
+          "h = 2,5 m",
+          "h = 2,5"
+        ]
+      },
+      "points": 4,
+      "solution_steps": [
+        "Volume d'une pyramide = aire de la base × hauteur ÷ 3. La base est un carré de 3 m de côté : son aire est 3 × 3 = 9 m².",
+        "Le volume vaut donc 9 × h ÷ 3 = 3 × h. On veut 3 × h = 7,5, donc h = 7,5 ÷ 3 = 2,5.",
+        "La trémie doit avoir **2,5 m** de hauteur. Ses arêtes latérales, d'environ 3,3 m, ne sont pas la hauteur : elles ne sont pas perpendiculaires à la base."
+      ],
+      "hint": "Écris le volume de la trémie avec la formule, en gardant h comme inconnue."
+    }
+  ],
+  "review_status": "brouillon",
+  "programme_ref": "Cycle 4, classe de 4e, Espace et géométrie, Représentation de l'espace, Objectifs d'apprentissage : « Connaitre le volume de la pyramide et du cône de révolution. »"
+}

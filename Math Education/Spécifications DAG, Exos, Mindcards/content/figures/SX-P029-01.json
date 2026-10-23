@@ -1,0 +1,78 @@
+{
+  "type": "geometrie",
+  "params": {
+    "colonnes": 12,
+    "lignes": 10,
+    "points": {
+      "A": [
+        1,
+        8
+      ],
+      "B": [
+        "8.2",
+        8
+      ],
+      "C": [
+        "10.36",
+        "3.95"
+      ],
+      "D": [
+        "3.16",
+        "3.95"
+      ],
+      "K": [
+        "3.16",
+        8
+      ]
+    },
+    "etiquettes": {
+      "A": "bas_gauche",
+      "B": "bas_droite",
+      "C": "haut_droite",
+      "D": "haut_gauche",
+      "K": "bas"
+    },
+    "elements": [
+      {
+        "polygone": [
+          "A",
+          "K",
+          "D"
+        ],
+        "rempli": true
+      },
+      {
+        "polygone": [
+          "A",
+          "B",
+          "C",
+          "D"
+        ]
+      },
+      {
+        "segment": [
+          "D",
+          "K"
+        ],
+        "style": "pointille"
+      },
+      {
+        "angle_droit": [
+          "D",
+          "K",
+          "B"
+        ]
+      },
+      {
+        "angle": [
+          "B",
+          "A",
+          "D"
+        ],
+        "nom": "62°",
+        "rayon_arc": 22
+      }
+    ]
+  },
+  "alt": "Figure de géométrie : le parallélogramme ABCD, le segment [DK] et le triangle AKD colorié"
+}

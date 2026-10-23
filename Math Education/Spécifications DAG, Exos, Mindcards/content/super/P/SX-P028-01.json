@@ -1,0 +1,148 @@
+{
+  "id": "SX-P028-01",
+  "skill_id": "P028",
+  "skill_ids": [
+    "P028",
+    "D024",
+    "G053",
+    "P010"
+  ],
+  "school_level": "5e",
+  "title": "Le potager du collège",
+  "contexte": "Le collège transforme un coin de sa cour en potager. Le terrain a la forme du triangle ABC de la figure. Le côté [BC], le long du mur du gymnase, mesure 21 m ; les deux autres côtés mesurent AB = 19,5 m et AC = 22,5 m.\n\nLe segment [AH] relie le coin A au mur : il est perpendiculaire à (BC), H est sur [BC], et AH = 18 m. M est le milieu de [BC].\n\nLes élèves veulent entourer le potager d'un grillage, puis couvrir toute sa surface de gazon en plaques, vendu 3,50 € le mètre carré. Le grillage est vendu en rouleaux de 25 m, et le potager sera cultivé par 4 classes de 5e.",
+  "image": "figures/SX-P028-01",
+  "duree_estimee_min": 15,
+  "questions": [
+    {
+      "key": "q1",
+      "skill_id": "G053",
+      "statement": "Dans le triangle ABC, quel segment est la hauteur relative au côté [BC] ?",
+      "type": "qcm",
+      "choices": [
+        {
+          "key": "a",
+          "text": "Le segment [AB]",
+          "misconception": "[AB] est un côté du triangle ; il ne fait pas d'angle droit avec (BC)."
+        },
+        {
+          "key": "b",
+          "text": "Le segment [AM]",
+          "misconception": "[AM] joint A au milieu de [BC] : c'est la médiane issue de A, pas la hauteur."
+        },
+        {
+          "key": "c",
+          "text": "Le segment [AH]",
+          "misconception": null
+        },
+        {
+          "key": "d",
+          "text": "Le segment [AC]",
+          "misconception": "[AC] est un côté du triangle ; il ne fait pas d'angle droit avec (BC)."
+        }
+      ],
+      "answer": {
+        "value": "c"
+      },
+      "points": 1,
+      "solution_steps": [
+        "La hauteur relative au côté [BC] part du sommet opposé A et elle est perpendiculaire à (BC).",
+        "L'énoncé dit que [AH] est perpendiculaire à (BC), et la figure code un angle droit en H : c'est **[AH]**.",
+        "[AM] va au milieu de [BC] : c'est une médiane, pas une hauteur."
+      ],
+      "hint": "Relis l'énoncé : il décrit chacun des segments qui partent de A."
+    },
+    {
+      "key": "q2",
+      "skill_id": "P010",
+      "statement": "Quelle longueur de grillage faut-il pour faire tout le tour du potager, en m ?",
+      "type": "numerique",
+      "answer": {
+        "value": 63,
+        "unit": "m",
+        "accepted": [
+          "63 m",
+          "63 mètres"
+        ]
+      },
+      "points": 2,
+      "solution_steps": [
+        "Le tour du potager est le périmètre du triangle ABC : AB + BC + AC.",
+        "19,5 + 21 = 40,5, puis 40,5 + 22,5 = 63.",
+        "Il faut **63 m** de grillage. La hauteur [AH] ne fait pas partie du tour, et la longueur d'un rouleau ne sert pas ici."
+      ],
+      "hint": "Quels segments forment le tour du terrain ?"
+    },
+    {
+      "key": "q3",
+      "skill_id": "P028",
+      "statement": "Quelle est l'aire du potager, en m² ?",
+      "type": "numerique",
+      "answer": {
+        "value": 189,
+        "unit": "m²",
+        "accepted": [
+          "189 m²",
+          "189 m2",
+          "189 mètres carrés"
+        ]
+      },
+      "points": 3,
+      "solution_steps": [
+        "Aire d'un triangle = base × hauteur ÷ 2, avec la hauteur relative à la base choisie.",
+        "On prend la base [BC], de 21 m, et sa hauteur [AH], de 18 m : 21 × 18 = 378.",
+        "378 ÷ 2 = 189. Le potager a une aire de **189 m²**.",
+        "Attention : [AB] et [AC] ne sont pas perpendiculaires à (BC) ; ce ne sont pas des hauteurs."
+      ],
+      "hint": "Quelle hauteur va avec la base [BC] ?"
+    },
+    {
+      "key": "q4",
+      "skill_id": "D024",
+      "statement": "On admet que l'aire du potager est 189 m². Combien coûte le gazon en plaques pour tout le potager, en euros ?",
+      "type": "numerique",
+      "answer": {
+        "value": 661.5,
+        "unit": "€",
+        "accepted": [
+          "661,50 €",
+          "661,5 €",
+          "661,50 euros",
+          "661,5 euros",
+          "661,50"
+        ]
+      },
+      "points": 2,
+      "solution_steps": [
+        "Il faut 189 m² de gazon, à 3,50 € le mètre carré : 189 × 3,5.",
+        "189 × 35 = 6 615, puis on place la virgule : 3,5 a un chiffre après la virgule, le produit aussi. 189 × 3,5 = 661,5.",
+        "Le gazon coûte **661,50 €**."
+      ],
+      "hint": "Combien de mètres carrés faut-il, et combien coûte un mètre carré ?"
+    },
+    {
+      "key": "q5",
+      "skill_id": "P028",
+      "statement": "Une allée droite va de A à M. Elle partage le potager en deux parcelles. Quelle est l'aire de la parcelle ABM, en m² ?",
+      "type": "numerique",
+      "answer": {
+        "value": 94.5,
+        "unit": "m²",
+        "accepted": [
+          "94,5 m²",
+          "94,5 m2",
+          "94,5 mètres carrés"
+        ]
+      },
+      "points": 4,
+      "solution_steps": [
+        "M est le milieu de [BC] : BM = 21 ÷ 2 = 10,5 m.",
+        "Dans le triangle ABM, la hauteur relative au côté [BM] est aussi [AH] : elle part de A et elle est perpendiculaire à (BC), qui porte [BM]. Elle mesure 18 m.",
+        "Aire de ABM : 10,5 × 18 ÷ 2. 10,5 × 18 = 189, puis 189 ÷ 2 = 94,5. La parcelle ABM a une aire de **94,5 m²**.",
+        "C'est la moitié de l'aire du potager : une médiane partage un triangle en deux triangles de même aire."
+      ],
+      "hint": "Quelle est la base du triangle ABM sur le mur ? Quelle hauteur va avec elle ?"
+    }
+  ],
+  "review_status": "brouillon",
+  "programme_ref": "Cycle 4, classe de 5e, Espace et géométrie, Triangles, Objectifs d'apprentissage : « Calculer l'aire d'un triangle. »"
+}
