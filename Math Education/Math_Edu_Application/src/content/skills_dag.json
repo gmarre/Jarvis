@@ -9,7 +9,7 @@
       "Programme de mathématiques pour le cycle 3 (CM1, CM2, 6e)",
       "Annexe 2 - Programme de mathématiques pour le cycle 4 (5e, 4e, 3e)"
     ],
-    "total_skills": 273,
+    "total_skills": 297,
     "domains": [
       {
         "id": "A",
@@ -34,7 +34,7 @@
       {
         "id": "E",
         "name": "Proportionnalité et pourcentages",
-        "count": 17
+        "count": 25
       },
       {
         "id": "F",
@@ -45,6 +45,11 @@
         "id": "G",
         "name": "Espace et géométrie",
         "count": 65
+      },
+      {
+        "id": "J",
+        "name": "Fonctions",
+        "count": 16
       },
       {
         "id": "P",
@@ -4725,6 +4730,71 @@
       ]
     },
     {
+      "id": "E001",
+      "domain": "E",
+      "domain_name": "Proportionnalité et pourcentages",
+      "label": "Rapport et ratio : comparer deux nombres ou deux grandeurs",
+      "description": "Comparer deux grandeurs de même nature par leur rapport, quotient sans unité (une salle de 12 m sur 8 m : rapport de la longueur à la largeur 12/8 = 3/2 = 1,5), et deux situations par leur ratio : un sirop A se prépare dans le ratio 2 : 5 (2 volumes de sirop pour 5 volumes d'eau), un sirop B dans le ratio 3 : 8 ; la part de sirop dans le mélange vaut 2/7 pour A et 3/11 pour B, or 2/7 = 22/77 et 3/11 = 21/77, donc A est plus sucré ; ou bien sirop sur eau : 2/5 = 0,4 et 3/8 = 0,375. Écrire un ratio sous forme simplifiée (12 : 18, c'est 2 : 3, comme 12/18 = 2/3). L'erreur type est de comparer les différences (5 − 2 = 3 et 8 − 3 = 5) au lieu des quotients, ou de confondre le ratio sirop : eau (2 : 5) avec la part de sirop dans le mélange (2/7). Réponse : QCM, vrai/faux, ou un nombre (un rapport en écriture décimale ou fractionnaire, comparé par sa valeur) ; un ratio ne se tape pas sous la forme a : b, on demande l'un de ses deux nombres. Figure utile : partage (bande de 7 parts dont 2 coloriées).",
+      "prerequisites": [
+        "C010",
+        "C007",
+        "E036"
+      ],
+      "difficulty": 5,
+      "school_level": "4e",
+      "validation_test": "Dans le club A, il y a 15 filles pour 25 garçons ; dans le club B, 12 filles pour 18 garçons. Écris le ratio filles : garçons de chaque club sous forme simplifiée. Dans quel club la part des filles est-elle la plus grande ?",
+      "mastery_threshold": {
+        "required": 3,
+        "out_of": 4
+      },
+      "exercise_ids": [],
+      "mindmap_id": null,
+      "programme_ref": [
+        {
+          "source": "Cycle 4, classe de 4e, Proportionnalité, fonctions, Proportionnalité, Objectifs d'apprentissage",
+          "quote": "Comparer deux nombres ou deux grandeurs à l'aide de leur rapport ou ratio."
+        },
+        {
+          "source": "Cycle 4, Proportionnalité, fonctions, présentation commune aux trois classes",
+          "quote": "affermir la maitrise des raisonnements liés à la proportionnalité, en liaison avec les situations de proportionnalité courantes : changement d'échelle, changement d'unité, pourcentages, rapports et ratios."
+        },
+        {
+          "source": "Cycle 4, programme de 2020 commun aux trois classes, Thème B, Organisation et gestion de données, fonctions",
+          "quote": "La notion de ratio vient enrichir le lexique de la proportionnalité pour traduire la proportionnalité de deux suites de nombres."
+        }
+      ]
+    },
+    {
+      "id": "E002",
+      "domain": "E",
+      "domain_name": "Proportionnalité et pourcentages",
+      "label": "Suites proportionnelles : égalités de rapports et ratio",
+      "description": "Exprimer que deux suites de nombres sont proportionnelles par des égalités de rapports, et le traduire en ratio : pour 6 ; 9 ; 15 et 4 ; 6 ; 10, on a 6/4 = 9/6 = 15/10 = 1,5, les suites sont proportionnelles et dans le ratio 3 : 2 ; trois nombres a, b, c sont dans le ratio 2 : 3 : 5 quand a/2 = b/3 = c/5. Contrôler une égalité de rapports par le calcul des quotients ou par simplification (12/8 = 3/2), compléter une égalité de rapports dont le calcul tombe juste (3/4 = 15/20), et reconnaître qu'un tableau n'est pas de proportionnalité dès que deux rapports diffèrent. L'erreur type est d'écrire les rapports dans un ordre différent d'une colonne à l'autre (6/4 puis 6/9), ou de conclure sur deux colonnes seulement. Réponse : vrai/faux, QCM, ou le nombre manquant d'une égalité de rapports. Figure : aucune.",
+      "prerequisites": [
+        "E001",
+        "E035"
+      ],
+      "difficulty": 5,
+      "school_level": "4e",
+      "validation_test": "Les suites 8 ; 12 ; 20 et 6 ; 9 ; 15 sont-elles proportionnelles ? Si oui, dans quel ratio sont-elles ? Complète l'égalité 3/4 = …/28.",
+      "mastery_threshold": {
+        "required": 3,
+        "out_of": 4
+      },
+      "exercise_ids": [],
+      "mindmap_id": null,
+      "programme_ref": [
+        {
+          "source": "Cycle 4, classe de 4e, Proportionnalité, fonctions, Proportionnalité, Objectifs d'apprentissage",
+          "quote": "Exprimer la proportionnalité entre deux suites de nombres par des égalités de rapports ou sous forme de ratio."
+        },
+        {
+          "source": "Cycle 4, programme de 2020 commun aux trois classes, Thème B, Organisation et gestion de données, fonctions",
+          "quote": "trois nombres a, b, c sont dans le ratio 2 : 3 : 7 (notation standardisée)"
+        }
+      ]
+    },
+    {
       "id": "E003",
       "domain": "E",
       "domain_name": "Proportionnalité et pourcentages",
@@ -4765,6 +4835,40 @@
         {
           "source": "Cycle 3, classe de 6e, La proportionnalité",
           "quote": "L'élève sait repérer des relations multiplicatives simples entre des nombres (double, quadruple, moitié, tiers, quart)."
+        }
+      ]
+    },
+    {
+      "id": "E005",
+      "domain": "E",
+      "domain_name": "Proportionnalité et pourcentages",
+      "label": "Déterminer une quatrième proportionnelle",
+      "description": "Calculer le quatrième nombre d'une situation de proportionnalité dont on connaît trois nombres, avec des nombres quelconques, en choisissant la procédure : linéarité, passage par l'unité, coefficient, ou égalité de deux rapports. Exemple : 3,5 kg de cerises coûtent 8,40 € ; le prix x de 5 kg vérifie x/5 = 8,40/3,5, soit x = 5 × 8,40 ÷ 3,5 = 12 € ; ou bien 8,40 ÷ 3,5 = 2,40 € le kilogramme, puis 2,40 × 5 = 12 €. Écrire l'égalité des rapports avec les grandeurs dans le même ordre, puis la résoudre comme une équation (3,5x = 8,40 × 5, voir F023). L'erreur type est de mal apparier les grandeurs (5 × 3,5 ÷ 8,40), ou d'ajouter la même quantité aux deux grandeurs. Le programme du cycle 4 ne nomme pas le « produit en croix », que le validateur refuse jusqu'en 3e : le corrigé dit « égalité des rapports ». Réponse : un nombre avec unité. Figure : aucune.",
+      "prerequisites": [
+        "E002",
+        "F023"
+      ],
+      "difficulty": 5,
+      "school_level": "4e",
+      "validation_test": "Pour 2,5 kg de confiture, il faut 1,5 kg de sucre. Quelle masse de sucre faut-il pour 4 kg de confiture ? Quelle masse de confiture obtient-on avec 2,1 kg de sucre ?",
+      "mastery_threshold": {
+        "required": 3,
+        "out_of": 4
+      },
+      "exercise_ids": [],
+      "mindmap_id": null,
+      "programme_ref": [
+        {
+          "source": "Cycle 4, classe de 4e, Proportionnalité, fonctions, Proportionnalité, Objectifs d'apprentissage",
+          "quote": "Déterminer une quatrième proportionnelle."
+        },
+        {
+          "source": "Cycle 4, Proportionnalité, fonctions, présentation commune aux trois classes",
+          "quote": "Les méthodes de résolution des problèmes de proportionnalité évoluent avec les connaissances des élèves, notamment avec une meilleure maitrise de la notion de quotient."
+        },
+        {
+          "source": "Cycle 4, programme de 2020 commun aux trois classes, Thème B, Organisation et gestion de données, fonctions",
+          "quote": "différentes procédures de calcul d'une quatrième proportionnelle"
         }
       ]
     },
@@ -4878,6 +4982,73 @@
       ]
     },
     {
+      "id": "E013",
+      "domain": "E",
+      "domain_name": "Proportionnalité et pourcentages",
+      "label": "Traduire une évolution en pourcentage d'augmentation ou de diminution",
+      "description": "Calculer le pourcentage d'une augmentation ou d'une diminution connaissant les valeurs avant et après : de 80 € à 92 €, le coefficient multiplicateur est 92 ÷ 80 = 1,15, soit une hausse de 15 % (ou : la hausse de 12 € représente 12/80 = 15 % de 80 €) ; de 250 à 200, 200 ÷ 250 = 0,8, soit une baisse de 20 % ; appliquer, avec ou sans le coefficient, une augmentation ou une diminution dans des cas simples. En maîtrise : deux évolutions successives se composent en multipliant les coefficients, une hausse de 10 % suivie d'une baisse de 10 % donne × 1,1 × 0,9 = × 0,99, soit une baisse de 1 %, et non 0 %. L'erreur type est de diviser l'écart par la valeur d'arrivée (12/92), ou d'additionner les pourcentages successifs. Réponse : un nombre (le pourcentage, answer.unit « % », une baisse donnée en positif quand la question demande « de quel pourcentage a-t-il baissé ? »), ou le coefficient (un nombre) ; QCM hausse ou baisse. Figure : aucune.",
+      "prerequisites": [
+        "E016"
+      ],
+      "difficulty": 6,
+      "school_level": "3e",
+      "validation_test": "Le prix d'un livre passe de 24 € à 27 €. De quel pourcentage a-t-il augmenté ? Le nombre d'abonnés d'un club passe de 160 à 136 : de quel pourcentage a-t-il baissé ? Un article augmente de 20 % puis baisse de 20 % : son prix final est-il égal à son prix de départ ?",
+      "mastery_threshold": {
+        "required": 3,
+        "out_of": 4
+      },
+      "exercise_ids": [],
+      "mindmap_id": null,
+      "programme_ref": [
+        {
+          "source": "Cycle 4, classe de 3e, Proportionnalité, fonctions, Proportionnalité, Objectifs d'apprentissage",
+          "quote": "Traduire une augmentation ou une diminution en pourcentages."
+        },
+        {
+          "source": "Cycle 4, classe de 3e, Proportionnalité, fonctions, Proportionnalité, Automatismes",
+          "quote": "Appliquer, dans des cas simples, une augmentation ou une diminution exprimée en pourcentages, en utilisant ou non le coefficient multiplicateur."
+        },
+        {
+          "source": "Cycle 4, programme de 2020 commun aux trois classes, Thème B, Organisation et gestion de données, fonctions",
+          "quote": "Taux d'évolution, coefficient multiplicateur."
+        }
+      ]
+    },
+    {
+      "id": "E016",
+      "domain": "E",
+      "domain_name": "Proportionnalité et pourcentages",
+      "label": "Coefficient multiplicateur d'une augmentation ou d'une diminution",
+      "description": "Savoir qu'augmenter une grandeur de t % revient à la multiplier par 1 + t/100, et la diminuer de t %, à la multiplier par 1 − t/100 : 80 + 80 × 0,15 = 80 × (1 + 0,15) = 80 × 1,15 = 92 (distributivité, B055) ; une baisse de 30 % se traduit par × 0,7, et 120 × 0,7 = 84. Passer du pourcentage au coefficient et inversement (× 1,08 : hausse de 8 % ; × 0,95 : baisse de 5 % ; × 2 : hausse de 100 %), et retrouver une valeur de départ par division (après une hausse de 15 %, un prix vaut 92 € : 92 ÷ 1,15 = 80 €). L'erreur type est de prendre 0,15 pour coefficient d'une hausse de 15 %, ou 1,3 pour une baisse de 30 %, et de retrouver la valeur de départ en enlevant 15 % de 92 (78,20 € au lieu de 80 €). Réponse : un nombre (le coefficient, comme 1,15, ou la valeur obtenue avec son unité). Figure : aucune.",
+      "prerequisites": [
+        "E039",
+        "B055"
+      ],
+      "difficulty": 5,
+      "school_level": "4e",
+      "validation_test": "Par quel nombre multiplie-t-on un prix pour l'augmenter de 6 % ? Pour le diminuer de 25 % ? Un vélo à 240 € est soldé à −25 % : quel est son nouveau prix ?",
+      "mastery_threshold": {
+        "required": 3,
+        "out_of": 4
+      },
+      "exercise_ids": [],
+      "mindmap_id": null,
+      "programme_ref": [
+        {
+          "source": "Cycle 4, classe de 4e, Proportionnalité, fonctions, Proportionnalité, Objectifs d'apprentissage",
+          "quote": "Rendre compte d'une augmentation ou une diminution exprimée en pourcentages au moyen d'un coefficient multiplicateur"
+        },
+        {
+          "source": "Cycle 4, classe de 4e, Proportionnalité, fonctions, Proportionnalité, Objectifs d'apprentissage",
+          "quote": "Définir le coefficient multiplicateur."
+        },
+        {
+          "source": "Cycle 4, programme de 2020 commun aux trois classes, Thème B, Organisation et gestion de données, fonctions",
+          "quote": "Taux d'évolution, coefficient multiplicateur."
+        }
+      ]
+    },
+    {
       "id": "E023",
       "domain": "E",
       "domain_name": "Proportionnalité et pourcentages",
@@ -4885,7 +5056,7 @@
       "description": "Représenter une situation de proportionnalité par des points dans un repère et savoir qu'ils sont alignés avec l'origine ; décider, à partir d'un graphique ou d'un nuage de points, si une situation est de proportionnalité (alignés mais ne passant pas par l'origine : non).",
       "prerequisites": [
         "E035",
-        "A020"
+        "J039"
       ],
       "difficulty": 5,
       "school_level": "5e",
@@ -5391,6 +5562,104 @@
         {
           "source": "Cycle 4, classe de 5e, Proportionnalité",
           "quote": "Utiliser des proportions, des pourcentages."
+        }
+      ]
+    },
+    {
+      "id": "E038",
+      "domain": "E",
+      "domain_name": "Proportionnalité et pourcentages",
+      "label": "Échelle d'une carte ou d'un plan : écriture 1/n, distances dans les deux sens",
+      "description": "Utiliser l'échelle d'une carte ou d'un plan comme coefficient de proportionnalité entre les longueurs sur la carte et les longueurs réelles, exprimées dans la même unité : l'échelle 1/25 000 signifie que 1 cm sur la carte représente 25 000 cm, soit 250 m, en réalité. Calculer une distance réelle (4,5 cm sur une carte au 1/200 000 représentent 4,5 × 200 000 = 900 000 cm, soit 9 km), une longueur sur la carte (12 km = 1 200 000 cm, et 1 200 000 ÷ 200 000 = 6 cm), ou l'échelle elle-même (5 cm sur le plan pour 2 km = 200 000 cm en réalité : 200 000 ÷ 5 = 40 000, échelle 1/40 000, sans simplification de fraction, qui est de 4e). L'erreur type est de calculer sans convertir dans la même unité (4,5 × 200 000 = 900 000 km), ou de multiplier quand il faut diviser. Prolonge E006 (6e, échelle donnée en phrase) et E034 (coefficient) ; la distance réelle entre deux villes sur une carte routière reste un automatisme de 3e, sans nouveau nœud. Réponse : un nombre avec unité (distance réelle en km ou en m, longueur sur la carte en cm), ou l'échelle par son dénominateur (un nombre, ou la fraction 1/40 000 en numérique) ; l'écriture 1 : 40 000 ne se tape pas. Figure : aucune.",
+      "prerequisites": [
+        "E034",
+        "P021"
+      ],
+      "difficulty": 5,
+      "school_level": "5e",
+      "validation_test": "Sur une carte à l'échelle 1/50 000, deux villages sont à 6 cm l'un de l'autre. Quelle est la distance réelle entre ces villages, en km ? Sur cette carte, quelle longueur représente une route de 4 km ?",
+      "mastery_threshold": {
+        "required": 3,
+        "out_of": 4
+      },
+      "exercise_ids": [],
+      "mindmap_id": null,
+      "programme_ref": [
+        {
+          "source": "Cycle 4, classe de 5e, Proportionnalité, fonctions, Proportionnalité, Objectifs d'apprentissage",
+          "quote": "Utiliser un coefficient de proportionnalité dans des contextes concrets (prix unitaire, vitesse moyenne, échelle, etc.)."
+        },
+        {
+          "source": "Cycle 4, classe de 5e, Proportionnalité, fonctions, Proportionnalité, Objectifs d'apprentissage",
+          "quote": "Identifier des situations de proportionnalité dans des contextes concrets (prix, recettes, distances, échelles)."
+        },
+        {
+          "source": "Cycle 4, Proportionnalité, fonctions, présentation commune aux trois classes",
+          "quote": "affermir la maitrise des raisonnements liés à la proportionnalité, en liaison avec les situations de proportionnalité courantes : changement d'échelle, changement d'unité, pourcentages, rapports et ratios."
+        }
+      ]
+    },
+    {
+      "id": "E039",
+      "domain": "E",
+      "domain_name": "Proportionnalité et pourcentages",
+      "label": "Calculer avec des pourcentages : la part, le pourcentage, le total",
+      "description": "Calculer avec des pourcentages dans tous les sens, avec des nombres quelconques : la part (35 % de 240 = 84), le pourcentage (30 sur 1 000, c'est 3 %), et le total connaissant la part et le pourcentage (si 30 % d'un prix valent 12 €, le prix est 12 ÷ 0,3 = 40 €, ou 12 ÷ 30 × 100) ; les pourcentages supérieurs à 100 % (150 % de 60 = 90) ; mentalement, a % de c pour a = 100, 50, 25, 10, 1. Le total se cherche comme une quatrième proportionnelle (12 est à 30 ce que le prix est à 100). L'erreur type est de calculer 30 % de 12 au lieu de chercher le nombre dont 30 % valent 12, ou de diviser par 30 sans multiplier par 100. Réponse : un nombre, avec l'unité ou le symbole % (answer.unit « % » : « 3 », « 3 % » et « 3% » sont acceptés). Figure : aucune.",
+      "prerequisites": [
+        "E005",
+        "E037"
+      ],
+      "difficulty": 5,
+      "school_level": "4e",
+      "validation_test": "Calcule 45 % de 260. Dans un collège de 650 élèves, 78 déjeunent à la cantine le vendredi seulement : quel pourcentage des élèves cela représente-t-il ? Une remise de 15 % fait économiser 9 € : quel était le prix de départ ?",
+      "mastery_threshold": {
+        "required": 3,
+        "out_of": 4
+      },
+      "exercise_ids": [],
+      "mindmap_id": null,
+      "programme_ref": [
+        {
+          "source": "Cycle 4, classe de 4e, Proportionnalité, fonctions, Proportionnalité, Objectifs d'apprentissage",
+          "quote": "Calculer avec des pourcentages."
+        },
+        {
+          "source": "Cycle 4, classe de 4e, Proportionnalité, fonctions, Proportionnalité, Automatismes",
+          "quote": "Déterminer a % de c quand a vaut 100, 50, 25, 10, 1."
+        },
+        {
+          "source": "Cycle 4, classe de 4e, Proportionnalité, fonctions, Proportionnalité, Automatismes",
+          "quote": "Compléter : 20 % de 120 = …"
+        }
+      ]
+    },
+    {
+      "id": "E040",
+      "domain": "E",
+      "domain_name": "Proportionnalité et pourcentages",
+      "label": "Partage proportionnel : partager selon un ratio",
+      "description": "Partager une quantité en parts proportionnelles à des nombres donnés, c'est-à-dire selon un ratio : 600 € dans le ratio 2 : 3, c'est 5 parts de 600 ÷ 5 = 120 €, soit 240 € et 360 € ; 1,2 kg de pâte dans le ratio 1 : 2 : 3, c'est 6 parts de 200 g, soit 200 g, 400 g et 600 g ; 1 500 € partagés entre deux personnes de 20 et 30 ans proportionnellement à leur âge : 1 500 ÷ 50 = 30, soit 600 € et 900 €. Vérifier que la somme des parts redonne le tout et que les parts sont dans le ratio. L'erreur type est de diviser le tout par le nombre de personnes (300 € chacun), ou par un seul des nombres du ratio (600 ÷ 2). Les automatismes de partage de 3e en sont l'entretien. Réponse : un nombre avec unité (une part à la fois). Figure utile : partage (bande de 5 parts dont 2 coloriées), comme modèle en barres.",
+      "prerequisites": [
+        "E002",
+        "B040"
+      ],
+      "difficulty": 5,
+      "school_level": "4e",
+      "validation_test": "Deux amies ont acheté ensemble un billet de loterie : l'une a payé 4 €, l'autre 6 €. Elles gagnent 250 € et les partagent proportionnellement à leur mise. Combien reçoit chacune ? Partage 84 billes dans le ratio 1 : 2 : 4.",
+      "mastery_threshold": {
+        "required": 3,
+        "out_of": 4
+      },
+      "exercise_ids": [],
+      "mindmap_id": null,
+      "programme_ref": [
+        {
+          "source": "Cycle 4, classe de 4e, Proportionnalité, fonctions, Proportionnalité, Objectifs d'apprentissage",
+          "quote": "Résoudre des problèmes de partage proportionnel."
+        },
+        {
+          "source": "Cycle 4, programme de 2020 commun aux trois classes, Thème B, Organisation et gestion de données, fonctions",
+          "quote": "Partager une quantité (par exemple une somme d'argent) en deux ou trois parts selon un ratio donné."
         }
       ]
     },
@@ -7748,8 +8017,7 @@
       "description": "Dans un triangle ABC, avec M sur [AB], N sur [AC] et (MN) parallèle à (BC), savoir que AM/AB = AN/AC = MN/BC (les longueurs du petit triangle sont proportionnelles à celles du grand) et s'en servir pour calculer une longueur par l'égalité de deux quotients : AM = 3 cm, AB = 5 cm, AC = 7,5 cm donnent AN = 3 × 7,5 ÷ 5 = 4,5 cm ; MN = 2,4 cm donne BC = 2,4 × 5 ÷ 3 = 4 cm. Vérifier d'abord les hypothèses (alignements, parallélisme) ; la droite des milieux en est le cas particulier où le quotient vaut 1/2. L'erreur type est d'apparier des côtés non homologues (AM/MB au lieu de AM/AB), ou d'écrire le petit triangle au dénominateur d'un quotient et au numérateur de l'autre. Réponse : un nombre avec unité (answer.tolerance si un arrondi est demandé) ; QCM pour l'égalité des quotients. Figure nécessaire : geometrie (existant), triangle et parallèle à un côté, longueurs écrites, longueur cherchée marquée « ? », pas en vraie grandeur.",
       "prerequisites": [
         "G059",
-        "F023",
-        "E034"
+        "E005"
       ],
       "difficulty": 6,
       "school_level": "3e",
@@ -7786,9 +8054,7 @@
       "description": "Décider si deux droites sont parallèles dans une configuration de Thalès (emboîtée ou papillon) : vérifier que les points sont alignés dans le même ordre, calculer séparément les deux quotients AM/AB et AN/AC ; s'ils sont égaux, les droites (MN) et (BC) sont parallèles (réciproque) ; sinon, elles ne le sont pas (contraposée). Comparer des quotients en valeur exacte (simplification, même dénominateur) plutôt qu'en valeurs arrondies : 3/9 = 1/3 et 4/12 = 1/3, parallèles ; 5/8 = 0,625 et 6/10 = 0,6, non parallèles. Nommer le théorème utilisé. L'erreur type est de conclure sur des quotients arrondis égaux, d'oublier l'ordre des points, ou de calculer un troisième quotient avec MN et BC, qui ne sert pas à prouver. Réponse : vrai/faux ou QCM (parallèles ou non, théorème) ; nombre ou fraction pour chaque quotient. Figure nécessaire : geometrie (existant), deux droites sécantes et deux droites candidates au parallélisme, longueurs écrites ; droites presque parallèles autorisées quand les quotients disent le contraire.",
       "prerequisites": [
         "G062",
-        "G060",
-        "C010",
-        "C007"
+        "G060"
       ],
       "difficulty": 7,
       "school_level": "3e",
@@ -8925,6 +9191,500 @@
         {
           "source": "Cycle 4, classe de 3e, Espace et géométrie, Représentation de l'espace, Objectifs d'apprentissage",
           "quote": "Visualiser et réaliser des sections de pavé parallèlement à une face, de cylindre parallèlement ou perpendiculairement à son axe, d'une boule."
+        }
+      ]
+    },
+    {
+      "id": "J001",
+      "domain": "J",
+      "domain_name": "Fonctions",
+      "label": "Fonction : image, antécédents, notations f(x) et x ↦ f(x)",
+      "description": "Définir une fonction comme un procédé qui, à un nombre x, associe un seul nombre, noté f(x), son image ; x est un antécédent de f(x). Lire et écrire les notations f : x ↦ 3x − 1 et f(x) = 3x − 1 ; traduire « l'image de 2 par f est 5 » par f(2) = 5, et inversement. Dans un tableau de valeurs (x : −1 ; 0 ; 2 ; 3 et f(x) : 4 ; 1 ; 5 ; 4), lire une image (f(2) = 5) et tous les antécédents d'un nombre (4 a deux antécédents, −1 et 3 ; 7 n'en a aucun dans le tableau). Une même fonction se donne par une formule, un tableau de valeurs, un graphique ou un programme de calcul. L'erreur type est de confondre image et antécédent (dire que l'image de 5 est 2), ou de croire qu'un nombre n'a qu'un antécédent. Réponse : un nombre ; plusieurs antécédents en liste (answer.forme « solutions » : « −1 ; 3 », dans n'importe quel ordre) ; vrai/faux ou QCM. Figure : aucune.",
+      "prerequisites": [
+        "J042"
+      ],
+      "difficulty": 6,
+      "school_level": "3e",
+      "validation_test": "On donne le tableau de valeurs d'une fonction f : x : −2 ; 0 ; 1 ; 4 et f(x) : 3 ; −1 ; 3 ; 6. Quelle est l'image de 4 par f ? Donne tous les antécédents de 3 par f. Que vaut f(0) ?",
+      "mastery_threshold": {
+        "required": 3,
+        "out_of": 4
+      },
+      "exercise_ids": [],
+      "mindmap_id": null,
+      "programme_ref": [
+        {
+          "source": "Cycle 4, classe de 3e, Proportionnalité, fonctions, Fonctions, Objectifs d'apprentissage",
+          "quote": "Définir et connaitre le vocabulaire : image, antécédents."
+        },
+        {
+          "source": "Cycle 4, classe de 3e, Proportionnalité, fonctions, Fonctions, Objectifs d'apprentissage",
+          "quote": "Utiliser les différentes représentations d'une fonction."
+        },
+        {
+          "source": "Cycle 4, Proportionnalité, fonctions, présentation commune aux trois classes",
+          "quote": "Des exemples de fonctions sont étudiés en troisième, sans étude générale de la notion de fonction."
+        },
+        {
+          "source": "Cycle 4, Proportionnalité, fonctions, présentation commune aux trois classes",
+          "quote": "Les notations fonctionnelles de type 𝑃(𝐴), 𝑝(𝑡) ainsi que la flèche → sont utilisées progressivement dans tous les chapitres du programme."
+        },
+        {
+          "source": "Cycle 4, programme de 2020 commun aux trois classes, Thème B, Organisation et gestion de données, fonctions",
+          "quote": "Notations f(𝑥) et 𝑥 ↦ f(𝑥)."
+        }
+      ]
+    },
+    {
+      "id": "J002",
+      "domain": "J",
+      "domain_name": "Fonctions",
+      "label": "Image et antécédent par le calcul",
+      "description": "Calculer une image à partir de la formule, y compris pour un nombre négatif ou décimal : f(x) = x² − 3x donne f(−2) = 4 + 6 = 10 et f(0,5) = 0,25 − 1,5 = −1,25 ; chercher un antécédent par le calcul en résolvant une équation : pour g(x) = 3x − 2, l'antécédent de 7 vérifie 3x − 2 = 7, soit x = 3, et celui de 0 est 2/3 ; contrôler en recalculant l'image (g(3) = 7). Une fonction donnée par un programme de calcul : écrire sa formule, puis calculer. L'erreur type est d'écrire −2² = −4 au lieu de (−2)² = 4, ou de calculer l'image du nombre dont on cherche l'antécédent (g(7) = 19). Les antécédents par x ↦ x² sont dans J008. Réponse : un nombre (image ou antécédent, fraction acceptée). Figure : aucune.",
+      "prerequisites": [
+        "J001",
+        "F024"
+      ],
+      "difficulty": 6,
+      "school_level": "3e",
+      "validation_test": "Soit f la fonction définie par f(x) = 2x² − 5. Calcule f(3), puis f(−1). Soit g la fonction définie par g(x) = 4x + 7 : quel est l'antécédent de −5 par g ?",
+      "mastery_threshold": {
+        "required": 3,
+        "out_of": 4
+      },
+      "exercise_ids": [],
+      "mindmap_id": null,
+      "programme_ref": [
+        {
+          "source": "Cycle 4, classe de 3e, Proportionnalité, fonctions, Fonctions, Objectifs d'apprentissage",
+          "quote": "Utiliser les différentes représentations d'une fonction."
+        },
+        {
+          "source": "Cycle 4, classe de 3e, Proportionnalité, fonctions, Fonctions, Objectifs d'apprentissage",
+          "quote": "Définir et connaitre le vocabulaire : image, antécédents."
+        },
+        {
+          "source": "Cycle 4, programme de 2020 commun aux trois classes, Thème B, Organisation et gestion de données, fonctions",
+          "quote": "Déterminer, à partir d'un mode de représentation, l'image ou un antécédent d'un nombre par une fonction."
+        }
+      ]
+    },
+    {
+      "id": "J004",
+      "domain": "J",
+      "domain_name": "Fonctions",
+      "label": "Lire graphiquement des images et des antécédents",
+      "description": "Sur la courbe représentative 𝒞f d'une fonction f, lire l'image d'un nombre (partir de l'abscisse, aller jusqu'à la courbe, lire l'ordonnée) et les antécédents d'un nombre (partir de l'ordonnée, chercher tous les points de la courbe à cette hauteur, lire leurs abscisses) ; savoir que le point de coordonnées (a ; f(a)) est sur 𝒞f et le traduire dans les deux sens (A(2 ; 5) est sur 𝒞f, donc f(2) = 5) ; dire combien un nombre a d'antécédents. L'erreur type est de lire sur le mauvais axe (l'antécédent sur l'axe des ordonnées), ou de ne donner qu'un antécédent sur deux. Les valeurs demandées tombent sur la demi-graduation : la réponse est exacte, sans tolérance. Réponse : un nombre ; plusieurs antécédents en liste (answer.forme « solutions ») ; le nombre d'antécédents (un nombre) ; vrai/faux. Figure nécessaire : repere (existant), une courbe nommée 𝒞f (« ligne » pour une courbe quelconque, « carre », « affine »), pointillés de lecture en découverte et au corrigé seulement.",
+      "prerequisites": [
+        "J001"
+      ],
+      "difficulty": 6,
+      "school_level": "3e",
+      "validation_test": "Sur le graphique dessiné, 𝒞f est la courbe représentative d'une fonction f. Lis f(1). Lis tous les antécédents de 2 par f. Le point de coordonnées (−1 ; 3) est-il sur 𝒞f ?",
+      "mastery_threshold": {
+        "required": 3,
+        "out_of": 4
+      },
+      "exercise_ids": [],
+      "mindmap_id": null,
+      "programme_ref": [
+        {
+          "source": "Cycle 4, classe de 3e, Proportionnalité, fonctions, Fonctions, Objectifs d'apprentissage",
+          "quote": "Utiliser les différentes représentations d'une fonction."
+        },
+        {
+          "source": "Cycle 4, programme de 2020 commun aux trois classes, Thème B, Organisation et gestion de données, fonctions",
+          "quote": "les procédures de recherche d'image et d'antécédent d'un nombre par une fonction."
+        }
+      ]
+    },
+    {
+      "id": "J005",
+      "domain": "J",
+      "domain_name": "Fonctions",
+      "label": "Fonction affine : définition, calcul, coefficients a et b",
+      "description": "Savoir qu'une fonction affine est de la forme f(x) = ax + b, avec a et b deux nombres fixés ; les fonctions linéaires (b = 0) et les fonctions constantes (a = 0) en sont des cas particuliers. Reconnaître une fonction affine à sa formule (x ↦ 5 − 2x : a = −2 et b = 5 ; x ↦ x² + 1 ne l'est pas) ; modéliser une situation (location à 30 € plus 0,20 € par km : x ↦ 0,2x + 30) ; calculer des images et des antécédents ; retrouver a et b à partir de deux couples : f(2) = 5 et f(5) = 11 donnent a = (11 − 5) ÷ (5 − 2) = 2, puis b = 5 − 2 × 2 = 1. L'erreur type est d'inverser a et b, de lire a = 5 dans 5 − 2x, ou de calculer a par 11 ÷ 5. Réponse : un nombre (image, antécédent, a ou b), QCM ou vrai/faux ; la formule se tape (answer.forme « expression ») ou se choisit. Figure : aucune.",
+      "prerequisites": [
+        "J006"
+      ],
+      "difficulty": 6,
+      "school_level": "3e",
+      "validation_test": "La fonction f est définie par f(x) = −3x + 4. Donne son coefficient a et son nombre b. Calcule f(−2). Une fonction affine g vérifie g(1) = 5 et g(4) = 14 : donne a, puis b.",
+      "mastery_threshold": {
+        "required": 3,
+        "out_of": 4
+      },
+      "exercise_ids": [],
+      "mindmap_id": null,
+      "programme_ref": [
+        {
+          "source": "Cycle 4, classe de 3e, Proportionnalité, fonctions, Fonctions, Objectifs d'apprentissage",
+          "quote": "Définir et utiliser les fonctions affines."
+        },
+        {
+          "source": "Cycle 4, programme de 2020 commun aux trois classes, Thème B, Organisation et gestion de données, fonctions",
+          "quote": "Fonction linéaire, fonction affine."
+        }
+      ]
+    },
+    {
+      "id": "J006",
+      "domain": "J",
+      "domain_name": "Fonctions",
+      "label": "Fonction linéaire : définition, coefficient, lien avec la proportionnalité",
+      "description": "Savoir qu'une fonction linéaire est de la forme f(x) = ax, que a est son coefficient, et qu'elle modélise une situation de proportionnalité de coefficient a : le prix de x kg de pommes à 2,40 € le kilogramme, x ↦ 2,4x ; une hausse de 5 %, x ↦ 1,05x (coefficient multiplicateur, E016). Calculer une image (f(7,5) = 18 pour f(x) = 2,4x) et un antécédent (celui de 6 est 6 ÷ 2,4 = 2,5), retrouver a à partir d'un couple (f(4) = 10 donne a = 10/4 = 2,5) ; savoir que sa représentation est une droite qui passe par l'origine, et la reconnaître. L'erreur type est de prendre x ↦ x + 3 ou x ↦ 2x + 1 pour linéaire, ou de calculer a = 4/10. Réponse : un nombre (image, antécédent, coefficient, éventuellement une fraction) ; vrai/faux ou QCM (la fonction est-elle linéaire ? laquelle des droites la représente ?). Figure utile : repere, droites nommées passant ou non par l'origine (« affine »).",
+      "prerequisites": [
+        "J002",
+        "J004",
+        "E016",
+        "E023"
+      ],
+      "difficulty": 6,
+      "school_level": "3e",
+      "validation_test": "Une boisson coûte 1,80 € le litre. On note f la fonction qui, au volume x (en L), associe le prix (en €). Donne la formule de f. Calcule f(2,5). Quel volume achète-t-on pour 9 € ? La fonction g définie par g(x) = 3x + 1 est-elle linéaire ?",
+      "mastery_threshold": {
+        "required": 3,
+        "out_of": 4
+      },
+      "exercise_ids": [],
+      "mindmap_id": null,
+      "programme_ref": [
+        {
+          "source": "Cycle 4, classe de 3e, Proportionnalité, fonctions, Fonctions, Objectifs d'apprentissage",
+          "quote": "Définir et utiliser les fonctions linéaires."
+        },
+        {
+          "source": "Cycle 4, classe de 3e, Proportionnalité, fonctions, Fonctions, Objectifs d'apprentissage",
+          "quote": "Relier fonctions linéaires et proportionnalité."
+        },
+        {
+          "source": "Cycle 4, classe de 3e, Proportionnalité, fonctions, Proportionnalité, Objectifs d'apprentissage",
+          "quote": "Connaitre et utiliser les fonctions linéaires."
+        },
+        {
+          "source": "Cycle 4, Proportionnalité, fonctions, présentation commune aux trois classes",
+          "quote": "pourcentages, rapports et ratios, changements d'unité, changements d'échelle, fonctions linéaires etc."
+        }
+      ]
+    },
+    {
+      "id": "J008",
+      "domain": "J",
+      "domain_name": "Fonctions",
+      "label": "Fonction carré : représenter, lire, résoudre x² = a graphiquement",
+      "description": "Calculer des valeurs de la fonction carré x ↦ x², y compris pour des nombres négatifs ((−3)² = 9, (−1,5)² = 2,25), en faire un tableau de valeurs, et reconnaître sa représentation : une courbe, et non une droite, symétrique par rapport à l'axe des ordonnées, au-dessus de l'axe des abscisses, qui passe par l'origine ; lire des images et des antécédents (4 a deux antécédents, −2 et 2 ; 0 en a un ; −1 n'en a aucun) ; résoudre graphiquement x² = a et confronter au calcul (F068). L'erreur type est de relier les points du tableau par des segments, de ne donner qu'un antécédent, ou de lire (−3)² = −9. Tracer la courbe ne se fait pas à l'écran : l'élève choisit la courbe parmi d'autres (QCM), complète le tableau ou décide si un point est sur la courbe. Réponse : un nombre ; deux antécédents en liste (answer.forme « solutions » : « −2 ; 2 », « ±2 ») ; une solution irrationnelle (x² = 3) en QCM d'encadrement, ou lue avec answer.tolerance égale à la demi-graduation si l'énoncé le dit. Figure nécessaire : repere (existant), courbe « carre » nommée 𝒞, droite horizontale y = a (« affine », a = 0) pour la résolution graphique, avec intersection_libre quand les solutions ne tombent pas sur la demi-graduation.",
+      "prerequisites": [
+        "J004",
+        "F068"
+      ],
+      "difficulty": 7,
+      "school_level": "3e",
+      "validation_test": "On considère la fonction carré f : x ↦ x². Calcule f(−4) et f(0,5). Quels sont les antécédents de 9 par f ? Sur le graphique dessiné, combien de solutions a l'équation x² = 5 ? Sa solution positive est-elle comprise entre 2 et 3 ?",
+      "mastery_threshold": {
+        "required": 3,
+        "out_of": 4
+      },
+      "exercise_ids": [],
+      "mindmap_id": null,
+      "programme_ref": [
+        {
+          "source": "Cycle 4, classe de 3e, Proportionnalité, fonctions, Fonctions, Objectifs d'apprentissage",
+          "quote": "Représenter la fonction carré."
+        },
+        {
+          "source": "Cycle 4, classe de 3e, Nombres et calculs, Racine carrée, Objectifs d'apprentissage",
+          "quote": "Résoudre analytiquement et graphiquement des équations de la forme 𝑥2 = a."
+        }
+      ]
+    },
+    {
+      "id": "J036",
+      "domain": "J",
+      "domain_name": "Fonctions",
+      "label": "Une grandeur en fonction d'une autre : lire un tableau de valeurs",
+      "description": "Dire qu'une grandeur dépend d'une autre en employant l'expression « en fonction de » (la température en fonction de l'heure, le prix en fonction de la masse, le périmètre d'un carré en fonction de son côté), et lire un tableau de valeurs à deux lignes : trouver la valeur de la seconde grandeur pour une valeur de la première, et inversement ; repérer la plus grande et la plus petite valeur et le sens de variation (« quand la durée augmente, la distance augmente ») ; décider si la dépendance est une situation de proportionnalité ou non. Exemple : heures 8 ; 10 ; 12 ; 14 ; 16 et températures −1 ; 3 ; 7 ; 8 ; 5 (en °C) : il fait 7 °C à 12 h, le maximum est 8 °C à 14 h, la température monte puis descend, et elle n'est pas proportionnelle à l'heure (−1 °C à 8 h, mais pas −2 °C à 16 h). L'erreur type est de lire la mauvaise ligne (donner l'heure quand on demande la température) ou de croire qu'une grandeur qui augmente quand l'autre augmente lui est proportionnelle. Le tableau s'écrit en KaTeX, comme dans les exercices de E003. Réponse : un nombre avec unité, vrai/faux ou QCM. Figure : aucune.",
+      "prerequisites": [
+        "E030",
+        "A023"
+      ],
+      "difficulty": 5,
+      "school_level": "5e",
+      "validation_test": "Un tableau donne la température (en °C) en fonction de l'heure : 7 h : −2 ; 9 h : 1 ; 11 h : 5 ; 13 h : 8 ; 15 h : 6. Quelle température fait-il à 11 h ? À quelle heure fait-il le plus chaud ? La température est-elle proportionnelle à l'heure ?",
+      "mastery_threshold": {
+        "required": 3,
+        "out_of": 4
+      },
+      "exercise_ids": [],
+      "mindmap_id": null,
+      "programme_ref": [
+        {
+          "source": "Cycle 4, classe de 5e, Proportionnalité, fonctions, Fonctions, Objectifs d'apprentissage",
+          "quote": "Introduire l'expression : « en fonction de » dans des contextes concrets ou mathématiques."
+        },
+        {
+          "source": "Cycle 4, classe de 5e, Proportionnalité, fonctions, Fonctions, Objectifs d'apprentissage",
+          "quote": "Lire et interpréter un tableau de valeurs."
+        },
+        {
+          "source": "Cycle 4, Proportionnalité, fonctions, présentation commune aux trois classes",
+          "quote": "La notion de fonction apparait d'abord dans le cadre des grandeurs, avec des situations simples de proportionnalité ou de non proportionnalité."
+        },
+        {
+          "source": "Cycle 4, Proportionnalité, fonctions, présentation commune aux trois classes",
+          "quote": "Dès la cinquième, on emploie l'expression « en fonction de »."
+        }
+      ]
+    },
+    {
+      "id": "J037",
+      "domain": "J",
+      "domain_name": "Fonctions",
+      "label": "D'une formule à un tableau de valeurs",
+      "description": "Calculer, à partir d'une formule qui exprime une grandeur en fonction d'une autre, les valeurs qui remplissent un tableau de valeurs, puis produire ce tableau : prix d'une course P = 2 × d + 3 (P en euros, d en km) : 7 € pour 2 km, 13 € pour 5 km, 18 € pour 7,5 km ; aire d'un carré A = c × c : 6,25 cm² pour c = 2,5 cm ; distance parcourue en t heures à 80 km/h : d = 80 × t, soit 120 km pour 1,5 h. Compléter une case manquante dans l'autre sens par essais dans le tableau (P = 15 € pour d = 6 km). L'erreur type est de juxtaposer les chiffres (2d vaut 27 pour d = 7) ou d'oublier les priorités (2 × 5 + 3 calculé comme 2 × 8 = 16). Réponse : un nombre (case manquante, avec unité) ou QCM (le bon tableau). Figure : aucune.",
+      "prerequisites": [
+        "J036",
+        "F002"
+      ],
+      "difficulty": 5,
+      "school_level": "5e",
+      "validation_test": "Le prix d'une location de vélo est donné par la formule P = 4 × h + 2, où h est la durée en heures et P le prix en euros. Complète le tableau pour h = 1 ; 3 ; 4,5. Pour quelle durée paie-t-on 22 € ?",
+      "mastery_threshold": {
+        "required": 3,
+        "out_of": 4
+      },
+      "exercise_ids": [],
+      "mindmap_id": null,
+      "programme_ref": [
+        {
+          "source": "Cycle 4, classe de 5e, Proportionnalité, fonctions, Fonctions, Objectifs d'apprentissage",
+          "quote": "Traduire la relation de dépendance entre deux grandeurs par un tableau de valeurs à partir d'une formule."
+        },
+        {
+          "source": "Cycle 4, classe de 5e, Proportionnalité, fonctions, Fonctions, Objectifs d'apprentissage",
+          "quote": "Produire un tableau de valeurs."
+        }
+      ]
+    },
+    {
+      "id": "J038",
+      "domain": "J",
+      "domain_name": "Fonctions",
+      "label": "Produire une formule simple liant deux grandeurs",
+      "description": "Écrire la formule qui donne une grandeur en fonction d'une autre dans une situation simple, en désignant les grandeurs par des lettres : le périmètre d'un carré de côté c, P = 4 × c ; le prix de n cahiers à 1,80 € pièce, p = 1,80 × n ; le prix annuel avec une carte à 10 € puis 2,50 € par séance, p = 10 + 2,50 × n ; puis contrôler la formule sur une valeur connue (pour n = 4 : 10 + 2,50 × 4 = 20 €). Distinguer une formule de proportionnalité (p = 1,80 × n) d'une formule qui ne l'est pas (p = 10 + 2,50 × n). L'erreur type est d'écrire le calcul d'un seul cas (10 + 2,50 × 4) au lieu de la formule, ou d'oublier la part fixe. Prolonge F003 (formules de géométrie, motifs) vers des grandeurs. Réponse : QCM entre formules, ou une valeur calculée avec la formule (un nombre) ; la formule se tape aussi (answer.forme « expression », variables [« n »] ; « p = » devant est accepté). Figure : aucune.",
+      "prerequisites": [
+        "J037"
+      ],
+      "difficulty": 5,
+      "school_level": "5e",
+      "validation_test": "Un cinéma propose un abonnement de 15 € par an, puis 4 € par séance. Quelle formule donne le prix annuel p en fonction du nombre n de séances : p = 19 × n ; p = 15 + 4 × n ; p = 15 × 4 + n ? Combien paie-t-on pour 12 séances ?",
+      "mastery_threshold": {
+        "required": 3,
+        "out_of": 4
+      },
+      "exercise_ids": [],
+      "mindmap_id": null,
+      "programme_ref": [
+        {
+          "source": "Cycle 4, classe de 5e, Proportionnalité, fonctions, Fonctions, Objectifs d'apprentissage",
+          "quote": "Produire une formule simple représentant la dépendance de deux grandeurs."
+        }
+      ]
+    },
+    {
+      "id": "J039",
+      "domain": "J",
+      "domain_name": "Fonctions",
+      "label": "Placer dans un repère les points d'un tableau de valeurs",
+      "description": "Associer à chaque colonne d'un tableau de valeurs le point dont l'abscisse est la valeur de la première grandeur et l'ordonnée celle de la seconde, dans un repère orthogonal donné dont les axes portent le nom des grandeurs et des graduations de pas différents (une graduation pour 0,5 h en abscisse, pour 20 km en ordonnée) : la colonne (1,5 h ; 60 km) donne le point situé à 3 graduations à droite et à 3 graduations vers le haut. L'erreur type est d'inverser les axes, ou de compter une graduation pour une unité quand elle en vaut 20. Placer ne se fait pas à l'écran : l'élève choisit le point lettré qui représente une colonne, la colonne qui correspond à un point, ou le repère où les points sont bien placés (QCM). Réponse : QCM ou lettre du point. Figure nécessaire : repere (existant), titres d'axes (« durée (h) », « distance (km) »), pas différents sur les deux axes, points lettrés candidats.",
+      "prerequisites": [
+        "J036",
+        "A020"
+      ],
+      "difficulty": 5,
+      "school_level": "5e",
+      "validation_test": "Un tableau donne la hauteur d'une plante (en cm) en fonction du temps (en semaines) : 0 semaine : 2 cm ; 2 semaines : 5 cm ; 4 semaines : 9 cm. Dans le repère dessiné, une graduation vaut 1 semaine en abscisse et 1 cm en ordonnée. Lequel des points A, B ou C représente la colonne « 4 semaines » ?",
+      "mastery_threshold": {
+        "required": 3,
+        "out_of": 4
+      },
+      "exercise_ids": [],
+      "mindmap_id": null,
+      "programme_ref": [
+        {
+          "source": "Cycle 4, classe de 5e, Proportionnalité, fonctions, Fonctions, Objectifs d'apprentissage",
+          "quote": "Placer dans un repère orthogonal donné des points correspondant à un tableau de valeurs."
+        }
+      ]
+    },
+    {
+      "id": "J040",
+      "domain": "J",
+      "domain_name": "Fonctions",
+      "label": "Lire et interpréter un graphique cartésien : courbe ou nuage de points",
+      "description": "Lire sur un graphique cartésien (une courbe ou un nuage de points) la valeur d'une grandeur pour une valeur de l'autre, dans les deux sens, en tenant compte du pas de chaque axe (une graduation pour 0,5 h, pour 20 km), et interpréter : à quel moment la grandeur est la plus grande, sur quelle période elle ne change pas (un palier : le cycliste s'arrête), quand elle augmente ou diminue ; sur un nuage, comparer deux points ou repérer une valeur isolée. Exemple : un trajet de 0 h à 4 h avec un palier à 60 km de 1 h à 1,5 h, soit un arrêt de 0,5 h = 30 min, et 120 km atteints à 3 h. L'erreur type est de compter une graduation pour une unité, d'inverser abscisse et ordonnée, ou de prendre la courbe pour un dessin du trajet (un palier n'est pas une route plate). Les valeurs demandées tombent sur la demi-graduation : la réponse est exacte, sans tolérance. Réponse : un nombre avec unité, vrai/faux ou QCM. Figure nécessaire : repere (existant), ligne brisée (« ligne », sommets marqués ou non) ou nuage de points, titres d'axes, pas différents ; pointillés de lecture en découverte et au corrigé seulement.",
+      "prerequisites": [
+        "J039",
+        "P027"
+      ],
+      "difficulty": 5,
+      "school_level": "5e",
+      "validation_test": "Le graphique dessiné donne la distance parcourue par un randonneur (en km) en fonction de la durée de marche (en h). Quelle distance a-t-il parcourue au bout de 2 h ? Au bout de combien de temps a-t-il parcouru 9 km ? S'est-il arrêté, et pendant combien de temps ?",
+      "mastery_threshold": {
+        "required": 3,
+        "out_of": 4
+      },
+      "exercise_ids": [],
+      "mindmap_id": null,
+      "programme_ref": [
+        {
+          "source": "Cycle 4, classe de 5e, Proportionnalité, fonctions, Fonctions, Objectifs d'apprentissage",
+          "quote": "Lire et interpréter un graphique cartésien donné par une courbe ou un nuage de points."
+        }
+      ]
+    },
+    {
+      "id": "J041",
+      "domain": "J",
+      "domain_name": "Fonctions",
+      "label": "Formule littérale d'une grandeur en fonction d'une autre",
+      "description": "Produire une formule littérale qui exprime une grandeur en fonction d'une autre dans une situation à plusieurs étapes, la réduire si besoin, et s'en servir : l'aire restante d'un carré de 10 cm de côté dont on retire un carré de côté x, A = 100 − x² ; le prix d'un forfait à 12 € avec 0,15 € par minute au-delà de 120 min, p = 12 + 0,15 × (t − 120), soit 15 € pour t = 140 ; le périmètre d'un rectangle de largeur x et de longueur x + 3, P = 2 × (x + x + 3) = 4x + 6. Comprendre la dépendance : quand x augmente, A diminue ; dire quelles valeurs la variable peut prendre (x entre 0 et 10). Un programme de calcul appliqué à une lettre donne de même une formule (F064). L'erreur type est d'oublier les parenthèses (0,15 × t − 120) ou de mélanger les unités (heures et minutes). Réponse : la formule se tape (answer.forme « expression », variables déclarées ; « A = » devant est accepté) ou se choisit (QCM) ; ou une valeur calculée (un nombre avec unité). Figure utile : geometrie (carré évidé, côtés marqués x et 10 cm).",
+      "prerequisites": [
+        "J038",
+        "F064"
+      ],
+      "difficulty": 5,
+      "school_level": "4e",
+      "validation_test": "Un jardin rectangulaire mesure 20 m sur 12 m. On y creuse un bassin carré de côté x mètres. Écris l'aire A du gazon restant en fonction de x. Calcule A pour x = 3.",
+      "mastery_threshold": {
+        "required": 3,
+        "out_of": 4
+      },
+      "exercise_ids": [],
+      "mindmap_id": null,
+      "programme_ref": [
+        {
+          "source": "Cycle 4, classe de 4e, Proportionnalité, fonctions, Fonctions, Objectifs d'apprentissage",
+          "quote": "Produire une formule littérale représentant la dépendance d'une grandeur en fonction d'une autre."
+        },
+        {
+          "source": "Cycle 4, classe de 4e, Proportionnalité, fonctions, Fonctions, Objectifs d'apprentissage",
+          "quote": "Comprendre la dépendance d'une grandeur en fonction d'une autre."
+        },
+        {
+          "source": "Cycle 4, Proportionnalité, fonctions, présentation commune aux trois classes",
+          "quote": "En quatrième, on donne des exemples où on utilise une formule, un graphique ou un tableau de valeurs pour traduire la dépendance d'une grandeur en fonction d'une autre."
+        }
+      ]
+    },
+    {
+      "id": "J042",
+      "domain": "J",
+      "domain_name": "Fonctions",
+      "label": "Représenter graphiquement une grandeur en fonction d'une autre",
+      "description": "Passer d'une formule ou d'un tableau de valeurs au graphique : calculer un tableau de valeurs, placer les points, les relier quand la grandeur varie de façon continue (une durée, une longueur) et pas quand elle ne prend que des valeurs entières (un nombre de places : nuage de points) ; reconnaître la représentation d'une formule parmi plusieurs (A = 100 − x² décroît de 100 à 0 pour x entre 0 et 10, en courbe et non en droite ; p = 2,5 × n donne des points alignés avec l'origine) ; décider par le calcul si un point est sur la représentation (le point (4 ; 84) est sur celle de A = 100 − x², car 100 − 16 = 84). L'erreur type est de relier des points par des segments quand la formule n'est pas du premier degré, ou de joindre les points d'une grandeur qui ne prend que des valeurs entières. Tracer ne se fait pas à l'écran : l'élève choisit le graphique (QCM entre courbes nommées), la valeur d'une case du tableau, ou si un point appartient à la courbe. Réponse : QCM, vrai/faux ou nombre. Figure nécessaire : repere (existant), jusqu'à trois courbes nommées (« affine », « carre », « ligne »), titres d'axes.",
+      "prerequisites": [
+        "J041",
+        "J040"
+      ],
+      "difficulty": 6,
+      "school_level": "4e",
+      "validation_test": "Le volume d'eau (en L) d'une cuve qui se vide est donné par V = 50 − 4 × t, où t est la durée en minutes. Complète le tableau pour t = 0 ; 5 ; 10. Parmi les trois graphiques dessinés, lequel représente V en fonction de t ? Le point (7 ; 22) est-il sur cette représentation ?",
+      "mastery_threshold": {
+        "required": 3,
+        "out_of": 4
+      },
+      "exercise_ids": [],
+      "mindmap_id": null,
+      "programme_ref": [
+        {
+          "source": "Cycle 4, classe de 4e, Proportionnalité, fonctions, Fonctions, Objectifs d'apprentissage",
+          "quote": "Représenter l'expression d'une grandeur en fonction d'une autre par un graphique."
+        }
+      ]
+    },
+    {
+      "id": "J043",
+      "domain": "J",
+      "domain_name": "Fonctions",
+      "label": "Droite d'une fonction affine : lire les coefficients a et b",
+      "description": "Savoir que la représentation d'une fonction affine x ↦ ax + b est une droite, qui coupe l'axe des ordonnées au point (0 ; b) (b est l'ordonnée à l'origine) et qui monte de a quand x augmente de 1 (a est le coefficient directeur) ; lire graphiquement b, puis a (de (0 ; −1) à (1 ; 1) : a = 2 ; de (0 ; 5) à (2 ; 3) : a = (3 − 5) ÷ 2 = −1) ; associer droites et formules (deux droites de même coefficient a sont parallèles ; a négatif : la droite descend) ; savoir que deux points suffisent à la tracer. L'erreur type est de lire b là où la droite coupe l'axe des abscisses, de compter des carreaux quand les deux axes n'ont pas le même pas, ou d'oublier le signe de a. Le tracé se remplace par le choix de la droite nommée qui représente une fonction. Réponse : un nombre (a, b), QCM. Figure nécessaire : repere (existant), une à trois droites nommées (« affine »), chacune passant par au moins deux nœuds du quadrillage.",
+      "prerequisites": [
+        "J005"
+      ],
+      "difficulty": 6,
+      "school_level": "3e",
+      "validation_test": "Sur le graphique dessiné, la droite d représente une fonction affine f. Lis son ordonnée à l'origine b, puis son coefficient a. Laquelle des droites d1, d2 ou d3 représente la fonction x ↦ −x + 2 ?",
+      "mastery_threshold": {
+        "required": 3,
+        "out_of": 4
+      },
+      "exercise_ids": [],
+      "mindmap_id": null,
+      "programme_ref": [
+        {
+          "source": "Cycle 4, classe de 3e, Proportionnalité, fonctions, Fonctions, Objectifs d'apprentissage",
+          "quote": "Déterminer graphiquement les coefficients d'une fonction affine."
+        },
+        {
+          "source": "Cycle 4, programme de 2020 commun aux trois classes, Thème B, Organisation et gestion de données, fonctions",
+          "quote": "l'allure de la représentation graphique d'une fonction affine ou linéaire"
+        }
+      ]
+    },
+    {
+      "id": "J044",
+      "domain": "J",
+      "domain_name": "Fonctions",
+      "label": "Résoudre graphiquement une équation ou une inéquation linéaire",
+      "description": "Résoudre graphiquement f(x) = k, f(x) = g(x), f(x) ⩾ k ou f(x) < g(x) quand f et g sont affines : les solutions de f(x) = g(x) sont les abscisses des points d'intersection des deux droites ; celles de f(x) ⩾ g(x), les abscisses des points où la droite de f est au-dessus de celle de g ou la coupe. Exemple : f(x) = 2x − 1 et g(x) = −x + 5 se coupent au point (2 ; 3) ; f(x) = g(x) a pour solution 2 ; f(x) ⩾ g(x) a pour solutions les nombres x ⩾ 2. Confirmer par le calcul (2x − 1 = −x + 5 donne 3x = 6 et x = 2 ; F031 pour l'inéquation). L'erreur type est de donner l'ordonnée du point d'intersection (3) au lieu de son abscisse, ou de se tromper de sens (x ⩽ 2). Les valeurs demandées tombent sur la demi-graduation. Réponse : un nombre (solution d'une équation) ; l'inéquation se tape sous la forme « x ⩾ 2 » (answer.forme « inegalite » : « x >= 2 » et « 2 ⩽ x » sont acceptés) ou se choisit (QCM). Figure nécessaire : repere (existant), deux droites nommées (« affine »), intersection sur la demi-graduation (le générateur le vérifie).",
+      "prerequisites": [
+        "J043",
+        "F031",
+        "F025"
+      ],
+      "difficulty": 7,
+      "school_level": "3e",
+      "validation_test": "Sur le graphique dessiné, les droites d et e représentent les fonctions affines f et g. Résous graphiquement f(x) = g(x), puis f(x) < g(x). Résous graphiquement f(x) = 1.",
+      "mastery_threshold": {
+        "required": 3,
+        "out_of": 4
+      },
+      "exercise_ids": [],
+      "mindmap_id": null,
+      "programme_ref": [
+        {
+          "source": "Cycle 4, classe de 3e, Proportionnalité, fonctions, Fonctions, Objectifs d'apprentissage",
+          "quote": "Résoudre graphiquement des équations et des inéquations linéaires."
+        },
+        {
+          "source": "Cycle 4, classe de 3e, Nombres et calculs, Calcul littéral et algébrique, Objectifs d'apprentissage",
+          "quote": "Résoudre analytiquement et graphiquement une inéquation du premier degré du type a𝑥 ⩾ b."
+        }
+      ]
+    },
+    {
+      "id": "J045",
+      "domain": "J",
+      "domain_name": "Fonctions",
+      "label": "Graphique de proportionnalité et théorème de Thalès",
+      "description": "Expliquer, avec le théorème de Thalès, pourquoi les points d'une situation de proportionnalité sont alignés avec l'origine, et s'en servir : si M(4 ; 6) et N(10 ; 15) sont sur une droite qui passe par l'origine O, avec H(4 ; 0) et K(10 ; 0), les droites (HM) et (KN) sont parallèles (toutes deux perpendiculaires à l'axe des abscisses), donc OH/OK = HM/KN : 4/10 = 6/15 ; d'où HM/OH = KN/OK, c'est le coefficient de proportionnalité 6/4 = 15/10 = 1,5 ; calculer une coordonnée manquante (le point d'abscisse 7 de la droite a pour ordonnée 7 × 1,5 = 10,5). Réciproquement, des quotients y/x différents montrent que les points ne sont pas alignés avec l'origine. L'erreur type est d'apparier l'abscisse d'un point avec l'ordonnée d'un autre, ou de croire que des points alignés sur une droite qui ne passe pas par l'origine traduisent une proportionnalité. Réponse : QCM ou vrai/faux (justification choisie), un nombre (coordonnée manquante, quotient). Figure nécessaire : repere, droite par l'origine, points nommés M, N, H, K ; segments [HM] et [KN] en trait plein (à créer, section Figures).",
+      "prerequisites": [
+        "J006",
+        "G042"
+      ],
+      "difficulty": 7,
+      "school_level": "3e",
+      "validation_test": "Dans un repère d'origine O, les points A(3 ; 4,5) et B(8 ; 12) sont alignés avec O. On note H(3 ; 0) et K(8 ; 0). Pourquoi les droites (AH) et (BK) sont-elles parallèles ? Calcule HA/KB et compare-le à OH/OK. Quelle est l'ordonnée du point de la droite (OA) d'abscisse 5 ?",
+      "mastery_threshold": {
+        "required": 3,
+        "out_of": 4
+      },
+      "exercise_ids": [],
+      "mindmap_id": null,
+      "programme_ref": [
+        {
+          "source": "Cycle 4, classe de 3e, Proportionnalité, fonctions, Proportionnalité, Objectifs d'apprentissage",
+          "quote": "Relier la représentation graphique d'une situation de proportionnalité avec le théorème de Thalès."
         }
       ]
     },
@@ -10365,8 +11125,8 @@
       "description": "Calculer et utiliser une grandeur quotient, rapport de deux grandeurs de natures différentes, avec son unité composée : vitesse moyenne (distance ÷ durée, en km/h), débit (volume ÷ durée, en L/min : 180 L en 12 min, 15 L/min), masse volumique (masse ÷ volume, en g/cm³ : 54 g pour 20 cm³, 2,7 g/cm³), consommation (L/100 km), prix au kilogramme, densité de population (habitants par km²) ; retrouver l'une des trois grandeurs connaissant les deux autres (à 15 L/min, 300 L s'écoulent en 20 min) ; un quotient de deux grandeurs de même nature est sans unité. L'erreur type est de diviser dans le mauvais sens (durée ÷ distance) ou d'écrire une unité qui ne correspond pas au calcul. La vitesse moyenne en heures entières est déjà en 5e (E007) ; les changements d'unités composées sont dans P037. Réponse : un nombre avec son unité (15 L/min, 2,7 g/cm³ sont acceptés tels quels ; « litres par minute » ne l'est pas encore). Figure : aucune.",
       "prerequisites": [
         "E007",
-        "D026",
-        "P031"
+        "P031",
+        "E005"
       ],
       "difficulty": 6,
       "school_level": "4e",

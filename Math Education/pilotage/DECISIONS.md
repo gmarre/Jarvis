@@ -105,5 +105,21 @@
   2. Modèles de consignes des étapes 5 et 6 archivés ; ceux de l'étape 4b restent, pour les règles de figures.
   3. Pas de migration pour J, K, L : `[A-P]` les couvre déjà (base, schémas, `corriger`).
 - 23/10/2026 : étape 9, délégation reconduite pour tous les arbitrages (Gauthier).
+- 23/10/2026, étape 9, arbitrages du cartographe (`_travail/etape9_dag_EJ.md`, §12). CP :
+  1. Domaine J « Fonctions » créé ; J045 (graphique de proportionnalité et Thalès) y est rangé.
+  2. Numérotation du v1 gardée (E001, E002, E005, E013, E016 ; J001, J002, J004, J005, J006, J008), nouveaux E038 à E040 et J036 à J045 ; pas de renumérotation.
+  3. Liens E023 ← J039, P036 ← E005, G042 ← E005 adoptés, avec les six retraits d'arêtes redondantes (E023 ← A020, P036 ← D026, G042 ← E034, G042 ← F023, G043 ← C007, G043 ← C010).
+  4. « Produit en croix » toujours refusé ; E005 enseigne l'égalité des rapports.
+  5. Ratio a : b permis dans les énoncés à partir de E001, jamais attendu au clavier ; seul le mot « ratio » est contrôlé.
+  6. f(x) et x ↦ f(x) réservés à J001 et à ses descendants ; la flèche → reste libre.
+  7. Échelle de 5e en nœud distinct (E038), ajoutée à la carte MM-E-04.
+  8. Évaluations partielles : J039, J042, J008 (tracer ne se saisit pas).
+  9. Lectures graphiques sans tolérance (valeurs sur la demi-graduation) ; une valeur irrationnelle (x² = 3) en QCM d'encadrement.
+  10. La correction acceptera « f(x) = … » et « x ↦ … » avant la rédaction (sprint A2a).
+  11. Segments libres dans le repère codés avant la rédaction de J045 (sprint A2a).
+  12. Évolutions successives en maîtrise de E013 ; taux réciproque et intérêts simples non retenus.
+  13. L'étape 10 crée les nœuds de lecture de tableaux et de courbes du cycle 3 et les raccorde à J036 et J040.
+  14. Cartes courtes MM-J-02 (2 compétences) et MM-E-06 (3) acceptées.
+  15. Vocabulaire de l'étape ajouté au validateur avant la rédaction.
 
 Le détail des sprints 1 à 6 (ce qui a été codé, quand, et pourquoi) est dans `archive/CLAUDE_avant_decoupage_2026-10-23.md`, §6.

@@ -1358,8 +1358,7 @@
     "description": "Dans un triangle ABC, avec M sur [AB], N sur [AC] et (MN) parallèle à (BC), savoir que AM/AB = AN/AC = MN/BC (les longueurs du petit triangle sont proportionnelles à celles du grand) et s'en servir pour calculer une longueur par l'égalité de deux quotients : AM = 3 cm, AB = 5 cm, AC = 7,5 cm donnent AN = 3 × 7,5 ÷ 5 = 4,5 cm ; MN = 2,4 cm donne BC = 2,4 × 5 ÷ 3 = 4 cm. Vérifier d'abord les hypothèses (alignements, parallélisme) ; la droite des milieux en est le cas particulier où le quotient vaut 1/2. L'erreur type est d'apparier des côtés non homologues (AM/MB au lieu de AM/AB), ou d'écrire le petit triangle au dénominateur d'un quotient et au numérateur de l'autre. Réponse : un nombre avec unité (answer.tolerance si un arrondi est demandé) ; QCM pour l'égalité des quotients. Figure nécessaire : geometrie (existant), triangle et parallèle à un côté, longueurs écrites, longueur cherchée marquée « ? », pas en vraie grandeur.",
     "prerequisites": [
       "G059",
-      "F023",
-      "E034"
+      "E005"
     ],
     "difficulty": 6,
     "school_level": "3e",
@@ -1396,9 +1395,7 @@
     "description": "Décider si deux droites sont parallèles dans une configuration de Thalès (emboîtée ou papillon) : vérifier que les points sont alignés dans le même ordre, calculer séparément les deux quotients AM/AB et AN/AC ; s'ils sont égaux, les droites (MN) et (BC) sont parallèles (réciproque) ; sinon, elles ne le sont pas (contraposée). Comparer des quotients en valeur exacte (simplification, même dénominateur) plutôt qu'en valeurs arrondies : 3/9 = 1/3 et 4/12 = 1/3, parallèles ; 5/8 = 0,625 et 6/10 = 0,6, non parallèles. Nommer le théorème utilisé. L'erreur type est de conclure sur des quotients arrondis égaux, d'oublier l'ordre des points, ou de calculer un troisième quotient avec MN et BC, qui ne sert pas à prouver. Réponse : vrai/faux ou QCM (parallèles ou non, théorème) ; nombre ou fraction pour chaque quotient. Figure nécessaire : geometrie (existant), deux droites sécantes et deux droites candidates au parallélisme, longueurs écrites ; droites presque parallèles autorisées quand les quotients disent le contraire.",
     "prerequisites": [
       "G062",
-      "G060",
-      "C010",
-      "C007"
+      "G060"
     ],
     "difficulty": 7,
     "school_level": "3e",

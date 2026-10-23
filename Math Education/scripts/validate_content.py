@@ -568,6 +568,26 @@ NOTATIONS = {
     "G063": (re.compile(r"\b(?:cos|sin|tan)\b|\\(?:cos|sin|tan)(?![a-zA-Z])"), "cos, sin, tan"),
     "G066": (re.compile(r"\\overrightarrow|\\vec(?![a-zA-Z])"), "la notation vecteur"),
     "G022": (re.compile(chr(176) + r"(?!\s?C\b)|\^\{?\\circ(?!\}?\s*(?:\\text\{\s*)?C\b)"), "le symbole du degre"),
+    # Etape 9 (proportionnalite du cycle 4, fonctions). Le programme reserve
+    # ces mots a la 4e (« ratio », « quatrieme proportionnelle », « coefficient
+    # multiplicateur ») et a la 3e (« Definir et connaitre le vocabulaire :
+    # image, antecedents », fonctions lineaires, affines, carre). « Image »
+    # seul reste aux transformations (G038) : seule l'image d'un nombre ou
+    # « par f » compte. La fleche → reste libre (programmes de calcul).
+    # Une seule entree par competence : J001 regroupe ses notations.
+    "E001": (re.compile(r"\bratios?\b", re.I), "le mot « ratio »"),
+    "E005": (re.compile(r"quatrièmes?\s+proportionnelles?", re.I), "« quatrième proportionnelle »"),
+    "E016": (re.compile(r"coefficients?\s+multiplicateurs?", re.I), "« coefficient multiplicateur »"),
+    "J001": (re.compile(r"(?<!en )\bfonctions?\b(?! d[eu'’])|antécédents?"
+                        r"|\bimages?\s+(?:de|du)\s+\$?[−-]?\d|\bimages?\s+par\s+(?:la fonction|\$?[fgh]\b)"
+                        r"|(?<![A-Za-z\\])[fgh]\((?:[a-z]|[−-]?\d)|↦|\\mapsto", re.I),
+             "le vocabulaire des fonctions (fonction f, image, antécédent, f(x), ↦)"),
+    "J004": (re.compile(r"𝒞|\\mathcal\{C\}"), "la notation 𝒞f d'une courbe"),
+    "J006": (re.compile(r"fonctions?\s+linéaires?", re.I), "« fonction linéaire »"),
+    "J005": (re.compile(r"fonctions?\s+affines?", re.I), "« fonction affine »"),
+    "J008": (re.compile(r"fonction\s+carré", re.I), "« fonction carré »"),
+    "J043": (re.compile(r"ordonnée\s+à\s+l.origine|coefficient\s+directeur", re.I),
+             "« ordonnée à l'origine », « coefficient directeur »"),
 }
 
 
@@ -586,6 +606,10 @@ VOCABULAIRE_PROPORTIONNALITE = [
     (re.compile(r"produits?\s+en\s+croix", re.I), "« produit en croix »", None),
     (re.compile(r"coefficient", re.I), "« coefficient »", "5e"),
     (re.compile(r"tableaux?\s+de\s+proportionnalit", re.I), "« tableau de proportionnalité »", "6e"),
+    # Etape 9 : « Des la cinquieme, on emploie l'expression "en fonction de" » ;
+    # « Produire un tableau de valeurs » (5e).
+    (re.compile(r"en\s+fonction\s+d", re.I), "« en fonction de »", "5e"),
+    (re.compile(r"tableaux?\s+de\s+valeurs", re.I), "« tableau de valeurs »", "5e"),
     # Grandeurs et mesures (etape 4a) : « Il n'est pas attendu de memorisation
     # de formules de perimetres ou d'aires de figures planes au CM1 » ; les
     # formules « s'installent progressivement » en 6e. Le tableau de conversion

@@ -17,6 +17,7 @@ Chaque étape suit le circuit du skill `etape-contenu`. Le DAG v1 (`skills_dag.j
 ### A3. Étape 10 : statistiques et probabilités (domaines K et L)
 
 - Contenu : moyenne, médiane, étendue, diagrammes ; probabilités.
+- Créer aussi les nœuds de lecture de tableaux et de courbes du cycle 3 (CM1, CM2), et les donner pour prérequis à J036 et J040 (arbitrage 13 de l'étape 9).
 - Avant la rédaction (aucune migration, `[A-P]` couvre K et L) : générateurs de **diagrammes en barres et circulaires**, et d'**arbres**.
 
 ### A4. Étape 11 : super exercices de fin de cycle et cartes défi transverses
