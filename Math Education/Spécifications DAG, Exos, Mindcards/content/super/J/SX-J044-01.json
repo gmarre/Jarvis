@@ -1,0 +1,121 @@
+{
+  "id": "SX-J044-01",
+  "skill_id": "J044",
+  "skill_ids": [
+    "J044",
+    "J004",
+    "J005",
+    "E016"
+  ],
+  "school_level": "3e",
+  "title": "Deux tarifs pour la piscine",
+  "contexte": "La piscine municipale, ouverte 7 jours sur 7, a un bassin de 50 m. Elle propose deux tarifs :\n\ntarif A, 5,50 € l'entrée ;\n\ntarif B, une carte annuelle à 30 €, puis 2,50 € l'entrée.\n\nOn note $f$ la fonction qui, au nombre $x$ d'entrées dans l'année, associe le prix payé en euros avec le tarif A, et $g$ celle qui donne le prix payé avec le tarif B. Sur le graphique, la droite d représente $f$, et la droite e représente $g$.\n\nZoé hésite entre les deux tarifs.",
+  "image": "figures/SX-J044-01",
+  "duree_estimee_min": 15,
+  "questions": [
+    {
+      "key": "q1",
+      "skill_id": "J004",
+      "statement": "Lis sur le graphique le prix payé avec le tarif A pour 5 entrées dans l'année.",
+      "type": "numerique",
+      "answer": {
+        "value": 27.5,
+        "unit": "€",
+        "accepted": [
+          "f(5) = 27,5",
+          "f(5)=27,5",
+          "f(5) = 27,50",
+          "f(5) = 27,5 €",
+          "27 € 50",
+          "27€50",
+          "27 euros 50"
+        ]
+      },
+      "points": 1,
+      "solution_steps": [
+        "On part de 5 sur l'axe des abscisses et on monte jusqu'à la droite d, qui représente le tarif A.",
+        "Le point atteint est à mi-hauteur entre 25 et 30 : son ordonnée est 27,5, car une graduation vaut 5 € sur l'axe des ordonnées.",
+        "f(5) = **27,5** : 5 entrées coûtent 27,50 € avec le tarif A. Contrôle : 5,5 × 5 = 27,5."
+      ],
+      "hint": "Quelle droite représente le tarif A ? Combien vaut une graduation sur l'axe des ordonnées ?"
+    },
+    {
+      "key": "q2",
+      "skill_id": "J005",
+      "statement": "Calcule $g(26)$, le prix payé avec le tarif B pour 26 entrées dans l'année.",
+      "type": "numerique",
+      "answer": {
+        "value": 95,
+        "unit": "€",
+        "accepted": [
+          "g(26) = 95",
+          "g(26)=95",
+          "g(26) = 95 €"
+        ]
+      },
+      "points": 2,
+      "solution_steps": [
+        "Avec le tarif B, g(x) = 2,5x + 30.",
+        "g(26) = 2,5 × 26 + 30 = 65 + 30 = 95.",
+        "Pour 26 entrées, le tarif B coûte **95 €**."
+      ],
+      "hint": "Écris d'abord la formule de g avec les données du tarif B."
+    },
+    {
+      "key": "q3",
+      "skill_id": "E016",
+      "statement": "L'an prochain, le prix d'une entrée au tarif A augmentera de 4 %. Quel sera ce prix ?",
+      "type": "numerique",
+      "answer": {
+        "value": 5.72,
+        "unit": "€"
+      },
+      "points": 2,
+      "solution_steps": [
+        "Augmenter de 4 %, c'est multiplier par 1 + 0,04 = 1,04 : c'est le coefficient multiplicateur.",
+        "5,5 × 1,04 = 5,72.",
+        "L'entrée coûtera **5,72 €**."
+      ],
+      "hint": "Par quel nombre décimal multiplie-t-on un prix pour l'augmenter de 4 % ?"
+    },
+    {
+      "key": "q4",
+      "skill_id": "J044",
+      "statement": "Résous graphiquement l'équation $g(x) = 60$.",
+      "type": "numerique",
+      "answer": {
+        "value": 12,
+        "accepted": [
+          "x = 12",
+          "x=12"
+        ]
+      },
+      "points": 2,
+      "solution_steps": [
+        "Les solutions de g(x) = 60 sont les abscisses des points de la droite e, qui représente g, situés à la hauteur 60.",
+        "On part de 60 sur l'axe des ordonnées et on va jusqu'à la droite e : le point atteint a pour coordonnées (12 ; 60).",
+        "La solution est **12** : avec le tarif B, 12 entrées coûtent 60 €. Contrôle : 2,5 × 12 + 30 = 30 + 30 = 60."
+      ],
+      "hint": "Quelle droite représente g, et sur quel axe se trouve le nombre 60 ?"
+    },
+    {
+      "key": "q5",
+      "skill_id": "J044",
+      "statement": "Résous graphiquement l'inéquation $f(x) \\geqslant g(x)$. Écris les solutions sous la forme d'une inégalité portant sur $x$.",
+      "type": "texte",
+      "answer": {
+        "value": "x ⩾ 10",
+        "forme": "inegalite"
+      },
+      "points": 3,
+      "solution_steps": [
+        "On cherche les abscisses des points où la droite d est au-dessus de la droite e, ou la coupe (inégalité large $\\geqslant$).",
+        "d et e se coupent au point d'abscisse 10 ; à droite de ce point, d est au-dessus de e, et à gauche, d est en dessous.",
+        "Les solutions sont les nombres $x \\geqslant 10$ : **x ⩾ 10**. À partir de 10 entrées, le tarif A coûte au moins autant que le tarif B."
+      ],
+      "hint": "Repère d'abord le point commun aux deux droites, puis regarde de quel côté d est au-dessus de e."
+    }
+  ],
+  "review_status": "relu_agent",
+  "programme_ref": "Cycle 4, classe de 3e, Proportionnalité, fonctions, Fonctions, Objectifs d'apprentissage : « Résoudre graphiquement des équations et des inéquations linéaires. »"
+}

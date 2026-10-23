@@ -1,0 +1,106 @@
+{
+  "id": "SX-J004-01",
+  "skill_id": "J004",
+  "skill_ids": [
+    "J004",
+    "J040",
+    "P027"
+  ],
+  "school_level": "3e",
+  "title": "La marée au port",
+  "contexte": "Yann est pêcheur. Son chalutier mesure 22 m de long, et son port de pêche abrite 45 bateaux. Dans le port, la hauteur d'eau monte et descend avec la marée.\n\nOn note $f$ la fonction qui, à la durée $x$ écoulée depuis minuit (en heures), associe la hauteur d'eau $f(x)$ dans le port (en mètres). Le graphique représente $f$ par la courbe 𝒞f, de minuit à 13 h : $f$ est définie seulement pour les nombres $x$ compris entre 0 et 13, ces deux nombres compris.",
+  "image": "figures/SX-J004-01",
+  "duree_estimee_min": 12,
+  "questions": [
+    {
+      "key": "q1",
+      "skill_id": "J040",
+      "statement": "Quelle est la hauteur d'eau la plus basse dans le port entre minuit et 13 h ?",
+      "type": "numerique",
+      "answer": {
+        "value": 1.5,
+        "unit": "m"
+      },
+      "points": 1,
+      "solution_steps": [
+        "On cherche le point le plus bas de 𝒞f : il a pour ordonnée 1,5.",
+        "La hauteur d'eau la plus basse est **1,5 m**."
+      ],
+      "hint": "Cherche le point le plus bas de la courbe, puis lis son ordonnée."
+    },
+    {
+      "key": "q2",
+      "skill_id": "P027",
+      "statement": "La mer est au plus bas une seule fois entre minuit et 13 h. Combien de minutes après minuit ?",
+      "type": "numerique",
+      "answer": {
+        "value": 570,
+        "unit": "min"
+      },
+      "points": 2,
+      "solution_steps": [
+        "Le point le plus bas de 𝒞f a pour abscisse 9,5 : la mer est au plus bas 9,5 h après minuit.",
+        "9,5 h = 9 h + 0,5 h = 9 h 30 min, car une demi-heure dure 30 minutes.",
+        "9 × 60 + 30 = 540 + 30 = 570 : **570 minutes** après minuit, à 9 h 30."
+      ],
+      "hint": "Lis l'abscisse du point le plus bas, puis convertis cette durée en minutes."
+    },
+    {
+      "key": "q3",
+      "skill_id": "J004",
+      "statement": "Vrai ou faux : 2,5 est l'image de 5,5 par $f$.",
+      "type": "vrai_faux",
+      "answer": {
+        "value": false
+      },
+      "points": 2,
+      "solution_steps": [
+        "Le point de 𝒞f d'abscisse 2,5 a pour ordonnée 5,5 : f(2,5) = 5,5. Donc 5,5 est l'image de 2,5, et 2,5 est un antécédent de 5,5.",
+        "L'image de 5,5 se lit en partant de 5,5 sur l'axe des abscisses : le point de 𝒞f atteint est entre les hauteurs 3,5 et 5,5, donc plus haut que 2,5.",
+        "L'affirmation est **fausse** : elle confond l'image et l'antécédent."
+      ],
+      "hint": "Pour lire l'image d'un nombre, de quel axe part-on ?"
+    },
+    {
+      "key": "q4",
+      "skill_id": "J004",
+      "statement": "Lis sur le graphique l'image de 3,5 par $f$.",
+      "type": "numerique",
+      "answer": {
+        "value": 6.5,
+        "unit": "m",
+        "accepted": [
+          "f(3,5) = 6,5",
+          "f(3,5)=6,5",
+          "f(3,5) = 6,5 m"
+        ]
+      },
+      "points": 2,
+      "solution_steps": [
+        "On part de 3,5 sur l'axe des abscisses, à mi-chemin entre 3 et 4, et on monte jusqu'à 𝒞f.",
+        "Le point atteint est le plus haut de la courbe ; il a pour ordonnée 6,5, car une graduation vaut 0,5 m sur l'axe des ordonnées.",
+        "f(3,5) = **6,5** : à 3 h 30, il y a 6,5 m d'eau dans le port."
+      ],
+      "hint": "Sur chaque axe, combien vaut une graduation ?"
+    },
+    {
+      "key": "q5",
+      "skill_id": "J004",
+      "statement": "Donne tous les antécédents de 3,5 par $f$, séparés par un point-virgule.",
+      "type": "texte",
+      "answer": {
+        "value": "1 ; 7 ; 13",
+        "forme": "solutions"
+      },
+      "points": 3,
+      "solution_steps": [
+        "On part de 3,5 sur l'axe des ordonnées et on suit l'horizontale à cette hauteur sur toute la courbe, de x = 0 à x = 13.",
+        "Elle rencontre 𝒞f en trois points, d'abscisses 1, 7 et 13 : l'extrémité droite de la courbe compte, car $f$ est définie pour 13.",
+        "Les antécédents de 3,5 sont **1, 7 et 13** : f(1) = f(7) = f(13) = 3,5, à 1 h, à 7 h et à 13 h."
+      ],
+      "hint": "Suis l'horizontale sur toute la courbe, sans oublier ses extrémités."
+    }
+  ],
+  "review_status": "relu_agent",
+  "programme_ref": "Cycle 4, classe de 3e, Proportionnalité, fonctions, Fonctions, Objectifs d'apprentissage : « Utiliser les différentes représentations d'une fonction. »"
+}

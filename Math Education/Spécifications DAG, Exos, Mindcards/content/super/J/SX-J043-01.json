@@ -1,0 +1,120 @@
+{
+  "id": "SX-J043-01",
+  "skill_id": "J043",
+  "skill_ids": [
+    "J043",
+    "J004",
+    "P027",
+    "E023"
+  ],
+  "school_level": "3e",
+  "title": "La vidange du bassin",
+  "contexte": "Mila vide le bassin de son jardin avec une pompe. Les 11 poissons rouges du bassin attendent dans un aquarium pendant les travaux, et la pompe a coûté 79 €. Le pompage s'arrête quand le bassin est vide.\n\nSur le graphique, la droite d donne la hauteur d'eau dans le bassin (en cm) en fonction de la durée de pompage (en minutes). Elle représente une fonction affine $f$ : $f(x)$ est la hauteur d'eau, en cm, au bout de $x$ minutes de pompage.",
+  "image": "figures/SX-J043-01",
+  "duree_estimee_min": 15,
+  "questions": [
+    {
+      "key": "q1",
+      "skill_id": "J004",
+      "statement": "Quelle est la hauteur d'eau au bout de 4 minutes de pompage ?",
+      "type": "numerique",
+      "answer": {
+        "value": 105,
+        "unit": "cm",
+        "accepted": [
+          "f(4) = 105",
+          "f(4)=105",
+          "f(4) = 105 cm",
+          "1,05 m",
+          "1,05 mètre",
+          "1,05 mètres",
+          "1 m 05"
+        ]
+      },
+      "points": 1,
+      "solution_steps": [
+        "On part de 4 sur l'axe des abscisses et on monte jusqu'à la droite d.",
+        "Le point atteint a pour ordonnée 105 : f(4) = 105. Il reste **105 cm** d'eau."
+      ],
+      "hint": "Lis les valeurs écrites sur chaque axe avant de compter les graduations."
+    },
+    {
+      "key": "q2",
+      "skill_id": "J043",
+      "statement": "Lis l'ordonnée à l'origine b de la droite d.",
+      "type": "numerique",
+      "answer": {
+        "value": 135,
+        "unit": "cm",
+        "accepted": [
+          "b = 135",
+          "b=135",
+          "b = 135 cm"
+        ]
+      },
+      "points": 2,
+      "solution_steps": [
+        "L'ordonnée à l'origine se lit là où d coupe l'axe des ordonnées, au point d'abscisse 0.",
+        "d coupe l'axe des ordonnées au point (0 ; 135) : b = **135**. Au début du pompage, il y avait 135 cm d'eau."
+      ],
+      "hint": "Sur quel axe se lit l'ordonnée à l'origine ?"
+    },
+    {
+      "key": "q3",
+      "skill_id": "P027",
+      "statement": "Au bout de combien de secondes de pompage le bassin est-il vide ?",
+      "type": "numerique",
+      "answer": {
+        "value": 1080,
+        "unit": "s"
+      },
+      "points": 2,
+      "solution_steps": [
+        "Le bassin est vide quand la hauteur vaut 0 : d coupe l'axe des abscisses au point d'abscisse 18.",
+        "Une minute dure 60 secondes : 18 × 60 = 1 080.",
+        "Le bassin est vide au bout de 18 minutes, soit **1 080 secondes**."
+      ],
+      "hint": "Lis d'abord la durée en minutes, puis convertis-la : une minute dure 60 secondes."
+    },
+    {
+      "key": "q4",
+      "skill_id": "E023",
+      "statement": "Vrai ou faux : la hauteur d'eau est proportionnelle à la durée de pompage.",
+      "type": "vrai_faux",
+      "answer": {
+        "value": false
+      },
+      "points": 2,
+      "solution_steps": [
+        "Une situation de proportionnalité se représente par des points alignés avec l'origine du repère.",
+        "La droite d ne passe pas par l'origine : au bout de 0 minute, la hauteur vaut 135 cm, et non 0.",
+        "L'affirmation est **fausse**. De plus, la hauteur diminue quand la durée augmente."
+      ],
+      "hint": "Par quel point passe la représentation d'une situation de proportionnalité ?"
+    },
+    {
+      "key": "q5",
+      "skill_id": "J043",
+      "statement": "Lis le coefficient directeur a de la droite d, avec son signe.",
+      "type": "numerique",
+      "answer": {
+        "value": -7.5,
+        "unit": "cm/min",
+        "accepted": [
+          "a = −7,5",
+          "a = -7,5",
+          "a=-7,5"
+        ]
+      },
+      "points": 3,
+      "solution_steps": [
+        "Une graduation vaut 2 min sur l'axe des abscisses et 15 cm sur l'axe des ordonnées : compter les carreaux donnerait −1, ce qui est faux.",
+        "d passe par les points (0 ; 135) et (6 ; 90) : quand x augmente de 6, l'ordonnée varie de 90 − 135 = −45.",
+        "a = −45 ÷ 6 = −7,5 : la hauteur baisse de 7,5 cm par minute. Le coefficient directeur est **−7,5**."
+      ],
+      "hint": "Choisis deux points de d bien placés sur le quadrillage, et lis leurs coordonnées sur les graduations."
+    }
+  ],
+  "review_status": "relu_agent",
+  "programme_ref": "Cycle 4, classe de 3e, Proportionnalité, fonctions, Fonctions, Objectifs d'apprentissage : « Déterminer graphiquement les coefficients d'une fonction affine. »"
+}

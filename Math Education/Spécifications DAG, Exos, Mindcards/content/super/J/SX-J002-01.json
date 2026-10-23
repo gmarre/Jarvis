@@ -1,0 +1,142 @@
+{
+  "id": "SX-J002-01",
+  "skill_id": "J002",
+  "skill_ids": [
+    "J002",
+    "J041",
+    "D026"
+  ],
+  "school_level": "3e",
+  "title": "Les crêpes de la kermesse",
+  "contexte": "Pour la kermesse du collège, le club de théâtre tient un stand de crêpes. Les ingrédients et la location de la crêpière ont coûté 65 € en tout. Chaque crêpe est vendue 2,50 €. La kermesse dure 4 heures, et les organisateurs attendent 350 visiteurs.\n\nLe bénéfice du club est l'argent encaissé pour les crêpes, moins les 65 € de dépenses. Un bénéfice négatif est une perte. On note $f$ la fonction qui, au nombre $x$ de crêpes vendues, associe le bénéfice du club, en euros :\n\n$f(x) = 2{,}5x - 65$\n\nLes membres du club espèrent financer une sortie au théâtre avec ce bénéfice.",
+  "image": null,
+  "duree_estimee_min": 15,
+  "questions": [
+    {
+      "key": "q1",
+      "skill_id": "J041",
+      "statement": "Dans l'écriture $f(x) = 2{,}5x - 65$, que représente le nombre 65 ?",
+      "type": "qcm",
+      "choices": [
+        {
+          "key": "a",
+          "text": "Le prix de vente d'une crêpe, en euros",
+          "misconception": "Le prix d'une crêpe, 2,50 €, multiplie le nombre x de crêpes ; 65 est soustrait."
+        },
+        {
+          "key": "b",
+          "text": "Les dépenses du club pour les ingrédients et la crêpière, en euros",
+          "misconception": null
+        },
+        {
+          "key": "c",
+          "text": "Le nombre de crêpes vendues",
+          "misconception": "Le nombre de crêpes vendues est représenté par la lettre x."
+        },
+        {
+          "key": "d",
+          "text": "Le bénéfice du club, en euros",
+          "misconception": "Le bénéfice est le résultat f(x) du calcul, et non le nombre 65."
+        }
+      ],
+      "answer": {
+        "value": "b"
+      },
+      "points": 1,
+      "solution_steps": [
+        "Le nombre 65 est soustrait de l'argent encaissé, 2,5x.",
+        "Ce sont les **dépenses** du club, en euros : les ingrédients et la location de la crêpière."
+      ],
+      "hint": "Relis la phrase qui définit le bénéfice du club."
+    },
+    {
+      "key": "q2",
+      "skill_id": "J002",
+      "statement": "Calcule $f(18)$, le bénéfice du club s'il vend 18 crêpes.",
+      "type": "numerique",
+      "answer": {
+        "value": -20,
+        "unit": "€",
+        "accepted": [
+          "f(18) = −20",
+          "f(18) = -20",
+          "f(18)=-20",
+          "f(18) = −20 €"
+        ]
+      },
+      "points": 2,
+      "solution_steps": [
+        "On remplace x par 18 : f(18) = 2,5 × 18 − 65.",
+        "On calcule d'abord le produit : 2,5 × 18 = 45, puis 45 − 65 = −20.",
+        "f(18) = **−20** : avec 18 crêpes vendues, le club perd 20 €."
+      ],
+      "hint": "Remplace x par 18 dans la formule, puis respecte les priorités."
+    },
+    {
+      "key": "q3",
+      "skill_id": "J002",
+      "statement": "Quel est l'antécédent de 0 par $f$ ? C'est le nombre de crêpes à vendre pour que le bénéfice soit nul.",
+      "type": "numerique",
+      "answer": {
+        "value": 26,
+        "accepted": [
+          "26 crêpes",
+          "x = 26",
+          "26 crepes"
+        ]
+      },
+      "points": 2,
+      "solution_steps": [
+        "On cherche x tel que f(x) = 0 : 2,5x − 65 = 0.",
+        "On ajoute 65 aux deux membres : 2,5x = 65.",
+        "On divise par 2,5 : x = 65 ÷ 2,5 = 650 ÷ 25 = 26.",
+        "Contrôle : f(26) = 2,5 × 26 − 65 = 65 − 65 = 0. Le club doit vendre **26 crêpes**."
+      ],
+      "hint": "Écris l'équation f(x) = 0, puis résous-la."
+    },
+    {
+      "key": "q4",
+      "skill_id": "D026",
+      "statement": "En fin de journée, l'argent encaissé pour les crêpes, avant de retirer les dépenses, est de 117,50 €. Combien de crêpes le club a-t-il vendues ?",
+      "type": "numerique",
+      "answer": {
+        "value": 47,
+        "accepted": [
+          "47 crêpes",
+          "47 crepes"
+        ]
+      },
+      "points": 2,
+      "solution_steps": [
+        "L'argent encaissé ne tient pas compte des dépenses : chaque crêpe vendue a rapporté 2,50 €.",
+        "Le nombre de crêpes est 117,5 ÷ 2,5. On multiplie les deux nombres par 10 : 1 175 ÷ 25 = 47.",
+        "Le club a vendu **47 crêpes**. Contrôle : 47 × 2,5 = 117,5."
+      ],
+      "hint": "Combien d'euros rapporte une crêpe vendue ? Les dépenses comptent-elles ici ?"
+    },
+    {
+      "key": "q5",
+      "skill_id": "J002",
+      "statement": "Le club veut un bénéfice de 95 €. Quel est l'antécédent de 95 par $f$ ? C'est le nombre de crêpes à vendre.",
+      "type": "numerique",
+      "answer": {
+        "value": 64,
+        "accepted": [
+          "64 crêpes",
+          "x = 64",
+          "64 crepes"
+        ]
+      },
+      "points": 3,
+      "solution_steps": [
+        "On cherche x tel que f(x) = 95 : 2,5x − 65 = 95.",
+        "On ajoute 65 aux deux membres : 2,5x = 160.",
+        "On divise par 2,5 : x = 160 ÷ 2,5 = 1 600 ÷ 25 = 64.",
+        "Contrôle : f(64) = 2,5 × 64 − 65 = 160 − 65 = 95. Il faut vendre **64 crêpes**."
+      ],
+      "hint": "Écris l'équation f(x) = 95, puis résous-la comme une équation du premier degré."
+    }
+  ],
+  "review_status": "relu_agent",
+  "programme_ref": "Cycle 4, classe de 3e, Proportionnalité, fonctions, Fonctions, Objectifs d'apprentissage : « Utiliser les différentes représentations d'une fonction. »"
+}

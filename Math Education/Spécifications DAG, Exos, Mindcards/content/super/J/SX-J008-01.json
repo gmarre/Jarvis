@@ -1,0 +1,112 @@
+{
+  "id": "SX-J008-01",
+  "skill_id": "J008",
+  "skill_ids": [
+    "J008",
+    "J004",
+    "D006",
+    "F068"
+  ],
+  "school_level": "3e",
+  "title": "Les plaques du vitrail",
+  "contexte": "Un atelier de vitrail, ouvert en 1987, emploie 4 artisans. Il découpe des plaques de verre carrées. Pour une plaque de côté $x$, en décimètres, l'aire en dm² est $x^{2}$ : on utilise la fonction carré $f : x \\mapsto x^{2}$. Cette fonction est définie pour tous les nombres, mais seul un nombre positif peut être la longueur d'un côté.\n\nLe graphique représente $f$ par la courbe 𝒞, pour $x$ compris entre −7 et 7, ainsi que la droite horizontale d des points d'ordonnée 35.\n\nLe verre coloré coûte 15 € le dm². La calculatrice est autorisée.",
+  "image": "figures/SX-J008-01",
+  "duree_estimee_min": 15,
+  "questions": [
+    {
+      "key": "q1",
+      "skill_id": "J004",
+      "statement": "Sur le graphique, combien de points communs ont la courbe 𝒞 et la droite d ?",
+      "type": "numerique",
+      "answer": {
+        "value": 2,
+        "accepted": [
+          "deux",
+          "2 points",
+          "deux points"
+        ]
+      },
+      "points": 1,
+      "solution_steps": [
+        "La droite d coupe la courbe 𝒞 une fois à gauche de l'axe des ordonnées et une fois à droite.",
+        "Elles ont **2 points communs** : l'équation $x^{2} = 35$ a deux solutions, opposées."
+      ],
+      "hint": "Suis la droite d sur toute sa longueur."
+    },
+    {
+      "key": "q2",
+      "skill_id": "J008",
+      "statement": "Vrai ou faux : $f(-1{,}8) = -3{,}24$.",
+      "type": "vrai_faux",
+      "answer": {
+        "value": false
+      },
+      "points": 2,
+      "solution_steps": [
+        "$f(-1{,}8) = (-1{,}8)^{2} = (-1{,}8) \\times (-1{,}8)$.",
+        "Le produit de deux nombres négatifs est positif : (−1,8) × (−1,8) = 3,24.",
+        "Donc f(−1,8) = 3,24 et non −3,24 : l'affirmation est **fausse**. Un carré n'est jamais négatif, et 𝒞 ne descend jamais sous l'axe des abscisses."
+      ],
+      "hint": "Écris le carré de −1,8 comme un produit, avec les parenthèses."
+    },
+    {
+      "key": "q3",
+      "skill_id": "D006",
+      "statement": "Combien coûte le verre d'une plaque de 1,4 dm de côté ?",
+      "type": "numerique",
+      "answer": {
+        "value": 29.4,
+        "unit": "€",
+        "accepted": [
+          "29 € 40",
+          "29€40",
+          "29 euros 40"
+        ]
+      },
+      "points": 2,
+      "solution_steps": [
+        "L'aire de la plaque est $f(1{,}4) = 1{,}4^{2}$ : 1,4 × 1,4 = 1,96, soit 1,96 dm².",
+        "Le prix est 1,96 × 15 = 29,4.",
+        "Le verre coûte **29,40 €**."
+      ],
+      "hint": "Calcule d'abord l'aire de la plaque."
+    },
+    {
+      "key": "q4",
+      "skill_id": "F068",
+      "statement": "Une plaque doit avoir une aire de 35 dm². Calcule la longueur de son côté, en dm, arrondie au dixième.",
+      "type": "numerique",
+      "answer": {
+        "value": 5.9,
+        "tolerance": 0.05,
+        "unit": "dm"
+      },
+      "points": 2,
+      "solution_steps": [
+        "Le côté c, positif, vérifie $c^{2} = 35$. Les solutions de $x^{2} = 35$ sont $\\sqrt{35}$ et $-\\sqrt{35}$ ; seule la solution positive est une longueur.",
+        "À la calculatrice : $\\sqrt{35} \\approx 5{,}916$ ; on arrondit à la fin, au dixième.",
+        "Le côté mesure environ **5,9 dm**. Sur le graphique, c'est l'abscisse du point commun à 𝒞 et à d situé à droite de l'axe des ordonnées, entre 5 et 6."
+      ],
+      "hint": "Écris l'équation que vérifie le côté, puis garde seulement la solution qui peut être une longueur."
+    },
+    {
+      "key": "q5",
+      "skill_id": "J008",
+      "statement": "Donne tous les antécédents de 2,56 par la fonction carré $f$, séparés par un point-virgule.",
+      "type": "texte",
+      "answer": {
+        "value": "−1,6 ; 1,6",
+        "forme": "solutions"
+      },
+      "points": 3,
+      "solution_steps": [
+        "Les antécédents de 2,56 sont les solutions de l'équation $x^{2} = 2{,}56$.",
+        "$1{,}6 \\times 1{,}6 = 2{,}56$, et $(-1{,}6) \\times (-1{,}6) = 2{,}56$ aussi : deux nombres opposés ont le même carré.",
+        "2,56 est strictement positif : il a deux antécédents, **−1,6 et 1,6**."
+      ],
+      "hint": "Écris l'équation que vérifient les antécédents de 2,56, puis cherche toutes ses solutions."
+    }
+  ],
+  "review_status": "relu_agent",
+  "programme_ref": "Cycle 4, classe de 3e, Proportionnalité, fonctions, Fonctions, Objectifs d'apprentissage : « Représenter la fonction carré. »"
+}

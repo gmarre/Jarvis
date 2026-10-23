@@ -1,0 +1,113 @@
+{
+  "id": "SX-J005-01",
+  "skill_id": "J005",
+  "skill_ids": [
+    "J005",
+    "E030",
+    "E039",
+    "E005"
+  ],
+  "school_level": "3e",
+  "title": "Recharger une voiture électrique",
+  "contexte": "Léo recharge sa voiture électrique sur deux bornes publiques. Sa batterie peut stocker 52 kWh, et il parcourt 35 km par jour. À chaque borne, le prix payé est une fonction affine de l'énergie rechargée $x$, en kilowattheures (kWh) : des frais de connexion fixes, plus un prix par kWh.\n\nÀ la borne lente, Léo a payé 12,50 € pour 30 kWh, puis 19,50 € pour 50 kWh.\n\nÀ la borne rapide, il a payé 9,40 € pour 12 kWh, puis 20,60 € pour 28 kWh. Cette borne délivre toujours 40 kWh en 32 minutes : la durée de recharge est proportionnelle à l'énergie rechargée.",
+  "image": null,
+  "duree_estimee_min": 15,
+  "questions": [
+    {
+      "key": "q1",
+      "skill_id": "E030",
+      "statement": "Vrai ou faux : à la borne lente, le prix payé est proportionnel à l'énergie rechargée.",
+      "type": "vrai_faux",
+      "answer": {
+        "value": false
+      },
+      "points": 1,
+      "solution_steps": [
+        "S'il y avait proportionnalité, le prix d'un kWh serait le même pour les deux recharges.",
+        "Pour 50 kWh : 19,5 ÷ 50 = 0,39. Pour 30 kWh, 0,39 × 30 = 11,7 : on aurait payé 11,70 €, et non 12,50 €.",
+        "L'affirmation est **fausse** : les frais de connexion s'ajoutent au prix de l'énergie."
+      ],
+      "hint": "Compare les prix d'un kWh calculés avec chacune des deux recharges."
+    },
+    {
+      "key": "q2",
+      "skill_id": "J005",
+      "statement": "À la borne lente, quel est le coefficient a de la fonction affine, c'est-à-dire le prix d'un kWh ?",
+      "type": "numerique",
+      "answer": {
+        "value": 0.35,
+        "unit": "€",
+        "accepted": [
+          "a = 0,35",
+          "0,35 € par kWh",
+          "0,35 €/kWh",
+          "0,35 € le kWh"
+        ]
+      },
+      "points": 2,
+      "solution_steps": [
+        "De 30 kWh à 50 kWh, l'énergie augmente de 50 − 30 = 20 kWh.",
+        "Le prix augmente de 19,5 − 12,5 = 7 €.",
+        "a = 7 ÷ 20 = 0,35 : à la borne lente, le kWh coûte **0,35 €**."
+      ],
+      "hint": "Calcule la variation du prix et la variation de l'énergie entre les deux recharges."
+    },
+    {
+      "key": "q3",
+      "skill_id": "E039",
+      "statement": "Le jour de son inauguration, la borne lente offrait 20 % de réduction. Quelle somme Léo aurait-il économisée ce jour-là sur une recharge de 12,50 € ?",
+      "type": "numerique",
+      "answer": {
+        "value": 2.5,
+        "unit": "€"
+      },
+      "points": 2,
+      "solution_steps": [
+        "20 % de 12,50 € : 12,5 × 20 ÷ 100 = 250 ÷ 100 = 2,5.",
+        "Léo aurait économisé **2,50 €**, et payé 12,5 − 2,5 = 10 €."
+      ],
+      "hint": "Calcule 10 % de 12,50 €, puis double le résultat."
+    },
+    {
+      "key": "q4",
+      "skill_id": "E005",
+      "statement": "À la borne rapide, combien de minutes faut-il pour recharger 30 kWh ?",
+      "type": "numerique",
+      "answer": {
+        "value": 24,
+        "unit": "min"
+      },
+      "points": 2,
+      "solution_steps": [
+        "La durée est proportionnelle à l'énergie : 32 minutes pour 40 kWh.",
+        "Égalité des rapports : t ÷ 30 = 32 ÷ 40, donc 40 × t = 30 × 32 = 960.",
+        "t = 960 ÷ 40 = 24 : il faut **24 minutes**."
+      ],
+      "hint": "Écris l'égalité des rapports entre la durée et l'énergie."
+    },
+    {
+      "key": "q5",
+      "skill_id": "J005",
+      "statement": "Écris l'expression de $f(x)$, où $f$ est la fonction affine qui donne le prix payé, en €, pour x kWh rechargés à la borne rapide.",
+      "type": "texte",
+      "answer": {
+        "value": "0,7x + 1",
+        "forme": "expression",
+        "variables": [
+          "x"
+        ],
+        "unit": "€"
+      },
+      "points": 3,
+      "solution_steps": [
+        "De 12 kWh à 28 kWh, l'énergie augmente de 16 kWh et le prix de 20,6 − 9,4 = 11,2 €.",
+        "a = 11,2 ÷ 16 = 0,7.",
+        "Avec 12 kWh : 0,7 × 12 + b = 9,4, donc 8,4 + b = 9,4 et b = 1.",
+        "f(x) = **0,7x + 1**. Contrôle : 0,7 × 28 + 1 = 19,6 + 1 = 20,6."
+      ],
+      "hint": "Trouve d'abord le coefficient a avec les variations, puis b avec l'une des deux recharges."
+    }
+  ],
+  "review_status": "relu_agent",
+  "programme_ref": "Cycle 4, classe de 3e, Proportionnalité, fonctions, Fonctions, Objectifs d'apprentissage : « Définir et utiliser les fonctions affines. »"
+}

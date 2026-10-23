@@ -1,0 +1,133 @@
+{
+  "id": "SX-J045-01",
+  "skill_id": "J045",
+  "skill_ids": [
+    "J045",
+    "J040",
+    "G042",
+    "E005"
+  ],
+  "school_level": "3e",
+  "title": "Le remplissage de la cuve",
+  "contexte": "Une cuve de récupération d'eau de pluie, d'une capacité de 1 000 L, a été installée en 2019. Pour la nettoyer, Sacha la vide, puis la remplit avec un tuyau d'arrosage à débit constant : le volume d'eau dans la cuve est proportionnel à la durée de remplissage.\n\nLe graphique donne le volume d'eau (en L) en fonction de la durée (en min). La droite d passe par l'origine O du repère et par le point M de coordonnées (5 ; 11). Le point H(5 ; 0) est sur l'axe des abscisses.\n\nPlus loin, hors du dessin, le point N de la droite d a pour abscisse 9,5, et on note K(9,5 ; 0).",
+  "image": "figures/SX-J045-01",
+  "duree_estimee_min": 15,
+  "questions": [
+    {
+      "key": "q1",
+      "skill_id": "J040",
+      "statement": "Lis sur le graphique le volume d'eau dans la cuve au bout de 2,5 minutes de remplissage.",
+      "type": "numerique",
+      "answer": {
+        "value": 5.5,
+        "unit": "L"
+      },
+      "points": 1,
+      "solution_steps": [
+        "On part de 2,5 sur l'axe des abscisses, à mi-chemin entre 2 et 3, et on monte jusqu'à la droite d.",
+        "Le point atteint est à mi-hauteur entre 5 et 6 : son ordonnée est 5,5.",
+        "Au bout de 2,5 minutes, la cuve contient **5,5 L**. C'est la moitié des 11 L du point M, atteints en deux fois plus de temps."
+      ],
+      "hint": "Repère 2,5 sur l'axe des abscisses, puis lis l'ordonnée du point de d."
+    },
+    {
+      "key": "q2",
+      "skill_id": "G042",
+      "statement": "On admet que les droites (HM) et (KN) sont parallèles. Avec le théorème de Thalès dans les triangles OHM et OKN, calcule KN, l'ordonnée du point N.",
+      "type": "numerique",
+      "answer": {
+        "value": 20.9,
+        "accepted": [
+          "KN = 20,9",
+          "KN=20,9",
+          "20,9 L"
+        ]
+      },
+      "points": 2,
+      "solution_steps": [
+        "O, H, K sont alignés, ainsi que O, M, N, et (HM) est parallèle à (KN) : d'après le théorème de Thalès, $\\dfrac{OH}{OK} = \\dfrac{HM}{KN}$.",
+        "Donc $\\dfrac{5}{9{,}5} = \\dfrac{11}{KN}$, d'où 5 × KN = 11 × 9,5 = 104,5.",
+        "KN = 104,5 ÷ 5 = **20,9** : au bout de 9,5 minutes, la cuve contient 20,9 L."
+      ],
+      "hint": "Écris l'égalité des quotients donnée par le théorème de Thalès, avec les longueurs connues."
+    },
+    {
+      "key": "q3",
+      "skill_id": "E005",
+      "statement": "Combien de minutes faut-il pour verser 44 L dans la cuve ?",
+      "type": "numerique",
+      "answer": {
+        "value": 20,
+        "unit": "min"
+      },
+      "points": 2,
+      "solution_steps": [
+        "La durée est proportionnelle au volume : 5 minutes pour 11 L.",
+        "Égalité des rapports : t ÷ 44 = 5 ÷ 11, donc 11 × t = 44 × 5 = 220.",
+        "t = 220 ÷ 11 = 20 : il faut **20 minutes**."
+      ],
+      "hint": "Écris l'égalité des rapports entre la durée et le volume, avec le point M."
+    },
+    {
+      "key": "q4",
+      "skill_id": "J045",
+      "statement": "Quel est le coefficient de proportionnalité qui donne le volume (en L) à partir de la durée (en min) ?",
+      "type": "numerique",
+      "answer": {
+        "value": 2.2,
+        "accepted": [
+          "2,2 L/min",
+          "2,2 L par minute",
+          "2,2 litres par minute"
+        ]
+      },
+      "points": 2,
+      "solution_steps": [
+        "Le coefficient est le quotient ordonnée ÷ abscisse d'un point de d autre que O : $\\dfrac{HM}{OH}$.",
+        "11 ÷ 5 = 2,2.",
+        "Le coefficient est **2,2** : la cuve reçoit 2,2 L par minute."
+      ],
+      "hint": "Calcule le quotient de l'ordonnée par l'abscisse d'un même point de la droite."
+    },
+    {
+      "key": "q5",
+      "skill_id": "J045",
+      "statement": "Au bout de 6,5 minutes, Sacha lit 14,5 L sur le compteur du tuyau. Le point de coordonnées (6,5 ; 14,5) est-il sur la droite d ? Quelle phrase est juste ?",
+      "type": "qcm",
+      "choices": [
+        {
+          "key": "a",
+          "text": "Oui : de M à ce point, la durée et le volume augmentent tous les deux.",
+          "misconception": "Augmenter ensemble ne suffit pas : pour rester sur d, le volume doit être multiplié par le même nombre que la durée ; de 5 à 6,5, la durée est multipliée par 1,3, et 11 × 1,3 = 14,3, pas 14,5."
+        },
+        {
+          "key": "b",
+          "text": "Non : $\\dfrac{14{,}5}{6{,}5}$ n'est pas égal à $\\dfrac{11}{5}$, donc ce point n'est pas aligné avec O et M.",
+          "misconception": null
+        },
+        {
+          "key": "c",
+          "text": "Oui : placé sur le dessin, ce point paraîtrait très proche de la droite d.",
+          "misconception": "Le dessin n'est pas une preuve : il faut comparer les quotients ordonnée ÷ abscisse."
+        },
+        {
+          "key": "d",
+          "text": "Non : les droites (HM) et (KN) ne sont pas parallèles.",
+          "misconception": "(HM) et (KN) sont toutes deux perpendiculaires à l'axe des abscisses, donc parallèles ; et elles ne disent rien de ce nouveau point."
+        }
+      ],
+      "answer": {
+        "value": "b"
+      },
+      "points": 3,
+      "solution_steps": [
+        "Si ce point était sur d, il serait aligné avec O et M, et ses deux coordonnées auraient le même quotient ordonnée ÷ abscisse que M, d'après le théorème de Thalès.",
+        "11 ÷ 5 = 2,2 et 14,5 ÷ 6,5 = 2,230… : les quotients sont différents.",
+        "Le point n'est pas sur d : au bout de 6,5 minutes, la cuve devrait contenir 6,5 × 2,2 = 14,3 L. La bonne phrase est la **b**."
+      ],
+      "hint": "Compare le quotient ordonnée ÷ abscisse de ce point à celui de M."
+    }
+  ],
+  "review_status": "relu_agent",
+  "programme_ref": "Cycle 4, classe de 3e, Proportionnalité, fonctions, Proportionnalité, Objectifs d'apprentissage : « Relier la représentation graphique d'une situation de proportionnalité avec le théorème de Thalès. »"
+}

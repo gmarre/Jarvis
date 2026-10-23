@@ -1,0 +1,145 @@
+{
+  "id": "SX-J006-01",
+  "skill_id": "J006",
+  "skill_ids": [
+    "J006",
+    "P015",
+    "E016"
+  ],
+  "school_level": "3e",
+  "title": "Le miel d'Inès",
+  "contexte": "Inès est apicultrice. Elle possède 12 ruches et récolte environ 300 kg de miel par an. Sur le marché, elle vend son miel au poids, 14 € le kilogramme : le prix payé est proportionnel à la masse achetée. Elle vend aussi des pots en verre vides, 2,50 € le pot.\n\nOn note $f$ la fonction qui, à une masse $x$ de miel (en kg), associe son prix $f(x)$ (en €), avant tout changement de tarif.\n\nLe 1er octobre, Inès change ses tarifs : le prix du miel augmente de 15 %, et le prix d'un pot vide baisse de 40 %.",
+  "image": null,
+  "duree_estimee_min": 15,
+  "questions": [
+    {
+      "key": "q1",
+      "skill_id": "J006",
+      "statement": "Quelle écriture définit la fonction $f$ ?",
+      "type": "qcm",
+      "choices": [
+        {
+          "key": "a",
+          "text": "$f(x) = x + 14$",
+          "misconception": "On n'ajoute pas 14 € à la masse : le prix est proportionnel à la masse, on la multiplie par 14."
+        },
+        {
+          "key": "b",
+          "text": "$f(x) = 14x$",
+          "misconception": null
+        },
+        {
+          "key": "c",
+          "text": "$f(x) = \\dfrac{x}{14}$",
+          "misconception": "Diviser la masse par 14 ne donne pas un prix : on multiplie la masse par le prix d'un kilogramme."
+        },
+        {
+          "key": "d",
+          "text": "$f(x) = 14$",
+          "misconception": "Cette fonction donnerait le même prix, 14 €, quelle que soit la masse achetée."
+        }
+      ],
+      "answer": {
+        "value": "b"
+      },
+      "points": 1,
+      "solution_steps": [
+        "Le prix est proportionnel à la masse : on multiplie la masse x, en kg, par le prix d'un kilogramme, 14 €.",
+        "Donc $f(x) = 14x$ : $f$ est la fonction linéaire de coefficient 14."
+      ],
+      "hint": "Le prix est proportionnel à la masse : quelle opération fait-on sur x ?"
+    },
+    {
+      "key": "q2",
+      "skill_id": "P015",
+      "statement": "Avec le tarif d'avant le 1er octobre, combien coûte le miel d'un pot qui en contient 750 g, sans compter le prix du pot ?",
+      "type": "numerique",
+      "answer": {
+        "value": 10.5,
+        "unit": "€",
+        "accepted": [
+          "10 € 50",
+          "10€50",
+          "10 euros 50"
+        ]
+      },
+      "points": 2,
+      "solution_steps": [
+        "La masse doit être en kilogrammes : 750 g = 0,75 kg, car 1 kg = 1 000 g.",
+        "Avant le 1er octobre, le prix est donné par f : f(0,75) = 14 × 0,75 = 10,5.",
+        "Le miel coûte **10,50 €**."
+      ],
+      "hint": "Dans quelle unité la masse x est-elle exprimée ?"
+    },
+    {
+      "key": "q3",
+      "skill_id": "E016",
+      "statement": "Par quel nombre décimal multiplie-t-on le prix d'un pot vide pour le baisser de 40 % ?",
+      "type": "numerique",
+      "answer": {
+        "value": 0.6,
+        "accepted": [
+          "× 0,6",
+          "x 0,6",
+          "×0,6"
+        ]
+      },
+      "points": 2,
+      "solution_steps": [
+        "Baisser un prix de 40 %, c'est en garder 100 % − 40 % = 60 %.",
+        "60 % = 60/100 = 0,6 : le coefficient multiplicateur est **0,6**."
+      ],
+      "hint": "Après une baisse de 40 %, quel pourcentage du prix reste-t-il ?"
+    },
+    {
+      "key": "q4",
+      "skill_id": "J006",
+      "statement": "Quel est l'antécédent de 9,8 par $f$ ? Réponds en kilogrammes.",
+      "type": "numerique",
+      "answer": {
+        "value": 0.7,
+        "unit": "kg",
+        "accepted": [
+          "x = 0,7"
+        ]
+      },
+      "points": 2,
+      "solution_steps": [
+        "On cherche x tel que f(x) = 9,8 : 14x = 9,8.",
+        "x = 9,8 ÷ 14 = 0,7.",
+        "Contrôle : 14 × 0,7 = 9,8. Pour 9,80 €, on achète **0,7 kg** de miel, soit 700 g."
+      ],
+      "hint": "Écris l'égalité f(x) = 9,8 avec la formule de f."
+    },
+    {
+      "key": "q5",
+      "skill_id": "J006",
+      "statement": "Après le 1er octobre, le prix du miel est donné par une fonction linéaire $g$ : $g(x)$ est le prix, en €, de x kg de miel. Quel est le coefficient de $g$ ?",
+      "type": "numerique",
+      "answer": {
+        "value": 16.1,
+        "accepted": [
+          "g(x) = 16,1x",
+          "16,1x",
+          "16,10",
+          "16,1 €",
+          "16,10 €",
+          "16,1 € par kg",
+          "16,1 €/kg",
+          "16,1 € le kg",
+          "16,1 € le kilogramme",
+          "16,10 € le kilogramme"
+        ]
+      },
+      "points": 3,
+      "solution_steps": [
+        "Augmenter un prix de 15 %, c'est le multiplier par 1 + 0,15 = 1,15 : c'est le coefficient multiplicateur.",
+        "Le prix d'un kilogramme devient 14 × 1,15 = 16,1 €.",
+        "Pour x kg, g(x) = 16,1x : le coefficient de g est **16,1**."
+      ],
+      "hint": "Par quel nombre multiplie-t-on un prix pour l'augmenter de 15 % ?"
+    }
+  ],
+  "review_status": "relu_agent",
+  "programme_ref": "Cycle 4, classe de 3e, Proportionnalité, fonctions, Fonctions, Objectifs d'apprentissage : « Définir et utiliser les fonctions linéaires. »"
+}

@@ -1,0 +1,139 @@
+{
+  "id": "SX-J001-01",
+  "skill_id": "J001",
+  "skill_ids": [
+    "J001",
+    "J036",
+    "B045",
+    "F064"
+  ],
+  "school_level": "3e",
+  "title": "Une nuit au refuge",
+  "contexte": "Malo est gardien d'un refuge de montagne, à 2 450 m d'altitude. Cette nuit, il accueille 9 randonneurs. Toutes les deux heures, de 18 h à 6 h du matin, il relève la température extérieure.\n\nOn note $f$ la fonction qui, à la durée $x$ écoulée depuis 18 h (en heures), associe la température $f(x)$ relevée, en degrés Celsius. Voici son tableau de valeurs :\n\n$\\begin{array}{|c|c|}\\hline x & f(x) \\\\ \\hline 0 & 1{,}5 \\\\ \\hline 2 & -2 \\\\ \\hline 4 & -5{,}5 \\\\ \\hline 6 & -7{,}5 \\\\ \\hline 8 & -8{,}5 \\\\ \\hline 10 & -5{,}5 \\\\ \\hline 12 & -1{,}5 \\\\ \\hline\\end{array}$\n\nUn randonneur américain demande les températures en degrés Fahrenheit. Malo utilise ce programme de calcul : multiplier la température en degrés Celsius par 1,8, puis ajouter 32 au résultat.",
+  "image": null,
+  "duree_estimee_min": 15,
+  "questions": [
+    {
+      "key": "q1",
+      "skill_id": "J036",
+      "statement": "Quelle température Malo a-t-il relevée à minuit ? Réponds en degrés Celsius.",
+      "type": "numerique",
+      "answer": {
+        "value": -7.5,
+        "unit": "°C",
+        "accepted": [
+          "f(6) = −7,5",
+          "f(6) = -7,5",
+          "f(6)=-7,5"
+        ]
+      },
+      "points": 1,
+      "solution_steps": [
+        "Minuit est 6 heures après 18 h : on cherche la ligne où x = 6.",
+        "En face de x = 6, le tableau donne f(6) = −7,5.",
+        "À minuit, Malo a relevé **−7,5 degrés Celsius**."
+      ],
+      "hint": "Combien d'heures se sont écoulées entre 18 h et minuit ?"
+    },
+    {
+      "key": "q2",
+      "skill_id": "B045",
+      "statement": "De combien de degrés la température a-t-elle baissé entre 18 h et 2 h du matin ?",
+      "type": "numerique",
+      "answer": {
+        "value": 10,
+        "unit": "°C"
+      },
+      "points": 2,
+      "solution_steps": [
+        "2 h du matin est 8 heures après 18 h : on lit f(0) = 1,5 et f(8) = −8,5.",
+        "La baisse est la différence entre la température de départ et la température d'arrivée : 1,5 − (−8,5) = 1,5 + 8,5 = 10.",
+        "La température a baissé de **10 degrés**."
+      ],
+      "hint": "Lis les deux températures, puis calcule leur différence en faisant attention aux signes."
+    },
+    {
+      "key": "q3",
+      "skill_id": "F064",
+      "statement": "Applique le programme de Malo à la température −20 degrés Celsius. Quel nombre de degrés Fahrenheit obtient-il ?",
+      "type": "numerique",
+      "answer": {
+        "value": -4,
+        "unit": "°F",
+        "accepted": [
+          "−4 °F",
+          "-4 °F",
+          "-4°F",
+          "−4 degrés Fahrenheit",
+          "-4 degrés Fahrenheit",
+          "−4 degrés",
+          "-4 degrés",
+          "-4 degres"
+        ]
+      },
+      "points": 2,
+      "solution_steps": [
+        "On multiplie −20 par 1,8 : −20 × 1,8 = −36.",
+        "On ajoute 32 au résultat : −36 + 32 = −4.",
+        "−20 degrés Celsius correspondent à **−4 degrés Fahrenheit**."
+      ],
+      "hint": "Respecte l'ordre des deux étapes du programme et le signe de −20."
+    },
+    {
+      "key": "q4",
+      "skill_id": "J001",
+      "statement": "On note $g$ la fonction qui, à une température $x$ en degrés Celsius, associe la température en degrés Fahrenheit obtenue avec le programme de Malo. Quelle écriture définit $g$ ?",
+      "type": "qcm",
+      "choices": [
+        {
+          "key": "a",
+          "text": "$g : x \\mapsto 1{,}8(x + 32)$",
+          "misconception": "Le programme multiplie d'abord par 1,8, puis ajoute 32 ; cette écriture ajoute 32 avant de multiplier."
+        },
+        {
+          "key": "b",
+          "text": "$g : 1{,}8x + 32 \\mapsto x$",
+          "misconception": "La flèche part du nombre de départ x et va vers son image ; cette écriture la retourne."
+        },
+        {
+          "key": "c",
+          "text": "$g : x \\mapsto 1{,}8x + 32$",
+          "misconception": null
+        },
+        {
+          "key": "d",
+          "text": "$g(x) = 32x + 1{,}8$",
+          "misconception": "Les deux nombres sont échangés : c'est x qui est multiplié par 1,8, puis 32 est ajouté."
+        }
+      ],
+      "answer": {
+        "value": "c"
+      },
+      "points": 2,
+      "solution_steps": [
+        "Appliqué au nombre x, le programme donne d'abord 1,8 × x = 1,8x, puis 1,8x + 32.",
+        "La flèche part du nombre de départ x et va vers son image : $g : x \\mapsto 1{,}8x + 32$, ce qui s'écrit aussi $g(x) = 1{,}8x + 32$."
+      ],
+      "hint": "Applique le programme à la lettre x, étape par étape, puis regarde d'où part la flèche."
+    },
+    {
+      "key": "q5",
+      "skill_id": "J001",
+      "statement": "Donne tous les antécédents de −5,5 par $f$ lus dans le tableau, séparés par un point-virgule.",
+      "type": "texte",
+      "answer": {
+        "value": "4 ; 10",
+        "forme": "solutions"
+      },
+      "points": 3,
+      "solution_steps": [
+        "Les antécédents de −5,5 sont les nombres x dont l'image f(x) vaut −5,5 : on les cherche dans la colonne des f(x), puis on lit le nombre x écrit sur la même ligne.",
+        "−5,5 apparaît deux fois dans la colonne des f(x) : en face de x = 4 et en face de x = 10.",
+        "Les antécédents de −5,5 sont **4 et 10** : f(4) = −5,5 et f(10) = −5,5, à 22 h et à 4 h du matin."
+      ],
+      "hint": "Dans quelle colonne du tableau cherche-t-on un antécédent ? Parcours-la en entier."
+    }
+  ],
+  "review_status": "relu_agent",
+  "programme_ref": "Cycle 4, classe de 3e, Proportionnalité, fonctions, Fonctions, Objectifs d'apprentissage : « Définir et connaitre le vocabulaire : image, antécédents. »"
+}

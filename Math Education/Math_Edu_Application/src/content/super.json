@@ -2,7 +2,7 @@
   "metadata": {
     "version": "1.0",
     "scope": "Super exercices, CP a 3e",
-    "total_super": 270
+    "total_super": 279
   },
   "super": [
     {
@@ -29629,6 +29629,1137 @@
       ],
       "review_status": "brouillon",
       "programme_ref": "Cycle 4, classe de 3e, Espace et géométrie, Représentation de l'espace, Objectifs d'apprentissage : « Visualiser et réaliser des sections de pavé parallèlement à une face, de cylindre parallèlement ou perpendiculairement à son axe, d'une boule. »"
+    },
+    {
+      "id": "SX-J001-01",
+      "skill_id": "J001",
+      "skill_ids": [
+        "J001",
+        "J036",
+        "B045",
+        "F064"
+      ],
+      "school_level": "3e",
+      "title": "Une nuit au refuge",
+      "contexte": "Malo est gardien d'un refuge de montagne, à 2 450 m d'altitude. Cette nuit, il accueille 9 randonneurs. Toutes les deux heures, de 18 h à 6 h du matin, il relève la température extérieure.\n\nOn note $f$ la fonction qui, à la durée $x$ écoulée depuis 18 h (en heures), associe la température $f(x)$ relevée, en degrés Celsius. Voici son tableau de valeurs :\n\n$\\begin{array}{|c|c|}\\hline x & f(x) \\\\ \\hline 0 & 1{,}5 \\\\ \\hline 2 & -2 \\\\ \\hline 4 & -5{,}5 \\\\ \\hline 6 & -7{,}5 \\\\ \\hline 8 & -8{,}5 \\\\ \\hline 10 & -5{,}5 \\\\ \\hline 12 & -1{,}5 \\\\ \\hline\\end{array}$\n\nUn randonneur américain demande les températures en degrés Fahrenheit. Malo utilise ce programme de calcul : multiplier la température en degrés Celsius par 1,8, puis ajouter 32 au résultat.",
+      "image": null,
+      "duree_estimee_min": 15,
+      "questions": [
+        {
+          "key": "q1",
+          "skill_id": "J036",
+          "statement": "Quelle température Malo a-t-il relevée à minuit ? Réponds en degrés Celsius.",
+          "type": "numerique",
+          "answer": {
+            "value": -7.5,
+            "unit": "°C",
+            "accepted": [
+              "f(6) = −7,5",
+              "f(6) = -7,5",
+              "f(6)=-7,5"
+            ]
+          },
+          "points": 1,
+          "solution_steps": [
+            "Minuit est 6 heures après 18 h : on cherche la ligne où x = 6.",
+            "En face de x = 6, le tableau donne f(6) = −7,5.",
+            "À minuit, Malo a relevé **−7,5 degrés Celsius**."
+          ],
+          "hint": "Combien d'heures se sont écoulées entre 18 h et minuit ?"
+        },
+        {
+          "key": "q2",
+          "skill_id": "B045",
+          "statement": "De combien de degrés la température a-t-elle baissé entre 18 h et 2 h du matin ?",
+          "type": "numerique",
+          "answer": {
+            "value": 10,
+            "unit": "°C"
+          },
+          "points": 2,
+          "solution_steps": [
+            "2 h du matin est 8 heures après 18 h : on lit f(0) = 1,5 et f(8) = −8,5.",
+            "La baisse est la différence entre la température de départ et la température d'arrivée : 1,5 − (−8,5) = 1,5 + 8,5 = 10.",
+            "La température a baissé de **10 degrés**."
+          ],
+          "hint": "Lis les deux températures, puis calcule leur différence en faisant attention aux signes."
+        },
+        {
+          "key": "q3",
+          "skill_id": "F064",
+          "statement": "Applique le programme de Malo à la température −20 degrés Celsius. Quel nombre de degrés Fahrenheit obtient-il ?",
+          "type": "numerique",
+          "answer": {
+            "value": -4,
+            "unit": "°F",
+            "accepted": [
+              "−4 °F",
+              "-4 °F",
+              "-4°F",
+              "−4 degrés Fahrenheit",
+              "-4 degrés Fahrenheit",
+              "−4 degrés",
+              "-4 degrés",
+              "-4 degres"
+            ]
+          },
+          "points": 2,
+          "solution_steps": [
+            "On multiplie −20 par 1,8 : −20 × 1,8 = −36.",
+            "On ajoute 32 au résultat : −36 + 32 = −4.",
+            "−20 degrés Celsius correspondent à **−4 degrés Fahrenheit**."
+          ],
+          "hint": "Respecte l'ordre des deux étapes du programme et le signe de −20."
+        },
+        {
+          "key": "q4",
+          "skill_id": "J001",
+          "statement": "On note $g$ la fonction qui, à une température $x$ en degrés Celsius, associe la température en degrés Fahrenheit obtenue avec le programme de Malo. Quelle écriture définit $g$ ?",
+          "type": "qcm",
+          "choices": [
+            {
+              "key": "a",
+              "text": "$g : x \\mapsto 1{,}8(x + 32)$",
+              "misconception": "Le programme multiplie d'abord par 1,8, puis ajoute 32 ; cette écriture ajoute 32 avant de multiplier."
+            },
+            {
+              "key": "b",
+              "text": "$g : 1{,}8x + 32 \\mapsto x$",
+              "misconception": "La flèche part du nombre de départ x et va vers son image ; cette écriture la retourne."
+            },
+            {
+              "key": "c",
+              "text": "$g : x \\mapsto 1{,}8x + 32$",
+              "misconception": null
+            },
+            {
+              "key": "d",
+              "text": "$g(x) = 32x + 1{,}8$",
+              "misconception": "Les deux nombres sont échangés : c'est x qui est multiplié par 1,8, puis 32 est ajouté."
+            }
+          ],
+          "answer": {
+            "value": "c"
+          },
+          "points": 2,
+          "solution_steps": [
+            "Appliqué au nombre x, le programme donne d'abord 1,8 × x = 1,8x, puis 1,8x + 32.",
+            "La flèche part du nombre de départ x et va vers son image : $g : x \\mapsto 1{,}8x + 32$, ce qui s'écrit aussi $g(x) = 1{,}8x + 32$."
+          ],
+          "hint": "Applique le programme à la lettre x, étape par étape, puis regarde d'où part la flèche."
+        },
+        {
+          "key": "q5",
+          "skill_id": "J001",
+          "statement": "Donne tous les antécédents de −5,5 par $f$ lus dans le tableau, séparés par un point-virgule.",
+          "type": "texte",
+          "answer": {
+            "value": "4 ; 10",
+            "forme": "solutions"
+          },
+          "points": 3,
+          "solution_steps": [
+            "Les antécédents de −5,5 sont les nombres x dont l'image f(x) vaut −5,5 : on les cherche dans la colonne des f(x), puis on lit le nombre x écrit sur la même ligne.",
+            "−5,5 apparaît deux fois dans la colonne des f(x) : en face de x = 4 et en face de x = 10.",
+            "Les antécédents de −5,5 sont **4 et 10** : f(4) = −5,5 et f(10) = −5,5, à 22 h et à 4 h du matin."
+          ],
+          "hint": "Dans quelle colonne du tableau cherche-t-on un antécédent ? Parcours-la en entier."
+        }
+      ],
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 4, classe de 3e, Proportionnalité, fonctions, Fonctions, Objectifs d'apprentissage : « Définir et connaitre le vocabulaire : image, antécédents. »"
+    },
+    {
+      "id": "SX-J002-01",
+      "skill_id": "J002",
+      "skill_ids": [
+        "J002",
+        "J041",
+        "D026"
+      ],
+      "school_level": "3e",
+      "title": "Les crêpes de la kermesse",
+      "contexte": "Pour la kermesse du collège, le club de théâtre tient un stand de crêpes. Les ingrédients et la location de la crêpière ont coûté 65 € en tout. Chaque crêpe est vendue 2,50 €. La kermesse dure 4 heures, et les organisateurs attendent 350 visiteurs.\n\nLe bénéfice du club est l'argent encaissé pour les crêpes, moins les 65 € de dépenses. Un bénéfice négatif est une perte. On note $f$ la fonction qui, au nombre $x$ de crêpes vendues, associe le bénéfice du club, en euros :\n\n$f(x) = 2{,}5x - 65$\n\nLes membres du club espèrent financer une sortie au théâtre avec ce bénéfice.",
+      "image": null,
+      "duree_estimee_min": 15,
+      "questions": [
+        {
+          "key": "q1",
+          "skill_id": "J041",
+          "statement": "Dans l'écriture $f(x) = 2{,}5x - 65$, que représente le nombre 65 ?",
+          "type": "qcm",
+          "choices": [
+            {
+              "key": "a",
+              "text": "Le prix de vente d'une crêpe, en euros",
+              "misconception": "Le prix d'une crêpe, 2,50 €, multiplie le nombre x de crêpes ; 65 est soustrait."
+            },
+            {
+              "key": "b",
+              "text": "Les dépenses du club pour les ingrédients et la crêpière, en euros",
+              "misconception": null
+            },
+            {
+              "key": "c",
+              "text": "Le nombre de crêpes vendues",
+              "misconception": "Le nombre de crêpes vendues est représenté par la lettre x."
+            },
+            {
+              "key": "d",
+              "text": "Le bénéfice du club, en euros",
+              "misconception": "Le bénéfice est le résultat f(x) du calcul, et non le nombre 65."
+            }
+          ],
+          "answer": {
+            "value": "b"
+          },
+          "points": 1,
+          "solution_steps": [
+            "Le nombre 65 est soustrait de l'argent encaissé, 2,5x.",
+            "Ce sont les **dépenses** du club, en euros : les ingrédients et la location de la crêpière."
+          ],
+          "hint": "Relis la phrase qui définit le bénéfice du club."
+        },
+        {
+          "key": "q2",
+          "skill_id": "J002",
+          "statement": "Calcule $f(18)$, le bénéfice du club s'il vend 18 crêpes.",
+          "type": "numerique",
+          "answer": {
+            "value": -20,
+            "unit": "€",
+            "accepted": [
+              "f(18) = −20",
+              "f(18) = -20",
+              "f(18)=-20",
+              "f(18) = −20 €"
+            ]
+          },
+          "points": 2,
+          "solution_steps": [
+            "On remplace x par 18 : f(18) = 2,5 × 18 − 65.",
+            "On calcule d'abord le produit : 2,5 × 18 = 45, puis 45 − 65 = −20.",
+            "f(18) = **−20** : avec 18 crêpes vendues, le club perd 20 €."
+          ],
+          "hint": "Remplace x par 18 dans la formule, puis respecte les priorités."
+        },
+        {
+          "key": "q3",
+          "skill_id": "J002",
+          "statement": "Quel est l'antécédent de 0 par $f$ ? C'est le nombre de crêpes à vendre pour que le bénéfice soit nul.",
+          "type": "numerique",
+          "answer": {
+            "value": 26,
+            "accepted": [
+              "26 crêpes",
+              "x = 26",
+              "26 crepes"
+            ]
+          },
+          "points": 2,
+          "solution_steps": [
+            "On cherche x tel que f(x) = 0 : 2,5x − 65 = 0.",
+            "On ajoute 65 aux deux membres : 2,5x = 65.",
+            "On divise par 2,5 : x = 65 ÷ 2,5 = 650 ÷ 25 = 26.",
+            "Contrôle : f(26) = 2,5 × 26 − 65 = 65 − 65 = 0. Le club doit vendre **26 crêpes**."
+          ],
+          "hint": "Écris l'équation f(x) = 0, puis résous-la."
+        },
+        {
+          "key": "q4",
+          "skill_id": "D026",
+          "statement": "En fin de journée, l'argent encaissé pour les crêpes, avant de retirer les dépenses, est de 117,50 €. Combien de crêpes le club a-t-il vendues ?",
+          "type": "numerique",
+          "answer": {
+            "value": 47,
+            "accepted": [
+              "47 crêpes",
+              "47 crepes"
+            ]
+          },
+          "points": 2,
+          "solution_steps": [
+            "L'argent encaissé ne tient pas compte des dépenses : chaque crêpe vendue a rapporté 2,50 €.",
+            "Le nombre de crêpes est 117,5 ÷ 2,5. On multiplie les deux nombres par 10 : 1 175 ÷ 25 = 47.",
+            "Le club a vendu **47 crêpes**. Contrôle : 47 × 2,5 = 117,5."
+          ],
+          "hint": "Combien d'euros rapporte une crêpe vendue ? Les dépenses comptent-elles ici ?"
+        },
+        {
+          "key": "q5",
+          "skill_id": "J002",
+          "statement": "Le club veut un bénéfice de 95 €. Quel est l'antécédent de 95 par $f$ ? C'est le nombre de crêpes à vendre.",
+          "type": "numerique",
+          "answer": {
+            "value": 64,
+            "accepted": [
+              "64 crêpes",
+              "x = 64",
+              "64 crepes"
+            ]
+          },
+          "points": 3,
+          "solution_steps": [
+            "On cherche x tel que f(x) = 95 : 2,5x − 65 = 95.",
+            "On ajoute 65 aux deux membres : 2,5x = 160.",
+            "On divise par 2,5 : x = 160 ÷ 2,5 = 1 600 ÷ 25 = 64.",
+            "Contrôle : f(64) = 2,5 × 64 − 65 = 160 − 65 = 95. Il faut vendre **64 crêpes**."
+          ],
+          "hint": "Écris l'équation f(x) = 95, puis résous-la comme une équation du premier degré."
+        }
+      ],
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 4, classe de 3e, Proportionnalité, fonctions, Fonctions, Objectifs d'apprentissage : « Utiliser les différentes représentations d'une fonction. »"
+    },
+    {
+      "id": "SX-J004-01",
+      "skill_id": "J004",
+      "skill_ids": [
+        "J004",
+        "J040",
+        "P027"
+      ],
+      "school_level": "3e",
+      "title": "La marée au port",
+      "contexte": "Yann est pêcheur. Son chalutier mesure 22 m de long, et son port de pêche abrite 45 bateaux. Dans le port, la hauteur d'eau monte et descend avec la marée.\n\nOn note $f$ la fonction qui, à la durée $x$ écoulée depuis minuit (en heures), associe la hauteur d'eau $f(x)$ dans le port (en mètres). Le graphique représente $f$ par la courbe 𝒞f, de minuit à 13 h : $f$ est définie seulement pour les nombres $x$ compris entre 0 et 13, ces deux nombres compris.",
+      "image": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 346.571 368\" width=\"346.571\" height=\"368\" font-family=\"system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif\" role=\"img\"><title>Repère du plan d'origine O ; en abscisse : durée (h), en ordonnée : hauteur d'eau (m), avec la courbe 𝒞f</title><rect width=\"100%\" height=\"100%\" fill=\"#ffffff\"/><line x1=\"34.0\" y1=\"334.0\" x2=\"34.0\" y2=\"34.0\" stroke=\"#e2e8f0\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"55.4\" y1=\"334.0\" x2=\"55.4\" y2=\"34.0\" stroke=\"#e2e8f0\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"76.9\" y1=\"334.0\" x2=\"76.9\" y2=\"34.0\" stroke=\"#e2e8f0\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"98.3\" y1=\"334.0\" x2=\"98.3\" y2=\"34.0\" stroke=\"#e2e8f0\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"119.7\" y1=\"334.0\" x2=\"119.7\" y2=\"34.0\" stroke=\"#e2e8f0\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"141.1\" y1=\"334.0\" x2=\"141.1\" y2=\"34.0\" stroke=\"#e2e8f0\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"162.6\" y1=\"334.0\" x2=\"162.6\" y2=\"34.0\" stroke=\"#e2e8f0\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"184.0\" y1=\"334.0\" x2=\"184.0\" y2=\"34.0\" stroke=\"#e2e8f0\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"205.4\" y1=\"334.0\" x2=\"205.4\" y2=\"34.0\" stroke=\"#e2e8f0\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"226.9\" y1=\"334.0\" x2=\"226.9\" y2=\"34.0\" stroke=\"#e2e8f0\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"248.3\" y1=\"334.0\" x2=\"248.3\" y2=\"34.0\" stroke=\"#e2e8f0\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"269.7\" y1=\"334.0\" x2=\"269.7\" y2=\"34.0\" stroke=\"#e2e8f0\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"291.1\" y1=\"334.0\" x2=\"291.1\" y2=\"34.0\" stroke=\"#e2e8f0\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"312.6\" y1=\"334.0\" x2=\"312.6\" y2=\"34.0\" stroke=\"#e2e8f0\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"34.0\" y1=\"334.0\" x2=\"312.6\" y2=\"334.0\" stroke=\"#e2e8f0\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"34.0\" y1=\"312.6\" x2=\"312.6\" y2=\"312.6\" stroke=\"#e2e8f0\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"34.0\" y1=\"291.1\" x2=\"312.6\" y2=\"291.1\" stroke=\"#e2e8f0\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"34.0\" y1=\"269.7\" x2=\"312.6\" y2=\"269.7\" stroke=\"#e2e8f0\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"34.0\" y1=\"248.3\" x2=\"312.6\" y2=\"248.3\" stroke=\"#e2e8f0\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"34.0\" y1=\"226.9\" x2=\"312.6\" y2=\"226.9\" stroke=\"#e2e8f0\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"34.0\" y1=\"205.4\" x2=\"312.6\" y2=\"205.4\" stroke=\"#e2e8f0\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"34.0\" y1=\"184.0\" x2=\"312.6\" y2=\"184.0\" stroke=\"#e2e8f0\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"34.0\" y1=\"162.6\" x2=\"312.6\" y2=\"162.6\" stroke=\"#e2e8f0\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"34.0\" y1=\"141.1\" x2=\"312.6\" y2=\"141.1\" stroke=\"#e2e8f0\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"34.0\" y1=\"119.7\" x2=\"312.6\" y2=\"119.7\" stroke=\"#e2e8f0\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"34.0\" y1=\"98.3\" x2=\"312.6\" y2=\"98.3\" stroke=\"#e2e8f0\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"34.0\" y1=\"76.9\" x2=\"312.6\" y2=\"76.9\" stroke=\"#e2e8f0\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"34.0\" y1=\"55.4\" x2=\"312.6\" y2=\"55.4\" stroke=\"#e2e8f0\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"34.0\" y1=\"34.0\" x2=\"312.6\" y2=\"34.0\" stroke=\"#e2e8f0\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"23.3\" y1=\"334.0\" x2=\"323.3\" y2=\"334.0\" stroke=\"#334155\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><path d=\"M329.3,334.0 l-10,-5 v10 z\" fill=\"#334155\"/><line x1=\"34.0\" y1=\"344.7\" x2=\"34.0\" y2=\"23.3\" stroke=\"#334155\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><path d=\"M34.0,17.3 l-5,10 h10 z\" fill=\"#334155\"/><line x1=\"34.0\" y1=\"330.0\" x2=\"34.0\" y2=\"338.0\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><line x1=\"55.4\" y1=\"330.0\" x2=\"55.4\" y2=\"338.0\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><line x1=\"76.9\" y1=\"330.0\" x2=\"76.9\" y2=\"338.0\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><text x=\"76.9\" y=\"351.0\" font-size=\"11\" text-anchor=\"middle\" fill=\"#334155\">2</text><line x1=\"98.3\" y1=\"330.0\" x2=\"98.3\" y2=\"338.0\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><line x1=\"119.7\" y1=\"330.0\" x2=\"119.7\" y2=\"338.0\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><text x=\"119.7\" y=\"351.0\" font-size=\"11\" text-anchor=\"middle\" fill=\"#334155\">4</text><line x1=\"141.1\" y1=\"330.0\" x2=\"141.1\" y2=\"338.0\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><line x1=\"162.6\" y1=\"330.0\" x2=\"162.6\" y2=\"338.0\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><text x=\"162.6\" y=\"351.0\" font-size=\"11\" text-anchor=\"middle\" fill=\"#334155\">6</text><line x1=\"184.0\" y1=\"330.0\" x2=\"184.0\" y2=\"338.0\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><line x1=\"205.4\" y1=\"330.0\" x2=\"205.4\" y2=\"338.0\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><text x=\"205.4\" y=\"351.0\" font-size=\"11\" text-anchor=\"middle\" fill=\"#334155\">8</text><line x1=\"226.9\" y1=\"330.0\" x2=\"226.9\" y2=\"338.0\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><line x1=\"248.3\" y1=\"330.0\" x2=\"248.3\" y2=\"338.0\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><text x=\"248.3\" y=\"351.0\" font-size=\"11\" text-anchor=\"middle\" fill=\"#334155\">10</text><line x1=\"269.7\" y1=\"330.0\" x2=\"269.7\" y2=\"338.0\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><line x1=\"291.1\" y1=\"330.0\" x2=\"291.1\" y2=\"338.0\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><text x=\"291.1\" y=\"351.0\" font-size=\"11\" text-anchor=\"middle\" fill=\"#334155\">12</text><line x1=\"312.6\" y1=\"330.0\" x2=\"312.6\" y2=\"338.0\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><line x1=\"30.0\" y1=\"334.0\" x2=\"38.0\" y2=\"334.0\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><line x1=\"30.0\" y1=\"312.6\" x2=\"38.0\" y2=\"312.6\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><line x1=\"30.0\" y1=\"291.1\" x2=\"38.0\" y2=\"291.1\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><text x=\"27.0\" y=\"295.1\" font-size=\"11\" text-anchor=\"end\" fill=\"#334155\">1</text><line x1=\"30.0\" y1=\"269.7\" x2=\"38.0\" y2=\"269.7\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><line x1=\"30.0\" y1=\"248.3\" x2=\"38.0\" y2=\"248.3\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><text x=\"27.0\" y=\"252.3\" font-size=\"11\" text-anchor=\"end\" fill=\"#334155\">2</text><line x1=\"30.0\" y1=\"226.9\" x2=\"38.0\" y2=\"226.9\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><line x1=\"30.0\" y1=\"205.4\" x2=\"38.0\" y2=\"205.4\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><text x=\"27.0\" y=\"209.4\" font-size=\"11\" text-anchor=\"end\" fill=\"#334155\">3</text><line x1=\"30.0\" y1=\"184.0\" x2=\"38.0\" y2=\"184.0\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><line x1=\"30.0\" y1=\"162.6\" x2=\"38.0\" y2=\"162.6\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><text x=\"27.0\" y=\"166.6\" font-size=\"11\" text-anchor=\"end\" fill=\"#334155\">4</text><line x1=\"30.0\" y1=\"141.1\" x2=\"38.0\" y2=\"141.1\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><line x1=\"30.0\" y1=\"119.7\" x2=\"38.0\" y2=\"119.7\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><text x=\"27.0\" y=\"123.7\" font-size=\"11\" text-anchor=\"end\" fill=\"#334155\">5</text><line x1=\"30.0\" y1=\"98.3\" x2=\"38.0\" y2=\"98.3\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><line x1=\"30.0\" y1=\"76.9\" x2=\"38.0\" y2=\"76.9\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><text x=\"27.0\" y=\"80.9\" font-size=\"11\" text-anchor=\"end\" fill=\"#334155\">6</text><line x1=\"30.0\" y1=\"55.4\" x2=\"38.0\" y2=\"55.4\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><line x1=\"30.0\" y1=\"34.0\" x2=\"38.0\" y2=\"34.0\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><text x=\"27.0\" y=\"38.0\" font-size=\"11\" text-anchor=\"end\" fill=\"#334155\">7</text><text stroke=\"#ffffff\" stroke-width=\"3.5\" paint-order=\"stroke\" x=\"329.3\" y=\"365.0\" font-size=\"12\" text-anchor=\"end\" fill=\"#334155\">durée (h)</text><text stroke=\"#ffffff\" stroke-width=\"3.5\" paint-order=\"stroke\" x=\"43.0\" y=\"21.3\" font-size=\"12\" text-anchor=\"start\" fill=\"#334155\">hauteur d'eau (m)</text><path d=\"M34.0,226.9 L55.4,184.0 L87.6,98.3 L109.0,55.4 L141.1,98.3 L184.0,184.0 L237.6,269.7 L269.7,226.9 L312.6,184.0\" fill=\"none\" stroke=\"#2563eb\" stroke-width=\"2.2\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/><text stroke=\"#ffffff\" stroke-width=\"3.5\" paint-order=\"stroke\" x=\"86.7\" y=\"73.6\" font-size=\"14\" text-anchor=\"middle\" fill=\"#2563eb\" font-weight=\"600\">𝒞f</text><text x=\"28.0\" y=\"328.0\" font-size=\"12\" text-anchor=\"end\" fill=\"#334155\" font-weight=\"600\">O</text></svg>",
+      "duree_estimee_min": 12,
+      "questions": [
+        {
+          "key": "q1",
+          "skill_id": "J040",
+          "statement": "Quelle est la hauteur d'eau la plus basse dans le port entre minuit et 13 h ?",
+          "type": "numerique",
+          "answer": {
+            "value": 1.5,
+            "unit": "m"
+          },
+          "points": 1,
+          "solution_steps": [
+            "On cherche le point le plus bas de 𝒞f : il a pour ordonnée 1,5.",
+            "La hauteur d'eau la plus basse est **1,5 m**."
+          ],
+          "hint": "Cherche le point le plus bas de la courbe, puis lis son ordonnée."
+        },
+        {
+          "key": "q2",
+          "skill_id": "P027",
+          "statement": "La mer est au plus bas une seule fois entre minuit et 13 h. Combien de minutes après minuit ?",
+          "type": "numerique",
+          "answer": {
+            "value": 570,
+            "unit": "min"
+          },
+          "points": 2,
+          "solution_steps": [
+            "Le point le plus bas de 𝒞f a pour abscisse 9,5 : la mer est au plus bas 9,5 h après minuit.",
+            "9,5 h = 9 h + 0,5 h = 9 h 30 min, car une demi-heure dure 30 minutes.",
+            "9 × 60 + 30 = 540 + 30 = 570 : **570 minutes** après minuit, à 9 h 30."
+          ],
+          "hint": "Lis l'abscisse du point le plus bas, puis convertis cette durée en minutes."
+        },
+        {
+          "key": "q3",
+          "skill_id": "J004",
+          "statement": "Vrai ou faux : 2,5 est l'image de 5,5 par $f$.",
+          "type": "vrai_faux",
+          "answer": {
+            "value": false
+          },
+          "points": 2,
+          "solution_steps": [
+            "Le point de 𝒞f d'abscisse 2,5 a pour ordonnée 5,5 : f(2,5) = 5,5. Donc 5,5 est l'image de 2,5, et 2,5 est un antécédent de 5,5.",
+            "L'image de 5,5 se lit en partant de 5,5 sur l'axe des abscisses : le point de 𝒞f atteint est entre les hauteurs 3,5 et 5,5, donc plus haut que 2,5.",
+            "L'affirmation est **fausse** : elle confond l'image et l'antécédent."
+          ],
+          "hint": "Pour lire l'image d'un nombre, de quel axe part-on ?"
+        },
+        {
+          "key": "q4",
+          "skill_id": "J004",
+          "statement": "Lis sur le graphique l'image de 3,5 par $f$.",
+          "type": "numerique",
+          "answer": {
+            "value": 6.5,
+            "unit": "m",
+            "accepted": [
+              "f(3,5) = 6,5",
+              "f(3,5)=6,5",
+              "f(3,5) = 6,5 m"
+            ]
+          },
+          "points": 2,
+          "solution_steps": [
+            "On part de 3,5 sur l'axe des abscisses, à mi-chemin entre 3 et 4, et on monte jusqu'à 𝒞f.",
+            "Le point atteint est le plus haut de la courbe ; il a pour ordonnée 6,5, car une graduation vaut 0,5 m sur l'axe des ordonnées.",
+            "f(3,5) = **6,5** : à 3 h 30, il y a 6,5 m d'eau dans le port."
+          ],
+          "hint": "Sur chaque axe, combien vaut une graduation ?"
+        },
+        {
+          "key": "q5",
+          "skill_id": "J004",
+          "statement": "Donne tous les antécédents de 3,5 par $f$, séparés par un point-virgule.",
+          "type": "texte",
+          "answer": {
+            "value": "1 ; 7 ; 13",
+            "forme": "solutions"
+          },
+          "points": 3,
+          "solution_steps": [
+            "On part de 3,5 sur l'axe des ordonnées et on suit l'horizontale à cette hauteur sur toute la courbe, de x = 0 à x = 13.",
+            "Elle rencontre 𝒞f en trois points, d'abscisses 1, 7 et 13 : l'extrémité droite de la courbe compte, car $f$ est définie pour 13.",
+            "Les antécédents de 3,5 sont **1, 7 et 13** : f(1) = f(7) = f(13) = 3,5, à 1 h, à 7 h et à 13 h."
+          ],
+          "hint": "Suis l'horizontale sur toute la courbe, sans oublier ses extrémités."
+        }
+      ],
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 4, classe de 3e, Proportionnalité, fonctions, Fonctions, Objectifs d'apprentissage : « Utiliser les différentes représentations d'une fonction. »"
+    },
+    {
+      "id": "SX-J005-01",
+      "skill_id": "J005",
+      "skill_ids": [
+        "J005",
+        "E030",
+        "E039",
+        "E005"
+      ],
+      "school_level": "3e",
+      "title": "Recharger une voiture électrique",
+      "contexte": "Léo recharge sa voiture électrique sur deux bornes publiques. Sa batterie peut stocker 52 kWh, et il parcourt 35 km par jour. À chaque borne, le prix payé est une fonction affine de l'énergie rechargée $x$, en kilowattheures (kWh) : des frais de connexion fixes, plus un prix par kWh.\n\nÀ la borne lente, Léo a payé 12,50 € pour 30 kWh, puis 19,50 € pour 50 kWh.\n\nÀ la borne rapide, il a payé 9,40 € pour 12 kWh, puis 20,60 € pour 28 kWh. Cette borne délivre toujours 40 kWh en 32 minutes : la durée de recharge est proportionnelle à l'énergie rechargée.",
+      "image": null,
+      "duree_estimee_min": 15,
+      "questions": [
+        {
+          "key": "q1",
+          "skill_id": "E030",
+          "statement": "Vrai ou faux : à la borne lente, le prix payé est proportionnel à l'énergie rechargée.",
+          "type": "vrai_faux",
+          "answer": {
+            "value": false
+          },
+          "points": 1,
+          "solution_steps": [
+            "S'il y avait proportionnalité, le prix d'un kWh serait le même pour les deux recharges.",
+            "Pour 50 kWh : 19,5 ÷ 50 = 0,39. Pour 30 kWh, 0,39 × 30 = 11,7 : on aurait payé 11,70 €, et non 12,50 €.",
+            "L'affirmation est **fausse** : les frais de connexion s'ajoutent au prix de l'énergie."
+          ],
+          "hint": "Compare les prix d'un kWh calculés avec chacune des deux recharges."
+        },
+        {
+          "key": "q2",
+          "skill_id": "J005",
+          "statement": "À la borne lente, quel est le coefficient a de la fonction affine, c'est-à-dire le prix d'un kWh ?",
+          "type": "numerique",
+          "answer": {
+            "value": 0.35,
+            "unit": "€",
+            "accepted": [
+              "a = 0,35",
+              "0,35 € par kWh",
+              "0,35 €/kWh",
+              "0,35 € le kWh"
+            ]
+          },
+          "points": 2,
+          "solution_steps": [
+            "De 30 kWh à 50 kWh, l'énergie augmente de 50 − 30 = 20 kWh.",
+            "Le prix augmente de 19,5 − 12,5 = 7 €.",
+            "a = 7 ÷ 20 = 0,35 : à la borne lente, le kWh coûte **0,35 €**."
+          ],
+          "hint": "Calcule la variation du prix et la variation de l'énergie entre les deux recharges."
+        },
+        {
+          "key": "q3",
+          "skill_id": "E039",
+          "statement": "Le jour de son inauguration, la borne lente offrait 20 % de réduction. Quelle somme Léo aurait-il économisée ce jour-là sur une recharge de 12,50 € ?",
+          "type": "numerique",
+          "answer": {
+            "value": 2.5,
+            "unit": "€"
+          },
+          "points": 2,
+          "solution_steps": [
+            "20 % de 12,50 € : 12,5 × 20 ÷ 100 = 250 ÷ 100 = 2,5.",
+            "Léo aurait économisé **2,50 €**, et payé 12,5 − 2,5 = 10 €."
+          ],
+          "hint": "Calcule 10 % de 12,50 €, puis double le résultat."
+        },
+        {
+          "key": "q4",
+          "skill_id": "E005",
+          "statement": "À la borne rapide, combien de minutes faut-il pour recharger 30 kWh ?",
+          "type": "numerique",
+          "answer": {
+            "value": 24,
+            "unit": "min"
+          },
+          "points": 2,
+          "solution_steps": [
+            "La durée est proportionnelle à l'énergie : 32 minutes pour 40 kWh.",
+            "Égalité des rapports : t ÷ 30 = 32 ÷ 40, donc 40 × t = 30 × 32 = 960.",
+            "t = 960 ÷ 40 = 24 : il faut **24 minutes**."
+          ],
+          "hint": "Écris l'égalité des rapports entre la durée et l'énergie."
+        },
+        {
+          "key": "q5",
+          "skill_id": "J005",
+          "statement": "Écris l'expression de $f(x)$, où $f$ est la fonction affine qui donne le prix payé, en €, pour x kWh rechargés à la borne rapide.",
+          "type": "texte",
+          "answer": {
+            "value": "0,7x + 1",
+            "forme": "expression",
+            "variables": [
+              "x"
+            ],
+            "unit": "€"
+          },
+          "points": 3,
+          "solution_steps": [
+            "De 12 kWh à 28 kWh, l'énergie augmente de 16 kWh et le prix de 20,6 − 9,4 = 11,2 €.",
+            "a = 11,2 ÷ 16 = 0,7.",
+            "Avec 12 kWh : 0,7 × 12 + b = 9,4, donc 8,4 + b = 9,4 et b = 1.",
+            "f(x) = **0,7x + 1**. Contrôle : 0,7 × 28 + 1 = 19,6 + 1 = 20,6."
+          ],
+          "hint": "Trouve d'abord le coefficient a avec les variations, puis b avec l'une des deux recharges."
+        }
+      ],
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 4, classe de 3e, Proportionnalité, fonctions, Fonctions, Objectifs d'apprentissage : « Définir et utiliser les fonctions affines. »"
+    },
+    {
+      "id": "SX-J006-01",
+      "skill_id": "J006",
+      "skill_ids": [
+        "J006",
+        "P015",
+        "E016"
+      ],
+      "school_level": "3e",
+      "title": "Le miel d'Inès",
+      "contexte": "Inès est apicultrice. Elle possède 12 ruches et récolte environ 300 kg de miel par an. Sur le marché, elle vend son miel au poids, 14 € le kilogramme : le prix payé est proportionnel à la masse achetée. Elle vend aussi des pots en verre vides, 2,50 € le pot.\n\nOn note $f$ la fonction qui, à une masse $x$ de miel (en kg), associe son prix $f(x)$ (en €), avant tout changement de tarif.\n\nLe 1er octobre, Inès change ses tarifs : le prix du miel augmente de 15 %, et le prix d'un pot vide baisse de 40 %.",
+      "image": null,
+      "duree_estimee_min": 15,
+      "questions": [
+        {
+          "key": "q1",
+          "skill_id": "J006",
+          "statement": "Quelle écriture définit la fonction $f$ ?",
+          "type": "qcm",
+          "choices": [
+            {
+              "key": "a",
+              "text": "$f(x) = x + 14$",
+              "misconception": "On n'ajoute pas 14 € à la masse : le prix est proportionnel à la masse, on la multiplie par 14."
+            },
+            {
+              "key": "b",
+              "text": "$f(x) = 14x$",
+              "misconception": null
+            },
+            {
+              "key": "c",
+              "text": "$f(x) = \\dfrac{x}{14}$",
+              "misconception": "Diviser la masse par 14 ne donne pas un prix : on multiplie la masse par le prix d'un kilogramme."
+            },
+            {
+              "key": "d",
+              "text": "$f(x) = 14$",
+              "misconception": "Cette fonction donnerait le même prix, 14 €, quelle que soit la masse achetée."
+            }
+          ],
+          "answer": {
+            "value": "b"
+          },
+          "points": 1,
+          "solution_steps": [
+            "Le prix est proportionnel à la masse : on multiplie la masse x, en kg, par le prix d'un kilogramme, 14 €.",
+            "Donc $f(x) = 14x$ : $f$ est la fonction linéaire de coefficient 14."
+          ],
+          "hint": "Le prix est proportionnel à la masse : quelle opération fait-on sur x ?"
+        },
+        {
+          "key": "q2",
+          "skill_id": "P015",
+          "statement": "Avec le tarif d'avant le 1er octobre, combien coûte le miel d'un pot qui en contient 750 g, sans compter le prix du pot ?",
+          "type": "numerique",
+          "answer": {
+            "value": 10.5,
+            "unit": "€",
+            "accepted": [
+              "10 € 50",
+              "10€50",
+              "10 euros 50"
+            ]
+          },
+          "points": 2,
+          "solution_steps": [
+            "La masse doit être en kilogrammes : 750 g = 0,75 kg, car 1 kg = 1 000 g.",
+            "Avant le 1er octobre, le prix est donné par f : f(0,75) = 14 × 0,75 = 10,5.",
+            "Le miel coûte **10,50 €**."
+          ],
+          "hint": "Dans quelle unité la masse x est-elle exprimée ?"
+        },
+        {
+          "key": "q3",
+          "skill_id": "E016",
+          "statement": "Par quel nombre décimal multiplie-t-on le prix d'un pot vide pour le baisser de 40 % ?",
+          "type": "numerique",
+          "answer": {
+            "value": 0.6,
+            "accepted": [
+              "× 0,6",
+              "x 0,6",
+              "×0,6"
+            ]
+          },
+          "points": 2,
+          "solution_steps": [
+            "Baisser un prix de 40 %, c'est en garder 100 % − 40 % = 60 %.",
+            "60 % = 60/100 = 0,6 : le coefficient multiplicateur est **0,6**."
+          ],
+          "hint": "Après une baisse de 40 %, quel pourcentage du prix reste-t-il ?"
+        },
+        {
+          "key": "q4",
+          "skill_id": "J006",
+          "statement": "Quel est l'antécédent de 9,8 par $f$ ? Réponds en kilogrammes.",
+          "type": "numerique",
+          "answer": {
+            "value": 0.7,
+            "unit": "kg",
+            "accepted": [
+              "x = 0,7"
+            ]
+          },
+          "points": 2,
+          "solution_steps": [
+            "On cherche x tel que f(x) = 9,8 : 14x = 9,8.",
+            "x = 9,8 ÷ 14 = 0,7.",
+            "Contrôle : 14 × 0,7 = 9,8. Pour 9,80 €, on achète **0,7 kg** de miel, soit 700 g."
+          ],
+          "hint": "Écris l'égalité f(x) = 9,8 avec la formule de f."
+        },
+        {
+          "key": "q5",
+          "skill_id": "J006",
+          "statement": "Après le 1er octobre, le prix du miel est donné par une fonction linéaire $g$ : $g(x)$ est le prix, en €, de x kg de miel. Quel est le coefficient de $g$ ?",
+          "type": "numerique",
+          "answer": {
+            "value": 16.1,
+            "accepted": [
+              "g(x) = 16,1x",
+              "16,1x",
+              "16,10",
+              "16,1 €",
+              "16,10 €",
+              "16,1 € par kg",
+              "16,1 €/kg",
+              "16,1 € le kg",
+              "16,1 € le kilogramme",
+              "16,10 € le kilogramme"
+            ]
+          },
+          "points": 3,
+          "solution_steps": [
+            "Augmenter un prix de 15 %, c'est le multiplier par 1 + 0,15 = 1,15 : c'est le coefficient multiplicateur.",
+            "Le prix d'un kilogramme devient 14 × 1,15 = 16,1 €.",
+            "Pour x kg, g(x) = 16,1x : le coefficient de g est **16,1**."
+          ],
+          "hint": "Par quel nombre multiplie-t-on un prix pour l'augmenter de 15 % ?"
+        }
+      ],
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 4, classe de 3e, Proportionnalité, fonctions, Fonctions, Objectifs d'apprentissage : « Définir et utiliser les fonctions linéaires. »"
+    },
+    {
+      "id": "SX-J008-01",
+      "skill_id": "J008",
+      "skill_ids": [
+        "J008",
+        "J004",
+        "D006",
+        "F068"
+      ],
+      "school_level": "3e",
+      "title": "Les plaques du vitrail",
+      "contexte": "Un atelier de vitrail, ouvert en 1987, emploie 4 artisans. Il découpe des plaques de verre carrées. Pour une plaque de côté $x$, en décimètres, l'aire en dm² est $x^{2}$ : on utilise la fonction carré $f : x \\mapsto x^{2}$. Cette fonction est définie pour tous les nombres, mais seul un nombre positif peut être la longueur d'un côté.\n\nLe graphique représente $f$ par la courbe 𝒞, pour $x$ compris entre −7 et 7, ainsi que la droite horizontale d des points d'ordonnée 35.\n\nLe verre coloré coûte 15 € le dm². La calculatrice est autorisée.",
+      "image": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 368 282.286\" width=\"368\" height=\"282.286\" font-family=\"system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif\" role=\"img\"><title>Repère du plan d'origine O, avec la courbe 𝒞, la droite d</title><rect width=\"100%\" height=\"100%\" fill=\"#ffffff\"/><line x1=\"34.0\" y1=\"248.3\" x2=\"34.0\" y2=\"34.0\" stroke=\"#e2e8f0\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"55.4\" y1=\"248.3\" x2=\"55.4\" y2=\"34.0\" stroke=\"#e2e8f0\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"76.9\" y1=\"248.3\" x2=\"76.9\" y2=\"34.0\" stroke=\"#e2e8f0\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"98.3\" y1=\"248.3\" x2=\"98.3\" y2=\"34.0\" stroke=\"#e2e8f0\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"119.7\" y1=\"248.3\" x2=\"119.7\" y2=\"34.0\" stroke=\"#e2e8f0\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"141.1\" y1=\"248.3\" x2=\"141.1\" y2=\"34.0\" stroke=\"#e2e8f0\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"162.6\" y1=\"248.3\" x2=\"162.6\" y2=\"34.0\" stroke=\"#e2e8f0\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"184.0\" y1=\"248.3\" x2=\"184.0\" y2=\"34.0\" stroke=\"#e2e8f0\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"205.4\" y1=\"248.3\" x2=\"205.4\" y2=\"34.0\" stroke=\"#e2e8f0\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"226.9\" y1=\"248.3\" x2=\"226.9\" y2=\"34.0\" stroke=\"#e2e8f0\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"248.3\" y1=\"248.3\" x2=\"248.3\" y2=\"34.0\" stroke=\"#e2e8f0\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"269.7\" y1=\"248.3\" x2=\"269.7\" y2=\"34.0\" stroke=\"#e2e8f0\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"291.1\" y1=\"248.3\" x2=\"291.1\" y2=\"34.0\" stroke=\"#e2e8f0\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"312.6\" y1=\"248.3\" x2=\"312.6\" y2=\"34.0\" stroke=\"#e2e8f0\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"334.0\" y1=\"248.3\" x2=\"334.0\" y2=\"34.0\" stroke=\"#e2e8f0\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"34.0\" y1=\"248.3\" x2=\"334.0\" y2=\"248.3\" stroke=\"#e2e8f0\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"34.0\" y1=\"226.9\" x2=\"334.0\" y2=\"226.9\" stroke=\"#e2e8f0\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"34.0\" y1=\"205.4\" x2=\"334.0\" y2=\"205.4\" stroke=\"#e2e8f0\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"34.0\" y1=\"184.0\" x2=\"334.0\" y2=\"184.0\" stroke=\"#e2e8f0\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"34.0\" y1=\"162.6\" x2=\"334.0\" y2=\"162.6\" stroke=\"#e2e8f0\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"34.0\" y1=\"141.1\" x2=\"334.0\" y2=\"141.1\" stroke=\"#e2e8f0\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"34.0\" y1=\"119.7\" x2=\"334.0\" y2=\"119.7\" stroke=\"#e2e8f0\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"34.0\" y1=\"98.3\" x2=\"334.0\" y2=\"98.3\" stroke=\"#e2e8f0\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"34.0\" y1=\"76.9\" x2=\"334.0\" y2=\"76.9\" stroke=\"#e2e8f0\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"34.0\" y1=\"55.4\" x2=\"334.0\" y2=\"55.4\" stroke=\"#e2e8f0\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"34.0\" y1=\"34.0\" x2=\"334.0\" y2=\"34.0\" stroke=\"#e2e8f0\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"23.3\" y1=\"226.9\" x2=\"344.7\" y2=\"226.9\" stroke=\"#334155\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><path d=\"M350.7,226.9 l-10,-5 v10 z\" fill=\"#334155\"/><line x1=\"184.0\" y1=\"259.0\" x2=\"184.0\" y2=\"23.3\" stroke=\"#334155\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><path d=\"M184.0,17.3 l-5,10 h10 z\" fill=\"#334155\"/><line x1=\"34.0\" y1=\"222.9\" x2=\"34.0\" y2=\"230.9\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><line x1=\"55.4\" y1=\"222.9\" x2=\"55.4\" y2=\"230.9\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><text x=\"55.4\" y=\"243.9\" font-size=\"11\" text-anchor=\"middle\" fill=\"#334155\">−6</text><line x1=\"76.9\" y1=\"222.9\" x2=\"76.9\" y2=\"230.9\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><line x1=\"98.3\" y1=\"222.9\" x2=\"98.3\" y2=\"230.9\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><text x=\"98.3\" y=\"243.9\" font-size=\"11\" text-anchor=\"middle\" fill=\"#334155\">−4</text><line x1=\"119.7\" y1=\"222.9\" x2=\"119.7\" y2=\"230.9\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><line x1=\"141.1\" y1=\"222.9\" x2=\"141.1\" y2=\"230.9\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><text x=\"141.1\" y=\"243.9\" font-size=\"11\" text-anchor=\"middle\" fill=\"#334155\">−2</text><line x1=\"162.6\" y1=\"222.9\" x2=\"162.6\" y2=\"230.9\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><line x1=\"184.0\" y1=\"222.9\" x2=\"184.0\" y2=\"230.9\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><line x1=\"205.4\" y1=\"222.9\" x2=\"205.4\" y2=\"230.9\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><line x1=\"226.9\" y1=\"222.9\" x2=\"226.9\" y2=\"230.9\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><text x=\"226.9\" y=\"243.9\" font-size=\"11\" text-anchor=\"middle\" fill=\"#334155\">2</text><line x1=\"248.3\" y1=\"222.9\" x2=\"248.3\" y2=\"230.9\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><line x1=\"269.7\" y1=\"222.9\" x2=\"269.7\" y2=\"230.9\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><text x=\"269.7\" y=\"243.9\" font-size=\"11\" text-anchor=\"middle\" fill=\"#334155\">4</text><line x1=\"291.1\" y1=\"222.9\" x2=\"291.1\" y2=\"230.9\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><line x1=\"312.6\" y1=\"222.9\" x2=\"312.6\" y2=\"230.9\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><text x=\"312.6\" y=\"243.9\" font-size=\"11\" text-anchor=\"middle\" fill=\"#334155\">6</text><line x1=\"334.0\" y1=\"222.9\" x2=\"334.0\" y2=\"230.9\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><line x1=\"180.0\" y1=\"248.3\" x2=\"188.0\" y2=\"248.3\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><line x1=\"180.0\" y1=\"226.9\" x2=\"188.0\" y2=\"226.9\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><line x1=\"180.0\" y1=\"205.4\" x2=\"188.0\" y2=\"205.4\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><line x1=\"180.0\" y1=\"184.0\" x2=\"188.0\" y2=\"184.0\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><text x=\"177.0\" y=\"188.0\" font-size=\"11\" text-anchor=\"end\" fill=\"#334155\">10</text><line x1=\"180.0\" y1=\"162.6\" x2=\"188.0\" y2=\"162.6\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><line x1=\"180.0\" y1=\"141.1\" x2=\"188.0\" y2=\"141.1\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><text x=\"177.0\" y=\"145.1\" font-size=\"11\" text-anchor=\"end\" fill=\"#334155\">20</text><line x1=\"180.0\" y1=\"119.7\" x2=\"188.0\" y2=\"119.7\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><line x1=\"180.0\" y1=\"98.3\" x2=\"188.0\" y2=\"98.3\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><text x=\"177.0\" y=\"102.3\" font-size=\"11\" text-anchor=\"end\" fill=\"#334155\">30</text><line x1=\"180.0\" y1=\"76.9\" x2=\"188.0\" y2=\"76.9\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><line x1=\"180.0\" y1=\"55.4\" x2=\"188.0\" y2=\"55.4\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><text x=\"177.0\" y=\"59.4\" font-size=\"11\" text-anchor=\"end\" fill=\"#334155\">40</text><line x1=\"180.0\" y1=\"34.0\" x2=\"188.0\" y2=\"34.0\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><path d=\"M40.3,34.0 L41.5,37.3 L42.8,40.6 L44.0,43.9 L45.3,47.2 L46.5,50.4 L47.8,53.6 L49.0,56.8 L50.2,59.9 L51.5,63.0 L52.8,66.1 L54.0,69.1 L55.3,72.1 L56.5,75.1 L57.8,78.1 L59.0,81.0 L60.2,83.9 L61.5,86.8 L62.8,89.6 L64.0,92.5 L65.2,95.2 L66.5,98.0 L67.8,100.7 L69.0,103.4 L70.2,106.1 L71.5,108.7 L72.8,111.3 L74.0,113.9 L75.2,116.5 L76.5,119.0 L77.7,121.5 L79.0,124.0 L80.2,126.4 L81.5,128.8 L82.8,131.2 L84.0,133.5 L85.2,135.8 L86.5,138.1 L87.7,140.4 L89.0,142.6 L90.2,144.8 L91.5,147.0 L92.8,149.1 L94.0,151.3 L95.2,153.3 L96.5,155.4 L97.7,157.4 L99.0,159.4 L100.2,161.4 L101.5,163.3 L102.8,165.2 L104.0,167.1 L105.2,169.0 L106.5,170.8 L107.8,172.6 L109.0,174.4 L110.2,176.1 L111.5,177.8 L112.7,179.5 L114.0,181.1 L115.2,182.7 L116.5,184.3 L117.7,185.9 L119.0,187.4 L120.2,188.9 L121.5,190.4 L122.7,191.8 L124.0,193.3 L125.2,194.6 L126.5,196.0 L127.8,197.3 L129.0,198.6 L130.2,199.9 L131.5,201.1 L132.8,202.3 L134.0,203.5 L135.2,204.7 L136.5,205.8 L137.8,206.9 L139.0,208.0 L140.2,209.0 L141.5,210.0 L142.8,211.0 L144.0,211.9 L145.2,212.8 L146.5,213.7 L147.8,214.6 L149.0,215.4 L150.2,216.2 L151.5,217.0 L152.8,217.7 L154.0,218.5 L155.2,219.1 L156.5,219.8 L157.8,220.4 L159.0,221.0 L160.2,221.6 L161.5,222.1 L162.8,222.6 L164.0,223.1 L165.2,223.6 L166.5,224.0 L167.7,224.4 L169.0,224.8 L170.2,225.1 L171.5,225.4 L172.7,225.7 L174.0,225.9 L175.2,226.1 L176.5,226.3 L177.7,226.5 L179.0,226.6 L180.2,226.7 L181.5,226.8 L182.7,226.8 L184.0,226.9 L185.2,226.8 L186.5,226.8 L187.7,226.7 L189.0,226.6 L190.2,226.5 L191.5,226.3 L192.8,226.1 L194.0,225.9 L195.2,225.7 L196.5,225.4 L197.8,225.1 L199.0,224.8 L200.2,224.4 L201.5,224.0 L202.8,223.6 L204.0,223.1 L205.2,222.6 L206.5,222.1 L207.7,221.6 L209.0,221.0 L210.2,220.4 L211.5,219.8 L212.8,219.1 L214.0,218.5 L215.2,217.7 L216.5,217.0 L217.7,216.2 L219.0,215.4 L220.2,214.6 L221.5,213.7 L222.8,212.8 L224.0,211.9 L225.2,211.0 L226.5,210.0 L227.7,209.0 L229.0,208.0 L230.2,206.9 L231.5,205.8 L232.8,204.7 L234.0,203.5 L235.2,202.3 L236.5,201.1 L237.7,199.9 L239.0,198.6 L240.2,197.3 L241.5,196.0 L242.8,194.6 L244.0,193.3 L245.2,191.8 L246.5,190.4 L247.7,188.9 L249.0,187.4 L250.2,185.9 L251.5,184.3 L252.8,182.7 L254.0,181.1 L255.2,179.5 L256.5,177.8 L257.8,176.1 L259.0,174.4 L260.2,172.6 L261.5,170.8 L262.8,169.0 L264.0,167.1 L265.2,165.2 L266.5,163.3 L267.8,161.4 L269.0,159.4 L270.2,157.4 L271.5,155.4 L272.8,153.3 L274.0,151.3 L275.2,149.1 L276.5,147.0 L277.8,144.8 L279.0,142.6 L280.2,140.4 L281.5,138.1 L282.8,135.8 L284.0,133.5 L285.2,131.2 L286.5,128.8 L287.8,126.4 L289.0,124.0 L290.2,121.5 L291.5,119.0 L292.7,116.5 L294.0,113.9 L295.2,111.3 L296.5,108.7 L297.8,106.1 L299.0,103.4 L300.2,100.7 L301.5,98.0 L302.7,95.2 L304.0,92.5 L305.2,89.6 L306.5,86.8 L307.8,83.9 L309.0,81.0 L310.2,78.1 L311.5,75.1 L312.7,72.1 L314.0,69.1 L315.2,66.1 L316.5,63.0 L317.8,59.9 L319.0,56.8 L320.2,53.6 L321.5,50.4 L322.8,47.2 L324.0,43.9 L325.2,40.6 L326.5,37.3 L327.7,34.0\" fill=\"none\" stroke=\"#2563eb\" stroke-width=\"2.2\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/><text stroke=\"#ffffff\" stroke-width=\"3.5\" paint-order=\"stroke\" x=\"286.2\" y=\"102.8\" font-size=\"14\" text-anchor=\"middle\" fill=\"#2563eb\" font-weight=\"600\">𝒞</text><path d=\"M34.0,76.9 L334.0,76.9\" fill=\"none\" stroke=\"#c2410c\" stroke-width=\"2.2\" stroke-linejoin=\"round\" stroke-linecap=\"round\" stroke-dasharray=\"7 4\"/><text stroke=\"#ffffff\" stroke-width=\"3.5\" paint-order=\"stroke\" x=\"319.0\" y=\"67.9\" font-size=\"14\" text-anchor=\"middle\" fill=\"#c2410c\" font-weight=\"600\">d</text><text x=\"178.0\" y=\"241.9\" font-size=\"12\" text-anchor=\"end\" fill=\"#334155\" font-weight=\"600\">O</text></svg>",
+      "duree_estimee_min": 15,
+      "questions": [
+        {
+          "key": "q1",
+          "skill_id": "J004",
+          "statement": "Sur le graphique, combien de points communs ont la courbe 𝒞 et la droite d ?",
+          "type": "numerique",
+          "answer": {
+            "value": 2,
+            "accepted": [
+              "deux",
+              "2 points",
+              "deux points"
+            ]
+          },
+          "points": 1,
+          "solution_steps": [
+            "La droite d coupe la courbe 𝒞 une fois à gauche de l'axe des ordonnées et une fois à droite.",
+            "Elles ont **2 points communs** : l'équation $x^{2} = 35$ a deux solutions, opposées."
+          ],
+          "hint": "Suis la droite d sur toute sa longueur."
+        },
+        {
+          "key": "q2",
+          "skill_id": "J008",
+          "statement": "Vrai ou faux : $f(-1{,}8) = -3{,}24$.",
+          "type": "vrai_faux",
+          "answer": {
+            "value": false
+          },
+          "points": 2,
+          "solution_steps": [
+            "$f(-1{,}8) = (-1{,}8)^{2} = (-1{,}8) \\times (-1{,}8)$.",
+            "Le produit de deux nombres négatifs est positif : (−1,8) × (−1,8) = 3,24.",
+            "Donc f(−1,8) = 3,24 et non −3,24 : l'affirmation est **fausse**. Un carré n'est jamais négatif, et 𝒞 ne descend jamais sous l'axe des abscisses."
+          ],
+          "hint": "Écris le carré de −1,8 comme un produit, avec les parenthèses."
+        },
+        {
+          "key": "q3",
+          "skill_id": "D006",
+          "statement": "Combien coûte le verre d'une plaque de 1,4 dm de côté ?",
+          "type": "numerique",
+          "answer": {
+            "value": 29.4,
+            "unit": "€",
+            "accepted": [
+              "29 € 40",
+              "29€40",
+              "29 euros 40"
+            ]
+          },
+          "points": 2,
+          "solution_steps": [
+            "L'aire de la plaque est $f(1{,}4) = 1{,}4^{2}$ : 1,4 × 1,4 = 1,96, soit 1,96 dm².",
+            "Le prix est 1,96 × 15 = 29,4.",
+            "Le verre coûte **29,40 €**."
+          ],
+          "hint": "Calcule d'abord l'aire de la plaque."
+        },
+        {
+          "key": "q4",
+          "skill_id": "F068",
+          "statement": "Une plaque doit avoir une aire de 35 dm². Calcule la longueur de son côté, en dm, arrondie au dixième.",
+          "type": "numerique",
+          "answer": {
+            "value": 5.9,
+            "tolerance": 0.05,
+            "unit": "dm"
+          },
+          "points": 2,
+          "solution_steps": [
+            "Le côté c, positif, vérifie $c^{2} = 35$. Les solutions de $x^{2} = 35$ sont $\\sqrt{35}$ et $-\\sqrt{35}$ ; seule la solution positive est une longueur.",
+            "À la calculatrice : $\\sqrt{35} \\approx 5{,}916$ ; on arrondit à la fin, au dixième.",
+            "Le côté mesure environ **5,9 dm**. Sur le graphique, c'est l'abscisse du point commun à 𝒞 et à d situé à droite de l'axe des ordonnées, entre 5 et 6."
+          ],
+          "hint": "Écris l'équation que vérifie le côté, puis garde seulement la solution qui peut être une longueur."
+        },
+        {
+          "key": "q5",
+          "skill_id": "J008",
+          "statement": "Donne tous les antécédents de 2,56 par la fonction carré $f$, séparés par un point-virgule.",
+          "type": "texte",
+          "answer": {
+            "value": "−1,6 ; 1,6",
+            "forme": "solutions"
+          },
+          "points": 3,
+          "solution_steps": [
+            "Les antécédents de 2,56 sont les solutions de l'équation $x^{2} = 2{,}56$.",
+            "$1{,}6 \\times 1{,}6 = 2{,}56$, et $(-1{,}6) \\times (-1{,}6) = 2{,}56$ aussi : deux nombres opposés ont le même carré.",
+            "2,56 est strictement positif : il a deux antécédents, **−1,6 et 1,6**."
+          ],
+          "hint": "Écris l'équation que vérifient les antécédents de 2,56, puis cherche toutes ses solutions."
+        }
+      ],
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 4, classe de 3e, Proportionnalité, fonctions, Fonctions, Objectifs d'apprentissage : « Représenter la fonction carré. »"
+    },
+    {
+      "id": "SX-J043-01",
+      "skill_id": "J043",
+      "skill_ids": [
+        "J043",
+        "J004",
+        "P027",
+        "E023"
+      ],
+      "school_level": "3e",
+      "title": "La vidange du bassin",
+      "contexte": "Mila vide le bassin de son jardin avec une pompe. Les 11 poissons rouges du bassin attendent dans un aquarium pendant les travaux, et la pompe a coûté 79 €. Le pompage s'arrête quand le bassin est vide.\n\nSur le graphique, la droite d donne la hauteur d'eau dans le bassin (en cm) en fonction de la durée de pompage (en minutes). Elle représente une fonction affine $f$ : $f(x)$ est la hauteur d'eau, en cm, au bout de $x$ minutes de pompage.",
+      "image": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 302 302\" width=\"302\" height=\"302\" font-family=\"system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif\" role=\"img\"><title>Repère du plan d'origine O ; en abscisse : durée (min), en ordonnée : hauteur (cm), avec la droite d</title><rect width=\"100%\" height=\"100%\" fill=\"#ffffff\"/><line x1=\"34.0\" y1=\"268.0\" x2=\"34.0\" y2=\"34.0\" stroke=\"#e2e8f0\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"60.0\" y1=\"268.0\" x2=\"60.0\" y2=\"34.0\" stroke=\"#e2e8f0\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"86.0\" y1=\"268.0\" x2=\"86.0\" y2=\"34.0\" stroke=\"#e2e8f0\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"112.0\" y1=\"268.0\" x2=\"112.0\" y2=\"34.0\" stroke=\"#e2e8f0\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"138.0\" y1=\"268.0\" x2=\"138.0\" y2=\"34.0\" stroke=\"#e2e8f0\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"164.0\" y1=\"268.0\" x2=\"164.0\" y2=\"34.0\" stroke=\"#e2e8f0\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"190.0\" y1=\"268.0\" x2=\"190.0\" y2=\"34.0\" stroke=\"#e2e8f0\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"216.0\" y1=\"268.0\" x2=\"216.0\" y2=\"34.0\" stroke=\"#e2e8f0\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"242.0\" y1=\"268.0\" x2=\"242.0\" y2=\"34.0\" stroke=\"#e2e8f0\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"268.0\" y1=\"268.0\" x2=\"268.0\" y2=\"34.0\" stroke=\"#e2e8f0\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"34.0\" y1=\"268.0\" x2=\"268.0\" y2=\"268.0\" stroke=\"#e2e8f0\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"34.0\" y1=\"242.0\" x2=\"268.0\" y2=\"242.0\" stroke=\"#e2e8f0\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"34.0\" y1=\"216.0\" x2=\"268.0\" y2=\"216.0\" stroke=\"#e2e8f0\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"34.0\" y1=\"190.0\" x2=\"268.0\" y2=\"190.0\" stroke=\"#e2e8f0\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"34.0\" y1=\"164.0\" x2=\"268.0\" y2=\"164.0\" stroke=\"#e2e8f0\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"34.0\" y1=\"138.0\" x2=\"268.0\" y2=\"138.0\" stroke=\"#e2e8f0\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"34.0\" y1=\"112.0\" x2=\"268.0\" y2=\"112.0\" stroke=\"#e2e8f0\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"34.0\" y1=\"86.0\" x2=\"268.0\" y2=\"86.0\" stroke=\"#e2e8f0\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"34.0\" y1=\"60.0\" x2=\"268.0\" y2=\"60.0\" stroke=\"#e2e8f0\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"34.0\" y1=\"34.0\" x2=\"268.0\" y2=\"34.0\" stroke=\"#e2e8f0\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"21.0\" y1=\"268.0\" x2=\"281.0\" y2=\"268.0\" stroke=\"#334155\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><path d=\"M287.0,268.0 l-10,-5 v10 z\" fill=\"#334155\"/><line x1=\"34.0\" y1=\"281.0\" x2=\"34.0\" y2=\"21.0\" stroke=\"#334155\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><path d=\"M34.0,15.0 l-5,10 h10 z\" fill=\"#334155\"/><line x1=\"34.0\" y1=\"264.0\" x2=\"34.0\" y2=\"272.0\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><line x1=\"60.0\" y1=\"264.0\" x2=\"60.0\" y2=\"272.0\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><text x=\"60.0\" y=\"285.0\" font-size=\"11\" text-anchor=\"middle\" fill=\"#334155\">2</text><line x1=\"86.0\" y1=\"264.0\" x2=\"86.0\" y2=\"272.0\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><text x=\"86.0\" y=\"285.0\" font-size=\"11\" text-anchor=\"middle\" fill=\"#334155\">4</text><line x1=\"112.0\" y1=\"264.0\" x2=\"112.0\" y2=\"272.0\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><text x=\"112.0\" y=\"285.0\" font-size=\"11\" text-anchor=\"middle\" fill=\"#334155\">6</text><line x1=\"138.0\" y1=\"264.0\" x2=\"138.0\" y2=\"272.0\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><text x=\"138.0\" y=\"285.0\" font-size=\"11\" text-anchor=\"middle\" fill=\"#334155\">8</text><line x1=\"164.0\" y1=\"264.0\" x2=\"164.0\" y2=\"272.0\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><text x=\"164.0\" y=\"285.0\" font-size=\"11\" text-anchor=\"middle\" fill=\"#334155\">10</text><line x1=\"190.0\" y1=\"264.0\" x2=\"190.0\" y2=\"272.0\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><text x=\"190.0\" y=\"285.0\" font-size=\"11\" text-anchor=\"middle\" fill=\"#334155\">12</text><line x1=\"216.0\" y1=\"264.0\" x2=\"216.0\" y2=\"272.0\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><text x=\"216.0\" y=\"285.0\" font-size=\"11\" text-anchor=\"middle\" fill=\"#334155\">14</text><line x1=\"242.0\" y1=\"264.0\" x2=\"242.0\" y2=\"272.0\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><text x=\"242.0\" y=\"285.0\" font-size=\"11\" text-anchor=\"middle\" fill=\"#334155\">16</text><line x1=\"268.0\" y1=\"264.0\" x2=\"268.0\" y2=\"272.0\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><text x=\"268.0\" y=\"285.0\" font-size=\"11\" text-anchor=\"middle\" fill=\"#334155\">18</text><line x1=\"30.0\" y1=\"268.0\" x2=\"38.0\" y2=\"268.0\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><line x1=\"30.0\" y1=\"242.0\" x2=\"38.0\" y2=\"242.0\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><text x=\"27.0\" y=\"246.0\" font-size=\"11\" text-anchor=\"end\" fill=\"#334155\">15</text><line x1=\"30.0\" y1=\"216.0\" x2=\"38.0\" y2=\"216.0\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><text x=\"27.0\" y=\"220.0\" font-size=\"11\" text-anchor=\"end\" fill=\"#334155\">30</text><line x1=\"30.0\" y1=\"190.0\" x2=\"38.0\" y2=\"190.0\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><text x=\"27.0\" y=\"194.0\" font-size=\"11\" text-anchor=\"end\" fill=\"#334155\">45</text><line x1=\"30.0\" y1=\"164.0\" x2=\"38.0\" y2=\"164.0\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><text x=\"27.0\" y=\"168.0\" font-size=\"11\" text-anchor=\"end\" fill=\"#334155\">60</text><line x1=\"30.0\" y1=\"138.0\" x2=\"38.0\" y2=\"138.0\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><text x=\"27.0\" y=\"142.0\" font-size=\"11\" text-anchor=\"end\" fill=\"#334155\">75</text><line x1=\"30.0\" y1=\"112.0\" x2=\"38.0\" y2=\"112.0\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><text x=\"27.0\" y=\"116.0\" font-size=\"11\" text-anchor=\"end\" fill=\"#334155\">90</text><line x1=\"30.0\" y1=\"86.0\" x2=\"38.0\" y2=\"86.0\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><text x=\"27.0\" y=\"90.0\" font-size=\"11\" text-anchor=\"end\" fill=\"#334155\">105</text><line x1=\"30.0\" y1=\"60.0\" x2=\"38.0\" y2=\"60.0\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><text x=\"27.0\" y=\"64.0\" font-size=\"11\" text-anchor=\"end\" fill=\"#334155\">120</text><line x1=\"30.0\" y1=\"34.0\" x2=\"38.0\" y2=\"34.0\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><text x=\"27.0\" y=\"38.0\" font-size=\"11\" text-anchor=\"end\" fill=\"#334155\">135</text><text stroke=\"#ffffff\" stroke-width=\"3.5\" paint-order=\"stroke\" x=\"287.0\" y=\"299.0\" font-size=\"12\" text-anchor=\"end\" fill=\"#334155\">durée (min)</text><text stroke=\"#ffffff\" stroke-width=\"3.5\" paint-order=\"stroke\" x=\"43.0\" y=\"19.0\" font-size=\"12\" text-anchor=\"start\" fill=\"#334155\">hauteur (cm)</text><path d=\"M34.0,34.0 L268.0,268.0\" fill=\"none\" stroke=\"#2563eb\" stroke-width=\"2.2\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/><text stroke=\"#ffffff\" stroke-width=\"3.5\" paint-order=\"stroke\" x=\"219.4\" y=\"204.6\" font-size=\"14\" text-anchor=\"middle\" fill=\"#2563eb\" font-weight=\"600\">d</text><text x=\"28.0\" y=\"262.0\" font-size=\"12\" text-anchor=\"end\" fill=\"#334155\" font-weight=\"600\">O</text></svg>",
+      "duree_estimee_min": 15,
+      "questions": [
+        {
+          "key": "q1",
+          "skill_id": "J004",
+          "statement": "Quelle est la hauteur d'eau au bout de 4 minutes de pompage ?",
+          "type": "numerique",
+          "answer": {
+            "value": 105,
+            "unit": "cm",
+            "accepted": [
+              "f(4) = 105",
+              "f(4)=105",
+              "f(4) = 105 cm",
+              "1,05 m",
+              "1,05 mètre",
+              "1,05 mètres",
+              "1 m 05"
+            ]
+          },
+          "points": 1,
+          "solution_steps": [
+            "On part de 4 sur l'axe des abscisses et on monte jusqu'à la droite d.",
+            "Le point atteint a pour ordonnée 105 : f(4) = 105. Il reste **105 cm** d'eau."
+          ],
+          "hint": "Lis les valeurs écrites sur chaque axe avant de compter les graduations."
+        },
+        {
+          "key": "q2",
+          "skill_id": "J043",
+          "statement": "Lis l'ordonnée à l'origine b de la droite d.",
+          "type": "numerique",
+          "answer": {
+            "value": 135,
+            "unit": "cm",
+            "accepted": [
+              "b = 135",
+              "b=135",
+              "b = 135 cm"
+            ]
+          },
+          "points": 2,
+          "solution_steps": [
+            "L'ordonnée à l'origine se lit là où d coupe l'axe des ordonnées, au point d'abscisse 0.",
+            "d coupe l'axe des ordonnées au point (0 ; 135) : b = **135**. Au début du pompage, il y avait 135 cm d'eau."
+          ],
+          "hint": "Sur quel axe se lit l'ordonnée à l'origine ?"
+        },
+        {
+          "key": "q3",
+          "skill_id": "P027",
+          "statement": "Au bout de combien de secondes de pompage le bassin est-il vide ?",
+          "type": "numerique",
+          "answer": {
+            "value": 1080,
+            "unit": "s"
+          },
+          "points": 2,
+          "solution_steps": [
+            "Le bassin est vide quand la hauteur vaut 0 : d coupe l'axe des abscisses au point d'abscisse 18.",
+            "Une minute dure 60 secondes : 18 × 60 = 1 080.",
+            "Le bassin est vide au bout de 18 minutes, soit **1 080 secondes**."
+          ],
+          "hint": "Lis d'abord la durée en minutes, puis convertis-la : une minute dure 60 secondes."
+        },
+        {
+          "key": "q4",
+          "skill_id": "E023",
+          "statement": "Vrai ou faux : la hauteur d'eau est proportionnelle à la durée de pompage.",
+          "type": "vrai_faux",
+          "answer": {
+            "value": false
+          },
+          "points": 2,
+          "solution_steps": [
+            "Une situation de proportionnalité se représente par des points alignés avec l'origine du repère.",
+            "La droite d ne passe pas par l'origine : au bout de 0 minute, la hauteur vaut 135 cm, et non 0.",
+            "L'affirmation est **fausse**. De plus, la hauteur diminue quand la durée augmente."
+          ],
+          "hint": "Par quel point passe la représentation d'une situation de proportionnalité ?"
+        },
+        {
+          "key": "q5",
+          "skill_id": "J043",
+          "statement": "Lis le coefficient directeur a de la droite d, avec son signe.",
+          "type": "numerique",
+          "answer": {
+            "value": -7.5,
+            "unit": "cm/min",
+            "accepted": [
+              "a = −7,5",
+              "a = -7,5",
+              "a=-7,5"
+            ]
+          },
+          "points": 3,
+          "solution_steps": [
+            "Une graduation vaut 2 min sur l'axe des abscisses et 15 cm sur l'axe des ordonnées : compter les carreaux donnerait −1, ce qui est faux.",
+            "d passe par les points (0 ; 135) et (6 ; 90) : quand x augmente de 6, l'ordonnée varie de 90 − 135 = −45.",
+            "a = −45 ÷ 6 = −7,5 : la hauteur baisse de 7,5 cm par minute. Le coefficient directeur est **−7,5**."
+          ],
+          "hint": "Choisis deux points de d bien placés sur le quadrillage, et lis leurs coordonnées sur les graduations."
+        }
+      ],
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 4, classe de 3e, Proportionnalité, fonctions, Fonctions, Objectifs d'apprentissage : « Déterminer graphiquement les coefficients d'une fonction affine. »"
+    },
+    {
+      "id": "SX-J044-01",
+      "skill_id": "J044",
+      "skill_ids": [
+        "J044",
+        "J004",
+        "J005",
+        "E016"
+      ],
+      "school_level": "3e",
+      "title": "Deux tarifs pour la piscine",
+      "contexte": "La piscine municipale, ouverte 7 jours sur 7, a un bassin de 50 m. Elle propose deux tarifs :\n\ntarif A, 5,50 € l'entrée ;\n\ntarif B, une carte annuelle à 30 €, puis 2,50 € l'entrée.\n\nOn note $f$ la fonction qui, au nombre $x$ d'entrées dans l'année, associe le prix payé en euros avec le tarif A, et $g$ celle qui donne le prix payé avec le tarif B. Sur le graphique, la droite d représente $f$, et la droite e représente $g$.\n\nZoé hésite entre les deux tarifs.",
+      "image": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 330.5 368\" width=\"330.5\" height=\"368\" font-family=\"system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif\" role=\"img\"><title>Repère du plan d'origine O ; en abscisse : nombre d'entrées, en ordonnée : prix (€), avec la droite d, la droite e</title><rect width=\"100%\" height=\"100%\" fill=\"#ffffff\"/><line x1=\"34.0\" y1=\"334.0\" x2=\"34.0\" y2=\"34.0\" stroke=\"#e2e8f0\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"52.8\" y1=\"334.0\" x2=\"52.8\" y2=\"34.0\" stroke=\"#e2e8f0\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"71.5\" y1=\"334.0\" x2=\"71.5\" y2=\"34.0\" stroke=\"#e2e8f0\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"90.2\" y1=\"334.0\" x2=\"90.2\" y2=\"34.0\" stroke=\"#e2e8f0\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"109.0\" y1=\"334.0\" x2=\"109.0\" y2=\"34.0\" stroke=\"#e2e8f0\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"127.8\" y1=\"334.0\" x2=\"127.8\" y2=\"34.0\" stroke=\"#e2e8f0\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"146.5\" y1=\"334.0\" x2=\"146.5\" y2=\"34.0\" stroke=\"#e2e8f0\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"165.2\" y1=\"334.0\" x2=\"165.2\" y2=\"34.0\" stroke=\"#e2e8f0\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"184.0\" y1=\"334.0\" x2=\"184.0\" y2=\"34.0\" stroke=\"#e2e8f0\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"202.8\" y1=\"334.0\" x2=\"202.8\" y2=\"34.0\" stroke=\"#e2e8f0\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"221.5\" y1=\"334.0\" x2=\"221.5\" y2=\"34.0\" stroke=\"#e2e8f0\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"240.2\" y1=\"334.0\" x2=\"240.2\" y2=\"34.0\" stroke=\"#e2e8f0\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"259.0\" y1=\"334.0\" x2=\"259.0\" y2=\"34.0\" stroke=\"#e2e8f0\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"277.8\" y1=\"334.0\" x2=\"277.8\" y2=\"34.0\" stroke=\"#e2e8f0\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"296.5\" y1=\"334.0\" x2=\"296.5\" y2=\"34.0\" stroke=\"#e2e8f0\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"34.0\" y1=\"334.0\" x2=\"296.5\" y2=\"334.0\" stroke=\"#e2e8f0\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"34.0\" y1=\"315.2\" x2=\"296.5\" y2=\"315.2\" stroke=\"#e2e8f0\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"34.0\" y1=\"296.5\" x2=\"296.5\" y2=\"296.5\" stroke=\"#e2e8f0\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"34.0\" y1=\"277.8\" x2=\"296.5\" y2=\"277.8\" stroke=\"#e2e8f0\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"34.0\" y1=\"259.0\" x2=\"296.5\" y2=\"259.0\" stroke=\"#e2e8f0\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"34.0\" y1=\"240.2\" x2=\"296.5\" y2=\"240.2\" stroke=\"#e2e8f0\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"34.0\" y1=\"221.5\" x2=\"296.5\" y2=\"221.5\" stroke=\"#e2e8f0\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"34.0\" y1=\"202.8\" x2=\"296.5\" y2=\"202.8\" stroke=\"#e2e8f0\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"34.0\" y1=\"184.0\" x2=\"296.5\" y2=\"184.0\" stroke=\"#e2e8f0\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"34.0\" y1=\"165.2\" x2=\"296.5\" y2=\"165.2\" stroke=\"#e2e8f0\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"34.0\" y1=\"146.5\" x2=\"296.5\" y2=\"146.5\" stroke=\"#e2e8f0\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"34.0\" y1=\"127.8\" x2=\"296.5\" y2=\"127.8\" stroke=\"#e2e8f0\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"34.0\" y1=\"109.0\" x2=\"296.5\" y2=\"109.0\" stroke=\"#e2e8f0\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"34.0\" y1=\"90.2\" x2=\"296.5\" y2=\"90.2\" stroke=\"#e2e8f0\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"34.0\" y1=\"71.5\" x2=\"296.5\" y2=\"71.5\" stroke=\"#e2e8f0\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"34.0\" y1=\"52.8\" x2=\"296.5\" y2=\"52.8\" stroke=\"#e2e8f0\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"34.0\" y1=\"34.0\" x2=\"296.5\" y2=\"34.0\" stroke=\"#e2e8f0\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"24.6\" y1=\"334.0\" x2=\"305.9\" y2=\"334.0\" stroke=\"#334155\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><path d=\"M311.9,334.0 l-10,-5 v10 z\" fill=\"#334155\"/><line x1=\"34.0\" y1=\"343.4\" x2=\"34.0\" y2=\"24.6\" stroke=\"#334155\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><path d=\"M34.0,18.6 l-5,10 h10 z\" fill=\"#334155\"/><line x1=\"34.0\" y1=\"330.0\" x2=\"34.0\" y2=\"338.0\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><line x1=\"52.8\" y1=\"330.0\" x2=\"52.8\" y2=\"338.0\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><line x1=\"71.5\" y1=\"330.0\" x2=\"71.5\" y2=\"338.0\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><text x=\"71.5\" y=\"351.0\" font-size=\"11\" text-anchor=\"middle\" fill=\"#334155\">2</text><line x1=\"90.2\" y1=\"330.0\" x2=\"90.2\" y2=\"338.0\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><line x1=\"109.0\" y1=\"330.0\" x2=\"109.0\" y2=\"338.0\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><text x=\"109.0\" y=\"351.0\" font-size=\"11\" text-anchor=\"middle\" fill=\"#334155\">4</text><line x1=\"127.8\" y1=\"330.0\" x2=\"127.8\" y2=\"338.0\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><line x1=\"146.5\" y1=\"330.0\" x2=\"146.5\" y2=\"338.0\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><text x=\"146.5\" y=\"351.0\" font-size=\"11\" text-anchor=\"middle\" fill=\"#334155\">6</text><line x1=\"165.2\" y1=\"330.0\" x2=\"165.2\" y2=\"338.0\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><line x1=\"184.0\" y1=\"330.0\" x2=\"184.0\" y2=\"338.0\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><text x=\"184.0\" y=\"351.0\" font-size=\"11\" text-anchor=\"middle\" fill=\"#334155\">8</text><line x1=\"202.8\" y1=\"330.0\" x2=\"202.8\" y2=\"338.0\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><line x1=\"221.5\" y1=\"330.0\" x2=\"221.5\" y2=\"338.0\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><text x=\"221.5\" y=\"351.0\" font-size=\"11\" text-anchor=\"middle\" fill=\"#334155\">10</text><line x1=\"240.2\" y1=\"330.0\" x2=\"240.2\" y2=\"338.0\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><line x1=\"259.0\" y1=\"330.0\" x2=\"259.0\" y2=\"338.0\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><text x=\"259.0\" y=\"351.0\" font-size=\"11\" text-anchor=\"middle\" fill=\"#334155\">12</text><line x1=\"277.8\" y1=\"330.0\" x2=\"277.8\" y2=\"338.0\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><line x1=\"296.5\" y1=\"330.0\" x2=\"296.5\" y2=\"338.0\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><text x=\"296.5\" y=\"351.0\" font-size=\"11\" text-anchor=\"middle\" fill=\"#334155\">14</text><line x1=\"30.0\" y1=\"334.0\" x2=\"38.0\" y2=\"334.0\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><line x1=\"30.0\" y1=\"315.2\" x2=\"38.0\" y2=\"315.2\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><line x1=\"30.0\" y1=\"296.5\" x2=\"38.0\" y2=\"296.5\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><text x=\"27.0\" y=\"300.5\" font-size=\"11\" text-anchor=\"end\" fill=\"#334155\">10</text><line x1=\"30.0\" y1=\"277.8\" x2=\"38.0\" y2=\"277.8\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><line x1=\"30.0\" y1=\"259.0\" x2=\"38.0\" y2=\"259.0\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><text x=\"27.0\" y=\"263.0\" font-size=\"11\" text-anchor=\"end\" fill=\"#334155\">20</text><line x1=\"30.0\" y1=\"240.2\" x2=\"38.0\" y2=\"240.2\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><line x1=\"30.0\" y1=\"221.5\" x2=\"38.0\" y2=\"221.5\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><text x=\"27.0\" y=\"225.5\" font-size=\"11\" text-anchor=\"end\" fill=\"#334155\">30</text><line x1=\"30.0\" y1=\"202.8\" x2=\"38.0\" y2=\"202.8\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><line x1=\"30.0\" y1=\"184.0\" x2=\"38.0\" y2=\"184.0\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><text x=\"27.0\" y=\"188.0\" font-size=\"11\" text-anchor=\"end\" fill=\"#334155\">40</text><line x1=\"30.0\" y1=\"165.2\" x2=\"38.0\" y2=\"165.2\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><line x1=\"30.0\" y1=\"146.5\" x2=\"38.0\" y2=\"146.5\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><text x=\"27.0\" y=\"150.5\" font-size=\"11\" text-anchor=\"end\" fill=\"#334155\">50</text><line x1=\"30.0\" y1=\"127.8\" x2=\"38.0\" y2=\"127.8\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><line x1=\"30.0\" y1=\"109.0\" x2=\"38.0\" y2=\"109.0\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><text x=\"27.0\" y=\"113.0\" font-size=\"11\" text-anchor=\"end\" fill=\"#334155\">60</text><line x1=\"30.0\" y1=\"90.2\" x2=\"38.0\" y2=\"90.2\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><line x1=\"30.0\" y1=\"71.5\" x2=\"38.0\" y2=\"71.5\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><text x=\"27.0\" y=\"75.5\" font-size=\"11\" text-anchor=\"end\" fill=\"#334155\">70</text><line x1=\"30.0\" y1=\"52.8\" x2=\"38.0\" y2=\"52.8\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><line x1=\"30.0\" y1=\"34.0\" x2=\"38.0\" y2=\"34.0\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><text x=\"27.0\" y=\"38.0\" font-size=\"11\" text-anchor=\"end\" fill=\"#334155\">80</text><text stroke=\"#ffffff\" stroke-width=\"3.5\" paint-order=\"stroke\" x=\"311.9\" y=\"365.0\" font-size=\"12\" text-anchor=\"end\" fill=\"#334155\">nombre d'entrées</text><text stroke=\"#ffffff\" stroke-width=\"3.5\" paint-order=\"stroke\" x=\"43.0\" y=\"22.6\" font-size=\"12\" text-anchor=\"start\" fill=\"#334155\">prix (€)</text><path d=\"M34.0,334.0 L296.5,45.2\" fill=\"none\" stroke=\"#2563eb\" stroke-width=\"2.2\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/><text stroke=\"#ffffff\" stroke-width=\"3.5\" paint-order=\"stroke\" x=\"246.8\" y=\"84.1\" font-size=\"14\" text-anchor=\"middle\" fill=\"#2563eb\" font-weight=\"600\">d</text><path d=\"M34.0,221.5 L296.5,90.2\" fill=\"none\" stroke=\"#c2410c\" stroke-width=\"2.2\" stroke-linejoin=\"round\" stroke-linecap=\"round\" stroke-dasharray=\"7 4\"/><text stroke=\"#ffffff\" stroke-width=\"3.5\" paint-order=\"stroke\" x=\"263.4\" y=\"127.5\" font-size=\"14\" text-anchor=\"middle\" fill=\"#c2410c\" font-weight=\"600\">e</text><text x=\"28.0\" y=\"328.0\" font-size=\"12\" text-anchor=\"end\" fill=\"#334155\" font-weight=\"600\">O</text></svg>",
+      "duree_estimee_min": 15,
+      "questions": [
+        {
+          "key": "q1",
+          "skill_id": "J004",
+          "statement": "Lis sur le graphique le prix payé avec le tarif A pour 5 entrées dans l'année.",
+          "type": "numerique",
+          "answer": {
+            "value": 27.5,
+            "unit": "€",
+            "accepted": [
+              "f(5) = 27,5",
+              "f(5)=27,5",
+              "f(5) = 27,50",
+              "f(5) = 27,5 €",
+              "27 € 50",
+              "27€50",
+              "27 euros 50"
+            ]
+          },
+          "points": 1,
+          "solution_steps": [
+            "On part de 5 sur l'axe des abscisses et on monte jusqu'à la droite d, qui représente le tarif A.",
+            "Le point atteint est à mi-hauteur entre 25 et 30 : son ordonnée est 27,5, car une graduation vaut 5 € sur l'axe des ordonnées.",
+            "f(5) = **27,5** : 5 entrées coûtent 27,50 € avec le tarif A. Contrôle : 5,5 × 5 = 27,5."
+          ],
+          "hint": "Quelle droite représente le tarif A ? Combien vaut une graduation sur l'axe des ordonnées ?"
+        },
+        {
+          "key": "q2",
+          "skill_id": "J005",
+          "statement": "Calcule $g(26)$, le prix payé avec le tarif B pour 26 entrées dans l'année.",
+          "type": "numerique",
+          "answer": {
+            "value": 95,
+            "unit": "€",
+            "accepted": [
+              "g(26) = 95",
+              "g(26)=95",
+              "g(26) = 95 €"
+            ]
+          },
+          "points": 2,
+          "solution_steps": [
+            "Avec le tarif B, g(x) = 2,5x + 30.",
+            "g(26) = 2,5 × 26 + 30 = 65 + 30 = 95.",
+            "Pour 26 entrées, le tarif B coûte **95 €**."
+          ],
+          "hint": "Écris d'abord la formule de g avec les données du tarif B."
+        },
+        {
+          "key": "q3",
+          "skill_id": "E016",
+          "statement": "L'an prochain, le prix d'une entrée au tarif A augmentera de 4 %. Quel sera ce prix ?",
+          "type": "numerique",
+          "answer": {
+            "value": 5.72,
+            "unit": "€"
+          },
+          "points": 2,
+          "solution_steps": [
+            "Augmenter de 4 %, c'est multiplier par 1 + 0,04 = 1,04 : c'est le coefficient multiplicateur.",
+            "5,5 × 1,04 = 5,72.",
+            "L'entrée coûtera **5,72 €**."
+          ],
+          "hint": "Par quel nombre décimal multiplie-t-on un prix pour l'augmenter de 4 % ?"
+        },
+        {
+          "key": "q4",
+          "skill_id": "J044",
+          "statement": "Résous graphiquement l'équation $g(x) = 60$.",
+          "type": "numerique",
+          "answer": {
+            "value": 12,
+            "accepted": [
+              "x = 12",
+              "x=12"
+            ]
+          },
+          "points": 2,
+          "solution_steps": [
+            "Les solutions de g(x) = 60 sont les abscisses des points de la droite e, qui représente g, situés à la hauteur 60.",
+            "On part de 60 sur l'axe des ordonnées et on va jusqu'à la droite e : le point atteint a pour coordonnées (12 ; 60).",
+            "La solution est **12** : avec le tarif B, 12 entrées coûtent 60 €. Contrôle : 2,5 × 12 + 30 = 30 + 30 = 60."
+          ],
+          "hint": "Quelle droite représente g, et sur quel axe se trouve le nombre 60 ?"
+        },
+        {
+          "key": "q5",
+          "skill_id": "J044",
+          "statement": "Résous graphiquement l'inéquation $f(x) \\geqslant g(x)$. Écris les solutions sous la forme d'une inégalité portant sur $x$.",
+          "type": "texte",
+          "answer": {
+            "value": "x ⩾ 10",
+            "forme": "inegalite"
+          },
+          "points": 3,
+          "solution_steps": [
+            "On cherche les abscisses des points où la droite d est au-dessus de la droite e, ou la coupe (inégalité large $\\geqslant$).",
+            "d et e se coupent au point d'abscisse 10 ; à droite de ce point, d est au-dessus de e, et à gauche, d est en dessous.",
+            "Les solutions sont les nombres $x \\geqslant 10$ : **x ⩾ 10**. À partir de 10 entrées, le tarif A coûte au moins autant que le tarif B."
+          ],
+          "hint": "Repère d'abord le point commun aux deux droites, puis regarde de quel côté d est au-dessus de e."
+        }
+      ],
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 4, classe de 3e, Proportionnalité, fonctions, Fonctions, Objectifs d'apprentissage : « Résoudre graphiquement des équations et des inéquations linéaires. »"
+    },
+    {
+      "id": "SX-J045-01",
+      "skill_id": "J045",
+      "skill_ids": [
+        "J045",
+        "J040",
+        "G042",
+        "E005"
+      ],
+      "school_level": "3e",
+      "title": "Le remplissage de la cuve",
+      "contexte": "Une cuve de récupération d'eau de pluie, d'une capacité de 1 000 L, a été installée en 2019. Pour la nettoyer, Sacha la vide, puis la remplit avec un tuyau d'arrosage à débit constant : le volume d'eau dans la cuve est proportionnel à la durée de remplissage.\n\nLe graphique donne le volume d'eau (en L) en fonction de la durée (en min). La droite d passe par l'origine O du repère et par le point M de coordonnées (5 ; 11). Le point H(5 ; 0) est sur l'axe des abscisses.\n\nPlus loin, hors du dessin, le point N de la droite d a pour abscisse 9,5, et on note K(9,5 ; 0).",
+      "image": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 330.5 368\" width=\"330.5\" height=\"368\" font-family=\"system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif\" role=\"img\"><title>Repère du plan d'origine O ; en abscisse : durée (min), en ordonnée : volume (L), avec la droite d, avec les points M, H</title><rect width=\"100%\" height=\"100%\" fill=\"#ffffff\"/><line x1=\"34.0\" y1=\"334.0\" x2=\"34.0\" y2=\"34.0\" stroke=\"#e2e8f0\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"52.8\" y1=\"334.0\" x2=\"52.8\" y2=\"34.0\" stroke=\"#e2e8f0\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"71.5\" y1=\"334.0\" x2=\"71.5\" y2=\"34.0\" stroke=\"#e2e8f0\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"90.2\" y1=\"334.0\" x2=\"90.2\" y2=\"34.0\" stroke=\"#e2e8f0\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"109.0\" y1=\"334.0\" x2=\"109.0\" y2=\"34.0\" stroke=\"#e2e8f0\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"127.8\" y1=\"334.0\" x2=\"127.8\" y2=\"34.0\" stroke=\"#e2e8f0\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"146.5\" y1=\"334.0\" x2=\"146.5\" y2=\"34.0\" stroke=\"#e2e8f0\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"165.2\" y1=\"334.0\" x2=\"165.2\" y2=\"34.0\" stroke=\"#e2e8f0\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"184.0\" y1=\"334.0\" x2=\"184.0\" y2=\"34.0\" stroke=\"#e2e8f0\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"202.8\" y1=\"334.0\" x2=\"202.8\" y2=\"34.0\" stroke=\"#e2e8f0\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"221.5\" y1=\"334.0\" x2=\"221.5\" y2=\"34.0\" stroke=\"#e2e8f0\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"240.2\" y1=\"334.0\" x2=\"240.2\" y2=\"34.0\" stroke=\"#e2e8f0\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"259.0\" y1=\"334.0\" x2=\"259.0\" y2=\"34.0\" stroke=\"#e2e8f0\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"277.8\" y1=\"334.0\" x2=\"277.8\" y2=\"34.0\" stroke=\"#e2e8f0\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"296.5\" y1=\"334.0\" x2=\"296.5\" y2=\"34.0\" stroke=\"#e2e8f0\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"34.0\" y1=\"334.0\" x2=\"296.5\" y2=\"334.0\" stroke=\"#e2e8f0\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"34.0\" y1=\"315.2\" x2=\"296.5\" y2=\"315.2\" stroke=\"#e2e8f0\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"34.0\" y1=\"296.5\" x2=\"296.5\" y2=\"296.5\" stroke=\"#e2e8f0\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"34.0\" y1=\"277.8\" x2=\"296.5\" y2=\"277.8\" stroke=\"#e2e8f0\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"34.0\" y1=\"259.0\" x2=\"296.5\" y2=\"259.0\" stroke=\"#e2e8f0\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"34.0\" y1=\"240.2\" x2=\"296.5\" y2=\"240.2\" stroke=\"#e2e8f0\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"34.0\" y1=\"221.5\" x2=\"296.5\" y2=\"221.5\" stroke=\"#e2e8f0\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"34.0\" y1=\"202.8\" x2=\"296.5\" y2=\"202.8\" stroke=\"#e2e8f0\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"34.0\" y1=\"184.0\" x2=\"296.5\" y2=\"184.0\" stroke=\"#e2e8f0\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"34.0\" y1=\"165.2\" x2=\"296.5\" y2=\"165.2\" stroke=\"#e2e8f0\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"34.0\" y1=\"146.5\" x2=\"296.5\" y2=\"146.5\" stroke=\"#e2e8f0\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"34.0\" y1=\"127.8\" x2=\"296.5\" y2=\"127.8\" stroke=\"#e2e8f0\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"34.0\" y1=\"109.0\" x2=\"296.5\" y2=\"109.0\" stroke=\"#e2e8f0\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"34.0\" y1=\"90.2\" x2=\"296.5\" y2=\"90.2\" stroke=\"#e2e8f0\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"34.0\" y1=\"71.5\" x2=\"296.5\" y2=\"71.5\" stroke=\"#e2e8f0\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"34.0\" y1=\"52.8\" x2=\"296.5\" y2=\"52.8\" stroke=\"#e2e8f0\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"34.0\" y1=\"34.0\" x2=\"296.5\" y2=\"34.0\" stroke=\"#e2e8f0\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"24.6\" y1=\"334.0\" x2=\"305.9\" y2=\"334.0\" stroke=\"#334155\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><path d=\"M311.9,334.0 l-10,-5 v10 z\" fill=\"#334155\"/><line x1=\"34.0\" y1=\"343.4\" x2=\"34.0\" y2=\"24.6\" stroke=\"#334155\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><path d=\"M34.0,18.6 l-5,10 h10 z\" fill=\"#334155\"/><line x1=\"34.0\" y1=\"330.0\" x2=\"34.0\" y2=\"338.0\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><line x1=\"52.8\" y1=\"330.0\" x2=\"52.8\" y2=\"338.0\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><line x1=\"71.5\" y1=\"330.0\" x2=\"71.5\" y2=\"338.0\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><text x=\"71.5\" y=\"351.0\" font-size=\"11\" text-anchor=\"middle\" fill=\"#334155\">1</text><line x1=\"90.2\" y1=\"330.0\" x2=\"90.2\" y2=\"338.0\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><line x1=\"109.0\" y1=\"330.0\" x2=\"109.0\" y2=\"338.0\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><text x=\"109.0\" y=\"351.0\" font-size=\"11\" text-anchor=\"middle\" fill=\"#334155\">2</text><line x1=\"127.8\" y1=\"330.0\" x2=\"127.8\" y2=\"338.0\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><line x1=\"146.5\" y1=\"330.0\" x2=\"146.5\" y2=\"338.0\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><text x=\"146.5\" y=\"351.0\" font-size=\"11\" text-anchor=\"middle\" fill=\"#334155\">3</text><line x1=\"165.2\" y1=\"330.0\" x2=\"165.2\" y2=\"338.0\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><line x1=\"184.0\" y1=\"330.0\" x2=\"184.0\" y2=\"338.0\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><text x=\"184.0\" y=\"351.0\" font-size=\"11\" text-anchor=\"middle\" fill=\"#334155\">4</text><line x1=\"202.8\" y1=\"330.0\" x2=\"202.8\" y2=\"338.0\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><line x1=\"221.5\" y1=\"330.0\" x2=\"221.5\" y2=\"338.0\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><text x=\"221.5\" y=\"351.0\" font-size=\"11\" text-anchor=\"middle\" fill=\"#334155\">5</text><line x1=\"240.2\" y1=\"330.0\" x2=\"240.2\" y2=\"338.0\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><line x1=\"259.0\" y1=\"330.0\" x2=\"259.0\" y2=\"338.0\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><text x=\"259.0\" y=\"351.0\" font-size=\"11\" text-anchor=\"middle\" fill=\"#334155\">6</text><line x1=\"277.8\" y1=\"330.0\" x2=\"277.8\" y2=\"338.0\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><line x1=\"296.5\" y1=\"330.0\" x2=\"296.5\" y2=\"338.0\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><text x=\"296.5\" y=\"351.0\" font-size=\"11\" text-anchor=\"middle\" fill=\"#334155\">7</text><line x1=\"30.0\" y1=\"334.0\" x2=\"38.0\" y2=\"334.0\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><line x1=\"30.0\" y1=\"315.2\" x2=\"38.0\" y2=\"315.2\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><line x1=\"30.0\" y1=\"296.5\" x2=\"38.0\" y2=\"296.5\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><text x=\"27.0\" y=\"300.5\" font-size=\"11\" text-anchor=\"end\" fill=\"#334155\">2</text><line x1=\"30.0\" y1=\"277.8\" x2=\"38.0\" y2=\"277.8\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><line x1=\"30.0\" y1=\"259.0\" x2=\"38.0\" y2=\"259.0\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><text x=\"27.0\" y=\"263.0\" font-size=\"11\" text-anchor=\"end\" fill=\"#334155\">4</text><line x1=\"30.0\" y1=\"240.2\" x2=\"38.0\" y2=\"240.2\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><line x1=\"30.0\" y1=\"221.5\" x2=\"38.0\" y2=\"221.5\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><text x=\"27.0\" y=\"225.5\" font-size=\"11\" text-anchor=\"end\" fill=\"#334155\">6</text><line x1=\"30.0\" y1=\"202.8\" x2=\"38.0\" y2=\"202.8\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><line x1=\"30.0\" y1=\"184.0\" x2=\"38.0\" y2=\"184.0\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><text x=\"27.0\" y=\"188.0\" font-size=\"11\" text-anchor=\"end\" fill=\"#334155\">8</text><line x1=\"30.0\" y1=\"165.2\" x2=\"38.0\" y2=\"165.2\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><line x1=\"30.0\" y1=\"146.5\" x2=\"38.0\" y2=\"146.5\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><text x=\"27.0\" y=\"150.5\" font-size=\"11\" text-anchor=\"end\" fill=\"#334155\">10</text><line x1=\"30.0\" y1=\"127.8\" x2=\"38.0\" y2=\"127.8\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><line x1=\"30.0\" y1=\"109.0\" x2=\"38.0\" y2=\"109.0\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><text x=\"27.0\" y=\"113.0\" font-size=\"11\" text-anchor=\"end\" fill=\"#334155\">12</text><line x1=\"30.0\" y1=\"90.2\" x2=\"38.0\" y2=\"90.2\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><line x1=\"30.0\" y1=\"71.5\" x2=\"38.0\" y2=\"71.5\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><text x=\"27.0\" y=\"75.5\" font-size=\"11\" text-anchor=\"end\" fill=\"#334155\">14</text><line x1=\"30.0\" y1=\"52.8\" x2=\"38.0\" y2=\"52.8\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><line x1=\"30.0\" y1=\"34.0\" x2=\"38.0\" y2=\"34.0\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><text x=\"27.0\" y=\"38.0\" font-size=\"11\" text-anchor=\"end\" fill=\"#334155\">16</text><text stroke=\"#ffffff\" stroke-width=\"3.5\" paint-order=\"stroke\" x=\"311.9\" y=\"365.0\" font-size=\"12\" text-anchor=\"end\" fill=\"#334155\">durée (min)</text><text stroke=\"#ffffff\" stroke-width=\"3.5\" paint-order=\"stroke\" x=\"43.0\" y=\"22.6\" font-size=\"12\" text-anchor=\"start\" fill=\"#334155\">volume (L)</text><path d=\"M34.0,334.0 L296.5,45.2\" fill=\"none\" stroke=\"#2563eb\" stroke-width=\"2.2\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/><text stroke=\"#ffffff\" stroke-width=\"3.5\" paint-order=\"stroke\" x=\"259.9\" y=\"69.7\" font-size=\"14\" text-anchor=\"middle\" fill=\"#2563eb\" font-weight=\"600\">d</text><line x1=\"221.5\" y1=\"334.0\" x2=\"221.5\" y2=\"127.8\" stroke=\"#334155\" stroke-width=\"2\" stroke-linecap=\"round\"/><text x=\"28.0\" y=\"328.0\" font-size=\"12\" text-anchor=\"end\" fill=\"#334155\" font-weight=\"600\">O</text><line x1=\"216.5\" y1=\"122.8\" x2=\"226.5\" y2=\"132.8\" stroke=\"#2563eb\" stroke-width=\"2\" stroke-linecap=\"round\"/><line x1=\"216.5\" y1=\"132.8\" x2=\"226.5\" y2=\"122.8\" stroke=\"#2563eb\" stroke-width=\"2\" stroke-linecap=\"round\"/><text x=\"213.5\" y=\"119.8\" font-size=\"14\" text-anchor=\"end\" fill=\"#2563eb\" font-weight=\"600\">M</text><line x1=\"216.5\" y1=\"329.0\" x2=\"226.5\" y2=\"339.0\" stroke=\"#2563eb\" stroke-width=\"2\" stroke-linecap=\"round\"/><line x1=\"216.5\" y1=\"339.0\" x2=\"226.5\" y2=\"329.0\" stroke=\"#2563eb\" stroke-width=\"2\" stroke-linecap=\"round\"/><text x=\"229.5\" y=\"326.0\" font-size=\"14\" text-anchor=\"start\" fill=\"#2563eb\" font-weight=\"600\">H</text></svg>",
+      "duree_estimee_min": 15,
+      "questions": [
+        {
+          "key": "q1",
+          "skill_id": "J040",
+          "statement": "Lis sur le graphique le volume d'eau dans la cuve au bout de 2,5 minutes de remplissage.",
+          "type": "numerique",
+          "answer": {
+            "value": 5.5,
+            "unit": "L"
+          },
+          "points": 1,
+          "solution_steps": [
+            "On part de 2,5 sur l'axe des abscisses, à mi-chemin entre 2 et 3, et on monte jusqu'à la droite d.",
+            "Le point atteint est à mi-hauteur entre 5 et 6 : son ordonnée est 5,5.",
+            "Au bout de 2,5 minutes, la cuve contient **5,5 L**. C'est la moitié des 11 L du point M, atteints en deux fois plus de temps."
+          ],
+          "hint": "Repère 2,5 sur l'axe des abscisses, puis lis l'ordonnée du point de d."
+        },
+        {
+          "key": "q2",
+          "skill_id": "G042",
+          "statement": "On admet que les droites (HM) et (KN) sont parallèles. Avec le théorème de Thalès dans les triangles OHM et OKN, calcule KN, l'ordonnée du point N.",
+          "type": "numerique",
+          "answer": {
+            "value": 20.9,
+            "accepted": [
+              "KN = 20,9",
+              "KN=20,9",
+              "20,9 L"
+            ]
+          },
+          "points": 2,
+          "solution_steps": [
+            "O, H, K sont alignés, ainsi que O, M, N, et (HM) est parallèle à (KN) : d'après le théorème de Thalès, $\\dfrac{OH}{OK} = \\dfrac{HM}{KN}$.",
+            "Donc $\\dfrac{5}{9{,}5} = \\dfrac{11}{KN}$, d'où 5 × KN = 11 × 9,5 = 104,5.",
+            "KN = 104,5 ÷ 5 = **20,9** : au bout de 9,5 minutes, la cuve contient 20,9 L."
+          ],
+          "hint": "Écris l'égalité des quotients donnée par le théorème de Thalès, avec les longueurs connues."
+        },
+        {
+          "key": "q3",
+          "skill_id": "E005",
+          "statement": "Combien de minutes faut-il pour verser 44 L dans la cuve ?",
+          "type": "numerique",
+          "answer": {
+            "value": 20,
+            "unit": "min"
+          },
+          "points": 2,
+          "solution_steps": [
+            "La durée est proportionnelle au volume : 5 minutes pour 11 L.",
+            "Égalité des rapports : t ÷ 44 = 5 ÷ 11, donc 11 × t = 44 × 5 = 220.",
+            "t = 220 ÷ 11 = 20 : il faut **20 minutes**."
+          ],
+          "hint": "Écris l'égalité des rapports entre la durée et le volume, avec le point M."
+        },
+        {
+          "key": "q4",
+          "skill_id": "J045",
+          "statement": "Quel est le coefficient de proportionnalité qui donne le volume (en L) à partir de la durée (en min) ?",
+          "type": "numerique",
+          "answer": {
+            "value": 2.2,
+            "accepted": [
+              "2,2 L/min",
+              "2,2 L par minute",
+              "2,2 litres par minute"
+            ]
+          },
+          "points": 2,
+          "solution_steps": [
+            "Le coefficient est le quotient ordonnée ÷ abscisse d'un point de d autre que O : $\\dfrac{HM}{OH}$.",
+            "11 ÷ 5 = 2,2.",
+            "Le coefficient est **2,2** : la cuve reçoit 2,2 L par minute."
+          ],
+          "hint": "Calcule le quotient de l'ordonnée par l'abscisse d'un même point de la droite."
+        },
+        {
+          "key": "q5",
+          "skill_id": "J045",
+          "statement": "Au bout de 6,5 minutes, Sacha lit 14,5 L sur le compteur du tuyau. Le point de coordonnées (6,5 ; 14,5) est-il sur la droite d ? Quelle phrase est juste ?",
+          "type": "qcm",
+          "choices": [
+            {
+              "key": "a",
+              "text": "Oui : de M à ce point, la durée et le volume augmentent tous les deux.",
+              "misconception": "Augmenter ensemble ne suffit pas : pour rester sur d, le volume doit être multiplié par le même nombre que la durée ; de 5 à 6,5, la durée est multipliée par 1,3, et 11 × 1,3 = 14,3, pas 14,5."
+            },
+            {
+              "key": "b",
+              "text": "Non : $\\dfrac{14{,}5}{6{,}5}$ n'est pas égal à $\\dfrac{11}{5}$, donc ce point n'est pas aligné avec O et M.",
+              "misconception": null
+            },
+            {
+              "key": "c",
+              "text": "Oui : placé sur le dessin, ce point paraîtrait très proche de la droite d.",
+              "misconception": "Le dessin n'est pas une preuve : il faut comparer les quotients ordonnée ÷ abscisse."
+            },
+            {
+              "key": "d",
+              "text": "Non : les droites (HM) et (KN) ne sont pas parallèles.",
+              "misconception": "(HM) et (KN) sont toutes deux perpendiculaires à l'axe des abscisses, donc parallèles ; et elles ne disent rien de ce nouveau point."
+            }
+          ],
+          "answer": {
+            "value": "b"
+          },
+          "points": 3,
+          "solution_steps": [
+            "Si ce point était sur d, il serait aligné avec O et M, et ses deux coordonnées auraient le même quotient ordonnée ÷ abscisse que M, d'après le théorème de Thalès.",
+            "11 ÷ 5 = 2,2 et 14,5 ÷ 6,5 = 2,230… : les quotients sont différents.",
+            "Le point n'est pas sur d : au bout de 6,5 minutes, la cuve devrait contenir 6,5 × 2,2 = 14,3 L. La bonne phrase est la **b**."
+          ],
+          "hint": "Compare le quotient ordonnée ÷ abscisse de ce point à celui de M."
+        }
+      ],
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 4, classe de 3e, Proportionnalité, fonctions, Proportionnalité, Objectifs d'apprentissage : « Relier la représentation graphique d'une situation de proportionnalité avec le théorème de Thalès. »"
     },
     {
       "id": "SX-P001-01",
