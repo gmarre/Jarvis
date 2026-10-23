@@ -1,0 +1,180 @@
+[
+  {
+    "id": "EX-E013-D-01",
+    "skill_id": "E013",
+    "level": "decouverte",
+    "type": "numerique",
+    "statement": "Le ticket de cantine passe de 3,50 € à 3,92 €.\n\nCalcule la hausse en euros, puis réponds : de quel pourcentage le prix a-t-il augmenté ?",
+    "image": null,
+    "answer": {
+      "value": 12,
+      "unit": "%"
+    },
+    "solution_steps": [
+      "La hausse en euros : $3{,}92 - 3{,}50 = 0{,}42$ €.",
+      "On la compare au prix de départ, qui vaut 100 % : $0{,}42 \\div 3{,}50 = 0{,}12$.",
+      "$0{,}12 = \\frac{12}{100}$ : le prix a augmenté de **12 %**.",
+      "Autre chemin, avec le coefficient multiplicateur : $3{,}92 \\div 3{,}50 = 1{,}12 = 1 + 0{,}12$, soit une hausse de 12 %.",
+      "Le piège : diviser la hausse par le prix d'arrivée, $0{,}42 \\div 3{,}92 \\approx 0{,}107$, donnerait environ 10,7 %. Le pourcentage d'une hausse se calcule par rapport à la valeur de départ."
+    ],
+    "hint": "Divise la hausse en euros par le prix de départ.",
+    "estimated_duration_s": 90,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, classe de 3e, Proportionnalité, fonctions, Proportionnalité, Objectifs d'apprentissage : « Traduire une augmentation ou une diminution en pourcentages. »"
+  },
+  {
+    "id": "EX-E013-D-02",
+    "skill_id": "E013",
+    "level": "decouverte",
+    "type": "qcm",
+    "statement": "Un musée reçoit 1 800 visiteurs en mai et 1 530 en juin. Le coefficient multiplicateur est $1\\,530 \\div 1\\,800 = 0{,}85$.\n\nDe quel pourcentage la fréquentation a-t-elle baissé ?",
+    "image": null,
+    "choices": [
+      {
+        "key": "a",
+        "text": "85 %",
+        "misconception": "L'élève prend le coefficient multiplicateur pour la baisse. 0,85 signifie qu'il reste 85 % des visiteurs de mai : la baisse est la part qui manque pour aller jusqu'à 100 %."
+      },
+      {
+        "key": "b",
+        "text": "15 %",
+        "misconception": null
+      },
+      {
+        "key": "c",
+        "text": "environ 17,6 %",
+        "misconception": "L'élève divise la baisse, $1\\,800 - 1\\,530 = 270$ visiteurs, par le nombre de juin : $270 \\div 1\\,530 \\approx 0{,}176$. La baisse se rapporte au nombre de départ, celui de mai."
+      }
+    ],
+    "answer": {
+      "value": "b"
+    },
+    "solution_steps": [
+      "Le coefficient 0,85 signifie qu'en juin, le musée reçoit 85 % des visiteurs de mai, car $0{,}85 = \\frac{85}{100}$.",
+      "Il en manque $100\\,\\% - 85\\,\\% = 15\\,\\%$ : la fréquentation a baissé de **15 %**. La bonne réponse est b.",
+      "Contrôle par l'écart : $1\\,800 - 1\\,530 = 270$ visiteurs en moins, et $270 \\div 1\\,800 = 0{,}15$, soit 15 % des visiteurs de mai."
+    ],
+    "hint": "0,85, c'est quel pourcentage des visiteurs de mai ? Combien manque-t-il pour faire 100 % ?",
+    "estimated_duration_s": 60,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, classe de 3e, Proportionnalité, fonctions, Proportionnalité, Objectifs d'apprentissage : « Traduire une augmentation ou une diminution en pourcentages. »"
+  },
+  {
+    "id": "EX-E013-E-01",
+    "skill_id": "E013",
+    "level": "entrainement",
+    "type": "numerique",
+    "statement": "Une voiture achetée 18 500 € est revendue 12 950 € deux ans plus tard.\n\nDe quel pourcentage sa valeur a-t-elle baissé ?",
+    "image": null,
+    "answer": {
+      "value": 30,
+      "unit": "%",
+      "accepted": [
+        "-30",
+        "-30 %",
+        "-30%"
+      ]
+    },
+    "solution_steps": [
+      "Coefficient multiplicateur : $12\\,950 \\div 18\\,500 = 0{,}7$. La voiture vaut 70 % de son prix d'achat.",
+      "Elle a perdu $100\\,\\% - 70\\,\\% = 30\\,\\%$ de sa valeur : une baisse de **30 %**.",
+      "Contrôle par l'écart : $18\\,500 - 12\\,950 = 5\\,550$ €, et $5\\,550 \\div 18\\,500 = 0{,}3$, soit 30 % du prix d'achat.",
+      "Le piège : $5\\,550 \\div 12\\,950 \\approx 0{,}43$, soit environ 43 %, rapporte la baisse au prix de revente au lieu du prix d'achat."
+    ],
+    "hint": "Par quel nombre a-t-on multiplié le prix d'achat pour obtenir le prix de revente ?",
+    "estimated_duration_s": 90,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, classe de 3e, Proportionnalité, fonctions, Proportionnalité, Objectifs d'apprentissage : « Traduire une augmentation ou une diminution en pourcentages. »"
+  },
+  {
+    "id": "EX-E013-E-02",
+    "skill_id": "E013",
+    "level": "entrainement",
+    "type": "vrai_faux",
+    "statement": "Un tee-shirt passe de 40 € à 50 € : c'est une hausse de 25 %.\n\nLucas affirme : « S'il revient de 50 € à 40 €, ce sera une baisse de 25 %. »\n\nLucas a-t-il raison ?",
+    "image": null,
+    "answer": {
+      "value": false
+    },
+    "solution_steps": [
+      "La hausse de 25 % est calculée par rapport au prix de départ, 40 € : $10 \\div 40 = 0{,}25$.",
+      "Pour revenir à 40 €, le prix de départ est 50 € : la baisse de 10 € se rapporte à 50 €. $10 \\div 50 = 0{,}2$, soit une baisse de 20 %.",
+      "Avec le coefficient multiplicateur : $40 \\div 50 = 0{,}8 = 1 - 0{,}2$. Lucas a tort : les mêmes 10 € ne représentent pas le même pourcentage de 40 € et de 50 €."
+    ],
+    "hint": "Par rapport à quel prix calcule-t-on le pourcentage de la baisse ?",
+    "estimated_duration_s": 75,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, classe de 3e, Proportionnalité, fonctions, Proportionnalité, Objectifs d'apprentissage : « Traduire une augmentation ou une diminution en pourcentages. »"
+  },
+  {
+    "id": "EX-E013-M-01",
+    "skill_id": "E013",
+    "level": "maitrise",
+    "type": "qcm",
+    "statement": "Un livre passe de 12 € à 15 €, et un vélo de 300 € à 345 €.\n\nQuelle phrase est juste ?",
+    "image": null,
+    "choices": [
+      {
+        "key": "a",
+        "text": "Le vélo a la plus forte hausse en pourcentage : il a augmenté de 45 €, contre 3 € pour le livre.",
+        "misconception": "L'élève compare les hausses en euros. Un pourcentage rapporte la hausse au prix de départ : 45 € sur 300 €, c'est moins que 3 € sur 12 €."
+      },
+      {
+        "key": "b",
+        "text": "Le livre a augmenté de 20 % et le vélo d'environ 13 %.",
+        "misconception": "L'élève divise la hausse par le prix d'arrivée : $3 \\div 15 = 0{,}2$ et $45 \\div 345 \\approx 0{,}13$. La hausse se rapporte au prix de départ."
+      },
+      {
+        "key": "c",
+        "text": "Le livre a augmenté de 25 % et le vélo de 15 %.",
+        "misconception": null
+      },
+      {
+        "key": "d",
+        "text": "Le livre a augmenté de 125 % et le vélo de 115 %.",
+        "misconception": "L'élève calcule les coefficients multiplicateurs, 1,25 et 1,15, et les lit comme des hausses de 125 % et 115 %. Il oublie de retirer les 100 % du prix de départ."
+      }
+    ],
+    "answer": {
+      "value": "c"
+    },
+    "solution_steps": [
+      "Livre : hausse de $15 - 12 = 3$ €, et $3 \\div 12 = 0{,}25$ : une hausse de 25 %.",
+      "Vélo : hausse de $345 - 300 = 45$ €, et $45 \\div 300 = 0{,}15$ : une hausse de 15 %.",
+      "Avec les coefficients multiplicateurs : $15 \\div 12 = 1{,}25$ et $345 \\div 300 = 1{,}15$. La bonne réponse est c.",
+      "Le vélo a la plus forte hausse en euros, mais le livre a la plus forte hausse en pourcentage : 3 € pèsent plus lourd sur 12 € que 45 € sur 300 €."
+    ],
+    "hint": "Pour chaque objet, rapporte la hausse en euros au prix de départ.",
+    "estimated_duration_s": 120,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, classe de 3e, Proportionnalité, fonctions, Proportionnalité, Objectifs d'apprentissage : « Traduire une augmentation ou une diminution en pourcentages. »"
+  },
+  {
+    "id": "EX-E013-M-02",
+    "skill_id": "E013",
+    "level": "maitrise",
+    "type": "numerique",
+    "statement": "Le prix d'une console baisse de 40 % en janvier, puis augmente de 30 % en mars.\n\nAu total, de quel pourcentage a-t-il baissé par rapport au prix de départ ?",
+    "image": null,
+    "answer": {
+      "value": 22,
+      "unit": "%",
+      "accepted": [
+        "-22",
+        "-22 %",
+        "-22%"
+      ]
+    },
+    "solution_steps": [
+      "Une baisse de 40 % multiplie le prix par $1 - 0{,}4 = 0{,}6$ ; une hausse de 30 % le multiplie par $1 + 0{,}3 = 1{,}3$.",
+      "Les deux évolutions se suivent : le prix est multiplié par 0,6, puis le résultat par 1,3. Au total : $0{,}6 \\times 1{,}3 = 0{,}78$.",
+      "Le prix final vaut 78 % du prix de départ : il a baissé de $100\\,\\% - 78\\,\\% = 22\\,\\%$. Réponse : **22 %**.",
+      "Exemple avec un prix de départ de 100 € : $100 \\times 0{,}6 = 60$ € en janvier, puis $60 \\times 1{,}3 = 78$ € en mars.",
+      "Le piège : calculer $40 - 30 = 10$ et répondre 10 %. La hausse de 30 % porte sur le prix déjà baissé (60 € dans l'exemple), plus petit que le prix de départ : elle rapporte 18 €, et non 30 €."
+    ],
+    "hint": "Écris le coefficient multiplicateur de chaque évolution, puis enchaîne-les.",
+    "estimated_duration_s": 120,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, classe de 3e, Proportionnalité, fonctions, Proportionnalité, Objectifs d'apprentissage : « Traduire une augmentation ou une diminution en pourcentages. »"
+  }
+]

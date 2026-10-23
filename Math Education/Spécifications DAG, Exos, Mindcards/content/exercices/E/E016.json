@@ -1,0 +1,173 @@
+[
+  {
+    "id": "EX-E016-D-01",
+    "skill_id": "E016",
+    "level": "decouverte",
+    "type": "numerique",
+    "statement": "Un cinéma augmente le prix de ses places de 7 %. Augmenter un prix de 7 %, c'est lui ajouter 7 % de sa valeur.\n\nPar quel nombre décimal le prix est-il multiplié ?",
+    "image": null,
+    "answer": {
+      "value": 1.07,
+      "accepted": [
+        "×1,07",
+        "× 1,07",
+        "x1,07",
+        "x 1,07"
+      ]
+    },
+    "solution_steps": [
+      "$7\\,\\% = \\frac{7}{100} = 0{,}07$. Prenons une place à 10 € : on lui ajoute 7 % de 10 €, soit $10 \\times 0{,}07 = 0{,}70$ €. Le nouveau prix vaut $10 + 10 \\times 0{,}07 = 10{,}70$ €.",
+      "Par distributivité, $10 + 10 \\times 0{,}07 = 10 \\times 1 + 10 \\times 0{,}07 = 10 \\times (1 + 0{,}07) = 10 \\times 1{,}07$. Le calcul est le même pour n'importe quel prix : le prix est toujours multiplié par $1 + 0{,}07$.",
+      "Le prix est multiplié par **1,07** : c'est le coefficient multiplicateur d'une hausse de 7 %. En pourcentages : $100\\,\\% + 7\\,\\% = 107\\,\\%$, et $107\\,\\% = 1{,}07$.",
+      "Contrôle : $10 \\times 1{,}07 = 10{,}70$ €, le même nouveau prix. Multiplier par 0,07 donnerait seulement la hausse (0,70 €), pas le nouveau prix."
+    ],
+    "hint": "Le nouveau prix, c'est 100 % de l'ancien prix plus 7 %.",
+    "estimated_duration_s": 60,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, classe de 4e, Proportionnalité, fonctions, Proportionnalité, Objectifs d'apprentissage : « Définir le coefficient multiplicateur. »"
+  },
+  {
+    "id": "EX-E016-D-02",
+    "skill_id": "E016",
+    "level": "decouverte",
+    "type": "qcm",
+    "statement": "Pendant les soldes, un magasin baisse tous ses prix de 35 %.\n\nPar quel nombre multiplie-t-on un prix pour obtenir le prix soldé ?",
+    "image": null,
+    "choices": [
+      {
+        "key": "a",
+        "text": "1,35",
+        "misconception": "L'élève écrit le coefficient d'une hausse de 35 % : il ajoute 0,35 à 1 au lieu de le retrancher. Multiplier par 1,35 ferait monter le prix."
+      },
+      {
+        "key": "b",
+        "text": "0,35",
+        "misconception": "L'élève multiplie par le pourcentage enlevé : le prix multiplié par 0,35 donne le montant de la remise, pas le prix soldé."
+      },
+      {
+        "key": "c",
+        "text": "0,65",
+        "misconception": null
+      },
+      {
+        "key": "d",
+        "text": "0,965",
+        "misconception": "L'élève traduit 35 % par 0,035 au lieu de 0,35, puis le retranche de 1 : $1 - 0{,}035 = 0{,}965$."
+      }
+    ],
+    "answer": {
+      "value": "c"
+    },
+    "solution_steps": [
+      "Baisser un prix de 35 %, c'est lui enlever 35 % de sa valeur : il reste $100\\,\\% - 35\\,\\% = 65\\,\\%$ du prix.",
+      "$65\\,\\% = \\frac{65}{100} = 0{,}65$. Par distributivité, pour un article à 40 € : $40 - 40 \\times 0{,}35 = 40 \\times (1 - 0{,}35) = 40 \\times 0{,}65 = 26$ €. Le calcul est le même pour n'importe quel prix.",
+      "On multiplie par **0,65** : c'est le coefficient multiplicateur d'une baisse de 35 %. Il est plus petit que 1, car le prix diminue. La bonne réponse est c."
+    ],
+    "hint": "Quel pourcentage du prix reste-t-il à payer après la baisse ?",
+    "estimated_duration_s": 45,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, classe de 4e, Proportionnalité, fonctions, Proportionnalité, Objectifs d'apprentissage : « Rendre compte d'une augmentation ou une diminution exprimée en pourcentages au moyen d'un coefficient multiplicateur »"
+  },
+  {
+    "id": "EX-E016-E-01",
+    "skill_id": "E016",
+    "level": "entrainement",
+    "type": "numerique",
+    "statement": "Un vélo électrique coûte 1 450 €. Son prix baisse de 18 %.\n\nEn utilisant le coefficient multiplicateur, calcule son nouveau prix.",
+    "image": null,
+    "answer": {
+      "value": 1189,
+      "unit": "€"
+    },
+    "solution_steps": [
+      "Après une baisse de 18 %, il reste $100\\,\\% - 18\\,\\% = 82\\,\\%$ du prix. Le coefficient multiplicateur est $1 - 0{,}18 = 0{,}82$.",
+      "Nouveau prix : $1\\,450 \\times 0{,}82 = 1\\,189$.",
+      "Le vélo coûte **1 189 €**. Contrôle en deux étapes : la baisse vaut $1\\,450 \\times 0{,}18 = 261$ €, et $1\\,450 - 261 = 1\\,189$ €.",
+      "Le coefficient fait le calcul en une seule multiplication. Multiplier par 0,18 ne donne que la baisse, et multiplier par 1,18 ferait monter le prix."
+    ],
+    "hint": "Quel pourcentage du prix reste-t-il après la baisse ? Écris-le sous forme décimale.",
+    "estimated_duration_s": 90,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, classe de 4e, Proportionnalité, fonctions, Proportionnalité, Objectifs d'apprentissage : « Rendre compte d'une augmentation ou une diminution exprimée en pourcentages au moyen d'un coefficient multiplicateur »"
+  },
+  {
+    "id": "EX-E016-E-02",
+    "skill_id": "E016",
+    "level": "entrainement",
+    "type": "vrai_faux",
+    "statement": "Inès multiplie tous les prix de sa boutique par 0,88.\n\nElle affirme : « J'ai baissé mes prix de 88 %. »\n\nInès a-t-elle raison ?",
+    "image": null,
+    "answer": {
+      "value": false
+    },
+    "solution_steps": [
+      "Multiplier par 0,88, c'est garder 88 % du prix, car $0{,}88 = \\frac{88}{100}$.",
+      "Si l'on garde 88 % du prix, on en enlève $100\\,\\% - 88\\,\\% = 12\\,\\%$ : c'est une baisse de 12 %, pas de 88 %. Inès a tort.",
+      "Exemple : un article à 50 € passe à $50 \\times 0{,}88 = 44$ €. Il perd 6 €, soit 12 % de 50 € ($50 \\times 0{,}12 = 6$). Une baisse de 88 % le ferait tomber à 6 €."
+    ],
+    "hint": "En multipliant par 0,88, quel pourcentage du prix garde-t-on ?",
+    "estimated_duration_s": 60,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, classe de 4e, Proportionnalité, fonctions, Proportionnalité, Objectifs d'apprentissage : « Définir le coefficient multiplicateur. »"
+  },
+  {
+    "id": "EX-E016-M-01",
+    "skill_id": "E016",
+    "level": "maitrise",
+    "type": "numerique",
+    "statement": "Après une baisse de 20 %, un téléviseur coûte 476 €.\n\nQuel était son prix avant la baisse ?",
+    "image": null,
+    "answer": {
+      "value": 595,
+      "unit": "€"
+    },
+    "solution_steps": [
+      "Une baisse de 20 % se traduit par le coefficient multiplicateur $1 - 0{,}2 = 0{,}8$ : prix avant la baisse $\\times\\, 0{,}8 = 476$.",
+      "On retrouve le prix avant la baisse en divisant : $476 \\div 0{,}8 = 595$. Le téléviseur coûtait **595 €**.",
+      "Contrôle : $595 \\times 0{,}8 = 476$. La baisse vaut $595 - 476 = 119$ €, soit 20 % de 595 € ($595 \\times 0{,}2 = 119$).",
+      "Le piège : ajouter 20 % à 476 € donne $476 \\times 1{,}2 = 571{,}20$ €, faux, car la baisse de 20 % était calculée sur le prix de départ, pas sur 476 €."
+    ],
+    "hint": "Écris l'égalité « prix avant la baisse × coefficient = 476 », puis cherche le prix avant la baisse.",
+    "estimated_duration_s": 120,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, classe de 4e, Proportionnalité, fonctions, Proportionnalité, Objectifs d'apprentissage : « Rendre compte d'une augmentation ou une diminution exprimée en pourcentages au moyen d'un coefficient multiplicateur »"
+  },
+  {
+    "id": "EX-E016-M-02",
+    "skill_id": "E016",
+    "level": "maitrise",
+    "type": "qcm",
+    "statement": "En vingt ans, le prix d'un terrain a été multiplié par 2,5.\n\nDe quel pourcentage a-t-il augmenté ?",
+    "image": null,
+    "choices": [
+      {
+        "key": "a",
+        "text": "250 %",
+        "misconception": "L'élève traduit bien 2,5 par 250 %, mais prend ce nombre pour la hausse. 250 %, c'est le nouveau prix rapporté à l'ancien : la hausse est ce qui s'ajoute aux 100 % de départ."
+      },
+      {
+        "key": "b",
+        "text": "150 %",
+        "misconception": null
+      },
+      {
+        "key": "c",
+        "text": "2,5 %",
+        "misconception": "L'élève prend le coefficient multiplicateur lui-même pour le pourcentage. Une hausse de 2,5 % multiplierait le prix par 1,025, pas par 2,5."
+      }
+    ],
+    "answer": {
+      "value": "b"
+    },
+    "solution_steps": [
+      "Multiplier par 2,5, c'est obtenir 250 % du prix de départ, car $2{,}5 = \\frac{250}{100}$.",
+      "Le prix de départ, c'est 100 %. La hausse représente $250\\,\\% - 100\\,\\% = 150\\,\\%$ du prix de départ.",
+      "Avec le coefficient : $2{,}5 = 1 + 1{,}5$, et $1{,}5 = \\frac{150}{100}$. Le prix a augmenté de **150 %**. La bonne réponse est b.",
+      "Exemple : un terrain à 40 000 € passe à $40\\,000 \\times 2{,}5 = 100\\,000$ €. Il gagne 60 000 €, et $60\\,000 \\div 40\\,000 = 1{,}5$, soit 150 % du prix de départ."
+    ],
+    "hint": "En multipliant par 2,5, quel pourcentage du prix de départ obtient-on ? Combien s'est ajouté aux 100 % de départ ?",
+    "estimated_duration_s": 90,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, classe de 4e, Proportionnalité, fonctions, Proportionnalité, Objectifs d'apprentissage : « Rendre compte d'une augmentation ou une diminution exprimée en pourcentages au moyen d'un coefficient multiplicateur »"
+  }
+]

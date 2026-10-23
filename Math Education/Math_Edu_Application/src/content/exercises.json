@@ -3,7 +3,7 @@
     "version": "1.0",
     "scope": "Tranche pilote CP a 4e : 69 exercices, 3 par competence (1 decouverte, 1 entrainement, 1 maitrise) sur les 23 competences des domaines A et C. La cible finale de la roadmap est de 5 exercices par niveau, soit 15 par competence.",
     "updated_at": "2026-07-28",
-    "total_exercises": 1654,
+    "total_exercises": 1672,
     "review_status": "relu_agent"
   },
   "exercises": [
@@ -22773,6 +22773,355 @@
       "programme_ref": "Cycle 3, 6e : appliquer un pourcentage à une grandeur ou à un nombre."
     },
     {
+      "id": "EX-E013-D-01",
+      "skill_id": "E013",
+      "level": "decouverte",
+      "type": "numerique",
+      "statement": "Le ticket de cantine passe de 3,50 € à 3,92 €.\n\nCalcule la hausse en euros, puis réponds : de quel pourcentage le prix a-t-il augmenté ?",
+      "image": null,
+      "answer": {
+        "value": 12,
+        "unit": "%"
+      },
+      "solution_steps": [
+        "La hausse en euros : $3{,}92 - 3{,}50 = 0{,}42$ €.",
+        "On la compare au prix de départ, qui vaut 100 % : $0{,}42 \\div 3{,}50 = 0{,}12$.",
+        "$0{,}12 = \\frac{12}{100}$ : le prix a augmenté de **12 %**.",
+        "Autre chemin, avec le coefficient multiplicateur : $3{,}92 \\div 3{,}50 = 1{,}12 = 1 + 0{,}12$, soit une hausse de 12 %.",
+        "Le piège : diviser la hausse par le prix d'arrivée, $0{,}42 \\div 3{,}92 \\approx 0{,}107$, donnerait environ 10,7 %. Le pourcentage d'une hausse se calcule par rapport à la valeur de départ."
+      ],
+      "hint": "Divise la hausse en euros par le prix de départ.",
+      "estimated_duration_s": 90,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 4, classe de 3e, Proportionnalité, fonctions, Proportionnalité, Objectifs d'apprentissage : « Traduire une augmentation ou une diminution en pourcentages. »"
+    },
+    {
+      "id": "EX-E013-D-02",
+      "skill_id": "E013",
+      "level": "decouverte",
+      "type": "qcm",
+      "statement": "Un musée reçoit 1 800 visiteurs en mai et 1 530 en juin. Le coefficient multiplicateur est $1\\,530 \\div 1\\,800 = 0{,}85$.\n\nDe quel pourcentage la fréquentation a-t-elle baissé ?",
+      "image": null,
+      "choices": [
+        {
+          "key": "a",
+          "text": "85 %",
+          "misconception": "L'élève prend le coefficient multiplicateur pour la baisse. 0,85 signifie qu'il reste 85 % des visiteurs de mai : la baisse est la part qui manque pour aller jusqu'à 100 %."
+        },
+        {
+          "key": "b",
+          "text": "15 %",
+          "misconception": null
+        },
+        {
+          "key": "c",
+          "text": "environ 17,6 %",
+          "misconception": "L'élève divise la baisse, $1\\,800 - 1\\,530 = 270$ visiteurs, par le nombre de juin : $270 \\div 1\\,530 \\approx 0{,}176$. La baisse se rapporte au nombre de départ, celui de mai."
+        }
+      ],
+      "answer": {
+        "value": "b"
+      },
+      "solution_steps": [
+        "Le coefficient 0,85 signifie qu'en juin, le musée reçoit 85 % des visiteurs de mai, car $0{,}85 = \\frac{85}{100}$.",
+        "Il en manque $100\\,\\% - 85\\,\\% = 15\\,\\%$ : la fréquentation a baissé de **15 %**. La bonne réponse est b.",
+        "Contrôle par l'écart : $1\\,800 - 1\\,530 = 270$ visiteurs en moins, et $270 \\div 1\\,800 = 0{,}15$, soit 15 % des visiteurs de mai."
+      ],
+      "hint": "0,85, c'est quel pourcentage des visiteurs de mai ? Combien manque-t-il pour faire 100 % ?",
+      "estimated_duration_s": 60,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 4, classe de 3e, Proportionnalité, fonctions, Proportionnalité, Objectifs d'apprentissage : « Traduire une augmentation ou une diminution en pourcentages. »"
+    },
+    {
+      "id": "EX-E013-E-01",
+      "skill_id": "E013",
+      "level": "entrainement",
+      "type": "numerique",
+      "statement": "Une voiture achetée 18 500 € est revendue 12 950 € deux ans plus tard.\n\nDe quel pourcentage sa valeur a-t-elle baissé ?",
+      "image": null,
+      "answer": {
+        "value": 30,
+        "unit": "%",
+        "accepted": [
+          "-30",
+          "-30 %",
+          "-30%"
+        ]
+      },
+      "solution_steps": [
+        "Coefficient multiplicateur : $12\\,950 \\div 18\\,500 = 0{,}7$. La voiture vaut 70 % de son prix d'achat.",
+        "Elle a perdu $100\\,\\% - 70\\,\\% = 30\\,\\%$ de sa valeur : une baisse de **30 %**.",
+        "Contrôle par l'écart : $18\\,500 - 12\\,950 = 5\\,550$ €, et $5\\,550 \\div 18\\,500 = 0{,}3$, soit 30 % du prix d'achat.",
+        "Le piège : $5\\,550 \\div 12\\,950 \\approx 0{,}43$, soit environ 43 %, rapporte la baisse au prix de revente au lieu du prix d'achat."
+      ],
+      "hint": "Par quel nombre a-t-on multiplié le prix d'achat pour obtenir le prix de revente ?",
+      "estimated_duration_s": 90,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 4, classe de 3e, Proportionnalité, fonctions, Proportionnalité, Objectifs d'apprentissage : « Traduire une augmentation ou une diminution en pourcentages. »"
+    },
+    {
+      "id": "EX-E013-E-02",
+      "skill_id": "E013",
+      "level": "entrainement",
+      "type": "vrai_faux",
+      "statement": "Un tee-shirt passe de 40 € à 50 € : c'est une hausse de 25 %.\n\nLucas affirme : « S'il revient de 50 € à 40 €, ce sera une baisse de 25 %. »\n\nLucas a-t-il raison ?",
+      "image": null,
+      "answer": {
+        "value": false
+      },
+      "solution_steps": [
+        "La hausse de 25 % est calculée par rapport au prix de départ, 40 € : $10 \\div 40 = 0{,}25$.",
+        "Pour revenir à 40 €, le prix de départ est 50 € : la baisse de 10 € se rapporte à 50 €. $10 \\div 50 = 0{,}2$, soit une baisse de 20 %.",
+        "Avec le coefficient multiplicateur : $40 \\div 50 = 0{,}8 = 1 - 0{,}2$. Lucas a tort : les mêmes 10 € ne représentent pas le même pourcentage de 40 € et de 50 €."
+      ],
+      "hint": "Par rapport à quel prix calcule-t-on le pourcentage de la baisse ?",
+      "estimated_duration_s": 75,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 4, classe de 3e, Proportionnalité, fonctions, Proportionnalité, Objectifs d'apprentissage : « Traduire une augmentation ou une diminution en pourcentages. »"
+    },
+    {
+      "id": "EX-E013-M-01",
+      "skill_id": "E013",
+      "level": "maitrise",
+      "type": "qcm",
+      "statement": "Un livre passe de 12 € à 15 €, et un vélo de 300 € à 345 €.\n\nQuelle phrase est juste ?",
+      "image": null,
+      "choices": [
+        {
+          "key": "a",
+          "text": "Le vélo a la plus forte hausse en pourcentage : il a augmenté de 45 €, contre 3 € pour le livre.",
+          "misconception": "L'élève compare les hausses en euros. Un pourcentage rapporte la hausse au prix de départ : 45 € sur 300 €, c'est moins que 3 € sur 12 €."
+        },
+        {
+          "key": "b",
+          "text": "Le livre a augmenté de 20 % et le vélo d'environ 13 %.",
+          "misconception": "L'élève divise la hausse par le prix d'arrivée : $3 \\div 15 = 0{,}2$ et $45 \\div 345 \\approx 0{,}13$. La hausse se rapporte au prix de départ."
+        },
+        {
+          "key": "c",
+          "text": "Le livre a augmenté de 25 % et le vélo de 15 %.",
+          "misconception": null
+        },
+        {
+          "key": "d",
+          "text": "Le livre a augmenté de 125 % et le vélo de 115 %.",
+          "misconception": "L'élève calcule les coefficients multiplicateurs, 1,25 et 1,15, et les lit comme des hausses de 125 % et 115 %. Il oublie de retirer les 100 % du prix de départ."
+        }
+      ],
+      "answer": {
+        "value": "c"
+      },
+      "solution_steps": [
+        "Livre : hausse de $15 - 12 = 3$ €, et $3 \\div 12 = 0{,}25$ : une hausse de 25 %.",
+        "Vélo : hausse de $345 - 300 = 45$ €, et $45 \\div 300 = 0{,}15$ : une hausse de 15 %.",
+        "Avec les coefficients multiplicateurs : $15 \\div 12 = 1{,}25$ et $345 \\div 300 = 1{,}15$. La bonne réponse est c.",
+        "Le vélo a la plus forte hausse en euros, mais le livre a la plus forte hausse en pourcentage : 3 € pèsent plus lourd sur 12 € que 45 € sur 300 €."
+      ],
+      "hint": "Pour chaque objet, rapporte la hausse en euros au prix de départ.",
+      "estimated_duration_s": 120,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 4, classe de 3e, Proportionnalité, fonctions, Proportionnalité, Objectifs d'apprentissage : « Traduire une augmentation ou une diminution en pourcentages. »"
+    },
+    {
+      "id": "EX-E013-M-02",
+      "skill_id": "E013",
+      "level": "maitrise",
+      "type": "numerique",
+      "statement": "Le prix d'une console baisse de 40 % en janvier, puis augmente de 30 % en mars.\n\nAu total, de quel pourcentage a-t-il baissé par rapport au prix de départ ?",
+      "image": null,
+      "answer": {
+        "value": 22,
+        "unit": "%",
+        "accepted": [
+          "-22",
+          "-22 %",
+          "-22%"
+        ]
+      },
+      "solution_steps": [
+        "Une baisse de 40 % multiplie le prix par $1 - 0{,}4 = 0{,}6$ ; une hausse de 30 % le multiplie par $1 + 0{,}3 = 1{,}3$.",
+        "Les deux évolutions se suivent : le prix est multiplié par 0,6, puis le résultat par 1,3. Au total : $0{,}6 \\times 1{,}3 = 0{,}78$.",
+        "Le prix final vaut 78 % du prix de départ : il a baissé de $100\\,\\% - 78\\,\\% = 22\\,\\%$. Réponse : **22 %**.",
+        "Exemple avec un prix de départ de 100 € : $100 \\times 0{,}6 = 60$ € en janvier, puis $60 \\times 1{,}3 = 78$ € en mars.",
+        "Le piège : calculer $40 - 30 = 10$ et répondre 10 %. La hausse de 30 % porte sur le prix déjà baissé (60 € dans l'exemple), plus petit que le prix de départ : elle rapporte 18 €, et non 30 €."
+      ],
+      "hint": "Écris le coefficient multiplicateur de chaque évolution, puis enchaîne-les.",
+      "estimated_duration_s": 120,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 4, classe de 3e, Proportionnalité, fonctions, Proportionnalité, Objectifs d'apprentissage : « Traduire une augmentation ou une diminution en pourcentages. »"
+    },
+    {
+      "id": "EX-E016-D-01",
+      "skill_id": "E016",
+      "level": "decouverte",
+      "type": "numerique",
+      "statement": "Un cinéma augmente le prix de ses places de 7 %. Augmenter un prix de 7 %, c'est lui ajouter 7 % de sa valeur.\n\nPar quel nombre décimal le prix est-il multiplié ?",
+      "image": null,
+      "answer": {
+        "value": 1.07,
+        "accepted": [
+          "×1,07",
+          "× 1,07",
+          "x1,07",
+          "x 1,07"
+        ]
+      },
+      "solution_steps": [
+        "$7\\,\\% = \\frac{7}{100} = 0{,}07$. Prenons une place à 10 € : on lui ajoute 7 % de 10 €, soit $10 \\times 0{,}07 = 0{,}70$ €. Le nouveau prix vaut $10 + 10 \\times 0{,}07 = 10{,}70$ €.",
+        "Par distributivité, $10 + 10 \\times 0{,}07 = 10 \\times 1 + 10 \\times 0{,}07 = 10 \\times (1 + 0{,}07) = 10 \\times 1{,}07$. Le calcul est le même pour n'importe quel prix : le prix est toujours multiplié par $1 + 0{,}07$.",
+        "Le prix est multiplié par **1,07** : c'est le coefficient multiplicateur d'une hausse de 7 %. En pourcentages : $100\\,\\% + 7\\,\\% = 107\\,\\%$, et $107\\,\\% = 1{,}07$.",
+        "Contrôle : $10 \\times 1{,}07 = 10{,}70$ €, le même nouveau prix. Multiplier par 0,07 donnerait seulement la hausse (0,70 €), pas le nouveau prix."
+      ],
+      "hint": "Le nouveau prix, c'est 100 % de l'ancien prix plus 7 %.",
+      "estimated_duration_s": 60,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 4, classe de 4e, Proportionnalité, fonctions, Proportionnalité, Objectifs d'apprentissage : « Définir le coefficient multiplicateur. »"
+    },
+    {
+      "id": "EX-E016-D-02",
+      "skill_id": "E016",
+      "level": "decouverte",
+      "type": "qcm",
+      "statement": "Pendant les soldes, un magasin baisse tous ses prix de 35 %.\n\nPar quel nombre multiplie-t-on un prix pour obtenir le prix soldé ?",
+      "image": null,
+      "choices": [
+        {
+          "key": "a",
+          "text": "1,35",
+          "misconception": "L'élève écrit le coefficient d'une hausse de 35 % : il ajoute 0,35 à 1 au lieu de le retrancher. Multiplier par 1,35 ferait monter le prix."
+        },
+        {
+          "key": "b",
+          "text": "0,35",
+          "misconception": "L'élève multiplie par le pourcentage enlevé : le prix multiplié par 0,35 donne le montant de la remise, pas le prix soldé."
+        },
+        {
+          "key": "c",
+          "text": "0,65",
+          "misconception": null
+        },
+        {
+          "key": "d",
+          "text": "0,965",
+          "misconception": "L'élève traduit 35 % par 0,035 au lieu de 0,35, puis le retranche de 1 : $1 - 0{,}035 = 0{,}965$."
+        }
+      ],
+      "answer": {
+        "value": "c"
+      },
+      "solution_steps": [
+        "Baisser un prix de 35 %, c'est lui enlever 35 % de sa valeur : il reste $100\\,\\% - 35\\,\\% = 65\\,\\%$ du prix.",
+        "$65\\,\\% = \\frac{65}{100} = 0{,}65$. Par distributivité, pour un article à 40 € : $40 - 40 \\times 0{,}35 = 40 \\times (1 - 0{,}35) = 40 \\times 0{,}65 = 26$ €. Le calcul est le même pour n'importe quel prix.",
+        "On multiplie par **0,65** : c'est le coefficient multiplicateur d'une baisse de 35 %. Il est plus petit que 1, car le prix diminue. La bonne réponse est c."
+      ],
+      "hint": "Quel pourcentage du prix reste-t-il à payer après la baisse ?",
+      "estimated_duration_s": 45,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 4, classe de 4e, Proportionnalité, fonctions, Proportionnalité, Objectifs d'apprentissage : « Rendre compte d'une augmentation ou une diminution exprimée en pourcentages au moyen d'un coefficient multiplicateur »"
+    },
+    {
+      "id": "EX-E016-E-01",
+      "skill_id": "E016",
+      "level": "entrainement",
+      "type": "numerique",
+      "statement": "Un vélo électrique coûte 1 450 €. Son prix baisse de 18 %.\n\nEn utilisant le coefficient multiplicateur, calcule son nouveau prix.",
+      "image": null,
+      "answer": {
+        "value": 1189,
+        "unit": "€"
+      },
+      "solution_steps": [
+        "Après une baisse de 18 %, il reste $100\\,\\% - 18\\,\\% = 82\\,\\%$ du prix. Le coefficient multiplicateur est $1 - 0{,}18 = 0{,}82$.",
+        "Nouveau prix : $1\\,450 \\times 0{,}82 = 1\\,189$.",
+        "Le vélo coûte **1 189 €**. Contrôle en deux étapes : la baisse vaut $1\\,450 \\times 0{,}18 = 261$ €, et $1\\,450 - 261 = 1\\,189$ €.",
+        "Le coefficient fait le calcul en une seule multiplication. Multiplier par 0,18 ne donne que la baisse, et multiplier par 1,18 ferait monter le prix."
+      ],
+      "hint": "Quel pourcentage du prix reste-t-il après la baisse ? Écris-le sous forme décimale.",
+      "estimated_duration_s": 90,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 4, classe de 4e, Proportionnalité, fonctions, Proportionnalité, Objectifs d'apprentissage : « Rendre compte d'une augmentation ou une diminution exprimée en pourcentages au moyen d'un coefficient multiplicateur »"
+    },
+    {
+      "id": "EX-E016-E-02",
+      "skill_id": "E016",
+      "level": "entrainement",
+      "type": "vrai_faux",
+      "statement": "Inès multiplie tous les prix de sa boutique par 0,88.\n\nElle affirme : « J'ai baissé mes prix de 88 %. »\n\nInès a-t-elle raison ?",
+      "image": null,
+      "answer": {
+        "value": false
+      },
+      "solution_steps": [
+        "Multiplier par 0,88, c'est garder 88 % du prix, car $0{,}88 = \\frac{88}{100}$.",
+        "Si l'on garde 88 % du prix, on en enlève $100\\,\\% - 88\\,\\% = 12\\,\\%$ : c'est une baisse de 12 %, pas de 88 %. Inès a tort.",
+        "Exemple : un article à 50 € passe à $50 \\times 0{,}88 = 44$ €. Il perd 6 €, soit 12 % de 50 € ($50 \\times 0{,}12 = 6$). Une baisse de 88 % le ferait tomber à 6 €."
+      ],
+      "hint": "En multipliant par 0,88, quel pourcentage du prix garde-t-on ?",
+      "estimated_duration_s": 60,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 4, classe de 4e, Proportionnalité, fonctions, Proportionnalité, Objectifs d'apprentissage : « Définir le coefficient multiplicateur. »"
+    },
+    {
+      "id": "EX-E016-M-01",
+      "skill_id": "E016",
+      "level": "maitrise",
+      "type": "numerique",
+      "statement": "Après une baisse de 20 %, un téléviseur coûte 476 €.\n\nQuel était son prix avant la baisse ?",
+      "image": null,
+      "answer": {
+        "value": 595,
+        "unit": "€"
+      },
+      "solution_steps": [
+        "Une baisse de 20 % se traduit par le coefficient multiplicateur $1 - 0{,}2 = 0{,}8$ : prix avant la baisse $\\times\\, 0{,}8 = 476$.",
+        "On retrouve le prix avant la baisse en divisant : $476 \\div 0{,}8 = 595$. Le téléviseur coûtait **595 €**.",
+        "Contrôle : $595 \\times 0{,}8 = 476$. La baisse vaut $595 - 476 = 119$ €, soit 20 % de 595 € ($595 \\times 0{,}2 = 119$).",
+        "Le piège : ajouter 20 % à 476 € donne $476 \\times 1{,}2 = 571{,}20$ €, faux, car la baisse de 20 % était calculée sur le prix de départ, pas sur 476 €."
+      ],
+      "hint": "Écris l'égalité « prix avant la baisse × coefficient = 476 », puis cherche le prix avant la baisse.",
+      "estimated_duration_s": 120,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 4, classe de 4e, Proportionnalité, fonctions, Proportionnalité, Objectifs d'apprentissage : « Rendre compte d'une augmentation ou une diminution exprimée en pourcentages au moyen d'un coefficient multiplicateur »"
+    },
+    {
+      "id": "EX-E016-M-02",
+      "skill_id": "E016",
+      "level": "maitrise",
+      "type": "qcm",
+      "statement": "En vingt ans, le prix d'un terrain a été multiplié par 2,5.\n\nDe quel pourcentage a-t-il augmenté ?",
+      "image": null,
+      "choices": [
+        {
+          "key": "a",
+          "text": "250 %",
+          "misconception": "L'élève traduit bien 2,5 par 250 %, mais prend ce nombre pour la hausse. 250 %, c'est le nouveau prix rapporté à l'ancien : la hausse est ce qui s'ajoute aux 100 % de départ."
+        },
+        {
+          "key": "b",
+          "text": "150 %",
+          "misconception": null
+        },
+        {
+          "key": "c",
+          "text": "2,5 %",
+          "misconception": "L'élève prend le coefficient multiplicateur lui-même pour le pourcentage. Une hausse de 2,5 % multiplierait le prix par 1,025, pas par 2,5."
+        }
+      ],
+      "answer": {
+        "value": "b"
+      },
+      "solution_steps": [
+        "Multiplier par 2,5, c'est obtenir 250 % du prix de départ, car $2{,}5 = \\frac{250}{100}$.",
+        "Le prix de départ, c'est 100 %. La hausse représente $250\\,\\% - 100\\,\\% = 150\\,\\%$ du prix de départ.",
+        "Avec le coefficient : $2{,}5 = 1 + 1{,}5$, et $1{,}5 = \\frac{150}{100}$. Le prix a augmenté de **150 %**. La bonne réponse est b.",
+        "Exemple : un terrain à 40 000 € passe à $40\\,000 \\times 2{,}5 = 100\\,000$ €. Il gagne 60 000 €, et $60\\,000 \\div 40\\,000 = 1{,}5$, soit 150 % du prix de départ."
+      ],
+      "hint": "En multipliant par 2,5, quel pourcentage du prix de départ obtient-on ? Combien s'est ajouté aux 100 % de départ ?",
+      "estimated_duration_s": 90,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 4, classe de 4e, Proportionnalité, fonctions, Proportionnalité, Objectifs d'apprentissage : « Rendre compte d'une augmentation ou une diminution exprimée en pourcentages au moyen d'un coefficient multiplicateur »"
+    },
+    {
       "id": "EX-E023-D-01",
       "skill_id": "E023",
       "level": "decouverte",
@@ -25070,6 +25419,186 @@
       "estimated_duration_s": 90,
       "review_status": "relu_agent",
       "programme_ref": "Cycle 4, 5e : prendre 1 %, 10 % ou 50 % d'un nombre, en lien avec la proportionnalité."
+    },
+    {
+      "id": "EX-E039-D-01",
+      "skill_id": "E039",
+      "level": "decouverte",
+      "type": "numerique",
+      "statement": "Un théâtre compte 840 places, dont 35 % au balcon.\n\nPrendre 35 % d'un nombre, c'est le multiplier par $\\frac{35}{100}$, c'est-à-dire par 0,35. Combien de places y a-t-il au balcon ?",
+      "image": null,
+      "answer": {
+        "value": 294,
+        "accepted": [
+          "294 places"
+        ]
+      },
+      "solution_steps": [
+        "Ici, on connaît le total (840 places) et le pourcentage (35 %) : on cherche la part.",
+        "35 % des places, c'est $\\frac{35}{100}$ des places : on multiplie le nombre total de places par 0,35. $840 \\times 0{,}35 = 294$.",
+        "Il y a **294 places** au balcon.",
+        "Contrôle avec des pourcentages faciles : 10 % de 840, c'est 84 ; 30 %, c'est $3 \\times 84 = 252$ ; 5 %, c'est la moitié de 84, soit 42. Donc 35 % de 840 font $252 + 42 = 294$.",
+        "Les autres places, $840 - 294 = 546$, sont les 65 % restants ($100 - 35 = 65$) : les places du balcon et les autres font bien 100 % du théâtre."
+      ],
+      "hint": "Commence par 10 % de 840, puis assemble 35 % avec des 10 % et 5 %.",
+      "estimated_duration_s": 60,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 4, classe de 4e, Proportionnalité, fonctions, Proportionnalité, Objectifs d'apprentissage : « Calculer avec des pourcentages. »"
+    },
+    {
+      "id": "EX-E039-D-02",
+      "skill_id": "E039",
+      "level": "decouverte",
+      "type": "qcm",
+      "statement": "Sur les 1 250 coureurs d'un semi-marathon, 75 ont abandonné en route.\n\nQuel pourcentage des coureurs a abandonné ?",
+      "image": null,
+      "choices": [
+        {
+          "key": "a",
+          "text": "0,06 %",
+          "misconception": "L'élève calcule bien $75 \\div 1\\,250 = 0{,}06$, mais oublie de passer au pourcentage : 0,06, c'est 6 centièmes, donc 6 %, et non 0,06 %."
+        },
+        {
+          "key": "b",
+          "text": "environ 16,7 %",
+          "misconception": "L'élève divise le total par la part, $1\\,250 \\div 75 \\approx 16{,}7$, au lieu de diviser la part par le total."
+        },
+        {
+          "key": "c",
+          "text": "6 %",
+          "misconception": null
+        },
+        {
+          "key": "d",
+          "text": "75 %",
+          "misconception": "L'élève prend le nombre d'abandons pour un pourcentage. 75 % voudrait dire 75 coureurs sur 100, soit les trois quarts des coureurs : bien plus que 75 coureurs sur 1 250."
+        }
+      ],
+      "answer": {
+        "value": "c"
+      },
+      "solution_steps": [
+        "On connaît la part (75 abandons) et le total (1 250 coureurs) : on cherche le pourcentage. On divise la partie par le tout : $75 \\div 1\\,250 = 0{,}06$.",
+        "$0{,}06 = \\frac{6}{100}$ : cela fait 6 coureurs sur 100, soit **6 %**. La bonne réponse est c.",
+        "Contrôle : 1 % de 1 250, c'est $1\\,250 \\div 100 = 12{,}5$ ; 6 %, c'est $6 \\times 12{,}5 = 75$. On retrouve bien les 75 abandons."
+      ],
+      "hint": "Combien de coureurs représente 1 % des 1 250 coureurs ?",
+      "estimated_duration_s": 60,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 4, classe de 4e, Proportionnalité, fonctions, Proportionnalité, Objectifs d'apprentissage : « Calculer avec des pourcentages. »"
+    },
+    {
+      "id": "EX-E039-E-01",
+      "skill_id": "E039",
+      "level": "entrainement",
+      "type": "numerique",
+      "statement": "Dans un sondage, 182 personnes ont répondu « oui », soit 65 % des personnes interrogées.\n\nCombien de personnes ont été interrogées ?",
+      "image": null,
+      "answer": {
+        "value": 280,
+        "accepted": [
+          "280 personnes"
+        ]
+      },
+      "solution_steps": [
+        "On connaît la part (182 personnes) et le pourcentage (65 %) : on cherche le total. Il ne s'agit pas de calculer 65 % de 182.",
+        "Le total, c'est 100 % ; 182 n'en représente que 65 %. En notant N le nombre de personnes interrogées : $0{,}65 \\times N = 182$.",
+        "On retrouve N par la division : $N = 182 \\div 0{,}65 = 280$. On a interrogé **280 personnes**.",
+        "Contrôle : 65 % de 280, c'est $280 \\times 0{,}65 = 182$. Le total est bien plus grand que la part."
+      ],
+      "hint": "182 n'est qu'une partie des personnes interrogées : le total est-il plus grand ou plus petit que 182 ?",
+      "estimated_duration_s": 90,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 4, classe de 4e, Proportionnalité, fonctions, Proportionnalité, Objectifs d'apprentissage : « Calculer avec des pourcentages. »"
+    },
+    {
+      "id": "EX-E039-E-02",
+      "skill_id": "E039",
+      "level": "entrainement",
+      "type": "vrai_faux",
+      "statement": "Une plante mesurait 16 cm en mai et 20 cm en juin.\n\nTom affirme : « En juin, sa taille représente 125 % de sa taille de mai. »\n\nTom a-t-il raison ?",
+      "image": null,
+      "answer": {
+        "value": true
+      },
+      "solution_steps": [
+        "On compare la taille de juin à celle de mai : la taille de mai est la référence, elle vaut 100 %. On divise donc par 16 : $20 \\div 16 = 1{,}25$.",
+        "$1{,}25 = \\frac{125}{100}$ : la taille de juin représente 125 % de la taille de mai. Tom a raison.",
+        "Un pourcentage peut dépasser 100 % : la plante a grandi, sa taille de juin dépasse la taille de référence.",
+        "Calculer $16 \\div 20 = 0{,}8$ donnerait 80 % : c'est la taille de mai rapportée à celle de juin, l'autre comparaison."
+      ],
+      "hint": "Quelle taille joue le rôle des 100 % ?",
+      "estimated_duration_s": 60,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 4, classe de 4e, Proportionnalité, fonctions, Proportionnalité, Objectifs d'apprentissage : « Calculer avec des pourcentages. »"
+    },
+    {
+      "id": "EX-E039-M-01",
+      "skill_id": "E039",
+      "level": "maitrise",
+      "type": "numerique",
+      "statement": "Dans un collège, 42 % des élèves viennent à pied, 43 % en bus, et les 105 autres à vélo.\n\nCombien d'élèves compte ce collège ?",
+      "image": null,
+      "answer": {
+        "value": 700,
+        "accepted": [
+          "700 élèves"
+        ]
+      },
+      "solution_steps": [
+        "Tous les élèves forment 100 %. Ceux qui viennent à vélo représentent $100 - 42 - 43 = 15$, soit 15 % des élèves.",
+        "15 % du total valent 105 élèves. En notant N le nombre d'élèves : $0{,}15 \\times N = 105$, donc $N = 105 \\div 0{,}15 = 700$.",
+        "Autre chemin : 1 % des élèves, c'est $105 \\div 15 = 7$ élèves ; 100 %, c'est $7 \\times 100 = 700$ élèves.",
+        "Le collège compte **700 élèves**. Contrôle : $700 \\times 0{,}42 = 294$ à pied, $700 \\times 0{,}43 = 301$ en bus, et $294 + 301 + 105 = 700$.",
+        "Le piège : 105 élèves ne sont pas 100 %. Calculer 15 % de 105, ou 42 % de 105, n'a pas de sens ici."
+      ],
+      "hint": "Quel pourcentage des élèves vient à vélo ?",
+      "estimated_duration_s": 120,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 4, classe de 4e, Proportionnalité, fonctions, Proportionnalité, Objectifs d'apprentissage : « Calculer avec des pourcentages. »"
+    },
+    {
+      "id": "EX-E039-M-02",
+      "skill_id": "E039",
+      "level": "maitrise",
+      "type": "qcm",
+      "statement": "Cette année, un club de randonnée compte 180 adhérents, soit 120 % du nombre d'adhérents de l'an dernier.\n\nCombien d'adhérents le club comptait-il l'an dernier ?",
+      "image": null,
+      "choices": [
+        {
+          "key": "a",
+          "text": "216",
+          "misconception": "L'élève calcule 120 % de 180 ($180 \\times 1{,}2 = 216$) au lieu de chercher le nombre dont 120 % valent 180. Il trouve plus que 180, alors que le club a grandi : l'an dernier, il comptait moins de 180 adhérents."
+        },
+        {
+          "key": "b",
+          "text": "150",
+          "misconception": null
+        },
+        {
+          "key": "c",
+          "text": "144",
+          "misconception": "L'élève enlève 20 % de 180 ($180 - 36 = 144$). Mais les 20 % de plus étaient calculés sur le nombre de l'an dernier, pas sur 180."
+        },
+        {
+          "key": "d",
+          "text": "60",
+          "misconception": "L'élève soustrait le pourcentage au nombre d'adhérents ($180 - 120 = 60$), comme si 120 % était un nombre d'adhérents."
+        }
+      ],
+      "answer": {
+        "value": "b"
+      },
+      "solution_steps": [
+        "Le nombre de l'an dernier est la référence : il vaut 100 %. Celui de cette année, 180, en représente 120 % : il est plus grand, donc le nombre cherché est plus petit que 180.",
+        "En notant N le nombre d'adhérents de l'an dernier : $1{,}2 \\times N = 180$, car $120\\,\\% = \\frac{120}{100} = 1{,}2$.",
+        "$N = 180 \\div 1{,}2 = 150$. Le club comptait **150 adhérents**. La bonne réponse est b.",
+        "Contrôle : 10 % de 150, c'est 15 ; 20 %, c'est 30 ; donc 120 % de 150 font $150 + 30 = 180$. Enlever 20 % de 180 donne 144, pas 150 : les 20 % ne se calculent pas sur le même nombre."
+      ],
+      "hint": "Quel nombre vaut 100 % : 180, ou le nombre cherché ?",
+      "estimated_duration_s": 120,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 4, classe de 4e, Proportionnalité, fonctions, Proportionnalité, Objectifs d'apprentissage : « Calculer avec des pourcentages. »"
     },
     {
       "id": "EX-F002-D-01",

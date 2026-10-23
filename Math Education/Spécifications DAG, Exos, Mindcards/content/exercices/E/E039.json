@@ -1,0 +1,182 @@
+[
+  {
+    "id": "EX-E039-D-01",
+    "skill_id": "E039",
+    "level": "decouverte",
+    "type": "numerique",
+    "statement": "Un théâtre compte 840 places, dont 35 % au balcon.\n\nPrendre 35 % d'un nombre, c'est le multiplier par $\\frac{35}{100}$, c'est-à-dire par 0,35. Combien de places y a-t-il au balcon ?",
+    "image": null,
+    "answer": {
+      "value": 294,
+      "accepted": [
+        "294 places"
+      ]
+    },
+    "solution_steps": [
+      "Ici, on connaît le total (840 places) et le pourcentage (35 %) : on cherche la part.",
+      "35 % des places, c'est $\\frac{35}{100}$ des places : on multiplie le nombre total de places par 0,35. $840 \\times 0{,}35 = 294$.",
+      "Il y a **294 places** au balcon.",
+      "Contrôle avec des pourcentages faciles : 10 % de 840, c'est 84 ; 30 %, c'est $3 \\times 84 = 252$ ; 5 %, c'est la moitié de 84, soit 42. Donc 35 % de 840 font $252 + 42 = 294$.",
+      "Les autres places, $840 - 294 = 546$, sont les 65 % restants ($100 - 35 = 65$) : les places du balcon et les autres font bien 100 % du théâtre."
+    ],
+    "hint": "Commence par 10 % de 840, puis assemble 35 % avec des 10 % et 5 %.",
+    "estimated_duration_s": 60,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, classe de 4e, Proportionnalité, fonctions, Proportionnalité, Objectifs d'apprentissage : « Calculer avec des pourcentages. »"
+  },
+  {
+    "id": "EX-E039-D-02",
+    "skill_id": "E039",
+    "level": "decouverte",
+    "type": "qcm",
+    "statement": "Sur les 1 250 coureurs d'un semi-marathon, 75 ont abandonné en route.\n\nQuel pourcentage des coureurs a abandonné ?",
+    "image": null,
+    "choices": [
+      {
+        "key": "a",
+        "text": "0,06 %",
+        "misconception": "L'élève calcule bien $75 \\div 1\\,250 = 0{,}06$, mais oublie de passer au pourcentage : 0,06, c'est 6 centièmes, donc 6 %, et non 0,06 %."
+      },
+      {
+        "key": "b",
+        "text": "environ 16,7 %",
+        "misconception": "L'élève divise le total par la part, $1\\,250 \\div 75 \\approx 16{,}7$, au lieu de diviser la part par le total."
+      },
+      {
+        "key": "c",
+        "text": "6 %",
+        "misconception": null
+      },
+      {
+        "key": "d",
+        "text": "75 %",
+        "misconception": "L'élève prend le nombre d'abandons pour un pourcentage. 75 % voudrait dire 75 coureurs sur 100, soit les trois quarts des coureurs : bien plus que 75 coureurs sur 1 250."
+      }
+    ],
+    "answer": {
+      "value": "c"
+    },
+    "solution_steps": [
+      "On connaît la part (75 abandons) et le total (1 250 coureurs) : on cherche le pourcentage. On divise la partie par le tout : $75 \\div 1\\,250 = 0{,}06$.",
+      "$0{,}06 = \\frac{6}{100}$ : cela fait 6 coureurs sur 100, soit **6 %**. La bonne réponse est c.",
+      "Contrôle : 1 % de 1 250, c'est $1\\,250 \\div 100 = 12{,}5$ ; 6 %, c'est $6 \\times 12{,}5 = 75$. On retrouve bien les 75 abandons."
+    ],
+    "hint": "Combien de coureurs représente 1 % des 1 250 coureurs ?",
+    "estimated_duration_s": 60,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, classe de 4e, Proportionnalité, fonctions, Proportionnalité, Objectifs d'apprentissage : « Calculer avec des pourcentages. »"
+  },
+  {
+    "id": "EX-E039-E-01",
+    "skill_id": "E039",
+    "level": "entrainement",
+    "type": "numerique",
+    "statement": "Dans un sondage, 182 personnes ont répondu « oui », soit 65 % des personnes interrogées.\n\nCombien de personnes ont été interrogées ?",
+    "image": null,
+    "answer": {
+      "value": 280,
+      "accepted": [
+        "280 personnes"
+      ]
+    },
+    "solution_steps": [
+      "On connaît la part (182 personnes) et le pourcentage (65 %) : on cherche le total. Il ne s'agit pas de calculer 65 % de 182.",
+      "Le total, c'est 100 % ; 182 n'en représente que 65 %. En notant N le nombre de personnes interrogées : $0{,}65 \\times N = 182$.",
+      "On retrouve N par la division : $N = 182 \\div 0{,}65 = 280$. On a interrogé **280 personnes**.",
+      "Contrôle : 65 % de 280, c'est $280 \\times 0{,}65 = 182$. Le total est bien plus grand que la part."
+    ],
+    "hint": "182 n'est qu'une partie des personnes interrogées : le total est-il plus grand ou plus petit que 182 ?",
+    "estimated_duration_s": 90,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, classe de 4e, Proportionnalité, fonctions, Proportionnalité, Objectifs d'apprentissage : « Calculer avec des pourcentages. »"
+  },
+  {
+    "id": "EX-E039-E-02",
+    "skill_id": "E039",
+    "level": "entrainement",
+    "type": "vrai_faux",
+    "statement": "Une plante mesurait 16 cm en mai et 20 cm en juin.\n\nTom affirme : « En juin, sa taille représente 125 % de sa taille de mai. »\n\nTom a-t-il raison ?",
+    "image": null,
+    "answer": {
+      "value": true
+    },
+    "solution_steps": [
+      "On compare la taille de juin à celle de mai : la taille de mai est la référence, elle vaut 100 %. On divise donc par 16 : $20 \\div 16 = 1{,}25$.",
+      "$1{,}25 = \\frac{125}{100}$ : la taille de juin représente 125 % de la taille de mai. Tom a raison.",
+      "Un pourcentage peut dépasser 100 % : la plante a grandi, sa taille de juin dépasse la taille de référence.",
+      "Calculer $16 \\div 20 = 0{,}8$ donnerait 80 % : c'est la taille de mai rapportée à celle de juin, l'autre comparaison."
+    ],
+    "hint": "Quelle taille joue le rôle des 100 % ?",
+    "estimated_duration_s": 60,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, classe de 4e, Proportionnalité, fonctions, Proportionnalité, Objectifs d'apprentissage : « Calculer avec des pourcentages. »"
+  },
+  {
+    "id": "EX-E039-M-01",
+    "skill_id": "E039",
+    "level": "maitrise",
+    "type": "numerique",
+    "statement": "Dans un collège, 42 % des élèves viennent à pied, 43 % en bus, et les 105 autres à vélo.\n\nCombien d'élèves compte ce collège ?",
+    "image": null,
+    "answer": {
+      "value": 700,
+      "accepted": [
+        "700 élèves"
+      ]
+    },
+    "solution_steps": [
+      "Tous les élèves forment 100 %. Ceux qui viennent à vélo représentent $100 - 42 - 43 = 15$, soit 15 % des élèves.",
+      "15 % du total valent 105 élèves. En notant N le nombre d'élèves : $0{,}15 \\times N = 105$, donc $N = 105 \\div 0{,}15 = 700$.",
+      "Autre chemin : 1 % des élèves, c'est $105 \\div 15 = 7$ élèves ; 100 %, c'est $7 \\times 100 = 700$ élèves.",
+      "Le collège compte **700 élèves**. Contrôle : $700 \\times 0{,}42 = 294$ à pied, $700 \\times 0{,}43 = 301$ en bus, et $294 + 301 + 105 = 700$.",
+      "Le piège : 105 élèves ne sont pas 100 %. Calculer 15 % de 105, ou 42 % de 105, n'a pas de sens ici."
+    ],
+    "hint": "Quel pourcentage des élèves vient à vélo ?",
+    "estimated_duration_s": 120,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, classe de 4e, Proportionnalité, fonctions, Proportionnalité, Objectifs d'apprentissage : « Calculer avec des pourcentages. »"
+  },
+  {
+    "id": "EX-E039-M-02",
+    "skill_id": "E039",
+    "level": "maitrise",
+    "type": "qcm",
+    "statement": "Cette année, un club de randonnée compte 180 adhérents, soit 120 % du nombre d'adhérents de l'an dernier.\n\nCombien d'adhérents le club comptait-il l'an dernier ?",
+    "image": null,
+    "choices": [
+      {
+        "key": "a",
+        "text": "216",
+        "misconception": "L'élève calcule 120 % de 180 ($180 \\times 1{,}2 = 216$) au lieu de chercher le nombre dont 120 % valent 180. Il trouve plus que 180, alors que le club a grandi : l'an dernier, il comptait moins de 180 adhérents."
+      },
+      {
+        "key": "b",
+        "text": "150",
+        "misconception": null
+      },
+      {
+        "key": "c",
+        "text": "144",
+        "misconception": "L'élève enlève 20 % de 180 ($180 - 36 = 144$). Mais les 20 % de plus étaient calculés sur le nombre de l'an dernier, pas sur 180."
+      },
+      {
+        "key": "d",
+        "text": "60",
+        "misconception": "L'élève soustrait le pourcentage au nombre d'adhérents ($180 - 120 = 60$), comme si 120 % était un nombre d'adhérents."
+      }
+    ],
+    "answer": {
+      "value": "b"
+    },
+    "solution_steps": [
+      "Le nombre de l'an dernier est la référence : il vaut 100 %. Celui de cette année, 180, en représente 120 % : il est plus grand, donc le nombre cherché est plus petit que 180.",
+      "En notant N le nombre d'adhérents de l'an dernier : $1{,}2 \\times N = 180$, car $120\\,\\% = \\frac{120}{100} = 1{,}2$.",
+      "$N = 180 \\div 1{,}2 = 150$. Le club comptait **150 adhérents**. La bonne réponse est b.",
+      "Contrôle : 10 % de 150, c'est 15 ; 20 %, c'est 30 ; donc 120 % de 150 font $150 + 30 = 180$. Enlever 20 % de 180 donne 144, pas 150 : les 20 % ne se calculent pas sur le même nombre."
+    ],
+    "hint": "Quel nombre vaut 100 % : 180, ou le nombre cherché ?",
+    "estimated_duration_s": 120,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, classe de 4e, Proportionnalité, fonctions, Proportionnalité, Objectifs d'apprentissage : « Calculer avec des pourcentages. »"
+  }
+]
