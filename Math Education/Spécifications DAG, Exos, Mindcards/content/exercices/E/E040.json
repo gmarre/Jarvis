@@ -1,0 +1,154 @@
+[
+  {
+    "id": "EX-E040-D-01",
+    "skill_id": "E040",
+    "level": "decouverte",
+    "type": "numerique",
+    "statement": "Léa et Tom se partagent 160 €. Sur la bande, chaque case vaut la même somme : coloriée pour Léa, blanche pour Tom. Combien reçoit Léa, en euros ?",
+    "image": "figures/EX-E040-D-01",
+    "answer": {
+      "value": 60,
+      "unit": "€"
+    },
+    "solution_steps": [
+      "On compte les cases : 3 coloriées pour Léa, 5 blanches pour Tom, soit 8 cases. Le partage se fait dans le ratio Léa : Tom 3 : 5.",
+      "Les 160 € sont répartis en 8 cases égales : une case vaut $160 \\div 8 = 20$ €.",
+      "Léa reçoit 3 cases : $3 \\times 20 = 60$. Léa reçoit **60 €**.",
+      "Contrôle : Tom reçoit $5 \\times 20 = 100$ €, et 60 + 100 = 160. Partager en deux (80 € chacun) ne respecte pas le nombre de cases de chacun."
+    ],
+    "hint": "Combien de cases en tout ? Combien vaut une case ?",
+    "estimated_duration_s": 60,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, classe de 4e, Proportionnalité, fonctions, Proportionnalité, Objectifs d'apprentissage : « Résoudre des problèmes de partage proportionnel. »"
+  },
+  {
+    "id": "EX-E040-D-02",
+    "skill_id": "E040",
+    "level": "decouverte",
+    "type": "qcm",
+    "statement": "Paul et Inès se partagent 72 € dans le ratio Paul : Inès 5 : 4. Combien reçoit Paul ?",
+    "image": null,
+    "choices": [
+      {
+        "key": "a",
+        "text": "36 €",
+        "misconception": "L'élève partage en deux parts égales (72 ÷ 2) sans tenir compte du ratio."
+      },
+      {
+        "key": "b",
+        "text": "32 €",
+        "misconception": "L'élève calcule bien une part (72 ÷ 9 = 8) mais inverse l'ordre du ratio : 4 × 8 = 32 € est la part d'Inès."
+      },
+      {
+        "key": "c",
+        "text": "40 €",
+        "misconception": null
+      },
+      {
+        "key": "d",
+        "text": "14,40 €",
+        "misconception": "L'élève divise 72 par un seul nombre du ratio (72 ÷ 5) au lieu du nombre total de parts, 5 + 4 = 9."
+      }
+    ],
+    "answer": {
+      "value": "c"
+    },
+    "solution_steps": [
+      "Le ratio 5 : 4 signifie : 5 parts pour Paul, 4 parts pour Inès, soit 5 + 4 = 9 parts égales.",
+      "Une part vaut $72 \\div 9 = 8$ €.",
+      "Paul reçoit 5 parts : $5 \\times 8 = 40$ €. Bonne réponse : c.",
+      "Contrôle : Inès reçoit $4 \\times 8 = 32$ €, et 40 + 32 = 72."
+    ],
+    "hint": "En combien de parts égales les 72 € sont-ils partagés ?",
+    "estimated_duration_s": 60,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, classe de 4e, Proportionnalité, fonctions, Proportionnalité, Objectifs d'apprentissage : « Résoudre des problèmes de partage proportionnel. »"
+  },
+  {
+    "id": "EX-E040-E-01",
+    "skill_id": "E040",
+    "level": "entrainement",
+    "type": "numerique",
+    "statement": "Pour un lot de jeux, Ana paie 12 €, Ben 18 € et Cléo 30 €. Ils le revendent 150 € et partagent proportionnellement aux mises. Combien reçoit Cléo ?",
+    "image": null,
+    "answer": {
+      "value": 75,
+      "unit": "€"
+    },
+    "solution_steps": [
+      "Ana paie 12 €, Ben 18 € et Cléo 30 € : les mises sont dans le ratio 12 : 18 : 30. En divisant les trois nombres par 6, c'est le ratio 2 : 3 : 5.",
+      "Le partage se fait en 2 + 3 + 5 = 10 parts égales : une part vaut $150 \\div 10 = 15$ €.",
+      "Cléo a 5 parts : $5 \\times 15 = 75$. Cléo reçoit **75 €**.",
+      "Contrôle : Ana reçoit $2 \\times 15 = 30$ €, Ben $3 \\times 15 = 45$ €, et 30 + 45 + 75 = 150. Partager en trois (50 € chacun) ne tient pas compte des mises."
+    ],
+    "hint": "Simplifie d'abord le ratio des mises 12 : 18 : 30.",
+    "estimated_duration_s": 120,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, classe de 4e, Proportionnalité, fonctions, Proportionnalité, Objectifs d'apprentissage : « Résoudre des problèmes de partage proportionnel. »"
+  },
+  {
+    "id": "EX-E040-E-02",
+    "skill_id": "E040",
+    "level": "entrainement",
+    "type": "numerique",
+    "statement": "Pour un mortier, on mélange ciment, sable et eau dans le ratio 2 : 5 : 1, en masse. On veut 36 kg de mortier. Quelle masse de sable faut-il, en kg ?",
+    "image": null,
+    "answer": {
+      "value": 22.5,
+      "unit": "kg"
+    },
+    "solution_steps": [
+      "Ciment, sable et eau : 2 + 5 + 1 = 8 parts égales.",
+      "Une part pèse $36 \\div 8 = 4{,}5$ kg.",
+      "Le sable compte 5 parts : $5 \\times 4{,}5 = 22{,}5$. Il faut **22,5 kg** de sable.",
+      "Contrôle : ciment $2 \\times 4{,}5 = 9$ kg, eau 4,5 kg, et 9 + 22,5 + 4,5 = 36. Diviser 36 par 3 (12 kg chacun) ou par 5 oublie le ratio."
+    ],
+    "hint": "Combien de parts en tout ? Quelle masse pour une part ?",
+    "estimated_duration_s": 90,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, classe de 4e, Proportionnalité, fonctions, Proportionnalité, Objectifs d'apprentissage : « Résoudre des problèmes de partage proportionnel. »"
+  },
+  {
+    "id": "EX-E040-M-01",
+    "skill_id": "E040",
+    "level": "maitrise",
+    "type": "vrai_faux",
+    "statement": "Deux sœurs se partagent une somme dans le ratio 5 : 8. La plus jeune, qui a la petite part, reçoit 75 €. L'aînée affirme : « Nous avons partagé 195 €. » A-t-elle raison ?",
+    "image": null,
+    "answer": {
+      "value": true
+    },
+    "solution_steps": [
+      "La plus jeune a 5 parts et reçoit 75 € : une part vaut $75 \\div 5 = 15$ €.",
+      "L'aînée a 8 parts : $8 \\times 15 = 120$ €.",
+      "La somme partagée compte 5 + 8 = 13 parts : $13 \\times 15 = 195$ €.",
+      "L'aînée a **raison** : la somme partagée est bien 195 €. Contrôle : 75 + 120 = 195. Piège : 120 € est la part de l'aînée, pas la somme partagée."
+    ],
+    "hint": "Combien vaut une part ? Combien de parts compte la somme entière ?",
+    "estimated_duration_s": 90,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, classe de 4e, Proportionnalité, fonctions, Proportionnalité, Objectifs d'apprentissage : « Résoudre des problèmes de partage proportionnel. »"
+  },
+  {
+    "id": "EX-E040-M-02",
+    "skill_id": "E040",
+    "level": "maitrise",
+    "type": "numerique",
+    "statement": "Alice et Bruno se partagent un bénéfice dans le ratio Alice : Bruno 7 : 4. Alice reçoit 600 € de plus que Bruno. Combien reçoit Bruno, en euros ?",
+    "image": null,
+    "answer": {
+      "value": 800,
+      "unit": "€"
+    },
+    "solution_steps": [
+      "Alice a 7 parts, Bruno 4 parts : Alice a 7 − 4 = 3 parts de plus que Bruno.",
+      "Ces 3 parts valent 600 € : une part vaut $600 \\div 3 = 200$ €.",
+      "Bruno a 4 parts : $4 \\times 200 = 800$. Bruno reçoit **800 €**.",
+      "Contrôle : Alice reçoit $7 \\times 200 = 1\\,400$ €, 1 400 − 800 = 600 et $\\frac{1\\,400}{800} = \\frac{7}{4}$. Diviser 600 € en 11 parts serait faux : 600 € n'est pas le bénéfice entier, seulement l'écart."
+    ],
+    "hint": "Combien de parts Alice a-t-elle de plus que Bruno ? Que valent ces parts ?",
+    "estimated_duration_s": 150,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, classe de 4e, Proportionnalité, fonctions, Proportionnalité, Objectifs d'apprentissage : « Résoudre des problèmes de partage proportionnel. »"
+  }
+]

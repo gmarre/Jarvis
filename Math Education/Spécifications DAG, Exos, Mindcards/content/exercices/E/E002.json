@@ -1,0 +1,173 @@
+[
+  {
+    "id": "EX-E002-D-01",
+    "skill_id": "E002",
+    "level": "decouverte",
+    "type": "vrai_faux",
+    "statement": "Voici deux suites de nombres.\n\n$$\\begin{array}{|l|c|c|c|} \\hline \\text{Suite 1} & 4 & 10 & 18 \\\\ \\hline \\text{Suite 2} & 6 & 15 & 27 \\\\ \\hline \\end{array}$$\n\nSimplifie les rapports $\\frac{4}{6}$, $\\frac{10}{15}$ et $\\frac{18}{27}$. Affirmation : les deux suites sont proportionnelles.",
+    "image": null,
+    "answer": {
+      "value": true
+    },
+    "solution_steps": [
+      "Deux suites sont proportionnelles quand tous les rapports d'un nombre de la suite 1 au nombre correspondant de la suite 2 sont égaux.",
+      "$\\frac{4}{6} = \\frac{2}{3}$ (on divise par 2) ; $\\frac{10}{15} = \\frac{2}{3}$ (par 5) ; $\\frac{18}{27} = \\frac{2}{3}$ (par 9).",
+      "Les trois rapports sont égaux : $\\frac{4}{6} = \\frac{10}{15} = \\frac{18}{27}$. Les suites sont proportionnelles, l'affirmation est **vraie**.",
+      "On dit que les suites sont dans le ratio 2 : 3 : chaque nombre de la suite 1 vaut les deux tiers du nombre correspondant de la suite 2."
+    ],
+    "hint": "Simplifie chaque fraction. Les suites sont proportionnelles si les trois fractions simplifiées sont égales.",
+    "estimated_duration_s": 75,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, classe de 4e, Proportionnalité, fonctions, Proportionnalité, Objectifs d'apprentissage : « Exprimer la proportionnalité entre deux suites de nombres par des égalités de rapports ou sous forme de ratio. »"
+  },
+  {
+    "id": "EX-E002-D-02",
+    "skill_id": "E002",
+    "level": "decouverte",
+    "type": "numerique",
+    "statement": "Complète l'égalité de rapports $\\frac{5}{8} = \\frac{\\ldots}{56}$. Quel nombre manque ?",
+    "image": null,
+    "answer": {
+      "value": 35
+    },
+    "solution_steps": [
+      "On passe du dénominateur 8 au dénominateur 56 en multipliant par 7, car $8 \\times 7 = 56$.",
+      "Pour que les deux rapports restent égaux, on multiplie le numérateur par le même nombre : $5 \\times 7 = 35$.",
+      "$\\frac{5}{8} = \\frac{35}{56}$ : le nombre manquant est **35**.",
+      "Erreur à éviter : ajouter 48 en haut comme en bas (5 + 48 = 53). $\\frac{53}{56}$ n'est pas égal à $\\frac{5}{8}$ : il est presque égal à 1."
+    ],
+    "hint": "Par quel nombre multiplie-t-on 8 pour obtenir 56 ?",
+    "estimated_duration_s": 45,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, classe de 4e, Proportionnalité, fonctions, Proportionnalité, Objectifs d'apprentissage : « Exprimer la proportionnalité entre deux suites de nombres par des égalités de rapports ou sous forme de ratio. »"
+  },
+  {
+    "id": "EX-E002-E-01",
+    "skill_id": "E002",
+    "level": "entrainement",
+    "type": "qcm",
+    "statement": "Dans quel cas les deux suites sont-elles proportionnelles ? Vérifie chaque colonne.",
+    "image": null,
+    "choices": [
+      {
+        "key": "a",
+        "text": "3 ; 5 ; 8 et 6 ; 10 ; 15",
+        "misconception": "L'élève vérifie seulement les deux premières colonnes ($3 \\times 2 = 6$, $5 \\times 2 = 10$) et conclut sans voir que $8 \\times 2 = 16$, pas 15."
+      },
+      {
+        "key": "b",
+        "text": "2 ; 4 ; 6 et 5 ; 7 ; 9",
+        "misconception": "L'élève voit qu'on ajoute 3 à chaque nombre et prend ce modèle additif pour de la proportionnalité ; or $\\frac{2}{5}$ n'est pas égal à $\\frac{4}{7}$."
+      },
+      {
+        "key": "c",
+        "text": "1,5 ; 2,5 ; 4 et 6 ; 10 ; 16",
+        "misconception": null
+      },
+      {
+        "key": "d",
+        "text": "2 ; 3 ; 5 et 4 ; 9 ; 25",
+        "misconception": "L'élève voit deux suites qui augmentent ensemble et les croit proportionnelles ; or $\\frac{4}{2} = 2$ et $\\frac{9}{3} = 3$ ne sont pas égaux."
+      }
+    ],
+    "answer": {
+      "value": "c"
+    },
+    "solution_steps": [
+      "Deux suites sont proportionnelles quand on passe de chaque nombre de la première au nombre correspondant de la seconde en multipliant par le même nombre : tous les rapports sont égaux.",
+      "c : $1{,}5 \\times 4 = 6$ ; $2{,}5 \\times 4 = 10$ ; $4 \\times 4 = 16$. Tous les rapports valent 4 : les suites sont proportionnelles.",
+      "a : $3 \\times 2 = 6$ et $5 \\times 2 = 10$, mais $8 \\times 2 = 16$, pas 15 : une seule colonne suffit à refuser. b : on ajoute 3, on ne multiplie pas ($2 \\times 2{,}5 = 5$ mais $4 \\times 2{,}5 = 10$, pas 7). d : $\\frac{4}{2} = 2$ mais $\\frac{9}{3} = 3$.",
+      "Bonne réponse : c."
+    ],
+    "hint": "Pour chaque proposition, cherche par quel nombre on multiplie le premier nombre pour obtenir le second, puis vérifie toutes les colonnes.",
+    "estimated_duration_s": 120,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, classe de 4e, Proportionnalité, fonctions, Proportionnalité, Objectifs d'apprentissage : « Exprimer la proportionnalité entre deux suites de nombres par des égalités de rapports ou sous forme de ratio. »"
+  },
+  {
+    "id": "EX-E002-E-02",
+    "skill_id": "E002",
+    "level": "entrainement",
+    "type": "numerique",
+    "statement": "Les longueurs des trois côtés d'un triangle sont dans le ratio 3 : 4 : 5. Le plus petit côté mesure 7,5 cm. Combien mesure le plus grand côté, en cm ?",
+    "image": null,
+    "answer": {
+      "value": 12.5,
+      "unit": "cm"
+    },
+    "solution_steps": [
+      "Les côtés a, b, c sont dans le ratio 3 : 4 : 5 : cela signifie $\\frac{a}{3} = \\frac{b}{4} = \\frac{c}{5}$.",
+      "Pour le plus petit côté : $\\frac{7{,}5}{3} = 2{,}5$. Chaque part du ratio vaut 2,5 cm.",
+      "Le plus grand côté compte 5 parts : $5 \\times 2{,}5 = 12{,}5$. Il mesure **12,5 cm**.",
+      "Contrôle : le côté moyen mesure $4 \\times 2{,}5 = 10$ cm, et $\\frac{7{,}5}{3} = \\frac{10}{4} = \\frac{12{,}5}{5}$. Ajouter 2 cm à 7,5 cm, parce que 5 − 3 = 2, donnerait 9,5 cm : c'est un raisonnement additif, faux ici."
+    ],
+    "hint": "Si 3 parts du ratio font 7,5 cm, combien vaut une part ?",
+    "estimated_duration_s": 90,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, classe de 4e, Proportionnalité, fonctions, Proportionnalité, Objectifs d'apprentissage : « Exprimer la proportionnalité entre deux suites de nombres par des égalités de rapports ou sous forme de ratio. »"
+  },
+  {
+    "id": "EX-E002-M-01",
+    "skill_id": "E002",
+    "level": "maitrise",
+    "type": "qcm",
+    "statement": "On compare deux suites.\n\n$$\\begin{array}{|l|c|c|c|} \\hline \\text{Suite 1} & 20 & 35 & 45 \\\\ \\hline \\text{Suite 2} & 8 & 14 & 18 \\\\ \\hline \\end{array}$$\n\nQuelle phrase est juste ?",
+    "image": null,
+    "choices": [
+      {
+        "key": "a",
+        "text": "Elles ne sont pas proportionnelles, car $\\frac{20}{8}$ n'est pas égal à $\\frac{14}{35}$.",
+        "misconception": "L'élève écrit le deuxième rapport à l'envers (suite 2 sur suite 1) : il change l'ordre des rapports d'une colonne à l'autre."
+      },
+      {
+        "key": "b",
+        "text": "Elles sont proportionnelles ; le ratio suite 1 : suite 2 est 5 : 2.",
+        "misconception": null
+      },
+      {
+        "key": "c",
+        "text": "Elles sont proportionnelles ; le ratio suite 1 : suite 2 est 2 : 5.",
+        "misconception": "L'élève trouve bien des rapports égaux mais écrit le ratio dans l'ordre inverse : 2 : 5 compare la suite 2 à la suite 1."
+      },
+      {
+        "key": "d",
+        "text": "Elles ne sont pas proportionnelles, car $35 - 20$ n'est pas égal à $14 - 8$.",
+        "misconception": "L'élève compare des différences (15 et 6) au lieu des quotients : deux suites proportionnelles n'ont pas des écarts égaux."
+      }
+    ],
+    "answer": {
+      "value": "b"
+    },
+    "solution_steps": [
+      "On calcule les rapports dans le même ordre pour chaque colonne : suite 1 sur suite 2.",
+      "$\\frac{20}{8} = \\frac{5}{2}$ (on divise par 4) ; $\\frac{35}{14} = \\frac{5}{2}$ (par 7) ; $\\frac{45}{18} = \\frac{5}{2}$ (par 9).",
+      "Les trois rapports sont égaux : les suites sont proportionnelles, et le ratio suite 1 : suite 2 est 5 : 2. Bonne réponse : b.",
+      "a mélange l'ordre ($\\frac{14}{35}$ est un rapport suite 2 sur suite 1) ; c inverse le ratio ; d compare des écarts, qui ne disent rien de la proportionnalité."
+    ],
+    "hint": "Écris chaque rapport dans le même ordre, suite 1 sur suite 2, puis simplifie.",
+    "estimated_duration_s": 120,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, classe de 4e, Proportionnalité, fonctions, Proportionnalité, Objectifs d'apprentissage : « Exprimer la proportionnalité entre deux suites de nombres par des égalités de rapports ou sous forme de ratio. »"
+  },
+  {
+    "id": "EX-E002-M-02",
+    "skill_id": "E002",
+    "level": "maitrise",
+    "type": "vrai_faux",
+    "statement": "Un magasin affiche le prix de lots de stylos.\n\n$$\\begin{array}{|l|c|c|c|} \\hline \\text{Nombre de stylos} & 10 & 15 & 22 \\\\ \\hline \\text{Prix (euros)} & 14 & 21 & 30 \\\\ \\hline \\end{array}$$\n\nLou affirme : « Le ratio prix : nombre de stylos est 7 : 5. » A-t-elle raison ?",
+    "image": null,
+    "answer": {
+      "value": false
+    },
+    "solution_steps": [
+      "Pour que le ratio prix : nombre de stylos soit 7 : 5, chaque rapport prix/nombre doit être égal à $\\frac{7}{5}$, dans toutes les colonnes.",
+      "$\\frac{14}{10} = \\frac{7}{5}$ et $\\frac{21}{15} = \\frac{7}{5}$ : les deux premières colonnes conviennent.",
+      "Troisième colonne : $\\frac{30}{22} = \\frac{15}{11}$. Au dénominateur 55 : $\\frac{7}{5} = \\frac{77}{55}$ et $\\frac{15}{11} = \\frac{75}{55}$. Ces rapports ne sont pas égaux.",
+      "Une seule colonne suffit à refuser : le prix n'est pas proportionnel au nombre de stylos (au tarif des deux premiers lots, 22 stylos coûteraient $22 \\times 1{,}4 = 30{,}8$ €). Lou a **tort**."
+    ],
+    "hint": "Calcule le rapport prix/nombre de stylos dans chacune des trois colonnes, pas seulement dans les deux premières.",
+    "estimated_duration_s": 120,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, classe de 4e, Proportionnalité, fonctions, Proportionnalité, Objectifs d'apprentissage : « Exprimer la proportionnalité entre deux suites de nombres par des égalités de rapports ou sous forme de ratio. »"
+  }
+]

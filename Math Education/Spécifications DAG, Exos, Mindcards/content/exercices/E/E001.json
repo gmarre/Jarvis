@@ -1,0 +1,190 @@
+[
+  {
+    "id": "EX-E001-D-01",
+    "skill_id": "E001",
+    "level": "decouverte",
+    "type": "qcm",
+    "statement": "Noé prépare une boisson. Sur la bande, une case est un verre : coloriée pour le sirop, blanche pour l'eau. Quelle phrase est juste ?",
+    "image": "figures/EX-E001-D-01",
+    "choices": [
+      {
+        "key": "a",
+        "text": "Le ratio sirop : eau est 2 : 9, et le sirop fait $\\frac{2}{9}$ de la boisson.",
+        "misconception": "L'élève compare le sirop à toute la boisson (2 cases sur 9) au lieu de le comparer à l'eau : la part est juste, le ratio est faux."
+      },
+      {
+        "key": "b",
+        "text": "Le ratio sirop : eau est 2 : 7, et le sirop fait $\\frac{2}{7}$ de la boisson.",
+        "misconception": "L'élève prend le ratio sirop : eau pour la part de sirop : il divise par le nombre de verres d'eau (7) au lieu du nombre total de verres (9)."
+      },
+      {
+        "key": "c",
+        "text": "Le ratio sirop : eau est 2 : 9, et le sirop fait $\\frac{2}{7}$ de la boisson.",
+        "misconception": "L'élève échange les deux notions : il compare le sirop à toute la boisson pour le ratio (2 : 9), et à l'eau pour la part ($\\frac{2}{7}$)."
+      },
+      {
+        "key": "d",
+        "text": "Le ratio sirop : eau est 2 : 7, et le sirop fait $\\frac{2}{9}$ de la boisson.",
+        "misconception": null
+      }
+    ],
+    "answer": {
+      "value": "d"
+    },
+    "solution_steps": [
+      "On compte les cases : 2 coloriées (le sirop) et 7 blanches (l'eau), soit 9 verres en tout.",
+      "Le ratio sirop : eau compare le sirop à l'eau, dans cet ordre : 2 verres de sirop pour 7 verres d'eau, c'est 2 : 7.",
+      "La part de sirop compare le sirop à toute la boisson : 2 verres sur 9, c'est $\\frac{2}{9}$ de la boisson.",
+      "Le ratio 2 : 7 compare deux parties entre elles ; la fraction $\\frac{2}{9}$ compare une partie au tout. Bonne réponse : d."
+    ],
+    "hint": "Compte les cases coloriées, les cases blanches, puis toutes les cases. Le ratio sirop : eau compare deux parties ; la part de sirop compare une partie au tout.",
+    "estimated_duration_s": 75,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, classe de 4e, Proportionnalité, fonctions, Proportionnalité, Objectifs d'apprentissage : « Comparer deux nombres ou deux grandeurs à l'aide de leur rapport ou ratio. »"
+  },
+  {
+    "id": "EX-E001-D-02",
+    "skill_id": "E001",
+    "level": "decouverte",
+    "type": "numerique",
+    "statement": "Une affiche mesure 45 cm de haut et 20 cm de large. Donne, en écriture décimale, le rapport de la hauteur à la largeur (hauteur ÷ largeur).",
+    "image": null,
+    "answer": {
+      "value": 2.25,
+      "unit": null,
+      "accepted": [
+        "2,25 fois",
+        "2.25 fois"
+      ]
+    },
+    "solution_steps": [
+      "Les deux longueurs sont dans la même unité (cm) : leur rapport est un nombre sans unité.",
+      "Rapport de la hauteur à la largeur : $\\frac{45}{20}$. On simplifie par 5 : $\\frac{45}{20} = \\frac{9}{4}$.",
+      "$9 \\div 4 = 2{,}25$. Le rapport vaut **2,25** : la hauteur vaut 2,25 fois la largeur.",
+      "Attention à l'ordre : « de la hauteur à la largeur » se calcule hauteur ÷ largeur. Le quotient $\\frac{20}{45}$ est le rapport de la largeur à la hauteur, et l'écart 45 − 20 = 25 cm n'est pas un rapport."
+    ],
+    "hint": "Divise la hauteur par la largeur. Tu peux d'abord simplifier la fraction.",
+    "estimated_duration_s": 60,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, classe de 4e, Proportionnalité, fonctions, Proportionnalité, Objectifs d'apprentissage : « Comparer deux nombres ou deux grandeurs à l'aide de leur rapport ou ratio. »"
+  },
+  {
+    "id": "EX-E001-E-01",
+    "skill_id": "E001",
+    "level": "entrainement",
+    "type": "vrai_faux",
+    "statement": "Mélange A : ratio jus : eau 3 : 4 ; mélange B : ratio 5 : 6. Hugo : « Même goût, chacun ayant un verre d'eau de plus que de jus. » A-t-il raison ?",
+    "image": null,
+    "answer": {
+      "value": false
+    },
+    "solution_steps": [
+      "Hugo compare des différences (4 − 3 = 1 et 6 − 5 = 1). Or le goût dépend de la quantité de jus pour une même quantité d'eau : il faut comparer des quotients.",
+      "Rapport jus/eau : $\\frac{3}{4}$ pour A et $\\frac{5}{6}$ pour B. Au dénominateur commun 12 : $\\frac{3}{4} = \\frac{9}{12}$ et $\\frac{5}{6} = \\frac{10}{12}$.",
+      "$\\frac{10}{12} > \\frac{9}{12}$ : B contient plus de jus pour la même quantité d'eau, il est plus fruité. Hugo a **tort**.",
+      "Un exemple extrême le montre : un mélange 1 : 2 et un mélange 10 : 11 ont chacun un verre d'eau de plus que de jus, et pourtant le second est presque du jus pur."
+    ],
+    "hint": "Compare les quotients jus ÷ eau, pas les différences. Mets les deux fractions au même dénominateur.",
+    "estimated_duration_s": 90,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, classe de 4e, Proportionnalité, fonctions, Proportionnalité, Objectifs d'apprentissage : « Comparer deux nombres ou deux grandeurs à l'aide de leur rapport ou ratio. »"
+  },
+  {
+    "id": "EX-E001-E-02",
+    "skill_id": "E001",
+    "level": "entrainement",
+    "type": "numerique",
+    "statement": "Dans une chorale, le ratio filles : garçons est 7 : 13. Quel pourcentage des membres de la chorale sont des filles ?",
+    "image": null,
+    "answer": {
+      "value": 35,
+      "unit": "%"
+    },
+    "solution_steps": [
+      "Le ratio 7 : 13 signifie : 7 filles pour 13 garçons. Dans chaque groupe de 7 + 13 = 20 membres, il y a 7 filles.",
+      "La part des filles est donc $\\frac{7}{20}$ des membres, et non $\\frac{7}{13}$, qui compare les filles aux garçons.",
+      "$\\frac{7}{20} = \\frac{35}{100}$ (on multiplie le numérateur et le dénominateur par 5), soit 35 %.",
+      "Les filles représentent **35 %** des membres. Contrôle : les garçons font $\\frac{13}{20} = \\frac{65}{100}$, soit 65 %, et 35 + 65 = 100."
+    ],
+    "hint": "Sur combien de membres compte-t-on 7 filles ? Écris la part des filles sous forme de fraction, puis en pourcentage.",
+    "estimated_duration_s": 90,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, classe de 4e, Proportionnalité, fonctions, Proportionnalité, Objectifs d'apprentissage : « Comparer deux nombres ou deux grandeurs à l'aide de leur rapport ou ratio. »"
+  },
+  {
+    "id": "EX-E001-M-01",
+    "skill_id": "E001",
+    "level": "maitrise",
+    "type": "qcm",
+    "statement": "Pour faire du vert, on mélange du bleu et du jaune. Pot A : 3 L de bleu pour 7 L de jaune ; B : 4 L pour 9 L ; C : 5 L pour 12 L. Quel vert est le plus bleu ?",
+    "image": null,
+    "choices": [
+      {
+        "key": "a",
+        "text": "Celui du pot A",
+        "misconception": "L'élève compare les différences jaune − bleu (4 L pour A, 5 L pour B, 7 L pour C) et croit que le plus petit écart donne le vert le plus bleu."
+      },
+      {
+        "key": "b",
+        "text": "Celui du pot B",
+        "misconception": null
+      },
+      {
+        "key": "c",
+        "text": "Celui du pot C",
+        "misconception": "L'élève regarde seulement la quantité de bleu (5 L, la plus grande) sans la rapporter à la quantité de jaune."
+      }
+    ],
+    "answer": {
+      "value": "b"
+    },
+    "solution_steps": [
+      "La couleur dépend de la quantité de bleu pour une même quantité de jaune : on compare les rapports bleu/jaune $\\frac{3}{7}$, $\\frac{4}{9}$ et $\\frac{5}{12}$.",
+      "A et B : au dénominateur 63, $\\frac{3}{7} = \\frac{27}{63}$ et $\\frac{4}{9} = \\frac{28}{63}$. Le vert B est plus bleu que le vert A.",
+      "B et C : au dénominateur 36, $\\frac{4}{9} = \\frac{16}{36}$ et $\\frac{5}{12} = \\frac{15}{36}$. Le vert B est plus bleu que le vert C.",
+      "Le pot B donne le vert le plus bleu. Bonne réponse : b. Le pot C contient le plus de bleu, mais aussi bien plus de jaune ; les écarts (4 L, 5 L, 7 L) ne disent rien de la couleur."
+    ],
+    "hint": "Pour chaque pot, écris le rapport bleu/jaune sous forme de fraction, puis compare ces fractions deux à deux.",
+    "estimated_duration_s": 150,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, classe de 4e, Proportionnalité, fonctions, Proportionnalité, Objectifs d'apprentissage : « Comparer deux nombres ou deux grandeurs à l'aide de leur rapport ou ratio. »"
+  },
+  {
+    "id": "EX-E001-M-02",
+    "skill_id": "E001",
+    "level": "maitrise",
+    "type": "qcm",
+    "statement": "Dans un club de judo, 45 % des membres sont des filles. Quel est le ratio filles : garçons, simplifié ?",
+    "image": null,
+    "choices": [
+      {
+        "key": "a",
+        "text": "9 : 11",
+        "misconception": null
+      },
+      {
+        "key": "b",
+        "text": "9 : 20",
+        "misconception": "L'élève prend la part des filles dans le club (45 sur 100, soit $\\frac{9}{20}$) pour le ratio filles : garçons : il compare les filles à tous les membres au lieu des seuls garçons."
+      },
+      {
+        "key": "c",
+        "text": "11 : 9",
+        "misconception": "L'élève inverse l'ordre : 11 : 9 est le ratio garçons : filles."
+      }
+    ],
+    "answer": {
+      "value": "a"
+    },
+    "solution_steps": [
+      "Prenons 100 membres : 45 sont des filles, donc 100 − 45 = 55 sont des garçons.",
+      "Ratio filles : garçons : 45 : 55. On le simplifie comme une fraction, en divisant les deux nombres par 5 : $\\frac{45}{55} = \\frac{9}{11}$.",
+      "Le ratio filles : garçons est **9 : 11** : 9 filles pour 11 garçons. Bonne réponse : a.",
+      "Contrôle : dans chaque groupe de 9 + 11 = 20 membres, il y a 9 filles, soit $\\frac{9}{20} = \\frac{45}{100}$ des membres, c'est-à-dire 45 %."
+    ],
+    "hint": "Imagine un club de 100 membres. Combien de filles, combien de garçons ?",
+    "estimated_duration_s": 90,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, classe de 4e, Proportionnalité, fonctions, Proportionnalité, Objectifs d'apprentissage : « Comparer deux nombres ou deux grandeurs à l'aide de leur rapport ou ratio. »"
+  }
+]

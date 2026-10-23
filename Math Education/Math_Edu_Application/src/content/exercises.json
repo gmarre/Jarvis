@@ -3,7 +3,7 @@
     "version": "1.0",
     "scope": "Tranche pilote CP a 4e : 69 exercices, 3 par competence (1 decouverte, 1 entrainement, 1 maitrise) sur les 23 competences des domaines A et C. La cible finale de la roadmap est de 5 exercices par niveau, soit 15 par competence.",
     "updated_at": "2026-07-28",
-    "total_exercises": 1672,
+    "total_exercises": 1696,
     "review_status": "relu_agent"
   },
   "exercises": [
@@ -22053,6 +22053,365 @@
       "programme_ref": "Cycle 4, classe de 5e, Nombres et calculs, Opérations : « Diviser par un nombre décimal. »"
     },
     {
+      "id": "EX-E001-D-01",
+      "skill_id": "E001",
+      "level": "decouverte",
+      "type": "qcm",
+      "statement": "Noé prépare une boisson. Sur la bande, une case est un verre : coloriée pour le sirop, blanche pour l'eau. Quelle phrase est juste ?",
+      "image": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 352 92\" width=\"352\" height=\"92\" font-family=\"system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif\" role=\"img\"><title>Bande partagée en cases égales, certaines coloriées, les autres blanches</title><rect width=\"100%\" height=\"100%\" fill=\"#ffffff\"/><rect x=\"16.0\" y=\"16\" width=\"35.6\" height=\"60\" fill=\"#93c5fd\" stroke=\"#334155\" stroke-width=\"1.6\"/><rect x=\"51.6\" y=\"16\" width=\"35.6\" height=\"60\" fill=\"#93c5fd\" stroke=\"#334155\" stroke-width=\"1.6\"/><rect x=\"87.1\" y=\"16\" width=\"35.6\" height=\"60\" fill=\"#ffffff\" stroke=\"#334155\" stroke-width=\"1.6\"/><rect x=\"122.7\" y=\"16\" width=\"35.6\" height=\"60\" fill=\"#ffffff\" stroke=\"#334155\" stroke-width=\"1.6\"/><rect x=\"158.2\" y=\"16\" width=\"35.6\" height=\"60\" fill=\"#ffffff\" stroke=\"#334155\" stroke-width=\"1.6\"/><rect x=\"193.8\" y=\"16\" width=\"35.6\" height=\"60\" fill=\"#ffffff\" stroke=\"#334155\" stroke-width=\"1.6\"/><rect x=\"229.3\" y=\"16\" width=\"35.6\" height=\"60\" fill=\"#ffffff\" stroke=\"#334155\" stroke-width=\"1.6\"/><rect x=\"264.9\" y=\"16\" width=\"35.6\" height=\"60\" fill=\"#ffffff\" stroke=\"#334155\" stroke-width=\"1.6\"/><rect x=\"300.4\" y=\"16\" width=\"35.6\" height=\"60\" fill=\"#ffffff\" stroke=\"#334155\" stroke-width=\"1.6\"/></svg>",
+      "choices": [
+        {
+          "key": "a",
+          "text": "Le ratio sirop : eau est 2 : 9, et le sirop fait $\\frac{2}{9}$ de la boisson.",
+          "misconception": "L'élève compare le sirop à toute la boisson (2 cases sur 9) au lieu de le comparer à l'eau : la part est juste, le ratio est faux."
+        },
+        {
+          "key": "b",
+          "text": "Le ratio sirop : eau est 2 : 7, et le sirop fait $\\frac{2}{7}$ de la boisson.",
+          "misconception": "L'élève prend le ratio sirop : eau pour la part de sirop : il divise par le nombre de verres d'eau (7) au lieu du nombre total de verres (9)."
+        },
+        {
+          "key": "c",
+          "text": "Le ratio sirop : eau est 2 : 9, et le sirop fait $\\frac{2}{7}$ de la boisson.",
+          "misconception": "L'élève échange les deux notions : il compare le sirop à toute la boisson pour le ratio (2 : 9), et à l'eau pour la part ($\\frac{2}{7}$)."
+        },
+        {
+          "key": "d",
+          "text": "Le ratio sirop : eau est 2 : 7, et le sirop fait $\\frac{2}{9}$ de la boisson.",
+          "misconception": null
+        }
+      ],
+      "answer": {
+        "value": "d"
+      },
+      "solution_steps": [
+        "On compte les cases : 2 coloriées (le sirop) et 7 blanches (l'eau), soit 9 verres en tout.",
+        "Le ratio sirop : eau compare le sirop à l'eau, dans cet ordre : 2 verres de sirop pour 7 verres d'eau, c'est 2 : 7.",
+        "La part de sirop compare le sirop à toute la boisson : 2 verres sur 9, c'est $\\frac{2}{9}$ de la boisson.",
+        "Le ratio 2 : 7 compare deux parties entre elles ; la fraction $\\frac{2}{9}$ compare une partie au tout. Bonne réponse : d."
+      ],
+      "hint": "Compte les cases coloriées, les cases blanches, puis toutes les cases. Le ratio sirop : eau compare deux parties ; la part de sirop compare une partie au tout.",
+      "estimated_duration_s": 75,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 4, classe de 4e, Proportionnalité, fonctions, Proportionnalité, Objectifs d'apprentissage : « Comparer deux nombres ou deux grandeurs à l'aide de leur rapport ou ratio. »"
+    },
+    {
+      "id": "EX-E001-D-02",
+      "skill_id": "E001",
+      "level": "decouverte",
+      "type": "numerique",
+      "statement": "Une affiche mesure 45 cm de haut et 20 cm de large. Donne, en écriture décimale, le rapport de la hauteur à la largeur (hauteur ÷ largeur).",
+      "image": null,
+      "answer": {
+        "value": 2.25,
+        "unit": null,
+        "accepted": [
+          "2,25 fois",
+          "2.25 fois"
+        ]
+      },
+      "solution_steps": [
+        "Les deux longueurs sont dans la même unité (cm) : leur rapport est un nombre sans unité.",
+        "Rapport de la hauteur à la largeur : $\\frac{45}{20}$. On simplifie par 5 : $\\frac{45}{20} = \\frac{9}{4}$.",
+        "$9 \\div 4 = 2{,}25$. Le rapport vaut **2,25** : la hauteur vaut 2,25 fois la largeur.",
+        "Attention à l'ordre : « de la hauteur à la largeur » se calcule hauteur ÷ largeur. Le quotient $\\frac{20}{45}$ est le rapport de la largeur à la hauteur, et l'écart 45 − 20 = 25 cm n'est pas un rapport."
+      ],
+      "hint": "Divise la hauteur par la largeur. Tu peux d'abord simplifier la fraction.",
+      "estimated_duration_s": 60,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 4, classe de 4e, Proportionnalité, fonctions, Proportionnalité, Objectifs d'apprentissage : « Comparer deux nombres ou deux grandeurs à l'aide de leur rapport ou ratio. »"
+    },
+    {
+      "id": "EX-E001-E-01",
+      "skill_id": "E001",
+      "level": "entrainement",
+      "type": "vrai_faux",
+      "statement": "Mélange A : ratio jus : eau 3 : 4 ; mélange B : ratio 5 : 6. Hugo : « Même goût, chacun ayant un verre d'eau de plus que de jus. » A-t-il raison ?",
+      "image": null,
+      "answer": {
+        "value": false
+      },
+      "solution_steps": [
+        "Hugo compare des différences (4 − 3 = 1 et 6 − 5 = 1). Or le goût dépend de la quantité de jus pour une même quantité d'eau : il faut comparer des quotients.",
+        "Rapport jus/eau : $\\frac{3}{4}$ pour A et $\\frac{5}{6}$ pour B. Au dénominateur commun 12 : $\\frac{3}{4} = \\frac{9}{12}$ et $\\frac{5}{6} = \\frac{10}{12}$.",
+        "$\\frac{10}{12} > \\frac{9}{12}$ : B contient plus de jus pour la même quantité d'eau, il est plus fruité. Hugo a **tort**.",
+        "Un exemple extrême le montre : un mélange 1 : 2 et un mélange 10 : 11 ont chacun un verre d'eau de plus que de jus, et pourtant le second est presque du jus pur."
+      ],
+      "hint": "Compare les quotients jus ÷ eau, pas les différences. Mets les deux fractions au même dénominateur.",
+      "estimated_duration_s": 90,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 4, classe de 4e, Proportionnalité, fonctions, Proportionnalité, Objectifs d'apprentissage : « Comparer deux nombres ou deux grandeurs à l'aide de leur rapport ou ratio. »"
+    },
+    {
+      "id": "EX-E001-E-02",
+      "skill_id": "E001",
+      "level": "entrainement",
+      "type": "numerique",
+      "statement": "Dans une chorale, le ratio filles : garçons est 7 : 13. Quel pourcentage des membres de la chorale sont des filles ?",
+      "image": null,
+      "answer": {
+        "value": 35,
+        "unit": "%"
+      },
+      "solution_steps": [
+        "Le ratio 7 : 13 signifie : 7 filles pour 13 garçons. Dans chaque groupe de 7 + 13 = 20 membres, il y a 7 filles.",
+        "La part des filles est donc $\\frac{7}{20}$ des membres, et non $\\frac{7}{13}$, qui compare les filles aux garçons.",
+        "$\\frac{7}{20} = \\frac{35}{100}$ (on multiplie le numérateur et le dénominateur par 5), soit 35 %.",
+        "Les filles représentent **35 %** des membres. Contrôle : les garçons font $\\frac{13}{20} = \\frac{65}{100}$, soit 65 %, et 35 + 65 = 100."
+      ],
+      "hint": "Sur combien de membres compte-t-on 7 filles ? Écris la part des filles sous forme de fraction, puis en pourcentage.",
+      "estimated_duration_s": 90,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 4, classe de 4e, Proportionnalité, fonctions, Proportionnalité, Objectifs d'apprentissage : « Comparer deux nombres ou deux grandeurs à l'aide de leur rapport ou ratio. »"
+    },
+    {
+      "id": "EX-E001-M-01",
+      "skill_id": "E001",
+      "level": "maitrise",
+      "type": "qcm",
+      "statement": "Pour faire du vert, on mélange du bleu et du jaune. Pot A : 3 L de bleu pour 7 L de jaune ; B : 4 L pour 9 L ; C : 5 L pour 12 L. Quel vert est le plus bleu ?",
+      "image": null,
+      "choices": [
+        {
+          "key": "a",
+          "text": "Celui du pot A",
+          "misconception": "L'élève compare les différences jaune − bleu (4 L pour A, 5 L pour B, 7 L pour C) et croit que le plus petit écart donne le vert le plus bleu."
+        },
+        {
+          "key": "b",
+          "text": "Celui du pot B",
+          "misconception": null
+        },
+        {
+          "key": "c",
+          "text": "Celui du pot C",
+          "misconception": "L'élève regarde seulement la quantité de bleu (5 L, la plus grande) sans la rapporter à la quantité de jaune."
+        }
+      ],
+      "answer": {
+        "value": "b"
+      },
+      "solution_steps": [
+        "La couleur dépend de la quantité de bleu pour une même quantité de jaune : on compare les rapports bleu/jaune $\\frac{3}{7}$, $\\frac{4}{9}$ et $\\frac{5}{12}$.",
+        "A et B : au dénominateur 63, $\\frac{3}{7} = \\frac{27}{63}$ et $\\frac{4}{9} = \\frac{28}{63}$. Le vert B est plus bleu que le vert A.",
+        "B et C : au dénominateur 36, $\\frac{4}{9} = \\frac{16}{36}$ et $\\frac{5}{12} = \\frac{15}{36}$. Le vert B est plus bleu que le vert C.",
+        "Le pot B donne le vert le plus bleu. Bonne réponse : b. Le pot C contient le plus de bleu, mais aussi bien plus de jaune ; les écarts (4 L, 5 L, 7 L) ne disent rien de la couleur."
+      ],
+      "hint": "Pour chaque pot, écris le rapport bleu/jaune sous forme de fraction, puis compare ces fractions deux à deux.",
+      "estimated_duration_s": 150,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 4, classe de 4e, Proportionnalité, fonctions, Proportionnalité, Objectifs d'apprentissage : « Comparer deux nombres ou deux grandeurs à l'aide de leur rapport ou ratio. »"
+    },
+    {
+      "id": "EX-E001-M-02",
+      "skill_id": "E001",
+      "level": "maitrise",
+      "type": "qcm",
+      "statement": "Dans un club de judo, 45 % des membres sont des filles. Quel est le ratio filles : garçons, simplifié ?",
+      "image": null,
+      "choices": [
+        {
+          "key": "a",
+          "text": "9 : 11",
+          "misconception": null
+        },
+        {
+          "key": "b",
+          "text": "9 : 20",
+          "misconception": "L'élève prend la part des filles dans le club (45 sur 100, soit $\\frac{9}{20}$) pour le ratio filles : garçons : il compare les filles à tous les membres au lieu des seuls garçons."
+        },
+        {
+          "key": "c",
+          "text": "11 : 9",
+          "misconception": "L'élève inverse l'ordre : 11 : 9 est le ratio garçons : filles."
+        }
+      ],
+      "answer": {
+        "value": "a"
+      },
+      "solution_steps": [
+        "Prenons 100 membres : 45 sont des filles, donc 100 − 45 = 55 sont des garçons.",
+        "Ratio filles : garçons : 45 : 55. On le simplifie comme une fraction, en divisant les deux nombres par 5 : $\\frac{45}{55} = \\frac{9}{11}$.",
+        "Le ratio filles : garçons est **9 : 11** : 9 filles pour 11 garçons. Bonne réponse : a.",
+        "Contrôle : dans chaque groupe de 9 + 11 = 20 membres, il y a 9 filles, soit $\\frac{9}{20} = \\frac{45}{100}$ des membres, c'est-à-dire 45 %."
+      ],
+      "hint": "Imagine un club de 100 membres. Combien de filles, combien de garçons ?",
+      "estimated_duration_s": 90,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 4, classe de 4e, Proportionnalité, fonctions, Proportionnalité, Objectifs d'apprentissage : « Comparer deux nombres ou deux grandeurs à l'aide de leur rapport ou ratio. »"
+    },
+    {
+      "id": "EX-E002-D-01",
+      "skill_id": "E002",
+      "level": "decouverte",
+      "type": "vrai_faux",
+      "statement": "Voici deux suites de nombres.\n\n$$\\begin{array}{|l|c|c|c|} \\hline \\text{Suite 1} & 4 & 10 & 18 \\\\ \\hline \\text{Suite 2} & 6 & 15 & 27 \\\\ \\hline \\end{array}$$\n\nSimplifie les rapports $\\frac{4}{6}$, $\\frac{10}{15}$ et $\\frac{18}{27}$. Affirmation : les deux suites sont proportionnelles.",
+      "image": null,
+      "answer": {
+        "value": true
+      },
+      "solution_steps": [
+        "Deux suites sont proportionnelles quand tous les rapports d'un nombre de la suite 1 au nombre correspondant de la suite 2 sont égaux.",
+        "$\\frac{4}{6} = \\frac{2}{3}$ (on divise par 2) ; $\\frac{10}{15} = \\frac{2}{3}$ (par 5) ; $\\frac{18}{27} = \\frac{2}{3}$ (par 9).",
+        "Les trois rapports sont égaux : $\\frac{4}{6} = \\frac{10}{15} = \\frac{18}{27}$. Les suites sont proportionnelles, l'affirmation est **vraie**.",
+        "On dit que les suites sont dans le ratio 2 : 3 : chaque nombre de la suite 1 vaut les deux tiers du nombre correspondant de la suite 2."
+      ],
+      "hint": "Simplifie chaque fraction. Les suites sont proportionnelles si les trois fractions simplifiées sont égales.",
+      "estimated_duration_s": 75,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 4, classe de 4e, Proportionnalité, fonctions, Proportionnalité, Objectifs d'apprentissage : « Exprimer la proportionnalité entre deux suites de nombres par des égalités de rapports ou sous forme de ratio. »"
+    },
+    {
+      "id": "EX-E002-D-02",
+      "skill_id": "E002",
+      "level": "decouverte",
+      "type": "numerique",
+      "statement": "Complète l'égalité de rapports $\\frac{5}{8} = \\frac{\\ldots}{56}$. Quel nombre manque ?",
+      "image": null,
+      "answer": {
+        "value": 35
+      },
+      "solution_steps": [
+        "On passe du dénominateur 8 au dénominateur 56 en multipliant par 7, car $8 \\times 7 = 56$.",
+        "Pour que les deux rapports restent égaux, on multiplie le numérateur par le même nombre : $5 \\times 7 = 35$.",
+        "$\\frac{5}{8} = \\frac{35}{56}$ : le nombre manquant est **35**.",
+        "Erreur à éviter : ajouter 48 en haut comme en bas (5 + 48 = 53). $\\frac{53}{56}$ n'est pas égal à $\\frac{5}{8}$ : il est presque égal à 1."
+      ],
+      "hint": "Par quel nombre multiplie-t-on 8 pour obtenir 56 ?",
+      "estimated_duration_s": 45,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 4, classe de 4e, Proportionnalité, fonctions, Proportionnalité, Objectifs d'apprentissage : « Exprimer la proportionnalité entre deux suites de nombres par des égalités de rapports ou sous forme de ratio. »"
+    },
+    {
+      "id": "EX-E002-E-01",
+      "skill_id": "E002",
+      "level": "entrainement",
+      "type": "qcm",
+      "statement": "Dans quel cas les deux suites sont-elles proportionnelles ? Vérifie chaque colonne.",
+      "image": null,
+      "choices": [
+        {
+          "key": "a",
+          "text": "3 ; 5 ; 8 et 6 ; 10 ; 15",
+          "misconception": "L'élève vérifie seulement les deux premières colonnes ($3 \\times 2 = 6$, $5 \\times 2 = 10$) et conclut sans voir que $8 \\times 2 = 16$, pas 15."
+        },
+        {
+          "key": "b",
+          "text": "2 ; 4 ; 6 et 5 ; 7 ; 9",
+          "misconception": "L'élève voit qu'on ajoute 3 à chaque nombre et prend ce modèle additif pour de la proportionnalité ; or $\\frac{2}{5}$ n'est pas égal à $\\frac{4}{7}$."
+        },
+        {
+          "key": "c",
+          "text": "1,5 ; 2,5 ; 4 et 6 ; 10 ; 16",
+          "misconception": null
+        },
+        {
+          "key": "d",
+          "text": "2 ; 3 ; 5 et 4 ; 9 ; 25",
+          "misconception": "L'élève voit deux suites qui augmentent ensemble et les croit proportionnelles ; or $\\frac{4}{2} = 2$ et $\\frac{9}{3} = 3$ ne sont pas égaux."
+        }
+      ],
+      "answer": {
+        "value": "c"
+      },
+      "solution_steps": [
+        "Deux suites sont proportionnelles quand on passe de chaque nombre de la première au nombre correspondant de la seconde en multipliant par le même nombre : tous les rapports sont égaux.",
+        "c : $1{,}5 \\times 4 = 6$ ; $2{,}5 \\times 4 = 10$ ; $4 \\times 4 = 16$. Tous les rapports valent 4 : les suites sont proportionnelles.",
+        "a : $3 \\times 2 = 6$ et $5 \\times 2 = 10$, mais $8 \\times 2 = 16$, pas 15 : une seule colonne suffit à refuser. b : on ajoute 3, on ne multiplie pas ($2 \\times 2{,}5 = 5$ mais $4 \\times 2{,}5 = 10$, pas 7). d : $\\frac{4}{2} = 2$ mais $\\frac{9}{3} = 3$.",
+        "Bonne réponse : c."
+      ],
+      "hint": "Pour chaque proposition, cherche par quel nombre on multiplie le premier nombre pour obtenir le second, puis vérifie toutes les colonnes.",
+      "estimated_duration_s": 120,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 4, classe de 4e, Proportionnalité, fonctions, Proportionnalité, Objectifs d'apprentissage : « Exprimer la proportionnalité entre deux suites de nombres par des égalités de rapports ou sous forme de ratio. »"
+    },
+    {
+      "id": "EX-E002-E-02",
+      "skill_id": "E002",
+      "level": "entrainement",
+      "type": "numerique",
+      "statement": "Les longueurs des trois côtés d'un triangle sont dans le ratio 3 : 4 : 5. Le plus petit côté mesure 7,5 cm. Combien mesure le plus grand côté, en cm ?",
+      "image": null,
+      "answer": {
+        "value": 12.5,
+        "unit": "cm"
+      },
+      "solution_steps": [
+        "Les côtés a, b, c sont dans le ratio 3 : 4 : 5 : cela signifie $\\frac{a}{3} = \\frac{b}{4} = \\frac{c}{5}$.",
+        "Pour le plus petit côté : $\\frac{7{,}5}{3} = 2{,}5$. Chaque part du ratio vaut 2,5 cm.",
+        "Le plus grand côté compte 5 parts : $5 \\times 2{,}5 = 12{,}5$. Il mesure **12,5 cm**.",
+        "Contrôle : le côté moyen mesure $4 \\times 2{,}5 = 10$ cm, et $\\frac{7{,}5}{3} = \\frac{10}{4} = \\frac{12{,}5}{5}$. Ajouter 2 cm à 7,5 cm, parce que 5 − 3 = 2, donnerait 9,5 cm : c'est un raisonnement additif, faux ici."
+      ],
+      "hint": "Si 3 parts du ratio font 7,5 cm, combien vaut une part ?",
+      "estimated_duration_s": 90,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 4, classe de 4e, Proportionnalité, fonctions, Proportionnalité, Objectifs d'apprentissage : « Exprimer la proportionnalité entre deux suites de nombres par des égalités de rapports ou sous forme de ratio. »"
+    },
+    {
+      "id": "EX-E002-M-01",
+      "skill_id": "E002",
+      "level": "maitrise",
+      "type": "qcm",
+      "statement": "On compare deux suites.\n\n$$\\begin{array}{|l|c|c|c|} \\hline \\text{Suite 1} & 20 & 35 & 45 \\\\ \\hline \\text{Suite 2} & 8 & 14 & 18 \\\\ \\hline \\end{array}$$\n\nQuelle phrase est juste ?",
+      "image": null,
+      "choices": [
+        {
+          "key": "a",
+          "text": "Elles ne sont pas proportionnelles, car $\\frac{20}{8}$ n'est pas égal à $\\frac{14}{35}$.",
+          "misconception": "L'élève écrit le deuxième rapport à l'envers (suite 2 sur suite 1) : il change l'ordre des rapports d'une colonne à l'autre."
+        },
+        {
+          "key": "b",
+          "text": "Elles sont proportionnelles ; le ratio suite 1 : suite 2 est 5 : 2.",
+          "misconception": null
+        },
+        {
+          "key": "c",
+          "text": "Elles sont proportionnelles ; le ratio suite 1 : suite 2 est 2 : 5.",
+          "misconception": "L'élève trouve bien des rapports égaux mais écrit le ratio dans l'ordre inverse : 2 : 5 compare la suite 2 à la suite 1."
+        },
+        {
+          "key": "d",
+          "text": "Elles ne sont pas proportionnelles, car $35 - 20$ n'est pas égal à $14 - 8$.",
+          "misconception": "L'élève compare des différences (15 et 6) au lieu des quotients : deux suites proportionnelles n'ont pas des écarts égaux."
+        }
+      ],
+      "answer": {
+        "value": "b"
+      },
+      "solution_steps": [
+        "On calcule les rapports dans le même ordre pour chaque colonne : suite 1 sur suite 2.",
+        "$\\frac{20}{8} = \\frac{5}{2}$ (on divise par 4) ; $\\frac{35}{14} = \\frac{5}{2}$ (par 7) ; $\\frac{45}{18} = \\frac{5}{2}$ (par 9).",
+        "Les trois rapports sont égaux : les suites sont proportionnelles, et le ratio suite 1 : suite 2 est 5 : 2. Bonne réponse : b.",
+        "a mélange l'ordre ($\\frac{14}{35}$ est un rapport suite 2 sur suite 1) ; c inverse le ratio ; d compare des écarts, qui ne disent rien de la proportionnalité."
+      ],
+      "hint": "Écris chaque rapport dans le même ordre, suite 1 sur suite 2, puis simplifie.",
+      "estimated_duration_s": 120,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 4, classe de 4e, Proportionnalité, fonctions, Proportionnalité, Objectifs d'apprentissage : « Exprimer la proportionnalité entre deux suites de nombres par des égalités de rapports ou sous forme de ratio. »"
+    },
+    {
+      "id": "EX-E002-M-02",
+      "skill_id": "E002",
+      "level": "maitrise",
+      "type": "vrai_faux",
+      "statement": "Un magasin affiche le prix de lots de stylos.\n\n$$\\begin{array}{|l|c|c|c|} \\hline \\text{Nombre de stylos} & 10 & 15 & 22 \\\\ \\hline \\text{Prix (euros)} & 14 & 21 & 30 \\\\ \\hline \\end{array}$$\n\nLou affirme : « Le ratio prix : nombre de stylos est 7 : 5. » A-t-elle raison ?",
+      "image": null,
+      "answer": {
+        "value": false
+      },
+      "solution_steps": [
+        "Pour que le ratio prix : nombre de stylos soit 7 : 5, chaque rapport prix/nombre doit être égal à $\\frac{7}{5}$, dans toutes les colonnes.",
+        "$\\frac{14}{10} = \\frac{7}{5}$ et $\\frac{21}{15} = \\frac{7}{5}$ : les deux premières colonnes conviennent.",
+        "Troisième colonne : $\\frac{30}{22} = \\frac{15}{11}$. Au dénominateur 55 : $\\frac{7}{5} = \\frac{77}{55}$ et $\\frac{15}{11} = \\frac{75}{55}$. Ces rapports ne sont pas égaux.",
+        "Une seule colonne suffit à refuser : le prix n'est pas proportionnel au nombre de stylos (au tarif des deux premiers lots, 22 stylos coûteraient $22 \\times 1{,}4 = 30{,}8$ €). Lou a **tort**."
+      ],
+      "hint": "Calcule le rapport prix/nombre de stylos dans chacune des trois colonnes, pas seulement dans les deux premières.",
+      "estimated_duration_s": 120,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 4, classe de 4e, Proportionnalité, fonctions, Proportionnalité, Objectifs d'apprentissage : « Exprimer la proportionnalité entre deux suites de nombres par des égalités de rapports ou sous forme de ratio. »"
+    },
+    {
       "id": "EX-E003-D-01",
       "skill_id": "E003",
       "level": "decouverte",
@@ -22236,6 +22595,158 @@
       "estimated_duration_s": 150,
       "review_status": "relu_agent",
       "programme_ref": "Cycle 3, classe de 6e, La proportionnalité : la recherche de données manquantes dans un tableau s'appuie sur le sens de la proportionnalité."
+    },
+    {
+      "id": "EX-E005-D-01",
+      "skill_id": "E005",
+      "level": "decouverte",
+      "type": "numerique",
+      "statement": "Le prix d'un tissu est proportionnel à sa longueur : 4 m coûtent 26 €. Combien coûtent 7 m de ce tissu, en euros ?",
+      "image": null,
+      "answer": {
+        "value": 45.5,
+        "unit": "€"
+      },
+      "solution_steps": [
+        "On cherche une quatrième proportionnelle : trois nombres sont connus (4 m, 26 €, 7 m) ; on cherche le prix x de 7 m.",
+        "Égalité des rapports prix/longueur, dans le même ordre : $\\frac{x}{7} = \\frac{26}{4}$.",
+        "$\\frac{26}{4} = 26 \\div 4 = 6{,}5$ : un mètre coûte 6,50 €. Donc $x = 7 \\times 6{,}5 = 45{,}5$.",
+        "7 m coûtent **45,50 €**. Contrôle : 7 m, c'est un peu moins que le double de 4 m ; 45,50 € est un peu moins que le double de 26 €."
+      ],
+      "hint": "Combien coûte un mètre de ce tissu ?",
+      "estimated_duration_s": 60,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 4, classe de 4e, Proportionnalité, fonctions, Proportionnalité, Objectifs d'apprentissage : « Déterminer une quatrième proportionnelle. »"
+    },
+    {
+      "id": "EX-E005-D-02",
+      "skill_id": "E005",
+      "level": "decouverte",
+      "type": "qcm",
+      "statement": "5 kg de pommes donnent 3 L de jus. On cherche le volume x de jus, en L, obtenu avec 12 kg de pommes. Quelle égalité permet de le calculer ?",
+      "image": null,
+      "choices": [
+        {
+          "key": "a",
+          "text": "$\\frac{x}{12} = \\frac{5}{3}$",
+          "misconception": "L'élève mélange l'ordre des grandeurs : à gauche jus sur pommes, à droite pommes sur jus."
+        },
+        {
+          "key": "b",
+          "text": "$\\frac{x}{12} = \\frac{3}{5}$",
+          "misconception": null
+        },
+        {
+          "key": "c",
+          "text": "$\\frac{x}{3} = \\frac{5}{12}$",
+          "misconception": "L'élève compare bien jus à jus et pommes à pommes, mais dans des ordres opposés : x va avec 12 kg et 3 L avec 5 kg, il faudrait $\\frac{x}{3} = \\frac{12}{5}$."
+        },
+        {
+          "key": "d",
+          "text": "$x - 3 = 12 - 5$",
+          "misconception": "L'élève ajoute la même quantité aux deux grandeurs (7 kg de pommes en plus, donc 7 L de jus en plus) : ce modèle additif n'est pas de la proportionnalité."
+        }
+      ],
+      "answer": {
+        "value": "b"
+      },
+      "solution_steps": [
+        "Le volume de jus est proportionnel à la masse de pommes. On écrit l'égalité des rapports jus/pommes, dans le même ordre des deux côtés.",
+        "Pour 5 kg : $\\frac{3}{5}$ ; pour 12 kg : $\\frac{x}{12}$. Donc $\\frac{x}{12} = \\frac{3}{5}$. Bonne réponse : b.",
+        "On en déduit $x = 12 \\times \\frac{3}{5} = \\frac{36}{5} = 7{,}2$ : 12 kg de pommes donnent 7,2 L de jus.",
+        "Contrôle : 12 kg, c'est un peu plus que le double de 5 kg ; 7,2 L est un peu plus que le double de 3 L."
+      ],
+      "hint": "Écris le même rapport, jus sur pommes, pour 5 kg puis pour 12 kg.",
+      "estimated_duration_s": 75,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 4, classe de 4e, Proportionnalité, fonctions, Proportionnalité, Objectifs d'apprentissage : « Déterminer une quatrième proportionnelle. »"
+    },
+    {
+      "id": "EX-E005-E-01",
+      "skill_id": "E005",
+      "level": "entrainement",
+      "type": "numerique",
+      "statement": "Une voiture consomme 4,2 L d'essence pour 60 km ; sa consommation est proportionnelle à la distance. Combien de litres consomme-t-elle pour 250 km ?",
+      "image": null,
+      "answer": {
+        "value": 17.5,
+        "unit": "L"
+      },
+      "solution_steps": [
+        "On cherche la quatrième proportionnelle x, en L. Égalité des rapports essence/distance : $\\frac{x}{250} = \\frac{4{,}2}{60}$.",
+        "Elle donne $60x = 4{,}2 \\times 250 = 1\\,050$.",
+        "Donc $x = 1\\,050 \\div 60 = 17{,}5$.",
+        "La voiture consomme **17,5 L** pour 250 km. Contrôle par l'unité : $4{,}2 \\div 60 = 0{,}07$ L par kilomètre, et $0{,}07 \\times 250 = 17{,}5$."
+      ],
+      "hint": "Écris l'égalité des rapports essence sur distance, puis résous l'équation obtenue.",
+      "estimated_duration_s": 120,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 4, classe de 4e, Proportionnalité, fonctions, Proportionnalité, Objectifs d'apprentissage : « Déterminer une quatrième proportionnelle. »"
+    },
+    {
+      "id": "EX-E005-E-02",
+      "skill_id": "E005",
+      "level": "entrainement",
+      "type": "numerique",
+      "statement": "Avec 3 L de peinture, on couvre 22,5 m² de mur. Quelle quantité de peinture faut-il pour couvrir 36 m², en litres ?",
+      "image": null,
+      "answer": {
+        "value": 4.8,
+        "unit": "L"
+      },
+      "solution_steps": [
+        "La quantité de peinture est proportionnelle à l'aire couverte. Soit x la quantité cherchée, en L : $\\frac{x}{36} = \\frac{3}{22{,}5}$.",
+        "L'égalité des rapports donne $22{,}5x = 3 \\times 36 = 108$.",
+        "$x = 108 \\div 22{,}5 = 1\\,080 \\div 225 = 4{,}8$.",
+        "Il faut **4,8 L** de peinture. Contrôle : $22{,}5 \\div 3 = 7{,}5$ m² par litre, et $4{,}8 \\times 7{,}5 = 36$."
+      ],
+      "hint": "L'inconnue est la quantité de peinture. Écris l'égalité des rapports peinture sur aire.",
+      "estimated_duration_s": 120,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 4, classe de 4e, Proportionnalité, fonctions, Proportionnalité, Objectifs d'apprentissage : « Déterminer une quatrième proportionnelle. »"
+    },
+    {
+      "id": "EX-E005-M-01",
+      "skill_id": "E005",
+      "level": "maitrise",
+      "type": "numerique",
+      "statement": "Au marché, 1,2 kg de tomates coûtent 3,30 €. Combien coûtent 800 g de ces tomates, en euros ?",
+      "image": null,
+      "answer": {
+        "value": 2.2,
+        "unit": "€"
+      },
+      "solution_steps": [
+        "Les deux masses doivent être dans la même unité : 800 g = 0,8 kg.",
+        "Le prix est proportionnel à la masse. Égalité des rapports prix/masse : $\\frac{x}{0{,}8} = \\frac{3{,}30}{1{,}2}$, donc $1{,}2x = 3{,}30 \\times 0{,}8 = 2{,}64$.",
+        "$x = 2{,}64 \\div 1{,}2 = 26{,}4 \\div 12 = 2{,}2$.",
+        "800 g de tomates coûtent **2,20 €**. Contrôle : 800 g, c'est moins que 1,2 kg, donc moins de 3,30 €. Garder 800 sans convertir donnerait 2 200 € : absurde."
+      ],
+      "hint": "Écris les deux masses dans la même unité avant d'écrire l'égalité des rapports.",
+      "estimated_duration_s": 150,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 4, classe de 4e, Proportionnalité, fonctions, Proportionnalité, Objectifs d'apprentissage : « Déterminer une quatrième proportionnelle. »"
+    },
+    {
+      "id": "EX-E005-M-02",
+      "skill_id": "E005",
+      "level": "maitrise",
+      "type": "vrai_faux",
+      "statement": "Un taxi facture 4 € de prise en charge, plus 1,50 € par kilomètre : une course de 6 km coûte 13 €. Léa calcule le prix x d'une course de 10 km avec l'égalité $\\frac{x}{10} = \\frac{13}{6}$. Sa méthode est-elle juste ?",
+      "image": null,
+      "answer": {
+        "value": false
+      },
+      "solution_steps": [
+        "Une égalité de rapports ne s'écrit que si les deux grandeurs sont proportionnelles. Est-ce le cas du prix et de la distance ?",
+        "Course de 12 km : $4 + 1{,}50 \\times 12 = 4 + 18 = 22$ €. Or le double de 13 € fait 26 €. Doubler la distance ne double pas le prix : à cause des 4 € de prise en charge, il n'y a pas proportionnalité.",
+        "Le vrai prix de 10 km : $4 + 1{,}50 \\times 10 = 4 + 15 = 19$ €. L'égalité de Léa donne $6x = 130$, soit environ 21,67 € : c'est faux.",
+        "La méthode de Léa est **fausse** : avant d'écrire une égalité de rapports, on vérifie que la situation est de proportionnalité."
+      ],
+      "hint": "Calcule le prix d'une course de 12 km. Est-il le double de celui d'une course de 6 km ?",
+      "estimated_duration_s": 120,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 4, classe de 4e, Proportionnalité, fonctions, Proportionnalité, Objectifs d'apprentissage : « Déterminer une quatrième proportionnelle. »"
     },
     {
       "id": "EX-E006-D-01",
@@ -25599,6 +26110,158 @@
       "estimated_duration_s": 120,
       "review_status": "relu_agent",
       "programme_ref": "Cycle 4, classe de 4e, Proportionnalité, fonctions, Proportionnalité, Objectifs d'apprentissage : « Calculer avec des pourcentages. »"
+    },
+    {
+      "id": "EX-E040-D-01",
+      "skill_id": "E040",
+      "level": "decouverte",
+      "type": "numerique",
+      "statement": "Léa et Tom se partagent 160 €. Sur la bande, chaque case vaut la même somme : coloriée pour Léa, blanche pour Tom. Combien reçoit Léa, en euros ?",
+      "image": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 352 92\" width=\"352\" height=\"92\" font-family=\"system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif\" role=\"img\"><title>Bande partagée en cases égales, certaines coloriées, les autres blanches</title><rect width=\"100%\" height=\"100%\" fill=\"#ffffff\"/><rect x=\"16.0\" y=\"16\" width=\"40.0\" height=\"60\" fill=\"#93c5fd\" stroke=\"#334155\" stroke-width=\"1.6\"/><rect x=\"56.0\" y=\"16\" width=\"40.0\" height=\"60\" fill=\"#93c5fd\" stroke=\"#334155\" stroke-width=\"1.6\"/><rect x=\"96.0\" y=\"16\" width=\"40.0\" height=\"60\" fill=\"#93c5fd\" stroke=\"#334155\" stroke-width=\"1.6\"/><rect x=\"136.0\" y=\"16\" width=\"40.0\" height=\"60\" fill=\"#ffffff\" stroke=\"#334155\" stroke-width=\"1.6\"/><rect x=\"176.0\" y=\"16\" width=\"40.0\" height=\"60\" fill=\"#ffffff\" stroke=\"#334155\" stroke-width=\"1.6\"/><rect x=\"216.0\" y=\"16\" width=\"40.0\" height=\"60\" fill=\"#ffffff\" stroke=\"#334155\" stroke-width=\"1.6\"/><rect x=\"256.0\" y=\"16\" width=\"40.0\" height=\"60\" fill=\"#ffffff\" stroke=\"#334155\" stroke-width=\"1.6\"/><rect x=\"296.0\" y=\"16\" width=\"40.0\" height=\"60\" fill=\"#ffffff\" stroke=\"#334155\" stroke-width=\"1.6\"/></svg>",
+      "answer": {
+        "value": 60,
+        "unit": "€"
+      },
+      "solution_steps": [
+        "On compte les cases : 3 coloriées pour Léa, 5 blanches pour Tom, soit 8 cases. Le partage se fait dans le ratio Léa : Tom 3 : 5.",
+        "Les 160 € sont répartis en 8 cases égales : une case vaut $160 \\div 8 = 20$ €.",
+        "Léa reçoit 3 cases : $3 \\times 20 = 60$. Léa reçoit **60 €**.",
+        "Contrôle : Tom reçoit $5 \\times 20 = 100$ €, et 60 + 100 = 160. Partager en deux (80 € chacun) ne respecte pas le nombre de cases de chacun."
+      ],
+      "hint": "Combien de cases en tout ? Combien vaut une case ?",
+      "estimated_duration_s": 60,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 4, classe de 4e, Proportionnalité, fonctions, Proportionnalité, Objectifs d'apprentissage : « Résoudre des problèmes de partage proportionnel. »"
+    },
+    {
+      "id": "EX-E040-D-02",
+      "skill_id": "E040",
+      "level": "decouverte",
+      "type": "qcm",
+      "statement": "Paul et Inès se partagent 72 € dans le ratio Paul : Inès 5 : 4. Combien reçoit Paul ?",
+      "image": null,
+      "choices": [
+        {
+          "key": "a",
+          "text": "36 €",
+          "misconception": "L'élève partage en deux parts égales (72 ÷ 2) sans tenir compte du ratio."
+        },
+        {
+          "key": "b",
+          "text": "32 €",
+          "misconception": "L'élève calcule bien une part (72 ÷ 9 = 8) mais inverse l'ordre du ratio : 4 × 8 = 32 € est la part d'Inès."
+        },
+        {
+          "key": "c",
+          "text": "40 €",
+          "misconception": null
+        },
+        {
+          "key": "d",
+          "text": "14,40 €",
+          "misconception": "L'élève divise 72 par un seul nombre du ratio (72 ÷ 5) au lieu du nombre total de parts, 5 + 4 = 9."
+        }
+      ],
+      "answer": {
+        "value": "c"
+      },
+      "solution_steps": [
+        "Le ratio 5 : 4 signifie : 5 parts pour Paul, 4 parts pour Inès, soit 5 + 4 = 9 parts égales.",
+        "Une part vaut $72 \\div 9 = 8$ €.",
+        "Paul reçoit 5 parts : $5 \\times 8 = 40$ €. Bonne réponse : c.",
+        "Contrôle : Inès reçoit $4 \\times 8 = 32$ €, et 40 + 32 = 72."
+      ],
+      "hint": "En combien de parts égales les 72 € sont-ils partagés ?",
+      "estimated_duration_s": 60,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 4, classe de 4e, Proportionnalité, fonctions, Proportionnalité, Objectifs d'apprentissage : « Résoudre des problèmes de partage proportionnel. »"
+    },
+    {
+      "id": "EX-E040-E-01",
+      "skill_id": "E040",
+      "level": "entrainement",
+      "type": "numerique",
+      "statement": "Pour un lot de jeux, Ana paie 12 €, Ben 18 € et Cléo 30 €. Ils le revendent 150 € et partagent proportionnellement aux mises. Combien reçoit Cléo ?",
+      "image": null,
+      "answer": {
+        "value": 75,
+        "unit": "€"
+      },
+      "solution_steps": [
+        "Ana paie 12 €, Ben 18 € et Cléo 30 € : les mises sont dans le ratio 12 : 18 : 30. En divisant les trois nombres par 6, c'est le ratio 2 : 3 : 5.",
+        "Le partage se fait en 2 + 3 + 5 = 10 parts égales : une part vaut $150 \\div 10 = 15$ €.",
+        "Cléo a 5 parts : $5 \\times 15 = 75$. Cléo reçoit **75 €**.",
+        "Contrôle : Ana reçoit $2 \\times 15 = 30$ €, Ben $3 \\times 15 = 45$ €, et 30 + 45 + 75 = 150. Partager en trois (50 € chacun) ne tient pas compte des mises."
+      ],
+      "hint": "Simplifie d'abord le ratio des mises 12 : 18 : 30.",
+      "estimated_duration_s": 120,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 4, classe de 4e, Proportionnalité, fonctions, Proportionnalité, Objectifs d'apprentissage : « Résoudre des problèmes de partage proportionnel. »"
+    },
+    {
+      "id": "EX-E040-E-02",
+      "skill_id": "E040",
+      "level": "entrainement",
+      "type": "numerique",
+      "statement": "Pour un mortier, on mélange ciment, sable et eau dans le ratio 2 : 5 : 1, en masse. On veut 36 kg de mortier. Quelle masse de sable faut-il, en kg ?",
+      "image": null,
+      "answer": {
+        "value": 22.5,
+        "unit": "kg"
+      },
+      "solution_steps": [
+        "Ciment, sable et eau : 2 + 5 + 1 = 8 parts égales.",
+        "Une part pèse $36 \\div 8 = 4{,}5$ kg.",
+        "Le sable compte 5 parts : $5 \\times 4{,}5 = 22{,}5$. Il faut **22,5 kg** de sable.",
+        "Contrôle : ciment $2 \\times 4{,}5 = 9$ kg, eau 4,5 kg, et 9 + 22,5 + 4,5 = 36. Diviser 36 par 3 (12 kg chacun) ou par 5 oublie le ratio."
+      ],
+      "hint": "Combien de parts en tout ? Quelle masse pour une part ?",
+      "estimated_duration_s": 90,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 4, classe de 4e, Proportionnalité, fonctions, Proportionnalité, Objectifs d'apprentissage : « Résoudre des problèmes de partage proportionnel. »"
+    },
+    {
+      "id": "EX-E040-M-01",
+      "skill_id": "E040",
+      "level": "maitrise",
+      "type": "vrai_faux",
+      "statement": "Deux sœurs se partagent une somme dans le ratio 5 : 8. La plus jeune, qui a la petite part, reçoit 75 €. L'aînée affirme : « Nous avons partagé 195 €. » A-t-elle raison ?",
+      "image": null,
+      "answer": {
+        "value": true
+      },
+      "solution_steps": [
+        "La plus jeune a 5 parts et reçoit 75 € : une part vaut $75 \\div 5 = 15$ €.",
+        "L'aînée a 8 parts : $8 \\times 15 = 120$ €.",
+        "La somme partagée compte 5 + 8 = 13 parts : $13 \\times 15 = 195$ €.",
+        "L'aînée a **raison** : la somme partagée est bien 195 €. Contrôle : 75 + 120 = 195. Piège : 120 € est la part de l'aînée, pas la somme partagée."
+      ],
+      "hint": "Combien vaut une part ? Combien de parts compte la somme entière ?",
+      "estimated_duration_s": 90,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 4, classe de 4e, Proportionnalité, fonctions, Proportionnalité, Objectifs d'apprentissage : « Résoudre des problèmes de partage proportionnel. »"
+    },
+    {
+      "id": "EX-E040-M-02",
+      "skill_id": "E040",
+      "level": "maitrise",
+      "type": "numerique",
+      "statement": "Alice et Bruno se partagent un bénéfice dans le ratio Alice : Bruno 7 : 4. Alice reçoit 600 € de plus que Bruno. Combien reçoit Bruno, en euros ?",
+      "image": null,
+      "answer": {
+        "value": 800,
+        "unit": "€"
+      },
+      "solution_steps": [
+        "Alice a 7 parts, Bruno 4 parts : Alice a 7 − 4 = 3 parts de plus que Bruno.",
+        "Ces 3 parts valent 600 € : une part vaut $600 \\div 3 = 200$ €.",
+        "Bruno a 4 parts : $4 \\times 200 = 800$. Bruno reçoit **800 €**.",
+        "Contrôle : Alice reçoit $7 \\times 200 = 1\\,400$ €, 1 400 − 800 = 600 et $\\frac{1\\,400}{800} = \\frac{7}{4}$. Diviser 600 € en 11 parts serait faux : 600 € n'est pas le bénéfice entier, seulement l'écart."
+      ],
+      "hint": "Combien de parts Alice a-t-elle de plus que Bruno ? Que valent ces parts ?",
+      "estimated_duration_s": 150,
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 4, classe de 4e, Proportionnalité, fonctions, Proportionnalité, Objectifs d'apprentissage : « Résoudre des problèmes de partage proportionnel. »"
     },
     {
       "id": "EX-F002-D-01",

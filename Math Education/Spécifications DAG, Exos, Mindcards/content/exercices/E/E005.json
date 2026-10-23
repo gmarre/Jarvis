@@ -1,0 +1,154 @@
+[
+  {
+    "id": "EX-E005-D-01",
+    "skill_id": "E005",
+    "level": "decouverte",
+    "type": "numerique",
+    "statement": "Le prix d'un tissu est proportionnel à sa longueur : 4 m coûtent 26 €. Combien coûtent 7 m de ce tissu, en euros ?",
+    "image": null,
+    "answer": {
+      "value": 45.5,
+      "unit": "€"
+    },
+    "solution_steps": [
+      "On cherche une quatrième proportionnelle : trois nombres sont connus (4 m, 26 €, 7 m) ; on cherche le prix x de 7 m.",
+      "Égalité des rapports prix/longueur, dans le même ordre : $\\frac{x}{7} = \\frac{26}{4}$.",
+      "$\\frac{26}{4} = 26 \\div 4 = 6{,}5$ : un mètre coûte 6,50 €. Donc $x = 7 \\times 6{,}5 = 45{,}5$.",
+      "7 m coûtent **45,50 €**. Contrôle : 7 m, c'est un peu moins que le double de 4 m ; 45,50 € est un peu moins que le double de 26 €."
+    ],
+    "hint": "Combien coûte un mètre de ce tissu ?",
+    "estimated_duration_s": 60,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, classe de 4e, Proportionnalité, fonctions, Proportionnalité, Objectifs d'apprentissage : « Déterminer une quatrième proportionnelle. »"
+  },
+  {
+    "id": "EX-E005-D-02",
+    "skill_id": "E005",
+    "level": "decouverte",
+    "type": "qcm",
+    "statement": "5 kg de pommes donnent 3 L de jus. On cherche le volume x de jus, en L, obtenu avec 12 kg de pommes. Quelle égalité permet de le calculer ?",
+    "image": null,
+    "choices": [
+      {
+        "key": "a",
+        "text": "$\\frac{x}{12} = \\frac{5}{3}$",
+        "misconception": "L'élève mélange l'ordre des grandeurs : à gauche jus sur pommes, à droite pommes sur jus."
+      },
+      {
+        "key": "b",
+        "text": "$\\frac{x}{12} = \\frac{3}{5}$",
+        "misconception": null
+      },
+      {
+        "key": "c",
+        "text": "$\\frac{x}{3} = \\frac{5}{12}$",
+        "misconception": "L'élève compare bien jus à jus et pommes à pommes, mais dans des ordres opposés : x va avec 12 kg et 3 L avec 5 kg, il faudrait $\\frac{x}{3} = \\frac{12}{5}$."
+      },
+      {
+        "key": "d",
+        "text": "$x - 3 = 12 - 5$",
+        "misconception": "L'élève ajoute la même quantité aux deux grandeurs (7 kg de pommes en plus, donc 7 L de jus en plus) : ce modèle additif n'est pas de la proportionnalité."
+      }
+    ],
+    "answer": {
+      "value": "b"
+    },
+    "solution_steps": [
+      "Le volume de jus est proportionnel à la masse de pommes. On écrit l'égalité des rapports jus/pommes, dans le même ordre des deux côtés.",
+      "Pour 5 kg : $\\frac{3}{5}$ ; pour 12 kg : $\\frac{x}{12}$. Donc $\\frac{x}{12} = \\frac{3}{5}$. Bonne réponse : b.",
+      "On en déduit $x = 12 \\times \\frac{3}{5} = \\frac{36}{5} = 7{,}2$ : 12 kg de pommes donnent 7,2 L de jus.",
+      "Contrôle : 12 kg, c'est un peu plus que le double de 5 kg ; 7,2 L est un peu plus que le double de 3 L."
+    ],
+    "hint": "Écris le même rapport, jus sur pommes, pour 5 kg puis pour 12 kg.",
+    "estimated_duration_s": 75,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, classe de 4e, Proportionnalité, fonctions, Proportionnalité, Objectifs d'apprentissage : « Déterminer une quatrième proportionnelle. »"
+  },
+  {
+    "id": "EX-E005-E-01",
+    "skill_id": "E005",
+    "level": "entrainement",
+    "type": "numerique",
+    "statement": "Une voiture consomme 4,2 L d'essence pour 60 km ; sa consommation est proportionnelle à la distance. Combien de litres consomme-t-elle pour 250 km ?",
+    "image": null,
+    "answer": {
+      "value": 17.5,
+      "unit": "L"
+    },
+    "solution_steps": [
+      "On cherche la quatrième proportionnelle x, en L. Égalité des rapports essence/distance : $\\frac{x}{250} = \\frac{4{,}2}{60}$.",
+      "Elle donne $60x = 4{,}2 \\times 250 = 1\\,050$.",
+      "Donc $x = 1\\,050 \\div 60 = 17{,}5$.",
+      "La voiture consomme **17,5 L** pour 250 km. Contrôle par l'unité : $4{,}2 \\div 60 = 0{,}07$ L par kilomètre, et $0{,}07 \\times 250 = 17{,}5$."
+    ],
+    "hint": "Écris l'égalité des rapports essence sur distance, puis résous l'équation obtenue.",
+    "estimated_duration_s": 120,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, classe de 4e, Proportionnalité, fonctions, Proportionnalité, Objectifs d'apprentissage : « Déterminer une quatrième proportionnelle. »"
+  },
+  {
+    "id": "EX-E005-E-02",
+    "skill_id": "E005",
+    "level": "entrainement",
+    "type": "numerique",
+    "statement": "Avec 3 L de peinture, on couvre 22,5 m² de mur. Quelle quantité de peinture faut-il pour couvrir 36 m², en litres ?",
+    "image": null,
+    "answer": {
+      "value": 4.8,
+      "unit": "L"
+    },
+    "solution_steps": [
+      "La quantité de peinture est proportionnelle à l'aire couverte. Soit x la quantité cherchée, en L : $\\frac{x}{36} = \\frac{3}{22{,}5}$.",
+      "L'égalité des rapports donne $22{,}5x = 3 \\times 36 = 108$.",
+      "$x = 108 \\div 22{,}5 = 1\\,080 \\div 225 = 4{,}8$.",
+      "Il faut **4,8 L** de peinture. Contrôle : $22{,}5 \\div 3 = 7{,}5$ m² par litre, et $4{,}8 \\times 7{,}5 = 36$."
+    ],
+    "hint": "L'inconnue est la quantité de peinture. Écris l'égalité des rapports peinture sur aire.",
+    "estimated_duration_s": 120,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, classe de 4e, Proportionnalité, fonctions, Proportionnalité, Objectifs d'apprentissage : « Déterminer une quatrième proportionnelle. »"
+  },
+  {
+    "id": "EX-E005-M-01",
+    "skill_id": "E005",
+    "level": "maitrise",
+    "type": "numerique",
+    "statement": "Au marché, 1,2 kg de tomates coûtent 3,30 €. Combien coûtent 800 g de ces tomates, en euros ?",
+    "image": null,
+    "answer": {
+      "value": 2.2,
+      "unit": "€"
+    },
+    "solution_steps": [
+      "Les deux masses doivent être dans la même unité : 800 g = 0,8 kg.",
+      "Le prix est proportionnel à la masse. Égalité des rapports prix/masse : $\\frac{x}{0{,}8} = \\frac{3{,}30}{1{,}2}$, donc $1{,}2x = 3{,}30 \\times 0{,}8 = 2{,}64$.",
+      "$x = 2{,}64 \\div 1{,}2 = 26{,}4 \\div 12 = 2{,}2$.",
+      "800 g de tomates coûtent **2,20 €**. Contrôle : 800 g, c'est moins que 1,2 kg, donc moins de 3,30 €. Garder 800 sans convertir donnerait 2 200 € : absurde."
+    ],
+    "hint": "Écris les deux masses dans la même unité avant d'écrire l'égalité des rapports.",
+    "estimated_duration_s": 150,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, classe de 4e, Proportionnalité, fonctions, Proportionnalité, Objectifs d'apprentissage : « Déterminer une quatrième proportionnelle. »"
+  },
+  {
+    "id": "EX-E005-M-02",
+    "skill_id": "E005",
+    "level": "maitrise",
+    "type": "vrai_faux",
+    "statement": "Un taxi facture 4 € de prise en charge, plus 1,50 € par kilomètre : une course de 6 km coûte 13 €. Léa calcule le prix x d'une course de 10 km avec l'égalité $\\frac{x}{10} = \\frac{13}{6}$. Sa méthode est-elle juste ?",
+    "image": null,
+    "answer": {
+      "value": false
+    },
+    "solution_steps": [
+      "Une égalité de rapports ne s'écrit que si les deux grandeurs sont proportionnelles. Est-ce le cas du prix et de la distance ?",
+      "Course de 12 km : $4 + 1{,}50 \\times 12 = 4 + 18 = 22$ €. Or le double de 13 € fait 26 €. Doubler la distance ne double pas le prix : à cause des 4 € de prise en charge, il n'y a pas proportionnalité.",
+      "Le vrai prix de 10 km : $4 + 1{,}50 \\times 10 = 4 + 15 = 19$ €. L'égalité de Léa donne $6x = 130$, soit environ 21,67 € : c'est faux.",
+      "La méthode de Léa est **fausse** : avant d'écrire une égalité de rapports, on vérifie que la situation est de proportionnalité."
+    ],
+    "hint": "Calcule le prix d'une course de 12 km. Est-il le double de celui d'une course de 6 km ?",
+    "estimated_duration_s": 120,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, classe de 4e, Proportionnalité, fonctions, Proportionnalité, Objectifs d'apprentissage : « Déterminer une quatrième proportionnelle. »"
+  }
+]
